@@ -3,7 +3,7 @@ title: Traffico internazionale nelle normative sulle armi (ITAR)
 description: Azure Government supporta i clienti che comportano il traffico internazionale degli Stati Uniti nei sistemi regs.
 keywords: Microsoft 365, conformità, offerte
 localization_priority: None
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: c19b10b436d40364d15ce6bf8569d18b0a0e7b7b
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: 6019e215e99af672f7e938b11abdac8732c152fa
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44065731"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47417640"
 ---
 # <a name="international-traffic-in-arms-regulations-itar"></a>Traffico internazionale nelle normative sulle armi (ITAR)
 
@@ -39,7 +39,7 @@ Il ITAR ha obblighi specifici per segnalare le violazioni, che possono fornire a
   
 I clienti che desiderano ospitare dati regolati da ITAR dovrebbero collaborare con i propri account Microsoft e i team di gestione delle licenze per ulteriori informazioni, ottenere contratti adeguati e accedere a rilevanti Information Architecture System.
 
-## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud Microsoft inclusi
+## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud Microsoft inclusi nell'ambito
 
 - [Amministrazione di Azure](https://aka.ms/AzureCompliance)
 - [Office 365 U.S. Government Defense](https://go.microsoft.com/fwlink/p/?LinkID=2077751)

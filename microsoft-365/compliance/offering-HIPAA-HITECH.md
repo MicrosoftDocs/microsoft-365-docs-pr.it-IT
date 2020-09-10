@@ -3,7 +3,7 @@ title: Portabilità e responsabilità dell'assicurazione malattia (HIPAA) & atti
 description: Microsoft offre la portabilità di assicurazione malattia & Accountability Act business associate Agreements (BAAs).
 keywords: Microsoft 365, conformità, offerte
 localization_priority: None
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 825d8bac0d20534310864801b1d8eaef32c9b417
-ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
+ms.openlocfilehash: bb1452bc0f33b56cd9fee6bb4846a8e623c0b96a
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "44936351"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47416850"
 ---
 # <a name="health-insurance-portability-and-accountability-hipaa--hitech-acts"></a>Portabilità e responsabilità dell'assicurazione malattia (HIPAA) & atti HITECH
 
@@ -34,7 +34,7 @@ La legge regola l'utilizzo e la divulgazione di PHI in quattro aree generali:
 - Identificatori, ovvero i tipi di informazioni che non possono essere rilasciati se raccolti a scopo di ricerca.
 - Codici per la trasmissione elettronica dei dati in transazioni correlate all'assistenza sanitaria, compresi i crediti e i pagamenti di idoneità e assicurazioni.
 
-L'ambito di HIPAA è stato esteso con la promulgazione della Health Information Technology for Economic and Clinical Health (HITECH) Act. Le regole di Act HIPAA e HITECH includono:
+L'ambito di HIPAA è stato esteso con la promulgazione della Health Information Technology for Economic and Clinical Health (HITECH) Act. insieme, le regole HIPAA e HITECH Act includono:
 
 - La regola di privacy HIPAA, che si concentra sul diritto degli utenti a controllare l'utilizzo delle loro informazioni personali, e copre la riservatezza di PHI, limitando l'utilizzo e la divulgazione.
 - La regola di sicurezza HIPAA, che definisce gli standard per le salvaguardie amministrative, tecniche e fisiche, per proteggere la PHI elettronica da accessi non autorizzati, utilizzo e divulgazione. Sono inoltre inclusi i requisiti dell'organizzazione come contratti di associazione di business (BAAs).
@@ -51,7 +51,7 @@ I servizi cloud di Microsoft Enterprise sono coperti anche da valutazioni FedRAM
 
 Per informazioni su come il cloud Microsoft aiuta i clienti a supportare HIPAA e i requisiti di HITECH, visitare le storie dei clienti [Microsoft](https://customers.microsoft.com).
 
-## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud Microsoft inclusi
+## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud Microsoft inclusi nell'ambito
 
 - [Azure e Azure per enti pubblici](https://aka.ms/AzureCompliance)
 - Microsoft Cloud App Security
@@ -114,4 +114,4 @@ Per assistere i clienti con questa attività, Microsoft ha pubblicato queste gui
 - [Cloud Microsoft per enti pubblici](https://go.microsoft.com/fwlink/p/?linkid=2087246)
 - [Understanding HIPAA compliance with Azure](https://www.youtube.com/embed/6ptdye1LZ5k?autoplay=0)(19 maggio 2016)
 - [Esempio di modello HIPAA HITRUST di Azure](https://docs.microsoft.com/azure/governance/blueprints/samples/hipaa-hitrust/)
-- [Conformità in Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Conformità nel Centro protezione Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)

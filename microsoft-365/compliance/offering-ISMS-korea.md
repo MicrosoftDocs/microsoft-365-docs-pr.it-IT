@@ -3,7 +3,7 @@ title: Certificazione K-ISMS (Korea Information Security Management System)
 description: Microsoft Azure ha ottenuto la certificazione K-ISMS (Korea Information Security Management System).
 keywords: Microsoft 365, conformità, offerte
 localization_priority: Priority
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 069267af4e695ebdf811f92cdab653c5f20e4af4
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: fb3f1c9c3017b24d9a10af9debf1bb1c5c4f1f60
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44065931"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47415414"
 ---
 # <a name="korea-information-security-management-system-k-isms"></a>Certificazione K-ISMS (Korea Information Security Management System)
 

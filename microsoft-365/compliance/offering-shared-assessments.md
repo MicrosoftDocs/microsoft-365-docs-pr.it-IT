@@ -3,7 +3,7 @@ title: Programma Shared Assessments
 description: Azure e Azure per enti pubblici supportano gli strumenti di valutazione dei rischi del programma di Shared Assessments basati sulle loro autovalutazioni STAR CSA.
 keywords: Microsoft 365, conformità, offerte
 localization_priority: Priority
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: ed0957992bf35c103cac806701ba0a53bbcdfce8
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 22518473a8caf038a0f0f1ef89085c50f4483d5b
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597903"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47416680"
 ---
 # <a name="shared-assessments-program"></a>Programma Shared Assessments
 

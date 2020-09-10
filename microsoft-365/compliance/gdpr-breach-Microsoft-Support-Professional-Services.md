@@ -3,7 +3,7 @@ title: Servizi professionali e supporto tecnico di Microsoft e notifica di viola
 description: Informazioni su come i servizi professionali e il supporto tecnico di Microsoft proteggono da una violazione dei dati personali e su come Microsoft gestisce un'eventuale violazione e lo comunica agli utenti interessati.
 keywords: Microsoft 365, Microsoft 365 Education, Documentazione Microsoft 365, GDPR
 localization_priority: Priority
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -15,12 +15,12 @@ ms.collection:
 - GDPR
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: c6f32258f4997db4cb806141414cffc808e63517
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+ms.openlocfilehash: 87f956e0c9ae80610a61a7ed9496e2aa8b52ebb4
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42558106"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47416839"
 ---
 # <a name="microsoft-support-and-professional-services-and-breach-notification-under-the-gdpr"></a>Servizi professionali e supporto tecnico di Microsoft e notifica di violazione secondo l'RGPD
 

@@ -3,7 +3,7 @@ title: Sarbanes-Oxley Act del 2002 (SOX)
 description: Le aziende dei servizi finanziari possono utilizzare i rapporti di conformità Microsoft per soddisfare la conformità con il Sarbanes-Oxley Act.
 keywords: Microsoft 365, conformità, offerte
 localization_priority: None
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: a1ee3987a762d3ff9555a8e992dda67e4a154849
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: ca91606910c38664e74d650f750769121ea11957
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44066309"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47415354"
 ---
 # <a name="sarbanes-oxley-act-of-2002-sox"></a>Sarbanes-Oxley Act del 2002 (SOX)
 
@@ -43,7 +43,7 @@ Microsoft condivide la responsabilità di conformarsi ai clienti. Vengono fornit
 
 Per ulteriori informazioni su come utilizzare i report di conformità di Microsoft Azure quando si affrontano gli obblighi di conformità di SOX: [scaricare le linee guida di Azure per Sarbanes-Oxley](https://aka.ms/Azure-SOX-Guide)
 
-## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud Microsoft inclusi
+## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud Microsoft inclusi nell'ambito
 
 - [Azure](https://aka.ms/AzureCompliance)
 - [Dynamics 365](https://aka.ms/d365-compliance-list)
@@ -72,4 +72,4 @@ Quando si esegue la migrazione delle applicazioni e dei dati in base ai servizi 
 - [Conformità dei servizi finanziari in Azure](https://azure.microsoft.com/resources/videos/azurecon-2015-financial-services-compliance-in-azure/)
 - [Servizi finanziari e servizi cloud aziendali di Microsoft](https://www.microsoft.com/trustcenter/cloudservices/financialservices)
 - [Responsabilità condivise per il cloud computing](https://aka.ms/sharedresponsibility)
-- [Conformità nel Centro di protezione Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Conformità nel Centro protezione Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)

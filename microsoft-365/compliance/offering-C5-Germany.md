@@ -3,7 +3,7 @@ title: Cloud Computing Compliance Controls Catalog (C5)
 description: Informazioni su come Azure, Azure per enti pubblici e Azure Germania hanno dimostrato la propria conformità al Cloud Computing Compliance Controls Catalog (C5).
 keywords: Microsoft 365, conformità, offerte
 localization_priority: Priority
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 48b9e0135198f687430bf195c7dff8a405d15f7e
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: 0fbef84ca8f4d8993ca40b48b25effaf44e141f5
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44065871"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47416162"
 ---
 # <a name="cloud-computing-compliance-controls-catalog-c5"></a>Cloud Computing Compliance Controls Catalog (C5)
 

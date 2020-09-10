@@ -3,7 +3,7 @@ title: Food and Drug Administration CFR Titolo 21 parte 11
 description: Microsoft aiuta i clienti a rispettare queste normative sul Food and Drug Administration.
 keywords: Microsoft 365, conformità, offerte
 localization_priority: None
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 1b24460940d583eeb9ed431b61453e87a218a816
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: fa93c78d240c243911e21e687ef5d02c29b714b2
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44066379"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47417340"
 ---
 # <a name="food-and-drug-administration-cfr-title-21-part-11"></a>Food and Drug Administration CFR Titolo 21 parte 11
 
@@ -45,12 +45,12 @@ I clienti possono richiedere l'accesso ai rapporti di conformità, in base ai te
 
 Informazioni su come accelerare la distribuzione della FDA CFR Title 21: [scaricare la guida alla qualificazione di Azure FDA 21](https://go.microsoft.com/fwlink/p/?linkid=2086604)
 
-## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud Microsoft inclusi
+## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud Microsoft inclusi nell'ambito
 
 Anche se non vi è alcuna certificazione per la conformità con il titolo QRC 21 parte 11, i seguenti servizi cloud di Microsoft Enterprise sono stati sottoposti a controlli di terze parti indipendenti, che possono aiutare i clienti a rispettare le proprie attività. Questi servizi includono:
 
 - Azure: Servizi cloud, archiviazione, gestione traffico, macchine virtuali e rete virtuale
-- DevOps di Azure
+- Azure DevOps
 - Intune
 - [Dynamics 365 e Dynamics 365 U.S. Government](https://aka.ms/d365-compliance-list)
 - Office 365 e Office 365 U.S. Government
@@ -90,7 +90,7 @@ Microsoft garantisce che i servizi cloud aziendali soddisfino i termini definiti
 - [Guida della FDA per l'industria parte 11: registri elettronici e firme](https://www.fda.gov/RegulatoryInformation/Guidances/ucm125067.htm)
 - [Linee guida per la qualificazione per Azure](https://aka.ms/azurefda21cfrpart11qualguide)
 - [Linee guida per la qualificazione di Office 365](https://aka.ms/o365-qualification-guideline)
-- [Framework di conformità dell'hub dei controlli comuni di Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Hub dei controlli comuni del framework di conformità Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 - [Condizioni di Microsoft Online Services](https://aka.ms/Online-Services-Terms)
 - [Microsoft Cloud per enti pubblici](https://aka.ms/govt-cloud)
 - [Conformità in Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)

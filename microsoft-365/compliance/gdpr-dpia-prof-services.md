@@ -4,7 +4,7 @@ description: Questo documento fornisce informazioni sui Servizi professionali ai
 keywords: DPIA, Servizi professionali Microsoft, documentazione Microsoft 365, GDPR
 robots: NOINDEX,NOFOLLOW
 ms.localizationpriority: Priority
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: 1f7f8edd2c22741f21beaddac437cb24378bba41
-ms.sourcegitcommit: 053d42480d8aa3792ecb0027ddd53d383a029474
+ms.openlocfilehash: 1f9e63e26c65b45047f9e26ed03109ceefe4298d
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "41594506"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47416700"
 ---
 # <a name="data-protection-impact-assessments-guidance-for-data-controllers-using-microsoft-professional-services"></a>Valutazioni d'impatto sulla protezione dei dati: guida per i titolari del trattamento dei dati che utilizzano Servizi professionali Microsoft
 

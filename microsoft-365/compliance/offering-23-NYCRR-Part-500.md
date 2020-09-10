@@ -3,7 +3,7 @@ title: Normativa Title 23 NYCRR Part 500
 description: Microsoft ha redatto una guida per spiegare come Azure, Office 365 e Power BI possano aiutare gli istituti finanziari a rispettare i requisiti della normativa 23 NYCRR 500.
 keywords: Microsoft 365, conformità, offerte
 localization_priority: Priority
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: e9b72f7206ff83b790cf41c00e3f7042eadf3664
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: a44c52c31377e0644a817affe068c11b19d006f5
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44066663"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47416224"
 ---
 # <a name="title-23-nycrr-part-500"></a>Normativa Title 23 NYCRR Part 500
 

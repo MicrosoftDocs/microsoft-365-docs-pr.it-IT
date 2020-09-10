@@ -3,7 +3,7 @@ title: Ministry of Electronics and Information Technology (Riccardo)
 description: Microsoft ha ricevuto l'accreditamento completo da parte del Ministero dell'elettronica e dell'Information Technology in India.
 keywords: Microsoft 365, conformità, offerte
 localization_priority: None
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 86a3e7ce703881452d3d112aace3b418bf0984af
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: b73e701c870bcd43672f43f9fe51d3e5fb10c615
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44066097"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47417490"
 ---
 # <a name="ministry-of-electronics-and-information-technology-meity"></a>Ministry of Electronics and Information Technology (Riccardo)
 
@@ -29,7 +29,7 @@ Il Ministry of Electronics and Information Technology (Riccardo), un'agenzia del
 
 Riccardo fornisce l'accreditamento (denominato da Riccardo come ' empanelment ') dei provider di servizi cloud, che richiede che i servizi cloud siano certificati come conformi rispetto a un insieme predefinito di standard e linee guida sulla sicurezza, l'interoperabilità, la portabilità dei dati, il contratto di servizio e i termini e le condizioni contrattuali. I revisori accreditati da Riccardo verificano la conformità eseguendo audit dei provider di servizi cloud.
 
-Una volta accreditati, i provider di servizi cloud sono elencati in una directory del servizio cloud governativo in cui le organizzazioni del settore pubblico possono confrontare e procurare servizi cloud accreditati. La directory è un servizio di [MeghRaj cloud Initiative](https://meity.gov.in/content/gi-cloud-meghraj) (o Gi \[Government of India\] cloud), che promuove l'utilizzo del cloud computing nel governo e regola l'implementazione dei servizi IT del settore pubblico.
+Una volta accreditati, i provider di servizi cloud sono elencati in una directory del servizio cloud governativo in cui le organizzazioni del settore pubblico possono confrontare e procurare servizi cloud accreditati. La directory è un servizio di [MeghRaj cloud Initiative](https://meity.gov.in/content/gi-cloud-meghraj) (o Gi \[ Government of India \] cloud), che promuove l'utilizzo del cloud computing nel governo e regola l'implementazione dei servizi IT del settore pubblico.
 
 ## <a name="microsoft-and-ministry-of-electronics-and-information-technology-meity"></a>Microsoft e Ministry of Electronics and Information Technology (Riccardo)
 
@@ -41,7 +41,7 @@ Nel novembre 2017, Microsoft è diventato uno dei primi provider di servizi clou
 
 L'accreditamento Riccardo di Microsoft è stato il risultato di un rigoroso audit condotto dalla Directional testing and Quality Certification (STQC), un'organizzazione del governo che fornisce servizi di controllo della qualità, utilizzando un Framework di valutazione basato sul lavoro dell'iniziativa cloud di MeghRaj. Tramite Microsoft Azure, le organizzazioni del settore pubblico possono ora attingere a una vasta gamma di modelli di distribuzione e offerte di servizi, tra cui l'infrastruttura come servizio (IaaS), la piattaforma come servizio (PaaS), il ripristino di emergenza, DevOps e il backup gestito.
 
-## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud Microsoft inclusi
+## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud Microsoft inclusi nell'ambito
 
 - [Azure](https://aka.ms/AzureCompliance)
 - [Dynamics 365](https://download.microsoft.com/download/E/1/9/E1977163-7A86-4812-AC18-C03ADC958AAF/Microsoft_Dynamics_365_Cloud_Service_Compliance_Datasheet.pdf)

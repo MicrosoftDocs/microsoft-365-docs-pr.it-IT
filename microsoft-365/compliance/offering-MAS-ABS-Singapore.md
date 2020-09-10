@@ -3,7 +3,7 @@ title: Monetary Authority of Singapore (MAS) e Association of Banks in Singapore
 description: Microsoft aiuta i clienti del settore finanziario a rispettare gli obblighi definiti dalle linee guida per l’esternalizzazione della Monetary Authority of Singapore e ad applicare le linee guida dell'Association of Banks in Singapore.
 keywords: Microsoft 365, conformità, offerte
 localization_priority: Priority
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: e1d5e6b196f4c064a4bb2f4bc0f92f8973a61a15
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: 13956229628db1343ba72dbcba195b29fb651ba3
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44066603"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47417530"
 ---
 # <a name="monetary-authority-of-singapore-mas-and-association-of-banks-in-singapore-abs"></a>Monetary Authority of Singapore (MAS) e Association of Banks in Singapore (ABS)
 

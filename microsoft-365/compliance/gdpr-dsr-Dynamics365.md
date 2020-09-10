@@ -3,7 +3,7 @@ title: Richieste degli interessati per Dynamics 365 nell'ambito del GDPR e del C
 description: Informazioni su come trovare i dati personali e agire su di essi, e su come rispondere alle richieste DSR e CCPA dei clienti Dynamics 365.
 keywords: Microsoft 365, Microsoft 365 Education, Documentazione Microsoft 365, GDPR, CCPA
 localization_priority: Priority
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -18,12 +18,12 @@ hideEdit: true
 ms.custom:
 - seo-marvel-mar2020
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: 04ecbd6e52a56ea83f3b2e2eaebd02de20cfbe52
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: a5237f845239414a9b26a6da7028e323a11ea850
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44817665"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47416600"
 ---
 # <a name="dynamics-365-data-subject-requests-for-the-gdpr-and-ccpa"></a>Richieste degli interessati per Dynamics 365 nell'ambito del GDPR e del CCPA
 

@@ -3,7 +3,7 @@ title: Pubblicazione FIPS (Federal Information Processing Standard) 140-2
 description: Microsoft certifica che i suoi moduli crittografici sono conformi allo standard di elaborazione delle informazioni federali degli Stati Uniti.
 keywords: Microsoft 365, conformità, offerte
 localization_priority: None
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 8288438eed0f658d8058125bc90315e9a2626c08
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: f193e1846b957a26475cdfc48add6679a951841f
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44066581"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47415850"
 ---
 # <a name="federal-information-processing-standard-fips-publication-140-2"></a>Pubblicazione FIPS (Federal Information Processing Standard) 140-2
 
@@ -35,7 +35,7 @@ Microsoft mantiene un impegno attivo per soddisfare i requisiti di 140-2, dopo a
 
 Per informazioni tecniche sui moduli di crittografia di Microsoft Windows, sui criteri di sicurezza per ogni modulo e sul catalogo dei dettagli del certificato di CMVP, vedere il [contenuto di Windows e Windows Server FIPS 140-2](https://aka.ms/AA6ehud).
 
-## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud Microsoft inclusi
+## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud Microsoft inclusi nell'ambito
 
 Mentre l'attuale guida all'implementazione di CMVP FIPS 140-2 preclude una convalida FIPS 140-2 per un servizio cloud stesso; i provider di servizi cloud possono scegliere di ottenere e gestire moduli di crittografia FIPS 140 convalidati per gli elementi di elaborazione che compongono il servizio cloud. Tra gli altri servizi Microsoft online che includono componenti, che sono stati convalidati da FIPS 140-2, sono inclusi i seguenti:
 

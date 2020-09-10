@@ -3,7 +3,7 @@ title: Banca nazionale del Belgio e FSMA (Financial Services Markets Authority)
 description: Linee guida di Microsoft per gli istituti finanziari che adottano il cloud in Belgio.
 keywords: Microsoft 365, conformità, offerte
 localization_priority: Priority
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 43637bf16adb944ac708d1b0942bbdd7551c599b
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: ad72be958e8d028ff40dcbd483accd0dbe5c0527
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44066063"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47415760"
 ---
 # <a name="national-bank-of-belgium-nbb-and-the-financial-services-and-markets-authority-fsma"></a>Banca nazionale del Belgio e FSMA (Financial Services Markets Authority)
 

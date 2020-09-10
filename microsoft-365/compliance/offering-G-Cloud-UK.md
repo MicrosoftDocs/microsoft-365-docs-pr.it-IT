@@ -3,7 +3,7 @@ title: Governo del Regno Unito-cloud (G-Cloud)
 description: Il servizio commerciale Crown ha rinnovato la classificazione dei servizi cloud Microsoft nel cloud governativo v. 6.
 keywords: Microsoft 365, conformità, offerte
 localization_priority: None
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 6392c591ab5db083f00da97c50e6c388e8656815
-ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
+ms.openlocfilehash: 2d0498ab48190758f6f21f538eefe131fb1edd70
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "46560773"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47416052"
 ---
 # <a name="united-kingdom-government-cloud-g-cloud"></a>Governo del Regno Unito-cloud (G-Cloud)
 
@@ -39,7 +39,7 @@ L'appuntamento dei servizi Microsoft al mercato digitale significa che i partner
 
  [14 Cloud Security Controls for UK cloud using Microsoft Azure](https://azure.microsoft.com/resources/14-cloud-security-controls-for-uk-cloud-using-microsoft-azure/) offre strategie per i clienti per spostare i propri servizi in Azure e contribuire a soddisfare gli obblighi del Regno Unito imposti da CESG/CSN. Il white paper fornisce informazioni su come Azure può essere utilizzato per facilitare l'indirizzamento dei 14 controlli descritti nelle entità di sicurezza cloud e delinea come i clienti possono muoversi più velocemente e ottenere un numero maggiore di risparmi quando adottano i servizi di Microsoft Azure.
 
-## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud Microsoft inclusi
+## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud Microsoft inclusi nell'ambito
 
 - [Azure](https://aka.ms/AzureCompliance)
 - Microsoft Cloud App Security
@@ -112,4 +112,4 @@ Il [Service Trust Portal](https://docs.microsoft.com/microsoft-365/compliance/ge
 - [Principi di sicurezza di G-Cloud](https://aka.ms/UK-G-Cloud)
 - [Mercato digitale](https://www.digitalmarketplace.service.gov.uk/)
 - [Microsoft Online Services](https://aka.ms/Online-Services-Terms)
-- [Conformità in Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Conformità nel Centro protezione Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)

@@ -3,7 +3,7 @@ title: Servizi di sicurezza garantiti dalla polizia (PASF) Regno Unito
 description: Microsoft Business Cloud Services supporta l'applicazione della legge britannica che richiede strutture sicure garantite dalla polizia per elaborare e archiviare i dati nel cloud.
 keywords: Microsoft 365, conformità, offerte
 localization_priority: None
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 3207d0d29c837064ac5c27cc7022a8d0d7e63a22
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: 828a16ce825a21a532a22d60cd0005db10c97a75
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44065791"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47416398"
 ---
 # <a name="police-assured-secure-facilities-pasf-united-kingdom"></a>Servizi di sicurezza garantiti dalla polizia (PASF) Regno Unito
 
@@ -37,7 +37,7 @@ Microsoft accetta un approccio olistico alla sicurezza per la difesa. I datacent
 
 Queste certificazioni sono state configurate con le misure da intraprendere per proteggere la sicurezza fisica dei datacenter. Si adotta un approccio a più livelli che inizia con la progettazione, la creazione e l'utilizzo dei Data Center per il controllo rigoroso dell'accesso fisico alle aree in cui sono archiviati i dati del cliente. I datacenter gestiti da Microsoft dispongono di livelli di protezione estensivi con l'approvazione di accesso necessaria nel perimetro della struttura, nel perimetro dell'edificio, all'interno dell'edificio e nel piano del datacenter. In questo modo si riduce il rischio che gli utenti non autorizzati accedano all'accesso fisico ai dati e alle risorse dei data center.
 
-## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud Microsoft inclusi
+## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud Microsoft inclusi nell'ambito
 
 - [Azure](https://gallery.technet.microsoft.com/Overview-of-Azure-c1be3942)
 - [Dynamics 365](https://download.microsoft.com/download/E/1/9/E1977163-7A86-4812-AC18-C03ADC958AAF/Microsoft_Dynamics_365_Cloud_Service_Compliance_Datasheet.pdf)
@@ -63,4 +63,4 @@ Sì. L'applicazione della legge può utilizzare la valutazione di NPIRMT di Azur
 - [Servizi di Azure, locali e sicurezza fisica](https://azure.microsoft.com/blog/azure-layered-approach-to-physical-security/)
 - [Normative Microsoft e ISO/IEC 27001:2013 ISM](offering-iso-27001.md)
 - [Condizioni di Microsoft Online Services](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31)
-- [Conformità nel Centro di protezione Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Conformità nel Centro protezione Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)

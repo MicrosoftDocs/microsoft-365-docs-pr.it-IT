@@ -3,7 +3,7 @@ title: Esploratore contenuto gestione dei rischi Insider
 description: Informazioni su Insider Risk Management Content Explorer in Microsoft 365
 keywords: Microsoft 365, gestione dei rischi Insider, gestione dei rischi, conformità
 localization_priority: Normal
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: dee4ed05f4210530dddeff8ac62ee3f39903abca
-ms.sourcegitcommit: a08103bc120bdec7cfeaf67c1be4e221241e69ad
+ms.openlocfilehash: 1523e80f187cd7df6d8e44b91b85c39608e2f49c
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "45199819"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47416490"
 ---
 # <a name="insider-risk-management-content-explorer"></a>Esploratore contenuto gestione dei rischi Insider
 
@@ -168,7 +168,7 @@ Nella tabella seguente sono elencate le condizioni delle proprietà dei document
 | **Punteggio di pertinenza** | Punteggio di pertinenza di un documento in base alla pertinenza. |
 | **Tag pertinenza** | Punteggio di pertinenza di un documento in base alla pertinenza. |
 | **ID rappresentativo** | Identificatore numerico di ogni set di duplicati esatti. |
-| **Categorie** | Tag applicati in un set di revisione. |
+| **Tag** | Tag applicati in un set di revisione. |
 | **Elenco temi** | Elenco temi come calcolato per l'analisi. |
 | **Titolo** | Il titolo del documento. La proprietà Title è rappresentata dai metadati specificati nei documenti di Office. È diverso dal nome di file del documento. |
 | **È stato rimediato** | Ha valore true se l'elemento è stato rimediato, altrimenti false. |

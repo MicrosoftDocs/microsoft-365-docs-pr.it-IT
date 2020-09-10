@@ -3,7 +3,7 @@ title: Reserve Bank of India (RBI) e autorità di regolamentazione e sviluppo de
 description: Microsoft ha pubblicato una guida per aiutare gli istituti finanziari in India con l'adozione del cloud.
 keywords: Microsoft 365, conformità, offerte
 localization_priority: None
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: d76289740a117979ec4ac2d91a2e24782995d0fb
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: c037a36154f14cc0db2092bc2eeea6344b5544ff
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44066183"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47416072"
 ---
 # <a name="reserve-bank-of-india-rbi-and-insurance-regulatory-and-development-authority-of-india-irdai"></a>Reserve Bank of India (RBI) e autorità di regolamentazione e sviluppo delle assicurazioni India (IRDAi)
 
@@ -55,12 +55,12 @@ L'elenco di controllo di Microsoft aiuta le aziende finanziarie in India a effet
 ## <a name="how-to-implement"></a>Come eseguire l'implementazione
 
 - [Elenco di controllo di conformità per l'India](https://servicetrust.microsoft.com/Documents/TrustDocuments?command=Download&downloadType=Document&downloadId=26f4af15-2771-4cd4-a7c7-9328149f9453&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_Compliance_Guides): le aziende finanziarie possono ottenere assistenza per la valutazione dei rischi di Microsoft Business Cloud Services.
-- [Guida alla valutazione dei rischi e alla conformità](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=edee9b14-3661-4a16-ba83-c35caf672bd7&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers): creare un modello di governance per la valutazione dei rischi dei servizi cloud Microsoft e la notifica all'organismo di regolamentazione.
+- [Valutazione dei rischi e guida alla conformità](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=edee9b14-3661-4a16-ba83-c35caf672bd7&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers): creare un modello di governance per la valutazione dei rischi dei servizi cloud Microsoft e la notifica all'organismo di regolamentazione.
 - [Casi di utilizzo finanziario per Azure](https://docs.microsoft.com/azure/industry/financial/): utilizzare le anteprime dei casi, le esercitazioni e altre risorse per creare soluzioni di Azure per i servizi finanziari.
 
 ## <a name="frequently-asked-questions"></a>Domande frequenti
 
-**Devono essere incluse condizioni obbligatorie nel contratto con il fornitore di servizi cloud?**
+**Devono essere incluse condizioni obbligatorie nel contratto con il provider dei servizi cloud?**
 
 Sì. Le linee guida sopra riportate prevedono alcuni punti specifici che gli istituti finanziari devono includere nei contratti di servizi cloud. La parte 2 dell' [elenco di controllo](https://servicetrust.microsoft.com/Documents/TrustDocuments?command=Download&downloadType=Document&downloadId=26f4af15-2771-4cd4-a7c7-9328149f9453&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_Compliance_Guides) (pagina 70) esegue il mapping di tali pagine in base alle sezioni dei documenti contrattuali Microsoft in cui sono indirizzate.
 

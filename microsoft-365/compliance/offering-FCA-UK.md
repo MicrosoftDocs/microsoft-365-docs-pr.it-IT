@@ -3,7 +3,7 @@ title: Autorità di condotta finanziaria del Regno Unito (FCA)
 description: Guida di Microsoft per le aziende finanziarie nel Regno Unito segue l'autorità di condotta finanziaria e linee guida per l'outsourcing nel cloud.
 keywords: Microsoft 365, conformità, offerte
 localization_priority: None
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 1a45b101363c3b881161384a241c1ea50e951552
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: 03e8bcc51acb1a8210492b6d1ea0f00a886d6cdd
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44066389"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47417370"
 ---
 # <a name="united-kingdom-financial-conduct-authority-fca"></a>Autorità di condotta finanziaria del Regno Unito (FCA)
 
@@ -43,7 +43,7 @@ Informazioni su come Azure è in grado di abilitare la conformità FCA nelle ban
 
 [Scaricare Microsoft approach to FCA finald cloud Guidance](https://go.microsoft.com/fwlink/p/?linkid=2101561)
 
-## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud Microsoft inclusi
+## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud Microsoft inclusi nell'ambito
 
 - [Azure](https://aka.ms/AzureCompliance)
 - Intune

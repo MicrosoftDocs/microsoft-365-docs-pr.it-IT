@@ -3,7 +3,7 @@ title: California Consumer Privacy Act (CCPA)
 description: Servizi Microsoft e California Consumer Privacy Act (CCPA).
 keywords: Microsoft 365, conformità, offerte
 localization_priority: None
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -14,20 +14,20 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: de9fcad3b1d54247114974ce4432068c136fdb2a
-ms.sourcegitcommit: b6ab845d64e2801051d249de09ad5059809b649a
+ms.openlocfilehash: 1bdd6770c033abe7a2bf714029b2a4075fada249
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42222028"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47415738"
 ---
 # <a name="california-consumer-privacy-act-ccpa"></a>California Consumer Privacy Act (CCPA)
 
 ## <a name="ccpa-overview"></a>Panoramica di CCPA
 
-La California Consumer Privacy Act (CCPA) è la prima legge globale sulla privacy negli Stati Uniti. Offre una vasta gamma di diritti sulla privacy per i consumatori California.  Le aziende regolamentate dal CCPA avranno una serie di obblighi per i consumatori, tra cui le divulgazioni, la normativa generale sulla protezione dei dati (GDPR), come i diritti del soggetto dei dati di consumo (richieste DSR), un'opt-out ' per alcuni trasferimenti di dati e un'opt-in ' requisiti per i minorenni.
+La California Consumer Privacy Act (CCPA) è la prima legge globale sulla privacy negli Stati Uniti. Offre una vasta gamma di diritti sulla privacy per i consumatori California.  Le aziende regolamentate dall'CCPA avranno una serie di obblighi per i consumatori, tra cui le divulgazioni, la normativa generale sulla protezione dei dati (GDPR), come i diritti del soggetto dei dati del consumatore (richieste DSR), l'opt-out per alcuni trasferimenti di dati e un requisito di "opt-in" per i minorenni.
 
-La CCPA si applica solo alle società che operano in California che soddisfano una o più delle seguenti condizioni: (1) hanno un reddito annuo lordo superiore a $25 milioni, oppure (2) derivano più del 50% del loro reddito annuo dalla vendita della California consumer Personal informazioni o (3) acquistare, vendere o condividere le informazioni personali di più di 50.000 consumatori California ogni anno.
+Il CCPA si applica solo alle società che operano in California che soddisfano una o più delle seguenti condizioni: (1) hanno un reddito annuo lordo superiore a $25 milioni, oppure (2) derivano più del 50% del loro reddito annuo dalla vendita di informazioni personali California consumer, oppure (3) acquistare, vendere o condividere le informazioni personali di più di 50.000 California annualmente
 
 Il CCPA entrerà in vigore il 1° gennaio 2020. Tuttavia, l'applicazione da parte del procuratore generale della California (AG) inizierà il 1 ° luglio 2020.
 
@@ -35,14 +35,14 @@ La California AG implicherà la CCPA e avrà il potere di emettere ammende di no
 
 ## <a name="microsoft-and-the-ccpa"></a>Microsoft e CCPA
 
-Per i clienti commerciali che operano in California, Microsoft fungerà da' provider di servizi ' rispetto ai servizi online e ai servizi professionali offerti.  I termini delle condizioni dei servizi online (OST) e dell'addendum per la protezione dei dati (MSDPA) di Microsoft Professional Services soddisfano già i requisiti per i provider di servizi di CCPA e in genere sono sufficienti per consentire ai clienti di continuare a trasferire dati ai nostri servizi online. Per questo motivo, non sono necessarie ulteriori modifiche contrattuali per consentire ai clienti di fare affidamento su Microsoft come provider di servizi sotto il CCPA.
+Per i clienti commerciali che operano in California, Microsoft fungerà da' provider di servizi ' rispetto ai servizi online e ai servizi professionali offerti.  I termini delle condizioni dei servizi online (OST) e dell'addendum per la protezione dei dati (MSDPA) di Microsoft Professional Services soddisfano già i requisiti per i provider di servizi di CCPA e in genere sono sufficienti per consentire ai clienti di continuare a trasferire i dati nei servizi online. Per questo motivo, non sono necessarie ulteriori modifiche contrattuali per consentire ai clienti di fare affidamento su Microsoft come provider di servizi sotto il CCPA.
 
 Come indicato nell'OST, Microsoft è conforme a tutte le leggi e normative applicabili alla sua fornitura dei servizi online, che includerà il CCPA.  
 
-## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud Microsoft in ambito
+## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud Microsoft inclusi nell'ambito
 
 - [Azure](https://aka.ms/AzureCompliance)
-- Operazioni di sviluppo di Azure
+- Azure Dev Ops
 - [Dynamics 365](https://aka.ms/d365-compliance-list)
 - Intune
 - [Office 365](https://aka.ms/o365-compliance-framework)
@@ -103,4 +103,4 @@ Il CCPA richiede attività regolamentate che raccolgono, trasferiscono e vendono
 - [Guida introduttiva a CCPA](https://info.microsoft.com/ww-landing-Five-tips-to-help-you-prepare-for-the-California-Consumer-Privacy-Act.html)
 - [Richieste del soggetto dei dati e GDPR](gdpr-data-subject-requests.md)
 - [Domande frequenti sul California Consumer Privacy Act (CCPA)](ccpa-faq.md)
-- [Conformità in Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Conformità nel Centro protezione Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)

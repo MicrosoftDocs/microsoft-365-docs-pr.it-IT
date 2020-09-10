@@ -3,7 +3,7 @@ title: Autorizzazione provvisoria del dipartimento della difesa degli Stati Unit
 description: Autorizzazioni provvisorie del Department of Defense (DoD) di Microsoft ricevute ai livelli di impatto 5, 4 e 2.
 keywords: Microsoft 365, conformità, offerte
 localization_priority: None
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 333333ad274c569337c2cbab7fd00c7337e26160
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: fee91c384850b5a1593cc17e6215985217ada033
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44064767"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47415474"
 ---
 # <a name="us-department-of-defense-dod-provisional-authorization-at-impact-levels-2-4-and-5"></a>Autorizzazione provvisoria del dipartimento della difesa degli Stati Uniti (DoD) ai livelli di impatto 2, 4 e 5
 
@@ -57,7 +57,7 @@ In base alle autorizzazioni di FedRAMP, il supporto di servizi cloud DISA ha con
 
 Impact Level 2 include informazioni non classificate non controllate, ovvero dati autorizzati per il rilascio pubblico. Include anche altre informazioni non classificate che, pur non essendo considerate "mission critical", richiedono comunque un livello minimo di controllo di accesso. Questa autorizzazione consente ai clienti del governo federale statunitense di distribuire informazioni non sensibili e applicazioni e siti Web di difesa di base sui servizi cloud Microsoft in ambito.
 
-## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud Microsoft inclusi
+## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud Microsoft inclusi nell'ambito
 
 ### <a name="covered-services-for-dod-impact-level-5"></a>Servizi coperti per il livello di impatto 5 di DoD
 
@@ -104,6 +104,6 @@ Inoltre, le offerte Microsoft al di fuori del limite certificato FedRAMP che pot
 - [Supporto per il servizio del cloud DISA](https://storefront.disa.mil/kinetic/disa/service-catalog#/forms/cloud-service-support)
 - [Protezione delle informazioni non classificate controllate nei sistemi informativi e nelle organizzazioni non federali](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-171.pdf)
 - [Framework Cybersecurity NIST](https://www.nist.gov/cyberframework)
-- [Framework di conformità dell'hub dei controlli comuni di Microsoft](https://www.microsoft.com/trustcenter/common-controls-hub)
+- [Hub dei controlli comuni del framework di conformità Microsoft](https://www.microsoft.com/trustcenter/common-controls-hub)
 - [Cloud Microsoft per enti pubblici](https://go.microsoft.com/fwlink/p/?linkid=2087246)
 - [Conformità nel Centro protezione di Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)

@@ -3,7 +3,7 @@ title: NIST SP 800 – 171
 description: I servizi cloud Microsoft sono conformi alle linee guida NIST SP 800 – 171 per proteggere le informazioni non classificate controllate in sistemi informativi non federali.
 keywords: Microsoft 365, conformità, offerte
 localization_priority: None
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 47e001fafedbdcaab6e1aa6365789bc309d9f65c
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: 757541aa86049106ad06f02419fee02033c6a0e3
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44065811"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47417068"
 ---
 # <a name="nist-sp-800171"></a>NIST SP 800 – 171
 
@@ -42,7 +42,7 @@ I requisiti NIST SP 800 – 171 sono un sottoinsieme di NIST SP 800-53, lo stand
 
 Qualsiasi entità che elabora o archivia gli Stati Uniti: istituzioni di ricerca, società di consulenza, appaltatori manifatturieri, deve soddisfare i severi requisiti del NIST SP 800 – 171. Questo attestato indica che i servizi cloud in ambito Microsoft possono ospitare i clienti che desiderano distribuire i carichi di lavoro cui con la certezza che Microsoft sia pienamente conforme. Ad esempio, tutti i contraenti DoD che elaborano, archiviano o trasmettono ' informazioni sulla difesa trattate ' utilizzando i servizi cloud Microsoft in ambito nei sistemi informativi, soddisfano le clausole del dipartimento della difesa DFARS che richiedono la conformità con i requisiti di sicurezza di NIST SP 800 – 171.
 
-## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud Microsoft inclusi
+## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud Microsoft inclusi nell'ambito
 
 - [Amministrazione di Azure](https://aka.ms/AzureCompliance)
 - [Governo degli Stati Uniti Dynamics 365](https://aka.ms/d365-compliance-list)

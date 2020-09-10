@@ -1,9 +1,9 @@
 ---
-title: Programma per la gestione delle autorizzazioni e dei rischi federali (FedRAMP)
+title: FedRAMP (Federal Risk and Authorization Management Program)
 description: Microsoft ha ottenuto il programma di gestione delle autorizzazioni e del rischio federale statunitense P-ATOs e ATOs.
 keywords: Microsoft 365, conformità, offerte
 localization_priority: None
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -14,14 +14,14 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 0ddb997246f2b7a23b25e1b611170c6163e1d670
-ms.sourcegitcommit: b8a9994b26a6d9865212f5b1871286e719d1608e
+ms.openlocfilehash: c91c71f199ef36c1c9a0da023c7b26d6cb64282e
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43781483"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47415780"
 ---
-# <a name="federal-risk-and-authorization-management-program-fedramp"></a>Programma per la gestione delle autorizzazioni e dei rischi federali (FedRAMP)
+# <a name="federal-risk-and-authorization-management-program-fedramp"></a>FedRAMP (Federal Risk and Authorization Management Program)
 
 ## <a name="fedramp-overview"></a>Panoramica di FedRAMP
 
@@ -63,7 +63,7 @@ Il governo degli Stati Uniti Dynamics 365 è stato concesso a FedRAMP Agency ATO
 - La difesa del governo degli Stati Uniti di Office 365 ha un P-ATO dalla US Defense Information Systems Agency (DISA). Tutti i clienti che desiderano distribuire Office 365 US Government Defense possono utilizzare la DISA P-ATO per generare un'agenzia ATO per documentarne l'accettazione.
 - Office 365 (Enterprise and business plans) e Office 365 US Government dispongono di un'agenzia di FedRAMP ATO a livello di impatto moderato dall'ufficio DHHS dell'ispettore generale. Office 365 US Government è stato il primo servizio di collaborazione e di posta elettronica basato sul cloud per ottenere questa autorizzazione.
 
-## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud Microsoft in ambito
+## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud Microsoft inclusi nell'ambito
 
 - [Azure e Azure per enti pubblici](https://go.microsoft.com/fwlink/p/?linkid=2095323)
 - [Governo degli Stati Uniti Dynamics 365](https://aka.ms/d365-compliance-list)

@@ -3,7 +3,7 @@ title: Legge sull'educazione alla famiglia e la Privacy Act (FERPA)
 description: Microsoft è allineato ai requisiti della legge sull'educazione alla famiglia degli Stati Uniti e sulla Privacy Act.
 keywords: Microsoft 365, conformità, offerte
 localization_priority: None
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: c7d3120f7094e91157c5a20df435c1c1438677bf
-ms.sourcegitcommit: daad5f2f1994a812c2b9c78e7dd148d10c51f61d
+ms.openlocfilehash: cbf8b04fe4e3d301d3ee79c09895093f97c2e785
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "44254269"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47417350"
 ---
 # <a name="family-educational-rights-and-privacy-act-ferpa"></a>Legge sull'educazione alla famiglia e la Privacy Act (FERPA)
 
@@ -75,5 +75,5 @@ La legge federale degli Stati Uniti incarica la protezione della privacy dei rec
 - [Federal Register: regola finale di FERPA](https://aka.ms/ferpa-reg)
 - [Guida all'implementazione di FERPA per Microsoft Azure](https://aka.ms/azureferpa)
 - [Mapping del Framework di conformità di FERPA di Azure](https://aka.ms/AzureFERPAMapping)
-- [Condizioni dei servizi online di Microsoft](https://aka.ms/Online-Services-Terms)
+- [Condizioni di Microsoft Online Services](https://aka.ms/Online-Services-Terms)
 - [Conformità nel Centro protezione Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)

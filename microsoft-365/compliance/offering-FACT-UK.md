@@ -3,7 +3,7 @@ title: Federazione contro il furto del copyright (FACT)
 description: Microsoft Azure ha ottenuto la certificazione dalla Federazione contro il furto del copyright nel Regno Unito.
 keywords: Microsoft 365, conformità, offerte
 localization_priority: None
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: e8d7ce93438ce3699dd30ac8b5f0f8818045eaf5
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: acc0ab379cdd93d873cc0b1eb2f0d729eff251c8
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44066399"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47416112"
 ---
 # <a name="federation-against-copyright-theft-fact"></a>Federazione contro il furto del copyright (FACT)
 
@@ -33,7 +33,7 @@ Per sottolineare l'impegno di Microsoft per la protezione dei clienti quando aff
 
 In base all'invio volontario da parte di Microsoft a un audit dei fatti, il revisore ha certificato Azure. Azure è stato il primo servizio cloud pubblico multi-tenant a ottenere la certificazione dei fatti, aggiungendo al portfolio di Azure le Certificazioni correlate ai media, tra cui la certificazione CDSA e una valutazione formale da parte della MPAA.
 
-## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud Microsoft inclusi
+## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud Microsoft inclusi nell'ambito
 
 [Azure e Azure per enti pubblici](https://aka.ms/AzureCompliance)
 

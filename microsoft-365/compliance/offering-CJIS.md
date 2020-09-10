@@ -3,7 +3,7 @@ title: Criteri di sicurezza per i servizi di CJIS (Criminal Justice Information 
 description: I servizi cloud di Microsoft Government aderiscono al criterio di sicurezza US Criminal Justice Information Services.
 keywords: Microsoft 365, conformità, offerte
 localization_priority: None
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 02be641b93ffdb245ae6073358b66c1204e46093
-ms.sourcegitcommit: 4581afb3116ccd7d0144398e83cd6a6990e3683b
+ms.openlocfilehash: 5680cc1bf8f3a0290f82baaccea1de7b982317a7
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43772517"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47416418"
 ---
 # <a name="criminal-justice-information-services-cjis-security-policy"></a>Criteri di sicurezza per i servizi di CJIS (Criminal Justice Information Services)
 
@@ -43,7 +43,7 @@ Informazioni sui vantaggi dei criteri di sicurezza di CJIS nel cloud Microsoft: 
 
 Informazioni su come accelerare i criteri di sicurezza di CJIS con il modello di sicurezza e conformità di Azure: [scaricare le linee guida per l'implementazione di CJIS per i servizi cloud di Microsoft Government](https://gallery.technet.microsoft.com/CJIS-Implementation-62af7c27)
 
-## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud Microsoft in ambito
+## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud Microsoft inclusi nell'ambito
 
 - [Amministrazione di Azure](https://aka.ms/AzureCompliance)
 - [Governo degli Stati Uniti Dynamics 365](https://aka.ms/d365-compliance-list)
@@ -85,4 +85,4 @@ I [criteri di sicurezza di CJIS](https://aka.ms/cjis-security-policy) riguardano
 - [Linee guida per l'implementazione di CJIS per Azure Government](https://aka.ms/cjisimplementationguidelines)
 - [Hub dei controlli comuni del framework di conformità Microsoft](https://www.microsoft.com/trustcenter/common-controls-hub)
 - [Cloud Microsoft per enti pubblici](https://go.microsoft.com/fwlink/?linkid=2087246)
-- [Conformità in Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Conformità nel Centro protezione di Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)

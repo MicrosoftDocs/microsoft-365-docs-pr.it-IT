@@ -3,7 +3,7 @@ title: Richieste degli interessati per Azure nell'ambito del GDPR e del CCPA
 description: Informazioni su come usare i prodotti, i servizi e gli strumenti di amministrazione di Microsoft per trovare i dati personali e agire su di essi per rispondere alle richieste degli interessati.
 keywords: Microsoft 365, Microsoft 365 Education, Documentazione Microsoft 365, GDPR, CCPA
 localization_priority: Priority
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -17,12 +17,12 @@ ms.collection:
 hideEdit: true
 titleSuffix: Microsoft GDPR
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 47aca22a5766b39bce513772874bca56de3420c5
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: b22baa48293e48567d801227996d080e8ee1cce2
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035454"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47416650"
 ---
 # <a name="azure-data-subject-requests-for-the-gdpr-and-ccpa"></a>Richieste degli interessati per Azure nell'ambito del GDPR e del CCPA
 
@@ -75,10 +75,10 @@ Le richieste DSR rispetto a un account MSA, **al di fuori di un determinato tena
 
 ### <a name="executing-dsrs-against-customer-data"></a>Esecuzione delle richieste DSR rispetto ai dati dei clienti
 
-Microsoft consente di accedere, eliminare ed esportare alcuni dati dei clienti tramite il portale di Azure e anche direttamente tramite le API (Application Programming Interface) o le interfacce utente preesistenti per specifici servizi, dette anche *esperienze nel prodotto*. Informazioni dettagliate su tali esperienze nel prodotto sono disponibili nella documentazione di riferimento dei servizi corrispondenti.
+Microsoft consente di accedere, eliminare ed esportare alcuni dati dei clienti tramite il portale Azure e anche direttamente tramite le API (Application Programming Interface) o le interfacce utente (UI) preesistenti per servizi specifici (noti anche come *esperienze nel prodotto*). Informazioni su tali esperienze nel prodotto sono disponibili nella documentazione di riferimento per i relativi servizi.
 
 >[!IMPORTANT]  
-> I servizi che supportano le richieste dell'interessato all'interno dei prodotti richiedono l'uso diretto dell'API (Application Programming Interface) o dell'interfaccia utente del servizio, con la descrizione delle operazioni di creazione, lettura, aggiornamento ed eliminazione applicabili. Pertanto, l'esecuzione di richieste dell'interessato all'interno di un determinato servizio deve essere accompagnata dall'esecuzione di una richiesta dell'interessato nel portale di Azure per completare una richiesta completa per un determinato interessato. Per maggiori dettagli, consultare la documentazione di riferimento per i servizi specifici.
+> I servizi che supportano le richieste dell'interessato all'interno dei prodotti richiedono l'uso diretto dell'API (Application Programming Interface) o dell'interfaccia utente del servizio, con la descrizione delle operazioni di creazione, lettura, aggiornamento ed eliminazione applicabili. Pertanto, l'esecuzione di richieste dell'interessato all'interno di un determinato servizio deve essere accompagnata dall'esecuzione di una richiesta dell'interessato nel portale Azure per completare una richiesta completa di un determinato interessato. Per ulteriori dettagli, consultare la documentazione di riferimento per i relativi servizi.
 
 ### <a name="step-1-discover"></a>Passaggio 1: scoprire
 
@@ -114,9 +114,9 @@ Microsoft consente di individuare i dati dei clienti direttamente tramite le API
 
 ### <a name="step-2-access"></a>Passaggio 2: accedere
 
-Dopo aver trovato dati dei clienti che contengono dati personali potenzialmente rispondenti a una richiesta dell'interessato, spetta all'amministratore e all'organizzazione decidere quali dati fornire all'interessato. Si può fornire una copia del documento effettivo, una versione opportunamente oscurata o uno screenshot delle parti si ritiene appropriato condividere. Per ognuna di queste risposte a una richiesta di accesso, sarà necessario recuperare una copia del documento o altro elemento contenente i dati sensibili.
+Dopo aver individuato i dati dei clienti che contengono dati personali potenzialmente reattivi a una richiesta DSR, l'utente e l'organizzazione devono decidere quali dati fornire all'interessato. Si può fornire una copia del documento effettivo, una versione opportunamente oscurata o una cattura da schermo delle parti che si ritiene appropriato condividere. Per ognuna di queste risposte a una richiesta di accesso, sarà necessario recuperare una copia del documento o altri elementi che contengono i dati sensibili.
 
-Quando si invia una copia all'interessato, potrebbe essere necessario rimuovere o oscurare le informazioni personali su altri interessati ed eventuali informazioni riservate.
+Quando si invia una copia all'interessato, potrebbe essere necessario rimuovere o redigere informazioni personali su altri interessati ed eventuali informazioni riservate.
 
 #### <a name="azure-active-directory"></a>Azure Active Directory
 
