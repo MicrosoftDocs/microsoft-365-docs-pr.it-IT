@@ -3,7 +3,7 @@ title: Regolamento generale sulla protezione dei dati
 description: Informazioni sulla documentazione tecnica di Microsoft e altre informazioni utili per il Regolamento generale sulla protezione dei dati (GDPR)
 keywords: Microsoft 365, Microsoft 365 Education, Documentazione Microsoft 365, GDPR
 localization_priority: Priority
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 5d1e6730d215fcef6bd0cad6244c82b960ed39ce
-ms.sourcegitcommit: 89636f35b0194986f156302fc1bb96af25d4805b
+ms.openlocfilehash: cd17ac35c732189fe8699d75ceb054cc4c900364
+ms.sourcegitcommit: eb3c30d53a5434d8bad7c8f48a5612f3e2675945
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44800021"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47422454"
 ---
 # <a name="general-data-protection-regulation-summary"></a>Riepilogo del Regolamento generale sulla protezione dei dati
 
@@ -209,7 +209,7 @@ Microsoft utilizza da molto le clausole contrattuali standard (note anche come C
 
 **Quali sono le altre offerte di Microsoft per la conformità?**
 
-Essendo un'azienda globale con clienti in quasi ogni paese del mondo, Microsoft offre un portfolio di soluzioni di conformità interessante per aiutare i clienti. Per un elenco completo delle nostre offerte di conformità tra cui FedRamp, HIPAA/HITECH, ISO 27001, ISO 27002, ISO 27018, NIST 800-171, UK G-Cloud e molti altri, consultare gli [argomenti dedicati alle offerte di conformità](offering-home.md).
+Essendo un'azienda globale con clienti in quasi ogni paese del mondo, Microsoft offre un portfolio di soluzioni di conformità interessante per aiutare i clienti. Per un elenco completo delle nostre offerte di conformità tra cui FedRamp, HIPAA/HITECH, ISO 27001, ISO 27002, ISO 27018, NIST 800-171, UK G-Cloud e molti altri, consultare gli [argomenti dedicati alle offerte di conformità](offering-home.yml).
 
 **In che modo il GDPR interesserà la mia azienda?**
 

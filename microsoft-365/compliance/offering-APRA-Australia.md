@@ -3,7 +3,7 @@ title: Autorità per la regolamentazione prudenziale australiana (APRA)
 description: Le linee guida di Microsoft per aiutare i clienti dei servizi finanziari sono conformi agli standard di outsourcing dell'autorità di regolamentazione prudenziale australiana.
 keywords: Microsoft 365, conformità, offerte
 localization_priority: None
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: b344f9c4d750c6e6571c0e76be0c9db0c421271b
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: fb964bd6dcf229f362476b68ad87d05053e87f74
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44065891"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47417750"
 ---
 # <a name="australian-prudential-regulation-authority-apra"></a>Autorità per la regolamentazione prudenziale australiana (APRA)
 
@@ -70,7 +70,7 @@ Facendo affidamento sul nostro approccio globale alla sicurezza dei rischi nel c
 
 Ottenere supporto pratico per lo spostamento di dati e carichi di lavoro in Azure in conformità con le normative di APRA: [scaricare i servizi cloud Microsoft: un elenco di controllo di conformità per gli istituti finanziari in Australia](https://www.microsoft.com/cms/api/am/binary/RE3ez0C).
 
-## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud Microsoft inclusi
+## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud Microsoft inclusi nell'ambito
 
 - [Azure](https://aka.ms/AzureCompliance)
 - [Office 365](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
