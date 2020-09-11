@@ -18,18 +18,18 @@ ms.custom:
 search.appverid:
 - MET150
 description: Utilizzare la sicurezza e la mobilità di base incorporate per rimuovere le informazioni dai dispositivi registrati.
-ms.openlocfilehash: 4d854c7d4d81cd0b49ec7f81a49de5478b08f049
-ms.sourcegitcommit: 2179abfe0b7a8bea917eb1c1057ed3795bdf91e6
+ms.openlocfilehash: 4627b0cb2d0963ae724c425a6a7ea6279f271856
+ms.sourcegitcommit: aeb94601a81db3ead8610c2f36cff30eb9fe10e7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "47336929"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "47429951"
 ---
 # <a name="wipe-a-mobile-device-in-basic-mobility-and-security"></a>Cancellare un dispositivo mobile in mobilità e sicurezza di base
 
 È possibile utilizzare la sicurezza e la mobilità di base predefinite per Microsoft 365 per rimuovere solo le informazioni organizzative o per eseguire una reimpostazione di fabbrica per eliminare tutte le informazioni da un dispositivo mobile e ripristinarle nelle impostazioni di fabbrica.
 
-## <a name="before-you-begin"></a>Prima di iniziare
+## <a name="before-you-begin"></a>Informazioni preliminari
 
 I dispositivi mobili possono archiviare informazioni organizzative sensibili e fornire accesso alle risorse Microsoft 365 dell'organizzazione. Per proteggere le informazioni dell'organizzazione, è possibile eseguire la reimpostazione di Factory o la rimozione dei dati aziendali:
     
@@ -39,7 +39,7 @@ I dispositivi mobili possono archiviare informazioni organizzative sensibili e f
 
 - **Quando un dispositivo viene cancellato (Factory Reset o Remove Company Data)**, il dispositivo viene rimosso dall'elenco dei dispositivi gestiti.
     
-- **Reimpostazione automatica di un dispositivo**: è possibile configurare un criterio di sicurezza e mobilità di base che automaticamente Reimposta un dispositivo dopo che l'utente tenta di immettere la password del dispositivo per un determinato numero di volte. A tale scopo, seguire i passaggi descritti in [creare i criteri di sicurezza dei dispositivi in mobilità e sicurezza di base](create-device-security-policies-in-basic-mmobility-and-security.md).
+- **Reimpostazione automatica di un dispositivo**: è possibile configurare un criterio di sicurezza e mobilità di base che automaticamente Reimposta un dispositivo dopo che l'utente tenta di immettere la password del dispositivo per un determinato numero di volte. A tale scopo, seguire i passaggi descritti in [creare i criteri di sicurezza dei dispositivi in mobilità e sicurezza di base](create-device-security-policies.md).
     
 - **Se si desidera conoscere l'esperienza utente** quando si cancella il dispositivo, vedere  [che cos'è l'impatto dell'utente e del dispositivo?](#whats-the-user-and-device-impact).   
 
@@ -91,4 +91,4 @@ Il wipe viene inviato immediatamente al dispositivo mobile e il dispositivo è c
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-[Impostare Basic Mobility + Security](set-up-basic-mobility-and-security.md)
+[Impostare Basic Mobility + Security](set-up.md)

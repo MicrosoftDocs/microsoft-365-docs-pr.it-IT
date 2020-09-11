@@ -18,12 +18,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: La sicurezza e la mobilità di base fanno parte dei piani di Microsoft 365.
-ms.openlocfilehash: d4595428dd2e2b14948b9f788720fcadcf9eb895
-ms.sourcegitcommit: 2179abfe0b7a8bea917eb1c1057ed3795bdf91e6
+ms.openlocfilehash: df52d500c945275b62170ab16260f0c019340f73
+ms.sourcegitcommit: aeb94601a81db3ead8610c2f36cff30eb9fe10e7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "47336951"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "47429927"
 ---
 # <a name="choose-between-basic-mobility-and-security-and-intune"></a>Scegliere tra mobilità e sicurezza di base e Intune
 
@@ -61,9 +61,9 @@ Microsoft Intune e la sicurezza e la mobilità di base incorporati offrono la po
 |**Area funzionale**|**Caratteristiche principali**|**Mobilità e sicurezza di base**|**Microsoft Intune**|
 |:-----|:-----|:-----|:-----|
 |Tipi di dispositivi|Diverse piattaforme del sistema operativo e varianti di modalità di gestione principali. |Windows<br/>iOS<br/>Android<br/>Android Samsung KNOX<br/>|Windows<br/>iOS<br/>Android<br/>Android Samsung KNOX<br/>Mac OS<br/>sistema operativo iPad|
-|Conformità dispositivo|Impostare e gestire i criteri di sicurezza, ad esempio il blocco PIN a livello di dispositivo e il rilevamento jailbreak. |Limitazioni su dispositivi Android 9 e versioni successive. Per informazioni dettagliate, vedere [funzionalità di base per dispositivi mobili e sicurezza](capabilities-of-basic-mobility-and-secruity.md).|Sì|
+|Conformità dispositivo|Impostare e gestire i criteri di sicurezza, ad esempio il blocco PIN a livello di dispositivo e il rilevamento jailbreak. |Limitazioni su dispositivi Android 9 e versioni successive. Per informazioni dettagliate, vedere [funzionalità di base per dispositivi mobili e sicurezza](capabilities.md).|Sì|
 |Accesso condizionale basato sulla conformità del dispositivo |Impedire ai dispositivi non conformi di accedere alla posta elettronica aziendale e ai dati dal cloud. |-Non supportato in Windows 10.<br/>-Limitato a controllare l'accesso ai servizi di Exchange Online, SharePoint Online e Outlook. |No|
-|Configurazione delle periferiche  |Configurare le impostazioni dei dispositivi (ad esempio, disabilitando la videocamera). |Set limitato di impostazioni.Per informazioni dettagliate, vedere [funzionalità di base per dispositivi mobili e sicurezza](capabilities-of-basic-mobility-and-secruity.md). |Sì|
+|Configurazione delle periferiche  |Configurare le impostazioni dei dispositivi (ad esempio, disabilitando la videocamera). |Set limitato di impostazioni.Per informazioni dettagliate, vedere [funzionalità di base per dispositivi mobili e sicurezza](capabilities.md). |Sì|
 |Azioni remote  |Inviare comandi ai dispositivi su Internet. Ad esempio, rimuovere i dati di Office dal dispositivo di un dipendente lasciando i dati personali sul posto (ritiro). |Ritiro<br/>Cancellazione<br/>Eliminazione|-Ripristino automatico (solo Windows)<br/>- Rotazione della chiave [BitLocker](https://docs.microsoft.com/mem/intune/protect/encrypt-devices#rotate-bitlocker-recovery-keys)   (Solo Windows)<br/>- [Eliminare](https://docs.microsoft.com/mem/intune/remote-actions/devices-wipe#delete-devices-from-the-intune-portal)<br/>- [Disattiva l'attivazione loc](https://docs.microsoft.com/mem/intune/remote-actions/device-activation-lock-disable)   (solo iOS)<br/>- [Nuovo avvio](https://docs.microsoft.com/mem/intune/remote-actions/device-fresh-start)   (Solo Windows)<br/>- [Analisi completa](https://docs.microsoft.com/mem/intune/configuration/device-restrictions-windows-10#microsoft-defender-antivirus)   (Solo Windows 10)<br/>- [Individuare il dispositivo](https://docs.microsoft.com/mem/intune/remote-actions/device-locate)   (solo iOS)<br/>- [Modalità persa](https://docs.microsoft.com/mem/intune/remote-actions/device-lost-mode)   (solo iOS)<br/>- [Analisi rapida](https://docs.microsoft.com/mem/intune/configuration/device-restrictions-windows-10#microsoft-defender-antivirus)(solo Windows 10)<br/>- [Telecomando per Android](https://docs.microsoft.com/mem/intune/remote-actions/teamviewer-support)<br/>- [Blocco remoto](https://docs.microsoft.com/mem/intune/remote-actions/device-remote-lock)<br/>- [Rinomina dispositivo](https://docs.microsoft.com/mem/intune/remote-actions/device-rename)<br/>- [Reimposta codice di accesso](https://docs.microsoft.com/mem/intune/remote-actions/device-passcode-reset)<br/>- [Riavvio](https://docs.microsoft.com/mem/intune/remote-actions/device-restart)   (Solo Windows)<br/>- [Ritirare](https://docs.microsoft.com/mem/intune/remote-actions/devices-wipe#retire)<br/>-Aggiornare Windows Defender Security Intelligence (solo Windows)<br/>-Ripristino Windows 10 PIN (solo Windows)<br/>- [Cancellazione](https://docs.microsoft.com/mem/intune/remote-actions/devices-wipe#wipe)<br/>- [Inviare notifiche personalizzate](https://docs.microsoft.com/mem/intune/remote-actions/custom-notifications#send-a-custom-notification-to-a-single-device)   (Android, iOS, sistema operativo iPad)<br/>- [Sincronizza dispositivo](https://docs.microsoft.com/mem/intune/remote-actions/device-sync)|
 |Profili di posta elettronica  |Eseguire il provisioning di un profilo di posta elettronica nativo nel dispositivo. |Sì|Sì|
 |Profili WIFI |Provisioning di un profilo Wi-Fi nativo sul dispositivo. |No|Sì|

@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -15,13 +15,12 @@ ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 description: Informazioni su come collaborare con i provider di soluzioni certificati Microsoft per l'acquisto e la gestione di prodotti e servizi per l'organizzazione o l'Istituto di istruzione.
-keywords: partner, provider di soluzioni
-ms.openlocfilehash: 752c9e0237bbdde7be996b5675848e948e866dce
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 6cce3640a321d1eab31d527369a303cfde646718
+ms.sourcegitcommit: aeb94601a81db3ead8610c2f36cff30eb9fe10e7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44402595"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "47430023"
 ---
 # <a name="manage-partner-relationships"></a>Gestire le relazioni con i partner
 
@@ -34,9 +33,13 @@ ms.locfileid: "44402595"
 
 È possibile collaborare con i provider di soluzioni certificati Microsoft per acquistare e gestire prodotti e servizi per l'organizzazione o l'Istituto di istruzione. Sono necessari alcuni passaggi per ottenere le operazioni configurate.
 
-- Gli amministratori trovano e contattano un partner che utilizza il modulo all'indirizzo <a href="https://www.microsoft.com/en-us/solution-providers/home" target="_blank">https://www.microsoft.com/en-us/solution-providers/home</a> .
-- I partner inviano una richiesta di posta elettronica ai clienti per stabilire una relazione tra partner.
-- I clienti accettano l'invito nell'interfaccia di amministrazione di Microsoft 365 e iniziano a lavorare con il partner.
+1. Gli amministratori trovano e contattano un partner che utilizza il modulo all'indirizzo <a href="https://www.microsoft.com/solution-providers/home" target="_blank">https://www.microsoft.com/solution-providers/home</a> .
+2. I partner inviano una richiesta di posta elettronica ai clienti per stabilire una relazione tra partner.
+3. I clienti accettano l'invito nell'interfaccia di amministrazione di Microsoft 365 e iniziano a lavorare con il partner.
+
+## <a name="before-you-begin"></a>Informazioni preliminari
+
+Per eseguire questa procedura è necessario essere un amministratore globale o di fatturazione. Per altre informazioni, vedere [Informazioni sui ruoli di amministratore](../admin/add-users/about-admin-roles.md).
 
 ## <a name="what-can-a-partner-do-for-my-organization-or-school"></a>Che cosa può fare un partner per l'organizzazione o l'Istituto di istruzione?
 
@@ -50,7 +53,6 @@ Esistono diversi modi in cui un partner può collaborare con l'utente. In base a
 | Partner | È possibile assegnare un account utente al partner nel tenant e collaborare con altri servizi Microsoft per conto di. |
 | Advisor | I partner possono reimpostare le password e gestire gli incidenti di supporto per l'utente. |
 | Partner di Microsoft Products & Services Agreement (MPSA) | Se si è lavorato con più partner tramite il programma MPSA, è possibile consentire loro di visualizzare gli acquisti effettuati tra loro. |
-| Partner PC OEM | I partner possono caricare gli ID dispositivo per i PC che si sta [gestendo con Autopilot](https://docs.microsoft.com/microsoft-store/add-profile-to-devices). |
 | Partner line-of-business (LOB) | I partner possono sviluppare, inviare e gestire app LOB specifiche per l'organizzazione o la scuola. |
 
 ## <a name="find-a-partner"></a>Trovare un partner
@@ -82,24 +84,16 @@ Se si dispone già di un partner, ma non è ancora stato firmato un contratto pe
 4. Selezionare **accetta**.
 5. Viene visualizzato l'elenco dei partner che si sta utilizzando. Selezionare un partner per visualizzare i dettagli.
 
-## <a name="remove-partner-admin-privileges"></a>Rimuovere i privilegi di amministratore del partner
+## <a name="remove-partner-admin-roles"></a>Rimuovere i ruoli di amministratore del partner
 
-In base alla richiesta fatta dal partner, parte dell'accettazione dell'invito include l'approvazione di concedere privilegi di amministratore delegati a tali utenti. Per ulteriori informazioni, vedere [Delegated admin privileges in Azure ad](https://docs.microsoft.com/partner-center/customers_revoke_admin_privileges#delegated-admin-privileges-in-azure-ad).
+In base alla richiesta effettuata dal partner, quando si accetta l'invito, si accetta di assegnare loro ruoli di amministratore globale e helpdesk. Quando si assegnano i ruoli di amministratore a un partner, è possibile concedere loro automaticamente i privilegi di amministratore delegati in Azure AD. Per ulteriori informazioni, vedere [Delegated admin privileges in Azure ad](https://docs.microsoft.com/partner-center/customers_revoke_admin_privileges#delegated-admin-privileges-in-azure-ad).
 
-Se non si desidera delegare i privilegi di amministratore al partner, annullare l'invito anziché accettarlo.
+Se non si desidera assegnare i ruoli di amministratore al partner, annullare l'invito anziché accettarlo.
 
-Se si delegano i privilegi di amministratore a un partner, è possibile rimuovere tali privilegi in qualsiasi momento. La rimozione dei privilegi di amministratore non rimuove la relazione tra partner. Possono comunque collaborare con l'utente, ad esempio, come rivenditore.
+È possibile rimuovere i ruoli di amministratore da un partner in qualsiasi momento. La rimozione dei ruoli di amministratore non comporta la rimozione della relazione tra partner. Possono comunque collaborare con l'utente in una capacità diversa, ad esempio un rivenditore. Se si decide che non si desidera più collaborare con un partner, contattare il partner per terminare la relazione.
 
-1. Nell'interfaccia di amministrazione, andare alla pagina **Billing**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2103629" target="_blank">account Fatturazione</a> fatturazione.
-2. Nella pagina **account di fatturazione** selezionare la scheda **Relazioni partner** .
+1. Nell'interfaccia di amministrazione, passare alla pagina relazioni con i partner di **fatturazione**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2074649" target="_blank">Partner relationships</a> .
+2. Nella pagina **Relazioni partner** selezionare la riga che contiene il nome del partner che si desidera rimuovere.
 3. Selezionare la riga che contiene il nome del partner.
-4. Nella pagina partner, selezionare **Rimuovi ruoli di amministratore**.
-
-## <a name="delete-a-partner-relationship"></a>Eliminare una relazione di partner
-
-Se si decide che non si desidera più collaborare con un partner, è possibile terminare la relazione. Tuttavia, è possibile eliminare solo le relazioni in cui il partner è un amministratore delegato o un consulente. Per tutti gli altri tipi di partner, contattare il partner per terminare la relazione.
-
-1. Nell'interfaccia di amministrazione, andare alla pagina **Billing**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2103629" target="_blank">account Fatturazione</a> fatturazione.
-2. Nella pagina **account di fatturazione** selezionare la scheda **Relazioni partner** .
-3. Selezionare la riga che contiene il nome del partner.
-4. Nella pagina dei dettagli del partner, selezionare **Elimina partner**.
+4. Nella pagina partner, selezionare **Rimuovi ruoli**.
+5. Nella finestra di dialogo **Rimuovi ruoli?** selezionare **Sì**.

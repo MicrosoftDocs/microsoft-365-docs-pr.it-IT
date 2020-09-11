@@ -16,21 +16,21 @@ ms.custom:
 - Ent_Office_Other
 - seo-marvel-apr2020
 ms.assetid: 26b9ff81-93b0-4251-beaf-3c9f1d7c80c8
-description: In questo articolo vengono fornite informazioni su come gestire gli account utente, le licenze e i gruppi di Microsoft 365 con PowerShell.
-ms.openlocfilehash: a262cbb62cd457e3a22550af2f773551cf67bb43
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+description: Informazioni su come gestire gli account utente, le licenze e i gruppi di Microsoft 365 con PowerShell.
+ms.openlocfilehash: 0c6ca6a4165b616097405a9de178c254aa489a3c
+ms.sourcegitcommit: aeb94601a81db3ead8610c2f36cff30eb9fe10e7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46696108"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "47429987"
 ---
 # <a name="manage-microsoft-365-user-accounts-licenses-and-groups-with-powershell"></a>Gestire gli account utente, le licenze e i gruppi di Microsoft 365 con PowerShell
 
 *Questo articolo può essere applicato sia a Microsoft 365 Enterprise che a Office 365 Enterprise.*
 
-Una delle attività principali di qualsiasi amministratore di Microsoft 365 è la gestione degli account utente, delle licenze e dei gruppi. Anche se è possibile eseguire la maggior parte degli aspetti di queste attività nell'interfaccia di amministrazione di Microsoft 365, altre attività sono molto più rapide e facili con PowerShell. 
+Gli amministratori di Microsoft 365 devono gestire gli account utente, le licenze e i gruppi. Anche se è possibile eseguire la maggior parte di queste attività nell'interfaccia di amministrazione di Microsoft 365, alcune sono più semplici in PowerShell.
 
-Per ulteriori informazioni, vedere questi argomenti.
+Per ulteriori informazioni, vedere gli articoli seguenti:
 
 ## <a name="user-accounts"></a>Account utente
 
@@ -54,4 +54,3 @@ Per ulteriori informazioni, vedere questi argomenti.
 ## <a name="groups"></a>Gruppi
 - [Gestire l'appartenenza ai gruppi](maintain-group-membership-with-microsoft-365-powershell.md)
 - [Gestire i gruppi di Microsoft 365](manage-microsoft-365-groups-with-powershell.md)
-
