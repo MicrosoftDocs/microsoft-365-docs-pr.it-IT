@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Gli amministratori possono abilitare il supporto delle etichette di riservatezza per i file Word, Excel e PowerPoint in SharePoint e OneDrive.
-ms.openlocfilehash: d049cdd61d2155267f4e55c612885929e27adaaa
-ms.sourcegitcommit: 260bbb93bbda62db9e88c021ccccfa75ac39a32e
+ms.openlocfilehash: 650673bd85ab8a7597c9dcd644872fab2b045e72
+ms.sourcegitcommit: 2b8c3fc39a7cbd4ca35e98dca430d2470cd2c925
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "46845722"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "47426973"
 ---
 # <a name="enable-sensitivity-labels-for-office-files-in-sharepoint-and-onedrive"></a>Abilitare le etichette di riservatezza per i file di Office in SharePoint e OneDrive
 
@@ -130,7 +130,7 @@ L'amministratore globale dell'organizzazione dispone delle autorizzazioni comple
 
 ### <a name="use-powershell-to-enable-support-for-sensitivity-labels"></a>Utilizzo di PowerShell per abilitare il supporto per le etichette di riservatezza
 
-In alternativa all'utilizzo del centro conformità, è possibile abilitare il supporto per le etichette di riservatezza utilizzando il cmdlet [set-SPOTenant](https://docs.microsoft.com/powershell/module/sharepoint-online/set-spotenant?view=sharepoint-ps) di PowerShell di SharePoint Online.
+In alternativa all'utilizzo del centro conformità, è possibile abilitare il supporto per le etichette di riservatezza utilizzando il cmdlet [set-SPOTenant](https://docs.microsoft.com/powershell/module/sharepoint-online/set-spotenant) di PowerShell di SharePoint Online.
 
 Se si dispone di Microsoft 365 multi-Geo, è necessario utilizzare PowerShell per abilitare il supporto per tutte le geoposizioni geografiche.
 
@@ -156,11 +156,11 @@ Prima di eseguire il comando di PowerShell per abilitare le etichette di riserva
 
 #### <a name="run-the-powershell-command-to-enable-support-for-sensitivity-labels"></a>Eseguire il comando PowerShell per abilitare il supporto per le etichette di riservatezza
 
-Per abilitare le nuove funzionalità, utilizzare il cmdlet [set-SPOTenant](https://docs.microsoft.com/powershell/module/sharepoint-online/set-spotenant?view=sharepoint-ps) con il parametro *EnableAIPIntegration* :
+Per abilitare le nuove funzionalità, utilizzare il cmdlet [set-SPOTenant](https://docs.microsoft.com/powershell/module/sharepoint-online/set-spotenant) con il parametro *EnableAIPIntegration* :
 
 1. Utilizzo di un account aziendale o dell'Istituto di istruzione con privilegi di amministratore globale o di amministrazione di SharePoint in Microsoft 365, connettersi a SharePoint. Per informazioni in merito, vedere [Guida introduttiva a SharePoint Online Management Shell](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online).
 
-    Nota: se si dispone di Microsoft 365 multi-Geo, utilizzare il parametro-URL con [Connect-SPOService](https://docs.microsoft.com/powershell/module/sharepoint-online/connect-sposervice?view=sharepoint-ps)e specificare l'URL del sito dell'interfaccia di amministrazione di SharePoint Online per una delle geoposizioni geografiche.
+    Nota: se si dispone di Microsoft 365 multi-Geo, utilizzare il parametro-URL con [Connect-SPOService](https://docs.microsoft.com/powershell/module/sharepoint-online/connect-sposervice)e specificare l'URL del sito dell'interfaccia di amministrazione di SharePoint Online per una delle geoposizioni geografiche.
 
 2. Eseguire il seguente comando e premere **Y** per confermare:
 
@@ -210,7 +210,7 @@ Ad esempio, per cercare tutti i documenti che sono stati etichettati come "riser
 
 `InformationProtectionLabelId: 8faca7b8-8d20-48a3-8ea2-0f96310a848e`
 
-Per ottenere i GUID per le etichette di riservatezza, utilizzare il cmdlet [get-Label](https://docs.microsoft.com/powershell/module/exchange/get-label?view=exchange-ps) :
+Per ottenere i GUID per le etichette di riservatezza, utilizzare il cmdlet [get-Label](https://docs.microsoft.com/powershell/module/exchange/get-label) :
 
 1. Prima di tutto, [connettersi a PowerShell in Centro sicurezza e conformità di Office 365](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
 
@@ -228,7 +228,7 @@ Per ulteriori informazioni sull'utilizzo delle proprietà gestite, vedere [gesti
 
 Se si disabilitano queste nuove funzionalità, i file caricati dopo aver abilitato le etichette di riservatezza per SharePoint e OneDrive continuano a essere protetti dall'etichetta perché le impostazioni dell'etichetta continuano a essere applicate. Quando si applicano etichette di riservatezza ai nuovi file dopo aver disabilitato queste nuove funzionalità, la ricerca full-text, eDiscovery e la CoAuthoring non funzioneranno più.
 
-Per disabilitare queste nuove funzionalità, è necessario utilizzare PowerShell. Se si utilizza SharePoint Online Management Shell e il cmdlet [set-SPOTenant](https://docs.microsoft.com/powershell/module/sharepoint-online/set-spotenant?view=sharepoint-ps) , specificare lo stesso parametro *EnableAIPIntegration* descritto nella sezione [Use PowerShell per abilitare il supporto per le etichette di riservatezza](#use-powershell-to-enable-support-for-sensitivity-labels) . Ma stavolta, impostare il valore del parametro su false e premere **Y** per confermare:
+Per disabilitare queste nuove funzionalità, è necessario utilizzare PowerShell. Se si utilizza SharePoint Online Management Shell e il cmdlet [set-SPOTenant](https://docs.microsoft.com/powershell/module/sharepoint-online/set-spotenant) , specificare lo stesso parametro *EnableAIPIntegration* descritto nella sezione [Use PowerShell per abilitare il supporto per le etichette di riservatezza](#use-powershell-to-enable-support-for-sensitivity-labels) . Ma stavolta, impostare il valore del parametro su false e premere **Y** per confermare:
 
 ```PowerShell
 Set-SPOTenant -EnableAIPIntegration $false

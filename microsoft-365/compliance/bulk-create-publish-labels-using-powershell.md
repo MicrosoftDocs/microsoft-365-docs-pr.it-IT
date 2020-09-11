@@ -18,12 +18,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Informazioni sull'uso di PowerShell per la creazione e la pubblicazione di etichette di conservazione dalla riga di comando, indipendentemente dal centro conformità di Microsoft 365.
-ms.openlocfilehash: 416746bb849020d76bcf950d397768239d17baf1
-ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
+ms.openlocfilehash: 5b8bb7a08c9794139e840d59f9238d858e15dd4e
+ms.sourcegitcommit: 2b8c3fc39a7cbd4ca35e98dca430d2470cd2c925
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45126367"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "47426983"
 ---
 # <a name="create-and-publish-retention-labels-by-using-powershell"></a>Creare e pubblicare etichette di conservazione con PowerShell
 
@@ -736,7 +736,7 @@ if ($ResultCSV)
 
 ## <a name="step-4-run-the-powershell-script"></a>Passaggio 4: eseguire lo script di PowerShell
 
-Prima di tutto,[connettersi a PowerShell in Centro sicurezza e conformità](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell?view=exchange-ps).
+Prima di tutto,[connettersi a PowerShell in Centro sicurezza e conformità](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell).
 
 Quindi, eseguire lo script che crea e pubblica le etichette di conservazione:
   
