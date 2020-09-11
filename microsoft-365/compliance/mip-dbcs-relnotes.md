@@ -55,4 +55,4 @@ Il supporto è disponibile per i tipi di informazioni sensibili e i dizionari di
   - “L'allegato contiene alcune di queste parole”
   - “L'allegato contiene alcune di queste parole”
 
-In alternativa, è consigliabile creare un SIT (Sensitive Information Type) personalizzato con un dizionario di parole chiave che rileva i criteri nei messaggi e gli allegati e l’uso di tale tipo di contenuto personalizzato come condizione per la conformità alle comunicazioni.
+In alternativa, è consigliabile creare un tipo di informazioni sensibili personalizzato con un dizionario di parole chiave che rileva i criteri nei messaggi e gli allegati e l’uso di tale tipo di contenuto personalizzato come condizione per la conformità alle comunicazioni.
