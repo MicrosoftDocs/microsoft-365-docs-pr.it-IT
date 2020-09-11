@@ -4,7 +4,7 @@ description: Suggerimenti tecnici Microsoft — SET DI STRUMENTI DI MIGRAZIONE D
 keywords: Migrazione di FastTrack, Microsoft 365 Education, Documentazione Microsoft 365, GDPR
 localization_priority: Priority
 Robots: NOFOLLOW,NOINDEX
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -16,12 +16,12 @@ ms.collection:
 - GDPR
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: 7e4f7fb72d6fb2b84c85ecb55301fc2024630f58
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 162a64535f82f24411121ed81e36078511eb8eba
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632487"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47416912"
 ---
 # <a name="fasttrack-migration-toolset-for-submitting-delete-request"></a>Set di strumenti di migrazione di FastTrack per inviare una richiesta di eliminazione
 
@@ -73,7 +73,7 @@ Per eseguire correttamente il modulo, è necessario installare moduli dipendenti
 
 Per poter inviare un DSR, è necessario accedere prima con le credenziali di Office 365: immettendo le credenziali appropriate viene convalidato lo stato di amministratore globale e vengono raccolte le informazioni del tenant. 
 
-**Login-FastTrackAccount -ApiKey: \<Chiave API fornita da FastTrack MVM\>**
+**Login-FastTrackAccount -ApiKey: \<API Key provided by FastTrack MVM\>**
 
 Una volta eseguito l'accesso, le credenziali e la chiave saranno conservate per l'utilizzo con i moduli FastTrack per il resto della sessione corrente di PowerShell.
 

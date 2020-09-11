@@ -3,7 +3,7 @@ title: Richieste degli interessati per Professional Services e supporto tecnico 
 description: Informazioni su come Professional Services e supporto tecnico Microsoft gestiscono le richieste degli interessati nell'ambito del GDPR e del CCPA.
 keywords: Professional Services, Microsoft 365, Microsoft 365 Education, documentazione Microsoft 365, GDPR, CCPA
 localization_priority: Priority
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e8bbdcc6140ffac298942f81899a4c872cc05584
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 496a84b153d017eb69ba5b18443e4331c00c4dd7
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44036311"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47416580"
 ---
 # <a name="microsoft-support-and-professional-services-data-subject-requests-for-the-gdpr-and-ccpa"></a>Richieste degli interessati per Professional Services e supporto tecnico Microsoft nell'ambito del GDPR e del CCPA
 
@@ -133,7 +133,7 @@ Per individuare i dati pertinenti e ottenere assistenza da Microsoft, un cliente
 
 Per identificare interazioni specifiche, i clienti devono effettuare una ricerca nelle proprie interazioni. Per i clienti Premier, il Contract Service Manager ("CSM") di un cliente ha visibilità su tutte le richieste di supporto create in base al piano del contratto. Per i clienti non Premier, sono disponibili portali equivalenti, come le aree di supporto di Online Services.
 
-![Ricerca in SMC](../media/Prof-Serv-DSR-Doc-Final_image3.png)Il CSM può accedere al portale all'indirizzo Support.Microsoft.Com ([https://support.microsoft.com/\<local codice della lingua\>/premier](https://support.microsoft.com/%3clocal%20language%20code%3e/premier)) ("SMC") e selezionare e analizzare le richieste di supporto. Nota: nell'URL, inserire il proprio codice della lingua.
+![Ricerca in SMC](../media/Prof-Serv-DSR-Doc-Final_image3.png)Il CSM può accedere al portale all'indirizzo Support.Microsoft.Com ([https://support.microsoft.com/\<local language code\>/premier](https://support.microsoft.com/%3clocal%20language%20code%3e/premier)) ("SMC") e selezionare e analizzare le richieste di supporto. Nota: nell'URL, inserire il proprio codice della lingua.
 
 >[!IMPORTANT]
 >Oltre alla cronologia dei casi in SMC, i clienti possono avere dati personali di un utente finale anche nei file che sono stati raccolti da Microsoft (o che, con l'autorizzazione del cliente, sono stati rimossi dal servizio online) durante un'interazione con il supporto, ad esempio copie di cassette postali di Exchange, macchine virtuali di Azure o database del cliente. Tali dati personali possono essere menzionati o meno nella cronologia del caso (cioè, il ticket) per un impegno particolare. Per analizzare tali dati, il contatto cliente deve essere uno specifico contatto di richiesta del supporto (tramite AAD o MSA) autenticato che ha ricevuto un URL per uno spazio di lavoro nello strumento Data Transfer and Management (DTM) del Supporto tecnico Microsoft. Un contatto cliente avrà accesso ai file, ma non è disponibile una visione globale e SMC non indicherà se i file esistono.
