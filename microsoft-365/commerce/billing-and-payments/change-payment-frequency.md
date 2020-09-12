@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -21,12 +21,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: Informazioni su come modificare la frequenza di fatturazione per l'abbonamento aziendale.
-ms.openlocfilehash: 439e5b9c7e3c628b2b0834b624696e6c2ae19bb6
-ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
+ms.openlocfilehash: 0a4dccd69092c849637a5c79bd1bfe6d7faa1202
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45430003"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47545931"
 ---
 # <a name="change-your-billing-frequency"></a>Modificare la frequenza di fatturazione
 
@@ -40,7 +40,6 @@ ms.locfileid: "45430003"
 Quando si acquista un abbonamento, è possibile scegliere la fatturazione mensile o annuale. Per modificare la frequenza di fatturazione per un abbonamento, attenersi alla seguente procedura.
 
 1. Nell'interfaccia di amministrazione, andare alla pagina **fatturazione** dei \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">prodotti</a> .
-
-2. Individuare l'abbonamento che si desidera modificare. Nella sezione **fatturazione** , accanto a **fatturati mensilmente** o **fatturati annualmente**, selezionare **modifica**.
-
-3. Scegliere l'opzione per la frequenza con cui si desidera effettuare la fatturazione, quindi selezionare **Cambia**.
+2. Nella scheda **prodotti** selezionare l'abbonamento che si desidera modificare.
+3. Nella sezione **impostazioni di sottoscrizione e pagamento** della pagina Dettagli sottoscrizione selezionare **modifica frequenza fatturazione**.
+4. Nel riquadro **Edit Frequency Billing** scegliere l'opzione per la frequenza con cui si desidera effettuare la fatturazione, quindi selezionare **Cambia**.

@@ -16,12 +16,12 @@ ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
 - remotework
-ms.openlocfilehash: 9c289006fc1501865b0cf5529c308a0986895504
-ms.sourcegitcommit: 90efec455336b4cecc06a8cbf0ce287740433523
+ms.openlocfilehash: 2dfaf33a837a74d92ec9bbbbb7f04b726e7f3744
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "46898141"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47547861"
 ---
 # <a name="policy-recommendations-for-securing-email"></a>Criteri consigliati per la protezione della posta elettronica
 
@@ -33,15 +33,17 @@ Questi suggerimenti richiedono agli utenti di utilizzare i client di posta elett
 
 ## <a name="updating-common-policies-to-include-email"></a>Aggiornamento di criteri comuni per includere messaggi di posta elettronica
 
-Nel diagramma seguente vengono illustrati i criteri comuni di identità e accesso ai dispositivi e viene indicato quali criteri devono essere aggiornati per proteggere la posta elettronica. Si noti l'aggiunta di una nuova regola per Exchange Online per bloccare i client ActiveSync. Questo impone l'utilizzo di Outlook Mobile.
+Per proteggere la posta elettronica, nel diagramma seguente vengono illustrati i criteri da aggiornare dai criteri di identità e accesso ai dispositivi comuni.
 
-![Riepilogo degli aggiornamenti dei criteri per la protezione della posta elettronica](../media/identity-access-ruleset-mail.png)
+[![Riepilogo degli aggiornamenti dei criteri per la protezione dell'accesso ai team e ai servizi dipendenti](../media/microsoft-365-policies-configurations/identity-access-ruleset-mail.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/identity-access-ruleset-mail.png)
 
-[Visualizzazione di una versione più grande di questa immagine](https://raw.githubusercontent.com/MicrosoftDocs/microsoft-365-docs/public/microsoft-365/media/identity-access-ruleset-mail.png)
+[Visualizzazione di una versione più grande di questa immagine](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/identity-access-ruleset-mail.png)
 
-Se è stato incluso Exchange Online e Outlook nell'ambito dei criteri quando vengono configurati, è necessario creare solo il nuovo criterio per bloccare i client ActiveSync. Esaminare i criteri elencati nella tabella seguente e apportare le aggiunte consigliate o confermare che sono già inclusi. Ogni regola collega le istruzioni di configurazione associate ai [criteri comuni di identità e accesso ai dispositivi](identity-access-policies.md).
+Si noti l'aggiunta di un nuovo criterio per Exchange Online per bloccare i client ActiveSync. Questo impone l'utilizzo di Outlook Mobile.
 
-|Livello di protezione|Criteri|Ulteriori informazioni|
+Se è stato incluso Exchange Online e Outlook nell'ambito dei criteri quando vengono configurati, è necessario creare solo il nuovo criterio per bloccare i client ActiveSync. Esaminare i criteri elencati nella tabella seguente e apportare le aggiunte consigliate o confermare che sono già inclusi. Ogni criterio si collega alle istruzioni di configurazione associate nei [criteri comuni di identità e accesso ai dispositivi](identity-access-policies.md).
+
+|Livello di protezione|Criteri|Altre informazioni|
 |:---------------|:-------|:----------------|
 |**Protezione di base**|[Richiedere l'AMF quando il rischio di accesso è *medio* o *elevato*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Includere Exchange Online nell'assegnazione delle app Cloud|
 |        |[Bloccare i client che non supportano l'autenticazione moderna](identity-access-policies.md#block-clients-that-dont-support-modern-authentication)|Includere Exchange Online nell'assegnazione delle app Cloud|
@@ -55,7 +57,7 @@ Se è stato incluso Exchange Online e Outlook nell'ambito dei criteri quando ven
 
 ## <a name="block-activesync-clients"></a>Bloccare i client ActiveSync
 
-Questo criterio impedisce ai client ActiveSync di ignorare altre regole di accesso condizionale. La configurazione della regola si applica solo ai client ActiveSync. Selezionando **[Richiedi criteri di protezione delle app](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-grant#require-app-protection-policy)**, questo criterio blocca i client ActiveSync. I dettagli sulla creazione di questo criterio sono disponibili in [Richiedi criteri di protezione delle app per l'accesso alle app cloud con accesso condizionale](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access).
+Questo criterio impedisce ai client ActiveSync di ignorare altri criteri di accesso condizionale. La configurazione dei criteri si applica solo ai client ActiveSync. Selezionando **[Richiedi criteri di protezione delle app](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-grant#require-app-protection-policy)**, questo criterio blocca i client ActiveSync. I dettagli sulla creazione di questo criterio sono disponibili in [Richiedi criteri di protezione delle app per l'accesso alle app cloud con accesso condizionale](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access).
 
 1. Seguire "passaggio 2: configurare un criterio di accesso condizionale di Azure AD per Exchange Online con ActiveSync (EAS)" nello [scenario 1: le app di Office 365 richiedono applicazioni approvate con i criteri di protezione delle app](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access#scenario-1-office-365-apps-require-approved-apps-with-app-protection-policies), che impediscono ai client di Exchange ActiveSync di sfruttare l'autenticazione di base dalla connessione a Exchange Online.
 
@@ -67,4 +69,9 @@ Per ulteriori informazioni, vedere [configurare le nuove funzionalità di critto
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-[Suggerimenti sui criteri per la protezione di siti e file di SharePoint](sharepoint-file-access-policies.md)
+![Passaggio 4: criteri per le app cloud di Microsoft 365](../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png)
+
+Configurare i criteri di accesso condizionale per:
+
+- [Microsoft Teams](teams-access-policies.md)
+- [SharePoint](secure-email-recommended-policies.md)

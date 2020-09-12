@@ -12,16 +12,16 @@ f1.keywords:
 ms.custom: seo-marvel-mar2020
 localization_priority: normal
 description: Informazioni su come amministrare le impostazioni di Exchange Online Multi-Geo nell'ambiente Microsoft 365 con PowerShell.
-ms.openlocfilehash: 645d48066ca02dbf3480e20ae30dc187f84293cf
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 996566d67aa8ba7ebca1406cd5d6265458637fee
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46690949"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47546247"
 ---
 # <a name="administering-exchange-online-mailboxes-in-a-multi-geo-environment"></a>Amministrazione delle cassette postali di Exchange Online in un ambiente multi-geografico
 
-È richiesta la Sessione remota di PowerShell per visualizzare e configurare le proprietà multi-geografiche nell’ambiente di Microsoft 365. Per informazioni su come connettersi a PowerShell per Exchange Online, vedere [Connettersi a PowerShell per Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).
+Exchange Online PowerShell è necessario per visualizzare e configurare le proprietà multi Geo nell'ambiente Microsoft 365. Per informazioni su come connettersi a PowerShell per Exchange Online, vedere [Connettersi a PowerShell per Exchange Online](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
 
 È necessario il [modulo di PowerShell di Microsoft Azure Active Directory](https://social.technet.microsoft.com/wiki/contents/articles/28552.microsoft-azure-active-directory-powershell-module-version-release-history.aspx) v1.1.166.0 o versione successiva in V1. x per visualizzare la proprietà**PreferredDataLocation** sugli oggetti utente. Gli oggetti utente sincronizzati con AAD Connect in AAD non possono contenere i valori **PreferredDataLocation** modificati direttamente tramite ADD PowerShell. Gli oggetti utente solo cloud possono essere modificati tramite AAD PowerShell. Per connettersi a PowerShell di Azure Active Directory, vedere [Connettersi a PowerShell](connect-to-microsoft-365-powershell.md).
 
@@ -29,33 +29,49 @@ ms.locfileid: "46690949"
 
 In genere, PowerShell di Exchange Online si connetterà alla posizione geografica centrale. Tuttavia, è anche possibile connettersi alla posizioni geografiche satellite. Per una migliore prestazione, è consigliabile connettersi direttamente alla posizione geografica satellite quando si gestiscono solo gli utenti di tale specifica posizione.
 
-Per connettersi a una posizione geografica specifica, il parametro *ConnectionUri* è diversa dalle ordinarie istruzioni di connessione. Il resto dei comandi e i valori sono uguali. Ecco come procedere:
+I requisiti per l'installazione e l'uso del modulo EXO V2 sono descritti in [Installazione e gestione del modulo V2 EXO](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell-v2#install-and-maintain-the-exo-v2-module).
 
-1. Nel computer locale, aprire Windows PowerShell ed eseguire il seguente comando:
+Per connettere Exchange Online PowerShell a una specifica posizione geografica, il parametro *ConnectionURI* è diverso rispetto alle normali istruzioni di connessione. Il resto dei comandi e i valori sono uguali.
+
+In particolare, è necessario aggiungere il `?email=<emailaddress>` valore alla fine del valore _ConnectionURI_ . `<emailaddress>` è l'indirizzo di posta elettronica di **qualsiasi** cassetta postale nella posizione geografica di destinazione. Le autorizzazioni per la cassetta postale o la relazione con le credenziali non sono un fattore. l'indirizzo di posta elettronica indica semplicemente a Exchange Online PowerShell dove effettuare la connessione.
+
+I clienti Microsoft 365 o Microsoft 365 GCC in genere non è necessario utilizzare il parametro _ConnectionURI_ per connettersi a PowerShell di Exchange Online. Tuttavia, per connettersi a una specifica posizione geografica, è necessario utilizzare il parametro _ConnectionURI_ in modo che sia possibile utilizzare `?email=<emailaddress>` il valore.
+
+### <a name="connect-to-a-geo-location-in-exchange-online-powershell-using-multi-factor-authentication-mfa"></a>Connettersi a una posizione geografica in PowerShell di Exchange Online utilizzando l'autenticazione a più fattori (AMF)
+
+1. In una finestra di Windows PowerShell caricare il modulo EXO V2 eseguendo il comando seguente:
+
+   ```powershell
+   Import-Module ExchangeOnlineManagement
+   ```
+
+2. Nell'esempio seguente, admin@contoso.onmicrosoft.com è l'account di amministratore e la posizione geografica di destinazione è il luogo in cui risiede la cassetta postale olga@contoso.onmicrosoft.com.
+
+  ```powershell
+  Connect-ExchangeOnline -UserPrincipalName admin@contoso.onmicrosoft.com -ShowProgress $true -ConnectionUri https://outlook.office365.com/powershell?email=olga@contoso.onmicrosoft.com
+  ```
+
+### <a name="connect-to-a-geo-location-in-exchange-online-powershell-without-using-mfa"></a>Connettersi a una posizione geografica in Exchange Online PowerShell senza l'utilizzo dell'AMF
+
+1. In una finestra di Windows PowerShell caricare il modulo EXO V2 eseguendo il comando seguente:
+
+   ```powershell
+   Import-Module ExchangeOnlineManagement
+   ```
+
+2. Eseguire il comando seguente:
 
    ```powershell
    $UserCredential = Get-Credential
    ```
 
-   Nella finestra di dialogo **Richiesta credenziali di Windows PowerShell** digitare l'account e la password aziendale o dell'istituto di istruzione, quindi fare clic su **OK**.
+   Nella finestra di dialogo che viene visualizzata **Richiesta credenziali di Windows PowerShell** digitare l'account e la password aziendale o dell'istituto di istruzione, quindi fare clic su **OK**.
 
-2. Sostituire `<emailaddress>` con l'indirizzo di posta elettronica di **eventuali** cassette postali nella specifica posizione geografica e eseguire il comando seguente. Le autorizzazioni per la cassetta postale e la relazione con le credenziali nel passaggio 1 non sono un fattore; l'indirizzo di posta elettronica indica semplicemente a Exchange Online dove connettersi.
-  
-   ```powershell
-   $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://outlook.office365.com/powershell?email=<emailaddress> -Credential $UserCredential -Authentication  Basic -AllowRedirection
-   ```
-
-   Ad esempio, se olga@contoso.onmicrosoft.com è l'indirizzo di posta elettronica di una cassetta postale valida nella posizione geografica a cui si desidera connettersi, eseguire il comando seguente:
+3. Nell'esempio seguente, la posizione geografica di destinazione è quella in cui risiede la cassetta postale olga@contoso.onmicrosoft.com.
 
    ```powershell
-   $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://outlook.office365.com/powershell?email=olga@contoso.onmicrosoft.com -Credential $UserCredential -Authentication  Basic -AllowRedirection
+   Connect-ExchangeOnline -Credential $UserCredential -ShowProgress $true -ConnectionUri https://outlook.office365.com/powershell?email=olga@contoso.onmicrosoft.com
    ```
-
-3. Eseguire il comando riportato di seguito:
-
-    ```powershell
-    Import-PSSession $Session
-    ```
 
 ## <a name="view-the-available-geo-locations-that-are-configured-in-your-exchange-online-organization"></a>Visualizzare le posizioni geografiche disponibili configurate nella propria organizzazione di Exchange Online
 
@@ -135,14 +151,13 @@ Set-MsolUser -UserPrincipalName michelle@contoso.onmicrosoft.com -PreferredDataL
 ```
 
 > [!NOTE]
+>
 > - Come accennato in precedenza, non è possibile utilizzare questa procedura per gli oggetti utente sincronizzati da Active Directory locale. È necessario modificare il valore **PreferredDataLocation** in Active Directory e sincronizzarlo con AAD Connect. Per ulteriori informazioni, vedere [Sincronizzazione di Azure Active Directory Connect: configurare il percorso di dati preferito per le risorse di Microsoft 365](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnectsync-feature-preferreddatalocation).
-> 
+>
 > - Il tempo necessario per spostare una cassetta postale in una nuova posizione geografica dipende da diversi fattori:
-> 
+>
 >   - Le dimensioni e tipo di cassetta postale.
-> 
 >   - Il numero totale di cassette postali di cui eseguire la migrazione.
-> 
 >   - La disponibilità delle risorse di spostamento.
 
 ### <a name="move-disabled-mailboxes-that-are-on-litigation-hold"></a>Disattivazione della migrazione per cassette postali in blocco per controversia legale
@@ -172,17 +187,11 @@ New-MsolUser -UserPrincipalName <UserPrincipalName> -DisplayName "<Display Name>
 In questo esempio crea un nuovo account utente per Elizabeth Brunner con i valori seguenti:
 
 - Nome dell'entità utente: ebrunner@contoso.onmicrosoft.com
-
 - Nome: entrambe
-
 - Cognome: Brunner
-
 - Nome visualizzato: Elizabeth Brunner
-
 - Password: generata casualmente e visualizzata nei risultati del comando (in quanto non vengono usati i parametri della *Password*)
-
 - Licenza: `contoso:ENTERPRISEPREMIUM` (E5)
-
 - Posizione: Australia (AUS)
 
 ```powershell

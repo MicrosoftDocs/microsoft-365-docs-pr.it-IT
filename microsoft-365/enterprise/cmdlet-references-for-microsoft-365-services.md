@@ -16,12 +16,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 3a1ea1a6-edbd-4922-9ad3-0b075f7f9009
 description: Trovare gli argomenti di riferimento sui cmdlet di Microsoft 365 PowerShell per Azure AD, Exchange Online, SharePoint Online, Skype for business online e sicurezza & conformità.
-ms.openlocfilehash: 4905c20216e6df02399fe372ec31fe3bedfde6c4
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 8f2aa4b123e3b7e3f92aabee7f9e8adeeb9c154f
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46691370"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47547119"
 ---
 # <a name="cmdlet-references-for-microsoft-365-services"></a>Riferimenti cmdlet per i servizi di Microsoft 365
 
@@ -42,7 +42,7 @@ Per le istruzioni per la connessione a Microsoft 365 PowerShell, vedere [Connect
   
 ## <a name="exchange-online-powershell-cmdlets"></a>Cmdlet di Exchange Online PowerShell
 
-Gli argomenti di riferimento sui cmdlet di Exchange Online si trovano nella sezione **Reference** della [documentazione di Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps).
+Gli argomenti di riferimento sui cmdlet di Exchange Online si trovano nella sezione **Reference** della [documentazione di Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell).
   
 Per istruzioni sulla connessione per PowerShell di Exchange Online, fare clic su [Connetti a PowerShell di Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=396554).
   
@@ -61,17 +61,14 @@ Per gli argomenti di riferimento sui cmdlet di Skype for business online, fare c
   
 Per istruzioni sulla connessione per PowerShell per Skype for business online, fare clic su [Gestisci Skype for business online con PowerShell](manage-skype-for-business-online-with-microsoft-365-powershell.md).
 
-## <a name="security-amp-compliance-center-powershell-cmdlets"></a>Cmdlet di PowerShell per Centro sicurezza e conformità
+## <a name="security--compliance-center-powershell-cmdlets"></a>Cmdlet di PowerShell per il Centro sicurezza & Compliance
 
-&amp;Gli argomenti di riferimento del cmdlet di Microsoft 365 Security Compliance Center sono disponibili nella sezione **Reference** della [documentazione di Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps).
+Gli argomenti di riferimento del cmdlet del Centro sicurezza & conformità Microsoft 365 sono disponibili nella sezione **Reference** della documentazione di PowerShell per la [sicurezza & conformità](https://docs.microsoft.com/powershell/exchange/scc-powershell).
   
-Per istruzioni sulla connessione per &amp; PowerShell centro conformità di sicurezza, fare clic su [Connetti a PowerShell per il Centro sicurezza e &amp; conformità](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell?view=exchange-ps).
+Per istruzioni sulla connessione per PowerShell centro conformità & di sicurezza, fare clic su [Connetti al centro sicurezza & conformità PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell).
 
-
-  
 ## <a name="see-also"></a>Vedere anche
 
 [Gestire Microsoft 365 con PowerShell](manage-microsoft-365-with-microsoft-365-powershell.md)
   
 [Guida introduttiva a PowerShell per Microsoft 365](getting-started-with-microsoft-365-powershell.md)
-

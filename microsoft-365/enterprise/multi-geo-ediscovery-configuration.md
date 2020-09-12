@@ -13,12 +13,12 @@ ms.custom: seo-marvel-apr2020
 localization_priority: Normal
 ms.collection: Strat_SP_gtc
 description: Informazioni su come utilizzare il parametro Region per configurare eDiscovery per l'utilizzo nelle posizioni satellite in Microsoft 365 multi-Geo.
-ms.openlocfilehash: 83141f824c76ca5531e1b390b91adcdb4f3874de
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 216012791473776395d27821293e8fc565568c2c
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46691119"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47547951"
 ---
 # <a name="microsoft-365-multi-geo-ediscovery-configuration"></a>Configurazione di eDiscovery per Microsoft 365 Multi-Geo
 
@@ -35,7 +35,7 @@ Quando è impostato il ruolo di manager o amministratore di eDiscovery per una p
 
 Per impostare il filtro di sicurezza di conformità per un'area geografica:
 
-1. [Connettersi a PowerShell per Centro sicurezza e conformità di Microsoft 365](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)
+1. [Connettersi a PowerShell per Centro sicurezza e conformità di Microsoft 365](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell)
 
 2. Utilizzare la sintassi seguente:
 
@@ -49,4 +49,4 @@ Per impostare il filtro di sicurezza di conformità per un'area geografica:
    New-ComplianceSecurityFilter -Action All -FilterName "NAM eDiscovery Managers" -Region NAM -Users adwood@contoso.onmicrosoft.com
    ```
 
-Vedere l’articolo [New-ComplianceSecurityFilter](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/new-compliancesecurityfilter) per ulteriori parametri e sintassi.
+Vedere l’articolo [New-ComplianceSecurityFilter](https://docs.microsoft.com/powershell/module/exchange/new-compliancesecurityfilter) per ulteriori parametri e sintassi.

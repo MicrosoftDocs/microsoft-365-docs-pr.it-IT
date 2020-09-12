@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - seo-marvel-apr2020
 description: In questo articolo viene descritto come rimuovere o disabilitare l'autenticazione moderna ibrida da Skype for business e Exchange.
-ms.openlocfilehash: da0887936f5def69ad80c8f04381bcb3a85c2349
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 70f62b9b2165464837aa1dea0e12854df116efe0
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46691024"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47547097"
 ---
 # <a name="removing-or-disabling-hybrid-modern-authentication-from-skype-for-business-and-exchange"></a>Rimozione o disabilitazione dell'autenticazione moderna ibrida da Skype for Business ed Exchange
 
@@ -47,7 +47,7 @@ Set-OrganizationConfig -OAuth2ClientProfileEnabled $false
 Set-AuthServer -Identity evoSTS -IsDefaultAuthorizationEndpoint $false
 ```
 
-2. **Exchange Online**: [connettersi a Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell) con Remote PowerShell. Eseguire il seguente comando per trasformare il flag  *OAuth2ClientProfileEnabled*  su' false ':
+2. **Exchange Online**: [connettersi a Exchange Online](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell) con Remote PowerShell. Eseguire il seguente comando per trasformare il flag  *OAuth2ClientProfileEnabled*  su' false ':
 
 ```powershell    
 Set-OrganizationConfig -OAuth2ClientProfileEnabled:$false

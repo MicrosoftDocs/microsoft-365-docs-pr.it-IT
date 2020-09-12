@@ -18,12 +18,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: La sicurezza e la mobilità di base consentono di proteggere e gestire i dispositivi mobili.
-ms.openlocfilehash: a88afd539209d20046a778f8c6d16cadd51b5a9a
-ms.sourcegitcommit: aeb94601a81db3ead8610c2f36cff30eb9fe10e7
+ms.openlocfilehash: aed4f4c2d252e487d24496ac00f3de24bc57ab55
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "47430217"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47545897"
 ---
 # <a name="capabilities-of-basic-mobility-and-security"></a>Funzionalità di mobilità e sicurezza di base
 
@@ -166,9 +166,9 @@ L'opzione seguente può impedire agli utenti di accedere al proprio indirizzo di
 |Blocca connessione con archivi rimovibili |Sì|Sì|No|
 |Blocca connessione Bluetooth |Sì|Sì|No|
 
-##  <a name="additional-settings"></a>Impostazioni aggiuntive 
+## <a name="additional-settings"></a>Impostazioni aggiuntive
 
-Puoi configurare le impostazioni criteri aggiuntive riportate di seguito tramite i cmdlet di PowerShell. Per ulteriori informazioni, vedere [PowerShell per il Centro sicurezza & Compliance](https://docs.microsoft.com/powershell/exchange/office-365-scc/office-365-scc-powershell?view=exchange-ps).
+È possibile impostare le seguenti impostazioni dei criteri aggiuntive utilizzando i cmdlet di PowerShell per la sicurezza & Compliance Center. Per ulteriori informazioni, vedere [PowerShell per il Centro sicurezza & Compliance](https://docs.microsoft.com/powershell/exchange/scc-powershell).
 
 |**Nome dell'impostazione**|**iOS 7,1 e versioni successive**|**Android 5 e versioni successive**|
 |:-----|:-----|:-----|

@@ -18,29 +18,29 @@ ms.custom:
 search.appverid:
 - MET150
 description: Utilizzare la sicurezza e la mobilità di base per creare criteri per i dispositivi che proteggono le informazioni dell'organizzazione.
-ms.openlocfilehash: eddd3454e8f00bab7a830e7710331cafd097d7de
-ms.sourcegitcommit: aeb94601a81db3ead8610c2f36cff30eb9fe10e7
+ms.openlocfilehash: 322bca862c852f83406ca4622a63384b2e2275e5
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "47430214"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47545885"
 ---
-# <a name="create-device-security-policies-in-basic-mobility-and-security"></a>Creare criteri di sicurezza per i dispositivi in mobilità e sicurezza di base 
+# <a name="create-device-security-policies-in-basic-mobility-and-security"></a>Creare criteri di sicurezza per i dispositivi in mobilità e sicurezza di base
 
 È possibile utilizzare la sicurezza e la mobilità di base per creare criteri di dispositivo che consentono di proteggere le informazioni dell'organizzazione su Microsoft 365 da accessi non autorizzati. È possibile applicare i criteri a qualsiasi dispositivo mobile dell'organizzazione in cui l'utente del dispositivo dispone di una licenza di Microsoft 365 applicabile e ha registrato il dispositivo in mobilità e sicurezza di base.
 
-## <a name="before-you-begin"></a>Informazioni preliminari
+## <a name="before-you-begin"></a>Prima di iniziare
 
->[!IMPORTANT]
->Prima di poter creare un criterio per dispositivi mobili, è necessario attivare e configurare la mobilità e la sicurezza di base. Per altre informazioni, vedere Overview of Basic Mobility and Security.
+> [!IMPORTANT]
+> Prima di poter creare un criterio per dispositivi mobili, è necessario attivare e configurare la mobilità e la sicurezza di base. Per altre informazioni, vedere Overview of Basic Mobility and Security.
 
 - Informazioni sui dispositivi, le app per dispositivi mobili e le impostazioni di sicurezza supportate da supporto per la sicurezza e la mobilità di base. Vedere [funzionalità di base per dispositivi mobili e sicurezza](capabilities.md).
 - Creare gruppi di sicurezza che includano gli utenti di Microsoft 365 a cui si desidera distribuire i criteri e per gli utenti che potrebbero essere esclusi dall'accesso bloccato a Microsoft 365. Prima di distribuire un nuovo criterio per l'organizzazione verifica i criteri distribuendoli a un numero limitato di utenti. È possibile creare e utilizzare un gruppo di sicurezza che includa solo te stesso o un numero limitato di utenti di Microsoft 365 che possano testare il criterio. Per ulteriori informazioni sui gruppi di sicurezza, vedere [creare, modificare o eliminare un gruppo di sicurezza](https://go.microsoft.com/fwlink/p/?LinkId=518555).
 - Per creare e distribuire criteri di sicurezza e mobilità di base in Microsoft 365, è necessario essere un amministratore globale di Microsoft 365. Per altre informazioni, vedere [Permissions in the Security & Compliance Center](https://support.microsoft.com/office/d10608af-7934-490a-818e-e68f17d0e9c1).
 - Prima di distribuire i criteri, informare l'organizzazione sull'impatto potenziale di registrazione di un dispositivo in mobilità e sicurezza di base. A seconda di come si configurano i criteri, i dispositivi non conformi possono essere bloccati dall'accesso a Microsoft 365 e ai dati, incluse le applicazioni installate, le foto e le informazioni personali su un dispositivo registrato e i dati possono essere eliminati.
 
->[!NOTE]
->I criteri e le regole di accesso creati in MDM per Microsoft 365 business standard eseguono l'override dei criteri cassetta postale di dispositivo mobile di Exchange ActiveSync e delle regole di accesso ai dispositivi creati nell'interfaccia di amministrazione di Exchange. Dopo che un dispositivo è stato registrato in MDM per Microsoft 365 business standard, qualsiasi criterio cassetta postale per il dispositivo mobile di Exchange ActiveSync o la regola di accesso ai dispositivi applicata al dispositivo viene ignorata. Per ulteriori informazioni su Exchange ActiveSync, vedere [Exchange ActiveSync in Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=524380).
+> [!NOTE]
+> I criteri e le regole di accesso creati in MDM per Microsoft 365 business standard eseguono l'override dei criteri cassetta postale di dispositivo mobile di Exchange ActiveSync e delle regole di accesso ai dispositivi creati nell'interfaccia di amministrazione di Exchange. Dopo che un dispositivo è stato registrato in MDM per Microsoft 365 business standard, qualsiasi criterio cassetta postale per il dispositivo mobile di Exchange ActiveSync o la regola di accesso ai dispositivi applicata al dispositivo viene ignorata. Per ulteriori informazioni su Exchange ActiveSync, vedere [Exchange ActiveSync in Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=524380).
 
 ## <a name="step-1-create-a-device-policy-and-deploy-to-a-test-group"></a>Passaggio 1: creare un criterio di dispositivo e distribuirlo a un gruppo di test
 
@@ -50,7 +50,7 @@ Prima di iniziare, assicurarsi di aver attivato e configurato la mobilità e la 
 
 2. Selezionare **Crea un criterio**.
 
-    :::image type="content" source="../../media/basic-mobility-security/bms-4-policy.png" alt-text="Impostazioni di base per i criteri di sicurezza e mobilità":::
+   :::image type="content" source="../../media/basic-mobility-security/bms-4-policy.png" alt-text="Impostazioni di base per i criteri di sicurezza e mobilità":::
 
 3. Nella pagina **impostazioni dei criteri** specificare i requisiti desiderati applicati ai dispositivi mobili nell'organizzazione.
 
@@ -71,7 +71,7 @@ Dopo aver creato un criterio dispositivo, verificare che il criterio funzioni co
 3. Verifica lo stato dei dispositivi dell'utente a cui sono stati applicati i criteri. Si desidera che lo **stato** dei dispositivi venga **gestito.**
 4. È inoltre possibile eseguire un wipe completo o selettivo su un dispositivo facendo clic su **Factory Reset** o **Remove Company Data** from **Manage** Button dopo aver selezionato un dispositivo. Per istruzioni, vedere [Wipe a Mobile Device in Microsoft 365.
 
-Passaggio 3: distribuire un criterio all'organizzazione
+## <a name="step-3-deploy-a-policy-to-your-organization"></a>Passaggio 3: distribuire un criterio all'organizzazione
 
 Dopo aver creato un criterio dispositivo e aver verificato che funzioni come previsto, distribuirlo nell'organizzazione.
 
@@ -85,7 +85,7 @@ Il criterio viene inserito nel dispositivo mobile di ogni utente a cui si applic
 
 ## <a name="step-4-block-email-access-for-unsupported-devices"></a>Passaggio 4: bloccare l'accesso alla posta elettronica per i dispositivi non supportati
 
-Per proteggere le informazioni dell'organizzazione, è necessario bloccare l'accesso app a Microsoft 365 per i dispositivi mobili che non sono supportati da mobilità e sicurezza di base. Per un elenco dei dispositivi supportati, vedere [dispositivi supportati](https://support.microsoft.com/office/capabilities-of-basic-mobility-and-security-a1da44e5-7475-4992-be91-9ccec25905b0#bkmk_supporteddevices). 
+Per proteggere le informazioni dell'organizzazione, è necessario bloccare l'accesso app a Microsoft 365 per i dispositivi mobili che non sono supportati da mobilità e sicurezza di base. Per un elenco dei dispositivi supportati, vedere [dispositivi supportati](https://support.microsoft.com/office/capabilities-of-basic-mobility-and-security-a1da44e5-7475-4992-be91-9ccec25905b0#bkmk_supporteddevices).
 
 **Per bloccare l'accesso alle app:**
 
@@ -93,7 +93,7 @@ Per proteggere le informazioni dell'organizzazione, è necessario bloccare l'acc
 2. Selezionare **Gestisci impostazioni di accesso ai dispositivi a livello di organizzazione**.
 3. Per bloccare i dispositivi non supportati, scegliere **blocca** in **se un dispositivo non è supportato da MDM per Microsoft 365**e quindi fare clic su **Salva**.
 
-    :::image type="content" source="../../media/basic-mobility-security/bms-5-block-access.png" alt-text="Opzione di base per mobilità e blocco di sicurezza":::
+   :::image type="content" source="../../media/basic-mobility-security/bms-5-block-access.png" alt-text="Opzione di base per mobilità e blocco di sicurezza":::
 
 ## <a name="step-5-choose-security-groups-to-be-excluded-from-conditional-access-checks"></a>Passaggio 5: Scegliere i gruppi di sicurezza da escludere dai controlli dell'accesso condizionale
 
@@ -103,7 +103,7 @@ Se si desidera escludere alcuni utenti dai controlli dell'accesso condizionale s
 
 2. Selezionare **Gestisci impostazioni di accesso ai dispositivi a livello di organizzazione**.
 
-    :::image type="content" source="../../media/basic-mobility-security/bms-4-policy.png" alt-text="Mobilità e sicurezza di base creare un'opzione per i criteri":::
+   :::image type="content" source="../../media/basic-mobility-security/bms-4-policy.png" alt-text="Mobilità e sicurezza di base creare un'opzione per i criteri":::
 
 3. Fare clic su **Aggiungi** per aggiungere il gruppo di sicurezza con gli utenti che si desidera escludere dall'aver bloccato l'accesso a Microsoft 365. Quando un utente è stato aggiunto a questo elenco, può accedere alla posta elettronica Microsoft 365 quando utilizza un dispositivo non supportato.
 
@@ -113,7 +113,7 @@ Se si desidera escludere alcuni utenti dai controlli dell'accesso condizionale s
 
 6. Nel riquadro **impostazioni di accesso al dispositivo a livello di organizzazione** scegliere **Salva**.
 
-    :::image type="content" source="../../media/basic-mobility-security/bms-8-allow-access.png" alt-text="Opzione di base per mobilità e sicurezza Consenti accesso":::
+   :::image type="content" source="../../media/basic-mobility-security/bms-8-allow-access.png" alt-text="Opzione di base per mobilità e sicurezza Consenti accesso":::
 
 ## <a name="what-is-the-impact-of-security-policies-on-different-device-types"></a>Qual è l'impatto dei criteri di sicurezza sui diversi tipi di dispositivo?
 
@@ -138,14 +138,15 @@ Quando si applica un criterio ai dispositivi utente, l'impatto su ogni dispositi
 Quando si elimina un criterio o si rimuove un utente da un gruppo a cui è stato distribuito il criterio, è possibile che le impostazioni dei criteri, il profilo di posta elettronica di Microsoft 365 e i messaggi memorizzati nella cache vengano rimossi dal dispositivo dell'utente. Vedere la tabella seguente per vedere cosa viene rimosso per i diversi tipi di dispositivi.
 
 |**Elementi rimossi**|**iOS 6 e versioni successive**|**Android 4 e versioni successive (incluso Samsung KNOX**|
-|:-----|:-----|:----------------------|
+|:-----|:-----|:-----|
 |Profili di posta elettronica gestiti<sup>1</sup>|Sì|No|
 |Blocca backup sul cloud|Sì|No|
-<sup>1</sup> Se il criterio è stato distribuito con il **profilo di posta elettronica** dell'opzione gestito selezionato, il profilo di posta elettronica gestito e i messaggi nella cache del profilo vengono eliminati dal dispositivo utente.
+
+<sup>1</sup> se il criterio è stato distribuito con il **profilo di posta elettronica** dell'opzione gestito selezionato, il profilo di posta elettronica gestito e i messaggi nella cache del profilo vengono eliminati dal dispositivo utente.
 
 Il criterio viene rimosso dal dispositivo mobile per ogni utente a cui si applica il criterio per la successiva verifica del dispositivo con mobilità e sicurezza di base. Se si distribuisce un nuovo criterio che si applica a questi dispositivi utente, viene richiesto di eseguire di nuovo la registrazione in mobilità e sicurezza di base.
 
-È inoltre possibile eliminare completamente un dispositivo o cancellare selettivamente le informazioni dell'organizzazione dal dispositivo. Per altre informazioni, vedere [Wipe a Mobile Device in Basic Mobility and Security](wipe-mobile-device.md). 
+È inoltre possibile eliminare completamente un dispositivo o cancellare selettivamente le informazioni dell'organizzazione dal dispositivo. Per altre informazioni, vedere [Wipe a Mobile Device in Basic Mobility and Security](wipe-mobile-device.md).
 
 ## <a name="related-topics"></a>Argomenti correlati
 

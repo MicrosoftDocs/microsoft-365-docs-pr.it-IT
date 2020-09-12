@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: bookings
 localization_priority: Normal
 description: Domande frequenti su Microsoft bookings.
-ms.openlocfilehash: db04c2759187f66503bcc28660b5177f636eaa6c
-ms.sourcegitcommit: 41fd71ec7175ea3b94f5d3ea1ae2c8fb8dc84227
+ms.openlocfilehash: ee0de2d1412aa5ec38759a3a2512de05b9e02621
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47419816"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47545717"
 ---
 # <a name="microsoft-bookings-frequently-asked-questions"></a>Domande frequenti su Microsoft bookings
 
@@ -180,7 +180,7 @@ Non è previsto l'impostazione del fuso orario per il personale nelle prenotazio
 
 ### <a name="can-email-notifications-be-sent-as-the-tenant-domain-name"></a>È possibile inviare notifiche tramite posta elettronica come nome di dominio del tenant?
 
-Gli indirizzi di posta elettronica vengono controllati e gestiti a livello di impostazioni di Microsoft 365 e dipendono dalle impostazioni di configurazione del dominio. Ulteriori informazioni sono disponibili [qui](https://docs.microsoft.com/powershell/module/exchange/mail-flow/get-accepteddomain?view=exchange-ps).
+Gli indirizzi di posta elettronica vengono controllati e gestiti a livello di impostazioni di Microsoft 365 e dipendono dalle impostazioni di configurazione del dominio. Ulteriori informazioni sono disponibili [qui](https://docs.microsoft.com/powershell/module/exchange/get-accepteddomain).
 
 ### <a name="is-the-ability-to-send-sms-messages-dependent-on-a-different-service-or-specific-configuration"></a>La possibilità di inviare messaggi SMS dipende da un servizio diverso o da una configurazione specifica?
 
@@ -366,7 +366,7 @@ Se si continua a visualizzare questo errore dopo un periodo di tempo prolungato 
 
   - [Personalizzare e pubblicare la pagina di prenotazione](customize-booking-page.md)
 
-  - [Configurazione della cassetta postale tenant](https://docs.microsoft.com/powershell/module/exchange/mail-flow/get-accepteddomain?view=exchange-ps)
+  - [Configurazione della cassetta postale tenant](https://docs.microsoft.com/powershell/module/exchange/get-accepteddomain)
 
   - [Prenotazioni di gruppo](https://techcommunity.microsoft.com/t5/microsoft-bookings-blog/microsoft-bookings-now-supports-online-meetings-and-group/ba-p/1214120)
 

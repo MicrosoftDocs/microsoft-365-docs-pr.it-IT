@@ -15,12 +15,12 @@ f1.keywords:
 - NOCSH
 description: Informazioni su come spostare un sito di SharePoint in una posizione geografica diversa all'interno dell'ambiente multi-geografico e comunicare le aspettative delle modifiche apportate agli utenti.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e96c422b1d2685c9fe3d4c8c45aa8437a6776621
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 819496b9f7612afa1db902e6fc5a0844e99d7a8e
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46690935"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47545637"
 ---
 # <a name="move-a-sharepoint-site-to-a-different-geo-location"></a>Trasferire un sito di SharePoint in una posizione geografica diversa
 
@@ -36,13 +36,13 @@ Con il trasferimento geografico dei siti di SharePoint, è possibile spostare si
 Per spostare un sito da una posizione geografica all'altra è necessario essere un amministratore globale o un amministratore di SharePoint.
 
 Durante il trasferimento geografico del sito di SharePoint esiste una finestra di sola lettura di circa 4-6 ore, in base al contenuto del sito.
- 
+
 ## <a name="best-practices"></a>Procedure consigliate
 
-- Provare a eseguire il trasferimento di un sito di SharePoint in un sito di test per acquisire familiarità con la procedura. 
-- Verificare se il sito possa essere spostato prima di pianificare o eseguire lo spostamento. 
+- Provare a eseguire il trasferimento di un sito di SharePoint in un sito di test per acquisire familiarità con la procedura.
+- Verificare se il sito possa essere spostato prima di pianificare o eseguire lo spostamento.
 - Quando è possibile, pianificare i trasferimenti di siti tra posizioni geografiche al di fuori dell'orario di ufficio, per ridurre l'impatto sugli utenti.
-- Informare gli utenti interessati prima dello spostamento di siti. 
+- Informare gli utenti interessati prima dello spostamento di siti.
 
 ## <a name="communicating-to-your-users"></a>Comunicazioni agli utenti
 
@@ -62,10 +62,11 @@ Assicurarsi di inviare agli utenti del sito un'e-mail nel momento in cui lo spos
 
 - È possibile pianificare fino a 4.000 spostamenti alla volta.
 - Una volta iniziati gli spostamenti, è possibile pianificarne di nuovi, con un massimo di 4.000 spostamenti in sospeso in coda in qualsiasi momento.
- 
+
 Per pianificare lo spostamento geografico di un sito di SharePoint per un momento successivo, includere uno dei parametri seguenti quando si inizia lo spostamento:
+
 - `PreferredMoveBeginDate` - Il trasferimento inizierà probabilmente in questo orario specificato.
-- `PreferredMoveEndDate` - Il trasferimento verrà probabilmente completato entro questo orario specificato, secondo il principio del best effort. 
+- `PreferredMoveEndDate` - Il trasferimento verrà probabilmente completato entro questo orario specificato, secondo il principio del best effort.
 
 L'orario di entrambi i parametri deve essere specificato in formato UTC (Coordinated Universal Time).
 
@@ -73,19 +74,22 @@ L'orario di entrambi i parametri deve essere specificato in formato UTC (Coordin
 
 Per il trasferimento geografico di siti di SharePoint è necessario connettersi ed eseguire l'operazione dall'URL di amministrazione di SharePoint nella posizione geografica in cui è ubicato il sito.
 
-Ad esempio, se l'URL del sito è https://contosohealthcare.sharepoint.com/sites/Turbines, connettersi all'URL di amministrazione di SharePoint all'indirizzo https://contosohealthcare-admin.sharepoint.com:
+Ad esempio, se l'URL del sito è <https://contosohealthcare.sharepoint.com/sites/Turbines> , connettersi all'URL di amministrazione di SharePoint in <https://contosohealthcare-admin.sharepoint.com> :
 
-`Connect-SPOService -url https://contosohealthcare-admin.sharepoint.com`
+```powershell
+Connect-SPOService -Url https://contosohealthcare-admin.sharepoint.com
+```
 
-![](../media/move-onedrive-between-geo-locations-image1.png)
- 
+![Finestra di SharePoint Online Management Shell in cui viene visualizzato il comando Connect-SPOService](../media/move-onedrive-between-geo-locations-image1.png)
+
 ### <a name="validating-the-environment"></a>Convalida dell'ambiente
 
 Prima di pianificare il trasferimento di un sito, è consigliabile eseguire una convalida per assicurarsi che il sito possa essere spostato.
 
 Non è supportato il trasferimento di siti con:
--    Servizi di integrazione applicativa
--    Moduli di InfoPath 
+
+- Servizi di integrazione applicativa
+- Moduli di InfoPath
 - Modelli applicati di Information Rights Management (IRM)
 
 Per assicurarsi che tutte le posizioni geografiche siano compatibili, eseguire `Get-SPOGeoMoveCrossCompatibilityStatus`. Verranno mostrate tutte le posizioni geografiche e verrà indicato se l'ambiente è compatibile con la posizione geografica di destinazione.
@@ -102,15 +106,17 @@ Verrà restituito *Success* se il sito è pronto per il trasferimento oppure *Fa
 
 Per impostazione predefinita, l'URL iniziale del sito diventerà l'URL della posizione geografica di destinazione. Ad esempio:
 
-Da https://Contoso.sharepoint.com/sites/projectx a https://ContosoEUR.sharepoint.com/sites/projectx
+Da <https://Contoso.sharepoint.com/sites/projectx> a <https://ContosoEUR.sharepoint.com/sites/projectx>
 
 Per i siti privi di associazioni a gruppi di Microsoft 365, è anche possibile rinominare il sito usando il parametro `-DestinationUrl`. Ad esempio:
 
-Da https://Contoso.sharepoint.com/sites/projectx a https://ContosoEUR.sharepoint.com/sites/projecty
+Da <https://Contoso.sharepoint.com/sites/projectx> a <https://ContosoEUR.sharepoint.com/sites/projecty>
 
 Per avviare il trasferimento del sito, eseguire:
 
-`Start-SPOSiteContentMove -SourceSiteUrl <siteURL> -DestinationDataLocation <DestinationDataLocation> -DestinationUrl <DestinationSiteURL>`
+```powershell
+Start-SPOSiteContentMove -SourceSiteUrl <siteURL> -DestinationDataLocation <DestinationDataLocation> -DestinationUrl <DestinationSiteURL>
+```
 
 ![Screenshot della finestra di PowerShell con il cmdlet Start-SPOSiteContentMove](../media/multi-geo-sharepoint-site-move-powershell.png)
 
@@ -124,7 +130,8 @@ Per impostare la posizione preferita dei dati per un gruppo di Microsoft 365:
 Set-SPOUnifiedGroup -PreferredDataLocation <PDL> -GroupAlias <GroupAlias>
 Get-SPOUnifiedGroup -GroupAlias <GroupAlias>
 ```
-Dopo aver aggiornato il PDL, è possibile avviare il trasferimento del sito: 
+
+Dopo aver aggiornato il PDL, è possibile avviare il trasferimento del sito:
 
 ```PowerShell
 Start-SPOUnifiedGroupMove -GroupAlias <GroupAlias> -DestinationDataLocation <DestinationDataLocation>
@@ -139,19 +146,22 @@ Start-SPOUnifiedGroupMove -GroupAlias <GroupAlias> -DestinationDataLocation <Des
 È possibile determinare lo stato di un trasferimento di sito da o verso la posizione geografica a cui si è connessi con i cmdlet seguenti:
 
 - [Get-SPOSiteContentMoveState](https://docs.microsoft.com/powershell/module/sharepoint-online/get-spositecontentmovestate) (siti non connessi a gruppi)
-- SPOUnifiedGroupMoveState (siti connessi a gruppi)
+- [Get-SPOUnifiedGroupMoveState](https://docs.microsoft.com/powershell/module/sharepoint-online/get-spounifiedgroupmovestate) (siti connessi a gruppi)
 
 Usare il parametro `-SourceSiteUrl` per specificare il sito di cui si vuole vedere lo stato di trasferimento.
 
 Gli stati di trasferimento sono descritti nella tabella seguente.
 
+****
+
 |Stato|Descrizione|
-|:-----|:----------|
+|---|---|
 |Ready to Trigger|Lo spostamento non è stato avviato.|
 |Scheduled|Lo spostamento è in coda, ma non è ancora iniziato.|
 |InProgress (n/4)|Lo spostamento è in corso in uno dei seguenti stati: Convalida (1/4), Backup (2/4), Ripristino 3/4, Pulizia (4/4).|
 |Success|Lo spostamento è stato completato correttamente.|
 |Failed|Lo spostamento non è riuscito.|
+|
 
 È anche possibile applicare l'opzione `-Verbose` per vedere informazioni aggiuntive sul trasferimento.
 
@@ -215,4 +225,4 @@ Le PowerApp devono essere ricreate nella posizione di destinazione.
 
 ### <a name="data-movement-between-geo-locations"></a>Spostamento di dati tra posizioni geografiche
 
-SharePoint usa l'archiviazione BLOB di Azure per il contenuto, mentre i metadati associati ai siti e i file sono archiviati in SharePoint. Dopo il trasferimento del sito dalla posizione geografica di origine a quella di destinazione, il servizio sposterà anche l'archivio BLOB associato. Gli spostamenti degli archivi BLOB vengono completati in circa 40 giorni. 
+SharePoint usa l'archiviazione BLOB di Azure per il contenuto, mentre i metadati associati ai siti e i file sono archiviati in SharePoint. Dopo il trasferimento del sito dalla posizione geografica di origine a quella di destinazione, il servizio sposterà anche l'archivio BLOB associato. Gli spostamenti degli archivi BLOB vengono completati in circa 40 giorni.

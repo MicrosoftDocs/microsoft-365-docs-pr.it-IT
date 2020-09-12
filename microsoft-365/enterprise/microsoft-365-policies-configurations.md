@@ -17,12 +17,12 @@ ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
 - m365solution-identitydevice
-ms.openlocfilehash: 72344e1918a85de65ab7de8a60b7ace0b2629ac6
-ms.sourcegitcommit: c029834c8a914b4e072de847fc4c3a3dde7790c5
+ms.openlocfilehash: 375e58214e19960d3e3100a0c1051fe7c4924aae
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "47332750"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47546643"
 ---
 # <a name="identity-and-device-access-configurations"></a>Configurazioni di identità e accesso dei dispositivi
 
@@ -73,10 +73,9 @@ In questa guida viene illustrato come implementare la protezione per identità e
 
 È importante utilizzare livelli di protezione coerenti tra dati, identità e dispositivi. Ad esempio, se si implementano queste linee guida, assicurarsi di proteggere i dati a livelli comparabili. 
 
-Il modello di architettura dell' **identità e del dispositivo di protezione per Office 365** indica quali funzionalità sono confrontabili.
+Il modello **di architettura di Microsoft 365 per l'identità e la protezione dei dispositivi** indica quali funzionalità sono confrontabili.
 
-![Anteprima del poster "identità e protezione del dispositivo per Office 365"](../media/microsoft-365-policies-configurations/O365_Identity_device_protection_thumb.png)<br/>
-[PDF](https://go.microsoft.com/fwlink/p/?linkid=841656) | [Visio](https://go.microsoft.com/fwlink/p/?linkid=841657) | [Altre lingue](https://www.microsoft.com/download/details.aspx?id=55032)
+[![Immagine del pollice per l'identità e la protezione del dispositivo per il poster di Microsoft 365](../media/microsoft-365-policies-configurations/O365_Identity_device_protection_thumb.png)](../downloads/MSFT_cloud_architecture_identity&device_protection.pdf) <br/>  [Visualizzazione in formato PDF](../downloads/MSFT_cloud_architecture_identity&device_protection.pdf) \| [Scarica come PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_identity&device_protection.pdf) \| [Scaricare come Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_identity&device_protection.vsdx)  
 
 Vedere inoltre la soluzione [deploy Information Protection for data privacy Regulations](../solutions/information-protection-deploy.md) per proteggere le informazioni archiviate in Microsoft 365.
 
@@ -105,10 +104,11 @@ Azure AD offre una serie completa di funzionalità di gestione delle identità. 
 |:-------|:-----|:-------|
 | [Autenticazione a più fattori (MFA)](/azure/active-directory/authentication/concept-mfa-howitworks) | L'AMF richiede agli utenti di fornire due forme di verifica, ad esempio una password utente e una notifica dall'app Microsoft Authenticator o da una telefonata. Il Master riduce notevolmente il rischio che le credenziali rubate possano essere utilizzate per accedere all'ambiente. Microsoft 365 utilizza il servizio di autenticazione a più fattori di Azure per gli accessi basati su AMF. | Microsoft 365 E3 o E5 |
 | [Accesso condizionale](/azure/active-directory/conditional-access/overview) | Azure AD valuta le condizioni dell'accesso dell'utente e utilizza i criteri di accesso condizionale per determinare gli accessi consentiti. Ad esempio, in questa guida viene illustrato come creare un criterio di accesso condizionale per richiedere la conformità del dispositivo all'accesso ai dati riservati. In questo modo si riduce notevolmente il rischio che un hacker con il proprio dispositivo e le credenziali rubate possano accedere ai dati riservati. Protegge inoltre i dati sensibili nei dispositivi, in quanto i dispositivi devono soddisfare requisiti specifici per la sicurezza e l'integrità. | Microsoft 365 E3 o E5 |
-| [Gruppi di Azure AD](/azure/active-directory/fundamentals/active-directory-manage-groups) | Le regole di accesso condizionale, la gestione dei dispositivi con Intune e persino le autorizzazioni per i file e i siti dell'organizzazione si basano sull'assegnazione agli account utente o ai gruppi di Azure AD. Si consiglia di creare gruppi di Azure AD che corrispondono ai livelli di protezione che si stanno implementando. Ad esempio, il personale esecutivo è probabilmente un obiettivo di valore superiore per gli hacker. Pertanto, è opportuno aggiungere gli account utente di questi dipendenti a un gruppo di Azure AD e assegnare questo gruppo ai criteri di accesso condizionale e ad altri criteri che applicano un livello di protezione più elevato per l'accesso. | Microsoft 365 E3 o E5 |
-| [Registrazione del dispositivo](/azure/active-directory/devices/overview) | La registrazione di un dispositivo in Azure AD per la creazione di un'identità per il dispositivo. Questa identità viene utilizzata per autenticare il dispositivo quando un utente accede e applica regole di accesso condizionale che richiedono PC conformi a un dominio. Per queste linee guida, viene utilizzata la registrazione dei dispositivi per registrare automaticamente i computer Windows con join di dominio. La registrazione del dispositivo è un prerequisito per la gestione dei dispositivi con Intune. | Microsoft 365 E3 o E5 |
+| [Gruppi di Azure AD](/azure/active-directory/fundamentals/active-directory-manage-groups) | I criteri di accesso condizionale, la gestione dei dispositivi con Intune e persino le autorizzazioni per i file e i siti dell'organizzazione si basano sull'assegnazione agli account utente o ai gruppi di Azure AD. Si consiglia di creare gruppi di Azure AD che corrispondono ai livelli di protezione che si stanno implementando. Ad esempio, il personale esecutivo è probabilmente un obiettivo di valore superiore per gli hacker. Pertanto, è opportuno aggiungere gli account utente di questi dipendenti a un gruppo di Azure AD e assegnare questo gruppo ai criteri di accesso condizionale e ad altri criteri che applicano un livello di protezione più elevato per l'accesso. | Microsoft 365 E3 o E5 |
+| [Registrazione del dispositivo](/azure/active-directory/devices/overview) | La registrazione di un dispositivo in Azure AD per la creazione di un'identità per il dispositivo. Questa identità viene utilizzata per autenticare il dispositivo quando un utente accede e per applicare criteri di accesso condizionale che richiedono PC conformi a un dominio. Per queste linee guida, viene utilizzata la registrazione dei dispositivi per registrare automaticamente i computer Windows con join di dominio. La registrazione del dispositivo è un prerequisito per la gestione dei dispositivi con Intune. | Microsoft 365 E3 o E5 |
 | [Azure AD Identity Protection](/azure/active-directory/identity-protection/overview) | Consente di rilevare potenziali vulnerabilità che interessano le identità dell'organizzazione e configurare i criteri di correzione automatici per il rischio di accesso basso, medio e alto e per i rischi dell'utente. Questa guida si basa su questa valutazione dei rischi per applicare criteri di accesso condizionale per l'autenticazione a più fattori. Questa guida include anche un criterio di accesso condizionale che richiede agli utenti di modificare la propria password se viene rilevata un'attività ad alto rischio per il proprio account. | Microsoft 365 E5, Microsoft 365 E3 con il componente aggiuntivo Identity & Threat Protection, EMS E5 o le licenze P2 di Azure Premium |
 | [Reimpostazione della password in modalità self-service (SSPR)](/azure/active-directory/authentication/concept-sspr-howitworks) | Consente agli utenti di reimpostare le password in modo sicuro e senza l'intervento di supporto tecnico, fornendo la verifica di più metodi di autenticazione che l'amministratore può controllare. | Microsoft 365 E3 o E5 |
+| [Protezione delle password di Azure ad](https://docs.microsoft.com/azure/active-directory/authentication/concept-password-ban-bad). Individuare e bloccare le password deboli note e le relative varianti e i termini deboli aggiuntivi specifici per l'organizzazione. Gli elenchi di password globali bannati predefiniti vengono applicati automaticamente a tutti gli utenti in un tenant di Azure AD. È possibile definire voci aggiuntive in un elenco di password bannato personalizzato. Quando gli utenti modificano o reimpostano le password, gli elenchi di password bannati vengono controllati per applicare l'utilizzo di password complesse. |  Microsoft 365 E3 o E5 |
 ||||
 
 ![Componenti di identità e accesso ai dispositivi.](../media/microsoft-365-policies-configurations/identity-device-access-components.png)

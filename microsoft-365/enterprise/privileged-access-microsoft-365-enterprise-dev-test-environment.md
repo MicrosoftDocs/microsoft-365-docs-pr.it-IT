@@ -15,12 +15,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: Ent_TLGs
 description: Utilizzare questa guida del laboratorio di testing per abilitare la gestione degli accessi con privilegi per l'ambiente di testing di Microsoft 365.
-ms.openlocfilehash: 28fd27c3059fe25da5da8aaf8700b84c5989b408
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: d8d92aa86076e323e4b5bb5c8eb1385edcac420c
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46695147"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47545943"
 ---
 # <a name="privileged-access-management-for-your-microsoft-365-for-enterprise-test-environment"></a>Gestione degli accessi con privilegi per l'ambiente di testing di Microsoft 365 per l'organizzazione
 
@@ -62,7 +62,7 @@ In questa fase, è possibile verificare che il criterio di accesso privilegiato 
 
 ### <a name="test-ability-to-execute-a-task-not-defined-in-a-privileged-access-policy"></a>Provare la possibilità di eseguire un'attività non definita in un criterio di accesso con privilegi
 
-Innanzitutto, connettersi a Exchange Management PowerShell con le credenziali di un utente configurato come amministratore globale nell'ambiente di testing e tentare di creare una nuova regola del journal. L'attività [New-JournalRule](https://docs.microsoft.com/powershell/module/exchange/new-journalrule?view=exchange-ps) non è attualmente definita in un criterio di accesso con privilegi per l'organizzazione.
+Innanzitutto, connettersi a Exchange Management PowerShell con le credenziali di un utente configurato come amministratore globale nell'ambiente di testing e tentare di creare una nuova regola del journal. L'attività [New-JournalRule](https://docs.microsoft.com/powershell/module/exchange/new-journalrule) non è attualmente definita in un criterio di accesso con privilegi per l'organizzazione.
 
 1. Nel computer locale, aprire e accedere al modulo Exchange Online Remote PowerShell nel modulo di PowerShell remoto di Microsoft **Corporation**  >  **Microsoft Exchange Online** utilizzando l'account di amministratore globale per l'ambiente di testing.
 

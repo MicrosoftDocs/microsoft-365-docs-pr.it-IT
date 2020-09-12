@@ -18,12 +18,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: Configurare la sicurezza e la mobilità di base per proteggere e gestire i dispositivi mobili degli utenti.
-ms.openlocfilehash: cb010668d95e51edfbc913caa308ddd830d674e2
-ms.sourcegitcommit: aeb94601a81db3ead8610c2f36cff30eb9fe10e7
+ms.openlocfilehash: 079593381d6395c18cd80f3eeab2e16837a2d27a
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "47430202"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47545809"
 ---
 # <a name="set-up-basic-mobility-and-security"></a>Impostare Basic Mobility + Security
 
@@ -36,11 +36,10 @@ La gestione dei dispositivi è parte integrante del Centro sicurezza & Complianc
 ## <a name="activate-the-basic-mobility-and-security-service"></a>Attivare il servizio di sicurezza e mobilità di base
 
 1. Accedere a Microsoft 365 con l'account di amministratore globale.
-    
 
 2. Andare a [attivare la sicurezza e la mobilità di base](https://admin.microsoft.com/EAdmin/Device/IntuneInventory.aspx).
-    
-    È possibile richiedere del tempo per attivare la sicurezza e la mobilità di base. Al termine della procedura, si riceverà un messaggio di posta elettronica che spiega i passaggi successivi da eseguire.
+
+   È possibile richiedere del tempo per attivare la sicurezza e la mobilità di base. Al termine della procedura, si riceverà un messaggio di posta elettronica che spiega i passaggi successivi da eseguire.
 
 ## <a name="set-up-mobile-device-management"></a>Configurare la gestione dei dispositivi mobili
 
@@ -58,38 +57,36 @@ Dopo aver aggiunto i due record CNAME, tornare al centro sicurezza & compliance 
 
 Per gestire i dispositivi iOS come iPad e iPhone, è necessario creare un certificato di APNs.
 
-1. Accedere a Microsoft 365 con l'account di amministratore globale.   
+1. Accedere a Microsoft 365 con l'account di amministratore globale.
 
-2. Nel tipo di browser:  [https://protection.office.com](https://protection.office.com/) .  
+2. Nel tipo di browser:  [https://protection.office.com](https://protection.office.com/) .
 
-3. Selezionare Gestione dei dispositivi per la prevenzione della perdita di **dati**   >  **Device management**e scegliere **APNs certificate for iOS Devices**.   
+3. Selezionare Gestione dei dispositivi per la prevenzione della perdita di **dati**   >  **Device management**e scegliere **APNs certificate for iOS Devices**.
 
-4. Nella pagina impostazioni del certificato di notifica push di Apple scegliere **Avanti**.  
+4. Nella pagina impostazioni del certificato di notifica push di Apple scegliere **Avanti**.
 
 5. Selezionare **Scarica il file CSR**   e salvare la richiesta di firma del certificato in un punto qualsiasi del computer da ricordare. Selezionare **Avanti**.
-    
+
 6. Nella pagina Create an APNs certificate:
-    
-    - Selezionare il portale Apple APNS per aprire il portale Apple Push Certificates.
-    - Sign in with an Apple ID.
 
-    >[!IMPORTANT]
-    >Use a company Apple ID associated with an email account that will remain with your organization even if the user who manages the account leaves. Save this ID because you'll need to use the same ID when it's time to renew the certificate.
+   - Selezionare il portale Apple APNS per aprire il portale Apple Push Certificates.
+   - Sign in with an Apple ID.
 
-    - Selezionare Create a certificate e accettate le condizioni per l'utilizzo.
-    
-    - Browseto la richiesta di firma del certificato scaricata nel computer da Microsoft 365 e selectUpload.
-    
-    - Downloadthe APN certificato creato dal portale Apple Push certificate nel computer.
+     > [!IMPORTANT]
+     > Use a company Apple ID associated with an email account that will remain with your organization even if the user who manages the account leaves. Save this ID because you'll need to use the same ID when it's time to renew the certificate.
 
-    >[!TIP]
-    >If you're having trouble downloading the certificate, refresh your browser.
+   - Selezionare Create a certificate e accettate le condizioni per l'utilizzo.
+   - Passare alla richiesta di firma del certificato scaricata nel computer da Microsoft 365 e selectUpload.
+   - Download the APN certificate created by the Apple Push Certificate Portal to your computer.
 
-7. Tornare a Microsoft 365 e selezionare **Avanti**.   
+     > [!TIP]
+     > If you're having trouble downloading the certificate, refresh your browser.
 
-8.  Browse to the APN certificate you downloaded from the Apple Push Certificates Portal.   
+7. Tornare a Microsoft 365 e selezionare **Avanti**.
 
-9. Selezionare  **fine**.  
+8.  Browse to the APN certificate you downloaded from the Apple Push Certificates Portal.
+
+9. Selezionare  **fine**.
 
 ### <a name="step-3-recommended-set-up-multi-factor-authentication"></a>Passaggio 3: (scelta consigliata) configurare l'autenticazione a più fattori
 
@@ -103,25 +100,30 @@ Dopo aver configurato l'AMF, tornare al centro sicurezza & compliance e passare 
 
 Il passaggio successivo consiste nel creare e distribuire i criteri di sicurezza dei dispositivi per proteggere i dati dell'organizzazione di Microsoft 365. Ad esempio, è possibile impedire la perdita di dati se un utente perde il dispositivo creando un criterio per bloccare i dispositivi dopo cinque minuti di inattività e cancellare i dispositivi dopo tre errori di accesso.
 
-1. Accedere a Microsoft 365 con l'account di amministratore globale. 
+1. Accedere a Microsoft 365 con l'account di amministratore globale.
 
 2. Selezionare [Attiva gestione dispositivi mobili](https://admin.microsoft.com/EAdmin/Device/IntuneInventory.aspx). Se il servizio è attivato, i passaggi di attivazione vedranno un collegamento per la [gestione dei dispositivi](https://admin.microsoft.com/adminportal/home#/MifoDevices)   .
-    
+
 3. Passare a **Criteri dispositivo**.
 
-     :::image type="content" source="../../media/basic-mobility-security/bms-4-policy.png" alt-text="Impostazioni di base per i criteri di sicurezza e dispositivi mobili":::
+   :::image type="content" source="../../media/basic-mobility-security/bms-4-policy.png" alt-text="Impostazioni di base per i criteri di sicurezza e dispositivi mobili":::
 
 4. Creare e distribuire i criteri di sicurezza dei dispositivi adatti all'organizzazione seguendo i passaggi descritti in creare i criteri di sicurezza per i [dispositivi in mobilità e sicurezza di base](create-device-security-policies.md).
 
->[!TIP]
-    - Quando si crea un nuovo criterio, è possibile impostare il criterio per consentire l'accesso e la violazione dei criteri di report in cui un dispositivo utente non è conforme ai criteri. In questo modo è possibile visualizzare il numero di dispositivi mobili influenzati dal criterio senza bloccare l'accesso a Microsoft 365.<br/>-Prima di distribuire un nuovo criterio a tutti gli utenti dell'organizzazione, è consigliabile testarlo sui dispositivi utilizzati da un numero limitato di utente.<br/>-Inoltre, prima di distribuire i criteri, informare l'organizzazione sull'impatto potenziale di registrazione di un dispositivo in mobilità e sicurezza di base. A seconda di come si configurano i criteri, i dispositivi che non sono conformi ai criteri (dispositivi non conformi) potrebbero essere bloccati dall'accesso a Microsoft 365. I dispositivi non conformi possono anche disporre di app installate, foto e altre informazioni personali che, in un dispositivo registrato, potrebbero essere eliminate se il dispositivo è stato cancellato. Per altre informazioni, vedere [Wipe a Mobile Device in Basic Mobility and Security](wipe-mobile-device.md).
-    
+> [!TIP]
+>
+> - Quando si crea un nuovo criterio, è possibile impostare il criterio per consentire l'accesso e la violazione dei criteri di report in cui un dispositivo utente non è conforme ai criteri. In questo modo è possibile visualizzare il numero di dispositivi mobili influenzati dal criterio senza bloccare l'accesso a Microsoft 365.
+>
+> - Prima di distribuire un nuovo criterio a tutti gli utenti dell'organizzazione, è consigliabile testarlo sui dispositivi utilizzati da un numero limitato di utente.
+>
+> - Inoltre, prima di distribuire i criteri, informare l'organizzazione sull'impatto potenziale di registrazione di un dispositivo in mobilità e sicurezza di base. A seconda di come si configurano i criteri, i dispositivi che non sono conformi ai criteri (dispositivi non conformi) potrebbero essere bloccati dall'accesso a Microsoft 365. I dispositivi non conformi possono anche disporre di app installate, foto e altre informazioni personali che, in un dispositivo registrato, potrebbero essere eliminate se il dispositivo è stato cancellato. Per altre informazioni, vedere [Wipe a Mobile Device in Basic Mobility and Security](wipe-mobile-device.md).
+
 ## <a name="make-sure-users-enroll-their-devices"></a>Verificare che gli utenti registrino i propri dispositivi
 
 Dopo aver creato e distribuito un criterio di gestione dei dispositivi mobili, ogni utente con licenza Microsoft 365 nell'organizzazione a cui si applica il criterio dispositivo riceve un messaggio di registrazione la volta successiva che accede a Microsoft 365 dal proprio dispositivo mobile. È necessario completare i passaggi di registrazione e attivazione prima di poter accedere ai documenti e ai messaggi di posta elettronica di Microsoft 365. Per altre informazioni, vedere [registrazione del dispositivo mobile utilizzando la sicurezza e la mobilità di base](enroll-your-mobile-device.md).
 
->[!IMPORTANT]
->Se la lingua preferita di un utente non è supportata dal processo di registrazione, è possibile che gli utenti ricevano notifiche di registrazione e passaggi sui propri dispositivi mobili in un'altra lingua. Non tutte le lingue supportate in Microsoft 365 sono attualmente supportate per il processo di registrazione sui dispositivi mobili.
+> [!IMPORTANT]
+> Se la lingua preferita di un utente non è supportata dal processo di registrazione, è possibile che gli utenti ricevano notifiche di registrazione e passaggi sui propri dispositivi mobili in un'altra lingua. Non tutte le lingue supportate in Microsoft 365 sono attualmente supportate per il processo di registrazione sui dispositivi mobili.
 
 Gli utenti con dispositivi Android o iOS sono tenuti a installare l'app portale aziendale come parte del processo di registrazione.
 

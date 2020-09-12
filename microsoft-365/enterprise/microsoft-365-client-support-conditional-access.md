@@ -5,7 +5,7 @@ author: robmazz
 manager: laurawi
 audience: ITPro
 ms.topic: article
-ms.service: Office 365 Administration
+ms.service: o365-administration
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -16,12 +16,12 @@ f1.keywords:
 - NOCSH
 description: In questo articolo vengono fornite informazioni sulle piattaforme, i client e i moduli di PowerShell che supportano l'accesso condizionale per Microsoft 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 2245b8fe9b235013bccc9ea2b80d6b6c86448a89
-ms.sourcegitcommit: c029834c8a914b4e072de847fc4c3a3dde7790c5
+ms.openlocfilehash: fd4dcaeda27f12427f3175b7ec52e2fdb0c153da
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "47332017"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47546513"
 ---
 # <a name="microsoft-365-client-app-support--conditional-access"></a>Supporto delle app client Microsoft 365-accesso condizionale
 
@@ -60,7 +60,7 @@ Le versioni più recenti dei client seguenti supportano l'accesso condizionale:
 
 | | | | | | |
 |:---:|:---:|:---:|:---:|:---:|:---:|
-| ![Icona di Azure](../media/o365-azure-64x64.png) <br> [Azure AD <br> PowerShell](https://docs.microsoft.com/powershell/azure/active-directory/overview?view=azureadps-2.0) | ![Icona di Exchange](../media/o365-exchange-64x64.png) <br> [PowerShell di Exchange Online <br>](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps) | ![Icona di SharePoint](../media/o365-sharepoint-64x64.png) <br> [PowerShell di SharePoint Online <br>](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)
+| ![Icona di Azure](../media/o365-azure-64x64.png) <br> [Azure AD <br> PowerShell](https://docs.microsoft.com/powershell/azure/active-directory/overview?view=azureadps-2.0) | ![Icona di Exchange](../media/o365-exchange-64x64.png) <br> [PowerShell di Exchange Online <br>](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell) | ![Icona di SharePoint](../media/o365-sharepoint-64x64.png) <br> [PowerShell di SharePoint Online <br>](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)
 
 > [!NOTE]
 > <sup>1</sup> supporto per OneDrive su MacOS disponibile a breve.

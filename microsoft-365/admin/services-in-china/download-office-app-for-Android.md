@@ -20,23 +20,23 @@ search.appverid:
 - GEA150
 description: Per ulteriori informazioni, vedere l'app Microsoft Office per Android per Office 365 gestito da 21Vianet e come scaricarlo per i clienti in Cina.
 monikerRange: o365-21vianet
-ms.openlocfilehash: 4ebb044835321a91109659ca9e58094345bc0d0c
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: b2c35c2f9b4ea8e10ace3c9426aed7aadefe0b1d
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399063"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47545797"
 ---
 # <a name="office-app-for-android-for-office-365-operated-by-21vianet"></a>App di Office per Android per Office 365 gestito da 21Vianet
 
-L'app Microsoft Office per Android combina le app per dispositivi mobili Word, Excel e PowerPoint in una singola app disponibile per il download per i telefoni Android. Con l'app di Office per Android è possibile connettersi a Office 365 esattamente come si farebbe con le app per dispositivi mobili Word, Excel e PowerPoint. Il download di Office app per Android non influenzerà le installazioni esistenti di Word, Excel e PowerPoint.
+L'app Microsoft Office per Android combina le app per dispositivi mobili Word, Excel e PowerPoint in una singola app disponibile per il download per i telefoni Android. Con l'app di Office per Android, è possibile connettersi a Office 365 esattamente come si farebbe con le app per dispositivi mobili Word, Excel e PowerPoint. Il download di Office app per Android non influenzerà le installazioni esistenti di Word, Excel e PowerPoint.
 
-Alcune funzionalità di Office app per Android non sono disponibili per Office 365 gestito da clienti di 21Vianet:
+Alcune app di Office per le funzionalità Android non sono disponibili per Office 365 gestito da clienti di 21Vianet:
 
 - Immagine su testo e immagine nella tabella 
 - Conversione di foto in documenti di Word dall'obiettivo 
 - Azione trasferimento file 
-- Le note rimangono locali e non vengono sincronizzate con il server
+- Le note rimangono locali e non si sincronizzano con il server
 - Anteprima dei collegamenti all'interno di Scan QR
 - Schede Live persona nella sezione me
 - Classificazione, etichettatura e protezione (CLP)

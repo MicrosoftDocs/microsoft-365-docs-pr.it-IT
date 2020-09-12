@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -15,12 +15,12 @@ ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 description: Gli amministratori possono imparare a gestire gli acquisti in modalità self-service effettuati dagli utenti dell'organizzazione.
-ms.openlocfilehash: f10f525f8efc6bc63e2fa042c299a6d03c77d0cb
-ms.sourcegitcommit: aeb94601a81db3ead8610c2f36cff30eb9fe10e7
+ms.openlocfilehash: ca25bf0c3e3539196e81dcc289592028cc4dfa47
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "47429999"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47546675"
 ---
 # <a name="manage-self-service-purchases-admin"></a>Gestire acquisti in modalità self-service (amministratore)
 
@@ -38,13 +38,13 @@ Come amministratore, è possibile visualizzare gli acquisti in modalità self-se
 ## <a name="view-self-service-subscriptions"></a>Visualizzare le sottoscrizioni in modalità self-service
 
 1. Nell'interfaccia di amministrazione, andare alla pagina **fatturazione**dei  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">prodotti</a> .
-2. Accanto a **risultati di affinamento**, dall'elenco a discesa **tipo di account** scegliere **self-service**.
+2. Nella scheda **prodotti** selezionare l'icona filtro e quindi fare clic su **self-service**.
 3. Per visualizzare ulteriori dettagli su un abbonamento, selezionarne uno dall'elenco.
 
 ## <a name="view-who-has-licenses-for-a-self-service-purchase-subscription"></a>Visualizzazione delle licenze per un abbonamento all'acquisto in modalità self-service
 
 1. Nell'interfaccia di amministrazione, andare alla **Billing**  >  pagina<a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">licenze</a> di fatturazione.
-2. Scegliere l'icona filtro e quindi fare clic su **self-service**.
+2. Selezionare l'icona del filtro e quindi scegliere **self-service**.
 3. Selezionare un prodotto per visualizzare le licenze assegnate agli utenti.
     > [!NOTE]
     > Se per un prodotto sono presenti più acquisti, tale prodotto è elencato solo una volta e la colonna **quantità disponibile** indica il totale di tutte le sottoscrizioni acquistate per il prodotto.
@@ -67,13 +67,12 @@ Per ulteriori informazioni, vedere [use AllowSelfServicePurchase for the MSComme
 
 È possibile assegnare licenze esistenti o acquistare abbonamenti aggiuntivi mediante contratti esistenti per gli utenti assegnati agli acquisti in modalità self-service. Dopo aver assegnato le licenze acquistate in modo centralizzato, è possibile richiedere che gli acquirenti cancellino le sottoscrizioni esistenti.
 
-1. Accedere all'interfaccia di <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Amministrazione</a> con l'account di amministratore globale o amministratore di fatturazione.
-2. Passare alla pagina **Billing**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">servizi di acquisto</a> per la fatturazione.
-3. Trovare e scegliere il prodotto che si desidera acquistare, quindi scegliere **buy**.
-4. Completare i passaggi rimanenti per completare l'acquisto.
-5. Seguire la procedura illustrata [per l'](#view-who-has-licenses-for-a-self-service-purchase-subscription) esportazione di un elenco di utenti a cui fare riferimento nel passaggio 6.
-6. Assegnare le licenze a tutti gli utenti che dispongono di una licenza nell'altra sottoscrizione. Per i passaggi completi, vedere [assegnare licenze agli utenti](../../admin/manage/assign-licenses-to-users.md).
-7. Contattare la persona che ha acquistato l'abbonamento all'acquisto in modalità self-service e chiedergli di annullarla.
+1. Nell'interfaccia di amministrazione passare alla **Billing** \> pagina <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">servizi di acquisto</a> per la fatturazione.
+2. Trovare e scegliere il prodotto che si desidera acquistare, quindi scegliere **buy**.
+3. Completare i passaggi rimanenti per completare l'acquisto.
+4. Seguire la procedura illustrata [per l'](#view-who-has-licenses-for-a-self-service-purchase-subscription) esportazione di un elenco di utenti a cui fare riferimento nel prossimo passaggio.
+5. Assegnare le licenze a tutti gli utenti che dispongono di una licenza nell'altra sottoscrizione. Per i passaggi completi, vedere [assegnare licenze agli utenti](../../admin/manage/assign-licenses-to-users.md).
+6. Contattare la persona che ha acquistato l'abbonamento all'acquisto in modalità self-service e chiedergli di [annullarla](manage-self-service-purchases-users.md#cancel-a-subscription).
 
 ## <a name="take-over-a-self-service-purchase-subscription"></a>Acquisizione di un abbonamento all'acquisto in modalità self-service
 

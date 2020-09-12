@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 932d57c0-1520-4f0f-8ec9-9966d646480f
 description: Informazioni su come gestire gli utenti di Microsoft 365, le licenze e le app 365 con PowerShell.
-ms.openlocfilehash: 0af4a47b713da1f0316ae4be91fb7c6472f0e625
-ms.sourcegitcommit: aeb94601a81db3ead8610c2f36cff30eb9fe10e7
+ms.openlocfilehash: ef6146744909755efb974ee57f34ae3b924a7f2c
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "47429903"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47547915"
 ---
 # <a name="manage-microsoft-365-with-powershell"></a>Gestire Microsoft 365 con PowerShell
 
@@ -47,7 +47,7 @@ Selezionare uno dei seguenti argomenti per informazioni su come utilizzare Power
 
     Iniziare da qui se i moduli di Microsoft 365 sono stati installati e si desidera utilizzare i comandi di automazione per gestire SharePoint.
 
-- [**Exchange Online PowerShell**](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell)
+- [**Exchange Online PowerShell**](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell)
 
     Iniziare da qui se si desidera usare i comandi di automazione per gestire Exchange Online.
 
@@ -55,7 +55,7 @@ Selezionare uno dei seguenti argomenti per informazioni su come utilizzare Power
 
     Iniziare da qui se i moduli di PowerShell 365 sono stati installati e si desidera eseguire la migrazione della posta elettronica da sistemi preesistenti.
 
-- [**Centro sicurezza e conformità**](https://docs.microsoft.com/powershell/exchange/office-365-scc/office-365-scc-powershell)
+- [**Centro sicurezza e conformità**](https://docs.microsoft.com/powershell/exchange/scc-powershell)
 
     Iniziare da qui se si desidera utilizzare i comandi di automazione per gestire la sicurezza & centro conformità PowerShell.
 

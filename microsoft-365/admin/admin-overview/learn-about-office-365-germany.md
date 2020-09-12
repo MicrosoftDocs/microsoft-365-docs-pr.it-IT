@@ -21,12 +21,12 @@ search.appverid:
 - BEA160
 ms.assetid: 8a5a4bbc-667a-4cac-8769-d8ac9015db4c
 description: Informazioni su Office 365 Germany.
-ms.openlocfilehash: 694f1a2ebbe3740c09cb306a26729b6482497d0b
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: a9ad8f88f48315c77d17ca51855d75d1c443f6f2
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47307278"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47545919"
 ---
 # <a name="learn-about-office-365-germany"></a>Informazioni su Office 365 Germany
 
@@ -35,11 +35,11 @@ ms.locfileid: "47307278"
 
 Office 365 Germany è un'opzione differenziata per i servizi di Office 365 disponibili in Europa. Ha contribuito a soddisfare le esigenze dei clienti più regolamentati in Germania, Unione europea (UE) e l'associazione europea di libero scambio (AELS), fornendo i servizi di produttività leader del settore per il lavoro digitale, dai datacenter tedeschi, con la residenza dei dati in Germania, e le misure di controllo e accesso ai dati rigorose tramite un modello di protezione dei dati univoco disciplinato dal diritto tedesco
   
-Il trustee dei dati, T-Systems International, una società tedesca indipendente e filiale di Deutsche Telekom, controlla l'accesso fisico e logico ai dati dei clienti. Non è possibile accedere ai dati dei clienti senza l'approvazione o la supervisione del trustee, che è disciplinato dal diritto tedesco.
+Il trustee dei dati, T-Systems International, una società tedesca indipendente e filiale di Deutsche Telekom, controlla l'accesso fisico e logico ai dati dei clienti. Non è possibile accedere ai dati dei clienti senza l'approvazione o la supervisione da parte del trustee dei dati, che è regolata dalla legge tedesca.
   
 I bisogni dei clienti si sono spostati e l'isolamento di Office 365 Germany ha imposto limiti alla sua capacità di soddisfare la flessibilità e la coerenza che i clienti desiderano. A partire da agosto 2018, non si accettano più nuovi clienti o si distribuiscono nuovi servizi dalla Microsoft Cloud Germany attualmente disponibile. Per ulteriori informazioni, vedere questo post di Blog: [Microsoft per fornire servizi cloud da nuovi datacenter in Germania nel 2019 per soddisfare le esigenze dei clienti in evoluzione](https://go.microsoft.com/fwlink/p/?linkid=839016).
   
-## <a name="what-microsoft-online-services-are-available-in-office-365-germany"></a>Quali Microsoft Online Services sono disponibili in Office 365 Germany?
+## <a name="which-microsoft-online-services-are-available-in-office-365-germany"></a>Quali servizi Microsoft online sono disponibili in Office 365 Germany?
 
 Le offerte di piani di Office 365 Germany sono allineate con le offerte globali per quanto possibile in questo ambiente isolato. Fanno eccezione, ad esempio, i piani correlati a Yammer, i piani che stanno raggiungendo la fine del ciclo di vita e i piani resi disponibili attraverso programmi no profit. Office 365 E5, SPE e altri servizi saranno disponibili dopo la disponibilità generale di Office 365 Germany. 
   
@@ -61,7 +61,7 @@ I servizi e le caratteristiche seguenti sono disponibili in alcuni [Piani di abb
     
 - Video di Microsoft 365
     
-- Project per il Web
+- Project per il web
     
 - Visio per il Web
     
@@ -89,7 +89,7 @@ I servizi e le caratteristiche seguenti sono disponibili in alcuni [Piani di abb
   
 ## <a name="general-information"></a>Informazioni generali
 
-|||
+|Elemento|Informazioni|
 |-----|-----|
 |Portale di accesso  <br/> |[https://portal.office.de](https://portal.office.de)  <br/> |
 |Supporto tecnico, per abbonamenti e per la fatturazione  <br/> |Supporto basato sulla Germania disponibile in tedesco e in inglese per informazioni dettagliate, vedere [contattare il supporto per i prodotti aziendali-Guida per gli amministratori](../contact-support-for-business-products.md).  <br/> |

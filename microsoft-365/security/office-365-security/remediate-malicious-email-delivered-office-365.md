@@ -4,7 +4,7 @@ author: msfttracyp
 ms.author: tracyp
 manager: dansimp
 ms.topic: article
-ms.service: Microsoft Threat Protection
+ms.service: O365-seccomp
 audience: admin
 f1.keywords:
 - NOCSH
@@ -14,12 +14,12 @@ search.appverid: MET150
 description: Correzione delle minacce
 appliesto:
 - Microsoft Threat Protection
-ms.openlocfilehash: 44f20b29dcc88b1d991f9e93929aacc0e8aece32
-ms.sourcegitcommit: c76c025fe75cd9c06eccbf9c7fc887b09da36659
+ms.openlocfilehash: 2542f7af8a34088a79aae8a14f7ccdb8ea8fd121
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "46903884"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47547241"
 ---
 # <a name="remediate-malicious-email-delivered-in-office-365"></a>Rimediare la posta elettronica dannosa recapitata in Office 365
 
@@ -39,7 +39,6 @@ Per eseguire operazioni come la visualizzazione delle intestazioni dei messaggi 
 |Utilizzo di Esplora minacce (e rilevamenti in tempo reale) per l'analisi delle minacce |Amministratore globale <br> Amministratore della sicurezza <br> Ruolo con autorizzazioni di lettura per la sicurezza|No|
 |Utilizzo di Esplora minacce (e rilevamento in tempo reale) per visualizzare le intestazioni dei messaggi di posta elettronica e visualizzare in anteprima e scaricare i messaggi di posta elettronica in quarantena|Amministratore globale <br> Amministratore della sicurezza <br>Ruolo con autorizzazioni di lettura per la sicurezza|No|
 |Utilizzare Esplora minacce per visualizzare le intestazioni e scaricare i messaggi di posta elettronica recapitati alle cassette postali|Amministratore globale <br>Amministratore della sicurezza <br> Ruolo con autorizzazioni di lettura per la sicurezza <br> Anteprima|Sì|
-
 
 > [!NOTE]
 > L'anteprima è un *ruolo*, non un *gruppo di ruoli*. Il ruolo di anteprima deve essere aggiunto a un gruppo di ruoli esistente per Office 365. Il *ruolo di amministratore globale* è assegnato nell'interfaccia di [amministrazione di Microsoft 365](https://admin.microsoft.com). I ruoli amministratore sicurezza e lettore di sicurezza sono assegnati nei [centri sicurezza e conformità](https://protection.office.com). Per ulteriori informazioni sui ruoli e sulle autorizzazioni, vedere [Permissions in the Security and Compliance Centers](permissions-in-the-security-and-compliance-center.md).

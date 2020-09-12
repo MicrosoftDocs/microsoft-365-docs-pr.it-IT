@@ -26,12 +26,12 @@ search.appverid:
 - MBS150
 ms.assetid: 01920974-9e6f-4331-a370-13aea4e82b3e
 description: In questo articolo viene descritto come creare utenti e gruppi quando la sottoscrizione Microsoft 365 utilizza l'identità solo cloud.
-ms.openlocfilehash: 4c8e7d4a29f548fca2fef9696f488dc333743ef9
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 6ec727ea3648f1daa3af42763e5f497715b987a2
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46691095"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47547759"
 ---
 # <a name="microsoft-365-cloud-only-identity"></a>Identità solo cloud di Microsoft 365
 
@@ -55,7 +55,7 @@ Inoltre, alcuni servizi cloud possono essere condivisi al di fuori dell'organizz
 
 - Utilizzare la gestione delle licenze basate su gruppo per assegnare le licenze per Microsoft 365 agli account utente automaticamente non appena vengono aggiunti come membri.
 - Aggiungere account utente a gruppi specifici in modo dinamico in base agli attributi degli account utente, ad esempio il nome del reparto.
-- Provisioning automatico degli utenti per le applicazioni del software come servizio (SaaS) e per proteggere l'accesso a tali applicazioni con l'autenticazione a più fattori e altre regole di accesso condizionale.
+- Provisioning automatico degli utenti per le applicazioni software come servizio (SaaS) e proteggere l'accesso a tali applicazioni con l'autenticazione a più fattori (AMF) e altri criteri di accesso condizionale.
 - Provisioning delle autorizzazioni e dei livelli di accesso per i siti del team di SharePoint Online.
 
 È possibile creare nuovi ***utenti*** con:

@@ -5,7 +5,7 @@ author: robmazz
 manager: laurawi
 audience: ITPro
 ms.topic: article
-ms.service: Office 365 Administration
+ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
 - Strat_O365_Enterprise
@@ -16,12 +16,12 @@ f1.keywords:
 - NOCSH
 description: In questo articolo vengono fornite informazioni sulle piattaforme, i client e i moduli di PowerShell che supportano il servizio Single Sign-on per Microsoft 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 8ab973fcfb0cc61378ee06c115264e308d8ec3ad
-ms.sourcegitcommit: c029834c8a914b4e072de847fc4c3a3dde7790c5
+ms.openlocfilehash: 6f6398736c8ead072374fbc14ee04eec63d3ad18
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "47332005"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47546411"
 ---
 # <a name="microsoft-365-client-app-support--single-sign-on"></a>Supporto delle app client Microsoft 365-Single Sign-on
 
@@ -59,7 +59,7 @@ Le versioni più recenti dei client seguenti supportano il servizio Single Sign-
 
 | | | | | | |
 |:---:|:---:|:---:|:---:|:---:|:---:|
-| ![Icona di Azure](../media/o365-azure-64x64.png) <br> [Azure AD <br> PowerShell](https://docs.microsoft.com/powershell/azure/active-directory/overview?view=azureadps-2.0) | ![Icona di Exchange](../media/o365-exchange-64x64.png) <br> [PowerShell di Exchange Online <br>](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps) | ![Icona di SharePoint](../media/o365-sharepoint-64x64.png) <br> [PowerShell di SharePoint Online <br>](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)
+| ![Icona di Azure](../media/o365-azure-64x64.png) <br> [Azure AD <br> PowerShell](https://docs.microsoft.com/powershell/azure/active-directory/overview?view=azureadps-2.0) | ![Icona di Exchange](../media/o365-exchange-64x64.png) <br> [PowerShell di Exchange Online <br>](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell) | ![Icona di SharePoint](../media/o365-sharepoint-64x64.png) <br> [PowerShell di SharePoint Online <br>](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)
 
 > [!NOTE]
 > <sup>1</sup> supporto per Edge e Kaizala su iOS disponibile a breve. <br>

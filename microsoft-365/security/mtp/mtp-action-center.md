@@ -3,7 +3,7 @@ title: Accedere al centro notifiche per visualizzare e approvare le indagini aut
 description: Utilizzare il centro notifiche per visualizzare dettagli relativi alle indagini automatizzate e approvare le azioni in sospeso
 keywords: Centro notifiche, protezione dalla minacce, indagine, avviso, in sospeso, automatizzata, rilevamento
 search.appverid: met150
-ms.prod: M365-security-compliance
+ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.custom: autoir
-ms.openlocfilehash: 77bc0f088a9779396a56a9cc8cc9ae6ecbdadea7
-ms.sourcegitcommit: 1b83b6bcacb997324bc4be355deba6daf319591d
+ms.openlocfilehash: 2dc641d22432e245980b905051bddd3b7dd4ed07
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "46503104"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47547987"
 ---
 # <a name="the-action-center"></a>Centro operativo
 

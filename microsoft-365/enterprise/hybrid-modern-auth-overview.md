@@ -16,19 +16,19 @@ f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
 description: In questo articolo vengono fornite informazioni sull'autenticazione moderna ibrida e sui prerequisiti per l'utilizzo con i server Skype for business e Exchange locali.
-ms.openlocfilehash: 1dbea7643685d68564b1ba09b17c41aa2e5e42f1
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 1e0330bd62d9098f11a12b44b46e9ace30b59420
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46690979"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47546445"
 ---
 # <a name="hybrid-modern-authentication-overview-and-prerequisites-for-using-it-with-on-premises-skype-for-business-and-exchange-servers"></a>Panoramica dell'autenticazione moderna ibrida e dei prerequisiti per l'uso con i server di Skype for Business ed Exchange locali
 
 *Questo articolo si riferisce sia a Microsoft 365 Enterprise che a Office 365 Enterprise*.
 
 L'_autenticazione moderna_ è un metodo di gestione delle identità che offre un servizio di autenticazione e autorizzazione utente più sicuro. È disponibile per le distribuzioni ibride di Office 365 relative ai server di Skype for Business ed Exchange locali, oltre che per le distribuzioni ibride di Skype for Business con domini separati. Questo articolo contiene collegamenti a documenti correlati sui prerequisiti, la configurazione e la disabilitazione dell'autenticazione moderna e alle informazioni su alcuni client correlati, ad esempio i client di Outlook e Skype.
-  
+
 - [Che cos’è l’autenticazione moderna](hybrid-modern-auth-overview.md#BKMK_WhatisModAuth)
 - [Cosa cambia con l’uso dell'autenticazione moderna](hybrid-modern-auth-overview.md#BKMK_WhatChanges)
 - [Controllare lo stato di autenticazione moderna nell’ambiente locale](hybrid-modern-auth-overview.md#BKMK_CheckStatus)
@@ -39,36 +39,36 @@ L'_autenticazione moderna_ è un metodo di gestione delle identità che offre un
 <a name="BKMK_WhatisModAuth"> </a>
 
 Autenticazione moderna è un termine che indica una combinazione di metodi di autenticazione e autorizzazione tra un client, ad esempio il portatile o il telefono, e un server oltre ad alcune misure di sicurezza basate su criteri di accesso, con cui l’utente potrebbe avere già familiarità. Ciò include:
-  
+
 - **Metodi di autenticazione**: autenticazione a più fattori (MFA), autenticazione con smart card, autenticazione basata sui certificati del client
 - **Metodi di autorizzazione**: implementazione Microsoft dell’autorizzazione OAuth (Open Authorization)
 - **Criteri di accesso condizionale**: gestione di applicazioni mobili (MAM) e accesso condizionale Azure Active Directory (Azure AD)
 
 La gestione delle identità utente con l'autenticazione moderna offre agli amministratori numerosi strumenti da usare per la protezione delle risorse e metodi più sicuri di gestione delle identità in locale (Exchange e Skype for Business), Exchange ibrido e gli scenari ibridi o con domini separati di Skype for Business.
-  
+
 Tenere presente che, poiché il funzionamento di Skype for Business è strettamente correlato a quello di Exchange, l’approccio di accesso degli utenti client di Skype for Business sarà influenzato dallo stato di autenticazione moderna di Exchange. Ciò si applica anche se si ha un’architettura ibrida dei _domini separati_ di Skype for Business in cui si ha sia Skype for Business Online che Skype for Business in locale, con utenti ospitati in entrambe le posizioni.
 
 Per altre informazioni sull'autenticazione moderna in Office 365, vedere [Supporto per l’app client di Office 365: autenticazione moderna](microsoft-365-client-support-modern-authentication.md).
-  
+
 > [!IMPORTANT]
 > Dal mese di agosto 2017 tutti i nuovi tenant di Office 365 che includono Skype for Business Online ed Exchange Online hanno l'autenticazione moderna abilitata per impostazione predefinita. I tenant preesistenti non cambiano lo stato autenticazione moderna predefinito, tutti i nuovi tenant invece supportano automaticamente il set espanso delle funzionalità d’identità elencate in precedenza. Per controllare lo stato di autenticazione moderna, vedere la sezione [Verifica dello stato di autenticazione moderna in ambiente locale](hybrid-modern-auth-overview.md#BKMK_CheckStatus).
-  
+
 ## <a name="what-changes-when-i-use-modern-authentication"></a>Che cosa cambia con l’uso dell'autenticazione moderna
 <a name="BKMK_WhatChanges"> </a>
 
 Se si usa l'autenticazione moderna con il server locale di Skype for Business o Exchange, si effettua ancora l’*autenticazione* degli utenti in locale, tuttavia la modalità di *autorizzazione* dell’accesso alle risorse, ad esempio i file o i messaggi di posta elettronica, cambia. Per questo motivo, anche se l'autenticazione moderna si riferisce alle comunicazioni tra client e server, i passaggi eseguiti durante la configurazione dell’autenticazione moderna in evoSTS (un servizio token di sicurezza usato da Azure AD) risultano impostati come server di autenticazione per i server di Skype for Business ed Exchange locali.
-  
+
 La modifica eseguita in evoSTS consente ai server locali di sfruttare le funzionalità OAuth (emissione di token) per l'autorizzazione dei client e inoltre consente loro di usare i metodi di sicurezza comuni nel cloud, ad esempio l'autenticazione a più fattori. Inoltre, evoSTS genera token che consentono agli utenti di richiedere l'accesso alle risorse senza specificare la password come parte della richiesta. Indipendentemente dalla posizione degli utenti, online o in locale, dalla posizione che ospita la risorsa necessaria, EvoSTS diventa il centro di autorizzazione degli utenti e dei client dopo che è stata configurata l'autenticazione moderna.
-  
+
 Ad esempio, se un client di Skype for Business deve accedere a un server Exchange per ottenere informazioni sul calendario per conto di un utente, usa Active Directory Authentication Library (ADAL) per eseguire questa operazione. ADAL è una libreria di codice creata per rendere disponibili le risorse protette della directory alle applicazioni del client tramite i token di sicurezza OAuth. ADAL è compatibile con OAuth per verificare le attestazioni e scambiare i token, anziché le password, per consentire a un utente l’accesso a una risorsa. In passato, l'autorità in una transazione di questo tipo, ossia il server che convalida le attestazioni degli utenti e genera i token necessari, era un servizio token di sicurezza locale o persino Active Directory Federation Services. Tuttavia, l'autenticazione moderna centralizza tale autorità tramite l’uso di Azure AD.
-  
+
 Inoltre, anche se gli ambienti del server di Exchange e Skype for Business sono interamente locali, il server di autorizzazione è online e l'ambiente locale deve essere in grado di creare e mantenere una connessione all'abbonamento a Office 365 nel cloud, e all'istanza di Azure Active Directory usata dall'abbonamento come directory.
-  
+
 Caratteristiche che non cambiano Sia che ci si trovi in una versione ibrida con dominio separato o che si usino i server di Skype for Business e di Exchange in locale, tutti gli utenti devono prima autenticarsi *in locale*. In un'implementazione ibrida dell'autenticazione moderna, _Lyncdiscovery_ e _AutoDiscovery_ puntano entrambi al server locale.
-  
+
 > [!IMPORTANT]
 > Se è necessario conoscere le topologie specifiche di Skype for Business supportate dall’autenticazione moderna, vedere [qui](https://technet.microsoft.com/library/mt803262.aspx).
-  
+
 ## <a name="check-the-modern-authentication-status-of-your-on-premises-environment"></a>Controllare lo stato dell’autenticazione moderna nell’ambiente locale
 <a name="BKMK_CheckStatus"> </a>
 
@@ -80,7 +80,7 @@ Get-OrganizationConfig | ft OAuth*
 
 Se il valore della proprietà _OAuth2ClientProfileEnabled_ è **Falso**, l'autenticazione moderna è disabilitata.
 
-Per altre informazioni sul cmdlet Get-OrganizationConfig, vedere [Get-OrganizationConfig](https://docs.microsoft.com/powershell/module/exchange/organization/get-organizationconfig).
+Per altre informazioni sul cmdlet Get-OrganizationConfig, vedere [Get-OrganizationConfig](https://docs.microsoft.com/powershell/module/exchange/get-organizationconfig).
 
 Per controllare lo stato dei server di Skype for Business eseguire il comando di PowerShell seguente:
 
@@ -91,17 +91,17 @@ Get-CSOAuthConfiguration
 Se il comando restituisce una proprietà _OAuthServers_ vuota o se il valore della proprietà _ClientADALAuthOverride_ non è **Consentito**, l'autenticazione moderna è disabilitata.
 
 Per altre informazioni sul cmdlet Get-CsOAuthConfiguration, vedere [Get-CsOAuthConfiguration](https://docs.microsoft.com/powershell/module/skype/get-csoauthconfiguration).
-  
+
 ## <a name="do-you-meet-modern-authentication-prerequisites"></a>Come soddisfare i prerequisiti di autenticazione moderna
 
 Prima di procedere, verificare questi elementi nell’elenco:
-  
+
 - **Informazioni specifiche per Skype for Business**
   - Tutti i server devono aver eseguito gli aggiornamenti cumulativi di maggio 2017 (CU5) per Skype for Business Server 2015 o versione successiva
     - **Eccezione:** Survivable Branch Appliance (SBA) può avere la versione corrente (basata su Lync 2013)
   - Il dominio SIP viene aggiunto come dominio federato in Office 365
   - Tutti i front end di Skype for Business devono avere connessioni in uscita a Internet, agli URL di autenticazione di Office 365 (TCP 443) e agli elenchi CRL radice dei certificati noti (TCP 80) elencati nelle righe 56 e 125 della sezione "Microsoft 365 Common and Office" degli [URL e intervalli di indirizzi IP per Office 365](urls-and-ip-address-ranges.md).
-  
+
 - **Skype for Business in locale in un ambiente ibrido di Office 365**
   - Distribuzione di Skype for Business Server 2019 con tutti i server che eseguono Skype for Business Server 2019.
   - Distribuzione di Skype for Business Server 2015 con tutti i server che eseguono Skype for Business Server 2015.
@@ -113,7 +113,7 @@ Prima di procedere, verificare questi elementi nell’elenco:
 
 >[!NOTE]
 >Se i server front-end di Skype for Business usano un server proxy per l'accesso a Internet, l'IP del server proxy e il numero di porta usati devono essere immessi nella sezione di configurazione del file web.config per ogni front-end.
-  
+
 - C:\Program Files\Skype for Business Server 2015\Web Components\Web ticket\int\web.config
 - C:\Program Files\Skype for Business Server 2015\Web Components\Web ticket\ext\web.config
 
@@ -131,13 +131,13 @@ Prima di procedere, verificare questi elementi nell’elenco:
 
 > [!IMPORTANT]
 > Assicurarsi di sottoscrivere il feed RSS per [URL e intervalli di indirizzi IP di Office 365](urls-and-ip-address-ranges.md) per rimanere aggiornati con gli elenchi più recenti di URL necessari.
-  
+
 - **Informazioni specifiche per Exchange Server**
   - È possibile usare Exchange Server 2013 CU19 e versioni successive, Exchange Server 2016 CU8 e versioni successive o Exchange Server 2019 CU1 e versioni successive.
   - Non è disponibile Exchange Server 2010 nell'ambiente ibrido.
   - La ripartizione del carico SSL non è configurata. Sono supportate la terminazione e la nuova esecuzione della crittografia SSL.
   - Nel caso l’ambiente utilizzi un'infrastruttura del server proxy per consentire ai server di connettersi a Internet, assicurarsi che tutti i server di Exchange abbiano il server proxy definito nella proprietà [InternetWebProxy](https://technet.microsoft.com/library/bb123716%28v=exchg.160%29.aspx).
-  
+
 - **Exchange Server in locale in un ambiente ibrido di Office 365**
 
   - Se si usa Exchange Server 2013, per almeno un server devono essere installati i ruoli server Accesso client e Cassette postali. Sebbene sia possibile installare i ruoli Accesso client e Cassette postali su server separati, si consiglia vivamente di installare entrambi i ruoli sullo stesso server per fornire una maggiore affidabilità e prestazioni migliorate.
@@ -146,7 +146,7 @@ Prima di procedere, verificare questi elementi nell’elenco:
   - Tutti i server di Exchange devono avere installato gli aggiornamenti cumulativi più recenti, vedere [Aggiornamento di Exchange agli aggiornamenti cumulativi più recenti](https://docs.microsoft.com/exchange/plan-and-deploy/install-cumulative-updates?view=exchserver-2019) per trovare e gestire tutti gli aggiornamenti disponibili.
 
 - **Requisiti del client e del protocollo di Exchange**
-  
+
   - I client seguenti supportano l'autenticazione moderna:
 
   |**Client**|**Protocollo principale**|**Note**|
