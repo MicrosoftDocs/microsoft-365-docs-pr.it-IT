@@ -14,12 +14,12 @@ ms.collection:
 localization_priority: None
 description: Informazioni su come definire i criteri per le barriere informative in Microsoft teams.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 024b10f86cb38532dc441ebd9c88c050fe2839b7
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: dcf7fd496098032bad075c1679f0081ddf29caef
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47308075"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47547444"
 ---
 # <a name="define-information-barrier-policies"></a>Definire i criteri delle barriere informative
 
@@ -71,7 +71,7 @@ Oltre alle [licenze e le autorizzazioni necessarie](information-barriers.md#requ
 - Nessun criterio rubrica-prima di definire e applicare i criteri di barriera delle informazioni, assicurarsi che non siano presenti criteri Rubrica di Exchange. Le barriere informative si basano sui criteri della Rubrica, ma i due tipi di criteri non sono compatibili. Se si dispone di tali criteri, assicurarsi che [i criteri della Rubrica siano rimossi](https://docs.microsoft.com/exchange/address-books/address-book-policies/remove-an-address-book-policy) per primi. Dopo aver abilitato i criteri barriera informativi e aver abilitato la rubrica gerarchica, tutti gli utenti ***che non sono inclusi*** in un segmento barriera informazioni vedranno la [rubrica gerarchica](https://docs.microsoft.com/exchange/address-books/hierarchical-address-books/hierarchical-address-books) in Exchange Online.
 
 - PowerShell-attualmente, i criteri di barriera delle informazioni vengono definiti e gestiti nel centro sicurezza & conformità di Office 365 tramite i cmdlet di PowerShell. Anche se alcuni esempi sono disponibili in questo articolo, è necessario avere familiarità con i cmdlet e i parametri di PowerShell. Sarà inoltre necessario il modulo di Azure PowerShell.
-    - [Connettersi a PowerShell in Centro sicurezza e conformità](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps)
+    - [Connettersi a PowerShell in Centro sicurezza e conformità](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell)
     - [Installare il modulo di Azure PowerShell](https://docs.microsoft.com/powershell/azure/install-az-ps?view=azps-2.3.2)
 
 - Consenso dell'amministratore per le barriere informative in Microsoft teams-quando i criteri sono sul posto, gli ostacoli alle informazioni possono rimuovere persone dalle sessioni di chat di cui non si suppone che si trovino. Questo contribuisce a garantire che l'organizzazione rimanga conforme ai criteri e alle normative. Utilizzare la procedura seguente per consentire ai criteri di barriera delle informazioni di funzionare come previsto in Microsoft teams. 
@@ -258,7 +258,7 @@ Con PowerShell, è possibile visualizzare lo stato degli account utente, i segme
 |Segmenti     |Utilizzare il cmdlet **Get-OrganizationSegment** .<p>Sintassi `Get-OrganizationSegment` <p>In questo modo verrà visualizzato un elenco di tutti i segmenti definiti per l'organizzazione.         |
 |Criteri barriera di informazioni     |Utilizzare il cmdlet **Get-InformationBarrierPolicy** . <p> Sintassi `Get-InformationBarrierPolicy` <p>In questo modo verrà visualizzato un elenco di criteri barriera informativi definiti e il relativo stato.       |
 |Applicazione dei criteri barriera informativa più recente     | Utilizzare il cmdlet **Get-InformationBarrierPoliciesApplicationStatus** . <p>Sintassi `Get-InformationBarrierPoliciesApplicationStatus`<p>    Verranno visualizzate informazioni sul modo in cui l'applicazione del criterio è stata completata, non è riuscita o è in corso.       |
-|Tutte le applicazioni dei criteri barriera di informazioni|Utilizzare `Get-InformationBarrierPoliciesApplicationStatus -All $true`<p>Verranno visualizzate informazioni sul modo in cui l'applicazione del criterio è stata completata, non è riuscita o è in corso.|
+|Tutte le applicazioni dei criteri barriera di informazioni|Usare `Get-InformationBarrierPoliciesApplicationStatus -All $true`<p>Verranno visualizzate informazioni sul modo in cui l'applicazione del criterio è stata completata, non è riuscita o è in corso.|
 
 <!-- IN the " The most recent information barrier policy application, add link to troubleshooting topic -->
 

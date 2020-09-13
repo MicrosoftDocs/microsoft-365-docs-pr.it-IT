@@ -16,52 +16,52 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: f30e2353-0bd6-41ed-8347-eea1fb8d2662
 description: Informazioni su come accedere e utilizzare il Microsoft Service Trust Portal per facilitare la sicurezza, la privacy e le procedure di conformità.
-ms.openlocfilehash: 0866a32087e61bb8af3ea9d7d4c61ea463864067
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 40c80c0256f730784373a0ff96474d02dbf175c5
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44817625"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47547474"
 ---
 # <a name="get-started-with-the-microsoft-service-trust-portal"></a>Introduzione a Microsoft Service Trust Portal
 
 Microsoft Service Trust Portal offre una vasta gamma di contenuti, strumenti e altre risorse relative alle procedure di sicurezza, privacy e conformità di Microsoft.
-  
+
 ## <a name="accessing-the-service-trust-portal"></a>Accesso al Service Trust Portal
 
 Il Service Trust Portal contiene informazioni dettagliate sull'implementazione di controlli e processi di Microsoft che proteggono i servizi cloud e i dati dei clienti in esso contenuti. Per accedere ad alcune delle risorse nel Service Trust Portal, è necessario eseguire l'accesso come utente autenticato con l'account Microsoft Cloud Services (un account dell'organizzazione di Azure Active Directory o un account Microsoft) ed esaminare e accettare il contratto di non divulgazione Microsoft per i materiali di conformità.
-  
-I **clienti esistenti possono accedere al Service Trust Portal** [https://aka.ms/STP](https://aka.ms/STP) con una delle sottoscrizioni online seguenti (Trial or paid): 
-  
+
+### <a name="existing-customers"></a>Clienti esistenti
+
+I clienti esistenti possono accedere al Service Trust Portal <https://aka.ms/STP> con una delle sottoscrizioni online seguenti (Trial or paid):
+
 - Microsoft 365
-
 - Dynamics 365
-
 - Azure
-    
+
  > [!NOTE]
- > Gli account di Azure Active Directory associati alle organizzazioni dispongono dell'accesso all'intera gamma di documenti e funzionalità, come Compliance Manager. Gli account Microsoft creati per uso personale hanno accesso limitato al contenuto del portale del servizio di attendibilità dei servizi. 
-  
-**Nuovi clienti e clienti che valutano i Microsoft Online Services**
-  
+ > Gli account di Azure Active Directory associati alle organizzazioni dispongono dell'accesso all'intera gamma di documenti e funzionalità, come Compliance Manager. Gli account Microsoft creati per uso personale hanno accesso limitato al contenuto del portale del servizio di attendibilità dei servizi.
+
+### <a name="new-customers-and-customers-evaluating-microsoft-online-services"></a>Nuovi clienti e clienti che valutano i Microsoft Online Services
+
 Per creare un nuovo account o creare un account di valutazione, utilizzare uno dei seguenti moduli di iscrizione (utilizzati anche per gli account di valutazione) per accedere all'STP.
-  
+
 - Iscriversi a un nuovo [account di valutazione di Microsoft 365 Apps for business](https://go.microsoft.com/fwlink/p/?LinkID=507653) o a un nuovo [account di valutazione di Office 365 Enterprise](https://go.microsoft.com/fwlink/p/?LinkID=698279)
 
 - Iscriversi a un nuovo [account di valutazione di Dynamics 365](https://go.microsoft.com/fwlink/?LinkId=252780)
 
-- Iscriversi a un nuovo [account di valutazione di Azure](https://go.microsoft.com/fwlink/?LinkId=722737). 
-    
+- Iscriversi a un nuovo [account di valutazione di Azure](https://go.microsoft.com/fwlink/?LinkId=722737).
+
 Quando si esegue l'iscrizione a una versione di valutazione gratuita o a un abbonamento, è necessario abilitare Azure Active Directory per supportare l'accesso all'STP.
-  
+
 ## <a name="using-the-service-trust-portal"></a>Utilizzo del Service Trust Portal
 
 Le funzionalità e il contenuto del portale di attendibilità del servizio sono accessibili dal menu principale.
-  
+
 ![Menu Service Trust Portal](../media/STPMenus1.png)
 
 Nelle sezioni seguenti viene descritto ogni elemento del menu principale.
-  
+
 ### <a name="service-trust-portal"></a>Service Trust Portal
 
 Il collegamento **Service Trust Portal** Visualizza la Home page. Fornisce un modo rapido per tornare alla Home page.
@@ -70,7 +70,7 @@ Il collegamento **Service Trust Portal** Visualizza la Home page. Fornisce un mo
 
 Compliance Manager è uno strumento di valutazione dei rischi basato sul flusso di lavoro che consente di monitorare, assegnare e verificare le attività di conformità alle normative dell'organizzazione relative ai servizi cloud Microsoft, ad esempio Microsoft 365, Dynamics 365 e Azure. Utilizzare Compliance Manager per gestire la conformità normativa all'interno del modello di responsabilità condivisa del cloud. A seconda della versione di Compliance Manager che si desidera utilizzare, vedere gli articoli seguenti per ulteriori informazioni:
 
-- [Microsoft Compliance Manager (classico)](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md)
+- [Microsoft Compliance Manager (versione classica)](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md)
 
 - [Microsoft Compliance Manager (anteprima)](compliance-manager-overview.md)
 
@@ -79,16 +79,12 @@ Compliance Manager è uno strumento di valutazione dei rischi basato sul flusso 
 Offre una vasta gamma di informazioni sulla progettazione e l'implementazione della sicurezza con l'obiettivo di rendere più facile soddisfare gli obiettivi di conformità normativa mediante la comprensione del modo in cui i servizi cloud di Microsoft consentono di proteggere i dati. Per esaminare il contenuto, selezionare una delle opzioni seguenti nel menu a discesa **documenti attendibili** .
 
 - **Rapporti di controllo:** Viene visualizzato un elenco dei rapporti di verifica e valutazione indipendenti sui servizi cloud di Microsoft. Questi rapporti forniscono informazioni sui servizi cloud Microsoft rispetto agli standard di protezione dei dati e ai requisiti normativi, ad esempio:
-  
-    - Organizzazione internazionale per la standardizzazione (ISO)
 
-    - Service Organization Controls (SOC)
-
-    - NIST (National Institute of Standards and Technology)
-
-    - FedRAMP (Federal Risk and Authorization Management Program)
-
-    - Regolamento generale sulla protezione dei dati (GDPR)
+  - Organizzazione internazionale per la standardizzazione (ISO)
+  - Service Organization Controls (SOC)
+  - NIST (National Institute of Standards and Technology)
+  - FedRAMP (Federal Risk and Authorization Management Program)
+  - Regolamento generale sulla protezione dei dati (GDPR)
 
 - **Protezione dei dati:** Contiene una vasta gamma di risorse, ad esempio controlli controllati, white paper, domande frequenti, test di penetrazione, strumenti di valutazione dei rischi e guide per la conformità.
 
@@ -101,23 +97,23 @@ Fornisce informazioni di conformità specifiche per l'industria e le aree geogra
 - **Industrie:** In questo momento, questa pagina fornisce una pagina di destinazione specifica del settore per il settore dei servizi finanziari. Questo contiene informazioni quali offerte di conformità, domande frequenti e storie di successo. Le risorse per più industrie verranno rilasciate in futuro, tuttavia è possibile trovare risorse per più industrie accedendo alla pagina dei **documenti di attendibilità > protezione dei dati** in STP.
 
 - **Aree geografiche:** Fornisce pareri legali sui servizi cloud di Microsoft conformità con varie leggi di vari paesi. Alcuni paesi sono Australia, Canada, Repubblica Ceca, Danimarca, Germania, Polonia, Romania, Spagna e Regno Unito.
-  
+
 ### <a name="trust-center"></a>Centro protezione
 
 Collegamenti al [Centro protezione Microsoft](https://www.microsoft.com/trust-center), in cui sono disponibili ulteriori informazioni sulla sicurezza, la conformità e la privacy nel cloud Microsoft. Sono incluse informazioni sulle funzionalità dei servizi cloud di Microsoft che è possibile utilizzare per soddisfare i requisiti specifici di GDPR, la documentazione utile per la propria responsabilità GDPR e la comprensione delle misure tecniche e organizzative che Microsoft ha utilizzato per supportare la GDPR.
-  
+
 ### <a name="my-library"></a>Raccolta personale
 
 Questa nuova funzionalità consente di salvare (o *aggiungere*) i documenti in modo che sia possibile accedervi rapidamente nella pagina raccolta personale. È inoltre possibile configurare le notifiche in modo che Microsoft invii un messaggio di posta elettronica quando i documenti nella raccolta personale vengono aggiornati. Per ulteriori informazioni, vedere la sezione [My Library](#my-library-1) in questo articolo.
 
-### <a name="more"></a>Altro 
+### <a name="more"></a>Altro
 
 Andare a **più > amministratore** per accedere alle funzioni amministrative che sono disponibili solo per l'account di amministratore globale. Questa opzione è visibile solo quando l'utente ha eseguito l'accesso come amministratore globale. Nel menu a discesa **amministratore** sono disponibili due opzioni:
-  
-- **Impostazioni:** Questa pagina consente di assegnare un accesso basato sui ruoli (noti come *ruoli utente*) a Compliance Manager.  Per altre informazioni, vedere:
-   
+
+- **Impostazioni:** Questa pagina consente di assegnare un accesso basato sui ruoli (noti come *ruoli utente*) a Compliance Manager.  Per ulteriori informazioni, vedere:
+
   - [Autorizzazioni in Compliance Manager (classica)](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md#permissions-and-role-based-access-control)
-   
+
   - [Autorizzazioni in Compliance Manager (anteprima)](compliance-manager-overview.md#permissions)
 
   È inoltre possibile configurare se le azioni in Compliance Manager vengono aggiornate in base allo stato della stessa azione in Secure score. Questa funzionalità è supportata solo se si utilizza la versione più recente di Compliance Manager. Per ulteriori informazioni, vedere [controllo degli aggiornamenti automatici del Punteggio sicuro](working-with-compliance-manager.md#controlling-automatic-secure-score-updates).
@@ -127,18 +123,18 @@ Andare a **più > amministratore** per accedere alle funzioni amministrative che
 ### <a name="search"></a>Ricerca
 
 Fare clic sulla lente di ingrandimento nell'angolo in alto a destra della pagina Service Trust Portal per espandere la casella, immettere i termini di ricerca e premere **invio**. Viene visualizzata **la pagina di ricerca,** con il termine di ricerca visualizzato nella casella di ricerca e i risultati di ricerca riportati di seguito.
-  
+
 ![Service Trust Portal - Ricerca in documenti con filtro applicato](../media/86b754e1-c63c-4514-89ac-d014bf334140.png)
 
 Per impostazione predefinita, la ricerca ° restituisce i risultati dei documenti. È possibile filtrare i risultati utilizzando gli elenchi a discesa per affinare l'elenco dei documenti visualizzati. È possibile utilizzare più filtri per limitare l'elenco dei documenti. I filtri includono i servizi cloud specifici, le categorie di conformità o le procedure di sicurezza, le aree geografiche e le industrie. Fare clic sul collegamento nome documento per scaricare il documento.
-  
+
 Per elencare i controlli dalle valutazioni in Compliance Manager correlate ai termini di ricerca, fare clic su **Compliance Manager**. I risultati della ricerca mostrano la data in cui è stata creata la valutazione, il nome del gruppo di valutazione, il servizio cloud Microsoft applicabile e se il controllo è Microsoft o gestito dal cliente. Fare clic sul nome del controllo per visualizzare il controllo nella valutazione in Compliance Manager.
-  
+
 ![Service Trust Portal - Ricerca nei controlli di Compliance Manager](../media/bafb811a-68ce-40b5-ad16-058498fe5439.png)
-  
+
 > [!NOTE]
 > I report e i documenti del portale di attendibilità del servizio sono disponibili per il download da almeno 12 mesi dopo la pubblicazione o fino a quando non diventa disponibile una nuova versione del documento.
-  
+
 ## <a name="my-library"></a>Raccolta personale
 
 Utilizzare la funzionalità raccolta personale per aggiungere documenti e risorse nel Service Trust Portal alla pagina raccolta personale. In questo modo è possibile accedere ai documenti rilevanti in un'unica posizione.  Per aggiungere un documento alla raccolta personale, fare clic sul menu **...** a destra di un documento e quindi selezionare **Salva in raccolta**. È possibile aggiungere più documenti alla raccolta personale facendo clic sulla casella di controllo accanto a uno o più documenti e quindi facendo clic su **Salva in raccolta** nella parte superiore della pagina.
@@ -161,14 +157,14 @@ Per accedere a questi Starter Pack, accedere a **Service Trust Portal > Industri
 
 ## <a name="localization-support"></a>Supporto alla localizzazione
 
-Il Service Trust Portal consente di visualizzare il contenuto della pagina in diverse lingue. Per modificare la lingua della pagina, è sufficiente fare clic sull'icona Globe nell'angolo in basso a sinistra della pagina e selezionare la lingua desiderata. 
-  
+Il Service Trust Portal consente di visualizzare il contenuto della pagina in diverse lingue. Per modificare la lingua della pagina, è sufficiente fare clic sull'icona Globe nell'angolo in basso a sinistra della pagina e selezionare la lingua desiderata.
+
 ![Service Trust Portal - Opzioni di contenuti localizzati](../media/b50c677e-a886-4267-9eca-915d880ead7a.png)
-  
-## <a name="feedback"></a>Feedback
+
+## <a name="give-feedback"></a>Inviare commenti e suggerimenti
 
 È possibile ottenere ulteriori informazioni sul Service Trust Portal oppure sugli errori che si verificano quando si utilizza il portale. È inoltre possibile contattarci con domande e commenti e suggerimenti relativi ai report di conformità e alle risorse di attendibilità dei servizi attendibili utilizzando il collegamento commenti e suggerimenti nella parte inferiore delle pagine STP.
-  
+
 Il feedback degli utenti è importante per noi. Fare clic sul pulsante feedback nella parte inferiore della pagina per inviarci commenti su cosa hai fatto o non ti piace, oppure suggerimenti per migliorare i prodotti o le caratteristiche del prodotto.
-  
+
 ![Che tipo di feedback hai](../media/5a949f4c-cd2d-4258-aa33-394f3f9feb7b.jpg)

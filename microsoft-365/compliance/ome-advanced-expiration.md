@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 description: Usare la crittografia avanzata dei messaggi di Office 365 per estendere la sicurezza della posta elettronica impostando una data di scadenza per i messaggi di posta elettronica tramite un modello personalizzato.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e929ce1d948a83a98cca6fa35a65b80a2fc9ef15
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 0dcf9c82f9204f1357b49411d0ca87e87007eb96
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44818689"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47546160"
 ---
 # <a name="set-an-expiration-date-for-email-encrypted-by-office-365-advanced-message-encryption"></a>Impostare una data di scadenza per un'e-mail crittografata da Office 365 Advanced Message Encryption
 
@@ -40,7 +40,7 @@ Con la crittografia avanzata dei messaggi di Office 365, ogni volta che si appli
 
 ## <a name="create-a-custom-branding-template-to-force-mail-expiration-by-using-powershell"></a>Creare un modello di personalizzazione personalizzato per forzare la scadenza della posta tramite PowerShell
 
-1. [Connettersi a PowerShell di Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell) con un account che disponga delle autorizzazioni di amministratore globale nell'organizzazione.
+1. [Connettersi a PowerShell di Exchange Online](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell) con un account che disponga delle autorizzazioni di amministratore globale nell'organizzazione.
 
 2. Eseguire il cmdlet New-OMEConfiguration.
 
@@ -50,9 +50,9 @@ Con la crittografia avanzata dei messaggi di Office 365, ogni volta che si appli
 
 Dove:
 
-- `Identity`è il nome del modello personalizzato.
+- `Identity` è il nome del modello personalizzato.
 
-- `ExternalMailExpiryInDays`identifica il numero di giorni in cui i destinatari possono mantenere la posta prima della scadenza. È possibile utilizzare qualsiasi valore compreso tra 1 e 730 giorni.
+- `ExternalMailExpiryInDays` identifica il numero di giorni in cui i destinatari possono mantenere la posta prima della scadenza. È possibile utilizzare qualsiasi valore compreso tra 1 e 730 giorni.
 
 ## <a name="more-information-about-office-365-advanced-message-encryption"></a>Ulteriori informazioni sulla crittografia avanzata dei messaggi di Office 365
 

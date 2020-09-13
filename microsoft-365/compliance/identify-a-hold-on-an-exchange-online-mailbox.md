@@ -17,12 +17,12 @@ ms.assetid: 6057daa8-6372-4e77-a636-7ea599a76128
 ms.custom:
 - seo-marvel-apr2020
 description: Informazioni su come identificare i diversi tipi di blocco che è possibile inserire in una cassetta postale di Exchange online in Microsoft 365.
-ms.openlocfilehash: ea7beb34107fb5eaf61c56ece7bde8070e6467a6
-ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
+ms.openlocfilehash: 1cd947f70c57d453b038ac419abccde006f393ae
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45126807"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47547454"
 ---
 # <a name="how-to-identify-the-type-of-hold-placed-on-an-exchange-online-mailbox"></a>Come identificare il tipo di blocco applicato a una cassetta postale di Exchange Online
 
@@ -58,7 +58,7 @@ Per gestire le cassette postali in blocco, potrebbe essere necessario identifica
 
 - **Get-OrganizationConfig:** Utilizzare questo cmdlet per ottenere i GUID per i criteri di conservazione a livello dell'organizzazione.
 
-Per informazioni su come connettersi a PowerShell per Exchange Online, vedere [Connettersi a PowerShell per Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps).
+Per informazioni su come connettersi a PowerShell per Exchange Online, vedere [Connettersi a PowerShell per Exchange Online](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
 
 ### <a name="get-mailbox"></a>Get-Mailbox
 
@@ -142,7 +142,7 @@ Get-ComplianceCase $CaseHold.CaseId | FL Name
 $CaseHold | FL Name,ExchangeLocation
 ```
 
-Per connettersi a PowerShell per Centro sicurezza & Compliance, vedere [Connect to security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps).
+Per connettersi a PowerShell per Centro sicurezza & Compliance, vedere  [Connect to security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell).
 
 ### <a name="in-place-holds"></a>Blocchi sul posto
 
@@ -238,9 +238,9 @@ Tenere presenti le considerazioni seguenti quando si gestisce una cassetta posta
 
 Dopo aver identificato le esenzioni applicate a una cassetta postale, è possibile eseguire attività quali la modifica della durata del blocco, la rimozione temporanea o permanente del blocco o l'esclusione di una cassetta postale inattiva da un criterio di conservazione Microsoft 365. Per ulteriori informazioni sull'esecuzione di attività correlate alle esenzioni, vedere uno dei seguenti argomenti:
 
-- Eseguire il comando [set-RetentionCompliancePolicy- \<user mailbox> AddExchangeLocationException](https://docs.microsoft.com/powershell/module/exchange/set-retentioncompliancepolicy?view=exchange-ps) in PowerShell per la sicurezza & Compliance Center per escludere una cassetta postale da un criterio di conservazione Microsoft 365 a livello di organizzazione. Questo comando può essere utilizzato solo per i criteri di conservazione in cui il valore della proprietà *ExchangeLocation* è uguale a `All` .
+- Eseguire il comando [set-RetentionCompliancePolicy- \<user mailbox> AddExchangeLocationException](https://docs.microsoft.com/powershell/module/exchange/set-retentioncompliancepolicy) in PowerShell per la sicurezza & Compliance Center per escludere una cassetta postale da un criterio di conservazione Microsoft 365 a livello di organizzazione. Questo comando può essere utilizzato solo per i criteri di conservazione in cui il valore della proprietà *ExchangeLocation* è uguale a `All` .
 
-- Eseguire il comando [Set-Mailbox- \<hold GUID without prefix or suffix> ExcludeFromOrgHolds](https://docs.microsoft.com/powershell/module/exchange/set-mailbox?view=exchange-ps) in Exchange Online PowerShell per escludere una cassetta postale inattiva da un criterio di conservazione Microsoft 365 a livello di organizzazione.
+- Eseguire il comando [Set-Mailbox- \<hold GUID without prefix or suffix> ExcludeFromOrgHolds](https://docs.microsoft.com/powershell/module/exchange/set-mailbox) in Exchange Online PowerShell per escludere una cassetta postale inattiva da un criterio di conservazione Microsoft 365 a livello di organizzazione.
 
 - [Cambiare la durata del blocco per una cassetta postale inattiva](change-the-hold-duration-for-an-inactive-mailbox.md)
 

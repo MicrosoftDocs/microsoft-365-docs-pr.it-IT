@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: a85e1c87-a48e-4715-bfa9-d5275cde67b0
 description: Informazioni su come gli amministratori possono eliminare gli elementi nella cartella elementi ripristinabili di un utente per una cassetta postale di Exchange Online, anche se la cassetta postale è in attesa legale.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d0983a3ce10a3980f23af68736acac1382ef938f
-ms.sourcegitcommit: 57b37a3ce40f205c7320d5be1a0d906dd492b863
+ms.openlocfilehash: 5f111a19e3baf57f2b6f2e2254df97d21689de2e
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "47405467"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47546150"
 ---
 # <a name="delete-items-in-the-recoverable-items-folder-of-cloud-based-mailboxes-on-hold"></a>Eliminare gli elementi nella cartella Elementi recuperabili delle cassette postali basate su cloud con blocchi
 
@@ -226,7 +226,7 @@ Per ulteriori informazioni sulle etichette, vedere informazioni [sui criteri di 
 
 ### <a name="ediscovery-holds"></a>eDiscovery contiene
   
-Per identificare il blocco associato a un caso di eDiscovery (denominato *eDiscovery*holds) applicato alla cassetta postale, eseguire i comandi seguenti in [PowerShell Center Security & Compliance](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell) . Utilizzare il GUID (escluso il  `UniH` prefisso) per il blocco eDiscovery identificato nel passaggio 1. Nel secondo comando viene visualizzato il nome del caso di eDiscovery a cui è associato il blocco. il terzo comando Visualizza il nome dell'esenzione.
+Per identificare il blocco associato a un caso di eDiscovery (denominato *eDiscovery*holds) applicato alla cassetta postale, eseguire i comandi seguenti in [PowerShell Center Security & Compliance](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell) . Utilizzare il GUID (escluso il  `UniH` prefisso) per il blocco eDiscovery identificato nel passaggio 1. Nel secondo comando viene visualizzato il nome del caso di eDiscovery a cui è associato il blocco. il terzo comando Visualizza il nome dell'esenzione.
   
 ```powershell
 $CaseHold = Get-CaseHoldPolicy <hold GUID without prefix>
@@ -412,7 +412,7 @@ Eseguire i passaggi seguenti (nella sequenza specificata) in PowerShell di Excha
     Get-CASMailbox <username> | FL EwsEnabled,ActiveSyncEnabled,MAPIEnabled,OWAEnabled,ImapEnabled,PopEnabled
     ```
 
-## <a name="more-information"></a>Ulteriori informazioni
+## <a name="more-information"></a>Altre informazioni
 
 Di seguito viene riportata una tabella in cui viene descritto come identificare diversi tipi di esenzioni in base ai valori della proprietà  *InPlaceHolds*  quando si eseguono i cmdlet **Get-Mailbox** o **Get-OrganizationConfig** . Per informazioni più dettagliate, vedere [How to identificare il tipo di blocco posizionato su una cassetta postale di Exchange Online](identify-a-hold-on-an-exchange-online-mailbox.md).
 

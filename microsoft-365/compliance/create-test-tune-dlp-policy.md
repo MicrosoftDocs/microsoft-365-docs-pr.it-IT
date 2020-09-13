@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-mar2020
 ms.assetid: 59414438-99f5-488b-975c-5023f2254369
 description: In questo articolo vengono fornite informazioni su come creare, testare e ottimizzare un criterio DLP in base alle esigenze dell'organizzazione.
-ms.openlocfilehash: b8e82e1304cb411a1e73e6f7bdc02fecdda9784f
-ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
+ms.openlocfilehash: ef88da90d8e009d3ea634c9142d7d917fbfd288a
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46648783"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47546936"
 ---
 # <a name="create-test-and-tune-a-dlp-policy"></a>Creare, testare e ottimizzare i criteri di prevenzione della perdita dei dati
 
@@ -218,7 +218,7 @@ Quando si è soddisfatti del fatto che i criteri DLP siano in grado di rilevare 
 
 ![Opzione per abilitare i criteri](../media/DLP-create-test-tune-turn-on-policy.png)
  
-Se si è in attesa di vedere quando il criterio avrà effetto, [connettersi al centro sicurezza & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps) ed eseguire il [cmdlet Get-DlpCompliancePolicy](https://docs.microsoft.com/powershell/module/exchange/get-dlpcompliancepolicy?view=exchange-ps) per visualizzare il proprietà distributionstatus.
+Se si è in attesa di vedere quando il criterio avrà effetto, [connettersi al centro sicurezza & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell) ed eseguire il [cmdlet Get-DlpCompliancePolicy](https://docs.microsoft.com/powershell/module/exchange/get-dlpcompliancepolicy) per visualizzare il proprietà distributionstatus.
 
 ![Running cmdlet in PowerShell](../media/DLP-create-test-tune-PowerShell.png)
 
