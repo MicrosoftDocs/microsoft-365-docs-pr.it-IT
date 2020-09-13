@@ -16,12 +16,12 @@ description: Informazioni su come inserire una cassetta postale per il blocco pe
 ms.custom:
 - seo-marvel-mar2020
 - seo-marvel-apr2020
-ms.openlocfilehash: 9c62dfcd9e4cf1e3cc75e029b250c7abe80de6df
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 4bcb857095a63c06caa6e9762496ca74afeead04
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44818045"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47546988"
 ---
 # <a name="create-a-litigation-hold"></a>Creare un blocco per controversia legale
 
@@ -68,7 +68,7 @@ Di seguito sono riportati i passaggi per inserire una cassetta postale per contr
 
 ### <a name="create-a-litigation-hold-using-powershell"></a>Creazione di un blocco per controversia legale tramite PowerShell
 
-È inoltre possibile creare un blocco per controversia legale eseguendo il comando seguente in [PowerShell di Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell):
+È inoltre possibile creare un blocco per controversia legale eseguendo il comando seguente in [PowerShell di Exchange Online](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell):
 
 ```powershell
 Set-Mailbox <username> -LitigationHoldEnabled $true

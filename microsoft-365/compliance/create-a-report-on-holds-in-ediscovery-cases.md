@@ -20,12 +20,12 @@ ms.assetid: cca08d26-6fbf-4b2c-b102-b226e4cd7381
 ms.custom:
 - seo-marvel-apr2020
 description: Informazioni su come generare un report in cui siano contenute tutte le esenzioni associate ai casi di eDiscovery.
-ms.openlocfilehash: 4da2b93ad9055363a5f8a7d61eff04270dfd00dc
-ms.sourcegitcommit: 260bbb93bbda62db9e88c021ccccfa75ac39a32e
+ms.openlocfilehash: 35e432104e7c1358887eb89ae96b9bb0d1d12a0f
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "46845868"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47546978"
 ---
 # <a name="create-a-report-on-holds-in-ediscovery-cases"></a>Creare un report sui casi di blocco in eDiscovery
 
@@ -43,7 +43,7 @@ Per una descrizione dettagliata delle informazioni incluse nel report, vedere la
 
 ## <a name="step-1-connect-to-the-security--compliance-center-powershell"></a>Passaggio 1: connettersi al centro sicurezza & Compliance PowerShell
 
-Il primo passaggio consiste nel connettersi a PowerShell per il Centro sicurezza & Compliance per l'organizzazione. Per ottenere istruzioni dettagliate, vedere [Connettersi a PowerShell in Centro sicurezza e conformità](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
+Il primo passaggio consiste nel connettersi a PowerShell per il Centro sicurezza & Compliance per l'organizzazione. Per ottenere istruzioni dettagliate, vedere [Connettersi a PowerShell in Centro sicurezza e conformità](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell).
 
 ## <a name="step-2-run-the-script-to-report-on-holds-associated-with-ediscovery-cases"></a>Passaggio 2: eseguire lo script per segnalare le esenzioni associate ai casi di eDiscovery
 
@@ -162,7 +162,7 @@ Dopo aver effettuato la connessione a PowerShell per il Centro sicurezza & confo
 
    ![L'output dopo l'esecuzione dello script CaseHoldsReport.ps1](../media/7d312ed5-505e-4ec5-8f06-3571e3524a1a.png)
 
-## <a name="more-information"></a>Ulteriori informazioni
+## <a name="more-information"></a>Altre informazioni
 
 Il caso contiene il rapporto creato quando si esegue lo script in questo articolo contiene le informazioni seguenti su ogni blocco. Come spiegato in precedenza, è necessario essere un amministratore di eDiscovery per restituire le informazioni relative a tutte le esenzioni nell'organizzazione. Per ulteriori informazioni sulle esenzioni dei casi, vedere [eDiscovery Cases](ediscovery-cases.md).
 

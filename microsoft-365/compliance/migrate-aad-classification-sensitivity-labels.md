@@ -7,15 +7,15 @@ manager: pamgreen
 audience: ITPro
 f1.keywords: NOCSH
 ms.topic: article
-ms.service: o365-seccomp
+ms.service: O365-seccomp
 localization_priority: Normal
 description: In questo articolo vengono illustrate le etichette classiche di classificazione e sensibilità di Azure Active Directory.
-ms.openlocfilehash: 38a3dbe727f3d0759d427944016ae98440f2686f
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: 2506e7f467a485878f1e26a23ee1071907b41614
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47308173"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47545660"
 ---
 # <a name="azure-active-directory-classification-and-sensitivity-labels-for-microsoft-365-groups"></a>Etichette di classificazione e sensitivity di Azure Active Directory per i gruppi di Microsoft 365
 
@@ -48,8 +48,10 @@ Tabella 1. Comportamento dei carichi di lavoro compatibili e non compatibili –
 
 > [!NOTE]
 > Nel caso di client desktop di Outlook (Win 32), dopo che l'amministratore ha abilitato le etichette di riservatezza sul tenant e il relativo utente si trova su una versione precedente del client desktop di Outlook (Win 32):
+>
 > - L'utente visualizza le etichette di riservatezza nella versione precedente del client desktop di Outlook.
 > - Tuttavia, quando l'utente modifica un gruppo e salva il gruppo con un'etichetta di riservatezza, l'impostazione di privacy selezionata viene ignorata dall'impostazione di privacy dell'etichetta di riservatezza applicata.
+>
 > È consigliabile che gli utenti in una versione precedente di Outlook client vengano aggiornate alla versione più recente.
 
 ## <a name="scenario-2-tenant-is-already-using-classic-aad-classifications"></a>Scenario 2: tenant utilizza già [classificazioni](https://docs.microsoft.com/microsoft-365/enterprise/manage-microsoft-365-groups-with-powershell) AAD classiche
@@ -76,8 +78,10 @@ Tabella 2. Comportamento dei carichi di lavoro compatibili e non compatibili �
 
 > [!NOTE]
 > Nel caso di client desktop di Outlook (Win 32), dopo che l'amministratore ha abilitato le etichette di riservatezza sul tenant e il relativo utente si trova su una versione precedente del client desktop di Outlook (Win 32):
+>
 > - L'utente visualizza le etichette di riservatezza nella versione precedente del client desktop di Outlook.
 > - Tuttavia, quando l'utente modifica un gruppo e salva il gruppo con un'etichetta di riservatezza, l'impostazione di privacy selezionata viene ignorata dall'impostazione di privacy dell'etichetta di riservatezza applicata.
+>
 > È consigliabile che gli utenti in una versione precedente di Outlook client vengano aggiornate alla versione più recente.
 
 ### <a name="case-b-tenant-used-sensitivity-labels-for-documents-and-emails"></a>Caso B: etichette di riservatezza utilizzate dal tenant per documenti e messaggi di posta elettronica
@@ -90,4 +94,3 @@ Tabella 2. Comportamento dei carichi di lavoro compatibili e non compatibili �
 ## <a name="sample-script"></a>Script di esempio
 
 Per uno script di esempio per eseguire la migrazione di gruppi con etichette AAD classiche a etichette di riservatezza, vedere [Classic Azure ad Group Classification](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites#classic-azure-ad-group-classification).
-

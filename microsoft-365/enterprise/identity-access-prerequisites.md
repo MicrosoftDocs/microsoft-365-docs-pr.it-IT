@@ -16,12 +16,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: 40910c00a91a1e98d01fe2e25a4f9aed828a024a
-ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
+ms.openlocfilehash: 2c654cb0ec2afd138c7c9fb4b339b53a8522e5e4
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47357975"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47547205"
 ---
 # <a name="prerequisite-work-for-implementing-identity-and-device-access-policies"></a>Lavoro prerequisito per l'implementazione dei criteri di identità e accesso ai dispositivi
 
@@ -40,7 +40,7 @@ Nella tabella seguente vengono illustrate le caratteristiche dei prerequisiti e 
 
 | Configurazione | Eccezioni |
 | :------------- | :-----------: |
-|  [Configurare la sincronizzazione hash delle password](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-password-hash-synchronization).  Questo deve essere abilitato per rilevare le credenziali trapelate e per agire su di esse per l'accesso condizionale basato sui rischi. **Nota:** Ciò è necessario indipendentemente dal fatto che l'organizzazione utilizzi l'autenticazione federata ibrida. |  Solo cloud |
+|  [Configurare pH](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-password-hash-synchronization).  Questo deve essere abilitato per rilevare le credenziali trapelate e per agire su di esse per l'accesso condizionale basato sui rischi. **Nota:** Ciò è necessario indipendentemente dal fatto che l'organizzazione utilizzi l'autenticazione federata. |  Solo cloud |
 | [Abilitare l'accesso Single Sign-on senza](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-sso) problemi per la firma automatica degli utenti quando si trovano nei propri dispositivi di organizzazione connessi alla rete dell'organizzazione. | Solo cloud e federato  |
 | [Configurare le reti denominate](https://docs.microsoft.com/azure/active-directory/active-directory-known-networks-azure-portal). Azure AD Identity Protection raccoglie e analizza tutti i dati di sessione disponibili per generare un punteggio di rischio. Si consiglia di specificare gli intervalli di indirizzi IP pubblici dell'organizzazione per la rete nella configurazione di Azure AD denominata Networks. Il traffico proveniente da queste gamme ha un punteggio di rischio ridotto e il traffico proveniente dall'esterno dell'ambiente dell'organizzazione riceve un punteggio di rischio maggiore. | |
 |[Registrare tutti gli utenti per la reimpostazione della password self-service (SSPR) e l'autenticazione a più fattori (AMF)](https://docs.microsoft.com/azure/active-directory/authentication/concept-registration-mfa-sspr-converged). È consigliabile registrare gli utenti per l'autenticazione a più fattori di Azure prima del tempo. Azure AD Identity Protection utilizza l'autenticazione a più fattori di Azure per eseguire una verifica di sicurezza aggiuntiva. Inoltre, per la migliore esperienza di accesso, è consigliabile installare l' [app Microsoft Authenticator](https://docs.microsoft.com/azure/active-directory/user-help/microsoft-authenticator-app-how-to) e l'app portale Microsoft Company sui propri dispositivi. Questi possono essere installati dall'App Store per ogni piattaforma. | |
@@ -49,7 +49,7 @@ Nella tabella seguente vengono illustrate le caratteristiche dei prerequisiti e 
 | [Configurare il writeback delle password nell'AD locale](https://docs.microsoft.com/azure/active-directory/active-directory-passwords-getting-started). Il writeback delle password consente a Azure AD di richiedere che gli utenti modifichino le password locali quando viene rilevato un compromesso per gli account ad alto rischio. È possibile abilitare questa funzionalità tramite Azure AD Connect in uno dei due modi seguenti: abilitare il **writeback della password** nella schermata funzionalità facoltative dell'installazione guidata di Azure ad Connect oppure abilitarla tramite Windows PowerShell. | Solo cloud |
 | [Configurare la protezione delle password di Azure ad](https://docs.microsoft.com/azure/active-directory/authentication/concept-password-ban-bad). La protezione tramite password di Azure AD rileva e blocca le password deboli note e le loro varianti e può anche bloccare ulteriori termini deboli specifici per l'organizzazione. Gli elenchi di password globali bannati predefiniti vengono applicati automaticamente a tutti gli utenti in un tenant di Azure AD. È possibile definire voci aggiuntive in un elenco di password bannato personalizzato. Quando gli utenti modificano o reimpostano le password, gli elenchi di password bannati vengono controllati per applicare l'utilizzo di password complesse. | |
 | [Abilitare Azure Active Directory Identity Protection](https://docs.microsoft.com/azure/active-directory/identity-protection/overview-identity-protection). Azure AD Identity Protection consente di rilevare potenziali vulnerabilità che interessano le identità dell'organizzazione e configurare un criterio di correzione automatizzato per il rischio di accesso basso, medio e alto e rischi per gli utenti.  | |
-| **Abilitare l'autenticazione moderna** per [Exchange Online](https://docs.microsoft.com/Exchange/clients-and-mobile-in-exchange-online/enable-or-disable-modern-authentication-in-exchange-online) e per [Skype for business online](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx). L'autenticazione moderna è un prerequisito per l'utilizzo dell'autenticazione a più fattori (AMF). L'autenticazione moderna è abilitata per impostazione predefinita per i client di Office 2016, SharePoint Online e OneDrive for business. |  |
+| **Abilitare l'autenticazione moderna** per [Exchange Online](https://docs.microsoft.com/Exchange/clients-and-mobile-in-exchange-online/enable-or-disable-modern-authentication-in-exchange-online) e per [Skype for business online](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx). L'autenticazione moderna è un prerequisito per l'utilizzo dell'AMF. L'autenticazione moderna è abilitata per impostazione predefinita per i client di Office 2016, SharePoint e OneDrive for business. |  |
 |||
 
 ## <a name="recommended-client-configurations"></a>Configurazioni client consigliate

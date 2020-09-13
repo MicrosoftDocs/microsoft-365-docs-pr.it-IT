@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 titleSuffix: Office 365 Compliance
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 54ff4012767b156bc72289473e289fa4d93d1a2c
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: 74244b5288043a1d1bc62e0ae09ee8c25ff7d4e1
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44352159"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47546778"
 ---
 # <a name="configure-supervision-policies-in-office-365"></a>Configurare i criteri di supervisione in Office 365
 
@@ -54,7 +54,7 @@ Attenersi alla procedura seguente per configurare e usare la supervisione nell'o
 
 - **Passaggio 2 (obbligatorio)**: [rendere disponibile la supervisione nell'organizzazione](#step-2-make-supervision-available-in-your-organization-required)
 
-    Aggiungersi al gruppo di ruolo revisione di supervisione per impostare i criteri. Tutti gli utenti a cui è assegnato questo ruolo possono accedere alla pagina di **supervisione** nel centro sicurezza & Compliance. Se il messaggio di posta elettronica rivisualizzabile è ospitato in Exchange Online, ogni revisore deve disporre dell' [accesso remoto a PowerShell a Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/disable-access-to-exchange-online-powershell).
+    Aggiungersi al gruppo di ruolo revisione di supervisione per impostare i criteri. Tutti gli utenti a cui è assegnato questo ruolo possono accedere alla pagina di **supervisione** nel centro sicurezza & Compliance. Se il messaggio di posta elettronica rivisualizzabile è ospitato in Exchange Online, ogni revisore deve disporre dell' [accesso remoto a PowerShell a Exchange Online](https://docs.microsoft.com/powershell/exchange/disable-access-to-exchange-online-powershell).
 
 - **Passaggio 3 (facoltativo)**: [creare tipi di informazioni riservate personalizzate e dizionari per parole chiave personalizzate](#step-3-create-custom-sensitive-information-types-and-custom-keyword-dictionaries-optional)
 
@@ -83,7 +83,7 @@ Quando si seleziona un gruppo di Microsoft 365 per gli utenti controllati, il cr
 
 Per gestire gli utenti controllati nelle organizzazioni aziendali di grandi dimensioni, potrebbe essere necessario monitorare tutti gli utenti in gruppi di grandi dimensioni. È possibile utilizzare PowerShell per configurare un gruppo di distribuzione per un criterio di supervisione globale per il gruppo assegnato. In questo modo è possibile monitorare migliaia di utenti con un singolo criterio e mantenere il criterio di supervisione aggiornato man mano che i nuovi dipendenti fanno parte dell'organizzazione.
 
-1. Creare un [gruppo di distribuzione](https://docs.microsoft.com/powershell/module/exchange/new-distributiongroup?view=exchange-ps) dedicato per il criterio di supervisione globale con le proprietà seguenti: assicurarsi che questo gruppo di distribuzione non venga utilizzato per altri scopi o per altri servizi di Office 365.
+1. Creare un [gruppo di distribuzione](https://docs.microsoft.com/powershell/module/exchange/new-distributiongroup) dedicato per il criterio di supervisione globale con le proprietà seguenti: assicurarsi che questo gruppo di distribuzione non venga utilizzato per altri scopi o per altri servizi di Office 365.
 
     - **MemberDepartRestriction = chiuso**. Assicura che gli utenti non possano rimuoversi dal gruppo di distribuzione.
     - **MemberJoinRestriction = chiuso**. Assicura che gli utenti non possano aggiungersi al gruppo di distribuzione.
@@ -146,7 +146,7 @@ Per ulteriori informazioni sui gruppi di ruoli e sulle autorizzazioni, vedere [P
 
 ### <a name="enable-remote-powershell-access-for-reviewers-if-email-is-hosted-on-exchange-online"></a>Abilitare l'accesso remoto a PowerShell per i revisori (se la posta elettronica è ospitata su Exchange Online)
 
-1. Seguire le istruzioni riportate in [abilitare o disabilitare l'accesso a PowerShell di Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/disable-access-to-exchange-online-powershell).
+1. Seguire le istruzioni riportate in [abilitare o disabilitare l'accesso a PowerShell di Exchange Online](https://docs.microsoft.com/powershell/exchange/disable-access-to-exchange-online-powershell).
 
 ## <a name="step-3-create-custom-sensitive-information-types-and-custom-keyword-dictionaries-optional"></a>Passaggio 3: creare tipi di informazioni riservate personalizzate e dizionari di parole chiave personalizzati (facoltativo)
 

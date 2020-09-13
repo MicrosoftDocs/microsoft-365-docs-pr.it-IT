@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 description: Gli amministratori possono imparare a instradare la posta indesiderata alle cartelle posta indesiderata degli utenti in un ambiente ibrido di Exchange Online Protection.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 5d8ba6aae599ee4dd327bd1ec82b46e8f3ee3ca8
-ms.sourcegitcommit: 584e2e9db8c541fe32624acdca5e12ee327fdb63
+ms.openlocfilehash: 15acc9ad87fa0c785998895d026dae036d9ddd7b
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44679121"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47547665"
 ---
 # <a name="configure-standalone-eop-to-deliver-spam-to-the-junk-email-folder-in-hybrid-environments"></a>Configurare EOP autonomo per recapitare la posta indesiderata nella cartella posta indesiderata in ambienti ibridi
 
@@ -33,11 +33,11 @@ Se si è un cliente autonomo di Exchange Online Protection (EOP) in un ambiente 
 
 In particolare, è necessario creare regole del flusso di posta (note anche come regole di trasporto) nell'organizzazione di Exchange locale con condizioni che consentono di trovare messaggi con uno dei seguenti valori e intestazioni di protezione da posta indesiderata di EOP e le azioni che configurano il livello di probabilità di posta indesiderata (SCL) di tali messaggi su 6:
 
-- `X-Forefront-Antispam-Report: SFV:SPM`(messaggio contrassegnato come posta indesiderata dal filtro posta indesiderata)
+- `X-Forefront-Antispam-Report: SFV:SPM` (messaggio contrassegnato come posta indesiderata dal filtro posta indesiderata)
 
-- `X-Forefront-Antispam-Report: SFV:SKS`messaggio contrassegnato come posta indesiderata dalle regole del flusso di posta in EOP prima del filtro posta indesiderata
+- `X-Forefront-Antispam-Report: SFV:SKS` messaggio contrassegnato come posta indesiderata dalle regole del flusso di posta in EOP prima del filtro posta indesiderata
 
-- `X-Forefront-Antispam-Report: SFV:SKB`(messaggio contrassegnato come posta indesiderata dal filtro posta indesiderata a causa dell'indirizzo di posta elettronica o del dominio di posta elettronica del mittente nell'elenco dei mittenti bloccati o nell'elenco dei domini bloccati in EOP)
+- `X-Forefront-Antispam-Report: SFV:SKB` (messaggio contrassegnato come posta indesiderata dal filtro posta indesiderata a causa dell'indirizzo di posta elettronica o del dominio di posta elettronica del mittente nell'elenco dei mittenti bloccati o nell'elenco dei domini bloccati in EOP)
 
 Per ulteriori informazioni su questi valori di intestazione, vedere intestazioni dei messaggi di protezione da [posta indesiderata](anti-spam-message-headers.md).
 
@@ -46,7 +46,7 @@ In questo argomento viene descritto come creare queste regole del flusso di post
 > [!TIP]
 > Invece di inviare i messaggi alla cartella posta indesiderata dell'utente locale, è possibile configurare i criteri di protezione dalla posta indesiderata in EOP per la quarantena dei messaggi di posta indesiderata in EOP. Per altre informazioni, vedere [Configurare i criteri di protezione dalla posta indesiderata in EOP](configure-your-spam-filter-policies.md).
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare
+## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare?
 
 - Prima di poter eseguire queste procedure, è necessario disporre delle autorizzazioni nell'ambiente di Exchange locale. In particolare, è necessario che venga assegnato il ruolo **regole di trasporto** , assegnato ai ruoli Gestione **organizzazione**, **Gestione conformità**e **record** per impostazione predefinita. Per ulteriori informazioni, vedere [Add members to a role group](https://docs.microsoft.com/Exchange/permissions/role-group-members?view=exchserver-2019#add-members-to-a-role-group).
 
@@ -59,7 +59,7 @@ In questo argomento viene descritto come creare queste regole del flusso di post
   Per ulteriori informazioni, vedere [soglie del livello di probabilità di posta indesiderata (SCL) di Exchange](https://docs.microsoft.com/Exchange/antispam-and-antimalware/antispam-protection/scl).
 
   - Se la regola di posta indesiderata è abilitata per la cassetta postale (il valore del parametro _Enabled_ è $true sul cmdlet [Set-MailboxJunkEmailConfiguration](https://docs.microsoft.com/powershell/module/exchange/set-mailboxjunkemailconfiguration) in Exchange Management Shell). È la regola di posta indesiderata che in realtà sposta il messaggio nella cartella posta indesiderata dopo il recapito. Per impostazione predefinita, la regola di posta indesiderata è abilitata sulle cassette postali. Per ulteriori informazioni, vedere [Configure Exchange antispam settings on mailboxes](https://docs.microsoft.com/Exchange/antispam-and-antimalware/antispam-protection/configure-antispam-settings).
-  
+
 - Per aprire EAC su un server Exchange, vedere interfaccia [di amministrazione di Exchange in Exchange Server](https://docs.microsoft.com/Exchange/architecture/client-access/exchange-admin-center). Per aprire Exchange Management Shell, vedere [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/open-the-exchange-management-shell).
 
 - Per ulteriori informazioni sulle regole del flusso di posta in Exchange locale, vedere i seguenti argomenti:
@@ -94,7 +94,7 @@ In questo argomento viene descritto come creare queste regole del flusso di post
 
      - Fare clic su **Immetti testo**. Nella finestra di dialogo **Specifica nome intestazione** che viene visualizzata, immettere **X-Forefront-antispam-report** e quindi fare clic su **OK**.
 
-     - Fare clic su **Immetti parole**. Nella finestra di dialogo **specifica parole o frasi** visualizzata, immettere uno dei valori delle intestazioni di posta indesiderata di EOP (**SFV: SPM**, **SFV: SKS**o **SFV: SKB**), fare clic su **Aggiungi** ![ icona ](../../media/ITPro-EAC-AddIcon.png) e quindi fare clic su **OK**.
+     - Fare clic su  **Immetti parole**. Nella finestra di dialogo **specifica parole o frasi** visualizzata, immettere uno dei valori delle intestazioni di posta indesiderata di EOP (**SFV: SPM**, **SFV: SKS**o **SFV: SKB**), fare clic su **Aggiungi** ![ icona ](../../media/ITPro-EAC-AddIcon.png) e quindi fare clic su **OK**.
 
    - **Eseguire le operazioni seguenti**: selezionare **modifica le proprietà del messaggio** \> **impostare il livello di probabilità di posta indesiderata (SCL)**.
 

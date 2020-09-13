@@ -19,12 +19,12 @@ ms.assetid: ''
 description: Informazioni sui passaggi di base per la risoluzione dei problemi che è possibile eseguire per risolvere i problemi comuni in Office 365 eDiscovery.
 siblings_only: true
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 2b96ed80ba9f347616fd364b3b97ac960cdaeb8e
-ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
+ms.openlocfilehash: 5c9d917306c1a4ffd0dd1e11e1dd87c135e94f05
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47357996"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47545954"
 ---
 # <a name="investigate-troubleshoot-and-resolve-common-ediscovery-issues"></a>Esaminare, risolvere i problemi e risolvere i problemi comuni relativi a eDiscovery
 
@@ -38,7 +38,7 @@ Se si tenta di aggiungere la posizione della cassetta postale dell'utente alla r
 
 Controllare gli utenti duplicati o la lista di distribuzione con lo stesso ID utente.
 
-1. Connettersi a [PowerShell per Centro sicurezza & Compliance](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
+1. Connettersi a [PowerShell per Centro sicurezza & Compliance](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell).
 
 2. Eseguire il seguente comando per recuperare tutte le istanze del nome utente:
 
@@ -67,7 +67,7 @@ Un eDiscovery o una ricerca di contenuto può generare l'errore seguente:
 
 Se viene visualizzato questo errore, è consigliabile verificare che le posizioni non riuscite nella ricerca rieseguano la ricerca solo nelle posizioni non riuscite.
 
-1. Connettersi a [PowerShell per Centro sicurezza & Compliance](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell) e quindi eseguire il comando riportato di seguito:
+1. Connettersi a [PowerShell per Centro sicurezza & Compliance](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell) e quindi eseguire il comando riportato di seguito:
 
    ```powershell
    Get-ComplianceSearch <searchname> | FL
@@ -97,7 +97,7 @@ Una ricerca di eDiscovery ha esito negativo con errore `recipient not found` . Q
 
 ### <a name="resolution"></a>Risoluzione
 
-1. Connettersi a [PowerShell di Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).
+1. Connettersi a [PowerShell di Exchange Online](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
 
 2. Eseguire il seguente comando per verificare se l'utente è sincronizzato con Exchange Online Protection:
 
@@ -115,7 +115,7 @@ Quando si esportano i risultati della ricerca da eDiscovery o ricerca contenuto 
 
 1. Provare a utilizzare i passaggi identificati nell'articolo [aumentare la velocità di download](https://docs.microsoft.com/office365/securitycompliance/increase-download-speeds-when-exporting-ediscovery-results).
 
-2. In caso di problemi, connettersi al [centro di sicurezza & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell) e quindi eseguire il comando seguente:
+2. In caso di problemi, connettersi al [centro di sicurezza & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell) e quindi eseguire il comando seguente:
 
    ```powershell
    Get-ComplianceSearch <searchname> | FL
@@ -143,7 +143,7 @@ Quando si esegue una ricerca eDiscovery, se la ricerca ha esito negativo con un 
 
 1. Suddividere la ricerca in ricerche più piccole ed eseguire di nuovo la ricerca.  Provare a utilizzare un intervallo di date più piccolo o limitare il numero di posizioni in cui è stata eseguita la ricerca.
 
-2. Connettersi a [PowerShell per Centro sicurezza & Compliance](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell) e quindi eseguire il comando riportato di seguito:
+2. Connettersi a [PowerShell per Centro sicurezza & Compliance](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell) e quindi eseguire il comando riportato di seguito:
 
    ```powershell Set-CaseHoldPolicy <policyname> -RetryDistribution
    Get-ComplianceSearch <searchname> | FL
@@ -163,7 +163,7 @@ errore di distribuzione della sincronizzazione del criterio di eDiscovery in cas
 
 ### <a name="resolution"></a>Risoluzione
 
-1. Connettersi a [PowerShell per il Centro sicurezza & Compliance](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell) e quindi eseguire il comando seguente per un blocco di caso di eDiscovery:
+1. Connettersi a [PowerShell per il Centro sicurezza & Compliance](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell) e quindi eseguire il comando seguente per un blocco di caso di eDiscovery:
 
    ```powershell
    Get-CaseHoldPolicy <policyname> - DistributionDetail | FL

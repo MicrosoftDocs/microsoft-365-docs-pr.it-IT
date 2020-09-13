@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Informazioni sulle richieste dell'archivio protetto dei clienti che consentono di controllare il modo in cui un tecnico del supporto Microsoft può accedere ai dati durante l'esecuzione di un problema.
-ms.openlocfilehash: 67662c34ed3aedb22c3462a2ba8aff9e338e07c6
-ms.sourcegitcommit: 234726a1795d984c4659da68f852d30a4dda5711
+ms.openlocfilehash: d71fbaa42fba49bd0f06b26d34d2257f8a4a60ba
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46794255"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47546502"
 ---
 # <a name="customer-lockbox-in-office-365"></a>Archivio protetto dei clienti in Office 365
 
@@ -101,7 +101,7 @@ I passaggi seguenti delineano il flusso di lavoro tipico quando un tecnico Micro
     ![Approvare o negare le richieste dell'archivio clienti](../media/CustomerLockbox8.png)
 
 > [!NOTE]
-> Utilizzare il cmdlet Set-AccessToCustomerDataRequest per approvare, negare o annullare le richieste dell'archivio clienti di Microsoft 365 che controllano l'accesso ai dati da parte dei tecnici del supporto tecnico Microsoft. Per ulteriori informazioni, vedere [set-AccessToCustomerDataRequest](https://docs.microsoft.com/powershell/module/exchange/set-accesstocustomerdatarequest?view=exchange-ps).
+> Utilizzare il cmdlet Set-AccessToCustomerDataRequest per approvare, negare o annullare le richieste dell'archivio clienti di Microsoft 365 che controllano l'accesso ai dati da parte dei tecnici del supporto tecnico Microsoft. Per ulteriori informazioni, vedere [set-AccessToCustomerDataRequest](https://docs.microsoft.com/powershell/module/exchange/set-accesstocustomerdatarequest).
 
 
 ## <a name="auditing-customer-lockbox-requests"></a>Richieste di controllo dell'archivio protetto dei clienti

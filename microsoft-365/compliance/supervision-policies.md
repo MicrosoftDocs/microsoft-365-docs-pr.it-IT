@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.custom: seo-marvel-apr2020
 titleSuffix: Microsoft 365 Compliance
-ms.openlocfilehash: 7ebb2673d1d275075cf32cd18996837ec4024622
-ms.sourcegitcommit: b144e8ba1ab0c40fa7e0e8e893b5cb44aa2d8243
+ms.openlocfilehash: 27c4d4603396089cb58cfed192f09d0db70cac5a
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "47282604"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47547586"
 ---
 # <a name="supervision-policies"></a>Criteri di supervisione
 
@@ -143,7 +143,7 @@ Per ulteriori informazioni sui dettagli riservati e sui modelli inclusi nei tipi
 
 #### <a name="custom-keyword-dictionaries"></a>Dizionari per parole chiave personalizzate
 
-Configure custom keyword Dictionary (o lessici) per fornire una gestione semplice delle parole chiave specifiche per l'organizzazione o l'industria. I dizionari per parole chiave supportano fino a 100KB di termini (post Compression) nel dizionario e supportano qualsiasi lingua. Il limite del tenant è inoltre 100KB dopo la compressione. Se necessario, è possibile applicare più dizionari di parole chiave personalizzati a un singolo criterio oppure disporre di un solo dizionario di parole chiave per ogni criterio. Questi dizionari sono assegnati a un criterio di supervisione e possono essere provenienti da un file, ad esempio un elenco con estensione CSV o txt, oppure da un elenco che può essere [importato nel centro conformità](create-a-keyword-dictionary.md).
+Configure custom keyword Dictionary (o lessici) per fornire una gestione semplice delle parole chiave specifiche per l'organizzazione o l'industria. I dizionari per parole chiave supportano fino a 100KB di termini (post Compression) nel dizionario e supportano qualsiasi lingua. Anche il limite del tenant è di 100 KB dopo la compressione. Se necessario, è possibile applicare più dizionari di parole chiave personalizzati a un singolo criterio oppure disporre di un solo dizionario di parole chiave per ogni criterio. Questi dizionari sono assegnati a un criterio di supervisione e possono essere provenienti da un file, ad esempio un elenco con estensione CSV o txt, oppure da un elenco che può essere [importato nel centro conformità](create-a-keyword-dictionary.md).
 
 #### <a name="offensive-language"></a>Lingua offensiva
 
@@ -301,7 +301,7 @@ In questo esempio vengono restituite le attività di aggiornamento per i criteri
 Search-UnifiedAuditLog -StartDate $startDate -EndDate $endDate -Operations SupervisionPolicyCreated,SupervisionPolicyUpdated,SupervisionPolicyDeletedAuditData
 ```
 
-Oltre alle informazioni fornite nei report e nei registri di supervisione, è anche possibile utilizzare il cmdlet [Get-SupervisoryReviewActivity](https://docs.microsoft.com/powershell/module/exchange/get-supervisoryreviewactivity?view=exchange-ps) di PowerShell per restituire un elenco dettagliato completo di tutte le attività dei criteri di supervisione.
+Oltre alle informazioni fornite nei report e nei registri di supervisione, è anche possibile utilizzare il cmdlet [Get-SupervisoryReviewActivity](https://docs.microsoft.com/powershell/module/exchange/get-supervisoryreviewactivity) di PowerShell per restituire un elenco dettagliato completo di tutte le attività dei criteri di supervisione.
 
 ## <a name="ready-to-get-started"></a>Pronti per iniziare?
 

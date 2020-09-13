@@ -13,12 +13,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Informazioni su come configurare la chiave del cliente per Microsoft 365 per Exchange Online, Skype for business, SharePoint Online, OneDrive for business e i file teams.
-ms.openlocfilehash: 94403e1d76fbc6fdf06d784fbb7bb9025dc06fc0
-ms.sourcegitcommit: 25afc0c34edc7f8a5eb389d8c701175256c58ec8
+ms.openlocfilehash: 8181ccfc988a10813f13e0b61d15f83eef57db76
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "47324212"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47546758"
 ---
 # <a name="set-up-customer-key"></a>Configurare la chiave del cliente
 
@@ -402,7 +402,7 @@ Ricordo! Quando si crea una funzionalità di protezione esecuzione programmi, si
   
 Per creare la funzionalità di protezione esecuzione programmi, eseguire la procedura seguente:
   
-1. Nel computer locale, utilizzando un account aziendale o dell'Istituto di istruzione con autorizzazioni di amministratore globale nell'organizzazione, [connettersi a PowerShell di Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell) in una finestra di Windows PowerShell.
+1. Nel computer locale, utilizzando un account aziendale o dell'Istituto di istruzione con autorizzazioni di amministratore globale nell'organizzazione, [connettersi a PowerShell di Exchange Online](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell) in una finestra di Windows PowerShell.
 
 2. Per creare una funzionalità di protezione esecuzione programmi, utilizzare il cmdlet New-DataEncryptionPolicy digitando il comando seguente.
 
@@ -486,7 +486,7 @@ Per creare una funzionalità di protezione esecuzione programmi, è necessario c
 
 ### <a name="validate-file-encryption"></a>Convalidare la crittografia dei file
 
- Per convalidare la crittografia dei file di SharePoint Online, OneDrive for business e teams, [connettersi a PowerShell di SharePoint Online](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps)e quindi utilizzare il cmdlet Get-SPODataEncryptionPolicy per controllare lo stato del tenant. La proprietà _state_ restituisce un valore **registrato** se la crittografia a chiave del cliente è abilitata e tutti i file in tutti i siti sono stati crittografati. Se la crittografia è ancora in corso, questo cmdlet fornisce informazioni su quale percentuale di siti è stata completata.
+ Per convalidare la crittografia dei file di SharePoint Online, OneDrive for business e teams, [connettersi a PowerShell di SharePoint Online](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)e quindi utilizzare il cmdlet Get-SPODataEncryptionPolicy per controllare lo stato del tenant. La proprietà _state_ restituisce un valore **registrato** se la crittografia a chiave del cliente è abilitata e tutti i file in tutti i siti sono stati crittografati. Se la crittografia è ancora in corso, questo cmdlet fornisce informazioni su quale percentuale di siti è stata completata.
 
 ## <a name="related-articles"></a>Articoli correlati
 

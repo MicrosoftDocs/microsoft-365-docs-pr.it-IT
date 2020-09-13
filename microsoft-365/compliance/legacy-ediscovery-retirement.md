@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: I eDiscovery sul posto e il blocco sul posto (e i cmdlet di PowerShell corrispondenti) in Exchange Online verranno ritirati nella prima metà del 2020. Il cmdlet Search-Mailbox e Advanced eDiscovery v 1.0 vengono anche ritirati nello stesso periodo di tempo.
-ms.openlocfilehash: 12de88fe3c9de7806b12bd610e0dbeeb404524ca
-ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
+ms.openlocfilehash: 98e04ada0afa03404ba36da2004a9352a01f598a
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45126943"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47546282"
 ---
 # <a name="retirement-of-legacy-ediscovery-tools"></a>Ritiro degli strumenti legacy di eDiscovery
 
@@ -44,7 +44,7 @@ Come risultato di questa nuova e migliorata funzionalità di eDiscovery nel cent
    > [!NOTE]
    > I cmdlet [Get-MailboxSearch](https://docs.microsoft.com/powershell/module/exchange/get-mailboxsearch) e [Remove-MailboxSearch](https://docs.microsoft.com/powershell/module/exchange/remove-mailboxsearch) saranno disponibili dopo che gli altri cmdlet * * * *-MailboxSearch * * * vengono ritirati in modo da poterli utilizzare per facilitare la transizione ad altri strumenti di eDiscovery e conservazione. Tuttavia, dopo una determinata data (citata in basso) il supporto tecnico Microsoft non supporterà più questi due cmdlet.
 
-- Il cmdlet [Search-Mailbox](https://docs.microsoft.com/powershell/module/exchange/search-mailbox?view=exchange-ps) in Exchange Online PowerShell.
+- Il cmdlet [Search-Mailbox](https://docs.microsoft.com/powershell/module/exchange/search-mailbox) in Exchange Online PowerShell.
 
 - Le operazioni seguenti nell'API dei servizi Web di Exchange:
 
@@ -111,7 +111,7 @@ Nella tabella seguente vengono descritti gli altri strumenti che è possibile ut
 </li>
 <li>
 <p>Ricerca di contenuto per Exchange Online, SharePoint Online, OneDrive for business, Skype for business, Microsoft teams, Yammer groups, Microsoft 365 Groups e altri contenuti archiviati nelle applicazioni di Office 365</p></li></ul>
-<p>Per ulteriori informazioni, vedere <a href="https://docs.microsoft.com/microsoft-365/compliance/manage-legal-investigations">Manage Legal Investigations in Office 365</a>.</td>
+<p>Per ulteriori informazioni, vedere <a href="https://docs.microsoft.com/microsoft-365/compliance/manage-legal-investigations"> Manage Legal Investigations in Office 365</a>.</td>
 </tr>
 <tr class="even">
 <td>Blocco per la conservazione</td>
@@ -124,7 +124,7 @@ Nella tabella seguente vengono descritti gli altri strumenti che è possibile ut
 <p>Applicazione dei criteri a posizioni di contenuto specifiche quali Exchange Online, SharePoint Online, OneDrive for business, Skype for business, Microsoft teams e Office 365 groups</p></li>
 <li>
 <p>Applicazione di criteri a utenti specifici</p></li></ul>
-<p>Per ulteriori informazioni, vedere informazioni <a href="https://docs.microsoft.com/microsoft-365/compliance/retention-policies">sui criteri di conservazione e sulle etichette di conservazione</a>.</td>
+<p>Per ulteriori informazioni, vedere informazioni <a href="https://docs.microsoft.com/microsoft-365/compliance/retention-policies"> sui criteri di conservazione e sulle etichette di conservazione</a>.</td>
 </tr>
 <tr class="odd">
 <td>Copiare i risultati della ricerca tramite posta elettronica in una cassetta postale di individuazione per la revisione</td><td>Esaminare i set in Advanced eDiscovery v 2.0</td>
@@ -282,8 +282,8 @@ Nella tabella seguente vengono descritti gli altri strumenti che è possibile ut
 <tbody>
 <tr class="odd">
 <td>Ricerca di una cassetta postale</td>
-<td><p><a href="https://docs.microsoft.com/powershell/module/exchange/get-compliancesearch?view=exchange-ps"><span class="underline">*-ComplianceSearch</span></a></p>
-<p><a href="https://docs.microsoft.com/powershell/module/exchange/get-compliancesearchaction?view=exchange-ps"><span class="underline">*-ComplianceSearchAction</span></a></p>
+<td><p><a href="https://docs.microsoft.com/powershell/module/exchange/get-compliancesearch"><span class="underline">*-ComplianceSearch</span></a></p>
+<p><a href="https://docs.microsoft.com/powershell/module/exchange/get-compliancesearchaction"><span class="underline">*-ComplianceSearchAction</span></a></p>
 <p></a></p></td>
 <td><p>I cmdlet ComplianceSearch e ComplianceSearchAction interagiscono per facilitare la ricerca e l'esportazione di contenuto. È possibile creare una nuova ricerca e visualizzare la stima della ricerca utilizzando i cmdlet <strong>New-</strong>, <strong>Get-</strong>e <strong>Start-ComplianceSearch</strong> . Successivamente, è possibile utilizzare il comando <strong>New-ComplianceSearchAction-Export</strong> per esportare i risultati della ricerca. È comunque necessario utilizzare lo strumento eDiscovery di base nel centro conformità di Microsoft 365 per scaricare i risultati della ricerca nel computer locale.</p></p>
 </td>
@@ -307,8 +307,8 @@ Nella tabella seguente vengono descritti gli altri strumenti che è possibile ut
 </tr>
 <tr class=even>
   <td>Eliminare i messaggi da una cassetta postale</td>
-<td><p><a href="https://docs.microsoft.com/powershell/module/exchange/get-compliancesearch?view=exchange-ps"><span class="underline">*-ComplianceSearch</span></a></p>
-<p><a href="https://docs.microsoft.com/powershell/module/exchange/get-compliancesearchaction?view=exchange-ps"><span class="underline">*-ComplianceSearchAction</span></a></p>
+<td><p><a href="https://docs.microsoft.com/powershell/module/exchange/get-compliancesearch"><span class="underline">*-ComplianceSearch</span></a></p>
+<p><a href="https://docs.microsoft.com/powershell/module/exchange/get-compliancesearchaction"><span class="underline">*-ComplianceSearchAction</span></a></p>
 <p></p></td>
 <td><p>I cmdlet ComplianceSearch e ComplianceSearchAction interagiscono per facilitare la ricerca e l'eliminazione del contenuto. È possibile creare ed eseguire una ricerca con cmdlet <strong>New-ComplianceSearch</strong> e <strong>New-ComplianceSearch</strong> , quindi è possibile eliminare il contenuto utilizzando il comando <strong>New-ComplianceSearchAction-Purge-PurgeType</strong> . Per ulteriori informazioni, vedere <a href="https://docs.microsoft.com/microsoft-365/compliance/search-for-and-delete-messages-in-your-organization"><span class="underline">cercare ed eliminare i messaggi</span></a>.</p>
 </td>

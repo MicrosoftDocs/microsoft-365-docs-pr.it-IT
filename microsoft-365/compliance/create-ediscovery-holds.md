@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: È possibile creare un'esenzione associata a un caso di eDiscovery di base per conservare il contenuto che potrebbe essere pertinente per un'indagine.
-ms.openlocfilehash: d68ca8a15713e20184e39af447cb03ccb5c9e7d7
-ms.sourcegitcommit: 445b249a6f0420b32e49742fd7744006c7090b2b
+ms.openlocfilehash: bf04fd0f0637247e4637b5d3fce82f911ca51f0e
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46798062"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47546882"
 ---
 # <a name="create-an-ediscovery-hold"></a>Creare un blocco di eDiscovery
 
@@ -151,7 +151,7 @@ Tenere presente quanto segue quando si inseriscono i gruppi di team e di Office 
 
 - Come spiegato in precedenza, per inserire il contenuto in teams e i gruppi di Office 365 in attesa, è necessario specificare la cassetta postale e il sito di SharePoint associato a un gruppo o a un team.
 
-- Eseguire il cmdlet **Get-UnifiedGroup** in [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell) per visualizzare le proprietà di teams e gruppi di Office 365. Si tratta di un modo efficace per ottenere l'URL del sito associato a un gruppo di team o di Office 365. Ad esempio, il comando seguente consente di visualizzare le proprietà selezionate per un gruppo di Office 365 denominato Senior Leadership Team:
+- Eseguire il cmdlet **Get-UnifiedGroup** in [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell) per visualizzare le proprietà di teams e gruppi di Office 365. Si tratta di un modo efficace per ottenere l'URL del sito associato a un gruppo di team o di Office 365. Ad esempio, il comando seguente consente di visualizzare le proprietà selezionate per un gruppo di Office 365 denominato Senior Leadership Team:
 
     ```text
     Get-UnifiedGroup "Senior Leadership Team" | FL DisplayName,Alias,PrimarySmtpAddress,SharePointSiteUrl
@@ -211,9 +211,9 @@ Nella tabella seguente sono elencati i limiti per i casi di eDiscovery e le esen
   |:-----|:-----|
   |Numero massimo di casi per un'organizzazione  <br/> |Nessun limite  <br/> |
   |Numero massimo di eDiscovery per un'organizzazione  <br/> |10.000  <br/> |
-  |Numero massimo di cassette postali in un singolo blocco di eDiscovery  <br/> |1.000  <br/> |
+  |Numero massimo di cassette postali in un singolo blocco di eDiscovery  <br/> |1,000  <br/> |
   |Numero massimo di siti di SharePoint e OneDrive for business in un unico blocco di eDiscovery  <br/> |100  <br/> |
-  |Numero massimo di casi visualizzati nella Home page di eDiscovery e il numero massimo di elementi visualizzati nelle schede esenzioni, ricerche ed esportazione all'interno di un caso. <sup>1</sup> |1.000|
+  |Numero massimo di casi visualizzati nella Home page di eDiscovery e il numero massimo di elementi visualizzati nelle schede esenzioni, ricerche ed esportazione all'interno di un caso. <sup>1</sup> |1,000|
   |||
 
    > [!NOTE]

@@ -7,16 +7,16 @@ author: robmazz
 manager: laurawi
 audience: ITPro
 ms.topic: article
-ms.service: o365-seccomp
+ms.service: O365-seccomp
 localization_priority: Normal
 description: Informazioni sul catalogo delle soluzioni Microsoft 365, incluse le informazioni in esso contenute, su come ottenerlo e sui passaggi successivi.
 ms.collection: M365-security-compliance
-ms.openlocfilehash: c2fad2726b7e923f871c0307f17f28ea3f99b1bd
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: f396801d4241b06c5523e4f3312c9ce597ac015e
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637948"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47547564"
 ---
 # <a name="microsoft-365-solution-catalog"></a>Catalogo delle soluzioni Microsoft 365
 
@@ -77,19 +77,19 @@ Di seguito vengono visualizzate le schede per le soluzioni seguenti:
 
 ## <a name="how-do-i-get-this"></a>Come si ottiene questo?
 
-Per visitare il catalogo della soluzione Microsoft 365, accedere [https://compliance.microsoft.com](https://compliance.microsoft.com) a e accedere come amministratore globale, amministratore conformità o amministratore dei dati di conformità. Selezionare **Catalogo** nel riquadro di spostamento a sinistra dello schermo per aprire la Home page del catalogo.
+Per visitare il catalogo della soluzione Microsoft 365, accedere a [https://compliance.microsoft.com](https://compliance.microsoft.com) e accedere come amministratore globale, amministratore conformità o amministratore dei dati di conformità. Selezionare **Catalogo** nel riquadro di spostamento a sinistra dello schermo per aprire la Home page del catalogo.
 
 ## <a name="frequently-asked-questions"></a>Domande frequenti
 
 **Perché non viene visualizzato il catalogo della soluzione Microsoft 365?**
 
-Prima di tutto, assicurarsi di avere le licenze e le autorizzazioni appropriate. Successivamente, accedere [https://compliance.microsoft.com](https://compliance.microsoft.com) come amministratore globale, amministratore conformità o amministratore dei dati di conformità.
+Prima di tutto, assicurarsi di avere le licenze e le autorizzazioni appropriate. Successivamente, accedere come amministratore [https://compliance.microsoft.com](https://compliance.microsoft.com) globale, amministratore conformità o amministratore dei dati di conformità.
 
 **Alcune delle funzionalità di conformità elencate nella pagina del catalogo della soluzione non sono disponibili nel centro conformità di Microsoft 365. Cosa devo fare?**
 
 È sempre necessario aggiungere nuove funzionalità al centro conformità di Microsoft 365 e al catalogo della soluzione. Se non si riesce a trovare una soluzione specifica nell'area di spostamento, sarà possibile accedervi quando la soluzione è disponibile nell'abbonamento.
 
-Se si sta cercando una soluzione di conformità esistente e non è ancora disponibile nel centro conformità di Microsoft 365, è sempre possibile accedere alle soluzioni nel centro di conformità &amp; di sicurezza esistente accedendo [https://protection.office.com](https://protection.office.com)a. In alternativa, è possibile fare clic sulla scheda **altre risorse** nel riquadro di spostamento a sinistra del centro conformità di Microsoft 365 e selezionare la scheda Centro sicurezza e conformità di Office 365.  
+Se si sta cercando una soluzione di conformità esistente e non è ancora disponibile nel centro conformità di Microsoft 365, è sempre possibile accedere alle soluzioni nel &amp; centro di conformità di sicurezza esistente accedendo a [https://protection.office.com](https://protection.office.com) . In alternativa, è possibile fare clic sulla scheda **altre risorse** nel riquadro di spostamento a sinistra del centro conformità di Microsoft 365 e selezionare la scheda Centro sicurezza e conformità di Office 365.  
 
 ## <a name="next-steps"></a>Passaggi successivi
 
