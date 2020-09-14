@@ -13,12 +13,12 @@ localization_priority: Priority
 ms.custom:
 - seo-marvel-mar2020
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: 0391fccfd7316b5c3268dd479c16fc2acf37080d
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 84ea370f513ade134df75b2ee4e0912d6a623227
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44036271"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47547342"
 ---
 # <a name="gdpr-for-office-web-apps-server-and-office-online-server"></a>GDPR per Server Office Web Apps e Office Online Server
 
@@ -26,33 +26,35 @@ I dati di telemetria di Office Online Server e Server Office Web Apps sono archi
 
 Ogni riga di log contiene un CorrelationID. Righe di log correlate condividono lo stesso CorrelationID. Ogni CorrelationID è vincolato a un solo SessionID e un SessionID può riguardare più CorrelationID. Ogni SessionID può riguardare un solo UserID, anche se alcune sessioni possono essere anonime e pertanto possono non essere associate ad alcun UserID. Per determinare quali dati sono associati a un determinato utente, è quindi possibile eseguire il mapping da un unico UserID ai SessionID associati all'utente, da questi SessionID ai CorrelationID associati e dai CorrelationID a tutti i log in queste correlazioni. Vedere il seguente diagramma per la relazione tra i diversi ID.
 
-![](../media/gdpr-for-office-online-server-image1.jpg)
+![Diagramma di flusso che mostra la relazione tra SessionID e CorrelationIds](../media/gdpr-for-office-online-server-image1.jpg)
 
 ## <a name="gathering-logs"></a>Raccolta dei log
 
 Per raccogliere tutti i log associati a UserID 1, ad esempio, il primo passaggio consiste nel raccogliere tutte le sessioni associate a UserID 1 (ad esempio, SessionID 1 e SessionID2). Il passaggio successivo consiste nel raccogliere tutte le correlazioni associate a SessionID 1 (ad esempio, CorrelationIDs 1, 2 e 3) e a SessionID 2 (ad esempio, CorrelationID 4). Infine, raccogliere tutti i log associati a ognuna delle correlazioni dell'elenco.
 
-1.  Avvio di UlsViewer
+1. Avvio di UlsViewer
 
-2.  Aprire il log di Servizio di registrazione unificato corrispondente all'intervallo di tempo desiderato; i log di Servizio di registrazione unificato vengono archiviati in %PROGRAMDATA%\\Microsoft\\OfficeWebApps\\Data\\Logs\\ULS
+2. Aprire il log di Servizio di registrazione unificato corrispondente all'intervallo di tempo desiderato; i log di Servizio di registrazione unificato vengono archiviati in %PROGRAMDATA%\\Microsoft\\OfficeWebApps\\Data\\Logs\\ULS
 
-3.  Modifica | Modifica filtro
+3. Modifica | Modifica filtro
 
-4.  Applicare il filtro:
+4. Applicare il filtro:
 
-    -   EventID è uguale a apr3y o
+    - EventID è uguale a apr3y
 
-    -   EventID è uguale a bp2d6
+      Oppure
 
-5.  UserId con hash saranno presenti nel Messaggio di uno o due eventi
+    - EventID è uguale a bp2d6
 
-6.  Per apr3y, il Messaggio conterrà un valore UserID e un valore PUID
+5. UserId con hash saranno presenti nel Messaggio di uno o due eventi
 
-7.  Per bp2d6, il Messaggio conterrà gran parte delle informazioni. Il campo valore LoggableUserId è l'ID utente con hash.
+6. Per apr3y, il Messaggio conterrà un valore UserID e un valore PUID
 
-8.  Dopo aver ottenuto UserId con hash da uno di questi due tag, il valore WacSessionId della riga corrispondente in ULSViewer conterrà il valore WacSessionId associato a quell'utente
+7. Per bp2d6, il Messaggio conterrà gran parte delle informazioni. Il campo valore LoggableUserId è l'ID utente con hash.
 
-9.  Raccogliere tutti i valori WacSessionId associati all'utente in questione
+8. Dopo aver ottenuto UserId con hash da uno di questi due tag, il valore WacSessionId della riga corrispondente in ULSViewer conterrà il valore WacSessionId associato a quell'utente
+
+9. Raccogliere tutti i valori WacSessionId associati all'utente in questione
 
 10. Filtrare per tutti gli EventId uguali a "xmnv", messaggio uguale a "UserSessionId=\<WacSessionId\>" per il primo WacSessionId nell'elenco (sostituendo la parte \<WacSessionId\> del filtro con WacSessionId)
 
@@ -70,16 +72,16 @@ Per raccogliere tutti i log associati a UserID 1, ad esempio, il primo passaggio
 
 I log di Office contengono un'ampia varietà di tipi di dati. Di seguito sono riportati alcuni esempi di dati che potrebbero essere contenuti dai log di Servizio di registrazione unificato:
 
--   Codici di errore per problemi riscontrati durante l'utilizzano del prodotto
+- Codici di errore per problemi riscontrati durante l'utilizzano del prodotto
 
--   Pulsanti e altre parti dei dati sull'utilizzo delle app
+- Pulsanti e altre parti dei dati sull'utilizzo delle app
 
--   Dati sulle prestazioni dell'applicazione e/o funzionalità particolari all'interno dell'applicazione
+- Dati sulle prestazioni dell'applicazione e/o funzionalità particolari all'interno dell'applicazione
 
--   Informazioni generali sulla posizione del computer dell'utente (ad esempio paese/area geografica, provincia e città, derivate dall'indirizzo IP), ma non la precisa posizione geografica
+- Informazioni generali sulla posizione del computer dell'utente (ad esempio paese/area geografica, provincia e città, derivate dall'indirizzo IP), ma non la precisa posizione geografica.
 
--   I metadati di base sul browser, ad esempio la versione e il nome del browser e del computer, ad esempio il tipo di sistema operativo e la versione
+- I metadati di base sul browser, ad esempio la versione e il nome del browser e del computer, ad esempio il tipo di sistema operativo e la versione
 
--   Messaggi di errore dall'host del documento (ad esempio OneDrive, SharePoint, Exchange)
+- Messaggi di errore dall'host del documento (ad esempio OneDrive, SharePoint, Exchange)
 
--   Informazioni sui processi interni all'applicazione, non correlate a operazioni che effettuate dall'utente
+- Informazioni sui processi interni all'applicazione, non correlate a operazioni che effettuate dall'utente

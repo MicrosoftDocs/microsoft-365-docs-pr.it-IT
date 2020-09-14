@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Usare l'azione di controllo delle cassette postali MailItemsAccessed per eseguire indagini forensi sugli account utente compromessi.
-ms.openlocfilehash: cd76a49e1f7b6e52d2a21e74162781771a8552a1
-ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
+ms.openlocfilehash: 908c2a22b05d7daef8d55c7e0aac61f25489692a
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "44327650"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47546292"
 ---
 # <a name="use-advanced-audit-to-investigate-compromised-accounts"></a>Usare Audit avanzato per le indagini sugli account compromessi
 
@@ -67,7 +67,7 @@ Vedere il passaggio 1 nella sezione [Usare i record di controllo MailItemsAccess
 
 Il controllo delle cassette postali genera record di controllo per l'accesso ai messaggi di posta elettronica, per offrire la certezza che i messaggi di posta elettronica non siano stati compromessi. Per questo motivo, nei casi in cui non siamo certi che sia stato eseguito l'accesso a determinati dati, presupponiamo che sia avvenuto, registrando tutte le attività di accesso alla posta.
 
-In genere i record di controllo MailItemsAccessed vengono usati a scopi forensi dopo la risoluzione di una violazione dei dati e l'espulsione dell'autore dell'attacco. Per avviare l'indagine, è necessario identificare il set di cassette postali che sono state compromesse e determinare il periodo di tempo in cui l'utente malintenzionato ha avuto accesso alle cassette postali dell'organizzazione. Quindi, è possibile usare i cmdlet **UnifiedAuditLog** o **Search-MailboxAuditLog** in [PowerShell di Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell) per cercare i record di controllo che corrispondono alla violazione dei dati. 
+In genere i record di controllo MailItemsAccessed vengono usati a scopi forensi dopo la risoluzione di una violazione dei dati e l'espulsione dell'autore dell'attacco. Per avviare l'indagine, è necessario identificare il set di cassette postali che sono state compromesse e determinare il periodo di tempo in cui l'utente malintenzionato ha avuto accesso alle cassette postali dell'organizzazione. Quindi, è possibile usare i cmdlet **UnifiedAuditLog** o **Search-MailboxAuditLog** in [PowerShell di Exchange Online](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell) per cercare i record di controllo che corrispondono alla violazione dei dati. 
 
 È possibile eseguire uno dei comandi seguenti per cercare i record di controllo MailItemsAccessed:
 

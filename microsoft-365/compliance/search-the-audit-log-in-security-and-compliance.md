@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: "Usare il Centro sicurezza e conformità per eseguire una ricerca nel log di controllo unificato e visualizzare l'attività degli utenti e degli amministratori nell'organizzazione. "
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d65b64f80dc9d8c3c799e8044d6fc5d3dfec4321
-ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
+ms.openlocfilehash: 21a8ea6f930efcd106c541021c9b9bd47af43f23
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47357808"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47547252"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>Eseguire una ricerca nel log di controllo nel Centro sicurezza e conformità
 
@@ -829,14 +829,14 @@ La tabella seguente elenca gli eventi risultanti dalle attività di etichettatur
 
 |Nome descrittivo|Operazione|Descrizione|
 |:-----|:-----|:-----|
-| Impostazioni configurate per un criterio di conservazione |NewRetentionComplianceRule |L'amministratore ha configurato le impostazioni di conservazione per un nuovo criterio di conservazione. Le impostazioni di conservazione specificano per quanto tempo devono essere conservati gli elementi e cosa accade alla scadenza del periodo di conservazione, ad esempio eliminazione degli elementi, archiviazione oppure conservazione e poi eliminazione. Questa attività corrisponde anche all'esecuzione del cmdlet [New-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/new-retentioncompliancerule).|
+| Impostazioni configurate per un criterio di conservazione |NewRetentionComplianceRule |L'amministratore ha configurato le impostazioni di conservazione per un nuovo criterio di conservazione. Le impostazioni di conservazione specificano per quanto tempo devono essere conservati gli elementi e cosa accade alla scadenza del periodo di conservazione, ad esempio eliminazione degli elementi, archiviazione oppure conservazione e poi eliminazione. Questa attività corrisponde anche all'esecuzione del cmdlet [New-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/new-retentioncompliancerule).|
 | Etichetta di conservazione creata |NewComplianceTag |L'amministratore ha creato una nuova etichetta di conservazione.|
 | Criterio di conservazione creato |NewRetentionCompliancePolicy|L'amministratore ha creato un nuovo criterio di conservazione.|
 | Impostazioni eliminate per un criterio di conservazione| RemoveRetentionComplianceRule<br/>| L'amministratore ha eliminato le impostazioni di configurazione di un criterio di conservazione. Molto probabilmente, questa attività viene registrata quando un amministratore elimina un criterio di conservazione o esegue il cmdlet [Remove-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/Remove-RetentionComplianceRule).|
 | Etichetta di conservazione eliminata |RemoveComplianceTag | L'amministratore ha eliminato un'etichetta di conservazione.|
 | Criterio di conservazione eliminato |RemoveRetentionCompliancePolicy<br/> |L'amministratore ha eliminato un criterio di conservazione. |
 | Opzione del record normativo abilitata per le etichette di conservazione<br/> |SetRestrictiveRetentionUI |L'amministratore ha eseguito il cmdlet [set-RegulatoryComplianceUI](https://docs.microsoft.com/powershell/module/exchange/set-regulatorycomplianceui) in modo che un amministratore possa selezionare l'opzione di configurazione dell'interfaccia utente per un'etichetta di conservazione che consente di contrassegnare il contenuto come record normativo.|
-| Impostazioni aggiornate per un criterio di conservazione | SetRetentionComplianceRule | L'amministratore ha modificato le impostazioni di conservazione per un criterio di conservazione esistente. Le impostazioni di conservazione specificano per quanto tempo devono essere conservati gli elementi e cosa accade alla scadenza del periodo di conservazione, ad esempio eliminazione degli elementi, archiviazione oppure conservazione e poi eliminazione. Questa attività corrisponde anche all'esecuzione del cmdlet [Set-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/set-retentioncompliancerule). |
+| Impostazioni aggiornate per un criterio di conservazione | SetRetentionComplianceRule | L'amministratore ha modificato le impostazioni di conservazione per un criterio di conservazione esistente. Le impostazioni di conservazione specificano per quanto tempo devono essere conservati gli elementi e cosa accade alla scadenza del periodo di conservazione, ad esempio eliminazione degli elementi, archiviazione oppure conservazione e poi eliminazione. Questa attività corrisponde anche all'esecuzione del cmdlet [Set-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/set-retentioncompliancerule). |
 | Etichetta di conservazione aggiornata |SetComplianceTag  | L'amministratore ha aggiornato un'etichetta di conservazione esistente.|
 | Criterio di conservazione aggiornato |SetRetentionCompliancePolicy |L'amministratore ha aggiornato un criterio di conservazione esistente. Gli aggiornamenti che attivano questo evento includono l'aggiunta o l'esclusione di percorsi di contenuto ai quali applicare il criterio di conservazione.|
 

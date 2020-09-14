@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Scopri di più sulle nuove funzionalità crittografiche di Office 365, che consentono di comunicare tramite posta elettronica in sicurezza con le persone all’interno e all’esterno dell’organizzazione.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6d6e37da7456cfbb0b7cbf8d986b54615aca60f0
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 4102611d3be43a5bedffc83fba5c83c0b648ca42
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44819186"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47547618"
 ---
 # <a name="set-up-new-message-encryption-capabilities"></a>Configurare le nuove funzionalità di Message Encryption
 
@@ -62,9 +62,9 @@ Ci sono diversi motivi, ad esempio i requisiti di conformità, che possono richi
 
 ## <a name="verify-new-ome-configuration-in-exchange-online-powershell"></a>Verificare la nuova configurazione di OME in PowerShell di Exchange Online
 
-È possibile verificare se il tenant di Microsoft 365 è configurato correttamente per l'uso delle nuove funzionalità di OME disponibili in [PowerShell di Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps).
+È possibile verificare se il tenant di Microsoft 365 è configurato correttamente per l'uso delle nuove funzionalità di OME disponibili in [PowerShell di Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell).
   
-1. [Connettersi a PowerShell di Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell) usando un account con autorizzazioni di amministratore globale nel tenant di Microsoft 365.
+1. [Connettersi a PowerShell di Exchange Online](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell) usando un account con autorizzazioni di amministratore globale nel tenant di Microsoft 365.
 
 2. Eseguire il cmdlet Get-IRMConfiguration.
 
