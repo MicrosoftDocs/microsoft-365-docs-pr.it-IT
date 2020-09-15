@@ -13,18 +13,18 @@ localization_priority: Normal
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: La Guida di orientamento per la configurazione dei servizi cloud per Microsoft 365.
-ms.openlocfilehash: 4e9630ad84b5e442f0c8fd6ab95ca9d0c48c780a
-ms.sourcegitcommit: 19515d787246d38c4e0da579a767ce67b9dbc2bc
+ms.openlocfilehash: 9d28b03f17aa0b9de955af824939d0db28faa057
+ms.sourcegitcommit: 13ae76220b4ad688438a5d1031a6e1b5300ffa23
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/31/2020
-ms.locfileid: "47315766"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "47775136"
 ---
 # <a name="cloud-services-roadmap-for-microsoft-365"></a>Roadmap dei servizi cloud per Microsoft 365
 
 Per ottenere i vantaggi della creatività, del lavoro di squadra e della produttività di Microsoft 365 per Enterprise, distribuire i servizi cloud che meglio si adattano alle esigenze dell'organizzazione.
 
-Se si dispone di distribuzioni basate su server esistenti per Exchange, SharePoint o Skype for business, vedere la Guida di [orientamento software client e server](client-server-software-roadmap-microsoft-365.md) per eseguire la migrazione dell'intera organizzazione a Microsoft 365 per Enterprise. In questa guida di orientamento sono inclusi i prodotti client di Microsoft Office, i prodotti di Office Server locali e i dispositivi basati su Microsoft Windows.
+Se si dispone di distribuzioni basate su server esistenti per Exchange, SharePoint o Skype for business e si desidera eseguire la migrazione dell'intera organizzazione a Microsoft 365 per Enterprise, vedere la Guida di [orientamento al software client e server](client-server-software-roadmap-microsoft-365.md). In questa guida di orientamento sono inclusi i prodotti client di Microsoft Office, i prodotti di Office Server locali e i dispositivi basati su Microsoft Windows &ndash; .
 
 ## <a name="deploy"></a>Distribuire
 
@@ -56,12 +56,12 @@ Per gestire i servizi cloud:
 
 ## <a name="how-microsoft-does-cloud-services-for-microsoft-365"></a>In che modo Microsoft utilizza i servizi cloud per Microsoft 365
 
-Per sapere in che modo la divisione IT di Microsoft ha implementato o gestisce i servizi cloud di Microsoft 365:
+Per informazioni su come è stata distribuita Microsoft o su come gestire i servizi cloud di Microsoft 365:
 
 1. Accedere a [Microsoft IT Showcase](https://www.microsoft.com/itshowcase).
 2. Selezionare **contenuto di ricerca**.
-3. Per **affinare i risultati**, selezionare **professionisti IT** in gruppi di **destinatari**e il servizio cloud a cui si è interessati in **prodotto**.
+3. In **affina risultati**, selezionare **it Pro** sotto gruppo di **destinatari**e quindi in **prodotto**selezionare un servizio cloud.
 
 ## <a name="next-step"></a>Passaggio successivo
 
-Avviare l'implementazione dei servizi [cloud con](configure-services-and-applications.md)prepararsi.
+Avviare l'implementazione dei servizi cloud. Per ulteriori informazioni, vedere [Configure Microsoft 365 Enterprise Services and Applications](configure-services-and-applications.md).

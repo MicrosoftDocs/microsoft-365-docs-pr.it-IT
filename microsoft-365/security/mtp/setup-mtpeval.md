@@ -1,7 +1,7 @@
 ---
-title: Configurare l'ambiente di test lab di Microsoft Threat Protection
+title: Configurare il laboratorio di valutazione di Microsoft Threat Protection o l'ambiente pilota
 description: Accedere a Microsoft 365 Security Center e quindi configurare l'ambiente di test lab di Microsoft Threat Protection
-keywords: Installazione di valutazione di Microsoft Threat Protection, provare Microsoft Threat Protection, Microsoft Threat Protection Evaluation Lab Setup
+keywords: Installazione di valutazione di Microsoft Threat Protection, installazione pilota di Microsoft Threat Protection, provare Microsoft Threat Protection, Microsoft Threat Protection Evaluation Lab Setup
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: w10
@@ -15,12 +15,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 69a883263952b7c20225659ae023399e0242606d
-ms.sourcegitcommit: 9a275a13af3e063e80ce1bd3cd8142a095db92d2
+ms.openlocfilehash: 60c1a39e350a9a1d5d43c9b59ab12c4a6ad3f12a
+ms.sourcegitcommit: 9f5b136b96b3af4db4cc6f5b1f35130ae60d6b12
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "47650070"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "47817182"
 ---
 # <a name="set-up-your-microsoft-threat-protection-trial-lab-environment"></a>Configurare l'ambiente di test lab di Microsoft Threat Protection 
 
@@ -28,26 +28,26 @@ ms.locfileid: "47650070"
 - Microsoft Threat Protection 
 
 
-La creazione di un ambiente di laboratorio di valutazione di Microsoft Threat Protection e la distribuzione di questo è un processo in tre fasi:
+La creazione di un ambiente pilota o di un laboratorio di valutazione di Microsoft Threat Protection è un processo in tre fasi:
 
 <br>
 <table border="0" width="100%" align="center">
   <tr style="text-align:center;">
     <td align="center" style="width:25%; border:0;" >
       <a href= "https://docs.microsoft.com/microsoft-365/security/mtp/prepare-mtpeval?view=o365-worldwide"> 
-        <img src="../../media/prepare.png" alt="Prepare your Microsoft Threat Protection trial lab environment" title="Preparare il laboratorio di valutazione di Microsoft Threat Protection" />
+        <img src="../../media/prepare.png" alt="Prepare your Microsoft Threat Protection trial lab or pilot environment" title="Preparare il laboratorio di valutazione di Microsoft Threat Protection o l'ambiente pilota" />
       <br/>Fase 1: preparazione </a><br>
     </td>
      <td align="center"bgcolor="#d5f5e3">
       <a href="https://docs.microsoft.com/microsoft-365/security/mtp/setup-mtpeval?view=o365-worldwide">
-        <img src="../../media/setup.png" alt="Set up your Microsoft Threat Protection trial lab environment" title="Configurare il laboratorio di valutazione di Microsoft Threat Protection" />
+        <img src="../../media/setup.png" alt="Set up your Microsoft Threat Protection trial lab or pilot environment" title="Configurare il laboratorio di valutazione di Microsoft Threat Protection o l'ambiente pilota" />
       <br/>Fase 2: installazione </a><br>
     </td>
     <td align="center">
       <a href="https://docs.microsoft.com/microsoft-365/security/mtp/config-mtpeval?view=o365-worldwide">
         <img src="../../media/config-onboard.png" alt="
-Configure each Microsoft Threat Protection pillar for your Microsoft Threat Protection trial lab environment and onboard your endpoints" title="
-Configurare ogni pilastro Microsoft Threat Protection per l'ambiente di test lab di Microsoft Threat Protection e onboard your Endpoints" />
+Configure each Microsoft Threat Protection pillar for your Microsoft Threat Protection trial lab or pilot environment and onboard your endpoints" title="
+Configurare ogni pilastro Microsoft Threat Protection per il laboratorio di valutazione di Microsoft Threat Protection o l'ambiente pilota e onboard your Endpoints" />
       <br/>Fase 3: configurare & onboard </a><br>
 </td>
 
@@ -55,12 +55,12 @@ Configurare ogni pilastro Microsoft Threat Protection per l'ambiente di test lab
   </tr>
 </table>
 
-Si è attualmente in fase di configurazione. Eseguire la procedura iniziale per accedere a Microsoft 365 Security Center e quindi configurare l'ambiente di prova.
+Si è attualmente in fase di configurazione. Eseguire i passaggi iniziali per accedere a Microsoft 365 Security Center e quindi configurare il laboratorio di valutazione o l'ambiente pilota.
 
 Iscriversi a una sottoscrizione di Office 365 o Azure Active Directory per generare un tenant con *estensione onmicrosoft.com* che è possibile utilizzare per iscriversi alla propria licenza Microsoft 365 E5. 
 
 >[!NOTE]
->Se si dispone già di una sottoscrizione di Office 365 o di Azure Active Directory, è possibile ignorare la procedura di creazione del tenant di valutazione di Office 365 E5.
+>Se si dispone già di una sottoscrizione di Office 365 o Azure Active Directory, è possibile ignorare i passaggi di valutazione di Office 365 E5 o di creazione di tenant pilota.
 
 In questa fase, verranno guidati i seguenti aspetti:
 - Creare un tenant di valutazione di Office 365 E5
@@ -88,7 +88,7 @@ In questa fase, verranno guidati i seguenti aspetti:
 5. Impostare il nome di dominio personalizzato per il tenant, quindi fare clic su **Avanti**.
 <br>![Immagine of_Office pagina di installazione di registrazione di prova 365 E5 in cui è possibile configurare il nome di dominio personalizzato](../../media/mtp-eval-13.png) <br>
  
-6. Configurare la prima identità che sarà un amministratore globale per il tenant. Immettere il **nome** e la **password**. Fare clic su **Iscriviti**.
+6. Impostare la prima identità, che sarà un amministratore globale per il tenant. Immettere il **nome** e la **password**. Fare clic su **Iscriviti**.
 ![Immagine of_Office pagina di installazione di registrazione di prova 365 E5 in cui è possibile impostare l'identità aziendale](../../media/mtp-eval-14.png) <br>
 
 7. Fare clic su **Vai al programma di installazione** per completare il provisioning del tenant di valutazione di Office 365 E5.
@@ -97,7 +97,7 @@ In questa fase, verranno guidati i seguenti aspetti:
 8. Connettere il dominio aziendale al tenant di Office 365. Optional Scegliere **Connect a Domain your già own** e digitare il nome di dominio. Fare clic su **Avanti**.
 <br>![Image of_Office pagina di installazione di 365 E5 dove è necessario personalizzare l'accesso e la posta elettronica](../../media/mtp-eval-16.png) <br>
  
-9. Sarà necessario aggiungere un record TXT o MX per convalidare la proprietà del dominio. Dopo aver aggiunto il record TXT o MX al dominio, selezionare **Verifica**.
+9. Aggiungere un record TXT o MX per convalidare la proprietà del dominio. Dopo aver aggiunto il record TXT o MX al dominio, selezionare **Verifica**.
 <br>![Image of_Office pagina di installazione di 365 E5 dove è necessario aggiungere un record TXT di MX per verificare il dominio](../../media/mtp-eval-17.png) <br>
  
 10. Optional Creare più account utente per il tenant. È possibile ignorare questo passaggio facendo clic su **Avanti**.
@@ -149,4 +149,4 @@ In questa fase, verranno guidati i seguenti aspetti:
 
 
 ## <a name="next-step"></a>Passaggio successivo
-![Fase 3: configurare & onboard](../../media/config-onboard.png) <br>[Fase 3: configurare & onboard](config-mtpeval.md) <br>Configurare ogni pilastro di Microsoft Threat Protection per il Lab di valutazione di Microsoft Threat Protection e onboard your Endpoints.
+![Fase 3: configurare & onboard](../../media/config-onboard.png) <br>[Fase 3: configurare & onboard](config-mtpeval.md) <br>Configurare ogni pilastro Microsoft Threat Protection per il laboratorio di valutazione di Microsoft Threat Protection o l'ambiente pilota e onboard your Endpoints.

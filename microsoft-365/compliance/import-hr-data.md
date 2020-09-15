@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: Gli amministratori possono configurare un connettore di dati per importare i dati dei dipendenti dal sistema HR (Human Resources) dell'organizzazione a Microsoft 365. In questo modo è possibile utilizzare i dati HR nei criteri di gestione dei rischi Insider utili per rilevare l'attività da parte di utenti specifici che possono rappresentare un rischio interno per la propria organizzazione.
-ms.openlocfilehash: 78832d74a7d61577e5ec49c290e19bdec758a0b3
-ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
+ms.openlocfilehash: a8eaeda3bc883de55a2c588e39557b4517ae3cc5
+ms.sourcegitcommit: 9f5b136b96b3af4db4cc6f5b1f35130ae60d6b12
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "47289251"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "47817166"
 ---
 # <a name="set-up-a-connector-to-import-hr-data-preview"></a>Configurare un connettore per l'importazione dei dati HR (anteprima)
 
@@ -56,14 +56,14 @@ Il tipo di dati HR da importare dipende dal criterio di gestione dei rischi Insi
 | **Modello di criteri**| **Tipo di dati HR**|
 |:-----------------------------------------------|:---------------------------------------------------------------------|
 | Furto dei dati da parte degli utenti                   | Dimissioni dei dipendenti                                                 |
-| Perdite di dati generali                              | Non applicabile                                                        |
-| Perdite di dati da parte di utenti prioritari                    | Non applicabile                                                        |
+| Perdite di dati generali                              | Non supportato                                                        |
+| Perdite di dati da parte di utenti prioritari                    | Non supportato                                                        |
 | Perdite di dati da parte di utenti scontenti                 | Modifiche a livello di processo, revisioni delle prestazioni, piani di miglioramento delle prestazioni |
-| Violazioni dei criteri di sicurezza generali              | Non applicabile                                                        |
+| Violazioni dei criteri di sicurezza generali              | Non supportato                                                        |
 | Violazioni dei criteri di sicurezza da parte degli utenti   | Dimissioni dei dipendenti                                                 |
-| Violazioni dei criteri di sicurezza per gli utenti con priorità    | Non applicabile                                                        |
+| Violazioni dei criteri di sicurezza per gli utenti con priorità    | Non supportato                                                        |
 | Violazioni dei criteri di sicurezza da parte di utenti scontenti | Modifiche a livello di processo, revisioni delle prestazioni, piani di miglioramento delle prestazioni |
-| Lingua offensiva nel messaggio di posta elettronica                     | Non applicabile                                                        |
+| Lingua offensiva nel messaggio di posta elettronica                     | Non supportato                                                        |
 
 Per ulteriori informazioni sui modelli di criteri per la gestione dei rischi Insider, vedere [Insider Risk Management Policies](insider-risk-management-policies.md#policy-templates).
 
@@ -91,8 +91,8 @@ Nella tabella seguente vengono descritte tutte le colonne del file CSV per i dat
 | **Colonna**  |  **Descrizione**|
 |:------------|:----------------|
 |**EmailAddress**| Specifica l'indirizzo di posta elettronica (UPN) dell'utente con terminazione.|
-| **ResignationDate** | Specifica la data in cui l'occupazione dell'utente è stata ufficialmente terminata nell'organizzazione. Ad esempio, questa potrebbe essere la data in cui l'utente ha dato la propria comunicazione sull'uscita dall'organizzazione. Questa data può essere diversa dalla data dell'ultimo giorno di lavoro dell'utente. È necessario utilizzare il formato di data seguente: `yyyy-mm-ddThh:mm:ss.nnnnnn+|-hh:mm` , ovvero il [formato di data e ora ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html).|
-| **LastWorkingDate** | Specifica l'ultimo giorno di lavoro per l'utente terminato. È necessario utilizzare il formato di data seguente: `yyyy-mm-ddThh:mm:ss.nnnnnn+|-hh:mm` , ovvero il [formato di data e ora ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html).|
+| **ResignationDate** | Specifica la data in cui l'occupazione dell'utente è stata ufficialmente terminata nell'organizzazione. Ad esempio, questa potrebbe essere la data in cui l'utente ha dato la propria comunicazione sull'uscita dall'organizzazione. Questa data può essere diversa dalla data dell'ultimo giorno di lavoro dell'utente. Utilizzare il formato di data seguente: `yyyy-mm-ddThh:mm:ss.nnnnnn+|-hh:mm` , ovvero il [formato di data e ora ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html).|
+| **LastWorkingDate** | Specifica l'ultimo giorno di lavoro per l'utente terminato. Utilizzare il formato di data seguente: `yyyy-mm-ddThh:mm:ss.nnnnnn+|-hh:mm` , ovvero il [formato di data e ora ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html).|
 |||
 
 ### <a name="csv-file-for-job-level-changes-data"></a>File CSV per i dati delle modifiche a livello di processo
@@ -110,10 +110,10 @@ Nella tabella seguente vengono descritte tutte le colonne del file CSV per i dat
 | **Colonna**|**Descrizione**|
 |:--------- |:------------- |
 | **EmailAddress**  | Specifica l'indirizzo di posta elettronica (UPN) dell'utente.|
-| **EffectiveDate** | Specifica la data in cui il livello di lavoro dell'utente è stato cambiato ufficialmente. È necessario utilizzare il formato di data seguente: `yyyy-mm-ddThh:mm:ss.nnnnnn+|-hh:mm` , ovvero il [formato di data e ora ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html).|
-| **Osservazioni**| Specifica le osservazioni fornite dall'analizzatore per la modifica del livello di processo. Si tratta di un parametro di testo con un limite di 200 caratteri. Si tratta di un parametro facoltativo. Non è necessario includerlo nel file CSV.|
-| **OldLevel**| Specifica il livello di lavoro dell'utente prima che sia stato modificato. Si tratta di un parametro di testo libero che può contenere la tassonomia gerarchica per l'organizzazione. Si tratta di un parametro facoltativo. Non è necessario includerlo nel file CSV.|
-| **NewLevel**| Specifica il livello di lavoro dell'utente dopo che è stato modificato. Si tratta di un parametro di testo libero che può contenere la tassonomia gerarchica per l'organizzazione. Si tratta di un parametro facoltativo. Non è necessario includerlo nel file CSV.|
+| **EffectiveDate** | Specifica la data in cui il livello di lavoro dell'utente è stato cambiato ufficialmente. Utilizzare il formato di data seguente: `yyyy-mm-ddThh:mm:ss.nnnnnn+|-hh:mm` , ovvero il [formato di data e ora ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html).|
+| **Osservazioni**| Specifica le osservazioni fornite dall'analizzatore per la modifica del livello di processo. È possibile immettere un limite di 200 caratteri. Questo parametro è facoltativo. Non è necessario includerlo nel file CSV.|
+| **OldLevel**| Specifica il livello di lavoro dell'utente prima che sia stato modificato. Si tratta di un parametro di testo libero che può contenere la tassonomia gerarchica per l'organizzazione. Questo parametro è facoltativo. Non è necessario includerlo nel file CSV.|
+| **NewLevel**| Specifica il livello di lavoro dell'utente dopo che è stato modificato. Si tratta di un parametro di testo libero che può contenere la tassonomia gerarchica per l'organizzazione. Questo parametro è facoltativo. Non è necessario includerlo nel file CSV.|
 |||
 
 ### <a name="csv-file-for-performance-review-data"></a>File CSV per i dati di revisione delle prestazioni
@@ -131,9 +131,9 @@ Nella tabella seguente vengono descritte tutte le colonne del file CSV per i dat
 | **Colonna**|**Descrizione**|
 |:----------|:--------------|
 | **EmailAddress**  | Specifica l'indirizzo di posta elettronica (UPN) dell'utente.|
-| **EffectiveDate** | Specifica la data in cui l'utente è stato informato ufficialmente del risultato della revisione delle prestazioni. Questa può essere la data in cui è stato terminato il ciclo di revisione delle prestazioni. È necessario utilizzare il formato di data seguente: `yyyy-mm-ddThh:mm:ss.nnnnnn+|-hh:mm` , ovvero il [formato di data e ora ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html).|
-| **Osservazioni**| Specifica gli eventuali commenti forniti dall'analizzatore all'utente per la revisione delle prestazioni. Si tratta di un parametro di testo con un limite di 200 caratteri. Si tratta di un parametro facoltativo. Non è necessario includerlo nel file CSV.|
-| **Valutazione**| Specifica la classificazione fornita per la revisione delle prestazioni. Si tratta di un parametro di testo che può contenere qualsiasi testo in formato libero utilizzato dall'organizzazione per riconoscere la valutazione. Ad esempio, "3 attese soddisfatte" o "2 al di sotto della media". Si tratta di un parametro di testo con un limite di 25 caratteri. Si tratta di un parametro facoltativo. Non è necessario includerlo nel file CSV.|
+| **EffectiveDate** | Specifica la data in cui l'utente è stato informato ufficialmente del risultato della revisione delle prestazioni. Questa può essere la data in cui è stato terminato il ciclo di revisione delle prestazioni. Utilizzare il formato di data seguente: `yyyy-mm-ddThh:mm:ss.nnnnnn+|-hh:mm` , ovvero il [formato di data e ora ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html).|
+| **Osservazioni**| Specifica gli eventuali commenti forniti dall'analizzatore all'utente per la revisione delle prestazioni. Si tratta di un parametro di testo con un limite di 200 caratteri. Questo parametro è facoltativo. Non è necessario includerlo nel file CSV.|
+| **Valutazione**| Specifica la classificazione fornita per la revisione delle prestazioni. Si tratta di un parametro di testo che può contenere qualsiasi testo in formato libero utilizzato dall'organizzazione per riconoscere la valutazione. Ad esempio, "3 attese soddisfatte" o "2 al di sotto della media". Si tratta di un parametro di testo con un limite di 25 caratteri. Questo parametro è facoltativo. Non è necessario includerlo nel file CSV.|
 |||
 
 ### <a name="csv-file-for-performance-improvement-plan-data"></a>File CSV per i dati del piano per il miglioramento delle prestazioni
@@ -255,7 +255,7 @@ Dopo aver completato questo passaggio, assicurarsi di copiare l'ID processo gene
 
    b. **Collegamento a uno script di esempio.** Fare clic sul collegamento **qui** per passare al sito GitHub per accedere allo script di esempio (il collegamento apre una nuova finestra). Tenere aperta la finestra in modo che sia possibile copiare lo script nel passaggio 4. In alternativa, è possibile aggiungere un segnalibro alla destinazione o copiare l'URL in modo che sia possibile accedervi di nuovo quando si esegue lo script. Questo collegamento è disponibile anche nella pagina del riquadro a comparsa del connettore.
 
-9. Fare clic su **Fatto**.
+9. Fare clic su **Fine**.
 
    Il nuovo connettore viene visualizzato nell'elenco della scheda **connettori** .
 

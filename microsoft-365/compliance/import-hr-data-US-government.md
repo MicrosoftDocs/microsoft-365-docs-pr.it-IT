@@ -15,12 +15,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: Gli amministratori del cloud governativo degli Stati Uniti possono configurare un connettore dati per importare i dati dei dipendenti dal sistema HR (Human Resources) dell'organizzazione a Microsoft 365. In questo modo è possibile utilizzare i dati HR nei criteri di gestione dei rischi Insider utili per rilevare l'attività da parte di utenti specifici che possono rappresentare un rischio interno per la propria organizzazione.
-ms.openlocfilehash: 2f41426003fcf3b6afe14d24cf7176fa4668ad44
-ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
+ms.openlocfilehash: 30a3730bcb2d4f41df28c47fdb9ab35e9d012540
+ms.sourcegitcommit: 9f5b136b96b3af4db4cc6f5b1f35130ae60d6b12
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "47289817"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "47817171"
 ---
 # <a name="set-up-a-connector-to-import-hr-data-in-us-government-preview"></a>Configurare un connettore per l'importazione dei dati HR nel governo degli Stati Uniti (anteprima)
 
@@ -65,11 +65,11 @@ Nella tabella seguente vengono descritte tutte le colonne del file CSV:
 |**Nome colonna**|**Descrizione**|
 |:-----|:-----|
 | **EmailAddress** <br/> |Specifica l'indirizzo di posta elettronica del dipendente terminato.|
-| **TerminationDate** <br/> |Specifica la data in cui l'occupazione della persona è stata ufficialmente terminata nell'organizzazione. Ad esempio, questa potrebbe essere la data in cui il dipendente ha dato la propria comunicazione sull'uscita dall'organizzazione. Questa data può essere diversa dalla data dell'ultimo giorno di lavoro dell'utente. È necessario utilizzare il formato di data seguente: `yyyy-mm-ddThh:mm:ss.nnnnnn+|-hh:mm` , ovvero il [formato di data e ora ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html).|
-|**LastWorkingDate**|Specifica l'ultimo giorno di lavoro per il dipendente terminato. È necessario utilizzare il formato di data seguente: `yyyy-mm-ddThh:mm:ss.nnnnnn+|-hh:mm` , ovvero il [formato di data e ora ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html).|
+| **TerminationDate** <br/> |Specifica la data in cui l'occupazione della persona è stata ufficialmente terminata nell'organizzazione. Ad esempio, questa potrebbe essere la data in cui il dipendente ha dato la propria comunicazione sull'uscita dall'organizzazione. Questa data può essere diversa dalla data dell'ultimo giorno di lavoro dell'utente. Utilizzare il formato di data seguente: `yyyy-mm-ddThh:mm:ss.nnnnnn+|-hh:mm` , ovvero il [formato di data e ora ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html).|
+|**LastWorkingDate**|Specifica l'ultimo giorno di lavoro per il dipendente terminato. Utilizzare il formato di data seguente: `yyyy-mm-ddThh:mm:ss.nnnnnn+|-hh:mm` , ovvero il [formato di data e ora ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html).|
 |||
 
-Dopo aver creato il file CSV con i dati HR necessari, archiviarlo nello stesso sistema dello script eseguito nel passaggio 4. È inoltre consigliabile implementare una strategia di aggiornamento per verificare che il file CSV contenga sempre le informazioni più aggiornate, in modo che qualsiasi operazione esegua lo script, i dati di terminazione dei dipendenti più recenti vengano caricati nel cloud Microsoft.
+Dopo aver creato il file CSV con i dati HR necessari, archiviarlo nello stesso sistema dello script eseguito nel passaggio 4. Assicurarsi di implementare una strategia di aggiornamento in modo che il file CSV contenga sempre le informazioni più aggiornate. In questo modo si garantisce che tutto ciò che si esegue lo script, i dati di terminazione dei dipendenti più recenti vengono caricati nel cloud Microsoft.
 
 ## <a name="step-3-create-the-hr-connector"></a>Passaggio 3: creare il connettore HR
 
@@ -101,7 +101,7 @@ Il passaggio successivo consiste nel creare un connettore HR nel centro conformi
    
    b. **Collegamento a uno script di esempio.** Fare clic sul collegamento **qui** per passare al sito GitHub per accedere allo script di esempio (il collegamento apre una nuova finestra). Tenere aperta la finestra in modo che sia possibile copiare lo script nel passaggio 4. In alternativa, è possibile aggiungere un segnalibro alla destinazione o copiare l'URL in modo che sia possibile accedervi di nuovo nel passaggio 4. Questo collegamento è disponibile anche nella pagina del riquadro a comparsa del connettore.
 
-7. Fare clic su **Fatto**.
+7. Fare clic su **Fine**.
 
    Il nuovo connettore viene visualizzato nell'elenco della scheda **connettori** . 
 
@@ -139,11 +139,11 @@ L'ultimo passaggio per la configurazione di un connettore HR è l'esecuzione di 
 
    |**Parametro**|**Descrizione**
    |:-----|:-----|:-----|
-   |`tenantId`|Questo è l'ID dell'organizzazione Microsoft 365 ottenuta al passaggio 1. È anche possibile ottenere l'ID tenant per l'organizzazione nel pannello **Panoramica** nell'interfaccia di amministrazione di Azure ad. Viene utilizzato per identificare l'organizzazione.|
-   |`appId` |Questo è l'ID dell'applicazione Azure AD per l'app creata in Azure AD nel passaggio 1. Questo metodo viene utilizzato da Azure AD per l'autenticazione quando lo script tenta di accedere all'organizzazione Microsoft 365. |
-   |`appSecret`|Questo è il segreto dell'applicazione Azure AD per l'app creata in Azure AD nel passaggio 1. Questo utilizzato anche per l'autenticazione.|
-   |`jobId`|Questo è l'ID processo per il connettore HR creato nel passaggio 3. Viene utilizzato per associare i dati HR caricati nel cloud Microsoft con il connettore HR.|
-   |`csvFilePath`|Si tratta del percorso del file CSV, memorizzato nello stesso sistema dello script, creato nel passaggio 2. Provare ad evitare gli spazi nel percorso del file; in caso contrario, utilizzare virgolette singole.|
+   |`tenantId`|ID dell'organizzazione Microsoft 365 ottenuta al passaggio 1. È anche possibile ottenere l'ID tenant per l'organizzazione nel pannello **Panoramica** nell'interfaccia di amministrazione di Azure ad. Viene utilizzato per identificare l'organizzazione.|
+   |`appId` |ID dell'applicazione Azure AD per l'app creata in Azure AD nel passaggio 1. Questo metodo viene utilizzato da Azure AD per l'autenticazione quando lo script tenta di accedere all'organizzazione Microsoft 365. |
+   |`appSecret`|Il segreto dell'applicazione Azure AD per l'app creata in Azure AD nel passaggio 1. Questo utilizzato anche per l'autenticazione.|
+   |`jobId`|ID processo per il connettore HR creato nel passaggio 3. Viene utilizzato per associare i dati HR caricati nel cloud Microsoft con il connettore HR.|
+   |`csvFilePath`|Il percorso del file CSV, memorizzato nello stesso sistema dello script, creato nel passaggio 2. Provare ad evitare gli spazi nel percorso del file; in caso contrario, utilizzare virgolette singole.|
    |||
    
    Di seguito è riportato un esempio della sintassi per lo script del connettore HR utilizzando i valori effettivi per ogni parametro:

@@ -7,22 +7,21 @@ author: markjjo
 manager: laurawi
 ms.date: ''
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-ms.assetid: ''
 description: Informazioni sui metodi per esaminare i dati dell'evidenza, ad esempio la visualizzazione in formato nativo, testo o quasi nativo.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: f094718bd14ee86ff8fdae482e86c22ecfbdc483
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 9df5c1f0fd15cb320e8359d09ab39202700dbc4b
+ms.sourcegitcommit: 9f5b136b96b3af4db4cc6f5b1f35130ae60d6b12
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034610"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "47816729"
 ---
 # <a name="review-the-data-in-evidence"></a>Esaminare i dati nelle prove
 
@@ -34,7 +33,7 @@ Per raggruppare i documenti e ottenere assistenza per la revisione, selezionare 
 
 ## <a name="view-documents-in-evidence"></a>Visualizzare i documenti in evidenza
 
-Indagini sui dati (Preview) consente di visualizzare il contenuto in diversi visualizzatori, in cui ogni visualizzatore ha uno scopo diverso. Questi visualizzatori sono:
+Lo strumento di analisi dei dati (Preview) consente di visualizzare il contenuto in diversi visualizzatori, in cui ogni visualizzatore ha uno scopo diverso. Questi visualizzatori sono:
 
 - Metadati dei file
 - Visualizzazione nativa
@@ -60,7 +59,7 @@ Il Visualizzatore nativo Visualizza la visualizzazione più accurata di un docum
 
 ## <a name="text-view"></a>Visualizzazione testo
 
-Il Visualizzatore di testo consente di visualizzare il testo estratto di un file. Ignora tutte le immagini e la formattazione incorporate, ma questa visualizzazione è molto utile se si sta tentando di esaminare e comprendere rapidamente il contenuto di un documento. La visualizzazione del testo include anche queste caratteristiche:
+Il Visualizzatore di testo consente di visualizzare il testo estratto di un file. Ignora tutte le immagini e la formattazione incorporate, ma questa visualizzazione è utile se si sta tentando di esaminare e comprendere rapidamente il contenuto di un documento. La visualizzazione del testo include anche queste caratteristiche:
 
   - Un contatore di linea, che rende più facile fare riferimento a parti specifiche di un documento.
 

@@ -1,5 +1,5 @@
 ---
-title: Attività rapide per iniziare a eseguire la conformità a Microsoft 365
+title: Attività rapide per iniziare a usare il Centro conformità Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -12,14 +12,14 @@ ms.collection:
 - M365-security-compliance
 localization_priority: Normal
 description: Informazioni sulle attività che consentiranno di iniziare rapidamente a eseguire la conformità in Microsoft 365.
-ms.openlocfilehash: 26d10840382d044e8126745daec32948571a1be9
-ms.sourcegitcommit: e891c7c25f351f10f250af3f483f68594976ddc9
+ms.openlocfilehash: 1702c05b271c0e8b5456c1a93f8bf1dc28f7fbd9
+ms.sourcegitcommit: 9f5b136b96b3af4db4cc6f5b1f35130ae60d6b12
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/16/2020
-ms.locfileid: "45153689"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "47816815"
 ---
-# <a name="quick-tasks-for-getting-started-with-microsoft-365-compliance"></a>Attività rapide per iniziare a eseguire la conformità a Microsoft 365
+# <a name="quick-tasks-for-getting-started-with-microsoft-365-compliance"></a>Attività rapide per iniziare a usare il Centro conformità Microsoft 365
 
 Se si è nuovi a Microsoft 365 compliance e si chiede da dove iniziare, in questo articolo vengono fornite indicazioni sulle nozioni di base e vengono classificate in priorità importanti attività di conformità. In questo articolo vengono fornite informazioni utili per iniziare con la gestione e il monitoraggio dei dati, per proteggerli e ridurre al minimo i rischi Insider.
 
@@ -87,9 +87,9 @@ Un [criterio di conservazione](retention.md) consente di decidere in modo proatt
 
 Quando il contenuto è soggetto a un criterio di conservazione, gli utenti possono continuare a modificare e utilizzare il contenuto come se nulla fosse cambiato. Il contenuto viene conservato sul posto, nella posizione originale. Tuttavia, se qualcuno modifica o Elimina il contenuto soggetto al criterio di conservazione, una copia del contenuto originale viene salvata in una posizione sicura in cui viene conservata mentre il criterio di conservazione per il contenuto è attivo.
 
-È possibile inserire rapidamente un criterio di conservazione sul posto per più posizioni nell'ambiente Microsoft 365: posta elettronica di Exchange e cartelle pubbliche, siti di SharePoint, account di OneDrive e gruppi di Microsoft 365. Conosciuto come un criterio di conservazione a livello di organizzazione, non vi sono limiti al numero di cassette postali o di siti che il criterio può includere. Tuttavia, se è necessario ottenere maggiore specifica, è possibile farlo configurando un criterio di conservazione per posizioni specifiche e quindi includere o escludere siti o utenti.
+È possibile inserire rapidamente un criterio di conservazione sul posto per più posizioni nell'ambiente Microsoft 365, ad esempio la posta di Exchange, i siti di SharePoint, gli account di OneDrive e i gruppi di Microsoft 365. Non ci sono limiti al numero di cassette postali o siti che questo criterio può includere automaticamente. Tuttavia, se è necessario ottenere maggiore selettivo, è possibile farlo configurando un criterio di conservazione per posizioni specifiche e includendo o escludendo siti o utenti.
 
-Per istruzioni dettagliate per la configurazione di un criterio di conservazione, vedere [creare e configurare i criteri di conservazione](create-retention-policies.md). Per informazioni sulle licenze di gestione dei record, vedere [Microsoft 365 Licensing Guidance for security & Compliance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#records-management).
+Per istruzioni dettagliate per la configurazione di un criterio di conservazione, vedere [creare e configurare i criteri di conservazione](create-retention-policies.md). Se si configura per la prima volta la conservazione in Microsoft 365, vedere [Informazioni sui criteri e sulle etichette di conservazione](get-started-with-retention.md).
 
 ## <a name="task-8-configure-sensitive-information-and-offensive-language-policies"></a>Attività 8: configurare le informazioni riservate e i criteri per i linguaggi offensivi
 
@@ -137,13 +137,13 @@ Dopo aver configurato le nozioni di base per la gestione della conformità per l
 
 Anche se i criteri di conservazione vengono applicati a livello di contenitore a posizioni quali i siti di SharePoint e le cassette postali di Exchange, le [etichette di conservazione](retention.md#retention-labels) consentono di assegnare una destinazione più specifica per i criteri di conservazione e eliminazione. Ad esempio, al livello del messaggio di posta elettronica o di documento che gli utenti finali possono applicare manualmente oltre all'applicazione automatica da parte degli amministratori. È inoltre possibile applicare un'etichetta di conservazione a una raccolta documenti, una cartella o un set di documenti in SharePoint, in modo che tutti i documenti archiviati in tale percorso ereditino l'etichetta di conservazione predefinita.
 
-Le etichette di conservazione supportano inoltre la [gestione dei record](records-management.md) per contrassegnare il contenuto come record. In questo caso, non è possibile modificare o rimuovere l'etichetta e il contenuto non può essere modificato o eliminato. Queste restrizioni potrebbero essere necessarie per aiutare l'organizzazione a rispettare i requisiti normativi.
+Le etichette di conservazione supportano inoltre la [gestione dei record](records-management.md) per contrassegnare il contenuto come record. In questo caso, l'etichetta inserisce ulteriori restrizioni sul contenuto che potrebbe essere necessario per aiutare l'organizzazione a rispettare i requisiti normativi.
 
 Per istruzioni dettagliate per la creazione e la pubblicazione di etichette di conservazione, vedere le indicazioni seguenti:
 - [Creare etichette di conservazione e applicarle nelle app](create-apply-retention-labels.md)
 - [Applicare automaticamente un'etichetta di conservazione al contenuto](apply-retention-labels-automatically.md)
 
-Per informazioni sulle licenze di gestione dei record, vedere [Microsoft 365 Licensing Guidance for security & Compliance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#records-management).
+Per iniziare a utilizzare la gestione dei record, vedere [Introduzione alla gestione dei record](get-started-with-records-management.md).
 
 ### <a name="identify-and-define-sensitive-information-types"></a>Identificare e definire i tipi di informazioni riservate
 
@@ -151,7 +151,7 @@ Definire i tipi di informazioni riservate in base al modello contenuto nelle inf
 
 Per istruzioni dettagliate sulla definizione di tipi di informazioni riservate personalizzate, vedere [creare un tipo di informazioni riservate personalizzato nel centro sicurezza & Compliance](https://docs.microsoft.com/microsoft-365/compliance/create-a-custom-sensitive-information-type).
 
-### <a name="prevent-data-loss"></a>Evitare la perdita di dati
+### <a name="prevent-data-loss"></a>Prevenire la perdita di dati
 
 [I criteri di prevenzione della perdita di dati (DLP)](data-loss-prevention-policies.md) consentono di identificare, monitorare e proteggere automaticamente le informazioni riservate all'interno dell'organizzazione Microsoft 365. Utilizzare i criteri DLP per identificare gli elementi sensibili nei servizi Microsoft, impedire la condivisione accidentale di elementi sensibili e aiutare gli utenti a imparare a rimanere conformi senza interrompere il flusso di lavoro.
 

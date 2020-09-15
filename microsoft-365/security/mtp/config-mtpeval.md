@@ -1,52 +1,34 @@
 ---
-title: Configurare i pilastri Microsoft Threat Protection per l'ambiente lab di valutazione
-description: Configurare i pilastri Microsoft Threat Protection, Office 365 ATP, Azure ATP, Microsoft cloud app Security e Microsoft Defender ATP per l'ambiente di prova Lab
-keywords: configurazione di Microsoft Threat Protection Trial, Microsoft Threat Protection Trial Configuration, Configure Microsoft Threat Protection Pillars, Microsoft Threat Protection Pillars
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
-ms.prod: w10
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-ms.author: dolmont
-author: DulceMontemayor
-ms.localizationpriority: medium
-manager: dansimp
-audience: ITPro
-ms.collection: M365-security-compliance
-ms.topic: article
-ms.openlocfilehash: 8a435b220343bd0353f2e0ef85ddf856ebf3e8aa
-ms.sourcegitcommit: 7c1b34205746ff0690ffc774a74bdfd434256cf5
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "45049941"
+Titolo: configurare i pilastri Microsoft Threat Protection per il laboratorio di valutazione o l'ambiente pilota Descrizione: configurare i pilastri di Microsoft Threat Protection: Office 365 ATP, Azure ATP, Microsoft cloud app Security e Microsoft Defender ATP, per il laboratorio di valutazione o l'ambiente pilota.
+Parole chiave: configurare Microsoft Threat Protection Trial, Microsoft Threat Protection Trial Configuration, Configure Microsoft Threat Protection Project pilota, Configure Microsoft Threat Protection Pillars, Microsoft Threat Protection Pillars search. Product: eADQiWindows 10XVcnh search. appverid: met150 ms. prod: W10 ms. mktglfcycl: Deploy ms. sitesec: library ms. PageType: Security ms. Author: dolmont  
+autore: DulceMontemayor ms. localizationpriority: Media Manager: dansimp audience: ITPro ms. Collection: M365-Security-Compliance ms. Topic: article 
 ---
-# <a name="configure-microsoft-threat-protection-pillars-for-your-trial-lab-environment"></a>Configurare i pilastri Microsoft Threat Protection per l'ambiente lab di valutazione
+
+# <a name="configure-microsoft-threat-protection-pillars-for-your-trial-lab-or-pilot-environment"></a>Configurare i pilastri Microsoft Threat Protection per il laboratorio di valutazione o l'ambiente pilota
 
 **Si applica a:**
 - Microsoft Threat Protection
 
 
-La creazione di un ambiente di laboratorio di valutazione di Microsoft Threat Protection e la distribuzione di questo è un processo in tre fasi:
+La creazione di un ambiente pilota o di un laboratorio di valutazione di Microsoft Threat Protection è un processo in tre fasi:
 
 <br>
 <table border="0" width="100%" align="center">
   <tr style="text-align:center;">
     <td align="center" style="width:25%; border:0;" >
       <a href= "https://docs.microsoft.com/microsoft-365/security/mtp/prepare-mtpeval?view=o365-worldwide"> 
-        <img src="../../media/prepare.png" alt="Prepare your Microsoft Threat Protection trial lab environment" title="Preparare l'ambiente di laboratorio di valutazione di Microsoft Threat Protection" />
-      <br/>Fase 1: preparazione</a><br>
+        <img src="../../media/prepare.png" alt="Prepare your Microsoft Threat Protection trial lab or pilot environment" title="Preparare il laboratorio di valutazione di Microsoft Threat Protection o l'ambiente pilota" />
+      <br/>Fase 1: preparazione </a><br>
     </td>
      <td align="center">
       <a href="https://docs.microsoft.com/microsoft-365/security/mtp/setup-mtpeval?view=o365-worldwide">
-        <img src="../../media/setup.png" alt="Set up your Microsoft Threat Protection trial lab environment" title="Configurare l'ambiente di test lab di Microsoft Threat Protection" />
-      <br/>Fase 2: installazione</a><br>
+        <img src="../../media/setup.png" alt="Set up your Microsoft Threat Protection trial lab or pilot environment" title="Configurare il laboratorio di valutazione di Microsoft Threat Protection o l'ambiente pilota" />
+      <br/>Fase 2: installazione </a><br>
     </td>
     <td align="center" bgcolor="#d5f5e3">
       <a href="https://docs.microsoft.com/microsoft-365/security/mtp/config-mtpeval?view=o365-worldwide">
-        <img src="../../media/config-onboard.png" alt="Configure & Onboard" title="Configurare ogni pilastro Microsoft Threat Protection per l'ambiente di test lab di Microsoft Threat Protection e gli endpoint di bordo" />
-      <br/>Fase 3: configurare & onboard</a><br>
+        <img src="../../media/config-onboard.png" alt="Configure & Onboard" title="Configurare ogni pilastro Microsoft Threat Protection per il laboratorio di valutazione di Microsoft Threat Protection o l'ambiente pilota e gli endpoint di bordo" />
+      <br/>Fase 3: configurare & onboard </a><br>
 </td>
 
 
@@ -101,7 +83,7 @@ In questa sezione viene illustrata la configurazione:
  
 7. Successivamente, selezionare il criterio **collegamenti sicuri ATP** , quindi fare clic sull'icona a forma di matita per modificare il criterio predefinito.
 
-8. Verificare che l'opzione non **rintracci quando gli utenti fanno clic su collegamenti sicuri** non è selezionata, mentre le altre opzioni sono selezionate. Per informazioni dettagliate, vedere [Safe Links Settings](https://docs.microsoft.com/microsoft-365/security/office-365-security/recommended-settings-for-eop-and-office365-atp?view=o365-worldwide) . Fare clic su **Salva**. 
+8. Verificare che l'opzione non **rintracci quando gli utenti fanno clic su collegamenti sicuri** non è selezionata, mentre le altre opzioni sono selezionate. Per informazioni dettagliate, vedere [Safe Links Settings](https://docs.microsoft.com/microsoft-365/security/office-365-security/recommended-settings-for-eop-and-office365-atp) . Fare clic su **Salva**. 
 ![Image of_Office 365 Security & Compliance Center page che indica che l'opzione non tiene conto del fatto che gli utenti fanno clic su sicuro non è selezionata](../../media/mtp-eval-38.png) <br>
 
 9. Selezionare quindi il criterio **antimalware** , selezionare l'impostazione predefinita e scegliere l'icona a forma di matita.
@@ -141,7 +123,7 @@ In questa sezione viene illustrata la configurazione:
 7. Fare clic su **Avanti** nel tipo di distribuzione del sensore.
 <br>![Immagine of_Azure pagina avanzata di protezione dalle minacce in cui è necessario fare clic su Avanti per seguire la procedura guidata del sensore ATP di Azure](../../media/mtp-eval-48.png) <br>
  
-8. Copiare il tasto di accesso poiché sarà necessario immetterlo successivamente nella procedura guidata.
+8. Copiare il tasto di accesso perché è necessario immetterlo successivamente nella procedura guidata.
 ![Pagina of_the sensori immagine in cui è necessario copiare la chiave di accesso che è necessario immettere nella pagina successiva installazione guidata sensore di Azure ATP](../../media/mtp-eval-49.png) <br>
  
 9. Copiare la chiave di accesso nella procedura guidata e fare clic su **Installa**. 
@@ -171,7 +153,7 @@ In questa sezione viene illustrata la configurazione:
 >Se questo messaggio non viene visualizzato, potrebbe significare che l'integrazione dei dati ATP di Azure è già stata abilitata. Tuttavia, se non si è certi, contattare l'amministratore IT per confermare. 
 
 3. Andare a **Impostazioni**, attivare l'interruttore di **integrazione ATP di Azure** , quindi fare clic su **Salva**. 
-![Pagina Impostazioni of_the immagine in cui è necessario attivare l'attivazione dell'integrazione di Azure ATP e quindi fare clic su Salva](../../media/mtp-eval-55.png) <br>
+![Pagina Impostazioni of_the immagine in cui è necessario attivare l'interruttore di integrazione ATP di Azure e quindi fare clic su Salva](../../media/mtp-eval-55.png) <br>
 >[!NOTE]
 >Per le nuove istanze di Azure ATP, questo interruttore di integrazione viene attivato automaticamente. Verificare che l'integrazione di Azure ATP sia stata abilitata prima di procedere con il passaggio successivo.
  
@@ -210,7 +192,7 @@ Fare clic su **Avanti**.
 7. Nell'endpoint, eseguire lo script onboarding come amministratore e scegliere Y.
 <br>![Immagine of_the riga di comando in cui si esegue lo script di onboarding e scegliere Y per continuare](../../media/mtp-eval-63.png) <br>
 
-8. Congratulazioni, è stato installato il primo endpoint.  
+8. Congratulazioni, è stato imbarcato il primo endpoint.  
 <br>![Image of_the CommandLine, in cui viene confermata l'onboarding del primo endpoint. Premere un tasto per continuare](../../media/mtp-eval-64.png) <br>
 
 9. Copia e incolla il test di rilevamento dalla procedura guidata ATP di Microsoft Defender.
@@ -243,11 +225,11 @@ Fare clic su **Avanti**.
 <br>
 
 Accedere a [Microsoft 365 Security Center](https://security.microsoft.com/homepage). Passare a **Impostazioni** , quindi selezionare **Microsoft Threat Protection**.
-<br>![Immagine of_Microsoft opzione di protezione dalle minacce screenshot dalla pagina delle impostazioni di Microsoft 365 Security Center](../../media/mtp-eval-72b.png) <br>
+<br>![Immagine of_Microsoft opzione di protezione dalle minacce screenshot dalla pagina delle impostazioni di Microsoft 365 Security Center ](../../media/mtp-eval-72b.png) <br>
 
 Per ulteriori informazioni, vedere [abilitare Microsoft Threat Protection](mtp-enable.md). 
 
-Congratulazioni! L'ambiente di valutazione di Microsoft Threat Protection è appena stato creato. A questo punto, è possibile acquisire familiarità con l'interfaccia utente di Microsoft Threat Protection. Vedere cosa si può imparare e sapere come usare ogni dashboard per le attività quotidiane di sicurezza: [Guida interattiva di Microsoft Threat Protection](https://aka.ms/MTP-Interactive-Guide).
+Congratulazioni! È stato appena creato il laboratorio di valutazione di Microsoft Threat Protection o un ambiente pilota. A questo punto, è possibile acquisire familiarità con l'interfaccia utente di Microsoft Threat Protection. Vedere cosa si può imparare e sapere come usare ogni dashboard per le attività quotidiane di sicurezza: [Guida interattiva di Microsoft Threat Protection](https://aka.ms/MTP-Interactive-Guide).
 
 Successivamente, è possibile simulare un attacco e vedere in che modo le funzionalità del prodotto incrociato rilevano, creano avvisi e rispondono automaticamente a un attacco non file su un endpoint.
 

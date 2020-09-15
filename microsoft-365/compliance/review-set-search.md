@@ -7,7 +7,7 @@ author: markjjo
 manager: laurawi
 ms.date: ''
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Informazioni su come creare ed eseguire una query in un set di revisione per organizzare i dati per una revisione più efficiente in un caso avanzato di eDiscovery.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 871630af4b8b19e5fad1a062129782e36b9706f5
-ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
+ms.openlocfilehash: 508e8e9fdb4a558a998a33aa561dc3755edcc40d
+ms.sourcegitcommit: 9f5b136b96b3af4db4cc6f5b1f35130ae60d6b12
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46527436"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "47816719"
 ---
 # <a name="query-the-data-in-a-review-set"></a>Eseguire query sui dati in un insieme da rivedere
 
@@ -30,7 +30,7 @@ Nella maggior parte dei casi, sarà utile essere in grado di approfondire i dati
 
 ## <a name="creating-and-running-a-query-in-a-review-set"></a>Creazione e esecuzione di una query in un set di Revisione
 
-Per creare ed eseguire una query sui documenti in un set di revisione, fare clic su **nuova query** nel set di revisione. Dopo aver denominato la query e aver definito le condizioni, fare clic su **Salva** per salvare ed eseguire la query. Per eseguire una query salvata in precedenza, fare clic su una query salvata.
+Per creare ed eseguire una query sui documenti in un set di revisione, selezionare **nuova query** nel set di revisione. Dopo aver denominato la query e aver definito le condizioni, selezionare **Salva** per salvare ed eseguire la query. Per eseguire una query salvata in precedenza, selezionare una query salvata.
 
 ![Esaminare le query di set](../media/AeDReviewSetQueries.png)
 
@@ -56,9 +56,9 @@ Sono disponibili più tipi di schede di condizione:
 
 Oltre alle schede delle condizioni, è possibile utilizzare un linguaggio di query simile a KQL nella scheda Parole chiave per creare la query. Il linguaggio di query per le query dei set di revisione supporta gli operatori booleani standard, ad esempio **e**, **o**, **non**e **vicino**. Supporta anche un carattere jolly con caratteri singoli (?) e un carattere jolly a più caratteri (*).
 
-## <a name="using-filters"></a>Utilizzo di filtri
+## <a name="filters"></a>Filtri
 
-Oltre alle query che è possibile salvare, è possibile utilizzare i filtri set di revisione per applicare rapidamente condizioni aggiuntive a una query del set di revisione. In questo modo è possibile affinare ulteriormente i risultati visualizzati da una query del set di revisione.
+Oltre alle query che è possibile salvare, è possibile utilizzare i filtri set di revisione per applicare rapidamente condizioni aggiuntive a una query del set di revisione. L'utilizzo dei filtri consente di affinare ulteriormente i risultati visualizzati da una query del set di revisione.
 
 ![Esaminare i filtri impostati](../media/AeDReviewSetFilters.png)
 

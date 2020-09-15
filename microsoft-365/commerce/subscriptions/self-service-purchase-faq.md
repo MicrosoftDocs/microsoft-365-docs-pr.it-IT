@@ -17,13 +17,13 @@ ms.custom:
 search.appverid:
 - MET150
 description: Trovare le risposte alle domande più frequenti sugli acquisti in modalità self-service.
-ms.date: 08/12/2020
-ms.openlocfilehash: 78a7082a966a866f18ac2aa378198dbb33d8c158
-ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
+ms.date: 09/15/2020
+ms.openlocfilehash: 81143dfe3794bc4f42bea879905bf08750f498b4
+ms.sourcegitcommit: 9f5b136b96b3af4db4cc6f5b1f35130ae60d6b12
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46653702"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "47816926"
 ---
 # <a name="self-service-purchase-faq"></a>Domande frequenti sull'acquisto in modalità self-service
 
@@ -32,7 +32,7 @@ L'acquisto in modalità self-service offre agli utenti la possibilità di provar
 L'acquisto in modalità self-service è disponibile per Power Platform (Power BI, Power Apps e Power automatizzate), Project e Visio.
 
 > [!NOTE]
-> L'acquisto in modalità self-service non è disponibile in India e non è disponibile per i clienti governativi o di istruzione.
+> L'acquisto in modalità self-service non è disponibile in India o per i clienti governativi o di istruzione. Project e Visio non sono disponibili per l'acquisto in modalità self-service in Brasile e nella Repubblica democratica del Congo.
 
 ## <a name="making-a-self-service-purchase"></a>Esecuzione di un acquisto in modalità self-service
 

@@ -17,12 +17,12 @@ ms.assetid: 6057daa8-6372-4e77-a636-7ea599a76128
 ms.custom:
 - seo-marvel-apr2020
 description: Informazioni su come identificare i diversi tipi di blocco che è possibile inserire in una cassetta postale di Exchange online in Microsoft 365.
-ms.openlocfilehash: 1cd947f70c57d453b038ac419abccde006f393ae
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: a76b02f6345421871c759e1b31bf19207b474e2a
+ms.sourcegitcommit: 9f5b136b96b3af4db4cc6f5b1f35130ae60d6b12
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47547454"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "47816825"
 ---
 # <a name="how-to-identify-the-type-of-hold-placed-on-an-exchange-online-mailbox"></a>Come identificare il tipo di blocco applicato a una cassetta postale di Exchange Online
 
@@ -40,11 +40,9 @@ Microsoft 365 offre diversi modi in cui l'organizzazione può impedire che il co
 
   Esistono due tipi di criteri di conservazione Microsoft 365 che possono essere assegnati alle cassette postali.
 
-    - **Criteri di conservazione delle posizioni specifiche:** Si tratta di criteri che vengono assegnati ai percorsi di contenuto di utenti specifici. È possibile utilizzare il cmdlet **Get-Mailbox** in Exchange Online PowerShell per ottenere informazioni sui criteri di conservazione assegnati a cassette postali specifiche.
+    - **Criteri di conservazione delle posizioni specifiche:** Si tratta di criteri che vengono assegnati ai percorsi di contenuto di utenti specifici. È possibile utilizzare il cmdlet **Get-Mailbox** in Exchange Online PowerShell per ottenere informazioni sui criteri di conservazione assegnati a cassette postali specifiche. Per ulteriori informazioni su questo tipo di criteri di conservazione, vedere la sezione [un criterio con inclusioni o esclusioni specifiche](create-retention-policies.md#a-policy-with-specific-inclusions-or-exclusions) dalla documentazione relativa ai criteri di conservazione.
 
-    - **Criteri di conservazione a livello dell'organizzazione:** Si tratta di criteri che vengono assegnati a tutti i percorsi di contenuto dell'organizzazione. È possibile utilizzare il cmdlet **Get-OrganizationConfig** in PowerShell di Exchange Online per ottenere informazioni sui criteri di conservazione a livello dell'organizzazione.
-    
-  Per ulteriori informazioni, vedere [applicazione di un criterio di conservazione a un'intera organizzazione o a una sezione di percorsi specifici](create-retention-policies.md#applying-a-retention-policy-to-an-entire-organization-or-specific-locations) .
+    - **Criteri di conservazione a livello dell'organizzazione:** Si tratta di criteri che vengono assegnati a tutti i percorsi di contenuto dell'organizzazione. È possibile utilizzare il cmdlet **Get-OrganizationConfig** in PowerShell di Exchange Online per ottenere informazioni sui criteri di conservazione a livello dell'organizzazione. Per ulteriori informazioni su questo tipo di criteri di conservazione, vedere la sezione [un criterio che si applica a intere posizioni](create-retention-policies.md#a-policy-that-applies-to-entire-locations) dalla documentazione dei criteri di conservazione.
 
 - **[Etichette di conservazione microsoft 365](retention.md):** se un utente applica un'etichetta di conservazione di Microsoft 365 (una configurata per conservare il contenuto o conservarlo e quindi eliminarlo) in *qualsiasi* cartella o elemento della propria cassetta postale, l'esenzione viene posizionata sulla cassetta postale come se la cassetta postale è stata inserita in una conservazione per controversia legale o assegnata a un criterio di ritenzione Microsoft 365 Per ulteriori informazioni, vedere l' [argomento relativo all'identificazione delle cassette postali in attesa perché è stata applicata un'etichetta di conservazione a una cartella o a una](#identifying-mailboxes-on-hold-because-a-retention-label-has-been-applied-to-a-folder-or-item) sezione di elementi in questo articolo.
 

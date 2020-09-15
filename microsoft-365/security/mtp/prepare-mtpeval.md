@@ -1,7 +1,7 @@
 ---
 title: Preparare l'ambiente di laboratorio di valutazione di Microsoft Threat Protection
-description: Preparare l'accesso delle parti interessate, le sequenze temporali, le considerazioni sull'ambiente e l'ordine di adozione durante la configurazione dell'ambiente di laboratorio di valutazione di Microsoft Threat Protection
-keywords: Preparazione di prova MTP, deploy, Prepare, stakeholder, Timeline, ambiente, endpoint, server, gestione, adozione
+description: Preparare l'accesso delle parti interessate, le sequenze temporali, le considerazioni sull'ambiente e l'ordine di adozione durante la configurazione del laboratorio di valutazione di Microsoft Threat Protection o dell'ambiente pilota
+keywords: Preparazione del processo MTP, preparazione pilota MTP, preparazione per l'esecuzione di un progetto pilota MTP, esecuzione di un progetto pilota MTP, deploy, Prepare, stakeholder, Timeline, Environment, endpoint, server, Management, adoption
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: w10
@@ -15,31 +15,31 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: ad2f34fbb94cafd22976c6ff7c75cdd254e913e3
-ms.sourcegitcommit: 9a275a13af3e063e80ce1bd3cd8142a095db92d2
+ms.openlocfilehash: a684f49ab8c70a19a17ff43195197677bccbf95b
+ms.sourcegitcommit: 9f5b136b96b3af4db4cc6f5b1f35130ae60d6b12
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "47650094"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "47816770"
 ---
-# <a name="prepare-your-microsoft-threat-protection-trial-lab-environment"></a>Preparare l'ambiente di laboratorio di valutazione di Microsoft Threat Protection
+# <a name="prepare-your-microsoft-threat-protection-trial-lab-or-pilot-environment"></a>Preparare il laboratorio di valutazione di Microsoft Threat Protection o l'ambiente pilota
 
 **Si applica a:**
 - Microsoft Threat Protection
 
-La creazione di un ambiente di laboratorio di valutazione di Microsoft Threat Protection e la distribuzione di questo è un processo in tre fasi:
+La creazione di un ambiente pilota o di un laboratorio di valutazione di Microsoft Threat Protection è un processo in tre fasi:
 
 <br>
 <table border="0" width="100%" align="center">
   <tr style="text-align:center;">
     <td align="center" style="width:25%; border:0;" bgcolor="#d5f5e3">
       <a href= "https://docs.microsoft.com/microsoft-365/security/mtp/prepare-mtpeval"> 
-        <img src="../../media/prepare.png" alt="Prepare your Microsoft Threat Protection trial lab environment" title="Preparare l'ambiente di laboratorio di valutazione di Microsoft Threat Protection" />
+        <img src="../../media/prepare.png" alt="Prepare your Microsoft Threat Protection trial lab environment" title="Preparare il laboratorio di valutazione di Microsoft Threat Protection o l'ambiente pilota" />
       <br/>Fase 1: preparazione </a><br>
     </td>
      <td align="center"  >
       <a href="https://docs.microsoft.com/microsoft-365/security/mtp/setup-mtpeval">
-        <img src="../../media/setup.png" alt="Set up your Microsoft Threat Protection trial lab environment" title="Configurare l'ambiente di valutazione di Microsoft Threat Protection" />
+        <img src="../../media/setup.png" alt="Set up your Microsoft Threat Protection trial lab environment" title="Configurare il laboratorio di valutazione di Microsoft Threat Protection o l'ambiente pilota" />
       <br/>Fase 2: installazione </a><br>
         </td>
     <td align="center">
@@ -64,13 +64,13 @@ La creazione di un ambiente di laboratorio di valutazione di Microsoft Threat Pr
 Si è attualmente in fase di preparazione.
 
 
-La preparazione è la chiave per una distribuzione corretta. In questa sezione vengono illustrate le operazioni da prendere in considerazione durante la preparazione per la creazione di un ambiente di prova per la distribuzione di Microsoft Threat Protection.
+La preparazione è la chiave per una distribuzione corretta. In questa sezione vengono illustrate le operazioni da prendere in considerazione durante la preparazione per la creazione di un laboratorio di valutazione o un ambiente pilota per la distribuzione di Microsoft Threat Protection.
 
 ## <a name="prerequisites"></a>Prerequisiti
 Informazioni sui requisiti di licenza, hardware e software e altre impostazioni di configurazione per il provisioning e l'utilizzo di Microsoft Threat Protection. Per ulteriori informazioni, vedere requisiti minimi per [Microsoft Threat Protection](https://docs.microsoft.com/microsoft-365/security/mtp/prerequisites?view=o365-worldwide), [Microsoft Defender atp](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/minimum-requirements), [Office 365 ATP](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description), [Azure ATP](https://docs.microsoft.com/azure-advanced-threat-protection/atp-prerequisites), [Microsoft cloud app Security](https://docs.microsoft.com/azure-advanced-threat-protection/atp-prerequisites).
 
 ## <a name="stakeholders-and-sign-off"></a>Parti interessate e disconnessione
-La sezione seguente serve a identificare tutti gli stakeholder coinvolti nel progetto e che potrebbero dover disconnettersi, rivedere o rimanere informati, anche per una valutazione o una prova del concetto di esecuzione a secco.
+La sezione seguente serve per identificare tutte le parti interessate coinvolte nel progetto e che potrebbe essere necessario disconnettersi, rivedere o rimanere informati, sia per la valutazione che per l'esecuzione di un pilota.
 
 >[!NOTE]
 >Non tutte le organizzazioni potrebbero avere la maturità dell'organizzazione di sicurezza per avere tali ruoli. In tal caso, rivolgersi al proprio team di guida per la revisione e l'approvazione responsabilità.
@@ -92,7 +92,7 @@ Aggiungere le parti interessate alla tabella seguente in base alle esigenze dell
 | Immettere il nome e la posta elettronica | **Analista di sicurezza** *un rappresentante del team di CDOC che può fornire input sulle funzionalità di rilevamento, sull'esperienza utente e sull'utilità complessiva di questa modifica da una prospettiva di operazioni di sicurezza.* | I      |
 
 ## <a name="prepare-your-azure-active-directory"></a>Preparare l'Azure Active Directory
-Ignorare questo passaggio se è già stata abilitata la sincronizzazione tra Active Directory e Azure Active Directory in locale. Esaminare la documentazione relativa alle procedure consigliate esistente da Azure Active Directory. I passaggi seguenti sono ottimizzati per valutare Microsoft Threat Protection.
+Ignorare questo passaggio se è già stata abilitata la sincronizzazione tra Active Directory e Azure Active Directory in locale. Esaminare la documentazione relativa alle procedure consigliate esistente da Azure Active Directory. I passaggi seguenti sono ottimizzati per valutare o eseguire un progetto pilota di Microsoft Threat Protection.
 
 1. Accedere al portale di [Azure Active Directory](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade) > **Azure ad Connect**. 
 ![Immagine della pagina del portale di Azure Active Directory](../../media/mtp-eval-1.png) <br> 
@@ -122,7 +122,7 @@ Ignorare questo passaggio se è già stata abilitata la sincronizzazione tra Act
 
 
 ## <a name="configuration-order"></a>Ordine di configurazione
-La tabella seguente indica l'ordine consigliato da Microsoft per la configurazione dei componenti di Microsoft Threat Protection per la distribuzione dell'ambiente lab di valutazione.
+La tabella seguente indica l'ordine consigliato da Microsoft per la configurazione dei componenti di Microsoft Threat Protection per il laboratorio di valutazione o per la distribuzione di un ambiente pilota.
 
 | Componente                               | Descrizione                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              | Classificazione degli ordini di configurazione |
 |-----------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------|
@@ -132,5 +132,5 @@ La tabella seguente indica l'ordine consigliato da Microsoft per la configurazio
 |Microsoft Defender Advanced Threat Protection | Le funzionalità di rilevamento e di risposta degli endpoint disponibili in Microsoft Defender ATP forniscono il rilevamento di attacchi avanzati quasi in tempo reale. I responsabili della sicurezza possono assegnare priorità agli avvisi in modo efficace, ottenere una visibilità completa su una violazione e adottare azioni di risposta per correggere le minacce. <br> [Ulteriori informazioni.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)                                     |4                    |                                                                                                                                                                                                                                    
 
 ## <a name="next-step"></a>Passaggio successivo
-![Fase 2: installazione](../../media/setup.png) <br>[Fase 2: installazione](setup-mtpeval.md)<br> Configurare l'ambiente di test lab di Microsoft Threat Protection
+![Fase 2: installazione](../../media/setup.png) <br>[Fase 2: installazione](setup-mtpeval.md)<br> Configurare il laboratorio di valutazione di Microsoft Threat Protection o l'ambiente pilota
 
