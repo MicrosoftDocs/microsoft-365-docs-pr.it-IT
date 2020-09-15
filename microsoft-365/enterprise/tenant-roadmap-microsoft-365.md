@@ -13,20 +13,20 @@ localization_priority: Normal
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: La Guida di orientamento per la configurazione dei tenant per Microsoft 365.
-ms.openlocfilehash: 540d1bc53ac06b85d22a8a60a62e51761e10339c
-ms.sourcegitcommit: 19515d787246d38c4e0da579a767ce67b9dbc2bc
+ms.openlocfilehash: 7834e8b7f9ff8a1b33f2f2a7ccc4a499e4da7c69
+ms.sourcegitcommit: 13ae76220b4ad688438a5d1031a6e1b5300ffa23
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/31/2020
-ms.locfileid: "47315754"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "47775148"
 ---
 # <a name="tenant-roadmap-for-microsoft-365"></a>Guida di orientamento tenant per Microsoft 365
 
-Il tenant Microsoft 365 è l'insieme di servizi assegnati alla propria organizzazione. Questo tenant è in genere associato a uno o più nomi di dominio DNS e funge da contenitore centrale per sottoscrizioni diverse e licenze all'interno delle quali viene assegnato agli account utente. 
+Il tenant Microsoft 365 è l'insieme di servizi assegnati alla propria organizzazione. In genere, questo tenant è associato a uno o più nomi di dominio DNS e funge da contenitore centrale per sottoscrizioni diverse e licenze all'interno delle quali viene assegnato agli account utente.
 
 Quando si crea un tenant di Microsoft 365, è possibile assegnarlo a una specifica posizione geografica. È inoltre possibile disporre di un tenant con più posizioni geografiche e spostare il tenant da una posizione a un'altra.
 
-Una configurazione del tenant ben pianificata e eseguita è fondamentale per prepararla per i servizi di base della rete e dell'identità.
+Per ottenere il tenant pronto per i servizi di base della rete e dell'identità, è importante pianificare attentamente ed eseguire la configurazione del tenant.
 
 ## <a name="plan"></a>Piano
 
@@ -50,13 +50,13 @@ Per distribuire il tenant, [aggiungere i domini DNS](https://docs.microsoft.com/
 
 Con Microsoft 365 Multi-Geo l'organizzazione può espandere la presenza di Microsoft 365 a più paesi/aree geografiche all'interno del tenant esistente.
 
-[Introduzione](microsoft-365-multi-geo.md) a Understanding, Planning, Configuring e then Administering with Microsoft 365 multi-Geo.
+Per informazioni su Microsoft 365 multi-Geo, inclusa la pianificazione, la configurazione e l'amministrazione, [iniziare da qui](microsoft-365-multi-geo.md).
 
 ## <a name="move-a-tenants-geographic-locations"></a>Spostare le posizioni geografiche di un tenant
 
 Microsoft continua ad aprire nuove aree geografiche di datacenter (GEOS) per i servizi di Microsoft 365. Questi nuovi datacenter GEOS aggiungono capacità e risorse di calcolo per supportare la crescita della domanda e dell'utilizzo dei clienti. Inoltre, il nuovo datacenter GEOS offre la residenza di dati in-Geo per i dati di base dei clienti.
 
-Informazioni introduttive sulla comprensione e la richiesta di spostamento di dati geo con lo [spostamento di dati di base in un nuovo datacenter geografico Microsoft 365](moving-data-to-new-datacenter-geos.md).
+Per informazioni su Microsoft 365 datacenter Geo, incluso il modo in cui richiedere una mossa di geo data, [iniziare da qui](moving-data-to-new-datacenter-geos.md).
 
 ## <a name="next-step"></a>Passaggio successivo
 
