@@ -15,12 +15,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: da0fd99aaa533c6e4f65b5b279adcd9a4b648c9c
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+ms.openlocfilehash: ad2f34fbb94cafd22976c6ff7c75cdd254e913e3
+ms.sourcegitcommit: 9a275a13af3e063e80ce1bd3cd8142a095db92d2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44049628"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "47650094"
 ---
 # <a name="prepare-your-microsoft-threat-protection-trial-lab-environment"></a>Preparare l'ambiente di laboratorio di valutazione di Microsoft Threat Protection
 
@@ -35,12 +35,12 @@ La creazione di un ambiente di laboratorio di valutazione di Microsoft Threat Pr
     <td align="center" style="width:25%; border:0;" bgcolor="#d5f5e3">
       <a href= "https://docs.microsoft.com/microsoft-365/security/mtp/prepare-mtpeval"> 
         <img src="../../media/prepare.png" alt="Prepare your Microsoft Threat Protection trial lab environment" title="Preparare l'ambiente di laboratorio di valutazione di Microsoft Threat Protection" />
-      <br/>Fase 1: preparazione</a><br>
+      <br/>Fase 1: preparazione </a><br>
     </td>
      <td align="center"  >
       <a href="https://docs.microsoft.com/microsoft-365/security/mtp/setup-mtpeval">
         <img src="../../media/setup.png" alt="Set up your Microsoft Threat Protection trial lab environment" title="Configurare l'ambiente di valutazione di Microsoft Threat Protection" />
-      <br/>Fase 2: installazione</a><br>
+      <br/>Fase 2: installazione </a><br>
         </td>
     <td align="center">
       <a href="https://docs.microsoft.com/microsoft-365/security/mtp/config-mtpeval">
@@ -126,13 +126,11 @@ La tabella seguente indica l'ordine consigliato da Microsoft per la configurazio
 
 | Componente                               | Descrizione                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              | Classificazione degli ordini di configurazione |
 |-----------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------|
-| Office 365 Advanced Threat Protection| Office 365 ATP salvaguarda l'organizzazione da minacce dannose poste da messaggi di posta elettronica, collegamenti (URL) e strumenti di collaborazione. <br> [Ulteriori informazioni.](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp?view=o365-worldwide)                                                                                                                                                                                                                                             | 1                   |
-|Azure Advanced Threat Protection|Azure ATP utilizza segnali di Active Directory per identificare, rilevare ed esaminare le minacce avanzate, le identità compromesse e le azioni Insider dannose indirizzate alla propria organizzazione. <br> [Altre informazioni](https://docs.microsoft.com/azure-advanced-threat-protection/).| 2 |
-|Microsoft Cloud App Security| Microsoft cloud app Security è un broker di sicurezza cloud Access (CASB) che opera su più cloud. Offre una visibilità completa, il controllo dei dati di viaggio e un'analisi avanzata per identificare e combattere Cyberthreats in tutti i servizi cloud. <br> [Altre informazioni](https://docs.microsoft.com/cloud-app-security/).                                                                                                                                                                                                                                                                                                                                                                       |3                   |
+| Office 365 Advanced Threat Protection| Office 365 ATP salvaguarda l'organizzazione da minacce dannose poste da messaggi di posta elettronica, collegamenti (URL) e strumenti di collaborazione. <br> [Ulteriori informazioni.](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp?view=o365-worldwide)                                                                                                                                                                                                                                             | 1                    |
+|Azure Advanced Threat Protection|Azure ATP utilizza segnali di Active Directory per identificare, rilevare ed esaminare le minacce avanzate, le identità compromesse e le azioni Insider dannose indirizzate alla propria organizzazione. <br> [Altre informazioni](https://docs.microsoft.com/azure-advanced-threat-protection/).| 2  |
+|Microsoft Cloud App Security| Microsoft cloud app Security è un broker di sicurezza cloud Access (CASB) che opera su più cloud. Offre una visibilità completa, il controllo dei dati di viaggio e un'analisi avanzata per identificare e combattere Cyberthreats in tutti i servizi cloud. <br> [Altre informazioni](https://docs.microsoft.com/cloud-app-security/).                                                                                                                                                                                                                                                                                                                                                                       |3                    |
 |Microsoft Defender Advanced Threat Protection | Le funzionalità di rilevamento e di risposta degli endpoint disponibili in Microsoft Defender ATP forniscono il rilevamento di attacchi avanzati quasi in tempo reale. I responsabili della sicurezza possono assegnare priorità agli avvisi in modo efficace, ottenere una visibilità completa su una violazione e adottare azioni di risposta per correggere le minacce. <br> [Ulteriori informazioni.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)                                     |4                    |                                                                                                                                                                                                                                    
 
 ## <a name="next-step"></a>Passaggio successivo
-|||
-|:-------|:-----|
-|![Fase 2: installazione](../../media/setup.png) <br>[Fase 2: installazione](setup-mtpeval.md) | Configurare l'ambiente di test lab di Microsoft Threat Protection
+![Fase 2: installazione](../../media/setup.png) <br>[Fase 2: installazione](setup-mtpeval.md)<br> Configurare l'ambiente di test lab di Microsoft Threat Protection
 

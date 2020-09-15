@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: f6ee8147965a29b87d84690535116f096e4c6006
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+ms.openlocfilehash: a9d7b514aac8d1a769c0dabf6dcdb54f4bcb447b
+ms.sourcegitcommit: 9a275a13af3e063e80ce1bd3cd8142a095db92d2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44049640"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "47649962"
 ---
 # <a name="create-a-microsoft-threat-protection-trial-lab-environment"></a>Creare un ambiente lab di valutazione di Microsoft Threat Protection 
 
@@ -78,6 +78,5 @@ Di seguito sono riportate le seguenti condizioni:
 -   Test di penetrazione nell'ambiente di produzione
 
 ## <a name="next-step"></a>Passaggio successivo
-|||
-|:-------|:-----|
-|![Fase 1: preparazione](../../media/prepare.png) <br>[Fase 1: preparazione](prepare-mtpeval.md) | Preparare l'ambiente lab di valutazione di Microsoft Threat Protection
+![Fase 1: preparazione](../../media/prepare.png) <br>[Fase 1: preparazione](prepare-mtpeval.md) 
+<br> Preparare l'ambiente lab di valutazione di Microsoft Threat Protection

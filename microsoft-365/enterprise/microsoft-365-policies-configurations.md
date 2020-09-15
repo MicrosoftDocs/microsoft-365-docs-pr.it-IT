@@ -6,7 +6,7 @@ author: JoeDavies-MSFT
 manager: laurawi
 ms.prod: microsoft-365-enterprise
 ms.topic: article
-ms.date: 08/31/2020
+ms.date: 09/14/2020
 f1.keywords:
 - NOCSH
 ms.reviewer: martincoetzer
@@ -17,26 +17,33 @@ ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
 - m365solution-identitydevice
-ms.openlocfilehash: 375e58214e19960d3e3100a0c1051fe7c4924aae
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: be35663fc32a2d214e1ca0ae91161079a5f672a3
+ms.sourcegitcommit: a13f43a3e981c90f1e0b9805c9c16a56f67fc650
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47546643"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "47651145"
 ---
 # <a name="identity-and-device-access-configurations"></a>Configurazioni di identità e accesso dei dispositivi
 
-In questa serie di articoli viene descritto come configurare l'accesso sicuro ai servizi cloud tramite Microsoft 365 per i prodotti Enterprise mediante l'implementazione di un ambiente e di una configurazione consigliati, tra cui un set prescritto di criteri di accesso condizionale e funzionalità correlate. È possibile utilizzare queste linee guida per proteggere l'accesso a tutti i servizi integrati con Azure Active Directory (Azure AD), compresi i servizi Microsoft 365, altri servizi SaaS e le applicazioni locali pubblicate con il proxy di applicazione Azure AD.
+Il perimetro di sicurezza moderno dell'organizzazione ora si estende oltre la rete per includere gli utenti che accedono alle app basate su cloud da qualsiasi percorso con una vasta gamma di dispositivi. L'infrastruttura di sicurezza deve determinare se una richiesta di accesso specificata deve essere concessa e in quali condizioni. 
 
-Questi suggerimenti:
+Questa determinazione deve basarsi sull'accesso dell'account utente, sul dispositivo utilizzato, sulle app che l'utente sta cercando di accedere, sul percorso da cui viene effettuata la richiesta di accesso e sulla valutazione del rischio della richiesta. Questa funzionalità consente di garantire che solo gli utenti e i dispositivi approvati possano accedere alle risorse critiche.
 
+In questa serie di articoli viene descritto un insieme di configurazioni dei prerequisiti di accesso a identità e dispositivi e un set di accessi condizionali di Azure Active Directory (Azure AD), Microsoft Intune e altri criteri per garantire l'accesso a Microsoft 365 per le app e i servizi cloud aziendali, altri servizi SaaS e applicazioni locali pubblicate con proxy di applicazione Azure AD.
+
+Le impostazioni e i criteri di accesso ai dispositivi e alle identità sono consigliati in tre livelli: protezione di base, protezione riservata e protezione per ambienti con dati altamente regolamentati o classificati. Questi livelli e le relative configurazioni offrono livelli coerenti di protezione tra i dati, le identità e i dispositivi.
+
+Queste funzionalità e i relativi suggerimenti:
+
+- Sono supportate in Microsoft 365 E3 e Microsoft 365 E5.
 - Sono allineati con [Microsoft Secure Score](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-secure-score) così come il [Punteggio di identità in Azure ad](https://docs.microsoft.com/azure/active-directory/fundamentals/identity-secure-score)e aumentano questi punteggi per l'organizzazione.
-- Consentirà di implementare questi [cinque passaggi per proteggere l'infrastruttura di identità](https://docs.microsoft.com/azure/security/azure-ad-secure-steps). 
+- Consentirà di implementare questi [cinque passaggi per proteggere l'infrastruttura di identità](https://docs.microsoft.com/azure/security/azure-ad-secure-steps).
 
 Se nell'organizzazione sono presenti requisiti o complessità univoci per l'ambiente, utilizzare questi suggerimenti come punto di partenza. Tuttavia, la maggior parte delle organizzazioni può implementare questi suggerimenti come prescritto.
 
 >[!Note]
->Microsoft vende anche licenze Enterprise Mobility + Security (EMS) per le sottoscrizioni di Office 365. Le funzionalità EMS E3 e EMS E5 sono approssimativamente equivalenti a quelle di Microsoft 365 E3 e Microsoft 365 E5. Vedere i [piani di EMS](https://www.microsoft.com/en-us/microsoft-365/enterprise-mobility-security/compare-plans-and-pricing) per i dettagli.
+>Microsoft vende anche licenze Enterprise Mobility + Security (EMS) per le sottoscrizioni di Office 365. Le funzionalità EMS E3 e EMS E5 sono equivalenti a quelle di Microsoft 365 E3 e Microsoft 365 E5. Vedere i [piani di EMS](https://www.microsoft.com/en-us/microsoft-365/enterprise-mobility-security/compare-plans-and-pricing) per i dettagli.
 >
 
 ## <a name="intended-audience"></a>Pubblico previsto
