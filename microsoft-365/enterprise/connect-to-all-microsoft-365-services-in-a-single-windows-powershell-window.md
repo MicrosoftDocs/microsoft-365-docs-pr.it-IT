@@ -18,12 +18,12 @@ ms.custom:
 - httpsfix
 ms.assetid: 53d3eef6-4a16-4fb9-903c-816d5d98d7e8
 description: "Riepilogo: Effettuare la connessione a tutti i servizi di Microsoft 365 in un'unica finestra di PowerShell."
-ms.openlocfilehash: 08d2f4c6ce67aa9fea196d56b2eb5f36a36d7943
-ms.sourcegitcommit: aeb94601a81db3ead8610c2f36cff30eb9fe10e7
+ms.openlocfilehash: e4cb3a10d14f6d4c16ef9323d6e5b3c500ebc0c5
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "47430047"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47545975"
 ---
 # <a name="connect-to-all-microsoft-365-services-in-a-single-powershell-window"></a>Effettuare la connessione a tutti i servizi di Microsoft 365 in un'unica finestra di PowerShell
 
@@ -63,11 +63,11 @@ Per poter gestire tutti i servizi di Microsoft 365 da una singola istanza di Pow
     
 - È necessario installare i moduli necessari per Azure Active Directory (Azure AD), Exchange Online, SharePoint Online, Skype for Business Online e Teams:
     
-   - [Azure Active Directory V2](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)
-   - [SharePoint Online Management Shell](https://go.microsoft.com/fwlink/p/?LinkId=255251)
-   - [Skype for Business Online, moduli PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=532439)
-   - [Exchange Online PowerShell V2](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell-v2/exchange-online-powershell-v2#install-and-maintain-the-exchange-online-powershell-v2-module)
-   - [Panoramica di PowerShell per Teams](https://docs.microsoft.com/microsoftteams/teams-powershell-overview)
+  - [Azure Active Directory V2](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)
+  - [SharePoint Online Management Shell](https://go.microsoft.com/fwlink/p/?LinkId=255251)
+  - [Skype for Business Online, moduli PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=532439)
+  - [Exchange Online PowerShell V2](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell-v2#install-and-maintain-the-exchange-online-powershell-v2-module)
+  - [Panoramica di PowerShell per Teams](https://docs.microsoft.com/microsoftteams/teams-powershell-overview)
     
 -  PowerShell deve essere configurato per l'esecuzione di script firmati per Skype for Business Online e il Centro sicurezza &amp; conformità. A tale scopo, eseguire il comando seguente in una sessione di PowerShell con privilegi elevati (una finestra PowerShell che si apre selezionando **Esegui come amministratore**).
     
