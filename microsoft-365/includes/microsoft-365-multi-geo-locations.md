@@ -1,5 +1,5 @@
 
-|**Posizione geografica**             |**Codice**|**Posizione dei dati in eDiscovery**      |
+|  Posizione geografica               |  Codice  |  Posizione dei dati in eDiscovery        |
 |:----------------------------|:-------|:---------------------------------|
 |Asia-Pacifico                 |APC     |Datacenter Asia orientale o sudorientale|
 |Australia                    |AUS     |Datacenter Asia orientale o sudorientale|
