@@ -13,18 +13,18 @@ localization_priority: Priority
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: Fornisce un’introduzione ai componenti, ai piani e ai percorsi di distribuzione di Microsoft 365 per le aziende.
-ms.openlocfilehash: 55c7ca87d307fc9891d9967029f15e25414d7c18
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 1a7c0cbb339ae0023264fbafb39e9b8682e98af2
+ms.sourcegitcommit: 13ae76220b4ad688438a5d1031a6e1b5300ffa23
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46686325"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "47775184"
 ---
 # <a name="microsoft-365-for-enterprise-overview"></a>Panoramica di Microsoft 365 per le aziende
 
-Microsoft 365 per le aziende è una soluzione completa e intelligente che offre a tutti gli strumenti necessari per essere creativi e collaborare in modo sicuro. 
+Microsoft 365 per le aziende è una soluzione completa e intelligente che offre a tutti gli strumenti necessari per essere creativi e collaborare in modo sicuro.
 
-Anche se è progettato per le grandi organizzazioni, Microsoft 365 per le aziende può essere usato anche per le piccole e medie imprese che hanno bisogno delle funzionalità di sicurezza e produttività più avanzate. 
+Microsoft 365 per le aziende è progettato per le grandi organizzazioni, ma può essere usato anche per le piccole e medie imprese che hanno bisogno delle funzionalità di sicurezza e produttività più avanzate.
 
 ## <a name="components"></a>Componenti
 
@@ -32,9 +32,9 @@ Microsoft 365 per le aziende comprende:
 
 | Servizi | Descrizione |
 |:-------|:-----|
-| App e servizi di produttività locali e basati sul cloud | Include sia Microsoft 365 Apps for enterprise, le app di Office più recenti per PC e Mac, come Word, Excel, PowerPoint, Outlook e altre, che una gamma completa di servizi online per la posta elettronica, l'archiviazione dei file e la collaborazione, riunioni e altro ancora. |
-| Windows 10 Enterprise | Risponde alle esigenze delle organizzazioni di grandi e medie dimensioni, fornendo agli utenti la versione più produttiva e sicura di Windows e ai professionisti IT una gestione completa di distribuzione, dispositivi e app. |
-| Gestione dei dispositivi e servizi di sicurezza avanzati | Include Microsoft Intune, che è un servizio di gestione della mobilità aziendale (EMM) basato sul cloud che consente alla forza lavoro di essere produttiva, proteggendo al tempo stesso i dati dell’organizzazione. |
+| App e servizi di produttività locali e basati su cloud | Include sia Microsoft 365 Apps for enterprise, le app di Office più recenti per PC e Mac, come Word, Excel, PowerPoint, Outlook e altre, che una gamma completa di servizi online per la posta elettronica, l'archiviazione dei file e la collaborazione, riunioni e altro ancora. |
+| Windows 10 Enterprise | Soddisfa le esigenze delle grandi e medie imprese. È la versione più produttiva e sicura di Windows per gli utenti. Per i professionisti IT, include anche funzionalità complete per la gestione di distribuzioni, dispositivi e app. |
+| Gestione dei dispositivi e servizi di sicurezza avanzati | Include Microsoft Intune, un servizio di gestione della mobilità aziendale basato su cloud che consente alla forza lavoro di essere produttiva, proteggendo al tempo stesso i dati dell’organizzazione. |
 |||
 
 ## <a name="plans"></a>Piani
@@ -43,9 +43,9 @@ Microsoft 365 per le aziende è disponibile in tre piani.
 
 | Nome del piano | Funzionalità |
 |:-------|:-----|
-| E3 | Accedi ai prodotti e alle funzionalità principali di Microsoft 365 per migliorare la produttività sul luogo di lavoro e favorire l'innovazione in modo sicuro. |
-| E5 | Accedi ai prodotti e alle funzionalità più recenti di Microsoft 365, come gli strumenti per la protezione avanzata dalle minacce, la sicurezza e la collaborazione. Include tutte le funzionalità di E3 e, in aggiunta, strumenti per la sicurezza avanzata, la voce e l'analisi dei dati. |
-| F3 | Connettiti con i firstline workers attraverso gli strumenti e le risorse appositamente realizzate che consentono loro di lavorare nel modo più efficiente. |
+| E3 | Accedi ai prodotti e alle funzionalità principali di Microsoft 365 per migliorare in modo sicuro la produttività sul luogo di lavoro e favorire l'innovazione. |
+| E5 | Accedi ai prodotti e alle funzionalità più recenti di Microsoft 365. Questi includono gli strumenti avanzati di protezione dalle minacce, di sicurezza e di collaborazione. Questo piano include tutte le funzionalità di E3 e, in aggiunta, strumenti per la sicurezza avanzata, la voce e l'analisi dei dati. |
+| F3 | Connettiti con gli operatori sul campo attraverso gli strumenti e le risorse appositamente realizzate che possono usare per lavorare nel modo più efficiente. |
 |||
 
 Se si ha Microsoft 365 E3, è possibile ottenere anche questi componenti aggiuntivi:
@@ -55,7 +55,7 @@ Se si ha Microsoft 365 E3, è possibile ottenere anche questi componenti aggiunt
 - [Microsoft 365 E5 Compliance](https://www.microsoft.com/microsoft-365/business/e5-compliance)
 - Rischi Insider di Microsoft 365 E5
 
-Queste offerte contengono funzionalità aggiuntive incluse in Microsoft 365 E5.
+Gli utenti di Microsoft 365 E3 possono usare questi componenti aggiuntivi per sfruttare le funzionalità aggiuntive disponibili in Microsoft 365 E5.
 
 Per altre informazioni, vedere [Caratteristiche e funzionalità per ogni piano](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans).
 
@@ -63,23 +63,23 @@ Per altre informazioni, vedere [Caratteristiche e funzionalità per ogni piano](
 
 Il [poster di Microsoft 365 per le aziende](../downloads/Microsoft365Enterprise.pdf) rappresenta una posizione centrale da visualizzare:
 
-- I vantaggi di Microsoft 365 per le aziende e il modo in cui le app e i servizi corrispondono ai suoi valori fondamentali
-- Piani di Microsoft 365 per le aziende e quali componenti contengono 
-- I componenti principali del Luogo di lavoro moderno, che sono abilitati da Microsoft 365 per le aziende
-- La [Raccolta di produttività di Microsoft 365](https://www.microsoft.com/microsoft-365/success/) e gli scenari rappresentativi per alcuni dipartimenti comuni dell’organizzazione
+- I vantaggi di Microsoft 365 per le aziende, e il modo in cui le app e i servizi riflettono i suoi valori fondamentali.
+- Piani di Microsoft 365 per le aziende e i loro componenti.
+- I componenti principali del Luogo di lavoro moderno di Microsoft, che sono abilitati da Microsoft 365 per le aziende.
+- La [Raccolta di produttività di Microsoft 365](https://www.microsoft.com/microsoft-365/success/) e gli scenari rappresentativi per alcuni reparti comuni dell’organizzazione.
 
 [![Immagine per il poster di Microsoft 365 per aziende](../media/microsoft-365-overview/m365e-poster.png)](../downloads/Microsoft365Enterprise.pdf)
 
-Per scaricare una copia del poster, fare clic [qui](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/Microsoft365Enterprise.pdf).
+Si può anche [scaricare una copia del poster](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/Microsoft365Enterprise.pdf).
 
 
 ## <a name="transition-your-entire-organization"></a>Transizione dell'intera organizzazione
 
-Per avere un quadro più completo su come spostare l'intera organizzazione ai prodotti e servizi in Microsoft 365 per le aziende, vedere il [poster di transizione](../downloads/transition-org-to-m365.pdf).
+Per avere un quadro più completo su come introdurre i prodotti e servizi di Microsoft 365 per le aziende in tutta la propria organizzazione, vedere il [poster della transizione](../downloads/transition-org-to-m365.pdf).
 
-[![Immagine per il poster di transizione a Microsoft 365](../media/microsoft-365-overview/transition-org-to-m365.png)](../downloads/transition-org-to-m365.pdf)
+[![Immagine per il poster della transizione a Microsoft 365](../media/microsoft-365-overview/transition-org-to-m365.png)](../downloads/transition-org-to-m365.pdf)
 
-Questo poster a due pagine rappresenta un modo rapido per fare l’inventario dell’infrastruttura esistente e ottenere le indicazioni e passare al prodotto o al servizio corrispondente in Microsoft 365 per le aziende. Include i prodotti di Windows e Office e altri elementi di infrastruttura e sicurezza, come la gestione dei dispositivi, l'identità e la protezione delle informazioni e dalle minacce.
+Questo poster di due pagine è modo rapido per inventariare l'infrastruttura esistente. Consente di trovare indicazioni e di passare al prodotto o servizio corrispondente in Microsoft 365. Include i prodotti di Windows e Office e altri elementi di infrastruttura e sicurezza, come la gestione dei dispositivi, le identità e la protezione delle informazioni e dalle minacce.
 
 È anche possibile [scaricare il poster](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/transition-org-to-m365.pdf) e stamparlo in formato lettera, legale o tabloid (11 x 17).
 
@@ -106,25 +106,25 @@ Questo poster di una pagina rappresenta un modo rapido per comprendere i vari pe
 
 Sono disponibili tre modi per pianificare la distribuzione di prodotti, caratteristiche e componenti di Microsoft 365 per le aziende:
 
-1. In partnership con FastTrack
+- In partnership con FastTrack:
   
    Con FastTrack, i tecnici Microsoft aiuteranno a passare al cloud secondo i tempi desiderati. Vedere [FastTrack per Microsoft 365](https://fasttrack.microsoft.com/microsoft365).
   
-2. Con il supporto di Microsoft Consulting Services o di un [partner Microsoft](https://partner.microsoft.com/).
+- Con il supporto di Microsoft Consulting Services o di un [partner Microsoft](https://partner.microsoft.com/):
 
    I consulenti possono analizzare l'infrastruttura corrente e aiutare a sviluppare un piano per integrare interamente il software e i servizi di Microsoft 365 per le aziende.
 
-3. Fai da te
+- Fai da te:
 
-   Iniziare con [Roadmap di rete](networking-roadmap-microsoft-365.md) per sviluppare o verificare i carichi di lavoro esistenti di infrastruttura e produttività. 
+   Iniziare con la [Roadmap di rete](networking-roadmap-microsoft-365.md) per sviluppare o verificare i carichi di lavoro esistenti per l'infrastruttura e la produttività. 
 
-Vedere come la [Contoso Corporation](contoso-overview.md), un'organizzazione multinazionale fittizia ma rappresentativa, ha distribuito Microsoft 365 per le aziende.
+Per un esempio di come Microsoft 365 è stato implementato dauna organizzazione multimazionale fittizia, ma rappresentativa, vedere la [Contoso Corporation](contoso-overview.md).
 
 ## <a name="additional-microsoft-365-products"></a>Altri prodotti di Microsoft 365
 
 - [Microsoft 365 Business Premium](https://docs.microsoft.com/microsoft-365/business/)
  
-  È possibile unire le migliori funzionalità di produttività e collaborazione con soluzioni per la sicurezza e la gestione dei dispositivi per proteggere i dati aziendali di piccole e medie imprese (SMB).
+  È possibile unire le migliori funzionalità di produttività e collaborazione con soluzioni per la sicurezza e la gestione dei dispositivi per proteggere i dati aziendali di piccole e medie imprese.
 
 - [Microsoft 365 Education](https://docs.microsoft.com/education)
  
@@ -138,7 +138,7 @@ Vedere come la [Contoso Corporation](contoso-overview.md), un'organizzazione mul
 
 ![Formazione sulle nozioni fondamentali di Microsoft 365](../media/microsoft-365-overview/m365-fundamentals.svg)
 
-Fare formazione e impegnarsi per ottenere una certificazione di Microsoft 365. Iniziare con [Nozioni fondamentali su Microsoft 365](https://docs.microsoft.com/learn/paths/m365-fundamentals/).
+Per altre informazioni su Microsoft 365 e su come ottenere una certificazione Microsoft 365, si può iniziare da [Microsoft 365 Certified: aspetti fondamentali](https://docs.microsoft.com/learn/paths/m365-fundamentals/).
 
 
 ## <a name="see-also"></a>Vedere anche
