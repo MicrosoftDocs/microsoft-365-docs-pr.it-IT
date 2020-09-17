@@ -7,21 +7,6 @@
           href: top-security-tasks-for-remote-work.md
         - name: Centro sicurezza Microsoft 365 per BDM
           href: Microsoft-365-security-for-bdm.md
-        - name: Workshop di formazione per Chief Information Security Officer (CISO)
-          href: ./office-365-security/ciso-workshop.md
-          items:
-            - name: Modulo 1 - Presentazione sulla sicurezza informatica in Microsoft
-              href: ./office-365-security/ciso-workshop-module-1.md
-            - name: Modulo 2 - Gestione della sicurezza
-              href: ./office-365-security/ciso-workshop-module-2.md
-            - name: Modulo 3 - Accesso degli utenti con identità e Zero Trust
-              href: ./office-365-security/ciso-workshop-module-3.md
-            - name: 'Modulo4a - Strategia di protezione dalle minacce, Parte I'
-              href: ./office-365-security/ciso-workshop-module-4a.md
-            - name: 'Modulo 4b - Strategia di protezione dalle minacce, Parte II'
-              href: ./office-365-security/ciso-workshop-module-4b.md
-            - name: Modulo 5 - Protezione delle informazioni
-              href: ./office-365-security/ciso-workshop-module-5.md
     - name: Configurazioni di identità e accesso dei dispositivi
       href: ../enterprise/microsoft-365-policies-configurations.md
       items:
@@ -87,7 +72,7 @@
               href: mtp/generate-test-alert.md
         - name: Procedure
           items:
-            - name: Creare un ambiente per i laboratori di valutazione
+            - name: Crea un laboratorio di valutazione o un ambiente pilota
               href: mtp/mtp-evaluation.md
             - name: Distribuire i servizi supportati
               href: mtp/deploy-supported-services.md
@@ -127,6 +112,8 @@
                   href: mtp/advanced-hunting-overview.md
                 - name: Conoscere il linguaggio delle query
                   href: mtp/advanced-hunting-query-language.md
+                - name: Ottienere una formazione esperta
+                  href: mtp/advanced-hunting-expert-training.md
                 - name: Applicare le procedure consigliate per le query
                   href: mtp/advanced-hunting-best-practices.md
                 - name: Usare i risultati delle query
@@ -219,22 +206,62 @@
                   href: mtp/monitor-devices.md
                 - name: Monitoraggio e creazione di report relativi alle app
                   href: mtp/monitor-apps.md
+            - name: API
+              items: null
+        - name: Riferimenti
+          items:
             - name: Autorizzazioni e impostazioni
               items:
                 - name: Gestire accessi
                   href: mtp/mtp-permissions.md
                 - name: Impostare il fuso orario
                   href: mtp/mtp-time-zone.md
-            - name: Visualizzare i profili dei dispositivi
-              href: mtp/device-profile.md
-            - name: Inviare feedback
-              href: mtp/feedback.md
-            - name: Creare ticket e attività di ServiceNow
+                - name: Visualizzare i profili dei dispositivi
+                  href: mtp/device-profile.md
+                - name: Inviare feedback
+                  href: mtp/feedback.md
+                - name: Creare ticket e attività di ServiceNow
+                  items:
+                    - name: Panoramica sull'integrazione di ServiceNow
+                      href: ./mtp/tickets.md
+                    - name: Ticket di ServiceNow nel centro sicurezza
+                      href: ./mtp/tickets-security-center.md
+            - name: API per Microsoft Threat Protection (Anteprima)
               items:
-                - name: Panoramica sull'integrazione di ServiceNow
-                  href: ./mtp/tickets.md
-                - name: Ticket di ServiceNow nel centro sicurezza
-                  href: ./mtp/tickets-security-center.md
+                - name: Panoramica delle API per Microsoft Threat Protection (Anteprima)
+                  href: mtp/api-overview.md
+                - name: Iniziare con le API per Microsoft Threat Protection (Anteprima)
+                  items:
+                    - name: Licenza e condizioni per l'utilizzo per le API per Microsoft Threat Protection
+                      href: mtp/api-terms.md
+                    - name: Accedere alle API per Microsoft Threat Protection
+                      href: mtp/api-access.md
+                    - name: Esempio Hello World
+                      href: mtp/api-hello-world.md
+                    - name: Ottenere l'accesso con il contesto delle applicazioni
+                      href: mtp/api-create-app-web.md
+                    - name: Ottenere l'accesso con il contesto utente
+                      href: mtp/api-create-app-user-context.md
+                    - name: Ottenere l'accesso alle applicazioni partner
+                      href: mtp/api-partner-access.md
+                    - name: Altre risorse API
+                      href: mtp/api-articles.md
+                - name: API per Microsoft Threat Protection e schema (Anteprima)
+                  items:
+                    - name: API supportate per Microsoft Threat Protection
+                      href: mtp/api-supported.md
+                    - name: Codici di errore API REST comuni
+                      href: mtp/api-error-codes.md
+                    - name: Rilevazione avanzata API
+                      href: mtp/api-advanced-hunting.md
+                    - name: Incidenti delle API
+                      items:
+                        - name: Metodi e proprietà d’incidente
+                          href: mtp/api-incident.md
+                        - name: Elencare incidenti
+                          href: mtp/api-list-incidents.md
+                        - name: Aggiornare incidente
+                          href: mtp/api-update-incidents.md
     - name: Sicurezza di Office 365
       items:
         - name: Per iniziare
