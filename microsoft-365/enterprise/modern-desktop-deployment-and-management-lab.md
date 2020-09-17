@@ -1,5 +1,5 @@
 ---
-title: Lab Kit di distribuzione di Windows e Office
+title: Kit Lab per la distribuzione di Windows e Office
 f1.keywords:
 - NOCSH
 ms.author: josephd
@@ -15,14 +15,14 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Informazioni su e dove accedere al Lab Kit di distribuzione di Windows e Office.
-ms.openlocfilehash: 751d2a04daa707049c59b9b7cabb18ca06a598d1
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 09441f879fa41d1b920aae7d37625d0a52160d84
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46685499"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47949881"
 ---
-# <a name="windows-and-office-deployment-lab-kit"></a>Lab Kit di distribuzione di Windows e Office
+# <a name="windows-and-office-deployment-lab-kit"></a>Kit Lab per la distribuzione di Windows e Office
 
 Questi laboratori sono stati studiati per semplificare la pianificazione, la verifica e la convalida della distribuzione e della gestione dei desktop che eseguono Windows 10 Enterprise e Microsoft 365 Apps for Enterprise. Il cover Labs utilizza Microsoft endpoint Configuration Manager, analisi desktop, strumento di personalizzazione di Office, OneDrive, Windows Autopilot e altro ancora.
 
@@ -32,7 +32,7 @@ Questo kit è altamente consigliato per le organizzazioni che si preparano per g
 
 ## <a name="a-complete-lab-environment"></a>Un ambiente lab completo
 
-Il lab fornisce un ambiente lab virtuale con provisioning automatico, che comprende client desktop aggiunti a un dominio, un controller di dominio, gateway Internet e un'istanza completamente configurata di Configuration Manager. Il lab contiene versioni di valutazione dei prodotti seguenti:
+Il lab fornisce un ambiente lab virtuale con provisioning automatico, che comprende client desktop aggiunti a un dominio, un controller di dominio, gateway Internet e un'istanza completamente configurata di Configuration Manager. Lab contiene le versioni di valutazione più recenti dei prodotti seguenti:
 
   - NOVITÀ! Windows 10 Enterprise, versione 2004
   - Windows 7 Enterprise
@@ -53,70 +53,36 @@ INOLTRE, il lab è progettato per essere collegato alle versioni di valutazione 
 
 Le guide dei lab forniscono indicazioni dettagliate su più scenari di distribuzione e gestione. I lab sono stati aggiornati per le versioni più recenti di Intune e Configuration Manager. 
 
-### <a name="device-and-app-readiness"></a>Preparazione di app e dispositivi
+### <a name="plan-and-prepare-infrastructure"></a>Pianificare e preparare l'infrastruttura 
+Desktop Analytics   
+Gateway di gestione cloud & collegamento tenant del punto di distribuzione cloud, cogestione e carichi di lavoro di commutazione    
+Accesso remoto
 
-  - Desktop Analytics
-  - Distribuire e aggiornare il nuovo Microsoft Edge 
-  - Installare e configurare Cloud Management Gateway (CMG) 
-  - Modalità Internet Explorer 
-  - Application Guard 
+### <a name="prepare-configuration"></a>Preparare la configurazione   
+Ottimizzazione della manutenzione di Windows 10 Update Delivery Windows 10 utilizzo di criteri di gruppo per la manutenzione di Windows 10 con Microsoft Intune Servicing Windows 10 with Configuration Manager Servicing Microsoft 365 Apps for Enterprise using Configuration Manager Servicing Microsoft 365 Apps for Enterprise using Intune    
+Sicurezza e conformità 
 
-### <a name="directory-and-network-readiness"></a>Conformità di rete e directory
+### <a name="prepare-applications"></a>Preparare le applicazioni    
+Toolkit di conformità per Office    
+MSIX Packaging and conversion of Win32 Applications 
 
-  - Ottimizzare la distribuzione degli aggiornamenti di Windows 10 
-  - Gestione congiunta di Configuration Manager e Microsoft Intune
-  - Accesso remoto (VPN)
+### <a name="deploy-windows-10"></a>Distribuire Windows 10   
+Sequenze di attività di distribuzione del sistema operativo nelle sequenze di attività di distribuzione del sistema operativo di Configuration Manager in MDT Windows Autopilot deploy and manage the New Microsoft Edge    
 
-### <a name="office-and-lob-app-delivery"></a>Distribuzione di app line-of-business e Office
+### <a name="deploy-microsoft-365-apps-for-enterprise"></a>Come distribuire App di Microsoft 365 per grandi imprese    
+Distribuzione gestita dal cloud    
+Distribuzione gestita localmente  
+Microsoft 365 Apps for Enterprise Deployment su dispositivi non collegati AD altri utenti   
+Distribuzione gestita dell'organizzazione tramite Configuration Manager Enterprise Managed Deployment tramite Microsoft Intune    
+Distribuzione e gestione LOB con Microsoft Intune Deploy Microsoft Teams
 
-  - Microsoft 365 Apps for enterprise
-  - Distribuzione gestita dall'organizzazione con Configuration Manager e Microsoft Intune
-  - Distribuzione e gestione di applicazioni con Microsoft Intune
-  - Distribuzione e installazione self-service di app con Microsoft Store per le aziende
-  - NOVITÀ! Installare Microsoft Teams 
-
-### <a name="user-file-and-settings-migration"></a>Migrazione delle impostazioni e dei file utente
-
-  - Migrazione di file di cartelle note 
-  - Strumento di migrazione stato utente 
-  - Enterprise State Roaming
-  - Personalizzazione del menu Start e rimozione delle app della piattaforma UWP 
-  - User Experience Virtualization (UE-V) 
-
-### <a name="security-and-compliance"></a>Sicurezza e conformità
-
-  - Crittografia dispositivo BitLocker
-  - Windows Defender Antivirus
-  - Windows Hello for Business
-  - Conversione da BIOS a UEFI
-  - Windows Defender Application Guard
-  - Windows Defender Exploit Guard
-  - Controllo di applicazioni di Windows Defender
-  - Windows Defender Advanced Threat Protection
-  - NOVITÀ! Sicurezza endpoint 
-
-### <a name="os-deployment-and-feature-updates"></a>Distribuzione del sistema operativo e aggiornamenti delle funzionalità
-
-  - Creazione dell'immagine del sistema operativo
-  - Sequenze di attività di distribuzione del sistema operativo in Configuration Manager 
-  - Sequenze di attività di distribuzione del sistema operativo in MDT
-  - Windows Autopilot
-  - Pacchetti di provisioning 
-
-### <a name="windows-and-office-as-a-service"></a>Windows e Office come servizio
-  - Gestire gli aggiornamenti di Windows con Criteri di gruppo
-  - Manutenzione di Windows 10 con Configuration Manager e Intune
-  - Installazione di Microsoft 365 Apps for enterprise con Configuration Manager
-  - NOVITÀ! Aggiornamenti di Office con Configuration Manager e Intune
-  
-### <a name="windows-virtual-desktop"></a>Desktop virtuale Windows
-  - Desktop virtuale Windows: preparazione, distribuzione, ottimizzazione 
-
+### <a name="deploy-windows-virtual-desktop"></a>Distribuire desktop virtuale di Windows  
+ 
 ### <a name="download-the-windows-and-office-deployment-lab-kit"></a>Scaricare il Lab Kit di distribuzione di Windows e Office
 
 [Scaricare il Lab Kit di distribuzione di Windows e Office](https://www.microsoft.com/evalcenter/evaluate-lab-kit).
 
-*Per scaricare questi contenuti usufruendo di un'esperienza di download ottimale, usare una larghezza di banda ampia e attendere 30-45 minuti per il completamento del provisioning automatico. Per l'ambiente lab sono richiesti almeno 16 GB di memoria disponibile e 150 GB di spazio libero su disco. Per prestazioni ottimali, sono consigliati 32 GB di memoria disponibili. Il lab scade il 12 settembre 2020; prima di tale data, ne verrà pubblicata una nuova versione.*
+*Utilizzare un'ampia larghezza di banda per scaricare questo contenuto per migliorare l'esperienza di download e consentire 30-45 minuti per il provisioning automatico. L'ambiente lab richiede almeno 16 GB di memoria disponibile e 150 GB di spazio libero su disco. Per ottenere prestazioni ottimali, è consigliabile 32 GB di memoria disponibile. Il laboratorio scade il 4 dicembre 2020. Prima della scadenza verrà pubblicata una nuova versione.*
 
 ## <a name="additional-guidance"></a>Indicazioni aggiuntive
 

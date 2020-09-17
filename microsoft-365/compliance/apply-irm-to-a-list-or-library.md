@@ -21,12 +21,12 @@ ms.collection:
 - SPO_Content
 description: È possibile utilizzare Information Rights Management (IRM) per controllare e proteggere i file scaricati da elenchi o raccolte.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 11d12eda6f2cb8de5c94b6952a8a194b06471473
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: de0105bf61b4abbddd938a4ec7286c1919bf3985
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44818475"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47948484"
 ---
 # <a name="apply-information-rights-management-irm-to-a-list-or-library"></a>Applicazione di Information Rights Management (IRM) a un elenco o a una raccolta
 
@@ -70,10 +70,10 @@ ms.locfileid: "44818475"
 |:-----|:-----|
 |Consenti agli utenti di stampare documenti da questo elenco o dalla raccolta  <br/> |Selezionare la casella **di controllo Consenti stampa visualizzatori** .  <br/> |
 |Consentire alle persone con almeno l'autorizzazione Visualizza elementi di eseguire codice incorporato o macro in un documento.  <br/> |Selezionare la casella di controllo **Consenti agli utenti di eseguire lo script e il lettore schermo per funzionare nei documenti scaricati** .  <br/> Se si seleziona questa opzione, gli utenti potrebbero eseguire codice per estrarre il contenuto di un documento.           |
-|Richiedere che gli utenti verifichino le proprie credenziali a intervalli specifici.  <br/> Selezionare questa opzione se si desidera limitare l'accesso al contenuto a un determinato periodo di tempo. Se si seleziona questa opzione, le licenze di pubblicazione degli utenti per accedere al contenuto scadranno dopo il numero di giorni specificato e gli utenti saranno tenuti a tornare al server per verificare le credenziali e scaricare una nuova copia.  <br/> |Selezionare la casella di controllo **intervalli (giorni) per gli utenti devono verificare le proprie credenziali** e quindi specificare il numero di giorni per cui si desidera visualizzare il documento.  <br/> |
+|Selezionare questa opzione se si desidera limitare l'accesso al contenuto a un determinato periodo di tempo. Se si seleziona questa opzione, le licenze di pubblicazione degli utenti per accedere al contenuto scadranno dopo il numero di giorni specificato e gli utenti saranno tenuti a tornare al server per verificare le credenziali e scaricare una nuova copia.  <br/> |Selezionare la casella di controllo **dopo il download, i diritti di accesso ai documenti scadono dopo il numero di giorni (1-365)** e quindi specificare il numero di giorni in cui si desidera visualizzare il documento.  <br/> |
 | Impedire agli utenti di caricare documenti che non supportano IRM nell'elenco o nella raccolta.  <br/>  Se si seleziona questa opzione, gli utenti non saranno in grado di caricare uno dei tipi di file seguenti:  <br/>  I tipi di file che non dispongono di protettori IRM corrispondenti sono installati in tutti i server Web front-end.  <br/>  Tipi di file che SharePoint Server 2010 non è in grado di decrittografare.  <br/>  Tipi di file che sono protetti da IRM in un altro programma  <br/> |Selezionare la casella di controllo non **consentire agli utenti di caricare i documenti che non supportano IRM** .  <br/> |
 |Rimuovere le autorizzazioni limitate dall'elenco o dalla raccolta in base a una data specifica.  <br/> |Selezionare la casella di controllo **Interrompi la limitazione dell'accesso alla raccolta** e quindi selezionare la data desiderata.  <br/> |
-|Controllare l'intervallo di memorizzazione nella cache delle credenziali per il programma concesso in licenza per l'apertura del documento.  <br/> |Nell' **intervallo imposta protezione e credenziali di gruppo**immettere l'intervallo per le credenziali di memorizzazione nella cache in numero di giorni.  <br/> |
+|Controllare l'intervallo di memorizzazione nella cache delle credenziali per il programma concesso in licenza per l'apertura del documento.  <br/> |Selezionare la casella di controllo **intervallo (giorni) per gli utenti devono verificare le credenziali** , quindi immettere l'intervallo per le credenziali di memorizzazione nella cache in numero di giorni.  <br/> |
 |Consenti protezione di gruppo in modo che gli utenti possano condividerli con i membri dello stesso gruppo.  <br/> |Selezionare **Consenti protezione gruppo**e immettere il nome del gruppo per la condivisione.  <br/> |
    
 8. Dopo aver selezionato le opzioni desiderate, fare clic su **OK**.

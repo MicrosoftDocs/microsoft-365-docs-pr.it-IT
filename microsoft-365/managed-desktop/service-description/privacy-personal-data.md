@@ -10,12 +10,12 @@ f1.keywords:
 ms.author: jaimeo
 ms.topic: article
 ms.localizationpriority: normal
-ms.openlocfilehash: e7eb3eaa6961993f8c77645c8d6760e6701817e2
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: 33a2bf0b85b9b8561a5dcf32eae6e4cd0cb53765
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47547939"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47950485"
 ---
 # <a name="privacy-and-personal-data"></a>Privacy e dati personali
 
@@ -128,7 +128,7 @@ Nella sezione seguente viene illustrato il modo in cui Microsoft Managed Desktop
 
 ### <a name="it-admin-contact-information"></a>Informazioni di contatto dell'amministratore IT
 
-Un amministratore tenant può visualizzare, correggere ed eliminare i dati personali direttamente nella sezione dei contatti di amministrazione del portale Microsoft Managed Desktop.
+Un amministratore tenant può visualizzare, correggere ed eliminare i propri dati personali (come le proprie informazioni di contatto) direttamente nella sezione contatti di amministrazione del portale Microsoft Managed Desktop.
 
 ### <a name="user-related-personal-data"></a>Dati personali relativi agli utenti
 

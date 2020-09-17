@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Informazioni sul modo in cui EOP e Office 365 proteggono i messaggi di posta indesiderata, phishing e antimalware aggiungendo un suggerimento per la sicurezza all'inizio della posta elettronica.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e13e9cce325dfd3f8312c1d68459ab3c423c1fbb
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: b4bcfd2bf05f2f5ae7a51fbc2488cb1aa6e7d2c9
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46827482"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47949633"
 ---
 # <a name="safety-tips-in-email-messages"></a>Suggerimenti per la sicurezza nei messaggi di posta elettronica
 
@@ -38,12 +38,6 @@ Il suggerimento per la sicurezza, ovvero un messaggio con codice a colori, avvis
     ![Schermata che visualizza un suggerimento per la sicurezza rossa.](../../media/5078a0be-e556-44a1-b169-09d780d26898.png)
 
     Un suggerimento per la sicurezza rossa in un messaggio di posta elettronica indica che l'utente ricevuto contiene elementi sospetti, ad esempio una truffa di phishing. È consigliabile eliminare questo tipo di messaggio di posta elettronica dalla posta in arrivo senza aprirlo.
-
-- Posta indesiderata (suggerimento di sicurezza giallo).
-
-    ![Schermata che visualizza un suggerimento per la sicurezza giallo.](../../media/793c9265-ea44-48fd-a98f-804fadd4163b.png)
-
-    Un suggerimento giallo per la sicurezza in un messaggio di posta elettronica indica che è stato contrassegnato come posta indesiderata. Se non si riconosce e si considera attendibile il mittente del messaggio, non è possibile scaricare allegati o immagini e non fare clic su nessun collegamento nel messaggio. In Outlook sul Web, è possibile fare clic su **non è posta indesiderata** nella barra gialla di un elemento di posta indesiderata per spostare il messaggio nella posta in arrivo. Se il suggerimento di sicurezza giallo viene visualizzato in un messaggio che è stato recapitato nella posta in arrivo, è probabile che sia presente perché è stato disabilitato lo spostamento della posta indesiderata nella cartella posta indesiderata
 
 - Posta elettronica sicura (suggerimento per la sicurezza verde).
 

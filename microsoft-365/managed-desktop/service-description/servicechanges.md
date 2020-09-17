@@ -1,19 +1,20 @@
 ---
-title: Modifiche e comunicazioni del servizio
+title: Modifiche al servizio e comunicazione
 description: ''
-keywords: Microsoft Managed Desktop, Microsoft 365, Service, documentazione
+keywords: Microsoft Managed Desktop, Microsoft 365, servizio, documentazione
 ms.service: m365-md
 author: jaimeo
+ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 00d1cb409364c017585c6afcd10a236ecbcdc3a0
-ms.sourcegitcommit: 53148fc3663bdcfa9605684317785cb19f37e141
+ms.openlocfilehash: 753ad703a7949b7901ddd76d0d8c966b170461ea
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "37697897"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47950319"
 ---
-# <a name="service-changes-and-communication"></a>Modifiche e comunicazioni del servizio
+# <a name="service-changes-and-communication"></a>Modifiche al servizio e comunicazione
 
 A volte, potrebbe essere necessario che Microsoft modifichi i dettagli sulla modalità di funzionamento di Microsoft Managed Desktop. Analogamente, potrebbe essere necessario apportare modifiche che influiscono anche sul servizio. Tali modifiche vengono gestite in modo diverso a seconda di quanto siano significative. In questo argomento vengono definite le modifiche che consideriamo importanti e viene illustrato come gestirle rispetto ad altre modifiche.
 

@@ -19,12 +19,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Informazioni su come configurare un elenco di URL bloccati per l'organizzazione utilizzando Office 365 Advanced Threat Protection.
-ms.openlocfilehash: 5f863a3ba61278d0bec5304034ed75d343f93c77
-ms.sourcegitcommit: fa8e488936a36e4b56e1252cb4061b5bd6c0eafc
+ms.openlocfilehash: f66d447b980cae4a4afbb706f26659c5976bdf37
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "46656648"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47948091"
 ---
 # <a name="set-up-a-custom-blocked-urls-list-using-atp-safe-links"></a>Configurare un elenco di URL bloccati personalizzato utilizzando i collegamenti sicuri di ATP
 
@@ -92,7 +92,7 @@ Quando si aggiungono URL all'elenco, tenere presente quanto segue:
 |
 
 > [!NOTE]
-> Per impostazione predefinita, è possibile aggiungere 500 URL all'elenco degli URL bloccati nel criterio predefinito dei collegamenti sicuri ATP di Office 365.
+> Per impostazione predefinita, è possibile aggiungere 500 URL all'elenco degli URL bloccati nel criterio predefinito dei collegamenti sicuri ATP di Office 365. Un singolo URL non può superare i 128 caratteri. L'intero elenco di URL bloccati non può superare 10.000 caratteri.
 
 ## <a name="how-to-define-exceptions-for-certain-users-in-an-organization"></a>Come definire le eccezioni per alcuni utenti di un'organizzazione
 

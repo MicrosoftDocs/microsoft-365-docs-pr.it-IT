@@ -1,24 +1,25 @@
 ---
 title: Dati analitici sugli aggiornamenti della sicurezza di Windows
 description: ''
-keywords: Microsoft Managed Desktop, Microsoft 365, Service, documentazione
+keywords: Microsoft Managed Desktop, Microsoft 365, servizio, documentazione
 ms.service: m365-md
 author: jaimeo
+ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: ef2d5c897709e7f7d2484d032b7471031be77d74
-ms.sourcegitcommit: cf07dfccec476ac2526a6171ec6b6365686f759f
+ms.openlocfilehash: 772d1d52e977a067ff9bc3517de9cb2ae6c8c9a3
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/29/2020
-ms.locfileid: "42341264"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47950368"
 ---
 # <a name="windows-security-update-insights"></a>Dati analitici sugli aggiornamenti della sicurezza di Windows
 In questa visualizzazione viene fornita una panoramica dello stato degli aggiornamenti della sicurezza per i dispositivi Microsoft Managed Desktop. 
 
 Per visualizzare i dati di utilizzo, selezionare la scheda aggiornamenti per la <strong>sicurezza di Windows</strong> .
 
-![Riquadro degli aggiornamenti della sicurezza di Windows: grafici a barre dello stato del dispositivo e della versione di aggiornamento nella colonna a sinistra, avanzamento della distribuzione dell'aggiornamento nel tempo nella colonna centrale e percentuale di dispositivi attivi per gruppo di distribuzione, nonché il numero di giorni per cui è stata eseguita la distribuzione del 95%. destinazione nella colonna a destra.](../../media/update-insights.jpg)
+![Riquadro degli aggiornamenti della sicurezza di Windows: grafici a barre dello stato del dispositivo e della versione di aggiornamento nella colonna a sinistra, lo stato di aggiornamento della distribuzione nel tempo nella colonna centrale e la percentuale di dispositivi attivi per gruppo di distribuzione, nonché il numero di giorni per raggiungere la destinazione di distribuzione 95% nella colonna a destra.](../../media/update-insights.jpg)
 
 ## <a name="device-status"></a>Stato del dispositivo
 

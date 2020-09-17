@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Monitorare e gestire lo smaltimento del contenuto, sia che si utilizzi una recensione di disposizione o che il contenuto venga eliminato automaticamente in base alle impostazioni configurate.
-ms.openlocfilehash: 5751857f8b3bf0a7f63df73e9bfaa244897bf429
-ms.sourcegitcommit: 4ac96855d7c269a0055ca8943000b762a70ca4ba
+ms.openlocfilehash: 6789ab1abe54b76f22462a47326b07a213f19b0c
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "47321995"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47950390"
 ---
 # <a name="disposition-of-content"></a>Disposizione del contenuto
 
@@ -122,7 +122,7 @@ Il contenuto in attesa di una revisione della disposizione viene eliminato solo 
 > [!NOTE]
 > L'implementazione per la prova dello smaltimento per i record in SharePoint e OneDrive è stata completata.
 >
-> La prova dello smaltimento dei record in Exchange è stata appena avviata. Al termine di questa implementazione, verrà aggiornata la nota.
+> L'implementazione per la prova dello smaltimento dei record in Exchange è quasi completa quando si rimuove questa nota.
 
 Utilizzare la scheda **disposizione** della pagina **Gestione record** per identificare i record che sono stati eliminati, automaticamente o dopo una revisione della disposizione. Questi elementi visualizzano i **record eliminati** nella colonna **tipo** . Ad esempio:
 

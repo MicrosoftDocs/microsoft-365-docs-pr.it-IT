@@ -19,21 +19,21 @@ ms.collection:
 - M365-security-compliance
 description: Informazioni su come utilizzare le funzionalità di analisi e risposta alle minacce per individuare e studiare messaggi di posta elettronica dannosi.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 5026b69f356fad11a664900a3e316d9c1c976905
-ms.sourcegitcommit: 260bbb93bbda62db9e88c021ccccfa75ac39a32e
+ms.openlocfilehash: 91f16c3aa7ba98467c52fb25e0597f346a810003
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "46845955"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47949265"
 ---
 # <a name="investigate-malicious-email-that-was-delivered-in-office-365"></a>Esaminare la posta elettronica dannosa che è stata recapitata in Office 365
 
 [Office 365 Advanced Threat Protection](office-365-atp.md) consente di analizzare le attività che inseriscono i rischi per l'organizzazione e di intervenire per proteggere l'organizzazione. Ad esempio, se si fa parte del team di sicurezza dell'organizzazione, è possibile trovare e analizzare i messaggi di posta elettronica sospetti che sono stati recapitati. A tale scopo, è possibile utilizzare [Esplora minacce (o rilevamenti in tempo reale)](threat-explorer.md).
 
 > [!NOTE]
-> Passare [all'articolo relativo](https://docs.microsoft.com/microsoft-365/security/mtp/article-submission/remediate-malicious-email-delivered-office-365?view=o365-21vianet&branch=pr-en-us-4258)alla correzione.
+> Passare [all'articolo relativo](remediate-malicious-email-delivered-office-365.md)alla correzione.
 
-## <a name="before-you-begin"></a>Informazioni preliminari
+## <a name="before-you-begin"></a>Prima di iniziare
 
 Verificare che vengano soddisfatti i seguenti requisiti:
 
@@ -61,7 +61,7 @@ Per eseguire determinate azioni, ad esempio la visualizzazione delle intestazion
 > [!NOTE]
 > L' *Anteprima* è un ruolo e non un gruppo di ruoli. il ruolo di anteprima deve essere aggiunto a un gruppo di ruoli esistente per Office 365. Al ruolo di amministratore globale viene assegnato l'interfaccia di amministrazione di Microsoft 365 ( [https://admin.microsoft.com](https://admin.microsoft.com) ) e i ruoli amministratore sicurezza e lettore di sicurezza sono assegnati nel centro sicurezza & Compliance ( [https://protection.office.com](https://protection.office.com) ). Per ulteriori informazioni sui ruoli e sulle autorizzazioni, vedere [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
-## <a name="find-and-delete-suspicious-email-that-was-delivered"></a>Individuare ed eliminare messaggi di posta elettronica sospetti recapitati
+## <a name="find-suspicious-email-that-was-delivered"></a>Trovare messaggi di posta elettronica sospetti recapitati
 
 Threat Explorer è un potente report che può servire a molteplici scopi, ad esempio la ricerca e l'eliminazione dei messaggi, l'identificazione dell'indirizzo IP di un mittente di posta elettronica dannoso o l'avvio di un incidente per ulteriori indagini. La procedura seguente si concentra sull'utilizzo di Esplora risorse per individuare ed eliminare messaggi di posta elettronica dannosi dalle cassette postali del destinatario.
 
@@ -191,11 +191,11 @@ Il percorso di recapito consente di visualizzare i risultati dei criteri e i ril
 La **sequenza temporale della posta elettronica** è un campo in Esplora minacce che facilita la ricerca per il team delle operazioni di sicurezza. Quando più eventi si verificano alla stessa ora o in prossimità di un messaggio di posta elettronica, tali eventi vengono visualizzati in una visualizzazione sequenza temporale. Alcuni eventi che si verificano dopo il recapito al messaggio di posta elettronica vengono acquisiti nella colonna **azioni speciali** . La combinazione di informazioni dalla sequenza temporale di un messaggio di posta elettronica con le azioni speciali eseguite dopo il recapito consente agli amministratori di esaminare i criteri e la gestione delle minacce (ad esempio la posizione in cui è stata instradata la posta elettronica e, in alcuni casi, la valutazione finale).
 
 > [!IMPORTANT]
-> Passare a [un argomento di](https://docs.microsoft.com/microsoft-365/security/mtp/article-submission/remediate-malicious-email-delivered-office-365?view=o365-worldwide)correzione.
+> Passare a [un argomento di](remediate-malicious-email-delivered-office-365.md)correzione.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-[Rimediare la posta elettronica dannosa recapitata in Office 365](https://docs.microsoft.com/microsoft-365/security/mtp/article-submission/remediate-malicious-email-delivered-office-365?view=o365-worldwide)
+[Rimediare la posta elettronica dannosa recapitata in Office 365](remediate-malicious-email-delivered-office-365.md)
 
 [Office 365 Advanced Threat Protection](office-365-ti.md)
 

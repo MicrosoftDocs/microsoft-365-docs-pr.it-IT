@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Come usare le etichette di conservazione per gestire il ciclo di vita dei documenti in SharePoint tramite l’uso dei metadati, per classificare il contenuto, applicare automaticamente le etichette e usare la conservazione basata su eventi per avviare il periodo di conservazione.
-ms.openlocfilehash: d02c8102dc53f455c5e0620acf1f8a9a7529bf08
-ms.sourcegitcommit: 2179abfe0b7a8bea917eb1c1057ed3795bdf91e6
+ms.openlocfilehash: 321043a8a33d274ed9e7caecfb167b9587ceae1d
+ms.sourcegitcommit: 9f5b136b96b3af4db4cc6f5b1f35130ae60d6b12
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "47336691"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "47817253"
 ---
 # <a name="use-retention-labels-to-manage-the-lifecycle-of-documents-stored-in-sharepoint"></a>Usare le etichette di conservazione per gestire il ciclo di vita dei documenti archiviati in SharePoint
 
@@ -99,17 +99,17 @@ Ecco il [piano di archiviazione](file-plan-manager.md) per l'etichetta di conser
 
 - **Nome:** Specifica di prodotto
 
-- **Descrizione per gli amministratori:** conservare fino a 5 anni dopo l’arresto della produzione; eliminazione automatica; conservazione basata su eventi, con tipo di evento *Cessazione del prodotto*.
-
 - **Descrizione per gli utenti:** mantenere per 5 anni dopo l’arresto della produzione.
+
+- **Descrizione per gli amministratori:** conservare fino a 5 anni dopo l’arresto della produzione; eliminazione automatica; conservazione basata su eventi, con tipo di evento *Cessazione del prodotto*.
 
 - **Azione di conservazione:** conservare ed eliminare.
 
 - **Durata di conservazione:** 5 anni (1.825 giorni).
 
-- **Etichetta record**: configurare l’etichetta di conservazione per classificare un contenuto come [record](records-management.md#records). (I documenti classificati come *record* non possono essere modificati o eliminati dagli utenti.)
+- **Etichetta record**: configurare l'etichetta di conservazione per contrassegnare elementi come [record](records-management.md#records), ossia i documenti etichettati non possono essere modificati cancellati dagli utenti.
 
-- **Descrittori del piano di archiviazione:** (per semplificare lo scenario, non viene inserito alcun descrittore di archiviazione).
+- **Descrittori del piano di archiviazione:** per semplificare lo scenario, non sono forniti descrittori di file facoltativi.
 
 La schermata seguente mostra le impostazioni quando si crea l'etichetta di conservazione Specifica di prodotto nel Centro conformità Microsoft 365. È possibile creare la tipologia di evento *Cessazione del prodotto* al momento della creazione dell'etichetta di conservazione. Vedere la procedura nella sezione seguente.
 
@@ -120,34 +120,30 @@ La schermata seguente mostra le impostazioni quando si crea l'etichetta di conse
 
 ### <a name="create-an-event-type-when-you-create-a-retention-label"></a>Creare un tipo di evento quando si crea un'etichetta di conservazione
 
-1. Dall'elenco a discesa **Conserva o elimina il contenuto in base a**, selezionare **un evento**.
-
-2. Selezionare **Scegli un tipo di evento**.
+1. Nella pagina **Definisci impostazioni di conservazione** della procedura guidata Crea etichetta di conservazione, dopo **Avvia il periodo di conservazione in base a**, selezionare **Crea nuovo tipo di evento**:
     
     ![Creare un nuovo tipo di evento per la finestra di dialogo Specifica di prodotto](../media/SPRetention6.png)
 
-3. Nella pagina **Scegli un tipo di evento**, selezionare **Scegli un tipo di evento**, quindi fare clic su **Crea nuovi tipi di evento**.
+3. Nella pagina **Nomina il tuo tipo di evento**, scrivere **Cessazione prodotto** e aggiungere una descrizione facoltativa. Selezionare **Avanti**, **Invia**, e **Fatto**.
 
-4. Creare un tipo di evento denominato ***Cessazione del prodotto***, inserire una descrizione e selezionare **Fine**.
-
-5. Tornare alla pagina **Scegli il tipo di evento**, selezionare il tipo di evento appena creato **Cessazione del prodotto**, poi selezionare **Aggiungi**.
-
-   Ecco come appaiono le impostazioni per l'etichetta di conservazione Specifica di prodotto. 
-
+4. Tornare alla pagina **Definisci impostazioni di conservazione**. Nell'opzione **Avvia il periodo di conservazione in base a**, usare la casella a discesa per selezionare il tipo di evento **Cessazione prodotto** creato.
+    
+    Ecco come appaiono le impostazioni per l'etichetta di conservazione Specifica di prodotto: 
+    
    ![Impostazioni per la nuova etichetta Specifica di prodotto](../media/SPRetention7.png)
 
-6. Selezionare **Crea l'etichetta**. 
+6. Selezionare **Crea etichetta** e, nella pagina successiva, quando compare l'opzione per pubblicare l'etichetta, applicare automaticamente o salvare l'etichetta: selezionare **Salva l'etichetta per ora** e fare clic su **Fatto**. 
+    
+    > [!TIP]
+    > Per informazioni più dettagliate sui vari passaggi, consultare [Creare un'etichetta il cui periodo di conservazione è basato su un evento](event-driven-retention.md#step-1-create-a-label-whose-retention-period-is-based-on-an-event).
 
-   > [!TIP]
-   > Per informazioni più dettagliate sui vari passaggi, consultare [Creare un'etichetta il cui periodo di conservazione è basato su un evento](event-driven-retention.md#step-1-create-a-label-whose-retention-period-is-based-on-an-event).
+Ora passeremo a come applicare automaticamente le etichette ai contenuti delle specifiche di prodotto.
 
-Ora si passerà all'analisi dell'applicazione automatica dell'etichetta di conservazione al contenuto delle specifiche di prodotto.
-
-## <a name="auto-apply-retention-labels-to-classify-content"></a>Applicare automaticamente le etichette di conservazione per classificare il contenuto
+## <a name="auto-apply-retention-labels-to-documents"></a>Applicare automaticamente le etichette di conservazione
 
 Ora si procederà con l'[applicazione automatica](apply-retention-labels-automatically.md) delle etichette di conservazione create, usando Keyword Query Language (KQL). KQL è il linguaggio che viene utilizzato per la creazione di query di ricerca. Con KQL è possibile compiere ricerche in base a parole chiave o proprietà gestite. Per maggiori informazioni, vedere le [informazioni di riferimento sulla sintassi KQL (Keyword Query Language)](https://docs.microsoft.com/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference).
 
-In pratica, si vuole dire a Microsoft 365 che “applichi l'etichetta di conservazione *Specifica di prodotto* a tutti i documenti che hanno ***Finale*** come **Stato** e ***Specifica di prodotto*** come **Tipo di documento**”. Si ricordi che **Stato** e **Tipo di documento** sono le colonne del sito definite per il tipo di contenuto Documentazione di prodotto nella sezione [Architettura delle informazioni](#information-architecture). Per compiere questa operazione, è necessario configurare lo schema di ricerca.
+In pratica, si vuole dire a Microsoft 365 che “applichi l'etichetta di conservazione **Specifica di prodotto** a tutti i documenti che hanno **Finale** come **Stato** e **Specifica di prodotto** come **Tipo di documento**”. Si ricordi che **Stato** e **Tipo di documento** sono le colonne del sito definite per il tipo di contenuto Documentazione di prodotto nella sezione [Architettura delle informazioni](#information-architecture). Per compiere questa operazione, è necessario configurare lo schema di ricerca.
 
 Quando SharePoint indicizza i contenuti, per ogni colonna del sito genera automaticamente delle proprietà sottoposte a ricerca per indicizzazione. In questo scenario, l'interesse si concentra sulle proprietà **Tipo di documento** e **Stato**. Affinché la ricerca crei delle proprietà sottoposte a ricerca per indicizzazione, all'interno della raccolta risulterà necessaria la presenza di documenti che costituiscano il tipo di contenuto corretto e che le colonne del sito siano compilate.
 
@@ -217,47 +213,47 @@ A questo punto, digitare **RefinableString00:"Specifica di prodotto" AND Refinab
 
 ### <a name="create-auto-apply-label-policies"></a>Creare i criteri per applicare automaticamente le etichette
 
-Dopo aver verificato il funzionamento della query KQL, si potranno creare i criteri di etichetta che fanno uso di una query KQL per l'applicazione automatica dell'etichetta di conservazione della Specifica di prodotto ai documenti appropriati.
+Dopo aver verificato il funzionamento della query KQL, si potranno creare i criteri di applicazione automatica delle etichette che fanno uso di una query KQL per l'applicazione automatica dell'etichetta di conservazione della Specifica di prodotto ai documenti appropriati.
 
 1. Nel [Centro conformità](https://compliance.microsoft.com/homepage) passare a **Gestione dei record** > **Criteri etichetta** > **Applica automaticamente un'etichetta**.
 
    [ ![Selezionare "Applica automaticamente un'etichetta" nella pagina Etichette](../media/SPRetention16.png) ](../media/SPRetention16.png#lightbox)
 
-2. Nella pagina della procedura guidata **Scegliere un'etichetta da applicare automaticamente**, selezionare**Scegliere un'etichetta da applicare automaticamente**.
+2. Nella procedura guidata Crea criterio di applicazione automatica etichette, nella pagina **Nomina il tuo criterio di applicazione automatica etichette**, scrivere un nome, ad esempio **Applicazione automatica etichetta specifica di prodotto**, e aggiungere una descrizione facoltativa. Quindi, scegliere **Avanti**.
 
-3. Nell'elenco di etichette selezionare **Specifica di prodotto**. Selezionare **Aggiungi** e **Avanti**.
+3. Nella pagina **Scegli il tipo di contenuto a cui applicare questa etichetta**, selezionare **Applica etichetta a contenuti che includono parole, frasi o proprietà specifiche**, quindi selezionare **Avanti**.
+    
+   [ ![Selezionare Applica etichetta ai contenuti che includono parole, frasi o proprietà specifiche](../media/SPRetention17.png) ](../media/SPRetention17.png#lightbox)
+    
+   Questa opzione consente di fornire la stessa query di ricerca KQL collaudata nella sezione precedente. La query mostra come risultato tutti i documenti Specifica di prodotto che hanno *Finale* come Stato. Quando utilizziamo la medesima query nei criteri di applicazione automatica dell'etichetta, l'etichetta di conservazione Specifica di prodotto sarà applicata automaticamente a tutti i documenti corrispondenti.
 
-4. Selezionare **Applicare l'etichetta al contenuto che include parole o frasi specifiche o proprietà**, poi selezionare**Avanti**.
-
-   [ ![Selezionare Applicare l'etichetta al contenuto che include parole o frasi specifiche o proprietà](../media/SPRetention17.png) ](../media/SPRetention17.png#lightbox)
-
-   Nel passaggio successivo, si dovrà fornire la stessa query di ricerca KQL testata nella sezione precedente. Tale query mostra come risultato tutti i documenti Specifica di prodotto che hanno *Finale* come Stato. Quando utilizziamo la medesima query nei criteri di etichetta, l'etichetta di conservazione Specifica di prodotto sarà applicata automaticamente a tutti i documenti corrispondenti.
-
-5. Nella casella **Editor di query con parole chiave**, digitare ***RefinableString00:"Specifica di prodotto" AND RefinableString01:Final***, poi selezionare **Avanti**.
+4. Nella pagina **Applica etichetta a contenuti che corrispondono a questa query**, scrivere **RefinableString00:"Product Specification" AND RefinableString01:Final** e selezionare **Avanti**.
 
    ![Specificare la query nella casella Editor di query con parole chiave](../media/SPRetention19.png)
 
-6. Inserire un nome per il criterio di etichetta, ad esempio, ***Applicare automaticamente l'etichetta Specifica di prodotto***, e una descrizione facoltativa, poi selezionare **Avanti**.
-
-7. Nella pagina della procedura guidata **Scegli posizioni**, selezionare le posizioni dei contenuti a cui si desidera applicare il criterio. Per questo scenario, il criterio verrà applicato solo alle posizioni di SharePoint, poiché tutti i documenti di produzione sono archiviati nelle raccolte documenti di SharePoint. Selezionare **Consenti la scelta di posizioni specifiche**, quindi disattiva l'interruttore di stato per la **posta elettronica di Exchange**, gli **account di OneDrive** e i **gruppi di Microsoft 365**. Verificare che lo stato per i siti di SharePoint sia attivato. 
-
+5. Nella pagina **Scegli posizioni per applicare il criterio**, selezionare le posizioni dei contenuti a cui si desidera applicare il criterio. Per questo scenario, il criterio verrà applicato solo alle posizioni di SharePoint, poiché tutti i documenti di produzione sono archiviati nelle raccolte documenti di SharePoint. Modificare lo stato di **Posta elettronica di Exchange**, **Account di OneDrive**, e **Gruppi di Office 365** su **Disattivato**. Verificare che lo stato dei siti di SharePoint sia impostato su **Attivato** prima di selezionare **Avanti**: 
+    
     ![Scegliere siti specifici per l'applicazione automatica delle etichette](../media/SPRetentionSPlocations.png)
-
+    
    > [!TIP]
-   > Anziché applicare il criterio a tutti i siti di SharePoint, è possibile selezionare **Selezione siti** e aggiungere gli URL per i siti di SharePoint specifici.
+   > Anziché applicare il criterio a tutti i siti di SharePoint, è possibile selezionare **Seleziona sito** e aggiungere gli URL per i siti di SharePoint specifici.
 
-8. Selezionare **Avanti** per mostrare la pagina **Controllare le impostazioni**.
+6. Nella pagina **Scegli un'etichettare da applicare automaticamente**, selezionare **Aggiungi etichetta**.
+
+7. Nell'elenco di etichette di conservazione, selezionare **Specifica di prodotto**. Selezionare **Aggiungi** e **Avanti**.
+
+8. Rivedere le impostazioni:
 
     ![Impostazioni per l'applicazione automatica dell'etichetta](../media/SPRetention18.png)
 
-9. Per creare il criterio di etichetta, selezionare **Applica automaticamente**.
-
+9. Selezionare **Invia** per creare il criterio di applicazione automatica dell'etichetta.
+    
    >[!NOTE]
    >Sono necessari fino a 7 giorni per applicare automaticamente l'etichetta Specifica di prodotto a tutti i documenti che corrispondono alla query di ricerca KQL.
 
 ### <a name="verify-that-the-retention-label-was-automatically-applied"></a>Verificare che l'etichetta di conservazione sia stata applicata automaticamente
 
-Dopo 7 giorni, usare [Esplora attività](data-classification-activity-explorer.md) nel Centro conformità per verificare che il criterio di etichetta creato abbia applicato automaticamente le etichette di conservazione ai documenti di prodotto.
+Dopo 7 giorni, usare [Esplora attività](data-classification-activity-explorer.md) nel Centro conformità per verificare che il criterio di applicazione automatica dell'etichetta creato abbia applicato automaticamente le etichette di conservazione ai documenti di prodotto.
 
 Verificare anche le proprietà dei documenti all'interno della Raccolta documenti. Nel riquadro delle informazioni, si può notare che l'etichetta di conservazione è applicata a un documento selezionato.
 

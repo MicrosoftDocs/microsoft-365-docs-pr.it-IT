@@ -18,12 +18,12 @@ ms.collection:
 ms.custom: TopSMBIssues
 localization_priority: Priority
 description: Informazioni per amministratori sul modo in cui EOP usa l'autenticazione della posta elettronica (SPF, DKIM e DMARC) per prevenire lo spoofing, il phishing e la posta indesiderata.
-ms.openlocfilehash: 8db5045ec19c5552feba739628a2c9c1c508f620
-ms.sourcegitcommit: 787b198765565d54ee73972f664bdbd5023d666b
+ms.openlocfilehash: 0f4eb15df218050f7e582b1cc727522c04da594b
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "46866636"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47949869"
 ---
 # <a name="email-authentication-in-eop"></a>Autenticazione e-mail in EOP
 
@@ -204,4 +204,4 @@ Se si ospita la posta elettronica di un dominio o si fornisce un'infrastruttura 
 
 Anche se si autentica la posta elettronica proveniente dalla propria piattaforma, il corretto recapito a Microsoft non è garantito, ma almeno questo assicura che Microsoft non la contrassegni come indesiderata perché non è autenticata.
 
-Per altre informazioni sulle procedure consigliate per i provider di servizi, vedere le [procedure consigliate per la messaggistica mobile di M3AAWG per i provider di servizi](https://www.m3aawg.org/sites/default/files/M3AAWG-Mobile-Messaging-Best-Practices-Service-Providers-2015-08.pdf).
+Per altre informazioni sulle procedure consigliate per i provider di servizi, vedere le [procedure consigliate per la messaggistica mobile di M3AAWG per i provider di servizi](https://www.m3aawg.org/sites/default/files/m3aawg-mobile-messaging-best-practices-service-providers-2015-08_0.pdf).

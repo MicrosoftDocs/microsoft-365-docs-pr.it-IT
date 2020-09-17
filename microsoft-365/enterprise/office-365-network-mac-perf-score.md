@@ -14,18 +14,18 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Valutazione della rete Microsoft 365 (Preview)
-ms.openlocfilehash: aacbdf73da9552a12bde250e51544f1de533637c
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 15eb514980bb53bd32380e44b6bfa174670f6b85
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46696104"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47948317"
 ---
 # <a name="microsoft-365-network-assessment-preview"></a>Valutazione della rete Microsoft 365 (Preview)
 
-Nella pagina connettività di Microsoft 365 Admin Center to Microsoft 365, le **valutazioni di rete** distillano un'aggregazione di molte metriche delle prestazioni di rete in un'istantanea dell'integrità della rete aziendale, rappresentata da un valore punti da 1-100. Le valutazioni di rete sono limitate all'intero tenant e per ogni posizione geografica da cui gli utenti si connettono al tenant, fornendo agli amministratori di Microsoft 365 un modo semplice per afferrare istantaneamente una Gestalt dell'integrità della rete dell'organizzazione e analizzarla rapidamente in una relazione dettagliata per qualsiasi posizione globale dell'ufficio.
+Nella pagina connettività di Microsoft 365 Admin Center to Microsoft 365, le **valutazioni di rete** distillano un'aggregazione di molte metriche delle prestazioni di rete in un'istantanea dell'integrità del perimetro della rete aziendale, rappresentata da un valore punti da 0-100. Le valutazioni di rete sono limitate all'intero tenant e per ogni posizione geografica da cui gli utenti si connettono al tenant, fornendo agli amministratori di Microsoft 365 un modo semplice per afferrare istantaneamente una Gestalt dell'integrità della rete dell'organizzazione e analizzarla rapidamente in una relazione dettagliata per qualsiasi posizione globale dell'ufficio.
 
-Il valore dei punti di valutazione della rete è una media misura della latenza, della larghezza di banda, della velocità di download e delle metriche di qualità di connessione compilate dal vivo al momento della visualizzazione. Le metriche delle prestazioni per le reti di proprietà di Microsoft sono escluse da queste misure per garantire che i risultati della valutazione siano inequivocabili e specifici per la rete aziendale.
+Il valore dei punti di valutazione della rete è una media misura della latenza TCP, della velocità di download e delle metriche di qualità della connessione UDP compilate dal vivo nel momento in cui vengono visualizzate. Le metriche delle prestazioni per le reti di proprietà di Microsoft sono escluse da queste misure per garantire che i risultati della valutazione siano inequivocabili e specifici per la rete aziendale.
 
 ![Valore di valutazione della rete](../media/m365-mac-perf/m365-mac-perf-overview-score-top.png)
 
@@ -42,7 +42,7 @@ Ogni valutazione di rete, se ambito del tenant o di una specifica posizione di O
 
 La **ripartizione di valutazione** nel pannello Visualizza la valutazione per ognuno dei carichi di lavoro del componente.
 
-La **cronologia di valutazione** indica gli ultimi 30 giorni della valutazione e del benchmark.
+La **cronologia di valutazione** indica gli ultimi 30 giorni della valutazione e del benchmark. È inoltre possibile segnalare la cronologia delle metriche per qualsiasi percorso di Office per un massimo di due anni utilizzando la scheda cronologia.
 
 ## <a name="tenant-network-assessments-and-office-location-network-assessments"></a>Valutazioni della rete tenant e valutazioni della rete delle posizioni di Office
 
@@ -52,15 +52,48 @@ Viene mostrato un valore di valutazione della rete per l'intero tenant Microsoft
 
 ## <a name="exchange-online"></a>Exchange Online
 
-Per Exchange Online, viene misurata la latenza TCP dal computer client al front end server di Exchange. Questo può influire sulla distanza che la rete percorre nei clienti LAN e WAN. Può anche essere influenzato da dispositivi o servizi di intermediazione di rete che ritardano la connettività o causano il rimandato dei pacchetti.
+Per Exchange Online, viene misurata la latenza TCP dal computer client al front end server di Exchange. Questo può influire sulla distanza che la rete percorre nei clienti LAN e WAN. Può anche essere influenzato da dispositivi o servizi di intermediazione di rete che ritardano la connettività o causano il rimandato dei pacchetti. La mediana (nota anche come misura cinquantesimo percentile o P50) viene rilevata per tutte le misurazioni negli ultimi tre giorni.
+
+La valutazione di Exchange Online viene effettuata utilizzando la tabella seguente. Qualsiasi numero di latenza TCP tra le soglie sono assegnati punti linearmente all'interno della banda.
+
+| Latenza TCP   | Punti |
+| :------------ | :----- |
+| 10ms o meno  | 100    |
+| 25ms          | 80     |
+| 100 ms         | 60     |
+| 200ms         | 40     |
+| 300ms         | 20     |
+| 350ms o più | 0      |
 
 ## <a name="sharepoint-online"></a>SharePoint Online
 
-Per SharePoint Online, la velocità di download disponibile per un utente per l'accesso a un documento viene misurata. Questo può essere influenzato dalla larghezza di banda disponibile nei circuiti di rete tra il computer client e la rete di Microsoft. È inoltre spesso influenzato dalla congestione della rete che esiste nei colli di bottiglia nei dispositivi di rete complessi o nelle aree Wi-Fi con una copertura scadente.
+Per SharePoint Online, la velocità di download disponibile per un utente per l'accesso a un documento da SharePoint Online o OneDrive viene misurata. Questo può essere influenzato dalla larghezza di banda disponibile nei circuiti di rete tra il computer client e la rete di Microsoft. È inoltre spesso influenzato dalla congestione della rete che esiste nei colli di bottiglia nei dispositivi di rete complessi o nelle aree Wi-Fi con una copertura scadente. La velocità di download viene misurata in megabyte al secondo, che corrisponde a circa un decimo dei circuiti con valori di megabit al secondo. Il venticinquesimo percentile (noto anche come misura P25) viene eseguito per tutte le misurazioni nei tre giorni precedenti.
+
+La valutazione di SharePoint Online viene effettuata utilizzando la tabella seguente. Qualsiasi numero di velocità di download tra le soglie sono assegnati punti linearmente all'interno della banda.
+
+| Velocità di download | Punti |
+| :------------- | :----- |
+| 20MBps o più | 100    |
+| 14MBps         | 80     |
+| 8MBps          | 60     |
+| 4MBps          | 40     |
+| 2MBps          | 20     |
+| 0MBps          | 0      |
 
 ## <a name="microsoft-teams"></a>Microsoft Teams
 
-Per Microsoft teams la qualità della rete viene misurata come latenza UDP, jitter UDP e perdita di pacchetti UDP. UDP viene utilizzato per la connettività multimediale di chiamata e di audioconferenza per Microsoft teams. Questo può influire sugli stessi fattori di latenza e velocità di download, oltre agli spazi di connettività nel supporto UDP di una rete, poiché UDP è configurato separatamente per il protocollo TCP più comune.
+Per Microsoft teams la qualità della rete viene misurata come latenza UDP, jitter UDP e perdita di pacchetti UDP. UDP viene utilizzato per la connettività multimediale di chiamata e di audioconferenza per Microsoft teams. Questo può influire sugli stessi fattori di latenza e velocità di download, oltre agli spazi di connettività nel supporto UDP di una rete, poiché UDP è configurato separatamente per il protocollo TCP più comune. La mediana (nota anche come misura cinquantesimo percentile o P50) viene rilevata per tutte le misurazioni negli ultimi tre giorni. 
+
+La valutazione di Microsoft teams viene effettuata utilizzando la tabella seguente. Tutte e tre le misure UDP devono superare la soglia elencata per ottenere i punti visualizzati. Non vi sono valutazioni per una singola posizione all'interno di una banda.
+
+| Perdita di pacchetti UDP | Latenza UDP | Jitter UDP | Punti |
+| :-------------- | :---------- | :--------- | :----- |
+| 0,25%           | 60ms        | 15ms       | 100    |
+| 1,00%           | 120ms       | 40ms       | 80     |
+| 1,50%           | 240ms       | 65ms       | 60     |
+| 3,00%           | 275ms       | 80ms       | 40     |
+| 5,00%           | 350ms       | 150ms      | 20     |
+| Qualsiasi valore superiore      | Qualsiasi valore superiore  | Qualsiasi valore superiore | 0      |
 
 ## <a name="related-topics"></a>Argomenti correlati
 

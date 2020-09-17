@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: La roadmap per configurare il software client e server per Microsoft 365.
-ms.openlocfilehash: 14169809deb363cac8ff3dd6ad35c12c20318674
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 898464222b8296cee3ab12fe7351295f39a23736
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46691105"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47950569"
 ---
 # <a name="client-and-server-software-roadmap-for-microsoft-365"></a>Roadmap software client e server per Microsoft 365
 
@@ -34,8 +34,7 @@ Per massimizzare il valore aziendale della famiglia di prodotti integrata Micros
 >Il **14 gennaio 2020** Windows 7 ha raggiunto la fine del supporto. Per altre informazioni, fare clic [qui](https://support.microsoft.com/help/4057281/windows-7-support-will-end-on-january-14-2020).
 >
 
-La realizzazione di tutte queste migrazioni nel tempo rende la propria organizzazione più vicina al [luogo di lavoro moderno](https://www.microsoft.com/microsoft-365/blog/2018/04/27/making-it-simpler-with-a-modern-workplace/), un ambiente sicuro e integrato che sblocca il lavoro di squadra e la creatività nell'organizzazione, il tutto abilitato e potenziato da Microsoft 365 per Enterprise. 
-
+La realizzazione di tutte queste migrazioni nel tempo rende la propria organizzazione più vicina al [luogo di lavoro moderno](https://www.microsoft.com/microsoft-365/blog/2018/04/27/making-it-simpler-with-a-modern-workplace/), un ambiente sicuro e integrato che sblocca il lavoro di squadra e la creatività nell'organizzazione, il tutto abilitato e potenziato da Microsoft 365 per Enterprise.
 
 ## <a name="migration-for-microsoft-office-client-products"></a>Migrazione per i prodotti client di Microsoft Office
 
@@ -44,7 +43,7 @@ In molte organizzazioni, sia grandi che piccole, è molto comune l'utilizzo di v
 - Possono essere [aggiornate](https://support.office.com/article/install-office-updates-2ab296f3-7f03-43a2-8e50-46de917611c5) con i più recenti aggiornamenti della sicurezza e di risoluzione dei problemi, ma talvolta la procedura è manuale e non applicabile all'organizzazione.
 - Non sono abilitate in modo ottimale per sfruttare le tecnologie cloud di Microsoft e consentire la trasformazione digitale della propria azienda.
 - Non contengono nuove funzionalità.
- 
+
 Microsoft 365 for Enterprise include Microsoft 365 Apps for Enterprise, una versione dei prodotti client di Office disponibile con una licenza Microsoft 365 per Enterprise ed è installata e aggiornata da Microsoft Cloud. Microsoft 365 Apps for enterprise include aggiornamenti della sicurezza e le funzionalità più recenti. Per saperne di più, consultare le [informazioni su Microsoft 365 Apps for enterprise](https://docs.microsoft.com/deployoffice/about-microsoft-365-apps).
 
 ### <a name="office-2007"></a>Office 2007
@@ -63,7 +62,7 @@ Microsoft 365 Apps for enterprise installa automaticamente gli aggiornamenti e s
 
 Per le versioni di Office nel rilascio di Office 2010, la fine del supporto è il **13 ottobre 2020**. Per altre informazioni, vedere [Roadmap della fine del supporto di Office 2010](https://docs.microsoft.com/deployoffice/office-2010-end-support-roadmap).
 
-Anziché aggiornare i computer che eseguono Office 2010 a Office 2013 o Office 2016 (entrambi da aggiornare manualmente), è consigliabile: 
+Anziché aggiornare i computer che eseguono Office 2010 a Office 2013 o Office 2016 (entrambi da aggiornare manualmente), è consigliabile:
 
 1. Ottenere e assegnare una licenza Microsoft 365 agli utenti.
 2. Disinstallare Office 2010 dai computer.
@@ -92,7 +91,7 @@ In molte organizzazioni, sia grandi che piccole, è molto comune l'utilizzo di v
 - Non includono nuove applicazioni per la produttività, come Microsoft Teams.
 - Non includono le funzionalità di sicurezza più recenti, come Exchange Advanced Threat Protection.
 
-Microsoft 365 per Enterprise include versioni basate su cloud dei servizi di Office Server che utilizzano alcuni degli stessi strumenti delle versioni locali del software di Office Server, ad esempio i Web browser e il client di Outlook. Questi servizi vengono continuamente aggiornati in termini di sicurezza senza coinvolgere l'IT, consentendo agli utenti di risparmiare tempo per gestire e aggiornare i server locali. Questi servizi dispongono anche di nuovi miglioramenti delle funzionalità che non sono presenti nel prodotto server di Office. 
+Microsoft 365 per Enterprise include versioni basate su cloud dei servizi di Office Server che utilizzano alcuni degli stessi strumenti delle versioni locali del software di Office Server, ad esempio i Web browser e il client di Outlook. Questi servizi vengono continuamente aggiornati in termini di sicurezza senza coinvolgere l'IT, consentendo agli utenti di risparmiare tempo per gestire e aggiornare i server locali. Questi servizi dispongono anche di nuovi miglioramenti delle funzionalità che non sono presenti nel prodotto server di Office.
 
 Per informazioni sulla migrazione di utenti e dati per carichi di lavoro specifici di Microsoft 365:
 
@@ -146,7 +145,7 @@ Per i prodotti server nel rilascio di Office 2016, la data della fine del suppor
 
 ## <a name="migration-for-microsoft-windows-7-and-81"></a>Migrazione per Microsoft Windows 7 e 8.1
 
-Il **14 gennaio 2020** Windows 7 ha raggiunto la fine del supporto. Per eseguire la migrazione dei dispositivi con sistema operativo Windows 7 o Windows 8.1, è possibile eseguire un aggiornamento sul posto. 
+Il **14 gennaio 2020** Windows 7 ha raggiunto la fine del supporto. Per eseguire la migrazione dei dispositivi con sistema operativo Windows 7 o Windows 8.1, è possibile eseguire un aggiornamento sul posto.
 
 Per altri metodi, vedere [Scenari di distribuzione di Windows 10](https://docs.microsoft.com/windows/deployment/windows-10-deployment-scenarios). È anche possibile [pianificare la distribuzione di Windows 10](https://aka.ms/planforwin10deployment) autonomamente.
 
@@ -162,7 +161,7 @@ Questo poster di una pagina è un modo rapido per comprendere i diversi percorsi
 
 ## <a name="transition-your-entire-organization"></a>Transizione dell'intera organizzazione
 
-Per ottenere un'immagine migliore di come spostare l'intera organizzazione ai prodotti e ai servizi in Microsoft 365 per Enterprise, vedere il [poster di transizione](../downloads/transition-org-to-m365.pdf).
+Per avere un quadro più completo su come spostare l'intera organizzazione ai prodotti e servizi in Microsoft 365 per le aziende, vedere il [poster di transizione](../downloads/transition-org-to-m365.pdf).
 
 [![Immagine per il poster di transizione a Microsoft 365](../media/microsoft-365-overview/transition-org-to-m365.png)](../downloads/transition-org-to-m365.pdf)
 
@@ -172,11 +171,10 @@ Questo poster a due pagine rappresenta un modo rapido per inventariare l'infrast
 
 ## <a name="how-microsoft-does-microsoft-365-for-enterprise"></a>Come Microsoft fa Microsoft 365 per Enterprise
 
-Vedere in che modo gli esperti IT di Microsoft hanno eseguito la migrazione della società a Microsoft 365 per Enterprise con queste risorse: 
+Vedere in che modo gli esperti IT di Microsoft hanno eseguito la migrazione della società a Microsoft 365 per Enterprise con queste risorse:
 
 - [Distribuzione e aggiornamento di Microsoft 365 Apps for Enterprise](https://www.microsoft.com/itshowcase/Article/Content/757/Deploying-and-updating-Microsoft-Office-365-ProPlus)
 - [Microsoft esegue la migrazione di 150.000 cassette postali a Exchange Online](https://www.microsoft.com/itshowcase/Article/Content/577/Microsoft-migrates-150000-mailboxes-to-Exchange-Online)
 - [SharePoint nel cloud: informazioni su come Microsoft ha eseguito la migrazione](https://www.microsoft.com/itshowcase/Article/Content/691/SharePoint-to-the-cloud-Learn-how-Microsoft-ran-its-own-migration)
 - [Distribuzione di Windows 10 in Microsoft come aggiornamento sul posto](https://www.microsoft.com/itshowcase/Article/Content/668/Deploying-Windows-10-at-Microsoft-as-an-inplace-upgrade)
 - [Distribuzione di Windows 10: suggerimenti e consigli da IT Microsoft](https://www.microsoft.com/itshowcase/Article/Content/951/Windows-10-deployment-tips-and-tricks-from-Microsoft-IT) (video)
-

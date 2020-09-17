@@ -16,12 +16,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Gli amministratori possono ottenere informazioni sui criteri di anti-phishing disponibili in Exchange Online Protection (EOP) e Office 365 Advanced Threat Protection (Office 365 ATP).
-ms.openlocfilehash: a68baf8f2598b8ca0cd13e45d18919ecfdccdacc
-ms.sourcegitcommit: 294a51ef0ff48dddb659c602e047d7fd98f91172
+ms.openlocfilehash: 06307efdc1df03d918e7f0b48c42f6e8ecb1dd79
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "47407929"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47950605"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Criteri di anti-phishing in Microsoft 365
 
@@ -188,6 +188,9 @@ Le impostazioni di rappresentazione seguenti sono disponibili solo nei criteri d
   - **Utenti rappresentati**: l'indirizzo from contiene un utente protetto.
   - **Domini rappresentati**: l'indirizzo from contiene un dominio protetto.
   - **Caratteri insoliti**: l'indirizzo from contiene set di caratteri inusuali, ad esempio simboli matematici e testo o una combinazione di lettere maiuscole e minuscole, in un mittente o dominio protetto.
+
+  > [!NOTE]
+  > Anche quando i suggerimenti per la sicurezza della rappresentazione sono disattivati, è possibile utilizzare una regola del flusso di posta (nota anche come regola di trasporto) per aggiungere un'intestazione del messaggio denominata **X-MS-Exchange-EnableFirstContactSafetyTip** ai messaggi. Verranno visualizzati suggerimenti specifici per la sicurezza che notificano ai destinatari che spesso non ricevono messaggi di posta elettronica dal mittente o nei casi in cui il destinatario riceve un messaggio di posta elettronica per la prima volta dal mittente.
 
 - **Intelligence delle cassette postali**: consente di abilitare o disabilitare l'intelligenza artificiale (ai) che determina i modelli di posta elettronica degli utenti con i contatti frequenti. Questa impostazione consente all'AI di distinguere tra la posta elettronica legittima e contraffatta da tali contatti. L'intelligence della cassetta postale è disponibile solo per le cassette postali di Exchange Online.
 

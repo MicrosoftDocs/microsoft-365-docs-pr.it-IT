@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: .
-ms.openlocfilehash: 7cb2ab9c6987900f2b53a17c3eda49001bca4d84
-ms.sourcegitcommit: 90efec455336b4cecc06a8cbf0ce287740433523
+ms.openlocfilehash: 727f14e8158f7e024b6029231fed18adb2d56a62
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "46898053"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47949688"
 ---
 # <a name="configuring-external-email-forwarding-in-office-365"></a>Configurazione dell'inoltro della posta elettronica esterno in Office 365
 
@@ -31,7 +31,10 @@ L'inoltro esterno è controllato dal *criterio di protezione dalla posta indesid
 
 - **Off** – l'inoltro automatico esterno è disabilitato e si verificherà un rapporto di mancato recapito (NDR) all'utente finale.
 
-Per ulteriori informazioni su come configurare queste impostazioni, vedere Configurare il filtro per la [posta indesiderata in uscita in EOP](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-the-outbound-spam-policy?view=o365-worldwide) .
+Per ulteriori informazioni su come configurare queste impostazioni, vedere Configurare il filtro per la [posta indesiderata in uscita in EOP](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-the-outbound-spam-policy?view=o365-worldwide&preserve-view=true) .
+
+> [!NOTE]
+> La disattivazione dell'inoltro automatico Dsable anche le regole di posta in arrivo che reindirizzano i messaggi agli indirizzi esterni.
 
 ## <a name="controlling-external-email-forwarding"></a>Controllo dell'inoltro della posta elettronica esterno
 
@@ -42,7 +45,7 @@ Office 365 non consente l'inoltro automatico esterno tramite le regole di posta 
 > [!NOTE]
 > La disattivazione dell'inoltro automatico agli indirizzi esterni in Office 365 viene distribuita in fasi con i dettagli comunicati tramite i post del [centro messaggi](https://admin.microsoft.com/Adminportal/Home?source=applauncher&ref=/MessageCenter) . Per aiutare gli amministratori a prepararsi per queste modifiche, è necessario che modifichino i criteri in anticipo per garantire che non vi siano interruzioni per gli utenti.
 
-Ulteriori informazioni sugli utenti che utilizzano l'inoltro automatico (regole di posta in arrivo o inoltro SMTP) nell'organizzazione possono essere trovate nel [rapporto messaggi auto-inoltrati](https://docs.microsoft.com/microsoft-365/security/office-365-security/mfi-auto-forwarded-messages-report?view=o365-worldwide).
+Ulteriori informazioni sugli utenti che utilizzano l'inoltro automatico (regole di posta in arrivo o inoltro SMTP) nell'organizzazione possono essere trovate nel [rapporto messaggi auto-inoltrati](https://docs.microsoft.com/microsoft-365/security/office-365-security/mfi-auto-forwarded-messages-report?view=o365-worldwide&preserve-view=true).
 
 ## <a name="how-does-this-policy-work-with-other-automatic-forwarding-controls"></a>Modalità di funzionamento di questo criterio con altri controlli di inoltro automatico
 

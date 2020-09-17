@@ -1,5 +1,5 @@
 ---
-title: Suggerimenti relativi alle prestazioni di rete nell'interfaccia di amministrazione di Microsoft 365 (anteprima)
+title: Connettività di rete nell'interfaccia di amministrazione di Microsoft 365 (anteprima)
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
@@ -14,16 +14,16 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Panoramica della connettività di rete nell'interfaccia di amministrazione di Microsoft 365 (anteprima)
-ms.openlocfilehash: 2f7e922f1e9abd68ebe51d26ef270760a7c446e2
-ms.sourcegitcommit: 22fd8517707ed3ab6ef996247ad2aa372535ee56
+ms.openlocfilehash: f8eff2248fb7abce75c27f227a2c5e7ec7219046
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46815244"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47948412"
 ---
 # <a name="network-connectivity-in-the-microsoft-365-admin-center-preview"></a>Connettività di rete nell'interfaccia di amministrazione di Microsoft 365 (anteprima)
 
-L'interfaccia di amministrazione di Microsoft 365 ora includesaggregated la metrica di connettività di rete raccolta dal tenant di Microsoft 365 e disponibile per la visualizzazione solo da parte di utenti amministrativi del tenant. Le **valutazioni di rete** e le informazioni sulla **rete** vengono visualizzate nell'interfaccia di amministrazione di Microsoft 365 in **Health | Connettività**.
+L'interfaccia di amministrazione di Microsoft 365 ora include metriche di connettività di rete aggregate raccolte dal tenant di Microsoft 365 e disponibili per la visualizzazione solo da parte di utenti amministrativi del tenant. Le **valutazioni di rete** e le informazioni sulla **rete** vengono visualizzate nell'interfaccia di amministrazione di Microsoft 365 in **Health | Connettività**.
 
 ![Pagina prestazioni di rete](../media/m365-mac-perf/m365-mac-perf-page-nav.png)
 
@@ -35,9 +35,9 @@ Sono disponibili tre opzioni per ottenere valutazioni di rete dai percorsi di Of
 
 ### <a name="1-enable-windows-location-services"></a>1. abilitare i servizi di posizione di Windows
 
-Per questa opzione è necessario disporre di almeno due computer in esecuzione in ogni percorso di Office che supporta i prerequisiti. OneDrive per Windows versione 19,232 o successive deve essere installato in ogni computer. Per ulteriori informazioni sulle versioni di OneDrive, vedere le [Note sulla versione di OneDrive](https://support.office.com/article/onedrive-release-notes-845dcf18-f921-435e-bf28-4e24b95e5fc0). Le misure di rete sono pianificate per essere aggiunte in altre applicazioni client di Office 365 nel prossimo futuro.
+Per questa opzione è necessario disporre di almeno due computer in esecuzione in ogni percorso di Office che supporta i prerequisiti. OneDrive per Windows versione **19,232** o successive deve essere installato in ogni computer. Per ulteriori informazioni sulle versioni di OneDrive, vedere le [Note sulla versione di OneDrive](https://support.office.com/article/onedrive-release-notes-845dcf18-f921-435e-bf28-4e24b95e5fc0). Le misure di rete sono pianificate per essere aggiunte in altre applicazioni client di Office 365 nel prossimo futuro.
 
-Il servizio percorso di Windows deve essere consenziente sui computer. È possibile eseguire il testing eseguendo l'applicazione **Maps** e individuando manualmente. Può essere abilitata in un singolo computer con la posizione della privacy **delle impostazioni**in  ->  **Privacy**  ->  **Location** cui deve essere abilitata l'impostazione "Consenti app per accedere al percorso". Il consenso dei servizi di posizione di Windows può essere distribuito ai PC utilizzando MDM o criteri di gruppo con l'impostazione _LetAppsAccessLocation_.
+Il servizio percorso di Windows deve essere consenziente sui computer. È possibile eseguire il testing eseguendo l'applicazione **Maps** e individuando manualmente. Può essere abilitato su un singolo computer con **impostazioni | Privacy | La posizione** in cui l'impostazione _consente alle app di accedere al percorso_ deve essere abilitata. Il consenso dei servizi di posizione di Windows può essere distribuito ai PC utilizzando MDM o criteri di gruppo con l'impostazione _LetAppsAccessLocation_.
 
 Non è necessario aggiungere percorsi nell'interfaccia di amministrazione con questo metodo, in quanto vengono identificati automaticamente nella risoluzione della città. Non è possibile visualizzare più percorsi di Office all'interno di una città tramite i servizi di posizione di Windows.
 
@@ -47,7 +47,7 @@ Gli esempi di misura e le posizioni degli uffici devono iniziare a essere visual
 
 ### <a name="2-add-locations-and-provide-lan-subnet-information"></a>2. aggiungere posizioni e fornire informazioni sulla subnet LAN
 
-Per questa opzione non sono necessari né i servizi di posizione di Windows né la connessione Wi-Fi. È necessario OneDrive per Windows version 20.161.0811.0001 o versione precedente installata su ogni commputer nel percorso.
+Per questa opzione non sono necessari né i servizi di posizione di Windows né la connessione Wi-Fi. È necessario OneDrive per Windows versione 20,161 o versioni successive installata su ogni computer nel percorso.
 
 È inoltre necessario aggiungere posizioni nella pagina di connettività di rete dell'interfaccia di amministrazione o per importare quelle da un file CSV. Le posizioni aggiunte devono includere le informazioni sulla subnet LAN di Office.
 
@@ -118,14 +118,14 @@ Nella scheda Dettagli della pagina percorso di Office sono riportati i risultati
 
 ## <a name="csv-import-for-lan-subnet-office-locations"></a>Importazione CSV per i percorsi di Office subnet LAN
 
-Per l'identificazione dell'ufficio della subnet LAN, è necessario aggiungere ogni locaiton in anticipo. Invece di aggiungere singoli percorsi di Office nella scheda **percorsi** , è possibile importarli da un file CSV. Potrebbe essere possibile ottenere questi dati da altri luoghi che sono stati archiviati, ad esempio il dashboard qualità chiamata o siti e servizi di Active Directory.
+Per l'identificazione dell'ufficio della subnet LAN, è necessario aggiungere ogni posizione in anticipo. Invece di aggiungere singoli percorsi di Office nella scheda **percorsi** , è possibile importarli da un file CSV. Potrebbe essere possibile ottenere questi dati da altri luoghi che sono stati archiviati, ad esempio il dashboard qualità chiamata o siti e servizi di Active Directory.
 
 Nel file CSV una posizione della città scoperta è contrassegnata come **City**e una posizione di Office aggiunta manualmente è contrassegnata come **posizione**.
 
 1. Nella finestra _connettività principale a Microsoft 365_ fare clic sulla scheda **percorsi** .
 1. Fare clic sul pulsante **Importa** appena sopra l'elenco percorsi. Verrà visualizzato il riquadro a comparsa di **Import Office Locations** .
 
-   ![Messaggio di errore di importazione CSV](../media/m365-mac-perf/m365-mac-perf-import.png)
+   ![Messaggio di importazione CSV](../media/m365-mac-perf/m365-mac-perf-import.png)
 
 1. Fare clic sul collegamento **download Office Locations (. csv)** per esportare l'elenco delle posizioni correnti in un file CSV e salvarlo sul disco rigido locale. In questo modo viene fornito un formato CSV formattato correttamente con intestazioni di colonna a cui è possibile aggiungere posizioni. È possibile lasciare le posizioni esportate esistenti così come sono. non verranno duplicati quando si importa il file CSV aggiornato. Se si desidera modificare l'indirizzo di una posizione esistente, verrà aggiornata quando si importa il file CSV. Non è possibile modificare l'indirizzo di una città individuata.
 1. Aprire il file CSV e aggiungere le posizioni compilando i seguenti campi su una nuova riga per ogni posizione che si desidera aggiungere. Lasciare vuoti tutti gli altri campi; i valori immessi in altri campi verranno ignorati.
@@ -169,3 +169,5 @@ La posizione di uscita Internet è il percorso in cui il traffico di rete esce d
 [Test di connettività Microsoft 365 nell'interfaccia di amministrazione di M365 (anteprima)](office-365-network-mac-perf-onboarding-tool.md)
 
 [Microsoft 365 servizi di localizzazione della connettività di rete (anteprima)](office-365-network-mac-location-services.md)
+
+[Strumento di test della connettività di rete Microsoft 365 (anteprima)](office-365-network-mac-perf-onboarding-tool.md)

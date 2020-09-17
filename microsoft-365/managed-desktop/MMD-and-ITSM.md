@@ -4,13 +4,14 @@ description: ''
 keywords: Microsoft Managed Desktop, Microsoft 365, Service, Documentation, ITISM
 ms.service: m365-md
 author: jaimeo
+ms.author: jaimeo
 ms.localizationpriority: normal
-ms.openlocfilehash: 05bd5a2ee36633b7ccf9ae61e601988a7268bb2c
-ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
+ms.openlocfilehash: 4b735ec28b655dfc01c874bc4865388d11247b67
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "47289806"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47947961"
 ---
 # <a name="microsoft-managed-desktop-and-itil"></a>Microsoft Managed Desktop e ITIL
 
@@ -57,4 +58,4 @@ In questa tabella sono riferite le fasi e i processi ITIL principali alle funzio
 |Gestione degli incidenti  | Microsoft Managed Desktop analizzerà e agirà su incidenti per definizioni di gravità definite.  |  [Definizioni di Severity richieste di supporto](working-with-managed-desktop/admin-support.md#support-request-severity-definitions)       |
 |Gestione delle richieste di evasione     |  Vengono definiti i processi per le richieste di informazioni e le richieste di modifica relative al servizio Microsoft Managed Desktop.         |[Supporto amministratori per Microsoft Managed Desktop](working-with-managed-desktop/admin-support.md)         |
 |Gestione dei problemi     | Qualsiasi problema con il servizio deve essere indirizzato al team dell'account locale in questo momento. | Documentazione in sviluppo |
-|Gestione degli accessi     | I componenti di gestione accessi e le responsabilità del cliente per garantire la funzionalità sono dettagliate.  | [Gestione delle identità e degli accessi](service-description/security.md#identity-and-access-management)        |
+|Gestione degli accessi     | I componenti di gestione accessi e le responsabilità del cliente per garantire la funzionalità sono dettagliate.  | [Gestione di identità e accesso](service-description/security.md#identity-and-access-management)        |
