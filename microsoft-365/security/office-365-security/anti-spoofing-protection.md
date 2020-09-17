@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 localization_priority: Priority
 description: Informazioni per amministratori sulle funzionalità anti-spoofing disponibili in Exchange Online Protection (EOP), che possono contribuire a ridurre gli attacchi di phishing da mittenti e domini contraffatti.
-ms.openlocfilehash: 46adb8b666bd9f73cbd76860f58efedc8d3c1c59
-ms.sourcegitcommit: 22dab0f7604cc057a062698005ff901d40771692
+ms.openlocfilehash: b4d1feda06aa0bd21b72b9642dea845693e20756
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "46868880"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47949751"
 ---
 # <a name="anti-spoofing-protection-in-eop"></a>Protezione anti-spoofing in EOP
 
@@ -143,7 +143,7 @@ Per consentire ai messaggi delle liste di distribuzione di superare i controlli 
 
   - Leggere le istruzioni in questo post di blog: [A tip for mailing list operators to interoperate with DMARC to avoid failures](https://blogs.msdn.microsoft.com/tzink/2017/03/22/a-tip-for-mailing-list-operators-to-interoperate-with-dmarc-to-avoid-failures/) (Un suggerimento per gli operatori delle liste di distribuzione che interagiscono con DMARC per evitare errori).
 
-  - Prendere in considerazione l'installazione degli aggiornamenti nel server delle liste di distribuzione per supportare ARC, vedere[https://arc-spec.org](https://arc-spec.org/)
+  - Prendere in considerazione l'installazione degli aggiornamenti nel server delle liste di distribuzione per supportare ARC, vedere<http://arc-spec.org>.
 
 - L'organizzazione non è proprietaria della lista di distribuzione:
 

@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Configurare la prevenzione della perdita di dati degli endpoint di Microsoft 365 per monitorare le attività dei file e implementare azioni di protezione per questi file negli endpoint.
-ms.openlocfilehash: f24dff993a125de9ecd126b232abfcfa503deb83
-ms.sourcegitcommit: 37ce0658336bea7b27bf8d6aa759deadc97e7365
+ms.openlocfilehash: 43ab2a30570f153f16819ede2eeed1f0e091da74
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/04/2020
-ms.locfileid: "47399223"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47949846"
 ---
 # <a name="get-started-with-endpoint-data-loss-prevention-preview"></a>Introduzione alla prevenzione della perdita di dati degli endpoint (anteprima)
 

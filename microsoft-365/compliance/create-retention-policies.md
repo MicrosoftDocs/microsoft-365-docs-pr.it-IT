@@ -17,18 +17,18 @@ search.appverid:
 - MOE150
 - MET150
 description: Usare i criteri di conservazione per tenere sotto controllo molto efficacemente i contenuti che gli utenti generano con posta elettronica, documenti e conversazioni. Mantenere il contenuto desiderato e liberarsi di quello che non serve.
-ms.openlocfilehash: b992452cffbe7fa2df5e7ad02726ca337fbe0f45
-ms.sourcegitcommit: 9f5b136b96b3af4db4cc6f5b1f35130ae60d6b12
+ms.openlocfilehash: 8663da0a93bb4781af747d810200d4a2a777acb4
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "47816855"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47948174"
 ---
 # <a name="create-and-configure-retention-policies"></a>Creare e configurare criteri di conservazione
 
 >*[Indicazioni per l'assegnazione di licenze di Microsoft 365 per sicurezza e conformità](https://aka.ms/ComplianceSD).*
 
-Usare un criterio di conservazione per decidere proattivamente se conservare il contenuto, eliminarlo o entrambe le cose, ovvero conservarlo ed eliminarlo successivamente. 
+Usare un criterio di conservazione per decidere proattivamente se conservare il contenuto, eliminarlo o entrambe le cose, ovvero conservarlo ed eliminarlo successivamente.
 
 I criteri di conservazione permettono di farlo in modo molto efficiente, assegnando le stesse impostazioni di conservazione per il contenuto in base alla posizione, a livello di sito o di cassetta postale. Se non si sa se occorre usare un criterio di conservazione o un'etichetta di conservazione, vedere [Criteri di conservazione ed etichette di conservazione](retention.md#retention-policies-and-retention-labels).
 
@@ -41,6 +41,7 @@ L'amministratore globale dell'organizzazione dispone delle autorizzazioni comple
 ## <a name="create-and-configure-a-retention-policy"></a>Creare e configurare un criterio di conservazione
 
 Anche se un criterio di conservazione può supportare più posizioni, non è possibile creare un singolo criterio di conservazione che includa tutte le posizioni supportate:
+
 - Posta elettronica di Exchange
 - Sito di SharePoint
 - Account di OneDrive
@@ -64,15 +65,15 @@ Se sono presenti più criteri di conservazione e quando si usano anche etichette
 2. Selezionare **Nuovo criterio di conservazione** per avviare la procedura guidata Crea etichetta di conservazione, e assegnare un nome al nuovo criterio di conservazione.
 
 3. Nella pagina **Scegli posizioni a cui applicare il criterio**, selezionare una o entrambe le posizioni di Teams: **Messaggi del canale di Teams** e **Chat di Teams**.
-     
-    Per **Messaggi del canale di Teams** sono inclusi i messaggi provenienti da canali standard ma non dai [canali privati](https://docs.microsoft.com/microsoftteams/private-channels). I canali privati non sono al momento supportati dai criteri di conservazione.
-    
-    Per impostazione predefinita, [tutti i team e gli utenti sono selezionati](#a-policy-that-applies-to-entire-locations), ma si può raffinare la ricerca selezionando le opzioni [**Scegli** ed **Escludi**](#a-policy-with-specific-inclusions-or-exclusions).
+
+   Per **Messaggi del canale di Teams** sono inclusi i messaggi provenienti da canali standard ma non dai [canali privati](https://docs.microsoft.com/microsoftteams/private-channels). I canali privati non sono al momento supportati dai criteri di conservazione.
+
+   Per impostazione predefinita, [tutti i team e gli utenti sono selezionati](#a-policy-that-applies-to-entire-locations), ma si può raffinare la ricerca selezionando le opzioni [**Scegli** ed **Escludi**](#a-policy-with-specific-inclusions-or-exclusions).
 
 4. Nella pagina **Decidere se si vuole conservare il contenuto, eliminarlo e entrambi** della procedura guidata specificare le opzioni di configurazione per la conservazione e l'eliminazione del contenuto.
-    
-    È possibile creare un criterio che si limita a conservare il contenuto senza eliminarlo, lo conserva e quindi lo elimina dopo un periodo di tempo specificato oppure semplicemente elimina il contenuto dopo un periodo di tempo specificato. Per altre informazioni, vedere [Impostazioni per la conservazione e l'eliminazione del contenuto](#settings-for-retaining-and-deleting-content) in questa pagina.
-    
+
+   È possibile creare un criterio che si limita a conservare il contenuto senza eliminarlo, lo conserva e quindi lo elimina dopo un periodo di tempo specificato oppure semplicemente elimina il contenuto dopo un periodo di tempo specificato. Per altre informazioni, vedere [Impostazioni per la conservazione e l'eliminazione del contenuto](#settings-for-retaining-and-deleting-content) in questa pagina.
+
 5. Completare la procedura guidata per salvare le impostazioni.
 
 Per altre informazioni sui criteri di conservazione per Teams, vedere [Criteri di conservazione in Microsoft Teams](https://docs.microsoft.com/microsoftteams/retention-policies) nella documentazione di Teams.
@@ -83,7 +84,7 @@ Teams non offre solo chat e messaggi del canale. Se sono presenti team creati da
 
 Se si hanno siti del team non connessi a un gruppo di Microsoft 365, è necessario un criterio di conservazione che includa i percorsi dei **siti di SharePoint** o degli **account di OneDrive** per conservare ed eliminare file in Teams:
 
-- i file condivisi in chat vengono archiviati nell'account di OneDrive dell'utente che ha condiviso il file. 
+- i file condivisi in chat vengono archiviati nell'account di OneDrive dell'utente che ha condiviso il file.
 
 - I file caricati nei canali vengono archiviati nel sito di SharePoint del team.
 
@@ -92,15 +93,14 @@ Se si hanno siti del team non connessi a un gruppo di Microsoft 365, è necessar
 
 È possibile che i criteri di conservazione applicati ai gruppi di Microsoft 365, ai siti di SharePoint o agli account OneDrive eliminino un file a cui viene fatto riferimento nel messaggio di una chat o di un canale di Teams prima che tali messaggi vengano eliminati. In questo scenario, il file viene comunque visualizzato nel messaggio di Teams, ma se gli utenti selezionano il file visualizzeranno l'errore "File non trovato". Questo comportamento non è specifico dei criteri di conservazione e può verificarsi anche se un utente elimina manualmente un file da SharePoint o da OneDrive.
 
-
 ### <a name="retention-policy-for-locations-other-than-teams"></a>Criterio di conservazione per posizioni diverse da Teams
 
 1. Nel [Centro conformità Microsoft 365](https://compliance.microsoft.com/) selezionare **Criteri** > **Conservazione**.
 
 2. Selezionare **Nuovo criterio di conservazione** per avviare la procedura guidata Crea etichetta di conservazione, e assegnare un nome al nuovo criterio di conservazione.
 
-3. Nella pagina **Scegli posizioni**, attivare o disattivare le posizioni desiderate, tranne quelle di Teams. Per ogni posizione, è possibile lasciare la configurazione predefinita [applica il criterio all'intera posizione](#a-policy-that-applies-to-entire-locations), o [specifica cosa includere ed escludere](#a-policy-with-specific-inclusions-or-exclusions). 
-    
+3. Nella pagina **Scegli posizioni**, attivare o disattivare le posizioni desiderate, tranne quelle di Teams. Per ogni posizione, è possibile lasciare la configurazione predefinita [applica il criterio all'intera posizione](#a-policy-that-applies-to-entire-locations), o [specifica cosa includere ed escludere](#a-policy-with-specific-inclusions-or-exclusions).
+
     Informazioni specifiche per le posizioni:
     - [Posta elettronica di Exchange e cartelle pubbliche di Exchange](#configuration-information-for-exchange-email-and-exchange-public-folders)
     - [Siti di SharePoint e account di OneDrive](#configuration-information-for-sharepoint-sites-and-onedrive-accounts)
@@ -108,11 +108,10 @@ Se si hanno siti del team non connessi a un gruppo di Microsoft 365, è necessar
     - [Skype for Business](#configuration-information-for-skype-for-business)
 
 4. Nella pagina **Decidere se si vuole conservare il contenuto, eliminarlo e entrambi** della procedura guidata specificare le opzioni di configurazione per la conservazione e l'eliminazione del contenuto.
-    
+
     È possibile creare un criterio che si limita a conservare il contenuto senza eliminarlo, lo conserva e quindi lo elimina dopo un periodo di tempo specificato oppure semplicemente elimina il contenuto dopo un periodo di tempo specificato. Per altre informazioni, vedere [Impostazioni per la conservazione e l'eliminazione del contenuto](#settings-for-retaining-and-deleting-content) in questa pagina.
 
 5. Completare la procedura guidata per salvare le impostazioni.
-
 
 #### <a name="configuration-information-for-exchange-email-and-exchange-public-folders"></a>Informazioni di configurazione per la posta elettronica di Exchange e le cartelle pubbliche di Exchange
 
@@ -128,7 +127,7 @@ La posizione **Cartelle pubbliche di Exchange** applica le impostazioni di conse
 
 Selezionando la posizione **Siti di SharePoint**, il criterio di conservazione può conservare ed eliminare documenti all'interno di siti di comunicazione di SharePoint, siti del team non collegati a gruppi di Office 365 e siti classici. I siti del team collegati a gruppi di Office 365 non sono supportati con questa opzione. In alternativa, usa la posizione dei **gruppi di Office 365** che si applicano ai contenuti della casella di posta, del sito e dei file del gruppo.
 
-Anche se il criterio di conservazione è applicato a livello di sito, le impostazioni di conservazione sono applicate solo ai documenti. Le impostazioni di conservazione non si applicano alle strutture di organizzazione che includono raccolte, elenchi e cartelle all'interno del sito. 
+Anche se il criterio di conservazione è applicato a livello di sito, le impostazioni di conservazione sono applicate solo ai documenti. Le impostazioni di conservazione non si applicano alle strutture di organizzazione che includono raccolte, elenchi e cartelle all'interno del sito.
 
 Quando si specificano le posizioni dei siti di SharePoint o gli account di OneDrive, non è necessario disporre delle autorizzazioni per accedere ai siti e non viene eseguita alcuna convalida quando si specifica l'URL nella pagina **Modificare le posizioni**. Tuttavia, i siti di SharePoint devono essere indicizzati e al termine della procedura guidata viene verificata l'esistenza dei siti specificati.
 
@@ -151,7 +150,7 @@ I criteri di conservazione applicati a un gruppo di Microsoft 365 includono la c
 A differenza della posta elettronica di Exchange, non è possibile attivare lo stato della posizione Skype per includere automaticamente tutti gli utenti ma quando si attiva la posizione, sarà necessario scegliere manualmente gli utenti di cui si desidera conservare le conversazioni:
 
 ![Scegliere il percorso Skype per i criteri di conservazione](../media/skype-location-retention-policies.png)
-  
+
 Quando si seleziona **Scegli utente**, si possono includere rapidamente tutti gli utenti selezionando la casella **Seleziona tutto**. È necessario considerare, però, che ciascun utente viene conteggiato come specifica inclusione nei criteri. Quindi, se si includono 1.000 utenti selezionando la casella **Seleziona tutto**, ciò corrisponde all'inclusione manuale di 1.000 utenti, ossia il numero massimo di utenti supportato da Skype for Business.  
 
 Si noti che **Cronologia conversazioni**, una cartella di Outlook, è una caratteristica che non ha nulla a che fare con l'archiviazione di Skype. **Cronologia conversazioni** può essere disattivata dall'utente finale, mentre l'archiviazione per Skype avviene memorizzando una copia delle conversazioni di Skype in una cartella nascosta che è inaccessibile all'utente ma disponibile per eDiscovery.
@@ -161,39 +160,39 @@ Si noti che **Cronologia conversazioni**, una cartella di Outlook, è una caratt
 Scegliendo le impostazioni per la conservazione e l'eliminazione del contenuto, il criterio di conservazione avrà una delle configurazioni seguenti per un periodo di tempo specificato:
 
 - Conserva solo
-    
+
     Per questa configurazione, scegliere **Conserva elementi per un periodo specifico** e **Al termine del periodo di conservazione: non fare nulla**. Oppure selezionare **Conserva gli elementi per sempre**.
 
 - Conserva ed elimina
-    
+
     Per questa configurazione, scegliere **Scegli elementi per un periodo specifico** e **Al termine del periodo di conservazione: elimina automaticamente gli elementi**.
 
 - Elimina solo
-    
+
     Per questa configurazione, scegliere **Elimina gli elementi solo quando raggiungono una certa età**.
 
 ### <a name="retaining-content-for-a-specific-period-of-time"></a>Conservazione del contenuto per un periodo di tempo specifico
 
 Quando si configura un criterio di conservazione, si sceglie di conservare gli elementi per un numero specifico di giorni, mesi o anni. In alternativa, conservare gli elementi per sempre.
 
-Quando si configura un criterio di conservazione, si può scegliere di conservare il contenuto per un periodo di tempo indefinito o per un numero specifico di giorni, mesi o anni. Il calcolo relativo al periodo di conservazione del contenuto è basato sulla data di modifica del contenuto e non sulla data di applicazione dei criteri di conservazione. 
+Quando si configura un criterio di conservazione, si può scegliere di conservare il contenuto per un periodo di tempo indefinito o per un numero specifico di giorni, mesi o anni. Il calcolo relativo al periodo di conservazione del contenuto è basato sulla data di modifica del contenuto e non sulla data di applicazione dei criteri di conservazione.
 
 Per l'inizio del periodo di conservazione, è anche possibile scegliere quando il contenuto è stato creato oppure, solo per i file e le posizioni di SharePoint, OneDrive e Office 365, quando è stato modificato per l'ultima volta.
 
 Esempi:
-  
+
 - SharePoint: se si vuole conservare gli elementi di una raccolta siti per sette anni dopo l'ultima modifica del contenuto e un documento presente nella raccolta siti non è stato modificato per sei anni, il documento verrà conservato solo per un altro anno se non viene modificato. Se il documento viene nuovamente modificato, la durata viene ricalcolata in base alla nuova data di modifica e il documento verrà conservato per altri sette anni.
-  
+
 - Exchange: se si vuole conservare gli elementi di una cassetta postale per sette anni e un messaggio è stato inviato sei anni fa, il messaggio verrà conservato solo per un altro anno. Per gli elementi di Exchange, l'età dipende dalla data di ricezione per la posta in arrivo o dalla data di invio per la posta in uscita. La conservazione degli elementi in base all'ultima modifica si applica solo ai contenuti dei siti di OneDrive e SharePoint.
-  
+
 Al termine del periodo di conservazione, si sceglie se si vuole eliminare definitivamente il contenuto:
-  
+
 ![Pagina delle impostazioni di conservazione](../media/b05f84e5-fc71-4717-8f7b-d06a29dc4f29.png)
-  
+
 ### <a name="deleting-content-thats-older-than-a-specific-age"></a>Eliminazione di contenuto antecedente a una data specifica
 
 I criteri di conservazione possono conservare e quindi eliminare gli elementi successivamente, o eliminare gli elementi obsoleti senza conservarli.
-  
+
 In entrambi i casi, se i criteri di conservazione eliminano gli elementi, è importante tenere presente che il periodo di tempo specificato per i criteri di conservazione viene calcolato dal momento in cui l'elemento è stato creato o modificato, non dal momento dell'assegnazione dei criteri.
 
 Perciò, prima di assegnare un criterio di conservazione per la prima volta, e specialmente quando il criterio elimina degli elementi, bisogna per prima cosa considerare l'età del contenuto e il modo in cui il criterio potrebbe condizionarlo.  Potrebbe inoltre essere necessario comunicare il nuovo criterio agli utenti prima di assegnarlo, per dargli il tempo di valutare il possibile impatto.
@@ -201,22 +200,22 @@ Perciò, prima di assegnare un criterio di conservazione per la prima volta, e s
 ### <a name="a-policy-that-applies-to-entire-locations"></a>Criteri validi per intere posizioni
 
 Se si scelgono le posizioni, a eccezione di Skype for Business, l'impostazione predefinita è **Tutte** quando lo stato della posizione è **Attivato**.
-  
-Quando un criterio di conservazione si applica a qualsiasi combinazione di posizioni complete, non sono previsti limiti per il numero di destinatari, siti, account, gruppi, ecc. che possono essere inclusi nel criterio. 
+
+Quando un criterio di conservazione si applica a qualsiasi combinazione di posizioni complete, non sono previsti limiti per il numero di destinatari, siti, account, gruppi, ecc. che possono essere inclusi nel criterio.
 
 Ad esempio, se un criterio include tutta la posta elettronica di Exchange e tutti i siti di SharePoint, verranno inclusi tutti i siti e i destinatari, indipendentemente dal numero. Per Exchange, le nuove cassette postali create dopo l'applicazione del criterio ereditano automaticamente il criterio.
 
 ### <a name="a-policy-with-specific-inclusions-or-exclusions"></a>Criteri con specifiche inclusioni o esclusioni
 
-È anche possibile applicare un criterio di conservazione a specifici utenti, gruppi di Microsoft 365 o siti. A questo scopo, assicurare che lo **Stato** di tale posizione sia **Attivato**, quindi usare i collegamenti per includere o escludere determinati utenti, gruppi di Microsoft 365 o siti. 
-  
+È anche possibile applicare un criterio di conservazione a specifici utenti, gruppi di Microsoft 365 o siti. A questo scopo, assicurare che lo **Stato** di tale posizione sia **Attivato**, quindi usare i collegamenti per includere o escludere determinati utenti, gruppi di Microsoft 365 o siti.
+
 Questa configurazione, tuttavia, prevede dei limiti se i criteri di conservazione includono o escludono più di 1.000 oggetti specifici:
-  
+
 - Valori massimi per i criteri di conservazione:
-    - 1.000 cassette postali
-    - 1.000 gruppi di Microsoft 365
-    - 1.000 utenti per le chat private di Teams
-    - 100 siti (OneDrive o SharePoint)
+  - 1.000 cassette postali
+  - 1.000 gruppi di Microsoft 365
+  - 1.000 utenti per le chat private di Teams
+  - 100 siti (OneDrive o SharePoint)
 
 Il un numero massimo di criteri supportati per un tenant è di 10.000. Questi elementi includono criteri di conservazione, criteri per le etichette di conservazione e criteri di conservazione applicati automaticamente.
 
@@ -224,9 +223,9 @@ Se è probabile che i propri criteri di conservazione siano soggetti a queste li
 
 > [!WARNING]
 > Se si configurano inclusioni e poi si rimuove l'ultima di esse, verrà ripristinata la configurazione **Tutti** per la posizione.  Verificare che la configurazione sia quella desiderata prima di salvare il criterio.
-> 
+>
 > Ad esempio, se si specifica un sito di SharePoint da includere nei criteri di conservazione configurato per l'eliminazione dei dati e poi si rimuove quell’unico sito, per impostazione predefinita i criteri di conservazione che eliminano definitivamente i dati verranno applicati a tutti i siti di SharePoint. Lo stesso vale per inclusioni come destinatari di Exchange, account OneDrive, utenti della chat di Teams e così via.
-> 
+>
 > In questo scenario, disabilitare la posizione se non si vuole che l’impostazione **Tutti** per tale posizione sia soggetta ai criteri di conservazione. In alternativa, specificare esclusioni da esonerare dall’applicazione del criterio.
 
 ## <a name="updating-retention-policies"></a>Aggiornamento dei criteri di conservazione
@@ -243,22 +242,22 @@ Tutti i criteri di conservazione con qualsiasi protezione dell’archiviazione d
 
 1. [Connettersi a PowerShell in Centro sicurezza e conformità](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell).
 
-2. Visualizzare un elenco dei criteri di conservazione e trovare il nome del criterio da bloccare eseguendo [Get-RetentionCompliancePolicy](https://powershell/module/exchange/get-retentioncompliancepolicy). Ad esempio:
-    
+2. Visualizzare un elenco dei criteri di conservazione e trovare il nome del criterio da bloccare eseguendo [Get-RetentionCompliancePolicy](https://docs.microsoft.com/powershell/module/exchange/get-retentioncompliancepolicy). Ad esempio:
+
    ![Elenco dei criteri di conservazione in PowerShell](../media/retention-policy-preservation-lock-get-retentioncompliancepolicy.PNG)
-    
+
 3. Per applicare la protezione dell’archiviazione per il criterio di conservazione, eseguire il cmdlet [Set-RetentionCompliancePolicy]( ) con il nome del criterio di conservazione e il parametro *RestrictiveRetention* impostato su true:
-    
+
     ```powershell
     Set-RetentionCompliancePolicy -Identity "<Name of Policy>" –RestrictiveRetention $true
     ```
-    
+
     Ad esempio:
-    
+
     ![Parametro RestrictiveRetention in PowerShell](../media/retention-policy-preservation-lock-restrictiveretention.PNG)
-    
+
      Quando viene richiesto, leggere e accettare le restrizioni disponibili in questa configurazione immettendo **Y**:
-    
+
    ![Richiesta di conferma del blocco dei criteri di conservazione in PowerShell](../media/retention-policy-preservation-lock-confirmation-prompt.PNG)
 
 La protezione dell'archiviazione è ora inserita nei criteri di conservazione. Per confermare, eseguire di nuovo `Get-RetentionCompliancePolicy`, ma specificare il nome del criterio di conservazione e visualizzare i parametri dei criteri:
@@ -270,5 +269,3 @@ Get-RetentionCompliancePolicy -Identity "<Name of Policy>" |Fl
 Dovrebbe essere visualizzato **RestrictiveRetention** è impostato su **True**. Ad esempio:
 
 ![Criteri bloccati con tutti i parametri visualizzati in PowerShell](../media/retention-policy-preservation-lock-locked-policy.PNG)
-  
-

@@ -15,12 +15,12 @@ ms.assetid: 4a05898c-b8e4-4eab-bd70-ee912e349737
 ms.collection:
 - M365-security-compliance
 description: Informazioni su come configurare DMARC (Domain-based Message Authentication, Reporting, and Conformance) per convalidare i messaggi inviati dall'organizzazione.
-ms.openlocfilehash: 09c06d30d118078e310c5e3d0743ef5236ec77ba
-ms.sourcegitcommit: 9489aaf255f8bf165e6debc574e20548ad82e882
+ms.openlocfilehash: 1f014a221334925f5b9c90371d552eb64d026c1f
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "46632118"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47949433"
 ---
 # <a name="use-dmarc-to-validate-email"></a>Usare DMARC per convalidare la posta elettronica
 
@@ -206,7 +206,7 @@ Se si pubblica un criterio reject DMARC (p=reject), nessun altro cliente in Micr
 
 ## <a name="how-microsoft-365-handles-inbound-email-that-fails-dmarc"></a>Come viene gestita la posta elettronica in ingresso che non supera il controllo DMARC in Microsoft 365
 
-Se il criterio DMARC del server di invio è `p=reject`, EOP contrassegna il messaggio come spoof invece di rifiutarlo. In altre parole, per la posta elettronica in ingresso, Microsoft 365 tratta `p=reject` e `p=quarantine` allo stesso modo. Gli amministratori possono definire l'azione da eseguire per i messaggi classificati come spoof nei [criteri anti-phishing](set-up-anti-phishing-policies.md).
+Se il criterio DMARC del server di invio è `p=reject`, [Exchange Online Protection](exchange-online-protection-overview.md) EOP contrassegna il messaggio come spoof invece di rifiutarlo. In altre parole, per la posta elettronica in ingresso, Microsoft 365 tratta `p=reject` e `p=quarantine` allo stesso modo. Gli amministratori possono definire l'azione da eseguire per i messaggi classificati come spoof nei [criteri anti-phishing](set-up-anti-phishing-policies.md).
 
 Microsoft 365 è configurato in questo modo perché alcuni messaggi di posta elettronica legittimi potrebbero non superare DMARC. Ad esempio, un messaggio potrebbe non superare DMARC se viene inviato a una lista di distribuzione che poi inoltre il messaggio a tutti i partecipanti della lista. Se Microsoft 365 rifiutasse questi messaggi, le persone potrebbero perdere posta elettronica legittima e non ci sarebbe modo di recuperarla. Al contrario, questi messaggi continueranno a non superare DMARC ma verranno contrassegnati come posta indesiderata e non rifiutati. Se si desidera, gli utenti possono comunque ricevere questi messaggi nella propria posta in arrivo attraverso i seguenti metodi:
 
