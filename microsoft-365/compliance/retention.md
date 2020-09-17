@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Informazioni sui criteri di conservazione e sulle etichette di conservazione, utili per conservare tutto che serve ed eliminare ciò che non serve.
-ms.openlocfilehash: 4dc328cdba9f01177b3e8239ab2c09317774eb31
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: 7787d3e2e3dead737d7a0e5ed083a851a349d561
+ms.sourcegitcommit: 9f5b136b96b3af4db4cc6f5b1f35130ae60d6b12
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47546544"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "47816756"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>Informazioni sui criteri e sulle etichette di conservazione
 
@@ -77,7 +77,7 @@ Per assegnare impostazioni di conservazione al contenuto è possibile usare sia 
 
 Usare un criterio di conservazione per assegnare le stesse impostazioni di conservazione per il contenuto a livello di sito o cassetta postale e usare un'etichetta di conservazione per assegnare impostazioni di conservazione a livello di elemento (cartelle, documenti o messaggi di posta elettronica).
 
-Ad esempio, se tutti i documenti in un sito di SharePoint devono essere conservati per cinque anni, è più efficiente farlo con usando un criterio di conservazione anziché applicare la stessa etichetta di conservazione a tutti i documenti del sito. Tuttavia, se alcuni documenti nel sito vanno conservati per cinque anni e altri per dieci anni, un criterio di conservazione non è adatto. Quando è necessario specificare impostazioni di conservazione a livello di elemento, usare le etichette di conservazione. 
+Ad esempio, se tutti i documenti in un sito di SharePoint devono essere conservati per 5 anni, è più efficiente farlo con un criterio di conservazione anziché applicare la stessa etichetta di conservazione a tutti i documenti del sito. Tuttavia, se alcuni documenti di quel sito devono essere conservati per 5 anni e altri per 10 anni, un criterio di conservazione potrebbe non essere adatto. Quando è necessario specificare impostazioni di conservazione a livello di elemento, usare le etichette di conservazione. 
 
 Diversamente dai criteri di conservazione, le impostazioni di conservazione delle etichette di conservazione restano associate al contenuto se questo viene copiato o spostato in una posizione diversa di Microsoft 365. Inoltre, le etichette di conservazione hanno le funzionalità seguenti, che i criteri di conservazione non supportano: 
  
@@ -166,7 +166,7 @@ Con le etichette di conservazione è possibile:
 
 - **Applicare un'etichetta di conservazione predefinita a una raccolta documenti, una cartella o un set di documenti** in SharePoint, in modo che i documenti archiviati in quella posizione ereditino l'etichetta di conservazione predefinita.
 
-Inoltre, le etichette di conservazione supportano la [gestione dei record](records-management.md) per messaggi di posta elettronica e documenti tra app e servizi Microsoft 365. È possibile usare un'etichetta di conservazione per classificare un contenuto come record. Quando questo avviene e il contenuto rimane in Microsoft 365, l'etichetta pone altre restrizioni sul contenuto che potrebbero essere necessarie per motivi legali. Per altre informazioni, vedere [confrontare le restrizioni relative alle azioni consentite o bloccate](records-management.md#compare-restrictions-for-what-actions-are-allowed-or-blocked).
+Inoltre, le etichette di conservazione supportano la [gestione dei record](records-management.md) per messaggi di posta elettronica e documenti tra app e servizi Microsoft 365. È possibile usare un'etichetta di conservazione per contrassegnare gli elementi come record. Quando questo avviene e il contenuto rimane in Microsoft 365, l'etichetta pone altre restrizioni sul contenuto che potrebbero essere necessarie per motivi legali. Per altre informazioni, vedere [confrontare le restrizioni relative alle azioni consentite o bloccate](records-management.md#compare-restrictions-for-what-actions-are-allowed-or-blocked).
 
 Se il contenuto viene spostato al di fuori di Microsoft 365, le [etichette di conservazione](sensitivity-labels.md), a differenza delle etichette di riservatezza, non vengono mantenute.
 
@@ -178,7 +178,7 @@ Anche se lo scopo principale delle etichette di conservazione è conservare o el
   
 Ad esempio, è possibile creare e applicare un'etichetta di conservazione denominata "Rivedere in un secondo momento" senza azioni e quindi usarla per ritrovare il contenuto in seguito.
   
-![Pagina Impostazioni etichetta con conservazione disattivata](../media/retention-label-retentionoff.png)
+![Impostazioni etichetta solo per classificazione](../media/retention-label-retentionoff.png)
 
 #### <a name="using-a-retention-label-as-a-condition-in-a-dlp-policy"></a>Uso di un'etichetta di conservazione come condizione nei criteri di prevenzione della perdita dei dati
 
@@ -267,6 +267,7 @@ Usare la tabella seguente per stabilire se usare criteri di conservazione o etic
 |Impostazioni per conservare e poi eliminare, solo conservare oppure solo eliminare |Sì |Sì |
 |Carichi di lavoro supportati: <br />- Exchange <br />- SharePoint <br />- OneDrive <br />- Gruppi di Microsoft 365 <br />- Skype for Business <br />- Teams|<br /> Sì <br /> Sì <br /> Sì <br /> Sì <br /> Sì <br /> Sì | <br /> Sì, tranne le cartelle pubbliche <br /> Sì <br /> Sì <br /> Sì <br /> No <br /> No  |
 |Conservazione applicata automaticamente | Sì | Sì |
+|Conservazione applicata in base alle condizioni <br /> - tipi di informazioni sensibili, query KQL, classificatori sottoponibili a training| No | Sì |
 |Conservazione applicata manualmente | No | Sì |
 |Presenza nell'interfaccia utente per gli utenti finali | No | Sì |
 |Persiste se il contenuto viene spostato | No | Sì, in Microsoft 365 |

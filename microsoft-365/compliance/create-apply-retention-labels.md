@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Istruzioni sulla creazione e la pubblicazione di etichette di conservazione per applicarle nelle app al fine di conservare ciò che serve ed eliminare ciò che non serve
-ms.openlocfilehash: a301568e80bdfe0681b052225852cde8bf8cdf50
-ms.sourcegitcommit: 1780359234abdf081097c8064438d415da92fb85
+ms.openlocfilehash: 2394ee4534ef837488503aae2558964924b2de6b
+ms.sourcegitcommit: 9f5b136b96b3af4db4cc6f5b1f35130ae60d6b12
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "46778314"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "47816915"
 ---
 # <a name="create-retention-labels-and-apply-them-in-apps"></a>Creare etichette di conservazione e applicarle nelle app
 
@@ -68,15 +68,17 @@ La posizione in cui si creano e si configurano le etichette di conservazione var
     
     - Per informazioni sui descrittori del piano di archiviazione, vedere [Usare il piano di archiviazione per gestire le etichette di conservazione](file-plan-manager.md).
     
-    - Per usare l'etichetta di conservazione per dichiarare il contenuto come record, attivare la casella di controllo **Usa l'etichetta per classificare il contenuto come "Record"**.
+    - Per usare l'etichetta di conservazione per dichiarare un [record](records-management.md#records), abilitare l'opzione **Contrassegna elementi come record**.
 
-3. Ripetere questi passaggi per creare altre etichette.
+3. Dopo aver creato l’etichetta, quando compare l'opzione per pubblicarla, applicare automaticamente l’etichetta oppure salvarla: selezionare **Salva etichetta per ora** e quindi fare clic su **Fatto**.
 
-Per modificare un'etichetta esistente, selezionarla e quindi selezionare **Modifica etichetta** per avviare la stessa procedura guidata che consente di modificare le descrizioni dell'etichetta e le [impostazioni idonee](#updating-retention-labels-and-their-policies) dal passaggio 2. In alternativa, selezionare una delle opzioni di **Modifica** disponibili per passare direttamente alla pagina pertinente per eseguire l'aggiornamento.
+4. Ripetere questi passaggi per creare altre etichette.
 
-### <a name="step-2-publish-retention-labels"></a>Passaggio 2: Creare e pubblicare le etichette di conservazione
+Per modificare un'etichetta esistente, selezionarla e quindi selezionare l'opzione **Modifica etichetta** per avviare la procedura guidata di modifica che consente di modificare le descrizioni dell'etichetta e qualsiasi [impostazione idonea](#updating-retention-labels-and-their-policies) del passaggio 2.
 
-Pubblicare le etichette di conservazione in modo che possano essere applicate da amministratori e utenti.
+### <a name="step-2-publish-retention-labels"></a>Passaggio 2: Pubblicare le etichette di conservazione
+
+Pubblicare le etichette di conservazione in modo che possano essere applicate dagli utenti nelle app, come SharePoint e Outlook.
 
 1. Nel [Centro conformità Microsoft 365](https://compliance.microsoft.com/) passare a una delle posizioni seguenti:
     
@@ -92,7 +94,7 @@ Pubblicare le etichette di conservazione in modo che possano essere applicate da
     
     Per informazioni sulle posizioni supportate dalle etichette di conservazione, vedere la sezione [Etichette di conservazione e posizioni](retention.md#retention-label-policies-and-locations). 
 
-Per modificare un criterio di etichetta di conservazione esistente, selezionarlo e quindi selezionare **Modifica criteri** per avviare la stessa procedura guidata che consente di modificare la descrizione del criterio e le [impostazioni idonee](#updating-retention-labels-and-their-policies) dal passaggio 2. In alternativa, selezionare una delle opzioni **Modifica** disponibili per passare direttamente alla pagina pertinente per eseguire l'aggiornamento.
+Per modificare un criterio esistente delle etichette di conservazione (il tipo di criterio è **Pubblica**), selezionare il criterio e quindi selezionare l’opzione **Modifica** per avviare Modifica criterio di conservazione. Questa procedura guidata consente di modificare la descrizione del criterio e qualsiasi [impostazione idonea](#updating-retention-labels-and-their-policies) del passaggio 2.
 
 
 ## <a name="when-retention-labels-become-available-to-apply"></a>Tempo necessario prima che le etichette diventino visibili
@@ -110,7 +112,7 @@ Ad esempio:
 
 In Exchange Online le etichette di conservazione vengono rese disponibili agli utenti finali mediante un processo eseguito ogni sette giorni. Usando Powershell è possibile vedere quando è stato eseguito per l'ultima volta questo processo e quindi identificare quando verrà eseguito nuovamente.
   
-1. [Connettersi a Exchange Online PowerShell](https://go.microsoft.com/fwlink/?linkid=799773).
+1. [Connettersi a PowerShell per Exchange Online](https://go.microsoft.com/fwlink/?linkid=799773).
     
 2. Eseguire questi comandi.
     
@@ -246,7 +248,8 @@ For example, you can create a rule that applies a specific retention label to al
 To create a rule, right-click an item \> **Rules** \> **Create Rule** \> **Advanced Options** \> **Rules Wizard** \> **apply retention policy**.
   
 ![Rules wizard with option to apply retention policies](../media/eeb2407c-15b6-4224-99cf-e0a00034d8ea.png)
-  
+
+Although the UI refers to retention policies, it's your retention labels that display here and can be selected, not your retention policies.
 
 ## Updating retention labels and their policies
 
