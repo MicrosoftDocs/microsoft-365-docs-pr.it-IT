@@ -15,12 +15,12 @@ ms.custom: ''
 localization_priority: Normal
 f1.keywords: NOCSH
 description: Informazioni su come creare un sito Extranet o un team B2B con gli utenti Guest gestiti provenienti da un'organizzazione partner.
-ms.openlocfilehash: 4f8eb33ad9b41f552975d4158a61ec4cedcfa9cc
-ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
+ms.openlocfilehash: 83252241833f3dfe663cc70eae28a5df1214cce0
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46526983"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47949385"
 ---
 # <a name="create-a-b2b-extranet-with-managed-guests"></a>Creare una Extranet B2B con guest gestiti.
 
@@ -31,6 +31,12 @@ Con questo metodo di condivisione delle risorse per la collaborazione, l'organiz
 In questo articolo vengono illustrati i passaggi per creare un pacchetto di risorse (in questo caso, un sito o un team) che è possibile condividere con un'organizzazione partner tramite un modello di registrazione di accesso self-service. 
 
 Prima di iniziare, creare il sito o il team che si desidera condividere con l'organizzazione partner e abilitarlo per la condivisione degli ospiti. Per ulteriori informazioni, vedere [collaborare con gli utenti di un sito](collaborate-in-site.md) o [collaborare con gli ospiti di un team](collaborate-as-team.md) . È inoltre consigliabile esaminare [creare un ambiente di condivisione Guest sicuro](create-secure-guest-sharing-environment.md) per informazioni sulle funzionalità di sicurezza e conformità che è possibile utilizzare per gestire i criteri di governance durante la collaborazione con gli utenti.
+
+## <a name="license-requirements"></a>Requisiti di licenza
+
+L'utilizzo di questa funzionalità richiede una licenza P2 di Azure AD Premium. 
+
+Nubi specializzate, come Azure Germany e Azure China 21Vianet, non sono attualmente disponibili per l'uso.
 
 ## <a name="video-demonstration"></a>Dimostrazione video
 
@@ -124,4 +130,3 @@ Dopo aver copiato il collegamento, è possibile condividerlo con il contatto nel
 ## <a name="see-also"></a>Vedere anche
 
 [Creare un ambiente di condivisione guest sicuro](create-secure-guest-sharing-environment.md)
-

@@ -6,17 +6,17 @@ manager: pamgreen
 ms.date: 08/1/2020
 audience: admin
 ms.topic: article
-ms.service: ''
+ms.service: o365-administration
 search.appverid: ''
 localization_priority: None
 ROBOTS: NOINDEX, NOFOLLOW
 description: Ottenere una panoramica della comprensione del documento in Project Cortex.
-ms.openlocfilehash: bdebc8a8726a7b9a77eb9a1095f83e937cf36cb1
-ms.sourcegitcommit: a3a5dc541b0c971608cc86ef480509c25a13ca60
+ms.openlocfilehash: c1e4092164ee96d4f244f10be9ebab62a2c8da5b
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/10/2020
-ms.locfileid: "46612715"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47950049"
 ---
 # <a name="document-understanding-overview-preview"></a>Panoramica delle informazioni sui documenti (anteprima)
 > [!Note] 
@@ -36,7 +36,7 @@ I modelli di comprensione dei documenti vengono creati e gestiti in un tipo di s
 
 - I classificatori vengono utilizzati per identificare e classificare i documenti caricati nella raccolta documenti. Ad esempio, un classificatore può essere "addestrato" per identificare tutti i documenti di *rinnovo del contratto* caricati nella raccolta. Il tipo di contenuto relativo al rinnovo del contratto è definito dall'utente quando si crea il classificatore.
 
-- Estrazioni estrarre informazioni da questi documenti. Ad esempio, per tutti i documenti di rinnovo del contratto identificati nella raccolta documenti, le colonne verranno visualizzate nella visualizzazione che mostrerà anche la *Data di inizio del servizio* e il *client* per ogni documento di rinnovo del contratto. 
+- Estrazioni estrarre informazioni da questi documenti. Ad esempio, per tutti i documenti di rinnovo del contratto identificati nella raccolta documenti, le colonne verranno visualizzate nella visualizzazione che mostrerà anche la *Data di inizio del servizio* e il  *client* per ogni documento di rinnovo del contratto. 
 
 È possibile utilizzare file di esempio per formare e testare i classificatori e gli estrattori nel modello. Nei file di esempio vengono forniti esempi del modello di elementi da cercare quando si tenta di identificare ed estrarre dati dai file. Ad esempio, è consigliabile formare i classificatori e gli estrattori del rinnovo del contratto con esempi di documenti di rinnovo del contratto che la società utilizza. È inoltre possibile utilizzare i file di esempio per testare l'efficacia del modello.
 

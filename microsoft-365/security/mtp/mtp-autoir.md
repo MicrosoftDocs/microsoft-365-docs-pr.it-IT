@@ -18,19 +18,19 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.custom: autoir
-ms.openlocfilehash: c45b7d1b01ee776e9519d67ee52d36b8f48bf0ef
-ms.sourcegitcommit: 89178b8f20d59ca88cfca303a13062b91fbeae9d
+ms.openlocfilehash: 9fc4c99254f4f27b476930a555b237be093bff24
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "46552355"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47950725"
 ---
 # <a name="automated-investigation-and-response-capabilities-in-microsoft-threat-protection"></a>Funzionalità di analisi e risposta automatizzate in Microsoft Threat Protection
 
 **Si applica a:**
 - Microsoft Threat Protection
 
-Quando vengono attivati gli avvisi di sicurezza, spetta al team delle operazioni di sicurezza esaminare gli avvisi e procedere per proteggere l'organizzazione. La classificazione in ordine di priorità e l'analisi degli avvisi può richiedere molto tempo, soprattutto quando continuano ad arrivare nuovi avvisi durante il corso di un'indagine. I team delle operazioni di sicurezza possono sentirsi sopraffatti dall'enorme volume di minacce che devono monitorare e da cui devono proteggersi. Le funzionalità di ricerca e risposta automatizzate (dette anche funzionalità *automatiche di autoguarigione* ) in Microsoft Threat Protection possono essere di aiuto. 
+Quando vengono attivati gli avvisi di sicurezza, spetta al team delle operazioni di sicurezza esaminare gli avvisi e procedere per proteggere l'organizzazione. La classificazione in ordine di priorità e l'analisi degli avvisi può richiedere molto tempo, soprattutto quando continuano ad arrivare nuovi avvisi durante il corso di un'indagine. I team delle operazioni di sicurezza possono sentirsi sopraffatti dall'enorme volume di minacce che devono monitorare e da cui devono proteggersi. Le funzionalità di ricerca e risposta automatizzate (definite anche funzionalità di *autoguarigione* ) in Microsoft Threat Protection possono essere utili. 
 
 Guardare il video seguente per vedere come funzionano le funzionalità di autoguarigione automatizzate:
 

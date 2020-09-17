@@ -15,12 +15,12 @@ f1.keywords:
 - NOCSH
 description: Gli attuali clienti di Office 365 devono inviare una richiesta prima della data di scadenza per il paese in cui i dati dei servizi Microsoft 365 sono stati spostati nel nuovo geografico.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 91ef6b35378c342b5f70182acc351e5288c34def
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: f7ca333ca12faab84df54582ecd3212842d26e1a
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46691019"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47949799"
 ---
 # <a name="how-to-request-your-data-move"></a>Come richiedere lo spostamento dati
 
@@ -43,9 +43,9 @@ I clienti esistenti di Microsoft 365 sono idonei a richiedere la migrazione per 
 |Emirati Arabi Uniti  <br/> |15 luglio 2019  <br/> |30 giugno 2020  <br/> |
 |Sudafrica  <br/> |25 luglio 2019  <br/> |30 giugno 2020  <br/> |
 |Svizzera, Liechtenstein  <br/> |10 dicembre 2019  <br/> |30 giugno 2020  <br/> |
-|Germania  <br/> |Pianificata  <br/> |Pianificata  <br/> |
 |Norvegia  <br/> |15 aprile 2020  <br/> |31 ottobre 2020  <br/> |
-   
+|Germania  <br/> |Pianificata  <br/> |Pianificata  <br/> |
+
 ## <a name="how-to-request-a-move"></a>Come richiedere uno spostamento
 
 I clienti idonei vedranno una pagina nell'interfaccia di [amministrazione di Microsoft 365](https://aka.ms/365admin), che consentirà loro di richiedere di spostare i dati di base dei clienti nella nuova area del datacenter.  
@@ -53,11 +53,7 @@ I clienti idonei vedranno una pagina nell'interfaccia di [amministrazione di Mic
 Per accedere alla pagina nell'interfaccia di amministrazione di Microsoft 365, nel riquadro di spostamento a sinistra espandere **Impostazioni**e quindi fare clic su **Impostazioni organizzazione**.
 Selezionare il **profilo dell'organizzazione**della scheda, quindi selezionare l'opzione **Data Residency**.
   
-**È possibile che questa sezione non venga visualizzata se si applica una delle opzioni seguenti**:
-- Il tenant non è idoneo per il programma di spostamento di Office 365.  L'eleggibilità è determinata dal paese di iscrizione del tenant.
-- Tutti i dati dei clienti di base a Rest sono già presenti nel nuovo Geo (vedere la sezione Data location della pagina). 
-  
-Se l'organizzazione dispone di requisiti di residenza dei dati ed è necessario richiederne la migrazione, contrassegnare la casella di controllo e quindi **salvarla**.
+Questa sezione non verrà visualizzata se il tenant non è idoneo per il programma Microsoft 365 Move.  Se l'organizzazione dispone di requisiti di residenza dei dati ed è necessario richiederne la migrazione, contrassegnare la casella di controllo e quindi **salvarla**.
   
 ![Schermata di operazione di consenso per il datacenter](../media/dataresidencyflyoutae.jpg)
   
@@ -67,13 +63,13 @@ Verrà visualizzato il testo nella sezione relativa alla **residenza dei dati** 
   
 ## <a name="what-happens-after-requesting-a-move"></a>Cosa succede dopo aver richiesto uno spostamento?
 
-Dopo aver richiesto uno spostamento, si prevede di spostarla rapidamente come i vincoli operativi consentono. A causa della natura imprevedibile di molti vincoli, non è possibile condividere una data o un intervallo di tempo specifico per gli spostamenti. Dopo aver completato lo spostamento, verrà visualizzata una notifica.
+Dopo aver richiesto uno spostamento, si prevede di spostarla rapidamente come i vincoli operativi consentono. A causa della natura imprevedibile di molti vincoli, non è possibile condividere una data o un intervallo di tempo specifico per gli spostamenti. Gli amministratori tenant del cliente vedranno una notifica nel centro messaggi dopo che lo spostamento per ogni servizio è stato completato.
   
 Gli spostamenti possono richiedere fino a 24 mesi dalla data di scadenza richiesta per il completamento del paese.
   
 ## <a name="microsoft-teams"></a>Microsoft Teams
 
-A gennaio 2020, i clienti nei paesi di Office 365 idonei possono scegliere l'opzione per la migrazione dei dati del servizio chat di Microsoft teams.  Le sequenze temporali di opt-in sono state riaperte o estese per tutti i paesi idonei a offrire ai clienti la possibilità di prendere in considerazione il programma di migrazione con Microsoft teams nell'ambito. I clienti che in precedenza hanno optato per una mossa di residenza dei dati avranno anche i team che si spostano nel datacenter geografico locale.
+A gennaio 2020, i clienti nei paesi di Office 365 idonei possono scegliere l'opzione per la migrazione dei dati del servizio chat di Microsoft teams.  Le sequenze temporali di opt-in sono state riaperte o estese per tutti i paesi idonei a offrire ai clienti la possibilità di prendere in considerazione il programma di migrazione con Microsoft teams nell'ambito. I clienti che in precedenza hanno optato per una mossa di residenza dei dati avranno anche il passaggio di team al centro informazioni geografico locale, non sono necessarie ulteriori azioni da questi clienti.
 
 ## <a name="related-topics"></a>Argomenti correlati
 

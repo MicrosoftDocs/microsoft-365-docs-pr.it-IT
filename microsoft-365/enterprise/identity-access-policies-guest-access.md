@@ -15,12 +15,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: a88fc5f46a6dafda72a24ba5e80587b24a216955
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: c61526139111885ec345bc4a4dd3cd6b147370e6
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47546479"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47950809"
 ---
 # <a name="policies-for-allowing-guest-and-external-b2b-access"></a>Criteri per consentire l'accesso all'ospite e all'esterno B2B
 
@@ -40,7 +40,7 @@ Per proteggere gli ospiti e l'accesso esterno, nel diagramma seguente vengono il
 
 Nella tabella seguente sono elencati i criteri che è necessario aggiornare o creare nuovi. I criteri comuni collegano le istruzioni di configurazione associate nell'articolo [Common Identity and Device Access Policies](identity-access-policies.md) .
 
-|Livello di protezione|Criteri|Altre informazioni|
+|Livello di protezione|Criteri|Ulteriori informazioni|
 |:---------------|:-------|:----------------|
 |**Protezione di base**|[Richiedi sempre un master per utenti esterni e Guest](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Creare questo nuovo criterio e applicarlo solo agli utenti esterni e ai clienti. In **rischio di accesso**, lasciare deselezionate tutte le opzioni per applicare sempre l'autenticazione a più fattori (AMF).|
 |        |[Richiedere l'AMF quando il rischio di accesso è *medio* o *elevato*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Modificare questo criterio per escludere gli utenti esterni e Guest.|
@@ -50,12 +50,14 @@ Per includere o escludere ospiti e utenti esterni nei criteri di accesso condizi
 
 ![acquisizione dello schermo dei controlli per l'esclusione degli ospiti](../media/microsoft-365-policies-configurations/identity-access-exclude-guests-ui.png)
 
-## <a name="more-information"></a>Altre informazioni
+## <a name="more-information"></a>Ulteriori informazioni
 
 ### <a name="guests-vs-external-users"></a>Clienti e utenti esterni
 In Azure AD, gli utenti guest e External sono gli stessi. Il tipo di utente per entrambi è Guest. Gli utenti Guest sono utenti B2B.
 
-Microsoft teams differenzia tra gli utenti guest e gli utenti esterni all'interno dell'app, ma questi sono entrambi utenti B2B quando eseguono l'autenticazione. Per ulteriori informazioni sui team Guest e sugli utenti esterni, vedere [Abilitazione di Guest e accesso esterno per i team](teams-access-policies.md#enabling-guest-and-external-access-for-teams).
+Microsoft teams differenzia tra gli utenti guest e gli utenti esterni all'interno dell'app. Gli utenti guest dispongono di account Azure AD B2B e possono essere aggiunti ai team. Gli utenti esterni possono partecipare solo a chiamate, chat e riunioni. Per ulteriori informazioni, vedere [questo confronto tra gli utenti guest ed esterni per i team](https://docs.microsoft.com/microsoftteams/communicate-with-users-from-other-organizations#compare-external-and-guest-access).
+
+Per ulteriori informazioni sulla protezione delle identità e dell'accesso ai dispositivi per i team [, vedere consigli sui criteri per la protezione delle chat, dei gruppi e dei file del team](teams-access-policies.md)
 
 ### <a name="require-mfa-always-for-guest-and-external-users"></a>Richiedi sempre un master per utenti esterni e Guest
 Questo criterio richiede agli utenti di registrarsi per l'AMF nel tenant, indipendentemente dal fatto che siano registrati per l'AMF nel tenant di casa. Quando si accede alle risorse del tenant, è necessario che gli ospiti e gli utenti esterni utilizzino Mae per ogni richiesta. 

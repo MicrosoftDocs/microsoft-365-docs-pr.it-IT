@@ -1,22 +1,22 @@
 ---
 title: 'Gestire la rete di gestione delle informazioni (anteprima) '
 description: Come configurare la gestione delle informazioni.
-author: efrene
-ms.author: efrene
-manager: pamgreen
+ms.author: mikeplum
+author: MikePlumleyMSFT
+manager: serdars
 ms.date: 08/01/2020
 audience: admin
 ms.topic: article
-ms.service: ''
+ms.service: o365-administration
 search.appverid: ''
 ROBOTS: NOINDEX, NOFOLLOW
 localization_priority: None
-ms.openlocfilehash: af53f4d563d286ad29138f935fbb69aa10b902ca
-ms.sourcegitcommit: a3a5dc541b0c971608cc86ef480509c25a13ca60
+ms.openlocfilehash: 3ca180dba82e677dbc0d9f112b713df14820ce61
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/10/2020
-ms.locfileid: "46612621"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47950773"
 ---
 # <a name="manage-your-knowledge-management-network-preview"></a>Gestire la rete di gestione delle informazioni (anteprima)
 
@@ -53,7 +53,7 @@ Ad esempio, potrebbe essere necessario modificare le impostazioni per una delle 
 Se si desidera aggiornare le opzioni per le origini degli argomenti di SharePoint, selezionare la scheda **individuazione argomenti** . Questa impostazione consente di selezionare i siti di SharePoint nel tenant che verranno sottoposti a ricerca per indicizzazione e estratti per gli argomenti.
 
 1. Nella scheda **individuazione argomento** , in **selezionare origini argomento di SharePoint**, selezionare **modifica**.
-2. Nella pagina **Seleziona origini argomenti di SharePoint** selezionare i siti di SharePoint che verranno sottoposti a ricerca per indicizzazione come origini per gli argomenti durante l'individuazione. Questo include:</br>
+2. Nella pagina **Seleziona origini argomenti di SharePoint** selezionare i siti di SharePoint che verranno sottoposti a ricerca per indicizzazione come origini per gli argomenti durante l'individuazione. Ciò include:</br>
     a. **Tutti i siti**: tutti i siti di SharePoint nel tenant. Questo acquisisce i siti correnti e futuri.</br>
     b. **All, eccetto siti selezionati**: digitare i nomi dei siti che si desidera escludere.  È inoltre possibile caricare un elenco di siti che si desidera escludere dall'individuazione. I siti creati in futuro verranno inclusi come origini per l'individuazione degli argomenti. </br>
     c. **Solo siti selezionati**: digitare i nomi dei siti che si desidera includere. È inoltre possibile caricare un elenco di siti. I siti creati in futuro non verranno inclusi come origini per l'individuazione degli argomenti. </br>

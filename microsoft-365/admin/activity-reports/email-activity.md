@@ -19,12 +19,12 @@ search.appverid:
 - GEA150
 ms.assetid: 1cbe2c00-ca65-4fb9-9663-1bbfa58ebe44
 description: Informazioni su come ottenere un rapporto attività di posta elettronica utilizzando il Dashboard Microsoft 365 Reports nell'interfaccia di amministrazione di Microsoft 365.
-ms.openlocfilehash: a864b997d607b06391c1a2a5d4725bc8d074de87
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: b2b322fe7e35c3fa7e4a5966919321b329004d92
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44387778"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47948233"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---email-activity"></a>Rapporti Microsoft 365 nell'interfaccia di amministrazione-attività di posta elettronica
 
@@ -48,7 +48,7 @@ Per visualizzare l'attività di posta elettronica dell'utente, è possibile esam
   
 ![Report attività di posta elettronica](../../media/2317f03d-2d71-46bf-a5c7-d94dbc8cfbe1.png)
   
-|||
+|Elemento|Descrizione|
 |:-----|:-----|
 |1.  <br/> |Il report **Attività posta elettronica** può essere visualizzato per le tendenze degli ultimi 7, 30, 90 o 180 giorni. Tuttavia, se si seleziona un giorno specifico nel report, la tabella (7) visualizzerà i dati per un massimo di 28 giorni dalla data corrente (non la data in cui è stato generato il report).  <br/> |
 |2.  <br/> |In genere, i dati di ogni report coprono fino alle ultime 24-48 ore.  <br/> |

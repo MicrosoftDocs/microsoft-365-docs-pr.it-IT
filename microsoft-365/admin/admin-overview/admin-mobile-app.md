@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: e16f6421-2a1a-4142-bf9d-9846600a060a
 description: Ottenere l'app di amministrazione di Microsoft 365 e imparare a gestire l'organizzazione online dal telefono o dal tablet.
-ms.openlocfilehash: 287aafb0be3161c5f100211d6d8169fd133d427b
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+ms.openlocfilehash: 1ad44ccc379b5115ad36e657708eed38f58dca34
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44780542"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47948809"
 ---
 # <a name="about-the-microsoft-365-admin-mobile-app"></a>Informazioni sull'app Microsoft 365 admin per dispositivi mobili
 
@@ -88,6 +88,10 @@ I numeri indicano i messaggi totali dell'ultima settimana, non i messaggi non le
 ### <a name="how-can-i-share-the-service-incidents-and-messages-with-the-rest-of-my-organization"></a>Come è possibile condividere gli eventi imprevisti relativi ai servizi e i messaggi con il resto dell'organizzazione?
 
 Se si seleziona un determinato problema o un messaggio, l'opzione Condividi sarà nell'angolo in alto a destra. Attualmente è supportata la condivisione della posta elettronica.
+  
+### <a name="can-i-use-this-app-with-multiple-accounts-or-tenants"></a>È possibile utilizzare questa app con più account o tenant?
+
+Sì, è possibile configurare più account o tenant.
   
 ### <a name="my-app-is-acting-funny-what-can-i-do-to-troubleshoot-weird-app-behavior"></a>L'app si comporta in modo strano. Cosa si può fare per risolvere il problema?
 

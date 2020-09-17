@@ -19,17 +19,16 @@ search.appverid:
 - MOE150
 ms.assetid: 77ff780d-ab19-4553-adea-09cb65ad0f1f
 description: Ottenere una panoramica del modo in cui l'organizzazione adotta i servizi Microsoft 365 per comunicare e collaborare.
-ms.openlocfilehash: 6619205fb62cce3ba7c62c3df773f650dc125dac
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: fecaed3aa9fc2d0990cb3e7b416cee1bfab21d7e
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44402023"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47948629"
 ---
 # <a name="microsoft-365-usage-analytics"></a>Analisi di utilizzo di Microsoft 365
 ---
-Microsoft 365 Usage Analytics non è ancora disponibile per la community di Microsoft 365 US Government.
- 
+
 ## <a name="overview-of-microsoft-365-usage-analytics"></a>Panoramica dell'analisi dell'utilizzo di Microsoft 365
 
 Utilizzare l'analisi di utilizzo di Microsoft 365 all'interno di Power BI per ottenere informazioni sul modo in cui l'organizzazione adotta i diversi servizi di Microsoft 365 per comunicare e collaborare. È possibile visualizzare e analizzare i dati di utilizzo di Microsoft 365, creare report personalizzati e condividere le informazioni riportate all'interno dell'organizzazione e acquisire informazioni dettagliate sul modo in cui aree o reparti specifici utilizzano Microsoft 365.
@@ -136,7 +135,7 @@ Inoltre, i dettagli a livello di utente nell'app modello sono disponibili solo p
 
 ### <a name="when-should-i-use-the-template-app-and-when-the-usage-reports"></a>Quando è necessario utilizzare l'app modello e quando i report sull'utilizzo?
 
-I [report sulle attività](../activity-reports/activity-reports.md) rappresentano un buon punto di partenza per comprendere l'utilizzo e l'adozione di Microsoft 365. L'app modello combina i dati di utilizzo di Microsoft 365 e le informazioni di Active Directory dell'organizzazione e consente agli amministratori di analizzare il set di dati utilizzando le funzionalità di Visual Analytics di Power BI. Questo consente agli amministratori di non solo di visualizzare e analizzare i dati di utilizzo di Microsoft 365, ma anche di affettarli dalle proprietà di Active Directory, come reparti, posizione e così via. È inoltre possibile creare report personalizzati e condividere le intuizioni all'interno della propria organizzazione. 
+I [report sulle attività](../activity-reports/activity-reports.md)  rappresentano un buon punto di partenza per comprendere l'utilizzo e l'adozione di Microsoft 365. L'app modello combina i dati di utilizzo di Microsoft 365 e le informazioni di Active Directory dell'organizzazione e consente agli amministratori di analizzare il set di dati utilizzando le funzionalità di Visual Analytics di Power BI. Questo consente agli amministratori di non solo di visualizzare e analizzare i dati di utilizzo di Microsoft 365, ma anche di affettarli dalle proprietà di Active Directory, come reparti, posizione e così via. È inoltre possibile creare report personalizzati e condividere le intuizioni all'interno della propria organizzazione. 
 
 ### <a name="how-often-is-the-data-refreshed"></a>Con quale frequenza vengono aggiornati i dati? 
 

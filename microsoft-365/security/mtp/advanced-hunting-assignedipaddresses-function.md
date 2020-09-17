@@ -17,30 +17,29 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 72d02bafa168e48c2d588771f5289da09e6d6000
-ms.sourcegitcommit: 234726a1795d984c4659da68f852d30a4dda5711
+ms.openlocfilehash: 4ee07abe7ce1432921a843d713d0f9b914631174
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46794232"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47949313"
 ---
 # <a name="assignedipaddresses"></a>AssignedIPAddresses()
 
 **Si applica a:**
 - Microsoft Threat Protection
 
-[!INCLUDE [Prerelease information](../includes/prerelease.md)]
+Utilizzare la `AssignedIPAddresses()` funzione per ottenere rapidamente gli indirizzi IP più recenti che sono stati assegnati a un dispositivo. Se si specifica un argomento timestamp, questa funzione otterrà gli indirizzi IP più recenti al momento specificato. 
 
-Utilizzare la `AssignedIPAddresses()` funzione per ottenere rapidamente gli indirizzi IP più recenti che sono stati assegnati a un dispositivo o gli indirizzi IP più recenti da un determinato momento. Questa funzione restituisce una tabella con le colonne seguenti:
+Questa funzione restituisce una tabella con le colonne seguenti:
 
 | Colonna | Tipo di dati | Descrizione |
 |------------|-------------|-------------|
-| Timestamp | datetime | Ora più recente in cui il dispositivo è stato osservato utilizzando l'indirizzo IP |
-| IPAddress | stringa | Indirizzo IP utilizzato dal dispositivo |
-| IPType | stringa | Indica se l'indirizzo IP è un indirizzo pubblico o privato |
-| NetworkAdapterType | int | Tipo di scheda di rete utilizzato dal dispositivo a cui è stato assegnato l'indirizzo IP. Per i valori possibili, fare riferimento a [Questa enumerazione](https://docs.microsoft.com/dotnet/api/system.net.networkinformation.networkinterfacetype?view=netframework-4.7.2)  |
-| ConnectedNetworks | int | Reti a cui è connessa la scheda con l'indirizzo IP assegnato. Ogni matrice JSON contiene il nome di rete, la categoria (pubblico, privato o di dominio), una descrizione e un contrassegno che indica se è connesso pubblicamente a Internet |
-
+| `Timestamp` | datetime | Ora più recente in cui il dispositivo è stato osservato utilizzando l'indirizzo IP |
+| `IPAddress` | stringa | Indirizzo IP utilizzato dal dispositivo |
+| `IPType` | stringa | Indica se l'indirizzo IP è un indirizzo pubblico o privato |
+| `NetworkAdapterType` | int | Tipo di scheda di rete utilizzato dal dispositivo a cui è stato assegnato l'indirizzo IP. Per i valori possibili, fare riferimento a [Questa enumerazione](https://docs.microsoft.com/dotnet/api/system.net.networkinformation.networkinterfacetype) |
+| `ConnectedNetworks` | int | Reti a cui è connessa la scheda con l'indirizzo IP assegnato. Ogni matrice JSON contiene il nome di rete, la categoria (pubblico, privato o di dominio), una descrizione e un contrassegno che indica se è connesso pubblicamente a Internet |
 
 ## <a name="syntax"></a>Sintassi
 
@@ -50,12 +49,12 @@ AssignedIPAddresses(x, y)
 
 ## <a name="arguments"></a>Argomenti
 
-- **x** - `DeviceId` o `DeviceName` valore che identifica il dispositivo
-- **y** - `Timestamp` (DateTime) valore che indica il momento specifico in cui ottenere gli indirizzi IP più recenti. Se non specificato, la funzione restituirà gli indirizzi IP più recenti.
+- **x**- `DeviceId` o `DeviceName` valore che identifica il dispositivo
+- **y**- `Timestamp` valore (DateTime) che indica alla funzione di ottenere gli indirizzi IP assegnati più recenti da un determinato intervallo di tempo. Se non specificato, la funzione restituirà gli indirizzi IP più recenti.
 
 ## <a name="examples"></a>Esempi
 
-### <a name="get-the-list-of-ip-addresses-used-by-a-device-as-of-24-hours-ago"></a>Ottenere l'elenco di indirizzi IP utilizzati da un dispositivo fino a 24 ore fa
+### <a name="get-the-list-of-ip-addresses-used-by-a-device-24-hours-ago"></a>Ottenere l'elenco di indirizzi IP utilizzati da un dispositivo 24 ore fa
 
 ```kusto
 AssignedIPAddresses('example-device-name', ago(1d))

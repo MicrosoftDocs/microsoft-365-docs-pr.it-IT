@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - GEA150
 description: Informazioni su come ottenere un report di attività di Microsoft Forms Pro utilizzando il Dashboard Microsoft 365 Reports nell'interfaccia di amministrazione di Microsoft 365.
-ms.openlocfilehash: df03f3f0300dcd923f43987ee786981b1653b1ce
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 58c7a76c49b7c925a4e7851f7e81c7f47d465d3a
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44387706"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47949193"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---forms-pro-activity"></a>Rapporti Microsoft 365 nell'interfaccia di amministrazione-attività di moduli Pro
 
@@ -47,7 +47,7 @@ Ad esempio, è possibile comprendere l'attività di ogni utente concesso in lice
 
 ![Report attività moduli](../../media/formsproactivity.png)
 
-|||
+|Elemento|Descrizione|
 |:-----|:-----|
 |1.  <br/> |Il report attività **moduli Pro** può essere visualizzato per le tendenze degli ultimi 7, 30, 90 giorni o 180 giorni. Tuttavia, se si seleziona un giorno specifico nel report, la tabella (7) visualizzerà i dati per un massimo di 28 giorni dalla data corrente (non la data in cui è stato generato il report).   <br/> |
 |2.  <br/> |I dati di ogni report sono in genere recenti come le ultime 48 ore.  <br/> |

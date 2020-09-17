@@ -19,12 +19,12 @@ search.appverid:
 - GEA150
 ms.assetid: beffbe01-ce2d-4614-9ae5-7898868e2729
 description: Informazioni su come ottenere il report sull'utilizzo delle cassette postali per conoscere le attività degli utenti con una cassetta postale utente.
-ms.openlocfilehash: 15da09574b2273e119ba9cf2c132d2e9596e9a64
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 0b0c57bda813e1600866513df86b7c973dcdffdc
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44387682"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47949133"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---mailbox-usage"></a>Report di Microsoft 365 nell'interfaccia di amministrazione-utilizzo delle cassette postali
 
@@ -44,7 +44,7 @@ Il **report sull'utilizzo delle cassette postali** fornisce informazioni sugli u
 
 È possibile ottenere una panoramica sull' **utilizzo delle cassette postali** dell'organizzazione esaminando i grafici **Cassetta postale**, **Spazio di archiviazione** e **Quota**. 
   
-|||
+|Elemento|Descrizione|
 |:-----|:-----|
 |1.  <br/> |Il report **Utilizzo delle cassette postali** può essere visualizzato per le tendenze degli ultimi 7, 30, 90 o 180 giorni. Tuttavia, se si seleziona un giorno specifico nel report, la tabella mostrerà i dati per un massimo di 28 giorni dalla data corrente (non la data in cui è stato generato il report).  <br/> |
 |2.  <br/> |In genere, i dati di ogni report coprono fino alle ultime 24-48 ore.  <br/> |

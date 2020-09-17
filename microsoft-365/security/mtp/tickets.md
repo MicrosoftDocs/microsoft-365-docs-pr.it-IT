@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.custom:
 - seo-marvel-apr2020
-ms.openlocfilehash: 12ac7d0a3d07749e16443e645f50de8fda185658
-ms.sourcegitcommit: 787b198765565d54ee73972f664bdbd5023d666b
+ms.openlocfilehash: b9e900baf02e9fc866fe6fe520ad1e40ccd565de
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "46866780"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47950701"
 ---
 # <a name="integrate-servicenow-tickets-into-the-microsoft-365-security-center-and-compliance-center"></a>Integrazione dei ticket di ServiceNow nel centro sicurezza e conformità di Microsoft 365
 
@@ -32,7 +32,7 @@ ms.locfileid: "46866780"
 
 ServiceNow è una popolare piattaforma di cloud computing che aiuta le aziende a gestire i flussi di lavoro digitali per le operazioni aziendali. La piattaforma Now include i flussi di lavoro IT, i flussi di lavoro dei dipendenti e i flussi di lavoro del cliente. [Altre informazioni su ServiceNow](https://www.servicenow.com/)
 
-Microsoft ha collaborato con ServiceNow per semplificare agli amministratori IT la gestione dei ticket e delle attività in entrambe le piattaforme. [Microsoft 365 Security Center](overview-security-center.md) e [Microsoft 365 Compliance Center](https://docs.microsoft.commicrosoft-365/compliance/microsoft-365-compliance-center) sono stati potenziati con la possibilità di creare e registrare in modo nativo i ticket in ServiceNow.
+Microsoft ha collaborato con ServiceNow per semplificare agli amministratori IT la gestione dei ticket e delle attività in entrambe le piattaforme. [Microsoft 365 Security Center](overview-security-center.md) e [Microsoft 365 Compliance Center](https://docs.microsoft.com/microsoft-365/compliance/microsoft-365-compliance-center) sono stati potenziati con la possibilità di creare e registrare in modo nativo i ticket in ServiceNow.
 
 - [**Gestire i ticket di ServiceNow nel centro sicurezza**](tickets-security-center.md)
 - **Gestire i ticket di ServiceNow nel centro conformità** (prossimamente)

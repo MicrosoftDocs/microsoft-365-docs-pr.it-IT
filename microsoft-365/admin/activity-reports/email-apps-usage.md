@@ -19,12 +19,12 @@ search.appverid:
 - GEA150
 ms.assetid: c2ce12a2-934f-4dd4-ba65-49b02be4703d
 description: Informazioni su come ottenere il rapporto di utilizzo delle app di posta elettronica da sapere sulle app di posta elettronica che si connettono a Exchange Online e gli utenti della versione di Outlook.
-ms.openlocfilehash: bfd8a911652283685486202203d0302479a8270e
-ms.sourcegitcommit: 634abe8a237e27dfe82376e6ef32280aab5d4a27
+ms.openlocfilehash: c6ee72390f0b9e9ead0f07c41d64bf5b7264fc1b
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "45005750"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47948245"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---email-apps-usage"></a>Report di Microsoft 365 nell'interfaccia di amministrazione-utilizzo delle app di posta elettronica
 
@@ -46,7 +46,7 @@ Il Dashboard Microsoft 365 **Reports** illustra la panoramica delle attività tr
   
 ![Client di posta elettronica utilizzati](../../media/2a775e46-750f-4fa6-8197-de4b24614bd7.png)
   
-|||
+|Elemento|Descrizione|
 |:-----|:-----|
 |1.  <br/> |Il report di **utilizzo delle app di posta elettronica** può essere visualizzato per le tendenze degli ultimi 7, 30, 90 giorni o 180 giorni. Tuttavia, se si seleziona un giorno specifico nel report, la tabella (7) visualizzerà i dati per un massimo di 28 giorni dalla data corrente (non la data in cui è stato generato il report).  <br/> |
 |2.  <br/> |In genere, i dati di ogni report coprono fino alle ultime 24-48 ore.  <br/> |

@@ -16,12 +16,12 @@ ms.collection:
 - m365solution-infoprotection
 ms.custom: ''
 description: Utilizzare le etichette e i criteri di conservazione di Microsoft 365 per gestire i dati personali nell'ambiente Microsoft 365.
-ms.openlocfilehash: a7a0d6e00d29d80dfd0cb72ba217177aa6029a2c
-ms.sourcegitcommit: 0f71042edc7c3a7f10a7b92e1943abf51532cbf5
+ms.openlocfilehash: 766995b9c758d4ae8cbf7140fb259d208cfb7771
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "46522302"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47949253"
 ---
 # <a name="govern-information-subject-to-data-privacy-regulation"></a>Disciplinare le informazioni soggette alla normativa sulla privacy dei dati
 
@@ -81,27 +81,13 @@ Tenere presente quanto segue:
 
 - Una volta che i tipi di informazioni personali nel proprio ambiente sono più noti, stabilire le pianificazioni di conservazione ed eliminazione per questo tipo di contenuto e modificare l'architettura delle informazioni per semplificare la governance di questo tipo di informazioni. Ad esempio, isolare le informazioni personali in siti, raccolte o cartelle separate con accesso controllato.
 
-### <a name="retention-policies"></a>Criteri di conservazione
+### <a name="retention-policies-and-retention-labels"></a>Criteri di conservazione ed etichette di conservazione.
 
-Creare e distribuire i [criteri di conservazione](../compliance/retention-policies.md) per il contenuto nei siti applicati automaticamente.
-
-Per la privacy dei dati per i siti che contengono o dovrebbero contenere dati personali, specificare le regole di conservazione o eliminazione per soddisfare gli standard organizzativi.
-
-### <a name="retention-labels"></a>Etichette di conservazione
-
-Creare e distribuire [etichette di conservazione](../compliance/labels.md) per contenuti e messaggi di posta elettronica.
-
-Per la privacy dei dati per siti, raccolte, cartelle e messaggi di posta elettronica che contengono o dovrebbero contenere dati personali, specificare regole di conservazione o eliminazione automatica per soddisfare gli standard organizzativi.
+Utilizzare i [criteri di conservazione e le etichette di conservazione](../compliance/retention.md) per mantenere o eliminare il contenuto in Microsoft 365 che contiene o dovrebbe contenere dati personali.
 
 ### <a name="records-management"></a>Gestione dei record
 
-Creare e distribuire etichette di conservazione per la gestione dei record in base a una pianificazione di conservazione dei record e al piano di file.
+Utilizzare le etichette di conservazione che dichiarano il contenuto un record per implementare una [soluzione di gestione dei record](../compliance/records-management.md) per i dati in Microsoft 365.
 
-Per la privacy dei dati, le richieste del soggetto dei dati (richieste DSR) ricevute dal reparto legale vengono dichiarate come record e memorizzate a tempo indeterminato per conformarsi alle specifiche di conservazione delle attività normative.
+Per la privacy dei dati, le richieste del soggetto dei dati (richieste DSR) ricevute dal reparto legale vengono dichiarate come record e possono essere archiviate indefinitamente o eliminate con la prova, per conformarsi alle specifiche di conservazione delle attività normative.
 
-Per ulteriori informazioni, vedere le risorse seguenti: 
-
-- [Gestione record](../compliance/records-management.md)
-- [Gestione del piano di archiviazione](../compliance/file-plan-manager.md)
-- [Conservazione basata su eventi per la gestione dei record](../compliance/automate-event-driven-retention.md)
-- [Disposizione del contenuto](../compliance/disposition-reviews.md)

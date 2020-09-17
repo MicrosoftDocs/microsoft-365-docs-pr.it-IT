@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7dc5d983-84b2-4802-bef0-602ae1780a42
 description: Informazioni su come trasferire manualmente i dati tra due account di Microsoft 365 quando è stato modificato il piano o il nome della società oppure sono stati combinati più abbonamenti in uno.
-ms.openlocfilehash: 91ea4140f0460e1f8cc1243f1b5f203738dcc9ee
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 1297e2d55692262be55b166dacc56cb89cc6c8a0
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46685511"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47948725"
 ---
 # <a name="transfer-data-manually-between-two-accounts"></a>Trasferire manualmente i dati tra due account
 
@@ -106,3 +106,7 @@ Chiedere agli utenti di [spostare posta elettronica, contatti, attività e infor
 ### <a name="onedrive-for-business-data"></a>Dati di OneDrive for business:
 
 Chiedere agli utenti di copiare/sincronizzare [il contenuto di OneDrive for business nel computer](https://support.microsoft.com/office/59b1de2b-519e-4d3a-8f45-51647cf291cd)e quindi aggiungerlo al nuovo abbonamento.
+
+### <a name="onenote"></a>OneNote 
+
+Chiedere agli utenti di eseguire il backup di [OneNote](https://support.microsoft.com/office/back-up-notes-f58b34b0-611d-435e-87fa-7942a1767af4?ui=en-us&rs=en-us&ad=us) e di [ripristinare le note da un backup](https://support.microsoft.com/en-us/office/restore-notes-from-a-backup-5daf9cb0-6769-4998-a5de-f044fdd0d831?ui=en-us&rs=en-us&ad=us) alle nuove sottoscrizioni.

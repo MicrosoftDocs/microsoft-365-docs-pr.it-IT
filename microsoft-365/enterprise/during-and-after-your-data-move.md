@@ -16,12 +16,12 @@ f1.keywords:
 - NOCSH
 description: Gli spostamenti di dati sono operazioni back-end che si verificano quando Microsoft sposta i servizi e i dati associati per il tenant in un nuovo datacenter Geo.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 9f87628d6bbc65fe4122999f6d0fde809fed51b8
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: acd2601d32617c56019ca8b4bf8688ce40f5d76a
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46691161"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47950273"
 ---
 # <a name="during-and-after-your-data-move"></a>Durante e dopo lo spostamento dati
 
@@ -45,8 +45,8 @@ Guardare il centro messaggi di Microsoft 365 per conferma quando si sposta per o
 |Emirati Arabi Uniti  <br/> |Luglio 1, 2022  <br/> |
 |Sudafrica  <br/> |Luglio 1, 2022  <br/> |
 |Svizzera, Liechtenstein  <br/> |Luglio 1, 2022  <br/> |
-|Germania  <br/> |Pianificata  <br/> |
 |Norvegia  <br/> |2022 novembre 1  <br/> |
+|Germania  <br/> |Pianificata  <br/> |
 
 ## <a name="exchange-online"></a>Exchange Online
 

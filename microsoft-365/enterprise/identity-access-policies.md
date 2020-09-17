@@ -16,12 +16,12 @@ ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
 - remotework
-ms.openlocfilehash: 8c4b136f30da0499b31102683f1a903e71813142
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: 1512ba01f78d901177254fce86d0154e97e36496
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47547224"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47950801"
 ---
 # <a name="common-identity-and-device-access-policies"></a>Criteri comuni di identità e accesso dei dispositivi
 
@@ -36,6 +36,10 @@ Nel diagramma seguente viene illustrato il set di criteri consigliato. Indica il
 [ ![ Criteri comuni per la configurazione dell'identità e dell'accesso ai dispositivi](../media/microsoft-365-policies-configurations/Identity_device_access_policies_byplan.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/Identity_device_access_policies_byplan.png) 
  [vedere una versione più grande di questa immagine](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/Identity_device_access_policies_byplan.png)
 
+Di seguito viene indicato un riepilogo di una pagina in formato PDF con collegamenti ai singoli criteri:
+
+[![Immagine del pollice per l'identità e la protezione del dispositivo per Microsoft 365 volantino](../media/microsoft-365-policies-configurations/MSFT-cloud-architecture-identity-device-protection-handout.png)](../downloads/MSFT-cloud-architecture-identity-device-protection-handout.pdf) <br/>  [Visualizzazione in formato PDF](../downloads/MSFT-cloud-architecture-identity-device-protection-handout.pdf) \| [Scarica come PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT-cloud-architecture-identity-device-protection-handout.pdf)  
+
 Nella parte restante di questo articolo viene descritto come configurare questi criteri. 
 
 >[!Note]
@@ -44,7 +48,7 @@ Nella parte restante di questo articolo viene descritto come configurare questi 
 
 Per ottenere il tempo necessario per eseguire queste attività, è consigliabile implementare i criteri di base nell'ordine indicato in questa tabella. Tuttavia, i criteri dell'AMF per i livelli di protezione sensibili e altamente regolamentati possono essere implementati in qualsiasi momento.
 
-|Livello di protezione|Criteri|Altre informazioni|
+|Livello di protezione|Criteri|Ulteriori informazioni|
 |:---------------|:-------|:----------------|
 |**Protezione di base**|[Richiedere l'AMF quando il rischio di accesso è *medio* o *elevato*](#require-mfa-based-on-sign-in-risk)| |
 |        |[Bloccare i client che non supportano l'autenticazione moderna](#block-clients-that-dont-support-modern-authentication)|I client che non utilizzano l'autenticazione moderna possono ignorare i criteri di accesso condizionale, pertanto è importante bloccarli.|
@@ -184,7 +188,7 @@ Nella sezione seconda **assegnazioni** :
 
 | Tipo | Proprietà | Valori                  | Azione |
 |:-----|:-----------|:------------------------|:------|
-| Accesso | **Consenti accesso** |  | Selezionare  |
+| Access | **Consenti accesso** |  | Selezionare  |
 |      |     | **Richiedi modifica password** | Assegno  |
 |||||
 
@@ -210,7 +214,7 @@ Per visualizzare i suggerimenti specifici per ogni livello di configurazione e l
 
 Utilizzando i principi descritti nelle configurazioni di [identità e accesso ai dispositivi](microsoft-365-policies-configurations.md), i livelli di linea di base e di protezione sensibili mappano in stretta collaborazione con le impostazioni di protezione dei dati avanzate di livello 2. Il livello di protezione altamente regolamentato è strettamente associato alle impostazioni di protezione dei dati aziendali di livello 3.
 
-|Livello di protezione |Criteri di protezione delle app  |Altre informazioni  |
+|Livello di protezione |Criteri di protezione delle app  |Ulteriori informazioni  |
 |---------|---------|---------|
 |Protezione di base     | [Protezione avanzata dei dati di livello 2](https://docs.microsoft.com/mem/intune/apps/app-protection-framework#level-2-enterprise-enhanced-data-protection)        | Le impostazioni dei criteri applicate nel livello 2 includono tutte le impostazioni dei criteri consigliate per il livello 1 e aggiungono o aggiornano solo le impostazioni dei criteri seguenti per implementare più controlli e una configurazione più sofisticata rispetto al livello 1.         |
 |Dati sensibili     | [Protezione avanzata dei dati di livello 2](https://docs.microsoft.com/mem/intune/apps/app-protection-framework#level-2-enterprise-enhanced-data-protection)        | Le impostazioni dei criteri applicate nel livello 2 includono tutte le impostazioni dei criteri consigliate per il livello 1 e aggiungono o aggiornano solo le impostazioni dei criteri seguenti per implementare più controlli e una configurazione più sofisticata rispetto al livello 1.        |
@@ -374,7 +378,6 @@ Per richiedere la conformità per tutti i dispositivi:
 
 ## <a name="next-step"></a>Passaggio successivo
 
-![Passaggio 3: criteri per gli utenti guest ed esterni](../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-3.png)
-
+[![Passaggio 3: criteri per gli utenti guest ed esterni](../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-3.png)](identity-access-policies-guest-access.md)
 
 [Informazioni sui consigli sui criteri per gli utenti guest ed esterni](identity-access-policies-guest-access.md)

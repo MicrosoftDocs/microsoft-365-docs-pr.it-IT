@@ -14,12 +14,12 @@ ms.custom:
 - M365solutions
 f1.keywords: NOCSH
 description: Informazioni su come gestire le funzionalità correlate nei gruppi di Microsoft 365, teams, SharePoint e Yammer.
-ms.openlocfilehash: cdef9a4f939c20b34bf32efb5a258deddd885d0e
-ms.sourcegitcommit: 66f1f430b3dcae5f46cb362a32d6fb7da4cff5c1
+ms.openlocfilehash: b217dc089eb150d01eed9cd720b2caa290d54bf1
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "46662665"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47950713"
 ---
 # <a name="overview-of-collaboration-governance-in-microsoft-365"></a>Panoramica della governance della collaborazione in Microsoft 365
 
@@ -108,16 +108,16 @@ Per ulteriori informazioni sulla governance per i gruppi e i team di Microsoft 3
 
 Informazioni sui principi fondamentali e le nuove innovazioni nei gruppi di Microsoft 365, tra cui la gestione e la governance in scala, procedure consigliate per l'utilizzo e l'adozione di guida e self-service.
 
-- [Abbraccia i gruppi di Microsoft 365](https://myignite.techcommunity.microsoft.com/sessions/81553)
+- [Abbraccia i gruppi di Microsoft 365](https://www.youtube.com/watch?v=dAamBF1gb7M)
 
 **Governance**
 
 Informazioni su come configurare i gruppi del ciclo di vita di scadenza, i criteri di denominazione, le etichette di classificazione, la collaborazione con gli utenti esterni e la gestione delle autorizzazioni per la creazione del gruppo.
 
-- [Trasformare la collaborazione e la lotta Shadow IT con i gruppi di Office 365](https://myignite.techcommunity.microsoft.com/sessions/81554)
+- [Trasformare la collaborazione e la lotta Shadow IT con i gruppi di Office 365](https://www.youtube.com/watch?v=Bhf_bKx3lAg)
 
 **Esempio di cliente**
 
 Vedere un esempio dietro le quinte del modo in cui Microsoft 365 groups, SharePoint, teams e Yammer collaborano per fornire una piattaforma di collaborazione globale.
 
-- [Trovare la propria collaborazione Sweet spot con i gruppi di Office 365, SharePoint, teams e Yammer](https://myignite.techcommunity.microsoft.com/sessions/84289)
+- [Trovare la propria collaborazione Sweet spot con i gruppi di Office 365, SharePoint, teams e Yammer](https://www.youtube.com/watch?v=Rx9eVwqXeQk)

@@ -1,5 +1,5 @@
 ---
-title: Report di Microsoft 365 nell'interfaccia di amministrazione-attività utente di Microsoft teams-anteprima
+title: Report di Microsoft 365 nell'interfaccia di amministrazione-attività utente di Microsoft Teams
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -19,30 +19,34 @@ search.appverid:
 - MET150
 - MOE150
 description: Informazioni su come ottenere il report attività degli utenti di Microsoft teams e acquisire maggiori informazioni sull'attività dei team nell'organizzazione.
-ms.openlocfilehash: 734a4dfd62160c2f4d29b8faffb3268a1962fe4f
-ms.sourcegitcommit: a50260b7c5be7374e8e2bea19cc08406ef51ac47
+ms.openlocfilehash: 5b6c67903e7af600cac6ad1fda10962aecc2cc83
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "45167342"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47949031"
 ---
-# <a name="microsoft-365-reports-in-the-admin-center---microsoft-teams-user-activity--preview"></a>Report di Microsoft 365 nell'interfaccia di amministrazione-attività utente di Microsoft teams-anteprima
+# <a name="microsoft-365-reports-in-the-admin-center---microsoft-teams-user-activity"></a>Report di Microsoft 365 nell'interfaccia di amministrazione-attività utente di Microsoft Teams
 
 Il Dashboard Microsoft 365 **Reports** illustra la panoramica delle attività tra i prodotti dell'organizzazione. Consente di eseguire il drill-down fino a visualizzare report a livello di singolo prodotto, per ottenere informazioni più dettagliate sulle attività in ogni prodotto. Vedere l' [argomento introduttivo sui report](activity-reports.md). Nel report Attività degli utenti di Microsoft Teams è possibile ottenere informazioni approfondite sull'attività di Microsoft Teams nell'organizzazione.
   
 > [!NOTE]
 > È necessario essere un amministratore globale, un lettore globale o un lettore di report in Microsoft 365 o un amministratore di Exchange, SharePoint, teams, Communications o Skype for business per visualizzare i report.  
  
-## <a name="how-to-get-to-the-preview-microsoft-teams-user-activity-report"></a>Come accedere al report sull'attività degli utenti di Microsoft teams Preview
+## <a name="how-to-get-to-the-microsoft-teams-user-activity-report"></a>Come accedere al report Attività degli utenti di Microsoft Teams
 
 1. Nell'interfaccia di amministrazione passare alla pagina **Report** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">Utilizzo</a>.
-2. Nell'elenco **a discesa selezionare un report** selezionare **Microsoft teams**.
+2. Nella Home page del dashboard, fare clic sul pulsante **Visualizza altro** sulla scheda attività Microsoft teams.
   
-## <a name="interpret-the-preview-microsoft-teams-user-activity-report"></a>Interpretare l'anteprima del rapporto attività utente di Microsoft Teams
+## <a name="interpret-the-microsoft-teams-user-activity-report"></a>Interpretare il report Attività degli utenti di Microsoft Teams
 
-È possibile visualizzare l'attività utente nel rapporto anteprima teams scegliendo la scheda **attività utente** .
-  
-|||
+È possibile visualizzare l'attività utente nel rapporto teams scegliendo la scheda **attività utente** . <br/>![Microsoft 365 Reports-attività utente di Microsoft teams.](../../media/1011877f-3cf0-4417-9447-91d0b2312aab.png)
+
+Selezionare **Scegli colonne** per aggiungere o rimuovere colonne dal report.  <br/> ![Teams user activity report - choose columns](../../media/a1513028-cf09-4186-93a6-8a203cd22475.png)
+
+È inoltre possibile esportare i dati del report in un file CSV di Excel selezionando il collegamento **Esporta** . Vengono esportati i dati di tutti gli utenti, che possono poi essere ordinati e filtrati per ulteriore analisi. Se gli utenti sono meno di 2000, è possibile ordinarli e filtrarli direttamente nella tabella del report. Se invece gli utenti sono più di 2000, per ordinarli e filtrarli occorre esportare i dati. 
+
+|Elemento|Descrizione|
 |:-----|:-----|
 |**Metrica**|**Definizione**|
 |Nome utente  <br/> |L'indirizzo di posta elettronica dell'utente. È possibile visualizzare il nome effettivo o rendere questo campo anonimo.   <br/> |

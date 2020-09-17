@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 3ca475ef6dbdbd66af47216c4130d748788730c2
-ms.sourcegitcommit: 41fd71ec7175ea3b94f5d3ea1ae2c8fb8dc84227
+ms.openlocfilehash: 2259158c566223c39a6b533483551f95c2fa0824
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47419133"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47949301"
 ---
 # <a name="advanced-hunting-query-best-practices"></a>Procedure consigliate per query in Ricerca avanzata
 
@@ -31,7 +31,12 @@ ms.locfileid: "47419133"
 
 Applicare questi suggerimenti per ottenere risultati più velocemente ed evitare timeout durante l'esecuzione di query complesse. Per altre informazioni su come migliorare le prestazioni della query, vedere [procedure consigliate per le query di Esplora dati](https://docs.microsoft.com/azure/kusto/query/best-practices).
 
-## <a name="general-guidance"></a>Indicazioni generali
+## <a name="understand-cpu-resource-limits"></a>Informazioni sui limiti relativi alle risorse della CPU
+A seconda delle dimensioni, ogni tenant ha accesso a una quantità di risorse della CPU allocata per l'esecuzione di query di ricerca avanzate. Per informazioni dettagliate sui vari limiti di servizio, [vedere informazioni sui limiti di caccia avanzati](advanced-hunting-limits.md).
+
+I clienti che eseguono più query regolarmente devono tenere conto dei consumi e applicare le indicazioni di ottimizzazione in questo articolo per ridurre al minimo le interruzioni derivanti dal superamento dei limiti.
+
+## <a name="general-optimization-tips"></a>Suggerimenti per l'ottimizzazione generale
 
 - **Dimensione nuove query**: se si ritiene che una query restituirà un set di risultati di grandi dimensioni, valutarla prima utilizzando l' [operatore Count](https://docs.microsoft.com/azure/data-explorer/kusto/query/countoperator). Utilizzare [limit](https://docs.microsoft.com/azure/data-explorer/kusto/query/limitoperator) o il relativo sinonimo `take` per evitare set di risultati di grandi dimensioni.
 - **Applicare i filtri all'inizio**: applicare filtri temporali e altri filtri per ridurre il set di dati, soprattutto prima di utilizzare le funzioni di trasformazione e analisi, ad esempio [substring ()](https://docs.microsoft.com/azure/data-explorer/kusto/query/substringfunction), [Replace ()](https://docs.microsoft.com/azure/data-explorer/kusto/query/replacefunction), [Trim ()](https://docs.microsoft.com/azure/data-explorer/kusto/query/trimfunction), [ToUpper ()](https://docs.microsoft.com/azure/data-explorer/kusto/query/toupperfunction)o [parse_json ()](https://docs.microsoft.com/azure/data-explorer/kusto/query/parsejsonfunction). Nell'esempio riportato di seguito, la funzione di analisi [extractjson ()](https://docs.microsoft.com/azure/data-explorer/kusto/query/extractjsonfunction) viene utilizzata dopo che gli operatori del filtro hanno ridotto il numero di record.
@@ -255,9 +260,7 @@ Per informazioni su tutte le funzioni di analisi supportate, [vedere informazion
 
 ## <a name="related-topics"></a>Argomenti correlati
 - [Documentazione relativa alla lingua di query di Kusto](https://docs.microsoft.com/azure/data-explorer/kusto/query/)
+- [Limiti relativi al servizio](advanced-hunting-limits.md)
+- [Gestire gli errori di ricerca avanzata](advanced-hunting-errors.md)
 - [Panoramica della ricerca avanzata](advanced-hunting-overview.md)
 - [Capire il linguaggio delle query](advanced-hunting-query-language.md)
-- [Usare i risultati delle query](advanced-hunting-query-results.md)
-- [Utilizzare le query condivise](advanced-hunting-shared-queries.md)
-- [Cercare tra dispositivi, posta elettronica, app e identità](advanced-hunting-query-emails-devices.md)
-- [Comprensione dello schema](advanced-hunting-schema-tables.md)

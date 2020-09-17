@@ -19,12 +19,12 @@ search.appverid:
 - GEA150
 ms.assetid: 87c24ae2-82e0-4d1e-be01-c3bcc3f18c60
 description: Informazioni su come ottenere un rapporto di attivazione di Office per conoscere gli utenti che hanno attivato la sottoscrizione di Office e identificare gli utenti che potrebbero richiedere ulteriore assistenza.
-ms.openlocfilehash: 3b7d3e599d31377fb11a07623a53a3c75dced129
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 228d8a6437cecfad8e7600a354ca31ddd6b0e6c4
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44387742"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47949145"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-office-activations"></a>Rapporti Microsoft 365 nell'interfaccia di amministrazione-attivazioni di Microsoft Office
 
@@ -48,11 +48,11 @@ Per una panoramica sulle attivazioni di Office dell'organizzazione, vedere i gra
   
 ![Numero di attivazioni di Office](../../media/8c0ae08d-2d71-4437-9147-12c345bb5e9d.png)
   
-|||
+|Elemento|Descrizione|
 |:-----|:-----|
-|1   <br/> |Il report Attivazioni di Office presenta lo stato corrente dei dati delle attivazioni di licenze di Office [alla data del report presentato nell'angolo in alto a destra del grafico].  <br/> |
-|2  <br/> |In genere, i dati di ogni report coprono fino alle ultime 24-48 ore.  <br/> |
-|3  <br/> |Il grafico **Attivazioni** mostra il conteggio delle attivazioni di Office nei PC desktop e nei dispositivi.  <br/> |
+|1  <br/> |Il report Attivazioni di Office presenta lo stato corrente dei dati delle attivazioni di licenze di Office [alla data del report presentato nell'angolo in alto a destra del grafico].  <br/> |
+|2   <br/> |In genere, i dati di ogni report coprono fino alle ultime 24-48 ore.  <br/> |
+|3   <br/> |Il grafico **Attivazioni** mostra il conteggio delle attivazioni di Office nei PC desktop e nei dispositivi.  <br/> |
 |4   <br/> |Il grafico **Utenti** mostra il conteggio degli utenti abilitati e di quelli che hanno attivato l'abbonamento a Office nei PC desktop o nei dispositivi.  <br/> |
 |5   <br/> | Nel grafico **Attivazioni** l'asse Y rappresenta il conteggio delle attivazioni di Office.  <br/>  Nel grafico **Utenti** l'asse Y rappresenta l'utente che esegue l'attività di attivazione di Office.  <br/>  L'asse X in entrambi i grafici rappresenta l'intervallo di date selezionato per il report specifico.  <br/> |
 |6   <br/> |È possibile filtrare i grafici visualizzati selezionando un elemento nella legenda. Ad esempio, nel grafico **attivazioni** , selezionare **Windows OS**, **Mac OS**, **Windows 10 Mobile**, **iOS** o **Android** per visualizzare solo le informazioni relative a ognuna di esse. La modifica di questa selezione non modifica le informazioni nella tabella della griglia. <br/> ![Dati di attivazione per i dispositivi](../../media/59d3ec6e-2a6e-4b21-8aac-c73038c47b9f.png)  <br/> |

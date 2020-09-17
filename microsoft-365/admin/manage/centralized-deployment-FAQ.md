@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Esaminare le risposte alle domande frequenti sulla distribuzione centralizzata dall'interfaccia di amministrazione di Microsoft 365.
-ms.openlocfilehash: b1b5ccbb5373bf5d536208efdfe487bc0c872f25
-ms.sourcegitcommit: 222fc3f8841de82b1b558f47db8a79aa5054d0ed
+ms.openlocfilehash: 555496f15663b6607ebc785498bdc94b5e51b9c9
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/11/2020
-ms.locfileid: "45102885"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47948689"
 ---
 # <a name="centralized-deployment-faq"></a>Domande frequenti sulla distribuzione centralizzata
 
@@ -94,8 +94,10 @@ No. Non è possibile distribuire i componenti aggiuntivi a pagamento da Office S
     
 ## <a name="which-admin-role-do-i-need-to-manage-add-ins-for-my-organization"></a>Quale ruolo di amministratore è necessario per gestire i componenti aggiuntivi per l'organizzazione?  
 
-Per gestire i componenti aggiuntivi è necessario disporre del ruolo di amministratore globale. Se si è la persona che ha acquistato l'abbonamento a Microsoft 365 per le aziende, si è l'amministratore globale. 
+L'amministratore globale è il ruolo consigliato con accesso completo al ciclo di vita della gestione del componente aggiuntivo. Altri ruoli di amministratore dispongono di un accesso limitato al ciclo di vita della distribuzione del componente aggiuntivo. Se si è la persona che ha acquistato l'abbonamento a Microsoft 365 per le aziende, si è l'amministratore globale. 
  
 L'abbonamento viene fornito con un set di ruoli di amministratore che è possibile assegnare ad altri utenti dell'organizzazione. Ogni ruolo di amministratore esegue il mapping alle funzioni aziendali comuni e fornisce alle persone delle autorizzazioni dell'organizzazione l'esecuzione di attività specifiche nell'interfaccia di amministrazione di Microsoft 365.  
  
 Per ulteriori informazioni, vedere [assegnare ruoli di amministratore](https://docs.microsoft.com/microsoft-365/admin/add-users/assign-admin-roles?view=o365-worldwide).  
+
+

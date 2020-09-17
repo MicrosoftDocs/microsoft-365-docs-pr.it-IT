@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 description: Informazioni su come aggiungere utenti e assegnare licenze a Microsoft 365 nello stesso momento.
 ms.date: 07/01/2020
-ms.openlocfilehash: 6745285600b6c5a62b4327d7174b2c249ff5276c
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: 95f84ead009b7510699e467bf5f12bf32d8097d8
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47307374"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47948797"
 ---
 # <a name="add-users-and-assign-licenses-at-the-same-time"></a>Aggiungere utenti e assegnare licenze contemporaneamente
 
@@ -37,7 +37,7 @@ ms.locfileid: "47307374"
 
 ::: moniker-end
 
-Gli utenti del team hanno a disposizione un account utente prima di poter accedere e accede a [Microsoft 365 for business](https://go.microsoft.com/fwlink/?LinkID=519395). Il modo più semplice per aggiungere account utente consiste nell'aggiungerli uno alla volta nell'interfaccia di amministrazione di Microsoft 365. Dopo aver eseguito questo passaggio, gli utenti dispongono di licenze Microsoft 365, credenziali di accesso e cassette postali di Microsoft 365.
+Gli utenti del team hanno a disposizione un account utente prima di poter accedere e accede a [Microsoft 365 for business](https://www.microsoft.com/microsoft-365/business). Il modo più semplice per aggiungere account utente consiste nell'aggiungerli uno alla volta nell'interfaccia di amministrazione di Microsoft 365. Dopo aver eseguito questo passaggio, gli utenti dispongono di licenze Microsoft 365, credenziali di accesso e cassette postali di Microsoft 365.
 
 ## <a name="before-you-begin"></a>Prima di iniziare
 
@@ -54,7 +54,7 @@ Per aggiungere utenti e assegnare licenze, è necessario essere un amministrator
 
 ::: moniker range="o365-worldwide"
 
-1. Passare all'interfaccia di amministrazione all'indirizzo <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>.
+1. Passare all'interfaccia di amministrazione all'indirizzo <https://admin.microsoft.com>.
 2. Passare a **utenti** > **attivi**e selezionare **Aggiungi un utente**.
 3. Nel riquadro **Configura le nozioni** di base, immettere le informazioni sull'utente e quindi fare clic su **Avanti**.
     - **Nome** Compilare il nome e il cognome, il nome visualizzato e il nome utente.
@@ -70,7 +70,7 @@ Per aggiungere utenti e assegnare licenze, è necessario essere un amministrator
 
 ::: moniker range="o365-germany"
 
-1. Passare all'interfaccia di amministrazione all'indirizzo <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">https://portal.office.de/adminportal</a>.
+1. Passare all'interfaccia di amministrazione all'indirizzo <https://portal.office.de/adminportal>.
 2. Passare a **utenti** > **attivi**e selezionare **Aggiungi un utente**.
 3. Nel riquadro **nuovo utente** , immettere le informazioni seguenti. Al termine, fare clic su **Aggiungi**.
     - **Nome** Inserire il nome, il cognome, il nome visualizzato e il nome utente.
@@ -84,7 +84,7 @@ Per aggiungere utenti e assegnare licenze, è necessario essere un amministrator
 
 ::: moniker range="o365-21vianet"
 
-1. Passare all'interfaccia di amministrazione all'indirizzo <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">https://portal.partner.microsoftonline.cn</a>.
+1. Passare all'interfaccia di amministrazione all'indirizzo <https://portal.partner.microsoftonline.cn>.
 2. Passare a **utenti** > **attivi**e selezionare **Aggiungi un utente**.
 3. Nel riquadro **nuovo utente** , immettere le informazioni seguenti. Al termine, fare clic su **Aggiungi**.
     - **Nome** Inserire il nome, il cognome, il nome visualizzato e il nome utente.
@@ -99,7 +99,7 @@ Per aggiungere utenti e assegnare licenze, è necessario essere un amministrator
 ## <a name="add-multiple-users-at-the-same-time"></a>Aggiungere più utenti contemporaneamente
 
 Per aggiungere più utenti contemporaneamente, è possibile utilizzare uno dei metodi seguenti:
-  
+
 - **Usare un foglio di calcolo per aggiungere persone in blocco.** Per ulteriori informazioni, vedere [aggiungere più utenti contemporaneamente](https://docs.microsoft.com/microsoft-365/enterprise/add-several-users-at-the-same-time).
 - **Automatizzare il processo di aggiunta di account e assegnazione delle licenze.** Vedere [creare account utente con Microsoft 365 PowerShell](https://docs.microsoft.com/microsoft-365/enterprise/create-user-accounts-with-microsoft-365-powershell). Questo metodo è adeguato se si ha già familiarità con i cmdlet di Windows PowerShell.
 - **Utilizzo di ActiveDirectory** [Configurare la sincronizzazione della directory per Microsoft 365](https://docs.microsoft.com/microsoft-365/enterprise/set-up-directory-synchronization). Utilizzare lo strumento Azure AD Connect per replicare gli account utente di Active Directory (e altri oggetti di Active Directory) in Microsoft 365. Con la sincronizzazione vengono aggiunti solo gli account utente. Prima di poter utilizzare la posta elettronica e altre app di Office, è necessario assegnare le licenze agli utenti sincronizzati.
@@ -109,7 +109,7 @@ Per aggiungere più utenti contemporaneamente, è possibile utilizzare uno dei m
 
 Dopo aver aggiunto un utente, riceverai una notifica tramite posta elettronica da Microsoft. Il messaggio di posta elettronica contiene l'ID utente e la password della persona in modo che possano accedere a Microsoft 365. Usare il consueto processo per la comunicazione di nuove password. Condividere la [Guida introduttiva dei dipendenti](https://support.microsoft.com/office/b9700090-ce64-4046-ab92-ce8488a7bc0f) con i nuovi utenti per configurare gli elementi, ad esempio come [scaricare e installare le app di Office in un PC o Mac](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658) e come [configurare le app di Office e la posta elettronica in un dispositivo mobile](https://support.microsoft.com/office/7dabb6cb-0046-40b6-81fe-767e0b1f014f).
 
-## <a name="related-content"></a>Contenuto correlato
+## <a name="related-content"></a>Contenuti correlati
 
 [Aggiungere un nuovo dipendente a Microsoft 365](add-new-employee.md) (articolo) \
 [Aggiungere più utenti contemporaneamente a Microsoft 365](https://docs.microsoft.com/microsoft-365/enterprise/add-several-users-at-the-same-time) (articolo) \

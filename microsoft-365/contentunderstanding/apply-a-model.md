@@ -6,17 +6,17 @@ manager: pamgreen
 ms.date: 8/1/2020
 audience: admin
 ms.topic: article
-ms.service: ''
+ms.service: o365-administration
 search.appverid: ''
 localization_priority: None
 ROBOTS: NOINDEX, NOFOLLOW
 description: Informazioni su come applicare un modello pubblicato a una raccolta documenti di SharePoint.
-ms.openlocfilehash: 0658710704273ed04e9f2067413d1141773ef4aa
-ms.sourcegitcommit: a3a5dc541b0c971608cc86ef480509c25a13ca60
+ms.openlocfilehash: 8a4931f4b7a936caeb99d7f8c07deefdac62919b
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/10/2020
-ms.locfileid: "46612681"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47950249"
 ---
 # <a name="apply-a-document-understanding-model-preview"></a>Applicazione di un modello di comprensione del documento (anteprima)
 
@@ -39,7 +39,7 @@ Dopo aver pubblicato il modello di conoscenza del documento, è possibile applic
 
 Per applicare il modello a una raccolta documenti di SharePoint:
 
-1. Nella Home page del modello fare clic su **Pubblica modello**nella sezione **Applica modello a raccolte** . In alternativa, è possibile selezionare **+ Aggiungi raccolta** nella sezione **raccolte con questo modello** . </br>
+1. Nella Home page del modello fare clic su **Pubblica modello**nella sezione **Applica modello a raccolte** . In alternativa, è possibile selezionare  **+ Aggiungi raccolta** nella sezione **raccolte con questo modello** . </br>
 
     ![Aggiungere un modello alla raccolta](../media/content-understanding/apply-to-library.png)</br>
 
