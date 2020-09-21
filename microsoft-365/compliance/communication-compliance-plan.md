@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 5fde3c6d5fd14bd0e4d108030ffaa8e5aeb5ed5c
-ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
+ms.openlocfilehash: d64edc9d80722080db18c45127bfc82110d1ea9e
+ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "47289321"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48131538"
 ---
 # <a name="plan-for-communication-compliance"></a>Piano per la conformità delle comunicazioni
 
@@ -66,7 +66,7 @@ Quando si pianificano i criteri di conformità della comunicazione, prendere in 
 - Per semplificare l'installazione, valutare la possibilità di creare gruppi per gli utenti che hanno necessità di effettuare la revisione delle comunicazioni. Se si utilizzano i gruppi; potrebbe essere necessario più di un utente. Ad esempio, se si desidera eseguire l'analisi delle comunicazioni tra due gruppi distinti di persone oppure se si desidera specificare un gruppo non supervisionato.
 - Configurare la percentuale di comunicazioni da esaminare al 100% per garantire che i criteri stiano intervenendo su tutti i problemi di comunicazione per l'organizzazione.
 - È possibile eseguire l'analisi delle comunicazioni da [origini di terze parti](communication-compliance-feature-reference.md#supported-communication-types) per i dati importati nelle cassette postali nell'organizzazione Microsoft 365. Per includere la revisione delle comunicazioni in queste piattaforme, è necessario configurare un connettore per questi servizi prima che i messaggi vengano controllati dalle condizioni dei criteri di comunicazione.
-- I criteri possono supportare i linguaggi di monitoraggio diversi dall'inglese nei criteri di conformità della comunicazione personalizzati. Creare una [parola chiave personalizzata dizionario](communication-compliance-feature-reference.md#custom-keyword-dictionaries) di parole offensive nella lingua di propria scelta o creare un proprio modello di apprendimento automatico utilizzando i [classificatori addestrabili](classifier-getting-started-with.md) in Microsoft 365.
+- I criteri possono supportare i linguaggi di monitoraggio diversi dall'inglese nei criteri di conformità della comunicazione personalizzati. Creare una [parola chiave personalizzata dizionario](communication-compliance-feature-reference.md#custom-keyword-dictionaries) di parole offensive nella lingua di propria scelta o creare un proprio modello di apprendimento automatico utilizzando i [classificatori addestrabili](classifier-get-started-with.md) in Microsoft 365.
 - Tutte le organizzazioni hanno diversi standard di comunicazione e esigenze di criteri. Monitorare le parole chiave specifiche utilizzando [le condizioni dei criteri](communication-compliance-feature-reference.md#conditional-settings) di conformità della comunicazione o monitorare per tipi specifici di informazioni con [tipi di informazioni riservate personalizzati](create-a-custom-sensitive-information-type.md).
 
 ## <a name="ready-to-get-started"></a>Pronti per iniziare?

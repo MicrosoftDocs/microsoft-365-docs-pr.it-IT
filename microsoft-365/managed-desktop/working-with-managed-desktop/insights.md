@@ -9,16 +9,16 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: bcb47a7d5e5dc0880ade6a7e5900d1019e13a8d7
-ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
+ms.openlocfilehash: 6b19c5cd1766c07e106897cefeb495f1b98bb548
+ms.sourcegitcommit: adaedd1418a3bd6e4875b77fd9e008b47e0b2a51
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46529768"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48104389"
 ---
 # <a name="work-with-insights"></a>Usare i dati analitici
 
-Microsoft Managed Desktop fornisce una serie di dashboard che gli amministratori IT del tenant possono utilizzare per comprendere vari aspetti della popolazione dei dispositivi. È possibile accedervi tramite l'interfaccia di amministrazione di Microsoft 365.
+Microsoft Managed Desktop fornisce una serie di dashboard che gli amministratori IT del tenant possono utilizzare per comprendere vari aspetti della popolazione dei dispositivi. È possibile accedervi direttamente nell'interfaccia di [amministrazione di Microsoft 365](https://admin.microsoft.com/adminportal/home?previewoff=false#/microsoftmanageddesktop).
 
 Con questi dashboard è possibile trovare le risposte a domande di questo tipo:
 
@@ -31,10 +31,9 @@ Con questi dashboard è possibile trovare le risposte a domande di questo tipo:
 - Qual è lo stato corrente degli aggiornamenti della sicurezza sui dispositivi?
 - Quanto tempo è necessario per il 95% dei dispositivi per ottenere corrente con l'aggiornamento della sicurezza più recente?
 
-Per accedere a queste visualizzazioni dall'interfaccia di amministrazione di Microsoft 365, selezionare **Visualizza dettagli** nell'area **report** :
+Per accedere a queste visualizzazioni da [Microsoft endopint Manager](https://endpoint.microsoft.com/), nvaigate alla scheda Microsoft Managed Desktop nella Home page e selezionare **Visualizza dettagli** nell'area **report** :
 
-![Interfaccia di amministrazione con area report nell'angolo in alto a destra, inclusa la scheda report del dispositivo e il collegamento "Visualizza dettagli".](../../media/insights_overview.png)
-
+<!--Update picture to show in MEM [Admin center with Reports area in the upper right including the device reports card and the "view details" link.](../../media/insights_overview.png)-->!
 
 
 ## <a name="usage-insights"></a>Dati analitici sull'utilizzo

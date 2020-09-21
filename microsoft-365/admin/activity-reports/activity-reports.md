@@ -20,12 +20,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
 description: Ottenere un report periodico sulle modalità di utilizzo dei servizi di Microsoft 365 da parte degli utenti dell'organizzazione. Il dashboard Informazioni generali utilizzo consente di analizzare ogni grafico per ottenere approfondimenti.
-ms.openlocfilehash: f0dcb1fac17a39d1125f9188028d714962c9797d
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: e1748cf25fd36787727b0f00f6ddf6553bd454ab
+ms.sourcegitcommit: adaedd1418a3bd6e4875b77fd9e008b47e0b2a51
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47948209"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48104451"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center"></a>Report di Microsoft 365 nell'interfaccia di amministrazione
 
@@ -58,9 +58,8 @@ Guardare questo video per una panoramica sull'uso dei report:
 
 ::: moniker-end
 
-   
-2. Scegliere **Seleziona un report** nella parte superiore del dashboard per selezionare un report nell'elenco dei report disponibili. In alternativa, selezionare un widget immediato delle attività per un servizio, ad esempio posta elettronica o OneDrive, per visualizzare altre informazioni. <br/>![La dashboard di utilizzo](../../media/usage-report-dashboard.png)
-  
+2. Fare clic sul pulsante **Visualizza altro** dalla scheda riepilogo attività di un servizio, ad esempio e-mail o OneDrive, per visualizzare la pagina dettagli del report. Nelle schede sono disponibili report diversi per il servizio. <br/>![La dashboard di utilizzo](../../media/4c0f966d-9d2b-4a6f-a106-a6e2b9a2de07.png) 
+
 ## <a name="who-can-see-reports"></a>Chi può vedere i report
 
 Utenti che hanno le autorizzazioni seguenti:
@@ -147,7 +146,7 @@ In base all'abbonamento, questi sono i report disponibili.
 
 ::: moniker range="o365-worldwide"
 
-- [Attività utente di Microsoft Teams per il dipartimento della difesa e GCC](microsoft-teams-user-activity.md)
+- [Attività degli utenti di Microsoft Teams per il Governo degli Stati Uniti](microsoft-teams-user-activity.md)
 
 ::: moniker-end
 
@@ -159,7 +158,7 @@ In base all'abbonamento, questi sono i report disponibili.
 
 ::: moniker range="o365-worldwide"
 
-- [Utilizzo dispositivi di Microsoft Teams per il dipartimento della difesa e GCC](microsoft-teams-device-usage.md)
+- [Uso dei dispositivi di Microsoft Teams per il Governo degli Stati Uniti](microsoft-teams-device-usage.md)
 
 ::: moniker-end
 

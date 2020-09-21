@@ -9,12 +9,12 @@ ms.service: bookings
 localization_priority: Normal
 ms.assetid: 828a17db-956a-401e-bb62-d153b6dffd53
 description: Seguire le istruzioni riportate di seguito per creare la pagina about US, inclusi il nome dell'azienda, l'indirizzo, il numero di telefono, l'URL, il logo e l'orario di ufficio di Microsoft bookings.
-ms.openlocfilehash: 65de115f2217948b1e57a1642ca3c6a105675898
-ms.sourcegitcommit: 41fd71ec7175ea3b94f5d3ea1ae2c8fb8dc84227
+ms.openlocfilehash: 0424794d4627d7c6770f86f32d81d4653f889163
+ms.sourcegitcommit: 7c0873d2a804f17697844fb13f1a100fabce86c4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47419763"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47962502"
 ---
 # <a name="enter-your-business-information"></a>Immettere le informazioni aziendali
 
@@ -25,7 +25,7 @@ Le informazioni fornite in questo articolo verranno visualizzate nella pagina cl
    ![Esempio di pagina immagini di informazioni aziendali in Microsoft bookings](../media/bookings-business-info.png)
 
 > [!NOTE]
-> La prenotazione è attivata per impostazione predefinita per i clienti che hanno gli abbonamenti Microsoft 365 business standard, Microsoft 365 a3 o Microsoft 365 a5. La prenotazione è disponibile anche per i clienti che dispongono di Office 365 Enterprise E3 e Office 365 Enterprise E5, ma è disattivata per impostazione predefinita. Per iniziare, vedere [accesso a Microsoft bookings](get-access.md). Per abilitare o disabilitare le prenotazioni, vedere [attivazione o disattivazione delle prenotazioni per l'organizzazione](turn-bookings-on-or-off.md).
+> Per iniziare, vedere [accesso a Microsoft bookings](get-access.md). Per abilitare o disabilitare le prenotazioni, vedere [attivazione o disattivazione delle prenotazioni per l'organizzazione](turn-bookings-on-or-off.md).
 
 ## <a name="provide-business-name-and-contact-information"></a>Specificare il nome e le informazioni di contatto dell'azienda
 
@@ -41,7 +41,7 @@ Le informazioni fornite in questo articolo verranno visualizzate nella pagina cl
 
 1. Immettere l' **informativa sulla privacy** e i **termini &** URL delle condizioni.
 
-1. Selezionare **Salva**.
+1. Seleziona **Salva**.
 
 ## <a name="set-your-business-hours"></a>Impostare gli orari di ufficio
 
@@ -69,7 +69,7 @@ Ad esempio, si dispone di riunioni del personale ogni Giovedi dalle 01:00 alle 2
 
    ![Immagine dell'interfaccia utente per l'orario di ufficio con ore aggiunte](../media/bookings-split-shift-hours.png)
 
-1. Selezionare Salva.
+1. Seleziona Salva.
 
     Quando un cliente visita la pagina di prenotazione, vedrà che l'azienda è chiusa dalle 13 alle 14:30 il giovedì.
 

@@ -9,21 +9,18 @@ ms.service: bookings
 localization_priority: Normal
 ms.assetid: 271f43e4-b8f7-4d63-8059-b5747679bb7e
 description: Impostare il tempo di buffer prima o dopo un appuntamento in Microsoft bookings per consentire il tempo necessario per la pulizia o la reimpostazione delle apparecchiature.
-ms.openlocfilehash: dceb777f9ddba9f1ddabfee00608813afae57a86
-ms.sourcegitcommit: 41fd71ec7175ea3b94f5d3ea1ae2c8fb8dc84227
+ms.openlocfilehash: 882ab0340fe56976429ed8294f2fa386b801941f
+ms.sourcegitcommit: 7c0873d2a804f17697844fb13f1a100fabce86c4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47419740"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47962348"
 ---
 # <a name="set-buffer-time-in-microsoft-bookings"></a>Impostare il tempo di buffer in Microsoft Bookings
 
 Alcuni degli appuntamenti potrebbero richiedere tempo prima o dopo aver incontrato il cliente per impostare, pulire o reimpostare la propria sala e attrezzatura. Oppure, se si è in viaggio tra appuntamenti dei clienti, potrebbe essere necessario tempo per garantire che l'utente e il team possano viaggiare tra gli appuntamenti senza che il cliente sia in attesa.
 
 È possibile impostare il tempo di buffer prima dell'inizio degli appuntamenti, dopo la fine degli appuntamenti o entrambi per fornire al personale il tempo supplementare necessario per prepararsi per il successivo appuntamento.
-
-> [!NOTE]
-> La prenotazione è attivata per impostazione predefinita per i clienti che hanno gli abbonamenti Microsoft 365 business standard, Microsoft 365 a3 o Microsoft 365 a5. La prenotazione è disponibile anche per i clienti che dispongono di Office 365 Enterprise E3 e Office 365 Enterprise E5, ma è disattivata per impostazione predefinita. Per iniziare, vedere [accesso a Microsoft bookings](get-access.md). Per abilitare o disabilitare le prenotazioni, vedere [attivazione o disattivazione delle prenotazioni per l'organizzazione](turn-bookings-on-or-off.md).
 
 ## <a name="set-buffer-time-defaults"></a>Configurare le impostazioni predefinite del tempo di buffer
 

@@ -11,7 +11,7 @@ f1.keywords:
 - NOCSH
 ms.author: deniseb
 author: denisebmsft
-ms.date: 01/29/2020
+ms.date: 09/16/2020
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -19,12 +19,13 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.custom: autoir
-ms.openlocfilehash: 4030469b54d9a3a9c6f2eaceae384d39ea7f3e20
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.reviewer: evaldm, isco
+ms.openlocfilehash: ace9ab8e5b73e4a4310b476c8954b0be81faaa66
+ms.sourcegitcommit: 7c0873d2a804f17697844fb13f1a100fabce86c4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637081"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47962324"
 ---
 # <a name="handle-false-positivesnegatives-in-automated-investigation-and-response-capabilities"></a>Gestire i falsi positivi/negativi nelle funzionalità di analisi e risposta automatizzate
 
@@ -43,14 +44,14 @@ Utilizzare questo articolo come guida.
 
 ## <a name="report-a-false-positivenegative-to-microsoft-for-analysis"></a>Segnalare un falso positivo/negativo a Microsoft per l'analisi
 
-|Elemento mancante o rilevato erroneamente |Servizio  |Procedura  |
+|Elemento mancante o rilevato erroneamente |Servizio  |Soluzione  |
 |---------|---------|---------|
 |-Messaggio di posta elettronica <br/>-Allegato di posta elettronica <br/>-URL in un messaggio di posta elettronica<br/>-URL in un file di Office      |[Office 365 Advanced Threat Protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)        |[Inviare messaggi di posta indesiderata sospetti, phishing, URL e file a Microsoft per l'analisi](https://docs.microsoft.com/microsoft-365/security/office-365-security/admin-submission)         |
 |File o app in un dispositivo    |[Microsoft Defender Advanced Threat Protection](https://docs.microsoft.com/windows/security/threat-protection)         |[Inviare un file a Microsoft per l'analisi antimalware](https://www.microsoft.com/wdsi/filesubmission)         |
 
 ## <a name="adjust-an-alert-to-prevent-false-positives-from-recurring"></a>Modificare un avviso per evitare che i falsi positivi vengano ricorrenti
 
-|Scenario |Servizio |Procedura |
+|Scenario |Servizio |Soluzione |
 |--------|--------|--------|
 |-Un avviso viene attivato da un utilizzo legittimo <br/>-Un avviso non è accurato    |[Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security)<br/> oppure <br/>[Rilevamento delle minacce avanzato di Azure](https://docs.microsoft.com/azure/security/fundamentals/threat-detection)         |[Gestire gli avvisi nel cloud app Security Portal](https://docs.microsoft.com/cloud-app-security/managing-alerts)         |
 |Un file, un indirizzo IP, un URL o un dominio viene considerato come malware su un dispositivo, anche se è sicuro|[Microsoft Defender Advanced Threat Protection](https://docs.microsoft.com/windows/security/threat-protection) |[Creare un indicatore personalizzato con un'azione "Consenti"](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-indicators) |
@@ -79,10 +80,7 @@ Se è stata eseguita un'azione di correzione su un dispositivo, ad esempio un di
 
 7. Per annullare l'azione, selezionare **Elimina correzione**.
 
-## <a name="related-articles"></a>Articoli correlati
+## <a name="see-also"></a>Vedere anche
 
-- [Approvare o rifiutare le azioni relative all'indagine e reazione automatizzate](mtp-autoir-actions.md)
-
-- [Altre informazioni sul centro notifiche](mtp-action-center.md)
-
+- [Visualizzare i dettagli e i risultati di un'indagine automatizzata](mtp-autoir-results.md)
 - [Cercare in modo proattivo minacce con la ricerca avanzata di Microsoft Threat Protection](advanced-hunting-overview.md)

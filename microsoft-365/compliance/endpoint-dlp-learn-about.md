@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 'La prevenzione della perdita di dati degli endpoint di Microsoft 365 estende il monitoraggio delle attività dei file e le azioni di protezione agli endpoint. I file vengono resi visibili nelle soluzioni di conformità di Microsoft 365 '
-ms.openlocfilehash: 2423f45fefe994fbaf5704074c49ce862a59340e
-ms.sourcegitcommit: df59c83174d845b8ddec48b9be2659fbfb58bb7f
+ms.openlocfilehash: 7403f20fa7c97c63be0e5001e8d3f5b37b409eee
+ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "46517497"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48131548"
 ---
 # <a name="learn-about-microsoft-365-endpoint-data-loss-prevention-preview"></a>Informazioni sulla prevenzione della perdita di dati degli endpoint di Microsoft 365 (anteprima)
 
@@ -120,7 +120,7 @@ Ad esempio, se un file viene copiato in un supporto USB rimovibile, nei dettagli
 - nome dispositivo
 - tipo di percorso di destinazione
 - applicazione che ha eseguito la copia
-- ID dispositivo MDATP (se applicabile)
+- ID dispositivo di Microsoft Defender per endpoint (se applicabile)
 - produttore del dispositivo multimediale rimovibile
 - modello di dispositivo multimediale rimovibile
 - numero di serie del dispositivo multimediale rimovibile

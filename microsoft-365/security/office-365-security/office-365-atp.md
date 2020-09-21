@@ -19,14 +19,14 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Office 365 Advanced Threat Protection include allegati e collegamenti sicuri, strumenti avanzati anti-phishing, strumenti di report e funzionalità Threat Intelligence.
-ms.openlocfilehash: 2241f48877019cb20484aea0dd1fcf7b9e7b8bb5
-ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
+ms.openlocfilehash: 184ab53059a73de534d9a67a45fc41b20a73f13f
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46653606"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47949687"
 ---
-# <a name="office-365-advanced-threat-protection"></a>Office 365 Advanced Threat Protection
+# <a name="office-365-advanced-threat-protection-atp"></a>Office 365 Advanced Threat Protection (ATP)
 
 > [!IMPORTANT]
 > Questo articolo è rivolto ai clienti aziendali di [Office 365 Advanced Threat Protection](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description). Se si utilizza Outlook.com, Microsoft 365 Family o Microsoft 365 Personal e si cercano informazioni su Collegamenti sicuri o Allegati sicuri in Outlook, vedere [Sicurezza avanzata Outlook.com per gli abbonati a Microsoft 365](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2).
@@ -41,6 +41,25 @@ Office 365 Advanced Threat Protection (ATP) protegge l'organizzazione dalle mina
 
 - **[Funzionalità di analisi e risposta automatizzate](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air)**: consente di risparmiare tempo e fatica nell'analisi e nell'attenuazione delle minacce.
 
+## <a name="getting-started"></a>Introduzione
+
+Se non si ha familiarità con Office 365 Advanced Threat Protection o per *fare pratica*, potrebbe essere utile dividere la configurazione iniziale ATP in blocchi, analizzarla e visualizzare i report usando questo articolo come riferimento. Di seguito sono riportati i primi blocchi di configurazione:
+
+- Configurare tutto con "*anti*" nel nome.
+    - anti-malware
+    - anti-phishing
+    - anti-spam
+- Configurare tutto con "*sicuri*" nel nome.
+    - collegamenti sicuri
+    - allegati sicuri
+- Difendere i carichi di lavoro (ad esempio SharePoint Online, OneDrive e Teams) 
+- Proteggere con Zero-Hour Auto Purge
+
+Per altre informazioni, [fare clic su questo collegamento](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats?view=o365-worldwide&preserve-view=true). 
+
+> [!NOTE]
+> ATP include due diversi tipi di piano. È possibile stabilire se si dispone di **Piano 1** se sono presenti "protezione in tempo reale" e **Piano 2**, se si dispone di Cronologia minacce. Il piano di cui si dispone influisce sugli strumenti visualizzati, quindi assicurarsi di conoscere il piano durante l’apprendimento.
+
 ## <a name="office-365-atp-plan-1-and-plan-2"></a>Office 365 ATP - Piano 1 e Piano 2
 
 La tabella seguente riepiloga cosa è incluso in ogni piano.
@@ -52,7 +71,7 @@ La tabella seguente riepiloga cosa è incluso in ogni piano.
 |<br/>Funzionalità di configurazione, protezione e rilevamento: <ul><li>[Allegati sicuri](atp-safe-attachments.md)</li><li>[Collegamenti sicuri](atp-safe-links.md)</li><li>[ATP per SharePoint, OneDrive e Microsoft Teams](atp-for-spo-odb-and-teams.md)</li><li>[Protezione anti-phishing ATP](set-up-anti-phishing-policies.md#exclusive-settings-in-atp-anti-phishing-policies)</li><li>[Rilevamenti in tempo reale](threat-explorer.md)</li></ul>|Funzionalità di Office 365 ATP Piano 1<br/>--- più ---<br/>Funzionalità di automazione, analisi, correzione e formazione:</li><li>[Tracker delle minacce](threat-trackers.md)</li><li>[Esplora minacce](threat-explorer.md)</li><li>[Analisi e risposta automatizzate](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air)</li><li>[Simulatore di attacchi](attack-simulator.md)</li></ul>|
 |
 
-- Office 365 ATP Piano 2 è incluso in Office 365 E5, Office 365 A5 e Microsoft 365 E5.
+- Office 365 ATP Piano 2 è incluso in Office 365 E5, Office 365 A5, Microsoft 365 E5 Security e Microsoft 365 E5.
 
 - Office 365 ATP Piano 1 è incluso in Microsoft 365 Business Premium.
 
@@ -68,6 +87,8 @@ Con Office 365 ATP il team di sicurezza dell'organizzazione può configurare la 
 
 > [!TIP]
 > Per un rapido elenco dei criteri da definire, vedere [Protezione dalle minacce](protect-against-threats.md).
+
+## <a name="advanced-threat-protection-policies"></a>Criteri di Advanced Threat Protection
 
 I criteri definiti per l'organizzazione determinano il comportamento e il livello di protezione per le minacce predefinite. Le opzioni criteri sono estremamente flessibili. Ad esempio, il team di sicurezza dell'organizzazione può impostare la protezione dalle minacce specifiche a livello di utente, organizzazione, destinatari e dominio. È importante rivedere regolarmente i criteri perché ogni giorno emergono nuove minacce e nuove sfide.
 

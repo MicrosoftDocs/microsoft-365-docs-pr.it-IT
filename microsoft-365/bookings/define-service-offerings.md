@@ -9,21 +9,18 @@ ms.service: bookings
 localization_priority: Normal
 ms.assetid: 4a1c391e-524f-48e0-bef8-185df3a9634b
 description: Istruzioni per immettere informazioni sulle offerte di servizi, tra cui nome del servizio, descrizione, posizione, durata e prezzi. È anche possibile contrassegnare i dipendenti qualificati per fornire il servizio.
-ms.openlocfilehash: 60b77633b9845b3c269f6773c1fb8a26256fbdc5
-ms.sourcegitcommit: 41fd71ec7175ea3b94f5d3ea1ae2c8fb8dc84227
+ms.openlocfilehash: 095188546c01149a793a478a3cbd5ac9fbeb5524
+ms.sourcegitcommit: 7c0873d2a804f17697844fb13f1a100fabce86c4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47419779"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47962538"
 ---
 # <a name="define-your-service-offerings-in-bookings"></a>Definire le offerte di servizi nelle prenotazioni
 
 Quando si definiscono le offerte di servizi in Microsoft bookings, è possibile impostare un nome di servizio, una descrizione, un percorso (scegliere se si desidera incontrare di persona o una riunione online), la durata, i promemoria predefiniti per i clienti e il personale, le note interne relative al servizio e i prezzi. È anche possibile contrassegnare i dipendenti qualificati per fornire il servizio. Successivamente, quando i clienti giungono al sito Web aziendale per prenotare un appuntamento, possono vedere esattamente quali tipi di appuntamenti sono disponibili, scegliere la persona che vuole fornire il servizio e quanto costerà il servizio.
 
 È inoltre possibile aggiungere informazioni e URL personalizzati alla conferma di posta elettronica e ai promemoria inviati quando un utente Prenota un servizio tramite la pagina di prenotazione.
-
-> [!NOTE]
-> La prenotazione è attivata per impostazione predefinita per i clienti che hanno gli abbonamenti Microsoft 365 business standard, Microsoft 365 a3 o Microsoft 365 a5. La prenotazione è disponibile anche per i clienti che dispongono di Office 365 Enterprise E3 e Office 365 Enterprise E5, ma è disattivata per impostazione predefinita. Per iniziare, vedere [accesso a Microsoft bookings](get-access.md). Per abilitare o disabilitare le prenotazioni, vedere [attivazione o disattivazione delle prenotazioni per l'organizzazione](turn-bookings-on-or-off.md).
 
 ## <a name="create-the-service-details"></a>Creare i dettagli del servizio
 

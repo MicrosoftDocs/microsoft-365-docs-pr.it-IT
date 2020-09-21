@@ -9,12 +9,12 @@ ms.service: bookings
 localization_priority: Normal
 ms.assetid: 0968717e-b61f-4b06-987c-6c1464541782
 description: Impostare l'orario di lavoro e la disponibilità dei dipendenti in Microsoft bookings.
-ms.openlocfilehash: 656b52992f4da32ae334809bd1a3ee4dd3b89652
-ms.sourcegitcommit: 41fd71ec7175ea3b94f5d3ea1ae2c8fb8dc84227
+ms.openlocfilehash: 140ab5732b051931666824cd4290a38c0b11fd65
+ms.sourcegitcommit: 7c0873d2a804f17697844fb13f1a100fabce86c4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47419767"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47962526"
 ---
 # <a name="employee-working-hours-in-microsoft-bookings"></a>Orario di lavoro dei dipendenti in Microsoft bookings
 
@@ -23,9 +23,6 @@ L'impostazione dell'orario di lavoro dei dipendenti garantisce che la disponibil
 Nella pagina **staff** è possibile personalizzare le ore lavorative dei dipendenti in base alle esigenze aziendali e ai dipendenti.
 
 Per impostare gli orari in cui i membri del personale non sono disponibili, in modo che i clienti non possano prenotarli quando non sono in ufficio, vedere le istruzioni in [Pianificare chiusure aziendali, permessi e ferie](schedule-closures-time-off-vacation.md).
-
-> [!NOTE]
-> La prenotazione è attivata per impostazione predefinita per i clienti che hanno gli abbonamenti Microsoft 365 business standard, Microsoft 365 a3 o Microsoft 365 a5. La prenotazione è disponibile anche per i clienti che dispongono di Office 365 Enterprise E3 e Office 365 Enterprise E5, ma è disattivata per impostazione predefinita. Per iniziare, vedere [accesso a Microsoft bookings](get-access.md). Per abilitare o disabilitare le prenotazioni, vedere [attivazione o disattivazione delle prenotazioni per l'organizzazione](turn-bookings-on-or-off.md).
 
 ## <a name="customize-employee-working-hours"></a>Personalizzare l'orario di lavoro dei dipendenti
 
@@ -47,7 +44,7 @@ Guardare questo video o seguire i passaggi riportati di seguito per impostare l'
 
 1. Fare clic **+** per aggiungere i selettori di inizio e di fine-ora.
 
-1. Selezionare Salva.
+1. Seleziona Salva.
 
 ## <a name="set-an-employees-days-off"></a>Impostare i giorni non lavorativi di un dipendente
 

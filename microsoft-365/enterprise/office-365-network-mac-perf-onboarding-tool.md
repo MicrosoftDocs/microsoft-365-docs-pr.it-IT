@@ -3,7 +3,7 @@ title: Test di connettività di rete Microsoft 365 (anteprima)
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 09/15/2020
+ms.date: 09/17/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -14,23 +14,23 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Test di connettività di rete Microsoft 365 (anteprima)
-ms.openlocfilehash: 0a5e7831b28488e793488f572fd830d47a0f3f9a
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: 2197f3361efee51dfa2bd170b0c8d8e94709d3e8
+ms.sourcegitcommit: 7c0873d2a804f17697844fb13f1a100fabce86c4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47948545"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47962399"
 ---
 # <a name="microsoft-365-network-connectivity-test-preview"></a>Test di connettività di rete Microsoft 365 (anteprima)
 
 Lo strumento di test della connettività di rete di Microsoft 365 si trova in <https://connectivity.office.com> . Si tratta di uno strumento aggiunto per la valutazione della rete e le informazioni di rete disponibili nell'interfaccia di amministrazione di Microsoft 365 nell'area **integrità | Menu connettività** .
 
+![Strumento di test della connettività](../media/m365-mac-perf/m365-mac-perf-test-tool-page.png)
+
 >[!NOTE]
 >Lo strumento di test della connettività di rete supporta i tenant in WW Commercial e in Germania, ma non GCC moderato, GCC High, DoD o China.
 
 Gli approfondimenti di rete nell'interfaccia di amministrazione di Microsoft 365 si basano su normali misure di prodotto per il tenant Microsoft 365 che vengono aggregati ogni giorno. In confronto, le informazioni di rete del test di connettività di rete di Microsoft 365 vengono eseguite localmente e una volta nello strumento. Il testing che può essere eseguito in-Product è limitato e eseguendo i test locali all'utente è possibile raccogliere più dati con conseguente approfondimento delle informazioni. Si consideri quindi che la rete di approfondimenti nell'interfaccia di amministrazione di Microsoft 365 mostrerà che esiste un problema di rete per l'utilizzo di Microsoft 365 in una posizione specifica di Office. Il test di connettività Microsoft 365 può essere utile per identificare la causa principale del problema che porta a un'azione di miglioramento delle prestazioni di rete consigliata.
-
-![Strumento di test della connettività di rete](../media/m365-mac-perf/m365-mac-perf-admin-center.png)
 
 È consigliabile utilizzarli insieme in cui è possibile valutare lo stato di qualità di rete per ogni percorso di Office nell'interfaccia di amministrazione di Microsoft 365 e trovare ulteriori specifiche dopo la distribuzione dei test in base al test di connettività di Microsoft 365.
 

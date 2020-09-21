@@ -18,12 +18,14 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.custom: autoir
-ms.openlocfilehash: 6b3bc068e5da99e02a64463891e32d137c448d64
-ms.sourcegitcommit: 133bf7936e5ef1a4d06998429d0d01096bda929f
+ms.reviewer: evaldm, isco
+ms.date: 09/16/2020
+ms.openlocfilehash: 62d33c57606aad81607164b1f068c6f6d91063c2
+ms.sourcegitcommit: 7c0873d2a804f17697844fb13f1a100fabce86c4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42261063"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47962300"
 ---
 # <a name="details-and-results-of-an-automated-investigation"></a>Dettagli e risultati di un'indagine automatizzata
 
@@ -81,8 +83,6 @@ Nella visualizzazione dei dettagli dell'indagine, è possibile vedere le informa
 |Azioni in sospeso    |Elenca gli elementi che richiedono l'approvazione per continuare.|
 
 ## <a name="next-steps"></a>Passaggi successivi
-
-- [Panoramica delle autorizzazioni del centro notifiche](mtp-action-center.md#required-permissions-for-action-center-tasks)
 
 - [Approvare o rifiutare le azioni relative all'indagine e reazione automatizzate](mtp-autoir-actions.md)
 

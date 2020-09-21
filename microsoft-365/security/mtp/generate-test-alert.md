@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: f971fb579624c31afb6225d444c326cde4621729
-ms.sourcegitcommit: 9f5b136b96b3af4db4cc6f5b1f35130ae60d6b12
+ms.openlocfilehash: c2a5c7a95a16b9a29e73b98310e64f403d4d342b
+ms.sourcegitcommit: adaedd1418a3bd6e4875b77fd9e008b47e0b2a51
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "47817150"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48104559"
 ---
 # <a name="generate-a-test-alert-in-your-microsoft-threat-protection-evaluation-lab"></a>Generare un avviso di testing nel laboratorio di valutazione di Microsoft Threat Protection  
 
@@ -36,4 +36,6 @@ Dopo aver completato l'installazione e la configurazione del Lab di valutazione 
 <br>![Immagine della scheda di simulazione nel dashboard di sicurezza di Microsoft 365](../../media/mtp-eval-73.png) <br>
 
 ## <a name="next-steps"></a>Passaggi successivi
-Visitare il [Centro soluzioni e architetture Microsoft 365](https://docs.microsoft.com/microsoft-365/solutions/solution-architecture-center) per informazioni su come si desidera implementare le soluzioni di sicurezza nell'ambiente univoco.
+
+Visitare il [Centro soluzioni e architetture Microsoft 365](https://docs.microsoft.com/microsoft-365/solutions/solution-architecture-center) per comprendere come progettare la soluzione e l'architettura più adatta alla propria organizzazione.
+

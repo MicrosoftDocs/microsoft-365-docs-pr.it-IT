@@ -9,21 +9,18 @@ ms.service: bookings
 localization_priority: Normal
 ms.assetid: 94af3e22-aca6-4e91-8b91-1cd5a02a9ea8
 description: Modificare le impostazioni di lingua e fuso orario in Microsoft bookings. Se le prenotazioni vengono create al momento sbagliato, è possibile che le prenotazioni siano impostate per il fuso orario errato.
-ms.openlocfilehash: 07e5dde2a896610ee079063943aff24ec69ba721
-ms.sourcegitcommit: 41fd71ec7175ea3b94f5d3ea1ae2c8fb8dc84227
+ms.openlocfilehash: 3e7709666d6426b11c275e46a18d43e7b7ab3526
+ms.sourcegitcommit: 7c0873d2a804f17697844fb13f1a100fabce86c4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47419738"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47962432"
 ---
 # <a name="set-language-and-time-zones-in-microsoft-bookings"></a>Impostare la lingua e il fuso orario in Microsoft Bookings
 
 Se si utilizzano prenotazioni Microsoft e le prenotazioni vengono create al momento sbagliato, potrebbe essere necessario modificare le impostazioni dei fusi orari. Analogamente, se alcune prenotazioni sono nella lingua errata, potrebbe essere necessario modificare le impostazioni della lingua.
 
 Sono disponibili due impostazioni per la lingua e il fuso orario separate per le prenotazioni. La prima impostazione controlla la lingua e il fuso orario del calendario di prenotazione e viene impostata utilizzando le impostazioni di Outlook sul Web per il calendario personale dell'utente connesso. La seconda impostazione influisce sulla pagina di prenotazione self-service utilizzata dai clienti e viene impostata utilizzando una pagina "impostazioni internazionali" che controlla la lingua e il fuso orario solo per la pagina.
-
-> [!NOTE]
-> La prenotazione è attivata per impostazione predefinita per i clienti che hanno gli abbonamenti Microsoft 365 business standard, Microsoft 365 a3 o Microsoft 365 a5. La prenotazione è disponibile anche per i clienti che dispongono di Office 365 Enterprise E3 e Office 365 Enterprise E5, ma è disattivata per impostazione predefinita. Per iniziare, vedere [accesso a Microsoft bookings](get-access.md). Per abilitare o disabilitare le prenotazioni, vedere [attivazione o disattivazione delle prenotazioni per l'organizzazione](turn-bookings-on-or-off.md).
 
 ## <a name="setting-language-and-time-zone-for-a-booking-calendar"></a>Impostazione di lingua e fuso orario per un calendario delle prenotazioni
 

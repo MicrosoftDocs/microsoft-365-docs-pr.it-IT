@@ -17,18 +17,18 @@ ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
 - m365solution-identitydevice
-ms.openlocfilehash: 686d31c64394094530099edb97bbd10912a58cb8
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: cef17142d90a15f10e82fd51c4c22202bf7ecf00
+ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47949893"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48131579"
 ---
 # <a name="identity-and-device-access-configurations"></a>Configurazioni di identità e accesso dei dispositivi
 
 Il perimetro di sicurezza moderno dell'organizzazione ora si estende oltre la rete per includere gli utenti che accedono alle app basate su cloud da qualsiasi percorso con una vasta gamma di dispositivi. L'infrastruttura di sicurezza deve determinare se una richiesta di accesso specificata deve essere concessa e in quali condizioni. 
 
-Questa determinazione deve basarsi sull'accesso dell'account utente, sul dispositivo utilizzato, sulle app che l'utente sta cercando di accedere, sul percorso da cui viene effettuata la richiesta di accesso e sulla valutazione del rischio della richiesta. Questa funzionalità consente di garantire che solo gli utenti e i dispositivi approvati possano accedere alle risorse critiche.
+Questa determinazione deve basarsi sull'account utente dell'accesso, sul dispositivo utilizzato, sull'app che l'utente utilizza per accedere, sul percorso da cui viene eseguita la richiesta di accesso e sulla valutazione del rischio della richiesta. Questa funzionalità consente di garantire che solo gli utenti e i dispositivi approvati possano accedere alle risorse critiche.
 
 In questa serie di articoli viene descritto un insieme di configurazioni dei prerequisiti di accesso a identità e dispositivi e un set di accessi condizionali di Azure Active Directory (Azure AD), Microsoft Intune e altri criteri per garantire l'accesso a Microsoft 365 per le app e i servizi cloud aziendali, altri servizi SaaS e applicazioni locali pubblicate con proxy di applicazione Azure AD.
 

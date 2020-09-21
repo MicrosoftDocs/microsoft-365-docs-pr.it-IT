@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 2d6dab7ae722b6e64b782596e51e0898ddc2cccc
-ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
+ms.openlocfilehash: 8af782095ada41f0472e1df338ced7ebe76c97fe
+ms.sourcegitcommit: adaedd1418a3bd6e4875b77fd9e008b47e0b2a51
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "47289688"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48104413"
 ---
 # <a name="getting-help-for-users"></a>Ottenere assistenza per gli utenti
 
@@ -71,4 +71,4 @@ Gli utenti con dispositivi desktop Microsoft gestiti hanno anche accesso ai nume
 ## <a name="additional-resources"></a>Risorse aggiuntive
 - [Supporto di amministrazione per Microsoft Managed Desktop](admin-support.md). 
 - [Supporto per Microsoft Managed Desktop](../service-description/support.md).
-- Se si è già abbonati a Microsoft Managed Desktop, è possibile trovare procedure dettagliate, flussi di processo, istruzioni di lavoro e domande frequenti sulla guida di amministrazione di Microsoft Managed Desktop nella sezione **risorse online** del [portale di amministrazione di Microsoft Managed Desktop](https://aka.ms/mwaasportal).
+- Se è già stato sottoscritto Microsoft Managed Desktop, è possibile trovare procedure dettagliate, flussi di processo, istruzioni di lavoro e domande frequenti sulla guida di amministrazione di Microsoft Managed Desktop nelle **risorse online** sotto la sezione Microsoft Managed Desktop del menu **Amministrazione tenant** in [Microsoft Endpoint Manager](https://endpoint.microsoft.com/).

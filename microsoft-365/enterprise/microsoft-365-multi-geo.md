@@ -13,12 +13,12 @@ localization_priority: Normal
 f1.keywords:
 - NOCSH
 description: In questo articolo vengono fornite informazioni su come espandere la presenza di Microsoft 365 a più aree geografiche con Microsoft 365 multi-Geo.
-ms.openlocfilehash: 41069490a8c824bb58a8f4247987abd3ce0901b6
-ms.sourcegitcommit: 62a8c226422eac9c085cc886b4836b037f95ef6d
+ms.openlocfilehash: 2e58d8b5ba66762bcc742f711d13007efc71b679
+ms.sourcegitcommit: adaedd1418a3bd6e4875b77fd9e008b47e0b2a51
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "47825357"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48104607"
 ---
 # <a name="microsoft-365-multi-geo"></a>Microsoft 365 Multi-Geo
 
@@ -69,7 +69,7 @@ Seguire questi semplici passaggi per iniziare con Multi-Geo:
 
 1. Collaborare con il team responsabile dell'account per aggiungere il piano di servizio _Multi-Geo Capabilities in Microsoft 365_. Verranno fornite le procedure per aggiungere il numero di licenze necessarie. La funzionalità Multi-Geo Capabilities è disponibile per i clienti EA con un minimo di 250 abbonamenti a Microsoft 365.
 
-   Prima di iniziare a usare Microsoft 365 Multi-Geo, Microsoft deve configurare il tenant di Exchange Online per il supporto Multi-Geo. La procedura di configurazione, da effettuare una sola volta, viene attivata dopo aver ordinato il piano di servizio *Multi-Geo Capabilities in Microsoft 365* e le licenze saranno visualizzate nel tenant. Una volta che vengono applicate le licenze Multi-Geo, si riceveranno notifiche nel [Centro messaggi di Microsoft 365](https://support.office.com/article/38FB3333-BFCC-4340-A37B-DEDA509C2093) e sarà quindi possibile iniziare la configurazione e l'uso delle funzionalità di Microsoft 365 Multi-Geo.
+   Prima di iniziare a usare Microsoft 365 Multi-Geo, Microsoft deve configurare il tenant di Exchange Online per il supporto Multi-Geo. La procedura di configurazione, da effettuare una sola volta, viene attivata dopo aver ordinato il piano di servizio *Multi-Geo Capabilities in Microsoft 365* e le licenze saranno visualizzate nel tenant. Le notifiche specifiche del carico di lavoro vengono ricevute nel [centro messaggi di microsoft 365](https://support.office.com/article/38FB3333-BFCC-4340-A37B-DEDA509C2093) dopo che il tenant ha completato il processo di configurazione per ogni carico di lavoro e quindi è possibile iniziare a configurare e utilizzare le funzionalità multi-geo di Microsoft 365. Il tempo necessario per configurare un tenant per il supporto multi-Geo varia da tenant a tenant, ma la maggior parte dei tenant termina entro un mese dalla ricezione delle licenze per le caratteristiche. I tenant più grandi o più complessi richiedono più tempo per completare il processo di configurazione. Contattare il team dell'account per informazioni dettagliate sul tenant specifico se necessario.
 
 2. Leggere [Pianificare l'ambiente Multi-Geo](plan-for-multi-geo.md).
 

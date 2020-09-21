@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Informazioni su come ottenere il report attività degli utenti di Microsoft teams e acquisire maggiori informazioni sull'attività dei team nell'organizzazione.
-ms.openlocfilehash: 5b6c67903e7af600cac6ad1fda10962aecc2cc83
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: 32252ed89dd9447b5df59ee733088349c559a320
+ms.sourcegitcommit: adaedd1418a3bd6e4875b77fd9e008b47e0b2a51
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47949031"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48104511"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-teams-user-activity"></a>Report di Microsoft 365 nell'interfaccia di amministrazione-attività utente di Microsoft Teams
 
@@ -44,7 +44,7 @@ Il Dashboard Microsoft 365 **Reports** illustra la panoramica delle attività tr
 
 Selezionare **Scegli colonne** per aggiungere o rimuovere colonne dal report.  <br/> ![Teams user activity report - choose columns](../../media/a1513028-cf09-4186-93a6-8a203cd22475.png)
 
-È inoltre possibile esportare i dati del report in un file CSV di Excel selezionando il collegamento **Esporta** . Vengono esportati i dati di tutti gli utenti, che possono poi essere ordinati e filtrati per ulteriore analisi. Se gli utenti sono meno di 2000, è possibile ordinarli e filtrarli direttamente nella tabella del report. Se invece gli utenti sono più di 2000, per ordinarli e filtrarli occorre esportare i dati. 
+È inoltre possibile esportare i dati del report in un file CSV di Excel selezionando il collegamento **Esporta** . Vengono esportati i dati di tutti gli utenti, che possono poi essere ordinati e filtrati per ulteriore analisi. Se gli utenti sono meno di 2000, è possibile ordinarli e filtrarli direttamente nella tabella del report. Se invece gli utenti sono più di 2000, per ordinarli e filtrarli occorre esportare i dati. Il formato esportato per il tempo **audio**, **video** e tempo di **condivisione dello schermo** segue il formato di data ISO8601.
 
 |Elemento|Descrizione|
 |:-----|:-----|
@@ -59,5 +59,5 @@ Selezionare **Scegli colonne** per aggiungere o rimuovere colonne dal report.  <
 |Riunioni organizzate ad hoc <br/> |Il numero di riunioni non pianificate nel calendario che l'utente ha organizzato durante il periodo di tempo specificato. <br/>|
 |Riunioni organizzate pianificate  <br/> |Il numero di riunioni pianificate che un utente ha organizzato durante il periodo di tempo specificato.  <br/> |
 |È concesso in licenza |Selezionato se l'utente è autorizzato a usare i team.|
-|Altre attività|L'utente è considerato attivo ma ha un valore pari a zero per i messaggi di chat, 1:1 chiamate, messaggi di canale, riunioni totali e riunioni organizzate. Esempi di azioni si verificano quando il client Microsoft teams viene attivato in primo piano, le azioni sono state eseguite nell'area di composizione dei messaggi, i toast sono stati visualizzati nel client Microsoft teams, i banner sono stati mostrati nel client Microsoft teams e così via. |
+|Altre attività|l'utente è considerato attivo ma ha un valore pari a zero per i messaggi di chat, 1:1 chiamate, i messaggi di canale, le riunioni totali e i valori metrici organizzati per le riunioni. Esempi di azioni si verificano quando un utente apre un messaggio di canale, ma non risponde o quando viene ricevuto un messaggio privato e viene letto ma non risposto. |
 |||

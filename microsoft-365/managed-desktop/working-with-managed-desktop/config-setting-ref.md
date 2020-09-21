@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: c3f8aec244b1b0685b8293fda0b048d662c7cef2
-ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
+ms.openlocfilehash: 2c7c7d75fad58cab0cd6d19a16a97667ea3641a1
+ms.sourcegitcommit: adaedd1418a3bd6e4875b77fd9e008b47e0b2a51
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46529362"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48104489"
 ---
 # <a name="configurable-settings-reference---microsoft-managed-desktop"></a>Riferimento alle impostazioni configurabili-Microsoft Managed Desktop
 
@@ -33,9 +33,9 @@ Questi requisiti devono essere soddisfatti per un'immagine di sfondo del desktop
 ### <a name="customize-and-deploy-desktop-background-picture"></a>Personalizzare e distribuire l'immagine di sfondo del desktop
 
 **Per aggiungere un'immagine di sfondo del desktop personalizzata**
-1. Accedere al [portale di amministrazione di Microsoft Managed Desktop](https://aka.ms/mwaasportal)
-2. In **Impostazioni**, selezionare **configurabile**.
-3. Nell'area di lavoro **configurabile** selezionare **immagine di sfondo del desktop**. 
+1. Accedere a [Microsoft Endpoint Manager](https://endpoint.microsoft.com/) e passare al menu **dispositivi**
+2. Cercare la sezione Microsoft Managed Desktop, selezionare **Impostazioni**.
+3. Nell'area di lavoro **Impostazioni** selezionare **immagine sfondo del desktop**. 
 4. Immettere il percorso dell'immagine che si desidera utilizzare. 
 5. Selezionare **fase di distribuzione** per salvare le modifiche e distribuirle nel gruppo di test. 
 
@@ -49,9 +49,9 @@ Le pagine iniziali del browser vengono aperte nelle singole schede quando gli ut
 ### <a name="customize-and-deploy-browser-start-pages"></a>Personalizzare e distribuire le pagine iniziali del browser
 
 **Per aggiungere una pagina iniziale del browser**
-1. Accedere al [portale di amministrazione di Microsoft Managed Desktop](https://aka.ms/mwaasportal)
-2. In **Impostazioni**, selezionare **configurabile**.
-3. Nell'area di lavoro **configurabile** selezionare **pagine iniziali del browser**. 
+1. Accedere a [Microsoft Endpoint Manager](https://endpoint.microsoft.com/) e passare al menu **dispositivi**
+2. Cercare la sezione Microsoft Managed Desktop, selezionare **Impostazioni**.
+3. Nell'area di lavoro **Impostazioni** selezionare **pagine iniziali del browser**. 
 4. Selezionare **Aggiungi pagina iniziale**.
 5. Nella **pagina Aggiungi inizio browser**immettere l'URL del sito che si desidera utilizzare e quindi fare clic su **Aggiungi pagina iniziale**. 
 6. Ripetere i passaggi 1-5 per altre pagine iniziali del browser. 
@@ -80,11 +80,11 @@ Queste procedure consigliate sono disponibili per consentire ai clienti di prend
 
 **Per aggiungere una posizione nell'elenco delle modalità sito dell'organizzazione**
 
-1.  Accedere al [portale di amministrazione di Microsoft Managed Desktop](https://aka.ms/mwaasportal)
-2.  In **Impostazioni**, selezionare **configurabile**.
-3.  Nell'area di lavoro **configurabile** selezionare **percorso dell'elenco dei siti in modalità Enterprise**. 
-4.  Immettere il percorso HTTPS per l'elenco di siti. 
-5.  Selezionare **fase di distribuzione** per salvare le modifiche e distribuirle nel gruppo di test.
+1. Accedere a [Microsoft Endpoint Manager](https://endpoint.microsoft.com/) e passare al menu **dispositivi**
+2. Cercare la sezione Microsoft Managed Desktop, selezionare **Impostazioni**.
+3. In area di lavoro **Impostazioni** selezionare **percorso elenco siti in modalità organizzazione**. 
+4. Immettere il percorso HTTPS per l'elenco di siti. 
+5. Selezionare **fase di distribuzione** per salvare le modifiche e distribuirle nel gruppo di test.
 
 ## <a name="trusted-sites"></a>Siti attendibili
 
@@ -102,18 +102,18 @@ Specificare il nome di dominio completo (FQDN) per i siti Intranet o Internet pe
 
 **Per aggiungere un sito attendibile**
 
-1. Accedere al [portale di amministrazione di Microsoft Managed Desktop](https://aka.ms/mwaasportal)
-2. In **Impostazioni**, selezionare **configurabile**.
-3. Nell'area di lavoro **configurabile** selezionare **siti attendibili**e quindi fare clic su **Aggiungi sito attendibile**. 
+1. Accedere a [Microsoft Endpoint Manager](https://endpoint.microsoft.com/) e passare al menu **dispositivi**
+2. Cercare la sezione Microsoft Managed Desktop, selezionare **Impostazioni**.
+3. Nell'area di lavoro **Impostazioni** selezionare **siti attendibili**, quindi selezionare **Aggiungi sito attendibile**. 
 4. In **Aggiungi sito attendibile**immettere l'URL, scegliere un'area di sicurezza e quindi fare clic su **Aggiungi sito attendibile**. 
 5. Ripetere i passaggi 1-4 per ogni sito attendibile che si desidera aggiungere. 
 6. Selezionare **fase di distribuzione** per salvare le modifiche e distribuirle nel gruppo di test.
 
 **Per rimuovere un sito attendibile**
 
-1. Accedere al [portale di amministrazione di Microsoft Managed Desktop](https://aka.ms/mwaasportal)
-2. In **Impostazioni**, selezionare **configurabile**.
-3. Nell'area di lavoro **configurabile** selezionare **siti attendibili**. 
+1. Accedere a [Microsoft Endpoint Manager](https://endpoint.microsoft.com/) e passare al menu **dispositivi**
+2. Cercare la sezione Microsoft Managed Desktop, selezionare **Impostazioni**.
+3. Nell'area di lavoro **Impostazioni** selezionare **siti attendibili**. 
 4. Selezionare il sito che si desidera eliminare, quindi selezionare **Elimina**. 
 5. Ripetere i passaggi 1-4 per ogni sito attendibile che si desidera eliminare. 
 6. Selezionare **fase di distribuzione** per salvare le modifiche e distribuirle nel gruppo di test.
@@ -136,9 +136,9 @@ Questi requisiti devono essere soddisfatti per le eccezioni del server proxy e d
 
 **Per aggiungere una singola eccezione del sito proxy**
 
-1. Accedere al [portale di amministrazione di Microsoft Managed Desktop](https://aka.ms/mwaasportal)
-2. In **Impostazioni**, selezionare **configurabile**.
-3. Nell'area di lavoro **configurabile** selezionare **proxy**. 
+1. Accedere a [Microsoft Endpoint Manager](https://endpoint.microsoft.com/) e passare al menu **dispositivi**
+2. Cercare la sezione Microsoft Managed Desktop, selezionare **Impostazioni**.
+3. In area di lavoro **Impostazioni** selezionare **proxy**. 
 4. Immettere l' **Indirizzo** e il **numero di porta** del server proxy, quindi selezionare **Aggiungi eccezione proxy**. 
 5. Immettere l'URL di un sito http valido e quindi fare clic su **Aggiungi eccezione proxy**. 
 6. Ripetere i passaggi 1-5 per ogni sito attendibile che si desidera aggiungere. 

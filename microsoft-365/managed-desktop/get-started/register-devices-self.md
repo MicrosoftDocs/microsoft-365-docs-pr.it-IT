@@ -7,16 +7,16 @@ f1.keywords:
 - NOCSH
 ms.author: jaimeo
 ms.localizationpriority: medium
-ms.openlocfilehash: e433b10b66b5e4f061227eae7e944c7fd19e2260
-ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
+ms.openlocfilehash: 550f7dd35b3990a08da4c2bb9dd3042ff084b185
+ms.sourcegitcommit: adaedd1418a3bd6e4875b77fd9e008b47e0b2a51
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "47289758"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48104401"
 ---
 # <a name="register-new-devices-yourself"></a>Registrare manualmente i nuovi dispositivi
 
-Microsoft Managed Desktop è in grado di lavorare con dispositivi nuovi di zecca oppure è possibile riutilizzare i dispositivi che potrebbero essere già presenti (il che richiede che vengano ristampati). È possibile registrare i dispositivi tramite il portale di amministrazione di Microsoft Managed Desktop.
+Microsoft Managed Desktop è in grado di lavorare con dispositivi nuovi di zecca oppure è possibile riutilizzare i dispositivi che potrebbero essere già presenti (il che richiede che vengano ristampati). È possibile registrare i dispositivi con Microsoft Managed Desktop nel portale di Microsoft Endpoint Manager.
 
 > [!NOTE]
 > Utilizzo di un partner per ottenere i dispositivi In caso affermativo, non è necessario preoccuparsi di ottenere gli hash hardware; si occuperà di questo per voi. Assicurarsi che il partner stabilisca una relazione con l'utente al [centro partner](https://partner.microsoft.com/dashboard). Il partner può ottenere ulteriori informazioni nella [Guida di partner Center](https://docs.microsoft.com/partner-center/request-a-relationship-with-a-customer). Una volta che questa relazione è stata stabilita, il partner registrerà semplicemente i dispositivi per conto dell'utente: nessuna ulteriore azione necessaria. Se si desidera visualizzare i dettagli o il proprio partner ha domande, vedere la [procedura per i partner per la registrazione dei dispositivi](register-devices-partner.md). Dopo la registrazione dei dispositivi, è possibile procedere con la [Verifica dell'immagine](#check-the-image) e [la distribuzione dei dispositivi](#deliver-the-device) agli utenti.
@@ -73,21 +73,21 @@ Per completare la registrazione, è necessario che i dati dei file CSV siano com
 
 #### <a name="register-devices-by-using-the-admin-portal"></a>Registrare i dispositivi tramite il portale di amministrazione
 
-Dal [portale di amministrazione](https://aka.ms/mmdportal)di Microsoft Managed Desktop, selezionare **dispositivi** nel riquadro di spostamento a sinistra. Selezionare **+ registra dispositivi**; verrà aperto il volo:
+In [Microsoft Endpoint Manager](https://endpoint.microsoft.com/)selezionare **dispositivi** nel riquadro di spostamento a sinistra. Cercare la sezione Microsoft Managed Desktop del menu e selezionare **dispositivi**. Nell'area di lavoro Microsoft Managed Desktop Devices selezionare **+ Register Devices** che apre un Fly-in per registrare i nuovi dispositivi.
 
-[![Fly-in dopo aver selezionato i dispositivi di registrazione, elencare i dispositivi con colonne per gli utenti assegnati, il numero di serie, lo stato, la data dell'ultima visualizzazione e l'età](../../media/new-registration-ui.png)](../../media/new-registration-ui.png)
+<!-- [![Fly-in after selecting Register devices, listing devices with columns for assigned users, serial number, status, last-seen date, and age](../../media/new-registration-ui.png)](../../media/new-registration-ui.png) -->
 
 
 <!--Registering any existing devices with Managed Desktop will completely re-image them; make sure you've backed up any important data prior to starting the registration process.-->
 
 
-Eseguire la procedura seguente:
+Procedere come segue:
 
 1. In **caricamento file**, specificare un percorso per il file CSV creato in precedenza.
 3. Selezionare **registra dispositivi**. Il sistema aggiungerà i dispositivi all'elenco di dispositivi sul Blade dei **dispositivi**, contrassegnati come **AutopilotRegistrationRequested**. La registrazione richiede in genere meno di 10 minuti e, in caso di esito positivo, il dispositivo verrà visualizzato come **pronto per il significato dell'utente** è pronto e in attesa che un utente inizi a utilizzare.
 
 
-È possibile monitorare lo stato di registrazione dei dispositivi nella pagina principale di **Microsoft Managed Desktop-Devices** . Gli stati possibili segnalati includono:
+È possibile monitorare lo stato di avanzamento della registrazione dei dispositivi nella pagina principale. Gli stati possibili segnalati includono:
 
 | Stato | Descrizione |
 |---------------|-------------|

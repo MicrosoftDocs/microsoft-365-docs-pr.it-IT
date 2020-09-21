@@ -9,19 +9,16 @@ ms.service: bookings
 localization_priority: Normal
 ms.assetid: 03a9acc9-f29c-456b-9fb2-0f49474b2708
 description: Seguire queste istruzioni per creare un appuntamento e assegnare un dipendente tramite l'app Microsoft bookings.
-ms.openlocfilehash: d0538b1c3e19a6bc78c997ff3e681ac30aa074ff
-ms.sourcegitcommit: 41fd71ec7175ea3b94f5d3ea1ae2c8fb8dc84227
+ms.openlocfilehash: dffc63b1f638c551e40d22852b1ba6a73c5be869
+ms.sourcegitcommit: 7c0873d2a804f17697844fb13f1a100fabce86c4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47419790"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47962562"
 ---
 # <a name="create-a-manual-booking"></a>Creare una prenotazione manuale
 
 Le prenotazioni possono essere pianificate e assegnate al personale in due modi diversi. Il primo modo è il cliente che utilizza una pagina di prenotazione autonoma o una pagina di prenotazione incorporata che viene aggiunta al sito Web. L'altro modo è che tu o uno dei tuoi dipendenti Immetti manualmente le prenotazioni, ad esempio quando un cliente chiama per un appuntamento. Questo articolo illustra lo scenario manuale.
-
-> [!NOTE]
-> La prenotazione è attivata per impostazione predefinita per i clienti che hanno gli abbonamenti Microsoft 365 business standard, Microsoft 365 a3 o Microsoft 365 a5. La prenotazione è disponibile anche per i clienti che dispongono di Office 365 Enterprise E3 e Office 365 Enterprise E5, ma è disattivata per impostazione predefinita. Per iniziare, vedere [accesso a Microsoft bookings](get-access.md). Per abilitare o disabilitare le prenotazioni, vedere [attivazione o disattivazione delle prenotazioni per l'organizzazione](turn-bookings-on-or-off.md).
 
 1. In Microsoft 365 selezionare l'icona di avvio delle app e quindi selezionare **bookings**.
 

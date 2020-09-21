@@ -27,12 +27,12 @@ search.appverid:
 - GEA150
 ms.assetid: 7a5d073b-7fae-4aa5-8f96-9ecd041aba9c
 description: Informazioni su come reimpostare la password per un utente nell'abbonamento a Microsoft 365 for business.
-ms.openlocfilehash: 31a654f16e62ca574666dc9811004c5f40c546e6
-ms.sourcegitcommit: a6625f76e8f19eebd9353ed70c00d32496ec06eb
+ms.openlocfilehash: faae2d31f29eb4817abc31cde1e1ce2bd6a47db1
+ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47361762"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48131702"
 ---
 # <a name="reset-passwords"></a>Reimpostare le password
 
@@ -40,7 +40,7 @@ In questo articolo viene illustrato come reimpostare le password per se stessi e
 
 ## <a name="before-you-begin"></a>Prima di iniziare
 
-Questo articolo è per le persone che impostano criteri di scadenza delle password in un'azienda, un istituto di istruzione o un'organizzazione no profit. Per eseguire questa procedura, è necessario eseguire l'accesso con l'account di amministratore di Microsoft 365. [Che cos'è un account di amministratore?](../admin-overview/admin-overview.md). 
+Questo articolo è per le persone che impostano criteri di scadenza delle password in un'azienda, un istituto di istruzione o un'organizzazione no profit. Per completare questa procedura, è necessario accedere con l'account amministratore di Microsoft 365. [Che cos'è un account amministratore?](../admin-overview/admin-overview.md).
 
 Per eseguire questa procedura è necessario essere un [amministratore globale o una password](about-admin-roles.md) .
 
@@ -136,7 +136,7 @@ Vedere questo interessante post di blog da Vasil Michev, MVP Microsoft: [Forzare
 
 Leggere questo articolo: [Si è dimenticato l'account o la password per l'account usato con Office](https://support.microsoft.com/office/eba0b4a2-c0ae-472c-99f6-bc63ee2425a8?wt.mc_id=SCL_reset-passwords_AdmHlp).
   
-## <a name="related-content"></a>Contenuto correlato
+## <a name="related-content"></a>Contenuti correlati
   
 [Consentire agli utenti di reimpostare le loro password](../add-users/let-users-reset-passwords.md)
 

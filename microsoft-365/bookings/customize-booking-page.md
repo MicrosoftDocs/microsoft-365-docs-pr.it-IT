@@ -9,19 +9,16 @@ ms.service: bookings
 localization_priority: Normal
 ms.assetid: 116d7a84-a7a0-4911-a1e9-debb2cca7c43
 description: Cambiare il tema di colore della pagina di prenotazione nell'app prenotazioni Microsoft.
-ms.openlocfilehash: f76fee71194cb210f879617b8898e6fd8c9d7b92
-ms.sourcegitcommit: 41fd71ec7175ea3b94f5d3ea1ae2c8fb8dc84227
+ms.openlocfilehash: b33be0cb71998d45e50a66f89f98daa4af175865
+ms.sourcegitcommit: 7c0873d2a804f17697844fb13f1a100fabce86c4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47419787"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47962514"
 ---
 # <a name="customize-and-publish-your-booking-page"></a>Personalizzare e pubblicare la pagina di prenotazione
 
 La pagina di prenotazione è quella in cui è stata configurata l'aspetto della pagina di prenotazione del cliente esterno. Dopo la personalizzazione e la pubblicazione della pagina di prenotazione, i clienti lo utilizzeranno per prenotare gli appuntamenti con l'utente.
-
-> [!NOTE]
-> La prenotazione è attivata per impostazione predefinita per i clienti che hanno gli abbonamenti Microsoft 365 business standard, Microsoft 365 a3 o Microsoft 365 a5. La prenotazione è disponibile anche per i clienti che dispongono di Office 365 Enterprise E3 e Office 365 Enterprise E5, ma è disattivata per impostazione predefinita. Per iniziare, vedere [accesso a Microsoft bookings](get-access.md). Per abilitare o disabilitare le prenotazioni, vedere [attivazione o disattivazione delle prenotazioni per l'organizzazione](turn-bookings-on-or-off.md).
 
 Per personalizzare la pagina di prenotazione, accedere a [Office.com](https://office.com), quindi andare alla **Bookings** \> **pagina prenotazione**prenotazioni. È possibile personalizzare la pagina di prenotazione con le opzioni seguenti. Dopo aver configurato la pagina di prenotazione, è possibile pubblicarla in modo che i clienti possano iniziare a prenotare gli appuntamenti con l'utente.
 

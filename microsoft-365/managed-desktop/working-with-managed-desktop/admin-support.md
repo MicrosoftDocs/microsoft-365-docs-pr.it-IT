@@ -1,5 +1,5 @@
 ---
-title: Supporto amministratori per Microsoft Managed Desktop
+title: Supporto amministratore per Microsoft Managed Desktop
 description: ''
 keywords: Microsoft Managed Desktop, Microsoft 365, servizio, documentazione
 ms.service: m365-md
@@ -9,14 +9,14 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: fb786383e448ad3f5c78b22f3cdbf282c2c9f906
-ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
+ms.openlocfilehash: 972430f5637f1160c330bed1558b79c8273171c5
+ms.sourcegitcommit: adaedd1418a3bd6e4875b77fd9e008b47e0b2a51
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "47289722"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48104583"
 ---
-# <a name="admin-support-for-microsoft-managed-desktop"></a>Supporto amministratori per Microsoft Managed Desktop
+# <a name="admin-support-for-microsoft-managed-desktop"></a>Supporto amministratore per Microsoft Managed Desktop
 
 È possibile inviare ticket di supporto o richieste di feedback a Microsoft tramite il portale di amministrazione di Microsoft Managed Desktop. Le richieste di supporto vengono sempre classificate in merito agli invii dei commenti e suggerimenti. Le richieste di supporto vengono valutate e gestite in base alla gravità delineata nella [tabella delle definizioni di gravità](#sev). I commenti e suggerimenti vengono esaminati e una risposta fornita se richiesto. 
 
@@ -24,10 +24,11 @@ ms.locfileid: "47289722"
 >Assicurarsi di aver [configurato un contatto di amministratore per l'](../get-started/add-admin-contacts.md) applicazione di pacchetti, dispositivi, sicurezza e altro. Non è possibile inviare una richiesta di supporto in una di queste aree se un contatto di amministratore non è configurato.
 
 **Per inviare una richiesta di supporto**
-1. Accedere al [portale di amministrazione di Microsoft Managed Desktop](https://aka.ms/mwaasportal). 
-2. Nelle **richieste di supporto**, selezionare **+ nuovo ticket di supporto**.
-3. Selezionare il **tipo di richiesta di supporto** corrispondente alla guida necessaria. La tabella seguente illustra le opzioni. 
-4. Selezionare il **livello di gravità**. Per ulteriori informazioni, vedere [definizioni di gravità delle richieste di supporto](#sev). 
+1. Accedere a [Microsoft Endpoint Manager](https://endpoint.microsoft.com/) e passare al menu **risoluzione dei problemi + supporto** .
+2. Cercare la sezione Microsoft Managed Desktop, selezionare **sevice request**.
+3. Nelle **richieste di supporto**, selezionare **+ nuovo ticket di supporto**.
+4. Selezionare il **tipo di richiesta di supporto** corrispondente alla guida necessaria. La tabella seguente illustra le opzioni. 
+5. Selezionare il **livello di gravità**. Per ulteriori informazioni, vedere [definizioni di gravità delle richieste di supporto](#sev). 
 
 Tipo di richiesta di supporto | Quando utilizzare
 --- | ---
@@ -58,7 +59,7 @@ Dettagli aggiuntivi:
 
 È possibile apprezzare i propri commenti e utilizzarli per migliorare l'esperienza di supporto dell'amministratore.
 
-Una volta che il ticket è nello stato **attenuato** o **risolto** , è possibile condividere i propri commenti e suggerimenti sulla propria esperienza con quel particolare problema. A tale scopo, andare alla pagina **richieste di supporto** nel portale di amministrazione. Selezionare il ticket specifico. Nel Fly-in visualizzato a destra, selezionare la scheda **feedback** e fornire le informazioni richieste. Fare attenzione a non includere informazioni personali nel modulo di commenti e suggerimenti. Per ulteriori informazioni sulla privacy, vedere l'informativa [sulla privacy di Microsoft](https://privacy.microsoft.com/privacystatement).
+Una volta che il ticket è nello stato **attenuato** o **risolto** , è possibile condividere i propri commenti e suggerimenti sulla propria esperienza con quel particolare problema. A tale scopo, andare alla pagina **richieste di servizio** nel menu **risoluzione dei problemi + supporto** del portale MEM. Selezionare il ticket specifico. I dettagli del ticket verranno visualizzati all'interno del Fly-in sul lato destro, selezionare la scheda **commenti e suggerimenti** e fornire le informazioni richieste. Fare attenzione a non includere informazioni personali nel modulo di commenti e suggerimenti. Per ulteriori informazioni sulla privacy, vedere l'informativa [sulla privacy di Microsoft](https://privacy.microsoft.com/privacystatement).
 
 ![Modulo commenti e suggerimenti](../../media/feedback_form.png)
 
@@ -67,4 +68,4 @@ Una volta che il ticket è nello stato **attenuato** o **risolto** , è possibil
 ## <a name="additional-resources"></a>Risorse aggiuntive
 - [Supporto utente per Microsoft Managed Desktop](end-user-support.md). 
 - [Supporto per Microsoft Managed Desktop](../service-description/support.md). 
-- Se si è già abbonati a Microsoft Managed Desktop, è possibile trovare procedure dettagliate, flussi di processo, istruzioni di lavoro e domande frequenti sulla guida di amministrazione di Microsoft Managed Desktop nella sezione **risorse online** del [portale di amministrazione di Microsoft Managed Desktop](https://aka.ms/mwaasportal).
+- Se si è già abbonati a Microsoft Managed Desktop, è possibile trovare procedure dettagliate, flussi di processo, istruzioni di lavoro e domande frequenti sulla guida di amministrazione di Microsoft Managed Desktop nella pagina **risorse online** sotto la sezione **Microsoft Managed Desktop** del menu **Amministrazione tenant** in [Microsoft Endpoint Manager](https://endpoint.microsoft.com/).

@@ -9,12 +9,12 @@ f1.keywords:
 ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 1349b58bdd6243b05323f14197e0ad92c1fc0d7b
-ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
+ms.openlocfilehash: 03a9b19a5b8ba957419e23c2bb12748c9c57e80d
+ms.sourcegitcommit: adaedd1418a3bd6e4875b77fd9e008b47e0b2a51
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "47289496"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48104619"
 ---
 # <a name="how-updates-are-handled-in-microsoft-managed-desktop"></a>Come vengono gestiti gli aggiornamenti in Microsoft Managed Desktop
 
@@ -55,16 +55,15 @@ Funzionamento della distribuzione degli aggiornamenti:
 
 
 <table>
-<tr><th colspan="5">Aggiornare le impostazioni di distribuzione</th></tr>
-<tr><th>Tipo di aggiornamento</th><th>Test</th><th>Prima</th><th>Veloce</th><th>Ampio</th></tr>
-<tr><td>Aggiornamenti della qualità per il sistema operativo</td><td>0 giorni</td><td>0 giorni</td><td>0 giorni</td><td>3 giorni</td></tr>
-<tr><td>Aggiornamenti delle funzionalità per il sistema operativo</td><td>0 giorni</td><td>30 giorni</td><td>60 giorni</td><td>90 giorni</td></tr>
-<tr><td>Driver/firmware</td><td colspan="4">Segue la pianificazione per gli aggiornamenti della qualità</td></tr>
-<tr><td>Definizione di antivirus</td><td colspan="4">Aggiornato con ogni analisi</td></tr>
-<tr><td>Microsoft 365 Apps for enterprise</td><td colspan="4">Segue il canale corrente di Office
+    <tr><th colspan="5">Aggiornare le impostazioni di distribuzione</th></tr>
+    <tr><th>Tipo di aggiornamento</th><th>Test</th><th>Prima</th><th>Veloce</th><th>Ampio</th></tr>
+    <tr><td>Aggiornamenti della qualità per il sistema operativo</td><td>0 giorni</td><td>0 giorni</td><td>0 giorni</td><td>3 giorni</td></tr>
+    <tr><td>Aggiornamenti delle funzionalità per il sistema operativo</td><td>0 giorni</td><td>30 giorni</td><td>60 giorni</td><td>90 giorni</td></tr>
+    <tr><td>Driver/firmware</td><td colspan="4">Segue la pianificazione per gli aggiornamenti della qualità</td></tr>
+    <tr><td>Definizione di antivirus</td><td colspan="4">Aggiornato con ogni analisi</td></tr>
+    <tr><td>Microsoft 365 Apps for enterprise</td><td colspan="4"><a href="https://docs.microsoft.com/microsoft-365/managed-desktop/get-started/m365-apps#updates-to-microsoft-365-apps">Altre informazioni</a></td></tr>
+    <tr><td>Microsoft Edge</td><td colspan="4"><a href="https://docs.microsoft.com/microsoft-365/managed-desktop/get-started/edge-browser-app#updates-to-microsoft-edge">Altre informazioni</a></td></tr>
 </table>
-
-Per ulteriori informazioni sul canale corrente per le app Microsoft 365 per Enterprise, vedere [Overview of Update channels for microsoft 365 Apps](https://docs.microsoft.com/deployoffice/overview-update-channels).
 
 >[!NOTE]
 >Questi periodi di rinvio sono stati intenzionalmente studiati per garantire elevati standard di sicurezza e prestazioni per tutti gli utenti. Inoltre, in base ai dati raccolti su tutti i dispositivi desktop Microsoft gestiti e all'ambito e all'impatto variabile degli aggiornamenti, Microsoft Managed Desktop si riserva la possibilità di modificare la durata dei periodi di rinvio sopra indicati per tutti e tutti i gruppi di distribuzione su base ad hoc.

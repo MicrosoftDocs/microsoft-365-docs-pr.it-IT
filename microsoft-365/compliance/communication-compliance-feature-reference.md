@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 1aaa73fdc56662335904cbaa152429ea90d6bb08
-ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
+ms.openlocfilehash: 757b1fcdae69e98ec45bb29e669ceda8f8cb8f98
+ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "47289355"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48131636"
 ---
 # <a name="communication-compliance-feature-reference"></a>Informazioni di riferimento sulle caratteristiche di conformità comunicazione
 
@@ -189,7 +189,7 @@ I classificatori di immagini *per adulti*, *audace*e *cruenti* analizzano i file
 
 I classificatori incorporati e addestrati a livello globale non forniscono un elenco esaustivo dei termini o delle immagini in queste aree. Inoltre, gli standard linguistici e culturali cambiano continuamente e, alla luce di queste realtà, Microsoft si riserva il diritto di aggiornare i classificatori a propria discrezione. Mentre i classificatori possono assistere l'organizzazione nel monitoraggio di queste aree, i classificatori non sono destinati a fornire il solo mezzo di monitoraggio o di risoluzione di tale lingua o immagine. La propria organizzazione, non Microsoft, resta responsabile di tutte le decisioni relative all'analisi e al blocco della lingua e delle immagini in queste aree.
 
-Per informazioni sui classificatori addestrabili in Microsoft 365, vedere [Guida introduttiva ai classificatori addestrabili](classifier-getting-started-with.md).
+Per informazioni sui classificatori addestrabili in Microsoft 365, vedere [Guida introduttiva ai classificatori addestrabili](classifier-get-started-with.md).
 
 ### <a name="conditional-settings"></a>Impostazioni condizionali
 <a name="ConditionalSettings"> </a>
@@ -200,7 +200,7 @@ Nella tabella seguente vengono illustrate altre informazioni su ogni condizione.
   
 |**Condizione**|**Come utilizzare questa condizione**|
 |:-----|:-----|
-| **Il contenuto corrisponde a uno di questi classificatori** | Applicare il criterio quando i classificatori sono inclusi o esclusi in un messaggio. Alcuni classificatori sono già definiti nel tenant e i classificatori personalizzati devono essere configurati separatamente prima di essere disponibili per questa condizione. Un solo classificatore può essere definito come una condizione in un criterio. Per ulteriori informazioni sulla configurazione dei classificatori, vedere [classificatori](classifier-getting-started-with.md). |
+| **Il contenuto corrisponde a uno di questi classificatori** | Applicare il criterio quando i classificatori sono inclusi o esclusi in un messaggio. Alcuni classificatori sono già definiti nel tenant e i classificatori personalizzati devono essere configurati separatamente prima di essere disponibili per questa condizione. Un solo classificatore può essere definito come una condizione in un criterio. Per ulteriori informazioni sulla configurazione dei classificatori, vedere informazioni [sui classificatori addestrabili (Preview)](classifier-learn-about.md). |
 | **Content contiene uno qualsiasi di questi tipi di informazioni riservate** | Applicare al criterio quando i tipi di informazioni riservate sono inclusi o esclusi in un messaggio. Alcuni classificatori sono già definiti nel tenant e i classificatori personalizzati possono essere configurati separatamente o come parte del processo di assegnazione delle condizioni. Ogni tipo di informazioni riservate scelto viene applicato separatamente e solo uno di questi tipi di informazioni riservate deve richiedere il criterio da applicare al messaggio. Per ulteriori informazioni sui tipi di informazioni riservate personalizzate, vedere Custom definitive [Information types](custom-sensitive-info-types.md). |
 | **Il messaggio viene ricevuto da uno di questi domini**  <br><br> **Il messaggio non viene ricevuto da nessuno di questi domini** | Applicare il criterio per includere o escludere domini o indirizzi di posta elettronica specifici nei messaggi ricevuti. Immettere ogni dominio o indirizzo di posta elettronica e separare più domini o indirizzi di posta elettronica con una virgola. Ogni dominio o indirizzo di posta elettronica immesso viene applicato separatamente, solo un dominio o un indirizzo di posta elettronica devono essere applicati per il criterio da applicare al messaggio. <br><br> Se si desidera eseguire l'analisi di tutti i messaggi di posta elettronica da un dominio specifico, ma si desidera escludere il messaggio che non è necessario esaminare (newsletter, annunci e così via), è necessario configurare un **messaggi non ricevuti da una delle seguenti condizioni dei domini** che escludono l'indirizzo di posta elettronica (ad esempio "newsletter@contoso.com"). |
 | **Il messaggio viene inviato a uno di questi domini**  <br><br> **Il messaggio non viene inviato a uno di questi domini** | Applicare il criterio per includere o escludere domini o indirizzi di posta elettronica specifici nei messaggi inviati. Immettere ogni dominio o indirizzo di posta elettronica e separare più domini o indirizzi di posta elettronica con una virgola. Ogni dominio o indirizzo di posta elettronica viene applicato separatamente, per applicare il criterio al messaggio è necessario un solo dominio o un indirizzo di posta elettronica. <br><br> Se si desidera eseguire l'analisi di tutti i messaggi di posta elettronica inviati a un dominio specifico, ma si desidera escludere il messaggio inviato che non è necessario rivedere, è necessario configurare due condizioni: <br> -Un **messaggio viene inviato a una qualsiasi di queste condizioni dei domini** che definisce il dominio ("contoso.com") e <br> -Un **messaggio non viene inviato a una di queste condizioni di dominio** che escluda l'indirizzo di posta elettronica ("subscriptions@contoso.com"). |
@@ -243,7 +243,7 @@ La protezione della privacy degli utenti che dispongono di corrispondenze di cri
 Per gli utenti con una corrispondenza di conformità di comunicazione, è possibile scegliere una delle impostazioni seguenti nelle **impostazioni di conformità della comunicazione**:
 
 - **Mostrare le versioni di anonimi dei**nomi utente: i denominati degli utenti sono anonimi per impedire agli amministratori, agli analisti, ai ricercatori e ai revisori di vedere gli utenti associati agli avvisi dei criteri. Ad esempio, un utente ' Grace Taylor ' verrebbe visualizzato con uno pseudonimo randomizzato come ' AnonIS8-988' in tutte le aree dell'esperienza di conformità alla comunicazione. Se si sceglie questa impostazione, anonimizza tutti gli utenti con le corrispondenze di criteri correnti e precedenti e si applica a tutti i criteri. Le informazioni sui profili utente nei dettagli avviso di conformità della comunicazione non saranno disponibili quando si seleziona questa opzione. Tuttavia, i nomi utente vengono visualizzati quando si aggiungono nuovi utenti ai criteri esistenti o quando si assegnano gli utenti ai nuovi criteri. Se si sceglie di disattivare questa impostazione, i nomi utente vengono visualizzati per tutti gli utenti che hanno corrispondenze di criteri correnti o passate.
-- Non vengono visualizzate le **versioni di nomi utente di anonimi: sono visualizzabili**per tutte le corrispondenze di criteri correnti e precedenti per gli avvisi di conformità alla comunicazione. Le informazioni sui profili utente, ovvero il nome, il titolo, l'alias e l'organizzazione o il reparto, vengono visualizzate per tutti gli avvisi e i casi di gestione dei rischi Insider.
+- Non vengono visualizzate le **versioni di nomi utente di anonimi: sono visualizzabili**per tutte le corrispondenze di criteri correnti e precedenti per gli avvisi di conformità alla comunicazione. Le informazioni sui profili utente, ovvero il nome, il titolo, l'alias e l'organizzazione o il reparto, vengono visualizzate per tutti gli avvisi di conformità alla comunicazione.
 
 ## <a name="notice-templates"></a>Modelli di avviso
 
@@ -334,16 +334,91 @@ Se si desidera modificare il livello di gravità assegnato in un criterio di avv
 
 7. Selezionare **Chiudi** per uscire dalla pagina dei dettagli del criterio di avviso.
 
+## <a name="power-automate-flows-preview"></a>Flussi automatizzati di alimentazione (anteprima)
+
+[Microsoft Power automatizzate](https://docs.microsoft.com/power-automate/getting-started) è un servizio di flusso di lavoro che automatizza le azioni tra le applicazioni e i servizi. Utilizzando flussi provenienti da modelli o creati manualmente, è possibile automatizzare le attività comuni associate a queste applicazioni e servizi. Quando si abilitano i flussi automatici di alimentazione per la conformità della comunicazione, è possibile automatizzare le attività importanti per gli avvisi e gli utenti. È possibile configurare i flussi automatici di alimentazione per inviare notifiche ai responsabili quando gli utenti hanno avvisi di conformità della comunicazione e altre applicazioni.
+
+I clienti con abbonamenti Microsoft 365 che includono la conformità alla comunicazione non necessitano di ulteriori licenze di automatizzazione dell'alimentazione per utilizzare il modello di automatizzazione Power Compliance predefinito raccomandato per la comunicazione. Il modello predefinito può essere personalizzato per supportare l'organizzazione e coprire gli scenari di conformità di base per le comunicazioni. Se si sceglie di utilizzare le funzionalità di automatizzazione di Power Premium in questi modelli, creare un modello personalizzato utilizzando il connettore di conformità di Microsoft 365 o utilizzare i modelli Power Automate per altre aree di conformità in Microsoft 365, potrebbe essere necessario disporre di licenze aggiuntive per automatizzare la potenza.
+
+![Automatizzazione del potere di conformità di comunicazione](../media/communication-compliance-power-automate.png)
+
+Il modello Power automatizzation seguente viene fornito ai clienti per supportare l'automazione dei processi per gli avvisi di conformità della comunicazione:
+
+- **Gestione notifiche quando un utente dispone di un avviso di conformità della comunicazione**: alcune organizzazioni potrebbero dover avere una notifica di gestione immediata quando un utente dispone di un avviso di conformità della comunicazione. Quando questo flusso è configurato e selezionato, il responsabile dell'utente del caso viene inviato un messaggio di posta elettronica con le seguenti informazioni su tutti gli avvisi:
+    - Criterio applicabile per l'avviso
+    - Data/ora dell'avviso
+    - Livello di gravità dell'avviso
+
+### <a name="create-a-power-automate-flow"></a>Creare un flusso di automazione dell'alimentazione automatica
+
+Per creare un flusso di automatizzazione di potenza da un modello predefinito consigliato, è possibile utilizzare l'opzione **Gestisci flussi automatici di alimentazione** dal controllo **automatizzazione** quando si lavora direttamente in un avviso. Per creare un flusso automatico di alimentazione automatizzato con **Gestione flussi automatici di alimentazione**, è necessario essere membri di almeno un gruppo di ruolo conformità comunicazione.
+
+Completare la procedura seguente per creare un flusso automatico di alimentazione automatizzato da un modello predefinito:
+
+1. Nel centro conformità di Microsoft 365, passare a criteri di **conformità della comunicazione**  >  **Policies** e selezionare il criterio con l'avviso che si desidera esaminare.
+2. Dal criterio selezionare la scheda **in sospeso** e selezionare un avviso in sospeso.
+3. Selezionare **Power automatizza** dal menu azione avviso.
+4. Nella pagina **Power automatizzate** selezionare un modello predefinito nei **modelli di conformità di comunicazione che è possibile come** sezione della pagina.
+5. Il flusso mostrerà le connessioni incorporate necessarie per il flusso e verrà visualizzato se gli Stati di connessione sono disponibili. Se necessario, aggiornare tutte le connessioni che non vengono visualizzate come disponibili. Selezionare **continua**.
+6. Per impostazione predefinita, i flussi consigliati sono preconfigurati con i campi dati del servizio conformità consigliati e Microsoft 365 necessari per completare l'attività assegnata per il flusso. Se necessario, personalizzare i componenti del flusso utilizzando il controllo **Mostra opzioni avanzate** e configurando le proprietà disponibili per il componente di flusso.
+7. Se necessario, aggiungere eventuali passaggi aggiuntivi al flusso selezionando il pulsante **nuovo passaggio** . Nella maggior parte dei casi, questa modifica non dovrebbe essere necessaria per i modelli predefiniti consigliati.
+8. Selezionare **Save Draft** per salvare il flusso per ulteriore configurazione in un secondo momento oppure fare clic su **Salva** per completare la configurazione del flusso.
+9. Selezionare **Chiudi** per tornare alla pagina del flusso Power automatizzate. Il nuovo modello verrà elencato come flusso nella scheda **My Flows** ed è automaticamente disponibile dal controllo Power automatizzate per l'utente che ha creato il flusso quando si lavora con gli avvisi di conformità della comunicazione.
+
+### <a name="share-a-power-automate-flow"></a>Condividere un flusso automatico di alimentazione automatizzato
+
+Per impostazione predefinita, i flussi automatici di potenza creati da un utente sono disponibili solo per l'utente. Per gli altri utenti di conformità alla comunicazione che dispongono dell'accesso e dell'utilizzo di un flusso, è necessario che il flusso venga condiviso dal creatore del flusso. Per condividere un flusso, è possibile utilizzare il controllo **Power automatizzate** quando si lavora direttamente in un avviso.
+
+Per condividere un flusso di automazione dell'alimentazione, è necessario essere membri di almeno un gruppo di ruoli di conformità della comunicazione.
+Completare la procedura seguente per condividere un flusso Power automatizzate:
+
+1. Nel centro conformità di Microsoft 365, passare a criteri di **conformità della comunicazione**  >  **Policies** e selezionare il criterio con l'avviso che si desidera esaminare.
+2. Dal criterio selezionare la scheda **in sospeso** e selezionare un avviso in sospeso.
+3. Selezionare **Power automatizza** dal menu azione avviso.
+4. Sulla pagina **flussi automatici di alimentazione** selezionare la scheda **flussi personali** o **flussi di Team** .
+5. Selezionare il flusso da condividere e quindi scegliere **Condividi** dal menu Opzioni flusso.
+6. Nella pagina condivisione flusso, immettere il nome dell'utente o del gruppo che si desidera aggiungere come proprietario per il flusso.
+7. Nella finestra di dialogo **connessione utilizzata** , selezionare **OK** per confermare che l'utente o il gruppo aggiunto avrà accesso completo al flusso.
+
+### <a name="edit-a-power-automate-flow"></a>Modificare un flusso Power automatizzate
+
+Se è necessario modificare un flusso, è possibile utilizzare il controllo **Power automatizzate** quando si lavora direttamente in un avviso. Per modificare un flusso di automazione dell'alimentazione automatica, è necessario essere membri di almeno un gruppo di ruoli di conformità della comunicazione.
+
+Completare la procedura seguente per modificare un flusso Power automatizzate:
+
+1. Nel centro conformità di Microsoft 365, passare a criteri di **conformità della comunicazione**  >  **Policies** e selezionare il criterio con l'avviso che si desidera esaminare.
+2. Dal criterio selezionare la scheda **in sospeso** e selezionare un avviso in sospeso.
+3. Selezionare **Power automatizza** dal menu azione avviso.
+4. Sulla pagina **flussi automatici di alimentazione** selezionare flusso da modificare. Scegliere **modifica** dal menu controllo flusso.
+5. Selezionare le impostazioni dei **puntini**  >  **Settings** di sospensione per modificare un'impostazione del componente di flusso o l'eliminazione con **puntini**  >  **Delete** per eliminare un componente di flusso
+6. Selezionare **Salva** e quindi **Chiudi** per completare la modifica del flusso.
+
+### <a name="delete-a-power-automate-flow"></a>Eliminare un flusso Power automatizzate
+
+Se è necessario eliminare un flusso, si utilizzerà il controllo **Power automatizzate** quando si lavora direttamente in un avviso. Per eliminare un flusso di automatizzazione di alimentazione, è necessario essere membri di almeno un gruppo di ruolo conformità comunicazione.
+
+Completare la procedura seguente per eliminare un flusso Power automatizzate:
+
+1. Nel centro conformità di Microsoft 365, passare a criteri di **conformità della comunicazione**  >  **Policies** e selezionare il criterio con l'avviso che si desidera esaminare.
+2. Dal criterio selezionare la scheda **in sospeso** e selezionare un avviso in sospeso.
+3. Selezionare **Power automatizza** dal menu azione avviso.
+4. Sulla pagina **flussi automatici di alimentazione** selezionare flusso da eliminare. Scegliere **Elimina** dal menu controllo flusso.
+5. Nella finestra di dialogo di conferma dell'eliminazione, selezionare **Elimina** per rimuovere il flusso o selezionare **Annulla** per uscire dall'azione di eliminazione.
+
 ## <a name="reports-preview"></a>Rapporti (anteprima)
 
-Il nuovo dashboard **Reports** è la posizione centrale per la visualizzazione di tutti i report di conformità della comunicazione. I widget dei report offrono una rapida visualizzazione delle informazioni più necessarie per una valutazione complessiva dello stato delle attività di conformità alla comunicazione. Le informazioni contenute nei widget del report non sono esportabili.
+Il nuovo dashboard **Reports** è la posizione centrale per la visualizzazione di tutti i report di conformità della comunicazione. I widget dei report offrono una rapida visualizzazione delle informazioni più comuni necessarie per una valutazione complessiva dello stato delle attività di conformità alla comunicazione. Le informazioni contenute nei widget del report non sono esportabili. I report dettagliati forniscono informazioni approfondite relative a specifiche aree di conformità della comunicazione e offrono la possibilità di filtrare, raggruppare, ordinare ed esportare le informazioni durante la revisione.
 
-Il dashboard **report** contiene i widget di report seguenti:
+Il **dashboard report** contiene i seguenti widget del report e collegamenti dettagliati dei report:
 
-- **Corrispondenze di criteri recenti**: Visualizza il numero di corrispondenze in base al criterio attivo nel tempo.
-- **Elementi risolti in base ai criteri**: Visualizza il numero di avvisi di corrispondenza dei criteri risolti in base al criterio nel tempo.
-- **Gli utenti con la maggior parte delle corrispondenze di criteri**: Visualizza gli utenti (o i nomi utente di anonimi) e il numero di corrispondenze di criteri per un determinato periodo.
-- **Criteri con la maggior parte delle corrispondenze**: Visualizza i criteri e il numero di corrispondenze per un determinato periodo, classificate al livello più basso per le corrispondenze.
+- Widget criteri di ricerca **recenti** : Visualizza il numero di corrispondenze in base al criterio attivo nel tempo.
+- Widget **elementi risolti in base** al criterio: Visualizza il numero di avvisi di corrispondenza dei criteri risolti dal criterio nel tempo.
+- **Utenti con la maggior parte** dei widget per la corrispondenza di criteri: Visualizza gli utenti (o i nomi utente di anonimi) e il numero di corrispondenze di criteri per un determinato periodo.
+- **Criterio con la maggior parte** delle corrispondenze widget: Visualizza i criteri e il numero di corrispondenze per un determinato periodo, classificate al livello più basso per le corrispondenze.
+- **Decrescenze in base** al widget criteri: consente di visualizzare il numero di escalation per criterio in un determinato intervallo di tempo.
+- **Impostazioni dei criteri e rapporto informazioni sullo stato** : vengono fornite informazioni dettagliate sulla configurazione e le impostazioni dei criteri, nonché sullo stato generale di ogni criterio (corrispondenze e azioni) sui messaggi. Utilizzare l'opzione *Esporta* per creare un. File CSV contenente i dettagli del report.
+- **Elementi e azioni per** rapporto dettagliato sui criteri: esaminare ed esportare gli elementi corrispondenti e le azioni di correzione per ogni criterio. Utilizzare l'opzione *Esporta* per creare un. File CSV contenente i dettagli del report.
+- **Articolo e azioni per rapporto percorso** dettagliato: esaminare ed esportare gli elementi corrispondenti e le azioni di correzione per la posizione di Microsoft 365. Utilizzare l'opzione *Esporta* per creare un. File CSV contenente i dettagli del report.
 
 ## <a name="audit"></a>Audit
 

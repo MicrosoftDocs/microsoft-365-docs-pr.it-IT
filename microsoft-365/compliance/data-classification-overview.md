@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Il dashboard di classificazione dei dati offre visibilità sulla quantità di dati riservati che sono stati individuati e classificati nell'organizzazione.
-ms.openlocfilehash: aff6d2c30fe8036448a8816426896f080b86b9e6
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: 725dc5d2e9e5cf0638a54c5ee46d77b321ae4796
+ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47948506"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48131724"
 ---
 # <a name="know-your-data---data-classification-overview"></a>Conoscere i dati - Panoramica della classificazione dei dati
 
@@ -34,7 +34,7 @@ Gli amministratori Microsoft 365 e gli amministratori della conformità possono 
 - le posizioni dei dati riservati e conservati
 
 Queste funzionalità vengono anche gestite nella pagina di classificazione dei dati:
-- [classificatori sottoponibili a training](classifier-getting-started-with.md)
+- [classificatori sottoponibili a training](classifier-learn-about.md)
 - [tipi di informazioni sensibili](what-the-sensitive-information-types-look-for.md)
 
 La funzionalità Classificazione dei dati è disponibile nel **Centro conformità Microsoft 365**o nel **Centro sicurezza Microsoft 365** > **Classificazione** > **Classificazione dei dati**.
@@ -137,4 +137,4 @@ Il motivo della classificazione dei dati consiste nel fornire visibilità sul nu
 - [Informazioni sulle etichette di riservatezza](sensitivity-labels.md)
 - [Informazioni sui criteri e sulle etichette di conservazione](retention.md)
 - [Definizioni delle entità tipo di informazioni sensibili](sensitive-information-type-entity-definitions.md)
-- [Introduzione ai classificatori sottoponibili a training (anteprima)](classifier-getting-started-with.md)
+- [Informazioni sui classificatori sottoponibili a training (anteprima)](classifier-learn-about.md)
