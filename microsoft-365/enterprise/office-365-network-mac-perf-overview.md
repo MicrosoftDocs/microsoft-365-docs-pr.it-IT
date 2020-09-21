@@ -14,12 +14,12 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Panoramica della connettività di rete nell'interfaccia di amministrazione di Microsoft 365 (anteprima)
-ms.openlocfilehash: 35ea28ec45a7e581901c0f4f22360a1dcd0def8b
-ms.sourcegitcommit: 7c0873d2a804f17697844fb13f1a100fabce86c4
+ms.openlocfilehash: 644efe53e862f6bbe98be7dca889bc3637084521
+ms.sourcegitcommit: cd11588b47904c7d2ae899a9f5280f93d3850171
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47962288"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "48171363"
 ---
 # <a name="network-connectivity-in-the-microsoft-365-admin-center-preview"></a>Connettività di rete nell'interfaccia di amministrazione di Microsoft 365 (anteprima)
 
@@ -31,11 +31,13 @@ Le **valutazioni di rete** e le informazioni sulla **rete** vengono visualizzate
 
 ![Pagina prestazioni di rete](../media/m365-mac-perf/m365-mac-perf-page-nav.png)
 
-Quando si accede per la prima volta alla pagina connettività di rete, viene visualizzato un riquadro di panoramica contenente una mappa delle prestazioni della rete globale, una valutazione della rete con ambito per l'intero tenant e un elenco di problemi correnti. Dalla panoramica, è possibile eseguire il drill-down per visualizzare specifiche metriche delle prestazioni di rete e problemi in base alla posizione. Per ulteriori informazioni, vedere [Network Performance Overview in the Microsoft 365 Admin Center](#network-connectivity-overview-in-the-microsoft-365-admin-center).
+Potrebbe essere richiesto di partecipare all'anteprima pubblica per questa funzionalità per conto dell'organizzazione. L'accettazione è di solito avvenuta immediatamente e quindi viene visualizzata la pagina connettività di rete. 
+
+Quando si accede alla pagina connettività di rete, viene visualizzato un riquadro di panoramica contenente una mappa delle prestazioni della rete globale, una valutazione della rete con ambito per l'intero tenant e un elenco di problemi correnti. Per accedere a questa pagina, è necessario essere un amministratore dell'organizzazione all'interno di Microsoft 365. Il ruolo amministrativo lettore di report avrà accesso in lettura a queste informazioni. Per configurare le posizioni e gli altri elementi della connettività di rete, un amministratore deve far parte di un ruolo di amministratore del server, ad esempio il ruolo di amministratore del servizio di supporto. Dalla panoramica, è possibile eseguire il drill-down per visualizzare specifiche metriche delle prestazioni di rete e problemi in base alla posizione. Per ulteriori informazioni, vedere [Network Performance Overview in the Microsoft 365 Admin Center](#network-connectivity-overview-in-the-microsoft-365-admin-center).
 
 ## <a name="pre-requisites-for-network-connectivity-assessments-to-appear"></a>Requisiti preliminari per le valutazioni della connettività di rete da visualizzare
 
-Sono disponibili tre opzioni per ottenere valutazioni di rete dai percorsi di Office:
+Anche se la connettività di rete può essere valutata all'interno dell'organizzazione, è necessario eseguire eventuali miglioramenti alla progettazione della rete per posizioni specifiche di Office. Le informazioni sulla connettività di rete vengono fornite per ogni posizione di Office una volta che tali posizioni possono essere determinate. Sono disponibili tre opzioni per ottenere valutazioni di rete dai percorsi di Office:
 
 ### <a name="1-enable-windows-location-services"></a>1. abilitare i servizi di posizione di Windows
 
@@ -43,7 +45,7 @@ Per questa opzione è necessario disporre di almeno due computer in esecuzione i
 
 Il servizio percorso di Windows deve essere consenziente sui computer. È possibile eseguire il testing eseguendo l'applicazione **Maps** e individuando manualmente. Può essere abilitato su un singolo computer con **impostazioni | Privacy | La posizione** in cui l'impostazione _consente alle app di accedere al percorso_ deve essere abilitata. Il consenso dei servizi di posizione di Windows può essere distribuito ai PC utilizzando MDM o criteri di gruppo con l'impostazione _LetAppsAccessLocation_.
 
-Non è necessario aggiungere percorsi nell'interfaccia di amministrazione con questo metodo, in quanto vengono identificati automaticamente nella risoluzione della città. Non è possibile visualizzare più percorsi di Office all'interno di una città tramite i servizi di posizione di Windows.
+Non è necessario aggiungere percorsi nell'interfaccia di amministrazione con questo metodo, in quanto vengono identificati automaticamente nella risoluzione della città. Non è possibile visualizzare più percorsi di Office all'interno di una città tramite i servizi di posizione di Windows. Le informazioni sulla posizione vengono arrotondate anche ai 300 metri più vicini per 300 metri prima di essere caricati in modo che non sia possibile accedere a informazioni di posizione più precise.
 
 I computer devono disporre di una rete Wi-Fi anziché di un cavo Ethernet. I computer che dispongono di un cavo Ethernet non dispongono di informazioni sulla posizione accurate.
 
@@ -51,7 +53,7 @@ Gli esempi di misura e le posizioni degli uffici devono iniziare a essere visual
 
 ### <a name="2-add-locations-and-provide-lan-subnet-information"></a>2. aggiungere posizioni e fornire informazioni sulla subnet LAN
 
-Per questa opzione non sono necessari né i servizi di posizione di Windows né la connessione Wi-Fi. È necessario OneDrive per Windows versione 20,161 o versioni successive installata su ogni computer nel percorso.
+Per questa opzione non sono necessari né i servizi di posizione di Windows né la connessione Wi-Fi. È necessario OneDrive per Windows versione **20,161** o versioni successive installata su ogni computer nel percorso.
 
 È inoltre necessario aggiungere posizioni nella pagina di connettività di rete dell'interfaccia di amministrazione o per importare quelle da un file CSV. Le posizioni aggiunte devono includere le informazioni sulla subnet LAN di Office.
 
@@ -61,11 +63,11 @@ Gli esempi di misura e le posizioni degli uffici devono iniziare a essere visual
 
 ### <a name="3-manually-gather-test-reports-with-the-microsoft-365-network-connectivity-test-tool"></a>3. raccogliere manualmente i report di test con lo strumento di test della connettività di rete di Microsoft 365
 
-Per questa opzione è necessario identificare una persona in ogni posizione. Chiedere agli utenti di eseguire il [test di connettività di rete di Microsoft 365](https://connectivity.office.com) su un computer Windows con autorizzazioni amministrative. Nel sito Web devono accedere all'account di Office 365 nello stesso tenant in cui si desidera visualizzare i risultati. Fare clic su Esegui test. Durante il test è disponibile un EXE di test di connettività scaricato. È necessario aprire ed eseguire anche questo. Dopo aver completato i test, il risultato del test viene caricato su Microsoft.
+Per questa opzione è necessario identificare una persona in ogni posizione. Chiedere loro di passare al [test di connettività di rete di Microsoft 365](https://connectivity.office.com) su un computer Windows con autorizzazioni amministrative. Nel sito Web devono accedere all'account di Office 365 per la stessa organizzazione per la quale si desidera visualizzare i risultati. Fare clic su Esegui test. Durante il test è disponibile un EXE di test di connettività scaricato. È necessario aprire ed eseguire anche questo. Dopo aver completato i test, il risultato del test viene caricato su Office 365.
 
 I rapporti di test sono collegati a una posizione se sono stati aggiunti con informazioni sulla subnet LAN, altrimenti vengono visualizzati solo nella posizione della città.
 
-Gli esempi di misura e le posizioni degli uffici devono iniziare a essere visualizzati 2-3 minuti dopo il completamento di un risultato del test.
+Gli esempi di misura e le posizioni degli uffici devono iniziare a essere visualizzati 2-3 minuti dopo il completamento di un report di prova. Per ulteriori informazioni, vedere [Microsoft 365 Network Connectivity test (Preview)](office-365-network-mac-perf-onboarding-tool.md).
 
 ## <a name="how-do-i-use-this-information"></a>Come si utilizzano queste informazioni?
 
@@ -88,7 +90,7 @@ Molte aziende dispongono di configurazioni perimetrali di rete che sono cresciut
 
 Le aziende possono migliorare l'esperienza utente generale e proteggere l'ambiente seguendo i [principi di connettività di Office 365](https://aka.ms/pnc) e utilizzando la funzionalità di connettività di rete di interfaccia di amministrazione di Microsoft 365. Nella maggior parte dei casi, i seguenti principi generali avranno un impatto positivo significativo sulla latenza degli utenti finali, l'affidabilità del servizio e le prestazioni complessive di Microsoft 365.
 
-A volte viene chiesto a Microsoft di esaminare i problemi relativi alle prestazioni di rete con Microsoft 365 per i clienti di grandi dimensioni e spesso presentano una causa principale relativa all'infrastruttura di uscita della rete dei clienti. Quando viene trovata una causa principale comune di un problema di perimetro della rete del cliente, si cerca di identificare le misure di test semplici che lo identificano. Un test con una soglia di misurazione che identifica un problema specifico è importante perché è possibile testare la stessa misura in qualsiasi posizione, stabilire se questa causa principale è presente e condividerla come Insight di rete con l'amministratore.
+A volte viene chiesto a Microsoft di esaminare i problemi relativi alle prestazioni di rete con Microsoft 365 per i clienti di grandi dimensioni e spesso presentano una causa principale relativa all'infrastruttura perimetrale di rete dei clienti. Quando viene trovata una causa principale comune di un problema di perimetro della rete del cliente, si cerca di identificare le misure di test semplici che lo identificano. Un test con una soglia di misurazione che identifica un problema specifico è importante perché è possibile testare la stessa misura in qualsiasi posizione, stabilire se questa causa principale è presente e condividerla come Insight di rete con l'amministratore.
 
 Alcune informazioni di rete indicano solo un problema che richiede ulteriori indagini. Un'analisi di rete in cui sono disponibili test sufficienti per visualizzare un'azione di correzione specifica per correggere la causa principale è elencata come **azione consigliata**. Questi suggerimenti, basati su metriche in tempo reale che rivelano valori che non rientrano in una soglia predeterminata, sono molto più importanti dei consigli generali di Best practice, poiché sono specifici dell'ambiente in uso e mostrano il miglioramento effettivo dopo che sono state apportate le modifiche consigliate.
 
@@ -104,17 +106,30 @@ La pagina Panoramica Visualizza inoltre la valutazione della rete per il cliente
 
 ![Valutazione della rete](../media/m365-mac-perf/m365-mac-perf-overview-score.png)
 
+È possibile visualizzare una visualizzazione tabella dei percorsi in cui possono essere filtrati, ordinati e modificati nella scheda percorsi. Le posizioni con raccomandazioni specifiche possono includere anche un miglioramento della latenza potenziale stimato. Questa operazione viene calcolata assumendo la latenza mediana degli utenti dell'organizzazione nel percorso e sottraendo la latenza mediana per tutte le organizzazioni della stessa città.
+
+![Posizioni di Network Insights](../media/m365-mac-perf/m365-mac-perf-locations.png)
+
 ## <a name="specific-office-location-network-performance-summary-and-insights"></a>Riepilogo e informazioni dettagliate sulle prestazioni di una rete di Office location
 
 Se si seleziona un percorso di Office, viene visualizzata una pagina di riepilogo specifica del percorso in cui vengono visualizzati i dettagli relativi all'uscita di rete identificati dalle misure per il percorso di Office.
 
 ![Informazioni dettagliate sulla rete in base alla posizione](../media/m365-mac-perf/m365-mac-perf-locations-plan-overview.png)
 
-La pagina di riepilogo dell'ubicazione di Office consente inoltre di visualizzare la valutazione della rete della posizione, la cronologia di valutazione della rete, il confronto tra la valutazione di questo percorso e gli altri clienti della stessa città, nonché un elenco di approfondimenti e suggerimenti specifici che è possibile intraprendere per migliorare le prestazioni e l'affidabilità della rete. Le posizioni con raccomandazioni specifiche possono includere anche un miglioramento della latenza potenziale stimato.
+Una mappa della rete perimetrale per gli utenti dell'organizzazione nel percorso viene visualizzata con alcuni o tutti gli elementi seguenti:
+
+- **Percorso Office** -percorso di Office per la pagina che si sta cercando
+- **Perimetro di rete** -percorso dell'indirizzo IP di origine per le connessioni dal percorso di Office. Ciò dipende dall'accuratezza dei database delle posizioni Geo-IP
+- **Exchange front Service Optimal door** -una delle porte frontali del servizio Exchange consigliate in cui gli utenti di questa sede devono connettersi
+- **Exchange front-ottimal door** -sportello principale del servizio di Exchange a cui gli utenti sono connessi, ma non è consigliato
+- **Porta principale di servizio di SharePoint** -una delle porte di servizio di SharePoint consigliate in cui gli utenti di questa sede devono connettersi
+- **Porta anteriore del servizio di SharePoint con prestazioni ottimali** : una porta di servizio di SharePoint a cui gli utenti sono connessi, ma non è consigliabile
+- **Server resolver ricorsivo DNS** -percorso da un database geo IP del resolver ricorsivo DNS rilevato utilizzato per Exchange Online (se disponibile)
+- Il **server proxy** -la posizione da un database geo IP del server proxy rilevato (se disponibile) 
+
+La pagina di riepilogo dell'ubicazione di Office consente inoltre di visualizzare la valutazione della rete della posizione, la cronologia di valutazione della rete, il confronto tra la valutazione di questo percorso e gli altri clienti della stessa città, nonché un elenco di approfondimenti e suggerimenti specifici che è possibile intraprendere per migliorare le prestazioni e l'affidabilità della rete.
 
 I confronti tra clienti nella stessa città si basano sull'aspettativa che tutti i clienti abbiano uguale accesso ai provider di servizi di rete, all'infrastruttura di telecomunicazioni e ai punti di presenza della rete Microsoft nelle vicinanze.
-
-![Posizioni di Network Insights](../media/m365-mac-perf/m365-mac-perf-locations.png)
 
 Nella scheda Dettagli della pagina percorso di Office sono riportati i risultati di misura specifici che sono stati utilizzati per fornire informazioni dettagliate, suggerimenti e valutazione della rete. Questo viene fornito in modo che gli ingegneri di rete possano convalidare le raccomandazioni e il fattore in qualsiasi vincolo o specifiche nel proprio ambiente.
 
@@ -124,7 +139,7 @@ Nella scheda Dettagli della pagina percorso di Office sono riportati i risultati
 
 Per l'identificazione dell'ufficio della subnet LAN, è necessario aggiungere ogni posizione in anticipo. Invece di aggiungere singoli percorsi di Office nella scheda **percorsi** , è possibile importarli da un file CSV. Potrebbe essere possibile ottenere questi dati da altri luoghi che sono stati archiviati, ad esempio il dashboard qualità chiamata o siti e servizi di Active Directory.
 
-Nel file CSV una posizione della città scoperta è contrassegnata come **City**e una posizione di Office aggiunta manualmente è contrassegnata come **posizione**.
+Nel file CSV una posizione della città scoperta viene visualizzata nella colonna userEntered come vuota e una posizione di Office aggiunta manualmente viene visualizzata come 1.
 
 1. Nella finestra _connettività principale a Microsoft 365_ fare clic sulla scheda **percorsi** .
 1. Fare clic sul pulsante **Importa** appena sopra l'elenco percorsi. Verrà visualizzato il riquadro a comparsa di **Import Office Locations** .
@@ -133,9 +148,10 @@ Nel file CSV una posizione della città scoperta è contrassegnata come **City**
 
 1. Fare clic sul collegamento **download Office Locations (. csv)** per esportare l'elenco delle posizioni correnti in un file CSV e salvarlo sul disco rigido locale. In questo modo viene fornito un formato CSV formattato correttamente con intestazioni di colonna a cui è possibile aggiungere posizioni. È possibile lasciare le posizioni esportate esistenti così come sono. non verranno duplicati quando si importa il file CSV aggiornato. Se si desidera modificare l'indirizzo di una posizione esistente, verrà aggiornata quando si importa il file CSV. Non è possibile modificare l'indirizzo di una città individuata.
 1. Aprire il file CSV e aggiungere le posizioni compilando i seguenti campi su una nuova riga per ogni posizione che si desidera aggiungere. Lasciare vuoti tutti gli altri campi; i valori immessi in altri campi verranno ignorati.
+   1. **userEntered** (obbligatorio): deve essere 1 per una nuova posizione di Office subnet LAN
    1. **Indirizzo** (obbligatorio): indirizzo fisico dell'ufficio
-   1. **Latitude** (facoltativo): popolato da Bing Maps Lookup se vuoto
-   1. **Longitudine** (facoltativa): popolata dalla ricerca di Bing Maps se vuota
+   1. **Latitude** (facoltativo): popolato dalla ricerca di Bing Maps dell'indirizzo se vuoto
+   1. **Longitudine** (facoltativo): popolato dalla ricerca di Bing Maps dell'indirizzo se vuoto
    1. **Intervalli di indirizzi IP di uscita 1-5** (facoltativo): per ogni intervallo, immettere il nome del circuito seguito da un elenco separato da spazi di indirizzi CIDR IPv4 o IPv6 validi. Questi valori vengono utilizzati per distinguere più percorsi di Office in cui si utilizzano gli stessi indirizzi IP della subnet LAN.
    1. **LanIps** (obbligatorio): elenca gli intervalli di subnet LAN in uso in questa posizione di Office.
 1. Dopo aver aggiunto i percorsi di Office e aver salvato il file, fare clic sul pulsante **Sfoglia** accanto al campo **carica il completamento** e selezionare il file CSV salvato.

@@ -11,12 +11,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 description: Informazioni sul catalogo delle soluzioni Microsoft 365, incluse le informazioni in esso contenute, su come ottenerlo e sui passaggi successivi.
 ms.collection: M365-security-compliance
-ms.openlocfilehash: f396801d4241b06c5523e4f3312c9ce597ac015e
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: ff445711dfd57ec69305c3f8cc7d01e05a66a1cc
+ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47547564"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48132170"
 ---
 # <a name="microsoft-365-solution-catalog"></a>Catalogo delle soluzioni Microsoft 365
 
@@ -101,6 +101,6 @@ Se si sta cercando una soluzione di conformità esistente e non è ancora dispon
 
 - **Microsoft Information Protection**, informazioni su come le soluzioni Microsoft 365 consentono di individuare, classificare e proteggere le informazioni riservate ovunque si trovino o viaggiano.
     - **Familiarizzare e configurare Microsoft cloud app Security**. Vedere [Guida introduttiva: Introduzione a Microsoft cloud app Security](https://docs.microsoft.com/cloud-app-security/getting-started-with-cloud-app-security).
-    - Iniziare **a utilizzare i classificatori**. Classificare il contenuto e quindi etichettarlo in modo che possa essere protetto e gestito correttamente è il punto di partenza per la disciplina di protezione delle informazioni. Vedere [Guida introduttiva ai classificatori addestrabili](classifier-getting-started-with.md).
+    - Iniziare **a utilizzare i classificatori**. Classificare il contenuto e quindi etichettarlo in modo che possa essere protetto e gestito correttamente è il punto di partenza per la disciplina di protezione delle informazioni. Vedere informazioni [sui classificatori addestrabili (Preview)](classifier-learn-about.md).
 
 - **Visitare spesso il catalogo della soluzione Microsoft 365**e verificare le nuove soluzioni che consentono di soddisfare le esigenze di conformità. Accedere a [https://compliance.microsoft.com](https://compliance.microsoft.com) e selezionare **Catalog** nel riquadro di spostamento a sinistra.

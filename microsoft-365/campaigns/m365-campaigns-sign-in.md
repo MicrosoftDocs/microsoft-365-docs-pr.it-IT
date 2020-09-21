@@ -2,8 +2,8 @@
 title: Accedere a Microsoft 365 per le campagne
 f1.keywords:
 - NOCSH
-ms.author: supotter
-author: supotter
+ms.author: sirkkuw
+author: sirkkuw
 manager: scotv
 ms.audience: Admin
 ms.topic: article
@@ -23,12 +23,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Accedere a Microsoft 365 per le campagne. Proteggi la tua campagna dalle minacce di Cybersecurity alla posta elettronica, ai dati e alla comunicazione.
-ms.openlocfilehash: c6014259bf08fc9e8965e6848f3c094b8cbadf0f
-ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
+ms.openlocfilehash: a11db9a16718d435842508504d7e7f0cba5df898
+ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46527103"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48131989"
 ---
 # <a name="sign-in-to-microsoft-365-for-campaigns"></a>Accedere a Microsoft 365 per le campagne
 

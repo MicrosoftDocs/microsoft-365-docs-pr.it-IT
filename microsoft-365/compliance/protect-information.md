@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: a6ef28a4-2447-4b43-aae2-f5af6d53c68e
 description: Implementare le funzionalità di Microsoft Information Protection (MIP) utilizzando la conformità di Microsoft 365 per individuare, classificare e proteggere le informazioni riservate ovunque si trovino o si trovino in viaggio.
-ms.openlocfilehash: ac4499fceae1e4f754753cf91beaf106d855c517
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: f867391243302d0ce912ae5d740ed761ea7317b7
+ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47308347"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48131966"
 ---
 # <a name="microsoft-information-protection-in-microsoft-365"></a>Microsoft Information Protection in Microsoft 365
 
@@ -41,8 +41,8 @@ Per comprendere il paesaggio dei dati e identificare i dati importanti nell'ambi
 |Funzionalità|Quali sono i problemi risolti?|Per iniziare|
 |:------|:------------|:--------------------|:-----------------------------|
 |[Tipi di informazioni riservate](sensitive-information-type-entity-definitions.md)| Identifica i dati sensibili mediante l'utilizzo di espressioni regolari predefinite o personalizzate o di una funzione, insieme a elementi probatori che includono parole chiave, livelli di sicurezza e prossimità.| [Personalizzare una tipologia integrata di informazioni sensibili](customize-a-built-in-sensitive-information-type.md)|
-|[Classificatori addestrabili (anteprima)](classifier-getting-started-with.md)| Consente di classificare i dati per l'utente utilizzando uno dei classificatori incorporati o di formare un classificatore con il proprio contenuto. | [Creare un classificatore addestrabile (anteprima)](classifier-creating-a-trainable-classifier.md) |
-|[Classificazione dei dati](data-classification-overview.md) | Identifica gli elementi che dispongono di un'etichetta di riservatezza, di un'etichetta di conservazione o che sono stati classificati come un tipo di informazioni riservate nell'organizzazione e le azioni che gli utenti stanno assumendo.  | [Introduzione a Esplora contenuto](data-classification-content-explorer.md)<br /><br /> [Introduzione a Esplora attività](data-classification-activity-explorer.md) |
+|[Classificatori addestrabili (anteprima)](classifier-learn-about.md)| Consente di classificare i dati per l'utente utilizzando uno dei classificatori incorporati o di formare un classificatore con il proprio contenuto. | [Introduzione ai classificatori sottoponibili a training (anteprima)](classifier-get-started-with.md) |
+|[Classificazione dei dati](data-classification-overview.md) | Identifica gli elementi che dispongono di un'etichetta di riservatezza, di un'etichetta di conservazione o che sono stati classificati come un tipo di informazioni riservate nell'organizzazione e le azioni che gli utenti stanno assumendo.  | [Introduzione a Esplora contenuto](data-classification-content-explorer.md)<br /><br /> [Introduzione all'attività Esplora risorse](data-classification-activity-explorer.md) |
 
 ## <a name="protect-your-data"></a>Proteggere i propri dati
 
@@ -59,7 +59,7 @@ Per applicare operazioni di protezione flessibili che includono crittografia, re
 [Connettore Rights Management](https://docs.microsoft.com/azure/information-protection/deploy-rms-connector) |Protezione: solo per le distribuzioni locali esistenti che utilizzano Exchange o SharePoint Server o file server che eseguono Windows Server e l'infrastruttura di classificazione dei file (FCI) | [Passaggi per la distribuzione del connettore RMS](https://docs.microsoft.com/azure/information-protection/deploy-rms-connector#steps-to-deploy-the-rms-connector)
 |[Scanner di etichette unificato di Azure Information Protection](https://docs.microsoft.com/azure/information-protection/deploy-aip-scanner)| Consente di individuare, contrassegnare e proteggere le informazioni riservate che si trovano negli archivi dati presenti in locale. | [Configurazione e installazione di Azure Information Protection Unified Labeling scanner](https://docs.microsoft.com/azure/information-protection/deploy-aip-scanner-configure-install)|
 |[Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security)| Consente di individuare, contrassegnare e proteggere le informazioni riservate che si trovano negli archivi dati presenti nel cloud. | [Individuare, classificare, etichettare e proteggere i dati regolamentati e sensibili archiviati nel cloud](https://docs.microsoft.com/cloud-app-security/best-practices#discover-classify-label-and-protect-regulated-and-sensitive-data-stored-in-the-cloud)|
-|[SDK di Microsoft Information Protection](https://docs.microsoft.com/information-protection/develop/overview#microsoft-information-protection-sdk)|Estende le etichette di riservatezza a applicazioni e servizi di terze parti  <br /><br /> Scenario di esempio: [impostare e ottenere un'etichetta di riservatezza (C++)](https://docs.microsoft.com/information-protection/develop/quick-file-set-get-label-cpp) |[Installazione e configurazione SDK di Microsoft Information Protection (MIP)](https://docs.microsoft.com/information-protection/develop/setup-configure-mip)|
+|[SDK di Microsoft Information Protection](https://docs.microsoft.com/information-protection/develop/overview#microsoft-information-protection-sdk)|Estende le etichette di riservatezza a applicazioni e servizi di terze parti  <br /><br /> Scenario di esempio: [impostare e ottenere un'etichetta di riservatezza (C++)](https://docs.microsoft.com/information-protection/develop/quick-file-set-get-label-cpp) |[Installazione e configurazione del kit SDK di Microsoft Information Protection (MIP)](https://docs.microsoft.com/information-protection/develop/setup-configure-mip)|
 
 ## <a name="prevent-data-loss"></a>Prevenire la perdita di dati
 

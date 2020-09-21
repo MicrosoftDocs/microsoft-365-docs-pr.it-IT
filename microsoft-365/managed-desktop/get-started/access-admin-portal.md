@@ -9,18 +9,26 @@ audience: ITPro
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: laurawi
-ms.openlocfilehash: 2ac0bb01c1a941d460e92c7e75e765ceb85b2bc0
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: f57911276d74c6945027077404e1f83c2f5072fd
+ms.sourcegitcommit: eb905c5b4d7e71fc930a207357295b0160c4f065
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47546575"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "48137036"
 ---
 # <a name="access-the-admin-portal"></a>Accedere al portale di amministrazione
 
 Il gateway per il servizio Microsoft Managed Desktop è il [portale](https://portal.azure.com)di Microsoft Azure. Per ulteriori informazioni sull'utilizzo e la personalizzazione dell'esperienza del portale di Azure in genere, vedere la [documentazione relativa al portale di Azure](https://docs.microsoft.com/azure/azure-portal/). Disponibile in anteprima ora, è anche possibile trovare Microsoft Managed Desktop in [Microsoft Endpoint Manager](https://endpoint.microsoft.com/). Se non si ha familiarità con le funzionalità di questo portale per la gestione dei dispositivi, vedere la [documentazione di Microsoft Endpoint Manager](https://docs.microsoft.com/mem/).
 
-Per poter accedere alle funzionalità amministrative di Microsoft Managed Desktop in Azure Portal o Microsoft Endpoint Manager, è necessario disporre di autorizzazioni specifiche per l'account amministrativo. È possibile gestire l'accesso dell'amministratore a queste funzionalità all'interno dell'organizzazione utilizzando il controllo di accesso basato sui ruoli (RBAC). Sono disponibili diversi ruoli di amministratore di Azure AD e ruoli personalizzati incorporati per fornire un controllo più granulare a diverse funzionalità all'interno del portale di amministrazione di Microsoft Managed Desktop. Per ulteriori informazioni sui ruoli di Azure Active Directory, vedere autorizzazioni dei ruoli [di amministratore in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles). A differenza dei ruoli di amministratore di AAD che si applicano a una vasta gamma di prodotti e servizi Microsoft, i ruoli personalizzati sono specifici di Microsoft Managed Desktop e garantiscono solo l'accesso alle funzionalità di amministratore per questo servizio. Gli amministratori possono assegnare ruoli personalizzati agli utenti singolarmente o in combinazione con i ruoli di amministratore di AAD per aggiungere le autorizzazioni di Microsoft Managed Desktop agli account di amministratore esistenti.
+> [!NOTE]
+> Tuttavia, si sceglie di accedere a Microsoft Managed Desktop, in [Microsoft Endpoint Manager](https://endpoint.microsoft.com/) o nel [portale di Azure](https://portal.azure.com), sono supportati i seguenti browser:
+> - Microsoft Edge (versione più recente)
+> - Microsoft Internet Explorer 11
+> - Safari (versione più recente, solo Mac)
+> - Chrome (versione più recente)
+> - Firefox (ultima versione)
+
+Per poter accedere alle funzionalità amministrative di Microsoft Managed Desktop in Azure Portal o Microsoft Endpoint Manager, è necessario disporre di autorizzazioni specifiche per l'account amministrativo. È possibile gestire l'accesso dell'amministratore a queste funzionalità all'interno dell'organizzazione utilizzando il controllo di accesso basato sui ruoli (RBAC). Sono disponibili diversi ruoli di amministratore di Azure Active Directory (Azure AD) e ruoli personalizzati incorporati per fornire un controllo più granulare a diverse funzionalità all'interno del portale di amministrazione di Microsoft Managed Desktop. Per ulteriori informazioni sui ruoli di Azure Active Directory, vedere autorizzazioni dei ruoli [di amministratore in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles). A differenza dei ruoli di amministratore di Azure AD che si applicano a una vasta gamma di prodotti e servizi Microsoft, i ruoli personalizzati sono specifici di Microsoft Managed Desktop e garantiscono solo l'accesso alle funzionalità di amministratore per questo servizio. Gli amministratori possono assegnare ruoli personalizzati agli utenti singolarmente o in combinazione con i ruoli di Azure AD Administrator per aggiungere le autorizzazioni di Microsoft Managed Desktop agli account di amministratore esistenti.
 
 È possibile assegnare ognuno dei ruoli riportati di seguito per fornire diversi livelli di accesso:
 

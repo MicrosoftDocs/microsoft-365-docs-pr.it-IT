@@ -16,12 +16,12 @@ ms.custom:
 localization_priority: Normal
 f1.keywords: NOCSH
 description: Informazioni sui passaggi di configurazione di Microsoft 365 necessari per configurare un sito di SharePoint per la collaborazione con gli utenti.
-ms.openlocfilehash: c04114218342a2d65b318c71d061c2a0ed815fab
-ms.sourcegitcommit: 445b249a6f0420b32e49742fd7744006c7090b2b
+ms.openlocfilehash: d5a868e57753a6eb05f74b4873ed64ef0a70878e
+ms.sourcegitcommit: cd11588b47904c7d2ae899a9f5280f93d3850171
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46797817"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "48171269"
 ---
 # <a name="collaborate-with-guests-in-a-site"></a>Collaborare con gli utenti guest a un sito
 
@@ -39,18 +39,18 @@ In questo video vengono illustrati i passaggi di configurazione descritti in que
 
 La condivisione in Microsoft 365 è regolata al livello più alto dalle [impostazioni delle relazioni organizzative in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/external-identities/delegate-invitations). Se la condivisione Guest è disabilitata o limitata in Azure AD, queste verranno sostituite da tutte le impostazioni di condivisione configurate in Microsoft 365.
 
-Controllare le impostazioni delle relazioni organizzative per garantire che la condivisione con gli ospiti non sia bloccata.
+Controllare le impostazioni di collaborazione esterna per assicurarsi che la condivisione con gli ospiti non sia bloccata.
 
-![Screenshot della pagina delle impostazioni delle relazioni aziendali di Azure Active Directory](../media/azure-ad-organizational-relationships-settings.png)
+![Schermata della pagina impostazioni di collaborazione esterna di Azure Active Directory](../media/azure-ad-organizational-relationships-settings.png)
 
-Per impostare le impostazioni delle relazioni organizzative
+Per impostare le impostazioni di collaborazione esterna:
+
 
 1. Accedere a Microsoft Azure all'indirizzo [https://portal.azure.com](https://portal.azure.com) .
 2. Nel riquadro di spostamento a sinistra, fare clic su **Azure Active Directory**.
-3. Nel riquadro **Panoramica** fare clic su **relazioni organizzative**.
-4. Nel riquadro **relazioni organizzative** fare clic su **Impostazioni**.
-5. Verificare che **gli amministratori e gli utenti del ruolo invitato ospite possano invitare** e che **i membri possano invitare** siano entrambi impostati su **Sì**.
-6. Se si apportano modifiche, fare clic su **Salva**.
+3. Selezionare **identità esterne** e fare clic su **impostazioni di collaborazione esterna**.
+4. Nel riquadro **Impostazioni invito Guest** , verificare che **gli amministratori e gli utenti del ruolo invitato ospite possano invitare** e che **i membri possano invitare** siano entrambi impostati su **Sì**.
+5. Se si apportano modifiche, fare clic su **Salva**.
 
 Prendere nota delle impostazioni nella sezione **vincoli di collaborazione** . Verificare che i domini degli utenti con cui si desidera collaborare non siano bloccati.
 
@@ -135,7 +135,7 @@ Per invitare gli ospiti a un gruppo
 1. In **gruppi**, in Outlook sul Web, fare clic sul gruppo in cui si desidera aggiungere i membri.
 2. Aprire la scheda contatto di gruppo e quindi, in **altre opzioni** (...), fare clic su **Aggiungi membri**.
 3. Digitare gli indirizzi di posta elettronica degli utenti che si desidera invitare e quindi fare clic su **Aggiungi**.
-4. Fare clic su **Chiudi**.
+4. Scegliere **Chiudi**.
 
 ## <a name="see-also"></a>Vedere anche
 
@@ -146,4 +146,3 @@ Per invitare gli ospiti a un gruppo
 [Creare un ambiente di condivisione guest sicuro](create-secure-guest-sharing-environment.md)
 
 [Creare una Extranet B2B con guest gestiti](b2b-extranet.md).
-

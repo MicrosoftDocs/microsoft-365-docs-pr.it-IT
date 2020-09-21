@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Informazioni su e dove accedere al Lab Kit di distribuzione di Windows e Office.
-ms.openlocfilehash: 09441f879fa41d1b920aae7d37625d0a52160d84
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: bf49a815c0d3d952187f863120865ab3aa4674fc
+ms.sourcegitcommit: cd11588b47904c7d2ae899a9f5280f93d3850171
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47949881"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "48171411"
 ---
 # <a name="windows-and-office-deployment-lab-kit"></a>Kit Lab per la distribuzione di Windows e Office
 
@@ -54,35 +54,47 @@ INOLTRE, il lab è progettato per essere collegato alle versioni di valutazione 
 Le guide dei lab forniscono indicazioni dettagliate su più scenari di distribuzione e gestione. I lab sono stati aggiornati per le versioni più recenti di Intune e Configuration Manager. 
 
 ### <a name="plan-and-prepare-infrastructure"></a>Pianificare e preparare l'infrastruttura 
-Desktop Analytics   
-Gateway di gestione cloud & collegamento tenant del punto di distribuzione cloud, cogestione e carichi di lavoro di commutazione    
-Accesso remoto
+- Desktop Analytics 
+- Cloud Management Gateway & punto di distribuzione del cloud 
+- Collegamento tenant, cogestione e carichi di lavoro di commutazione  
+- Accesso remoto (VPN) 
 
 ### <a name="prepare-configuration"></a>Preparare la configurazione   
-Ottimizzazione della manutenzione di Windows 10 Update Delivery Windows 10 utilizzo di criteri di gruppo per la manutenzione di Windows 10 con Microsoft Intune Servicing Windows 10 with Configuration Manager Servicing Microsoft 365 Apps for Enterprise using Configuration Manager Servicing Microsoft 365 Apps for Enterprise using Intune    
-Sicurezza e conformità 
+- Ottimizzazione del recapito di Windows 10 Update   
+- Manutenzione di Windows 10 tramite criteri di gruppo
+- Manutenzione di Windows 10 con Microsoft Intune   
+- Manutenzione di Windows 10 con Configuration Manager   
+- Manutenzione delle app di Microsoft 365 per Enterprise tramite Configuration Manager   
+- Manutenzione delle app di Microsoft 365 per Enterprise tramite Intune  
+- Sicurezza e conformità   
 
 ### <a name="prepare-applications"></a>Preparare le applicazioni    
-Toolkit di conformità per Office    
-MSIX Packaging and conversion of Win32 Applications 
+- Toolkit di conformità per Office  
+- MSIX Packaging and conversion of Win32 Applications   
 
 ### <a name="deploy-windows-10"></a>Distribuire Windows 10   
-Sequenze di attività di distribuzione del sistema operativo nelle sequenze di attività di distribuzione del sistema operativo di Configuration Manager in MDT Windows Autopilot deploy and manage the New Microsoft Edge    
+- Sequenze di attività di distribuzione del sistema operativo in Configuration Manager
+- Sequenze di attività di distribuzione del sistema operativo in MDT   
+- Windows Autopilot
+- Distribuire e gestire il nuovo server perimetrale Microsoft  
 
 ### <a name="deploy-microsoft-365-apps-for-enterprise"></a>Come distribuire App di Microsoft 365 per grandi imprese    
-Distribuzione gestita dal cloud    
-Distribuzione gestita localmente  
-Microsoft 365 Apps for Enterprise Deployment su dispositivi non collegati AD altri utenti   
-Distribuzione gestita dell'organizzazione tramite Configuration Manager Enterprise Managed Deployment tramite Microsoft Intune    
-Distribuzione e gestione LOB con Microsoft Intune Deploy Microsoft Teams
+- Distribuzione gestita dal cloud  
+- Distribuzione gestita localmente    
+- Microsoft 365 Apps for Enterprise Deployment su dispositivi non collegati AD altri utenti 
+- Distribuzione gestita dell'organizzazione tramite Configuration Manager
+- Distribuzione gestita dell'organizzazione tramite Microsoft Intune  
+- Distribuzione e gestione LOB con Microsoft Intune
+- Distribuire Microsoft Teams
 
 ### <a name="deploy-windows-virtual-desktop"></a>Distribuire desktop virtuale di Windows  
+- Preparare, distribuire, ottimizzare
  
 ### <a name="download-the-windows-and-office-deployment-lab-kit"></a>Scaricare il Lab Kit di distribuzione di Windows e Office
 
 [Scaricare il Lab Kit di distribuzione di Windows e Office](https://www.microsoft.com/evalcenter/evaluate-lab-kit).
 
-*Utilizzare un'ampia larghezza di banda per scaricare questo contenuto per migliorare l'esperienza di download e consentire 30-45 minuti per il provisioning automatico. L'ambiente lab richiede almeno 16 GB di memoria disponibile e 150 GB di spazio libero su disco. Per ottenere prestazioni ottimali, è consigliabile 32 GB di memoria disponibile. Il laboratorio scade il 4 dicembre 2020. Prima della scadenza verrà pubblicata una nuova versione.*
+*Utilizzare un'ampia larghezza di banda per scaricare questo contenuto per migliorare l'esperienza di download e consentire 30-45 minuti per il provisioning automatico. L'ambiente lab richiede almeno 16 GB di memoria disponibile e 150 GB di spazio libero su disco. Per ottenere prestazioni ottimali, è consigliabile 32 GB di memoria disponibile. Il laboratorio scade il 5 dicembre 2020. Prima della scadenza verrà pubblicata una nuova versione.*
 
 ## <a name="additional-guidance"></a>Indicazioni aggiuntive
 

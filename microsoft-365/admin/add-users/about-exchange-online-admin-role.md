@@ -21,12 +21,12 @@ search.appverid:
 - GEA150
 ms.assetid: 097ae285-c4af-4319-9770-e2559d66e4c8
 description: "Gli amministratori di Exchange Online gestiscono la posta elettronica e le cassette postali dell'organizzazione. Ad esempio, recuperano gli elementi eliminati nella cassetta postale di un utente. "
-ms.openlocfilehash: 0b63679883e8329782700085fa0c11a0ac6585ca
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: be4c8a4f1c75402d690cc705dd408c9070e40c9b
+ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47307434"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48131771"
 ---
 # <a name="about-the-exchange-online-admin-role"></a>Informazioni sul ruolo di amministratore di Exchange Online
 
@@ -34,15 +34,17 @@ Per facilitare l'amministrazione di Microsoft 365, è possibile [assegnare](assi
   
  **Suggerimento**: Quando si assegna il ruolo di amministratore di Exchange a un utente, assegnare anche il ruolo di amministratore dei servizi. In questo modo è possibile visualizzare informazioni importanti nell'interfaccia di amministrazione di Microsoft 365, ad esempio l'integrità del servizio Exchange Online, nonché le notifiche relative a modifiche e rilasci.
   
+## <a name="before-you-begin"></a>Informazioni preliminari
+
 Ecco alcune delle principali attività che possono eseguire gli utenti a cui è stato assegnato il ruolo di amministratore di Exchange:
   
 - [Recuperare gli elementi eliminati nella cassetta postale di un utente](https://docs.microsoft.com/microsoft-365/enterprise/recover-deleted-items-in-a-mailbox)
-    
+
 - [Configurare un criterio di archiviazione ed eliminazione per le cassette postali dell'organizzazione](https://docs.microsoft.com/microsoft-365/compliance/set-up-an-archive-and-deletion-policy-for-mailboxes).
-    
+
 - Impostare le caratteristiche delle cassette postali, ad esempio i criteri di condivisione della cassetta postale: con che modalità gli utenti possono condividere le informazioni su calendario e contatti con altri utenti all'esterno dell'organizzazione.
-    
-- Impostare i delegati "[Invia come](give-mailbox-permissions-to-another-user.md#send-email-from-another-users-mailbox)" e "[Invia su abehalf](give-mailbox-permissions-to-another-user.md#send-email-on-behalf-of-another-user)" per la cassetta postale di un utente. Ad esempio, un dirigente potrebbe richiedere che il proprio assistente possa inviare messaggi di posta elettronica per conto suo. 
+
+- Impostare i delegati "[Invia come](give-mailbox-permissions-to-another-user.md#send-email-from-another-users-mailbox)" e "[Invia su abehalf](give-mailbox-permissions-to-another-user.md#send-email-on-behalf-of-another-user)" per la cassetta postale di un utente. Ad esempio, un dirigente potrebbe richiedere che il proprio assistente possa inviare messaggi di posta elettronica per conto suo.
 
 - [Creare una cassetta postale condivisa](../email/create-a-shared-mailbox.md) in modo che un gruppo di persone possa monitorare e inviare messaggi di posta elettronica da un indirizzo di posta elettronica comune.
 

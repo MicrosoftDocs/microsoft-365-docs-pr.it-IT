@@ -27,12 +27,12 @@ search.appverid:
 - GEA150
 ms.assetid: eac4d046-1afd-4f1a-85fc-8219c79e1504
 description: Informazioni su come assegnare ruoli di amministratore a un utente o a più utenti dell'azienda in modo che possano eseguire attività specifiche nell'interfaccia di amministrazione.
-ms.openlocfilehash: f5449bdb6b05e2a29393ad8e389c562953efd710
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: 6d7a09ca9c515494eaf18ea144b7f67ce0003890
+ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47307320"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48131759"
 ---
 # <a name="assign-admin-roles"></a>Assegnare i ruoli di amministratore
 
@@ -42,7 +42,7 @@ Per altre informazioni, vedere [Informazioni sui ruoli di amministratore](about-
 
 Quando si aggiungono nuovi utenti, se non si assegna loro un ruolo di amministratore, sono presenti nel *ruolo utente* e non dispongono di privilegi di amministratore per uno qualsiasi dei Microsoft Admin Center. Tuttavia, se si ha bisogno di assistenza, è possibile assegnare un ruolo di amministratore a un utente. Ad esempio, se si ha bisogno di qualcuno che aiuti a reimpostare le password, non è necessario assegnargli il ruolo di amministratore globale, è necessario assegnargli il ruolo di amministratore della password. Avere troppi amministratori globali, con accesso illimitato ai dati e alle aziende online, è un rischio per la sicurezza.
 
-Guardare un breve video sull'aggiunta di un amministratore.<br><br>
+## <a name="watch-add-an-adminbrbr"></a>Watch: aggiungere un amministratore.<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOfO] 
 
@@ -100,7 +100,6 @@ Se il video è stato utile, consultare la [serie di formazione completa per picc
 
 ::: moniker-end
 
-
 ## <a name="assign-admin-roles-to-multiple-users"></a>Assegnare ruoli di amministratore a più utenti
 
 Se si conosce PowerShell, vedere [assegnare ruoli agli account utente con PowerShell](https://go.microsoft.com/fwlink/?linkid=854257). È la soluzione ideale per assegnare i ruoli a centinaia di utenti.
@@ -108,7 +107,6 @@ Se si conosce PowerShell, vedere [assegnare ruoli agli account utente con PowerS
 Usare le istruzioni seguenti per assegnare i ruoli a decine di utenti.
 
 ::: moniker range="o365-worldwide"
-
 
 ## <a name="check-your-permissions"></a>Controllare le autorizzazioni
 

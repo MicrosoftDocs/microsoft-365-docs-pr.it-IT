@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Informazioni sui criteri di conservazione e sulle etichette di conservazione, utili per conservare tutto che serve ed eliminare ciò che non serve.
-ms.openlocfilehash: 7787d3e2e3dead737d7a0e5ed083a851a349d561
-ms.sourcegitcommit: 9f5b136b96b3af4db4cc6f5b1f35130ae60d6b12
+ms.openlocfilehash: 3d5bf971f65be5fd6ef4fdbed46cc41827657a54
+ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "47816756"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48132136"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>Informazioni sui criteri e sulle etichette di conservazione
 
@@ -83,7 +83,7 @@ Diversamente dai criteri di conservazione, le impostazioni di conservazione dell
  
 - Opzioni per iniziare il periodo di conservazione dal momento in cui il contenuto è stato etichettato o in base a un evento, oltre che in base all'età o alla data di ultima modifica.
 
-- Usare [classificatori sottoponibili a training](classifier-getting-started-with.md) per identificare il contenuto da etichettare.
+- Usare [classificatori sottoponibili a training](classifier-learn-about.md) per identificare il contenuto da etichettare.
 
 - Applicare un'etichetta predefinita per i documenti di SharePoint.
 

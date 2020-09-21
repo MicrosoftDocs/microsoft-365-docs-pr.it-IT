@@ -1,9 +1,29 @@
 ---
-Titolo: configurare i pilastri Microsoft Threat Protection per il laboratorio di valutazione o l'ambiente pilota Descrizione: configurare i pilastri di Microsoft Threat Protection: Office 365 ATP, Azure ATP, Microsoft cloud app Security e Microsoft Defender ATP, per il laboratorio di valutazione o l'ambiente pilota.
-Parole chiave: configurare Microsoft Threat Protection Trial, Microsoft Threat Protection Trial Configuration, Configure Microsoft Threat Protection Project pilota, Configure Microsoft Threat Protection Pillars, Microsoft Threat Protection Pillars search. Product: eADQiWindows 10XVcnh search. appverid: met150 ms. prod: W10 ms. mktglfcycl: Deploy ms. sitesec: library ms. PageType: Security ms. Author: dolmont  
-autore: DulceMontemayor ms. localizationpriority: Media Manager: dansimp audience: ITPro ms. Collection: M365-Security-Compliance ms. Topic: article 
+title: Configurare i pilastri Microsoft Threat Protection per il laboratorio di valutazione o l'ambiente pilota
+description: Configurare i pilastri Microsoft Threat Protection, ad esempio Office 365 ATP, Azure ATP, Microsoft cloud app Security e Microsoft Defender ATP, per il laboratorio di valutazione o l'ambiente pilota.
+keywords: configurazione di Microsoft Threat Protection Trial, Microsoft Threat Protection Trial Configuration, Configure Microsoft Threat Protection Pilot Project, Configure Microsoft Threat Protection Pillars, Microsoft Threat Protection Pillars
+search.product: eADQiWindows 10XVcnh
+search.appverid: met150
+ms.prod: microsoft-365-enterprise
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.pagetype: security
+f1.keywords:
+- NOCSH
+ms.author: dolmont
+author: DulceMontemayor
+ms.localizationpriority: medium
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance
+ms.topic: article
+ms.openlocfilehash: 4d751ec5eb786a91d62ab11988132bfed076984d
+ms.sourcegitcommit: a3c2c737995088c1bad3b12ab401a7ef242b0272
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47956269"
 ---
-
 # <a name="configure-microsoft-threat-protection-pillars-for-your-trial-lab-or-pilot-environment"></a>Configurare i pilastri Microsoft Threat Protection per il laboratorio di valutazione o l'ambiente pilota
 
 **Si applica a:**
@@ -43,7 +63,7 @@ La preparazione è la chiave per una distribuzione corretta. In questo articolo 
 
 ## <a name="microsoft-threat-protection-pillars"></a>Pilastri di Microsoft Threat Protection
 Microsoft Threat Protection è costituito da quattro pilastri. Anche se un pilastro può già fornire valore alla sicurezza dell'organizzazione della rete, l'abilitazione dei quattro pilastri Microsoft Threat Protection darà alla propria organizzazione il massimo valore.
-
+<br>
 ![Image of_Microsoft soluzione di protezione dalle minacce per gli utenti, la protezione avanzata dalle minacce di Azure, per gli endpoint Microsoft Defender Advanced Threat Protection, per le app Cloud, Microsoft cloud app Security e per i dati, Office 365 Advanced Threat Protection  ](../../media/mtp-eval-31.png) <br>
 
 In questa sezione viene illustrata la configurazione:
@@ -121,7 +141,7 @@ In questa sezione viene illustrata la configurazione:
 <br>![Immagine of_Azure pagina avanzata di protezione dalle minacce in cui è necessario fare clic su Avanti per seguire la procedura guidata del sensore ATP di Azure](../../media/mtp-eval-47.png) <br>
  
 7. Fare clic su **Avanti** nel tipo di distribuzione del sensore.
-<br>![Immagine of_Azure pagina avanzata di protezione dalle minacce in cui è necessario fare clic su Avanti per seguire la procedura guidata del sensore ATP di Azure](../../media/mtp-eval-48.png) <br>
+<br>![Immagine of_Azure pagina avanzata di protezione dalle minacce in cui è necessario fare clic su Avanti per passare alla pagina successiva](../../media/mtp-eval-48.png) <br>
  
 8. Copiare il tasto di accesso perché è necessario immetterlo successivamente nella procedura guidata.
 ![Pagina of_the sensori immagine in cui è necessario copiare la chiave di accesso che è necessario immettere nella pagina successiva installazione guidata sensore di Azure ATP](../../media/mtp-eval-49.png) <br>
@@ -233,5 +253,6 @@ Congratulazioni! È stato appena creato il laboratorio di valutazione di Microso
 
 Successivamente, è possibile simulare un attacco e vedere in che modo le funzionalità del prodotto incrociato rilevano, creano avvisi e rispondono automaticamente a un attacco non file su un endpoint.
 
-## <a name="next-steps"></a>Passaggi successivi
-[Generare un avviso di test](generate-test-alert.md).
+## <a name="next-step"></a>Passaggio successivo
+|![Fase di simulazione d'attacco](../../media/mtp/run-sim.png) <br>[Fase di simulazione d'attacco](mtp-pilot-simulate.md) | Eseguire la simulazione di attacco per l'ambiente pilota di Microsoft Threat Protection.
+|:-------|:-----|

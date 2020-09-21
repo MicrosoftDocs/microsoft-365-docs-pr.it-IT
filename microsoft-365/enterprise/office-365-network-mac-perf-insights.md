@@ -14,12 +14,12 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Microsoft 365 Insights Network (anteprima)
-ms.openlocfilehash: e3730704b6672c931b7538659a38f218e769dd0a
-ms.sourcegitcommit: 7c0873d2a804f17697844fb13f1a100fabce86c4
+ms.openlocfilehash: 682c888fefb9bec9725e470d62019c857fc2de07
+ms.sourcegitcommit: cd11588b47904c7d2ae899a9f5280f93d3850171
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47962372"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "48171339"
 ---
 # <a name="microsoft-365-network-insights-preview"></a>Microsoft 365 Insights Network (anteprima)
 
@@ -157,7 +157,7 @@ Questa intuizione mostrerà quando 50% o più delle connessioni campionate sono 
 
 ### <a name="what-should-i-do"></a>Cosa si può fare?
 
-Abilitare la visibilità della connettività di rete di Office location se non è stato già fatto. Si desidera identificare quali uffici sono impactred da una scarsa connettività di rete che ha un impatto su Exchange e trovare modi per migliorare il perimetro della rete in ognuno dei quali connette gli utenti alla rete di Microsoft.
+Abilitare la visibilità della connettività di rete di Office location se non è stato già fatto. Si desidera identificare quali uffici sono interessati da una scarsa connettività di rete che ha un impatto su Exchange e trovare modi per migliorare il perimetro della rete in ognuno dei quali connette gli utenti alla rete di Microsoft.
 
 ## <a name="sharepoint-sampled-connections-impacted-by-connectivity-issues"></a>Connessioni con campionamento di SharePoint influenzate da problemi di connettività
 
@@ -169,7 +169,7 @@ Questa intuizione mostrerà quando 50% o più delle connessioni campionate sono 
 
 ### <a name="what-should-i-do"></a>Cosa si può fare?
 
-Abilitare la visibilità della connettività di rete di Office location se non è stato già fatto. Si desidera identificare quali uffici sono impactred da una scarsa connettività di rete che ha un impatto su SharePoint e trovare modi per migliorare il perimetro della rete in ognuno dei quali connette gli utenti alla rete di Microsoft.
+Abilitare la visibilità della connettività di rete di Office location se non è stato già fatto. Si desidera identificare quali uffici sono interessati da una scarsa connettività di rete che ha un impatto su SharePoint e trovare modi per migliorare il perimetro della rete in ognuno dei quali connette gli utenti alla rete di Microsoft.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -177,6 +177,6 @@ Abilitare la visibilità della connettività di rete di Office location se non �
 
 [Valutazione della rete Microsoft 365 (Preview)](office-365-network-mac-perf-score.md)
 
-[Test di connettività Microsoft 365 nell'interfaccia di amministrazione di M365 (anteprima)](office-365-network-mac-perf-onboarding-tool.md)
+[Strumento di test della connettività di rete Microsoft 365 (anteprima)](office-365-network-mac-perf-onboarding-tool.md)
 
 [Microsoft 365 servizi di localizzazione della connettività di rete (anteprima)](office-365-network-mac-location-services.md)

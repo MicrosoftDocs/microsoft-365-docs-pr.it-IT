@@ -19,15 +19,15 @@ search.appverid:
 - MOE150
 ms.assetid: 9fa2539a-2211-41fd-85a0-bc37b9619ca4
 description: Informazioni su come rendere più sicura l'organizzazione da attacchi alle password e perché è necessario bloccare le password comuni e abilitare l'autenticazione a più fattori basata sul rischio.
-ms.openlocfilehash: 1d6e399acb83751ec6a45eb0c811dedec394127e
-ms.sourcegitcommit: 0650da0e54a2b484a3156b3aabe44397fbb38e00
+ms.openlocfilehash: 0ae26dc27cc698c24d999acde03f63f9cfead081
+ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "45015924"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48131943"
 ---
 # <a name="password-policy-recommendations"></a>Suggerimenti sui criteri delle password
- 
+
 L'amministratore di un'organizzazione ha la responsabilità di impostare i criteri delle password per gli utenti. Questo articolo fornisce indicazioni su come eseguire questa procedura, che può essere complicata, e suggerimenti per rafforzare la protezione dell'organizzazione dagli attacchi contro le password.
   
 Per determinare la frequenza di scadenza delle password di Microsoft 365 nella propria organizzazione, vedere [Impostare i criteri di scadenza delle password per Microsoft 365](../manage/set-password-expiration-policy.md).
@@ -78,11 +78,11 @@ Di seguito sono descritte alcune delle procedure di gestione delle password più
   
 ### <a name="password-expiration-requirements-for-users"></a>Requisiti per la scadenza delle password degli utenti
 
-I requisiti per la scadenza delle password fanno più male che bene, in quanto spingono gli utenti a selezionare password prevedibili, composte da parole e numeri in sequenza strettamente correlati fra loro. In questi casi è piuttosto facile indovinare la password successiva sulla base di quella precedente. I requisiti di scadenza delle password non offrono alcun vantaggio in termini di contenimento dei danni, perché i criminali informatici usano quasi sempre le credenziali subito dopo averle compromesse.
+I requisiti per la scadenza delle password danno più svantaggi che vantaggi, in quanto spingono gli utenti a selezionare password prevedibili, composte da parole e numeri in sequenza strettamente correlati fra loro. In questi casi è piuttosto facile indovinare la password successiva sulla base di quella precedente. I requisiti di scadenza delle password non offrono alcun vantaggio in termini di contenimento dei danni, perché i criminali informatici usano quasi sempre le credenziali subito dopo averle compromesse. Vedere [È il momento di ripensare alle modifiche obbligatorie delle password](https://go.microsoft.com/fwlink/p/?linkid=861018) per altre informazioni.
   
 ### <a name="requiring-long-passwords"></a>Requisiti di lunghezza delle password
 
-I requisiti di lunghezza delle password (superiori a circa 10 caratteri) possono causare negli utenti un comportamento prevedibile e indesiderato. Ad esempio, gli utenti a cui viene richiesto di usare password di 16 caratteri potrebbero scegliere schemi ripetitivi come **ottoottoottootto** o **passwordpassword**, che soddisfano il requisito della lunghezza ma non sono difficili da indovinare. Inoltre, i requisiti di lunghezza aumentano le probabilità che gli utenti sviluppino abitudini non sicure, come annotare le password, riutilizzarle o memorizzarle nei propri documenti in formato non crittografato. Per incoraggiare gli utenti ad adottare una password univoca, è consigliabile impostare un requisito di lunghezza che non superi gli 8 caratteri. 
+I requisiti di lunghezza delle password (superiori a circa 10 caratteri) possono causare negli utenti un comportamento prevedibile e indesiderato. Ad esempio, gli utenti a cui viene richiesto di usare password di 16 caratteri potrebbero scegliere schemi ripetitivi come **ottoottoottootto** o **passwordpassword**, che soddisfano il requisito della lunghezza ma non sono difficili da indovinare. Inoltre, i requisiti di lunghezza aumentano le probabilità che gli utenti sviluppino abitudini non sicure, come annotare le password, riutilizzarle o memorizzarle nei propri documenti in formato non crittografato. Per incoraggiare gli utenti ad adottare una password univoca, è consigliabile impostare un requisito di lunghezza che non superi gli 8 caratteri.
   
 ### <a name="requiring-the-use-of-multiple-character-sets"></a>Requisiti di complessità delle password (uso di più set di caratteri)
 
@@ -131,8 +131,6 @@ Con l'autenticazione a più fattori basata sul rischio, quando il sistema rileva
 - [Discussione sulla modifica obbligatoria della password](https://go.microsoft.com/fwlink/p/?linkid=861018)
 
 - [Le peggiori password del 2015](https://go.microsoft.com/fwlink/p/?linkid=861020)
-
-- [Scaricare file dal Web](https://go.microsoft.com/fwlink/p/?linkid=861029)
 
 ## <a name="related-articles"></a>Articoli correlati
 

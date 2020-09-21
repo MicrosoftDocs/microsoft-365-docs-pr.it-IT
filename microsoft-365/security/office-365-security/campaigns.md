@@ -17,16 +17,16 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Informazioni su Visualizzazione campagne in Office 365 Advanced Threat Protection.
-ms.openlocfilehash: 72662519177f4ac43e3de04e9755fd99f5ffb03f
-ms.sourcegitcommit: 787b198765565d54ee73972f664bdbd5023d666b
+ms.openlocfilehash: 60ec8ea1d2c164905e7b57f4b518ea3f80e7986c
+ms.sourcegitcommit: dcbcd5ef278949c777059b0aa6db072e821f72dd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "46867200"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "48173309"
 ---
 # <a name="campaign-views-in-office-365-atp"></a>Visualizzazione campagne in Office 365 ATP
 
-La visualizzazione della campagna è una funzionalità di Advanced Threat Protection (ATP) piano 2 (ad esempio Microsoft 365 E5 o organizzazioni con un componente aggiuntivo di piano 2 ATP). Le visualizzazioni di campaing nel centro sicurezza & conformità identifica e categorizza gli attacchi di phishing nel servizio. Visualizzazione campagne consente di:
+La visualizzazione della campagna è una funzionalità di Advanced Threat Protection (ATP) piano 2 (ad esempio Microsoft 365 E5 o organizzazioni con un componente aggiuntivo di piano 2 ATP). Le visualizzazioni della campagna nel centro sicurezza & conformità identifica e categorizza gli attacchi di phishing nel servizio. Visualizzazione campagne consente di:
 
 - Analizzare e rispondere in modo efficiente agli attacchi di phishing.
 - Comprendere meglio la portata dell'attacco.
@@ -47,7 +47,7 @@ Microsoft sfrutta la vasta quantità di dati antiphishing, di protezione dalla p
 
 Una campagna potrebbe essere di breve durata, o potrebbe interferire tra diversi giorni, settimane o mesi con periodi attivi e inattivi. Una campagna potrebbe essere avviata con l'organizzazione specifica oppure l'organizzazione potrebbe far parte di una campagna più estesa tra più società.
 
-## <a name="campaign-views-the-security--compliance-center"></a>Visualizzazione della campagna il Centro sicurezza & Compliance
+## <a name="campaign-views-in-the-security--compliance-center"></a>Visualizzazioni della campagna nel centro sicurezza & conformità
 
 Le visualizzazioni della campagna sono disponibili nel [Centro sicurezza & conformità](https://protection.office.com) nelle campagne di **gestione delle minacce** \> **Campaigns**o direttamente su <https://protection.office.com/campaigns> .
 
@@ -222,7 +222,7 @@ Il diagramma include le seguenti informazioni:
   |---|---|---|
   |**Consentito**|`SFV:SKN` <br/><br/> `SFV:SKI`|Il messaggio è stato contrassegnato come non indesiderato e/o il filtro saltato prima di essere valutato tramite filtro posta indesiderata. Ad esempio, il messaggio è stato contrassegnato come non indesiderato da una regola del flusso di posta (nota anche come regola di trasporto).<br/><br/>Il messaggio ha ignorato il filtro della posta indesiderata per altri motivi. Ad esempio, il mittente e il destinatario sono presenti nella stessa organizzazione.|
   |**Bloccato**|`SFV:SKS`|Il messaggio è stato contrassegnato come posta indesiderata prima di essere valutato tramite filtro posta indesiderata. Ad esempio, da una regola del flusso di posta.|
-  |**Rilevato**|`SFV:SPM`|Il messaggio è stato contrassegnato come posta indesiderata dal filtro posta indesiderata.|
+  |**Rilevato**|`SFV:SPM`|Il messaggio è stato contrassegnato come posta indesiderata dal filtro della posta indesiderata.|
   |**Non rilevato**|`SFV:NSPM`|Il messaggio è stato contrassegnato come non indesiderato dal filtro posta indesiderata.|
   |**Rilasciato**|`SFV:SKQ`|Il messaggio ha ignorato il filtro della posta indesiderata perché è stato rilasciato dalla quarantena.|
   |**Consenti tenant**<sup>\*</sup>|`SFV:SKA`|Il messaggio ha ignorato il filtro della posta indesiderata a causa delle impostazioni di un criterio di protezione da posta indesiderata. Ad esempio, il mittente si trovava nell'elenco dei mittenti consentiti o nell'elenco dei domini consentiti.|

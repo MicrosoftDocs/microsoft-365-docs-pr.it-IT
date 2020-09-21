@@ -26,16 +26,16 @@ search.appverid:
 - IWA160
 ms.assetid: 932ad3ad-533c-418a-b938-6e44e8bc33b0
 description: Visualizzare lo stato di integrità dei servizi Microsoft 365 prima di contattare il supporto per verificare se è presente un'interruzione del servizio attiva.
-ms.openlocfilehash: 49f7d3afd3c19cd4e9b6486db580082fe933b997
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 20e19072e1a851fba20e556be696146b8ad57a2f
+ms.sourcegitcommit: 392f60efa0921c64ac1462dd63985cd156e6498a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46691479"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "48134076"
 ---
 # <a name="how-to-check-microsoft-365-service-health"></a>Come verificare l'integrità del servizio Microsoft 365
 
-[![Etichetta per comunicare all'utente che l'interfaccia di amministrazione sta cambiando ed è possibile trovare altre informazioni alla pagina aka.ms/aboutM365preview.](../media/O365-Admin-AdminCenterChanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview?view=o365-worldwide)
+[![Etichetta per comunicare all'utente che l'interfaccia di amministrazione sta cambiando ed è possibile trovare altre informazioni alla pagina aka.ms/aboutM365preview.](../media/O365-Admin-AdminCenterChanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview?view=o365-worldwide&preserve-view=true)
 
 È possibile visualizzare l'integrità dei servizi Microsoft, tra cui Office sul Web, Yammer, Microsoft Dynamics CRM e servizi cloud per la gestione di dispositivi mobili, nella pagina **integrità del servizio** nell'interfaccia di amministrazione di [Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=2024339). If you are experiencing problems with a cloud service, you can check the service health to determine whether this is a known issue with a resolution in progress before you call support or spend time troubleshooting.
 
@@ -46,7 +46,7 @@ Se non si è in grado di accedere al portale del servizio, è possibile utilizza
 1. Accedere all'interfaccia di amministrazione di Microsoft 365 [https://admin.microsoft.com](https://go.microsoft.com/fwlink/p/?linkid=2024339) e accedere con un account di amministratore.
 
     > [!NOTE]
-    > Gli utenti a cui è assegnato il ruolo di amministratore globale o amministratore del servizio possono visualizzare le informazioni sull'integrità dei servizi. Per consentire agli amministratori di Exchange, SharePoint e Skype for Business di visualizzare tali informazioni, è necessario assegnare anche a loro il ruolo di amministratore del servizio. Per ulteriori informazioni sui ruoli che possono visualizzare l'integrità del servizio, vedere [informazioni sui ruoli di amministratore](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide#roles-available-in-the-microsoft-365-admin-center).
+    > Gli utenti a cui è assegnato il ruolo di amministratore globale o amministratore del servizio possono visualizzare le informazioni sull'integrità dei servizi. Per consentire agli amministratori di Exchange, SharePoint e Skype for Business di visualizzare tali informazioni, è necessario assegnare anche a loro il ruolo di amministratore del servizio. Per ulteriori informazioni sui ruoli che possono visualizzare l'integrità del servizio, vedere [informazioni sui ruoli di amministratore](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide&preserve-view=true#roles-available-in-the-microsoft-365-admin-center).
   
 2. Se non si utilizza il nuovo interfaccia di amministrazione, nella **Home** page selezionare il pulsante **prova il nuovo** interfaccia di amministrazione nell'angolo in alto a destra.
 
@@ -64,7 +64,9 @@ La scheda **cronologia** Visualizza la cronologia degli incidenti e degli avvisi
 
 Se si verifica un problema con un servizio Microsoft 365 e non viene visualizzato nell'elenco nella pagina **integrità del servizio** , parlarne selezionando **segnala un problema**e completando la maschera breve. Verranno esaminati i dati correlati e i report di altre organizzazioni per vedere quanto è diffuso il problema e se sono stati originati dal servizio. In tal caso, verrà aggiunto come nuovo incidente o Advisory nella pagina **integrità del servizio** , in cui è possibile monitorarne la risoluzione. Se non viene visualizzato nell'elenco entro circa 30 minuti, prendere in considerazione l'eventualità di contattare il supporto tecnico per risolvere il problema.
 
-Per iscriversi per le notifiche di posta elettronica di nuovi incidenti che influiscono sul tenant e le modifiche dello stato per un incidente attivo, selezionare **Preferenze**, fare clic su **Invia me notifiche brughiere del servizio nella posta elettronica**e quindi specificare quanto segue:
+Per personalizzare la visualizzazione dei servizi visualizzati nel dashboard, selezionare **Preferenze**  >  **visualizzazione personalizzata**e deselezionare le caselle di controllo per i servizi che si desidera escludere dalla visualizzazione del dashboard di integrità del servizio. Verificare che sia selezionata la casella di controllo per ogni servizio che si desidera monitorare.    
+
+Per iscriversi per le notifiche di posta elettronica di nuovi incidenti che influiscono sul tenant e le modifiche dello stato per un incidente attivo, selezionare **Preferenze**di  >  **posta elettronica**, fare clic su **Invia me notifiche brughiere del servizio nella posta elettronica**e quindi specificare quanto segue:
 
 - Fino a due indirizzi di posta elettronica.
 - Se si desiderano notifiche per gli eventi o gli avvisi
@@ -80,7 +82,7 @@ Per iscriversi per le notifiche di posta elettronica di nuovi incidenti che infl
 
 Nella visualizzazione **tutti i servizi** , selezionando lo stato del servizio, verrà aperta una visualizzazione riepilogativa degli avvisi o degli incidenti.
   
-![Schermata che mostra l'Advisory del servizio](../media/service-health-advisory.png)
+[![Schermata che mostra l'Advisory ](../media/service-health-advisory.png) del servizio](../media/service-health-advisory.png#lightbox)
 
 Il riepilogo dell'avviso o dell'evento imprevisto include le informazioni seguenti:
 
@@ -150,4 +152,4 @@ Per ulteriori informazioni sul nostro impegno per il tempo di attività, vedere 
 ## <a name="related-topics"></a>Argomenti correlati
 
 [Report attività nell'interfaccia di amministrazione](https://support.office.com/article/0d6dfb17-8582-4172-a9a9-aed798150263) 
- di Microsoft 365 [Preferenze del centro messaggi](https://docs.microsoft.com/microsoft-365/admin/manage/message-center?view=o365-worldwide#preferences11)
+ di Microsoft 365 [Preferenze del centro messaggi](https://docs.microsoft.com/microsoft-365/admin/manage/message-center?view=o365-worldwide&preserve-view=true#preferences11)
