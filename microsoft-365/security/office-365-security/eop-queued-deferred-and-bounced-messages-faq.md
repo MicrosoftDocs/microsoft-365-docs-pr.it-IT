@@ -14,14 +14,17 @@ ms.assetid: 9d015a0d-52a0-484d-9a08-121d04f973d3
 ms.custom:
 - seo-marvel-apr2020
 description: Trovare le risposte alle domande più frequenti sui messaggi che sono stati accodati, posticipati o rimbalzati durante il processo di filtro di Exchange Online Protection (EOP).
-ms.openlocfilehash: 76fe08f3a83321b6c0549dae5f1382ead5f0b3ae
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: 4ae38e871c0d6e4321bd7586c5cfd0bea3aeef81
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46827750"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48202940"
 ---
 # <a name="eop-queued-deferred-and-bounced-messages-faq"></a>Domande frequenti sui messaggi restituiti al mittente, differiti e in coda in Exchange Online Protection
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 In questo argomento vengono fornite le risposte alle domande frequenti sui messaggi che sono stati accodati, posticipati o rimbalzati durante il processo di filtro di Exchange Online Protection (EOP).
 

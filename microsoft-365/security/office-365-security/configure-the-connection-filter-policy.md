@@ -18,14 +18,17 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Gli amministratori possono ottenere informazioni su come configurare il filtro connessioni in Exchange Online Protection (EOP) per consentire o bloccare i messaggi di posta elettronica dai server.
-ms.openlocfilehash: 45213ff36c7efc76a83a2c520e0369211ffecf53
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: d69ec30c9d6d812bf3bbcc6dc5b6df332d9dd0b5
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46827846"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48203372"
 ---
 # <a name="configure-connection-filtering"></a>Configurare il filtro connessioni
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 Se si è un cliente Microsoft 365 con cassette postali in Exchange Online o un cliente di Exchange Online Protection (EOP) autonomo senza cassette postali di Exchange Online, è possibile utilizzare il filtro connessioni in EOP (in particolare, il criterio del filtro di connessione predefinito) per identificare i server di posta elettronica di origine buoni o difettosi tramite gli indirizzi IP. I componenti principali del criterio di filtro di connessione predefinito sono:
 
@@ -40,7 +43,7 @@ In questo argomento viene descritto come configurare i criteri di filtro delle c
 > [!NOTE]
 > L'elenco indirizzi IP consentiti, l'elenco sicuro e l'elenco indirizzi IP bloccati sono una parte della strategia complessiva per consentire o bloccare la posta elettronica all'interno dell'organizzazione. Per ulteriori informazioni, vedere [creare elenchi di mittenti attendibili](create-safe-sender-lists-in-office-365.md) e [creare elenchi di mittenti bloccati](create-block-sender-lists-in-office-365.md).
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare?
+## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare
 
 - Aprire il Centro sicurezza e conformità in <https://protection.office.com/>. Per passare direttamente alla pagina **Impostazioni di filtro della posta indesiderata**, usare <https://protection.office.com/antispam>.
 

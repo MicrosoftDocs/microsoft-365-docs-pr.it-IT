@@ -16,14 +16,17 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Gli amministratori possono ottenere informazioni su come configurare le impostazioni della posta indesiderata nelle cassette postali di Exchange Online. Molte di queste impostazioni sono disponibili per gli utenti in Outlook o Outlook sul Web.
-ms.openlocfilehash: 171eca8535958f01a7f749ad678e6ea9dd83d80c
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: 632c6f37b80cdc38b513f66ad42e4a5c25b41f25
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46825714"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48203348"
 ---
 # <a name="configure-junk-email-settings-on-exchange-online-mailboxes"></a>Configurare le impostazioni della posta indesiderata nelle cassette postali di Exchange Online
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 In Microsoft 365 organizzazioni con cassette postali in Exchange Online, le impostazioni di protezione dalla posta indesiderata dell'organizzazione sono controllate da Exchange Online Protection (EOP). Per ulteriori informazioni, vedere [protezione da posta indesiderata in EOP](anti-spam-protection.md).
 
@@ -44,7 +47,7 @@ Gli amministratori possono utilizzare PowerShell di Exchange Online per disabili
 > [!NOTE]
 > I messaggi provenienti da mittenti che gli utenti hanno aggiunto ai propri elenchi di mittenti attendibili ignoreranno il filtro delle connessioni come parte di EOP (SCL è-1). Per impedire agli utenti di aggiungere voci all'elenco dei mittenti attendibili in Outlook, utilizzare criteri di gruppo come indicato nella sezione  [informazioni sulle impostazioni di posta indesiderata in Outlook](#about-junk-email-settings-in-outlook) più avanti in questo argomento. Il filtro dei criteri, il filtro contenuto e i controlli di protezione avanzata dalle minacce (ATP, Advanced Threat Protection) verranno ancora applicati ai messaggi.
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare?
+## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare
 
 - Per eseguire queste procedure, è possibile utilizzare solo Exchange Online PowerShell. Per informazioni su come connettersi a PowerShell per Exchange Online, vedere [Connettersi a PowerShell per Exchange Online](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
 

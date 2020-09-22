@@ -17,14 +17,17 @@ search.appverid:
 - MET150
 description: Informazioni su come riconoscere e correggere le regole di Outlook e gli attacchi per iniezioni di moduli personalizzati in Office 365
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f9b5551b8cbda85ac3940bc8f43ec2d7b7eccdb1
-ms.sourcegitcommit: 7a59d83a8660c2344ebdb92e0ea0171c9c2d9498
+ms.openlocfilehash: 7d879d34a925354084e08d82f5e1724725c18825
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44811051"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48203072"
 ---
 # <a name="detect-and-remediate-outlook-rules-and-custom-forms-injections-attacks"></a>Rilevare e correggere le regole di Outlook e gli attacchi per iniezioni di moduli personalizzati
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 **Riepilogo** Informazioni su come riconoscere e correggere le regole di Outlook e gli attacchi per iniezioni di moduli personalizzati in Office 365.
 
@@ -227,9 +230,9 @@ Si noti che, anche con le patch e gli aggiornamenti installati, è possibile che
 
 È possibile verificare se l'impostazione "Avvia applicazione" è stata riattivata tramite una sostituzione nel registro di sistema utilizzando le informazioni [visualizzate in come visualizzare il registro System di Windows utilizzando le versioni a 64 bit](https://support.microsoft.com/help/305097). Controllare queste sottochiavi:
 
-- **Outlook 2016**:`HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Outlook\Security\`
+- **Outlook 2016**: `HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Outlook\Security\`
 
-- **Outlook 2013**:`HKEY_CURRENT_USER\Software\Microsoft\Office\15.0\Outlook\Security\`
+- **Outlook 2013**: `HKEY_CURRENT_USER\Software\Microsoft\Office\15.0\Outlook\Security\`
 
 Cercare la chiave EnableUnsafeClientMailRules. Se è presente ed è impostato su 1, la patch di sicurezza di Outlook è stata ignorata e il computer è vulnerabile all'attacco maschera/regole. Se il valore è 0, l'azione "Avvia applicazione" è disattivata. Se è installata la versione aggiornata e con patch di Outlook e questa chiave del registro di sistema non è presente, non è vulnerabile a questi attacchi.
 

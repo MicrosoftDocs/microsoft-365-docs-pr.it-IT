@@ -21,12 +21,12 @@ description: Interfaccia di amministrazione di Microsoft 365-informazioni sulle 
 ms.custom:
 - MACDashWhatsNew
 - AdminSurgePortfolio
-ms.openlocfilehash: 7504fa085c6dd5413a1dcddbb71f3d015ded72c1
-ms.sourcegitcommit: 97ef8f846939c3d31bb0638edf07bb89463ace0b
+ms.openlocfilehash: 64c9939f7dd6c4370b80e74987263942dad0e62f
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/28/2020
-ms.locfileid: "47300458"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208904"
 ---
 # <a name="whats-new-in-the-microsoft-365-admin-center"></a>Novità dell'interfaccia di amministrazione di Microsoft 365
 
@@ -49,17 +49,121 @@ Se si desidera sapere cosa c'è di nuovo con altri servizi cloud Microsoft:
 - [Novità dell'interfaccia di amministrazione di SharePoint](https://docs.microsoft.com/sharepoint/what-s-new-in-admin-center)
 - [Aggiornamenti di Office](https://docs.microsoft.com/OfficeUpdates/)
 
+## <a name="ignite-2020-august--september"></a>Ignite 2020 (agosto & settembre)
+
+Benvenuto in Microsoft Ignite-la prima accensione solo online. Si spera di vederla in una delle nostre sessioni: [Microsoft ignite 2020 Session Catalog](https://myignite.microsoft.com/sessions). Di seguito sono riportate alcune delle informazioni di cui parleremo a Ignite. 
+> [!NOTE]
+> Non tutte le funzionalità sono disponibili per tutti gli utenti immediatamente. Se non si vedono le nuove funzionalità, [partecipare a Release mirate](manage/release-options-in-office-365.md).
+
+### <a name="multi-tenant-management"></a>Gestione multi-tenant
+
+Sono state sviluppate una serie di funzionalità per gli amministratori multi-tenant come te per ottenere il lavoro più rapido ed efficiente.
+
+- **I tenant**: passano rapidamente tra i tenant gestiti.
+- **Tutti i tenant**: una nuova pagina in cui è possibile visualizzare rapidamente l'integrità di tutti i servizi dei tenant, le richieste di servizi aperti, i prodotti e la fatturazione, le attività di installazione consigliate e il numero di utenti nel tenant.
+- **Setup**: la pagina di installazione multi-tenant fornisce una visualizzazione elenco della pagina di installazione, ma è organizzata per molti tenant. È possibile vedere quali funzionalità non sono attivate, quali attività sono complete per tutti i tenant, attività che devono essere completate dai tenant. Questa visualizzazione consentirà di tenere conto dell'adozione delle funzionalità e di verificare che le attività di configurazione della sicurezza consigliate vengano sempre eseguite.
+- **Integrità del servizio**: la visualizzazione dell'integrità del servizio Mostra se eventuali incidenti o avvisi interessano i tenant. Verrà anche illustrato il numero di tenant gestiti coinvolti. È sufficiente selezionare un evento imprevisto per ottenere ulteriori informazioni sulla scheda Panoramica, quindi passare alla scheda tenant affected per eseguire il drill-down e il supporto del tenant.
+- La **migrazione delle cassette postali tra tenant** è un nuovo servizio, ora in anteprima pubblica, che consente di spostare le cassette postali tra i tenant senza dover trasferisce e quindi di onboard Mailboxes. 
+- **Condivisione dei domini tra tenant**: in breve, è possibile partecipare a un'anteprima privata per le funzionalità che consentono di condividere un dominio tra più tenant. Ad esempio, se contoso acquisisce i giocattoli di Wingtip, Contoso può condividere il dominio con i giocattoli di Wingtip, in modo che gli utenti di entrambi i tenant possano utilizzare "contoso.com" come indirizzi di posta elettronica.
+
+![Pagina integrità del servizio per multi-tenant con un evento Incident selezionato e la scheda relativa ai tenant è aperta. Nel menu di spostamento sono disponibili tutti i tenant, l'installazione e l'integrità dei servizi come solo opzioni.](../media/MAC-WN-MTinServiceHealth.png)
+
+### <a name="monitor-your-most-important-accounts"></a>Monitorare gli account più importanti
+
+È possibile monitorare e tenere conto dei messaggi di posta elettronica non riusciti o ritardati inviati agli utenti che hanno un impatto aziendale elevato, come il CEO. Gli account di priorità vengono registrati aggiungendo gli utenti all'elenco degli account prioritari nell'interfaccia di amministrazione di Microsoft 365. Aggiungere dirigenti, dirigenti, Manager o altri utenti che hanno accesso a informazioni sensibili o ad alta priorità.
+
+Gli account di priorità sono disponibili solo per le organizzazioni che soddisfano entrambi i requisiti seguenti:
+
+- Office 365 E3 o Microsoft 365 E3 o Office 365 E5 o Microsoft 365 E5.
+- Almeno 10.000 licenze e almeno 50 mensili degli utenti di Exchange Online attivi.
+
+![Pagina di installazione per la caratteristica: monitorare gli account più importanti](../media/MAC-WN-PriorityAccounts.png)
+
+Per iniziare, sono disponibili due modalità:
+
+- Andare a **utenti**, quindi nel menu "altre azioni" selezionare **Gestisci gli account prioritari** per aggiungere gli utenti all'elenco.
+- Andare a **installazione**, trovare l'attività di installazione **monitorare gli account più importanti**, quindi selezionare **inizia**.
+
+Per ulteriori informazioni sugli account prioritari, vedere [monitoraggio degli account prioritari](https://docs.microsoft.com/microsoft-365/admin/setup/priority-accounts) e [dei problemi di posta elettronica per gli account prioritari](https://docs.microsoft.com/Exchange/mail-flow-best-practices/mail-flow-insights/mfi-email-issues-for-priority-accounts).
+
+### <a name="search-faster-and-get-better-results-from-any-page"></a>Eseguire una ricerca più rapida e ottenere risultati migliori da qualsiasi pagina
+
+È stata avviata l'implementazione di una nuova esperienza di ricerca per l'interfaccia di amministrazione e non è possibile attendere che venga eseguita la prova. ![La casella di ricerca è stata spostata nell'area dei banner. ALT + S per eseguire la ricerca da qualsiasi pagina.](../media/MAC-WN-GlobalSearch.png)
+
+- La casella di ricerca è stata spostata nell'area di intestazione in cui è indicato "Microsoft 365 Admin Center" in modo da eseguire la ricerca da qualsiasi pagina, non solo dalla Home page. È stato anche ottenuto un collegamento: **ALT + S**.
+- La ricerca è più intelligente e ti darà risultati migliori, anche più velocemente. Provare a digitare "2FA" per iniziare.
+- I risultati della ricerca sono organizzati in base al tipo di elemento o all'azione che è possibile eseguire.
+  - **Utenti**: selezionare il nome dell'utente ed è possibile modificarlo direttamente. Se si seleziona il menu "altre azioni" accanto al nome, è possibile reimpostare la password. È possibile eseguire la ricerca per nome visualizzato, cognome, nome, nome utente o indirizzo di posta elettronica principale e alias di posta elettronica. Ma per ottenere una corrispondenza esatta, eseguire una ricerca in base all'indirizzo di posta elettronica principale o al nome utente.
+  - **Gruppi**: modificare il gruppo da qualsiasi pagina, aggiungere membri, assegnare proprietari.
+  - **Azioni**: simile a come è possibile cercare un utente e quindi reimpostare la propria password, è anche possibile cercare "Reimposta password" da qualsiasi pagina e quindi reimpostare una o più password per gli utenti.
+  - Struttura di **spostamento**: i risultati in esplorazione consentono rapidamente di accedere rapidamente a una pagina nell'interfaccia di amministrazione. Ad esempio, la ricerca di "ruoli" vi consentirà di eseguire la pagina dei ruoli per i ruoli di Azure AD.
+  - **Impostazioni**: ricerca di qualsiasi impostazione relativa all'organizzazione, ai servizi sottoscritti e alle impostazioni di sicurezza e privacy. 
+  - **Domini**: è possibile trovare collegamenti rapidi ai domini e quindi il collegamento vi consentirà di visualizzare la pagina panoramica e integrità del dominio.
+  - **Documentazione**: se non si riesce a trovare un risultato per l'utente, si cercherà di trovare una documentazione per la guida. Per trovare una corrispondenza, è necessario un po' di tempo per l'elenco di articoli a cura, quindi attendere un secondo per consentire alla ricerca di trovare i risultati. 
+  - **Commenti e suggerimenti**: non è stato trovato quello che stavi cercando? Inviaci commenti e suggerimenti dalla ricerca. Verrà aggiunta la funzionalità di ricerca per altre pagine e altre funzionalità nell'interfaccia di amministrazione.
+
+### <a name="microsoft-365-admin-mobile-app"></a>App Microsoft 365 admin per dispositivi mobili
+
+L' [app microsoft 365 Admin mobile](https://www.microsoft.com/microsoft-365/business/manage-office-365-admin-app), inclusa nell'abbonamento, consente di gestire Microsoft 365 dal dispositivo mobile, in modo da poter uscire dalla propria scrivania per svolgere ogni attività quotidiana. In effetti, esistono più di 90 funzionalità nell'app--e ne sono state aggiunte alcune altre:
+
+- **Supporto per i criteri di gestione delle applicazioni mobili di Microsoft Intune e per l'accesso condizionale**: è ora possibile utilizzare il dispositivo personale per gestire Microsoft 365 anche se l'organizzazione ha attivato i criteri di gestione delle applicazioni mobili di Intune e di accesso condizionale.
+- **Notifiche del centro messaggi**: attiva notifiche del centro messaggi nelle notifiche **delle impostazioni**  >  **Notifications** se si desidera ricevere un avviso sui nuovi post del centro messaggi. Tramite le notifiche, si vuole garantire che l'utente rimanga informato sulle informazioni importanti e sugli eventi all'interno del tenant.
+- **Avvisi di fatturazione**: è inoltre possibile abilitare le notifiche di fatturazione nelle notifiche **delle impostazioni**  >  **Notifications** se si desidera ottenere notifiche di fatturazione sul dispositivo se un abbonamento sta per scadere.
+- **Modalità oscura**: Welcome to the Dark Side dell'app per dispositivi mobili. Questa è stata una delle caratteristiche più richieste. Andare a **temi delle impostazioni**  >  **Themes** per attivarla.
+- **Segnalare un problema**: è ora possibile segnalare un problema nell'app o visualizzare i problemi segnalati da altri amministratori. Visitare l' **integrità del servizio** per estrarlo.
+
+![La pagina integrità in Microsoft 365 admin app con notifiche per il centro messaggi, l'integrità del servizio, gli avvisi di fatturazione.](../media/MAC-WN-AdminMobileApp.png)
+
+### <a name="usage-recommendations-for-small-and-medium-businesses"></a>Consigli sull'utilizzo per le aziende di piccole e medie dimensioni
+
+Le aziende di piccole e medie dimensioni potrebbero ricevere una raccomandazione nella **Home** Page se alcuni utenti dell'organizzazione non utilizzano attivamente team, OneDrive o app di Office. Quando si visualizza la raccomandazione, è possibile inviare rapidamente messaggi di posta elettronica agli utenti inattivi per aiutarli a iniziare a usare l'app e per assicurarsi di ottenere il valore completo dalle sottoscrizioni.
+
+### <a name="remote-work-collection"></a>Raccolta di lavoro remota
+
+In ottobre, verrà aggiunta una raccolta di lavoro remota per aiutare i proprietari di piccole imprese e il loro staff a ottenere online e a lavorare in remoto.  Il programma di installazione di **Essentials Work Remote** è un elenco curato di tutte le funzionalità che Microsoft consiglia di abilitare in modo sicuro i lavori remoti e collaborare efficacemente. In un paio di settimane, è possibile provare a eseguire l' **installazione**di  >  **Essentials Work Remote**.
+
+![Pagina di elementi di lavoro remota nel programma di installazione con 7 attività non avviate.](../media/MAC-WN-RemoteWork.png)
+
+Per ulteriori informazioni su come consentire il lavoro remoto e un pratico indirizzo web facile da ricordare e condividere, accedere a [aka.MS/Remote-business](https://aka.ms/remote-business).
+
+### <a name="need-help-moving-to-more-admin-centers"></a>Serve assistenza? passare a più centri di amministrazione
+
+In questo articolo viene continuamente analizzato e aggiornato il contenuto e gli strumenti per il mantenimento delle modifiche apportate al prodotto. Per risolvere i problemi in modo rapido ed efficiente, sono disponibili altri strumenti di diagnostica self-service. Di seguito sono riportate alcune aggiunte di recente:
+
+- Modificare il criterio di limitazione del servizio Web Exchange
+- Controllo dello stato del provisioning e della convalida dei team per utenti specifici
+- Risolvere i problemi di installazione di DKIM
+- Diagnosticare gli errori di registrazione degli utenti di Intune
+
+Si sta implementando la nuova e migliorata esperienza di supporto già presente nell'interfaccia di amministrazione di Microsoft 365 in alcuni degli altri centri di amministrazione. L'interfaccia di amministrazione di team e i centri di amministrazione di sicurezza e conformità sono già presenti in questa nuova esperienza. Presto, interfaccia di **amministrazione di Exchange**, interfaccia di amministrazione di **SharePoint**e **Office.com** verranno aggiornati insieme a questa nuova esperienza di guida per gli amministratori.
+
+### <a name="manage-changes-with-microsoft-planner"></a>Gestire le modifiche con Microsoft Planner
+
+In maggio, è stato annunciato che sarà presto possibile sincronizzare i post del centro messaggi in Microsoft Planner e ora è disponibile per tutti gli utenti.  È ora possibile creare attività dai messaggi, assegnarli e seguirli fino al completamento. La prima volta, si seleziona **pianificatore sincronizzazione** è necessario connettersi al piano appropriato.
+
+![Pagina Centro messaggi con ' pianificazione sincronizzazione ' evidenziata nella barra dei comandi accanto al pulsante Preferenze.](../media/MAC-WN-MCPlannerSync.png)
+
+Per ulteriori informazioni, consulta questo articolo e il video per vedere come funziona: [monitorare i post del centro messaggi in Planner](https://docs.microsoft.com/Office365/Planner/track-message-center-tasks-planner)
+
+### <a name="documentation-training-and-videos"></a>Documentazione, formazione e video
+
+- Nuovo di zecca e just in time per Microsoft Ignite:[l'hub virtuale](https://adoption.microsoft.com/virtual-hub/). Deep Dive into Technical Training per professionisti IT e sviluppatori. Trovare rapidamente circa 20 nuovi video come parte di #SIDETRACKED, il nome della pista Ignite admin di quest'anno.
+- Novità di [Microsoft 365](https://www.youtube.com/watch?v=OVjb2lGJ4GU&t=2s) video Series: questo mese, vengono descritte le nuove funzionalità disponibili in whiteboard per Teams e sul Web, come automatizzare il provisioning degli utenti in Azure ad, nuovi trigger e azioni di automatizzazione di Power in teams e altro ancora. E restate sintonizzati per il mese prossimo, dove avremo una ricapitolazione di tutte le grandi cose che accadono a Ignite!
+- È stata eseguita una riprogettazione della pagina [Microsoft 365 Documentation](https://docs.microsoft.com/microsoft-365) che si concentra sulle soluzioni per prime. Verranno evidenziate le nuove soluzioni che diventano disponibili in questa pagina, in modo da tenere d'occhio.
+
+![Nuova pagina di destinazione per la documentazione di Microsoft 365 Solutions con soluzioni quali "Empower Remote Workers".](../media/MAC-WN-M365Docspage.png)
+
 ## <a name="july-2020"></a>Luglio 2020
 
 ### <a name="getting-ready-for-ignite-2020"></a>Prepararsi per Ignite 2020
 
-Quando ci si sposta in Ignite Season in Microsoft, non viene rilasciato il numero di funzionalità in modo che sia necessario parlare durante le sessioni. 
+Quando ci si sposta in Ignite Season in Microsoft, non viene rilasciato il numero di funzionalità in modo che sia necessario parlare durante le sessioni.
 
 Il prossimo aggiornamento di questo articolo sarà il giorno di apertura del primo online solo Ignite. E quest'anno è possibile partecipare gratuitamente. Check it out, Get signed up: [Microsoft ignite 2020](https://www.microsoft.com/ignite).
 
 ### <a name="your-products"></a>Prodotti
 
-La gestione delle sottoscrizioni è stata molto elaborata in modo da rendere più veloce la pagina da caricare, più velocemente per trovare ciò che si sta cercando e per incontrare gli standard di facilitato Web ([linee guida WCAG 2,1](http://www.w3.org/TR/WCAG21/)).
+La gestione delle sottoscrizioni è stata molto elaborata in modo da velocizzare il caricamento della pagina, velocizzare la ricerca e rispondere agli standard di accessibilità Web ([linee guida WCAG 2,1](http://www.w3.org/TR/WCAG21/)).
 
 - **Riprogettazione della tabella**: la tabella è stata riprogettata in modo che sia possibile raggruppare abbonamenti simili. Andare a **fatturazione**dei  >  **prodotti**.
 - **Dettagli prodotto**: per ulteriori informazioni sugli abbonamenti, selezionare il prodotto nell'elenco.
@@ -73,7 +177,7 @@ La gestione dei domini può essere complicata e è stata rilasciata una nuova fu
 
 :::image type="content" source="../media/MAC-WN-DomainDNS.PNG" alt-text="Pagina dei dettagli sui domini per contoso.com":::
 
-### <a name="docs-training-and-videos"></a>Documenti, formazione e video
+### <a name="docs-training-and-videos-july-2020"></a>Documenti, formazione e video (2020 luglio)
 
 [What ' s New with microsoft 365](https://youtu.be/m1Nu8WJgCDY) video Series: this month, We cover the New Yammer experience for Web and mobile, How to integre The Yammer Communitys app for Microsoft teams, New Policy Packages to support FIRSTLINE workers and managers, and more.
 
@@ -91,7 +195,7 @@ Alcuni mesi fa, è stata aggiunta un'impostazione che consente di gestire i [nuo
 
 ### <a name="new-update-channel-for-office"></a>Nuovo canale di aggiornamento per Office
 
-Il 12 maggio, è stata annunciata la disponibilità di un nuovo canale di aggiornamento per Office: Monthly Enterprise Channel. Questo canale di aggiornamento consente agli utenti di disporre di nuove funzionalità di Office una volta al mese, il secondo martedi del mese.
+Il 12 maggio, è stata annunciata la disponibilità di un nuovo canale di aggiornamento per Office: Monthly Enterprise Channel. Questo canale di aggiornamento consente agli utenti di disporre di nuove funzionalità di Office una volta al mese, il secondo martedì del mese.
 
 Se si consente agli utenti di eseguire l'installazione automatica di Office dal portale, è possibile selezionare il canale Enterprise mensile. A tale scopo, accedere all'interfaccia di amministrazione di Microsoft 365 e passare a **Mostra tutte**  > **le impostazioni**  >  dell'**organizzazione**per il download del  >  **Services**  >  **software di Office**. Se si seleziona una **volta al mese (Monthly Enterprise Channel)**, tutte le nuove installazioni di Office verranno configurate per l'utilizzo di Monthly Enterprise Channel.
 
@@ -238,7 +342,7 @@ I nuovi nomi dei prodotti entrano in vigore il 21 aprile 2020. Si tratta di una 
 |Office 365 Business Essentials     |   Microsoft 365 Business Basic      |
 |Office 365 Business Premium     |    Microsoft 365 Business Standard     |
 |Microsoft 365 Business     |    Microsoft 365 Business Premium     |
-|Office 365 Business     |    Microsoft 365 Apps for business       |
+|Office 365 Business     |    App Microsoft 365 per le aziende       |
 |Office 365 ProPlus    |   Microsoft 365 Apps for Enterprise      |
 
 ### <a name="videos-training-and-docs"></a>Video, formazione e documenti
@@ -257,7 +361,7 @@ Sono stati ricevuti numerosi commenti e suggerimenti da parte di partner e ammin
 ![Acquisizione schermo: parte superiore della Home page che mostra il nome del profilo dell'organizzazione con l'icona Switcher.](../media/MAC-Organization-switcher.png)
 
 2. Nello switcher dell'organizzazione, selezionare l'org che si desidera gestire.
-![Acquisizione schermo: parte superiore della Home page che mostra il nome del profilo dell'organizzazione con l'icona Switcher.](../media/MAC-OrgSwitcherSelected.png)
+![Acquisizione schermata: le organizzazioni tenant Switcher con tenant Consolidated Messenger sono state evidenziate](../media/MAC-OrgSwitcherSelected.png)
 
 Questo è letteralmente!!!
 
@@ -437,7 +541,7 @@ Si è verificato un aggiornamento a un'altra delle procedure guidate per l'insta
 Sono stati apportati alcuni aggiornamenti per la fatturazione e gli abbonamenti di questo mese:
 
 - Abbonamenti basati su dispositivo: è possibile assegnare o annullare **l'assegnazione delle licenze di microsoft 365 Apps for Education (Device)** ai dispositivi nell'interfaccia di amministrazione di Microsoft 365. **Microsoft 365 Apps for Education (Device)** è una licenza per i componenti aggiuntivi che consente di assegnare una licenza a un dispositivo. Andare a **fatturazione**  >  dei**prodotti** per trovare e acquistare la licenza.
-- Gestione delle licenze basata sull'utente: è stato aggiornato il modo in cui si assegnano le licenze **agli utenti**  >  **attivi** per il nuovo stile. Per ulteriori informazioni, vedere:
+- Gestione delle licenze basata sull'utente: è stato aggiornato il modo in cui si assegnano le licenze **agli utenti**  >  **attivi** per il nuovo stile. Per altre informazioni, vedere:
   - [Assegnare licenze agli utenti](manage/assign-licenses-to-users.md)
   - [Annullare l'assegnazione delle licenze agli utenti](manage/remove-licenses-from-users.md)
 

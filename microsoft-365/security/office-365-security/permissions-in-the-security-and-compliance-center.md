@@ -18,14 +18,17 @@ search.appverid:
 - MET150
 description: Gli amministratori possono ottenere informazioni sulle autorizzazioni disponibili nel centro sicurezza & conformità in Microsoft 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: c1738438601712199b9a8e7365338d03e17621f0
-ms.sourcegitcommit: cd11588b47904c7d2ae899a9f5280f93d3850171
+ms.openlocfilehash: 6dab91169b260ea3dae47034ec5c15ebeb2462a4
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "48171315"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48202688"
 ---
 # <a name="permissions-in-the-security--compliance-center"></a>Autorizzazioni nel Centro sicurezza e conformità
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 Il Centro sicurezza & conformità consente di concedere autorizzazioni a utenti che eseguono attività di conformità come la gestione dei dispositivi, la prevenzione della perdita di dati, eDiscovery, la conservazione e così via. Tali utenti possono eseguire solo le attività in cui si concede esplicitamente l'accesso. Per accedere al centro sicurezza & conformità, gli utenti devono essere un amministratore globale o un membro di uno o più gruppi di ruoli Centro sicurezza & conformità.
 

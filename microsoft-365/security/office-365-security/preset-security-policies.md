@@ -14,14 +14,17 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Gli amministratori possono ottenere informazioni su come applicare le impostazioni dei criteri standard e rigorosi nelle caratteristiche di protezione di Exchange Online Protection (EOP) e Office 365 Advanced Threat Protection (ATP)
-ms.openlocfilehash: a2f0472d8dd44c90fd5db14e71d2db0d5d323b50
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: 35be2b1ebfcf7ef8b7aad5cc2d4b3dd7032806b2
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46825258"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48202604"
 ---
 # <a name="preset-security-policies-in-eop-and-office-365-atp"></a>Criteri di sicurezza preimpostati in EOP e Office 365 ATP
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 I criteri di sicurezza preimpostati offrono una posizione centralizzata per l'applicazione di tutti i criteri di posta indesiderata, malware e phishing consigliati agli utenti contemporaneamente. Le impostazioni dei criteri non sono configurabili. Invece, sono impostati da noi e sono basati sulle nostre osservazioni ed esperienze nei centri dati per un equilibrio tra mantenere i contenuti nocivi lontani dagli utenti senza interrompere il lavoro.
 
@@ -95,7 +98,7 @@ In altre parole, le impostazioni dei criteri di **protezione rigorosi** sovrascr
 
 ## <a name="assign-preset-security-policies-to-users"></a>Assegnare criteri di sicurezza preimpostati agli utenti
 
-### <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare?
+### <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare
 
 - Aprire il Centro sicurezza e conformità in <https://protection.office.com/>. Per passare direttamente alla pagina **criteri di sicurezza preimpostati** , utilizzare <https://protection.office.com/presetSecurityPolicies> .
 

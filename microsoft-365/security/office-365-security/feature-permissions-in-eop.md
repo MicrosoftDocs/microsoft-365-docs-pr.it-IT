@@ -12,14 +12,17 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 34674847-a6b7-4a7e-9eaa-b64f22bc150d
 description: Informazioni sulle autorizzazioni necessarie per le attività in standalone Exchange Online Protection
-ms.openlocfilehash: f9c0f0549ba5a0a65fa3bbe3af1afbfddc6e735c
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: ae43dc2223b17d3b73f9b76fa6bde8fb9cb95e77
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46826626"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48202868"
 ---
 # <a name="permissions-in-standalone-eop"></a>Autorizzazioni in Exchange Online Protection autonomo
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 Standalone Exchange Online Protection (EOP) senza cassette postali di Exchange Online utilizza il modello delle autorizzazioni del controllo di accesso basato sui ruoli (RBAC, Role Based Access Control) per concedere facilmente le autorizzazioni agli amministratori. È possibile utilizzare le funzionalità delle autorizzazioni in EOP autonomo per ottenere rapidamente la nuova organizzazione.
 

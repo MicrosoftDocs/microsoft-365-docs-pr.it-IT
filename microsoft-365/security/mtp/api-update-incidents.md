@@ -19,14 +19,17 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: e790f4f415575323cfdd5fc15db41baa8b59c7f6
-ms.sourcegitcommit: 9a275a13af3e063e80ce1bd3cd8142a095db92d2
+ms.openlocfilehash: 8ad47453c7163bfac99c17f42986b818cdca603f
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "47650352"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48203632"
 ---
 # <a name="update-incidents-api"></a>Aggiornare l'API degli incidenti
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 
 **Si applica a:**
 - Microsoft Threat Protection
@@ -113,5 +116,5 @@ Di seguito è riportato un esempio della richiesta.
 
 
 ## <a name="related-topic"></a>Argomento correlato
-- [API Incident](api-incident.md)
-- [Incidenti di elenco](api-list-incidents.md)
+- [Incidenti delle API](api-incident.md)
+- [Elencare incidenti](api-list-incidents.md)

@@ -17,14 +17,17 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Informazioni su Visualizzazione campagne in Office 365 Advanced Threat Protection.
-ms.openlocfilehash: 60ec8ea1d2c164905e7b57f4b518ea3f80e7986c
-ms.sourcegitcommit: dcbcd5ef278949c777059b0aa6db072e821f72dd
+ms.openlocfilehash: 881dcde1157877eb015d9700bcbcd08fd3336192
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "48173309"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48203480"
 ---
 # <a name="campaign-views-in-office-365-atp"></a>Visualizzazione campagne in Office 365 ATP
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 La visualizzazione della campagna è una funzionalità di Advanced Threat Protection (ATP) piano 2 (ad esempio Microsoft 365 E5 o organizzazioni con un componente aggiuntivo di piano 2 ATP). Le visualizzazioni della campagna nel centro sicurezza & conformità identifica e categorizza gli attacchi di phishing nel servizio. Visualizzazione campagne consente di:
 

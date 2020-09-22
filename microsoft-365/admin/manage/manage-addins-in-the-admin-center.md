@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
 description: Informazioni su come utilizzare i componenti aggiuntivi centralizzati per distribuire i componenti aggiuntivi agli utenti e ai gruppi nell'organizzazione.
-ms.openlocfilehash: c7f8b7bf71dbdaaf1c850c801a5145d3ab47a65c
-ms.sourcegitcommit: cd11588b47904c7d2ae899a9f5280f93d3850171
+ms.openlocfilehash: 6339858871834637c0b8fdd1b16c17b534026de9
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "48171293"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48207887"
 ---
 # <a name="manage-add-ins-in-the-admin-center"></a>Gestire i componenti aggiuntivi nell'interfaccia di amministrazione
 
@@ -60,6 +60,9 @@ Se non è più in uso, è consigliabile eliminare un componente aggiuntivo. La d
 
 1. Nell'interfaccia di amministrazione passare alla pagina **Impostazioni**  >  **& componenti** aggiuntivi.
 
+     > [!NOTE]
+    > L'interfaccia di amministrazione si sta aggiornando all'esperienza di distribuzione con le app integrate. Se non vengono visualizzati i passaggi descritti in questo articolo, accedere alla sezione distribuzione centralizzata accedendo alle **impostazioni delle**  >  **app integrate**. Nella parte superiore della pagina **Apps integrata** scegliere **componenti**aggiuntivi.
+
 2. Selezionare il componente aggiuntivo distribuito.
 
 3. Fare clic su **Elimina componente aggiuntivo**. Rimuovere il pulsante del componente aggiuntivo nell'angolo in basso a destra.
@@ -71,6 +74,9 @@ Se non è più in uso, è consigliabile eliminare un componente aggiuntivo. La d
 Dopo la distribuzione, gli amministratori possono anche gestire l'accesso degli utenti ai componenti aggiuntivi.
 
 1. Nell'interfaccia di amministrazione passare alla pagina **Impostazioni**  >  **& componenti** aggiuntivi.
+
+     > [!NOTE]
+    > L'interfaccia di amministrazione si sta aggiornando all'esperienza di distribuzione con le app integrate. Se non vengono visualizzati i passaggi descritti in questo articolo, accedere alla sezione distribuzione centralizzata accedendo alle **impostazioni delle**  >  **app integrate**. Nella parte superiore della pagina **Apps integrata** scegliere **componenti**aggiuntivi.
 
 2. Selezionare il componente aggiuntivo distribuito.
 
@@ -88,6 +94,9 @@ Come organizzazione, è possibile che si desideri impedire il download di nuovi 
 **Per disattivare l'acquisizione del componente aggiuntivo**
   
 1. Nell'interfaccia di amministrazione passare a **Impostazioni** \> [Servizi &amp; componenti aggiuntivi](https://go.microsoft.com/fwlink/p/?linkid=2053743).
+
+     > [!NOTE]
+    > L'interfaccia di amministrazione si sta aggiornando all'esperienza di distribuzione con le app integrate. Se non vengono visualizzati i passaggi descritti in questo articolo, accedere alla sezione distribuzione centralizzata accedendo alle **impostazioni delle**  >  **app integrate**. Nella parte superiore della pagina **Apps integrata** scegliere **componenti**aggiuntivi.
     
 3. Selezionare **le app e i servizi posseduti dall'utente**.
     

@@ -18,14 +18,17 @@ ms.collection:
 ms.custom: TopSMBIssues
 localization_priority: Priority
 description: Informazioni per amministratori sul modo in cui EOP usa l'autenticazione della posta elettronica (SPF, DKIM e DMARC) per prevenire lo spoofing, il phishing e la posta indesiderata.
-ms.openlocfilehash: 1e4ad82dd1c57e089b36e39afde346c47043c546
-ms.sourcegitcommit: eb905c5b4d7e71fc930a207357295b0160c4f065
+ms.openlocfilehash: d490caf600fef9d9caab79a1a97ec29637e10d66
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "48137048"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48202976"
 ---
 # <a name="email-authentication-in-eop"></a>Autenticazione e-mail in EOP
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 Con la denominazione di autenticazione e-mail, nota anche come autenticazione della posta elettronica o convalida della posta elettronica, si indica un gruppo di standard che prova a bloccare lo spoofing, ossia i messaggi di posta elettronica provenienti da mittenti contraffatti. In tutte le organizzazioni Microsoft 365, EOP usa questi standard per verificare la posta elettronica in ingresso:
 

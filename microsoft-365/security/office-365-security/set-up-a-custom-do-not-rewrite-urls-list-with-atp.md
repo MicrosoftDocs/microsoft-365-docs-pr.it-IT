@@ -19,14 +19,17 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Informazioni su come configurare gli URL bloccati personalizzati per gli utenti e l'elenco di URL non riscritti per un gruppo di utenti nei criteri dei collegamenti sicuri ATP di Office 365.
-ms.openlocfilehash: 9ec9c92e038aee33c716405916df009e3f4c60c5
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: ff2ce18897d7bd1d3890335a237e32bffd1a77e6
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46825234"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48202352"
 ---
 # <a name="set-up-a-custom-do-not-rewrite-urls-list-using-atp-safe-links"></a>Configurare un elenco di URL non di riscrittura personalizzato utilizzando collegamenti sicuri di ATP
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 > [!IMPORTANT]
 > Questo articolo è rivolto ai clienti aziendali di [Office 365 Advanced Threat Protection](office-365-atp.md). Se si è un utente di casa che cerca informazioni sui collegamenti sicuri in Outlook, vedere [Advanced Outlook.com Security](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2).

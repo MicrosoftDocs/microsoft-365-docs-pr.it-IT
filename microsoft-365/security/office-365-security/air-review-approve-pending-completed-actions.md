@@ -15,14 +15,17 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: Informazioni sulle azioni di correzione nelle funzionalità di analisi e risposta automatizzate in Office 365 Advanced Threat Protection Plan 2.
-ms.openlocfilehash: c44b0a535e6838258d3efa63010d7ccc63009af9
-ms.sourcegitcommit: 1e9ce51efa583c33625299d17e37f58048a4169c
+ms.openlocfilehash: 2f1d6a1dccfaece6a52ec33fd86ea244fbb6c4fe
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "43804831"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48202448"
 ---
 # <a name="view-pending-or-completed-remediation-actions-following-an-automated-investigation-in-office-365"></a>Visualizzare le azioni di correzione in sospeso o completate dopo un'analisi automatizzata in Office 365
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 
 ![Pagina azione indagini AEREe](../../media/air-investigationactionspage.png)
@@ -36,7 +39,7 @@ Durante la visualizzazione dei [Dettagli di un'indagine](air-view-investigation-
 
 1. Andare su [https://protection.office.com](https://protection.office.com) ed eseguire l'accesso. Questo porta al centro sicurezza & Compliance.
 
-2. Andare a > **indagini**sulla **gestione delle minacce**.
+2. Andare a indagini sulla **gestione delle minacce**  >  **Investigations**.
 
 3. Nell'elenco delle indagini selezionare un elemento nella colonna **ID** . 
 

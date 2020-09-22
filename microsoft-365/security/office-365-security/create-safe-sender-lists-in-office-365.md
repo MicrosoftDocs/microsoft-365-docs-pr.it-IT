@@ -16,14 +16,17 @@ ms.assetid: 9721b46d-cbea-4121-be51-542395e6fd21
 ms.custom:
 - seo-marvel-apr2020
 description: Gli amministratori possono ottenere informazioni sulle opzioni disponibili e preferite per consentire i messaggi in ingresso in Exchange Online Protection (EOP).
-ms.openlocfilehash: f182027b153ee73e33131b39066e512c9303fcbd
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: b1eda98e081338a981be1d1f5991578b49c574fd
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46827112"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48203168"
 ---
 # <a name="create-safe-sender-lists-in-eop"></a>Creare elenchi di mittenti attendibili in EOP
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 Se si è un cliente Microsoft 365 con cassette postali in Exchange Online o un cliente di Exchange Online Protection (EOP) autonomo senza cassette postali di Exchange Online, EOP offre diversi modi per garantire che gli utenti ricevano messaggi di posta elettronica da mittenti attendibili. Queste opzioni includono le regole del flusso di posta di Exchange (note anche come regole di trasporto), i mittenti attendibili di Outlook, l'elenco indirizzi IP consentiti (filtro connessioni) e gli elenchi di mittenti consentiti o gli elenchi di domini consentiti nei criteri di protezione dalla posta In modo collettivo, è possibile considerare queste opzioni come _elenchi di mittenti attendibili_.
 

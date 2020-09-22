@@ -18,14 +18,17 @@ ms.collection:
 - M365-security-compliance
 description: Quando si configurano i criteri per gli allegati sicuri di ATP, è possibile scegliere recapito dinamico per evitare ritardi nei messaggi e consentire agli utenti di visualizzare in anteprima gli allegati analizzati.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 7e2da24ebac5863ab7852fdf8f9c7af8d507698b
-ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
+ms.openlocfilehash: c0b19317babbd433ba0914ca2385cf6c9b40d89b
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45430352"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48203036"
 ---
 # <a name="dynamic-delivery-and-previewing-with-atp-safe-attachments"></a>Recapito dinamico e visualizzazione in anteprima con gli allegati sicuri di ATP
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 ## <a name="basic-features-of-dynamic-delivery"></a>Funzionalità di base per il recapito dinamico
 

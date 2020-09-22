@@ -19,14 +19,17 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Gli amministratori possono ottenere informazioni sui controlli di posta indesiderata in uscita in Exchange Online Protection (EOP) e su cosa fare se è necessario inviare invii di massa.
-ms.openlocfilehash: 99502e7fb55419dedb4d0f7d4a7e6c4591eff859
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 1097b768b955f2fa99c552ceda7564bef33a1aa7
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208924"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48202388"
 ---
 # <a name="outbound-spam-protection-in-eop"></a>Protezione dalla posta indesiderata in uscita in EOP
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 In Microsoft 365 organizzazioni con cassette postali in Exchange Online o standalone Exchange Online Protection (EOP) organizzazioni senza cassette postali di Exchange Online, si prende sul serio la gestione della posta indesiderata in uscita. Un cliente che invia intenzionalmente o involontariamente posta indesiderata dalla propria organizzazione può peggiorare la reputazione di tutto il servizio e può influire sul recapito della posta elettronica per gli altri clienti.
 
@@ -40,7 +43,7 @@ In questo argomento vengono descritti i controlli e le notifiche che sono stati 
 
 ## <a name="how-eop-controls-outbound-spam"></a>Come EOP controlla la posta indesiderata in uscita
 
-- **Segregazione del traffico di posta elettronica in uscita**: tutti i messaggi in uscita inviati tramite il servizio vengono analizzati per la posta indesiderata. Se il messaggio è determinato come posta indesiderata, viene recapitato da un pool di indirizzi IP secondario e meno attendibile denominato _pool di recapito ad alto rischio_. Per ulteriori informazioni, vedere [pool di recapito ad alto rischio per i messaggi in uscita](high-risk-delivery-pool-for-outbound-messages.md).
+- **Segregazione del traffico di posta elettronica in uscita**: tutti i messaggi in uscita inviati tramite il servizio vengono analizzati per la posta indesiderata. Se il messaggio è determinato come posta indesiderata, viene recapitato da un pool di indirizzi IP secondario e meno attendibile denominato _pool di recapito ad alto rischio_. Per altre informazioni, vedere [Pool di recapito ad alto rischio per i messaggi in uscita](high-risk-delivery-pool-for-outbound-messages.md).
 
 - **Monitoraggio della reputazione dell'indirizzo IP di origine**: Microsoft 365 esegue una query su diversi elenchi di indirizzi IP bloccati di terze parti. Viene generato un avviso se uno degli indirizzi IP utilizzati per la posta elettronica in uscita viene visualizzato negli elenchi. In questo modo è possibile reagire rapidamente quando la posta indesiderata ha provocato un peggioramento della reputazione. Quando viene generato un avviso, è presente una documentazione interna che descrive come ottenere gli indirizzi IP rimossi dagli elenchi bloccati.
 
@@ -48,7 +51,7 @@ In questo argomento vengono descritti i controlli e le notifiche che sono stati 
 
 - **Disabilitare gli account che inviano troppa posta elettronica troppo rapidamente** <sup>\*</sup> : oltre ai limiti che cercano i messaggi contrassegnati come posta indesiderata, esistono anche limiti che bloccano gli account quando raggiungono un limite globale dei messaggi in uscita, indipendentemente dal verdetto del filtro della posta indesiderata nei messaggi in uscita. Un account compromesso potrebbe inviare lo spam zero-day (in precedenza non riconosciuto) mancante dal filtro di posta indesiderata. Poiché può essere difficile identificare una campagna di mailing di massa legittima rispetto a una campagna di posta indesiderata, questi limiti contribuiscono a minimizzare eventuali danni.
 
-<sup>\*</sup>I limiti esatti non vengono pubblicizzati in modo che gli spammer non possano giocare il sistema e quindi è possibile aumentare o diminuire i limiti in base alle esigenze. I limiti sono abbastanza alti da impedire che un utente medio dell'azienda venga mai superato e che sia sufficientemente basso da contenere i danni causati da uno spammer.
+<sup>\*</sup> I limiti esatti non vengono pubblicizzati in modo che gli spammer non possano giocare il sistema e quindi è possibile aumentare o diminuire i limiti in base alle esigenze. I limiti sono abbastanza alti da impedire che un utente medio dell'azienda venga mai superato e che sia sufficientemente basso da contenere i danni causati da uno spammer.
 
 ## <a name="recommendations-for-customers-who-want-to-send-mass-mailings-through-eop"></a>Consigli per i clienti che desiderano inviare invii di massa tramite EOP
 

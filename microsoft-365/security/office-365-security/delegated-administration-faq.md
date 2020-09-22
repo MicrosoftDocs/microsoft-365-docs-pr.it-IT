@@ -14,14 +14,17 @@ ms.assetid: d6a87ce8-2c22-433a-b430-5eab14f6afdc
 ms.custom:
 - seo-marvel-apr2020
 description: Gli amministratori possono visualizzare le domande frequenti e le risposte alle attività amministrative delegate in Microsoft 365 per i partner e rivenditori Microsoft.
-ms.openlocfilehash: 3efadc8793778bfabe10922e8e29044747d60ad0
-ms.sourcegitcommit: 787b198765565d54ee73972f664bdbd5023d666b
+ms.openlocfilehash: 6729f276e6afea83568ca59d3bf48c08fcd837d2
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "46866696"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48203144"
 ---
 # <a name="delegated-administration-faq"></a>Domande frequenti sull'amministrazione delegata
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 In questo articolo sono riportate le domande frequenti e le risposte relative alle attività amministrative delegate in Microsoft 365 per i partner e i rivenditori Microsoft. L'amministrazione delegata include la possibilità di gestire le impostazioni di Exchange Online Protection (EOP) per altri tenant (aziende).
 

@@ -19,20 +19,23 @@ search.appverid:
 ms.assetid: 2cfce2c8-20c5-47f9-afc4-24b059c1bd76
 description: Gli utenti devono disporre delle autorizzazioni nel centro conformità di sicurezza & Microsoft 365 prima di poter gestire qualsiasi funzionalità di sicurezza o conformità.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b51007221257b9adac46c31295e13b20b12342ab
-ms.sourcegitcommit: 22dab0f7604cc057a062698005ff901d40771692
+ms.openlocfilehash: 5d586684d44545f7aea94c30f5474b1fe5fa4651
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "46868922"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48202808"
 ---
 # <a name="give-users-access-to-the-security--compliance-center"></a>Concedere agli utenti l'accesso al Centro sicurezza e conformità
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 Gli utenti devono disporre delle autorizzazioni nel centro sicurezza & compliance prima di poter gestire qualsiasi funzionalità di sicurezza o conformità. In qualità di amministratore globale o membro del gruppo di ruoli OrganizationManagement nel centro sicurezza & conformità, è possibile concedere queste autorizzazioni agli utenti. Gli utenti potranno solo gestire le funzionalità di sicurezza o conformità per le quali è stato concesso loro l'accesso.
 
 Per ulteriori informazioni sulle diverse autorizzazioni che è possibile assegnare agli utenti nel centro sicurezza & conformità, vedere [autorizzazioni nel centro sicurezza & conformità](permissions-in-the-security-and-compliance-center.md).
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare?
+## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare
 
 - Per completare la procedura descritta in questo articolo, è necessario essere un amministratore globale o un membro del gruppo di ruoli OrganizationManagement nel centro sicurezza & Compliance.
 
@@ -52,7 +55,7 @@ Per ulteriori informazioni sulle diverse autorizzazioni che è possibile assegna
 
 4. Dopo aver selezionato tutti gli utenti che si desidera aggiungere al gruppo di ruoli, fare clic su **Aggiungi \> ** e quindi su **OK**.
 
-5. Al termine, fai clic su **Salva**.
+5. Al termine, scegliere **Salva**.
 
 ## <a name="use-security--compliance-center-powershell-to-give-another-user-access-to-the-security--compliance-center"></a>Utilizzare la sicurezza & Compliance Center PowerShell per concedere a un altro utente l'accesso al centro sicurezza & conformità
 

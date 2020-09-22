@@ -18,14 +18,17 @@ ms.collection:
 - M365-security-compliance
 description: Gli amministratori possono acquisire informazioni sulla protezione dalle minacce in Microsoft 365 e configurare come utilizzarla per l'organizzazione.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a78bbea2d11360bbfa48fa3da01391471b2e0a4d
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: 1ad74e9bdcd7b937873108d2ba049c16db8c235b
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47547363"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48202580"
 ---
 # <a name="protect-against-threats"></a>Protezione dalle minacce
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 Di seguito viene illustrata una guida introduttiva che interrompe la configurazione di Advanced Threat Protection in blocchi. Se si è nuovi per le funzionalità di protezione dalle minacce in Office 365, non si è certi di dove iniziare, o se si ha maggiori informazioni, utilizzare questa guida come *elenco di controllo*e punto di partenza.
 

@@ -17,14 +17,17 @@ search.appverid:
 - MET150
 description: Informazioni su come riconoscere e correggere il consenso illecito Grants Attack in Microsoft Office 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 125ebdf8b3d17e3a14abec8154129b0144928905
-ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
+ms.openlocfilehash: b534d53166c09cf77993948cf1c448e21c8cd330
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46652958"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48203096"
 ---
 # <a name="detect-and-remediate-illicit-consent-grants"></a>Rilevare e correggere le concessioni di consenso illecite
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 **Riepilogo**  Informazioni su come riconoscere e correggere il consenso illecito Grants Attack in Office 365.
 

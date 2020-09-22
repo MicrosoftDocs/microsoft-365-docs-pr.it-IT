@@ -21,14 +21,17 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Gli amministratori possono sapere in che modo lo ZAP (zero-hour auto Purge) può spostare con effetto retroattivo i messaggi recapitati in una cassetta postale di Exchange Online nella cartella posta indesiderata o in quarantena che sono stati rilevati con effetto retroattivo come spam o phishing.
-ms.openlocfilehash: 9096486ed98657fede7927089592c92fffdad70e
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: 66df614700dc5f9b9938200d384cc293a51e2f3c
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46826698"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48202640"
 ---
 # <a name="zero-hour-auto-purge-zap-in-exchange-online"></a>Zero-hour auto Purge (ZAP) in Exchange Online
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 ## <a name="basic-features-of-zap"></a>Funzionalità di base di ZAP
 

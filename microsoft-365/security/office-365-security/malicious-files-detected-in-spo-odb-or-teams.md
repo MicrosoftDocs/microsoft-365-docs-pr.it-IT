@@ -17,24 +17,27 @@ ms.collection:
 - M365-security-compliance
 description: Per informazioni su come eseguire le operazioni su tali file, vedere l'articolo relativo alla visualizzazione dei file dannosi rilevati in SharePoint, OneDrive o teams.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 47b1fea4b3b5713a8f69e8f4b2c0e2ad0f6dd6b8
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: e6cd0363b546fad063290ae20e8c6c82fd6d0dea
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44036645"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48201996"
 ---
 # <a name="view-information-about-malicious-files-detected-in-sharepoint-onedrive-or-microsoft-teams"></a>Visualizzare informazioni sui file dannosi rilevati in SharePoint, OneDrive o Microsoft Teams
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
+
 [Office 365 ATP per SharePoint, OneDrive e Microsoft teams](atp-for-spo-odb-and-teams.md) protegge l'organizzazione da file dannosi nelle raccolte documenti e nei siti del team. Quando viene rilevato un file dannoso, il file viene bloccato in modo che nessuno possa aprirlo, copiarlo, spostarlo o condividerlo fino a quando non vengono intraprese altre azioni da parte del team di sicurezza dell'organizzazione. Leggere questo articolo per scoprire come visualizzare le informazioni sui file rilevati e le azioni da intraprendere. 
 
-Per eseguire le attività descritte in questo articolo, è necessario disporre delle [autorizzazioni necessarie per il &amp; Centro sicurezza e conformità](permissions-in-the-security-and-compliance-center.md). 
+Per eseguire le attività descritte in questo articolo, è necessario disporre delle [autorizzazioni necessarie per il Centro sicurezza e &amp; conformità](permissions-in-the-security-and-compliance-center.md). 
   
 ## <a name="view-reports-with-information-about-detected-files"></a>Visualizzare i report con informazioni sui file rilevati
 
 Per visualizzare lo stato e informazioni dettagliate sui file che sono stati rilevati da Office 365 ATP, è possibile utilizzare il rapporto sullo stato di protezione dalle minacce.
   
-1. Nel [Centro sicurezza &amp; e conformità](https://protection.office.com), scegliere **segnala** \> **Dashboard** \> **lo stato di protezione delle minacce**del dashboard.
+1. Nel [ &amp; Centro sicurezza e conformità](https://protection.office.com), scegliere **segnala** \> **Dashboard** \> **lo stato di protezione delle minacce**del dashboard.
     
 2. Nell'angolo in alto a destra del report, scegliere **Visualizza dettagli tabella**.
     
@@ -46,7 +49,7 @@ Per visualizzare lo stato e informazioni dettagliate sui file che sono stati ril
   
 ## <a name="view-and-take-action-on-files-in-quarantine"></a>Visualizzare ed eseguire azioni sui file in quarantena
 
-1. Nel centro sicurezza &amp; e conformità, scegliere **quarantena** **Revisione** \> di **Threat Management** \> . È anche possibile passare direttamente a [https://protection.office.com/quarantine](https://protection.office.com/quarantine).
+1. Nel centro sicurezza &amp; e conformità, scegliere **Threat management** \> **Review** \> **quarantena**revisione di Threat Management. È anche possibile passare direttamente a [https://protection.office.com/quarantine](https://protection.office.com/quarantine) .
     
 2. Nell'angolo in alto a sinistra, cambiare il menu a discesa dai **messaggi di posta elettronica** ai **file**. Se l'elenco dei risultati include troppi elementi, utilizzare la funzionalità di **filtro** per restringere la selezione.
     

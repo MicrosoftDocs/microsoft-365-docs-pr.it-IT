@@ -18,14 +18,17 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 775a4e9e-3135-4a48-b32f-bbdd9f2bd0aa
 description: Progettare siti del team di SharePoint Online isolati, tra cui determinare i livelli di autorizzazione, assegnare autorizzazioni per gli utenti con gruppi di accesso e gruppi di Azure AD nidificati.
-ms.openlocfilehash: d26f55d9e037d86eac28e5cf21c56406eae5cc19
-ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
+ms.openlocfilehash: 035952c1921443d86602eb94e3965acee86ae3e8
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46653006"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48203120"
 ---
 # <a name="design-an-isolated-sharepoint-online-team-site"></a>Progettare un sito del team di SharePoint Online isolato
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
  **Sintesi:** viene fornita la procedura dettagliata per la progettazione dei siti del team di SharePoint Online isolati.
 
@@ -35,11 +38,11 @@ In questo articolo viene fornita una descrizione dettagliata delle scelte fondam
 
 Per impostazione predefinita, ogni sito del team di SharePoint Online viene creato con i seguenti gruppi di SharePoint:
 
-- \<site name>Membri
+- \<site name> Membri
 
-- \<site name>Visitatori
+- \<site name> Visitatori
 
-- \<site name>Proprietari
+- \<site name> Proprietari
 
 Questi gruppi sono separati dai gruppi di Microsoft 365 e Azure Active Directory (AD) e rappresentano la base per l'assegnazione delle autorizzazioni per le risorse del sito.
 
@@ -49,9 +52,9 @@ Il set di autorizzazioni specifiche che determina le operazioni disponibili per 
 
 |Gruppo di SharePoint|Livello di autorizzazione|
 |---|---|
-|\<site name>Membri|Modifica|
-|\<site name>Visitatori|Lettura|
-|\<site name>Proprietari|Controllo completo|
+|\<site name> Membri|Modifica|
+|\<site name> Visitatori|Lettura|
+|\<site name> Proprietari|Controllo completo|
 |
 
  **Procedura consigliata:** È possibile creare ulteriori gruppi di SharePoint e livelli di autorizzazione. Tuttavia, è consigliabile usare questi gruppi e livelli di autorizzazione di SharePoint predefiniti per il sito di SharePoint Online isolato.
@@ -92,9 +95,9 @@ Per i siti del team di SharePoint Online isolati, la struttura del gruppo consig
 
 |Gruppo di SharePoint|Gruppo di accesso basato su Azure AD|Livello di autorizzazione|
 |---|---|---|
-|\<site name>Membri|\<site name>Membri|Modifica|
-|\<site name>Visitatori|\<site name>Spettatori|Lettura|
-|\<site name>Proprietari|\<site name>Amministratori|Controllo completo|
+|\<site name> Membri|\<site name> Membri|Modifica|
+|\<site name> Visitatori|\<site name> Spettatori|Lettura|
+|\<site name> Proprietari|\<site name> Amministratori|Controllo completo|
 |
 
  **Procedura consigliata:** Sebbene sia possibile utilizzare i gruppi di Microsoft 365 o Azure AD come membri dei gruppi di SharePoint, è consigliabile utilizzare i gruppi di Azure AD. I gruppi di Azure AD, gestiti tramite servizi di dominio Active Directory o Microsoft 365, offrono maggiore flessibilità nell'utilizzo dei gruppi nidificati per assegnare le autorizzazioni.
