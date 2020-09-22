@@ -16,14 +16,17 @@ ms.assetid: ac11edd9-2da3-462d-8ea3-bbf9dbc6f948
 ms.collection:
 - M365-security-compliance
 description: Informazioni su come vengono utilizzati i pool di recapito per proteggere la reputazione dei server di posta elettronica nei data center di Microsoft 365.
-ms.openlocfilehash: 83ea21a9230240f1339513efc75587f3d84733cb
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: b3016be7c1887536fe3e742b5ab4ec598b6a5f89
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46827738"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48201490"
 ---
 # <a name="outbound-delivery-pools"></a>Pool di recapito in uscita
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 I server di posta elettronica nei datacenter Microsoft 365 potrebbero essere temporaneamente colpevoli di inviare messaggi di posta indesiderata. Ad esempio, un attacco di posta indesiderata o malware in un'organizzazione di posta elettronica locale che invia la posta in uscita tramite Microsoft 365 o ha compromesso gli account di Microsoft 365. Gli utenti malintenzionati cercano anche di evitare il rilevamento tramite l'inoltro dei messaggi tramite l'inoltro di Microsoft 365.
 

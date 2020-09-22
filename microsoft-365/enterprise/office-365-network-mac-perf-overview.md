@@ -3,7 +3,7 @@ title: Connettività di rete nell'interfaccia di amministrazione di Microsoft 36
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 09/17/2020
+ms.date: 09/21/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -14,12 +14,12 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Panoramica della connettività di rete nell'interfaccia di amministrazione di Microsoft 365 (anteprima)
-ms.openlocfilehash: 644efe53e862f6bbe98be7dca889bc3637084521
-ms.sourcegitcommit: cd11588b47904c7d2ae899a9f5280f93d3850171
+ms.openlocfilehash: a51cfba962ff884afa634473c0523e49a92a56f5
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "48171363"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48200798"
 ---
 # <a name="network-connectivity-in-the-microsoft-365-admin-center-preview"></a>Connettività di rete nell'interfaccia di amministrazione di Microsoft 365 (anteprima)
 
@@ -63,7 +63,7 @@ Gli esempi di misura e le posizioni degli uffici devono iniziare a essere visual
 
 ### <a name="3-manually-gather-test-reports-with-the-microsoft-365-network-connectivity-test-tool"></a>3. raccogliere manualmente i report di test con lo strumento di test della connettività di rete di Microsoft 365
 
-Per questa opzione è necessario identificare una persona in ogni posizione. Chiedere loro di passare al [test di connettività di rete di Microsoft 365](https://connectivity.office.com) su un computer Windows con autorizzazioni amministrative. Nel sito Web devono accedere all'account di Office 365 per la stessa organizzazione per la quale si desidera visualizzare i risultati. Fare clic su Esegui test. Durante il test è disponibile un EXE di test di connettività scaricato. È necessario aprire ed eseguire anche questo. Dopo aver completato i test, il risultato del test viene caricato su Office 365.
+Per questa opzione è necessario identificare una persona in ogni posizione. Chiedere loro di passare al [test di connettività di rete di Microsoft 365](https://connectivity.office.com) su un computer Windows in cui dispongono di autorizzazioni amministrative. Nel sito Web devono accedere all'account di Office 365 per la stessa organizzazione per la quale si desidera visualizzare i risultati. Successivamente, fare clic su **Esegui test**. Durante il test è disponibile un EXE di test di connettività scaricato. È necessario aprire ed eseguire anche questo. Dopo aver completato i test, il risultato del test viene caricato su Office 365.
 
 I rapporti di test sono collegati a una posizione se sono stati aggiunti con informazioni sulla subnet LAN, altrimenti vengono visualizzati solo nella posizione della città.
 
@@ -174,7 +174,7 @@ Microsoft 365 Service front door è un punto di ingresso sulla rete globale di M
 
 ### <a name="what-is-an-optimal-microsoft-365-service-front-door"></a>Che cos'è un'ottima porta di servizio di Microsoft 365 Service?
 
-Un'ottima porta di servizio di Microsoft 365 Service è quella più vicina all'uscita di rete, in genere nella propria area urbana o metropolitana. Utilizzare il [test di connettività di microsoft 365](office-365-network-mac-perf-onboarding-tool.md) per determinare la posizione del portello anteriore del servizio Microsoft 365 in uso e la porta anteriore del servizio ottimale. Se lo strumento determina che la porta principale in uso è ottimale, è possibile connettersi in modo ottimale alla rete globale di Microsoft.
+Un'ottima porta di servizio di Microsoft 365 Service è quella più vicina all'uscita di rete, in genere nella propria area urbana o metropolitana. Utilizzare lo [strumento di testing di connettività di microsoft 365 (Preview)](office-365-network-mac-perf-onboarding-tool.md) per determinare la posizione del portello anteriore del servizio Microsoft 365 in uso e la porta anteriore del servizio ottimale. Se lo strumento determina che la porta principale in uso è ottimale, è possibile connettersi in modo ottimale alla rete globale di Microsoft.
 
 ### <a name="what-is-an-internet-egress-location"></a>Che cos'è un percorso di uscita Internet?
 
@@ -186,8 +186,6 @@ La posizione di uscita Internet è il percorso in cui il traffico di rete esce d
 
 [Valutazione della rete Microsoft 365 (Preview)](office-365-network-mac-perf-score.md)
 
-[Test di connettività Microsoft 365 nell'interfaccia di amministrazione di M365 (anteprima)](office-365-network-mac-perf-onboarding-tool.md)
+[Strumento di test della connettività di Microsoft 365 (anteprima)](office-365-network-mac-perf-onboarding-tool.md)
 
 [Microsoft 365 servizi di localizzazione della connettività di rete (anteprima)](office-365-network-mac-location-services.md)
-
-[Strumento di test della connettività di rete Microsoft 365 (anteprima)](office-365-network-mac-perf-onboarding-tool.md)

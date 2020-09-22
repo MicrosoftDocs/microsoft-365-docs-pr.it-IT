@@ -3,7 +3,7 @@ title: Microsoft 365 servizi di localizzazione della connettività di rete (ante
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 03/31/2020
+ms.date: 09/21/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -14,12 +14,12 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Microsoft 365 servizi di localizzazione della connettività di rete (anteprima)
-ms.openlocfilehash: e614e719069a74ea087b07ca624ae0450790c763
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: f2ab872f67eca70ab2791d3ad6fe1396b009cc18
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46691375"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48200782"
 ---
 # <a name="microsoft-365-network-connectivity-location-services-preview"></a>Microsoft 365 servizi di localizzazione della connettività di rete (anteprima)
 
@@ -38,3 +38,13 @@ Nell'interfaccia di amministrazione di Microsoft 365, i controlli Bing Map vengo
 Qualsiasi contenuto fornito tramite Bing Maps, inclusi i geocodici, può essere utilizzato solo all'interno del prodotto tramite il quale viene fornito il contenuto. L'utilizzo da parte del cliente della caratteristica dei servizi di interfaccia di amministrazione di Microsoft 365, Powered by Bing Maps, è regolato dalle _condizioni di utilizzo dell'utente finale di Bing Maps_ disponibili all'indirizzo <https://go.microsoft.com/?linkid=9710837> e dall' _informativa sulla privacy di Microsoft_ disponibile all'indirizzo <https://go.microsoft.com/fwlink/?LinkID=248686.>
 
 Questa funzionalità, fornita tramite Bing Maps, è supportata anche da **qui Technologies**. Il modo in cui Bing Maps utilizza i servizi di localizzazione forniti da qui Technologies è disciplinato dai _termini del servizio qui Technologies_ disponibili all'indirizzo <https://legal.here.com/en-gb/terms> .
+
+## <a name="related-topics"></a>Argomenti correlati
+
+[Connettività di rete nell'interfaccia di amministrazione di Microsoft 365 (anteprima)](office-365-network-mac-perf-overview.md)
+
+[Informazioni sulle prestazioni di rete di Microsoft 365 (anteprima)](office-365-network-mac-perf-insights.md)
+
+[Valutazione della rete Microsoft 365 (Preview)](office-365-network-mac-perf-score.md)
+
+[Test di connettività Microsoft 365 nell'interfaccia di amministrazione di M365 (anteprima)](office-365-network-mac-perf-onboarding-tool.md)

@@ -16,14 +16,17 @@ ms.assetid: 19fd3e0f-8dbf-4049-a810-2c8ee6cefd48
 ms.collection:
 - M365-security-compliance
 description: Per mantenere la fiducia degli utenti nell'utilizzo della posta elettronica, Microsoft ha messo a punto vari criteri e tecnologie che consentono di proteggere gli utenti.
-ms.openlocfilehash: 74389d3b975a0ffaebdc1619be40fd3ac74d72f4
-ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
+ms.openlocfilehash: e9389d52ee1d6c1c0bbab8630778749a6ed6005f
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46652658"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48199578"
 ---
 # <a name="services-for-non-customers-sending-mail-to-microsoft-365"></a>Servizi per i non clienti che inviano la posta a Microsoft 365
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 Abuso di posta elettronica, posta indesiderata e messaggi di posta elettronica fraudolenti (phishing) continuano a gravare sull'intero sistema di posta elettronica. Per garantire la fiducia degli utenti nell'utilizzo della posta elettronica, Microsoft ha messo a punto vari criteri e tecnologie per proteggere gli utenti. Tuttavia, Microsoft capisce che la posta elettronica legittima non dovrebbe essere influenzata negativamente. Pertanto, è stata configurata una serie di servizi per consentire ai mittenti di migliorare la possibilità di inviare messaggi di posta elettronica agli utenti di Microsoft 365 gestendo attivamente la propria reputazione di invio.
 

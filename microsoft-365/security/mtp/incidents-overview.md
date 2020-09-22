@@ -19,14 +19,17 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 805b83262bd9d91500dc7e8b6b82542dfbc7e9c5
-ms.sourcegitcommit: 9a275a13af3e063e80ce1bd3cd8142a095db92d2
+ms.openlocfilehash: f462e6018f03080b41e46f45629dc4bfe44b3ef9
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "47649938"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48200018"
 ---
 # <a name="incidents-overview-in-microsoft-threat-protection"></a>Panoramica degli eventi imprevisti in Microsoft Threat Protection
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 
 **Si applica a:**
 - Microsoft Threat Protection

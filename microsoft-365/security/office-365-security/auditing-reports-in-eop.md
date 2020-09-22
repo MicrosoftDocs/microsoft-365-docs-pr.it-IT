@@ -12,14 +12,17 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 003d7a74-3e16-4453-ae0c-9dbae51f66d1
 description: Gli amministratori possono ottenere informazioni sui rapporti di controllo dell'amministratore disponibili in Exchange Online Protection (EOP)
-ms.openlocfilehash: ab2c1af7197094b456d8e1b4151dd42791d992a1
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: 8e5175266cd964a2f2fb721a67f64e709661ce26
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46825786"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48200334"
 ---
 # <a name="auditing-reports-in-standalone-eop"></a>Report di controllo in Exchange Online Protection autonomo
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 Nelle organizzazioni autonome di Exchange Online Protection (EOP) prive di cassette postali di Exchange Online, i rapporti di controllo consentono di soddisfare i requisiti normativi, di conformità e di contenzioso per l'organizzazione. È possibile ottenere report di controllo in qualsiasi momento per determinare le modifiche apportate alla configurazione di Exchange Online Protection. Questi report consentono di risolvere problemi di configurazione o individuare la causa di problemi relativi alla sicurezza o alla conformità.
 

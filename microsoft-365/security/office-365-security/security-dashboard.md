@@ -18,14 +18,17 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Utilizzare il nuovo dashboard di sicurezza per esaminare lo stato di protezione dalle minacce di Office 365 e visualizzare e agire sugli avvisi di sicurezza.
-ms.openlocfilehash: 7edfcfefc379aa30b7028097b21522d63cd26268
-ms.sourcegitcommit: 50526f81ce3f57d58f0a7c0df4fe21685c5a0236
+ms.openlocfilehash: 1bef6d0496c39d5157bbc40893d2710e89d1c734
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45434268"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48200074"
 ---
 # <a name="security-dashboard"></a>Dashboard di sicurezza
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 ## <a name="basic-functions-and-how-to-open-security-dashboard"></a>Funzioni di base e apertura del dashboard di sicurezza
 
@@ -102,7 +105,7 @@ Ad esempio, si potrebbe vedere che i messaggi di posta elettronica di phishing v
 
 ## <a name="threat-investigation-and-response"></a>Analisi e risposta alle minacce
 
-Se l'abbonamento dell'organizzazione include [Office 365 Advanced Threat Protection Plan 2](office-365-ti.md), il dashboard di sicurezza ha una sezione che include l'analisi avanzata delle minacce e gli strumenti di risposta. Questi strumenti includono le [funzionalità di analisi e risposta automatizzate](automated-investigation-response-office.md). L'analisi e la risposta automatizzate possono essere utili in scenari quali l' [indirizzamento rapido degli account utente compromessi](address-compromised-users-quickly.md).
+Se l'abbonamento dell'organizzazione include  [Office 365 Advanced Threat Protection Plan 2](office-365-ti.md), il dashboard di sicurezza ha una sezione che include l'analisi avanzata delle minacce e gli strumenti di risposta. Questi strumenti includono le [funzionalità di analisi e risposta automatizzate](automated-investigation-response-office.md). L'analisi e la risposta automatizzate possono essere utili in scenari quali l' [indirizzamento rapido degli account utente compromessi](address-compromised-users-quickly.md).
 
 Per ulteriori informazioni, vedere [Introduzione all'analisi automatizzata e alla risposta (Air) in Office 365](office-365-air.md).
 

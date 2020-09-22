@@ -19,14 +19,17 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 310e3105c973223ea79373d770eb10f7753b917e
-ms.sourcegitcommit: 9a275a13af3e063e80ce1bd3cd8142a095db92d2
+ms.openlocfilehash: ac149ca7263b8ef8bb37a7dd18bf0787a3114b37
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "47650372"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48201304"
 ---
 # <a name="incident-resource-type"></a>Tipo di risorsa Incident
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 
 **Si applica a:**
 - Microsoft Threat Protection
@@ -38,8 +41,8 @@ ms.locfileid: "47650372"
 
 Metodo |Tipo restituito |Descrizione
 :---|:---|:---
-[Incidenti di elenco](api-list-incidents.md) | Elenco [eventi](api-incident.md) non consentiti | Ottenere un elenco di eventi non consentiti.
-[Update Incident](api-update-incidents.md) | [Operazioni non consentite](api-incident.md) | Update specific Incident.
+[Elencare incidenti](api-list-incidents.md) | Elenco [eventi](api-incident.md) non consentiti | Ottenere un elenco di eventi non consentiti.
+[Aggiornare incidente](api-update-incidents.md) | [Operazioni non consentite](api-incident.md) | Update specific Incident.
 
 
 ## <a name="properties"></a>Proprietà

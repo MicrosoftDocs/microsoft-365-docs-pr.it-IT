@@ -21,14 +21,17 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 description: Informazioni su Office 365 Advanced Threat Protection per i file in SharePoint Online, OneDrive for business e Microsoft teams.
-ms.openlocfilehash: e4a711d6554ffcb8e291d5b2154120d078995e94
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 9831b61fafc7cb4696fbad3d569f061612f85fe1
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44815410"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48199040"
 ---
 # <a name="atp-for-sharepoint-onedrive-and-microsoft-teams"></a>ATP per SharePoint, OneDrive e Microsoft Teams
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 ## <a name="overview-of-office-365-atp-for-sharepoint-onedrive-and-microsoft-teams"></a>Panoramica di Office 365 ATP per SharePoint, OneDrive e Microsoft Teams
 
@@ -52,7 +55,7 @@ Per altre informazioni, vedere [Office 365 ATP per SharePoint, OneDrive e Micros
 
 ## <a name="keep-these-points-in-mind"></a>Tenere presente questi punti
 
-- ATP non analizzerà tutti i singoli file in SharePoint Online, OneDrive for business o Microsoft teams. Questo è il funzionamento predefinito. I file vengono analizzati in modo asincrono, tramite un processo che utilizza la condivisione e gli eventi di attività Guest insieme ai segnali euristici intelligenti e alle minacce per identificare i file dannosi.
+- ATP non analizzerà tutti i singoli file in SharePoint Online, OneDrive for business o Microsoft teams. Si tratta di un comportamento legato alla progettazione. I file vengono analizzati in modo asincrono, tramite un processo che utilizza la condivisione e gli eventi di attività Guest insieme ai segnali euristici intelligenti e alle minacce per identificare i file dannosi.
 
 - Verificare che i siti di SharePoint siano configurati per l'utilizzo dell' [esperienza moderna](https://docs.microsoft.com/sharepoint/guide-to-sharepoint-modern-experience). Quando un file viene identificato come dannoso e bloccato, gli utenti possono vedere che si è verificato l'esperienza moderna, ma non la visualizzazione classica. La protezione del trifosfato di adenosina applica se viene utilizzata l'esperienza moderna o la visualizzazione classica. Tuttavia, gli indicatori visivi che un file è bloccato sono presenti solo nell'esperienza moderna.
 

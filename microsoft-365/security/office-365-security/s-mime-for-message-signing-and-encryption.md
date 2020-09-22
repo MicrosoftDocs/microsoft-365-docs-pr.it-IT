@@ -15,14 +15,17 @@ search.appverid:
 ms.assetid: 887c710b-0ec6-4ff0-8065-5f05f74afef3
 description: Gli amministratori possono acquisire informazioni sull'utilizzo di S/MIME (Secure/Multipurpose Internet Mail Extensions) in Exchange Online per crittografare i messaggi di posta elettronica e firmarli digitalmente.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ca865fa8ef658b4715d18e09fe9cbc1cffb201e6
-ms.sourcegitcommit: 260bbb93bbda62db9e88c021ccccfa75ac39a32e
+ms.openlocfilehash: 8dce3e3fa3d24e1773f51f96e19a58d8a3b2efce
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "46845921"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48200608"
 ---
 # <a name="smime-for-message-signing-and-encryption-in-exchange-online"></a>S/MIME per la firma e la crittografia dei messaggi in Exchange Online
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 S/MIME (Secure/Multipurpose Internet Mail Extensions) è un metodo ampiamente accettato (o più precisamente un protocollo) per l'invio di messaggi crittografati e firmati digitalmente. S/MIME consente di crittografare i messaggi di posta elettronica e di apporvi la firma digitale. Quando si utilizza S/MIME con un messaggio di posta elettronica, aiuta le persone che ricevono il messaggio per essere certi che quello che vedono nella propria posta in arrivo è il messaggio esatto che è stato avviato con il mittente. Inoltre, gli utenti che ricevono messaggi devono essere certi che il messaggio proviene da un mittente specifico e non da un utente che finge di essere il mittente. A tale scopo, S/MIME fornisce servizi di protezione crittografica quali autenticazione, integrità dei messaggi e non-rifiuto dell'origine (utilizzando le firme digitali). Aiuta anche a migliorare la privacy e la sicurezza dei dati (utilizzando la crittografia) per la messaggistica elettronica. Per un quadro completo della storia e dell'architettura di S/MIME nel contesto della posta elettronica, vedere [Concetti relativi a S/MIME](https://docs.microsoft.com/previous-versions/tn-archive/aa995740(v=exchg.65)).
 
