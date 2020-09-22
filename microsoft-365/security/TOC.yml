@@ -70,10 +70,24 @@
               href: 'https://docs.microsoft.com/microsoft-365/security/mtp/config-mtpeval?view=o365-worldwide#start-the-microsoft-threat-protection-service'
             - name: Generare un avviso di test
               href: mtp/generate-test-alert.md
+        - name: Esegui una distribuzione pilota in produzione
+          items:
+            - name: Panoramica del progetto pilota
+              href: mtp/mtp-pilot.md
+            - name: Piano
+              href: mtp/mtp-pilot-plan.md
+            - name: Preparazione
+              href: mtp/prepare-mtpeval.md
+            - name: Simula attacco
+              href: mtp/mtp-pilot-simulate.md
+            - name: Chiudi e riepiloga
+              href: mtp/mtp-pilot-close.md
         - name: Procedure
           items:
             - name: Crea un laboratorio di valutazione o un ambiente pilota
               href: mtp/mtp-evaluation.md
+            - name: Eseguire il playbook del progetto pilota
+              href: mtp/mtp-pilot.md
             - name: Distribuire i servizi supportati
               href: mtp/deploy-supported-services.md
             - name: Attivare Microsoft Threat Protection
@@ -94,16 +108,18 @@
                       href: mtp/manage-incidents.md
             - name: Analisi e risposta alle minacce automatizzate
               items:
-                - name: Panoramica AIR
+                - name: Panoramica di Analisi e risposta alle minacce automatizzate
                   href: mtp/mtp-autoir.md
-                - name: Azioni correttive
+                - name: Configura le funzionalità di analisi e risposta alle minacce automatizzate
+                  href: mtp/mtp-configure-auto-investigation-response.md
+                - name: Azioni correttive in seguito alle indagini automatizzate
                   href: mtp/mtp-remediation-actions.md
-                - name: Centro operativo
+                - name: Visita il Centro notifiche
                   href: mtp/mtp-action-center.md
-                - name: Visualizzare dettagli e risultati di indagini automatizzate
-                  href: mtp/mtp-autoir-results.md
-                - name: Approvare o rifiutare azioni in sospeso
+                - name: Approva o rifiuta azioni in sospeso
                   href: mtp/mtp-autoir-actions.md
+                - name: Visualizza dettagli e risultati delle indagini automatizzate
+                  href: mtp/mtp-autoir-results.md
                 - name: Segnalare falsi positivi/negativi
                   href: mtp/mtp-autoir-report-false-positives-negatives.md
             - name: Ricerca avanzata
@@ -214,8 +230,6 @@
                   href: mtp/monitor-devices.md
                 - name: Monitoraggio e creazione di report relativi alle app
                   href: mtp/monitor-apps.md
-            - name: API
-              items: null
         - name: Riferimenti
           items:
             - name: Autorizzazioni e impostazioni
