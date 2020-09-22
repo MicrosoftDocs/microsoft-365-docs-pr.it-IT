@@ -13,14 +13,17 @@ ms.assetid: 3e64f99d-ac33-4aba-91c5-9cb4ca476803
 ms.custom:
 - seo-marvel-apr2020
 description: Gli amministratori possono utilizzare la traccia dei messaggi nel centro sicurezza & Compliance per scoprire cosa è successo ai messaggi.
-ms.openlocfilehash: c6e1f8f9280c84ab6ff6a1572d902ed1d4d4caa3
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: 1e9f5e21655e55f711997defcb7ace0319ff4be6
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46827052"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48197538"
 ---
 # <a name="message-trace-in-the-security--compliance-center"></a>Traccia messaggio nel Centro sicurezza e conformità
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 ## <a name="message-trace-features"></a>Funzionalità di traccia dei messaggi
 
@@ -353,7 +356,7 @@ Un valore **custom_data** che inizia con `S:SFA` è dall'agente filtro posta ind
 |`DI=SO`|Il messaggio è instradato attraverso un pool di recapito ad alto rischio. Per altre informazioni, vedere [Pool di recapito ad alto rischio per i messaggi in uscita](high-risk-delivery-pool-for-outbound-messages.md).|
 |`SFS=[a]|SFS=[b]`|Indica una corrispondenza tra le regole relative alla posta indesiderata.|
 |`IPV=CAL`|Il messaggio è stato consentito tramite il filtro da posta indesiderata poiché l'indirizzo IP è stato specificato in un elenco di indirizzi IP bloccati nel filtro di connessione.|
-|`H=<EHLOstring>`|Stringa HELO o EHLO del server della posta connesso.|
+|`H=<EHLOstring>`|Stringa HELO o EHLO del server di posta elettronica connesso.|
 |`PTR=<ReverseDNS>`|Il record PTR dell'indirizzo IP di invio, anche noto come indirizzo DNS inverso.|
 |
 

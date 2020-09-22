@@ -19,14 +19,17 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 54f5ba640ecc175e78c7087df8016e9b715f17f7
-ms.sourcegitcommit: 13ae76220b4ad688438a5d1031a6e1b5300ffa23
+ms.openlocfilehash: 9defc9c0f8fa04e019c0108ca0f4111de54edb5f
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "47775112"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48195391"
 ---
 # <a name="list-incidents-api-in-microsoft-threat-protection"></a>API degli incidenti di elenco in Microsoft Threat Protection
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 
 **Si applica a:**
 
@@ -136,7 +139,7 @@ Se l'operazione ha esito positivo, questo metodo restituisce 200 OK e un elenco 
 | riskScore                                 | Il Punteggio di rischio per il dispositivo.                                                                                                                                                                                                                                                                                                                                                                       | Fortemente                                                                                                                                                                                                                                              |
 | entità                                  | Tutte le entità che sono state identificate come parte di un determinato avviso o che sono correlate a.                                                                                                                                                                                                                                                                                | \[\] (vedere dettagli sui campi entità seguenti)                                                                                                                                                                                                         |
 | **Formato entità**                             |                                                                                                                                                                                                                                                                                                                                                                                            |                                                                                                                                                                                                                                                   |
-| entityType                                | Entità che sono state identificate come parte di un determinato avviso o che sono correlate.<br>I valori delle proprietà sono: *User*, *IP*, *URL*, *file*, *Process*, *Mailbox*, *MailMessage*, *MailCluster*, *Registry*                                                                                                                                                                                                     | User                                                                                                                                                                                                                                              |
+| entityType                                | Entità che sono state identificate come parte di un determinato avviso o che sono correlate.<br>I valori delle proprietà sono: *User*, *IP*, *URL*, *file*, *Process*, *Mailbox*, *MailMessage*, *MailCluster*, *Registry*                                                                                                                                                                                                     | Utente                                                                                                                                                                                                                                              |
 | SHA1                                      | Disponibile se entityType è *file*.<br>Hash del file per gli avvisi associati a un file o a un processo.                                                                                                                                                                                                                                                                                    | 5de839186691aa96ee2ca6d74f0a38fb8d1bd6dd                                                                                                                                                                                                          |
 | SHA256                                    | Disponibile se entityType è *file*.<br>Hash del file per gli avvisi associati a un file o a un processo.                                                                                                                                                                                                                                                                                    | 28cb017dfc99073aa1b47c1b30f413e3ce774c4991eb4158de50f9dbb36d8043                                                                                                                                                                                  |
 | fileName                                  | Disponibile se entityType è *file*.<br>Nome del file per gli avvisi associati a un file o a un processo                                                                                                                                                                                                                                                                                    | Detector.UnitTests.dll                                                                                                                                                                                                                            |
@@ -693,5 +696,5 @@ GET https://api.security.microsoft.com/api/incidents
 ```
 
 ## <a name="related-topic"></a>Argomento correlato
-- [API Incident](api-incident.md)
-- [Update Incident](api-update-incidents.md)
+- [Incidenti delle API](api-incident.md)
+- [Aggiornare incidente](api-update-incidents.md)

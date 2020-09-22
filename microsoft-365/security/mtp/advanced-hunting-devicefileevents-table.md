@@ -17,14 +17,17 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: b4656c4fd7666ba99ca6125331bdc458d3835edb
-ms.sourcegitcommit: 445b249a6f0420b32e49742fd7744006c7090b2b
+ms.openlocfilehash: e4534967ca6e9563f802cdf49385b46790d56932
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46798005"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48198190"
 ---
 # <a name="devicefileevents"></a>DeviceFileEvents
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 
 **Si applica a:**
 - Microsoft Threat Protection

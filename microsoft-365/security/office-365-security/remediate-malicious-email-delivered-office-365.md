@@ -14,14 +14,17 @@ search.appverid: MET150
 description: Correzione delle minacce
 appliesto:
 - Microsoft Threat Protection
-ms.openlocfilehash: 2542f7af8a34088a79aae8a14f7ccdb8ea8fd121
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: 526a88409514127d4fb484f88632bf3185004854
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47547241"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48197442"
 ---
 # <a name="remediate-malicious-email-delivered-in-office-365"></a>Rimediare la posta elettronica dannosa recapitata in Office 365
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 La correzione comporta l'esecuzione di un'azione proscritta su una minaccia. I messaggi di posta elettronica dannosi inviati all'organizzazione possono essere rimossi dal sistema, tramite l'AutoPurge (ZAP) zero-hour o dai team di sicurezza mediante azioni correttive come *Sposta in posta in arrivo*, sposta su posta *indesiderata*, *Sposta su elementi eliminati*, Elimina *o Elimina* *temporaneamente*. Office Advanced Threat Protection (Office ATP) P2/E5 consente ai team di sicurezza di correggere le minacce nelle funzionalità di posta elettronica e collaborazione tramite l'analisi manuale e automatizzata.
 

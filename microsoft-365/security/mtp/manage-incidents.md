@@ -19,14 +19,17 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 8880655ec24f20efd139b8334ab754f51146b496
-ms.sourcegitcommit: 445b249a6f0420b32e49742fd7744006c7090b2b
+ms.openlocfilehash: e0c50f2c547dee9cd7ef0131efc30ff4925a1501
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46798211"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48196500"
 ---
 # <a name="manage-incidents-in-microsoft-threat-protection"></a>Gestire gli eventi imprevisti in Microsoft Threat Protection
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 
 **Si applica a:**
 - Microsoft Threat Protection

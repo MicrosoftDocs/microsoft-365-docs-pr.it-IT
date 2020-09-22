@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 ms.assetid: 5b4ba843-24b8-4526-8e1f-f9b9eab89d06
 description: Informazioni su come spostare la propria azienda da Microsoft 365 Business Premium a Microsoft 365 E3.
-ms.openlocfilehash: 6a795d96ccae7e054e7e52d4fd60a4e73b3c71dd
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: fbd5c0710bffa92cfc17447094bb9b2683641d5f
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44401991"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48195520"
 ---
 # <a name="migrate-from-microsoft-365-business-premium-to-microsoft-365-e3"></a>Eseguire la migrazione da Microsoft 365 Business Premium a Microsoft 365 E3
 
@@ -79,13 +79,13 @@ In questa tabella vengono illustrate le differenze tra Microsoft 365 Business Pr
 | Famiglia di prodotti Enterprise CAL (Exchange, SharePoint, Skype, Windows, Microsoft endpoint Configuration Manager, Windows Rights Management)| |         ![Incluso in Microsoft 365 E3](../media/check-mark.png) | 
 | **Conformità**        | | | 
 | Archiviazione di posta elettronica illimitata    | ![Incluso in Microsoft 365 Business Premium](../media/check-mark.png)    | ![Incluso in Microsoft 365 E3](../media/check-mark.png) | 
-| Punteggio di conformità/gestione conformità    | ![Incluso in Microsoft 365 Business Premium](../media/check-mark.png)    | ![Incluso in Microsoft 365 E3](../media/check-mark.png) | 
+| Compliance Manager    | ![Incluso in Microsoft 365 Business Premium](../media/check-mark.png)    | ![Incluso in Microsoft 365 E3](../media/check-mark.png) | 
 | eDiscovery    | ![Incluso in Microsoft 365 Business Premium](../media/check-mark.png)    | ![Incluso in Microsoft 365 E3](../media/check-mark.png) | 
 | Blocco sul posto e conservazione per controversia legale    | ![Incluso in Microsoft 365 Business Premium](../media/check-mark.png)    | ![Incluso in Microsoft 365 E3](../media/check-mark.png) | 
 | Tag e criteri di conservazione di Gestione record di messaggistica (MRM)    | ![Incluso in Microsoft 365 Business Premium](../media/check-mark.png)    | ![Incluso in Microsoft 365 E3](../media/check-mark.png) | 
 ||||
 
-\*Gli utenti a cui è stato assegnato l'accesso alle app SaaS possono ottenere l'accesso SSO a un massimo di 10 app. Gli amministratori possono configurare SSO e modificare l'accesso degli utenti a diverse app SaaS, ma l'accesso SSO è consentito solo per 10 app per utente alla volta. Tutte le app di Office 365 vengono contate come una singola app.
+\* Gli utenti a cui è stato assegnato l'accesso alle app SaaS possono ottenere l'accesso SSO a un massimo di 10 app. Gli amministratori possono configurare SSO e modificare l'accesso degli utenti a diverse app SaaS, ma l'accesso SSO è consentito solo per 10 app per utente alla volta. Tutte le app di Office 365 vengono contate come una singola app.
 
 ## <a name="migration"></a>Migrazione
 

@@ -16,14 +16,17 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Gli amministratori possono ottenere informazioni sui criteri di anti-phishing disponibili in Exchange Online Protection (EOP) e Office 365 Advanced Threat Protection (Office 365 ATP).
-ms.openlocfilehash: 06307efdc1df03d918e7f0b48c42f6e8ecb1dd79
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: 945b346a5ebd4a85776d87c019ee1a06aec73635
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47950605"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48195916"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Criteri di anti-phishing in Microsoft 365
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 I criteri per configurare le impostazioni di protezione anti-phishing sono disponibili nelle organizzazioni Microsoft 365 con le cassette postali di Exchange Online, le organizzazioni autonome di Exchange Online Protection (EOP) senza le cassette postali di Exchange Online e le organizzazioni Office 365 Advanced Threat Protection (Office 365 ATP).
 
@@ -145,7 +148,7 @@ La rappresentazione è la posizione in cui il mittente o il dominio di posta ele
 - Un esempio di rappresentazione del dominio contoso.com è ćóntoso.com.
 - Un esempio di rappresentazione dell'utente michelle@contoso.com è michele@contoso.com.
 
-Un dominio rappresentato potrebbe altrimenti essere considerato attendibile (dominio registrato, record di autenticazione della posta elettronica configurati e così via), tranne per il fatto che il suo scopo è di ingannare i destinatari.
+Un dominio rappresentato potrebbe essere considerato legittimo (dominio registrato, record di autenticazione e-mail configurati, e così via), tranne per l’intento di ingannare i destinatari.
 
 Le impostazioni di rappresentazione seguenti sono disponibili solo nei criteri di anti-phishing ATP:
 

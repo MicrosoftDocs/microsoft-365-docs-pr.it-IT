@@ -17,14 +17,17 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 2259158c566223c39a6b533483551f95c2fa0824
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: af9579b94314375aa786782ea477bb11b0cd9c0b
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47949301"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48198212"
 ---
 # <a name="advanced-hunting-query-best-practices"></a>Procedure consigliate per query in Ricerca avanzata
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 
 **Si applica a:**
 - Microsoft Threat Protection
@@ -260,7 +263,7 @@ Per informazioni su tutte le funzioni di analisi supportate, [vedere informazion
 
 ## <a name="related-topics"></a>Argomenti correlati
 - [Documentazione relativa alla lingua di query di Kusto](https://docs.microsoft.com/azure/data-explorer/kusto/query/)
-- [Limiti relativi al servizio](advanced-hunting-limits.md)
+- [Limiti di servizio](advanced-hunting-limits.md)
 - [Gestire gli errori di ricerca avanzata](advanced-hunting-errors.md)
 - [Panoramica della ricerca avanzata](advanced-hunting-overview.md)
 - [Capire il linguaggio delle query](advanced-hunting-query-language.md)

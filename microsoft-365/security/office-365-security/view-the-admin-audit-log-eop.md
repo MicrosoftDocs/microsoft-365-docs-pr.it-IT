@@ -12,14 +12,17 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 003d7a74-3e16-4453-ae0c-9dbae51f66d1
 description: Gli amministratori possono ottenere informazioni su come visualizzare e cercare il log di controllo dell'amministratore in standalone Exchange Online Protection (EOP).
-ms.openlocfilehash: 8890ab8f2f2db01ed6bd22657a9bea8f77b25d08
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: 9fe2c742083cde1ca36f6a04cd357a473a10aeac
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46825078"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48196544"
 ---
 # <a name="view-the-admin-audit-log-in-standalone-eop"></a>Visualizzare un log di controllo dell'amministratore in Exchange Online Protection autonomo
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 Nelle organizzazioni standalone di Exchange Online Protection (EOP) prive di cassette postali di Exchange Online, è possibile utilizzare l'interfaccia di amministrazione di Exchange (EAC) o PowerShell EOP autonomo per cercare e visualizzare le voci nel registro di controllo dell'amministratore.
 
@@ -33,7 +36,7 @@ Il registro di controllo dell'amministratore registra azioni specifiche, basate 
 >
 > - Le voci del registro di controllo vengono conservate per 90 giorni. Quando una voce è più vecchia di 90 giorni, viene eliminata
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare?
+## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare
 
 - Per aprire l'interfaccia di amministrazione di Exchange, vedere interfaccia [di amministrazione di Exchange in EOP autonomo](exchange-admin-center-in-exchange-online-protection-eop.md).
 

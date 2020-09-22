@@ -19,14 +19,17 @@ ms.collection:
 - M365-security-compliance
 description: Informazioni su come utilizzare le funzionalità avvisi nel centro sicurezza & conformità di Office 365 per visualizzare e gestire gli avvisi, tra cui la gestione di avvisi avanzati.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: c51d5d58b1af64a5066e6176fb2533c91bcf6f01
-ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
+ms.openlocfilehash: 2e53d61b2bbbf241683379916362a9d33fa5ace8
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46653354"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48197656"
 ---
 # <a name="alerts-in-the-security--compliance-center"></a>Avvisi nel centro sicurezza & conformità
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 Utilizzare le funzionalità avvisi nel centro sicurezza & conformità per visualizzare e gestire gli avvisi per la propria organizzazione, inclusa la gestione di avvisi avanzati come parte di [Microsoft cloud app Security Overview](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security).
 
@@ -61,5 +64,5 @@ Nella tabella seguente vengono descritti gli strumenti disponibili in **avvisi**
 |Strumento|Descrizione|
 |---|---|
 |[Gestione avvisi](../../compliance/create-activity-alerts.md)|Utilizzare gli avvisi di attività per inviare notifiche tramite posta elettronica a se stessi o ad altri amministratori quando gli utenti eseguono attività specifiche in Office 365. Gli avvisi di attività sono simili alla ricerca del registro di controllo per eventi, tranne per il fatto che verrà inviato un messaggio di posta elettronica quando viene creato un avviso per il verificarsi di un evento.|
-|[Gestire gli avvisi avanzati](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security)|Utilizzare la funzionalità **Gestisci avvisi avanzati** di Office 365 cloud app Security per impostare i criteri che possono avvisare l'utente di attività sospette e anomale in Office 365. Dopo aver eseguito l'avviso, è possibile esaminare le situazioni potenzialmente problematiche e, se necessario, intervenire per risolvere i problemi di sicurezza.|
+|[Gestire gli avvisi avanzati ](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security)|Utilizzare la funzionalità **Gestisci avvisi avanzati** di Office 365 cloud app Security per impostare i criteri che possono avvisare l'utente di attività sospette e anomale in Office 365. Dopo aver eseguito l'avviso, è possibile esaminare le situazioni potenzialmente problematiche e, se necessario, intervenire per risolvere i problemi di sicurezza.|
 |

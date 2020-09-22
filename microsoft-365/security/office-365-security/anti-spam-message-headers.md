@@ -16,14 +16,17 @@ ms.collection:
 - M365-security-compliance
 description: Gli amministratori possono ottenere informazioni sui campi e sui valori di intestazione aggiunti ai messaggi da Exchange Online Protection (EOP). Questi campi di intestazione forniscono informazioni sul messaggio e su come è stato elaborato.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a5423ccf658843ab22f30dcef99fe0a0c34d512f
-ms.sourcegitcommit: 787b198765565d54ee73972f664bdbd5023d666b
+ms.openlocfilehash: 71cefb4a26751b92dd8b5e5a308bbc18b1a5c221
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "46867188"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48197502"
 ---
 # <a name="anti-spam-message-headers-in-microsoft-365"></a>Intestazioni dei messaggi della protezione da posta indesiderata in Microsoft 365
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 In tutte le organizzazioni Microsoft 365, Exchange Online Protection (EOP) analizza tutti i messaggi in arrivo per identificare posta indesiderata, malware e altre minacce. I risultati di queste analisi vengono aggiunti a questi campi di intestazione nei messaggi:
 

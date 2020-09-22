@@ -16,12 +16,12 @@ ms.collection:
 - m365solution-infoprotection
 ms.custom: ''
 description: Determinare le normative sulla privacy dei dati, gli scenari rilevanti, la preparazione e i tipi di informazioni riservate presenti nell'ambiente Microsoft 365.
-ms.openlocfilehash: ba47a43c7af8d97af852e0a3ef417cdc1dbab46a
-ms.sourcegitcommit: 0f71042edc7c3a7f10a7b92e1943abf51532cbf5
+ms.openlocfilehash: 237039bfd853c0f58276926f29bda26981df6b8c
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "46521374"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48195748"
 ---
 # <a name="assess-data-privacy-risks-and-identify-sensitive-items-with-microsoft-365"></a>Valutare i rischi per la privacy dei dati e identificare gli elementi sensibili con Microsoft 365
 
@@ -78,7 +78,7 @@ Per informazioni di riferimento successive negli articoli di questa soluzione co
 |||||
 
 >[!Important]
->Questo non è destinato a essere un elenco esaustivo. Fare riferimento a [Compliance Manager](../compliance/compliance-manager-overview.md) o ai consulenti legali o di conformità per ulteriori informazioni sull'applicabilità delle sezioni citate alle categorie di controllo tecnico elencate.
+>Questo non è destinato a essere un elenco esaustivo. Fare riferimento a [Compliance Manager](../compliance/compliance-manager.md) o ai consulenti legali o di conformità per ulteriori informazioni sull'applicabilità delle sezioni citate alle categorie di controllo tecnico elencate.
 >
 
 ## <a name="knowing-your-data"></a>Conoscenza dei dati
@@ -168,7 +168,7 @@ Understanding Your Exposure to risk and data privacy regulation è un primo pass
 
 Se non si dispone di dati personali provenienti da utenti dell'ambiente Microsoft 365 o se sono limitati a determinate parti dell'ambiente e la necessità di disporre di un controllo tecnico è basata sull'esposizione dei dati di tipo consumer, il controllo tecnico potrebbe essere necessario solo per le aree a rischio elevato dell'ambiente e non ovunque.
 
-Anche se una raccomandazione relativa all'organizzazione esterna o al set di controlli standard, ad esempio dal punteggio di conformità in Microsoft 365, può contribuire a informare la strategia di controllo, la scelta dell'implementazione dovrebbe essere determinata dalla consapevolezza dell'inventario dei dati per quantificare l'esposizione reale al rischio.
+Anche se una raccomandazione per l'organizzazione esterna o il set di controlli standard, ad esempio da Compliance Manager in Microsoft 365, può contribuire a informare la propria strategia di controllo, la scelta dell'implementazione dovrebbe essere determinata dalla consapevolezza dell'inventario dei dati per quantificare la reale esposizione ai rischi.
 
 La maggior parte delle organizzazioni avrà un certo livello di esposizione a uno degli scenari precedenti. L'adozione di un approccio olistico alla valutazione è importante.
 
@@ -214,7 +214,7 @@ Per ulteriori informazioni, vedere gli articoli seguenti:
 - [Tipi di informazioni sensibili personalizzati](../compliance/custom-sensitive-info-types.md)
 - [Creare un tipo di informazione sensibile personalizzato nel Centro sicurezza e conformità](../compliance/create-a-custom-sensitive-information-type.md)
 - [Creare un tipo di informazioni sensibili personalizzato in PowerShell per Centro sicurezza e conformità](../compliance/create-a-custom-sensitive-information-type-in-scc-powershell.md)
-- [Creare tipi di informazioni riservate personalizzate con classificazione esatta basata sulla corrispondenza dei dati](../compliance/create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)
+- [Creare tipi di informazioni sensibili personalizzati con classificazione esatta basata su Exact Data Match](../compliance/create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)
 
 ### <a name="content-explorer"></a>Esplora contenuto
 

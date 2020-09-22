@@ -18,14 +18,17 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Informazioni su come mittente esterno, come è possibile aumentare la possibilità di inviare messaggi di posta elettronica agli utenti in Microsoft 365. Vengono inoltre fornite informazioni su come segnalare la posta indesiderata & tentativi di phishing come utenti esterni.
-ms.openlocfilehash: f20d5d64bccb69db47c159a8166fa3532b51e3db
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: 0c0a981d12fa5b8159789a69597f83eb15d9b194
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46825186"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48196798"
 ---
 # <a name="sending-mail-to-microsoft-365"></a>Invio di posta elettronica a Microsoft 365
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 Questi articoli consentono ai mittenti esterni di migliorare la propria reputazione e di aumentare la capacità di inviare messaggi di posta elettronica agli utenti in Microsoft 365. Sono inoltre disponibili informazioni su come è possibile segnalare i tentativi di phishing e di posta indesiderata anche se non si è un utente di Microsoft 365.
 
