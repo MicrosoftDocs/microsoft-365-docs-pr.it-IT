@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: 518afae2d241cca5fdff054faeb07d25e37eb585
-ms.sourcegitcommit: a3c2c737995088c1bad3b12ab401a7ef242b0272
+ms.openlocfilehash: aa4767deac30641e39880c2eeb001c2dc884540a
+ms.sourcegitcommit: dcbcd5ef278949c777059b0aa6db072e821f72dd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47956587"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "48173321"
 ---
 # <a name="run-your-microsoft-threat-protection-attack-simulations"></a>Eseguire le simulazioni di attacco di Microsoft Threat Protection  
 
@@ -33,9 +33,9 @@ Dopo la preparazione dell'ambiente pilota, è necessario verificare la gestione 
 
 In questa simulazione, lo scenario di esempio inizia con uno script di PowerShell. Un utente potrebbe essere indotto a eseguire uno script. Oppure lo script può essere eseguito da una connessione remota a un altro computer da un dispositivo precedentemente infetto, ovvero l'utente malintenzionato che tenta di spostarsi lateralmente nella rete. Il rilevamento di questi script può essere difficile perché gli amministratori spesso eseguono anche gli script in remoto per eseguire diverse attività amministrative.
 
-Durante la simulazione, l'attacco inietta shellcode in un processo apparentemente innocente. In questo scenario, si utilizzerà notepad.exe. È stato scelto questo processo per la simulazione, ma gli aggressori avranno più probabilità di essere indirizzati a un processo di sistema a esecuzione prolungata, ad esempio svchost.exe. Il shellcode, quindi, continua a contattare il server di comando e controllo (C2) del pirata informatico per ricevere istruzioni su come procedere. Inoltre, lo script tenta di eseguire query di ricognizione sul controller di dominio (DC). Ciò consente a un utente malintenzionato di ottenere informazioni sulle informazioni recenti sull'accesso degli utenti. Una volta che gli aggressori dispongono di queste informazioni, possono spostarsi lateralmente nella rete per accedere a un account sensibile specifico.
-
 ![Attacco di PowerShell senza file con diagramma di attacco del processo di iniezione e SMB ricognizione](../../media/mtp/mtpdiydiagram.png)
+
+Durante la simulazione, l'attacco inietta shellcode in un processo apparentemente innocente. In questo scenario, si utilizzerà notepad.exe. È stato scelto questo processo per la simulazione, ma gli aggressori avranno più probabilità di essere indirizzati a un processo di sistema a esecuzione prolungata, ad esempio svchost.exe. Il shellcode, quindi, continua a contattare il server di comando e controllo (C2) del pirata informatico per ricevere istruzioni su come procedere. Inoltre, lo script tenta di eseguire query di ricognizione sul controller di dominio (DC). Ciò consente a un utente malintenzionato di ottenere informazioni sulle informazioni recenti sull'accesso degli utenti. Una volta che gli aggressori dispongono di queste informazioni, possono spostarsi lateralmente nella rete per accedere a un account sensibile specifico.
 
 >[!IMPORTANT]
 >Per ottenere risultati ottimali, seguire le istruzioni di simulazione dell'attacco il più fedelmente possibile.
@@ -109,9 +109,9 @@ Per visualizzare la funzionalità per gli incidenti automatici e la risposta in 
 
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Bzwz?]
 
-Passando al punto di vista dell'analista SOC, è ora possibile iniziare a studiare l'attacco nel portale Microsoft Threat Protection. 
+Passando al punto di vista dell'analista SOC, è ora possibile iniziare a studiare l'attacco nel portale del Centro sicurezza Microsoft 365. 
 
-1.  Aprire la coda degli incidenti del [portale di Microsoft Threat Protection](https://security.microsoft.com/incidents) da qualsiasi dispositivo.
+1.  Aprire la coda degli incidenti del [portale Microsoft 365 Security Center](https://security.microsoft.com/incidents) da qualsiasi dispositivo.
 
 2.  Passare a **operazioni** non consentite dal menu. 
 
@@ -230,7 +230,7 @@ Fare clic sul nome utente per aprire la pagina del profilo dell'utente in cui è
 
 >[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4BzwB]
 
-Tornare all'incidente nel portale Microsoft Threat Protection. La scheda **indagini** nella pagina **incidenti** Visualizza le indagini automatizzate che sono state attivate da Azure ATP e Microsoft Defender ATP. Nella schermata seguente viene visualizzata solo l'analisi automatizzata attivata da Microsoft Defender ATP. Per impostazione predefinita, Microsoft Defender ATP consente di correggere automaticamente gli elementi presenti nella coda che richiedono la correzione.
+Tornare all'incidente nel portale del Centro sicurezza Microsoft 365. La scheda **indagini** nella pagina **incidenti** Visualizza le indagini automatizzate che sono state attivate da Azure ATP e Microsoft Defender ATP. Nella schermata seguente viene visualizzata solo l'analisi automatizzata attivata da Microsoft Defender ATP. Per impostazione predefinita, Microsoft Defender ATP consente di correggere automaticamente gli elementi presenti nella coda che richiedono la correzione.
 
 ![Screenshot delle indagini automatizzate relative all'incidente](../../media/mtp/fig14.png)
 
@@ -255,7 +255,7 @@ Dopo aver completato l'analisi e aver confermato di essere corretti, chiudere l'
 
 Fare clic su **Gestisci eventi imprevisti**. Impostare lo stato su **Risolvi evento** e selezionare la classificazione pertinente.
 
-Dopo che l'operazione è stata risolta, si chiuderà tutti gli avvisi associati in Microsoft Threat Protection e nei portali correlati.
+Dopo che l'operazione è stata risolta, verranno chiusi tutti gli avvisi associati in Microsoft 365 Security Center e nei portali correlati.
 
 ![Schermata della pagina degli incidenti con il pannello Apri Gestione eventi non consentiti in cui è possibile fare clic sul pulsante per risolvere gli eventi imprevisti](../../media/mtp/fig16.png) 
 

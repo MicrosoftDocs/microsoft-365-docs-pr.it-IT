@@ -15,18 +15,18 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Informazioni sui documenti attendibili in Microsoft 365 E5 o Microsoft 365 E5 Security.
-ms.openlocfilehash: 5e91c226102d60368bf08b09ae5f0239f63599d5
-ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
+ms.openlocfilehash: d2220bb088ddf6e739b79212c3c1f7f0ac7bd865
+ms.sourcegitcommit: dcbcd5ef278949c777059b0aa6db072e821f72dd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48132221"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "48173297"
 ---
 # <a name="safe-documents-in-microsoft-365-e5"></a>Documenti attendibili in Microsoft 365 E5
 
 Documenti attendibili è una funzionalità di sicurezza di Microsoft 365 E5 o Microsoft 365 E5 che utilizza [Microsoft Defender Advanced Threat Protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) per analizzare documenti e file aperti in [visualizzazione protetta](https://support.microsoft.com/office/d6f09ac7-e6b9-4495-8e43-2bbcdbcb6653).
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare?
+## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare
 
 - I documenti attendibili sono disponibili solo per gli utenti con licenze di sicurezza *microsoft 365 E5* o *Microsoft 365 E5* . Queste licenze non sono incluse nei piani di Office 365 Advanced Threat Protection (ATP).
 
@@ -36,9 +36,11 @@ Documenti attendibili è una funzionalità di sicurezza di Microsoft 365 E5 o Mi
 
 - Prima di poter eseguire le procedure descritte in questo argomento, è necessario disporre delle autorizzazioni assegnate. Per abilitare e configurare documenti attendibili, è necessario essere membri dei gruppi di ruoli **Gestione organizzazione** o **amministratore sicurezza** . Per altre informazioni sui gruppi di ruoli nel Centro sicurezza e conformità, vedere [Autorizzazioni nel Centro sicurezza e conformità](permissions-in-the-security-and-compliance-center.md).
 
-- Per proteggersi, i documenti sicuri inviano i file al cloud di [protezione avanzata delle minacce di Microsoft Defender](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) per l'analisi. Informazioni dettagliate su come Microsoft Defender ATP gestisce i dati possono essere reperiti qui: [Microsoft Defender ATP data storage and privacy](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy).
+### <a name="how-does-microsoft-handle-your-data"></a>In che modo Microsoft gestisce i dati?
 
-- I file inviati dai documenti attendibili non vengono conservati in Defender oltre il tempo necessario per l'analisi (in genere, meno di 24 ore).
+Per proteggersi, i documenti sicuri inviano i file al cloud di [protezione avanzata delle minacce di Microsoft Defender](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) per l'analisi. Informazioni dettagliate su come Microsoft Defender ATP gestisce i dati possono essere reperiti qui: [Microsoft Defender ATP data storage and privacy](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy).
+
+I file inviati dai documenti attendibili non vengono conservati in Defender oltre il tempo necessario per l'analisi (in genere, meno di 24 ore).
 
 ## <a name="use-the-security--compliance-center-to-configure-safe-documents"></a>Utilizzare il Centro sicurezza & conformità per configurare i documenti attendibili
 
