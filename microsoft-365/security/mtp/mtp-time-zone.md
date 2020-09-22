@@ -19,23 +19,26 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: fd8a09ceb32b8ddacea06b4569a2d2a851daaeb2
-ms.sourcegitcommit: 74bf600424d0cb7b9d16b4f391aeda7875058be1
+ms.openlocfilehash: 60795815ae68d640eeac4b9bc9f0188c7751aaf9
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42235205"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48201035"
 ---
-# <a name="set-the-time-zone-for-microsoft-threat-protection"></a><span data-ttu-id="36ff7-104">Impostare il fuso orario per Microsoft Threat Protection</span><span class="sxs-lookup"><span data-stu-id="36ff7-104">Set the time zone for Microsoft Threat Protection</span></span>
+# <a name="set-the-time-zone-for-microsoft-threat-protection"></a><span data-ttu-id="f4c0c-104">Impostare il fuso orario per Microsoft Threat Protection</span><span class="sxs-lookup"><span data-stu-id="f4c0c-104">Set the time zone for Microsoft Threat Protection</span></span>
 
-<span data-ttu-id="36ff7-105">**Si applica a:**</span><span class="sxs-lookup"><span data-stu-id="36ff7-105">**Applies to:**</span></span>
-- <span data-ttu-id="36ff7-106">Microsoft Threat Protection</span><span class="sxs-lookup"><span data-stu-id="36ff7-106">Microsoft Threat Protection</span></span>
-
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
-<span data-ttu-id="36ff7-107">Microsoft Threat Protection può visualizzare le informazioni di data e ora usando il fuso orario locale o il fuso orario UTC.</span><span class="sxs-lookup"><span data-stu-id="36ff7-107">Microsoft Threat Protection can display date and time information using either your local time zone or UTC.</span></span> <span data-ttu-id="36ff7-108">Il fuso orario selezionato verrà applicato a tutte le informazioni di data e ora visualizzate nelle funzionalità seguenti nel Centro sicurezza Microsoft 365:</span><span class="sxs-lookup"><span data-stu-id="36ff7-108">The selected time zone will apply to all date and time information shown in the following features in the Microsoft 365 security center:</span></span>
-- <span data-ttu-id="36ff7-109">Incidenti</span><span class="sxs-lookup"><span data-stu-id="36ff7-109">Incidents</span></span>
-- <span data-ttu-id="36ff7-110">Indagine e correzione automatizzate, incluso il centro notifiche</span><span class="sxs-lookup"><span data-stu-id="36ff7-110">Automated investigation and remediation, including the action center</span></span>
-- <span data-ttu-id="36ff7-111">Ricerca avanzata</span><span class="sxs-lookup"><span data-stu-id="36ff7-111">Advanced hunting</span></span>
+<span data-ttu-id="f4c0c-105">**Si applica a:**</span><span class="sxs-lookup"><span data-stu-id="f4c0c-105">**Applies to:**</span></span>
+- <span data-ttu-id="f4c0c-106">Microsoft Threat Protection</span><span class="sxs-lookup"><span data-stu-id="f4c0c-106">Microsoft Threat Protection</span></span>
 
-<span data-ttu-id="36ff7-112">Per impostare il fuso orario per queste funzionalità, andare a **Impostazioni** > **Microsoft Threat Protection** > **Fuso orario**.</span><span class="sxs-lookup"><span data-stu-id="36ff7-112">To set the time zone for these features, go to **Settings** > **Microsoft Threat Protection** > **Time zone**.</span></span>
+
+
+<span data-ttu-id="f4c0c-107">Microsoft Threat Protection può visualizzare le informazioni di data e ora usando il fuso orario locale o il fuso orario UTC.</span><span class="sxs-lookup"><span data-stu-id="f4c0c-107">Microsoft Threat Protection can display date and time information using either your local time zone or UTC.</span></span> <span data-ttu-id="f4c0c-108">Il fuso orario selezionato verrà applicato a tutte le informazioni di data e ora visualizzate nelle funzionalità seguenti nel Centro sicurezza Microsoft 365:</span><span class="sxs-lookup"><span data-stu-id="f4c0c-108">The selected time zone will apply to all date and time information shown in the following features in the Microsoft 365 security center:</span></span>
+- <span data-ttu-id="f4c0c-109">Incidenti</span><span class="sxs-lookup"><span data-stu-id="f4c0c-109">Incidents</span></span>
+- <span data-ttu-id="f4c0c-110">Indagine e correzione automatizzate, incluso il centro notifiche</span><span class="sxs-lookup"><span data-stu-id="f4c0c-110">Automated investigation and remediation, including the action center</span></span>
+- <span data-ttu-id="f4c0c-111">Ricerca avanzata</span><span class="sxs-lookup"><span data-stu-id="f4c0c-111">Advanced hunting</span></span>
+
+<span data-ttu-id="f4c0c-112">Per impostare il fuso orario per queste funzionalità, andare a **Impostazioni** > **Microsoft Threat Protection** > **Fuso orario**.</span><span class="sxs-lookup"><span data-stu-id="f4c0c-112">To set the time zone for these features, go to **Settings** > **Microsoft Threat Protection** > **Time zone**.</span></span>
