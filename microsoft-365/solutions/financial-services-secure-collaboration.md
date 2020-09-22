@@ -12,12 +12,12 @@ ms.custom: ''
 localization_priority: Priority
 description: Microsoft 365 consente ai servizi finanziari di passare a una moderna piattaforma di collaborazione, contribuendo a mantenere i dati e i sistemi sicuri e conformi alle normative
 f1.keywords: NOCSH
-ms.openlocfilehash: 24355518219830d815ce027ec75bb72ee0675a32
-ms.sourcegitcommit: 9550298946f8accb90cd59be7b46b71d4bf4f8cc
+ms.openlocfilehash: 19f8acc4a0d94c9fb4952a31a8e119a99a553bf0
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/08/2020
-ms.locfileid: "46597522"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48197550"
 ---
 # <a name="key-compliance-and-security-considerations-for-us-banking-and-capital-markets"></a>Considerazioni chiave su conformità e sicurezza per i mercati bancario e finanziario degli Stati Uniti
 
@@ -164,7 +164,7 @@ Microsoft 365 consente a tutte le organizzazioni di identificare i dati sensibil
 * **Microsoft Information Protection (MIP)** sia per la classificazione basata sull'utente che per la classificazione automatica dei dati sensibili.
 * La **prevenzione della perdita dei dati (DLP) di Office 365** per l'identificazione automatica dei dati sensibili con tipi di dati sensibili (ossia espressioni regolari), parole chiave e applicazione dei criteri.
 
-**[Microsoft Information Protection (MIP)](https://docs.microsoft.com/information-protection/)** consente alle organizzazioni di classificare intelligentemente documenti e messaggi di posta elettronica usando etichette di riservatezza. Gli utenti possono applicare manualmente le etichette di riservatezza ai documenti nelle applicazioni di Microsoft Office e ai messaggi di posta elettronica in Outlook. Le etichette possono applicare automaticamente i contrassegni di documento, la protezione con crittografia e l'applicazione della gestione dei diritti. È possibile applicare automaticamente le etichette di riservatezza anche configurando criteri che usano parole chiave e tipi di dati riservati, come numeri di carta di credito, numeri di previdenza sociale e numeri di identità, per trovare e classificare automaticamente i dati riservati.
+**[Microsoft Information Protection (MIP)](../compliance/protect-information.md)** consente alle organizzazioni di classificare intelligentemente documenti e messaggi di posta elettronica usando etichette di riservatezza. Gli utenti possono applicare manualmente le etichette di riservatezza ai documenti nelle applicazioni di Microsoft Office e ai messaggi di posta elettronica in Outlook. Le etichette possono applicare automaticamente i contrassegni di documento, la protezione con crittografia e l'applicazione della gestione dei diritti. È possibile applicare automaticamente le etichette di riservatezza anche configurando criteri che usano parole chiave e tipi di dati riservati, come numeri di carta di credito, numeri di previdenza sociale e numeri di identità, per trovare e classificare automaticamente i dati riservati.
 
 Microsoft include anche "classificatori sottoponibili a training" che usano modelli di apprendimento automatico per identificare i dati sensibili in base al contenuto, anziché semplicemente attraverso criteri di ricerca o in base agli elementi all'interno del contenuto. Un classificatore apprende come identificare un tipo di contenuto esaminando numerosi esempi del contenuto da classificare. Il training di un classificatore inizia fornendo esempi di contenuto in una determinata categoria. Dopo avere appreso dagli esempi, il modello viene testato fornendogli una combinazione di esempi corrispondenti e non corrispondenti. Il classificatore stima se un determinato esempio rientra nella categoria o meno. Una persona poi conferma i risultati, ordinando i positivi, i negativi, i falsi positivi e i falsi negativi per aumentare l'accuratezza delle previsioni del classificatore. Quando viene pubblicato, il classificatore sottoposto a training elabora il contenuto in Microsoft SharePoint Online, Exchange Online e OneDrive for Business e lo classifica automaticamente.
 

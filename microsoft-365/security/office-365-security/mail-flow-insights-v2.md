@@ -12,14 +12,17 @@ localization_priority: Normal
 ms.assetid: beb6acaa-6016-4d54-ba7e-3d6d035e2b46
 description: Gli amministratori possono ottenere informazioni sulle intuizioni e sui report disponibili nel dashboard del flusso di posta elettronica nel centro sicurezza & Compliance.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 06e9449553d008bc383ae6f2b6098f9598cad43c
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: 089c6351485712d841691d5b856b1ba28dfe4fc4
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46826566"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48198482"
 ---
 # <a name="mail-flow-insights-in-the-security--compliance-center"></a>Informazioni dettagliate sul flusso di posta nel Centro sicurezza e conformità
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 Gli amministratori possono utilizzare il dashboard del flusso di posta elettronica nel centro sicurezza & Compliance per individuare le tendenze, le intuizioni e intraprendere azioni per risolvere i problemi relativi al flusso di posta nella propria organizzazione.
 

@@ -18,14 +18,17 @@ ms.collection:
 - M365-security-compliance
 description: Informazioni su Smart report e Insight disponibili nel centro sicurezza & compliance e su come utilizzarli per visualizzare ed esplorare i dati e intraprendere azioni rapide.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 5d100aca53f3683d477fd15469ae53ecb7a2901b
-ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
+ms.openlocfilehash: 7f8094c46868118bb88858dab6cd12b2427382be
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46652778"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48196336"
 ---
 # <a name="smart-reports-and-insights-in-the-security--compliance-center"></a>Report intelligenti e informazioni dettagliate nel Centro sicurezza e conformità
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 Se si è parte del team di sicurezza di Microsoft per l'organizzazione per 365 e le autorizzazioni necessarie sono state [assegnate nel centro sicurezza & Compliance](permissions-in-the-security-and-compliance-center.md), è possibile accedere a una serie di report, tra cui Smart report e Insight. Leggere questo articolo per ottenere una panoramica dei report e delle informazioni dettagliate e sul percorso da seguire per ulteriori informazioni sui report specifici.
 

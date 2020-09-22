@@ -16,12 +16,12 @@ ms.collection:
 - m365solution-infoprotection
 ms.custom: ''
 description: Impedire violazioni dei dati personali con i servizi Identity, Device e Threat Protection di Microsoft 365.
-ms.openlocfilehash: a309b5d0ba5f939cf89a31d7ac91ca3aac25ce0d
-ms.sourcegitcommit: 0f71042edc7c3a7f10a7b92e1943abf51532cbf5
+ms.openlocfilehash: a0efdcfe8e9d27e19b6cf1355a6d0943b7cdaa59
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "46520982"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48195664"
 ---
 # <a name="use-identity-device-and-threat-protection-for-data-privacy-regulation"></a>Utilizzo dell'identità, del dispositivo e della protezione dalle minacce per la normativa sulla privacy dei dati
 
@@ -33,17 +33,17 @@ Anche se le normative sulla privacy dei dati variano in base alla loro specifici
 
 - I dati personali devono essere elaborati in modo da garantire una sicurezza adeguata dei dati personali, inclusa la protezione contro l'elaborazione non autorizzata o illecita e contro la perdita accidentale, la distruzione o il danneggiamento, usando misure tecniche o organizzative appropriate ("integrità e riservatezza").
 
-Poiché le violazioni dei dati personali sono spesso causate da un compromesso dell'account amministrativo o dell'utente finale e da un accesso dannoso del sistema. Ad esempio, un hack dell'account di amministratore può comportare la exfiltration dei numeri di carta di credito del cliente o di altre informazioni personali. Tutti gli identificatori, i dispositivi e la protezione delle minacce generalmente consigliati disponibili con Microsoft 365 potrebbero essere implementati, che verranno riflessi nel punteggio di conformità.
+Poiché le violazioni dei dati personali sono spesso causate da un compromesso dell'account amministrativo o dell'utente finale e da un accesso dannoso del sistema. Ad esempio, un hack dell'account di amministratore può comportare la exfiltration dei numeri di carta di credito del cliente o di altre informazioni personali. Tutti gli identificatori, i dispositivi e la protezione delle minacce generalmente consigliati disponibili con Microsoft 365 potrebbero essere implementati, che verranno riflessi nel punteggio di conformità, individuati in Compliance Manager.
 
-## <a name="using-the-results-of-your-assessment-work-and-compliance-score"></a>Utilizzo dei risultati del lavoro di valutazione e del Punteggio di conformità
+## <a name="using-the-results-of-your-assessment-work-and-compliance-manager"></a>Utilizzo dei risultati del lavoro di valutazione e del Compliance Manager
 
-Il Punteggio di conformità include identità, dispositivo e protezione dalle minacce utilizzando queste categorie:
+Compliance Manager include identità, dispositivo e protezione dalle minacce utilizzando queste categorie:
 
 - Identity corrisponde alla categoria di **accesso ai controlli**
 - Dispositivo corrispondente alla categoria **Gestisci dispositivi**
 - La protezione dalle minacce corrisponde alla categoria **Proteggi contro i pericoli**
  
-Se questi sono selezionati nell'insieme del campione di quattro importanti normative sulla privacy dei dati, Score conformità specifica 90 azioni di miglioramento, la maggior parte delle quali ha un punteggio di "27". Poiché un numero così elevato viene definito dal punteggio di conformità per queste categorie, alcuni dei più comuni sono elencati qui, per riferimento.
+Se queste sono selezionate nel set di quattro principali normative sulla privacy dei dati, Compliance Manager specifica 90 azioni di miglioramento, la maggior parte delle quali ha un punteggio di "27". Poiché un numero così elevato viene chiamato da Compliance Manager per queste categorie, alcuni dei più comuni sono elencati qui, per riferimento.
 
 Utilizzare [Azure Active Directory (Azure ad)](https://azure.microsoft.com/services/active-directory/) per l'identità e la categoria di **accesso ai controlli** , con cui è possibile:
 

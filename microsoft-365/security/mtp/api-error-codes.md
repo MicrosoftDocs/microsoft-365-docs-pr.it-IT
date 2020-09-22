@@ -19,14 +19,17 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 36a1cedacc5f16c422e2b0d458b0d1767cf08b64
-ms.sourcegitcommit: 9a275a13af3e063e80ce1bd3cd8142a095db92d2
+ms.openlocfilehash: 81375b919b52ff895e5ec7014feb747b1a0eae65
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "47650377"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48201340"
 ---
 # <a name="common-microsoft-threat-protection-rest-api-error-codes"></a>Codici di errore comuni di Microsoft Threat Protection REST API
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 
 **Si applica a:**
 - Microsoft Threat Protection

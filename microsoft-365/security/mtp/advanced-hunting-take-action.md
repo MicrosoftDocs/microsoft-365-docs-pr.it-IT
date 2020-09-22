@@ -17,14 +17,17 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 4ebf220472db69d48127b805256e15246bd400cb
-ms.sourcegitcommit: 89178b8f20d59ca88cfca303a13062b91fbeae9d
+ms.openlocfilehash: 14785e032d6e4a7a0868308f4029df623456af2a
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "46552738"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48197894"
 ---
 # <a name="take-action-on-advanced-hunting-query-results"></a>Eseguire un'azione sui risultati delle query di ricerca avanzata
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 
 **Si applica a:**
 - Microsoft Threat Protection
@@ -55,10 +58,10 @@ Per ulteriori informazioni sul modo in cui vengono eseguite queste azioni di ris
 ## <a name="quarantine-files"></a>File di quarantena
 È possibile distribuire l'azione di *quarantena* sui file in modo che vengano automaticamente messi in quarantena quando vengono rilevati. Quando si seleziona questa azione, è possibile scegliere tra le colonne seguenti per identificare i file nei risultati della query per la quarantena:
 
-- `SHA1`-Nella maggior parte delle tabelle di caccia avanzate, questo è l'SHA-1 del file che è stato influenzato dall'azione registrata. Ad esempio, se un file è stato copiato, questo è il file copiato.
-- `InitiatingProcessSHA1`-Nella maggior parte delle tabelle di caccia avanzate, questo è il file responsabile dell'avvio dell'azione registrata. Ad esempio, se è stato avviato un processo figlio, questo è il processo padre. 
-- `SHA256`: Questo è l'equivalente SHA-256 del file identificato dalla `SHA1` colonna.
-- `InitiatingProcessSHA256`: Questo è l'equivalente SHA-256 del file identificato dalla `InitiatingProcessSHA1` colonna.
+- `SHA1` -Nella maggior parte delle tabelle di caccia avanzate, questo è l'SHA-1 del file che è stato influenzato dall'azione registrata. Ad esempio, se un file è stato copiato, questo è il file copiato.
+- `InitiatingProcessSHA1` -Nella maggior parte delle tabelle di caccia avanzate, questo è il file responsabile dell'avvio dell'azione registrata. Ad esempio, se è stato avviato un processo figlio, questo è il processo padre. 
+- `SHA256` : Questo è l'equivalente SHA-256 del file identificato dalla `SHA1` colonna.
+- `InitiatingProcessSHA256` : Questo è l'equivalente SHA-256 del file identificato dalla `InitiatingProcessSHA1` colonna.
 
 Per ulteriori informazioni sul modo in cui vengono eseguite le operazioni di quarantena e sulla modalità di ripristino dei file, [leggere informazioni sulle azioni di risposta sui file](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-file-alerts).
 

@@ -18,14 +18,17 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Gli amministratori possono ottenere informazioni sulle differenze tra la posta indesiderata (posta indesiderata) e la posta elettronica in blocco (Gray mail) in Exchange Online Protection (EOP).
-ms.openlocfilehash: 17e6223175013678f389c0d7624cc4e4f4476f98
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: 1e11f897a145f7b34acc81e1d132d6babac08979
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46826730"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48195476"
 ---
 # <a name="whats-the-difference-between-junk-email-and-bulk-email-in-eop"></a>Qual è la differenza tra posta elettronica indesiderata e posta elettronica in blocco in EOP?
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 In Microsoft 365 organizzazioni con cassette postali in Exchange Online o standalone Exchange Online Protection (EOP) organizzazioni senza cassette postali di Exchange Online, i clienti a volte chiedono: "Qual è la differenza tra posta elettronica indesiderata e posta elettronica in blocco?" In questo argomento viene illustrata la differenza e vengono descritti i controlli disponibili in EOP.
 

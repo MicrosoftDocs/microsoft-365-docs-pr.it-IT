@@ -17,14 +17,17 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 5bc49ddfa93a06bc8f3d84ce7b8492681ee65cb7
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: 20133e0f5dda3abc583adf66cc20a1d8fde190cf
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47950928"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48198002"
 ---
 # <a name="handle-advanced-hunting-errors"></a>Gestire gli errori di ricerca avanzata
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 
 Caccia avanzata Visualizza gli errori da notificare per errori di sintassi e ogni volta che le query hanno raggiunto [limiti predefiniti](advanced-hunting-limits.md). Fare riferimento alla tabella seguente per suggerimenti su come risolvere o evitare errori. 
 
@@ -40,6 +43,6 @@ Caccia avanzata Visualizza gli errori da notificare per errori di sintassi e ogn
 
 ## <a name="related-topics"></a>Argomenti correlati
 - [Procedure consigliate per la ricerca avanzata](advanced-hunting-best-practices.md)
-- [Limiti relativi al servizio](advanced-hunting-limits.md)
+- [Limiti di servizio](advanced-hunting-limits.md)
 - [Comprendere lo schema](advanced-hunting-schema-tables.md)
 - [Panoramica del linguaggio di query di Kusto](https://docs.microsoft.com/azure/data-explorer/kusto/query/)

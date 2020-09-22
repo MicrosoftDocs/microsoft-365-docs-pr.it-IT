@@ -18,14 +18,17 @@ ms.collection:
 - M365-security-compliance
 description: Gli amministratori possono sapere come funziona lo spoofing Intelligence Insight, compreso il modo in cui determinare rapidamente quali mittenti stanno inviando legalmente messaggi di posta elettronica non autenticati.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 1f04baca3761e44acfd26c09cdc0d5283db13697
-ms.sourcegitcommit: df6cc8c2eb2a65c7668f2953b0f7ec783a596d15
+ms.openlocfilehash: 6fc934491606a53ebfb4bae4f46ab9e1ee93467b
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/13/2020
-ms.locfileid: "44726511"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48198572"
 ---
 # <a name="walkthrough---atp-spoof-intelligence-insight-in-microsoft-365"></a>Procedura dettagliata: analisi di intelligence su spoofing di ATP in Microsoft 365
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 In Microsoft 365 organizzazioni con Advanced Threat Protection (ATP), è possibile utilizzare lo spoofing Intelligence Insight per determinare rapidamente quali mittenti stanno inviando legalmente messaggi di posta elettronica non autenticati. Consentendo loro di inviare messaggi falsificati, è possibile ridurre il rischio di eventuali falsi positivi per gli utenti. È inoltre possibile utilizzare lo spoofing Intelligence Insight per monitorare e gestire le coppie di domini consentite per fornire un ulteriore livello di sicurezza e impedire l'arrivo di messaggi non sicuri nell'organizzazione.
 
@@ -33,7 +36,7 @@ Se si è nuovi per [i report e le informazioni dettagliate nel centro sicurezza 
 
 Questa procedura dettagliata è una delle numerose per il Centro sicurezza & Compliance. Per informazioni sull'esplorazione di report e approfondimenti, vedere le procedure dettagliate nella sezione Argomenti correlati.
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare?
+## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare
 
 - Aprire il Centro sicurezza e conformità in <https://protection.office.com/>. Per accedere direttamente alla pagina del **dashboard di sicurezza** , utilizzare <https://protection.office.com/searchandinvestigation/dashboard> .
 
@@ -41,10 +44,10 @@ Questa procedura dettagliata è una delle numerose per il Centro sicurezza & Com
 
 - Prima di poter eseguire le procedure descritte in questo argomento, è necessario disporre delle autorizzazioni assegnate. Per utilizzare lo spoofing Intelligence Insight, è necessario essere membri di uno dei gruppi di ruoli seguenti:
 
-  - **Gestione organizzazione** o **amministratore della sicurezza** nel [Centro sicurezza & conformità](permissions-in-the-security-and-compliance-center.md).
-  - Gestione dell' **organizzazione** o **gestione dell'igiene** in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
-  - **Lettore di sicurezza** nel [Centro sicurezza & conformità](permissions-in-the-security-and-compliance-center.md).
-  - **Gestione dell'organizzazione in sola visualizzazione** in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
+  - **Gestione organizzazione** o **Amministratore sicurezza** nel [Centro sicurezza e conformità](permissions-in-the-security-and-compliance-center.md).
+  - **Gestione organizzazione** o **Gestione igiene** in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
+  - **Lettore sicurezza** nel [Centro sicurezza e conformità](permissions-in-the-security-and-compliance-center.md).
+  - **Gestione organizzazione in sola lettura** in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
 
 - È possibile abilitare e disabilitare l'intelligence spoof nei criteri di anti-phishing ATP. Per ulteriori informazioni, vedere [configurare i criteri di anti-phishing ATP in Microsoft 365](configure-atp-anti-phishing-policies.md).
 
@@ -68,7 +71,7 @@ Questa procedura dettagliata è una delle numerose per il Centro sicurezza & Com
 
    - **Modalità Insight**. Se si dispone di un criterio di spoofing abilitato, l'Insight mostrerà il numero di messaggi che sono stati influenzati dalle funzionalità di intelligence spoof negli ultimi 30 giorni.
 
-   - **Che cosa succede se Mode**. Se non si dispone di alcun criterio di spoofing abilitato, l'Insight mostrerà il numero di messaggi *che sono stati* influenzati dalle funzionalità di intelligence spoof negli ultimi 30 giorni.
+   - **Che cosa succede se Mode**. Se non si dispone di alcun criterio di spoofing abilitato, l'Insight mostrerà il numero di messaggi  *che sono stati*  influenzati dalle funzionalità di intelligence spoof negli ultimi 30 giorni.
 
    In entrambi i casi, i domini falsificati visualizzati nell'Insight sono separati in due categorie: **coppie di domini sospetti** e **coppie di domini non sospetti**. Queste categorie sono ulteriormente suddivise in tre diversi bucket che è possibile esaminare.
 
@@ -102,7 +105,7 @@ Questa procedura dettagliata è una delle numerose per il Centro sicurezza & Com
 
 In questo modo viene modificata la combinazione univoca di coppie di domini del dominio contraffatto e l'infrastruttura di invio e non viene fornita alcuna copertura per l'intero dominio contraffatto o per l'infrastruttura di invio in isolamento.
 
-Ad esempio, se si aggiunge la seguente coppia di dominio all'elenco dei mittenti consentiti ' AllowedToSpoof ': il *dominio contraffatto* "Gmail.com" e *l'infrastruttura di invio* "TMS *. MX.com",* sarà possibile eseguire la falsificazione solo della posta dalla coppia di dominio. Altri mittenti che tentano di falsificare "gmail.com" e altri domini che "tms.mx.com" tentano di falsificare continueranno a essere protetti dall'intelligence contraffatta.
+Ad esempio, se si aggiunge la seguente coppia di dominio all'elenco dei mittenti consentiti ' AllowedToSpoof ': il  *dominio contraffatto*  "Gmail.com" e *l'infrastruttura di invio* "TMS *. MX.com",* sarà possibile eseguire la falsificazione solo della posta dalla coppia di dominio. Altri mittenti che tentano di falsificare "gmail.com" e altri domini che "tms.mx.com" tentano di falsificare continueranno a essere protetti dall'intelligence contraffatta.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
