@@ -14,12 +14,12 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Panoramica della connettività di rete nell'interfaccia di amministrazione di Microsoft 365 (anteprima)
-ms.openlocfilehash: a51cfba962ff884afa634473c0523e49a92a56f5
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: fc800d6f7a63e34f83b089fdea41b68cbf9134da
+ms.sourcegitcommit: 4ee683c18442386f6fc5c76ffabfad2c28b81d42
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48200798"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "48214916"
 ---
 # <a name="network-connectivity-in-the-microsoft-365-admin-center-preview"></a>Connettività di rete nell'interfaccia di amministrazione di Microsoft 365 (anteprima)
 
@@ -33,7 +33,7 @@ Le **valutazioni di rete** e le informazioni sulla **rete** vengono visualizzate
 
 Potrebbe essere richiesto di partecipare all'anteprima pubblica per questa funzionalità per conto dell'organizzazione. L'accettazione è di solito avvenuta immediatamente e quindi viene visualizzata la pagina connettività di rete. 
 
-Quando si accede alla pagina connettività di rete, viene visualizzato un riquadro di panoramica contenente una mappa delle prestazioni della rete globale, una valutazione della rete con ambito per l'intero tenant e un elenco di problemi correnti. Per accedere a questa pagina, è necessario essere un amministratore dell'organizzazione all'interno di Microsoft 365. Il ruolo amministrativo lettore di report avrà accesso in lettura a queste informazioni. Per configurare le posizioni e gli altri elementi della connettività di rete, un amministratore deve far parte di un ruolo di amministratore del server, ad esempio il ruolo di amministratore del servizio di supporto. Dalla panoramica, è possibile eseguire il drill-down per visualizzare specifiche metriche delle prestazioni di rete e problemi in base alla posizione. Per ulteriori informazioni, vedere [Network Performance Overview in the Microsoft 365 Admin Center](#network-connectivity-overview-in-the-microsoft-365-admin-center).
+Quando si accede alla pagina connettività di rete, viene visualizzato un riquadro di panoramica contenente una mappa delle prestazioni della rete globale, una valutazione della rete con ambito per l'intero tenant e un elenco di problemi correnti. Per accedere a questa pagina, è necessario essere un amministratore dell'organizzazione all'interno di Microsoft 365. Il ruolo amministrativo lettore di report avrà accesso in lettura a queste informazioni. Per configurare le posizioni e gli altri elementi della connettività di rete, un amministratore deve far parte di un ruolo di amministratore del server, ad esempio il ruolo di amministratore del servizio di supporto. Dalla panoramica, è possibile eseguire il drill-down per visualizzare specifiche metriche delle prestazioni di rete e problemi in base alla posizione. Per ulteriori informazioni, vedere [Panoramica della connettività di rete nell'interfaccia di amministrazione di Microsoft 365](#network-connectivity-overview-in-the-microsoft-365-admin-center).
 
 ## <a name="pre-requisites-for-network-connectivity-assessments-to-appear"></a>Requisiti preliminari per le valutazioni della connettività di rete da visualizzare
 

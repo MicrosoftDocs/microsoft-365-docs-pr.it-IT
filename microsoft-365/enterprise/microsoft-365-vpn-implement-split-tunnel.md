@@ -3,7 +3,7 @@ title: Implementazione dello split tunneling per VPN per Office 365
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 9/21/2020
+ms.date: 9/22/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -17,12 +17,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Come implementare lo split tunneling per VPN per Office 365
-ms.openlocfilehash: bfdc11ffe4244ec0ac83bb1c0470476aafeec939
-ms.sourcegitcommit: cd11588b47904c7d2ae899a9f5280f93d3850171
+ms.openlocfilehash: af5c2ea35df921abe8eaa9a85ab2ab244931c098
+ms.sourcegitcommit: 4ee683c18442386f6fc5c76ffabfad2c28b81d42
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "48171423"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "48214877"
 ---
 # <a name="implementing-vpn-split-tunneling-for-office-365"></a>Implementazione dello split tunneling per VPN per Office 365
 
@@ -37,7 +37,7 @@ Per un certo periodo di tempo, i modelli di VPN in cui tutte le connessioni dal 
 
 L'uso di VPN con tunnel forzato per la connessione ad applicazioni cloud distribuite e sensibili alle prestazioni non è particolarmente ottimale, tuttavia tale aspetto negativo è stato accettato da alcune aziende per mantenere lo status quo dal punto di vista della sicurezza. Di seguito è illustrato un diagramma di esempio di questo scenario:
 
-![Configurazione di split tunneling per VPN](../media/vpn-split-tunneling/vpn-ent-challenge.png)
+![Configurazione di split tunneling per VPN](../media/vpn-split-tunneling/enterprise-network-traditional.png)
 
 Il problema aumenta già da diversi anni, con molti clienti che segnalano un cambiamento significativo dei modelli di traffico di rete. Il traffico utilizzato per rimanere nei locali ora si connette a endpoint di cloud esterni. Molti clienti Microsoft segnalano che, in precedenza, circa l'80% del traffico di rete era associato a un'origine interna, rappresentata dalla riga punteggiata nel diagramma precedente. Nel 2020 la percentuale è scesa a meno del 20%, perché i clienti hanno spostato i principali carichi di lavoro nel cloud. Questa tendenza è comune anche ad altre aziende. Con il graduale passaggio al cloud, il modello precedente risulta sempre più lento e insostenibile e ciò impedisce alle aziende di essere agili nel loro passaggio a un ambiente cloud-first.
 
@@ -95,7 +95,7 @@ In questa sezione è disponibile la semplice procedura per eseguire la migrazion
 
 Il diagramma seguente illustra come funziona la soluzione split tunneling per VPN consigliata:
 
-![Dettagli della soluzione split tunneling per VPN](../media/vpn-split-tunneling/vpn-split-detail.png)
+![Dettagli della soluzione split tunneling per VPN](../media/vpn-split-tunneling/vpn-split-tunnel-example.png)
 
 ### <a name="1-identify-the-endpoints-to-optimize"></a>1. Identificare gli endpoint da ottimizzare
 
@@ -109,9 +109,6 @@ Gli URL di questa categoria presentano le seguenti caratteristiche:
 - Sono caratterizzati da sensibilità alla latenza e/o larghezza di banda
 - Sono in grado di avere elementi di sicurezza richiesti forniti nel servizio piuttosto che in linea sulla rete
 - Rappresentano circa il 70-80% del volume di traffico nel servizio Office 365
-
->[!NOTE]
->Microsoft si impegna a sospendere le modifiche agli endpoint **Optimize** per Office 365 fino almeno al **30 giugno 2020**, per consentire agli utenti di porre l'attenzione su altre difficoltà anziché gestire l'elenco endpoint consentiti dopo l'implementazione iniziale. Questo articolo verrà aggiornato in modo da riflettere eventuali modifiche future.
 
 Per altre informazioni sugli endpoint di Office 365 e su come sono classificati e gestiti, vedere l'articolo [Gestione degli endpoint di Office 365](managing-office-365-endpoints.md).
 

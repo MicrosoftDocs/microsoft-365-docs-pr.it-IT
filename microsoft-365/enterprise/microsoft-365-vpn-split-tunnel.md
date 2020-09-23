@@ -3,7 +3,7 @@ title: 'Panoramica: split tunneling per VPN con Office 365'
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 4/3/2020
+ms.date: 9/22/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -17,12 +17,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Informazioni su come usare lo split tunneling per VPN con Office 365 per ottimizzare la connettività di Office 365 per gli utenti remoti.
-ms.openlocfilehash: aad7932abb6b96a518b069ec24e836d2b5d234a1
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: cda9333c7edbcc323544290c2ba946a8464f9c57
+ms.sourcegitcommit: 4ee683c18442386f6fc5c76ffabfad2c28b81d42
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46696133"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "48214767"
 ---
 # <a name="optimize-office-365-connectivity-for-remote-users-using-vpn-split-tunneling"></a>Ottimizzare la connettività di Office 365 per gli utenti remoti tramite split tunneling VPN
 <!---
@@ -89,16 +89,13 @@ Questo set limitato di endpoint può essere diviso dal tunnel VPN forzato e invi
 
 Elementi di sicurezza quali DLP, protezione AV, autenticazione e controllo degli accessi possono essere forniti in modo molto più efficiente rispetto a questi endpoint a diversi livelli all'interno del servizio. Inoltre, distogliendo la maggior parte del volume del traffico dalla VPN, questa soluzione rende disponibile capacità VPN per il traffico aziendale critico che ancora si basa su di esso. Consente inoltre di evitare di passare attraverso un programma di aggiornamento, in molti casi, lungo e costoso per far fronte a questo nuovo modo di operare.
 
-![Configurazione di split tunneling per VPN](../media/vpn-split-tunneling/vpn-model-2.png)
+![Dettagli di configurazione della VPN del tunnel diviso](../media/vpn-split-tunneling/vpn-split-tunnel-example.png)
 
 _Figura 3 - Soluzione split tunnel VPN con evidenti eccezioni di Office 365 inviate direttamente al servizio. Tutto il resto del traffico è obbligato a tornare nella rete aziendale indipendentemente dalla destinazione._
 
 Da un punto di vista della sicurezza, Microsoft offre una vasta gamma di funzionalità che possono essere usate per garantire una sicurezza simile o anche superiore a quella offerta dal controllo in linea tramite stack di sicurezza locali. Il post del blog del team di sicurezza di Microsoft [Modi alternativi per i professionisti della sicurezza e l'IT per ottenere moderni controlli di sicurezza nei particolari scenari odierni di lavoro remoto](https://www.microsoft.com/security/blog/2020/03/26/alternative-security-professionals-it-achieve-modern-security-controls-todays-unique-remote-work-scenarios/) contiene un chiaro riepilogo delle funzionalità disponibili oltre alle informazioni dettagliate in questo articolo. È anche possibile leggere informazioni sull'implementazione della soluzione split tunneling per VPN di Microsoft nella pagina [Running on VPN: How Microsoft is keeping its remote workforce connected](https://www.microsoft.com/itshowcase/blog/running-on-vpn-how-microsoft-is-keeping-its-remote-workforce-connected/?elevate-lv) (Lavorare su VPN: la soluzione Microsoft per mantenere connessa la forza lavoro remota).
 
 In molti casi, l'implementazione è possibile in poche ore, il che offre una rapida risoluzione a uno dei problemi più urgenti delle organizzazioni, il rapido passaggio al lavoro remoto su vasta scala. Per informazioni sullo split tunneling per VPN, vedere [Implementazione dello split tunneling per VPN per Office 365](microsoft-365-vpn-implement-split-tunnel.md).
-
->[!NOTE]
->Microsoft si impegna a sospendere le modifiche agli endpoint **Optimize** per Office 365 fino almeno al **30 giugno 2020**, per consentire agli utenti di porre l'attenzione su altre difficoltà anziché gestire l'elenco endpoint consentiti dopo l'implementazione iniziale.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
