@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: fb964bd6dcf229f362476b68ad87d05053e87f74
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 079fb69eb4d8fd41b9493d8bf992084640f2835a
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47417750"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208658"
 ---
 # <a name="australian-prudential-regulation-authority-apra"></a>Autorità per la regolamentazione prudenziale australiana (APRA)
 
@@ -70,7 +70,7 @@ Facendo affidamento sul nostro approccio globale alla sicurezza dei rischi nel c
 
 Ottenere supporto pratico per lo spostamento di dati e carichi di lavoro in Azure in conformità con le normative di APRA: [scaricare i servizi cloud Microsoft: un elenco di controllo di conformità per gli istituti finanziari in Australia](https://www.microsoft.com/cms/api/am/binary/RE3ez0C).
 
-## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud Microsoft inclusi nell'ambito
+## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud Microsoft in ambito
 
 - [Azure](https://aka.ms/AzureCompliance)
 - [Office 365](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
@@ -87,6 +87,10 @@ Inoltre, se i servizi cloud sono considerati come "rischi intrinseci accentuati 
 **I trasferimenti di dati al di fuori dell'Australia sono consentiti?**
 
 Sì. La normativa sulla privacy generale (che si applica a tutti i settori, non solo agli istituti finanziari) consente il trasferimento al di fuori dell'Australia in determinate condizioni. Microsoft accetta i termini contrattuali in linea con i principi di privacy australiano in modo che i trasferimenti di dati al di fuori dell'Australia siano consentiti quando si utilizzano i servizi cloud Microsoft. Tuttavia, molti dei nostri clienti di servizi finanziari australiani approfittano dei servizi cloud disponibili nei datacenter australiani, per i quali si effettuano impegni contrattuali specifici per archiviare le categorie di dati a riposo nella geografia australiana. Tali impegni sono descritti ulteriormente nell'elenco di controllo della [conformità](https://www.microsoft.com/cms/api/am/binary/RE3ez0C).
+
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>Utilizzo di Microsoft Compliance Manager per valutare i rischi
+
+[Microsoft Compliance Manager](compliance-manager.md) è una funzionalità del [centro conformità di Microsoft 365](microsoft-365-compliance-center.md) che consente di comprendere la posizione di conformità dell'organizzazione e di intraprendere azioni per contribuire alla riduzione dei rischi. Compliance Manager offre un modello Premium per la creazione di una valutazione per questo regolamento. Individuare il modello nella pagina **modelli di valutazione** in Compliance Manager. Informazioni su come [creare valutazioni in Compliance Manager](compliance-manager-assessments.md).
 
 ## <a name="resources"></a>Risorse
 

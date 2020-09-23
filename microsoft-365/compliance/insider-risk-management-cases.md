@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 8667c625de4c83c98efd8f1cf20f3db57ed0d4c5
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 2ba67f833a7a4ee14b53adf38db786bb344a40bb
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47416560"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208852"
 ---
 # <a name="insider-risk-management-cases"></a>Casi di gestione dei rischi Insider
 
@@ -127,6 +127,15 @@ La scheda **attività utente** è uno degli strumenti più potenti per l'analisi
 4. **Cronologia attività di rischio**: sono elencate le cronologie complete di tutti gli avvisi di rischio associati al caso, inclusi tutti i dettagli disponibili nel corrispondente bolla di avviso.
 5. **Azioni del caso**: le opzioni per la risoluzione del caso si trovano nella barra degli strumenti azione caso. È possibile risolvere un caso, inviare un messaggio di posta elettronica all'utente oppure inoltrare il caso per una ricerca di dati o di utenti.
 
+### <a name="activity-explorer-preview"></a>Esplora attività (anteprima)
+
+>[!IMPORTANT]
+>La scheda Esplora attività è disponibile nell'area di gestione dei casi per gli utenti con eventi di attivazione dopo che questa funzionalità è disponibile nell'organizzazione.
+
+La scheda **Esplora attività** consente agli analisti e ai ricercatori dei rischi di esaminare i dettagli relativi alle attività associati agli avvisi di rischio. Ad esempio, come parte delle azioni di gestione dei casi, gli investigatori e gli analisti potrebbero dover rivedere tutte le attività a rischio associate al caso per ulteriori dettagli. Con **Esplora attività**, i revisori possono esaminare rapidamente una sequenza temporale di attività di rischio rilevata e identificare e filtrare tutte le attività di rischio associate agli avvisi.
+
+Per ulteriori informazioni sull'attività Esplora risorse, vedere l'articolo [Insider Risk Management Alerts](insider-risk-management-alerts.md#activity-explorer-preview) .
+
 ### <a name="content-explorer"></a>Esplora contenuto
 
 La scheda **Content Explorer** consente agli analisti e ai ricercatori dei rischi di esaminare le copie di tutti i singoli file e messaggi di posta elettronica associati agli avvisi di rischio. Ad esempio, se viene creato un avviso quando un utente esegue il download di centinaia di file da SharePoint Online e l'attività attiva un avviso per i criteri, tutti i file scaricati per l'avviso vengono acquisiti e copiati nel caso di gestione dei rischi Insider provenienti da origini di archiviazione originali.
@@ -196,15 +205,42 @@ Per inoltrare un caso a un'indagine dell'utente:
 1. Nel [centro conformità di Microsoft 365](https://compliance.microsoft.com)accedere a **gestione dei rischi Insider** e selezionare la scheda **case** .
 2. Selezionare un caso, quindi selezionare il pulsante **escalation for investigation** sulla barra degli strumenti azione case.
 3. Nella finestra **di dialogo escalation for investigation** immettere un nome per la nuova indagine utente. Se necessario, immettere le note relative al caso e selezionare **escalation**.
+4. Esaminare i campi avvisi e aggiornarli in base alle esigenze. I valori immessi qui sostituiranno i valori del modello.
 5. Selezionare **conferma** per creare il caso di indagine dell'utente oppure fare clic su **Annulla** per chiudere la finestra di dialogo senza creare un nuovo caso di indagine utente.
 
 Dopo che il caso di gestione dei rischi Insider è stato inoltrato a un nuovo caso di indagine dell'utente, è possibile esaminare il nuovo caso nell'area avanzata di **eDiscovery**  >  **Advanced** nel centro conformità di Microsoft 365.
 
-### <a name="share-a-case"></a>Condivisione di un caso
+### <a name="run-automated-tasks-with-power-automate-flows-for-the-case"></a>Eseguire attività automatizzate con flussi automatici di alimentazione per il caso
 
-La condivisione di un caso di gestione dei rischi insider consente a ricercatori e revisioni di collaborare facilmente con altre parti interessate della conformità nell'organizzazione. È possibile condividere rapidamente un collegamento a un caso di gestione dei rischi Insider con le parti interessate esterne dall'area di gestione dei casi. Per accedere al caso di gestione dei rischi Insider dal collegamento, le parti interessate devono essere incluse in tutti i gruppi di ruoli di gestione dei rischi Insider.
+Utilizzando i flussi automatici di alimentazione automatizzati consigliati, gli investigatori e gli analisti del rischio possono intervenire rapidamente per:
 
-Sono disponibili le opzioni di condivisione seguenti: 
+- Richiedere informazioni da HR o business su un utente in un caso di rischio Insider
+- Gestione notifiche quando un utente dispone di un avviso di rischio Insider
+- Aggiungere un promemoria calendario per il follow-up di un caso di rischio Insider
+
+Per eseguire, gestire o creare flussi automatici di alimentazione per un caso di gestione dei rischi Insider:
+
+1. Selezionare **automatizza** sulla barra degli strumenti azione case. 
+2. Scegliere il flusso Power automatizzate per l'esecuzione, quindi selezionare **Esegui flusso**. 
+3. Dopo il completamento del flusso, selezionare **fine**.
+
+Per ulteriori informazioni sui flussi automatici di alimentazione per la gestione dei rischi Insider, vedere [Introduzione alle impostazioni di gestione dei rischi Insider](insider-risk-management-settings.md#power-automate-flows-preview).
+
+### <a name="view-or-create-a-microsoft-teams-team-for-the-case"></a>Visualizzazione o creazione di un team di Microsoft teams per il caso
+
+Quando l'integrazione di Microsoft teams per la gestione dei rischi Insider è abilitata in impostazioni, viene creato automaticamente un team di Microsoft teams ogni volta che viene confermato un avviso e viene creato un caso. Gli investigatori e gli analisti del rischio possono aprire rapidamente Microsoft teams e passare direttamente al team per un caso selezionando **Visualizza team di Microsoft teams** sulla barra degli strumenti azione caso.
+
+Per i casi aperti prima di abilitare l'integrazione di Microsoft Team, gli investigatori e gli analisti del rischio possono creare un nuovo team Microsoft teams per un caso selezionando **Crea team di Microsoft** teams sulla barra degli strumenti azione caso.
+
+Quando viene risolto un caso, il team Microsoft associato verrà archiviato automaticamente (nascosto e trasformato in sola lettura).
+
+Per ulteriori informazioni su Microsoft teams per la gestione dei rischi Insider, vedere [Getting Started with Insider Risk Management Settings](insider-risk-management-settings.md#microsoft-teams-preview).
+
+### <a name="share-the-case"></a>Condividere il caso
+
+La condivisione di un caso di gestione dei rischi insider consente a ricercatori e analisti di rischi di collaborare facilmente con altre parti interessate della conformità nell'organizzazione. È possibile condividere rapidamente un collegamento a un caso di gestione dei rischi Insider con le parti interessate esterne dall'area di gestione dei casi. Per accedere al caso di gestione dei rischi Insider dal collegamento, le parti interessate devono essere incluse in tutti i gruppi di ruoli di gestione dei rischi Insider.
+
+Sono disponibili le opzioni di condivisione seguenti:
 
 - **ServiceNow**: dopo aver configurato il connettore Microsoft 365 ServiceNow per l'organizzazione Microsoft 365, è possibile condividere facilmente un collegamento al caso, aprire un evento imprevisto o richiedere una modifica all'organizzazione di ServiceNow. Per condividere il caso con ServiceNow, selezionare **Condividi**  >  **ServiceNow** dall'azione maiuscole/minuscole. L'integrazione di ServiceNow con i supporti di gestione dei rischi Insider include le seguenti operazioni e informazioni sul caso:
     - **Nome attività**: il nome della nuova attività di ServiceNow.

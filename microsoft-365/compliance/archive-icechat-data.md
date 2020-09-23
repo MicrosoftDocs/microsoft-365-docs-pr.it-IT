@@ -12,14 +12,14 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Gli amministratori possono configurare un connettore per importare e archiviare i dati dallo strumento ICE chat in Microsoft 365. In questo modo è possibile archiviare i dati provenienti da origini dati di terze parti in Microsoft 365 per poter utilizzare le funzionalità di conformità, come la conservazione legale, la ricerca di contenuto e i criteri di ritenzione per gestire i dati di terze parti dell'organizzazione.
-ms.openlocfilehash: b6b31c0ef9b083aa6432e35029fc14be1a817733
-ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
+ms.openlocfilehash: 94a2d35b9bb8d3a0edae0eebeae53d7dd7b04af2
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47358228"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48196369"
 ---
-# <a name="set-up-a-connector-to-archive-ice-chat-data-preview"></a>Configurare un connettore per archiviare i dati della chat di ghiaccio (anteprima)
+# <a name="set-up-a-connector-to-archive-ice-chat-data"></a>Configurare un connettore per archiviare i dati della chat di ghiaccio
 
 Utilizzare un connettore nativo nel centro conformità di Microsoft 365 per importare e archiviare i dati della chat dei servizi finanziari dallo strumento di collaborazione di ICE chat. Dopo aver configurato e configurato un connettore, si connette al sito di ICE chat Secure FTP (SFTP) dell'organizzazione una volta al giorno, converte il contenuto dei messaggi di chat in un formato di messaggio di posta elettronica e quindi importa tali elementi nelle cassette postali in Microsoft 365.
 
@@ -59,7 +59,7 @@ Il primo passaggio consiste nell'ottenere una copia delle chiavi pubbliche per S
 
 1. Andare a [https://compliance.microsoft.com](https://compliance.microsoft.com) e fare clic su **connettori dati** nel NAV sinistro.
 
-2. Nella pagina **connettori dati (anteprima)** in **Ice chat**fare clic su **Visualizza**.
+2. Nella pagina **connettori dati** in **Ice chat**fare clic su **Visualizza**.
 
 3. Nella pagina **chat di ghiaccio** fare clic su **Aggiungi connettore**.
 

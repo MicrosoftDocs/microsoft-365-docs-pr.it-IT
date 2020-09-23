@@ -11,16 +11,15 @@ ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
-ROBOTS: NOINDEX, NOFOLLOW
 description: Gli amministratori possono configurare un connettore di invio di messaggi per importare e archiviare SMS, MMS e chiamate vocali dai telefoni cellulari Android. In questo modo è possibile archiviare i dati provenienti da origini dati di terze parti in Microsoft 365 per poter utilizzare le funzionalità di conformità, come la conservazione legale, la ricerca di contenuto e i criteri di ritenzione per gestire i dati di terze parti dell'organizzazione.
-ms.openlocfilehash: 2284e09b3f04bf135435407a842f3e2c3f0648fa
-ms.sourcegitcommit: a6625f76e8f19eebd9353ed70c00d32496ec06eb
+ms.openlocfilehash: 35ff69ec3b8f0af5ed86350862bb7b0917a98909
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47362099"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48200261"
 ---
-# <a name="set-up-a-connector-to-archive-android-mobile-data-preview"></a>Configurare un connettore per l'archiviazione dei dati per dispositivi mobili Android (anteprima)
+# <a name="set-up-a-connector-to-archive-android-mobile-data"></a>Configurare un connettore per l'archiviazione dei dati per dispositivi mobili Android
 
 Utilizzare un connettore TeleMessage nel centro conformità di Microsoft 365 per importare e archiviare SMS, MMS, chiamate vocali e registri di chiamata dai telefoni cellulari Android. Dopo aver configurato e configurato un connettore, si connette all'account del telemessaggio dell'organizzazione una volta al giorno e importa la comunicazione mobile dei dipendenti utilizzando l'archiviatore Android di telemessaggio per le cassette postali in Microsoft 365.
 
@@ -84,4 +83,4 @@ L'ultimo passaggio consiste nel creare un connettore di archiviazione Android ne
 
 ## <a name="known-issues"></a>Problemi noti
 
-- Al momento, non è supportato l'importazione di allegati di dimensioni superiori a 10 MB, ma il supporto per gli elementi di grandi dimensioni sarà disponibile in una data successiva.
+- Al momento, non è supportato l'importazione di allegati o elementi di dimensioni superiori a 10 MB. Il supporto per gli elementi di grandi dimensioni sarà disponibile in un secondo momento.

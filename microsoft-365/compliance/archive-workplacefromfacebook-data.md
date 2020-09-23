@@ -11,16 +11,15 @@ ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
-ROBOTS: NOINDEX, NOFOLLOW
 description: Gli amministratori possono configurare un connettore per l'importazione e l'archiviazione dei dati dal luogo di lavoro da Facebook, archiviati nel sito Merge1 di Globanet, in Microsoft 365. La configurazione di un connettore richiede l'utilizzo di Globanet questo connettore consente di archiviare i dati da origini dati di terze parti in Microsoft 365, in modo da poter utilizzare le funzionalità di conformità, ad esempio la conservazione legale, la ricerca di contenuto e i criteri di ritenzione per gestire i dati di terze parti dell'organizzazione.
-ms.openlocfilehash: 4bef408f7da93f2ade18fe126d3a1dedaa413a65
-ms.sourcegitcommit: 57b37a3ce40f205c7320d5be1a0d906dd492b863
+ms.openlocfilehash: cea8f7549bbf1ed19bc3de6fe4d1e1c63f1be4cd
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "47405487"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48195583"
 ---
-# <a name="set-up-a-connector-to-archive-workplace-from-facebook-data-preview"></a>Configurare un connettore per l'archiviazione sul posto di lavoro da Facebook Data (anteprima)
+# <a name="set-up-a-connector-to-archive-workplace-from-facebook-data"></a>Configurare un connettore per l'archiviazione dei luoghi di lavoro da Facebook
 
 Utilizzare un connettore di Globanet nel centro conformità di Microsoft 365 per importare e archiviare i dati dal luogo di lavoro da Facebook alle cassette postali degli utenti nell'organizzazione Microsoft 365. Globanet fornisce un [posto di lavoro dal connettore Facebook](https://globanet.com/workplace/) configurato per acquisire elementi dall'origine dati di terze parti (su base regolare) e importare tali elementi in Microsoft 365. Il connettore converte il contenuto, ad esempio chat, allegati, post e video dal luogo di lavoro a un formato di messaggio di posta elettronica e quindi importa tali elementi nelle cassette postali degli utenti in Microsoft 365.
 
@@ -40,7 +39,7 @@ Nella panoramica seguente viene illustrato il processo di utilizzo di un connett
 
 4. Il connettore importa gli elementi convertiti nelle cassette postali di utenti specifici utilizzando il valore della proprietà di *posta elettronica* del mapping automatico degli utenti, come descritto nel passaggio 3. Viene creata una sottocartella nella cartella posta in arrivo denominata **luogo di lavoro da Facebook** e gli elementi di lavoro vengono importati in tale cartella. Il connettore esegue questa operazione utilizzando il valore della proprietà di *posta elettronica* . Tutti gli elementi di lavoro contengono questa proprietà, che viene popolata con l'indirizzo di posta elettronica di ogni chat o post partecipante.
 
-## <a name="before-you-begin"></a>Informazioni preliminari
+## <a name="before-you-begin"></a>Prima di iniziare
 
 - Creare un account Merge1 di Globanet per i connettori Microsoft. A tale scopo, contattare il [supporto clienti di Globanet](https://globanet.com/ms-connectors-contact). È necessario accedere a questo account quando si crea il connettore nel passaggio 1.
 
@@ -94,4 +93,4 @@ Dopo aver creato il luogo di lavoro dal connettore Facebook, è possibile visual
 
 ## <a name="known-issues"></a>Problemi noti
 
-- Al momento, non è supportato l'importazione di allegati di dimensioni superiori a 10 MB, ma il supporto per gli elementi di grandi dimensioni sarà disponibile in una data successiva.
+- Al momento, non è supportato l'importazione di allegati o elementi di dimensioni superiori a 10 MB. Il supporto per gli elementi di grandi dimensioni sarà disponibile in un secondo momento.

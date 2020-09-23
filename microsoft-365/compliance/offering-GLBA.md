@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 1b3cf1017a3ed64cecafe269e313ab5a6980af25
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 7969d18bea1e8873651a1ea94e46c6b7a6b48c83
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47417730"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208398"
 ---
 # <a name="gramm-leach-bliley-act-glba"></a>Gramm-Leach-Bliley Act (GLBA)
 
@@ -38,7 +38,7 @@ Microsoft ha sviluppato gli strumenti di valutazione dei rischi sia per [Azure](
 - [Scaricare lo strumento di valutazione del rischio cloud di Azure Financial Services](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=6b218946-c235-4234-9beb-d557e39a3f44&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_Compliance_Guides)
 - [Scaricare lo strumento di valutazione del rischio cloud di Office 365](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=55702ffd-c35a-4619-8722-ab71c0c02002&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_Compliance_Guides)
 
-## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud Microsoft inclusi nell'ambito
+## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud Microsoft in ambito
 
 - [Azure](https://aka.ms/AzureCompliance)
 - [Dynamics 365](https://aka.ms/d365-compliance-list)
@@ -51,6 +51,10 @@ Microsoft ha sviluppato gli strumenti di valutazione dei rischi sia per [Azure](
 **Come sapere se il mio istituto finanziario deve essere conforme all'GLB Act?**
 
 La FTC risponde in dettaglio alla propria pagina di GLB Act, [che è coperta dalla regola sulla privacy](https://www.ftc.gov/tips-advice/business-center/guidance/how-comply-privacy-consumer-financial-information-rule-gramm#whois)?
+
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>Utilizzo di Microsoft Compliance Manager per valutare i rischi
+
+[Microsoft Compliance Manager](compliance-manager.md) è una funzionalità del [centro conformità di Microsoft 365](microsoft-365-compliance-center.md) che consente di comprendere la posizione di conformità dell'organizzazione e di intraprendere azioni per contribuire alla riduzione dei rischi. Compliance Manager offre un modello Premium per la creazione di una valutazione per questo regolamento. Individuare il modello nella pagina **modelli di valutazione** in Compliance Manager. Informazioni su come [creare valutazioni in Compliance Manager](compliance-manager-assessments.md).
 
 ## <a name="resources"></a>Risorse
 

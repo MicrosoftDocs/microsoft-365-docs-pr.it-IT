@@ -11,16 +11,15 @@ ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
-ROBOTS: NOINDEX, NOFOLLOW
 description: Gli amministratori possono configurare un connettore per l'importazione e l'archiviazione dei dati dalle riunioni dello zoom di Globanet in Microsoft 365. In questo modo è possibile archiviare i dati provenienti da origini dati di terze parti in Microsoft 365 per poter utilizzare le funzionalità di conformità, come la conservazione legale, la ricerca di contenuto e i criteri di ritenzione per gestire i dati di terze parti dell'organizzazione.
-ms.openlocfilehash: c7052e7f51108cac93ad8d87402a07acd12df28a
-ms.sourcegitcommit: a3c2c737995088c1bad3b12ab401a7ef242b0272
+ms.openlocfilehash: a94d0a776af05b609816d3fdbfede869018fa30a
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47956233"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48196359"
 ---
-# <a name="set-up-a-connector-to-archive-zoom-meetings-data-preview"></a>Configurare un connettore per archiviare i dati delle riunioni dello zoom (anteprima)
+# <a name="set-up-a-connector-to-archive-zoom-meetings-data"></a>Configurare un connettore per archiviare i dati delle riunioni dello zoom
 
 Utilizzare un connettore di Globanet nel centro conformità di Microsoft 365 per importare e archiviare i dati dalle riunioni di zoom alle cassette postali degli utenti nell'organizzazione Microsoft 365. Globanet fornisce un connettore per [riunioni zoom](https://globanet.com/zoom/) configurato per acquisire elementi dall'origine dati di terze parti (su base regolare) e importare tali elementi in Microsoft 365. Il connettore converte il contenuto delle riunioni (tra cui chat, file registrati e metadati) dall'account di riunioni zoom a un formato di messaggio di posta elettronica e quindi importa tali elementi nelle cassette postali degli utenti in Microsoft 365.
 
@@ -40,7 +39,7 @@ Nella panoramica seguente viene illustrato il processo di utilizzo di un connett
 
 4. Il connettore importa gli elementi riunione convertiti nelle cassette postali di utenti specifici utilizzando il valore della proprietà di *posta elettronica* e il mapping automatico degli utenti, come descritto nel passaggio 3. Una nuova sottocartella nella cartella posta in arrivo denominata **riunioni zoom** viene creata nelle cassette postali degli utenti e gli elementi della riunione vengono importati in tale cartella. Il connettore esegue questa operazione utilizzando il valore della proprietà di *posta elettronica* . Ogni elemento della riunione contiene questa proprietà, che viene popolata con l'indirizzo di posta elettronica di tutti i partecipanti alla riunione.
 
-## <a name="before-you-begin"></a>Informazioni preliminari
+## <a name="before-you-begin"></a>Prima di iniziare
 
 - Creare un account Merge1 di Globanet per i connettori Microsoft. A tale scopo, contattare il [supporto clienti di Globanet](https://globanet.com/ms-connectors-contact). È necessario accedere a questo account quando si crea il connettore nel passaggio 1.
 
@@ -102,6 +101,6 @@ Dopo aver creato il connettore di riunioni zoom, è possibile visualizzare lo st
 
 ## <a name="known-issues"></a>Problemi noti
 
-- Al momento, non è supportato l'importazione di allegati di dimensioni superiori a 10 MB, ma il supporto per gli elementi di grandi dimensioni sarà disponibile in una data successiva.
+- Al momento, non è supportato l'importazione di allegati o elementi di dimensioni superiori a 10 MB. Il supporto per gli elementi di grandi dimensioni sarà disponibile in un secondo momento.
 
 - Per il funzionamento del connettore di riunioni zoom, è necessario abilitare le registrazioni quando si configurano le riunioni dello zoom.

@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: c037a36154f14cc0db2092bc2eeea6344b5544ff
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: aac61dc6686e318d21a6aa6cb1ee86704879f51b
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47416072"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208198"
 ---
 # <a name="reserve-bank-of-india-rbi-and-insurance-regulatory-and-development-authority-of-india-irdai"></a>Reserve Bank of India (RBI) e autorità di regolamentazione e sviluppo delle assicurazioni India (IRDAi)
 
@@ -31,7 +31,7 @@ Le linee guida per l'outsourcing e la gestione dei rischi includono:
 
 - [Linee guida sulla gestione del rischio e del codice di condotta in outsourcing dei servizi finanziari da](https://rbidocs.rbi.org.in/rdocs/notification/PDFs/73713.pdf) parte delle banche (RBI) affrontare i rischi che le banche regolamentate sarebbero stati esposti a outsourcing servizi finanziari e contribuire a garantire che l'outsourcing non ostacolare il ruolo di supervisione della RBI. La RBI non richiede l'approvazione preventiva per le banche che cercano di esternalizzare i servizi finanziari; Tuttavia, le funzioni di core banking, ad esempio le funzioni di controllo interno e di conformità, non devono essere esternalizzate.
 - [Linee guida sulla sicurezza delle informazioni, le banche elettroniche, la gestione dei rischi tecnologici e le frodi cibernetiche](https://rbidocs.rbi.org.in/rdocs/content/PDFs/GBS300411F.pdf) (RBI). Gli istituti finanziari devono segnalare contratti di outsourcing in cui la scalabilità e la natura delle attività sono rilevanti o richiedono una vasta condivisione dei dati con i provider di servizi esterni all'India. Questa guida si applica soprattutto se i dati operativi sono archiviati o elaborati al di fuori dell'India.
-- [Outsourcing delle attività da parte del regolamento degli assicuratori indiani](https://www.irdai.gov.in/ADMINCMS/cms/frmGeneral_Layout.aspx?page=PageNo3149&flag=1) (irdai). Ogni anno, le organizzazioni assicurative sono tenute a segnalare l'outsourcing a IRDAi di determinate funzioni di supporto delle attività di base entro 45 giorni dalla chiusura dell'anno finanziario. (La pagina 7 nell' [elenco di controllo](https://servicetrust.microsoft.com/Documents/TrustDocuments?command=Download&downloadType=Document&downloadId=26f4af15-2771-4cd4-a7c7-9328149f9453&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_Compliance_Guides) di Microsoft descrive cosa costituisce "funzioni di supporto delle attività di base".
+- [Outsourcing delle attività da parte del regolamento degli assicuratori indiani](https://www.irdai.gov.in/ADMINCMS/cms/frmGeneral_Layout.aspx?page=PageNo3149&flag=1) (irdai). Ogni anno, le organizzazioni assicurative sono tenute a segnalare l'outsourcing a IRDAi di determinate funzioni di supporto delle attività di base entro 45 giorni dalla chiusura dell'anno finanziario. (Pagina 7 nell'elenco di [controllo](https://servicetrust.microsoft.com/Documents/TrustDocuments?command=Download&downloadType=Document&downloadId=26f4af15-2771-4cd4-a7c7-9328149f9453&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_Compliance_Guides) di Microsoft descrive cosa costituisce ' funzioni di supporto delle attività di base '.
 
 Le società finanziarie che utilizzano i servizi cloud devono essere conformi anche alle regole sulla privacy, incluse le [regole di sicurezza (procedure e informazioni di protezione ragionevoli e dati personali sensibili), 2011](https://meity.gov.in/sites/upload_files/dit/files/GSR313E_10511\(1\).pdf) (Riccardo). Sviluppata per rafforzare le leggi sulla protezione dei dati in India, queste regole regolano la protezione e la gestione dei dati personali sensibili.
 
@@ -43,7 +43,7 @@ Quando le istituzioni finanziarie indiane esternalizzano le attività aziendali 
 
 L'elenco di controllo di Microsoft aiuta le aziende finanziarie in India a effettuare valutazioni di due diligence sui servizi cloud di Microsoft Business e include:
 
-- Informazioni generali sul panorama regolatorio del contesto.
+- Informazioni generali sul panorama normativo a scopo di contestualizzazione.
 - Elenco di controllo che consente di impostare i problemi da risolvere e di eseguire il mapping di Microsoft Azure, Microsoft Dynamics 365 e Microsoft Office 365 ai servizi in base a tali obblighi normativi. L'elenco di controllo può essere usato come strumento per misurare la conformità ad alcune normative e definire uno schema interno per documentare la conformità e aiutare i clienti a svolgere le loro valutazioni dei rischi rispetto ai servizi cloud Microsoft per le aziende.
 
 ## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud Microsoft inclusi nell'ambito
@@ -55,14 +55,18 @@ L'elenco di controllo di Microsoft aiuta le aziende finanziarie in India a effet
 ## <a name="how-to-implement"></a>Come eseguire l'implementazione
 
 - [Elenco di controllo di conformità per l'India](https://servicetrust.microsoft.com/Documents/TrustDocuments?command=Download&downloadType=Document&downloadId=26f4af15-2771-4cd4-a7c7-9328149f9453&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_Compliance_Guides): le aziende finanziarie possono ottenere assistenza per la valutazione dei rischi di Microsoft Business Cloud Services.
-- [Valutazione dei rischi e guida alla conformità](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=edee9b14-3661-4a16-ba83-c35caf672bd7&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers): creare un modello di governance per la valutazione dei rischi dei servizi cloud Microsoft e la notifica all'organismo di regolamentazione.
+- [Guida alla conformità e alla valutazione dei rischi](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=edee9b14-3661-4a16-ba83-c35caf672bd7&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers): creare un modello di governance per la valutazione dei rischi dei servizi cloud Microsoft e la notifica all'organismo di regolamentazione.
 - [Casi di utilizzo finanziario per Azure](https://docs.microsoft.com/azure/industry/financial/): utilizzare le anteprime dei casi, le esercitazioni e altre risorse per creare soluzioni di Azure per i servizi finanziari.
 
 ## <a name="frequently-asked-questions"></a>Domande frequenti
 
-**Devono essere incluse condizioni obbligatorie nel contratto con il provider dei servizi cloud?**
+**Devono essere incluse clausole obbligatorie nel contratto con il fornitore dei servizi cloud?**
 
 Sì. Le linee guida sopra riportate prevedono alcuni punti specifici che gli istituti finanziari devono includere nei contratti di servizi cloud. La parte 2 dell' [elenco di controllo](https://servicetrust.microsoft.com/Documents/TrustDocuments?command=Download&downloadType=Document&downloadId=26f4af15-2771-4cd4-a7c7-9328149f9453&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_Compliance_Guides) (pagina 70) esegue il mapping di tali pagine in base alle sezioni dei documenti contrattuali Microsoft in cui sono indirizzate.
+
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>Utilizzo di Microsoft Compliance Manager per valutare i rischi
+
+[Microsoft Compliance Manager](compliance-manager.md) è una funzionalità del [centro conformità di Microsoft 365](microsoft-365-compliance-center.md) che consente di comprendere la posizione di conformità dell'organizzazione e di intraprendere azioni per contribuire alla riduzione dei rischi. Compliance Manager offre un modello Premium per la creazione di una valutazione per questo regolamento. Individuare il modello nella pagina **modelli di valutazione** in Compliance Manager. Informazioni su come [creare valutazioni in Compliance Manager](compliance-manager-assessments.md).
 
 ## <a name="resources"></a>Risorse
 

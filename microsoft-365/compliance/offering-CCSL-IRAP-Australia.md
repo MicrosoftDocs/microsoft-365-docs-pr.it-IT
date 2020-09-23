@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 0ff270c27c4b3d1a376b8b9ddefd1177cdd7823f
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 03a48dc757b8028fe0391bdc8f0469b8632f0f61
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47417330"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208648"
 ---
 # <a name="australian-government-information-security-registered-assessor-program-irap"></a>Programma del valutatore registrato per la sicurezza delle informazioni del governo australiano (IRAP)
 
@@ -50,7 +50,7 @@ La valutazione dei servizi Microsoft in Australia copre le quattro aree di Azure
 
 Per ogni valutazione, Microsoft ha ingaggiato un valutatore IRAP accreditato da ACSC che ha esaminato i controlli di sicurezza e i processi utilizzati dal team IT Operations di Microsoft, dai data center fisici, dal rilevamento delle intrusioni, dalla crittografia, dalla sicurezza tra domini e di rete, il controllo di accesso e la gestione dei rischi per la sicurezza delle informazioni di servizi nell'ambito. Le valutazioni di IRAP hanno rilevato che l'architettura di sistema di Microsoft si basa su principi di sicurezza sani e che i controlli del manuale di sicurezza delle informazioni sul governo australiano sono disponibili e sono pienamente efficaci all'interno dei servizi valutati.
 
-Il Framework di gestione dei rischi utilizzato dall'ISM attinge dal [National Institute of Standards and Technology (NIST) Special Publication (SP) 800-37 Rev. 2](https://csrc.nist.gov/publications/detail/sp/800-37/rev-2/final), "Risk Management Framework per sistemi informativi e organizzazioni: un approccio del ciclo di vita del sistema per la sicurezza e la privacy". All'interno di questo framework di gestione dei rischi, l'identificazione dei rischi e la selezione dei controlli di sicurezza possono essere intraprese usando una serie di standard di gestione dei rischi, come l' [organizzazione internazionale per la standardizzazione (ISO) 31000:2018, la gestione dei rischi – linee guida](https://www.iso.org/standard/65694.html). In generale, il Framework di gestione dei rischi utilizzato dall'ISM ha sei passaggi:
+Il Framework di gestione dei rischi utilizzato dall'ISM attinge dal [National Institute of Standards and Technology (NIST) Special Publication (SP) 800-37 Rev. 2](https://csrc.nist.gov/publications/detail/sp/800-37/rev-2/final), "Risk Management Framework per sistemi informativi e organizzazioni: un approccio del ciclo di vita del sistema per la sicurezza e la privacy". All'interno di questo framework di gestione dei rischi, l'identificazione dei rischi e la selezione dei controlli di sicurezza possono essere intraprese usando una serie di standard di gestione dei rischi, come l' [organizzazione internazionale per la standardizzazione (ISO) 31000:2018, la gestione del rischio-linee guida](https://www.iso.org/standard/65694.html). In generale, il Framework di gestione dei rischi utilizzato dall'ISM ha sei passaggi:
 
 - Definire il sistema
 - Selezionare controlli di sicurezza
@@ -63,7 +63,7 @@ Come sempre, i controlli di compensazione aggiuntivi possono essere implementati
 
 La valutazione di IRAP dei servizi di Microsoft contribuisce a garantire ai clienti del settore pubblico nel governo e ai loro partner che Microsoft dispone di controlli di sicurezza adeguati ed efficaci per il trattamento, l'archiviazione e la trasmissione di informazioni riservate e protette. Ciò include la maggior parte dei dati governativi, sanitari e di istruzione in Australia.
 
-## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud Microsoft inclusi nell'ambito
+## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud Microsoft in ambito
 
 - [Azure e Dynamics](https://aka.ms/AzureCompliance)
 - [Office 365](https://aka.ms/Office365ComplianceOfferings)
@@ -86,9 +86,9 @@ Iniziare con [cos'è IRAP?](https://www.cyber.gov.au/irap/what-irap) e seguirlo 
 - [Chi fornisce la formazione di IRAP?](https://acsc.gov.au/infosec/irap/training.htm)
 - [Informazioni sui requisiti di conformità e noncompliance](https://acsc.gov.au/infosec/irap/compliance.htm)
 
-## <a name="use-microsoft-compliance-score-to-assess-your-risk"></a>Usare Punteggio di conformità Microsoft per valutare i rischi
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>Utilizzo di Microsoft Compliance Manager per valutare i rischi
 
-[Punteggio di conformità Microsoft](compliance-score.md) è una funzionalità in anteprima nel [Centro conformità Microsoft 365](microsoft-365-compliance-center.md) utile per comprendere lo stato di conformità dell'organizzazione e intraprendere azioni per ridurre i rischi. Dopo aver [impostato il Punteggio di conformità](compliance-score-setup.md), selezionare il modello di [IRAP](https://go.microsoft.com/fwlink/?linkid=2117913) preconfigurato dal menu a discesa **modello** per consentire all'organizzazione di soddisfare i requisiti per il regolamento.
+[Microsoft Compliance Manager](compliance-manager.md) è una funzionalità del [centro conformità di Microsoft 365](microsoft-365-compliance-center.md) che consente di comprendere la posizione di conformità dell'organizzazione e di intraprendere azioni per contribuire alla riduzione dei rischi. Compliance Manager offre un modello Premium per la creazione di una valutazione per questo regolamento. Individuare il modello nella pagina **modelli di valutazione** in Compliance Manager. Informazioni su come [creare valutazioni in Compliance Manager](compliance-manager-assessments.md).
 
 ## <a name="resources"></a>Risorse
 

@@ -11,16 +11,15 @@ ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
-ROBOTS: NOINDEX, NOFOLLOW
 description: Gli amministratori possono configurare un connettore di telemessaggio per importare e archiviare i dati SMS e MMS dalla rete Verizon in Microsoft 365. In questo modo è possibile archiviare i dati provenienti da origini dati di terze parti in Microsoft 365 per poter utilizzare le funzionalità di conformità, come la conservazione legale, la ricerca di contenuto e i criteri di ritenzione per gestire i dati di terze parti dell'organizzazione.
-ms.openlocfilehash: c088adbd0e0a5d4a46b3f7ddb3d64d3f8c32c8dc
-ms.sourcegitcommit: a6625f76e8f19eebd9353ed70c00d32496ec06eb
+ms.openlocfilehash: 8d3d23a4383f15b9390db3fb84b20a5566a28b8d
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47361831"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48196555"
 ---
-# <a name="set-up-a-connector-to-archive-verizon-network-data-preview"></a>Configurare un connettore per l'archiviazione dei dati di rete di Verizon (anteprima)
+# <a name="set-up-a-connector-to-archive-verizon-network-data"></a>Configurare un connettore per l'archiviazione dei dati di rete di Verizon
 
 Utilizzare il connettore TeleMessage nel centro conformità di Microsoft 365 per importare e archiviare i dati del servizio di messaggistica breve (SMS) e del servizio di messaggistica multimediale (MMS) dalla rete Verizon. Dopo aver configurato e configurato un connettore, si connette alla rete Verizon dell'organizzazione una volta al giorno e importa i dati SMS e MMS nelle cassette postali in Microsoft 365.
 
@@ -88,4 +87,4 @@ Dopo aver completato i prerequisiti descritti nella sezione precedente, è possi
 
 ## <a name="known-issues"></a>Problemi noti
 
-- Al momento, non è supportato l'importazione di allegati di dimensioni superiori a 10 MB, ma il supporto per gli elementi di grandi dimensioni sarà disponibile in una data successiva.
+- Al momento, non è supportato l'importazione di allegati o elementi di dimensioni superiori a 10 MB. Il supporto per gli elementi di grandi dimensioni sarà disponibile in un secondo momento.

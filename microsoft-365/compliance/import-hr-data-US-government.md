@@ -15,14 +15,14 @@ search.appverid:
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: Gli amministratori del cloud governativo degli Stati Uniti possono configurare un connettore dati per importare i dati dei dipendenti dal sistema HR (Human Resources) dell'organizzazione a Microsoft 365. In questo modo è possibile utilizzare i dati HR nei criteri di gestione dei rischi Insider utili per rilevare l'attività da parte di utenti specifici che possono rappresentare un rischio interno per la propria organizzazione.
-ms.openlocfilehash: 30a3730bcb2d4f41df28c47fdb9ab35e9d012540
-ms.sourcegitcommit: 9f5b136b96b3af4db4cc6f5b1f35130ae60d6b12
+ms.openlocfilehash: c1382cd94fcbba1d2ba561657c756e509af21dae
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "47817171"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48196389"
 ---
-# <a name="set-up-a-connector-to-import-hr-data-in-us-government-preview"></a>Configurare un connettore per l'importazione dei dati HR nel governo degli Stati Uniti (anteprima)
+# <a name="set-up-a-connector-to-import-hr-data-in-us-government"></a>Configurare un connettore per l'importazione dei dati HR nel governo degli Stati Uniti
 
 È possibile configurare un connettore di dati nel centro conformità di Microsoft 365 per importare i dati delle risorse umane (HR) nell'organizzazione del governo degli Stati Uniti. I dati relativi alle risorse umane includono la data in cui un dipendente ha inviato le proprie dimissioni e la data dell'ultimo giorno del dipendente. Questo tipo di dati HR può quindi essere utilizzato dalle soluzioni Microsoft per la protezione delle informazioni, ad esempio la [soluzione di gestione dei rischi Insider](insider-risk-management.md), per proteggere l'organizzazione da attività dannose o furti di dati all'interno dell'organizzazione. La configurazione di un connettore HR consiste nella creazione di un'app in Azure Active Directory utilizzata per l'autenticazione tramite connettore, la creazione di un file di mapping CSV contenente i dati HR, la creazione di un connettore di dati nel centro conformità e l'esecuzione di uno script (su base pianificata) che consente di ingerire i dati HR nel file CSV nel cloud Microsoft. Il connettore dati viene quindi utilizzato dallo strumento di gestione dei rischi Insider per accedere ai dati HR che sono stati importati nell'organizzazione Microsoft 365 US Government.
 
@@ -77,7 +77,7 @@ Il passaggio successivo consiste nel creare un connettore HR nel centro conformi
 
 1. Andare a [https://compliance.microsoft.com](https://compliance.microsoft.com) e quindi fare clic su **connettori dati** nel NAV sinistro.
 
-2. Nella pagina **connettori dati (anteprima)** in **HR**, fare clic su **Visualizza**.
+2. Nella pagina **connettori dati** in **HR**fare clic su **Visualizza**.
 
 3. Nella pagina **HR** fare clic su **Aggiungi connettore**.
 

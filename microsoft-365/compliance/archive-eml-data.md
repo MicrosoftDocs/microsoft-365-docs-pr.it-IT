@@ -11,16 +11,15 @@ ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
-ROBOTS: NOINDEX, NOFOLLOW
 description: Gli amministratori possono configurare un connettore per l'importazione e l'archiviazione dei dati EML da Globanet in Microsoft 365. In questo modo è possibile archiviare i dati provenienti da origini dati di terze parti in Microsoft 365 per poter utilizzare le funzionalità di conformità, come la conservazione legale, la ricerca di contenuto e i criteri di ritenzione per gestire i dati di terze parti dell'organizzazione.
-ms.openlocfilehash: 99b32960b46853ed4766c255e36df05c8fe9086a
-ms.sourcegitcommit: 57b37a3ce40f205c7320d5be1a0d906dd492b863
+ms.openlocfilehash: c11d66774a61fa20a533b5c906b3c8601659c1fe
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "47405597"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48200219"
 ---
-# <a name="set-up-a-connector-to-archive-eml-data-preview"></a>Configurare un connettore per archiviare i dati EML (anteprima)
+# <a name="set-up-a-connector-to-archive-eml-data"></a>Configurare un connettore per archiviare i dati EML
 
 Utilizzare un connettore di Globanet nel centro conformità di Microsoft 365 per importare e archiviare i dati EML nelle cassette postali degli utenti nell'organizzazione Microsoft 365. EML è l'estensione di file per un messaggio di posta elettronica salvato in un file. Il connettore converte il contenuto di un elemento dal formato di origine in un formato di messaggio di posta elettronica e quindi importa l'elemento in una cassetta postale utente.
 
@@ -40,7 +39,7 @@ Nella panoramica seguente viene illustrato il processo di utilizzo di un connett
 
 4. Il connettore importa gli elementi del messaggio convertiti nelle cassette postali di utenti specifici utilizzando il valore della proprietà di *posta elettronica* del processo di mapping degli utenti automatico descritto nel [passaggio 3](#step-3-map-users-and-complete-the-connector-setup). Durante questo processo, viene creata una sottocartella nella cartella posta in arrivo denominata **EML**nelle cassette postali degli utenti e gli elementi eml vengono importati nella cartella. Il connettore esegue questa operazione utilizzando il valore della proprietà di *posta elettronica* . Ogni messaggio contiene questa proprietà, che viene popolata con l'indirizzo di posta elettronica di tutti i partecipanti all'elemento di contenuto.
 
-## <a name="before-you-begin"></a>Informazioni preliminari
+## <a name="before-you-begin"></a>Prima di iniziare
 
 - Creare un account Merge1 di Globanet per i connettori Microsoft. A tale scopo, contattare il [supporto clienti di Globanet](https://globanet.com/ms-connectors-contact). È necessario accedere a questo account quando si crea il connettore nel passaggio 1.
 
@@ -90,4 +89,4 @@ Dopo aver creato il connettore EML, è possibile visualizzare lo stato del conne
 
 ## <a name="known-issues"></a>Problemi noti
 
-- Al momento, non è supportato l'importazione di allegati di dimensioni superiori a 10 MB, ma il supporto per gli elementi di grandi dimensioni sarà disponibile in una data successiva.
+- Al momento, non è supportato l'importazione di allegati o elementi di dimensioni superiori a 10 MB. Il supporto per gli elementi di grandi dimensioni sarà disponibile in un secondo momento.

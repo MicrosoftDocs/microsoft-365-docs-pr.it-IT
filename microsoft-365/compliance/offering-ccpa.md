@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 1bdd6770c033abe7a2bf714029b2a4075fada249
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: e279d8e075538582ea282e1c6d1493685a817b2a
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47415738"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208126"
 ---
 # <a name="california-consumer-privacy-act-ccpa"></a>California Consumer Privacy Act (CCPA)
 
@@ -39,7 +39,7 @@ Per i clienti commerciali che operano in California, Microsoft fungerà da' prov
 
 Come indicato nell'OST, Microsoft è conforme a tutte le leggi e normative applicabili alla sua fornitura dei servizi online, che includerà il CCPA.  
 
-## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud Microsoft inclusi nell'ambito
+## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud Microsoft in ambito
 
 - [Azure](https://aka.ms/AzureCompliance)
 - Azure Dev Ops
@@ -68,7 +68,7 @@ Per iniziare il viaggio di CCPA, è necessario concentrarsi sulla scoperta delle
 
 **Quali sono le differenze tra GDPR e CCPA?**
 
-Ci sono molte differenze. È più facile evidenziare le analogie, tra cui:
+Ci sono molte differenze. È più facile concentrarsi sulle similitudini, tra cui:
 
 - Obblighi di trasparenza/divulgazione,
 - Diritti dei clienti per l'accesso, l'eliminazione e la ricezione di una copia dei dati
@@ -93,9 +93,9 @@ Il CCPA richiede attività regolamentate che raccolgono, trasferiscono e vendono
 - Il CCPA introduce obblighi di consenso dei genitori coerenti con la legge Children's Online Privacy Protection Act (COPPA) per bambini di età inferiore ai 13 anni.
 - Per i bambini tra i 13 e i 16 anni, CCPA impone un nuovo obbligo di ottenere il consenso opt-in dal bambino.
 
-## <a name="use-microsoft-compliance-score-to-assess-your-risk"></a>Usare Punteggio di conformità Microsoft per valutare i rischi
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>Utilizzo di Microsoft Compliance Manager per valutare i rischi
 
-[Punteggio di conformità Microsoft](compliance-score.md) è una funzionalità in anteprima nel [Centro conformità Microsoft 365](microsoft-365-compliance-center.md) utile per comprendere lo stato di conformità dell'organizzazione e intraprendere azioni per ridurre i rischi. Dopo aver [impostato il Punteggio di conformità](compliance-score-setup.md), selezionare il modello di [CCPA](https://go.microsoft.com/fwlink/?linkid=2118004) preconfigurato dal menu a discesa **modello** per consentire all'organizzazione di soddisfare i requisiti per il regolamento.
+[Microsoft Compliance Manager](compliance-manager.md) è una funzionalità del [centro conformità di Microsoft 365](microsoft-365-compliance-center.md) che consente di comprendere la posizione di conformità dell'organizzazione e di intraprendere azioni per contribuire alla riduzione dei rischi. Compliance Manager offre un modello Premium per la creazione di una valutazione per questo regolamento. Individuare il modello nella pagina **modelli di valutazione** in Compliance Manager. Informazioni su come [creare valutazioni in Compliance Manager](compliance-manager-assessments.md).
 
 ## <a name="resources"></a>Risorse
 

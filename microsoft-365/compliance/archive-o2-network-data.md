@@ -11,16 +11,15 @@ ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
-ROBOTS: NOINDEX, NOFOLLOW
 description: Gli amministratori possono configurare un connettore di telemessaggio per importare e archiviare i dati SMS e MMS dalla rete mobile O2 in Microsoft 365. In questo modo è possibile archiviare i dati provenienti da origini dati di terze parti in Microsoft 365 per poter utilizzare le funzionalità di conformità, come la conservazione legale, la ricerca di contenuto e i criteri di ritenzione per gestire i dati di terze parti dell'organizzazione.
-ms.openlocfilehash: afcb7708cacd2ec04f79cdb03ce3d799232014a7
-ms.sourcegitcommit: a6625f76e8f19eebd9353ed70c00d32496ec06eb
+ms.openlocfilehash: 39a56e58bd9259b31138a4acf58a5ea5f432bc15
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47362025"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48196301"
 ---
-# <a name="set-up-a-connector-to-archive-o2-network-data-preview"></a>Configurare un connettore per archiviare i dati di rete di O2 (anteprima)
+# <a name="set-up-a-connector-to-archive-o2-network-data"></a>Configurare un connettore per archiviare i dati di rete di O2
 
 Utilizzare un connettore di invio di messaggi nel centro conformità di Microsoft 365 per importare e archiviare i messaggi SMS e le chiamate vocali dalla rete mobile O2. Dopo aver configurato e configurato un connettore, si connette alla rete O2 dell'organizzazione una volta al giorno e importa le chiamate vocali e SMS alle cassette postali in Microsoft 365.
 
@@ -88,4 +87,4 @@ Dopo aver completato i prerequisiti descritti nella sezione precedente, è possi
 
 ## <a name="known-issues"></a>Problemi noti
 
-- Al momento, non è supportato l'importazione di allegati di dimensioni superiori a 10 MB, ma il supporto per gli elementi di grandi dimensioni sarà disponibile in una data successiva.
+- Al momento, non è supportato l'importazione di allegati o elementi di dimensioni superiori a 10 MB. Il supporto per gli elementi di grandi dimensioni sarà disponibile in un secondo momento.

@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: c91c71f199ef36c1c9a0da023c7b26d6cb64282e
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 94e83110ef9761f551fd1401884dbba58a8df107
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47415780"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208438"
 ---
 # <a name="federal-risk-and-authorization-management-program-fedramp"></a>FedRAMP (Federal Risk and Authorization Management Program)
 
@@ -63,7 +63,7 @@ Il governo degli Stati Uniti Dynamics 365 è stato concesso a FedRAMP Agency ATO
 - La difesa del governo degli Stati Uniti di Office 365 ha un P-ATO dalla US Defense Information Systems Agency (DISA). Tutti i clienti che desiderano distribuire Office 365 US Government Defense possono utilizzare la DISA P-ATO per generare un'agenzia ATO per documentarne l'accettazione.
 - Office 365 (Enterprise and business plans) e Office 365 US Government dispongono di un'agenzia di FedRAMP ATO a livello di impatto moderato dall'ufficio DHHS dell'ispettore generale. Office 365 US Government è stato il primo servizio di collaborazione e di posta elettronica basato sul cloud per ottenere questa autorizzazione.
 
-## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud Microsoft inclusi nell'ambito
+## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud Microsoft in ambito
 
 - [Azure e Azure per enti pubblici](https://go.microsoft.com/fwlink/p/?linkid=2095323)
 - [Governo degli Stati Uniti Dynamics 365](https://aka.ms/d365-compliance-list)
@@ -109,9 +109,9 @@ Per una panoramica dei passaggi che devono essere intraprese dalle agenzie feder
 
 Sì. È possibile utilizzare le certificazioni dei servizi cloud Microsoft come fondamento per qualsiasi programma o iniziativa che richiede un ATO da un ente governativo federale. Tuttavia, è necessario ottenere le autorizzazioni per i componenti esterni a questi servizi.
 
-## <a name="use-microsoft-compliance-score-to-assess-your-risk"></a>Usare Punteggio di conformità Microsoft per valutare i rischi
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>Utilizzo di Microsoft Compliance Manager per valutare i rischi
 
-[Punteggio di conformità Microsoft](compliance-score.md) è una funzionalità in anteprima nel [Centro conformità Microsoft 365](microsoft-365-compliance-center.md) utile per comprendere lo stato di conformità dell'organizzazione e intraprendere azioni per ridurre i rischi. Dopo aver [impostato il Punteggio di conformità](compliance-score-setup.md), selezionare il modello di [FedRAMP](https://go.microsoft.com/fwlink/?linkid=2118102) preconfigurato dal menu a discesa **modello** per consentire all'organizzazione di soddisfare i requisiti per il regolamento.
+[Microsoft Compliance Manager](compliance-manager.md) è una funzionalità del [centro conformità di Microsoft 365](microsoft-365-compliance-center.md) che consente di comprendere la posizione di conformità dell'organizzazione e di intraprendere azioni per contribuire alla riduzione dei rischi. Compliance Manager offre un modello Premium per la creazione di una valutazione per questo regolamento. Individuare il modello nella pagina **modelli di valutazione** in Compliance Manager. Informazioni su come [creare valutazioni in Compliance Manager](compliance-manager-assessments.md).
 
 ## <a name="resources"></a>Risorse
 

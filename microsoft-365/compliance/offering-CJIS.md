@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 5680cc1bf8f3a0290f82baaccea1de7b982317a7
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 4ca7654482251d86c44a3956c71f704a0cc3f2d4
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47416418"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208618"
 ---
 # <a name="criminal-justice-information-services-cjis-security-policy"></a>Criteri di sicurezza per i servizi di CJIS (Criminal Justice Information Services)
 
@@ -43,7 +43,7 @@ Informazioni sui vantaggi dei criteri di sicurezza di CJIS nel cloud Microsoft: 
 
 Informazioni su come accelerare i criteri di sicurezza di CJIS con il modello di sicurezza e conformità di Azure: [scaricare le linee guida per l'implementazione di CJIS per i servizi cloud di Microsoft Government](https://gallery.technet.microsoft.com/CJIS-Implementation-62af7c27)
 
-## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud Microsoft inclusi nell'ambito
+## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud Microsoft in ambito
 
 - [Amministrazione di Azure](https://aka.ms/AzureCompliance)
 - [Governo degli Stati Uniti Dynamics 365](https://aka.ms/d365-compliance-list)
@@ -77,6 +77,10 @@ Microsoft firma un contratto informativo con uno stato CJIS Systems Agency (CSA)
 **Dove si inizia con l'impegno di conformità dell'Agenzia?**
 
 I [criteri di sicurezza di CJIS](https://aka.ms/cjis-security-policy) riguardano le precauzioni che l'Agenzia deve intraprendere per proteggere CJI. Inoltre, il rappresentante dell'account Microsoft può mettere in contatto con coloro che hanno familiarità con i requisiti della propria giurisdizione
+
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>Utilizzo di Microsoft Compliance Manager per valutare i rischi
+
+[Microsoft Compliance Manager](compliance-manager.md) è una funzionalità del [centro conformità di Microsoft 365](microsoft-365-compliance-center.md) che consente di comprendere la posizione di conformità dell'organizzazione e di intraprendere azioni per contribuire alla riduzione dei rischi. Compliance Manager offre un modello Premium per la creazione di una valutazione per questo regolamento. Individuare il modello nella pagina **modelli di valutazione** in Compliance Manager. Informazioni su come [creare valutazioni in Compliance Manager](compliance-manager-assessments.md).
 
 ## <a name="resources"></a>Risorse
 

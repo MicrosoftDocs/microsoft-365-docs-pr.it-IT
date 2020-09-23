@@ -11,16 +11,15 @@ ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
-ROBOTS: NOINDEX, NOFOLLOW
 description: Gli amministratori possono configurare un connettore per l'importazione e l'archiviazione dei dati SMS e MMS dall'archiviatore di numeri dell'organizzazione TeleMessage. In questo modo è possibile archiviare i dati provenienti da origini dati di terze parti in Microsoft 365 per poter utilizzare le funzionalità di conformità, come la conservazione legale, la ricerca di contenuto e i criteri di ritenzione per gestire i dati di terze parti dell'organizzazione.
-ms.openlocfilehash: d2e871f6d2515ac49018c6710689517a7bde0985
-ms.sourcegitcommit: a6625f76e8f19eebd9353ed70c00d32496ec06eb
+ms.openlocfilehash: 1152c5e1d658e33e3056873d2230f6f94e58adc1
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47362035"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48200163"
 ---
-# <a name="set-up-a-connector-to-archive-enterprise-number-data-preview"></a>Configurare un connettore per archiviare i dati dei numeri dell'organizzazione (anteprima)
+# <a name="set-up-a-connector-to-archive-enterprise-number-data"></a>Configurare un connettore per archiviare i dati dei numeri dell'organizzazione
 
 Utilizzare un connettore di invio di messaggi nel centro conformità di Microsoft 365 per importare e archiviare i messaggi SMS (Short Messaging Service) e MMS (Multimedia Messaging Service), i messaggi di chat, le registrazioni delle chiamate vocali e i log delle chiamate vocali dall'Archivio numeri Enterprise. Dopo aver configurato e configurato un connettore, si connette all'account del telemessaggio dell'organizzazione una volta al giorno e importa i dati di comunicazione per dispositivi mobili dei dipendenti utilizzando l'archiviatore di numeri Enterprise per i messaggi nelle cassette postali in Microsoft 365.
 
@@ -82,4 +81,4 @@ Dopo aver completato i prerequisiti descritti nella sezione precedente, è possi
 
 ## <a name="known-issues"></a>Problemi noti
 
-- Al momento, non è supportato l'importazione di allegati di dimensioni superiori a 10 MB, ma il supporto per gli elementi di grandi dimensioni sarà disponibile in una data successiva.
+- Al momento, non è supportato l'importazione di allegati o elementi di dimensioni superiori a 10 MB. Il supporto per gli elementi di grandi dimensioni sarà disponibile in un secondo momento.

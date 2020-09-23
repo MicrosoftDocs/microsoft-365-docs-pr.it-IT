@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 9a5eb61d6009dd5a7ab2f66eb3ef712196368010
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 224221950104b5dee6a6e8f179db34ee6fad014e
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47416730"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208772"
 ---
 # <a name="insider-risk-management-users-dashboard"></a>Dashboard degli utenti di gestione dei rischi Insider
 
@@ -45,7 +45,7 @@ Il **dashboard degli utenti** Visualizza automaticamente tutti gli utenti con in
 
 Il **dashboard degli utenti** consente di aggiungere temporaneamente gli utenti a un criterio di gestione dei rischi Insider esistente dopo un evento insolito al di fuori del flusso di lavoro di gestione dei rischi Insider. L'aggiunta temporanea degli utenti è anche un modo per aggiungere gli utenti a un criterio di gestione dei rischi Insider per testare il criterio, anche se non è configurato un connettore obbligatorio.
 
-Quando un utente viene aggiunto manualmente a un criterio, le attività degli utenti per i 90 giorni precedenti vengono segnate e aggiunte alla sequenza temporale delle **attività dell'utente** . Ad esempio, un utente non presente nell'ambito di un criterio di rischio Insider e l'utente dispone di attività di perdita di dati segnalate al reparto legale dell'organizzazione. Il reparto legale consiglia di configurare nuovi requisiti di monitoraggio a breve termine per l'utente. È possibile assegnare temporaneamente l'utente ai criteri di *perdita dei dati* per un periodo di tempo specificato (finestra di attivazione). Tutti gli utenti aggiunti temporaneamente vengono visualizzati nel **dashboard degli utenti** perché i requisiti degli indicatori di trigger sono stati rinunziati.
+Quando un utente viene aggiunto manualmente a un criterio, le attività degli utenti per i 90 giorni precedenti vengono segnate e aggiunte alla sequenza temporale delle **attività dell'utente** . Ad esempio, si dispone di un utente non presente nell'ambito di un criterio di rischio Insider e l'utente dispone di attività di perdita di dati segnalate al reparto legale dell'organizzazione. Il reparto legale consiglia di configurare nuovi requisiti di monitoraggio a breve termine per l'utente. È possibile assegnare temporaneamente l'utente ai criteri di *perdita dei dati* per un periodo di tempo specificato (finestra di attivazione). Tutti gli utenti aggiunti temporaneamente vengono visualizzati nel **dashboard degli utenti** perché i requisiti degli indicatori di trigger sono stati rinunziati.
 
 >[!NOTE]
 >Potrebbe essere necessario diverse ore prima che i nuovi utenti aggiunti manualmente vengano visualizzati nel **dashboard degli utenti**. Le attività per i 90 giorni precedenti per questi utenti possono richiedere fino a 24 ore per la visualizzazione. Per visualizzare le attività per gli utenti aggiunti manualmente, selezionare l'utente nel **Dashboard utenti** e aprire la scheda **attività utente** nel riquadro dei dettagli.
@@ -104,3 +104,17 @@ Completare la procedura seguente per aggiungere un utente a un criterio di risch
 
 >[!NOTE]
 >Potrebbe essere necessario diverse ore prima che i nuovi utenti aggiunti manualmente vengano visualizzati nel **dashboard degli utenti**. Le attività per i 90 giorni precedenti per questi utenti possono richiedere fino a 24 ore per la visualizzazione. Per visualizzare le attività per gli utenti aggiunti manualmente, selezionare l'utente nel **Dashboard utenti** e aprire la scheda **attività utente** nel riquadro dei dettagli.
+
+## <a name="run-automated-tasks-with-power-automate-flows-for-a-user"></a>Eseguire attività automatizzate con flussi automatici di alimentazione per un utente
+
+Utilizzando i flussi automatici di alimentazione automatizzati consigliati, gli investigatori e gli analisti del rischio possono intervenire rapidamente per:
+
+- Notificare agli utenti se sono stati aggiunti a un criterio di rischio Insider
+
+Per l'esecuzione, la gestione o la creazione di flussi automatici di alimentazione per un utente di gestione dei rischi Insider:
+
+1. Selezionare **automatizza** sulla barra degli strumenti azione utente.
+2. Scegliere il flusso Power automatizzate per l'esecuzione, quindi selezionare **Esegui flusso**.
+3. Dopo il completamento del flusso, selezionare **fine**.
+
+Per ulteriori informazioni sui flussi automatici di alimentazione per la gestione dei rischi Insider, vedere [Introduzione alle impostazioni di gestione dei rischi Insider](insider-risk-management-settings.md#power-automate-flows-preview).

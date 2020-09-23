@@ -11,18 +11,17 @@ ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
-ROBOTS: NOINDEX, NOFOLLOW
 description: Gli amministratori possono configurare un connettore per l'importazione e l'archiviazione dei dati da Globanet Slack in Microsoft 365. Questo connettore consente di archiviare i dati provenienti da origini dati di terze parti in Microsoft 365, in modo da poter utilizzare le funzionalità di conformità, come la conservazione legale, la ricerca di contenuto e i criteri di ritenzione per gestire i dati di terze parti dell'organizzazione.
-ms.openlocfilehash: 6466beb6115037ff726b1e5fd3350032bceb2230
-ms.sourcegitcommit: a3c2c737995088c1bad3b12ab401a7ef242b0272
+ms.openlocfilehash: 532b8a8eb4331d66e1c7522d79bde2b5b6b0a02f
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47957040"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48196768"
 ---
-# <a name="set-up-a-connector-to-archive-slack-data-preview"></a>Configurare un connettore per archiviare i dati di rallentamento (anteprima)
+# <a name="set-up-a-connector-to-archive-slack-data"></a>Configurare un connettore per archiviare i dati di rallentamento
 
-Utilizzare un connettore di Globanet nel centro conformità Microsoft 365 per importare e archiviare i dati di terze parti dalle piattaforme di social networking, messaggistica istantanea e collaborazione documenti alle cassette postali nell'organizzazione Microsoft 365. Globanet fornisce un connettore per il [connettore dei dati Slack](https://globanet.com/slack/) nel centro conformità di Microsoft 365 che è possibile configurare per acquisire elementi dall'origine dati di terze parti (su base regolare) e quindi importare tali elementi in Microsoft 365. Slack estrae i messaggi e i file dall'API slack e li converte in un formato di messaggi di posta elettronica e quindi li importa alle cassette postali degli utenti in Microsoft 365.
+Utilizzare un connettore di Globanet nel centro conformità Microsoft 365 per importare e archiviare i dati di terze parti dalle piattaforme di social networking, messaggistica istantanea e collaborazione documenti alle cassette postali nell'organizzazione Microsoft 365. Globanet fornisce un connettore Slack configurato per acquisire elementi dall'origine dati di terze parti (su base regolare) e quindi importare tali elementi in Microsoft 365. Slack estrae i messaggi e i file dall'API slack e li converte in un formato di messaggio di posta elettronica e quindi importa l'elemento nelle cassette postali degli utenti.
 
 Dopo che i dati di tipo Slack sono archiviati nelle cassette postali degli utenti, è possibile applicare funzionalità di conformità di Microsoft 365, ad esempio conservazione per controversia legale, eDiscovery, criteri di conservazione e etichette per il mantenimento e conformità della comunicazione L'utilizzo di un connettore slack per l'importazione e l'archiviazione dei dati in Microsoft 365 può aiutare l'organizzazione a rimanere conforme ai criteri governativi e normativi.
 
@@ -40,7 +39,7 @@ Nella panoramica seguente viene illustrato il processo di utilizzo di un connett
 
 4. Il connettore importa gli elementi del messaggio di chat convertiti nelle cassette postali di utenti specifici utilizzando il valore della proprietà di *posta elettronica* e il mapping automatico degli utenti, come descritto nel passaggio 3. Viene creata una nuova sottocartella nella cartella posta in arrivo denominata **Slack** nelle cassette postali degli utenti e gli elementi del messaggio di chat verranno importati in tale cartella. Il connettore esegue questa operazione utilizzando il valore della proprietà di *posta elettronica* . Ogni messaggio di chat contiene questa proprietà, che viene popolata con l'indirizzo di posta elettronica di ogni partecipante del messaggio di chat.
 
-## <a name="before-you-begin"></a>Informazioni preliminari
+## <a name="before-you-begin"></a>Prima di iniziare
 
 - Creare un account Merge1 di Globanet per i connettori Microsoft. A tale scopo, contattare il [supporto clienti di Globanet](https://globanet.com/ms-connectors-contact). È necessario accedere a questo account quando si crea il connettore nel passaggio 1.
 
@@ -92,4 +91,4 @@ Dopo aver creato il connettore Slack, è possibile visualizzare lo stato del con
 
 ## <a name="known-issues"></a>Problemi noti
 
-- Al momento, non è supportato l'importazione di allegati ed elementi di dimensioni superiori a 10 MB. Il supporto per gli elementi di grandi dimensioni sarà disponibile in un secondo momento.
+- Al momento, non è supportato l'importazione di allegati o elementi di dimensioni superiori a 10 MB. Il supporto per gli elementi di grandi dimensioni sarà disponibile in un secondo momento.

@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 5ee3e77624650f0a5c1b913081620695cdc13142
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 54d188aa84cd6bc2614489dbbc3a969d30b40342
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47417038"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208418"
 ---
 # <a name="health-information-trust-alliance-hitrust-common-security-framework-csf"></a>Framework di sicurezza comune (QCS, Health Information Trust Alliance) (HITRUST)
 
@@ -39,7 +39,7 @@ Informazioni su come accelerare la distribuzione di HITRUST con il modello di si
 
 [Scaricare Microsoft Azure HITRUST customer responsibility Matrix (CRM) Blueprint v 9.0 d](https://servicetrust.microsoft.com/ViewPage/Blueprint?command=Download&downloadType=Document&downloadId=3ccde498-4761-4be0-be8b-cd8d379a3a4f&docTab=fc060920-cdb8-11e7-bacf-0bf52b09d912_Healthcare_Blueprint)
 
-## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud Microsoft inclusi nell'ambito
+## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud Microsoft in ambito
 
 - [Azure e Azure per enti pubblici](https://aka.ms/AzureCompliance)
 - Intune
@@ -102,6 +102,10 @@ Sì, è possibile trovare le azioni dei clienti consigliate in Score Compliance,
 **Come si esegue l'impegno con Microsoft?**
 
 Accedere allo strumento di® di HITRUST MyCSF e prepopolare la valutazione per la soluzione ospitata su Microsoft Azure con controlli di responsabilità completamente ereditati o condivisi per Azure. Un amministratore di Microsoft HITRUST completerà la propria parte della valutazione usando il proprio account nello strumento di® di MyCSF.
+
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>Utilizzo di Microsoft Compliance Manager per valutare i rischi
+
+[Microsoft Compliance Manager](compliance-manager.md) è una funzionalità del [centro conformità di Microsoft 365](microsoft-365-compliance-center.md) che consente di comprendere la posizione di conformità dell'organizzazione e di intraprendere azioni per contribuire alla riduzione dei rischi. Compliance Manager offre un modello Premium per la creazione di una valutazione per questo regolamento. Individuare il modello nella pagina **modelli di valutazione** in Compliance Manager. Informazioni su come [creare valutazioni in Compliance Manager](compliance-manager-assessments.md).
 
 ## <a name="resources"></a>Risorse
 

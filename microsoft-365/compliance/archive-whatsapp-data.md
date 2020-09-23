@@ -11,16 +11,15 @@ ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
-ROBOTS: NOINDEX, NOFOLLOW
 description: Gli amministratori possono configurare un connettore di telemessaggio per importare e archiviare i dati di WhatsApp in Microsoft 365. In questo modo è possibile archiviare i dati provenienti da origini dati di terze parti in Microsoft 365 per poter utilizzare le funzionalità di conformità, come la conservazione legale, la ricerca di contenuto e i criteri di ritenzione per gestire i dati di terze parti dell'organizzazione.
-ms.openlocfilehash: fbd0e30cf8016da9479d5f1e24715d2e2aaa628c
-ms.sourcegitcommit: a6625f76e8f19eebd9353ed70c00d32496ec06eb
+ms.openlocfilehash: a8a3465ca3f728290b69cf9b6c5d0820daf00221
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47361871"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48199159"
 ---
-# <a name="set-up-a-connector-to-archive-whatsapp-data-preview"></a>Configurare un connettore per archiviare i dati di WhatsApp (anteprima)
+# <a name="set-up-a-connector-to-archive-whatsapp-data"></a>Configurare un connettore per l'archiviazione dei dati WhatsApp
 
 Utilizzare il connettore TeleMessage nel centro conformità di Microsoft 365 per importare e archiviare le chiamate, le chat, gli allegati, i file e i messaggi eliminati di WhatsApp. Dopo aver configurato e configurato un connettore, si connette all'account del telemessaggio dell'organizzazione una volta al giorno e importa la comunicazione mobile dei dipendenti utilizzando l'Archiver TeleMessage WhatsApp Phone o il messaggio TeleMessage WhatsApp cloud Archiver alle cassette postali in Microsoft 365.
 
@@ -86,4 +85,4 @@ Dopo aver completato i prerequisiti descritti nella sezione precedente, è possi
 
 ## <a name="known-issues"></a>Problemi noti
 
-- Al momento, non è supportato l'importazione di allegati di dimensioni superiori a 10 MB, ma il supporto per gli elementi di grandi dimensioni sarà disponibile in una data successiva.
+- Al momento, non è supportato l'importazione di allegati o elementi di dimensioni superiori a 10 MB. Il supporto per gli elementi di grandi dimensioni sarà disponibile in un secondo momento.

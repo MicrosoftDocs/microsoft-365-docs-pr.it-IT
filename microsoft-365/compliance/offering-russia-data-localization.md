@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: c8c5e78cfd7d531b2c2ee46ae4f28367240a87ca
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 29c56d525375162926d34bd298bbbd660964438d
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47415992"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208158"
 ---
 # <a name="russian-personal-data-localization-requirements"></a>Requisiti per la localizzazione dei dati personali in russo
 
@@ -40,6 +40,10 @@ Microsoft invita i clienti a prendere in considerazione la sottoscrizione a Micr
 ### <a name="managing-user-identity-and-access-for-microsoft-online-services"></a>Gestione dell'identità e dell'accesso degli utenti ai servizi online Microsoft
 
 Per i servizi Microsoft online, quali Microsoft Azure, Microsoft 365, Dynamics 365 e Power Platform, la verifica degli utenti e la gestione degli accessi vengono eseguite tramite [Azure Active Directory (AAD)](https://azure.microsoft.com/services/active-directory/). Si noti che i casi in cui un cliente Microsoft utilizza un sistema di gestione dell'identificazione locale per i servizi cloud Microsoft (ad esempio, Windows Server Active Directory (AD) o qualsiasi altro sistema di gestione degli ID), il cliente ha la possibilità di integrare rapidamente tale sistema con Azure Active Directory (AAD) tramite Azure AD Connect. Per ulteriori informazioni, vedere l'opzione [Azure ad Connect](https://docs.microsoft.com/azure/active-directory/cloud-provisioning/) . I clienti Microsoft possono anche prendere in considerazione l'utilizzo di applicazioni e soluzioni di fornitori di terze parti per la gestione degli utenti e l'integrazione del sistema di identificazione locale con Azure AD.
+
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>Utilizzo di Microsoft Compliance Manager per valutare i rischi
+
+[Microsoft Compliance Manager](compliance-manager.md) è una funzionalità del [centro conformità di Microsoft 365](microsoft-365-compliance-center.md) che consente di comprendere la posizione di conformità dell'organizzazione e di intraprendere azioni per contribuire alla riduzione dei rischi. Compliance Manager offre un modello Premium per la creazione di una valutazione per questo regolamento. Individuare il modello nella pagina **modelli di valutazione** in Compliance Manager. Informazioni su come [creare valutazioni in Compliance Manager](compliance-manager-assessments.md).
 
 ## <a name="questions-and-support"></a>Domande e supporto tecnico
 

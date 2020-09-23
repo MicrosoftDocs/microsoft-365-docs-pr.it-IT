@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: e4a13d25506481ddcdfaf6ca2f9ad21c871bb603
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 6645ce4d4f6b2fa8f2725e4b0679bc00fdec3505
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47416470"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208802"
 ---
 # <a name="get-started-with-insider-risk-management"></a>Introduzione alla gestione dei rischi Insider
 
@@ -28,7 +28,7 @@ Utilizzare i criteri di gestione dei rischi Insider per identificare le attivit�
 
 Per ulteriori informazioni su come i criteri di rischio Insider consentono di gestire i rischi nell'organizzazione, vedere [Insider Risk Management in Microsoft 365](insider-risk-management.md).
 
-## <a name="before-you-begin"></a>Informazioni preliminari
+## <a name="before-you-begin"></a>Prima di iniziare
 
 Prima di iniziare a utilizzare la gestione dei rischi Insider, è necessario confermare la [sottoscrizione Microsoft 365](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans) e gli eventuali componenti aggiuntivi. Per accedere e utilizzare Gestione dei rischi Insider, è necessario che l'organizzazione disponga di una delle sottoscrizioni o dei componenti aggiuntivi seguenti:
 
@@ -89,6 +89,7 @@ Se si sta configurando un criterio utilizzando la *lingua offensiva nel modello 
 ### <a name="configure-microsoft-365-hr-connector"></a>Configurare il connettore Microsoft 365 HR
 
 Gestione dei rischi Insider supporta l'importazione di dati di utenti e log importati da piattaforme di gestione dei rischi di terze parti. Il connettore di dati HR (Human Resources) Microsoft 365 consente di inserire i dati delle risorse umane da file CSV, incluse le date di terminazione degli utenti, le date dell'ultimo impiego, le notifiche relative al piano di miglioramento delle prestazioni, le azioni di revisione delle prestazioni e lo stato delle modifiche a livello di Questi dati consentono di indirizzare gli indicatori di avviso nei criteri di gestione dei rischi Insider ed è una parte importante della configurazione della copertura di gestione a rischio completo nell'organizzazione. Se si configurano più connettori HR per la propria organizzazione, la gestione dei rischi Insider tirerà automaticamente gli indicatori da tutti i connettori HR.
+
 Il connettore Microsoft 365 HR è necessario quando si utilizzano i modelli di criteri seguenti:
 
 - Furto dei dati degli utenti da parte dell'utente
@@ -123,10 +124,19 @@ Gestione dei rischi Insider include il supporto per l'assegnazione di gruppi di 
 
 Un gruppo di utenti prioritari è necessario quando si utilizzano i modelli di criteri seguenti:
 
-- Violazioni dei criteri di sicurezza per gli utenti con priorità 
+- Violazioni dei criteri di sicurezza per gli utenti con priorità
 - Perdite di dati da parte di utenti prioritari
 
 Per informazioni dettagliate su come creare un gruppo di utenti prioritari, vedere l'articolo [Introduzione alle impostazioni di gestione dei rischi Insider](insider-risk-management-settings.md#priority-user-groups-preview) . Dopo aver configurato un gruppo di utenti prioritari, tornare a questi passaggi di configurazione.
+
+### <a name="configure-physical-badging-connector-optional"></a>Configurare il connettore badging fisico (facoltativo)
+
+Gestione dei rischi Insider supporta l'importazione di dati di utenti e log importati da piattaforme di controllo e accesso fisico. Il connettore fisico di badging consente di recuperare i dati di accesso dai file JSON, inclusi gli ID utente, gli ID dei punti di accesso, l'ora di accesso e le date e lo stato di accesso. Questi dati consentono di indirizzare gli indicatori di avviso nei criteri di gestione dei rischi Insider ed è una parte importante della configurazione della copertura di gestione a rischio completo nell'organizzazione. Se si configurano più connettori badging fisici per l'organizzazione, la gestione dei rischi Insider estrae automaticamente gli indicatori da tutti i connettori badging fisici. Le informazioni del connettore fisico di badging integrano altri segnali di rischio all'interno quando utilizzano tutti i modelli di criteri di rischio Insider.
+
+>[!IMPORTANT]
+>Per i criteri di gestione dei rischi Insider per l'utilizzo e la correlazione dei dati del segnale relativi agli utenti che partono e terminano con i dati degli eventi dalle piattaforme di controllo e accesso fisico, è necessario configurare anche il connettore Microsoft 365 HR. Se si Abilita il connettore fisico di badging senza abilitare il connettore Microsoft 365 HR, i criteri di gestione dei rischi Insider elaborerà solo gli eventi per l'accesso fisico non autorizzato per gli utenti dell'organizzazione.
+
+Per informazioni dettagliate su come configurare il connettore badging fisico per l'organizzazione, vedere l'articolo [set up a Connector to Import Physical badging data](import-physical-badging-data.md) . Dopo aver configurato il connettore, tornare a questi passaggi di configurazione.
 
 ## <a name="step-4-configure-insider-risk-settings"></a>Passaggio 4: configurare le impostazioni dei rischi Insider
 
@@ -150,14 +160,17 @@ Prima di configurare un criterio, definire le seguenti impostazioni di rischio I
     - [Impostazioni del dominio](insider-risk-management-settings.md#domains-preview)
 6. Nella pagina **Esporta avvisi** , abilitare l'esportazione delle informazioni di avviso sui rischi Insider mediante le API di gestione di Office 365, se necessario.
 7. Nella pagina **gruppi di utenti con priorità** creare un gruppo di utenti prioritari e aggiungere gli utenti se non sono stati creati nel **passaggio 3**.
-8. Selezionare **Salva** per abilitare queste impostazioni per i criteri di rischio Insider.
+8. Sulla pagina **flussi automatici di alimentazione** , configurare un flusso da modelli di flusso di rischio insider o creare un nuovo flusso. Per informazioni dettagliate, vedere l'articolo [Introduzione alle impostazioni di gestione dei rischi Insider](insider-risk-management-settings.md#power-automate-flows-preview) .
+9. Nella **pagina asset prioritari**configurare le risorse prioritarie per l'utilizzo dei dati dal controllo fisico e dalla piattaforma di accesso importata dal connettore badging fisico. Per informazioni dettagliate, vedere l'articolo [Introduzione alle impostazioni di gestione dei rischi Insider](insider-risk-management-settings.md#priority-physical-assets-preview) .
+10. Nella pagina **Microsoft teams** , abilitare l'integrazione di Microsoft teams con Insider Risk Management per creare automaticamente un team per la collaborazione di case o utenti. Per informazioni dettagliate, vedere l'articolo [Introduzione alle impostazioni di gestione dei rischi Insider](insider-risk-management-settings.md#microsoft-teams-preview) .
+11. Selezionare **Salva** per abilitare queste impostazioni per i criteri di rischio Insider.
 
 ## <a name="step-5-create-an-insider-risk-management-policy"></a>Passaggio 5: creare un criterio di gestione dei rischi Insider
 
 I criteri di gestione dei rischi Insider includono gli utenti assegnati e definiscono i tipi di indicatori di rischio configurati per gli avvisi. Prima che le attività possano attivare gli avvisi, è necessario configurare un criterio.
 
 1. Nel [centro conformità di Microsoft 365](https://compliance.microsoft.com)accedere a **gestione dei rischi Insider** e selezionare la scheda **criteri** .
-2. Selezionare **create Policy** per aprire la procedura guidata per i criteri
+2. Selezionare **create Policy** per aprire la procedura guidata per i criteri.
 3. Nella pagina **nuovo criterio di rischio Insider** completare i seguenti campi:
     - **Nome (obbligatorio)**: immettere un nome descrittivo per il criterio.
     - **Description (facoltativo)**: immettere una descrizione per il criterio.
@@ -165,6 +178,9 @@ I criteri di gestione dei rischi Insider includono gli utenti assegnati e defini
 
     >[!IMPORTANT]
     >La maggior parte dei modelli di criteri ha prerequisiti che devono essere configurati per il criterio per generare avvisi rilevanti. Se non sono stati configurati i prerequisiti per i criteri applicabili, vedere il **passaggio 3** sopra riportato.
+
+    >[!CAUTION]
+    >A partire dal 16 ottobre 2020, non sarà più possibile creare criteri utilizzando la lingua offensiva nel modello di posta elettronica. Tutti i criteri attivi che utilizzano questo modello funzioneranno fino a quando non verranno rimossi definitivamente nel gennaio 2021.
 
 4. Fare clic su **Avanti** per continuare.
 5. Nella pagina **utenti** selezionare **Aggiungi utente o gruppo** oppure **scegliere gruppi** di utenti prioritari per definire quali utenti o gruppi di priorità sono inclusi nel criterio, a seconda del modello di criteri selezionato. Selezionare **tutti gli utenti e i gruppi abilitati alla posta elettronica** , se applicabile (se non è stato selezionato un modello di priorità basato sull'utente). Fare clic su **Avanti** per continuare.

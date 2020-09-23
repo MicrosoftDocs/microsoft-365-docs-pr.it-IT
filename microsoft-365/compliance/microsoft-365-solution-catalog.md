@@ -11,12 +11,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 description: Informazioni sul catalogo delle soluzioni Microsoft 365, incluse le informazioni in esso contenute, su come ottenerlo e sui passaggi successivi.
 ms.collection: M365-security-compliance
-ms.openlocfilehash: ff445711dfd57ec69305c3f8cc7d01e05a66a1cc
-ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
+ms.openlocfilehash: a560193bf7ee2911b90332f84eef2d60027cbbf9
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48132170"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48198359"
 ---
 # <a name="microsoft-365-solution-catalog"></a>Catalogo delle soluzioni Microsoft 365
 
@@ -93,7 +93,7 @@ Se si sta cercando una soluzione di conformità esistente e non è ancora dispon
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-- **Esaminare il Punteggio di conformità di Microsoft**, un punteggio personalizzato basato sui rischi per comprendere lo stato di conformità dell'organizzazione agli standard e alle normative fondamentali. Vengono fornite le azioni consigliate che è possibile eseguire per rafforzare la posizione di conformità globale e fornisce funzionalità di flusso di lavoro che consentono di eseguire efficacemente tali azioni. Per ulteriori informazioni, vedere [Compliance Score (Preview)](compliance-score.md).
+- **Visitare Microsoft Compliance Manager**, che consente di comprendere lo stato di conformità dell'organizzazione agli standard e alle normative fondamentali. Vengono fornite le azioni consigliate che è possibile eseguire per rafforzare la posizione di conformità globale e fornisce funzionalità di flusso di lavoro che consentono di eseguire efficacemente tali azioni. Per ulteriori informazioni, vedere [Compliance Manager](compliance-manager.md).
 
 - **Configurare i criteri di gestione dei rischi Insider** per ridurre al minimo i rischi interni e consentire all'utente di rilevare, indagare e intraprendere azioni per attività rischiose nell'organizzazione. Vedere [gestione dei rischi Insider](insider-risk-management.md).
 

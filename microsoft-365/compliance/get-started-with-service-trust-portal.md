@@ -16,12 +16,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: f30e2353-0bd6-41ed-8347-eea1fb8d2662
 description: Informazioni su come accedere e utilizzare il Microsoft Service Trust Portal per facilitare la sicurezza, la privacy e le procedure di conformità.
-ms.openlocfilehash: 40c80c0256f730784373a0ff96474d02dbf175c5
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: a3a46884a41be31779b82a74bc2b6750dea697c5
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47547474"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48197763"
 ---
 # <a name="get-started-with-the-microsoft-service-trust-portal"></a>Introduzione a Microsoft Service Trust Portal
 
@@ -68,11 +68,8 @@ Il collegamento **Service Trust Portal** Visualizza la Home page. Fornisce un mo
 
 ### <a name="compliance-manager"></a>Compliance Manager
 
-Compliance Manager è uno strumento di valutazione dei rischi basato sul flusso di lavoro che consente di monitorare, assegnare e verificare le attività di conformità alle normative dell'organizzazione relative ai servizi cloud Microsoft, ad esempio Microsoft 365, Dynamics 365 e Azure. Utilizzare Compliance Manager per gestire la conformità normativa all'interno del modello di responsabilità condivisa del cloud. A seconda della versione di Compliance Manager che si desidera utilizzare, vedere gli articoli seguenti per ulteriori informazioni:
-
-- [Microsoft Compliance Manager (versione classica)](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md)
-
-- [Microsoft Compliance Manager (anteprima)](compliance-manager-overview.md)
+> [!IMPORTANT]
+> Compliance Manager è stato spostato dal Service Trust Portal nel nuovo percorso nel [centro conformità di Microsoft 365](https://compliance.microsoft.com/). Tutti i dati dei clienti sono stati spostati nel nuovo percorso, quindi è possibile continuare a utilizzare Compliance Manager senza interruzioni. Per informazioni sulle nuove funzionalità, vedere la [documentazione relativa a Compliance Manager](compliance-manager.md) . Anche se la versione classica di Compliance Manager rimane nel Service Trust Portal, tutti gli utenti sono invitati a utilizzare Compliance Manager nel centro conformità di Microsoft 365.
 
 ### <a name="trust-documents"></a>Documento sull’attendibilità
 
@@ -110,15 +107,9 @@ Questa nuova funzionalità consente di salvare (o *aggiungere*) i documenti in m
 
 Andare a **più > amministratore** per accedere alle funzioni amministrative che sono disponibili solo per l'account di amministratore globale. Questa opzione è visibile solo quando l'utente ha eseguito l'accesso come amministratore globale. Nel menu a discesa **amministratore** sono disponibili due opzioni:
 
-- **Impostazioni:** Questa pagina consente di assegnare un accesso basato sui ruoli (noti come *ruoli utente*) a Compliance Manager.  Per ulteriori informazioni, vedere:
+- **Impostazioni:** Questa pagina consente di assegnare i ruoli utente per Compliance Manager (Classic).
 
-  - [Autorizzazioni in Compliance Manager (classica)](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md#permissions-and-role-based-access-control)
-
-  - [Autorizzazioni in Compliance Manager (anteprima)](compliance-manager-overview.md#permissions)
-
-  È inoltre possibile configurare se le azioni in Compliance Manager vengono aggiornate in base allo stato della stessa azione in Secure score. Questa funzionalità è supportata solo se si utilizza la versione più recente di Compliance Manager. Per ulteriori informazioni, vedere [controllo degli aggiornamenti automatici del Punteggio sicuro](working-with-compliance-manager.md#controlling-automatic-secure-score-updates).
-
-- **Impostazioni per la privacy degli utenti:** Questa pagina consente di esportare un report che contiene le assegnazioni di elementi di azione in Compliance Manager per un utente specifico. È inoltre possibile riassegnare tutti gli elementi azione a un altro utente e rimuovere qualsiasi elemento di azione assegnato dall'utente specificato. Per ulteriori informazioni, vedere [impostazioni per la privacy degli utenti](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md#user-privacy-settings).
+- **Impostazioni per la privacy degli utenti:** Questa pagina consente di esportare un report che contiene le assegnazioni di elementi di azione in Compliance Manager (Classic) per un utente specifico. È inoltre possibile riassegnare tutti gli elementi azione a un altro utente e rimuovere qualsiasi elemento di azione assegnato dall'utente specificato.
 
 ### <a name="search"></a>Ricerca
 
@@ -126,9 +117,9 @@ Fare clic sulla lente di ingrandimento nell'angolo in alto a destra della pagina
 
 ![Service Trust Portal - Ricerca in documenti con filtro applicato](../media/86b754e1-c63c-4514-89ac-d014bf334140.png)
 
-Per impostazione predefinita, la ricerca ° restituisce i risultati dei documenti. È possibile filtrare i risultati utilizzando gli elenchi a discesa per affinare l'elenco dei documenti visualizzati. È possibile utilizzare più filtri per limitare l'elenco dei documenti. I filtri includono i servizi cloud specifici, le categorie di conformità o le procedure di sicurezza, le aree geografiche e le industrie. Fare clic sul collegamento nome documento per scaricare il documento.
+Per impostazione predefinita, la ricerca restituisce i risultati dei documenti. È possibile filtrare i risultati utilizzando gli elenchi a discesa per affinare l'elenco dei documenti visualizzati. È possibile utilizzare più filtri per limitare l'elenco dei documenti. I filtri includono i servizi cloud specifici, le categorie di conformità o le procedure di sicurezza, le aree geografiche e le industrie. Fare clic sul collegamento nome documento per scaricare il documento.
 
-Per elencare i controlli dalle valutazioni in Compliance Manager correlate ai termini di ricerca, fare clic su **Compliance Manager**. I risultati della ricerca mostrano la data in cui è stata creata la valutazione, il nome del gruppo di valutazione, il servizio cloud Microsoft applicabile e se il controllo è Microsoft o gestito dal cliente. Fare clic sul nome del controllo per visualizzare il controllo nella valutazione in Compliance Manager.
+Per elencare i controlli dalle valutazioni in Compliance Manager (classiche) correlate ai termini di ricerca, fare clic su **Compliance Manager**. I risultati della ricerca mostrano la data in cui è stata creata la valutazione, il nome del gruppo di valutazione, il servizio cloud Microsoft applicabile e se il controllo è Microsoft o gestito dal cliente. Fare clic sul nome del controllo per visualizzare il controllo nella valutazione in Compliance Manager (Classic).
 
 ![Service Trust Portal - Ricerca nei controlli di Compliance Manager](../media/bafb811a-68ce-40b5-ad16-058498fe5439.png)
 

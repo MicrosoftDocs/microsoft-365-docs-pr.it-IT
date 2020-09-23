@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 83c66bfce39698cfea7833433d337fe7411e0ebe
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: bf1297fb955a2f66de0d6e5677668952c8808c5c
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47416346"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208378"
 ---
 # <a name="us-internal-revenue-service-publication-1075"></a>Pubblicazione 1075 degli Stati Uniti Internal Revenue Service
 
@@ -43,7 +43,7 @@ Per aiutare gli enti governativi nelle loro attività di conformità, Microsoft:
 - Fornisce le considerazioni sulla conformità al fisco di Azure Government e le considerazioni sulla conformità del governo degli Stati Uniti di Office 365, che delineano come un'agenzia può utilizzare Microsoft Cloud per i servizi governativi in modo che sia conforme all'IRS 1075. I clienti governativi di NDA possono richiedere questi documenti.
 - Offre ai clienti la possibilità, a loro spese, di comunicare con esperti o revisori esterni Microsoft, se necessario.
 
-## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud Microsoft inclusi nell'ambito
+## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud Microsoft in ambito
 
 Le autorizzazioni di FedRAMP sono concesse a tre livelli di impatto in base alle linee guida del NIST: basso, medio e alto. Tali livelli incidono sull'impatto che la perdita di riservatezza, integrità o disponibilità può avere su un'organizzazione, a bassa (effetto limitato), a livello medio (effetto avverso grave) e alta (effetto grave o catastrofico).
 
@@ -75,6 +75,10 @@ Sì, se l'organizzazione soddisfa i requisiti di idoneità per Azure Government 
 **È possibile utilizzare l'ambiente cloud pubblico di Azure o Office 365 ed essere ancora conforme all'IRS 1075?**
 
 No. Gli unici ambienti in cui è possibile archiviare ed elaborare FTI sono Azure Government o Office 365 US Government. I clienti governativi devono soddisfare i requisiti di idoneità per l'utilizzo di tali ambienti.
+
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>Utilizzo di Microsoft Compliance Manager per valutare i rischi
+
+[Microsoft Compliance Manager](compliance-manager.md) è una funzionalità del [centro conformità di Microsoft 365](microsoft-365-compliance-center.md) che consente di comprendere la posizione di conformità dell'organizzazione e di intraprendere azioni per contribuire alla riduzione dei rischi. Compliance Manager offre un modello Premium per la creazione di una valutazione per questo regolamento. Individuare il modello nella pagina **modelli di valutazione** in Compliance Manager. Informazioni su come [creare valutazioni in Compliance Manager](compliance-manager-assessments.md).
 
 ## <a name="resources"></a>Risorse
 

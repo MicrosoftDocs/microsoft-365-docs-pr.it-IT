@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: fa38b81ff02729f1bd874c1ac286712b0a6bbb7a
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 9ff029904a34291f4131f2013ffe30b73aa3233c
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47416810"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208782"
 ---
 # <a name="insider-risk-management-policies"></a>Criteri di gestione dei rischi Insider
 
@@ -71,7 +71,7 @@ Quando si creano o si modificano i criteri DLP per l'utilizzo con i criteri di g
 
 Ogni criterio di gestione dei rischi Insider creato dal modello per le **perdite di dati** può essere assegnato solo a un criterio DLP. Valutare la possibilità di creare un criterio DLP dedicato che combini le diverse attività che si desidera rilevare e fungere da eventi di attivazione per i criteri di rischio Insider che utilizzano il modello di **perdita di dati** .
 
-Per informazioni dettagliate su come configurare i criteri DLP per la propria organizzazione, vedere l'argomento [creare, testare e ottimizzare un criterio DLP](create-test-tune-dlp-policy.md) .
+Per informazioni dettagliate su come configurare i criteri DLP per la propria organizzazione, vedere l'articolo [creare, testare e ottimizzare un criterio DLP](create-test-tune-dlp-policy.md) .
 
 ### <a name="data-leaks-by-priority-users-preview"></a>Perdite di dati da parte di utenti prioritari (anteprima)
 
@@ -115,6 +115,9 @@ Quando si utilizza questo modello, è inoltre necessario configurare un connetto
 
 ### <a name="offensive-language-in-email"></a>Lingua offensiva nel messaggio di posta elettronica
 
+>[!IMPORTANT]
+>A partire dal 16 ottobre 2020, non sarà più possibile creare criteri utilizzando questo modello. Tutti i criteri attivi che utilizzano questo modello funzioneranno fino a quando non verranno rimossi definitivamente nel gennaio 2021. Il classificatore incorporato del linguaggio offensivo che supporta questo modello è obsoleto perché produce un numero elevato di falsi positivi. Per risolvere i problemi di rischio per la lingua offensiva, è consigliabile utilizzare i criteri di [conformità alla comunicazione](communication-compliance.md) Microsoft 365. Per ulteriori informazioni sui classificatori incorporati, vedere [Guida introduttiva ai classificatori addestrabili](classifier-get-started-with.md).
+
 Il rilevamento e l'esecuzione di operazioni per impedire comportamenti offensivi e abusivi sono una componente fondamentale della prevenzione dei rischi. I classificatori incorporati in Microsoft 365 Scan hanno inviato messaggi di posta elettronica dalle cassette postali di Exchange Online nell'organizzazione per diversi tipi di problemi di conformità. Questi classificatori utilizzano una combinazione di intelligenza artificiale e parole chiave per identificare la lingua nella posta elettronica che potrebbe violare i criteri di anti-molestia. Utilizzare questo modello per creare rapidamente un criterio che utilizza questi classificatori per rilevare automaticamente il contenuto del messaggio di posta elettronica che può essere considerato abusivo o offensivo. Insider Risk Management utilizza classificatori che analizzano i messaggi di posta elettronica inviati per i termini e i sentimenti di lingua inglese per il linguaggio offensivo.
 
 ### <a name="policy-template-prerequisites-and-triggering-events"></a>Prerequisiti e eventi di attivazione dei modelli di criteri
@@ -139,7 +142,7 @@ Nella tabella seguente sono elencati gli eventi di attivazione e i prerequisiti 
 
 I criteri di gestione dei rischi Insider supportano la specifica di una priorità più alta per il contenuto a seconda della modalità di archiviazione o di classificazione. La specifica del contenuto come priorità aumenta il Punteggio di rischio per qualsiasi attività associata, che a sua volta aumenta la possibilità di generare un avviso di gravità elevato. Tuttavia, alcune attività non genereranno alcun avviso, a meno che il contenuto correlato non contenga tipi di informazioni riservate incorporate o personalizzati o sia stato specificato come priorità nel criterio.
 
-Ad esempio, l'organizzazione dispone di un sito di SharePoint dedicato per un progetto estremamente riservato. Le perdite di dati per le informazioni contenute in questo sito di SharePoint potrebbero compromettere il progetto e incidere in modo significativo sul relativo esito positivo. Assegnando la priorità a questo sito di SharePoint in un criterio di perdita dei dati, i punteggi dei rischi per le attività di qualificazione sono aumentati automaticamente. In questo modo si aumenta la probabilità che queste attività generino un avviso di rischio Insider e aumentano il livello di gravità per l'avviso.
+Ad esempio, l'organizzazione dispone di un sito di SharePoint dedicato per un progetto estremamente riservato. Le perdite di dati per le informazioni contenute in questo sito di SharePoint potrebbero compromettere il progetto e incidere in modo significativo sul relativo esito positivo. Assegnando la priorità a questo sito di SharePoint in un criterio di perdita dei dati, i punteggi dei rischi per le attività di qualificazione sono aumentati automaticamente. Questa definizione di priorità aumenta la probabilità che queste attività generino un avviso di rischio Insider e rialzino il livello di gravità per l'avviso.
 
 Quando si crea un criterio di gestione dei rischi Insider nella procedura guidata dei criteri, è possibile scegliere tra le seguenti priorità:
 

@@ -11,16 +11,15 @@ ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
-ROBOTS: NOINDEX, NOFOLLOW
 description: Gli amministratori possono configurare un connettore di invio di messaggi per importare e archiviare i dati di SMS e MMS dalla rete su&T Mobile. In questo modo è possibile archiviare i dati provenienti da origini dati di terze parti in Microsoft 365 per poter utilizzare le funzionalità di conformità, come la conservazione legale, la ricerca di contenuto e i criteri di ritenzione per gestire i dati di terze parti dell'organizzazione.
-ms.openlocfilehash: dfcc59c6ed7beb088ca738c50112cf40a0ebe511
-ms.sourcegitcommit: a6625f76e8f19eebd9353ed70c00d32496ec06eb
+ms.openlocfilehash: 87974fd18f0e0a7c824e81231418ccf1c838b636
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47362077"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48200251"
 ---
-# <a name="set-up-a-connector-to-archive-att-smsmms-data-preview"></a>Configurare un connettore per l'archiviazione in&dati SMS/MMS (Preview)
+# <a name="set-up-a-connector-to-archive-att-smsmms-data"></a>Configurare un connettore per l'archiviazione in&dati SMS/MMS di T
 
 Utilizzare un connettore di invio di messaggi nel centro conformità di Microsoft 365 per importare e archiviare i dati di SMS e MMS dalla rete mobile&T. Dopo aver configurato e configurato un connettore, si connette alla rete di&T dell'organizzazione una volta al giorno e importa i dati di SMS e MMS nelle cassette postali in Microsoft 365.
 
@@ -88,4 +87,4 @@ Dopo aver completato i prerequisiti descritti nella sezione precedente, è possi
 
 ## <a name="known-issues"></a>Problemi noti
 
-- Al momento, non è supportato l'importazione di allegati di dimensioni superiori a 10 MB, ma il supporto per gli elementi di grandi dimensioni sarà disponibile in una data successiva.
+- Al momento, non è supportato l'importazione di allegati o elementi di dimensioni superiori a 10 MB. Il supporto per gli elementi di grandi dimensioni sarà disponibile in un secondo momento.
