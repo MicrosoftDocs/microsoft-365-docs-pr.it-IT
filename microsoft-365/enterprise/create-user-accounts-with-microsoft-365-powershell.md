@@ -3,7 +3,7 @@ title: Creare gli account utente di Microsoft 365 con PowerShell
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 07/17/2020
+ms.date: 09/23/2020
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -20,16 +20,16 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 6770c5fa-b886-4512-8c67-ffd53226589e
 description: In questo articolo vengono fornite informazioni su come utilizzare PowerShell per creare account utente o più account utente di Microsoft 365.
-ms.openlocfilehash: 53077352862b6d0df6bb569300e2d8bc2475df91
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 00ae8806e786eada092704febd65c72c72382788
+ms.sourcegitcommit: c1ee4ed3c5826872b57339e1e1aa33b4d2209711
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46691327"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "48235595"
 ---
 # <a name="create-microsoft-365-user-accounts-with-powershell"></a>Creare gli account utente di Microsoft 365 con PowerShell
 
-*Questo articolo può essere applicato sia a Microsoft 365 Enterprise che a Office 365 Enterprise.*
+*Questo articolo si applica sia a Microsoft 365 Enterprise che a Office 365 Enterprise*.
 
 È possibile utilizzare PowerShell per Microsoft 365 per creare efficacemente gli account utente, in particolare più account utente. Quando si creano account utente in PowerShell, vengono sempre richieste determinate proprietà dell'account. Altre proprietà non sono necessarie per creare l'account, ma sono comunque importanti. Tali proprietà sono descritte nella tabella seguente.
   
@@ -42,7 +42,10 @@ ms.locfileid: "46691327"
 |**LicenseAssignment** <br/> |No  <br/> |Si tratta del piano di gestione delle licenze (noto anche come piano di licenza o SKU) da cui viene assegnata una licenza disponibile per l'account utente. La licenza definisce i servizi Microsoft 365 che sono disponibili per l'account. Non è necessario assegnare una licenza a un utente quando si crea l'account, ma l'account richiede una licenza per accedere ai servizi Microsoft 365. Dopo aver creato l'account utente, sono presenti 30 giorni per la licenza. |
 |**Password** <br/> |No  <br/> | Se non si specifica una password, all'account utente ne viene assegnata una casuale, visibile nei risultati del comando. Se si specifica una password, è necessario che contenga da 8 a 16 caratteri di testo ASCII di uno dei tre tipi seguenti: lettere minuscole, lettere maiuscole, numeri e simboli. <br/> |
 |**UsageLocation** <br/> |No  <br/> |Questo è un codice paese valido ISO 3166-1 Alpha-2. Ad esempio, US per gli Stati Uniti e FR per la Francia. È importante fornire questo valore perché alcuni servizi Microsoft 365 non sono disponibili in alcuni paesi, pertanto non è possibile assegnare una licenza a un account utente, a meno che l'account non abbia configurato questo valore. Per ulteriori informazioni, vedere [informazioni sulle restrizioni di licenza](https://go.microsoft.com/fwlink/p/?LinkId=691730).  <br/> |
-   
+
+>[!Note]
+>[Informazioni su come creare account utente](https://docs.microsoft.com/microsoft-365/admin/add-users/add-users) con l'interfaccia di amministrazione di Microsoft 365. Per un elenco di risorse aggiuntive, vedere [Manage Users and groups](https://docs.microsoft.com/microsoft-365/admin/add-users/).
+>   
 
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Usare il modulo di Azure Active Directory PowerShell per Graph
 

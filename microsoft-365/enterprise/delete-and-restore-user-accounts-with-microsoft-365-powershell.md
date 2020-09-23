@@ -3,7 +3,7 @@ title: Eliminare gli account utente di Microsoft 365 con PowerShell
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 07/17/2020
+ms.date: 09/23/2020
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -20,16 +20,20 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 209c9868-448c-49bc-baae-11e28b923a39
 description: In questo articolo vengono fornite informazioni su come utilizzare i diversi moduli di PowerShell per eliminare gli account utente di Microsoft 365.
-ms.openlocfilehash: 6da2d83b3f305db09f8c1d02f54e643a0ad1978b
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 0c13b57c13fb3d01d648438a5d6973fea8b9db67
+ms.sourcegitcommit: c1ee4ed3c5826872b57339e1e1aa33b4d2209711
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46691320"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "48235443"
 ---
 # <a name="delete-microsoft-365-user-accounts-with-powershell"></a>Eliminare gli account utente di Microsoft 365 con PowerShell
 
-È possibile utilizzare PowerShell per Microsoft 365 per eliminare un account utente.
+È possibile utilizzare PowerShell per Microsoft 365 per eliminare e ripristinare un account utente.
+
+>[!Note]
+>[Informazioni su come ripristinare un account utente](https://docs.microsoft.com/microsoft-365/admin/add-users/restore-user) con l'interfaccia di amministrazione di Microsoft 365. Per un elenco di risorse aggiuntive, vedere [Manage Users and groups](https://docs.microsoft.com/microsoft-365/admin/add-users/).
+>   
    
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Usare il modulo di Azure Active Directory PowerShell per Graph
 

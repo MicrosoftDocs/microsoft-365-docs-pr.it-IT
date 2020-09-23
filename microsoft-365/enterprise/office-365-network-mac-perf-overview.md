@@ -14,12 +14,12 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Panoramica della connettività di rete nell'interfaccia di amministrazione di Microsoft 365 (anteprima)
-ms.openlocfilehash: fc800d6f7a63e34f83b089fdea41b68cbf9134da
-ms.sourcegitcommit: 4ee683c18442386f6fc5c76ffabfad2c28b81d42
+ms.openlocfilehash: 52d1995572a3ae0220ac8529862ba69d5bca8cdb
+ms.sourcegitcommit: c1ee4ed3c5826872b57339e1e1aa33b4d2209711
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 09/23/2020
-ms.locfileid: "48214916"
+ms.locfileid: "48235539"
 ---
 # <a name="network-connectivity-in-the-microsoft-365-admin-center-preview"></a>Connettività di rete nell'interfaccia di amministrazione di Microsoft 365 (anteprima)
 
@@ -30,6 +30,11 @@ L'interfaccia di amministrazione di Microsoft 365 ora include metriche di connet
 Le **valutazioni di rete** e le informazioni sulla **rete** vengono visualizzate nell'interfaccia di amministrazione di Microsoft 365 in **Health | Connettività**.
 
 ![Pagina prestazioni di rete](../media/m365-mac-perf/m365-mac-perf-page-nav.png)
+
+>[!NOTE]
+>Lo strumento di test della connettività di rete supporta i tenant in WW Commercial e in Germania, ma non GCC moderato, GCC High, DoD o China.
+
+Quando si accede per la prima volta alla pagina prestazioni di rete, viene visualizzato un riquadro di panoramica contenente una mappa delle prestazioni della rete globale, un ambito di valutazione della rete per l'intero tenant e un elenco di problemi correnti. Dalla panoramica, è possibile eseguire il drill-down per visualizzare specifiche metriche delle prestazioni di rete e problemi in base alla posizione. Per ulteriori informazioni, vedere [Network Performance Overview in the Microsoft 365 Admin Center](#network-connectivity-overview-in-the-microsoft-365-admin-center).
 
 Potrebbe essere richiesto di partecipare all'anteprima pubblica per questa funzionalità per conto dell'organizzazione. L'accettazione è di solito avvenuta immediatamente e quindi viene visualizzata la pagina connettività di rete. 
 

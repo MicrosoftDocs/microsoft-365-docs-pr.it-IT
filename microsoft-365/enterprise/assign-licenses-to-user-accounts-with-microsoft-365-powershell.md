@@ -3,7 +3,7 @@ title: Assegnare le licenze Microsoft 365 agli account utente con PowerShell
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 07/16/2020
+ms.date: 09/23/2020
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -21,21 +21,25 @@ ms.assetid: ba235f4f-e640-4360-81ea-04507a3a70be
 search.appverid:
 - MET150
 description: In questo articolo vengono fornite informazioni su come utilizzare PowerShell per assegnare una licenza Microsoft 365 agli utenti senza licenza.
-ms.openlocfilehash: 7bd217dfeed762a11161c3f512fb55a8e6c4968e
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: f042f8109bf9ac9b634bc66509c60a5181fb1af6
+ms.sourcegitcommit: c1ee4ed3c5826872b57339e1e1aa33b4d2209711
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46690997"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "48235619"
 ---
 # <a name="assign-microsoft-365-licenses-to-user-accounts-with-powershell"></a>Assegnare le licenze Microsoft 365 agli account utente con PowerShell
 
-*Questo articolo può essere applicato sia a Microsoft 365 Enterprise che a Office 365 Enterprise.*
+*Questo articolo si applica sia a Microsoft 365 Enterprise che a Office 365 Enterprise*.
 
 Gli utenti non possono utilizzare i servizi di Microsoft 365 finché all'account non è stata assegnata una licenza da un piano di gestione delle licenze. È possibile utilizzare PowerShell per assegnare rapidamente le licenze agli account senza licenza. 
 
 >[!Note]
 >Gli account utente devono essere assegnati a un percorso. È possibile eseguire questa operazione dalle proprietà di un account utente nell'interfaccia di amministrazione di Microsoft 365 o da PowerShell.
+>
+
+>[!Note]
+>[Informazioni su come assegnare le licenze agli account utente](https://docs.microsoft.com/microsoft-365/admin/manage/assign-licenses-to-users) con l'interfaccia di amministrazione di Microsoft 365. Per un elenco di risorse aggiuntive, vedere [Manage Users and groups](https://docs.microsoft.com/microsoft-365/admin/add-users/).
 >
 
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Usare il modulo di Azure Active Directory PowerShell per Graph

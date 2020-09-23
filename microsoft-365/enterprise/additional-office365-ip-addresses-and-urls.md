@@ -24,12 +24,12 @@ search.appverid:
 ms.assetid: ''
 description: 'Riepilogo: il nuovo servizio Web endpoint non include un numero limitato di endpoint per scenari specifici.'
 hideEdit: true
-ms.openlocfilehash: 821332f573eb8499a01838a5dc9941c9844086a3
-ms.sourcegitcommit: 04f196528a7a91b404478553433af3fa94d7eee7
+ms.openlocfilehash: 30d0c7af8420f85abf820839a26c989704860c0a
+ms.sourcegitcommit: c1ee4ed3c5826872b57339e1e1aa33b4d2209711
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/31/2020
-ms.locfileid: "47317506"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "48235583"
 ---
 # <a name="additional-endpoints-not-included-in-the-office-365-ip-address-and-url-web-service"></a>Altri endpoint non inclusi nel servizio Web per URL e indirizzo IP di Office 365
 
@@ -67,7 +67,7 @@ Escluso il DNS, sono tutti facoltativi per la maggior parte dei clienti, a meno 
 | 20  | [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/hybrid/) con 21 ViaNet in Cina per sincronizzare gli account utente locali con Azure AD. | \*.digicert.com:80 <BR> \*.entrust.net:80 <BR> \*.chinacloudapi.cn:443 <BR> secure.aadcdn.partner.microsoftonline-p.cn:443 <BR>*.partner.microsoftonline.cn:443 <BR> <BR>Vedere anche [Risolvere i problemi in ingresso con i problemi di connettività di Azure AD Connect](https://docs.azure.cn/zh-cn/active-directory/hybrid/tshoot-connect-connectivity). | Solo traffico del server in uscita |
 |  21  | Microsoft Stream (richiede il token utente Azure AD). <BR> Office 365 internazionale (incluso GCC) | \*.cloudapp.net <BR> \*.api.microsoftstream.com <BR> \*.notification.api.microsoftstream.com <BR> amp.azure.net <BR> api.microsoftstream.com <BR> az416426.vo.msecnd.net <BR> s0.assets-yammer.com <BR> vortex.data.microsoft.com <BR> web.microsoftstream.com <BR> Porta TCP 443  | Traffico del server in ingresso |
 | 22  | Usare il server MFA per le richieste di autenticazione a più fattori, sia per le nuove installazioni del server che per la configurazione con Active Directory Domain Services (AD DS). | Vedere [Introduzione al server Azure Multi-Factor Authentication](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfaserver-deploy#plan-your-deployment).  | Solo traffico del server in uscita |
-| 23  | Notifiche di modifica di Microsoft Graph | Gli sviluppatori possono usare le [notifiche di modifica](https://docs.microsoft.com/graph/webhooks?context=graph%2Fapi%2F1.0&view=graph-rest-1.0) per sottoscrivere eventi in Microsoft Graph. | *.cloudapp.net<BR> 104.43.130.21, 137.116.169.230, 13.79.38.63, 104.214.39.228, Cloud pubblico: 168.63.250.205, 52.161.9.202, 40.68.103.62, 13.89.60.223, 23.100.95.104, 40.113.95.219, 104.214.32.10, 168.63.237.145, 52.161.110.176, 52.174.177.183 <BR> Microsoft Cloud for US Government: 52.244.231.173, 52.238.76.151, 52.244.250.211, 52.238.78.108 <BR> Microsoft Cloud Germania: 51.4.231.136, 51.5.243.223, 51.4.226.154, 51.5.244.215 <BR> Microsoft Cloud Cina gestito da 21Vianet: 139.219.15.33, 42.159.154.223, 42.159.88.79, 42.159.155.77<BR> Porta TCP 443 <BR> Nota: gli sviluppatori possono specificare porte diverse al momento della creazione di sottoscrizioni.  | Traffico del server in ingresso |
+| 23  | Notifiche di modifica di Microsoft Graph | Gli sviluppatori possono usare le [notifiche di modifica](https://docs.microsoft.com/graph/webhooks?context=graph%2Fapi%2F1.0&view=graph-rest-1.0) per sottoscrivere eventi in Microsoft Graph. | *.cloudapp.net<BR> 104.43.130.21, 137.116.169.230, 13.79.38.63, 104.214.39.228, Public Cloud: 168.63.250.205, 52.161.9.202, 40.68.103.62, 13.89.60.223, 23.100.95.104, 40.113.95.219, 104.214.32.10, 168.63.237.145, 52.161.110.176, 52.174.177.183, 13.85.192.59, 13.85.192.123, 13.86.37.15, 13.89.108.233, 13.89.104.147, 20.44.210.83, 20.44.210.146, 40.76.162.99, 40.76.162.42, 40.74.203.28, 40.74.203.27, 51.104.159.213, 51.104.159.181, 51.124.75.43, 51.124.73.177, 51.138.90.7, 51.138.90.52, 52.139.153.222, 52.139.170.157, 52.139.170.47, 52.142.114.29, 52.142.115.31, SA, 52.147.213.251,, 52.147.213.181, 52.148.24.136, 52.148.27.39, 52.148.115.48, 52.148.114.238 <BR> Microsoft Cloud per il governo degli Stati Uniti: 52.244.231.173, 52.238.76.151, 52.244.250.211, 52.238.78.108, 52.243.147.249, 52.243.148.19, 52.243.157.104, 52.243.157.105, 52.244.33.45, 52.244.35.174, 52.244.111.156, 52.244.111.170 <BR> Microsoft Cloud Germany: 51.4.231.136, 51.5.243.223, 51.4.226.154, 51.5.244.215, 51.4.150.206, 51.4.150.235, 51.5.147.130, 51.5.148.103 <BR> Microsoft Cloud Cina gestito da 21Vianet: 139.219.15.33, 42.159.154.223, 42.159.88.79, 42.159.155.77, 40.72.155.199, 40.72.155.216, 40.125.138.23, 40.125.136.69, 42.159.72.35, 42.159.72.47, 42.159.180.55, 42.159.180.56<BR> Porta TCP 443 <BR> Nota: gli sviluppatori possono specificare porte diverse al momento della creazione di sottoscrizioni.  | Traffico del server in ingresso |
 |||||
 
 ## <a name="related-topics"></a>Argomenti correlati

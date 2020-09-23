@@ -13,12 +13,12 @@ ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Informazioni su come contattare il supporto per il proprio paese o area geografica.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: c7026dcc09207ce1b6fa911bf20683e4e642eee5
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 757da7f0fb3089c358333ac5f49140d965476945
+ms.sourcegitcommit: c1ee4ed3c5826872b57339e1e1aa33b4d2209711
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44397599"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "48235407"
 ---
 # <a name="contact-support-for-india"></a>Contattare il supporto per l'India
 
@@ -27,6 +27,8 @@ ms.locfileid: "44397599"
 ## <a name="phone-number"></a>Numero di telefono
 000 800 440 2038
 
+Numero verde locale
+
 ## <a name="hours"></a>Ore
 ### <a name="billing-support"></a>Supporto per la fatturazione:
 
@@ -34,7 +36,7 @@ Inglese: lun-ven 9 AM-18.00
 
 ### <a name="technical-support"></a>Supporto tecnico:
 
-Italiano: 24 ore al giorno, 7 giorni alla settimana
+Inglese: 24 ore al giorno, 7 giorni alla settimana
 
 Numero di telefono alternativo: 1800 200 2052
 

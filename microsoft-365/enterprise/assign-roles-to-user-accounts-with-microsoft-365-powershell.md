@@ -3,7 +3,7 @@ title: Assegnare i ruoli agli account utente di Microsoft 365 con PowerShell
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 07/16/2020
+ms.date: 09/23/2020
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -20,21 +20,21 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: ede7598c-b5d5-4e3e-a488-195f02f26d93
 description: In questo articolo vengono fornite informazioni su come utilizzare PowerShell per Microsoft 365 in modo rapido e semplice per assegnare ruoli agli account utente.
-ms.openlocfilehash: 4726dcea109490ff28299002bc5263aa15dca949
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 9df1b018cf3e89e0afbd5265fdd1ec9f92b34aec
+ms.sourcegitcommit: c1ee4ed3c5826872b57339e1e1aa33b4d2209711
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46690996"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "48235431"
 ---
 # <a name="assign-roles-to-microsoft-365-user-accounts-with-powershell"></a>Assegnare i ruoli agli account utente di Microsoft 365 con PowerShell
 
-*Questo articolo può essere applicato sia a Microsoft 365 Enterprise che a Office 365 Enterprise.*
+*Questo articolo si applica sia a Microsoft 365 Enterprise che a Office 365 Enterprise*.
 
 È possibile assegnare rapidamente e facilmente i ruoli agli account utente tramite PowerShell per Microsoft 365.
 
 >[!Note]
->Per assegnare i ruoli agli account utente con l'interfaccia di amministrazione di Microsoft 365, vedere le [istruzioni](https://docs.microsoft.com/microsoft-365/admin/add-users/assign-admin-roles)riportate di seguito.
+>[Informazioni su come assegnare i ruoli agli account utente](https://docs.microsoft.com/microsoft-365/admin/add-users/assign-admin-roles) con l'interfaccia di amministrazione di Microsoft 365. Per un elenco di risorse aggiuntive, vedere [Manage Users and groups](https://docs.microsoft.com/microsoft-365/admin/add-users/).
 >
 
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Usare il modulo di Azure Active Directory PowerShell per Graph

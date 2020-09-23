@@ -18,16 +18,16 @@ search.appverid:
 - BCS160
 ms.assetid: c08786fb-298e-437c-8222-dab7625fc815
 description: 'Riepilogo: in questo articolo viene descritto il supporto IPv6 nei componenti di Microsoft Office 365 e nelle offerte governative di Office 365.'
-ms.openlocfilehash: c4ecd2ef26ecf660eb1d172b1951907724d2238a
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: f671e8caf868ebbed628a155b73ce6fe413949a9
+ms.sourcegitcommit: c1ee4ed3c5826872b57339e1e1aa33b4d2209711
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46691112"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "48235607"
 ---
 # <a name="ipv6-support-in-office-365-services"></a>Supporto IPv6 nei servizi Office 365
 
-*Questo articolo può essere applicato sia a Microsoft 365 Enterprise che a Office 365 Enterprise.*
+*Questo articolo si applica sia a Microsoft 365 Enterprise che a Office 365 Enterprise*.
 
 Office 365 supporta sia IPv6 che IPv4. Tuttavia, non tutte le funzionalità di Office 365 sono completamente abilitate con IPv6. Questo significa che è necessario utilizzare sia IPv4 che IPv6 per connettersi a Office 365. Se si sta filtrando il traffico in uscita in Office 365, l'elenco completo degli indirizzi IPv6 supportati da Office 365 è disponibile nell'articolo [office 365 URLs and IP address ranges](urls-and-ip-address-ranges.md). Una volta configurata la rete e gli indirizzi IPv6 corretti sono consentiti, è possibile scaricare il [piano di testing IPv6 di Office 365](https://go.microsoft.com/fwlink/?LinkId=293447) dall'area download Microsoft.
   
@@ -50,6 +50,10 @@ Se il programma utilizzato per effettuare la connessione a SharePoint Online sup
 ### <a name="skype-for-business-and-ipv6"></a>Skype for business e IPv6
 
 Tieni presente che IPv6 non è supportato in Skype for business e non può più essere abilitato.
+
+### <a name="microsoft-teams-and-ipv6"></a>Microsoft teams e IPV6
+
+Il routing diretto di Microsoft teams supporta solo IPv4. Il servizio Microsoft teams e il client supportano sia IPv4 che IPv6. Se si desidera controllare le comunicazioni a Microsoft teams, utilizzare gli intervalli di indirizzi IP negli [URL di Office 365 e negli intervalli di indirizzi IP](urls-and-ip-address-ranges.md).
   
 ### <a name="exchange-online-protection-and-ipv6"></a>Exchange Online Protection e IPv6
 

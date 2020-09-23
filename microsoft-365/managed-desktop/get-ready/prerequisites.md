@@ -1,6 +1,6 @@
 ---
 title: Prerequisiti per Microsoft Managed Desktop
-description: ''
+description: Licenze, account di Azure, impostazioni di autenticazione e impostazioni di Microsoft 365 da configurare prima di eseguire la registrazione in Microsoft Managed Desktop
 keywords: Microsoft Managed Desktop, Microsoft 365, servizio, documentazione
 ms.service: m365-md
 author: jaimeo
@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 4850aabfac0774f899d6497543b74ff77c446523
-ms.sourcegitcommit: a6625f76e8f19eebd9353ed70c00d32496ec06eb
+ms.openlocfilehash: 1c03d9028205ea392bade15e6dec354bff0be96e
+ms.sourcegitcommit: c1ee4ed3c5826872b57339e1e1aa33b4d2209711
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47361952"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "48235395"
 ---
 # <a name="prerequisites-for-microsoft-managed-desktop"></a>Prerequisiti per Microsoft Managed Desktop
 
@@ -23,7 +23,6 @@ ms.locfileid: "47361952"
 
 In questo argomento vengono illustrati i requisiti dell'infrastruttura che è necessario soddisfare per garantire il successo con Microsoft Managed Desktop. 
 
-Microsoft FastTrack è disponibile per aiutarti a soddisfare questi requisiti e a prepararti a partecipare a Microsoft Managed Desktop. Per ulteriori informazioni, vedere [Microsoft FastTrack](https://fasttrack.microsoft.com/about). 
 
 Area | Dettagli dei prerequisiti
 --- | ---
@@ -33,7 +32,7 @@ Azure Active Directory |    Azure Active Directory (Azure AD) deve essere l'orig
 Autenticazione |    Se Azure AD non è l'origine dell'autenticazione primaria per gli account utente, è necessario configurare una di queste in Azure AD Connect:<br>-Sincronizzazione hash delle password<br>-Autenticazione pass-through<br>-Un provider di identità esterno (compresi gli sfollati Windows Server ADFS e non Microsoft) configurati per soddisfare i requisiti di integrazione di Azure AD. Per ulteriori informazioni, vedere le [linee guida](https://www.microsoft.com/download/details.aspx?id=56843) . <br><br>Quando si impostano le opzioni di autenticazione con Azure AD Connect, è consigliato anche il writeback delle password. Per ulteriori informazioni, vedere [writeback delle password](https://docs.microsoft.com/azure/active-directory/authentication/howto-sspr-writeback). <br><br>Se viene implementato un provider di identità esterno, è necessario convalidare la soluzione:<br>-Soddisfa i requisiti di integrazione di Azure AD<br>-Supporta l'accesso condizionale di Azure AD, consente di configurare i criteri di conformità ai dispositivi di MMD per essere configurati<br>-Abilita la registrazione dei dispositivi e l'utilizzo di servizi o funzionalità di Microsoft 365 richiesti come parte di Microsoft Managed Desktop <br><br>Per ulteriori informazioni sulle opzioni di autenticazione con Azure AD, vedere [Opzioni di accesso utente di Azure ad Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-user-signin).
 Microsoft 365 | OneDrive for business deve essere abilitato per gli utenti di Microsoft Managed Desktop.<br><br>Anche se non è necessario iscriversi con Microsoft Managed Desktop, è consigliabile eseguire la migrazione dei servizi seguenti al cloud:<br>-Posta elettronica: eseguire la migrazione alle cassette postali basate su cloud, Exchange Online o configurare con Exchange Online ibrido con Exchange 2013 o versione successiva, in locale.<br>-File e cartelle: eseguire la migrazione a OneDrive for business o SharePoint Online.<br>-Strumenti di collaborazione online: eseguire la migrazione a teams.
 Gestione dei dispositivi | I dispositivi Microsoft Managed Desktop richiedono la gestione tramite Microsoft Intune. È necessario impostare Intune come autorità di gestione dei dispositivi mobili.<br><br>Per ulteriori informazioni, vedere [Microsoft Intune](https://www.microsoft.com/cloud-platform/microsoft-intune). 
-Backup e ripristino dei dati | Microsoft Managed Desktop richiede la sincronizzazione dei file in OneDrive for business per la protezione. I file non sincronizzati con OneDrive for business non sono garantiti da Microsoft Managed Desktop e potrebbero essere persi durante gli scambi di dispositivi o di supporto per le chiamate che richiedono il ripristino di un dispositivo.<br><br>Sebbene non sia necessario, Microsoft Managed Desktop consiglia vivamente la migrazione da unità di rete mappate alla soluzione cloud appropriata. Per ulteriori informazioni, vedere [preparare le unità mappate per Microsoft Managed Desktop](mapped-drives.md)
+Backup e ripristino dei dati |  Microsoft Managed Desktop richiede la sincronizzazione dei file in OneDrive for business per la protezione. I file non sincronizzati con OneDrive for business non sono garantiti da Microsoft Managed Desktop e potrebbero essere persi durante gli scambi di dispositivi o di supporto per le chiamate che richiedono il ripristino di un dispositivo.<br><br>Sebbene non sia necessario, Microsoft Managed Desktop consiglia vivamente la migrazione da unità di rete mappate alla soluzione cloud appropriata. Per ulteriori informazioni, vedere [preparare le unità mappate per Microsoft Managed Desktop](mapped-drives.md)
 
 Quando si è pronti per iniziare a utilizzare Microsoft Managed Desktop, contattare il proprio account Manager Microsoft. 
 
