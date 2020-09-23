@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: Il piano di archiviazione offre funzionalità di gestione avanzate per le etichette di conservazione.
 ms.custom: seo-marvel-may2020
-ms.openlocfilehash: a92f835658bdeedbc64d3d4f2349900e30ec6dda
-ms.sourcegitcommit: 2b8c3fc39a7cbd4ca35e98dca430d2470cd2c925
+ms.openlocfilehash: c56f71032ccf154e5d9f416b42df1345da03d9a4
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "47427025"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48199017"
 ---
 # <a name="use-file-plan-to-manage-retention-labels"></a>Usare il piano di archiviazione per gestire le etichette di conservazione
 
@@ -81,6 +81,7 @@ Tutte le colonne tranne l'etichetta **Nome** possono essere visualizzate o nasco
 - **È un record** identifica se l'elemento viene contrassegnato come record quando è applicata l'etichetta. Valori validi:
     - No
     - Sì
+    - Sì (normativo)
 
 - **Durata di conservazione** identifica il periodo di conservazione. Valori validi:
     - Giorni

@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: cec98f979a19c91946564aa402d1880c3ee08d5a
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 8c56b7b597ea76c74412f49afa896a0d2f1b69a1
+ms.sourcegitcommit: 4ee683c18442386f6fc5c76ffabfad2c28b81d42
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47416780"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "48214905"
 ---
 # <a name="get-started-with-insider-risk-management-settings"></a>Informazioni introduttive sulle impostazioni di gestione dei rischi Insider
 
@@ -27,8 +27,11 @@ Le impostazioni di gestione dei rischi Insider si applicano a tutti i criteri di
 - Indicatori
 - Sequenze temporali del criterio
 - Rilevamenti intelligenti
-- Avvisi di esportazione
-- Gruppi di utenti prioritari
+- Avvisi di esportazione (anteprima)
+- Gruppi di utenti prioritari (anteprima)
+- Risorse fisiche prioritarie (anteprima)
+- Flussi automatizzati di alimentazione (anteprima)
+- Microsoft Teams (anteprima)
 
 Prima di iniziare e creare criteri di gestione dei rischi Insider, è importante comprendere queste impostazioni e scegliere l'opzione livelli migliori per le esigenze di conformità per l'organizzazione.
 
@@ -36,7 +39,7 @@ Prima di iniziare e creare criteri di gestione dei rischi Insider, è importante
 
 La protezione della privacy degli utenti che dispongono di corrispondenze di criteri è importante e può contribuire a promuovere l'oggettività nelle analisi dei dati e nelle recensioni degli analizzatori dei rischi Insider Per gli utenti con una corrispondenza dei criteri di rischio Insider, è possibile scegliere una delle seguenti impostazioni:
 
-- **Mostrare le versioni di anonimi dei**nomi utente: i denominati degli utenti sono anonimi per impedire agli amministratori, ai ricercatori di dati e ai revisori di vedere gli utenti associati agli avvisi dei criteri. Ad esempio, un utente ' Grace Taylor ' verrebbe visualizzato con uno pseudonimo randomizzato come ' AnonIS8-988' in tutte le aree dell'esperienza di gestione dei rischi Insider. Se si sceglie questa impostazione, anonimizza tutti gli utenti con le corrispondenze di criteri correnti e precedenti e si applica a tutti i criteri. Le informazioni sui profili utente nell'avviso del rischio Insider e nei dettagli del caso non saranno disponibili quando si sceglie questa opzione. Tuttavia, i nomi utente vengono visualizzati quando si aggiungono nuovi utenti ai criteri esistenti o quando si assegnano gli utenti ai nuovi criteri. Se si sceglie di disattivare questa impostazione, i nomi utente verranno visualizzati per tutti gli utenti che hanno corrispondenze di criteri correnti o precedenti.
+- **Mostrare le versioni di anonimi dei nomi utente**: i nominativi degli utenti sono anonimi per impedire agli amministratori, ai ricercatori dei dati e ai revisori di vedere chi è associato agli avvisi dei criteri. Ad esempio, un utente ' Grace Taylor ' verrebbe visualizzato con uno pseudonimo randomizzato come ' AnonIS8-988' in tutte le aree dell'esperienza di gestione dei rischi Insider. Se si sceglie questa impostazione, anonimizza tutti gli utenti con le corrispondenze di criteri correnti e precedenti e si applica a tutti i criteri. Le informazioni sui profili utente nell'avviso del rischio Insider e nei dettagli del caso non saranno disponibili quando si sceglie questa opzione. Tuttavia, i nomi utente vengono visualizzati quando si aggiungono nuovi utenti ai criteri esistenti o quando si assegnano gli utenti ai nuovi criteri. Se si sceglie di disattivare questa impostazione, i nomi utente verranno visualizzati per tutti gli utenti che hanno corrispondenze di criteri correnti o precedenti.
 - Non vengono visualizzate le **versioni di anonimi dei nomi utente**: i nomi utente vengono visualizzati per tutte le corrispondenze di criteri correnti e precedenti per gli avvisi e i casi. Le informazioni sui profili utente, ovvero il nome, il titolo, l'alias e l'organizzazione o il reparto, vengono visualizzate per tutti gli avvisi e i casi di gestione dei rischi Insider.
 
 ![Impostazioni di privacy per la gestione dei rischi Insider](../media/insider-risk-settings-privacy.png)
@@ -105,6 +108,9 @@ I rilevamenti anomali includono le impostazioni per le esclusioni dei tipi di fi
 
 ### <a name="offensive-language-detections"></a>Rilevamenti di lingua offensiva
 
+>[!IMPORTANT]
+>A partire dal 16 ottobre 2020, non sarà più possibile creare criteri utilizzando questo modello. Tutti i criteri attivi che utilizzano questo modello funzioneranno fino a quando non verranno rimossi definitivamente nel gennaio 2021. Il classificatore incorporato del linguaggio offensivo che supporta questo modello è obsoleto perché produce un numero elevato di falsi positivi. Per risolvere i problemi di rischio per la lingua offensiva, è consigliabile utilizzare i criteri di [conformità alla comunicazione](communication-compliance.md) Microsoft 365. Per ulteriori informazioni sui classificatori incorporati, vedere [Guida introduttiva ai classificatori addestrabili](classifier-get-started-with.md).
+
 Per modificare la sensibilità del classificatore dei linguaggi offensivi per i criteri che utilizzano la *lingua offensiva nel modello di posta elettronica* , scegliere una delle seguenti impostazioni:
 
 - **Low**: il livello di sensibilità più basso con l'intervallo più ampio per il rilevamento del linguaggio offensivo e del sentimento. La probabilità di falsi positivi per la corrispondenza di lingua offensiva è elevata.
@@ -153,11 +159,40 @@ Informazioni sugli avvisi di gestione dei rischi Insider sono esportabili in ser
 
 Per utilizzare le API per esaminare le informazioni sugli avvisi dei rischi Insider:
 
-1. Abilitare il supporto API di gestione delle attività di Office 365 nelle impostazioni di gestione dei rischi Insider. Per impostazione predefinita, questa impostazione è disabilitata per l'organizzazione Microsoft 365.
+1. Abilitare il supporto API di gestione delle attività di Office 365 nell'esportazione delle impostazioni di **gestione rischi Insider**  >  **Settings**  >  **Export**. Per impostazione predefinita, questa impostazione è disabilitata per l'organizzazione Microsoft 365.
 2. Filtrare le attività di controllo comuni di Office 365 da *SecurityComplianceAlerts*.
 3. Filtrare *SecurityComplianceAlerts* dalla categoria *InsiderRiskManagement* .
 
 ![Impostazioni di avviso di esportazione di gestione dei rischi Insider](../media/insider-risk-settings-export.png)
+
+Le informazioni sugli avvisi contengono informazioni provenienti dallo schema di avviso per la sicurezza e la conformità e lo schema comune API di attività di gestione di Office 365.
+
+I campi e i valori seguenti vengono esportati per gli avvisi di gestione dei rischi Insider per lo schema di avviso conformità & di sicurezza:
+
+| **Parametro Alert** | **Descrizione** |
+|:------------------|:----------------|
+| AlertType | Il tipo di avviso è *Custom*.  |
+| AlertId | Il GUID dell'avviso. Gli avvisi di gestione rischi Insider sono modificabili. Quando viene modificato lo stato di avviso, viene generato un nuovo log con lo stesso AlertID. Questo AlertID può essere utilizzato per correlare gli aggiornamenti per un avviso. |
+| Category | La categoria dell'avviso è *InsiderRiskManagement*. Questa categoria può essere utilizzata per distinguere gli avvisi da altri avvisi di sicurezza & conformità. |
+| Commenti | Commenti predefiniti per l'avviso. I valori sono un *nuovo avviso* (registrato quando viene creato un avviso) e l'avviso è stato *aggiornato* (registrato quando è presente un aggiornamento a un avviso). Utilizzare AlertID per correlare gli aggiornamenti per un avviso. |
+| Dati | I dati per l'avviso includono l'ID utente univoco, il nome dell'entità utente e la data e l'ora (UTC) quando l'utente è stato attivato in un criterio. |
+| Nome | Nome del criterio per i criteri di gestione dei rischi Insider che hanno generato l'avviso. |
+| PolicyId | Il GUID del criterio di gestione dei rischi Insider che ha attivato l'avviso. |
+| Gravità | La gravità dell'avviso. I valori sono *alto*, *medio*o *basso*. |
+| Origine | L'origine dell'avviso. Il valore è *Office 365 Security & Compliance*. |
+| Stato | Lo stato dell'avviso. I valori *sono attivi* (è*necessario riesaminare* i rischi Insider), *indagare* (*confermato* nel rischio Insider), *risolto* (*risolto* in rischio Insider), *respinto* (*respinto* dal rischio Insider). |
+| Version | La versione dello schema di avviso per la sicurezza e la conformità. |
+
+I campi e i valori seguenti vengono esportati per gli avvisi di gestione dei rischi Insider per lo [schema comune API di gestione attività di Office 365](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema#common-schema).
+
+- UserId
+- Id
+- RecordType
+- CreationTime
+- Operazione
+- OrganizationId
+- UserType
+- UserKey
 
 ## <a name="priority-user-groups-preview"></a>Gruppi di utenti prioritari (anteprima)
 
@@ -212,3 +247,174 @@ Completare la procedura seguente per eliminare un gruppo di utenti prioritari:
 2. Selezionare la scheda **gruppi di utenti prioritari**
 3. Selezionare il gruppo di utenti prioritari che si desidera modificare e selezionare **Elimina** dal menu del dashboard.
 4. Nella finestra di dialogo **Elimina** fare clic su **Sì** per eliminare il gruppo di utenti prioritari o su **Annulla** per tornare al dashboard.
+
+## <a name="priority-physical-assets-preview"></a>Risorse fisiche prioritarie (anteprima)
+
+L'identificazione dell'accesso alle risorse fisiche prioritarie e la correlazione dell'attività di accesso agli eventi degli utenti è un componente importante dell'infrastruttura di conformità. Tali risorse fisiche rappresentano le posizioni prioritarie nell'organizzazione, ad esempio edifici aziendali, Data Center o sale server. Le attività di rischio Insider possono essere associate a utenti che lavorano in ore inusuali, tentando di accedere a queste aree non autorizzate sensibili o sicure e le richieste di accesso a aree di alto livello senza necessità legittime.
+
+Con le risorse fisiche prioritarie abilitate e il [connettore di dati fisico di badging](import-physical-badging-data.md) configurato, la gestione dei rischi Insider integra i segnali provenienti dai sistemi di controllo fisico e di accesso con altre attività a rischio utente. Esaminando i modelli di comportamento tra i sistemi di accesso fisico e la correlazione di tali attività con altri eventi di rischio Insider, la gestione dei rischi Insider può aiutare gli inquirenti e gli analisti a prendere decisioni di risposta più informate sugli avvisi. L'accesso alle risorse fisiche prioritarie è segnato e identificato in modo diverso dall'accesso a risorse non prioritarie.
+
+Ad esempio, l'organizzazione dispone di un sistema di badging per gli utenti che monitorano e approvano l'accesso fisico alle normali aree di lavoro e di progetto sensibili. Si dispone di più utenti che lavorano su un progetto sensibile e questi utenti torneranno ad altre aree dell'organizzazione al termine del progetto. Dopo il completamento del progetto sensibile, è necessario assicurarsi che il lavoro del progetto rimanga riservato e che l'accesso alle aree del progetto sia strettamente controllato.
+
+È possibile scegliere di abilitare il connettore dati fisico di badging in Microsoft 365 per importare le informazioni di accesso dal sistema di badging fisico e specificare le risorse fisiche prioritarie nella gestione dei rischi Insider. Importando informazioni dal sistema badging e correlando le informazioni di accesso fisico ad altre attività a rischio identificate in gestione dei rischi Insider, si noterà che uno degli utenti del progetto sta accedendo agli uffici progetti dopo l'orario di lavoro normale ed esporta anche grandi quantità di dati in un servizio di archiviazione cloud personale dall'area di lavoro normale. Questa attività di accesso fisico associata all'attività online può indicare possibili furti di dati e ricercatori di conformità e gli analisti possono intraprendere azioni appropriate come indicato dalle circostanze per questo utente.
+
+### <a name="configure-priority-physical-assets"></a>Configurare le risorse fisiche prioritarie
+
+Per configurare le risorse fisiche prioritarie, è necessario configurare il connettore fisico di badging e utilizzare l'impostazione dei controlli nella soluzione di **gestione dei rischi Insider** nel centro conformità di Microsoft 365. Per configurare le risorse fisiche prioritarie, è necessario essere membri del gruppo di ruoli amministratore *Insider Risk Management* o *Insider Management*.
+
+Completare la procedura seguente per configurare le risorse fisiche prioritarie:
+
+1. Seguire i passaggi di configurazione per la gestione dei rischi Insider nell'articolo [Guida introduttiva ai rischi Insider Management](insider-risk-management-configure.md) . Nel passaggio 3, verificare di aver configurato il connettore fisico di badging.
+
+    >[!IMPORTANT]
+    >Per i criteri di gestione dei rischi Insider per l'utilizzo e la correlazione dei dati del segnale relativi agli utenti che partono e terminano con i dati degli eventi dalle piattaforme di controllo e accesso fisico, è necessario configurare anche il connettore Microsoft 365 HR. Se si Abilita il connettore fisico di badging senza abilitare il connettore Microsoft 365 HR, i criteri di gestione dei rischi Insider elaborerà solo gli eventi per le attività di accesso fisico per gli utenti dell'organizzazione.
+
+2. Nel [centro conformità Microsoft 365](https://compliance.microsoft.com), accedere a **gestione dei rischi Insider** e selezionare risorse fisiche prioritarie priorità **delle impostazioni di rischio Insider**  >  **Priority physical assets**.
+3. Nella pagina **risorse fisiche prioritarie** è possibile aggiungere manualmente gli ID di risorsa fisica che si desidera monitorare per gli eventi patrimoniali importati dal connettore badging fisico o importare un. File CSV di tutti gli ID risorse fisiche importati dal connettore badging fisico: a) per aggiungere manualmente gli ID risorse fisiche, scegliere **Aggiungi risorse fisiche prioritarie**, immettere un ID risorsa fisica e quindi fare clic su **Aggiungi**. Immettere ulteriori ID asset fisici e quindi selezionare **Aggiungi risorse fisiche prioritarie** per salvare tutti gli asset immessi.
+    b) per aggiungere un elenco di ID asset fisici da a. File CSV, scegliere **Importa risorse fisiche prioritarie**. Nella finestra di dialogo Esplora file selezionare il. File CSV che si desidera importare, quindi selezionare **Apri**. Gli ID delle risorse fisiche del. I file CSV vengono aggiunti all'elenco.
+4. Passare alla scheda **indicatori dei criteri** in impostazioni.
+5. Nella pagina **indicatori di criteri** , passare alla sezione **indicatori di accesso fisico** e selezionare la casella di controllo per l' **accesso fisico dopo la terminazione o l'accesso non riuscito a Asset riservati**.
+6. Selezionare **Salva** per configurare ed uscire.
+
+### <a name="delete-a-priority-physical-asset"></a>Eliminare una risorsa fisica prioritaria
+
+Per eliminare una risorsa fisica prioritaria esistente, è possibile utilizzare l'impostazione dei controlli nella soluzione di gestione dei rischi Insider nel centro conformità di Microsoft 365. Per eliminare una risorsa fisica prioritaria, è necessario essere membri del gruppo di ruoli amministratore Insider Risk Management o insider Management.
+
+>[!IMPORTANT]
+>L'eliminazione di una risorsa fisica prioritaria la rimuove dall'esame da qualsiasi criterio attivo a cui era stato precedentemente incluso. Gli avvisi generati da attività associate alla risorsa fisica prioritaria non vengono eliminati.
+
+Completare la procedura seguente per eliminare una risorsa fisica prioritaria:
+
+1. Nel [centro conformità Microsoft 365](https://compliance.microsoft.com), accedere a **gestione dei rischi Insider** e selezionare risorse fisiche prioritarie priorità **delle impostazioni di rischio Insider**  >  **Priority physical assets**.
+2. Nella pagina **risorse fisiche prioritarie** selezionare il bene che si desidera eliminare.
+3. Scegliere **Elimina** dal menu azione per eliminare il bene.
+
+## <a name="power-automate-flows-preview"></a>Flussi automatizzati di alimentazione (anteprima)
+
+[Microsoft Power automatizzate](https://docs.microsoft.com/power-automate/getting-started) è un servizio di flusso di lavoro che automatizza le azioni tra le applicazioni e i servizi. Utilizzando flussi provenienti da modelli o creati manualmente, è possibile automatizzare le attività comuni associate a queste applicazioni e servizi. Quando si abilitano i flussi automatici di alimentazione per la gestione dei rischi Insider, è possibile automatizzare le attività importanti per i casi e gli utenti. È possibile configurare i flussi automatici di alimentazione per recuperare informazioni sugli utenti, gli avvisi e i casi e condividere queste informazioni con le parti interessate e altre applicazioni, nonché automatizzare le azioni in gestione dei rischi Insider, ad esempio la pubblicazione di note di caso. I flussi automatici di alimentazione sono applicabili per i casi e per qualsiasi utente nell'ambito di un criterio.
+
+I clienti con abbonamenti Microsoft 365 che includono la gestione dei rischi insider non necessitano di ulteriori licenze di automatizzazione dell'alimentazione per utilizzare i modelli di automatizzazione di Power Management dei rischi consigliati. Questi modelli possono essere personalizzati per supportare l'organizzazione e coprire gli scenari di gestione dei rischi Insider core. Se si sceglie di utilizzare le funzionalità di automatizzazione di Power Premium in questi modelli, creare un modello personalizzato utilizzando il connettore di conformità di Microsoft 365 o utilizzare i modelli Power Automate per altre aree di conformità in Microsoft 365, potrebbe essere necessario disporre di licenze aggiuntive per automatizzare la potenza.
+
+I seguenti modelli di automatizzazione dei poteri vengono forniti ai clienti per supportare l'automazione dei processi per gli utenti e i casi di gestione del rischio Insider:
+
+- **Informare gli utenti quando vengono aggiunti a un criterio di rischio Insider**: questo modello è per le organizzazioni che dispongono di criteri interni, privacy o requisiti normativi che gli utenti devono ricevere una notifica quando sono soggetti a criteri di gestione dei rischi Insider. Quando questo flusso è configurato e selezionato per un utente nella pagina utenti, gli utenti e i loro manager ricevono un messaggio di posta elettronica quando l'utente viene aggiunto a un criterio di gestione dei rischi Insider. Questo modello supporta anche l'aggiornamento di un elenco di SharePoint ospitato in un sito di SharePoint per consentire di tenere presenti i dettagli dei messaggi di notifica come data/ora e il destinatario del messaggio. I flussi automatici di alimentazione con questo modello sono disponibili nel **dashboard degli utenti**.
+- **Richiedere informazioni da HR o business su un utente in un caso di rischio Insider**: quando si agisce su un caso, gli analisti e gli investigatori del rischio Insider possono dover consultare HR o altre parti interessate per comprendere il contesto delle attività del caso. Quando questo flusso è configurato e selezionato per un caso, gli analisti e gli investigatori inviano un messaggio di posta elettronica alle parti interessate HR e business configurate per questo flusso. Ogni destinatario viene inviato un messaggio con opzioni di risposta preconfigurate o personalizzabili. Quando i destinatari selezionano un'opzione di risposta, la risposta viene registrata come nota del caso e include informazioni su destinatario e data/ora. I flussi automatici di alimentazione con questo modello sono disponibili nel **dashboard dei casi**.
+- **Gestione notifiche quando un utente dispone di un avviso di rischio Insider**: alcune organizzazioni potrebbero dover avere una notifica di gestione immediata quando un utente dispone di un avviso di gestione dei rischi Insider. Quando questo flusso è configurato e selezionato, il responsabile dell'utente del caso viene inviato un messaggio di posta elettronica con le seguenti informazioni su tutti gli avvisi di caso: 
+    - Criterio applicabile per l'avviso
+    - Data/ora dell'avviso
+    - Livello di gravità dell'avviso
+
+    Il flusso aggiorna automaticamente le note del caso in cui il messaggio è stato inviato e che il flusso è stato attivato. I flussi automatici di alimentazione con questo modello sono disponibili nel **dashboard dei casi**.
+
+- **Aggiungere un promemoria del calendario per il follow-up di un caso di rischio Insider**: questo modello consente agli investigatori e agli analisti del rischio di aggiungere promemoria del calendario per i casi al calendario di Office 365 Outlook. Questo flusso Elimina la necessità per gli utenti di uscire o di disattivare il flusso di lavoro di gestione dei rischi Insider quando si elaborano i casi e gli avvisi di Triaging. Quando questo flusso è configurato e selezionato, viene aggiunto un promemoria al calendario di Outlook di Office 365 per l'utente che esegue il flusso. I flussi automatici di alimentazione con questo modello sono disponibili nel **dashboard dei casi**.
+
+### <a name="create-a-power-automate-flow-from-insider-risk-management-template"></a>Creare un flusso automatico di alimentazione automatizzato dal modello di gestione dei rischi Insider
+
+Per creare un flusso di automatizzazione di potenza da un modello consigliato di gestione dei rischi Insider, è possibile utilizzare i controlli delle impostazioni nella soluzione di **gestione dei rischi Insider** nel centro conformità Microsoft 365 o l'opzione **Gestisci flussi automatici di alimentazione** dal controllo **automatizzare** quando si lavora direttamente nei dashboard dei **casi** o **degli utenti**.
+
+Per creare un flusso di automazione dell'alimentazione nell'area delle impostazioni, è necessario essere membri del gruppo di ruoli amministratore di gestione dei rischi *Insider* Management o *Insider Management* . Per creare un flusso automatico di alimentazione automatizzato con l'opzione **Gestisci flussi automatici di alimentazione** , è necessario essere membri di almeno un gruppo di ruoli di gestione dei rischi Insider.
+
+Completare la procedura seguente per creare un flusso di automatizzazione Power da un modello consigliato di gestione dei rischi Insider:
+
+1. Nel [centro conformità di Microsoft 365](https://compliance.microsoft.com/), accedere a **gestione dei rischi Insider** e selezionare **Impostazioni rischi Insider**  >  **Powers automatizzare i flussi**. È inoltre possibile accedere alle pagine dashboard dei **casi** o **degli utenti** scegliendo **automatizza**  >  **Gestione flussi automatici di alimentazione**.
+2. Sulla pagina **flussi automatici di alimentazione** selezionare un modello consigliato dai **modelli di gestione dei rischi insider come** sezione della pagina.
+3. Il flusso elenca le connessioni incorporate necessarie per il flusso e noterà se lo stato della connessione è disponibile. Se necessario, aggiornare tutte le connessioni che non vengono visualizzate come disponibili. Selezionare **continua**.
+4. Per impostazione predefinita, i flussi consigliati sono preconfigurati con i campi dati del servizio di gestione dei rischi Insider consigliati e Microsoft 365 necessari per completare l'attività assegnata per il flusso. Se necessario, personalizzare i componenti del flusso utilizzando il controllo **Mostra opzioni avanzate** e configurando le proprietà disponibili per il componente di flusso.
+5. Se necessario, aggiungere eventuali passaggi aggiuntivi al flusso selezionando il pulsante **nuovo passaggio** . Nella maggior parte dei casi, non dovrebbe essere necessario per i modelli predefiniti consigliati.
+6. Selezionare **Save Draft** per salvare il flusso per ulteriori configurazioni oppure selezionare **Salva** per completare la configurazione del flusso.
+7. Selezionare **Chiudi** per tornare alla pagina del **flusso Power automatizzate** . Il nuovo modello verrà elencato come flusso nelle schede **My Flows** ed è automaticamente disponibile dal controllo DropDown **automatizzato** quando si utilizzano i casi di gestione dei rischi Insider per l'utente che crea il flusso.
+
+>[!IMPORTANT]
+>Se altri utenti dell'organizzazione devono accedere al flusso, è necessario che il flusso sia condiviso.
+
+### <a name="create-a-custom-power-automate-flow-for-insider-risk-management"></a>Creare un flusso di automatizzazione del potere personalizzato per la gestione dei rischi Insider
+
+Alcuni processi e flussi di lavoro per l'organizzazione possono essere esterni ai modelli di flusso di gestione dei rischi Insider consigliati e potrebbe essere necessario creare flussi automatici di alimentazione automatizzati personalizzati per le aree di gestione dei rischi Insider. I flussi automatici di alimentazione sono flessibili e supportano una personalizzazione estesa, ma sono necessari alcuni passaggi per l'integrazione con le funzionalità di gestione dei rischi Insider.
+
+Completare la procedura seguente per creare un modello personalizzato Power automatizzate per la gestione dei rischi Insider:
+
+1. **Controllare la licenza per il flusso Power Automate**: per creare flussi di automatizzazione di alimentazione personalizzati che utilizzano trigger di gestione dei rischi Insider, è necessaria una licenza di automatizzazione del potere. I modelli di flusso di gestione dei rischi Insider consigliati non richiedono licenze aggiuntive e sono inclusi come parte della licenza di gestione dei rischi Insider.
+2. **Creare un flusso automatizzato**: creare un flusso che esegua una o più attività dopo la sua attivazione da parte di un evento di gestione dei rischi Insider. Per informazioni dettagliate su come creare un flusso automatizzato, vedere [Create a Flow in Power](https://docs.microsoft.com/power-automate/get-started-logic-flow)automatizzate.
+3. **Selezionare il connettore di conformità microsoft 365**: cercare e selezionare il connettore di conformità di Microsoft 365. Questo connettore attiva i trigger e le azioni di gestione dei rischi Insider. Per ulteriori informazioni sui connettori, vedere l'articolo relativo alla [Panoramica dei riferimenti del connettore](https://docs.microsoft.com/connectors/connector-reference/) .
+4. **Scegliere trigger di gestione dei rischi Insider per il flusso: la**gestione dei rischi Insider dispone di due trigger disponibili per flussi automatizzati di alimentazione automatici:
+    - **Per un caso di gestione dei rischi Insider selezionati**: i flussi con questo trigger possono essere selezionati dalla pagina del dashboard dei casi di gestione dei rischi Insider.
+    - **Per un utente selezionato di gestione dei rischi Insider**: i flussi con questo trigger possono essere selezionati dalla pagina dashboard utenti di gestione dei rischi Insider Management.
+5. Scegliere azioni di gestione dei rischi Insider per il flusso: è possibile scegliere tra diverse azioni per la gestione dei rischi Insider da includere nel flusso personalizzato:
+    - Ottenere avvisi di gestione dei rischi Insider
+    - Ottenere il caso di gestione dei rischi Insider
+    - Ottenere un utente di gestione dei rischi Insider
+    - Ottenere avvisi di gestione dei rischi Insider per un caso
+    - Aggiungere una nota caso di gestione del rischio Insider
+
+### <a name="share-a-power-automate-flow"></a>Condividere un flusso automatico di alimentazione automatizzato
+
+Per impostazione predefinita, i flussi automatici di potenza creati da un utente sono disponibili solo per l'utente. Per gli altri utenti di gestione dei rischi Insider di avere accesso e utilizzare un flusso, il flusso deve essere condiviso dal creatore del flusso. Per condividere un flusso, è possibile utilizzare i controlli delle impostazioni nella **soluzione di gestione dei rischi Insider** nel centro conformità di Microsoft 365 o nell'opzione **Gestisci flussi automatici di alimentazione** dal controllo automatizzare quando si lavora direttamente nelle pagine del dashboard dei **casi** o **degli utenti** . Dopo aver condiviso un flusso, tutti gli utenti con cui è stato condiviso possono accedere al flusso nell'elenco a discesa **automatizza** controllo nel **caso** e nei **dashboard utente**.
+
+Per condividere un flusso di automazione dell'alimentazione nell'area delle impostazioni, è necessario essere membri del gruppo di ruoli amministratore di gestione dei rischi *Insider* Management o *Insider Management* . Per condividere un flusso automatico di alimentazione automatizzato con l'opzione **Gestisci flussi automatici di alimentazione** , è necessario essere membri di almeno un gruppo di ruoli di gestione dei rischi Insider.
+
+Completare la procedura seguente per condividere un flusso Power automatizzate:
+
+1. Nel [centro conformità di Microsoft 365](htttps://compliance.microsoft.com), accedere a **gestione dei rischi Insider** e selezionare **Impostazioni rischi Insider**  >  **Powers automatizzare i flussi**. È inoltre possibile accedere alle pagine dashboard dei **casi** o **degli utenti** scegliendo **automatizza**  >  **Gestione flussi automatici di alimentazione**.
+2. Sulla pagina **flussi automatici di alimentazione** selezionare la scheda **flussi personali** o **flussi di Team** .
+3. Selezionare il flusso da condividere e quindi scegliere **Condividi** dal menu Opzioni flusso.
+4. Nella pagina condivisione flusso, immettere il nome dell'utente o del gruppo che si desidera aggiungere come proprietario per il flusso.
+5. Nella finestra di dialogo **connessione utilizzata** , selezionare **OK** per confermare che l'utente o il gruppo aggiunto avrà accesso completo al flusso.
+
+### <a name="edit-a-power-automate-flow"></a>Modificare un flusso Power automatizzate
+
+Per modificare un flusso, è possibile utilizzare i controlli delle impostazioni nella soluzione di **gestione dei rischi Insider** nel centro conformità di Microsoft 365 o nell'opzione **Gestisci flussi automatici di alimentazione** dal controllo **automatizzare** quando si lavora direttamente nei dashboard dei **casi** o **degli utenti**.
+
+Per modificare un flusso automatico di alimentazione nell'area delle impostazioni, è necessario essere membri del gruppo di ruoli amministratore di gestione dei rischi *Insider* Management o *Insider Management* . Per modificare un flusso automatico di alimentazione con l'opzione **Gestisci flussi automatici di alimentazione** , è necessario essere membri di almeno un gruppo di ruoli di gestione dei rischi Insider.
+
+Completare la procedura seguente per modificare un flusso Power automatizzate:
+
+1. Nel [centro conformità di Microsoft 365](htttps://compliance.microsoft.com), accedere a **gestione dei rischi Insider** e selezionare **Impostazioni rischi Insider**  >  **Powers automatizzare i flussi**. È inoltre possibile accedere alle pagine dashboard dei **casi** o **degli utenti** scegliendo **automatizza**  >  **Gestione flussi automatici di alimentazione**.
+2. Sulla pagina **flussi automatici di alimentazione** selezionare un flusso da modificare e scegliere **modifica** dal menu controllo flusso.
+3. Selezionare le impostazioni dei **puntini**  >  **Settings** di sospensione per modificare un'impostazione del componente di flusso o l'eliminazione con **puntini**  >  **Delete** per eliminare un componente di flusso
+4. Selezionare **Salva** e quindi **Chiudi** per completare la modifica del flusso.
+
+### <a name="delete-a-power-automate-flow"></a>Eliminare un flusso Power automatizzate
+
+Per eliminare un flusso, è possibile utilizzare i controlli delle impostazioni nella soluzione di **gestione dei rischi Insider** nel centro conformità di Microsoft 365 o nell'opzione **Gestisci flussi automatici di alimentazione** dal controllo **automatizzare** quando si lavora direttamente nei dashboard dei **casi** o **degli utenti**. Quando un flusso viene eliminato, viene rimosso come opzione per tutti gli utenti.
+
+Per eliminare un flusso di automatizzazione di alimentazione nell'area impostazioni, è necessario essere membri del gruppo di ruoli amministratore di gestione dei rischi *Insider* Management o *Insider Management* . Per eliminare un flusso automatico di alimentazione automatizzato con l'opzione **Gestisci flussi automatici di alimentazione** , è necessario essere membri di almeno un gruppo di ruoli di gestione dei rischi Insider.
+
+Completare la procedura seguente per eliminare un flusso Power automatizzate:
+
+1. Nel [centro conformità di Microsoft 365](htttps://compliance.microsoft.com), accedere a **gestione dei rischi Insider** e selezionare **Impostazioni rischi Insider**  >  **Powers automatizzare i flussi**. È inoltre possibile accedere alle pagine dashboard dei **casi** o **degli utenti** scegliendo **automatizza**  >  **Gestione flussi automatici di alimentazione**.
+2. Sulla pagina **flussi automatici di alimentazione** selezionare un flusso da eliminare e scegliere **Elimina** dal menu controllo flusso.
+3. Nella finestra di dialogo di conferma dell'eliminazione, selezionare **Elimina** per rimuovere il flusso o selezionare **Annulla** per uscire dall'azione di eliminazione.
+
+## <a name="microsoft-teams-preview"></a>Microsoft Teams (anteprima)
+
+Gli analisti e gli investigatori di conformità possono facilmente utilizzare Microsoft teams per la collaborazione sui casi di gestione dei rischi Insider. Possono coordinare e comunicare con le altre parti interessate in Microsoft teams per:
+
+- Coordinamento e revisione delle attività di risposta per i casi nei canali di team privati
+- Condivisione e archiviazione sicura dei file e delle evidenze relative a singoli casi
+- Monitorare e verificare le attività di risposta degli analisti e degli investigatori
+
+Dopo che Microsoft teams è abilitato per la gestione dei rischi Insider, viene creato un team di Microsoft teams dedicato ogni volta che viene confermato un avviso e viene creato un caso. Per impostazione predefinita, il team include automaticamente tutti i membri della *gestione dei rischi*Insider, gli *analisti di gestione dei rischi*Insider e i gruppi di ruolo *investigatori di gestione dei rischi Insider* (fino a 100 utenti iniziali). È possibile aggiungere ulteriori collaboratori dell'organizzazione al team dopo la sua creazione e, se necessario. Per i casi esistenti creati prima dell'abilitazione di Microsoft teams, gli analisti e gli investigatori possono scegliere di creare un nuovo team di Microsoft teams quando si lavora in un caso, se necessario.  Dopo aver risolto il caso associato in gestione dei rischi Insider, il team viene archiviato automaticamente (spostato in nascosto e in sola lettura).
+
+Per ulteriori informazioni sull'utilizzo di team e canali in Microsoft teams, vedere [Overview of Teams and channels in Microsoft teams](https://docs.microsoft.com/MicrosoftTeams/teams-channels-overview).
+
+L'abilitazione del supporto di Microsoft teams per i casi è semplice e veloce da configurare. Per abilitare Microsoft teams per la gestione dei rischi Insider, eseguire i passaggi seguenti:
+
+1. Nel [centro conformità di Microsoft 365](htttps://compliance.microsoft.com), passare a impostazioni di rischio Insider Management Risk **Manager**Insider  >  **Insider risk settings**.
+2. Selezionare la scheda **Microsoft teams** .
+3. Abilitare l'integrazione di Microsoft teams per la gestione dei rischi Insider.
+4. Selezionare **Salva** per configurare ed uscire.
+
+### <a name="create-a-microsoft-teams-team-for-existing-cases"></a>Creare un team di Microsoft teams per i casi esistenti
+
+Se si Abilita il supporto di Microsoft teams per la gestione dei rischi Insider dopo che sono presenti casi, è necessario creare manualmente un team per ogni caso in base alle esigenze. Dopo aver abilitato il supporto di Microsoft teams nelle impostazioni di gestione dei rischi Insider, nuovi casi creeranno automaticamente un nuovo team di Microsoft teams.
+
+Gli utenti devono disporre dell'autorizzazione per creare i gruppi di Microsoft 365 nell'organizzazione per creare un team di Microsoft Teams da un caso. Per ulteriori informazioni sulla gestione delle autorizzazioni per i gruppi di Microsoft 365, vedere [gestire gli utenti autorizzati a creare gruppi di microsoft 365](https://docs.microsoft.com/microsoft-365/solutions/manage-creation-of-groups).
+
+Per creare un team per un caso, è possibile utilizzare il controllo Crea Microsoft Team quando si lavora direttamente in un caso esistente. Completare la procedura seguente per creare un nuovo team:
+
+1. Nel [centro conformità di Microsoft 365](htttps://compliance.microsoft.com), passare a casi di **gestione dei rischi Insider**  >  **Cases** e selezionare un caso esistente.
+2. Scegliere **Crea Microsoft Team**dal menu azione caso.
+3. Nel campo **nome Team** , immettere un nome per il nuovo team di Microsoft teams.
+4. Selezionare **Crea Microsoft Team** e quindi **Chiudi**.
+
+A seconda del numero di utenti assegnati ai gruppi di ruoli di gestione dei rischi Insider, potrebbero essere necessari 15 minuti affinché tutti gli investigatori e gli analisti siano aggiunti al team di Microsoft teams per un caso.

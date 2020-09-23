@@ -18,12 +18,12 @@ ms.collection:
 hideEdit: true
 feedback_system: None
 description: La prevenzione della perdita di dati (DLP) nel &amp; Centro sicurezza e conformità include 80 tipi di informazioni riservate pronte per l'uso nei criteri DLP. In questo argomento vengono elencati tutti questi tipi di informazioni riservate e illustrata la ricerca eseguita dal criterio DLP quando rileva ciascun tipo di informazioni.
-ms.openlocfilehash: 7985d52bcf0cbd4e3e86bc240abb8f692e733743
-ms.sourcegitcommit: 327163f70eac0de568ebe3c9a97a744c3ed408cb
+ms.openlocfilehash: 5d776fcf816359fd30c750b9bebe536269a2b6c5
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 09/22/2020
-ms.locfileid: "48177124"
+ms.locfileid: "48208098"
 ---
 # <a name="sensitive-information-type-entity-definitions"></a>Definizioni delle entità tipo di informazioni sensibili
 
@@ -33,14 +33,6 @@ I tipi di informazioni riservate richiedono una delle sottoscrizioni seguenti:
 - Microsoft 365 E3
 - Microsoft 365 E5
 
-I tipi di informazioni riservate possono essere utilizzati in:
-- criteri di prevenzione della perdita di dati
-- conformità alla comunicazione Polcies
-- governance delle informazioni
-- gestione dei record
-- Sicurezza delle app di Microsoft Cloud
-
-  
 ## <a name="aba-routing-number"></a>Numero di Routing ABA
 
 ### <a name="format"></a>Formato

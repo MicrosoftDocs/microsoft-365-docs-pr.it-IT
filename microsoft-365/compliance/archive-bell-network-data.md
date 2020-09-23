@@ -11,16 +11,15 @@ ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
-ROBOTS: NOINDEX, NOFOLLOW
 description: Gli amministratori possono configurare un connettore di invio di messaggi per importare e archiviare i dati di SMS e MMS dalla rete dei campanelli. In questo modo è possibile archiviare i dati provenienti da origini dati di terze parti in Microsoft 365 per poter utilizzare le funzionalità di conformità, come la conservazione legale, la ricerca di contenuto e i criteri di ritenzione per gestire i dati di terze parti dell'organizzazione.
-ms.openlocfilehash: 975053c589b0c5ff36df1fa49f14d5d0452053d1
-ms.sourcegitcommit: a6625f76e8f19eebd9353ed70c00d32496ec06eb
+ms.openlocfilehash: ad4b8a51e88e6477d9d4408c9faee1d83590eaa9
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47362057"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48200575"
 ---
-# <a name="set-up-a-connector-to-archive-bell-network-data-preview"></a>Configurare un connettore per l'archiviazione dei dati di rete delle campane (anteprima)
+# <a name="set-up-a-connector-to-archive-bell-network-data"></a>Configurare un connettore per l'archiviazione dei dati di rete delle campane
 
 Utilizzare un connettore di invio di messaggi nel centro conformità di Microsoft 365 per importare e archiviare i messaggi SMS (Short Messaging Service) e MMS (Multimedia Messaging Service) dalla rete dei campanelli. Dopo aver configurato e configurato un connettore, si connette alla rete dei campanelli dell'organizzazione una volta al giorno e Importa messaggi SMS e MMS alle cassette postali in Microsoft 365.
 
@@ -88,4 +87,4 @@ L'ultimo passaggio consiste nel creare un connettore di rete di Bell nel centro 
 
 ## <a name="known-issues"></a>Problemi noti
 
-- Al momento, non è supportato l'importazione di allegati di dimensioni superiori a 10 MB, ma il supporto per gli elementi di grandi dimensioni sarà disponibile in una data successiva.
+- Al momento, non è supportato l'importazione di allegati o elementi di dimensioni superiori a 10 MB. Il supporto per gli elementi di grandi dimensioni sarà disponibile in un secondo momento.

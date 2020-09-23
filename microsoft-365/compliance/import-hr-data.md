@@ -14,14 +14,14 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: Gli amministratori possono configurare un connettore di dati per importare i dati dei dipendenti dal sistema HR (Human Resources) dell'organizzazione a Microsoft 365. In questo modo è possibile utilizzare i dati HR nei criteri di gestione dei rischi Insider utili per rilevare l'attività da parte di utenti specifici che possono rappresentare un rischio interno per la propria organizzazione.
-ms.openlocfilehash: a8eaeda3bc883de55a2c588e39557b4517ae3cc5
-ms.sourcegitcommit: 9f5b136b96b3af4db4cc6f5b1f35130ae60d6b12
+ms.openlocfilehash: 31afa01a518028e7ec25116e947b4e0d6dc94dac
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "47817166"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48201545"
 ---
-# <a name="set-up-a-connector-to-import-hr-data-preview"></a>Configurare un connettore per l'importazione dei dati HR (anteprima)
+# <a name="set-up-a-connector-to-import-hr-data"></a>Configurare un connettore per importare i dati sulle risorse umane
 
 È possibile configurare un connettore di dati nel centro conformità di Microsoft 365 per importare i dati delle risorse umane (HR) relativi a eventi come le dimissioni dell'utente o una modifica del livello di lavoro di un utente. I dati HR possono quindi essere utilizzati dalla [soluzione di gestione dei rischi Insider](insider-risk-management.md) per generare indicatori di rischio che consentono di identificare eventuali attività dannose o il furto di dati da parte di utenti all'interno dell'organizzazione.
 
@@ -56,14 +56,14 @@ Il tipo di dati HR da importare dipende dal criterio di gestione dei rischi Insi
 | **Modello di criteri**| **Tipo di dati HR**|
 |:-----------------------------------------------|:---------------------------------------------------------------------|
 | Furto dei dati da parte degli utenti                   | Dimissioni dei dipendenti                                                 |
-| Perdite di dati generali                              | Non supportato                                                        |
-| Perdite di dati da parte di utenti prioritari                    | Non supportato                                                        |
+| Perdite di dati generali                              | Non applicabile                                                        |
+| Perdite di dati da parte di utenti prioritari                    | Non applicabile                                                        |
 | Perdite di dati da parte di utenti scontenti                 | Modifiche a livello di processo, revisioni delle prestazioni, piani di miglioramento delle prestazioni |
-| Violazioni dei criteri di sicurezza generali              | Non supportato                                                        |
+| Violazioni dei criteri di sicurezza generali              | Non applicabile                                                        |
 | Violazioni dei criteri di sicurezza da parte degli utenti   | Dimissioni dei dipendenti                                                 |
-| Violazioni dei criteri di sicurezza per gli utenti con priorità    | Non supportato                                                        |
+| Violazioni dei criteri di sicurezza per gli utenti con priorità    | Non applicabile                                                        |
 | Violazioni dei criteri di sicurezza da parte di utenti scontenti | Modifiche a livello di processo, revisioni delle prestazioni, piani di miglioramento delle prestazioni |
-| Lingua offensiva nel messaggio di posta elettronica                     | Non supportato                                                        |
+| Lingua offensiva nel messaggio di posta elettronica                     | Non applicabile                                                        |
 
 Per ulteriori informazioni sui modelli di criteri per la gestione dei rischi Insider, vedere [Insider Risk Management Policies](insider-risk-management-policies.md#policy-templates).
 
@@ -219,7 +219,7 @@ Dopo aver completato questo passaggio, assicurarsi di copiare l'ID processo gene
 
 1. Andare a [https://compliance.microsoft.com](https://compliance.microsoft.com/) e quindi fare clic su **connettori dati** nel NAV sinistro.
 
-2. Nella pagina **connettori dati (anteprima)** in **HR**, fare clic su **Visualizza**.
+2. Nella pagina **connettori dati** in **HR**fare clic su **Visualizza**.
 
 3. Nella pagina **personale HR** , fare clic su **Aggiungi connettore**.
 

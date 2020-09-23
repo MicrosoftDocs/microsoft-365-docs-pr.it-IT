@@ -19,12 +19,12 @@ ms.assetid: 8927b8b9-c5bc-45a8-a9f9-96c732e58264
 ms.custom:
 - seo-marvel-apr2020
 description: Creare criteri di avviso nel centro sicurezza e conformità di Office 365 e Microsoft 365 per monitorare le potenziali minacce, la perdita di dati e i problemi relativi alle autorizzazioni.
-ms.openlocfilehash: 5f4c715058c7fd9a98dc268b18cc487af4c1ae10
-ms.sourcegitcommit: 7c0873d2a804f17697844fb13f1a100fabce86c4
+ms.openlocfilehash: 4b12457b051b19aa1eaca0d92b342ab8a7b34134
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47962677"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48200585"
 ---
 # <a name="alert-policies-in-the-security-and-compliance-center"></a>Criteri di avviso nel Centro sicurezza e conformità
 
@@ -205,7 +205,7 @@ Nella tabella seguente sono elencati i ruoli necessari per visualizzare gli avvi
 
 Per visualizzare la categoria a cui è assegnato un criterio di avviso predefinito, vedere la tabella nella sezione [criteri di avviso predefiniti](#default-alert-policies) .
 
-|&nbsp;|Governance delle informazioni|Prevenzione della perdita di dati|Flusso di posta|Autorizzazioni|Gestione dei rischi|Altri|
+|Ruolo|Governance delle informazioni|Prevenzione della perdita di dati|Flusso di posta|Autorizzazioni|Gestione dei rischi|Altri|
 |:---------|:---------:|:---------:|:---------:|:---------:|:---------:|:---------:|
 |Registri di controllo|||||||
 |Gestione dei casi|||||||

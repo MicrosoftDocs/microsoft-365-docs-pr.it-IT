@@ -12,12 +12,12 @@ ms.collection:
 - M365-security-compliance
 localization_priority: Normal
 description: Informazioni sulle attività che consentiranno di iniziare rapidamente a eseguire la conformità in Microsoft 365.
-ms.openlocfilehash: 1702c05b271c0e8b5456c1a93f8bf1dc28f7fbd9
-ms.sourcegitcommit: 9f5b136b96b3af4db4cc6f5b1f35130ae60d6b12
+ms.openlocfilehash: d2399b65e6f8d2765d3fc8691b0e395f113092f1
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "47816815"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48200839"
 ---
 # <a name="quick-tasks-for-getting-started-with-microsoft-365-compliance"></a>Attività rapide per iniziare a usare il Centro conformità Microsoft 365
 
@@ -31,7 +31,7 @@ Dopo aver completato le attività di conformità di base, valutare la possibilit
 
 È importante gestire gli utenti dell'organizzazione che dispongono dell'accesso al centro conformità Microsoft 365 per visualizzare il contenuto ed eseguire le attività di gestione. Microsoft 365 fornisce ruoli amministrativi specifici per la conformità e per l'utilizzo degli strumenti inclusi nel centro conformità di Microsoft 365.
 
-Iniziare assegnando le autorizzazioni di conformità agli utenti dell'organizzazione in modo che possano eseguire queste attività e impedire agli utenti non autorizzati di accedere a aree esterne alle proprie responsabilità. È necessario assicurarsi di aver assegnato le persone appropriate all' **amministratore dei dati di conformità** e ai ruoli amministratore di **conformità** prima di iniziare a configurare e implementare le soluzioni di conformità incluse in Microsoft 365. È inoltre necessario assegnare agli utenti il ruolo di lettura globale di Azure Active Directory per visualizzare i dati in Punteggio di conformità.
+Iniziare assegnando le autorizzazioni di conformità agli utenti dell'organizzazione in modo che possano eseguire queste attività e impedire agli utenti non autorizzati di accedere a aree esterne alle proprie responsabilità. È necessario assicurarsi di aver assegnato le persone appropriate all' **amministratore dei dati di conformità** e ai ruoli amministratore di **conformità** prima di iniziare a configurare e implementare le soluzioni di conformità incluse in Microsoft 365. È inoltre necessario assegnare agli utenti il ruolo di lettura globale di Azure Active Directory per visualizzare i dati in Compliance Manager.
 
 Per istruzioni dettagliate su come configurare le autorizzazioni e assegnare persone ai ruoli di amministratore, vedere [autorizzazioni nel centro sicurezza & conformità](../security/office-365-security/permissions-in-the-security-and-compliance-center.md).
 
@@ -39,9 +39,9 @@ Per istruzioni dettagliate su come configurare le autorizzazioni e assegnare per
 
 È difficile sapere dove andare se non si conosce il luogo in cui si è. Se si soddisfano le esigenze di conformità, è necessario comprendere il livello di rischio corrente e gli aggiornamenti che possono essere necessari nei tempi di modifica. Se l'organizzazione è nuova ai requisiti di conformità o ha un'esperienza profonda con gli standard e i regolamenti che regolano l'industria, la cosa migliore che è possibile fare per migliorare la conformità è capire dove si trova l'organizzazione.
 
-Il [Punteggio di conformità di Microsoft](compliance-score.md) può aiutare a capire la postura di conformità dell'organizzazione e le aree di evidenziazione che potrebbero essere utili. Punteggio di conformità utilizza un Dashboard centralizzato per calcolare un punteggio basato sui rischi, misurando i progressi compiuti nel completamento delle azioni che consentono di ridurre i rischi per la protezione dei dati e gli standard normativi. È inoltre possibile utilizzare il Punteggio di conformità come strumento per tenere conto di tutte le valutazioni dei rischi. Offre funzionalità di flusso di lavoro che consentono di completare efficacemente le valutazioni dei rischi tramite uno strumento comune.
+[Microsoft Compliance Manager](compliance-manager.md) può aiutare a capire la postura di conformità dell'organizzazione e le aree di evidenziazione che potrebbero essere utili. Compliance Manager utilizza un Dashboard centralizzato per calcolare un punteggio basato sui rischi, misurando i progressi compiuti nel completamento delle azioni che contribuiscono alla riduzione dei rischi per la protezione dei dati e gli standard normativi. È inoltre possibile utilizzare Compliance Manager come strumento per tenere conto di tutte le valutazioni dei rischi. Offre funzionalità di flusso di lavoro che consentono di completare efficacemente le valutazioni dei rischi tramite uno strumento comune.
 
-Per istruzioni dettagliate per iniziare a utilizzare il Punteggio di conformità, vedere [set up Compliance Score](compliance-score-setup.md).
+Per istruzioni dettagliate per iniziare a utilizzare Compliance Manager, vedere [Introduzione a Compliance Manager](compliance-manager-setup.md).
 
 >[!IMPORTANT]
 >La sicurezza e la conformità sono strettamente integrate per la maggior parte delle organizzazioni. È importante che l'organizzazione affronti la sicurezza di base, la protezione dalle minacce e le aree di gestione delle identità e degli accessi per fornire un approccio di difesa approfondito alla sicurezza e alla conformità.
