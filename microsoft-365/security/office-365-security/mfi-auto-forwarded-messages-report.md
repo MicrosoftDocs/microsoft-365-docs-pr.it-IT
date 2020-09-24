@@ -11,12 +11,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: b5543faa-44fa-44c5-8180-fb835e7e452d
 description: Gli amministratori possono ottenere informazioni sul rapporto messaggi auto-inoltrati nel dashboard del flusso di posta elettronica nel centro sicurezza & Compliance.
-ms.openlocfilehash: b5255a95718fa6624c85e93a19c8accf9c3dcdb2
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: d4b772e6392e0af22e6bed475970f637ed03dcb1
+ms.sourcegitcommit: 1522a6471e0c5254a6d0f592e1f4dfacd1dd473a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48199360"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "48245948"
 ---
 # <a name="auto-forwarded-messages-insight-in-the-security--compliance-center"></a>Insight dei messaggi auto-inoltrati nel centro sicurezza & Compliance
 
@@ -35,7 +35,7 @@ Quando si fa clic sul numero di messaggi nel widget, viene visualizzato un riqua
 
   - **Regole del flusso di posta**
   - **Dalle regole di posta in arrivo**
-  - **Per inoltro SMTP**
+  - **By SMTP forwarding**: questo è l'inoltro automatico che gli amministratori possono configurare su una cassetta postale, come descritto in [Configure email forwarding for a Mailbox](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-user-mailboxes/configure-email-forwarding).
   - Un collegamento al [rapporto di inoltro](view-mail-flow-reports.md#forwarding-report) per ulteriori dettagli.
 
 - **Messaggi auto-inoltrati da domini e utenti**:

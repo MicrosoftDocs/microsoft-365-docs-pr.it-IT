@@ -2,8 +2,8 @@
 title: Creare e usare un modello per aggiungere utenti
 f1.keywords:
 - NOCSH
-ms.author: v-sharos
-author: shars
+ms.author: sirkkuw
+author: Sirkkuw
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: È possibile creare e utilizzare un modello per risparmiare tempo e standardizzare le impostazioni quando si aggiungono più utenti.
-ms.openlocfilehash: 29953eb97476799d74e883ed8b20bd5f3382cbf4
-ms.sourcegitcommit: 3ddcf08e8deec087df1fe524147313f1cb12a26d
+ms.openlocfilehash: 92d3bd68a57291586da27eb2d578a26c53d20d78
+ms.sourcegitcommit: 1522a6471e0c5254a6d0f592e1f4dfacd1dd473a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "45022146"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "48245858"
 ---
 # <a name="create-and-use-a-template-to-add-users"></a>Creare e usare un modello per aggiungere utenti
 

@@ -16,12 +16,12 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: La funzionalità collegamenti sicuri fornisce il tempo di fare clic sulla verifica dei link ipertestuali nei documenti di Office e nei messaggi di posta elettronica. Leggere questo articolo per informazioni su come funzionano i collegamenti sicuri di ATP.
-ms.openlocfilehash: 09357b20173e2609587137764737c8aba044190e
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: e19d3a1f93d11cd9873e6b5fad9952b018e0a481
+ms.sourcegitcommit: 1522a6471e0c5254a6d0f592e1f4dfacd1dd473a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48201468"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "48245882"
 ---
 # <a name="how-atp-safe-links-works"></a>Funzionamento di Collegamenti sicuri ATP
 
@@ -30,7 +30,7 @@ ms.locfileid: "48201468"
 > [!IMPORTANT] 
 > Per il corretto funzionamento dei collegamenti sicuri di Office 365 ATP, tutti i servizi devono trovarsi nella stessa versione.
          
-## <a name="how-atp-safe-links-works"></a>Funzionamento di Collegamenti sicuri ATP
+## <a name="how-atp-safe-links-works-with-urls-in-email"></a>Funzionamento dei collegamenti sicuri di ATP con gli URL nella posta elettronica
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
  con URL nel messaggio di posta elettronica
@@ -57,10 +57,7 @@ A livello elevato, ecco come funziona la protezione dei [collegamenti sicuri di 
     
    - Se l'URL è determinato per la sicurezza, il sito Web verrà aperto.
     
-## <a name="how-atp-safe-links-works"></a>Funzionamento di Collegamenti sicuri ATP
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
- con gli URL nei documenti di Office 
+## <a name="how-atp-safe-links-works-with-urls-in-office-documents"></a>Funzionamento dei collegamenti sicuri di ATP con gli URL nei documenti di Office
 
 A livello elevato, ecco come funziona la protezione dei [collegamenti sicuri di ATP](atp-safe-links.md) per gli URL in Microsoft 365 Apps for Enterprise or Business Premium Applications (Current versions of Word, Excel e PowerPoint su Windows, Mac o in un browser, app di Office su dispositivi iOS o Android, Visio su Windows, OneNote in un browser):
   
