@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 319b26261f623a7e19e5bb8fbcd0b5d8a50d10a8
-ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
+ms.openlocfilehash: a76bae70adeb07d9ea0574a25bac14f89a0a790d
+ms.sourcegitcommit: 61d7284b412d0f7bbd8bbb2225c2e6324f86b717
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "47289710"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "48262218"
 ---
 # <a name="device-configuration"></a>Configurazione delle periferiche
 
@@ -42,7 +42,7 @@ Distribuzione degli aggiornamenti | Utilizzare Windows Update for business per e
 Connessioni con tassametro | Per impostazione predefinita, gli aggiornamenti su connessioni con tassametro (come le reti LTE) sono disattivati, anche se ogni utente può abilitare questa funzionalità in modo indipendente nelle **impostazioni > gli aggiornamenti > opzioni avanzate**. Se si desidera consentire a tutti gli utenti di abilitare gli aggiornamenti su connessioni a tassametro, [inviare una richiesta di modifica](../working-with-managed-desktop/admin-support.md), che attiva questa impostazione per tutti i dispositivi.
 | Conformità dispositivo | Questi criteri sono configurati per tutti i dispositivi desktop Microsoft gestiti. Un dispositivo viene segnalato come non conforme quando deriva dalla configurazione di sicurezza necessaria.
 
-## <a name="diagnostic-data"></a>Dati di diagnostica
+## <a name="windows-diagnostic-data"></a>Dati di diagnostica di Windows
 
  I dispositivi verranno impostati per fornire dati diagnostici avanzati a Microsoft in base a un identificatore commerciale conosciuto. Come parte di Microsoft Managed Desktop, gli amministratori IT non possono modificare queste impostazioni. Per i clienti nelle aree di regolamentazione generale per la protezione dei dati (GDPR), gli utenti possono ridurre il livello di dati diagnostici forniti, ma ci sarà una riduzione del servizio. Ad esempio, Microsoft Managed Desktop non sarà in grado di raccogliere i dati necessari per eseguire un'iterazione su impostazioni e criteri per soddisfare al meglio le esigenze di prestazioni e sicurezza. Per ulteriori informazioni, vedere [configurare i dati di diagnostica di Windows nell'organizzazione.](https://docs.microsoft.com/windows/privacy/configure-windows-diagnostic-data-in-your-organization#enhanced-level)
 
