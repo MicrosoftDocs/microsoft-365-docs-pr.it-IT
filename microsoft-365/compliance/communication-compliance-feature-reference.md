@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 757b1fcdae69e98ec45bb29e669ceda8f8cb8f98
-ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
+ms.openlocfilehash: e1e1677c929ef0de5d47dbb98ef8987a8fba548d
+ms.sourcegitcommit: 1522a6471e0c5254a6d0f592e1f4dfacd1dd473a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48131636"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "48245903"
 ---
 # <a name="communication-compliance-feature-reference"></a>Informazioni di riferimento sulle caratteristiche di conformità comunicazione
 
@@ -285,7 +285,7 @@ I filtri di conformità di comunicazione consentono di filtrare e ordinare i mes
 
 |**Filter**|**Dettagli**|
 |:-----|:-----|
-| **Data** | La data in cui il messaggio è stato inviato o ricevuto da un utente dell'organizzazione. |
+| **Data** | La data in cui il messaggio è stato inviato o ricevuto da un utente dell'organizzazione. Per filtrare un solo giorno, selezionare un intervallo di date che inizia con il giorno in cui si desidera ottenere i risultati e terminare con il giorno successivo. Ad esempio, se si desidera filtrare i risultati per 9/20/2020, è necessario scegliere un intervallo di date del filtro pari a 9/20/2020-9/21/2020.|
 | **Classe file** | La classe del messaggio in base al tipo di messaggio, ovvero *messaggio* o *allegato*. |
 | **Ha allegato** | La presenza degli allegati nel messaggio. |
 | **Classe Item** | L'origine del messaggio in base al tipo di messaggio, alla posta elettronica, a Microsoft Team Chat, a Bloomberg e così via. Per ulteriori informazioni sui tipi di elementi comuni e sulle classi dei messaggi, vedere [tipi di elementi e classi di messaggi](https://docs.microsoft.com/office/vba/outlook/concepts/forms/item-types-and-message-classes). |

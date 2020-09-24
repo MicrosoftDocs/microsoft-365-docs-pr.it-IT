@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Monitorare e gestire lo smaltimento del contenuto, sia che si utilizzi una recensione di disposizione o che il contenuto venga eliminato automaticamente in base alle impostazioni configurate.
-ms.openlocfilehash: 6789ab1abe54b76f22462a47326b07a213f19b0c
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: 3ef98e07df37d429567534e252c15abee69d0044
+ms.sourcegitcommit: 1522a6471e0c5254a6d0f592e1f4dfacd1dd473a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47950390"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "48245937"
 ---
 # <a name="disposition-of-content"></a>Disposizione del contenuto
 
@@ -118,11 +118,6 @@ Le notifiche di posta elettronica vengono inviate automaticamente ai revisori su
 Il contenuto in attesa di una revisione della disposizione viene eliminato solo dopo che un revisore sceglie di eliminare definitivamente il contenuto. Quando il revisore sceglie questa opzione, il contenuto del sito di SharePoint o dell'account OneDrive diventa idoneo per il processo di pulizia standard descritto in [modalità di funzionamento delle impostazioni di conservazione con il contenuto sul posto](retention.md#how-retention-settings-work-with-content-in-place).
 
 ## <a name="disposition-of-records"></a>Eliminazione dei record
-
-> [!NOTE]
-> L'implementazione per la prova dello smaltimento per i record in SharePoint e OneDrive è stata completata.
->
-> L'implementazione per la prova dello smaltimento dei record in Exchange è quasi completa quando si rimuove questa nota.
 
 Utilizzare la scheda **disposizione** della pagina **Gestione record** per identificare i record che sono stati eliminati, automaticamente o dopo una revisione della disposizione. Questi elementi visualizzano i **record eliminati** nella colonna **tipo** . Ad esempio:
 

@@ -18,12 +18,12 @@ ms.collection:
 hideEdit: true
 feedback_system: None
 description: La prevenzione della perdita di dati (DLP) nel &amp; Centro sicurezza e conformità include 80 tipi di informazioni riservate pronte per l'uso nei criteri DLP. In questo argomento vengono elencati tutti questi tipi di informazioni riservate e illustrata la ricerca eseguita dal criterio DLP quando rileva ciascun tipo di informazioni.
-ms.openlocfilehash: 5d776fcf816359fd30c750b9bebe536269a2b6c5
-ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
+ms.openlocfilehash: 8ee871ccde30d3ab71dbcb2d5183aafdf11482bd
+ms.sourcegitcommit: c1ee4ed3c5826872b57339e1e1aa33b4d2209711
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48208098"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "48235572"
 ---
 # <a name="sensitive-information-type-entity-definitions"></a>Definizioni delle entità tipo di informazioni sensibili
 
@@ -206,6 +206,13 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - AIEA
 
 ## <a name="australia-business-number"></a>Numero dell'azienda Australia
+Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
+- criteri di prevenzione della perdita di dati
+- criteri di conformità della comunicazione
+- governance delle informazioni
+- gestione dei record
+- Sicurezza delle app di Microsoft Cloud
+
 
 ### <a name="format"></a>Formato
 
@@ -261,6 +268,12 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - businessno #
 
 ## <a name="australia-company-number"></a>Numero dell'azienda Australia
+Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
+- criteri di prevenzione della perdita di dati
+- criteri di conformità della comunicazione
+- governance delle informazioni
+- gestione dei record
+- Sicurezza delle app di Microsoft Cloud
 
 ### <a name="format"></a>Formato
 
@@ -689,6 +702,12 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - fuhrerschein Republik Osterreich
 
 ## <a name="austria-identity-card"></a>Carta d'identità Austria
+Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
+- criteri di prevenzione della perdita di dati
+- criteri di conformità della comunicazione
+- governance delle informazioni
+- gestione dei record
+- Sicurezza delle app di Microsoft Cloud
 
 ### <a name="format"></a>Formato
 
@@ -762,20 +781,38 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 <Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_austria_eu_passport_number" />
-          <Match idRef="Keywords_austria_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_austria_eu_passport_number" />
+          </Any>
         </Pattern>
 </Entity>
 ```
 
 ### <a name="keywords"></a>Parole chiave
 
+#### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
+
+- passaporto #
+- passaporto #
+- passportid
+- passaporti
+- passportno
+- Passport No
+- passportnumber
+- numero di passaporto
+- passportnumbers
+- numeri di passaporto
+
 #### <a name="keywords_austria_eu_passport_number"></a>Keywords_austria_eu_passport_number
 
-- passport number
-- numero di passaporto austriaco
-- Passport No
-- reisepass
-- österreichisch reisepass
+- reisepassnummer
+- reisepasse
+- No-Reisepass 
+- Nr-Reisepass
+- Reisepass-Nr
+- Passnummer
+- reisepässe
 
 ## <a name="austria-social-security-number-or-equivalent-identification"></a>Austria codice di previdenza sociale o identificazione equivalente
 Questa entità dei tipi di informazioni riservate è disponibile solo nel tipo di informazioni riservate del codice di previdenza sociale dell'Unione europea o ID equivalente.
@@ -906,6 +943,12 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 65%,
 - codice fiscale
  
 ## <a name="austria-value-added-tax"></a>Tassa sul valore aggiunto Austria
+Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
+- criteri di prevenzione della perdita di dati
+- criteri di conformità della comunicazione
+- governance delle informazioni
+- gestione dei record
+- Sicurezza delle app di Microsoft Cloud
 
 ### <a name="format"></a>Formato
 
@@ -1626,23 +1669,42 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
  <!-- EU Passport Number -->
 <Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
-          <IdMatch idRef="Regex_belgium__eu_passport_number" />
-          <Match idRef="Keywords_belgium_eu_passport_number" />
+          <IdMatch idRef="Regex_belgium_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_belgium_eu_passport_number" />
+          </Any>
         </Pattern>
 </Entity>
 ```
 
 ### <a name="keywords"></a>Parole chiave
 
+#### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
+
+- passaporto #
+- passaporto #
+- passportid
+- passaporti
+- passportno
+- Passport No
+- passportnumber
+- numero di passaporto
+- passportnumbers
+- numeri di passaporto
+
 #### <a name="keywords_belgium_eu_passport_number"></a>Keywords_belgium_eu_passport_number
 
-- passport number
-- numero di passaporto belga
-- Passport No
-- paspoort
+- numéro Passeport
+- PASPOORT Nr
+- PASPOORT-Nr
 - paspoortnummer
+- paspoortnummers
+- Passeport carte
+- Passeport Livre
+- Pass-Nr
+- Passnummer
 - Reisepass kein
-- reisepass
 
 ## <a name="belgium-social-security-number-or-equivalent-identification"></a>Codice di previdenza sociale belga o identificazione equivalente
 Questa entità dei tipi di informazioni riservate è disponibile solo nel tipo di informazioni riservate del codice di previdenza sociale dell'Unione europea o ID equivalente.
@@ -1706,6 +1768,12 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 
 
 ## <a name="belgium-value-added-tax-number"></a>Numero di imposta sul valore aggiunto belga
+Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
+- criteri di prevenzione della perdita di dati
+- criteri di conformità della comunicazione
+- governance delle informazioni
+- gestione dei record
+- Sicurezza delle app di Microsoft Cloud
 
 ### <a name="format"></a>Formato
 
@@ -2022,6 +2090,12 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 
 
 ## <a name="bulgaria-uniform-civil-number"></a>Bulgaria (Uniform Civil Number)
+Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
+- criteri di prevenzione della perdita di dati
+- criteri di conformità della comunicazione
+- governance delle informazioni
+- gestione dei record
+- Sicurezza delle app di Microsoft Cloud
 
 ### <a name="format"></a>Formato
 
@@ -2136,26 +2210,40 @@ No
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
 - L'espressione regolare  `Regex_bulgaria_eu_passport_number` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola chiave from  `Keywords_bulgaria_eu_passport_number` . 
+- Una parola chiave da  `Keywords_bulgaria_eu_passport_number` o `Keywords_eu_passport_number_common` viene trovata. 
 
 ```xml
  <!-- EU Passport Number -->
 <Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_bulgaria_eu_passport_number" />
-          <Match idRef="Keywords_bulgaria_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_bulgaria_eu_passport_number" />
+          </Any>
         </Pattern>
 </Entity>
 ```
 ### <a name="keywords"></a>Parole chiave
 
+#### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
+
+- passaporto #
+- passaporto #
+- passportid
+- passaporti
+- passportno
+- Passport No
+- passportnumber
+- numero di passaporto
+- passportnumbers
+- numeri di passaporto
+
 #### <a name="keywords_bulgaria_eu_passport_number"></a>Keywords_bulgaria_eu_passport_number
 
-- passport number
-- numero di passaporto bulgaro
-- Passport No
 - Номер на паспорта
-
+- Номер на паспорт
+- паспорт No
 
 ## <a name="canada-bank-account-number"></a>Canada-numero di conto corrente bancario
 
@@ -3347,26 +3435,40 @@ No
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
 - L'espressione regolare  `Regex_croatia_eu_passport_number` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola chiave from  `Keywords_croatia_eu_passport_number` . 
+- Una parola chiave da  `Keywords_eu_passport_number_common` o `Keywords_croatia_eu_passport_number` viene trovata. 
     
 ```xml
  <!-- EU Passport Number -->
 <Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_croatia_eu_passport_number" />
-          <Match idRef="Keywords_croatia_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_croatia_eu_passport_number" />
+          </Any>
         </Pattern>
 </Entity>
 ```
 ### <a name="keywords"></a>Parole chiave
 
+#### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
+
+- passaporto #
+- passaporto #
+- passportid
+- passaporti
+- passportno
+- Passport No
+- passportnumber
+- numero di passaporto
+- passportnumbers
+- numeri di passaporto
+
 #### <a name="keywords_croatia_eu_passport_number"></a>Keywords_croatia_eu_passport_number
 
-- passport number
-- numero di passaporto croato
-- Passport No
 - broj putovnice
-
+- BR. Putovnice
+- BR putovnice
    
 ## <a name="croatia-personal-identification-oib-number"></a>Numero di identificazione personale (OIB) (Croazia)
 
@@ -3554,6 +3656,12 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 
 
 ## <a name="cyprus-identity-card"></a>Carta d'identità di Cipro
+Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
+- criteri di prevenzione della perdita di dati
+- criteri di conformità della comunicazione
+- governance delle informazioni
+- gestione dei record
+- Sicurezza delle app di Microsoft Cloud
 
 ### <a name="format"></a>Formato
 
@@ -3614,29 +3722,57 @@ No
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
 - L'espressione regolare  `Regex_cyprus_eu_passport_number` trova contenuto che corrisponde al modello.
-- Viene trovata una parola chiave from  `Keywords_cyprus_eu_passport_number` . 
+- Una parola chiave da  `Keywords_eu_passport_number_common` o `Keywords_cyprus_eu_passport_number` viene trovata. 
     
 ```xml
  <!-- EU Passport Number -->
 <Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_cyprus_eu_passport_number" />
-          <Match idRef="Keywords_cyprus_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_cyprus_eu_passport_number" />
+          </Any>
         </Pattern>
 </Entity>
 ```
 
 ### <a name="keywords"></a>Parole chiave
 
+#### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
+
+- passaporto #
+- passaporto #
+- passportid
+- passaporti
+- passportno
+- Passport No
+- passportnumber
+- numero di passaporto
+- passportnumbers
+- numeri di passaporto
+
 #### <a name="keywords_cyprus_eu_passport_number"></a>Keywords_cyprus_eu_passport_number
 
-- passport number
-- numero di passaporto di Cipro
-- Passport No
 - αριθμό διαβατηρίου
-
+- pasaportu
+- Αριθμός Διαβατηρίου
+- κυπριακό διαβατήριο
+- διαβατήριο #
+- διαβατήριο
+- αριθμός διαβατηρίου
+- Pasaport Kimliği
+- Pasaport numarası
+- Pasaport No.
+- Αρ. Διαβατηρίου
 
 ## <a name="cyprus-tax-identification-number"></a>Numero di identificazione fiscale cipriota
+Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
+- criteri di prevenzione della perdita di dati
+- criteri di conformità della comunicazione
+- governance delle informazioni
+- gestione dei record
+- Sicurezza delle app di Microsoft Cloud
 
 ### <a name="format"></a>Formato
 
@@ -3783,27 +3919,43 @@ No
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
 - L'espressione regolare  `Regex_czech_republic_eu_passport_number` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola chiave from  `Keywords_czech_republic_eu_passport_number` . 
+- Una parola chiave da  `Keywords_eu_passport_number_common` o `Keywords_czech_republic_eu_passport_number` viene trovata. 
     
 ```xml
  <!-- EU Passport Number -->
 <Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_czech_republic_eu_passport_number" />
-          <Match idRef="Keywords_czech_republic_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_czech_republic_eu_passport_number" />
+          </Any>
         </Pattern>
 </Entity>
 ```
 
 ### <a name="keywords"></a>Parole chiave
 
+#### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
+
+- passaporto #
+- passaporto #
+- passportid
+- passaporti
+- passportno
+- Passport No
+- passportnumber
+- numero di passaporto
+- passportnumbers
+- numeri di passaporto
+
 #### <a name="keywords_czech_republic_eu_passport_number"></a>Keywords_czech_republic_eu_passport_number
 
-- passport number
-- numero di passaporto ceco
-- Passport No
 - Cestovní pas
-- pas
+- číslo Pasu
+- Cestovní Pasu
+- Passeport No
+- čísla Pasu
 
 
 ## <a name="czech-personal-identity-number"></a>Numero di identità personale ceco
@@ -4040,31 +4192,44 @@ No
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
 - L'espressione regolare  `Regex_denmark_eu_passport_number` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola chiave from  `Keywords_denmark_eu_passport_number` . 
+- Una parola chiave da  `Keywords_eu_passport_number_common` o `Keywords_denmark_eu_passport_number` viene trovata. 
     
 ```xml
  <!-- EU Passport Number -->
 <Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_denmark_eu_passport_number" />
-          <Match idRef="Keywords_denmark_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_denmark_eu_passport_number" />
+          </Any>
         </Pattern>
 </Entity>
 ```
 
 ### <a name="keywords"></a>Parole chiave
 
+#### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
+
+- passaporto #
+- passaporto #
+- passportid
+- passaporti
+- passportno
+- Passport No
+- passportnumber
+- numero di passaporto
+- passportnumbers
+- numeri di passaporto
+
 #### <a name="keywords_denmark_eu_passport_number"></a>Keywords_denmark_eu_passport_number
 
-- passport number
-- numero di passaporto danese
-- Passport No
-- pas
 - Pasnummer
+- Passeport n °
+- pasnumre
 
 
 ## <a name="denmark-personal-identification-number"></a>Danimarca-numero di identificazione personale
-Questa entità di tipo di informazioni riservate è inclusa nel tipo di informazioni riservate del numero di identificazione nazionale dell'Unione europea ed è disponibile come entità di tipo di informazioni riservate stand-alone.
 
 ### <a name="format"></a>Formato
 
@@ -4333,6 +4498,12 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 
 
 ## <a name="estonia-personal-identification-code"></a>Estonia Codice di identificazione personale
+Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
+- criteri di prevenzione della perdita di dati
+- criteri di conformità della comunicazione
+- governance delle informazioni
+- gestione dei record
+- Sicurezza delle app di Microsoft Cloud
 
 ### <a name="format"></a>Formato
 
@@ -4433,26 +4604,39 @@ No
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
 - L'espressione regolare  `Regex_estonia_eu_passport_number` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola chiave from  `Keywords_estonia_eu_passport_number` . 
+- Una parola chiave da  `Keywords_eu_passport_number_common` o `Keywords_estonia_eu_passport_number` viene trovata. 
     
 ```xml
  <!-- EU Passport Number -->
 <Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_estonia_eu_passport_number" />
-          <Match idRef="Keywords_estonia_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_estonia_eu_passport_number" />
+          </Any>
         </Pattern>
 </Entity>
 ```
 
 ### <a name="keywords"></a>Parole chiave
 
+#### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
+
+- passaporto #
+- passaporto #
+- passportid
+- passaporti
+- passportno
+- Passport No
+- passportnumber
+- numero di passaporto
+- passportnumbers
+- numeri di passaporto
+
 #### <a name="keywords_estonia_eu_passport_number"></a>Keywords_estonia_eu_passport_number
 
-- passport number
-- numero di passaporto estone
-- Passport No
-- passaggio kodaniku Eesti
+Eesti kodaniku pass passinumbrid numero documento n ° dokumendi Nr
 
 ## <a name="eu-debit-card-number"></a>Numero di carta di debito dell'Unione europea
 
@@ -5013,6 +5197,12 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 
 
 ## <a name="finland-european-health-insurance-number"></a>Finlandia-numero di assicurazione sanitaria europea
+Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
+- criteri di prevenzione della perdita di dati
+- criteri di conformità della comunicazione
+- governance delle informazioni
+- gestione dei record
+- Sicurezza delle app di Microsoft Cloud
 
 ### <a name="format"></a>Formato
 
@@ -5181,22 +5371,44 @@ No
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
 - L'espressione regolare Regex_finland_passport_number trova contenuti che corrispondono al modello.
-- Viene trovata una parola chiave da Keyword_finland_passport_number.
+- Viene trovata una parola chiave da Keywords_eu_passport_number_common o Keyword_finland_passport_number.
 
 ```xml
 <!-- Finland Passport Number -->
 <Entity id="d1685ac3-1d3a-40f8-8198-32ef5669c7a5" recommendedConfidence="75" patternsProximity="300">
-  <Pattern confidenceLevel="75">
-     <IdMatch idRef="Regex_finland_passport_number"/>
-     <Match idRef="Keyword_finland_passport_number"/>
-  </Pattern>
+        <Pattern confidenceLevel="75">
+          <IdMatch idRef="Regex_finland_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keyword_finland_passport_number" />
+          </Any>
+        </Pattern>
 </Entity>
 ```
 ### <a name="keywords"></a>Parole chiave
 
-- Keyword_finland_passport_number
-- Passaporto
-- Passi
+#### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
+
+- passaporto #
+- passaporto #
+- passportid
+- passaporti
+- passportno
+- Passport No
+- passportnumber
+- numero di passaporto
+- passportnumbers
+- numeri di passaporto
+
+#### <a name="keyword_finland_passport_number"></a>Keyword_finland_passport_number
+
+- Suomalainen passi
+- numero passin
+- passin numero. #
+- numero passin #
+- passin numero.
+- passi #
+- numero di passi
 
 
 ## <a name="finland-social-security-number-or-equivalent-identification"></a>Numero di previdenza sociale Finlandia o identificazione equivalente
@@ -5323,6 +5535,12 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 
 
 ## <a name="france-health-insurance-number"></a>Francia-numero di assicurazione malattia
+Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
+- criteri di prevenzione della perdita di dati
+- criteri di conformità della comunicazione
+- governance delle informazioni
+- gestione dei record
+- Sicurezza delle app di Microsoft Cloud
 
 ### <a name="format"></a>Formato
 
@@ -5627,6 +5845,12 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 
 
 ## <a name="france-value-added-tax-number"></a>Francia-numero di imposta sul valore aggiunto
+Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
+- criteri di prevenzione della perdita di dati
+- criteri di conformità della comunicazione
+- governance delle informazioni
+- gestione dei record
+- Sicurezza delle app di Microsoft Cloud
 
 ### <a name="format"></a>Formato
 
@@ -5910,68 +6134,41 @@ Sì
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
 - La funzione Func_german_passport restituisce contenuti che corrispondono al modello.
-- Viene trovata una parola chiave fra le cinque elencate.
+- Viene trovata una parola chiave from `Keyword_german_passport` .
 - Il checksum ha esito positivo.
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
 - La funzione Func_german_passport_data restituisce contenuti che corrispondono al modello.
-- Viene trovata una parola chiave fra le cinque elencate.
+- Viene trovata una parola chiave from `Keyword_german_passport` .
 - Il checksum ha esito positivo.
 
 ```xml
-<!-- Germany Passport Number -->
-<Entity id="2e3da144-d42b-47ed-b123-fbf78604e52c" patternsProximity="300" recommendedConfidence="75">
-  <Pattern confidenceLevel="85">
+    <!-- German Passport Number -->
+    <Entity id="2e3da144-d42b-47ed-b123-fbf78604e52c" patternsProximity="300" recommendedConfidence="75">
+      <Pattern confidenceLevel="85">
         <IdMatch idRef="Func_german_passport" />
-        <Any minMatches="1">
-          <Match idRef="Keyword_german_passport" />
-          <Match idRef="Keyword_german_passport_collaborative" />
-          <Match idRef="Keyword_german_passport_number" />
-          <Match idRef="Keyword_german_passport1" />
-          <Match idRef="Keyword_german_passport2" />
-        </Any>
-  </Pattern>
-  <Pattern confidenceLevel="75">
+        <Match idRef="Keyword_german_passport" />
+      </Pattern>
+      <Pattern confidenceLevel="75">
         <IdMatch idRef="Func_german_passport_data" />
-        <Any minMatches="1">
-          <Match idRef="Keyword_german_passport" />
-          <Match idRef="Keyword_german_passport_collaborative" />
-          <Match idRef="Keyword_german_passport_number" />
-          <Match idRef="Keyword_german_passport1" />
-          <Match idRef="Keyword_german_passport2" />
-        </Any>
-  </Pattern>
-</Entity>
+        <Match idRef="Keyword_german_passport" />
+      </Pattern>
+    </Entity>
 ```
 
 ### <a name="keywords"></a>Parole chiave
 
 #### <a name="keyword_german_passport"></a>Keyword_german_passport
 
-- reisepass
 - reisepasse
 - reisepassnummer
-- passaporto
-- passaporti
-
-#### <a name="keyword_german_passport_collaborative"></a>Keyword_german_passport_collaborative
-
-- geburtsdatum
-- ausstellungsdatum
-- ausstellungsort
-
-#### <a name="keyword_german_passport_number"></a>Keyword_german_passport_number
-
-No-Reisepass Nr-Reisepass
-
-#### <a name="keyword_german_passport1"></a>Keyword_german_passport1
-
-Reisepass-Nr
-
-#### <a name="keyword_german_passport2"></a>Keyword_german_passport2
-
-bnationalit. t
-
+- No-Reisepass 
+- Nr-Reisepass
+- Reisepass-Nr
+- Passnummer
+- reisepässe
+- Passeport No.
+- Passeport No
 
 ## <a name="germany-tax-identification-number"></a>Germania-codice fiscale
 
@@ -6049,6 +6246,12 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 
 
 ## <a name="germany-value-added-tax-number"></a>Germania-numero di imposta sul valore aggiunto
+Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
+- criteri di prevenzione della perdita di dati
+- criteri di conformità della comunicazione
+- governance delle informazioni
+- gestione dei record
+- Sicurezza delle app di Microsoft Cloud
 
 ### <a name="format"></a>Formato
 
@@ -6235,28 +6438,49 @@ No
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
   
 - L'espressione regolare  `Regex_greece_eu_passport_number` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola chiave from  `Keywords_greece_eu_passport_number` . 
+- Una parola chiave da  `Keywords_eu_passport_number_common` o `Keywords_greece_eu_passport_number` viene trovata. 
     
 ```xml
  <!-- EU Passport Number -->
 <Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_greece_eu_passport_number" />
-          <Match idRef="Keywords_greece_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_greece_eu_passport_number" />
+          </Any>
         </Pattern>
 </Entity>
 ```
 
 ### <a name="keywords"></a>Parole chiave
 
+#### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
+
+- passaporto #
+- passaporto #
+- passportid
+- passaporti
+- passportno
+- Passport No
+- passportnumber
+- numero di passaporto
+- passportnumbers
+- numeri di passaporto
+
 #### <a name="keywords_greece_eu_passport_number"></a>Keywords_greece_eu_passport_number
 
-- passport number
-- numero di passaporto greco
-- Passport No
-- διαβατηριο
+- αριθμός διαβατηρίου
+- αριθμούς διαβατηρίου
+- αριθμός διαβατηριο
 
 ## <a name="greece-tax-identification-number"></a>Grecia-codice fiscale
+Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
+- criteri di prevenzione della perdita di dati
+- criteri di conformità della comunicazione
+- governance delle informazioni
+- gestione dei record
+- Sicurezza delle app di Microsoft Cloud
 
 ### <a name="format"></a>Formato
 
@@ -6460,6 +6684,12 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 
 
 ## <a name="hungary-personal-identification-number"></a>Numero di identificazione personale Ungheria
+Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
+- criteri di prevenzione della perdita di dati
+- criteri di conformità della comunicazione
+- governance delle informazioni
+- gestione dei record
+- Sicurezza delle app di Microsoft Cloud
 
 ### <a name="format"></a>Formato
 
@@ -6541,26 +6771,40 @@ No
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
   
 - L'espressione regolare  `Regex_hungary_eu_passport_number` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola chiave from  `Keywords_hungary_eu_passport_number` . 
+- Una parola chiave da  `Keywords_eu_passport_number_common` o `Keywords_hungary_eu_passport_number` viene trovata. 
     
 ```xml
  <!-- EU Passport Number -->
 <Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_hungary_eu_passport_number" />
-          <Match idRef="Keywords_hungary_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_hungary_eu_passport_number" />
+          </Any>
         </Pattern>
 </Entity>
 ```
 ### <a name="keywords"></a>Parole chiave
 
+#### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
+
+- passaporto #
+- passaporto #
+- passportid
+- passaporti
+- passportno
+- Passport No
+- passportnumber
+- numero di passaporto
+- passportnumbers
+- numeri di passaporto
+
 #### <a name="keywords_hungary_eu_passport_number"></a>Keywords_hungary_eu_passport_number
 
-- passport number
-- numero di passaporto ungherese
-- Passport No
 - útlevél száma
-
+- Útlevelek száma
+- útlevél szám
 
 ## <a name="hungary-social-security-number-or-equivalent-identification"></a>Numero di previdenza sociale ungherese o identificazione equivalente
 
@@ -6626,6 +6870,12 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 
 
 ## <a name="hungary-tax-identification-number"></a>Numero di identificazione fiscale ungherese
+Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
+- criteri di prevenzione della perdita di dati
+- criteri di conformità della comunicazione
+- governance delle informazioni
+- gestione dei record
+- Sicurezza delle app di Microsoft Cloud
 
 ### <a name="format"></a>Formato
 
@@ -6702,6 +6952,12 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 
 
 ## <a name="hungary-value-added-tax-number"></a>Numero dell'imposta sul valore aggiunto (Ungheria)
+Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
+- criteri di prevenzione della perdita di dati
+- criteri di conformità della comunicazione
+- governance delle informazioni
+- gestione dei record
+- Sicurezza delle app di Microsoft Cloud
 
 ### <a name="format"></a>Formato
 
@@ -7167,29 +7423,45 @@ No
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
   
 - L'espressione regolare  `Regex_ireland_eu_passport_number` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola chiave from  `Keywords_ireland_eu_passport_number` . 
+- Una parola chiave da  `Keywords_eu_passport_number_common` o `Keywords_ireland_eu_passport_number` viene trovata. 
     
 ```xml
  <!-- EU Passport Number -->
 <Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_ireland_eu_passport_number" />
-          <Match idRef="Keywords_ireland_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_ireland_eu_passport_number" />
+          </Any>
         </Pattern>
 </Entity>
 ```
 
 ### <a name="keywords"></a>Parole chiave
 
+#### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
+
+- passaporto #
+- passaporto #
+- passportid
+- passaporti
+- passportno
+- Passport No
+- passportnumber
+- numero di passaporto
+- passportnumbers
+- numeri di passaporto
+
 #### <a name="keywords_ireland_eu_passport_number"></a>Keywords_ireland_eu_passport_number
 
-- passport number
-- numero di passaporto irlandese
-- Passport No
-- pas
-- passaporto
-- Passeport
 - numero Passeport
+- uimhreacha pasanna
+- uimhir pas
+- uimhir fasi
+- uimhreacha pas
+- uimhir cárta
+- uimhir chárta
 
 ## <a name="ireland-personal-public-service-pps-number"></a>Irlanda-numero di servizio pubblico personale (PPS)
 
@@ -7424,6 +7696,12 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - patente di guida 
 
 ## <a name="italy-fiscal-code"></a>Codice fiscale Italia
+Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
+- criteri di prevenzione della perdita di dati
+- criteri di conformità della comunicazione
+- governance delle informazioni
+- gestione dei record
+- Sicurezza delle app di Microsoft Cloud
 
 ### <a name="format"></a>Formato
 
@@ -7527,34 +7805,53 @@ non applicabile
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
 - L'espressione regolare  `Regex_italy_eu_passport_number` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola chiave from  `Keywords_italy_eu_passport_number` . 
+- Una parola chiave da  `Keywords_eu_passport_number_common` o `Keywords_italy_eu_passport_number` viene trovata. 
     
 ```xml
  <!-- EU Passport Number -->
 <Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_italy_eu_passport_number" />
-          <Match idRef="Keywords_italy_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_italy_eu_passport_number" />
+          </Any>
         </Pattern>
 </Entity>
 ```
 
 ### <a name="keywords"></a>Parole chiave
 
+#### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
+
+- passaporto #
+- passaporto #
+- passportid
+- passaporti
+- passportno
+- Passport No
+- passportnumber
+- numero di passaporto
+- passportnumbers
+- numeri di passaporto
+
 #### <a name="keywords_italy_eu_passport_number"></a>Keywords_italy_eu_passport_number
 
-- numero di passaporto italiano
-- Repubblica italiana passaporto
-- passaporto
+- italiana passaporto
 - passaporto italiana
-- passport number
-- italiana passaporto numero
 - Numero passaporto
-- numéro Passeport Italien
 - numéro Passeport
-
+- numero di passaporto
+- numeri del passaporto
+- Passeport Italien
 
 ## <a name="italy-value-added-tax-number"></a>Numero di imposta sul valore aggiunto Italia
+Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
+- criteri di prevenzione della perdita di dati
+- criteri di conformità della comunicazione
+- governance delle informazioni
+- gestione dei record
+- Sicurezza delle app di Microsoft Cloud
 
 ### <a name="format"></a>Formato
 
@@ -7783,6 +8080,12 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 
 
 ## <a name="japan-my-number---corporate"></a>Giappone My Number-Corporate
+Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
+- criteri di prevenzione della perdita di dati
+- criteri di conformità della comunicazione
+- governance delle informazioni
+- gestione dei record
+- Sicurezza delle app di Microsoft Cloud
 
 ### <a name="format"></a>Formato
 
@@ -7838,6 +8141,12 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 
 
 ## <a name="japan-my-number---personal"></a>Giappone il mio numero-personale
+Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
+- criteri di prevenzione della perdita di dati
+- criteri di conformità della comunicazione
+- governance delle informazioni
+- gestione dei record
+- Sicurezza delle app di Microsoft Cloud
 
 ### <a name="format"></a>Formato
 
@@ -8286,27 +8595,44 @@ No
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
 - L'espressione regolare  `Regex_latvia_eu_passport_number` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola chiave from  `Keywords_latvia_eu_passport_number` . 
+- Una parola chiave da  `Keywords_eu_passport_number_common` o `Keywords_latvia_eu_passport_number` viene trovata. 
     
 ```xml
  <!-- EU Passport Number -->
 <Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_latvia_eu_passport_number" />
-          <Match idRef="Keywords_latvia_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_latvia_eu_passport_number" />
+          </Any>
         </Pattern>
 </Entity>
 ```
 
 ### <a name="keywords"></a>Parole chiave
 
+#### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
+
+- passaporto #
+- passaporto #
+- passportid
+- passaporti
+- passportno
+- Passport No
+- passportnumber
+- numero di passaporto
+- passportnumbers
+- numeri di passaporto
+
 #### <a name="keywords_latvia_eu_passport_number"></a>Keywords_latvia_eu_passport_number
 
-- passport number
-- numero di passaporto lettone
-- Passport No
-- pase numurs    
-
+- pase numurs
+- pase numur
+- Pases numuri
+- Pases Nr
+- Passeport No
+- n ° du Passeport
 
 ## <a name="lithuania-drivers-license-number"></a>Lituania-numero della patente di guida
 Questa entità di tipo di informazioni riservate è disponibile solo nel tipo di informazioni riservate del conducente dell'Unione europea.
@@ -8358,6 +8684,12 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - vairuotojo pažymėjimas
 
 ## <a name="lithuania-personal-code"></a>Codice personale Lituania
+Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
+- criteri di prevenzione della perdita di dati
+- criteri di conformità della comunicazione
+- governance delle informazioni
+- gestione dei record
+- Sicurezza delle app di Microsoft Cloud
 
 ### <a name="format"></a>Formato
 
@@ -8459,27 +8791,41 @@ non applicabile
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
 - L'espressione regolare  `Regex_lithuania_eu_passport_number` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola chiave from  `Keywords_lithuania_eu_passport_number` . 
+- Una parola chiave da  `Keywords_eu_passport_number_common` o `Keywords_lithuania_eu_passport_number` viene trovata. 
     
 ```xml
  <!-- EU Passport Number -->
 <Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_lithuania_eu_passport_number" />
-          <Match idRef="Keywords_lithuania_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_lithuania_eu_passport_number" />
+          </Any>
         </Pattern>
 </Entity>
 ```
 
 ### <a name="keywords"></a>Parole chiave
 
+#### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
+
+- passaporto #
+- passaporto #
+- passportid
+- passaporti
+- passportno
+- Passport No
+- passportnumber
+- numero di passaporto
+- passportnumbers
+- numeri di passaporto
+
 #### <a name="keywords_lithuania_eu_passport_number"></a>Keywords_lithuania_eu_passport_number
 
-- passport number
-- numero di passaporto di lithunian
-- Passport No
 - numero di Paso
-
+- Paso numeriai
+- Paso Nr
 
 ## <a name="luxemburg-drivers-license-number"></a>Numero della patente di guida del Lussemburgo
 Questa entità di tipo di informazioni riservate è disponibile solo nel tipo di informazioni riservate del conducente dell'Unione europea.
@@ -8531,6 +8877,12 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - fahrerlaubnis
 
 ## <a name="luxemburg-national-identification-number-natural-persons"></a>Numero di identificazione nazionale del Lussemburgo (persone fisiche)
+Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
+- criteri di prevenzione della perdita di dati
+- criteri di conformità della comunicazione
+- governance delle informazioni
+- gestione dei record
+- Sicurezza delle app di Microsoft Cloud
 
 ### <a name="format"></a>Formato
 
@@ -8854,6 +9206,12 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - Liċenzja TAS-sewqan
 
 ## <a name="malta-identity-card-number"></a>Numero di carta di identità di Malta
+Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
+- criteri di prevenzione della perdita di dati
+- criteri di conformità della comunicazione
+- governance delle informazioni
+- gestione dei record
+- Sicurezza delle app di Microsoft Cloud
 
 ### <a name="format"></a>Formato
 
@@ -8931,26 +9289,41 @@ No
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
 - L'espressione regolare  `Regex_malta_eu_passport_number` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola chiave from  `Keywords_malta_eu_passport_number` . 
+- Una parola chiave da  `Keywords_eu_passport_number_common` o `Keywords_malta_eu_passport_number` viene trovata. 
     
 ```xml
  <!-- EU Passport Number -->
 <Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_malta_eu_passport_number" />
-          <Match idRef="Keywords_malta_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_malta_eu_passport_number" />
+          </Any>
         </Pattern>
 </Entity>
 ```
 
 ### <a name="keywords"></a>Parole chiave
 
+#### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
+
+- passaporto #
+- passaporto #
+- passportid
+- passaporti
+- passportno
+- Passport No
+- passportnumber
+- numero di passaporto
+- passportnumbers
+- numeri di passaporto
+
 #### <a name="keywords_malta_eu_passport_number"></a>Keywords_malta_eu_passport_number
 
-- passport number
-- numero di passaporto maltese
-- Passport No
 - numru tal-passaport
+- numri tal-passaport
+- NRU tal-passaport
 
 ## <a name="malta-tax-identification-number"></a>Numero di identificazione fiscale di Malta
 
@@ -9200,6 +9573,12 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - paspoortnummer
 
 ## <a name="netherlands-tax-identification-number"></a>Numero di identificazione fiscale per i Paesi Bassi
+Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
+- criteri di prevenzione della perdita di dati
+- criteri di conformità della comunicazione
+- governance delle informazioni
+- gestione dei record
+- Sicurezza delle app di Microsoft Cloud
 
 ### <a name="format"></a>Formato
 
@@ -9278,6 +9657,12 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 65%,
 
 
 ## <a name="netherlands-value-added-tax-number"></a>Paesi Bassi-numero di imposta sul valore aggiunto
+Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
+- criteri di prevenzione della perdita di dati
+- criteri di conformità della comunicazione
+- governance delle informazioni
+- gestione dei record
+- Sicurezza delle app di Microsoft Cloud
 
 ### <a name="format"></a>Formato
 
@@ -9334,6 +9719,12 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 
 
 ## <a name="new-zealand-bank-account-number"></a>Numero di conto corrente bancario neozelandese
+Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
+- criteri di prevenzione della perdita di dati
+- criteri di conformità della comunicazione
+- governance delle informazioni
+- gestione dei record
+- Sicurezza delle app di Microsoft Cloud
 
 ### <a name="format"></a>Formato
 
@@ -9390,6 +9781,12 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 
 
 ## <a name="new-zealand-drivers-license-number"></a>Numero della patente di guida neozelandese
+Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
+- criteri di prevenzione della perdita di dati
+- criteri di conformità della comunicazione
+- governance delle informazioni
+- gestione dei record
+- Sicurezza delle app di Microsoft Cloud
 
 ### <a name="format"></a>Formato
 
@@ -9500,6 +9897,12 @@ international driving permit
 
 
 ## <a name="new-zealand-inland-revenue-number"></a>Numero di ricavo interno della Nuova Zelanda
+Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
+- criteri di prevenzione della perdita di dati
+- criteri di conformità della comunicazione
+- governance delle informazioni
+- gestione dei record
+- Sicurezza delle app di Microsoft Cloud
 
 ### <a name="format"></a>Formato
 
@@ -9597,6 +10000,12 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%,
 
 
 ## <a name="new-zealand-social-wlefare-number"></a>Numero di social wlefare della Nuova Zelanda
+Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
+- criteri di prevenzione della perdita di dati
+- criteri di conformità della comunicazione
+- governance delle informazioni
+- gestione dei record
+- Sicurezza delle app di Microsoft Cloud
 
 ### <a name="format"></a>Formato
 
@@ -9944,6 +10353,12 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%,
 - Paszport
 
 ## <a name="poland-regon-number"></a>Polonia numero REGOn
+Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
+- criteri di prevenzione della perdita di dati
+- criteri di conformità della comunicazione
+- governance delle informazioni
+- gestione dei record
+- Sicurezza delle app di Microsoft Cloud
 
 ### <a name="format"></a>Formato
 
@@ -10004,6 +10419,12 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 65%,
 
 
 ## <a name="poland-tax-identification-number"></a>Polonia-codice fiscale
+Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
+- criteri di prevenzione della perdita di dati
+- criteri di conformità della comunicazione
+- governance delle informazioni
+- gestione dei record
+- Sicurezza delle app di Microsoft Cloud
 
 ### <a name="format"></a>Formato
 
@@ -10199,26 +10620,48 @@ No
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
 - L'espressione regolare  `Regex_portugal_eu_passport_number` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola chiave from  `Keywords_portugal_eu_passport_number` . 
+- Una parola chiave da  `Keywords_eu_passport_number_common` o `Keywords_portugal_eu_passport_number` viene trovata. 
     
 ```xml
  <!-- EU Passport Number -->
 <Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_portugal_eu_passport_number" />
-          <Match idRef="Keywords_portugal_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_portugal_eu_passport_number" />
+          </Any>
         </Pattern>
 </Entity>
 ```
 
 ### <a name="keywords"></a>Parole chiave
 
+#### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
+
+- passaporto #
+- passaporto #
+- passportid
+- passaporti
+- passportno
+- Passport No
+- passportnumber
+- numero di passaporto
+- passportnumbers
+- numeri di passaporto
+
 #### <a name="keywords_portugal_eu_passport_number"></a>Keywords_portugal_eu_passport_number
 
-- passport number
-- numero di passaporto portoghese
-- Passport No
 - número do passaporte
+- passaporto portoghese
+- Passeport portoghese
+- passaporte portoghese
+- passaporte n º
+- Passeport n º
+- números de passaporte
+- passaporti portoghesi
+- número passaporte
+- números passaporte
 
 ## <a name="portugal-tax-identification-number"></a>Portogallo codice di identificazione fiscale
 
@@ -10342,6 +10785,12 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - Permis de conducere
 
 ## <a name="romania-personal-numeric-code-cnp"></a>Codice numerico personale Romania (CNP)
+Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
+- criteri di prevenzione della perdita di dati
+- criteri di conformità della comunicazione
+- governance delle informazioni
+- gestione dei record
+- Sicurezza delle app di Microsoft Cloud
 
 ### <a name="format"></a>Formato
 
@@ -10454,29 +10903,47 @@ No
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
 - L'espressione regolare  `Regex_romania_eu_passport_number` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola chiave from  `Keywords_romania_eu_passport_number` . 
+- Una parola chiave da  `Keywords_eu_passport_number_common` o `Keywords_romania_eu_passport_number` viene trovata. 
     
 ```xml
  <!-- EU Passport Number -->
 <Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_romania_eu_passport_number" />
-          <Match idRef="Keywords_romania_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_romania_eu_passport_number" />
+          </Any>
         </Pattern>
 </Entity>
 ```
 
 ### <a name="keywords"></a>Parole chiave
 
+#### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
+
+- passaporto #
+- passaporto #
+- passportid
+- passaporti
+- passportno
+- Passport No
+- passportnumber
+- numero di passaporto
+- passportnumbers
+- numeri di passaporto
+
 #### <a name="keywords_romania_eu_passport_number"></a>Keywords_romania_eu_passport_number
 
-- passport number
-- numero di passaporto rumeno
-- Passport No
-- numărul pașaportului
-
+numarul pașaportului numărul pasaportului numerele pașaportului Pașaport Nr
 
 ## <a name="russia-passport-number-domestic"></a>Numero di passaporto russo nazionale
+Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
+- criteri di prevenzione della perdita di dati
+- criteri di conformità della comunicazione
+- governance delle informazioni
+- gestione dei record
+- Sicurezza delle app di Microsoft Cloud
 
 ### <a name="format"></a>Formato
 
@@ -10533,6 +11000,12 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 
 
 ## <a name="russia-passport-number-international"></a>Numero di passaporto russo International
+Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
+- criteri di prevenzione della perdita di dati
+- criteri di conformità della comunicazione
+- governance delle informazioni
+- gestione dei record
+- Sicurezza delle app di Microsoft Cloud
 
 ### <a name="format"></a>Formato
 
@@ -10735,6 +11208,12 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - vodičský preukaz
 
 ## <a name="slovakia-personal-number"></a>Slovacchia-numero personale
+Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
+- criteri di prevenzione della perdita di dati
+- criteri di conformità della comunicazione
+- governance delle informazioni
+- gestione dei record
+- Sicurezza delle app di Microsoft Cloud
 
 ### <a name="format"></a>Formato
 
@@ -10845,27 +11324,43 @@ No
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
 - L'espressione regolare  `Regex_slovakia_eu_passport_number` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola chiave from  `Keywords_slovakia_eu_passport_number` . 
+- Una parola chiave da  `Keywords_eu_passport_number_common` o `Keywords_slovakia_eu_passport_number` viene trovata. 
     
 ```xml
  <!-- EU Passport Number -->
 <Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_slovakia_eu_passport_number" />
-          <Match idRef="Keywords_slovakia_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_slovakia_eu_passport_number" />
+          </Any>
         </Pattern>
 </Entity>
 ```
 
 ### <a name="keywords"></a>Parole chiave
 
+#### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
+
+- passaporto #
+- passaporto #
+- passportid
+- passaporti
+- passportno
+- Passport No
+- passportnumber
+- numero di passaporto
+- passportnumbers
+- numeri di passaporto
+
 #### <a name="keywords_slovakia_eu_passport_number"></a>Keywords_slovakia_eu_passport_number
 
-- passport number
-- numero di passaporto slovacco
-- Passport No
 - číslo Pasu
-
+- čísla pasov
+- pas č.
+- Passeport n °
+- n ° Passeport
 
 ## <a name="slovenia-drivers-license-number"></a>Numero della patente di guida sloveno
 Questa entità di tipo di informazioni riservate è disponibile solo nel tipo di informazioni riservate del conducente dell'Unione europea.
@@ -10917,6 +11412,12 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - vozniško dovoljenje
 
 ## <a name="slovenia-unique-master-citizen-number"></a>Slovenia numero di cittadini Master Unique
+Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
+- criteri di prevenzione della perdita di dati
+- criteri di conformità della comunicazione
+- governance delle informazioni
+- gestione dei record
+- Sicurezza delle app di Microsoft Cloud
 
 ### <a name="format"></a>Formato
 
@@ -11012,28 +11513,52 @@ No
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
 - L'espressione regolare  `Regex_slovenia_eu_passport_number` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola chiave from  `Keywords_slovenia_eu_passport_number` . 
+- Una parola chiave da  `Keywords_eu_passport_number_common` o `Keywords_slovenia_eu_passport_number` viene trovata. 
     
 ```xml
  <!-- EU Passport Number -->
 <Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_slovenia_eu_passport_number" />
-          <Match idRef="Keywords_slovenia_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_slovenia_eu_passport_number" />
+          </Any>
         </Pattern>
 </Entity>
 ```
 
 ### <a name="keywords"></a>Parole chiave
 
+#### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
+
+- passaporto #
+- passaporto #
+- passportid
+- passaporti
+- passportno
+- Passport No
+- passportnumber
+- numero di passaporto
+- passportnumbers
+- numeri di passaporto
+
 #### <a name="keywords_slovenia_eu_passport_number"></a>Keywords_slovenia_eu_passport_number
 
-- passport number
-- numero di passaporto sloveno
-- Passport No
 - številka potnega lista
+- Potek veljavnosti
+- elenco potni #
+- rojstva Datum
+- elenco potni
+- številke potnih listov
 
 ## <a name="slovenia-tax-identification-number"></a>Slovenia-numero di identificazione fiscale
+Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
+- criteri di prevenzione della perdita di dati
+- criteri di conformità della comunicazione
+- governance delle informazioni
+- gestione dei record
+- Sicurezza delle app di Microsoft Cloud
 
 ### <a name="format"></a>Formato
 
@@ -11271,6 +11796,12 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - carnet conducir
 
 ## <a name="spain-dni"></a>DNI Spagna
+Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
+- criteri di prevenzione della perdita di dati
+- criteri di conformità della comunicazione
+- governance delle informazioni
+- gestione dei record
+- Sicurezza delle app di Microsoft Cloud
 
 ### <a name="format"></a>Formato
 
@@ -11367,31 +11898,50 @@ Non applicabile
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
 - L'espressione regolare  `Regex_spain_eu_passport_number` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola chiave from  `Keywords_spain_eu_passport_number` . 
+- Una parola chiave da  `Keywords_eu_passport_number_common` o `Keywords_spain_eu_passport_number` viene trovata. 
     
 ```xml
  <!-- EU Passport Number -->
 <Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_spain_eu_passport_number" />
-          <Match idRef="Keywords_spain_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_spain_eu_passport_number" />
+          </Any>
         </Pattern>
 </Entity>
 ```
 
 ### <a name="keywords"></a>Parole chiave
 
+#### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
+
+- passaporto #
+- passaporto #
+- passportid
+- passaporti
+- passportno
+- Passport No
+- passportnumber
+- numero di passaporto
+- passportnumbers
+- numeri di passaporto
+
 #### <a name="keywords_spain_eu_passport_number"></a>Keywords_spain_eu_passport_number
 
-- passaporto
-- passaporto della Spagna
-- libro del passaporto
-- passport number
-- Passport No
 - libreta pasaporte
 - número pasaporte
 - pasaporte España
-- pasaporte
+- números de pasaporte
+- número de pasaporte
+- números pasaporte
+- pasaporte No
+- Passeport n °
+- n ° Passeport
+- pasaporte No.
+- pasaporte n °
+- passaporto della Spagna
 
 
 ## <a name="spain-social-security-number-ssn"></a>Spagna-codice di previdenza sociale (SSN)
@@ -11434,6 +11984,12 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%,
 Nessuno
 
 ## <a name="spain-tax-identification-number"></a>Spagna-codice fiscale
+Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
+- criteri di prevenzione della perdita di dati
+- criteri di conformità della comunicazione
+- governance delle informazioni
+- gestione dei record
+- Sicurezza delle app di Microsoft Cloud
 
 ### <a name="format"></a>Formato
 
@@ -11865,6 +12421,12 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - identifikationsnumret #
 
 ## <a name="sweden-tax-identification-number"></a>Svezia-codice fiscale
+Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
+- criteri di prevenzione della perdita di dati
+- criteri di conformità della comunicazione
+- governance delle informazioni
+- gestione dei record
+- Sicurezza delle app di Microsoft Cloud
 
 ### <a name="format"></a>Formato
 
@@ -12012,7 +12574,13 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - code identificateur de banque 
 
 
-## <a name="swiss-ssn-ahv-number"></a>Numero dell'AVS svizzero (SSN)
+## <a name="switzerland-ssn-ahv-number"></a>Svizzera SSN numero dell'AVS
+Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
+- criteri di prevenzione della perdita di dati
+- criteri di conformità della comunicazione
+- governance delle informazioni
+- gestione dei record
+- Sicurezza delle app di Microsoft Cloud
 
 ### <a name="format"></a>Formato
 
@@ -12595,6 +13163,12 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 
     
 ## <a name="uk-unique-taxpayer-reference-number"></a>U.K. Numero di riferimento del contribuente univoco
+Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
+- criteri di prevenzione della perdita di dati
+- criteri di conformità della comunicazione
+- governance delle informazioni
+- gestione dei record
+- Sicurezza delle app di Microsoft Cloud
 
 ### <a name="format"></a>Formato
 
@@ -13089,6 +13663,12 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - Passeportn ° 
 
 ## <a name="ukraine-passport-domestic"></a>Passaporto ucraino nazionale
+Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
+- criteri di prevenzione della perdita di dati
+- criteri di conformità della comunicazione
+- governance delle informazioni
+- gestione dei record
+- Sicurezza delle app di Microsoft Cloud
 
 ### <a name="format"></a>Formato
 
@@ -13131,6 +13711,12 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 
 
 ## <a name="ukraine-passport-international"></a>Ukraine Passport International
+Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
+- criteri di prevenzione della perdita di dati
+- criteri di conformità della comunicazione
+- governance delle informazioni
+- gestione dei record
+- Sicurezza delle app di Microsoft Cloud
 
 ### <a name="format"></a>Formato
 
