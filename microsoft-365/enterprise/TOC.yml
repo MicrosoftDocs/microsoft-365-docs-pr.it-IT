@@ -269,6 +269,8 @@
       items:
         - name: Aggiungere un dominio
           href: 'https://docs.microsoft.com/microsoft-365/admin/setup/add-domain'
+        - name: Guide alla configurazione
+          href: setup-guides-for-microsoft-365.md
     - name: Più tenant
       items:
         - name: Collaborazione tra tenant
@@ -355,39 +357,41 @@
         - name: Identità solo cloud
           href: cloud-only-identities.md
         - name: Identità ibrida
-          href: prepare-for-directory-synchronization.md
-        - name: Preparare un dominio non instradabile per la sincronizzazione della directory
-          href: prepare-a-non-routable-domain-for-directory-synchronization.md
-        - name: Configurare la sincronizzazione della directory
-          href: set-up-directory-synchronization.md
-        - name: Proteggi accessi utente
-          href: microsoft-365-secure-sign-in.md
-        - name: Soluzioni ibride
           items:
-            - name: Panoramica
-              href: hybrid-solutions.md
-            - name: Usare Azure Active Directory per l'autenticazione di SharePoint Server 2016
-              href: using-azure-ad-for-sharepoint-server-authentication.md
-            - name: Connettere una rete locale a una rete virtuale di Azure
-              href: connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md
-            - name: Distribuire un server di sincronizzazione directory in Azure IaaS
-              href: deploy-microsoft-365-directory-synchronization-dirsync-in-microsoft-azure.md
-            - name: Distribuire l'autenticazione federata a disponibilità elevata in Azure
-              href: deploy-high-availability-federated-authentication-for-microsoft-365-in-azure.md
+            - name: Predisporre la sincronizzazione della directory
+              href: prepare-for-directory-synchronization.md
+            - name: Preparare un dominio non instradabile per la sincronizzazione della directory
+              href: prepare-a-non-routable-domain-for-directory-synchronization.md
+            - name: Configurare la sincronizzazione della directory
+              href: set-up-directory-synchronization.md
+            - name: Soluzioni ibride
               items:
-                - name: Fase 1 - Configurare Azure
-                  href: high-availability-federated-authentication-phase-1-configure-azure.md
-                - name: Fase 2 - Configurare i controller di dominio
-                  href: high-availability-federated-authentication-phase-2-configure-domain-controllers.md
-                - name: Fase 3 - Configurare i server AD FS
-                  href: high-availability-federated-authentication-phase-3-configure-ad-fs-servers.md
-                - name: Fase 4 - Configurare i proxy applicazione Web
-                  href: high-availability-federated-authentication-phase-4-configure-web-application-pro.md
-                - name: Fase 5 - Configurare l'autenticazione federata
-                  href: high-availability-federated-authentication-phase-5-configure-federated-authentic.md
-            - name: Ripristino di emergenza di SharePoint Server 2013 in Microsoft Azure
-              href: sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md
-    - name: Gestione
+                - name: Panoramica
+                  href: hybrid-solutions.md
+                - name: Usare Azure Active Directory per l'autenticazione di SharePoint Server 2016
+                  href: using-azure-ad-for-sharepoint-server-authentication.md
+                - name: Connettere una rete locale a una rete virtuale di Azure
+                  href: connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md
+                - name: Distribuire un server di sincronizzazione directory in Azure IaaS
+                  href: deploy-microsoft-365-directory-synchronization-dirsync-in-microsoft-azure.md
+                - name: Distribuire l'autenticazione federata a disponibilità elevata in Azure
+                  href: deploy-high-availability-federated-authentication-for-microsoft-365-in-azure.md
+                  items:
+                    - name: Fase 1 - Configurare Azure
+                      href: high-availability-federated-authentication-phase-1-configure-azure.md
+                    - name: Fase 2 - Configurare i controller di dominio
+                      href: high-availability-federated-authentication-phase-2-configure-domain-controllers.md
+                    - name: Fase 3 - Configurare i server AD FS
+                      href: high-availability-federated-authentication-phase-3-configure-ad-fs-servers.md
+                    - name: Fase 4 - Configurare i proxy applicazione Web
+                      href: high-availability-federated-authentication-phase-4-configure-web-application-pro.md
+                    - name: Fase 5 - Configurare l'autenticazione federata
+                      href: high-availability-federated-authentication-phase-5-configure-federated-authentic.md
+                - name: Ripristino di emergenza di SharePoint Server 2013 in Microsoft Azure
+                  href: sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md
+        - name: Proteggere gli accessi utente
+          href: microsoft-365-secure-sign-in.md
+    - name: Gestire
       items:
         - name: Assegnare licenze agli account utente
           href: assign-licenses-to-user-accounts.md
@@ -565,7 +569,7 @@
               href: block-user-accounts-with-microsoft-365-powershell.md
         - name: Licenze e servizi
           items:
-            - name: Visualizza
+            - name: Visualizzare le licenze e i servizi
               href: view-licenses-and-services-with-microsoft-365-powershell.md
             - name: Visualizzare gli utenti con licenza e senza licenza
               href: view-licensed-and-unlicensed-users-with-microsoft-365-powershell.md
@@ -573,6 +577,8 @@
               href: assign-licenses-to-user-accounts-with-microsoft-365-powershell.md
             - name: Visualizzare la licenza dell'account e i dettagli di servizio
               href: view-account-license-and-service-details-with-microsoft-365-powershell.md
+            - name: Rimuovere licenze dagli account utente
+              href: remove-licenses-from-user-accounts-with-microsoft-365-powershell.md
             - name: Disabilitare l'accesso ai servizi
               href: disable-access-to-services-with-microsoft-365-powershell.md
               items:
@@ -580,8 +586,6 @@
                   href: disable-access-to-sway-with-microsoft-365-powershell.md
                 - name: Disabilitare l'accesso ai servizi durante l'assegnazione di licenze utente
                   href: disable-access-to-services-while-assigning-user-licenses.md
-                - name: Rimuovere licenze dagli account utente
-                  href: remove-licenses-from-user-accounts-with-microsoft-365-powershell.md
         - name: Gruppi
           items:
             - name: Gestire l'appartenenza ai gruppi
