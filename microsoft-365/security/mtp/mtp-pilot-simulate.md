@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: f7d00575a0a5757f0662c07e727d7166d571e2ca
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 8d4eb6cedbfa9a74eccdbb94e71f9eb32189ccbb
+ms.sourcegitcommit: 1423e08a02d30f0a2b993fb99325c3f499c31787
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48201196"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "48277550"
 ---
 # <a name="run-your-microsoft-threat-protection-attack-simulations"></a>Eseguire le simulazioni di attacco di Microsoft Threat Protection  
 
@@ -48,7 +48,7 @@ Durante la simulazione, l'attacco inietta shellcode in un processo apparentement
 
 Poiché è già stato configurato l'ambiente pilota durante la fase di preparazione, verificare di disporre di due dispositivi per questo scenario: un dispositivo di test e un controller di dominio.
 
-1.  Verificare che il tenant disponga di [protezione](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-enable#starting-the-service).
+1.  Verificare che il tenant abbia [abilitato Microsoft Threat Microsoft Threat Protection](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-enable#starting-the-service).
 2.  Verificare la configurazione del controller di dominio di testing:
     - Il dispositivo viene eseguito con Windows Server 2008 R2 o versione successiva.
     - Il controller di dominio di testing per [Azure Advanced Threat Protection](https://docs.microsoft.com/azure/security-center/security-center-wdatp) e abilitare la [gestione remota](https://docs.microsoft.com/windows-server/administration/server-manager/configure-remote-management-in-server-manager).    

@@ -14,12 +14,12 @@ ms.custom:
 - it-pro
 ms.collection:
 - M365-subscription-management
-ms.openlocfilehash: f649a72dc5569e8aec46347df295aa3ff9d93613
-ms.sourcegitcommit: 327163f70eac0de568ebe3c9a97a744c3ed408cb
+ms.openlocfilehash: 06a82fda31e602ed2feb53d00e8839daf801bf7e
+ms.sourcegitcommit: 1423e08a02d30f0a2b993fb99325c3f499c31787
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48177172"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "48277495"
 ---
 # <a name="cross-tenant-mailbox-migration-preview"></a>Migrazione delle cassette postali tra tenant (anteprima)
 
@@ -57,12 +57,12 @@ Per ottenere l'ID tenant di un abbonamento, accedere all'interfaccia di amminist
 
 Di seguito viene illustrato il funzionamento del processo.
 
-:::image type="content" source="../media/tenant-to-tenant-mailbox-move/prepare-tenants-flow.svg" alt-text="Preparazione del tenant per la migrazione delle cassette postali.":::
+:::image type="content" source="../media/tenant-to-tenant-mailbox-move/prepare-tenants-flow.png" alt-text="Preparazione del tenant per la migrazione delle cassette postali.":::
 
 <!--
-[![Tenant preparation for mailbox migration](../media/tenant-to-tenant-mailbox-move/prepare-tenants-flow.svg)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/tenant-to-tenant-mailbox-move/prepare-tenants-flow.svg)
+[![Tenant preparation for mailbox migration](../media/tenant-to-tenant-mailbox-move/prepare-tenants-flow.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/tenant-to-tenant-mailbox-move/prepare-tenants-flow.png)
 
-[See a larger version of this image](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/tenant-to-tenant-mailbox-move/prepare-tenants-flow.svg).
+[See a larger version of this image](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/tenant-to-tenant-mailbox-move/prepare-tenants-flow.png).
 --> 
 
 ### <a name="prepare-tenants"></a>Preparare i tenant
@@ -162,11 +162,11 @@ La configurazione dell'amministratore di destinazione è ora completata.
 
 1.  Accedere alla cassetta postale come-ResourceTenantAdminEmail specificata dall'amministratore di destinazione durante la configurazione. Trovare l'invito di posta elettronica dal tenant di destinazione, quindi selezionare il pulsante **inizia** .
 
-    :::image type="content" source="../media/tenant-to-tenant-mailbox-move/invited-by-target-tenant.png" alt-text="Finestra di dialogo invided":::
+    :::image type="content" source="../media/tenant-to-tenant-mailbox-move/invited-by-target-tenant.png" alt-text="Finestra di dialogo invitato.":::
 
 2. Selezionare **accetta** per accettare l'invito.
 
-    :::image type="content" source="../media/tenant-to-tenant-mailbox-move/permissions-requested-accept.png" alt-text="Finestra di dialogo per accettare permissons":::
+    :::image type="content" source="../media/tenant-to-tenant-mailbox-move/permissions-requested-accept.png" alt-text="Finestra di dialogo per accettare le autorizzazioni":::
 
    > [!NOTE]
    > Se non si riceve questo messaggio di posta elettronica o non è possibile trovarlo, l'amministratore del tenant di destinazione ha fornito un URL diretto che può essere assegnato all'utente per accettare l'invito. L'URL dovrebbe essere nella sezione nella trascrizione della sessione remota di PowerShell dell'amministratore del tenant di destinazione.
