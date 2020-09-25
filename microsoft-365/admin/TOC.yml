@@ -218,6 +218,8 @@
           href: setup/upgrade-users-to-latest-office-client.md
         - name: Requisiti per la distribuzione centralizzata dei componenti aggiuntivi
           href: manage/centralized-deployment-of-add-ins.md
+        - name: Gestire le notizie di settore
+          href: manage/manage-industry-news.md
         - name: Distribuire i componenti aggiuntivi nell'interfaccia di amministrazione
           href: manage/manage-deployment-of-add-ins.md
         - name: Gestire i componenti aggiuntivi nell'interfaccia di amministrazione
