@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Le valutazioni di compilazione in Microsoft Compliance Manager consentono di soddisfare i requisiti di normative e certificazioni importanti per la propria organizzazione.
-ms.openlocfilehash: 5bbdba66d2288c173827062aade3bbd196d77040
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: d09103f58be3a5fa39b57ca35da411e8046aace5
+ms.sourcegitcommit: 61d7284b412d0f7bbd8bbb2225c2e6324f86b717
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48204459"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "48262291"
 ---
 # <a name="build-and-manage-assessments-in-compliance-manager"></a>Creare e gestire valutazioni in Compliance Manager
 
@@ -206,6 +206,9 @@ Per eliminare una valutazione, attenersi alla procedura seguente:
 3. Verrà visualizzata una finestra in cui viene chiesto di confermare che si desidera eliminare definitivamente la valutazione. Selezionare **Elimina valutazione** per chiudere la finestra. Si otterrà una finestra di conferma che la valutazione è stata eliminata da Compliance Manager.
 
 Se si elimina l'unica valutazione in un gruppo, tale gruppo viene eliminato anche da Compliance Manager.
+
+> [!NOTE]
+> Non è possibile eliminare tutte le valutazioni. Le organizzazioni hanno bisogno di almeno una valutazione per il corretto funzionamento di Compliance Manager. Se la valutazione che si desidera eliminare è l'unica, aggiungere un'altra valutazione prima di eliminare l'altra valutazione.
 
 ## <a name="monitor-assessment-progress-and-controls"></a>Monitorare lo stato e i controlli di valutazione
 

@@ -15,17 +15,19 @@ search.appverid:
 - MET150
 description: Comprendere in che modo Microsoft Compliance Manager calcola un punteggio personalizzato in base alle azioni intraprese per risolvere i rischi e migliorare la propria postura di conformità.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 9fd71b4953dc40a3c1e7601f42f595488fcef98b
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: f1707e0117d0a61f572716f21d13a02821955401
+ms.sourcegitcommit: 61d7284b412d0f7bbd8bbb2225c2e6324f86b717
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48204411"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "48262269"
 ---
 # <a name="compliance-score-calculation"></a>Calcolo del Punteggio di conformità
 
+**In questo articolo:** Informazioni su come Compliance Manager calcola un punteggio di conformità per l'organizzazione. In questo articolo viene illustrato come **interpretare il Punteggio**, quali sono le valutazioni della linea di base per la **protezione dei dati** , il **monitoraggio continuo**e il modo in cui i **diversi tipi di azioni vengono gestiti e segnati**.
+
 > [!IMPORTANT]
-> I suggerimenti di Compliance Manager non devono essere interpretati come garanzia di conformità. Spetta a te valutare e convalidare l'efficacia dei controlli del cliente per il tuo ambiente normativo. Questi servizi sono soggetti ai termini e alle condizioni nelle condizioni dei [servizi online](https://go.microsoft.com/fwlink/?linkid=2108910). Vedere anche [linee guida per la gestione delle licenze di Microsoft 365 per sicurezza e conformità](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
+> I consigli di Compliance Manager non devono essere interpretati come una garanzia di conformità. Spetta a te valutare e convalidare l'efficacia dei controlli del cliente per il tuo ambiente normativo. Questi servizi sono soggetti ai termini e alle condizioni nelle condizioni dei [servizi online](https://go.microsoft.com/fwlink/?linkid=2108910). Vedere anche [linee guida per la gestione delle licenze di Microsoft 365 per sicurezza e conformità](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
 
 ## <a name="how-to-read-your-compliance-score"></a>Come leggere il Punteggio di conformità
 

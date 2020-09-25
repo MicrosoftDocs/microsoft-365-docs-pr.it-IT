@@ -11,13 +11,13 @@ ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
-description: Gli amministratori possono configurare un connettore per l'importazione e l'archiviazione dei dati da Globanet Slack in Microsoft 365. Questo connettore consente di archiviare i dati provenienti da origini dati di terze parti in Microsoft 365, in modo da poter utilizzare le funzionalità di conformità, come la conservazione legale, la ricerca di contenuto e i criteri di ritenzione per gestire i dati di terze parti dell'organizzazione.
-ms.openlocfilehash: 532b8a8eb4331d66e1c7522d79bde2b5b6b0a02f
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+description: Gli amministratori possono configurare un connettore per l'importazione e l'archiviazione dei dati da Globanet Slack in Microsoft 365. Questo connettore dati consente di archiviare i dati provenienti da origini dati di terze parti in Microsoft 365, in modo da poter utilizzare le funzionalità di conformità, come la conservazione legale, la ricerca di contenuto e i criteri di ritenzione per gestire i dati di terze parti dell'organizzazione.
+ms.openlocfilehash: 7c796c16b5a4b305c5d4b5259337ca28d9bfde9a
+ms.sourcegitcommit: 96b4593becc9450af136c528844e858c6e88b5a9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48196768"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "48269456"
 ---
 # <a name="set-up-a-connector-to-archive-slack-data"></a>Configurare un connettore per archiviare i dati di rallentamento
 

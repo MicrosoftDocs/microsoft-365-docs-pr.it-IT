@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: ed48d448-3714-4c42-85f5-10f75f6a4278
 description: 'Esportare i risultati della ricerca da una ricerca contenuto nel centro sicurezza & conformità a un computer locale. I risultati della posta elettronica vengono esportati come file PST. I contenuti dei siti di SharePoint e OneDrive for business vengono esportati come documenti di Office nativi. '
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 97073c95af986afcbe932dfc2b5bc840d5e2dc5c
-ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
+ms.openlocfilehash: 59b0d723c93bddd607c12172ee0fed81650a09b0
+ms.sourcegitcommit: 96b4593becc9450af136c528844e858c6e88b5a9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47357934"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "48269595"
 ---
 # <a name="export-content-search-results"></a>Esportare i risultati di Ricerca contenuto
 
@@ -71,7 +71,7 @@ L'esportazione dei risultati di una ricerca di contenuto comporta la preparazion
     
     Aggiungere le righe seguenti al file  *machine.config*  da qualche parte tra  `<configuration>` i  `</configuration>` tag e. Assicurarsi di sostituire  `ProxyServer` e  `Port` con i valori corretti per l'organizzazione, ad esempio,  `proxy01.contoso.com:80` . 
     
-    ```text
+    ```xml
     <system.net>
        <defaultProxy enabled="true" useDefaultCredentials="true">
          <proxy proxyaddress="https://ProxyServer :Port " 
@@ -157,25 +157,27 @@ Come spiegato in precedenza, è possibile aumentare la velocità di download con
 2. In **Chiave di esportazione**, fare clic su **Copia negli Appunti**. Utilizzare questa chiave nel passaggio 5 per scaricare i risultati della ricerca.
     
     > [!NOTE]
-    > Poiché chiunque può installare e avviare lo strumento di esportazione eDiscovery e quindi utilizzare questa chiave per scaricare i risultati della ricerca, è bene assicurarsi di adottare alcune precauzioni per proteggere la chiave così come si proteggono le password o altre informazioni relative alla sicurezza.  
+    > Poiché chiunque può installare e avviare lo strumento di esportazione eDiscovery e quindi utilizzare questa chiave per scaricare i risultati della ricerca, è bene assicurarsi di adottare alcune precauzioni per proteggere la chiave così come si proteggono le password o altre informazioni relative alla sicurezza. 
   
 3. Fai clic su **Scarica risultati**.
-    
-4. Se viene richiesto di installare lo **strumento di esportazione di eDiscovery**, fare clic su **Installa**.
-    
-5. Nello **Strumento di esportazione eDiscovery**, incollare la chiave di esportazione copiata nel passaggio 2 nella casella appropriata.
-    
-6. Fare clic su **Sfoglia** per specificare il percorso in cui si desidera scaricare i file dei risultati della ricerca. 
-    
-    > [!NOTE]
-    > A causa dell'elevato numero di attività del disco (letture e scritture), è necessario scaricare i risultati della ricerca in un'unità disco locale. non scaricarli in un'unità di rete mappata o in un altro percorso di rete. 
-  
-1. Fare clic su **Avvia** per scaricare i risultati della ricerca nel computer. 
-    
-    Lo **Strumento di esportazione eDiscovery** consente di visualizzare informazioni sullo stato delle informazioni relative al processo di esportazione, incluso il numero stimato (e le dimensioni) degli elementi rimanenti da scaricare. Al termine del processo di esportazione, è possibile accedere ai file nel percorso in cui sono stati scaricati. 
-    
 
+4. Se viene richiesto di installare lo **strumento di esportazione di eDiscovery**, fare clic su **Installa**.
+
+5. Nello **strumento di esportazione di eDiscovery**eseguire le operazioni seguenti:
+
+   ![Strumento di esportazione di eDiscovery](../media/eDiscoveryExportTool.png)
+
+   1. Incollare la chiave di esportazione copiata nel passaggio 2 nell'apposita casella.
+    
+   2. Fare clic su **Sfoglia** per specificare il percorso in cui si desidera scaricare i file dei risultati della ricerca.
+    
+      > [!NOTE]
+      > A causa dell'elevato numero di attività del disco (letture e scritture), è necessario scaricare i risultati della ricerca in un'unità disco locale. non scaricarli in un'unità di rete mappata o in un altro percorso di rete. 
   
+6. Fare clic su **Avvia** per scaricare i risultati della ricerca nel computer.
+    
+    Lo **Strumento di esportazione eDiscovery** consente di visualizzare informazioni sullo stato delle informazioni relative al processo di esportazione, incluso il numero stimato (e le dimensioni) degli elementi rimanenti da scaricare. Al termine del processo di esportazione, è possibile accedere ai file nel percorso in cui sono stati scaricati.
+
 ## <a name="more-information"></a>Ulteriori informazioni
 
 Di seguito sono riportate altre informazioni sull'esportazione dei risultati della ricerca.
@@ -188,23 +190,27 @@ Di seguito sono riportate altre informazioni sull'esportazione dei risultati del
 
 [Esportazione di singoli messaggi o file PST](#exporting-individual-messages-or-pst-files)
   
+[Esportazione dei risultati da più di 100.000 cassette postali](#exporting-results-from-more-than-100000-mailboxes)
+
 [Decrittografia dei messaggi crittografati con RMS](#decrypting-rms-encrypted-messages)
 
 [Nomi di file degli elementi esportati](#filenames-of-exported-items)  
   
 [Varie](#miscellaneous)
   
- ### <a name="export-limits"></a>Limiti di esportazione
+### <a name="export-limits"></a>Limiti di esportazione
   
 - L'esportazione dei risultati di ricerca dal centro sicurezza & conformità presenta i seguenti limiti:
-    
+
   - È possibile esportare un massimo di 2 TB di dati da una singola ricerca di contenuto. Se i risultati della ricerca sono superiori a 2 TB, prendere in considerazione l'utilizzo di intervalli di date o di altri tipi di filtri per ridurre le dimensioni totali dei risultati della ricerca.
-    
+  
   - L'organizzazione può esportare un massimo di 2 TB di dati in un solo giorno.
-    
+  
   - È possibile eseguire un massimo di 10 esportazioni contemporaneamente all'interno dell'organizzazione.
-    
+
   - Un singolo utente può eseguire contemporaneamente un massimo di tre esportazioni.
+  
+  - È possibile scaricare i risultati della ricerca da un massimo di 100.000 cassette postali utilizzando lo strumento di esportazione di eDiscovery nel centro sicurezza & conformità di Office 365 o nel centro conformità di Microsoft 365. Per scaricare i risultati della ricerca da più di 100.000 cassette postali, è necessario utilizzare la sicurezza & Compliance Center PowerShell. Per istruzioni, vedere [esportazione dei risultati da più di 100.000 cassette postali](#exporting-results-from-more-than-100000-mailboxes).
 
   > [!NOTE]
   > L'esportazione solo dei rapporti da una ricerca di contenuto conta anche sul numero di esportazioni in esecuzione contemporaneamente e sul numero di esportazioni che un singolo utente può eseguire.
@@ -215,15 +221,15 @@ Di seguito sono riportate altre informazioni sull'esportazione dei risultati del
     
     Inoltre, i risultati della ricerca di una cassetta postale specifica non verranno divisi tra più file PST, a meno che il contenuto di una singola cassetta postale sia superiore a 10 GB. Se si è scelto di esportare i risultati della ricerca in un file PST per che contiene tutti i messaggi in una singola cartella e i risultati della ricerca sono superiori a 10 GB, gli elementi sono ancora organizzati in ordine cronologico, in modo che vengano suddivisi in file PST aggiuntivi in base alla data di invio.
      
- ### <a name="export-reports"></a>Esporta rapporti
+### <a name="export-reports"></a>Esporta rapporti
   
 - Quando si esportano i risultati della ricerca, vengono inclusi i rapporti seguenti oltre ai risultati della ricerca.
     
-  - **Riepilogo esportazione** Documento di Excel che contiene un riepilogo dell'esportazione. Sono incluse informazioni quali il numero di origini di contenuto che sono state cercate, le dimensioni stimate e scaricate dei risultati della ricerca e il numero stimato e scaricato degli elementi esportati. 
+  - **Riepilogo esportazione** Documento di Excel che contiene un riepilogo dell'esportazione. Sono incluse informazioni quali il numero di origini di contenuto che sono state cercate, le dimensioni stimate e scaricate dei risultati della ricerca e il numero stimato e scaricato degli elementi esportati.
     
-  - **Manifesto** File manifesto (in formato XML) che contiene informazioni su ogni elemento incluso nei risultati della ricerca. 
+  - **Manifesto** File manifesto (in formato XML) che contiene informazioni su ogni elemento incluso nei risultati della ricerca.
     
-  - **Risultati** della ricerca Documento di Excel che contiene informazioni su ogni elemento che viene scaricato come risultato della ricerca. Per la posta elettronica, il log dei risultati contiene informazioni su ogni messaggio, tra cui: 
+  - **Risultati** della ricerca Documento di Excel che contiene informazioni su ogni elemento che viene scaricato come risultato della ricerca. Per la posta elettronica, il log dei risultati contiene informazioni su ogni messaggio, tra cui:
     
       - Il percorso del messaggio nella cassetta postale di origine (e se il messaggio è nella cassetta postale principale o di archiviazione).
         
@@ -256,7 +262,7 @@ Di seguito sono riportate altre informazioni sull'esportazione dei risultati del
     > [!NOTE]
     > È possibile esportare solo questi documenti senza dover esportare i risultati della ricerca effettivi. Vedere [esportare un rapporto di ricerca contenuto](export-a-content-search-report.md). 
   
- ### <a name="exporting-partially-indexed-items"></a>Esportazione di elementi parzialmente indicizzati
+### <a name="exporting-partially-indexed-items"></a>Esportazione di elementi parzialmente indicizzati
   
 - Se si stanno esportando elementi della cassetta postale da una ricerca di contenuto che restituisce tutti gli elementi delle cassette postali nei risultati della ricerca (perché nessuna parola chiave dove è inclusa nella query di ricerca), gli elementi parzialmente indicizzati non verranno copiati nel file PST che contiene gli elementi non indicizzati. Ciò è dovuto al fatto che tutti gli elementi, compresi gli elementi parzialmente indicizzati, vengono inclusi automaticamente nei risultati di ricerca normali. Questo significa che gli elementi parzialmente indicizzati verranno inclusi in un file PST (o come singoli messaggi) che contiene gli altri elementi indicizzati.
     
@@ -275,11 +281,11 @@ Di seguito sono riportate altre informazioni sull'esportazione dei risultati del
     ![Scegliere l'opzione di esportazione in base al fatto che un sito contenga un elemento indicizzato che corrisponda ai criteri di ricerca.](../media/94f78786-c6bb-42fb-96b3-7ea3998bcd39.png)
 
     
-    a. Vengono esportati solo gli elementi indicizzati che soddisfano i criteri di ricerca. Non vengono esportati elementi parzialmente indicizzati.
+    1. Vengono esportati solo gli elementi indicizzati che soddisfano i criteri di ricerca. Non vengono esportati elementi parzialmente indicizzati.
     
-    b. Se non sono presenti elementi indicizzati provenienti da un sito che soddisfano i criteri di ricerca, gli elementi parzialmente indicizzati provenienti dallo stesso sito non vengono esportati. Se nei risultati della ricerca vengono restituiti elementi indicizzati provenienti da un sito, gli elementi parzialmente indicizzati provenienti da tale sito vengono esportati. In altre parole, vengono esportati solo gli elementi parzialmente indicizzati provenienti da siti che contengono elementi che soddisfano i criteri di ricerca.
+    1. Se non sono presenti elementi indicizzati provenienti da un sito che soddisfano i criteri di ricerca, gli elementi parzialmente indicizzati provenienti dallo stesso sito non vengono esportati. Se nei risultati della ricerca vengono restituiti elementi indicizzati provenienti da un sito, gli elementi parzialmente indicizzati provenienti da tale sito vengono esportati. In altre parole, vengono esportati solo gli elementi parzialmente indicizzati provenienti da siti che contengono elementi che soddisfano i criteri di ricerca.
     
-    c. Tutti gli elementi parzialmente indicizzati provenienti da tutti i siti della ricerca vengono esportati, indipendentemente dal fatto che un sito contenga elementi che soddisfano i criteri di ricerca.
+    1. Tutti gli elementi parzialmente indicizzati provenienti da tutti i siti della ricerca vengono esportati, indipendentemente dal fatto che un sito contenga elementi che soddisfano i criteri di ricerca.
     
     Se si sceglie di esportare gli elementi parzialmente indicizzati, gli elementi delle cassette postali parzialmente indicizzati vengono esportati in un file PST separato indipendentemente dall'opzione scelta in **Esporta contenuto di Exchange con nome**.
 
@@ -291,9 +297,31 @@ Di seguito sono riportate altre informazioni sull'esportazione dei risultati del
     
 - Come spiegato in precedenza, i risultati della ricerca di posta elettronica vengono esportati in una cartella del file System. Il percorso della cartella per i singoli messaggi potrebbe replicare il percorso della cartella nella cassetta postale dell'utente. Ad esempio, per una ricerca denominata "ContosoCase101" i messaggi nella posta in arrivo di un utente si troverebbero nel percorso della cartella  `~ContosoCase101\\<date of export\Exchange\user@contoso.com (Primary)\Top of Information Store\Inbox` . 
     
-- Se si sceglie di esportare i messaggi di posta elettronica in un unico file PST contenente tutti i messaggi in una singola cartella, una cartella **posta eliminata** e una cartella **cartelle di ricerca** sono incluse nel livello principale della cartella PST. Queste cartelle sono vuote. 
+- Se si sceglie di esportare i messaggi di posta elettronica in un unico file PST contenente tutti i messaggi in una singola cartella, una cartella **posta eliminata** e una cartella **cartelle di ricerca** sono incluse nel livello principale della cartella PST. Queste cartelle sono vuote.
   
- ### <a name="decrypting-rms-encrypted-messages"></a>Decrittografia dei messaggi crittografati con RMS
+### <a name="exporting-results-from-more-than-100000-mailboxes"></a>Esportazione dei risultati da più di 100.000 cassette postali
+
+- Come spiegato in precedenza, è necessario utilizzare la sicurezza & Compliance Center PowerShell per scaricare i risultati della ricerca da più di 100.000 cassette postali. È possibile eseguire lo script seguente in questa sezione per scaricare i risultati della ricerca. L'utilizzo di questo script presuppone che siano già stati esportati i risultati della ricerca (il processo di esportazione viene visualizzato nella scheda **Esporta** nello strumento di ricerca del contenuto) e ora si desidera scaricarli.
+
+   ```powershell
+   $export=Get-ComplianceSearchAction SEARCHNAME_Export -IncludeCredential;
+   $exportUrl=   [System.Uri]::EscapeDataString(($export.Results.Split(";") | ?{$_ -like '*Container url*'} | %{$_.Split(":",2)} | select -last 1).Trim());
+   $exportToken=($export.Results.Split(";") | ?{$_ -like '*SAS Token*'} | %{$_.Split(":",2)} | select -last 1).Trim();
+   ."$env:ProgramFiles\Internet Explorer\IEXPLORE.EXE" "https://complianceclientsdf.blob.core.windows.net/v16/Microsoft.Office.Client.Discovery.UnifiedExportTool.application?name=$($export.Name)&source=$exportUrl&zip=allow&trace=1";
+   $exportToken | clip;
+   ```
+
+  Nello script, è necessario specificare il nome della ricerca di cui si desidera esportare i risultati. Ad esempio, per una ricerca denominata, `SearchAllMailboxes` sostituire SEARCHNAME_Export con `SearchAllMailboxes_Export` .
+
+  Dopo aver aggiunto il nome della ricerca allo script, è possibile copiare il testo dello script e incollarlo in una finestra di Windows PowerShell [connessa al centro sicurezza & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell). Dopo aver incollato lo script, viene visualizzato lo strumento di esportazione di eDiscovery (come quando si scaricano i risultati della ricerca tramite l'interfaccia utente):
+
+  ![Strumento di esportazione di eDiscovery](../media/eDiscoveryExportTool.png)
+
+  Fare clic nella casella chiave di esportazione e quindi premere `CTRL + V` per incollare la chiave di esportazione (lo script copia la chiave di esportazione negli Appunti in modo che sia possibile incollare la casella). Fare clic su **Sfoglia** per specificare il percorso in cui si desidera scaricare i file dei risultati di ricerca e quindi avviare il download.
+
+  Come indicato in precedenza, si consiglia di scaricare i risultati della ricerca in un'unità disco locale a causa dell'elevata quantità di attività del disco (letture e scritture). Non scaricare i risultati della ricerca in un'unità di rete mappata o in un altro percorso di rete.
+
+### <a name="decrypting-rms-encrypted-messages"></a>Decrittografia dei messaggi crittografati con RMS
   
 - Come spiegato in precedenza, per decrittografare i messaggi crittografati con RMS quando vengono esportati, è necessario esportare i risultati della ricerca come singoli messaggi. Se si esportano i risultati della ricerca in un file PST, i messaggi crittografati con RMS rimarranno crittografati.
     
@@ -315,7 +343,7 @@ Di seguito sono riportate altre informazioni sull'esportazione dei risultati del
     
     Se si supera il limite di 260 caratteri, il nome del percorso completo di un elemento verrà troncato.
     
-  - Se il nome del percorso completo è maggiore di 260 caratteri, il nome del file verrà accorciato per ottenere il valore massimo. Si noti che il nome del file troncato (escludendo l'estensione di una scheda) non avrà meno di 8 caratteri.
+  - Se il nome del percorso completo è maggiore di 260 caratteri, il nome del file verrà accorciato per ottenere il valore massimo. Si noti che il nome del file troncato (escludendo l'estensione di una scheda) non avrà meno di otto caratteri.
     
   - Se il nome del percorso completo è ancora troppo lungo dopo la riduzione del nome del file, l'elemento viene spostato dal percorso corrente alla cartella padre. Se il percorso è ancora troppo lungo, il processo viene ripetuto: accorciare il nome del file e, se necessario, spostarlo di nuovo nella cartella padre. Questo processo viene ripetuto fino a quando il percorso completo è inferiore al limite di 260 caratteri.
     
@@ -335,4 +363,4 @@ Di seguito sono riportate altre informazioni sull'esportazione dei risultati del
     
 - I metadati del file System per i documenti nei siti di SharePoint e OneDrive for business vengono mantenuti quando i documenti vengono esportati nel computer locale. Ciò significa che le proprietà del documento, ad esempio le date di creazione e dell'ultima modifica, non subiscono variazioni durante l’esportazione dei documenti.
 
-- Se i risultati della ricerca includono una voce di elenco di SharePoint che corrisponde alla query di ricerca, tutte le righe dell'elenco verranno esportate oltre all'elemento che corrisponde alla query di ricerca. Sono inclusi gli allegati presenti nell'elenco. Il motivo è fornire un contesto per gli elementi di elenco restituiti nei risultati della ricerca. Si noti inoltre che gli elementi di elenco aggiuntivi e gli allegati possono determinare una differenza tra il numero di elementi esportati e la stima originale dei risultati della ricerca.
+- Se i risultati della ricerca includono una voce di elenco di SharePoint che corrisponde alla query di ricerca, tutte le righe dell'elenco verranno esportate oltre all'elemento che corrisponde alla query di ricerca e a qualsiasi allegato nell'elenco. Il motivo di questo comportamento consiste nel fornire un contesto per gli elementi di elenco restituiti nei risultati della ricerca. Si noti inoltre che gli elementi di elenco aggiuntivi e gli allegati possono determinare una differenza tra il numero di elementi esportati e la stima originale dei risultati della ricerca.

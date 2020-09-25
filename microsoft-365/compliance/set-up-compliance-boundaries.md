@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 1b45c82f-26c8-44fb-9f3b-b45436fe2271
 description: Informazioni su come utilizzare i limiti di conformità per creare confini logici che controllano i percorsi dei contenuti degli utenti che un Manager di eDiscovery può cercare in Microsoft 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a8aaa1128788ba8f2f4ece7fb54f886595770c01
-ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
+ms.openlocfilehash: 1c0d0b4b8c5c43945efad737165acdd2612d33b7
+ms.sourcegitcommit: 96b4593becc9450af136c528844e858c6e88b5a9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47357768"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "48269395"
 ---
 # <a name="set-up-compliance-boundaries-for-ediscovery-investigations"></a>Configurare i limiti di conformità per le indagini di eDiscovery
 
@@ -55,7 +55,7 @@ Ecco la procedura per configurare i limiti di conformità:
 [Passaggio 4: creare un filtro delle autorizzazioni di ricerca per applicare il limite di conformità](#step-4-create-a-search-permissions-filter-to-enforce-the-compliance-boundary)
 
 [Passaggio 5: creare un caso di eDiscovery per indagini intra-Agency](#step-5-create-an-ediscovery-case-for-intra-agency-investigations)
-  
+
 ## <a name="step-1-identify-a-user-attribute-to-define-your-agencies"></a>Passaggio 1: identificare un attributo utente per definire le agenzie
 
 Il primo passaggio consiste nel scegliere un attributo di Azure Active Directory da utilizzare che definirà le agenzie. Questo attributo viene utilizzato per creare il filtro delle autorizzazioni di ricerca che limita un Manager di eDiscovery per cercare solo i percorsi di contenuto degli utenti a cui è assegnato un valore specifico per questo attributo. Si supponga, ad esempio, che contoso decida di utilizzare l'attributo **Department** . Il valore di questo attributo per gli utenti nella quarta filiale del caffè dovrebbe essere  `FourthCoffee`  e il valore per gli utenti nella filiale di Coho Winery sarebbe `CohoWinery` . Nel passaggio 4, è possibile utilizzare questa  `attribute:value`  coppia, ad esempio *Department: fourthcoffee*, per limitare i percorsi di contenuto utente che possono essere cercati dai responsabili di eDiscovery. 
