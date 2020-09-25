@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Le cassette postali condivise vengono utilizzate quando più persone devono accedere alla stessa cassetta postale. Informazioni su ciò che è necessario sapere prima di creare una cassetta postale condivisa.
-ms.openlocfilehash: 8ca942d35d54fc8cc635e401c250ce409b9af0dd
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+ms.openlocfilehash: f6feae1662093ffea2537a62c5e8fdf28c622166
+ms.sourcegitcommit: 96b4593becc9450af136c528844e858c6e88b5a9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44780314"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "48269350"
 ---
 # <a name="about-shared-mailboxes"></a>Informazioni sulle cassette postali condivise
 
@@ -50,7 +50,7 @@ Prima [di creare una cassetta postale condivisa](create-a-shared-mailbox.md), ec
 
 - **Ruoli di amministratore:** Gli utenti che dispongono di ruoli di amministratore globale o di amministrazione di Exchange possono creare cassette postali condivise.
 
-- **Requisiti di sottoscrizione:** Per creare una cassetta postale condivisa, è necessario sottoscrivere un piano Microsoft 365 for business che includa la posta elettronica (il servizio Exchange Online). La sottoscrizione Microsoft 365 Apps for business non include messaggi di posta elettronica. Microsoft 365 business standard.
+- **Requisiti di sottoscrizione:** Per creare una cassetta postale condivisa, è necessario sottoscrivere un piano Microsoft 365 for business che includa la posta elettronica (il servizio Exchange Online). La sottoscrizione Microsoft 365 Apps for business non include la posta elettronica. Microsoft 365 business standard include la posta elettronica.
 
 - **Accesso:** Una cassetta postale condivisa non è destinata all'accesso diretto dall'account utente associato. È sempre necessario bloccare l'accesso per l'account della cassetta postale condivisa e mantenerlo bloccato.
 
