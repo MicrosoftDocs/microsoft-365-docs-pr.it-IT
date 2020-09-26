@@ -7,12 +7,12 @@ f1.keywords:
 - NOCSH
 ms.author: jaimeo
 ms.localizationpriority: medium
-ms.openlocfilehash: 6c241894ab50b6b1341b06f47c107c8945fb6e8c
-ms.sourcegitcommit: adaedd1418a3bd6e4875b77fd9e008b47e0b2a51
+ms.openlocfilehash: 1ad83dbf323e431e1694b408e09e581ff5b76348
+ms.sourcegitcommit: e9f32675061cd1cf4a3e2dada393e10d7c552efe
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48104571"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "48279553"
 ---
 # <a name="register-existing-devices-yourself"></a>Registrare manualmente i dispositivi già presenti
 
@@ -146,14 +146,14 @@ Procedere come segue:
 
 1. In **caricamento file**, specificare un percorso per il file CSV creato in precedenza.
 
-1. Selezionare **registra dispositivi**. Il sistema aggiungerà i dispositivi all'elenco di dispositivi sul Blade dei **dispositivi**, contrassegnati come **AutopilotRegistrationRequested**. La registrazione richiede in genere meno di 10 minuti e, in caso di esito positivo, il dispositivo verrà visualizzato come **pronto per il significato dell'utente** è pronto e in attesa che un utente inizi a utilizzare.
+1. Selezionare **registra dispositivi**. Il sistema aggiungerà i dispositivi all'elenco di dispositivi sul Blade dei **dispositivi**, contrassegnati come **registrazione in sospeso**. La registrazione richiede in genere meno di 10 minuti e, in caso di esito positivo, il dispositivo verrà visualizzato come **pronto per il significato dell'utente** è pronto e in attesa che un utente inizi a utilizzare.
 
 
 È possibile monitorare lo stato di avanzamento della registrazione dei dispositivi nella pagina principale. Gli stati possibili segnalati includono:
 
 | Stato | Descrizione |
 |---------------|-------------|
-| AutopilotRegistrationRequested | La registrazione non è ancora stata completata. Controllare in un secondo momento. |
+| Registrazione in sospeso | La registrazione non è ancora stata completata. Controllare in un secondo momento. |
 | Registrazione non riuscita | La registrazione non è stata completata. Per ulteriori informazioni, vedere [risoluzione dei problemi relativi alla registrazione del dispositivo](#troubleshooting-device-registration) . |
 | Pronto per l'utente | La registrazione ha avuto esito positivo e il dispositivo è ora pronto per essere recapitato all'utente. Microsoft Managed Desktop li guiderà per la prima volta, quindi non è necessario eseguire ulteriori preparativi. |
 | Attivazione | Il dispositivo è stato recapitato all'utente ed è stato registrato con il tenant. Questo indica anche che stanno usando regolarmente il dispositivo. |

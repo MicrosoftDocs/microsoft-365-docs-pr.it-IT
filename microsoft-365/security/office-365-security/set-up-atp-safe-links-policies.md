@@ -17,24 +17,23 @@ ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
 ms.collection:
 - M365-security-compliance
 description: Impostare i criteri collegamenti sicuri per proteggere l'organizzazione da collegamenti dannosi nei file di Word, Excel, PowerPoint e Visio, nonché nei messaggi di posta elettronica.
-ms.openlocfilehash: 8c72473a9b1337e1d932ec7235ed12e79f0c48f6
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 76d0aba026b96251a64163ef7d7f518fe0b1e1b1
+ms.sourcegitcommit: e9f32675061cd1cf4a3e2dada393e10d7c552efe
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48201760"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "48279582"
 ---
 # <a name="set-up-office-365-atp-safe-links-policies"></a>Configurare i criteri dei collegamenti sicuri ATP di Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
-
 > [!IMPORTANT]
 > Questo articolo è rivolto ai clienti aziendali di [Office 365 Advanced Threat Protection](office-365-atp.md). Se si è un utente di casa che cerca informazioni sui collegamenti sicuri in Outlook, vedere [Advanced Outlook.com Security](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2).
 
-I [collegamenti sicuri di ATP](atp-safe-links.md), una funzionalità di [Office 365 Advanced Threat Protection](office-365-atp.md) (ATP), consentono di proteggere l'organizzazione da collegamenti dannosi utilizzati per il phishing e altri attacchi. Se si dispone delle [autorizzazioni necessarie per il Centro sicurezza & Compliance](permissions-in-the-security-and-compliance-center.md), è possibile configurare i criteri dei collegamenti sicuri di ATP per garantire che quando gli utenti fanno clic su indirizzi Web (URL), l'organizzazione sia protetta. I criteri dei collegamenti sicuri di ATP possono essere configurati per analizzare gli URL nella posta elettronica e negli URL nei documenti di Office.
+I [collegamenti sicuri di ATP](atp-safe-links.md) sono una funzionalità di [Office 365 Advanced Threat Protection](office-365-atp.md) (ATP) che consente di proteggere l'organizzazione da collegamenti dannosi utilizzati per il phishing e altri attacchi. Se si dispone delle [autorizzazioni necessarie per il Centro sicurezza & Compliance](permissions-in-the-security-and-compliance-center.md), è possibile configurare i criteri dei collegamenti sicuri di ATP per garantire che quando gli utenti fanno clic su indirizzi Web (URL), l'organizzazione sia protetta. I criteri dei collegamenti sicuri di ATP possono essere configurati per analizzare gli URL nella posta elettronica e negli URL nei documenti di Office. I collegamenti sicuri ATP analizzano la posta elettronica in arrivo per i collegamenti ipertestuali noti e per gli allegati contenenti malware. Questa funzionalità riscrive gli URL analizzati nel prefisso del formato URL standard di Microsoft <https://nam01.safelinks.protection.outlook.com> . Dopo che un collegamento viene riscritto, viene analizzato per eventuali contenuti dannosi potenziali. Con i collegamenti sicuri di ATP abilitati, se un utente fa clic su un collegamento in un messaggio di posta elettronica e l'URL è stato bloccato dall'elenco URL bloccato personalizzato dell'organizzazione o se l'URL è determinato come dannoso, verrà aperta una pagina di avviso.
 
-Con i collegamenti sicuri di ATP abilitati, se un utente fa clic su un collegamento in un messaggio di posta elettronica e l'URL è stato bloccato dall'elenco URL bloccato personalizzato dell'organizzazione o se l'URL è determinato come dannoso, verrà aperta una pagina di avviso.
+Quando i collegamenti sicuri di ATP hanno riscritto un URL, se il messaggio viene inoltrato o risposto, l'URL rimarrà riscritto. I collegamenti aggiuntivi aggiunti al messaggio che si sta rispondendo o inoltrati non verranno riscritti.
 
 Le [nuove funzionalità vengono continuamente aggiunte al trifosfato di adenosina](office-365-atp.md#new-features-in-office-365-atp). Man mano che si aggiungono nuove funzionalità, potrebbe essere necessario apportare modifiche ai criteri dei collegamenti sicuri ATP esistenti.
 
