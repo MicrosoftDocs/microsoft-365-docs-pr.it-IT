@@ -17,20 +17,20 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: I criteri di conservazione dei log di controllo fanno parte delle nuove funzionalità di Audit avanzato di Microsoft 365. Un criterio di conservazione dei log di controllo consente di specificare quanto a lungo conservare i log di controllo nell'organizzazione.
-ms.openlocfilehash: a657e3cac4c6b0620d7c5c69247154776ce60ffe
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: 62d6fa47d19eaa9ae12e84879b5bf19a81afe8ae
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47547020"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48199540"
 ---
 # <a name="manage-audit-log-retention-policies"></a>Gestire i criteri di conservazione dei log di controllo
 
-È possibile creare e gestire i criteri di conservazione dei log di controllo nel Centro sicurezza e conformità. I criteri di conservazione dei log di controllo fanno parte delle nuove funzionalità di Audit avanzato di Microsoft 365. Un criterio di conservazione dei log di controllo consente di specificare quanto a lungo conservare i log di controllo nell'organizzazione. È possibile conservare i log di controllo per un massimo di un anno. È possibile creare criteri in base ai criteri seguenti:
+È possibile creare e gestire i criteri di conservazione dei log di controllo nel Centro sicurezza e conformità. I criteri di conservazione dei log di controllo fanno parte delle nuove funzionalità di Audit avanzato di Microsoft 365. Un criterio di conservazione dei log di controllo consente di specificare quanto a lungo conservare i log di controllo nell'organizzazione. È possibile conservare i log di controllo per un massimo di 10 anni. È possibile creare criteri in base ai criteri seguenti:
 
 - Tutte le attività in uno o più servizi di Microsoft 365
 
-- Attività specifiche (in un servizio specifico) eseguite da tutti gli utenti o da utenti specifici
+- Attività specifiche (in un servizio Microsoft 365 specifico) eseguite da tutti gli utenti o da utenti specifici
 
 - Un livello di priorità che specifica quale criterio ha la precedenza se sono presenti più criteri nell'organizzazione
 
@@ -39,7 +39,7 @@ ms.locfileid: "47547020"
 Audit avanzato in Microsoft 365 include un criterio di conservazione dei log di controllo predefinito per tutte le organizzazioni. Questo criterio conserva tutti i record di controllo di Exchange, SharePoint e Azure Active Directory per un anno. Questo criterio predefinito conserva i record di controllo che contengono il valore **AzureActiveDirectory**, **Exchange** o **SharePoint** per la proprietà **Workload**, ossia il servizio in cui si è verificata l'attività. Il criterio predefinito non può essere modificato. Per un elenco dei tipi di record per ogni carico di lavoro inclusi nel criterio predefinito, vedere la sezione [Altre informazioni](#more-information) in questo articolo.
 
 > [!NOTE]
-> Il criterio di conservazione dei log di controllo predefinito si applica solo ai record di controllo per le attività eseguite dagli utenti a cui è assegnata una licenza di Office 365 o Microsoft 365 E5 o che hanno una licenza per il componente aggiuntivo Microsoft 365 E5 Compliance. Se nell'organizzazione sono presenti utenti non di E5, i record di controllo corrispondenti vengono conservati per 90 giorni.
+> Il criterio di conservazione dei log di controllo predefinito si applica solo ai record di controllo per le attività eseguite dagli utenti a cui è assegnata una licenza di Office 365 o Microsoft 365 E5 o che hanno una licenza per il componente aggiuntivo Microsoft 365 E5 Compliance o Microsoft 365 E5 eDiscovery and Audit. Se nell'organizzazione sono presenti utenti non di E5, i record di controllo corrispondenti vengono conservati per 90 giorni.
 
 ## <a name="before-you-create-an-audit-log-retention-policy"></a>Prima di creare un criterio di conservazione dei log di controllo
 
@@ -53,46 +53,48 @@ Audit avanzato in Microsoft 365 include un criterio di conservazione dei log di 
 
 ## <a name="create-an-audit-log-retention-policy-in-the-compliance-center"></a>Creare un criterio di conservazione dei log di controllo nel centro conformità
 
-1. Passare a [https://protection.office.com](https://protection.office.com) e accedere con un account utente a cui è stato assegnato il ruolo Configurazione organizzazione nel Centro sicurezza e conformità.
+1. Passare a [https://compliance.microsoft.com](https://compliance.microsoft.com) e accedere con un account utente a cui è stato assegnato il ruolo Configurazione organizzazione nel Centro sicurezza e conformità.
 
-2. Nel riquadro sinistro del Centro sicurezza e conformità fare clic su **Cerca** > **Ricerca log di controllo**.
+2. Nel riquadro sinistro del Centro conformità Microsoft 365, fare clic su **Mostra tutto**, quindi su **Audit**.
 
-    Viene visualizzata la pagina **Ricerca log di controllo**.
+    Viene visualizzata la pagina **Audit**.
 
-    ![Pagina Ricerca log di controllo](../media/AuditLogRetentionPolicy1.png)
+    ![La pagina Ricerca log di controllo nel Centro conformità](../media/AuditLogRetentionPolicy1.png)
 
-3. Fare clic su **Nuovo criterio di conservazione dei log di controllo** e poi completare i campi seguenti nel riquadro a comparsa:
+3. Fare clic su **Crea criteri di conservazione dei log di controllo** e completare poi questi campi nel riquadro a comparsa:
 
     ![Riquadro a comparsa del criterio di conservazione dei log di controllo](../media/AuditLogRetentionPolicy2.png)
 
-   a. **Nome:** il nome del criterio di conservazione dei log di controllo. Il nome deve essere univoco nell'organizzazione.
+   1. **Nome:** il nome del criterio di conservazione dei log di controllo. Il nome deve essere univoco nell'organizzazione.
 
-   b. **Descrizione:** facoltativo, ma è utile per fornire informazioni sul criterio, ad esempio il tipo di record o carico di lavoro, gli utenti specificati nel criterio e la durata.
+   2. **Descrizione:** facoltativo, ma è utile per fornire informazioni sul criterio, ad esempio il tipo di record o carico di lavoro, gli utenti specificati nel criterio e la durata.
 
-   c. **Tipi di record:** il tipo di record di controllo a cui si applica il criterio. Se si selezionano più tipi di record non è possibile selezionare le attività, perché il criterio verrà applicato a tutte le attività per i tipi di record selezionati. Inoltre, se si lascia vuota questa proprietà, è necessario selezionare un utente nella casella **Utenti**.
+   3. **Utenti:** selezionare uno o più utenti ai quali applicare il criterio. Se si lascia la casella vuota, il criterio verrà applicato a tutti gli utenti. Se si lascia vuoto il campo **Tipo di record**, è necessario selezionare un utente.
 
-   d. **Attività:** usare questa casella per scegliere le attività dal tipo di record selezionato. È possibile scegliere attività specifiche a cui applicare il criterio. Se non si scelgono attività specifiche, il criterio verrà applicato a tutte le attività del tipo di record selezionato.
+   4. **Tipo di record:** il tipo di record di controllo a cui si applica il criterio. Se si lascia vuota questa proprietà, è necessario selezionare un utente nella casella **Utenti**. È possibile selezionare un tipo di record singolo o più tipi di record:
 
-   e. **Utenti:** selezionare uno o più utenti ai quali applicare il criterio. Se si lascia la casella vuota, il criterio verrà applicato a tutti gli utenti. Se si lascia vuoto il campo **Tipi di record**, è necessario selezionare un utente.
+   - Se si seleziona un solo tipo di record, il campo **Attività** viene visualizzato dinamicamente. Si può usare l'elenco a discesa per selezionare le attività del tipo di record selezionato a cui applicare il criterio. Se non si scelgono attività specifiche, il criterio verrà applicato a tutte le attività del tipo di record selezionato.
 
-   f. **Durata:** la quantità di tempo per cui conservare i log di controllo che soddisfano i criteri del criterio.
+   - Se si selezionano più tipi di record, non è possibile selezionare le attività. Il criterio si applica a tutte le attività dei tipi di record selezionati.
 
-   g. **Priorità:** questo valore determina l'ordine con cui vengono elaborati i criteri di conservazione dei log di controllo nell'organizzazione. Un valore più alto indica una priorità più elevata. Ad esempio, un criterio con un valore di priorità **5** avrà la priorità su un criterio con un valore di priorità **0**. Come descritto in precedenza, i criteri di conservazione dei log di controllo personalizzati hanno la precedenza sul criterio predefinito per l'organizzazione.
+   5. **Durata:** la quantità di tempo per cui conservare i log di audit che soddisfano i criteri del criterio.
+
+   6. **Priorità:** questo valore determina l'ordine con cui vengono elaborati i criteri di conservazione dei log di controllo nell'organizzazione. Un valore più alto indica una priorità più elevata. Ad esempio, un criterio con un valore di priorità **5** avrà la priorità su un criterio con un valore di priorità **0**. Come descritto in precedenza, i criteri di conservazione dei log di controllo personalizzati hanno la precedenza sul criterio predefinito per l'organizzazione.
 
 4. Fare clic su **Salva** per creare il nuovo criterio di conservazione dei log di controllo.
 
-Al momento non esiste alcuna indicazione che il criterio di conservazione sia stato creato correttamente. Vedere la sezione successiva sulla visualizzazione delle proprietà dei criteri di conservazione dei log di controllo.
+Il nuovo criterio di conservazione dei log di controllo è mostrato nella scheda **Criteri di conservazione dei log di controllo**.
 
 ## <a name="create-an-audit-log-retention-policy-in-powershell"></a>Creare un criterio di conservazione dei log di controllo in PowerShell
 
-Per creare criteri di conservazione dei log di controllo si può anche usare PowerShell per Centro sicurezza e conformità. 
+Per creare criteri di conservazione dei log di controllo si può anche usare PowerShell per Centro sicurezza e conformità.
 
 1. [Connettersi a PowerShell in Centro sicurezza e conformità](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell).
 
-2. Eseguire il comando seguente per creare un criterio di conservazione dei log di controllo. 
+2. Eseguire il comando seguente per creare un criterio di conservazione dei log di controllo.
 
    ```powershell
-   New-UnifiedAuditLogRetentionPolicy -Name "Microsoft Teams Audit Policy" -Description "One year retention policy for all Microsoft Teams activities" -RecordTypes MicrosoftTeams -RetentionDuration TwelveMonths -Priority 100
+   New-UnifiedAuditLogRetentionPolicy -Name "Microsoft Teams Audit Policy" -Description "One year retention policy for all Microsoft Teams activities" -RecordTypes MicrosoftTeams -RetentionDuration TenYears -Priority 100
    ```
 
     In questo esempio viene creato un criterio di conservazione dei log di controllo denominato "Microsoft Teams Audit Policy" con queste impostazioni:
@@ -101,7 +103,7 @@ Per creare criteri di conservazione dei log di controllo si può anche usare Pow
 
    - Conserva tutte le attività di Microsoft Teams (come definito dal parametro *RecordType*).
 
-   - Conserva i log di controllo di Microsoft Teams per un anno.
+   - Conserva i log di controllo di Microsoft Teams per 10 anni.
 
    - Una priorità di 100.
 

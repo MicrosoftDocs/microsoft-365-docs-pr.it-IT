@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 19a05cd9d9605904ad12e6f0d244d7cf0afce006
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 24820526b6ba58c82c2412ed3d0902eecb60b5b6
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47417058"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208108"
 ---
 # <a name="personal-data-protection-act-pdpa-argentina"></a>Legge sulla protezione dei dati personali in Argentina
 
@@ -39,7 +39,7 @@ Le misure di sicurezza tecniche e organizzative implementate nei servizi cloud p
 
 L'accordo sul trasferimento dei dati di Microsoft è una modifica (ID modifica M314) alle condizioni sull'elaborazione dei dati presenti nelle Condizioni di Microsoft Online Services. Aggiunge importanti novità, tra cui l'impegno di Microsoft di informare il cliente di qualsiasi richiesta legalmente vincolante di divulgazione dei suoi dati personali, di inviare i dati a strutture di elaborazione per un controllo su richiesta del cliente presentata dal cliente o da terze parti indipendenti e di ottenere il previo consenso scritto per l'uso di terzisti.
 
-## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud Microsoft inclusi nell'ambito
+## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud Microsoft inclusi
 
 - [Azure e Azure DevOps](https://gallery.technet.microsoft.com/Overview-of-Azure-c1be3942)
 - [Dynamics 365](https://download.microsoft.com/download/E/1/9/E1977163-7A86-4812-AC18-C03ADC958AAF/Microsoft_Dynamics_365_Cloud_Service_Compliance_Datasheet.pdf)
@@ -55,6 +55,10 @@ L'accordo sul trasferimento dei dati di Microsoft è una modifica (ID modifica M
 **In che modo il GDPR ha cambiato la legge sulla protezione dei dati personali?**
 
 Alla fine del 2018, l'Argentina non aveva ancora promulgato regolamenti relativi al GDPR, ma aveva preparato un nuovo progetto di legge sulla protezione dei dati, già inviato al Congresso dal potere esecutivo e in fase di revisione da parte della Camera dei Deputati, per allineare la sua legge sulla protezione dei dati al GDPR. Affronta divergenze come la definizione degli interessati e le preoccupazioni sul trasferimento transfrontaliero delle informazioni personali.
+
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>Usare Microsoft Compliance Manager per valutare i rischi
+
+[Microsoft Compliance Manager](compliance-manager.md) è una funzionalità in anteprima nel [Centro conformità Microsoft 365](microsoft-365-compliance-center.md) utile per comprendere lo stato di conformità dell'organizzazione e intraprendere azioni per ridurre i rischi. Compliance Manager offre un modello premium per creare una valutazione per questa normativa. Individuare il modello nella pagina **modelli di valutazioni** in Compliance Manager. Informazioni su come [creare valutazioni in Compliance Manager](compliance-manager-assessments.md).
 
 ## <a name="resources"></a>Risorse
 

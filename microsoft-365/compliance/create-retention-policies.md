@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Usare i criteri di conservazione per tenere sotto controllo molto efficacemente i contenuti che gli utenti generano con posta elettronica, documenti e conversazioni. Mantenere il contenuto desiderato e liberarsi di quello che non serve.
-ms.openlocfilehash: 8663da0a93bb4781af747d810200d4a2a777acb4
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: f9c8ff4287f0970f8571d3ced7d612515b03c08e
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47948174"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48198493"
 ---
 # <a name="create-and-configure-retention-policies"></a>Creare e configurare criteri di conservazione
 
@@ -50,11 +50,14 @@ Anche se un criterio di conservazione può supportare più posizioni, non è pos
 - Cartelle pubbliche di Exchange
 - Messaggi del canale di Teams
 - Chat di Teams
+- Messaggi della community di Yammer
+- Messaggi privati di Yammer
 
-Se si seleziona una delle posizioni di Teams quando si crea un criterio di conservazione, le altre posizioni vengono automaticamente escluse. Di conseguenza, le istruzioni da seguire variano in base alla necessità o meno di includere le posizioni di Teams:
+Se si selezionano le posizioni di Teams o Yammer quando si crea un criterio di conservazione, le altre posizioni vengono automaticamente escluse. Di conseguenza, le istruzioni da seguire variano in base alla necessità o meno di includere le posizioni di Teams o Yammer:
 
 - [Istruzioni per un criterio di conservazione per posizioni di Teams](#retention-policy-for-teams-locations)
-- [Istruzioni per un criterio di conservazione per posizioni diverse da Teams](#retention-policy-for-locations-other-than-teams)
+- [Istruzioni per un criterio di conservazione per posizioni di Yammer](#retention-policy-for-yammer-locations)
+- [Istruzioni per un criterio di conservazione per posizioni diverse da Teams e Yammer](#retention-policy-for-locations-other-than-teams-and-yammer)
 
 Se sono presenti più criteri di conservazione e quando si usano anche etichette di conservazione, vedere [Precedenza nei principi di conservazione](retention.md#the-principles-of-retention-or-what-takes-precedence) per comprendere cosa accade quando più impostazioni di conservazione si applicano allo stesso contenuto.
 
@@ -93,7 +96,56 @@ Se si hanno siti del team non connessi a un gruppo di Microsoft 365, è necessar
 
 È possibile che i criteri di conservazione applicati ai gruppi di Microsoft 365, ai siti di SharePoint o agli account OneDrive eliminino un file a cui viene fatto riferimento nel messaggio di una chat o di un canale di Teams prima che tali messaggi vengano eliminati. In questo scenario, il file viene comunque visualizzato nel messaggio di Teams, ma se gli utenti selezionano il file visualizzeranno l'errore "File non trovato". Questo comportamento non è specifico dei criteri di conservazione e può verificarsi anche se un utente elimina manualmente un file da SharePoint o da OneDrive.
 
-### <a name="retention-policy-for-locations-other-than-teams"></a>Criterio di conservazione per posizioni diverse da Teams
+### <a name="retention-policy-for-yammer-locations"></a>Criterio di conservazione per posizioni di Yammer
+
+> [!NOTE]
+> I criteri di conservazione per Yammer vengono distribuiti in anteprima. Se i nuovi percorsi di Yammer non sono ancora visualizzati, riprovare tra qualche giorno.
+>
+> Per usare questa funzionalità, la rete Yammer deve essere in [Modalità nativa](https://docs.microsoft.com/yammer/configure-your-yammer-network/overview-native-mode), non nella Modalità ibrida.
+
+1. Nel [Centro conformità Microsoft 365](https://compliance.microsoft.com/) selezionare **Criteri** > **Conservazione**.
+
+2. Selezionare **Nuovo criterio di conservazione** per creare un nuovo criterio.
+
+3. Nella pagina **Decidere se si vuole conservare il contenuto, eliminarlo e entrambi** della procedura guidata specificare le opzioni di configurazione per la conservazione e l'eliminazione del contenuto. 
+    
+    È possibile creare un criterio che si limita a conservare il contenuto senza eliminarlo, lo conserva e quindi lo elimina dopo un periodo di tempo specificato oppure semplicemente elimina il contenuto dopo un periodo di tempo specificato. Per altre informazioni, vedere [Impostazioni per la conservazione e l'eliminazione del contenuto](#settings-for-retaining-and-deleting-content) in questa pagina.
+    
+    Non selezionare **Usa le impostazioni di conservazione avanzate**, perché questa opzione non è supportata per le posizioni di Yammer. 
+
+4. Nella pagina **Scegli posizioni** selezionare **Consenti la scelta di posizioni specifiche**. Quindi, attivare una o entrambe le posizioni di Yammer: **Messaggi della community di Yammer** e **Messaggi privati di Yammer**.
+    
+    Per impostazione predefinita, vengono selezionate tutte le community e tutti gli utenti, ma si può modificare la selezione specificando community e utenti da includere o escludere.
+    
+    Per i messaggi privati di Yammer: 
+    - Se si lascia il valore predefinito, **Tutti**, i guest di Azure B2B non sono inclusi. 
+    - Se si seleziona **Scegli utente**, si può applicare un criterio di conservazione agli utenti esterni, se il loro account è noto.
+
+5. Completare la procedura guidata per salvare le impostazioni.
+
+Per altre informazioni sul funzionamento dei criteri di Yammer, vedere [Informazioni sulla conservazione dei dati di Yammer](retention-policies-yammer.md).
+
+#### <a name="additional-retention-policies-needed-to-support-yammer"></a>Altri criteri di conservazione necessari per supportare Yammer
+
+Yammer non è solo messaggi della community e messaggi privati. Per conservare e cancellare i messaggi di posta elettronica della rete Yammer, configurare un altro criterio di conservazione che includa tutti i gruppi di Microsoft 365 usati per Yammer usando la posizione dei **Gruppi di Office 365**. 
+
+Per conservare ed eliminare file che sono memorizzati in Yammer, è necessario un criteri di conservazione che includa le posizioni dei **siti di SharePoint** o degli **account di OneDrive**:
+
+- I file condivisi in messaggi privati vengono archiviati nell'account di OneDrive dell'utente che ha condiviso il file. 
+
+- I file caricati nelle community vengono archiviati nel sito di SharePoint della community di Yammer.
+
+È possibile che un criterio di conservazione applicato ai siti di SharePoint o agli account di OneDrive possa eliminare un file a cui viene fatto riferimento in un messaggio di Yammer prima che tale messaggio sia eliminato. In questo scenario, il file viene comunque visualizzato nel messaggio di Yammer, ma se gli utenti selezionano il file visualizzeranno l'errore "File non trovato". Questo comportamento non è specifico dei criteri di conservazione, e può verificarsi anche se un utente elimina manualmente un file da SharePoint o da OneDrive.
+
+### <a name="retention-policy-for-locations-other-than-teams-and-yammer"></a>Criterio di conservazione per posizioni diverse da Teams e Yammer
+
+Usare le istruzioni seguenti per i criteri di conservazione che si applicano a uno qualsiasi di questi servizi:
+
+- Exchange: posta elettronica e cartelle pubbliche
+- SharePoint: siti
+- OneDrive: account
+- Gruppi di Microsoft 365
+- Skype for Business
 
 1. Nel [Centro conformità Microsoft 365](https://compliance.microsoft.com/) selezionare **Criteri** > **Conservazione**.
 

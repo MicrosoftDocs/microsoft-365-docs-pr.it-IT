@@ -18,12 +18,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 description: Con la gestione dei record di Microsoft 365, è possibile applicare le pianificazioni di conservazione in un piano di archiviazione che gestisce la conservazione, la dichiarazione dei record e l’eliminazione.
-ms.openlocfilehash: d8ea68d8fbbf67928bae4f6d09712658f364e3ef
-ms.sourcegitcommit: 22dab0f7604cc057a062698005ff901d40771692
+ms.openlocfilehash: 677196f23430ec19f23c50e05fcc193fde420ca0
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "46868911"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48200493"
 ---
 # <a name="learn-about-records-management-in-microsoft-365"></a>Informazioni sulla gestione dei record in Microsoft 365
 
@@ -53,7 +53,7 @@ Oltre alla documentazione online, potreebbe essere utile l’ascolto della [regi
 
 ## <a name="records"></a>Record
 
-Quando un contenuto viene contrassegnato come record:
+Quando il contenuto è dichiarato come record:
 
 - Vengono applicate restrizioni agli elementi in base alle [azioni consentite o bloccate](#compare-restrictions-for-what-actions-are-allowed-or-blocked).
 
@@ -61,31 +61,31 @@ Quando un contenuto viene contrassegnato come record:
 
 - Si ha una prova dell'eliminazione quando l'elemento viene eliminato al termine del periodo di conservazione.
 
-Usare [etichette di conservazione ](retention.md#retention-labels) per contrassegnare un contenuto come record. È possibile pubblicare tali etichette in modo che utenti e amministratori possano applicarle manualmente al contenuto oppure applicarle automaticamente al contenuto che si desidera contrassegnare come record.
+È possibile usare le [etichette di conservazione](retention.md#retention-labels) per contrassegnare il conenuto come un **record** o un **record normativo** (al momento in anteprima). La differenza tra le due è spiegata nella prossima sezione. È possibile pubblicare tali etichette in modo che utenti e amministratori possano applicarle manualmente al contenuto oppure applicarle automaticamente al contenuto che si desidera contrassegnare come record o record normativo.
 
-Usando le etichette di conservazione per contrassegnare il contenuto come record, è possibile implementare una strategia unica e coerente per la gestione dei record nell'ambiente Microsoft 365.
+Usando le etichette di conservazione per dichiarare i record, è possibile implementare una strategia unica e coerente per la gestione dei record nell'ambiente Microsoft 365.
 
 ### <a name="compare-restrictions-for-what-actions-are-allowed-or-blocked"></a>Confronto tra le restrizioni relative alle azioni consentite o bloccate
 
-Usare la tabella seguente per identificare quali restrizioni vengono applicate al contenuto in seguito all'applicazione di un'etichetta di conservazione standard e di etichette di conservazione che contrassegnano il contenuto come record. 
+Usare la tabella seguente per identificare quali restrizioni vengono applicate al contenuto in seguito all'applicazione di un'etichetta di conservazione standard e di etichette di conservazione che contrassegnano il contenuto come record o record normativo. 
 
-Un'etichetta di conservazione standard include le impostazioni di conservazione e le azioni, ma non contrassegna il contenuto come record.
+Un'etichetta di conservazione standard include le impostazioni di conservazione e le azioni, ma non contrassegna il contenuto come un record o un record normativo.
 
 >[!NOTE] 
 > Per completezza di informazioni, la tabella include colonne per un record bloccato e sbloccato, applicabile a SharePoint e OneDrive, ma non a Exchange. Per bloccare e sbloccare un record viene usato il [controllo delle versioni dei record](record-versioning.md), che non è supportato per gli elementi di Exchange. Quindi, per tutti gli elementi di Exchange contrassegnati come record, il comportamento mappato alla colonna **Record: bloccato** e alla colonna **Record: non bloccato** non è pertinente.
 
 
-|Azione| Etichetta di conservazione |Record: bloccato| Record: sbloccato|
-|:-----|:-----|:-----|:-----|:-----|
-|Modifica contenuti|Consentito | **Bloccato** | Consentito|
-|Modifica le proprietà, tra cui Rinomina|Consentito |Consentito | Consentito|
-|Elimina|Consentito <sup>1</sup> |**Bloccato** | **Bloccato**|
-|Copia|Consentito |Consentito | Consentito|
-|Sposta all'interno del container <sup>2</sup>|Consentito |Consentito | Consentito|
-|Sposta tra container <sup>2</sup>|Consentito |Consentito se mai sbloccato | Consentito|
-|Apri/leggi|Consentito |Consentito | Consentito|
-|Cambia etichetta|Consentito |Consentito: solo amministratori container | Consentito: solo amministratori container|
-|Rimuovi etichetta|Consentito |Consentito: solo amministratori container | Consentito: solo amministratori container|
+|Azione| Etichetta di conservazione |Record: bloccato| Record: sbloccato| Record normativo |
+|:-----|:-----|:-----|:-----|:-----|:-----|
+|Modifica contenuti|Consentito | **Bloccato** | Consentito | **Bloccato**|
+|Modifica le proprietà, tra cui Rinomina|Consentito |Consentito | Consentito| **Bloccato**|
+|Elimina|Consentito <sup>1</sup> |**Bloccato** |**Bloccato**| **Bloccato**|
+|Copia|Consentito |Consentito | Consentito| Consentito|
+|Sposta all'interno del container <sup>2</sup>|Consentito |Consentito | Consentito| Consentito|
+|Sposta tra container <sup>2</sup>|Consentito |Consentito se mai sbloccato | Consentito| **Bloccato**|
+|Apri/leggi|Consentito |Consentito | Consentito| Consentito|
+|Cambia etichetta|Consentito |Consentito: solo amministratori container | Consentito: solo amministratori container| **Bloccato**
+|Rimuovi etichetta|Consentito |Consentito: solo amministratori container | Consentito: solo amministratori container| **Bloccato**
 
 Note a piè di pagina:
 
@@ -95,8 +95,17 @@ Messaggio che un utente vede se tenta di eliminare un documento con etichetta in
 
 ![Messaggio che segnala che un elemento non è stato eliminato da SharePoint](../media/d0020726-1593-4a96-b07c-89b275e75c49.png)
 
-
 <sup>2</sup> I container includono le raccolte documenti in SharePoint e le cassette postali in Exchange.
+
+>[!IMPORTANT] 
+> La differenza più importante di un record normativo è che, dopo che è stato applicato al contenuto, nessuno, nemmeno un amministratore globale, può rimuovere l'etichetta. 
+>
+> Inoltre, le etichette di conservazione configurate per i record normativi hanno le seguenti restrizioni amministrative:
+> - Il periodo di conservazione non può essere abbreviato dopo il salvataggio dell'etichetta, ma solo esteso.
+> - Queste etichette non sono supportate dai criteri di etichettatura automatica, e devono essere applicate usando i [criteri delle etichette di conservazione](create-apply-retention-labels.md). 
+> - Una volta aggiunte e salvate queste etichette in un criterio di un'etichetta di conservazione, non è possibile rimuovere le etichette dalle posizioni, ma solo aggiungere posizioni.
+> 
+> A causa di queste azioni irreversibili, assicurarsi che sia effettivamente necessario usare i record normativi prima di selezionare questa opzione per le etichette di conservazione. Per evitare la configurazione accidentale, questa opzione non è disponibile per impostazione predefinita, ma deve prima essere abilitata con PowerShell. Le istruzioni sono incluse in [Dichiarare i record usando le etichette di conservazione](declare-records.md).
 
 ## <a name="next-steps"></a>Passaggi successivi
 
