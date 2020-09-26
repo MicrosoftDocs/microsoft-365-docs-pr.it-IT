@@ -7,7 +7,7 @@ author: markjjo
 manager: laurawi
 ms.date: ''
 audience: Admin
-ms.topic: article
+ms.topic: overview
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
@@ -17,26 +17,26 @@ search.appverid:
 ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
-description: Leggere una panoramica sull'elaborazione di vari tipi di dati in Advanced eDiscovery Tool in Office 365.
-ms.openlocfilehash: 0725b38af00ec787869090c5a57f5a865fb421e7
-ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
+description: Panoramica sull'elaborazione di varie forme di dati in Advanced eDiscovery.
+ms.openlocfilehash: c82363a846334ccf47fc28cf0aaa25e92f2bbea9
+ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46527406"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48285242"
 ---
-# <a name="work-with-processing-errors-in-advanced-ediscovery"></a><span data-ttu-id="5b495-103">Utilizzare gli errori di elaborazione in Advanced eDiscovery</span><span class="sxs-lookup"><span data-stu-id="5b495-103">Work with processing errors in Advanced eDiscovery</span></span>
+# <a name="work-with-processing-errors-in-advanced-ediscovery"></a><span data-ttu-id="bac5e-103">Utilizzare gli errori di elaborazione in Advanced eDiscovery</span><span class="sxs-lookup"><span data-stu-id="bac5e-103">Work with processing errors in Advanced eDiscovery</span></span>
 
-<span data-ttu-id="5b495-104">L' *elaborazione* è il processo di identificazione dei file, l'espansione dei documenti e degli allegati incorporati, l'estrazione del testo e il riconoscimento OCR (Optical Character Recognition) dei file di immagine e la successiva indicizzazione di tale contenuto.</span><span class="sxs-lookup"><span data-stu-id="5b495-104">*Processing* is the process of file identification, expansion of embedded documents and attachments, text extraction, and OCR (Optical Character Recognition) of image files and the subsequent indexing of that content.</span></span>  
+<span data-ttu-id="bac5e-104">L' *elaborazione* è il processo di identificazione dei file, l'espansione dei documenti e degli allegati incorporati, l'estrazione del testo e il riconoscimento di caratteri ottici (OCR)) di file di immagine e la successiva indicizzazione di tale contenuto.</span><span class="sxs-lookup"><span data-stu-id="bac5e-104">*Processing* is the process of file identification, expansion of embedded documents and attachments, text extraction, and Optical Character Recognition (OCR)) of image files and the subsequent indexing of that content.</span></span>  
 
-<span data-ttu-id="5b495-105">Quando si aggiungono depositarie e origini dati non depositarie a un caso nella scheda **origini** , tutti gli elementi parzialmente indicizzati di Microsoft 365 vengono elaborati per renderli completamente ricercabili.</span><span class="sxs-lookup"><span data-stu-id="5b495-105">When you add custodians and non-custodian data sources to a case on the **Sources** tab, all partially indexed items from Microsoft 365 are processed to make them fully searchable.</span></span> <span data-ttu-id="5b495-106">Analogamente, quando il contenuto viene aggiunto a un set di revisione da origini dati Microsoft 365 e non Microsoft 365, anche questo contenuto viene elaborato.</span><span class="sxs-lookup"><span data-stu-id="5b495-106">Likewise, when content is added to a review set from both Microsoft 365 and non-Microsoft 365 data sources, this content is also processed.</span></span>
+<span data-ttu-id="bac5e-105">Quando si aggiungono depositarie e origini dati non depositarie a un caso nella scheda **origini** , tutti gli elementi parzialmente indicizzati di Microsoft 365 vengono elaborati per renderli completamente ricercabili.</span><span class="sxs-lookup"><span data-stu-id="bac5e-105">When you add custodians and non-custodian data sources to a case on the **Sources** tab, all partially indexed items from Microsoft 365 are processed to make them fully searchable.</span></span> <span data-ttu-id="bac5e-106">Analogamente, quando il contenuto viene aggiunto a un set di revisione da origini dati Microsoft 365 e non Microsoft 365, anche questo contenuto viene elaborato.</span><span class="sxs-lookup"><span data-stu-id="bac5e-106">Likewise, when content is added to a review set from both Microsoft 365 and non-Microsoft 365 data sources, this content is also processed.</span></span>
 
-<span data-ttu-id="5b495-107">La scheda **elaborazione** in Advanced eDiscovery fornisce informazioni sullo stato dell'indicizzazione avanzata per diversi scenari di elaborazione.</span><span class="sxs-lookup"><span data-stu-id="5b495-107">The **Processing** tab in Advanced eDiscovery provides insight into the status of advanced indexing for different processing scenarios.</span></span>
+<span data-ttu-id="bac5e-107">La scheda **elaborazione** in Advanced eDiscovery fornisce informazioni sullo stato dell'indicizzazione avanzata per diversi scenari di elaborazione.</span><span class="sxs-lookup"><span data-stu-id="bac5e-107">The **Processing** tab in Advanced eDiscovery provides insight into the status of advanced indexing for different processing scenarios.</span></span>
 
-<span data-ttu-id="5b495-108">Per ulteriori informazioni, vedere gli articoli seguenti:</span><span class="sxs-lookup"><span data-stu-id="5b495-108">For more information, see the following articles:</span></span>
+<span data-ttu-id="bac5e-108">Per ulteriori informazioni, vedere gli articoli seguenti:</span><span class="sxs-lookup"><span data-stu-id="bac5e-108">For more information, see the following articles:</span></span>
 
-- [<span data-ttu-id="5b495-109">Indicizzazione avanzata dei dati dei responsabili</span><span class="sxs-lookup"><span data-stu-id="5b495-109">Advanced indexing of custodian data</span></span>](indexing-custodian-data.md)
+- [<span data-ttu-id="bac5e-109">Indicizzazione avanzata dei dati dei responsabili</span><span class="sxs-lookup"><span data-stu-id="bac5e-109">Advanced indexing of custodian data</span></span>](indexing-custodian-data.md)
 
-- [<span data-ttu-id="5b495-110">Correzione degli errori durante l'elaborazione dei dati</span><span class="sxs-lookup"><span data-stu-id="5b495-110">Error remediation when processing data</span></span>](error-remediation.md)
+- [<span data-ttu-id="bac5e-110">Correzione degli errori durante l'elaborazione dei dati</span><span class="sxs-lookup"><span data-stu-id="bac5e-110">Error remediation when processing data</span></span>](error-remediation.md)
 
-- [<span data-ttu-id="5b495-111">Correzione degli errori dei singoli elementi</span><span class="sxs-lookup"><span data-stu-id="5b495-111">Single item error remediation</span></span>](single-item-error-remediation.md)
+- [<span data-ttu-id="bac5e-111">Correzione degli errori dei singoli elementi</span><span class="sxs-lookup"><span data-stu-id="bac5e-111">Single item error remediation</span></span>](single-item-error-remediation.md)
