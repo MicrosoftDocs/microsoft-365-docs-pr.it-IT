@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-mar2020
 - seo-marvel-apr2020
 description: Utilizzare lo strumento analisi dati (anteprima) persone di interesse di gestione nell'indagine accedendo e ricercando l'attività per gli utenti di interesse.
-ms.openlocfilehash: 0c651a493356ded32ade5ae0a349f64b98d43542
-ms.sourcegitcommit: 50526f81ce3f57d58f0a7c0df4fe21685c5a0236
+ms.openlocfilehash: e5369307894726c37d465fad6c29c1dac0e7391c
+ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45434301"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48285932"
 ---
 # <a name="view-the-audit-activity-of-people-of-interest"></a>Visualizzare l'attività di controllo di persone di interesse
 

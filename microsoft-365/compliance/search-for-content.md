@@ -13,14 +13,14 @@ localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
 ms.assetid: df2d1e0f-b476-42c9-aade-4a260b24f193
 description: Utilizzare lo strumento eDiscovery ricerca contenuto nel centro sicurezza & conformità per trovare rapidamente la posta elettronica nelle cassette postali di Exchange, i documenti nei siti di SharePoint e le posizioni di OneDrive e le conversazioni di messaggistica istantanea in Skype for business.
-ms.openlocfilehash: 2b874181fdfc5bce69227acc279e12bffe70c069
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: c02bcf627cec46b52ba9ff449a0d39b185ce4a0a
+ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632921"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48285982"
 ---
-# <a name="search-for-content"></a>Cercare contenuto
+# <a name="search-for-content-using-the-content-search-tool"></a>Ricerca di contenuto tramite lo strumento di ricerca contenuto
 
 Utilizzare lo strumento di ricerca contenuto nel centro sicurezza & conformità per trovare rapidamente la posta elettronica nelle cassette postali di Exchange, i documenti nei siti di SharePoint e le posizioni OneDrive e le conversazioni di messaggistica istantanea in Skype for business. È possibile utilizzare lo strumento di ricerca contenuto per cercare messaggi di posta elettronica, documenti e conversazioni di messaggistica istantanea in strumenti di collaborazione come Microsoft teams e Microsoft 365 groups.
   
@@ -36,7 +36,7 @@ Il primo passaggio consiste nell'iniziare a utilizzare lo strumento di ricerca c
     
 - [Eseguire una ricerca nell'elenco di ID](csv-file-for-an-id-list-content-search.md) per cercare messaggi di posta elettronica specifici 
     
-- [Cercare le cassette postali basate sul cloud](search-cloud-based-mailboxes-for-on-premises-users.md) per gli utenti locali in Microsoft 365
+- [Cercare le cassette postali basate sul cloud ](search-cloud-based-mailboxes-for-on-premises-users.md) per gli utenti locali in Microsoft 365
 
 - [Visualizzare le statistiche sulle parole chiave](view-keyword-statistics-for-content-search.md) per i risultati di una ricerca e quindi affinare la query, se necessario. 
     
@@ -79,7 +79,7 @@ La ricerca di contenuti è facile da usare, ma è anche uno strumento potente. D
 
 A volte è necessario eseguire attività di ricerca di contenuto più avanzate, complesse e ripetitive. In questi casi, è più semplice e veloce utilizzare i comandi di PowerShell nel centro sicurezza & Compliance. Per semplificare le operazioni, è stato creato un certo numero di script di PowerShell per il Centro sicurezza & conformità che consentono di completare le attività complesse correlate alla ricerca di contenuto.
   
-- [Ricercare cassette postali e cartelle del sito specifiche](use-content-search-for-targeted-collections.md) (denominate *insieme mirato* ) quando si è certi che gli elementi sensibili a un caso si trovino in tale cartella 
+- [Ricercare cassette postali e cartelle del sito specifiche](use-content-search-for-targeted-collections.md) (denominate  *insieme mirato*  ) quando si è certi che gli elementi sensibili a un caso si trovino in tale cartella 
     
 - [Eseguire una ricerca nella cassetta postale e nel percorso di OneDrive](search-the-mailbox-and-onedrive-for-business-for-a-list-of-users.md) per un elenco di utenti 
     

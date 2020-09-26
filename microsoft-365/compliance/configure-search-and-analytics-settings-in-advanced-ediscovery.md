@@ -1,5 +1,5 @@
 ---
-title: Configurare le impostazioni di ricerca e analisi-eDiscovery
+title: Configurare le impostazioni di ricerca e analisi-Advanced eDiscovery
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -16,15 +16,15 @@ search.appverid:
 - MET150
 ms.assetid: ''
 ms.custom: seo-marvel-mar2020
-description: Configurare le impostazioni avanzate di eDiscovery che si applicano a tutti i set di revisione in un caso. Sono incluse le impostazioni per l'analisi e l'OCR.
-ms.openlocfilehash: eb934146b065454b54d797e47f7a643b95be546d
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+description: Configurare le impostazioni avanzate di eDiscovery che si applicano a tutti i set di revisione in un caso. Sono incluse le impostazioni per l'analisi e il riconoscimento ottico dei caratteri.
+ms.openlocfilehash: dfacab79f635a817b127614f524d00b0297981fb
+ms.sourcegitcommit: 1423e08a02d30f0a2b993fb99325c3f499c31787
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44033676"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "48277086"
 ---
-# <a name="configure-search-and-analytics-settings"></a>Configurare le impostazioni di ricerca e analisi
+# <a name="configure-search-and-analytics-settings-in-advanced-ediscovery"></a>Configurare le impostazioni di ricerca e analisi in Advanced eDiscovery
 
 È possibile configurare le impostazioni per ogni caso eDiscovery avanzato per controllare la funzionalità seguente.
 
@@ -84,7 +84,15 @@ Vi sono situazioni in cui un determinato testo diminuirà la qualità dell'anali
 
 ## <a name="optical-character-recognition-ocr"></a>Riconoscimento ottico caratteri (OCR)
 
-Quando questa impostazione è attivata, l'OCR verrà eseguito sui file di immagine aggiunti ai set di revisione in modo che il testo dell'immagine possa essere esaminato, cercato, taggato e analizzato. È possibile visualizzare il testo estratto nel Visualizzatore di testo del file di immagine selezionato nel set di revisione. Per ulteriori informazioni, vedere:
+Quando questa impostazione è attivata, l'elaborazione OCR verrà eseguita nei file di immagine. L'elaborazione OCR viene eseguita nelle situazioni seguenti:
+
+- Quando i depositari e le [origini dati non detentive](non-custodial-data-sources.md) vengono aggiunti a un caso. L'elaborazione OCR viene eseguita durante il processo di indicizzazione avanzato. Questo significa che il testo nei file di immagine che soddisfano i criteri di ricerca verrà restituito in una ricerca di raccolta.
+
+- Quando il contenuto proveniente da altre origini dati (che non sono associate a un custode e aggiunto al caso in un'origine dati non affidatario) viene aggiunto a un set di revisione.
+
+Dopo aver aggiunto i dati a un set di revisione, il testo dell'immagine può essere esaminato, cercato, contrassegnato e analizzato. È possibile visualizzare il testo estratto nel Visualizzatore di testo del file di immagine selezionato nel set di revisione. Per altre informazioni, vedere:
+
+- [Indicizzazione avanzata dei dati dei responsabili](indexing-custodian-data.md)
 
 - [Aggiungere i risultati della ricerca a un insieme da rivedere](add-data-to-review-set.md#optical-character-recognition)
 

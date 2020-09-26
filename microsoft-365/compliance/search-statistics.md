@@ -14,17 +14,16 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-ms.assetid: ''
 description: Le statistiche di ricerca rappresentano un modo efficace per convalidare i risultati della ricerca e visualizzarli in stato nella pagina del riquadro a comparsa dettagli ricerca.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: dc6aea96e86388ae7ecfa0fa545bc5571eeff0cd
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 24de99cf0a7ae21b5966811b988c93d64abd5148
+ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035838"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48286092"
 ---
-# <a name="search-statistics"></a>Statistiche della ricerca
+# <a name="search-statistics-in-data-investigations-preview"></a>Statistiche di ricerca in indagini sui dati (anteprima)
 
 Un modo efficace per convalidare i risultati della ricerca quando si verifica un problema di dati consiste nel visualizzare le statistiche sui risultati della ricerca per assicurarsi che siano allineate alle aspettative. Quando una ricerca è terminata, le seguenti statistiche di alto livello vengono visualizzate in **stato** nella pagina riquadro a comparsa dettagli ricerca:
 

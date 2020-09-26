@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Informazioni su come aggiungere o rimuovere i membri che possono accedere a un'indagine durante la gestione di un'analisi dei dati.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: dd57b0bd30e032f16160953e2849d908ecdfc3c5
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 5348d457cfeeeb0f23b6004aefd727a662ac3dc9
+ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034916"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48285160"
 ---
 # <a name="add-or-remove-members-from-a-data-investigation"></a>Aggiungere o rimuovere membri da un'analisi dei dati
 

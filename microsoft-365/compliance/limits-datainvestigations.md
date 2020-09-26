@@ -17,14 +17,14 @@ search.appverid:
 ms.assetid: ''
 description: Trovare informazioni sui limiti relativi a descrizione, indicizzazione, ricerca, esportazione e download in indagini sui dati (anteprima).
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 53c71e50dd83332ebd1bb1076b3dbf5dd304b927
-ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
+ms.openlocfilehash: 30d8b26493fcd0d5059238876abe5b8209429670
+ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47358504"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48285912"
 ---
-# <a name="data-investigations-preview-limits"></a>Limiti relativi alle indagini sui dati (Preview)
+# <a name="limits-in-data-investigations-preview"></a>Limiti nelle indagini sui dati (anteprima)
 
 In questo articolo vengono descritti i limiti delle indagini sui dati (Preview).
 

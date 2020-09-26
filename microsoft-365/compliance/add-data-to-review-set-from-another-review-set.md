@@ -19,12 +19,12 @@ description: Informazioni su come selezionare i documenti da un set di revisione
 ms.custom:
 - seo-marvel-mar2020
 - seo-marvel-apr2020
-ms.openlocfilehash: 433e59629ec40dbdf66b8daf6437ce84e41a3a33
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: e03cd042ac11c36838e712ccd945bc249b849f43
+ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44818603"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48285180"
 ---
 # <a name="add-data-to-a-review-set-from-another-review-set"></a>Aggiungere dati a un set di revisione da un altro set di Revisione
 
@@ -40,12 +40,12 @@ Prima di iniziare, è necessario creare un set di revisione a cui aggiungere i d
 
 È possibile aggiungere contenuto da un set di revisione a un altro selezionando documenti specifici nel set di revisione del codice sorgente o selezionando tutti gli elementi restituiti dalla query set di revisione. Se si aggiungono elementi selezionati, selezionare gli elementi, fare clic su **azione**, quindi selezionare **Aggiungi a un altro set di revisione**.
 
-![Aggiungi a un altro set di Revisione](../media/64f2a4d4-eba3-4ab3-a3ba-d519feea3142.png)
+![Aggiungi a un altro set di recensioni nel menu azione](../media/64f2a4d4-eba3-4ab3-a3ba-d519feea3142.png)
 
 ## <a name="step-2-specify-options-for-adding-to-another-review-set"></a>Passaggio 2: specificare le opzioni per l'aggiunta a un altro set di Revisione
 
 Nella pagina **Aggiungi a un altro** riquadro a comparsa Opzioni del set di revisione scegliere il set di revisione a cui si desidera aggiungere gli elementi. Scegliere se aggiungere **tutti i risultati di ricerca** o **gli elementi selezionati**.  **Altre informazioni** forniscono opzioni per includere tutti i metadati dagli elementi e se includere i tag (selezionando la casella di controllo **etichette** ) dal set di revisione di origine quando i documenti vengono aggiunti al nuovo set di revisione.  
 
-![Aggiungi a un altro set di Revisione](../media/6440ee44-68fd-44d7-b43a-3a477345525c.png)
+![Opzioni per l'aggiunta di dati a un altro set di Revisione](../media/6440ee44-68fd-44d7-b43a-3a477345525c.png)
 
 Dopo aver fatto clic su **OK**, viene creato un nuovo processo (denominato **aggiunta di dati a un altro set di revisione**) per aggiungere il contenuto a un altro set di revisione. È possibile passare alla scheda **processi** e monitorare lo stato di avanzamento del processo. Per ulteriori informazioni, vedere [gestire i processi](managing-jobs-ediscovery20.md).

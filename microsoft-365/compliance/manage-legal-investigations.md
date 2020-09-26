@@ -17,12 +17,12 @@ ms.assetid: 2e5fbe9f-ee4d-4178-8ff8-4356bc1b168e
 ms.custom:
 - seo-marvel-apr2020
 description: Utilizzare i casi di eDiscovery nel centro sicurezza & compliance in Office 365 per gestire le indagini legali dell'organizzazione.
-ms.openlocfilehash: 0e39c2cfb865e6cf649bf1ff7702d97bd29352b9
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: edc9835cdbefa611af4c0906be5d3e1d0404c635
+ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44815503"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48285652"
 ---
 # <a name="manage-legal-investigations-in-microsoft-365"></a>Gestire le indagini legali in Microsoft 365
 
@@ -68,7 +68,7 @@ Ecco una breve panoramica del flusso di lavoro incorporato in Advanced eDiscover
 
 - [Raccogliere i dati](collecting-data-for-ediscovery.md) per un caso e aggiungerli [a un set di revisione](collecting-data-for-ediscovery.md#add-search-results-to-a-review-set) per ulteriori indagini
 
-- [Visualizzare](view-documents-in-review-set.md) i documenti, i dati di [query](review-set-search.md) e gli elementi di [tag](tagging-documents.md) in un set di Revisione
+- [Visualizzare ](view-documents-in-review-set.md) i documenti, i dati di [query](review-set-search.md) e gli elementi di [tag](tagging-documents.md) in un set di Revisione
 
 - [Analizzare i dati del caso](analyzing-data-in-review-set.md) con gli strumenti avanzati di analisi
 

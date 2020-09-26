@@ -14,17 +14,16 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-ms.assetid: ''
 description: Informazioni su come utilizzare la caratteristica di importazione di contenuto non Office 365 per caricare i documenti non di Office 365 in una ricerca di dati.
 ms.custom:
 - seo-marvel-mar2020
 - seo-marvel-apr2020
-ms.openlocfilehash: 9bfebc6aad9bc37d7d78ec4a0d50e6de967ac7d1
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: b6d8c2f65a1fa3a43fa2ac4bf3821cc6c1fac514
+ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44815483"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48285372"
 ---
 # <a name="load-non-microsoft-365-data-into-evidence"></a>Caricare i dati non Microsoft 365 in evidenza
 
@@ -61,7 +60,7 @@ Se si utilizza la funzionalità carica non Microsoft 365 come descritto in quest
 4. Nel passaggio **file di caricamento** specificare il **percorso dei file**, in cui si trovano i dati non Microsoft 365 pianificati per l'importazione.  L'impostazione del percorso corretto garantisce che il comando AzCopy sia stato aggiornato correttamente.
 
 > [!NOTE]
-> Se AzCopy non è ancora stato installato, è possibile eseguire questa operazione da qui:https://docs.microsoft.com/azure/storage/common/storage-use-azcopy
+> Se AzCopy non è ancora stato installato, è possibile eseguire questa operazione da qui: https://docs.microsoft.com/azure/storage/common/storage-use-azcopy
 
 5. Copiare il comando predefinito facendo clic sul collegamento **copia in Appunti** . Avviare un prompt dei comandi di Windows, incollare il comando e premere INVIO.  I file verranno caricati nell'archiviazione BLOB di Azure sicura per il passaggio successivo.
 

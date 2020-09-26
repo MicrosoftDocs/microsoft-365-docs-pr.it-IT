@@ -17,14 +17,14 @@ search.appverid:
 ms.assetid: ''
 description: Informazioni su come selezionare ed esportare il contenuto da un set di revisione per presentazioni o recensioni esterne.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 855f1b8fef7a1df6ed86f058b71e5027851b5f0d
-ms.sourcegitcommit: 37ce0658336bea7b27bf8d6aa759deadc97e7365
+ms.openlocfilehash: b3be21d4c90c861c83acf612e9aadc373189f7ba
+ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/04/2020
-ms.locfileid: "47399178"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48285362"
 ---
-# <a name="export-documents-from-a-review-set"></a>Esportare i documenti da un insieme da rivedere
+# <a name="export-documents-from-a-review-set-in-advanced-ediscovery"></a>Esportare documenti da un set di revisione in Advanced eDiscovery
 
 Export consente agli utenti di personalizzare il contenuto incluso nel pacchetto di download. Lo strumento di esportazione fornisce una pagina di configurazione con le seguenti impostazioni:
 

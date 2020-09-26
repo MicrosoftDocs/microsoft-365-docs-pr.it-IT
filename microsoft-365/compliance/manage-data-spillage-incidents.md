@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: In questo articolo viene descritto come utilizzare lo strumento nuovo data Investigation (Preview) nel centro sicurezza & conformità per gestire un problema di fuoriuscita dei dati.
-ms.openlocfilehash: a544eb1e021faa82d00ac46a7d64a3eb368cc323
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 8151cfa04d166ccc180f01d9bb88322ba6157d82
+ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635936"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48285572"
 ---
 # <a name="manage-a-data-spillage-incident-in-microsoft-365"></a>Gestire un problema di fuoriuscita dei dati in Microsoft 365
 
@@ -141,6 +141,6 @@ Per eliminare un'analisi:
 
 1. Nella scheda **Impostazioni** fare clic su **informazioni di analisi**.
 
-2. Fare clic su **Elimina analisi**. 
+2. Fare clic su  **Elimina analisi**. 
 
 Se non è necessario eliminare l'analisi o se si desidera salvare le informazioni raccolte durante l'indagine, è possibile fare clic su **Chiudi caso**. Successivamente, è possibile riaprire le indagini chiuse.

@@ -1,5 +1,5 @@
 ---
-title: Gestire i set caricati
+title: Gestire i set di carico in Advanced eDiscovery
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -14,15 +14,15 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-ms.assetid: ''
-description: ''
-ms.openlocfilehash: 658b5263bdfb918d36a184832e41af01b9b63e31
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ROBOTS: NOINDEX, NOFOLLOW
+description: Informazioni sulla gestione dei set di carico in Advanced eDiscovery.
+ms.openlocfilehash: 38eb0e19c7e62a42df85343d3328b941332adc03
+ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42071643"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48285602"
 ---
-# <a name="manage-load-sets"></a>Gestire i set caricati
+# <a name="manage-load-sets-in-advanced-ediscovery"></a>Gestire i set di carico in Advanced eDiscovery
 
 Il contenuto sarà disponibile a breve.

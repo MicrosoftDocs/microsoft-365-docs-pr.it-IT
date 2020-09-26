@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: È possibile monitorare lo stato dei processi con esecuzione prolungata che risultano quando si eseguono attività nello strumento indagini dati nel centro sicurezza & conformità.
-ms.openlocfilehash: ef2fe364a20bd0edc48761162f519135b750d9ab
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: be964f79c6407b5a74f4edebe264008113d8d968
+ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635916"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48285722"
 ---
 # <a name="manage-jobs-in-data-investigations-preview"></a>Gestire i processi in indagini sui dati (anteprima)
 
@@ -56,5 +56,5 @@ Nella tabella seguente vengono descritti i diversi Stati di stato per i processi
 | In corso | Il processo è in corso. È possibile monitorare lo stato del processo nella scheda **processi** . |
 | Corretta | Il processo è stato completato correttamente. La data e l'ora in cui il processo è stato completato viene visualizzato nella colonna **completato** nella scheda **processi** . |
 | Parzialmente completata | Il processo ha avuto esito positivo. |
-| Failed | Il processo ha avuto esito negativo.  È consigliabile tentare di rieseguire l'azione che ha attivato il processo. Se il processo ha esito negativo una seconda volta, è consigliabile contattare il supporto tecnico Microsoft e fornire le informazioni sul supporto del processo. |
+| Esito negativo | Il processo ha avuto esito negativo.  È consigliabile tentare di rieseguire l'azione che ha attivato il processo. Se il processo ha esito negativo una seconda volta, è consigliabile contattare il supporto tecnico Microsoft e fornire le informazioni sul supporto del processo. |
 |||

@@ -7,21 +7,20 @@ author: markjjo
 manager: laurawi
 ms.date: ''
 audience: Admin
-ms.topic: article
+ms.topic: reference
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-ms.assetid: ''
 description: Le procedure avanzate di eDiscovery consentono di monitorare lo stato dei processi di lunga durata relativi all'esecuzione di varie attività avanzate di eDiscovery.
-ms.openlocfilehash: a3367a17444ab99cb7c32af455d4564380dfd591
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: d41ac3572c462b85ff8f0bac0cc7205a5c012ce9
+ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632951"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48285170"
 ---
 # <a name="manage-jobs-in-advanced-ediscovery"></a>Gestire i processi in Advanced eDiscovery
 
@@ -56,5 +55,5 @@ Nella tabella seguente vengono descritti i diversi Stati di stato per i processi
 | In corso | Il processo è in corso, è possibile monitorare lo stato del processo nella scheda **processi** . |
 | Corretta | Il processo è stato completato correttamente. La data e l'ora in cui il processo è stato completato viene visualizzato nella colonna **completato** nella scheda **processi** . |
 | Parzialmente completata | Il processo ha avuto esito positivo. Questo stato viene in genere restituito quando il processo non ha trovato dati parzialmente indicizzati (denominati anche *dati non indicizzati*) in alcune origini dati del custode.  |
-| Failed | Il processo ha avuto esito negativo.  È consigliabile tentare di rieseguire l'azione che ha attivato il processo. Se il processo ha esito negativo una seconda volta, è consigliabile contattare il supporto tecnico Microsoft e fornire le informazioni sul supporto del processo. |
+| Esito negativo | Il processo ha avuto esito negativo.  È consigliabile tentare di rieseguire l'azione che ha attivato il processo. Se il processo ha esito negativo una seconda volta, è consigliabile contattare il supporto tecnico Microsoft e fornire le informazioni sul supporto del processo. |
 |||

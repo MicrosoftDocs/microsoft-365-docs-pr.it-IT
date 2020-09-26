@@ -15,13 +15,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: ''
-ms.openlocfilehash: 05aacce9605e17dd45afed8eb3bf16b8784a2316
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ROBOTS: NOINDEX, NOFOLLOW
+description: È possibile annotare e redigere i documenti di prova in indagini sui dati (Preview).
+ms.openlocfilehash: c88750ca23a2bb8e1c689bdd6a05bd8cd0726aa6
+ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42079923"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48285552"
 ---
 # <a name="annotate-and-redact-documents-in-evidence"></a>Annotare e redigere documenti in evidenza
 

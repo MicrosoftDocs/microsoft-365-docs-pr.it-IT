@@ -1,12 +1,12 @@
 ---
-title: Visualizzare i documenti in un set di revisione-eDiscovery
+title: Visualizzare i documenti in un set di revisione in Advanced eDiscovery
 f1.keywords:
 - NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
 audience: Admin
-ms.topic: article
+ms.topic: reference
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
@@ -15,14 +15,14 @@ search.appverid:
 - MET150
 description: Scegliere la modalità di visualizzazione del contenuto in Advanced eDiscovery, ad esempio testo, annotazioni, conversione o visualizzazione nativa.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: c7527caedb06ccc6a2600a35576600452bb9c09a
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: ba66b64460a4aa9cf76641c6d84f0282195b85e9
+ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034288"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48286052"
 ---
-# <a name="view-documents-in-a-review-set"></a>Visualizzare i documenti in un insieme da rivedere
+# <a name="view-documents-in-a-review-set-in-advanced-ediscovery"></a>Visualizzare i documenti in un set di revisione in Advanced eDiscovery
 
 Advanced eDiscovery Visualizza il contenuto tramite diversi visualizzatori ognuno con diversi scopi. È possibile utilizzare i diversi visualizzatori facendo clic su qualsiasi documento all'interno di un set di revisione. I visualizzatori attualmente forniti sono:
 

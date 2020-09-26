@@ -7,7 +7,7 @@ author: markjjo
 manager: laurawi
 ms.date: ''
 audience: Admin
-ms.topic: article
+ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
@@ -17,14 +17,14 @@ search.appverid:
 ms.assetid: ''
 description: Utilizzare i temi in Advanced eDiscovery per organizzare i set di revisione individuando il tema dominante in ciascun documento.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: eb008e091cd8c8330d1cdd5b388e252af70922da
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 3dfc0dca0c6ed62e3ce8384efa2fd3ea407c3ce8
+ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034520"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48285532"
 ---
-# <a name="themes"></a>Temi
+# <a name="themes-in-advanced-ediscovery"></a>Temi in Advanced eDiscovery
 
 In che modo una persona scrive un documento? In genere iniziano con una o più idee che vogliono trasmettere nel documento e compongono l'utilizzo di parole che si allineano con le idee. Più è prevalente un'idea, più le parole che sono correlate a quell'idea tendono ad essere. In questo modo si informa come gli utenti utilizzano i documenti. La cosa importante da capire dalla lettura di un documento è l'idea che il documento sta cercando di trasmettere, quali sono le idee in cui vengono visualizzate e quali sono le relazioni tra le idee.
 

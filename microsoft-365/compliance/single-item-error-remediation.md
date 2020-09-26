@@ -16,14 +16,14 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: È possibile correggere un errore di elaborazione in un documento in un set di revisione in Advanced eDiscovery senza dover seguire il processo di correzione degli errori in blocco.
-ms.openlocfilehash: 3c50f9dcd1448ee36edd0e82e5b2c2879c11d6b5
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: c318148900d891304ebcb9b4a88abfe52f43c05e
+ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42069677"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48285842"
 ---
-# <a name="single-item-error-remediation"></a>Correzione degli errori dei singoli elementi
+# <a name="single-item-error-remediation-in-advanced-ediscovery"></a>Correzione degli errori di un singolo elemento in Advanced eDiscovery
 
 La correzione degli errori garantisce agli utenti avanzati di eDiscovery la possibilità di correggere i problemi relativi ai dati che impediscono l'elaborazione corretta del contenuto da parte di Advanced eDiscovery. Ad esempio, i file protetti da password non possono essere elaborati perché tali file sono bloccati o crittografati. In precedenza, è possibile correggere solo gli errori in blocco utilizzando [questo flusso di lavoro](error-remediation-when-processing-data-in-advanced-ediscovery.md). Tuttavia, a volte, non ha senso correggere gli errori in più file quando non si è sicuri se uno qualsiasi di questi file risponde al caso in cui si sta indagando. Potrebbe anche non essere opportuno correggere gli errori prima di aver avuto la possibilità di esaminare i metadati dei file (come il percorso del file o chi aveva accesso) per aiutarti a prendere decisioni in anticipo sulla reattività. Una nuova funzionalità denominata correzione degli errori di un *singolo elemento* fornisce ai responsabili di eDiscovery la possibilità di visualizzare i metadati dei file con un errore di elaborazione e, se necessario, correggere l'errore direttamente nel set di revisione. In questo articolo viene illustrato come identificare, ignorare e correggere i file con errori di elaborazione in un set di revisione.
 
@@ -53,7 +53,7 @@ A volte potrebbe essere necessario correggere un errore di elaborazione nei docu
 
 Per correggere un singolo documento, attenersi alla procedura seguente:
 
-1.  > Fare **clic su download download****originale** per scaricare una copia del file in un computer locale.
+1. Fare **clic su download download**  >  **originale** per scaricare una copia del file in un computer locale.
 
    ![Scaricare il documento con l'errore di elaborazione](../media/SIERimage5.png)
 

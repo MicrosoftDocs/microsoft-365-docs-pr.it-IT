@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Informazioni sul modo in cui il modulo pertinenza analizza i dati in evidenza con una descrizione del flusso di lavoro di pertinenza e dei passaggi di formazione in indagini sui dati (Preview).
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 64bd0101fd2a0804da9e513241a97bc9f133880e
-ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
+ms.openlocfilehash: fcfe651402b123ac6ec918c4c8a7170c78e78bd3
+ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46528162"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48286072"
 ---
 # <a name="use-the-relevance-module-to-analyze-data-in-evidence"></a>Utilizzare il modulo pertinenza per analizzare i dati in evidenza
 

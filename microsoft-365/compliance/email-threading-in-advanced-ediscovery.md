@@ -1,5 +1,5 @@
 ---
-title: Threading della posta elettronica-eDiscovery
+title: Threading della posta elettronica in Advanced eDiscovery
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -14,17 +14,16 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-ms.assetid: ''
 description: Durante l'esecuzione di un'analisi avanzata di eDiscovery, il threading della posta elettronica analizza una conversazione di posta elettronica e separa ogni messaggio in categorie diverse.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: e6072650a07f634b8dc19a013907eb36469c443b
-ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
+ms.openlocfilehash: b087bfc84175f80daaf1c0d2f1394584a70757ac
+ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46527674"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48285562"
 ---
-# <a name="email-threading"></a>Threading posta elettronica
+# <a name="email-threading-in-advanced-ediscovery"></a>Threading della posta elettronica in Advanced eDiscovery
 
 Si consideri una conversazione di posta elettronica che si sta protrattando da un po' di tempo. Nella maggior parte dei casi, l'ultimo messaggio di posta elettronica sul thread includerà il contenuto di tutti i messaggi di posta elettronica precedenti. la revisione dell'ultimo messaggio di posta elettronica fornirà un contesto completo della conversazione che è stata eseguita nel thread. Il threading e-mail identifica tali messaggi di posta elettronica in modo che i revisori possano rivedere una frazione dei documenti raccolti senza perdere alcun contesto.
 

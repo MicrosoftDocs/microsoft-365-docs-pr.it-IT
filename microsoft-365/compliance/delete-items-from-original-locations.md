@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: ''
 description: In questo articolo viene descritto come utilizzare lo strumento nuovo data Investigation (Preview) nel centro sicurezza & conformità per eliminare gli elementi dai percorsi originali.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 0787944791fea65dfc940b1067abe1bad8097dcd
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 82f411dd380c039d2c8a9011144d5a49fcbfd597
+ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44817885"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48285772"
 ---
 # <a name="delete-items-from-their-original-location-preview"></a>Eliminare gli elementi dal percorso originale (anteprima)
 
@@ -62,7 +62,7 @@ Per eliminare gli elementi dal percorso originale, eseguire la procedura seguent
    > [!NOTE]
    > Nella schermata precedente, il numero di elementi indica il numero di elementi selezionati per l'eliminazione. Il numero di documenti indica il numero totale di elementi, inclusi i file associati a un elemento padre. Ad esempio, se si seleziona un messaggio di posta elettronica e il messaggio contiene un documento di Word allegato, il numero di elementi e documenti visualizzati in **documenti selezionati sarebbe solo** **1 elementi (2 documenti)**.
 
-È possibile monitorare lo stato del processo **Elimina elementi dal percorso originale** nella scheda **processi** . fare clic sul processo per visualizzare la pagina del riquadro a comparsa.
+È possibile monitorare lo stato del processo **Elimina elementi dal percorso originale** nella scheda **processi** . Fare clic sul processo per visualizzare la pagina del riquadro a comparsa.
 
 ![Pagina riquadro a comparsa per eliminare gli elementi dal processo percorsi originali](../media/DataInvestigationsDeleteItems3.png)
 

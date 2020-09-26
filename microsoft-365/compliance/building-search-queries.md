@@ -1,5 +1,5 @@
 ---
-title: Creare query di ricerca-eDiscovery
+title: Creare query di ricerca in Advanced eDiscovery
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -7,26 +7,25 @@ author: markjjo
 manager: laurawi
 ms.date: ''
 audience: Admin
-ms.topic: article
+ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-ms.assetid: ''
 ms.custom: seo-marvel-mar2020
 description: Utilizzare parole chiave e condizioni per limitare l'ambito della ricerca durante la ricerca di dati con Advanced eDiscovery in Microsoft 365.
-ms.openlocfilehash: 86e763577c24473f8f55c5c8dc26d1853509d50a
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 3ddd9c38f16fc2dd0fcb96e5fffc79ebbacdbda4
+ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035514"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48285802"
 ---
-# <a name="build-search-queries"></a>Creare query di ricerca
+# <a name="build-search-collection-queries-in-advanced-ediscovery"></a>Generare query insieme di ricerca in Advanced eDiscovery
 
-Quando si crea una query di ricerca, è possibile utilizzare parole chiave per individuare contenuti e condizioni specifici per limitare l'ambito della ricerca per restituire gli elementi più rilevanti per la propria indagine legale.
+Durante la creazione di query di ricerca per la raccolta di dati in un caso avanzato di eDiscovery, è possibile utilizzare parole chiave per trovare contenuti e condizioni specifici per limitare l'ambito della ricerca per restituire gli elementi più rilevanti per la propria indagine legale.
 
 ![Utilizzare parole chiave e condizioni per limitare i risultati di una ricerca](../media/SearchQueryBox.png)
 

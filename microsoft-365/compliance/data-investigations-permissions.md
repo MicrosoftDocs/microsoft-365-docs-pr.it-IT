@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: In questo articolo viene descritto come configurare le autorizzazioni necessarie per l'utilizzo dello strumento indagini dati in Microsoft 365.
-ms.openlocfilehash: 47a7923d38cfa0ea3bad6c4c266f580f8104c429
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 85a800c3e21c270f46de78bdef77d7b7a98e0eca
+ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637758"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48285442"
 ---
 # <a name="assign-permissions-for-data-investigations-preview"></a>Assegnare le autorizzazioni per le indagini sui dati (anteprima)
 

@@ -20,12 +20,12 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: Informazioni su come estendere le soluzioni di conformità di Microsoft 365 utilizzando connettori di dati di terze parti e API di Microsoft Graph.
-ms.openlocfilehash: 284125db8243b10f5c8de7e0a37c1b7284709c28
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 8eeb83013ec412ed82973b37c4c10e2250f5eaf8
+ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48204401"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48285742"
 ---
 # <a name="microsoft-365-compliance-extensibility"></a>Extensibility di conformità di Microsoft 365
 
@@ -77,7 +77,7 @@ Le funzionalità di [prevenzione della perdita di dati (DLP)](dlp-microsoft-team
 
 Queste due API formano l'API di Microsoft Graph per i team DLP. È possibile iniziare provando l' [app di esempio](https://github.com/microsoftgraph/csharp-webhook-with-resource-data). Per ulteriori informazioni sui webhook di messaggistica di Microsoft teams, vedere la [documentazione](https://docs.microsoft.com/graph/api/subscription-post-subscriptions).
 
-Per i requisiti di licenza per i team DLP, vedere [Microsoft 365 Licensing Guidance for security & Compliance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#office-365-data-loss-prevention-for-exchange-online-sharepoint-online-and-onedrive-for-business).
+Per i requisiti di licenza per i team DLP, vedere [Microsoft 365 Licensing Guidance for security & Compliance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#communication-data-loss-prevention-for-teams).
 
 ### <a name="microsoft-graph-api-for-ediscovery-preview"></a>API di Microsoft Graph per eDiscovery (anteprima)
 

@@ -7,7 +7,7 @@ author: markjjo
 manager: laurawi
 ms.date: ''
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
@@ -17,14 +17,14 @@ search.appverid:
 ms.assetid: ''
 description: L'assegnazione di tag ai documenti in un set di revisione consente di rimuovere contenuti non necessari e di identificare i contenuti rilevanti in un caso avanzato di eDiscovery.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 445bf9a0ee5959c4972920a74e7bd1596d9edca1
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 83e7a3c9c097968c4d773e6e2092bb3c50154cc3
+ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034550"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48285282"
 ---
-# <a name="tag-documents-in-a-review-set"></a>Contrassegnare i documenti in un insieme da rivedere
+# <a name="tag-documents-in-a-review-set-in-advanced-ediscovery"></a>Tag documenti in un set di revisione in Advanced eDiscovery
 
 L'organizzazione del contenuto in un set di revisione è importante per completare diversi flussi di lavoro nel processo di eDiscovery. Ciò include:
 

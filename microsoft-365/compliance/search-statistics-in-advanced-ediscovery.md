@@ -1,5 +1,5 @@
 ---
-title: Statistiche della ricerca
+title: Statistiche di ricerca in Advance eDiscovery
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -7,46 +7,55 @@ author: esclee
 manager: laurawi
 ms.date: ''
 audience: Admin
-ms.topic: article
+ms.topic: reference
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-ms.assetid: ''
-description: ''
-ms.openlocfilehash: b7975f5d288348177cbb6edec8002b4ed49de327
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: Convalidare i risultati della ricerca visualizzando le statistiche generate dopo l'esecuzione di una ricerca in una raccolta in Advanced eDiscovery.
+ms.openlocfilehash: ef5653a76d94272ba5f608149648f1421198929a
+ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42069873"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48286082"
 ---
-# <a name="search-statistics"></a>Statistiche della ricerca
+# <a name="search-statistics-in-advanced-ediscovery"></a>Statistiche di ricerca in Advanced eDiscovery
 
 Un modo per convalidare i risultati della ricerca consiste nell'esaminare le statistiche sui risultati per assicurarsi che siano allineate alle aspettative. Al termine della ricerca, le statistiche di alto livello vengono visualizzate nel riquadro a comparsa dettagli ricerca:
+
 - Numero e volume degli elementi recuperati dalla ricerca
-- Numero e volume degli elementi parzialmente indicizzati/non indicizzati che sono stati trovati nei percorsi di ricerca
+
+- Numero e volume degli elementi parzialmente indicizzati o non indicizzati individuati nei percorsi di ricerca
+
 - Numero di cassette postali e percorsi ricercati.
 Per visualizzare statistiche più dettagliate, fare clic su "statistiche" nel riquadro a comparsa dettagli ricerca.
 
-## <a name="summary"></a>Riepilogo
+## <a name="summary-view"></a>Visualizzazione Riepilogo
 
-In visualizzazione Riepilogo, è possibile visualizzare i risultati della ricerca suddivisi in base al tipo di posizione (ad esempio, Exchange). Per ogni tipo di posizione, è possibile visualizzare le informazioni seguenti:
+Nella visualizzazione Riepilogo, è possibile visualizzare i risultati della ricerca suddivisi in base al tipo di posizione (ad esempio, Exchange). Per ogni tipo di posizione, è possibile visualizzare le informazioni seguenti:
+
 - Numero di posizioni in cui sono stati confrontati gli elementi che corrispondono alle condizioni di ricerca
+
 - Il numero di elementi provenienti da questi percorsi che corrispondono alle condizioni di ricerca
+
 - Volume totale di elementi che corrispondono alle condizioni di ricerca.
 
-## <a name="top-locations"></a>Posizioni principali
+## <a name="top-locations-view"></a>Visualizzazione posizioni principali
 
-Nella visualizzazione posizioni principali, vengono visualizzati i singoli percorsi con la maggior parte delle corrispondenze. Per ogni posizione, è possibile visualizzare le informazioni seguenti:
+Nella visualizzazione posizioni superiori, vengono visualizzati i singoli percorsi con la maggior parte delle corrispondenze. Per ogni posizione, è possibile visualizzare le informazioni seguenti:
+
 - Nome della posizione (ad esempio, URL di SharePoint)
+
 - Tipo di posizione
+
 - Numero di elementi che corrispondono alle condizioni di ricerca
+
 - Volume totale di elementi che corrispondono alle condizioni di ricerca.
 
-## <a name="queries"></a>Query
+## <a name="queries-view"></a>Visualizzazione query
 
 Se sono state utilizzate (c:s) parole chiave o righe di parole chiave nella query, è possibile visualizzare la scomposizione della query nella visualizzazione query per tipo di percorso. Per ogni tipo di posizione, verrà visualizzato quanto segue:
 

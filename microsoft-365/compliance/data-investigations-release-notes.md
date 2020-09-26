@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-mar2020
 - seo-marvel-apr2020
 description: In questo articolo vengono riportate le note sulla versione che contengono modifiche e nuove funzionalità per lo strumento indagini dati (Preview) in Microsoft 365.
-ms.openlocfilehash: 40d441aff8da69b4ead0ab2f49fbe93589aa709c
-ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
+ms.openlocfilehash: 2a46236d000c62c4ab73f8a47e9c9f661fb17a61
+ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46528026"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48285412"
 ---
 # <a name="release-notes-for-data-investigations-preview-in-microsoft-365"></a>Note sulla versione per le indagini sui dati (Preview) in Microsoft 365
 
