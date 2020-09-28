@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Informazioni sui criteri di conservazione e sulle etichette di conservazione, utili per conservare tutto che serve ed eliminare ciò che non serve.
-ms.openlocfilehash: 3d5bf971f65be5fd6ef4fdbed46cc41827657a54
-ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
+ms.openlocfilehash: d8b9ff7bea32f489a5cce5f64626908e8ec56fa1
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48132136"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48197339"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>Informazioni sui criteri e sulle etichette di conservazione
 
@@ -31,6 +31,7 @@ ms.locfileid: "48132136"
 Per la maggior parte delle organizzazioni, il volume e la complessità dei dati aumentano giorno dopo giorno, a causa di posta elettronica, documenti, messaggi istantanei e altro ancora. La gestione o il controllo efficace di queste informazioni è importante perché è necessario:
   
 - **Conformarsi in modo proattivo alle normative del settore e ai criteri interni** che richiedono di conservare il contenuto per un periodo di tempo minimo, ad esempio la norma Sarbanes-Oxley Act richiede che alcuni tipi di contenuto vengano conservati per sette anni. 
+
 - **Ridurre i rischi in caso di controversie legali o di violazioni della sicurezza** eliminando definitivamente i contenuti obsoleti che non è più necessario mantenere. 
     
 - **Aiutare l'organizzazione a condividere le informazioni in modo efficace e a essere più flessibile** assicurando che gli utenti usino solo contenuti aggiornati e pertinenti. 
@@ -58,7 +59,7 @@ Quando al contenuto è assegnata un'impostazione di conservazione, rimane nella 
 
 - Per le cassette postali di Exchange, la copia viene conservata nella cartella **Elementi ripristinabili**. 
 
-- Per i messaggi di canale e chat di Teams, la copia viene conservata in una cartella nascosta dal nome **SubstrateHolds** all'interno della cartella **Elementi ripristinabili** di Exchange.
+- Per i messaggi di Teams e Yammer, la copia viene conservata in una cartella nascosta denominata **SubstrateHolds** all'interno della cartella **Elementi ripristinabili** di Exchange.
 
 > [!NOTE]
 > La raccolta di archiviazione consuma spazio di archiviazione non esente dalla quota di archiviazione di un sito. Potrebbe essere necessario aumentare lo spazio di archiviazione quando si usano impostazioni di conservazione per i gruppi di SharePoint e Microsoft 365.
@@ -69,6 +70,7 @@ Per informazioni più dettagliate sul funzionamento delle impostazioni di conser
 
 - [Informazioni sulla conservazione per SharePoint e OneDrive](retention-policies-sharepoint.md)
 - [Informazioni sulla conservazione per Microsoft Teams](retention-policies-teams.md)
+- [Informazioni sulla conservazione per Yammer](retention-policies-yammer.md)
 - [Informazioni sulla conservazione per Exchange](retention-policies-exchange.md)
 
 ## <a name="retention-policies-and-retention-labels"></a>Criteri di conservazione ed etichette di conservazione.
@@ -102,6 +104,8 @@ Diversamente dai criteri di conservazione, le impostazioni di conservazione dell
 - Cartelle pubbliche di Exchange
 - Messaggi del canale di Teams
 - Chat di Teams
+- Messaggi della community di Yammer
+- Messaggi privati di Yammer
 
 È possibile applicare in modo efficiente un singolo criterio a più posizioni oppure a posizioni o utenti specifici.
     
@@ -214,7 +218,7 @@ Oltre ai criteri per le etichette di conservazione, è anche possibile creare un
    
 In Exchange, le etichette di conservazione applicate automaticamente vengono applicate solo ai nuovi messaggi inviati (dati in transito), non a tutti gli elementi attualmente presenti nella cassetta postale (dati archiviati). Inoltre, le etichette di conservazione applicate automaticamente per i tipi di informazioni sensibili e i classificatori sottoponibili a training possono essere applicate solo a tutte le cassette postali, non a cassette postali specifiche.
   
-Le cartelle pubbliche di Exchange, Skype e le chat e i messaggi di canale di Teams non supportano le etichette di conservazione. Per conservare ed eliminare contenuto in queste posizioni, usare i criteri di conservazione.
+Le cartelle pubbliche di Exchange, Skype e i messaggi di Teams e Yammer non supportano le etichette di conservazione. Per conservare ed eliminare contenuto in queste posizioni, usare i criteri di conservazione.
 
 #### <a name="only-one-retention-label-at-a-time"></a>Una sola etichetta di conservazione alla volta
 
@@ -265,7 +269,7 @@ Usare la tabella seguente per stabilire se usare criteri di conservazione o etic
 |Funzionalità|Criterio di conservazione |Etichetta di conservazione|
 |:-----|:-----|:-----|:-----|
 |Impostazioni per conservare e poi eliminare, solo conservare oppure solo eliminare |Sì |Sì |
-|Carichi di lavoro supportati: <br />- Exchange <br />- SharePoint <br />- OneDrive <br />- Gruppi di Microsoft 365 <br />- Skype for Business <br />- Teams|<br /> Sì <br /> Sì <br /> Sì <br /> Sì <br /> Sì <br /> Sì | <br /> Sì, tranne le cartelle pubbliche <br /> Sì <br /> Sì <br /> Sì <br /> No <br /> No  |
+|Carichi di lavoro supportati: <br />- Exchange <br />- SharePoint <br />- OneDrive <br />- Gruppi di Microsoft 365 <br />- Skype for Business <br />- Teams<br />- Yammer|<br /> Sì <br /> Sì <br /> Sì <br /> Sì <br /> Sì <br /> Sì | <br /> Sì, tranne le cartelle pubbliche <br /> Sì <br /> Sì <br /> Sì <br /> No <br /> No <br /> No |
 |Conservazione applicata automaticamente | Sì | Sì |
 |Conservazione applicata in base alle condizioni <br /> - tipi di informazioni sensibili, query KQL, classificatori sottoponibili a training| No | Sì |
 |Conservazione applicata manualmente | No | Sì |

@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: ad755398afc80f829561854217f1295ce8fff6f5
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 1151fd74e5f40a91107467b6004049081c4a9a69
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47417860"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208238"
 ---
 # <a name="payment-card-industry-pci-data-security-standard-dss"></a>Payment Card Industry (PCI) Data Security Standard (DSS)
 
@@ -60,7 +60,7 @@ Per creare e implementare una soluzione PCI DSS nel cloud in maniera ancora più
 
 ## <a name="frequently-asked-questions"></a>Domande frequenti
 
-**Perché la data riportata sulla prima pagina dell'Attestato di conformità adeguamento (AoC) è "giugno 2018"?**
+**Perché la data riportata sulla prima pagina dell'Attestato di conformità adeguamento (AoC) è ‘giugno 2018’?**
 
 La data giugno 2018 riportata sulla prima pagina dell’attestato si riferisce a quando il modello AoC è stato pubblicato. Fare riferimento alla Sezione 2 per la data della valutazione.
 
@@ -93,6 +93,10 @@ Al momento, OneDrive for Business e SharePoint Online sono conformi a PCI DSS so
 **Cosa includono OneDrive for Business e SharePoint Online?**
 
 Attualmente, solo i file e i documenti caricati su OneDrive for Business e SharePoint Online saranno conformi a PCI DSS.
+
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>Usare Microsoft Compliance Manager per valutare i rischi
+
+[Microsoft Compliance Manager](compliance-manager.md) è una funzionalità nel [Centro conformità Microsoft 365](microsoft-365-compliance-center.md) utile per comprendere lo stato di conformità dell'organizzazione e intraprendere azioni per ridurre i rischi. Compliance Manager offre un modello premium per creare una valutazione per questa normativa. Individuare il modello nella pagina **modelli di valutazioni** in Compliance Manager. Informazioni su come [creare valutazioni in Compliance Manager](compliance-manager-assessments.md).
 
 ## <a name="resources"></a>Risorse
 

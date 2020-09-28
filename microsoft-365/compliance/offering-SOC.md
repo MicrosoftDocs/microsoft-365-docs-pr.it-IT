@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: cdc8835989ada5ebe4089c4d7fed5fd8cf064673
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: a648673d06300190695db52d14e85f114bfe0e87
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47415423"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208148"
 ---
 # <a name="service-organization-controls-soc"></a>Service Organization Controls (SOC)
 
@@ -121,9 +121,9 @@ Sì. Quando esegui la migrazione delle applicazioni e dei dati ai servizi cloud 
 
 Il [SOC Toolkit for Service Organizations](https://aka.ms/soc-toolkit) è una risorsa utile per comprendere i processi di reporting SOC e per promuoverne l'utilizzo all'interno della tua organizzazione.
 
-## <a name="use-microsoft-compliance-score-to-assess-your-risk"></a>Usare Punteggio di conformità Microsoft per valutare i rischi
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>Usare Microsoft Compliance Manager per valutare i rischi
 
-[Punteggio di conformità Microsoft](compliance-score.md) è una funzionalità in anteprima nel [Centro conformità Microsoft 365](microsoft-365-compliance-center.md) utile per comprendere lo stato di conformità dell'organizzazione e intraprendere azioni per ridurre i rischi. Dopo aver [configurato Punteggio di conformità](compliance-score-setup.md), selezionare il [modello SOC 1](https://go.microsoft.com/fwlink/?linkid=2117918) preconfigurato e il [modello SOC 2](https://go.microsoft.com/fwlink/?linkid=2117919) nel menu a discesa **Modello** per aiutare l'organizzazione a rispettare i requisiti di questa normativa.
+[Microsoft Compliance Manager](compliance-manager.md) è una funzionalità nel [Centro conformità Microsoft 365](microsoft-365-compliance-center.md) utile per comprendere lo stato di conformità dell'organizzazione e intraprendere azioni per ridurre i rischi. Compliance Manager offre un modello premium per creare una valutazione per questa normativa. Individuare il modello nella pagina **modelli di valutazioni** in Compliance Manager. Informazioni su come [creare valutazioni in Compliance Manager](compliance-manager-assessments.md).
 
 ## <a name="resources"></a>Risorse
 

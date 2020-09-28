@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 0fbef84ca8f4d8993ca40b48b25effaf44e141f5
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 8c2c1e516e0d2c338104d36bb227e877d490ecb7
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47416162"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208638"
 ---
 # <a name="cloud-computing-compliance-controls-catalog-c5"></a>Cloud Computing Compliance Controls Catalog (C5)
 
@@ -59,6 +59,10 @@ IT-Grundschutz fornisce una metodologia specifica che consente alle organizzazio
 **Cos'è Microsoft Cloud per la Germania?**
 
 Microsoft Cloud per la Germania si trova fisicamente in Germania e rispetta i requisiti della legge sulla privacy tedesca, che limita rigorosamente il trasferimento di dati personali ad altri paesi e offre protezione contro l'accesso da parte delle autorità da altre giurisdizioni che potrebbero violare le leggi nazionali. Azure Germania fornisce i propri servizi da data center tedeschi con residenza dei dati in Germania, offrendo rigorose misure di accesso e controllo delle informazioni tramite un modello di trustee univoco disciplinato dalla legislazione tedesca.
+
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>Usare Microsoft Compliance Manager per valutare i rischi
+
+[Microsoft Compliance Manager](compliance-manager.md) è una funzionalità nel [Centro conformità Microsoft 365](microsoft-365-compliance-center.md) utile per comprendere lo stato di conformità dell'organizzazione e intraprendere azioni per ridurre i rischi. Compliance Manager offre un modello premium per creare una valutazione per questa normativa. Individuare il modello nella pagina **modelli di valutazioni** in Compliance Manager. Informazioni su come [creare valutazioni in Compliance Manager](compliance-manager-assessments.md).
 
 ## <a name="resources"></a>Risorse
 

@@ -17,16 +17,19 @@ search.appverid:
 - MOE150
 - MET150
 description: Istruzioni sulla creazione e la pubblicazione di etichette di conservazione per applicarle nelle app al fine di conservare ciò che serve ed eliminare ciò che non serve
-ms.openlocfilehash: 2394ee4534ef837488503aae2558964924b2de6b
-ms.sourcegitcommit: 9f5b136b96b3af4db4cc6f5b1f35130ae60d6b12
+ms.openlocfilehash: 478a0d9952d8e8e33ef88926ba2415276338c193
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "47816915"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48198515"
 ---
 # <a name="create-retention-labels-and-apply-them-in-apps"></a>Creare etichette di conservazione e applicarle nelle app
 
 >*[Indicazioni per l'assegnazione di licenze di Microsoft 365 per sicurezza e conformità](https://aka.ms/ComplianceSD).*
+
+> [!NOTE]
+> Questo scenario è supportato per tutte le configurazioni delle etichette di conservazione, inclusi i [record normativi](records-management.md#records).
 
 Usare le informazioni seguenti per creare e pubblicare [etichette di conservazione](retention.md), e applicarle quindi a documenti e messaggi di posta elettronica.
 
@@ -68,7 +71,7 @@ La posizione in cui si creano e si configurano le etichette di conservazione var
     
     - Per informazioni sui descrittori del piano di archiviazione, vedere [Usare il piano di archiviazione per gestire le etichette di conservazione](file-plan-manager.md).
     
-    - Per usare l'etichetta di conservazione per dichiarare un [record](records-management.md#records), abilitare l'opzione **Contrassegna elementi come record**.
+    - Per usare le etichette di conservazione per dichiarare i record, selezionare **Contrassegna elementi come record**o **Contrassegna elementi come record normativi**. Per altre informazioni, vedere [Configurare le etichette di conservazione per dichiarare i record](declare-records.md#configuring-retention-labels-to-declare-records).
 
 3. Dopo aver creato l’etichetta, quando compare l'opzione per pubblicarla, applicare automaticamente l’etichetta oppure salvarla: selezionare **Salva etichetta per ora** e quindi fare clic su **Fatto**.
 

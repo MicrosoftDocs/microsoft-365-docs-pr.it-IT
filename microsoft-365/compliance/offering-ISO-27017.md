@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: c289b8c3ad2e177a9c2ee575014d8682da553352
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: a01a0599776c33d46850bcd0a5fbc6c3377056fa
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47417690"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208298"
 ---
 # <a name="isoiec-270172015-code-of-practice-for-information-security-controls"></a>Codice di condotta in materia di controllo della sicurezza informatica ISO/IEC 27017:2015 
 
@@ -79,11 +79,15 @@ Si può scaricare il [certificato ISO/IEC 27017:2015](https://aka.ms/azureiso270
 
 **Posso usare la conformità ISO/IEC 27017 dei servizi Microsoft nella procedura di certificazione della mia organizzazione?**
 
-Sì. Se l' azienda desidera una certificazione per le implementazioni distribuite su qualsiasi servizio enterprise cloud Microsoft, è possibile utilizzare le certificazioni rilevanti di Microsoft nella valutazione dell'adeguamento. Tuttavia, si ha la responsabilità di affidare l'incarico a un perito affinché valuti la propria implementazione in termini di conformità e per i controlli e i processi all'interno dell'organizzazione.
+Sì. Se l'azienda desidera una certificazione per le implementazioni distribuite su qualsiasi servizio cloud aziendale nell’ambito Microsoft, è possibile utilizzare le certificazioni rilevanti di Microsoft nella valutazione dell'adeguamento. Tuttavia, hai la responsabilità di affidare l'incarico a un valutatore affinché valuti la tua implementazione in termini di adeguamento e per i controlli e i processi all'interno dell'organizzazione.
 
 **Come si possono ottenere copie dei report di controllo applicabili?**
 
 Il [portale di attendibilità dei servizi](https://aka.ms/stphelp) fornisce report di controllo indipendenti e di terze parti e altra documentazione correlata. È possibile usare il portale per scaricare e rivedere questa documentazione come supporto per i requisiti normativi.
+
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>Usare Microsoft Compliance Manager per valutare i rischi
+
+[Microsoft Compliance Manager](compliance-manager.md) è una funzionalità nel [Centro conformità Microsoft 365](microsoft-365-compliance-center.md) utile per comprendere lo stato di conformità dell'organizzazione e intraprendere azioni per ridurre i rischi. Compliance Manager offre un modello premium per creare una valutazione per questa normativa. Individuare il modello nella pagina **modelli di valutazioni** in Compliance Manager. Informazioni su come [creare valutazioni in Compliance Manager](compliance-manager-assessments.md).
 
 ## <a name="resources"></a>Risorse
 

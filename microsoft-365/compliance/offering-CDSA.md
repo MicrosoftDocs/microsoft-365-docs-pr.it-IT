@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 8c87d00e76ac71be3527e9db741aea6ee7a741f4
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: d57c725f471e5197f269270eca19c863a7f79555
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47417310"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208628"
 ---
 # <a name="content-delivery--security-association-cdsa-content-protection--security-cps-standard"></a>Standard CPS (Content Protection & Security) della CDSA (Content Delivery & Security Association)
 
@@ -67,6 +67,10 @@ Per istruzioni, vedere la [guida all'implementazione di Azure di CDSA](https://a
 **Posso usare la conformità di Microsoft nel processo di certificazione della mia organizzazione?**
 
 Sì. Puoi cercare di ottenere la certificazione CPS di Azure nell'ambito della tua certificazione CPS utilizzando le funzionalità di crittografia e sicurezza in Azure.
+
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>Usare Microsoft Compliance Manager per valutare i rischi
+
+[Microsoft Compliance Manager](compliance-manager.md) è una funzionalità nel [Centro conformità Microsoft 365](microsoft-365-compliance-center.md) utile per comprendere lo stato di conformità dell'organizzazione e intraprendere azioni per ridurre i rischi. Compliance Manager offre un modello premium per creare una valutazione per questa normativa. Individuare il modello nella pagina **modelli di valutazioni** in Compliance Manager. Informazioni su come [creare valutazioni in Compliance Manager](compliance-manager-assessments.md).
 
 ## <a name="resources"></a>Risorse
 

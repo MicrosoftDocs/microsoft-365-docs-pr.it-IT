@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 33fd2cef596144c48dcc76594d8d466e09481dd4
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 56f01880e3e2f381d85ed386ac413d4dbff38ff4
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47415616"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208598"
 ---
 # <a name="cloud-security-alliance-csa-star-attestation"></a>Attestazione Cloud Security Alliance (CSA) STAR
 
@@ -68,6 +68,10 @@ La CCM corrisponde ai framework dei controlli, alle normative e agli standard di
 - **Livello 1** - **Autovalutazione CSA STAR**: Azure, Microsoft Dynamics 365 e Microsoft Office 365. L'[autovalutazione](offering-csa-star-self-assessment.md) è un'offerta gratuita fornita dai provider di servizi cloud per documentare i propri controlli di sicurezza e consentire ai clienti di valutare la sicurezza del servizio.
 - **Livello 2** - **Certificazione CSA STAR**: Azure, Microsoft Cloud App Security, Intune e Microsoft Power BI. La certificazione STAR si basa sull'ottenimento della certificazione ISO/IEC 27001 e sul rispetto dei criteri specificati nella CCM. Viene rilasciata dopo una rigorosa valutazione eseguita da terze parti dei controlli e delle procedure di sicurezza di un provider di servizi cloud.
 - **Livello 2** - **Attestazione CSA STAR**: Azure e Intune. La CSA e l'AICPA hanno collaborato per fornire le linee guida ai Dottori commercialisti relative agli impegni SOC 2, usando i criteri dell'AICPA (Principi dei servizi fiduciari - Trust Service Principles, AT 101) e la CSA CCM. L'[attestazione STAR](offering-CSA-STAR-Attestation.md) si basa su tali linee guida e viene riconosciuta dopo una rigorosa valutazione indipendente dei provider di servizi cloud.
+
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>Usare Microsoft Compliance Manager per valutare i rischi
+
+[Microsoft Compliance Manager](compliance-manager.md) è una funzionalità nel [Centro conformità Microsoft 365](microsoft-365-compliance-center.md) utile per comprendere lo stato di conformità dell'organizzazione e intraprendere azioni per ridurre i rischi. Compliance Manager offre un modello premium per creare una valutazione per questa normativa. Individuare il modello nella pagina **modelli di valutazioni** in Compliance Manager. Informazioni su come [creare valutazioni in Compliance Manager](compliance-manager-assessments.md).
 
 ## <a name="resources"></a>Risorse
 

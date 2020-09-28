@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Configurare etichette di riservatezza per la crittografia per proteggere i dati con restrizioni di accesso e utilizzo.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e3604518be47e35590792689c46bb036cbeb8965
-ms.sourcegitcommit: 37ce0658336bea7b27bf8d6aa759deadc97e7365
+ms.openlocfilehash: 6a1be64f98def6676e27e1e0c1b3f7e031b31cba
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/04/2020
-ms.locfileid: "47399265"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48196621"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>Limitare l'accesso al contenuto utilizzando la crittografia nelle etichette di riservatezza 
 
@@ -159,7 +159,7 @@ Quando si assegnano le autorizzazioni, è possibile scegliere:
 
 - Tutti gli utenti autenticati. Accertarsi di comprendere i [requisiti e le limitazioni](#requirements-and-limitations-for-add-any-authenticated-users) di questa impostazione prima di selezionarla.
 
-- Qualsiasi utente o gruppo di sicurezza abilitato alla posta elettronica, gruppo di distribuzione o gruppo di Microsoft 365 ([denominato in precedenza gruppo di Office 365](https://techcommunity.microsoft.com/t5/microsoft-365-blog/office-365-groups-will-become-microsoft-365-groups/ba-p/1303601)) in Azure AD. Il gruppo Microsoft 365 può avere un'appartenenza statica o [un'appartenenza dinamica](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-create-rule). Non è possibile usare un [gruppo di distribuzione dinamico di Exchange](https://docs.microsoft.com/Exchange/recipients/dynamic-distribution-groups/dynamic-distribution-groups?view=exchserver-2019) perché questo tipo di gruppo non è sincronizzato con Azure AD e non è possibile usare un gruppo di sicurezza abilitato alla posta.
+- Qualsiasi utente o gruppo di sicurezza abilitato alla posta elettronica, gruppo di distribuzione o gruppo di Microsoft 365 ([denominato in precedenza gruppo di Office 365](https://techcommunity.microsoft.com/t5/microsoft-365-blog/office-365-groups-will-become-microsoft-365-groups/ba-p/1303601)) in Azure AD. Il gruppo Microsoft 365 può avere un'appartenenza statica o [un'appartenenza dinamica](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-create-rule). Non è possibile usare un [gruppo di distribuzione dinamico di Exchange](https://docs.microsoft.com/Exchange/recipients/dynamic-distribution-groups/dynamic-distribution-groups) perché questo tipo di gruppo non è sincronizzato con Azure AD e non è possibile usare un gruppo di sicurezza abilitato alla posta.
 
 - Qualsiasi indirizzo di posta elettronica o dominio. Usare questa opzione per specificare tutti gli utenti di un'altra organizzazione che usa Azure AD, immettendo qualsiasi nome di dominio di tale organizzazione. Si può usare questa opzione anche per i provider di servizi di social networking immettendo il nome di dominio, ad esempio **gmail.com**, **hotmail.com** o **outlook.com**.
     
@@ -211,7 +211,7 @@ Per ulteriori informazioni, vedere [Emittente di Rights Management e proprietari
 ### <a name="double-key-encryption"></a>Crittografia a chiave doppia
 
 > [!NOTE]
-> Al momento questa funzionalità è disponibile in anteprima pubblica. Per altre informazioni, vedere [Annuncio dell'anteprima pubblica della crittografia a chiave doppia per Microsoft 365](https://techcommunity.microsoft.com/t5/microsoft-security-and/announcing-public-preview-of-double-key-encryption-for-microsoft/ba-p/1534451).
+> Al momento la funzionalità è supportata solo dal client di etichettatura unificata di Azure Information Protection.
 
 Selezionare questa opzione solo dopo aver configurato il servizio di crittografia a chiave doppia e sarà necessario usare questa crittografia a chiave doppia per i file a cui è applicata questa l'etichetta.
 

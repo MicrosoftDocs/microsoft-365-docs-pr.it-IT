@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: ad72be958e8d028ff40dcbd483accd0dbe5c0527
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: d35e9893c54367bc62de65300613853408070c33
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47415760"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208268"
 ---
 # <a name="national-bank-of-belgium-nbb-and-the-financial-services-and-markets-authority-fsma"></a>Banca nazionale del Belgio e FSMA (Financial Services Markets Authority)
 
@@ -69,6 +69,10 @@ No. Tuttavia, gli istituti finanziari devono informare la Banca nazionale del Be
 **Devono essere incluse clausole obbligatorie nel contratto con il fornitore dei servizi cloud?**
 
 Sì. Esistono punti specifici che gli istituti finanziari devono inserire nei propri contratti con i fornitori di servizi cloud. La parte 2 dell'[elenco di controllo di Microsoft](https://aka.ms/FinServ-Guide-Belgium) (pagina 49) illustra tali punti nelle relative sezioni dei documenti contrattuali Microsoft.
+
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>Usare Microsoft Compliance Manager per valutare i rischi
+
+[Microsoft Compliance Manager](compliance-manager.md) è una funzionalità nel [Centro conformità Microsoft 365](microsoft-365-compliance-center.md) utile per comprendere lo stato di conformità dell'organizzazione e intraprendere azioni per ridurre i rischi. Compliance Manager offre un modello premium per creare una valutazione per questa normativa. Individuare il modello nella pagina **modelli di valutazioni** in Compliance Manager. Informazioni su come [creare valutazioni in Compliance Manager](compliance-manager-assessments.md).
 
 ## <a name="resources"></a>Risorse
 

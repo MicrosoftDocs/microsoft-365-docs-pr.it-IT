@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 47cc5cf10f048640ead85d239881fa9b2603e699
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 3757d400d16b324f512c60059c8d8b762916894c
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47417500"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208258"
 ---
 # <a name="multi-tier-cloud-security-mtcs-standard-for-singapore"></a>Standard Multi-Tier Cloud Security (MTCS) per Singapore
 
@@ -96,6 +96,10 @@ Lo [Schema di certificazione MTCS](https://go.microsoft.com/fwlink/p/?linkid=209
 **Posso usare la conformità di Microsoft nel processo di certificazione della mia organizzazione?**
 
 Sì. Se hai l'esigenza di certificare i tuoi servizi basati su questi servizi cloud Microsoft, puoi utilizzare la certificazione MTCS per ridurre l'impatto del controllo sulla tua infrastruttura IT se controllo viene affidato a essi. Tuttavia, hai la responsabilità di affidare l'incarico a un valutatore affinché valuti la tua implementazione in termini di adeguamento e per i controlli e i processi all'interno dell'organizzazione.
+
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>Usare Microsoft Compliance Manager per valutare i rischi
+
+[Microsoft Compliance Manager](compliance-manager.md) è una funzionalità nel [Centro conformità Microsoft 365](microsoft-365-compliance-center.md) utile per comprendere lo stato di conformità dell'organizzazione e intraprendere azioni per ridurre i rischi. Compliance Manager offre un modello premium per creare una valutazione per questa normativa. Individuare il modello nella pagina **modelli di valutazioni** in Compliance Manager. Informazioni su come [creare valutazioni in Compliance Manager](compliance-manager-assessments.md).
 
 ## <a name="resources"></a>Risorse
 

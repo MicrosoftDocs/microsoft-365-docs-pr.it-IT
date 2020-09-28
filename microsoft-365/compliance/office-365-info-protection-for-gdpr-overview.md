@@ -19,12 +19,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: Panoramica di Office 365 Information Protection per GDPR. Informazioni su come individuare, classificare, proteggere e monitorare i dati personali.
-ms.openlocfilehash: 83a090b214821142a312ee81463fb3c395876867
-ms.sourcegitcommit: 2399ee6f9bc955cf8f2a76c01fc84c19eb37ff42
+ms.openlocfilehash: 72ce55b5ceb2ec3ff95cada481ec4aee0bbe8eef
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "43919605"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48197407"
 ---
 # <a name="overview-of-office-365-information-protection-for-gdpr"></a>Panoramica di Office 365 Information Protection per RGPD
 
@@ -46,13 +46,14 @@ Questa soluzione vuole aiutare le organizzazioni a individuare e proteggere i da
 
 Il primo passo per la conformità RGPD consiste nel valutare se tale regolamento è applicabile all'organizzazione e, in tal caso, in quale misura. L'analisi include la comprensione dei dati elaborati dall'organizzazione e dove questi si trovano.
 
-### <a name="step-1--use-compliance-score-to-view-the-regulation-requirements-and-track-your-progress"></a>Fase 1 - Usare il punteggio di conformità per verificare i requisiti normativi e tenere traccia dello stato di avanzamento
+### <a name="step-1--use-compliance-manager-to-view-the-regulation-requirements-and-track-your-progress"></a>Fase 1 - Usare Gestore conformità per verificare i requisiti normativi e monitorare lo stato
 
-Il punteggio di conformità offre strumenti per tenere traccia, implementare e gestire i controlli per consentire all'organizzazione di raggiungere la conformità con diversi standard, tra cui GDPR.
 
-![Usare il punteggio di conformità e Compliance Manager per verificare i requisiti normativi e tenere traccia dello stato di avanzamento](../media/Overview-image1.png)
+Compliance Manager aiuta a tenere traccia, implementare e gestire i controlli di audit per consentire all'organizzazione di raggiungere la conformità nei diversi standard, tra cui il GDPR.
 
-Per ulteriori informazioni, vedere [punteggio di conformità](compliance-score.md).
+![Usare Compliance Manager per verificare i requisiti e monitorare l’avanzamento](../media/Overview-image1.png)
+
+Per ulteriori informazioni, vedere [Compliance Manager](compliance-manager.md).
 
 ### <a name="step-2--use-content-search-and-sensitive-information-types-to-find-personal-data"></a>Fase 2 - Usare Ricerca contenuto e le tipologie di informazioni sensibili per trovare i dati personali
  

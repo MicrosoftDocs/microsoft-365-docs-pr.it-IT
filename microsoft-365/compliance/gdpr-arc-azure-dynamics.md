@@ -17,12 +17,12 @@ ms.collection:
 hideEdit: true
 titleSuffix: Microsoft GDPR
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: eb2d4ca52acce338e3afb31852409d441e52cfe0
-ms.sourcegitcommit: eb3c30d53a5434d8bad7c8f48a5612f3e2675945
+ms.openlocfilehash: 2083b7b6ed208f5681f4e19c276c1d7425999854
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47422464"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48201523"
 ---
 # <a name="azure-and-dynamics-365-accountability-readiness-checklist-for-the-gdpr"></a>Elenco di controllo di preparazione della conformità di Azure e Dynamics 365 all'RGPD
 
@@ -33,7 +33,7 @@ Questo elenco di controllo di preparazione della conformità fornisce un modo pr
 - [ISO/IEC 27701](https://shop.bsigroup.com/ProductDetail/?pid=000000000030351736) per i requisiti delle tecniche di sicurezza.
 - [ISO/IEC 27001](https://shop.bsigroup.com/ProductDetail?pid=000000000030347472) per i requisiti di gestione della privacy.
 
-È possibile gestire gli elementi di questo elenco di controllo con il punteggio di conformità [[16](gdpr-arc-Azure.md#16)] usando il codice e il nome dei controlli nel riquadro del GPDR che comprende i controlli gestiti dai clienti. Questa struttura viene usata anche per organizzare la presentazione dei controlli interni che Microsoft Azure e Dynamics 365 implementano per supportare il GDPR e che è possibile scaricare dal [Service Trust Portal](https://servicetrust.microsoft.com/ViewPage/TrustDocuments).
+È possibile gestire gli elementi di questo elenco di controllo con Compliance Manager [[16](gdpr-arc-Azure.md#16)] usando L’ID e il nome dei controlli nei controlli gestiti dai clienti del riquadro del GDPR. Questa struttura viene usata anche per organizzare la presentazione dei controlli interni che Microsoft Azure e Dynamics 365 implementano per supportare il GDPR e che è possibile scaricare dal [Service Trust Portal](https://servicetrust.microsoft.com/ViewPage/TrustDocuments).
 
 Questa struttura viene inoltre usata per organizzare la presentazione dei [controlli interni che Microsoft Dynamics 365 implementa per supportare il GDPR](https://aka.ms/gdprcontrols).
 

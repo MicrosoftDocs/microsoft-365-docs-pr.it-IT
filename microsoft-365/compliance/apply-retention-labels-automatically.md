@@ -17,16 +17,19 @@ search.appverid:
 - MOE150
 - MET150
 description: Creare e pubblicare automaticamente etichette di conservazione in modo da poter applicare automaticamente etichette per conservare ciò che serve ed eliminare ciò che non serve
-ms.openlocfilehash: dc525a9f7a2ea97f61f03320495eea737465cfd9
-ms.sourcegitcommit: cd11588b47904c7d2ae899a9f5280f93d3850171
+ms.openlocfilehash: 9ab456cd5b1f5f1bf47a1e24a3d7e58b7992ede0
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "48171304"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48196379"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>Applicare automaticamente un'etichetta di conservazione per conservare o eliminare il contenuto
 
 >*[Indicazioni per l'assegnazione di licenze di Microsoft 365 per sicurezza e conformità](https://aka.ms/ComplianceSD).*
+
+> [!NOTE]
+> Questo scenario non è supportato per i [record normativi](records-management.md#records).
 
 Una delle funzionalità più efficaci delle [etichette di conservazione](retention.md) è la possibilità di applicarle automaticamente al contenuto che soddisfa condizioni specificate. In questo caso, gli utenti dell'organizzazione non dovranno applicare le etichette di conservazione. Microsoft 365 lo farà automaticamente.
   
@@ -39,6 +42,9 @@ Le etichette di conservazione applicate automaticamente sono potenti perché:
 - Gli utenti non hanno più bisogno di conoscere i criteri di governance dai dati e possono concentrarsi sul loro lavoro.
     
 È possibile applicare automaticamente etichette di conservazione al contenuto quando questo include informazioni sensibili, parole chiave, proprietà disponibili per la ricerca o una corrispondenza per [classificatori sottoponibili a training](classifier-get-started-with.md).
+
+> [!TIP]
+> Ora, in anteprima, usare le proprietà ricercabili per identificare le [Registrazioni delle riunioni di Teams](#microsoft-teams-meeting-recordings).
 
 I processi per l'applicazione automatica di un'etichetta di conservazione si basano sulle condizioni seguenti:
 
@@ -80,7 +86,7 @@ Le istruzioni di spostamento variano a seconda che si usi o meno la [gestione de
     
     - Per informazioni sui descrittori del piano di archiviazione, vedere [Usare il piano di archiviazione per gestire le etichette di conservazione](file-plan-manager.md).
     
-    - Per usare l'etichetta di conservazione per dichiarare un [record](records-management.md#records), abilitare l'opzione **Contrassegna elementi come record**.
+    - Per usare le etichette di conservazione per dichiarare i record, selezionare **Contrassegna elementi come record**, o **Contrassegn elementi come record normativi**. Per altre informazioni, vedere [Configurare le etichette di conservazione per dichiarare i record](declare-records.md#configuring-retention-labels-to-declare-records).
 
 3. Una volta creata l'etichetta e dopo la comparsa dell'opzione per pubblicarla, applicare automaticamente l'etichetta o semplicemente salvarla: selezionare **Applica automaticamente questa etichetta a un tipo specifico di contenuto**, quindi selezionare **Fatto** per avviare la procedura guidata di creazione automatica delle etichette e procedere direttamente al passaggio 2 della procedura seguente.
 
@@ -162,6 +168,29 @@ Esempi di query:
 |Exchange   | `recipients:garthf@contoso.com` |
 |SharePoint | `contenttype:contract` |
 |SharePoint | `site:https://contoso.sharepoint.com/sites/teams/procurement AND contenttype:contract`|
+
+##### <a name="microsoft-teams-meeting-recordings"></a>Registrazioni delle riunioni di Teams
+
+> [!NOTE]
+> La funzionalità che consente di mantenere o eliminare le registrazioni delle riunioni di Teams verrà rilasciata in anteprima, e non sarà disponibile prima che le registrazioni siano salvate in OneDrive o SharePoint. Per altre informazioni, vedere [Usare OneDrive for Business e SharePoint o Stream per registrare le riunioni](https://docs.microsoft.com/MicrosoftTeams/tmr-meeting-recording-change).
+
+Per identificare le registrazioni delle riunioni di Microsoft Teams salvate negli account OneDrive degli utenti o in SharePoint, specificare quanto segue nell'**Editor di query con parole chiave**:
+
+``` 
+ProgID:Media AND ProgID:Meeting
+```
+
+Questa etichetta di conservazione deve anche essere pubblicata negli account OneDrive degli utenti o nei siti di SharePoint pertinenti, creando un criterio per l'etichetta. Nella maggior parte dei casi le registrazioni delle riunioni vengono salvate in OneDrive, ma le riunioni di canale vengono salvate in SharePoint.
+
+Dopo aver salvato i criteri di applicazione automatica:
+
+1. Selezionare **Criteri delle etichette** scheda > **Pubblica etichette**
+
+2. Quando viene richiesto di selezionare un'etichetta, scegliere quella creata con la query KQL per identificare le registrazioni delle riunioni di Teams.
+
+3. Quando viene richiesta la posizione, scegliere **siti di SharePoint** e **account di OneDrive**. Si può mantenere il valore predefinito, **Tutte**, oppure immettere posizioni specifiche, ad esempio includendo o escludendo specifici account di OneDrive. 
+
+4. Completare la procedura guidata e salvare i criteri dell'etichetta.
 
 #### <a name="auto-apply-labels-to-content-by-using-trainable-classifiers"></a>Etichette applicate automaticamente al contenuto con classificatori sottoponibili a training
 

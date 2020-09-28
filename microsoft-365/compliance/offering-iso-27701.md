@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: b46a1996d1a86601efe21ec71b19adfc9fa02c61
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: e156a8dc71dc9aca4a5d608b29307f4d36f0ec6b
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47417214"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208138"
 ---
 # <a name="isoiec-27701-privacy-information-management-system-pims"></a>ISO/IEC 27701 Privacy Information Management System (PIMS)
 
@@ -77,7 +77,7 @@ Indipendentemente dalle dimensioni dell'organizzazione e che si tratti di un tit
 - Microsoft Healthcare Bot
 - Intune
 - Microsoft Managed Desktop
-- Power Automate (in precedenza Microsoft Flow) 
+- Power Automate (in precedenza Microsoft Flow)
 - PowerApps
 - Power BI
 - Power BI Embedded
@@ -86,15 +86,14 @@ Indipendentemente dalle dimensioni dell'organizzazione e che si tratti di un tit
 - Microsoft Threat Experts
 - Windows Defender Advanced Threat Protection
 
-
 ## <a name="audits-reports-and-certificates"></a>Controlli, report e certificati
 
 - [Azure, Dynamics 365 e Online Services: certificazione ISO27701](https://aka.ms/azureiso27701cert)
 - [Azure, Dynamics 365 e Online Services: report di valutazione ISO27701](https://aka.ms/azureiso27701report)
 
-## <a name="use-microsoft-compliance-score-to-assess-your-risk"></a>Usare Punteggio di conformità Microsoft per valutare i rischi
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>Usare Microsoft Compliance Manager per valutare i rischi
 
-[Punteggio di conformità Microsoft](compliance-score.md) è una funzionalità in anteprima nel [Centro conformità Microsoft 365](microsoft-365-compliance-center.md) utile per comprendere lo stato di conformità dell'organizzazione e intraprendere azioni per ridurre i rischi. Dopo [aver configurato Punteggio di conformità](compliance-score-setup.md), selezionare il [modello ISO 27701](https://go.microsoft.com/fwlink/?linkid=2117915) preconfigurato nel menu a discesa **Modello** per aiutare l'organizzazione a rispettare i requisiti di questa normativa.
+[Microsoft Compliance Manager](compliance-manager.md) è una funzionalità nel [Centro conformità Microsoft 365](microsoft-365-compliance-center.md) utile per comprendere lo stato di conformità dell'organizzazione e intraprendere azioni per ridurre i rischi. Compliance Manager offre un modello premium per creare una valutazione per questa normativa. Individuare il modello nella pagina **modelli di valutazioni** in Compliance Manager. Informazioni su come [creare valutazioni in Compliance Manager](compliance-manager-assessments.md).
 
 ## <a name="resources"></a>Risorse
 

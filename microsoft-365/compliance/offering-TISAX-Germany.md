@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: fe9186b45268fee11d011d6a941e244071e31a42
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 775a3d21697103d6ed0b891aef605197741d3dbd
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47417540"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208118"
 ---
 # <a name="trusted-information-security-assessment-exchange-tisax-germany"></a>TISAX (Trusted Information Security Assessment Exchange) - Germania
 
@@ -72,6 +72,10 @@ Panoramiche di casi, guide alle soluzioni, esercitazioni e altre risorse per cre
 **Perché non è possibile visualizzare una copia della certificazione TISAX di Microsoft?**
 
 ENX fornisce la conferma della certificazione solo ai rappresentanti del settore registrati attraverso il portale ENX. Per avere informazioni su come procedere, consultare la sezione "Controlli, report e certificati" presente in alto.
+
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>Usare Microsoft Compliance Manager per valutare i rischi
+
+[Microsoft Compliance Manager](compliance-manager.md) è una funzionalità nel [Centro conformità Microsoft 365](microsoft-365-compliance-center.md) utile per comprendere lo stato di conformità dell'organizzazione e intraprendere azioni per ridurre i rischi. Compliance Manager offre un modello premium per creare una valutazione per questa normativa. Individuare il modello nella pagina **modelli di valutazioni** in Compliance Manager. Informazioni su come [creare valutazioni in Compliance Manager](compliance-manager-assessments.md).
 
 ## <a name="resources"></a>Risorse
 

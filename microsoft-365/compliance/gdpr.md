@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: cd17ac35c732189fe8699d75ceb054cc4c900364
-ms.sourcegitcommit: eb3c30d53a5434d8bad7c8f48a5612f3e2675945
+ms.openlocfilehash: a1c04718c1ebb798319a83155a6c70f72b0847de
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47422454"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208812"
 ---
 # <a name="general-data-protection-regulation-summary"></a>Riepilogo del Regolamento generale sulla protezione dei dati
 
@@ -56,6 +56,10 @@ Le attività seguenti sono previste per soddisfare gli standard del GDPR. Per i 
 - **[Valutazione dell'impatto sulla protezione dei dati (DPIA)](gdpr-data-protection-impact-assessments.md)**. Il GDPR richiede che i titolari del trattamento sui dati preparino una valutazione dell'impatto sulla protezione dei dati per le operazioni relative ai dati che "potrebbero comportare un rischio elevato per i diritti e le libertà delle persone fisiche".
 
 Come già accennato, il piano d'azione consigliato per il GDPR e gli elenchi di controllo di preparazione della conformità forniscono una guida all'implementazione o alla valutazione della conformità al GDPR quando si usano i prodotti e i servizi Microsoft.
+
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>Usare Microsoft Compliance Manager per valutare i rischi
+
+[Microsoft Compliance Manager](compliance-manager.md) è una funzionalità nel [Centro conformità Microsoft 365](microsoft-365-compliance-center.md) utile per comprendere lo stato di conformità dell'organizzazione e attuare misure per ridurre i rischi. Compliance Manager offre una valutazione predefinita per questa normativa ai clienti Enterprise E5. Individuare il modello per la creazione della valutazione nella pagina **modelli di valutazioni** di Compliance Manager. Informazioni su come [creare valutazioni in Compliance Manager](compliance-manager-assessments.md).
 
 ## <a name="data-subject-request-dsr"></a>Richiesta dell'interessato (DSR)
 
@@ -177,7 +181,7 @@ Microsoft ha predisposto politiche e procedure specifiche per informare immediat
 
 ## <a name="accountability-readiness-checklists-for-the-gdpr"></a>Elenchi di controllo di preparazione della conformità al GDPR
 
-Questi [elenchi di controllo](gdpr-arc.md) offrono un modo pratico per accedere alle informazioni necessarie per l'applicazione del GDPR quando si usano i prodotti Microsoft. È possibile gestire gli elementi di questo elenco di controllo con il [punteggio di conformità Microsoft](compliance-score.md) usando il codice e il nome dei controlli nel riquadro del GDPR che comprende i controlli gestiti dai clienti.
+Questi [elenchi di controllo](gdpr-arc.md) offrono un modo pratico per accedere alle informazioni necessarie per l'applicazione del GDPR quando si usano i prodotti Microsoft. È possibile gestire gli elementi di questo elenco di controllo con [Microsoft Compliance Manager](compliance-manager.md) usando il codice e il nome dei controlli nel riquadro del GDPR che comprende i controlli gestiti dai clienti.
 
 ## <a name="gdpr-faqs"></a>Domande frequenti sul GDPR
 

@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 2e470972e1d1549bff5cce107666a930a9b29969
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 29af3729260d3d87f0cf17b83beec70da6fb7931
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47416234"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208388"
 ---
 # <a name="iso-223012012-business-continuity-management-standard"></a>Standard di gestione della continuità aziendale ISO 22301:2012
 
@@ -70,6 +70,10 @@ Il [Service Trust Portal](https://aka.ms/stphelp) fornisce report di conformità
 **Posso usare la conformità ISO 22301 dei servizi Microsoft nel processo di certificazione della mia organizzazione?**
 
 Sì. Se l'azienda richiede la certificazione ISO 22301 per le implementazioni distribuite su servizi Microsoft, è possibile usare le certificazioni di Azure e di Office 365 nella propria valutazione della conformità. Tuttavia, si ha la responsabilità di affidare l'incarico a un perito che valuti i controlli, i processi e l'implementazione aziendale, oltre che le applicazioni aziendali, in termini di conformità agli standard ISO 22301.
+
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>Usare Microsoft Compliance Manager per valutare i rischi
+
+[Microsoft Compliance Manager](compliance-manager.md) è una funzionalità nel [Centro conformità Microsoft 365](microsoft-365-compliance-center.md) utile per comprendere lo stato di conformità dell'organizzazione e intraprendere azioni per ridurre i rischi. Compliance Manager offre un modello premium per creare una valutazione per questa normativa. Individuare il modello nella pagina **modelli di valutazioni** in Compliance Manager. Informazioni su come [creare valutazioni in Compliance Manager](compliance-manager-assessments.md).
 
 ## <a name="resources"></a>Risorse
 

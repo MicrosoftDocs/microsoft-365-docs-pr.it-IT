@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 43e7cc1231e88144e1f03f81de6e2355a582a785
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 8440d510e5f6f2e1e90e4f3e9a7368cd00f0f802
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47417920"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208278"
 ---
 # <a name="motion-picture-association-of-america-mpaa"></a>Motion Picture Association of America (MPAA)
 
@@ -59,6 +59,10 @@ Le linee guida MPAA offrono ai fornitori e ai partner di importanti case cinemat
 **L'organizzazione deve comunque essere sottoposta a un controllo MPAA o può sfruttare il controllo di Azure?**
 
 Le strutture di produzione, gli studi di produzione di effetti speciali e altri partner di servizi devono collaborare con i produttori esecutivi e i registi per comprendere i nuovi requisiti di sicurezza e determinare se è necessario un controllo MPAA formale. L'adeguamento alle linee guida MPAA è volontario, ma Microsoft ha deciso di compiere una valutazione indipendente affinché i clienti del campo dei media possano confidare nelle funzionalità di sicurezza e protezione dei contenuti di Azure. Tuttavia, Azure non gestisce i singoli ambienti cloud dei clienti i quali possono essere soggetti a norme MPAA aggiuntive per il cui rispetto è opportuno utilizzare il controllo specifico dell'ambiente.
+
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>Usare Microsoft Compliance Manager per valutare i rischi
+
+[Microsoft Compliance Manager](compliance-manager.md) è una funzionalità nel [Centro conformità Microsoft 365](microsoft-365-compliance-center.md) utile per comprendere lo stato di conformità dell'organizzazione e intraprendere azioni per ridurre i rischi. Compliance Manager offre un modello premium per creare una valutazione per questa normativa. Individuare il modello nella pagina **modelli di valutazioni** in Compliance Manager. Informazioni su come [creare valutazioni in Compliance Manager](compliance-manager-assessments.md).
 
 ## <a name="resources"></a>Risorse
 

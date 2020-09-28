@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 4250d2d79bb00c4179e39969ad992011d3fc2d4f
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: b22eebd00ee168f576a673f74ce0a39d250f9542
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47417870"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208248"
 ---
 # <a name="office-of-the-superintendent-of-financial-institutions-osfi-canada"></a>Ufficio del sovrintendente delle istituzioni finanziarie (OSFI) del Canada
 
@@ -27,7 +27,7 @@ ms.locfileid: "47417870"
 
 L' [Ufficio del sovrintendente delle istituzioni finanziarie](https://www.osfi-bsif.gc.ca/Eng/Pages/default.aspx) (OSFI) è un'agenzia indipendente del governo canadese, responsabile della regolamentazione e supervisione prudenziale delle istituzioni finanziarie e dei programmi di pensionamento, regolati a livello federale in Canada.
 
-Nel suo ruolo di supervisione l'OSFI ha pubblicato le linee guida B-10 per l'[Esternalizzazione delle attività, delle funzioni e dei processi aziendali](https://www.osfi-bsif.gc.ca/Eng/fi-if/rg-ro/gdn-ort/gl-ld/Pages/b10.aspx). In esse, sono state fissati gli "standard, pratiche o procedure prudenziali" per consentire alle istituzioni finanziarie regolate a livello federale di valutare e gestire i rischi associati all'esternalizzazione delle loro attività a un provider di servizi. In un successivo memorandum denominato [Nuovi requisiti di esternalizzazione basati sulla tecnologia](https://www.osfi-bsif.gc.ca/Eng/fi-if/rg-ro/gdn-ort/gl-ld/Pages/cldcmp.aspx), l'OSFI ha sottolineato la validità delle linee guida B-10 e stabilito che le istituzioni devono soddisfare i requisiti OSFI relativi agli accordi di esternalizzazione dei materiali.
+Nel suo ruolo di supervisione l'OSFI ha pubblicato le linee guida B-10 per l'[Esternalizzazione delle attività, delle funzioni e dei processi aziendali](https://www.osfi-bsif.gc.ca/Eng/fi-if/rg-ro/gdn-ort/gl-ld/Pages/b10.aspx). In esse, sono state fissati gli ‘standard, pratiche o procedure prudenziali’ per consentire alle istituzioni finanziarie regolate a livello federale di valutare e gestire i rischi associati all'esternalizzazione delle loro attività a un provider di servizi. In un successivo memorandum denominato [Nuovi requisiti di esternalizzazione basati sulla tecnologia](https://www.osfi-bsif.gc.ca/Eng/fi-if/rg-ro/gdn-ort/gl-ld/Pages/cldcmp.aspx), l'OSFI ha sottolineato la validità delle linee guida B-10 e stabilito che le istituzioni devono soddisfare i requisiti OSFI relativi agli accordi di esternalizzazione dei materiali.
 
 Inoltre, l'uso dei servizi cloud per le istituzioni finanziarie deve essere conforme al [Personal Information Protection e Electronic Documents Act](https://www.priv.gc.ca/en/privacy-topics/privacy-laws-in-canada/the-personal-information-protection-and-electronic-documents-act-pipeda/) (PIPEDA) e, in alcuni casi, alle normative provinciali sulla privacy dei dati.
 
@@ -66,6 +66,10 @@ Le [linee guida B-10 dell'OSFI](https://www.osfi-bsif.gc.ca/Eng/fi-if/rg-ro/gdn-
 **Devono essere incluse condizioni obbligatorie nel contratto con il provider dei servizi cloud?**
 
 Sì, ma solo se la disposizione di esternalizzazione è relativa ai materiali o se si tratta di un trasferimento di informazioni personali al provider di servizi cloud.
+
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>Usare Microsoft Compliance Manager per valutare i rischi
+
+[Microsoft Compliance Manager](compliance-manager.md) è una funzionalità nel [Centro conformità Microsoft 365](microsoft-365-compliance-center.md) utile per comprendere lo stato di conformità dell'organizzazione e intraprendere azioni per ridurre i rischi. Compliance Manager offre un modello premium per creare una valutazione per questa normativa. Individuare il modello nella pagina **modelli di valutazioni** in Compliance Manager. Informazioni su come [creare valutazioni in Compliance Manager](compliance-manager-assessments.md).
 
 ## <a name="resources"></a>Risorse
 

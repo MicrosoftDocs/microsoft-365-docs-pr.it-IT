@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: d8b24885b1d1a80380d0e9ad5c7942bb31ba054c
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 398fdb66623fb668bfc95e8a8a8f8fae44c8163e
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47416720"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208608"
 ---
 # <a name="center-for-internet-security-cis-benchmarks"></a>Benchmark del Center for Internet Security (CIS)
 
@@ -85,6 +85,10 @@ Il rilascio dei benchmark CIS rivisti cambia in base alla community di professio
 **Chi ha contribuito allo sviluppo dei benchmark CIS di Microsoft?**
 
 Il CIS afferma che i rispettivi benchmark sono "sviluppati attraverso il generoso impegno volontario di esperti in materia, fornitori di tecnologia, membri della community di CIS Benchmark pubblici e privati e il team preposto allo sviluppo del benchmark CIS". Ad esempio, è possibile trovare un elenco dei collaboratori su [CIS Microsoft Azure Foundations Benchmark v1.0.0 Now Available](https://www.cisecurity.org/blog/cis-microsoft-azure-foundations-benchmark-v1-0-0-now-available/) (Microsoft Azure Foundations Benchmark v1.0.0 del CIS ora disponibile).
+
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>Usare Microsoft Compliance Manager per valutare i rischi
+
+[Microsoft Compliance Manager](compliance-manager.md) è una funzionalità nel [Centro conformità Microsoft 365](microsoft-365-compliance-center.md) utile per comprendere lo stato di conformità dell'organizzazione e intraprendere azioni per ridurre i rischi. Compliance Manager offre un modello premium per creare una valutazione per questa normativa. Individuare il modello nella pagina **modelli di valutazioni** in Compliance Manager. Informazioni su come [creare valutazioni in Compliance Manager](compliance-manager-assessments.md).
 
 ## <a name="resources"></a>Risorse
 

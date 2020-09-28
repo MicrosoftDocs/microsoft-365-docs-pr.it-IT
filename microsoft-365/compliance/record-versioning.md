@@ -17,16 +17,19 @@ search.appverid:
 - MOE150
 - MET150
 description: Informazioni sui record che semplificano l’implementazione di una soluzione di gestione dei record in Microsoft 365.
-ms.openlocfilehash: 47a6aee128dbc8375d5860e1e8b1e4e0acc355cb
-ms.sourcegitcommit: 1780359234abdf081097c8064438d415da92fb85
+ms.openlocfilehash: 4b8209108564f0a75f8d70efecd57d2526d9face
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "46778452"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48200547"
 ---
 # <a name="use-record-versioning-to-update-records-stored-in-sharepoint-or-onedrive"></a>Usare il controllo delle versioni per aggiornare i record archiviati in SharePoint o OneDrive
 
 >*[Indicazioni per l'assegnazione di licenze di Microsoft 365 per sicurezza e conformità](https://aka.ms/ComplianceSD).*
+
+>[!NOTE] 
+> Poiché i record normativi bloccano la modifica, il controllo delle versioni dei record non è disponibile per i record normativi.
 
 La possibilità di contrassegnare un documento come [record](records-management.md#records) e limitare le azioni che è possibile eseguire su di esso rappresenta un obiettivo essenziale per qualsiasi soluzione di gestione dei record. Tuttavia, la collaborazione potrebbe essere necessaria anche per le persone che creano versioni successive.
 

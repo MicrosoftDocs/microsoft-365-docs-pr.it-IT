@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 7001a17af7932a7aafa7cceac207b772b42b55d9
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 9d1f259894fff720452de52c45424f086a31a6bb
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47417164"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208178"
 ---
 # <a name="north-american-electric-reliability-corporation-nerc"></a>North American Electric Reliability Corporation (NERC)
 
@@ -80,6 +80,10 @@ Per valutare l'idoneità di Azure e Azure per enti pubblici a trattare i dati e 
 I [CIP standard](https://www.nerc.com/pa/Stand/Reliability%20Standards%20Complete%20Set/RSCompleteSet.pdf) NERC e il [glossario dei termini](https://www.nerc.com/pa/Stand/Glossary%20of%20Terms/Glossary_of_Terms.pdf) afferma che i BES Cyber Asset eseguono funzioni di monitoraggio o controllo del BES in tempo reale e che, nel caso di una loro compromissione, nel giro di 15 minuti vanno a influenzare l'affidabilità del funzionamento del BES stesso. Per ospitare nel cloud computing i BES Cyber Asset e i Protected Cyber Asset in modo adeguato, le attuali definizioni fornite dai CIP standard NERC [hanno bisogno di essere riviste](https://www.nerc.com/pa/Stand/Pages/Project%202016-02%20Modifications%20to%20CIP%20Standards.aspx). Tuttavia, esistono molti carichi di lavoro che trattano dati relativi ai CIP, ma che non rientrano nell'ambito della regola dei 15 minuti; per esempio, la vasta categoria BCSI (BES Cyber System Information).
 
 La divisione ERO Enterprise della NERC [ha rilasciato](https://www.nerc.com/pa/comp/guidance/Pages/default.aspx) una [guida pratica](https://www.nerc.com/pa/comp/guidance/CMEPPracticeGuidesDL/ERO%20Enterprise%20CMEP%20Practice%20Guide%20_%20BCSI%20-%20v0.2%20CLEAN.pdf) al CMEP (Compliance Monitoring and Enforcement Program), il programma di monitoraggio e applicazione della conformità, in modo da fornire al proprio personale indicazioni utili alla valutazione del processo di autorizzazione di un'entità registrata per l'accesso alle posizioni di archiviazione di BCSI designate e per eventuali controlli di accesso implementati dalla stessa. Inoltre, la NERC ha esaminato i dettagli dell'implementazione del controllo di Azure e le prove di controllo di FedRAMP relative agli standard CIP-004-6 e CIP-011-2 applicabili a BCSI. Considerando la guida pratica rilasciata dall'ERO e la revisione dei controlli di FedRAMP con la finalità di garantire che le entità registrate criptino i dati, non risultano necessarie ulteriori indicazioni o chiarimenti per la distribuzione nel cloud dei carichi di lavoro BCSI e dei carichi associati. Tuttavia, in ultima analisi, le entità registrate sono responsabili della propria conformità ai CIP standard NERC sulla base dei fatti e circostanze a loro noti.
+
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>Usare Microsoft Compliance Manager per valutare i rischi
+
+[Microsoft Compliance Manager](compliance-manager.md) è una funzionalità nel [Centro conformità Microsoft 365](microsoft-365-compliance-center.md) utile per comprendere lo stato di conformità dell'organizzazione e intraprendere azioni per ridurre i rischi. Compliance Manager offre un modello premium per creare una valutazione per questa normativa. Individuare il modello nella pagina **modelli di valutazioni** in Compliance Manager. Informazioni su come [creare valutazioni in Compliance Manager](compliance-manager-assessments.md).
 
 ## <a name="resources"></a>Risorse
 

@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Pronti per iniziare a implementare i criteri e le etichette di riservatezza per gestire i dati della tua organizzazione, ma in dubbio su come iniziare? Leggere alcune indicazioni utili per iniziare.
-ms.openlocfilehash: 33b2fbd40c19d1f4e2e2ef042eaa2fe21080eec1
-ms.sourcegitcommit: 1780359234abdf081097c8064438d415da92fb85
+ms.openlocfilehash: cc504468611d4a2a2758ef7d52b965c177999217
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "46778292"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48198941"
 ---
 # <a name="get-started-with-retention-policies-and-retention-labels"></a>Informazioni sui criteri e sulle etichette di conservazione
 
@@ -60,7 +60,7 @@ Usare la seguente tabella per eseguire il mapping dei requisiti aziendali relati
 
 |Operazione da eseguire|Documentazione|
 |----------------|---------------|
-|Configurare in modo efficiente le azioni di conservazione ed eliminazione per l'organizzazione o tramite i servizi di Microsoft 365: <br />-  Exchange  <br />- SharePoint  <br />- OneDrive  <br />- Gruppi di Microsoft 365 <br />- Skype for Business  <br />- Microsoft Teams  |[Creare e configurare criteri di conservazione](create-retention-policies.md)|
+|Configurare in modo efficiente le azioni di conservazione ed eliminazione per l'organizzazione o tramite i servizi di Microsoft 365: <br />-  Exchange  <br />- SharePoint  <br />- OneDrive  <br />- Gruppi di Microsoft 365 <br />- Skype for Business  <br />- Microsoft Teams <br />- Rete Yammer |[Creare e configurare criteri di conservazione](create-retention-policies.md)|
 |Consentire agli amministratori e utenti di applicare manualmente un set di azioni conserva ed elimina per documenti e messaggi di posta elettronica: <br />-  SharePoint <br />- OneDrive <br />- Outlook e Outlook sul Web|[Creare etichette di conservazione e applicarle nelle app](create-apply-retention-labels.md)|
 |Consentire agli amministratori del sito di impostare un'etichetta di conservazione predefinita per tutto il contenuto di una raccolta, una cartella o un set di documenti di SharePoint|[Creare etichette di conservazione e applicarle nelle app](create-apply-retention-labels.md)|
 |Consentire agli utenti di applicare automaticamente un'etichetta di conservazione ai messaggi di posta elettronica con le regole di Outlook|[Creare etichette di conservazione e applicarle nelle app](create-apply-retention-labels.md)|
