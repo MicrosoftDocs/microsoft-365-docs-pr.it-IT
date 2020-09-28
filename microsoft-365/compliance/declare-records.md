@@ -17,51 +17,72 @@ search.appverid:
 - MOE150
 - MET150
 description: Usare le etichette di conservazione per dichiarare i record.
-ms.openlocfilehash: 841c5197addff704016e344ba7ae44355c872f72
-ms.sourcegitcommit: 9f5b136b96b3af4db4cc6f5b1f35130ae60d6b12
+ms.openlocfilehash: 490f81ba9c1d2d291539107650ec3c3f5938eba8
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "47817109"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48198925"
 ---
-# <a name="declare-records-by-using-retention-labels"></a><span data-ttu-id="26d02-103">Usare le etichette di conservazione per dichiarare i record</span><span class="sxs-lookup"><span data-stu-id="26d02-103">Declare records by using retention labels</span></span>
+# <a name="declare-records-by-using-retention-labels"></a><span data-ttu-id="b7949-103">Usare le etichette di conservazione per dichiarare i record</span><span class="sxs-lookup"><span data-stu-id="b7949-103">Declare records by using retention labels</span></span>
 
-><span data-ttu-id="26d02-104">*[Indicazioni per l'assegnazione di licenze di Microsoft 365 per sicurezza e conformità](https://aka.ms/ComplianceSD).*</span><span class="sxs-lookup"><span data-stu-id="26d02-104">*[Microsoft 365 licensing guidance for security & compliance](https://aka.ms/ComplianceSD).*</span></span>
+><span data-ttu-id="b7949-104">*[Indicazioni per l'assegnazione di licenze di Microsoft 365 per sicurezza e conformità](https://aka.ms/ComplianceSD).*</span><span class="sxs-lookup"><span data-stu-id="b7949-104">*[Microsoft 365 licensing guidance for security & compliance](https://aka.ms/ComplianceSD).*</span></span>
 
-<span data-ttu-id="26d02-105">Per dichiarare documenti e messaggi di posta elettronica come record, usare  [etichette di conservazione](retention.md#retention-labels) che contrassegnano elementi come record.</span><span class="sxs-lookup"><span data-stu-id="26d02-105">To declare documents and emails as a record, you use [retention labels](retention.md#retention-labels) that mark items as a record.</span></span> <span data-ttu-id="26d02-106">È possibile pubblicare tali etichette in modo che utenti e amministratori possano applicarle manualmente al contenuto oppure applicarle automaticamente al contenuto che si desidera contrassegnare come record.</span><span class="sxs-lookup"><span data-stu-id="26d02-106">You can either publish those labels so that users and administrators can manually apply them to content, or auto-apply those labels to content that you want to mark as a record.</span></span>
+<span data-ttu-id="b7949-105">Per dichiarare documenti e messaggi di posta elettronica come [record](records-management.md#records), usare [etichette di conservazione](retention.md#retention-labels) che contrassegnano i contenuti come **record** o **record normativi**.</span><span class="sxs-lookup"><span data-stu-id="b7949-105">To declare documents and emails as [records](records-management.md#records), you use [retention labels](retention.md#retention-labels) that mark the content as a **record** or a **regulatory record**.</span></span>
 
-## <a name="configuring-retention-labels-to-declare-records"></a><span data-ttu-id="26d02-107">Configurare le etichette di conservazione per dichiarare i record</span><span class="sxs-lookup"><span data-stu-id="26d02-107">Configuring retention labels to declare records</span></span>
+> [!NOTE]
+> <span data-ttu-id="b7949-106">Al momento i record normativi sono in anteprima.</span><span class="sxs-lookup"><span data-stu-id="b7949-106">Regulatory records are currently in preview.</span></span>
 
-<span data-ttu-id="26d02-108">Quando si crea un'etichetta di conservazione, si può scegliere di usarla per contrassegnare elementi come record.</span><span class="sxs-lookup"><span data-stu-id="26d02-108">When you create or configure a retention label, select the option to mark items as a record.</span></span>
+<span data-ttu-id="b7949-107">Se si hanno dubbi sull'uso di un record oppure di un record normativo, vedere [Confrontare le restrizioni relative alle azioni consentite o bloccate](records-management.md#compare-restrictions-for-what-actions-are-allowed-or-blocked).</span><span class="sxs-lookup"><span data-stu-id="b7949-107">If you're not sure whether to use a record or a regulatory record, see [Compare restrictions for what actions are allowed or blocked](records-management.md#compare-restrictions-for-what-actions-are-allowed-or-blocked).</span></span> <span data-ttu-id="b7949-108">Se bisogna usare i record regolatori, per prima cosa si deve eseguire un comando di PowerShell, come descritto nella sezione seguente.</span><span class="sxs-lookup"><span data-stu-id="b7949-108">If you need to use regulatory records, you must first run a PowerShell command, as described in the next section.</span></span>
+
+<span data-ttu-id="b7949-109">In seguito è possibile pubblicare tali etichetta in un criterio per le etichette di conservazione, in modo che utenti e amministratori possano applicarle ai contenuti, oppure, per le etichette che contrassegnano elementi come record (ma non record normativi), applicare automaticamente le etichette ai contenuti che si vuole classificare come record.</span><span class="sxs-lookup"><span data-stu-id="b7949-109">You can then either publish those labels in a retention label policy so that users and administrators can apply them to content, or for labels that mark items as records (but not regulatory records), auto-apply those labels to content that you want to declare a record.</span></span>
+
+## <a name="how-to-display-the-option-to-mark-content-as-a-regulatory-record"></a><span data-ttu-id="b7949-110">Come visualizzare l'opzione per contrassegnare i contenuti come record normativi</span><span class="sxs-lookup"><span data-stu-id="b7949-110">How to display the option to mark content as a regulatory record</span></span>
 
 >[!NOTE] 
-> <span data-ttu-id="26d02-109">L'opzione per contrassegnare il contenuto come record non è disponibile quando si creano o si configurano le etichette dalla **Governance delle informazioni** nel Centro conformità Microsoft 365.</span><span class="sxs-lookup"><span data-stu-id="26d02-109">The option to mark the content as a record is not available when you create or configure retention labels from **Information Governance** in the Microsoft 365 compliance center.</span></span> <span data-ttu-id="26d02-110">È invece necessario usare **Gestione record**.</span><span class="sxs-lookup"><span data-stu-id="26d02-110">Instead, you must use **Records Management**.</span></span>
+> <span data-ttu-id="b7949-111">Questa procedura è un'azione controllabile, che registra l'**Opzione dei record normativi abilitata per le etichette di conservazione** nella sezione [Criteri di conservazione e attività delle etichette di conservazione](search-the-audit-log-in-security-and-compliance.md#retention-policy-and-retention-label-activities) del log di controllo.</span><span class="sxs-lookup"><span data-stu-id="b7949-111">The following procedure is an auditable action, logging **Enabled regulatory record option for retention labels** in the [Retention policy and retention label activities](search-the-audit-log-in-security-and-compliance.md#retention-policy-and-retention-label-activities) section of the audit log.</span></span>
 
-<span data-ttu-id="26d02-111">Per creare una nuova etichetta di conservazione che contrassegni il contenuto come record:</span><span class="sxs-lookup"><span data-stu-id="26d02-111">To create a new retention label that marks the content as a record:</span></span>
+<span data-ttu-id="b7949-112">Per impostazione predefinita, l'opzione dell'etichetta di conservazione per contrassegnare i contenuti come record normativi non è mostrata nella procedura guidata dell'etichetta di conservazione.</span><span class="sxs-lookup"><span data-stu-id="b7949-112">By default, the retention label option to mark content as a regulatory record isn't displayed in the retention label wizard.</span></span> <span data-ttu-id="b7949-113">Per visualizzare questa opzione, è prima necessario eseguire un comando di PowerShell:</span><span class="sxs-lookup"><span data-stu-id="b7949-113">To display this option, you must first run a PowerShell command:</span></span>
 
-1. <span data-ttu-id="26d02-112">Nel [Centro conformità Microsoft 365](https://compliance.microsoft.com) passare a **Gestione record** \> **Piano di archiviazione**.</span><span class="sxs-lookup"><span data-stu-id="26d02-112">In the [Microsoft 365 compliance center](https://compliance.microsoft.com), go to **Records Management** \> **File Plan**.</span></span> <span data-ttu-id="26d02-113">Nella pagina **Piano di archiviazione**, selezionare **Crea un'etichetta**.</span><span class="sxs-lookup"><span data-stu-id="26d02-113">On the **File plan** page, select **Create a label**.</span></span>
+1. <span data-ttu-id="b7949-114">[Connettersi a PowerShell nel Centro sicurezza e conformità di Office 365](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).</span><span class="sxs-lookup"><span data-stu-id="b7949-114">[Connect to the Office 365 Security & Compliance Center Powershell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).</span></span>
 
-2. <span data-ttu-id="26d02-114">Nella pagina **Definisci impostazioni di conservazione** della procedura guidata, scegliere l'opzione per contrassegnare gli elementi come record:</span><span class="sxs-lookup"><span data-stu-id="26d02-114">On the **Define retention settings** page in the wizard, choose the option to mark items as records:</span></span>
+2. <span data-ttu-id="b7949-115">Eseguire il seguente cmdlet:</span><span class="sxs-lookup"><span data-stu-id="b7949-115">Run the following cmdlet:</span></span>
     
-   ![Selezionare le impostazioni di conservazione per contrassegnare elementi come record](../media/recordversioning6.png)
+    ```powershell
+    Set-RegulatoryComplianceUI -Enabled $true
+    ````
+    <span data-ttu-id="b7949-116">Non viene richiesta la conferma, e l'impostazione ha effetto immediato.</span><span class="sxs-lookup"><span data-stu-id="b7949-116">There is no prompt to confirm and the setting takes effect immediately.</span></span>
 
-3. <span data-ttu-id="26d02-116">Applicare l'etichetta di conservazione ai documenti di SharePoint o OneDrive e ai messaggi di posta elettronica di Exchange, se necessario.</span><span class="sxs-lookup"><span data-stu-id="26d02-116">Apply the retention label to SharePoint or OneDrive documents and Exchange emails, as needed.</span></span> <span data-ttu-id="26d02-117">Per istruzioni:</span><span class="sxs-lookup"><span data-stu-id="26d02-117">For instructions:</span></span>
-    
-    - [<span data-ttu-id="26d02-118">Creare etichette di conservazione e applicarle nelle app</span><span class="sxs-lookup"><span data-stu-id="26d02-118">Create retention labels and apply them in apps</span></span>](create-apply-retention-labels.md)
-    
-    - [<span data-ttu-id="26d02-119">Applicare automaticamente un'etichetta di conservazione al contenuto</span><span class="sxs-lookup"><span data-stu-id="26d02-119">Apply a retention label to content automatically</span></span>](apply-retention-labels-automatically.md)
+<span data-ttu-id="b7949-117">Se si cambia idea in merito alla configurazione di questa opzione nella procedura di creazione dell'etichetta di conservazione, la si può nascondere eseguendo lo stesso cmdlet con il valore **false**: `Set-RegulatoryComplianceUI -Enabled $false`</span><span class="sxs-lookup"><span data-stu-id="b7949-117">If you change your mind about seeing this option in the retention label wizard, you can hide it again by running the same cmdlet with the **false** value: `Set-RegulatoryComplianceUI -Enabled $false`</span></span> 
 
-## <a name="applying-the-configured-retention-label-to-content"></a><span data-ttu-id="26d02-120">Applicare l'etichetta di conservazione configurata al contenuto</span><span class="sxs-lookup"><span data-stu-id="26d02-120">Applying the configured retention label to content</span></span>
+## <a name="configuring-retention-labels-to-declare-records"></a><span data-ttu-id="b7949-118">Configurare le etichette di conservazione per dichiarare i record</span><span class="sxs-lookup"><span data-stu-id="b7949-118">Configuring retention labels to declare records</span></span>
 
-<span data-ttu-id="26d02-121">Quando le etichette di conservazione che classificano il contenuto come record vengono rese disponibili agli utenti per applicarle nelle app:</span><span class="sxs-lookup"><span data-stu-id="26d02-121">When retention labels that mark content as a record are made available for users to apply them in apps:</span></span>
+<span data-ttu-id="b7949-119">Quando si crea o modifica un'etichetta di conservazione tramite la soluzione **Records Management** nel Centro conformità di Microsoft 365, è possibile contrassegnare gli elementi come record.</span><span class="sxs-lookup"><span data-stu-id="b7949-119">When you create or edit a retention label from the **Records Management** solution in the Microsoft 365 compliance center, you have the option to mark items as a record.</span></span> <span data-ttu-id="b7949-120">Se il comando di PowerShell è stato eseguito nella sezione precedente, in alternativa si può contrassegnare gli elementi come record normativi.</span><span class="sxs-lookup"><span data-stu-id="b7949-120">If you ran the PowerShell command from the previous section, you can alternatively mark items as a regulatory record.</span></span>
 
-- <span data-ttu-id="26d02-122">Per Exchange, qualsiasi utente con accesso in scrittura alla cassetta postale può applicare queste etichette.</span><span class="sxs-lookup"><span data-stu-id="26d02-122">For Exchange, any user with write-access to the mailbox can apply these labels.</span></span> 
-- <span data-ttu-id="26d02-123">Per SharePoint e OneDrive, qualsiasi utente del gruppo Membri predefinito (con livello di autorizzazione Collaborazione) può applicare queste etichette.</span><span class="sxs-lookup"><span data-stu-id="26d02-123">For SharePoint and OneDrive, any user in the default Members group (the Contribute permission level) can apply these labels.</span></span>
+<span data-ttu-id="b7949-121">Ad esempio:</span><span class="sxs-lookup"><span data-stu-id="b7949-121">For example:</span></span>
 
-<span data-ttu-id="26d02-124">Esempio di documento contrassegnato come record da un'etichetta di conservazione:</span><span class="sxs-lookup"><span data-stu-id="26d02-124">Example of a document marked as record by using a retention label:</span></span>
+![Configurare una etichetta di conservazione per contrassegnare i contenuti come record o record normativi](../media/recordversioning6.png)
+
+<span data-ttu-id="b7949-123">Ora è possibile applicare questa etichetta di conservazione ai documenti di SharePoint o OneDrive e ai messaggi di posta elettronica di Exchange, se necessario.</span><span class="sxs-lookup"><span data-stu-id="b7949-123">Using this retention label, you can now apply it to SharePoint or OneDrive documents and Exchange emails, as needed.</span></span> 
+
+<span data-ttu-id="b7949-124">Istruzioni complete:</span><span class="sxs-lookup"><span data-stu-id="b7949-124">For full instructions:</span></span>
+
+- [<span data-ttu-id="b7949-125">Creare etichette di conservazione e applicarle nelle app</span><span class="sxs-lookup"><span data-stu-id="b7949-125">Create retention labels and apply them in apps</span></span>](create-apply-retention-labels.md)
+
+- <span data-ttu-id="b7949-126">[Applicare automaticamente le etichette di conservazione ai contenuti](apply-retention-labels-automatically.md) (non supportato per i record normativi)</span><span class="sxs-lookup"><span data-stu-id="b7949-126">[Apply a retention label to content automatically](apply-retention-labels-automatically.md) (not supported for regulatory records)</span></span>
+
+
+## <a name="applying-the-configured-retention-label-to-content"></a><span data-ttu-id="b7949-127">Applicare l'etichetta di conservazione configurata al contenuto</span><span class="sxs-lookup"><span data-stu-id="b7949-127">Applying the configured retention label to content</span></span>
+
+<span data-ttu-id="b7949-128">Quando le etichette di conservazione che classificano gli elementi come record o record normativi vengono rese disponibili agli utenti per applicarle nelle app:</span><span class="sxs-lookup"><span data-stu-id="b7949-128">When retention labels that mark items as a record or regulatory record are made available for users to apply them in apps:</span></span>
+
+- <span data-ttu-id="b7949-129">Per Exchange, qualsiasi utente con accesso in scrittura alla cassetta postale può applicare queste etichette.</span><span class="sxs-lookup"><span data-stu-id="b7949-129">For Exchange, any user with write-access to the mailbox can apply these labels.</span></span> 
+- <span data-ttu-id="b7949-130">Per SharePoint e OneDrive, qualsiasi utente del gruppo Membri predefinito (con livello di autorizzazione Collaborazione) può applicare queste etichette.</span><span class="sxs-lookup"><span data-stu-id="b7949-130">For SharePoint and OneDrive, any user in the default Members group (the Contribute permission level) can apply these labels.</span></span>
+
+<span data-ttu-id="b7949-131">Esempio di documento contrassegnato come record da un'etichetta di conservazione:</span><span class="sxs-lookup"><span data-stu-id="b7949-131">Example of a document marked as record by using a retention label:</span></span>
 
 ![Riquadro dei dettagli per un documento taggato come record](../media/recordversioning7.png)
 
-## <a name="next-steps"></a><span data-ttu-id="26d02-126">Passaggi successivi</span><span class="sxs-lookup"><span data-stu-id="26d02-126">Next steps</span></span>
+## <a name="next-steps"></a><span data-ttu-id="b7949-133">Passaggi successivi</span><span class="sxs-lookup"><span data-stu-id="b7949-133">Next steps</span></span>
 
-<span data-ttu-id="26d02-127">Per la lista degli scenari supportati dalla gestione dei record, vedere [Scenari comuni per la gestione dei record](get-started-with-records-management.md#common-scenarios-for-records-management).</span><span class="sxs-lookup"><span data-stu-id="26d02-127">For a list of scenarios supported by records management, see [Common scenarios for records management](get-started-with-records-management.md#common-scenarios-for-records-management).</span></span>
+<span data-ttu-id="b7949-134">Per la lista degli scenari supportati dalla gestione dei record, vedere [Scenari comuni per la gestione dei record](get-started-with-records-management.md#common-scenarios-for-records-management).</span><span class="sxs-lookup"><span data-stu-id="b7949-134">For a list of scenarios supported by records management, see [Common scenarios for records management](get-started-with-records-management.md#common-scenarios-for-records-management).</span></span>
