@@ -19,12 +19,12 @@ search.appverid:
 - GEA150
 ms.assetid: a27f1a99-3557-4f85-9560-a28e3d822a40
 description: Ottenere un rapporto sui gruppi di Microsoft 365 per conoscere i gruppi e le relative attività.
-ms.openlocfilehash: 1d329efa4fe7cdf12b6c7452b6480d237fb3d5c1
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: b45582388103e843e2893cfceb9aa1106cb9ce76
+ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47948989"
+ms.lasthandoff: 09/28/2020
+ms.locfileid: "48295095"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-365-groups"></a>Report di Microsoft 365 nell'interfaccia di amministrazione-gruppi Microsoft 365
 
@@ -37,8 +37,8 @@ Il Dashboard Microsoft 365 **Reports** illustra la panoramica delle attività tr
 
 1. Nell'interfaccia di amministrazione passare alla pagina **Report** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">Utilizzo</a>.
 
-    
-2. Nell'elenco **a discesa selezionare un report** selezionare attività di gruppi di **Office 365** \> **Groups activity**.
+2. Dalle opzioni, selezionare **Visualizza altro** in **utenti attivi-servizi Microsoft 365**.
+3. Nell'elenco **a discesa selezionare un report** selezionare attività di gruppi di **Office 365** \> **Groups activity**.
   
 ## <a name="interpret-the-groups-report"></a>Interpretare il report gruppi
 
@@ -61,4 +61,3 @@ Il Dashboard Microsoft 365 **Reports** illustra la panoramica delle attività tr
 |11  <br/> |È inoltre possibile esportare i dati del report in un file CSV di Excel selezionando il collegamento **Esporta** . Vengono esportati i dati di tutti gli utenti, che possono poi essere ordinati e filtrati per ulteriore analisi. Se gli utenti sono meno di 2000, è possibile ordinarli e filtrarli direttamente nella tabella del report. Se invece gli utenti sono più di 2000, per ordinarli e filtrarli occorre esportare i dati.  <br/> |
 |||
    
-

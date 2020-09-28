@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Informazioni su come trovare e utilizzare i report sulla sicurezza della posta elettronica per l'organizzazione. I report sulla sicurezza della posta elettronica sono disponibili nel centro sicurezza & conformità.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 588c30ca07684636661c7946b2418b75574c8cbd
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: b26dd18754a96d1879a2f57ae9742ae1d1a36ce4
+ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48199218"
+ms.lasthandoff: 09/28/2020
+ms.locfileid: "48295539"
 ---
 # <a name="view-email-security-reports-in-the-security--compliance-center"></a>Visualizzare i report sulla sicurezza della posta elettronica nel Centro sicurezza e conformità
 
@@ -364,8 +364,13 @@ Sono disponibili le visualizzazioni seguenti:
 Se si fa clic su **filtri**, è possibile modificare il report con i filtri seguenti:
 
 - Data di **inizio** e **Data di fine**
-- Valore di rilevamento
-- **Protetto da** (solo Office 365 ATP): **ATP** o **EOP**. Si noti che questa proprietà filtrabile non è disponibile in **Visualizza dati per: contenuto di \> malware**.
+- **Rilevamento**
+- **Protetto da**: **ATP** o **EOP**
+- **Tag**: filtrare in base al tag per restituire gli utenti o i gruppi a cui è stato applicato un tag specifico. Per ulteriori informazioni sui tag degli utenti, vedere [tag utente](https://docs.microsoft.com/microsoft-365/security/office-365-security/user-tags?view=o365-worldwide).
+- **Dominio**
+
+> [!NOTE]
+> **Protetto da**, **tag** e **dominio** sono solo Office 365 ATP. Queste proprietà filtrabili non sono disponibili in **View Data by: content \> malware**.
 
 ### <a name="details-table-view-for-the-threat-protection-status-report"></a>Visualizzazione della tabella dei dettagli per il rapporto sullo stato della protezione dalle minacce
 
@@ -378,7 +383,12 @@ Se si fa clic su **Visualizza tabella dettagli**, le informazioni visualizzate d
   - **Diretto da**
   - **Nome malware**
 
-- **Visualizzazione dei dati per: Panoramica**: non è disponibile alcun pulsante **Visualizza dettagli tabella** .
+Se si fa clic su **filtri** in questa visualizzazione, è possibile modificare il report con i filtri seguenti:
+
+- Data di **inizio** e **Data di fine**
+- **Rilevamento**
+
+**Visualizzazione dei dati per: Panoramica**: non è disponibile alcun pulsante **Visualizza dettagli tabella** .
 
 - Tutti gli altri grafici:
 
@@ -389,12 +399,16 @@ Se si fa clic su **Visualizza tabella dettagli**, le informazioni visualizzate d
   - **Rilevato da**
   - **Stato del recapito**
   - **Origine del compromesso**
+  - **Tag**
 
 Se si fa clic su **filtri**, è possibile modificare il report con i filtri seguenti:
 
 - Data di **inizio** e **Data di fine**
-- Valore di rilevamento
-- **Protetto da** (solo Office 365 ATP): **ATP** o **EOP**. Si noti che questa proprietà filtrabile non è disponibile in **Visualizza dati per: contenuto di \> malware**.
+- **Rilevamento**
+- **Protetto da** (solo Office 365 ATP): **ATP** o **EOP**
+- **Tag**: filtrare in base al tag per restituire gli utenti o i gruppi a cui è stato applicato un tag specifico. Per ulteriori informazioni sui tag degli utenti, vedere [tag utente](https://docs.microsoft.com/microsoft-365/security/office-365-security/user-tags?view=o365-worldwide).
+- **Dominio**
+- **Destinatari** (si noti che questa proprietà filtrabile è disponibile solo nella visualizzazione tabella Dettagli)
 
 ## <a name="top-malware-report"></a>Rapporto malware principale
 

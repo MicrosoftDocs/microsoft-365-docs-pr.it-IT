@@ -17,12 +17,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Come implementare lo split tunneling per VPN per Office 365
-ms.openlocfilehash: af5c2ea35df921abe8eaa9a85ab2ab244931c098
-ms.sourcegitcommit: 4ee683c18442386f6fc5c76ffabfad2c28b81d42
+ms.openlocfilehash: ff79138d44c98d76af1a3d9c374159b0fae4c7ed
+ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "48214877"
+ms.lasthandoff: 09/28/2020
+ms.locfileid: "48295275"
 ---
 # <a name="implementing-vpn-split-tunneling-for-office-365"></a>Implementazione dello split tunneling per VPN per Office 365
 
@@ -325,6 +325,10 @@ La porta 80 viene usata solo per operazioni come il reindirizzamento a una sessi
 ### <a name="does-this-advice-apply-to-users-in-china-using-a-worldwide-instance-of-office-365"></a>Ciò è valido anche per gli utenti della Cina che usano un'istanza mondiale di Office 365?
 
 **No**, non lo è. L'unica precisazione sul consiglio riportato riguarda gli utenti della Cina che si connettono a un'istanza mondiale di Office 365. A causa del frequente verificarsi della congestione della rete nell'area geografica, le prestazioni di uscita Internet diretta possono essere variabili. La maggior parte dei clienti dell'area geografica usa una VPN per portare il traffico nella rete aziendale e usa il circuito MPLS autorizzato, o soluzione analoga, per l'uscita all'esterno del paese con un percorso ottimizzato. Questo argomento è descritto più avanti nell'articolo [Ottimizzazione delle prestazioni di Office 365 per utenti della Cina](microsoft-365-networking-china.md).
+
+### <a name="does-split-tunnel-configuration-work-for-teams-running-in-a-browser"></a>La configurazione a tunnel suddiviso funziona per i team in esecuzione in un browser?
+
+**No**, non lo è. Funziona solo su Microsoft teams client version 1.3.00.13565 o versione successiva. Questa versione include miglioramenti nel modo in cui il client rileva i percorsi di rete disponibili.
 
 ## <a name="related-topics"></a>Argomenti correlati
 

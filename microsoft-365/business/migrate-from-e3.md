@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Informazioni su come spostare la propria azienda in Microsoft 365 Business Premium da Office 365 E3.
-ms.openlocfilehash: d72f0c52a745ff973868b6fdaa95efa1a37a3dbd
-ms.sourcegitcommit: e5bc49f0a25954d008b6cc09c2b98bb7bfe1aa2f
+ms.openlocfilehash: f3f3894a2a5cb69f9f91825d89db4f4b857fac5c
+ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44785929"
+ms.lasthandoff: 09/28/2020
+ms.locfileid: "48295291"
 ---
 # <a name="migrating-from-office-365-e3-to-microsoft-365-business-premium"></a>Migrazione da Office 365 E3 a Microsoft 365 Business Premium 
 
@@ -114,6 +114,11 @@ Se tutti gli utenti dell'organizzazione sono stati aggiornati a Microsoft 365 Bu
   - Per i dispositivi Windows, vedere [configurare i dispositivi Windows per gli utenti di Microsoft 365 Business Premium](set-up-windows-devices.md) . 
     
   - Per i passaggi per telefoni Android e iPhone, vedere [configurare i dispositivi mobili per gli utenti di Microsoft 365 Business Premium](set-up-mobile-devices.md) . 
+  
+### <a name="mailbox-size"></a>Dimensione della cassetta postale
+
+Microsoft 365 Business Premium ha un limite di archiviazione di 50 GB poiché utilizza Exchange Online piano 1. Durante la migrazione a Microsoft 365 Business Premium, se uno degli utenti supera 50 GB di spazio di archiviazione delle cassette postali, si consiglia di assegnare l'utente a Exchange Online piano 2 e rimuovere il piano di Exchange Online 1 in quanto non è possibile assegnare entrambi.
+
 
 ### <a name="threat-protection"></a>Protezione dalle minacce
 

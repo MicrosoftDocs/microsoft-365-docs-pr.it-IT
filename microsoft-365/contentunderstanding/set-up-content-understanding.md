@@ -1,95 +1,137 @@
 ---
-title: 'Configurare la comprensione del contenuto (anteprima) '
-description: Come configurare la corteccia del progetto.
+title: Configurare SharePoint Syntex
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
-ms.date: 08/1/2020
 audience: admin
 ms.topic: article
-ms.service: o365-administration
+ms.prod: microsoft-365-enterprise
 search.appverid: ''
 localization_priority: None
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 05696f99e59cbd51ba004f6007311b4b6af4a839
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+description: Configurare la comprensione del contenuto in Project Cortex
+ms.openlocfilehash: f0a26f0044e578928730cf4930f1524e86dff9f3
+ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47950037"
+ms.lasthandoff: 09/28/2020
+ms.locfileid: "48294868"
 ---
-# <a name="set-up-content-understanding-preview"></a>Configurare la comprensione del contenuto (anteprima)
+# <a name="set-up-sharepoint-syntex"></a>Configurare SharePoint Syntex
 
-> [!Note] 
-> Il contenuto di questo articolo è relativo all'anteprima privata di Project Cortex. [Per ulteriori informazioni, vedere Project Cortex](https://aka.ms/projectcortex).
+Gli amministratori possono utilizzare l'interfaccia di amministrazione di Microsoft 365 per configurare e Microsoft SharePoint Syntex. 
 
-Gli amministratori possono utilizzare l'interfaccia di amministrazione di Microsoft 365 per impostare e configurare la comprensione del contenuto. 
+Prima di iniziare, prendere in considerazione quanto segue:
 
-Prima di eseguire l'installazione, assicurarsi di pianificare il modo migliore per impostare e configurare la comprensione del contenuto nell'ambiente in uso. Ad esempio, è necessario prendere in considerazione quanto segue:
 - Quali siti di SharePoint consentiranno di abilitare l'elaborazione dei moduli? Tutti, alcuni o Seleziona siti?
-- Nome del centro di contenuto e chi è l'amministratore principale del sito?
+- Che cosa è il nome del centro di contenuti e chi è l'amministratore principale del sito?
 
-Un amministratore può anche apportare modifiche alle impostazioni selezionate in qualsiasi momento dopo l'installazione tramite le impostazioni di gestione del contenuto nell'interfaccia di amministrazione di Microsoft 365.
+È possibile modificare le impostazioni dopo l'installazione iniziale nell'interfaccia di amministrazione di Microsoft 365.
 
+Il contenuto di questo articolo è relativo all'anteprima privata di Project Cortex. [Per ulteriori informazioni, vedere Project Cortex](https://aka.ms/projectcortex).
+
+Prima di eseguire l'installazione, assicurarsi di pianificare il modo migliore per impostare e configurare la comprensione del contenuto nell'ambiente in uso. Ad esempio, è necessario prendere in considerazione i seguenti nomi:
+
+- I siti di SharePoint che si desidera abilitare l'elaborazione del modulo: tutti, alcuni o siti selezionati
+- Il centro contenuto e il nome dell'amministratore del sito principale
 
 ## <a name="requirements"></a>Requisiti 
-È necessario disporre delle autorizzazioni di amministratore globale o di amministratore di SharePoint per poter accedere all'interfaccia di amministrazione di Microsoft 365 e configurare la comprensione del contenuto.
 
+> [!NOTE]
+> È necessario disporre delle autorizzazioni di amministratore globale o di amministratore di SharePoint per poter accedere all'interfaccia di amministrazione di Microsoft 365 e configurare la comprensione del contenuto.
 
-## <a name="to-set-up-content-understanding"></a>Per configurare la comprensione del contenuto
+Come amministratore, è anche possibile apportare modifiche alle impostazioni selezionate in qualsiasi momento dopo l'installazione e in tutte le impostazioni di gestione del contenuto nell'interfaccia di amministrazione di Microsoft 365.
+
+## <a name="to-set-up-sharepoint-syntex"></a>Per configurare SharePoint Syntex
 
 1. Nell'interfaccia di amministrazione di Microsoft 365, selezionare **Setup**e quindi visualizzare la sezione relativa alle **informazioni sull'organizzazione** .
+
 2. Nella sezione **informazioni organizzative** selezionare **automatizza la comprensione del contenuto**.<br/>
 
     ![Pagina di configurazione della conoscenza organizzativa](../media/content-understanding/admin-org-knowledge-options.png)</br>
 
-3. Nella pagina **informazioni sull'automatizzazione del contenuto** , fare clic su Guida **introduttiva** per eseguire il processo di installazione.<br/>
+3. Nella pagina **automatizzare SharePoint Syntex** , fare clic su Guida **introduttiva** per eseguire il processo di installazione.<br/>
 
     ![Avviare l'installazione](../media/content-understanding/admin-content-understanding-get-started.png)</br>
 
+4. Nella pagina attiva tagging immagine scegliere se si desidera consentire il [tagging dell'immagine](image-tagging.md).
 
-4. Nella pagina **Configura elaborazione moduli** è possibile scegliere se si desidera consentire agli utenti di utilizzare il generatore ai per creare modelli di elaborazione dei moduli in specifiche raccolte documenti di SharePoint. Nella barra multifunzione della raccolta documenti sarà disponibile un'opzione di menu per **creare un modello di elaborazione dei moduli** nelle raccolte documenti di SharePoint in cui è abilitata.
+    ![Schermata delle opzioni di tagging dell'immagine](../media/content-understanding/admin-content-understanding-setup-image-tagging.png)</br>
+
+5. Nella pagina **Configura elaborazione moduli** è possibile scegliere se si desidera consentire agli utenti di utilizzare il generatore ai per creare modelli di elaborazione dei moduli in specifiche raccolte documenti di SharePoint. Nella barra multifunzione della raccolta documenti sarà disponibile un'opzione di menu per **creare un modello di elaborazione dei moduli** nelle raccolte documenti di SharePoint in cui è abilitata.
  
      Per **il quale le raccolte di SharePoint dovrebbero mostrare l'opzione per creare un modello di elaborazione dei moduli**, è possibile selezionare:</br>
-    - **Tutte le raccolte di SharePoint** per renderle disponibili per tutte le raccolte di SharePoint nel tenant.</br>
-    - **Solo le raccolte nei siti selezionati**, quindi selezionare i siti in cui si desidera renderli disponibili.</br>
-    - **Nessuna libreria di SharePoint** se attualmente non si desidera renderla disponibile per i siti (è possibile modificare questa impostazione dopo l'installazione).
-</br>
+      - **Tutte le raccolte di SharePoint** per renderle disponibili per tutte le raccolte di SharePoint nell'organizzazione.</br>
+      - **Solo le raccolte nei siti selezionati**, quindi selezionare i siti in cui si desidera renderli disponibili.</br>
 
    ![Configurare l'elaborazione dei moduli](../media/content-understanding/admin-configforms.png)
-</br>
 
    > [!Note]
    > L'abilitazione di questa impostazione in una raccolta documenti di SharePoint non influisce sui modelli esistenti applicati alla raccolta o sulla possibilità di applicare i modelli di comprensione dei documenti a una raccolta. 
-
     
-5. Nella pagina **Crea centro contenuto** è possibile creare un sito Centro contenuto di SharePoint in cui gli utenti possono creare e gestire i modelli di comprensione dei documenti. </br>
+6. Nella pagina **Crea centro contenuto** è possibile creare un sito Centro contenuto di SharePoint in cui gli utenti possono creare e gestire i modelli di comprensione dei documenti. </br>
     a. Per **nome sito**, digitare il nome che si desidera assegnare al sito Centro contenuto.</br>
-    b. L' **indirizzo del sito** mostrerà l'URL del sito, in base alle operazioni selezionate per il nome del sito.</br>
-
-    > [!Note] 
-    > Sebbene sia possibile selezionare una lingua supportata, tenere presente che i modelli di comprensione del contenuto possono essere creati solo per l'inglese.</br>
+    b. L' **indirizzo del sito** mostrerà l'URL del sito, in base alle operazioni selezionate per il nome del sito. Se si desidera modificarlo, fare clic su **modifica**.</br>
 
       ![Creare centro contenuto](../media/content-understanding/admin-cu-create-cc.png)</br>
 
-
     Selezionare **Avanti**.
-6. Nella pagina **fine e revisione** è possibile esaminare l'impostazione selezionata e scegliere di apportare modifiche. Se si è soddisfatti delle selezioni, selezionare **attiva**.
 
+7. Nella pagina **revisione e fine** è possibile esaminare l'impostazione selezionata e scegliere di apportare modifiche. Se si è soddisfatti delle selezioni, selezionare **attiva**.
 
+8. Nella pagina Conferma fare clic su **fine**.
 
-7. Verrà visualizzata la pagina **informazioni sull'attivazione del contenuto** , confermando che il sistema ha aggiunto le preferenze di elaborazione dei moduli e ha creato il sito Centro contenuto. Scegliere **Fine**.
+9. Verrà restituita la pagina di **informazioni sul contenuto automatico** . Da questa pagina, è possibile selezionare **Gestisci** per apportare modifiche alle impostazioni di configurazione. 
 
-8. Verrà restituita la pagina di **informazioni sul contenuto automatico** . Da questa pagina, è possibile selezionare **Gestisci** per apportare modifiche alle impostazioni di configurazione. 
+## <a name="assign-licenses"></a>Assegnazione delle licenze
+
+Dopo aver configurato SharePoint Syntex, è necessario assegnare le licenze per gli utenti che utilizzeranno le funzionalità di elaborazione dei moduli e la comprensione dei documenti.
+
+Per assegnare le licenze:
+
+1. Nell'interfaccia di amministrazione di Microsoft 365, in **utenti**, fare clic su **utenti attivi**.
+
+2. Selezionare gli utenti che si desidera concedere una licenza e fare clic su **Gestisci licenze di prodotto**.
+
+3. Selezionare **assegna altro**.
+
+4. Selezionare **Intelligent Content Services**. In **app**, verificare che sia selezionata l'opzione **Common Data Service per Intelligent Content Services** e **Intelligent Content Services** .
+
+    ![Licenze di Syntex di SharePoint nell'interfaccia di amministrazione di Microsoft 365](../media/content-understanding/sharepoint-syntex-licenses.png)
+
+5. Fare clic su **Salva modifiche**.
+
+## <a name="ai-builder-credits"></a>Crediti AI Builder
+
+Se si dispone di 300 o più licenze di Syntex di SharePoint per SharePoint Syntex nell'organizzazione, verranno assegnati 1 milione AI Credits Builder. Se si dispone di meno di 300 licenze, è necessario acquistare i crediti Builder AI per poter utilizzare l'elaborazione dei moduli.
+
+È possibile valutare la capacità del generatore AI che è adatta a te con la [calcolatrice di ai Builder](https://powerapps.microsoft.com/ai-builder-calculator).
+
+1. Accedere all'interfaccia di [amministrazione di Power Platform](https://admin.powerplatform.microsoft.com/resources/capacity) per controllare i crediti e l'utilizzo.
+
+    > [!NOTE]
+    > Abilita questa impostazione in una raccolta documenti di SharePoint non influisce sui modelli esistenti applicati alla raccolta o sulla possibilità di applicare i modelli di comprensione dei documenti a una raccolta. 
+    
+2. Dalla pagina **Crea centro contenuto** è possibile creare un sito Centro contenuto di SharePoint per cui gli utenti possono creare e gestire i modelli di comprensione dei documenti. </br>
+    a. Per **nome sito**Digitare il nome desiderato per il sito Centro contenuto.</br>
+    b. L' **indirizzo del sito** consente di visualizzare l'URL del sito, in base al nome del sito.</br>
+
+    > [!NOTE] 
+    > Anche se è possibile selezionare una lingua supportata, è possibile creare i modelli di informazioni di contenuto solo per l'inglese.</br>
+
+      ![Creare centro contenuto](../media/content-understanding/admin-cu-create-cc.png)</br>
+
+3. Selezionare **Avanti**.
+
+4. Nella pagina **fine e revisione** esaminare l'impostazione selezionata e scegliere di apportare modifiche. Se si è soddisfatti delle selezioni, selezionare **attiva**.
+
+5. Viene visualizzata la pagina **informazioni sull'attivazione del contenuto** , confermando che il sistema ha aggiunto le preferenze di elaborazione dei moduli e ha creato il sito Centro contenuto. Scegliere **Fine**.
+
+6. Verrà restituita la pagina di **informazioni sul contenuto automatico** . Da questa pagina, è possibile selezionare **Gestisci** per apportare modifiche alle impostazioni di configurazione. 
 
 ## <a name="see-also"></a>Vedere anche
 
+[Panoramica del modello di elaborazione dei moduli](https://docs.microsoft.com/ai-builder/form-processing-model-overview)
 
-
-  
-
-
-
-
-
+[Step-by-Step: come creare un modello di comprensione dei documenti (video)](https://www.youtube.com/watch?v=DymSHObD-bg)
 

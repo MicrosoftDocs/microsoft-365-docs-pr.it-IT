@@ -26,12 +26,12 @@ search.appverid:
 - MOE150
 ms.assetid: 6383f56d-3d09-4dcb-9b41-b5f5a5efd611
 description: Aggiungere il dominio a Microsoft 365 nell'interfaccia di amministrazione di Microsoft 365 aggiungendo un record DNS all'host DNS. La procedura guidata di installazione illustra i passaggi del processo.
-ms.openlocfilehash: a9a0c12d5207db210b4a08ce58abeb44270c8506
-ms.sourcegitcommit: 13ae76220b4ad688438a5d1031a6e1b5300ffa23
+ms.openlocfilehash: 09a66b9ac4f97a076d71dd7f259678181378ae48
+ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "47775160"
+ms.lasthandoff: 09/28/2020
+ms.locfileid: "48295023"
 ---
 # <a name="add-a-domain-to-microsoft-365"></a>Aggiungere un dominio a Microsoft 365
 
@@ -135,7 +135,7 @@ Nella procedura guidata, è sufficiente confermare che si è proprietari del dom
 - [Registrar](https://www.eurodns.com/)
 - [CloudFlare](https://www.cloudflare.com/)
 - [GoDaddy](https://www.godaddy.com/)
-- [WordPress](https://wordpress.com/)
+- [WordPress.com](https://wordpress.com/)
 - [Plesk](https://www.plesk.com/)
 - [MediaTemple](https://mediatemple.net/)
 - SecureServer o WildWestDomains (rivenditori GoDaddy con hosting DNS di SecureServer)

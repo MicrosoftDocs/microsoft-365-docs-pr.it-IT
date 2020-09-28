@@ -1,7 +1,7 @@
 ---
 title: Monitorare la cronologia dei punteggi di Microsoft Secure e raggiungere gli obiettivi
-description: Ottenere informazioni dettagliate sull'attività che ha influenzato il Punteggio sicuro. Individuare le tendenze e impostare gli obiettivi.
-keywords: sicurezza, malware, Microsoft 365, M365, Punteggio sicuro, Centro sicurezza, azioni di miglioramento
+description: Ottenere informazioni sulle attività che hanno influenzato il Punteggio di Microsoft Secure. Individuare le tendenze e impostare gli obiettivi.
+keywords: Microsoft Secure score, Secure score, Office 365 Secure score, Microsoft Security score, Microsoft 365 Security Center, azioni di miglioramento
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 6c31ea1f7217babd4949bee843b091bb767e210e
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 4f5d0a59372fb32b2802a094c247e45740ba3946
+ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48196290"
+ms.lasthandoff: 09/28/2020
+ms.locfileid: "48295251"
 ---
 # <a name="track-your-microsoft-secure-score-history-and-meet-goals"></a>Monitorare la cronologia dei punteggi di Microsoft Secure e raggiungere gli obiettivi
 

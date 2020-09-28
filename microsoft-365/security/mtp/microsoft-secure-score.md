@@ -1,7 +1,7 @@
 ---
 title: Microsoft Secure Score
 description: Descrive Microsoft Secure score in Microsoft 365 Security Center, come migliorare la posizione di sicurezza e gli amministratori di sicurezza che possono aspettarsi.
-keywords: sicurezza, malware, Microsoft 365, M365, Punteggio sicuro, Centro sicurezza, azioni di miglioramento
+keywords: Microsoft Secure score, Secure score, Office 365 Secure score, Microsoft Security score, Microsoft 365 Security Center, azioni di miglioramento
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: b378288637baa5b51f74fb63d8c8da33ac5e148f
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: ea580ad6b7bb7cc905a299e473f23a4c74fb289e
+ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48196192"
+ms.lasthandoff: 09/28/2020
+ms.locfileid: "48294785"
 ---
 # <a name="microsoft-secure-score"></a>Microsoft Secure Score
 

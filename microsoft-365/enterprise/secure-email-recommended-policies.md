@@ -16,12 +16,12 @@ ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
 - remotework
-ms.openlocfilehash: 2dfaf33a837a74d92ec9bbbbb7f04b726e7f3744
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: cff9413a7c580fbefd51e48acfc9610b2b07430f
+ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47547861"
+ms.lasthandoff: 09/28/2020
+ms.locfileid: "48295515"
 ---
 # <a name="policy-recommendations-for-securing-email"></a>Criteri consigliati per la protezione della posta elettronica
 
@@ -59,7 +59,9 @@ Se è stato incluso Exchange Online e Outlook nell'ambito dei criteri quando ven
 
 Questo criterio impedisce ai client ActiveSync di ignorare altri criteri di accesso condizionale. La configurazione dei criteri si applica solo ai client ActiveSync. Selezionando **[Richiedi criteri di protezione delle app](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-grant#require-app-protection-policy)**, questo criterio blocca i client ActiveSync. I dettagli sulla creazione di questo criterio sono disponibili in [Richiedi criteri di protezione delle app per l'accesso alle app cloud con accesso condizionale](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access).
 
-1. Seguire "passaggio 2: configurare un criterio di accesso condizionale di Azure AD per Exchange Online con ActiveSync (EAS)" nello [scenario 1: le app di Office 365 richiedono applicazioni approvate con i criteri di protezione delle app](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access#scenario-1-office-365-apps-require-approved-apps-with-app-protection-policies), che impediscono ai client di Exchange ActiveSync di sfruttare l'autenticazione di base dalla connessione a Exchange Online.
+- Seguire "passaggio 2: configurare un criterio di accesso condizionale di Azure AD per Exchange Online con ActiveSync (EAS)" nello [scenario 1: le app di Office 365 richiedono applicazioni approvate con i criteri di protezione delle app](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access#scenario-1-office-365-apps-require-approved-apps-with-app-protection-policies), che impediscono ai client di Exchange ActiveSync di sfruttare l'autenticazione di base dalla connessione a Exchange Online.
+
+È inoltre possibile utilizzare i criteri di autenticazione per [disabilitare l'autenticazione di base](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/disable-basic-authentication-in-exchange-online), che impone a tutte le richieste di accesso client di utilizzare l'autenticazione moderna.
 
 ## <a name="set-up-message-encryption"></a>Configurare la crittografia dei messaggi
 

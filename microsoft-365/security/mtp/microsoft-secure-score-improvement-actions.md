@@ -1,7 +1,7 @@
 ---
 title: Valutare la propria posizione di sicurezza tramite Microsoft Secure Score
 description: In questo articolo viene descritto come eseguire un'azione per migliorare il Punteggio Microsoft Secure nel centro sicurezza Microsoft 365.
-keywords: sicurezza, malware, Microsoft 365, M365, Punteggio sicuro, Centro sicurezza, azioni di miglioramento
+keywords: Microsoft Secure score, Secure score, Office 365 Secure score, Microsoft Security score, Microsoft 365 Security Center, azioni di miglioramento
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 7049845b4c1b240c5ecc72b4f2ebac1acecfbaf6
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: cb2aad70b8ba6ccd9075513b5f383ede42ebd6c0
+ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48203684"
+ms.lasthandoff: 09/28/2020
+ms.locfileid: "48295129"
 ---
 # <a name="assess-your-security-posture-with-microsoft-secure-score"></a>Valutare la propria posizione di sicurezza con Microsoft Secure Score
 

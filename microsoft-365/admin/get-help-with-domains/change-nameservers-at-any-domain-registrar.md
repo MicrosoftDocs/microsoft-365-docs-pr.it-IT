@@ -25,12 +25,12 @@ search.appverid:
 - GEA150
 ms.assetid: a8b487a9-2a45-4581-9dc4-5d28a47010a2
 description: Informazioni su come aggiungere e configurare il dominio in Microsoft 365 in modo che i servizi come la posta elettronica e Skype for business online utilizzino il proprio nome di dominio.
-ms.openlocfilehash: 6a99ee90db3bb71038309175b32bd4d96097aa5a
-ms.sourcegitcommit: 66f1f430b3dcae5f46cb362a32d6fb7da4cff5c1
+ms.openlocfilehash: 34e4db5748f9d4c1f1864db09071374bcec73e1d
+ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "46662233"
+ms.lasthandoff: 09/28/2020
+ms.locfileid: "48295059"
 ---
 # <a name="change-nameservers-to-set-up-microsoft-365-with-any-domain-registrar"></a>Modificare i server dei nomi per configurare Microsoft 365 con qualsiasi registrar
 
@@ -122,8 +122,8 @@ Per modificare i server dei nomi del dominio presso il sito Web del registrar, s
 |:-----|:-----|
 |Primo server dei nomi  <br/> |ns1.bdm.microsoftonline.com  <br/> |
 |Secondo server dei nomi  <br/> |ns2.bdm.microsoftonline.com  <br/> |
-|Terzo server dei nomi  <br/> |ns2.bdm.microsoftonline.com  <br/> |
-|Quarto server dei nomi  <br/> |ns2.bdm.microsoftonline.com  <br/> |
+|Terzo server dei nomi  <br/> |ns3.bdm.microsoftonline.com  <br/> |
+|Quarto server dei nomi  <br/> |ns4.bdm.microsoftonline.com  <br/> |
    
    > [!TIP]
    > È consigliabile aggiungere tutti e quattro i record, ma se il servizio di registrazione supporta solo due, aggiungere **NS1.BDM.microsoftonline.com** e **NS2.BDM.microsoftonline.com**. 
@@ -170,7 +170,7 @@ Ecco, ad esempio, alcune altre operazioni aggiuntive che potrebbero essere neces
 
 4. Selezionare il tipo di record DNS che si desidera aggiungere e digitare le informazioni per il nuovo record.
 
-5. Seleziona **Salva**.
+5. Selezionare **Salva**.
     
 > [!NOTE]
 > Your nameserver record updates may take up to several hours to update across the Internet's DNS system. L'indirizzo di posta elettronica e gli altri servizi di Microsoft saranno tutti impostati per l'utilizzo con il dominio. 
