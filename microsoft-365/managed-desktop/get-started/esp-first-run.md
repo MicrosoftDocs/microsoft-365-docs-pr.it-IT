@@ -10,12 +10,12 @@ audience: ITpro
 ms.topic: article
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: d4083e48033787ca46ad2374ea461b4a77d21e0d
-ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
+ms.openlocfilehash: 84656e2f0ae9d148c61c27af2a53e157cd44c171
+ms.sourcegitcommit: e6283e7c32ba9628fc45e9abc5cd4d21fb3f7ca9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "48296005"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "48299240"
 ---
 # <a name="first-run-experience-with-autopilot-and-the-enrollment-status-page"></a>Esperienza di prima esecuzione con Autopilot e la pagina stato di registrazione
 
@@ -46,9 +46,10 @@ Microsoft Managed Desktop utilizza queste impostazioni nel profilo Autopilot uti
 |Tipo di account utente     |  Standard       |
 |Consenti OOBE del guanto bianco     |  Sì       |
 |Applicazione del modello di nome dispositivo     | Sì        |
-|Immettere un nome     | MMD-% RAND: 7%        |
+|Immettere un nome     | MMD-% RAND: 11%        |
 
-
+> [!NOTE]
+> Mentre il rovisioning "guanto bianco" è abilitato solo per i clienti con ESP attivato, non è attualmente supportato in Microsoft Managed Desktop.
 
 ## <a name="enrollment-status-page-settings"></a>Impostazioni della pagina stato di registrazione
 
