@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 4a698bc0d6a7c1ebadec44357b932e9b56dc0a3c
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 118d96b797e9d46b4a9912f919cafbba680a9609
+ms.sourcegitcommit: 888b9355ef7b933c55ca6c18639c12426ff3fbde
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48196846"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "48305283"
 ---
 # <a name="identitydirectoryevents"></a>IdentityDirectoryEvents
 
@@ -31,8 +31,6 @@ ms.locfileid: "48196846"
 
 **Si applica a:**
 - Microsoft Threat Protection
-
-[!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
 La `IdentityDirectoryEvents` tabella nello schema di [ricerca avanzata](advanced-hunting-overview.md) contiene gli eventi che coinvolgono un controller di dominio locale che esegue Active Directory (ad). In questa tabella vengono acquisiti vari eventi relativi all'identità, come le modifiche alle password, la scadenza della password e le modifiche del nome dell'entità utente (UPN, User Principal Name). Acquisisce inoltre gli eventi di sistema nel controller di dominio, ad esempio la pianificazione delle attività e l'attività di PowerShell. Usare questo riferimento per creare query che restituiscono informazioni dalla tabella.
 
@@ -57,7 +55,7 @@ Per informazioni su altre tabelle nello schema per Ricerca avanzata, [vedere il 
 | `AccountDomain` | stringa | Dominio dell'account |
 | `AccountUpn` | stringa | Nome dell'entità utente (UPN) dell'account |
 | `AccountSid` | stringa | ID di sicurezza (SID) dell'account |
-| `AccountObjectId` | stringa | Identificatore univoco per l'account in Azure AD |
+| `AccountObjectId` | stringa | Identificatore univoco per l'account in Azure Active Directory |
 | `AccountDisplayName` | stringa | Nome dell'account utente visualizzato nella rubrica. In genere una combinazione di un nome o di un cognome, di un'iniziazione centrale e di un ultimo nome. |
 | `DeviceName` | stringa | Nome di dominio completo (FQDN) del dispositivo |
 | `IPAddress` | stringa | Indirizzo IP assegnato al dispositivo durante la comunicazione |

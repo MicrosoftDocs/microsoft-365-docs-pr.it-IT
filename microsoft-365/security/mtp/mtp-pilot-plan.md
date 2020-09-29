@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: d18b3d8ede271cb0d9611d6210a3d1d32849581a
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: a52ba30aa9b89dc78e9bd5a538cb530cd7bf6e00
+ms.sourcegitcommit: 888b9355ef7b933c55ca6c18639c12426ff3fbde
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48195652"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "48305367"
 ---
 # <a name="planning-your-pilot-microsoft-threat-protection-project"></a>Pianificazione del progetto pilota di Microsoft Threat Protection 
 
@@ -78,7 +78,7 @@ Un modo per portare insieme tutti gli elementi del piano può essere quello di c
 
 |**Use case**|**Requisiti**|**Requisiti di configurazione**|**Piano di testing**|**Risultato previsto**|**Stato del test**|**Punteggio**|**Note**|
 |:-------|:-------|:-------|:-------|:-------|:-------|:-------|:-------|
-|Gestione degli incidenti|-Protezione dalle minacce di Microsoft </br></br>-Azure ATP </br></br>-Microsoft Defender ATP </br></br>-Protezione delle app di Microsoft Cloud (facoltativa)|Per informazioni dettagliate, vedere i [prerequisiti](https://aka.ms/mtp-trial-lab) per la preparazione, l'installazione e la configurazione. |[Simula attacco](mtp-pilot-simulate.md) <br></br>[Esaminare l'evento Incident](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-simulate.md#investigate-an-incident) |Gli investigatori possono comprendere l'ambito e l'impatto dell'incidente e gestire l'evento imprevisto||||
+|Gestione degli incidenti|-Protezione dalle minacce di Microsoft </br></br>-Azure ATP </br></br>-Microsoft Defender ATP </br></br>-Protezione delle app di Microsoft Cloud (facoltativa)|Per informazioni dettagliate, vedere i [prerequisiti](https://aka.ms/mtp-trial-lab) per la preparazione, l'installazione e la configurazione. |[Simula attacco](mtp-pilot-simulate.md) <br></br>[Esaminare l'evento Incident](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-simulate#investigate-an-incident) |Gli investigatori possono comprendere l'ambito e l'impatto dell'incidente e gestire l'evento imprevisto||||
 |AutoIR|-Protezione dalle minacce di Microsoft </br></br>-Azure ATP </br></br>-Microsoft Defender ATP |Per informazioni dettagliate, vedere i [prerequisiti](https://aka.ms/mtp-trial-lab) per la preparazione, l'installazione e la configurazione. <br>Abilitare AutoIR  |[Simula attacco](mtp-pilot-simulate.md) <br></br>[Analisi automatizzata](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-simulate.md#automated-investigation-and-remediation) |Gli avvisi e gli eventi non consentiti vengono corretti automaticamente da Microsoft Threat Protection||||
 |Ricerca avanzata|-Protezione dalle minacce di Microsoft </br></br>-Microsoft Defender ATP </br></br>-Office 365 ATP   |Per informazioni dettagliate, vedere i [prerequisiti](https://aka.ms/mtp-trial-lab) per la preparazione, l'installazione e la configurazione.|[Scenario di caccia avanzato](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-simulate.md#advanced-hunting-scenario) |Gli investigatori possono trovare dati tramite la ricerca avanzata, pivoting alle entità interessate e creando rilevamenti personalizzati||||
 

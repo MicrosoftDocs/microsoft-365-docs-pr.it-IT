@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: f01f76ac591b4c2be9873fa87ec416939158acd3
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
-ms.translationtype: HT
+ms.openlocfilehash: 51b764e660ae36ae3476809b5fe6dae1c4ca0891
+ms.sourcegitcommit: 888b9355ef7b933c55ca6c18639c12426ff3fbde
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48195504"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "48304963"
 ---
 # <a name="microsoft-threat-protection-preview-features"></a>Funzionalità di anteprima di Microsoft Threat Protection
 
@@ -42,7 +42,7 @@ Informazioni sulle nuove funzionalità nella versione di anteprima di Microsoft 
 Per altre informazioni sulle nuove funzionalità disponibili a livello generale, vedere [Novità di Microsoft Threat Protection](whats-new.md).
 
 ## <a name="turn-on-preview-features"></a>Attivare funzionalità di anteprima
-Sarà consentito l’acceso alle funzionalità future, per le quali è possibile inviare feedback per consentire di migliorare l'esperienza complessiva prima che le funzionalità siano generalmente disponibili.
+È possibile accedere alle funzionalità imminenti che possono fornire commenti e suggerimenti per migliorare l'esperienza complessiva prima che le caratteristiche siano generalmente disponibili.
 
 Attivare l'opzione esperienza di anteprima per essere tra i primi a provare le funzionalità che saranno introdotte.
 
@@ -61,7 +61,6 @@ Se la casella di controllo **Attivare le funzionalità di anteprima** è selezio
 Le caratteristiche e i miglioramenti seguenti sono attualmente disponibili in anteprima:
 
 - **[API Microsoft Threat Protection](api-overview.md)**: le API Microsoft Threat Protection di livello superiore consentono di automatizzare i flussi di lavoro in base alle tabelle di incidenti condivisi e ricerca avanzata. 
-- **[Tabella IdentityDirectoryEvents in ricerca avanzata](advanced-hunting-identitydirectoryevents-table.md)**: trovare eventi che coinvolgono un controller di dominio locale che esegue Active Directory (AD). Questa tabella copre una serie di eventi correlati all'identità, nonché eventi di sistema sul controller di dominio.
-- **[Esegui azione in ricerca avanzata](advanced-hunting-take-action.md)**: contenere rapidamente le minacce o occuparsi delle risorse compromesse che si trovano in [ricerca avanzata](advanced-hunting-overview.md).
-- **[Riferimento di schema nel portale](advanced-hunting-schema-tables.md#get-schema-information-in-the-security-center)**: ottenere informazioni sulle tabelle dello schema di ricerca avanzata direttamente nel centro sicurezza. Oltre alle descrizioni di tabelle e colonne, questo pratico riferimento fornisce informazioni sui tipi di evento supportati, ossia `ActionType` valori, e sulle query di esempio.
+- **[Intraprendere un'azione in Advanced Hunting](advanced-hunting-take-action.md)**: rapidamente contenere minacce o l'indirizzo di risorse compromesse che si trovano in [Advanced Hunting](advanced-hunting-overview.md).
+- **[Riferimenti allo schema in-Portal](advanced-hunting-schema-tables.md#get-schema-information-in-the-security-center)**-ottenere informazioni sulle tabelle di schemi di caccia avanzate direttamente nel centro sicurezza. Oltre alle descrizioni di tabelle e colonne, questo riferimento include tipi di evento supportati ( `ActionType` valori) e query di esempio.
 

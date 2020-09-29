@@ -10,12 +10,12 @@ search.appverid: ''
 localization_priority: None
 ROBOTS: NOINDEX, NOFOLLOW
 description: Configurare la comprensione del contenuto in Project Cortex
-ms.openlocfilehash: f0a26f0044e578928730cf4930f1524e86dff9f3
-ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
+ms.openlocfilehash: 31c6b6dd31b3f1bc47deb8424dd847cc0af6d429
+ms.sourcegitcommit: 888b9355ef7b933c55ca6c18639c12426ff3fbde
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "48294868"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "48304781"
 ---
 # <a name="set-up-sharepoint-syntex"></a>Configurare SharePoint Syntex
 
@@ -107,27 +107,7 @@ Se si dispone di 300 o più licenze di Syntex di SharePoint per SharePoint Synte
 
 È possibile valutare la capacità del generatore AI che è adatta a te con la [calcolatrice di ai Builder](https://powerapps.microsoft.com/ai-builder-calculator).
 
-1. Accedere all'interfaccia di [amministrazione di Power Platform](https://admin.powerplatform.microsoft.com/resources/capacity) per controllare i crediti e l'utilizzo.
-
-    > [!NOTE]
-    > Abilita questa impostazione in una raccolta documenti di SharePoint non influisce sui modelli esistenti applicati alla raccolta o sulla possibilità di applicare i modelli di comprensione dei documenti a una raccolta. 
-    
-2. Dalla pagina **Crea centro contenuto** è possibile creare un sito Centro contenuto di SharePoint per cui gli utenti possono creare e gestire i modelli di comprensione dei documenti. </br>
-    a. Per **nome sito**Digitare il nome desiderato per il sito Centro contenuto.</br>
-    b. L' **indirizzo del sito** consente di visualizzare l'URL del sito, in base al nome del sito.</br>
-
-    > [!NOTE] 
-    > Anche se è possibile selezionare una lingua supportata, è possibile creare i modelli di informazioni di contenuto solo per l'inglese.</br>
-
-      ![Creare centro contenuto](../media/content-understanding/admin-cu-create-cc.png)</br>
-
-3. Selezionare **Avanti**.
-
-4. Nella pagina **fine e revisione** esaminare l'impostazione selezionata e scegliere di apportare modifiche. Se si è soddisfatti delle selezioni, selezionare **attiva**.
-
-5. Viene visualizzata la pagina **informazioni sull'attivazione del contenuto** , confermando che il sistema ha aggiunto le preferenze di elaborazione dei moduli e ha creato il sito Centro contenuto. Scegliere **Fine**.
-
-6. Verrà restituita la pagina di **informazioni sul contenuto automatico** . Da questa pagina, è possibile selezionare **Gestisci** per apportare modifiche alle impostazioni di configurazione. 
+Accedere all'interfaccia di [amministrazione di Power Platform](https://admin.powerplatform.microsoft.com/resources/capacity) per controllare i crediti e l'utilizzo.
 
 ## <a name="see-also"></a>Vedere anche
 

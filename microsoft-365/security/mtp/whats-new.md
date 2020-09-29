@@ -15,12 +15,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: d5a7cc491b0a8547848f4e341a605ae0c4b87cc9
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 8b9176fea67583fbdce647b2a3c37cf1d6fde7ed
+ms.sourcegitcommit: 888b9355ef7b933c55ca6c18639c12426ff3fbde
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48201280"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "48304859"
 ---
 # <a name="whats-new-in-microsoft-threat-protection"></a>Novità di Microsoft Threat Protection
 
@@ -34,12 +34,13 @@ Feed RSS: ricevere una notifica quando questa pagina viene aggiornata copiando e
 https://docs.microsoft.com/api/search/rss?search=%22Lists+the+new+features+and+functionality+in+Microsoft+Threat+Protection%22&locale=en-us
 ```
 ## <a name="september-2020"></a>Settembre 2020
-- [Funzione AssignedIPAddresses ()](advanced-hunting-assignedipaddresses-function.md) <br> Utilizzare questa funzione nelle query di [caccia avanzate](advanced-hunting-overview.md) per ottenere rapidamente gli indirizzi IP più recenti che sono stati assegnati a un dispositivo o gli indirizzi IP più recenti da un determinato momento.
+- [Tabella IdentityDirectoryEvents](advanced-hunting-identitydirectoryevents-table.md) <br> Individuare gli eventi che coinvolgono un controller di dominio locale che esegue Active Directory (AD). Questa tabella dello schema di [caccia avanzata](advanced-hunting-overview.md) copre una serie di eventi correlati all'identità e di eventi di sistema nel controller di dominio.
+- [Funzione AssignedIPAddresses ()](advanced-hunting-assignedipaddresses-function.md) <br> Utilizzare questa funzione nelle query di caccia avanzate per ottenere rapidamente gli indirizzi IP più recenti assegnati a un dispositivo o gli indirizzi IP più recenti da un determinato periodo di tempo.
 
 ## <a name="july-2020"></a>Luglio 2020
 - [Funzione fileprofile ()](advanced-hunting-fileprofile-function.md) <br> Utilizzare questa funzione nelle query di caccia avanzate per arricchire i risultati con informazioni complete sui file.
 - [Tabelle di identità e app](advanced-hunting-schema-tables.md)<br> Ottenere visibilità negli eventi di autenticazione, nelle query di Active Directory e nell'attività correlata all'applicazione con le tabelle [IdentityLogonEvents](advanced-hunting-identitylogonevents-table.md), [IdentityQueryEvents](advanced-hunting-identityqueryevents-table.md)e [AppFileEvents](advanced-hunting-appfileevents-table.md) nello schema di caccia avanzato.
-- [Iniziare la ricerca](advanced-hunting-go-hunt.md)<br> Consente di eseguire rapidamente l'analisi di un evento imprevisto per l'ispezione di eventi specifici, un utente, un dispositivo o altri tipi di entità che utilizzano funzionalità di ricerca avanzata basate su query.
+- [Iniziare la ricerca](advanced-hunting-go-hunt.md)<br> Rapidamente pivot dall'indagine di un incidente per esaminare un evento specifico, un utente, un dispositivo o altri tipi di entità per la ricerca avanzata.
 
 ## <a name="june-2020"></a>Giugno 2020
 - Feed Twitter <br> Ottenere le ultime ricerche sulla sicurezza, la tecnologia di minacce, le novità del prodotto e altro ancora, direttamente all'interno del dashboard.

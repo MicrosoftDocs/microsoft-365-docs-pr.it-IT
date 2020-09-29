@@ -1,6 +1,6 @@
 ---
-title: Esperienza di prima esecuzione con Autopilot e la pagina stato di registrazione
-description: Come distribuire l'esperienza ESP, le impostazioni utilizzate e le eccezioni
+title: Esperienza iniziale con Autopilot e pagina stato registrazione
+description: Come distribuire l'esperienza ESP, le impostazioni utilizzate e le modifiche alla configurazione
 keywords: Microsoft Managed Desktop, Microsoft 365, servizi, documentazione
 ms.service: m365-md
 author: jaimeo
@@ -10,14 +10,14 @@ audience: ITpro
 ms.topic: article
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 84656e2f0ae9d148c61c27af2a53e157cd44c171
-ms.sourcegitcommit: e6283e7c32ba9628fc45e9abc5cd4d21fb3f7ca9
+ms.openlocfilehash: 7337dd28f7940256d1753cd4c0b6309406fab2d1
+ms.sourcegitcommit: 888b9355ef7b933c55ca6c18639c12426ff3fbde
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 09/29/2020
-ms.locfileid: "48299240"
+ms.locfileid: "48305271"
 ---
-# <a name="first-run-experience-with-autopilot-and-the-enrollment-status-page"></a>Esperienza di prima esecuzione con Autopilot e la pagina stato di registrazione
+# <a name="first-run-experience-with-autopilot-and-the-enrollment-status-page"></a>Esperienza iniziale con Autopilot e pagina stato registrazione
 
 Microsoft Managed Desktop utilizza sia [Windows Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-autopilot) che la [pagina dello stato di registrazione di Microsoft Intune (ESP)](https://docs.microsoft.com/windows/deployment/windows-autopilot/enrollment-status) per offrire agli utenti la migliore esperienza possibile per la prima esecuzione.
 
@@ -49,7 +49,7 @@ Microsoft Managed Desktop utilizza queste impostazioni nel profilo Autopilot uti
 |Immettere un nome     | MMD-% RAND: 11%        |
 
 > [!NOTE]
-> Mentre il rovisioning "guanto bianco" è abilitato solo per i clienti con ESP attivato, non è attualmente supportato in Microsoft Managed Desktop.
+> Anche se il provisioning del "guanto bianco" è abilitato solo per i clienti con ESP attivato, attualmente non è supportato in Microsoft Managed Desktop.
 
 ## <a name="enrollment-status-page-settings"></a>Impostazioni della pagina stato di registrazione
 
@@ -89,15 +89,15 @@ L'esperienza procede come segue:
 
 Microsoft Managed Desktop attualmente non supporta la caratteristica "guanto bianco" di Windows Autopilot.
 
-## <a name="exceptions"></a>Eccezioni
+## <a name="change-to-autopilot-and-enrollment-status-page-settings"></a>Modificare le impostazioni della pagina stato di registrazione e autopilotment
 
-Se il programma di installazione utilizzato da Microsoft Managed Desktop non soddisfa esattamente le proprie esigenze, è possibile presentare una richiesta per un'eccezione. Per eseguire questa operazione, vedere Details in [request an Exception](../service-description/customizing.md#request-an-exception). Di seguito sono riportati alcuni esempi dei tipi di eccezioni che potrebbe essere necessario:
+Se il programma di installazione utilizzato da Microsoft Managed Desktop non soddisfa esattamente le proprie esigenze, è possibile archiviare un ticket di supporto tramite il [portale di amministrazione](https://portal.azure.com/). Di seguito sono riportati alcuni esempi dei tipi di configurazione che potrebbe essere necessario:
 
-### <a name="autopilot-exception"></a>Eccezione Autopilot
+### <a name="autopilot-settings-change"></a>Modifica delle impostazioni del pilota automatico
 
 Potrebbe essere necessario richiedere un modello di nome dispositivo diverso. Tuttavia, non è possibile modificare la modalità di distribuzione, aggiungersi a Azure As, impostazioni della privacy o tipo di account utente.
 
-### <a name="enrollment-status-page-exception"></a>Eccezione della pagina stato di registrazione
+### <a name="enrollment-status-page-settings-change"></a>Modifica delle impostazioni della pagina di stato di registrazione
 
 - Un numero maggiore di minuti per l'impostazione "Mostra un errore durante l'installazione richiede più tempo del numero di minuti specificato".
 - Il messaggio di errore visualizzato
