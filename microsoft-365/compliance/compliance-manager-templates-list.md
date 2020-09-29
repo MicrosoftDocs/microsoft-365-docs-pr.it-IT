@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft Compliance Manager fornisce modelli per la creazione di valutazioni che si allineano alle normative, agli standard e alle leggi nazionali, regionali e industriali.
-ms.openlocfilehash: 548844e3850757484f9ee1d455d6ecd18bcb939c
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 9bce625bd8733570a62e3b5f7685cace84005b69
+ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48204435"
+ms.lasthandoff: 09/28/2020
+ms.locfileid: "48294796"
 ---
 # <a name="compliance-manager-templates-list"></a>Elenco dei modelli di Compliance Manager
 
@@ -134,13 +134,8 @@ Per ulteriori informazioni [, vedere and manage your templates](compliance-manag
 - Indonesia-legge 11/2008 (Microsoft 365)
 - Indonesia-PERATURAN Pemerintah No. 82 tahun 2012-regolamento governativo-regolamento sulla protezione dei dati (Microsoft 365)
 - [IRS-P1075](offering-irs-1075.md) (Microsoft 365)
-- ISO 15489 (Microsoft 365)
-- [ISO 22301:2019](offering-iso-22301.md) (Microsoft 365)
-- ISO 27005:2018 (Microsoft 365)
 - [ISO 27017:2015](offering-iso-27017.md) (Microsoft 365)
-- ISO 31000:2018 (Microsoft 365)
 - [ISO/IEC 27018:2014](offering-iso-27018.md)
-- [ISO/IEC 27701:2019](offering-iso-27701.md) (Microsoft 365)
 - Israele-normativa sulla tutela della privacy (trasferimento di dati a database all'estero) (Microsoft 365)
 - ITU X. 1052 Information Security Management Framework (Microsoft 365)
 - Giappone-agire sulla proibizione dell'accesso al computer non autorizzato (Microsoft 365)

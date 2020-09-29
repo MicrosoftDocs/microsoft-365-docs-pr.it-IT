@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Pronti per iniziare a implementare le etichette di riservatezza per proteggere i dati dell'organizzazione, ma in dubbio su come iniziare? Leggere alcune guide pratiche utili per iniziare il percorso di implementazione dell'etichettatura.
-ms.openlocfilehash: 2c23246f17a8d9ea9681017dca28e144f3088604
-ms.sourcegitcommit: 1522a6471e0c5254a6d0f592e1f4dfacd1dd473a
+ms.openlocfilehash: 7892eabdea3d92e9720b23efc708a99c7154ab7b
+ms.sourcegitcommit: 61d7284b412d0f7bbd8bbb2225c2e6324f86b717
 ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 09/24/2020
-ms.locfileid: "48245959"
+ms.locfileid: "48262301"
 ---
 # <a name="get-started-with-sensitivity-labels"></a>Iniziare a usare le etichette di riservatezza
 
@@ -67,7 +67,6 @@ Per istruzioni su come aggiungere utenti ai ruoli predefiniti o creare i gruppi 
 Queste autorizzazioni sono necessarie solo per creare e configurare le etichette di riservatezza e i relativi criteri di etichetta. Non sono invece necessarie per applicare le etichette nelle app o nei servizi. Se sono necessarie autorizzazioni aggiuntive per configurazioni specifiche relative alle etichette di riservatezza, tali autorizzazioni verranno riportate nelle rispettive istruzioni nella documentazione.
 
 ## <a name="deployment-strategy-for-sensitivity-labels"></a>Strategia di distribuzione per le etichette di riservatezza
-
 Una strategia efficace per distribuire etichette di riservatezza per un'organizzazione consiste nel creare un team operativo virtuale che identifichi e gestisca le esigenze aziendali e tecniche, i test del modello di prova, i punti controllo interni e le approvazioni nonché la distribuzione finale per l'ambiente di produzione.
 
 Se si utilizza la tabella presente nella sezione seguente, è consigliabile identificare uno o due scenari principali che corrispondano ai propri requisiti aziendali più rilevanti. Dopo la distribuzione di questi scenari, tornare all'elenco per identificare una o due priorità successive per la distribuzione.
