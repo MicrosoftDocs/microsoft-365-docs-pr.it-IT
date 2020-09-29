@@ -151,8 +151,10 @@
       items:
         - name: Comprendere la crittografia
           href: encryption.md
-        - name: Crittografia a chiave doppia (anteprima)
+        - name: Crittografia a chiave doppia
           href: double-key-encryption.md
+        - name: Domande frequenti sulla crittografia a chiave doppia
+          href: double-key-encryption-overview.md
         - name: Servizio di crittografia di Office 365
           href: office-365-service-encryption.md
         - name: Customer Key
@@ -340,10 +342,6 @@
               href: archive-workplacefromfacebook-data.md
             - name: Riunioni Zoom
               href: archive-zoommeetings-data.md
-            - name: Slack
-              href: archive-slack-data.md
-            - name: Riunioni Zoom
-              href: archive-zoommeetings-data.md
         - name: Connettori dati TeleMessage
           items:
             - name: Android
@@ -425,7 +423,7 @@
               href: configure-edge-to-export-search-results.md
             - name: Cercare ed eliminare messaggi di posta elettronica
               href: search-for-and-delete-messages-in-your-organization.md
-            - name: Eseguire ricerche nelle cassette postali basate sul cloud di utenti locali
+            - name: Cercare i dati della chat di Teams per gli utenti locali
               href: search-cloud-based-mailboxes-for-on-premises-users.md
             - name: Modificare in blocco più ricerche di contenuti
               href: bulk-edit-content-searches.md
