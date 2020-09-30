@@ -14,12 +14,12 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Panoramica della connettività di rete nell'interfaccia di amministrazione di Microsoft 365 (anteprima)
-ms.openlocfilehash: 52d1995572a3ae0220ac8529862ba69d5bca8cdb
-ms.sourcegitcommit: c1ee4ed3c5826872b57339e1e1aa33b4d2209711
+ms.openlocfilehash: 91c931eba5c9f5bdb9f45185581019cc9c754ed2
+ms.sourcegitcommit: f7ca339bdcad38796c550064fb152ea09687d0f3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "48235539"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48322200"
 ---
 # <a name="network-connectivity-in-the-microsoft-365-admin-center-preview"></a>Connettività di rete nell'interfaccia di amministrazione di Microsoft 365 (anteprima)
 
@@ -157,8 +157,8 @@ Nel file CSV una posizione della città scoperta viene visualizzata nella colonn
    1. **Indirizzo** (obbligatorio): indirizzo fisico dell'ufficio
    1. **Latitude** (facoltativo): popolato dalla ricerca di Bing Maps dell'indirizzo se vuoto
    1. **Longitudine** (facoltativo): popolato dalla ricerca di Bing Maps dell'indirizzo se vuoto
-   1. **Intervalli di indirizzi IP di uscita 1-5** (facoltativo): per ogni intervallo, immettere il nome del circuito seguito da un elenco separato da spazi di indirizzi CIDR IPv4 o IPv6 validi. Questi valori vengono utilizzati per distinguere più percorsi di Office in cui si utilizzano gli stessi indirizzi IP della subnet LAN.
-   1. **LanIps** (obbligatorio): elenca gli intervalli di subnet LAN in uso in questa posizione di Office.
+   1. **Intervalli di indirizzi IP di uscita 1-5** (facoltativo): per ogni intervallo, immettere il nome del circuito seguito da un elenco separato da spazi di indirizzi CIDR IPv4 o IPv6 validi. Questi valori vengono utilizzati per distinguere più percorsi di Office in cui si utilizzano gli stessi indirizzi IP della subnet LAN. Gli intervalli di indirizzi IP di uscita tutti devono essere/24 dimensioni della rete e il/24 non è incluso nell'input.
+   1. **LanIps** (obbligatorio): elenca gli intervalli di subnet LAN in uso in questa posizione di Office. Gli ID subnet LAN devono avere una dimensione della rete CIDR inclusa se la dimensione della rete può essere compresa tra/8 e/29. Gli intervalli di subnet LAN multipli possono essere separati da una virgola o da un punto e virgola.
 1. Dopo aver aggiunto i percorsi di Office e aver salvato il file, fare clic sul pulsante **Sfoglia** accanto al campo **carica il completamento** e selezionare il file CSV salvato.
 1. Il file verrà convalidato automaticamente. Se sono presenti errori di convalida, verrà visualizzato il messaggio _di errore nel file di importazione. Esaminare gli errori, correggere il file di importazione e quindi riprovare._ Fare clic sul collegamento **Dettagli errore di apertura** per un elenco di errori specifici di convalida dei campi.
 

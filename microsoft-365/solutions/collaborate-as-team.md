@@ -16,12 +16,12 @@ ms.custom:
 localization_priority: Normal
 f1.keywords: NOCSH
 description: Informazioni sui passaggi di configurazione di Microsoft 365 necessari per configurare un team per la collaborazione con gli utenti in teams.
-ms.openlocfilehash: f22404ea412085ed697f76219509c1382318e7d4
-ms.sourcegitcommit: 445b249a6f0420b32e49742fd7744006c7090b2b
+ms.openlocfilehash: e8d1c75c6172168fc2b0a4b351591289c893869a
+ms.sourcegitcommit: f7ca339bdcad38796c550064fb152ea09687d0f3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46797771"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48322178"
 ---
 # <a name="collaborate-with-guests-in-a-team"></a>Collaborare con gli utenti guest in un team
 
@@ -47,7 +47,7 @@ Per impostare le impostazioni delle relazioni organizzative
 
 1. Accedere a Microsoft Azure all'indirizzo [https://portal.azure.com](https://portal.azure.com) .
 2. Nel riquadro di spostamento a sinistra, fare clic su **Azure Active Directory**.
-3. Nel riquadro **Panoramica** fare clic su **identità esterne**.
+3. Nel riquadro **Panoramica** fare clic su **Identità esterne**.
 4. Nel riquadro **identità organizzativa** fare clic su **impostazioni di collaborazione esterna**.
 5. Verificare che **gli amministratori e gli utenti del ruolo invitato ospite possano invitare** e che **i membri possano invitare** siano entrambi impostati su **Sì**.
 6. Se si apportano modifiche, fare clic su **Salva**.
@@ -105,7 +105,7 @@ Se si desidera consentire la condivisione di file e cartelle con persone non aut
 Per impostare le impostazioni di condivisione a livello di organizzazione di SharePoint
 
 1. Nell'interfaccia di amministrazione di Microsoft 365, nella barra di spostamento a sinistra, in interfaccia di **Amministrazione**, fare clic su **SharePoint**.
-2. Nella parte sinistra dell'interfaccia di amministrazione di SharePoint, fare clic su **Condivisione**.
+2. Nell'interfaccia di amministrazione di SharePoint, nel riquadro di spostamento a sinistra, espandere **criteri** e quindi fare clic su **condivisione**.
 3. Assicurarsi che la condivisione esterna per SharePoint sia impostata su **tutti gli utenti** o **gli ospiti nuovi e esistenti**.
 4. Se si apportano modifiche, fare clic su **Salva**.
 
