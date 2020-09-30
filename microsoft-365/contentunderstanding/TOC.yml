@@ -1,4 +1,4 @@
-- name: Informazioni introduttive sul contenuto
+- name: Introduzione a Microsoft SharePoint Syntex
   items:
     - name: Introduzione a Microsoft SharePoint Syntex
       href: microsoft-sharepoint-syntex-overview.md
@@ -16,7 +16,7 @@
       href: create-a-classifier.md
     - name: Creare un estrattore
       href: create-an-extractor.md
-    - name: Panoramica sui tipi di spiegazione
+    - name: Tipi di spiegazione
       href: explanation-types-overview.md
     - name: Applicazione di un modello
       href: apply-a-model.md
@@ -26,9 +26,11 @@
       href: apply-a-retention-label-to-a-model.md
     - name: Analisi dell'utilizzo del modello
       href: model-usage-analytics.md
+    - name: Tassonomia dell'archivio termini di sfruttamento durante la creazione di un estrattore
+      href: leverage-term-store-taxonomy.md
 - name: Installazione e amministrazione
   items:
-    - name: Configurare la comprensione del contenuto
+    - name: Configurare la comprensione dei contenuti.
       href: set-up-content-understanding.md
     - name: Tagging dell'immagine
       href: image-tagging.md
