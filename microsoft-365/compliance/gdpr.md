@@ -59,7 +59,7 @@ Come già accennato, il piano d'azione consigliato per il GDPR e gli elenchi di 
 
 ## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>Usare Microsoft Compliance Manager per valutare i rischi
 
-[Microsoft Compliance Manager](compliance-manager.md) è una funzionalità nel [Centro conformità Microsoft 365](microsoft-365-compliance-center.md) utile per comprendere lo stato di conformità dell'organizzazione e attuare misure per ridurre i rischi. Compliance Manager offre una valutazione predefinita per questa normativa ai clienti Enterprise E5. Individuare il modello per la creazione della valutazione nella pagina **modelli di valutazioni** di Compliance Manager. Informazioni su come [creare valutazioni in Compliance Manager](compliance-manager-assessments.md).
+[Microsoft Compliance Manager](compliance-manager.md) è una funzionalità del [Centro conformità Microsoft 365](microsoft-365-compliance-center.md) utile per comprendere lo stato di conformità dell'organizzazione e adottare misure per ridurre i rischi. Compliance Manager offre una valutazione predefinita per questa normativa ai clienti Enterprise E5. Il modello per realizzare la valutazione è disponibile nella pagina dei **modelli di valutazioni** di Compliance Manager. Informazioni su come [creare valutazioni in Compliance Manager](compliance-manager-assessments.md).
 
 ## <a name="data-subject-request-dsr"></a>Richiesta dell'interessato (DSR)
 

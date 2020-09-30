@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Usare le etichette di riservatezza per proteggere il contenuto in siti di SharePoint e Microsoft Teams e in gruppi di Microsoft 365.
-ms.openlocfilehash: b81d598c3a80a915d9d20622a1b6d2e6f4517883
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: 4ae0491699f2ffa60245d502bb691b2c79b34133
+ms.sourcegitcommit: 888b9355ef7b933c55ca6c18639c12426ff3fbde
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47547688"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "48305378"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>Usare le etichette di riservatezza per proteggere il contenuto in Microsoft Teams, gruppi di Microsoft 365 e siti di SharePoint
 
@@ -35,7 +35,7 @@ Le [etichette di riservatezza](sensitivity-labels.md), oltre a essere usate per 
 - Accesso da dispositivi non gestiti
 
 > [!IMPORTANT]
-> La funzionalità **Accedi da dispositivi non gestiti** funziona in combinazione con la caratteristica di SharePoint che consente di [controllare l'accesso da dispositivi non gestiti](/sharepoint/control-access-from-unmanaged-devices). Per utilizzare un'etichetta di riservatezza per cui sia configurata questa impostazione, è necessario configurare questa funzionalità dipendente di SharePoint per il proprio tenant. Altre informazioni sono disponibili nelle istruzioni seguenti.
+> La funzionalità **Accedi da dispositivi non gestiti** funziona in combinazione con la caratteristica di SharePoint che consente di [controllare l'accesso da dispositivi non gestiti](/sharepoint/control-access-from-unmanaged-devices). Per utilizzare un'etichetta di riservatezza per cui sia configurata questa impostazione, è necessario configurare questa funzionalità dipendente di SharePoint. Altre informazioni sono disponibili nelle istruzioni seguenti.
 
 Quando si applica questa etichetta di riservatezza a uno dei contenitori supportati, l'etichetta applica automaticamente le impostazioni di classificazione e protezione al sito o al gruppo connesso.
 
@@ -86,13 +86,13 @@ In questa nuova pagina **Impostazioni sito e gruppo**, configurare le impostazio
 
 - **Accesso di utenti esterni**: controllare se il proprietario del gruppo può [aggiungere utenti guest al gruppo](/office365/admin/create-groups/manage-guest-access-in-groups).
 
-- **Dispositivi non gestiti**: per questa opzione, è anche necessario configurare la funzionalità di SharePoint che usa l'accesso condizionale di Azure AD per bloccare o limitare l'accesso ai contenuti di SharePoint e OneDrive da dispositivi non gestiti. Per le istruzioni, vedere [Controllare l'accesso da dispositivi non gestiti](/sharepoint/control-access-from-unmanaged-devices). L'opzione specificata per questa impostazione dell'etichetta equivale a [bloccare o limitare l'accesso a uno specifico sito di SharePoint o OneDrive](https://docs.microsoft.com/sharepoint/control-access-from-unmanaged-devices#block-or-limit-access-to-a-specific-sharepoint-site-or-onedrive).
+- **Dispositivi non gestiti**: questa opzione si serve della funzionalità di SharePoint che usa l'accesso condizionale di Azure AD per bloccare o limitare l'accesso ai contenuti di SharePoint e OneDrive da dispositivi non gestiti. Per altre informazioni, vedere [Controllare l'accesso da dispositivi non gestiti](/sharepoint/control-access-from-unmanaged-devices). L'opzione specificata per questa impostazione dell'etichetta equivale all'esecuzione di un comando di PowerShell per un sito, come descritto nei passaggi 7-9 di [Bloccare o limitare l'accesso a uno specifico sito di SharePoint o OneDrive](https://docs.microsoft.com/sharepoint/control-access-from-unmanaged-devices#block-or-limit-access-to-a-specific-sharepoint-site-or-onedrive).
     
-    Se la funzionalità dipendente di SharePoint non viene configurata l'opzione specificata in questa sezione non avrà alcun effetto. Inoltre, non avrà alcun effetto se è meno restrittiva rispetto all'impostazione configurata al livello del tenant. Scegliere un'impostazione dell'etichetta che sia restrittiva almeno tanto quanto l'impostazione a livello del tenant.
+    Se non si configurano i criteri di accesso condizionale dipendenti come descritto nei passaggi 1-6 delle istruzioni per SharePoint, l'opzione specificata non avrà alcun effetto. Inoltre, non avrà alcun effetto se è meno restrittiva rispetto a un'impostazione configurata al livello del tenant. Se è stata configurata un'opzione per i dispositivi non gestiti a livello di organizzazione, scegliere un'impostazione dell'etichetta uguale o più restrittiva.
     
     Per esempio, se il tenant è configurato in modo da **Consentire l'accesso limitato solo web**, l'impostazione dell'etichetta che consente l'accesso totale non avrà effetto perché è meno restrittiva. Per questa impostazione a livello del tenant, scegliere l'impostazione dell'etichetta per bloccare l'accesso (più restrittiva) o l'impostazione per l'accesso limitato (la stessa impostazione del tenant).
     
-    Dato che la funzionalità di SharePoint può essere configurata indipendentemente dall'etichetta, la procedura guidata dell'etichetta di riservatezza non verifica che le dipendenze siano disponibili.
+    Dato che la funzionalità di SharePoint può essere configurata indipendentemente dall'impostazione dell'etichetta, la procedura guidata dell'etichetta di riservatezza non verifica che le dipendenze siano disponibili.
 
 ![Scheda Impostazioni sito e gruppo](../media/edit-sensitivity-label-site-group2.png)
 

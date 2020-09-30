@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 496a84b153d017eb69ba5b18443e4331c00c4dd7
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 6052d4fd4c4f85696d18d7ccdd679fd98e9fc7c8
+ms.sourcegitcommit: 888b9355ef7b933c55ca6c18639c12426ff3fbde
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47416580"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "48304826"
 ---
 # <a name="microsoft-support-and-professional-services-data-subject-requests-for-the-gdpr-and-ccpa"></a>Richieste degli interessati per Professional Services e supporto tecnico Microsoft nell'ambito del GDPR e del CCPA
 
@@ -33,15 +33,15 @@ Per ulteriori informazioni sui Servizi professionali di Microsoft passale alla [
 
 ### <a name="introduction-to-dsrs"></a>Introduzione alle richieste DSR 
 
-Il Regolamento generale sulla protezione dei dati (GDPR) garantisce alle persone (denominate *interessati* nel regolamento) il diritto di gestire i dati personali raccolti da un datore di lavoro o da un'altra organizzazione o agenzia (definiti *titolari del trattamento dei dati* o semplicemente *titolari*). I dati personali sono ampiamente descritti nel GDPR come dati che si riferiscono a una persona fisica identificata o identificabile. Il GDPR garantisce agli interessati diritti specifici sui propri dati personali; tali diritti includono la possibilità di ottenere delle copie dei dati personali, richiedere di apportare delle modifiche ai dati, limitare il trattamento dei dati, eliminarli o riceverli in un formato elettronico affinché possano essere trasferiti a un altro titolare. Una richiesta formale di un interessato rivolta a un titolare in merito a un'operazione da effettuare sui propri dati personali è denominata *Richiesta dell'interessato* o DSR. Inoltre, le società che lavorano per conto di un titolare (definite come *responsabili del trattamento dei dati* o semplicemente *responsabili*) sono tenute ad assistere il titolare nel soddisfare le richieste degli interessati.
+Il Regolamento generale sulla protezione dei dati (GDPR) garantisce alle persone (denominate *interessati* nel regolamento) il diritto di gestire i dati personali raccolti da un datore di lavoro o da un'altra organizzazione o agenzia (definiti *titolari del trattamento dei dati* o semplicemente *titolari*). I dati personali sono descritti nel GDPR come dati che si riferiscono a una persona fisica identificata o identificabile. Il GDPR garantisce agli interessati diritti specifici sui propri dati personali; tali diritti includono la possibilità di ottenere delle copie dei dati personali, richiedere di apportare delle modifiche ai dati, limitare il trattamento dei dati, eliminarli o riceverli in un formato elettronico affinché possano essere trasferiti a un altro titolare. Una richiesta formale di un interessato rivolta a un titolare in merito a un'operazione da effettuare sui propri dati personali è denominata *Richiesta dell'interessato* o DSR. Inoltre, le società che lavorano per conto di un titolare (definite come *responsabili del trattamento dei dati* o semplicemente *responsabili*) sono tenute ad assistere il titolare nel soddisfare le richieste degli interessati.
 
-Analogamente, il California Consumer Privacy Act (CCPA) fornisce obblighi e diritti in materia di privacy per i consumatori della California, inclusi diritti simili ai diritti dell'interessato del GDPR, ad esempio il diritto di eliminare, ricevere e accedere alle informazioni personali (portabilità).  Nell'ambito dei diritti che i consumatori possono esercitare, il CCPA prevede inoltre l'obbligo per determinate divulgazioni, di protezioni contro la discriminazione e requisiti di consenso o rifiuto esplicito per alcuni trasferimenti di dati classificati come "vendite". In generale, la definizione di vendite include la condivisione di dati a titolo oneroso. Per altre informazioni sul CCPA, vedere il [California Consumer Privacy Act](offering-ccpa.md) e le [Domande frequenti sul California Consumer Privacy Act](ccpa-faq.md).
+Analogamente, il California Consumer Privacy Act (CCPA) prevede obblighi e diritti in materia di privacy per i consumatori della California, inclusi diritti simili a quelli che il GDPR riconosce all'interessato, ad esempio il diritto di eliminare, ricevere e accedere alle informazioni personali (portabilità).  Nell'ambito dei diritti che i consumatori possono esercitare, il CCPA prevede inoltre l'obbligo per determinate divulgazioni, di protezioni contro la discriminazione e requisiti di consenso o rifiuto esplicito per alcuni trasferimenti di dati classificati come "vendite". In generale, la definizione di vendite include la condivisione di dati a titolo oneroso. Per altre informazioni sul CCPA, vedere il [California Consumer Privacy Act](offering-ccpa.md) e le [Domande frequenti sul California Consumer Privacy Act](ccpa-faq.md).
 
 In questa guida viene descritto come individuare, accedere e utilizzare i dati personali presenti nei sistemi IT di Microsoft che potrebbero essere raccolti per fornire supporto e altre offerte di Servizi professionali.
 
 Nello sviluppo di una risposta a una richiesta dell'interessato, è importante che i clienti Microsoft comprendano che i dati relativi a consulenza e supporto sono separati dai dati dei clienti in Online Services o altri dati che potrebbero aver fornito a Microsoft, direttamente o tramite gli interessati. Strumenti e processi forniti per Online Services, Dashboard della privacy di Microsoft o altri sistemi Microsoft per la risposta alle richieste degli interessati non possono essere utilizzati per rispondere alle richieste degli interessati relative ai dati personali detenuti dal Supporto Microsoft o da altri Professional Services.
 
-Tutte le richieste devono essere effettuate tramite un rappresentante del supporto, come descritto di seguito. Attualmente, non esiste uno strumento self-service che consenta ai clienti di accedere ai dati personali all'interno delle organizzazioni di Servizi professionali.
+Tutte le richieste devono essere effettuate tramite un rappresentante del supporto, come descritto più avanti in questo articolo. Attualmente, non esiste uno strumento self-service che consenta ai clienti di accedere ai dati personali all'interno delle organizzazioni di Professional Services.
 
 #### <a name="overview-of-the-processes-outlined-in-this-guide"></a>Panoramica dei processi descritti in questa guida
 
@@ -58,7 +58,7 @@ Di seguito sono riportate le definizioni dei termini relativi all'RGPD per quest
 
 - **Titolare:** la persona fisica o giuridica, l'autorità pubblica, l'agenzia o altro ente che, autonomamente o unitamente ad altri soggetti, determina gli obiettivi e i mezzi del trattamento dei dati personali; laddove gli obiettivi e i mezzi di tale trattamento sono determinati da una normativa europea o di uno specifico Stato membro dell'UE, il titolare del trattamento dei dati o i criteri specifici per la sua designazione potrebbero essere forniti da tale normativa europea o di uno specifico Stato membro dell'UE.
 - **Dati personali e interessato:** tutte le informazioni concernenti una persona fisica identificata o identificabile ("interessato"). Una persona fisica è identificabile se può essere identificata, direttamente o indirettamente, in particolare facendo riferimento a un identificatore (ad esempio un nome, un numero di identificazione, dati di posizione o un identificatore online) o a uno o più fattori relativi all'identità fisica, fisiologica, genetica, mentale, economica, culturale o sociale di tale persona fisica.
-- **Responsabile:** una persona fisica o giuridica, un'autorità pubblica o altro ente che si occupa del trattamento dei dati personali per conto del titolare.
+- **Responsabile del trattamento:** una persona fisica o giuridica, un'autorità pubblica, un'agenzia o altro corpo che tratta i dati personali per conto del titolare.
 
 #### <a name="additional-terms-and-definitions-that-may-be-helpful-in-understanding-this-guide"></a>Ulteriori termini e definizioni che possono facilitare la comprensione di questa guida
 
@@ -89,7 +89,7 @@ Alla ricezione di una richiesta di informazioni da un contatto cliente in merito
 
 Per mantenere la continuità aziendale del cliente, inoltre, Microsoft non elabora una richiesta dell'interessato associata a un'interazione finché non viene confermato un contatto sostitutivo. Alla conferma di un nuovo contatto, Microsoft sostituisce il contatto precedente con quello nuovo nelle interazioni aperte.
 
-I clienti possono scegliere di apportare modifiche ai propri dati raccolti durante gli impegni di Servizi professionali tramite i normali canali di consulenza o supporto, separati dalla richiesta DSR. Ad esempio, Microsoft può assistere nell'eliminazione di impegni relativi al supporto, su richiesta (vedere di seguito nella sezione *Guida alle richieste DSR per i dati forniti dal cliente*).
+I clienti possono scegliere di apportare modifiche ai propri dati raccolti durante le interazioni con i Professional Services tramite i normali canali di consulenza o supporto, separati dalla richiesta DSR. Ad esempio, Microsoft può assistere nell'eliminazione di interazioni di supporto, su richiesta (vedere di seguito nella sezione *Guida alle richieste DSR per i dati forniti dal cliente*).
 
 ***Esempio solo a scopo illustrativo***
 
@@ -172,7 +172,7 @@ Microsoft applica a tutti i dati dei criteri di conservazione ed eliminazione, c
 
 I clienti possono richiedere la cancellazione dei dati personali di un interessato a livello globale nei sistemi di supporto tramite il TAM o compilando una richiesta di supporto in SMC o in un sistema equivalente. *È necessario* indicare che si tratta di una richiesta di assistenza per una richiesta dell'interessato secondo il GDPR.
 
-*Opzione A: richiesta dell'interessato del cliente relativa al supporto Microsoft per più sistemi*. Per una richiesta dell'interessato per più sistemi, il cliente deve fornire i dati personali necessari a Microsoft per identificare i dati richiesti (ad esempio, l'indirizzo e-mail, il numero di telefono). Microsoft non correla o esegue ricerche nei record, ma utilizza direttamente gli identificatori forniti dal cliente. Una volta individuati i dati, Microsoft elimina tutte le interazioni e tutti i dati associati.
+*Opzione B: richiesta dell'interessato del cliente per il Supporto tecnico Microsoft*. Per una richiesta dell'interessato per più sistemi, il cliente deve fornire i dati personali necessari a Microsoft per identificare i dati richiesti (ad esempio, l'indirizzo e-mail, il numero di telefono). Microsoft non correla o esegue ricerche nei record, ma utilizza direttamente gli identificatori forniti dal cliente. Una volta individuati i dati, Microsoft elimina tutte le interazioni e tutti i dati associati.
 
 > Nota importante: questa operazione potrebbe comportare la perdita di record cronologici importanti per l'organizzazione del cliente.
 
@@ -229,7 +229,7 @@ Per i servizi di migrazione FastTrack, Microsoft è responsabile del trattamento
   
 Se è necessario elaborare richieste di accesso, rettifica o esportazione degli interessati mentre i dati di un utente vengono trattati tramite i sistemi di migrazione FastTrack, spetterà al cliente soddisfare tali richieste degli interessati tramite i sistemi di origine esistenti in cui sono archiviati i dati dell'utente. Una volta completata la migrazione dell'utente e la migrazione dei dati nel servizio cloud Microsoft di destinazione, saranno quindi applicate le indicazioni fornite da Microsoft su come i clienti possono usare i prodotti, i servizi e gli strumenti di amministrazione di Microsoft per trovare i dati personali e agire su di essi per rispondere alle richieste degli interessati. Per visualizzare questa guida, vedere [Richieste dell'interessato per il GDPR](https://docs.microsoft.com/microsoft-365/compliance/gdpr-data-subject-requests). 
 
-Se è necessario eliminare un account utente in risposta a una richiesta di eliminazione DSR mentre l'organizzazione è impegnata in un progetto di migrazione FastTrack in corso, è necessario tenere presente che i sistemi di migrazione possono conservare una copia dei dati di migrazione dell'utente per un periodo di tempo successivo al completamento della migrazione dell'utente e l'eliminazione dell'account utente di Office 365 non eliminerà automaticamente tali dati di migrazione degli utenti memorizzati nei sistemi di migrazione FastTrack. Se si desidera che il team Microsoft FastTrack elimini i dati di migrazione degli utenti, è possibile [inviare una richiesta](https://go.microsoft.com/fwlink/?linkid=874544). Nel corso della normale attività, Microsoft FastTrack cancellerà tutte le copie di dati una volta completata la migrazione dell'organizzazione.
+Se è necessario eliminare un account utente in risposta a una richiesta di eliminazione DSR mentre l'organizzazione è impegnata in un progetto di migrazione FastTrack in corso, è necessario tenere presente che i sistemi di migrazione possono conservare una copia dei dati di migrazione dell'utente per un periodo di tempo successivo al completamento della migrazione dell'utente e l'eliminazione dell'account utente non eliminerà automaticamente tali dati di migrazione degli utenti archiviati nei sistemi di migrazione FastTrack. Se si desidera che il team Microsoft FastTrack elimini i dati di migrazione degli utenti, è possibile [inviare una richiesta](https://go.microsoft.com/fwlink/?linkid=874544). Nel corso della normale attività, Microsoft FastTrack cancellerà tutte le copie dei dati una volta completata la migrazione dell'organizzazione.
 
 ## <a name="other-consulting-services"></a>Altri servizi di consulenza
 
