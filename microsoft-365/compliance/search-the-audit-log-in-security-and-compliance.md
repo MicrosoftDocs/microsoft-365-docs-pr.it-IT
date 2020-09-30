@@ -17,18 +17,18 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
-description: Usare il Centro sicurezza e conformità per eseguire una ricerca nel log di controllo unificato e visualizzare l'attività degli utenti e degli amministratori nell'organizzazione.
+description: Usare il Centro sicurezza e conformità di Office 365 o il Centro conformità Microsoft 365 per eseguire una ricerca nel log di controllo unificato e vedere le attività di utenti e amministratori nell'organizzazione.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 7051e03ca4751d6e97d9af9228765be9e1af6ebe
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 48d40cff907480f05dff8ba1c5c1584fc8289b1b
+ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48197349"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48286042"
 ---
-# <a name="search-the-audit-log-in-the-security--compliance-center"></a>Eseguire una ricerca nel log di controllo nel Centro sicurezza e conformità
+# <a name="search-the-audit-log-in-the-compliance-center"></a>Eseguire una ricerca nel log di controllo nel Centro conformità
 
-Se è necessario verificare se un utente ha visualizzato un documento specifico o ha eliminato un elemento dalla cassetta postale, è possibile usare il Centro sicurezza e conformità per eseguire una ricerca nel log di controllo unificato e visualizzare l'attività degli utenti e degli amministratori nell'organizzazione. Perché usare un log di controllo unificato? Perché è possibile cercare i tipi seguenti di [attività di utenti e amministratori](#audited-activities) in Office 365:
+Se è necessario verificare se un utente ha visualizzato un documento specifico o ha eliminato un elemento dalla cassetta postale, è possibile usare il Centro sicurezza e conformità per eseguire una ricerca nel log di controllo unificato e visualizzare l'attività degli utenti e degli amministratori nell'organizzazione. Perché usare un log di controllo unificato? Perché è possibile cercare i tipi seguenti di [attività di utenti e amministratori](#audited-activities) in Microsoft 365:
 
 - Attività utente in SharePoint Online e OneDrive for Business
 
@@ -36,7 +36,7 @@ Se è necessario verificare se un utente ha visualizzato un documento specifico 
 
 - Attività amministratore in SharePoint Online
 
-- Attività amministratore in Azure Active Directory (servizio directory per Office 365)
+- Attività amministratore in Azure Active Directory (servizio directory per Microsoft 365)
 
 - Attività amministratore in Exchange Online (registrazione di controllo dell'amministratore di Exchange )
 

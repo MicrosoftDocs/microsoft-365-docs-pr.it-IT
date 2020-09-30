@@ -16,17 +16,16 @@ ms.assetid: c31406ea-2979-4fac-9288-f835269b9d2f
 ms.collection:
 - M365-security-compliance
 description: Gli amministratori possono ottenere informazioni sui diversi modi per segnalare messaggi buoni e non validi e file a Microsoft per l'analisi.
-ms.openlocfilehash: 040f998b09f280fc2b6bdfdac327313f9cc65c3c
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: aeaf7a779ac9ba2d879a88dd72f4a457a26096ca
+ms.sourcegitcommit: 61ef32f802a1fb6d1e3a3aa005764ead32a7951e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48203656"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48318188"
 ---
 # <a name="report-messages-and-files-to-microsoft"></a>Segnalazione di messaggi e file a Microsoft
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
-
 
 In Microsoft 365 organizzazioni con cassette postali in Exchange Online o standalone Exchange Online Protection (EOP) organizzazioni senza cassette postali di Exchange Online, sia gli utenti che gli amministratori dispongono di diversi metodi per la segnalazione di messaggi di posta elettronica e file a Microsoft.
 
@@ -43,6 +42,5 @@ In Microsoft 365 organizzazioni con cassette postali in Exchange Online o standa
 |[Utilizzare le regole del flusso di posta per vedere quali segnalazioni gli utenti inviano a Microsoft](use-mail-flow-rules-to-see-what-your-users-are-reporting-to-microsoft.md)|Informazioni su come creare una regola del flusso di posta (nota anche come regola di trasporto) che informa quando gli utenti segnalano i messaggi a Microsoft per l'analisi.
 |||
 |[Inviare malware e non malware a Microsoft per l'analisi](submitting-malware-and-non-malware-to-microsoft-for-analysis.md)|Utilizzare il sito di Microsoft Security Intelligence per inviare allegati e altri file.|
-|
 
 Se i messaggi di posta indesiderata o di phishing sono stati messi in quarantena anziché recapitati, gli utenti possono segnalare i messaggi a Microsoft dal portale di quarantena nel centro sicurezza & Compliance. Per informazioni dettagliate, vedere [trovare e rilasciare i messaggi in quarantena come utente in Microsoft 365](find-and-release-quarantined-messages-as-a-user.md).

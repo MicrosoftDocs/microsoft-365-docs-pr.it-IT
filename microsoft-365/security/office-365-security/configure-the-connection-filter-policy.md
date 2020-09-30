@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Gli amministratori possono ottenere informazioni su come configurare il filtro connessioni in Exchange Online Protection (EOP) per consentire o bloccare i messaggi di posta elettronica dai server.
-ms.openlocfilehash: d69ec30c9d6d812bf3bbcc6dc5b6df332d9dd0b5
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 95e178e34c944c13cd99e4d4a0e9f30ed083842c
+ms.sourcegitcommit: 61ef32f802a1fb6d1e3a3aa005764ead32a7951e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48203372"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48318253"
 ---
 # <a name="configure-connection-filtering"></a>Configurare il filtro connessioni
 
@@ -203,7 +203,6 @@ Se si verifica uno di questi scenari, è possibile creare una regola del flusso 
 
 ## <a name="new-to-microsoft-365"></a>Novità di Microsoft 365?
 
-|<!-- a -->|
-|---|
-|![L'icona breve per LinkedIn Learning ](../../media/eac8a413-9498-4220-8544-1e37d1aaea13.png) **New to Microsoft 365?** Scopri i corsi video gratuiti per **amministratori e professionisti it**, offerti da LinkedIn Learning.|
-|
+****
+
+![L'icona breve per LinkedIn Learning ](../../media/eac8a413-9498-4220-8544-1e37d1aaea13.png) **New to Microsoft 365?** Scopri i corsi video gratuiti per **Microsoft 365 Admins e professionisti it**, offerti da LinkedIn Learning.

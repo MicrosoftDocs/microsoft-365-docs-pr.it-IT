@@ -16,17 +16,16 @@ ms.assetid: a5b03b3c-37dd-429e-8e9b-2c1b25031794
 ms.collection:
 - M365-security-compliance
 description: Gli amministratori possono ottenere informazioni sui valori del livello di conformità di massa (BCL) utilizzati in Exchange Online Protection (EOP).
-ms.openlocfilehash: d59bb152de075bb807e3cae72839fe459d7da40f
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 53d0ae5fb23fb68ef970a07b2b5d8c4220775de7
+ms.sourcegitcommit: 61ef32f802a1fb6d1e3a3aa005764ead32a7951e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48203528"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48318217"
 ---
 # <a name="bulk-complaint-level-bcl-in-eop"></a>Livello di reclamo in blocco (BCL) in EOP
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
-
 
 In Microsoft 365 organizzazioni con cassette postali in Exchange Online o in organizzazioni di Exchange Online Protection (EOP) senza cassette postali di Exchange Online, EOP assegna un livello di conformità alla massa (BCL, bulk compliant Level) ai messaggi in ingresso provenienti da Mailer in blocco. La BCL viene aggiunta al messaggio in un X-header ed è simile al livello di [probabilità di posta indesiderata (SCL)](spam-confidence-levels.md) utilizzato per identificare i messaggi come posta indesiderata. Una BCL superiore indica che è più probabile che un messaggio in blocco generi reclami (ed è pertanto più probabile che sia posta indesiderata). Microsoft utilizza le origini sia interne che di terze parti per identificare la posta in blocco e determinare la BCL appropriata.
 
@@ -42,6 +41,8 @@ Le soglie BCL sono descritte nella tabella seguente.
 |:---:|---|
 |0|Il messaggio non viene da un mittente in blocco.|
 |1, 2, 3|Il messaggio è proveniente da un mittente in blocco che genera alcuni reclami.|
-|4, 5, 6, 7|Il messaggio è proveniente da un mittente in blocco che genera un numero misto di denunce.|
+|4, 5, 6, 7<sup>\*</sup>|Il messaggio è proveniente da un mittente in blocco che genera un numero misto di denunce.|
 |8, 9|Il messaggio è proveniente da un mittente in blocco che genera un numero elevato di denunce.|
 |
+
+<sup>\*</sup> Si tratta del valore di soglia predefinito utilizzato nei criteri di protezione da posta indesiderata.

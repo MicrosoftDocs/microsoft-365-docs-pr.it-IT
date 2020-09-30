@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: 0a0c0c1dae1d7f03aa9c8328b3fb1b4bae587b9e
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: dbd20263fce059bc57b6a19b58f15e3f5223b4e7
+ms.sourcegitcommit: 61ef32f802a1fb6d1e3a3aa005764ead32a7951e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48199710"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48318206"
 ---
 # <a name="closing-and-summarizing-your-microsoft-threat-protection-pilot"></a>Chiusura e ricapitolazione del pilota di Microsoft Threat Protection  
 
@@ -37,6 +37,7 @@ ms.locfileid: "48199710"
 Dopo aver concluso tutti i test, è stata raggiunta la fine del processo.
 
 L'output finale deve essere:
+
 - Una scorecard completata
 - Un rapporto dettagliato dei risultati del progetto pilota
 - Una decisione su come procedere
@@ -45,9 +46,8 @@ Tali informazioni devono essere presentate a entrambe le parti interessate inter
 
 Si spera che questa simulazione sia stata apprezzata e che sia incoraggiata a iniziare a implementare ciò che si è imparato.
 
-
 ## <a name="next-step"></a>Passaggio successivo
-||
-|:-------|
-|Visitare il [Centro soluzioni e architetture Microsoft 365](https://docs.microsoft.com/microsoft-365/solutions/solution-architecture-center) per comprendere come progettare la soluzione e l'architettura più adatta alla propria organizzazione.
 
+****
+
+Visitare il [Centro soluzioni e architetture Microsoft 365](https://docs.microsoft.com/microsoft-365/solutions/solution-architecture-center) per comprendere come progettare la soluzione e l'architettura più adatta alla propria organizzazione.

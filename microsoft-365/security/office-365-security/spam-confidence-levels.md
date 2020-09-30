@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Gli amministratori possono ottenere informazioni sul livello di probabilità di posta indesiderata applicato ai messaggi in Exchange Online Protection (EOP).
-ms.openlocfilehash: fbd892b0171cee71f516d7ca3b26b91da664af79
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 51d00b36ae826676f436c0a74617ddbbadf7a30a
+ms.sourcegitcommit: 61ef32f802a1fb6d1e3a3aa005764ead32a7951e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48202234"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48318241"
 ---
 # <a name="spam-confidence-level-scl-in-eop"></a>Livello di probabilità di posta indesiderata (SCL) in EOP
 
@@ -50,6 +50,6 @@ Si noterà che SCL 2, 3, 4, 7 e 8 non vengono utilizzati dal filtro per la posta
 
 Analogamente a SCL, il livello di reclamo in blocco (BCL) identifica la posta elettronica di massa non valida (nota anche come _posta grigia_). Più il BCL è elevato, maggiore è la probabilità che un messaggio di posta elettronica in blocco generi reclami, ed è quindi più probabile che si tratti di posta indesiderata. È possibile configurare la soglia BCL nei criteri di protezione da posta indesiderata. Per ulteriori informazioni, vedere [configurare i criteri di protezione dalla posta indesiderata in EOP](configure-your-spam-filter-policies.md), [livello di reclamo in blocco (BCL) in EOP)](bulk-complaint-level-values.md)e [Qual è la differenza tra posta elettronica indesiderata e posta elettronica in blocco?](what-s-the-difference-between-junk-email-and-bulk-email.md).
 
-|<!-- -->|
-|---|
-|![L'icona breve per LinkedIn Learning ](../../media/eac8a413-9498-4220-8544-1e37d1aaea13.png) **New to Microsoft 365?** Scopri i corsi video gratuiti per **Microsoft 365 Admins e professionisti it**, offerti da LinkedIn Learning.|
+****
+
+![L'icona breve per LinkedIn Learning ](../../media/eac8a413-9498-4220-8544-1e37d1aaea13.png) **New to Microsoft 365?** Scopri i corsi video gratuiti per **Microsoft 365 Admins e professionisti it**, offerti da LinkedIn Learning.
