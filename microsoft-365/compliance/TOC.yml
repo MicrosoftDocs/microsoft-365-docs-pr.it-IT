@@ -388,8 +388,6 @@
           href: restore-an-inactive-mailbox.md
         - name: Eliminare una cassetta postale inattiva
           href: delete-an-inactive-mailbox.md
-    - name: Video del team Data Governance
-      href: 'https://go.microsoft.com/fwlink/?linkid=867039'
     - name: Gestione dei record
       items:
         - name: Informazioni sulla gestione dei record
