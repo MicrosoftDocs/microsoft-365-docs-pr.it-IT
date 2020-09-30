@@ -23,12 +23,12 @@ search.appverid:
 - GEA150
 ms.assetid: 4436582f-211a-45ec-b72e-33647f97d8a3
 description: Informazioni su cosa succede ai dati quando la sottoscrizione Microsoft 365 for business scade, è disabilitata o se si Annulla.
-ms.openlocfilehash: 2852d2fc301d71131a0adb1c277974e2303dd395
-ms.sourcegitcommit: 0650da0e54a2b484a3156b3aabe44397fbb38e00
+ms.openlocfilehash: 2c8b21274d7e3e776e62a9a185309d6e742ac2b3
+ms.sourcegitcommit: 6b1d0bea86ced26cae51695c0077adce8bcff3c4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "45016078"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48309183"
 ---
 # <a name="what-happens-to-my-data-and-access-when-my-microsoft-365-for-business-subscription-ends"></a>Cosa succede ai dati e all'accesso quando termina l'abbonamento a Microsoft 365 for business?
 
@@ -36,7 +36,7 @@ Se l'abbonamento termina, perché scade o perché si decide di annullare, l'acce
 
 Leggere queste importanti informazioni prima di contattare il [supporto di Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/contact-support-for-business-products).
   
-## <a name="what-happens-to-data-when-a-subscription-expires"></a>Cosa succede ai dati quando un abbonamento scade? 
+## <a name="what-happens-to-data-when-a-subscription-expires"></a>Cosa succede ai dati quando un abbonamento scade?
 
 - Se l'abbonamento scade, viene eseguito nelle fasi seguenti: scaduto/disattivato/deprovisioned. La fase scaduta inizia subito dopo che la sottoscrizione ha raggiunto la data di fine.
 - Se si disattiva la fatturazione ricorrente per l'abbonamento annuale, si passa alle stesse fasi della sottoscrizione scaduta. La prima fase inizia è l'anniversario dell'abbonamento annuale, non iniziando dalla data in cui è stata disattivata l'impostazione di fatturazione ricorrente dell'abbonamento.
@@ -47,7 +47,7 @@ Nella tabella seguente vengono illustrate le operazioni che è possibile prevede
 | **Attivazione**                                                             | **Scaduto <br/> (30 giorni \* )**                                                | **Disabled <br/> (90 giorni \* )**                                               | **Senza provisioning**                                                                         |
 |------------------------------------------------------------------------|------------------------------------------------------------------------------|------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------|
 | *Dati accessibili a tutti*                                               | *Dati accessibili a tutti*                                                     | *Dati accessibili solo agli amministratori*                                             | **Data eliminazione <br/> di Azure Active Directory viene rimossa, se non utilizzata da altri servizi** |
-| Gli utenti hanno accesso normale a Microsoft 365, dati e applicazioni di Office  | Gli utenti hanno accesso normale a Microsoft 365, file e applicazioni              | Gli utenti non possono accedere a Microsoft 365, file o applicazioni                        | Gli utenti non possono accedere a Microsoft 365, file o applicazioni                                     |
+| Gli utenti hanno accesso normale a Microsoft 365, file e applicazioni   | Gli utenti hanno accesso normale a Microsoft 365, file e applicazioni              | Gli utenti non possono accedere a Microsoft 365, file o applicazioni                        | Gli utenti non possono accedere a Microsoft 365, file o applicazioni                                     |
 | Gli amministratori hanno accesso normale a Microsoft 365, dati e applicazioni di Office | Gli amministratori possono accedere all'interfaccia di amministrazione                                           | Gli amministratori possono accedere all'interfaccia di amministrazione, ma non possono assegnare licenze agli utenti       | Gli amministratori possono accedere all'interfaccia di amministrazione per acquistare e gestire altri abbonamenti             |
 |                                                                        | Gli amministratori globali o di fatturazione possono riattivare la sottoscrizione nell'interfaccia di amministrazione | Gli amministratori globali o di fatturazione possono riattivare la sottoscrizione nell'interfaccia di amministrazione |                                                                                           |
 
@@ -208,16 +208,19 @@ A questo punto non è più possibile riattivare l'abbonamento. Tuttavia, come am
 Al termine del processo, non è possibile continuare a utilizzare Microsoft 365 gratuitamente. È possibile procedere in diversi modi:
 
 ::: moniker range="o365-worldwide"
+
 - **Acquistare Microsoft 365.** Quando il processo scade, si sposta in un periodo di prova, concedendo altri 30 giorni (per la maggior parte delle prove, nella maggior parte dei paesi e delle aree geografiche) per acquistare Microsoft 365. Per informazioni su come convertire la versione di valutazione in un abbonamento a pagamento, vedere [buy your trial version of Microsoft 365 for business](../buy-a-subscription-from-your-free-trial.md).
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
+
 - **Acquistare Microsoft 365.** Quando il processo scade, si sposta in un periodo di prova, concedendo altri 30 giorni (per la maggior parte delle prove, nella maggior parte dei paesi e delle aree geografiche) per acquistare Microsoft 365. Per informazioni su come convertire la versione di valutazione in un abbonamento a pagamento, vedere [buy your trial version of Microsoft 365 for business](../buy-a-subscription-from-your-free-trial.md).
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
+
 - **Acquistare Office 365.** Trascorso il periodo di valutazione, l'abbonamento entra in un periodo di tolleranza, che concede altri 30 giorni di tempo (per la maggior parte delle versioni di valutazione e nella maggior parte dei paesi e delle aree geografiche) per acquistare Office 365. Per informazioni su come convertire la versione di valutazione in un abbonamento a pagamento, vedere [Buy or try subscriptions for Office 365 operated by 21Vianet](../../admin/services-in-china/buy-or-try-subscriptions.md).
 
 ::: moniker-end
@@ -229,10 +232,8 @@ Al termine del processo, non è possibile continuare a utilizzare Microsoft 365 
 > [!NOTE]
 > Le informazioni riportate in questa pagina sono soggette alla [dichiarazione di non responsabilità e agli avvisi di modifica dei criteri Microsoft](https://go.microsoft.com/fwlink/p/?LinkId=613651). Tornare a questo sito periodicamente per esaminare le modifiche apportate.
 
-## <a name="related-articles"></a>Articoli correlati 
+## <a name="related-content"></a>Contenuti correlati 
 
-[Annullare l'abbonamento](https://docs.microsoft.com/microsoft-365/commerce/subscriptions/cancel-your-subscription)
-
-[Rinnovare Microsoft 365 per le aziende](https://docs.microsoft.com/microsoft-365/commerce/subscriptions/renew-your-subscription)
-
-[Riattivare l'abbonamento](https://docs.microsoft.com/microsoft-365/commerce/subscriptions/reactivate-your-subscription)
+[Annullare l'abbonamento](https://docs.microsoft.com/microsoft-365/commerce/subscriptions/cancel-your-subscription) (articolo) \
+[Rinnovare Microsoft 365 for business](https://docs.microsoft.com/microsoft-365/commerce/subscriptions/renew-your-subscription) (articolo) \
+[Riattivare l'abbonamento](https://docs.microsoft.com/microsoft-365/commerce/subscriptions/reactivate-your-subscription) (articolo)

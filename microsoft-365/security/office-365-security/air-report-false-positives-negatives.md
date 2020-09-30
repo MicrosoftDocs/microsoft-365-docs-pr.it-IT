@@ -1,6 +1,6 @@
 ---
-title: Come segnalare falsi positivi o falsi negativi nell'analisi e nella risposta automatizzata di Office 365
-description: Si è verificato un errore o rilevato erroneamente da Office 365 Advanced Threat Protection? Informazioni su come inviare falsi positivi o falsi negativi a Microsoft per l'analisi.
+title: Come segnalare falsi positivi o falsi negativi in seguito all'analisi automatizzata in Microsoft Defender per Office 365
+description: Si è verificato un errore o rilevato erroneamente da AIR in Microsoft Defender per Office 365? Informazioni su come inviare falsi positivi o falsi negativi a Microsoft per l'analisi.
 keywords: automatizzato, indagine, avviso, trigger, azione, correzione, falso positivo, falso negativo
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
@@ -11,20 +11,21 @@ f1.keywords:
 - NOCSH
 ms.author: deniseb
 author: denisebmsft
-ms.date: 05/15/2020
+ms.date: 09/29/2020
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
-ms.custom: autoir
-ms.openlocfilehash: 66b81a474ff81df57c0b2a59672b17061f7235cb
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.custom:
+- autoir
+ms.openlocfilehash: fa6b4ae03a3cf62398a270d65a29e6b4c955173a
+ms.sourcegitcommit: 6b1d0bea86ced26cae51695c0077adce8bcff3c4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48196079"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48308933"
 ---
 # <a name="how-to-report-false-positivesnegatives-in-automated-investigation-and-response-capabilities"></a>Come segnalare falsi positivi/negativi nelle funzionalità di analisi e risposta automatizzate
 
@@ -32,7 +33,7 @@ ms.locfileid: "48196079"
 
 
 **Si applica a:**
-- Office 365 Advanced Threat Protection
+- Microsoft Defender per Office 365
 
 [Le funzionalità di analisi e risposta automatizzate in Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/automated-investigation-response-office) non hanno o rilevato erroneamente qualcosa? Per risolvere il problema, è possibile eseguire la procedura. È possibile:
 - [Segnala un falso positivo/negativo a Microsoft](#report-a-false-positivenegative-to-microsoft-for-analysis);
@@ -43,7 +44,7 @@ Utilizzare questo articolo come guida.
 
 ## <a name="report-a-false-positivenegative-to-microsoft-for-analysis"></a>Segnalare un falso positivo/negativo a Microsoft per l'analisi
 
-Se Office 365 AIR ha perso un messaggio di posta elettronica, un allegato di posta elettronica, un URL in un messaggio di posta elettronica o un URL in un file di Office, è possibile [inviare messaggi di posta indesiderata, phishing, URL e file a Microsoft per l'analisi di office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/admin-submission).
+Se AIR in Microsoft Defender per Office 365 ha perso un messaggio di posta elettronica, un allegato di posta elettronica, un URL in un messaggio di posta elettronica o un URL in un file di Office, è possibile [inviare messaggi di posta indesiderata sospetti, phishing, URL e file a Microsoft per l'analisi di Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/admin-submission).
 
 È inoltre possibile [inviare un file a Microsoft per l'analisi antimalware](https://www.microsoft.com/wdsi/filesubmission).
 
@@ -51,7 +52,7 @@ Se Office 365 AIR ha perso un messaggio di posta elettronica, un allegato di pos
 
 Se un avviso viene attivato tramite un utilizzo legittimo o se l'avviso non è accurato, è possibile [gestire gli avvisi nel portale di cloud app Security](https://docs.microsoft.com/cloud-app-security/managing-alerts).
 
-Se l'organizzazione utilizza [Microsoft Defender Advanced Threat Protection](https://docs.microsoft.com/windows/security/threat-protection) oltre a Office 365 e un file, un indirizzo IP, un URL o un dominio viene considerato come malware su un dispositivo, anche se è sicuro, è possibile [creare un indicatore personalizzato con un'azione "Consenti" per il dispositivo](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-indicators).
+Se l'organizzazione utilizza [Microsoft Defender per endpoint](https://docs.microsoft.com/windows/security/threat-protection) oltre a Office 365 e un file, un indirizzo IP, un URL o un dominio viene considerato come malware su un dispositivo, anche se è sicuro, è possibile [creare un indicatore personalizzato con un'azione "Consenti" per il dispositivo](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-indicators).
 
 ## <a name="undo-a-remediation-action"></a>Annullare un'azione di correzione
 
@@ -90,6 +91,6 @@ Nel centro azioni, è possibile visualizzare le azioni di correzione eseguite e 
 
 ## <a name="related-articles"></a>Articoli correlati
 
-[Office 365 Advanced Threat Protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)
+[Microsoft Defender per Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)
 
-[Iniziare a usare l'analisi e la risposta automatizzate (AIR) in Office 365](office-365-air.md)
+[AIR in Microsoft Defender per Office 365](office-365-air.md)

@@ -1,6 +1,6 @@
 ---
 title: Utilizzo di soluzioni di Reporting personalizzate con l'analisi e la risposta automatizzate
-keywords: ARIA, autoIR, ATP, automatizzato, investigazione, risposta, correzione, minacce, avanzate, minacce, protezione
+keywords: SIEM, API, AIR, autoIR, ATP, analisi automatizzata, integrazione, report personalizzato
 f1.keywords:
 - NOCSH
 ms.author: deniseb
@@ -15,19 +15,22 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: Informazioni su come integrare l'analisi e la risposta automatizzate con una soluzione di report personalizzata o di terze parti.
-ms.openlocfilehash: 2ff0ef995fc8418c3d57895f00ea96f05b0aaa97
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.date: 09/29/2020
+ms.custom:
+- air
+ms.openlocfilehash: 08502516ae03dc7c6e7b58aa77939723e7532ef0
+ms.sourcegitcommit: 6b1d0bea86ced26cae51695c0077adce8bcff3c4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48195606"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48308921"
 ---
 # <a name="use-the-management-activity-api-for-custom-or-third-party-reporting-solutions"></a>Utilizzare l'API di gestione attività per soluzioni di Reporting personalizzate o di terze parti
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-Con [Office 365 Advanced Threat Protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp), vengono [fornite informazioni dettagliate sulle indagini automatizzate](air-view-investigation-results.md). Tuttavia, alcune organizzazioni utilizzano anche una soluzione di reporting personalizzata o di terze parti. Se l'organizzazione desidera integrare informazioni su indagini automatizzate con una soluzione di questo tipo, è possibile utilizzare l'API di attività di gestione di Office 365.
+Con [Microsoft Defender per Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp), vengono [fornite informazioni dettagliate sulle indagini automatizzate](air-view-investigation-results.md). Tuttavia, alcune organizzazioni utilizzano anche una soluzione di reporting personalizzata o di terze parti. Se l'organizzazione desidera integrare informazioni su indagini automatizzate con una soluzione di questo tipo, è possibile utilizzare l'API di attività di gestione di Office 365.
 
 Per impostare questa impostazione, utilizzare le risorse seguenti:
 
@@ -41,8 +44,8 @@ Per impostare questa impostazione, utilizzare le risorse seguenti:
 |[Schema API di attività di gestione di Office 365](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema)|Ottenere una panoramica dello [schema comune](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema#common-schema) e dello [schema di analisi e risposta di Office 365 ATP and Threat](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema#office-365-advanced-threat-protection-and-threat-investigation-and-response-schema) per informazioni su tipi specifici di dati disponibili tramite l'API di attività di gestione di Office 365.|
 |
 
-## <a name="related-articles"></a>Articoli correlati
+## <a name="see-also"></a>Vedere anche
 
-- [Office 365 Advanced Threat Protection](office-365-atp.md)
+- [Microsoft Defender per Office 365](office-365-atp.md)
 
-- [Informazioni sull'analisi e la risposta automatizzate in Microsoft Threat Protection](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-autoir)
+- [Analisi e risposta automatizzate in Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-autoir)

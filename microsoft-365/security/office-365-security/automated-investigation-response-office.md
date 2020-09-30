@@ -13,22 +13,25 @@ search.appverid:
 - MET150
 - MOE150
 ms.collection: M365-security-compliance
-ms.date: 08/21/2020
-description: Ottenere una panoramica delle funzionalità di ricerca e risposta automatizzate in Office 365 Advanced Threat Protection Plan 2.
-ms.custom: air - seo-marvel-mar2020
-ms.openlocfilehash: d6793793a663e562b05df7e8458a6a8933e5ee47
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+keywords: risposta agli incidenti automatici, analisi, correzione, protezione dalle minacce
+ms.date: 09/29/2020
+description: Ottenere una panoramica delle funzionalità di ricerca e risposta automatizzate in Microsoft Defender per Office 365
+ms.custom:
+- air
+- seo-marvel-mar2020
+ms.openlocfilehash: ce95b91aa67f76cf46ce3ed6285e24d3e9edd146
+ms.sourcegitcommit: 6b1d0bea86ced26cae51695c0077adce8bcff3c4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48200346"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48308955"
 ---
-# <a name="an-overview-of-automated-investigation-and-response-air-in-microsoft-365"></a>Panoramica dell'analisi automatizzata e della risposta (AIR) in Microsoft 365
+# <a name="an-overview-of-automated-investigation-and-response-air-in-microsoft-defender-for-office-365"></a>Panoramica dell'analisi automatizzata e della risposta (AIR) in Microsoft Defender per Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-Quando vengono attivati gli avvisi di sicurezza, spetta al team delle operazioni di sicurezza esaminare gli avvisi e procedere per proteggere l'organizzazione. A volte, i team delle operazioni di sicurezza possono sentirsi sopraffatti dal volume degli avvisi attivati. Le funzionalità di analisi e risposta automatizzate in Office 365 Advanced Threat Protection (Office 365 ATP) possono essere d'aiuto. 
+Quando vengono attivati gli avvisi di sicurezza, spetta al team delle operazioni di sicurezza esaminare gli avvisi e procedere per proteggere l'organizzazione. A volte, i team delle operazioni di sicurezza possono sentirsi sopraffatti dal volume degli avvisi attivati. Le funzionalità di analisi e risposta automatizzate in Microsoft Defender per Office 365 possono essere utili. 
 
 AIR consente al team di operazioni di sicurezza di operare in modo più efficiente ed efficace. Le funzionalità AEREe includono processi di analisi automatizzati in risposta a minacce ben note che esistono oggi. Le azioni correttive appropriate attendono l'approvazione, consentendo al team di operazioni di sicurezza di rispondere alle minacce rilevate. 
 
@@ -36,7 +39,7 @@ In questo articolo viene fornita una panoramica di AIR. Quando si è pronti per 
 
 ## <a name="at-a-high-level"></a>Ad alto livello
 
-Quando gli avvisi vengono attivati, i PlayBook di sicurezza entrano in vigore. A seconda della situazione, è possibile avviare un [processo di analisi automatizzato](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air) . Durante e dopo un'indagine automatizzata, è consigliabile utilizzare le [operazioni di correzione](air-remediation-actions.md) . Nessuna azione viene eseguita automaticamente in Office 365 Advanced Threat Protection. Le revisioni del team per le operazioni di sicurezza, quindi [approva o rifiuta ogni azione di correzione](air-review-approve-pending-completed-actions.md). Dopo aver approvato o rifiutato tutte le azioni successive all'analisi, l'inchiesta è stata completata. Tutte queste attività sono registrate e visualizzabili nel centro sicurezza & Compliance (vedere [View details of an Investigation](air-view-investigation-results.md#view-details-of-an-investigation)).
+Quando gli avvisi vengono attivati, i PlayBook di sicurezza entrano in vigore. A seconda della situazione, è possibile avviare un [processo di analisi automatizzato](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air) . Durante e dopo un'indagine automatizzata, è consigliabile utilizzare le [operazioni di correzione](air-remediation-actions.md) . Nessuna azione viene eseguita automaticamente in Microsoft Defender per Office 365. Le revisioni del team per le operazioni di sicurezza, quindi [approva o rifiuta ogni azione di correzione](air-review-approve-pending-completed-actions.md). Dopo aver approvato o rifiutato tutte le azioni successive all'analisi, l'inchiesta è stata completata. Tutte queste attività sono registrate e visualizzabili nel centro sicurezza Microsoft 365 ( [https://security.microsoft.com](https://security.microsoft.com) ). Per ulteriori informazioni, vedere [visualizzare i dettagli di un'indagine](air-view-investigation-results.md#view-details-of-an-investigation).
 
 Nelle sezioni seguenti vengono fornite ulteriori informazioni sugli avvisi, gli schemi di sicurezza e gli esempi di aria in azione.
 
@@ -50,43 +53,36 @@ Attualmente per l'aria, gli avvisi generati dai seguenti tipi di criteri di avvi
 - Messaggi di posta elettronica segnalati dall'utente come phishing`*`
 - Messaggi di posta elettronica contenenti malware rimossi dopo il recapito`*`
 - Messaggi di posta elettronica contenenti gli URL di phishing rimossi dopo il recapito`*`
-- Modelli di invio di messaggi di posta elettronica sospetti`#`
-- Utente con limitazioni all'invio di posta elettronica`#`
+- Modelli di invio di messaggi di posta elettronica sospetti
+- Utente con limitazioni all'invio di posta elettronica
+- Indagine manuale dell'amministratore attivato per la posta elettronica`*`
 
 > [!NOTE]
-> Agli avvisi contrassegnati da un asterisco ( `*` ) viene assegnata una gravità *informativa* nei rispettivi criteri di avviso all'interno del Centro sicurezza & conformità, con le notifiche di posta elettronica disattivate. Le notifiche tramite posta elettronica possono essere attivate tramite la [configurazione del criterio di avviso](../../compliance/alert-policies.md#alert-policy-settings). Gli avvisi contrassegnati con un hash ( `#` ) sono generalmente disponibili agli avvisi associati ai PlayBook di anteprima pubblica.
+> Agli avvisi contrassegnati da un asterisco ( `*` ) viene assegnata una gravità *informativa* nei rispettivi criteri di avviso all'interno del centro sicurezza Microsoft 365, con le notifiche di posta elettronica disattivate. Le notifiche tramite posta elettronica possono essere attivate tramite la [configurazione del criterio di avviso](../../compliance/alert-policies.md#alert-policy-settings). 
 
 Per visualizzare gli avvisi, nel centro sicurezza & conformità scegliere **avvisi**  >  **Visualizza avvisi**. Selezionare un avviso per visualizzare i dettagli, quindi utilizzare il collegamento **Visualizza analisi** per passare all' [analisi](air-view-investigation-results.md#investigation-graph)corrispondente.  
 
 > [!NOTE]
 > Gli avvisi informativi sono nascosti nella visualizzazione avviso per impostazione predefinita. Per visualizzarli, modificare il filtro degli avvisi per includere gli avvisi informativi.
 
-Se l'organizzazione gestisce gli avvisi di sicurezza tramite un sistema di gestione degli avvisi, un sistema di gestione dei servizi o un sistema di gestione degli eventi (SIEM), è possibile inviare avvisi a tale sistema tramite la notifica tramite posta elettronica o tramite l' [API di gestione delle attività di Office 365](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference). Le notifiche di avviso per l'analisi tramite posta elettronica o API includono collegamenti per accedere agli avvisi nel centro sicurezza & conformità, consentendo all'amministratore della sicurezza assegnato di passare rapidamente all'indagine.
+Se l'organizzazione gestisce gli avvisi di sicurezza tramite un sistema di gestione degli avvisi, un sistema di gestione dei servizi o un sistema di gestione degli eventi (SIEM), è possibile inviare avvisi a tale sistema tramite la notifica tramite posta elettronica o tramite l' [API di gestione delle attività di Office 365](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference). Le notifiche degli avvisi di analisi tramite posta elettronica o API includono collegamenti per accedere agli avvisi nel centro sicurezza Microsoft 365, consentendo all'amministratore della sicurezza assegnato di passare rapidamente all'indagine.
 
 ![Avvisi relativi al collegamento alle indagini](../../media/air-alerts-page-details.png) 
 
 ## <a name="security-playbooks"></a>Schemi di sicurezza
 
-Gli schemi di sicurezza sono criteri di back-end che sono al centro dell'automazione in Office Advanced Threat Protection e Microsoft Threat Protection. Gli schemi di sicurezza forniti in AIR sono basati su scenari comuni di sicurezza del mondo reale e sviluppati in base ai commenti e suggerimenti dei team di operazioni di sicurezza. Una sicurezza PlayBook viene avviata automaticamente quando vengono attivati avvisi specifici all'interno dell'organizzazione. Dopo che l'avviso è stato attivato, l'oggetto PlayBook associato viene eseguito dal sistema di analisi e risposta automatico (AIR). L'analisi analizza l'avviso in base al Playbook di quel particolare avviso, analizzando tutti i metadati associati (compresi messaggi di posta elettronica, utenti, soggetti, mittenti e così via). In base ai risultati dell'indagine del PlayBook, AIR consiglia una serie di azioni che il team di sicurezza dell'organizzazione può intraprendere per controllare e mitigare la minaccia. 
+Gli schemi di sicurezza sono criteri di back-end che sono al centro dell'automazione in Microsoft Defender per Office 365 e Microsoft Threat Protection. Gli schemi di sicurezza forniti in AIR sono basati su scenari comuni di sicurezza del mondo reale e sviluppati in base ai commenti e suggerimenti dei team di operazioni di sicurezza. Una sicurezza PlayBook viene avviata automaticamente quando vengono attivati avvisi specifici all'interno dell'organizzazione. Dopo che l'avviso è stato attivato, l'oggetto PlayBook associato viene eseguito dal sistema di analisi e risposta automatizzato. L'analisi analizza l'avviso in base al Playbook di quel particolare avviso, analizzando tutti i metadati associati (compresi messaggi di posta elettronica, utenti, soggetti, mittenti e così via). In base ai risultati dell'indagine del PlayBook, AIR consiglia una serie di azioni che il team di sicurezza dell'organizzazione può intraprendere per controllare e mitigare la minaccia. 
 
 Gli schemi di sicurezza che otterrete con AIR sono studiati per affrontare le minacce più frequenti che le organizzazioni incontrano oggi con la posta elettronica. Sono basati sull'input dalle operazioni di sicurezza e dai team di risposta agli incidenti, compresi quelli che aiutano a difendere Microsoft e le risorse dei clienti.
-
-### <a name="security-playbooks-are-rolling-out-in-phases"></a>Gli schemi di sicurezza vengono implementati in fasi
-
-Come parte di AIR, i PlayBook di sicurezza stanno per essere implementati in fasi. La fase 1 è ora generalmente disponibile e include diversi PlayBook che forniscono suggerimenti per le azioni che gli amministratori della sicurezza possono rivedere e approvare:
 
 - Messaggio phishing visualizzato dall'utente
 - URL-fare clic su modifica verdetto
 - Malware rilevato dopo il recapito (ZAP malware)
 - Phishing rilevato dopo il recapito dello ZAP (phishing ZAP)
+- Utente segnalato come compromesso 
+- Ricerca di messaggi di posta elettronica manuale (attivato dall'amministratore da malware Explorer, phishing o tutte le visualizzazioni di posta elettronica)
 
-La fase 1 include anche il supporto per le indagini di posta elettronica attivate dall'amministratore (tramite [Esplora minacce](threat-explorer.md)).
-
-La fase 2 è ora progredire con i seguenti PlayBook nell' **anteprima pubblica**, fornendo suggerimenti per le azioni e aiutando gli amministratori della sicurezza ad esaminare i problemi:
-
-- Utente segnalato come compromesso (anteprima pubblica)
-
-Altri PlayBook verranno rilasciati Man mano che sono stati completati. Visitare la Guida di [orientamento di Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap) per vedere cos'altro è pianificato e disponibile a breve.
+Altri PlayBook e gli aggiornamenti di PlayBook verranno rilasciati Man mano che sono stati completati. Visitare la Guida di [orientamento di Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap) per vedere cos'altro è pianificato e disponibile a breve.
 
 ### <a name="playbooks-include-investigation-and-recommendations"></a>I PlayBook includono analisi e suggerimenti
 
@@ -118,7 +114,7 @@ Dopo aver completato l'analisi radice, il PlayBook fornisce un elenco delle azio
 Successivamente, vengono eseguiti diversi passaggi di indagine e di ricerca di minacce:
 
 - I messaggi di posta elettronica simili vengono identificati tramite ricerche cluster di posta elettronica.
-- Il segnale viene condiviso con altre piattaforme, ad esempio [Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection).
+- Il segnale viene condiviso con altre piattaforme, ad esempio [Microsoft Defender per endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection).
 - Si determina se gli utenti hanno fatto clic su eventuali collegamenti dannosi nei messaggi di posta elettronica sospetti.
 - Viene effettuato un controllo tramite Exchange Online Protection ([EOP](exchange-online-protection-overview.md)) e Office 365 Advanced Threat Protection ([ATP](office-365-atp.md)) per verificare se sono presenti altri messaggi simili segnalati dagli utenti.
 - Viene effettuato un controllo per verificare se un utente è stato compromesso. Questa verifica utilizza i segnali di Office 365, [Microsoft cloud app Security](https://docs.microsoft.com/cloud-app-security)e [Azure Active Directory](https://docs.microsoft.com/azure/active-directory), correlando eventuali anomalie relative alle attività degli utenti.
@@ -129,9 +125,9 @@ La correzione è la fase finale del PlayBook. Durante questa fase, vengono esegu
 
 ## <a name="example-a-security-administrator-triggers-an-investigation-from-threat-explorer"></a>Esempio: un amministratore della sicurezza attiva un'indagine da Esplora minacce
 
-Oltre alle indagini automatizzate attivate da un avviso, il team delle operazioni di sicurezza dell'organizzazione può attivare un'analisi automatizzata da una visualizzazione in [Esplora minacce](threat-explorer.md).
+Oltre alle indagini automatizzate attivate da un avviso, il team delle operazioni di sicurezza dell'organizzazione può attivare un'analisi automatizzata da una visualizzazione in [Esplora minacce](threat-explorer.md).  Questa indagine crea anche un avviso, in modo che gli incidenti di Microsoft Defender e gli strumenti di SIEM esterni possano vedere che questa indagine è stata attivata. 
 
-Si supponga, ad esempio, di utilizzare la visualizzazione **malware** in Esplora minacce. Utilizzando le schede sotto il grafico, è possibile selezionare la scheda **posta elettronica** . Se si seleziona uno o più elementi nell'elenco, viene attivato il pulsante **+ Actions** . 
+Si supponga, ad esempio, di utilizzare la visualizzazione **antimalware** in Esplora risorse. Utilizzando le schede sotto il grafico, è possibile selezionare la scheda **posta elettronica** . Se si seleziona uno o più elementi nell'elenco, viene attivato il pulsante **+ Actions** . 
 
 ![Esplora risorse con i messaggi selezionati](../../media/Explorer-Malware-Email-ActionsInvestigate.png)
 
@@ -143,16 +139,14 @@ Analogamente ai PlayBook attivati da un avviso, le indagini automatiche che veng
 
 ## <a name="example-a-security-operations-team-integrates-air-with-their-siem-using-the-office-365-management-activity-api"></a>Esempio: un team di operazioni di sicurezza integra l'aria con i propri SIEM utilizzando l'API di gestione delle attività di Office 365
 
-Le funzionalità AEREe in Office 365 ATP includono [report & dettagli](air-view-investigation-results.md) che il team delle operazioni di sicurezza può utilizzare per monitorare e risolvere le minacce. Tuttavia, è anche possibile integrare le funzionalità AEREe con altre soluzioni. Tra gli esempi sono inclusi un sistema di gestione delle informazioni e di gestione eventi (SIEM), un System Management case o una soluzione per la creazione di report personalizzati. Questo tipo di integrazione può essere effettuato utilizzando l' [API di attività di gestione di Office 365](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference). 
+Le funzionalità AEREe in Microsoft Defender per Office 365 includono [rapporti & dettagli che i](air-view-investigation-results.md) team delle operazioni di sicurezza possono utilizzare per monitorare e risolvere le minacce. Tuttavia, è anche possibile integrare le funzionalità AEREe con altre soluzioni. Tra gli esempi sono inclusi un sistema di gestione delle informazioni e di gestione eventi (SIEM), un System Management case o una soluzione per la creazione di report personalizzati. Questo tipo di integrazione può essere effettuato utilizzando l'API di [attività di gestione di Office 365](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference). 
 
 Ad esempio, di recente, un'organizzazione ha configurato un modo per il team delle operazioni di sicurezza per visualizzare gli avvisi di phishing segnalati dall'utente già elaborati in base all'aria. La soluzione integra avvisi rilevanti con il server SIEM dell'organizzazione e il sistema di gestione dei casi. La soluzione riduce notevolmente il numero di falsi positivi, in modo che il team delle operazioni di sicurezza possa concentrare il proprio tempo e lo sforzo su minacce effettive. Per ulteriori informazioni su questa soluzione personalizzata, vedere [Tech Community Blog: migliorare l'efficacia del SOC con Office 365 ATP e l'API di gestione di O365](https://techcommunity.microsoft.com/t5/microsoft-security-and/improve-the-effectiveness-of-your-soc-with-office-365-atp-and/ba-p/1525185).
 
-## <a name="next-step"></a>Passaggio successivo
+## <a name="next-steps"></a>Passaggi successivi
 
 - [Iniziare a usare AIR](office-365-air.md)
 
-## <a name="see-also"></a>Vedere anche
+- [Visitare la roadmap di Microsoft 365 per vedere cosa è stato pianificato e rilasciarlo presto](https://www.microsoft.com/microsoft-365/roadmap?filters=)
 
-- [Roadmap di Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap?filters=)
-
-- [Funzionalità di analisi e risposta automatizzate in Microsoft Threat Protection](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-autoir?view=o365-worldwide)
+- [Informazioni su ulteriori funzionalità di analisi e risposta automatizzate in Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-autoir?view=o365-worldwide&preserve-view=true)

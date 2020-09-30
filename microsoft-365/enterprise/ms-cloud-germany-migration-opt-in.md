@@ -19,22 +19,22 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 'Riepilogo: '
-ms.openlocfilehash: a4252a357891fc978d8b40747c5ad5741786b290
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 2e5e5053ff1539b3fa92175115c8c9db3abc81ce
+ms.sourcegitcommit: 6b1d0bea86ced26cae51695c0077adce8bcff3c4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46690925"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48309048"
 ---
 # <a name="how-to-opt-in-for-migration-from-microsoft-cloud-germany-microsoft-cloud-deutschland-to-office-365-services-in-the-new-german-datacenter-regions"></a>Come acconsentire esplicitamente alla migrazione da Microsoft Cloud Germania (Microsoft Cloud Deutschland) ai servizi di Office 365 nelle nuove aree data center tedesche
 
 >[!Note]
->Questo articolo interessa solo i clienti idonei di Microsoft Cloud Germania/Deutschland.
+>Questo articolo si applica solo ai clienti di Microsoft Cloud Germany (Microsoft Cloud Deutschland).
 >
 
 ## <a name="how-to-request-migration"></a>Come richiedere la migrazione
 
-I clienti idonei, con il servizio sottoposto a provisioning in Microsoft Cloud Germany, visualizzeranno una pagina nell'interfaccia di amministrazione di Microsoft 365 che consente a un amministratore del tenant del cliente di acconsentire esplicitamente alla migrazione.
+I clienti idonei con servizi di cui è stato effettuato il provisioning in Microsoft Cloud Germany (Microsoft Cloud Deutschland) vedranno una pagina nell'interfaccia di amministrazione di Microsoft 365 che consentirà a un amministratore tenant del cliente di scegliere l'opzione per la migrazione.
 
 Per accedere alla pagina nell'interfaccia di amministrazione di Microsoft 365, espandere **Impostazioni** nel riquadro di spostamento sinistro e quindi fare clic su **Profilo organizzazione**.
 
@@ -54,7 +54,13 @@ Dopo che l'amministratore avrà acconsentito esplicitamente per conto del tenant
 
 ## <a name="what-happens-after-opting-in-for-migration"></a>Cosa succede dopo aver acconsentito esplicitamente alla migrazione?
 
-Per le organizzazioni che hanno acconsentito a partecipare all'approccio guidato da Microsoft, le migrazioni sono previste nel corso del 2020.  A seguito della migrazione, gli abbonamenti e i dati principali dei clienti verranno spostati nelle nuove aree geografiche tedesche.  Microsoft invierà aggiornamenti nel Centro messaggi per l'intera durata del processo di migrazione.
+Le migrazioni avranno inizio all'inizio del 2021 per le organizzazioni che aderiscono all'approccio basato su Microsoft e verranno completate prima della data di pensionamento di Microsoft Cloud Germany (Microsoft Cloud Deutschland) del 29 ottobre 2021.  A seguito della migrazione, gli abbonamenti e i dati principali dei clienti verranno spostati nelle nuove aree geografiche tedesche.  Microsoft invierà aggiornamenti nel Centro messaggi per l'intera durata del processo di migrazione.  Per ulteriori informazioni, vedere gli articoli di riferimento riportati di seguito.
+
+## <a name="what-happens-if-the-customer-tenant-administrator-does-not-opt-in-for-migration-in-admin-center"></a>Cosa succede se l'amministratore del tenant del cliente non opta per la migrazione nell'interfaccia di amministrazione?
+
+I termini dei servizi online sono cambiati in modo da includere termini che consentiranno a Microsoft di migrare i dati e le sottoscrizioni di Microsoft 365, Dynamics 365 e Power BI da Microsoft Cloud Deutschland a un nuovo Data Center. Questi termini hanno effetto su qualsiasi sottoscrizione di Microsoft Cloud Germany (Microsoft Cloud Deutschland) rinnovata a partire dal 1 ° maggio 2020.  L'amministratore del tenant del cliente riceverà un avviso in posta elettronica e centro messaggi che consiglierà che l'opt-in per la migrazione avverrà automaticamente per una migrazione assistita da Microsoft. La notifica verrà inviata almeno 30 giorni prima dell'opt-in automatico.  Dopo la migrazione opt-in tutte le comunicazioni e gli aggiornamenti di stato vengono inviati agli amministratori tenant del cliente nel centro messaggi.
+
+Gli amministratori dei tenant del cliente e del partner sono invitati a partecipare all'opt-in per la migrazione nell'interfaccia di amministrazione in modo che il processo di migrazione possa iniziare il prima possibile.
 
 ## <a name="more-information"></a>Altre informazioni
 
