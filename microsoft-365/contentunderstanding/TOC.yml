@@ -28,6 +28,10 @@
       href: model-usage-analytics.md
     - name: Tassonomia dell'archivio termini di sfruttamento durante la creazione di un estrattore
       href: leverage-term-store-taxonomy.md
+- name: Adozione
+  items:
+    - name: Introduzione all'adozione
+      href: adoption-getstarted.md
 - name: Installazione e amministrazione
   items:
     - name: Configurare la comprensione dei contenuti.
