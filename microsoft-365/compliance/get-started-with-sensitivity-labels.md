@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Pronti per iniziare a implementare le etichette di riservatezza per proteggere i dati dell'organizzazione, ma in dubbio su come iniziare? Leggere alcune guide pratiche utili per iniziare il percorso di implementazione dell'etichettatura.
-ms.openlocfilehash: 7892eabdea3d92e9720b23efc708a99c7154ab7b
-ms.sourcegitcommit: 61d7284b412d0f7bbd8bbb2225c2e6324f86b717
+ms.openlocfilehash: 94edcb2e430b01ca423e6bb2a7baf51a407a52df
+ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "48262301"
+ms.lasthandoff: 09/28/2020
+ms.locfileid: "48295220"
 ---
 # <a name="get-started-with-sensitivity-labels"></a>Iniziare a usare le etichette di riservatezza
 
@@ -88,7 +88,7 @@ Tutti gli scenari richiedono di [Creare e configurare etichette di riservatezza 
 |Impedisce l’uso da parte degli utenti o li mette in guardia dal condividere file o messaggi di posta elettronica con una specifica etichetta di riservatezza |[Usare le etichette di riservatezza come condizioni nei criteri di prevenzione della perdita dei dati (anteprima)](dlp-sensitivity-label-as-condition.md) |
 |Individuare, etichettare e proteggere i file archiviati negli archivi dati locali |[Distribuzione dello strumento di analisi Azure Information Protection per classificare e proteggere automaticamente i file](https://docs.microsoft.com/azure/information-protection/deploy-aip-scanner)|
 |Individuare, etichettare e proteggere i file archiviati negli archivi dati nel cloud|[Individuare, classificare, etichettare e proteggere i dati regolamentati e sensibili archiviati nel cloud](https://docs.microsoft.com/cloud-app-security/best-practices#discover-classify-label-and-protect-regulated-and-sensitive-data-stored-in-the-cloud)|
-|Applicare e visualizzare le etichette di riservatezza in Power BI e proteggere i dati durante l'esportazione|[Protezione dei dati in Power BI ](https://docs.microsoft.com/power-bi/admin/service-security-data-protection-overview)|
+|Applicare e visualizzare le etichette di riservatezza in Power BI e proteggere i dati durante l'esportazione|[Come applicare le etichette di riservatezza in Power BI](https://docs.microsoft.com/power-bi/admin/service-security-apply-data-sensitivity-labels)|
 |Monitorare e capire come vengono usate le etichette di riservatezza nell'organizzazione|[Conoscere i dati - Panoramica della classificazione dei dati](data-classification-overview.md) <br /><br /> [Visualizzare l'utilizzo delle etichette con Analisi delle etichette](label-analytics.md)|
 |Estendere le etichette di riservatezza ad app e servizi di terze parti|[SDK di Microsoft Information Protection](https://docs.microsoft.com/information-protection/develop/overview#microsoft-information-protection-sdk)|
 
