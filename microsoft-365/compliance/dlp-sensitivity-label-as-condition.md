@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: informazioni sui servizi e sui tipi di elementi che è possibile usare per le etichette di sensibilità come condizioni dei criteri di prevenzione della perdita dei dati
-ms.openlocfilehash: bb06ed6919a396bef1e5d1f1cb04731fa11267ae
-ms.sourcegitcommit: c1ee4ed3c5826872b57339e1e1aa33b4d2209711
+ms.openlocfilehash: 561a6cbd7b8aeb9082862319c5cc6419fd79c896
+ms.sourcegitcommit: f7ca339bdcad38796c550064fb152ea09687d0f3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "48235723"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48321111"
 ---
 # <a name="use-sensitivity-labels-as-conditions-in-dlp-policies-preview"></a>Usare le etichette di riservatezza come condizioni nei criteri di prevenzione della perdita dei dati (anteprima)
 

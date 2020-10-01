@@ -18,23 +18,23 @@ hideEdit: true
 ms.custom:
 - seo-marvel-mar2020
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: 53411edcaa64508d7200a2ca1bf1903f809d9ae1
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: e9b6dc32fc9c9a641504afd1589dd9666bd8e248
+ms.sourcegitcommit: 888b9355ef7b933c55ca6c18639c12426ff3fbde
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47547434"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "48305346"
 ---
 # <a name="dynamics-365-data-subject-requests-for-the-gdpr-and-ccpa"></a>Richieste degli interessati per Dynamics 365 nell'ambito del GDPR e del CCPA
 
 Il [Regolamento generale sulla protezione dei dati (GDPR)](https://ec.europa.eu/justice/data-protection/reform/index_en.htm) dell'Unione europea garantisce alle persone (denominate nel regolamento *interessati*) il diritto di gestire i dati personali raccolti da un datore di lavoro o da un'altra organizzazione o agenzia (definiti *titolari del trattamento dei dati* o semplicemente *titolari*). I dati personali sono descritti nel GDPR come dati che si riferiscono a una persona fisica identificata o identificabile. Il GDPR garantisce agli interessati diritti specifici sui propri dati personali; tali diritti includono la possibilità di ottenerne copie, richiedere di apportare delle modifiche ai dati, limitare il trattamento dei dati, eliminarli o riceverli in un formato elettronico affinché possano essere trasferiti a un altro titolare. Una richiesta formale di un interessato rivolta a un titolare in merito a un'operazione da effettuare sui propri dati personali è indicata in questo documento come *Richiesta del soggetto interessato* o Richiesta DSR (Data Subject Rights, Diritti del soggetto dei dati).
 
-Analogamente, il California Consumer Privacy Act (CCPA) fornisce obblighi e diritti in materia di privacy per i consumatori della California, inclusi diritti simili ai diritti dell'interessato del GDPR, ad esempio il diritto di eliminare, ricevere e accedere alle informazioni personali (portabilità).  Nell'ambito dei diritti che i consumatori possono esercitare, il CCPA prevede inoltre l'obbligo per determinate divulgazioni, di protezioni contro la discriminazione e requisiti di consenso o rifiuto esplicito per alcuni trasferimenti di dati classificati come "vendite". In generale, la definizione di vendite include la condivisione di dati a titolo oneroso. Per altre informazioni sul CCPA, vedere il [California Consumer Privacy Act](offering-ccpa.md) e le [Domande frequenti sul California Consumer Privacy Act](ccpa-faq.md).
+Analogamente, il California Consumer Privacy Act (CCPA) prevede obblighi e diritti in materia di privacy per i consumatori della California, inclusi diritti simili a quelli che il GDPR riconosce all'interessato, ad esempio il diritto di eliminare, ricevere e accedere alle informazioni personali (portabilità).  Nell'ambito dei diritti che i consumatori possono esercitare, il CCPA prevede inoltre l'obbligo per determinate divulgazioni, di protezioni contro la discriminazione e requisiti di consenso o rifiuto esplicito per alcuni trasferimenti di dati classificati come "vendite". In generale, la definizione di vendite include la condivisione di dati a titolo oneroso. Per altre informazioni sul CCPA, vedere il [California Consumer Privacy Act](offering-ccpa.md) e le [Domande frequenti sul California Consumer Privacy Act](ccpa-faq.md).
 
 Questa guida illustra su come usare i prodotti, i servizi e gli strumenti amministrativi di Microsoft per consentire ai clienti titolari di individuare i dati personali ed effettuare operazioni su di essi per rispondere alle richieste DSR. In particolare, spiega come reperire i dati o le informazioni personali che si trovano nel cloud di Microsoft, nonché come accedervi e agire su di essi. Ecco una rapida panoramica dei processi descritti in questa guida:
 
 - **Individuazione:** usare gli strumenti di ricerca per trovare più facilmente i dati del cliente che possono essere oggetto di una richiesta DSR. Dopo aver raccolto i documenti potenzialmente rilevanti, è possibile eseguire una o più delle azioni DSR descritte nei passaggi seguenti per rispondere alla richiesta del soggetto interessato. In alternativa, si può determinare che la richiesta non soddisfa le linee guida della propria organizzazione relative alla risposta alle richieste DSR.
-- **Accesso:** recuperare i dati personali che risiedono nel cloud Microsoft e, se richiesto, crearne una copia che può essere disponibile per l'interessato.
+- **Accesso:** recuperare i dati personali che risiedono nel cloud Microsoft e, se richiesto, crearne una copia che è disponibile per l'interessato.
 - **Rettifica:** apportare modifiche o implementare le azioni richieste sui dati personali, ove applicabile.
 - **Limitazione**: limitare il trattamento dei dati personali, rimuovendo le licenze per vari servizi online o disattivando i servizi desiderati, dove possibile. È possibile
 - **Eliminazione:** rimuovere in modo definitivo i dati personali che risiedono nel cloud Microsoft.
@@ -192,7 +192,7 @@ Inoltre, per Dynamics 365 for Marketing è fornita un'[API dedicata](https://doc
 
 Per ***Dynamics 365 Customer Service Insights*** è possibile [esportare i dati del cliente](https://docs.microsoft.com/dynamics365/ai/customer-service-insights/gdpr-export) usando il portale di gestione di Azure.
 
-***Dynamics 365 for Finance and Operations*** offre [entità di gestione e integrazione dei dati](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/data-entities/data-management-integration-data-entity) che consentono di usare entità disponibili, entità appena create o entità estese per un'esportazione dei dati personali in Excel ripetibile o per numerosi altri formati comuni usando [processi di importazione ed esportazione dati](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/data-entities/data-import-export-job).  In alternativa, molti elenchi possono essere esportati in un file di Excel statico per facilitare una richiesta di portabilità dei dati. Quando i dati del cliente vengono esportati in Excel in questo modo, è possibile modificare i dati personali da includere nella richiesta di portabilità e quindi salvare il file in un formato leggibile di uso comune, ad esempio .csv o .xml.
+***Dynamics 365 for Finance and Operations*** offre entità di gestione e integrazione dei dati che consentono di usare entità disponibili, entità appena create o entità estese per un'esportazione dei dati personali in Excel ripetibile o per numerosi altri formati comuni usando [processi di importazione ed esportazione dati](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/data-entities/data-import-export-job).  In alternativa, molti elenchi possono essere esportati in un file di Excel statico per facilitare una richiesta di portabilità dei dati. Quando i dati del cliente vengono esportati in Excel in questo modo, è possibile modificare i dati personali da includere nella richiesta di portabilità e quindi salvare il file in un formato leggibile di uso comune, ad esempio .csv o .xml.
 
 Dynamics 365 for Finance and Operations e ***Dynamics 365 for Talent*** offrono il rapporto di ricerca persone per fornire dati ai soggetti dei dati classificati come dati personali.
 
@@ -210,7 +210,7 @@ Microsoft offre la possibilità di accedere, esportare ed eliminare log generati
 - Richieste di ricerca degli utenti e dati della query
 - Dati generati da prodotti e servizi, come risultato della funzionalità del sistema e dell'interazione da parte di utenti o di altri sistemi
 
-Tenere presente che la possibilità di limitare o rettificare dati nei log generati dal sistema non è supportata. I dati nei log generati dal sistema costituiscono le azioni effettive eseguite del cloud Microsoft e i dati di diagnostica e le modifiche a tali dati possono compromettere il record cronologico delle azioni, aumentando i rischi per la sicurezza e le truffe.
+La possibilità di limitare o rettificare dati nei log generati dal sistema non è supportata. I dati nei log generati dal sistema costituiscono le azioni effettive eseguite del cloud Microsoft e i dati di diagnostica e le modifiche a tali dati possono compromettere il record cronologico delle azioni, aumentando i rischi per la sicurezza e le truffe.
 
 ### <a name="accessing-and-exporting-system-generated-logs"></a>Accesso ed esportazione di log generati dal sistema
 
@@ -225,7 +225,7 @@ Gli amministratori possono accedere ai log generati dal sistema legati all'uso d
 
 Dopo aver creato una nuova richiesta, questa sarà inserita nella pagina **Esportazione log di dati**, in cui è possibile tenere traccia del suo stato. Una volta completata una richiesta, è possibile fare clic su un collegamento per accedere ai log generati dal sistema, che verranno esportati in un percorso di archiviazione di Azure dell'organizzazione entro 30 giorni dalla creazione della richiesta. I dati verranno salvati in formati leggibili da macchina di uso comune, ad esempio JSON o XML. Se non si dispone di un account Azure e di un percorso di archiviazione di Azure, sarà necessario creare l’account e/o il percorso di archiviazione per l'organizzazione affinché lo strumento Esportazione log di dati possa esportare i log generati dal sistema.
 
-Azure supporta questa caratteristica, consentendo all'organizzazione di esportare i dati in formato JSON nativo nel contenitore di archiviazione di Azure specificato[. Vedere l'articolo di introduzione su Archiviazione BLOB di Archiviazione di Microsoft Azure](https://docs.microsoft.com/azure/storage/common/storage-introduction#blob-storage). I dati recuperati non includeranno dati che possono compromettere la sicurezza e la stabilità del servizio.
+Azure supporta questa richiesta, consentendo all'organizzazione di esportare i dati in formato JSON nativo nel contenitore di archiviazione di Azure specificato[. Vedere l'articolo di introduzione su Archiviazione BLOB di Archiviazione di Microsoft Azure](https://docs.microsoft.com/azure/storage/common/storage-introduction#blob-storage). I dati recuperati non includeranno dati che possono compromettere la sicurezza e la stabilità del servizio.
 
 > [!IMPORTANT]
 > È necessario essere un amministratore tenant per esportare i dati di un utente dal tenant.
@@ -239,7 +239,7 @@ La tabella seguente riepiloga l'accesso e l'esportazione dei log generati dal si
 |**In quale formato sarà l'output?**| L'output sarà fornito in file leggibili strutturati come XML, CSV o JSON. |
 |**Quali dati vengono restituiti dallo strumento di esportazione di log di dati?**| Lo strumento di esportazione di log di dati restituisce log generati dal sistema che vengono archiviati da Microsoft. I dati esportati includono vari servizi Microsoft, tra cui Office 365, Azure e Dynamics. |
 |***Chi ha accesso allo strumento di esportazione dei log di dati per inviare richieste di accesso a log generati dal sistema?**| Gli amministratori globali di Dynamics 365 avranno accesso all'utilità di gestione file registro dell'RGDP. |
-|**Come vengono restituiti i dati all'utente?**| I dati verranno esportati nel percorso di archiviazione di Azure dell'organizzazione. Spetterà agli amministratori dell'organizzazione stabilire come questi dati verranno visualizzati/restituiti agli utenti. |
+|**Come vengono restituiti i dati all'utente?**| I dati verranno esportati nel percorso di Archiviazione di Microsoft Azure dell'organizzazione. Spetterà agli amministratori dell'organizzazione stabilire come questi dati verranno visualizzati/restituiti agli utenti. |
 |**Che aspetto avranno i dati nei log generati dal sistema?**| Esempio di un record di log generato dal sistema in formato JSON: <br><br> "DateTime": "2017-04-28T12:09:29-07:00", <br> "AppName": "SharePoint", <br> "Action": "OpenFile", <br> "IP": "154.192.13.131", <br> "DevicePlatform": "Windows 1.0.1607" |
 
 ### <a name="deleting-system-generated-logs"></a>Eliminazione di log generati dal sistema

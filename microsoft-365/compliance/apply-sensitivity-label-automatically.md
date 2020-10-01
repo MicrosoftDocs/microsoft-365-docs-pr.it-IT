@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Quando si crea automaticamente un'etichetta di riservatezza, è possibile assegnare un'etichetta a un documento o un messaggio di posta elettronica oppure è possibile chiedere agli utenti di selezionare l'etichetta consigliata.
-ms.openlocfilehash: e28c3866ad674b4bf933bd83e0ebccc19657ca7b
-ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
+ms.openlocfilehash: c4f00c0a11b172671da456b27e0e33c081728614
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48131804"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48326747"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Applicare automaticamente un'etichetta di riservatezza al contenuto
 
@@ -75,7 +75,7 @@ Nella tabella seguente sono riportate le differenze di comportamento tra i due m
 
 |Funzionalità o comportamento|Impostazione di etichettatura: Applicazione di etichette automatica per le app di Office |Criterio: Etichettatura automatica|
 |:-----|:-----|:-----|
-|Dipendenza dall'app|[Sì](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps) |No |
+|Dipendenza dall'app|[Sì](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps) |No \* |
 |Limitazione in base alla posizione|No |Sì |
 |Condizioni: Classificatori sottoponibili a training|Sì |No |
 |Condizioni: Opzioni di condivisione e opzioni aggiuntive per la posta elettronica|No |Sì |
@@ -85,6 +85,8 @@ Nella tabella seguente sono riportate le differenze di comportamento tra i due m
 |Applicazione di contrassegni visivi |Sì |Sì (solo posta elettronica) |
 |Override della crittografia IRM applicata senza etichetta|Sì, se l'utente dispone del diritto minimo di utilizzo per l'esportazione |Sì (solo posta elettronica) |
 |Etichettatura della posta in arrivo|No |Sì (crittografia non applicata) |
+
+\* L'applicazione automatica di etichette non è attualmente disponibile in tutte le aree geografiche. Se il tenant non supporta questa funzionalità, la scheda di applicazione automatica di etichette non è visibile nell'interfaccia di amministrazione di applicazione delle etichette.
 
 > [!NOTE]
 > Quando il contenuto è stato etichettato manualmente, quell'etichetta non verrà mai sostituita dall'etichettatura automatica. I criteri di applicazione automatica di etichette, però, possono sostituire un'[etichetta con priorità inferiore](sensitivity-labels.md#label-priority-order-matters) che è stata applicata con l'applicazione automatica di etichette per le app di Office.
@@ -242,6 +244,8 @@ Infine, è possibile usare la modalità di simulazione per ottenere un'approssim
     
     ![Scheda Etichettatura automatica](../media/auto-labeling-tab.png)
     
+    > [!NOTE]
+    > Se non viene visualizzata la scheda di **Applicazione automatica di etichette**, questa funzionalità non è attualmente disponibile nella propria area geografica.
 
 3. Selezionare **+ Crea criterio di applicazione automatica di etichette**. Verrà avviata la creazione guidata del nuovo criterio:
     

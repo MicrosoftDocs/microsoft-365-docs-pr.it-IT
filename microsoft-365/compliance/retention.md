@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Informazioni sui criteri di conservazione e sulle etichette di conservazione, utili per conservare tutto che serve ed eliminare ciò che non serve.
-ms.openlocfilehash: d8b9ff7bea32f489a5cce5f64626908e8ec56fa1
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 49d61a7bbc376121f5a91c1692f292b83abea779
+ms.sourcegitcommit: 6b1d0bea86ced26cae51695c0077adce8bcff3c4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48197339"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48308944"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>Informazioni sui criteri e sulle etichette di conservazione
 
@@ -230,7 +230,7 @@ A un messaggio di posta elettronica o un documento è possibile assegnare una so
     
 - Se al contenuto è assegnata un'etichetta di conservazione pubblicata, non è possibile sostituirla con un'etichetta applicata automaticamente.
     
-- Se sono presenti più regole che assegnano automaticamente un'etichetta e il contenuto soddisfa le condizioni di più regole, viene assegnata l'etichetta di conservazione della regola meno recente.
+- Se sono presenti più regole che assegnano automaticamente un'etichetta e il contenuto soddisfa le condizioni di più regole, viene assegnata l'etichetta di conservazione della regola meno recente (per data di creazione).
     
 Per capire come e perché è stata applicata un'etichetta di conservazione anziché un'altra, è utile comprendere la differenza tra assegnare esplicitamente un'etichetta un'etichetta assegnata in modo implicito:
 
