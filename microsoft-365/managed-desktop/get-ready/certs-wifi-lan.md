@@ -1,7 +1,7 @@
 ---
 title: Preparare certificati e profili di rete per Microsoft Managed Desktop
 description: certs/WiFi/LAN
-keywords: Microsoft Managed Desktop, Microsoft 365, servizio, documentazione
+keywords: Microsoft Managed Desktop, Microsoft 365, servizi, documentazione
 ms.service: m365-md
 author: jaimeo
 f1.keywords:
@@ -11,12 +11,12 @@ ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 7a0af5db4e18bc46436ace6f9fefefc18f0ccd68
-ms.sourcegitcommit: 51f040a4edb8dd52521a5d7b0f7a975986a1af10
+ms.openlocfilehash: bccfe9a6a6a0550f96ab33d5fd5142e4eaae7b51
+ms.sourcegitcommit: b06a4f21da247edb03fdf6a01eafb7d4fb387b33
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/10/2020
-ms.locfileid: "46608276"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48333525"
 ---
 # <a name="prepare-certificates-and-network-profiles-for-microsoft-managed-desktop"></a>Preparare certificati e profili di rete per Microsoft Managed Desktop  
  
@@ -32,9 +32,6 @@ Prima di distribuire i certificati di SCEP o PKCS in Microsoft Managed Desktop, 
  
 - [Modello di certificato PKCS](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-ready/downloads/PKCS-certificate-template.xlsx) 
 - [Modello di certificato di SCEP](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-ready/downloads/SCEP-certificate-template.xlsx)
-
->[!NOTE]
->Attualmente, solo i profili dei certificati di SCEP sono supportati per la distribuzione del profilo Wi-Fi a Microsoft Managed Desktop quando si utilizza un tipo di EAP. I profili dei certificati PKCS non sono supportati. Per informazioni di riferimento, vedere [aggiungere le impostazioni Wi-Fi per i dispositivi Windows 10 in Intune](https://docs.microsoft.com/intune/wi-fi-settings-windows) .
 
   
 ## <a name="wi-fi-connectivity-requirements"></a>Requisiti di connettività Wi-Fi

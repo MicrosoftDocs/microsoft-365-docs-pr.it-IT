@@ -15,19 +15,19 @@ f1.keywords:
 - NOCSH
 description: Gli attuali clienti di Office 365 devono inviare una richiesta prima della data di scadenza per il paese in cui i dati dei servizi Microsoft 365 sono stati spostati nel nuovo geografico.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f7ca333ca12faab84df54582ecd3212842d26e1a
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: 10c77fdde8583c9d791c9fed936f94aad8fc7264
+ms.sourcegitcommit: b06a4f21da247edb03fdf6a01eafb7d4fb387b33
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47949799"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48333885"
 ---
 # <a name="how-to-request-your-data-move"></a>Come richiedere lo spostamento dati
 
 > [!NOTE]
-> Le informazioni contenute in questa pagina si applicano solo ai clienti che avevano già inquilini Microsoft 365 prima che i nuovi Data Center venissero introdotti nel loro Geo. L'idoneità alla migrazione dipende anche dalla data di provisioning dei carichi di lavoro specifica, quindi la data di creazione del tenant potrebbe non essere sempre la singola data che conta.
+> Le informazioni contenute in questa pagina si applicano solo ai clienti che avevano già inquilini Microsoft 365 prima che i nuovi datacenter del datacenter geografico venissero aperti. L'idoneità alla migrazione dipende anche dalla data di provisioning dei servizi specifica.  La data di creazione del tenant potrebbe non essere sempre la singola data che conta.
   
-I clienti esistenti di Microsoft 365 sono idonei a richiedere la migrazione per i dati del cliente principale dell'intera organizzazione a riposo.  
+I clienti idonei di Microsoft 365 possono richiedere la migrazione per i dati del cliente principale dell'intera organizzazione a riposo.  Il programma supporta le richieste per ogni paese nel periodo di tempo descritto nella tabella e dai clienti che dispongono di un paese di registrazione idoneo associato al tenant Microsoft 365.
   
 ## <a name="when-can-i-request-a-move"></a>Quando è possibile richiedere un trasferimento?
 
@@ -44,7 +44,7 @@ I clienti esistenti di Microsoft 365 sono idonei a richiedere la migrazione per 
 |Sudafrica  <br/> |25 luglio 2019  <br/> |30 giugno 2020  <br/> |
 |Svizzera, Liechtenstein  <br/> |10 dicembre 2019  <br/> |30 giugno 2020  <br/> |
 |Norvegia  <br/> |15 aprile 2020  <br/> |31 ottobre 2020  <br/> |
-|Germania  <br/> |Pianificata  <br/> |Pianificata  <br/> |
+|Germania  <br/> |2020 ottobre 1  <br/> |31 marzo 2021  <br/> |
 
 ## <a name="how-to-request-a-move"></a>Come richiedere uno spostamento
 
@@ -57,19 +57,17 @@ Questa sezione non verrà visualizzata se il tenant non è idoneo per il program
   
 ![Schermata di operazione di consenso per il datacenter](../media/dataresidencyflyoutae.jpg)
   
-Verrà visualizzato il testo nella sezione relativa alla **residenza dei dati** per indicare che l' **organizzazione ha chiesto di spostare i dati** nel paese e nella data desiderati. Nel centro messaggi verrà visualizzato anche un messaggio di conferma. Questo conferma che la richiesta di spostamento è stata eseguita correttamente. 
-
-
+Il testo nella sezione di **residenza dei dati** cambierà per indicare che l' **organizzazione ha chiesto di spostare i dati** nel paese e nella data desiderati. Nel centro messaggi verrà visualizzato anche un messaggio di conferma. Questo conferma che la richiesta di spostamento è stata eseguita correttamente. 
   
 ## <a name="what-happens-after-requesting-a-move"></a>Cosa succede dopo aver richiesto uno spostamento?
 
-Dopo aver richiesto uno spostamento, si prevede di spostarla rapidamente come i vincoli operativi consentono. A causa della natura imprevedibile di molti vincoli, non è possibile condividere una data o un intervallo di tempo specifico per gli spostamenti. Gli amministratori tenant del cliente vedranno una notifica nel centro messaggi dopo che lo spostamento per ogni servizio è stato completato.
+Dopo aver richiesto uno spostamento, si prevede di spostare i dati dei clienti di base a riposo per i servizi Microsoft 365 idonei il più velocemente possibile. A causa della natura imprevedibile di molti vincoli, non è possibile condividere una data o un intervallo di tempo specifico per gli spostamenti. Gli amministratori tenant del cliente vedranno una notifica nel centro messaggi dopo che lo spostamento per ogni servizio è stato completato.
   
 Gli spostamenti possono richiedere fino a 24 mesi dalla data di scadenza richiesta per il completamento del paese.
   
 ## <a name="microsoft-teams"></a>Microsoft Teams
 
-A gennaio 2020, i clienti nei paesi di Office 365 idonei possono scegliere l'opzione per la migrazione dei dati del servizio chat di Microsoft teams.  Le sequenze temporali di opt-in sono state riaperte o estese per tutti i paesi idonei a offrire ai clienti la possibilità di prendere in considerazione il programma di migrazione con Microsoft teams nell'ambito. I clienti che in precedenza hanno optato per una mossa di residenza dei dati avranno anche il passaggio di team al centro informazioni geografico locale, non sono necessarie ulteriori azioni da questi clienti.
+A gennaio 2020, i clienti nei paesi di Office 365 idonei possono scegliere l'opzione per la migrazione dei dati del servizio chat di Microsoft teams.  I clienti che in precedenza hanno optato per una mossa di residenza dei dati avranno anche i team che si spostano nel datacenter geografico locale.  Non sono necessarie ulteriori azioni da parte di questi clienti.
 
 ## <a name="related-topics"></a>Argomenti correlati
 

@@ -16,12 +16,12 @@ f1.keywords:
 - NOCSH
 description: Gli spostamenti di dati sono operazioni back-end che si verificano quando Microsoft sposta i servizi e i dati associati per il tenant in un nuovo datacenter Geo.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: acd2601d32617c56019ca8b4bf8688ce40f5d76a
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: d2e63dd046f62f07e367b3632f96bf7261b99c9c
+ms.sourcegitcommit: b06a4f21da247edb03fdf6a01eafb7d4fb387b33
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47950273"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48333701"
 ---
 # <a name="during-and-after-your-data-move"></a>Durante e dopo lo spostamento dati
 
@@ -30,8 +30,7 @@ Gli spostamenti di dati sono un'operazione back-end con un impatto minimo sugli 
 > [!NOTE]
 > Gli spostamenti si verificano in momenti diversi per ogni servizio. Di conseguenza, si vedrà la funzionalità ridotta descritta per ogni servizio in un'ora diversa. 
   
-Guardare il centro messaggi di Microsoft 365 per conferma quando si sposta per ogni di Exchange Online, SharePoint Online, teams e Skype for business sono stati completati. Come illustrato nella tabella seguente, è possibile richiedere fino a 24 mesi, dopo la fine del periodo di registrazione, per completare tutti gli spostamenti di dati richiesti per tutti i clienti in uno specifico Geo. Se dopo lo spostamento vengono visualizzati problemi con il tenant, contattare il [supporto tecnico](https://go.microsoft.com/fwlink/p/?LinkID=522459) per ottenere assistenza. 
-  
+Guardare il centro messaggi di Microsoft 365 per conferma quando si sposta per ogni servizio di chat di Exchange Online, SharePoint Online e teams complete. Come illustrato nella tabella riportata di seguito, è possibile richiedere fino a 24 mesi dopo la fine del periodo di registrazione per completare i dati dei clienti di base in Rest Moves to the New datacenter Geo.   
 
 |**Clienti con paese di registrazione in**|**Tutti gli spostamenti completati da**|
 |:-----|:-----|
@@ -46,7 +45,7 @@ Guardare il centro messaggi di Microsoft 365 per conferma quando si sposta per o
 |Sudafrica  <br/> |Luglio 1, 2022  <br/> |
 |Svizzera, Liechtenstein  <br/> |Luglio 1, 2022  <br/> |
 |Norvegia  <br/> |2022 novembre 1  <br/> |
-|Germania  <br/> |Pianificata  <br/> |
+|Germania  <br/> |2023 aprile 1  <br/> |
 
 ## <a name="exchange-online"></a>Exchange Online
 
@@ -67,13 +66,9 @@ Quando viene spostato SharePoint Online, vengono spostati anche i dati per i ser
   
 - One Drive for Business
     
-- Project Online
-    
-- Project per Microsoft 365
-    
 - Servizi video Microsoft 365
     
-- Office nel browser s
+- Office in un browser
     
 - Microsoft 365 Apps for enterprise
     
@@ -109,7 +104,7 @@ Le seguenti funzionalità di ricerca sono intaccate:
 
 ## <a name="microsoft-teams"></a>Microsoft Teams
 
-Oltre a Exchange Online, SharePoint Online e OneDrive for business, Microsoft eseguirà la migrazione dei dati del team nel datacenter locale.
+Oltre a Exchange Online, SharePoint Online e OneDrive for business, Microsoft eseguirà la migrazione dei dati del servizio chat Teams nel datacenter locale.
 
 - Messaggi di chat dei team, inclusi i messaggi privati e i messaggi di canale.
 - Immagini di Team utilizzate nelle chat.
@@ -118,20 +113,7 @@ I file dei team sono archiviati in SharePoint Online e i file chat di team sono 
 
 ## <a name="skype-for-business"></a>Skype for Business
 
-Gli spostamenti di Skype for business sono disponibili per Australia, Giappone, India, Canada, Regno Unito e Corea del sud.
-
-Tutti gli utenti verranno disconnessi dal software client Skype for business durante il ritaglio. L'accesso automatico ricollegherà gli utenti entro due minuti.
-  
-|**Caratteristiche che funzionano durante l'intero spostamento**|**Caratteristiche che possono essere limitate durante una parte dello spostamento**|
-|:-----|:-----|
-| Messaggistica istantanea e chiamate vocali  <br/>  Gli utenti possono aggiungere contatti, aggiungere gruppi di contatti, aggiungere riunioni, impostare la propria posizione e cambiare "cosa succede oggi".  <br/>  Le impostazioni del provider di servizi di audioconferenza (ACP) vengono copiate nel datacenter di destinazione Geo. Se il provider ACP è presente nel datacenter di destinazione, funzionerà. In caso contrario, non verrà.  <br/> | L'amministratore tenant TRPS (tenant Remote PowerShell) non sarà disponibile per gli amministratori per la creazione di sessioni.  <br/>  L'amministratore tenant LAC non sarà disponibile per l'accesso degli amministratori e per modificare le impostazioni dell'utente.  <br/> |
-   
-|**Dopo lo spostamento**|
-|:-----|
-| I dati relativi alle riunioni (presentazioni caricate e così via) non verranno spostati e dovranno essere caricati di nuovo.  <br/>  I client Lync meno recenti, ad esempio client Lync 2010 e client Lync per Mac 2011, sono noti per memorizzare nella cache le informazioni DNS sul servizio che causano problemi di accesso. La cancellazione della cache DNS potrebbe essere necessaria se l'utente non è nel client Windows Skype for business più recente. Consultare [risoluzione dei problemi relativi alla configurazione DNS di Skype for business online in Office 365](https://docs.microsoft.com/skypeforbusiness/troubleshoot/online-configuration/dns-configuration-issue). Gli utenti di Lync per Mac client devono seguire [queste istruzioni](https://support.microsoft.com/kb/2629861).  <br/> |
-   
-### <a name="skype-for-business-moves-that-involve-a-third-party-audio-conferencing-provider"></a>Spostamenti di Skype for business che coinvolgono un provider di servizi di audioconferenza di terze parti
-I servizi per i componenti aggiuntivi di terze parti per le conferenze telefoniche per Skype for business non sono disponibili per gli utenti ospitati in nuovi Data Center geografici specifici.  I clienti esistenti che utilizzano un servizio di provider di servizi di audioconferenza di terze parti non devono richiedere lo spostamento in un nuovo Data Center geografico specifico.  Per utilizzare un provider di servizi di audioconferenza di terze parti, è necessario che i nuovi clienti distribuiti nei nuovi Data Center geografici richiedano uno spostamento in un Data Center regionale.
+Gli spostamenti di Skype for business non sono più disponibili.  [Skype for business online si ritirerà](https://docs.microsoft.com/lifecycle/announcements/skype-for-business-online-retirement) il 31 luglio 2021. Dopo questo periodo, il servizio non sarà più accessibile. 
   
 ## <a name="related-topics"></a>Argomenti correlati 
  

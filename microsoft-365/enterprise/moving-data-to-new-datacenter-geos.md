@@ -15,12 +15,12 @@ f1.keywords:
 - NOCSH
 description: Informazioni su New Office 365 datacenter GEOS e su come utilizzare l'opzione di residenza dei dati per richiedere lo spostamento dei dati di base in un nuovo geografico.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 9c1c838f52627e0ff2eee5b7fdbeef7aee55b137
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 17b8d5c828a8c528aba180c260510345e77226d5
+ms.sourcegitcommit: b06a4f21da247edb03fdf6a01eafb7d4fb387b33
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46690926"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48333713"
 ---
 # <a name="moving-core-data-to-new-microsoft-365-datacenter-geos"></a>Spostamento dei dati di base in un nuovo datacenter di Microsoft 365 GEOS
 
@@ -39,28 +39,23 @@ I clienti esistenti che dispongono di dati di base dei clienti archiviati in un 
 |**Giappone**| Asia/Pacifico | Giappone | Dicembre 2014 |
 |**Australia, Nuova Zelanda, Figi**| Asia/Pacifico | Australia | Marzo 2015 |
 |**India**| Asia/Pacifico | India | Ottobre 2015 |
-|**Canada**| Nord America | Canada | Maggio 2016 |
-|**Regno Unito**| Europa | Regno Unito | Settembre 2016 |
+|**Canada**| Stati Uniti | Canada | Maggio 2016 |
+|**Regno Unito**| Unione Europea | Regno Unito | Settembre 2016 |
 |**Corea del Sud**| Asia/Pacifico | Corea del Sud | Aprile 2017 |
-|**Francia**| Europa | Francia | Marzo 2018 |
-|**Emirati Arabi Uniti**| Europa | Emirati Arabi Uniti | Giugno 2019 |
-|**Sudafrica**| Europa | Sudafrica | Luglio 2019 |
-|**Svizzera, Liechtenstein**| Europa | Svizzera | Dicembre 2019 |
-|**Germania**| Europa | Germania | Dicembre 2019 |
-|**Norvegia**| Europa | Norvegia | Aprile 2020 |
-  
-I nuovi clienti o i tenant di Office 365 creati dopo la disponibilità del nuovo datacenter Geo avranno i dati di base dei clienti archiviati a riposo nel nuovo datacenter Geo automaticamente.
+|**Francia**| Unione Europea | Francia | Marzo 2018 |
+|**Emirati Arabi Uniti**| Unione Europea | Emirati Arabi Uniti | Giugno 2019 |
+|**Sudafrica**| Unione Europea | Sudafrica | Luglio 2019 |
+|**Svizzera, Liechtenstein**| Unione Europea | Svizzera | Dicembre 2019 |
+|**Germania**| Unione Europea | Germania | Dicembre 2019 |
+|**Norvegia**| Unione Europea | Norvegia | Aprile 2020 |
 
+Al 1 ° ottobre 2020 i clienti con un abbonamento a Office 365 Education incluso nel tenant non sono idonei per la migrazione.
 
->[!Note]
->Nel dicembre 2019 è stata avviata la regione datacenter Germania. I nuovi clienti di Microsoft 365 con un indirizzo di registrazione tedesco associato al tenant avranno i dati di base dei clienti archiviati a riposo in Germania. Intendiamo offrire la migrazione dall'Europa alla Germania per i clienti tedeschi in futuro. Oggi, i clienti di Microsoft Cloud Germany/Deutschland possono richiedere la migrazione ai servizi di Office 365 nelle nuove aree del datacenter tedesco. Per ulteriori informazioni [, vedere l'opzione di opt-in per la migrazione da Microsoft Cloud Germany (Microsoft Cloud Deutschland) a Office 365 Services nelle nuove aree del datacenter tedesco](https://aka.ms/office365germanymoveoptin) .
->
-  
 Un elenco completo di tutti i datacenter GEOS, Datacenter e la posizione dei dati del cliente a riposo è disponibile come parte delle [mappe dei datacenter interattivi](https://office.com/datamaps). 
   
 ## <a name="data-residency-option"></a>Opzione di residenza dei dati
 
-È disponibile un'opzione per la residenza dei dati per i clienti esistenti di Microsoft 365 che sono coperti dal Data Center GEOS elencato nella tabella precedente. Con questa opzione, i clienti con requisiti di residenza dei dati possono richiedere la migrazione precoce dei dati del cliente principale dell'organizzazione a riposo per il nuovo datacenter Geo.  Microsoft offrirà una scadenza impegnata a tutti i clienti idonei che richiedono la migrazione precoce durante la finestra di registrazione.  Esaminare la pagina [come richiedere lo spostamento dei dati](request-your-data-move.md) per ulteriori informazioni sulla finestra di registrazione per la propria Geo e la procedura da eseguire per iscriversi al programma.  Gli spostamenti di dati possono richiedere fino a 24 mesi dopo il completamento del periodo di richieste.
+È disponibile un'opzione di data Residency per i clienti Microsoft 365 idonei che sono coperti dal centro dati GEOS elencato nella tabella precedente. Con questa opzione, i clienti idonei con i requisiti di residenza dei dati possono richiedere la migrazione dei dati del cliente principale dell'organizzazione a riposo al nuovo datacenter Geo.  Microsoft offrirà una scadenza di commit per tutti i clienti idonei che richiedono la migrazione durante la finestra di registrazione.  Esaminare la pagina [come richiedere lo spostamento dei dati](request-your-data-move.md) per ulteriori informazioni sulla finestra di registrazione aperta per il datacenter Geo e la procedura da eseguire per iscriversi al programma.  Gli spostamenti di dati possono richiedere fino a 24 mesi dopo il completamento del periodo di richieste.
 
 Non sono presenti funzionalità esclusive, funzionalità o certificazioni di conformità con il nuovo Data Center Geo.
     

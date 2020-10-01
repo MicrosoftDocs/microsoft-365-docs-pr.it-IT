@@ -14,17 +14,16 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Gli amministratori possono ottenere informazioni su come creare, modificare ed eliminare i criteri di anti-phishing avanzati disponibili nelle organizzazioni con Office 365 Advanced Threat Protection (Office 365 ATP).
-ms.openlocfilehash: 2986102b549b7302a7a4ac533f80846d832aeb41
-ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
+ms.openlocfilehash: c08046bdc9e72bc824dc28acdf2443c9071236a0
+ms.sourcegitcommit: b06a4f21da247edb03fdf6a01eafb7d4fb387b33
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 10/01/2020
-ms.locfileid: "48328072"
+ms.locfileid: "48333547"
 ---
 # <a name="configure-atp-anti-phishing-policies"></a>Configurare i criteri anti-phishing ATP
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
-
 
 I criteri di anti-phishing ATP fanno parte di [Office 365 Advanced Threat Protection](office-365-atp.md). I criteri di anti-phishing ATP consentono di proteggere l'organizzazione da attacchi di phishing basati sulla rappresentazione malevola e altri tipi di attacchi di phishing. Per ulteriori informazioni sulle differenze tra i criteri di anti-phishing in Exchange Online Protection (EOP) e i criteri di anti-phishing ATP, vedere [protezione anti-phishing](anti-phishing-protection.md).
 
@@ -63,7 +62,7 @@ Per aumentare l'efficacia della protezione anti-phishing, è possibile creare cr
 
 - Per informazioni su come connettersi a PowerShell per Exchange Online, vedere [Connettersi a PowerShell per Exchange Online](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
 
-- È necessario disporre delle autorizzazioni per eseguire le procedure di questo argomento:
+- Prima di poter eseguire le procedure descritte in questo articolo, è necessario disporre delle autorizzazioni seguenti:
 
   - Per aggiungere, modificare ed eliminare i criteri di anti-phishing ATP, è necessario essere membri di uno dei gruppi di ruoli seguenti:
 
@@ -176,6 +175,8 @@ Utilizzare le procedure seguenti per modificare i criteri di anti-phishing ATP: 
 
      - **Includere automaticamente i domini che possiedo**: il valore predefinito è **disattivata**. Per attivarla, fare scorrere l'interruttore **su**attivato.
      - **Includi domini personalizzati**: il valore predefinito è **disattivata**. Per attivarla, scorrere l'interruttore **su**attivato e nella casella **Aggiungi domini** immettere il nome di dominio (ad esempio, contoso.com), premere invio e ripetere il secondo caso.
+
+       **Nota**: nel centro sicurezza & conformità, è possibile immettere un massimo di 20 domini. In Exchange Online PowerShell, è possibile immettere un massimo di 50 domini.
 
    - **Azioni**: fare clic su **modifica**
 

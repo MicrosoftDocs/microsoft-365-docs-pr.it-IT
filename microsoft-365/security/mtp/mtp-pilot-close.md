@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: dbd20263fce059bc57b6a19b58f15e3f5223b4e7
-ms.sourcegitcommit: 61ef32f802a1fb6d1e3a3aa005764ead32a7951e
+ms.openlocfilehash: d820b360f189425cc3913c6d92afc8965a7d1eee
+ms.sourcegitcommit: b06a4f21da247edb03fdf6a01eafb7d4fb387b33
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48318206"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48333611"
 ---
 # <a name="closing-and-summarizing-your-microsoft-threat-protection-pilot"></a>Chiusura e ricapitolazione del pilota di Microsoft Threat Protection  
 
@@ -31,6 +31,48 @@ ms.locfileid: "48318206"
 
 **Si applica a:**
 - Microsoft Threat Protection
+
+<br>
+<table border="0" width="100%" align="center">
+  <tr style="text-align:center;">
+    <td align="center" style="width:25%; border:0;" >
+      <a href= "https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-plan"> 
+        <img src="../../media/mtp/plan.png" alt="Plan your pilot Microsoft Threat Protection project" title="Pianificare il progetto pilota di Microsoft Threat Protection" />
+      <br/>Pianificare </a><br>
+    </td>
+    <td align="center">
+      <a href="https://docs.microsoft.com/microsoft-365/security/mtp/prepare-mtpeval">
+        <img src="../../media/mtp/prep.png" alt="Prepare your Microsoft Threat Protection trial lab or pilot environment" title="Preparare il laboratorio di valutazione di Microsoft Threat Protection o l'ambiente pilota" />
+      <br/>Preparare </a><br>
+    </td>
+    <td align="center">
+      <a href="https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-simulate">
+        <img src="../../media/mtp/run-sim.png" alt="Run your Microsoft Threat Protection attack simulations" title="Eseguire le simulazioni di attacco di Microsoft Threat Protection" />
+      <br/>Simula attacco </a><br>
+    </td>
+    <td align="center"bgcolor="#d5f5e3">
+      <a href="https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-close">
+        <img src="../../media/mtp/close.png" alt="Close and summarize your Microsoft Threat Protection pilot" title="Chiudere e riepilogare il pilota di Microsoft Threat Protection" />
+      <br/>Chiudi e riassumi </a><br>
+    </td>
+  </tr>
+  <tr>
+    <td style="width:25%; border:0;">
+   
+    </td>
+    <td valign="top" style="width:25%; border:0;">
+    
+</td>
+    <td valign="top" style="width:25%; border:0;">
+
+</td>    
+    <td valign="top" style="width:25%; border:0;">
+
+</td>
+  </tr>
+</table>
+
+Si è attualmente in fase di chiusura e di riepilogo.
 
 È stato appena simulato un attacco di solo memoria avanzato che ha eseguito il codice in remoto in un controller di dominio. Si è visto come Microsoft Defender ATP e Azure ATP rileva e segnala l'attività fraudolenta. Si è visto anche come gli avvisi provenienti da origini diverse vengono recapitati insieme ad altre informazioni contestuali in un singolo incidente nel portale del Centro sicurezza di Microsoft 365, consentendo agli analisti SOC di analizzare e intraprendere le azioni necessarie. Inoltre, è stata creata una query di ricerca avanzata che consente di identificare i messaggi di posta elettronica in ingresso in cui l'utente ha aperto o salvato l'allegato e ha creato il rilevamento in base a tale query.
 
@@ -47,7 +89,8 @@ Tali informazioni devono essere presentate a entrambe le parti interessate inter
 Si spera che questa simulazione sia stata apprezzata e che sia incoraggiata a iniziare a implementare ciò che si è imparato.
 
 ## <a name="next-step"></a>Passaggio successivo
-
-****
-
-Visitare il [Centro soluzioni e architetture Microsoft 365](https://docs.microsoft.com/microsoft-365/solutions/solution-architecture-center) per comprendere come progettare la soluzione e l'architettura più adatta alla propria organizzazione.
+Per ulteriori informazioni, vedere i pilastri di Microsoft Threat Protection tramite le seguenti guide interattive:
+- [Salvaguardare l'organizzazione con Microsoft Defender per Office 365](https://aka.ms/O365ATP-Interactive-Guide)
+- [Individuare attività sospette e potenziali attacchi con Microsoft Defender per Identity](https://aka.ms/AATP-Interactive-Guide)
+- [Individuare le minacce e gestire gli avvisi con Microsoft cloud app Security](https://aka.ms/DetectThreatsAndAlertsMCAS-InteractiveGuide)
+- [Esaminare e correggere le minacce con Microsoft Defender per endpoint](https://aka.ms/MDATP-IR-Interactive-Guide)
