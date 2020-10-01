@@ -6,29 +6,33 @@ manager: serdars
 audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
-search.appverid: ''
+search.appverid: MET150
 localization_priority: Priority
 description: Informazioni sull’aggiunta di tag alle immagini in SharePoint Syntex
-ms.openlocfilehash: 38b9ad6823aa5f63a4ddec87bab7fec52a37f163
-ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
+ms.openlocfilehash: 7b41422633934593de881bdb0c04f0a845a3fe5f
+ms.sourcegitcommit: f7ca339bdcad38796c550064fb152ea09687d0f3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "48296092"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48321254"
 ---
 # <a name="image-tagging-in-sharepoint-syntex"></a>Aggiunta di tag alle immagini in SharePoint Syntex
 
-Per impostazione predefinita, l’opzione di base dell’aggiunta di tag alle immagini è attivata per SharePoint e OneDrive. Le immagini caricate nelle due posizioni vengono analizzate e aggiunti i tag automaticamente, se disponibili, da un elenco di 37 tag di base. Gli utenti possono trovare le immagini tramite la ricerca in base al tag di un’immagine.
+Con l'aggiunta di tag di immagini in SharePoint Syntex, gli utenti possono trovare immagini attraverso la ricerca per tag di immagine e creare flussi di lavoro in base ai tag di immagine. Per impostazione predefinita, l’opzione di base dell’aggiunta di tag alle immagini è attivata per SharePoint e OneDrive. Le immagini caricate nelle due posizioni vengono analizzate e aggiunti i tag automaticamente, se disponibili, da un elenco di 37 tag di base. Gli utenti possono trovare le immagini tramite la ricerca in base al tag di un’immagine.
 
 Quando un utente carica un'immagine, il processo di aggiunta di tag viene eseguito automaticamente. Se si modifica un'immagine, il processo viene eseguito di nuovo per aggiornare i tag.
 
-Gli utenti con autorizzazioni di accesso al file di immagine possono visualizzare e modificare i tag nel riquadro delle informazioni del file o nella pagina dei risultati della ricerca. Dopo che un utente ha modificato i tag di un'immagine, il sistema non esegue più l’aggiunta automatica di tag su tale immagine, anche se è stata modificata.
+Gli utenti con autorizzazioni di accesso al file di immagine possono visualizzare e modificare i tag nel riquadro delle informazioni del file o nella pagina dei risultati della ricerca. Dopo che un utente ha modificato i tag di immagine, il sistema non esegue più l'aggiunta automatica di tag su tale immagine, anche se è stata modificata.
 
 Se si disattiva l’aggiunta di tag, alle immagini non verranno più applicati tag automaticamente. I tag esistenti non verranno rimossi.
 
+> [!NOTE]
+> I tag generati dai sistemi potrebbero cambiare con gli aggiornamenti dell'immagine o con la tecnologia dei tag.
+
+
 ## <a name="configure-image-tagging"></a>Configurare l’aggiunta di tag alle immagini
 
-È possibile configurare l’aggiunta di tag alle immagini nell'interfaccia di amministrazione di Microsoft 365.  
+Dopo aver [configurato SharePoint Syntex](set-up-content-understanding.md), è possibile configurare l’aggiunta di tag alle immagini nell'interfaccia di amministrazione di Microsoft 365.  
 
 Per attivare o disattivare l’aggiunta di tag
 
@@ -45,7 +49,3 @@ Per attivare o disattivare l’aggiunta di tag
 6. Fare clic su **Salva**.
 
     ![Schermata di controllo dell’aggiunta di tag alle immagini](../media/content-understanding/sharepoint-syntex-image-tagging-control.png)
-
-## <a name="see-also"></a>Vedere anche
-
-[Configurare la comprensione dei contenuti](set-up-content-understanding.md).

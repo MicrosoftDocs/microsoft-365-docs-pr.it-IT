@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: 3352483f87c12996f00e8a75dfcba19581fdaf0c
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 29da829ddf20a24776ef40b7aefb02cdf1546669
+ms.sourcegitcommit: 888b9355ef7b933c55ca6c18639c12426ff3fbde
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47417910"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "48305056"
 ---
 # <a name="data-protection-impact-assessments-guidance-for-data-controllers-using-dynamics-365"></a>Valutazioni d'impatto sulla protezione dei dati: guida per i titolari del trattamento dei dati che utilizzano Dynamics 365
 
@@ -30,7 +30,7 @@ Ai sensi del regolamento generale sulla protezione dei dati (RGPD), i titolari d
 
 L'obiettivo di questi documenti è di fornire informazioni riguardanti Dynamics 365 ai titolari del trattamento dei dati per aiutarli a determinare se è necessaria una DPIA e, in tal caso, quali dettagli includere.
 
-## <a name="part-1--determining-whether-a-dpia-is-needed"></a>Parte 1: determinare se è necessaria una DPIA
+## <a name="part-1-determining-whether-a-dpia-is-needed"></a>Parte 1: determinare se è necessaria una DPIA
 
 L'articolo 35 del GDPR prevede che un titolare del trattamento dei dati crei una valutazione d'impatto sulla protezione dei dati "laddove un tipo di elaborazione, in particolare usando le nuove tecnologie e tenendo conto della natura, della portata, del contesto e delle finalità dell'elaborazione, rischi di comportare un rischio elevato per i diritti e le libertà delle persone fisiche". Stabilisce, inoltre, particolari fattori che indicherebbero un rischio così elevato, i quali sono discussi nella seguente tabella. Nel determinare se sia necessaria una DPIA, un titolare del trattamento dei dati dovrebbe considerare questi fattori, unitamente a qualsiasi altro fattore rilevante, alla luce delle specifiche implementazioni e degli usi di Dynamics 365 da parte del titolare del trattamento dei dati.
 
@@ -44,7 +44,7 @@ L'articolo 35 del GDPR prevede che un titolare del trattamento dei dati crei una
 >[!Note]
 ><sup>1</sup> Rispetto ai criteri per un trattamento su "larga scala", la Considerazione iniziale 91 del GDPR chiarisce che: "Il trattamento di dati personali non dovrebbe essere considerato un trattamento su larga scala qualora riguardi dati personali di pazienti o clienti da parte di un singolo medico, operatore sanitario o avvocato. In tali casi non dovrebbe essere obbligatorio procedere a una valutazione d'impatto sulla protezione dei dati".
 
-## <a name="part-2--contents-of-a-dpia"></a>Parte 2: contenuto di una DPIA
+## <a name="part-2-contents-of-a-dpia"></a>Parte 2: contenuto di una DPIA
 
 L'articolo 35, comma 7, stabilisce che una valutazione dell'impatto sulla protezione dei dati dovrà specificare le finalità del trattamento e una descrizione sistematica del trattamento prevista. Una descrizione sistematica di una DPIA completa potrebbe includere fattori quali i tipi di dati trattati, per quanto tempo i dati possono essere conservati, i luoghi in cui sono localizzati e trasferiti e le terze parti che possono avere accesso a tali dati. La DPIA deve inoltre includere:
 

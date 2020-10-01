@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: e1e1677c929ef0de5d47dbb98ef8987a8fba548d
-ms.sourcegitcommit: 1522a6471e0c5254a6d0f592e1f4dfacd1dd473a
+ms.openlocfilehash: e2fba7a5cf83838c440cdea8436b5bbdd360885b
+ms.sourcegitcommit: 61ef32f802a1fb6d1e3a3aa005764ead32a7951e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "48245903"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48318175"
 ---
 # <a name="communication-compliance-feature-reference"></a>Informazioni di riferimento sulle caratteristiche di conformità comunicazione
 
@@ -113,7 +113,7 @@ Con i criteri di conformità della comunicazione, è possibile scegliere di anal
     - **Per le comunicazioni chat di team con ambienti di posta elettronica ibridi**: la conformità alla comunicazione può monitorare i messaggi di chat per gli utenti per le organizzazioni che dispongono di una distribuzione locale di Exchange o di un provider di posta elettronica esterno che ha abilitato Microsoft teams. È necessario creare un gruppo di distribuzione per gli utenti che dispongono di cassette postali locali o esterne da monitorare. Quando si crea un criterio di conformità della comunicazione, questo gruppo di distribuzione viene assegnato come selezione di **utenti e gruppi sorvegliati** nella procedura guidata per i criteri.
 
     >[!IMPORTANT]
-    >È necessario presentare una richiesta con il supporto tecnico Microsoft per consentire all'organizzazione di utilizzare l'interfaccia utente grafica nel centro sicurezza & conformità per cercare i dati di chat dei team per gli utenti locali. Per ulteriori informazioni, vedere [ricerca di cassette postali basate sul cloud per gli utenti locali](search-cloud-based-mailboxes-for-on-premises-users.md).
+    >Per cercare i dati delle chat di Teams degli utenti locali, è necessario presentare al Supporto tecnico Microsoft la richiesta di abilitare l'organizzazione all'uso dell'interfaccia utente grafica nel Centro sicurezza e conformità. Per ulteriori informazioni, vedere [ricerca di cassette postali basate sul cloud per gli utenti locali](search-cloud-based-mailboxes-for-on-premises-users.md).
 
 Per cercare dati di chat di Teams nelle cassette postali basate sul cloud degli utenti locali, è necessario presentare al Supporto tecnico Microsoft la richiesta di abilitare l'organizzazione all'uso dell'interfaccia utente grafica nel Centro sicurezza e conformità.
 
@@ -194,7 +194,7 @@ Per informazioni sui classificatori addestrabili in Microsoft 365, vedere [Guida
 ### <a name="conditional-settings"></a>Impostazioni condizionali
 <a name="ConditionalSettings"> </a>
 
-Le condizioni che scegli per il criterio si applicano alle comunicazioni sia dalla posta elettronica sia dalle fonti di terze parti nell'organizzazione (come da Instant Bloomberg o DropBox).
+Le condizioni che scegli per il criterio si applicano alle comunicazioni sia dalla posta elettronica sia dalle fonti di terze parti nell'organizzazione (come da Instant Bloomberg).
 
 Nella tabella seguente vengono illustrate altre informazioni su ogni condizione.
   

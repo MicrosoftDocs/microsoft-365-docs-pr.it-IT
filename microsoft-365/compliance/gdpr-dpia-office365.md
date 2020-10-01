@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: 2408445598ab1e474ac1967be6e13f19887144a8
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 942097033fe5ed97449dbf3be93e8153f91a7961
+ms.sourcegitcommit: 888b9355ef7b933c55ca6c18639c12426ff3fbde
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47417900"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "48305026"
 ---
 # <a name="data-protection-impact-assessments-guidance-for-data-controllers-using-microsoft-office-365"></a>Valutazioni d'impatto sulla protezione dei dati: guida per i titolari del trattamento dei dati che utilizzano Microsoft Office 365 
 
@@ -29,7 +29,7 @@ Ai sensi del regolamento generale sulla protezione dei dati (GDPR), i titolari d
 
 Lo scopo del presente documento consiste nel fornire informazioni su Office 365 ai titolari del trattamento dei dati per aiutarli a determinare se è necessaria una DPIA e, in tal caso, quali dettagli includere. Si applica alle applicazioni e ai servizi di Office 365 compresi, tra l’altro, Exchange Online, SharePoint Online, OneDrive for Business, Yammer, Skype for Business e Power BI. (Vedere, come esempio, le tabelle 1 e 2 della Guida alle richieste dell’interessato del trattamento dei dati in Office 365). 
 
-## <a name="part-1--determining-whether-a-dpia-is-needed"></a>Parte 1: determinare se è necessaria una DPIA
+## <a name="part-1-determining-whether-a-dpia-is-needed"></a>Parte 1: determinare se è necessaria una DPIA
 
 L'articolo 35 del RGPD prevede che un titolare del trattamento dei dati crei una valutazione d'impatto sulla protezione dei dati "laddove un tipo di trattamento, in particolare utilizzando le nuove tecnologie e tenendo conto della natura, della portata, del contesto e delle finalità del trattamento stesso, rischi di comportare un rischio elevato per i diritti e le libertà delle persone fisiche". Stabilisce, inoltre, particolari fattori che indicherebbero un rischio così elevato, i quali sono discussi nella seguente tabella. Nel determinare se sia necessaria una DPIA, un titolare del trattamento dei dati dovrebbe considerare questi fattori, insieme a qualsiasi altro fattore rilevante, alla luce delle specifiche implementazioni e degli usi di Office 365 da parte del titolare del trattamento dei dati.
 
@@ -44,7 +44,7 @@ L'articolo 35 del RGPD prevede che un titolare del trattamento dei dati crei una
 >[!Note]
 ><sup>1</sup> Rispetto ai criteri per un trattamento su "larga scala", la Considerazione iniziale 91 del GDPR chiarisce che: "Il trattamento di dati personali non dovrebbe essere considerato un trattamento su larga scala qualora riguardi dati personali di pazienti o clienti da parte di un singolo medico, operatore sanitario o avvocato. In tali casi non dovrebbe essere obbligatorio procedere a una valutazione d'impatto sulla protezione dei dati".
 
-## <a name="part-2--contents-of-a-dpia"></a>Parte 2: contenuto di una DPIA
+## <a name="part-2-contents-of-a-dpia"></a>Parte 2: contenuto di una DPIA
 
 L'articolo 35, comma 7, stabilisce che una valutazione dell'impatto sulla protezione dei dati dovrà specificare le finalità del trattamento e una descrizione sistematica del trattamento prevista.  Nelle DPIA di Microsoft, tale descrizione sistematica include fattori quali i tipi di dati trattati, per quanto tempo i dati possono essere conservati, i luoghi in cui si trovano e le terze parti che potrebbero avere accesso a tali dati.  La DPIA deve inoltre includere:
 

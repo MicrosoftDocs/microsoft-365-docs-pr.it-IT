@@ -15,12 +15,12 @@ audience: itpro
 ms.collection:
 - GDPR
 - M365-security-compliance
-ms.openlocfilehash: fcf3aff200d65c71538975533cb110c89f3bb92d
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 6fc99048a4a60991b9ba098249692584f596545b
+ms.sourcegitcommit: 888b9355ef7b933c55ca6c18639c12426ff3fbde
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47417950"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "48305116"
 ---
 # <a name="data-processor-service-for-windows-enterprise-breach-notification-under-the-gdpr"></a>Notifica di violazione relativa al servizio di trattamento dei dati per Windows Enterprise ai sensi del GDPR
 
@@ -44,7 +44,7 @@ I processi di rilevamento utilizzati dal servizio di trattamento dei dati per Wi
  - Avvisi di sistema automatici tramite framework di monitoraggio e avviso interni. Questi avvisi potrebbero interferire con avvisi basati su firma come antimalware, rilevamento di intrusioni o tramite algoritmi progettati per tracciare il profilo dell'attività prevista e segnalare anomalie.
  - Report di prima parte dei servizi Microsoft in esecuzione su Microsoft Azure e Azure per enti pubblici.
  - Le vulnerabilità di sicurezza vengono segnalate a [Microsoft Security Response Center (MSRC)](https://technet.microsoft.com/security/dn440717) tramite [secure@microsoft.com] (mailto:secure@microsoft.com). MSRC collabora con partner e ricercatori di sicurezza di tutto il mondo per prevenire gli incidenti e migliorare la sicurezza dei prodotti Microsoft.
- - Report dei clienti tramite il Portale di supporto tecnico o il portale di Microsoft Azure e Azure per enti pubblici, che descrivono attività sospette attribuite all'infrastruttura di Azure (al contrario delle attività che si verificano nell'ambito di responsabilità del cliente).
+ - Report dei clienti tramite il portale del supporto tecnico o il portale di Microsoft Azure e Azure per enti pubblici, che descrivono attività sospette attribuite all'infrastruttura di Azure (al contrario delle attività che si verificano nell'ambito di responsabilità del cliente).
  - Attività di [Red Team e Blue Team](https://azure.microsoft.com/blog/red-teaming-using-cutting-edge-threat-simulation-to-harden-the-microsoft-enterprise-cloud/) per la sicurezza. Questa strategia utilizza un Red Team altamente qualificato di esperti di sicurezza offensiva di Microsoft per individuare e attaccare potenziali vulnerabilità in Azure. Il Blue Team di intervento per la sicurezza deve rilevare e difendersi dall'attività del Read Team. Le azioni del Red team e del Blue Team vengono usate per verificare che gli interventi per la sicurezza di Azure gestiscano in modo efficace gli incidenti. Le attività di sicurezza del Red Team e del Blue Team vengono gestite secondo regole di ingaggio per garantire la protezione dei dati dei clienti.
  - Escalation da parte degli operatori di servizi di Azure. I dipendenti Microsoft sono addestrati per identificare e inoltrare potenziali problemi riguardanti la sicurezza.
 
@@ -62,8 +62,8 @@ I processi di rilevamento utilizzati dal servizio di trattamento dei dati per Wi
 Il team di Security Response collabora con il servizio di trattamento dei dati di Microsoft per Windows Enterprise Security Engineers e SME al fine di classificare l'evento sulla base di dati concreti tratti dalle prove raccolte. Un evento di sicurezza può essere classificato come: 
 
  - **Falso positivo**: un evento che soddisfa i criteri di rilevamento ma che risulta essere parte di una normale pratica aziendale e può avere bisogno di essere filtrato. Il team del servizio identificherà la causa principale dei falsi positivi e li risolverà in modo sistematico sfruttando le fonti di rilevamento e ottimizzandole se necessario. 
- - **Incidente di sicurezza**: un accesso illecito o non autorizzato ai dati del cliente o ai dati di supporto archiviati nei dispositivi o nelle sedi Microsoft che ha provocato la perdita, la divulgazione o l'alterazione dei dati del cliente o dei dati di supporto. 
- - **Incidenti di sicurezza segnalabili dal cliente (CRSI)**: un accesso o un utilizzo illecito o non autorizzato dei sistemi, dei dispositivi o delle sedi Microsoft che ha provocato la divulgazione, la modifica o la perdita dei dati del cliente. 
+ - **Incidente di sicurezza**: un accesso illecito o non autorizzato ai dati del cliente o ai dati di supporto archiviati nelle apparecchiature o strutture Microsoft che ha provocato la perdita, la divulgazione o l'alterazione dei dati del cliente o dei dati di supporto. 
+ - **Incidente di sicurezza segnalabile dal cliente (CRSI)**: un accesso o un utilizzo illecito o non autorizzato dei sistemi, delle apparecchiature o strutture Microsoft che ha provocato la divulgazione, la modifica o la perdita dei dati del cliente. 
  - **Violazione della privacy**: un sottotipo di incidente di sicurezza che coinvolge dati personali. Le procedure di gestione non sono diverse da un incidente di sicurezza. 
 
  Affinché un incidente di sicurezza segnalabile dal cliente possa essere dichiarato, Microsoft deve stabilire che l'accesso non autorizzato ai dati del cliente è avvenuto o molto probabilmente si è verificato e/o che esiste un impegno legale o contrattuale perché si verifichi la notifica. È auspicabile, ma non è necessario, conoscere lo specifico impatto sul cliente, l'accesso alle risorse e i passaggi di ripristino. Un incidente di sicurezza è generalmente dichiarato incidente di sicurezza segnalabile dal cliente dopo la conclusione della fase di diagnosi; tuttavia, la dichiarazione può avvenire in qualsiasi momento in cui tutte le informazioni pertinenti siano disponibili. Il responsabile dell'incidente deve stabilire oltre ogni ragionevole dubbio che si è verificato un evento da segnalare per iniziare l'esecuzione del Processo di notifica dell'incidente del cliente. 
@@ -87,6 +87,6 @@ Dopo aver dichiarato un CRSI, il processo di notifica si verificherà nel modo p
 
 La notifica di una violazione dei dati personali verrà recapitata al cliente con qualsiasi mezzo Microsoft selezioni, anche tramite posta elettronica. La notifica di una violazione dei dati verrà inviata all'elenco dei contatti di sicurezza specificato nel Centro sicurezza di Azure, che può essere configurato seguendo le [linee guida per l'implementazione](https://docs.microsoft.com/azure/security-center/security-center-provide-security-contact-details). Se le informazioni sui contatti non sono disponibili nel Centro sicurezza di Azure, la notifica verrà inviata a uno o più amministratori di una sottoscrizione di Azure. Per fare in modo che la notifica possa essere recapitata correttamente, il cliente è tenuto a verificare la correttezza delle informazioni sui contatti amministrativi relative a ogni sottoscrizione e portale dei servizi online applicabile.
 
-Il team del servizio di trattamento dei dati per Windows Enterprise di Microsoft può anche decidere di informare altri membri del personale Microsoft, ad esempio il servizio clienti (CSS) e l'Account Manager del cliente (AM) o il Technical Account Manager (TAM). Tali figure hanno spesso strette relazioni con il cliente e possono facilitare una correzione più rapida. 
+Il team del Servizio di trattamento dei dati aziendali per Windows può anche decidere di informare altri membri del personale Microsoft, ad esempio il Supporto tecnico (CSS), e l'Account Manager (AM) o il Technical Account Manager (TAM) del cliente. Tali figure hanno spesso strette relazioni con il cliente e possono facilitare una correzione più rapida. 
 
 Per ulteriori informazioni su come Microsoft rileva e interviene a un caso di violazione dei dati personali, vedere [Notifica di violazione dei dati secondo il GDPR](https://servicetrust.microsoft.com/ViewPage/GDPRBreach) nel Service Trust Portal.

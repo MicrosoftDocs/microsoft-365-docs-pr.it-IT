@@ -1,5 +1,5 @@
 ---
-title: Informazioni sui classificatori addestrabili (anteprima)
+title: Informazioni sui classificatori sottoponibili a training (anteprima)
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Un classificatore addestrabile di Microsoft 365 è uno strumento che è possibile addestrare per riconoscere vari tipi di contenuto, fornendo campioni positivi e negativi da esaminare. Una volta che il classificatore è stato addestrato, conferma che i risultati sono accurati. È quindi possibile utilizzarla per eseguire una ricerca nel contenuto dell'organizzazione e classificarla in modo da applicare etichette di conservazione o di sensibilità o includerla nella prevenzione della perdita di dati (DLP) o nei criteri di conservazione.
-ms.openlocfilehash: 9a628eec748681e0a22911bf7cf3774895b10ead
-ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
+ms.openlocfilehash: 8b086690faba23e1331e02d8844503c44e7617c0
+ms.sourcegitcommit: f7ca339bdcad38796c550064fb152ea09687d0f3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48132397"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48322189"
 ---
 # <a name="learn-about-classifiers-preview"></a>Informazioni sui classificatori (anteprima)
 
@@ -75,10 +75,8 @@ Microsoft 365 viene fornito con cinque classificatori prequalificati:
     - C++
     - Clojure
     - CoffeeScript
-    - CSS
     - Andare
     - Haskell
-    - HTML
     - Java
     - JavaScript
     - Lua

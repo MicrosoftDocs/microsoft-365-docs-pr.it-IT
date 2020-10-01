@@ -17,12 +17,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-mar2020
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: 9e7853fb44cc9ccd8c233cc2fee71eaef91a5c1c
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: e4750e063c0f049c5f3faa1667aafb7f1afa6586
+ms.sourcegitcommit: 888b9355ef7b933c55ca6c18639c12426ff3fbde
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47415880"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "48305180"
 ---
 # <a name="gdpr-breach-notification"></a>Notifica di violazione del GDPR
 
@@ -30,7 +30,7 @@ Il regolamento generale sulla protezione dei dati (GDPR) introduce nuove regole 
 
 ## <a name="what-constitute-a-breach-of-personal-data-under-the-gdpr"></a>Cosa costituisce una violazione dei dati personali secondo il GDPR?
 
-Per dati personali si intendono tutte le informazioni relative a un individuo che possono essere utilizzate per identificare tale soggetto direttamente o indirettamente. Una violazione dei dati personali è "una violazione di sicurezza che comporta accidentalmente o in modo illecito la distruzione, la perdita, la modifica, la divulgazione non autorizzata o l'accesso ai dati personali trasmessi, conservati o comunque trattati".
+Per dati personali si intendono tutte le informazioni relative a un individuo che possono essere utilizzate per identificare tale soggetto direttamente o indirettamente. Una violazione dei dati personali è una "violazione di sicurezza che comporta accidentalmente o in modo illecito la distruzione, la perdita, la modifica, la divulgazione non autorizzata o l'accesso ai dati personali trasmessi, conservati o comunque trattati".
 
 ## <a name="terminology"></a>Terminologia
 
@@ -43,11 +43,11 @@ Definizioni utili per i termini relativi al GDPR usati nel documento:
 
 ## <a name="microsoft-and-breach-notification"></a>Microsoft e la notifica di violazione
 
-Per Microsoft, il rispetto degli obblighi derivanti dal Regolamento generale sulla protezione dei dati (GDPR) è importante. Per incidente di sicurezza o violazione dei dati si intendono eventi come l'accesso illecito o non autorizzato ai dati del cliente archiviati nelle apparecchiature o strutture Microsoft che possono comportare la perdita, la divulgazione o l'alterazione di tali dati.
+Per Microsoft, il rispetto degli obblighi derivanti dal Regolamento generale sulla protezione dei dati (GDPR) è importante. Per incidente di sicurezza o violazione dei dati si intende un evento come l'accesso illecito o non autorizzato ai dati del cliente archiviati nelle apparecchiature o strutture Microsoft che potrebbe comportare la perdita, la divulgazione o l'alterazione di tali dati.
 
 In qualità di responsabile del trattamento dei dati, Microsoft assicura che i clienti dei servizi riescano a soddisfare i requisiti di notifica della violazione del GDPR in quanto titolari del trattamento dei dati. La notifica contiene le informazioni necessarie per eseguire tale valutazione. Microsoft invia una notifica di violazione dei dati personali ai clienti, fatta eccezione per i casi in cui i dati personali sono indecifrabili, ad esempio i dati con crittografia nei quali l'integrità delle chiavi è confermata.
 
-I titolari del trattamento dei dati sono responsabili della valutazione dei rischi per la privacy di tali dati e della scelta se una violazione richiede la notifica relativa alla Legge sulla protezione dei dati del cliente. Microsoft fornisce le informazioni necessarie, insieme ai criteri di conformità del GDPR per eseguire la valutazione.
+I titolari del trattamento dei dati sono tenuti a valutare i rischi per la privacy di tali dati e a stabilire se una violazione richieda la notifica all'autorità per la protezione dei dati di un cliente. Microsoft fornisce le informazioni necessarie, insieme ai criteri di conformità del GDPR per eseguire la valutazione.
 
 La notifica iniziale include una descrizione della natura della violazione, l'impatto approssimativo sull’utente e i passaggi per l’attenuazione, se applicabili. Se le nostre indagini non sono complete al momento della notifica iniziale, verranno indicati i passaggi successivi e le sequenze temporali per le comunicazioni seguenti. Per ulteriori informazioni su come Microsoft rileva e interviene a un caso di violazione dei dati personali, vedere [Notifica di violazione dei dati secondo il GDPR](https://servicetrust.microsoft.com/ViewPage/GDPRBreach) nel Service Trust Portal.
 
@@ -76,7 +76,7 @@ Di seguito sono indicati i dettagli relativi alla notifica della violazione per 
         Ulteriori dettagli sono disponibili in [Notifica al cliente](https://docs.microsoft.com/microsoft-365/compliance/gdpr-breach-azure-dynamics#customer-notification).
 
 3. **[Servizi professionali e supporto tecnico Microsoft](gdpr-breach-Microsoft-Support-Professional-Services.md)**  
-    La natura dei servizi professionali indica che alcuni eventi di protezione dei dati potrebbero rientrare nell'ambito della responsabilità del cliente. Quando i Servizi professionali di Microsoft identificano un incidente di protezione dei dati, seguirà un piano di intervento standard del settore come descritto in [Ambito e limiti del processo di intervento in caso di incidenti di protezione dei dati](https://docs.microsoft.com/microsoft-365/compliance/gdpr-breach-microsoft-support-professional-services#scope--limits-of-data-protection-incident-response-process).
+    Data la natura dei servizi professionali, alcuni incidenti di protezione dei dati potrebbero rientrare nell'ambito della responsabilità del cliente. Quando i Servizi professionali di Microsoft identificano un incidente di protezione dei dati, seguirà un piano di intervento standard del settore come descritto in [Ambito e limiti del processo di intervento in caso di incidenti di protezione dei dati](https://docs.microsoft.com/microsoft-365/compliance/gdpr-breach-microsoft-support-professional-services#scope--limits-of-data-protection-incident-response-process).
 
 ## <a name="breach-notification-admin-tools"></a>Strumenti di amministratore della notifica di violazione
 
