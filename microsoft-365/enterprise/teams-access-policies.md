@@ -8,7 +8,7 @@ ms.topic: article
 f1.keywords:
 - NOCSH
 ms.author: heidip
-ms.date: 09/18/2020
+ms.date: 09/30/2020
 ms.reviewer: anmorgan
 ms.custom:
 - it-pro
@@ -16,12 +16,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: 570ef098a3989bf42d641b78e325414350b8e5a5
-ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
+ms.openlocfilehash: b9a9044a063c01724710679682e1edbe458dec0f
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48132113"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48327137"
 ---
 # <a name="policy-recommendations-for-securing-teams-chats-groups-and-files"></a>Suggerimenti sui criteri per la protezione di chat, gruppi e file di Team
 
@@ -66,7 +66,6 @@ In questa tabella sono elencati i criteri che è necessario rivisitare e i colle
 |        |[Bloccare i client che non supportano l'autenticazione moderna](identity-access-policies.md#block-clients-that-dont-support-modern-authentication)|Includere team e servizi dipendenti nell'assegnazione delle app cloud.|
 |        |[Gli utenti a rischio elevato devono modificare la password](identity-access-policies.md#high-risk-users-must-change-password)|Costringe gli utenti dei team a modificare la propria password quando si effettua l'accesso se viene rilevata un'attività ad alto rischio per il proprio account. Assicurarsi che i team e i servizi dipendenti siano inclusi nell'elenco delle app.|
 |        |[Applicare i criteri di protezione dei dati dell'APP](identity-access-policies.md#apply-app-data-protection-policies)|Assicurarsi che i team e i servizi dipendenti siano inclusi nell'elenco delle app. Aggiornare i criteri per ogni piattaforma (iOS, Android, Windows).|
-|        |[Richiedere applicazioni approvate e protezione delle APP](identity-access-policies.md#require-approved-apps-and-app-protection)|Includere team e servizi dipendenti in questo criterio.|
 |        |[Definire i criteri di conformità del dispositivo](identity-access-policies.md#define-device-compliance-policies)|Includere team e servizi dipendenti in questo criterio.|
 |        |[Richiedere computer conformi](identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets)|Includere team e servizi dipendenti in questo criterio.|
 |**Sensibili**|[Richiedere l'AMF quando il rischio di accesso è *basso*, *medio* o *alto*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|I team dispongono di regole di accesso guest e di accesso esterno da prendere in considerazione, per ulteriori informazioni, vedere più avanti in questo articolo. Includere team e servizi dipendenti in questo criterio.|

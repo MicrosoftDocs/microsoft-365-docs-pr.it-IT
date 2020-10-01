@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Creare un ambiente di Microsoft 365 per testare l’identità e l’accesso dei dispositivi.
-ms.openlocfilehash: c5bc0fbbb3ae3839cb7aa71e8c840784ae4a4cad
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 84af7747fc1d0e80e933397f4f0f96018ed246c3
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46685855"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48327808"
 ---
 # <a name="identity-and-device-access-for-your-microsoft-365-test-environment"></a>L’identità e l’accesso dei dispositivi per l'ambiente di testing di Microsoft 365
 
@@ -28,15 +28,15 @@ ms.locfileid: "46685855"
 
 Le [configurazioni di accesso a identità e dispositivi](microsoft-365-policies-configurations.md) sono un insieme di funzionalità e criteri di accesso condizionale per proteggere l'accesso a tutti i servizi integrati con Azure Active Directory (Azure ad).
 
-Per creare un ambiente di testing che disponga dell’applicazione di questi criteri:
+Per creare un ambiente di testing con le configurazioni di accesso ai dispositivi e le identità comuni sul posto:
 
 1. Configurare l'ambiente di testing con le funzionalità essenziali di identità e sicurezza in base alle scelte dell’utente del modello di identità e metodo di autenticazione:
 
   - [Solo cloud](cloud-only-prereqs-m365-test-environment.md)
-  - [Sincronizzazione dell'hash delle password](phs-prereqs-m365-test-environment.md)
+  - [Sincronizzazione dell'hash delle password (PHS)](phs-prereqs-m365-test-environment.md)
   - [Autenticazione pass-through](pta-prereqs-m365-test-environment.md)
 
-2. Usare i [criteri comuni di identità e accesso dei dispositivi](identity-access-policies.md) per configurare i criteri basati sui prerequisiti e testare la protezione di identità e dispositivi.
+2. Utilizzare [criteri comuni di accesso a identità e](identity-access-policies.md) dispositivi per configurare i criteri che si basano sui prerequisiti configurati per l'ambiente di testing ed esplorare e verificare la protezione per identità e dispositivi.
 
 ## <a name="see-also"></a>Vedere anche
 

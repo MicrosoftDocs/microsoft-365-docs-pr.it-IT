@@ -21,16 +21,16 @@ search.appverid:
 - MED150
 ms.assetid: 18be3b98-34ae-47be-9337-ab6c3fb372ac
 description: In questo articolo, informazioni su come è possibile controllare lo stato della sincronizzazione della directory in Office 365.
-ms.openlocfilehash: c77898b58b58c6ae91492debd7ad66f395d80d52
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 7577ed358a262d5b0ef2932bc73cf61941bec31b
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46691294"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48326950"
 ---
 # <a name="view-directory-synchronization-status-in-microsoft-365"></a>Visualizzare lo stato di sincronizzazione della directory in Microsoft 365
 
-Se è stata integrata Active Directory locale con Azure AD sincronizzando l'ambiente locale con Microsoft 365, è anche possibile controllare lo stato della sincronizzazione.
+Se sono stati integrati i servizi di dominio Active Directory (AD DS) locali con Azure Active Directory (Azure AD) sincronizzando l'ambiente locale con Microsoft 365, è anche possibile controllare lo stato della sincronizzazione.
   
 ## <a name="view-directory-synchronization-status"></a>Visualizzare lo stato della sincronizzazione della directory
 
@@ -43,7 +43,7 @@ Nella tabella seguente sono elencate le funzionalità che consentono di ottenere
   
 Se si verifica un problema con la sincronizzazione della directory, anche gli errori sono elencati in questa pagina. Per ulteriori informazioni sui diversi errori che potrebbero verificarsi, vedere [identificare gli errori di sincronizzazione della directory in Microsoft 365](identify-directory-synchronization-errors.md).
   
-|**Elemento**|**Scopo**|
+|Elemento|Scopo|
 |:-----|:-----|
 |**Domini verificati** | Il numero di domini nel tenant Microsoft 365 verificato che si è proprietari. |
 |**Domini non verificati** | Domini che sono stati aggiunti, ma non sono stati verificati. |
@@ -53,3 +53,19 @@ Se si verifica un problema con la sincronizzazione della directory, anche gli er
 |**Sincronizzazione ultima password** | L'ultima volta che è stata eseguita la sincronizzazione hash password. Verrà visualizzato un messaggio di avviso e un collegamento a uno strumento per la risoluzione dei problemi se l'ultima sincronizzazione è stata più di tre giorni fa. |
 |**Versione client di sincronizzazione della directory** | Contiene un collegamento di download se è stata rilasciata una nuova versione di Azure AD Connect. |
 |**Account del servizio di sincronizzazione della directory** | Visualizza il nome dell'account del servizio di sincronizzazione della directory Microsoft 365. |
+|||
+
+## <a name="monitor-synchronization-health"></a>Monitorare l'integrità della sincronizzazione
+
+In questa sezione verrà installato un agente di Azure AD Connect Health in ogni controller di dominio AD DS locale per monitorare l'infrastruttura di gestione delle identità e i servizi di sincronizzazione forniti da Azure AD Connect. Le informazioni sul monitoraggio vengono rese disponibili nel portale di Azure AD Connect Health, dove è possibile visualizzare avvisi, il monitoraggio delle prestazioni, analisi sull'utilizzo e altre informazioni.
+
+La decisione di progettazione chiave su come usare Azure AD Connect Health si basa sul modo in cui si utilizza Azure AD Connect:
+
+- Se si usa l'opzione **autenticazione gestita** iniziare con [Uso di Azure AD Connect Health con la sincronizzazione](https://docs.microsoft.com/azure/active-directory/connect-health/active-directory-aadconnect-health-sync) per comprendere e configurare Azure AD Connect Health.
+- Se si stanno sincronizzando soli i nomi di account e gruppi tramite l'**autenticazione federata** con Active Directory Federation Services (AD FS), iniziare con [Uso di Azure AD Connect Health con AD FS](https://docs.microsoft.com/azure/active-directory/connect-health/active-directory-aadconnect-health-adfs) per comprendere e configurare Azure AD Connect Health.
+
+Al termine, è possibile eseguire le operazioni seguenti:
+
+- L'agente di Azure AD Connect Health è installato su ciascuno dei server del provider di identità locale.
+- Il portale di Azure AD Connect Health mostra lo stato corrente dell'infrastruttura locale e delle attività di sincronizzazione con il tenant di Azure AD per l’abbonamento a Microsoft 365.
+

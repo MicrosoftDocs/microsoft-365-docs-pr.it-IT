@@ -14,16 +14,16 @@ ms.custom:
 - M365solutions
 f1.keywords: NOCSH
 description: Bloccare gli utenti Guest da un gruppo specifico
-ms.openlocfilehash: 923a9e5cd09d232f377f55fd6a9f499f8f536a84
-ms.sourcegitcommit: 66f1f430b3dcae5f46cb362a32d6fb7da4cff5c1
+ms.openlocfilehash: 2e9c9cae13932a33b8c486148f93901904e80006
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "46662679"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48328018"
 ---
-# <a name="block-guest-users-from-a-specific-group"></a>Bloccare gli utenti Guest da un gruppo specifico
+# <a name="block-guest-users-from-a-specific-microsoft-365-group-or-microsoft-teams-team"></a>Bloccare gli utenti Guest da uno specifico gruppo di Microsoft 365 o Microsoft Teams
 
-Se si desidera consentire l'accesso guest alla maggior parte dei gruppi, ma si desidera impedire l'accesso guest, è possibile bloccare l'accesso guest per singoli gruppi.
+Se si desidera consentire agli utenti di accedere alla maggior parte dei gruppi e ai team, ma si desidera impedire l'accesso guest, è possibile bloccare l'accesso guest per singoli gruppi e team. Bloccando l'accesso Guest a un team, è possibile bloccare l'accesso Guest al gruppo associato.
 
 Se si utilizzano le etichette di riservatezza nell'organizzazione, è consigliabile utilizzarle per controllare l'accesso guest per ogni singolo gruppo. Per informazioni su come eseguire questa operazione, [utilizzare le etichette di riservatezza per proteggere il contenuto in Microsoft teams, microsoft 365 Groups e SharePoint sites](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites). Questo è l'approccio consigliato.
 

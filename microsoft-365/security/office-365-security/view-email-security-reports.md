@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Informazioni su come trovare e utilizzare i report sulla sicurezza della posta elettronica per l'organizzazione. I report sulla sicurezza della posta elettronica sono disponibili nel centro sicurezza & conformità.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b26dd18754a96d1879a2f57ae9742ae1d1a36ce4
-ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
+ms.openlocfilehash: 7e594f758e0fb08b0b8718248466ecbc46903b82
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "48295539"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48327010"
 ---
 # <a name="view-email-security-reports-in-the-security--compliance-center"></a>Visualizzare i report sulla sicurezza della posta elettronica nel Centro sicurezza e conformità
 
@@ -270,9 +270,9 @@ Per tornare alla visualizzazione report, fare clic su **Visualizza report**.
 
 ## <a name="threat-protection-status-report"></a>Report dello stato di protezione dalle minacce
 
-Il rapporto **sullo stato della protezione dalle minacce** è disponibile sia in EOP che in Office 365 ATP. Tuttavia, i report contengono dati diversi. Ad esempio, i clienti di EOP possono visualizzare informazioni sui malware rilevati tramite posta elettronica, ma non informazioni sui [file dannosi rilevati in SharePoint Online, OneDrive o Microsoft teams](atp-for-spo-odb-and-teams.md).
+Il rapporto **sullo stato della protezione dalle minacce** è disponibile sia in EOP che in Office 365 ATP. Tuttavia, i report contengono dati diversi. Ad esempio, i clienti di EOP possono visualizzare informazioni sui malware rilevati tramite posta elettronica, ma non informazioni sui [file dannosi rilevati da ATP per SharePoint, OneDrive o Microsoft teams](atp-for-spo-odb-and-teams.md).
 
-Il rapporto fornisce il numero di messaggi di posta elettronica con contenuti dannosi, ad esempio i file o gli indirizzi del sito Web (URL) bloccati dal motore antimalware, da [zero-hour auto Purge (ZAP)](zero-hour-auto-purge.md)e dalle funzionalità di ATP come i [collegamenti sicuri](atp-safe-links.md)di ATP, gli [allegati sicuri di ATP](atp-safe-attachments.md)e l' [anti-phishing ATP](set-up-anti-phishing-policies.md). È possibile utilizzare queste informazioni per identificare le tendenze o determinare se i criteri dell'organizzazione devono essere rettificati. È importante comprendere che se un messaggio viene inviato a cinque destinatari, è necessario contarlo come cinque messaggi diversi e non con un solo messaggio.
+Il rapporto fornisce il numero di messaggi di posta elettronica con contenuti dannosi, ad esempio i file o gli indirizzi del sito Web (URL) bloccati dal motore antimalware, da [zero-hour auto Purge (ZAP)](zero-hour-auto-purge.md)e dalle funzionalità ATP come [collegamenti sicuri](atp-safe-links.md), [allegati sicuri](atp-safe-attachments.md)e [anti-phishing ATP](set-up-anti-phishing-policies.md). È possibile utilizzare queste informazioni per identificare le tendenze o determinare se i criteri dell'organizzazione devono essere rettificati. È importante comprendere che se un messaggio viene inviato a cinque destinatari, è necessario contarlo come cinque messaggi diversi e non con un solo messaggio.
 
 Per visualizzare il report, aprire il [Centro sicurezza & conformità](https://protection.office.com), accedere al **Reports** \> **Dashboard** dei report e selezionare **lo stato di protezione dalle minacce**. Per passare direttamente al report, aprire uno degli URL seguenti:
 
@@ -366,7 +366,7 @@ Se si fa clic su **filtri**, è possibile modificare il report con i filtri segu
 - Data di **inizio** e **Data di fine**
 - **Rilevamento**
 - **Protetto da**: **ATP** o **EOP**
-- **Tag**: filtrare in base al tag per restituire gli utenti o i gruppi a cui è stato applicato un tag specifico. Per ulteriori informazioni sui tag degli utenti, vedere [tag utente](https://docs.microsoft.com/microsoft-365/security/office-365-security/user-tags?view=o365-worldwide).
+- **Tag**: filtrare in base al tag per restituire gli utenti o i gruppi a cui è stato applicato un tag specifico. Per ulteriori informazioni sui tag degli utenti, vedere [tag utente](user-tags.md).
 - **Dominio**
 
 > [!NOTE]
@@ -406,7 +406,7 @@ Se si fa clic su **filtri**, è possibile modificare il report con i filtri segu
 - Data di **inizio** e **Data di fine**
 - **Rilevamento**
 - **Protetto da** (solo Office 365 ATP): **ATP** o **EOP**
-- **Tag**: filtrare in base al tag per restituire gli utenti o i gruppi a cui è stato applicato un tag specifico. Per ulteriori informazioni sui tag degli utenti, vedere [tag utente](https://docs.microsoft.com/microsoft-365/security/office-365-security/user-tags?view=o365-worldwide).
+- **Tag**: filtrare in base al tag per restituire gli utenti o i gruppi a cui è stato applicato un tag specifico. Per ulteriori informazioni sui tag degli utenti, vedere [tag utente](user-tags.md).
 - **Dominio**
 - **Destinatari** (si noti che questa proprietà filtrabile è disponibile solo nella visualizzazione tabella Dettagli)
 

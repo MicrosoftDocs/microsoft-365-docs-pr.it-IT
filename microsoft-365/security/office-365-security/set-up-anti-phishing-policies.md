@@ -16,12 +16,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Gli amministratori possono ottenere informazioni sui criteri di anti-phishing disponibili in Exchange Online Protection (EOP) e Office 365 Advanced Threat Protection (Office 365 ATP).
-ms.openlocfilehash: 945b346a5ebd4a85776d87c019ee1a06aec73635
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 498b6e27b3fca66e388eaa27ba7895056ef7f0fc
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48195916"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48326938"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Criteri di anti-phishing in Microsoft 365
 
@@ -220,4 +220,4 @@ Le soglie di phishing avanzate seguenti sono disponibili solo nei criteri di ant
 
 - **4-la maggior parte degli utenti aggressivi**: i messaggi identificati come phishing con un livello di attendibilità basso, medio o alto vengono considerati come se fossero stati identificati con un livello di attendibilità elevatissimo.
 
-La probabilità di falsi positivi (buoni messaggi contrassegnati come danneggiati) aumenta man mano che si aumenta questa impostazione. Per informazioni sulle impostazioni consigliate, vedere [Office ATP anti-phishing Policy Settings](recommended-settings-for-eop-and-office365-atp.md#office-atp-anti-phishing-policy-settings).
+La probabilità di falsi positivi (buoni messaggi contrassegnati come danneggiati) aumenta man mano che si aumenta questa impostazione. Per informazioni sulle impostazioni consigliate, vedere [impostazioni dei criteri di anti-phishing ATP](recommended-settings-for-eop-and-office365-atp.md#atp-anti-phishing-policy-settings).

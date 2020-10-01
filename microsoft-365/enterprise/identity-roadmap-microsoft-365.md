@@ -1,11 +1,11 @@
 ---
-title: Roadmap dell'identità per Microsoft 365
+title: Roadmap delle identità per Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 08/10/2020
+ms.date: 09/30/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -15,18 +15,18 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: La Guida di orientamento per l'identità per Microsoft 365.
-ms.openlocfilehash: e268422fcd6cfba36b1a971629036d29827806f6
-ms.sourcegitcommit: 13ae76220b4ad688438a5d1031a6e1b5300ffa23
+ms.openlocfilehash: 997df19ca71b67d3fa579b9feaf3e1a61bc7a358
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "47775124"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48327772"
 ---
-# <a name="identity-roadmap-for-microsoft-365"></a>Roadmap dell'identità per Microsoft 365
+# <a name="identity-roadmap-for-microsoft-365"></a>Roadmap delle identità per Microsoft 365
 
 In Microsoft 365 for Enterprise, un'infrastruttura di identità ben pianificata e eseguita spiana la strada a una maggiore sicurezza, inclusa la limitazione dell'accesso ai carichi di lavoro di produttività e dei relativi dati ai soli utenti e dispositivi autenticati.
 
-Per una panoramica dei modelli di identità e dell'autenticazione per Microsoft 365 per Enterprise, vedere questo video:
+Per una panoramica dei modelli di identità e dell'autenticazione per Microsoft 365 per Enterprise, vedere questo video.
 
 <p> </p>
 
@@ -38,7 +38,7 @@ Per informazioni sulle caratteristiche di identità di ogni piano Microsoft 365 
 
 Esaminare questo poster a due pagine per ingrandire rapidamente i concetti e le configurazioni di identità per Microsoft 365 per Enterprise.
 
-È anche possibile [scaricare questo poster](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/m365e-identity-infra.pdf). È possibile stamparlo nel formato lettera, legale o tabloid (11 x 17).
+È anche possibile [scaricare questo poster](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/m365e-identity-infra.pdf) e stamparlo nel formato lettera, legale o tabloid (11 x 17).
 
 ## <a name="plan"></a>Piano
 
@@ -66,10 +66,14 @@ Per garantire una forza lavoro sicura e produttiva, Microsoft fornisce una serie
 
 ## <a name="manage"></a>Gestione
 
-Per gestire l'implementazione dell'identità:
+Per gestire la distribuzione delle identità di Microsoft 365, vedere:
 
-- [Assegnare licenze e gestire gli account utente](assign-licenses-to-user-accounts.md)
-- [Monitorare la sincronizzazione della directory](view-directory-synchronization-status.md)
+- [Account utenti](manage-microsoft-365-accounts.md)
+- [Licenze](assign-licenses-to-user-accounts.md)
+- [Password](manage-microsoft-365-passwords.md)
+- [Gruppi](manage-microsoft-365-groups.md)
+- [Governance](manage-microsoft-365-identity-governance.md)
+- [Sincronizzazione della directory](view-directory-synchronization-status.md)
 
 ## <a name="how-microsoft-does-identity-for-microsoft-365"></a>In che modo Microsoft ha identità per Microsoft 365
 

@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9de497a9-2f5c-43d6-ae18-767f2e6fe6e0
 description: Informazioni su come aggiungere gli ospiti a un gruppo di Microsoft 365, visualizzare gli utenti guest e utilizzare PowerShell per controllare l'accesso guest.
-ms.openlocfilehash: a56d9599824ac1436c6f875661bcd573c1f6b1ca
-ms.sourcegitcommit: b4119682bd3c036289e851fff56fde869c816479
+ms.openlocfilehash: 640a35cbb1a3eb395453b224cadcf0d0db82fab8
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45204744"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48326520"
 ---
 # <a name="manage-guest-access-in-microsoft-365-groups"></a>Gestire l'accesso guest nei gruppi di Microsoft 365
 
@@ -61,74 +61,15 @@ Se l'ospite è già presente nella directory, è possibile aggiungerli ai gruppi
   
 4. Selezionare **Aggiungi membri**e scegliere il nome del Guest che si desidera aggiungere.
     
-5. Seleziona **Salva**.
+5. Selezionare **Salva**.
 
 Se si desidera aggiungere direttamente un guest alla directory, è possibile [aggiungere gli utenti di collaborazione B2B di Azure Active Directory nel portale di Azure](https://docs.microsoft.com/azure/active-directory/b2b/add-users-administrator).
 
 Se si desidera modificare le informazioni di un ospite, è possibile [aggiungere o aggiornare le informazioni del profilo di un utente utilizzando Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal).
-  
-## <a name="block-guest-users-from-a-specific-group"></a>Bloccare gli utenti Guest da un gruppo specifico
 
-Se si desidera consentire l'accesso guest alla maggior parte dei gruppi, ma si desidera impedire l'accesso guest, è possibile bloccare l'accesso guest per i singoli gruppi tramite Microsoft PowerShell.
+## <a name="see-also"></a>Vedere anche
 
-È necessario utilizzare la versione di anteprima di [Azure Active Directory PowerShell per Graph](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2) (Module Name **AzureADPreview**) per modificare l'impostazione di accesso Guest a livello di gruppo:
-
-- Se non è ancora stata installata una versione del modulo PowerShell di Azure AD, vedere [installare il modulo Azure AD](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2?view=azureadps-2.0-preview#installing-the-azure-ad-module) e seguire le istruzioni per installare la versione di anteprima pubblica.
-
-- Se è installata la versione 2.0 disponibile a livello generale del modulo PowerShell di Azure AD (AzureAD), è necessario disinstallarlo eseguendo `Uninstall-Module AzureAD` nella sessione di PowerShell e quindi installare la versione di anteprima eseguendo `Install-Module AzureADPreview`.
-
-- Se è già stata installata la versione Preview, eseguire `Install-Module AzureADPreview` per verificare che sia la versione più recente di questo modulo.
-
-> [!NOTE]
-> È necessario disporre dei diritti di amministratore globale per eseguire questi comandi. 
-
-Eseguire lo script seguente, modificando */<GroupName/>* il nome del gruppo in cui si desidera bloccare l'accesso guest.
-
-```PowerShell
-$GroupName = "<GroupName>"
-
-Connect-AzureAD
-
-$template = Get-AzureADDirectorySettingTemplate | ? {$_.displayname -eq "group.unified.guest"}
-$settingsCopy = $template.CreateDirectorySetting()
-$settingsCopy["AllowToAddGuests"]=$False
-$groupID= (Get-AzureADGroup -SearchString $GroupName).ObjectId
-New-AzureADObjectSetting -TargetType Groups -TargetObjectId $groupID -DirectorySetting $settingsCopy
-```
-
-Per verificare le impostazioni, eseguire il comando seguente:
-
-```PowerShell
-Get-AzureADObjectSetting -TargetObjectId $groupID -TargetType Groups | fl Values
-```
-
-La verifica è simile alla seguente:
-    
-![Schermata della finestra di PowerShell che indica che l'accesso al gruppo Guest è stato impostato su false.](../../media/09ebfb4f-859f-44c3-a29e-63a59fd6ef87.png)
-  
-## <a name="allow-or-block-guest-access-based-on-their-domain"></a>Consenti o blocca l'accesso guest in base al dominio
-
-È possibile autorizzare o bloccare utenti guest che utilizzano uno specifico dominio. Ad esempio, se la propria azienda (contoso) ha una partnership con un'altra azienda (Fabrikam), è possibile aggiungere Fabrikam all'elenco Consenti in modo che gli utenti possano aggiungerli ai propri gruppi.
-
-Per ulteriori informazioni, vedere [Consenti o blocca gli inviti agli utenti B2B provenienti da organizzazioni specifiche](https://docs.microsoft.com/azure/active-directory/b2b/allow-deny-list).
-
-## <a name="add-guests-to-the-global-address-list"></a>Aggiungere gli ospiti all'elenco indirizzi globale
-
-Per impostazione predefinita, gli utenti non sono visibili nell'elenco indirizzi globale di Exchange. Utilizzare la procedura riportata di seguito per rendere visibile un ospite nell'elenco indirizzi globale. Verificare che l'ospite sia visibile nell'interfaccia di amministrazione di Exchange Online. Dopo che sono stati aggiunti nuovi clienti, è possibile che venga visualizzato un breve periodo di tempo.
-
-Individuare l'ObjectID dell'utente Guest eseguendo:
-
-```PowerShell
-Get-AzureADUser -Filter "userType eq 'Guest'"
-```
-
-Eseguire quindi il comando seguente utilizzando i valori corretti per ObjectID, DATENAME, cognome, DisplayName e TelephoneNumber.
-
-```PowerShell
-Set-AzureADUser -ObjectId cfcbd1a0-ed18-4210-9b9d-cf0ba93cf6b2 -ShowInAddressList $true -GivenName 'Megan' -Surname 'Bowen' -DisplayName 'Megan Bowen' -TelephoneNumber '555-555-5555'
-```
-
-## <a name="related-articles"></a>Articoli correlati
+[Bloccare gli utenti Guest da un gruppo specifico](https://docs.microsoft.com/microsoft-365/solutions/per-group-guest-access)
 
 [Gestire l'appartenenza ai gruppi nell'interfaccia di amministrazione di Microsoft 365](add-or-remove-members-from-groups.md)
   

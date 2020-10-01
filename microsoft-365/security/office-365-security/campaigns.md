@@ -17,12 +17,12 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Informazioni su Visualizzazione campagne in Office 365 Advanced Threat Protection.
-ms.openlocfilehash: 881dcde1157877eb015d9700bcbcd08fd3336192
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: df3b3c7a0e8d8f614e5f743b445af07916f1dfd5
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48203480"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48326592"
 ---
 # <a name="campaign-views-in-office-365-atp"></a>Visualizzazione campagne in Office 365 ATP
 
@@ -137,7 +137,7 @@ Le proprietà della campagna disponibili sono descritte nell'elenco seguente:
   - **Tag**
   - **Sostituzioni del sistema**
 
-- Impostazioni avanzate
+- Avanzate
 
   - **ID messaggio Internet**: disponibile nel campo di intestazione **Message-ID** nell'intestazione del messaggio. Un valore di esempio è `<08f1e0f6806a47b4ac103961109ae6ef@server.domain>` (si notino le parentesi angolari).
   
@@ -264,9 +264,9 @@ Se un utente ha fatto clic sull'URL payload nel messaggio di phishing, le azioni
 
 - **Consentito**
 
-- **BlockPage**: il destinatario ha fatto clic sull'URL payload, ma l'accesso al sito Web dannoso è stato bloccato dai criteri dei [collegamenti sicuri ATP](atp-safe-links.md) nell'organizzazione.
+- **BlockPage**: il destinatario ha fatto clic sull'URL payload, ma l'accesso al sito Web dannoso è stato bloccato da un criterio [collegamenti sicuri](atp-safe-links.md) nell'organizzazione.
 
-- **BlockPageOverride**: il destinatario ha fatto clic sull'URL del payload nel messaggio, i collegamenti sicuri di ATP hanno provato a arrestarli, ma sono stati autorizzati a eseguire l'override del blocco. Esaminare i [criteri dei collegamenti sicuri](set-up-atp-safe-links-policies.md) per individuare il motivo per cui gli utenti possono ignorare il verdetto relativo ai collegamenti sicuri e continuare con il sito Web dannoso.
+- **BlockPageOverride**: il destinatario ha fatto clic sull'URL payload nel messaggio, i collegamenti sicuri hanno tentato di arrestarli, ma sono stati autorizzati a eseguire l'override del blocco. Esaminare i [criteri dei collegamenti sicuri](set-up-atp-safe-links-policies.md) per individuare il motivo per cui gli utenti possono ignorare il verdetto relativo ai collegamenti sicuri e continuare con il sito Web dannoso.
 
 - **PendingDetonationPage**: allegati sicuri in Office 365 ATP è in fase di apertura e analisi dell'URL di payload in un ambiente computer virtuale.
 

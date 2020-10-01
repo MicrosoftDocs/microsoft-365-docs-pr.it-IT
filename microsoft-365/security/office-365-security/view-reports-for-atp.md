@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Trovare e utilizzare i report per Office 365 Advanced Threat Protection nel centro sicurezza e &amp; conformità.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 90da02c8aa3d50f62bdf4be8c466962da828b23d
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 16fef101f722a23b3a64d91c85c2f946c67036f0
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48196586"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48328035"
 ---
 # <a name="view-reports-for-office-365-advanced-threat-protection"></a>Visualizzare i report per Office 365 Advanced Threat Protection
 
@@ -36,7 +36,7 @@ Le organizzazioni di Office 365 Advanced Threat Protection (ATP) (ad esempio, gl
 
 ## <a name="advanced-threat-protection-file-types-report"></a>Report sui tipi di file di protezione avanzata delle minacce
 
-Il rapporto sui **tipi di file Advanced Threat Protection** report Visualizza il tipo di file rilevati come dannosi per gli [allegati sicuri di ATP](atp-safe-attachments.md).
+Il rapporto **report sui tipi di file di protezione avanzata delle minacce** indica il tipo di file che sono stati rilevati come dannosi dagli [allegati sicuri](atp-safe-attachments.md).
 
  La visualizzazione aggregazione del report consente 90 giorni di filtraggio, mentre la visualizzazione dettagli consente solo 10 giorni di filtraggio.
 
@@ -62,7 +62,7 @@ Sono disponibili le visualizzazioni seguenti:
   - **Allegati eseguibili dannosi**
   - **Altri**
 
-  Quando si posiziona il puntatore del mouse su un determinato giorno (punto dati), è possibile visualizzare la ripartizione dei tipi di file dannosi rilevati dagli [allegati sicuri di ATP](atp-safe-attachments.md) e dalla [protezione antimalware in EOP](anti-malware-protection.md).
+  Quando si posiziona il puntatore del mouse su un determinato giorno (punto dati), è possibile visualizzare la ripartizione dei tipi di file dannosi rilevati dagli [allegati sicuri](atp-safe-attachments.md) e dalla [protezione antimalware in EOP](anti-malware-protection.md).
 
   ![Visualizzazione file nel rapporto tipi di file ATP](../../media/atp-file-types-report-file-view.png)
 
@@ -76,7 +76,7 @@ Sono disponibili le visualizzazioni seguenti:
   - **Blocca accesso**
   - **Messaggi sostituiti**
   - **Messaggi monitorati**
-  - **Sostituito da un recapito dinamico della posta elettronica**: per ulteriori informazioni, vedere [Dynamic Delivery and outviewing with ATP Safe Attachments](dynamic-delivery-and-previewing.md).
+  - **Sostituito dal recapito dinamico della posta elettronica**: per ulteriori informazioni, vedere [Dynamic Delivery in Safe Attachment Policies](atp-safe-attachments.md#dynamic-delivery-in-safe-attachments-policies).
 
   ![Visualizzazione dei messaggi nel rapporto tipi di file ATP](../../media/atp-file-types-report-message-view.png)
 
@@ -138,7 +138,7 @@ Sono disponibili le visualizzazioni seguenti:
   - **Blocca accesso**
   - **Messaggi sostituiti**
   - **Messaggi monitorati**
-  - **Sostituito da un recapito dinamico della posta elettronica**: per ulteriori informazioni, vedere [Dynamic Delivery and outviewing with ATP Safe Attachments](dynamic-delivery-and-previewing.md).
+  - **Sostituito dal recapito dinamico della posta elettronica**: per ulteriori informazioni, vedere [Dynamic Delivery in Safe Attachment Policies](atp-safe-attachments.md#dynamic-delivery-in-safe-attachments-policies).
 
   ![Visualizzazione dei messaggi nel rapporto tipi di file ATP](../../media/atp-file-types-report-message-view.png)
 
@@ -158,7 +158,7 @@ Sono disponibili le visualizzazioni seguenti:
   - **Allegati eseguibili dannosi**
   - **Altri**
 
-  Quando si posiziona il puntatore del mouse su un determinato giorno (punto dati), è possibile visualizzare la ripartizione dei tipi di file dannosi rilevati dagli [allegati sicuri di ATP](atp-safe-attachments.md) e dalla [protezione antimalware in EOP](anti-malware-protection.md).
+  Quando si posiziona il puntatore del mouse su un determinato giorno (punto dati), è possibile visualizzare la ripartizione dei tipi di file dannosi rilevati dagli [allegati sicuri](atp-safe-attachments.md) e dalla [protezione antimalware in EOP](anti-malware-protection.md).
 
   ![Visualizzazione file nel rapporto tipi di file ATP](../../media/atp-file-types-report-file-view.png)
 
@@ -206,7 +206,7 @@ Il rapporto **sullo stato della protezione dalle minacce** è una singola visual
 
 ## <a name="url-threat-protection-report"></a>Report sulla protezione dalle minacce URL
 
-Il **rapporto di protezione** da minacce URL fornisce le visualizzazioni di riepilogo e di tendenza per i rischi rilevati e le azioni eseguite nei clic URL come parte dei [collegamenti sicuri di ATP](atp-safe-links.md). Questo report non displicherà i dati da parte degli utenti a cui è stato applicato il criterio collegamenti sicuri ha l'opzione non **registrare i clic utente** selezionati.
+Il **rapporto di protezione** per gli URL fornisce visualizzazioni di riepilogo e di tendenza per le minacce rilevate e le azioni eseguite su clic URL come parte dei [collegamenti sicuri](atp-safe-links.md). Questo report non displicherà i dati da parte degli utenti a cui è stato applicato il criterio collegamenti sicuri ha l'opzione non **registrare i clic utente** selezionati.
 
 Per visualizzare il report, aprire il [Centro sicurezza & conformità](https://protection.office.com), accedere al **Reports** \> **Dashboard** report e selezionare **rapporto protezione URL**. Per passare direttamente al report, aprire <https://protection.office.com/reportv2?id=URLProtectionActionReport> .
 
@@ -234,7 +234,7 @@ Il report di **protezione dalle minacce URL** contiene due visualizzazioni aggre
 
   ![URL fare clic su Protection Action View nel rapporto di protezione delle minacce URL](../../media/url-threat-protection-report-url-click-protection-action-view.png)
 
-- **URL fare clic su applicazione**: consente di visualizzare il numero di clic URL per le applicazioni che supportano i collegamenti sicuri di Office 365 ATP:
+- **URL fare clic su applicazione**: consente di visualizzare il numero di clic URL da applicazioni che supportano collegamenti sicuri:
 
   - **Client di posta elettronica**
   - **PowerPoint**
@@ -275,7 +275,7 @@ Oltre ai report ATP descritti in questo argomento, sono disponibili diversi altr
 |**Explorer** (ATP piano 2) o **rilevamenti in tempo reale** (ATP piano 1)|[Esplora minacce (e rilevamenti in tempo reale)](threat-explorer.md)|
 |Report di **protezione della posta elettronica**, ad esempio il report mittenti e destinatari principali, il report di posta indesiderata e il rapporto rilevamenti di spam.|[Visualizzare i report sulla sicurezza della posta elettronica nel Centro sicurezza e conformità](view-email-security-reports.md)|
 |**Rapporti sul flusso di posta**, ad esempio il rapporto di inoltro, il rapporto sullo stato del flusso di messaggi e il report mittenti e destinatari principali.|[Visualizzare i report sul flusso di posta elettronica nel centro sicurezza & Compliance](view-mail-flow-reports.md)|
-|**Traccia URL per i collegamenti sicuri di ATP** (solo PowerShell). L'output di questo cmdlet consente di visualizzare i risultati delle azioni di collegamenti sicuri ATP negli ultimi sette giorni.|[Get-UrlTrace](https://docs.microsoft.com/powershell/module/exchange/get-urltrace)|
+|**Traccia URL per i collegamenti sicuri** (solo PowerShell). L'output di questo cmdlet consente di visualizzare i risultati delle azioni relative ai collegamenti sicuri negli ultimi sette giorni.|[Get-UrlTrace](https://docs.microsoft.com/powershell/module/exchange/get-urltrace)|
 |**Risultati del traffico di posta elettronica per EOP e ATP** (solo PowerShell). L'output di questo cmdlet contiene informazioni sul dominio, la data, il tipo di evento, la direzione, l'azione e il numero di messaggi.|[Get-MailTrafficATPReport](https://docs.microsoft.com/powershell/module/exchange/get-mailtrafficatpreport)|
 |**Report Dettagli posta per i rilevamenti di EOP e ATP** (solo PowerShell). L'output di questo cmdlet contiene informazioni dettagliate su file o URL dannosi, tentativi di phishing, rappresentazione e altre potenziali minacce nei messaggi di posta elettronica o nei file.|[Get-MailDetailATPReport](https://docs.microsoft.com/powershell/module/exchange/get-maildetailatpreport)|
 |
@@ -306,7 +306,7 @@ Per altre informazioni, vedere le risorse seguenti:
 
 ## <a name="what-if-the-reports-arent-showing-data"></a>Cosa succede se i rapporti non mostrano dati?
 
-Se i dati non vengono visualizzati nei rapporti ATP, verificare che i criteri siano configurati correttamente. L'organizzazione deve disporre di [criteri dei collegamenti sicuri ATP](set-up-atp-safe-links-policies.md) e di criteri per gli [allegati sicuri ATP](set-up-atp-safe-attachments-policies.md) definiti in modo che la protezione da ATP sia sul posto. Vedere anche [protezione da posta indesiderata e anti-malware in Office 365](anti-spam-and-anti-malware-protection.md).
+Se i dati non vengono visualizzati nei rapporti ATP, verificare che i criteri siano configurati correttamente. L'organizzazione deve disporre di criteri per i [collegamenti sicuri](set-up-atp-safe-links-policies.md) e di [criteri degli allegati sicuri](set-up-atp-safe-attachments-policies.md) definiti in modo che la protezione ATP sia sul posto. Vedere anche [protezione dalla posta indesiderata e anti-malware](anti-spam-and-anti-malware-protection.md).
 
 ## <a name="related-topics"></a>Argomenti correlati
 

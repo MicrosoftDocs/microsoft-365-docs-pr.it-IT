@@ -16,17 +16,16 @@ ms.assetid: 6f64f2de-d626-48ed-8084-03cc72301aa4
 ms.collection:
 - M365-security-compliance
 description: Quali sono le procedure consigliate per le impostazioni di sicurezza di Exchange Online Protection (EOP) e Advanced Threat Protection (ATP)? Quali sono le raccomandazioni aggiornate per la protezione standard? Che cosa dovrebbe essere utilizzato se si desidera essere più severi? Quali sono gli extra che si ottengono se si utilizza anche Advanced Threat Protection (ATP)?
-ms.openlocfilehash: 78dc1673d20affdfab9228883dbce3b08e8efbb5
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 012bccb265f6b587176eec8f8bed94ce4bf4f211
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48202712"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48328027"
 ---
 # <a name="recommended-settings-for-eop-and-office-365-atp-security"></a>Impostazioni consigliate per la sicurezza ATP di EOP e Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
-
 
 **Exchange Online Protection (EOP)** è il fulcro della sicurezza per le sottoscrizioni di Microsoft 365 e consente di evitare che i messaggi di posta elettronica dannosi raggiungano la posta in arrivo del dipendente. Tuttavia, con attacchi nuovi e sofisticati che emergono ogni giorno, sono spesso necessarie protezioni migliorate. **Office 365 Advanced Threat Protection (ATP)** ATP piano 1 o ATP piano 2 contengono funzionalità aggiuntive che forniscono agli amministratori più livelli di sicurezza, controllo ed indagini.
 
@@ -52,7 +51,7 @@ Per creare e configurare criteri di protezione dalla posta indesiderata, vedere 
 
 ****
 
-|Nome della funzionalità di sicurezza|Standard|Rigorosa|Comment|
+|Nome della funzionalità di sicurezza|Standard|Rigorosa|Aggiungere commenti|
 |---|---|---|---|
 |Azione di rilevamento della **posta indesiderata** <br/><br/> _SpamAction_|**Sposta messaggio nella cartella Posta indesiderata** <br/><br/> `MoveToJmf`|**Metti in quarantena messaggio** <br/><br/> `Quarantine`||
 |Azione di rilevamento di **posta indesiderata con elevata sicurezza** <br/><br/> _HighConfidenceSpamAction_|**Metti in quarantena messaggio** <br/><br/> `Quarantine`|**Metti in quarantena messaggio** <br/><br/> `Quarantine`||
@@ -79,7 +78,7 @@ Si **consiglia di disattivare queste impostazioni ASF** sia per i livelli **stan
 
 ****
 
-|Nome della funzionalità di sicurezza|Comment|
+|Nome della funzionalità di sicurezza|Aggiungere commenti|
 |---|---|
 |**Collegamenti di immagini a siti remoti** (_IncreaseScoreWithImageLinks_)||
 |**Indirizzo IP numerico in URL** (_IncreaseScoreWithNumericIps_)||
@@ -106,7 +105,7 @@ Per ulteriori informazioni sui limiti di invio predefiniti nel servizio, vedere 
 
 ****
 
-|Nome della funzionalità di sicurezza|Standard|Rigorosa|Comment|
+|Nome della funzionalità di sicurezza|Standard|Rigorosa|Aggiungere commenti|
 |---|---|---|---|
 |**Numero massimo di destinatari per utente: limite orario esterno** <br/><br/> _RecipientLimitExternalPerHour_|500|400||
 |**Numero massimo di destinatari per utente: limite orario interno** <br/><br/> _RecipientLimitInternalPerHour_|1000|800||
@@ -120,7 +119,7 @@ Per creare e configurare criteri anti-malware, vedere [Configure anti-malware Po
 
 ****
 
-|Nome della funzionalità di sicurezza|Standard|Rigorosa|Comment|
+|Nome della funzionalità di sicurezza|Standard|Rigorosa|Aggiungere commenti|
 |---|---|---|---|
 |**Si desidera inviare una notifica ai destinatari se i messaggi vengono messi in quarantena?** <br/><br/> _Azione_|No <br/><br/> _DeleteMessage_|No <br/><br/> _DeleteMessage_|Se il malware viene rilevato in un allegato di posta elettronica, il messaggio viene messo in quarantena e può essere rilasciato solo da un amministratore.|
 |**Filtro di tipi di allegati comuni** <br/><br/> _EnableFileFilter_|Attivato <br/><br/> `$true`|Attivato <br/><br/> `$true`|Questa impostazione mette in quarantena i messaggi che contengono allegati eseguibili in base al tipo di file, indipendentemente dal contenuto degli allegati.|
@@ -135,7 +134,7 @@ Per ulteriori informazioni su queste impostazioni, vedere [spoofing Settings](se
 
 ****
 
-|Nome della funzionalità di sicurezza|Standard|Rigorosa|Comment|
+|Nome della funzionalità di sicurezza|Standard|Rigorosa|Aggiungere commenti|
 |---|---|---|---|
 |**Abilitare la protezione anti-spoofing** <br/><br/> _EnableAntispoofEnforcement_|Attivato <br/><br/> `$true`|Attivato <br/><br/> `$true`||
 |**Abilitazione del mittente non autenticato** <br/><br/> _EnableUnauthenticatedSender_|Attivato <br/><br/> `$true`|Attivato <br/><br/> `$true`|Aggiunge un punto interrogativo (?) alla foto del mittente in Outlook per i mittenti non identificati falsificati. Per ulteriori informazioni, vedere [spoofing Settings in anti-phishing Policies](set-up-anti-phishing-policies.md).|
@@ -153,7 +152,7 @@ Office 365 ATP include i criteri per i collegamenti sicuri e gli allegati sicuri
 
 Se è stata aggiunta una sottoscrizione di Office 365 ATP all'EOP, impostare le configurazioni seguenti.
 
-### <a name="office-atp-anti-phishing-policy-settings"></a>Impostazioni dei criteri di anti-phishing di Office ATP
+### <a name="atp-anti-phishing-policy-settings"></a>Impostazioni dei criteri di anti-phishing ATP
 
 I clienti di EOP ottengono un anti-phishing di base come descritto in precedenza, ma Office 365 ATP include altre funzionalità e controlli che consentono di prevenire, rilevare e correggere gli attacchi. Per creare e configurare questi criteri, vedere [configurare i criteri di anti-phishing ATP in Office 365](configure-atp-anti-phishing-policies.md).
 
@@ -163,7 +162,7 @@ Per ulteriori informazioni su queste impostazioni, vedere [impostazioni di rappr
 
 ****
 
-|Nome della funzionalità di sicurezza|Standard|Rigorosa|Comment|
+|Nome della funzionalità di sicurezza|Standard|Rigorosa|Aggiungere commenti|
 |---|---|---|---|
 |Utenti protetti: **aggiungere utenti a Protect** <br/><br/> _È impostato enabletargeteduserprotection_ <br/><br/> _TargetedUsersToProtect_|Attivato <br/><br/> `$true` <br/><br/> \<list of users\>|Attivato <br/><br/> `$true` <br/><br/> \<list of users\>|Dipende dall'organizzazione, ma è consigliabile aggiungere gli utenti nei ruoli chiave. Internamente, potrebbe trattarsi del CEO, del CFO e di altri leader senior. Esternamente, questi potrebbero includere i membri del Consiglio o il Consiglio di amministrazione.|
 |Domini protetti: **includono automaticamente i domini che possiedo** <br/><br/> _EnableOrganizationDomainsProtection_|Attivato <br/><br/> `$true`|Attivato <br/><br/> `$true`||
@@ -186,7 +185,7 @@ Si noti che si tratta delle stesse impostazioni disponibili nelle impostazioni d
 
 ****
 
-|Nome della funzionalità di sicurezza|Standard|Rigorosa|Comment|
+|Nome della funzionalità di sicurezza|Standard|Rigorosa|Aggiungere commenti|
 |---|---|---|---|
 |**Abilitare la protezione anti-spoofing** <br/><br/> _EnableAntispoofEnforcement_|Attivato <br/><br/> `$true`|Attivato <br/><br/> `$true`||
 |**Abilitazione del mittente non autenticato** <br/><br/> _EnableUnauthenticatedSender_|Attivato <br/><br/> `$true`|Attivato <br/><br/> `$true`|Aggiunge un punto interrogativo (?) alla foto del mittente in Outlook per i mittenti non identificati falsificati. Per ulteriori informazioni, vedere [spoofing Settings in anti-phishing Policies](set-up-anti-phishing-policies.md).|
@@ -199,35 +198,39 @@ Per ulteriori informazioni su questa impostazione, vedere [Advanced phishing Thr
 
 ****
 
-|Nome della funzionalità di sicurezza|Standard|Rigorosa|Comment|
+|Nome della funzionalità di sicurezza|Standard|Rigorosa|Aggiungere commenti|
 |---|---|---|---|
 |**Soglie di phishing avanzate** <br/><br/> _PhishThresholdLevel_|**2-aggressivo** <br/><br/> `2`|**3-maggiore aggressività** <br/><br/> `3`||
 
-### <a name="atp-safe-links-policy-settings"></a>Impostazioni di criteri per i collegamenti sicuri ATP
+### <a name="safe-links-settings"></a>Impostazioni collegamenti attendibili
 
-Per configurare queste impostazioni, vedere [configurare i criteri per i collegamenti sicuri ATP di Office 365](set-up-atp-safe-links-policies.md).
+Collegamenti sicuri in Office 365 ATP sono incluse le impostazioni globali che si applicano a tutti gli utenti inclusi nei criteri dei collegamenti sicuri attivi e le impostazioni specifiche di ogni criterio dei collegamenti sicuri. Per ulteriori informazioni, vedere [collegamenti sicuri in Office 365 ATP](atp-safe-links.md).
 
-#### <a name="safe-links-policy-settings-in-the-default-policy-for-all-users"></a>Impostazioni dei criteri collegamenti sicuri nel criterio predefinito per tutti gli utenti
+#### <a name="global-settings-for-safe-links"></a>Impostazioni globali per i collegamenti sicuri
 
-**Nota**: in PowerShell, è possibile utilizzare il cmdlet [set-AtpPolicyForO365](https://docs.microsoft.com/powershell/module/exchange/set-atppolicyforo365) per queste impostazioni.
+Per configurare queste impostazioni, vedere [Configure Global Settings for Safe Links in Office 365 ATP](configure-global-settings-for-safe-links.md).
+
+In PowerShell, è possibile utilizzare il cmdlet [set-AtpPolicyForO365](https://docs.microsoft.com/powershell/module/exchange/set-atppolicyforo365) per queste impostazioni.
 
 ****
 
-|Nome della funzionalità di sicurezza|Standard|Rigorosa|Comment|
+|Nome della funzionalità di sicurezza|Standard|Rigorosa|Aggiungere commenti|
 |---|---|---|---|
-|**Utilizzare collegamenti sicuri in: applicazioni di Office 365** <br/><br/> _EnableSafeLinksForO365Clients_|Attivato <br/><br/> `$true`|Attivato <br/><br/> `$true`|Usare i collegamenti sicuri di ATP nei client desktop e mobili (iOS e Android) di Office 365.|
-|**Utilizzare collegamenti sicuri in: Office Web Access Companions** <br/><br/> _EnableSafeLinksForWebAccessCompanion_|Attivato <br/><br/> `$true`|Attivato <br/><br/> `$true`|Usare i collegamenti sicuri di ATP in Office Web Apps. Si noti che questa impostazione non è configurabile.|
-|**Non monitorare quando gli utenti fanno clic su collegamenti sicuri** <br/><br/> _TrackClicks_|Off <br/><br/> `$true`|Off <br/><br/> `$true`||
-|**Non consentire agli utenti di fare clic su collegamenti sicuri all'URL originale** <br/><br/> _AllowClickThrough_|Attivato <br/><br/> `$false`|Attivato <br/><br/> `$false`||
+|**Utilizzare collegamenti sicuri in: applicazioni di Office 365** <br/><br/> _EnableSafeLinksForO365Clients_|Attivato <br/><br/> `$true`|Attivato <br/><br/> `$true`|Usare i collegamenti sicuri di ATP nelle app desktop e mobili (iOS e Android) supportate di Office 365. Per ulteriori informazioni, vedere [impostazioni dei collegamenti sicuri per le app di Office 365](atp-safe-links.md#safe-links-settings-for-office-365-apps).|
+|**Non monitorare quando gli utenti fanno clic su collegamenti sicuri** <br/><br/> _TrackClicks_|Off <br/><br/> `$true`|Off <br/><br/> `$true`|Questa impostazione è correlata alla verifica dei clic degli utenti nelle app di Office 365 supportate.|
+|**Non consentire agli utenti di fare clic su collegamenti sicuri all'URL originale** <br/><br/> _AllowClickThrough_|Attivato <br/><br/> `$false`|Attivato <br/><br/> `$false`|Questa impostazione è correlata a fare clic su di esso nelle app di Office 365 supportate.|
+|Utilizzare collegamenti sicuri in: Office Web Access Companions <br/><br/> _EnableSafeLinksForWebAccessCompanion_|Attivato <br/><br/> `$true`|Attivato <br/><br/> `$true`|Utilizzare collegamenti sicuri in Office Web Apps. Si noti che questa impostazione non è configurabile.|
 |
 
-#### <a name="safe-links-policy-settings-in-custom-policies-for-specific-users"></a>Impostazioni dei criteri collegamenti sicuri nei criteri personalizzati per utenti specifici
+#### <a name="safe-links-policy-settings"></a>Impostazioni per i criteri collegamenti sicuri
 
-**Nota**: in PowerShell, è possibile utilizzare i cmdlet [New-SafeLinksPolicy](https://docs.microsoft.com/powershell/module/exchange/new-safelinkspolicy) e [set-SafeLinksPolicy](https://docs.microsoft.com/powershell/module/exchange/set-safelinkspolicy) per queste impostazioni.
+Per configurare queste impostazioni, vedere Configurare i [criteri dei collegamenti sicuri in Office 365 ATP](set-up-atp-safe-links-policies.md).
+
+In PowerShell, è possibile utilizzare i cmdlet [New-SafeLinksPolicy](https://docs.microsoft.com/powershell/module/exchange/new-safelinkspolicy) e [set-SafeLinksPolicy](https://docs.microsoft.com/powershell/module/exchange/set-safelinkspolicy) per queste impostazioni.
 
 ****
 
-|Nome della funzionalità di sicurezza|Standard|Rigorosa|Comment|
+|Nome della funzionalità di sicurezza|Standard|Rigorosa|Aggiungere commenti|
 |---|---|---|---|
 |**Selezionare l'azione per gli URL potenzialmente dannosi sconosciuti nei messaggi** <br/><br/> _Proprietà IsEnabled_|Attivato <br/><br/> `$true`|Attivato <br/><br/> `$true`||
 |**Selezionare l'azione per gli URL sconosciuti o potenzialmente dannosi all'interno di Microsoft Teams** <br/><br/> _EnableSafeLinksForTeams_|Attivato <br/><br/> `$true`|Attivato <br/><br/> `$true`||
@@ -238,30 +241,34 @@ Per configurare queste impostazioni, vedere [configurare i criteri per i collega
 |**Non consentire agli utenti di fare clic su collegamenti sicuri all'URL originale** <br/><br/> _DoNotAllowClickThrough_|Attivato <br/><br/> `$true`|Attivato <br/><br/> `$true`||
 |
 
-### <a name="atp-safe-attachments-policy-settings"></a>Impostazioni di criteri per gli allegati sicuri ATP
+### <a name="safe-attachments-settings"></a>Impostazioni degli allegati sicuri
 
-Per configurare queste impostazioni, vedere Configurare i criteri per gli [allegati sicuri ATP di Office 365](set-up-atp-safe-attachments-policies.md).
+Allegati sicuri in Office 365 ATP sono incluse le impostazioni globali che si applicano a tutti gli utenti inclusi nei criteri allegati sicuri attivi e le impostazioni specifiche per ogni criterio di collegamenti sicuri. Per ulteriori informazioni, vedere [Safe Attachments in Office 365 ATP](atp-safe-attachments.md).
 
-#### <a name="safe-attachments-policy-settings-in-the-default-policy-for-all-users"></a>Impostazioni dei criteri allegati sicuri nel criterio predefinito per tutti gli utenti
+#### <a name="global-settings-for-safe-attachments"></a>Impostazioni globali per gli allegati sicuri
 
-**Nota**: in PowerShell, è possibile utilizzare il cmdlet [set-AtpPolicyForO365](https://docs.microsoft.com/powershell/module/exchange/set-atppolicyforo365) per queste impostazioni.
+Per configurare queste impostazioni, vedere [abilitare ATP per SharePoint, OneDrive e Microsoft teams](turn-on-atp-for-spo-odb-and-teams.md) e [documenti attendibili in Microsoft 365 E5](safe-docs.md).
+
+In PowerShell, è possibile utilizzare il cmdlet [set-AtpPolicyForO365](https://docs.microsoft.com/powershell/module/exchange/set-atppolicyforo365) per queste impostazioni.
 
 ****
 
-|Nome della funzionalità di sicurezza|Standard|Rigorosa|Comment|
+|Nome della funzionalità di sicurezza|Standard|Rigorosa|Aggiungere commenti|
 |---|---|---|---|
 |**Attivare ATP per SharePoint, OneDrive e Microsoft Teams** <br/><br/> _EnableATPForSPOTeamsODB_|Attivato <br/><br/> `$true`|Attivato <br/><br/> `$true`||
 |**Attivazione di documenti attendibili per i client di Office**<bt/><br/> _EnableSafeDocs_|Attivato <br/><br/> `$true`|Attivato <br/><br/> `$true`||Questa impostazione è disponibile solo con le licenze di sicurezza Microsoft 365 E5 o Microsoft 365 E5. Per ulteriori informazioni, vedere [documenti attendibili in Office 365 Advanced Threat Protection](safe-docs.md).|
-|**Consenti agli utenti di fare clic su una visualizzazione protetta anche se i documenti attendibili hanno identificato il file come dannoso**<bt/><br/> _AllowSafeDocsOpen_|Off <br/><br/> `$false`|Off <br/><br/> `$false`||
+|**Consenti agli utenti di fare clic su una visualizzazione protetta anche se i documenti attendibili hanno identificato il file come dannoso**<bt/><br/> _AllowSafeDocsOpen_|Off <br/><br/> `$false`|Off <br/><br/> `$false`|Questa impostazione è correlata ai documenti attendibili.|
 |
 
-#### <a name="safe-attachments-policy-settings-in-custom-policies-for-specific-users"></a>Impostazioni dei criteri allegati sicuri nei criteri personalizzati per utenti specifici
+#### <a name="safe-attachments-policy-settings"></a>Impostazioni di criteri per gli allegati sicuri
 
-**Nota**: in PowerShell, è possibile utilizzare i cmdlet [New-SafeAttachmentPolicy](https://docs.microsoft.com/powershell/module/exchange/new-safeattachmentpolicy) e [set-SafeAttachmentPolicy](https://docs.microsoft.com/powershell/module/exchange/set-safelinkspolicy) per queste impostazioni.
+Per configurare queste impostazioni, vedere Configurare i criteri per gli [allegati sicuri in Office 365 ATP](set-up-atp-safe-attachments-policies.md).
+
+In PowerShell, è possibile utilizzare i cmdlet [New-SafeAttachmentPolicy](https://docs.microsoft.com/powershell/module/exchange/new-safeattachmentpolicy) e [set-SafeAttachmentPolicy](https://docs.microsoft.com/powershell/module/exchange/set-safelinkspolicy) per queste impostazioni.
 
 ****
 
-|Nome della funzionalità di sicurezza|Standard|Rigorosa|Comment|
+|Nome della funzionalità di sicurezza|Standard|Rigorosa|Aggiungere commenti|
 |---|---|---|---|
 |**Risposta malware per gli allegati sicuri sconosciuta** <br/><br/> _Azione_|Blocca <br/><br/> `Block`|Blocca <br/><br/> `Block`||
 |**Redirect Attachment on Detection** : **Enable redirect** <br/><br/> _Reindirizza_ <br/><br/> _RedirectAddress_|E specificare un indirizzo di posta elettronica. <br/><br/> `$true` <br/><br/> un indirizzo di posta elettronica|E specificare un indirizzo di posta elettronica. <br/><br/> `$true` <br/><br/> un indirizzo di posta elettronica|Reindirizzare i messaggi a un amministratore della sicurezza per la revisione.|

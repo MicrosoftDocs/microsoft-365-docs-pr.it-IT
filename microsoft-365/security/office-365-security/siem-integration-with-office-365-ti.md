@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Integrare il server SIEM dell'organizzazione con Office 365 Advanced Threat Protection e gli eventi relativi alle minacce correlati nell'API di gestione delle attività di Office 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: cfb76485fec8eca2f2b62da59fa2d18a56177bba
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 544093960570fe0e68ac47dc7bf9965fba2d30a1
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48203653"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48327166"
 ---
 # <a name="siem-integration-with-advanced-threat-protection"></a>Integrazione di SIEM con Advanced Threat Protection
 
@@ -46,7 +46,6 @@ Recentemente, gli eventi provenienti da indagini automatizzate e funzionalità d
 
 Il server SIEM o un altro sistema analogo esegue il polling del **controllo.** carico di lavoro generale per accedere agli eventi di rilevamento. Per ulteriori informazioni, vedere [Introduzione a Office 365 Management Apis](https://docs.microsoft.com/office/office-365-management-api/get-started-with-office-365-management-apis). 
 
-
 ## <a name="enum-auditlogrecordtype---type-edmint32"></a>Enum: AuditLogRecordType-Type: EDM. Int32
 
 ### <a name="auditlogrecordtype"></a>AuditLogRecordType
@@ -56,7 +55,7 @@ Nella tabella seguente sono riepilogati i valori di **AuditLogRecordType** rilev
 |Valore|Nome membro|Descrizione|
 |---|---|---|
 |28|ThreatIntelligence|Eventi di phishing e malware da Exchange Online Protection e Office 365 ATP.|
-|41|ThreatIntelligenceUrl|Collegamenti sicuri ATP Time-of-Block e Block override Events from Office 365 ATP.|
+|41|ThreatIntelligenceUrl|Collegamenti sicuri gli eventi Time-of-Block e Block override di Office 365 ATP.|
 |47|ThreatIntelligenceAtpContent|Eventi di phishing e malware per i file in SharePoint Online, OneDrive for business e Microsoft teams, da Office 365 ATP.|
 |64|Indagine|Eventi di analisi e di risposta automatizzati, ad esempio i dettagli dell'indagine e gli elementi rilevanti, da Office 365 ATP piano 2.|
 |

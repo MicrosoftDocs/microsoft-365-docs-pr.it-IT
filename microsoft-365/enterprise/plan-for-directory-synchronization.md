@@ -5,7 +5,7 @@ author: JoeDavies-MSFT
 manager: laurawi
 audience: Admin
 ms.topic: conceptual
-ms.date: 06/09/2020
+ms.date: 09/30/2020
 ms.service: o365-administration
 localization_priority: Normal
 f1.keywords:
@@ -19,16 +19,16 @@ search.appverid:
 - MET150
 ms.assetid: d3577c90-dda5-45ca-afb0-370d2889b10f
 description: Descrive la sincronizzazione della directory con Microsoft 365, la pulizia dei servizi di dominio Active Directory e lo strumento Azure Active Directory Connect.
-ms.openlocfilehash: 2d3161fb835073a22743ea4f3b00ac508479f0f2
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 02b594f9db02df7e855a20dfc65b21ab2dbe91c0
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46691205"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48327380"
 ---
 # <a name="hybrid-identity-and-directory-synchronization-for-microsoft-365"></a>Sincronizzazione della directory e dell'identità ibrida per Microsoft 365
 
-*Questo articolo può essere applicato sia a Microsoft 365 Enterprise che a Office 365 Enterprise.*
+*Questo articolo si applica sia a Microsoft 365 Enterprise che a Office 365 Enterprise*.
 
 A seconda delle esigenze aziendali e dei requisiti tecnici, il modello di identità ibrido e la sincronizzazione della directory rappresentano la scelta più comune per i clienti aziendali che stanno adottando Microsoft 365. La sincronizzazione della directory consente di gestire le identità nei servizi di dominio Active Directory e tutti gli aggiornamenti per gli account utente, i gruppi e i contatti vengono sincronizzati con il tenant Azure Active Directory (Azure AD) dell'abbonamento a Microsoft 365.
 
@@ -143,9 +143,5 @@ La sincronizzazione della directory è necessaria per le caratteristiche e le fu
 
 ## <a name="next-step"></a>Passaggio successivo
 
-Quando si è pronti per la distribuzione dell'identità ibrida, vedere [Prepare to provisioning Users](prepare-for-directory-synchronization.md).
+Quando si è pronti per la distribuzione dell'identità ibrida, vedere [Prepare for Directory Synchronization](prepare-for-directory-synchronization.md).
   
-## <a name="see-also"></a>Vedere anche
-
-[Panoramica di Microsoft 365 Enterprise](microsoft-365-overview.md)
-

@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Gli amministratori possono ottenere informazioni su come creare, modificare ed eliminare i criteri di anti-phishing avanzati disponibili nelle organizzazioni con Office 365 Advanced Threat Protection (Office 365 ATP).
-ms.openlocfilehash: a4b5dc5beac23e267f6b0e5070d91301b589ad4c
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 2986102b549b7302a7a4ac533f80846d832aeb41
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48203384"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48328072"
 ---
 # <a name="configure-atp-anti-phishing-policies"></a>Configurare i criteri anti-phishing ATP
 
@@ -57,7 +57,7 @@ Ogni organizzazione ATP di Office 365 ha un criterio anti-phishing incorporato d
 
 Per aumentare l'efficacia della protezione anti-phishing, è possibile creare criteri di anti-phishing ATP personalizzati con impostazioni più rigorose applicate a utenti o gruppi di utenti specifici.
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare
+## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare?
 
 - Aprire il Centro sicurezza e conformità in <https://protection.office.com/>. Per accedere direttamente alla pagina **anti-phishing ATP** , utilizzare <https://protection.office.com/antiphishing> .
 
@@ -75,7 +75,7 @@ Per aumentare l'efficacia della protezione anti-phishing, è possibile creare cr
     - **Lettore sicurezza** nel [Centro sicurezza e conformità](permissions-in-the-security-and-compliance-center.md).
     - **Gestione organizzazione in sola lettura** in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
 
-- Per le impostazioni consigliate per i criteri di anti-phishing ATP, vedere [Office ATP anti-phishing Policy Settings](recommended-settings-for-eop-and-office365-atp.md#office-atp-anti-phishing-policy-settings).
+- Per le impostazioni consigliate per i criteri di anti-phishing ATP, vedere [impostazioni dei criteri di anti-phishing ATP](recommended-settings-for-eop-and-office365-atp.md#atp-anti-phishing-policy-settings).
 
 - Consentire l'applicazione di un criterio nuovo o aggiornato fino a 30 minuti.
 

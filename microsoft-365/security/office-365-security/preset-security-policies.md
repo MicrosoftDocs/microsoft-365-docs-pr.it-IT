@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Gli amministratori possono ottenere informazioni su come applicare le impostazioni dei criteri standard e rigorosi nelle caratteristiche di protezione di Exchange Online Protection (EOP) e Office 365 Advanced Threat Protection (ATP)
-ms.openlocfilehash: 35be2b1ebfcf7ef8b7aad5cc2d4b3dd7032806b2
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 8431d36779069b0b289a2533fbd6b85abee24536
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48202604"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48326544"
 ---
 # <a name="preset-security-policies-in-eop-and-office-365-atp"></a>Criteri di sicurezza preimpostati in EOP e Office 365 ATP
 
@@ -75,9 +75,9 @@ I criteri di sicurezza preimpostati utilizzano i criteri corrispondenti delle di
     - [Impostazioni di rappresentazione](set-up-anti-phishing-policies.md#impersonation-settings-in-atp-anti-phishing-policies)
     - [Soglie di phishing avanzate](set-up-anti-phishing-policies.md#advanced-phishing-thresholds-in-atp-anti-phishing-policies)
 
-  - Criteri [collegamenti sicuri](recommended-settings-for-eop-and-office365-atp.md#safe-links-policy-settings-in-custom-policies-for-specific-users) denominati **criteri di sicurezza predefiniti standard** e **criteri di sicurezza preimpostati rigorosi**.
+  - Criteri [collegamenti sicuri](set-up-atp-safe-links-policies.md) denominati **criteri di sicurezza predefiniti standard** e **criteri di sicurezza preimpostati rigorosi**.
 
-  - Criteri [allegati sicuri](recommended-settings-for-eop-and-office365-atp.md#safe-attachments-policy-settings-in-custom-policies-for-specific-users) denominati criteri di **sicurezza predefiniti standard** e **criteri di sicurezza preimpostati rigorosi**.
+  - Criteri [allegati sicuri](set-up-atp-safe-attachments-policies.md) denominati criteri di **sicurezza predefiniti standard** e **criteri di sicurezza preimpostati rigorosi**.
 
 Si noti che è possibile applicare Protezioni di EOP a utenti diversi rispetto alle protezioni ATP.
 
@@ -98,7 +98,7 @@ In altre parole, le impostazioni dei criteri di **protezione rigorosi** sovrascr
 
 ## <a name="assign-preset-security-policies-to-users"></a>Assegnare criteri di sicurezza preimpostati agli utenti
 
-### <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare
+### <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare?
 
 - Aprire il Centro sicurezza e conformità in <https://protection.office.com/>. Per passare direttamente alla pagina **criteri di sicurezza preimpostati** , utilizzare <https://protection.office.com/presetSecurityPolicies> .
 

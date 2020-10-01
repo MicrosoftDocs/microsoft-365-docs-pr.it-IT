@@ -15,12 +15,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: 6d6562f528b36acdfbc28da9647d3356a0f585af
-ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
+ms.openlocfilehash: 3afc818f9461ad0cc5ca65ea86d5e90f61f64d9b
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48132159"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48327868"
 ---
 # <a name="policies-for-allowing-guest-and-external-b2b-access"></a>Criteri per consentire l'accesso all'ospite e all'esterno B2B
 
@@ -40,7 +40,7 @@ Per proteggere l'accesso guest e esterno con gli account di Azure AD B2B, nel di
 
 Nella tabella seguente sono elencati i criteri necessari per la creazione e l'aggiornamento. I criteri comuni collegano le istruzioni di configurazione associate nell'articolo [Common Identity and Device Access Policies](identity-access-policies.md) .
 
-|Livello di protezione|Criteri|Ulteriori informazioni|
+|Livello di protezione|Criteri|Altre informazioni|
 |:---------------|:-------|:----------------|
 |**Protezione di base**|[Richiedi sempre un master per utenti esterni e Guest](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Creare il nuovo criterio e configurare: <ul><li> Per le **assegnazioni > gli utenti e i gruppi > includono**, scegliere **Seleziona utenti e gruppi**, quindi selezionare **tutti gli utenti guest ed esterni**. </li><li> Per le **assegnazioni > condizioni > l'accesso**, lasciare deselezionate tutte le opzioni per applicare sempre l'autenticazione a più fattori (AMF).</li>|
 |        |[Richiedere l'AMF quando il rischio di accesso è *medio* o *elevato*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Modificare questo criterio per escludere gli utenti esterni e Guest.|
@@ -50,7 +50,7 @@ Per includere o escludere gli utenti guest ed esterni nei criteri di accesso con
 
 ![acquisizione dello schermo dei controlli per l'esclusione di utenti esterni e Guest](../media/microsoft-365-policies-configurations/identity-access-exclude-guests-ui.png)
 
-## <a name="more-information"></a>Ulteriori informazioni
+## <a name="more-information"></a>Altre informazioni
 
 ### <a name="guest-and-external-access-with-microsoft-teams"></a>Guest e accesso esterno con Microsoft Teams
 
@@ -60,21 +60,11 @@ Microsoft teams definisce quanto segue:
 
 - **L'accesso esterno** è per un utente esterno che non dispone di un account B2B. L'accesso esterno può includere gli inviti e la partecipazione a chiamate, chat e riunioni, ma non include l'appartenenza al team e l'accesso alle risorse del team.
 
-Per ulteriori informazioni, vedere [questo confronto tra Guest e accesso esterno per i team](https://docs.microsoft.com/microsoftteams/communicate-with-users-from-other-organizations#compare-external-and-guest-access).
+Per ulteriori informazioni, vedere il [confronto tra Guest e accesso esterno per i team](https://docs.microsoft.com/microsoftteams/communicate-with-users-from-other-organizations#compare-external-and-guest-access).
 
 I criteri di accesso condizionale si applicano solo all'accesso guest nei team perché è presente un account di Azure AD B2B corrispondente.
 
 Per ulteriori informazioni sulla protezione dei criteri di identità e accesso ai dispositivi per i team [, vedere consigli sui criteri per la protezione delle chat, dei gruppi e dei file del team](teams-access-policies.md) .
-
-<!--
-ount treats guest and external users that have an Azure AD B2B account differently than external access  .
-
-
-to a meeting, call, or chat with
-
-
-differentiates between guest users and external users within the app. Guest users have Azure AD B2B accounts and can be added to teams. External users can only participate in calls, chats, and meetings. 
---> 
 
 ### <a name="require-mfa-always-for-guest-and-external-users"></a>Richiedi sempre un master per utenti esterni e Guest
 Questo criterio richiede agli utenti di registrarsi per l'AMF nel tenant, indipendentemente dal fatto che siano registrati per l'AMF nel tenant di casa. Quando si accede alle risorse del tenant, è necessario che gli utenti guest e esterni utilizzino Mae per ogni richiesta. 

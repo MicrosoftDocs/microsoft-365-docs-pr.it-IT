@@ -12,12 +12,12 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: Gli amministratori possono imparare a identificare i motivi per cui e come è stato ottenuto un messaggio di phishing in Microsoft 365 e cosa fare per evitare ulteriori messaggi di phishing in futuro.
-ms.openlocfilehash: c62d09a1cf8b586b5c1d4393d7316d6d6d0cc96d
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 813a9c263d9cc620606c7a5e272e47bdaf1ff7a7
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48201676"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48328060"
 ---
 # <a name="tune-anti-phishing-protection"></a>Ottimizzare la protezione anti-phishing
 
@@ -32,11 +32,11 @@ Se l'account di un destinatario è stato compromesso a causa del messaggio di ph
 
 Se l'abbonamento include Advanced Threat Protection (ATP), è possibile utilizzare [Office 365 Threat Intelligence](office-365-ti.md) per identificare gli altri utenti che hanno ricevuto anche il messaggio di phishing. Sono disponibili altre opzioni per bloccare i messaggi di phishing:
 
-- [Collegamenti sicuri di ATP](set-up-atp-safe-links-policies.md)
+- [Collegamenti sicuri in Office 365 ATP](set-up-atp-safe-links-policies.md)
 
-- [Allegati sicuri di ATP](set-up-atp-safe-attachments-policies.md)
+- [Allegati sicuri in Office 365 ATP](set-up-atp-safe-attachments-policies.md)
 
-- [Criteri di anti-phishing ATP in Microsoft 365](configure-atp-anti-phishing-policies.md). Si noti che è possibile aumentare temporaneamente **le soglie di phishing avanzate** nel criterio da **standard** a **aggressivo**, **più aggressivo**o **più aggressivo**.
+- [Criteri di anti-phishing in Office 365 ATP](configure-atp-anti-phishing-policies.md). Si noti che è possibile aumentare temporaneamente **le soglie di phishing avanzate** nel criterio da **standard** a **aggressivo**, **più aggressivo**o **più aggressivo**.
 
 Verificare che queste funzionalità ATP siano attivate.
 

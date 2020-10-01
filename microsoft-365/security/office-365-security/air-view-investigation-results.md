@@ -16,12 +16,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 description: Durante e dopo un'analisi automatizzata in Microsoft 365, è possibile visualizzare i risultati e i risultati principali.
 ms.date: 09/29/2020
-ms.openlocfilehash: df0eaa54d8bc1c9cd6c91b6b36958e1eb0d2bfd6
-ms.sourcegitcommit: 6b1d0bea86ced26cae51695c0077adce8bcff3c4
+ms.openlocfilehash: 4be5f3814ed798a0e7fd42285ed2884a5cc29461
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48309107"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48327700"
 ---
 # <a name="details-and-results-of-an-automated-investigation-in-microsoft-365"></a>Dettagli e risultati di un'indagine automatizzata in Microsoft 365
 
@@ -247,7 +247,7 @@ Nella scheda **log** , è possibile visualizzare tutti i passaggi del PlayBook c
 |Indagine su malware e posta indesiderata in uscita|Rilevare malware, phishing o posta indesiderata intra-org e in uscita provenienti da utenti dell'organizzazione|
 |Indagine sul dominio del mittente|Controllo su richiesta della reputazione del dominio da [Microsoft Intelligent Security Graph](https://www.microsoft.com/security/operations/intelligence) e fonti di intelligence per le minacce esterne|
 |Indagine IP del mittente| Controllo su richiesta della reputazione IP dal [grafico Microsoft Intelligent Security Graph](https://www.microsoft.com/security/operations/intelligence) e dalle fonti di intelligence per le minacce esterne|
-|Indagine clic URL| Esaminare i clic degli utenti protetti da [collegamenti sicuri di Office 365 ATP](atp-safe-links.md) nell'organizzazione|
+|Indagine clic URL| Esaminare gli scatti degli utenti protetti da [collegamenti sicuri in Office 365 ATP](atp-safe-links.md) nell'organizzazione|
 |Indagine sulla reputazione URL|Verifica su richiesta sulla reputazione URL del grafico di [sicurezza intelligente di Microsoft](https://www.microsoft.com/security/operations/intelligence) e delle origini di intelligence per le minacce esterne|
 |Indagine sulle attività degli utenti|Analisi delle anomalie delle attività degli utenti in [Microsoft cloud app Security](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security)|
 |Estrazione degli indicatori di messaggi di posta elettronica segnalati dall'utente|Estrarre indicatori dall'intestazione, dal corpo e dal contenuto della [posta elettronica segnalata dall'utente](enable-the-report-message-add-in.md) per l'analisi|
@@ -271,6 +271,6 @@ Azioni acquisire i passaggi consigliati da Microsoft al termine di un'indagine. 
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-- [Esaminare e approvare le azioni in sospeso](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-review-approve-pending-completed-actions?view=o365-worldwide#approve-or-reject-pending-actions)
+- [Esaminare e approvare le azioni in sospeso](air-review-approve-pending-completed-actions.md#approve-or-reject-pending-actions)
 
 - [Informazioni sull'analisi e la risposta automatizzate in Microsoft Threat Protection](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-autoir)

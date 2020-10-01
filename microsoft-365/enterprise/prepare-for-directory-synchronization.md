@@ -3,7 +3,7 @@ title: Preparare la sincronizzazione della directory con Microsoft 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 11/25/2019
+ms.date: 09/30/2020
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -26,12 +26,12 @@ search.appverid:
 - MBS150
 ms.assetid: 01920974-9e6f-4331-a370-13aea4e82b3e
 description: Descrive come prepararsi a eseguire il provisioning degli utenti a Microsoft 365 utilizzando la sincronizzazione della directory e i vantaggi a lungo termine dell'utilizzo di questo metodo.
-ms.openlocfilehash: c9d4368d1939b9c6feedf5146f9d168f18d5d5b1
-ms.sourcegitcommit: 96b4593becc9450af136c528844e858c6e88b5a9
+ms.openlocfilehash: a70f49dd5656da996912173690dc2b21b4288023
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "48269418"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48327286"
 ---
 # <a name="prepare-for-directory-synchronization-to-microsoft-365"></a>Preparare la sincronizzazione della directory con Microsoft 365
 
@@ -43,9 +43,9 @@ I vantaggi dell'identità ibrida e della sincronizzazione della directory dell'o
 - Opzione che consente di abilitare lo scenario Single Sign-on
 - Automatizzare le modifiche degli account in Microsoft 365
 
-Per ulteriori informazioni sui vantaggi derivanti dall'utilizzo della sincronizzazione della directory, vedere [Directory Synchronization roadmap]( https://go.microsoft.com/fwlink/p/?LinkId=525398) and [Hybrid identity for Microsoft 365](plan-for-directory-synchronization.md).
+Per ulteriori informazioni sui vantaggi derivanti dall'utilizzo della sincronizzazione delle directory, vedere [Hybrid Identity with Azure Active Directory (Azure ad)](https://go.microsoft.com/fwlink/p/?LinkId=525398) e [Hybrid identity for Microsoft 365](plan-for-directory-synchronization.md).
 
-Tuttavia, la sincronizzazione della directory richiede la pianificazione e la preparazione per garantire che i servizi di dominio Active Directory vengano sincronizzati con il tenant di Azure Active Directory (Azure AD) dell'abbonamento a Microsoft 365 con un minimo di errori.
+Tuttavia, la sincronizzazione della directory richiede la pianificazione e la preparazione per garantire che i servizi di dominio Active Directory vengano sincronizzati con il tenant di Azure AD della sottoscrizione Microsoft 365 con un minimo di errori.
 
 Seguire questi passaggi per ottenere risultati ottimali.
 
@@ -54,7 +54,7 @@ Seguire questi passaggi per ottenere risultati ottimali.
 Prima di sincronizzare servizi di dominio Active Directory con il tenant di Azure AD, è necessario eseguire la pulizia di servizi di dominio Active Directory.
 
 > [!IMPORTANT]
-> Se non si esegue la pulizia di servizi di dominio Active Directory prima di eseguire la sincronizzazione, il processo di distribuzione può avere un effetto negativo significativo. Potrebbero essere necessari giorni o persino settimane per eseguire il ciclo di sincronizzazione della directory, l'identificazione dei relativi errori e la ripetizione della sincronizzazione.
+> Se non si esegue la pulizia di servizi di dominio Active Directory prima di eseguire la sincronizzazione, può comportare un impatto negativo significativo sul processo di distribuzione. Potrebbero essere necessari giorni o persino settimane per eseguire il ciclo di sincronizzazione della directory, l'identificazione dei relativi errori e la ripetizione della sincronizzazione.
 
 In servizi di dominio Active Directory, completare le seguenti attività di pulizia per ogni account utente a cui viene assegnata una licenza Microsoft 365:
 

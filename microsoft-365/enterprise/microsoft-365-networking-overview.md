@@ -13,19 +13,20 @@ search.appverid:
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
+- M365initiative-CoreDeploy
 f1.keywords:
 - NOCSH
 description: Viene illustrato il motivo per cui l'ottimizzazione della rete è importante per i servizi SaaS, l'obiettivo della rete Microsoft 365 e il modo in cui SaaS richiede una rete diversa da altri carichi di lavoro.
-ms.openlocfilehash: 4fea7364dc79717583ebca8ce0dbe333ee818f1f
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: acc55868e47ea89cd2357487838a88032dc8538d
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46691132"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48327486"
 ---
 # <a name="microsoft-365-network-connectivity-overview"></a>Panoramica della connettività di rete Microsoft 365
 
-*Questo articolo può essere applicato sia a Microsoft 365 Enterprise che a Office 365 Enterprise.*
+*Questo articolo si applica sia a Microsoft 365 Enterprise che a Office 365 Enterprise*.
 
 Microsoft 365 è un cloud SaaS (software-as-a-Service) distribuito che offre scenari di produttività e collaborazione tramite una serie diversificata di micro-servizi e applicazioni. I componenti client di Microsoft 365, ad esempio Outlook, Word e PowerPoint, vengono eseguiti sui computer degli utenti e si connettono ad altri componenti di Microsoft 365 eseguiti nei Data Center Microsoft. Il fattore più significativo che determina la qualità dell'esperienza dell'utente finale di Microsoft 365 è l'affidabilità della rete e la bassa latenza tra i client Microsoft 365 e Microsoft 365 Service front doors.
 
