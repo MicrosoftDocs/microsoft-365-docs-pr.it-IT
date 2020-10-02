@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - seo-marvel-apr2020
 description: Gli amministratori possono conoscere la funzionalità allegati sicuri in Office 365 Advanced Threat Protection (ATP).
-ms.openlocfilehash: 6ff356f34f3e44752b5ad7f5fa433a8c72cd5083
-ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
+ms.openlocfilehash: c3dd64ce6f1d50cf30dfcc33f17021904791912c
+ms.sourcegitcommit: 3f8e573244bc082518125e339a385c41ef6ee800
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48326532"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "48337206"
 ---
 # <a name="safe-attachments-in-office-365-atp"></a>Allegati sicuri in Office 365 ATP
 
@@ -108,9 +108,7 @@ Di seguito sono riportate alcune considerazioni relative al recapito dinamico e 
 
 - Se il destinatario inoltrato non è protetto da un criterio di allegati sicuri, il messaggio e gli allegati verranno recapitati senza alcun segnaposto per l'analisi o gli allegati sicuri.
 
-## <a name="scenarios-where-safe-attachments-doesnt-scan-messages"></a>Scenari in cui gli allegati sicuri non analizzano i messaggi
-
-Esistono scenari in cui gli allegati sicuri non sono in grado di eseguire l'analisi dei messaggi:
+Esistono scenari in cui il recapito dinamico non è in grado di sostituire gli allegati nei messaggi. Tra questi scenari sono compresi:
 
 - Messaggi nelle cartelle pubbliche.
 
@@ -126,7 +124,7 @@ Esistono scenari in cui gli allegati sicuri non sono in grado di eseguire l'anal
 
 - [S/MIME)](s-mime-for-message-signing-and-encryption.md) messaggi crittografati.
 
-- L'operazione di recapito dinamico è stata configurata in un criterio di allegati sicuri, ma il destinatario non supporta il recapito dinamico (ad esempio, il destinatario è una cassetta postale in un'organizzazione di Exchange locale). Tuttavia, [collegamenti sicuri in office 365 ATP](set-up-atp-safe-links-policies.md) è in grado di analizzare gli allegati dei file di Office che contengono URL (a seconda del modo in cui sono configurati i collegamenti sicuri).
+- L'operazione di recapito dinamico è stata configurata in un criterio di allegati sicuri, ma il destinatario non supporta il recapito dinamico (ad esempio, il destinatario è una cassetta postale in un'organizzazione di Exchange locale). Tuttavia, [collegamenti sicuri in office 365 ATP](set-up-atp-safe-links-policies.md) è in grado di analizzare gli allegati dei file di Office che contengono URL (a seconda del modo in cui sono configurate le [Impostazioni globali per i collegamenti sicuri](configure-global-settings-for-safe-links.md) ).
 
 ## <a name="submitting-files-for-malware-analysis"></a>Invio di file per l'analisi antimalware
 

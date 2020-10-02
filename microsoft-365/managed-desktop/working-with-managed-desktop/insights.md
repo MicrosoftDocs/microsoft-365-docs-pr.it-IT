@@ -1,7 +1,7 @@
 ---
 title: Usare i dati analitici
 description: ''
-keywords: Microsoft Managed Desktop, Microsoft 365, servizio, documentazione
+keywords: Microsoft Managed Desktop, Microsoft 365, servizi, documentazione
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 6b19c5cd1766c07e106897cefeb495f1b98bb548
-ms.sourcegitcommit: adaedd1418a3bd6e4875b77fd9e008b47e0b2a51
+ms.openlocfilehash: b3ed56dd3e669dbd5a2c3f09d87dfd87fe680aff
+ms.sourcegitcommit: 3f8e573244bc082518125e339a385c41ef6ee800
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48104389"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "48337182"
 ---
 # <a name="work-with-insights"></a>Usare i dati analitici
 
@@ -31,9 +31,9 @@ Con questi dashboard è possibile trovare le risposte a domande di questo tipo:
 - Qual è lo stato corrente degli aggiornamenti della sicurezza sui dispositivi?
 - Quanto tempo è necessario per il 95% dei dispositivi per ottenere corrente con l'aggiornamento della sicurezza più recente?
 
-Per accedere a queste visualizzazioni da [Microsoft endopint Manager](https://endpoint.microsoft.com/), nvaigate alla scheda Microsoft Managed Desktop nella Home page e selezionare **Visualizza dettagli** nell'area **report** :
+Per accedere a queste visualizzazioni da [Microsoft Endpoint Manager](https://endpoint.microsoft.com/), passare alla scheda Microsoft Managed Desktop nella Home page e selezionare **Visualizza dettagli** nell'area **report** :
 
-<!--Update picture to show in MEM [Admin center with Reports area in the upper right including the device reports card and the "view details" link.](../../media/insights_overview.png)-->!
+<!--Update picture to show in MEM [Admin center with Reports area in the upper right including the device reports card and the "view details" link.](../../media/insights_overview.png)-->
 
 
 ## <a name="usage-insights"></a>Dati analitici sull'utilizzo
@@ -54,7 +54,6 @@ In questa visualizzazione vengono fornite informazioni sul consumo di energia de
 Per ulteriori informazioni, [vedere Battery Insights](battery-insights.md).
 
 ## <a name="windows-security-update-insights"></a>Dati analitici sugli aggiornamenti della sicurezza di Windows
-
-In questa visualizzazione vengono fornite informazioni sullo stato degli aggiornamenti della sicurezza per i dispositivi Microsoft Managed Desktop. Per visualizzare queste informazioni, selezionare la scheda **udates di protezione di Windows** .
+In questa visualizzazione vengono fornite informazioni sullo stato degli aggiornamenti della sicurezza per i dispositivi Microsoft Managed Desktop. Per visualizzare queste informazioni, selezionare la scheda aggiornamenti per la **sicurezza di Windows** .
 
 Per ulteriori informazioni, [vedere Insights for Security Update](security-update-insights.md).

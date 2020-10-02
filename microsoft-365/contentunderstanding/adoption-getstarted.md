@@ -11,22 +11,22 @@ ms.prod: microsoft-365-enterprise
 ms.custom: Adopt
 search.appverid: ''
 localization_priority: Normal
-ms.openlocfilehash: 83da50b3772b6adcb7977425bfcaa1b437bc6a68
-ms.sourcegitcommit: bf21a4caae0c01d93281744838f0aa50e1fb2a22
+ms.openlocfilehash: f6bb4f5e09adcb1be6323a5d3d182cc3d1bc6017
+ms.sourcegitcommit: 3f8e573244bc082518125e339a385c41ef6ee800
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48324300"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "48337230"
 ---
 # <a name="microsoft-sharepoint-syntex-adoption-get-started"></a>Adozione di Microsoft SharePoint Syntex: introduzione
 
-Si pensi ai servizi contenuti intelligenti disponibili in Microsoft SharePoint Syntex come aventi tre parti:
+Si pensi ai servizi contenuti intelligenti disponibili in SharePoint Syntex come aventi tre parti:
 
 - **Content Understanding:** create No-code ai Models per classificare ed estrarre le informazioni dal contenuto per applicare automaticamente i metadati per il riutilizzo e l'individuazione delle conoscenze. Per ulteriori informazioni, vedere [Content Understanding](document-understanding-overview.md).
 - **Elaborazione del contenuto:** Automatizzare l'acquisizione, l'ingestione e la categorizzazione del contenuto e semplificare i processi incentrati sul contenuto utilizzando Power automatizzate. Per ulteriori informazioni, vedere [elaborazione del contenuto](form-processing-overview.md).
 - **Conformità del contenuto:** Controllare e gestire il contenuto per migliorare la sicurezza e la governance con l'integrazione di Microsoft Information Protection.
 
-Con i nuovi servizi e le funzionalità AI, è possibile creare le applicazioni di classificazione e comprensione del contenuto direttamente nel flusso di gestione del contenuto tramite Microsoft SharePoint Syntex:
+Con i nuovi servizi e le funzionalità AI, è possibile creare le applicazioni di classificazione e comprensione del contenuto direttamente nel flusso di gestione del contenuto tramite SharePoint Syntex:
 
 |Immissione manuale| Elaborazione dei moduli | Informazioni sul documento |
 |:-------|:--------|:--------|
@@ -34,7 +34,7 @@ Con i nuovi servizi e le funzionalità AI, è possibile creare le applicazioni d
 | Interattiva   | Precompilata, automatizzata   | Personalizzato, assistito   | Personalizzato, conforme |
 | Persone che operano | Insegnate dagli esperti del soggetto (PMI). Acquisizione di tipi di contenuto e metadati da contratti, riprendementi, altri documenti non strutturati. | Le PMI sono meno implicate. da ordini di acquisto, applicazioni, altri documenti semistrutturati e strutturati |
 
-Nella tabella seguente vengono illustrati gli elementi ottenibili quando si utilizza Microsoft SharePoint Syntex:
+Nella tabella seguente vengono illustrate le operazioni che vengono eseguite quando si utilizza SharePoint Syntex:
 
 | Elaborazione dei moduli | Informazioni sul documento |
 |:-------|:-------|
@@ -46,14 +46,14 @@ Esistono due modi diversi per comprendere il contenuto. Il tipo di modello utili
 
 | Elaborazione dei moduli | Informazioni sul documento |
 |:-------|:-------|
-| Creato da raccolta documenti | Creato in Content Center, parte di Microsoft SharePoint Syntex |
+| Creato da raccolta documenti | Creato in Content Center, parte di SharePoint Syntex |
 | Modello creato in AI Builder | Modello creato nell'interfaccia nativa |
 | Utilizzato per i formati di file semistrutturati | Utilizzato per i formati di file non strutturati |
 | Classificatore impostabile | Classificatore addestrabile con estrattori opzionali |
 | Limitata a una singola raccolta | Può essere applicato a più raccolte |
 | Treno in formato PDF, JPG, PNG, totale 50 MB/500 PP | Treno su 5-10 file PDF, Office o di posta elettronica, inclusi gli esempi negativi |
 
-Microsoft SharePoint Syntex si integra con le funzionalità di conformità di Microsoft 365 come:
+SharePoint Syntex si integra con le funzionalità di conformità di Microsoft 365 come:
 
 - Etichette di conservazione che definiscono i criteri dei record in base all'età del documento o agli eventi esterni.
 - Etichette di riservatezza che configurano i criteri DLP, crittografia, condivisione e accesso condizionale.
@@ -62,12 +62,12 @@ Gli utenti possono applicare etichette oppure possono essere applicati automatic
 
 ## <a name="identify-pilot-business-scenarios-to-optimize"></a>Identificare gli scenari di business pilota da ottimizzare
 
-Per preparare l'utilizzo di Microsoft SharePoint Syntex nell'organizzazione, è innanzitutto necessario comprendere gli scenari in cui sarà utile. Il perché aiuta a determinare quale modello sarà necessario e come strutturare l'organizzazione in base alla posizione in cui verrà applicato il modello. Di seguito sono illustrati alcuni scenari in cui la comprensione dei documenti può aiutare l'organizzazione:
+Per preparare l'utilizzo di SharePoint Syntex nell'organizzazione, è innanzitutto necessario comprendere gli scenari in cui sarà utile. Il perché aiuta a determinare quale modello sarà necessario e come strutturare l'organizzazione in base alla posizione in cui verrà applicato il modello. Di seguito sono illustrati alcuni scenari in cui la comprensione dei documenti può aiutare l'organizzazione:
 
 - Elaborazione del contenuto: contratti di processo, istruzioni di lavoro e altri documenti simili a moduli. Assunzione dei moduli, formazione del modello per la comprensione e la mappatura dei campi, quindi eseguire i moduli fino a raccolta automatica dei dati. Per ulteriori informazioni, vedere [Cenni preliminari sull'elaborazione dei moduli](form-processing-overview.md).
 - Analisi delle fatture: estrarre i dettagli rilevanti dalle fatture e verificare che siano conformi ai criteri o che siano stati elaborati in modo appropriato.
 
-Si pensi ai modi in cui Microsoft SharePoint Syntex può aiutare l'organizzazione:
+Si pensi ai modi in cui SharePoint Syntex può aiutare l'organizzazione:
 
 - Automatizzare i processi aziendali
 - Migliorare l'accuratezza della ricerca
@@ -75,7 +75,7 @@ Si pensi ai modi in cui Microsoft SharePoint Syntex può aiutare l'organizzazion
 
 ### <a name="form-processing-scenario-example"></a>Esempio di scenario di elaborazione dei moduli
 
-Ad esempio, è possibile configurare un processo utilizzando le funzionalità di Microsoft SharePoint Syntex e Power automatizzate per monitorare e monitorare le fatture.
+Ad esempio, è possibile configurare un processo utilizzando le caratteristiche di SharePoint Syntex e Power automatizzate per monitorare e monitorare le fatture.
 
 1. Impostare una raccolta per l'archiviazione dei documenti della fattura.
 1. Addestrare il modello a riconoscere i campi nei documenti.
@@ -85,7 +85,7 @@ Ad esempio, è possibile configurare un processo utilizzando le funzionalità di
     - Una fattura ha superato la data di scadenza.
     - Una fattura è relativa a un importo maggiore di quello di approvazione automatico.
 
-![Monitorare e monitorare le fatture con Microsoft SharePoint Syntex e Power automatizzate](../media/content-understanding/process-invoices-flow.png)
+![Monitorare e monitorare le fatture con SharePoint Syntex e automatizzare l'alimentazione](../media/content-understanding/process-invoices-flow.png)
 
 Quando si automatizza questo scenario, è possibile:
 
@@ -102,7 +102,7 @@ Come altro esempio, è possibile configurare un processo per identificare i cont
 1. Al termine del modello, applicare il modello a una raccolta in cui è possibile caricare i contratti.
 1. Applicare un'etichetta di conservazione al campo data, in modo che i contratti vengano conservati nella raccolta per il periodo di tempo richiesto dall'organizzazione per i contratti.
 
-![Monitorare e monitorare i contratti con le etichette di conservazione e di Syntex di Microsoft SharePoint](../media/content-understanding/process-contracts-flow.png)
+![Monitorare e monitorare i contratti con le etichette di conservazione e di Syntex di SharePoint](../media/content-understanding/process-contracts-flow.png)
 
 Quando si automatizza questo scenario, è possibile:
 
@@ -140,7 +140,7 @@ Dove potranno creare e applicare i modelli? Esistono processi o repository esist
 
 ## <a name="strategic-positioning"></a>Posizionamento strategico
 
-Collaborare con gli stakeholder per assicurarsi che siano allineati alla strategia per l'utilizzo di Microsoft SharePoint Syntex. Ricercare e fornire le risorse seguenti per facilitare questo posizionamento:
+Collaborare con gli stakeholder per assicurarsi che siano allineati alla strategia per l'utilizzo di SharePoint Syntex. Ricercare e fornire le risorse seguenti per facilitare questo posizionamento:
 
 - Risultati aziendali:
   - Potenziali risultati fiscali
@@ -170,7 +170,7 @@ Identificare le parti interessate per il progetto.
 
 ## <a name="readiness-checklist"></a>Elenco di controllo di conformità
 
-Per prepararsi per l'implementazione di Microsoft SharePoint Syntex (Preview), è necessario:
+Per prepararsi per l'implementazione di Syntex di SharePoint, è necessario eseguire le operazioni seguenti:
 
 ![Disponibilità per la comprensione del contenuto](../media/content-understanding/cu-adoption-readinesschecklist.png)
 
