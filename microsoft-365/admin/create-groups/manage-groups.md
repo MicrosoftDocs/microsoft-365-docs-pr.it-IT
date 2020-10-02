@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 74a1ef8b-3844-4d08-9980-9f8f7a36000f
 description: Informazioni su come gestire i gruppi di Microsoft 365, inclusa l'aggiunta di Rimuovi membri del gruppo, la modifica dell'indirizzo di posta elettronica, il nome del gruppo o la descrizione e la personalizzazione del funzionamento del gruppo.
-ms.openlocfilehash: 26c6c064e454351366c326e665bacdcc9bb855fb
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: 29eaa762116498799d4156b58c8f9bf466f04073
+ms.sourcegitcommit: e87015bf29ad15688137c785d93f2c79ca3208f4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47307302"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "48343272"
 ---
 # <a name="manage-a-group-in-the-microsoft-365-admin-center"></a>Gestire un gruppo nell'interfaccia di amministrazione di Microsoft 365
 
@@ -196,10 +196,10 @@ Questa opzione è ideale se si desidera disporre di un indirizzo di posta elettr
 
 [Gestire l'accesso Guest ai gruppi di Microsoft 365](https://support.microsoft.com/office/bfc7a840-868f-4fd6-a390-f347bf51aff6)
 
-[Scegliere il dominio da utilizzare per la creazione dei gruppi di Microsoft 365](choose-domain-to-create-groups.md)
+[Scegliere il dominio da utilizzare per la creazione dei gruppi di Microsoft 365](../../solutions/choose-domain-to-create-groups.md)
 
-[Consenti ai membri di inviare o inviare messaggi per conto di un gruppo di Microsoft 365](allow-members-to-send-as-or-send-on-behalf-of-group.md)
+[Consenti ai membri di inviare o inviare messaggi per conto di un gruppo di Microsoft 365](../../solutions/allow-members-to-send-as-or-send-on-behalf-of-group.md)
 
 [Aggiornare le liste di distribuzione ai gruppi di Microsoft 365](../manage/upgrade-distribution-lists.md)
 
-[Gestire i gruppi Microsoft 365 con PowerShell](https://docs.microsoft.com/microsoft-365/enterprise/powershell/manage-office-365-groups-with-powershell)
+[Gestire i gruppi Microsoft 365 con PowerShell](https://docs.microsoft.com/microsoft-365/enterprise/manage-microsoft-365-groups-with-powershell)
