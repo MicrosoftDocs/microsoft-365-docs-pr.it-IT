@@ -5,7 +5,7 @@ f1.keywords:
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 09/16/2020
+ms.date: 09/30/2020
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -15,24 +15,33 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Richiedere agli utenti di accedere in modo sicuro con l'autenticazione a più fattori (MFA) e altre funzionalità.
-ms.openlocfilehash: 6c8f58e54ae21b4a5e1566dc72673e1d69152863
-ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
+ms.openlocfilehash: 2e6c564e3179d0847710e2bef071dcc9e1cdbdaf
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48132242"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48327427"
 ---
 # <a name="secure-user-sign-ins-to-your-microsoft-365-tenant"></a>Autenticazioni sicure degli utenti nel tenant di Microsoft 365
 
 Per aumentare la sicurezza degli accessi degli utenti:
 
+- Usare Windows Hello for Business
 - Usare la protezione delle password di Azure Active Directory (Azure AD)
 - Usare l'autenticazione a più fattori
-- Distribuire criteri comuni di identità e accesso ai dispositivi.
+- Distribuire le configurazioni di identità e accesso dei dispositivi
+- Proteggere dalle credenziali compromesse con Azure AD Identity Protection
 
-## <a name="azure-ad-password-protection"></a>Azure AD Password Protection
+## <a name="windows-hello-for-business"></a>Windows Hello for Business
 
-La protezione delle password di Azure AD rileva e blocca le password deboli note e le loro varianti, e può anche bloccare altri elementi vulnerabili specifici delle organizzazioni. Gli elenchi predefiniti di password escluse globalmente sono applicate automaticamente a tutti gli utenti dei tenant di Azure AD. È possibile definire altre voci in un elenco di password escluse personalizzato. Quando gli utenti modificano o reimpostano le loro password, gli elenchi di password escluse sono controllati per applicare l'uso di password sicure.
+Windows Hello for Business in Windows 10 Enterprise sostituisce le password con l'autenticazione complessa a due fattori durante l'accesso a un dispositivo Windows. I due fattori sono un nuovo tipo di credenziale utente che è associato a un dispositivo e a una biometria o a un PIN.
+
+Per altre informazioni, vedere [Panoramica di Windows Hello for Business](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-overview).
+
+
+## <a name="azure-ad-password-protection"></a>Protezione delle password di Azure AD
+
+La protezione delle password di Azure AD rileva e blocca le password deboli note e le loro varianti, inoltre può bloccare altri termini vulnerabili specifici dell’organizzazione. Gli elenchi predefiniti di password escluse globalmente sono applicate automaticamente a tutti gli utenti dei tenant di Azure AD. È possibile definire altre voci in un elenco di password escluse personalizzato. Quando gli utenti modificano o reimpostano le loro password, gli elenchi di password escluse sono controllati per applicare l'uso di password sicure.
 
 Per altre informazioni, vedere [Configurare la protezione delle password di protezione di Azure AD](https://docs.microsoft.com/azure/active-directory/authentication/concept-password-ban-bad).
 
@@ -44,7 +53,7 @@ La MFA richiede che gli accessi utente siano soggetti a un'ulteriore verifica ol
 
 Il primo passo per usare l'autenticazione MFA è di ***richiederla per tutti gli account amministratore***, noti anche come account privilegiati.
 
-Oltre questo primo passaggio, Microsoft raccomanda vivamente l'autenticazione a più fattori per tutti gli utenti.
+Oltre a questo primo passaggio, Microsoft raccomanda l'autenticazione a più fattori per tutti gli utenti.
 
 Sono disponibili tre modi per richiedere agli amministratori o agli utenti di utilizzare la MFA in base al piano Microsoft 365.
 
@@ -77,7 +86,7 @@ Questo criterio consente di richiedere l'autenticazione a più fattori in base a
 
 L'accesso condizionale richiede licenze di Azure AD Premium P1, che sono incluse con Microsoft 365 E3 ed E5.
 
-Per altre informazioni, vedere questa [sintesi dell'accesso condizionale](https://docs.microsoft.com/azure/active-directory/conditional-access/overview).
+Per altre informazioni, vedere la [panoramica dell'accesso condizionale](https://docs.microsoft.com/azure/active-directory/conditional-access/overview).
 
 ### <a name="using-these-methods-together"></a>Usare questi metodi insieme
 
@@ -96,7 +105,7 @@ Questa tabella mostra i risultati dell'abilitazione della MFA con impostazioni p
 | **Criteri di accesso condizionale** | Se alcuni sono abilitati, non è possibile abilitare le impostazioni predefinite per la sicurezza | Se sono tutti disabilitati, è possibile abilitare le impostazioni predefinite per la sicurezza  | Specificato dall'utente durante la registrazione della MFA  |
 ||||
 
-## <a name="identity-and-device-access-policies"></a>Criteri di identità e accesso ai dispositivi
+## <a name="identity-and-device-access-configurations"></a>Configurazioni di identità e accesso dei dispositivi
 
 Le impostazioni e i criteri di accesso dei dispositivi e delle identità sono funzionalità raccomandate e la loro configurazione, combinata con i criteri di accesso condizionale, Intune, e Azure AD Identity Protection, determina se una specifica richiesta di accesso debba essere accolta e a quali condizioni.  Questa determinazione è basata sull'account utente autenticato, il dispositivo usato, l'app usata dall'utente per accedere, la posizione da cui viene inviata la richiesta di accesso, e una valutazione del rischio della richiesta. Questa funzionalità garantisce che solo gli utenti e i dispositivi autorizzati possano accedere alle risorse cruciali dell'utente.
 
@@ -114,27 +123,22 @@ Questi livelli, e le loro configurazioni corrispondenti, offrono livelli costant
 
 Microsoft raccomanda vivamente di configurare e distribuire i criteri di identità e accesso ai dispositivi nell'organizzazione, incluse le impostazioni specifiche di Microsoft Teams, Exchange Online e SharePoint. Per altre informazioni, vedere [Configurazioni di identità e accesso dei dispositivi](microsoft-365-policies-configurations.md).
 
-<!--
+## <a name="azure-ad-identity-protection"></a>Azure AD Identity Protection
 
-## Let your users reset their own passwords
+In questa sezione verrà illustrato come configurare i criteri di protezione dalla compromissione delle credenziali, per cui l'autore di un attacco scopre nome e password dell'account di un utente per ottenere l'accesso ai servizi e ai dati cloud di un'organizzazione. Azure AD Identity Protection include diversi modi per impedire a un utente malintenzionato di compromettere le credenziali di un account utente.
 
-Self-Service Password Reset (SSPR) enables users to reset their own passwords without impacting IT staff. Users can quickly reset their passwords at any time and from any place. Watch [this video](https://go.microsoft.com/fwlink/?linkid=2128524) to set up SSPR.
+Con Azure AD Identity Protection, è possibile:
 
-## Sign in to SaaS apps with Azure AD
+|Funzionalità|Descrizione|
+|:---------|:---------|
+| Determinare e affrontare possibili vulnerabilità relative alle identità dell'organizzazione | Azure AD usa l'apprendimento automatico per rilevare anomalie e attività sospette, come le attività di accesso e conseguenti all’accesso. Con questi dati, Azure AD Identity Protection genera report e avvisi che consentono di valutare i problemi e intervenire.|
+|Rilevare azioni sospette correlate alle identità dell'organizzazione e intervenire automaticamente|È possibile configurare criteri basati sul rischio che rispondano automaticamente ai problemi rilevati quando viene raggiunto un livello di rischio specificato. Questi criteri, con altri controlli di accesso condizionale forniti da Azure AD e Microsoft Intune, possono bloccare automaticamente l’accesso o avviare azioni di correzione, incluse la reimpostazione della password e la richiesta dell'autenticazione a più fattori di Azure per gli accessi successivi. |
+| Esaminare gli incidenti sospetti e risolverli con azioni amministrative | È possibile esaminare gli eventi di rischio usando le informazioni sugli incidenti di sicurezza. I flussi di lavoro di base sono disponibili per tenere traccia delle analisi e per attuare azioni correttive, come le reimpostazioni delle password. |
+|||
 
-In addition to providing cloud authentication for users, Azure AD can also be your central way to secure all your apps, whether they’re on-premises, in Microsoft’s cloud, or in another cloud. By [integrating your apps into Azure AD](https://docs.microsoft.com/azure/active-directory/manage-apps/plan-an-application-integration), you can make it easy for your users to discover the applications they need and sign into them securely.
+Vedere [altre informazioni su Azure AD Identity Protection](https://docs.microsoft.com/azure/active-directory/active-directory-identityprotection).
 
-## Results of deployment of secure sign-ins
-
-After deployment of MFA, your users:
-
-- Are required to use MFA for sign-ins.
-- Have completed the MFA registration process and are using MFA for all sign-ins.
-- Can use SSPR to reset their own passwords.
-
-- [Plan an Azure AD self-service password reset deployment](https://docs.microsoft.com/azure/active-directory/authentication/howto-sspr-deployment)
-
---> 
+Vedere i [passaggi per abilitare Azure AD Identity Protection](https://docs.microsoft.com/azure/active-directory/active-directory-identityprotection-enable).
 
 ## <a name="admin-technical-resources-for-mfa-and-secure-sign-ins"></a>Risorse tecniche per amministratori per MFA e autenticazioni sicure
 
@@ -144,3 +148,6 @@ After deployment of MFA, your users:
 - [Configurare i criteri di registrazione dell'autenticazione a più fattori di Azure](https://docs.microsoft.com/azure/active-directory/identity-protection/howto-identity-protection-configure-mfa-policy)
 - [Configurazioni di identità e accesso dei dispositivi](microsoft-365-policies-configurations.md)
 
+## <a name="next-step"></a>Passaggio successivo
+
+[Gestire gli account utente](manage-microsoft-365-accounts.md).

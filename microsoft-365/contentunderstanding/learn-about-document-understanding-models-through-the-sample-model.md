@@ -1,53 +1,49 @@
 ---
-title: Informazioni sui modelli di comprensione dei documenti tramite il modello di esempio
+title: Informazioni sui modelli di analisi dei documenti tramite un modello di esempio
 ms.author: efrene
 author: efrene
 manager: pamgreen
-ms.date: 10/1/2020
 audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 search.appverid: ''
-localization_priority: None
-ROBOTS: NOINDEX, NOFOLLOW
-description: Informazioni sui modelli di comprensione dei documenti tramite il modello di esempio
-ms.openlocfilehash: c27d50df69c2555b1720e3e919f786076ab1e3fb
-ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
-ms.translationtype: MT
+localization_priority: Priority
+description: Informazioni sui modelli di analisi dei documenti tramite un modello di esempio
+ms.openlocfilehash: 75e17c8075fa381c68b6f85e0dfbe96e5d2ad557
+ms.sourcegitcommit: f7ca339bdcad38796c550064fb152ea09687d0f3
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "48296116"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48321266"
 ---
-# <a name="learn-about-document-understanding-models-through-a-sample-model"></a>Informazioni sui modelli di comprensione dei documenti tramite un modello di esempio
+# <a name="learn-about-document-understanding-models-through-a-sample-model"></a>Informazioni sui modelli di analisi dei documenti tramite un modello di esempio
 
-Microsoft SharePoint Syntex fornisce un modello di esempio che è possibile utilizzare per esaminare, fornendo una migliore comprensione di come creare i propri modelli. Il modello di esempio consente inoltre di esaminare i componenti del modello, ad esempio il classificatore, gli estrattori e le spiegazioni. È inoltre possibile utilizzare i file di esempio per formare il modello.
+Microsoft SharePoint Syntex offre all’utente un modello di esempio da consultare per comprendere meglio come creare modelli personalizzati. Il modello di esempio consente inoltre di esaminare i componenti di un modello, ad esempio il classificatore, gli estrattori e le descrizioni. È anche possibile usare i file di esempio per eseguire il training del modello.
 
 ## <a name="import-the-sample-model"></a>Importare il modello di esempio
 
-Per accedere al modello di esempio, è necessario prima importare il modello nel centro di contenuto.
+Per accedere al modello di esempio, è necessario prima di tutto importare il modello nel centro contenuti.
 
-1. Dal centro contenuto, selezionare **modelli** per visualizzare l'elenco dei modelli.</br>
-2. Nella pagina **modelli** selezionare **Importa modello di esempio**.</br>
+1. Nel centro contenuti, selezionare **Modelli** per visualizzare l'elenco dei modelli.</br>
+2. Nella pagina **Modelli**, selezionare **Importa il modello di esempio**.</br>
 
-    ![Importare il modello di esempio](../media/content-understanding/import-sample-model.png) </br>
+    ![Importare modelli di esempio](../media/content-understanding/import-sample-model.png) </br>
 
-3. Cercare il modello di esempio denominato *BenefitsChangeNotice. classificatore* visualizzato nell'elenco dei modelli.</br>
+3. Dopo aver completato l'importazione, viene visualizzata la home page del modello **BenefitsChangeNotice**. Se sarà necessario aprire il modello di esempio in futuro, è possibile eseguire questa operazione nell'elenco dei modelli nel centro contenuti. </br>
 
-    ![Modello di esempio](../media/content-understanding/sample-model.png) </br>
+     ![Home page di esempio](../media/content-understanding/sample-home-page.png)</br>
 
-4. Selezionare il *BenefitsChangeNotice. classificatore*, per aprire la Home page del modello.</br>
-  
-     ![Home page di esempio](../media/content-understanding/sample-home-page.png)
+Non solo è possibile analizzare il modello di esempio per comprendere meglio il modo in cui è impostato il modello, ma poiché è un modello funzionante può andare oltre ed eseguire operazioni come:
 
-5. Nella Home page del modello esaminare il modello più da vicino per vedere come è stato creato.
- 
-- Consente di visualizzare i file di esempio utilizzati per la formazione del modello.
-- Esaminare più da vicino gli estrattori di entità del modello per vedere in che modo il modello di esempio ha configurato le spiegazioni.
+- Aggiungere un altro estrattore. Ad esempio, aggiungere un estrattore che estrae *il tasso di sconto*.
+- Applicare il modello a una raccolta documenti e caricare alcuni file di cui è stato eseguito il training per vedere come il modello classifica i file ed estrae i dati da essi.
 
-   ![Estrattori del modello di esempio](../media/content-understanding/entity-extractors.png)  
 
 ## <a name="see-also"></a>Vedere anche
-[Creare un classificatore](create-a-classifier.md)</br>
-[Creare un estrattore](create-an-extractor.md)</br>
-[Panoramica della comprensione del documento](document-understanding-overview.md)</br>
-[Creare un modello di elaborazione dei moduli](create-a-form-processing-model.md)  
+[Creare un classificatore](create-a-classifier.md)
+
+[Creare un estrattore](create-an-extractor.md)
+
+[Panoramica dell'analisi dei documenti](document-understanding-overview.md)
+
+[Creare un modello di elaborazione moduli](create-a-form-processing-model.md)  
