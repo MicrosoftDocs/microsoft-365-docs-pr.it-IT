@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 3fc563c762e7cd00888665b63e66159e4d3d9612
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 6d627dcf3d6ec8ca1d2aa76eab484361c25b529e
+ms.sourcegitcommit: 0f48beaca3afa4df12d41847014975d50a4ebe7d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48196978"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "48338418"
 ---
 # <a name="fileprofile"></a>FileProfile()
 
@@ -61,8 +61,8 @@ invoke FileProfile(x,y)
 
 ## <a name="arguments"></a>Argomenti
 
-- **x** -colonna ID file da utilizzare: `SHA1` , `SHA256` `InitiatingProcessSHA1` o, `InitiatingProcessSHA256` se non specificata, viene utilizzata una funzione. `SHA1`
-- **y** -limitare il numero di record da arricchire, 1-1000; la funzione utilizza 100 se non specificata
+- **x**-colonna ID file da utilizzare: `SHA1` , `SHA256` ,, `InitiatingProcessSHA1` o, `InitiatingProcessSHA256` se non `SHA1` specificata, viene utilizzata una funzione
+- **y**-limitare il numero di record da arricchire, 1-1000; la funzione utilizza 100 se non specificata
 
 ## <a name="examples"></a>Esempi
 

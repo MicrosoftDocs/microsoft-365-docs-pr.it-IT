@@ -1,6 +1,6 @@
 ---
-title: Rapporti archivio termini
-description: Informazioni su come segnalare l'attività dell'archivio termini
+title: Report archivio termini
+description: Come segnalare l'attività dell'archivio termini
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
@@ -8,36 +8,35 @@ audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 search.appverid: ''
-localization_priority: None
-ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 07b472eac9eba55f7a0a972ec818e0fbcb300552
-ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
-ms.translationtype: MT
+localization_priority: Priority
+ms.openlocfilehash: 75bd60aab424bdf391038a95055a6660ef2ceecc
+ms.sourcegitcommit: f7ca339bdcad38796c550064fb152ea09687d0f3
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "48296068"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48322212"
 ---
-# <a name="term-store-reports"></a>Rapporti archivio termini
+# <a name="term-store-reports"></a>Report archivio termini
 
-È possibile accedere ai report per l'archivio termini nell'interfaccia di amministrazione di SharePoint. Espandere **report**e quindi fare clic su **servizi di contenuto**.
+È possibile accedere ai report per l'archivio termini nell'interfaccia di amministrazione di SharePoint. Espandere **Report**, quindi fare clic su **Servizi per contenuti**.
 
-Sono disponibili i report seguenti:
+Sono disponibili i seguenti report:
 
 ### <a name="term-store-operations"></a>Operazioni dell'archivio termini
 
-Visualizzare le operazioni principali eseguite nel proprio archivio termini in un periodo di 15 giorni e vedere un trend dei volumi giornalieri in quel periodo. Questa operazione è utile quando si desidera comprendere a livello elevato la natura delle modifiche apportate all'archivio termini e identificare eventuali tendenze inattese nei volumi di operazioni. 
+Visualizzare le operazioni principali eseguite nell'archivio termini in un periodo di 15 giorni e analizzare una tendenza dei volumi quotidiani in tale periodo. Questa opzione è utile se si vuole comprendere il tipo di modifiche apportate all'archivio termini a livello generale e identificare le tendenze impreviste nei volumi delle operazioni. 
 
 ### <a name="term-store-composition"></a>Composizione archivio termini
 
-Visualizzare la distribuzione dei tipi di termini tra termini gestiti regolari e parole chiave dell'organizzazione. Se lo si desidera, spostare più parole chiave in termini gestiti. Questa operazione è utile quando si desidera identificare se gli utenti utilizzano attivamente parole chiave. È possibile esaminarli per identificare i potenziali candidati per i termini gestiti.
+Visualizzare la distribuzione dei tipi di termini tra i termini gestiti regolari e le parole chiave dell'organizzazione. Spostare più parole chiave tra i termini gestiti, se necessario. Questa opzione è utile se si desidera identificare se gli utenti usano attivamente parole chiave. È possibile rivederli per identificare potenziali candidati per i termini gestiti.
 
-### <a name="open-and-closed-term-sets"></a>Set di termini aperti e chiusi
+### <a name="open-and-closed-term-sets"></a>Aprire e chiudere set di termini
 
-Visualizzare la distribuzione dei set di termini aperti e chiusi. Questa opzione è utile se si desidera comprendere il numero di set di termini che consentono agli utenti di aggiungere condizioni. È possibile convertirli in chiuso se lo si desidera, ad esempio se i volumi stanno crescendo in modo imprevisto. 
+Visualizzare la distribuzione dei set di termini aperti e chiusi. Questa opzione è utile se si desidera comprendere quanti set di termini consentano agli utenti di aggiungere termini. Se lo si desidera, è possibile convertirli in chiusi, ad esempio se i volumi stanno crescendo in modo imprevisto. 
 
 ### <a name="terms-without-synonyms"></a>Termini senza sinonimi
 
-Visualizzare il numero di termini in ognuna delle lingue di lavoro aggiunte che non dispongono di sinonimi definiti. Questa operazione è utile per identificare le lingue in cui si desidera definire i sinonimi. I sinonimi aiutano gli utenti finali a disambiguare e a trovare i termini corretti per contrassegnare il contenuto.
+Visualizzare il numero di termini in ogni lingua di lavoro aggiunta che non dispongono di sinonimi definiti. È utile per identificare le lingue in cui si desidera definire i sinonimi. I sinonimi aiutano gli utenti finali a risolvere le ambiguità e a trovare i termini corretti per contrassegnare i contenuti.
 
 ## <a name="see-also"></a>Vedere anche
 

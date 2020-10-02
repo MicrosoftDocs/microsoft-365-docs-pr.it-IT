@@ -19,12 +19,12 @@ ms.assetid: 8927b8b9-c5bc-45a8-a9f9-96c732e58264
 ms.custom:
 - seo-marvel-apr2020
 description: Creare criteri di avviso nel centro sicurezza e conformità di Office 365 e Microsoft 365 per monitorare le potenziali minacce, la perdita di dati e i problemi relativi alle autorizzazioni.
-ms.openlocfilehash: 4b12457b051b19aa1eaca0d92b342ab8a7b34134
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 9f05fe464b4945d739c5920282e45e07f9fcb344
+ms.sourcegitcommit: 0f48beaca3afa4df12d41847014975d50a4ebe7d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48200585"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "48338429"
 ---
 # <a name="alert-policies-in-the-security-and-compliance-center"></a>Criteri di avviso nel Centro sicurezza e conformità
 
@@ -109,10 +109,11 @@ Nella tabella seguente sono elencati e descritti i criteri di avviso predefiniti
 
 La tabella indica anche il piano Office 365 Enterprise and Office 365 US Government obbligatorio per ognuno di essi. Alcuni criteri di avviso predefiniti sono disponibili se l'organizzazione ha la sottoscrizione del componente aggiuntivo appropriata oltre a una sottoscrizione E1/F1/G1 o E3/G3.
 
-|**Criterio di avviso predefinito**|**Descrizione**|**Categoria**|**Abbonamento a Office 365 Enterprise**|
+| Criterio di avviso predefinito | Descrizione | Categoria | Abbonamento a Office 365 Enterprise |
 |:-----|:-----|:-----|:-----|
 |**È stato rilevato un clic URL potenzialmente dannoso**|Genera un avviso quando un utente protetto da [collegamenti sicuri ATP di Office 365](../security/office-365-security/atp-safe-links.md) nell'organizzazione fa clic su un collegamento dannoso. Questo evento viene attivato quando le modifiche al verdetto degli URL sono identificate da Office 365 ATP o quando gli utenti eseguono l'override delle pagine di collegamenti sicuri ATP di Office 365 (in base al criterio collegamenti sicuri ATP Microsoft 365 for business dell'organizzazione). Questo criterio di avviso ha un'impostazione di gravità **elevata** . Per i clienti di Office 365 ATP P2, E5 e G5, questo avviso attiva automaticamente l' [analisi e la risposta automatizzate in office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air). Per ulteriori informazioni sugli eventi che attivano questo avviso, vedere [set up Office 365 ATP Safe Links Policies](../security/office-365-security/set-up-atp-safe-links-policies.md).|Gestione dei rischi|Sottoscrizione di un componente aggiuntivo per i componenti aggiuntivi di E5/G5 o Office 365 ATP P2|
 |**Risultato dell'invio dell'amministratore completato**|Genera un avviso quando l' [invio](../security/office-365-security/admin-submission.md) di un amministratore completa la ripetizione dell'analisi dell'entità inviata. Un avviso verrà attivato ogni volta che viene eseguito il rendering di un risultato di rianalisi da un invio di amministratore. Questi avvisi devono ricordare di [esaminare i risultati degli invii precedenti](https://protection.office.com/reportsubmission), inviare messaggi segnalati dall'utente per ottenere il controllo dei criteri più recente e ripetere l'analisi dei verdetti e aiutare a determinare se i criteri di filtro nell'organizzazione hanno l'impatto previsto. Questo criterio ha un'impostazione di gravità **bassa** .|Gestione dei rischi|E1/F1, E3 o E5|
+|**Indagine manuale dell'amministratore attivato per la posta elettronica**|Genera un avviso quando un amministratore attiva l'analisi manuale di un messaggio di posta elettronica da Esplora minacce. Per ulteriori informazioni, vedere [esempio: un amministratore della sicurezza attiva un'indagine da Esplora minacce] ( https://docs.microsoft.com/microsoft-365/security/office-365-security/automated-investigation-response-office#example-a-security-administrator-triggers-an-investigation-from-threat-explorer) . Questo avviso notifica all'organizzazione che l'inchiesta è stata avviata. L'avviso fornisce informazioni su chi l'ha attivata e include un collegamento all'indagine. Questo criterio ha un livello di gravità **informativo** .|Gestione dei rischi| Sottoscrizione di un componente aggiuntivo per i componenti aggiuntivi di E5/G5 o Office 365 ATP P2| 
 |**Creazione di una regola di inoltro/Reindirizzamento**|Genera un avviso quando un utente dell'organizzazione crea una regola di posta in arrivo per la propria cassetta postale che inoltra o reindirizza i messaggi a un altro account di posta elettronica. Questo criterio tiene traccia solo le regole della posta in arrivo create utilizzando Outlook sul Web (in precedenza noto come Outlook Web App) o Exchange Online PowerShell. Questo criterio ha un'impostazione di gravità **bassa** . Per ulteriori informazioni sull'utilizzo delle regole di posta in arrivo per inoltrare e reindirizzare la posta elettronica in Outlook sul Web, vedere [use rules in Outlook sul Web per inoltrare automaticamente i messaggi a un altro account](https://support.office.com/article/1433e3a0-7fb0-4999-b536-50e05cb67fed).|Gestione dei rischi|E1/F1/G1, E3/G3 o E5/G5|
 |**ricerca eDiscovery avviata o esportata**|Genera un avviso quando qualcuno utilizza lo strumento di ricerca contenuto nel centro sicurezza e conformità. Viene attivato un avviso quando vengono eseguite le attività di ricerca del contenuto seguenti: <br/><br/>* Viene avviata una ricerca di contenuto<br/>* Vengono esportati i risultati di una ricerca di contenuto<br/>* Viene esportato un report di ricerca contenuto<br/><br/>Gli avvisi vengono attivati anche quando le attività di ricerca di contenuto precedenti vengono eseguite in associazione a un caso di eDiscovery. Questo criterio ha un'impostazione di gravità **media** . Per ulteriori informazioni sulle attività di ricerca del contenuto, vedere [ricerca di attività di eDiscovery nel registro di controllo](search-for-ediscovery-activities-in-the-audit-log.md#ediscovery-activities).|Gestione dei rischi|E1/F1/G1, E3/G3 o E5/G5|
 |**Privilegi di amministratore di Exchange per l'elevazione**|Genera un avviso quando a un utente sono assegnate autorizzazioni amministrative nell'organizzazione di Exchange Online. Ad esempio, quando un utente viene aggiunto al gruppo di ruoli Gestione organizzazione in Exchange Online. Questo criterio ha un'impostazione di gravità **bassa** .|Autorizzazioni|E1/F1/G1, E3/G3 o E5/G5|
@@ -238,17 +239,18 @@ Per visualizzare la categoria a cui è assegnato un criterio di avviso predefini
 |Gestione della conservazione in sola visualizzazione|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||||||
 |||||||
 
-**Suggerimento:** Per visualizzare i ruoli assegnati a ognuno dei gruppi di ruoli predefiniti, eseguire i comandi seguenti in PowerShell per il Centro sicurezza & Compliance:
-
-```PowerShell
-$RoleGroups = Get-RoleGroup
-```
-
-```PowerShell
-$RoleGroups | foreach {Write-Output -InputObject `r`n,$_.Name,"-----------------------"; Get-RoleGroup $_.Identity | Select-Object -ExpandProperty Roles}
-```
-
-È inoltre possibile visualizzare i ruoli assegnati a un gruppo di ruoli nel centro sicurezza & conformità. Passare alla pagina **autorizzazioni** e selezionare un gruppo di ruoli. I ruoli assegnati sono elencati nella pagina a comparsa.
+> [!TIP]
+> Per visualizzare i ruoli assegnati a ognuno dei gruppi di ruoli predefiniti, eseguire i comandi seguenti in PowerShell per il Centro sicurezza & Compliance:
+> 
+> ```powershell
+> $RoleGroups = Get-RoleGroup
+> ```
+> 
+> ```powershell
+> $RoleGroups | foreach {Write-Output -InputObject `r`n,$_.Name,"-----------------------"; Get-RoleGroup $_.Identity | Select-Object -ExpandProperty Roles}
+> ```
+> 
+> È inoltre possibile visualizzare i ruoli assegnati a un gruppo di ruoli nel centro sicurezza & conformità. Passare alla pagina **autorizzazioni** e selezionare un gruppo di ruoli. I ruoli assegnati sono elencati nella pagina a comparsa.
 
 ## <a name="managing-alerts"></a>Gestione degli avvisi
 

@@ -18,12 +18,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 9b7e20daa3a5d642a864f9b24e836d3c75bbd7b1
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 8e586050465464def02c7787a5fb218b0b6071c7
+ms.sourcegitcommit: 0f48beaca3afa4df12d41847014975d50a4ebe7d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48199854"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "48338474"
 ---
 # <a name="proactively-hunt-for-threats-with-advanced-hunting-in-microsoft-threat-protection"></a>Cercare in modo proattivo minacce con la ricerca avanzata di Microsoft Threat Protection
 
@@ -40,17 +40,24 @@ La ricerca avanzata è uno strumento di ricerca delle minacce basato sulla query
 
 È possibile usare le stesse query di ricerca delle minacce per creare regole di rilevamento personalizzate. Queste regole vengono eseguite automaticamente per controllare e quindi rispondere all'attività di violazione sospetta, ai computer non configurati e ad altri risultati.
 
-Questa funzionalità è simile alla [ricerca avanzata in Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview). Disponibile in Microsoft 365 Security Center, questa funzionalità supporta le query che controllano un set di dati più ampio da Microsoft Defender ATP, Office 365 ATP, Microsoft cloud app Security e Azure ATP. Per utilizzare la ricerca avanzata, [attivare Microsoft Threat Protection](mtp-enable.md).
+Questa funzionalità è simile alla [ricerca avanzata in Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview). Disponibile in Microsoft 365 Security Center, questa funzionalità supporta le query che controllano un set di dati più ampio da:
+
+- Microsoft Defender Advanced Threat Protection
+- Office 365 Advanced Threat Protection
+- Microsoft Cloud App Security
+- Azure Advanced Threat Protection
+
+Per utilizzare la ricerca avanzata, [attivare Microsoft Threat Protection](mtp-enable.md).
 
 ## <a name="get-started-with-advanced-hunting"></a>Introduzione alla ricerca avanzata
 
-È consigliabile passare attraverso diverse fasi per diventare rapidamente operativi con la ricerca avanzata.
+È consigliabile passare attraverso diversi passaggi per iniziare rapidamente con la ricerca avanzata.
 
 | Obiettivo di formazione | Descrizione | Risorsa |
 |--|--|--|
 | **Impara la lingua** | La ricerca avanzata si basa sul [linguaggio di query di Kusto](https://docs.microsoft.com/azure/kusto/query/), che supporta la stessa sintassi e gli stessi operatori. Iniziare ad apprendere il linguaggio di query eseguendone la prima. | [Informazioni generali sul linguaggio di query](advanced-hunting-query-language.md) |
 | **Informazioni su come utilizzare i risultati della query** | Informazioni sui grafici e sui vari modi in cui è possibile visualizzare o esportare i risultati. Scoprire come è possibile ottimizzare rapidamente le query, eseguire il drill-down per ottenere informazioni più ricche e intraprendere azioni di risposta. | - [Utilizzo dei risultati delle query](advanced-hunting-query-results.md)<br>- [Eseguire un'azione sui risultati delle query](advanced-hunting-take-action.md) |
-| **Comprensione dello schema** | È possibile ottenere una conoscenza buona e approfondita delle tabelle nello schema e delle relative colonne. Informazioni su dove cercare i dati durante la creazione di query. | [Informazioni di riferimento sullo schema](advanced-hunting-schema-tables.md) |
+| **Comprensione dello schema** | È possibile ottenere una conoscenza buona e approfondita delle tabelle nello schema e delle relative colonne. Informazioni su dove cercare i dati durante la creazione di query. | - [Riferimenti allo schema](advanced-hunting-schema-tables.md)<br>- [Transizione da Microsoft Defender ATP](advanced-hunting-migrate-from-mdatp.md) |
 | **Ottenere suggerimenti ed esempi di esperti** | Allenarsi gratuitamente con le guide di Microsoft Experts. Esplorare le raccolte di query predefinite che coprono diversi scenari di ricerca delle minacce. | - [Ottenere una formazione esperta](advanced-hunting-expert-training.md)<br>- [Utilizzo di query condivise](advanced-hunting-shared-queries.md)<br>- [Andare a caccia](advanced-hunting-go-hunt.md)<br>- [Cercare minacce tra dispositivi, messaggi di posta elettronica, app e identità](advanced-hunting-query-emails-devices.md) |
 | **Ottimizzare le query e gestire gli errori** | Informazioni su come creare query efficienti e prive di errori. | - [Procedure consigliate per le query](advanced-hunting-best-practices.md)<br>- [Gestire gli errori](advanced-hunting-errors.md) |
 | **Creare regole di rilevamento personalizzate** | Informazioni su come è possibile utilizzare le query di ricerca avanzate per attivare gli avvisi e accettare automaticamente le azioni di risposta. | - [Panoramica sui rilevamenti personalizzati](custom-detections-overview.md)<br>- [Regole di rilevamento personalizzate](custom-detection-rules.md) |
@@ -62,7 +69,7 @@ Per utilizzare la ricerca avanzata o altre funzionalità di [protezione dalle mi
 I dati di caccia avanzati possono essere categorizzati in due tipi distinti, ognuno consolidati in modo diverso.
 
 - **Dati relativi a eventi o attività**: popola le tabelle relative agli avvisi, agli eventi di sicurezza, agli eventi di sistema e alle valutazioni di routine. La ricerca avanzata riceve questi dati quasi subito dopo che i sensori che li raccolgono li trasmettono correttamente ai servizi cloud corrispondenti. Ad esempio, è possibile eseguire query sui dati di eventi da sensori integri su workstation o controller di dominio quasi immediatamente dopo che sono disponibili su Microsoft Defender ATP e Azure ATP.
-- **Dati entità**: popola le tabelle con informazioni consolidate su utenti e dispositivi. Questi dati provengono da origini dati relativamente statiche e da origini dinamiche, ad esempio voci di Active Directory e registri eventi. Per fornire dati aggiornati, le tabelle vengono aggiornate con tutte le nuove informazioni ogni 15 minuti, aggiungendo righe che potrebbero non essere completamente popolate. Ogni 24 ore, i dati vengono consolidati per inserire un record che contiene il set di dati più recente e completo su ogni entità.
+- **Dati entità**: popola le tabelle con informazioni su utenti e dispositivi. Questi dati provengono da origini dati relativamente statiche e da origini dinamiche, ad esempio voci di Active Directory e registri eventi. Per fornire dati aggiornati, le tabelle vengono aggiornate con tutte le nuove informazioni ogni 15 minuti, aggiungendo righe che potrebbero non essere completamente popolate. Ogni 24 ore, i dati vengono consolidati per inserire un record che contiene il set di dati più recente e completo su ogni entità.
 
 ## <a name="time-zone"></a>Fuso orario
 Le informazioni temporali nella ricerca avanzata sono nel fuso orario UTC.

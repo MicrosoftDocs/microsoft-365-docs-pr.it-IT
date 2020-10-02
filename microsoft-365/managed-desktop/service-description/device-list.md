@@ -1,19 +1,19 @@
 ---
 title: Dispositivi Microsoft Managed Desktop
 description: In questo argomento sono elencate le specifiche per i dispositivi approvati per Microsoft Managed Desktop.
-keywords: Microsoft Managed Desktop, Microsoft 365, servizio, documentazione
+keywords: Microsoft Managed Desktop, Microsoft 365, servizi, documentazione
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: e7d0b88542f9329d10d241e68864333ed1ec1730
-ms.sourcegitcommit: 4ac96855d7c269a0055ca8943000b762a70ca4ba
+ms.openlocfilehash: bd621ec2b80d308ecd14c9bbbb782e371d3e460a
+ms.sourcegitcommit: 0f48beaca3afa4df12d41847014975d50a4ebe7d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "47321974"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "48338362"
 ---
 # <a name="microsoft-managed-desktop-devices"></a>Dispositivi Microsoft Managed Desktop 
 
@@ -56,13 +56,13 @@ I collegamenti ai dispositivi sono disponibili solo per il riferimento. Se si de
 
 | Modello    | Specifiche minime  | Requisiti aggiuntivi    | Data archivio   | Data di pensionamento   |
 |----------|----------------|---------------------------|----------------|--------------------|
-| [PC notebook HP EliteBook 830/840/850 G6](https://store.hp.com/us/en/mdp/laptops/elitebook-840#!&tab=features) | 128 GB/Intel i5/8 GB di RAM | SKU con 5VS01AV, videocamera IR o sensore di impronte digitali necessario | Nov 30, 2020 | Nov 30, 2023 |
-| [PC notebook HP EliteBook X360 830 G6](https://store.hp.com/us/en/pdp/hp-elitebook-x360-830-g6-notebook-pc) | 128 GB/Intel i5/8 GB di RAM | SKU con 5VS01AV, videocamera IR o sensore di impronte digitali necessario | Nov 30, 2020 | Nov 30, 2023 |
+| [PC notebook HP EliteBook 830/840/850 G7](https://store.hp.com/us/en/pdp/hp-elitebook-830-g7-notebook-pc-customizable-8pv71av-mb) | 256 GB/Intel i5/8 GB di RAM | SKU con 5VS01AV | Nov 30, 2021 | Nov 30, 2024 |
+| [PC notebook HP EliteBook X360 830 G7](https://store.hp.com/us/en/pdp/hp-elitebook-x360-830-g7-notebook-pc-p-1f6c0ut-aba-1) | 256 GB/Intel i5/8 GB di RAM | SKU con 5VS01AV | Nov 30, 2021 | Nov 30, 2024 |
 | [Tablet HP Elite X2 G4](https://store.hp.com/us/en/mdp/laptops/hp-elite-x2-3074457345617405170--1) | 256 GB/Intel i5/8 GB di RAM | SKU con 5VS03AV | 31 luglio 2021 | 31 luglio 2024 |
-| [PC notebook HP EliteBook X360 1030 G4](https://store.hp.com/us/en/pdp/hp-elitebook-x360-1030-g4-notebook-pc) | 256 GB/Intel i5/8 GB di RAM | SKU con 5VS01AV | Feb 28, 2021 | Feb 28, 2024 |
-| [HP EliteBook X360 1040 G6](https://www.hp.com/go/elitebookx360-1040) | 256 GB/Intel i5/8 GB di RAM | SKU con 5VS01AV| Nov 30, 2020 | Nov 30, 2023 |
-| [HP Elite DragonFly](https://www8.hp.com/us/en/laptops/2-in-1s/elite-dragonfly-convertible.html) | 256 GB/Intel i5/8 GB di RAM | SKU con 9MZ21AV | 31 dicembre 2020 | 31 dicembre 2023 |
-| [Workstation HP Z2 Mini G4](https://store.hp.com/us/en/mdp/hp-z2-mini-workstation-451004--1) | 256 GB/Intel i5/8 GB di RAM | SKU con 8QR48AV| 31 gennaio 2021 | 31 gennaio 2024 |
+| [PC notebook HP EliteBook X360 1030 G7](https://store.hp.com/us/en/pdp/hp-elitebook-x360-1030-g7-notebook-pc-customizable-8vs68av-mb#!) | 256 GB/Intel i5/8 GB di RAM | SKU con 5VS01AV | Aug 31, 2021 | Aug 31, 2024 |
+| [HP EliteBook X360 1040 G7](https://store.hp.com/us/en/pdp/hp-elitebook-x360-1040-g7-notebook-pc-customizable-8wa57av-mb) | 256 GB/Intel i5/8 GB di RAM | SKU con 5VS01AV| Aug 31, 2021 | Aug 31, 2024 |
+| [HP Elite DragonFly](https://www8.hp.com/us/en/laptops/2-in-1s/elite-dragonfly-convertible.html) | 256 GB/Intel i5/8 GB di RAM | SKU con 9MZ21AV | Mar 31, 2021 | Mar 31, 2024 |
+| [Workstation HP Z2 Mini G5](https://store.hp.com/us/en/pdp/hp-z2-mini-g5-workstation-customizable-9jd39av-mb) | 256 GB/Intel i5/8 GB di RAM | SKU con 8QR48AV| 31 dicembre 2021 | 31 dicembre 2024 |
 | [Workstation mobile HP ZBook 14U/15U G6](https://store.hp.com/us/en/mdp/hp-zbook-14u-mobile-workstation) | 256 GB/Intel i5/8 GB di RAM | SKU con 5VS02AV, videocamera IR necessaria | Nov 30, 2020 | Nov 30, 2023 |
 
 ### <a name="microsoft"></a>Microsoft
