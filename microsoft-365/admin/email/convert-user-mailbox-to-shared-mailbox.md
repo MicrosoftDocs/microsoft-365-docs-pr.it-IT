@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 2e122487-e1f5-4f26-ba41-5689249d93ba
 description: 'Informazioni su come convertire una cassetta postale privata in una cassetta postale condivisa a cui è possibile accedere da più utenti. '
-ms.openlocfilehash: a4b2e9ce53051feb07ea035adc0c959bbb1a0948
-ms.sourcegitcommit: 0f71042edc7c3a7f10a7b92e1943abf51532cbf5
+ms.openlocfilehash: 027236afb5a77e950083f254a154c491d6abc6ac
+ms.sourcegitcommit: 79a21583a52aedd06317bbcabd8be40663379dec
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "46521030"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "48341193"
 ---
 # <a name="convert-a-user-mailbox-to-a-shared-mailbox"></a>Convertire una cassetta postale utente in una cassetta postale condivisa
 
@@ -51,48 +51,9 @@ Quando si converte la cassetta postale di un utente in cassetta condivisa, vengo
 
 4. Se la cassetta postale è inferiore a 50 GB, è possibile rimuovere la [licenza dall'utente](../manage/remove-licenses-from-users.md)e smettere di pagarla. Non eliminare l'account dell'utente. Sarà necessaria come ancoraggio per la cassetta postale condivisa. Se si converte la cassetta postale di un dipendente che lascia l'organizzazione, è necessario eseguire ulteriori passaggi per verificare che non siano più in grado di eseguire l'accesso. Per ulteriori informazioni, vedere [rimuovere un ex dipendente da Microsoft 365](../add-users/remove-former-employee.md).
     
-5. Per tutti gli altri elementi necessari per conoscere le cassette postali condivise, vedere [informazioni sulle cassette postali condivise](about-shared-mailboxes.md) e [creare una cassetta postale condivisa](create-a-shared-mailbox.md).
+> [!NOTE]
+> Non è necessario reimpostare la password dell'utente durante la conversione delle cassette postali. Tuttavia, se la password non viene reimpostata, **il nome utente e la password originali continuano a funzionare** dopo che la conversione della cassetta postale è terminata.
 
-## <a name="use-the-microsoft-365-admin-center-to-convert-a-mailbox"></a>Utilizzare l'interfaccia di amministrazione di Microsoft 365 per convertire una cassetta postale
-
-::: moniker range="o365-worldwide"
-
-1. Nell'interfaccia di amministrazione passare alla pagina **Utenti** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utenti attivi</a>.
-
-2. Selezionare il nome dell'utente di cui si desidera convertire la cassetta postale.
-
-3. Reimpostare la password dell'utente.
-
-   > [!NOTE]
-   > Non è necessario reimpostare la password dell'utente durante la conversione delle cassette postali. Tuttavia, se la password non viene reimpostata, **il nome utente e la password originali continuano a funzionare** dopo che la conversione della cassetta postale è terminata.
-
-4. Nella scheda **posta** , in **altre azioni**, selezionare **Converti in cassetta postale condivisa**. 
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. Nell'interfaccia di amministrazione passare alla pagina **Utenti** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Utenti attivi</a>.
-
-2. Selezionare l'utente di cui si desidera convertire la cassetta postale.
-
-3. Nel riquadro destro espandere Impostazioni di **posta elettronica**. Accanto a **altre impostazioni**, selezionare **Converti in cassetta postale condivisa**.
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-1. Nell'interfaccia di amministrazione passare alla pagina **Utenti** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Utenti attivi</a>.
-
-2. Selezionare l'utente di cui si desidera convertire la cassetta postale.
-
-3. Nel riquadro destro espandere Impostazioni di **posta elettronica**. Accanto a **altre impostazioni**, selezionare **Converti in cassetta postale condivisa**.
-
-::: moniker-end
-
-
-Se la cassetta postale è inferiore a 50 GB, è possibile [rimuovere la licenza dall'utente](../manage/remove-licenses-from-users.md)e smettere di pagarla. Non eliminare la vecchia cassetta postale dell'utente. Sarà necessaria come ancoraggio per la cassetta postale condivisa. Se si converte la cassetta postale di un dipendente che lascia l'organizzazione, è necessario eseguire ulteriori passaggi per verificare che non siano più in grado di eseguire l'accesso. Vedere [rimuovere un ex dipendente da Microsoft 365](../add-users/remove-former-employee.md).
-    
 Per tutti gli altri elementi necessari per conoscere le cassette postali condivise, vedere [informazioni sulle cassette postali condivise](about-shared-mailboxes.md) e [creare una cassetta postale condivisa](create-a-shared-mailbox.md).
 
 > [!NOTE]
