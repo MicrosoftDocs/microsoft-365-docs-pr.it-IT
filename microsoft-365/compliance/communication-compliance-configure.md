@@ -14,22 +14,24 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection:
 - Strat_O365_IP
-- M365-security-compliance
+- m365-security-compliance
+- m365solution-insiderrisk
+- m365initiative-compliance
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 361e20129e67832c21631ebf1dbf0031319489ed
-ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
+ms.openlocfilehash: 262cb34bbe7f2923ecf8dce88208c70ba0b5b7f7
+ms.sourcegitcommit: 79a21583a52aedd06317bbcabd8be40663379dec
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "47289117"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "48341413"
 ---
 # <a name="get-started-with-communication-compliance"></a>Introduzione alla conformità delle comunicazioni
 
 Utilizzare i criteri di conformità della comunicazione per identificare le comunicazioni degli utenti per l'esame da parte di revisori interni o esterni. Per ulteriori informazioni su come i criteri di conformità della comunicazione consentono di monitorare le comunicazioni nell'organizzazione, vedere [Communication Compliance Policies in Microsoft 365](communication-compliance.md). Se si desidera esaminare in che modo Contoso ha configurato rapidamente un criterio di conformità della comunicazione per il monitoraggio per la lingua offensiva in Microsoft teams, Exchange Online e Yammer Communications, vedere questo [caso di studio](communication-compliance-case-study.md).
 
-## <a name="before-you-begin"></a>Prima di iniziare
+## <a name="before-you-begin"></a>Informazioni preliminari
 
 Prima di iniziare a utilizzare la conformità alla comunicazione, è necessario confermare la [sottoscrizione Microsoft 365](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans) e i componenti aggiuntivi. Per accedere e utilizzare la conformità di comunicazione, è necessario che l'organizzazione disponga di una delle sottoscrizioni o dei componenti aggiuntivi seguenti:
 
@@ -133,7 +135,7 @@ Quando si assegna un gruppo di distribuzione nel criterio, il criterio monitora 
 Se si è un'organizzazione che dispone di una distribuzione locale di Exchange o di un provider di posta elettronica esterno e si desidera monitorare le chat di Microsoft teams per gli utenti, è necessario creare un gruppo di distribuzione per gli utenti che dispongono di cassette postali locali o esterne da monitorare. Più avanti in questa procedura, si assegna questo gruppo di distribuzione come selezione di **utenti e gruppi sorvegliati** nella procedura guidata per i criteri.
 
 >[!IMPORTANT]
->È necessario presentare una richiesta con il supporto tecnico Microsoft per consentire all'organizzazione di utilizzare l'interfaccia utente grafica nel centro sicurezza & conformità per cercare i dati di chat dei team per gli utenti locali. Per ulteriori informazioni, vedere [ricerca di cassette postali basate sul cloud per gli utenti locali](search-cloud-based-mailboxes-for-on-premises-users.md).
+>Per cercare i dati delle chat di Teams degli utenti locali, è necessario presentare al Supporto tecnico Microsoft la richiesta di abilitare l'organizzazione all'uso dell'interfaccia utente grafica nel Centro sicurezza e conformità. Per ulteriori informazioni, vedere [ricerca di cassette postali basate sul cloud per gli utenti locali](search-cloud-based-mailboxes-for-on-premises-users.md).
 
 Per ulteriori informazioni sulla configurazione dei gruppi, vedere:
 

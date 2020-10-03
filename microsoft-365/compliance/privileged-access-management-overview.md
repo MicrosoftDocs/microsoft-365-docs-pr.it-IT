@@ -13,18 +13,20 @@ search.appverid:
 - MET150
 ms.collection:
 - Strat_O365_IP
-- M365-security-compliance
+- m365-security-compliance
+- m365solution-insiderrisk
+- m365initiative-compliance
 ms.custom:
 - Ent_Solutions
 - seo-marvel-apr2020
 ms.assetid: ''
 description: In questo articolo viene fornita una panoramica della gestione degli accessi con privilegi in Microsoft 365, incluse le risposte alle domande frequenti.
-ms.openlocfilehash: eb5fe5320c061d40f0882f93b66afa3cad4fa0fa
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: a1bcf1fbe767b4657be8a8ebcc8bf7b101c498d8
+ms.sourcegitcommit: 79a21583a52aedd06317bbcabd8be40663379dec
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44036039"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "48341234"
 ---
 # <a name="privileged-access-management"></a>Gestione accessi con privilegi
 
@@ -50,13 +52,13 @@ Ognuno dei seguenti flussi di processo descrive l'architettura dell'accesso con 
 
 ### <a name="step-1-configure-a-privileged-access-policy"></a>Passaggio 1: configurare un criterio di accesso privilegiato
 
-Quando si configura un criterio di accesso privilegiato con l'interfaccia di [amministrazione di microsoft 365](https://admin.microsoft.com) o Exchange Management PowerShell, è possibile definire i criteri e i processi delle funzionalità di accesso privilegiato e gli attributi dei criteri nel supporto di stampa di Microsoft 365. Le attività vengono registrate nel centro sicurezza &amp; e conformità. Il criterio è ora abilitato e pronto per gestire le richieste in arrivo per le approvazioni.
+Quando si configura un criterio di accesso privilegiato con l'interfaccia di [amministrazione di microsoft 365](https://admin.microsoft.com) o Exchange Management PowerShell, è possibile definire i criteri e i processi delle funzionalità di accesso privilegiato e gli attributi dei criteri nel supporto di stampa di Microsoft 365. Le attività vengono registrate nel centro sicurezza e &amp; conformità. Il criterio è ora abilitato e pronto per gestire le richieste in arrivo per le approvazioni.
 
 ![Passaggio 1: creazione di criteri](../media/pam-step1-policy-creation.jpg)
 
 ### <a name="step-2-access-request"></a>Passaggio 2: richiesta di accesso
 
-Nell'interfaccia di [amministrazione di Microsoft 365](https://admin.microsoft.com) o con Exchange Management PowerShell, gli utenti possono richiedere l'accesso a attività con privilegi elevati o di privilegio. La funzionalità accesso privilegiato Invia la richiesta al substrato Microsoft 365 per l'elaborazione in base ai criteri di accesso ai privilegi configurati &amp; e registra l'attività nei registri del Centro sicurezza e conformità.
+Nell'interfaccia di [amministrazione di Microsoft 365](https://admin.microsoft.com) o con Exchange Management PowerShell, gli utenti possono richiedere l'accesso a attività con privilegi elevati o di privilegio. La funzionalità accesso privilegiato Invia la richiesta al substrato Microsoft 365 per l'elaborazione in base ai criteri di accesso ai privilegi configurati e registra l'attività nei registri del Centro sicurezza e &amp; conformità.
 
 ![Passaggio 2: richiesta di accesso](../media/pam-step2-access-request.jpg)
 
@@ -68,7 +70,7 @@ Viene generata una richiesta di approvazione e la notifica della richiesta in so
 
 ### <a name="step-4-access-processing"></a>Passaggio 4: accedere all'elaborazione
 
-Per una richiesta approvata, l'attività viene elaborata da Exchange Management Runspace. L'approvazione viene controllata rispetto al criterio di accesso privilegiato ed elaborata dal supporto tecnico Microsoft 365. Tutte le attività per l'attività vengono registrate nel centro &amp; sicurezza e conformità.
+Per una richiesta approvata, l'attività viene elaborata da Exchange Management Runspace. L'approvazione viene controllata rispetto al criterio di accesso privilegiato ed elaborata dal supporto tecnico Microsoft 365. Tutte le attività per l'attività vengono registrate nel centro sicurezza e &amp; conformità.
 
 ![Passaggio 4: accedere all'elaborazione](../media/pam-step4-access-processing.jpg)
 
@@ -98,6 +100,6 @@ L' [archivio protetto dei clienti](https://docs.microsoft.com/office365/admin/ma
 
 Avviare [la configurazione dell'organizzazione per la gestione degli accessi con privilegi](privileged-access-management-configuration.md).
 
-## <a name="learn-more"></a>Ulteriori informazioni
+## <a name="learn-more"></a>Altre informazioni
 
 [Guida interattiva: monitorare e controllare le attività dell'amministratore con la gestione degli accessi con privilegi](https://content.cloudguides.com/guides/Privileged%20Access%20Management)

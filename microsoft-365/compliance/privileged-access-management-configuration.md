@@ -13,24 +13,26 @@ search.appverid:
 - MET150
 ms.collection:
 - Strat_O365_IP
-- M365-security-compliance
+- m365-security-compliance
+- m365solution-insiderrisk
+- m365initiative-compliance
 ms.custom:
 - Ent_Solutions
 - seo-marvel-apr2020
 ms.assetid: ''
 description: Utilizzare questo articolo per ulteriori informazioni sull'abilitazione e sulla configurazione della gestione degli accessi con privilegi in Office 365.
-ms.openlocfilehash: 7b3ac9dbc065bcbbdf48e805a3975886a894c645
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: d75a8944cdacb6df2d6ee6570c0ce327d0e7ae00
+ms.sourcegitcommit: 79a21583a52aedd06317bbcabd8be40663379dec
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47545996"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "48341204"
 ---
 # <a name="get-started-with-privileged-access-management"></a>Introduzione alla gestione degli accessi con privilegi
 
 In questo argomento viene illustrata la possibilità di abilitare e configurare la gestione degli accessi con privilegi nell'organizzazione. È possibile utilizzare l'interfaccia di amministrazione di Microsoft 365 o Exchange Management PowerShell per gestire e utilizzare accesso privilegiato.
 
-## <a name="before-you-begin"></a>Prima di iniziare
+## <a name="before-you-begin"></a>Informazioni preliminari
 
 Prima di iniziare a utilizzare la gestione degli accessi con privilegi, è necessario confermare la [sottoscrizione Microsoft 365](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans) e gli eventuali componenti aggiuntivi. Per accedere e utilizzare la gestione degli accessi con privilegi, è necessario che l'organizzazione disponga di una delle sottoscrizioni o dei componenti aggiuntivi seguenti:
 

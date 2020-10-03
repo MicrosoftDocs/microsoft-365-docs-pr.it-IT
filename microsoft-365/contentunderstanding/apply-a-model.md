@@ -1,26 +1,22 @@
 ---
-title: Applicare un modello di comprensione del documento a una raccolta documenti
+title: Applicare un modello di analisi dei documenti a una raccolta documenti
 ms.author: efrene
 author: efrene
 manager: pamgreen
-ms.date: 8/1/2020
 audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 search.appverid: ''
-localization_priority: None
-ROBOTS: NOINDEX, NOFOLLOW
+localization_priority: Priority
 description: Informazioni su come applicare un modello pubblicato a una raccolta documenti di SharePoint
-ms.openlocfilehash: c693fa08bf3103eca01e01774e8f8b1d9e783b07
-ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
-ms.translationtype: MT
+ms.openlocfilehash: 8b7d6cf21f422ba54933c2d3ac29b4b34171059e
+ms.sourcegitcommit: f7ca339bdcad38796c550064fb152ea09687d0f3
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "48295491"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48322154"
 ---
-# <a name="apply-a-document-understanding-model-in-microsoft-sharepoint-syntex"></a>Applicazione di un modello di comprensione del documento in Microsoft SharePoint Syntex
-
-Il contenuto di questo articolo è relativo all'anteprima privata di Project Cortex. [Per ulteriori informazioni, vedere Project Cortex](https://aka.ms/projectcortex).
+# <a name="apply-a-document-understanding-model-in-microsoft-sharepoint-syntex"></a>Applicare un modello di analisi dei documenti in Microsoft SharePoint Syntex.
 
 </br>
 
@@ -28,61 +24,64 @@ Il contenuto di questo articolo è relativo all'anteprima privata di Project Cor
 
 </br>
 
-Dopo aver pubblicato il modello di conoscenza del documento, è possibile applicarlo a una raccolta documenti di SharePoint nel tenant Microsoft 365.
+Dopo aver pubblicato il modello di analisi dei documenti, è possibile applicarlo a una o più raccolte documenti di SharePoint nel tenant di Microsoft 365.
 
 > [!NOTE]
-> È possibile applicare il modello solo alle raccolte documenti a cui è possibile accedere.
+> È possibile applicare il modello solo alle raccolte documenti a cui si ha accesso.
 
 
 ## <a name="apply-your-model-to-a-document-library"></a>Applicare il modello a una raccolta documenti.
 
 Per applicare il modello a una raccolta documenti di SharePoint:
 
-1. Nella Home page del modello fare clic su **Pubblica modello**nella sezione **Applica modello a raccolte** . In alternativa, è possibile selezionare  **+ Aggiungi raccolta** nella sezione **raccolte con questo modello** . </br>
+1. Nella home page del modello, nel riquadro **Applica modello alle raccolte**, selezionare **Pubblica modello**. In alternativa, è possibile selezionare **+Aggiungi raccolta** nella sezione **Raccolte con questo modello**. </br>
 
-    ![Aggiungere un modello alla raccolta](../media/content-understanding/apply-to-library.png)</br>
+    ![Aggiungere un modello a una raccolta](../media/content-understanding/apply-to-library.png)</br>
 
-2. Selezionare il sito di SharePoint che contiene la raccolta documenti a cui si desidera applicare il modello. Se il sito non viene visualizzato nell'elenco, utilizzare la casella di ricerca per individuarlo.</br>
+2. È possibile selezionare il sito di SharePoint che contiene la raccolta a cui si vuole applicare il modello. Se il sito non viene visualizzato nell'elenco, usare la casella di ricerca per trovarlo.</br>
 
     ![Selezionare un sito](../media/content-understanding/site-search.png)</br>
 
     > [!NOTE]
-    > È necessario disporre delle autorizzazioni *Gestisci elenco* o *modifica* diritti per la raccolta documenti a cui si sta applicando il modello.</br>
+    > È necessario disporre delle autorizzazioni di *Gestione dell'elenco* o dei diritti di *modifica* per la raccolta documenti a cui si sta applicando il modello.</br>
 
-3. Dopo aver selezionato il sito, selezionare la raccolta documenti in cui si desidera applicare il modello. Nell'esempio, selezionare la raccolta *documenti* del documento dal sito di *Verifica dei casi di Contoso* .</br>
+3. Dopo aver selezionato il sito, selezionare la raccolta in cui si vuole applicare il modello. Nell'esempio selezionare la raccolta documenti *Documenti* dal sito *Rilevamento casi di Contoso*.</br>
 
     ![Selezionare una raccolta documenti](../media/content-understanding/select-doc-library.png)</br>
 
-4. Poiché il modello è associato a un tipo di contenuto, quando viene applicato alla raccolta viene creata una visualizzazione per il tipo di contenuto con le etichette estratte come colonne. Questa visualizzazione è la visualizzazione predefinita della raccolta per impostazione predefinita, ma è possibile scegliere di non averlo come visualizzazione predefinita selezionando **Impostazioni avanzate** e deselezionando **imposta questa nuova visualizzazione come predefinita**.</br>
+4. Poiché il modello è associato a un tipo di contenuto, quando viene applicato alla raccolta aggiungerà il tipo di contenuto e la relativa visualizzazione con le etichette estratte come colonne. Questa è la visualizzazione predefinita della raccolta per impostazione predefinita, ma è possibile scegliere facoltativamente di non impostarla come visualizzazione predefinita selezionando **Impostazioni avanzate** e deselezionando **Imposta questa nuova visualizzazione come predefinita**.</br>
 
-    ![Visualizzazione libreria](../media/content-understanding/library-view.png)</br>
+    ![Visualizzazione della raccolta](../media/content-understanding/library-view.png)</br>
 
 5. Selezionare **Aggiungi** per applicare il modello alla raccolta. 
-6. Nella Home page del modello, nella sezione **raccolte con questo modello** , dovrebbe essere visualizzato l'URL del sito di SharePoint elencato.</br>
+6. Nella home page del modello, nella sezione **Raccolte con questo modello**, dovrebbe essere visualizzato l'URL del sito di SharePoint elencato.</br>
 
     ![Raccolta selezionata](../media/content-understanding/selected-library.png)</br>
 
-7. Passare alla raccolta documenti e verificare di trovarsi nella visualizzazione della raccolta documenti del modello. Si noti che se si seleziona il pulsante informazioni accanto al nome della raccolta documenti, un messaggio noterà che il modello è stato applicato alla raccolta documenti.
+7. Passare alla tua raccolta documenti e assicurarsi di essere nella visualizzazione raccolta documenti del modello. Se si seleziona il pulsante informazioni accanto al nome della raccolta documenti, viene visualizzato un messaggio che informa che il modello è stato applicato alla raccolta documenti.
 
     ![Visualizzazione delle informazioni](../media/content-understanding/info-du.png)</br> 
 
 
-Dopo aver applicato il modello alla raccolta documenti, è possibile iniziare a caricare i documenti nel sito e visualizzare i risultati.
+Dopo aver applicato il modello nella raccolta documenti, è possibile iniziare a caricare documenti nel sito e visualizzare i risultati.
 
-Il modello identifica i file con il tipo di contenuto associato del modello e li elenca nella visualizzazione. Se nel modello sono presenti estrattori, la visualizzazione Visualizza le colonne per i dati che si stanno estraendo da ogni file.
+Il modello identifica i file con tipo di contenuto associato al modello e li elenca nella visualizzazione. Se il modello è dotato di estrattori, nella visualizzazione verranno mostrate le colonne dei dati da estrarre da ogni file.
 
-### <a name="apply-the-model-to-files-already-in-the-document-library"></a>Applicazione del modello ai file già presenti nella raccolta documenti
+### <a name="apply-the-model-to-files-already-in-the-document-library"></a>Applicare il modello ai file già presenti nella raccolta documenti
 
-Mentre un modello applicato elabora tutti i file caricati nella raccolta documenti dopo l'applicazione, è inoltre possibile eseguire le operazioni seguenti per l'esecuzione del modello nei file già esistenti nella raccolta documenti prima del modello applicato:
+Anche se un modello applicato elabora tutti i file caricati nella raccolta documenti dopo l'applicazione, è possibile eseguire le operazioni seguenti per eseguire il modello sui file già esistenti nella raccolta documenti prima di applicare il modello:
 
-1. Nella raccolta documenti selezionare i file che si desidera vengano elaborati dal modello.
-2. Dopo aver selezionato i file, **classificare ed estrarre** verranno visualizzati nella barra multifunzione della raccolta documenti. Selezionare **classifica ed Estrai**.
-3. I file selezionati verranno aggiunti alla coda per l'elaborazione.
+1. Nella raccolta documenti selezionare i file che si vuole far elaborare dal modello.
+2. Dopo aver selezionato i file, **Classifica ed estrai** verrà visualizzati nella barra multifunzione della raccolta documenti. Selezionare **Classifica ed estrai**.
+3. I file selezionati verranno aggiunti alla coda per essere elaborati.
 
       ![Classificare ed estrarre](../media/content-understanding/extract-classify.png)</br> 
 
 ## <a name="see-also"></a>Vedere anche
-[Creare un classificatore](create-a-classifier.md)</br>
-[Creare un estrattore](create-an-extractor.md)</br>
-[Panoramica della comprensione del documento](document-understanding-overview.md)</br>
-[Creare un modello di elaborazione dei moduli](create-a-form-processing-model.md)  
+[Creare un classificatore](create-a-classifier.md)
+
+[Creare un estrattore](create-an-extractor.md)
+
+[Panoramica dell'analisi dei documenti](document-understanding-overview.md)
+
+[Creare un modello di elaborazione moduli](create-a-form-processing-model.md)  

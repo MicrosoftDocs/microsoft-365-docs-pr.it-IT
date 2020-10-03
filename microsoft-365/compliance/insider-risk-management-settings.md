@@ -11,13 +11,16 @@ ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
-ms.collection: m365-security-compliance
-ms.openlocfilehash: 8c56b7b597ea76c74412f49afa896a0d2f1b69a1
-ms.sourcegitcommit: 4ee683c18442386f6fc5c76ffabfad2c28b81d42
+ms.collection:
+- m365-security-compliance
+- m365solution-insiderrisk
+- m365initiative-compliance
+ms.openlocfilehash: 5a1bd06e76564750c7b080182ac8ab93fc8d60de
+ms.sourcegitcommit: 79a21583a52aedd06317bbcabd8be40663379dec
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "48214905"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "48341224"
 ---
 # <a name="get-started-with-insider-risk-management-settings"></a>Informazioni introduttive sulle impostazioni di gestione dei rischi Insider
 
@@ -173,7 +176,7 @@ I campi e i valori seguenti vengono esportati per gli avvisi di gestione dei ris
 |:------------------|:----------------|
 | AlertType | Il tipo di avviso è *Custom*.  |
 | AlertId | Il GUID dell'avviso. Gli avvisi di gestione rischi Insider sono modificabili. Quando viene modificato lo stato di avviso, viene generato un nuovo log con lo stesso AlertID. Questo AlertID può essere utilizzato per correlare gli aggiornamenti per un avviso. |
-| Category | La categoria dell'avviso è *InsiderRiskManagement*. Questa categoria può essere utilizzata per distinguere gli avvisi da altri avvisi di sicurezza & conformità. |
+| Categoria | La categoria dell'avviso è *InsiderRiskManagement*. Questa categoria può essere utilizzata per distinguere gli avvisi da altri avvisi di sicurezza & conformità. |
 | Commenti | Commenti predefiniti per l'avviso. I valori sono un *nuovo avviso* (registrato quando viene creato un avviso) e l'avviso è stato *aggiornato* (registrato quando è presente un aggiornamento a un avviso). Utilizzare AlertID per correlare gli aggiornamenti per un avviso. |
 | Dati | I dati per l'avviso includono l'ID utente univoco, il nome dell'entità utente e la data e l'ora (UTC) quando l'utente è stato attivato in un criterio. |
 | Nome | Nome del criterio per i criteri di gestione dei rischi Insider che hanno generato l'avviso. |
