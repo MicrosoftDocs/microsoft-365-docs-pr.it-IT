@@ -1,5 +1,5 @@
 ---
-title: Specificare una cassetta postale per l'invio di messaggi di posta indesiderata e di phishing da un utente
+title: Criteri per gli invii degli utenti
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -15,14 +15,14 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Gli amministratori possono imparare a configurare una cassetta postale per raccogliere messaggi di posta indesiderata e di phishing segnalati dagli utenti.
-ms.openlocfilehash: 6ae534278f4471f98f2d3bdd2318c687cea9f1d3
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: bffa70184a9307869ce6170ba1ea05ae3f084ccf
+ms.sourcegitcommit: 3a0accd616ca94d6ba7f50e502552b45e9661a95
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48195808"
+ms.lasthandoff: 10/03/2020
+ms.locfileid: "48350282"
 ---
-# <a name="specify-a-mailbox-for-user-submissions-of-spam-and-phishing-messages-in-exchange-online"></a>Specificare una cassetta postale per l'invio di messaggi di posta indesiderata e di phishing in Exchange Online
+# <a name="user-submissions-policies"></a>Criteri per gli invii degli utenti
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -42,7 +42,25 @@ In Microsoft 365 organizzazioni con cassette postali di Exchange Online, è poss
 
 La distribuzione di messaggi segnalati dall'utente a una cassetta postale personalizzata invece che direttamente a Microsoft consente agli amministratori di segnalare selettivamente e manualmente i messaggi a Microsoft tramite l' [invio di amministratore](admin-submission.md).
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare
+## <a name="custom-mailbox-prerequisites"></a>Prerequisiti delle cassette postali personalizzate
+
+Utilizzare gli articoli seguenti per configurare i prerequisiti richiesti in modo che i messaggi segnalati dall'utente vadano alla cassetta postale personalizzata:
+
+- Ignorare il filtro antispam creando una regola del flusso di posta di Exchange per impostare il livello di probabilità di posta indesiderata. Vedere [utilizzo dell'interfaccia di amministrazione di Exchange per creare una regola del flusso di posta che imposta il livello SCL di un messaggio](https://docs.microsoft.com/microsoft-365/security/office-365-security/use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages?view=o365-worldwide#use-the-eac-to-create-a-mail-flow-rule-that-sets-the-scl-of-a-message) per impostare il livello SCL su **-1**.
+
+- Disattivare l'analisi degli allegati per il malware. Use [set up (o Edit) un criterio di allegati sicuri ATP](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-atp-safe-attachments-policies?view=o365-worldwide#step-2-set-up-or-edit-an-atp-safe-attachments-policy) per creare un criterio di allegati sicuri con l'impostazione **off-Attachment non verrà analizzato per il malware** abilitato.
+
+- Disattiva l'analisi degli URL nei messaggi. Utilizzare i [criteri per i collegamenti sicuri ATP che si applicano a tutti i destinatari di posta elettronica specifici](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-atp-safe-links-policies?view=o365-worldwide#step-3-add-or-edit-atp-safe-links-policies-that-apply-to-all-or-specific-email-recipients) per creare un criterio per i collegamenti sicuri con **selezionare l'azione per gli URL potenzialmente dannosi sconosciuti nei messaggi** impostati su **disattivato**.
+
+- Creare un criterio antimalware per disattivare l'eliminazione automatica di malware zero-hour. Vedere [use the Security & Compliance Center to create anti-malware Policies](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-your-spam-filter-policies?view=o365-worldwide#use-the-security--compliance-center-to-create-anti-spam-policies) to set **malware zero-hour auto Purge** su **off**.
+
+- Creare un criterio di filtro per la posta indesiderata per disabilitare lo Zap (zero-hour auto Purge) per la posta indesiderata e phishing ZAP. Per [creare criteri di protezione dalla posta indesiderata, vedere Use the Security & Compliance Center](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-your-spam-filter-policies?view=o365-worldwide#use-the-security--compliance-center-to-create-anti-spam-policies) e cancellare le caselle di controllo **su** per spam zap e phishing zap.
+
+- Disabilitare la regola di posta indesiderata. Utilizzare [Configura le impostazioni della posta indesiderata nelle cassette postali di Exchange Online](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-junk-email-settings-on-exo-mailboxes?view=o365-worldwide) per disabilitare la regola di posta indesidera Una volta disabilitata, EOP non è in grado di spostare i messaggi nella cartella posta indesiderata in base al messaggio di spostamento del verdetto del filtro di posta indesiderata nella **cartella posta indesiderata** o nella raccolta degli elenchi indirizzi
+
+Dopo aver verificato che la cassetta postale soddisfi tutti i prerequisiti applicabili, [utilizzare il Centro sicurezza & Compliance per configurare la cassetta postale per gli invii degli utenti](#use-the-security--compliance-center-to-configure-the-user-submissions-mailbox) (in questo articolo).
+
+## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare?
 
 - Aprire il Centro sicurezza e conformità in <https://protection.office.com/>. Per passare direttamente alla pagina degli **invii degli utenti** , utilizzare <https://protection.office.com/userSubmissionsReportMessage> .
 

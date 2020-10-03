@@ -1,6 +1,6 @@
 ---
 title: Usare i dati analitici
-description: ''
+description: Panoramica delle informazioni disponibili in Microsoft Managed Desktop
 keywords: Microsoft Managed Desktop, Microsoft 365, servizi, documentazione
 ms.service: m365-md
 author: jaimeo
@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: b3ed56dd3e669dbd5a2c3f09d87dfd87fe680aff
-ms.sourcegitcommit: 3f8e573244bc082518125e339a385c41ef6ee800
+ms.openlocfilehash: ba91a33da9f4d2187938c27398d5ef7c1cacebcd
+ms.sourcegitcommit: 3a0accd616ca94d6ba7f50e502552b45e9661a95
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "48337182"
+ms.lasthandoff: 10/03/2020
+ms.locfileid: "48350837"
 ---
 # <a name="work-with-insights"></a>Usare i dati analitici
 
@@ -31,9 +31,11 @@ Con questi dashboard è possibile trovare le risposte a domande di questo tipo:
 - Qual è lo stato corrente degli aggiornamenti della sicurezza sui dispositivi?
 - Quanto tempo è necessario per il 95% dei dispositivi per ottenere corrente con l'aggiornamento della sicurezza più recente?
 
-Per accedere a queste visualizzazioni da [Microsoft Endpoint Manager](https://endpoint.microsoft.com/), passare alla scheda Microsoft Managed Desktop nella Home page e selezionare **Visualizza dettagli** nell'area **report** :
 
-<!--Update picture to show in MEM [Admin center with Reports area in the upper right including the device reports card and the "view details" link.](../../media/insights_overview.png)-->
+Per accedere a queste visualizzazioni da [Microsoft Endpoint Manager](https://endpoint.microsoft.com/), passare alla scheda Microsoft Managed Desktop nella Home page e selezionare **Visualizza dettagli** nell'area dei **report** :
+
+
+![Pagina principale dell'interfaccia di amministrazione con area di Reporting in basso a sinistra e Visualizza collegamento Dettagli](../../media/insights-main.png)
 
 
 ## <a name="usage-insights"></a>Dati analitici sull'utilizzo

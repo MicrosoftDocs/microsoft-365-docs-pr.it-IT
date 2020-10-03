@@ -7,7 +7,7 @@ author: MSFTTracyP
 manager: chrisda
 ms.date: ''
 audience: ITPro
-ms.topic: article
+ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 description: Gli amministratori possono imparare a instradare la posta indesiderata alle cartelle posta indesiderata degli utenti in un ambiente ibrido di Exchange Online Protection.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 4c01ad0e8efa4d28e1b5d1e72b3daa87bb01b619
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 76003f18009ebf9159f01d916cdaf38b50a213d1
+ms.sourcegitcommit: 3a0accd616ca94d6ba7f50e502552b45e9661a95
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48196594"
+ms.lasthandoff: 10/03/2020
+ms.locfileid: "48350340"
 ---
 # <a name="configure-standalone-eop-to-deliver-spam-to-the-junk-email-folder-in-hybrid-environments"></a>Configurare EOP autonomo per recapitare la posta indesiderata nella cartella posta indesiderata in ambienti ibridi
 
@@ -49,9 +49,9 @@ In questo argomento viene descritto come creare queste regole del flusso di post
 > [!TIP]
 > Invece di inviare i messaggi alla cartella posta indesiderata dell'utente locale, è possibile configurare i criteri di protezione dalla posta indesiderata in EOP per la quarantena dei messaggi di posta indesiderata in EOP. Per altre informazioni, vedere [Configurare i criteri di protezione dalla posta indesiderata in EOP](configure-your-spam-filter-policies.md).
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare
+## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare?
 
-- Prima di poter eseguire queste procedure, è necessario disporre delle autorizzazioni nell'ambiente di Exchange locale. In particolare, è necessario che venga assegnato il ruolo **regole di trasporto** , assegnato ai ruoli Gestione **organizzazione**, **Gestione conformità**e **record** per impostazione predefinita. Per ulteriori informazioni, vedere [Add members to a role group](https://docs.microsoft.com/Exchange/permissions/role-group-members?view=exchserver-2019#add-members-to-a-role-group).
+- Prima di poter eseguire queste procedure, è necessario disporre delle autorizzazioni nell'ambiente di Exchange locale. In particolare, è necessario che venga assegnato il ruolo **regole di trasporto** , assegnato ai ruoli Gestione **organizzazione**, **Gestione conformità**e **record** per impostazione predefinita. Per ulteriori informazioni, vedere [Add members to a role group](https://docs.microsoft.com/Exchange/permissions/role-group-members#add-members-to-a-role-group).
 
 - Se e quando un messaggio viene recapitato nella cartella posta indesiderata in un'organizzazione di Exchange locale, è controllato da una combinazione delle seguenti impostazioni:
 
