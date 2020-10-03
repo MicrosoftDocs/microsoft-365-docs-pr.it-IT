@@ -3,24 +3,21 @@ title: Creare un estrattore
 ms.author: efrene
 author: efrene
 manager: pamgreen
-ms.date: 8/1/2020
 audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 search.appverid: ''
-localization_priority: None
-ROBOTS: NOINDEX, NOFOLLOW
+localization_priority: Priority
 description: Informazioni su come creare un estrattore in Microsoft SharePoint Syntex.
-ms.openlocfilehash: 740df6769b3a1675e4e1691f84d164312b15567c
-ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
-ms.translationtype: MT
+ms.openlocfilehash: d68cc8b8c337c1ae6740eb5775576a54279b8389
+ms.sourcegitcommit: f7ca339bdcad38796c550064fb152ea09687d0f3
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "48295457"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48321810"
 ---
 # <a name="create-an-extractor-preview"></a>Creare un estrattore (anteprima)
 
-Il contenuto di questo articolo è relativo all'anteprima privata di Project Cortex. [Per ulteriori informazioni, vedere Project Cortex](https://aka.ms/projectcortex).
 
 </br>
 
@@ -28,109 +25,106 @@ Il contenuto di questo articolo è relativo all'anteprima privata di Project Cor
 
 </br> 
 
-Prima o dopo la creazione di un modello di classificazione per automatizzare l'identificazione e la classificazione di tipi di documento specifici, è possibile scegliere di aggiungere estrattori al modello per estrarre informazioni specifiche da tali documenti. Ad esempio, è possibile che il modello non solo identifichi tutti i documenti di *rinnovo del contratto* aggiunti alla raccolta documenti, ma anche per visualizzare la data di *inizio del servizio* per ogni documento come colonna nella raccolta documenti.
+Prima o dopo aver creato un modello di classificazione per automatizzare l'identificazione e la classificazione di tipi di documento specifici, è possibile scegliere di aggiungere estrattori al modello per estrarre informazioni specifiche da tali documenti. Ad esempio, si può fare in modo che il modello non solo identifichi tutti i documenti *Rinnovo del contratto* aggiunti alla raccolta documenti, ma visualizzi anche la *Data di avvio del servizio* per ogni documento come valore di colonna nella raccolta documenti.
 
-È necessario creare un estrattore per ogni entità del documento che si desidera estrarre. Nell'esempio, si desidera estrarre la data di *inizio del servizio* per ogni documento di *rinnovo del contratto* identificato dal modello. Questa operazione deve essere eseguita quando si desidera visualizzare una visualizzazione nella raccolta documenti di tutti i documenti di *rinnovo del contratto* con una colonna che mostra il valore della data di inizio del servizio per ogni documento.
+È necessario creare un estrattore per ogni entità nel documento che si vuole estrarre. In questo esempio si vuole estrarre la  **Data di avvio del servizio**  per ogni documento  **Rinnovo del contratto**  identificato dal modello. Si vuole ottenere una vista di tutti i documenti  **Rinnovo del contratto**  nella raccolta documenti, con una colonna che mostra il valore della data di **Avvio del servizio** per ogni documento. 
 
 > [!NOTE]
-> Prima di creare un estrattore, è necessario [aggiungere i file di esempio](https://docs.microsoft.com/microsoft-365/contentunderstanding/create-a-classifier#add-your-example-files) per agevolare il training del modello per identificare le informazioni che si desidera estrarre. Utilizzare gli stessi file di esempio utilizzati per creare il classificatore.
+> Per creare un estrattore, è possibile usare gli stessi file caricati in precedenza per il training del classificatore. 
 
 ## <a name="name-your-extractor"></a>Assegnare un nome all'estrattore
 
-1. Nella sezione **Crea e addestra estrattori** della Home page del modello fare clic su **Train Extractor**.
-2. Nella schermata **nuovo estrattore di entità** , digitare il nome dell'estrattore nel campo **nuovo nome estrattore** . Ad esempio, denominarlo **Data di inizio del servizio** se si desidera estrarre la data di inizio del servizio da ogni documento di rinnovo del contratto.
+1. Nella sezione **Creare ed eseguire il training di estrattori** della home page del modello fare clic su **Eseguire il training dell'estrattore**.
+2. Nella schermata **Nuovo estrattore di entità** digitare il nome dell'estrattore nel campo **Nome del nuovo estrattore**. Ad esempio, assegnare il nome **Data di avvio del servizio** per estrarre la data di avvio del servizio da ogni documento Rinnovo del contratto. Si può anche decidere di riutilizzare una colonna creata in precedenza, ad esempio una colonna di metadati gestiti.
 3. Fare clic su **Crea**.
 
 ## <a name="add-a-label"></a>Aggiungere un'etichetta
 
-Il passaggio successivo consiste nell'assegnare un'etichetta alle informazioni che si desidera estrarre nei file di addestramento di esempio.
+Il passaggio successivo consiste nell'etichettare l'entità da estrarre nei file di training di esempio.
 
-La creazione dell'estrattore apre la pagina estrattore. Di seguito viene mostrato un elenco dei file di esempio, con il primo file nell'elenco visualizzato nel visualizzatore.
+Quando si crea l'estrattore, viene aperta la pagina dell'estrattore. In questa pagina è presente un elenco dei file di esempio e nel visualizzatore viene mostrato il primo file nell'elenco.
 
-1. Dal Visualizzatore selezionare i dati che si desidera estrarre dai file. Ad esempio, se si desidera estrarre la *Data di inizio del servizio*, è necessario evidenziare il valore data nel primo file (*lunedì 14 ottobre 2019*). e quindi fare clic su **Salva**.  Nella colonna **Label** dovrebbe essere visualizzato il valore visualizzato nel file nell'elenco degli esempi etichettati.
-2. Selezionare il **file successivo** per il salvataggio automatico e aprire il file successivo nell'elenco nel visualizzatore. Oppure seleziona **Salva** e quindi seleziona un altro file dall'elenco degli **esempi etichettati** .
-3. Nel Visualizzatore, ripetere i passaggi 1 e 2, quindi ripetere fino a quando non è stata salvata l'etichetta in tutti e cinque i file.
+1. Nel visualizzatore selezionare i dati da estrarre dai file. Ad esempio, se si vuole estrarre la *Data di avvio del servizio*, evidenziare il valore della data nel primo file (*lunedì 14 ottobre 2019*), quindi fare clic su **Salva**.  Il valore presente nel file dovrebbe essere visualizzato nell'elenco Esempi etichettati, nella colonna **Etichetta**.
+2. Selezionare **File successivo** per salvare automaticamente e aprire nel visualizzatore il file successivo nell'elenco. In alternativa, selezionare **Salva** e quindi selezionare un altro file nell'elenco **Esempi etichettati**.
+3. Nel visualizzatore ripetere i passaggi 1 e 2, quindi ripetere fino a salvare l'etichetta in tutti e cinque i file.
 
     ![Impostazioni avanzate](../media/content-understanding/select-service-start-date.png) 
 
-### <a name="add-a-negative-example"></a>Aggiungere un esempio negativo
-
-Analogamente alla modalità di aggiunta di un file di esempio negativo durante la creazione di un classificatore, è necessario aggiungere un campione negativo per l'estrattore. Dovrebbe essere un file che non contiene un valore di data di inizio del servizio.
-
-1. Nell'elenco **esempi etichettati** selezionare un esempio negativo.
-2. Nel Visualizzatore all'inizio dell'articolo selezionare **Nessuna etichetta presente**.
-3. Fare clic su **Salva**.
  
-Dopo aver identificato cinque file, viene visualizzato un banner di notifica che informa di passare all'allenamento. È possibile scegliere di visualizzare più documenti o passare all'allenamento. 
+Dopo avere etichettato cinque file, viene visualizzato un banner di notifica che indica di passare al training. È possibile decidere di etichettare altri documenti o procedere al training. 
 
 ## <a name="add-an-explanation"></a>Aggiungere una spiegazione
 
-In questo esempio viene creata una spiegazione che fornisce un suggerimento relativo al formato di entità stesso e alle varianti che può avere nei documenti di esempio. Ad esempio, un valore date può essere in un certo numero di formati diversi, come:
-- 10/14/2019
+In questo esempio si creerà una spiegazione che offre un suggerimento sul formato dell'entità e sulle varianti che può avere nei documenti di esempio. Ad esempio, un valore di data può essere espresso in diversi formati, quali:
+- 14/10/2019
 - 14 ottobre 2019
 - Lunedì 14 ottobre 2019
  
 
-Per identificare la *Data di inizio del servizio* , è possibile creare una spiegazione del modello.
+Per identificare la *Data di avvio del servizio*, è possibile creare una spiegazione di tipo criteri.
 
-1. Nella sezione spiegazione selezionare **nuovo** e digitare un nome, ad esempio *Data*.
-2. Per tipo, selezionare **elenco modelli**.
-3. Per valore, specificare la variazione di data come viene visualizzata nei file di esempio. Ad esempio, se si dispone di formati di data visualizzati come 0/00/0000, si immettono tutte le varianti presenti nei documenti, quali:
+1. Nella sezione Spiegazione selezionare **Nuovo** e digitare un nome, ad esempio *Data*.
+2. In Tipo selezionare **Elenco criteri**.
+3. In Valore specificare le varianti della data che appaiono nei file di esempio. Ad esempio, se sono presenti formati di data visualizzati come 0/00/0000, immettere tutte le varianti presenti nei documenti, ad esempio:
     - 0/0/0000
     - 0/00/0000
     - 00/0/0000
     - 00/00/0000
 4. Selezionare **Salva**.
 
-### <a name="use-the-explanation-library"></a>Utilizzare la raccolta di spiegazioni
+> [!NOTE]
+> Per altre informazioni sui tipi di spiegazione, vedere [Tipi di spiegazione](https://docs.microsoft.com/microsoft-365/contentunderstanding/explanation-types-overview).  
 
-Per la creazione di spiegazioni per gli elementi, ad esempio le date, è più facile usare la libreria delle spiegazioni piuttosto che immettere manualmente tutte le varianti. La raccolta di spiegazioni è un insieme di spiegazioni di modelli e frasi predefinite. La raccolta fornisce tutti i formati per gli elenchi di frasi o schemi comuni, ad esempio le date, i numeri di telefono, il CAP e così via. 
 
-Per l'esempio di *Data di inizio del servizio* , è più efficiente utilizzare la spiegazione predefinita per la *Data* nella raccolta di spiegazioni:
+### <a name="use-the-explanation-library"></a>Usare la raccolta di spiegazioni
 
-1. Nella **sezione spiegazione**selezionare **nuovo**e quindi fare clic su **dalla raccolta delle spiegazioni**.
-2. Nella raccolta delle spiegazioni selezionare **Data**. È possibile visualizzare tutte le varianti di data riconosciute.
+Per creare spiegazioni per elementi come le date, è più facile [usare la raccolta di spiegazioni](https://docs.microsoft.com/microsoft-365/contentunderstanding/explanation-types-overview#use-the-explanation-library) piuttosto che immettere manualmente tutte le varianti. La raccolta di spiegazioni è un set di spiegazioni predefinite di tipo frase o criteri. La raccolta cerca di fornire tutti i formati per elenchi di frasi o criteri comuni, come date, numeri di telefono, codici postali e molti altri. 
+
+Per l'esempio *Data di avvio del servizio*, è più efficace usare la spiegazione predefinita per *Data* nella raccolta di spiegazioni:
+
+1. Nella **sezione Spiegazione** selezionare **Nuovo** e quindi **Da raccolta spiegazioni**.
+2. Nella raccolta di spiegazioni selezionare **Data**. Vengono visualizzate tutte le varianti di data riconosciute.
 3. Selezionare **Aggiungi**.</br>
 
     ![Raccolta di spiegazioni](../media/content-understanding/explanation-library.png) 
 
-4. Nella pagina **Crea una spiegazione** le informazioni relative alla *Data* della raccolta delle spiegazioni vengono riempite automaticamente dai campi. Selezionare **Salva**.</br>
+4. Nella pagina **Crea spiegazione** i campi vengono compilati automaticamente con le informazioni *Data* presenti nella raccolta di spiegazioni. Selezionare **Salva**.</br>
 
     ![Data](../media/content-understanding/date-explanation-library.png) 
 
-## <a name="train-the-model"></a>Addestramento del modello 
+## <a name="train-the-model"></a>Eseguire il training del modello 
 
-Salvataggio delle spiegazioni avviare la formazione. Se il modello contiene informazioni sufficienti per estrarre i dati dai file di esempio etichettati, verranno visualizzati tutti i file contrassegnati con la **corrispondenza**.  
+Quando si salva la spiegazione, viene avviato il training. Se il modello contiene informazioni sufficienti per estrarre i dati dai file di esempio etichettati, a ogni file sarà associata l'etichetta **Corrisponde**.  
 
-![Match](../media/content-understanding/match2.png) 
+![Corrisponde](../media/content-understanding/match2.png) 
 
-Se la spiegazione non contiene informazioni sufficienti per individuare i dati che si desidera estrarre, ogni file verrà etichettato con la **mancata corrispondenza**. È possibile fare clic sui file non **corrispondenti** per visualizzare altre informazioni sul motivo della mancata corrispondenza.
+Se la spiegazione non contiene informazioni sufficienti per individuare i dati da estrarre, a ogni file sarà associata l'etichetta **Non corrispondenti**. È possibile fare clic sui file **Non corrispondenti** per ottenere altre informazioni sul motivo della mancata corrispondenza.
 
 
 ## <a name="add-another-explanation"></a>Aggiungere un'altra spiegazione
 
-Spesso la mancata corrispondenza indica che la spiegazione fornita non ha fornito informazioni sufficienti per estrarre il valore della data di inizio del servizio in modo che corrisponda ai file etichettati. Potrebbe essere necessario modificarlo oppure aggiungere un'altra spiegazione.
+Spesso la mancata corrispondenza indica che la spiegazione fornita non conteneva informazioni sufficienti per estrarre il valore della data di avvio del servizio per trovare una corrispondenza nei file etichettati. Potrebbe essere necessario modificarla o aggiungerne un'altra.
 
-Per l'esempio, si noti che la *Data di inizio del servizio della stringa di* testo precede sempre il valore effettivo. Per identificare la data di inizio del servizio, è necessario creare una spiegazione per la frase.
+In questo esempio, la stringa di testo *Data di avvio del servizio di* precede sempre il valore effettivo. Per identificare la Data di avvio del servizio, è necessario creare una spiegazione di tipo frase.
 
-1. Nella sezione spiegazione selezionare **nuovo**e quindi digitare un nome, ad esempio *stringa di prefisso*.
-2. Per il tipo selezionare l' **elenco delle frasi**.
-3. Utilizzare la *Data di inizio del servizio* come valore.
+1. Nella sezione Spiegazione selezionare **Nuovo** e digitare un nome, ad esempio *Stringa prefisso*.
+2. In Tipo selezionare **Elenco frasi**.
+3. Usare *Data di avvio del servizio di* come valore.
 4. Selezionare **Salva**.
 
-    ![Stringa di prefisso](../media/content-understanding/prefix-string.png) 
+    ![Stringa prefisso](../media/content-understanding/prefix-string.png) 
 
-## <a name="train-the-model-again"></a>Eseguire di nuovo il training del modello
+## <a name="train-the-model-again"></a>Ripetere il training del modello
 
-Salvando la spiegazione viene riavviata la formazione, questa volta utilizzando entrambe le spiegazioni del campione. Se il modello contiene informazioni sufficienti per estrarre i dati dai file di esempio etichettati, è possibile visualizzare ogni file con l'etichetta **corrispondente**. 
+Quando si salva la spiegazione, viene eseguito nuovamente il training, questa volta usando entrambe le spiegazioni nell'esempio. Se il modello contiene informazioni sufficienti per estrarre i dati dai file di esempio etichettati, a ogni file sarà associata l'etichetta **Corrisponde**. 
 
-Se si riceve di nuovo una **mancata corrispondenza** nei file etichettati, è probabile che sia necessario creare un'altra spiegazione per fornire al modello ulteriori informazioni per identificare il tipo di documento oppure prendere in considerazione le modifiche apportate al modello di esempio.
+Se i file etichettati risultano nuovamente **Non corrispondenti**, probabilmente è necessario creare un'altra spiegazione per fornire ulteriori informazioni al modello per identificare il tipo di documento oppure valutare la possibilità di modificare quelle esistenti.
 
 ## <a name="test-your-model"></a>Testare il modello
 
-Se si riceve una corrispondenza nei file di esempio etichettati, è ora possibile testare il modello nei file di esempio senza etichetta rimanenti.
+Se viene rilevata una corrispondenza nei file di esempio etichettati, è possibile testare il modello sui rimanenti file di esempio non etichettati. Questo è un passaggio utile per valutare l'adeguatezza del modello prima di usarlo, testandolo su file che il modello non ha ancora esaminato.
 
-1. Nella Home page del modello fare clic sulla scheda **test** .  Questo esegue il modello nei file di esempio senza etichetta.
-2. Nell'elenco **file di test** , i file di esempio vengono visualizzati per mostrare se il modello è in grado di estrarre le informazioni necessarie. Utilizzare queste informazioni per determinare l'efficacia del classificatore per identificare i documenti.
+1. Nella home page del modello fare clic sulla scheda **Test**. Il modello viene eseguito sui file di esempio non etichettati.
+2. Nell'elenco **Testa i file** vengono visualizzati i file di esempio e viene mostrato se il modello è in grado di estrarre le informazioni necessarie. Usare queste informazioni per determinare l'efficacia del classificatore nell'identificazione dei documenti.
 
     ![Test sui file](../media/content-understanding/test-filies-extractor.png) 
