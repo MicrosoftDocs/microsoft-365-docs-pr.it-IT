@@ -17,12 +17,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 'Riepilogo: Posizioni dei dati di Microsoft 365'
-ms.openlocfilehash: 125d58b0565bf0380a4b2578aea4db6b26596f14
-ms.sourcegitcommit: 96b4593becc9450af136c528844e858c6e88b5a9
+ms.openlocfilehash: 7a2fb85d0d7320770a1ab32efcd024a9e348795e
+ms.sourcegitcommit: 3f8e573244bc082518125e339a385c41ef6ee800
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "48269542"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "48337158"
 ---
 <!--
 Note to new owner: Links in the Notes and FAQ sections need to be added from the source document at https://microsoft.sharepoint.com/:w:/t/golocalteam/Ebv6_Lw6FvNKucfA1eESTPUBy6O1MdvWEeT-L8O5a2HsIg?e=4%3AUfF1Uj&at=9&xsdata=MDR8MDF8am9zZXBoZEBtaWNyb3NvZnQuY29tfGM1ZTg1ODI0ZWRmMTRlN2E3MDkzMDhkNzgzNDMxYTczfDcyZjk4OGJmODZmMTQxYWY5MWFiMmQ3Y2QwMTFkYjQ3fDF8MHw2MzcxMjIxOTY1MzQ5NjM5NDl8VW5rbm93bnxUV0ZwYkdac2IzZDhleUpXSWpvaU1DNHdMakF3TURBaUxDSlFJam9pVjJsdU16SWlMQ0pCVGlJNklrMWhhV3dpTENKWFZDSTZNbjA9fC0x&sdata=MkxOUXhlZEdyR0I1SzBvd044d2hkd2RPaGN2RUpaS09jMkZTcys0dkZQRT0%3D
@@ -41,7 +41,7 @@ Informazioni sugli impegni contrattuali relativi alla posizione di archiviazione
 Per le posizioni dei dati di Azure Active Directory, visitare la [mappa dei dati di AAD](https://go.microsoft.com/fwlink/p/?linkid=2092972).
 
 
-A causa delle circostanze senza precedenti legate al COVID-19 e alla necessità di gestire la richiesta di servizi online, se l'organizzazione è un istituto di istruzione in Europa, Microsoft può eseguire il provisioning del tenant di Office 365, trasferire i dati e archiviare i dati inattivi all'interno dell'Unione Europea.Se l'organizzazione è un istituto di istruzione in India, Microsoft può eseguire il provisioning del tenant di Office 365, trasferire i dati e archiviare i dati inattivi in India, Europa o Stati Uniti.Se l'organizzazione è un istituto di istruzione in Sudafrica, Microsoft può eseguire il provisioning del tenant di Office 365, trasferire i dati e archiviare i dati inattivi in Sudafrica o Europa. Il nostro impegno a garantire la conformità, la privacy e la sicurezza rimane invariato e applicheremo le misure necessarie e prudenti per mantenere la disponibilità del servizio. Manterremo la conformità a tutte le leggi applicabili relativamente ai trasferimenti dei dati.
+Se l'indirizzo di fatturazione del cliente è esterno all'Europa e il cliente ha un abbonamento a Office 365 Education, nonostante la sezione "Località dei dati dei clienti disponibili per i servizi di base online" della OST, Microsoft può eseguire il provisioning del tenant di Office 365 del cliente, trasferire i dati dei clienti a e archiviare i dati dei clienti in qualsiasi punto dell'Europa o del Nord America.  Se l'indirizzo di fatturazione del cliente è in Europa e il cliente ha un abbonamento a Office 365 Education, nonostante la sezione "Località dei dati dei clienti disponibili per i servizi di base online" della OST, Microsoft può eseguire il provisioning del tenant di Office 365 del cliente, trasferire i dati dei clienti a e archiviare i dati dei clienti in qualsiasi punto dell'Unione europea.
 
 
 
