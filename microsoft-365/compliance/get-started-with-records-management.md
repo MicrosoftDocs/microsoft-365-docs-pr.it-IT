@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Se è necessaria una soluzione di gestione dei record per Microsoft 365 che gestisca i contenuti di valore per obblighi legali, aziendali o normativi, di seguito vengono riportate alcune indicazioni utili per iniziare.
-ms.openlocfilehash: 1983aca82bdab2ca7bb63d5a508dc3843ac1e322
-ms.sourcegitcommit: 22dab0f7604cc057a062698005ff901d40771692
+ms.openlocfilehash: fd3e3368b7a23cb31a8df4953268576de2419f89
+ms.sourcegitcommit: b06a4f21da247edb03fdf6a01eafb7d4fb387b33
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "46868901"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48333852"
 ---
 # <a name="get-started-with-records-management"></a>Introduzione alla gestione dei record
 
@@ -70,15 +70,16 @@ Usare la seguente tabella per eseguire il mapping dei requisiti aziendali relati
 |----------------|---------------|
 |Dichiarare un record |[Usare le etichette di conservazione per dichiarare i record](declare-records.md)|
 |Aggiornare un record |[Usare il controllo delle versioni per aggiornare i record archiviati in SharePoint o OneDrive](record-versioning.md)|
-|Consentire agli amministratori e utenti di applicare manualmente un set di azioni conserva ed elimina per documenti e messaggi di posta elettronica: <br />-  SharePoint <br />- OneDrive <br />- Outlook e Outlook sul Web|[Creare etichette di conservazione e applicarle nelle app](create-apply-retention-labels.md)|
-|Consentire agli amministratori del sito di impostare un'etichetta di conservazione predefinita per tutto il contenuto di una raccolta, una cartella o un set di documenti di SharePoint|[Creare etichette di conservazione e applicarle nelle app](create-apply-retention-labels.md)|
-|Consentire agli utenti di applicare automaticamente un'etichetta di conservazione ai messaggi di posta elettronica con le regole di Outlook|[Creare etichette di conservazione e applicarle nelle app](create-apply-retention-labels.md)|
-|Applicare automaticamente un set di azioni conserva ed elimina ai documenti e ai messaggi di posta elettronica |[Applicare automaticamente un'etichetta di conservazione al contenuto](apply-retention-labels-automatically.md)|
+|Consentire ad amministratori e utenti di applicare manualmente azioni di conservazione ed eliminazione per documenti e messaggi di posta elettronica: <br />-  SharePoint <br />- OneDrive <br />- Outlook e Outlook sul Web|[Creare etichette di conservazione e applicarle nelle app](create-apply-retention-labels.md)|
+|Consentire agli amministratori del sito di impostare azioni di conservazione ed eliminazione predefinite per tutto il contenuto di una raccolta, una cartella o un set di documenti di SharePoint|[Creare etichette di conservazione e applicarle nelle app](create-apply-retention-labels.md)|
+|Consentire agli utenti di applicare automaticamente azioni di conservazione ed eliminazione ai messaggi di posta elettronica con le regole di Outlook|[Creare etichette di conservazione e applicarle nelle app](create-apply-retention-labels.md)|
+|Consentire agli amministratori di applicare azioni di conservazione ed eliminazione a un modello di analisi dei documenti, in modo che vengano applicate automaticamente ai documenti identificati in una raccolta di SharePoint.|[Creare etichette di conservazione e applicarle nelle app](create-apply-retention-labels.md)|
+|Applicare automaticamente azioni di conservazione ed eliminazione ai documenti e ai messaggi di posta elettronica |[Applicare automaticamente un'etichetta di conservazione al contenuto](apply-retention-labels-automatically.md)|
 |Avviare il periodo di conservazione quando si verifica un evento, ad esempio:  <br />- Dipendenti che lasciano l'organizzazione <br />- Scadenza contratti <br />- Fine del ciclo di vita del prodotto| [Avviare la conservazione al verificarsi di un evento](event-driven-retention.md)|
 |Gestire il ciclo di vita di tipi di documenti diversi in SharePoint| [Usare etichette di riservatezza per gestire il ciclo di vita dei documenti archiviati in SharePoint](auto-apply-retention-labels-scenario.md)|
-|Assicurarsi il tutto sia revisionato e approvato prima di eliminare il contenuto al termine del periodo di conservazione|[Revisioni per l'eliminazione](disposition.md#disposition-reviews) |
-|Disporre di una prova di eliminazione quando il contenuto viene eliminato al termine del periodo di conservazione|[Eliminazione dei record](disposition.md#disposition-of-records) |
-| Controlla come e dove vengono applicate le etichette di conservazione | [Monitoraggio delle etichette di conservazione](retention.md#monitoring-retention-labels) |
+|Prevedere la revisione e l’approvazione di un soggetto terzo prima che il contenuto sia eliminato definitivamente al termine del periodo di conservazione|[Revisioni per l'eliminazione](disposition.md#disposition-reviews) |
+|Disporre di una prova di eliminazione quando il contenuto viene eliminato definitivamente al termine del periodo di conservazione|[Eliminazione dei record](disposition.md#disposition-of-records) |
+|Monitorare come e dove le impostazioni di conservazione ed eliminazione sono applicate agli elementi | [Monitoraggio delle etichette di conservazione](retention.md#monitoring-retention-labels) |
 
 ## <a name="end-user-documentation-for-records"></a>Documentazione per gli utenti finali sui record
 
