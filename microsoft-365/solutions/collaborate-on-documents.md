@@ -16,12 +16,12 @@ ms.custom:
 localization_priority: Normal
 f1.keywords: NOCSH
 description: In questo articolo vengono fornite informazioni su come collaborare con gli utenti di un documento in SharePoint e OneDrive.
-ms.openlocfilehash: 98eea8fe9c613aef3e24f9e4bb6746ddc9a527ab
-ms.sourcegitcommit: 445b249a6f0420b32e49742fd7744006c7090b2b
+ms.openlocfilehash: 1a7591915efa82f1995ce2789e181dc350cd3784
+ms.sourcegitcommit: 8589323c1b4ab43aab30597ee66303b0a0eb71ed
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46798271"
+ms.lasthandoff: 10/05/2020
+ms.locfileid: "48357783"
 ---
 # <a name="collaborate-with-guests-on-a-document"></a>Collaborare con gli utenti guest a un documento
 
@@ -117,3 +117,5 @@ Le impostazioni di condivisione Guest sono ora configurate, quindi gli utenti po
 [Procedure consigliate per la condivisione di file e cartelle con utenti non autenticati](best-practices-anonymous-sharing.md)
 
 [Limitare l'esposizione accidentale ai file durante la condivisione con gli utenti guest](share-limit-accidental-exposure.md)
+
+[Integrazione di SharePoint e OneDrive con Azure AD B2B](https://docs.microsoft.com/sharepoint/sharepoint-azureb2b-integration-preview)

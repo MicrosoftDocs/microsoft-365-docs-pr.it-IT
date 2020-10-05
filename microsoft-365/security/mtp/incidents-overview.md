@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: f462e6018f03080b41e46f45629dc4bfe44b3ef9
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: c9b495b70c8b61188b4db3175b54e406feb87fc8
+ms.sourcegitcommit: 8589323c1b4ab43aab30597ee66303b0a0eb71ed
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48200018"
+ms.lasthandoff: 10/05/2020
+ms.locfileid: "48357843"
 ---
 # <a name="incidents-overview-in-microsoft-threat-protection"></a>Panoramica degli eventi imprevisti in Microsoft Threat Protection
 
@@ -36,23 +36,26 @@ ms.locfileid: "48200018"
 
 
 
-Alla base di tutti gli eventi ci sono gli avvisi. Gli avvisi vengono creati quando un'attività o un evento dannoso viene visualizzato nella rete. I singoli avvisi forniscono indicazioni importanti su quello che accade in relazione ai singoli eventi o entità. Tuttavia, gli attacchi usano in genere diversi vettori di attacco per eseguire una violazione. Rimettere insieme le singole indicazioni può essere un'attività complessa che richiede molto tempo. 
+Gli eventi non consentiti sono basati su avvisi correlati. Gli avvisi vengono creati quando un'attività o un evento dannoso viene visualizzato nella rete. Gli avvisi singoli forniscono indizi utili su un attacco in uscita. Tuttavia, gli attacchi in genere utilizzano vettori e tecniche diverse per eseguire una violazione. Il riattacco di singoli indizi può essere impegnativo e richiede molto tempo.
 
-Microsoft Threat Protection valuta nell'insieme i singoli avvisi. Gli eventi dannosi nelle entità seguenti vengono visualizzati nel Centro sicurezza Microsoft 365:
-- Dispositivi
-- Utenti
-- Cassette postali
+In questo breve video viene fornita una panoramica degli incidenti in Microsoft Threat Protection.
+<br>
 
-Gli eventi sospetti che mostrano di essere parte di un attacco più ampio vengono aggregati in un evento. 
+>[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Bzwz?]
 
-È possibile identificare esattamente dove l'attacco ha avuto inizio e altri dettagli che consentono di visualizzare la portata dell'attacco stesso.
+Un evento imprevisto è una raccolta di avvisi correlati che compongono la storia di un attacco. Gli eventi dannosi e sospetti che si trovano in diverse entità del dispositivo, degli utenti e delle cassette postali nella rete vengono automaticamente aggregati da Microsoft Threat Protection. Raggruppare gli avvisi correlati in un evento imprevisto fornisce ai difensori della sicurezza una panoramica complessiva di un attacco. 
 
-La piattaforma difende la sicurezza con le visuali e le rappresentazioni dei dati appropriate per comprendere e rispondere alle minacce tra entità complesse. 
+Ad esempio, i difensori della sicurezza possono vedere dove è iniziato l'attacco, quali tattiche sono state utilizzate e in che misura l'attacco è andato in rete. È inoltre possibile visualizzare l'ambito dell'attacco, ad esempio il numero di dispositivi, utenti e cassette postali a cui è stato applicato un impatto, la gravità dell'impatto e altre informazioni sulle entità interessate.
 
-Non solo si avrà la visibilità sull'ambito di un attacco, ma anche l'accesso ai servizi che consentono di eseguire azioni strategiche per contenere un evento imprevisto.
+Se abilitato, Microsoft Threat Protection è in grado di analizzare e risolvere automaticamente i singoli avvisi tramite l'automazione e l'intelligenza artificiale. I difensori della sicurezza possono inoltre eseguire ulteriori passaggi di correzione per risolvere l'attacco direttamente dalla visualizzazione eventi non consentiti. 
+
+Gli incidenti degli ultimi 30 giorni sono visualizzati nella coda degli incidenti. Da qui, i difensori della sicurezza possono vedere quali incidenti devono essere classificati in base al livello di rischio e ad altri fattori. 
+
+I difensori della sicurezza possono anche rinominare gli incidenti, assegnarli a singoli analisti, classificare e aggiungere tag agli incidenti per una migliore e più personalizzata esperienza di gestione degli incidenti.
 
 
-## <a name="related-topics"></a>Argomenti correlati
+
+## <a name="see-also"></a>Vedere anche
 - [Assegnare priorità agli eventi imprevisti](incident-queue.md)
 - [Indagare sugli eventi imprevisti](investigate-incidents.md)
 - [Gestire gli eventi imprevisti](manage-incidents.md)
