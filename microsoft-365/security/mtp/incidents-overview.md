@@ -19,40 +19,43 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: f462e6018f03080b41e46f45629dc4bfe44b3ef9
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: c9b495b70c8b61188b4db3175b54e406feb87fc8
+ms.sourcegitcommit: 8589323c1b4ab43aab30597ee66303b0a0eb71ed
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48200018"
+ms.lasthandoff: 10/05/2020
+ms.locfileid: "48357843"
 ---
-# <a name="incidents-overview-in-microsoft-threat-protection"></a><span data-ttu-id="bb0b4-104">Panoramica degli eventi imprevisti in Microsoft Threat Protection</span><span class="sxs-lookup"><span data-stu-id="bb0b4-104">Incidents overview in Microsoft Threat Protection</span></span>
+# <a name="incidents-overview-in-microsoft-threat-protection"></a><span data-ttu-id="eae9c-104">Panoramica degli eventi imprevisti in Microsoft Threat Protection</span><span class="sxs-lookup"><span data-stu-id="eae9c-104">Incidents overview in Microsoft Threat Protection</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
-<span data-ttu-id="bb0b4-105">**Si applica a:**</span><span class="sxs-lookup"><span data-stu-id="bb0b4-105">**Applies to:**</span></span>
-- <span data-ttu-id="bb0b4-106">Microsoft Threat Protection</span><span class="sxs-lookup"><span data-stu-id="bb0b4-106">Microsoft Threat Protection</span></span>
+<span data-ttu-id="eae9c-105">**Si applica a:**</span><span class="sxs-lookup"><span data-stu-id="eae9c-105">**Applies to:**</span></span>
+- <span data-ttu-id="eae9c-106">Microsoft Threat Protection</span><span class="sxs-lookup"><span data-stu-id="eae9c-106">Microsoft Threat Protection</span></span>
 
 
 
-<span data-ttu-id="bb0b4-107">Alla base di tutti gli eventi ci sono gli avvisi.</span><span class="sxs-lookup"><span data-stu-id="bb0b4-107">The basis of all incidents are alerts.</span></span> <span data-ttu-id="bb0b4-108">Gli avvisi vengono creati quando un'attività o un evento dannoso viene visualizzato nella rete.</span><span class="sxs-lookup"><span data-stu-id="bb0b4-108">Alerts are created when a malicious event or activity is seen on your network.</span></span> <span data-ttu-id="bb0b4-109">I singoli avvisi forniscono indicazioni importanti su quello che accade in relazione ai singoli eventi o entità.</span><span class="sxs-lookup"><span data-stu-id="bb0b4-109">Individual alerts provide valuable clues in what's happening on individual events or entities.</span></span> <span data-ttu-id="bb0b4-110">Tuttavia, gli attacchi usano in genere diversi vettori di attacco per eseguire una violazione.</span><span class="sxs-lookup"><span data-stu-id="bb0b4-110">However, attacks typically employ various attack vectors to carry out a breach.</span></span> <span data-ttu-id="bb0b4-111">Rimettere insieme le singole indicazioni può essere un'attività complessa che richiede molto tempo.</span><span class="sxs-lookup"><span data-stu-id="bb0b4-111">Piecing individual clues together can be a challenging and time-consuming task.</span></span> 
+<span data-ttu-id="eae9c-107">Gli eventi non consentiti sono basati su avvisi correlati.</span><span class="sxs-lookup"><span data-stu-id="eae9c-107">Incidents are based on related alerts.</span></span> <span data-ttu-id="eae9c-108">Gli avvisi vengono creati quando un'attività o un evento dannoso viene visualizzato nella rete.</span><span class="sxs-lookup"><span data-stu-id="eae9c-108">Alerts are created when a malicious event or activity is seen on your network.</span></span> <span data-ttu-id="eae9c-109">Gli avvisi singoli forniscono indizi utili su un attacco in uscita.</span><span class="sxs-lookup"><span data-stu-id="eae9c-109">Individual alerts provide valuable clues about an on-going attack.</span></span> <span data-ttu-id="eae9c-110">Tuttavia, gli attacchi in genere utilizzano vettori e tecniche diverse per eseguire una violazione.</span><span class="sxs-lookup"><span data-stu-id="eae9c-110">However, attacks typically employ various vectors and techniques to carry out a breach.</span></span> <span data-ttu-id="eae9c-111">Il riattacco di singoli indizi può essere impegnativo e richiede molto tempo.</span><span class="sxs-lookup"><span data-stu-id="eae9c-111">Piecing individual clues together can be challenging and time-consuming.</span></span>
 
-<span data-ttu-id="bb0b4-112">Microsoft Threat Protection valuta nell'insieme i singoli avvisi.</span><span class="sxs-lookup"><span data-stu-id="bb0b4-112">Microsoft Threat Protection connects the dots on individual alerts.</span></span> <span data-ttu-id="bb0b4-113">Gli eventi dannosi nelle entità seguenti vengono visualizzati nel Centro sicurezza Microsoft 365:</span><span class="sxs-lookup"><span data-stu-id="bb0b4-113">Malicious events on the following entities are surfaced in the Microsoft 365 security center:</span></span>
-- <span data-ttu-id="bb0b4-114">Dispositivi</span><span class="sxs-lookup"><span data-stu-id="bb0b4-114">Devices</span></span>
-- <span data-ttu-id="bb0b4-115">Utenti</span><span class="sxs-lookup"><span data-stu-id="bb0b4-115">Users</span></span>
-- <span data-ttu-id="bb0b4-116">Cassette postali</span><span class="sxs-lookup"><span data-stu-id="bb0b4-116">Mailboxes</span></span>
+<span data-ttu-id="eae9c-112">In questo breve video viene fornita una panoramica degli incidenti in Microsoft Threat Protection.</span><span class="sxs-lookup"><span data-stu-id="eae9c-112">This short video gives an overview of incidents in Microsoft Threat Protection.</span></span>
+<br>
 
-<span data-ttu-id="bb0b4-117">Gli eventi sospetti che mostrano di essere parte di un attacco più ampio vengono aggregati in un evento.</span><span class="sxs-lookup"><span data-stu-id="bb0b4-117">Suspicious events that show characteristics of being part of a larger attack are aggregated into an incident.</span></span> 
+>[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Bzwz?]
 
-<span data-ttu-id="bb0b4-118">È possibile identificare esattamente dove l'attacco ha avuto inizio e altri dettagli che consentono di visualizzare la portata dell'attacco stesso.</span><span class="sxs-lookup"><span data-stu-id="bb0b4-118">You'll know exactly where an attack started and other details to help you see the extent of the attack.</span></span>
+<span data-ttu-id="eae9c-113">Un evento imprevisto è una raccolta di avvisi correlati che compongono la storia di un attacco.</span><span class="sxs-lookup"><span data-stu-id="eae9c-113">An incident is a collection of correlated alerts that make up the story of an attack.</span></span> <span data-ttu-id="eae9c-114">Gli eventi dannosi e sospetti che si trovano in diverse entità del dispositivo, degli utenti e delle cassette postali nella rete vengono automaticamente aggregati da Microsoft Threat Protection.</span><span class="sxs-lookup"><span data-stu-id="eae9c-114">Malicious and suspicious events that are found in different device, user, and mailbox entities in the network are automatically aggregated by Microsoft Threat Protection.</span></span> <span data-ttu-id="eae9c-115">Raggruppare gli avvisi correlati in un evento imprevisto fornisce ai difensori della sicurezza una panoramica complessiva di un attacco.</span><span class="sxs-lookup"><span data-stu-id="eae9c-115">Grouping related alerts into an incident gives security defenders a comprehensive view of an attack.</span></span> 
 
-<span data-ttu-id="bb0b4-119">La piattaforma difende la sicurezza con le visuali e le rappresentazioni dei dati appropriate per comprendere e rispondere alle minacce tra entità complesse.</span><span class="sxs-lookup"><span data-stu-id="bb0b4-119">The platform provides security defenders with the right visuals and data representations to understand and address complex cross-entity threats.</span></span> 
+<span data-ttu-id="eae9c-116">Ad esempio, i difensori della sicurezza possono vedere dove è iniziato l'attacco, quali tattiche sono state utilizzate e in che misura l'attacco è andato in rete.</span><span class="sxs-lookup"><span data-stu-id="eae9c-116">For instance, security defenders can see where the attack started, what tactics were used, and how far the attack has gone into the network.</span></span> <span data-ttu-id="eae9c-117">È inoltre possibile visualizzare l'ambito dell'attacco, ad esempio il numero di dispositivi, utenti e cassette postali a cui è stato applicato un impatto, la gravità dell'impatto e altre informazioni sulle entità interessate.</span><span class="sxs-lookup"><span data-stu-id="eae9c-117">They can also see the scope of the attack, like how many devices, users, and mailboxes were impacted, how severe the impact was, and other details about affected entities.</span></span>
 
-<span data-ttu-id="bb0b4-120">Non solo si avrà la visibilità sull'ambito di un attacco, ma anche l'accesso ai servizi che consentono di eseguire azioni strategiche per contenere un evento imprevisto.</span><span class="sxs-lookup"><span data-stu-id="bb0b4-120">Not only will you have visibility on the scope of an attack, but you'll also have access to services that will allow you to take tactical steps to contain an incident.</span></span>
+<span data-ttu-id="eae9c-118">Se abilitato, Microsoft Threat Protection è in grado di analizzare e risolvere automaticamente i singoli avvisi tramite l'automazione e l'intelligenza artificiale.</span><span class="sxs-lookup"><span data-stu-id="eae9c-118">If enabled, Microsoft Threat Protection can automatically investigate and resolve the individual alerts through automation and artificial intelligence.</span></span> <span data-ttu-id="eae9c-119">I difensori della sicurezza possono inoltre eseguire ulteriori passaggi di correzione per risolvere l'attacco direttamente dalla visualizzazione eventi non consentiti.</span><span class="sxs-lookup"><span data-stu-id="eae9c-119">Security defenders can also perform additional remediation steps to resolve the attack straight from the incidents view.</span></span> 
+
+<span data-ttu-id="eae9c-120">Gli incidenti degli ultimi 30 giorni sono visualizzati nella coda degli incidenti.</span><span class="sxs-lookup"><span data-stu-id="eae9c-120">Incidents from the last 30 days are shown in the incident queue.</span></span> <span data-ttu-id="eae9c-121">Da qui, i difensori della sicurezza possono vedere quali incidenti devono essere classificati in base al livello di rischio e ad altri fattori.</span><span class="sxs-lookup"><span data-stu-id="eae9c-121">From here, security defenders can see which incidents should be prioritized based on risk level and other factors.</span></span> 
+
+<span data-ttu-id="eae9c-122">I difensori della sicurezza possono anche rinominare gli incidenti, assegnarli a singoli analisti, classificare e aggiungere tag agli incidenti per una migliore e più personalizzata esperienza di gestione degli incidenti.</span><span class="sxs-lookup"><span data-stu-id="eae9c-122">Security defenders can also rename incidents, assign them to individual analysts, classify, and add tags to incidents for a better and more customized incident management experience.</span></span>
 
 
-## <a name="related-topics"></a><span data-ttu-id="bb0b4-121">Argomenti correlati</span><span class="sxs-lookup"><span data-stu-id="bb0b4-121">Related topics</span></span>
-- [<span data-ttu-id="bb0b4-122">Assegnare priorità agli eventi imprevisti</span><span class="sxs-lookup"><span data-stu-id="bb0b4-122">Prioritize incidents</span></span>](incident-queue.md)
-- [<span data-ttu-id="bb0b4-123">Indagare sugli eventi imprevisti</span><span class="sxs-lookup"><span data-stu-id="bb0b4-123">Investigate incidents</span></span>](investigate-incidents.md)
-- [<span data-ttu-id="bb0b4-124">Gestire gli eventi imprevisti</span><span class="sxs-lookup"><span data-stu-id="bb0b4-124">Manage incidents</span></span>](manage-incidents.md)
+
+## <a name="see-also"></a><span data-ttu-id="eae9c-123">Vedere anche</span><span class="sxs-lookup"><span data-stu-id="eae9c-123">See also</span></span>
+- [<span data-ttu-id="eae9c-124">Assegnare priorità agli eventi imprevisti</span><span class="sxs-lookup"><span data-stu-id="eae9c-124">Prioritize incidents</span></span>](incident-queue.md)
+- [<span data-ttu-id="eae9c-125">Indagare sugli eventi imprevisti</span><span class="sxs-lookup"><span data-stu-id="eae9c-125">Investigate incidents</span></span>](investigate-incidents.md)
+- [<span data-ttu-id="eae9c-126">Gestire gli eventi imprevisti</span><span class="sxs-lookup"><span data-stu-id="eae9c-126">Manage incidents</span></span>](manage-incidents.md)
