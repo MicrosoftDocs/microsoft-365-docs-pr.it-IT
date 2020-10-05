@@ -1,24 +1,22 @@
 ---
-title: Panoramica della comprensione del documento
+title: Panoramica sull'analisi dei documenti
 ms.author: efrene
 author: efrene
 manager: pamgreen
-ms.date: 08/1/2020
 audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 search.appverid: ''
-localization_priority: None
-ROBOTS: NOINDEX, NOFOLLOW
-description: Ottenere una panoramica della comprensione del documento in Microsoft SharePoint Syntex.
-ms.openlocfilehash: dd8731759d8f1cbea57d171fa7a803ffc4f1baa7
-ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
-ms.translationtype: MT
+localization_priority: Priority
+description: Ottenere una panoramica dell'analisi dei documenti in Microsoft SharePoint Syntex.
+ms.openlocfilehash: 1265dfa06db323e23d63a044a1a95a6b67c525cf
+ms.sourcegitcommit: b06a4f21da247edb03fdf6a01eafb7d4fb387b33
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "48294761"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48333559"
 ---
-# <a name="document-understanding-overview"></a>Panoramica della comprensione del documento
+# <a name="document-understanding-overview"></a>Panoramica sull'analisi dei documenti
 
 
 </br>
@@ -27,26 +25,36 @@ ms.locfileid: "48294761"
 
 </br>
 
-Informazioni sui documenti vengono utilizzati modelli di intelligenza artificiale (AI) per automatizzare la classificazione dei file e l'estrazione delle informazioni. Funziona meglio con documenti non strutturati, ad esempio lettere o contratti. Questi documenti devono avere testo che può essere identificato in base a frasi o modelli. Il testo identificato designa sia il tipo di file che è (la classificazione) che quello che si desidera estrarre (gli estrattori).
+L’analisi dei documenti utilizza modelli di intelligenza artificiale (AI) per automatizzare la classificazione dei file e l'estrazione delle informazioni. Funziona meglio con documenti non strutturati, ad esempio lettere o contratti. Questi documenti devono contenere un testo che possa essere identificato in base a frasi o schemi. Il testo identificato designa sia il tipo di file (la classificazione) che l'elemento che si vuole estrarre (l’estrattore).
 
-I modelli di comprensione dei documenti vengono creati e gestiti in un tipo di sito di SharePoint denominato *Content Center*. Quando viene applicato a una raccolta documenti di SharePoint, il modello è associato a un tipo di contenuto con colonne in cui archiviare le informazioni estratte. Il tipo di contenuto creato è archiviato nella raccolta tipi di contenuto di SharePoint. È inoltre possibile scegliere di utilizzare i tipi di contenuto esistenti per utilizzarne lo schema.
+> [!NOTE]
+> Per altri esempi sull’analisi dei documenti, vedere[Adozione di SharePoint Syntex: guida introduttiva](https://docs.microsoft.com/microsoft-365/contentunderstanding/adoption-getstarted#document-understanding-scenario-example).
 
-Aggiungere *classificatori* ed *estrattori* al documento informazioni sui modelli per eseguire le operazioni seguenti: 
+I modelli di analisi dei documenti vengono creati e gestiti in un tipo di sito di SharePoint denominato *centro contenuti*. Se applicato a una raccolta documenti di SharePoint, il modello è associato a un tipo di contenuto con colonne in cui archiviare le informazioni estratte. Il tipo di contenuto creato è archiviato nella raccolta tipi di contenuto di SharePoint. È anche possibile scegliere di usare i tipi di contenuto esistenti per usare il loro schema.
 
-- I classificatori vengono utilizzati per identificare e classificare i documenti caricati nella raccolta documenti. Ad esempio, un classificatore può essere "addestrato" per identificare tutti i documenti di *rinnovo del contratto* caricati nella raccolta. Il tipo di contenuto relativo al rinnovo del contratto è definito dall'utente quando si crea il classificatore.
+Aggiungere *classificatori* ed *estrattori* ai modelli di analisi dei documento per eseguire le seguenti operazioni: 
 
-- Estrazioni estrarre informazioni da questi documenti. Ad esempio, per tutti i documenti di rinnovo del contratto identificati nella raccolta documenti, le colonne vengono visualizzate nella visualizzazione che mostrano anche la *Data di inizio del servizio* e il  *client* per ogni documento di rinnovo del contratto. 
+- I classificatori vengono usati per identificare e classificare i documenti caricati nella raccolta documenti. Ad esempio, un classificatore può essere "addestrato" per identificare tutto i documenti di *rinnovo del contratto* caricati nella raccolta. Il tipo di contenuto per il rinnovo del contratto viene definito dall'utente quando si crea il classificatore.
 
-È possibile utilizzare i file di esempio per formare e testare i classificatori e gli estrattori nel modello. I file di esempio forniscono agli esempi di modello gli elementi da cercare quando si tenta di identificare ed estrarre dati dai file. Ad esempio, è consigliabile formare i classificatori e gli estrattori del rinnovo del contratto con esempi di documenti di rinnovo del contratto con cui la società lavora. È inoltre possibile utilizzare i file di esempio per testare l'efficacia del modello.
+- Gli estrattori estraggono informazioni da questi documenti. Ad esempio, per tutti i documenti di rinnovo del contratto identificati nella raccolta documenti, nella visualizzazione ci sono delle colonne che mostrano anche la *Data di inizio servizio* e il *Cliente* per ogni documento di rinnovo del contratto. 
 
-Dopo aver pubblicato il modello, utilizzare il centro contenuto per applicarlo a qualsiasi raccolta documenti di SharePoint a cui si ha accesso.  
+È possibile usare i file di esempio per formare e testare i classificatori e gli estrattori nel modello. I file di esempio forniscono esempi di modelli su cosa cercare quando si prova a identificare ed estrarre dati da file. Ad esempio, è necessario formare i classificatori e gli estrattori del rinnovo del contratto con esempi di documenti di rinnovo del contratto con cui lavora l’azienda. È anche possibile usare i file di esempio per testare l'efficacia del modello.
+
+Dopo aver pubblicato il modello, usare il centro contenuto per applicarlo a qualsiasi raccolta documenti di SharePoint a cui si ha accesso.  
+
 
 
 ## <a name="see-also"></a>Vedere anche
-[Creare un classificatore](create-a-classifier.md)</br>
-[Creare un estrattore](create-an-extractor.md)</br>
-[Creare un centro contenuto](create-a-content-center.md) 
- [Creare un modello di elaborazione dei moduli](create-a-form-processing-model.md)</br>
-[Applicazione di un modello](apply-a-model.md)   
-[Differenza tra una comprensione del documento e un modello di elaborazione dei moduli](difference-between-document-understanding-and-form-processing-model.md)  
-[Panoramica dell'elaborazione dei moduli](form-processing-overview.md)
+[Creare un classificatore](create-a-classifier.md)
+
+[Creare un estrattore](create-an-extractor.md)
+
+[Creare un centro contenuti](create-a-content-center.md)
+
+[Creare un modello di elaborazione moduli](create-a-form-processing-model.md)
+
+[Applicare un modello](apply-a-model.md)   
+
+[Differenza tra un modello di analisi dei documenti e dell’elaborazione dei moduli](difference-between-document-understanding-and-form-processing-model.md)
+  
+[Panoramica sull'elaborazione dei moduli](form-processing-overview.md)

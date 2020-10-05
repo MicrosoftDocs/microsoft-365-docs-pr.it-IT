@@ -71,7 +71,7 @@
               href: 'https://docs.microsoft.com/microsoft-365/security/mtp/config-mtpeval?view=o365-worldwide#start-the-microsoft-threat-protection-service'
             - name: Generare un avviso di test
               href: mtp/generate-test-alert.md
-        - name: Esegui una distribuzione pilota in produzione
+        - name: Eseguire il progetto pilota in produzione
           items:
             - name: Panoramica del progetto pilota
               href: mtp/mtp-pilot.md
@@ -402,13 +402,13 @@
               href: ./office-365-security/grant-access-to-the-security-and-compliance-center.md
             - name: Sicurezza documenti di Office 365 ATP
               href: ./office-365-security/safe-docs.md
-            - name: Configurare i criteri dei collegamenti sicuri di ATP
+            - name: Configurare i criteri Collegamenti sicuri in Office 365 ATP
               href: ./office-365-security/set-up-atp-safe-links-policies.md
-            - name: Configurare i criteri degli allegati sicuri di ATP
+            - name: Configurare i criteri Allegati sicuri in Office 365 ATP
               href: ./office-365-security/set-up-atp-safe-attachments-policies.md
             - name: Configurazione di SPF per evitare lo spoofing
               href: ./office-365-security/set-up-spf-in-office-365-to-help-prevent-spoofing.md
-            - name: Specificare una cassetta postale per gli invii degli utenti
+            - name: Criteri per gli invii da parte degli utenti
               href: ./office-365-security/user-submission.md
             - name: 'Attivare ATP per SharePoint, OneDrive e Microsoft Teams'
               href: ./office-365-security/turn-on-atp-for-spo-odb-and-teams.md
@@ -495,6 +495,8 @@
               href: ./office-365-security/mail-flow-rules-transport-rules-0.md
             - name: Segnalare posta indesiderata e phishing in Outlook sul web
               href: ./office-365-security/report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md
+            - name: Segnalare posta indesiderata e phishing in Outlook per iOS e Android
+              href: ./office-365-security/report-junk-email-and-phishing-scams-in-outlook-for-ios-and-android.md
             - name: Eseguire un report di un gruppo di ruoli amministratore in Exchange Online Protection autonomo
               href: ./office-365-security/run-an-administrator-role-group-report-in-eop-eop.md
         - name: Investigare

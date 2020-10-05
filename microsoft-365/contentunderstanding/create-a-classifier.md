@@ -9,12 +9,12 @@ ms.prod: microsoft-365-enterprise
 search.appverid: ''
 localization_priority: Priority
 description: Informazioni su come creare un classificatore
-ms.openlocfilehash: 1225a4e57969b507ddd2ca7260050605c0db955e
-ms.sourcegitcommit: f7ca339bdcad38796c550064fb152ea09687d0f3
+ms.openlocfilehash: 948ece1a19b7e6049167c373b3200efd316a60cd
+ms.sourcegitcommit: 0f48beaca3afa4df12d41847014975d50a4ebe7d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48321858"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "48338638"
 ---
 # <a name="create-a-classifier-in-microsoft-sharepoint-syntex"></a>Creare un classificatore in Microsoft SharePoint Syntex
 
@@ -131,9 +131,9 @@ Se i file etichettati risultano **Non corrispondenti**, può essere necessario c
 
 ## <a name="test-your-model"></a>Testare il modello
 
-Se è stata rilevata una corrispondenza sui file di esempio etichettati, è possibile testare il modello sui rimanenti file di esempio non etichettati, non ancora esaminati dal modello.  Questo passaggio è facoltativo.
+Se è stata rilevata una corrispondenza nei file di esempio etichettati, è possibile testare il modello nei rimanenti file di esempio non etichettati, non ancora esaminati dal modello.  Questo è un passaggio opzionale, ma utile per valutare l'adeguatezza del modello prima di usarlo, testandolo sui file che il modello non ha ancora esaminato.
 
-1. Nella home page del modello selezionare la scheda **Test**. Il modello viene eseguito sui file di esempio non etichettati.
+1. Nella home page del modello selezionare la scheda **Test**. Il modello viene eseguito nei file di esempio non etichettati.
 2. Nell'elenco **Testa i file** vengono visualizzati i file di esempio e viene indicato se il modello prevede che siano positivi o negativi. Usare queste informazioni per determinare l'efficacia del classificatore nell'identificazione dei documenti.
 
     ![Test di file non etichettati](../media/content-understanding/test-on-files.png) 
@@ -141,8 +141,8 @@ Se è stata rilevata una corrispondenza sui file di esempio etichettati, è poss
 ## <a name="see-also"></a>Vedere anche
 [Creare un estrattore](create-an-extractor.md)
 
-[Panoramica dell'analisi dei documenti](document-understanding-overview.md)
+[Panoramica sull'analisi dei documenti](document-understanding-overview.md)
 
-[Creare un modello di elaborazione moduli](create-a-form-processing-model.md)
+[Tipi di spiegazione](explanation-types-overview.md)
 
 [Applicare un modello](apply-a-model.md) 

@@ -1,75 +1,77 @@
 ---
-title: Applicazione di un'etichetta di conservazione a un modello di comprensione del documento
+title: Applicare un'etichetta di conservazione a un modello di analisi dei documenti
 ms.author: efrene
 author: efrene
 manager: pamgreen
-ms.date: 10/1/2020
 audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 search.appverid: ''
-localization_priority: None
-ROBOTS: NOINDEX, NOFOLLOW
-description: In questo articolo viene illustrato come applicare un'etichetta di conservazione a un modello di comprensione del documento
-ms.openlocfilehash: 26ad64906c0e2a311d8b244e8e1596a8b975cc15
-ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
-ms.translationtype: MT
+localization_priority: Priority
+description: Questo articolo spiega come applicare un'etichetta di conservazione a un modello di analisi dei documenti
+ms.openlocfilehash: b6ace2a11a7205919fdcf767b888401a5c28db0c
+ms.sourcegitcommit: 0f48beaca3afa4df12d41847014975d50a4ebe7d
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "48294924"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "48338626"
 ---
-# <a name="apply-a-retention-label-to-a-document-understanding-model"></a>Applicazione di un'etichetta di conservazione a un modello di comprensione del documento
+# <a name="apply-a-retention-label-to-a-document-understanding-model"></a>Applicare un'etichetta di conservazione a un modello di analisi dei documenti
 
 </br>
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4CSoL]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4GydO]  
 
 </br>
 
-È possibile applicare facilmente un' [etichetta di conservazione](https://docs.microsoft.com/microsoft-365/compliance/retention) a un modello di comprensione del documento in Microsoft SharePoint Syntex.
 
-Le etichette di conservazione consentono di applicare le impostazioni di conservazione ai documenti identificati dai modelli.  Ad esempio, si desidera che il modello non identifichi solo i documenti di *avviso di assicurazione* caricati nella raccolta documenti, ma applichi anche un tag di conservazione *aziendale* in modo che tali documenti non possano essere eliminati dalla raccolta documenti per il periodo di tempo specificato (ad esempio, i prossimi cinque mesi).
+Microsoft SharePoint Syntex consente di applicare facilmente un'[etichetta di conservazione](https://docs.microsoft.com/microsoft-365/compliance/retention) a un modello di analisi dei documenti.
 
-È possibile applicare un'etichetta di conservazione preesistente al modello di comprensione dei documenti tramite le impostazioni del modello nella Home page del modello. 
+Le etichette di conservazione permettono di applicare impostazioni di conservazione ai documenti identificati dal modello di analisi dei documenti.  Ad esempio, si può fare modo che il modello non solo identifichi i documenti di tipo *Contratto di assicurazione* caricati in una raccolta documenti, ma anche che applichi l'etichetta di conservazione *Business*, in modo che non sia possibile eliminare questi documenti dalla raccolta per il periodo di tempo specificato, ad esempio i cinque mesi successivi.
+
+Si può applicare al modello di analisi dei documenti un'etichetta di conservazione preesistente, usando le impostazioni del modello nella home page del modello. 
 
 > [!Important]
-> Affinché le etichette di conservazione siano disponibili per essere applicate al modello di comprensione del contenuto, è necessario [crearle e pubblicarle nel centro conformità di Microsoft 365](https://docs.microsoft.com/microsoft-365/compliance/create-apply-retention-labels#how-to-create-and-publish-retention-labels).
+> Affinché siano disponibili etichette di conservazione da applicare al modello di comprensione dei contenuti, occorre [crearle e pubblicarle nel Centro conformità Microsoft 365](https://docs.microsoft.com/microsoft-365/compliance/create-apply-retention-labels#how-to-create-and-publish-retention-labels).
 
-## <a name="to-add-a-retention-label-to-a-document-understanding-model"></a>Per aggiungere un'etichetta di conservazione a un modello di comprensione del documento
+## <a name="to-add-a-retention-label-to-a-document-understanding-model"></a>Per aggiungere un'etichetta di conservazione a un modello di analisi dei documenti
 
-1. Nella Home page del modello selezionare **Impostazioni modello**.</br>
-2. Nelle **impostazioni del modello**, nella sezione **sicurezza e conformità** , selezionare il menu **etichetta di conservazione** per visualizzare un elenco delle etichette di conservazione disponibili per il modello da applicare.</br>
- ![Menu etichetta di conservazione](../media/content-understanding/retention-labels-menu.png)</br> 
-3. Selezionare l'etichetta di conservazione che si desidera applicare al modello e quindi fare clic su **Salva**.</br>
+1. Nella home page del modello selezionare **Impostazioni modello**.</br>
+2. In **Impostazioni modello** selezionare il menu **Etichetta di conservazione** nella sezione **Sicurezza e conformità** per visualizzare un elenco delle etichette di conservazione disponibili per il modello.</br>
+ ![Menu Etichetta di conservazione](../media/content-understanding/retention-labels-menu.png)</br> 
+3. Selezionare l'etichetta di conservazione da applicare al modello e scegliere **Salva**.</br>
 
-Dopo aver applicato l'etichetta di conservazione al modello, è possibile applicarla a una delle seguenti operazioni:
-- Nuova raccolta documenti
-- Raccolta documenti a cui è già applicato il modello
+Dopo aver applicato l'etichetta conservazione al modello, è possibile applicarla:
+- A una nuova raccolta documenti
+- A una raccolta documenti a cui è già applicato il modello
  
-## <a name="apply-the-retention-label-to-a-document-library-to-which-the-model-is-already-applied"></a>Applicare l'etichetta di conservazione a una raccolta documenti a cui è già applicato il modello
+## <a name="apply-the-retention-label-to-a-document-library-to-which-the-model-is-already-applied"></a>Applicare l'etichetta conservazione a una raccolta documenti a cui è già applicato il modello
 
-Se il modello di conoscenza del documento è già stato applicato a una raccolta documenti, è possibile eseguire le operazioni seguenti per sincronizzare l'aggiornamento dell'etichetta di conservazione per applicarlo alla raccolta documenti:</br>
+Se il modello di analisi dei documenti è già stato applicato a una raccolta documenti, è possibile procedere come segue per sincronizzare l'aggiornamento dell'etichetta di conservazione e applicarlo alla raccolta documenti:</br>
 
-1. Nella sezione **raccolte con questo modello** della Home page del modello selezionare la raccolta documenti in cui si desidera applicare l'aggiornamento per l'etichetta di conservazione. </br> 
+1. Nella home page del modello selezionare la raccolta documenti alla quale si vuole applicare l'aggiornamento dell'etichetta di conservazione nella sezione **Raccolte con questo modello**. </br> 
 2. Selezionare **Sincronizza**. </br>
- ![Modello di sincronizzazione](../media/content-understanding/sync-model.png)</br> 
+ ![Sincronizzazione del modello](../media/content-understanding/sync-model.png)</br> 
 
 
-Dopo aver applicato l'aggiornamento e averla sincronizzata con il modello, è possibile verificare che sia stata applicata eseguendo le operazioni seguenti:
+Dopo aver applicato l'aggiornamento e averlo sincronizzato con il modello, è possibile verificare che sia stato applicato eseguendo le operazioni seguenti:
 
-1. Nel centro contenuto, nella sezione **raccolte con questo modello** , fare clic sulla raccolta a cui è stato applicato il modello aggiornato. </br>
-2. Nella visualizzazione raccolta documenti selezionare l'icona informazioni per controllare le proprietà del modello.</br>  
-3. Nell'elenco **modelli attivi** selezionare il modello aggiornato.</br>
-4. Nella sezione **etichetta di conservazione** verrà visualizzato il nome dell'etichetta di conservazione applicata.</br>
-
-
-Nella pagina visualizzazione del modello nella raccolta documenti verrà visualizzata una nuova colonna di **etichette di conservazione** .  Poiché il modello classifica i file identificati come appartenenti al tipo di contenuto e li elenca nella visualizzazione libreria, nella colonna etichetta di conservazione verrà visualizzato anche il nome dell'etichetta di conservazione applicata tramite il modello.
+1. Nella sezione **Raccolte con questo modello** del centro contenuti fare clic sulla raccolta a cui è stato applicato il modello aggiornato. </br>
+2. Nella visualizzazione Raccolta documenti selezionare l'icona informazioni per controllare le proprietà del modello.</br>  
+3. Selezionare il modello aggiornato nell'elenco **Modelli attivi**.</br>
+4. Nella sezione **Etichetta di conservazione** sarà visualizzato il nome dell'etichetta di conservazione applicata.</br>
 
 
-Ad esempio, tutti i documenti di *avviso di assicurazione* che il modello identifica avrà anche l'etichetta di conservazione dell' *azienda* applicata, impedendo che vengano eliminati dalla raccolta documenti per cinque mesi. Se si tenta di eliminare il file dalla raccolta documenti, verrà visualizzato un messaggio di errore che indica che non è consentito a causa dell'etichetta di conservazione applicata.
+Nella pagina di visualizzazione del modello della raccolta documenti comparirà una nuova colonna **Etichetta di conservazione**.  Man mano che il modello classifica i file che identifica come appartenenti al proprio tipo di contenuto e li elenca nella visualizzazione della raccolta, nella colonna Etichetta di conservazione compare anche il nome dell'etichetta di conservazione applicata mediante il modello.
+
+
+Ad esempio, a tutti i documenti *Contratto di assicurazione* identificati dal modello verrà anche applicata l'etichetta di conservazione *Business*, che ne impedisce l'eliminazione dalla raccolta documenti per cinque mesi. Se qualcuno tenta di eliminare il file dalla raccolta documenti, verrà visualizzato un messaggio di errore che segnala che non è consentito a causa dell'etichetta di conservazione applicata.
 
 ## <a name="see-also"></a>Vedere anche
-[Creare un classificatore](create-a-classifier.md)</br>
-[Creare un estrattore](create-an-extractor.md)</br>
-[Panoramica della comprensione del documento](document-understanding-overview.md)</br>
-[Creare un modello di elaborazione dei moduli](create-a-form-processing-model.md)  
+[Creare un classificatore](create-a-classifier.md)
+
+[Creare un estrattore](create-an-extractor.md)
+
+[Panoramica sull'analisi dei documenti](document-understanding-overview.md)
+
+

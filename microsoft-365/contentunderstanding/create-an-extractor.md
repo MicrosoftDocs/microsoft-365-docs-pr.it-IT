@@ -9,14 +9,14 @@ ms.prod: microsoft-365-enterprise
 search.appverid: ''
 localization_priority: Priority
 description: Informazioni su come creare un estrattore in Microsoft SharePoint Syntex.
-ms.openlocfilehash: d68cc8b8c337c1ae6740eb5775576a54279b8389
-ms.sourcegitcommit: f7ca339bdcad38796c550064fb152ea09687d0f3
+ms.openlocfilehash: 260486c128ce76c31fe5f4a0994b4e103687b829
+ms.sourcegitcommit: 0f48beaca3afa4df12d41847014975d50a4ebe7d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48321810"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "48338650"
 ---
-# <a name="create-an-extractor-preview"></a>Creare un estrattore (anteprima)
+# <a name="create-an-extractor-in-microsoft-sharepoint-syntex"></a>Creare un estrattore in Microsoft SharePoint Syntex.
 
 
 </br>
@@ -25,7 +25,7 @@ ms.locfileid: "48321810"
 
 </br> 
 
-Prima o dopo aver creato un modello di classificazione per automatizzare l'identificazione e la classificazione di tipi di documento specifici, è possibile scegliere di aggiungere estrattori al modello per estrarre informazioni specifiche da tali documenti. Ad esempio, si può fare in modo che il modello non solo identifichi tutti i documenti *Rinnovo del contratto* aggiunti alla raccolta documenti, ma visualizzi anche la *Data di avvio del servizio* per ogni documento come valore di colonna nella raccolta documenti.
+Prima o dopo aver creato un modello di classificazione per automatizzare l'identificazione e la classificazione di tipi di documento specifici, è possibile scegliere di aggiungere degli estrattori al modello al fine di estrarre informazioni specifiche da tali documenti. Ad esempio, si può fare in modo che il modello non solo identifichi tutti i documenti *Rinnovo del contratto* aggiunti alla raccolta documenti, ma visualizzi anche la *Data di avvio del servizio* per ogni documento come valore di colonna nella raccolta documenti.
 
 È necessario creare un estrattore per ogni entità nel documento che si vuole estrarre. In questo esempio si vuole estrarre la  **Data di avvio del servizio**  per ogni documento  **Rinnovo del contratto**  identificato dal modello. Si vuole ottenere una vista di tutti i documenti  **Rinnovo del contratto**  nella raccolta documenti, con una colonna che mostra il valore della data di **Avvio del servizio** per ogni documento. 
 
@@ -122,9 +122,20 @@ Se i file etichettati risultano nuovamente **Non corrispondenti**, probabilmente
 
 ## <a name="test-your-model"></a>Testare il modello
 
-Se viene rilevata una corrispondenza nei file di esempio etichettati, è possibile testare il modello sui rimanenti file di esempio non etichettati. Questo è un passaggio utile per valutare l'adeguatezza del modello prima di usarlo, testandolo su file che il modello non ha ancora esaminato.
+Se viene rilevata una corrispondenza nei file di esempio etichettati, è possibile testare il modello sui rimanenti file di esempio non etichettati. Questo è un passaggio opzionale, ma utile per valutare l'adeguatezza del modello prima di usarlo, testandolo sui file che il modello non ha ancora esaminato.
 
 1. Nella home page del modello fare clic sulla scheda **Test**. Il modello viene eseguito sui file di esempio non etichettati.
 2. Nell'elenco **Testa i file** vengono visualizzati i file di esempio e viene mostrato se il modello è in grado di estrarre le informazioni necessarie. Usare queste informazioni per determinare l'efficacia del classificatore nell'identificazione dei documenti.
 
     ![Test sui file](../media/content-understanding/test-filies-extractor.png) 
+
+## <a name="see-also"></a>Vedere anche
+[Creare un classificatore](create-a-classifier.md)
+
+[Tipi di spiegazione](explanation-types-overview.md)
+
+[Sfruttare la tassonomia dell'archivio termini durante la creazione di un estrattore](leverage-term-store-taxonomy.md)
+
+[Panoramica sull'analisi dei documenti](document-understanding-overview.md)
+
+[Applicare un modello](apply-a-model.md) 

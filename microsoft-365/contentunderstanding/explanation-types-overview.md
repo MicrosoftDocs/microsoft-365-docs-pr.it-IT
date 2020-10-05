@@ -9,12 +9,12 @@ ms.prod: microsoft-365-enterprise
 search.appverid: ''
 localization_priority: Priority
 description: Informazioni sui tipi di spiegazione in Microsoft SharePoint Syntex
-ms.openlocfilehash: 7d78337fd91bc7e5a71bccd4867f019ae663417a
-ms.sourcegitcommit: f7ca339bdcad38796c550064fb152ea09687d0f3
+ms.openlocfilehash: 43272504912451e4690cb8b7fe351462371bb252
+ms.sourcegitcommit: 3a0accd616ca94d6ba7f50e502552b45e9661a95
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48321798"
+ms.lasthandoff: 10/03/2020
+ms.locfileid: "48350304"
 ---
 # <a name="introduction-to-explanation-types"></a>Introduzione ai tipi di spiegazione
 
@@ -34,7 +34,7 @@ Sono disponibili questi tipi di spiegazione:
 
 Il tipo di spiegazione elenco frasi viene usato generalmente per identificare e classificare un documento tramite il modello. Come descritto nell'esempio di etichetta *Medico richiedente*, si tratta di una stringa di parole, frasi, numeri o caratteri presente costantemente nei documenti che si stanno identificando.
 
-Anche se non è necessario, la spiegazione risulta più efficace se la frase acquisita si trova in una posizione coerente nel documento. Ad esempio, l'etichetta *Medico richiedente* potrebbe essere situata sempre nel primo paragrafo del documento.
+Anche se non è necessario, la spiegazione risulta più efficace se la frase acquisita si trova in una posizione ricorrente nel documento. Ad esempio, l'etichetta *Medico richiedente* potrebbe essere situata sempre nel primo paragrafo del documento.
 
 Se la distinzione tra maiuscole e minuscole è un requisito per identificare l'etichetta, il tipo elenco frasi consente di specificarlo nella spiegazione selezionando la casella di controllo **Solo le maiuscole esatte**.
 
@@ -68,7 +68,7 @@ Inoltre, se l'elenco criteri prevede requisiti per le maiuscole, è possibile se
    ![Solo le maiuscole esatte](../media/content-understanding/exact-caps.png)
 
 > [!NOTE]
-> Anziché creare manualmente una spiegazione elenco criteri, usare la [raccolta spiegazioni]() per usare modelli di elenchi di criteri predefiniti per elenchi di criteri comuni, quali *data*, *numero di telefono*, *numero di carta di credito* e così via. 
+> Anziché creare manualmente una spiegazione elenco criteri, usare la [raccolta spiegazioni](https://docs.microsoft.com/microsoft-365/contentunderstanding/explanation-types-overview#use-explanation-templates) per usare modelli di elenchi di criteri predefiniti per elenchi di criteri comuni, quali *data*, *numero di telefono*, *numero di carta di credito* e così via. 
 
 ## <a name="proximity"></a>Prossimità 
 
@@ -87,7 +87,7 @@ Usare la spiegazione di prossimità per definire quanto è lontana la spiegazion
 
 #### <a name="what-are-tokens"></a>Che cosa sono i token?
 
-Per usare il tipo di spiegazione di prossimità, è importante comprendere che cos'è un token perché il numero di token è il sistema usato dalla spiegazione di prossimità per misurare la distanza tra una spiegazione e l'altra.  
+Per usare il tipo di spiegazione di prossimità, è necessario comprendere che cos'è un token perché il numero di token è il sistema usato dalla spiegazione di prossimità per misurare la distanza tra una spiegazione e l'altra.  
 
 Un token è una serie continua di lettere e numeri, senza spazi o punteggiatura. Uno spazio NON è un token. Ogni segno di punteggiatura è un token. Nella tabella seguente sono illustrati alcuni esempi per determinare il numero di token in una frase.
 
