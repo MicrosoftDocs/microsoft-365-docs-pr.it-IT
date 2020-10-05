@@ -15,12 +15,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: Informazioni su come creare un team con un'etichetta di riservatezza univoca per la sicurezza.
-ms.openlocfilehash: 789e75165339f8a834a73aa3fd0d8a2666285ce9
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: 544f62e4765388f90874c15504e6656820111ed4
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47308184"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48326496"
 ---
 # <a name="configure-a-team-with-security-isolation"></a>Configurare un team con l'isolamento di sicurezza
 
@@ -46,7 +46,7 @@ Gli elementi della configurazione di un team con l’isolamento di sicurezza son
 
 [![Poster Microsoft Teams con l’isolamento di sicurezza](../media/secure-teams-security-isolation/team-security-isolation-poster.png)](../downloads/team-security-isolation-poster.pdf)
 
-È anche possibile scaricare il poster in formato [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/team-security-isolation-poster.pdf) o [PowerPoint](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/team-security-isolation-poster.pptx) e stamparlo in formato lettera, legale o tabloid (27,9 x 43,2 cm).
+È anche possibile scaricare il poster in formato [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/team-security-isolation-poster.pdf) e stamparlo in formato lettera, legale o tabloid (27,9 x 43,2 cm).
 
 ## <a name="initial-protections"></a>Protezioni iniziali
 

@@ -1,56 +1,58 @@
 ---
-title: Informazioni sull'analisi dell'utilizzo del modello
+title: Analisi dell’uso dei modelli di analisi dei documenti
 ms.author: efrene
 author: efrene
 manager: pamgreen
-ms.date: 10/1/2020
 audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 search.appverid: ''
-localization_priority: None
-ROBOTS: NOINDEX, NOFOLLOW
-description: Informazioni su come applicare un'etichetta di conservazione a un modello di comprensione del documento
-ms.openlocfilehash: a07e60d575e616b3a2765011a4fba84b4cff21ff
-ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
-ms.translationtype: MT
+localization_priority: Priority
+description: Informazioni su come applicare un'etichetta di conservazione a un modello di analisi dei documenti
+ms.openlocfilehash: 6f616dc3d2ebd87bcc70ee01c9f3a88db60b6f17
+ms.sourcegitcommit: 3f8e573244bc082518125e339a385c41ef6ee800
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "48296195"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "48337242"
 ---
-# <a name="document-understanding-model-usage-analytics"></a>Informazioni sull'analisi dell'utilizzo del modello
+# <a name="document-understanding-model-usage-analytics"></a>Analisi dell’uso dei modelli di analisi dei documenti
 
 </br>
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4CSoL]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4GpJY]  
 
 </br>
 
-Microsoft SharePoint Syntex content Center fornisce analisi dell'utilizzo del modello per fornire ulteriori informazioni sul modo in cui vengono utilizzati i modelli pubblicati dal centro contenuto. Questo include un rollup delle informazioni seguenti:
+
+Il centro contenuti di Microsoft SharePoint Syntex fornisce le analisi sull'uso dei modelli per offrire altre informazioni su come vengono usati i modelli pubblicati nel centro contenuti. Ciò include il rollup delle seguenti informazioni:
 
 - Dove vengono applicati i modelli
-- Il numero di file che vengono elaborati nel corso del tempo
+- Quanti file vengono elaborati nel corso del tempo
 
- ![Analisi del modello](../media/content-understanding/model-analytics.png) </br>
+ ![Analisi dei modelli](../media/content-understanding/model-analytics.png) </br>
 
-## <a name="total-model-percentage"></a>Percentuale del modello totale
+## <a name="total-model-percentage"></a>Percentuale totale dei modelli
 
-   ![Percentuale del modello totale](../media/content-understanding/total-model-percentage.png) </br>
+   ![Percentuale totale dei modelli](../media/content-understanding/total-model-percentage.png) </br>
 
-Il grafico a torta **percentuale del modello totale** Visualizza ogni modello pubblicato come percentuale dei file totali elaborati da tutti i modelli pubblicati nel centro di contenuto.
+Il grafico a torta della **percentuale totale dei modelli** mostra ogni modello pubblicato come una percentuale del totale dei file elaborati da tutti i modelli pubblicati nel centro contenuti.
 
-Ogni modello Visualizza anche il **tasso di completezza**, la percentuale di file caricati che sono stati analizzati correttamente dal modello. Una bassa velocità di completezza può significare che vi sono problemi con il modello o con i file analizzati.
+Ogni modello illustra anche il **tasso di completamento**, la percentuale di file caricati analizzati correttamente dal modello. Un tasso di completamento basso può indicare che si verificano problemi con il modello o i file da analizzare.
 
 ## <a name="files-processed-over-time"></a>File elaborati nel corso del tempo
 
    ![File elaborati](../media/content-understanding/files-processed-over-time.png) </br>
 
-I **file elaborati nel** grafico a barre del tempo mostrano non solo il numero di file elaborati nel tempo per ogni modello, ma anche le raccolte documenti a cui è stato applicato il modello.
+Il grafico a barre dei **file elaborati nel corso del tempo** mostra all’utente non solo il numero dei file trattati nel corso del tempo per ogni modello, ma anche le raccolte documenti a cui il modello è stato applicato.
 
    ![Grafico a barre](../media/content-understanding/bar-chart-models.png) </br>
 
 ## <a name="see-also"></a>Vedere anche
-[Creare un classificatore](create-a-classifier.md)</br>
-[Creare un estrattore](create-an-extractor.md)</br>
-[Panoramica della comprensione del documento](document-understanding-overview.md)</br>
-[Creare un modello di elaborazione dei moduli](create-a-form-processing-model.md)  
+[Creare un classificatore](create-a-classifier.md)
+
+[Creare un estrattore](create-an-extractor.md)
+
+[Panoramica dell'analisi dei documenti](document-understanding-overview.md)
+
+[Creare un modello di elaborazione moduli](create-a-form-processing-model.md)  

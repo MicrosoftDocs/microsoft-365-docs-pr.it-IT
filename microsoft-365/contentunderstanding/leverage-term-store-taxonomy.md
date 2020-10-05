@@ -1,56 +1,61 @@
 ---
-title: Tassonomia dell'archivio termini di sfruttamento durante la creazione di un estrattore
+title: Sfruttare la tassonomia dell'archivio termini durante la creazione di un estrattore
 ms.author: efrene
 author: efrene
 manager: pamgreen
-ms.date: 10/1/2020
 audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 search.appverid: ''
-localization_priority: None
-ROBOTS: NOINDEX, NOFOLLOW
-description: Tassonomia dei termini di sfruttamento dei dati durante la creazione di un estrattore nel modello di comprensione del documento in Microsoft SharePoint Syntex.
-ms.openlocfilehash: 94f7a0389d2f06e0f8c1a60a341a02e43dfb2071
-ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
-ms.translationtype: MT
+localization_priority: Priority
+description: Sfruttare la tassonomia dell'archivio termini durante la creazione di un estrattore nel modello di analisi dei documenti in Microsoft SharePoint Syntex.
+ms.openlocfilehash: f7219f6facc1d29242f7bd52743da92e13de3b89
+ms.sourcegitcommit: 3f8e573244bc082518125e339a385c41ef6ee800
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "48296014"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "48337278"
 ---
-# <a name="leverage-term-store-taxonomy-when-creating-an-extractor"></a>Tassonomia dell'archivio termini di sfruttamento durante la creazione di un estrattore
-
-
-</br>
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4CSoL]
+# <a name="leverage-term-store-taxonomy-when-creating-an-extractor"></a>Sfruttare la tassonomia dell'archivio termini durante la creazione di un estrattore
 
 </br>
 
-Quando si crea un estrattore nel modello di comprensione dei documenti in SharePoint Syntex, è possibile utilizzare la tassonomia archivio termini di [servizi metadati gestiti](https://docs.microsoft.com/sharepoint/managed-metadata#terms) per visualizzare le condizioni preferite per i dati estratti.  
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4GpJJ]  
 
-Ad esempio, il modello identifica e classifica tutti i documenti del **contratto** caricati nella raccolta documenti.  Inoltre, il modello estrae un valore del **servizio contratto** da ogni contratto e lo Visualizza in una colonna della visualizzazione libreria. Tra i vari valori dei servizi contratto nei contratti, esistono diversi valori precedenti che la società non utilizza più e che sono stati rinominati. Ad esempio, tutti i riferimenti ai termini *progettazione*, *grafica*o servizi contratto di *topografia* dovrebbero ora essere chiamati *creativi*. Ogni volta che il modello estrae uno dei termini obsoleti da un documento del contratto, si desidera che visualizzi il termine-creatività corrente nella visualizzazione libreria. Nell'esempio riportato di seguito, durante l'addestramento del modello viene visualizzato che un documento di esempio contiene il termine obsoleto di *progettazione*.
+</br>
+
+
+Quando si crea un estrattore nel modello dianalisi dei documenti in SharePoint Syntex, è possibile sfruttare la tassonomia dell'archivio termini dei [Servizi di Metadati](https://docs.microsoft.com/sharepoint/managed-metadata#terms) gestiti per visualizzare i termini preferiti per i dati estratti.  
+
+Ad esempio, il modello identifica e classifica tutti i documenti del **Contratto** caricati nella raccolta documenti.  Inoltre, il modello estrae anche un valore del **Servizio del contratto** da ogni contratto e lo visualizzerà in una colonna nella visualizzazione della libreria. Tra i vari valori dei Servizi del contratto nei contratti sono disponibili diversi valori meno recenti che non vengono più usati dall'azienda e sono stati rinominati. Ad esempio, tutti i riferimenti ai termini servizi del contratto come *Progettazione*, *Grafica* o *Topografia* saranno chiamati *Creativo*. Ogni volta che il modello estrae uno dei termini obsoleti da un documento contrattuale, si vuole che venga visualizzato il termine corrente - Creativo - nella visualizzazione della raccolta. Nell'esempio seguente, durante la formazione del modello, è possibile notare che un documento di esempio contiene il termine obsoleto *Progettazione*.
 
    ![Archivio termini](../media/content-understanding/design.png)</br>
 
 
-## <a name="term-set-synonyms"></a>Sinonimi set di termini 
+## <a name="use-a-managed-metadata-column-in-your-extractor"></a>Usare una colonna metadati gestiti nell'estrattore
 
-I set di termini sono configurati nell'archivio termini dei servizi metadati gestiti nell'interfaccia di amministrazione di SharePoint. Nell'esempio riportato di seguito, il [set](https://docs.microsoft.com/sharepoint/managed-metadata#term-set) di termini *Servizi contratto* è configurato per includere una serie di condizioni, tra cui la *creatività*.  I dettagli indicano che il termine ha tre sinonimi (*progettazione*, *grafica*e *topografia*) e che i sinonimi devono essere tradotti in *creatività*.
+I set di termini vengono configurati nell'archivio termini dei servizi metadati gestiti nell'interfaccia di amministrazione di SharePoint. Nell'esempio seguente, il *set di termini* per i [Servizi di contratto](https://docs.microsoft.com/sharepoint/managed-metadata#term-set) è configurato per includere una serie di termini, tra cui *Creativo*.  I dettagli mostrano che il termine ha tre sinonimi (*Progettazione*, *Grafica* e *Topografia*) e i sinonimi devono essere tradotti in *Creativo*. 
 
-   ![Term set](../media/content-understanding/term-store.png)</br>
+   ![Set di termini](../media/content-understanding/term-store.png)</br>
 
-<Mike, ecco dove non sono sicuro su come descriverlo.  Azione indica al modello che quando si crea un estrattore per estrarre e visualizzare una colonna di servizi contratto, come viene indicata la colonna "contrassegnato" per l'utilizzo del set di termini per i metadati gestiti per i servizi creativi? >
+Ci sono diversi motivi per cui è consigliabile usare un sinonimo nel set di termini. Ad esempio, potrebbero esserci termini obsoleti, termini rinominati o variazioni tra i reparti dell'organizzazione per quanto riguarda la denominazione.
 
-## <a name="configure-your-document-library-site-column-for-a-managed-metadata-field"></a>Configurare la colonna del sito della raccolta documenti per un campo metadati gestiti
+Per fare in modo che il campo metadati gestiti sia disponibile quando si crea l'estrazione nel modello, è necessario [aggiungerlo come colonna del sito metadati gestiti](https://support.microsoft.com/office/8fad9e35-a618-4400-b3c7-46f02785d27f). Dopo aver aggiunto la colonna del sito, sarà disponibile per la selezione quando si crea l'estrattore per il modello.
+
+   ![Servizio di contratto](../media/content-understanding/contract-services.png)</br>
 
 
-   ![Creare metadati gestiti](../media/content-understanding/creative.png)</br>
+Dopo aver applicato il modello alla raccolta documenti, quando i documenti vengono caricati nella raccolta, la colonna *Servizi creativi* mostrerà il termine preferito (*Creativo*) quando l'estrattore trova uno dei valori dei sinonimi (*Progettazione*, *Grafica* e *Topografia*).
+
+   ![Colonna Servizio di contratto](../media/content-understanding/creative.png)</br>
+
 
 ## <a name="see-also"></a>Vedere anche
-[Introduzione ai metadati gestiti](https://docs.microsoft.com/sharepoint/managed-metadata#terms)</br>
-[Creare un estrattore](create-an-extractor.md)</br>
-[Creare una colonna di metadati gestiti](https://support.microsoft.com/office/create-a-managed-metadata-column-8fad9e35-a618-4400-b3c7-46f02785d27f?redirectSourcePath=%252farticle%252fc2a06717-8105-4aea-890d-3082853ab7b7&ui=en-US&rs=en-US&ad=US)</br>
+[Introduzione ai metadati gestiti](https://docs.microsoft.com/sharepoint/managed-metadata#terms)
+
+[Creare un estrattore](create-an-extractor.md)
+
+[Creare una colonna di metadati gestiti](https://support.microsoft.com/office/create-a-managed-metadata-column-8fad9e35-a618-4400-b3c7-46f02785d27f?redirectSourcePath=%252farticle%252fc2a06717-8105-4aea-890d-3082853ab7b7&ui=en-US&rs=en-US&ad=US)
 
 
 
