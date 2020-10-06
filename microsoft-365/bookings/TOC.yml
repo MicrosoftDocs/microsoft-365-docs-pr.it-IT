@@ -1,4 +1,4 @@
-- name: Prenotazioni Microsoft
+- name: Microsoft Bookings
   href: bookings-overview.md
   items:
     - name: Configurazione
@@ -9,6 +9,8 @@
           href: enter-business-information.md
         - name: Definire le offerte di servizi
           href: define-service-offerings.md
+        - name: Aggiungere personale alle prenotazioni
+          href: add-staff.md
         - name: Pianificare chiusure aziendali e timeout
           href: schedule-closures-time-off-vacation.md
         - name: Impostare i criteri di pianificazione
