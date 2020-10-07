@@ -12,17 +12,17 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
+- m365solution-collabgovernance
 search.appverid:
 - MET150
 ms.assetid: 0ad41414-0cc6-4b97-90fb-06bec7bcf590
 description: Informazioni su come consentire ai membri di inviare messaggi di posta elettronica come gruppo di Microsoft 365 o di inviare messaggi di posta elettronica per conto di un gruppo di Microsoft 365.
-ms.openlocfilehash: b660131798e60182435a69f479411cdec948bc99
-ms.sourcegitcommit: 66f1f430b3dcae5f46cb362a32d6fb7da4cff5c1
+ms.openlocfilehash: 9ccaeff49914dd5b510beb80f40a3a3b790ce831
+ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "46662671"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48377594"
 ---
 # <a name="allow-members-to-send-as-or-send-on-behalf-of-a-group"></a>Consenti ai membri di inviare messaggi o Invia per conto di un gruppo
 
@@ -50,7 +50,7 @@ In questa sezione viene descritto come consentire agli utenti di inviare messagg
     
 4. Nella sezione **Invia come** selezionare il **+** segno per aggiungere gli utenti che si desidera inviare come gruppo. 
     
-    ![Selezionare il segno più per aggiungere gli utenti che si desidera inviare come gruppo Microsoft 365](../media/1df167f6-1eff-4f98-9ecd-4230fab46557.png)
+    ![Schermata della finestra di dialogo Invia come](../media/1df167f6-1eff-4f98-9ecd-4230fab46557.png)
   
 5. Digitare per cercare o selezionare un utente dall'elenco. Fare clic su **OK** e su **Salva**.
     
@@ -68,7 +68,7 @@ In questa sezione viene descritto come consentire agli utenti di inviare messagg
     
 4. Nella sezione Invia per conto di selezionare il **+** segno per aggiungere gli utenti che si desidera inviare come gruppo. 
     
-    ![Selezionare il segno più per aggiungere gli utenti che si desidera inviare come gruppo Microsoft 365](../media/2bae0579-8907-4d6b-8920-ddd6555897b4.png)
+    ![Schermata di invio per conto della finestra di dialogo](../media/2bae0579-8907-4d6b-8920-ddd6555897b4.png)
   
 5. Digitare per cercare o selezionare un utente dall'elenco. Fare clic su **OK** e su **Salva**.
     

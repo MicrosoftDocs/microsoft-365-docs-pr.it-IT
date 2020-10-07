@@ -10,16 +10,17 @@ ms.prod: microsoft-365-enterprise
 localization_priority: Normal
 ms.collection:
 - M365-collaboration
+- m365solution-collabgovernance
 ms.custom:
 - M365solutions
 f1.keywords: NOCSH
 description: Interazioni dei servizi di gruppo
-ms.openlocfilehash: 9632debf1bc6fdd2fce061a4c535906410700175
-ms.sourcegitcommit: 66f1f430b3dcae5f46cb362a32d6fb7da4cff5c1
+ms.openlocfilehash: 235a897314a784ba3bb1ac50fe8bdfe9986a70d3
+ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "46662695"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48377630"
 ---
 # <a name="groups-services-interactions"></a>Interazioni dei servizi di gruppo
 
@@ -117,14 +118,14 @@ Nella tabella seguente viene fornita una panoramica delle interazioni tra i grup
 |Planner|Scheda attività|No|Sì|Sì|
 |App Power Apps|App|Sì|No|No|
 |Automatizzare la potenza|Flusso di lavoro|Sì|No|No|
-|Power BI (classica)|Area di lavoro|No|Sì|Sì|
-|Power BI (nuovo)|Area di lavoro|Sì|No|Sì|
-|Project per il Web|Piano di progetto|Sì|Sì|No|
+|Power BI (classica)|Workspace|No|Sì|Sì|
+|Power BI (nuovo)|Workspace|Sì|No|Sì|
+|Project per il web|Piano di progetto|Sì|Sì|No|
 |Roadmap|Roadmap|Sì|Sì|No|
 |SharePoint|Sito|Sì|Sì|Sì|
 |Stream|Canale, video|Sì|Sì|Sì|
 |Teams|Del team|No|Sì|Sì|
-|Yammer|Group|Sì|Sì|Sì|
+|Yammer|Gruppo|Sì|Sì|Sì|
 
 Anche se nella tabella precedente viene fornita una panoramica generale delle interazioni di gruppo con i servizi Microsoft 365, esistono numerose sfumature e complessità che è necessario comprendere. Nelle sezioni seguenti vengono esaminati in modo più approfondito i carichi di lavoro specifici e le interazioni con i gruppi.
 
@@ -468,7 +469,7 @@ Sì e no. Un'area di lavoro creata da Power BI può essere associata a un solo g
 
 Sì, eliminare l'area di lavoro in Power BI eliminerà il gruppo e i servizi associati a un gruppo e il contenuto.
 
-## <a name="project-for-the-web"></a>Project per il Web
+## <a name="project-for-the-web"></a>Project per il web
 
 Project per il Web offre la possibilità di creare piani di progetto, diagrammi di Gantt e roadmap.
 Caratteristiche principali fornite ai gruppi.

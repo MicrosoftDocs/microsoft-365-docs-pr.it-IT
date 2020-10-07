@@ -20,16 +20,16 @@ search.appverid:
 - MOE150
 ROBOTS: NOINDEX, NOFOLLOW
 description: Panoramica del Punteggio di produttività Microsoft.
-ms.openlocfilehash: 7c323d51bcd8a1bead28677e399891ccd0a22950
-ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
+ms.openlocfilehash: 82dc26aea5c573b63bb66d087b332e3301e71409
+ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48285190"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48376974"
 ---
 # <a name="microsoft-productivity-score-preview"></a>Punteggio di produttività Microsoft (anteprima)
 
-Il Punteggio di produttività consente alle organizzazioni di trasformare il lavoro svolto con informazioni su come gli utenti utilizzano Microsoft 365 e le esperienze tecnologiche che le supportano. Lo Score riflette le prestazioni dell'organizzazione rispetto alle misure relative all'esperienza dipendente e alla tecnologia e confronta il punteggio con organizzazioni come la propria.
+Il Punteggio di produttività consente alle organizzazioni di trasformare il lavoro svolto con informazioni su come gli utenti utilizzano Microsoft 365 e le esperienze tecnologiche che le supportano. Lo Score riflette le prestazioni dell'organizzazione rispetto alle persone e alle esperienze tecnologiche e confronta il tuo punteggio con organizzazioni come le tue.
 
 La partitura include:
 
@@ -39,18 +39,18 @@ La partitura include:
 
 Vengono forniti dati, informazioni dettagliate e suggerimenti in due aree: 
 
-- **Esperienza dipendente:** Misuriamo il modo in cui le persone collaborano al contenuto, il modo in cui utilizzano i prodotti Microsoft 365 per comunicare e se utilizzano Microsoft 365 su più piattaforme. 
+- **Esperienze degli utenti:** Misuriamo il modo in cui le persone collaborano al contenuto, il modo in cui utilizzano i prodotti Microsoft 365 per comunicare e se utilizzano Microsoft 365 su più piattaforme. 
 
     Queste informazioni vengono fornite perché quando le persone collaborano online, risparmiano tempo. Con la libertà di lavorare su qualsiasi dispositivo, sono più produttivi e soddisfatti. La comunicazione in modo flessibile rende le persone più efficienti, formano relazioni migliori e l'organizzazione è più unita. Per ulteriori informazioni, vedere [rapporto Forrester](https://vc2prod.blob.core.windows.net/vc-resources/TEIStudies/TEI%20of%20Microsoft%20365%20E5%20-%20Oct%202018.pdf).
 
-- **Tecnologia Experience:** La produttività dipende da una tecnologia affidabile e performante, oltre che da un utilizzo efficiente di Microsoft 365. Viene fornita l' [analisi dell'endpoint](https://aka.ms/endpointanalytics), che consente di comprendere in che modo la produttività degli utenti può essere influenzata da problemi di prestazioni e integrità con l'hardware e il software dell'endpoint. Sono inoltre disponibili azioni consigliate per la risoluzione dei dati e le informazioni sulla connettività di rete di Microsoft 365 per l'organizzazione.
+- **Esperienze tecnologiche:** La produttività dipende da una tecnologia affidabile e performante, oltre che da un utilizzo efficiente di Microsoft 365. Viene fornita l' [analisi dell'endpoint](https://aka.ms/endpointanalytics), che consente di comprendere in che modo la produttività degli utenti può essere influenzata da problemi di prestazioni e integrità con l'hardware e il software dell'endpoint. Sono inoltre disponibili azioni consigliate per la risoluzione dei dati e le informazioni sulla connettività di rete di Microsoft 365 per l'organizzazione.
 
 Vedere [che cos'è l'analisi di endpoint](https://docs.microsoft.com/mem/analytics/overview) per una panoramica e Dettagli prerequisito. Per ulteriori informazioni sulle considerazioni relative alla connettività di rete di Microsoft 365, leggere [la panoramica della connettività di rete](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-networking-overview).
   
 
 ## <a name="how-the-score-is-calculated"></a>Modalità di calcolo del Punteggio
 
-Il Punteggio di produttività è basato sui punteggi combinati delle categorie di esperienza dipendente e tecnologia. Ogni categoria viene ponderata equamente, con un totale di 100 punti per categoria. Il numero totale di punti possibili per il Punteggio di produttività è 500.
+Il Punteggio di produttività è basato sui punteggi combinati delle categorie di persone e esperienze tecnologiche. Ogni categoria viene ponderata equamente, con un totale di 100 punti per categoria. Il numero totale di punti possibili per il Punteggio di produttività è 500.
 
 ### <a name="score-categories"></a>Categorie di Punteggio 
 
@@ -72,7 +72,7 @@ Il Punteggio viene aggiornato giornalmente e riflette le azioni dell'utente comp
 
 ## <a name="pre-requisites"></a>Prerequisiti 
 
-È necessario un abbonamento a Microsoft 365 for business o Office 365 for Enterprise per ottenere i dati relativi alle esperienze dei dipendenti ed è necessario utilizzare servizi cloud multi-tenant. Per ottenere i dati di analisi degli endpoint per il tenant, è necessario aggiungere Microsoft Intune all'abbonamento. Intune consente di proteggere i dati dell'organizzazione tramite la gestione di dispositivi e app.       Dopo aver installato Intune, è possibile abilitare l'analisi di endpoint all'interno dell'esperienza di Intune. Per ulteriori informazioni, vedere Microsoft Intune. 
+È necessario un abbonamento a Microsoft 365 for business o Office 365 for Enterprise per ottenere i dati delle esperienze delle persone ed è necessario utilizzare servizi cloud multi-tenant. Per ottenere i dati di analisi degli endpoint per il tenant, è necessario aggiungere Microsoft Intune all'abbonamento. Intune consente di proteggere i dati dell'organizzazione tramite la gestione di dispositivi e app.       Dopo aver installato Intune, è possibile abilitare l'analisi di endpoint all'interno dell'esperienza di Intune. Per ulteriori informazioni, vedere Microsoft Intune. 
 
 Per visualizzare il Punteggio di produttività per l'organizzazione, è necessario disporre di uno dei ruoli seguenti: 
 
@@ -94,17 +94,17 @@ La Home page del Punteggio di produttività Visualizza il punteggio totale e la 
 
 **Il Punteggio** viene visualizzato come valore percentuale, nonché in punti, in modo da poter visualizzare i punti (numeratore) e i punti massimi possibili (denominatore).
 
-I **benchmark peer** consentono di confrontare il punteggio con organizzazioni come la propria. Per le categorie di esperienza dipendente, la misura di benchmark peer viene calcolata come media delle misure all'interno di un insieme di organizzazioni simili. Il set è costituito da organizzazioni nella propria area geografica con un numero analogo di utenti con licenza, tipi di licenze, industria e possesso con Microsoft 365. 
+I **benchmark peer** consentono di confrontare il punteggio con organizzazioni come la propria. Per le categorie di persone con esperienza, la misura di benchmark peer viene calcolata come media delle misure all'interno di un insieme di organizzazioni simili. Il set è costituito da organizzazioni nella propria area geografica con un numero analogo di utenti con licenza, tipi di licenze, industria e possesso con Microsoft 365. 
 
 Il benchmark peer analisi endpoint include gli obiettivi per le prestazioni di avvio del dispositivo e la configurazione software consigliata in base ai valori mediani aggregati in tutti i tenant.
 
 Per la connettività di rete, il benchmark consigliato è 80 punti.
 
-La sezione **Score Breakdown** fornisce una ripartizione del Punteggio di produttività con benchmark da parte dei dipendenti e delle aree di utilizzo della tecnologia.
+La sezione **Score Breakdown** fornisce una ripartizione del Punteggio di produttività con benchmark da parte di utenti e aree di utilizzo della tecnologia.
 
 La cronologia dei punteggi Visualizza la modalità di modifica del Punteggio di ogni categoria negli ultimi 6 mesi.
 
-Le aree esperienza e **tecnologia** dei **dipendenti** contengono le informazioni principali per le categorie in queste aree. È possibile fare clic su ogni categoria per visualizzare le informazioni più approfondite.
+Le aree esperienze e esperienze **tecnologiche** delle **persone** contengono le informazioni principali per le categorie in queste aree. È possibile fare clic su ogni categoria per visualizzare le informazioni più approfondite.
 
 ## <a name="category-details-pages"></a>Pagine dei dettagli categoria
 
