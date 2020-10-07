@@ -2,7 +2,7 @@
 title: Limitare la condivisione in Microsoft 365
 ms.author: mikeplum
 author: MikePlumleyMSFT
-manager: pamgreen
+manager: serdars
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -18,12 +18,12 @@ f1.keywords: NOCSH
 ms.custom: ''
 localization_priority: Priority
 description: Altre informazioni sulle opzioni per limitare o disabilitare la condivisione in Microsoft 365.
-ms.openlocfilehash: 69a71d84f32316278353f8de392202f1a92dc22d
-ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
+ms.openlocfilehash: 7397078b6f347858e4ca91a0deeb9a1cf2fb6911
+ms.sourcegitcommit: d648356b27842e779921859480b1b405a1804c7c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46528183"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "48361906"
 ---
 # <a name="limit-sharing-in-microsoft-365"></a>Limitare la condivisione in Microsoft 365
 
@@ -33,15 +33,18 @@ I metodi di condivisione dei file sono elencati nella tabella seguente. Per info
 
 |Metodo di condivisione|Descrizione|Opzioni di limitazione|
 |:-------------|:----------|:-------------|
-|[Gruppo o team di Microsoft 365](#microsoft-365-group-or-team)|Gli utenti che hanno accesso a un team di Microsoft Teams o a un gruppo di Microsoft 365 hanno accesso in modifica ai file nel sito di SharePoint associato.|Se il gruppo o il team è privato, gli inviti di condivisione per partecipare al team devono essere approvati dal proprietario. Gli amministratori possono disabilitare l'accesso guest per impedire l'accesso da parte di utenti esterni all'organizzazione.|
-|[Sito di SharePoint](#sharepoint-site)|Agli utenti può essere concesso l'accesso come proprietari, membri o visitatori di un sito di SharePoint e avranno quel livello di accesso ai file nel sito.|È possibile limitare le autorizzazioni per il sito in modo che solo i proprietari possano condividere il sito.|
+|[Gruppo o team di Microsoft 365](#microsoft-365-group-or-team)|Gli utenti che hanno accesso a un team di Microsoft Teams o a un gruppo di Microsoft 365 hanno accesso in modifica ai file nel sito di SharePoint associato.|Se il gruppo o il team è privato, gli inviti di condivisione per partecipare al team devono essere approvati dal proprietario. Gli amministratori possono disabilitare l'accesso guest o usare le etichette di riservatezza per impedire l'accesso da parte di utenti esterni all'organizzazione.|
+|[Sito di SharePoint](#sharepoint-site)|Agli utenti può essere concesso l'accesso come proprietari, membri o visitatori di un sito di SharePoint e avranno quel livello di accesso ai file nel sito.|È possibile limitare le autorizzazioni per il sito in modo che solo i proprietari possano condividere il sito. Gli amministratori possono configurare un sito come di sola lettura, o bloccare del tutto l’accesso.|
 |[Condivisione con persone specifiche](#sharing-with-specific-people)|I membri del sito e le persone con autorizzazioni di modifica possono concedere autorizzazioni dirette ai file e alle cartelle o condividerli con collegamenti *Persone specifiche*.|È possibile limitare le autorizzazioni per il sito in modo che solo i proprietari possano condividere file e cartelle. In questo caso, l'accesso diretto e la condivisione di collegamenti *Persone specifiche* da parte dei membri del sito passano dal proprietario del sito per l'approvazione.|
 |[Condivisione guest di SharePoint](#sharepoint-guest-sharing)|I proprietari e i membri dei siti di SharePoint possono condividere file e cartelle con persone esterne all'organizzazione.|La condivisione guest può essere disabilitata per l'intera organizzazione o per singoli siti.|
 |[Collegamenti di condivisione *Persone nell'organizzazione*](#people-in-your-organization-sharing-links)|I proprietari e i membri dei siti di SharePoint possono condividere file usando collegamenti di tipo *Persone nell'organizzazione*, che funzioneranno per chiunque si trovi all'interno dell'organizzazione.|I collegamenti *Persone nell'organizzazione* possono essere disattivati a livello di sito.|
+|[Condividere siti, gruppi e team](#create-sites-groups-and-teams)|Per impostazione predefinita, gli utenti possono creare nuovi siti, gruppi e team da cui possono condividere i contenuti.|Gli amministratori possono limitare chi può creare siti, gruppi e team.|
 |[Posta elettronica](#email)|Le persone che hanno accesso a un file possono inviarlo ad altri tramite posta elettronica.|Gli amministratori possono crittografare i file usando etichette di riservatezza per evitare che vengano condivisi con persone non autorizzate.|
 |[Download o copia di file](#download-or-file-copy)|Le persone che hanno accesso a un file possono scaricarlo o copiarlo e condividerlo con altri utenti esterni all'ambito di Microsoft 365.|Gli amministratori possono crittografare i file usando etichette di riservatezza per evitare che vengano condivisi con persone non autorizzate.|
 
-Anche se è possibile usare i controlli amministrativi descritti in questo articolo per limitare la condivisione all'interno dell'organizzazione, è consigliabile usare le funzionalità di sicurezza e conformità disponibili in Microsoft 365 per creare un ambiente di condivisione sicura. Per informazioni, vedere [Collaborazione ai file in SharePoint con Microsoft 365](https://docs.microsoft.com/sharepoint/deploy-file-collaboration) e [Teams per dati altamente regolamentati](https://docs.microsoft.com/microsoft-365/enterprise/secure-teams-highly-regulated-data-scenario).
+È anche possibile limitare le condizioni in cui gli utenti accedono ai contenuti condivisi. Per altre informazioni, vedere [accesso condizionale](#conditional-access) più avanti in questo articolo.
+
+Anche se è possibile usare i controlli amministrativi descritti in questo articolo per limitare la condivisione all'interno dell'organizzazione, è consigliabile usare le funzionalità di sicurezza e conformità disponibili in Microsoft 365 per creare un ambiente di condivisione sicura. Per informazioni, vedere [Collaborazione ai file in SharePoint con Microsoft 365](https://docs.microsoft.com/sharepoint/deploy-file-collaboration) e [Configurare team con isolamento di sicurezza](secure-teams-security-isolation.md).
 
 Per informazioni su come viene usata la condivisione all'interno dell'organizzazione, [eseguire un report sulla condivisione di file e cartelle](https://docs.microsoft.com/sharepoint/sharing-reports).
 
@@ -69,7 +72,7 @@ Per disattivare la condivisione guest nei gruppi di Microsoft 365
     ![Screenshot delle impostazioni di condivisione guest di Gruppi di Microsoft 365 nell'interfaccia di amministrazione di Microsoft 365](../media/office-365-groups-guest-settings-off.png)
 
 > [!NOTE]
-> Se si vuole impedire la condivisione guest per un particolare gruppo o team, è possibile usare Microsoft PowerShell. Per informazioni, vedere [Bloccare gli utenti guest da un gruppo specifico](https://docs.microsoft.com/office365/admin/create-groups/manage-guest-access-in-groups?view=o365-worldwide#block-guest-users-from-a-specific-group).
+> Se si vuole impedire la condivisione guest per uno specifico gruppo o team, si può usare [Microsoft PowerShell](per-group-guest-access.md) o le [etichette di riservatezza](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites).
 
 È possibile limitare la condivisione guest agli utenti di domini specifici consentendo o bloccando domini in Azure Active Directory. Questo influirà anche sulla condivisione guest in SharePoint se si è abilitata l'[integrazione di SharePoint e OneDrive con Azure AD B2B](https://docs.microsoft.com/sharepoint/sharepoint-azureb2b-integration-preview).
 
@@ -112,6 +115,14 @@ Per limitare la condivisione del sito in base al dominio
 
     ![Screenshot dell'opzione dei domini consentiti a livello di sito](../media/limit-site-sharing-by-domain.png)
 
+### <a name="block-access-to-a-site"></a>Bloccare l'accesso ai siti
+
+È possibile bloccare l'accesso a un sito o creare un sito di sola lettura modificando lo stato di blocco del sito. Per i dettagli, vedere [Bloccare e sbloccare i siti](https://docs.microsoft.com/sharepoint/manage-lock-status).
+
+### <a name="permissions-inheritance"></a>Ereditarietà delle autorizzazioni
+
+Benché non sia raccomandato, si può usare [Ereditarietà delle autorizzazioni di SharePoint](https://docs.microsoft.com/sharepoint/what-is-permissions-inheritance) per personalizzare il livello di accesso a siti e sottositi.
+
 ## <a name="sharing-with-specific-people"></a>Condivisione con persone specifiche
 
 Se si vuole limitare la condivisione di un sito o del relativo contenuto, è possibile configurare il sito in modo da consentire solo ai proprietari di condividere file, cartelle e il sito. Quando si configura questa opzione, i tentativi dei membri del sito di condividere file o cartelle con collegamenti *Persone specifiche* andranno al proprietario del sito per l'approvazione.
@@ -122,7 +133,7 @@ Per limitare la condivisione di sito, file e cartelle ai proprietari
 3. Selezionare **Solo i proprietari del sito possono condividere file, cartelle e il sito**.
 4. Fare clic su **Salva**.
 
-    ![Screenshot delle impostazioni per le autorizzazioni di condivisione in un sito di SharePoint](../media/sharepoint-site-only-site-owners-can-share.png)
+    ![Screenshot delle impostazioni per le autorizzazioni di condivisione in un sito di SharePoint configurato come “solo proprietari”](../media/sharepoint-site-only-site-owners-can-share.png)
 
 ## <a name="sharepoint-guest-sharing"></a>Condivisione guest di SharePoint
 
@@ -133,7 +144,7 @@ Per disattivare la condivisione guest di SharePoint per l'organizzazione
 2. In **Condivisione esterna** trascinare il dispositivo di scorrimento di SharePoint verso il basso fino a **Solo persone nell'organizzazione**.
 3. Fare clic su **Salva**.
 
-    ![Screenshot delle impostazioni di condivisione a livello di organizzazione in SharePoint](../media/sharepoint-tenant-sharing-off.png)
+    ![Screenshot delle impostazioni di condivisione a livello di organizzazione in SharePoint configurato come “Tutti”](../media/sharepoint-tenant-sharing-off.png)
 
 
 Per disattivare la condivisione guest per un sito
@@ -142,7 +153,7 @@ Per disattivare la condivisione guest per un sito
 3. Nella scheda **Criteri**, in **Condivisione esterna** fare clic su **Modifica**.
 4. In **Condivisione esterna** scegliere **Solo persone nell'organizzazione** e quindi fare clic su **Salva**.
 
-    ![Screenshot delle impostazioni di condivisione a livello di sito di SharePoint](../media/sharepoint-site-external-sharing-settings-off.png)
+    ![Screenshot delle impostazioni di condivisione a livello di sito in SharePoint configurato come “Solo persone nell’organizzazione”](../media/sharepoint-site-external-sharing-settings-off.png)
 
 Se si vuole consentire la condivisione con persone esterne all'organizzazione, assicurandosi però che tutti gli utenti siano autenticati, è possibile disabilitare i collegamenti *Chiunque* (condivisione anonima) per l'intera organizzazione o per un singolo sito.
 
@@ -151,7 +162,7 @@ Per disattivare i collegamenti di tipo *Chiunque* a livello di organizzazione
 2. In **Condivisione esterna** trascinare il dispositivo di scorrimento di SharePoint verso il basso fino a **Utenti guest nuovi ed esistenti**.
 3. Fare clic su **Salva**.
 
-    ![Screenshot delle impostazioni di condivisione a livello di sito di SharePoint](../media/sharepoint-guest-sharing-new-existing-guests.png)
+    ![Screenshot delle impostazioni di condivisione a livello di organizzazione in SharePoint configurato come “Utenti guest nuovi ed esistenti”](../media/sharepoint-guest-sharing-new-existing-guests.png)
 
 Per disattivare i collegamenti di tipo *Chiunque* per un sito
 1. Nell'interfaccia di amministrazione di SharePoint, in **Siti** fare clic su **Siti attivi**.
@@ -159,7 +170,7 @@ Per disattivare i collegamenti di tipo *Chiunque* per un sito
 3. Nella scheda **Criteri**, in **Condivisione esterna** fare clic su **Modifica**.
 4. In **Condivisione esterna** scegliere **Utenti guest nuovi ed esistenti** e quindi fare clic su **Salva**.
 
-    ![Screenshot delle impostazioni di condivisione a livello di sito di SharePoint](../media/sharepoint-site-external-sharing-settings-new-existing-guests.png)
+    ![Screenshot delle impostazioni di condivisione a livello di sito in SharePoint configurato come “Impostazioni nuove ed esistenti”](../media/sharepoint-site-external-sharing-settings-new-existing-guests.png)
 
 ## <a name="people-in-your-organization-sharing-links"></a>Collegamenti di condivisione *Persone nell'organizzazione*
 
@@ -171,6 +182,15 @@ Ad esempio:
 
 `Set-SPOSite -Identity https://contoso.sharepoint.com -DisableCompanyWideSharingLinks`
 
+## <a name="create-sites-groups-and-teams"></a>Creare siti, gruppi e team
+
+Per impostazione predefinita, gli utenti possono creare nuovi siti, gruppi e team da cui possono condividere contentuti (in base alle impostazioni di condivisione). L’utente può limitare chi può creare siti, gruppi e team. Vedere i seguenti riferimenti:
+
+- [Gestire la creazione di siti in SharePoint](https://docs.microsoft.com/sharepoint/manage-site-creation)
+- [Gestire chi può creare gruppi in Microsoft 365](https://docs.microsoft.com/microsoft-365/solutions/manage-creation-of-groups)
+
+Notare che limitare la creazione dei gruppi limita la creazione dei team.
+
 ## <a name="email"></a>Posta elettronica
 
 È possibile impedire la condivisione indesiderata dei messaggi di posta elettronica usando la crittografia. In questo modo si evita che i messaggi vengano inoltrati o altrimenti condivisi con utenti non autorizzati. La crittografia della posta elettronica può essere abilitata usando etichette di riservatezza. Per informazioni. vedere [Limitare l'accesso al contenuto usando la crittografia nelle etichette di riservatezza](https://docs.microsoft.com/microsoft-365/compliance/encryption-sensitivity-labels).
@@ -178,6 +198,15 @@ Ad esempio:
 ## <a name="download-or-file-copy"></a>Download o copia di file
 
 Gli utenti che hanno accesso ai file e alle cartelle in Microsoft 365 possono scaricare file e copiarli in un supporto esterno. Per ridurre il rischio di condivisione indesiderata dei file, è possibile crittografare il contenuto usando le etichette di riservatezza.
+
+## <a name="conditional-access"></a>Accesso condizionale
+
+L’accesso condizionale di Azure Active Directory offre opzioni per limitare o prevenire la condivisione con altre persone in base alla posizione della rete, all’integrità del dispositivo, ai rischi legati all’accesso e altri fattori. Vedere [Che cos’è l’accesso condizionale?](https://docs.microsoft.com/azure/active-directory/conditional-access/overview).
+
+SharePoint offre l’integrazione diretta con l’accesso condizionale di Azure AD sia per i dispositivi non gestiti che per le posizioni di rete. Vedere i seguenti riferimenti per i dettagli:
+
+- [Controllare l'accesso da dispositivi non gestiti](https://docs.microsoft.com/sharepoint/control-access-from-unmanaged-devices)
+- [Controllare l'accesso ai dati di SharePoint e OneDrive in base al percorso di rete](https://docs.microsoft.com/sharepoint/control-access-based-on-network-location)
 
 ## <a name="see-also"></a>Vedere anche
 
