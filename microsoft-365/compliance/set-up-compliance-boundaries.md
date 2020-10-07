@@ -19,18 +19,18 @@ search.appverid:
 ms.assetid: 1b45c82f-26c8-44fb-9f3b-b45436fe2271
 description: Informazioni su come utilizzare i limiti di conformità per creare confini logici che controllano i percorsi dei contenuti degli utenti che un Manager di eDiscovery può cercare in Microsoft 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 19165af60d7813134952589831bf94a91bfe7f40
-ms.sourcegitcommit: 1423e08a02d30f0a2b993fb99325c3f499c31787
+ms.openlocfilehash: c57689cc6e626b62ae976bac9f9771205431bc8a
+ms.sourcegitcommit: 33afa334328cc4e3f2474abd611c1411adabd39f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "48277107"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48370402"
 ---
 # <a name="set-up-compliance-boundaries-for-ediscovery-investigations"></a>Configurare i limiti di conformità per le indagini di eDiscovery
 
 Le indicazioni contenute in questo articolo possono essere applicate quando si utilizza eDiscovery core o Advanced eDiscovery per gestire le indagini.
 
-I limiti di conformità creano confini logici all'interno di un'organizzazione che controllano i percorsi dei contenuti degli utenti, ad esempio le cassette postali, i siti di SharePoint e gli account di OneDrive, che i responsabili di eDiscovery Inoltre, i limiti di conformità controllano chi può accedere ai casi di eDiscovery utilizzati per gestire le indagini legali, umane o di altro tipo all'interno dell'organizzazione. La necessità di limiti di conformità è spesso necessaria per le multinazionali che devono rispettare confini geografici e regolamenti e per i governi, che spesso sono divisi in diverse agenzie. In Microsoft 365, i limiti di conformità consentono di soddisfare questi requisiti quando eseguono ricerche di contenuto e gestiscono indagini con casi di eDiscovery.
+I limiti di conformità consentono di creare confini logici all'interno di un'organizzazione che controllano i percorsi dei contenuti degli utenti, ad esempio le cassette postali, gli account OneDrive e i siti di SharePoint. Inoltre, i limiti di conformità controllano chi può accedere ai casi di eDiscovery utilizzati per gestire le indagini legali, umane o di altro tipo all'interno dell'organizzazione. La necessità di limiti di conformità è spesso necessaria per le multinazionali che devono rispettare confini geografici e regolamenti e per i governi, che spesso sono divisi in diverse agenzie. In Microsoft 365, i limiti di conformità consentono di soddisfare questi requisiti quando eseguono ricerche di contenuto e gestiscono indagini con casi di eDiscovery.
   
 Nell'esempio riportato di seguito viene illustrato il funzionamento dei limiti di conformità.
   
@@ -56,11 +56,21 @@ Ecco la procedura per configurare i limiti di conformità:
 
 [Passaggio 5: creare un caso di eDiscovery per indagini intra-Agency](#step-5-create-an-ediscovery-case-for-intra-agency-investigations)
 
+## <a name="before-you-set-up-compliance-boundaries"></a>Prima di configurare i limiti di conformità
+
+È necessario conoscere i prerequisiti seguenti prima che l'attributo Azure Active Directory (Azure AD) che si è in grado di eseguire la sincronizzazione con il passaggio 1 sia stato eseguito correttamente nell'account OneDrive di un utente (nel passaggio 2):
+
+- Agli utenti deve essere assegnata una licenza di Exchange Online e una licenza di SharePoint Online.
+
+- Le cassette postali degli utenti devono avere una dimensione di almeno 10 MB. Se la cassetta postale di un utente è inferiore a 10 MB, l'attributo utilizzato per definire le agenzie non verrà sincronizzato con l'account OneDrive dell'utente.
+
+- I limiti di conformità e gli attributi utilizzati per creare i filtri delle autorizzazioni di ricerca richiedono che gli attributi di Azure Active Directory (Azure AD) siano sincronizzati nelle cassette postali degli utenti. Per verificare che gli attributi che si desidera utilizzare siano stati sincronizzati, eseguire il cmdlet [Get-User](https://docs.microsoft.com/powershell/module/exchange/get-user) in PowerShell di Exchange Online. L'output di questo cmdlet consente di visualizzare gli attributi di Azure AD sincronizzati con Exchange Online.
+
 ## <a name="step-1-identify-a-user-attribute-to-define-your-agencies"></a>Passaggio 1: identificare un attributo utente per definire le agenzie
 
-Il primo passaggio consiste nel scegliere un attributo di Azure Active Directory da utilizzare che definirà le agenzie. Questo attributo viene utilizzato per creare il filtro delle autorizzazioni di ricerca che limita un Manager di eDiscovery per cercare solo i percorsi di contenuto degli utenti a cui è assegnato un valore specifico per questo attributo. Si supponga, ad esempio, che contoso decida di utilizzare l'attributo **Department** . Il valore di questo attributo per gli utenti nella quarta filiale del caffè dovrebbe essere  `FourthCoffee`  e il valore per gli utenti nella filiale di Coho Winery sarebbe `CohoWinery` . Nel passaggio 4, è possibile utilizzare questa  `attribute:value`  coppia, ad esempio *Department: fourthcoffee*, per limitare i percorsi di contenuto utente che possono essere cercati dai responsabili di eDiscovery. 
+Il primo passaggio consiste nel scegliere un attributo di Azure ad per l'utilizzo che definirà le agenzie. Questo attributo viene utilizzato per creare il filtro delle autorizzazioni di ricerca che limita un Manager di eDiscovery per cercare solo i percorsi di contenuto degli utenti a cui è assegnato un valore specifico per questo attributo. Si supponga, ad esempio, che contoso decida di utilizzare l'attributo **Department** . Il valore di questo attributo per gli utenti nella quarta filiale del caffè dovrebbe essere  `FourthCoffee`  e il valore per gli utenti nella filiale di Coho Winery sarebbe `CohoWinery` . Nel passaggio 4, è possibile utilizzare questa  `attribute:value`  coppia, ad esempio *Department: fourthcoffee*, per limitare i percorsi di contenuto utente che possono essere cercati dai responsabili di eDiscovery. 
   
-Ecco un elenco di Azure Active Directory User Attributes che è possibile utilizzare per i limiti di conformità:
+Ecco un elenco degli attributi degli utenti di Azure AD che è possibile utilizzare per i limiti di conformità:
   
 - Company
 
@@ -79,20 +89,20 @@ Anche se sono disponibili più attributi degli utenti, in particolare per le cas
   
 ## <a name="step-2-file-a-request-with-microsoft-support-to-synchronize-the-user-attribute-to-onedrive-accounts"></a>Passaggio 2: presentare una richiesta con il supporto tecnico Microsoft per sincronizzare l'attributo dell'utente con gli account di OneDrive
 
-Il passaggio successivo consiste nel presentare una richiesta con il supporto tecnico Microsoft per sincronizzare l'attributo di Azure Active Directory che si è scelto nel passaggio 1 per tutti gli account di OneDrive nell'organizzazione. Dopo che si è verificata la sincronizzazione, l'attributo e il relativo valore scelto nel passaggio 1 verranno mappati a una proprietà gestita nascosta denominata `ComplianceAttribute` . Questo attributo viene utilizzato per creare il filtro delle autorizzazioni di ricerca per OneDrive nel passaggio 4.
+Il passaggio successivo consiste nel presentare una richiesta con il supporto tecnico Microsoft per sincronizzare l'attributo di Azure AD che si è scelto nel passaggio 1 per tutti gli account di OneDrive nell'organizzazione. Dopo che si è verificata la sincronizzazione, l'attributo e il relativo valore scelto nel passaggio 1 verranno mappati a una proprietà gestita nascosta denominata `ComplianceAttribute` . Questo attributo viene utilizzato per creare il filtro delle autorizzazioni di ricerca per OneDrive nel passaggio 4.
   
 Includere le informazioni seguenti quando si invia la richiesta al supporto tecnico Microsoft:
   
 - Il nome di dominio predefinito dell'organizzazione
 
-- Nome dell'attributo di Azure Active Directory (del passaggio 1)
+- Nome dell'attributo di Azure AD (dal passaggio 1)
 
-- Il titolo seguente o la descrizione dello scopo della richiesta di supporto: "abilitare la sincronizzazione di OneDrive for business con Azure Active Directory per i filtri di sicurezza di conformità". Ciò consente di instradare la richiesta al team di progettazione di eDiscovery che implementa la richiesta.
+- Il titolo seguente o la descrizione dello scopo della richiesta di supporto: "abilitare la sincronizzazione di OneDrive for business con Azure AD per i filtri di sicurezza di conformità". Ciò consente di instradare la richiesta al team di progettazione di eDiscovery che implementa la richiesta.
 
 Dopo aver apportato la modifica dell'ingegneria e l'attributo è sincronizzato con OneDrive, il supporto tecnico Microsoft invierà il numero di build in cui è stata apportata la modifica e la data di distribuzione stimata. Il processo di distribuzione richiede solitamente 4 – 6 settimane dopo aver inviato la richiesta di supporto.
   
 > [!IMPORTANT]
-> È possibile completare il passaggio 3 al passaggio 5 prima della distribuzione di questa modifica dell'attributo. Tuttavia, l'esecuzione di ricerche di contenuto non restituirà documenti dai siti di OneDrive specificati nel filtro delle autorizzazioni di ricerca fino a quando non viene distribuita la modifica.
+> È possibile completare il passaggio 3 al passaggio 5 prima della distribuzione di questa modifica dell'attributo. Tuttavia, l'esecuzione di ricerche di contenuto non restituirà documenti dagli account di OneDrive specificati in un filtro delle autorizzazioni di ricerca fino a quando non viene distribuita la sincronizzazione degli attributi.
   
 ## <a name="step-3-create-a-role-group-for-each-agency"></a>Passaggio 3: creare un gruppo di ruoli per ogni agenzia
 
@@ -193,7 +203,7 @@ I filtri per le autorizzazioni di ricerca consentono inoltre di controllare il p
     |CAN <br/> |Canada|
     |||
 
-- **Instradare le ricerche contenuto:** È possibile instradare le ricerche di contenuto dei siti di SharePoint e gli account di OneDrive a un Data Center satellite. Questo significa che è possibile specificare la posizione del centro dati in cui verranno eseguite le ricerche.
+- **Instradare le ricerche contenuto:** È possibile instradare le ricerche di contenuto dei siti di SharePoint e degli account di OneDrive a un datacenter satellite. Questo significa che è possibile specificare la posizione del centro dati in cui verranno eseguite le ricerche.
 
     Utilizzare uno dei seguenti valori per il parametro **Region** per controllare la posizione del Data Center in cui verranno eseguite ricerche durante la ricerca di siti di SharePoint e di account OneDrive. 
   
@@ -211,12 +221,12 @@ I filtri per le autorizzazioni di ricerca consentono inoltre di controllare il p
     |LAM  <br/> |NOI  <br/> |
     |||
 
-   Se non si specifica il parametro **Region** per un filtro delle autorizzazioni di ricerca, verrà eseguita la ricerca nell'area di SharePoint predefinita dell'organizzazione. I risultati della ricerca vengono esportati nel centro dati più vicino.
+   Se non si specifica il parametro **Region** per un filtro delle autorizzazioni di ricerca, verrà eseguita la ricerca nell'area di SharePoint principale dell'organizzazione. I risultati della ricerca vengono esportati nel centro dati più vicino.
 
    Per semplificare il concetto, il parametro **Region** controlla il Data Center utilizzato per la ricerca di contenuto in SharePoint e OneDrive. Questo non si applica alla ricerca di contenuto in Exchange perché le ricerche di contenuto di Exchange non sono associate alla posizione geografica dei datacenter. Inoltre, lo stesso valore del parametro **Region** può anche dettare il Data Center in cui vengono instradate le esportazioni. Questo è spesso necessario per controllare lo spostamento dei dati tra i boarder geografici.
 
 > [!NOTE]
-> Se si utilizza Advanced eDiscovery, il parametro **Region** non controlla l'area da cui vengono esportati i dati. Inoltre, la ricerca di contenuto in SharePoint e OneDrive non è associata alla posizione geografica dei data center. Viene eseguita la ricerca in tutti i datacenter. Per ulteriori informazioni su Advanced eDiscovery, vedere [Overview of the Advanced eDiscovery Solution in Microsoft 365](overview-ediscovery-20.md).
+> Se si utilizza Advanced eDiscovery, il parametro **Region** non controlla l'area da cui vengono esportati i dati. I dati vengono esportati dal datacenter principale dell'organizzazione. Inoltre, la ricerca di contenuto in SharePoint e OneDrive non è associata alla posizione geografica dei data center. Viene eseguita la ricerca in tutti i datacenter. Per ulteriori informazioni su Advanced eDiscovery, vedere [Overview of the Advanced eDiscovery Solution in Microsoft 365](overview-ediscovery-20.md).
 
 Di seguito sono riportati alcuni esempi di utilizzo del parametro **Region** quando si creano filtri delle autorizzazioni di ricerca per i limiti di conformità. Ciò presuppone che la quarta filiale del caffè si trovi in Nord America e che Coho Winery sia in Europa. 
   
@@ -230,13 +240,13 @@ New-ComplianceSecurityFilter -FilterName "Coho Winery Security Filter" -Users "C
 
 Quando si esegue la ricerca e l'esportazione di contenuto in ambienti multi-Geo, tenere presente quanto segue.
   
-- Il parametro **Area** non controlla le ricerche nelle cassette postali di Exchange. Quando si esegue la ricerca delle cassette postali, vengono ricercati tutti i Data Center. Per limitare l'ambito di ricerca delle cassette postali di Exchange, utilizzare il parametro **Filters** durante la creazione o la modifica di un filtro delle autorizzazioni di ricerca. 
+- Il parametro **Area** non controlla le ricerche nelle cassette postali di Exchange. Quando si esegue la ricerca delle cassette postali, verranno ricercati tutti i datacenter. Per limitare l'ambito di ricerca delle cassette postali di Exchange, utilizzare il parametro **Filters** durante la creazione o la modifica di un filtro delle autorizzazioni di ricerca. 
 
 - Se è necessario che un Manager di eDiscovery sia in grado di eseguire ricerche in più aree di SharePoint, è necessario creare un account utente diverso per il responsabile di eDiscovery da utilizzare nel filtro delle autorizzazioni di ricerca per specificare l'area in cui si trovano i siti di SharePoint o gli account di OneDrive. Per ulteriori informazioni sull'impostazione di questo articolo, vedere la sezione "ricerca di contenuto in un ambiente multi-geo di SharePoint" in [Ricerca contenuto](content-search.md#searching-for-content-in-a-sharepoint-multi-geo-environment).
 
-- Quando si esegue la ricerca di contenuto in SharePoint e OneDrive, il parametro **Region** indirizza le ricerche verso la posizione principale o via satellite in cui il responsabile di eDiscovery conterrà le indagini di eDiscovery. Se un Manager di eDiscovery cerca i siti di SharePoint e OneDrive all'esterno dell'area specificata nel filtro delle autorizzazioni di ricerca, non vengono restituiti i risultati della ricerca.
+- Quando si esegue una ricerca del contenuto in SharePoint e OneDrive, il parametro **Region** indirizza le ricerche nella posizione principale o via satellite in cui il responsabile di eDiscovery conterrà le indagini di eDiscovery. Se un Manager di eDiscovery cerca i siti di SharePoint e OneDrive all'esterno dell'area specificata nel filtro delle autorizzazioni di ricerca, non vengono restituiti i risultati della ricerca.
 
-- Quando si esportano i risultati della ricerca, il contenuto proveniente da tutti i percorsi di contenuto (compresi Exchange, Skype for business, SharePoint, OneDrive e altri servizi che è possibile cercare tramite lo strumento di ricerca del contenuto) viene caricato nel percorso di archiviazione di Azure nel datacenter specificato dal parametro **Region** . Questo consente alle organizzazioni di rimanere all'interno della conformità, non consentendo l'esportazione di contenuto nei confini controllati. Se nel filtro delle autorizzazioni di ricerca non è specificata alcuna area, il contenuto viene caricato nell'area predefinita dell'organizzazione.
+- Quando si esportano i risultati della ricerca, il contenuto proveniente da tutti i percorsi di contenuto (compresi Exchange, Skype for business, SharePoint, OneDrive e altri servizi che è possibile cercare tramite lo strumento di ricerca del contenuto) viene caricato nel percorso di archiviazione di Azure nel datacenter specificato dal parametro **Region** . Questo consente alle organizzazioni di rimanere all'interno della conformità, non consentendo l'esportazione di contenuto nei confini controllati. Se nel filtro delle autorizzazioni di ricerca non è specificata alcuna area, il contenuto viene caricato nel centro dati principale dell'organizzazione.
 
 - È possibile modificare un filtro delle autorizzazioni di ricerca esistente per aggiungere o modificare l'area eseguendo il comando riportato di seguito:
 
@@ -271,6 +281,22 @@ Quando si gestiscono i casi di eDiscovery e le indagini sull'utilizzo dei limiti
     Inoltre, le statistiche di esenzione si applicano solo ai percorsi di contenuto nell'agenzia.
 
 - I filtri delle autorizzazioni di ricerca non vengono applicati alle cartelle pubbliche di Exchange.
+
+## <a name="more-information"></a>Altre informazioni
+
+- Se una cassetta postale è deautorizzata o eliminata temporaneamente, gli attributi di Azure AD non vengono più sincronizzati con la cassetta postale. Se un blocco è stato inserito nella cassetta postale quando è stato eliminato, il contenuto conservato nella cassetta postale è ancora soggetto a un limite di conformità o a un filtro delle autorizzazioni di ricerca in base all'ultima sincronizzazione degli attributi di Azure AD prima che la cassetta postale sia stata eliminata. 
+
+    Inoltre, la sincronizzazione tra la cassetta postale e l'account di OneDrive dell'utente cesserà se la cassetta postale è deceduta o eliminata temporaneamente. L'ultimo valore timbrato dell'attributo Compliance per l'account OneDrive rimarrà attivo.
+
+- L'attributo Compliance è sincronizzato dalla cassetta postale di Exchange di un utente al proprio account OneDrive ogni sette giorni. Come indicato in precedenza, questa sincronizzazione si verifica solo quando all'utente è assegnata una licenza di Exchange Online e SharePoint Online e la cassetta postale dell'utente è di almeno 10 MB.
+
+- Se i limiti di conformità e le autorizzazioni di ricerca vengono implementati per la cassetta postale e l'account di OneDrive di un utente, è consigliabile non eliminare la cassetta postale di un utente e non il relativo account di OneDrive. In altre parole, se si elimina la cassetta postale di un utente, è necessario rimuovere anche l'account OneDrive dell'utente.
+
+- Sono presenti situazioni (ad esempio un dipendente che restituisce) in cui un utente può disporre di due o più account OneDrive. In questi casi, solo l'account OneDrive primario associato all'utente in Azure AD verrà sincronizzato.
+
+- I limiti di conformità e i filtri delle autorizzazioni di ricerca dipendono dagli attributi timbrati sul contenuto in Exchange, OneDrive e SharePoint e dalla successiva indicizzazione del contenuto timbrato. 
+
+- Non è consigliabile utilizzare filtri di esclusione (come `-not()` l'utilizzo in un filtro delle autorizzazioni di ricerca) per un limite di conformità basato sul contenuto. L'utilizzo di un filtro di esclusione può avere risultati imprevisti se il contenuto con gli attributi aggiornati di recente non è stato indicizzato. 
 
 ## <a name="frequently-asked-questions"></a>Domande frequenti
 

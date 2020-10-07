@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 37cdbb02-a24a-4093-8bdb-2a7f0b3a19ee
 description: Informazioni sull'archiviazione in espansione automatica, che fornisce un archivio di archiviazione illimitato per le cassette postali di Exchange Online.
-ms.openlocfilehash: f2d9e645badd98ea9a1d14dec22e291c8ad7de63
-ms.sourcegitcommit: 416a4b87bfd7e5aff80194b59b2776f054aa8eb5
+ms.openlocfilehash: 5481fd14f281c132475613228c835c72592d2f59
+ms.sourcegitcommit: 33afa334328cc4e3f2474abd611c1411adabd39f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44534918"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48370424"
 ---
 # <a name="overview-of-unlimited-archiving"></a>Panoramica dell'archiviazione illimitata
 
@@ -110,6 +110,6 @@ In questa sezione viene illustrata la funzionalità tra l'archiviazione in espan
 
 - **Servizio di importazione:** È possibile utilizzare il servizio di importazione di Office 365 per importare i file PST nell'archivio automatico espanso di un utente. È possibile importare fino a 100 GB di dati da file PST nella cassetta postale di archiviazione dell'utente.
 
-## <a name="more-information"></a>Ulteriori informazioni
+## <a name="more-information"></a>Altre informazioni
 
-Per ulteriori informazioni tecniche sull'archiviazione in espansione automatica, vedere [Microsoft 365: auto-Expanding Archives FAQ](https://blogs.technet.microsoft.com/exchange/2018/04/09/office-365-auto-expanding-archives-faq/).
+Per ulteriori informazioni tecniche sull'archiviazione in espansione automatica, vedere [Microsoft 365: auto-Expanding Archives FAQ](https://techcommunity.microsoft.com/t5/exchange-team-blog/office-365-auto-expanding-archives-faq/ba-p/607784).

@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: e279d8e075538582ea282e1c6d1493685a817b2a
-ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
+ms.openlocfilehash: 5294b63744ec64f9be566a4a447c56ccd7456136
+ms.sourcegitcommit: 33afa334328cc4e3f2474abd611c1411adabd39f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48208126"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48370302"
 ---
 # <a name="california-consumer-privacy-act-ccpa"></a>California Consumer Privacy Act (CCPA)
 
@@ -39,7 +39,7 @@ Per i clienti commerciali che operano in California, Microsoft fungerà da' prov
 
 Come indicato nell'OST, Microsoft è conforme a tutte le leggi e normative applicabili alla sua fornitura dei servizi online, che includerà il CCPA.  
 
-## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud Microsoft in ambito
+## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud Microsoft inclusi nell'ambito
 
 - [Azure](https://aka.ms/AzureCompliance)
 - Azure Dev Ops
@@ -53,7 +53,7 @@ Come indicato nell'OST, Microsoft è conforme a tutte le leggi e normative appli
 
 Di seguito sono riportati alcuni passaggi da eseguire per prepararsi per l'CCPA:
 
-- Iniziare a sfruttare la valutazione di GDPR in [Score Compliance](compliance-score.md) come parte del programma di privacy di CCPA.
+- Iniziare a sfruttare la valutazione di GDPR in [Compliance Manager](compliance-manager.md) come parte del programma di privacy di CCPA.
 - Stabilire un processo per rispondere in modo efficiente alle richieste di accesso del soggetto dei dati (DSARs) utilizzando lo strumento richieste degli interessati.
 - Impostare etichette e criteri per individuare, classificare ed etichettare e proteggere i dati sensibili con Microsoft Information Protection.
 - Usare le funzionalità di crittografia della posta elettronica per controllare ulteriormente le informazioni riservate.
@@ -93,9 +93,9 @@ Il CCPA richiede attività regolamentate che raccolgono, trasferiscono e vendono
 - Il CCPA introduce obblighi di consenso dei genitori coerenti con la legge Children's Online Privacy Protection Act (COPPA) per bambini di età inferiore ai 13 anni.
 - Per i bambini tra i 13 e i 16 anni, CCPA impone un nuovo obbligo di ottenere il consenso opt-in dal bambino.
 
-## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>Utilizzo di Microsoft Compliance Manager per valutare i rischi
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>Usare Microsoft Compliance Manager per valutare i rischi
 
-[Microsoft Compliance Manager](compliance-manager.md) è una funzionalità del [centro conformità di Microsoft 365](microsoft-365-compliance-center.md) che consente di comprendere la posizione di conformità dell'organizzazione e di intraprendere azioni per contribuire alla riduzione dei rischi. Compliance Manager offre un modello Premium per la creazione di una valutazione per questo regolamento. Individuare il modello nella pagina **modelli di valutazione** in Compliance Manager. Informazioni su come [creare valutazioni in Compliance Manager](compliance-manager-assessments.md).
+[Microsoft Compliance Manager](compliance-manager.md) è una funzionalità nel [Centro conformità Microsoft 365](microsoft-365-compliance-center.md) utile per comprendere lo stato di conformità dell'organizzazione e intraprendere azioni per ridurre i rischi. Compliance Manager offre un modello premium per creare una valutazione per questa normativa. Individuare il modello nella pagina **modelli di valutazioni** in Compliance Manager. Informazioni su come [creare valutazioni in Compliance Manager](compliance-manager-assessments.md).
 
 ## <a name="resources"></a>Risorse
 
@@ -103,4 +103,4 @@ Il CCPA richiede attività regolamentate che raccolgono, trasferiscono e vendono
 - [Guida introduttiva a CCPA](https://info.microsoft.com/ww-landing-Five-tips-to-help-you-prepare-for-the-California-Consumer-Privacy-Act.html)
 - [Richieste del soggetto dei dati e GDPR](gdpr-data-subject-requests.md)
 - [Domande frequenti sul California Consumer Privacy Act (CCPA)](ccpa-faq.md)
-- [Conformità nel Centro protezione Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Conformità nel Centro di protezione Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)

@@ -9,17 +9,20 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
+- m365solution-compliancemanager
+- m365initiative-compliance
 search.appverid:
 - MOE150
 - MET150
 description: Impostare le autorizzazioni e i ruoli utente di Microsoft Compliance Manager e configurare il testing automatizzato delle azioni. Gestire la cronologia degli utenti e filtrare la visualizzazione del dashboard.
-ms.openlocfilehash: ead4fe60a11bcf78a318601c1de6d72f2490c567
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 043a52e2817e770671c2ef8876049f6bbe0285ee
+ms.sourcegitcommit: 9d8d071659e662c266b101377e24549963e43fef
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48204436"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "48368139"
 ---
 # <a name="get-started-with-compliance-manager"></a>Introduzione a Compliance Manager
 
@@ -29,7 +32,7 @@ ms.locfileid: "48204436"
 
 Compliance Manager è disponibile per le organizzazioni con licenza di Office 365 e Microsoft 365. La disponibilità e le funzionalità di gestione della valutazione dipendono dal contratto di licenza.  [Visualizzare i dettagli della descrizione del servizio](https://go.microsoft.com/fwlink/?linkid=2132371).
 
-## <a name="before-you-begin"></a>Prima di iniziare
+## <a name="before-you-begin"></a>Informazioni preliminari
 
 L'amministratore globale di Microsoft 365 per l'organizzazione sarà probabilmente il primo utente a accedere a Compliance Manager. È consigliabile accedere all'amministratore globale e impostare le autorizzazioni utente come indicato di seguito quando si visita Compliance Manager per la prima volta.
 
@@ -70,7 +73,7 @@ Per impostare le autorizzazioni e assegnare i ruoli dall'interno del centro conf
 
 Per ulteriori informazioni sulle autorizzazioni, vedere [Office 365 Security & Compliance Center](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center).
 
-Se non si ha accesso al centro sicurezza e conformità di Office 365 o se è necessario accedere alla versione classica di Compliance Manager in Microsoft Service Trust Portal, le impostazioni di amministratore nel Service Trust Portal offrono un altro modo per assegnare i ruoli ([vedere le istruzioni](/meet-data-protection-and-regulatory-reqs-using-microsoft-cloud?view=o365-worldwide.md#assigning-compliance-manager-roles-to-users)). Tenere presente che tali ruoli sono più limitati nelle loro funzionalità.
+Se non si ha accesso al centro sicurezza e conformità di Office 365 o se è necessario accedere alla versione classica di Compliance Manager in Microsoft Service Trust Portal, le impostazioni di amministratore nel Service Trust Portal offrono un altro modo per assegnare i ruoli ([vedere le istruzioni](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md#assigning-compliance-manager-roles-to-users)). Tenere presente che tali ruoli sono più limitati nelle loro funzionalità.
 
 ##### <a name="more-about-azure-ad"></a>Altre informazioni su Azure AD
 
