@@ -1,6 +1,6 @@
 ---
 title: Accedere al Portale di amministrazione
-keywords: Microsoft Managed Desktop, Microsoft 365, servizio, documentazione
+keywords: Microsoft Managed Desktop, Microsoft 365, servizi, documentazione
 ms.service: m365-md
 ms.author: jaimeo
 author: jaimeo
@@ -9,12 +9,12 @@ audience: ITPro
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: laurawi
-ms.openlocfilehash: f57911276d74c6945027077404e1f83c2f5072fd
-ms.sourcegitcommit: eb905c5b4d7e71fc930a207357295b0160c4f065
+ms.openlocfilehash: 5adf57c2397c4de3c5ea8622a2a9be7207ebf152
+ms.sourcegitcommit: 5e40c760c1af2a4cc6d85cb782b17f5c979677c5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "48137036"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48379299"
 ---
 # <a name="access-the-admin-portal"></a>Accedere al portale di amministrazione
 
@@ -34,12 +34,12 @@ Per poter accedere alle funzionalità amministrative di Microsoft Managed Deskto
 
 |Ruolo di Azure AD  |Autorizzazioni di Microsoft Managed Desktop  |
 |---------|---------|
-|Amministratore globale     | Gli amministratori con questo ruolo avranno **autorizzazioni di lettura e scrittura** per tutte le funzionalità nel portale di amministrazione di Microsoft Managed Desktop.         |
-|Ruolo con autorizzazioni di lettura globali     | Gli amministratori con questo ruolo avranno le **autorizzazioni di sola lettura** per tutte le funzionalità nel portale di amministrazione di Microsoft Managed Desktop.         |
-|Amministratore del servizio Intune     |  Gli amministratori con questo ruolo avranno **autorizzazioni di lettura e scrittura** per tutte le funzionalità nel portale di amministrazione di Microsoft Managed Desktop. **Cambia:** A partire da settembre 2020 gli amministratori con questo ruolo non avranno accesso alle funzionalità di sicurezza di Microsoft Managed Desktop.       |
-|Amministratore del supporto tecnico     | Gli amministratori con questo ruolo avranno **autorizzazioni di lettura e scrittura** per tutte le funzionalità nel portale di amministrazione di Microsoft Managed Desktop. **Cambia:** A partire da settembre 2020 gli amministratori con questo ruolo non avranno accesso alle funzionalità di sicurezza di Microsoft Managed Desktop.         |
-|Amministratore della sicurezza | **(In preview 2020 settembre)** Gli amministratori con questo ruolo avranno le autorizzazioni di sola lettura per tutte le caratteristiche e le autorizzazioni di scrittura per le funzionalità relative alla sicurezza in Microsoft Managed Desktop nel portale di amministrazione. |
-|Ruolo con autorizzazioni di lettura per la sicurezza | **(In preview 2020 settembre)**  Gli amministratori con questo ruolo avranno le autorizzazioni di sola lettura per tutte le funzionalità nel portale di amministrazione di Microsoft Managed Desktop.|
+|Amministratore globale     | Gli amministratori con questo ruolo avranno **autorizzazioni di lettura e scrittura per tutte le funzionalità** nel portale di amministrazione di Microsoft Managed Desktop.         |
+|Ruolo con autorizzazioni di lettura globali     | Gli amministratori con questo ruolo avranno le **autorizzazioni di sola lettura per tutte le funzionalità** nel portale di amministrazione di Microsoft Managed Desktop.         |
+|Amministratore del servizio Intune     |  Gli amministratori con questo ruolo avranno **autorizzazioni di lettura e scrittura per le caratteristiche non correlate alla sicurezza** nel portale di amministrazione di Microsoft Managed Desktop.       |
+|Amministratore del supporto tecnico     | Gli amministratori con questo ruolo avranno **autorizzazioni di lettura e scrittura per le caratteristiche non correlate alla sicurezza** nel portale di amministrazione di Microsoft Managed Desktop.         |
+|Amministratore della sicurezza | Gli amministratori con questo ruolo avranno le **autorizzazioni di sola lettura per tutte le caratteristiche** e le **autorizzazioni di scrittura per le funzionalità relative alla sicurezza** in Microsoft Managed Desktop nel portale di amministrazione. |
+|Ruolo con autorizzazioni di lettura per la sicurezza |Gli amministratori con questo ruolo avranno le **autorizzazioni di sola lettura per tutte le funzionalità** nel portale di amministrazione di Microsoft Managed Desktop.|
 
 > [!IMPORTANT]
 > Solo il ruolo amministratore globale dispone delle autorizzazioni necessarie per *registrare* la propria organizzazione in Microsoft Managed Desktop. Tenere presente che i ruoli di Azure Active Directory forniranno i privilegi degli account utente in una vasta gamma di servizi Microsoft. Dopo aver completato la registrazione con Microsoft Managed Desktop, è consigliabile utilizzare sempre il ruolo con i privilegi *minimi* necessari per eseguire le altre attività.
@@ -47,9 +47,9 @@ Per poter accedere alle funzionalità amministrative di Microsoft Managed Deskto
  
 |Ruolo personalizzato  |Autorizzazioni di Microsoft Managed Desktop  |
 |---------|---------|
-|Amministratore del servizio Microsoft Managed Desktop  | **(In preview 2020 settembre)** Quando viene assegnato a un utente, questo ruolo consente all'amministratore di **leggere & autorizzazioni di scrittura per le caratteristiche non correlate alla sicurezza** nel portale di amministrazione di Microsoft Managed Desktop.  |
-|Lettore di servizi Microsoft Managed Desktop | **(In preview 2020 settembre)** Quando viene assegnato a un utente, questo ruolo fornisce all'amministratore **autorizzazioni di sola lettura per le funzionalità non correlate alla sicurezza** nel portale di amministrazione di Microsoft Managed Desktop. |
-|Gestione della sicurezza di Microsoft Managed Desktop | **(In preview 2020 settembre)** Quando viene assegnato a un utente, questo ruolo consente all'amministratore di **leggere & autorizzazioni di scrittura solo per le funzionalità relative alla sicurezza** nel portale di amministrazione di Microsoft Managed Desktop.   |
+|Amministratore del servizio Microsoft Managed Desktop  | Quando viene assegnato a un utente, questo ruolo fornisce all'amministratore **autorizzazioni di lettura e scrittura per le caratteristiche non correlate alla sicurezza** nel portale di amministrazione di Microsoft Managed Desktop.  |
+|Lettore di servizi Microsoft Managed Desktop | Quando viene assegnato a un utente, questo ruolo fornisce all'amministratore le **autorizzazioni di sola lettura per le funzionalità non correlate alla sicurezza** nel portale di amministrazione di Microsoft Managed Desktop. |
+|Gestione della sicurezza di Microsoft Managed Desktop |Quando viene assegnato a un utente, questo ruolo fornisce all'amministratore **autorizzazioni di lettura e scrittura solo per le funzionalità relative alla sicurezza** nel portale di amministrazione di Microsoft Managed Desktop.   |
 
 > [!NOTE]
 > Le funzionalità di sicurezza includono le comunicazioni relative alla sicurezza, la gestione dei contatti di sicurezza, la gestione delle richieste di supporto correlate alla sicurezza e l'accesso ai report relativi alla sicurezza. 
