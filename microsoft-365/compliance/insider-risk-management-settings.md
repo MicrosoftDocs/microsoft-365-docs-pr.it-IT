@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: 5a1bd06e76564750c7b080182ac8ab93fc8d60de
-ms.sourcegitcommit: 79a21583a52aedd06317bbcabd8be40663379dec
+ms.openlocfilehash: c98c0081d95da19e79db03dc4b4fdb823a14e42c
+ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "48341224"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48377271"
 ---
 # <a name="get-started-with-insider-risk-management-settings"></a>Informazioni introduttive sulle impostazioni di gestione dei rischi Insider
 
@@ -300,14 +300,14 @@ I clienti con abbonamenti Microsoft 365 che includono la gestione dei rischi ins
 
 I seguenti modelli di automatizzazione dei poteri vengono forniti ai clienti per supportare l'automazione dei processi per gli utenti e i casi di gestione del rischio Insider:
 
-- **Informare gli utenti quando vengono aggiunti a un criterio di rischio Insider**: questo modello è per le organizzazioni che dispongono di criteri interni, privacy o requisiti normativi che gli utenti devono ricevere una notifica quando sono soggetti a criteri di gestione dei rischi Insider. Quando questo flusso è configurato e selezionato per un utente nella pagina utenti, gli utenti e i loro manager ricevono un messaggio di posta elettronica quando l'utente viene aggiunto a un criterio di gestione dei rischi Insider. Questo modello supporta anche l'aggiornamento di un elenco di SharePoint ospitato in un sito di SharePoint per consentire di tenere presenti i dettagli dei messaggi di notifica come data/ora e il destinatario del messaggio. I flussi automatici di alimentazione con questo modello sono disponibili nel **dashboard degli utenti**.
-- **Richiedere informazioni da HR o business su un utente in un caso di rischio Insider**: quando si agisce su un caso, gli analisti e gli investigatori del rischio Insider possono dover consultare HR o altre parti interessate per comprendere il contesto delle attività del caso. Quando questo flusso è configurato e selezionato per un caso, gli analisti e gli investigatori inviano un messaggio di posta elettronica alle parti interessate HR e business configurate per questo flusso. Ogni destinatario viene inviato un messaggio con opzioni di risposta preconfigurate o personalizzabili. Quando i destinatari selezionano un'opzione di risposta, la risposta viene registrata come nota del caso e include informazioni su destinatario e data/ora. I flussi automatici di alimentazione con questo modello sono disponibili nel **dashboard dei casi**.
+- **Informare gli utenti quando vengono aggiunti a un criterio di rischio Insider**: questo modello è per le organizzazioni che dispongono di criteri interni, privacy o requisiti normativi che gli utenti devono ricevere una notifica quando sono soggetti a criteri di gestione dei rischi Insider. Quando questo flusso è configurato e selezionato per un utente nella pagina utenti, gli utenti e i loro manager ricevono un messaggio di posta elettronica quando l'utente viene aggiunto a un criterio di gestione dei rischi Insider. Questo modello supporta anche l'aggiornamento di un elenco di SharePoint ospitato in un sito di SharePoint per consentire di tenere presenti i dettagli dei messaggi di notifica come data/ora e il destinatario del messaggio. Se si è scelto di anonimizzare gli utenti in **impostazioni di privacy**, i flussi creati da questo modello non funzioneranno come previsto in modo che la privacy degli utenti venga mantenuta. I flussi automatici di alimentazione con questo modello sono disponibili nel **dashboard degli utenti**.
+- **Richiedere informazioni da HR o business su un utente in un caso di rischio Insider**: quando si agisce su un caso, gli analisti e gli investigatori del rischio Insider possono dover consultare HR o altre parti interessate per comprendere il contesto delle attività del caso. Quando questo flusso è configurato e selezionato per un caso, gli analisti e gli investigatori inviano un messaggio di posta elettronica alle parti interessate HR e business configurate per questo flusso. Ogni destinatario viene inviato un messaggio con opzioni di risposta preconfigurate o personalizzabili. Quando i destinatari selezionano un'opzione di risposta, la risposta viene registrata come nota del caso e include informazioni su destinatario e data/ora. Se si è scelto di anonimizzare gli utenti in **impostazioni di privacy**, i flussi creati da questo modello non funzioneranno come previsto in modo che la privacy degli utenti venga mantenuta. I flussi automatici di alimentazione con questo modello sono disponibili nel **dashboard dei casi**.
 - **Gestione notifiche quando un utente dispone di un avviso di rischio Insider**: alcune organizzazioni potrebbero dover avere una notifica di gestione immediata quando un utente dispone di un avviso di gestione dei rischi Insider. Quando questo flusso è configurato e selezionato, il responsabile dell'utente del caso viene inviato un messaggio di posta elettronica con le seguenti informazioni su tutti gli avvisi di caso: 
     - Criterio applicabile per l'avviso
     - Data/ora dell'avviso
     - Livello di gravità dell'avviso
 
-    Il flusso aggiorna automaticamente le note del caso in cui il messaggio è stato inviato e che il flusso è stato attivato. I flussi automatici di alimentazione con questo modello sono disponibili nel **dashboard dei casi**.
+    Il flusso aggiorna automaticamente le note del caso in cui il messaggio è stato inviato e che il flusso è stato attivato. Se si è scelto di anonimizzare gli utenti in **impostazioni di privacy**, i flussi creati da questo modello non funzioneranno come previsto in modo che la privacy degli utenti venga mantenuta. I flussi automatici di alimentazione con questo modello sono disponibili nel **dashboard dei casi**.
 
 - **Aggiungere un promemoria del calendario per il follow-up di un caso di rischio Insider**: questo modello consente agli investigatori e agli analisti del rischio di aggiungere promemoria del calendario per i casi al calendario di Office 365 Outlook. Questo flusso Elimina la necessità per gli utenti di uscire o di disattivare il flusso di lavoro di gestione dei rischi Insider quando si elaborano i casi e gli avvisi di Triaging. Quando questo flusso è configurato e selezionato, viene aggiunto un promemoria al calendario di Outlook di Office 365 per l'utente che esegue il flusso. I flussi automatici di alimentazione con questo modello sono disponibili nel **dashboard dei casi**.
 
