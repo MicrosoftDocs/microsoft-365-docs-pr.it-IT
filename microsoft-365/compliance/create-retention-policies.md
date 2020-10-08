@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Usare i criteri di conservazione per tenere sotto controllo molto efficacemente i contenuti che gli utenti generano con posta elettronica, documenti e conversazioni. Mantenere il contenuto desiderato e liberarsi di quello che non serve.
-ms.openlocfilehash: f9c8ff4287f0970f8571d3ced7d612515b03c08e
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 40e405a8ab3ac2159b9a3c5ab8f633bb690d5c24
+ms.sourcegitcommit: 11d1044c6600b1f568b6dc8a53db9b07f2f0ad1c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48198493"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "48384550"
 ---
 # <a name="create-and-configure-retention-policies"></a>Creare e configurare criteri di conservazione
 
@@ -259,19 +259,19 @@ Ad esempio, se un criterio include tutta la posta elettronica di Exchange e tutt
 
 ### <a name="a-policy-with-specific-inclusions-or-exclusions"></a>Criteri con specifiche inclusioni o esclusioni
 
-È anche possibile applicare un criterio di conservazione a specifici utenti, gruppi di Microsoft 365 o siti. A questo scopo, assicurare che lo **Stato** di tale posizione sia **Attivato**, quindi usare i collegamenti per includere o escludere determinati utenti, gruppi di Microsoft 365 o siti.
+Solo se si utilizza la configurazione facoltativa per definire l'ambito delle impostazioni di conservazione a utenti specifici, gruppi di Microsoft 365 specifici o siti specifici, esistono alcuni limiti di cui tenere conto: 
 
-Questa configurazione, tuttavia, prevede dei limiti se i criteri di conservazione includono o escludono più di 1.000 oggetti specifici:
-
-- Valori massimi per i criteri di conservazione:
+- Valori massimi per criteri di conservazione:
   - 1.000 cassette postali
   - 1.000 gruppi di Microsoft 365
   - 1.000 utenti per le chat private di Teams
   - 100 siti (OneDrive o SharePoint)
 
-Il un numero massimo di criteri supportati per un tenant è di 10.000. Questi elementi includono criteri di conservazione, criteri per le etichette di conservazione e criteri di conservazione applicati automaticamente.
+Inoltre il un numero massimo di criteri supportati per un tenant è di 10.000. Questi elementi includono criteri di conservazione, criteri per le etichette di conservazione e criteri di conservazione applicati automaticamente.
 
-Se è probabile che i propri criteri di conservazione siano soggetti a queste limitazioni, scegliere le opzioni di configurazione che prevedono l'applicazione a intere posizioni.
+Se c’è la possibilità che i criteri di conservazione siano soggetti a queste limitazioni, usare la configurazione predefinita che si applica all'intero percorso perché questi criteri non hanno limitazioni.
+
+Per usare la configurazione facoltativa per definire l'ambito delle impostazioni di conservazione, assicurarsi che lo **Stato** di tale posizione sia **Attivato**, quindi usare i collegamenti per includere o escludere determinati utenti, gruppi di Microsoft 365 o siti.
 
 > [!WARNING]
 > Se si configurano inclusioni e poi si rimuove l'ultima di esse, verrà ripristinata la configurazione **Tutti** per la posizione.  Verificare che la configurazione sia quella desiderata prima di salvare il criterio.
