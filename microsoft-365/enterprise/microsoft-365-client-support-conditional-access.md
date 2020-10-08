@@ -16,12 +16,12 @@ f1.keywords:
 - NOCSH
 description: In questo articolo vengono fornite informazioni sulle piattaforme, i client e i moduli di PowerShell che supportano l'accesso condizionale per Microsoft 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: fd4dcaeda27f12427f3175b7ec52e2fdb0c153da
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: d44dffd6da91be9e64953d1b744043114ba68183
+ms.sourcegitcommit: 11d1044c6600b1f568b6dc8a53db9b07f2f0ad1c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47546513"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "48384920"
 ---
 # <a name="microsoft-365-client-app-support--conditional-access"></a>Supporto delle app client Microsoft 365-accesso condizionale
 
@@ -40,7 +40,7 @@ Leggere altre informazioni sull'[Accesso condizionale di Azure AD](https://docs.
  - iOS
  - macOS<sup>1</sup>
 
-Per ulteriori informazioni sul supporto delle piattaforme in Microsoft 365, vedere [requisiti di sistema per microsoft 365](https://products.office.com/office-system-requirements).
+Per ulteriori informazioni sul supporto delle piattaforme in Microsoft 365, vedere [requisiti di sistema per microsoft 365](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources).
 
 ## <a name="supported-clients"></a>Client supportati
 

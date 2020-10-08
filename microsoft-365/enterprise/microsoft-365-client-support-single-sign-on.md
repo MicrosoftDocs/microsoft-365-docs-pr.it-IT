@@ -16,18 +16,18 @@ f1.keywords:
 - NOCSH
 description: In questo articolo vengono fornite informazioni sulle piattaforme, i client e i moduli di PowerShell che supportano il servizio Single Sign-on per Microsoft 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6f6398736c8ead072374fbc14ee04eec63d3ad18
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: d0a45c30ffe736cf67e811bce6eb029d6fb50674
+ms.sourcegitcommit: 11d1044c6600b1f568b6dc8a53db9b07f2f0ad1c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47546411"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "48384807"
 ---
 # <a name="microsoft-365-client-app-support--single-sign-on"></a>Supporto delle app client Microsoft 365-Single Sign-on
 
-*Questo articolo può essere applicato sia a Microsoft 365 Enterprise che a Office 365 Enterprise.*
+*Questo articolo si applica sia a Microsoft 365 Enterprise che a Office 365 Enterprise*.
 
-Single Sign-on (SSO) aggiunge la sicurezza e la convenienza quando gli utenti eseguono l'accesso alle applicazioni in Azure Active Directory (Azure AD). Con Single Sign-on, gli utenti accedono una sola volta con un account per accedere ai dispositivi associati a un dominio, alle risorse aziendali, alle applicazioni software come servizio (SaaS) e alle applicazioni Web.
+Single Sign-on (SSO) aggiunge la sicurezza e la convenienza quando gli utenti eseguono l'accesso alle applicazioni in Azure Active Directory (Azure AD). Con Single Sign-on, gli utenti accedono una volta con un account per accedere ai dispositivi di servizi di dominio Active Directory (AD DS), software as a Service (SaaS) e applicazioni Web locali.
 
 Per ulteriori informazioni, vedere [Single Sign-on](https://docs.microsoft.com/azure/active-directory/manage-apps/what-is-single-sign-on).
 
@@ -40,7 +40,7 @@ Per ulteriori informazioni, vedere [Single Sign-on](https://docs.microsoft.com/a
  - iOS<sup>1</sup>
  - macOS<sup>4</sup>
 
-Per ulteriori informazioni sul supporto delle piattaforme in Microsoft 365, vedere [requisiti di sistema per microsoft 365](https://products.office.com/office-system-requirements).
+Per ulteriori informazioni sul supporto delle piattaforme in Microsoft 365, vedere [requisiti di sistema per microsoft 365](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources).
 
 ## <a name="supported-clients"></a>Client supportati
 

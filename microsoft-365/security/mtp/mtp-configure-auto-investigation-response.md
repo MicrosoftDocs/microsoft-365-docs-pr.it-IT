@@ -7,19 +7,19 @@ ms.author: deniseb
 manager: dansimp
 audience: ITPro
 ms.topic: article
-ms.date: 09/17/2020
+ms.date: 10/07/2020
 ms.prod: microsoft-365-enterprise
 localization_priority: Normal
 ms.collection: M365-security-compliance.
 ms.custom: autoir
 ms.reviewer: evaldm, isco
 f1.keywords: CSH
-ms.openlocfilehash: f7bcfa4f08bee51408de33964f1dfd1e1db3bd33
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: f904512f9fd07e2065f3d27a5bd5adc56a3565d5
+ms.sourcegitcommit: 11d1044c6600b1f568b6dc8a53db9b07f2f0ad1c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48199746"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "48384787"
 ---
 # <a name="configure-automated-investigation-and-response-capabilities-in-microsoft-threat-protection"></a>Configurare le funzionalità di analisi e risposta automatizzate in Microsoft Threat Protection
 
@@ -52,8 +52,6 @@ Dopo aver configurato tutto, [esaminare le azioni in sospeso e completate nell'A
 
 Se le indagini automatizzate vengono eseguite e se le azioni di correzione sono eseguite automaticamente o solo dopo l'approvazione per i dispositivi dipendono da determinate impostazioni, ad esempio i criteri di gruppo per i dispositivi dell'organizzazione. Esaminare il set di livelli di automazione per i criteri di gruppo di dispositivi.
 
-### <a name="to-review-or-change-your-device-group-policies"></a>Per esaminare o modificare i criteri di gruppo dei dispositivi
-
 1. Accedere a Microsoft Defender Security Center ( [https://securitycenter.windows.com](https://securitycenter.windows.com) ) ed eseguire l'accesso.
 
 2. Accedere a gruppi di dispositivi per **le**  >  **autorizzazioni**di impostazioni  >  **Device groups**. 
@@ -69,8 +67,6 @@ Se le indagini automatizzate vengono eseguite e se le azioni di correzione sono 
 Microsoft fornisce [criteri di avviso](https://docs.microsoft.com/microsoft-365/compliance/alert-policies) incorporati che consentono di identificare determinati rischi. Tali rischi includono l'abuso delle autorizzazioni di amministratore di Exchange, attività antimalware, potenziali minacce esterne e interne e rischi di governance delle informazioni. Alcuni avvisi possono attivare l' [analisi e la risposta automatizzate in Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air). Verificare che le funzionalità di [protezione avanzata dalle minacce di Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp) siano configurate correttamente.
 
 Anche se alcuni avvisi e criteri di sicurezza possono attivare indagini automatizzate, non vengono prese automaticamente operazioni di correzione per la posta elettronica e il contenuto. Al contrario, tutte le azioni di correzione per la posta elettronica e il contenuto della posta elettronica attendono l'approvazione da parte del team di operazioni di sicurezza nell' [Action Center](mtp-action-center.md).
-
-### <a name="to-view-or-change-your-security-and-alert-policies-in-office-365"></a>Per visualizzare o modificare i criteri di sicurezza e di avviso in Office 365
 
 Le impostazioni di sicurezza di Office 365 consentono di proteggere la posta elettronica e il contenuto. Per visualizzare o modificare queste impostazioni, seguire le istruzioni riportate in [Protect Against Threats](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats).
 
@@ -88,13 +84,15 @@ Le impostazioni di sicurezza di Office 365 consentono di proteggere la posta ele
 
 5. Verificare che la protezione della [posta elettronica sia attiva per l'eliminazione automatica di zero ore](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats#zero-hour-auto-purge-for-email-in-eop) . 
 
-8. (Facoltativo) Esaminare i [criteri di avviso di Office 365](https://docs.microsoft.com/microsoft-365/compliance/alert-policies) nel centro conformità di Microsoft 365 ( [https://compliance.microsoft.com/compliancepolicies](https://compliance.microsoft.com/compliancepolicies) ). Alcuni criteri di avviso predefiniti sono inclusi nella categoria Gestione minacce. Alcuni di questi avvisi possono attivare l'analisi e la risposta automatizzate. Per ulteriori informazioni, vedere [criteri di avviso predefiniti](https://docs.microsoft.com/microsoft-365/compliance/alert-policies?#default-alert-policies).
+8. (Facoltativo). Esaminare i [criteri di avviso di Office 365](https://docs.microsoft.com/microsoft-365/compliance/alert-policies) nel centro conformità di Microsoft 365 ( [https://compliance.microsoft.com/compliancepolicies](https://compliance.microsoft.com/compliancepolicies) ). Alcuni criteri di avviso predefiniti sono inclusi nella categoria Gestione minacce. Alcuni di questi avvisi possono attivare l'analisi e la risposta automatizzate. Per ulteriori informazioni, vedere [criteri di avviso predefiniti](https://docs.microsoft.com/microsoft-365/compliance/alert-policies?#default-alert-policies).
  
 ## <a name="make-sure-microsoft-threat-protection-is-turned-on"></a>Verificare che Microsoft Threat Protection sia attivato
 
 1. Accedere al centro sicurezza Microsoft 365 ( [https://security.microsoft.com](https://security.microsoft.com) ) ed eseguire l'accesso.
 
-2. Nel riquadro di spostamento cercare gli **eventi incidentati**, il **centro operazioni**e la **ricerca**, come illustrato nell'immagine seguente:<br/> :::image type="content" source="../../media/mtp-enable/mtp-on.png" alt-text="MTP su":::
+2. Nel riquadro di spostamento cercare gli **eventi incidentati**, il **centro operazioni**e la **ricerca**, come illustrato nell'immagine seguente:
+
+   :::image type="content" source="../../media/mtp-enable/mtp-on.png" alt-text="MTP su":::
 
    - Se si verificano **incidenti**, **Centro azioni**e **caccia**, Microsoft Threat Protection è attivato. Passare alla procedura successiva, [esaminare o modificare il livello di automazione per i gruppi di dispositivi](#review-or-change-the-automation-level-for-device-groups).
 

@@ -15,12 +15,12 @@ ms.assetid: fb4182e6-5e78-45d0-9641-d791c4519441
 audience: ITPro
 ms.custom: microsoft-intune
 description: La roadmap per configurare la gestione dei dispositivi per Microsoft 365.
-ms.openlocfilehash: bb19c38d5cf92cfc04ac83bc29573ea24c93ef30
-ms.sourcegitcommit: 13ae76220b4ad688438a5d1031a6e1b5300ffa23
+ms.openlocfilehash: 0efe7098f90064184f222acb671ae6f96c1b38d5
+ms.sourcegitcommit: 11d1044c6600b1f568b6dc8a53db9b07f2f0ad1c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "47775172"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "48384752"
 ---
 # <a name="device-management-roadmap-for-microsoft-365"></a>Roadmap per la gestione dei dispositivi per Microsoft 365
 
@@ -35,17 +35,22 @@ Sono disponibili due opzioni per la gestione dei dispositivi:
 
 È possibile utilizzare Microsoft Intune per gestire l'accesso all'organizzazione tramite la gestione dei dispositivi mobili o la gestione delle applicazioni mobili. La gestione dei dispositivi mobili è quella in cui gli utenti "iscrivono" i propri dispositivi in Intune. Dopo la registrazione di un dispositivo, si tratta di un dispositivo gestito. Pertanto, è in grado di ricevere i criteri, le regole e le impostazioni dell'organizzazione. Ad esempio, è possibile installare app specifiche, creare un criterio password, installare una connessione VPN e altro ancora.
 
-Gli utenti che dispongono di dispositivi personali potrebbero non voler registrare i propri dispositivi o essere gestiti da Intune e dai criteri dell'organizzazione. Tuttavia, è comunque necessario proteggere le risorse e i dati dell'organizzazione. In questo scenario, è possibile proteggere le app utilizzando la gestione delle applicazioni per dispositivi mobili. Ad esempio, è possibile utilizzare un criterio di gestione delle applicazioni per dispositivi mobili che richiede a un utente di immettere un PIN quando si accede a Microsoft SharePoint sul dispositivo.
+Gli utenti che dispongono di dispositivi personali potrebbero non voler registrare i propri dispositivi o essere gestiti da Intune e dai criteri dell'organizzazione. Tuttavia, è comunque necessario proteggere le risorse e i dati dell'organizzazione. In questo scenario, è possibile proteggere le app utilizzando la gestione delle applicazioni per dispositivi mobili. Ad esempio, è possibile utilizzare un criterio di gestione delle applicazioni per dispositivi mobili che richiede a un utente di immettere un PIN quando si accede a SharePoint Online sul dispositivo.
 
 È inoltre possibile determinare come gestire i dispositivi personali e i dispositivi di proprietà dell'organizzazione. Potrebbe essere opportuno trattare i dispositivi in modo diverso, a seconda dell'utilizzo.
-
-Per gestire i dispositivi che utilizzano Intune, iniziare da [qui](https://docs.microsoft.com/mem/intune/fundamentals/planning-guide).
 
 ## <a name="basic-mobility-and-security"></a>Mobilità e sicurezza di base
 
 Questa funzionalità è integrata in Microsoft 365 e consente di proteggere e gestire i dispositivi mobili degli utenti, ad esempio iPhone, iPad, Android e Windows Phone. È possibile creare e gestire criteri di sicurezza, cancellare tutti i dati in remoto e visualizzare report dettagliati sui dispositivi.
 
-Per gestire i dispositivi che utilizzano mobilità e sicurezza di base, iniziare da [qui](https://support.microsoft.com/office/set-up-basic-mobility-and-security-dd892318-bc44-4eb1-af00-9db5430be3cd).
+## <a name="choose-between-the-two-options"></a>Scegliere tra le due opzioni
+
+Per una migliore valutazione dell'opzione di gestione dei dispositivi, vedere [scegliere tra Basic Mobility Security e Intune](https://docs.microsoft.com/office365/securitycompliance/choose-between-mdm-and-intune).
+
+In base alla valutazione, iniziare a gestire i dispositivi con:
+
+- [Intune](https://docs.microsoft.com/mem/intune/fundamentals/planning-guide).
+- [Mobilità e sicurezza di base](https://support.microsoft.com/office/set-up-basic-mobility-and-security-dd892318-bc44-4eb1-af00-9db5430be3cd).
  
 ## <a name="identity-and-device-access-recommendations"></a>Consigli sull’identità e sull’accesso dei dispositivi
 

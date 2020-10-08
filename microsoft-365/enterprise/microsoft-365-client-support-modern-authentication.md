@@ -16,16 +16,16 @@ f1.keywords:
 - NOCSH
 description: In questo articolo vengono fornite informazioni sulle piattaforme, i client e i moduli di PowerShell che supportano l'autenticazione moderna per Microsoft 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d38b5c11a77af8691aaa5e14d288918b39c0d847
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: eee0e9009f7e6a74f25ebf0315b2772ac3e98814
+ms.sourcegitcommit: 11d1044c6600b1f568b6dc8a53db9b07f2f0ad1c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47546303"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "48384820"
 ---
 # <a name="microsoft-365-client-app-support---modern-authentication"></a>Supporto delle app client Microsoft 365-autenticazione moderna
 
-*Questo articolo può essere applicato sia a Microsoft 365 Enterprise che a Office 365 Enterprise.*
+*Questo articolo si applica sia a Microsoft 365 Enterprise che a Office 365 Enterprise*.
 
 L'autenticazione moderna Abilita l'accesso basato sulla libreria di autenticazione di Active Directory (ADAL) per le app client di Office su diverse piattaforme. Ciò consente di abilitare le funzionalità di accesso, ad esempio l'autenticazione a più fattori, la smart card e l'autenticazione basata su certificato.
 
@@ -40,7 +40,7 @@ Per ulteriori informazioni, vedere autenticazione a più [fattori](https://docs.
  - iOS
  - macOS
 
-Per ulteriori informazioni sul supporto delle piattaforme in Microsoft 365, vedere [requisiti di sistema per microsoft 365](https://products.office.com/office-system-requirements).
+Per ulteriori informazioni sul supporto delle piattaforme in Microsoft 365, vedere [requisiti di sistema per microsoft 365](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources).
 
 ## <a name="supported-clients"></a>Client supportati
 

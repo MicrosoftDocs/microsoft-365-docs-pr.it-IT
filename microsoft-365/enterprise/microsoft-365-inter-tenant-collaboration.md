@@ -3,7 +3,6 @@ title: Collaborazione tra tenant di Microsoft 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 09/21/2020
 audience: Admin
 ms.topic: overview
 ms.service: o365-administration
@@ -20,12 +19,12 @@ f1.keywords:
 - NOCSH
 description: Informazioni su come la collaborazione di Microsoft 365 è compatibile con i tenant e le organizzazioni, consentendo a diverse organizzazioni di collaborare in modo sicuro.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 8064543f771927f539d09e3136663bb0df56d5be
-ms.sourcegitcommit: 4ee683c18442386f6fc5c76ffabfad2c28b81d42
+ms.openlocfilehash: 00eacfc21d3223b5b9a1ad420cd5d1d85bf4ea8e
+ms.sourcegitcommit: 11d1044c6600b1f568b6dc8a53db9b07f2f0ad1c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "48214800"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "48384832"
 ---
 # <a name="microsoft-365-inter-tenant-collaboration"></a>Collaborazione tra tenant di Microsoft 365
 
@@ -78,7 +77,7 @@ Le opzioni di collaborazione tra tenant di Microsoft 365 includono l'utilizzo di
 |Obiettivo di condivisione|Azione amministrativa|Informazioni sulle procedure|
 |:-----|:-----|:-----|
 |Collaborare in Teams con utenti esterni all'organizzazione | Un amministratore globale per l'invitante Microsoft 365 tenant deve abilitare la collaborazione esterna in teams. Gli amministratori globali e i proprietari del team potranno quindi invitare utenti che dispongono di un indirizzo di posta elettronica a collaborare in Teams.  <br/> Gli amministratori possono anche gestire e modificare guest già presenti nel proprio tenant. |  <ul><li> [Gestire l'accesso guest](https://docs.microsoft.com/microsoftteams/teams-dependencies) </li><li> [Attivare o disattivare l'accesso guest in Teams](https://docs.microsoft.com/microsoftteams/set-up-guests) </li><li> [Usare PowerShell per controllare l'accesso guest](https://docs.microsoft.com/microsoftteams/guest-access-powershell) </li><li> [Elenco di controllo dell’accesso guest](https://docs.microsoft.com/microsoftteams/guest-access-checklist) </li><li> [Visualizzare gli utenti guest](https://docs.microsoft.com/microsoftteams/view-guests) </li><li> [Modificare le informazioni degli utenti guest](https://docs.microsoft.com/microsoftteams/edit-guests-information) </li></ul> |
-|I proprietari del team possono invitare e gestire il modo in cui gli utenti possono collaborare all'interno del team.  </li><li> |I proprietari del team hanno controlli supplementari sulle operazioni che gli utenti possono eseguire all'interno del team. |  <ul><li> [Aggiungere un utente guest](https://support.office.com/article/teams-and-channels-df38ae23-8f85-46d3-b071-cb11b9de5499?ui=en-US&amp;rs=en-US&amp;ad=US#bkmk_addingguests&amp;ID0EAABAAA=Add_guests) </li><li> [Aggiungere un utente guest a un team](https://docs.microsoft.com/microsoftteams/add-guests) </li><li> [Gestire l'accesso guest in Teams](https://docs.microsoft.com/microsoftteams/manage-guests) </li><li> [Vedere chi è in un team o in un canale](https://support.office.com/article/see-who-s-on-a-team-or-in-a-channel-5c6be9be-9c45-4a0f-a1a0-f332b23cb6b7?ui=en-US&amp;rs=en-US&amp;ad=US) </li></ul> |
+|I proprietari del team possono invitare e gestire il modo in cui gli utenti possono collaborare all'interno del team.  |I proprietari del team hanno controlli supplementari sulle operazioni che gli utenti possono eseguire all'interno del team. |  <ul><li> [Aggiungere un utente guest](https://support.office.com/article/teams-and-channels-df38ae23-8f85-46d3-b071-cb11b9de5499?ui=en-US&amp;rs=en-US&amp;ad=US#bkmk_addingguests&amp;ID0EAABAAA=Add_guests) </li><li> [Aggiungere un utente guest a un team](https://docs.microsoft.com/microsoftteams/add-guests) </li><li> [Gestire l'accesso guest in Teams](https://docs.microsoft.com/microsoftteams/manage-guests) </li><li> [Vedere chi è in un team o in un canale](https://support.office.com/article/see-who-s-on-a-team-or-in-a-channel-5c6be9be-9c45-4a0f-a1a0-f332b23cb6b7?ui=en-US&amp;rs=en-US&amp;ad=US) </li></ul> |
 |Gli utenti guest di altri tenant possono visualizzare il contenuto in Teams e collaborare con altri membri | Nessuna. | [L'esperienza di accesso come utente guest](https://docs.microsoft.com/microsoftteams/guest-experience)| 
 
 ## <a name="power-bi-collaboration-options"></a>Opzioni di collaborazione di Power BI
@@ -93,18 +92,18 @@ Le opzioni di collaborazione tra tenant di Microsoft 365 includono l'utilizzo di
 
 Ogni organizzazione gestisce i propri account utente, identità, gruppi di sicurezza, abbonamenti, licenze e archiviazione. Gli utenti utilizzano le funzionalità di collaborazione in Microsoft 365 insieme ai criteri di condivisione e alle impostazioni di sicurezza per consentire l'accesso alle informazioni necessarie mantenendo il controllo delle risorse aziendali.
   
-- **Account utente:** gli account non possono essere condivisi e duplicati tra i tenant o le partizioni nei servizi directory di Active Directory locali. 
+- **Account utente:** Gli account non possono essere condivisi o duplicati tra i tenant o le partizioni nei servizi di dominio Active Directory locali. 
     
 - ** &amp; Abbonamenti alle licenze:** in Microsoft 365, le licenze provenienti da piani di licenza (denominati anche SKU o piani Microsoft 365) offrono agli utenti l'accesso ai servizi Microsoft 365 definiti per tali piani. 
     
-- **Archiviazione:** Nei piani di Microsoft 365, i limiti software e le limitazioni per SharePoint Online vengono gestiti separatamente dai limiti di archiviazione delle cassette postali. I limiti di archiviazione della cassetta postale vengono configurati e gestiti con Exchange Online. In entrambi i casi, lo spazio di archiviazione non può essere condiviso tra i tenant. 
+- **Archiviazione:** Nei piani di gestione delle licenze Microsoft 365, i limiti software e il limite per SharePoint Online vengono gestiti separatamente dai limiti di archiviazione delle cassette postali. I limiti di archiviazione della cassetta postale vengono configurati e gestiti con Exchange Online. In entrambi gli scenari, lo spazio di archiviazione non può essere condiviso tra i tenant. 
     
 ### <a name="can-we-share-domain-namespaces-across-microsoft-365-tenants"></a>È possibile condividere gli spazi dei nomi di dominio tra gli inquilini di Microsoft 365?
 
-No. I domini personali, come fabrikam.com o tailspintoys.com, possono essere associati e usati solo con un tenant alla volta. Ogni tenant deve avere il proprio spazio dei nomi. Gli spazi dei nomi UPN, SMTP e SIP non possono essere condivisi tra i tenant.
+No. I nomi di dominio dell'organizzazione, ad esempio fabrikam.com o tailspintoys.com, possono essere associati e utilizzati solo con un singolo tenant di Microsoft 365. Ogni tenant deve disporre di uno spazio dei nomi specifico. Gli spazi dei nomi UPN, SMTP e SIP non possono essere condivisi tra i tenant.
   
 ### <a name="what-about-hybrid-components-and-microsoft-365-inter-tenant-collaboration"></a>Informazioni sui componenti ibridi e sulla collaborazione tra tenant di Microsoft 365?
 
 I componenti ibridi locali, ad esempio un'organizzazione di Exchange e Azure AD Connect, non possono essere suddivisi tra più tenant.
-  
+ 
 

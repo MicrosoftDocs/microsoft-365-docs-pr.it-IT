@@ -16,18 +16,18 @@ f1.keywords:
 - NOCSH
 description: In questo articolo sono disponibili informazioni dettagliate sul supporto delle app client Microsoft 365 per l'autenticazione basata su certificati.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ac48305d634baa436eab7f2d9eeb520897f2a3d8
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: 55d3fa4db6abcd7589cf9fadb9084144cd26c8d7
+ms.sourcegitcommit: 11d1044c6600b1f568b6dc8a53db9b07f2f0ad1c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47548011"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "48384946"
 ---
 # <a name="microsoft-365-client-app-support--certificate-based-authentication"></a>Supporto delle app client Microsoft 365-autenticazione basata su certificato
 
-*Questo articolo può essere applicato sia a Microsoft 365 Enterprise che a Office 365 Enterprise.*
+*Questo articolo si applica sia a Microsoft 365 Enterprise che a Office 365 Enterprise*.
 
-L'autenticazione basata su certificato consente di autenticare in Azure Active Directory con un certificato client su dispositivi Windows, Android o iOS. La configurazione di questa funzionalità consente di eliminare la necessità di immettere una combinazione di nome utente e password in determinate applicazioni di posta elettronica e Microsoft Office nel dispositivo mobile.
+L'autenticazione basata su certificato consente di autenticare in Azure Active Directory (Azure AD) con un certificato client su dispositivi Windows, Android o iOS. La configurazione di questa funzionalità consente di eliminare la necessità di immettere una combinazione di nome utente e password in determinate applicazioni di posta elettronica e Microsoft Office nel dispositivo mobile.
 
 Per ulteriori informazioni, vedere [autenticazione basata su certificati](https://docs.microsoft.com/azure/active-directory/authentication/active-directory-certificate-based-authentication-get-started).
 
@@ -40,7 +40,7 @@ Per ulteriori informazioni, vedere [autenticazione basata su certificati](https:
  - iOS
  - macOS<sup>1</sup> <sup>2</sup>
 
-Per ulteriori informazioni sul supporto delle piattaforme in Microsoft 365, vedere [requisiti di sistema per microsoft 365](https://products.office.com/office-system-requirements).
+Per ulteriori informazioni sul supporto delle piattaforme in Microsoft 365, vedere [requisiti di sistema per microsoft 365](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources).
 
 ## <a name="supported-clients"></a>Client supportati
 
