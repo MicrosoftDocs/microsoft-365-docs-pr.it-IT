@@ -9,15 +9,20 @@ ms.prod: microsoft-365-enterprise
 search.appverid: ''
 localization_priority: Priority
 description: Creare un modello di elaborazione dei moduli in Microsoft SharePoint Syntex.
-ms.openlocfilehash: 27e80a7b3626170e45ceaa55f1269e50d8fdab9e
-ms.sourcegitcommit: 3f8e573244bc082518125e339a385c41ef6ee800
+ms.openlocfilehash: 784a3e0a918424e599e87852d2a36b613867f62e
+ms.sourcegitcommit: 7e8151ff74cb1cfc0dd59fadcac423c338415d77
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "48337266"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "48390186"
 ---
 # <a name="create-a-form-processing-model-in-microsoft-sharepoint-syntex"></a>Creare un modello di elaborazione dei moduli in Microsoft SharePoint Syntex
 
+</br>
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4GnhN]  
+
+</br>
 
 Con [AI Builder](https://docs.microsoft.com/ai-builder/overview), una funzionalità di Microsoft PowerApps, gli utenti di SharePoint Syntex possono creare un [modello di elaborazione dei moduli](form-processing-overview.md) direttamente da una raccolta documenti di SharePoint. 
 
@@ -30,13 +35,6 @@ La creazione di un modello di elaborazione dei moduli prevede i passaggi seguent
  - Passaggio 6: usare il modello
 
 ## <a name="requirements"></a>Requisiti
-
-</br>
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4GnhN]  
-
-</br>
-
 
 È possibile creare un modello di elaborazione dei moduli solo nelle raccolte documenti di SharePoint per le quali è abilitata. Se l'elaborazione dei moduli è abilitata, sarà presente l'opzione **AI Builder** **Crea un modello di elaborazione dei moduli** nel menu **Automatizza** nella raccolta documenti.  Se è necessario abilitare l'elaborazione nella raccolta documenti, contattare l'amministratore di SharePoint.
 

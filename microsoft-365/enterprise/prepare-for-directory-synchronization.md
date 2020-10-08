@@ -26,12 +26,12 @@ search.appverid:
 - MBS150
 ms.assetid: 01920974-9e6f-4331-a370-13aea4e82b3e
 description: Descrive come prepararsi a eseguire il provisioning degli utenti a Microsoft 365 utilizzando la sincronizzazione della directory e i vantaggi a lungo termine dell'utilizzo di questo metodo.
-ms.openlocfilehash: a70f49dd5656da996912173690dc2b21b4288023
-ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
+ms.openlocfilehash: 79d2a7932867531849ce75f8452b91e8c7ddd7b1
+ms.sourcegitcommit: 7e8151ff74cb1cfc0dd59fadcac423c338415d77
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48327286"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "48390174"
 ---
 # <a name="prepare-for-directory-synchronization-to-microsoft-365"></a>Preparare la sincronizzazione della directory con Microsoft 365
 
@@ -158,6 +158,7 @@ Gli attributi necessari per la preparazione sono elencati di seguito:
   - Numero massimo di caratteri per il nome utente che si trova di fronte al segno di chiocciola (@): 64
   - Numero massimo di caratteri per il nome di dominio dopo il simbolo chiocciola (@): 48
   - Caratteri non validi: \% &amp; \* +/=? { } | \< \> ( ) ; : , [ ] " '
+  - Caratteri consentiti: A – Z, a-z, 0 – 9,'. - _ ! # ^ ~
   - Anche la dieresi è un carattere non valido.
   - Il carattere @ è necessario in ogni valore **userPrincipalName**.
   - Il carattere @ non può essere il primo carattere in ogni valore **userPrincipalName**.
