@@ -15,20 +15,20 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Creare un ambiente Microsoft 365 per testare l’accesso di identità e dispositivi con i prerequisiti per l'autenticazione pass-through.
-ms.openlocfilehash: eeb6c1d1313c95e920b20cce419118fe1e61ad6e
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 7741b38a947e58d81192326c412760487d803e36
+ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46685643"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48399182"
 ---
 # <a name="identity-and-device-access-prerequisites-for-pass-through-authentication-in-your-microsoft-365-test-environment"></a>Prerequisiti per l’accesso di identità e dispositivi per l’autenticazione pass-through nell’ambiente di testing di Microsoft 365
 
 *Questa guida del laboratorio di testing può essere utilizzata solo per Microsoft 365 per gli ambienti di testing dell'organizzazione.*
 
-Le [configurazioni di accesso a identità e dispositivi](microsoft-365-policies-configurations.md) sono un insieme di configurazioni e criteri di accesso condizionale per proteggere l'accesso a tutti i servizi in Microsoft 365 per Enterprise integrati con Azure Active Directory (Azure ad).
+Le [configurazioni di accesso a identità e dispositivi](../security/office-365-security/microsoft-365-policies-configurations.md) sono un insieme di configurazioni e criteri di accesso condizionale per proteggere l'accesso a tutti i servizi in Microsoft 365 per Enterprise integrati con Azure Active Directory (Azure ad).
 
-In questo articolo viene descritto come è possibile configurare un ambiente di testing di Microsoft 365 che soddisfi i requisiti di [Configurazione dei prerequisiti di autenticazione pass-through ](identity-access-prerequisites.md#prerequisites) per l’accesso di identità e dispositivi.
+In questo articolo viene descritto come è possibile configurare un ambiente di testing di Microsoft 365 che soddisfi i requisiti di [Configurazione dei prerequisiti di autenticazione pass-through ](../security/office-365-security/identity-access-prerequisites.md#prerequisites) per l’accesso di identità e dispositivi.
 
 Le fasi principali della configurazione dell'ambiente di testing sono otto:
 
@@ -111,7 +111,7 @@ Per Skype for Business Online:
   Get-CsOAuthConfiguration
   ```
 
-Il risultato è un ambiente di testing che soddisfa i requisiti di [Configurazione dei prerequisiti di autenticazione pass-through](identity-access-prerequisites.md#prerequisites) per l’accesso di identità e dispositivi. 
+Il risultato è un ambiente di testing che soddisfa i requisiti di [Configurazione dei prerequisiti di autenticazione pass-through](../security/office-365-security/identity-access-prerequisites.md#prerequisites) per l’accesso di identità e dispositivi. 
 
 ## <a name="next-step"></a>Passaggio successivo
 

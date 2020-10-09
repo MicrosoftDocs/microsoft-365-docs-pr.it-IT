@@ -15,18 +15,23 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Gli amministratori possono imparare a identificare gruppi specifici di utenti con tag utente in Office 365 ATP piano 2. Il filtro tag è disponibile tra gli avvisi, i report e le indagini di Office 365 ATP per identificare rapidamente gli utenti contrassegnati.
-ms.openlocfilehash: 9522499b3861f0f0e44fcbf09896a5c93feed95d
-ms.sourcegitcommit: 3f8e573244bc082518125e339a385c41ef6ee800
+ms.openlocfilehash: 16e756b95e16e40f4df738e825e842681c67e22c
+ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "48337254"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48399386"
 ---
 # <a name="user-tags-in-office-365-atp"></a>Tag utente in Office 365 ATP
 
-I tag utente sono identificatori di gruppi specifici di utenti in [Office 365 Advanced Threat Protection (ATP)](office-365-atp.md). Gli [account di priorità](https://docs.microsoft.com/microsoft-365/admin/setup/priority-accounts) sono un tipo di tag utente. Se l'organizzazione dispone di Office 365 ATP piano 2 (incluso nell'abbonamento o come componente aggiuntivo), è possibile creare tag utente personalizzati oltre a utilizzare il tag account prioritari.
+I tag utente sono identificatori di gruppi specifici di utenti in [Office 365 Advanced Threat Protection (ATP)](office-365-atp.md). Sono disponibili due tipi di tag utente:
 
-Dopo aver applicato i tag a utenti specifici, è possibile utilizzare tali tag come filtri in avvisi, rapporti ed indagini:
+- **Tag di sistema**: attualmente, gli [account di priorità](https://docs.microsoft.com/microsoft-365/admin/setup/priority-accounts) sono l'unico tipo di tag di sistema.
+- **Tag personalizzati**: creare personalmente questi tag utente.
+
+Se l'organizzazione dispone di Office 365 ATP piano 2 (incluso nell'abbonamento o come componente aggiuntivo), è possibile creare tag utente personalizzati oltre a utilizzare il tag account prioritari.
+
+Dopo aver applicato i tag di sistema o i tag personalizzati agli utenti, è possibile utilizzare tali tag come filtri in avvisi, rapporti ed indagini:
 
 - [Avvisi nel centro sicurezza & conformità](alerts.md)
 - [Esplora minacce e rilevamenti in tempo reale](threat-explorer.md)
@@ -35,13 +40,15 @@ Dopo aver applicato i tag a utenti specifici, è possibile utilizzare tali tag c
 
 In questo articolo viene illustrato come configurare i tag utente nel centro sicurezza & Compliance. Non sono presenti cmdlet nel centro sicurezza & conformità per la gestione dei tag utente.
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare?
+## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare
 
 - Aprire il Centro sicurezza e conformità in <https://protection.office.com/>. Per passare direttamente alla pagina **tag utente** , Apri <https://protection.office.com/userTags> .
 
-- Per creare, modificare o rimuovere tag utente, è necessario essere membri dei gruppi di ruoli **Gestione organizzazione** o **amministratore sicurezza** nel centro sicurezza & conformità. Per altre informazioni, vedere [Autorizzazioni nel Centro sicurezza e conformità](permissions-in-the-security-and-compliance-center.md).
+- Per creare, modificare o rimuovere **tag utente personalizzati**, è necessario essere membri dei gruppi di ruoli **Gestione organizzazione** o **amministratore sicurezza** nel centro sicurezza & conformità. Per altre informazioni, vedere [Autorizzazioni nel Centro sicurezza e conformità](permissions-in-the-security-and-compliance-center.md).
 
-- È inoltre possibile gestire e monitorare gli account prioritari nell'interfaccia di amministrazione di Microsoft 365. Per istruzioni, vedere [Manage and monitor Priority accounts](https://docs.microsoft.com/microsoft-365/admin/setup/priority-accounts).
+- Per configurare gli account prioritari (tag di sistema), è necessario essere un [amministratore globale](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#global-administrator--company-administrator) o un [amministratore di Exchange](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#exchange-administrator).
+
+  È inoltre possibile gestire e monitorare gli account prioritari nell'interfaccia di amministrazione di Microsoft 365. Per istruzioni, vedere [Manage and monitor Priority accounts](https://docs.microsoft.com/microsoft-365/admin/setup/priority-accounts).
 
 ## <a name="use-the-security-center-to-create-user-tags"></a>Utilizzare il Centro sicurezza per creare tag utente
 

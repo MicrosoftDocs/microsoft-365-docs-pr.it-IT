@@ -15,20 +15,20 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Creare un ambiente Microsoft 365 per testare l'accesso di identità e dispositivi per l'autenticazione solo per cloud.
-ms.openlocfilehash: a8025a2543a53a229be13d19c246165fe88ad433
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: aa18e1a9943ec12465737f6c3f2e12c1fa49e2a3
+ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46685785"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48398878"
 ---
 # <a name="identity-and-device-access-prerequisites-for-cloud-only-in-your-microsoft-365-test-environment"></a>Prerequisiti di accesso di identità e dispositivi solo per cloud nell’ambiente di testing di Microsoft 365
 
 *Questa guida del laboratorio di testing può essere utilizzata solo per Microsoft 365 per gli ambienti di testing dell'organizzazione.*
 
-Le [configurazioni di accesso a identità e dispositivi](microsoft-365-policies-configurations.md) sono un insieme di configurazioni e criteri di accesso condizionale per proteggere l'accesso a tutti i servizi integrati con Azure Active Directory (Azure ad).
+Le [configurazioni di accesso a identità e dispositivi](../security/office-365-security/microsoft-365-policies-configurations.md) sono un insieme di configurazioni e criteri di accesso condizionale per proteggere l'accesso a tutti i servizi integrati con Azure Active Directory (Azure ad).
 
-In questo articolo viene descritto come configurare un ambiente di testing di Microsoft 365 che soddisfi i requisiti della [configurazione dei prerequisiti solo per cloud](identity-access-prerequisites.md#prerequisites) per l’accesso di identità e dispositivi.
+In questo articolo viene descritto come configurare un ambiente di testing di Microsoft 365 che soddisfi i requisiti della [configurazione dei prerequisiti solo per cloud](../security/office-365-security/identity-access-prerequisites.md#prerequisites) per l’accesso di identità e dispositivi.
 
 Le fasi principali della configurazione dell'ambiente di testing sono sette:
 
@@ -106,7 +106,7 @@ Per Skype for Business Online:
   Get-CsOAuthConfiguration
   ```
 
-Il risultato è un ambiente di testing che soddisfa i requisiti di [Configurazione dei prerequisiti solo per cloud](identity-access-prerequisites.md#prerequisites) per l’identità e l’accesso dei dispositivi. 
+Il risultato è un ambiente di testing che soddisfa i requisiti di [Configurazione dei prerequisiti solo per cloud](../security/office-365-security/identity-access-prerequisites.md#prerequisites) per l’identità e l’accesso dei dispositivi. 
 
 ## <a name="next-step"></a>Passaggio successivo
 

@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: Come distribuire team con un livello di protezione di base.
-ms.openlocfilehash: 4a1843b687155cefd48bf3800be68c3e01abd7f5
-ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
+ms.openlocfilehash: ac6974b5625a4eff0fcd11a17c4607a7c2caf97f
+ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46527861"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48398866"
 ---
 # <a name="configure-teams-with-baseline-protection"></a>Configurare team con la protezione di base
 
@@ -31,7 +31,7 @@ Questo articolo spiega come distribuire team con un livello di protezione di bas
 
 ## <a name="initial-protections"></a>Protezioni iniziali
 
-Come primo passaggio, è consigliabile configurare criteri di base per le identità e l'accesso ai dispositivi. Per informazioni dettagliate, vedere [Suggerimenti sui criteri per la protezione di chat, gruppi e file di Teams](https://docs.microsoft.com/microsoft-365/enterprise/teams-access-policies).
+Come primo passaggio, è consigliabile configurare criteri di base per le identità e l'accesso ai dispositivi. Per informazioni dettagliate, vedere [Suggerimenti sui criteri per la protezione di chat, gruppi e file di Teams](../security/office-365-security/teams-access-policies.md).
 
 È anche consigliabile attivare le funzionalità di base di Advanced Threat Protection per prevenire il malware in documenti, allegati e collegamenti. È consigliabile attivare ognuna delle opzioni indicate nella tabella seguente.
 

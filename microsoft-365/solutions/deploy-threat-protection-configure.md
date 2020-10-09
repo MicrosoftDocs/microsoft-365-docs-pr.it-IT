@@ -14,12 +14,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: c6e973e05f9a73736410c9bfedfa2ef73bb583ce
-ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
+ms.openlocfilehash: 5183e6f60d825ff523db4da165d16752b3aa3cc8
+ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48377402"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48399350"
 ---
 # <a name="configure-threat-protection-capabilities-across-microsoft-365"></a>Configurare le funzionalità di protezione dalle minacce in Microsoft 365
 
@@ -40,13 +40,13 @@ Microsoft ha testato e raccomandato una serie specifica di criteri di accesso co
 
 ![Processo di distribuzione della protezione di base](../media/solutions-architecture-center/deploy-threat-protection-identity-access-steps.png) 
 
-1. [Configurare i prerequisiti, inclusa la protezione delle identità di Azure](../enterprise/identity-access-prerequisites.md).
-2. [Configurazione dei criteri comuni di identità e accesso ai dispositivi](../enterprise/identity-access-policies.md) per la protezione della linea di base.
-3. Configurare i criteri per [gli utenti Guest](../enterprise/identity-access-policies-guest-access.md), [Microsoft teams](../enterprise/teams-access-policies.md), [Exchange Online](../enterprise/secure-email-recommended-policies.md)e [SharePoint Online e OneDrive](../enterprise/sharepoint-file-access-policies.md).
+1. [Configurare i prerequisiti, inclusa la protezione delle identità di Azure](../security/office-365-security/identity-access-prerequisites.md).
+2. [Configurazione dei criteri comuni di identità e accesso ai dispositivi](../security/office-365-security/identity-access-policies.md) per la protezione della linea di base.
+3. Configurare i criteri per [gli utenti Guest](../security/office-365-security/identity-access-policies-guest-access.md), [Microsoft teams](../security/office-365-security/teams-access-policies.md), [Exchange Online](../security/office-365-security/secure-email-recommended-policies.md)e [SharePoint Online e OneDrive](../security/office-365-security/sharepoint-file-access-policies.md).
 
 ### <a name="more-information-about-protecting-identities"></a>Ulteriori informazioni sulla protezione delle identità
 
-- [Configurazioni di identità e accesso dei dispositivi](../enterprise/microsoft-365-policies-configurations.md)
+- [Configurazioni di identità e accesso dei dispositivi](../security/office-365-security/microsoft-365-policies-configurations.md)
 - [Linee guida per la sicurezza per Azure Mae](https://docs.microsoft.com/azure/active-directory/authentication/multi-factor-authentication-security-best-practices)
 
 ## <a name="step-2-configure-azure-advanced-threat-protection"></a>Passaggio 2: configurare Azure Advanced Threat Protection
@@ -185,7 +185,7 @@ Microsoft 365 fornisce le risorse seguenti per informare gli utenti nell'organiz
 |Concetti  |Risorse  |
 |---------|---------|
 |Microsoft 365     |[Percorsi di apprendimento personalizzabili](https://docs.microsoft.com/office365/customlearning/) <p>Tali risorse consentono di creare una formazione per gli utenti finali nell'organizzazione        |
-|Centro sicurezza Microsoft 365 |[Modulo di apprendimento: proteggere l'organizzazione con sicurezza integrata e intelligente da Microsoft 365](https://docs.microsoft.com/learn/modules/security-with-microsoft-365) <p>Questo modulo consente di descrivere in che modo le funzionalità di sicurezza di Microsoft 365 interagiscono e di articolare i vantaggi di queste funzionalità di sicurezza. |
+|Sicurezza Microsoft 365 |[Modulo di apprendimento: proteggere l'organizzazione con sicurezza integrata e intelligente da Microsoft 365](https://docs.microsoft.com/learn/modules/security-with-microsoft-365) <p>Questo modulo consente di descrivere in che modo le funzionalità di sicurezza di Microsoft 365 interagiscono e di articolare i vantaggi di queste funzionalità di sicurezza. |
 |Autenticazione a più fattori     | [Verifica in due passaggi: che cos'è la pagina di verifica aggiuntiva?](https://docs.microsoft.com/azure/active-directory/user-help/multi-factor-authentication-end-user-first-time) <p>Questo articolo aiuta gli utenti finali a capire cosa sia l'autenticazione a più fattori e il motivo per cui viene utilizzato all'interno dell'organizzazione.    |
 
 Oltre a queste linee guida, Microsoft consiglia agli utenti di eseguire le azioni descritte in questo articolo: [proteggere l'account e i dispositivi da hacker e malware](https://support.office.com/article/066d6216-a56b-4f90-9af3-b3a1e9a327d6.aspx). Queste azioni includono:

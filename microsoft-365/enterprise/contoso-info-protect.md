@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Comprendere in che modo Contoso utilizza le funzionalità di protezione delle informazioni in Microsoft 365 per l'organizzazione per proteggere le proprie risorse digitali nel cloud.
-ms.openlocfilehash: 67404df9bb2056c226eeb9370190519fc0cc8f3b
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 1966fdec3de246ca54fd99ab018485b9ee817281
+ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46686023"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48399242"
 ---
 # <a name="information-protection-for-the-contoso-corporation"></a>Protezione delle informazioni per Contoso Corporation
 
@@ -76,9 +76,9 @@ Contoso ha utilizzato i passaggi seguenti per preparare Microsoft 365 per Enterp
 
 In combinazione con la propria infrastruttura di gestione delle identità e dei dispositivi mobili e nell'ambito dell'implementazione di Exchange Online e SharePoint, Contoso ha configurato il set seguente di criteri di accesso condizionale e li ha applicati ai gruppi appropriati:
 
-- [Criteri di accesso alle applicazioni gestite e non gestite sui dispositivi](identity-access-policies.md)
-- [Criteri di accesso di Exchange Online](secure-email-recommended-policies.md)
-- [Criteri di accesso di SharePoint](sharepoint-file-access-policies.md)
+- [Criteri di accesso alle applicazioni gestite e non gestite sui dispositivi](../security/office-365-security/identity-access-policies.md)
+- [Criteri di accesso di Exchange Online](../security/office-365-security/secure-email-recommended-policies.md)
+- [Criteri di accesso di SharePoint](../security/office-365-security/sharepoint-file-access-policies.md)
 
 Ecco il set di criteri di Contoso risultante per la protezione delle informazioni.
 
@@ -100,7 +100,7 @@ Questi criteri assicurano che:
 
 Nella tabella seguente vengono mappati i livelli di dati di Contoso alle funzionalità di protezione delle informazioni in Microsoft 365 per Enterprise.
 
-| Level | Servizi cloud di Microsoft 365 | Windows 10 e App Microsoft 365 per grandi imprese | Sicurezza e conformità |
+| Livello | Servizi cloud di Microsoft 365 | Windows 10 e App Microsoft 365 per grandi imprese | Sicurezza e conformità |
 |:-------|:-----|:-----|:-----|
 | Livello 1: base  | Criteri di accesso condizionale di SharePoint ed Exchange Online <BR> Autorizzazioni sui siti di SharePoint | Etichette di riservatezza <BR> BitLocker <BR> Windows Information Protection | Criteri di accesso condizionale dei dispositivi e criteri di Mobile Application Management |
 | Livello 2: dati sensibili | Livello 1 plus: <BR> <BR> Etichette di riservatezza <BR> Etichette di conservazione di Microsoft 365 nei siti di SharePoint <BR> Prevenzione della perdita dei dati per SharePoint ed Exchange Online <BR> Siti di SharePoint isolati  | Livello 1 plus: <BR> <BR> Etichette riservatezza su risorse digitali  | Livello 1 |

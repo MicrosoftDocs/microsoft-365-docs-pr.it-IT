@@ -15,12 +15,12 @@ ms.assetid: fb4182e6-5e78-45d0-9641-d791c4519441
 audience: ITPro
 ms.custom: microsoft-intune
 description: La roadmap per configurare la gestione dei dispositivi per Microsoft 365.
-ms.openlocfilehash: 0efe7098f90064184f222acb671ae6f96c1b38d5
-ms.sourcegitcommit: 11d1044c6600b1f568b6dc8a53db9b07f2f0ad1c
+ms.openlocfilehash: d359cae62fbd1bf2468ad753670ff8e385d6f25b
+ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/08/2020
-ms.locfileid: "48384752"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48398962"
 ---
 # <a name="device-management-roadmap-for-microsoft-365"></a>Roadmap per la gestione dei dispositivi per Microsoft 365
 
@@ -54,10 +54,10 @@ In base alla valutazione, iniziare a gestire i dispositivi con:
  
 ## <a name="identity-and-device-access-recommendations"></a>Consigli sull’identità e sull’accesso dei dispositivi
 
-Microsoft offre una serie di consigli per [identità e accesso ai dispositivi](microsoft-365-policies-configurations.md) per garantire un ambiente di lavoro protetto e produttivo. Per l'accesso ai dispositivi, utilizzare i suggerimenti e le impostazioni disponibili in questi articoli:
+Microsoft offre una serie di consigli per [identità e accesso ai dispositivi](../security/office-365-security/microsoft-365-policies-configurations.md) per garantire un ambiente di lavoro protetto e produttivo. Per l'accesso ai dispositivi, utilizzare i suggerimenti e le impostazioni disponibili in questi articoli:
 
-- [Prerequisiti](identity-access-prerequisites.md)
-- [Criteri comuni di identità e accesso dei dispositivi](identity-access-policies.md)
+- [Prerequisiti](../security/office-365-security/identity-access-prerequisites.md)
+- [Criteri comuni di identità e accesso dei dispositivi](../security/office-365-security/identity-access-policies.md)
 
 ## <a name="how-contoso-did-device-management-for-microsoft-365"></a>Informazioni su come Contoso ha eseguito la gestione dei dispositivi per Microsoft 365
 

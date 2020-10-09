@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: cdb6b557bf2f46a2338d929547167cf89a048695
-ms.sourcegitcommit: 0f71042edc7c3a7f10a7b92e1943abf51532cbf5
+ms.openlocfilehash: 563972c458e77d96cf075f048dcee027bf29bc95
+ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "46522278"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48399398"
 ---
 # <a name="security-hurdles-you-can-sail-over--one-architects-viewpoint"></a>Ostacoli alla sicurezza in cui è possibile navigare, ovvero il punto di vista di un architetto
 
@@ -49,7 +49,7 @@ I clienti che si occupano di tali ostacoli dispongono di una buona partnership t
 
 Adottare quindi un approccio di architettura con zero attendibilità. Questo inizia con la creazione di un perimetro di sicurezza moderno basato sull'identità. Progettare l'architettura di sicurezza in cui ogni tentativo di accesso, sia su-Prem o cloud, viene considerato non attendibile finché non viene verificato, ovvero "mai attendibilità, verifica sempre". Questo approccio di progettazione non solo aumenta la sicurezza e la produttività, ma consente anche agli utenti di lavorare ovunque con qualsiasi tipo di dispositivo. I controlli cloud sofisticati inclusi in Microsoft 365 consentono di proteggere le identità degli utenti e di controllare l'accesso alle risorse importanti in base al livello di rischio dell'utente.
 
-Per una configurazione consigliata, vedere [configurazioni di accesso a identità e dispositivi](../enterprise/microsoft-365-policies-configurations.md). 
+Per una configurazione consigliata, vedere [configurazioni di accesso a identità e dispositivi](../security/office-365-security/microsoft-365-policies-configurations.md). 
 
 ## <a name="transition-security-controls-to-the-cloud"></a>Transizione dei controlli di sicurezza nel cloud
 

@@ -15,12 +15,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: Informazioni su come creare un team con un'etichetta di riservatezza univoca per la sicurezza.
-ms.openlocfilehash: 544f62e4765388f90874c15504e6656820111ed4
-ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
+ms.openlocfilehash: fdebfcbfa4aad68f381db4ffb8c9b83a5100187c
+ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48326496"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48398716"
 ---
 # <a name="configure-a-team-with-security-isolation"></a>Configurare un team con l'isolamento di sicurezza
 
@@ -51,8 +51,8 @@ Gli elementi della configurazione di un team con l’isolamento di sicurezza son
 ## <a name="initial-protections"></a>Protezioni iniziali
 
 Per proteggere l'accesso al team e al sito di SharePoint sottostante, vedere le procedure consigliate seguenti:
-- [Criteri di identità e accesso ai dispositivi](https://docs.microsoft.com/microsoft-365/enterprise/identity-access-policies)
-- [Criteri di accesso di SharePoint Online](https://docs.microsoft.com/microsoft-365/enterprise/sharepoint-file-access-policies)
+- [Criteri di identità e accesso ai dispositivi](../security/office-365-security/identity-access-policies.md)
+- [Criteri di accesso di SharePoint Online](../security/office-365-security/sharepoint-file-access-policies.md)
 - [Distribuire i team con la protezione di base](configure-teams-baseline-protection.md)
 
 ## <a name="guest-sharing"></a>Condivisione con gli utenti guest

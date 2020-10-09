@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 8c66ee39d9c7f90142a564c61b13f68e6b4b481e
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: de8a2c3d55d887a28500bb82a97e4453861aef46
+ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48197774"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48399218"
 ---
 # <a name="learn-the-advanced-hunting-query-language"></a>Scoprire il linguaggio delle query in Ricerca avanzata
 
@@ -32,7 +32,7 @@ ms.locfileid: "48197774"
 **Si applica a:**
 - Microsoft Threat Protection
 
-Ricerca avanzata si basa sul [linguaggio delle query in Esplora dati](https://docs.microsoft.com/azure/kusto/query/). È possibile usare la sintassi e gli operatori di Esplora dati per creare query che individuano informazioni nello [schema](advanced-hunting-schema-tables.md) specificamente strutturate per Ricerca avanzata. Per comprendere meglio questi concetti, eseguire la prima query.
+Ricerca avanzata si basa sul [linguaggio delle query in Esplora dati](https://docs.microsoft.com/azure/kusto/query/). È possibile utilizzare la sintassi e gli operatori di Kusto per creare query che consentono di individuare le informazioni in uno [schema](advanced-hunting-schema-tables.md)specializzato. Per comprendere meglio questi concetti, eseguire la prima query.
 
 ## <a name="try-your-first-query"></a>Provare la prima query
 
@@ -58,24 +58,22 @@ FileName, ProcessCommandLine, RemoteIP, RemoteUrl, RemotePort, RemoteIPType
 | top 100 by Timestamp
 ```
 
-Questo è come apparirà in Ricerca avanzata.
-
-![Immagine della query di ricerca avanzata di Microsoft Threat Protection](../../media/advanced-hunting-query-example-2.png)
+**[Eseguire la query in Advanced Hunting](https://security.microsoft.com/hunting?query=H4sIAAAAAAAEAI2TW0sCURSF93PQfxh8Moisp956yYIgQtLoMaYczJpbzkkTpN_et_dcdPQkcpjbmrXXWftyetKTQG5lKqmMpeB9IJksJJKZDOWdZ8wKeP5wvcm3OLgZbMXmXCmIxjnYIfcAVgYvRi8w3TnfsXEDGAG47pCCZXyP5ViO4KeNbt-Up-hEuJmB6lvButnY8XSL-cDl0M2I-GwxVX8Fe2H5zMzHiKjEVB0eEsnBrszfBIWuXOLrxCJ7VqEBfM3DWUYTkNKrv1p5y3X0jwetemzOQ_NSVuuXZ1c6aNTKRaN8VvWhY9n7OS-o6J5r7mYeQypdEKc1m1qfiqpjCSuspsDntt2J61bEvTlXls5AgQfFl5bHM_gr_BhO2RF1rztoBv2tWahrso_TtzkL93KGMGZVr2pe7eWR-xeZl91f_113UOsx3nDR4Y9j5R6kaCq8ajr_YWfFeedsd27L7it-Z6dAZyxsJq1d9-2ZOSzK3y2NVd8-zUPjtZaJnYsIH4Md7AmdeAcd2Cl1XoURc5PzXlfU8U9P54WcswL6t_TW9Q__qX-xygQAAA&runQuery=true&timeRangeId=week)**
 
 ### <a name="describe-the-query-and-specify-the-tables-to-search"></a>Descrivere la query e specificare le tabelle di cui eseguire la ricerca
-All'inizio della query è stato aggiunto un breve commento per descrivere il relativo contenuto. Ciò aiuta se in seguito si decide di salvare la query e condividerla con altri utenti dell'organizzazione. 
+All'inizio della query è stato aggiunto un breve commento per descrivere il relativo contenuto. Questo commento aiuta se in seguito si decide di salvare la query e condividerla con altri utenti dell'organizzazione. 
 
 ```kusto
 // Finds PowerShell execution events that could involve a download
 ```
 
-La query viene in genere avviata con un nome di tabella seguito da una serie di elementi avviati da una pipe (`|`). In questo esempio viene avviata la creazione di un'Unione di due tabelle  `DeviceProcessEvents` e `DeviceNetworkEvents` , quindi, vengono aggiunti gli elementi reindirizzati in base alle esigenze.
+La query in genere inizia con un nome di tabella seguito da diversi elementi che iniziano con una pipe ( `|` ). In questo esempio viene avviata la creazione di un'Unione di due tabelle  `DeviceProcessEvents` e `DeviceNetworkEvents` , quindi, vengono aggiunti gli elementi reindirizzati in base alle esigenze.
 
 ```kusto
 union DeviceProcessEvents, DeviceNetworkEvents
 ```
 ### <a name="set-the-time-range"></a>Impostare l'intervallo di tempo
-Il primo elemento con pipe è un filtro temporale che ha come ambito i sette giorni precedenti. Il mantenimento dell'intervallo di tempo il più possibile ravvicinato assicura che le query vengano eseguite bene, che restituiscano risultati gestibili e che non scadano.
+Il primo elemento con pipe è un filtro temporale che ha come ambito i sette giorni precedenti. La limitazione dell'intervallo di tempo consente di garantire la corretta esecuzione delle query, restituire risultati gestibili e non eseguire il timeout.
 
 ```kusto
 | where Timestamp > ago(7d)
@@ -105,7 +103,7 @@ Successivamente, la query Cerca stringhe nelle righe di comando che vengono in g
 ```
 
 ### <a name="customize-result-columns-and-length"></a>Personalizzare le colonne dei risultati e la lunghezza 
-Ora che la query identifica chiaramente i dati da individuare, è possibile aggiungere elementi che definiscono come appaiono i risultati. `project` restituisce colonne specifiche e `top` limita il numero di risultati. Questi operatori contribuiscono a garantire che i risultati siano ben formattati e ragionevolmente grandi e facili da elaborare.
+Ora che la query identifica chiaramente i dati che si desidera individuare, è possibile definire i risultati. `project` restituisce colonne specifiche e `top` limita il numero di risultati. Questi operatori contribuiscono a garantire che i risultati siano ben formattati e ragionevolmente grandi e facili da elaborare.
 
 ```kusto
 | project Timestamp, DeviceName, InitiatingProcessFileName, InitiatingProcessCommandLine, 
@@ -113,7 +111,7 @@ FileName, ProcessCommandLine, RemoteIP, RemoteUrl, RemotePort, RemoteIPType
 | top 100 by Timestamp
 ```
 
-Fare clic su **Esegui query** per visualizzare i risultati. Selezionare l'icona Espandi nell'angolo superiore destro dell'editor di query per concentrarsi sulla query di caccia e sui risultati. 
+Selezionare **Esegui query** per visualizzare i risultati. Utilizzare l'icona Espandi nell'angolo superiore destro dell'editor di query per concentrarsi sulla query di caccia e sui risultati. 
 
 ![Immagine del controllo Espandi nell'editor di query di ricerca avanzata](../../media/advanced-hunting-expand.png)
 
@@ -122,7 +120,7 @@ Fare clic su **Esegui query** per visualizzare i risultati. Selezionare l'icona 
 
 ## <a name="learn-common-query-operators"></a>Informazioni sugli operatori di query comuni
 
-Ora che è stata eseguita la prima query e si ha un'idea generale dei relativi componenti, è il momento di tornare indietro e imparare alcune nozioni di base. Il linguaggio delle query di Esplora dati usato in Ricerca avanzata supporta una serie di operatori, di seguito sono elencati i più comuni.
+È sufficiente eseguire la prima query e avere un'idea generale dei relativi componenti. È il momento di fare un po' di marcia indietro e imparare alcune nozioni di base. Il linguaggio delle query di Esplora dati usato in Ricerca avanzata supporta una serie di operatori, di seguito sono elencati i più comuni.
 
 | Operatore | Descrizione e utilizzo |
 |--|--|
@@ -141,26 +139,26 @@ Per vedere un esempio pratico di questi operatori, eseguirli nella sezione **Int
 
 ## <a name="understand-data-types"></a>Informazioni sui tipi di dati
 
-I dati nelle tabelle di Ricerca avanzata sono generalmente classificati nei seguenti tipi di dati.
+Advanced Hunting supporta i tipi di dati di Kusto, inclusi i seguenti tipi comuni:
 
 | Tipo di dati | Descrizione e implicazioni delle query |
 |--|--|
-| `datetime` | Informazioni sui dati e sull'ora che rappresentano in genere timestamp dell'evento |
-| `string` | Stringa di caratteri |
-| `bool` | True o False |
-| `int` | Valore numerico 32 bit  |
-| `long` | Valore numerico 64 bit |
+| `datetime` | Informazioni sui dati e sull'ora che in genere rappresentano timestamp dell'evento. [Vedere formati DateTime supportati](https://docs.microsoft.com/azure/data-explorer/kusto/query/scalar-data-types/datetime) |
+| `string` | Stringa di caratteri in UTF-8 racchiusa tra virgolette singole ( `'` ) o virgolette doppie ( `"` ). [Per saperne di più sulle stringhe](https://docs.microsoft.com/azure/data-explorer/kusto/query/scalar-data-types/string) |
+| `bool` | Questo tipo di dati supporta `true` o `false` dichiara. [Vedere i valori letterali e gli operatori supportati](https://docs.microsoft.com/azure/data-explorer/kusto/query/scalar-data-types/bool) |
+| `int` | numero intero a 32 bit  |
+| `long` | numero intero a 64 bit |
 
-Per ulteriori informazioni su questi tipi di dati e sulle relative implicazioni, [leggere informazioni sui tipi di dati scalari di Kusto](https://docs.microsoft.com/azure/data-explorer/kusto/query/scalar-data-types/).
+Per ulteriori informazioni su questi tipi di dati, [leggere informazioni sui tipi di dati scalari di Kusto](https://docs.microsoft.com/azure/data-explorer/kusto/query/scalar-data-types/).
 
 ## <a name="get-help-as-you-write-queries"></a>Ottenere assistenza nella scrittura delle query
 Trarre vantaggio dalle seguenti funzionalità per scrivere query più velocemente:
-- **AutoSuggest** : durante la scrittura di query, la ricerca avanzata fornisce suggerimenti da IntelliSense. 
-- **Albero dello schema** : una rappresentazione dello schema che include l'elenco delle tabelle e delle relative colonne viene fornita accanto all'area di lavoro. Per altre informazioni, passare il puntatore su un elemento. Fare doppio clic su un elemento per inserirlo nell'editor di query.
-- **[Riferimenti dello schema](advanced-hunting-schema-tables.md#get-schema-information-in-the-security-center)** : riferimenti in-Portal con descrizioni di tabelle e colonne, nonché tipi di evento supportati ( `ActionType` valori) e query di esempio
+- **AutoSuggest**: durante la scrittura di query, la ricerca avanzata fornisce suggerimenti da IntelliSense. 
+- **Albero dello schema**: una rappresentazione dello schema che include l'elenco delle tabelle e delle relative colonne viene fornita accanto all'area di lavoro. Per altre informazioni, passare il puntatore su un elemento. Fare doppio clic su un elemento per inserirlo nell'editor di query.
+- **[Riferimenti dello schema](advanced-hunting-schema-tables.md#get-schema-information-in-the-security-center)**: riferimenti in-Portal con descrizioni di tabelle e colonne, nonché tipi di evento supportati ( `ActionType` valori) e query di esempio
 
 ## <a name="work-with-multiple-queries-in-the-editor"></a>Utilizzo di più query nell'editor
-L'editor di query può fungere da Scratch Pad per la sperimentazione con più query. Per utilizzare più query:
+È possibile utilizzare l'editor di query per sperimentare più query. Per utilizzare più query:
 
 - Separare ogni query con una linea vuota.
 - Posizionare il cursore su qualsiasi parte di una query per selezionare la query prima di eseguirla. Verrà eseguita solo la query selezionata. Per eseguire un'altra query, spostare il cursore di conseguenza e selezionare **Esegui query**.
@@ -174,7 +172,7 @@ La sezione **Introduzione** presenta alcune semplici query che impiegano operato
 ![Immagine della finestra di Ricerca avanzata](../../media/advanced-hunting-get-started.png)
 
 >[!NOTE]
->Oltre agli esempi di query di base, è anche possibile accedere [query condivise](advanced-hunting-shared-queries.md) per specifici scenari di ricerca delle minacce. Esplorare le query condivise sul lato sinistro della pagina o sul repository di query GitHub.
+>Oltre agli esempi di query di base, è anche possibile accedere [query condivise](advanced-hunting-shared-queries.md) per specifici scenari di ricerca delle minacce. Esplorare le query condivise sul lato sinistro della pagina o l'archivio di [query GitHub](https://aka.ms/hunting-queries).
 
 ## <a name="access-query-language-documentation"></a>Documentazione sulle query
 

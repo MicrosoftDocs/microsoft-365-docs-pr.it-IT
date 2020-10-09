@@ -14,12 +14,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: gli scenari di minacce e attacchi più comuni attualmente affrontati dalle organizzazioni per gli ambienti Microsoft 365 e le azioni consigliate per attenuare tali rischi.
-ms.openlocfilehash: 2f7de328edbd0220e5627612430fca24641ace11
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: 4181feeed97313ec1e8d916df994cc880cbffdf1
+ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47547999"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48399456"
 ---
 # <a name="microsoft-365-security-for-business-decision-makers-bdms"></a>Microsoft 365 Security for Business Decision Makers (BDMs)
 
@@ -68,7 +68,7 @@ Le minacce note includono malware, account compromessi e phishing. Alcune protez
 
 |Consiglio  |E3  |E5  |
 |---------|---------|---------|
-|**Configurare l'autenticazione a più fattori e l'utilizzo dei criteri di accesso condizionale consigliati, inclusi i criteri di rischio per la connessione**. Microsoft consiglia e ha testato una serie di criteri che interagiscono per proteggere tutte le app Cloud, inclusi i servizi Office 365 e Microsoft 365. Vedere [identità e configurazioni di accesso ai dispositivi](../enterprise/microsoft-365-policies-configurations.md). | |![segno di spunta verde](../media/green-check-mark.png)|
+|**Configurare l'autenticazione a più fattori e l'utilizzo dei criteri di accesso condizionale consigliati, inclusi i criteri di rischio per la connessione**. Microsoft consiglia e ha testato una serie di criteri che interagiscono per proteggere tutte le app Cloud, inclusi i servizi Office 365 e Microsoft 365. Vedere [identità e configurazioni di accesso ai dispositivi](./office-365-security/microsoft-365-policies-configurations.md). | |![segno di spunta verde](../media/green-check-mark.png)|
 |**Richiedere l'autenticazione a più fattori per tutti gli utenti**. Se non si dispone delle licenze necessarie per implementare i criteri di accesso condizionale consigliati, è necessario almeno richiedere l'autenticazione a più fattori per tutti gli utenti.|![segno di spunta verde](../media/green-check-mark.png)|![segno di spunta verde](../media/green-check-mark.png)|
 |**Aumentare il livello di protezione da malware nella posta elettronica**. L'ambiente Office 365 o Microsoft 365 include la protezione da malware, ma è possibile aumentare questa protezione bloccando gli allegati con tipi di file comunemente utilizzati per il malware.|![segno di spunta verde](../media/green-check-mark.png)|![segno di spunta verde](../media/green-check-mark.png)|
 |**Proteggere la posta elettronica da attacchi di phishing mirati**. Se sono stati configurati uno o più domini personalizzati per l'ambiente Office 365 o Microsoft 365, è possibile configurare la protezione anti-phishing mirata. La protezione anti-phishing ATP, parte di Office 365 Advanced Threat Protection, può aiutare a proteggere l'organizzazione da attacchi di phishing basati sulla rappresentazione malevola e altri attacchi di phishing. Se non è stato configurato un dominio personalizzato, non è necessario eseguire questa operazione.| |![segno di spunta verde](../media/green-check-mark.png)|
@@ -114,7 +114,7 @@ Le funzionalità di protezione delle informazioni di Microsoft 365 consentono di
 
 |Consiglio |E3|E5 |
 |---------|---------|---------|
-|**Esaminare e ottimizzare l'accesso condizionale e i criteri correlati per allineare i propri obiettivi a una rete con zero Trust**. La protezione da minacce note include l'implementazione di un set di [criteri consigliati](../enterprise/microsoft-365-policies-configurations.md). Esaminare l'implementazione di questi criteri per garantire la protezione delle app e dei dati nei confronti di hacker che hanno acquisito accesso alla rete. Si noti che il criterio di protezione delle app di Intune consigliato per Windows 10 consente di utilizzare la protezione delle informazioni (WIP) di Windows. WIP protegge dalle perdite accidentali dei dati dell'organizzazione tramite app e servizi, come la posta elettronica, i social media e il cloud pubblico. |         |![segno di spunta verde](../media/green-check-mark.png)|
+|**Esaminare e ottimizzare l'accesso condizionale e i criteri correlati per allineare i propri obiettivi a una rete con zero Trust**. La protezione da minacce note include l'implementazione di un set di [criteri consigliati](./office-365-security/microsoft-365-policies-configurations.md). Esaminare l'implementazione di questi criteri per garantire la protezione delle app e dei dati nei confronti di hacker che hanno acquisito accesso alla rete. Si noti che il criterio di protezione delle app di Intune consigliato per Windows 10 consente di utilizzare la protezione delle informazioni (WIP) di Windows. WIP protegge dalle perdite accidentali dei dati dell'organizzazione tramite app e servizi, come la posta elettronica, i social media e il cloud pubblico. |         |![segno di spunta verde](../media/green-check-mark.png)|
 |**Disabilitare l'inoltro di posta elettronica esterno**. Gli hacker che accedono alla cassetta postale di un utente possono rubare la posta impostando la cassetta postale in modo da inoltrare automaticamente la posta elettronica. Ciò può verificarsi anche senza la consapevolezza dell'utente. È possibile evitare che ciò accada configurando una regola del flusso di posta.|![segno di spunta verde](../media/green-check-mark.png) |![segno di spunta verde](../media/green-check-mark.png)|
 |**Disabilitare la condivisione di calendari esterni anonimi**. Per impostazione predefinita, la condivisione dei calendari anonimi è consentita. [Disabilitare la condivisione del calendario](https://docs.microsoft.com/exchange/sharing/sharing-policies/modify-a-sharing-policy) per ridurre le potenziali perdite di informazioni riservate.|![segno di spunta verde](../media/green-check-mark.png) |![segno di spunta verde](../media/green-check-mark.png)|
 |**Configurare i criteri di prevenzione della perdita dei dati per i dati sensibili**. Creare un criterio di prevenzione della perdita di dati nel &amp; Centro sicurezza e conformità per individuare e proteggere i dati riservati, ad esempio numeri di carta di credito, numeri di previdenza sociale e numeri di conto corrente bancario. Microsoft 365 include numerosi tipi di informazioni riservate predefinite che è possibile utilizzare nei criteri di prevenzione della perdita di dati. È inoltre possibile creare tipi di informazioni riservate per i dati sensibili personalizzati per l'ambiente. |![segno di spunta verde](../media/green-check-mark.png)|![segno di spunta verde](../media/green-check-mark.png)|

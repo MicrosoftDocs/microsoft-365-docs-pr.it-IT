@@ -19,12 +19,12 @@ ms.assetid: 8d274fe3-db51-4107-ba64-865e7155b355
 ms.custom:
 - seo-marvel-apr2020
 description: In questo argomento viene illustrata la configurazione consigliata per le impostazioni a livello di tenant che influiscono sulla sicurezza dell'ambiente Microsoft 365.
-ms.openlocfilehash: 9e36c85b74a237a8b14904839aad55ac676dcaf4
-ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
+ms.openlocfilehash: 3ef4fb00ca1e4a3e61cf0176308024b54baa287d
+ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48326926"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48399422"
 ---
 # <a name="configure-your-microsoft-365-tenant-for-increased-security"></a>Configurare il tenant Microsoft 365 per una maggiore sicurezza
 
@@ -146,4 +146,4 @@ Questi articoli e guide forniscono ulteriori informazioni prescrittivi per la pr
 
 - [Guida alla sicurezza Microsoft per campagne politiche, organizzazioni no profit e altre organizzazione agile](https://docs.microsoft.com/microsoft-365/security/office-365-security/microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o) (è possibile utilizzare queste raccomandazioni in qualsiasi ambiente, in particolare ambienti solo cloud)
 
-- [Criteri di sicurezza e configurazioni consigliate per identità e dispositivi](https://docs.microsoft.com/microsoft-365-enterprise/microsoft-365-policies-configurations) (questi suggerimenti includono la guida per gli ambienti ADFS)
+- [Criteri di sicurezza e configurazioni consigliate per identità e dispositivi](microsoft-365-policies-configurations.md) (questi suggerimenti includono la guida per gli ambienti ADFS)

@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: Ent_Architecture
 description: 'Riepilogo: in che modo Contoso ha utilizzato un team con isolamento di sicurezza per un progetto Top-Secret per sviluppare una nuova famiglia di prodotti e servizi.'
-ms.openlocfilehash: ba9a66d2419e81aeb1eac026b16c0475ac6d0614
-ms.sourcegitcommit: 1780359234abdf081097c8064438d415da92fb85
+ms.openlocfilehash: 16d10f5d6e5b5939172c02746c9324eb20b6987e
+ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "46778589"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48399490"
 ---
 # <a name="isolated-team-for-a-top-secret-project-of-the-contoso-corporation"></a>Team isolato per un progetto Top-Secret di Contoso Corporation
 
@@ -40,7 +40,7 @@ Il personale IT di Contoso ha utilizzato un [team con isolamento di sicurezza](s
 
 ## <a name="step-1-created-a-private-team"></a>Passaggio 1: creazione di un team privato
 
-In primo luogo, per proteggere l'accesso al sito di SharePoint sottostante per il team, gli amministratori IT di Contoso hanno configurato i [criteri di accesso di SharePoint consigliati](../enterprise/sharepoint-file-access-policies.md).
+In primo luogo, per proteggere l'accesso al sito di SharePoint sottostante per il team, gli amministratori IT di Contoso hanno configurato i [criteri di accesso di SharePoint consigliati](../security/office-365-security/sharepoint-file-access-policies.md).
 
 Successivamente, un amministratore IT di Contoso ha creato un nuovo team privato denominato Project 2X e aggiunto gli account utente del personale di Project 2X come membri. Sono inoltre stati configurati il team in modo che solo i proprietari del team di Project 2X possano creare canali privati.
 
@@ -51,7 +51,7 @@ Per informazioni dettagliate sulla configurazione, vedere [creare un team privat
 Gli amministratori di Contoso hanno creato una nuova etichetta di riservatezza denominata **Project 2x** che:
 
 - Crittografia abilitata.
-- Autorizzazioni di creazione condivisa consentite per il gruppo Project 2X Microsoft 365.
+- Autorizzazioni Co-Author consentite per il gruppo Project 2X Microsoft 365.
 - Autorizzazioni del Visualizzatore consentite per il gruppo di leadership senior.
 - Accesso bloccato ai dispositivi non gestiti.
 
@@ -64,7 +64,7 @@ Per informazioni dettagliate sulla configurazione, vedere [Create a Sensitivity 
 
 ## <a name="step-3-configured-the-underlying-sharepoint-site"></a>Passaggio 3: configurazione del sito di SharePoint sottostante
 
-In primo luogo, per proteggere l'accesso al sito di SharePoint sottostante per il team, gli amministratori IT di Contoso hanno configurato i [criteri di accesso di SharePoint consigliati](../enterprise/sharepoint-file-access-policies.md).
+In primo luogo, per proteggere l'accesso al sito di SharePoint sottostante per il team, gli amministratori IT di Contoso hanno configurato i [criteri di accesso di SharePoint consigliati](../security/office-365-security/sharepoint-file-access-policies.md).
 
 Successivamente, sono state configurate le impostazioni di autorizzazione aggiuntive per il sito:
 

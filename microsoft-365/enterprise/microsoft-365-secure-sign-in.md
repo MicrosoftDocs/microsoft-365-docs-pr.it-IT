@@ -16,12 +16,12 @@ ms.collection:
 - M365initiative-coredeploy
 ms.custom: ''
 description: Richiedere agli utenti di accedere in modo sicuro con l'autenticazione a più fattori (MFA) e altre funzionalità.
-ms.openlocfilehash: f2302a6affa64db221916108003225f835799d5b
-ms.sourcegitcommit: 8589323c1b4ab43aab30597ee66303b0a0eb71ed
+ms.openlocfilehash: 64b873a243d0ce86ee3700d5150076f88031a483
+ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "48357819"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48399136"
 ---
 # <a name="secure-user-sign-ins-to-your-microsoft-365-tenant"></a>Autenticazioni sicure degli utenti nel tenant di Microsoft 365
 
@@ -62,7 +62,7 @@ Sono disponibili tre modi per richiedere agli amministratori o agli utenti di ut
 |---------|---------|
 |Tutti i piani di Microsoft 365 (senza licenze di Azure AD Premium P1 o P2)     |[Abilitare le impostazioni predefinite di sicurezza in Azure AD](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults). Le impostazioni predefinite di sicurezza in Azure AD includono la MFA per utenti e amministratori.   |
 |Microsoft 365 E3 (include le licenze di Azure AD Premium P1)     | Usare i [criteri comuni di accesso condizionale](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-policy-common) per configurare i criteri seguenti: <br>- [Richiedere la MFA per amministratori](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-admin-mfa) <br>- [Richiedere la MFA per tutti gli utenti](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa) <br> - [Bloccare l'autenticazione legacy](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-block-legacy)       |
-|Microsoft 365 E5 (include le licenze di Azure AD Premium P2)     | Sfruttando Azure AD Identity Protection, iniziare a implementare il [set raccomandato di accesso condizionale e criteri correlati](../enterprise/identity-access-policies.md) di Microsoft creando questi due criteri:<br> - [Richiedere la MFA quando il rischio di accesso è considerato *medio* o *elevato*](../enterprise/identity-access-policies.md#require-mfa-based-on-sign-in-risk) <br>- [Gli utenti a rischio elevato devono modificare la password](../enterprise/identity-access-policies.md#high-risk-users-must-change-password)       |
+|Microsoft 365 E5 (include le licenze di Azure AD Premium P2)     | Sfruttando Azure AD Identity Protection, iniziare a implementare il [set raccomandato di accesso condizionale e criteri correlati](../security/office-365-security/identity-access-policies.md) di Microsoft creando questi due criteri:<br> - [Richiedere la MFA quando il rischio di accesso è considerato *medio* o *elevato*](../security/office-365-security/identity-access-policies.md#require-mfa-based-on-sign-in-risk) <br>- [Gli utenti a rischio elevato devono modificare la password](../security/office-365-security/identity-access-policies.md#high-risk-users-must-change-password)       |
 | | |
 
 ### <a name="security-defaults"></a>Impostazioni predefinite per la sicurezza
@@ -122,7 +122,7 @@ I criteri di identità e accesso ai dispositivi sono definiti per essere usati i
 
 Questi livelli, e le loro configurazioni corrispondenti, offrono livelli costanti di protezione per tutti i dati, le identità e i dispositivi.
 
-Microsoft raccomanda vivamente di configurare e distribuire i criteri di identità e accesso ai dispositivi nell'organizzazione, incluse le impostazioni specifiche di Microsoft Teams, Exchange Online e SharePoint. Per altre informazioni, vedere [Configurazioni di identità e accesso dei dispositivi](microsoft-365-policies-configurations.md).
+Microsoft raccomanda vivamente di configurare e distribuire i criteri di identità e accesso ai dispositivi nell'organizzazione, incluse le impostazioni specifiche di Microsoft Teams, Exchange Online e SharePoint. Per altre informazioni, vedere [Configurazioni di identità e accesso dei dispositivi](../security/office-365-security/microsoft-365-policies-configurations.md).
 
 ## <a name="azure-ad-identity-protection"></a>Azure AD Identity Protection
 
@@ -147,7 +147,7 @@ Vedere i [passaggi per abilitare Azure AD Identity Protection](https://docs.micr
 - [Roadmap delle identità per Microsoft 365](identity-roadmap-microsoft-365.md)
 - [Video di formazione su Azure Academy Azure AD](https://www.youtube.com/watch?v=pN8o0owHfI0&list=PL-V4YVm6AmwUFpC3rXr2i2piRQ708q_ia)
 - [Configurare i criteri di registrazione dell'autenticazione a più fattori di Azure](https://docs.microsoft.com/azure/active-directory/identity-protection/howto-identity-protection-configure-mfa-policy)
-- [Configurazioni di identità e accesso dei dispositivi](microsoft-365-policies-configurations.md)
+- [Configurazioni di identità e accesso dei dispositivi](../security/office-365-security/microsoft-365-policies-configurations.md)
 
 ## <a name="next-step"></a>Passaggio successivo
 

@@ -14,12 +14,12 @@ ms.collection: M365-security-compliance
 ms.custom: Ent_TLGs
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
 description: Usare questa guida del laboratorio di testing per abilitare altre impostazioni di sicurezza di Microsoft 365 per l'ambiente di testing di Microsoft 365 per l'organizzazione.
-ms.openlocfilehash: 06273bda00635a65ed9821b2bac23c3a3ee1366a
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 09a613261bc173cd71e9cc2dd58a32a9547ece21
+ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46686803"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48398950"
 ---
 # <a name="increased-microsoft-365-security-for-your-microsoft-365-for-enterprise-test-environment"></a>Maggiore sicurezza di Microsoft 365 per l'ambiente di testing di Microsoft 365 per l'organizzazione
 
@@ -47,7 +47,7 @@ In questa fase, viene abilitata l'aumento della sicurezza di Microsoft 365 per l
 
 ### <a name="configure-sharepoint-online-to-block-apps-that-dont-support-modern-authentication"></a>Configurare SharePoint Online per bloccare le app che non supportano l'autenticazione moderna
 
-Per le app che non supportano l'autenticazione moderna non è possibile applicare le [configurazioni di identità e accesso ai dispositivi](microsoft-365-policies-configurations.md) , che è un elemento importante della protezione dell'abbonamento a Microsoft 365 e delle risorse digitali. 
+Per le app che non supportano l'autenticazione moderna non è possibile applicare le [configurazioni di identità e accesso ai dispositivi](../security/office-365-security/microsoft-365-policies-configurations.md) , che è un elemento importante della protezione dell'abbonamento a Microsoft 365 e delle risorse digitali. 
 
 1. Accedere all'interfaccia di amministrazione di Microsoft 365 ( [https://portal.microsoft.com](https://portal.microsoft.com) ) e accedere alla sottoscrizione di laboratorio di testing di microsoft 365 con l'account di amministratore globale.
     
