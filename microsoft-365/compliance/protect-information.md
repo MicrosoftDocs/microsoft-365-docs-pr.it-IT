@@ -13,16 +13,17 @@ localization_priority: High
 search.appverid:
 - MOE150
 - MET150
+ms.collection:
 - m365solution-mip
 - m365initiative-compliance
 ms.assetid: a6ef28a4-2447-4b43-aae2-f5af6d53c68e
 description: Implementare le funzionalità di Microsoft Information Protection (MIP) utilizzando la conformità di Microsoft 365 per individuare, classificare e proteggere le informazioni riservate ovunque si trovino o si trovino in viaggio.
-ms.openlocfilehash: b421cf0b81c5ad52282302626b93064f9cd83ce8
-ms.sourcegitcommit: 0f48beaca3afa4df12d41847014975d50a4ebe7d
+ms.openlocfilehash: 78aadbba5442d7ec3cdc1beeac6d290a11325861
+ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "48338351"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48399045"
 ---
 # <a name="microsoft-information-protection-in-microsoft-365"></a>Microsoft Information Protection in Microsoft 365
 
@@ -44,7 +45,7 @@ Per comprendere il paesaggio dei dati e identificare i dati importanti nell'ambi
 |:------|:------------|:--------------------|:-----------------------------|
 |[Tipi di informazioni riservate](sensitive-information-type-entity-definitions.md)| Identifica i dati sensibili mediante l'utilizzo di espressioni regolari predefinite o personalizzate o di una funzione, insieme a elementi probatori che includono parole chiave, livelli di sicurezza e prossimità.| [Personalizzare una tipologia integrata di informazioni sensibili](customize-a-built-in-sensitive-information-type.md)|
 |[Classificatori addestrabili (anteprima)](classifier-learn-about.md)| Consente di classificare i dati per l'utente utilizzando uno dei classificatori incorporati o di formare un classificatore con il proprio contenuto. | [Introduzione ai classificatori sottoponibili a training (anteprima)](classifier-get-started-with.md) |
-|[Classificazione dei dati](data-classification-overview.md) | Identifica gli elementi che dispongono di un'etichetta di riservatezza, di un'etichetta di conservazione o che sono stati classificati come un tipo di informazioni riservate nell'organizzazione e le azioni che gli utenti stanno assumendo.  | [Introduzione a Esplora contenuto](data-classification-content-explorer.md)<br /><br /> [Introduzione a Esplora attività](data-classification-activity-explorer.md) |
+|[Classificazione dei dati](data-classification-overview.md) | Identifica gli elementi che dispongono di un'etichetta di riservatezza, di un'etichetta di conservazione o che sono stati classificati come un tipo di informazioni riservate nell'organizzazione e le azioni che gli utenti stanno assumendo.  | [Introduzione a Esplora contenuto](data-classification-content-explorer.md)<br /><br /> [Introduzione all'attività Esplora risorse](data-classification-activity-explorer.md) |
 
 ## <a name="protect-your-data"></a>Proteggere i propri dati
 

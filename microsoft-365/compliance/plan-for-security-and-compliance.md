@@ -17,12 +17,12 @@ ms.assetid: dc4f704c-6fcc-4cab-9a02-95a824e4fb57
 description: La pagina di destinazione fornisce collegamenti e informazioni sulla pianificazione per la sicurezza e la conformità in Office 365.
 ms.collection: M365-security-compliance
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e4eae4dddb90983b811e0856a09dae79af83d226
-ms.sourcegitcommit: 41bc923bb31598cea8f02923792c1cd786e39616
+ms.openlocfilehash: 3684506b458ea2d40d3ff8b022bfb9e8154accf3
+ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "45086657"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48399035"
 ---
 # <a name="plan-for-security-amp-compliance"></a>Pianificare la conformità alla sicurezza &amp;
 
@@ -46,7 +46,7 @@ La protezione dell'accesso ai dati e ai servizi di Microsoft 365 è cruciale per
   
 - [Proteggere l'accesso a dati e servizi in Office 365](protect-access-to-data-and-services.md)
     
-- [Criteri di posta elettronica e configurazioni sicure](https://docs.microsoft.com/microsoft-365/enterprise/secure-email-recommended-policies)
+- [Criteri di posta elettronica e configurazioni sicure](../security/office-365-security/secure-email-recommended-policies.md)
     
 [PDF](https://go.microsoft.com/fwlink/p/?linkid=841656) | [Visio](https://go.microsoft.com/fwlink/p/?linkid=841657) | [Altre lingue](https://www.microsoft.com/download/details.aspx?id=55032)
   
@@ -70,9 +70,9 @@ Il Centro sicurezza e &amp; conformità fornisce un'unica visualizzazione dei co
 
 Utilizzare queste configurazioni consigliate come punto di partenza per scenari di protezione di livello aziendale o di sicurezza dell'accesso avanzato.
   
-- [Criteri di posta elettronica e configurazioni sicure](https://docs.microsoft.com/microsoft-365/enterprise/secure-email-recommended-policies)
+- [Criteri di posta elettronica e configurazioni sicure](../security/office-365-security/secure-email-recommended-policies.md)
     
-- [Contoso nel Microsoft Cloud](https://aka.ms/cloudarchcontoso)
+- [Contoso nel Microsoft Cloud](../enterprise/contoso-case-study.md)
     
 ## <a name="microsoft-365-admin-centers-and-dashboards"></a>Microsoft 365 Admin Center e dashboard
 

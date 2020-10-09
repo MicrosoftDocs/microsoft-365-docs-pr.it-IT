@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: I criteri di conservazione dei log di controllo fanno parte delle nuove funzionalità di Audit avanzato di Microsoft 365. Un criterio di conservazione dei log di controllo consente di specificare quanto a lungo conservare i log di controllo nell'organizzazione.
-ms.openlocfilehash: 62d6fa47d19eaa9ae12e84879b5bf19a81afe8ae
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: dba14d5a4132bc9c883c531ceeb83a2a8ff3c6cd
+ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48199540"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48398727"
 ---
 # <a name="manage-audit-log-retention-policies"></a>Gestire i criteri di conservazione dei log di controllo
 
@@ -82,8 +82,6 @@ Audit avanzato in Microsoft 365 include un criterio di conservazione dei log di 
    6. **Priorità:** questo valore determina l'ordine con cui vengono elaborati i criteri di conservazione dei log di controllo nell'organizzazione. Un valore più alto indica una priorità più elevata. Ad esempio, un criterio con un valore di priorità **5** avrà la priorità su un criterio con un valore di priorità **0**. Come descritto in precedenza, i criteri di conservazione dei log di controllo personalizzati hanno la precedenza sul criterio predefinito per l'organizzazione.
 
 4. Fare clic su **Salva** per creare il nuovo criterio di conservazione dei log di controllo.
-
-Il nuovo criterio di conservazione dei log di controllo è mostrato nella scheda **Criteri di conservazione dei log di controllo**.
 
 ## <a name="create-an-audit-log-retention-policy-in-powershell"></a>Creare un criterio di conservazione dei log di controllo in PowerShell
 

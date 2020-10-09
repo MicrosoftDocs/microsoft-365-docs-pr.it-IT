@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 8716af366e2ec75775f3e34cbd121fe14fbb11f1
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 2c9f0a97869f27cbcf5829a15f50bf2905472c28
+ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47416800"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48398485"
 ---
 # <a name="information-protection-for-gdpr-with-microsoft-365-capabilities"></a>Protezione delle informazioni per RGPD con le funzionalità di Microsoft 365
 
@@ -49,7 +49,7 @@ Azure Active Directory e altre funzionalità di Microsoft 365 forniscono un'ampi
 
 Microsoft fornisce una configurazione consigliata, che è possibile usare come punto di partenza:
 
-- [Configurazioni per l'accesso di dispositivi e identità](../enterprise/microsoft-365-policies-configurations.md): configurazioni di criteri consigliati per ottenere tre livelli di protezione (di base, sensibile, altamente regolamentato). Questa guida include i criteri consigliati per Exchange Online e SharePoint Online (compreso OneDrive for Business).
+- [Configurazioni per l'accesso di dispositivi e identità](../security/office-365-security/microsoft-365-policies-configurations.md): configurazioni di criteri consigliati per ottenere tre livelli di protezione (di base, sensibile, altamente regolamentato). Questa guida include i criteri consigliati per Exchange Online e SharePoint Online (compreso OneDrive for Business).
 - [Guida sulla sicurezza per campagne politiche, organizzazioni no profit e altre organizzazioni agili](https://docs.microsoft.com/microsoft-365/security/office-365-security/microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o): include la stessa gamma di criteri ma fornisce indicazioni aggiuntive per ambienti BYOD e per account B2B.
 
 ## <a name="threat-protection"></a>Protezione dalle minacce

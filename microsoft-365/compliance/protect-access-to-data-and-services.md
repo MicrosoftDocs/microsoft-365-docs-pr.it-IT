@@ -16,12 +16,12 @@ search.appverid:
 ms.assetid: a6ef28a4-2447-4b43-aae2-f5af6d53c68e
 description: Informazioni su come proteggere l'accesso di utenti e dispositivi ai dati e ai servizi di Microsoft 365 e difendersi dalla perdita di dati.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 90fd902f0ccd8589fa413a2b06b9d5ccf74ab1fd
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 64baa2c9e49a9b24841ec50db3e5592ba3d7d55d
+ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44036029"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48399025"
 ---
 # <a name="protect-user-and-device-access"></a>Proteggere l'accesso di utenti e dispositivi
 
@@ -50,7 +50,7 @@ Un'altra raccomandazione principale consiste nell'utilizzare le workstation appo
 Infine, è possibile ridurre l'impatto della mancanza di accesso amministrativo accidentale creando due o più account di accesso di emergenza nel tenant. Vedere [gestire gli account di accesso per gli interventi di emergenza in Azure ad](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-emergency-access). 
 
 ## <a name="step-3-configure-recommended-identity-and-device-access-policies"></a>Passaggio 3: configurare i criteri di identità e accesso ai dispositivi consigliati
-L'autenticazione a più fattori e i criteri di accesso condizionale sono strumenti potenti per attenuare gli account compromessi e gli accessi non autorizzati. È consigliabile implementare un insieme di criteri che sono stati testati insieme. Per ulteriori informazioni, incluse le procedure di distribuzione, vedere [Identity and Device Access Configurations](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-policies-configurations).
+L'autenticazione a più fattori e i criteri di accesso condizionale sono strumenti potenti per attenuare gli account compromessi e gli accessi non autorizzati. È consigliabile implementare un insieme di criteri che sono stati testati insieme. Per ulteriori informazioni, incluse le procedure di distribuzione, vedere [Identity and Device Access Configurations](../security/office-365-security/microsoft-365-policies-configurations.md).
 
  Questi criteri implementano le funzionalità seguenti:
 - Autenticazione a più fattori
@@ -63,7 +63,7 @@ L'implementazione della conformità del dispositivo Intune richiede la registraz
 
 ## <a name="step-4-configure-sharepoint-device-access-policies"></a>Passaggio 4: configurare i criteri di accesso ai dispositivi di SharePoint
 
-Microsoft consiglia di proteggere il contenuto nei siti di SharePoint con contenuti sensibili e altamente regolamentati con i controlli di accesso ai dispositivi. Per ulteriori informazioni, vedere [consigli sui criteri per la protezione di siti e file di SharePoint](https://docs.microsoft.com/microsoft-365/enterprise/sharepoint-file-access-policies).
+Microsoft consiglia di proteggere il contenuto nei siti di SharePoint con contenuti sensibili e altamente regolamentati con i controlli di accesso ai dispositivi. Per ulteriori informazioni, vedere [consigli sui criteri per la protezione di siti e file di SharePoint](../security/office-365-security/sharepoint-file-access-policies.md).
 
 
 

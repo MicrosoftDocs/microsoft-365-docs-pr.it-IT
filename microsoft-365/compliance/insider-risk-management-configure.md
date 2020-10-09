@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: 4fcfec889b4b5005a172037a0df674b45a9e7281
-ms.sourcegitcommit: 79a21583a52aedd06317bbcabd8be40663379dec
+ms.openlocfilehash: 707f2b260ff9d4a452cdb65d75a1a8fe6a13af3f
+ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "48341434"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48399171"
 ---
 # <a name="get-started-with-insider-risk-management"></a>Introduzione alla gestione dei rischi Insider
 
@@ -31,7 +31,7 @@ Utilizzare i criteri di gestione dei rischi Insider per identificare le attivit�
 
 Per ulteriori informazioni su come i criteri di rischio Insider consentono di gestire i rischi nell'organizzazione, vedere [Insider Risk Management in Microsoft 365](insider-risk-management.md).
 
-## <a name="before-you-begin"></a>Informazioni preliminari
+## <a name="before-you-begin"></a>Prima di iniziare
 
 Prima di iniziare a utilizzare la gestione dei rischi Insider, è necessario confermare la [sottoscrizione Microsoft 365](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans) e gli eventuali componenti aggiuntivi. Per accedere e utilizzare Gestione dei rischi Insider, è necessario che l'organizzazione disponga di una delle sottoscrizioni o dei componenti aggiuntivi seguenti:
 
@@ -47,6 +47,9 @@ Gli utenti inclusi nei criteri di gestione dei rischi Insider devono essere asse
 Se non si dispone di un piano Microsoft 365 Enterprise E5 esistente e si desidera tentare la gestione dei rischi Insider, è possibile [aggiungere microsoft 365](https://docs.microsoft.com/office365/admin/try-or-buy-microsoft-365) alla sottoscrizione esistente oppure [iscriversi per una versione di valutazione](https://www.microsoft.com/microsoft-365/enterprise) di Microsoft 365 Enterprise E5.
 
 ## <a name="step-1-enable-permissions-for-insider-risk-management"></a>Passaggio 1: abilitare le autorizzazioni per la gestione dei rischi Insider
+
+>[!Important]
+>Dopo aver configurato i gruppi di ruoli, potrebbero essere necessari fino a 30 minuti affinché le autorizzazioni del gruppo di ruoli siano valide per gli utenti assegnati all'interno dell'organizzazione.
 
 Sono disponibili quattro gruppi di ruoli che consentono di configurare le autorizzazioni per gestire le funzionalità di gestione dei rischi Insider. Per continuare con questi passaggi di configurazione, è necessario che gli amministratori del tenant debbano prima assegnare il gruppo di ruoli amministratore di gestione dei rischi **Insider** Management o **Insider Management** . Per accedere e gestire le funzionalità di gestione dei rischi Insider dopo la configurazione iniziale, è necessario che gli utenti siano membri di almeno un gruppo di ruoli Gestione dei rischi Insider.
 

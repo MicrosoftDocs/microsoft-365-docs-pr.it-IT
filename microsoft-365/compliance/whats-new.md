@@ -18,16 +18,16 @@ ms.collection:
 - M365-security-compliance
 description: L'aggiunta di nuove nuove soluzioni al centro conformità, l'aggiornamento delle funzionalità esistenti in base ai commenti o la documentazione aggiornata e rinnovata, Microsoft 365 consente di rimanere al di sopra del panorama di conformità in continua evoluzione. Scoprire cosa è stato fino a questo mese.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 7d5e1bb67d6adc1b3c25aea8f468a23ed5c1019a
-ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
+ms.openlocfilehash: c33e136be55ea60f1e5954d4713b219045b1f0eb
+ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48132036"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48398527"
 ---
 # <a name="whats-new-in-microsoft-365-compliance"></a>Novità sulla conformità Microsoft 365
 
-L'aggiunta di nuove nuove soluzioni al [centro conformità di Microsoft 365](microsoft-365-compliance-center.md), l'aggiornamento delle funzionalità esistenti in base ai commenti e la documentazione aggiornata, Microsoft 365 consente di rimanere al di sopra del panorama di conformità sempre mutevole. Per informazioni sulle novità della conformità di Microsoft 365, vedere oggi stesso. 
+L'aggiunta di nuove soluzioni al [centro conformità di Microsoft 365](microsoft-365-compliance-center.md), l'aggiornamento delle funzionalità esistenti in base ai commenti e la documentazione aggiornata, Microsoft 365 consente di rimanere al di sopra del panorama di conformità sempre mutevole. Per informazioni sulle novità della conformità di Microsoft 365, vedere oggi stesso. 
 
 > [!NOTE]
 > Alcune funzionalità di conformità vengono distribuite a velocità diverse rispetto ai clienti. Se non si vede ancora una funzionalità, provare ad aggiungersi alla [versione mirata](https://docs.microsoft.com/office365/admin/manage/release-options-in-office-365).
@@ -36,6 +36,63 @@ L'aggiunta di nuove nuove soluzioni al [centro conformità di Microsoft 365](mic
 > [!TIP]
 > Interessato a cosa succede in altri centri di amministrazione? Consultare questi articoli:<br>[Novità dell'interfaccia di amministrazione di Microsoft 365](https://docs.microsoft.com/office365/admin/whats-new-in-preview?view=o365-worldwide)<br>[Novità dell'interfaccia di amministrazione di SharePoint](https://docs.microsoft.com/sharepoint/what-s-new-in-admin-center)<br>[Novità di Microsoft Threat Protection](https://docs.microsoft.com/microsoft-365/security/mtp/whats-new)<br><br>
 Per informazioni sulle funzionalità di Microsoft 365 che sono state avviate, sono in sviluppo, sono state annullate o sono state rilasciate in precedenza. [365](https://www.microsoft.com/en-us/microsoft-365/roadmap)
+
+## <a name="august-2020"></a>Agosto 2020
+
+### <a name="spotlight-insider-risk-and-communication-compliance-updates"></a>Spotlight: aggiornamenti per la conformità alle comunicazioni e ai rischi Insider
+
+Numerose funzionalità nuove e migliorate hanno colpito l'anteprima pubblica di questo mese:
+
+**Gestione dei rischi Insider**
+
+- Consultare i sei nuovi [modelli di criteri](insider-risk-management-policies.md#policy-templates):
+    - Perdite di dati da parte di utenti prioritari
+    - Perdite di dati da parte di utenti scontenti
+    - Violazioni dei criteri di sicurezza generali
+    - Violazioni dei criteri di sicurezza da parte degli utenti
+    - Violazioni dei criteri di sicurezza per gli utenti con priorità
+    - Violazioni dei criteri di sicurezza da parte di utenti scontenti
+
+- L'integrazione con [Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) consente di importare e filtrare gli avvisi del trifosfato di adenosina di Microsoft Defender per le attività rilevate dai criteri creati dai nuovi modelli di criteri di violazione della sicurezza. È inoltre disponibile un'impostazione relativa ai [rischi Insider](insider-risk-management-settings.md#microsoft-defender-advanced-threat-protection-preview) in cui è possibile scegliere di importare avvisi di sicurezza per la gestione dei rischi insider in base allo stato di valutazione dell'avviso ATP Microsoft Defender.
+
+    > [!NOTE]
+    > Per sfruttare l'integrazione di Microsoft Defender ATP (inclusi i nuovi modelli di violazione dei criteri di sicurezza), è necessario che Microsoft Defender ATP sia configurato nell'organizzazione. È inoltre necessario abilitare Microsoft Defender ATP per l'integrazione di gestione dei rischi Insider [configurando funzionalità avanzate in Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-features#share-endpoint-alerts-with-microsoft-compliance-center).
+ 
+- Personalizzare le soglie degli indicatori quando si [Crea un criterio](insider-risk-management-policies.md#create-a-new-policy).
+- Impostare i [gruppi](insider-risk-management-settings.md#priority-user-groups-preview) di utenti prioritari per definire gli utenti dell'organizzazione la cui attività richiede un controllo più approfondito in base a fattori quali la posizione, il livello di accesso alle informazioni riservate o la cronologia dei rischi.
+- Utilizzare le API di attività di gestione di Office 365 per [esportare i dettagli dell'avviso sui rischi Insider](insider-risk-management-settings.md#export-alerts-preview) ad altre applicazioni che possono essere utilizzate dall'organizzazione per gestire o aggregare dati di rischio
+- [Le nuove impostazioni di dominio](insider-risk-management-settings.md#domains-preview) consentono di definire e controllare i livelli di rischio per attività in domini specifici.
+
+**Conformità delle comunicazioni**
+
+- Quando si [esaminano i messaggi in un avviso](communication-compliance-investigate-remediate.md#step-3-decide-on-a-remediation-action), è ora possibile rimuovere i messaggi inadeguati nei canali Microsoft teams, 1:1 e Group Chat. I messaggi e il contenuto rimossi vengono sostituiti con un suggerimento per i criteri che spiega che è stato rimosso a causa di contenuti sensibili.
+- Nuovi [ruoli di comunicazione](communication-compliance-configure.md#step-1-required-enable-permissions-for-communication-compliance) (saranno inclusi anche nei nuovi gruppi di ruoli di conformità di comunicazione che rilasciano a settembre).
+- Nuova esperienza delle impostazioni di conformità di comunicazione che include le impostazioni per la [privacy](communication-compliance-feature-reference.md#privacy-preview) e i [modelli di avviso](communication-compliance-feature-reference.md#notice-templates).
+- Nuovi [classificatori](communication-compliance-feature-reference.md#classifiers) che consentono di rilevare immagini adulte, audace e cruente.
+- La nuova notifica ' pattern detected ' che viene visualizzata quando si [esaminano i messaggi in un avviso](communication-compliance-investigate-remediate.md#step-2-examine-the-message-details) consente di conoscere le istanze ricorrenti dello stesso comportamento da parte di un utente.
+
+### <a name="sensitivity-labels"></a>Etichette di riservatezza
+
+- Per i tenant degli enti pubblici degli Stati Uniti (GCC, GCC-HC e DoD), le etichette di riservatezza sono attualmente supportate solo per lo scanner e il client di etichettatura unificata di Azure Information Protection. Per altre informazioni, vedere [Descrizione del servizio Azure Information Protection Premium per gli enti pubblici](https://docs.microsoft.com/enterprise-mobility-security/solutions/ems-aip-premium-govt-service-description).
+- Per creare e configurare tutte le impostazioni visualizzate nell'interfaccia di amministrazione dell'etichettatura, è ora possibile [utilizzare PowerShell per la sicurezza & Compliance Center](create-sensitivity-labels.md#use-powershell-for-sensitivity-labels-and-their-policies) . Questo significa che, oltre a utilizzare PowerShell per le impostazioni che non sono disponibili nell'interfaccia di amministrazione dell'etichettatura, è ora possibile creare completamente script per la creazione e la manutenzione delle etichette di riservatezza e dei criteri di etichetta di riservatezza.
+
+### <a name="records-management-content-overhaul"></a>Gestione dei record: Revisione del contenuto
+
+Nuovi documenti che coprono i passaggi di distribuzione, contrassegnando il contenuto come record e le versioni dei record:
+
+- [Introduzione alla gestione dei record](get-started-with-records-management.md)
+- [Usare le etichette di conservazione per dichiarare i record](declare-records.md)
+- [Usare il controllo delle versioni per aggiornare i record archiviati in SharePoint o OneDrive](record-versioning.md)
+
+### <a name="retention-labels--policies"></a>Criteri delle etichette di conservazione &
+
+L'attività amministrativa relativa alla conservazione è ora registrata e disponibile per la revisione nel log di controllo. Per la lista completa, vedere [Attività inerenti i criteri e le etichette di conservazione](search-the-audit-log-in-security-and-compliance.md#retention-policy-and-retention-label-activities).
+
+### <a name="advanced-ediscovery"></a>Advanced eDiscovery
+
+- Quando si [aggiunge una raccolta a un set di revisione](add-data-to-review-set.md#define-options-to-scope-your-collection-for-review), è ora possibile includere gli allegati moderni (denominati anche "allegati cloud") e le versioni di documenti di SharePoint.
+- Nuova [esperienza di esportazione del download diretto](export-documents-from-review-set.md), eliminando la necessità di utilizzare Esplora archivi di Azure per scaricare il contenuto del caso.
+
 
 ## <a name="july-2020"></a>Luglio 2020
 
@@ -269,7 +326,7 @@ Di seguito è illustrato un riepilogo delle nuove soluzioni disponibili. Tieni d
 |Catalogo delle soluzioni (anteprima) <br/>|Il catalogo della soluzione è il One-Stop-Shop per scoprire, conoscere e iniziare rapidamente con le nostre soluzioni di gestione dei rischi e conformità. Il catalogo è suddiviso in tre categorie di conformità, ognuna delle quali contiene informazioni dettagliate sulle soluzioni che compongono tale categoria. Le categorie includono la protezione delle informazioni & governance, gestione dei rischi Insider e individuazione & risposta <br/>|[Panoramica del catalogo delle soluzioni (anteprima)](microsoft-365-solution-catalog.md)|
 |Conformità alla comunicazione (anteprima) <br/>|La conformità alla comunicazione è parte integrante della nuova categoria di gestione dei rischi Insider che consente di ridurre al minimo i rischi di comunicazione contribuendo a rilevare, acquisire e intraprendere azioni correttive per i messaggi inopportuni nell'organizzazione. La soluzione consente di estendere le funzionalità dei criteri di supervisione in Office 365 introducendo diversi nuovi miglioramenti, ad esempio modelli intelligenti, flussi di lavoro di correzione flessibili e approfondimenti che consentono di eseguire le operazioni di monitoraggio. <br/>|[Conformità della comunicazione in Microsoft 365 (anteprima)](communication-compliance.md)|
 |Classificazione dei dati (anteprima) <br/>|La nuova pagina di classificazione dei dati contiene potenti strumenti e intuizioni utili per individuare e valutare la modalità di utilizzo di informazioni e etichette sensibili (conservazione e sensibilità) nei contenuti all'interno dell'organizzazione. Esaminare il contenuto che contiene informazioni riservate o applicare etichette, esplorare l'attività delle etichette tra le posizioni di Microsoft 365, creare tipi di informazioni riservate personalizzate e molto altro ancora.<br/>|[Panoramica della classificazione dei dati (anteprima)](data-classification-overview.md)|
-|Classificatori addestrabili (anteprima) <br/>|Questo nuovo potente strumento utilizza il motore di apprendimento automatico per identificare le categorie di contenuto dell'organizzazione, ad esempio i documenti di regolamentazione o i contratti con i dipendenti. Una volta creato, i classificatori possono essere utilizzati in diverse soluzioni di conformità per individuare il contenuto correlato e classificarlo, proteggerlo, conservarlo e altro ancora.<br/>|[Informazioni sui classificatori addestrabili (anteprima)](classifier-learn-about.md)|
+|Classificatori addestrabili (anteprima) <br/>|Questo nuovo potente strumento utilizza il motore di apprendimento automatico per identificare le categorie di contenuto dell'organizzazione, ad esempio i documenti di regolamentazione o i contratti con i dipendenti. Una volta creato, i classificatori possono essere utilizzati in diverse soluzioni di conformità per individuare il contenuto correlato e classificarlo, proteggerlo, conservarlo e altro ancora.<br/>|[Informazioni sui classificatori sottoponibili a training (anteprima)](classifier-learn-about.md)|
 
 #### <a name="updated-compliance-solutions"></a>Soluzioni di conformità aggiornate
 
@@ -313,9 +370,3 @@ Quando si configura la crittografia per un'etichetta di riservatezza, sono ora d
 - Quando si applica l'etichetta ai **file Word, PowerPoint ed Excel**, agli utenti verrà richiesto di assegnare le autorizzazioni di accesso a utenti e gruppi specifici.
 
 Andare a [limitare l'accesso al contenuto utilizzando le etichette di riservatezza per applicare la crittografia](encryption-sensitivity-labels.md#let-users-assign-permissions) per ulteriori informazioni.
-
-## <a name="august-2019"></a>Agosto 2019
-
-### <a name="update-to-data-investigations"></a>Aggiornamento alle indagini sui dati
-
-Quando si esegue un'analisi dei dati, è ora possibile eliminare gli elementi dai percorsi originali. Questo significa che è possibile eliminare gli elementi da cassette postali di Exchange, siti di SharePoint e account di OneDrive nell'organizzazione. Dal momento che gli elementi sono stati raccolti come prova, è possibile che vengano conservate copie del gruppo di prove, in modo da poter indagare ulteriormente o conservare come riferimento. [Altre informazioni](manage-data-spillage-incidents.md#step-4-delete-the-spilled-data) Quando si esegue un'analisi dei dati, è ora possibile eliminare gli elementi dai percorsi originali. Questo significa che è possibile eliminare gli elementi da cassette postali di Exchange, siti di SharePoint e account di OneDrive nell'organizzazione. Dal momento che gli elementi sono stati raccolti come prova, è possibile che vengano conservate copie del gruppo di prove, in modo da poter indagare ulteriormente o conservare come riferimento. Per ulteriori informazioni, vedere [gestire un problema di fuoriuscita dei dati in Microsoft 365](manage-data-spillage-incidents.md#step-4-delete-the-spilled-data) . 

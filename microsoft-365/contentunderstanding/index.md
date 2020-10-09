@@ -10,12 +10,12 @@ ms.prod: microsoft-365-enterprise
 search.appverid: ''
 localization_priority: Priority
 description: Informazioni su come trovare risorse per Microsoft SharePoint Syntex.
-ms.openlocfilehash: 5d375b27fe3cd58069851f12c459460ac605da83
-ms.sourcegitcommit: 3a0accd616ca94d6ba7f50e502552b45e9661a95
+ms.openlocfilehash: 9580a2db62fc8ddef16e79817498eebe9feef6bb
+ms.sourcegitcommit: 7e8151ff74cb1cfc0dd59fadcac423c338415d77
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "48350774"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "48390120"
 ---
 # <a name="introduction-to-microsoft-sharepoint-syntex"></a>Introduzione a Microsoft SharePoint Syntex
 
@@ -26,6 +26,12 @@ Microsoft SharePoint Syntex è un servizio di Office 365 che consente alle organ
 - Trasformare il contenuto in conoscenza
 
 Le risorse di questa pagina sono pensate per iniziare a imparare a usare SharePoint Syntex nell'organizzazione.
+
+</br>
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4GJXS] 
+
+</br>
 
 ## <a name="get-started"></a>Per iniziare
 
@@ -64,7 +70,7 @@ Le risorse di questa sezione consentono agli utenti di comprendere come creare e
 | Se sono necessarie queste informazioni: | Passare a questa risorsa: |
 |:-----|:-----|
 |Informazioni su come lavorare con i modelli|[Creare un centro contenuti](https://docs.microsoft.com/microsoft-365/contentunderstanding/create-a-content-center)<br><br>[Creare un classificatore](https://docs.microsoft.com/microsoft-365/contentunderstanding/create-a-classifier)<br><br>[Creare un estrattore](https://docs.microsoft.com/microsoft-365/contentunderstanding/create-an-extractor)<br><br>[Creare un modello di elaborazione moduli](https://docs.microsoft.com/microsoft-365/contentunderstanding/create-a-form-processing-model)<br><br>[Tipi di spiegazione](https://docs.microsoft.com/microsoft-365/contentunderstanding/form-processing-overview)<br><br>[Applicare un modello di analisi dei documenti](https://docs.microsoft.com/microsoft-365/contentunderstanding/apply-a-model)<br><br>[Informazioni sui modelli di analisi dei documenti in un modello di esempio](https://docs.microsoft.com/microsoft-365/contentunderstanding/learn-about-document-understanding-models-through-the-sample-model)<br><br>|
-|Applicare un'etichetta di conservazione al modello|[Differenza tra i modelli di analisi dei documenti e dell’elaborazione dei moduli](https://docs.microsoft.com/microsoft-365/contentunderstanding/difference-between-document-understanding-and-form-processing-model)|
+|Applicare un'etichetta di conservazione al modello|[Applicare un'etichetta di conservazione a un modello di analisi dei documenti](https://docs.microsoft.com/microsoft-365/contentunderstanding/apply-a-retention-label-to-a-model)|
 |Usare la tassonomia dell'archivio termini dei servizi metadati gestiti durante la creazione di un estrattore|[Sfruttare la tassonomia dell'archivio termini durante la creazione di un estrattore](https://docs.microsoft.com/microsoft-365/contentunderstanding/leverage-term-store-taxonomy)|
 |Scopri come visualizzare i dati relativi ai modelli|[Informazioni sull'analisi dati di utilizzo](https://docs.microsoft.com/microsoft-365/contentunderstanding/model-usage-analytics)|
 
