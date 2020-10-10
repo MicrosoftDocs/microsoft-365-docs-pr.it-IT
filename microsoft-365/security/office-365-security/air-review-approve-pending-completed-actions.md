@@ -13,16 +13,18 @@ localization_priority: Normal
 search.appverid:
 - MET150
 - MOE150
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
+- m365-initiative-defender-office365
 description: Informazioni sulle azioni di correzione nelle funzionalità di analisi e risposta automatizzate in Office 365 Advanced Threat Protection Plan 2.
-ms.openlocfilehash: 2f1d6a1dccfaece6a52ec33fd86ea244fbb6c4fe
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 29a3c2f59ba85c2c5d9965c0c7f262dcba1ecda7
+ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48202448"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48411987"
 ---
-# <a name="view-pending-or-completed-remediation-actions-following-an-automated-investigation-in-office-365"></a><span data-ttu-id="e0ecc-104">Visualizzare le azioni di correzione in sospeso o completate dopo un'analisi automatizzata in Office 365</span><span class="sxs-lookup"><span data-stu-id="e0ecc-104">View pending or completed remediation actions following an automated investigation in Office 365</span></span>
+# <a name="view-pending-or-completed-remediation-actions-following-an-automated-investigation-in-office-365"></a><span data-ttu-id="1a96f-104">Visualizzare le azioni di correzione in sospeso o completate dopo un'analisi automatizzata in Office 365</span><span class="sxs-lookup"><span data-stu-id="1a96f-104">View pending or completed remediation actions following an automated investigation in Office 365</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -30,29 +32,29 @@ ms.locfileid: "48202448"
 
 ![Pagina azione indagini AEREe](../../media/air-investigationactionspage.png)
 
-## <a name="approve-or-reject-pending-actions"></a><span data-ttu-id="e0ecc-106">Approva (o rifiuta) azioni in sospeso</span><span class="sxs-lookup"><span data-stu-id="e0ecc-106">Approve (or reject) pending actions</span></span>
+## <a name="approve-or-reject-pending-actions"></a><span data-ttu-id="1a96f-106">Approva (o rifiuta) azioni in sospeso</span><span class="sxs-lookup"><span data-stu-id="1a96f-106">Approve (or reject) pending actions</span></span>
 
-<span data-ttu-id="e0ecc-107">Durante la visualizzazione dei [Dettagli di un'indagine](air-view-investigation-results.md), è possibile approvare o rifiutare tutte le azioni di correzione in sospeso.</span><span class="sxs-lookup"><span data-stu-id="e0ecc-107">While viewing the [details of an investigation](air-view-investigation-results.md), you can approve or reject any pending remediation actions.</span></span> <span data-ttu-id="e0ecc-108">Si consiglia di eseguire questa operazione non appena possibile in modo che le indagini automatizzate siano state completate.</span><span class="sxs-lookup"><span data-stu-id="e0ecc-108">We recommend doing this as soon as possible so that your automated investigations complete.</span></span>
+<span data-ttu-id="1a96f-107">Durante la visualizzazione dei [Dettagli di un'indagine](air-view-investigation-results.md), è possibile approvare o rifiutare tutte le azioni di correzione in sospeso.</span><span class="sxs-lookup"><span data-stu-id="1a96f-107">While viewing the [details of an investigation](air-view-investigation-results.md), you can approve or reject any pending remediation actions.</span></span> <span data-ttu-id="1a96f-108">Si consiglia di eseguire questa operazione non appena possibile in modo che le indagini automatizzate siano state completate.</span><span class="sxs-lookup"><span data-stu-id="1a96f-108">We recommend doing this as soon as possible so that your automated investigations complete.</span></span>
 
 > [!IMPORTANT]
-> <span data-ttu-id="e0ecc-109">Le autorizzazioni appropriate devono essere approvate o rifiutate.</span><span class="sxs-lookup"><span data-stu-id="e0ecc-109">Appropriate permissions are required to approve or reject remediation actions.</span></span> <span data-ttu-id="e0ecc-110">Vedere le [autorizzazioni necessarie per utilizzare le funzionalità aeree](office-365-air.md#required-permissions-to-use-air-capabilities).</span><span class="sxs-lookup"><span data-stu-id="e0ecc-110">See [Required permissions to use AIR capabilities](office-365-air.md#required-permissions-to-use-air-capabilities).</span></span>
+> <span data-ttu-id="1a96f-109">Le autorizzazioni appropriate devono essere approvate o rifiutate.</span><span class="sxs-lookup"><span data-stu-id="1a96f-109">Appropriate permissions are required to approve or reject remediation actions.</span></span> <span data-ttu-id="1a96f-110">Vedere le [autorizzazioni necessarie per utilizzare le funzionalità aeree](office-365-air.md#required-permissions-to-use-air-capabilities).</span><span class="sxs-lookup"><span data-stu-id="1a96f-110">See [Required permissions to use AIR capabilities](office-365-air.md#required-permissions-to-use-air-capabilities).</span></span>
 
-1. <span data-ttu-id="e0ecc-111">Andare su [https://protection.office.com](https://protection.office.com) ed eseguire l'accesso.</span><span class="sxs-lookup"><span data-stu-id="e0ecc-111">Go to [https://protection.office.com](https://protection.office.com) and sign in.</span></span> <span data-ttu-id="e0ecc-112">Questo porta al centro sicurezza & Compliance.</span><span class="sxs-lookup"><span data-stu-id="e0ecc-112">This takes you to the the Security & Compliance Center.</span></span>
+1. <span data-ttu-id="1a96f-111">Andare su [https://protection.office.com](https://protection.office.com) ed eseguire l'accesso.</span><span class="sxs-lookup"><span data-stu-id="1a96f-111">Go to [https://protection.office.com](https://protection.office.com) and sign in.</span></span> <span data-ttu-id="1a96f-112">Questo porta al centro sicurezza & Compliance.</span><span class="sxs-lookup"><span data-stu-id="1a96f-112">This takes you to the the Security & Compliance Center.</span></span>
 
-2. <span data-ttu-id="e0ecc-113">Andare a indagini sulla **gestione delle minacce**  >  **Investigations**.</span><span class="sxs-lookup"><span data-stu-id="e0ecc-113">Go to **Threat management** > **Investigations**.</span></span>
+2. <span data-ttu-id="1a96f-113">Andare a indagini sulla **gestione delle minacce**  >  **Investigations**.</span><span class="sxs-lookup"><span data-stu-id="1a96f-113">Go to **Threat management** > **Investigations**.</span></span>
 
-3. <span data-ttu-id="e0ecc-114">Nell'elenco delle indagini selezionare un elemento nella colonna **ID** .</span><span class="sxs-lookup"><span data-stu-id="e0ecc-114">In the list of investigations, select an item in the **ID** column.</span></span> 
+3. <span data-ttu-id="1a96f-114">Nell'elenco delle indagini selezionare un elemento nella colonna **ID** .</span><span class="sxs-lookup"><span data-stu-id="1a96f-114">In the list of investigations, select an item in the **ID** column.</span></span> 
 
-4. <span data-ttu-id="e0ecc-115">Selezionare la scheda **azioni** .</span><span class="sxs-lookup"><span data-stu-id="e0ecc-115">Select the **Actions** tab.</span></span>
+4. <span data-ttu-id="1a96f-115">Selezionare la scheda **azioni** .</span><span class="sxs-lookup"><span data-stu-id="1a96f-115">Select the **Actions** tab.</span></span>
 
-5. <span data-ttu-id="e0ecc-116">Selezionare un elemento nell'elenco.</span><span class="sxs-lookup"><span data-stu-id="e0ecc-116">Select an item in the list.</span></span> <span data-ttu-id="e0ecc-117">(Vengono attivati i pulsanti approva e rifiuta).</span><span class="sxs-lookup"><span data-stu-id="e0ecc-117">(This activates the Approve and Reject buttons.)</span></span>
+5. <span data-ttu-id="1a96f-116">Selezionare un elemento nell'elenco.</span><span class="sxs-lookup"><span data-stu-id="1a96f-116">Select an item in the list.</span></span> <span data-ttu-id="1a96f-117">(Vengono attivati i pulsanti approva e rifiuta).</span><span class="sxs-lookup"><span data-stu-id="1a96f-117">(This activates the Approve and Reject buttons.)</span></span>
 
-6. <span data-ttu-id="e0ecc-118">Esaminare le informazioni disponibili per gli elementi selezionati e quindi approvare o rifiutare le azioni.</span><span class="sxs-lookup"><span data-stu-id="e0ecc-118">Review available information for the item(s) you selected, and then either approve or reject the action(s).</span></span> 
-   - <span data-ttu-id="e0ecc-119">**Approvazione** consente di iniziare la correzione.</span><span class="sxs-lookup"><span data-stu-id="e0ecc-119">**Approve** allows remediation to begin.</span></span>
-   - <span data-ttu-id="e0ecc-120">**Rifiuto** non esegue altre azioni</span><span class="sxs-lookup"><span data-stu-id="e0ecc-120">**Reject** takes no further action</span></span>
+6. <span data-ttu-id="1a96f-118">Esaminare le informazioni disponibili per gli elementi selezionati e quindi approvare o rifiutare le azioni.</span><span class="sxs-lookup"><span data-stu-id="1a96f-118">Review available information for the item(s) you selected, and then either approve or reject the action(s).</span></span> 
+   - <span data-ttu-id="1a96f-119">**Approvazione** consente di iniziare la correzione.</span><span class="sxs-lookup"><span data-stu-id="1a96f-119">**Approve** allows remediation to begin.</span></span>
+   - <span data-ttu-id="1a96f-120">**Rifiuto** non esegue altre azioni</span><span class="sxs-lookup"><span data-stu-id="1a96f-120">**Reject** takes no further action</span></span>
 
-## <a name="next-steps"></a><span data-ttu-id="e0ecc-121">Passaggi successivi</span><span class="sxs-lookup"><span data-stu-id="e0ecc-121">Next steps</span></span>
+## <a name="next-steps"></a><span data-ttu-id="1a96f-121">Passaggi successivi</span><span class="sxs-lookup"><span data-stu-id="1a96f-121">Next steps</span></span>
 
-- [<span data-ttu-id="e0ecc-122">Informazioni dettagliate e risultati di un'indagine automatizzata in Office 365</span><span class="sxs-lookup"><span data-stu-id="e0ecc-122">Details and results of an automated investigation in Office 365</span></span>](air-view-investigation-results.md)
+- [<span data-ttu-id="1a96f-122">Informazioni dettagliate e risultati di un'indagine automatizzata in Office 365</span><span class="sxs-lookup"><span data-stu-id="1a96f-122">Details and results of an automated investigation in Office 365</span></span>](air-view-investigation-results.md)
 
-- [<span data-ttu-id="e0ecc-123">Utilizzo di Esplora minacce</span><span class="sxs-lookup"><span data-stu-id="e0ecc-123">Use Threat Explorer</span></span>](threat-explorer.md)
+- [<span data-ttu-id="1a96f-123">Utilizzo di Esplora minacce</span><span class="sxs-lookup"><span data-stu-id="1a96f-123">Use Threat Explorer</span></span>](threat-explorer.md)
