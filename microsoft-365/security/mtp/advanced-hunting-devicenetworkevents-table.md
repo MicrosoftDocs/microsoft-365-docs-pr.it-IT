@@ -15,14 +15,16 @@ author: lomayor
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
+- m365-initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: be39e3f9c1216e0af44820aa9365492eefdf4c86
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 8a385989bc7fd21a136124fdd4658ef64538c82a
+ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48197086"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48414095"
 ---
 # <a name="devicenetworkevents"></a>DeviceNetworkEvents
 

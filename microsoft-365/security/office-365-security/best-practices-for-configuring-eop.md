@@ -5,19 +5,18 @@ f1.keywords:
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date: ''
 audience: ITPro
 ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: faf1efd1-3b0c-411a-804d-17f37292eac0
 description: Seguire queste procedure consigliate per l'uso autonomo di Exchange Online Protection (EOP) per essere configurati per l'esito positivo ed evitare errori comuni di configurazione.
-ms.openlocfilehash: cb3aa36720a6a46932d69341394304937bb1a296
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: b734fe87b82c243531944bbd9cf53d22d5b42f53
+ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48203564"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48414035"
 ---
 # <a name="best-practices-for-configuring-standalone-eop"></a>Procedure consigliate per la configurazione di EOP autonomo
 
@@ -44,7 +43,7 @@ Queste impostazioni riguardano una serie di funzionalità esterne ai criteri di 
 
 ****
 
-|Nome della funzionalità di sicurezza|Standard|Rigorosa|Comment|
+|Nome della funzionalità di sicurezza|Standard|Rigorosa|Aggiungere commenti|
 |---|---|---|---|
 |[Configurazione di SPF per evitare lo spoofing](set-up-spf-in-office-365-to-help-prevent-spoofing.md)|Sì|Sì||
 |[Utilizzare DKIM per convalidare la posta elettronica in uscita inviata dal dominio personalizzato in Office 365](use-dkim-to-validate-outbound-email.md)|Sì|Sì||

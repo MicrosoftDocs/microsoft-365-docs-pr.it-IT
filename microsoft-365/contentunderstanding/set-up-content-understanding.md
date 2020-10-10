@@ -9,12 +9,12 @@ ms.prod: microsoft-365-enterprise
 search.appverid: MET150
 localization_priority: Priority
 description: Configurazione della comprensione dei contenuti in Project Cortex
-ms.openlocfilehash: 0d66076c93eb46ca11977cea12417c0816e0d11b
-ms.sourcegitcommit: 9d8d071659e662c266b101377e24549963e43fef
+ms.openlocfilehash: 8217630d66a097fcc714be80bd4d3dcceb623370
+ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "48367932"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48413711"
 ---
 # <a name="set-up-sharepoint-syntex"></a>Configurazione di SharePoint Syntex
 
@@ -51,11 +51,7 @@ Gli amministratori possono anche modificare le impostazioni selezionate in quals
 
     ![Avviare la configurazione](../media/content-understanding/admin-content-understanding-get-started.png)</br>
 
-4. Nella pagina di abilitazione dell’aggiunta di tag alle immagini, scegliere se si vuole consentire l’[aggiunta di tag alle immagini](image-tagging.md).
-
-    ![Schermata delle opzioni di aggiunta di tag alle immagini](../media/content-understanding/admin-content-understanding-setup-image-tagging.png)</br>
-
-5. Nella pagina **Configurare l’elaborazione moduli**, è possibile scegliere se si vuole consentire agli utenti di creare modelli di elaborazione moduli in raccolte documenti di SharePoint specifiche. Nella barra multifunzione della raccolta documenti sarà disponibile un'opzione del menu che consente di **Creare un modello di elaborazione moduli** nelle raccolte documenti di SharePoint in cui è abilitato.
+4. Nella pagina **Configurare l’elaborazione moduli**, è possibile scegliere se si vuole consentire agli utenti di creare modelli di elaborazione moduli in raccolte documenti di SharePoint specifiche. Nella barra multifunzione della raccolta documenti sarà disponibile un'opzione del menu che consente di **Creare un modello di elaborazione moduli** nelle raccolte documenti di SharePoint in cui è abilitato.
  
      In **Quale raccolta di SharePoint deve mostrare l'opzione di creazione del modello di elaborazione moduli**, è possibile selezionare:</br>
       - **Tutte le raccolte di SharePoint** per renderla disponibile per tutte le raccolte di SharePoint nell'organizzazione.</br>
@@ -67,7 +63,7 @@ Gli amministratori possono anche modificare le impostazioni selezionate in quals
    > [!Note]
    > Rimuovere un sito dopo che l’opzione è stata inclusa, non influisce sui modelli esistenti applicati alle raccolte del sito o sulla possibilità di applicare modelli di analisi dei documenti a una raccolta. 
     
-6. Nella pagina **Creare un centro contenuti**, è possibile creare un sito del centro contenuti di SharePoint in cui gli utenti possono creare e gestire i modelli di analisi dei documenti. </br>
+5. Nella pagina **Creare un centro contenuti**, è possibile creare un sito del centro contenuti di SharePoint in cui gli utenti possono creare e gestire i modelli di analisi dei documenti. </br>
     a. Per **Nome del sito**, digitare il nome che si vuole assegnare al sito del centro contenuti.</br>
     b. L’**Indirizzo del sito** mostrerà l'URL del sito in base a ciò che è stato selezionato per il nome del sito. Per modificarlo, fare clic su **Modifica**.</br>
 
@@ -75,11 +71,11 @@ Gli amministratori possono anche modificare le impostazioni selezionate in quals
 
     Selezionare **Avanti**.
 
-7. Nella pagina **Verificare e completare**, è possibile esaminare l'impostazione selezionata e scegliere se apportare modifiche. Al termine, selezionare **Attiva**.
+6. Nella pagina **Verificare e completare**, è possibile esaminare l'impostazione selezionata e scegliere se apportare modifiche. Al termine, selezionare **Attiva**.
 
-8. Nella pagina di conferma, fare clic su **Fine**.
+7. Nella pagina di conferma, fare clic su **Fine**.
 
-9. Si verrà indirizzati nuovamente alla pagina **Comprensione dei contenuti automatica**. In questa pagina è possibile selezionare **Gestisci** per modificare le impostazioni di configurazione. 
+8. Si verrà indirizzati nuovamente alla pagina **Comprensione dei contenuti automatica**. In questa pagina è possibile selezionare **Gestisci** per modificare le impostazioni di configurazione. 
 
 ## <a name="assign-licenses"></a>Assegnazione delle licenze
 
