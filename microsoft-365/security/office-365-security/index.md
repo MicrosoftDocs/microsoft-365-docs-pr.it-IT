@@ -13,20 +13,21 @@ search.appverid:
 - MOE150
 ms.collection:
 - M365-security-compliance
+- m365-initiative-m365-defender
 description: Sicurezza in Office 365, da EOP a ATP piani 1 e 2, configurazioni di sicurezza standard e rigorose e altro ancora. Informazioni su ciò che si ha e su come proteggere le proprietà.
-ms.openlocfilehash: c5b357dc7a08eeef099b25172169d04cdb81e8c4
-ms.sourcegitcommit: 5abd5ef8c2903b4c3bd875da68049fde26768dcf
+ms.openlocfilehash: d650a02faa21ac6ade39506d2c423dd319951bef
+ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "48359154"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48413055"
 ---
 # <a name="office-365-security-overview"></a>Panoramica della sicurezza di Office 365
 
 In questo articolo vengono presentate le nuove proprietà di sicurezza nel cloud. Se si è parte di un centro operazioni di sicurezza, si è un amministratore della sicurezza nuovo nello spazio o si desidera un aggiornamento, è possibile iniziare.
 
 > [!CAUTION]
-> Hi. Se si utilizza **Outlook.com**, **Microsoft 365 Family**o **Microsoft 365 Personal**e sono necessari *collegamenti sicuri* o informazioni sugli *allegati sicuri* , ***fare clic su questo collegamento***: [Advanced Outlook.com Security for Microsoft 365 subscribers](https://support.microsoft.com/office/advanced-outlook-com-security-for-office-365-subscribers-882d2243-eab9-4545-a58a-b36fee4a46e2). Ringrazia!
+> Se si utilizza **Outlook.com**, **Microsoft 365 Family**o **Microsoft 365 Personal**e sono necessari *collegamenti sicuri* o informazioni sugli *allegati sicuri* , ***fare clic su questo collegamento***: [Advanced Outlook.com Security for Microsoft 365 subscribers](https://support.microsoft.com/office/advanced-outlook-com-security-for-office-365-subscribers-882d2243-eab9-4545-a58a-b36fee4a46e2).
 
 ## <a name="office-365-security-spelled-out"></a>Sicurezza di Office 365 dispitata
 

@@ -16,12 +16,12 @@ ms.custom:
 localization_priority: Normal
 f1.keywords: NOCSH
 description: Informazioni sui passaggi di configurazione di Microsoft 365 necessari per configurare un sito di SharePoint per la collaborazione con gli utenti.
-ms.openlocfilehash: 4f4b87a02c3ff3a1a7997aee69e3e1e95e4b2ed5
-ms.sourcegitcommit: 8589323c1b4ab43aab30597ee66303b0a0eb71ed
+ms.openlocfilehash: dbbf84539c1bef239abc76e142922976902a01ed
+ms.sourcegitcommit: ae3aa7f29be16d08950cf23cad489bc069aa8617
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "48357995"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48409037"
 ---
 # <a name="collaborate-with-guests-in-a-site"></a>Collaborare con gli utenti guest a un sito
 
@@ -37,20 +37,20 @@ In questo video vengono illustrati i passaggi di configurazione descritti in que
 
 ## <a name="azure-external-collaboration-settings"></a>Impostazioni di collaborazione esterna di Azure
 
-La condivisione in Microsoft 365 è regolata al livello più alto dalle [impostazioni delle relazioni organizzative in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/external-identities/delegate-invitations). Se la condivisione Guest è disabilitata o limitata in Azure AD, queste verranno sostituite da tutte le impostazioni di condivisione configurate in Microsoft 365.
+La condivisione in Microsoft 365 è regolata al livello più alto dalle [impostazioni delle relazioni organizzative in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/external-identities/delegate-invitations). Se la condivisione Guest è disabilitata o limitata in Azure AD, questa impostazione sostituisce tutte le impostazioni di condivisione configurate in Microsoft 365.
 
 Controllare le impostazioni di collaborazione esterna per assicurarsi che la condivisione con gli ospiti non sia bloccata.
 
 ![Schermata della pagina impostazioni di collaborazione esterna di Azure Active Directory](../media/azure-ad-organizational-relationships-settings.png)
 
-Per impostare le impostazioni di collaborazione esterna:
+Per impostare le impostazioni di collaborazione esterna
 
-
-1. Accedere a Microsoft Azure all'indirizzo [https://portal.azure.com](https://portal.azure.com) .
+1. Accedere a Azure Active Directory all'indirizzo [https://aad.portal.azure.com](https://aad.portal.azure.com) .
 2. Nel riquadro di spostamento a sinistra, fare clic su **Azure Active Directory**.
-3. Selezionare **identità esterne** e fare clic su **impostazioni di collaborazione esterna**.
-4. Nel riquadro **Impostazioni invito Guest** , verificare che **gli amministratori e gli utenti del ruolo invitato ospite possano invitare** e che **i membri possano invitare** siano entrambi impostati su **Sì**.
-5. Se si apportano modifiche, fare clic su **Salva**.
+3. Fare clic su **identità esterne**.
+4. Nella schermata **inizia** , nel riquadro di spostamento a sinistra, fare clic su **impostazioni di collaborazione esterna**.
+5. Verificare che **gli amministratori e gli utenti del ruolo invitato ospite possano invitare** e che **i membri possano invitare** siano entrambi impostati su **Sì**.
+6. Se si apportano modifiche, fare clic su **Salva**.
 
 Prendere nota delle impostazioni nella sezione **vincoli di collaborazione** . Verificare che i domini degli utenti con cui si desidera collaborare non siano bloccati.
 
@@ -65,17 +65,16 @@ I siti di SharePoint moderni utilizzano i gruppi di Microsoft 365 per controllar
 Per impostare Microsoft 365 groups Guest Settings
 
 1. Nell'interfaccia di amministrazione di Microsoft 365, nel riquadro di spostamento a sinistra, espandere **Impostazioni**.
-2. Fare clic su **servizi & componenti**aggiuntivi.
+2. Fare clic su **Impostazioni organizzazione**.
 3. Nell'elenco, fare clic su **gruppi Microsoft 365**.
-4. Verificare che i membri del gruppo Consenti al di **fuori dell'organizzazione accedano al contenuto del gruppo** e che i proprietari del **gruppo aggiungano persone all'esterno dell'organizzazione ai gruppi di caselle di** controllo siano entrambe controllate.
+4. Assicurarsi che i **proprietari di Let Group aggiungano le persone all'esterno dell'organizzazione ai gruppi di Microsoft 365 come ospiti** e che i **membri del gruppo di accesso al contenuto del** gruppo siano entrambi controllati.
 5. Se sono state apportate modifiche, fare clic su **Salva modifiche**.
-
 
 ## <a name="sharepoint-organization-level-sharing-settings"></a>Impostazioni di condivisione a livello di organizzazione di SharePoint
 
 Affinché gli utenti dispongano dell'accesso ai siti di SharePoint, le impostazioni di condivisione a livello dell'organizzazione di SharePoint devono consentire la condivisione con gli utenti.
 
-Le impostazioni a livello di organizzazione determinano le impostazioni disponibili per i singoli siti. Le impostazioni del sito non possono essere più permissive rispetto alle impostazioni a livello di organizzazione.
+Le impostazioni a livello di organizzazione determinano le impostazioni che saranno disponibili per i singoli siti. Le impostazioni del sito non possono essere più permissive rispetto alle impostazioni a livello di organizzazione.
 
 Se si desidera consentire la condivisione di file e cartelle non autenticata, scegliere **nessuno**. Se si desidera garantire che tutti gli utenti esterni all'organizzazione debbano eseguire l'autenticazione, scegliere **clienti nuovi ed esistenti**. Scegliere l'impostazione più permissiva che sarà necessaria per qualsiasi sito dell'organizzazione.
 
@@ -84,8 +83,8 @@ Se si desidera consentire la condivisione di file e cartelle non autenticata, sc
 
 Per impostare le impostazioni di condivisione a livello di organizzazione di SharePoint
 
-1. Nell'interfaccia di amministrazione di Microsoft 365, nella barra di spostamento a sinistra, in interfaccia di **Amministrazione**, fare clic su **SharePoint**.
-2. Nella parte sinistra dell'interfaccia di amministrazione di SharePoint, fare clic su **Condivisione**.
+1. Nell'interfaccia di amministrazione di Microsoft 365, nel riquadro di spostamento a sinistra, in interfaccia di **Amministrazione**, fare clic su **SharePoint**.
+2. Nell'interfaccia di amministrazione di SharePoint, nel riquadro di spostamento a sinistra, in **criteri**fare clic su **condivisione**.
 3. Assicurarsi che la condivisione esterna per SharePoint sia impostata su **tutti gli utenti** o **gli ospiti nuovi e esistenti**.
 4. Se si apportano modifiche, fare clic su **Salva**.
 
@@ -98,7 +97,7 @@ Per creare un sito
 2. Fare clic su **Crea**.
 3. Fare clic su **sito del team**.
 4. Digitare il nome di un sito e immettere un nome per il proprietario del gruppo (proprietario del sito).
-5. In **Impostazioni avanzate**scegliere se si desidera che sia un sito pubblico o privato.
+5. In **Impostazioni avanzate**scegliere se si desidera che il sito sia pubblico o privato.
 6. Fare clic su **Avanti**.
 7. Fare clic su **Fine**.
 
@@ -114,8 +113,8 @@ Si noti che il sito non può essere condiviso con persone non autenticate (impos
 
 Per impostare le impostazioni di condivisione a livello di sito
 1. Nella parte sinistra dell'interfaccia di amministrazione di SharePoint, espandere **Siti** e fare clic su **Siti attivi**.
-2. Selezionare il sito appena creato.
-3. Sulla barra multifunzione fare clic su **Condivisione**.
+2. Selezionare il sito che si desidera condividere.
+3. Fare clic su... e fare clic su **condivisione**.
 4. Verificare che la condivisione sia impostata su **tutti gli utenti** o **gli ospiti nuovi e esistenti**.
 5. Se si apportano modifiche, fare clic su **Salva**.
 
@@ -125,17 +124,19 @@ Le impostazioni di condivisione Guest sono ora configurate, quindi è possibile 
 
 Per invitare gli utenti interni a un gruppo
 1. Passare al sito in cui si desidera aggiungere gli utenti.
-2. Fare clic su **membri** in alto a destra.
+2. Fare clic su collegamento **membri** nell'angolo in alto a destra che indica il numero di membri.
 3. Fare clic su **Aggiungi membri**.
 4. Digitare i nomi o gli indirizzi di posta elettronica degli utenti che si desidera invitare al sito e quindi fare clic su **Salva**.
 
-Gli utenti guest non possono essere aggiunti dal sito. È necessario aggiungerli utilizzando Outlook sul Web.
+Gli utenti guest non possono essere aggiunti dal sito. È necessario aggiungerli utilizzando Outlook sul Web. Pertanto, come prerequisito per aggiungere e invitare gli utenti a un gruppo, fare clic sull'URL del sito nella colonna **URL**  per passare alla pagina specifica del sito. Da questa pagina, fare clic sull'icona di **avvio delle app** e selezionare **Outlook**. Questa è la schermata dalla quale è possibile invitare gli utenti a un gruppo, per la procedura descritta di seguito.
 
 Per invitare gli ospiti a un gruppo
-1. In **gruppi**, in Outlook sul Web, fare clic sul gruppo in cui si desidera aggiungere i membri.
-2. Aprire la scheda contatto di gruppo e quindi, in **altre opzioni** (...), fare clic su **Aggiungi membri**.
-3. Digitare gli indirizzi di posta elettronica degli utenti che si desidera invitare e quindi fare clic su **Aggiungi**.
-4. Scegliere **Chiudi**.
+1. In **gruppi**fare clic sul gruppo a cui si desidera invitare gli utenti.
+2. Aprire la scheda contatto di gruppo, fare clic su collegamenti **membri** in alto a destra, ovvero il collegamento che indica il numero di membri.
+3. fare clic su **Aggiungi membri**.
+4. Digitare gli indirizzi di posta elettronica degli utenti che si desidera invitare e quindi fare clic su **Aggiungi**.
+5. Scegliere **Chiudi**.
+Tenere presente che è necessario fare clic su **Chiudi** solo se non si è il proprietario del gruppo e, di conseguenza, non è consentito aggiungere l'ospite all'interno del gruppo. In tal caso, la richiesta di aggiungere l'ospite nel gruppo viene trasferita al proprietario del gruppo per l'approvazione.
 
 ## <a name="see-also"></a>Vedere anche
 

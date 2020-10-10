@@ -15,14 +15,16 @@ author: lomayor
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
+- m365-initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: d9650811a264992c20a1ed88939e06694373b25c
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 5d620a1c30466553470eec49d4f5ff8242d060bd
+ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48197704"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48412599"
 ---
 # <a name="work-with-advanced-hunting-query-results"></a>Utilizzare i risultati della query di ricerca avanzata
 

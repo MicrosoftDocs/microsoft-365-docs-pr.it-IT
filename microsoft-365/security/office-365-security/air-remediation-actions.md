@@ -13,17 +13,19 @@ localization_priority: Normal
 search.appverid:
 - MET150
 - MOE150
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
+- m365-initiative-defender-office365
 description: Informazioni sulle azioni di correzione successive all'analisi automatizzata in Microsoft Defender per Office 365.
 ms.date: 09/29/2020
 ms.custom:
 - air
-ms.openlocfilehash: 6ddfb2cb9597d1ddd955f7ec39e197a780b29881
-ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
+ms.openlocfilehash: a868b5e55bcc46c7134494172d05fb4a34075a0c
+ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48327676"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48411939"
 ---
 # <a name="remediation-actions-following-automated-investigation-in-microsoft-defender-for-office-365"></a>Azioni di correzione successive all'analisi automatizzata in Microsoft Defender per Office 365
 

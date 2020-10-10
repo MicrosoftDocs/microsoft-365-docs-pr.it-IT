@@ -1,5 +1,5 @@
 ---
-title: Criteri per gli invii degli utenti
+title: Criteri per gli invii da parte degli utenti
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -14,15 +14,16 @@ search.appverid:
 - MET150
 ms.collection:
 - M365-security-compliance
+- m365-initiative-defender-office365
 description: Gli amministratori possono imparare a configurare una cassetta postale per raccogliere messaggi di posta indesiderata e di phishing segnalati dagli utenti.
-ms.openlocfilehash: bffa70184a9307869ce6170ba1ea05ae3f084ccf
-ms.sourcegitcommit: 3a0accd616ca94d6ba7f50e502552b45e9661a95
+ms.openlocfilehash: 8347463a4c3f41b6b6333d35c5b4207d1b94aabe
+ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "48350282"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48412563"
 ---
-# <a name="user-submissions-policies"></a>Criteri per gli invii degli utenti
+# <a name="user-submissions-policies"></a>Criteri per gli invii da parte degli utenti
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -60,7 +61,7 @@ Utilizzare gli articoli seguenti per configurare i prerequisiti richiesti in mod
 
 Dopo aver verificato che la cassetta postale soddisfi tutti i prerequisiti applicabili, [utilizzare il Centro sicurezza & Compliance per configurare la cassetta postale per gli invii degli utenti](#use-the-security--compliance-center-to-configure-the-user-submissions-mailbox) (in questo articolo).
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare?
+## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare
 
 - Aprire il Centro sicurezza e conformità in <https://protection.office.com/>. Per passare direttamente alla pagina degli **invii degli utenti** , utilizzare <https://protection.office.com/userSubmissionsReportMessage> .
 

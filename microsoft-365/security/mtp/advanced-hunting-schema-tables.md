@@ -15,14 +15,16 @@ author: lomayor
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
+- m365-initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: f22a046dc5289405aaf59086ed535016cc46bae9
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 916f86cf9536101bdbb2650bf7381682203d343f
+ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48197668"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48412431"
 ---
 # <a name="understand-the-advanced-hunting-schema"></a>Comprendere schema di ricerca avanzato
 
@@ -75,7 +77,7 @@ Di seguito sono elencate tutte le tabelle dello schema. Ogni nome di tabella rim
 | **[EmailEvents](advanced-hunting-emailevents-table.md)** | Microsoft 365 eventi di posta elettronica, inclusi gli eventi di blocco e recapito della posta elettronica |
 | **[EmailPostDeliveryEvents](advanced-hunting-emailpostdeliveryevents-table.md)** | Eventi di sicurezza che si verificano dopo il recapito, dopo che Microsoft 365 ha inviato i messaggi di posta elettronica alla cassetta postale del destinatario |
 | **[EmailUrlInfo](advanced-hunting-emailurlinfo-table.md)** | Informazioni sugli URL nei messaggi di posta elettronica |
-| **[IdentityDirectoryEvents](advanced-hunting-identitydirectoryevents-table.md)** | Eventi che coinvolgono un controller di dominio locale che esegue Active Directory (AD). In questa tabella viene illustrata una serie di eventi relativi all'identità e gli eventi di sistema nel controller di dominio. |
+| **[IdentityDirectoryEvents](advanced-hunting-identitydirectoryevents-table.md)** | Eventi che coinvolgono un controller di dominio locale che esegue Active Directory (AD). Questa tabella copre una serie di eventi correlati all'identità, nonché eventi di sistema sul controller di dominio. |
 | **[IdentityInfo](advanced-hunting-identityinfo-table.md)** | Informazioni sugli account provenienti da origini diverse, tra cui Azure Active Directory |
 | **[IdentityLogonEvents](advanced-hunting-identitylogonevents-table.md)** | Eventi di autenticazione in Active Directory e nei Microsoft Online Services |
 | **[IdentityQueryEvents](advanced-hunting-identityqueryevents-table.md)** | Attività di query eseguite su oggetti di Active Directory, ad esempio utenti, gruppi, dispositivi e domini |

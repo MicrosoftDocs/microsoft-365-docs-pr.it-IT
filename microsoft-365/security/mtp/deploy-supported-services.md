@@ -14,17 +14,19 @@ author: lomayor
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
+- m365-initiative-m365-defender
 ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 73d807a37f1c85e9d79353334cac4208b86bbdc2
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 3a5db0b9709a9596ccd6560d7f2e546dd3753332
+ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48198886"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48413353"
 ---
 # <a name="deploy-supported-services"></a>Distribuire i servizi supportati
 

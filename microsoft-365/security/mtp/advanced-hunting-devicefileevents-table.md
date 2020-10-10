@@ -15,14 +15,16 @@ author: lomayor
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
+- m365-initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: e4534967ca6e9563f802cdf49385b46790d56932
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 2d1b8e871a4139a4e025313fe1bda724e87c9b6d
+ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48198190"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48412215"
 ---
 # <a name="devicefileevents"></a>DeviceFileEvents
 

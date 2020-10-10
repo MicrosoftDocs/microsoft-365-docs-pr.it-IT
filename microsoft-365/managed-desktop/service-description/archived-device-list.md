@@ -1,7 +1,7 @@
 ---
 title: Dispositivi archiviati da Microsoft Managed Desktop
 description: Dispositivi che si avvicinano alla pensione che è ancora possibile registrare, ma che avranno una durata di supporto ridotta
-keywords: Microsoft Managed Desktop, Microsoft 365, servizio, documentazione
+keywords: Microsoft Managed Desktop, Microsoft 365, servizi, documentazione
 ms.service: m365-md
 author: jaimeo
 f1.keywords:
@@ -11,12 +11,12 @@ ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: acdca0a70fb28b10f053da8f79b4e37c9c7632f5
-ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
+ms.openlocfilehash: 4bfda869972c5650a99395a5fd16c6ad7ddb4f11
+ms.sourcegitcommit: ae3aa7f29be16d08950cf23cad489bc069aa8617
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46529924"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48409025"
 ---
 # <a name="microsoft-managed-desktop-archived-devices"></a>Dispositivi archiviati da Microsoft Managed Desktop
 
@@ -42,13 +42,17 @@ Per essere registrato in Microsoft Managed Desktop, un dispositivo deve essere u
 | Dell Latitude 5490| 256 GB/Intel i5/8 GB di RAM | Telecamera IR obbligatoria | **Gen 9, 2023** |
 | Dell Latitude 7390 7390 2-in-1/7490 | 256 GB/Intel i5/8 GB di RAM   | Telecamera IR obbligatoria | **Gen 9, 2023** |
 |HP EliteBook 830/840/850 G5| 128 GB/Intel i5/8 GB di RAM | SKU con 5VS01AV, videocamera IR o sensore di impronte digitali necessario  | **Feb 15, 2023** |
+|HP EliteBook 830/840/850 G6| 128 GB/Intel i5/8 GB di RAM | SKU con 5VS01AV, videocamera IR o sensore di impronte digitali necessario  | **Nov 30, 2023** |
 |HP Elite X2 1013 G3| 256 GB/Intel i5/8 GB di RAM | SKU con 5VS03AV, videocamera IR necessaria |**14 maggio 2023** |
-|HP EliteBook X360 1030 G3| 256 GB/Intel i5/8 GB di RAM | SKU con 5VS01AV, videocamera IR necessaria |**14 maggio 2023** |
+|HP EliteBook X360 1030 G5| 256 GB/Intel i5/8 GB di RAM | SKU con 5VS01AV, videocamera IR necessaria |**14 maggio 2023** |
+|HP EliteBook X360 1030 G6| 256 GB/Intel i5/8 GB di RAM | SKU con 5VS01AV, videocamera IR necessaria |**Nov 30, 2023** |
 |HP EliteBook X360 1040 G5| 256 GB/Intel i5/8 GB di RAM | SKU con 5VS01AV, videocamera IR necessaria | **23 ottobre 2023** |
+|HP EliteBook X360 1040 G6| 256 GB/Intel i5/8 GB di RAM | SKU con 5VS01AV, videocamera IR necessaria | **Nov 30, 2023** |
 |HP ProBook X360 440 G1| 128 GB/Intel i3/8 GB di RAM | SKU con 5VS04AV, videocamera IR o lettore di impronte digitali necessario | **Giugno 6, 2023** |
 |HP EliteDesk 800 G4 DM | 128 GB/Intel i3/8 GB di RAM | SKU con 5VS04AV | **18 luglio 2023** |
 |HP EliteDesk 800 G4 SFF | 128 GB/Intel i3/8 GB di RAM | SKU con 5VS04AV | **18 luglio 2023** |
 |HP EliteOne 800 G4 23,8 in AIO |128 GB/Intel i3/8 GB di RAM |SKU con 5VS04AV| **18 luglio 2023** |
+|Workstation mobile HP ZBook 14U/15U G6 |256 GB/Intel i5/8 GB di RAM |SKU con 5VS04AV, videocamera IR necessaria| **Nov 30, 2023** |
 |Surface Book 2| 256 GB/Intel i5/8 GB di RAM | Nessuno | **Nov 16, 2022** |
 |Superficie andare| 128 GB/Intel 4415Y/8GB di RAM | Nessuno | **Aug 2, 2023** |
 |Laptop Surface| 256 GB/Intel i5/8 GB di RAM | Nessuno | **20 maggio 2022** |
