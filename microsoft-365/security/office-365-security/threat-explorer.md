@@ -18,12 +18,12 @@ ms.collection:
 - m365-initiative-defender-office365
 description: Informazioni sull'utilizzo di Esplora risorse e sui rilevamenti in tempo reale nel centro sicurezza e &amp; conformità per esaminare e rispondere alle minacce in modo efficace ed efficiente.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 20b13e177a69d981a4c6793d4810256e33158a35
-ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
+ms.openlocfilehash: ab691e88c8450e4f1ab898fe6a9d75d6682370a5
+ms.sourcegitcommit: 260c69fa31a898428d51cfdbd762c5f0213c403c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48414263"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "48417341"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>Esplora minacce e rilevamenti in tempo reale
 
@@ -48,6 +48,101 @@ Con questo rapporto, è possibile:
 - [Avviare un processo di analisi e risposta automatizzato da una visualizzazione in Explorer](#start-automated-investigation-and-response) (solo ATP piano 2)
 - ... [Esaminare messaggi di posta elettronica dannosi e altro ancora](#more-ways-to-use-explorer-or-real-time-detections)!
 
+## <a name="improvements-to-threat-hunting-experience-upcoming"></a>Miglioramenti all'esperienza di caccia alle minacce (imminente)
+
+### <a name="updated-threat-information-for-emails"></a>Informazioni aggiornate sulle minacce per i messaggi di posta elettronica
+
+Ci siamo concentrati sulla piattaforma e sui miglioramenti relativi alla qualità dei dati per aumentare l'accuratezza dei dati e la coerenza dei record. Questi set di aggiornamenti includono il consolidamento delle informazioni di pre-recapito e post-consegna (azione di esempio eseguita su un messaggio di posta elettronica come parte del processo ZAP) in un singolo record insieme a una ricchezza aggiunta come il verdetto di posta indesiderata, le minacce a livello di entità (ad esempio, l'URL era dannoso) e le posizioni 
+
+Dopo questi aggiornamenti, viene visualizzata una singola voce per ogni messaggio, indipendentemente dai diversi eventi successivi al recapito che hanno avuto luogo sul messaggio. Le azioni possono includere ZAP, la correzione manuale (che significa azione dell'amministratore), il recapito dinamico e così via. 
+
+Oltre a mostrare minacce di malware e phishing, è ora possibile visualizzare il verdetto di posta indesiderata associato a un messaggio di posta elettronica. All'interno del messaggio di posta elettronica, sarà possibile visualizzare tutte le minacce associate al messaggio di posta elettronica insieme alle tecnologie di rilevamento corrispondenti. Ogni messaggio di posta elettronica può avere 0, 1 o più minacce. Verranno visualizzate le minacce correnti nella sezione dettagli del riquadro a comparsa del messaggio di posta elettronica. Inoltre, per più minacce (ad esempio, un messaggio di posta elettronica con malware e phishing), il campo tecnologia di rilevamento darebbe la Threat-Detection mapping, il che significa che la tecnologia di rilevamento ha portato all'identificazione della minaccia.
+
+L'insieme delle tecnologie di rilevamento è stato aggiornato per includere nuovi metodi di rilevamento, nonché le tecnologie di rilevamento della posta indesiderata e aross tutte le diverse visualizzazioni di posta elettronica (malware, phishing, tutti i messaggi di posta elettronica), si avrà lo stesso insieme coerente di tecnologie di rilevamento per filtrare i risultati. 
+
+**Nota**: l'analisi del verdetto potrebbe non essere necessariamente legata alle entità. Ad esempio, un messaggio di posta elettronica potrebbe essere classificato come phishing o posta indesiderata, ma non ci sono URL che hanno un verdetto di phishing/spam stampato su di essi. Ciò è dovuto al fatto che i filtri valutano anche il contenuto e altri dettagli per un messaggio di posta elettronica, prima di assegnare un verdetto. 
+ 
+#### <a name="threats-in-urls"></a>Minacce negli URL
+
+Nella scheda riquadro a comparsa posta elettronica-> dettagli, è ora possibile visualizzare la minaccia specifica per un URL (la minaccia per un URL può essere malware, phishing, spam o None).
+
+![Minacce URL](../../media/URL_Threats.png)
+
+### <a name="updated-timeline-view-upcoming"></a>Visualizzazione sequenza temporale aggiornata (imminente)
+
+![Visualizzazione sequenza temporale aggiornata](../../media/Email_Timeline.png)
+
+Oltre a identificare tutti gli eventi di recapito e post-recapito, la visualizzazione sequenza temporale fornisce anche informazioni sulla minaccia identificata in quel momento per un sottoinsieme di questi eventi. Sono inoltre disponibili ulteriori informazioni sulle azioni aggiuntive, ad esempio ZAP, la correzione manuale, insieme al risultato di tale azione. La visualizzazione sequenza temporale contiene informazioni sul recapito originale e successivamente su tutti gli eventi successivi al recapito eseguiti su un messaggio di posta elettronica.
+
+-   Origine: può essere l'amministratore/sistema/utente in base all'origine dell'evento.
+-   Evento: include eventi di livello superiore, ad esempio il recapito originale, la correzione manuale, lo ZAP, gli invii e il recapito dinamico.
+-   Azione: in questo modo viene illustrata l'azione specifica che è stata eseguita come parte di un'azione ZAP o admin (ad esempio, soft delete).
+-   Minacce: copre le minacce (malware, phishing, posta indesiderata) identificate in quel momento.
+-   Result/Details: vengono illustrate altre informazioni sul risultato dell'azione, se è stato eseguito come parte dell'azione ZAP/admin.
+
+### <a name="original-and-latest-delivery-location"></a>Percorso di recapito originale e più recente
+
+Oggi, il percorso di recapito in superficie all'interno della griglia e-mail e del riquadro a comparsa. In futuro, il campo percorso di recapito verrà rinominato nel percorso di recapito originale. Inoltre, è stato introdotto anche un altro campo denominato ultima posizione di recapito. 
+
+Il percorso di recapito originale darebbe maggiori informazioni sul luogo in cui è stato recapitato un messaggio di posta elettronica. Il percorso di recapito più recente dovrebbe includere il percorso in cui un messaggio di posta elettronica potrebbe essere atterrato dopo azioni del sistema come ZAP o azioni amministrative come **Move to Deleted Items**. Il percorso di recapito più recente ha lo scopo di informare gli amministratori dell'ultima posizione nota del messaggio dopo il recapito o di qualsiasi azione di sistema/amministratore. In base alla progettazione, non include alcuna azione relativa all'utente finale sul messaggio di posta elettronica. Ad esempio, se un utente elimina un messaggio o sposta il messaggio in Archive/PST, il percorso del messaggio "recapito" non verrà aggiornato. Tuttavia, se un'azione del sistema ha aggiornato la posizione (ad esempio, ZAP risultante in un messaggio di posta elettronica che si sposta in quarantena), è possibile visualizzare il percorso di recapito più recente in quarantena. 
+
+![Posizioni di recapito aggiornate](../../media/Updated_Delivery_Location.png)
+
+**Nota**: esistono alcuni casi in cui il percorso di recapito e l'azione di recapito possono mostrare ' Unknown ' come valore:
+
+- Potrebbe essere visualizzato il percorso di recapito come recapitato e il percorso di recapito come sconosciuto. Questo accade quando il messaggio è stato recapitato, ma una regola di posta in arrivo ha spostato il messaggio in una cartella predefinita (bozza, archivio e così via) anziché nelle cartelle posta in arrivo o posta indesiderata. 
+
+- Il percorso di recapito più recente può essere sconosciuto se si tenta di eseguire un'operazione di amministratore/sistema (ad esempio, ZAP, azione di amministratore), ma il messaggio non viene trovato. In genere, l'azione si verifica dopo lo spostamento o l'eliminazione del messaggio da parte dell'utente. In questi casi, verificare la colonna Result/Details nella visualizzazione sequenza temporale. Cercare il messaggio: il messaggio è stato spostato o eliminato dall'utente.
+
+![Posizioni di recapito per la sequenza temporale](../../media/Updated_Timeline_Delivery_Location.png)
+
+### <a name="additional-actions"></a>Azioni aggiuntive 
+
+Altre azioni consistono nelle azioni che sono state applicate dopo il recapito del messaggio di posta elettronica e possono includere ZAP, correzione manuale (azione intrapresa da un ADMI; n e.g., soft delete), recapito dinamico e rielaborati (un messaggio di posta elettronica è stato rilevato con effetto retroattivo come valido). 
+
+> [!NOTE]
+>
+> - Come parte di questa modifica, il valore rimosso da ZAP correntemente emerso nel filtro azione di recapito sta per essere eliminato. È possibile eseguire la ricerca di tutti i messaggi di posta elettronica con il tentativo ZAP tramite le azioni aggiuntive.
+>
+> -Saranno disponibili nuovi campi e valori per le tecnologie di rilevamento e altre azioni (in particolare per gli scenari di ZAP). Valutare le query salvate esistenti e le query registrate per assicurarsi che funzionino con i nuovi valori. 
+
+![Additional_Actions](../../media/Additional_Actions.png)
+
+### <a name="system-overrides"></a>Sostituzioni del sistema 
+
+Le sostituzioni di sistema sono un metodo di esecuzione di eccezioni per il percorso di recapito previsto di un messaggio, sovrascrivendo il percorso di recapito fornito dal sistema, in base alle minacce e agli altri rilevamenti identificati dallo stack di filtraggio. È possibile impostare le sostituzioni del sistema tramite il criterio tenant o utente per recapitare il messaggio come suggerito dal criterio. Gli override sono utili per identificare qualsiasi recapito involontario di messaggi dannosi a causa di interruzioni di configurazioni, ad esempio un criterio mittente sicuro molto ampio impostato da un utente. Questi valori di sostituzione possono essere:
+
+- Consentito dai criteri utente: questo è il momento in cui un utente consente domini o mittenti creando criteri a livello di cassetta postale.
+- Bloccati dai criteri utente: questo è il momento in cui un utente blocca domini o mittenti creando criteri a livello di cassetta postale.
+- Consentito dai criteri org: quando i team di sicurezza dell'organizzazione hanno impostato i criteri o le regole del flusso di posta di Exchange (note anche come regole di trasporto) per consentire a mittenti e domini per gli utenti dell'organizzazione. Può trattarsi di un gruppo di utenti o dell'intera organizzazione.
+- Bloccato dai criteri org: quando i team di sicurezza dell'organizzazione hanno impostato i criteri o le regole del flusso di posta per bloccare mittenti, domini, lingue dei messaggi o IP di origine per gli utenti dell'organizzazione. Può anche essere utilizzato per un gruppo di utenti o per l'intera organizzazione.
+- Estensione di file bloccata da criteri org: questo è il momento in cui l'estensione di un tipo di file viene bloccata dai team di sicurezza di un'organizzazione tramite le impostazioni dei criteri antimalware. Questi valori verranno ora visualizzati nei dettagli della posta elettronica per facilitare le indagini. I team di secops possono inoltre filtrare le estensioni di file bloccate utilizzando la funzionalità di filtraggio RTF.
+
+![System_Overrides](../../media/System_Overrides.png)
+
+![System_Overrides_Grid](../../media/System_Overrides_Grid.png)
+
+### <a name="improvements-around-url-and-clicks-experience"></a>Miglioramenti relativi all'utilizzo di URL e clic
+
+Il set di miglioramenti incentrati sui dati relativi ai clic su URL e URL include:
+
+-   Visualizzazione di un URL con clic completo (compresi i parametri di query che fanno parte dell'URL) nella sezione clic nel riquadro a comparsa URL. Attualmente viene mostrato il dominio e il percorso dell'URL nella barra del titolo. Le informazioni vengono estese per visualizzare l'URL completo.
+-   Correzioni tra i filtri URL (URL e URL, dominio e percorso URL): sono stati apportati aggiornamenti per la ricerca di messaggi che contengono un verdetto URL/clic. Come parte di ciò, è stato abilitato il supporto per le ricerche agnostiche del protocollo (ovvero è possibile cercare direttamente un URL senza http). Per impostazione predefinita, la ricerca URL esegue il mapping a http, a meno che non sia specificato in modo esplicito. Ad esempio:
+
+  a.    Eseguire una ricerca con e senza il `http://` prefisso nei campi "URL", "URL domain" e "URL Domain and path". Questo comportamento è coerente e deve mostrare lo stesso risultato.
+  b.    Cercare il `https://` prefisso in "URL". Se non è presente, `http://` viene utilizzato il prefisso.
+  c.     `/` all'inizio e alla fine del "percorso URL", "dominio URL", i campi "URL Domain and path" vengono ignorati. `/` alla fine del campo "URL" viene ignorato. 
+
+### <a name="phish-confidence-level"></a>Livello di confidenza phishing
+
+Il livello di sicurezza di phishing consente di identificare il grado di attendibilità, con cui un messaggio di posta elettronica è stato categorizzato come phishing. I due valori possibili sono High e Normal. Nelle fasi iniziali, questo filtro sarà disponibile solo nella visualizzazione phishing di Esplora minacce.
+
+![Phish_Confidence_Level](../../media/Phish_Confidence_Level.png)
+
+### <a name="zap-url-signal"></a>Segnale URL ZAP 
+
+Utilizzato in genere per gli scenari di avviso di ZAP phishing in cui un messaggio di posta elettronica identificato come phishing e rimosso dopo il recapito. Viene utilizzato per connettere l'avviso con i risultati corrispondenti in Esplora risorse. Si tratta di uno dei IOCs per l'avviso. 
+
 ## <a name="experience-improvements-to-threat-explorer-and-real-time-detections"></a>Miglioramenti dell'esperienza in Esplora minacce e rilevamenti di Real-Time
 
 Nell'ambito del miglioramento del processo di ricerca, sono stati apportati alcuni aggiornamenti a Threat Explorer e ai rilevamenti di Real-Time. Si tratta di miglioramenti ' Experience ', con l'obiettivo di rendere l'esperienza di caccia più coerente. Queste modifiche sono descritte di seguito:
@@ -59,13 +154,14 @@ Nell'ambito del miglioramento del processo di ricerca, sono stati apportati alcu
 
 ### <a name="timezone-improvements"></a>Miglioramenti del fuso orario
 
-Verrà mostrato il fuso orario per i record di posta elettronica all'interno del portale, nonché per i dati esportati. Il fuso orario sarà visibile tra le esperienze come la griglia di posta elettronica, i dettagli a comparsa, la sequenza temporale e i messaggi di posta elettronica simili, in modo che il fuso orario del set di risultati sia chiaro per l'utente.
+Verrà visualizzato il fuso orario per i record di posta elettronica all'interno del portale, nonché per i dati esportati. Il fuso orario sarà visibile tra le esperienze come la griglia di posta elettronica, i dettagli a comparsa, la sequenza temporale e i messaggi di posta elettronica simili, in modo che il fuso orario del set di risultati sia chiaro per l'utente.
 
 ![Visualizzazione del fuso orario in Esplora risorse](../../media/TimezoneImprovements.png)
 
 ### <a name="update-in-the-refresh-process"></a>Aggiornamento nel processo di aggiornamento
 
 Sono stati segnalati commenti e suggerimenti relativi alla confusione con l'aggiornamento automatico (ad esempio, per la data, non appena si modifica la data, la pagina viene aggiornata) e l'aggiornamento manuale (per altri filtri). Analogamente, la rimozione dei filtri porta all'aggiornamento automatico, in questo modo le situazioni in cui la modifica dei diversi filtri durante la modifica della query possono causare esperienze di ricerca incoerenti. Per risolvere questo passaggio, si passa a un meccanismo di filtraggio manuale.
+
 Da un punto di vista dell'esperienza, l'utente può applicare e rimuovere i diversi filtri (dall'insieme di filtri e la data) e premere il pulsante Aggiorna per filtrare i risultati dopo aver terminato la query. Il pulsante Aggiorna è stato anche aggiornato per definirlo chiaramente sullo schermo. Sono state aggiornate anche le descrizioni comandi e la documentazione del prodotto in questa modifica.
 
 ![Fare clic su Aggiorna per filtrare i risultati](../../media/ManualRefresh.png)

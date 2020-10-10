@@ -26,12 +26,12 @@ search.appverid:
 - ZWD160
 ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: In questo articolo, gli amministratori possono ottenere informazioni sulla protezione dei collegamenti sicuri in Office 365 Advanced Threat Protection (ATP) per proteggere la propria organizzazione dal phishing e da altri attacchi che utilizzano URL dannosi.
-ms.openlocfilehash: c933ce48483f0263650d0af2994023dfcb24fadf
-ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
+ms.openlocfilehash: 7b10a941d63fd654a61c6d6ec78869f4bafb3edd
+ms.sourcegitcommit: 260c69fa31a898428d51cfdbd762c5f0213c403c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48414119"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "48417265"
 ---
 # <a name="safe-links-in-office-365-atp"></a>Collegamenti sicuri in Office 365 ATP
 
@@ -150,7 +150,7 @@ A livello elevato, ecco come funziona la protezione dei collegamenti sicuri sugl
 ## <a name="safe-links-settings-for-microsoft-teams"></a>Impostazioni dei collegamenti sicuri per Microsoft Teams
 
 > [!IMPORTANT]
-> A marzo 2020, questa funzionalità è in anteprima ed è disponibile solo per i membri del Microsoft teams Technology Adoption Program (TAP).
+> A marzo 2020, questa funzionalità è in anteprima ed è disponibile solo per i membri del Microsoft teams Technology Adoption Program (TAP). Per informazioni sulla pianificazione dei rilasci, vedere la Guida di [orientamento di Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap?rtc=1&filters=&searchterms=Safe%2CLinks%2CProtection%2Cfor%2CMicrosoft%2CTeams).
 
 È possibile abilitare o disabilitare la protezione dei collegamenti sicuri per Microsoft Teams nei criteri collegamenti sicuri. In particolare, è possibile utilizzare l'impostazione **selezionare l'azione per gli URL sconosciuti o potenzialmente dannosi all'interno di Microsoft teams** . Il valore consigliato è **on**.
 

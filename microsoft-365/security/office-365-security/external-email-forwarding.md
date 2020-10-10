@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: .
-ms.openlocfilehash: f729aa816caf8fb07499037ee27fbfc37b7205b3
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: c0a3849d330b508630eb60c7ee24cd8b498a32b8
+ms.sourcegitcommit: 260c69fa31a898428d51cfdbd762c5f0213c403c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48202880"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "48417228"
 ---
 # <a name="configuring-external-email-forwarding-in-office-365"></a>Configurazione dell'inoltro della posta elettronica esterno in Office 365
 
@@ -28,7 +28,7 @@ ms.locfileid: "48202880"
 
 L'inoltro esterno è controllato dal *criterio di protezione dalla posta indesiderata in uscita* e dall'ambito agli utenti in base all'impostazione configurata. Attualmente sono supportate tre impostazioni:
 
-- **Automatico** – in questa modalità, il sistema è responsabile di decidere se un messaggio inoltrato è consentito o meno.  Questa è la modalità predefinita e in questa modalità il sistema bloccherà l'inoltro esterno automatico.
+- **Automatico** – questo è controllato dal sistema: consente il filtraggio della posta indesiderata in uscita per controllare l'inoltro automatico esterno della posta elettronica. Questa è l'impostazione predefinita.
 
 - **On** – l'inoltro automatico esterno è consentito e non è limitato.
 
@@ -37,7 +37,7 @@ L'inoltro esterno è controllato dal *criterio di protezione dalla posta indesid
 Per ulteriori informazioni su come configurare queste impostazioni, vedere Configurare il filtro per la [posta indesiderata in uscita in EOP](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-the-outbound-spam-policy?view=o365-worldwide&preserve-view=true) .
 
 > [!NOTE]
-> La disattivazione dell'inoltro automatico Dsable anche le regole di posta in arrivo che reindirizzano i messaggi agli indirizzi esterni.
+> La disabilitazione dell'inoltro automatico disattiverà anche le regole di posta in arrivo che reindirizzano i messaggi agli indirizzi esterni.
 
 ## <a name="controlling-external-email-forwarding"></a>Controllo dell'inoltro della posta elettronica esterno
 

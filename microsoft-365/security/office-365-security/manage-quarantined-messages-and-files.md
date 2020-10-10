@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Gli amministratori possono imparare a visualizzare e gestire i messaggi in quarantena per tutti gli utenti in Exchange Online Protection (EOP). Gli amministratori nelle organizzazioni con Office 365 Advanced Threat Protection (Office 365 ATP) possono anche gestire i file in quarantena in SharePoint Online, OneDrive for business e Microsoft teams.
-ms.openlocfilehash: 1969a282d5d083886b9ad5a8aae54896ea9b1fc1
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 7e9b49e7e7a90f5271a65bb26cecdd1a7ce2ab84
+ms.sourcegitcommit: 260c69fa31a898428d51cfdbd762c5f0213c403c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48202424"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "48417215"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-admin-in-eop"></a>Gestire i messaggi e i file messi in quarantena come amministratore in EOP
 
@@ -65,25 +65,15 @@ Gli amministratori nelle organizzazioni con Office 365 Advance Threat Protection
 3. È possibile ordinare i risultati facendo clic su un'intestazione di colonna disponibile. Fare clic su **Modifica colonne** per visualizzare un massimo di sette colonne. I valori predefiniti sono contrassegnati da un asterisco (<sup>\*</sup>):
 
    - **Ricevuto**<sup>\*</sup>
-
    - **Mittente**<sup>\*</sup>
-
    - **Oggetto**<sup>\*</sup>
-
    - **Motivo della quarantena**<sup>\*</sup>
-
    - **Rilasciato?**<sup>\*</sup>
-
    - **Tipo di criterio**<sup>\*</sup>
-
    - **Destinatario**
-
    - **ID messaggio**
-
    - **Nome criterio**
-
    - **Dimensioni**
-
    - **Direzione**
 
    Al termine, fare clic su **Salva** o fare clic su **Imposta su valore predefinito**.
@@ -91,29 +81,19 @@ Gli amministratori nelle organizzazioni con Office 365 Advance Threat Protection
 4. Per filtrare i risultati, selezionare **Filtro**. I filtri disponibili sono:
 
    - **Ora di scadenza**: filtrare i messaggi in base alla scadenza dalla quarantena:
-
      - **Oggi**
-
      - **Prossimi 2 giorni**
-
      - **Prossimi 7 giorni**
-
      - **Personalizzato**: immettere una **data di inizio** e una **data di fine**.
 
    - **Ora ricezione**: immettere una **data di inizio** e una **data di fine**.
 
    - **Motivo della quarantena**:
-
      - **Criterio**: il messaggio corrisponde alle condizioni di una regola del flusso di posta (nota anche come regola di trasporto).
-
      - **Invio in blocco**
-
-     - **Phishing**
-
+     - **Phishing**: il verdetto del filtro di posta indesiderata è la **posta elettronica di phishing** o la protezione anti-phishing messa in quarantena del messaggio ([spoofing](set-up-anti-phishing-policies.md#spoof-settings) o [rappresentazione](set-up-anti-phishing-policies.md#impersonation-settings-in-atp-anti-phishing-policies)).
      - **Malware**
-
      - **Posta indesiderata**
-
      - **Phishing ad alta sicurezza**
 
    - **Destinatario di posta elettronica**: tutti gli utenti o solo i messaggi inviati all'utente. Gli utenti finali possono gestire solo i messaggi in quarantena inviati.
@@ -175,11 +155,8 @@ Dopo aver selezionato un messaggio, sono disponibili diverse opzioni per le oper
   - **Segnalare i messaggi a Microsoft per l'analisi**: è selezionata per impostazione predefinita e segnala il messaggio in quarantena erroneamente a Microsoft come falso positivo. Se il messaggio è stato messo in quarantena come posta indesiderata, rinfusa, phishing o contenente malware, il messaggio viene segnalato anche al team di analisi di posta indesiderata di Microsoft. A seconda dell'analisi, è possibile modificare le regole di filtro per la posta indesiderata a livello di servizio per consentire il passaggio del messaggio.
 
   - Scegliere una delle opzioni seguenti:
-
     - **Rilasciare messaggi a tutti i destinatari**
-
     - **Rilasciare messaggi a destinatari specifici**
-
     - **Rilasciare messaggi ad altri utenti**
 
   Al termine, fare clic su **Rilascia messaggio**.
@@ -195,7 +172,6 @@ Dopo aver selezionato un messaggio, sono disponibili diverse opzioni per le oper
 - **Anteprima messaggio**: nel riquadro a comparsa visualizzato, scegliere una delle seguenti opzioni:
 
   - **Visualizzazione origine**: mostra la versione HTML del corpo del messaggio con tutti i collegamenti disabilitati.
-  
   - **Visualizzazione testo**: Mostra il corpo del messaggio in testo normale.
 
 - **Rimuovi dalla quarantena**: dopo aver fatto clic su **Sì** nell'avviso che viene visualizzato, il messaggio viene eliminato immediatamente senza essere inviato ai destinatari originali.
@@ -245,37 +221,23 @@ Nelle organizzazioni con ATP, gli amministratori possono gestire i file in quara
 3. È possibile ordinare i risultati facendo clic su un'intestazione di colonna disponibile. Fare clic su **Modifica colonne** per visualizzare un massimo di sette colonne. Le colonne predefinite sono contrassegnate con un asterisco ( <sup>\*</sup> ):
 
    - **Utente:**<sup>\*</sup>
-
    - **Percorso**<sup>\*</sup>
-
    - **Nome file**<sup>\*</sup>
-
    - **URL file**<sup>\*</sup>
-
    - **Dimensioni file**<sup>\*</sup>
-
    - **Scadenza**<sup>\*</sup>
-
    - **Rilasciato?**<sup>\*</sup>
-
    - **Rilevato da**
-
    - **Modificato dal tempo**
 
 4. Per filtrare i risultati, selezionare **Filtro**. I filtri disponibili sono:
 
    - **Ora di scadenza**: filtrare i messaggi in base alla scadenza dalla quarantena:
-
      - **Oggi**
-
      - **Prossimi 2 giorni**
-
      - **Prossimi 7 giorni**
-
      - Un intervallo di data/ora personalizzato.
-
    - **Tempo ricevuto**
-
    - **Motivo della quarantena**: l'unico valore disponibile è **malware**.
 
 Dopo aver individuato uno specifico file in quarantena, selezionare il file per visualizzarne i dettagli e per intervenire su di esso (ad esempio, visualizzare, rilasciare, scaricare o eliminare il messaggio).
@@ -293,29 +255,17 @@ Dopo aver individuato uno specifico file in quarantena, selezionare il file per 
 Quando si seleziona un file nell'elenco, nel riquadro a comparsa dei **Dettagli** vengono visualizzati i dettagli dei file seguenti:
 
 - **FileName**
-
 - **URL file**: URL che definisce il percorso del file, ad esempio in SharePoint Online.
-
 - **Contenuto dannoso rilevato** La data e l'ora in cui il file è stato messo in quarantena.
-
 - **Scade**: la data in cui il file verrà eliminato dalla quarantena.
-
 - **Rilevato da**: ATP (Advanced Threat Protection) o dal motore antimalware di Microsoft.
-
 - **Rilasciato?**
-
 - **Nome malware**
-
 - **ID documento**: identificatore univoco per il documento.
-
 - **Dimensioni file**: in KILOBYTE (KB).
-
 - **Organizzazione** ID univoco dell'organizzazione.
-
 - **Data ultima modifica**
-
 - **Modified by**: l'ultimo utente che ha modificato il file.
-
 - **Secure Hash Algorithm 256-bit (SHA-256) valore**: è possibile utilizzare questo valore hash per identificare il file in altri archivi di reputazione o in altre posizioni nell'ambiente.
 
 ### <a name="take-action-on-quarantined-files"></a>Eseguire un'azione sui file in quarantena
@@ -323,9 +273,7 @@ Quando si seleziona un file nell'elenco, nel riquadro a comparsa dei **Dettagli*
 Quando si seleziona un file nell'elenco, è possibile eseguire le azioni seguenti nel file nel riquadro a comparsa dei **Dettagli** :
 
 - **Rilasciare file**: selezionare (impostazione predefinita) o deselezionare **i file di report in Microsoft per l'analisi**e quindi fare clic su **rilascia file**.
-
 - **Scaricare il file**
-
 - **Rimuovi file dalla quarantena**
 
 Se i file non vengono rilasciati o rimossi, verranno eliminati dopo la scadenza del periodo di conservazione della quarantena predefinito.
@@ -335,7 +283,6 @@ Se i file non vengono rilasciati o rimossi, verranno eliminati dopo la scadenza 
 Quando si selezionano più file in quarantena nell'elenco (fino a 100), viene visualizzato il riquadro a comparsa **azioni in blocco** in cui è possibile eseguire le operazioni seguenti:
 
 - **Rilasciare i file**
-
 - **Elimina file**: dopo aver fatto clic su **Sì** nell'avviso che viene visualizzato, i file vengono eliminati immediatamente.
 
 1. Se si utilizza un account aziendale o dell'Istituto di istruzione con privilegi di amministratore globale (o ruoli di sicurezza & conformità corretti) nell'organizzazione, accedere e [passare al centro sicurezza & conformità](../../compliance/go-to-the-securitycompliance-center.md).

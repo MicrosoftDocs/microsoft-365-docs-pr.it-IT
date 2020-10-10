@@ -17,15 +17,15 @@ ms.collection:
 - M365-security-compliance
 - m365-initiative-defender-office365
 ms.topic: conceptual
-ms.date: 09/10/2020
+ms.date: 10/09/2020
 ms.custom: seo-marvel-apr2020
 ms.reviewer: vippand
-ms.openlocfilehash: 5bbbda8b2fb13351d0b86d1670910cbaa52ad8cb
-ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
+ms.openlocfilehash: ab987652082c93a82fa5bcbd4667f26291c6e9d7
+ms.sourcegitcommit: 260c69fa31a898428d51cfdbd762c5f0213c403c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48413259"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "48417285"
 ---
 # <a name="whats-new-in-office-365-atp"></a>Novità di Office 365 ATP
 
@@ -47,7 +47,8 @@ In questo articolo vengono elencate le nuove funzionalità nell'ultima versione 
 - [Sostituisci manualmente i verdetti del filtro utilizzando l'elenco Consenti/blocca tenant](tenant-allow-block-list.md)
 - [Funzionalità estese in Esplora minacce, tra cui utenti di destinazione principali, regole di trasporto e connettori](threat-explorer.md#new-features-in-threat-explorer-and-real-time-detections) (Office 365 ATP Plan 2)
 - Le informazioni sulle superfici vengono ignorate in [Esplora minacce](threat-explorer.md) (la posta elettronica è stata consentita/bloccata dai criteri tenant/utente)
-- Minacce all'URL di emersione in [Esplora minacce](threat-explorer.md) (malware, phishing, posta indesiderata o nessuno) 
+- Minacce all'URL di emersione in [Esplora minacce](threat-explorer.md#threats-in-urls) (malware, phishing, posta indesiderata o nessuno) 
+- [Miglioramenti alla funzionalità di ricerca di Esplora minacce](threat-explorer.md#improvements-to-threat-hunting-experience-upcoming) con aggiornamenti su minacce, azioni aggiuntive, posizioni di recapito e visualizzazione sequenza temporale aggiornata
 
 ## <a name="julyaugust-2020"></a>Luglio/agosto 2020 
 

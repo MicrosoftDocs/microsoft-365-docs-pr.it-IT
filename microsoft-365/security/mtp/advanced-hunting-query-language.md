@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 - m365-initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: ffa5e6abf7fb1cb0f93fe1c233ef7e3f0b023faf
-ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
+ms.openlocfilehash: 35de1504d4d7ddd3512b6cc3e478b138c1f43c29
+ms.sourcegitcommit: a83acd5b9eeefd2e20e5bac916fe29d09fb53de9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48412623"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "48418122"
 ---
 # <a name="learn-the-advanced-hunting-query-language"></a>Scoprire il linguaggio delle query in Ricerca avanzata
 
@@ -34,7 +34,7 @@ ms.locfileid: "48412623"
 **Si applica a:**
 - Microsoft Threat Protection
 
-Ricerca avanzata si basa sul [linguaggio delle query in Esplora dati](https://docs.microsoft.com/azure/kusto/query/). È possibile utilizzare la sintassi e gli operatori di Kusto per creare query che consentono di individuare le informazioni in uno [schema](advanced-hunting-schema-tables.md)specializzato. Per comprendere meglio questi concetti, eseguire la prima query.
+Ricerca avanzata si basa sul [linguaggio delle query in Esplora dati](https://docs.microsoft.com/azure/kusto/query/). È possibile utilizzare gli operatori e le istruzioni di Kusto per creare query che consentono di individuare le informazioni in uno [schema](advanced-hunting-schema-tables.md)specializzato. Per comprendere meglio questi concetti, eseguire la prima query.
 
 ## <a name="try-your-first-query"></a>Provare la prima query
 

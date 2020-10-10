@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 - m365-initiative-defender-office365
 description: Gli amministratori possono imparare a configurare una cassetta postale per raccogliere messaggi di posta indesiderata e di phishing segnalati dagli utenti.
-ms.openlocfilehash: 8347463a4c3f41b6b6333d35c5b4207d1b94aabe
-ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
+ms.openlocfilehash: ab7f25c456a9321977721113c1e98d67d1529feb
+ms.sourcegitcommit: 260c69fa31a898428d51cfdbd762c5f0213c403c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48412563"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "48417244"
 ---
 # <a name="user-submissions-policies"></a>Criteri per gli invii da parte degli utenti
 
@@ -47,17 +47,17 @@ La distribuzione di messaggi segnalati dall'utente a una cassetta postale person
 
 Utilizzare gli articoli seguenti per configurare i prerequisiti richiesti in modo che i messaggi segnalati dall'utente vadano alla cassetta postale personalizzata:
 
-- Ignorare il filtro antispam creando una regola del flusso di posta di Exchange per impostare il livello di probabilità di posta indesiderata. Vedere [utilizzo dell'interfaccia di amministrazione di Exchange per creare una regola del flusso di posta che imposta il livello SCL di un messaggio](https://docs.microsoft.com/microsoft-365/security/office-365-security/use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages?view=o365-worldwide#use-the-eac-to-create-a-mail-flow-rule-that-sets-the-scl-of-a-message) per impostare il livello SCL su **-1**.
+- Ignorare il filtro posta indesiderata nella cassetta postale personalizzata creando una regola del flusso di posta di Exchange per impostare il livello di probabilità di posta indesiderata Vedere [utilizzo dell'interfaccia di amministrazione di Exchange per creare una regola del flusso di posta che imposta il livello SCL di un messaggio](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md#use-the-eac-to-create-a-mail-flow-rule-that-sets-the-scl-of-a-message) per impostare il livello SCL su **-1**.
 
-- Disattivare l'analisi degli allegati per il malware. Use [set up (o Edit) un criterio di allegati sicuri ATP](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-atp-safe-attachments-policies?view=o365-worldwide#step-2-set-up-or-edit-an-atp-safe-attachments-policy) per creare un criterio di allegati sicuri con l'impostazione **off-Attachment non verrà analizzato per il malware** abilitato.
+- Disattivare l'analisi degli allegati per il malware nella cassetta postale personalizzata. Utilizzare i criteri per gli allegati [sicuri in Office 365 ATP](set-up-atp-safe-attachments-policies.md) per creare un criterio per gli allegati sicuri con l'opzione **disabilitata** per la **risposta malware sconosciuta per gli allegati sicuri**.
 
-- Disattiva l'analisi degli URL nei messaggi. Utilizzare i [criteri per i collegamenti sicuri ATP che si applicano a tutti i destinatari di posta elettronica specifici](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-atp-safe-links-policies?view=o365-worldwide#step-3-add-or-edit-atp-safe-links-policies-that-apply-to-all-or-specific-email-recipients) per creare un criterio per i collegamenti sicuri con **selezionare l'azione per gli URL potenzialmente dannosi sconosciuti nei messaggi** impostati su **disattivato**.
+- Disattivare l'analisi degli URL nei messaggi nella cassetta postale personalizzata. Utilizzare i criteri per i [collegamenti sicuri in Office 365 ATP](set-up-atp-safe-links-policies.md) per creare un criterio collegamenti sicuri con l'impostazione **disattivata** per **selezionare l'azione per gli URL potenzialmente dannosi sconosciuti nei messaggi**.
 
-- Creare un criterio antimalware per disattivare l'eliminazione automatica di malware zero-hour. Vedere [use the Security & Compliance Center to create anti-malware Policies](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-your-spam-filter-policies?view=o365-worldwide#use-the-security--compliance-center-to-create-anti-spam-policies) to set **malware zero-hour auto Purge** su **off**.
+- Creare un criterio antimalware per disattivare l'eliminazione automatica di malware zero-hour. Vedere [use the Security & Compliance Center to create anti-malware Policies](configure-your-spam-filter-policies.md#use-the-security--compliance-center-to-create-anti-spam-policies) to set **malware zero-hour auto Purge** su **off**.
 
-- Creare un criterio di filtro per la posta indesiderata per disabilitare lo Zap (zero-hour auto Purge) per la posta indesiderata e phishing ZAP. Per [creare criteri di protezione dalla posta indesiderata, vedere Use the Security & Compliance Center](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-your-spam-filter-policies?view=o365-worldwide#use-the-security--compliance-center-to-create-anti-spam-policies) e cancellare le caselle di controllo **su** per spam zap e phishing zap.
+- Creare un criterio di filtro per la posta indesiderata per disabilitare l'eliminazione automatica (ZAP) zero-hour per la posta indesiderata e il phishing nella cassetta postale personalizzata. Per [creare criteri di protezione dalla posta indesiderata, vedere Use the Security & Compliance Center](configure-your-spam-filter-policies.md#use-the-security--compliance-center-to-create-anti-spam-policies) e cancellare le caselle di controllo **su** per **spam zap** e **phishing zap**.
 
-- Disabilitare la regola di posta indesiderata. Utilizzare [Configura le impostazioni della posta indesiderata nelle cassette postali di Exchange Online](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-junk-email-settings-on-exo-mailboxes?view=o365-worldwide) per disabilitare la regola di posta indesidera Una volta disabilitata, EOP non è in grado di spostare i messaggi nella cartella posta indesiderata in base al messaggio di spostamento del verdetto del filtro di posta indesiderata nella **cartella posta indesiderata** o nella raccolta degli elenchi indirizzi
+- Disabilitare la regola di posta indesiderata nella cassetta postale personalizzata. Utilizzare [Configura le impostazioni della posta indesiderata nelle cassette postali di Exchange Online](configure-junk-email-settings-on-exo-mailboxes.md) per disabilitare la regola di posta indesidera Una volta disabilitata, EOP non è in grado di spostare i messaggi nella cartella posta indesiderata in base al messaggio di spostamento del verdetto del filtro di posta indesiderata nella **cartella posta indesiderata** o nella raccolta degli elenchi indirizzi
 
 Dopo aver verificato che la cassetta postale soddisfi tutti i prerequisiti applicabili, [utilizzare il Centro sicurezza & Compliance per configurare la cassetta postale per gli invii degli utenti](#use-the-security--compliance-center-to-configure-the-user-submissions-mailbox) (in questo articolo).
 
@@ -118,7 +118,7 @@ I messaggi inviati alle cassette postali personalizzate devono seguire un format
 
 `SafetyAPIAction|NetworkMessageId|SenderIp|FromAddress|(Message Subject)`
 
-Se SafetyAPIAction è uno dei valori integer seguenti:
+dove SafetyAPIAction è uno dei valori integer seguenti:
 
 - 1: posta indesiderata
 - 2: NotJunk

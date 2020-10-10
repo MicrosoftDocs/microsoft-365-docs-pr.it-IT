@@ -17,14 +17,15 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - M365-security-compliance
-- m365solution-evalutatemtp
+- m365solution-scenario
+- m365solution-pilotmtpproject
 ms.topic: conceptual
-ms.openlocfilehash: ec8e630c3669b3eb7af8cb012a0ca361f8c77f1e
-ms.sourcegitcommit: 9d8d071659e662c266b101377e24549963e43fef
+ms.openlocfilehash: 1a7b87432ce1eb16c29f462fb4865bfa5c5e2201
+ms.sourcegitcommit: a83acd5b9eeefd2e20e5bac916fe29d09fb53de9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "48368014"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "48418098"
 ---
 # <a name="closing-and-summarizing-your-microsoft-threat-protection-pilot"></a>Chiusura e ricapitolazione del pilota di Microsoft Threat Protection  
 
@@ -76,7 +77,7 @@ ms.locfileid: "48368014"
 
 Si è attualmente in fase di chiusura e di riepilogo.
 
-È stato appena simulato un attacco di solo memoria avanzato che ha eseguito il codice in remoto in un controller di dominio. Si è visto come Microsoft Defender ATP e Azure ATP rileva e segnala l'attività fraudolenta. Si è visto anche come gli avvisi provenienti da origini diverse vengono recapitati insieme ad altre informazioni contestuali in un singolo incidente nel portale del Centro sicurezza di Microsoft 365, consentendo agli analisti SOC di analizzare e intraprendere le azioni necessarie. Inoltre, è stata creata una query di ricerca avanzata che consente di identificare i messaggi di posta elettronica in ingresso in cui l'utente ha aperto o salvato l'allegato e ha creato il rilevamento in base a tale query.
+È stata appena eseguita una simulazione di attacco di solo memoria avanzata che ha eseguito il codice in remoto in un controller di dominio. Si è visto come Microsoft Defender ATP e Azure ATP individuano e creano avvisi su attività malevole fraudolente. Si è visto anche come gli avvisi provenienti da origini diverse vengono recapitati insieme ad altre informazioni contestuali in un singolo incidente nel portale del Centro sicurezza Microsoft 365. L'esperienza di tale integrazione consente agli analisti SOC di analizzare e intraprendere le azioni necessarie. Inoltre, è stata creata una query di ricerca avanzata che consente di identificare i messaggi di posta elettronica in ingresso in cui l'utente ha aperto o salvato l'allegato e ha creato il rilevamento in base a tale query.
 
 Dopo aver concluso tutti i test, è stata raggiunta la fine del processo.
 
@@ -86,9 +87,9 @@ L'output finale deve essere:
 - Un rapporto dettagliato dei risultati del progetto pilota
 - Una decisione su come procedere
 
-Tali informazioni devono essere presentate a entrambe le parti interessate interne (identificate durante la fase di [preparazione](https://docs.microsoft.com/microsoft-365/security/mtp/prepare-mtpeval) ) e ai contatti Microsoft. In questo modo, è possibile utilizzare eventuali commenti e suggerimenti per migliorare i prodotti e la documentazione.
+Presentare i rapporti dall'output finale sia delle parti interessate interne (identificate durante la fase di [preparazione](https://docs.microsoft.com/microsoft-365/security/mtp/prepare-mtpeval) ) che dei contatti Microsoft. Questo sforzo garantisce che eventuali commenti e suggerimenti possano essere utilizzati per migliorare i prodotti e la documentazione.
 
-Si spera che questa simulazione sia stata apprezzata e che sia incoraggiata a iniziare a implementare ciò che si è imparato.
+Si spera che questa simulazione sia stata molto apprezzata. Per ottenere il massimo dalla soluzione di sicurezza integrata, iniziare a implementare le operazioni apprese in scala maggiore nell'organizzazione.
 
 ## <a name="next-step"></a>Passaggio successivo
 Per ulteriori informazioni, vedere i pilastri di Microsoft Threat Protection tramite le seguenti guide interattive:

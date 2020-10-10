@@ -17,14 +17,15 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - M365-security-compliance
-- m365solution-evalutatemtp
+- m365solution-scenario
+- m365solution-pilotmtpproject
 ms.topic: conceptual
-ms.openlocfilehash: 7d1870d1b8972009bed657f476810ca011dc2621
-ms.sourcegitcommit: 9d8d071659e662c266b101377e24549963e43fef
+ms.openlocfilehash: e62b4ec0ee6c9d05321accf269406e8127019f5b
+ms.sourcegitcommit: a83acd5b9eeefd2e20e5bac916fe29d09fb53de9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "48367978"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "48418110"
 ---
 # <a name="planning-your-pilot-microsoft-threat-protection-project"></a>Pianificazione del progetto pilota di Microsoft Threat Protection 
 
@@ -119,7 +120,7 @@ I criteri di esito positivo sono infine il set di barre su misura rispetto a ci√
 
 Un modo per portare insieme tutti gli elementi del piano pu√≤ essere quello di creare una scorecard. Vedere una scorecard di esempio in basso:
 
-|**Use case**|**Requisiti**|**Requisiti di configurazione**|**Piano di testing**|**Risultato previsto**|**Stato del test**|**Punteggio**|**Note**|
+| Use case | Requisiti | Requisiti di configurazione | Piano di testing | Risultato previsto | Stato del test | Punteggio | Note |
 |:-------|:-------|:-------|:-------|:-------|:-------|:-------|:-------|
 |Gestione degli incidenti|-Protezione dalle minacce di Microsoft </br></br>-Azure ATP </br></br>-Microsoft Defender ATP </br></br>-Protezione delle app di Microsoft Cloud (facoltativa)|Per informazioni dettagliate, vedere i [prerequisiti](https://aka.ms/mtp-trial-lab) per la preparazione, l'installazione e la configurazione. |[Simula attacco](mtp-pilot-simulate.md) <br></br>[Esaminare l'evento Incident](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-simulate#investigate-an-incident) |Gli investigatori possono comprendere l'ambito e l'impatto dell'incidente e gestire l'evento imprevisto||||
 |AutoIR|-Protezione dalle minacce di Microsoft </br></br>-Azure ATP </br></br>-Microsoft Defender ATP |Per informazioni dettagliate, vedere i [prerequisiti](https://aka.ms/mtp-trial-lab) per la preparazione, l'installazione e la configurazione. <br>Abilitare AutoIR  |[Simula attacco](mtp-pilot-simulate.md) <br></br>[Analisi automatizzata](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-simulate.md#automated-investigation-and-remediation) |Gli avvisi e gli eventi non consentiti vengono corretti automaticamente da Microsoft Threat Protection||||

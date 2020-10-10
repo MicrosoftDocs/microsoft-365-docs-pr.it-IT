@@ -17,12 +17,12 @@ ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
 ms.collection:
 - M365-security-compliance
 description: Gli amministratori possono ottenere informazioni su come visualizzare, creare, modificare ed eliminare i criteri per i collegamenti sicuri e le impostazioni dei collegamenti sicuri globali in Office 365 Advanced Threat Protection (ATP).
-ms.openlocfilehash: b6b013364fc763450ac8bef0d06bd2fad8d55daa
-ms.sourcegitcommit: 3a0accd616ca94d6ba7f50e502552b45e9661a95
+ms.openlocfilehash: cf60820297401de92781a48f22f70d1f503e3097
+ms.sourcegitcommit: 260c69fa31a898428d51cfdbd762c5f0213c403c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "48350720"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "48417257"
 ---
 # <a name="set-up-safe-links-policies-in-office-365-atp"></a>Configurare i criteri Collegamenti sicuri in Office 365 ATP
 
@@ -53,7 +53,7 @@ In PowerShell di Exchange Online o in EOP PowerShell autonomo i criteri e la reg
 > [!NOTE]
 > È possibile configurare le impostazioni globali per la protezione di collegamenti sicuri **all'esterno** dei criteri collegamenti sicuri. Per istruzioni, vedere [Configure Global Settings for Safe Links in Office 365 ATP](configure-global-settings-for-safe-links.md).
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare?
+## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare
 
 - Aprire il Centro sicurezza e conformità in <https://protection.office.com/>. Per accedere direttamente alla pagina **collegamenti sicuri di ATP** , utilizzare <https://protection.office.com/safelinksv2> .
 
@@ -88,9 +88,9 @@ La creazione di un criterio collegamenti sicuri personalizzato nel centro sicure
 
 4. Nella pagina **Impostazioni** che viene visualizzata, configurare le seguenti impostazioni:
 
-   - **Selezionare l'azione per gli URL potenzialmente dannosi sconosciuti nei messaggi**: selezionare **attivato.**
+   - **Selezionare l'azione per gli URL potenzialmente dannosi sconosciuti nei messaggi**: selezionare Attiva per abilitare la protezione dei collegamenti sicuri per i collegamenti nei **messaggi di posta** elettronica.
 
-   - **Selezionare l'azione per gli URL potenzialmente dannosi sconosciuti nei messaggi**: selezionare **attivato o lasciare selezionato il valore** predefinito. **Off**
+   - **Selezionare l'azione per gli URL sconosciuti o potenzialmente dannosi all'interno di Microsoft teams** **: selezionare Attiva** per abilitare la protezione dei collegamenti sicuri per i collegamenti nei team.
 
    - **Applicazione dell'analisi degli URL in tempo reale per collegamenti e collegamenti sospetti che puntano a file**: selezionare questa impostazione per abilitare l'analisi in tempo reale dei collegamenti nei messaggi di posta elettronica.
 
