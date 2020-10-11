@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Se è necessaria una soluzione di gestione dei record per Microsoft 365 che gestisca i contenuti di valore per obblighi legali, aziendali o normativi, di seguito vengono riportate alcune indicazioni utili per iniziare.
-ms.openlocfilehash: fd3e3368b7a23cb31a8df4953268576de2419f89
-ms.sourcegitcommit: b06a4f21da247edb03fdf6a01eafb7d4fb387b33
+ms.openlocfilehash: b7fc33e8a58857d839598cc74cdddc5247fd4a0d
+ms.sourcegitcommit: 7e8151ff74cb1cfc0dd59fadcac423c338415d77
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48333852"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "48390163"
 ---
 # <a name="get-started-with-records-management"></a>Introduzione alla gestione dei record
 
@@ -85,6 +85,6 @@ Usare la seguente tabella per eseguire il mapping dei requisiti aziendali relati
 
 Le etichette di conservazione usate per la gestione dei record hanno una presenza sull'interfaccia utente nelle app Microsoft 365. Assicurarsi di fornire indicazioni agli utenti finali e all'help desk prima di distribuire le etichette di conservazione alla rete di produzione.
 
-La documentazione per gli utenti finali più efficace è costituita dalle indicazioni e istruzioni personalizzate per i nomi e le configurazioni delle etichette di conservazione scelte. Tuttavia, è possibile utilizzare le seguenti risorse per le istruzioni di base:
+La documentazione per gli utenti finali più efficace è costituita dalle indicazioni e istruzioni personalizzate per i nomi e le configurazioni delle etichette di conservazione scelte. Per informazioni su un pacchetto di download da usare per formare gli utenti e guidare l'adozione, leggere il post seguente: [Formazione dell’utente finale sulle etichette di conservazione in M365 - Come velocizzare l'adozione](https://techcommunity.microsoft.com/t5/microsoft-security-and/end-user-training-for-retention-labels-in-m365-how-to-accelerate/ba-p/1750861).
 
-- [Applicare manualmente etichette di conservazione](create-apply-retention-labels.md#manually-apply-retention-labels)
+Nella sezione seguente sono disponibili anche le istruzioni per gli utenti di base: [Applicare manualmente le etichette di conservazione](create-apply-retention-labels.md#manually-apply-retention-labels).

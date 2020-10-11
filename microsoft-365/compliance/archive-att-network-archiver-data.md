@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Gli amministratori possono configurare un connettore di invio di messaggi per importare e archiviare i dati di SMS e MMS dalla rete su&T Mobile. In questo modo è possibile archiviare i dati provenienti da origini dati di terze parti in Microsoft 365 per poter utilizzare le funzionalità di conformità, come la conservazione legale, la ricerca di contenuto e i criteri di ritenzione per gestire i dati di terze parti dell'organizzazione.
-ms.openlocfilehash: 87974fd18f0e0a7c824e81231418ccf1c838b636
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 253acb23e9ac2cd5d97dfd2aaaedecec3d91a91f
+ms.sourcegitcommit: ae3aa7f29be16d08950cf23cad489bc069aa8617
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48200251"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48408974"
 ---
 # <a name="set-up-a-connector-to-archive-att-smsmms-data"></a>Configurare un connettore per l'archiviazione in&dati SMS/MMS di T
 
@@ -37,7 +37,7 @@ Nella panoramica seguente viene illustrato il processo di utilizzo di un connett
 
 3. Il connettore di rete AT&T creato nel centro conformità Microsoft 365 si connette al sito di telemessaggio ogni giorno e trasferisce i messaggi SMS e MMS dalle 24 ore precedenti a una posizione di archiviazione sicura di Azure nel cloud Microsoft. Il connettore converte anche il contenuto dei messaggi SMS e MMS in un formato di messaggio di posta elettronica.
 
-4. Il connettore importa gli elementi di comunicazione per dispositivi mobili nella cassetta postale di utenti specifici. Nella cassetta postale dell'utente viene creata una nuova cartella denominata **&T SMS/MMS Network Archiver** e gli elementi verranno importati. Il connettore esegue questo mapping utilizzando il valore della proprietà dell' *indirizzo di posta elettronica dell'utente* . Ogni messaggio SMS e MMS contiene questa proprietà, che viene popolata con l'indirizzo di posta elettronica di ogni partecipante del messaggio.
+4. Il connettore importa gli elementi di comunicazione per dispositivi mobili nella cassetta postale di utenti specifici. Nella cassetta postale dell'utente viene creata una nuova cartella denominata **&T SMS/MMS Network Archiver** e gli elementi vengono importati. Il connettore esegue questo mapping utilizzando il valore della proprietà dell' *indirizzo di posta elettronica dell'utente* . Ogni messaggio SMS e MMS contiene questa proprietà, che viene popolata con l'indirizzo di posta elettronica di ogni partecipante del messaggio.
  
    Oltre a eseguire il mapping automatico degli utenti utilizzando il valore della proprietà dell' *indirizzo di posta elettronica dell'utente* , è anche possibile definire un mapping personalizzato caricando un file di mapping CSV. Questo file di mapping contiene il numero di cellulare e l'indirizzo di posta elettronica Microsoft 365 corrispondente per gli utenti dell'organizzazione. Se si abilitano sia il mapping degli utenti automatici che il mapping personalizzato, per ogni elemento di posta elettronica, il connettore cerca innanzitutto il file di mapping personalizzato. Se non è disponibile un utente valido di Microsoft 365 che corrisponde a un numero di telefono cellulare, il connettore utilizza i valori della proprietà dell'indirizzo di posta elettronica dell'elemento che sta tentando di importare. Se il connettore non trova un utente valido di Microsoft 365 nel file di mapping personalizzato o nella proprietà dell'indirizzo di posta elettronica dell'elemento di posta elettronica, l'elemento non verrà importato.
 

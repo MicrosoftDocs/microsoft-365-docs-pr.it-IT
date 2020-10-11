@@ -13,12 +13,12 @@ metadata:
   ms.author: robmazz
   ms.date: 11/08/2019
   localization_priority: Priority
-  ms.openlocfilehash: ad215b1b5115faaaf82f01488aaf864f4b2de392
-  ms.sourcegitcommit: 3a0accd616ca94d6ba7f50e502552b45e9661a95
+  ms.openlocfilehash: 2b25d2b290723378f0e7ec286a0928add997ea39
+  ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
   ms.translationtype: HT
   ms.contentlocale: it-IT
-  ms.lasthandoff: 10/03/2020
-  ms.locfileid: "48350248"
+  ms.lasthandoff: 10/09/2020
+  ms.locfileid: "48398704"
 highlightedContent:
   items:
   - title: Supportare i lavoratori remoti
@@ -93,7 +93,7 @@ productDirectory:
       text: Distribuire Microsoft Defender Advanced Threat Protection
     - url: security/office-365-security/office-365-atp.md
       text: Distribuire Office 365 Advanced Threat Protection
-    - url: enterprise/microsoft-365-policies-configurations.md
+    - url: security/office-365-security/microsoft-365-policies-configurations.md
       text: Configurare la protezione delle identità e dell'accesso ai dispositivi
   - title: Proteggere le informazioni e ottemperare alle normative
     imageSrc: https://docs.microsoft.com/office/media/icons/certificate-blue.svg
@@ -247,9 +247,12 @@ additionalContent:
     - title: Utenti finali
       summary: Formazione, istruzioni e guide per gli utenti di Microsoft 365 sono disponibili su support.microsoft.com.
       url: https://support.microsoft.com/microsoft-365
-    - title: Docenti
-      summary: Informazioni su come liberare la creatività, promuovere il lavoro di squadra e vivere un'esperienza sicura e semplice con Microsoft 365 Education.
+    - title: Formazione IT
+      summary: Informazioni su come lasciare spazio alla creatività, promuovere il lavoro di squadra e vivere un'esperienza sicura e semplice con Microsoft 365 Education.
       url: /education
+    - title: Docenti
+      summary: Microsoft 365 Education offre formazione, procedure e contenuti di supporto per i docenti.
+      url: https://support.microsoft.com/education
     - title: Tech Community
       summary: Entra nella Tech Community di Microsoft 365 per condividere esperienze, partecipare e imparare dagli esperti.
       url: https://techcommunity.microsoft.com/t5/Microsoft-365/ct-p/microsoft365

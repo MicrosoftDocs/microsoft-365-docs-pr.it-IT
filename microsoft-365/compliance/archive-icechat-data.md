@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Gli amministratori possono configurare un connettore per importare e archiviare i dati dallo strumento ICE chat in Microsoft 365. In questo modo è possibile archiviare i dati provenienti da origini dati di terze parti in Microsoft 365 per poter utilizzare le funzionalità di conformità, come la conservazione legale, la ricerca di contenuto e i criteri di ritenzione per gestire i dati di terze parti dell'organizzazione.
-ms.openlocfilehash: 94a2d35b9bb8d3a0edae0eebeae53d7dd7b04af2
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: cd56e98aadc2b7328b733939ecc8951413309ba5
+ms.sourcegitcommit: ae3aa7f29be16d08950cf23cad489bc069aa8617
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48196369"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48408766"
 ---
 # <a name="set-up-a-connector-to-archive-ice-chat-data"></a>Configurare un connettore per archiviare i dati della chat di ghiaccio
 
@@ -37,7 +37,7 @@ Nella panoramica seguente viene illustrato il processo di utilizzo di un connett
 
 3. Il connettore ICE chat creato nel centro conformità Microsoft 365 si connette al sito ICE chat SFTP ogni giorno e trasferisce i messaggi di chat dalle 24 ore precedenti in una posizione di archiviazione sicura di Azure nel cloud Microsoft. Il connettore converte anche il contenuto di un massaggio chat in un formato di messaggio di posta elettronica.
 
-4. Il connettore importa gli elementi dei messaggi di chat nelle cassette postali di utenti specifici. Verrà creata una nuova cartella denominata **Ice chat** nelle cassette postali degli utenti e gli elementi del messaggio di chat verranno importati in tale cartella. Il connettore viene utilizzato utilizzando il valore delle proprietà *SenderEmail* e *RecipientEmail* . Ogni messaggio di chat contiene queste proprietà, che sono popolate con l'indirizzo di posta elettronica del mittente e di tutti i destinatari/partecipanti del messaggio di chat.
+4. Il connettore importa gli elementi dei messaggi di chat nelle cassette postali di utenti specifici. Viene creata una nuova cartella denominata **Ice chat** nelle cassette postali degli utenti e gli elementi del messaggio di chat vengono importati in tale cartella. Il connettore viene utilizzato utilizzando il valore delle proprietà *SenderEmail* e *RecipientEmail* . Ogni messaggio di chat contiene queste proprietà, che sono popolate con l'indirizzo di posta elettronica del mittente e di tutti i destinatari/partecipanti del messaggio di chat.
 
    Oltre al mapping automatico degli utenti che utilizza i valori della proprietà *SenderEmail* e *RecipientEmail* (il che significa che il connettore importa un messaggio di chat nella cassetta postale del mittente e nelle cassette postali di ogni destinatario), è anche possibile definire il mapping degli utenti personalizzato caricando un file di mapping CSV. Questo file di mapping contiene la chat di *ImId* e l'indirizzo della cassetta postale di Microsoft 365 corrispondente per ogni utente dell'organizzazione. Se si Abilita il mapping automatico degli utenti e si fornisce un file di mapping personalizzato, per ogni elemento di chat il connettore osserverà prima il file di mapping personalizzato. Se non è in grado di trovare un account utente valido di Microsoft 365 che corrisponde a una chat di ImId di un utente, il connettore utilizzerà le proprietà *SenderEmail* e *RecipientEmail* dell'elemento chat per importare l'elemento nelle cassette postali dei partecipanti alla chat. Se il connettore non trova un utente valido di Microsoft 365 nel file di mapping personalizzato o nelle proprietà *SenderEmail* e *RecipientEmail* , l'elemento non verrà importato.
 

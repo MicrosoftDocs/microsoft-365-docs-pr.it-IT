@@ -13,18 +13,18 @@ localization_priority: Priority
 ms.collection:
 - M365-security-compliance
 - SPO_Content
+- m365solution-mip
+- m365initiative-compliance
 search.appverid:
 - MOE150
 - MET150
-- m365solution-mip
-- m365initiative-compliance
 description: Pronti per iniziare a implementare le etichette di riservatezza per proteggere i dati dell'organizzazione, ma in dubbio su come iniziare? Leggere alcune guide pratiche utili per iniziare il percorso di implementazione dell'etichettatura.
-ms.openlocfilehash: 80149170fad47366178e9b899bbd5355c1d9e7db
-ms.sourcegitcommit: 0f48beaca3afa4df12d41847014975d50a4ebe7d
+ms.openlocfilehash: 12da7f3dd5e6d0d4650d19a8cd5f6f41b51f2558
+ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "48338407"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48398843"
 ---
 # <a name="get-started-with-sensitivity-labels"></a>Iniziare a usare le etichette di riservatezza
 
@@ -96,7 +96,9 @@ Tutti gli scenari richiedono di [Creare e configurare etichette di riservatezza 
 
 ## <a name="end-user-documentation-for-sensitivity-labels"></a>Documentazione per gli utenti finali sulle etichette di riservatezza
 
-La documentazione per gli utenti finali più efficace è costituita dalle indicazioni e dalle istruzioni personalizzate per i nomi e le configurazioni delle etichette scelti. Tuttavia, è possibile utilizzare le risorse seguenti per le istruzioni di base:
+La documentazione per gli utenti finali più efficace è costituita dalle indicazioni e dalle istruzioni personalizzate per i nomi e le configurazioni delle etichette scelti. Per informazioni su un pacchetto di download da usare per formare gli utenti e guidare l'adozione, leggere il post di blog seguente: [Formazione dell’utente finale sulle etichette di riservatezza in M365 - Come velocizzare l'adozione](https://techcommunity.microsoft.com/t5/microsoft-security-and/end-user-training-for-sensitivity-labels-in-m365-how-to/ba-p/1750880). 
+
+È possibile anche utilizzare le risorse seguenti per le istruzioni di base:
 
 - [Applicare le etichette di riservatezza ai file e ai messaggi di posta elettronica in Office](https://support.microsoft.com/it-IT/office/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)
     - [Problemi noti relativi alle etichette di riservatezza in Office](https://support.microsoft.com/it-IT/office/known-issues-with-sensitivity-labels-in-office-b169d687-2bbd-4e21-a440-7da1b2743edc)

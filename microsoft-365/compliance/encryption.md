@@ -17,13 +17,15 @@ ms.assetid: 0a322724-08ca-43db-b69a-afbfa20484cd
 ms.collection:
 - M365-security-compliance
 - Strat_O365_IP
+- m365solution-mip
+- m365initiative-compliance
 description: Con Office 365, il contenuto viene crittografato a riposo e in transito con la crittografia, i protocolli e le tecnologie più forti disponibili. Ottenere una panoramica della crittografia in Office 365.
-ms.openlocfilehash: d3977902dfc1ee726fac696ae8b9cc0470e7dda8
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: 28a5b55e63c3b66725aaa4a21e5dc750105c7c5a
+ms.sourcegitcommit: ae3aa7f29be16d08950cf23cad489bc069aa8617
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47306435"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48408596"
 ---
 # <a name="encryption"></a>Crittografia
 
@@ -69,6 +71,8 @@ Per altre informazioni, vedere le risorse seguenti:
 - [Set up Information Rights Management (IRM) in SharePoint admin center](set-up-irm-in-sp-admin-center.md)
 
 - [Crittografia del servizio con Customer Key in Office 365](customer-key-overview.md)
+
+- [Crittografia a chiave doppia per Microsoft 365](double-key-encryption.md)
 
 ## <a name="how-do-i"></a>Come si fa?
 

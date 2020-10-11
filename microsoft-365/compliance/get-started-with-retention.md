@@ -13,18 +13,18 @@ localization_priority: Priority
 ms.collection:
 - M365-security-compliance
 - SPO_Content
+- m365solution-mig
+- m365initiative-compliance
 search.appverid:
 - MOE150
 - MET150
-- m365solution-mig
-- m365initiative-compliance
 description: Pronti per iniziare a implementare i criteri e le etichette di riservatezza per gestire i dati della tua organizzazione, ma in dubbio su come iniziare? Leggere alcune indicazioni utili per iniziare.
-ms.openlocfilehash: 8ff6b05a675053009c3d42587e296ab240b2740d
-ms.sourcegitcommit: 0f48beaca3afa4df12d41847014975d50a4ebe7d
+ms.openlocfilehash: ea5ccdbe0267c2b894e6b69cf8b048925af1b409
+ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "48338385"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48399511"
 ---
 # <a name="get-started-with-retention-policies-and-retention-labels"></a>Informazioni sui criteri e sulle etichette di conservazione
 
@@ -81,6 +81,6 @@ Se si usano etichette di conservazione per la gestione dei record, esistono ulte
 
 Le etichette di conservazione, diversamente dai criteri di conservazione, hanno una presenza sull'interfaccia utente nelle app Microsoft 365. Assicurarsi di fornire indicazioni agli utenti finali e all'help desk prima di distribuire le etichette di conservazione alla rete di produzione.
 
-La documentazione per gli utenti finali più efficace è costituita dalle indicazioni e istruzioni personalizzate per i nomi e le configurazioni delle etichette di conservazione scelte. Tuttavia, è possibile utilizzare le seguenti risorse per le istruzioni di base:
+La documentazione per gli utenti finali più efficace è costituita dalle indicazioni e istruzioni personalizzate per i nomi e le configurazioni delle etichette di conservazione scelte. Per informazioni su un pacchetto di download da usare per formare gli utenti e guidare l'adozione, leggere il post di blog seguente: [Formazione dell’utente finale sulle etichette di conservazione in M365 - Come velocizzare l'adozione](https://techcommunity.microsoft.com/t5/microsoft-security-and/end-user-training-for-retention-labels-in-m365-how-to-accelerate/ba-p/1750861).
 
-- [Applicare manualmente etichette di conservazione](create-apply-retention-labels.md#manually-apply-retention-labels)
+Nella sezione seguente sono disponibili anche le istruzioni per gli utenti di base: [Applicare manualmente le etichette di conservazione](create-apply-retention-labels.md#manually-apply-retention-labels).
