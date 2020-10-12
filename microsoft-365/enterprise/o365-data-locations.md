@@ -16,22 +16,18 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 'Determinare dove sono archiviati i dati dei clienti Microsoft 365 in tutto il mondo '
-ms.openlocfilehash: 9f651cf2bf042a59efcfc9b76fd4349c839e7423
-ms.sourcegitcommit: 11d1044c6600b1f568b6dc8a53db9b07f2f0ad1c
+ms.openlocfilehash: da58b5e322190e61d72dc30ac6e1ea075e8f48b4
+ms.sourcegitcommit: 39af527404cb06e05c5aa4550dbec39aec133016
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/08/2020
-ms.locfileid: "48384766"
+ms.lasthandoff: 10/12/2020
+ms.locfileid: "48422630"
 ---
 <!--
 Note to new owner: Links in the Notes and FAQ sections need to be added from the source document at https://microsoft.sharepoint.com/:w:/t/golocalteam/Ebv6_Lw6FvNKucfA1eESTPUBy6O1MdvWEeT-L8O5a2HsIg?e=4%3AUfF1Uj&at=9&xsdata=MDR8MDF8am9zZXBoZEBtaWNyb3NvZnQuY29tfGM1ZTg1ODI0ZWRmMTRlN2E3MDkzMDhkNzgzNDMxYTczfDcyZjk4OGJmODZmMTQxYWY5MWFiMmQ3Y2QwMTFkYjQ3fDF8MHw2MzcxMjIxOTY1MzQ5NjM5NDl8VW5rbm93bnxUV0ZwYkdac2IzZDhleUpXSWpvaU1DNHdMakF3TURBaUxDSlFJam9pVjJsdU16SWlMQ0pCVGlJNklrMWhhV3dpTENKWFZDSTZNbjA9fC0x&sdata=MkxOUXhlZEdyR0I1SzBvd044d2hkd2RPaGN2RUpaS09jMkZTcys0dkZQRT0%3D
 -->
 
 # <a name="where-your-microsoft-365-customer-data-is-stored"></a>Dove sono archiviati i dati dei clienti Microsoft 365
-
->[!Note]
->Gli aggiornamenti di questo articolo sono controllati rigorosamente da Microsoft. Le modifiche dirette non saranno pubblicate. Se si vogliono fare suggerimementi si prega di inviarli come feedback alla fine dell'articolo.
->
 
 Le tabelle seguenti mostrano le posizioni in cui sono archiviati i dati inattivi dei clienti per i servizi di Microsoft 365 in tutte le aree geografiche del cloud globale di Microsoft. Espandere la posizione del paese in cui si trova l'indirizzo di fatturazione per scoprire dove verranno archiviati i dati dei clienti per ogni servizio.
 
@@ -109,10 +105,6 @@ Microsoft non memorizzerà i dati dei clienti di Intune all'esterno della posizi
   - Preview, beta o altri servizi provvisori, che in genere memorizzano i dati dei clienti negli Stati Uniti, ma possono archiviarli globalmente.
 
 Indipendentemente da ciò, Microsoft non controlla o limita l’area geografica da cui i clienti o gli utenti finali possono accedere ai dati dei clienti. 
-
-### <a name="can-i-edit-the-information-in-this-article"></a>Posso modificare le informazioni di questo articolo?
-
-No. Gli aggiornamenti di questo articolo sono controllati rigorosamente da Microsoft. Le modifiche dirette non saranno pubblicate. Se si vogliono fare suggerimementi si prega di inviarli come feedback alla fine dell'articolo.
 
 ## <a name="data-center-locations"></a>Posizioni dei data center
 
