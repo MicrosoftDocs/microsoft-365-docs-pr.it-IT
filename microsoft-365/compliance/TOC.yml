@@ -250,6 +250,8 @@
           href: how-dlp-works-between-admin-centers.md
         - name: Usare le etichette di riservatezza come condizione nei criteri di prevenzione della perdita dei dati (anteprima)
           href: dlp-sensitivity-label-as-condition.md
+        - name: Usare i criteri di prevenzione della perdita dei dati per le app cloud non Microsoft
+          href: dlp-use-policies-non-microsoft-cloud-apps.md
 - name: Gestire la governance delle informazioni
   items:
     - name: Gestire i propri dati
