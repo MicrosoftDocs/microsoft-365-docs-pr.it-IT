@@ -25,12 +25,12 @@ search.appverid:
 - MOE150
 ms.assetid: 44d96212-4d90-4027-9aa9-a95eddb367d1
 description: 'Seguire questo elenco di controllo per rimuovere un dipendente da Microsoft 365 e proteggere i dati. '
-ms.openlocfilehash: 252442c36fd29b816626adb71b3ae38ae66f1f64
-ms.sourcegitcommit: 25afc0c34edc7f8a5eb389d8c701175256c58ec8
+ms.openlocfilehash: e8f0b61fae3656b7d700857e3cc7167cc121a77f
+ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "47324525"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48445520"
 ---
 # <a name="remove-or-delete-a-former-employee"></a>Rimuovere o eliminare un ex dipendente
 
@@ -127,7 +127,7 @@ Il contenuto della cassetta postale dell'ex dipendente può essere salvato in du
 
 2. Inserire un blocco per controversia legale o un blocco sul posto nella cassetta postale prima di eliminare l'account utente. È una procedura molto più complessa rispetto alla prima opzione, ma fondamentale se: il piano aziendale include l'archiviazione e il blocco a fini giudiziari, è possibile che si apra una controversia e si ha un reparto IT tecnicamente solido.
 
-    Dopo aver convertito la cassetta postale in una "cassetta postale inattiva", gli amministratori, i responsabili della conformità o i manager dei record possono utilizzare gli strumenti di eDiscovery sul posto in Exchange Online per accedere ai contenuti e cercarli.
+    Dopo aver convertito la cassetta postale in una "cassetta postale inattiva", gli amministratori, i responsabili della conformità o i manager dei record possono utilizzare In-Place strumenti di eDiscovery in Exchange Online per accedere ai contenuti e cercarli.
 
     Le cassette postali inattive non possono ricevere posta elettronica e non vengono visualizzate nella rubrica condivisa o in altri elenchi dell'organizzazione.
 
@@ -140,7 +140,6 @@ In questo passaggio, l'indirizzo di posta elettronica dell'ex dipendente viene a
 - La creazione di una cassetta postale condivisa è la soluzione meno dispendiosa perché non è necessario acquistare una licenza **a condizione che la cassetta postale sia minore di 50 GB**. Se si superano i 50 GB è necessario assegnare una licenza.
 - Se si converte la cassetta postale in una cassetta postale condivisa, saranno disponibili anche tutti i vecchi messaggi di posta elettronica. Questa operazione può richiedere molto spazio.
 - Se si configura l'inoltro della posta elettronica, ora solo i  *nuovi*  messaggi di posta elettronica inviati all'ex dipendente vengono inviati al dipendente corrente.
-- L'inoltro della posta elettronica richiede che l'account dell'ex dipendente abbia una licenza.
 
  > [!IMPORTANT]
  > Se si sta configurando l'inoltro della posta elettronica o una cassetta postale condivisa, alla fine non eliminare l'account dell'ex dipendente. L'account deve restare valido per poter ancorare l'inoltro della posta elettronica o la cassetta postale condivisa.
@@ -150,8 +149,8 @@ In questo passaggio, l'indirizzo di posta elettronica dell'ex dipendente viene a
 1. Nell'interfaccia di amministrazione passare alla pagina **Utenti** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utenti attivi</a>.
 2. Selezionare il nome del dipendente che si desidera bloccare, quindi selezionare la scheda **posta** .
 3. In **inoltro della posta elettronica**, selezionare **Gestisci inoltro della posta elettronica**.
-4. Attivare **Inoltra tutta la posta elettronica inviata a questa cassetta postale**. Nella casella **Indirizzo di inoltro** digitare l'indirizzo di posta elettronica del dipendente corrente o della cassetta postale condivisa a cui verranno inviati i messaggi.
-5. Selezionare **Salva**.
+4. Attivare **Inoltra tutta la posta elettronica inviata a questa cassetta postale**. Nella casella **indirizzo di inoltro** Digitare l'indirizzo di posta elettronica del dipendente corrente che riceverà il messaggio di posta elettronica.
+5. Seleziona **Salva**.
 6. Ricordare di non eliminare l'account dell'ex dipendente.
 
 ::: moniker-end
@@ -166,7 +165,7 @@ In questo passaggio, l'indirizzo di posta elettronica dell'ex dipendente viene a
 
 4. Attivare **Inoltra tutta la posta elettronica inviata a questa cassetta postale**. Nella casella **Indirizzo di inoltro** digitare l'indirizzo di posta elettronica del dipendente corrente o della cassetta postale condivisa a cui verranno inviati i messaggi.
   
-5. Selezionare **Salva**.
+5. Seleziona **Salva**.
 
 6. Ricordare di non eliminare l'account dell'ex dipendente.
 
@@ -182,7 +181,7 @@ In questo passaggio, l'indirizzo di posta elettronica dell'ex dipendente viene a
 
 4. Attivare **Inoltra tutta la posta elettronica inviata a questa cassetta postale**. Nella casella **Indirizzo di inoltro** digitare l'indirizzo di posta elettronica del dipendente corrente o della cassetta postale condivisa a cui verranno inviati i messaggi.
   
-5. Selezionare **Salva**.
+5. Seleziona **Salva**.
 
 6. Ricordare di non eliminare l'account dell'ex dipendente.
 
@@ -196,7 +195,7 @@ Se l'ex dipendente aveva un telefono dell'organizzazione, è possibile utilizzar
 2. Nell'Interfaccia di amministrazione di Exchange passare a **Destinatari** \> **Cassette postali**.
 3. Selezionare l'utente e in **dispositivi mobili**selezionare **Visualizza dettagli**.
 4. Nella pagina **Dettagli dispositivo mobile** , in **dispositivi mobili**, selezionare il dispositivo mobile, selezionare **wipe data** ![ Wipe Device ](../../media/1c113a36-53cb-4974-884f-3ecd9535506e.png) , quindi selezionare **blocca**.
-5. Selezionare **Salva**.
+5. Seleziona **Salva**.
    > [!TIP]
    > Assicurarsi di rimuovere o disabilitare l'utente dal servizio BlackBerry Enterprise locale. Occorre anche disabilitare gli eventuali dispositivi Blackberry per l'utente. Per informazioni sui passaggi specifici da eseguire per disabilitare l'utente, vedere la guida all'amministrazione di Blackberry Business Cloud Services.
 
@@ -283,7 +282,7 @@ Quando si rimuove la licenza, tutti i dati dell'utente vengono conservati per 30
 2. Selezionare l'abbonamento da cui si desidera rimuovere le licenze.
 3. Nella pagina dei dettagli, selezionare **Rimuovi licenze**.
 4. Nel riquadro **Rimuovi licenze** , in nuova quantità, nella casella **Totale licenze** immettere il numero totale di licenze desiderate per la sottoscrizione. Ad esempio, se si dispone di 25 licenze e si desidera rimuoverne una, immettere 24.
-5. Selezionare **Salva**.
+5. Seleziona **Salva**.
 ::: moniker-end
 
 ::: moniker range="o365-germany"

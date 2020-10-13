@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: bookings
 localization_priority: Normal
 description: Domande frequenti su Microsoft bookings.
-ms.openlocfilehash: ee0de2d1412aa5ec38759a3a2512de05b9e02621
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: 40605cfc7e5d30e12cd34a463a76e8d9c324efc7
+ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47545717"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48445452"
 ---
 # <a name="microsoft-bookings-frequently-asked-questions"></a>Domande frequenti su Microsoft bookings
 
@@ -21,7 +21,7 @@ ms.locfileid: "47545717"
 
 ### <a name="what-is-microsoft-bookings"></a>Che cos'è Microsoft bookings?
 
-Microsoft Bookings è un'app Microsoft 365 che semplifica la pianificazione e la gestione degli appuntamenti. Bookings incudes un calendario di prenotazione basato sul Web e si integra con Outlook per ottimizzare il calendario del personale, offrendo ai clienti la possibilità di prenotare un'ora che funziona meglio per loro. I messaggi di posta elettronica di notifica automatici riducono no-show e le organizzazioni risparmiano tempo con una riduzione delle attività di pianificazione ripetitive. Bookings aiuta a condurre facilmente appuntamenti virtuali tramite Skype o Microsoft teams e consente di gestire la pianificazione quotidiana tramite l'app bookings in teams. Con la possibilità di personalizzare la funzionalità predefinita, le prenotazioni sono state progettate in modo da soddisfare le esigenze di più parti di qualsiasi organizzazione.
+Microsoft Bookings è un'app Microsoft 365 che semplifica la pianificazione e la gestione degli appuntamenti. Bookings include un calendario di prenotazione basato sul Web e si integra con Outlook per ottimizzare il calendario del personale, offrendo ai clienti la possibilità di prenotare un'ora in grado di funzionare al meglio. I messaggi di posta elettronica di notifica automatici riducono no-show e le organizzazioni risparmiano tempo con una riduzione delle attività di pianificazione ripetitive. Bookings aiuta a condurre facilmente appuntamenti virtuali tramite Skype o Microsoft teams e consente di gestire la pianificazione quotidiana tramite l'app bookings in teams. Con la possibilità di personalizzare la funzionalità predefinita, le prenotazioni sono state progettate in modo da soddisfare le esigenze di più parti di qualsiasi organizzazione.
 
 ### <a name="how-do-i-use-microsoft-bookings"></a>Come si utilizzano le prenotazioni Microsoft?
 
@@ -174,7 +174,7 @@ Un'impostazione denominata **Maximum lead time** determina il più lontano in an
 
 Tutti gli orari sono nel fuso orario di ufficio (il fuso orario locale) per impostazione predefinita. Questo significa che tutte le impostazioni configurate per un calendario delle prenotazioni, ad esempio le ore lavorative, verranno visualizzate nel fuso orario. La pagina Self-Service ha la possibilità di visualizzare tutti i tempi di appuntamenti nel fuso orario dell'utente finale, che può essere disattivato se lo si desidera.Se **sempre la visualizzazione delle fasce orarie nel fuso orario di ufficio** rimane deselezionata nella scheda pagina prenotazioni, gli utenti che visitano la pagina vedranno gli intervalli di tempo nei rispettivi fusi orari locali.
 
-:::image type="content" source="media/bookings-faq-region.png" alt-text="Impostazioni delle aree di prenotazione e del fuso orario":::
+:::image type="content" source="media/bookings-faq-region.png" alt-text="Pianificazione nelle prenotazioni":::
 
 Non è previsto l'impostazione del fuso orario per il personale nelle prenotazioni. Il fuso orario del personale e quindi l'orario di ufficio sarà nel fuso orario di ufficio.
 
@@ -202,7 +202,7 @@ Sì, è presente una funzionalità di prenotazioni di gruppo che consente a più
 
 Sì. È presente una casella di controllo nella scheda pagina di prenotazione nell'app Web: **richiedere l'esecuzione di un account di Microsoft 365 o di Office 365 da**parte dell'organizzazione. Se si seleziona questa casella di controllo, si limita l'accesso alle pagine in modalità self-service solo a quelle presenti all'interno del tenant. Il calendario delle prenotazioni che si trova all'interno dell'app Web per la creazione e la gestione può essere eseguito solo dagli utenti aggiunti come personale alla pagina con ruoli di amministratore o di visualizzatore.
 
-:::image type="content" source="media/bookings-faq-access-ctrl.png" alt-text="Controllo di accesso alle pagine di prenotazione nelle prenotazioni":::
+:::image type="content" source="media/bookings-faq-access-ctrl.png" alt-text="Pianificazione nelle prenotazioni":::
 
 ### <a name="how-frequently-does-the-home-page-update"></a>Con quale frequenza viene aggiornata la Home page?
 
@@ -214,7 +214,7 @@ La registrazione di un timeout all'interno dell'app Web bookings attiverà sempr
 
 ### <a name="can-bookings-calendars-be-cloned-or-duplicated-and-can-they-be-templatized-for-easy-scaling"></a>I calendari delle prenotazioni possono essere clonati o duplicati e possono essere templatized per semplificare la scalabilità?
 
-La possibilità di duplicare le pagine è attualmente disponibile tramite PowerShell. Il processo consiste nell'utilizzare l'API del grafico per ottenere i dettagli della cassetta postale e quindi utilizzare tali dettagli per creare una nuova cassetta postale. La documentazione API è [qui](https://docs.microsoft.com/graph/api/resources/booking-api-overview?view=graph-rest-beta).
+Il processo consiste nell'utilizzare l'API del grafico per ottenere i dettagli della cassetta postale e quindi utilizzare tali dettagli per creare una nuova cassetta postale. La documentazione API è [qui](https://docs.microsoft.com/graph/api/resources/booking-api-overview?view=graph-rest-beta).
 
 ### <a name="what-reporting-is-available-in-bookings"></a>Quali relazioni sono disponibili nelle prenotazioni?
 
@@ -250,7 +250,7 @@ Ogni calendario delle prenotazioni viene gestito in modo indipendente. Non esist
 
 L'accesso all'app Web bookings implica l'autenticazione tramite l'autenticazione di Azure Active Directory (AAD) normale. La pagina di prenotazione self-service può essere messa a disposizione di tutti gli utenti con il collegamento alla pagina Web. Tuttavia, quando è selezionata l'impostazione **Richiedi un account di microsoft 365 o Office 365 dall'organizzazione** per la Rubrica, la pagina viene limitata per essere utilizzata solo all'interno del tenant di Microsoft 365 (utilizzando l'autenticazione AAD).
 
-:::image type="content" source="media/bookings-faq-access-ctrl.png" alt-text="Controllo di accesso alle pagine di prenotazione nelle prenotazioni":::
+:::image type="content" source="media/bookings-faq-access-ctrl.png" alt-text="Pianificazione nelle prenotazioni":::
 
 ### <a name="does-customer-data-leave-the-production-system-for-any-reason"></a>I dati dei clienti lasciano il sistema di produzione per qualsiasi motivo?
 
@@ -316,7 +316,7 @@ Affinché le prenotazioni siano sincronizzate correttamente con i calendari dei 
 
    ![Immagine della schermata di condivisione del calendario con la visualizzazione possibile quando sono occupato abilitato](../media/bookings-view-busy.png)
 
-1. Scegliere **Fine**.
+1. Scegliere **Fatto**.
 
 ### <a name="we-cant-find-a-staff-member-in-our-organization"></a>Non è possibile trovare un membro del personale nell'organizzazione
 

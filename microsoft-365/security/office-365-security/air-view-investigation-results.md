@@ -15,15 +15,15 @@ search.appverid:
 - MOE150
 ms.collection:
 - M365-security-compliance
-- m365-initiative-defender-office365
+- m365initiative-defender-office365
 description: Durante e dopo un'analisi automatizzata in Microsoft 365, è possibile visualizzare i risultati e i risultati principali.
 ms.date: 09/29/2020
-ms.openlocfilehash: f3070cb0760cfa4405a7f6a7e20680c3e304275d
-ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
+ms.openlocfilehash: 18da168615ce7e570bcdc9149ac14fe72b8eda4f
+ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48412011"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48447060"
 ---
 # <a name="details-and-results-of-an-automated-investigation-in-microsoft-365"></a>Dettagli e risultati di un'indagine automatizzata in Microsoft 365
 

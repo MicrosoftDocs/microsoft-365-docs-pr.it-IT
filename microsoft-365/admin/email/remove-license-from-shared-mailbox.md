@@ -2,8 +2,8 @@
 title: Rimuovere una licenza da cassetta postale condivisa
 f1.keywords:
 - NOCSH
-ms.author: pebaum
-author: pebaum
+ms.author: sharik
+author: SKjerland
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -22,19 +22,19 @@ search.appverid:
 - MOE150
 ms.assetid: bb229ee9-e7be-4990-b3eb-354e75740496
 description: 'Rimuovere la licenza da una cassetta postale condivisa per assegnarla a un altro utente. '
-ms.openlocfilehash: 401b334efeccf6d7c4caca20be3cc9767b2df945
-ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
+ms.openlocfilehash: 43d32744afe42a8f244160ace20c1d989f501b28
+ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/31/2020
-ms.locfileid: "44432220"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48445496"
 ---
 # <a name="remove-a-license-from-a-shared-mailbox"></a>Rimuovere una licenza da una cassetta postale condivisa
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> L'interfaccia di amministrazione sta cambiando. Se alcuni dettagli non corrispondono a quelli presentati qui, vedere [Informazioni sulla nuova interfaccia di amministrazione di Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> L'interfaccia di amministrazione sta cambiando. Se alcuni dettagli non corrispondono a quelli presentati qui, vedere [Informazioni sulla nuova interfaccia di amministrazione di Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true).
 
 ::: moniker-end
 
@@ -72,14 +72,14 @@ Le cassette postali condivise in genere non richiedono una licenza. Seguire le i
 
  1. Nell'interfaccia di amministrazione passare alla pagina **Utenti** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Utenti attivi</a>.
 
-   > [!NOTE]
-   > È necessario rimuovere la licenza dalla pagina utenti attivi. Non è possibile rimuovere la licenza dalla pagina della cassetta postale condivisa perché le licenze sono impostazioni utente.
+    > [!NOTE]
+    > È necessario rimuovere la licenza dalla pagina utenti attivi. Non è possibile rimuovere la licenza dalla pagina della cassetta postale condivisa perché le licenze sono impostazioni utente.
 
 2. Selezionare la cassetta postale condivisa e quindi fare clic su **modifica** accanto a **licenze di prodotto**.
 
 3. Una pagina **licenze di prodotto** , impostare l'interruttore su **disattivato** per la licenza che si desidera rimuovere.
 
-4. Selezionare **Salva**.
+4. Seleziona **Salva**.
 
 5. Quando si torna alla pagina **utenti attivi** , lo stato della cassetta postale condivisa non verrà **concesso in licenza**.
 
@@ -91,14 +91,14 @@ Le cassette postali condivise in genere non richiedono una licenza. Seguire le i
 
  1. Nell'interfaccia di amministrazione passare alla pagina **Utenti** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Utenti attivi</a>.
 
-   > [!NOTE]
-   > È necessario rimuovere la licenza dalla pagina utenti attivi. Non è possibile rimuovere la licenza dalla pagina della cassetta postale condivisa perché le licenze sono impostazioni utente.
+    > [!NOTE]
+    > È necessario rimuovere la licenza dalla pagina utenti attivi. Non è possibile rimuovere la licenza dalla pagina della cassetta postale condivisa perché le licenze sono impostazioni utente.
 
 2. Selezionare la cassetta postale condivisa e quindi fare clic su **modifica** accanto a **licenze di prodotto**.
 
 3. Una pagina **licenze di prodotto** , impostare l'interruttore su **disattivato** per la licenza che si desidera rimuovere.
 
-4. Selezionare **Salva**.
+4. Seleziona **Salva**.
 
 5. Quando si torna alla pagina **utenti attivi** , lo stato della cassetta postale condivisa non verrà **concesso in licenza**.
 

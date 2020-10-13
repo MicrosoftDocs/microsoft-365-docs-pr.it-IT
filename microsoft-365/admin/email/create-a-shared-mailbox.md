@@ -2,9 +2,9 @@
 title: Creazione di una cassetta postale condivisa
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
-author: cmcatee-MSFT
-manager: mnirkhe
+ms.author: sharik
+author: SKjerland
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -22,17 +22,17 @@ search.appverid:
 - MOE150
 ms.assetid: 871a246d-3acd-4bba-948e-5de8be0544c9
 description: Creare una cassetta postale condivisa consente di affidare a più utenti all'interno dell'azienda la responsabilità di leggere e rispondere ai messaggi di posta elettronica inviati a un unico indirizzo.
-ms.openlocfilehash: 55bfb4a907436a2c3500e2c178990dca8fa9bfba
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: 2cef7c742407b291d392a73e72316e7feeba4197
+ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47306936"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48445640"
 ---
 # <a name="create-a-shared-mailbox"></a>Creare una cassetta postale condivisa 
 
 > [!NOTE]
-> Se l'organizzazione utilizza un ambiente Exchange ibrido, è necessario ricorrere all'interfaccia di amministrazione di Exchange per creare e gestire cassette postali condivise. Vedere [Creare cassette postali condivise nell'interfaccia di amministrazione di Exchange](https://docs.microsoft.com/Exchange/collaboration/shared-mailboxes/create-shared-mailboxes?view=exchserver-2019.)<br><br>
+> Se l'organizzazione utilizza un ambiente Exchange ibrido, è necessario ricorrere all'interfaccia di amministrazione di Exchange per creare e gestire cassette postali condivise. Vedere [Creare cassette postali condivise nell'interfaccia di amministrazione di Exchange](https://docs.microsoft.com/Exchange/collaboration/shared-mailboxes/create-shared-mailboxes?view=exchserver-2019&preserve-view=true.)<br><br>
 > Se non si è sicuri di dover creare una cassetta postale condivisa o un gruppo di Microsoft 365 per Outlook, vedere [Confrontare i gruppi](../create-groups/compare-groups.md) per indicazioni. Notare che al momento non è possibile eseguire la migrazione di una cassetta postale condivisa a un gruppo di Microsoft 365. Se si vuole ottenere questa possibilità, inviare commenti e suggerimenti [votando qui](https://go.microsoft.com/fwlink/?linkid=871518).
 
 Le cassette postali condivise consentono a un gruppo di persone di monitorare e inviare posta elettronica da un indirizzo di posta elettronica comune, come info@contoso.com. Quando un utente del gruppo risponde a un messaggio inviato alla cassetta postale condivisa, il messaggio di risposta sembrerà inviato dalla cassetta postale condivisa, non dal singolo utente.

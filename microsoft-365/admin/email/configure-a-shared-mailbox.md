@@ -1,10 +1,10 @@
 ---
-title: Configurare le impostazioni delle cassette postali condivise
+title: Configurare le impostazioni della cassetta postale condivisa
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
-author: cmcatee-MSFT
-manager: mnirkhe
+ms.author: sharik
+author: SKjerland
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -21,14 +21,14 @@ search.appverid:
 - MET150
 - MOE150
 description: Dopo aver creato una cassetta postale condivisa, è necessario configurare alcune impostazioni per gli utenti, ad esempio l'inoltro della posta elettronica e le risposte automatiche. Successivamente, potrebbe essere necessario modificare altre impostazioni, ad esempio il nome della cassetta postale o i membri.
-ms.openlocfilehash: 3bde856f4db80192f5ed058a18c7942aa6a724b2
-ms.sourcegitcommit: 9ea67fd2e02af760d4fb62e3d09c93b446173f9d
+ms.openlocfilehash: a007b3ca810bdfc00176e71a737a510230f18113
+ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "44739208"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48445676"
 ---
-# <a name="configure-shared-mailbox-settings"></a>Configurare le impostazioni delle cassette postali condivise
+# <a name="configure-shared-mailbox-settings"></a>Configurare le impostazioni della cassetta postale condivisa
 
 Dopo aver [creato una cassetta postale condivisa](create-a-shared-mailbox.md), è necessario configurare alcune impostazioni per gli utenti delle cassette postali, ad esempio l'inoltro della posta elettronica e le risposte automatiche. Successivamente, potrebbe essere necessario modificare altre impostazioni, ad esempio il nome della cassetta postale, i membri o le autorizzazioni per i membri. 
 
@@ -56,7 +56,7 @@ Dopo aver [creato una cassetta postale condivisa](create-a-shared-mailbox.md), �
 
 3. Immettere un nuovo nome o aggiungere un altro alias. Se si desidera modificare l'indirizzo di posta elettronica principale, la cassetta postale deve disporre di più di un alias di posta elettronica.
 
-4. Selezionare **Salva**.
+4. Seleziona **Salva**.
 
 ## <a name="forward-emails-that-are-sent-to-a-shared-mailbox"></a>Inoltrare messaggi di posta elettronica inviati a una cassetta postale condivisa
 
@@ -82,9 +82,9 @@ Non è necessario assegnare una licenza alla cassetta postale condivisa per inol
 
 2. Selezionare la cassetta postale condivisa che si desidera modificare, quindi selezionare modifica **inoltro della posta elettronica** \> **Edit**.
     
-3. Impostare l'interruttore **su**attivato e immettere un indirizzo di posta elettronica a cui inoltrare i messaggi. Può essere un qualsiasi indirizzo di posta elettronica valido. Per inoltrare a più indirizzi, è necessario [creare un gruppo di distribuzione](https://docs.microsoft.com/office365/admin/setup/create-distribution-lists?view=o365-worldwide) per gli indirizzi e quindi immettere il nome del gruppo in questa casella.
+3. Impostare l'interruttore **su**attivato e immettere un indirizzo di posta elettronica a cui inoltrare i messaggi. Può essere un qualsiasi indirizzo di posta elettronica valido. Per inoltrare a più indirizzi, è necessario [creare un gruppo di distribuzione](https://docs.microsoft.com/office365/admin/setup/create-distribution-lists) per gli indirizzi e quindi immettere il nome del gruppo in questa casella.
     
-4. Selezionare **Salva**.
+4. Seleziona **Salva**.
 
 ## <a name="send-automatic-replies-from-a-shared-mailbox"></a>Inviare risposte automatiche da una cassetta postale condivisa
 
@@ -114,7 +114,7 @@ Non è necessario assegnare una licenza alla cassetta postale condivisa per inol
 
 5. Se si desidera inviare una risposta *anche* alle persone esterne all'organizzazione, selezionare la casella di controllo, per cui si desidera ottenere la risposta e digitare il testo. Non è possibile inviare risposte solo a persone esterne all'organizzazione, escludendo quelle interne.
 
-6. Selezionare **Salva**.
+6. Seleziona **Salva**.
 
 ## <a name="allow-everyone-to-see-the-sent-email-the-replies"></a>Consentire a tutti di visualizzare la posta inviata (le risposte)
 
@@ -147,7 +147,7 @@ Se si desidera consentire a tutti di visualizzare il messaggio di posta elettron
 
 3. Impostare l'interruttore **su** attivato per tutte le app che si desidera siano in grado di utilizzare per accedere alla cassetta postale condivisa. Impostare l'interruttore su **disattivato** per tutte le applicazioni che non si desidera utilizzare. 
 
-4. Selezionare **Salva**.
+4. Seleziona **Salva**.
 
 
 ## <a name="put-a-shared-mailbox-on-litigation-hold"></a>Inserire una cassetta postale condivisa sul blocco per controversia legale
@@ -178,7 +178,7 @@ Per ulteriori informazioni sul blocco per controversia legale, vedere [creare un
 
 4. Facoltativamente, immettere una durata, una nota s relativa all'esenzione e un URL con ulteriori informazioni.  
 
-5. Selezionare **Salva**.
+5. Seleziona **Salva**.
 
 
 ## <a name="add-or-remove-members"></a>Aggiungere o rimuovere membri
@@ -263,9 +263,9 @@ Se si sceglie di non visualizzare la cassetta postale condivisa nell'elenco indi
 
 2. Selezionare la cassetta postale condivisa che si desidera modificare, quindi selezionare **Mostra in modifica elenco indirizzi globale** \> **Edit**.
 
-3. Impostare l'interruttore **su attivata** o **disattivata**. 
+3. Impostare l'interruttore **su attivata**  o **disattivata**. 
 
-4. Selezionare **Salva**.
+4. Seleziona **Salva**.
 
 > [!NOTE]
 > La disattivazione di una cassetta postale condivisa dall'elenco indirizzi renderà impossibile per i nuovi membri della cassetta postale condivisa aggiungere la cassetta postale nascosta al proprio profilo di Outlook fino a quando la cassetta postale condivisa non verrà nuovamente visualizzata nell'elenco indirizzi. 

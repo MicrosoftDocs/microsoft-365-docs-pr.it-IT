@@ -15,14 +15,15 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - M365-security-compliance
+- m365solution-scenario
 - m365solution-evalutatemtp
 ms.topic: article
-ms.openlocfilehash: ac60415f38644c4630a181b1c8d696acced57ded
-ms.sourcegitcommit: 9d8d071659e662c266b101377e24549963e43fef
+ms.openlocfilehash: 79e30ee6fd68148543a63377d89fe2955f276f24
+ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "48368002"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48446732"
 ---
 # <a name="prepare-your-microsoft-threat-protection-trial-lab-or-pilot-environment"></a>Preparare il laboratorio di valutazione di Microsoft Threat Protection o l'ambiente pilota
 
@@ -75,7 +76,7 @@ La preparazione è la chiave per una distribuzione corretta. In questa sezione v
 Informazioni sui requisiti di licenza, hardware e software e altre impostazioni di configurazione per il provisioning e l'utilizzo di Microsoft Threat Protection. Per ulteriori informazioni, vedere requisiti minimi per [Microsoft Threat Protection](https://docs.microsoft.com/microsoft-365/security/mtp/prerequisites), [Microsoft Defender atp](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/minimum-requirements), [Office 365 ATP](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description), [Azure ATP](https://docs.microsoft.com/azure-advanced-threat-protection/atp-prerequisites), [Microsoft cloud app Security](https://docs.microsoft.com/azure-advanced-threat-protection/atp-prerequisites).
 
 ## <a name="stakeholders-and-sign-off"></a>Parti interessate e disconnessione
-La sezione seguente serve per identificare tutte le parti interessate coinvolte nel progetto e che potrebbe essere necessario disconnettersi, rivedere o rimanere informati, sia per la valutazione che per l'esecuzione di un pilota.
+Identificare tutte le parti interessate coinvolte nel progetto e gli utenti che potrebbero dover disconnettersi, esaminare o rimanere informati, sia per la valutazione che per l'esecuzione di un progetto pilota.
 
 >[!NOTE]
 >Non tutte le organizzazioni potrebbero avere la maturità dell'organizzazione di sicurezza per avere tali ruoli. In tal caso, rivolgersi al proprio team di guida per la revisione e l'approvazione responsabilità.
@@ -94,7 +95,7 @@ Aggiungere le parti interessate alla tabella seguente in base alle esigenze dell
 | Immettere il nome e la posta elettronica | **Responsabile della Cyber Defense Operations Center (CDOC)** *un rappresentante del team di CDOC incaricato di definire in che modo questa modifica è allineata ai processi del team per le operazioni di sicurezza dei clienti.*       | Allora     |
 | Immettere il nome e la posta elettronica | **Architetto della sicurezza** *un rappresentante del team di sicurezza incaricato di definire in che modo questa modifica è allineata con l'architettura di sicurezza di base nell'organizzazione.*                         | R      |
 | Immettere il nome e la posta elettronica | **Architetto del posto** *di lavoro un rappresentante del team IT incaricato di definire in che modo questa modifica è allineata all'architettura del posto di lavoro principale nell'organizzazione.*                             | R      |
-| Immettere il nome e la posta elettronica | **Analista di sicurezza** *un rappresentante del team di CDOC che può fornire input sulle funzionalità di rilevamento, sull'esperienza utente e sull'utilità complessiva di questa modifica da una prospettiva di operazioni di sicurezza.* | I      |
+| Immettere il nome e la posta elettronica | **Analista di sicurezza** *un rappresentante del team di CDOC che può fornire commenti e suggerimenti sulle funzionalità di rilevamento, sull'esperienza utente e sull'utilità complessiva di questa modifica da una prospettiva relativa alle operazioni di sicurezza.* | I      |
 
 ## <a name="prepare-your-azure-active-directory"></a>Preparare l'Azure Active Directory
 Ignorare questo passaggio se è già stata abilitata la sincronizzazione tra Active Directory e Azure Active Directory in locale. Esaminare la documentazione relativa alle procedure consigliate esistente da Azure Active Directory. I passaggi seguenti sono ottimizzati per valutare o eseguire un progetto pilota di Microsoft Threat Protection.
@@ -127,7 +128,7 @@ Ignorare questo passaggio se è già stata abilitata la sincronizzazione tra Act
 
 
 ## <a name="configuration-order"></a>Ordine di configurazione
-La tabella seguente indica l'ordine consigliato da Microsoft per la configurazione dei componenti di Microsoft Threat Protection per il laboratorio di valutazione o per la distribuzione di un ambiente pilota.
+Nella tabella seguente viene indicato l'ordine consigliato da Microsoft per la configurazione dei componenti di Microsoft Threat Protection per il laboratorio di valutazione o per la distribuzione di un ambiente pilota.
 
 | Componente                               | Descrizione                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              | Classificazione degli ordini di configurazione |
 |-----------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------|

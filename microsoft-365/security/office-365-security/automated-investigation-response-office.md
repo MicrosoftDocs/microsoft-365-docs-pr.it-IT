@@ -14,19 +14,19 @@ search.appverid:
 - MOE150
 ms.collection:
 - M365-security-compliance
-- m365-initiative-defender-office365
+- m365initiative-defender-office365
 keywords: risposta agli incidenti automatici, analisi, correzione, protezione dalle minacce
 ms.date: 09/29/2020
 description: Ottenere una panoramica delle funzionalità di ricerca e risposta automatizzate in Microsoft Defender per Office 365
 ms.custom:
 - air
 - seo-marvel-mar2020
-ms.openlocfilehash: 850291966c2f2da51782d8e70de23ff4f06d6136
-ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
+ms.openlocfilehash: d63ba8a6d3ffb653b30448a973e1cd862631d350
+ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48413963"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48447108"
 ---
 # <a name="an-overview-of-automated-investigation-and-response-air-in-microsoft-defender-for-office-365"></a>Panoramica dell'analisi automatizzata e della risposta (AIR) in Microsoft Defender per Office 365
 
