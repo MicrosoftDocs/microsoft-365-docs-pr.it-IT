@@ -18,12 +18,12 @@ ms.collection:
 hideEdit: true
 feedback_system: None
 description: La prevenzione della perdita di dati (DLP) nel &amp; Centro sicurezza e conformità include 80 tipi di informazioni riservate pronte per l'uso nei criteri DLP. In questo argomento vengono elencati tutti questi tipi di informazioni riservate e illustrata la ricerca eseguita dal criterio DLP quando rileva ciascun tipo di informazioni.
-ms.openlocfilehash: 8ee871ccde30d3ab71dbcb2d5183aafdf11482bd
-ms.sourcegitcommit: c1ee4ed3c5826872b57339e1e1aa33b4d2209711
+ms.openlocfilehash: adc1006628b8b4f13d30f2001fee0871b51b18ca
+ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "48235572"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48430433"
 ---
 # <a name="sensitive-information-type-entity-definitions"></a>Definizioni delle entità tipo di informazioni sensibili
 
@@ -146,7 +146,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 
 ### <a name="format"></a>Formato
 
-Sei-TWN cifre con o senza un numero di succursale dello stato della banca
+da sei a dieci cifre con o senza un numero di succursale dello stato della banca
 
 ### <a name="pattern"></a>Modello
 
@@ -1621,8 +1621,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 65%,
 - registrazione
 - registrationsnumme
 - registrierung
-- social security number
-
+- codice di previdenza sociale
 - SSN #
 - SSN
 - steuernummer
@@ -2162,8 +2161,7 @@ national id
 - No personale
 - numero personale
 - personalidnumber #
-- social security number
-
+- codice di previdenza sociale
 - SSN #
 - SSN
 - ID civile uniforme
@@ -3096,7 +3094,7 @@ master cards
 
 - carte blanche
 - carteblanche
-- credit card
+- carta di credito
 - CC #
 - CC #:
 - 
@@ -4038,8 +4036,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - rodné číslo
 - SSN
 - SSN #
-- social security number
-
+- codice di previdenza sociale
 - tax id
 
 - identificazione fiscale No
@@ -4306,8 +4303,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 65%,
 - Kode di pattinaggio
 - Nummer di pattinaggio
 - skattenummer
-- social security number
-
+- codice di previdenza sociale
 - sundhedsforsikringskort
 - sundhedsforsikringsnummer
 - sundhedskort
@@ -5322,8 +5318,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - personalidnumber #
 - personbeteckning
 - personnummer
-- social security number
-
+- codice di previdenza sociale
 - sosiaaliturvatunnus
 - tax id
 
@@ -8551,8 +8546,7 @@ national id
 registration number
 - numero di ricavo
 - numero di previdenza sociale
-- social security number
-
+- codice di previdenza sociale
 - codice fiscale dello stato
 - numero di file fiscale
 - tax id
@@ -11278,8 +11272,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 65%,
 - rč
 - rodne cislo
 - rodné číslo
-- social security number
-
+- codice di previdenza sociale
 - SSN #
 - SSN
 - személyi igazolvány szám
@@ -12633,8 +12626,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - PID
 - numero assicurativo
 - personalidno #
-- social security number
-
+- codice di previdenza sociale
 - numero ID personale
 - identificazione personale No.
 - insuranceno #
@@ -13139,8 +13131,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 
 - protection act
 - Insurance
-- social security number
-
+- codice di previdenza sociale
 - insurance application
 
 - medical application
