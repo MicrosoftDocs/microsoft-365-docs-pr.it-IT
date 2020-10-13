@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Configurare la prevenzione della perdita di dati degli endpoint di Microsoft 365 per monitorare le attività dei file e implementare azioni di protezione per questi file negli endpoint.
-ms.openlocfilehash: e0b9ba6afcad0c683aaa7386998a621f279aa9eb
-ms.sourcegitcommit: 5e40c760c1af2a4cc6d85cb782b17f5c979677c5
+ms.openlocfilehash: c579d0bbfdc72e56d99558ffa7e6812d00098c0d
+ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48379246"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48430681"
 ---
 # <a name="get-started-with-endpoint-data-loss-prevention-preview"></a>Introduzione alla prevenzione della perdita di dati degli endpoint (anteprima)
 
@@ -81,7 +81,7 @@ I dati provenienti da Endpoint DLP possono essere visualizzati in [Esplora attiv
 
 Verificare che i dispositivi Windows 10 in cui si prevede di distribuire Endpoint DLP soddisfino questi requisiti.
 
-1. Devono eseguire Windows 10 build 1809 o superiore.
+1. Devono eseguire Windows 10 x 64, build 1809 o successiva.
 2. Tutti i dispositivi devono essere [aggiunti ad Azure Active Directory (AAD)](https://docs.microsoft.com/azure/active-directory/devices/concept-azure-ad-join) o aggiunto ad Azure AD ibrido.
 3. Installare il browser Microsoft Edge Chromium nel dispositivo endpoint per applicare azioni dei criteri per l'attività di caricamento nel cloud. Vedere [Scaricare il nuovo Microsoft Edge basato su Chromium](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium).
 
