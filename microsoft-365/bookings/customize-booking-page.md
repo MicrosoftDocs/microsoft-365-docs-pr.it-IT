@@ -9,12 +9,12 @@ ms.service: bookings
 localization_priority: Normal
 ms.assetid: 116d7a84-a7a0-4911-a1e9-debb2cca7c43
 description: Cambiare il tema di colore della pagina di prenotazione nell'app prenotazioni Microsoft.
-ms.openlocfilehash: b33be0cb71998d45e50a66f89f98daa4af175865
-ms.sourcegitcommit: 7c0873d2a804f17697844fb13f1a100fabce86c4
+ms.openlocfilehash: c930c06300a83ee17f1efdaaf42761ddfdebdd7b
+ms.sourcegitcommit: d76a4c07f0be2938372bdfae50e0e4d523bd8e9f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47962514"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48456376"
 ---
 # <a name="customize-and-publish-your-booking-page"></a>Personalizzare e pubblicare la pagina di prenotazione
 
@@ -36,21 +36,21 @@ La sezione che segue fornisce informazioni sulla configurazione della pagina di 
 
 - **Controllo dell'accesso alle pagine di prenotazione: richiedere un account Microsoft 365 dall'organizzazione per prenotare**  Se si seleziona questa opzione, gli utenti all'interno dell'organizzazione potranno visualizzare la pagina o prenotare i servizi. L'accesso alla pagina è autorizzato tramite assegni di credenziale per assicurarsi che il visitatore appartenga a un account all'interno del tenant.
 
-- **Controllo dell'accesso alle pagine di prenotazione: disabilitare l'indicizzazione diretta del motore di ricerca della pagina di prenotazione** Questa impostazione impedisce che la pagina venga visualizzata nei risultati della ricerca per Google, Bing o altri motori di ricerca. Se si deseleziona questa casella, l'accesso alla pagina è limitato al collegamento alla pagina generata.
+- **Controllo dell'accesso alle pagine di prenotazione: disabilitare l'indicizzazione diretta del motore di ricerca della pagina di prenotazione** Questa impostazione impedisce che la pagina venga visualizzata nei risultati della ricerca per Google, Bing o altri motori di ricerca. Selezionando questa casella si garantisce che l'accesso alla pagina sia limitato al collegamento alla pagina generata.
 
-- **Consenso per l'utilizzo dei dati del cliente** Se si seleziona questa opzione, il testo che richiede il consenso dell'utente o del cliente affinché l'organizzazione utilizzi i propri dati verrà visualizzato nella pagina self-service. La casella dovrà essere controllata dall'utente per completare la prenotazione.
+- **Consenso per l'utilizzo dei dati del cliente** Se si seleziona questa opzione, il testo che richiede il consenso dell'utente o del cliente per l'utilizzo dei dati da parte dell'organizzazione verrà visualizzato nella pagina Self-Service. La casella dovrà essere controllata dall'utente per completare la prenotazione.
 
 - **Criteri di pianificazione**, **notifiche tramite posta elettronica**e **staff** tutte queste impostazioni sono simili a quelle disponibili per ogni servizio nella scheda servizi.
 
 - **Disponibilità** Si tratta di un'opzione che consente di impostare intervalli di tempo e date specifici per un servizio. In caso contrario, le prenotazioni avranno valore predefinito per l'orario di ufficio. È possibile utilizzare l'opzione **disponibilità** per scenari quali festività o ore estese.
 
-- **Personalizzare la pagina** Scegliere colori e loghi che vengono visualizzati nella pagina self-service, ad esempio per la coerenza della marca.
+- **Personalizzare la pagina** Scegliere colori e loghi che vengono visualizzati nella pagina Self-Service, ad esempio per la coerenza della marca.
 
-- **Impostazioni delle** aree geografiche e del fuso orario Qui è possibile impostare il fuso orario e le preferenze della lingua per la pagina self-service. È consigliabile impostare il fuso orario locale. Per i visitatori della pagina self-service, la prenotazione rileva automaticamente i fusi orari locali e visualizza la disponibilità nei propri fusi orari. Ad esempio, se un appuntamento è disponibile alle 1:00 PST, un utente in CST vedrà il tempo disponibile visualizzato come CST 03:00.
+- **Impostazioni delle** aree geografiche e del fuso orario Qui è possibile impostare il fuso orario e le preferenze della lingua per la pagina Self-Service. È consigliabile impostare il fuso orario locale. Per i visitatori della pagina Self-Service, le prenotazioni consentono di rilevare automaticamente i fusi orari locali e di visualizzarne la disponibilità nei propri fusi orari. Ad esempio, se un appuntamento è disponibile alle 1:00 PST, un utente in CST vedrà il tempo disponibile visualizzato come CST 03:00.
 
-Dopo la pubblicazione della pagina di prenotazione, i clienti vedranno la pagina di prenotazione in cui potranno prenotare gli appuntamenti con l'utente. Il cliente che si affaccia sulla prenotazione pag ha l'aspetto seguente:
+Dopo la pubblicazione della pagina di prenotazione, i clienti vedranno la pagina di prenotazione in cui potranno prenotare gli appuntamenti con l'utente. La pagina di prenotazione del cliente è simile alla seguente:
 
-:::image type="content" source="media/bookings-self-service.jpg" alt-text="Pagina di prenotazione di fronte al cliente":::
+:::image type="content" source="media/bookings-self-service.jpg" alt-text="Pagina prenotazioni":::
 
 ## <a name="publish-the-booking-page"></a>Pubblicare la pagina di prenotazione
 
@@ -70,4 +70,4 @@ Guardare questo video o seguire la procedura riportata di seguito per pubblicare
 
 ## <a name="unpublish-the-booking-page"></a>Annullare la pubblicazione della pagina di prenotazione
 
-1. Per annullare la pubblicazione della pagina di prenotazione, passare alla pagina di prenotazione e selezionare non **pubblicare**.
+ - Per annullare la pubblicazione della pagina di prenotazione, passare alla pagina di prenotazione e selezionare non **pubblicare**.

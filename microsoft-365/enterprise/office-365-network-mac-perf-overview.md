@@ -13,14 +13,14 @@ search.appverid:
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
-- M365initiative-CoreDeploy
+- m365initiative-coredeploy
 description: Panoramica della connettività di rete nell'interfaccia di amministrazione di Microsoft 365 (anteprima)
-ms.openlocfilehash: d3ca55a4d8357d10b79bd8e87ddc3350efa2845e
-ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
+ms.openlocfilehash: fcc70f7c76b92ecf113158cdac8eecdfb9852351
+ms.sourcegitcommit: d76a4c07f0be2938372bdfae50e0e4d523bd8e9f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48326878"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48456424"
 ---
 # <a name="network-connectivity-in-the-microsoft-365-admin-center-preview"></a>Connettività di rete nell'interfaccia di amministrazione di Microsoft 365 (anteprima)
 
@@ -53,13 +53,13 @@ Il servizio percorso di Windows deve essere consenziente sui computer. È possib
 
 Non è necessario aggiungere percorsi nell'interfaccia di amministrazione con questo metodo, in quanto vengono identificati automaticamente nella risoluzione della città. Non è possibile visualizzare più percorsi di Office all'interno di una città tramite i servizi di posizione di Windows. Le informazioni sulla posizione vengono arrotondate anche ai 300 metri più vicini per 300 metri prima di essere caricati in modo che non sia possibile accedere a informazioni di posizione più precise.
 
-I computer devono disporre di una rete Wi-Fi anziché di un cavo Ethernet. I computer che dispongono di un cavo Ethernet non dispongono di informazioni sulla posizione accurate.
+I computer devono disporre di Wi-Fi rete anziché di un cavo Ethernet. I computer che dispongono di un cavo Ethernet non dispongono di informazioni sulla posizione accurate.
 
 Gli esempi di misura e le posizioni degli uffici devono iniziare a essere visualizzati 24 ore dopo che questi prerequisiti sono stati soddisfatti.
 
 ### <a name="2-add-locations-and-provide-lan-subnet-information"></a>2. aggiungere posizioni e fornire informazioni sulla subnet LAN
 
-Per questa opzione non sono necessari né i servizi di posizione di Windows né la connessione Wi-Fi. È necessario OneDrive per Windows versione **20,161** o versioni successive installata su ogni computer nel percorso.
+Per questa opzione non sono necessari né i servizi di posizione di Windows né i Wi-Fi. È necessario OneDrive per Windows versione **20,161** o versioni successive installata su ogni computer nel percorso.
 
 È inoltre necessario aggiungere posizioni nella pagina di connettività di rete dell'interfaccia di amministrazione o per importare quelle da un file CSV. Le posizioni aggiunte devono includere le informazioni sulla subnet LAN di Office.
 

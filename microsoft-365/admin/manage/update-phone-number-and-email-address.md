@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 767349fa-f646-46d9-9dab-4a65049bdd1f
 description: Aggiornare il numero di telefono e l'indirizzo di posta elettronica dell'amministratore nell'interfaccia di amministrazione. Se si desidera reimpostare la propria password di amministratore, sono necessarie queste informazioni.
-ms.openlocfilehash: ed7e8152ffdf05d94068e6bdb81697dee737ea01
-ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
+ms.openlocfilehash: 7387ffe693abf0e52d647e35827a9f55bd1d70df
+ms.sourcegitcommit: d76a4c07f0be2938372bdfae50e0e4d523bd8e9f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45429955"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48456330"
 ---
 # <a name="update-your-admin-phone-number-and-email-address"></a>Aggiornare il numero di telefono e l'indirizzo di posta elettronica dell'amministratore
 
@@ -47,7 +47,7 @@ Utilizzare la pagina **Impostazioni e privacy** per modificare il nome, il numer
 
 2. Nell'intestazione, selezionare l'icona del profilo \> **My account** \> **Settings and privacy**.
 
-3. Nella sezione **Preferenze contatto** selezionare **Gestisci ed Espandi le preferenze di contatto**. Aggiornare il cellulare, il telefono e l'indirizzo di posta elettronica alternativo. Assicurarsi di usare qualcosa di diverso dall'indirizzo di posta elettronica Microsoft per l'indirizzo di posta elettronica alternativo.
+3. Nella scheda **privacy** in **Preferenze contatto**Selezionare solo le **Preferenze di contatto per gli amministratori**. Aggiornare il cellulare, il telefono e l'indirizzo di posta elettronica alternativo. Assicurarsi di usare qualcosa di diverso dall'indirizzo di posta elettronica Microsoft per l'indirizzo di posta elettronica alternativo.
 
     > [!IMPORTANT]
     > L'indirizzo di posta elettronica alternativo e il numero di cellulare sono necessari per reimpostare la password di amministratore (non la password di amministratore del computer).
@@ -58,4 +58,4 @@ In caso di domande sulla fatturazione, vedere:
   
 - [Modificare gli indirizzi di fatturazione per Microsoft 365 for business](../../commerce/billing-and-payments/change-your-billing-addresses.md)
 
-- [Gestire metodi di pagamento](../../commerce/billing-and-payments/manage-payment-methods.md)
+- [Gestione metodi di pagamento](../../commerce/billing-and-payments/manage-payment-methods.md)
