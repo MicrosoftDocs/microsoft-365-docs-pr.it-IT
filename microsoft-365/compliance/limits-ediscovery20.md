@@ -16,12 +16,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Informazioni sui limiti del caso, sui limiti di indicizzazione e sui limiti di ricerca in vigore per la soluzione avanzata di eDiscovery in Microsoft 365.
-ms.openlocfilehash: c139480f18e0e6d94aae5a38d5fd636fbc62b2dc
-ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
+ms.openlocfilehash: 7d676b568c7e4cddedeff02c62b4645619d53357
+ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47358474"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48446253"
 ---
 # <a name="limits-in-advanced-ediscovery"></a>Limiti di Advanced eDiscovery
 
@@ -38,6 +38,8 @@ Nella tabella seguente sono elencati i limiti relativi ai casi e ai set di revis
 |Quantità totale di dati caricati in tutti i set di revisione nell'organizzazione al giorno.<br/> |2 TB <br/> |
 |Numero massimo di set di carichi per caso.  <br/> |200 <br/> |
 |Numero massimo di insiemi di revisione per ogni caso.  <br/> |20 <br/> |
+|Numero massimo di gruppi di tag per ogni caso.  <br/> |1000 <br/> |
+|Numero massimo di tag per caso.  <br/> |1000 <br/> |
 |||
 
 ## <a name="indexing-limits"></a>Limiti di indicizzazione
