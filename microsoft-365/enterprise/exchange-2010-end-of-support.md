@@ -3,7 +3,6 @@ title: Tabella di marcia della fine del supporto di Exchange 2010
 ms.author: dstrome
 author: dstrome
 manager: laurawi
-ms.date: 09/16/2019
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -13,22 +12,22 @@ ms.assetid: e150e7b9-c432-4c8d-a0ae-c11847129a7d
 f1.keywords:
 - NOCSH
 description: Exchange 2010 si sta avvicinando alla fine del supporto. Utilizzare questa roadmap di pianificazione come guida per preparare l'aggiornamento a Exchange Online o a una versione più recente di Exchange Server locale.
-ms.openlocfilehash: 128abd1e98c3e9d1ec4dd8a58683ee0ab019af18
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: dbae3fba3ddbff016e0e9434db4af6ca0a046b0d
+ms.sourcegitcommit: bcb88a6171f9e7bdb5b2d8c03cd628d11c5e7bbf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47950821"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48464253"
 ---
 # <a name="exchange-2010-end-of-support-roadmap"></a>Tabella di marcia della fine del supporto di Exchange 2010
 
-*Questo articolo può essere applicato sia a Microsoft 365 Enterprise che a Office 365 Enterprise.*
+*Questo articolo si applica sia a Microsoft 365 Enterprise che a Office 365 Enterprise*.
 
-Il **13 ottobre 2020**, Exchange Server 2010 raggiungerà la fine del supporto. Se non è già stata avviata la migrazione da Exchange 2010 a Microsoft 365, Office 365 o Exchange 2016, ora è il momento di iniziare la pianificazione.
+Exchange Server 2010 ha raggiunto la fine del supporto il **13 ottobre 2020**. Se non è già stata avviata la migrazione da Exchange 2010 a Microsoft 365, Office 365 o Exchange 2016, ora è il momento di iniziare la pianificazione.
 
 ## <a name="what-does-end-of-support-mean"></a>Cosa significa fine del supporto?
 
-Exchange Server, come quasi tutti i prodotti Microsoft, ha un ciclo di vita di supporto durante il quale vengono fornite nuove funzionalità, correzioni di bug, correzioni di sicurezza e così via. Questo ciclo di vita di solito dura 10 anni a partire dalla data di rilascio iniziale del prodotto e la fine di questo ciclo di vita è nota come fine del prodotto di supporto. Quando Exchange 2010 raggiunge la fine del supporto il 13 ottobre 2020, Microsoft non fornirà più:
+Exchange Server, come quasi tutti i prodotti Microsoft, ha un ciclo di vita di supporto durante il quale vengono fornite nuove funzionalità, correzioni di bug, correzioni di sicurezza e così via. Questo ciclo di vita di solito dura 10 anni a partire dalla data di rilascio iniziale del prodotto e la fine di questo ciclo di vita è nota come fine del prodotto di supporto. Poiché Exchange 2010 ha raggiunto la fine del supporto il 13 ottobre 2020, Microsoft non fornirà più:
 
 - Supporto tecnico per i problemi che possono verificarsi.
 - Correzioni dei bug per i problemi individuati e che possono influire sulla stabilità e sull'usabilità del server.
@@ -49,8 +48,8 @@ Con Exchange 2010 che raggiunge la fine del supporto, questo è il momento ideal
 > [!IMPORTANT]
 > Se l'organizzazione sceglie di eseguire la migrazione delle cassette postali a Microsoft 365 ma intende mantenere DirSync o Azure AD Connect sul posto per continuare a gestire gli account utente da Active Directory locale, è necessario mantenere almeno un server Exchange locale. Se l'ultimo server Exchange è stato rimosso, non sarà possibile apportare modifiche ai destinatari di Exchange in Exchange Online. Ciò è dovuto al fatto che l'origine dell'autorità rimane in Active Directory locale e che devono essere apportate modifiche. In questo scenario, sono disponibili le opzioni seguenti:
 
-- (**Scelta consigliata**) Se è possibile eseguire la migrazione delle cassette postali a Microsoft 365 e aggiornare i server entro il 13 ottobre 2020, utilizzare Exchange 2010 per connettersi a Microsoft 365 e migrare le cassette postali. Successivamente, eseguire la migrazione di Exchange 2010 a Exchange 2016 e rimuovere i server Exchange 2010 restanti.
-- Se non è possibile completare la migrazione delle cassette postali e l'aggiornamento del server locale entro il 13 ottobre 2020, aggiornare i server Exchange 2010 locali a Exchange 2016 prima, quindi utilizzare Exchange 2016 per connettersi a Microsoft 365 e migrare le cassette postali.
+- (**Scelta consigliata**) Se si è in grado di eseguire la migrazione delle cassette postali a Microsoft 365 e aggiornare i server entro il 13 ottobre 2020, utilizzare Exchange 2010 per connettersi a Microsoft 365 e migrare le cassette postali. Successivamente, eseguire la migrazione di Exchange 2010 a Exchange 2016 e rimuovere i server Exchange 2010 restanti.
+- Se non è stato possibile completare la migrazione delle cassette postali e l'aggiornamento del server locale entro il 13 ottobre 2020, aggiornare i server Exchange 2010 locali a Exchange 2016 prima, quindi utilizzare Exchange 2016 per connettersi a Microsoft 365 e migrare le cassette postali.
 
 > [!NOTE]
 > Anche se un po' più complicato, è possibile eseguire la migrazione delle cassette postali a Microsoft 365 durante la migrazione dei server Exchange 2010 locali a Exchange 2016.
@@ -65,7 +64,7 @@ Nelle sezioni seguenti vengono esplorate tutte le opzioni in modo più dettaglia
 
 La migrazione della posta elettronica a Microsoft 365 è l'opzione migliore e più semplice per ritirare la distribuzione di Exchange 2010. Con una migrazione a Microsoft 365, è possibile creare un singolo hop dalla tecnologia obsoleta alle funzionalità di stato-of-the-Art, ad esempio:
 
-- Funzionalità di conformità, ad esempio i criteri di conservazione, il blocco sul posto e la controversia legale, la eDiscovery sul posto e altro ancora.
+- Funzionalità di conformità, ad esempio i criteri di conservazione, i In-Place e il blocco per controversia legale, eDiscovery sul posto e altro ancora.
 - Microsoft Teams
 - Power BI
 - Posta in arrivo evidenziata

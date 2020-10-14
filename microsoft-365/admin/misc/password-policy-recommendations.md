@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9fa2539a-2211-41fd-85a0-bc37b9619ca4
 description: Informazioni su come rendere più sicura l'organizzazione da attacchi alle password e perché è necessario bloccare le password comuni e abilitare l'autenticazione a più fattori basata sul rischio.
-ms.openlocfilehash: 0ae26dc27cc698c24d999acde03f63f9cfead081
-ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
+ms.openlocfilehash: 0bfbeac6fb8069e846ddad3c5b618687ba3c2260
+ms.sourcegitcommit: d76a4c07f0be2938372bdfae50e0e4d523bd8e9f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48131943"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48456328"
 ---
 # <a name="password-policy-recommendations"></a>Suggerimenti sui criteri delle password
 
@@ -102,7 +102,7 @@ Ecco alcuni suggerimenti volti a incoraggiare la diversità delle password.
   
 ### <a name="ban-common-passwords"></a>Vietare le password comuni
 
-Il più importante requisito da impostare in relazione alla creazione di password da parte degli utenti consiste nel vietare l'uso di password comuni per ridurre l'esposizione dell'organizzazione ad attacchi di forza bruta volti a violare le password. Alcune delle password più usate dagli utenti sono **abdcefg**, **password**, **123456**.
+Il più importante requisito da impostare in relazione alla creazione di password da parte degli utenti consiste nel vietare l'uso di password comuni per ridurre l'esposizione dell'organizzazione ad attacchi di forza bruta volti a violare le password. Alcune delle password più usate dagli utenti sono **abcdefg**, **password**, **123456**.
   
 ### <a name="educate-users-to-not-re-use-organization-passwords-anywhere-else"></a>Educare gli utenti a non riutilizzare le password aziendali in altre posizioni
 

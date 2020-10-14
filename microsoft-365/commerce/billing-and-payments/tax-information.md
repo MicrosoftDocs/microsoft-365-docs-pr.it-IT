@@ -20,24 +20,32 @@ description: "Scoprire quante tasse verranno addebitate per l'abbonamento a Micr
 ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
-ms.openlocfilehash: de5f05b50138606cd60e8c6ab1999a7ed2090dce
-ms.sourcegitcommit: 50526f81ce3f57d58f0a7c0df4fe21685c5a0236
+ms.openlocfilehash: d3d1bc1239cb99da33f776e603356ccae95a2353
+ms.sourcegitcommit: bcb88a6171f9e7bdb5b2d8c03cd628d11c5e7bbf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45434062"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48464097"
 ---
 # <a name="tax-information"></a>Informazioni fiscali
 
-Le imposte per gli acquisti nell'interfaccia di amministrazione di Microsoft 365 effettuate tramite Microsoft vengono determinate in base all'indirizzo aziendale o, se diverso, all'indirizzo di spedizione. Se ci si trova negli Stati Uniti, è necessario fornire un numero di identificazione del datore di lavoro federale (FEIN).
+Quando si acquistano prodotti e servizi Microsoft 365, le imposte pagate sono determinate da una delle due operazioni seguenti: l'indirizzo aziendale o l'indirizzo di spedizione, se diverso. Se l'organizzazione si trova negli Stati Uniti, è necessario fornire un numero di identificazione del datore di lavoro federale (FEIN).
 
-Le aziende di questi paesi possono fornire il proprio numero di partita IVA:
+Le aziende nei seguenti paesi possono fornire il proprio numero di partita IVA o equivalente locale:
 
 :::row:::
     :::column:::
+- Armenia
+- Australia
 - Austria
+- Bahamas
+- Bangladesh
+- Bielorussia
 - Belgio
+- Brasile
 - Bulgaria
+- Cile
+- Colombia
 - Croazia
 - Cipro
 - Repubblica Ceca
@@ -48,112 +56,90 @@ Le aziende di questi paesi possono fornire il proprio numero di partita IVA:
 - Germania
 - Grecia
 - Ungheria
+- India
+- Indonesia
 - Irlanda
+- Isola di Man
 - Italia
-- Lettonia
     :::column-end:::
     :::column:::
+- Corea del Sud
+- Lettonia
 - Liechtenstein
 - Lituania
 - Lussemburgo
+- Malaysia
 - Malta
+- Messico
 - Monaco
 - Paesi Bassi
+- Nuova Zelanda
 - Norvegia
 - Polonia
 - Portogallo
 - Romania
+- Arabia Saudita
 - Slovacchia
+- Slovenia
 - Sudafrica
 - Spagna
 - Svezia
 - Svizzera
+- Taiwan
+- Turchia
+- Emirati Arabi Uniti
 - Regno Unito
     :::column-end:::
 :::row-end:::
 
-Tali paesi possono fornire il proprio numero di partita IVA o equivalente locale nelle relative informazioni sull'account di fatturazione.
-
-|Mercato| Identificatore fiscale |
-|------|----------------|
-| Australia | ABN (facoltativo) |
-| Brasile | CNPJ (obbligatorio) |
-| India | GSTIN (facoltativo), ID PAN (obbligatorio) |
-| Isola di Man | ID partita IVA (facoltativo) |
-| Nuova Zelanda | Numero di registrazione GST (facoltativo) |
-| Monaco | ID partita IVA (facoltativo) |
-| Taiwan | ID partita IVA (facoltativo) |
+* Per la maggior parte dei paesi elencati, è facoltativo fornire un numero di partita IVA o un equivalente locale. Per Brasile e India, è necessario il numero dell'identificativo fiscale.
 
 > [!Note]
 > Se è necessario contattare il supporto tecnico, ottenere il FEIN, il numero di partita IVA o l'equivalente locale pronto a fornire all'agente di supporto.
 
-## <a name="what-tax-will-i-be-charged"></a>Quali imposte vengono addebitate?
+## <a name="europe-the-middle-east-and-africa-emea"></a>Europa, Medio Oriente e Africa (EMEA)
 
-Fare clic sui collegamenti seguenti per vedere quale imposta viene applicata nelle varie aree geografiche. È anche possibile [richiedere l'esenzione fiscale](tax-information.md#apply-for-tax-exempt-status) presentando la documentazione appropriata al servizio di supporto.
+Quando si acquistano servizi Microsoft 365 nell'Unione europea, questo acquisto è soggetto a Value-Added Tax (IVA).
   
-### <a name="europe-the-middle-east-and-africa-emea"></a>Europa, Medio Oriente e Africa (EMEA)
-
-Quando si acquistano servizi Microsoft 365 nell'Unione europea, questo acquisto è soggetto all'imposta sul valore aggiunto (IVA).
-  
-- Se si risiede in uno stato membro dell'Unione Europea e non si fornisce un numero di partita IVA locale valido, Microsoft Ireland Operations Ltd. applicherà l'aliquota IVA locale corrente in base al paese di fatturazione indicato per l'account.
+- Se ci si trova in uno Stato membro dell'Unione europea e non si fornisce l'ID IVA locale valido, Microsoft Ireland Operations Ltd. applicherà la tariffa IVA locale corrente, in base al paese di fatturazione su cui è impostato l'account.
 
 - Se si risiede in Svizzera o Liechtenstein, viene applicata l'aliquota IVA svizzera corrente, indipendentemente dal fatto che si specifichi o meno una partita IVA.
 
-- In generale, se si risiede in un paese dell'area EMEA esterno all'Unione Europea e diverso da Svizzera/Liechtenstein, l'IVA non viene addebitata da Microsoft Ireland Operations Ltd.
+- In generale, se si è situati in un paese EMEA all'esterno dell'Unione europea e della Svizzera/Liechtenstein, l'IVA non viene addebitata da Microsoft Ireland Operations Ltd.
 
-- Per poter essere convalidata, la partita IVA deve essere disponibile per la verifica nel sistema VIES (VAT Information Exchange System). Se non è possibile verificare la partita IVA, contattare l'organismo fiscale locale.
+- Per poter essere convalidata, la partita IVA deve essere disponibile per la verifica nel sistema VIES (VAT Information Exchange System). Se non è possibile verificare l'ID partita IVA, contattare l'autorità tributaria locale.
 
-Si potrebbe essere idonei per un'esenzione dell'IVA nei casi seguenti:
+È possibile qualificarsi per l'IVA zero-rating se:
   
-- **Se si è in uno Stato membro dell'Unione europea al di fuori dell'Irlanda:** È possibile specificare l'ID IVA locale valido. Ciò consentirà a Microsoft Ireland Operations Ltd. di IVA zero-rate la transazione. Tuttavia, si può avere un obbligo di contabilità IVA locale, quindi consultare i consulenti fiscali se si ha qualche problema. Per istruzioni, vedere "aggiungere il proprio ID IVA (solo paesi EU)" in basso.
+- **Si è in uno Stato membro dell'Unione europea al di fuori dell'Irlanda:** È possibile specificare l'ID IVA locale valido. Ciò consente a Microsoft Ireland Operations Ltd. di IVA zero-rate la transazione. Tuttavia, è possibile che si disponga di un obbligo di contabilità IVA locale. In caso di dubbi, consultare i consulenti fiscali. Per istruzioni, vedere [aggiungere l'ID partita IVA](#add-your-vat-id).
 
-- **Se si risiede in Irlanda e si ha una certificazione valida per l'esenzione dell'IVA:** Microsoft Ireland Operations Ltd. potrebbe esentare la transazione dall'IVA. In caso contrario, Microsoft Ireland Operations Ltd. applicherà l'aliquota IVA irlandese corrente, indipendentemente dal fatto che si specifichi o meno una partita IVA.
+- **L'utente è in Irlanda e ha la certificazione valida di esenzione IVA:** Microsoft Ireland Operations Ltd. può essere autorizzata a esonerare la transazione dall'IVA. In caso contrario, Microsoft Ireland Operations Ltd. applica l'aliquota IVA irlandese corrente, se si specifica un ID IVA o meno.
 
-::: moniker range="o365-worldwide"
+## <a name="asia-pacific-countries-apac"></a>Area Asia Pacifico
 
-#### <a name="add-your-vat-id-eu-countries-only"></a>Aggiungere la partita IVA (solo paesi dell'Unione Europea)
+Se si è addebitati dall'ufficio vendite regionale Microsoft, "Microsoft Regional Sales PTE. Ltd. " viene visualizzato sulla fattura e potrebbe essere addebitato per eventuali imposte a valore aggiunto, vendite o similari.
+  
+Se si è fatturati da una delle posizioni seguenti, viene applicata la tassa locale corrente. La posizione è inclusa [nella fattura](view-your-bill-or-invoice.md):
+  
+- India
+- Giappone
+- Corea del Sud
+- Singapore
+- Taiwan
+
+## <a name="north-central-and-south-america"></a>America del Nord, America centrale e Sud America
+
+Negli Stati Uniti, Canada, Messico, Cile e Colombia, vengono applicate diverse aliquote fiscali a seconda del tipo di prodotto e della località.
+  
+Se la fatturazione viene fatta da Microsoft Corporation ([vedere la fattura](view-your-bill-or-invoice.md)) e l'utente ha effettuato l'iscrizione a Microsoft 365 al di fuori degli Stati Uniti, Canada, Portorico, Cile e Colombia, la tassa generalmente non viene addebitata.
+
+## <a name="add-your-vat-id"></a>Aggiungere l'ID partita IVA
 
 1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">I tuoi prodotti</a>.
-
-2. Trovare la scheda di sottoscrizione per l'abbonamento che si desidera aggiornare.
-
-3. Nella sezione **impostazioni & azioni** selezionare **modifica indirizzo di utilizzo del servizio**.
-
-4. Nella casella **numero di partita IVA** della pagina **modifica l'indirizzo di utilizzo del servizio** immettere l'ID IVA, incluso il prefisso e senza spazi. Seleziona **Salva**.
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-#### <a name="add-your-vat-id-eu-countries-only"></a>Aggiungere la partita IVA (solo paesi dell'Unione Europea)
-  
-1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Abbonamenti</a>.
-
-2. Selezionare il nome della sottoscrizione e quindi fare clic su **altre azioni** \> **modifica numero partita IVA**.
-  
-3. Nella casella **numero di partita IVA** della pagina **modifica l'indirizzo di utilizzo del servizio** immettere l'ID IVA, incluso il prefisso e senza spazi. Seleziona **Salva**.
-
-::: moniker-end
-
-### <a name="asia-pacific-countries-apac"></a>Area Asia Pacifico
-
-Se si ricevono le fatture dall'ufficio Microsoft Regional Sales, sulla fattura è riportato "Microsoft Regional Sales". In questo caso non viene addebitata un'imposta sui consumi o un'aliquota IVA a meno che non si tratti di una vendita sul mercato interno.
-  
-Se si ricevono le fatture da un'altra sede, viene applicata l'imposta locale corrente. Sulla fattura [riportato quanto segue](view-your-bill-or-invoice.md):
-  
-- Singapore a Singapore
-
-- Corea a Corea
-
-- Giappone a Giappone
-
-- Taiwan a Taiwan
-
-### <a name="north-central-and-south-america"></a>America del Nord, America centrale e Sud America
-
-Negli Stati Uniti e in Canada vengono applicate diverse aliquote a seconda della sede del cliente. In Portorico, viene applicata l'aliquota IVA locale.
-  
-Se la fatturazione viene fatta da Microsoft Corporation ([vedere la fattura](view-your-bill-or-invoice.md)) e l'utente ha effettuato l'iscrizione a Microsoft 365 al di fuori degli Stati Uniti, Canada e Portorico, la tassa generalmente non viene addebitata.
+2. Nella scheda **prodotti** selezionare l'abbonamento che si desidera aggiornare.
+3. Nella sezione **indirizzo di utilizzo del servizio** della pagina Dettagli sottoscrizione selezionare **modifica indirizzo di utilizzo del servizio**.
+4. Nella casella **numero di partita IVA** del riquadro **modifica indirizzo di utilizzo del servizio** immettere l'ID partita IVA, incluso il prefisso e senza spazi.
+5. Selezionare **Salva**.
 
 ## <a name="how-taxes-are-calculated"></a>Modalità di calcolo delle imposte
 
@@ -171,17 +157,17 @@ Ad esempio:
 
 Se si ha la qualifica per lo stato di esenzione fiscale nel mercato, [avviare una richiesta di servizio](https://docs.microsoft.com/office365/admin/contact-support-for-business-products) per stabilire lo stato di esenzione fiscale per la propria organizzazione.
 
-Preparare la documentazione seguente:
-
 |Paese o impostazioni locali | Documentazione |
 |------------------|----------------|
-| Stati Uniti | Certificato di esenzione IVA |
 | Canada | Certificato di esenzione (o lettera di autorizzazione equivalente) |
-| Irlanda | Ter/56A-certificato di esenzione fiscale|
+| Cile | IVA status/RUT (registro unico tributario) |
+| Colombia | IVA status/RUT (registro unico tributario) |
 | Organizzazioni internazionali che detengono esenzione fiscale | Certificazione/conferma lettera da parte delle autorità tributarie locali |
+| Irlanda | Ter/56A-certificato di esenzione fiscale|
+| Stati Uniti | Certificato di esenzione IVA |
 | Portorico | Certificado de compras Exentas |
   
-## <a name="related-content"></a>Contenuto correlato
+## <a name="related-content"></a>Contenuti correlati
   
 [Visualizzare la fattura o la fattura](view-your-bill-or-invoice.md) (articolo) \
 [Comprendere la fattura o la fattura](understand-your-invoice.md) (articolo)

@@ -16,16 +16,16 @@ f1.keywords:
 ms.custom: seo-marvel-apr2020
 ms.assetid: c28de4a5-1e8e-4491-9421-af066cde7cdd
 description: Informazioni su come utilizzare PowerShell per eseguire una migrazione IMAP (Internet Mail Access Protocol) a Microsoft 365.
-ms.openlocfilehash: 6eb422455d0bdf31fa1859bd0231b68e5568748c
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 67621ecfca7ec323a73b91a530f848dd7571f9b2
+ms.sourcegitcommit: bcb88a6171f9e7bdb5b2d8c03cd628d11c5e7bbf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46691372"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48464445"
 ---
 # <a name="use-powershell-to-perform-an-imap-migration-to-microsoft-365"></a>Utilizzare PowerShell per eseguire una migrazione IMAP a Microsoft 365
 
-*Questo articolo può essere applicato sia a Microsoft 365 Enterprise che a Office 365 Enterprise.*
+*Questo articolo si applica sia a Microsoft 365 Enterprise che a Office 365 Enterprise*.
 
 Come parte del processo di distribuzione di Microsoft 365, è possibile scegliere di eseguire la migrazione del contenuto delle cassette postali degli utenti da un servizio di posta elettronica IMAP (Internet Mail Access Protocol) a Microsoft 365. In questo articolo vengono illustrate le attività per una migrazione IMAP della posta elettronica tramite PowerShell di Exchange Online. 
   
@@ -103,7 +103,7 @@ Per l'attributo **UserName**, oltre al nome utente, è possibile utilizzare le c
   
  **Microsoft Exchange:**
   
-Se si sta eseguendo la migrazione della posta elettronica dall'implementazione IMAP per Microsoft Exchange, utilizzare il formato **Dominio/NomeUtente_Amministratore/NomeUtente_Utente** per l'attributo **UserName** nel file CSV. Si supponga di eseguire la migrazione della posta elettronica da Exchange per Terry Adams, Ann Beebe e Paul Cannon. Si dispone di un account di amministratore della posta, con nome utente **mailadmin** e password **P@ssw0rd**. Il file CSV risulterà simile al seguente:
+Se si sta eseguendo la migrazione della posta elettronica dall'implementazione IMAP per Microsoft Exchange, utilizzare il formato **Dominio/NomeUtente_Amministratore/NomeUtente_Utente** per l'attributo **UserName** nel file CSV. Si supponga di eseguire la migrazione della posta elettronica da Exchange per Terry Adams, Ann Beebe e Paul Cannon. Si dispone di un account di amministratore di posta elettronica, in cui il nome utente è **mailadmin** e la password è **P \@ ssw0rd**. Il file CSV risulterà simile al seguente:
   
 ```powershell
 EmailAddress,UserName,Password
@@ -114,7 +114,7 @@ paulc@contoso.edu,contoso-students/mailadmin/paul.cannon,P@ssw0rd
 
  **Dovecot:**
   
-Per i server IMAP che supportano SASL (Simple Authentication and Security Layer), come ad esempio il server IMAP Dovecot, utilizzare il formato **Utente_NomeUtente*Amministratore**, dove l'asterisco (*) è un carattere separatore configurabile. Si supponga di eseguire la migrazione della posta elettronica degli stessi utenti da un server IMAP Dovecot, con le credenziali di amministratore **mailadmin** e **P@ssw0rd**. Il file CSV risulterà simile al seguente:
+Per i server IMAP che supportano SASL (Simple Authentication and Security Layer), come ad esempio il server IMAP Dovecot, utilizzare il formato **NomeUtente_Utente*NomeUtente_Amministratore**, dove l'asterisco ( * ) è un carattere separatore configurabile. Si supponga di eseguire la migrazione della posta elettronica degli stessi utenti da un server IMAP di Colombaia usando le credenziali di amministratore **mailadmin** e **P \@ ssw0rd**. Il file CSV risulterà simile al seguente:
   
 ```powershell
 EmailAddress,UserName,Password
@@ -125,7 +125,7 @@ paulc@contoso.edu,paul.cannon*mailadmin,P@ssw0rd
 
  **Mirapoint:**
   
-Se si sta eseguendo la migrazione della posta elettronica da Mirapoint Message Server, utilizzare il formato **#utente@dominio#NomeUtente_Amministratore#** per le credenziali di amministratore. Per eseguire la migrazione della posta elettronica da Mirapoint con le credenziali di amministratore **mailadmin** e **P@ssw0rd**, il file CSV risulterà simile al seguente:
+Se si sta eseguendo la migrazione della posta elettronica dal server dei messaggi di Mirapoint, utilizzare il formato **#user \@ dominio # Admin_UserName #** per le credenziali di amministratore. Per eseguire la migrazione della posta elettronica da Mirapoint utilizzando le credenziali di amministratore **mailadmin** e **P \@ SSW0RD**, il file CSV avrà l'aspetto seguente:
   
 ```powershell
 EmailAddress,UserName,Password

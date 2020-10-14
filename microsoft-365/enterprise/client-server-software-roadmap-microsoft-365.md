@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: La roadmap per configurare il software client e server per Microsoft 365.
-ms.openlocfilehash: 898464222b8296cee3ab12fe7351295f39a23736
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: d3401baa09d27ff9753f9a45ecb537c67701c0e9
+ms.sourcegitcommit: bcb88a6171f9e7bdb5b2d8c03cd628d11c5e7bbf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47950569"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48464409"
 ---
 # <a name="client-and-server-software-roadmap-for-microsoft-365"></a>Roadmap software client e server per Microsoft 365
 
@@ -60,7 +60,7 @@ Microsoft 365 Apps for enterprise installa automaticamente gli aggiornamenti e s
 
 ### <a name="office-2010"></a>Office 2010
 
-Per le versioni di Office nel rilascio di Office 2010, la fine del supporto è il **13 ottobre 2020**. Per altre informazioni, vedere [Roadmap della fine del supporto di Office 2010](https://docs.microsoft.com/deployoffice/office-2010-end-support-roadmap).
+Per le versioni di Office nella versione di Office 2010, il supporto è terminato il **13 ottobre 2020**. Per altre informazioni, vedere [Roadmap della fine del supporto di Office 2010](https://docs.microsoft.com/deployoffice/office-2010-end-support-roadmap).
 
 Anziché aggiornare i computer che eseguono Office 2010 a Office 2013 o Office 2016 (entrambi da aggiornare manualmente), è consigliabile:
 
@@ -117,7 +117,7 @@ Anziché aggiornare i prodotti server nel rilascio di Office 2007 con i prodotti
 
 ### <a name="office-server-2010"></a>Office Server 2010
 
-La fine del supporto per [Exchange Server 2010](exchange-2010-end-of-support.md) è prevista per il **13 ottobre 2020**.
+Il supporto per [Exchange Server 2010](exchange-2010-end-of-support.md) è terminato il **13 ottobre 2020**.
 
 La fine del supporto per [SharePoint Server 2010](upgrade-from-sharepoint-2010.md) è prevista per il **13 aprile 2021**.
 

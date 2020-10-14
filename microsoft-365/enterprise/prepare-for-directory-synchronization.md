@@ -26,12 +26,12 @@ search.appverid:
 - MBS150
 ms.assetid: 01920974-9e6f-4331-a370-13aea4e82b3e
 description: Descrive come prepararsi a eseguire il provisioning degli utenti a Microsoft 365 utilizzando la sincronizzazione della directory e i vantaggi a lungo termine dell'utilizzo di questo metodo.
-ms.openlocfilehash: 79d2a7932867531849ce75f8452b91e8c7ddd7b1
-ms.sourcegitcommit: 7e8151ff74cb1cfc0dd59fadcac423c338415d77
+ms.openlocfilehash: 41c2ff08c8e2ae11079e82d378110d10bd7cab3e
+ms.sourcegitcommit: bcb88a6171f9e7bdb5b2d8c03cd628d11c5e7bbf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/08/2020
-ms.locfileid: "48390174"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48464241"
 ---
 # <a name="prepare-for-directory-synchronization-to-microsoft-365"></a>Preparare la sincronizzazione della directory con Microsoft 365
 
@@ -159,7 +159,7 @@ Gli attributi necessari per la preparazione sono elencati di seguito:
   - Numero massimo di caratteri per il nome di dominio dopo il simbolo chiocciola (@): 48
   - Caratteri non validi: \% &amp; \* +/=? { } | \< \> ( ) ; : , [ ] " '
   - Caratteri consentiti: A – Z, a-z, 0 – 9,'. - _ ! # ^ ~
-  - Anche la dieresi è un carattere non valido.
+  - Le lettere con segni diacritici, ad esempio dieresi, accenti e tilde, sono caratteri non validi.
   - Il carattere @ è necessario in ogni valore **userPrincipalName**.
   - Il carattere @ non può essere il primo carattere in ogni valore **userPrincipalName**.
   - Il nome utente non può terminare con un punto (.), una e commerciale ( &amp; ), uno spazio o un segno di chiocciola (@).

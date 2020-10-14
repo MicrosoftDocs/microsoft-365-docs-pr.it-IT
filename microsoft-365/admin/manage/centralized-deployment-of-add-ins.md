@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: b4527d49-4073-4b43-8274-31b7a3166f92
 description: Determinare se il tenant e gli utenti soddisfano i requisiti, in modo che sia possibile utilizzare la distribuzione centralizzata per distribuire i componenti aggiuntivi di Office.
-ms.openlocfilehash: c3e306789f5b1c09e835d8d2c5ebea668bf14874
-ms.sourcegitcommit: c1ee4ed3c5826872b57339e1e1aa33b4d2209711
+ms.openlocfilehash: c89cb801a5b2fcad87227feaf4228b0dcabcf609
+ms.sourcegitcommit: bcb88a6171f9e7bdb5b2d8c03cd628d11c5e7bbf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "48235419"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48464051"
 ---
 # <a name="determine-if-centralized-deployment-of-add-ins-works-for-your-organization"></a>Determinare se la distribuzione centralizzata dei componenti aggiuntivi funziona per l'organizzazione
 
@@ -46,7 +46,7 @@ La distribuzione centralizzata supporta tre piattaforme desktop Windows, Mac e l
 ## <a name="requirements"></a>Requisiti
 
 La distribuzione centralizzata dei componenti aggiuntivi richiede che gli utenti utilizzino Microsoft 365 Apps for Enterprise o Microsoft 365 Business Premium (e che siano firmati in Office utilizzando l'ID dell'organizzazione) e dispongano di cassette postali di Exchange Online e Active Exchange Online. È necessario che la directory di sottoscrizione sia in o federata in Azure Active Directory.
-È possibile visualizzare i requisiti specifici per Office ed Exchange di seguito oppure utilizzare la[Verifica compatibilità della distribuzione centralizzata](#centralized-deployment-compatibility-checker).
+È possibile visualizzare i requisiti specifici per Office ed Exchange di seguito oppure utilizzare la [Verifica compatibilità della distribuzione centralizzata](#centralized-deployment-compatibility-checker).
 
 La distribuzione centralizzata non supporta quanto segue:
   
@@ -134,7 +134,8 @@ Al termine dell'esecuzione dello strumento, viene generato un file di output in 
     
 - Cassetta postale supportata: se la cassetta postale è abilitata per OAuth
 
-
+> [!NOTE]
+> L'autenticazione a più fattori non è supportata quando si utilizza il modulo di PowerShell per la distribuzione centrale.
   
 ## <a name="user-and-group-assignments"></a>Assegnazioni di utenti e gruppi
 
@@ -171,4 +172,3 @@ Se l'utente o gli utenti riscontrano problemi durante il caricamento del compone
 |Ufficio  <br/> | Log di Charles/Fiddler  <br/>  ID tenant ( [informazioni](https://docs.microsoft.com/onedrive/find-your-office-365-tenant-id.aspx))  <br/>  CorrelationId. Visualizzare l'origine di una delle pagine di Office e cercare il valore dell'ID correlazione e inviarlo al supporto:  <br/>`<input name=" **wdCorrelationId**" type="hidden" value=" **{BC17079E-505F-3000-C177-26A8E27EB623}**">`  <br/>  `<input name="user_id" type="hidden" value="1003bffd96933623"></form>`  <br/> |
 |Rich client (Windows, Mac)  <br/> | Log di Charles/Fiddler  <br/>  Creare numeri dell'app client (preferibilmente come schermata da **file/account**)  <br/> |
    
-
