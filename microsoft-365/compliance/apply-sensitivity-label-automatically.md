@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Quando si crea automaticamente un'etichetta di riservatezza, è possibile assegnare un'etichetta a un documento o un messaggio di posta elettronica oppure è possibile chiedere agli utenti di selezionare l'etichetta consigliata.
-ms.openlocfilehash: c4f00c0a11b172671da456b27e0e33c081728614
-ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
+ms.openlocfilehash: 87b1078462d6315e6cf4ddeb95832f20eae67375
+ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48326747"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48445478"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Applicare automaticamente un'etichetta di riservatezza al contenuto
 
@@ -107,7 +107,11 @@ Per ulteriori informazioni sulle etichette padre e sulle sottoetichette, vedere 
 
 L'assegnazione automatica di etichette nelle app Office per Windows è supportata dal client di etichettatura unificata di Azure Information Protection. Per l’etichettatura predefinita delle app di Office, questa funzionalità [prevede fasi di disponibilità diverse per app differenti](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps).
 
-Le impostazioni di applicazione automatica delle etichette per le app di Office sono disponibili quando si [crea o modifica un'etichetta di riservatezza](create-sensitivity-labels.md). È possibile scegliere di applicare automaticamente le etichette di riservatezza ai contenuti quando vengono rilevate informazioni sensibili. Scegliere da un elenco di tipi di informazioni sensibili o classificatori sottoponibili a training:
+Le impostazioni di applicazione automatica delle etichette per le app di Office sono disponibili quando si [crea o modifica un'etichetta di riservatezza](create-sensitivity-labels.md). Assicurarsi che **File e messaggi di posta elettronica** sia selezionato per l'ambito dell'etichetta: 
+
+![Opzioni relative all'ambito dell'etichetta di riservatezza per file e messaggi di posta elettronica](../media/filesandemails-scope-options-sensitivity-label.png)
+
+Mentre ci si sposta attraverso la procedura guidata, viene visualizzata la pagina **Applicazione automatica di etichette per le app di Office** in cui è possibile scegliere da un elenco di tipi di informazioni riservate o di classificatori sottoponibili a training:
 
 ![Condizioni delle etichette per l'applicazione automatica di etichette nelle app di Office](../media/sensitivity-labels-conditions.png)
 
@@ -202,7 +206,7 @@ Assicurarsi di conoscere i prerequisiti prima di configurare i criteri di etiche
     - Nel momento in cui vengono eseguiti i criteri di applicazione automatica di etichette, il file non deve essere aperto da un altro processo o utente. Un file estratto per la modifica rientra in questa categoria.
 
 - Se si prevede di usare [tipi di informazioni sensibili personalizzati](custom-sensitive-info-types.md) anziché quelli predefiniti: 
-    - I tipi di informazioni sensibili personalizzati vengono valutati in base a contenuti creati dopo il salvataggio di tali tipi. 
+    - I tipi di informazioni di riservatezza personalizzati vengono valutati in base a contenuti aggiunti a SharePoint o a OneDrive dopo il loro salvataggio. 
     - Per testare nuovi tipi di informazioni sensibili personalizzati, crearli prima di creare i criteri di applicazione automatica di etichette e quindi creare nuovi documenti con i dati di esempio per il test.
 
 - Una o più etichette di riservatezza [create e pubblicate](create-sensitivity-labels.md) (per almeno un utente) che è possibile selezionare per i criteri di applicazione automatica di etichette. Per queste etichette:

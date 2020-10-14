@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: Usare il Centro sicurezza e conformità di Office 365 o il Centro conformità Microsoft 365 per eseguire una ricerca nel log di controllo unificato e vedere le attività di utenti e amministratori nell'organizzazione.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 48d40cff907480f05dff8ba1c5c1584fc8289b1b
-ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
+ms.openlocfilehash: f1f2201d847001a5a9df4a367268f1f764367574
+ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48286042"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48446639"
 ---
 # <a name="search-the-audit-log-in-the-compliance-center"></a>Eseguire una ricerca nel log di controllo nel Centro conformità
 
@@ -456,6 +456,24 @@ La tabella seguente descrive le attività su file e pagine in SharePoint Online 
 |Visualizzazione segnalata dal client|ClientViewSignaled|Il client di un utente (ad esempio un sito Web o un'app per dispositivi mobili) ha segnalato che la pagina indicata è stata visualizzata dall'utente. Questa attività viene spesso registrata dopo un evento PagePrefetched per una pagina. <br/><br/>**NOTA**: poiché gli eventi ClientViewSignaled sono segnalati dal client, anziché dal server, è possibile che l'evento non sia registrato dal server e che quindi non compaia nel log di controllo. È anche possibile che le informazioni nel record di controllo non siano attendibili. Tuttavia, dato che l'identità dell'utente viene convalidata mediante il token usato per creare il segnale, l'identità dell'utente riportata nel record di controllo corrispondente è accurata. |
 |(nessuno)|PagePrefetched|Il client di un utente (ad esempio un sito Web o un'app per dispositivi mobili) ha richiesto la pagina indicata per migliorare le prestazioni in caso di esplorazione da parte dell'utente. Questo evento viene registrato per indicare che il contenuto della pagina è stato servito al client dell'utente. Questo evento non indica definitivamente che l'utente è passato alla pagina. <br/><br/> Quando il contenuto della pagina viene visualizzato dal client (come richiesto dall'utente), è necessario generare un evento ClientViewSignaled. Non tutti i client supportano l'indicazione di caricamento in background, pertanto alcune attività predefinite potrebbero essere registrate come eventi PageViewed.|
 ||||
+
+#### <a name="frequently-asked-questions-about-fileaccessed-and-filepreviewed-events"></a>Domande frequenti sugli eventi FileAccessed e FilePreviewed
+
+**Qualsiasi attività non utente potrebbe attivare i record di controllo FilePreviewed che contenga un agente utente come "OneDriveMpc-Transform_Thumbnail"?**
+
+Non si è a conoscenza degli scenari in cui le azioni non utente generano eventi di questo tipo. Azioni utente come l'apertura di una scheda del profilo utente (facendo clic sul nome o sull'indirizzo di posta elettronica in un messaggio in Outlook sul web) genererebbero eventi simili.
+
+**Le chiamate a OneDriveMpc-Transform_Thumbnail vengono sempre attivate intenzionalmente dall'utente?**
+
+No. Tuttavia, eventi simili possono essere registrati come il risultato del browser pre-fetch.
+
+**Se viene visualizzato un evento FilePreviewed derivante da un indirizzo IP registrato Microsoft, significa che l'anteprima è stata visualizzata sullo schermo del dispositivo dell'utente?**
+
+No. L'evento potrebbe essere stato registrato come il risultato del browser pre-fetch.
+
+**Esistono scenari in cui un utente che visualizza l'anteprima di un documento genera eventi FileAccessed?**
+
+Sia gli eventi FilePreviewed che FileAccessed indicano che una chiamata utente ha portato a una lettura del file (o a una lettura del rendering dell'anteprima del file). Mentre questi eventi devono essere allineati all'intento anteprima vs accesso, la distinzione dell'evento non garantisce l'intento dell'utente.
 
 #### <a name="the-appsharepoint-user-in-audit-records"></a>Utente app\@sharepoint nei record di controllo
 
