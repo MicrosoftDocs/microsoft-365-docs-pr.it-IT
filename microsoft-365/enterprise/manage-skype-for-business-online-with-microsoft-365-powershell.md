@@ -14,12 +14,12 @@ f1.keywords:
 ms.custom: ''
 ms.assetid: 054c16e6-9fd1-4e85-a0e6-81788b8410ea
 description: Usare PowerShell per Microsoft 365 per gestire i criteri, i criteri per gli utenti e le impostazioni delle riunioni di Skype for Business online.
-ms.openlocfilehash: d50f35d7d5e81622eb8dfc3bbf8328a8c43e9676
-ms.sourcegitcommit: aeb94601a81db3ead8610c2f36cff30eb9fe10e7
+ms.openlocfilehash: ff35463dc0c2e16106432c393b10e31e6bf0a5d2
+ms.sourcegitcommit: 22755cebfbfa2c4dc3f8b4f54ccb23636a211ee5
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "47430035"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "48477102"
 ---
 # <a name="manage-skype-for-business-online-with-powershell"></a>Gestire Skype for Business Online con PowerShell
 
@@ -29,21 +29,24 @@ Gli amministratori di Skype fo Business online sono responsabili della gestione 
 
 ## <a name="before-you-start"></a>Prima di iniziare
 
-Scaricare e installare il [Modulo di Windows PowerShell per Skype for Business Online](https://www.microsoft.com/download/details.aspx?id=39366), quindi riavviare il computer.
+  > [!Note]
+   > Il connettore di Skype for Business Online fa parte al momento del modulo di Teams PowerShell più recente. Se si usa la versione pubblica di PowerShell di Teams più recente, non è necessario installare il connettore di Skype for Business Online.
+   
+Installare il [modulo di PowerShell di Teams](https://docs.microsoft.com/microsoftteams/teams-powershell-install).
 
 
-## <a name="connect-using-skype-for-business-online-admin-credentials"></a>Connettersi con le credenziali di amministratore di Skype for Business online
+## <a name="connect-using-admin-credentials"></a>Connettersi con le credenziali di amministratore.
 
-1. Aprire la finestra del prompt dei comandi di Windows PowerShell ed eseguire i seguenti comandi:
+1. Aprire la finestra del prompt dei comandi di Windows PowerShell ed eseguire i comandi seguenti:
     
    ```powershell
-   Import-Module SkypeOnlineConnector
+   Import-Module MicrosoftTeams
    $userCredential = Get-Credential
    $sfbSession = New-CsOnlineSession -Credential $userCredential
    Import-PSSession $sfbSession
    ```
 
-2. Nella finestra di dialogo **Richiesta credenziali di Windows PowerShell**, scrivere nome utente e password dell'account amministratore di Skype for Business, e quindi selezionare **OK**.
+2. Nella finestra di dialogo **Richiesta credenziali di Windows PowerShell**, digitare il nome utente e password dell'account amministratore, poi selezionare **OK**.
 
 
 ## <a name="connect-using-an-admin-account-with-multi-factor-authentication"></a>Connettersi con un account di amministratore con l'autenticazione a più fattori
@@ -51,7 +54,7 @@ Scaricare e installare il [Modulo di Windows PowerShell per Skype for Business O
 1. Aprire la finestra del prompt dei comandi di Windows PowerShell ed eseguire i seguenti comandi:
 
    ```powershell
-   Import-Module SkypeOnlineConnector
+   Import-Module MicrosoftTeams
    $sfbSession = New-CsOnlineSession
    Import-PSSession $sfbSession
    ```
