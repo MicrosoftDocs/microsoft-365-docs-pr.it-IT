@@ -18,41 +18,40 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: ''
 description: "Riepilogo: configurare il writeback della password per l'ambiente di testing di Microsoft 365."
-ms.openlocfilehash: b8c89ca7ef967c423b89db4559ef04f715a5f869
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: b999d50b0e98b11638199327bd7ffe7269b261ce
+ms.sourcegitcommit: 53ff1fe6d6143b0bf011031eea9b85dc01ae4f74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46686227"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48487129"
 ---
 # <a name="password-writeback-for-your-microsoft-365-test-environment"></a>Writeback della password per l'ambiente di testing di Microsoft 365
 
 *Questa guida del laboratorio di testing può essere utilizzata solo per Microsoft 365 per gli ambienti di testing dell'organizzazione.*
 
-Con il writeback delle password, gli utenti possono aggiornare le password tramite Azure Active Directory (Azure AD) e la modifica verrà replicata nell'istanza locale di Active Directory Domain Services (AD DS). Grazie al writeback delle password gli utenti non devono aggiornare le password tramite l'istanza locale di AD DS in cui sono archiviati gli account utente originali. Questa funzione è utile per gli utenti che lavorano da remoto o in roaming e non dispongono di una connessione di accesso remoto alla rete locale.
+Gli utenti possono utilizzare il writeback delle password per aggiornare le proprie password tramite Azure Active Directory (Azure AD), che viene quindi replicato nei servizi di dominio Active Directory locali (AD DS). Con il writeback delle password, gli utenti non devono aggiornare le proprie password tramite il servizio di dominio Active Directory locale in cui sono archiviati gli account utente originali. Questo consente agli utenti di roaming o remoti che non dispongono di una connessione di accesso remoto alla rete locale.
 
 In questo articolo viene descritto come configurare l'ambiente di testing di Microsoft 365 per il writeback delle password.
 
-Esistono due fasi per la configurazione:
-
-1.    Creare l'ambiente di testing dell'organizzazione simulata di Microsoft 365 con per la sincronizzazione hash delle password.
-2.    Abilitare il writeback delle password per il dominio TESTLAB Active Directory Domain Services.
-    
+La configurazione dell'ambiente di testing per il writeback delle password comporta due fasi:
+- [Fase 1: configurare la sincronizzazione hash delle password per l'ambiente di testing di Microsoft 365](#phase-1-configure-password-hash-synchronization-for-your-microsoft-365-test-environment)
+- [Fase 2: abilitare il writeback delle password per il dominio TESTLAB Active Directory Domain Services.](#phase-2-enable-password-writeback-for-the-testlab-ad-ds-domain)
+  
 ![Guide al lab di test per il cloud Microsoft](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
 > [!TIP]
-> Fare clic [qui](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) per consultare una mappa di tutti gli articoli disponibili nella serie di guide al lab di test di Microsoft 365 per le aziende.
-  
+> Per una mappa visiva su tutti gli articoli della guida del laboratorio di testing di Microsoft 365 for Enterprise, accedere a [microsoft 365 per la guida dello stack del laboratorio di testing dell'organizzazione](../downloads/Microsoft365EnterpriseTLGStack.pdf).
+
 ## <a name="phase-1-configure-password-hash-synchronization-for-your-microsoft-365-test-environment"></a>Fase 1: configurare la sincronizzazione hash delle password per l'ambiente di testing di Microsoft 365
 
-Prima di tutto, seguire le istruzioni riportate in [Sincronizzazione hash delle password](password-hash-sync-m365-ent-test-environment.md). Di seguito è riportata la configurazione risultante.
+Per prima cosa, seguire le istruzioni riportate in [sincronizzazione hash delle password](password-hash-sync-m365-ent-test-environment.md). La configurazione risultante è simile alla seguente:
   
 ![L'organizzazione simulata con ambiente di testing per la sincronizzazione hash delle password](../media/pass-through-auth-m365-ent-test-environment/Phase1.png)
   
-Questa configurazione è costituita da: 
+Questa configurazione è costituita da:
   
 - Un abbonamento di valutazione o a pagamento a Microsoft 365 E5.
-- Una intranet dell’organizzazione semplificata connessa a Internet e costituita dalle macchine virtuali DC1 APP1 e CLIENT1 in una sottorete di una rete virtuale Azure. 
+- Una Intranet dell'organizzazione semplificata connessa a Internet, costituita dalle macchine virtuali DC1, APP1 e CLIENT1 in una subnet di una rete virtuale di Azure.
 - Azure AD Connect viene eseguito su APP1 per sincronizzare il dominio TESTLAB di Active Directory Domain Services con il tenant di Azure AD dell'abbonamento a Microsoft 365.
 
 ## <a name="phase-2-enable-password-writeback-for-the-testlab-ad-ds-domain"></a>Fase 2: abilitare il writeback delle password per il dominio TESTLAB Active Directory Domain Services.
@@ -61,42 +60,42 @@ Per iniziare, configurare l'account utente 1 con il ruolo amministratore globale
 
 1. Dall’[Interfaccia di amministrazione di Microsoft 365](https://portal.microsoft.com), accedere con l'account di amministratore globale.
 
-2. Fare clic su **Utenti attivi**.
+2. Selezionare **utenti attivi**.
  
-3. Nella pagina **Utenti attivi**, fare clic sull’account **Utente1**,
+3. Nella pagina **utenti attivi** selezionare l'account **User1**
 
-4. Nel riquadro **Utente1**, fare clic su **Modifica** accanto a **Ruoli**.
+4. Nel riquadro **User1** selezionare **modifica** accanto a **ruoli**.
 
-5. Nel riquadro **Modifica ruoli utente** per utente1, fare clic su **Amministratore globale**. Fare clic su **Salva** e quindi su **Chiudi**.
+5. Nel riquadro **Modifica ruoli utente** per User1, selezionare **amministratore globale**, fare clic su **Salva**, quindi selezionare **Chiudi**.
 
 Quindi, configurare l'account Utente 1 con le impostazioni di sicurezza che gli consentono di cambiare le password per conto di altri utenti nel dominio TESTLAB Active Directory Domain Services.
 
 1. Dal [portale di Azure](https://portal.azure.com), accedere con l'account di amministratore globale e connettersi ad APP1 con l'account TESTLAB\Utente1.
 
-2.  Dal desktop di APP1, fare clic su **Inizio**, digitare **attivo**, quindi fare clic su **Utenti e computer di Active Directory**.
+2. Dal desktop di APP1, selezionare **Start**, immettere **Active**, quindi selezionare **utenti e computer di Active Directory**.
 
-3. Fare clic su **Visualizza** nella barra dei menu. Se l’opzione **Funzionalità avanzate** non è attiva, fare clic per abilitarla.
+3. Sulla barra dei menu, selezionare **Visualizza**. Se **funzionalità avanzate** non è abilitata, selezionarla per abilitarla.
 
-4. Nel riquadro della struttura, fare clic con il pulsante destro del mouse sul dominio, fare clic su **Proprietà** e quindi sulla scheda **Protezione**.
+4. Nel riquadro dell'albero, seleziona e tieni premuto (o fai clic con il pulsante destro del mouse) sul dominio, seleziona **Proprietà**e quindi seleziona la scheda **sicurezza** .
 
-5. Fare clic su **Avanzate**.
+5. Selezionare **Avanzate**.
 
-6. Nella scheda **Autorizzazioni**, fare clic su **Aggiungi**.
+6. Nella scheda **autorizzazioni** selezionare **Aggiungi**.
 
-7. Fare clic su **Seleziona un'entità**, digitare **Utente1**, quindi fare clic su **OK**.
+7. Selezionare **Seleziona un'entità**, immettere **User1**e quindi fare clic su **OK**.
 
 8. In **Si applica a**, selezionare **Oggetti utente discendenti**.
 
 9. In **Autorizzazioni**, selezionare le opzioni seguenti:
 
-    - Cambiare la password
-    - Reimpostare la password
+    - **Cambia password**
+    - **Reimpostare la password**
 
 10. In **Proprietà**, selezionare le opzioni seguenti:
-    - Scrittura lockoutTime
-    - Scrittura pwdLastSet
+    - **Scrittura lockoutTime**
+    - **Scrittura pwdLastSet**
 
-11. Fare clic su **OK** tre volte per salvare le modifiche.
+11. Selezionare tre volte **OK** per salvare le modifiche.
 
 12. Chiudere **Utenti e computer di Active Directory**.
 
@@ -106,31 +105,31 @@ Successivamente, configurare Azure AD Connect su APP1 per il writeback delle pas
 
 2. Dal desktop di APP1, fare doppio clic su **Azure AD Connect**.
 
-3. Nella **Pagina di benvenuto** fare clic su **Configura**.
+3. Nella **pagina iniziale**, selezionare **Configura**.
 
-4. Nella pagina **Attività aggiuntive**, fare clic su **Personalizza le opzioni di sincronizzazione**, quindi fare clic su **Avanti**.
+4. Nella pagina **attività aggiuntive** selezionare Personalizza le **Opzioni di sincronizzazione**, quindi fare clic su **Avanti**.
 
-5. Nella pagina **Connessione ad Azure AD** digitare le credenziali dell'account amministratore globale e fare clic su **Avanti**.
+5. Nella pagina **connessione ad Azure ad** , immettere le credenziali dell'account amministratore globale e quindi fare clic su **Avanti**.
 
-6. Nelle pagine **Connessione delle directory** e **Filtro di domini/unità organizzative**, fare clic su **Avanti**.
+6. Nelle pagine **Connect Directories** and **Domain/ou Filtering** fare clic su **Avanti**.
 
-7. Nella pagina **Funzionalità facoltative** selezionare **Writeback password** e fare clic su **Avanti**. 
+7. Nella pagina **funzionalità facoltative** , selezionare **writeback password**e quindi fare clic su **Avanti**.
 
-8. Nella pagina **Pronto per la configurazione**, fare clic su **Configura** e attendere il completamento del processo.
+8. Nella pagina **pronto per la configurazione** , selezionare **Configura** e attendere il completamento del processo.
 
-9. Quando viene visualizzata la fine della configurazione, fare clic su **Esci**.
+9. Quando viene visualizzata la configurazione finale, selezionare **Esci**.
 
-È ora possibile testare il writeback delle password per gli utenti in computer non connessi alla rete virtuale della rete intranet simulata.
+È ora possibile testare il writeback delle password per gli utenti nei computer che non sono connessi alla rete virtuale della Intranet simulata.
 
-Di seguito è riportata la configurazione risultante:
+La configurazione risultante è simile alla seguente:
 
 ![L'organizzazione simulata con ambiente di testing per l'autenticazione pass-through](../media/pass-through-auth-m365-ent-test-environment/Phase1.png)
 
 Questa configurazione è costituita da:
 
-- Una versione di valutazione di Microsoft 365 E5 o abbonamenti a pagamento con dominio DNS TESTLAB.\<your domain name> registrato.
-- Una intranet dell’organizzazione semplificata connessa a Internet e costituita dalle macchine virtuali DC1 APP1 e CLIENT1 in una sottorete di una rete virtuale Azure. 
-- Azure AD Connect viene eseguito su APP1 per sincronizzare l'elenco di account e gruppi dal tenant di Azure AD dell'abbonamento a Microsoft 365 al dominio TESTLAB di Active Directory Domain Services. 
+- Una versione di valutazione di Microsoft 365 E5 o abbonamenti a pagamento con dominio DNS TESTLAB.\<*your domain name*> registrato.
+- Una Intranet dell'organizzazione semplificata connessa a Internet, costituita dalle macchine virtuali DC1, APP1 e CLIENT1 in una subnet di una rete virtuale di Azure.
+- Azure AD Connect viene eseguito su APP1 per sincronizzare l'elenco di account e gruppi dal tenant di Azure AD dell'abbonamento a Microsoft 365 al dominio TESTLAB di Active Directory Domain Services.
 - Il writeback delle password è abilitato in modo che gli utenti possono modificare la password tramite Azure AD senza dover essere connessi alla rete intranet semplificata.
 
 ## <a name="next-step"></a>Passaggio successivo

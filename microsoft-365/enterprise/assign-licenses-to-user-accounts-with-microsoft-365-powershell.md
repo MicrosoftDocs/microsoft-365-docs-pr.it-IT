@@ -21,12 +21,12 @@ ms.assetid: ba235f4f-e640-4360-81ea-04507a3a70be
 search.appverid:
 - MET150
 description: In questo articolo vengono fornite informazioni su come utilizzare PowerShell per assegnare una licenza Microsoft 365 agli utenti senza licenza.
-ms.openlocfilehash: f042f8109bf9ac9b634bc66509c60a5181fb1af6
-ms.sourcegitcommit: c1ee4ed3c5826872b57339e1e1aa33b4d2209711
+ms.openlocfilehash: 8c3165b99477afa14e6d2b0da927b5f64c416ef1
+ms.sourcegitcommit: 3165329d1fb5a7fd866ff287bea3b6354ea2be18
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "48235619"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "48580941"
 ---
 # <a name="assign-microsoft-365-licenses-to-user-accounts-with-powershell"></a>Assegnare le licenze Microsoft 365 agli account utente con PowerShell
 
@@ -34,9 +34,13 @@ ms.locfileid: "48235619"
 
 Gli utenti non possono utilizzare i servizi di Microsoft 365 finché all'account non è stata assegnata una licenza da un piano di gestione delle licenze. È possibile utilizzare PowerShell per assegnare rapidamente le licenze agli account senza licenza. 
 
->[!Note]
->Gli account utente devono essere assegnati a un percorso. È possibile eseguire questa operazione dalle proprietà di un account utente nell'interfaccia di amministrazione di Microsoft 365 o da PowerShell.
->
+Gli account utente devono prima essere assegnati a un percorso. Se si specifica un percorso, è necessario creare un nuovo account utente nell'interfaccia di [amministrazione di Microsoft 365](../admin/add-users/add-users.md). 
+
+Gli account sincronizzati dai servizi di dominio Active Directory locali non dispongono per impostazione predefinita di una posizione specificata. È possibile configurare una posizione per questi account da:
+
+- L'interfaccia di amministrazione di Microsoft 365
+ - [PowerShell](configure-user-account-properties-with-microsoft-365-powershell.md)
+ - [Portale di Azure](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal) (gli utenti di**Active Directory**  >  **Users** > account **Profile**utente >  >  **Contact info**  >  **paese o area geografica**dei contatti del profilo).
 
 >[!Note]
 >[Informazioni su come assegnare le licenze agli account utente](https://docs.microsoft.com/microsoft-365/admin/manage/assign-licenses-to-users) con l'interfaccia di amministrazione di Microsoft 365. Per un elenco di risorse aggiuntive, vedere [Manage Users and groups](https://docs.microsoft.com/microsoft-365/admin/add-users/).

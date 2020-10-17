@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - m365solution-identitydevice
 - m365solution-overview
-ms.openlocfilehash: 6037d997f43abfaf1f2d6b7fd55143fb0332dbe3
-ms.sourcegitcommit: bcb88a6171f9e7bdb5b2d8c03cd628d11c5e7bbf
+ms.openlocfilehash: 6d0f090f9931e88566e37b038cc30375657019c3
+ms.sourcegitcommit: 53ff1fe6d6143b0bf011031eea9b85dc01ae4f74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48464433"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48487673"
 ---
 # <a name="identity-and-device-access-configurations"></a>Configurazioni di identità e accesso dei dispositivi
 
@@ -193,6 +193,10 @@ Microsoft consiglia di non creare set di criteri che si applicano a tutte le app
 2. Configurare i criteri di accesso condizionale e di identità comuni.
 3. Configurare i criteri di accesso condizionale per gli utenti guest ed esterni.
 4. Configurare i criteri di accesso condizionale per le app cloud di Microsoft 365, ad esempio Microsoft teams, Exchange Online e SharePoint.
+
+<!--
+After you have configured identity and device access, see the [Azure AD feature deployment guide](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-deployment-checklist-p2) for a phased checklist of additional features to consider and [Azure AD Identity Governance](https://docs.microsoft.com/azure/active-directory/governance/) to protect, monitor, and audit access.  
+--> 
 
 ## <a name="next-step"></a>Passaggio successivo
 

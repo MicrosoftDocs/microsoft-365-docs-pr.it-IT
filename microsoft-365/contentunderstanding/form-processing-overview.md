@@ -9,12 +9,12 @@ ms.prod: microsoft-365-enterprise
 search.appverid: ''
 localization_priority: Priority
 description: Informazioni sull'elaborazione di moduli in Microsoft SharePoint Syntex
-ms.openlocfilehash: 9b5b9b1c54220037e1c10f2722a641b526592f84
-ms.sourcegitcommit: 0f48beaca3afa4df12d41847014975d50a4ebe7d
+ms.openlocfilehash: 7340e0c78db71fbb0acc05c2985b60f6bafbba80
+ms.sourcegitcommit: 705915f8bf9b7c082d12a009523d8aa0670a74a1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "48338614"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48493674"
 ---
 # <a name="form-processing-overview"></a>Panoramica dell'elaborazione di moduli
 
@@ -33,13 +33,9 @@ Ad esempio, è possibile creare un modello di elaborazione moduli che identifich
 
 ![Visualizzazione della raccolta documenti](../media/content-understanding/doc-lib-done.png)</br>  
 
-È anche possibile usare i file di esempio per eseguire il training del modello e definire le informazioni da estrarre dal modulo. Il layout del documento viene acquisito eseguendo il training del modello che apprende come estrarre i dati da posizioni simili nel modulo, poiché queste hanno un layout strutturato analogo. 
+L’utente usa i file di esempio per eseguire il training del modello e definire le informazioni da estrarre dal modulo. Il layout del documento viene acquisito eseguendo il training del modello. Per iniziare, sono necessari solo cinque moduli. AI Builder analizza i file di esempio per individuare le coppie chiave-valore e l’utente può identificare manualmente quelli che non sono stati rilevati.  AI Builder consente di testare l’accuratezza del modello nei file di esempio.
 
 Per iniziare, sono necessari almeno cinque moduli. AI Builder analizza i file di esempio per individuare le coppie chiave-valore e poi identifica manualmente quelli che non sono stati rilevati.  AI Builder consente di testare l’accuratezza del modello nei file di esempio.
-
-Dopo aver eseguito il training del modello e averlo pubblicato, è possibile usarlo per creare un [flusso di Power Automate](https://docs.microsoft.com/power-automate/getting-started) che viene eseguito dopo aver caricato un file nella raccolta documenti di SharePoint. Estrae quindi i dati identificati nel modello. I dati estratti saranno visualizzati nelle colonne di visualizzazione della raccolta documenti del modello.
-
-L’utente usa i file di esempio per eseguire il training del modello e definire le informazioni da estrarre dal modulo. Il layout del documento viene acquisito eseguendo il training del modello. Per iniziare, sono necessari solo cinque moduli. AI Builder analizza i file di esempio per individuare le coppie chiave-valore e l’utente può identificare manualmente quelli che non sono stati rilevati.  AI Builder consente di testare l’accuratezza del modello nei file di esempio.
 
 Dopo aver eseguito il training del modello e averlo pubblicato, quest’ultimo crea un [flusso di Power Automate](https://docs.microsoft.com/power-automate/getting-started). Il flusso viene eseguito quando un file è caricato nella raccolta documenti di SharePoint ed estrarrà i dati che sono stati identificati nel modello. I dati estratti saranno visualizzati nelle colonne di visualizzazione della raccolta documenti del modello.
 

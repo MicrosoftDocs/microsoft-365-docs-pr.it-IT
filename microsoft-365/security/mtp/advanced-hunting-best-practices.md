@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: f18a98b19b6a1920d1e4d2094ba0bab74f10035e
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: e3b29a8182e38fa05e5f791478157c978632fb13
+ms.sourcegitcommit: 22755cebfbfa2c4dc3f8b4f54ccb23636a211ee5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48430140"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "48477006"
 ---
 # <a name="advanced-hunting-query-best-practices"></a>Procedure consigliate per query in Ricerca avanzata
 
@@ -56,7 +56,7 @@ I clienti che eseguono più query regolarmente devono tenere conto dei consumi e
 
 - **Contiene i battimenti**: per evitare che le sottostringhe vengano cercate inutilmente nelle parole, utilizzare l' `has` operatore anziché `contains` . [Informazioni sugli operatori di stringa](https://docs.microsoft.com/azure/data-explorer/kusto/query/datatypes-string-operators)
 - **Cerca in colonne specifiche**: cercare in una colonna specifica invece di eseguire ricerche full-text su tutte le colonne. Non utilizzare `*` per controllare tutte le colonne.
-- **Distinzione tra maiuscole**e minuscole per velocità: le ricerche con distinzione tra maiuscole e minuscole sono più specifiche e generalmente più performanti. Nomi di [operatori stringa](https://docs.microsoft.com/azure/data-explorer/kusto/query/datatypes-string-operators)con distinzione tra maiuscole e minuscole, ad esempio `has_cs` e `contains_cs` , in genere terminano con `_cs` . È inoltre possibile utilizzare l'operatore Equals con distinzione tra maiuscole e minuscole `==` anziché `~=` .
+- **Distinzione tra maiuscole**e minuscole per velocità: le ricerche con distinzione tra maiuscole e minuscole sono più specifiche e generalmente più performanti. Nomi di [operatori stringa](https://docs.microsoft.com/azure/data-explorer/kusto/query/datatypes-string-operators)con distinzione tra maiuscole e minuscole, ad esempio `has_cs` e `contains_cs` , in genere terminano con `_cs` . È inoltre possibile utilizzare l'operatore Equals con distinzione tra maiuscole e minuscole `==` anziché `=~` .
 - **Parse, non estrarre**: quando possibile, utilizzare l' [operatore parse](https://docs.microsoft.com/azure/data-explorer/kusto/query/parseoperator) o una funzione di analisi come [parse_json ()](https://docs.microsoft.com/azure/data-explorer/kusto/query/parsejsonfunction). Evitare l' `matches regex` operatore stringa o la [funzione Extract ()](https://docs.microsoft.com/azure/data-explorer/kusto/query/extractfunction), che utilizzano entrambe le espressioni regolari. Riservare l'utilizzo dell'espressione regolare per scenari più complessi. [Altre informazioni sulle funzioni di analisi](#parse-strings)
 - **Filtro tabelle non espressioni**: non filtrare su una colonna calcolata se è possibile filtrare in una colonna di tabella.
 - **N. tre caratteri termini**: evitare il confronto o il filtraggio utilizzando termini con tre caratteri o meno. Questi termini non sono indicizzati e la loro corrispondenza richiederà più risorse.

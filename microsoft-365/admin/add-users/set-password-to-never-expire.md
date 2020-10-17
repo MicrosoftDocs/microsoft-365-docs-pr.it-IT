@@ -2,8 +2,8 @@
 title: Impostare la password di un singolo utente in modo che non scada mai
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
-author: cmcatee-MSFT
+ms.author: kwekua
+author: kwekua
 manager: mnirkhe
 audience: Admin
 ms.topic: article
@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: f493e3af-e1d8-4668-9211-230c245a0466
 description: Informazioni su come impostare le singole password utente in modo che non scadano mai, utilizzando Windows PowerShell.
-ms.openlocfilehash: 01817aba0de1f5ca5f0b9bdf7feb1d03d72f6a24
-ms.sourcegitcommit: a6625f76e8f19eebd9353ed70c00d32496ec06eb
+ms.openlocfilehash: e778ad8a020a6767934d51f8bc227bfc39b13a9b
+ms.sourcegitcommit: 3165329d1fb5a7fd866ff287bea3b6354ea2be18
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47361750"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "48580917"
 ---
 # <a name="set-an-individual-users-password-to-never-expire"></a>Impostare la password di un singolo utente in modo che non scada mai
 
@@ -35,7 +35,7 @@ In questo articolo viene illustrato come impostare una password per un singolo u
 
 ## <a name="before-you-begin"></a>Prima di iniziare
 
-Questo articolo è per le persone che impostano criteri di scadenza delle password in un'azienda, un istituto di istruzione o un'organizzazione no profit. Per eseguire questa procedura, è necessario eseguire l'accesso con l'account di amministratore di Microsoft 365. [Che cos'è un account di amministratore?](../admin-overview/admin-overview.md). 
+Questo articolo è per le persone che impostano criteri di scadenza delle password in un'azienda, un istituto di istruzione o un'organizzazione no profit. Per completare questa procedura, è necessario accedere con l'account amministratore di Microsoft 365. [Che cos'è un account amministratore?](../admin-overview/admin-overview.md). 
 
 Per eseguire questa procedura è necessario essere un [amministratore globale o una password](about-admin-roles.md) .
 
@@ -126,7 +126,7 @@ Eseguire uno dei comandi riportati di seguito:
 > [!WARNING]
 > Account utente configurati con il `-PasswordPolicies DisablePasswordExpiration` parametro still Age in base all' `pwdLastSet` attributo dell'account utente. Ad esempio, se si impostano le password degli utenti a non scadere mai e quindi 90 o più giorni passano, le password scadono ancora. In base all' `pwdLastSet` attributo dell'account utente, per gli account utente configurati con il `-PasswordPolicies None` parametro, tutte le password con un `pwdLastSet` tempo precedente a 90 giorni richiedono all'utente di modificarle al successivo accesso. Questa modifica può influire su un numero elevato di utenti.
 
-## <a name="related-content"></a>Contenuto correlato
+## <a name="related-content"></a>Contenuti correlati
 
 [Consentire agli utenti di reimpostare le loro password](../add-users/let-users-reset-passwords.md)
 

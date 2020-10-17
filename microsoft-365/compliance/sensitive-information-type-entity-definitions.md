@@ -18,12 +18,12 @@ ms.collection:
 hideEdit: true
 feedback_system: None
 description: La prevenzione della perdita di dati (DLP) nel &amp; Centro sicurezza e conformità include 80 tipi di informazioni riservate pronte per l'uso nei criteri DLP. In questo argomento vengono elencati tutti questi tipi di informazioni riservate e illustrata la ricerca eseguita dal criterio DLP quando rileva ciascun tipo di informazioni.
-ms.openlocfilehash: adc1006628b8b4f13d30f2001fee0871b51b18ca
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: 8482501dc978433587c431d18ec93b9e78fb8e03
+ms.sourcegitcommit: 53ff1fe6d6143b0bf011031eea9b85dc01ae4f74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48430433"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48487494"
 ---
 # <a name="sensitive-information-type-entity-definitions"></a>Definizioni delle entità tipo di informazioni sensibili
 
@@ -670,36 +670,155 @@ No
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
   
 - L'espressione regolare  `Regex_austria_eu_driver's_license_number` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola chiave from  `Keywords_austria_eu_driver's_license_number` . 
+- Una parola chiave da  `Keywords_eu_driver's_license_number` o `Keywords_austria_eu_driver's_license_number` viene trovata. 
     
 ```xml
-<!-- EU Driver's License Number -->
-<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
+      <!-- Austria Driver's License Number -->
+      <Entity id="682f18ce-44eb-482b-8198-2bcb96a0761e" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_austria_eu_driver's_license_number" />
-          <Match idRef="Keywords_austria_eu_driver's_license_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_austria_eu_driver's_license_number" />
+          </Any>
         </Pattern>
-    </Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>Parole chiave
 
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver ' s_license_number
+
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
+- LIC del driver
+- driver driver'lics
+- patente di guida
+- licenze per i driver
+- patente di guida
+- licenze per i driver
+- driverslic
+- driverslics
+- driverslicence
+- driverslicences
+- driverslicense
+- driverslicenses
+- driver Lic
+- driver driver'lics
+- patente di guida
+- licenze per i driver
+- patente di guida
+- licenze per i conducenti
+- driver'lic
+- driver ' LiCS
+- driver ' License
+- driver ' licenses
+- driver'licence
+- driver'licences
+- LIC del driver
+- driver ' driver'lics
+- patente di guida
+- licenze per i driver
+- patente di guida
+- patenti del conducente
+- driver'slic
+- driver'slics
+- secondola
+- driver'slicenses
+- driver'slicence
+- driver'slicences
+- LIC del conducente
+- driver'lics del conducente
+- patente di guida
+- licenze del conducente
+- patente di guida
+- patenti di guida
+- DL #
+- DLS #
+- driverlic #
+- driverlics #
+- driverlicense #
+- driverlicenses #
+- driverlicence #
+- driverlicences #
+- LIC del driver #
+- driver driver'lics #
+- patente di guida #
+- licenze per i driver #
+- licenze per i driver #
+- driverslic #
+- driverslics #
+- driverslicense #
+- driverslicenses #
+- driverslicence #
+- driverslicences #
+- driver Lic #
+- driver driver'lics #
+- patente di guida #
+- licenze per i driver #
+- patente di guida #
+- licenze per i conducenti #
+- driver'lic #
+- driver ' LiCS #
+- driver ' License #
+- driver ' licenses #
+- driver'licence #
+- driver'licences #
+- LIC del driver #
+- driver ' driver'lics #
+- patente di guida #
+- licenze per i driver #
+- patente di guida #
+- patenti del conducente #
+- driver'slic #
+- driver'slics #
+- secondola #
+- driver'slicenses #
+- driver'slicence #
+- driver'slicences #
+- LIC del conducente #
+- driver'lics del conducente #
+- patente di guida #
+- licenze del conducente #
+- patente di guida #
+- patenti di guida #
+- driving licence
+ 
+- patente di guida
+- dlno #
+- driv Lic
+- driv licen
+- licenza di driv
+- licenze di driv
+- licenza driv
+- licenze di driv
+- driver licen
+- driver licen
+- licei del conducente
+- Guida di Lic
+- Guida licen
+- patenti di guida
+- driving licence
+
+- driving licences
+
+- permesso di guida
+- DL No
+- dlno
+- numero DL
+
+
 #### <a name="keywords_austria_eu_drivers_license_number"></a>Keywords_austria_eu_driver ' s_license_number
 
-- DL #
-- driver license
-- numero della patente di guida
-- patente di guida
-- driver Lic.
-- drivers license
-- driver's licence
-- driver's license
-- numero della patente di guida
-- numero di patente del conducente
-- numero della patente di guida
-- dlno #
 - fuhrerschein
-- fuhrerschein Republik Osterreich
+- führerschein
+- Führerscheine
+- Führerscheinnummer
+- Führerscheinnummern
 
 ## <a name="austria-identity-card"></a>Carta d'identità Austria
 Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
@@ -1501,41 +1620,163 @@ No
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
 - L'espressione regolare  `Regex_belgium_eu_driver's_license_number` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola chiave from  `Keywords_belgium_eu_driver's_license_number` .
+- Una parola chiave da `Keywords_eu_driver's_license_number` o `Keywords_belgium_eu_driver's_license_number` viene trovata.
     
 ```xml
- <!-- EU Driver's License Number -->
-<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
+      <!-- Belgium Driver's License Number -->
+      <Entity id="d89fd329-9324-433c-b687-2c37bd5166f3" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_belgium_eu_driver's_license_number" />
-          <Match idRef="Keywords_belgium_eu_driver's_license_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_belgium_eu_driver's_license_number" />
+          </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>Parole chiave
 
-**Keywords__belgium_eu_driver ' s_license_number**
 
-- DL #
-- driver license
-- numero della patente di guida
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver ' s_license_number
+
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
+- LIC del driver
+- driver driver'lics
 - patente di guida
-- driver Lic.
-- drivers license
-- drivers licence
-- driver's license
-- numero della patente di guida
-- numero di patente del conducente
+- licenze per i driver
+- patente di guida
+- licenze per i driver
+- driverslic
+- driverslics
+- driverslicence
+- driverslicences
+- driverslicense
+- driverslicenses
+- driver Lic
+- driver driver'lics
+- patente di guida
+- licenze per i driver
+- patente di guida
+- licenze per i conducenti
+- driver'lic
+- driver ' LiCS
+- driver ' License
+- driver ' licenses
+- driver'licence
+- driver'licences
+- LIC del driver
+- driver ' driver'lics
+- patente di guida
+- licenze per i driver
+- patente di guida
+- patenti del conducente
+- driver'slic
+- driver'slics
+- secondola
+- driver'slicenses
+- driver'slicence
+- driver'slicences
+- LIC del conducente
+- driver'lics del conducente
+- patente di guida
+- licenze del conducente
+- patente di guida
+- patenti di guida
+- DL #
+- DLS #
+- driverlic #
+- driverlics #
+- driverlicense #
+- driverlicenses #
+- driverlicence #
+- driverlicences #
+- LIC del driver #
+- driver driver'lics #
+- patente di guida #
+- licenze per i driver #
+- licenze per i driver #
+- driverslic #
+- driverslics #
+- driverslicense #
+- driverslicenses #
+- driverslicence #
+- driverslicences #
+- driver Lic #
+- driver driver'lics #
+- patente di guida #
+- licenze per i driver #
+- patente di guida #
+- licenze per i conducenti #
+- driver'lic #
+- driver ' LiCS #
+- driver ' License #
+- driver ' licenses #
+- driver'licence #
+- driver'licences #
+- LIC del driver #
+- driver ' driver'lics #
+- patente di guida #
+- licenze per i driver #
+- patente di guida #
+- patenti del conducente #
+- driver'slic #
+- driver'slics #
+- secondola #
+- driver'slicenses #
+- driver'slicence #
+- driver'slicences #
+- LIC del conducente #
+- driver'lics del conducente #
+- patente di guida #
+- licenze del conducente #
+- patente di guida #
+- patenti di guida #
+- driving licence
+ 
+- patente di guida
 - dlno #
+- driv Lic
+- driv licen
+- licenza di driv
+- licenze di driv
+- licenza driv
+- licenze di driv
+- driver licen
+- driver licen
+- licei del conducente
+- Guida di Lic
+- Guida licen
+- patenti di guida
+- driving licence
+
+- driving licences
+
+- permesso di guida
+- DL No
+- dlno
+- numero DL
+
+#### <a name="keywords_belgium_eu_drivers_license_number"></a>Keywords_belgium_eu_driver ' s_license_number
+
 - rijbewijs
 - rijbewijsnummer
+- führerschein
 - führerscheinnummer
+- füehrerscheinnummer
+- fuhrerschein
+- fuehrerschein
 - fuhrerscheinnummer
 - fuehrerscheinnummer
-- Führerschein-Nr
-- fuehrerschein-Nr
-- fuehrerschein-Nr
+- 
+permis de conduire
+- numéro Permis conduire
+
 
 ## <a name="belgium-national-number"></a>Numero nazionale belga
 
@@ -2055,38 +2296,155 @@ No
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
 - L'espressione regolare  `Regex_bulgaria_eu_driver's_license_number` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola chiave from  `Keywords_bulgaria_eu_driver's_license_number` . 
+- Una parola chiave da  `Keywords_eu_driver's_license_number` o `Keywords_bulgaria_eu_driver's_license_number` viene trovata. 
     
 ```xml
- <!-- EU Driver's License Number -->
-<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
-             <Pattern confidenceLevel="75">
+      <!-- Bulgaria Driver's License Number -->
+      <Entity id="66d39258-94c2-43b2-804b-aa312258e54b" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_bulgaria_eu_driver's_license_number" />
-          <Match idRef="Keywords_bulgaria_eu_driver's_license_number" />
-        </Pattern> 
-</Entity>    
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_bulgaria_eu_driver's_license_number" />
+          </Any>
+        </Pattern>
+      </Entity>    
 ```
 
 ### <a name="keywords"></a>Parole chiave
 
-#### <a name="keywords_bulgaria_eu_drivers_license_number"></a>Keywords_bulgaria_eu_driver ' s_license_number
-- DL #
-- driver license
-- numero della patente di guida
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver ' s_license_number
+
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
+- LIC del driver
+- driver driver'lics
 - patente di guida
-- driver Lic.
-- drivers license
-- drivers licence
-- driver's license
-- numero della patente di guida
-- numero di patente del conducente
-- numero della patente di guida
+- licenze per i driver
+- patente di guida
+- licenze per i driver
+- driverslic
+- driverslics
+- driverslicence
+- driverslicences
+- driverslicense
+- driverslicenses
+- driver Lic
+- driver driver'lics
+- patente di guida
+- licenze per i driver
+- patente di guida
+- licenze per i conducenti
+- driver'lic
+- driver ' LiCS
+- driver ' License
+- driver ' licenses
+- driver'licence
+- driver'licences
+- LIC del driver
+- driver ' driver'lics
+- patente di guida
+- licenze per i driver
+- patente di guida
+- patenti del conducente
+- driver'slic
+- driver'slics
+- secondola
+- driver'slicenses
+- driver'slicence
+- driver'slicences
+- LIC del conducente
+- driver'lics del conducente
+- patente di guida
+- licenze del conducente
+- patente di guida
+- patenti di guida
+- DL #
+- DLS #
+- driverlic #
+- driverlics #
+- driverlicense #
+- driverlicenses #
+- driverlicence #
+- driverlicences #
+- LIC del driver #
+- driver driver'lics #
+- patente di guida #
+- licenze per i driver #
+- licenze per i driver #
+- driverslic #
+- driverslics #
+- driverslicense #
+- driverslicenses #
+- driverslicence #
+- driverslicences #
+- driver Lic #
+- driver driver'lics #
+- patente di guida #
+- licenze per i driver #
+- patente di guida #
+- licenze per i conducenti #
+- driver'lic #
+- driver ' LiCS #
+- driver ' License #
+- driver ' licenses #
+- driver'licence #
+- driver'licences #
+- LIC del driver #
+- driver ' driver'lics #
+- patente di guida #
+- licenze per i driver #
+- patente di guida #
+- patenti del conducente #
+- driver'slic #
+- driver'slics #
+- secondola #
+- driver'slicenses #
+- driver'slicence #
+- driver'slicences #
+- LIC del conducente #
+- driver'lics del conducente #
+- patente di guida #
+- licenze del conducente #
+- patente di guida #
+- patenti di guida #
+- driving licence
+ 
+- patente di guida
 - dlno #
+- driv Lic
+- driv licen
+- licenza di driv
+- licenze di driv
+- licenza driv
+- licenze di driv
+- driver licen
+- driver licen
+- licei del conducente
+- Guida di Lic
+- Guida licen
+- patenti di guida
+- driving licence
+
+- driving licences
+
+- permesso di guida
+- DL No
+- dlno
+- numero DL
+
+
+#### <a name="keywords_bulgaria_eu_drivers_license_number"></a>Keywords_bulgaria_eu_driver ' s_license_number
+
 - свидетелство за управление на мпс
 - свидетелство за управление на моторно превозно d'средство
 - сумпс
 - шофьорска книжка
-
+- шофьорски книжки
 
 ## <a name="bulgaria-uniform-civil-number"></a>Bulgaria (Uniform Civil Number)
 Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
@@ -3317,35 +3675,152 @@ No
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
   
 - L'espressione regolare  `Regex_croatia_eu_driver's_license_number` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola chiave from  `Keywords_croatia_eu_driver's_license_number` . 
+- Una parola chiave da `Keywords_eu_driver's_license_number` o `Keywords_croatia_eu_driver's_license_number` viene trovata. 
 
 ```xml
- <!-- EU Driver's License Number -->
-<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
+      <!-- Croatia Driver's License Number -->
+      <Entity id="005b3ef1-47dd-4e68-bb02-c6db484d00f2" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_croatia_eu_driver's_license_number" />
-          <Match idRef="Keywords_croatia_eu_driver's_license_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_croatia_eu_driver's_license_number" />
+          </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>Parole chiave
 
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver ' s_license_number
+
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
+- LIC del driver
+- driver driver'lics
+- patente di guida
+- licenze per i driver
+- patente di guida
+- licenze per i driver
+- driverslic
+- driverslics
+- driverslicence
+- driverslicences
+- driverslicense
+- driverslicenses
+- driver Lic
+- driver driver'lics
+- patente di guida
+- licenze per i driver
+- patente di guida
+- licenze per i conducenti
+- driver'lic
+- driver ' LiCS
+- driver ' License
+- driver ' licenses
+- driver'licence
+- driver'licences
+- LIC del driver
+- driver ' driver'lics
+- patente di guida
+- licenze per i driver
+- patente di guida
+- patenti del conducente
+- driver'slic
+- driver'slics
+- secondola
+- driver'slicenses
+- driver'slicence
+- driver'slicences
+- LIC del conducente
+- driver'lics del conducente
+- patente di guida
+- licenze del conducente
+- patente di guida
+- patenti di guida
+- DL #
+- DLS #
+- driverlic #
+- driverlics #
+- driverlicense #
+- driverlicenses #
+- driverlicence #
+- driverlicences #
+- LIC del driver #
+- driver driver'lics #
+- patente di guida #
+- licenze per i driver #
+- licenze per i driver #
+- driverslic #
+- driverslics #
+- driverslicense #
+- driverslicenses #
+- driverslicence #
+- driverslicences #
+- driver Lic #
+- driver driver'lics #
+- patente di guida #
+- licenze per i driver #
+- patente di guida #
+- licenze per i conducenti #
+- driver'lic #
+- driver ' LiCS #
+- driver ' License #
+- driver ' licenses #
+- driver'licence #
+- driver'licences #
+- LIC del driver #
+- driver ' driver'lics #
+- patente di guida #
+- licenze per i driver #
+- patente di guida #
+- patenti del conducente #
+- driver'slic #
+- driver'slics #
+- secondola #
+- driver'slicenses #
+- driver'slicence #
+- driver'slicences #
+- LIC del conducente #
+- driver'lics del conducente #
+- patente di guida #
+- licenze del conducente #
+- patente di guida #
+- patenti di guida #
+- driving licence
+ 
+- patente di guida
+- dlno #
+- driv Lic
+- driv licen
+- licenza di driv
+- licenze di driv
+- licenza driv
+- licenze di driv
+- driver licen
+- driver licen
+- licei del conducente
+- Guida di Lic
+- Guida licen
+- patenti di guida
+- driving licence
+
+- driving licences
+
+- permesso di guida
+- DL No
+- dlno
+- numero DL
+
+
 #### <a name="keywords_croatia_eu_drivers_license_number"></a>Keywords_croatia_eu_driver ' s_license_number
 
-- DL #
-- driver license
-- numero della patente di guida
-- patente di guida
-- driver Lic.
-- drivers license
-- drivers licence
-- driver's license
-- numero della patente di guida
-- numero di patente del conducente
-- numero della patente di guida
-- dlno #
 - vozačka dozvola
+- vozačke dozvole
 
 
 ## <a name="croatia-identity-card-number"></a>Croazia-numero di carta d'identità
@@ -3623,34 +4098,152 @@ No
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
 - L'espressione regolare  `Regex_cyprus_eu_driver's_license_number` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola chiave from  `Keywords_cyprus_eu_driver's_license_number` .
+- Una parola chiave da  `Keywords_eu_driver's_license_number` o `Keywords_cyprus_eu_driver's_license_number` viene trovata.
 
 ```xml
- <!-- EU Driver's License Number -->
-<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
+      <!-- Cyprus Driver's License Number -->
+      <Entity id="356fa104-f9ac-4aff-a0e4-2e6e65ea06c4" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_cyprus_eu_driver's_license_number" />
-          <Match idRef="Keywords_cyprus_eu_driver's_license_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_cyprus_eu_driver's_license_number" />
+          </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>Parole chiave
 
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver ' s_license_number
+
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
+- LIC del driver
+- driver driver'lics
+- patente di guida
+- licenze per i driver
+- patente di guida
+- licenze per i driver
+- driverslic
+- driverslics
+- driverslicence
+- driverslicences
+- driverslicense
+- driverslicenses
+- driver Lic
+- driver driver'lics
+- patente di guida
+- licenze per i driver
+- patente di guida
+- licenze per i conducenti
+- driver'lic
+- driver ' LiCS
+- driver ' License
+- driver ' licenses
+- driver'licence
+- driver'licences
+- LIC del driver
+- driver ' driver'lics
+- patente di guida
+- licenze per i driver
+- patente di guida
+- patenti del conducente
+- driver'slic
+- driver'slics
+- secondola
+- driver'slicenses
+- driver'slicence
+- driver'slicences
+- LIC del conducente
+- driver'lics del conducente
+- patente di guida
+- licenze del conducente
+- patente di guida
+- patenti di guida
+- DL #
+- DLS #
+- driverlic #
+- driverlics #
+- driverlicense #
+- driverlicenses #
+- driverlicence #
+- driverlicences #
+- LIC del driver #
+- driver driver'lics #
+- patente di guida #
+- licenze per i driver #
+- licenze per i driver #
+- driverslic #
+- driverslics #
+- driverslicense #
+- driverslicenses #
+- driverslicence #
+- driverslicences #
+- driver Lic #
+- driver driver'lics #
+- patente di guida #
+- licenze per i driver #
+- patente di guida #
+- licenze per i conducenti #
+- driver'lic #
+- driver ' LiCS #
+- driver ' License #
+- driver ' licenses #
+- driver'licence #
+- driver'licences #
+- LIC del driver #
+- driver ' driver'lics #
+- patente di guida #
+- licenze per i driver #
+- patente di guida #
+- patenti del conducente #
+- driver'slic #
+- driver'slics #
+- secondola #
+- driver'slicenses #
+- driver'slicence #
+- driver'slicences #
+- LIC del conducente #
+- driver'lics del conducente #
+- patente di guida #
+- licenze del conducente #
+- patente di guida #
+- patenti di guida #
+- driving licence
+ 
+- patente di guida
+- dlno #
+- driv Lic
+- driv licen
+- licenza di driv
+- licenze di driv
+- licenza driv
+- licenze di driv
+- driver licen
+- driver licen
+- licei del conducente
+- Guida di Lic
+- Guida licen
+- patenti di guida
+- driving licence
+
+- driving licences
+
+- permesso di guida
+- DL No
+- dlno
+- numero DL
+
 #### <a name="keywords_cyprus_eu_drivers_license_number"></a>Keywords_cyprus_eu_driver ' s_license_number
 
-- DL #
-- driver license
-- numero della patente di guida
-- patente di guida
-- driver Lic.
-- drivers license
-- drivers licence
-- numero della patente di guida
-- numero di patente del conducente
-- numero della patente di guida
-- dlno #
 - άδεια οδήγησης
+- αριθμό άδειας οδήγησης
+- άδειες οδήγησης
 
 
 ## <a name="cyprus-identity-card"></a>Carta d'identità di Cipro
@@ -3853,7 +4446,8 @@ due lettere seguite da sei cifre
 
 otto lettere e cifre:
   
-- due lettere (senza distinzione tra maiuscole e minuscole)
+- letterà È (senza distinzione tra maiuscole E minuscole)
+- Una lettera
 - uno spazio (facoltativo)
 - sei cifre
 
@@ -3865,37 +4459,153 @@ No
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
 - L'espressione regolare  `Regex_czech_republic_eu_driver's_license_number` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola chiave from  `Keywords_czech_republic_eu_driver's_license_number` . 
+- Una parola chiave da  `Keywords_eu_driver's_license_number` o `Keywords_czech_republic_eu_driver's_license_number` viene trovata. 
 
 ```xml
- <!-- EU Driver's License Number -->
-<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
+      <Entity id="86b40d3b-d8ea-4c36-aab0-ef9416a6769c" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_czech_republic_eu_driver's_license_number" />
-          <Match idRef="Keywords_czech_republic_eu_driver's_license_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_czech_republic_eu_driver's_license_number" />
+          </Any>
         </Pattern>
-</Entity>
+      </Entity>
 
 ```
 
 ### <a name="keywords"></a>Parole chiave
 
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver ' s_license_number
+
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
+- LIC del driver
+- driver driver'lics
+- patente di guida
+- licenze per i driver
+- patente di guida
+- licenze per i driver
+- driverslic
+- driverslics
+- driverslicence
+- driverslicences
+- driverslicense
+- driverslicenses
+- driver Lic
+- driver driver'lics
+- patente di guida
+- licenze per i driver
+- patente di guida
+- licenze per i conducenti
+- driver'lic
+- driver ' LiCS
+- driver ' License
+- driver ' licenses
+- driver'licence
+- driver'licences
+- LIC del driver
+- driver ' driver'lics
+- patente di guida
+- licenze per i driver
+- patente di guida
+- patenti del conducente
+- driver'slic
+- driver'slics
+- secondola
+- driver'slicenses
+- driver'slicence
+- driver'slicences
+- LIC del conducente
+- driver'lics del conducente
+- patente di guida
+- licenze del conducente
+- patente di guida
+- patenti di guida
+- DL #
+- DLS #
+- driverlic #
+- driverlics #
+- driverlicense #
+- driverlicenses #
+- driverlicence #
+- driverlicences #
+- LIC del driver #
+- driver driver'lics #
+- patente di guida #
+- licenze per i driver #
+- licenze per i driver #
+- driverslic #
+- driverslics #
+- driverslicense #
+- driverslicenses #
+- driverslicence #
+- driverslicences #
+- driver Lic #
+- driver driver'lics #
+- patente di guida #
+- licenze per i driver #
+- patente di guida #
+- licenze per i conducenti #
+- driver'lic #
+- driver ' LiCS #
+- driver ' License #
+- driver ' licenses #
+- driver'licence #
+- driver'licences #
+- LIC del driver #
+- driver ' driver'lics #
+- patente di guida #
+- licenze per i driver #
+- patente di guida #
+- patenti del conducente #
+- driver'slic #
+- driver'slics #
+- secondola #
+- driver'slicenses #
+- driver'slicence #
+- driver'slicences #
+- LIC del conducente #
+- driver'lics del conducente #
+- patente di guida #
+- licenze del conducente #
+- patente di guida #
+- patenti di guida #
+- driving licence
+ 
+- patente di guida
+- dlno #
+- driv Lic
+- driv licen
+- licenza di driv
+- licenze di driv
+- licenza driv
+- licenze di driv
+- driver licen
+- driver licen
+- licei del conducente
+- Guida di Lic
+- Guida licen
+- patenti di guida
+- driving licence
+
+- driving licences
+
+- permesso di guida
+- DL No
+- dlno
+- numero DL
+
 #### <a name="keywords_czech_republic_eu_drivers_license_number"></a>Keywords_czech_republic_eu_driver ' s_license_number
 
-- DL #
-- driver license
-- numero della patente di guida
-- patente di guida
-- driver Lic.
-- drivers license
-- drivers licence
-- driver's license
-- numero della patente di guida
-- numero della patente di guida
-- numero di patente del conducente
-- numero della patente di guida
-- dlno #
 - řidičský prúkaz
+- řidičské průkazy
+- číslo řidičského průkazu
+- čísla řidičských průkazů
 
 
 ## <a name="czech-passport-number"></a>Numero di passaporto ceco
@@ -4132,40 +4842,155 @@ otto cifre
   
 ### <a name="checksum"></a>Checksum
 
-Sì
+No
   
 ### <a name="definition"></a>Definizione
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
 - L'espressione regolare  `Regex_denmark_eu_driver's_license_number` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola chiave from  `Keywords_denmark_eu_driver's_license_number` . 
+- Una parola chiave da  `Keywords_eu_driver's_license_number` o `Keywords_denmark_eu_driver's_license_number` viene trovata. 
     
 ```xml
- <!-- EU Driver's License Number -->
-<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
+      <!-- Denmark Driver's License Number -->
+      <Entity id="98a95812-6203-451a-a220-d39870ebef0e" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_denmark_eu_driver's_license_number" />
-          <Match idRef="Keywords_denmark_eu_driver's_license_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_denmark_eu_driver's_license_number" />
+          </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>Parole chiave
 
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver ' s_license_number
+
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
+- LIC del driver
+- driver driver'lics
+- patente di guida
+- licenze per i driver
+- patente di guida
+- licenze per i driver
+- driverslic
+- driverslics
+- driverslicence
+- driverslicences
+- driverslicense
+- driverslicenses
+- driver Lic
+- driver driver'lics
+- patente di guida
+- licenze per i driver
+- patente di guida
+- licenze per i conducenti
+- driver'lic
+- driver ' LiCS
+- driver ' License
+- driver ' licenses
+- driver'licence
+- driver'licences
+- LIC del driver
+- driver ' driver'lics
+- patente di guida
+- licenze per i driver
+- patente di guida
+- patenti del conducente
+- driver'slic
+- driver'slics
+- secondola
+- driver'slicenses
+- driver'slicence
+- driver'slicences
+- LIC del conducente
+- driver'lics del conducente
+- patente di guida
+- licenze del conducente
+- patente di guida
+- patenti di guida
+- DL #
+- DLS #
+- driverlic #
+- driverlics #
+- driverlicense #
+- driverlicenses #
+- driverlicence #
+- driverlicences #
+- LIC del driver #
+- driver driver'lics #
+- patente di guida #
+- licenze per i driver #
+- licenze per i driver #
+- driverslic #
+- driverslics #
+- driverslicense #
+- driverslicenses #
+- driverslicence #
+- driverslicences #
+- driver Lic #
+- driver driver'lics #
+- patente di guida #
+- licenze per i driver #
+- patente di guida #
+- licenze per i conducenti #
+- driver'lic #
+- driver ' LiCS #
+- driver ' License #
+- driver ' licenses #
+- driver'licence #
+- driver'licences #
+- LIC del driver #
+- driver ' driver'lics #
+- patente di guida #
+- licenze per i driver #
+- patente di guida #
+- patenti del conducente #
+- driver'slic #
+- driver'slics #
+- secondola #
+- driver'slicenses #
+- driver'slicence #
+- driver'slicences #
+- LIC del conducente #
+- driver'lics del conducente #
+- patente di guida #
+- licenze del conducente #
+- patente di guida #
+- patenti di guida #
+- driving licence
+ 
+- patente di guida
+- dlno #
+- driv Lic
+- driv licen
+- licenza di driv
+- licenze di driv
+- licenza driv
+- licenze di driv
+- driver licen
+- driver licen
+- licei del conducente
+- Guida di Lic
+- Guida licen
+- patenti di guida
+- driving licence
+
+- driving licences
+
+- permesso di guida
+- DL No
+- dlno
+- numero DL
+
 #### <a name="keywords_denmark_eu_drivers_license_number"></a>Keywords_denmark_eu_driver ' s_license_number
 
-- | DL #
-- driver license
-- numero della patente di guida
-- patente di guida
-- driver Lic.
-- drivers license
-- drivers licence
-- driver's license
-- numero della patente di guida
-- numero di patente del conducente
-- numero della patente di guida
-- dlno #
 - kørekort
 - Kørekortnummer
 
@@ -4462,35 +5287,153 @@ No
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
 - L'espressione regolare  `Regex_estonia_eu_driver's_license_number` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola chiave from  `Keywords_estonia_eu_driver's_license_number` . 
+- Una parola chiave da  `Keywords_eu_driver's_license_number` o `Keywords_estonia_eu_driver's_license_number` viene trovata. 
     
 ```xml
- <!-- EU Driver's License Number -->
-<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
+      <!-- Estonia Driver's License Number -->
+      <Entity id="51da8171-da70-4cc1-9d65-055a59ca4f83" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_estonia_eu_driver's_license_number" />
-          <Match idRef="Keywords_estonia_eu_driver's_license_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_estonia_eu_driver's_license_number" />
+          </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>Parole chiave
 
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver ' s_license_number
+
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
+- LIC del driver
+- driver driver'lics
+- patente di guida
+- licenze per i driver
+- patente di guida
+- licenze per i driver
+- driverslic
+- driverslics
+- driverslicence
+- driverslicences
+- driverslicense
+- driverslicenses
+- driver Lic
+- driver driver'lics
+- patente di guida
+- licenze per i driver
+- patente di guida
+- licenze per i conducenti
+- driver'lic
+- driver ' LiCS
+- driver ' License
+- driver ' licenses
+- driver'licence
+- driver'licences
+- LIC del driver
+- driver ' driver'lics
+- patente di guida
+- licenze per i driver
+- patente di guida
+- patenti del conducente
+- driver'slic
+- driver'slics
+- secondola
+- driver'slicenses
+- driver'slicence
+- driver'slicences
+- LIC del conducente
+- driver'lics del conducente
+- patente di guida
+- licenze del conducente
+- patente di guida
+- patenti di guida
+- DL #
+- DLS #
+- driverlic #
+- driverlics #
+- driverlicense #
+- driverlicenses #
+- driverlicence #
+- driverlicences #
+- LIC del driver #
+- driver driver'lics #
+- patente di guida #
+- licenze per i driver #
+- licenze per i driver #
+- driverslic #
+- driverslics #
+- driverslicense #
+- driverslicenses #
+- driverslicence #
+- driverslicences #
+- driver Lic #
+- driver driver'lics #
+- patente di guida #
+- licenze per i driver #
+- patente di guida #
+- licenze per i conducenti #
+- driver'lic #
+- driver ' LiCS #
+- driver ' License #
+- driver ' licenses #
+- driver'licence #
+- driver'licences #
+- LIC del driver #
+- driver ' driver'lics #
+- patente di guida #
+- licenze per i driver #
+- patente di guida #
+- patenti del conducente #
+- driver'slic #
+- driver'slics #
+- secondola #
+- driver'slicenses #
+- driver'slicence #
+- driver'slicences #
+- LIC del conducente #
+- driver'lics del conducente #
+- patente di guida #
+- licenze del conducente #
+- patente di guida #
+- patenti di guida #
+- driving licence
+ 
+- patente di guida
+- dlno #
+- driv Lic
+- driv licen
+- licenza di driv
+- licenze di driv
+- licenza driv
+- licenze di driv
+- driver licen
+- driver licen
+- licei del conducente
+- Guida di Lic
+- Guida licen
+- patenti di guida
+- driving licence
+
+- driving licences
+
+- permesso di guida
+- DL No
+- dlno
+- numero DL
+
 #### <a name="keywords_estonia_eu_drivers_license_number"></a>Keywords_estonia_eu_driver ' s_license_number
 
-- DL #
-- driver license
-- numero della patente di guida
-- numero della patente di guida
-- patente di guida
-- driver Lic.
-- drivers license
-- drivers licence
-- driver's license
-- numero della patente di guida
-- numero della patente di guida
-- dlno #
-- permis de conduire
+--Permis de conduire
+- juhilubade numbrid
+- numero juhiloa
+- juhiluba
 
 
 ## <a name="estonia-personal-identification-code"></a>Estonia Codice di identificazione personale
@@ -5143,15 +6086,16 @@ Questa entità di tipo di informazioni riservate è disponibile solo nel tipo di
 
 ### <a name="format"></a>Formato
 
-dieci cifre contenenti un segno meno
+dieci cifre e lettere contenenti un trattino
   
 ### <a name="pattern"></a>Modello
 
-dieci cifre contenenti un trattino:
+dieci cifre e lettere contenenti un trattino:
   
 - sei cifre 
 - un trattino
-- quattro cifre 
+- tre cifre 
+- una cifra o una lettera
     
 ### <a name="checksum"></a>Checksum
 
@@ -5161,35 +6105,159 @@ No
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
 - L'espressione regolare  `Regex_finland_eu_driver's_license_number` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola chiave from  `Keywords_finland_eu_driver's_license_number` . 
+- Una parola chiave da  `Keywords_eu_driver's_license_number` o `Keywords_finland_eu_driver's_license_number` viene trovata. 
     
 ```xml
- <!-- EU Driver's License Number -->
-<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
+      <!-- Finland Driver's License Number -->
+      <Entity id="bb3b27a3-79bd-4ac4-81a7-f9fca3c7d1a7" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_finland_eu_driver's_license_number" />
-          <Match idRef="Keywords_finland_eu_driver's_license_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_finland_eu_driver's_license_number" />
+          </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>Parole chiave
 
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver ' s_license_number
+
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
+- LIC del driver
+- driver driver'lics
+- patente di guida
+- licenze per i driver
+- patente di guida
+- licenze per i driver
+- driverslic
+- driverslics
+- driverslicence
+- driverslicences
+- driverslicense
+- driverslicenses
+- driver Lic
+- driver driver'lics
+- patente di guida
+- licenze per i driver
+- patente di guida
+- licenze per i conducenti
+- driver'lic
+- driver ' LiCS
+- driver ' License
+- driver ' licenses
+- driver'licence
+- driver'licences
+- LIC del driver
+- driver ' driver'lics
+- patente di guida
+- licenze per i driver
+- patente di guida
+- patenti del conducente
+- driver'slic
+- driver'slics
+- secondola
+- driver'slicenses
+- driver'slicence
+- driver'slicences
+- LIC del conducente
+- driver'lics del conducente
+- patente di guida
+- licenze del conducente
+- patente di guida
+- patenti di guida
+- DL #
+- DLS #
+- driverlic #
+- driverlics #
+- driverlicense #
+- driverlicenses #
+- driverlicence #
+- driverlicences #
+- LIC del driver #
+- driver driver'lics #
+- patente di guida #
+- licenze per i driver #
+- licenze per i driver #
+- driverslic #
+- driverslics #
+- driverslicense #
+- driverslicenses #
+- driverslicence #
+- driverslicences #
+- driver Lic #
+- driver driver'lics #
+- patente di guida #
+- licenze per i driver #
+- patente di guida #
+- licenze per i conducenti #
+- driver'lic #
+- driver ' LiCS #
+- driver ' License #
+- driver ' licenses #
+- driver'licence #
+- driver'licences #
+- LIC del driver #
+- driver ' driver'lics #
+- patente di guida #
+- licenze per i driver #
+- patente di guida #
+- patenti del conducente #
+- driver'slic #
+- driver'slics #
+- secondola #
+- driver'slicenses #
+- driver'slicence #
+- driver'slicences #
+- LIC del conducente #
+- driver'lics del conducente #
+- patente di guida #
+- licenze del conducente #
+- patente di guida #
+- patenti di guida #
+- driving licence
+ 
+- patente di guida
+- dlno #
+- driv Lic
+- driv licen
+- licenza di driv
+- licenze di driv
+- licenza driv
+- licenze di driv
+- driver licen
+- driver licen
+- licei del conducente
+- Guida di Lic
+- Guida licen
+- patenti di guida
+- driving licence
+
+- driving licences
+
+- permesso di guida
+- DL No
+- dlno
+- numero DL
+
+
 #### <a name="keywords_finland_eu_drivers_license_number"></a>Keywords_finland_eu_driver ' s_license_number
 
-- DL #
-- driver license
-- numero della patente di guida
-- patente di guida
-- driver Lic.
-- drivers license
-- drivers licence
-- driver's license
-- numero della patente di guida
-- numero di patente del conducente
-- numero della patente di guida
-- dlno #
 - ajokortti
+- permis de conduire
+- numero ajokortin
+- kuljettaja Lic.
+- körkort
+- körkortnummer
+- förare Lic.
+- ajokortit
+- ajokortin numerot
 
 
 ## <a name="finland-european-health-insurance-number"></a>Finlandia-numero di assicurazione sanitaria europea
@@ -5497,36 +6565,155 @@ No
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
 - la funzione Func_french_drivers_license trova contenuto corrispondente al modello.
-- si verifica almeno una delle condizioni seguenti:
 - viene trovata una parola chiave da Keyword_french_drivers_license.
-- la funzione Func_eu_date trova una data nel formato di data appropriato.
 
 ```xml
-<!-- France Driver's License Number -->
-<Entity id="18e55a36-a01b-4b0f-943d-dc10282a1824" patternsProximity="300" recommendedConfidence="75">
-  <Pattern confidenceLevel="75">
+    <!-- France Driver's License Number -->
+    <Entity id="18e55a36-a01b-4b0f-943d-dc10282a1824" patternsProximity="300" recommendedConfidence="75">
+      <Pattern confidenceLevel="75">
         <IdMatch idRef="Func_french_drivers_license" />
-        <Any minMatches="1">
-          <Match idRef="Keyword_french_drivers_license" />
-          <Match idRef="Func_eu_date" />
-        </Any>
-  </Pattern>
-</Entity>
+        <Match idRef="Keyword_french_drivers_license" />
+      </Pattern>
+    </Entity>
 ```
 
 ### <a name="keywords"></a>Parole chiave
 
 #### <a name="keyword_french_drivers_license"></a>Keyword_french_drivers_license
 
-- drivers licence
-- drivers license
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
+- LIC del driver
+- driver driver'lics
+- patente di guida
+- licenze per i driver
+- patente di guida
+- licenze per i driver
+- driverslic
+- driverslics
+- driverslicence
+- driverslicences
+- driverslicense
+- driverslicenses
+- driver Lic
+- driver driver'lics
+- patente di guida
+- licenze per i driver
+- patente di guida
+- licenze per i conducenti
+- driver'lic
+- driver ' LiCS
+- driver ' License
+- driver ' licenses
+- driver'licence
+- driver'licences
+- LIC del driver
+- driver ' driver'lics
+- patente di guida
+- licenze per i driver
+- patente di guida
+- patenti del conducente
+- driver'slic
+- driver'slics
+- secondola
+- driver'slicenses
+- driver'slicence
+- driver'slicences
+- LIC del conducente
+- driver'lics del conducente
+- patente di guida
+- licenze del conducente
+- patente di guida
+- patenti di guida
+- DL #
+- DLS #
+- driverlic #
+- driverlics #
+- driverlicense #
+- driverlicenses #
+- driverlicence #
+- driverlicences #
+- LIC del driver #
+- driver driver'lics #
+- patente di guida #
+- licenze per i driver #
+- licenze per i driver #
+- driverslic #
+- driverslics #
+- driverslicense #
+- driverslicenses #
+- driverslicence #
+- driverslicences #
+- driver Lic #
+- driver driver'lics #
+- patente di guida #
+- licenze per i driver #
+- patente di guida #
+- licenze per i conducenti #
+- driver'lic #
+- driver ' LiCS #
+- driver ' License #
+- driver ' licenses #
+- driver'licence #
+- driver'licences #
+- LIC del driver #
+- driver ' driver'lics #
+- patente di guida #
+- licenze per i driver #
+- patente di guida #
+- patenti del conducente #
+- driver'slic #
+- driver'slics #
+- secondola #
+- driver'slicenses #
+- driver'slicence #
+- driver'slicences #
+- LIC del conducente #
+- driver'lics del conducente #
+- patente di guida #
+- licenze del conducente #
+- patente di guida #
+- patenti di guida #
 - driving licence
-- driving license
-- permis de conduire
-- licence number
-- license number
-- licence numbers
-- license numbers
+ 
+- patente di guida
+- dlno #
+- driv Lic
+- driv licen
+- licenza di driv
+- licenze di driv
+- licenza driv
+- licenze di driv
+- driver licen
+- driver licen
+- licei del conducente
+- Guida di Lic
+- Guida licen
+- patenti di guida
+- driving licence
+
+- driving licences
+
+- permesso di guida
+- DL No
+- dlno
+- numero DL
+- 
+permis de conduire
+- 
+licence number
+- 
+license number
+- 
+licence numbers
+- 
+
+license numbers
+- Numéros de licence
 
 
 ## <a name="france-health-insurance-number"></a>Francia-numero di assicurazione malattia
@@ -5930,124 +7117,177 @@ Sì
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
 - La funzione Func_german_drivers_license restituisce contenuti che corrispondono al modello.
-- Si verifica almeno una delle situazioni seguenti:
-    - Viene trovata una parola chiave da Keyword_german_drivers_license_number.
-    - Viene trovata una parola chiave da Keyword_german_drivers_license_collaborative.
-    - Viene trovata una parola chiave da Keyword_german_drivers_license.
+- Viene trovata una parola chiave da Keyword_german_drivers_license_number.
 - Il checksum ha esito positivo.
 
 ```xml
-<!-- Germany Driver's License Number -->
-<Entity id="91da9335-1edb-45b7-a95f-5fe41a16c63c" patternsProximity="300" recommendedConfidence="75">
-  <Pattern confidenceLevel="75">
+    <!-- German Driver's License Number -->
+    <Entity id="91da9335-1edb-45b7-a95f-5fe41a16c63c" patternsProximity="300" recommendedConfidence="75">
+      <Pattern confidenceLevel="75">
         <IdMatch idRef="Func_german_drivers_license" />
-        <Any minMatches="1">
-          <Match idRef="Keyword_german_drivers_license_number" />
-          <Match idRef="Keyword_german_drivers_license_collaborative" />
-          <Match idRef="Keyword_german_drivers_license" />
-        </Any>
-  </Pattern>
-</Entity>
+        <Match idRef="Keyword_german_drivers_license" />
+      </Pattern>
+    </Entity>
 ```
 
 ### <a name="keywords"></a>Parole chiave
 
 #### <a name="keyword_german_drivers_license_number"></a>Keyword_german_drivers_license_number
 
-- Führerschein
-- Fuhrerschein
-- Fuehrerschein
-- Führerscheinnummer
-- Fuhrerscheinnummer
-- Fuehrerscheinnummer
-- Führerschein- 
-- Fuhrerschein- 
-- Fuehrerschein- 
-- FührerscheinnummerNr
-- FuhrerscheinnummerNr
-- FuehrerscheinnummerNr
-- FührerscheinnummerKlasse
-- FuhrerscheinnummerKlasse
-- FuehrerscheinnummerKlasse
-- Führerschein- Nr
-- Fuhrerschein- Nr
-- Fuehrerschein- Nr 
-- Führerschein- Klasse 
-- Fuhrerschein- Klasse 
-- Fuehrerschein- Klasse
-- FührerscheinnummerNr 
-- FuhrerscheinnummerNr 
-- FuehrerscheinnummerNr 
-- FührerscheinnummerKlasse 
-- FuhrerscheinnummerKlasse 
-- FuehrerscheinnummerKlasse 
-- Führerschein- Nr 
-- Fuhrerschein- Nr 
-- Fuehrerschein- Nr 
-- Führerschein- Klasse 
-- Fuhrerschein- Klasse 
-- Fuehrerschein- Klasse 
-- DL 
-- DLS
-- Driv Lic 
-- Driv Licen 
-- Driv License
-- Driv Licenses 
-- Driv Licence 
-- Driv Licences 
-- Driv Lic 
-- Driver Licen 
-- Driver License 
-- Driver Licenses 
-- Driver Licence 
-- Driver Licences 
-- Drivers Lic 
-- Drivers Licen 
-- Drivers License 
-- Drivers Licenses 
-- Drivers Licence 
-- Drivers Licences 
-- Driver's Lic 
-- Driver's Licen 
-- Driver's License 
-- Driver's Licenses 
-- Driver's Licence 
-- Driver's Licences 
-- Driving Lic 
-- Driving Licen 
-- Driving License 
-- Driving Licenses 
-- Driving Licence 
-- Driving Licences
-
-#### <a name="keyword_german_drivers_license_collaborative"></a>Keyword_german_drivers_license_collaborative
-
-- Nr-Führerschein 
-- Nr-Fuhrerschein 
-- Nr-Fuehrerschein 
-- No-Führerschein 
-- No-Fuhrerschein 
-- No-Fuehrerschein 
-- N-Führerschein 
-- N-Fuhrerschein 
-- N-Fuehrerschein
-- Nr-Führerschein 
-- Nr-Fuhrerschein 
-- Nr-Fuehrerschein 
-- No-Führerschein 
-- No-Fuhrerschein 
-- No-Fuehrerschein 
-- N-Führerschein 
-- N-Fuhrerschein 
-- N-Fuehrerschein 
-
-#### <a name="keyword_german_drivers_license"></a>Keyword_german_drivers_license
-
 - ausstellungsdatum
 - ausstellungsort
-- ausstellende behöde
-- ausstellende behorde
-- ausstellende behoerde
+- 
+ausstellende behöde
+- 
+ausstellende behorde
+- 
+
+ausstellende behoerde
+- führerschein
+- fuhrerschein
+- fuehrerschein
+- führerscheinnummer
+- fuhrerscheinnummer
+- fuehrerscheinnummer
+- führerschein- 
+- fuhrerschein- 
+- fuehrerschein- 
+- führerscheinnummernr
+- fuhrerscheinnummernr
+- fuehrerscheinnummernr
+- führerscheinnummerklasse
+- fuhrerscheinnummerklasse
+- fuehrerscheinnummerklasse
+- Nr-Führerschein
+- Nr-fuhrerschein
+- Nr-fuehrerschein
+- No-Führerschein
+- No-fuhrerschein
+- No-fuehrerschein
+- n-Führerschein
+- n-fuhrerschein
+- n-fuehrerschein
+- 
+permis de conduire
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
+- LIC del driver
+- driver driver'lics
+- patente di guida
+- licenze per i driver
+- patente di guida
+- licenze per i driver
+- driverslic
+- driverslics
+- driverslicence
+- driverslicences
+- driverslicense
+- driverslicenses
+- driver Lic
+- driver driver'lics
+- patente di guida
+- licenze per i driver
+- patente di guida
+- licenze per i conducenti
+- driver'lic
+- driver ' LiCS
+- driver ' License
+- driver ' licenses
+- driver'licence
+- driver'licences
+- LIC del driver
+- driver ' driver'lics
+- patente di guida
+- licenze per i driver
+- patente di guida
+- patenti del conducente
+- driver'slic
+- driver'slics
+- secondola
+- driver'slicenses
+- driver'slicence
+- driver'slicences
+- LIC del conducente
+- driver'lics del conducente
+- patente di guida
+- licenze del conducente
+- patente di guida
+- patenti di guida
+- DL #
+- DLS #
+- driverlic #
+- driverlics #
+- driverlicense #
+- driverlicenses #
+- driverlicence #
+- driverlicences #
+- LIC del driver #
+- driver driver'lics #
+- patente di guida #
+- licenze per i driver #
+- licenze per i driver #
+- driverslic #
+- driverslics #
+- driverslicense #
+- driverslicenses #
+- driverslicence #
+- driverslicences #
+- driver Lic #
+- driver driver'lics #
+- patente di guida #
+- licenze per i driver #
+- patente di guida #
+- licenze per i conducenti #
+- driver'lic #
+- driver ' LiCS #
+- driver ' License #
+- driver ' licenses #
+- driver'licence #
+- driver'licences #
+- LIC del driver #
+- driver ' driver'lics #
+- patente di guida #
+- licenze per i driver #
+- patente di guida #
+- patenti del conducente #
+- driver'slic #
+- driver'slics #
+- secondola #
+- driver'slicenses #
+- driver'slicence #
+- driver'slicences #
+- LIC del conducente #
+- driver'lics del conducente #
+- patente di guida #
+- licenze del conducente #
+- patente di guida #
+- patenti di guida #
+- driving licence
+ 
+- patente di guida
+- dlno #
+- driv Lic
+- driv licen
+- licenza di driv
+- licenze di driv
+- licenza driv
+- licenze di driv
+- driver licen
+- driver licen
+- licei del conducente
+- Guida di Lic
+- Guida licen
+- patenti di guida
+- driving licence
+
+- driving licences
+
+- permesso di guida
+- dlno
 
 
 ## <a name="germany-identity-card-number"></a>Germania-numero di carta d'identità
@@ -6322,36 +7562,154 @@ No
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
 - L'espressione regolare  `Regex_greece_eu_driver's_license_number` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola chiave from  `Keywords_greece_eu_driver's_license_number` . 
+- Una parola chiave da  `Keywords_eu_driver's_license_number` o `Keywords_greece_eu_driver's_license_number` viene trovata. 
     
 ```xml
- <!-- EU Driver's License Number -->
-<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
+      <!-- Greece Driver's License Number -->
+      <Entity id="7a2200b5-aacf-4e3c-ab36-136d3e68b7da" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_greece_eu_driver's_license_number" />
-          <Match idRef="Keywords_greece_eu_driver's_license_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_greece_eu_driver's_license_number" />
+          </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>Parole chiave
 
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver ' s_license_number
+
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
+- LIC del driver
+- driver driver'lics
+- patente di guida
+- licenze per i driver
+- patente di guida
+- licenze per i driver
+- driverslic
+- driverslics
+- driverslicence
+- driverslicences
+- driverslicense
+- driverslicenses
+- driver Lic
+- driver driver'lics
+- patente di guida
+- licenze per i driver
+- patente di guida
+- licenze per i conducenti
+- driver'lic
+- driver ' LiCS
+- driver ' License
+- driver ' licenses
+- driver'licence
+- driver'licences
+- LIC del driver
+- driver ' driver'lics
+- patente di guida
+- licenze per i driver
+- patente di guida
+- patenti del conducente
+- driver'slic
+- driver'slics
+- secondola
+- driver'slicenses
+- driver'slicence
+- driver'slicences
+- LIC del conducente
+- driver'lics del conducente
+- patente di guida
+- licenze del conducente
+- patente di guida
+- patenti di guida
+- DL #
+- DLS #
+- driverlic #
+- driverlics #
+- driverlicense #
+- driverlicenses #
+- driverlicence #
+- driverlicences #
+- LIC del driver #
+- driver driver'lics #
+- patente di guida #
+- licenze per i driver #
+- licenze per i driver #
+- driverslic #
+- driverslics #
+- driverslicense #
+- driverslicenses #
+- driverslicence #
+- driverslicences #
+- driver Lic #
+- driver driver'lics #
+- patente di guida #
+- licenze per i driver #
+- patente di guida #
+- licenze per i conducenti #
+- driver'lic #
+- driver ' LiCS #
+- driver ' License #
+- driver ' licenses #
+- driver'licence #
+- driver'licences #
+- LIC del driver #
+- driver ' driver'lics #
+- patente di guida #
+- licenze per i driver #
+- patente di guida #
+- patenti del conducente #
+- driver'slic #
+- driver'slics #
+- secondola #
+- driver'slicenses #
+- driver'slicence #
+- driver'slicences #
+- LIC del conducente #
+- driver'lics del conducente #
+- patente di guida #
+- licenze del conducente #
+- patente di guida #
+- patenti di guida #
+- driving licence
+ 
+- patente di guida
+- dlno #
+- driv Lic
+- driv licen
+- licenza di driv
+- licenze di driv
+- licenza driv
+- licenze di driv
+- driver licen
+- driver licen
+- licei del conducente
+- Guida di Lic
+- Guida licen
+- patenti di guida
+- driving licence
+
+- driving licences
+
+- permesso di guida
+- DL No
+- dlno
+- numero DL
+
+
 #### <a name="keywords_greece_eu_drivers_license_number"></a>Keywords_greece_eu_driver ' s_license_number
 
-- dlL #
-- driver license
-- numero della patente di guida
-- patente di guida
-- driver Lic.
-- drivers license
-- drivers licence
-- driver's license
-- numero della patente di guida
-- numero di patente del conducente
-- numero della patente di guida
-- dlno #
 - δεια οδήγησης
 - Adeia odigisis
+- Άδεια οδήγησης
+- Δίπλωμα οδήγησης
 
 
 ## <a name="greece-national-id-card"></a>Carta d'identità nazionale (Grecia)
@@ -6647,35 +8005,152 @@ No
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
   
 - L'espressione regolare  `Regex_hungary_eu_driver's_license_number` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola chiave from  `Keywords_hungary_eu_driver's_license_number` . 
+- Una parola chiave da  `Keywords_eu_driver's_license_number` o `Keywords_hungary_eu_driver's_license_number` viene trovata. 
     
 ```xml
- <!-- EU Driver's License Number -->
-<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
+      <Entity id="9d31c46b-6e6b-444c-aeb1-6dd7e604bb24" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_hungary_eu_driver's_license_number" />
-          <Match idRef="Keywords_hungary_eu_driver's_license_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_hungary_eu_driver's_license_number" />
+          </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>Parole chiave
 
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver ' s_license_number
+
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
+- LIC del driver
+- driver driver'lics
+- patente di guida
+- licenze per i driver
+- patente di guida
+- licenze per i driver
+- driverslic
+- driverslics
+- driverslicence
+- driverslicences
+- driverslicense
+- driverslicenses
+- driver Lic
+- driver driver'lics
+- patente di guida
+- licenze per i driver
+- patente di guida
+- licenze per i conducenti
+- driver'lic
+- driver ' LiCS
+- driver ' License
+- driver ' licenses
+- driver'licence
+- driver'licences
+- LIC del driver
+- driver ' driver'lics
+- patente di guida
+- licenze per i driver
+- patente di guida
+- patenti del conducente
+- driver'slic
+- driver'slics
+- secondola
+- driver'slicenses
+- driver'slicence
+- driver'slicences
+- LIC del conducente
+- driver'lics del conducente
+- patente di guida
+- licenze del conducente
+- patente di guida
+- patenti di guida
+- DL #
+- DLS #
+- driverlic #
+- driverlics #
+- driverlicense #
+- driverlicenses #
+- driverlicence #
+- driverlicences #
+- LIC del driver #
+- driver driver'lics #
+- patente di guida #
+- licenze per i driver #
+- licenze per i driver #
+- driverslic #
+- driverslics #
+- driverslicense #
+- driverslicenses #
+- driverslicence #
+- driverslicences #
+- driver Lic #
+- driver driver'lics #
+- patente di guida #
+- licenze per i driver #
+- patente di guida #
+- licenze per i conducenti #
+- driver'lic #
+- driver ' LiCS #
+- driver ' License #
+- driver ' licenses #
+- driver'licence #
+- driver'licences #
+- LIC del driver #
+- driver ' driver'lics #
+- patente di guida #
+- licenze per i driver #
+- patente di guida #
+- patenti del conducente #
+- driver'slic #
+- driver'slics #
+- secondola #
+- driver'slicenses #
+- driver'slicence #
+- driver'slicences #
+- LIC del conducente #
+- driver'lics del conducente #
+- patente di guida #
+- licenze del conducente #
+- patente di guida #
+- patenti di guida #
+- driving licence
+ 
+- patente di guida
+- dlno #
+- driv Lic
+- driv licen
+- licenza di driv
+- licenze di driv
+- licenza driv
+- licenze di driv
+- driver licen
+- driver licen
+- licei del conducente
+- Guida di Lic
+- Guida licen
+- patenti di guida
+- driving licence
+
+- driving licences
+
+- permesso di guida
+- DL No
+- dlno
+- numero DL
+
+
 #### <a name="keywords_hungary_eu_drivers_license_number"></a>Keywords_hungary_eu_driver ' s_license_number
 
-- DL #
-- driver license
-- numero della patente di guida
-- patente di guida
-- driver Lic.
-- drivers license
-- drivers licence
-- driver's license
-- numero della patente di guida
-- numero di patente del conducente
-- numero della patente di guida
-- dlno #
 - vezetoi engedely
+- vezetői engedély
+- vezetői engedélyek
 
 
 ## <a name="hungary-personal-identification-number"></a>Numero di identificazione personale Ungheria
@@ -7363,36 +8838,152 @@ No
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
   
 - L'espressione regolare  `Regex_ireland_eu_driver's_license_number` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola chiave from  `Keywords_ireland_eu_driver's_license_number` . 
+- Una parola chiave da  `Keywords_eu_driver's_license_number` o `Keywords_ireland_eu_driver's_license_number` viene trovata. 
     
 ```xml
- <!-- EU Driver's License Number -->
-<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
+      <!-- Ireland Driver's License Number -->
+      <Entity id="e01bccd9-eb4d-414f-ace1-e9b6a4c4a2ca" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_ireland_eu_driver's_license_number" />
-          <Match idRef="Keywords_ireland_eu_driver's_license_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_ireland_eu_driver's_license_number" />
+          </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>Parole chiave
 
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver ' s_license_number
+
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
+- LIC del driver
+- driver driver'lics
+- patente di guida
+- licenze per i driver
+- patente di guida
+- licenze per i driver
+- driverslic
+- driverslics
+- driverslicence
+- driverslicences
+- driverslicense
+- driverslicenses
+- driver Lic
+- driver driver'lics
+- patente di guida
+- licenze per i driver
+- patente di guida
+- licenze per i conducenti
+- driver'lic
+- driver ' LiCS
+- driver ' License
+- driver ' licenses
+- driver'licence
+- driver'licences
+- LIC del driver
+- driver ' driver'lics
+- patente di guida
+- licenze per i driver
+- patente di guida
+- patenti del conducente
+- driver'slic
+- driver'slics
+- secondola
+- driver'slicenses
+- driver'slicence
+- driver'slicences
+- LIC del conducente
+- driver'lics del conducente
+- patente di guida
+- licenze del conducente
+- patente di guida
+- patenti di guida
+- DL #
+- DLS #
+- driverlic #
+- driverlics #
+- driverlicense #
+- driverlicenses #
+- driverlicence #
+- driverlicences #
+- LIC del driver #
+- driver driver'lics #
+- patente di guida #
+- licenze per i driver #
+- licenze per i driver #
+- driverslic #
+- driverslics #
+- driverslicense #
+- driverslicenses #
+- driverslicence #
+- driverslicences #
+- driver Lic #
+- driver driver'lics #
+- patente di guida #
+- licenze per i driver #
+- patente di guida #
+- licenze per i conducenti #
+- driver'lic #
+- driver ' LiCS #
+- driver ' License #
+- driver ' licenses #
+- driver'licence #
+- driver'licences #
+- LIC del driver #
+- driver ' driver'lics #
+- patente di guida #
+- licenze per i driver #
+- patente di guida #
+- patenti del conducente #
+- driver'slic #
+- driver'slics #
+- secondola #
+- driver'slicenses #
+- driver'slicence #
+- driver'slicences #
+- LIC del conducente #
+- driver'lics del conducente #
+- patente di guida #
+- licenze del conducente #
+- patente di guida #
+- patenti di guida #
+- driving licence
+ 
+- patente di guida
+- dlno #
+- driv Lic
+- driv licen
+- licenza di driv
+- licenze di driv
+- licenza driv
+- licenze di driv
+- driver licen
+- driver licen
+- licei del conducente
+- Guida di Lic
+- Guida licen
+- patenti di guida
+- driving licence
+
+- driving licences
+
+- permesso di guida
+- DL No
+- dlno
+- numero DL
+
+
 #### <a name="keywords_ireland_eu_drivers_license_number"></a>Keywords_ireland_eu_driver ' s_license_number
 
-- DL #
-- driver license
-- numero della patente di guida
-- patente di guida
-- driver Lic.
-- drivers license
-- drivers licence
-- driver's license
-- numero della patente di guida
-- numero di patente del conducente
-- numero della patente di guida
-- dlno #
 - ceadúnas tiomána
-
+- ceadúnais tiomána
 
 ## <a name="ireland-passport-number"></a>Irlanda-numero di passaporto
 
@@ -7655,10 +9246,10 @@ una combinazione di 10 lettere e cifre
 
 ### <a name="pattern"></a>Modello
 
-- una combinazione di 10 lettere e cifre:
+una combinazione di 10 lettere e cifre:
 - una lettera (senza distinzione tra maiuscole e minuscole) 
 - la lettera "A" o "V" (senza distinzione tra maiuscole e minuscole) 
-- sette lettere (senza distinzione tra maiuscole/minuscole), cifre o caratteri di sottolineatura 
+- sette cifre
 - una lettera (senza distinzione tra maiuscole e minuscole)
 
 ### <a name="checksum"></a>Checksum
@@ -7687,8 +9278,11 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 
 #### <a name="keyword_italy_drivers_license_number"></a>Keyword_italy_drivers_license_number
 
-- numero di patente di guida 
+- numero di brevetto
 - patente di guida 
+- patente guida
+- patenti di guida
+- patenti guida
 
 ## <a name="italy-fiscal-code"></a>Codice fiscale Italia
 Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
@@ -7982,36 +9576,24 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - Debit Acct # 
 - Debit Acct No. 
 - Debit Account No. 
-- 口座番号を当座預金口座の確認 
-- #アカウントの確認 、 勘定番号の確認 
-- #勘定の確認 
-- 勘定番号の確認 
-- 口座番号の確認 
-- 銀行口座番号 
-- 銀行口座 
-- 銀行口座＃ 
-- 銀行の勘定番号 
-- 銀行のacct＃ 
-- 銀行の勘定いいえ 
+- 口座番号
+- 銀行口座
 - 銀行口座番号
-- 普通預金口座番号 
-- 預金口座 
-- 貯蓄口座＃ 
-- 貯蓄勘定の数 
-- 貯蓄勘定＃ 
-- 貯蓄勘定番号 
-- 普通預金口座番号 
-- 引き落とし口座番号 
-- 口座番号 
-- 口座番号＃ 
-- デビットのacct番号 
-- デビット勘定＃ 
-- デビットACCTの番号 
-- デビット口座番号 
+- 総合口座
+- 普通預金口座
+- 普通口座
+- 当座預金口座
+- 当座口座
+- 預金口座
+- 振替口座
+- 銀行
+- バンク
 
 #### <a name="keyword_jp_bank_branch_code"></a>Keyword_jp_bank_branch_code
 
-Otemachi
+- 支店番号
+- 支店コード
+- 店番号
 
 ## <a name="japan-drivers-license-number"></a>Giappone-numero della patente di guida
 
@@ -8047,31 +9629,41 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 
 #### <a name="keyword_jp_drivers_license_number"></a>Keyword_jp_drivers_license_number
 
-- DL # 
-- DL 
-- DLS # 
-- DLS 
-- driver license 
-- driver licenses 
-- drivers license 
-- driver's license 
-- drivers licenses 
-- driver's licenses 
-- driving licence 
-- driver'lic # 
-- DRIVER'LIC 
-- driver'lics # 
-- state id 
-- state identification 
-- state identification number 
-- 低所得国＃ 
-- 免許証 
-- 状態ID
-- 状態の識別 
-- 状態の識別番号 
-- 運転免許 
-- 運転免許証 
-- 運転免許証番号 
+- driverlicense
+- driverslicense
+- secondola
+- driverslicenses
+- driver'slicenses
+- driverlicenses
+- DL #
+- DLS #
+- driver'lic #
+- driver'lics #
+- 運転免許証
+- 運転免許
+- 免許証
+- 免許
+- 運転免許証番号
+- 運転免許番号
+- 免許証番号
+- 免許番号
+- 運転免許証ナンバー
+- 運転免許ナンバー
+- 免許証ナンバー
+- 運転免許証no
+- 運転免許no
+- 免許証no
+- 免許no
+- 運転経歴証明書番号
+- 運転経歴証明書
+- 運転免許証No.
+- 運転免許No.
+- 免許証No.
+- 免許No.
+- 運転免許証 #
+- 運転免許 #
+- 免許証 #
+- 免許 #
 
 
 ## <a name="japan-my-number---corporate"></a>Giappone My Number-Corporate
@@ -8233,10 +9825,22 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 
 #### <a name="keyword_jp_passport"></a>Keyword_jp_passport
 
-- パスポート 
-- パスポート番号 
-- パスポートのNum 
-- パスポート＃ 
+- Passaporto
+- Numero di passaporto
+- Passaporto No.
+- Passport#
+
+- パスポート
+- パスポート番号
+- パスポートナンバー
+- パスポート＃
+- パスポート #
+- パスポートNo.
+- 旅券番号
+- 旅券番号＃
+- ♯ di 旅券番号
+- 旅券ナンバー
+
 
 ## <a name="japan-residence-card-number"></a>Giappone-numero di carta di soggiorno
 
@@ -8279,6 +9883,8 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - Carta di soggiorno No
 - Carta di soggiorno #
 - 在留カード番号
+- 在留カード
+- 在留番号
 
 ## <a name="japan-resident-registration-number"></a>Giappone-numero di registrazione residente
 
@@ -8315,16 +9921,15 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 #### <a name="keyword_jp_resident_registration_number"></a>Keyword_jp_resident_registration_number
 
 - Resident Registration Number
-- Resident Register Number 
 - Residents Basic Registry Number 
 - Resident Registration No. 
 - Resident Register No. 
 - Residents Basic Registry No. 
 - Basic Resident Register No. 
-- 住民登録番号、登録番号をレジデント 
-- 住民基本登録番号、登録番号 
-- 住民基本レジストリ番号を常駐 
-- 登録番号を常駐住民基本台帳登録番号 
+- 外国人登録証明書番号
+- 証明書番号
+- 登録番号
+- 外国人登録証
 
    
 ## <a name="japan-social-insurance-number-sin"></a>Giappone-numero di previdenza sociale (SIN)
@@ -8376,8 +9981,22 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - Social Insurance No. 
 - Social Insurance Num 
 - Social Insurance Number 
-- 社会保険のテンキー 
-- 社会保険番号 
+- 健康保険被保険者番号
+- 健保番号
+- 基礎年金番号
+- 雇用保険被保険者番号
+- 雇用保険番号
+- 保険証番号
+- 社会保険番号
+- 社会保険No.
+- 社会保険
+- 介護保険
+- 介護保険被保険者番号
+- 健康保険被保険者整理番号
+- 雇用保険被保険者整理番号
+- 厚生年金
+- 厚生年金被保険者整理番号
+
 
 ## <a name="latvia-drivers-license-number"></a>Numero della patente di guida in Lettonia
 Questa entità di tipo di informazioni riservate è disponibile solo nel tipo di informazioni riservate del conducente dell'Unione europea.
@@ -8401,35 +10020,153 @@ No
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
 - L'espressione regolare  `Regex_latvia_eu_driver's_license_number` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola chiave from  `Keywords_latvia_eu_driver's_license_number` . 
+- Una parola chiave da  `Keywords_eu_driver's_license_number` o `Keywords_latvia_eu_driver's_license_number` viene trovata. 
     
 ```xml
- <!-- EU Driver's License Number -->
-<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
+      <!-- Latvia Driver's License Number -->
+      <Entity id="ec996de0-30f2-46b1-b192-4d2ff8805fa7" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_latvia_eu_driver's_license_number" />
-          <Match idRef="Keywords_latvia_eu_driver's_license_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_latvia_eu_driver's_license_number" />
+          </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>Parole chiave
 
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver ' s_license_number
+
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
+- LIC del driver
+- driver driver'lics
+- patente di guida
+- licenze per i driver
+- patente di guida
+- licenze per i driver
+- driverslic
+- driverslics
+- driverslicence
+- driverslicences
+- driverslicense
+- driverslicenses
+- driver Lic
+- driver driver'lics
+- patente di guida
+- licenze per i driver
+- patente di guida
+- licenze per i conducenti
+- driver'lic
+- driver ' LiCS
+- driver ' License
+- driver ' licenses
+- driver'licence
+- driver'licences
+- LIC del driver
+- driver ' driver'lics
+- patente di guida
+- licenze per i driver
+- patente di guida
+- patenti del conducente
+- driver'slic
+- driver'slics
+- secondola
+- driver'slicenses
+- driver'slicence
+- driver'slicences
+- LIC del conducente
+- driver'lics del conducente
+- patente di guida
+- licenze del conducente
+- patente di guida
+- patenti di guida
+- DL #
+- DLS #
+- driverlic #
+- driverlics #
+- driverlicense #
+- driverlicenses #
+- driverlicence #
+- driverlicences #
+- LIC del driver #
+- driver driver'lics #
+- patente di guida #
+- licenze per i driver #
+- licenze per i driver #
+- driverslic #
+- driverslics #
+- driverslicense #
+- driverslicenses #
+- driverslicence #
+- driverslicences #
+- driver Lic #
+- driver driver'lics #
+- patente di guida #
+- licenze per i driver #
+- patente di guida #
+- licenze per i conducenti #
+- driver'lic #
+- driver ' LiCS #
+- driver ' License #
+- driver ' licenses #
+- driver'licence #
+- driver'licences #
+- LIC del driver #
+- driver ' driver'lics #
+- patente di guida #
+- licenze per i driver #
+- patente di guida #
+- patenti del conducente #
+- driver'slic #
+- driver'slics #
+- secondola #
+- driver'slicenses #
+- driver'slicence #
+- driver'slicences #
+- LIC del conducente #
+- driver'lics del conducente #
+- patente di guida #
+- licenze del conducente #
+- patente di guida #
+- patenti di guida #
+- driving licence
+ 
+- patente di guida
+- dlno #
+- driv Lic
+- driv licen
+- licenza di driv
+- licenze di driv
+- licenza driv
+- licenze di driv
+- driver licen
+- driver licen
+- licei del conducente
+- Guida di Lic
+- Guida licen
+- patenti di guida
+- driving licence
+
+- driving licences
+
+- permesso di guida
+- DL No
+- dlno
+- numero DL
+
+
 #### <a name="keywords_latvia_eu_drivers_license_number"></a>Keywords_latvia_eu_driver ' s_license_number
 
-- DL #
-- driver license
-- numero della patente di guida
-- patente di guida
-- driver Lic.
-- drivers license
-- drivers licence
-- driver's license
-- numero della patente di guida
-- numero di patente del conducente
-- numero della patente di guida
-- dlno #
 - autovadītāja apliecība
+- autovadītāja apliecības
+- vadītāja apliecība
 
 ## <a name="latvia-personal-code"></a>Codice personale Lettonia
 
@@ -8647,35 +10384,153 @@ No
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
 - L'espressione regolare  `Regex_lithuania_eu_driver's_license_number` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola chiave from  `Keywords_lithuania_eu_driver's_license_number` . 
+- Una parola chiave da  `Keywords_eu_driver's_license_number` o `Keywords_lithuania_eu_driver's_license_number` viene trovata. 
     
 ```xml
- <!-- EU Driver's License Number -->
-<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
+      <!-- Lithuania Driver's License Number -->
+      <Entity id="86f7628b-e0f4-4dc3-9fbc-e4300e4c7d78" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_lithuania_eu_driver's_license_number" />
-          <Match idRef="Keywords_lithuania_eu_driver's_license_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_lithuania_eu_driver's_license_number" />
+          </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>Parole chiave
 
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver ' s_license_number
+
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
+- LIC del driver
+- driver driver'lics
+- patente di guida
+- licenze per i driver
+- patente di guida
+- licenze per i driver
+- driverslic
+- driverslics
+- driverslicence
+- driverslicences
+- driverslicense
+- driverslicenses
+- driver Lic
+- driver driver'lics
+- patente di guida
+- licenze per i driver
+- patente di guida
+- licenze per i conducenti
+- driver'lic
+- driver ' LiCS
+- driver ' License
+- driver ' licenses
+- driver'licence
+- driver'licences
+- LIC del driver
+- driver ' driver'lics
+- patente di guida
+- licenze per i driver
+- patente di guida
+- patenti del conducente
+- driver'slic
+- driver'slics
+- secondola
+- driver'slicenses
+- driver'slicence
+- driver'slicences
+- LIC del conducente
+- driver'lics del conducente
+- patente di guida
+- licenze del conducente
+- patente di guida
+- patenti di guida
+- DL #
+- DLS #
+- driverlic #
+- driverlics #
+- driverlicense #
+- driverlicenses #
+- driverlicence #
+- driverlicences #
+- LIC del driver #
+- driver driver'lics #
+- patente di guida #
+- licenze per i driver #
+- licenze per i driver #
+- driverslic #
+- driverslics #
+- driverslicense #
+- driverslicenses #
+- driverslicence #
+- driverslicences #
+- driver Lic #
+- driver driver'lics #
+- patente di guida #
+- licenze per i driver #
+- patente di guida #
+- licenze per i conducenti #
+- driver'lic #
+- driver ' LiCS #
+- driver ' License #
+- driver ' licenses #
+- driver'licence #
+- driver'licences #
+- LIC del driver #
+- driver ' driver'lics #
+- patente di guida #
+- licenze per i driver #
+- patente di guida #
+- patenti del conducente #
+- driver'slic #
+- driver'slics #
+- secondola #
+- driver'slicenses #
+- driver'slicence #
+- driver'slicences #
+- LIC del conducente #
+- driver'lics del conducente #
+- patente di guida #
+- licenze del conducente #
+- patente di guida #
+- patenti di guida #
+- driving licence
+ 
+- patente di guida
+- dlno #
+- driv Lic
+- driv licen
+- licenza di driv
+- licenze di driv
+- licenza driv
+- licenze di driv
+- driver licen
+- driver licen
+- licei del conducente
+- Guida di Lic
+- Guida licen
+- patenti di guida
+- driving licence
+
+- driving licences
+
+- permesso di guida
+- DL No
+- dlno
+- numero DL
+
+
 #### <a name="keywords_lithuania_eu_drivers_license_number"></a>Keywords_lithuania_eu_driver ' s_license_number
 
-- DL #
-- driver license
-- numero della patente di guida
-- patente di guida
-- driver Lic.
-- drivers license
-- drivers licence
-- driver's license
-- numero della patente di guida
-- numero di patente del conducente
-- numero della patente di guida
-- dlno #
 - vairuotojo pažymėjimas
+- vairuotojo pažymėjimo numeris
+- vairuotojo pažymėjimo numeriai
 
 ## <a name="lithuania-personal-code"></a>Codice personale Lituania
 Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
@@ -8840,35 +10695,152 @@ No
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
 - L'espressione regolare  `Regex_luxemburg_eu_driver's_license_number` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola chiave from  `Keywords_luxemburg_eu_driver's_license_number` . 
+- Una parola chiave da  `Keywords_eu_driver's_license_number` o `Keywords_luxemburg_eu_driver's_license_number` viene trovata. 
     
 ```xml
- <!-- EU Driver's License Number -->
-<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
+      <!-- Luxemburg Driver's License Number -->
+      <Entity id="89daf717-1544-4860-9a2e-fc9166dd8852" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_luxemburg_eu_driver's_license_number" />
-          <Match idRef="Keywords_luxemburg_eu_driver's_license_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_luxemburg_eu_driver's_license_number" />
+          </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>Parole chiave
 
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver ' s_license_number
+
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
+- LIC del driver
+- driver driver'lics
+- patente di guida
+- licenze per i driver
+- patente di guida
+- licenze per i driver
+- driverslic
+- driverslics
+- driverslicence
+- driverslicences
+- driverslicense
+- driverslicenses
+- driver Lic
+- driver driver'lics
+- patente di guida
+- licenze per i driver
+- patente di guida
+- licenze per i conducenti
+- driver'lic
+- driver ' LiCS
+- driver ' License
+- driver ' licenses
+- driver'licence
+- driver'licences
+- LIC del driver
+- driver ' driver'lics
+- patente di guida
+- licenze per i driver
+- patente di guida
+- patenti del conducente
+- driver'slic
+- driver'slics
+- secondola
+- driver'slicenses
+- driver'slicence
+- driver'slicences
+- LIC del conducente
+- driver'lics del conducente
+- patente di guida
+- licenze del conducente
+- patente di guida
+- patenti di guida
+- DL #
+- DLS #
+- driverlic #
+- driverlics #
+- driverlicense #
+- driverlicenses #
+- driverlicence #
+- driverlicences #
+- LIC del driver #
+- driver driver'lics #
+- patente di guida #
+- licenze per i driver #
+- licenze per i driver #
+- driverslic #
+- driverslics #
+- driverslicense #
+- driverslicenses #
+- driverslicence #
+- driverslicences #
+- driver Lic #
+- driver driver'lics #
+- patente di guida #
+- licenze per i driver #
+- patente di guida #
+- licenze per i conducenti #
+- driver'lic #
+- driver ' LiCS #
+- driver ' License #
+- driver ' licenses #
+- driver'licence #
+- driver'licences #
+- LIC del driver #
+- driver ' driver'lics #
+- patente di guida #
+- licenze per i driver #
+- patente di guida #
+- patenti del conducente #
+- driver'slic #
+- driver'slics #
+- secondola #
+- driver'slicenses #
+- driver'slicence #
+- driver'slicences #
+- LIC del conducente #
+- driver'lics del conducente #
+- patente di guida #
+- licenze del conducente #
+- patente di guida #
+- patenti di guida #
+- driving licence
+ 
+- patente di guida
+- dlno #
+- driv Lic
+- driv licen
+- licenza di driv
+- licenze di driv
+- licenza driv
+- licenze di driv
+- driver licen
+- driver licen
+- licei del conducente
+- Guida di Lic
+- Guida licen
+- patenti di guida
+- driving licence
+
+- driving licences
+
+- permesso di guida
+- DL No
+- dlno
+- numero DL
+
+
 #### <a name="keywords_luxemburg_eu_drivers_license_number"></a>Keywords_luxemburg_eu_driver ' s_license_number
 
-- DL #
-- driver license
-- numero della patente di guida
-- patente di guida
-- driver Lic.
-- drivers license
-- drivers licence
-- driver's license
-- numero della patente di guida
-- numero di patente del conducente
-- numero della patente di guida
-- dlno #
 - fahrerlaubnis
+- Führerschäin
 
 ## <a name="luxemburg-national-identification-number-natural-persons"></a>Numero di identificazione nazionale del Lussemburgo (persone fisiche)
 Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
@@ -9169,35 +11141,153 @@ No
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
 - L'espressione regolare  `Regex_malta_eu_driver's_license_number` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola chiave from  `Keywords_malta_eu_driver's_license_number` . 
+- Una parola chiave da  `Keywords_eu_driver's_license_number` o `Keywords_malta_eu_driver's_license_number` viene trovata. 
     
 ```xml
-<!-- EU Driver's License Number -->
- <Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
+      <!-- Malta Driver's License Number -->
+      <Entity id="a3bdaa4a-8371-4735-8fa5-56ee0fb4afc4" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_malta_eu_driver's_license_number" />
-          <Match idRef="Keywords_malta_eu_driver's_license_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_malta_eu_driver's_license_number" />
+          </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>Parole chiave
 
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver ' s_license_number
+
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
+- LIC del driver
+- driver driver'lics
+- patente di guida
+- licenze per i driver
+- patente di guida
+- licenze per i driver
+- driverslic
+- driverslics
+- driverslicence
+- driverslicences
+- driverslicense
+- driverslicenses
+- driver Lic
+- driver driver'lics
+- patente di guida
+- licenze per i driver
+- patente di guida
+- licenze per i conducenti
+- driver'lic
+- driver ' LiCS
+- driver ' License
+- driver ' licenses
+- driver'licence
+- driver'licences
+- LIC del driver
+- driver ' driver'lics
+- patente di guida
+- licenze per i driver
+- patente di guida
+- patenti del conducente
+- driver'slic
+- driver'slics
+- secondola
+- driver'slicenses
+- driver'slicence
+- driver'slicences
+- LIC del conducente
+- driver'lics del conducente
+- patente di guida
+- licenze del conducente
+- patente di guida
+- patenti di guida
+- DL #
+- DLS #
+- driverlic #
+- driverlics #
+- driverlicense #
+- driverlicenses #
+- driverlicence #
+- driverlicences #
+- LIC del driver #
+- driver driver'lics #
+- patente di guida #
+- licenze per i driver #
+- licenze per i driver #
+- driverslic #
+- driverslics #
+- driverslicense #
+- driverslicenses #
+- driverslicence #
+- driverslicences #
+- driver Lic #
+- driver driver'lics #
+- patente di guida #
+- licenze per i driver #
+- patente di guida #
+- licenze per i conducenti #
+- driver'lic #
+- driver ' LiCS #
+- driver ' License #
+- driver ' licenses #
+- driver'licence #
+- driver'licences #
+- LIC del driver #
+- driver ' driver'lics #
+- patente di guida #
+- licenze per i driver #
+- patente di guida #
+- patenti del conducente #
+- driver'slic #
+- driver'slics #
+- secondola #
+- driver'slicenses #
+- driver'slicence #
+- driver'slicences #
+- LIC del conducente #
+- driver'lics del conducente #
+- patente di guida #
+- licenze del conducente #
+- patente di guida #
+- patenti di guida #
+- driving licence
+ 
+- patente di guida
+- dlno #
+- driv Lic
+- driv licen
+- licenza di driv
+- licenze di driv
+- licenza driv
+- licenze di driv
+- driver licen
+- driver licen
+- licei del conducente
+- Guida di Lic
+- Guida licen
+- patenti di guida
+- driving licence
+
+- driving licences
+
+- permesso di guida
+- DL No
+- dlno
+- numero DL
+
+
 #### <a name="keywords_malta_eu_drivers_license_number"></a>Keywords_malta_eu_driver ' s_license_number
 
-- DL #
-- driver license
-- numero della patente di guida
-- patente di guida
-- driver Lic.
-- drivers license
-- drivers licence
-- driver's license
-- numero della patente di guida
-- numero di patente del conducente
-- numero della patente di guida
-- dlno #
 - Liċenzja TAS-sewqan
+- liċenzji TAS-sewwieq
+
 
 ## <a name="malta-identity-card-number"></a>Numero di carta di identità di Malta
 Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
@@ -9490,37 +11580,156 @@ No
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
 - L'espressione regolare  `Regex_netherlands_eu_driver's_license_number` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola chiave from  `Keywords_netherlands_eu_driver's_license_number` . 
+- Una parola chiave da  `Keywords_eu_driver's_license_number` o `Keywords_netherlands_eu_driver's_license_number` viene trovata. 
     
 ```xml
- <!-- EU Driver's License Number -->
-<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
+      <!-- Netherlands Driver's License Number -->
+      <Entity id="6247fbea-ab80-4be5-8233-308b7c031401" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_netherlands_eu_driver's_license_number" />
-          <Match idRef="Keywords_netherlands_eu_driver's_license_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_netherlands_eu_driver's_license_number" />
+            </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>Parole chiave
 
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver ' s_license_number
+
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
+- LIC del driver
+- driver driver'lics
+- patente di guida
+- licenze per i driver
+- patente di guida
+- licenze per i driver
+- driverslic
+- driverslics
+- driverslicence
+- driverslicences
+- driverslicense
+- driverslicenses
+- driver Lic
+- driver driver'lics
+- patente di guida
+- licenze per i driver
+- patente di guida
+- licenze per i conducenti
+- driver'lic
+- driver ' LiCS
+- driver ' License
+- driver ' licenses
+- driver'licence
+- driver'licences
+- LIC del driver
+- driver ' driver'lics
+- patente di guida
+- licenze per i driver
+- patente di guida
+- patenti del conducente
+- driver'slic
+- driver'slics
+- secondola
+- driver'slicenses
+- driver'slicence
+- driver'slicences
+- LIC del conducente
+- driver'lics del conducente
+- patente di guida
+- licenze del conducente
+- patente di guida
+- patenti di guida
+- DL #
+- DLS #
+- driverlic #
+- driverlics #
+- driverlicense #
+- driverlicenses #
+- driverlicence #
+- driverlicences #
+- LIC del driver #
+- driver driver'lics #
+- patente di guida #
+- licenze per i driver #
+- licenze per i driver #
+- driverslic #
+- driverslics #
+- driverslicense #
+- driverslicenses #
+- driverslicence #
+- driverslicences #
+- driver Lic #
+- driver driver'lics #
+- patente di guida #
+- licenze per i driver #
+- patente di guida #
+- licenze per i conducenti #
+- driver'lic #
+- driver ' LiCS #
+- driver ' License #
+- driver ' licenses #
+- driver'licence #
+- driver'licences #
+- LIC del driver #
+- driver ' driver'lics #
+- patente di guida #
+- licenze per i driver #
+- patente di guida #
+- patenti del conducente #
+- driver'slic #
+- driver'slics #
+- secondola #
+- driver'slicenses #
+- driver'slicence #
+- driver'slicences #
+- LIC del conducente #
+- driver'lics del conducente #
+- patente di guida #
+- licenze del conducente #
+- patente di guida #
+- patenti di guida #
+- driving licence
+ 
+- patente di guida
+- dlno #
+- driv Lic
+- driv licen
+- licenza di driv
+- licenze di driv
+- licenza driv
+- licenze di driv
+- driver licen
+- driver licen
+- licei del conducente
+- Guida di Lic
+- Guida licen
+- patenti di guida
+- driving licence
+
+- driving licences
+
+- permesso di guida
+- DL No
+- dlno
+- numero DL
+
+
 #### <a name="keywords_netherlands_eu_drivers_license_number"></a>Keywords_netherlands_eu_driver ' s_license_number
 
-- DL #
-- driver license
-- numero della patente di guida
-- patente di guida
-- driver Lic.
-- drivers license
-- drivers licence
-- driver's license
-- numero della patente di guida
-- numero di patente del conducente
-- numero della patente di guida
-- dlno #
 - permis de conduire
 - rijbewijs
 - rijbewijsnummer
+- rijbewijzen
+- Rijbewijs Nummer
+- rijbewijsnummers
 
 
 ## <a name="netherlands-passport-number"></a>Numero di passaporto per i Paesi Bassi
@@ -9755,7 +11964,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
       <Entity id="1a97fc2b-dd2f-48f1-bc4e-2ddf25813956" patternsProximity="300" recommendedConfidence="85">
         <Pattern confidenceLevel="85">
           <IdMatch idRef="Func_new_zealand_bank_account_number" />
-          <Match idRef="Keywords_new_zealand_bank_account_number" />
+          <Match idRef="Keywords_new_zFealand_bank_account_number" />
         </Pattern>
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Func_new_zealand_bank_account_number" />
@@ -10176,35 +12385,152 @@ No
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
 - L'espressione regolare  `Regex_poland_eu_driver's_license_number` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola chiave from  `Keywords_poland_eu_driver's_license_number` . 
+- Una parola chiave da  `Keywords_eu_driver's_license_number` o `Keywords_poland_eu_driver's_license_number` viene trovata. 
     
 ```xml
- <!-- EU Driver's License Number -->
-<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
+      <!-- Poland Driver's License Number -->
+      <Entity id="24d51f99-ee9e-4060-a077-cae58cab1ee4" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_poland_eu_driver's_license_number" />
-          <Match idRef="Keywords_poland_eu_driver's_license_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_poland_eu_driver's_license_number" />
+          </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>Parole chiave
 
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver ' s_license_number
+
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
+- LIC del driver
+- driver driver'lics
+- patente di guida
+- licenze per i driver
+- patente di guida
+- licenze per i driver
+- driverslic
+- driverslics
+- driverslicence
+- driverslicences
+- driverslicense
+- driverslicenses
+- driver Lic
+- driver driver'lics
+- patente di guida
+- licenze per i driver
+- patente di guida
+- licenze per i conducenti
+- driver'lic
+- driver ' LiCS
+- driver ' License
+- driver ' licenses
+- driver'licence
+- driver'licences
+- LIC del driver
+- driver ' driver'lics
+- patente di guida
+- licenze per i driver
+- patente di guida
+- patenti del conducente
+- driver'slic
+- driver'slics
+- secondola
+- driver'slicenses
+- driver'slicence
+- driver'slicences
+- LIC del conducente
+- driver'lics del conducente
+- patente di guida
+- licenze del conducente
+- patente di guida
+- patenti di guida
+- DL #
+- DLS #
+- driverlic #
+- driverlics #
+- driverlicense #
+- driverlicenses #
+- driverlicence #
+- driverlicences #
+- LIC del driver #
+- driver driver'lics #
+- patente di guida #
+- licenze per i driver #
+- licenze per i driver #
+- driverslic #
+- driverslics #
+- driverslicense #
+- driverslicenses #
+- driverslicence #
+- driverslicences #
+- driver Lic #
+- driver driver'lics #
+- patente di guida #
+- licenze per i driver #
+- patente di guida #
+- licenze per i conducenti #
+- driver'lic #
+- driver ' LiCS #
+- driver ' License #
+- driver ' licenses #
+- driver'licence #
+- driver'licences #
+- LIC del driver #
+- driver ' driver'lics #
+- patente di guida #
+- licenze per i driver #
+- patente di guida #
+- patenti del conducente #
+- driver'slic #
+- driver'slics #
+- secondola #
+- driver'slicenses #
+- driver'slicence #
+- driver'slicences #
+- LIC del conducente #
+- driver'lics del conducente #
+- patente di guida #
+- licenze del conducente #
+- patente di guida #
+- patenti di guida #
+- driving licence
+ 
+- patente di guida
+- dlno #
+- driv Lic
+- driv licen
+- licenza di driv
+- licenze di driv
+- licenza driv
+- licenze di driv
+- driver licen
+- driver licen
+- licei del conducente
+- Guida di Lic
+- Guida licen
+- patenti di guida
+- driving licence
+
+- driving licences
+
+- permesso di guida
+- DL No
+- dlno
+- numero DL
+
+
 #### <a name="keywords_poland_eu_drivers_license_number"></a>Keywords_poland_eu_driver ' s_license_number
 
-- DL #
-- driver license
-- numero della patente di guida
-- patente di guida
-- driver Lic.
-- drivers license
-- drivers licence
-- driver's license
-- numero della patente di guida
-- numero di patente del conducente
-- numero della patente di guida
-- dlno #
 - prawo jazdy
+- prawa jazdy
 
 ## <a name="poland-identity-card"></a>Carta di identità in Polonia
 
@@ -10542,17 +12868,24 @@ Questa entità di tipo di informazioni riservate è disponibile solo nel tipo di
 
 ### <a name="format"></a>Formato
 
-due lettere seguite da un numero di sette numeri nel modello specificato
+due modelli: due lettere seguite da 5-8 cifre con caratteri speciali
   
 ### <a name="pattern"></a>Modello
 
-due lettere seguite da sette numeri con caratteri speciali:
-  
-- due lettere (senza distinzione tra maiuscole e minuscole) 
-- un trattino
-- sei cifre
-- uno spazio
-- una cifra
+Schema 1: due lettere seguite da 5/6 con caratteri speciali:
+- Due lettere (senza distinzione tra maiuscole e minuscole)
+- Una lineetta
+- Cinque o sei cifre
+- Uno spazio
+- Una cifra
+
+Schema 2: una lettera seguita da 6/8 cifre con caratteri speciali:
+- Una lettera (senza distinzione tra maiuscole e minuscole)
+- Una lineetta
+- Sei o otto cifre
+- Uno spazio
+- Una cifra
+
     
 ### <a name="checksum"></a>Checksum
 
@@ -10562,35 +12895,160 @@ No
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
 - L'espressione regolare  `Regex_portugal_eu_driver's_license_number` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola chiave from  `Keywords_portugal_eu_driver's_license_number` . 
+- Una parola chiave da  `Keywords_eu_driver's_license_number` o `Keywords_portugal_eu_driver's_license_number` viene trovata. 
     
 ```xml
- <!-- EU Driver's License Number -->
-<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
+      <!-- Portugal Driver's License Number -->
+      <Entity id="977f1e5a-2c33-4bcc-b516-95bb275cff23" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_portugal_eu_driver's_license_number" />
-          <Match idRef="Keywords_portugal_eu_driver's_license_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_portugal_eu_driver's_license_number" />
+          </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>Parole chiave
 
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver ' s_license_number
+
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
+- LIC del driver
+- driver driver'lics
+- patente di guida
+- licenze per i driver
+- patente di guida
+- licenze per i driver
+- driverslic
+- driverslics
+- driverslicence
+- driverslicences
+- driverslicense
+- driverslicenses
+- driver Lic
+- driver driver'lics
+- patente di guida
+- licenze per i driver
+- patente di guida
+- licenze per i conducenti
+- driver'lic
+- driver ' LiCS
+- driver ' License
+- driver ' licenses
+- driver'licence
+- driver'licences
+- LIC del driver
+- driver ' driver'lics
+- patente di guida
+- licenze per i driver
+- patente di guida
+- patenti del conducente
+- driver'slic
+- driver'slics
+- secondola
+- driver'slicenses
+- driver'slicence
+- driver'slicences
+- LIC del conducente
+- driver'lics del conducente
+- patente di guida
+- licenze del conducente
+- patente di guida
+- patenti di guida
+- DL #
+- DLS #
+- driverlic #
+- driverlics #
+- driverlicense #
+- driverlicenses #
+- driverlicence #
+- driverlicences #
+- LIC del driver #
+- driver driver'lics #
+- patente di guida #
+- licenze per i driver #
+- licenze per i driver #
+- driverslic #
+- driverslics #
+- driverslicense #
+- driverslicenses #
+- driverslicence #
+- driverslicences #
+- driver Lic #
+- driver driver'lics #
+- patente di guida #
+- licenze per i driver #
+- patente di guida #
+- licenze per i conducenti #
+- driver'lic #
+- driver ' LiCS #
+- driver ' License #
+- driver ' licenses #
+- driver'licence #
+- driver'licences #
+- LIC del driver #
+- driver ' driver'lics #
+- patente di guida #
+- licenze per i driver #
+- patente di guida #
+- patenti del conducente #
+- driver'slic #
+- driver'slics #
+- secondola #
+- driver'slicenses #
+- driver'slicence #
+- driver'slicences #
+- LIC del conducente #
+- driver'lics del conducente #
+- patente di guida #
+- licenze del conducente #
+- patente di guida #
+- patenti di guida #
+- driving licence
+ 
+- patente di guida
+- dlno #
+- driv Lic
+- driv licen
+- licenza di driv
+- licenze di driv
+- licenza driv
+- licenze di driv
+- driver licen
+- driver licen
+- licei del conducente
+- Guida di Lic
+- Guida licen
+- patenti di guida
+- driving licence
+
+- driving licences
+
+- permesso di guida
+- DL No
+- dlno
+- numero DL
+
+
 #### <a name="keywords_portugal_eu_drivers_license_number"></a>Keywords_portugal_eu_driver ' s_license_number
 
-- DL #
-- driver license
-- numero della patente di guida
-- patente di guida
-- driver Lic.
-- drivers license
-- drivers licence
-- driver's license
-- numero della patente di guida
-- numero di patente del conducente
-- numero della patente di guida
-- dlno #
 - carteira de motorista
+- carteira motorista
+- carteira de habilitação
+- carteira habilitação
+- número de licença
+- número licença
+- Permissão de condução
+- permissão condução
+- Licença condução Portugal
+- carta de condução
 
 ## <a name="portugal-passport-number"></a>Portogallo-numero di passaporto
 Questa entità di tipo di informazioni riservate è disponibile solo nel tipo di informazioni riservate del numero di passaporto dell'Unione europea.
@@ -10736,7 +13194,6 @@ un carattere seguito da otto cifre
 ### <a name="pattern"></a>Modello
 
 un carattere seguito da otto cifre:
-  
 - una lettera (senza distinzione tra maiuscole e minuscole) o cifra 
 - otto cifre
     
@@ -10748,35 +13205,156 @@ No
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
 - L'espressione regolare  `Regex_romania_eu_driver's_license_number` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola chiave from  `Keywords_romania_eu_driver's_license_number` . 
+- Una parola chiave da  `Keywords_eu_driver's_license_number` o `Keywords_romania_eu_driver's_license_number` viene trovata. 
     
 ```xml
- <!-- EU Driver's License Number -->
-<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
+      <!-- Romania Driver's License Number -->
+      <Entity id="b5511ace-2fd8-4ae4-b6fc-c7c6e4689e3c" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_romania_eu_driver's_license_number" />
-          <Match idRef="Keywords_romania_eu_driver's_license_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_romania_eu_driver's_license_number" />
+          </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>Parole chiave
 
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver ' s_license_number
+
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
+- LIC del driver
+- driver driver'lics
+- patente di guida
+- licenze per i driver
+- patente di guida
+- licenze per i driver
+- driverslic
+- driverslics
+- driverslicence
+- driverslicences
+- driverslicense
+- driverslicenses
+- driver Lic
+- driver driver'lics
+- patente di guida
+- licenze per i driver
+- patente di guida
+- licenze per i conducenti
+- driver'lic
+- driver ' LiCS
+- driver ' License
+- driver ' licenses
+- driver'licence
+- driver'licences
+- LIC del driver
+- driver ' driver'lics
+- patente di guida
+- licenze per i driver
+- patente di guida
+- patenti del conducente
+- driver'slic
+- driver'slics
+- secondola
+- driver'slicenses
+- driver'slicence
+- driver'slicences
+- LIC del conducente
+- driver'lics del conducente
+- patente di guida
+- licenze del conducente
+- patente di guida
+- patenti di guida
+- DL #
+- DLS #
+- driverlic #
+- driverlics #
+- driverlicense #
+- driverlicenses #
+- driverlicence #
+- driverlicences #
+- LIC del driver #
+- driver driver'lics #
+- patente di guida #
+- licenze per i driver #
+- licenze per i driver #
+- driverslic #
+- driverslics #
+- driverslicense #
+- driverslicenses #
+- driverslicence #
+- driverslicences #
+- driver Lic #
+- driver driver'lics #
+- patente di guida #
+- licenze per i driver #
+- patente di guida #
+- licenze per i conducenti #
+- driver'lic #
+- driver ' LiCS #
+- driver ' License #
+- driver ' licenses #
+- driver'licence #
+- driver'licences #
+- LIC del driver #
+- driver ' driver'lics #
+- patente di guida #
+- licenze per i driver #
+- patente di guida #
+- patenti del conducente #
+- driver'slic #
+- driver'slics #
+- secondola #
+- driver'slicenses #
+- driver'slicence #
+- driver'slicences #
+- LIC del conducente #
+- driver'lics del conducente #
+- patente di guida #
+- licenze del conducente #
+- patente di guida #
+- patenti di guida #
+- driving licence
+ 
+- patente di guida
+- dlno #
+- driv Lic
+- driv licen
+- licenza di driv
+- licenze di driv
+- licenza driv
+- licenze di driv
+- driver licen
+- driver licen
+- licei del conducente
+- Guida di Lic
+- Guida licen
+- patenti di guida
+- driving licence
+
+- driving licences
+
+- permesso di guida
+- DL No
+- dlno
+- numero DL
+
+
 #### <a name="keywords_romania_eu_drivers_license_number"></a>Keywords_romania_eu_driver ' s_license_number
 
-- DL #
-- driver license
-- numero della patente di guida
-- patente di guida
-- driver Lic.
-- drivers license
-- drivers licence
-- driver's license
-- numero della patente di guida
-- numero di patente del conducente
-- numero della patente di guida
-- dlno #
 - Permis de conducere
+- permisului de conducere
+- permisului conducere
+- permisele de conducere
+- permisele conducere
+- Permis conducere
 
 ## <a name="romania-personal-numeric-code-cnp"></a>Codice numerico personale Romania (CNP)
 Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
@@ -11171,35 +13749,154 @@ No
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
 - L'espressione regolare  `Regex_slovakia_eu_driver's_license_number` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola chiave from  `Keywords_slovakia_eu_driver's_license_number` . 
+- Una parola chiave da  `Keywords_eu_driver's_license_number` o `Keywords_slovakia_eu_driver's_license_number` viene trovata. 
     
 ```xml
- <!-- EU Driver's License Number -->
-<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
+      <!-- Slovakia Driver's License Number -->
+      <Entity id="14240c22-b6de-4ce5-a90b-137f74252513" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
-          <IdMatch idRef="Regex_slovaknia_eu_driver's_license_number" />
-          <Match idRef="Keywords_slovakia_eu_driver's_license_number" />
+          <IdMatch idRef="Regex_slovakia_eu_driver's_license_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_slovakia_eu_driver's_license_number" />
+          </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>Parole chiave
 
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver ' s_license_number
+
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
+- LIC del driver
+- driver driver'lics
+- patente di guida
+- licenze per i driver
+- patente di guida
+- licenze per i driver
+- driverslic
+- driverslics
+- driverslicence
+- driverslicences
+- driverslicense
+- driverslicenses
+- driver Lic
+- driver driver'lics
+- patente di guida
+- licenze per i driver
+- patente di guida
+- licenze per i conducenti
+- driver'lic
+- driver ' LiCS
+- driver ' License
+- driver ' licenses
+- driver'licence
+- driver'licences
+- LIC del driver
+- driver ' driver'lics
+- patente di guida
+- licenze per i driver
+- patente di guida
+- patenti del conducente
+- driver'slic
+- driver'slics
+- secondola
+- driver'slicenses
+- driver'slicence
+- driver'slicences
+- LIC del conducente
+- driver'lics del conducente
+- patente di guida
+- licenze del conducente
+- patente di guida
+- patenti di guida
+- DL #
+- DLS #
+- driverlic #
+- driverlics #
+- driverlicense #
+- driverlicenses #
+- driverlicence #
+- driverlicences #
+- LIC del driver #
+- driver driver'lics #
+- patente di guida #
+- licenze per i driver #
+- licenze per i driver #
+- driverslic #
+- driverslics #
+- driverslicense #
+- driverslicenses #
+- driverslicence #
+- driverslicences #
+- driver Lic #
+- driver driver'lics #
+- patente di guida #
+- licenze per i driver #
+- patente di guida #
+- licenze per i conducenti #
+- driver'lic #
+- driver ' LiCS #
+- driver ' License #
+- driver ' licenses #
+- driver'licence #
+- driver'licences #
+- LIC del driver #
+- driver ' driver'lics #
+- patente di guida #
+- licenze per i driver #
+- patente di guida #
+- patenti del conducente #
+- driver'slic #
+- driver'slics #
+- secondola #
+- driver'slicenses #
+- driver'slicence #
+- driver'slicences #
+- LIC del conducente #
+- driver'lics del conducente #
+- patente di guida #
+- licenze del conducente #
+- patente di guida #
+- patenti di guida #
+- driving licence
+ 
+- patente di guida
+- dlno #
+- driv Lic
+- driv licen
+- licenza di driv
+- licenze di driv
+- licenza driv
+- licenze di driv
+- driver licen
+- driver licen
+- licei del conducente
+- Guida di Lic
+- Guida licen
+- patenti di guida
+- driving licence
+
+- driving licences
+
+- permesso di guida
+- DL No
+- dlno
+- numero DL
+
+
 #### <a name="keywords_slovakia_eu_drivers_license_number"></a>Keywords_slovakia_eu_driver ' s_license_number
 
-- DL #
-- driver license
-- numero della patente di guida
-- patente di guida
-- driver Lic.
-- drivers license
-- drivers licence
-- driver's license
-- numero della patente di guida
-- numero di patente del conducente
-- numero della patente di guida
-- dlno #
 - vodičský preukaz
+- vodičské preukazy
+- vodičského preukazu
+- vodičských preukazov
 
 ## <a name="slovakia-personal-number"></a>Slovacchia-numero personale
 Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
@@ -11374,35 +14071,155 @@ No
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
 - L'espressione regolare  `Regex_slovenia_eu_driver's_license_number` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola chiave from  `Keywords_slovenia_eu_driver's_license_number` . 
+- Una parola chiave da  `Keywords_eu_driver's_license_number` o `Keywords_slovenia_eu_driver's_license_number` viene trovata. 
     
 ```xml
- <!-- EU Driver's License Number -->
-<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
+      <!-- Slovenia Driver's License Number -->
+      <Entity id="d5bc089a-f2ee-433d-a6b1-5c253051d6f2" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_slovenia_eu_driver's_license_number" />
-          <Match idRef="Keywords_slovenia_eu_driver's_license_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_slovenia_eu_driver's_license_number" />
+          </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>Parole chiave
 
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver ' s_license_number
+
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
+- LIC del driver
+- driver driver'lics
+- patente di guida
+- licenze per i driver
+- patente di guida
+- licenze per i driver
+- driverslic
+- driverslics
+- driverslicence
+- driverslicences
+- driverslicense
+- driverslicenses
+- driver Lic
+- driver driver'lics
+- patente di guida
+- licenze per i driver
+- patente di guida
+- licenze per i conducenti
+- driver'lic
+- driver ' LiCS
+- driver ' License
+- driver ' licenses
+- driver'licence
+- driver'licences
+- LIC del driver
+- driver ' driver'lics
+- patente di guida
+- licenze per i driver
+- patente di guida
+- patenti del conducente
+- driver'slic
+- driver'slics
+- secondola
+- driver'slicenses
+- driver'slicence
+- driver'slicences
+- LIC del conducente
+- driver'lics del conducente
+- patente di guida
+- licenze del conducente
+- patente di guida
+- patenti di guida
+- DL #
+- DLS #
+- driverlic #
+- driverlics #
+- driverlicense #
+- driverlicenses #
+- driverlicence #
+- driverlicences #
+- LIC del driver #
+- driver driver'lics #
+- patente di guida #
+- licenze per i driver #
+- licenze per i driver #
+- driverslic #
+- driverslics #
+- driverslicense #
+- driverslicenses #
+- driverslicence #
+- driverslicences #
+- driver Lic #
+- driver driver'lics #
+- patente di guida #
+- licenze per i driver #
+- patente di guida #
+- licenze per i conducenti #
+- driver'lic #
+- driver ' LiCS #
+- driver ' License #
+- driver ' licenses #
+- driver'licence #
+- driver'licences #
+- LIC del driver #
+- driver ' driver'lics #
+- patente di guida #
+- licenze per i driver #
+- patente di guida #
+- patenti del conducente #
+- driver'slic #
+- driver'slics #
+- secondola #
+- driver'slicenses #
+- driver'slicence #
+- driver'slicences #
+- LIC del conducente #
+- driver'lics del conducente #
+- patente di guida #
+- licenze del conducente #
+- patente di guida #
+- patenti di guida #
+- driving licence
+ 
+- patente di guida
+- dlno #
+- driv Lic
+- driv licen
+- licenza di driv
+- licenze di driv
+- licenza driv
+- licenze di driv
+- driver licen
+- driver licen
+- licei del conducente
+- Guida di Lic
+- Guida licen
+- patenti di guida
+- driving licence
+
+- driving licences
+
+- permesso di guida
+- DL No
+- dlno
+- numero DL
+
+
 #### <a name="keywords_slovenia_eu_drivers_license_number"></a>Keywords_slovenia_eu_driver ' s_license_number
 
-- DL #
-- driver license
-- numero della patente di guida
-- patente di guida
-- driver Lic.
-- drivers license
-- drivers licence
-- driver's license 
-- numero della patente di guida
-- numero di patente del conducente
-- numero della patente di guida
-- dlno #
 - vozniško dovoljenje
+- licenza di številka vozniška
+- vozniških dovoljenj
+- številka vozniškega dovoljenja
+- številke vozniških dovoljenj
 
 ## <a name="slovenia-unique-master-citizen-number"></a>Slovenia numero di cittadini Master Unique
 Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
@@ -11735,58 +14552,180 @@ Sì
   
 ### <a name="definition"></a>Definizione
 
+Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
+- La funzione  `Func_spain_eu_DL_and_NI_number_citizen` o `Func_spain_eu_DL_and_NI_number_foreigner` trova il contenuto che corrisponde al modello. 
+- Una parola chiave da  `Keywords_eu_driver's_license_number` o `Keywords_spain_eu_driver's_license_number` viene trovata. 
+
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
-- La funzione  `Func_spain_eu_driver's_license_number` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola chiave from  `Keywords_spain_eu_driver's_license_number` . 
+- La funzione  `Func_spain_eu_DL_and_NI_number_citizen` o `Func_spain_eu_DL_and_NI_number_foreigner` trova il contenuto che corrisponde al modello. 
     
 ```xml
- <!-- EU Driver's License Number -->
-<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
-        <Pattern confidenceLevel="75">
-          <IdMatch idRef="Func_spain_eu_driver's_license_number" />
-          <Match idRef="Keywords_spain_eu_driver's_license_number" />
+      <!-- Spain Driver's License Number -->
+      <Entity id="d5a82922-b501-4f40-8868-341321146aa2" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Func_spain_eu_DL_and_NI_number_citizen" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_spain_eu_driver's_license_number" />
+          </Any>
         </Pattern>
-</Entity>
+        <Pattern confidenceLevel="75">
+          <IdMatch idRef="Func_spain_eu_DL_and_NI_number_citizen" />
+        </Pattern>
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Func_spain_eu_DL_and_NI_number_foreigner" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_spain_eu_driver's_license_number" />
+          </Any>
+        </Pattern>
+        <Pattern confidenceLevel="75">
+          <IdMatch idRef="Func_spain_eu_DL_and_NI_number_foreigner" />
+        </Pattern>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>Parole chiave
 
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver ' s_license_number
+
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
+- LIC del driver
+- driver driver'lics
+- patente di guida
+- licenze per i driver
+- patente di guida
+- licenze per i driver
+- driverslic
+- driverslics
+- driverslicence
+- driverslicences
+- driverslicense
+- driverslicenses
+- driver Lic
+- driver driver'lics
+- patente di guida
+- licenze per i driver
+- patente di guida
+- licenze per i conducenti
+- driver'lic
+- driver ' LiCS
+- driver ' License
+- driver ' licenses
+- driver'licence
+- driver'licences
+- LIC del driver
+- driver ' driver'lics
+- patente di guida
+- licenze per i driver
+- patente di guida
+- patenti del conducente
+- driver'slic
+- driver'slics
+- secondola
+- driver'slicenses
+- driver'slicence
+- driver'slicences
+- LIC del conducente
+- driver'lics del conducente
+- patente di guida
+- licenze del conducente
+- patente di guida
+- patenti di guida
+- DL #
+- DLS #
+- driverlic #
+- driverlics #
+- driverlicense #
+- driverlicenses #
+- driverlicence #
+- driverlicences #
+- LIC del driver #
+- driver driver'lics #
+- patente di guida #
+- licenze per i driver #
+- licenze per i driver #
+- driverslic #
+- driverslics #
+- driverslicense #
+- driverslicenses #
+- driverslicence #
+- driverslicences #
+- driver Lic #
+- driver driver'lics #
+- patente di guida #
+- licenze per i driver #
+- patente di guida #
+- licenze per i conducenti #
+- driver'lic #
+- driver ' LiCS #
+- driver ' License #
+- driver ' licenses #
+- driver'licence #
+- driver'licences #
+- LIC del driver #
+- driver ' driver'lics #
+- patente di guida #
+- licenze per i driver #
+- patente di guida #
+- patenti del conducente #
+- driver'slic #
+- driver'slics #
+- secondola #
+- driver'slicenses #
+- driver'slicence #
+- driver'slicences #
+- LIC del conducente #
+- driver'lics del conducente #
+- patente di guida #
+- licenze del conducente #
+- patente di guida #
+- patenti di guida #
+- driving licence
+ 
+- patente di guida
+- dlno #
+- driv Lic
+- driv licen
+- licenza di driv
+- licenze di driv
+- licenza driv
+- licenze di driv
+- driver licen
+- driver licen
+- licei del conducente
+- Guida di Lic
+- Guida licen
+- patenti di guida
+- driving licence
+
+- driving licences
+
+- permesso di guida
+- DL No
+- dlno
+- numero DL
+
+
 #### <a name="keywords_spain_eu_drivers_license_number"></a>Keywords_spain_eu_driver ' s_license_number
 
-- dlno #
-- DL #
-- driver Lic.
-- patente di guida
-- driver license
-- drivers licence
-- drivers license
-- driver's licence
-- driver's license
-- driving licence
-- driving license
-- numero di patente del conducente
-- numero della patente di guida
-- numero di patente del conducente
-- numero della patente di guida
-- numero di patente del conducente
-- numero della patente di guida
-- numero di patente di guida
-- numero della patente di guida
-- permesso di guida
-- numero di licenza di guida
 - Permiso de conducción
 - Permiso conducción
-- número licencia conducir
-- número de carnet de conducir
-- número carnet conducir
+- licencia de conducir
 - licencia conducir
-- número de Permiso de conducir
-- número de permiso conducir
-- número permiso conducir
 - permiso conducir
-- licencia de manejo
-- El carnet de conducir
+- Permiso de conducir
+- permisos de conducir
+- permisos conducir
 - carnet conducir
+- Carnet de conducir
+- licencia de manejo
+- licencia Manejo
 
 ## <a name="spain-dni"></a>DNI Spagna
 Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
@@ -12186,35 +15125,161 @@ No
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
 - L'espressione regolare  `Regex_sweden_eu_driver's_license_number` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola chiave from  `Keywords_sweden_eu_driver's_license_number` . 
+- Una parola chiave da  `Keywords_eu_driver's_license_number` o `Keywords_sweden_eu_driver's_license_number` viene trovata. 
     
 ```xml
- <!-- EU Driver's License Number -->
-<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
+      <!-- Sweden Driver's License Number -->
+      <Entity id="70088720-90dd-47f5-805e-5525f3567391" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_sweden_eu_driver's_license_number" />
-          <Match idRef="Keywords_sweden_eu_driver's_license_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_sweden_eu_driver's_license_number" />
+          </Any>
         </Pattern>
-</Entity> 
+      </Entity>
 ```
 
 ### <a name="keywords"></a>Parole chiave
 
-**Keywords_sweden_eu_driver ' s_license_number**
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver ' s_license_number
 
-- DL #
-- driver license
-- numero della patente di guida
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
+- LIC del driver
+- driver driver'lics
 - patente di guida
-- driver Lic.
-- drivers license
-- drivers licence
-- driver's license
-- numero della patente di guida
-- numero di patente del conducente
-- numero della patente di guida
+- licenze per i driver
+- patente di guida
+- licenze per i driver
+- driverslic
+- driverslics
+- driverslicence
+- driverslicences
+- driverslicense
+- driverslicenses
+- driver Lic
+- driver driver'lics
+- patente di guida
+- licenze per i driver
+- patente di guida
+- licenze per i conducenti
+- driver'lic
+- driver ' LiCS
+- driver ' License
+- driver ' licenses
+- driver'licence
+- driver'licences
+- LIC del driver
+- driver ' driver'lics
+- patente di guida
+- licenze per i driver
+- patente di guida
+- patenti del conducente
+- driver'slic
+- driver'slics
+- secondola
+- driver'slicenses
+- driver'slicence
+- driver'slicences
+- LIC del conducente
+- driver'lics del conducente
+- patente di guida
+- licenze del conducente
+- patente di guida
+- patenti di guida
+- DL #
+- DLS #
+- driverlic #
+- driverlics #
+- driverlicense #
+- driverlicenses #
+- driverlicence #
+- driverlicences #
+- LIC del driver #
+- driver driver'lics #
+- patente di guida #
+- licenze per i driver #
+- licenze per i driver #
+- driverslic #
+- driverslics #
+- driverslicense #
+- driverslicenses #
+- driverslicence #
+- driverslicences #
+- driver Lic #
+- driver driver'lics #
+- patente di guida #
+- licenze per i driver #
+- patente di guida #
+- licenze per i conducenti #
+- driver'lic #
+- driver ' LiCS #
+- driver ' License #
+- driver ' licenses #
+- driver'licence #
+- driver'licences #
+- LIC del driver #
+- driver ' driver'lics #
+- patente di guida #
+- licenze per i driver #
+- patente di guida #
+- patenti del conducente #
+- driver'slic #
+- driver'slics #
+- secondola #
+- driver'slicenses #
+- driver'slicence #
+- driver'slicences #
+- LIC del conducente #
+- driver'lics del conducente #
+- patente di guida #
+- licenze del conducente #
+- patente di guida #
+- patenti di guida #
+- driving licence
+ 
+- patente di guida
 - dlno #
+- driv Lic
+- driv licen
+- licenza di driv
+- licenze di driv
+- licenza driv
+- licenze di driv
+- driver licen
+- driver licen
+- licei del conducente
+- Guida di Lic
+- Guida licen
+- patenti di guida
+- driving licence
+
+- driving licences
+
+- permesso di guida
+- DL No
+- dlno
+- numero DL
+
+
+#### <a name="keywords_sweden_eu_drivers_license_number"></a>Keywords_sweden_eu_driver ' s_license_number
+
+- ajokortti
+- Permis de conducere
+- numero ajokortin
+- kuljettajat Lic.
+- driver Lic.
 - körkort
+- numărul permisului de conducere
+-  שאָפער דערלויבעניש נומער
+- förare Lic.
+-  דריווערס דערלויבעניש
+- körkortsnummer
 
 ## <a name="sweden-national-id"></a>Svezia-ID nazionale
 
@@ -12534,38 +15599,54 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
    
 #### <a name="keyword_swift"></a>Keyword_swift
 
-- international organization for standardization 9362 
-- iso 9362 
-- iso9362 
-- Swift\# 
-- swiftcode 
-- swiftnumber 
-- swiftroutingnumber 
-- swift code 
-- swift number # 
-- swift routing number 
-- bic number 
-- bic code 
-- BIC \# 
-- BIC\# 
-- bank identifier code 
-- 標準化 9362 
-- 迅速＃ 
-- SWIFTコード 
-- SWIFT番号 
-- 迅速なルーティング番号 
-- BIC番号 
-- BICコード 
-- 銀行識別コードのための国際組織 
-- Organisation internationale de normalisation 9362 
-- rapide \# 
-- code SWIFT 
-- le numéro de swift 
-- swift numéro d'acheminement 
-- le numéro BIC 
-- \# BIC 
-- code identificateur de banque 
+- international organization for standardization 9362
 
+- iso 9362
+- iso9362
+- Swift #
+- swiftcode
+- swiftnumber
+- swiftroutingnumber
+- swift code
+
+- swift number #
+
+- swift routing number
+
+- bic number
+
+- bic code
+
+- bic #
+- BIC #
+- bank identifier code
+
+- Organisation internationale de normalisation 9362
+
+- rapide #
+
+- code SWIFT
+
+- le numéro de swift
+
+- swift numéro d'acheminement
+
+- le numéro BIC
+
+- # <a name="bic"></a>BIC
+- code identificateur de banque
+
+- SWIFTコード
+- SWIFT番号
+- BIC番号
+- BICコード
+- コード SWIFT
+- 番号 SWIFT
+- BIC 番号
+- BIC コード
+- 金融機関識別コード
+- 金融機関コード
+- 銀行コード
 
 ## <a name="switzerland-ssn-ahv-number"></a>Svizzera SSN numero dell'AVS
 Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
@@ -13101,24 +16182,18 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%,
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
 - La funzione Func_uk_nino restituisce contenuti che corrispondono al modello.
-- Non vengono trovate parole chiave da Keyword_uk_nino.
 
 ```xml
-<!-- U.K. NINO -->
-<Entity id="16c07343-c26f-49d2-a987-3daf717e94cc" patternsProximity="300" recommendedConfidence="75">
-    <Pattern confidenceLevel="85">
+    <!-- U.K. NINO -->
+    <Entity id="16c07343-c26f-49d2-a987-3daf717e94cc" patternsProximity="300" recommendedConfidence="75" relaxProximity="true">
+      <Pattern confidenceLevel="85">
         <IdMatch idRef="Func_uk_nino" />
-        <Any minMatches="1">
-          <Match idRef="Keyword_uk_nino" />
-        </Any>
-    </Pattern>    
-     <Pattern confidenceLevel="75">
+        <Match idRef="Keyword_uk_nino" />
+      </Pattern>
+      <Pattern confidenceLevel="75">
         <IdMatch idRef="Func_uk_nino" />
-        <Any minMatches="0" maxMatches="0">
-          <Match idRef="Keyword_uk_nino" />
-        </Any>
-    </Pattern>
-</Entity>
+      </Pattern>
+    </Entity>
 ```
 
 ### <a name="keywords"></a>Parole chiave

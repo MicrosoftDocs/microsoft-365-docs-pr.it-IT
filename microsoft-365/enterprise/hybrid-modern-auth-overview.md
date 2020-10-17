@@ -4,7 +4,7 @@ ms.author: kvice
 ms.reviewer: smithre4
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 08/25/2020
+ms.date: 10/15/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -16,12 +16,12 @@ f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
 description: In questo articolo vengono fornite informazioni sull'autenticazione moderna ibrida e sui prerequisiti per l'utilizzo con i server Skype for business e Exchange locali.
-ms.openlocfilehash: 82cd4203e2e9dc53c6add542c5f0ba90530b6548
-ms.sourcegitcommit: d648356b27842e779921859480b1b405a1804c7c
+ms.openlocfilehash: dbd108d9b04445838ce8e88a921af717ebd763be
+ms.sourcegitcommit: 53ff1fe6d6143b0bf011031eea9b85dc01ae4f74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "48361928"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48487721"
 ---
 # <a name="hybrid-modern-authentication-overview-and-prerequisites-for-using-it-with-on-premises-skype-for-business-and-exchange-servers"></a>Panoramica dell'autenticazione moderna ibrida e dei prerequisiti per l'uso con i server di Skype for Business ed Exchange locali
 
@@ -161,6 +161,7 @@ Prima di procedere, verificare questi elementi nell’elenco:
     I client e/o i protocolli che non sono elencati (ad esempio, POP3) non supportano l'autenticazione moderna con Exchange locale e continuano a sfruttare i meccanismi di autenticazione legacy anche dopo che l'autenticazione moderna è abilitata nell'ambiente.
 
 - **Prerequisiti generali**
+  - Gli scenari per la foresta di risorse richiedono una relazione di trust bidirezionale con la foresta account per garantire che le ricerche SID appropriate vengano eseguite durante le richieste di autenticazione moderne ibride. 
   - Se si usa AD FS (Active Directory Federation Services), per la federazione è necessario Windows 2012 R2 AD FS 3.0 e versioni successive.
   - Le configurazioni delle identità sono costituite da uno dei tipi supportati da Azure AD Connect, ad esempio sincronizzazione hash delle password, autenticazione pass-through e STS locali supportati da Office 365.
   - Azure AD Connect è configurato e funziona per la replica e sincronizzazione utente.
