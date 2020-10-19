@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
 description: 'Riepilogo: utilizzare PowerShell per creare nuovi siti di SharePoint Online e quindi aggiungere utenti e gruppi a tali siti.'
-ms.openlocfilehash: 4c4edbd68343f0eaf3a25a8c60a2af1e83b058b6
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 28a51cc39fe838f6c7f9c50e9d750d28e5d830c4
+ms.sourcegitcommit: 24ccb910ffac4d065c512a57c5decd9dd19ef4c1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46691107"
+ms.lasthandoff: 10/19/2020
+ms.locfileid: "48594919"
 ---
 # <a name="create-sharepoint-online-sites-and-add-users-with-powershell"></a>Creare siti di SharePoint Online e aggiungere utenti con PowerShell
 
@@ -43,6 +43,9 @@ Creare più siti utilizzando PowerShell e un file con estensione CSV creato util
 Il cmdlet di PowerShell importa il file. csv e lo convoglia a un ciclo all'interno delle parentesi graffe che leggono la prima riga del file come intestazioni di colonna. Il cmdlet di PowerShell scorre quindi i record rimanenti, crea una nuova raccolta siti per ogni record e assegna le proprietà della raccolta siti in base alle intestazioni di colonna.
 
 ### <a name="create-a-csv-file"></a>Creare un file .csv
+
+> [!NOTE]
+> Il parametro quota risorse è compatibile solo con i siti classici. Se si utilizza questo parametro in un sito moderno, è possibile che venga visualizzato un messaggio di avviso che è stato deprecato. 
 
 1. Aprire Blocco note e incollare il seguente blocco di testo:<br/>
 
@@ -164,4 +167,3 @@ c:\users\MyAlias\desktop\UsersAndGroups.ps1
 [Gestire Microsoft 365 con PowerShell](manage-microsoft-365-with-microsoft-365-powershell.md)
   
 [Guida introduttiva a PowerShell per Microsoft 365](getting-started-with-microsoft-365-powershell.md)
-

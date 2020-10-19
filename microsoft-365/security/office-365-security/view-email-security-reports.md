@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Informazioni su come trovare e utilizzare i report sulla sicurezza della posta elettronica per l'organizzazione. I report sulla sicurezza della posta elettronica sono disponibili nel centro sicurezza & conformità.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 7e594f758e0fb08b0b8718248466ecbc46903b82
-ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
+ms.openlocfilehash: 7d83e86c77eb148c4c55be3f363966ac3c756e87
+ms.sourcegitcommit: 24ccb910ffac4d065c512a57c5decd9dd19ef4c1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48327010"
+ms.lasthandoff: 10/19/2020
+ms.locfileid: "48594886"
 ---
 # <a name="view-email-security-reports-in-the-security--compliance-center"></a>Visualizzare i report sulla sicurezza della posta elettronica nel Centro sicurezza e conformità
 
@@ -276,8 +276,8 @@ Il rapporto fornisce il numero di messaggi di posta elettronica con contenuti da
 
 Per visualizzare il report, aprire il [Centro sicurezza & conformità](https://protection.office.com), accedere al **Reports** \> **Dashboard** dei report e selezionare **lo stato di protezione dalle minacce**. Per passare direttamente al report, aprire uno degli URL seguenti:
 
-- Office 365 ATP: <https://protection.office.com/reportv2?id=ATPV2AggregateReport> .
-- EOP <https://protection.office.com/reportv2?id=ATPAggregateLightReport>
+- Office 365 ATP: <https://protection.office.com/reportv2?id=TPSAggregateReportATP>
+- EOP <https://protection.office.com/reportv2?id=TPSAggregateReport>
 
 ![Widget dello stato di protezione dalle minacce nel dashboard dei report](../../media/threat-protection-status-report-widget.png)
 
@@ -301,6 +301,20 @@ Sono disponibili le visualizzazioni seguenti:
   - **Detonazione file**
 
   ![Visualizzazione malware contenuto nel rapporto sullo stato della protezione dalle minacce](../../media/threat-protection-status-report-content-malware-view.png)
+
+- **Visualizzare i dati in base a: override del messaggio**: vengono visualizzate le informazioni relative al motivo di sostituzione seguenti:
+
+  - **Ignora locale**
+  - **Consenti IP**
+  - **Regola del flusso di posta**
+  - **Consenti mittente**
+  - **Consenti dominio**
+  - **ZAP non abilitato**
+  - **Cartella posta indesiderata non abilitata**
+  - **Mittente sicuro dell'utente**
+  - **Dominio sicuro dell'utente**
+
+  ![Visualizzazione di sostituzione dei messaggi nel rapporto sullo stato della protezione dalle minacce](../../media/threat-protection-status-report-message-override-view.png)
 
 - **Scomposizione per: tecnologia di rilevamento** e **visualizzazione dei dati in base a: e-mail \> phishing**: vengono visualizzate le informazioni seguenti:
 
@@ -361,16 +375,24 @@ Sono disponibili le visualizzazioni seguenti:
 
 <sup>2</sup> zero-hour auto Purge (ZAP) non è disponibile in EOP autonomo (funziona solo nelle cassette postali di Exchange Online).
 
-Se si fa clic su **filtri**, è possibile modificare il report con i filtri seguenti:
+Se si fa clic su **filtri**, i filtri disponibili dipendono dal grafico che si sta cercando:
+
+Per **il \> malware contenuto**, è possibile modificare il rapporto in base alla data di **inizio** e di **fine**e il valore di **rilevamento** .
+
+Per la **sostituzione dei messaggi**, è possibile modificare il report con i filtri seguenti:
+
+- Data di **inizio** e **Data di fine**
+- **Motivo dell'override**
+- **Tag**: filtrare in base al tag per restituire gli utenti o i gruppi a cui è stato applicato un tag specifico. Per ulteriori informazioni sui tag degli utenti, vedere [tag utente](user-tags.md).
+- **Dominio**
+
+Per tutte le altre visualizzazioni, è possibile modificare il report con i filtri seguenti:
 
 - Data di **inizio** e **Data di fine**
 - **Rilevamento**
 - **Protetto da**: **ATP** o **EOP**
 - **Tag**: filtrare in base al tag per restituire gli utenti o i gruppi a cui è stato applicato un tag specifico. Per ulteriori informazioni sui tag degli utenti, vedere [tag utente](user-tags.md).
 - **Dominio**
-
-> [!NOTE]
-> **Protetto da**, **tag** e **dominio** sono solo Office 365 ATP. Queste proprietà filtrabili non sono disponibili in **View Data by: content \> malware**.
 
 ### <a name="details-table-view-for-the-threat-protection-status-report"></a>Visualizzazione della tabella dei dettagli per il rapporto sullo stato della protezione dalle minacce
 
@@ -383,10 +405,26 @@ Se si fa clic su **Visualizza tabella dettagli**, le informazioni visualizzate d
   - **Diretto da**
   - **Nome malware**
 
+Se si fa clic su **filtri** in questa visualizzazione, è possibile modificare il rapporto per data di **inizio** e **Data di fine**e il valore di **rilevamento** .
+
+- **Visualizzare i dati in base a: override del messaggio**:
+
+  - **Data**
+  - **Oggetto**
+  - **Mittente**
+  - **Destinatari**
+  - **Rilevato da**
+  - **Motivo dell'override**
+  - **Origine del compromesso**
+  - **Tag**
+
 Se si fa clic su **filtri** in questa visualizzazione, è possibile modificare il report con i filtri seguenti:
 
 - Data di **inizio** e **Data di fine**
-- **Rilevamento**
+- **Motivo dell'override**
+- **Tag**: filtrare in base al tag per restituire gli utenti o i gruppi a cui è stato applicato un tag specifico. Per ulteriori informazioni sui tag degli utenti, vedere [tag utente](user-tags.md).
+- **Dominio**
+- **Destinatari** (si noti che questa proprietà filtrabile è disponibile solo nella visualizzazione tabella Dettagli)
 
 **Visualizzazione dei dati per: Panoramica**: non è disponibile alcun pulsante **Visualizza dettagli tabella** .
 
@@ -439,7 +477,7 @@ Il rapporto **messaggi segnalati dall'utente** Visualizza informazioni sui messa
 
 I dettagli sono disponibili per ogni messaggio, incluso il motivo del recapito, una regola di protezione da posta indesiderata o un flusso di posta configurata per l'organizzazione. Per visualizzare i dettagli, selezionare un elemento nell'elenco User-Reports e quindi visualizzare le informazioni nelle schede **Riepilogo** e **Dettagli** .
 
-![Il rapporto messaggi segnalati dall'utente Visualizza i messaggi che gli utenti sono contrassegnati come posta indesiderata, non indesiderata o tentativi di phishing.](../../media/ad5e9a3d-b833-419c-bcc9-3425d9604ead.png)
+![Il rapporto messaggi di User-Reported Visualizza i messaggi che gli utenti sono contrassegnati come posta indesiderata, non indesiderata o tentativi di phishing.](../../media/ad5e9a3d-b833-419c-bcc9-3425d9604ead.png)
 
 Per visualizzare il report, nel [Centro sicurezza & Compliance](https://protection.office.com)eseguire una delle operazioni seguenti:
 
