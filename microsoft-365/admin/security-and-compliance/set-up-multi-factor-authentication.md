@@ -23,12 +23,12 @@ search.appverid:
 ms.assetid: 8f0454b2-f51a-4d9c-bcde-2c48e41621c6
 description: Scopri come configurare l'autenticazione a più fattori per l'organizzazione.
 monikerRange: o365-worldwide
-ms.openlocfilehash: 34133f4204c1ee305b0a249a0ff8e0e9edaf5599
-ms.sourcegitcommit: e891c7c25f351f10f250af3f483f68594976ddc9
+ms.openlocfilehash: 320c66e6c9db7827c22cab67df57d75375f009d4
+ms.sourcegitcommit: bcb88a6171f9e7bdb5b2d8c03cd628d11c5e7bbf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/16/2020
-ms.locfileid: "45153678"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48464015"
 ---
 # <a name="set-up-multi-factor-authentication"></a>Configurare l'autenticazione a più fattori
   
@@ -76,7 +76,7 @@ Se l'organizzazione ha esigenze di sicurezza di accesso più granulare, i criter
 
 L'accesso condizionale è disponibile per i clienti che hanno acquistato Azure AD Premium P1 o licenze che lo includono, come Microsoft 365 Business Premium e Microsoft 365 E3. Per altre informazioni, vedere [Creare un criterio di accesso condizionale](https://docs.microsoft.com/azure/active-directory/authentication/tutorial-enable-azure-mfa).
 
-L'accesso condizionale basato sul rischio è disponibile con la licenza P2 di Azure AD Premium o con licenze che lo includono, come Microsoft 365 E5. Per altre informazioni, vedere [Accesso condizionale basato sul rischio](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-risk).
+L'accesso condizionale basato sul rischio è disponibile con la licenza P2 di Azure AD Premium P2 o con licenze che lo includono, come Microsoft 365 E5. Per altre informazioni, vedere [Accesso condizionale basato sul rischio](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-risk).
 
 Per altre informazioni su Azure AD P1 e P2, vedere [Prezzi di Azure Active Directory](https://azure.microsoft.com/pricing/details/active-directory/).
 
@@ -96,12 +96,11 @@ Se l'autenticazione MFA per persona è stata attivata in precedenza, è necessar
 1. Nella pagina Autenticazione a più fattori, selezionare ogni utente e impostare il loro stato Autenticazione a più fattori su **Disabilitato**.
 
 ## <a name="next-steps"></a>Passaggi successivi
-
 - [Come registrarsi per il metodo di verifica aggiuntivo](https://support.microsoft.com/office/ace1d096-61e5-449b-a875-58eb3d74de14)
+- [Cos’è l'autenticazione a più fattori](https://support.microsoft.com/help/4577374/what-is-multifactor-authentication)
 - [Come eseguire l'accesso dopo la registrazione](https://support.microsoft.com/office/2b856342-170a-438e-9a4f-3c092394d3cb)
 - [Come cambiare il metodo di verifica aggiuntivo](https://support.microsoft.com/office/956ec8d0-7081-4518-a701-f8414cc20831)
-- [Come gestire situazioni come un nuovo smartphone](https://support.microsoft.com/office/6951be76-af50-49a4-847f-21391eaa59f2)
-- [Risolvere i problemi di autenticazione MFA](https://support.microsoft.com/office/6951be76-af50-49a4-847f-21391eaa59f2)
+
 
 
 
