@@ -16,12 +16,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Gli amministratori possono ottenere informazioni sull'ordine di protezione delle applicazioni in Exchange Online Protection (EOP) e sul modo in cui il valore di priorità nei criteri di protezione determina il criterio applicato.
-ms.openlocfilehash: e2da22bfbe0e7df70cf8d8b0d8cfd09eaf6e2ee3
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 6b17a524fb9dfbf5e33604c2ec26a678befc8834
+ms.sourcegitcommit: 153f413402f93b79be421741f3b9fed318d6d270
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48196048"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "48600286"
 ---
 # <a name="order-and-precedence-of-email-protection"></a>Ordine e precedenza della protezione della posta elettronica
 
@@ -38,16 +38,16 @@ Esistono due fattori principali che determinano il criterio applicato a un messa
 
   ****
 
-  |Priority|Protezione della posta elettronica|Category|Dove gestire|
+  |Priority|Protezione della posta elettronica|Categoria|Dove gestire|
   |---|---|---|---|
   |1 |Malware|CAT: MALW|[Configurazione dei criteri anti-malware in EOP](configure-anti-malware-policies.md)|
-  |2 |Phishing|CAT: PHSH|[Configurare criteri di protezione dalla posta indesiderata in EOP](configure-your-spam-filter-policies.md)|
+  |2|Phishing|CAT: PHSH|[Configurare criteri di protezione dalla posta indesiderata in EOP](configure-your-spam-filter-policies.md)|
   |3|Alta probabilità di posta indesiderata|CAT: HSPM|[Configurare criteri di protezione dalla posta indesiderata in EOP](configure-your-spam-filter-policies.md)|
   |4 |Spoofing|CAT: SPOOFING|[Configurare l'intelligence spoof in EOP](learn-about-spoof-intelligence.md)|
-  |5 |Posta indesiderata|CAT: SPM|[Configurare criteri di protezione dalla posta indesiderata in EOP](configure-your-spam-filter-policies.md)|
-  |6 |Invio in blocco|CAT: IN BLOCCO|[Configurare criteri di protezione dalla posta indesiderata in EOP](configure-your-spam-filter-policies.md)|
-  |7<sup>\*</sup>|Rappresentazione del dominio (utenti protetti)|DIMP|[Configurare i criteri anti-phishing ATP](configure-atp-anti-phishing-policies.md)|
-  |8<sup>\*</sup>|Rappresentazione utente (domini protetti)|UIMP|[Configurare i criteri anti-phishing ATP](configure-atp-anti-phishing-policies.md)|
+  |5<sup>\*</sup>|Rappresentazione utente (domini protetti)|UIMP|[Configurare i criteri anti-phishing ATP](configure-atp-anti-phishing-policies.md)|
+  |6<sup>\*</sup>|Rappresentazione del dominio (utenti protetti)|DIMP|[Configurare i criteri anti-phishing ATP](configure-atp-anti-phishing-policies.md)|
+  |7 |Posta indesiderata|CAT: SPM|[Configurare criteri di protezione dalla posta indesiderata in EOP](configure-your-spam-filter-policies.md)|
+  |8 |Invio in blocco|CAT: IN BLOCCO|[Configurare criteri di protezione dalla posta indesiderata in EOP](configure-your-spam-filter-policies.md)|
   |
 
   <sup>\*</sup> Queste funzionalità sono disponibili solo nei criteri di anti-phishing ATP.
@@ -63,7 +63,7 @@ Si consideri, ad esempio, i seguenti criteri di anti-phishing ATP **che si appli
   |Criteri di anti-phishing ATP|Priority|Rappresentazione utente|Anti-spoofing|
   |---|---|---|---|
   |Criteri A|1 |Attivato|Disattivato|
-  |Criterio B|2 |Disattivato|Attivato|
+  |Criterio B|2|Disattivato|Attivato|
   |
 
 1. Il messaggio viene contrassegnato e trattato come spoofing, in quanto lo spoofing ha una priorità più alta (4) rispetto alla rappresentazione utente (8).

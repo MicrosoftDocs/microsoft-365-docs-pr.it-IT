@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Informazioni su come trovare e utilizzare i report sulla sicurezza della posta elettronica per l'organizzazione. I report sulla sicurezza della posta elettronica sono disponibili nel centro sicurezza & conformità.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 7d83e86c77eb148c4c55be3f363966ac3c756e87
-ms.sourcegitcommit: 24ccb910ffac4d065c512a57c5decd9dd19ef4c1
+ms.openlocfilehash: 58c29d37d4f7deab17b2c24bfd7fb74e5ba9cb45
+ms.sourcegitcommit: 153f413402f93b79be421741f3b9fed318d6d270
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "48594886"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "48600566"
 ---
 # <a name="view-email-security-reports-in-the-security--compliance-center"></a>Visualizzare i report sulla sicurezza della posta elettronica nel Centro sicurezza e conformità
 
@@ -297,8 +297,8 @@ Sono disponibili le visualizzazioni seguenti:
 
 - **Visualizzare i dati in base a: content \> Malware**<sup>1</sup>: vengono visualizzate le informazioni seguenti per le organizzazioni ATP di Office 365:
 
-  - **Motore antimalware**
-  - **Detonazione file**
+  - **Motore antimalware**: intercettazioni di file dannosi in SharePoint Online, OneDrive e teams da anti-malware.
+  - **Detonazione dei file**: detonazione di file dannosi in SharePoint Online, OneDrive e teams da allegati sicuri.
 
   ![Visualizzazione malware contenuto nel rapporto sullo stato della protezione dalle minacce](../../media/threat-protection-status-report-content-malware-view.png)
 
@@ -318,28 +318,28 @@ Sono disponibili le visualizzazioni seguenti:
 
 - **Scomposizione per: tecnologia di rilevamento** e **visualizzazione dei dati in base a: e-mail \> phishing**: vengono visualizzate le informazioni seguenti:
 
-  - **Reputazione URL generata dal trifosfato di adenosina**<sup>1</sup>
-  - **Filtro phishing avanzato**
-  - **Anti-spoofing: errore di DMARC**
-  - **Anti-spoofing: intra-org**
-  - **Anti-spoofing: dominio esterno**
-  - **Rappresentazione del marchio**
-  - **Rappresentazione del dominio**<sup>1</sup>
-  - **Reputazione URL di EOP**
-  - **Filtro phishing generale**
+  - **Reputazione URL generata dal trifosfato di adenosina**<sup>1</sup>: reputazione URL dannosa generata da detonazioni ATP in altri clienti ATP.
+  - **Filtro Advanced phishing**: segnali di phishing basati sull'apprendimento automatico.
+  - **Errore di anti-spoofing-DMARC**: errore di autenticazione di DMARC nei messaggi.
+  - **Anti-spoofing-intra-org**: il mittente sta tentando di falsificare il dominio del destinatario.
+  - **Anti-spoofing-dominio esterno**: il mittente sta provando a falsificare un altro dominio.
+  - **Rappresentazione del marchio**: rappresentazione di marche ben note basate su mittenti.
+  - **Rappresentazione di dominio**<sup>1</sup>: rappresentazione dei domini posseduti o definiti dal cliente.
+  - **Reputazione URL EOP**: reputazione URL dannosi.
+  - **Filtro generale phishing**: segnali di phishing basati sulle regole dell'analista. 
   - **Altri**
-  - **Phishing zap**<sup>2</sup>
+  - Messaggi di phishing di **phishing zap**<sup>2</sup>: zero hour.
   - **Detonazione URL**<sup>1</sup>
-  - **Rappresentazione utente**<sup>1</sup>
+  - **Rappresentazione utente**<sup>1</sup>: rappresentazione degli utenti definiti dall'amministratore o appresa tramite Intelligence delle cassette postali.
 
   ![Visualizzazione della tecnologia di rilevamento per la posta elettronica di phishing nel rapporto sullo stato della protezione dalle minacce](../../media/threat-protection-status-report-phishing-detection-tech-view.png)
 
 - **Scomposizione per: tecnologia di rilevamento** e **visualizzazione dei dati in base a: posta elettronica \> malware**: vengono visualizzate le informazioni seguenti:
 
-  - **Reputazione del file generato dal trifosfato di adenosina**<sup>1</sup>
-  - **Motore anti-malware**<sup>1</sup>
-  - **Blocco dei tipi di file dei criteri anti-malware**
-  - **Detonazione del file**<sup>1</sup>
+  - **Reputazione dei file generati dal trifosfato di adenosina**<sup>1</sup>: la reputazione di tutti i file dannosi generati da detonazioni ATP.
+  - **Motore anti-malware**<sup>1</sup>: rilevamento da motori antimalware.
+  - **Blocco dei tipi di file di criteri antimalware**: si tratta di messaggi di posta elettronica filtrati a causa del tipo di file dannoso identificato nel messaggio.
+  - **Detonazione file**<sup>1</sup>: la detonazione dei file viene intercettata da allegati sicuri.  
   - **Reputazione di file dannosi**
   - **Malware zap**<sup>2</sup>
   - **Altri**

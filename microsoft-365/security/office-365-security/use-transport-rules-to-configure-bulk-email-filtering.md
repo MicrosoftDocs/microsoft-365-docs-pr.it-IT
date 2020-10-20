@@ -16,14 +16,14 @@ ms.collection:
 - M365-security-compliance
 description: Gli amministratori possono ottenere informazioni su come utilizzare le regole del flusso di posta (regole di trasporto) per identificare e filtrare la posta in blocco (Gray mail) in Exchange Online Protection (EOP).
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: c6a8ad5dd2752f86c0ff9ec96dafe621804b4856
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 82a93cdc7375468748f241e2d15d729811095330
+ms.sourcegitcommit: 153f413402f93b79be421741f3b9fed318d6d270
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48197304"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "48600310"
 ---
-# <a name="use-mail-flow-rules-to-filter-bulk-email-in-eop"></a>Usare le regole del flusso di posta per filtrare la posta in blocco in Exchange Online Protection
+# <a name="use-mail-flow-rules-to-filter-bulk-email-in-eop"></a>Usare le regole del flusso di posta per filtrare la posta inviata in blocco in Exchange Online Protection
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -79,7 +79,7 @@ In questo argomento viene illustrato come creare queste regole del flusso di pos
        - `If you are unable to view the content of this email\, please`
        - `\>(safe )?unsubscribe( here)?\</a\>`
        - `If you do not wish to receive further communications like this\, please`
-       - `<img height="?1"? width="?1"? sr\c=.?http\://`
+       - `<img height="?1"? width="?1"? src=.?http\://`
        - `To stop receiving these+emails\:http\://`
        - `To unsubscribe from \w+ (e\-?letter|e?-?mail|newsletter)`
        - `no longer (wish )?(to )?(be sent|receive) w+ email`
@@ -134,7 +134,7 @@ New-TransportRule -Name "<UniqueName>" [-SubjectOrBodyMatchesPatterns "<RegEx1>"
 In questo esempio viene creata una nuova regola denominata "filtro posta elettronica in blocco" che utilizza lo stesso elenco di espressioni regolari di precedenza nell'argomento per impostare i messaggi come **posta indesiderata**.
 
 ```powershell
-New-TransportRule -Name "Bulk email filtering - RegEx" -SubjectOrBodyMatchesPatterns "If you are unable to view the content of this email\, please","\>(safe )?unsubscribe( here)?\</a\>","If you do not wish to receive further communications like this\, please","\<img height\="?1"? width\="?1"? sr\c=.?http\://","To stop receiving these+emails\:http\://","To unsubscribe from \w+ (e\-?letter|e?-?mail|newsletter)","no longer (wish )?(to )?(be sent|receive) w+ email","If you are unable to view the content of this email\, please click here","To ensure you receive (your daily deals|our e-?mails)\, add","If you no longer wish to receive these emails","to change your (subscription preferences|preferences or unsubscribe)","click (here to|the) unsubscribe"... -SetSCL 6
+New-TransportRule -Name "Bulk email filtering - RegEx" -SubjectOrBodyMatchesPatterns "If you are unable to view the content of this email\, please","\>(safe )?unsubscribe( here)?\</a\>","If you do not wish to receive further communications like this\, please","\<img height\="?1"? width\="?1"? src=.?http\://","To stop receiving these+emails\:http\://","To unsubscribe from \w+ (e\-?letter|e?-?mail|newsletter)","no longer (wish )?(to )?(be sent|receive) w+ email","If you are unable to view the content of this email\, please click here","To ensure you receive (your daily deals|our e-?mails)\, add","If you no longer wish to receive these emails","to change your (subscription preferences|preferences or unsubscribe)","click (here to|the) unsubscribe"... -SetSCL 6
 ```
 
 In questo esempio viene creata una nuova regola denominata "Bulk Email Filtering-Words" che utilizza lo stesso elenco di parole di precedenza nell'argomento per impostare i messaggi come **posta indesiderata con elevata attendibilità**.

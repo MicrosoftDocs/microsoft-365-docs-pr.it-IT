@@ -16,12 +16,12 @@ ms.assetid: 4250c4bc-6102-420b-9e0a-a95064837676
 ms.collection:
 - M365-security-compliance
 description: Informazioni su come abilitare il componente aggiuntivo per i messaggi di report per Outlook e Outlook sul Web, per singoli utenti o per l'intera organizzazione.
-ms.openlocfilehash: 601e3850bf046f3a0c807976fd173a6e0ec7ce2a
-ms.sourcegitcommit: 3a0accd616ca94d6ba7f50e502552b45e9661a95
+ms.openlocfilehash: b061d9db44b08a65b59481035c055a1b75eb6e3c
+ms.sourcegitcommit: 153f413402f93b79be421741f3b9fed318d6d270
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "48350624"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "48600370"
 ---
 # <a name="enable-the-report-message-add-in"></a>Abilitare il componente aggiuntivo Segnala messaggio
 
@@ -41,9 +41,9 @@ Gli amministratori possono abilitare il componente aggiuntivo per i messaggi di 
 
 Se si è un singolo utente, è possibile [abilitare il componente aggiuntivo per i messaggi di report](#get-the-report-message-add-in-for-yourself).
 
-Se si è un amministratore globale o un amministratore di Exchange Online ed Exchange è configurato per l'utilizzo dell'autenticazione OAuth, è possibile [abilitare il componente aggiuntivo per i messaggi di report per l'organizzazione](#get-and-enable-the-report-message-add-in-for-your-organization). Il componente aggiuntivo segnala messaggio è ora disponibile tramite la [distribuzione centralizzata](https://docs.microsoft.com/microsoft-365/admin/manage/centralized-deployment-of-add-ins).
+Se si è un amministratore globale o un amministratore di Exchange Online ed Exchange è configurato per l'utilizzo dell'autenticazione OAuth, è possibile [abilitare il componente aggiuntivo per i messaggi di report per l'organizzazione](#get-and-enable-the-report-message-add-in-for-your-organization). La Add-In del messaggio di report è ora disponibile tramite la [distribuzione centralizzata](https://docs.microsoft.com/microsoft-365/admin/manage/centralized-deployment-of-add-ins).
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare?
+## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare
 
 - Il componente aggiuntivo segnala messaggio è compatibile con la maggior parte delle sottoscrizioni Microsoft 365 e i prodotti seguenti:
 
@@ -91,7 +91,7 @@ Per informazioni su come utilizzare il componente aggiuntivo, vedere [use the re
 > [!NOTE]
 > La visualizzazione del componente aggiuntivo nell'organizzazione potrebbe richiedere fino a 12 ore.
 
-1. Nell'interfaccia di amministrazione di Microsoft 365 passare alla pagina **servizi & componenti** aggiuntivi <https://admin.microsoft.com/AdminPortal/Home#/Settings/ServicesAndAddIns> e quindi fare clic su **Distribuisci componente aggiuntivo**.
+1. Nell'interfaccia di amministrazione di Microsoft 365 passare alla pagina **Impostazioni, applicazioni integrate & componenti** aggiuntivi <https://admin.microsoft.com/AdminPortal/Home#/Settings/AddIns> e quindi fare clic su **Distribuisci componente aggiuntivo**.
 
    ![Pagina Servizi e componenti aggiuntivi nell'interfaccia di amministrazione di Microsoft 365](../../media/ServicesAddInsPageNewM365AdminCenter.png)
 
@@ -151,7 +151,7 @@ Quando si informa gli utenti sul componente aggiuntivo per i messaggi di report,
 
 1. Nell'interfaccia di amministrazione di Microsoft 365, accedere alla pagina **servizi & componenti** aggiuntivi in <https://admin.microsoft.com/AdminPortal/Home#/Settings/ServicesAndAddIns> .
 
-   ![Pagina Servizi e componenti aggiuntivi nella nuova interfaccia di amministrazione di Microsoft 365](../../media/ServicesAddInsPageNewM365AdminCenter.png)
+   ![Pagina Servizi e Add-Ins nella nuova interfaccia di amministrazione di Microsoft 365](../../media/ServicesAddInsPageNewM365AdminCenter.png)
 
 2. Individuare e selezionare il componente aggiuntivo per i **messaggi di report** .
 

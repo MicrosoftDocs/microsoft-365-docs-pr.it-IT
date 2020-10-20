@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Gli amministratori possono imparare a visualizzare e gestire i messaggi in quarantena per tutti gli utenti in Exchange Online Protection (EOP). Gli amministratori nelle organizzazioni con Office 365 Advanced Threat Protection (Office 365 ATP) possono anche gestire i file in quarantena in SharePoint Online, OneDrive for business e Microsoft teams.
-ms.openlocfilehash: 7e9b49e7e7a90f5271a65bb26cecdd1a7ce2ab84
-ms.sourcegitcommit: 260c69fa31a898428d51cfdbd762c5f0213c403c
+ms.openlocfilehash: 5e1115157ef7d67bc7a3f626eb61d01ecc0986cb
+ms.sourcegitcommit: 153f413402f93b79be421741f3b9fed318d6d270
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "48417215"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "48600542"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-admin-in-eop"></a>Gestire i messaggi e i file messi in quarantena come amministratore in EOP
 
@@ -95,6 +95,13 @@ Gli amministratori nelle organizzazioni con Office 365 Advance Threat Protection
      - **Malware**
      - **Posta indesiderata**
      - **Phishing ad alta sicurezza**
+     
+   - **Tipo di criterio**: filtrare i messaggi in base al tipo di criterio:
+     - **Criteri anti-malware**
+     - **Criteri allegati sicuri**
+     - **Criteri anti-phishing**
+     - **Criteri di filtro contenuto ospitato**
+     - **Regola di trasporto**
 
    - **Destinatario di posta elettronica**: tutti gli utenti o solo i messaggi inviati all'utente. Gli utenti finali possono gestire solo i messaggi in quarantena inviati.
 
@@ -107,6 +114,8 @@ Gli amministratori nelle organizzazioni con Office 365 Advance Threat Protection
      Ad esempio, è stata utilizzata la [traccia dei messaggi](message-trace-scc.md) per cercare un messaggio che è stato inviato a un utente nell'organizzazione e si determina che il messaggio è stato messo in quarantena invece di essere recapitato. Assicurarsi di includere il valore dell'ID messaggio completo, che può includere parentesi angolari ( \<\> ). Ad esempio: `<79239079-d95a-483a-aacf-e954f592a0f6@XYZPR00BM0200.contoso.com>` .
 
    - **Indirizzo di posta elettronica del mittente**: indirizzo di posta elettronica di un singolo mittente.
+
+   - **Nome criterio**: utilizzare l'intero nome dei criteri del messaggio. Per la ricerca non viene fatta distinzione tra maiuscole e minuscole.
 
    - **Indirizzo di posta elettronica del destinatario**: indirizzo di posta elettronica di un singolo destinatario.
 

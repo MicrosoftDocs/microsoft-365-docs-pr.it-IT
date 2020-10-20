@@ -16,12 +16,12 @@ ms.assetid: 9721b46d-cbea-4121-be51-542395e6fd21
 ms.custom:
 - seo-marvel-apr2020
 description: Gli amministratori possono ottenere informazioni sulle opzioni disponibili e preferite per consentire i messaggi in ingresso in Exchange Online Protection (EOP).
-ms.openlocfilehash: b1eda98e081338a981be1d1f5991578b49c574fd
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 4009dcd506921b473e938828e5bdc10411c06ce2
+ms.sourcegitcommit: 153f413402f93b79be421741f3b9fed318d6d270
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48203168"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "48600322"
 ---
 # <a name="create-safe-sender-lists-in-eop"></a>Creare elenchi di mittenti attendibili in EOP
 
@@ -71,7 +71,7 @@ Nell'esempio seguente si presuppone che sia necessario inviare posta elettronica
 
    > [!IMPORTANT]
    >
-   > - Non configurare mai la configurazione delle regole del flusso di posta con *solo* il dominio del mittente come condizione per ignorare il filtro posta indesiderata. In questo modo, si aumenterà *significativamente* la probabilità che i pirati informatici possano falsificare il dominio di invio (o rappresentare l'indirizzo di posta elettronica completo), ignorare tutti i filtri di posta indesiderata e ignorare i controlli di autenticazione del mittente in modo che il messaggio arrivi nella posta in arrivo del destinatario
+   > - Non configurare mai le regole del flusso di posta con *solo* il dominio del mittente come condizione per ignorare il filtro posta indesiderata. In questo modo, si aumenterà *significativamente* la probabilità che i pirati informatici possano falsificare il dominio di invio (o rappresentare l'indirizzo di posta elettronica completo), ignorare tutti i filtri di posta indesiderata e ignorare i controlli di autenticazione del mittente in modo che il messaggio arrivi nella posta in arrivo del destinatario
    >
    > - Non utilizzare domini proprietari (noti anche come domini accettati) o domini più diffusi (ad esempio, microsoft.com) come condizioni nelle regole del flusso di posta. In questo modo viene considerato un rischio elevato perché crea opportunità per gli aggressori di inviare messaggi di posta elettronica che altrimenti verrebbero filtrati.
    >
@@ -97,7 +97,7 @@ Nell'esempio seguente si presuppone che sia necessario inviare posta elettronica
 
 ## <a name="use-outlook-safe-senders"></a>Utilizzo di mittenti attendibili di Outlook
 
-Invece di un'impostazione organizzativa, gli utenti o gli amministratori possono aggiungere gli indirizzi di posta elettronica del mittente all'elenco Mittenti attendibili nella cassetta postale. Per istruzioni, vedere [configurare le impostazioni della posta indesiderata nelle cassette postali di Exchange online in Office 365](configure-junk-email-settings-on-exo-mailboxes.md). Non è consigliabile nella maggior parte delle situazioni poiché i mittenti ignoreranno le parti dello stack di filtro. Anche se si considera attendibile il mittente, le lattine del mittente continuano a essere compromesse e possono inviare contenuti dannosi. È preferibile che i filtri siano in grado di eseguire le operazioni necessarie per controllare tutti i messaggi e quindi [segnalare il falso positivo/negativo a Microsoft](report-junk-email-messages-to-microsoft.md) se i filtri sono stati errati. Ignorare lo stack di filtro interferisce anche con [zap](zero-hour-auto-purge.md).
+Invece di un'impostazione organizzativa, gli utenti o gli amministratori possono aggiungere gli indirizzi di posta elettronica del mittente all'elenco Mittenti attendibili nella cassetta postale. Per istruzioni, vedere [configurare le impostazioni della posta indesiderata nelle cassette postali di Exchange online in Office 365](configure-junk-email-settings-on-exo-mailboxes.md). Non è consigliabile nella maggior parte delle situazioni poiché i mittenti ignoreranno le parti dello stack di filtro. Anche se si considera attendibile il mittente, il mittente può comunque essere compromesso e inviare contenuti dannosi. È preferibile che i filtri siano in grado di eseguire le operazioni necessarie per controllare tutti i messaggi e quindi [segnalare il falso positivo/negativo a Microsoft](report-junk-email-messages-to-microsoft.md) se i filtri sono stati errati. Ignorare lo stack di filtro interferisce anche con [zap](zero-hour-auto-purge.md).
 
 Quando i messaggi ignorano il filtro posta indesiderata a causa dell'elenco dei mittenti attendibili di un utente, il campo di intestazione **X-Forefront-antispam-report** conterrà il valore `SFV:SFE` , che indica che la posta indesiderata, la falsificazione e il filtro phishing sono stati ignorati.
 

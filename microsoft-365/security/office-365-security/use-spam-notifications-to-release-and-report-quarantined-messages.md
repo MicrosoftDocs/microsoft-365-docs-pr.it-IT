@@ -20,12 +20,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Gli amministratori possono conoscere le notifiche di posta indesiderata degli utenti finali per i messaggi in quarantena in Exchange Online Protection (EOP).
-ms.openlocfilehash: 9d1da6c4db245ecb065a5a076f2bc6a9c275c494
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 0440056e8e31d24e659f9d0ff6662f86f31a6189
+ms.sourcegitcommit: 153f413402f93b79be421741f3b9fed318d6d270
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48195820"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "48600298"
 ---
 # <a name="use-user-spam-notifications-to-release-and-report-quarantined-messages"></a>Utilizzare le notifiche di posta indesiderata utente per rilasciare e segnalare messaggi in quarantena
 
@@ -58,3 +58,6 @@ Una notifica di posta indesiderata dell'utente finale contiene le informazioni s
 - **Recensione**: fare clic su questo collegamento per accedere alla quarantena nel centro sicurezza & Compliance, in cui è possibile, a seconda del motivo per cui il messaggio è stato messo in quarantena, visualizzare, rilasciare, eliminare o segnalare i messaggi in quarantena. Per ulteriori informazioni, vedere [trovare e rilasciare i messaggi in quarantena come utente in EOP](find-and-release-quarantined-messages-as-a-user.md).
 
 ![Esempio di notifica di posta indesiderata dell'utente finale](../../media/end-user-spam-notification.png)
+
+> [!NOTE]
+> Un mittente bloccato può continuare A inviare messaggi di posta elettronica. Tutti i messaggi provenienti da questo mittente che lo rendono alla cassetta postale verranno immediatamente spostati nella cartella posta indesiderata. I messaggi futuri provenienti da questo mittente andranno alla cartella posta indesiderata o alla quarantena dell'utente finale. Se si desidera eliminare questi messaggi all'arrivo invece di metterli in quarantena, utilizzare le [regole del flusso di posta](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) (note anche come regole di trasporto) per eliminare i messaggi all'arrivo.

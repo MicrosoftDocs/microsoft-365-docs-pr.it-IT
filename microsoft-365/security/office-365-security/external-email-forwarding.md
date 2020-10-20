@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: .
-ms.openlocfilehash: c0a3849d330b508630eb60c7ee24cd8b498a32b8
-ms.sourcegitcommit: 260c69fa31a898428d51cfdbd762c5f0213c403c
+ms.openlocfilehash: 78ba5183667f4e5c6f713182969338f3ef2e7262
+ms.sourcegitcommit: 153f413402f93b79be421741f3b9fed318d6d270
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "48417228"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "48600530"
 ---
 # <a name="configuring-external-email-forwarding-in-office-365"></a>Configurazione dell'inoltro della posta elettronica esterno in Office 365
 
@@ -28,7 +28,7 @@ ms.locfileid: "48417228"
 
 L'inoltro esterno è controllato dal *criterio di protezione dalla posta indesiderata in uscita* e dall'ambito agli utenti in base all'impostazione configurata. Attualmente sono supportate tre impostazioni:
 
-- **Automatico** – questo è controllato dal sistema: consente il filtraggio della posta indesiderata in uscita per controllare l'inoltro automatico esterno della posta elettronica. Questa è l'impostazione predefinita.
+- **Automatico** – l'inoltro esterno automatico è bloccato. L'inoltro automatico interno dei messaggi continuerà a funzionare. Questa è l'impostazione predefinita.
 
 - **On** – l'inoltro automatico esterno è consentito e non è limitato.
 

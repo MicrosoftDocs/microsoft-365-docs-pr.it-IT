@@ -1,5 +1,5 @@
 ---
-title: Criteri per gli invii da parte degli utenti
+title: Criteri per gli invii degli utenti
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -16,14 +16,14 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 description: Gli amministratori possono imparare a configurare una cassetta postale per raccogliere messaggi di posta indesiderata e di phishing segnalati dagli utenti.
-ms.openlocfilehash: c8dec927442cc83752f7c3497f295008fae85377
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: c4792958d1e59cefd8b56c05b5e159f50be80c8b
+ms.sourcegitcommit: 153f413402f93b79be421741f3b9fed318d6d270
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48446928"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "48600482"
 ---
-# <a name="user-submissions-policies"></a>Criteri per gli invii da parte degli utenti
+# <a name="user-submissions-policy"></a>Criteri per gli invii degli utenti
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -76,7 +76,7 @@ Dopo aver verificato che la cassetta postale soddisfi tutti i prerequisiti appli
 
 2. Nella pagina **invii utente** che viene visualizzata, selezionare una delle opzioni seguenti:
 
-   a. **Abilitare la caratteristica messaggio di report per Outlook (scelta consigliata)**: selezionare questa opzione se si utilizza il componente aggiuntivo per i messaggi di report o la creazione di report incorporati in Outlook sul Web e quindi configurare le impostazioni seguenti:
+   1. **Abilitare la caratteristica messaggio di report per Outlook (scelta consigliata)**: selezionare questa opzione se si utilizza il componente aggiuntivo per i messaggi di report o la creazione di report incorporati in Outlook sul Web e quindi configurare le impostazioni seguenti:
 
       - **Personalizzare il messaggio di conferma dell'utente finale**: fare clic su questo collegamento. Nel riquadro a comparsa **Personalizza messaggio di conferma** che viene visualizzata, configurare le seguenti impostazioni:
 

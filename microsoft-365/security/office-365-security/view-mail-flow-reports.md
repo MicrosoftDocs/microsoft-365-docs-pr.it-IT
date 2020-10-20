@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Gli amministratori possono ottenere informazioni sui rapporti sul flusso di posta disponibili nel dashboard report nel centro sicurezza & Compliance.
 ms.custom: ''
-ms.openlocfilehash: d33bd62e9a06385bf3448b7744031ae030dbe3ca
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 801463877db2e022ab84c3187367587c61f71090
+ms.sourcegitcommit: 153f413402f93b79be421741f3b9fed318d6d270
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48195844"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "48600593"
 ---
 # <a name="view-mail-flow-reports-in-the-reports-dashboard-in-security--compliance-center"></a>Visualizzare i report sul flusso di posta nel dashboard report nel centro sicurezza & Compliance
 
@@ -320,13 +320,23 @@ La tabella dati contiene le informazioni seguenti, visualizzate in ordine di dat
 
 - **Data**
 - **Numero totale di messaggi di posta elettronica**
-- **Protezione Edge**
-- **Anti-malware, reputazione dei file, blocco di tipi di file**
-- **Anti-phishing, reputazione URL, rappresentazione di marca, anti-spoofing**
-- **Filtro posta indesiderata, messaggi in blocco**
-- **Rappresentazione di utenti e domini (ATP)**
-- **Detonazione di file e URL (ATP)**
-- **Protezione dopo il recapito e ZAP (ATP) o ZAP (EOP)**
+- **Protezione Edge** 
+- **Anti-malware, reputazione dei file, blocco di tipi di file**:
+  - **Reputazione file**: i messaggi sono stati filtrati a causa dell'identificazione di un file allegato da altri clienti Microsoft.
+  - **Blocco di tipi di file**: messaggi filtrati a causa del tipo di file dannoso identificato nel messaggio.      
+- **Anti-phishing, reputazione URL, rappresentazione di marca, anti-spoofing**:
+  - **Reputazione URL**: messaggi filtrati a causa dell'identificazione dell'URL da parte di altri clienti Microsoft.
+  - **Rappresentazione del marchio**: i messaggi vengono filtrati a causa del messaggio proveniente da mittenti ben noti.
+  - **Anti-spoofing**: i messaggi vengono filtrati a causa del messaggio che tenta di falsificare un dominio a cui appartiene il destinatario oppure di un dominio che il mittente del messaggio non possiede.  
+- **Filtro posta indesiderata, messaggi in blocco**:
+  - **Filtro posta in blocco**: messaggi filtrati a causa di un tentativo di recapitare la posta in blocco ai destinatari. 
+- **Rappresentazione di utenti e domini (ATP)**:
+  - **Rappresentazione utente**: i messaggi sono stati filtrati a causa di un tentativo di rappresentazione di un utente (mittente del messaggio) definito nelle impostazioni di protezione della rappresentazione di un criterio di anti-phishing.
+  - **Rappresentazione del dominio**: i messaggi sono stati filtrati a causa di un tentativo di rappresentare un dominio definito nelle impostazioni di protezione della rappresentazione di un criterio di anti-phishing. 
+- **Detonazione di file e URL (ATP)**:
+  - **Detonazione dei file**: messaggi filtrati da un criterio di allegati sicuri.
+  - **Detonazione URL**: messaggio filtrato da un criterio collegamenti sicuri.  
+- **Protezione da post-recapito e zap (ATP) o zap (EOP)**: zap indica lo stato di eliminazione automatica di zero ore.
 
 Se si seleziona una riga nella tabella dati, nel riquadro a comparsa viene visualizzata un'ulteriore scomposizione dei conteggi della posta elettronica.
 
@@ -378,8 +388,10 @@ La tabella dati contiene le informazioni seguenti, visualizzate in ordine di dat
 - **Data**
 - **Numero totale di messaggi di posta elettronica**
 - **Filtro perimetrale**
-- **Motore antimalware, allegati sicuri, regola filtrata**
-- **DMARC, rappresentazione, spoofing, phishing filtrato**
+- **Motore antimalware, allegati sicuri, regola filtrata**:
+  - **Regola filtrata**: messaggi filtrati a causa delle regole del flusso di posta (note anche come regole di trasporto).
+- **DMARC, rappresentazione, spoofing, phishing filtrati**:
+  - **DMARC**: i messaggi vengono filtrati a causa del mancato controllo dell'autenticazione di DMARC per il messaggio. 
 - **Rilevamento di detonazione degli URL**
 - **Filtro di protezione da posta indesiderata**
 - **Rimozione di ZAP**

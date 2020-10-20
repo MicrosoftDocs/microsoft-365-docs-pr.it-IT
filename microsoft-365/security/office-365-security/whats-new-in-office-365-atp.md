@@ -20,12 +20,12 @@ ms.topic: conceptual
 ms.date: 10/09/2020
 ms.custom: seo-marvel-apr2020
 ms.reviewer: vippand
-ms.openlocfilehash: 85813659d952fe936c8e8b41f2dc103a60116641
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: 55a5ec4a2bfd562b581be9565022483d227f68be
+ms.sourcegitcommit: 153f413402f93b79be421741f3b9fed318d6d270
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48447072"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "48600506"
 ---
 # <a name="whats-new-in-office-365-atp"></a>Novità di Office 365 ATP
 
@@ -46,9 +46,9 @@ In questo articolo vengono elencate le nuove funzionalità nell'ultima versione 
 - [Controllare i criteri utilizzando l'analizzatore di configurazione](configuration-analyzer-for-security-policies.md)
 - [Sostituisci manualmente i verdetti del filtro utilizzando l'elenco Consenti/blocca tenant](tenant-allow-block-list.md)
 - [Funzionalità estese in Esplora minacce, tra cui utenti di destinazione principali, regole di trasporto e connettori](threat-explorer.md#new-features-in-threat-explorer-and-real-time-detections) (Office 365 ATP Plan 2)
-- Le informazioni sulle superfici vengono ignorate in [Esplora minacce](threat-explorer.md) (la posta elettronica è stata consentita/bloccata dai criteri tenant/utente)
-- Minacce all'URL di emersione in [Esplora minacce](threat-explorer.md#threats-in-urls) (malware, phishing, posta indesiderata o nessuno) 
-- [Miglioramenti alla funzionalità di ricerca di Esplora minacce](threat-explorer.md#improvements-to-threat-hunting-experience-upcoming) con aggiornamenti su minacce, azioni aggiuntive, posizioni di recapito e visualizzazione sequenza temporale aggiornata
+- Le informazioni sulle superfici vengono ignorate in [Esplora minacce](threat-explorer.md) (la posta elettronica è stata consentita/bloccata dal criterio tenant/utente) (Office 365 ATP piano 2)
+- Minacce all'URL di emersione in [Esplora minacce](threat-explorer.md#threats-in-urls) (malware, phishing, posta indesiderata o nessuno) (Office 365 ATP piano 2)
+- [Miglioramenti alla funzionalità di ricerca di Esplora minacce](threat-explorer.md#improvements-to-threat-hunting-experience-upcoming) con aggiornamenti su minacce, azioni aggiuntive, posizioni di recapito e visualizzazione della sequenza temporale aggiornata (Office 365 ATP Plan 2)
 
 ## <a name="julyaugust-2020"></a>Luglio/agosto 2020 
 
@@ -111,4 +111,3 @@ Lo sapevate che Office 365 ATP è disponibile in due piani? Ulteriori [informazi
 [Roadmap di Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap)
 
 [Descrizione del servizio ATP di Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)
-
