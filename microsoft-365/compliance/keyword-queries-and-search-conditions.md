@@ -21,33 +21,32 @@ search.appverid:
 ms.assetid: c4639c2e-7223-4302-8e0d-b6e10f1c3be3
 ms.custom:
 - seo-marvel-apr2020
-description: Informazioni sui messaggi di posta elettronica e sulle proprietà dei file che è possibile cercare nel centro conformità & sicurezza di Office 365.
-ms.openlocfilehash: 5445c9485d7076b3819c796028a311a523a92dde
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+description: Informazioni sui messaggi di posta elettronica e sulle proprietà dei file che è possibile cercare utilizzando gli strumenti di ricerca e eDiscovery in Microsoft 365.
+ms.openlocfilehash: 4ca444c7e1d7b90f76e8c3f1b23afc7edad8e44b
+ms.sourcegitcommit: 153f413402f93b79be421741f3b9fed318d6d270
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48446195"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "48600449"
 ---
-# <a name="keyword-queries-and-search-conditions-for-content-search"></a>Query con parole chiave e condizioni di ricerca per Ricerca contenuto
+# <a name="keyword-queries-and-search-conditions-for-content-search-and-ediscovery"></a>Query di parole chiave e condizioni di ricerca per la ricerca di contenuto e eDiscovery
 
-In questo argomento vengono descritte le proprietà di posta elettronica e di documento che è possibile cercare negli elementi di posta elettronica in Exchange Online e i documenti archiviati nei siti di SharePoint e OneDrive for business utilizzando la funzionalità di ricerca contenuto nel centro sicurezza & conformità. È inoltre possibile utilizzare i cmdlet ** \* -ComplianceSearch** in PowerShell per la sicurezza & Compliance Center per cercare queste proprietà. Nell'argomento sono inoltre descritti i seguenti argomenti:   
+In questo argomento vengono descritte le proprietà di posta elettronica e di documento che è possibile cercare negli elementi di posta elettronica in Exchange Online e i documenti archiviati nei siti di SharePoint e OneDrive for business utilizzando la funzionalità di ricerca contenuto nel centro conformità di Microsoft 365. È inoltre possibile utilizzare i cmdlet ** \* -ComplianceSearch** in PowerShell per la sicurezza & Compliance Center per cercare queste proprietà. Nell'argomento sono inoltre descritti i seguenti argomenti:
   
 - Utilizzo di operatori di ricerca booleani, condizioni di ricerca e altre tecniche di query di ricerca per affinare i risultati della ricerca.
-    
-- Ricerca di tipi di dati riservati e tipi di dati sensibili personalizzati in SharePoint e OneDrive for business.
-    
-- Ricerca di contenuto del sito condiviso con utenti esterni all'organizzazione
-    
-Per istruzioni dettagliate su come creare una ricerca di contenuto, vedere [Content search in Office 365](content-search.md).
 
-  
+- Ricerca di tipi di dati riservati e tipi di dati sensibili personalizzati in SharePoint e OneDrive for business.
+
+- Ricerca di contenuto del sito condiviso con utenti esterni all'organizzazione
+
+Per istruzioni dettagliate su come creare una ricerca di contenuto, vedere [Content search](content-search.md).
+
 > [!NOTE]
-> Ricerca di contenuto nel centro sicurezza & compliance e nei cmdlet di ** \* ComplianceSearch** corrispondenti nel centro sicurezza & conformità PowerShell utilizzare la parola chiave Query Language (KQL). Per informazioni più dettagliate, vedere [Keyword Query Language Reference Syntax](https://go.microsoft.com/fwlink/?LinkId=269603). 
+> Ricerca contenuto nel centro conformità di Microsoft 365 e nei cmdlet di ** \* ComplianceSearch** di sicurezza & Compliance Center PowerShell utilizzare la parola chiave Query Language (KQL). Per informazioni più dettagliate, vedere [Keyword Query Language Reference Syntax](https://go.microsoft.com/fwlink/?LinkId=269603). 
   
 ## <a name="searchable-email-properties"></a>Proprietà di posta elettronica disponibili per la ricerca
 
-Nella tabella seguente sono elencate le proprietà dei messaggi di posta elettronica che possono essere cercate utilizzando la funzionalità Ricerca contenuto nel centro sicurezza & Compliance oppure utilizzando il cmdlet **New-ComplianceSearch** o **set-ComplianceSearch** . Nella tabella è incluso un esempio della sintassi  _Property: value_ per ogni proprietà e una descrizione dei risultati della ricerca restituiti dagli esempi. È possibile digitare queste  `property:value` coppie nella casella parole chiave per una ricerca di contenuto. 
+Nella tabella seguente sono elencate le proprietà dei messaggi di posta elettronica che possono essere cercate utilizzando la funzionalità Ricerca contenuto nel centro conformità di Microsoft 365 oppure utilizzando il cmdlet **New-ComplianceSearch** o **set-ComplianceSearch** . Nella tabella è incluso un esempio della sintassi  _Property: value_ per ogni proprietà e una descrizione dei risultati della ricerca restituiti dagli esempi. È possibile digitare queste  `property:value` coppie nella casella parole chiave per una ricerca di contenuto. 
 
 > [!NOTE]
 > Durante la ricerca delle proprietà di posta elettronica, non è possibile cercare gli elementi in cui la proprietà specificata è vuota o vuoto. Ad esempio, se si utilizza la coppia *Property: value* dell' **oggetto: ""** per cercare i messaggi di posta elettronica con una riga dell'oggetto vuota, verranno restituiti zero risultati. Questo vale anche per la ricerca delle proprietà del sito e del contatto.
@@ -112,13 +111,13 @@ Per un elenco completo delle proprietà di SharePoint di cui è possibile esegui
 |Dimensioni|Le dimensioni di un elemento, in byte.|`size>=1`  <br/> `size:1..10000`|Il primo esempio restituisce gli elementi di dimensioni maggiori di 1 byte. Il secondo esempio restituisce gli elementi di dimensioni comprese tra 1 e 10.000 byte.|
 |Titolo|Il titolo del documento. La proprietà title è metadati specificata nei documenti di Microsoft Office. È diverso dal nome del file del documento.|`title:"communication plan"`|Qualsiasi documento contenente la frase "communication plan" nella proprietà di metadati Title di un documento di Office.|
 |||||
-   
+
 ## <a name="searchable-contact-properties"></a>Proprietà contatto disponibili per la ricerca
 
 Nella tabella seguente sono elencate le proprietà dei contatti indicizzate e che è possibile cercare utilizzando la ricerca contenuto. Di seguito sono riportate le proprietà disponibili per gli utenti da configurare per i contatti (denominati anche contatti personali) che si trovano nella Rubrica personale della cassetta postale di un utente. Per cercare i contatti, è possibile selezionare le cassette postali da cercare e quindi utilizzare una o più proprietà dei contatti nella query di parole chiave.
   
 > [!TIP]
-> Per cercare valori che contengono spazi o caratteri speciali, utilizzare virgolette doppie ("") per contenere la frase. ad esempio,  `businessaddress:"123 Main Street"` . 
+> Per cercare valori che contengono spazi o caratteri speciali, utilizzare virgolette doppie ("") per contenere la frase. ad esempio, `businessaddress:"123 Main Street"` .
   
 |**Proprietà**|**Descrizione proprietà**|
 |:-----|:-----|
@@ -144,18 +143,19 @@ Nella tabella seguente sono elencate le proprietà dei contatti indicizzate e ch
 
 ## <a name="searchable-sensitive-data-types"></a>Tipi di dati sensibili disponibili per la ricerca
 
-È possibile utilizzare la funzionalità Ricerca contenuto nel centro sicurezza e conformità per cercare dati riservati, ad esempio numeri di carta di credito o numeri di previdenza sociale, archiviati nei documenti di SharePoint e di siti di OneDrive for business. È possibile eseguire questa operazione utilizzando la  `SensitiveType` proprietà e il nome di un tipo di informazioni riservate in una query di parole chiave. Ad esempio, la query  `SensitiveType:"Credit Card Number"` restituisce i documenti che contengono un numero di carta di credito. La query  `SensitiveType:"U.S. Social Security Number (SSN)"` restituisce i documenti che contengono un numero di previdenza sociale degli Stati Uniti. Per visualizzare un elenco dei tipi di dati riservati che è possibile cercare, passare a **classificazioni** \> **tipi di informazioni riservate** nel centro sicurezza & conformità. In alternativa, è possibile utilizzare il cmdlet **Get-DlpSensitiveInformationType** in PowerShell per la sicurezza & Compliance Center per visualizzare un elenco di tipi di informazioni riservate. 
-  
-È inoltre possibile utilizzare la  `SensitiveType` proprietà per cercare il nome di un tipo di informazioni riservate personalizzato creato dall'utente (o da un altro amministratore) per l'organizzazione. È possibile utilizzare la colonna **Publisher** nella pagina **tipi di informazioni riservate** nel centro sicurezza & Compliance (o la proprietà **Publisher** in PowerShell) per differenziare i tipi di informazioni riservate incorporate e personalizzate. Per ulteriori informazioni, vedere [creare un tipo di informazioni riservate personalizzato](create-a-custom-sensitive-information-type.md).
+È possibile utilizzare la funzionalità Ricerca contenuto nel centro conformità per cercare dati riservati, ad esempio numeri di carta di credito o numeri di previdenza sociale, archiviati nei documenti di SharePoint e di siti di OneDrive for business. È possibile eseguire questa operazione utilizzando la `SensitiveType` proprietà e il nome di un tipo di informazioni riservate in una query di parole chiave. Ad esempio, la query `SensitiveType:"Credit Card Number"` restituisce i documenti che contengono un numero di carta di credito. La query  `SensitiveType:"U.S. Social Security Number (SSN)"` restituisce i documenti che contengono un numero di previdenza sociale degli Stati Uniti. Per visualizzare un elenco dei tipi di dati riservati che è possibile cercare, passare a **Data classifications** \> **tipi di informazioni riservate** per la classificazione dei dati nel centro conformità di Microsoft 365. In alternativa, è possibile utilizzare il cmdlet **Get-DlpSensitiveInformationType** in PowerShell per la sicurezza & Compliance Center per visualizzare un elenco di tipi di informazioni riservate.
   
 Per ulteriori informazioni sulla creazione di query tramite la  `SensitiveType` proprietà, vedere [form a query to find sensitive data stored in sites](form-a-query-to-find-sensitive-data-stored-on-sites.md).
 
-> [!NOTE]
-> Non è possibile utilizzare i tipi di dati riservati e la `SensitiveType` Proprietà Search per cercare i dati riservati in-Rest nelle cassette postali di Exchange Online. Tuttavia, è possibile utilizzare i criteri di prevenzione della perdita di dati (DLP) per proteggere i dati sensibili del messaggio di posta elettronica in transito. Per ulteriori informazioni, vedere [Panoramica dei criteri di prevenzione della perdita di dati](data-loss-prevention-policies.md) e [cercare e trovare i dati personali](search-for-and-find-personal-data.md).
+### <a name="limitations-for-searching-sensitive-data-types"></a>Limitazioni per la ricerca di tipi di dati riservati
+
+- È possibile utilizzare la `SensitiveType` proprietà solo per cercare i tipi di dati sensibili incorporati. Non è possibile cercare i tipi di dati sensibili personalizzati che sono stati creati (o un altro amministratore) per l'organizzazione. Utilizzare la colonna **Publisher** nella scheda **tipi di informazioni riservate** nel centro conformità (o la proprietà **Publisher** in PowerShell) per distinguere tra tipi di informazioni riservate e personalizzate. I tipi di dati riservati incorporati sono identificati dal valore di **Microsoft Corporation** nella colonna **Publisher** .
+  
+- Non è possibile utilizzare i tipi di dati di informazioni riservate e la `SensitiveType` Proprietà Search per cercare i dati riservati in-Rest nelle cassette postali di Exchange Online. Tuttavia, è possibile utilizzare i criteri di prevenzione della perdita di dati (DLP) per proteggere i dati di posta elettronica sensibili in transito. Per ulteriori informazioni, vedere [Panoramica dei criteri di prevenzione della perdita di dati](data-loss-prevention-policies.md) e [cercare e trovare i dati personali](search-for-and-find-personal-data.md).
   
 ## <a name="search-operators"></a>Operatori di ricerca
 
-Gli operatori di ricerca booleani, come **and**, **or**e **not**, consentono di definire ricerche più precise includendo o escludendo parole specifiche nella query di ricerca. Altre tecniche, ad esempio l'utilizzo di operatori di proprietà, ad esempio \> = o..., tra virgolette, parentesi e caratteri jolly, consentono di affinare una query di ricerca. Nella tabella seguente vengono elencati gli operatori che è possibile utilizzare per circoscrivere o ampliare i risultati della ricerca. 
+Gli operatori di ricerca booleani, come **and**, **or**e **not**, consentono di definire ricerche più precise includendo o escludendo parole specifiche nella query di ricerca. Altre tecniche, ad esempio l'utilizzo di operatori di proprietà (quali `>=` or `..` ), virgolette, parentesi e caratteri jolly, consentono di affinare una query di ricerca. Nella tabella seguente vengono elencati gli operatori che è possibile utilizzare per circoscrivere o ampliare i risultati della ricerca. 
   
 |**Operatore**|**Usage**|**Descrizione**|
 |:-----|:-----|:-----|

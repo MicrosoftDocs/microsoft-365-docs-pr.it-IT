@@ -3,7 +3,7 @@ title: Configurare Teams con tre livelli di protezione
 f1.keywords: NOCSH
 ms.author: mikeplum
 author: MikePlumleyMSFT
-manager: pamgreen
+manager: serdars
 audience: ITPro
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -20,12 +20,12 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: 1d51bd87-17bf-457c-b698-61821de3afa0
 description: Suggerimenti di configurazione per proteggere i file in Microsoft Teams.
-ms.openlocfilehash: 2e432c37642db7247f670dfd8d2d72da6df428bb
-ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
+ms.openlocfilehash: e1ec598bede2419abc19db2dbe3fd3ff63d8f583
+ms.sourcegitcommit: 24ccb910ffac4d065c512a57c5decd9dd19ef4c1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48377390"
+ms.lasthandoff: 10/19/2020
+ms.locfileid: "48594931"
 ---
 # <a name="configure-teams-with-three-tiers-of-protection"></a>Configurare Teams con tre livelli di protezione
 

@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: c98c0081d95da19e79db03dc4b4fdb823a14e42c
-ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
+ms.openlocfilehash: ffa2d54385249a22d672be0c2591c3b4171bd10d
+ms.sourcegitcommit: 153f413402f93b79be421741f3b9fed318d6d270
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48377271"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "48600381"
 ---
 # <a name="get-started-with-insider-risk-management-settings"></a>Informazioni introduttive sulle impostazioni di gestione dei rischi Insider
 
@@ -59,7 +59,7 @@ Gli avvisi vengono attivati dai criteri quando gli utenti eseguono attività rel
 Gli indicatori dei criteri sono segmentati nelle aree seguenti. È possibile scegliere gli indicatori per attivare e personalizzare i limiti degli eventi indicatori per ogni livello di indicatore quando si crea un criterio di rischio Insider:
 
 - **Indicatori di Office**: includono indicatori dei criteri per i siti di SharePoint, i team e la messaggistica di posta elettronica.
-- **Indicatori del dispositivo**: includono indicatori dei criteri per attività quali la condivisione di file sulla rete o con i dispositivi. Gli indicatori includono attività relative ai file di Microsoft Office. File CSV e. File PDF. Se si selezionano gli **indicatori di dispositivo**, l'attività viene elaborata solo per i dispositivi con Windows 10 Build 1809 o versione successiva. Per ulteriori informazioni sulla configurazione dei dispositivi per l'integrazione con rischio Insider, vedere [Guida introduttiva a Endpoint DLP](endpoint-dlp-getting-started.md).
+- **Indicatori del dispositivo**: includono indicatori dei criteri per attività quali la condivisione di file sulla rete o con i dispositivi. Gli indicatori includono attività relative ai file di Microsoft Office. File CSV e. File PDF. Se si selezionano gli **indicatori di dispositivo**, l'attività viene elaborata solo per i dispositivi con Windows 10 Build 1809 o versione successiva. Per ulteriori informazioni sulla configurazione dei dispositivi per l'integrazione con rischio Insider, vedere la sezione [abilitare gli indicatori di dispositivo e i dispositivi di bordo](insider-risk-management-settings.md#OnboardDevices) .
 - **Indicatore di violazione dei criteri di sicurezza**: sono inclusi gli indicatori di Microsoft Defender ATP relativi all'installazione di software non approvato o dannoso o al bypassare i controlli di sicurezza. Per ricevere avvisi in gestione dei rischi Insider, è necessario disporre di una licenza di Microsoft Defender ATP attiva e l'integrazione dei rischi Insider abilitata. Per ulteriori informazioni sulla configurazione di Microsoft Defender ATP per l'integrazione di gestione dei rischi Insider, vedere [configure advanced features in Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-features\#share-endpoint-alerts-with-microsoft-compliance-center).
 - **Booster del Punteggio di rischio**: tra cui l'aumento del Punteggio di rischio per attività inusuali o precedenti violazioni dei criteri. Abilitazione del Punteggio di rischio i Booster aumentano i punteggi dei rischi e la probabilità di avvisi per questi tipi di attività. I booster del Punteggio di rischio possono essere selezionati solo se sono stati selezionati uno o più indicatori sopra riportati.
 
@@ -71,6 +71,73 @@ Per definire gli indicatori dei criteri di rischio Insider abilitati in tutti i 
 
 >[!NOTE]
 >Potrebbe essere necessario diverse ore prima che i nuovi utenti aggiunti manualmente vengano visualizzati nel **dashboard degli utenti**. Le attività per i 90 giorni precedenti per questi utenti possono richiedere fino a 24 ore per la visualizzazione. Per visualizzare le attività per gli utenti aggiunti manualmente, selezionare l'utente nel **Dashboard utenti** e aprire la scheda **attività utente** nel riquadro dei dettagli.
+
+### <a name="enable-device-indicators-and-onboard-devices"></a>Abilitare gli indicatori di dispositivo e i dispositivi di bordo
+<a name="OnboardDevices"> </a>
+
+Per abilitare il monitoraggio delle attività di rischio sui dispositivi e includere indicatori di criteri per queste attività, i dispositivi devono soddisfare i requisiti seguenti ed è necessario completare i seguenti passaggi di onboarding.
+
+#### <a name="step-1-prepare-your-endpoints"></a>Passaggio 1: preparare gli endpoint
+
+Verificare che i dispositivi Windows 10 pianificati per la creazione di report in gestione dei rischi Insider soddisfino questi requisiti.
+
+1. Devono eseguire Windows 10 x 64, build 1809 o successiva.
+2. Tutti i dispositivi devono essere [aggiunti ad Azure Active Directory (AAD)](https://docs.microsoft.com/azure/active-directory/devices/concept-azure-ad-join) o aggiunto ad Azure AD ibrido.
+3. Installare Microsoft Chromium Edge browser sul dispositivo endpoint per monitorare le azioni relative all'attività di caricamento del cloud. Vedere [Scaricare il nuovo Microsoft Edge basato su Chromium](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium).
+
+#### <a name="step-2-onboarding-devices"></a>Passaggio 2: dispositivi onboarding
+<a name="OnboardStep2"> </a>
+
+È necessario abilitare il monitoraggio del dispositivo e l'onboard degli endpoint prima di poter monitorare le attività di gestione dei rischi insider su un dispositivo. Entrambe le azioni vengono eseguite nel portale Conformità Microsoft 365.
+
+Quando si desidera che i dispositivi di bordo non siano ancora stati onboarded, è possibile scaricare lo script appropriato e distribuirlo come indicato nei passaggi seguenti.
+
+Se i dispositivi sono già presenti in [Microsoft Defender per endpoint](https://docs.microsoft.com/windows/security/threat-protection/), verranno visualizzati nell'elenco dei dispositivi gestiti. Seguire il [passaggio 3: se si dispone di dispositivi onboarded in Microsoft Defender for endpoint](insider-risk-management-settings.md#OnboardStep3) nella sezione successiva.
+
+In questo scenario di distribuzione, i dispositivi di bordo che non sono stati ancora onboarded e si desidera monitorare le attività dei rischi Insider nei dispositivi Windows 10.
+
+1. Aprire il [Centro conformità Microsoft](https://compliance.microsoft.com).
+2. Aprire la pagina delle impostazioni del Centro conformità e scegliere **Onboarding di dispositivi**.
+
+   > [!NOTE]
+   > Anche se in genere sono necessari circa 60 secondi perché l'onboarding dei dispositivi sia abilitato, attendere fino a 30 minuti prima di contattare il supporto tecnico Microsoft.
+
+3. Scegliere **Gestione dispositivi** per aprire l'elenco **Dispositivi**. L'elenco sarà vuoto finché non si caricano dispositivi.
+4. Scegliere **Onboarding** per avviare il processo di onboarding.
+5. Scegliere il modo in cui si vogliono distribuire questi altri dispositivi dall'elenco **Metodo di distribuzione** e quindi **scaricare il pacchetto**.
+6. Seguire le procedure appropriate in [Strumenti e metodi di onboarding per i dispositivi Windows 10](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints). Questo collegamento porta a una pagina di destinazione in cui è possibile accedere alle procedure di Microsoft Defender per endpoint che corrispondono al pacchetto di distribuzione selezionato nel passaggio 5:
+    - Onboarding di dispositivi Windows 10 con Criteri di gruppo
+    - Onboarding di dispositivi Windows 10 con Microsoft Endpoint Configuration Manager
+    - Onboarding di dispositivi Windows 10 con gli strumenti di Gestione dispositivi mobili
+    - Onboarding di dispositivi Windows 10 con uno script locale
+    - Onboarding di dispositivi VDI (Virtual Desktop Infrastructure) non persistenti.
+
+Una volta fatto e l'endpoint è onboarded, dovrebbe essere visibile nell'elenco dei dispositivi e l'endpoint inizierà a segnalare i registri delle attività di controllo per la gestione dei rischi Insider.
+
+> [!NOTE]
+> Questa esperienza richiede la licenza. Se non si ha la licenza necessaria, i dati non saranno visibili o accessibili.
+
+#### <a name="step-3-if-you-have-devices-onboarded-into-microsoft-defender-for-endpoint"></a>Passaggio 3: se si dispone di dispositivi onboarded in Microsoft Defender per endpoint
+<a name="OnboardStep3"> </a>
+
+Se Microsoft Defender per endpoint è già stato distribuito e vi sono report di endpoint, tutti questi endpoint verranno visualizzati nell'elenco dispositivi gestiti. È possibile continuare a eseguire l'onboarding di nuovi dispositivi in gestione dei rischi Insider per espandere la copertura tramite la sezione [dispositivi di onboarding](insider-risk-management-settings.md#OnboardStep2) .
+
+1. Aprire il [Centro conformità Microsoft](https://compliance.microsoft.com).
+2. Aprire la pagina delle impostazioni del Centro conformità e scegliere **Abilita monitoraggio dispositivi**.
+3. Scegliere **Gestione dispositivi** per aprire l'elenco **Dispositivi**. Dovrebbe essere visualizzato l'elenco dei dispositivi che già inviano report a Microsoft Defender per endpoint.
+4. Scegliere **Onboarding** se è necessario aggiungere altri dispositivi.
+5. Scegliere il modo in cui si vogliono distribuire questi altri dispositivi dall'elenco **Metodo di distribuzione** e quindi **Scarica pacchetto**.
+6. Seguire le procedure appropriate in [Strumenti e metodi di onboarding per i dispositivi Windows 10](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints). Questo collegamento porta a una pagina di destinazione in cui è possibile accedere alle procedure di Microsoft Defender per endpoint che corrispondono al pacchetto di distribuzione selezionato nel passaggio 5:
+    - Onboarding di dispositivi Windows 10 con Criteri di gruppo
+    - Onboarding di dispositivi Windows 10 con Microsoft Endpoint Configuration Manager
+    - Onboarding di dispositivi Windows 10 con gli strumenti di Gestione dispositivi mobili
+    - Onboarding di dispositivi Windows 10 con uno script locale
+    - Onboarding di dispositivi VDI (Virtual Desktop Infrastructure) non persistenti.
+
+Una volta fatto e l'endpoint è onboarded, dovrebbe essere visibile nella tabella **Devices** e l'endpoint inizierà a segnalare i registri delle attività di controllo per la gestione dei rischi Insider.
+
+> [!NOTE]
+>Questa esperienza richiede la licenza. Se non si ha la licenza necessaria, i dati non saranno visibili o accessibili.
 
 ### <a name="indicator-level-settings-preview"></a>Impostazioni livello indicatore (anteprima)
 

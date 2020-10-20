@@ -16,18 +16,18 @@ search.appverid:
 - MET150
 description: Tabella che elenca i tipi di file supportati e quali visualizzatori possono essere visualizzati in per le indagini sui dati (Preview).
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: ca4dab40f5c3098d05323edec0ddbab54ac29273
-ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
+ms.openlocfilehash: 826ad69b1fb0074cd0c8bc1b3b0208bb8e77d528
+ms.sourcegitcommit: 153f413402f93b79be421741f3b9fed318d6d270
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48285272"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "48600415"
 ---
 # <a name="supported-file-types-in-data-investigations-preview"></a>Tipi di file supportati in indagini sui dati (anteprima)
 
 Lo strumento di analisi dei dati (Preview) supporta numerosi tipi di file in diversi modi, descritti nella tabella seguente. Questo elenco non è stato completato e verranno aggiunti nuovi tipi di file man mano che si continua il test di convalida. Nella tabella è inoltre indicato se è possibile visualizzare un tipo di file nei visualizzatori disponibili quando si esaminano le prove.
 
-| Tipo MIME | Classe file | Visualizzatore nativo | Visualizzatore di testo | Visualizzatore annotazioni | Estrazione del contenitore | Estensioni |
+| Tipo MIME | Classe file | Visualizzatore nativo | Visualizzatore di testo | Visualizzatore annotazioni | Estrazione del contenitore | Extensions |
 |:------|:------|:------|:------|:------|:------|:------|
 |applicazione/MSWord | Documento | Sì | Sì | Sì | No | . doc;. dat |
 |applicazione/PDF | Documento | Sì | Sì | Sì | No | .pdf |
@@ -47,7 +47,7 @@ Lo strumento di analisi dei dati (Preview) supporta numerosi tipi di file in div
 |Application/vnd. openxmlformats-officedocument. PresentationML. template | Documento | Sì | Sì | Sì | No | . potx |
 | apadsheetml. Sheet | Documento | Sì | Sì | Sì | No | XLSX |
 |Application/vnd. openxmlformats-officedocument. SpreadsheetML. template | Documento | Sì | Sì | Sì | No | . xltx |
-|applicazione/vnd.openxmlformats-officedocument.wordproessingml.document | Documento | Sì | Sì | Sì | No | . docx |
+|applicazione/vnd.openxmlformats-officedocument.wordprocessingml.document | Documento | Sì | Sì | Sì | No | . docx |
 |Application/vnd. openxmlformats-officedocument. WordprocessingML. template | Documento | Sì | Sì | Sì | No | . dotx |
 |applicazione/VND. Visio | Documento | Sì | Sì | Sì | No | . vsd |
 |applicazione/x-7z-compresso | Archivio/contenitore | No | No | No | Sì | .7z |
