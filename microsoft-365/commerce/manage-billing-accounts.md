@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -15,12 +15,12 @@ ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 description: Informazioni sugli account di fatturazione e su come gestirli.
-ms.openlocfilehash: 87cc861ab48b99106a3cbd50d8ded91205ffb0a2
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 3c99f3f22fb0eb13c4f9cab06a4037fe057b6fb4
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44402607"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48638208"
 ---
 # <a name="manage-billing-accounts"></a>Gestire account di fatturazione
 
@@ -50,7 +50,7 @@ Nella tabella seguente sono elencati i termini importanti che vengono visualizza
 | Profili di fatturazione | Un profilo di fatturazione definisce le proprietà della fattura, ad esempio l'utente che riceve la fattura, il modo in cui viene recapitata la fattura, i termini di pagamento e il numero di ordine. Per distribuire la fatturazione all'interno dell'organizzazione, è possibile creare più profili di fatturazione e identificare il profilo di fatturazione appropriato al momento dell'acquisto. Per ulteriori informazioni sui profili di fatturazione e su come utilizzarli per creare opzioni di fatturazione più flessibili per la propria organizzazione, [gestire i profili di fatturazione](billing-and-payments/manage-billing-profiles.md). |
 
 > [!NOTE]
-> Se si desidera modificare il nome o l'indirizzo **venduto a** , ma non viene visualizzato un collegamento di **modifica** , è necessario [contattare il supporto tecnico](https://docs.microsoft.com/office365/admin/contact-support-for-business-products) per modificarlo. Le richieste di una modifica del nome **venduto** richiedono una verifica del credito. Quando si contatta il supporto tecnico, è possibile utilizzare uno dei documenti seguenti:
+> Se si desidera modificare il nome o l'indirizzo **venduto a** , ma non viene visualizzato un collegamento di **modifica** , è necessario  [contattare il supporto tecnico](https://docs.microsoft.com/office365/admin/contact-support-for-business-products) per modificarlo. Le richieste di una modifica del nome **venduto** richiedono una verifica del credito. Quando si contatta il supporto tecnico, è possibile utilizzare uno dei documenti seguenti:
 >
 > - Documento di annuncio esterno che indica le modifiche apportate al nome o alla struttura aziendale dell'azienda
 > - Documento emesso dal governo o lettera di registrazione

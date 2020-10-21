@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -24,12 +24,12 @@ description: Informazioni su come acquistare un componente aggiuntivo per aggiun
 ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
-ms.openlocfilehash: e22c4193fffa1d97334f61e789265e75d55d53a3
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: e73a3430dbcded25a15fad19815106a72798d8e8
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44402191"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48638388"
 ---
 # <a name="buy-or-edit-an-add-on"></a>Acquistare o modificare un componente aggiuntivo
 
@@ -240,7 +240,7 @@ Per informazioni sui componenti aggiuntivi di Skype for Business, vedere [Licenz
 |Office 365 Advanced Compliance  <br/> | Office 365 Enterprise E1  <br/>  Office 365 Enterprise E3  <br/>  Office 365 Enterprise E4  <br/> |
 |Spazio di archiviazione file aggiuntivo per Office 365  <br/> | App Microsoft 365 per le aziende  <br/>  Microsoft 365 Business Basic  <br/>  Microsoft 365 Business Standard  <br/>  Office 365 Enterprise E1  <br/>  Office 365 Enterprise E2  <br/>  Office 365 Enterprise E3  <br/>  Office 365 Enterprise E4  <br/>  Office 365 Enterprise E5  <br/>  Office per il Web con SharePoint piano 1  <br/>  Office per il Web con SharePoint piano 2  <br/>  SharePoint Online Piano 1  <br/>  SharePoint Online Piano 2  <br/> |
 |Sistema telefonico  <br/> | Office 365 Enterprise E1  <br/>  Office 365 Enterprise E3  <br/>  Office 365 Enterprise E4  <br/>  Office 365 Enterprise E5  <br/> |
-|Audioconferenza  <br/> |  Microsoft 365 Business Basic <br/> Microsoft 365 Business Standard <br/> Office 365 Enterprise E1 <br/> Office 365 Enterprise E3 <br/> Office 365 Enterprise E4 <br/> Office 365 Enterprise E5 senza Audioconferenza <br/> Microsoft 365 Business Premium <br/> Microsoft 365 E3 <br/> Microsoft 365 E5  <br/> |
+|Audioconferenza  <br/> |  Microsoft 365 Business Basic <br/> Microsoft 365 Business Standard <br/> Office 365 Enterprise E1 <br/> Office 365 Enterprise E3 <br/> Office 365 Enterprise E4 <br/> Office 365 Enterprise E5 senza servizi di audioconferenza <br/> Microsoft 365 Business Premium <br/> Microsoft 365 E3 <br/> Microsoft 365 E5  <br/> |
 |Credito per la comunicazione  <br/> | Office 365 Enterprise E5  <br/> |
 |Piano per le chiamate nazionali <br/> | Office 365 Enterprise E5  <br/> |
 |Piani per le chiamate internazionali  <br/> | Office 365 Enterprise E5  <br/> |

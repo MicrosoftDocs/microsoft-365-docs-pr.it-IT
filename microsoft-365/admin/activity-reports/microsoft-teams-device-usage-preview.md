@@ -1,5 +1,5 @@
 ---
-title: Utilizzo di dispositivi Microsoft Teams
+title: Report di Microsoft 365 nell'interfaccia di amministrazione-utilizzo del dispositivo Microsoft Teams
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Ottenere informazioni sulle app di Microsoft teams utilizzate nell'organizzazione ottenendo il report sull'utilizzo delle app di Microsoft teams dai report di Microsoft 365.
-ms.openlocfilehash: 98b8d6241b94445c9cb47d2c464d47c5609efdfe
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: deda550b3ffc4209f718d36a3010605edbc1102b
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47949079"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48636974"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-teams-device-usage"></a>Report di Microsoft 365 nell'interfaccia di amministrazione-utilizzo del dispositivo Microsoft Teams
 
@@ -51,7 +51,7 @@ Selezionare **Scegli colonne** per aggiungere o rimuovere colonne dal report.  <
 |Elemento|Descrizione|
 |:-----|:-----|
 |**Metrica**|**Definizione**|
-|Nome utente  <br/> |Nome visualizzato dell'utente. È possibile fare clic sul nome visualizzato per passare alla pagina relativa alle impostazioni dell'utente nell'interfaccia di amministrazione di Microsoft teams.  <br/> |
+|Nome utente  <br/> |Nome visualizzato dell'utente.  <br/> |
 |Windows  <br/> |Selezionato se l'utente era attivo nel client desktop di teams in un computer basato su Windows.  <br/> |
 |Mac  <br/> |Selezionato se l'utente era attivo nel client desktop di teams su un computer macOS.  <br/> |
 |iOS  <br/> |Selezionato se l'utente era attivo nel client per dispositivi mobili di team per iOS.  <br/> |
@@ -61,4 +61,5 @@ Selezionare **Scegli colonne** per aggiungere o rimuovere colonne dal report.  <
 |Web  <br/> |Selezionato se l'utente era attivo nel client Web teams sui dispositivi.|
 |Data ultima attività (UTC)  <br/> |Ultima data (UTC) in cui l'utente ha partecipato a un'attività di teams.  <br/> |
 |È concesso in licenza|Selezionato se l'utente è autorizzato a usare i team.|
+|Totale attività Teams|Numero totale di attività dei team nel periodo di tempo selezionato. |
 |||

@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 ms.audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -21,16 +21,16 @@ search.appverid:
 - MET150
 description: Informazioni su abbonamenti e licenze in Microsoft 365 for business.
 ms.date: 07/01/2020
-ms.openlocfilehash: 9f8576b00b942c4b38d6192770bd2128afb4b104
-ms.sourcegitcommit: 0650da0e54a2b484a3156b3aabe44397fbb38e00
+ms.openlocfilehash: 51d07e777fd5a9e44c864ea11bb00ddc8c1c70d1
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "45015960"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48638196"
 ---
 # <a name="understand-subscriptions-and-licenses-in-microsoft-365-for-business"></a>Informazioni su abbonamenti e licenze in Microsoft 365 for business
 
-Quando si acquista un abbonamento a Microsoft 365 for business, è necessario iscriversi a una serie di app e servizi pagati su base mensile o annuale. Le applicazioni e i servizi ricevuti come parte dell'abbonamento dipendono dal prodotto acquistato, ad esempio Microsoft 365 Apps for business o Microsoft 365 business standard. È possibile vedere cosa viene fornito con ogni prodotto nella pagina [Microsoft 365 per le aziende di piccole e medie dimensioni](https://products.office.com/compare-all-microsoft-office-products?&activetab=tab:primaryr1) .
+Quando si acquista un abbonamento a Microsoft 365 for business, è necessario iscriversi a una serie di app e servizi pagati su base mensile o annuale. Le applicazioni e i servizi ricevuti come parte dell'abbonamento dipendono dal prodotto acquistato, ad esempio Microsoft 365 Apps for business o Microsoft 365 business standard. È possibile vedere cosa viene fornito con ogni prodotto nella pagina [Microsoft 365 per le aziende di piccole e medie dimensioni](https://products.office.com/compare-all-microsoft-office-products?&activetab=tab:primaryr1) .
 
 Quando si acquista un abbonamento, occorre specificare il numero di licenze necessario, in base al numero di utenti presenti all'interno dell'organizzazione. Dopo aver acquistato un abbonamento, è possibile creare account per gli utenti dell'organizzazione e quindi assegnare una licenza a ogni persona. Quando si modificano le esigenze dell'organizzazione, è possibile acquistare altre licenze per accogliere nuove persone o riassegnare le licenze ad altri utenti quando qualcuno lascia la propria azienda.
 
@@ -79,12 +79,12 @@ Tipi diversi di amministratori possono usare le licenze in modi diversi, in base
 |Amministratore fatturazione  <br/> |No  <br/> |No  <br/> |Sì  <br/> |No  <br/> |
 |Amministratore globale  <br/> |Sì  <br/> |Sì  <br/> |Sì  <br/> |Sì  <br/> |
 |Amministratore licenze <br/> |Sì <br/>|Sì <br/> |No <br/> |No <br/> |
-|Amministratore del supporto tecnico  <br/> |No  <br/> |No  <br/> |No  <br/> |No  <br/> |
+|Amministratore del supporto dei servizi  <br/> |No  <br/> |No  <br/> |No  <br/> |No  <br/> |
 |Amministratore utenti  <br/> |Sì  <br/> |Sì  <br/> |No  <br/> |Sì  <br/> |
 
-## <a name="related-content"></a>Contenuto correlato
+## <a name="related-content"></a>Contenuti correlati
 
 [Acquistare o rimuovere licenze per l'abbonamento aziendale](buy-licenses.md) (articolo) \
 [Assegnare licenze agli utenti](../../admin/manage/assign-licenses-to-users.md) (articolo) \
-[Annullamento dell'assegnazione delle licenze da parte degli utenti](../../admin/manage/remove-licenses-from-users.md) (articolo) \
+[Annullare l'assegnazione delle licenze agli utenti](../../admin/manage/remove-licenses-from-users.md) (articolo)\
 [Rimuovere una licenza da una cassetta postale condivisa](../../admin/email/remove-license-from-shared-mailbox.md) (articolo)

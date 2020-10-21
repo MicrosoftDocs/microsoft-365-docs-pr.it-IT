@@ -1,5 +1,5 @@
 ---
-title: Infrastruttura IT ed esigenze di business di Contoso
+title: Infrastruttura IT ed esigenze aziendali di contoso
 author: JoeDavies-MSFT
 f1.keywords:
 - NOCSH
@@ -14,31 +14,31 @@ ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
 ms.custom: ''
-description: Comprendere la struttura di base dell'infrastruttura IT locale di Contoso e in che modo le esigenze aziendali sono state soddisfatte da Microsoft 365 per Enterprise.
-ms.openlocfilehash: 3dd744a8d936307c61303bf8ba0f2f198af59d91
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+description: Comprendere la struttura di base dell'infrastruttura IT locale di Contoso e in che modo le esigenze aziendali dell'azienda sono soddisfatte da Microsoft 365 per Enterprise.
+ms.openlocfilehash: bc2b34254da01a3d49085082ab8ee8632df2d434
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46685831"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48637176"
 ---
-# <a name="contosos-it-infrastructure-and-business-needs"></a>Infrastruttura IT ed esigenze di business di Contoso
+# <a name="contoso-it-infrastructure-and-business-needs"></a>Infrastruttura IT ed esigenze aziendali di contoso
 
-Contoso sta cambiando la propria infrastruttura IT da un modello centralizzato locale a un'infrastruttura comprensiva di cloud che gestisce carichi di lavoro di produttività personale e applicazioni basati sul cloud.
+Contoso si sta spostando da un'infrastruttura IT centralizzata locale a una configurazione cloud-inclusive che incorpora carichi di lavoro e applicazioni per la produttività personale basati su cloud.
 
-## <a name="contosos-existing-it-infrastructure"></a>Infrastruttura IT esistente di Contoso
+## <a name="existing-contoso-it-infrastructure"></a>Infrastruttura IT esistente di contoso
 
 Contoso utilizza un’infrastruttura IT locale principalmente centralizzata, con centri dati delle applicazioni nella sede di Parigi.
 
-La Figura 1 mostra l'ufficio di una sede con centri dati delle applicazioni, una rete perimetrale e Internet.
+Nella figura 1 viene illustrata la sede centrale con i centri dati delle applicazioni, una DMZ e Internet.
 
-![Infrastruttura IT esistente di Contoso](../media/contoso-infra-needs/contoso-infra-needs-fig1.png)
+![Infrastruttura IT esistente di contoso](../media/contoso-infra-needs/contoso-infra-needs-fig1.png)
 
-**Figura 1: Infrastruttura IT esistente di Contoso**
+**Figura 1: infrastruttura IT esistente di contoso**
  
 I centri dati delle applicazioni locali eseguono l'hosting dei seguenti elementi: 
 
-- Applicazioni line of business personalizzate che utilizzano SQL Server e altri database Linux.
+- Applicazioni line-of-business personalizzate che utilizzano SQL Server e altri database di Linux.
 - Un set di server SharePoint legacy.
 - Server a livello di organizzazione e di team per l'archiviazione dei file.
 
@@ -46,33 +46,33 @@ Inoltre, ogni ufficio hub regionale supporta un set di server con un set di appl
 
 La possibilità di eseguire ricerche tra le applicazioni e i dati di questi data center separati e ubicati in più aree geografiche continua a rappresentare una sfida.
 
-Nella rete perimetrale degli uffici di Contoso, gruppi di server forniscono quanto segue:
+Nella DMZ della sede centrale di Contoso, diversi set di server offrono:
 
-- Hosting del sito Web pubblico di Contoso, da cui i clienti possono ordinare prodotti, parti, materiali o assistenza.
+- Hosting per il sito Web pubblico di Contoso, da cui i clienti possono ordinare prodotti, parti, forniture e servizi.
 - Hosting dell’extranet Contoso dedicata alla collaborazione e alla comunicazione con i partner.
 - Accesso remoto basato su rete privata virtuale (VPN) alla Intranet di Contoso e proxy Web per i dipendenti nella sede di Parigi.
 
-## <a name="contosos-business-needs"></a>Esigenze di business di Contoso
+## <a name="contoso-business-needs"></a>Esigenze aziendali di contoso
 
-Le esigenze di business di Contoso rientrano in cinque categorie principali.
+Le esigenze aziendali di Contoso rientrano in cinque categorie principali:
 
-Produttività:
+**Produttività**
 
 - Semplificare la collaborazione
 
-  Sostituire il modello di collaborazione basato su posta elettronica e scambio di file con un modello online che consente di apportare modifiche in tempo reale ai documenti, partecipare a riunioni online e tenere traccia delle conversazioni.
+  Sostituisci la collaborazione basata su condivisione file e la posta elettronica con un modello online che consente modifiche in tempo reale sui documenti, riunioni online più semplici e thread di conversazione acquisiti.
 - Migliorare la produttività per utenti remoti e mobili
 
-  Dato il numero elevato di utenti che lavorano da casa o sul campo, è preferibile sostituire la soluzione VPN caratterizzata da colli di bottiglia con un accesso ai dati e alle risorse di Contoso nel cloud che sia in grado di garantire prestazioni migliori.
+  Con molti dipendenti che lavorano da casa o nel campo, sostituire la soluzione VPN con collo di bottiglia con accesso performante ai dati e alle risorse di Contoso nel cloud.
 - Favorire la creatività e l'innovazione
 
   Sfruttare i metodi più recenti di apprendimento visivo e di sviluppo creativo, tra cui la visualizzazione 3D e l'input penna.
 
-Sicurezza:
+**Sicurezza**
 
 - Gestione di identità e accesso
 
-  Applicare l'autenticazione a più fattori e altre forme di autenticazione e proteggere le credenziali dell'account di utenti e amministratori.
+  Applicare più fattori e altre forme di autenticazione e proteggere le credenziali degli account utente e amministratore.
 
 - Protezione dalle minacce
 
@@ -84,63 +84,63 @@ Sicurezza:
 
 - Gestione della sicurezza
 
-  Monitorare la postura di sicurezza ed essere in grado di rilevare le minacce in tempo reale ed intervenire tempestivamente.
+  Monitorare la posizione di sicurezza e rilevare e rispondere alle minacce in tempo reale.
 
-Accesso remoto e mobile e partner commerciali:
+**Accesso remoto e mobile e partner commerciali**
 
-- Migliorare la sicurezza per lavoratori remoti e mobili
+- Migliorare la sicurezza per i lavoratori remoti e mobili
 
-  Introdurre il BYOD e la gestione dei dispositivi di proprietà dell'azienda per garantire l'accesso protetto, il comportamento corretto delle applicazioni e protezione dei dati aziendali.
+  Implementare portare il proprio dispositivo (BYOD) e la gestione dei dispositivi di proprietà dell'azienda per garantire l'accesso protetto, il comportamento corretto dell'applicazione e la protezione dei dati aziendali.
 
 - Ridurre l'infrastruttura di accesso remoto per i dipendenti
 
-  Ridurre i costi relativi a manutenzione e supporto e migliorare le prestazioni per la soluzione di accesso remoto spostando sul cloud le risorse a cui si accede normalmente.
+  Ridurre i costi di manutenzione e supporto e migliorare le prestazioni per la soluzione di accesso remoto spostando le risorse comunemente accessibili nel cloud.
 
-- Fornire migliore connettività e ridurre le spese per le transazioni Business-to-Business (B2B)
+- Fornire una migliore connettività e ridurre le spese per le transazioni business-to-Susi (B2B)
 
-  Sostituire l’extranet per i partner obsoleta e costosa con una soluzione basata su cloud che utilizzi l'autenticazione federata.
+  Sostituire un'Extranet di partner obsoleta e costosa con una soluzione basata sul cloud in cui viene utilizzata l'autenticazione federata.
 
-Conformità:
+**Conformità**
 
 - Rispettare i requisiti normativi applicabili
 
-  Essere conformi alle normative applicabili per la conservazione dei dati, la crittografia, la tutela della privacy dei dati e alle normative relative al trattamento dei dati personali, ad esempio il Regolamento generale sulla protezione dei dati (GDPR) per l'Unione Europea.
+  Garantire la conformità con le normative industriali e regionali per l'archiviazione dei dati, la crittografia, la privacy dei dati e le normative sui dati personali, come il regolamento generale sulla protezione dei dati (GDPR) per l'Unione europea.
 
-Gestione:
+**Gestione**
 
-- Ridurre la spesa IT per la gestione del software dei computer e dei dispositivi client
+- Riduzione del sovraccarico per la gestione del software in esecuzione su computer e dispositivi client
 
-  Automatizzare l'installazione degli aggiornamenti del sistema operativo Windows e Microsoft 365 Apps for enterprise nell'organizzazione.
+  Automatizzare l'installazione degli aggiornamenti nel sistema operativo Windows e nelle app Microsoft 365 per l'organizzazione.
 
-## <a name="mapping-contosos-business-needs-to-microsoft-365-for-enterprise"></a>Mapping delle esigenze aziendali di Contoso a Microsoft 365 per Enterprise
+## <a name="mapping-contoso-business-needs-to-microsoft-365-for-enterprise"></a>Mapping delle esigenze aziendali di Contoso a Microsoft 365 per Enterprise
 
-Il reparto IT di Contoso ha associato le esigenze di business alle funzionalità di Microsoft 365 E5 prima dell'implementazione in questa tabella:
+Il reparto IT di Contoso ha determinato la seguente mappatura delle esigenze aziendali alle caratteristiche di Microsoft 365 E5 prima della distribuzione:
 
 
-| Category | Esigenze aziendali | Microsoft 365 per prodotti o funzionalità aziendali |
+| Categoria | Esigenze aziendali | Microsoft 365 per prodotti o funzionalità aziendali |
 |:-------|:-----|:-----|
 | Produttività |  |  |
 |  | Semplificare la collaborazione | Microsoft Teams, SharePoint, OneDrive |
 |  | Migliorare la produttività per lavoratori remoti e mobili | Carichi di lavoro e dati basati sul cloud di Microsoft 365 |
 |  | Favorire la creatività e l'innovazione | Windows Ink, Cortana at Work, PowerPoint |
 | Sicurezza |  |  |
-|  | Gestione di identità e accesso | Account di amministratore globali dedicati con Azure Multi-Factor Authentication (MFA) e Azure AD Privileged Identity Management (PIM) <BR> MFA per tutti gli account utente <BR> Accesso condizionale <BR> Windows Hello <BR> Windows Credential Guard |
+|  | Gestione di identità e accesso | Account di amministratore globale dedicati con l'autenticazione a più fattori di Azure (AMF) e Azure Active Directory Privileged Identity Management (PIM) <BR> MFA per tutti gli account utente <BR> Accesso condizionale <BR> Windows Hello <BR> Windows Credential Guard |
 |  | Protezione dalle minacce | Advanced Threat Analytics <BR> Windows Defender <BR> Protezione avanzata dalle minacce <BR> Office 365 Advanced Threat Protection <BR> Analisi e risposta alle minacce di Microsoft 365 <BR> |
 |  | Protezione delle informazioni | Azure Information Protection <BR> Prevenzione della perdita dei dati (DLP) <BR> Windows Information Protection (WIP) <BR> Microsoft Cloud App Security <BR> Microsoft Intune |
 |  | Gestione della sicurezza | Centro sicurezza di Azure  <BR> Windows Defender Security Center |
 | Accesso remoto e mobile e partner commerciali |  |  |
 |  | Migliorare la sicurezza per lavoratori remoti e mobili | Microsoft Intune |
 |  | Ridurre l'infrastruttura di accesso remoto per i dipendenti | Carichi di lavoro e dati basati sul cloud di Microsoft 365 |
-|  | Fornire migliore connettività e ridurre le spese per le transazioni B2B | Autenticazione federata e risorse basate su cloud |
+|  | Migliorare la connettività e ridurre le spese per le transazioni B2B | Autenticazione federata e risorse basate su cloud |
 | Conformità |  |  |
 |  | Rispettare i requisiti normativi applicabili | Funzionalità di GDPR in Microsoft 365 |
 | Gestione |  |  |
-|  | Ridurre la spesa IT per installare gli aggiornamenti del client | Anelli di distribuzione <BR> Aggiornamenti di Windows 10 Enterprise <BR> Aggiornamenti di App Microsoft 365 per grandi imprese |
+|  | Riduzione del sovraccarico per l'installazione degli aggiornamenti client | Anelli di distribuzione <BR> Aggiornamenti di Windows 10 Enterprise <BR> Aggiornamenti di App Microsoft 365 per grandi imprese |
 ||||
 
 ## <a name="next-step"></a>Passaggio successivo
 
-[Informazioni](contoso-networking.md) sulla rete locale dell'azienda Contoso e come è stata ottimizzata per l'accesso e la latenza alle risorse basate su cloud Microsoft 365.
+Informazioni [sulla rete](contoso-networking.md) Contoso Corporation in locale e su come è stata ottimizzata per l'accesso e la latenza alle risorse basate su cloud di Microsoft 365.
 
 ## <a name="see-also"></a>Vedere anche
 

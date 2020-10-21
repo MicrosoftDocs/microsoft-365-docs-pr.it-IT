@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 f1_keywords:
@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 description: Informazioni su come leggere e comprendere la fattura o la fattura per i prodotti aziendali Microsoft.
 keywords: account di fatturazione, informazioni sull'organizzazione, fatture
-ms.openlocfilehash: f0575683cdcaf0ac76de80c93e0d7573e8c63bae
-ms.sourcegitcommit: 41eb898143286755cd36df9f7e769de641263d73
+ms.openlocfilehash: 80b7e4f14390e2f695dc753358f9e5bebe055bd0
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "45391519"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48638412"
 ---
 # <a name="understand-your-bill-or-invoice"></a>Come leggere la fattura
 
@@ -109,7 +109,7 @@ Le fatture sono disponibili online. Un collegamento alla fattura online è dispo
 
 ### <a name="to-view-your-online-invoice"></a>Per visualizzare la fattura online
 
-1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \><a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Fatture e pagamenti</a>.
+1. Nell'interfaccia di amministrazione passare alla pagina **Fatture** \><a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Fatture e pagamenti</a>.
 
 2. Per scaricare la versione. pdf della fattura, scegliere **Scarica fattura PDF** nella riga per la fattura che si desidera visualizzare.
 
@@ -151,7 +151,7 @@ Per ulteriori informazioni, vedere [visualizzare la fattura o la fattura](view-y
 
 Il pagamento anticipato di Azure è disponibile come metodo di pagamento solo per i prodotti e i servizi di Azure idonei.
 
-## <a name="need-help-contact-support"></a>Serve assistenza? Contattare il supporto.
+## <a name="need-help-contact-support"></a>Hai bisogno di assistenza? Contattare il supporto.
 
 Se hai domande o hai bisogno di aiuto con i crediti di Azure, <a href="https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportrequest" target="_blank">Crea una richiesta di supporto con supporto di Azure</a>.
 

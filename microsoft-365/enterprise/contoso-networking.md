@@ -14,106 +14,106 @@ ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
 ms.custom: ''
-description: Comprendere l'infrastruttura di rete di Contoso e come utilizza la tecnologia SD-WAN per garantire prestazioni di rete ottimali a Microsoft 365 per i servizi cloud aziendali.
-ms.openlocfilehash: bc2ae68917258b94ed46ef0c1257f56e0736105c
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+description: Comprendere l'infrastruttura di rete di Contoso e come la società utilizza la tecnologia SD-WAN per garantire prestazioni di rete ottimali a Microsoft 365 per i servizi cloud aziendali.
+ms.openlocfilehash: ca673e6dcbf0f3db4bde33d388598e5f4ffac914
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46685819"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48637188"
 ---
 # <a name="networking-for-the-contoso-corporation"></a>Servizi di rete per Contoso Corporation
 
-Per adottare un'infrastruttura cloud globale, i tecnici di rete di Contoso hanno realizzato un cambiamento fondamentale nel modo in cui il traffico di rete si sposta verso i servizi cloud. Invece di un modello hub e spoke interno, incentrato sulla connettività di rete e sul traffico per il livello successivo della gerarchia di uffici di Contoso, si sono adoperati per mappare le posizioni degli utenti al punto di uscita Internet locale e le connessioni locali alla posizione di rete Microsoft 365 più vicina su Internet.
+Per adottare un'infrastruttura cloud-inclusive, Contoso ha messo a punto un passaggio fondamentale per la modalità di spostamento del traffico di rete verso i servizi cloud. Invece di un modello hub-and-spoke interno che concentra la connettività di rete e il traffico per il livello successivo della gerarchia di Office, sono state mappate le posizioni degli utenti all'uscita Internet locale e alle connessioni locali al percorso di rete Microsoft 365 più vicino su Internet.
 
-## <a name="contosos-networking-infrastructure"></a>Infrastruttura di rete di Contoso
+## <a name="networking-infrastructure"></a>Infrastruttura di rete
 
-Gli elementi della rete di Contoso che collega gli uffici in tutto il mondo sono i seguenti:
+Questi sono gli elementi di rete che collegano gli uffici di Contoso in tutto il mondo:
 
 - Rete WAN MPLS (Multiprotocol Label Switching)
 
-  Una rete WAN MPLS collega la sede di Parigi alle filiali e le filiali agli uffici secondari in una configurazione spoke e hub. Si tratta di un collegamento che consente agli utenti di accedere ai server locali che costituiscono le applicazioni line-of-business dell'ufficio di Parigi. Lo stesso collegamento, inoltre, instrada il traffico Internet generico all'ufficio di Parigi dove i dispositivi per la sicurezza della rete eseguono lo scrubbing delle richieste. All'interno di ciascun ufficio, i router inviano il traffico agli host cablati o ai punti di accesso wireless sulle subnet, che utilizzano lo spazio di indirizzi IP privato.
+  Una rete WAN MPLS connette la sede di Parigi agli uffici regionali e alle sedi regionali agli uffici satellite in una configurazione a raggio e Hub. La rete consente agli utenti di accedere a server locali che compongono applicazioni line-of-business nella sede di Parigi. Inoltre, consente di instradare qualsiasi traffico Internet generico all'ufficio di Parigi, dove i dispositivi di sicurezza di rete scrub le richieste. All'interno di ogni ufficio, i router offrono traffico a host cablati o a punti di accesso wireless sulle subnet, che utilizzano lo spazio di indirizzi IP privato.
 
-- Accesso locale diretto a Internet per il traffico di Microsoft 365
+- Accesso Internet diretto locale per il traffico Microsoft 365
 
-  Ciascun ufficio è dotato di un dispositivo SD-WAN (Software-Defined WAN) con uno o più circuiti di rete ISP Internet, con una connettività Internet specifica tramite un server proxy. Questo in genere viene implementato come collegamento WAN a un ISP locale che fornisce anche gli indirizzi IP pubblici e un server DNS locale.
+  Ogni ufficio ha un dispositivo WAN (SD-WAN) definito dal software che dispone di uno o più circuiti di rete Internet ISP locali con la propria connettività Internet tramite un server proxy. Questo è in genere implementato come un collegamento WAN a un ISP locale che fornisce anche indirizzi IP pubblici e un server DNS locale.
 
 - Presenza Internet
 
-  Contoso possiede il nome di dominio pubblico contoso.com. Il sito Web pubblico di Contoso per ordinare prodotti è un set di server in un datacenter connesso a Internet nel campus di Parigi. Contoso utilizza un intervallo di indirizzi IP pubblico /24 su Internet.
+  Contoso possiede il \. nome di dominio pubblico contoso com. Il sito Web pubblico contoso per l'ordinamento dei prodotti è un set di server in un datacenter connesso a Internet nel campus di Parigi. Contoso utilizza l'intervallo di indirizzi IP pubblici a/24 su Internet.
 
-La figura 1 mostra l’infrastruttura di rete di Contoso e le relative connessioni a Internet.
+Nella figura 1 viene illustrata l'infrastruttura di rete Contoso e le relative connessioni a Internet.
 
-![La rete di Contoso](../media/contoso-networking/contoso-networking-fig1.png)
+![La rete contoso](../media/contoso-networking/contoso-networking-fig1.png)
  
-**Figura 1: la rete di Contoso**
+**Figura 1: la rete contoso**
 
 ## <a name="use-of-sd-wan-for-optimal-network-connectivity-to-microsoft"></a>Uso di SD-WAN per la connettività di rete ottimale a Microsoft
 
 Contoso ha seguito i [principi della connettività di rete di Microsoft 365](microsoft-365-network-connectivity-principles.md) per:
 
-1. Identificare e differenziare il traffico di rete di Microsoft 365
-2. Uscire dalle connessione di rete a livello locale
-3. Evitare fenomeni di "hairpinning" di rete
-4. Bypassare i dispositivi di protezione di rete duplicati
+- Identificare e differenziare il traffico di rete di Microsoft 365
+- Uscire dalle connessione di rete a livello locale
+- Evitare fenomeni di "hairpinning" di rete
+- Bypassare i dispositivi di protezione di rete duplicati
 
-Esistono tre categorie di traffico di rete per Microsoft 365: Optimize, Allow e Default. Il traffico della prima e della seconda categoria è un traffico di rete attendibile che viene crittografato e protetto a livello di endpoint ed è destinato alla rete Microsoft 365.
+Esistono tre categorie di traffico di rete per Microsoft 365: *optimize*, *Allow*e *default*. Ottimizzare e consentire il traffico è il traffico di rete attendibile crittografato e protetto negli endpoint ed è destinato alla rete Microsoft 365.
 
 Contoso ha deciso di:
 
-- Utilizzare il punto di uscita Internet diretto per il traffico delle categorie Optimize e Allow e di inoltrare tutto il traffico della categoria Default alla connessione Internet centrale di Parigi.
+- Utilizzare l'uscita Internet diretta per ottimizzare e consentire il traffico delle categorie e inoltrare tutto il traffico di categoria predefinito alla connessione Internet centralizzata basata su Parigi.
 
-- Distribuire dispositivi SD-WAN in ognuno degli uffici per seguire facilmente questi principi e ottenere prestazioni di rete ottimali per i servizi basati su cloud di Microsoft 365.
+- Distribuire i dispositivi SD-WAN in ogni ufficio come un modo semplice per seguire questi principi e ottenere prestazioni di rete ottimali per i servizi basati su cloud di Microsoft 365.
 
-  I dispositivi SD-WAN sono dotati di una porta LAN per la rete di uffici locale e di più porte WAN. Una porta WAN si connette alla rete MPLS e le altre ai circuiti ISP locali. Il dispositivo SD-WAN instrada il traffico di rete delle categorie Optimize e Allow ai collegamenti ISP.
+  I dispositivi SD-WAN sono dotati di una porta LAN per la rete di uffici locale e di più porte WAN. Una porta WAN si connette alla rete MPLS. Un altro si connette a un circuito ISP locale. Il dispositivo SD-WAN instrada il traffico di rete delle categorie Optimize e Allow ai collegamenti ISP.
 
-## <a name="contosos-line-of-business-app-infrastructure"></a>Infrastruttura delle app line-of-business di Contoso
+## <a name="the-contoso-line-of-business-app-infrastructure"></a>L'infrastruttura delle app line-of-business di contoso
 
-Contoso ha progettato l'infrastruttura Internet di applicazioni line-of-business e server per i seguenti motivi:
+Contoso ha architettato l'infrastruttura Intranet del server e dell'applicazione line-of-business per gli elementi seguenti:
 
 - Gli uffici secondari si avvalgono dei server di memorizzazione nella cache locale per archiviare documenti con accesso frequente e siti Web interni.
 - Gli hub regionali si avvalgono di server applicazioni regionali per gli uffici regionali e quelli secondari. Tali server effettuano la sincronizzazione con i server della sede di Parigi.
-- Il campus di Parigi dispone di data center che contengono i server applicazioni centralizzati che servono l'intera organizzazione.
+- I centri dati di Paris Campus contengono server applicazioni centralizzati che servono l'intera organizzazione.
 
-La Figura 2 mostra la percentuale di traffico di rete quando si accede ai server nell'Intranet di Contoso.
+Nella figura 2 viene illustrata la percentuale di capacità del traffico di rete utilizzata per l'accesso ai server nell'Intranet contoso.
 
-![Infrastruttura di Contoso per applicazioni interne](../media/contoso-networking/contoso-networking-fig2.png)
+![L'infrastruttura di Contoso per applicazioni interne](../media/contoso-networking/contoso-networking-fig2.png)
  
 **Figura 2: infrastruttura di Contoso per applicazioni interne**
 
-Per gli utenti negli uffici secondari o negli hub regionali, il 60% delle risorse necessarie ai dipendenti può essere fornito da server degli uffici secondari e degli hub regionali. Il restante 40% delle richieste di risorse deve passare attraverso un collegamento WAN al campus di Parigi.
+Per le sedi degli hub satellite o regionale, il 60% delle risorse necessarie per i dipendenti può essere utilizzato dai server di Office Hub satellite e Regional. L'ulteriore 40% delle richieste di risorse deve superare il collegamento WAN al campus di Parigi.
 
-## <a name="contosos-network-analysis-and-preparation-of-their-network-for-microsoft-365-for-enterprise"></a>Analisi della rete di Contoso e preparazione della rete per Microsoft 365 per Enterprise
+## <a name="network-analysis-and-preparation-for-microsoft-365-for-enterprise"></a>Analisi di rete e preparazione per Microsoft 365 per Enterprise
 
-L'adozione corretta di Microsoft 365 per i servizi Enterprise da parte degli utenti di Contoso dipendono dalla connettività a Internet altamente disponibile e performante, o direttamente ai servizi cloud Microsoft. Contoso ha eseguito queste operazioni per pianificare e implementare la connettività ottimizzata a Microsoft 365 per i servizi cloud aziendali:
+L'adozione corretta di Microsoft 365 per i servizi Enterprise da parte degli utenti di Contoso dipende da una connettività estremamente disponibile e performante a Internet o direttamente ai servizi cloud Microsoft. Contoso ha eseguito questa procedura per pianificare e implementare la connettività ottimizzata a Microsoft 365 per i servizi cloud aziendali:
 
-1. Creazione di un diagramma reticolare WAN aziendale per semplificare la pianificazione
+1. Creare un diagramma della rete WAN aziendale per agevolare la pianificazione
 
-   Contoso ha avviato la pianificazione della rete creando un diagramma che mostra le posizioni, la connettività di rete esistente, i dispositivi perimetrali di rete presenti e le classi di servizio gestite nella rete. Questo diagramma è stato utilizzato per ogni passaggio successivo nella pianificazione e nell'implementazione della connettività di rete.
+   Per avviare la pianificazione della rete, Contoso ha creato un diagramma che mostra le posizioni di Office, la connettività di rete esistente, i dispositivi perimetrali di rete esistenti e le classi di servizi gestiti sulla rete. Questo diagramma è stato utilizzato per ogni passaggio successivo nella pianificazione e nell'implementazione della connettività di rete.
 
-2. Ha creato un piano per Microsoft 365 per la connettività di rete aziendale
+2. Creare un piano per Microsoft 365 per la connettività di rete aziendale
 
-   Contoso ha usato i [principi di connettività di rete di Microsoft 365](microsoft-365-network-connectivity-principles.md) e ha fornito le architetture di rete di riferimento per determinare la topologia SD-WAN come topologia preferita per la connettività di Microsoft 365.
+   Contoso ha usato i [principi di connettività di rete di microsoft 365](microsoft-365-network-connectivity-principles.md) e le architetture di rete di riferimento di esempio per identificare SD-WAN come topologia preferita per la connettività di Microsoft 365.
 
-3. Analisi dell'utilizzo della connessione Internet e della larghezza di banda WAN MPLS in ogni ufficio e maggiore larghezza di banda in base alle esigenze
+3. Analizzare l'utilizzo della connessione Internet e la larghezza di banda della rete WAN MPLS in ogni ufficio e aumentare la larghezza di banda in base alle esigenze
 
-   È stato analizzato l'uso corrente di ogni ufficio e sono stati incrementati i circuiti in modo da rendere operativo il traffico basato sul cloud previsto di Microsoft 365 con una media del 20% della capacità inutilizzata.
+   Ogni utilizzo corrente di Office è stato analizzato e i circuiti sono stati aumentati in modo che il traffico basato sul cloud previsto per Microsoft 365 funzionerebbe con una media della capacità inutilizzata del 20%.
 
-4. Ottimizzazione delle prestazioni per i servizi di rete Microsoft
+4. Ottimizzare le prestazioni per i servizi di rete Microsoft
 
-   Contoso ha definito il set di endpoint di Office 365, Intune e Azure e ha configurato firewall, dispositivi di sicurezza e altri sistemi nel percorso Internet per ottenere prestazioni ottimali. Gli endpoint per il traffico di Office 365 delle categorie Optimize e Allow è stato configurato nei dispositivi SD-WAN per il routing sul circuito ISP.
+   Contoso ha determinato l'insieme degli endpoint di Office 365, Intune e Azure e dei firewall configurati, dei dispositivi di sicurezza e di altri sistemi nel percorso Internet per ottenere prestazioni ottimali. Gli endpoint per il traffico di categoria di Office 365 optimize and allow sono stati configurati nei dispositivi SD-WAN per il routing sul circuito dell'ISP.
 
-5. Configurazione del DNS interno
+5. Configurare il DNS interno
 
    Il DNS deve essere funzionale e ricercato localmente per il traffico di Microsoft 365.
 
-6. Convalida della connettività degli endpoint di rete e delle porte
+6. Convalidare l'endpoint di rete e la connettività delle porte
 
-   Contoso ha eseguito strumenti di test della connettività di rete forniti da Microsoft per convalidare la connettività per Microsoft 365 per i servizi cloud aziendali.
+   Contoso ha eseguito strumenti di test della connettività di rete Microsoft per convalidare la connettività per Microsoft 365 per i servizi cloud aziendali.
 
-7. Ottimizzazione dei computer dei dipendenti per la connettività di rete
+7. Ottimizzare i computer dei dipendenti per la connettività di rete
 
-   I singoli computer sono stati controllati per verificare che sino installati gli aggiornamenti più recenti del sistema operativo e che il monitoraggio della sicurezza degli endpoint sia attivo in tutti i client.
+   Sono stati controllati singoli computer per garantire che gli aggiornamenti del sistema operativo più recenti siano stati installati e che il monitoraggio della sicurezza di endpoint fosse attivo su tutti i client.
 
 ## <a name="next-step"></a>Passaggio successivo
 

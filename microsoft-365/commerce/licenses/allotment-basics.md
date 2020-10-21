@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -14,12 +14,12 @@ ms.collection:
 - commerce
 ms.custom: AdminSurgePortfolio
 description: Ulteriori informazioni sulla nuova funzionalità di assegnazione.
-ms.openlocfilehash: c8c472fbf30bb898f9a10eca778ee7c668c8c388
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 2ab8efd637bb278faf6065559cab26cb7016975b
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44402415"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48638232"
 ---
 # <a name="allotment-basics"></a>Nozioni di base di assegnazione
 

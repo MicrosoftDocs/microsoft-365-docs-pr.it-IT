@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -25,12 +25,12 @@ ms.custom:
 - okr_SMB
 - fwlink 808700 for SEPA UI glink 906 for older uI
 - AdminSurgePortfolio
-ms.openlocfilehash: baf09d87f6229cb530c328d570fa70dc25729a11
-ms.sourcegitcommit: b95e958df130b5fbbe5d8a8882d1bbf20b27a285
+ms.openlocfilehash: 778906219c03e8cc79ccebb368b84642639a8467
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "44407957"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48638436"
 ---
 # <a name="pay-for-your-subscription"></a>Pagare l'abbonamento
 
@@ -48,7 +48,7 @@ Quando si configura l'abbonamento, è possibile pagare con addebito sulla carta 
 
 ## <a name="pay-by-credit-card-or-bank-account"></a>Pagare con carta di credito o conto corrente bancario
 
-Quando si sceglie il pagamento tramite carta di credito o conto corrente bancario, il giorno successivo alla data della fattura verrà automaticamente addebitato l'importo dell'abbonamento fino al termine dello stesso. È possibile [gestire i metodi di pagamento](manage-payment-methods.md) ogni volta che è necessario. È anche possibile scegliere di [Ricevere una copia dell'estratto conto tramite posta elettronica](#receive-a-copy-of-your-billing-statement-in-email).
+Quando si sceglie il pagamento tramite carta di credito o conto corrente bancario, il giorno successivo alla data della fattura verrà automaticamente addebitato l'importo dell'abbonamento fino al termine dello stesso. È possibile [gestire le modalità di pagamento](manage-payment-methods.md) ogni volta che è necessario. È anche possibile scegliere di [Ricevere una copia dell'estratto conto tramite posta elettronica](#receive-a-copy-of-your-billing-statement-in-email).
 
 ### <a name="what-if-my-credit-card-was-declined-and-my-payment-is-past-due"></a>Cosa succede se la carta di credito viene rifiutata e si supera così la scadenza del pagamento?
 
@@ -311,6 +311,6 @@ Se il motivo per cui è stato inizialmente scelto il pagamento tramite fattura, 
 
 ## <a name="related-articles"></a>Articoli correlati
 
-[Gestire metodi di pagamento](manage-payment-methods.md)
+[Gestione metodi di pagamento](manage-payment-methods.md)
 
 [Come leggere la fattura](understand-your-invoice2.md)

@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 f1_keywords:
@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 description: Informazioni su come i profili di fatturazione supportano le fatture.
 keywords: Profilo di fatturazione, fatture, addebiti, spese gestite
-ms.openlocfilehash: 2979909e3b916cc4bc8704f32a821b13fa6090e0
-ms.sourcegitcommit: 956dd3f87adb4e6173517550a662c3bacc2d2d79
+ms.openlocfilehash: de6d6cd65d9e83e7211bcdc33f1774aaec3d1729
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "44741704"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48638448"
 ---
 # <a name="manage-billing-profiles"></a>Gestire profili di fatturazione
 
@@ -61,7 +61,7 @@ I ruoli nei profili di fatturazione dispongono delle autorizzazioni per controll
 
 ## <a name="view-billing-profiles"></a>Visualizzare i profili di fatturazione
 
-1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \><a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Fatture e pagamenti</a>.
+1. Nell'interfaccia di amministrazione passare alla pagina **Fatture** \><a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Fatture e pagamenti</a>.
 
 2. Scegliere **profili di fatturazione**e quindi scegliere un profilo di fatturazione dall'elenco.
 
@@ -76,7 +76,7 @@ I ruoli nei profili di fatturazione dispongono delle autorizzazioni per controll
     > [!NOTE]
     > Se non si dispone di alcun credito di Azure, non verranno visualizzate le schede Azure credit **Balance** o **Azure Credits** .
 
-## <a name="need-help-contact-support"></a>Serve assistenza? Contattare il supporto.
+## <a name="need-help-contact-support"></a>Hai bisogno di assistenza? Contattare il supporto.
 
 Se hai domande o hai bisogno di assistenza con i costi di Azure, <a href="https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportrequest" target="_blank">Crea una richiesta di supporto con supporto di Azure</a>.
 

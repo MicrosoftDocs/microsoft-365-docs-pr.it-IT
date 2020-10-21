@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Informazioni su come ottenere il report attività degli utenti di Microsoft teams e acquisire maggiori informazioni sull'attività dei team nell'organizzazione.
-ms.openlocfilehash: 32252ed89dd9447b5df59ee733088349c559a320
-ms.sourcegitcommit: adaedd1418a3bd6e4875b77fd9e008b47e0b2a51
+ms.openlocfilehash: 8ce29b43e6238883470d1159ad1d22fefca88792
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48104511"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48637068"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-teams-user-activity"></a>Report di Microsoft 365 nell'interfaccia di amministrazione-attività utente di Microsoft Teams
 
@@ -37,14 +37,14 @@ Il Dashboard Microsoft 365 **Reports** illustra la panoramica delle attività tr
 
 1. Nell'interfaccia di amministrazione passare alla pagina **Report** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">Utilizzo</a>.
 2. Nella Home page del dashboard, fare clic sul pulsante **Visualizza altro** sulla scheda attività Microsoft teams.
-  
+
 ## <a name="interpret-the-microsoft-teams-user-activity-report"></a>Interpretare il report Attività degli utenti di Microsoft Teams
 
 È possibile visualizzare l'attività utente nel rapporto teams scegliendo la scheda **attività utente** . <br/>![Microsoft 365 Reports-attività utente di Microsoft teams.](../../media/1011877f-3cf0-4417-9447-91d0b2312aab.png)
 
 Selezionare **Scegli colonne** per aggiungere o rimuovere colonne dal report.  <br/> ![Teams user activity report - choose columns](../../media/a1513028-cf09-4186-93a6-8a203cd22475.png)
 
-È inoltre possibile esportare i dati del report in un file CSV di Excel selezionando il collegamento **Esporta** . Vengono esportati i dati di tutti gli utenti, che possono poi essere ordinati e filtrati per ulteriore analisi. Se gli utenti sono meno di 2000, è possibile ordinarli e filtrarli direttamente nella tabella del report. Se invece gli utenti sono più di 2000, per ordinarli e filtrarli occorre esportare i dati. Il formato esportato per il tempo **audio**, **video** e tempo di **condivisione dello schermo** segue il formato di data ISO8601.
+È inoltre possibile esportare i dati del report in un file CSV di Excel selezionando il collegamento **Esporta** . Vengono esportati i dati di tutti gli utenti, che possono poi essere ordinati e filtrati per ulteriore analisi. Se gli utenti sono meno di 2000, è possibile ordinarli e filtrarli direttamente nella tabella del report. Se invece gli utenti sono più di 2000, per ordinarli e filtrarli occorre esportare i dati. Il formato esportato per il tempo **audio**, **video** e tempo di **condivisione dello schermo** segue il formato di durata ISO8601.
 
 |Elemento|Descrizione|
 |:-----|:-----|

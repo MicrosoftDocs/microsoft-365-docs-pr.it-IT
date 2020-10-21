@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: A partire dal 14 settembre 2019, le banche nei 31 paesi dello spazio economico europeo sono tenute a verificare l'identità della persona che effettua un acquisto online prima che il pagamento possa essere elaborato.
 keywords: direttiva sui servizi di pagamento 2, autenticazione dei clienti complessa, autenticazione a più fattori
-ms.openlocfilehash: 571664736ac4c6e825398a076597bf4b69ec31a8
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: fc8784949cdacea10957660c99795b4ade0f9f7a
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44402215"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48638424"
 ---
 # <a name="payment-services-directive-2-and-strong-customer-authentication-for-commercial-customers"></a>Direttiva sui servizi di pagamento 2 e autenticazione del cliente avanzata per clienti commerciali
 

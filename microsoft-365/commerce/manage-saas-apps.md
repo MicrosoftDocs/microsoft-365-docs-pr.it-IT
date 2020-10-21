@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -14,12 +14,12 @@ ms.collection:
 ms.custom: AdminSurgePortfolio
 search.appverid: MET150
 description: Informazioni su come attivare e gestire app di terze parti nell'interfaccia di amministrazione di Microsoft 365.
-ms.openlocfilehash: c8d2764dfa7795707712cbd9ce212f78c4d43d45
-ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
+ms.openlocfilehash: c1565f0edb2f78302c0186aa3bd89d1ff5a51e5c
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45429991"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48638172"
 ---
 # <a name="manage-third-party-app-subscriptions-for-your-organization"></a>Gestire le sottoscrizioni delle app di terze parti per l'organizzazione
 
@@ -105,7 +105,7 @@ Gli amministratori possono modificare il numero di licenze possedute dalla propr
 2. Individuare e selezionare l'app che si desidera gestire.
 3. Selezionare **Cambia quantità di licenza**.
 
-## <a name="manage-payment-methods"></a>Gestire i metodi di pagamento
+## <a name="manage-payment-methods"></a>Gestire metodi di pagamento
 
 Le app software-come-a-Service dispongono ognuna di un profilo di fatturazione assegnato. I profili di fatturazione consentono di personalizzare i prodotti inclusi nella fattura e la modalità di pagamento delle fatture. Sono inclusi i seguenti:
 

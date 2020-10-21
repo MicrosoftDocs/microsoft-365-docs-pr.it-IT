@@ -2,7 +2,7 @@
 title: Rapporti Microsoft 365 nell'interfaccia di amministrazione-utenti attivi
 ms.author: pebaum
 author: pebaum
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: overview
 ms.service: o365-administration
@@ -19,12 +19,12 @@ search.appverid:
 - GEA150
 ms.assetid: fc1cf1d0-cd84-43fd-adb7-a4c4dfa8112d
 description: Informazioni su come ottenere un report degli utenti attivi utilizzando il Dashboard Microsoft 365 Reports nell'interfaccia di amministrazione di Microsoft 365 e scoprire quante licenze di prodotto vengono utilizzate.
-ms.openlocfilehash: 7f32059f01163a2a499f1befb9f4e3c519973549
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 162e818e96f6301cf0ec31580950be1ae19a0f35
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44387898"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48636996"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---active-users"></a>Rapporti Microsoft 365 nell'interfaccia di amministrazione-utenti attivi
 

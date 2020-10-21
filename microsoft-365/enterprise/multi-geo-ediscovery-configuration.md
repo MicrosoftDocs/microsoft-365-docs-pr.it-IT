@@ -13,16 +13,18 @@ ms.custom: seo-marvel-apr2020
 localization_priority: Normal
 ms.collection: Strat_SP_gtc
 description: Informazioni su come utilizzare il parametro Region per configurare eDiscovery per l'utilizzo nelle posizioni satellite in Microsoft 365 multi-Geo.
-ms.openlocfilehash: 216012791473776395d27821293e8fc565568c2c
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: d1d66a9e7953b540e318c8364bdcb8d72654b482
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47547951"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48636806"
 ---
 # <a name="microsoft-365-multi-geo-ediscovery-configuration"></a>Configurazione di eDiscovery per Microsoft 365 Multi-Geo
 
-Per impostazione predefinita, un manager o amministratore di eDiscovery di un tenant multi-geo potrà eseguire eDiscovery solo nella posizione centrale di tale tenant. Per supportare la possibilità di eseguire eDiscovery per le posizioni satelliti, è disponibile un nuovo parametro filtro di sicurezza di conformità denominato "Area" tramite PowerShell.
+Le [funzionalità avanzate di eDiscovery](https://docs.microsoft.com/microsoft-365/compliance/overview-ediscovery-20) consentono a un amministratore eDiscovery multi-geo di eseguire ricerche in tutti i GEOS senza dover utilizzare un filtro di sicurezza "Region". I dati vengono esportati nell'istanza di Azure del percorso centrale del tenant multi-Geo. 
+
+Senza funzionalità avanzate di eDiscovery, un gestore di eDiscovery o un amministratore di un tenant multi-Geo sarà in grado di condurre eDiscovery solo nella posizione centrale del tenant. Per supportare la possibilità di eseguire eDiscovery per le posizioni satellitari, è disponibile un nuovo parametro del filtro di sicurezza di conformità denominato "Region" tramite PowerShell. Questo parametro può essere utilizzato dai tenant la cui posizione centrale è in Nord America, Europa o Asia Pacifico. Advanced eDiscovery è consigliato per i tenant la cui posizione centrale non è in Nord America, Europa o Asia Pacific e che devono eseguire eDiscovery nelle posizioni geografiche satellitari. 
 
 L'amministratore globale di Microsoft 365 deve assegnare le autorizzazioni di manager di eDiscovery per consentire ad altri di eseguire eDiscovery e assegnare un parametro "Area" nel filtro di sicurezza e conformità applicabile per specificare l'area per l'esecuzione di eDiscovery come posizione satellite, in caso contrario nessuna istanza di eDiscovery verrà eseguita per la posizione geografica satellite.
 

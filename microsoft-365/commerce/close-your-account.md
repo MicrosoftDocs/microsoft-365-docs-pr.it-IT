@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -17,12 +17,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: Informazioni su come chiudere l'account con Microsoft.
-ms.openlocfilehash: a92b9f2053d9acf4e8233bee7a42047f51288943
-ms.sourcegitcommit: ab10c042e5e9c6a7b2afef930ab0d247a6aa275d
+ms.openlocfilehash: 9545c43ee27fb000149776527030b04b5e807a5c
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44898922"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48638376"
 ---
 # <a name="close-your-account"></a>Chiudere il proprio account
 
@@ -49,7 +49,7 @@ Se nell'organizzazione viene utilizzato Active Directory che esegue la sincroniz
 
 ## <a name="step-2-cancel-all-active-subscriptions"></a>Passaggio 2: annullare tutte le sottoscrizioni attive
 
-1. Nell'interfaccia di amministrazione, andare alla pagina **fatturazione**dei  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">prodotti</a> .
+1. Nell'interfaccia di amministrazione, passare alla pagina **Fatturazione** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">I tuoi prodotti</a>.
 
 2. Se l'elenco abbonamenti è in visualizzazione **tabella** , fare clic su **schede**sulla destra.
 
@@ -61,7 +61,7 @@ Se nell'organizzazione viene utilizzato Active Directory che esegue la sincroniz
 
 ## <a name="step-3-delete-all-disabled-subscriptions"></a>Passaggio 3: eliminare tutte le sottoscrizioni disabilitate
 
-1. Nell'interfaccia di amministrazione, andare alla pagina **fatturazione**dei  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">prodotti</a> .
+1. Nell'interfaccia di amministrazione, passare alla pagina **Fatturazione** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">I tuoi prodotti</a>.
 
 2. Se l'elenco abbonamenti è in visualizzazione **tabella** , fare clic su **schede**sulla destra.
 

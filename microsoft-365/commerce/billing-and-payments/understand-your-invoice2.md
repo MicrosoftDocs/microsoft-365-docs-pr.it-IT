@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -25,12 +25,12 @@ search.appverid:
 - BEA160
 ms.assetid: 0724b428-fb59-4962-8c37-6674166d7507
 description: Informazioni su come interpretare gli addebiti, la fatturazione e i dati di pagamento sulla bolletta o fattura di Microsoft 365 for business e su come modificare il numero dell'ordine di acquisto.
-ms.openlocfilehash: a46f108766ccfec4f7f6abaa2d48d38137311707
-ms.sourcegitcommit: 7f765670cb6970fdf7ddbad464ed3f8fe704bfaf
+ms.openlocfilehash: 3d71bab82be3fd9e4c633885dccaf357ccabb551
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "44909265"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48638400"
 ---
 # <a name="understand-your-bill-or-invoice-for-microsoft-365-for-business"></a>Comprendere la fattura o la fattura per Microsoft 365 for business
 

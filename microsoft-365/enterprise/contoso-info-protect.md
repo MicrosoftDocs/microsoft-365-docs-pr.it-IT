@@ -15,72 +15,72 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Comprendere in che modo Contoso utilizza le funzionalità di protezione delle informazioni in Microsoft 365 per l'organizzazione per proteggere le proprie risorse digitali nel cloud.
-ms.openlocfilehash: 1966fdec3de246ca54fd99ab018485b9ee817281
-ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
+ms.openlocfilehash: 51740db9a0bb2e770e959fe8d9dcde15c042f5b8
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48399242"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48637236"
 ---
 # <a name="information-protection-for-the-contoso-corporation"></a>Protezione delle informazioni per Contoso Corporation
 
-La protezione e la sicurezza delle informazioni sono fattori importanti per Contoso. Ad esempio, in caso di perdita o distruzione della proprietà intellettuale che descrive i progetti di prodotti e le tecniche di produzione brevettate, Contoso subirebbe uno svantaggio in termini di competitività.
+Contoso fa sul serio la sicurezza delle informazioni. La perdita o la distruzione della proprietà intellettuale che descrive i modelli di prodotto e le tecniche di produzione proprietarie li metterebbe in uno svantaggio competitivo.
 
-Prima di spostare le risorse digitali sensibili e più importanti nel cloud, si sono assicurati che i requisiti di protezione e classificazione delle informazioni locali siano stati supportati e implementati nei servizi basati su cloud di Microsoft 365 per Enterprise.
+Prima di spostare le proprie risorse digitali sensibili nel cloud, Contoso ha verificato che i requisiti di protezione e classificazione delle informazioni locali fossero supportati dai servizi basati su cloud di Microsoft 365 per Enterprise.
 
-## <a name="contosos-data-security-classification"></a>Classificazione della sicurezza dei dati di Contoso
+## <a name="contoso-data-security-classification"></a>Classificazione della sicurezza dei dati contoso
 
-Contoso ha eseguito un'analisi dei propri dati e ha determinato i seguenti livelli.
+Contoso ha eseguito un'analisi dei dati e ha determinato i livelli di classificazione seguenti.
 
 | Livello 1: base | Livello 2: dati sensibili | Livello 3: dati altamente regolamentati |
 |:-------|:-----|:-----|
-| I dati vengono crittografati e sono disponibili solo per gli utenti autenticati. <BR> <BR> Fornito per tutti i dati archiviati in locale e in archiviazione e carichi di lavoro basati sul cloud. I dati vengono crittografati mentre risiede nel servizio e in transito tra il servizio e i dispositivi client. <BR><BR> Esempi di dati di livello 1 sono le normali comunicazioni aziendali (posta elettronica) e i file dei dipendenti di amministrazione, vendita e supporto. | Livello 1 più autenticazione avanzata e protezione da perdita dei dati. <BR> <BR> L'autenticazione avanzata include Azure Multi-Factor Authentication (MFA) con convalida SMS. La prevenzione della perdita dei dati assicura che informazioni importanti o riservate non vengano trasmesse all'esterno del cloud Microsoft. <BR><BR> Esempi di dati di livello 2 sono le informazioni legali e finanziarie e i dati di ricerca e sviluppo per i nuovi prodotti. | Livello 2 più i livelli più elevati di crittografia, autenticazione e controllo. <BR> <BR>  I livelli di crittografia più elevati per i dati statici e nel cloud, conformi alle norme internazionali, combinati con MFA con smart card e il controllo granulare, nonché avvisi. <BR> <BR> Esempi di dati di livello 3 sono i dati identificabili come personali di clienti e partner, le specifiche tecniche dei prodotti e le tecniche di produzione proprietarie.  |
+| I dati vengono crittografati e sono disponibili solo per gli utenti autenticati.<BR> <BR> Fornito per tutti i dati archiviati in locale e in archiviazione e carichi di lavoro basati sul cloud. I dati vengono crittografati mentre risiede nel servizio e in transito tra il servizio e i dispositivi client. <BR><BR>Esempi di dati di livello 1 sono le normali comunicazioni aziendali (posta elettronica) e i file dei dipendenti di amministrazione, vendita e supporto. | Livello 1 più autenticazione avanzata e protezione da perdita dei dati.<BR> <BR> L'autenticazione avanzata include Azure Multi-Factor Authentication (MFA) con convalida SMS. La prevenzione della perdita di dati garantisce che le informazioni sensibili o critiche non viaggino all'esterno del cloud Microsoft.<BR><BR>Esempi di dati di livello 2 sono le informazioni legali e finanziarie e i dati di ricerca e sviluppo per i nuovi prodotti. | Livello 2 più i livelli più elevati di crittografia, autenticazione e controllo.<BR><BR>I livelli di crittografia più elevati per i dati statici e nel cloud, conformi alle norme internazionali, combinati con MFA con smart card e il controllo granulare, nonché avvisi.<BR> <BR>Esempi di dati di livello 3 sono le informazioni personali di clienti e partner, le specifiche ingegneristiche dei prodotti e le tecniche di produzione proprietarie.  |
 ||||
 
-## <a name="contosos-information-policies"></a>Criteri delle informazioni di Contoso
-Nella tabella seguente sono elencati i criteri delle informazioni per Contoso.
+## <a name="contoso-information-policies"></a>Criteri delle informazioni di contoso
+Nella tabella seguente sono elencati i criteri delle informazioni di contoso.
 
 
 | Valore | Access | Conservazione dei dati | Protezione delle informazioni |
 |:-------|:-----|:-----|:-----|
-| Valore aziendale basso (Livello 1: Base) | Consentire l'accesso a tutti  | 6 mesi | Usare la crittografia. |
-| Valore aziendale medio (Livello 2: Dati sensibili) | Consentire l'accesso a dipendenti, collaboratori e partner di Contoso <BR> <BR> Usare MFA, Transport Layer Security (TLS) e Mobile Application Management (MAM). | 2 anni  | Usare i valori hash per l'integrità dei dati.  |
+| Valore aziendale basso (Livello 1: Base) | Consenti accesso a tutti.  | 6 mesi | Usare la crittografia. |
+| Valore aziendale medio (Livello 2: Dati sensibili) | Consentire l'accesso ai dipendenti, ai subappaltatori e ai partner di contoso. <BR><BR> Usare MFA, Transport Layer Security (TLS) e Mobile Application Management (MAM). | 2 anni  | Usare i valori hash per l'integrità dei dati.  |
 | Valore aziendale elevato (Livello 3: Dati altamente regolamentati) | Consentire l'accesso ai dirigenti e responsabili di progettazione e produzione. <BR> <BR> Rights Management System (RMS) solo con dispositivi di rete gestiti.  | 7 anni  | Usare le firme digitali per il non ripudio.  |
 |||||
 
-## <a name="contosos-path-to-information-protection-with-microsoft-365-for-enterprise"></a>Percorso di Contoso per la protezione delle informazioni con Microsoft 365 per Enterprise
+## <a name="the-contoso-path-to-information-protection-with-microsoft-365-for-enterprise"></a>Il percorso di Contoso per la protezione delle informazioni con Microsoft 365 per Enterprise
 
-Contoso ha utilizzato i passaggi seguenti per preparare Microsoft 365 per Enterprise ai propri requisiti di protezione delle informazioni:
+Contoso ha seguito questi passaggi per preparare Microsoft 365 per Enterprise ai propri requisiti di protezione delle informazioni:
 
-1. Ha identificato quali informazioni proteggere
+1. Identificare le informazioni da proteggere
 
-   Contoso ha eseguito un'analisi approfondita delle proprie risorse digitali esistenti situate su siti di SharePoint locali e condivisioni di file e ne ha eseguito una classificazione.
+   Contoso ha eseguito una revisione estensiva delle risorse digitali esistenti presenti nei siti e nelle condivisioni di file di SharePoint locali e ha classificato ogni risorsa.
 
-2. Ha determinato i criteri di accesso, conservazione e protezione dei dati per i livelli di dati
+2. Determinare i criteri di accesso, conservazione e protezione dei dati per i livelli di dati
 
    In base ai livelli di dati, Contoso ha determinato requisiti dettagliati per i criteri, che sono stati utilizzati per proteggere le risorse digitali esistenti mentre venivano spostate nel cloud.
 
-3. Ha creato etichette di riservatezza e le relative impostazioni per i diversi livelli di informazioni
+3. Creare etichette di riservatezza e relative impostazioni per i diversi livelli di informazioni
 
    Contoso ha creato etichette di riservatezza per i livelli di dati con l'etichetta per dati altamente regolamentati, tra cui crittografia, autorizzazioni e filigrane.
 
-4.  Ha spostato i dati dai siti di SharePoint locali e le condivisioni di file ai nuovi siti di SharePoint
+4.  Spostare i dati dai siti di SharePoint locali e dalle condivisioni di file ai nuovi siti di SharePoint
 
     I file di cui è stata eseguita la migrazione ai nuovi siti di SharePoint hanno ereditato le etichette di conservazione predefinite assegnate al sito.
 
-5.  Ha istruito i dipendenti su come usare le etichette di riservatezza per i nuovi documenti, su come interagire con l'infrastruttura IT di Contoso durante la creazione di nuovi siti di SharePoint e su come archiviare sempre le risorse digitali nei siti di SharePoint
+5.  Come usare le etichette di riservatezza per i nuovi documenti, come interagire con Contoso durante la creazione di nuovi siti di SharePoint e per archiviare sempre risorse digitali in siti di SharePoint
 
-    Considerata la parte più difficile della transizione della protezione delle informazioni per il cloud, i responsabili e l'infrastruttura IT di Contoso hanno provveduto a cambiare le abitudini di archiviazione delle informazioni dei dipendenti dell'organizzazione inducendoli a etichettare e archiviare sempre le proprie risorse digitali nel cloud, a evitare di usare condivisioni di file locali e a non usare mai servizi di archiviazione cloud di terze parti o dispositivi USB.
+    Modifica delle informazioni sui lavoratori non confacenti-le abitudini di archiviazione spesso sono considerate la parte più difficile della transizione di protezione delle informazioni per il cloud. Contoso IT and Management needed to get Employees to always Label and Store le loro risorse digitali nel cloud, astenersi dall'usare condivisioni di file locali e non usare servizi di archiviazione cloud di terze parti o unità USB.
 
 ## <a name="conditional-access-policies-for-information-protection"></a>Criteri di accesso condizionale per la protezione delle informazioni
 
-In combinazione con la propria infrastruttura di gestione delle identità e dei dispositivi mobili e nell'ambito dell'implementazione di Exchange Online e SharePoint, Contoso ha configurato il set seguente di criteri di accesso condizionale e li ha applicati ai gruppi appropriati:
+Come parte dell'implementazione di Exchange Online e SharePoint, Contoso ha configurato il seguente set di criteri di accesso condizionale e li ha applicati ai gruppi adatti:
 
 - [Criteri di accesso alle applicazioni gestite e non gestite sui dispositivi](../security/office-365-security/identity-access-policies.md)
 - [Criteri di accesso di Exchange Online](../security/office-365-security/secure-email-recommended-policies.md)
 - [Criteri di accesso di SharePoint](../security/office-365-security/sharepoint-file-access-policies.md)
 
-Ecco il set di criteri di Contoso risultante per la protezione delle informazioni.
+Ecco il set risultante di criteri contoso per la protezione delle informazioni.
 
 ![Criteri di accesso condizionale per dispositivi, Exchange Online e SharePoint](../media/contoso-info-protect/contoso-info-protect-fig1.png)
 
@@ -90,13 +90,13 @@ Ecco il set di criteri di Contoso risultante per la protezione delle informazion
 
 Questi criteri assicurano che:
 
-- I criteri di protezione delle app definiscono le app consentite e le azioni che possono intraprendere con i dati dell'organizzazione.
+- Le app consentite e le azioni che possono intraprendere con i dati dell'organizzazione sono definite dai criteri di protezione delle app.
 - I computer e i dispositivi mobili siano compatibili.
 - Exchange Online utilizza la crittografia dei messaggi di Office 365 per Exchange Online.
-- SharePoint usi le restrizioni imposte dall'app.
+- SharePoint utilizza restrizioni applicate dall'applicazione.
 - SharePoint usi i criteri di controllo di accesso per l'accesso solo dal browser e per bloccare l'accesso ai dispositivi non gestiti.
 
-## <a name="mapping-microsoft-365-for-enterprise-features-to-contosos-data-levels"></a>Mapping di Microsoft 365 per le caratteristiche dell'organizzazione ai livelli di dati di contoso
+## <a name="mapping-microsoft-365-for-enterprise-features-to-contoso-data-levels"></a>Mapping di Microsoft 365 per le caratteristiche Enterprise ai livelli di dati di contoso
 
 Nella tabella seguente vengono mappati i livelli di dati di Contoso alle funzionalità di protezione delle informazioni in Microsoft 365 per Enterprise.
 
@@ -104,16 +104,16 @@ Nella tabella seguente vengono mappati i livelli di dati di Contoso alle funzion
 |:-------|:-----|:-----|:-----|
 | Livello 1: base  | Criteri di accesso condizionale di SharePoint ed Exchange Online <BR> Autorizzazioni sui siti di SharePoint | Etichette di riservatezza <BR> BitLocker <BR> Windows Information Protection | Criteri di accesso condizionale dei dispositivi e criteri di Mobile Application Management |
 | Livello 2: dati sensibili | Livello 1 plus: <BR> <BR> Etichette di riservatezza <BR> Etichette di conservazione di Microsoft 365 nei siti di SharePoint <BR> Prevenzione della perdita dei dati per SharePoint ed Exchange Online <BR> Siti di SharePoint isolati  | Livello 1 plus: <BR> <BR> Etichette riservatezza su risorse digitali  | Livello 1 |
-| Livello 3: dati altamente regolamentati | Livello 2 plus: <BR><BR> Crittografia Bring Your Own Key (BYOK) e protezione per informazioni su segreti commerciali <BR> Azure Key Vault per applicazioni line-of-business che interagiscono con i servizi di Microsoft 365 | Livello 2 | Livello 1 |
+| Livello 3: dati altamente regolamentati | Livello 2 plus: <BR><BR> Portare la propria chiave (BYOK) la crittografia e la protezione delle informazioni segrete del Trade <BR> Vault Key di Azure per le applicazioni line-of-business che interagiscono con i servizi Microsoft 365 | Livello 2 | Livello 1 |
 |||||
 
-Ecco la configurazione di Contoso risultante per la protezione delle informazioni.
+Ecco la risultante configurazione della protezione delle informazioni di contoso.
 
 ![Configurazione di Contoso risultante per la protezione delle informazioni](../media/contoso-info-protect/contoso-info-protect-fig2.png)
 
 ## <a name="next-step"></a>Passaggio successivo
 
-[Vedere](contoso-security-summary.md) in che modo Contoso ha utilizzato le funzionalità di sicurezza in Microsoft 365 per Enterprise per la gestione delle identità e degli accessi, la protezione dalle minacce, la protezione delle informazioni e la gestione della sicurezza.
+[Vedere](contoso-security-summary.md) in che modo Contoso utilizza le funzionalità di sicurezza in Microsoft 365 per Enterprise per la gestione delle identità e degli accessi, la protezione dalle minacce, la protezione delle informazioni e la gestione della sicurezza.
 
 ## <a name="see-also"></a>Vedere anche
 
@@ -122,5 +122,3 @@ Ecco la configurazione di Contoso risultante per la protezione delle informazion
 [Panoramica di Microsoft 365 per le aziende](microsoft-365-overview.md)
 
 [Guide dei laboratori di testing](m365-enterprise-test-lab-guides.md)
-
-

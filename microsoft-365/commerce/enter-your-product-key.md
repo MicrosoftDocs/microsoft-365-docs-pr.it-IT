@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -25,12 +25,12 @@ description: Informazioni su come riscattare un codice Product Key Microsoft 365
 ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
-ms.openlocfilehash: 30c10efdadae1828438ea9cba01cda93adaa4f0f
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 9dcf38937e6140f1b0b20688d1dac0a9f3962cbe
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44818580"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48638364"
 ---
 # <a name="enter-your-product-key-for-microsoft-365-business-standard"></a>Immettere il codice "Product Key" per Microsoft 365 business standard
 
