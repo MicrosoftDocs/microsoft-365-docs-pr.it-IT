@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: e2fba7a5cf83838c440cdea8436b5bbdd360885b
-ms.sourcegitcommit: 61ef32f802a1fb6d1e3a3aa005764ead32a7951e
+ms.openlocfilehash: 7f1d3e13aebe7c7924732922bbbfc7417622d8c5
+ms.sourcegitcommit: e17fd18b01d70e6428263c20cbce4b92e2a97765
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48318175"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "48626189"
 ---
 # <a name="communication-compliance-feature-reference"></a>Informazioni di riferimento sulle caratteristiche di conformità comunicazione
 
@@ -125,13 +125,9 @@ Per cercare dati di chat di Teams nelle cassette postali basate sul cloud degli 
 
     - **Per le comunicazioni di chat di Skype for business online**: assegnare singoli utenti o assegnare un [gruppo di distribuzione](https://support.office.com/article/Distribution-groups-E8BA58A8-FAB2-4AAF-8AA1-2A304052D2DE) ai criteri di conformità della comunicazione. Questa impostazione è per le relazioni tra utenti/chat uno-a-uno o uno-a-molti.
 
-- **Origini**di terze parti: è possibile eseguire l'analisi delle comunicazioni da origini di terze parti per i dati importati nelle cassette postali nell'organizzazione Microsoft 365. I connettori supportano le risorse di terze parti seguenti:
+- **Origini**di terze parti: è possibile eseguire l'analisi delle comunicazioni per i dati importati nelle cassette postali dell'organizzazione Microsoft 365 da origini di terze parti come [Instant Bloomberg](archive-instant-bloomberg-data.md), [Slack](archive-slack-data.md), [Zoom](archive-zoommeetings-data.md), SMS e molte altre. Per un elenco completo dei connettori supportati nella conformità alla comunicazione, vedere [archiviare dati di terze parti](archiving-third-party-data.md).
 
-    - [Instant Bloomberg](archive-instant-bloomberg-data.md)
-    - [Bloomberg Message](archive-bloomberg-message-data.md)
-    - [ICE Chat](archive-icechat-data.md)
-
-Prima di poter assegnare il connettore a un criterio di conformità della comunicazione, è necessario configurare un connettore di terze parti per l'organizzazione Microsoft 365. La sezione **origini di terze parti** della procedura guidata per la conformità dei criteri di comunicazione Visualizza solo i connettori di terze parti attualmente configurati.
+    Prima di poter assegnare il connettore a un criterio di conformità della comunicazione, è necessario configurare un connettore di terze parti per l'organizzazione Microsoft 365. La sezione **origini di terze parti** della procedura guidata per la conformità dei criteri di comunicazione Visualizza solo i connettori di terze parti attualmente configurati.
 
 ## <a name="transitioning-from-supervision-in-office-365"></a>Transizione dalla vigilanza in Office 365
 

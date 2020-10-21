@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Utilizzare lo strumento di comunicazione in un caso avanzato di eDiscovery per inviare, raccogliere e tenere presenti le notifiche di archiviazione legale.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 0bcbdef1c1393ff3e7f3baf30279909ed3a663f5
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 730b60c4d57f8fecb0e66f460942e9e890732c2c
+ms.sourcegitcommit: e17fd18b01d70e6428263c20cbce4b92e2a97765
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035788"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "48626179"
 ---
 # <a name="create-a-legal-hold-notice"></a>Creare un avviso per la conservazione legale
 
@@ -46,7 +46,11 @@ Il primo passaggio consiste nel specificare i dettagli adeguati per le notifiche
 
     - **Nome**: questo è il nome della comunicazione.
 
-    - **Responsabile del rilascio**: nell'elenco a discesa viene visualizzato un elenco di membri del caso. Ogni avviso inviato ai depositari verrà inviato per conto del responsabile del rilascio specificato.
+    - **Responsabile del rilascio**: nell'elenco a discesa viene visualizzato un elenco di membri del caso. Per ulteriori informazioni su come aggiungere nuovi membri a un caso, vedere [creare un caso avanzato di eDiscovery](get-started-with-advanced-ediscovery.md#step-4-create-an-advanced-ediscovery-case). Ogni avviso inviato ai depositari verrà inviato per conto del responsabile del rilascio specificato.
+
+> [!NOTE]
+> Il responsabile del rilascio deve disporre di una **cassetta postale attiva** da visualizzare nell'elenco a discesa dell'ufficiale emittente
+
 
 4. Fare clic su **Avanti**.
 
@@ -89,7 +93,7 @@ Per creare una notifica di rilascio:
 
 5. Fare clic su **Salva**.
 
-### <a name="re-issuance-notification"></a>Notifica di riemissione
+### <a name="re-issuance-notification"></a>Notifica Re-Issuance
 
 Quando il caso progredisce, potrebbe essere necessario che i depositari possano conservare dati aggiuntivi o meno rispetto a quelli precedentemente istruiti. Dopo aver aggiornato il contenuto del portale, viene inviata la notifica di riemissione e vengono avvisati i depositari delle modifiche apportate ai propri obblighi di conservazione.
 
