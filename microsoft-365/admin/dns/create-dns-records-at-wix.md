@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: pebaum
 author: pebaum
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7173c635-58b3-400f-95e0-97abe915565e
 description: Informazioni su come verificare il dominio e configurare i record DNS per la posta elettronica, Skype for business online e altri servizi in WiX per Microsoft.
-ms.openlocfilehash: fcc0f8e8187e22dde68149e0f2a80073312bff7f
-ms.sourcegitcommit: 167c05cc6a776f62f0a0c2de5f3ffeb68c4a27ac
+ms.openlocfilehash: ee236a9178092bb8fd14a9615c2ac5911b1ecc87
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46814445"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48645660"
 ---
 # <a name="create-dns-records-at-wix-for-microsoft"></a>Creare record DNS in WiX per Microsoft
 
@@ -180,8 +180,8 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
     
    | Servizio | Protocollo | Nome | Peso | Porta | Destinazione | Priority | TTL |
    |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-   |sip  |tls  |Popolamento automatico |1  |443   |sipdir.online.lync.com |100 |1 Hour |
-   |sipfed|tcp |Popolamento automatico|1 |5061 |sipfed.online.lync.com|100 | 1 Hour |
+   |sip  |tls  |Popolamento automatico |1   |443   |sipdir.online.lync.com |100 |1 Hour |
+   |sipfed|tcp |Popolamento automatico|1  |5061 |sipfed.online.lync.com|100 | 1 Hour |
    
 5. Selezionare il pulsante **Salva DNS** nella parte superiore dell'editor DNS. 
     

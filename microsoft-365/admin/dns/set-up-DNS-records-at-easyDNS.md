@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: pebaum
 author: pebaum
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 446babfe-2e08-4cc2-bbfb-c05b854933ac
 description: Informazioni su come verificare il dominio e configurare i record DNS per la posta elettronica, Skype for business online e altri servizi in easyDNS per Microsoft.
-ms.openlocfilehash: 24f477d240af936975141c53d382e114a24c0ac5
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 4909a02ec56fc9720a2636e822da0339e89bccf8
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400233"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48645552"
 ---
 # <a name="create-dns-records-at-easydns-for-microsoft"></a>Creare record DNS in easyDNS per Microsoft
 
@@ -45,7 +45,7 @@ Nota: i record SRV non sono attualmente disponibili in tutti i pacchetti di serv
     
 4. Inserire nei campi di testo i record seguenti:
     
-    |**Host**|**Text**|
+    |**Host**|**Testo**|
     |:-----|:-----|
     |@  <br/> |MS = msXXXXXXXX (utilizzare il valore specificato nella pagina Domains dell'interfaccia di amministrazione)  <br/> |
    
@@ -118,7 +118,7 @@ Nota: i record SRV non sono attualmente disponibili in tutti i pacchetti di serv
     
 4. Inserire nei campi di testo i record seguenti:
     
-    |**Host**|**Text**|
+    |**Host**|**Testo**|
     |:-----|:-----|
     |@  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/> |
    

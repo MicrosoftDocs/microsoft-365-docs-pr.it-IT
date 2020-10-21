@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: pebaum
 author: pebaum
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 55bd8c38-3316-48ae-a368-4959b2c1684e
 description: Informazioni su come verificare il dominio e configurare i record DNS per la posta elettronica, Skype for business online e altri servizi in Register.com per Microsoft.
-ms.openlocfilehash: 7a11fa248f2602eb02fe1242234d26584bd33fd2
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+ms.openlocfilehash: 96ec44875d5bc86f46e4945d4021deb0ca427fed
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44780326"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48645804"
 ---
 # <a name="create-dns-records-at-registercom-for-microsoft"></a>Creare record DNS in Register.com per Microsoft
 
@@ -124,7 +124,7 @@ Seguire i passaggi indicati sotto oppure [guardare il video (iniziare da 3:32)](
     
     |****Host Name****|****Priority****|****Mail Server****|
     |:-----|:-----|:-----|
-    |@  <br/> |High  <br/> Per altre informazioni sulla priorità, vedere [Informazioni sulla priorità MX](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq). <br/> | *\<domain-key\>*. mail.protection.outlook.com  <br/>  <br/>**Nota:** Ottenere il vostro \<*domain-key*\> dal vostro account Microsoft. <br> [Come trovarlo](../get-help-with-domains/information-for-dns-records.md)          |
+    |@  <br/> |High  <br/> Per altre informazioni sulla priorità, vedere [Che cos'è la priorità MX](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq). <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/>  <br/>**Nota:** ottenere il valore \<*domain-key*\> dal proprio account Microsoft. <br> [Come trovarlo](../get-help-with-domains/information-for-dns-records.md)          |
    
     ![Copiare e incollare il valore dalla tabella](../../media/a1a15a14-c3dc-45dc-adcd-90fdb3f7455d.png)
   

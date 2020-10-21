@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: pebaum
 author: pebaum
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 004030b4-10ad-4026-96e7-011b6afc7e73
 description: Informazioni su come verificare il dominio e configurare i record DNS per la posta elettronica, Skype for business online e altri servizi in Register365 per Microsoft.
-ms.openlocfilehash: e580779ce674375564c1b3ab6123ef1b19f50be0
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: a4c66a4c16960332150a51779207defb00df3044
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400317"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48645768"
 ---
 # <a name="create-dns-records-at-register365-for-microsoft"></a>Creare record DNS in Register365 per Microsoft
 
@@ -65,17 +65,17 @@ Prima di usare il proprio dominio con Microsoft, è necessario dimostrare di ess
   
 2. Nella pagina **Dashboard** trovare e selezionare il dominio da aggiornare, quindi scegliere **DNS Settings** nell'elenco a discesa. 
     
-    (You may have to scroll down.)
+    Può essere necessario scorrere la pagina.
     
     ![Selezione delle impostazioni DNS nell'elenco](../../media/57944802-3f6b-49bb-971a-b1d20936cba3.png)
   
 3. On the **Add/Modify DNS Zone** page, in the **A, CNAME, AAAA, TXT and NS records** section, in the boxes for the new record, type or copy and paste the values from the following table. 
     
-    (Choose the **Type** value from the drop-down list.) 
+    Selezionare il valore **Type** nell'elenco a discesa. 
     
     Se è necessario aggiungere una riga, selezionare **Aggiungi record a/CNAME (+)**.
     
-    (You may have to scroll down.)
+    Può essere necessario scorrere la pagina.
     
     |**Nome host**|**Tipo**|**Risultato**|
     |:-----|:-----|:-----|
@@ -85,9 +85,9 @@ Prima di usare il proprio dominio con Microsoft, è necessario dimostrare di ess
   
 4. Selezionare **Salva**.
     
-    (You may have to scroll down.)
+    Può essere necessario scorrere la pagina.
     
-    ![Seleziona Salva](../../media/157cfb98-d5d0-48a3-8dd1-c4e759c2f8a8.png)
+    ![Seleziona Salva.](../../media/157cfb98-d5d0-48a3-8dd1-c4e759c2f8a8.png)
   
 5. Attendere alcuni minuti prima di continuare, in modo che il record appena creato venga aggiornato in Internet.
     
@@ -121,25 +121,25 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
   
 2. Nella pagina **Dashboard** trovare e selezionare il dominio da aggiornare, quindi scegliere **DNS Settings** nell'elenco a discesa. 
     
-    (You may have to scroll down.)
+    Può essere necessario scorrere la pagina.
     
     ![Selezione delle impostazioni DNS nell'elenco](../../media/57944802-3f6b-49bb-971a-b1d20936cba3.png)
   
 3. Nella pagina **Add/Modify DNS Zone** digitare oppure copiare e incollare i valori della tabella seguente nelle caselle del nuovo record nella sezione **Mail exchange records**. 
     
-    (You may have to scroll down.)
+    Può essere necessario scorrere la pagina.
     
-    |**Nome host**|**Priority**|**Risultato**|
+    |**Nome host**|**Priority**|**Result**|
     |:-----|:-----|:-----|
-    |Lasciare vuoto questo campo.  <br/> |1   <br/> Per altre informazioni sulla priorità, vedere [Informazioni sulla priorità MX](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq). <br/> | *\<domain-key\>*. mail.protection.outlook.com  <br/> **Nota:** Ottenere il vostro *\<domain-key\>* dal vostro account Microsoft.  [Come trovarlo](../get-help-with-domains/information-for-dns-records.md)     |
+    |Lasciare vuoto questo campo.  <br/> |1   <br/> Per altre informazioni sulla priorità, vedere [Che cos'è la priorità MX](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq). <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/> **Nota:** Ottenere il vostro  *\<domain-key\>*  dal vostro account Microsoft.  [Come trovarlo](../get-help-with-domains/information-for-dns-records.md)     |
    
     ![Immissione di valori nella pagina Aggiungi/modifica area DNS](../../media/2d3645a8-9cb8-435e-b895-5535b6b1fffd.png)
   
 4. Selezionare **Salva**.
     
-    (You may have to scroll down.)
+    Può essere necessario scorrere la pagina.
     
-    ![Seleziona Salva](../../media/0e565fb0-a126-4a48-8ff7-2c2d79d4af32.png)
+    ![Seleziona Salva.](../../media/0e565fb0-a126-4a48-8ff7-2c2d79d4af32.png)
   
 5. Se sono presenti altri record MX nella sezione **Mail exchange records**, eliminarli uno alla volta selezionandoli e premendo **CANC**. 
     
@@ -147,9 +147,9 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
   
 6. Selezionare **Salva**.
     
-    (You may have to scroll down.)
+    Può essere necessario scorrere la pagina.
     
-    ![Seleziona Salva](../../media/1fb69bb5-b5df-4060-adf1-eb26cfaa6c4f.png)
+    ![Seleziona Salva.](../../media/1fb69bb5-b5df-4060-adf1-eb26cfaa6c4f.png)
   
 ## <a name="add-the-six-cname-records-that-are-required-for-microsoft"></a>Aggiungere i sei record CNAME necessari per Microsoft
 <a name="BKMK_add_CNAME"> </a>
@@ -160,13 +160,13 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
   
 2. Nella pagina **Dashboard** trovare e selezionare il dominio da aggiornare, quindi scegliere **DNS Settings** nell'elenco a discesa. 
     
-    (You may have to scroll down.)
+    Può essere necessario scorrere la pagina.
     
     ![Selezione delle impostazioni DNS nell'elenco](../../media/57944802-3f6b-49bb-971a-b1d20936cba3.png)
   
 3. Nella pagina **Add/Modify DNS Zone** digitare oppure copiare e incollare i valori della tabella seguente nelle caselle dei nuovi record nella sezione **A, CNAME, AAAA, TXT and NS records**. 
     
-    (Choose the **Type** value from the drop-down list.) 
+    Selezionare il valore **Type** nell'elenco a discesa. 
     
     Se è necessario aggiungere una riga, selezionare **Aggiungi record a/CNAME (+)**.
     
@@ -174,7 +174,7 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
     
     |****Host name****|****Tipo****|****Result****|
     |:-----|:-----|:-----|
-    |autodiscover  <br/> |CNAME  <br/> |autodiscover.outlook.com  <br/> |
+    |individuazione automatica  <br/> |CNAME  <br/> |autodiscover.outlook.com  <br/> |
     |sip  <br/> |CNAME  <br/> |sipdir.online.lync.com  <br/> |
     |lyncdiscover  <br/> |CNAME  <br/> |webdir.online.lync.com  <br/> |
     |enterpriseregistration  <br/> |CNAME  <br/> |enterpriseregistration.windows.net  <br/> |
@@ -182,15 +182,15 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
    
     ![Immissione di valori nella pagina Aggiungi/modifica area DNS](../../media/3b79f0de-9cab-4c98-8fa8-c92b35241e8b.png)
   
-4. Selezionare **Salva**.
+4. Seleziona **Salva**.
     
-    ![Seleziona Salva](../../media/8ded6428-af97-4fd8-9104-477fa22a5586.png)
+    ![Seleziona Salva.](../../media/8ded6428-af97-4fd8-9104-477fa22a5586.png)
   
 ## <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a>Aggiungere un record TXT per SPF per evitare di ricevere posta indesiderata
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
-> Non può essere presente più di un record TXT per SPF per un dominio. Se il dominio ha più record SPF, si verificheranno errori nella gestione della posta elettronica, oltre a problemi di recapito e di classificazione della posta indesiderata. Se si dispone già di un record SPF per il dominio, non crearne uno nuovo per Microsoft. Al contrario, aggiungere i valori Microsoft necessari al record corrente in modo da disporre di un *singolo* record SPF che includa entrambi i set di valori. 
+> Non può essere presente più di un record TXT per SPF per un dominio. Se il dominio ha più record SPF, si verificheranno errori nella gestione della posta elettronica, oltre a problemi di recapito e di classificazione della posta indesiderata. Se si dispone già di un record SPF per il dominio, non crearne uno nuovo per Microsoft. Al contrario, aggiungere i valori Microsoft necessari al record corrente in modo da disporre di un  *singolo*  record SPF che includa entrambi i set di valori. 
   
 1. Per iniziare, passare alla propria pagina dei domini su Register365 usando [questo collegamento](https://admin.register365.com/dns/). Verrà richiesto di eseguire l'accesso.
     
@@ -198,17 +198,17 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
   
 2. Nella pagina **Dashboard** trovare e selezionare il dominio da aggiornare, quindi scegliere **DNS Settings** nell'elenco a discesa. 
     
-    (You may have to scroll down.)
+    Può essere necessario scorrere la pagina.
     
     ![Selezione delle impostazioni DNS nell'elenco](../../media/57944802-3f6b-49bb-971a-b1d20936cba3.png)
   
 3. On the **Add/Modify DNS Zone** page, in the **A, CNAME, AAAA, TXT and NS records** section, in the boxes for the new record, type or copy and paste the values from the following table. 
     
-    (Choose the **Type** value from the drop-down list.) 
+    Selezionare il valore **Type** nell'elenco a discesa. 
     
     Se è necessario aggiungere una riga, selezionare **Aggiungi record a/CNAME (+)**.
     
-    (You may have to scroll down.)
+    Può essere necessario scorrere la pagina.
     
     |**Nome host**|**Tipo**|**Risultato**|
     |:-----|:-----|:-----|
@@ -218,9 +218,9 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
   
 4. Selezionare **Salva**.
     
-    (You may have to scroll down.)
+    Può essere necessario scorrere la pagina.
     
-    ![Seleziona Salva](../../media/1d8da122-4861-4ca3-bc9b-d01f18557d4c.png)
+    ![Seleziona Salva.](../../media/1d8da122-4861-4ca3-bc9b-d01f18557d4c.png)
   
 ## <a name="add-the-two-srv-records-that-are-required-for-microsoft"></a>Aggiungere i due record SRV necessari per Microsoft
 <a name="BKMK_add_SRV"> </a>
@@ -231,7 +231,7 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
   
 2. Nella pagina **Dashboard** trovare e selezionare il dominio da aggiornare, quindi scegliere **DNS Settings** nell'elenco a discesa. 
     
-    (You may have to scroll down.)
+    Può essere necessario scorrere la pagina.
     
     ![Selezione delle impostazioni DNS nell'elenco](../../media/57944802-3f6b-49bb-971a-b1d20936cba3.png)
   
@@ -241,16 +241,16 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
     
     |**Name**|**Priorità**|**Peso**|**Porta**|**Result**|
     |:-----|:-----|:-----|:-----|:-----|
-    |_sip. _tls  <br/> |100  <br/> |1   <br/> |443  <br/> |sipdir.online.lync.com  <br/> |
-    |_sipfederationtls. _tcp  <br/> |100  <br/> |1   <br/> |5061  <br/> |sipfed.online.lync.com  <br/> |
+    |_sip._tls  <br/> |100  <br/> |1   <br/> |443  <br/> |sipdir.online.lync.com  <br/> |
+    |_sipfederationtls._tcp  <br/> |100  <br/> |1   <br/> |5061  <br/> |sipfed.online.lync.com  <br/> |
    
     ![Immissione di valori nella sezione Service Records](../../media/56bb1813-90e2-40c8-98bf-750e2dc3f8b6.png)
   
 4. Selezionare **Salva**.
     
-    (You may have to scroll down.)
+    Può essere necessario scorrere la pagina.
     
-    ![Seleziona Salva](../../media/3b80757c-01e1-492d-b2ce-f721d71f7235.png)
+    ![Seleziona Salva.](../../media/3b80757c-01e1-492d-b2ce-f721d71f7235.png)
   
 > [!NOTE]
 >  In genere, l'applicazione delle modifiche ai record DNS richiede circa 15 minuti. A volte, tuttavia, l'aggiornamento di una modifica nel sistema DNS di Internet può richiedere più tempo. In caso di problemi relativi al flusso di posta o di altro tipo dopo l'aggiunta dei record DNS, vedere [Risolvere i problemi dopo la modifica del nome di dominio o dei record DNS](../get-help-with-domains/find-and-fix-issues.md). 

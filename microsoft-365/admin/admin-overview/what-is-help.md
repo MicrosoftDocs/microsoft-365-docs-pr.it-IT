@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -21,12 +21,12 @@ search.appverid:
 - GEA150
 ROBOTS: NOINDEX
 description: Informazioni su tutti i modi in cui è possibile ottenere assistenza tramite l'interfaccia di amministrazione di Microsoft 365.
-ms.openlocfilehash: b10eb75e1a7d02c384c915ad814dddc9f3c6954f
-ms.sourcegitcommit: bd5a08785b5ec320b04b02f8776e28bce5fb448f
+ms.openlocfilehash: 23c325aa4a9a0fbf5ec8bfd16bd329540fcd4606
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "44844717"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48646512"
 ---
 <!-- The following is just placeholder text from Madhura's mail. We need to add images/examples of each -->
 

@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: pebaum
 author: pebaum
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: fbcef2d7-ebaf-40d0-ba1f-cdaeff9f50ef
 description: Informazioni su come verificare il dominio e configurare i record DNS per la posta elettronica, Skype for business online e altri servizi nelle aree DNS di Azure per Microsoft.
-ms.openlocfilehash: fcc3ea42b7414cdd5fc0c34bfae91104287d2379
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 40fadb81ebd0ae5385bbbdad727b1c579142b227
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400269"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48645672"
 ---
 # <a name="create-dns-records-for-azure-dns-zones"></a>Creare record DNS per le aree DNS di Azure
 
@@ -108,7 +108,7 @@ Prima di usare il proprio dominio con Microsoft, è necessario dimostrare di ess
     
     Scegliere i valori di **tipo** e **unità TTL** negli elenchi a discesa. 
     
-    |**Nome**|**Tipo**|**TTL**|**Unità TTL**|**Valore**|
+    |**Nome**|**Type**|**TTL**|**Unità TTL**|**Valore**|
     |:-----|:-----|:-----|:-----|:-----|
     |@  <br/> |TXT  <br/> |1   <br/> |Ore  <br/> |MS=ms *XXXXXXXX*  <br/> **Note:** questo è un esempio. Usare il valore specifico di **Indirizzo di destinazione o puntamento** indicato nella tabella.           [Come trovarlo](../get-help-with-domains/information-for-dns-records.md)          |
    
@@ -158,9 +158,9 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
     
     Scegliere i valori di **tipo** e **unità TTL** negli elenchi a discesa. 
     
-    |**Nome**|**Tipo**|**TTL**|**Unità TTL**|**Preference**|**Exchange Mail**|
+    |**Nome**|**Type**|**TTL**|**Unità TTL**|**Preference**|**Exchange Mail**|
     |:-----|:-----|:-----|:-----|:-----|:-----|
-    |@  <br/> |MX  <br/> |1   <br/> |Ore  <br/> |10    <br/> Per altre informazioni sulla priorità, vedere [Informazioni sulla priorità MX](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq). <br/> | *\<domain-key\>*. mail.protection.outlook.com  <br/> **Nota:** Ottenere il vostro *\<domain-key\>* dal vostro account Microsoft.   [Come trovarlo](../get-help-with-domains/information-for-dns-records.md)  
+    |@  <br/> |MX  <br/> |1   <br/> |Ore  <br/> |10    <br/> Per altre informazioni sulla priorità, vedere [Che cos'è la priorità MX](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq). <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/> **Nota:** Ottenere il vostro  *\<domain-key\>*  dal vostro account Microsoft.   [Come trovarlo](../get-help-with-domains/information-for-dns-records.md)  
    
     ![Azure-BP-Configure-2-1](../../media/712c23ae-9d38-4af2-94e0-0704e70744fe.png)
   
@@ -207,9 +207,9 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
     
     Scegliere i valori di **tipo** e **unità TTL** negli elenchi a discesa. 
     
-    |**Nome**|**Tipo**|**TTL**|**Unità TTL**|**Alias**|
+    |**Nome**|**Type**|**TTL**|**Unità TTL**|**Alias**|
     |:-----|:-----|:-----|:-----|:-----|
-    |autodiscover  <br/> |CNAME  <br/> |1   <br/> |Ore  <br/> |autodiscover.outlook.com  <br/> |
+    |individuazione automatica  <br/> |CNAME  <br/> |1   <br/> |Ore  <br/> |autodiscover.outlook.com  <br/> |
     |sip  <br/> |CNAME  <br/> |1   <br/> |Ore  <br/> |sipdir.online.lync.com  <br/> |
     |lyncdiscover  <br/> |CNAME  <br/> |1   <br/> |Ore  <br/> |webdir.online.lync.com  <br/> |
     
@@ -231,7 +231,7 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
 > [!IMPORTANT]
 > Se si dispone di gestione dei dispositivi mobili (MDM) per Microsoft, è necessario creare due record CNAME aggiuntivi. Follow the procedure that you used for the other four CNAME records, but supply the values from the following table. Se non si dispone di MDM, è possibile ignorare questo passaggio. 
   
-|**Nome**|**Tipo**|**TTL**|**Unità TTL**|**Alias**|
+|**Nome**|**Type**|**TTL**|**Unità TTL**|**Alias**|
 |:-----|:-----|:-----|:-----|:-----|
 |enterpriseregistration  <br/> |CNAME  <br/> |1   <br/> |Ore  <br/> |enterpriseregistration.windows.net  <br/> |
 |enterpriseenrollment  <br/> |CNAME  <br/> |1   <br/> |Ore  <br/> |enterpriseenrollment-s.manage.microsoft.com  <br/> |
@@ -240,7 +240,7 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
-> Non può essere presente più di un record TXT per SPF per un dominio. Se il dominio ha più record SPF, si verificheranno errori nella gestione della posta elettronica, oltre a problemi di recapito e di classificazione della posta indesiderata. Se si dispone già di un record SPF per il dominio, non crearne uno nuovo per Microsoft. Al contrario, aggiungere i valori Microsoft necessari al record corrente in modo da disporre di un *singolo* record SPF che includa entrambi i set di valori. 
+> Non può essere presente più di un record TXT per SPF per un dominio. Se il dominio ha più record SPF, si verificheranno errori nella gestione della posta elettronica, oltre a problemi di recapito e di classificazione della posta indesiderata. Se si dispone già di un record SPF per il dominio, non crearne uno nuovo per Microsoft. Al contrario, aggiungere i valori Microsoft necessari al record corrente in modo da disporre di un  *singolo*  record SPF che includa entrambi i set di valori. 
   
 1. Per iniziare, passare alla propria pagina dei domini su Azure usando [questo collegamento](https://portal.azure.com ). Verrà richiesto di eseguire l'accesso.
     
@@ -258,7 +258,7 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
     
     Scegliere i valori di **tipo** e **unità TTL** negli elenchi a discesa. 
     
-    |**Nome**|**Tipo**|**TTL**|**Unità TTL**|**Valore**|
+    |**Nome**|**Type**|**TTL**|**Unità TTL**|**Valore**|
     |:-----|:-----|:-----|:-----|:-----|
     |@  <br/> |TXT  <br/> |1   <br/> |Ore  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/> **Nota:** è consigliabile copiare e incollare questa voce, in modo che tutti i caratteri di spaziatura siano corretti.           
 
@@ -289,10 +289,10 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
     
     Scegliere i valori di **tipo** e **unità TTL** negli elenchi a discesa. 
     
-    |**Nome**|**Tipo**|**TTL**|**Unità TTL**|**Priorità**|**Peso**|**Porta**|**Target**|
+    |**Nome**|**Type**|**TTL**|**Unità TTL**|**Priorità**|**Peso**|**Porta**|**Target**|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-    |_sip. _tls  <br/> |SRV  <br/> |1   <br/> |Ore  <br/> |100  <br/> |1   <br/> |443  <br/> |sipdir.online.lync.com  <br/> |
-    |_sipfederationtls. _tcp  <br/> |SRV  <br/> |1   <br/> |Ore  <br/> |100  <br/> |1   <br/> |5061  <br/> |sipfed.online.lync.com  <br/> 
+    |_sip._tls  <br/> |SRV  <br/> |1   <br/> |Ore  <br/> |100  <br/> |1   <br/> |443  <br/> |sipdir.online.lync.com  <br/> |
+    |_sipfederationtls._tcp  <br/> |SRV  <br/> |1   <br/> |Ore  <br/> |100  <br/> |1   <br/> |5061  <br/> |sipfed.online.lync.com  <br/> 
 
     ![Azure-BP-Configure-5-1](../../media/a436e0b4-8bb8-4a66-9c22-4e3b2dcf54ff.png)
   

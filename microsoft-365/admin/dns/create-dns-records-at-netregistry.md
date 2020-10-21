@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: pebaum
 author: pebaum
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -22,12 +22,12 @@ search.appverid:
 - BEA160
 ms.assetid: 48e09394-2287-4b3c-9853-21eadf61277e
 description: Informazioni su come verificare il dominio e configurare i record DNS per la posta elettronica, Skype for business online e altri servizi in Netregistry per Microsoft.
-ms.openlocfilehash: c4e81e92b9f86d0a2974e6f95e397f3584c9a01e
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 016df6c61fd6934c1bc46b55c7e110d8442cf1d5
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400365"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48645972"
 ---
 # <a name="create-dns-records-at-netregistry-for-microsoft"></a>Creare record DNS in Netregistry per Microsoft
 
@@ -138,7 +138,7 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
     
     |**Nome**|**TTL (SEC)**|**Exchange (punta all'indirizzo o al valore)**|**L'host è completo?**|**Preferenza (priorità)**|
     |:-----|:-----|:-----|:-----|:-----|
-    |(lasciare vuoto)  <br/> |3600 (secondi)  <br/> | *\<domain-key\>*. mail.protection.outlook.com  <br/> **Nota:** Ottenere il vostro *\<domain-key\>* dal vostro account Microsoft.  [Come trovarlo](../get-help-with-domains/information-for-dns-records.md)      |(Seleziona la casella di controllo)  <br/> |10    <br/> For more information about priority, see What is MX priority?  <br/> |
+    |(lasciare vuoto)  <br/> |3600 (secondi)  <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/> **Nota:** Ottenere il vostro  *\<domain-key\>*  dal vostro account Microsoft.  [Come trovarlo](../get-help-with-domains/information-for-dns-records.md)      |(Seleziona la casella di controllo)  <br/> |10    <br/> For more information about priority, see What is MX priority?  <br/> |
        
     ![Netregistry_MX_values](../../media/518b3da6-4055-4e2d-b5ce-44a0fee25419.png)
   
@@ -161,15 +161,15 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
     
     ![Netregistry_selectZoneManager](../../media/58384add-0a9d-472b-a5d0-51ec8155fd41.png)
   
-4. In **Aggiungi un record di area**scegliere **CNAME record** nell'elenco, quindi selezionare **Crea nuovo record**.
+4. In  **Aggiungi un record di area**scegliere **CNAME record** nell'elenco, quindi selezionare **Crea nuovo record**.
     
     ![Netregistry_CNAME_CreateNewRecord](../../media/7b4f133f-45da-48da-93c0-62f57c786165.png)
   
 5. Nelle caselle del nuovo record digitare oppure copiare e incollare i valori della tabella seguente.
     
-    |**Nome**|**Tipo**|**TTL**|**HOST (indica il valore o l'indirizzo)**|
+    |**Nome**|**Type**|**TTL**|**HOST (indica il valore o l'indirizzo)**|
     |:-----|:-----|:-----|:-----|
-    |autodiscover  <br/> |CNAME  <br/> |3600 (secondi)  <br/> |autodiscover.outlook.com  <br/> |
+    |individuazione automatica  <br/> |CNAME  <br/> |3600 (secondi)  <br/> |autodiscover.outlook.com  <br/> |
     |sip  <br/> |CNAME  <br/> |3600 (secondi)  <br/> |sipdir.online.lync.com  <br/> |
     |lyncdiscover  <br/> |CNAME  <br/> |3600 (secondi)  <br/> |webdir.online.lync.com  <br/> |
     |enterpriseregistration  <br/> |CNAME  <br/> |3600 (secondi)  <br/> |enterpriseregistration.windows.net  <br/> |
@@ -189,7 +189,7 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
 <a name="bkmk_spf"> </a>
 
 > [!IMPORTANT]
-> Non può essere presente più di un record TXT per SPF per un dominio. Se il dominio ha più record SPF, si verificheranno errori nella gestione della posta elettronica, oltre a problemi di recapito e di classificazione della posta indesiderata. Se si dispone già di un record SPF per il dominio, non crearne uno nuovo per Microsoft. Al contrario, aggiungere i valori Microsoft necessari al record corrente in modo da disporre di un *singolo* record SPF che includa entrambi i set di valori.
+> Non può essere presente più di un record TXT per SPF per un dominio. Se il dominio ha più record SPF, si verificheranno errori nella gestione della posta elettronica, oltre a problemi di recapito e di classificazione della posta indesiderata. Se si dispone già di un record SPF per il dominio, non crearne uno nuovo per Microsoft. Al contrario, aggiungere i valori Microsoft necessari al record corrente in modo da disporre di un  *singolo*  record SPF che includa entrambi i set di valori.
   
 1. Per iniziare, passare alla propria pagina dei domini in Netregistry usando [questo collegamento](https://theconsole.netregistry.com.au/). You'll be prompted to log in.
     
@@ -212,7 +212,7 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
     > [!NOTE]
     > È necessario utilizzare le virgolette prima e dopo la voce nella casella TXT. 
   
-    |**Nome**|**Tipo**|**TTL**|**Dati TXT (destinazione)**|
+    |**Nome**|**Type**|**TTL**|**Dati TXT (destinazione)**|
     |:-----|:-----|:-----|:-----|
     |(lasciare vuoto)  <br/> |TXT  <br/> |3600 (secondi)  <br/> |"v = spf1 include: SPF. Protection. Outlook. com-All"  <br/> **Nota:** è consigliabile copiare e incollare questa voce, in modo che tutti i caratteri di spaziatura siano corretti.           |
    
@@ -229,7 +229,7 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
     
     ![Netregistry_login](../../media/accf6584-e5f4-4d68-a641-0f8847f8370f.png)
   
-2. Accanto al dominio che si desidera gestire, selezionare **Gestisci**.
+2. Accanto al dominio che si desidera gestire, selezionare  **Gestisci**.
     
     ![Netregistry_Manage](../../media/e0ddc79e-0123-4e24-8380-9645bdb41aac.png)
   
@@ -237,7 +237,7 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
     
     ![Netregistry_selectZoneManager](../../media/f122888b-3cc5-40ec-adac-0ede04799d9a.png)
   
-4. In **aggiungere un record di area**scegliere **SRV record** nell'elenco e quindi selezionare **Crea nuovo record**.
+4. In  **aggiungere un record di area**scegliere **SRV record** nell'elenco e quindi selezionare **Crea nuovo record**.
     
     ![Netregistry_SRV_select](../../media/e5dab850-acd1-48b8-8b4a-e3b9777cf508.png)
   
@@ -248,8 +248,8 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
   
     |**Tipo**|**Nome**|**TTL (SEC)**|**Priorità**|**Peso**|**Porta**|**Target**|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-    |SRV (Service)  <br/> |_sip. _tls  <br/> |3600 (secondi)  <br/> |100  <br/> |1   <br/> |443  <br/> |sipdir.online.lync.com  <br/> |
-    |SRV (Service)  <br/> |_sipfederationtls. _tcp  <br/> |3600 (secondi)  <br/> |100  <br/> |1   <br/> |5061  <br/> |sipfed.online.lync.com  <br/> |
+    |SRV (Service)  <br/> |_sip._tls  <br/> |3600 (secondi)  <br/> |100  <br/> |1   <br/> |443  <br/> |sipdir.online.lync.com  <br/> |
+    |SRV (Service)  <br/> |_sipfederationtls._tcp  <br/> |3600 (secondi)  <br/> |100  <br/> |1   <br/> |5061  <br/> |sipfed.online.lync.com  <br/> |
        
     ![Netregistry_SRV_values](../../media/49292846-1598-4b8c-9940-db6e10675753.png)
   

@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: pebaum
 author: pebaum
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 31efc571-c8b9-46fb-b42d-203c2fb25289
 description: Informazioni su come è possibile configurare Office 365 gestito da 21Vianet per gestire i record DNS, quando 1&1 Internet è il provider di hosting DNS.
-ms.openlocfilehash: 79870d534e7d825fd59dbbbec54c796227f5faf1
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+ms.openlocfilehash: 8a783be20d2f8dbdb26e9826018f911289b35235
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44780374"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48646560"
 ---
 # <a name="change-nameservers-to-set-up-microsoft-365-with-11-ionos"></a>Modificare i server dei nomi per configurare Microsoft 365 con 1&1 IONOS
 
@@ -56,7 +56,7 @@ Seguire i passaggi indicati sotto oppure [guardare il video (iniziare da 0:42)](
     
 5. Nella sezione **txt e SRV Records** selezionare **Aggiungi record**.
     
-    (You may have to scroll down.) 
+    Può essere necessario scorrere la pagina. 
     
 6. In the **Add Record** area, in the boxes for the new record, type or copy and paste the values from the following table. 
     
@@ -85,14 +85,14 @@ Quando Microsoft 365 trova il record TXT corretto, il dominio è verificato.
 4. Nella pagina **Verifica dominio** selezionare **Verifica**.
     
 > [!NOTE]
-> Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. In caso di problemi con il flusso di posta o altri problemi dopo l'aggiunta di record DNS, vedere [individuare e correggere i problemi dopo l'aggiunta del dominio o dei record DNS in Microsoft 365](../get-help-with-domains/find-and-fix-issues.md). 
+> Solitamente, affinché le modifiche DNS diventino effettive, sono necessari circa 15 minuti. A volte può tuttavia capitare che l'aggiornamento di una modifica nel sistema DNS di Internet richieda più tempo. In caso di problemi con il flusso di posta o altri problemi dopo l'aggiunta di record DNS, vedere [individuare e correggere i problemi dopo l'aggiunta del dominio o dei record DNS in Microsoft 365](../get-help-with-domains/find-and-fix-issues.md). 
   
 ## <a name="change-your-domains-nameserver-ns-records"></a>Modificare i record del server dei nomi del dominio
 
 Per completare la configurazione del dominio con Microsoft 365, è necessario modificare i record NS del dominio presso il registrar in modo che puntino ai server dei nomi primari e secondari di Microsoft 365. In questo modo si configura Microsoft 365 per aggiornare i record DNS del dominio. Verranno aggiunti tutti i record necessari per il funzionamento della posta elettronica, di Skype for Business online e del sito Web pubblico con il dominio.
   
 > [!CAUTION]
-> Quando si modificano i record NS del dominio in modo che puntino ai server dei nomi Microsoft 365, tutti i servizi attualmente associati al dominio sono intaccati. Ad esempio, tutta la posta elettronica inviata al dominio (come rob@ *your_domain* . com) inizierà a venire a Microsoft 365 dopo aver apportato questa modifica. 
+> Quando si modificano i record NS del dominio in modo che puntino ai server dei nomi Microsoft 365, tutti i servizi attualmente associati al dominio sono intaccati. Ad esempio, tutta la posta elettronica inviata al dominio (come rob@ *your_domain*  . com) inizierà a venire a Microsoft 365 dopo aver apportato questa modifica. 
   
 È possibile modificare i record NS per consentire a Microsoft 365 di configurare il dominio? Seguire le istruzioni riportate di seguito o [guardare il video (iniziare da 2:47)](https://support.microsoft.com/office/0ef1b3b5-d27a-4004-8ca1-fbe0453a0ea3).
   

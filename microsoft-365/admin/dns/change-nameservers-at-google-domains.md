@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: pebaum
 author: pebaum
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 68a08e94-26c2-4df2-9216-026b8ec907ca
 description: Informazioni su come è possibile configurare Microsoft per gestire i record DNS del dominio personalizzato su Google Domains.
-ms.openlocfilehash: 65649632b5e28e97909d91ca3e04355375afe3ac
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 05d77ef4cb78351727870a384f4a28c6e4acc4b0
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400654"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48646428"
 ---
 # <a name="change-nameservers-to-set-up-microsoft-with-google-domains"></a>Modificare i server dei nomi per configurare Microsoft con Google Domains
 
@@ -44,21 +44,21 @@ Prima di usare il proprio dominio con Microsoft, è necessario dimostrare di ess
   
 1. Per iniziare, passare alla propria pagina dei domini su Google Domains tramite [questo collegamento](https://domains.google.com/registrar). You'll be prompted to sign in. To do so:
     
-1. Selezionare **Accedi**.
+1. Scegliere **Accedi**.
     
 2. Immettere le credenziali di accesso e selezionare **di nuovo accedi**.
     
-2. Nella sezione **Domain** **della pagina** Domains selezionare **configure DNS** for the Domain che si desidera modificare. 
+2. Nella pagina **Domains**, nella sezione **Domain**, selezionare **Configura DNS** per il dominio che si vuole modificare. 
     
-3. In the **Custom resource records** section, in the boxes for the new record, type or copy and paste the values from the following table. 
+3. Nelle caselle del nuovo record nella sezione **Custom resource records** digitare oppure copiare e incollare i valori della tabella seguente. 
     
-    (You may have to scroll down.)
+    Può essere necessario scorrere la pagina.
     
-    (Choose the **Type** value from the drop-down list.) 
+    Selezionare il valore **Type** nell'elenco a discesa. 
     
 |||||
 |:-----|:-----|:-----|:-----|
-|**Nome** <br/> |**Tipo** <br/> |**TTL** <br/> |**Data** <br/> |
+|**Nome** <br/> |**Type** <br/> |**TTL** <br/> |**Dati** <br/> |
 |@  <br/> |TXT  <br/> |1H  <br/> |MS=ms *XXXXXXXX* <br/> **Note:** questo è un esempio. Usare il valore specifico di **Indirizzo di destinazione o puntamento** indicato nella tabella. [Come trovarlo](../get-help-with-domains/information-for-dns-records.md)       <br/>  |
    
 4. Selezionare **Aggiungi**.
@@ -93,11 +93,11 @@ Per completare la configurazione del dominio con Microsoft, è necessario modifi
   
 1. Per iniziare, passare alla propria pagina dei domini su Google Domains usando [questo collegamento](https://domains.google.com/registrar). Verrà richiesto di eseguire l'accesso. A questo scopo:
     
-1. Selezionare **Accedi**.
+1. Scegliere **Accedi**.
     
-2. Immettere le credenziali di accesso e quindi selezionare **di nuovo accedi**.
+2. Immettere le credenziali di accesso e poi selezionare di nuovo **Accedi**.
     
-2. Nella sezione **Domain** **della pagina** Domains selezionare **configure DNS** for the Domain che si desidera modificare. 
+2. Nella pagina **Domains**, nella sezione **Domain**, selezionare **Configura DNS** per il dominio che si vuole modificare. 
     
 3. Nella pagina **Domains**, nella sezione **Name servers**, selezionare **Use custom name servers**.
     
@@ -146,7 +146,7 @@ Per completare la configurazione del dominio con Microsoft, è necessario modifi
 1. Se sono elencati altri server dei nomi, selezionare **modifica**.
     
     > [!CAUTION]
-    > Follow these steps only if you have existing nameservers other than the four correct nameservers. (Ovvero, eliminare solo eventuali server dei nomi correnti che *non* sono denominati **NS1.BDM.microsoftonline.com**, **NS2.BDM.microsoftonline.com**, **NS3.BDM.microsoftonline.com**o **NS4.BDM.microsoftonline.com**). 
+    > Follow these steps only if you have existing nameservers other than the four correct nameservers. (Ovvero, eliminare solo eventuali server dei nomi correnti che  *non*  sono denominati **NS1.BDM.microsoftonline.com**, **NS2.BDM.microsoftonline.com**, **NS3.BDM.microsoftonline.com**o **NS4.BDM.microsoftonline.com**). 
   
     ![Google-Domains-BP-Redelegate-1-6-1](../../media/fb45d120-55ab-42c2-bdb6-19b130c3c7db.png)
   

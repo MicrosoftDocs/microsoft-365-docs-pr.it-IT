@@ -4,7 +4,7 @@ f1.keywords:
 - CSH
 ms.author: pebaum
 author: pebaum
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -22,12 +22,12 @@ description: Comprendere cosa è un dominio e come è possibile acquistare un do
 ms.custom:
 - okr_smb
 - AdminSurgePortfolio
-ms.openlocfilehash: 9104c77218c483b61c57a38e37e8e2661db1aa15
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 0c59fb6bc5f9a7796c84a0370c771bf90102dec0
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399861"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48645120"
 ---
 # <a name="what-is-a-domain"></a>Cos'è un dominio?
 
@@ -45,14 +45,14 @@ Utilizzare Microsoft 365 per acquistare un nuovo dominio: verrà impostato tutto
   
  **Usare un dominio che si possiede già:**
   
-Se si è già proprietari di un dominio come *You@yourcompany. <span> com* è possibile aggiungerlo e iniziare a usare OneDrive e Microsoft Apps subito. La configurazione della posta elettronica e di Skype for Business richiederà qualche minuto. 
+Se si è già proprietari di un dominio come  *You@yourcompany. <span> com*  è possibile aggiungerlo e iniziare a usare OneDrive e Microsoft Apps subito. La configurazione della posta elettronica e di Skype for Business richiederà qualche minuto. 
   
 > [!TIP]
 > Verificare dove è registrato il dominio: [Trovare il registrar](find-your-domain-registrar.md)
   
  **Usare temporaneamente un dominio predefinito:**
   
-È possibile utilizzare un dominio predefinito come *yourcompany. onmicrosoft. <span> com* per eseguire l'accesso per ora e aggiungere un dominio personalizzato in un secondo momento. Il dominio predefinito non potrà essere cambiato o rinominato, quindi assicurarsi che sia appropriato prima di procedere. 
+È possibile utilizzare un dominio predefinito come  *yourcompany. onmicrosoft. <span> com*  per eseguire l'accesso per ora e aggiungere un dominio personalizzato in un secondo momento. Il dominio predefinito non potrà essere cambiato o rinominato, quindi assicurarsi che sia appropriato prima di procedere. 
   
 ## <a name="feeling-stuck"></a>Serve aiuto?
 

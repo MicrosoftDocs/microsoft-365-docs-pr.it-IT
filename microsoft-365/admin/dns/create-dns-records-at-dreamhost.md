@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: pebaum
 author: pebaum
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9c0812e0-908b-4b41-a64b-77f0dbd3db7a
 description: Informazioni su come verificare il dominio e configurare i record DNS per la posta elettronica, Skype for business online e altri servizi in DreamHost per Microsoft.
-ms.openlocfilehash: 4b321138892cb4a7b5f67c37ed66f3baf0f6c45a
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 8ab617fd5d63b292a85289d2d51a0ae0fd3b26be
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400510"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48646200"
 ---
 # <a name="create-dns-records-at-dreamhost-for-microsoft"></a>Creare record DNS in DreamHost per Microsoft
 
@@ -64,7 +64,7 @@ Prima di usare il proprio dominio con Microsoft, è necessario dimostrare di ess
     
     (You may have to scroll down.)
     
-    (Choose the **Type** value from the drop-down list.) 
+    Selezionare il valore **Type** nell'elenco a discesa. 
     
     |**Nome**|**Tipo**|**Valore**|**Commento**|
     |:-----|:-----|:-----|:-----|
@@ -127,7 +127,7 @@ Effettuare le operazioni seguenti.
     
     |**Record MX (obbligatorio)**|
     |:-----|
-    |0 *\<domain-key\>* . mail.Protection.Outlook.com.  <br/> **This value MUST end with a period (.)** <br/> 0 è il valore di priorità MX. Aggiungerlo all'inizio del valore MX, separato dal resto del valore da uno spazio.  <br/> **Nota:** Ottenere il vostro *\<domain-key\>* dal vostro account Microsoft.           [Come trovarlo](../get-help-with-domains/information-for-dns-records.md)          |
+    |0  *\<domain-key\>*  .mail.protection.outlook.com.  <br/> **Questo valore DEVE terminare con un punto (.)** <br/> 0 è il valore di priorità MX. Aggiungerlo all'inizio del valore MX, separato dal resto del valore da uno spazio.  <br/> **Nota:** Ottenere il vostro  *\<domain-key\>*  dal vostro account Microsoft.           [Come trovarlo](../get-help-with-domains/information-for-dns-records.md)          |
    
     ![DreamHost-BP-Configure-2-3](../../media/90da1816-e186-4016-ab22-7962f8b86add.png)
   
@@ -163,13 +163,13 @@ Effettuare le operazioni seguenti.
   
 4. Nelle caselle del nuovo record nella sezione **Add a custom DNS Record** digitare oppure copiare e incollare i valori dalla prima riga della tabella seguente. 
     
-    (You may have to scroll down.)
+    Può essere necessario scorrere la pagina.
     
-    (Choose the **Type** value from the drop-down list.) 
+    Selezionare il valore **Type** nell'elenco a discesa. 
     
     |**Nome**|**Tipo**|**Valore**|**Commento**|
     |:-----|:-----|:-----|:-----|
-    |autodiscover  <br/> |CNAME  <br/> |autodiscover.outlook.com.  <br/> **Questo valore DEVE terminare con un punto (.)** <br/> |Questo campo è facoltativo.  <br/> |
+    |individuazione automatica  <br/> |CNAME  <br/> |autodiscover.outlook.com.  <br/> **Questo valore DEVE terminare con un punto (.)** <br/> |Questo campo è facoltativo.  <br/> |
     |sip  <br/> |CNAME  <br/> |sipdir.online.lync.com.  <br/> **Questo valore DEVE terminare con un punto (.)** <br/> |Questo campo è facoltativo.  <br/> |
     |lyncdiscover  <br/> |CNAME  <br/> |webdir.online.lync.com.  <br/> **Questo valore DEVE terminare con un punto (.)** <br/> |Questo campo è facoltativo.  <br/> |
     |enterpriseregistration  <br/> |CNAME  <br/> |enterpriseregistration.windows.net.  <br/> **Questo valore DEVE terminare con un punto (.)** <br/> |Questo campo è facoltativo.  <br/> |
@@ -188,7 +188,7 @@ Effettuare le operazioni seguenti.
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
-> Non può essere presente più di un record TXT per SPF per un dominio. Se il dominio ha più record SPF, si verificheranno errori nella gestione della posta elettronica, oltre a problemi di recapito e di classificazione della posta indesiderata. Se si dispone già di un record SPF per il dominio, non crearne uno nuovo per Microsoft. Al contrario, aggiungere i valori Microsoft necessari al record corrente in modo da disporre di un *singolo* record SPF che includa entrambi i set di valori.
+> Non può essere presente più di un record TXT per SPF per un dominio. Se il dominio ha più record SPF, si verificheranno errori nella gestione della posta elettronica, oltre a problemi di recapito e di classificazione della posta indesiderata. Se si dispone già di un record SPF per il dominio, non crearne uno nuovo per Microsoft. Al contrario, aggiungere i valori Microsoft necessari al record corrente in modo da disporre di un  *singolo*  record SPF che includa entrambi i set di valori.
   
 Effettuare le operazioni seguenti.
   
@@ -206,9 +206,9 @@ Effettuare le operazioni seguenti.
   
 4. Nelle caselle del nuovo record nella sezione **Add a custom DNS Record** digitare oppure copiare e incollare i valori dalla prima riga della tabella seguente. 
     
-    (You may have to scroll down.)
+    Può essere necessario scorrere la pagina.
     
-    (Choose the **Type** value from the drop-down list.) 
+    Selezionare il valore **Type** nell'elenco a discesa. 
     
     |**Nome**|**Tipo**|**Valore**|**Commento**|
     |:-----|:-----|:-----|:-----|
@@ -242,14 +242,14 @@ Effettuare le operazioni seguenti.
   
 4. Nelle caselle del nuovo record nella sezione **Add a custom DNS Record** digitare oppure copiare e incollare i valori dalla prima riga della tabella seguente. 
     
-    (You may have to scroll down.)
+    Può essere necessario scorrere la pagina.
     
-    (Choose the **Type** value from the drop-down list.) 
+    Selezionare il valore **Type** nell'elenco a discesa. 
     
     |**Nome**|**Tipo**|**Valore**|**Commento**|
     |:-----|:-----|:-----|:-----|
-    |_sip. _tls  <br/> |SRV  <br/> |100 1 443  <br/> sipdir.online.lync.com.  <br/> **Questo valore DEVE terminare con un punto (.)** <br/> |Questo campo è facoltativo.  <br/> |
-    |_sipfederationtls. _tcp  <br/> |SRV  <br/> |100 1 5061  <br/> sipfed.online.lync.com.  <br/> **Questo valore DEVE terminare con un punto (.)** <br/> |Questo campo è facoltativo.  <br/> |
+    |_sip._tls  <br/> |SRV  <br/> |100 1 443  <br/> sipdir.online.lync.com.  <br/> **Questo valore DEVE terminare con un punto (.)** <br/> |Questo campo è facoltativo.  <br/> |
+    |_sipfederationtls._tcp  <br/> |SRV  <br/> |100 1 5061  <br/> sipfed.online.lync.com.  <br/> **Questo valore DEVE terminare con un punto (.)** <br/> |Questo campo è facoltativo.  <br/> |
    
     ![DreamHost-BP-Configure-5-1](../../media/934eb79f-3617-4b72-802c-c42c7d165283.png)
   

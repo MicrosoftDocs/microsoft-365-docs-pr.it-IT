@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 description: Informazioni su come annullare l'assegnazione delle licenze dagli account utente.
 ms.date: 07/01/2020
-ms.openlocfilehash: 4441fd253c4cf5304562900bf31869eb4e0f21ff
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: 455348e7dba20913e54e5a4059755f9391644e03
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47306540"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48645096"
 ---
 # <a name="unassign-licenses-from-users"></a>Annullare l'assegnazione delle licenze agli utenti
 
@@ -42,7 +42,7 @@ ms.locfileid: "47306540"
 
 ::: moniker-end
 
-## <a name="before-you-begin"></a>Prima di iniziare
+## <a name="before-you-begin"></a>Informazioni preliminari
 
 - Per annullare l'assegnazione delle licenze, è necessario essere un amministratore globale, una licenza per l'utente. Per altre informazioni, vedere [Informazioni sui ruoli di amministratore di Microsoft 365](../add-users/about-admin-roles.md).
 - È possibile [rimuovere licenze da account utente con PowerShell di Office 365](https://docs.microsoft.com/microsoft-365/enterprise/remove-licenses-from-user-accounts-with-microsoft-365-powershell).
@@ -149,7 +149,7 @@ Quando si utilizza la pagina **utenti attivi** per annullare l'assegnazione dell
 
 Se non si intende [riassegnare le licenze inutilizzate ad altri utenti](../../managed-desktop/get-started/assign-licenses.md), prendere in considerazione la possibilità di [rimuovere le licenze dall'abbonamento](../../commerce/licenses/buy-licenses.md) in modo che non vengano pagate più licenze di quante ne siano necessarie.
 
-## <a name="related-content"></a>Contenuto correlato
+## <a name="related-content"></a>Contenuti correlati
 
 [Rimuovere le licenze dall'abbonamento](../../commerce/licenses/remove-licenses-from-subscription.md) (articolo) \
 [Assegnare licenze agli utenti](assign-licenses-to-users.md) (articolo) \

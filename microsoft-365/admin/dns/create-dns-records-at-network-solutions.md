@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: pebaum
 author: pebaum
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 1dc55f9f-5309-450f-acc3-b2b4119c8be3
 description: Informazioni su come verificare il dominio e configurare i record DNS per la posta elettronica, Skype for business online e altri servizi in Network Solutions per Microsoft.
-ms.openlocfilehash: 25e85bf30527b49ada711af9ba5c418409acd24c
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+ms.openlocfilehash: f488ad3511c9901eae70691f616dcff52036c71d
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44780338"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48645948"
 ---
 # <a name="create-dns-records-at-network-solutions-for-microsoft"></a>Creare record DNS in Network Solutions per Microsoft
 
@@ -80,7 +80,7 @@ Seguire i passaggi indicati sotto oppure [guardare il video (iniziare da 0:47)](
   
 4. Selezionare **Gestisci record DNS avanzati**.
     
-    (You may have to scroll down.)
+    Può essere necessario scorrere la pagina.
     
     ![Selezionare Gestisci record DNS avanzati](../../media/fd2956d6-eec3-47ea-b60a-266bab14f51f.png)
   
@@ -149,7 +149,7 @@ Seguire i passaggi indicati sotto oppure [guardare il video (iniziare da 3:51)](
   
 4. Selezionare **Gestisci record DNS avanzati**.
     
-    (You may have to scroll down.)
+    Può essere necessario scorrere la pagina.
     
     ![Selezionare Gestisci record DNS avanzati](../../media/fd2956d6-eec3-47ea-b60a-266bab14f51f.png)
   
@@ -159,9 +159,9 @@ Seguire i passaggi indicati sotto oppure [guardare il video (iniziare da 3:51)](
   
 6. Nelle caselle del nuovo record digitare oppure copiare e incollare i valori della tabella seguente.
     
-    |**Priorità**|**TTL**|**Mail Server**|
+    |**Priorità **|**TTL**|**Mail Server**|
     |:-----|:-----|:-----|
-    |10    <br/> Per altre informazioni sulla priorità, vedere [Informazioni sulla priorità MX](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq). <br/> |3600  <br/> | *\<domain-key\>*. mail.protection.outlook.com.  <br/> **This value MUST end with a period (.)** <br/> **Nota:** Ottenere il vostro *\<domain-key\>* dal vostro account Microsoft. [Come trovarlo](../get-help-with-domains/information-for-dns-records.md)          |
+    |10    <br/> Per altre informazioni sulla priorità, vedere [Informazioni sulla priorità MX](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq). <br/> |3600  <br/> | *\<domain-key\>*  . mail.protection.outlook.com.  <br/> **Questo valore DEVE terminare con un punto (.)** <br/> **Nota:** Ottenere il vostro  *\<domain-key\>*  dal vostro account Microsoft. [Come trovarlo](../get-help-with-domains/information-for-dns-records.md)          |
        
     ![Digitare o incollare i valori nelle caselle per il nuovo record](../../media/0bb96872-cc6e-4dfa-a649-fb7efbbf0012.png)
   
@@ -207,7 +207,7 @@ Seguire i passaggi indicati sotto oppure [guardare il video (iniziare da 4:43)](
   
 4. Selezionare **Gestisci record DNS avanzati**.
     
-    (You may have to scroll down.)
+    Può essere necessario scorrere la pagina.
     
     ![Selezionare Gestisci record DNS avanzati](../../media/fd2956d6-eec3-47ea-b60a-266bab14f51f.png)
   
@@ -219,11 +219,11 @@ Seguire i passaggi indicati sotto oppure [guardare il video (iniziare da 4:43)](
     
     |**Alias**|**TTL**|**Refers to Host Name**|**Other Host          (selezionare il pulsante di opzione **Other Host**)**|
     |:-----|:-----|:-----|:-----|
-    |autodiscover  <br/> |3600  <br/> |(Nessuna impostazione)  <br/> |autodiscover.outlook.com.  <br/> **This value MUST end with a period (.)** <br/> |
+    |autodiscover  <br/> |3600  <br/> |(Nessuna impostazione)  <br/> |autodiscover.outlook.com.  <br/> **Questo valore DEVE terminare con un punto (.)** <br/> |
     |sip  <br/> |3600  <br/> |(Nessuna impostazione)  <br/> |sipdir.online.lync.com.  <br/> **Questo valore DEVE terminare con un punto (.)** <br/> |
-    |lyncdiscover  <br/> |3600  <br/> |(Nessuna impostazione)  <br/> |webdir.online.lync.com.  <br/> **This value MUST end with a period (.)** <br/> |
+    |lyncdiscover  <br/> |3600  <br/> |(Nessuna impostazione)  <br/> |webdir.online.lync.com.  <br/> **Questo valore DEVE terminare con un punto (.)** <br/> |
     |enterpriseregistration  <br/> |3600  <br/> |(Nessuna impostazione)  <br/> |enterpriseregistration.windows.net  <br/> **Questo valore DEVE terminare con un punto (.)** <br/> |
-    |enterpriseenrollment  <br/> |3600  <br/> |(Nessuna impostazione)  <br/> |enterpriseenrollment-s.manage.microsoft.com  <br/> **This value MUST end with a period (.)** <br/> |
+    |enterpriseenrollment  <br/> |3600  <br/> |(Nessuna impostazione)  <br/> |enterpriseenrollment-s.manage.microsoft.com  <br/> **Questo valore DEVE terminare con un punto (.)** <br/> |
     
     ![Digitare o incollare i valori per i nuovi record](../../media/5ce0b30c-b46c-4778-aa5a-fb5e2f0961c1.png)
   
@@ -239,7 +239,7 @@ Seguire i passaggi indicati sotto oppure [guardare il video (iniziare da 4:43)](
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
-> Non può essere presente più di un record TXT per SPF per un dominio. Se il dominio ha più record SPF, si verificheranno errori nella gestione della posta elettronica, oltre a problemi di recapito e di classificazione della posta indesiderata. Se si dispone già di un record SPF per il dominio, non crearne uno nuovo per Microsoft. Al contrario, aggiungere i valori Microsoft necessari al record corrente in modo da disporre di un *singolo* record SPF che includa entrambi i set di valori. 
+> Non può essere presente più di un record TXT per SPF per un dominio. Se il dominio ha più record SPF, si verificheranno errori nella gestione della posta elettronica, oltre a problemi di recapito e di classificazione della posta indesiderata. Se si dispone già di un record SPF per il dominio, non crearne uno nuovo per Microsoft. Al contrario, aggiungere i valori Microsoft necessari al record corrente in modo da disporre di un  *singolo*  record SPF che includa entrambi i set di valori. 
   
 Seguire i passaggi indicati sotto oppure [guardare il video (iniziare da 5:35)](https://support.microsoft.com/office/c49698c2-6991-47fb-b5ac-18e49a505099).
   
@@ -260,7 +260,7 @@ Seguire i passaggi indicati sotto oppure [guardare il video (iniziare da 5:35)](
   
 4. Selezionare **Gestisci record DNS avanzati**.
     
-    (You may have to scroll down.)
+    Può essere necessario scorrere la pagina.
     
     ![Selezionare Gestisci record DNS avanzati](../../media/fd2956d6-eec3-47ea-b60a-266bab14f51f.png)
   
@@ -306,7 +306,7 @@ Seguire i passaggi indicati sotto oppure [guardare il video (iniziare da 6:18)](
   
 4. Selezionare **Gestisci record DNS avanzati**.
     
-    (You may have to scroll down.)
+    Può essere necessario scorrere la pagina.
     
     ![Selezionare Gestisci record DNS avanzati](../../media/fd2956d6-eec3-47ea-b60a-266bab14f51f.png)
   
@@ -321,7 +321,7 @@ Seguire i passaggi indicati sotto oppure [guardare il video (iniziare da 6:18)](
     |**Service**|**Protocol**|**TTL**|**Priorità**|**Peso**|**Porta**|**Target**|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
     |_sip  <br/> |_tls  <br/> |3600  <br/> |100  <br/> |1   <br/> |443  <br/> |sipdir.online.lync.com.  <br/> **Questo valore DEVE terminare con un punto (.)** <br/> |
-    |_sipfederationtls  <br/> |_tcp  <br/> |3600  <br/> |100  <br/> |1   <br/> |5061  <br/> |sipfed.online.lync.com.  <br/> **This value MUST end with a period (.)** <br/> |
+    |_sipfederationtls  <br/> |_tcp  <br/> |3600  <br/> |100  <br/> |1   <br/> |5061  <br/> |sipfed.online.lync.com.  <br/> **Questo valore DEVE terminare con un punto (.)** <br/> |
        
     ![Digitare o incollare i valori per i nuovi record](../../media/86968d1c-8e43-4e61-aeaa-37fc7d7ef7a7.png)
   

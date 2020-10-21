@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: ab5eb117-0f22-4fa7-a662-3a6bdb0add74
 description: Impostare l'inoltro della posta elettronica su uno o più account di posta elettronica utilizzando Office365.
-ms.openlocfilehash: f6c177ba37cf2b8ce3966732adbe8428d9b6179e
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+ms.openlocfilehash: d19e2c533be6fac927bdf2aa65d72acab9fad6f6
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44780254"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48645528"
 ---
 # <a name="configure-email-forwarding"></a>Configurare l'inoltro della posta elettronica
 
@@ -45,9 +45,9 @@ Come amministratore di un'organizzazione, potrebbe essere necessario disporre de
 
  Prima di configurare l'inoltro della posta elettronica, tenere presente quanto segue: 
 
-- Dopo aver configurato l'inoltro della posta elettronica, solo i **nuovi** messaggi di posta elettronica inviati alla cassetta postale *da* saranno fowarded. 
+- Dopo aver configurato l'inoltro della posta elettronica, solo i **nuovi** messaggi di posta elettronica inviati alla cassetta postale  *da*  saranno fowarded. 
     
-- L'inoltro della posta elettronica richiede che l'account *da* disponga di una licenza. Se si sta configurando l'inoltro della posta elettronica perché l'utente ha lasciato la propria organizzazione, un'altra opzione consiste nel [convertire la cassetta postale in una cassetta postale condivisa](convert-user-mailbox-to-shared-mailbox.md). In questo modo diverse persone possono accedervi. Tuttavia, una cassetta postale condivisa non può essere superiore a 50 GB. 
+- L'inoltro della posta elettronica richiede che l'account  *da*  disponga di una licenza. Se si sta configurando l'inoltro della posta elettronica perché l'utente ha lasciato la propria organizzazione, un'altra opzione consiste nel [convertire la cassetta postale in una cassetta postale condivisa](convert-user-mailbox-to-shared-mailbox.md). In questo modo diverse persone possono accedervi. Tuttavia, una cassetta postale condivisa non può essere superiore a 50 GB. 
     
 Per eseguire questa procedura, è necessario essere un amministratore di Exchange o un amministratore globale in Microsoft 365. Per ulteriori informazioni, vedere l'argomento [relativo ai ruoli di amministratore](../add-users/about-admin-roles.md).
 

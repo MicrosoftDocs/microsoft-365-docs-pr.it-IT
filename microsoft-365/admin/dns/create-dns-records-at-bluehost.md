@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: pebaum
 author: pebaum
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 657934ff-d9d2-4563-9ccf-ef4832a03a99
 description: Informazioni su come verificare il dominio e configurare i record DNS per la posta elettronica, Skype for business online e altri servizi di Bluehost per Microsoft.
-ms.openlocfilehash: c0db0a00b48e6a460b8e21c95b8d8852914ab87b
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: c0ba1b876c939632bc6c43a6e0004fbbe23a7723
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47307044"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48646236"
 ---
 # <a name="create-dns-records-at-bluehost-for-microsoft"></a>Creare record DNS su Bluehost per Microsoft
 
@@ -53,7 +53,7 @@ Prima di usare il proprio dominio con Microsoft, è necessario dimostrare di ess
     
     Può essere necessario scorrere la pagina.
     
-3. Nell'area ***Domain_name*** , nella riga **Editor zone DNS** , selezionare **Manage DNS Records**.
+3. Nell'area ** _Domain_name_*_ fare clic su*** **Gestisci record DNS**nella riga _ DNS zone editor.
     
 4. On the **DNS Zone Editor** page, in the **Add DNS Record** area, in the boxes for the new record, type or copy and paste the values from the following table. 
     
@@ -93,7 +93,7 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
     
     Può essere necessario scorrere la pagina.
     
-3. Nell'area ***Domain_name*** , nella riga **Editor zone DNS** , selezionare **Manage DNS Records**.
+3. Nell'area ** _Domain_name_*_ fare clic su*** **Gestisci record DNS**nella riga _ DNS zone editor.
     
 4. On the **DNS Zone Editor** page, in the **Add DNS Record** area, in the boxes for the new record, type or copy and paste the values from the following table. 
     
@@ -130,7 +130,7 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
     
     Può essere necessario scorrere la pagina.
     
-3. Nell'area ***Domain_name*** , nella riga **Editor zone DNS** , selezionare **Manage DNS Records**.
+3. Nell'area ** _Domain_name_*_ fare clic su*** **Gestisci record DNS**nella riga _ DNS zone editor.
     
 4. Nella sezione **a (host)** Records individuare la riga del record di **individuazione automatica** e quindi fare clic su **Elimina** per tale riga. 
     
@@ -181,7 +181,7 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
     
     Può essere necessario scorrere la pagina.
     
-3. Nell'area ***Domain_name*** , nella riga **Editor zone DNS** , selezionare **Manage DNS Records**.
+3. Nell'area ** _Domain_name_*_ fare clic su*** **Gestisci record DNS**nella riga _ DNS zone editor.
     
 4. On the **DNS Zone Editor** page, in the **Add DNS Record** area, in the boxes for the new record, type or copy and paste the values from the following table. 
     
@@ -206,7 +206,7 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
     
     Può essere necessario scorrere la pagina.
     
-3. Nell'area ***Domain_name*** , nella riga **Editor zone DNS** , selezionare **Manage DNS Records**.
+3. Nell'area ** _Domain_name_*_ fare clic su*** **Gestisci record DNS**nella riga _ DNS zone editor.
     
 4. Creare il primo dei due record SRV.
     
