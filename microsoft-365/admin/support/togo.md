@@ -4,7 +4,7 @@ author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
@@ -13,12 +13,12 @@ ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Informazioni su come contattare il supporto per il proprio paese o area geografica.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: a9b1ce66917d67225663bde192cd8392ceffc6a6
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: e6c85c2b32e4c4db576005f728b3c79e58c5b89e
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44401607"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48639148"
 ---
 # <a name="contact-support-for-togo"></a>Contattare il supporto per il Togo
 
@@ -30,14 +30,14 @@ ms.locfileid: "44401607"
 ## <a name="hours"></a>Ore
 ### <a name="billing-support"></a>Supporto per la fatturazione:
 
-Francese: lun-ven 8 AM-4
+Francese: Mon-Fri 8 AM-4
 
-Italiano: lun-ven 8 AM-4
+Inglese: Mon-Fri 8 AM-4
 
 ### <a name="technical-support"></a>Supporto tecnico:
 
-Francese: lun-ven 7 AM-8
+Francese: Mon-Fri 7 AM-8
 
-Italiano: 24 ore al giorno, 7 giorni alla settimana
+Inglese: 24 ore al giorno, 7 giorni alla settimana
 
 Tariffe di chiamata internazionali applicate

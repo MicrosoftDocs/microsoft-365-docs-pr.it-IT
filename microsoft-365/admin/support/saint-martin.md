@@ -4,7 +4,7 @@ author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
@@ -13,12 +13,12 @@ ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Informazioni su come contattare il supporto per il proprio paese o area geografica.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 730c55ce9884054f12271e6ed2d6aa03232375d6
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 40aad7a0b9102662d241914eecac9ad4fd0e5022
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44389782"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48640056"
 ---
 # <a name="contact-support-for-saint-martin"></a>Contattare il supporto tecnico per Saint Martin
 
@@ -30,14 +30,14 @@ ms.locfileid: "44389782"
 ## <a name="hours"></a>Ore
 ### <a name="billing-support"></a>Supporto per la fatturazione:
 
-Francese: lun-ven 4 AM-Noon
+Francese: Mon-Fri 4 AM-Noon
 
-Inglese: lun-ven 4 AM-Noon
+Inglese: Mon-Fri 4 AM-Noon
 
 ### <a name="technical-support"></a>Supporto tecnico:
 
-Francese: lun-ven 3 AM-16.00
+Francese: Mon-Fri dalle 15.00 alle 16.00
 
-Italiano: 24 ore al giorno, 7 giorni alla settimana
+Inglese: 24 ore al giorno, 7 giorni alla settimana
 
 Tariffe di chiamata internazionali applicate

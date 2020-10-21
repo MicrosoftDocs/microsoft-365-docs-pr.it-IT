@@ -4,7 +4,7 @@ author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
@@ -13,12 +13,12 @@ ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Informazioni su come contattare il supporto per il proprio paese o area geografica.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 5a082d5683ea0b932c286b573508b53d4ad1b57a
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 93e8fa090d1905489eaa43b12eae835dd6f1b657
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44401411"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48639360"
 ---
 # <a name="contact-support-for-sweden"></a>Contattare il supporto per la Svezia
 
@@ -30,11 +30,11 @@ ms.locfileid: "44401411"
 ## <a name="hours"></a>Ore
 ### <a name="billing-support"></a>Supporto per la fatturazione:
 
-Inglese: lun-ven 9 AM-17.00
+Inglese: Mon-Fri 9.00-17.00
 
 ### <a name="technical-support"></a>Supporto tecnico:
 
-Italiano: 24 ore al giorno, 7 giorni alla settimana
+Inglese: 24 ore al giorno, 7 giorni alla settimana
 
 Numero di telefono alternativo: 08 5176 1966
 

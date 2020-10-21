@@ -4,7 +4,7 @@ author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
@@ -13,12 +13,12 @@ ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Informazioni su come contattare il supporto per il proprio paese o area geografica.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 256656e33438f7d90546fccb1aaef20cce526e38
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: b5b82f1df6a794fac78332eb4b16b6dbcfa14aef
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44401847"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48639108"
 ---
 # <a name="contact-support-for-tunisia"></a>Contattare il supporto per la Tunisia
 
@@ -36,18 +36,18 @@ Immettere il codice 7703
 ## <a name="hours"></a>Ore
 ### <a name="billing-support"></a>Supporto per la fatturazione:
 
-Arabo: Dom-gio 9 AM-5 PM
+Arabo: Sun-Thu 9.00-17.00
 
-Francese: lun-ven 9 AM-17.00
+Francese: Mon-Fri 9.00-17.00
 
-Inglese: lun-ven 9 AM-17.00
+Inglese: Mon-Fri 9.00-17.00
 
 ### <a name="technical-support"></a>Supporto tecnico:
 
-Arabo: Dom-gio 9 AM-5 PM
+Arabo: Sun-Thu 9.00-17.00
 
-Francese: lun-ven 8 AM-9 PM
+Francese: Mon-Fri 8 AM-9 PM
 
-Italiano: 24 ore al giorno, 7 giorni alla settimana
+Inglese: 24 ore al giorno, 7 giorni alla settimana
 
 Applicazione delle tariffe di chiamata locali

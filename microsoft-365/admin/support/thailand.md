@@ -4,7 +4,7 @@ author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
@@ -13,12 +13,12 @@ ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Informazioni su come contattare il supporto per il proprio paese o area geografica.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: aae793aea99b8c5f3b943d8e9c6b5304259e815f
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: fd67ee74f72e277bb2573ed2a67d510628f4c69c
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44401631"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48639180"
 ---
 # <a name="contact-support-for-thailand"></a>Contattare il supporto per la Thailandia
 
@@ -30,12 +30,12 @@ ms.locfileid: "44401631"
 ## <a name="hours"></a>Ore
 ### <a name="billing-support"></a>Supporto per la fatturazione:
 
-Thai: lun-ven 9 AM-17:00
+Thai: Mon-Fri 9.00-17.00
 
-Inglese: lun-ven 9 AM-18.00
+Inglese: Mon-Fri 9.00-18.00
 
 ### <a name="technical-support"></a>Supporto tecnico:
 
-Thai: lun-ven 9 AM-17:00
+Thai: Mon-Fri 9.00-17.00
 
-Italiano: 24 ore al giorno, 7 giorni alla settimana
+Inglese: 24 ore al giorno, 7 giorni alla settimana
