@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 09/19/2019
+ms.date: 10/15/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,12 +13,12 @@ localization_priority: Priority
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: Fornisce un’introduzione ai componenti, ai piani e ai percorsi di distribuzione di Microsoft 365 per le aziende.
-ms.openlocfilehash: fa076517b071efbe3a5002d6a48418a796e38ca4
-ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
+ms.openlocfilehash: d34ddd9b577f4baff4ebb77f84f48bf2b779c93c
+ms.sourcegitcommit: 53ff1fe6d6143b0bf011031eea9b85dc01ae4f74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48327474"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48487153"
 ---
 # <a name="microsoft-365-for-enterprise-overview"></a>Panoramica di Microsoft 365 per le aziende
 
@@ -87,7 +87,7 @@ Questo poster di due pagine è modo rapido per inventariare l'infrastruttura esi
 
 [Windows 7](https://aka.ms/win7upgrade) ha raggiunto la fine del supporto il **14 gennaio 2020**.
 
-Questi prodotti raggiungeranno la fine del supporto il **13 ottobre 2020**:
+Questi prodotti hanno raggiunto la fine del supporto il **13 ottobre 2020**:
 
 - [Office 2010](https://docs.microsoft.com/DeployOffice/office-2010-end-support-roadmap)
 - [Exchange Server 2010](exchange-2010-end-of-support.md)
@@ -104,23 +104,23 @@ Questo poster di una pagina rappresenta un modo rapido per comprendere i vari pe
 
 ## <a name="plan-for-and-deploy"></a>Pianificare e distribuire
 
-Sono disponibili tre modi per pianificare la distribuzione di prodotti, caratteristiche e componenti di Microsoft 365 per le aziende:
+Sono disponibili tre modi per pianificare e distribuire i prodotti, le funzionalità e i componenti di Microsoft 365 per le aziende:
 
-- In partnership con FastTrack:
+- In partnership con FastTrack
 
    Con FastTrack, i tecnici Microsoft aiuteranno a passare al cloud secondo i tempi desiderati. Vedere [FastTrack per Microsoft 365](https://fasttrack.microsoft.com/microsoft365).
 
 - Con il supporto di Microsoft Consulting Services o di un [partner Microsoft](https://partner.microsoft.com/):
 
-   I consulenti possono analizzare l'infrastruttura corrente e aiutare a sviluppare un piano per integrare interamente il software e i servizi di Microsoft 365 per le aziende.
+   I consulenti possono analizzare l'infrastruttura corrente e supportare nello sviluppo di un piano per incorporare completamente il software e i servizi di Microsoft 365 per le aziende.
 
-- Fai da te:
+- Procedere autonomamente
 
-   Iniziare con la [Roadmap di rete](networking-roadmap-microsoft-365.md) per sviluppare o verificare i carichi di lavoro esistenti per l'infrastruttura e la produttività.
+   Iniziare con la [Roadmap di rete](networking-roadmap-microsoft-365.md) per sviluppare o verificare i carichi di lavoro esistenti dell’infrastruttura e la produttività.
 
-Per un esempio di come Microsoft 365 è stato implementato dauna organizzazione multimazionale fittizia, ma rappresentativa, vedere la [Contoso Corporation](contoso-overview.md).
+Per avere un esempio di come Microsoft 365 è stato implementato da una organizzazione multinazionale fittizia, ma rappresentativa, vedere il [case study di Contoso Corporation](contoso-overview.md).
 
-## <a name="additional-microsoft-365-products"></a>Altri prodotti di Microsoft 365
+## <a name="additional-microsoft-365-products"></a>Altri prodotti Microsoft 365
 
 - [Microsoft 365 Business Premium](https://docs.microsoft.com/microsoft-365/business/)
 

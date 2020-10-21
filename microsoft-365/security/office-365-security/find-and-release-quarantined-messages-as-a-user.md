@@ -19,12 +19,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Informazioni su come gli utenti possono visualizzare e gestire i messaggi in quarantena in Exchange Online Protection (EOP) che avrebbero dovuto essere recapitati.
-ms.openlocfilehash: 03bcb0518b75d9a35aae1b6664b410b521adf940
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 2a8e37dc430af5b3d3c47179c721d83832f01184
+ms.sourcegitcommit: 153f413402f93b79be421741f3b9fed318d6d270
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48202844"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "48600346"
 ---
 # <a name="find-and-release-quarantined-messages-as-a-user-in-eop"></a>Trovare e rilasciare i messaggi messi in quarantena come utente di EOP
 
@@ -100,6 +100,11 @@ L'utente può visualizzare, rilasciare ed eliminare i messaggi in quarantena di 
      - **Posta indesiderata**
 
      - **Phishing**
+     
+   - **Tipo di criteri**: filtrare i messaggi in base al tipo di criteri:
+     - **Criteri anti-phishing**
+     - **Criteri filtro contenuti ospitati**
+     
 
    Per cancellare il filtro, fare clic su **Cancella**. Per nascondere il riquadro a comparsa del filtro, fare di nuovo clic su **Filtro**.
 
@@ -108,6 +113,8 @@ L'utente può visualizzare, rilasciare ed eliminare i messaggi in quarantena di 
    - **ID messaggio**: identificatore univoco globale del messaggio. Se si seleziona un messaggio nell'elenco, il valore **ID messaggio** viene visualizzato nel riquadro a comparsa **Dettagli**. Gli amministratori possono usare [Traccia messaggio](message-trace-scc.md) per trovare i messaggi e i valori ID messaggio corrispondenti.
 
    - **Indirizzo di posta elettronica del mittente**: indirizzo di posta elettronica di un singolo mittente.
+   
+   - **Nome dei criteri**: usare l'intero nome dei criteri del messaggio. Per la ricerca non viene fatta distinzione tra maiuscole e minuscole.
 
    - **Indirizzo di posta elettronica del destinatario**: indirizzo di posta elettronica di un singolo destinatario.
 
