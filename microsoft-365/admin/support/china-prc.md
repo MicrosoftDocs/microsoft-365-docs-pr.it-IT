@@ -4,7 +4,7 @@ author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
@@ -13,12 +13,12 @@ ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Informazioni su come contattare il supporto per il proprio paese o area geografica.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 4cf6e4db2a4609583b73804378f9d964269358b1
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 26b8a044f2a8b537a95372c8733adbf2b05f506b
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44398259"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48643416"
 ---
 # <a name="contact-support-for-china-prc"></a>Contattare il supporto per la Cina (PRC)
 
@@ -30,15 +30,15 @@ ms.locfileid: "44398259"
 ## <a name="hours"></a>Ore
 ### <a name="billing-support"></a>Supporto per la fatturazione:
 
-Cinese mandarino: lun-ven 9.00-18.00
+Cinese mandarino: Mon-Fri 9.00-18.00
 
-Inglese: lun-ven 9 AM-18.00
+Inglese: Mon-Fri 9.00-18.00
 
 ### <a name="technical-support"></a>Supporto tecnico:
 
-Cinese mandarino: lun-ven 9.00-18.00
+Cinese mandarino: Mon-Fri 9.00-18.00
 
-Italiano: 24 ore al giorno, 7 giorni alla settimana
+Inglese: 24 ore al giorno, 7 giorni alla settimana
 
 Numero di telefono alternativo: 400 920 0365 (mobile)
 
@@ -52,10 +52,10 @@ Numero di telefono alternativo: 400 920 0365 (mobile)
 ## <a name="hours"></a>Ore
 ### <a name="billing-support"></a>Supporto per la fatturazione:
 
-Cinese e inglese: lun-ven 9.00-18.00
+Cinese e inglese: Mon-Fri 9.00-18.00
 
 ### <a name="technical-support"></a>Supporto tecnico:
 
-Supporto telefonico cinese e inglese: lun-ven 9 AM-9 PM
+Supporto telefonico cinese e inglese: Mon-Fri 9 AM-9 PM
 
 Supporto per il cinese e l'inglese online (tramite l'interfaccia di amministrazione): 24 ore al giorno, 7 giorni alla settimana

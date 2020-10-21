@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: sharik
 author: skjerland
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: overview
 ms.service: o365-administration
@@ -20,12 +20,12 @@ search.appverid:
 - GEA150
 description: Per ulteriori informazioni, vedere l'app Microsoft Office per Android per Office 365 gestito da 21Vianet e come scaricarlo per i clienti in Cina.
 monikerRange: o365-21vianet
-ms.openlocfilehash: b2c35c2f9b4ea8e10ace3c9426aed7aadefe0b1d
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: 6cabe2e9769f7cebf9d128f78773f8014fd004e2
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47545797"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48644808"
 ---
 # <a name="office-app-for-android-for-office-365-operated-by-21vianet"></a>App di Office per Android per Office 365 gestito da 21Vianet
 

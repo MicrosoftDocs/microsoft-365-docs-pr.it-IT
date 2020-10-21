@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: sharik
 author: skjerland
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: overview
 ms.service: o365-administration
@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: a8ab5061-3346-4da0-bb7c-5260822b53ae
 description: Per ulteriori informazioni, vedere Office 365 gestito da 21Vianet che è stato creato per soddisfare le esigenze di servizi cloud sicuri, affidabili e scalabili in Cina.
 monikerRange: o365-21vianet
-ms.openlocfilehash: 133df44635927d185e72c7981953e07162d458a9
-ms.sourcegitcommit: 5b769f74bcc76ac8d38aad815d1728824783cd9f
+ms.openlocfilehash: 5906bf961e246f1d707b030ffb4c788da353200c
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "45079738"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48644652"
 ---
 # <a name="office-365-operated-by-21vianet"></a>Office 365 gestito da 21Vianet
 
@@ -57,7 +57,7 @@ Se si desidera informazioni su come iniziare a utilizzare i servizi generali di 
 |:-----|:-----|
 |Domini personalizzati  <br/> |Gli amministratori possono creare e/o utilizzare domini personalizzati registrati tramite provider di dominio specifici per il cinese. Se non si dispone di un dominio personalizzato, è possibile [acquistare un nome di dominio](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/buy-a-domain-name) da un registrar. Se si dispone già di un utente, [individuare il registrar o il provider di hosting DNS](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/find-your-domain-registrar).  <br/> Inoltre, se si crea un sito Web pubblico con il servizio Office 365 SharePoint Online, i criteri di conformità in Cina richiedono l'ottenimento di un numero di provider di contenuti Internet (ICP).  **Nota:** La convalida automatica per le parole non consentite nei nomi di dominio personalizzati non è disponibile.           |
 |Supporto tecnico, per abbonamenti e per la fatturazione  <br/> |Fornito da 21Vianet. Per informazioni su come contattare il supporto tecnico, vedere [contattare il supporto di Office 365 for business](../contact-support-for-business-products.md).  <br/> |
-|Reimpostazione password self-service  <br/> |Disponibile solo per gli amministratori. Per ulteriori informazioni, vedere [modificare o reimpostare la password in Office 365 gestito da 21ViaNet](https://support.microsoft.com/office/d8eb5b62-9d0e-4267-a9bf-2aa491ee6d0b).  <br/> |
+|Reimpostazione della password self-service  <br/> |Disponibile solo per gli amministratori. Per ulteriori informazioni, vedere [modificare o reimpostare la password in Office 365 gestito da 21ViaNet](https://support.microsoft.com/office/d8eb5b62-9d0e-4267-a9bf-2aa491ee6d0b).  <br/> |
 |Sicurezza, privacy, conformità e dettagli sui livelli di supporto  <br/> |Fornito da 21Vianet.  <br/> |
 |Installazione desktop di Office  <br/> |L'installazione desktop di Office non è disponibile per Office 2010 e Office 2007. Tuttavia, gli amministratori possono [configurare le applicazioni desktop di Office correnti in modo che funzionino con office 365](https://support.microsoft.com/office/85646aba-7e6c-4e24-a047-8fd9ce4f9d2e).  <br/> |
 |Supporto per dispositivi mobili\*  <br/> | A breve sono disponibili le seguenti funzionalità per dispositivi mobili:  <br/>  Gestione di dispositivi mobili (MDM)  <br/>  BlackBerry Business Cloud Services (BBCS) non è disponibile, ma è possibile utilizzare i dispositivi Exchange ActiveSync o un'offerta di Research in Motion (RIM, la soluzione di posta elettronica wireless BlackBerry) per eseguire BlackBerry Enterprise Server (BES).  <br/>  Per ulteriori informazioni sul supporto per i dispositivi mobili, vedere [set up and Manage Mobile Access for your users](https://support.microsoft.com/office/01fff219-4492-40f2-82d3-fd2ffc0ad802).  <br/> |
@@ -123,10 +123,10 @@ Per le organizzazioni che eseguono versioni precedenti o miste di Exchange Serve
 
 |**Versione di Exchange locale**|**Versione del server ibrido di Exchange**|**Procedura guidata di configurazione ibrida supportata?**|**Funzionalità ibride supportate**|
 |:-----|:-----|:-----|:-----|
-| 2016  <br/> | N/D  <br/> | Sì  <br/> | Tutti  <br/> |
-| 2013 CU5  <br/> | N/D  <br/> | Sì  <br/> | Tutti  <br/> |
-| 2013 SP1  <br/> | 2013 CU5  <br/> | Sì  <br/> | Tutti  <br/> |
-| 2013 SP1  <br/> | 2013 SP1  <br/> | Sì  <br/> | Tutti  <br/> |
+| 2016  <br/> | N/D  <br/> | Sì  <br/> | Tutto  <br/> |
+| 2013 CU5  <br/> | N/D  <br/> | Sì  <br/> | Tutto  <br/> |
+| 2013 SP1  <br/> | 2013 CU5  <br/> | Sì  <br/> | Tutto  <br/> |
+| 2013 SP1  <br/> | 2013 SP1  <br/> | Sì  <br/> | Tutto  <br/> |
 | Combinazione di 2013 SP1/2010 SP3  <br/> | 2013 CU5  <br/> | Sì  <br/> | All, ad eccezione di eDiscovery/Archiving sul posto, accesso OWA (vedere la tabella seguente)  <br/> |
 | Combinazione di 2013 SP1/2010 SP3  <br/> | 2013 SP1  <br/> | Sì  <br/> | Solo disponibilità configurata manualmente  <br/> |
 | 2010 SP3  <br/> | 2010 SP3  <br/> | No  <br/> | Nessuno  <br/> |
