@@ -4,7 +4,7 @@ author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
@@ -13,25 +13,25 @@ ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Informazioni su come contattare il supporto per il proprio paese o area geografica.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 277a28e1875daaf64f8ba4b55d733ee0b43e3f98
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 4c64625fbe84210bb8f5aecdff92dfa0ebb9d3d0
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44398163"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48643176"
 ---
-# <a name="contact-support-for-costa-rica"></a><span data-ttu-id="d72e3-103">Contattare il supporto per il Costa Rica</span><span class="sxs-lookup"><span data-stu-id="d72e3-103">Contact support for Costa Rica</span></span>
+# <a name="contact-support-for-costa-rica"></a><span data-ttu-id="64d5e-103">Contattare il supporto per il Costa Rica</span><span class="sxs-lookup"><span data-stu-id="64d5e-103">Contact support for Costa Rica</span></span>
 
-<span data-ttu-id="d72e3-104">[Trovare un altro paese o un'area geografica](../contact-support-for-business-products.md).</span><span class="sxs-lookup"><span data-stu-id="d72e3-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
+<span data-ttu-id="64d5e-104">[Trovare un altro paese o un'area geografica](../contact-support-for-business-products.md).</span><span class="sxs-lookup"><span data-stu-id="64d5e-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="d72e3-105">Numero di telefono</span><span class="sxs-lookup"><span data-stu-id="d72e3-105">Phone number</span></span>
-<span data-ttu-id="d72e3-106">0800 012 1447</span><span class="sxs-lookup"><span data-stu-id="d72e3-106">0800 012 1447</span></span>
+## <a name="phone-number"></a><span data-ttu-id="64d5e-105">Numero di telefono</span><span class="sxs-lookup"><span data-stu-id="64d5e-105">Phone number</span></span>
+<span data-ttu-id="64d5e-106">0800 012 1447</span><span class="sxs-lookup"><span data-stu-id="64d5e-106">0800 012 1447</span></span>
 
-## <a name="hours"></a><span data-ttu-id="d72e3-107">Ore</span><span class="sxs-lookup"><span data-stu-id="d72e3-107">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="d72e3-108">Supporto per la fatturazione:</span><span class="sxs-lookup"><span data-stu-id="d72e3-108">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="64d5e-107">Ore</span><span class="sxs-lookup"><span data-stu-id="64d5e-107">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="64d5e-108">Supporto per la fatturazione:</span><span class="sxs-lookup"><span data-stu-id="64d5e-108">Billing Support:</span></span>
 
-<span data-ttu-id="d72e3-109">Spagnolo: lun-ven 9 AM-17.00</span><span class="sxs-lookup"><span data-stu-id="d72e3-109">Spanish: Mon-Fri 9 AM-5 PM</span></span>
+<span data-ttu-id="64d5e-109">Spagnolo: Mon-Fri 9.00-17.00</span><span class="sxs-lookup"><span data-stu-id="64d5e-109">Spanish: Mon-Fri 9 AM-5 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="d72e3-110">Supporto tecnico:</span><span class="sxs-lookup"><span data-stu-id="d72e3-110">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="64d5e-110">Supporto tecnico:</span><span class="sxs-lookup"><span data-stu-id="64d5e-110">Technical Support:</span></span>
 
-<span data-ttu-id="d72e3-111">Spagnolo: 24 ore al giorno, 7 giorni alla settimana</span><span class="sxs-lookup"><span data-stu-id="d72e3-111">Spanish: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="64d5e-111">Spagnolo: 24 ore al giorno, 7 giorni alla settimana</span><span class="sxs-lookup"><span data-stu-id="64d5e-111">Spanish: 24 hours a day, 7 days a week</span></span>
