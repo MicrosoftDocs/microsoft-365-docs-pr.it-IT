@@ -4,7 +4,7 @@ author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
@@ -13,12 +13,12 @@ ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Informazioni su come contattare il supporto per il proprio paese o area geografica.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 37f2fadfa73be3d2093d6cf34380a667572b7729
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: fff0648fcf1744dfe65eea12efe2cf04fd7c67b1
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44397887"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48642672"
 ---
 # <a name="contact-support-for-french-polynesia"></a>Contattare il supporto per la Polinesia francese
 
@@ -30,14 +30,14 @@ ms.locfileid: "44397887"
 ## <a name="hours"></a>Ore
 ### <a name="billing-support"></a>Supporto per la fatturazione:
 
-Francese: dom-ven 10.00-18.00
+Francese: Sun-Fri dalle 22.00 alle 18.00
 
-Italiano: dom-ven 10.00-18.00
+Inglese: Sun-Fri 10.00-18.00
 
 ### <a name="technical-support"></a>Supporto tecnico:
 
-Francese: lun-ven 9 PM-10.00
+Francese: Mon-Fri 9 PM-10 AM
 
-Italiano: 24 ore al giorno, 7 giorni alla settimana
+Inglese: 24 ore al giorno, 7 giorni alla settimana
 
 Tariffe di chiamata internazionali applicate

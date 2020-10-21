@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: e3b29a8182e38fa05e5f791478157c978632fb13
-ms.sourcegitcommit: 22755cebfbfa2c4dc3f8b4f54ccb23636a211ee5
+ms.openlocfilehash: 29e5eb64445c6c5c45b8e1fd1633c030b5f32b86
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "48477006"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48649668"
 ---
 # <a name="advanced-hunting-query-best-practices"></a>Procedure consigliate per query in Ricerca avanzata
 
@@ -36,10 +36,10 @@ ms.locfileid: "48477006"
 
 Applicare questi suggerimenti per ottenere risultati più velocemente ed evitare timeout durante l'esecuzione di query complesse. Per altre informazioni su come migliorare le prestazioni della query, vedere [procedure consigliate per le query di Esplora dati](https://docs.microsoft.com/azure/kusto/query/best-practices).
 
-## <a name="understand-cpu-resource-limits"></a>Informazioni sui limiti relativi alle risorse della CPU
-A seconda delle dimensioni, ogni tenant ha accesso a una quantità di risorse della CPU allocata per l'esecuzione di query di ricerca avanzate. Per informazioni dettagliate sui vari limiti di servizio, [vedere informazioni sui limiti di caccia avanzati](advanced-hunting-limits.md).
+## <a name="understand-cpu-resource-quotas"></a>Informazioni sulle quote delle risorse della CPU
+A seconda delle dimensioni, ogni tenant ha accesso a una quantità di risorse della CPU allocata per l'esecuzione di query di ricerca avanzate. Per informazioni dettagliate sui vari limiti di servizio, [vedere informazioni sulle quote avanzate di caccia e sui parametri di utilizzo](advanced-hunting-limits.md).
 
-I clienti che eseguono più query regolarmente devono tenere conto dei consumi e applicare le indicazioni di ottimizzazione in questo articolo per ridurre al minimo le interruzioni derivanti dal superamento dei limiti.
+I clienti che eseguono più query regolarmente devono tenere conto del consumo e applicare le indicazioni di ottimizzazione riportate in questo articolo per ridurre al minimo le interruzioni derivanti dal superamento delle quote o dei parametri di utilizzo.
 
 ## <a name="general-optimization-tips"></a>Suggerimenti per l'ottimizzazione generale
 
@@ -265,7 +265,7 @@ Per informazioni su tutte le funzioni di analisi supportate, [vedere informazion
 
 ## <a name="related-topics"></a>Argomenti correlati
 - [Documentazione relativa alla lingua di query di Kusto](https://docs.microsoft.com/azure/data-explorer/kusto/query/)
-- [Limiti di servizio](advanced-hunting-limits.md)
+- [Quote e parametri di utilizzo](advanced-hunting-limits.md)
 - [Gestire gli errori di ricerca avanzata](advanced-hunting-errors.md)
 - [Panoramica della ricerca avanzata](advanced-hunting-overview.md)
 - [Capire il linguaggio delle query](advanced-hunting-query-language.md)

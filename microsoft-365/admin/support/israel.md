@@ -4,7 +4,7 @@ author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
@@ -13,12 +13,12 @@ ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Informazioni su come contattare il supporto per il proprio paese o area geografica.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 620db5e60b219ec1d2cc29e3c64ddaffb38babfb
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 03101d45c22a592756c83dc9d45c623fba39e48d
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44397539"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48641952"
 ---
 # <a name="contact-support-for-israel"></a>Contattare il supporto per Israele
 
@@ -30,12 +30,12 @@ ms.locfileid: "44397539"
 ## <a name="hours"></a>Ore
 ### <a name="billing-support"></a>Supporto per la fatturazione:
 
-Ebraico: Dom-gio 9.00-18.00
+Ebraico: Sun-Thu 9.00-18.00
 
-Inglese: lun-ven 9 AM-18.00
+Inglese: Mon-Fri 9.00-18.00
 
 ### <a name="technical-support"></a>Supporto tecnico:
 
-Ebraico: Dom-gio 9.00-18.00
+Ebraico: Sun-Thu 9.00-18.00
 
-Italiano: 24 ore al giorno, 7 giorni alla settimana
+Inglese: 24 ore al giorno, 7 giorni alla settimana

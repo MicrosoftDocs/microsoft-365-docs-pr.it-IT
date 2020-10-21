@@ -4,7 +4,7 @@ author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
@@ -13,12 +13,12 @@ ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Informazioni su come contattare il supporto per il proprio paese o area geografica.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 5def2ba00c9e6366d3d1a1c95f6e631e7ba318b3
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 70e6c1b69c0a5575ea171906e450fd8c8d2e629e
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44397635"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48642180"
 ---
 # <a name="contact-support-for-hong-kong-sar"></a>Contattare il supporto per Hong Kong SAR
 
@@ -30,18 +30,18 @@ ms.locfileid: "44397635"
 ## <a name="hours"></a>Ore
 ### <a name="billing-support"></a>Supporto per la fatturazione:
 
-Cantonese: lun-ven 9.00-18.00
+Cantonese: Mon-Fri 9.00-18.00
 
-Mandarino: lun-ven 9.00-18.00
+Mandarino: Mon-Fri 9.00-18.00
 
-Inglese: lun-ven 9 AM-18.00
+Inglese: Mon-Fri 9.00-18.00
 
 ### <a name="technical-support"></a>Supporto tecnico:
 
-Cantonese: lun-ven 9.00-18.00
+Cantonese: Mon-Fri 9.00-18.00
 
-Mandarino: lun-ven 9.00-18.00
+Mandarino: Mon-Fri 9.00-18.00
 
-Italiano: 24 ore al giorno, 7 giorni alla settimana
+Inglese: 24 ore al giorno, 7 giorni alla settimana
 
 Applicazione delle tariffe di chiamata locali
