@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -24,18 +24,18 @@ search.appverid:
 - MOE150
 ms.assetid: 5bc3f460-13cc-48c0-abd6-b80bae72d04a
 description: Informazioni su come è possibile reimpostare le password utilizzando lo strumento di reimpostazione della password self-service.
-ms.openlocfilehash: 1684afd1baf32acc6c4245938b2ac7ee024d7374
-ms.sourcegitcommit: a6625f76e8f19eebd9353ed70c00d32496ec06eb
+ms.openlocfilehash: 7ecadaa42610e0b77dc1727c11140080bd7b1779
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47361808"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48646680"
 ---
 # <a name="let-users-reset-their-own-passwords"></a>Consentire agli utenti di reimpostare le loro password
 
 Come amministratore di Microsoft 365, è possibile consentire agli utenti di utilizzare lo [strumento di reimpostazione della password in modalità self-service](https://go.microsoft.com/fwlink/p/?LinkId=522677) in modo che non sia necessario reimpostare le password. Un gran risparmio di tempo!
   
-## <a name="before-you-begin"></a>Prima di iniziare
+## <a name="before-you-begin"></a>Informazioni preliminari
   
 - Si ottiene la reimpostazione della password in modalità self-service per gli utenti Cloud **gratis** con qualsiasi piano di Microsoft 365 business, Education o no profit paid. Non funziona con Microsoft 365 Trial.
 
@@ -43,7 +43,7 @@ Come amministratore di Microsoft 365, è possibile consentire agli utenti di uti
 
 - **Se si utilizza Active Directory locale**, non si applicano i due punti sopra riportati. Piuttosto, è possibile configurare questa impostazione, ma **richiede un abbonamento a pagamento ad Azure ad Premium**.
 
-Questo articolo è per le persone che impostano criteri di scadenza delle password in un'azienda, un istituto di istruzione o un'organizzazione no profit. Per eseguire questa procedura, è necessario eseguire l'accesso con l'account di amministratore di Microsoft 365. [Che cos'è un account di amministratore?](../admin-overview/admin-overview.md)
+Questo articolo è per le persone che impostano criteri di scadenza delle password in un'azienda, un istituto di istruzione o un'organizzazione no profit. Per completare questa procedura, è necessario accedere con l'account amministratore di Microsoft 365. [Che cos'è un account di amministratore?](../admin-overview/admin-overview.md)
 
 Per eseguire questa procedura è necessario essere un [amministratore globale o una password](about-admin-roles.md) .
 
@@ -87,7 +87,7 @@ Con questi passaggi si attiva la reimpostazione della password in modalità self
   
 7. Quando gli utenti accedono, verrà richiesto di immettere ulteriori informazioni di contatto che consentiranno di reimpostare la password in futuro.
 
-## <a name="related-content"></a>Contenuto correlato
+## <a name="related-content"></a>Contenuti correlati
 
 [Impostare i criteri di scadenza delle password per l'organizzazione](../manage/set-password-expiration-policy.md)
 

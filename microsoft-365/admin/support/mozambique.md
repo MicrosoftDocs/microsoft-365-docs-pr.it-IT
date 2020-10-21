@@ -4,7 +4,7 @@ author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
@@ -13,12 +13,12 @@ ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Informazioni su come contattare il supporto per il proprio paese o area geografica.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 9dae4f2374e6727505091dbd438eafac191db404
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 1f09936154759b68c955f011cd4c782652815a6a
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44395679"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48640872"
 ---
 # <a name="contact-support-for-mozambique"></a>Contattare il supporto per il Mozambico
 
@@ -30,12 +30,12 @@ ms.locfileid: "44395679"
 ## <a name="hours"></a>Ore
 ### <a name="billing-support"></a>Supporto per la fatturazione:
 
-Inglese: lun-ven 7.00-18.00
+Inglese: Mon-Fri 7.00-18.00
 
 ### <a name="technical-support"></a>Supporto tecnico:
 
-Portoghese: lun-ven 9 AM-7 PM
+Portoghese: Mon-Fri 9 AM-7 PM
 
-Italiano: 24 ore al giorno, 7 giorni alla settimana
+Inglese: 24 ore al giorno, 7 giorni alla settimana
 
 Tariffe di chiamata internazionali applicate

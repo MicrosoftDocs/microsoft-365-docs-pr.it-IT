@@ -21,20 +21,20 @@ search.appverid:
 - MET150
 - MOE150
 description: Informazioni su come impostare i requisiti di password complessa per gli utenti, utilizzando Windows PowerShell.
-ms.openlocfilehash: 1634e2f0de2cdd2cac5e1928adbef54457e50716
-ms.sourcegitcommit: e17fd18b01d70e6428263c20cbce4b92e2a97765
+ms.openlocfilehash: 9f6fd61396d99245ffeabf757d3cb65c5d5cb85e
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48626144"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48646620"
 ---
 # <a name="set-strong-password-requirement-for-users"></a>Impostare il requisito di password complessa per gli utenti
 
-In questo articolo viene illustrato come impostare i requisiti di password complesse per gli utenti. Per eseguire questa procedura è necessario utilizzare PowerShell.
+In questo articolo viene illustrato come disattivare i requisiti di password complessa per gli utenti. I requisiti per le password forti sono attivati per impostazione predefinita nell'organizzazione Microsoft 365 for business. È possibile che l'organizzazione disponga di requisiti per disabilitare password complesse. Seguire i passaggi descritti di seguito per disattivare i requisiti di password complessa. Per eseguire questa procedura è necessario utilizzare PowerShell.
 
 ## <a name="before-you-begin"></a>Informazioni preliminari
 
-Questo articolo è destinato agli utenti che gestiscono i criteri di password per un'azienda, una scuola o un no profit. Per completare questa procedura, è necessario accedere con l'account amministratore di Microsoft 365. [Che cos'è un account amministratore?](../admin-overview/admin-overview.md). Per eseguire questa procedura è necessario essere un [amministratore globale o una password](about-admin-roles.md) .
+Questo articolo è destinato agli utenti che gestiscono i criteri di password per un'azienda, una scuola o un no profit. Per completare questa procedura, è necessario accedere con l'account amministratore di Microsoft 365. [Che cos'è un account di amministratore?](../admin-overview/admin-overview.md) Per eseguire questa procedura è necessario essere un [amministratore globale o una password](about-admin-roles.md) .
 
 È inoltre necessario connettersi a Microsoft 365 con PowerShell.
 
@@ -42,15 +42,15 @@ Questo articolo è destinato agli utenti che gestiscono i criteri di password pe
 
 1. [Connettersi a Microsoft 365 con PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
 
-2. Tramite PowerShell, è possibile abilitare i requisiti di password complessa per tutti gli utenti con il comando seguente:
+2. Tramite PowerShell, è possibile disattivare i requisiti di password complessa per tutti gli utenti con il comando seguente:
 
     ```powershell
-    Get-MsolUser | Set-MsolUser -StrongPasswordRequired $true
+    Get-MsolUser | Set-MsolUser -StrongPasswordRequired $false
 
-3. You can turn on strong password requirements for specific users with this command:
+3. You can turn of strong password requirements for specific users with this command:
 
     ```powershell
-    Set-MsolUser –UserPrincipalName –StrongPasswordRequired  $true
+    Set-MsolUser –UserPrincipalName –StrongPasswordRequired  $false
     ```
 
 > [!NOTE]

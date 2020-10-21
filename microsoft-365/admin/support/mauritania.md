@@ -4,7 +4,7 @@ author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
@@ -13,12 +13,12 @@ ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Informazioni su come contattare il supporto per il proprio paese o area geografica.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: d112a8ebcb80b8eaeff762072837bd9519dece71
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 3e2cf7dfb970feb6c12e5d01c28843c64063b683
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44397143"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48641100"
 ---
 # <a name="contact-support-for-mauritania"></a>Contattare il supporto per la Mauritania
 
@@ -36,14 +36,14 @@ Immettere il codice 7700
 ## <a name="hours"></a>Ore
 ### <a name="billing-support"></a>Supporto per la fatturazione:
 
-Arabo: Dom-Gio 8 AM-16.00
+Arabo: Sun-Thu 8.00-16.00
 
-Italiano: lun-ven 8 AM-16.00
+Inglese: Mon-Fri 8.00-16.00
 
 ### <a name="technical-support"></a>Supporto tecnico:
 
-Arabo: Dom-Gio 8 AM-16.00
+Arabo: Sun-Thu 8.00-16.00
 
-Italiano: 24 ore al giorno, 7 giorni alla settimana
+Inglese: 24 ore al giorno, 7 giorni alla settimana
 
 Tariffe di chiamata internazionali applicate

@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -27,12 +27,12 @@ search.appverid:
 ms.assetid: 9b23c065-eef9-4bf7-acf5-127eb46d5e67
 ROBOTS: NOINDEX
 description: 'Informazioni su ciò che è necessario conoscere prima di passare attraverso il processo di iscrizione per Office 365. '
-ms.openlocfilehash: dd374cd12f4e3a041869d17157e7198445f99e69
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+ms.openlocfilehash: 0e5e4d89811807bfdb1bb71fb213973bdba075e2
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44780518"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48646632"
 ---
 # <a name="how-to-sign-up---admin-help"></a>Come iscriversi-Guida per gli amministratori
 

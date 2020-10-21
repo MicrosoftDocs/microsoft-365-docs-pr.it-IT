@@ -4,7 +4,7 @@ author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
@@ -13,12 +13,12 @@ ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Informazioni su come contattare il supporto per il proprio paese o area geografica.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 38e6ef9181a196a6a666d7c840450a8ca7d8e328
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 48f0b29f57b136c073a550b84c4251ad0f2a0af0
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44397167"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48641280"
 ---
 # <a name="contact-support-for-marshall-islands"></a>Contattare il supporto per le Isole Marshall
 
@@ -30,10 +30,10 @@ ms.locfileid: "44397167"
 ## <a name="hours"></a>Ore
 ### <a name="billing-support"></a>Supporto per la fatturazione:
 
-Inglese: lun-ven 1 PM-9 PM
+Inglese: Mon-Fri 1 PM-9 PM
 
 ### <a name="technical-support"></a>Supporto tecnico:
 
-Italiano: 24 ore al giorno, 7 giorni alla settimana
+Inglese: 24 ore al giorno, 7 giorni alla settimana
 
 Tariffe di chiamata internazionali applicate

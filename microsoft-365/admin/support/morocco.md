@@ -4,7 +4,7 @@ author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
@@ -13,12 +13,12 @@ ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Informazioni su come contattare il supporto per il proprio paese o area geografica.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 5649cca563d4b69a4bc86a424c4f3a969e78f6ed
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 8a815c4605094b10d210e35ab5eabb4b7f7fd9ca
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44395899"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48640860"
 ---
 # <a name="contact-support-for-morocco"></a>Contattare il supporto per il Marocco
 
@@ -34,18 +34,18 @@ Immettere il codice 7700
 ## <a name="hours"></a>Ore
 ### <a name="billing-support"></a>Supporto per la fatturazione:
 
-Arabo: Dom-Gio 8 AM-16.00
+Arabo: Sun-Thu 8.00-16.00
 
-Francese: lun-ven 8 AM-16.00
+Francese: Mon-Fri 8.00-16.00
 
-Italiano: lun-ven 8 AM-16.00
+Inglese: Mon-Fri 8.00-16.00
 
 ### <a name="technical-support"></a>Supporto tecnico:
 
-Arabo: Dom-Gio 8 AM-16.00
+Arabo: Sun-Thu 8.00-16.00
 
-Francese: lun-ven 7 AM-8 PM
+Francese: Mon-Fri 7.00-20.00
 
-Italiano: 24 ore al giorno, 7 giorni alla settimana
+Inglese: 24 ore al giorno, 7 giorni alla settimana
 
 Applicazione delle tariffe di chiamata locali

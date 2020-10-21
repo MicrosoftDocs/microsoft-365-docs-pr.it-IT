@@ -4,7 +4,7 @@ author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
@@ -13,12 +13,12 @@ ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Informazioni su dove inviare il pagamento per l'abbonamento.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 804a31953a9073005201d1aa35d56d8cdeb74351
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 9d0b6cb118005ae7e3ae8e110a436faa9829e4b5
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44401247"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48647256"
 ---
 # <a name="payment-information-for-hong-kong"></a>Informazioni di pagamento per Hong Kong
 
@@ -33,4 +33,4 @@ Seguire le istruzioni per il pagamento sulla fattura e sui numeri di fattura di 
 **Codice di succursale:** 848  
 **Codice SWIFT:** HSBCHKHH  
 **Numero account:** 848342259001    
-**Nome account:** Microsoft Payments Pte Ltd-fattura di Payco
+**Nome account:** Fattura Microsoft Payments PTE Ltd-Payco

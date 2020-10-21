@@ -4,7 +4,7 @@ author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
@@ -13,12 +13,12 @@ ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Informazioni su come contattare il supporto per il proprio paese o area geografica.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 9f76c62b21fa7e8a100c3afb9da4c199e3a62dcd
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: c7393492c99e37cf305bc5e942d9b6ceb9b4a800
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44397359"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48641652"
 ---
 # <a name="contact-support-for-latvia"></a>Contattare il supporto per la Lettonia
 
@@ -30,8 +30,8 @@ ms.locfileid: "44397359"
 ## <a name="hours"></a>Ore
 ### <a name="billing-support"></a>Supporto per la fatturazione:
 
-Inglese: lun-ven 9 AM-17.00
+Inglese: Mon-Fri 9.00-17.00
 
 ### <a name="technical-support"></a>Supporto tecnico:
 
-Italiano: 24 ore al giorno, 7 giorni alla settimana
+Inglese: 24 ore al giorno, 7 giorni alla settimana
