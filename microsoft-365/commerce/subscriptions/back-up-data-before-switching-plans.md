@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -22,12 +22,12 @@ search.appverid:
 - BEA160
 ms.assetid: a1da52c9-2167-4973-9e6d-492314a79b87
 description: Backup di Outlook, OneDrive, Yammer e contenuto di SharePoint prima di modificare i piani di Microsoft 365.
-ms.openlocfilehash: 1158a98fc35c586ae900ef64579b52b9d64a85e6
-ms.sourcegitcommit: 89b2ad0793c68415f178b8792a9757b9448345a6
+ms.openlocfilehash: f74acee03a21f2dfdf01c10017346b81a2885b3b
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/28/2020
-ms.locfileid: "47294718"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48647856"
 ---
 # <a name="back-up-data-before-switching-microsoft-365-for-business-plans"></a>Eseguire il backup dei dati prima di cambiare i piani di Microsoft 365 per le aziende
 

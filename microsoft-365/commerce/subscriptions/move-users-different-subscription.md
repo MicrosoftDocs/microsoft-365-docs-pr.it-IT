@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 description: Informazioni su come spostare gli utenti tra le sottoscrizioni.
 ms.date: 07/01/2020
-ms.openlocfilehash: d110ee7c49befa34f5a2cd3bb44dc114aec25b62
-ms.sourcegitcommit: 0650da0e54a2b484a3156b3aabe44397fbb38e00
+ms.openlocfilehash: 79f3e4636ff047c4d6f27d83e3644913a8fbb0b5
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "45016545"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48647796"
 ---
 # <a name="move-users-to-a-different-subscription"></a>Trasferire gli utenti a un abbonamento diverso
 
@@ -38,9 +38,9 @@ ms.locfileid: "45016545"
 
 Se si dispone di più di un abbonamento, è necessario che gli utenti dispongano di una licenza per un abbonamento, ma che si desidera spostarli in un altro abbonamento, è possibile sostituire la propria licenza esistente con un'altra.
 
-## <a name="before-you-begin"></a>Informazioni preliminari
+## <a name="before-you-begin"></a>Prima di iniziare
 
-Per assegnare le licenze, è necessario essere un amministratore globale, una licenza o un utente. Per ulteriori informazioni, vedere [Informazioni sui ruoli di amministratore di Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide).
+Per assegnare le licenze è necessario essere un amministratore globale, delle licenze o degli utenti. Per altre informazioni, vedere [Informazioni sui ruoli di amministratore di Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide).
 
 ## <a name="move-users-to-a-different-subscription"></a>Trasferire gli utenti a un abbonamento diverso
 
@@ -84,7 +84,7 @@ Per assegnare le licenze, è necessario essere un amministratore globale, una li
 
 Se non si intende [riassegnare le licenze inutilizzate ad altri utenti](../../managed-desktop/get-started/assign-licenses.md), prendere in considerazione la possibilità di [rimuovere le licenze dall'abbonamento](../../commerce/licenses/buy-licenses.md) in modo che non vengano pagate più licenze di quante ne siano necessarie.
 
-## <a name="related-content"></a>Contenuto correlato
+## <a name="related-content"></a>Contenuti correlati
 
 [Assegnare licenze agli utenti](../../admin/manage/assign-licenses-to-users.md) (articolo) \
 [Rimuovere le licenze dall'abbonamento](../../commerce/licenses/remove-licenses-from-subscription.md) (articolo) \

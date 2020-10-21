@@ -1,5 +1,5 @@
 ---
-title: Bloccare gli utenti Guest da un gruppo specifico
+title: Impedire che gli utenti guest vengano aggiunti a un gruppo specifico
 ms.reviewer: arvaradh
 ms.author: mikeplum
 author: MikePlumleyMSFT
@@ -14,21 +14,23 @@ ms.collection:
 ms.custom:
 - M365solutions
 f1.keywords: NOCSH
-description: Bloccare gli utenti Guest da un gruppo specifico
-ms.openlocfilehash: 17e5f8f9ab4107a12a0607dca3795d54b7be012c
-ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
+description: Informazioni su come impedire che gli utenti guest vengano aggiunti a un gruppo specifico
+ms.openlocfilehash: 91c7560186fb0b954075e9ff9c997b34121951cd
+ms.sourcegitcommit: cdf2b8dad7db9e16afd339abaaa5397faf11807c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48377307"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48651351"
 ---
-# <a name="block-guest-users-from-a-specific-microsoft-365-group-or-microsoft-teams-team"></a>Bloccare gli utenti Guest da uno specifico gruppo di Microsoft 365 o Microsoft Teams
+# <a name="prevent-guest-users-from-being-added-to-a-specific-microsoft-365-group-or-microsoft-teams-team"></a>Impedire che gli utenti guest vengano aggiunti a un gruppo Microsoft 365 o a un team di Microsoft Teams
 
-Se si desidera consentire agli utenti di accedere alla maggior parte dei gruppi e ai team, ma si desidera impedire l'accesso guest, è possibile bloccare l'accesso guest per singoli gruppi e team. Bloccando l'accesso Guest a un team, è possibile bloccare l'accesso Guest al gruppo associato.
+Se si desidera consentire agli utenti di accedere alla maggior parte dei gruppi e ai team, ma si desidera impedire l'accesso guest, è possibile bloccare l'accesso guest per singoli gruppi e team. Bloccando l'accesso Guest a un team, è possibile bloccare l'accesso Guest al gruppo associato. In questo modo si impedisce l'aggiunta di nuovi ospiti, ma non vengono rimossi gli ospiti già presenti nel gruppo o nel team.
 
 Se si utilizzano le etichette di riservatezza nell'organizzazione, è consigliabile utilizzarle per controllare l'accesso guest per ogni singolo gruppo. Per informazioni su come eseguire questa operazione, [utilizzare le etichette di riservatezza per proteggere il contenuto in Microsoft teams, microsoft 365 Groups e SharePoint sites](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites). Questo è l'approccio consigliato.
 
-È inoltre possibile bloccare l'accesso Guest ai singoli gruppi tramite Microsoft PowerShell.
+## <a name="change-group-settings-using-microsoft-powershell"></a>Modificare le impostazioni di gruppo mediante Microsoft PowerShell
+
+È inoltre possibile impedire l'aggiunta di nuovi ospiti ai singoli gruppi tramite PowerShell.
 
 È necessario utilizzare la versione di anteprima di [Azure Active Directory PowerShell per Graph](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2) (Module Name **AzureADPreview**) per modificare l'impostazione di accesso Guest a livello di gruppo:
 
