@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Gli amministratori possono imparare a visualizzare e gestire i messaggi in quarantena per tutti gli utenti in Exchange Online Protection (EOP). Gli amministratori nelle organizzazioni con Office 365 Advanced Threat Protection (Office 365 ATP) possono anche gestire i file in quarantena in SharePoint Online, OneDrive for business e Microsoft teams.
-ms.openlocfilehash: 5e1115157ef7d67bc7a3f626eb61d01ecc0986cb
-ms.sourcegitcommit: 153f413402f93b79be421741f3b9fed318d6d270
+ms.openlocfilehash: 65cf0a116dbed3dce93db8e34fa96d6ab68a9c9e
+ms.sourcegitcommit: e17fd18b01d70e6428263c20cbce4b92e2a97765
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 10/20/2020
-ms.locfileid: "48600542"
+ms.locfileid: "48626168"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-admin-in-eop"></a>Gestire i messaggi e i file messi in quarantena come amministratore in EOP
 
@@ -70,6 +70,7 @@ Gli amministratori nelle organizzazioni con Office 365 Advance Threat Protection
    - **Motivo della quarantena**<sup>\*</sup>
    - **Rilasciato?**<sup>\*</sup>
    - **Tipo di criterio**<sup>\*</sup>
+   - **Scadenza**
    - **Destinatario**
    - **ID messaggio**
    - **Nome criterio**
@@ -95,12 +96,12 @@ Gli amministratori nelle organizzazioni con Office 365 Advance Threat Protection
      - **Malware**
      - **Posta indesiderata**
      - **Phishing ad alta sicurezza**
-     
+
    - **Tipo di criterio**: filtrare i messaggi in base al tipo di criterio:
      - **Criteri anti-malware**
      - **Criteri allegati sicuri**
      - **Criteri anti-phishing**
-     - **Criteri di filtro contenuto ospitato**
+     - **Criteri di filtro contenuto ospitati** (criteri di protezione da posta indesiderata)
      - **Regola di trasporto**
 
    - **Destinatario di posta elettronica**: tutti gli utenti o solo i messaggi inviati all'utente. Gli utenti finali possono gestire solo i messaggi in quarantena inviati.
@@ -120,6 +121,8 @@ Gli amministratori nelle organizzazioni con Office 365 Advance Threat Protection
    - **Indirizzo di posta elettronica del destinatario**: indirizzo di posta elettronica di un singolo destinatario.
 
    - **Oggetto**: utilizzare l'intero oggetto del messaggio. Per la ricerca non viene fatta distinzione tra maiuscole e minuscole.
+  
+   - **Nome criterio**: il nome del criterio responsabile della messa in quarantena del messaggio.
 
    Dopo avere immesso i criteri di ricerca, fare clic sul ![pulsante Aggiorna](../../media/scc-quarantine-refresh.png) **Aggiorna** per filtrare i risultati.
 
@@ -147,6 +150,8 @@ Quando si seleziona un messaggio di posta elettronica nell'elenco, i seguenti de
 
 - **Motivo della quarantena**: indica se un messaggio è stato identificato come **posta indesiderata**, in **blocco**, **phishing**, corrisponde a una regola del flusso di posta (**regola di trasporto**) oppure è stato identificato come contenente **malware**.
 
+- **Numero destinatari**
+
 - **Destinatari**: se il messaggio contiene più destinatari, è necessario fare clic su **Anteprima messaggio** o **Visualizza intestazione messaggio** per visualizzare l'elenco completo dei destinatari.
 
 - **Scadenza**: data/ora in cui il messaggio verrà eliminato automaticamente e definitivamente dalla quarantena.
@@ -173,7 +178,6 @@ Dopo aver selezionato un messaggio, sono disponibili diverse opzioni per le oper
   Note sul rilascio dei messaggi:
 
   - Non è possibile rilasciare un messaggio allo stesso destinatario più di una volta.
-
   - Solo i destinatari che non hanno ricevuto il messaggio verranno visualizzati nell'elenco dei destinatari potenziali.
 
 - **Visualizza intestazione messaggio**: scegliere questo collegamento per vedere il testo dell'intestazione del messaggio. Per analizzare i campi dell'intestazione e i valori in modo approfondito, copiare il testo negli Appunti e poi scegliere **Microsoft Message Header Analyzer** per passare all'Analizzatore connettività remota. Fare clic con il pulsante destro del mouse e scegliere **Apri in una nuova scheda** se non si vuole uscire da Microsoft 365 per completare questa attività. Incollare l'intestazione del messaggio nella pagina nella sezione Message Header Analyzer e scegliere **Analizza intestazioni**:
@@ -219,13 +223,13 @@ Al termine, fare clic su **Chiudi**.
 > [!NOTE]
 > Le procedure per i file in quarantena in questa sezione sono disponibili solo per i sottoscrittori ATP Plan 1 e Plan 2.
 
-Nelle organizzazioni con ATP, gli amministratori possono gestire i file in quarantena in SharePoint Online, OneDrive for business e Microsoft teams.
+Nelle organizzazioni con ATP, gli amministratori possono gestire i file in quarantena in SharePoint Online, OneDrive for business e Microsoft teams. Per abilitare la protezione per questi file, vedere [attivare ATP per SharePoint, OneDrive e Microsoft teams](turn-on-atp-for-spo-odb-and-teams.md).
 
 ### <a name="view-quarantined-files"></a>Visualizzare i file in quarantena
 
 1. Nel Centro sicurezza e conformità, passare a **Gestione delle minacce** \> **Rivedi** \> **Quarantena**.
 
-2. Modificare la **visualizzazione in quarantena** nei **file**di valore predefiniti. È possibile ordinare su un campo facendo clic su un'intestazione di colonna disponibile.
+2. Modificare la **visualizzazione in quarantena** nei **file**di valore. È possibile ordinare su un campo facendo clic su un'intestazione di colonna disponibile.
 
 3. È possibile ordinare i risultati facendo clic su un'intestazione di colonna disponibile. Fare clic su **Modifica colonne** per visualizzare un massimo di sette colonne. Le colonne predefinite sono contrassegnate con un asterisco ( <sup>\*</sup> ):
 
@@ -248,6 +252,7 @@ Nelle organizzazioni con ATP, gli amministratori possono gestire i file in quara
      - Un intervallo di data/ora personalizzato.
    - **Tempo ricevuto**
    - **Motivo della quarantena**: l'unico valore disponibile è **malware**.
+   - **Tipo di criterio**
 
 Dopo aver individuato uno specifico file in quarantena, selezionare il file per visualizzarne i dettagli e per intervenire su di esso (ad esempio, visualizzare, rilasciare, scaricare o eliminare il messaggio).
 
@@ -293,8 +298,6 @@ Quando si selezionano più file in quarantena nell'elenco (fino a 100), viene vi
 
 - **Rilasciare i file**
 - **Elimina file**: dopo aver fatto clic su **Sì** nell'avviso che viene visualizzato, i file vengono eliminati immediatamente.
-
-1. Se si utilizza un account aziendale o dell'Istituto di istruzione con privilegi di amministratore globale (o ruoli di sicurezza & conformità corretti) nell'organizzazione, accedere e [passare al centro sicurezza & conformità](../../compliance/go-to-the-securitycompliance-center.md).
 
 ## <a name="use-exchange-online-powershell-or-standalone-eop-powershell-to-view-and-manage-quarantined-messages-and-files"></a>Utilizzare PowerShell di Exchange Online o standalone EOP PowerShell per visualizzare e gestire i messaggi e i file in quarantena
 
