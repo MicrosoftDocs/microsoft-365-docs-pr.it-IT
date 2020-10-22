@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: Ent_Architecture
 description: 'Riepilogo: in che modo Contoso ha utilizzato un team con isolamento di sicurezza per un progetto Top-Secret per sviluppare una nuova famiglia di prodotti e servizi.'
-ms.openlocfilehash: 16d10f5d6e5b5939172c02746c9324eb20b6987e
-ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
+ms.openlocfilehash: b8794502afcb77a8e597a1b05dfc92acd093f23a
+ms.sourcegitcommit: 3b1bd8aa1430bc9565743a446bbc27b199f30f73
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48399490"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48656070"
 ---
 # <a name="isolated-team-for-a-top-secret-project-of-the-contoso-corporation"></a>Team isolato per un progetto Top-Secret di Contoso Corporation
 
@@ -77,7 +77,7 @@ Poiché i canali privati per il progetto 2X sono stati creati, il proprietario d
 
 Ecco la configurazione risultante del team di Project 2X con isolamento della sicurezza.
 
-![La configurazione risultante del team di Project 2X](../media/contoso-team-for-top-secret-project/contoso-team-for-top-secret-project.png)
+![La configurazione risultante del team di Project 2X](../media/contoso-team-for-top-secret-project.png)
 
  ## <a name="step-4-trained-project-2x-team-members"></a>Passaggio 4: formazione dei membri del team di Project 2X
 
@@ -92,7 +92,7 @@ Il risultato finale è un ambiente sicuro in cui i membri del team di Project 2X
 
 Di seguito è riportato un esempio di un file archiviato nel sito del progetto 2X sottostante con l'etichetta di riservatezza del progetto 2X assegnata.
 
-![Un esempio di un file archiviato nel sito di progetto 2X sottostante](../media/contoso-team-for-top-secret-project/contoso-team-for-top-secret-project-example.png)
+![Un esempio di un file archiviato nel sito di progetto 2X sottostante](../media/contoso-team-for-top-secret-project-example.png)
 
 In una coppia di istanze, Project 2X membri del team hanno scaricato i file protetti dall'etichetta Project 2X su un'unità locale per il lavoro offline. 
 

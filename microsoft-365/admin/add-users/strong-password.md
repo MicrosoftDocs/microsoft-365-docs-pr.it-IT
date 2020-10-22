@@ -1,5 +1,5 @@
 ---
-title: Impostare il requisito di password complessa per gli utenti
+title: Disattivare i requisiti di password complessa per gli utenti
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -21,14 +21,14 @@ search.appverid:
 - MET150
 - MOE150
 description: Informazioni su come impostare i requisiti di password complessa per gli utenti, utilizzando Windows PowerShell.
-ms.openlocfilehash: 9f6fd61396d99245ffeabf757d3cb65c5d5cb85e
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: f9a0b76d024cc18552657144e4ccf8de8a72f0d9
+ms.sourcegitcommit: 3b1bd8aa1430bc9565743a446bbc27b199f30f73
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48646620"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48655736"
 ---
-# <a name="set-strong-password-requirement-for-users"></a>Impostare il requisito di password complessa per gli utenti
+# <a name="turn-off-strong-password-requirements-for-users"></a>Disattivare i requisiti di password complessa per gli utenti
 
 In questo articolo viene illustrato come disattivare i requisiti di password complessa per gli utenti. I requisiti per le password forti sono attivati per impostazione predefinita nell'organizzazione Microsoft 365 for business. È possibile che l'organizzazione disponga di requisiti per disabilitare password complesse. Seguire i passaggi descritti di seguito per disattivare i requisiti di password complessa. Per eseguire questa procedura è necessario utilizzare PowerShell.
 
