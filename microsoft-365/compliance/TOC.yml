@@ -634,6 +634,8 @@
               href: attorney-privilege-detection.md
             - name: Insiemi da rivedere delle conversazioni
               href: conversation-review-sets.md
+            - name: Supporto per le lingue CJK
+              href: ediscovery-cjk-support.md
             - name: Assegnare autorizzazioni di eDiscovery
               href: assign-ediscovery-permissions.md
             - name: Query con parole chiave e condizioni di ricerca
