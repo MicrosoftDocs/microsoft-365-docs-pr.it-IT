@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-compliance
 localization_priority: Normal
 description: Informazioni sulle attività che consentiranno di iniziare rapidamente a eseguire la conformità in Microsoft 365.
-ms.openlocfilehash: 98526104d2ced7b86315b24bd2843701047a097c
-ms.sourcegitcommit: 79a21583a52aedd06317bbcabd8be40663379dec
+ms.openlocfilehash: a8fd5d72fd87fdbf9c8c3c6da094a58544efd6e8
+ms.sourcegitcommit: cdf2b8dad7db9e16afd339abaaa5397faf11807c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "48341182"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48651362"
 ---
 # <a name="quick-tasks-for-getting-started-with-microsoft-365-compliance"></a>Attività rapide per iniziare a usare il Centro conformità Microsoft 365
 
@@ -68,13 +68,7 @@ Utilizzare i criteri di avviso e gli strumenti del dashboard di avviso per crear
 
 Per istruzioni dettagliate sulla creazione di criteri di avviso personalizzati, vedere Criteri di [avviso nel centro sicurezza e conformità](alert-policies.md).
 
-## <a name="task-5-configure-just-in-time-access-for-your-administrators"></a>Attività 5: configurare l'accesso just-in-time per gli amministratori
-
-L'accesso permanente da parte di alcuni utenti a informazioni riservate o a impostazioni di configurazione di rete critiche è un percorso potenziale per gli account compromessi o le attività di minacce interne. La [gestione degli accessi con privilegi](privileged-access-management-overview.md) consente di proteggere l'organizzazione da violazioni e contribuisce a soddisfare le procedure consigliate per la conformità limitando l'accesso permanente ai dati sensibili o l'accesso alle impostazioni di configurazione critiche. Anziché gli amministratori che hanno accesso costante, le regole di accesso just-in-time vengono implementate per le attività che richiedono autorizzazioni elevate. L'abilitazione della gestione degli accessi con privilegi in Microsoft 365 consente all'organizzazione di operare con privilegi zero e di fornire un livello di difesa contro le vulnerabilità di accesso amministrativo permanenti.
-
-Per informazioni dettagliate sulla configurazione della gestione degli accessi con privilegi, vedere [Introduzione alla gestione degli accessi con privilegi](privileged-access-management-configuration.md). Per informazioni sulle licenze per la gestione degli accessi con privilegi, vedere [Microsoft 365 Licensing Guidance for security & Compliance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#privileged-access-management-in-office-365).
-
-## <a name="task-6-classify-and-protect-sensitive-data"></a>Attività 6: classificare e proteggere i dati sensibili
+## <a name="task-5-classify-and-protect-sensitive-data"></a>Attività 5: classificare e proteggere i dati sensibili
 
 Per svolgere il proprio lavoro, i membri dell'organizzazione collaborano con altri utenti, sia interni che esterni all'organizzazione stessa. Questo significa che i contenuti non sono più protetti da un firewall, ma possono spostarsi tra dispositivi, applicazioni e servizi. E quando si spostano, è preferibile che lo facciano in modo sicuro e protetto, nel rispetto dei criteri aziendali e di conformità dell'organizzazione.
 
@@ -82,7 +76,7 @@ Le [etichette di riservatezza](sensitivity-labels.md) consentono di classificare
 
 Per istruzioni dettagliate su come configurare e utilizzare le etichette di riservatezza, vedere [Introduzione alle etichette di riservatezza](get-started-with-sensitivity-labels.md). Per informazioni sulle licenze per le etichette di riservatezza, vedere [Microsoft 365 Licensing Guidance for security & Compliance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection).
 
-## <a name="task-7-configure-a-retention-policy"></a>Attività 7: configurare un criterio di conservazione
+## <a name="task-6-configure-a-retention-policy"></a>Attività 6: configurare un criterio di conservazione
 
 Un [criterio di conservazione](retention.md) consente di decidere in modo proattivo se conservare il contenuto, eliminare il contenuto o entrambi: mantenere e quindi eliminare il contenuto al termine di un periodo di conservazione specificato. Tali azioni potrebbero essere necessarie per conformarsi alle normative industriali e ai criteri interni, oltre a ridurre i rischi in caso di controversia legale o violazione della sicurezza.
 
@@ -92,7 +86,7 @@ Quando il contenuto è soggetto a un criterio di conservazione, gli utenti posso
 
 Per istruzioni dettagliate per la configurazione di un criterio di conservazione, vedere [creare e configurare i criteri di conservazione](create-retention-policies.md). Se si configura per la prima volta la conservazione in Microsoft 365, vedere [Informazioni sui criteri e sulle etichette di conservazione](get-started-with-retention.md).
 
-## <a name="task-8-configure-sensitive-information-and-offensive-language-policies"></a>Attività 8: configurare le informazioni riservate e i criteri per i linguaggi offensivi
+## <a name="task-7-configure-sensitive-information-and-offensive-language-policies"></a>Attività 7: configurare le informazioni riservate e i criteri per i linguaggi offensivi
 
 La protezione delle informazioni riservate e l'individuazione e l'azione degli incidenti di molestie sul posto di lavoro è una parte importante della conformità con gli standard e i criteri interni. La [conformità alla comunicazione](communication-compliance-feature-reference.md) in Microsoft 365 consente di ridurre al minimo tali rischi, contribuendo a rilevare, acquisire e adottare rapidamente azioni correttive per le comunicazioni di posta elettronica e Microsoft teams. Sono incluse comunicazioni inappropriate che contengono parolacce, minacce e molestie e comunicazioni che condividono informazioni riservate all'interno e all'esterno dell'organizzazione.
 
@@ -102,7 +96,7 @@ Il modello di criteri di *informazioni riservate* predefinito consente di creare
 
 Per istruzioni dettagliate su come pianificare e configurare la conformità delle comunicazioni, vedere [Plan for Communication Compliance](communication-compliance-plan.md) and [Get Started with Communication Compliance](communication-compliance-configure.md). Per informazioni sulle licenze per la conformità alla comunicazione, vedere [Microsoft 365 Licensing Guidance for security & Compliance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#communication-compliance).
 
-## <a name="task-9-see-whats-happening-with-your-sensitive-items"></a>Attività 9: vedere cosa succede con gli elementi sensibili
+## <a name="task-8-see-whats-happening-with-your-sensitive-items"></a>Attività 8: vedere cosa succede con gli elementi sensibili
 
 Le etichette di riservatezza, i tipi di informazioni riservate, le etichette e i criteri di conservazione e i classificatori addestrabili possono essere utilizzati per classificare ed etichettare gli elementi sensibili in Exchange, SharePoint e OneDrive, come si è visto nelle attività precedenti. L'ultimo passaggio del percorso di attività veloce consiste nel vedere quali elementi sono stati etichettati e quali azioni gli utenti stanno assumendo sugli elementi sensibili. [Esplora contenuto](data-classification-content-explorer.md) e [Esplora attività](data-classification-activity-explorer.md) forniscono questa visibilità.
 

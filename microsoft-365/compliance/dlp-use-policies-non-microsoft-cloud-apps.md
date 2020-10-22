@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Informazioni su come utilizzare i criteri DLP per le app Cloud non Microsoft.
-ms.openlocfilehash: dd5a7a4bc0725d0785daec6b7635047cd91f20a2
-ms.sourcegitcommit: 39af527404cb06e05c5aa4550dbec39aec133016
+ms.openlocfilehash: 0b588bf27738a0f9a8078999311294f74e5193c0
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "48422758"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48649657"
 ---
 # <a name="use-data-loss-prevention-policies-for-non-microsoft-cloud-apps-preview"></a>Utilizzare i criteri di prevenzione della perdita dei dati per le app Cloud non Microsoft (anteprima)
 
@@ -45,7 +45,7 @@ Prima di iniziare a utilizzare i criteri DLP per le app Cloud non Microsoft, con
 
 ### <a name="prepare-your-cloud-app-security-environment"></a>Preparare l'ambiente di protezione delle app Cloud
 
-I criteri DLP per le app Cloud non Microsoft utilizzano le funzionalità di protezione DLP di cloud app. Per utilizzarlo, è necessario preparare l'ambiente di protezione delle app cloud. Per istruzioni, vedere [set isntant Visibility, Protection, and Governance actions for your Apps](https://docs.microsoft.com/cloud-app-security/getting-started-with-cloud-app-security#step-1-set-instant-visibility-protection-and-governance-actions-for-your-apps).
+I criteri DLP per le app Cloud non Microsoft utilizzano le funzionalità di protezione DLP di cloud app. Per utilizzarlo, è necessario preparare l'ambiente di protezione delle app cloud. Per le istruzioni, vedere [impostare la visibilità istantanea, la protezione e le azioni di governance per le app](https://docs.microsoft.com/cloud-app-security/getting-started-with-cloud-app-security#step-1-set-instant-visibility-protection-and-governance-actions-for-your-apps).
 
 ### <a name="connect-a-non-microsoft-cloud-app"></a>Connettere un'app Cloud non Microsoft
 

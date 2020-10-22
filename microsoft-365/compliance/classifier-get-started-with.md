@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Un classificatore Microsoft 365 è uno strumento che è possibile addestrare per riconoscere vari tipi di contenuto fornendo esempi da esaminare. In questo articolo viene illustrato come creare e formare un classificatore personalizzato e come riqualificarli per aumentare l'accuratezza.
-ms.openlocfilehash: 30f3c45945b4879be17eadfe04e8ccb8526df16a
-ms.sourcegitcommit: 5e40c760c1af2a4cc6d85cb782b17f5c979677c5
+ms.openlocfilehash: 4c9f5dae702c71fe7f2da1ccbc0364e7bdd15b0e
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48379253"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48636985"
 ---
 # <a name="get-started-with-trainable-classifiers-preview"></a>Introduzione ai classificatori sottoponibili a training (anteprima)
 
@@ -43,8 +43,8 @@ I classificatori sono una funzionalità di conformità di Microsoft 365 E5 o E5.
 
 Per accedere ai classificatori nell'interfaccia utente: 
 
-- l'amministratore globale deve optare per il tenant per creare classificatori personalizzati
-- il ruolo di amministratore conformità o l'amministratore dei dati di conformità è necessario per formare un classificatore
+- l'amministratore globale deve optare per il tenant per creare classificatori personalizzati.
+- il ruolo di amministratore conformità o l'amministratore dei dati di conformità è necessario per formare un classificatore.
 
 Sono necessari account con queste autorizzazioni per l'utilizzo dei classificatori in questi scenari:
 
@@ -70,7 +70,7 @@ Questa sequenza temporale riflette una distribuzione di esempio dei classificato
 
 ### <a name="overall-workflow"></a>Flusso di lavoro globale
 
-Per ulteriori informazioni sul flusso di lavoro globale della creazione di classificatori addestrabili personalizzati, vedere [flow Process per la creazione di classificatori addestrabili per i clienti](classifier-learn-about.md#process-flow-for-creating-custom-classifiers)
+Per ulteriori informazioni sul flusso di lavoro globale della creazione di classificatori addestrabili personalizzati, vedere [flow Process per la creazione di classificatori addestrabili per i clienti](classifier-learn-about.md#process-flow-for-creating-custom-classifiers).
 
 ### <a name="seed-content"></a>Contenuto del seeding
 
@@ -81,7 +81,7 @@ Quando si desidera che un classificatore addestrabile sia in grado di identifica
 
 ### <a name="testing-content"></a>Test del contenuto
 
-Dopo che il classificatore addestratore ha elaborato campioni positivi sufficienti per creare un modello di stima, è necessario verificare le stime che consente di verificare se il classificatore può distinguere correttamente tra gli elementi che corrispondono alla categoria e gli elementi che non lo fanno. A tale scopo, è necessario nutrirlo con un altro, che si spera più grande, insieme di contenuto umano raccolto che è costituito da campioni che devono rientrare nella categoria e campioni che non lo faranno. Dopo averli elaborati, si procede manualmente ai risultati e si verifica se ogni previsione è corretta, non corretta o non si è certi. Il classificatore addestrabile utilizza questi commenti e suggerimenti per migliorare il modello di stima.
+Dopo che il classificatore addestratore ha elaborato campioni positivi sufficienti per creare un modello di stima, è necessario verificare le stime che consente di verificare se il classificatore può distinguere correttamente tra gli elementi che corrispondono alla categoria e gli elementi che non lo fanno. A tale scopo, selezionare un altro gruppo di contenuto umano raccolto, che è costituito da esempi che devono rientrare nella categoria e gli esempi che non sono necessari. È consigliabile eseguire il test con dati diversi rispetto ai dati di inizializzazione iniziali forniti per la prima volta. Dopo averli elaborati, si procede manualmente ai risultati e si verifica se ogni previsione è corretta, non corretta o non si è certi. Il classificatore addestrabile utilizza questi commenti e suggerimenti per migliorare il modello di stima.
 
 > [!TIP]
 > Per ottenere risultati ottimali, è necessario che almeno 200 elementi del campione di test siano distribuiti con una distribuzione uniforme di corrispondenze positive e negative.
@@ -90,24 +90,24 @@ Dopo che il classificatore addestratore ha elaborato campioni positivi sufficien
 
 1. Raccogliere tra gli elementi di contenuto di 50-500 Seed. Questi devono essere solo campioni che rappresentano fortemente il tipo di contenuto che si desidera che il classificatore addestrabile identifichi positivamente come nella Categoria classificazione. Per i tipi di file supportati, vedere le estensioni di file sottoposte [a ricerca per indicizzazione e i tipi di file analizzati in SharePoint Server](https://docs.microsoft.com/sharepoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types) .
 
-> [!IMPORTANT]
-> Gli elementi di esempio Seed e test non devono essere crittografati e devono essere in inglese.
+   > [!IMPORTANT]
+   > Gli elementi di esempio Seed e test non devono essere crittografati e devono essere in inglese.
 
-> [!IMPORTANT]
-> Verificare che gli elementi del set di Seed siano esempi **forti** della categoria. Il classificatore addestrabile crea inizialmente il modello in base alle operazioni con cui viene eseguito il seeding. Il classificatore presuppone che tutti gli esempi di sementi siano forti positivi e che non sia possibile sapere se un campione è una corrispondenza debole o negativa per la categoria.
+   > [!IMPORTANT]
+   > Verificare che gli elementi del set di Seed siano esempi **forti** della categoria. Il classificatore addestrabile crea inizialmente il modello in base alle operazioni con cui viene eseguito il seeding. Il classificatore presuppone che tutti gli esempi di sementi siano forti positivi e che non sia possibile sapere se un campione è una corrispondenza debole o negativa per la categoria.
 
 2. Inserire il contenuto di inizializzazione in una cartella di SharePoint Online dedicata a contenere *solo il contenuto del seeding*. Prendere nota dell'URL del sito, della raccolta e della cartella.
 
-> [!TIP]
-> Se si crea un nuovo sito e una nuova cartella per i dati di seeding, è possibile eseguire l'indicizzazione di almeno un'ora affinché tale percorso venga indicizzato prima di creare il classificatore addestrabile che utilizzerà tali dati.
+   > [!TIP]
+   > Se si crea un nuovo sito e una nuova cartella per i dati di seeding, è possibile eseguire l'indicizzazione di almeno un'ora affinché tale percorso venga indicizzato prima di creare il classificatore addestrabile che utilizzerà tali dati.
 
-3. Accedere a Microsoft 365 Compliance Center with Compliance admin or Security admin Role Access e Open **Microsoft 365 Compliance Center** or **Microsoft 365 Security Center**  >  **Data Classification**
+3. Accedere a Microsoft 365 Compliance Center with Compliance admin or Security admin Role Access e aprire **Microsoft 365 Compliance Center** o **Microsoft 365 Security Center**  >  **Data Classification**.
 
 4. Scegliere la scheda **classificatori addestrabili** .
 
 5. Scegliere **Crea classificatore addestrabile**.
 
-6. Inserire i valori adeguati per i `Name` `Description` campi e la categoria di elementi che si desidera vengano identificati dal classificatore addestrabile.
+6. Inserire i valori adatti per i `Name` `Description` campi e della categoria di elementi che si desidera vengano identificati dal classificatore addestrabile.
 
 7. Scegliere il sito di SharePoint Online, la raccolta e l'URL della cartella per il sito di contenuto Seed del passaggio 2. Scegliere `Add` .
 
@@ -117,18 +117,18 @@ Dopo che il classificatore addestratore ha elaborato campioni positivi sufficien
 
 10. È ora possibile visualizzare la pagina dei dettagli scegliendo il classificatore.
 
-
-![classificatore addestrabile pronto per il testing](../media/classifier-trainable-ready-to-test-detail.png)
+    > [!div class="mx-imgBorder"]
+    > ![classificatore addestrabile pronto per il testing](../media/classifier-trainable-ready-to-test-detail.png)
 
 11. Raccogliere almeno 200 elementi di contenuto di prova (10.000 max) per ottenere risultati ottimali. Queste devono essere una combinazione di elementi che sono forti positivi, negativi forti e alcuni che sono un po' meno evidenti nella loro natura. Per i tipi di file supportati, vedere le estensioni di file sottoposte [a ricerca per indicizzazione e i tipi di file analizzati in SharePoint Server](https://docs.microsoft.com/sharepoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types) .
 
-> [!IMPORTANT]
-> Gli elementi di esempio non devono essere crittografati e devono essere in inglese.
+    > [!IMPORTANT]
+    > Gli elementi di esempio non devono essere crittografati e devono essere in inglese.
 
 12. Inserire il contenuto del test in una cartella di SharePoint Online dedicata alla conservazione *del solo contenuto del test*. Prendere nota del sito, della raccolta e dell'URL della cartella di SharePoint Online.
 
-> [!TIP]
-> Se si crea un nuovo sito e una nuova cartella per i dati di test, è possibile che la posizione venga indicizzata per almeno un'ora prima di creare il classificatore addestrabile che utilizzerà tali dati.
+    > [!TIP]
+    > Se si crea un nuovo sito e una nuova cartella per i dati di test, è possibile che la posizione venga indicizzata per almeno un'ora prima di creare il classificatore addestrabile che utilizzerà tali dati.
 
 13. Scegliere `Add items to test` .
 
@@ -138,17 +138,20 @@ Dopo che il classificatore addestratore ha elaborato campioni positivi sufficien
 
 16. Quando si esegue l'elaborazione dei file di test da parte del classificatore addestrabile, lo stato nella pagina dei dettagli cambia `Ready to review` . Se è necessario aumentare le dimensioni del campione di test, scegliere `Add items to test` e consentire al classificatore addestrabile di elaborare gli elementi aggiuntivi.
 
-![pronto per la revisione dello screenshot](../media/classifier-trainable-ready-to-review-detail.png)
+    > [!div class="mx-imgBorder"]
+    > ![pronto per la revisione dello screenshot](../media/classifier-trainable-ready-to-review-detail.png)
 
 17. Scegliere la `Tested items to review` scheda per esaminare gli elementi.
 
 18. Microsoft 365 presenterà 30 elementi alla volta. Verificarli e nella `We predict this item is "Relevant". Do you agree?` casella scegliere uno `Yes` o più `No` o `Not sure, skip to next item` . L'accuratezza del modello viene aggiornata automaticamente dopo ogni 30 elementi.
 
-![casella di controllo elementi](../media/classifier-trainable-review-detail.png)
+    > [!div class="mx-imgBorder"]
+    > ![casella di controllo elementi](../media/classifier-trainable-review-detail.png)
 
 19. Esaminare *almeno 200 elementi* . Dopo che il Punteggio di accuratezza si è stabilizzato, l'opzione **pubblicazione** diventerà disponibile e lo stato del classificatore diventerà `Ready to use` .
 
-![Punteggio di precisione e pronto per la pubblicazione](../media/classifier-trainable-review-ready-to-publish.png)
+    > [!div class="mx-imgBorder"]
+    > ![Punteggio di precisione e pronto per la pubblicazione](../media/classifier-trainable-review-ready-to-publish.png)
 
 20. Pubblicare il classificatore.
 
@@ -159,10 +162,15 @@ Dopo che il classificatore addestratore ha elaborato campioni positivi sufficien
 Utilizzare questa procedura per concedere ad altri utenti le autorizzazioni per la formazione, la revisione e la ottimizzazione del classificatore addestrabile personalizzato.  
  
 1. In qualità di creatore del classificatore, un amministratore globale o un amministratore di eDiscovery si connettono al centro conformità tramite PowerShell utilizzando le procedure descritte in [Connect to Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell?view=exchange-ps&preserve-view=true).
-2. Eseguire questo comando:
-```powershell
-Add-ComplianceCaseMember -Case "<classifier name>" -Member "<user or role group>"
-```
-Ad esempio: `Add-ComplianceCaseMember -Case "Financial Contract Classifier" -Member johnevans@contoso.com`
 
-È possibile eseguire questo comando più volte per aggiungere più utenti. Si noti che è possibile aggiungere solo gruppi di ruoli di Exchange Online Protection (EOP) e non gruppi di ruoli di Azure.
+2. Eseguire questo comando:
+
+   ```powershell
+   Add-ComplianceCaseMember -Case "<classifier name>" -Member "<user or role group>"
+   ```
+   
+   Ad esempio:
+   
+   `Add-ComplianceCaseMember -Case "Financial Contract Classifier" -Member johnevans@contoso.com`
+
+   È possibile eseguire questo comando più volte per aggiungere più utenti. Si noti che è possibile aggiungere solo gruppi di ruoli di Exchange Online Protection (EOP) e non gruppi di ruoli di Azure.

@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: ffa2d54385249a22d672be0c2591c3b4171bd10d
-ms.sourcegitcommit: 153f413402f93b79be421741f3b9fed318d6d270
+ms.openlocfilehash: 5b0353546a9bb923559ebd125393890180257baf
+ms.sourcegitcommit: cdf2b8dad7db9e16afd339abaaa5397faf11807c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48600381"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48651440"
 ---
 # <a name="get-started-with-insider-risk-management-settings"></a>Informazioni introduttive sulle impostazioni di gestione dei rischi Insider
 
@@ -81,7 +81,7 @@ Per abilitare il monitoraggio delle attività di rischio sui dispositivi e inclu
 
 Verificare che i dispositivi Windows 10 pianificati per la creazione di report in gestione dei rischi Insider soddisfino questi requisiti.
 
-1. Devono eseguire Windows 10 x 64, build 1809 o successiva.
+1. Deve essere in esecuzione Windows 10 x64 Build 1809 o versione successiva e deve aver installato l' [aggiornamento di Windows 10 (OS build 17763,1075)](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818) dal 20 febbraio 2020.
 2. Tutti i dispositivi devono essere [aggiunti ad Azure Active Directory (AAD)](https://docs.microsoft.com/azure/active-directory/devices/concept-azure-ad-join) o aggiunto ad Azure AD ibrido.
 3. Installare Microsoft Chromium Edge browser sul dispositivo endpoint per monitorare le azioni relative all'attività di caricamento del cloud. Vedere [Scaricare il nuovo Microsoft Edge basato su Chromium](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium).
 
@@ -364,6 +364,9 @@ Completare la procedura seguente per eliminare una risorsa fisica prioritaria:
 [Microsoft Power automatizzate](https://docs.microsoft.com/power-automate/getting-started) è un servizio di flusso di lavoro che automatizza le azioni tra le applicazioni e i servizi. Utilizzando flussi provenienti da modelli o creati manualmente, è possibile automatizzare le attività comuni associate a queste applicazioni e servizi. Quando si abilitano i flussi automatici di alimentazione per la gestione dei rischi Insider, è possibile automatizzare le attività importanti per i casi e gli utenti. È possibile configurare i flussi automatici di alimentazione per recuperare informazioni sugli utenti, gli avvisi e i casi e condividere queste informazioni con le parti interessate e altre applicazioni, nonché automatizzare le azioni in gestione dei rischi Insider, ad esempio la pubblicazione di note di caso. I flussi automatici di alimentazione sono applicabili per i casi e per qualsiasi utente nell'ambito di un criterio.
 
 I clienti con abbonamenti Microsoft 365 che includono la gestione dei rischi insider non necessitano di ulteriori licenze di automatizzazione dell'alimentazione per utilizzare i modelli di automatizzazione di Power Management dei rischi consigliati. Questi modelli possono essere personalizzati per supportare l'organizzazione e coprire gli scenari di gestione dei rischi Insider core. Se si sceglie di utilizzare le funzionalità di automatizzazione di Power Premium in questi modelli, creare un modello personalizzato utilizzando il connettore di conformità di Microsoft 365 o utilizzare i modelli Power Automate per altre aree di conformità in Microsoft 365, potrebbe essere necessario disporre di licenze aggiuntive per automatizzare la potenza.
+
+>[!IMPORTANT]
+>Vengono ricevute richieste per la convalida di una licenza aggiuntiva quando si verifica il flusso di energia automatizzata? È possibile che l'organizzazione non abbia ancora ricevuto gli aggiornamenti del servizio per questa funzionalità di anteprima. Gli aggiornamenti vengono distribuiti e tutte le organizzazioni con abbonamenti Microsoft 365 che includono la gestione dei rischi Insider devono disporre del supporto delle licenze per i flussi creati con i modelli di automatizzazione di alimentazione consigliati entro il 30 ottobre 2020.
 
 I seguenti modelli di automatizzazione dei poteri vengono forniti ai clienti per supportare l'automazione dei processi per gli utenti e i casi di gestione del rischio Insider:
 

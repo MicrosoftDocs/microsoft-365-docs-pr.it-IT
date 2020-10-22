@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 7f1d3e13aebe7c7924732922bbbfc7417622d8c5
-ms.sourcegitcommit: e17fd18b01d70e6428263c20cbce4b92e2a97765
+ms.openlocfilehash: 4ede013a1c9a9bd054fc6965cbb12b5bbabb0b5e
+ms.sourcegitcommit: cdf2b8dad7db9e16afd339abaaa5397faf11807c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48626189"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48651408"
 ---
 # <a name="communication-compliance-feature-reference"></a>Informazioni di riferimento sulle caratteristiche di conformità comunicazione
 
@@ -335,6 +335,9 @@ Se si desidera modificare il livello di gravità assegnato in un criterio di avv
 [Microsoft Power automatizzate](https://docs.microsoft.com/power-automate/getting-started) è un servizio di flusso di lavoro che automatizza le azioni tra le applicazioni e i servizi. Utilizzando flussi provenienti da modelli o creati manualmente, è possibile automatizzare le attività comuni associate a queste applicazioni e servizi. Quando si abilitano i flussi automatici di alimentazione per la conformità della comunicazione, è possibile automatizzare le attività importanti per gli avvisi e gli utenti. È possibile configurare i flussi automatici di alimentazione per inviare notifiche ai responsabili quando gli utenti hanno avvisi di conformità della comunicazione e altre applicazioni.
 
 I clienti con abbonamenti Microsoft 365 che includono la conformità alla comunicazione non necessitano di ulteriori licenze di automatizzazione dell'alimentazione per utilizzare il modello di automatizzazione Power Compliance predefinito raccomandato per la comunicazione. Il modello predefinito può essere personalizzato per supportare l'organizzazione e coprire gli scenari di conformità di base per le comunicazioni. Se si sceglie di utilizzare le funzionalità di automatizzazione di Power Premium in questi modelli, creare un modello personalizzato utilizzando il connettore di conformità di Microsoft 365 o utilizzare i modelli Power Automate per altre aree di conformità in Microsoft 365, potrebbe essere necessario disporre di licenze aggiuntive per automatizzare la potenza.
+
+>[!IMPORTANT]
+>Vengono ricevute richieste per la convalida di una licenza aggiuntiva quando si verifica il flusso di energia automatizzata? È possibile che l'organizzazione non abbia ancora ricevuto gli aggiornamenti del servizio per questa funzionalità di anteprima. Gli aggiornamenti vengono distribuiti e tutte le organizzazioni con abbonamenti Microsoft 365 che includono la conformità alla comunicazione devono disporre del supporto delle licenze per i flussi creati con i modelli di automatizzazione di alimentazione consigliati entro il 30 ottobre 2020.
 
 ![Automatizzazione del potere di conformità di comunicazione](../media/communication-compliance-power-automate.png)
 

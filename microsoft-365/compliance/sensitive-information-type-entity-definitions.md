@@ -18,12 +18,12 @@ ms.collection:
 hideEdit: true
 feedback_system: None
 description: La prevenzione della perdita di dati (DLP) nel &amp; Centro sicurezza e conformità include 80 tipi di informazioni riservate pronte per l'uso nei criteri DLP. In questo argomento vengono elencati tutti questi tipi di informazioni riservate e illustrata la ricerca eseguita dal criterio DLP quando rileva ciascun tipo di informazioni.
-ms.openlocfilehash: 8482501dc978433587c431d18ec93b9e78fb8e03
-ms.sourcegitcommit: 53ff1fe6d6143b0bf011031eea9b85dc01ae4f74
+ms.openlocfilehash: 288c53d5e9264942e12d5634cec172a65ee79ca6
+ms.sourcegitcommit: 3b1bd8aa1430bc9565743a446bbc27b199f30f73
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48487494"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48656053"
 ---
 # <a name="sensitive-information-type-entity-definitions"></a>Definizioni delle entità tipo di informazioni sensibili
 
@@ -60,14 +60,20 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - La funzione Func_aba_routing restituisce contenuti che corrispondono al modello.
 - Viene trovata una parola chiave da Keyword_ABA_Routing.
 
+Un criterio DLP rileva questo tipo di informazioni con una probabilità del 65%, entro 300 caratteri, se:
+- La funzione Func_aba_routing restituisce contenuti che corrispondono al modello.
+
 ```xml
-<!-- ABA Routing Number -->
-<Entity id="cb353f78-2b72-4c3c-8827-92ebe4f69fdf" patternsProximity="300" recommendedConfidence="75">
+    <!-- ABA Routing Number -->
+    <Entity id="cb353f78-2b72-4c3c-8827-92ebe4f69fdf" patternsProximity="300" recommendedConfidence="75">
       <Pattern confidenceLevel="75">
         <IdMatch idRef="Func_aba_routing" />
         <Match idRef="Keyword_ABA_Routing" />
       </Pattern>
- </Entity>
+      <Pattern confidenceLevel="65">
+        <IdMatch idRef="Func_aba_routing" />
+      </Pattern>
+    </Entity>
 ```
 
 
@@ -75,37 +81,36 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 
 #### <a name="keyword_aba_routing"></a>Keyword_aba_routing
 
-- ABA
-- aba #
-- aba routing #
-- aba routing number
-- ABA #
-- abarouting #
 - aba number
+- ABA #
+- ABA
+- abarouting #
 - abaroutingnumber
-- american bank association routing #
-- american bank association routing number
 - americanbankassociationrouting #
 - americanbankassociationroutingnumber
-- bank routing number
 - bankrouting #
 - bankroutingnumber
+- routing #
+- instradamento No
+- numero di routing
 - routing transit number
-- RTN 
-   
+- routing #
+- RTN
+
+
 ## <a name="argentina-national-identity-dni-number"></a>Numero di identità nazionale Argentina (DNI)
 
 ### <a name="format"></a>Formato
 
-Otto cifre separate da spazi
+Otto cifre con o senza periodi
 
 ### <a name="pattern"></a>Modello
 
 Otto cifre
 - due cifre
-- un punto
+- un periodo facoltativo
 - tre cifre
-- un punto
+- un periodo facoltativo
 - tre cifre
 
 ### <a name="checksum"></a>Checksum
@@ -133,14 +138,14 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 #### <a name="keyword_argentina_national_id"></a>Keyword_argentina_national_id
 
 - Argentina - Numero di identità nazionale 
-- Identità 
-- Carta di identità nazionale di identificazione 
+- cedula 
+- cédula 
 - DNI 
-- Registro nazionale delle persone di NIC 
-- Documento Nacional de Identidad 
-- Registro Nacional de las Personas 
-- Identidad 
-- Identificación 
+- documento Nacional de Identidad 
+- documento número 
+- numero documento 
+- Registro Nacional de las personas 
+- RNP 
    
 ## <a name="australia-bank-account-number"></a>Australia-numero di conto corrente bancario
 
@@ -697,8 +702,8 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - driverlicences
 - LIC del driver
 - driver driver'lics
-- patente di guida
-- licenze per i driver
+- driver license
+- driver licenses
 - patente di guida
 - licenze per i driver
 - driverslic
@@ -709,9 +714,9 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - driverslicenses
 - driver Lic
 - driver driver'lics
-- patente di guida
-- licenze per i driver
-- patente di guida
+- drivers license
+- drivers licenses
+- drivers licence
 - licenze per i conducenti
 - driver'lic
 - driver ' LiCS
@@ -733,9 +738,9 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - driver'slicences
 - LIC del conducente
 - driver'lics del conducente
-- patente di guida
-- licenze del conducente
-- patente di guida
+- driver's license
+- driver's licenses
+- driver's licence
 - patenti di guida
 - DL #
 - DLS #
@@ -786,9 +791,8 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - licenze del conducente #
 - patente di guida #
 - patenti di guida #
-- driving licence
- 
-- patente di guida
+- driving licence 
+- driving license
 - dlno #
 - driv Lic
 - driv licen
@@ -803,9 +807,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - Guida licen
 - patenti di guida
 - driving licence
-
 - driving licences
-
 - permesso di guida
 - DL No
 - dlno
@@ -866,8 +868,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 #### <a name="keywords_austria_eu_national_id_card"></a>Keywords_austria_eu_national_id_card
 
 - numero di identità
-- 
-national id
+- national id
 - Personalausweis Republik Österreich
 
 ## <a name="austria-passport-number"></a>Numero di passaporto Austria
@@ -913,13 +914,13 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 #### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
 
 - passaporto #
-- passaporto #
+- passaporto #
 - passportid
 - passaporti
 - passportno
 - Passport No
 - passportnumber
-- numero di passaporto
+- passport number
 - passportnumbers
 - numeri di passaporto
 
@@ -1043,7 +1044,6 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 65%,
 - st.nr.
 - steuernummer
 - tax id
-
 - identificazione fiscale No
 - codice di identificazione fiscale
 - tax no #
@@ -1648,8 +1648,8 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - driverlicences
 - LIC del driver
 - driver driver'lics
-- patente di guida
-- licenze per i driver
+- driver license
+- driver licenses
 - patente di guida
 - licenze per i driver
 - driverslic
@@ -1660,9 +1660,9 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - driverslicenses
 - driver Lic
 - driver driver'lics
-- patente di guida
-- licenze per i driver
-- patente di guida
+- drivers license
+- drivers licenses
+- drivers licence
 - licenze per i conducenti
 - driver'lic
 - driver ' LiCS
@@ -1684,9 +1684,9 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - driver'slicences
 - LIC del conducente
 - driver'lics del conducente
-- patente di guida
-- licenze del conducente
-- patente di guida
+- driver's license
+- driver's licenses
+- driver's licence
 - patenti di guida
 - DL #
 - DLS #
@@ -1737,9 +1737,8 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - licenze del conducente #
 - patente di guida #
 - patenti di guida #
-- driving licence
- 
-- patente di guida
+- driving licence 
+- driving license
 - dlno #
 - driv Lic
 - driv licen
@@ -1754,9 +1753,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - Guida licen
 - patenti di guida
 - driving licence
-
 - driving licences
-
 - permesso di guida
 - DL No
 - dlno
@@ -1773,8 +1770,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - fuehrerschein
 - fuhrerscheinnummer
 - fuehrerscheinnummer
-- 
-permis de conduire
+- permis de conduire
 - numéro Permis conduire
 
 
@@ -1850,7 +1846,6 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 65%,
 - numéro d'assuré
 - numéro de Registre National
 - numéro de sécurité
-
 - numéro d'identification
 - numéro d'immatriculation
 - numéro nazionale
@@ -1862,12 +1857,11 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 65%,
 - registrazione
 - registrationsnumme
 - registrierung
-- codice di previdenza sociale
+- social security number
 - SSN #
 - SSN
 - steuernummer
 - tax id
-
 - identificazione fiscale No
 - codice di identificazione fiscale
 - tax no #
@@ -1923,13 +1917,13 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 #### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
 
 - passaporto #
-- passaporto #
+- passaporto #
 - passportid
 - passaporti
 - passportno
 - Passport No
 - passportnumber
-- numero di passaporto
+- passport number
 - passportnumbers
 - numeri di passaporto
 
@@ -2323,8 +2317,8 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - driverlicences
 - LIC del driver
 - driver driver'lics
-- patente di guida
-- licenze per i driver
+- driver license
+- driver licenses
 - patente di guida
 - licenze per i driver
 - driverslic
@@ -2335,9 +2329,9 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - driverslicenses
 - driver Lic
 - driver driver'lics
-- patente di guida
-- licenze per i driver
-- patente di guida
+- drivers license
+- drivers licenses
+- drivers licence
 - licenze per i conducenti
 - driver'lic
 - driver ' LiCS
@@ -2359,9 +2353,9 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - driver'slicences
 - LIC del conducente
 - driver'lics del conducente
-- patente di guida
-- licenze del conducente
-- patente di guida
+- driver's license
+- driver's licenses
+- driver's licence
 - patenti di guida
 - DL #
 - DLS #
@@ -2412,9 +2406,8 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - licenze del conducente #
 - patente di guida #
 - patenti di guida #
-- driving licence
- 
-- patente di guida
+- driving licence 
+- driving license
 - dlno #
 - driv Lic
 - driv licen
@@ -2429,9 +2422,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - Guida licen
 - patenti di guida
 - driving licence
-
 - driving licences
-
 - permesso di guida
 - DL No
 - dlno
@@ -2509,9 +2500,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - EGN #
 - EGN
 - identification number
-
-- 
-national id
+- national id
 - numero nazionale
 - nationalnumber #
 - nationalnumber
@@ -2519,7 +2508,7 @@ national id
 - No personale
 - numero personale
 - personalidnumber #
-- codice di previdenza sociale
+- social security number
 - SSN #
 - SSN
 - ID civile uniforme
@@ -2532,17 +2521,17 @@ national id
 - numero di cittadinanza univoco
 - егн #
 - егн
-- единен граждански номер
-- идентификационен номер
-- личен номер
-- лична идентификация
+- единен граждански номер
+- идентификационен номер
+- личен номер
+- лична идентификация
 - лично не
-- национален номер
+- национален номер
 - Номер на гражданството
 - ID униформ
 - ID граждански униформ
 - униформ граждански не
-- униформ граждански номер
+- униформ граждански номер
 - униформгражданскиid #
 - униформгражданскине. #
 
@@ -2585,13 +2574,13 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 #### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
 
 - passaporto #
-- passaporto #
+- passaporto #
 - passportid
 - passaporti
 - passportno
 - Passport No
 - passportnumber
-- numero di passaporto
+- passport number
 - passportnumbers
 - numeri di passaporto
 
@@ -3333,28 +3322,20 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 65%,
 
 #### <a name="keyword_cc_verification"></a>Keyword_cc_verification
 
-- 
-card verification
-
+- card verification
 - card identification number
 - CVN
 - ID
 - CVC2
 - CVV2
-- 
-pin block
+- pin block
 - security code
-
 - security number
-
 - security no
-
 - issue number
-
 - issue no
 - cryptogramme
-- 
-numéro de sécurité
+- numéro de sécurité
 - numero de securite
 - kreditkartenprüfnummer
 - kreditkartenprufnummer
@@ -3365,32 +3346,26 @@ numéro de sécurité
 - sicherheitsnummer
 - verfalldatum
 - codice di verifica
-- Cod.sicurezza
-- 
-cod sicurezza
+- Cod. sicurezza
+- cod sicurezza
 - n autorizzazione
 - Código
 - Codigo
-- Cod.SEG
-- 
-cod seg
+- Cod. SEG
+- cod seg
 - código de segurança
-
 - codigo de seguranca
-
 - codigo de segurança
-
 - código de seguranca
-- cód.Segurança
-- Cod.seguranca
-- Cod.Segurança
-- cód.seguranca
-- cód Segurança
-- Cod seguranca
-- Cod Segurança
-- cód seguranca
+- cód. Segurança
+- Cod. seguranca
+- Cod. Segurança
+- cód. seguranca
+- cód segurança
+- cod seguranca
+- cod segurança
+- cód seguranca
 - número de verificação
-
 - numero de verificacao
 - ablauf
 - gültig bis
@@ -3398,20 +3373,15 @@ cod seg
 - gultig bis
 - gultigkeitsdatum
 - scadenza
-- 
-data scad
+- data scad
 - fecha de expiracion
-
 - fecha de venc
 - vencimiento
-- 
-válido hasta
+- válido hasta
 - valido hasta
 - VTO
-- 
-data de expiração
+- data de expiração
 - data de expiracao
-
 - data em que expira
 - validade
 - Valor
@@ -3420,9 +3390,9 @@ data de expiração
 - numero transazione
 - numero di riferimento
 - セキュリティコード
-- セキュリティ コード
+- セキュリティ コード
 - セキュリティナンバー
-- セキュリティ ナンバー
+- セキュリティ ナンバー
 - セキュリティ番号
 
 #### <a name="keyword_cc_name"></a>Keyword_cc_name
@@ -3431,15 +3401,13 @@ data de expiração
 - american express
 - AmericanExpress
 - americano espresso
-
 - Esempio
 - Mastercard
 - master card
 - MC
 - Mastercard
-- 
-master cards
-- Diner ' s Club
+- master cards
+- diner's Club
 - diners club
 - DinersClub
 - individuare
@@ -3449,28 +3417,20 @@ master cards
 - JCB
 - BrandSmart
 - japanese card bureau
-
 - carte blanche
 - carteblanche
-- carta di credito
+- credit card
 - CC #
 - CC #:
-- 
-expiration date
+- expiration date
 - exp date
-
-- 
-expiry date
-- 
-date d’expiration
-- 
-date d'exp
-- 
-date expiration
+- expiry date
+- date d’expiration
+- date d'exp
+- date expiration
 - bank card
 - Bankcard
-- 
-card number
+- card number
 - card num
 - cardnumber
 - cardnumbers
@@ -3496,10 +3456,8 @@ card number
 - atm cards
 - atmcards
 - Enroute
-- 
-en route
+- en route
 - card type
-
 - Cardmember Acct
 - account cardmember
 - Cardno
@@ -3510,22 +3468,14 @@ en route
 - account del membro della scheda
 - Cardmember Acct.
 - card no.
-
 - scheda No
 - card number
-
 - carte bancaire
-
 - carte de crédit
-
 - carte de credit
-
 - numéro de carte
-
 - numero de carte
-
 - nº de la carte
-
 - nº de carte
 - kreditkarte
 - Karte
@@ -3539,91 +3489,57 @@ en route
 - kartennummer
 - kreditkartennummer
 - Kreditkarten-Nummer
-- 
-carta di credito
+- carta di credito
 - carta credito
-- n.carta
+- n. carta
 - n carta
-- Nr.carta
-- 
-nr carta
+- Nr. carta
+- nr carta
 - numero carta
-
 - numero della carta
-
 - numero di carta
-
 - tarjeta credito
-
 - tarjeta de credito
-
-- 
-tarjeta crédito
-- 
-tarjeta de crédito
+- tarjeta crédito
+- tarjeta de crédito
 - tarjeta de atm
-
 - tarjeta atm
-
 - tarjeta debito
-
 - tarjeta de debito
-
-- 
-tarjeta débito
-- 
-tarjeta de débito
+- tarjeta débito
+- tarjeta de débito
 - nº de tarjeta
-- No.de tarjeta
-- No de Tarjeta
+- No. de tarjeta
+- no de tarjeta
 - numero de tarjeta
-
 - número de tarjeta
-
 - tarjeta no
 - tarjetahabiente
-- 
-cartão de crédito
+- cartão de crédito
 - cartão de credito
-
 - cartao de crédito
-
 - cartao de credito
-
 - cartão de débito
-
-- ○cartao de débito
-
+- cartao de débito
 - cartão de debito
-
 - cartao de debito
-
 - débito automático
 - debito automatico
-
-- 
-número do cartão
+- número do cartão
 - numero do cartão
-
 - número do cartao
-
 - numero do cartao
-
 - número de cartão
-
 - numero de cartão
-
 - número de cartao
-
 - numero de cartao
-
-- n º do una cartão
+- nº do cartão
 - nº do cartao
-- n º.do cartão
-- No do una cartão
-- No Do cartao
-- No.do cartão
-- No.do cartao
+- n º. do cartão
+- no do cartão
+- no do cartao
+- No. do cartão
+- No. do cartao
 - クレジットカード番号
 - クレジットカードナンバー
 - クレジットカード＃
@@ -3635,23 +3551,23 @@ número do cartão
 - カード＃
 - アメックス
 - アメリカンエクスプレス
-- アメリカン エクスプレス
+- アメリカン エクスプレス
 - Visaカード
 - Visa カード
 - マスターカード
-- マスター カード
+- マスター カード
 - マスター
 - ダイナースクラブ
-- ダイナース クラブ
+- ダイナース クラブ
 - ダイナース
 - 有効期限
 - 期限
 - キャッシュカード
-- キャッシュ カード
+- キャッシュ カード
 - カード名義人
 - カードの名義人
 - カードの名義
-- デビット カード
+- デビット カード
 - デビットカード
 
 
@@ -3702,8 +3618,8 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - driverlicences
 - LIC del driver
 - driver driver'lics
-- patente di guida
-- licenze per i driver
+- driver license
+- driver licenses
 - patente di guida
 - licenze per i driver
 - driverslic
@@ -3714,9 +3630,9 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - driverslicenses
 - driver Lic
 - driver driver'lics
-- patente di guida
-- licenze per i driver
-- patente di guida
+- drivers license
+- drivers licenses
+- drivers licence
 - licenze per i conducenti
 - driver'lic
 - driver ' LiCS
@@ -3738,9 +3654,9 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - driver'slicences
 - LIC del conducente
 - driver'lics del conducente
-- patente di guida
-- licenze del conducente
-- patente di guida
+- driver's license
+- driver's licenses
+- driver's licence
 - patenti di guida
 - DL #
 - DLS #
@@ -3791,9 +3707,8 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - licenze del conducente #
 - patente di guida #
 - patenti di guida #
-- driving licence
- 
-- patente di guida
+- driving licence 
+- driving license
 - dlno #
 - driv Lic
 - driv licen
@@ -3808,9 +3723,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - Guida licen
 - patenti di guida
 - driving licence
-
 - driving licences
-
 - permesso di guida
 - DL No
 - dlno
@@ -3861,17 +3774,16 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - majstorski broj građana
 - numero di cittadino Master
 - Nacionalni identifikacijski broj
-- numero di identificazione nazionale
+- national identification number
 - OIB #
 - OIB
-- osobna iskaznica
+- osobna iskaznica
 - ID Osobni
 - Osobni identifikacijski broj
 - numero di identificazione personale
 - Porezni broj
 - Porezni identifikacijski broj
 - tax id
-
 - identificazione fiscale No
 - codice di identificazione fiscale
 - tax no #
@@ -3927,13 +3839,13 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 #### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
 
 - passaporto #
-- passaporto #
+- passaporto #
 - passportid
 - passaporti
 - passportno
 - Passport No
 - passportnumber
-- numero di passaporto
+- passport number
 - passportnumbers
 - numeri di passaporto
 
@@ -3990,17 +3902,16 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - majstorski broj građana
 - numero di cittadino Master
 - Nacionalni identifikacijski broj
-- numero di identificazione nazionale
+- national identification number
 - OIB #
 - OIB
-- osobna iskaznica
+- osobna iskaznica
 - ID Osobni
 - Osobni identifikacijski broj
 - numero di identificazione personale
 - Porezni broj
 - Porezni identifikacijski broj
 - tax id
-
 - identificazione fiscale No
 - codice di identificazione fiscale
 - tax no #
@@ -4125,8 +4036,8 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - driverlicences
 - LIC del driver
 - driver driver'lics
-- patente di guida
-- licenze per i driver
+- driver license
+- driver licenses
 - patente di guida
 - licenze per i driver
 - driverslic
@@ -4137,9 +4048,9 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - driverslicenses
 - driver Lic
 - driver driver'lics
-- patente di guida
-- licenze per i driver
-- patente di guida
+- drivers license
+- drivers licenses
+- drivers licence
 - licenze per i conducenti
 - driver'lic
 - driver ' LiCS
@@ -4161,9 +4072,9 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - driver'slicences
 - LIC del conducente
 - driver'lics del conducente
-- patente di guida
-- licenze del conducente
-- patente di guida
+- driver's license
+- driver's licenses
+- driver's licence
 - patenti di guida
 - DL #
 - DLS #
@@ -4214,9 +4125,8 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - licenze del conducente #
 - patente di guida #
 - patenti di guida #
-- driving licence
- 
-- patente di guida
+- driving licence 
+- driving license
 - dlno #
 - driv Lic
 - driv licen
@@ -4231,9 +4141,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - Guida licen
 - patenti di guida
 - driving licence
-
 - driving licences
-
 - permesso di guida
 - DL No
 - dlno
@@ -4289,7 +4197,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - numero di carta di identità
 - numero di carta di identità
 - Kimlik karti
-- numero di identificazione nazionale
+- national identification number
 - numero ID personale
 - ταυτοτητασ
 
@@ -4333,13 +4241,13 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 #### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
 
 - passaporto #
-- passaporto #
+- passaporto #
 - passportid
 - passaporti
 - passportno
 - Passport No
 - passportnumber
-- numero di passaporto
+- passport number
 - passportnumbers
 - numeri di passaporto
 
@@ -4408,7 +4316,6 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 #### <a name="keywords_cyprus_eu_tax_file_number"></a>Keywords_cyprus_eu_tax_file_number
 
 - tax id
-
 - codice di identificazione fiscale
 - identificazione fiscale No
 - codice di identificazione fiscale
@@ -4428,11 +4335,11 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - Tin No
 - latta #
 - vergi Kimlik Kodu
-- vergi kimlik numarası
-- αριθμός φορολογικού μητρώου
-- κωδικός φορολογικού μητρώου
-- φορολογική ταυτότητα
-- φορολογικού κωδικού
+- vergi kimlik numarası
+- αριθμός φορολογικού μητρώου
+- κωδικός φορολογικού μητρώου
+- φορολογική ταυτότητα
+- φορολογικού κωδικού
 
 
 ## <a name="czech-drivers-license-number"></a>Numero della patente di guida ceco
@@ -4486,8 +4393,8 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - driverlicences
 - LIC del driver
 - driver driver'lics
-- patente di guida
-- licenze per i driver
+- driver license
+- driver licenses
 - patente di guida
 - licenze per i driver
 - driverslic
@@ -4498,9 +4405,9 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - driverslicenses
 - driver Lic
 - driver driver'lics
-- patente di guida
-- licenze per i driver
-- patente di guida
+- drivers license
+- drivers licenses
+- drivers licence
 - licenze per i conducenti
 - driver'lic
 - driver ' LiCS
@@ -4522,9 +4429,9 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - driver'slicences
 - LIC del conducente
 - driver'lics del conducente
-- patente di guida
-- licenze del conducente
-- patente di guida
+- driver's license
+- driver's licenses
+- driver's licence
 - patenti di guida
 - DL #
 - DLS #
@@ -4575,9 +4482,8 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - licenze del conducente #
 - patente di guida #
 - patenti di guida #
-- driving licence
- 
-- patente di guida
+- driving licence 
+- driving license
 - dlno #
 - driv Lic
 - driv licen
@@ -4592,9 +4498,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - Guida licen
 - patenti di guida
 - driving licence
-
 - driving licences
-
 - permesso di guida
 - DL No
 - dlno
@@ -4647,13 +4551,13 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 #### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
 
 - passaporto #
-- passaporto #
+- passaporto #
 - passportid
 - passaporti
 - passportno
 - Passport No
 - passportnumber
-- numero di passaporto
+- passport number
 - passportnumbers
 - numeri di passaporto
 
@@ -4730,7 +4634,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - identityno #
 - identityno
 - numero assicurativo
-- numero di identificazione nazionale
+- national identification number
 - nationalnumber #
 - numero nazionale
 - osobní číslo
@@ -4742,13 +4646,12 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - PID
 - pojištění číslo
 - rč
-- rodne cislo
+- rodne cislo
 - rodné číslo
 - SSN
 - SSN #
-- codice di previdenza sociale
+- social security number
 - tax id
-
 - identificazione fiscale No
 - codice di identificazione fiscale
 - tax no #
@@ -4875,8 +4778,8 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - driverlicences
 - LIC del driver
 - driver driver'lics
-- patente di guida
-- licenze per i driver
+- driver license
+- driver licenses
 - patente di guida
 - licenze per i driver
 - driverslic
@@ -4887,9 +4790,9 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - driverslicenses
 - driver Lic
 - driver driver'lics
-- patente di guida
-- licenze per i driver
-- patente di guida
+- drivers license
+- drivers licenses
+- drivers licence
 - licenze per i conducenti
 - driver'lic
 - driver ' LiCS
@@ -4911,9 +4814,9 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - driver'slicences
 - LIC del conducente
 - driver'lics del conducente
-- patente di guida
-- licenze del conducente
-- patente di guida
+- driver's license
+- driver's licenses
+- driver's licence
 - patenti di guida
 - DL #
 - DLS #
@@ -4964,9 +4867,8 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - licenze del conducente #
 - patente di guida #
 - patenti di guida #
-- driving licence
- 
-- patente di guida
+- driving licence 
+- driving license
 - dlno #
 - driv Lic
 - driv licen
@@ -4981,9 +4883,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - Guida licen
 - patenti di guida
 - driving licence
-
 - driving licences
-
 - permesso di guida
 - DL No
 - dlno
@@ -5034,13 +4934,13 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 #### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
 
 - passaporto #
-- passaporto #
+- passaporto #
 - passportid
 - passaporti
 - passportno
 - Passport No
 - passportnumber
-- numero di passaporto
+- passport number
 - passportnumbers
 - numeri di passaporto
 
@@ -5107,7 +5007,6 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 65%,
 - numero di tessera di assicurazione malattia
 - numero di assicurazione sanitaria
 - identification number
-
 - identifikationsnummer
 - identifikationsnummer #
 - numero di identità
@@ -5128,7 +5027,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 65%,
 - Kode di pattinaggio
 - Nummer di pattinaggio
 - skattenummer
-- codice di previdenza sociale
+- social security number
 - sundhedsforsikringskort
 - sundhedsforsikringsnummer
 - sundhedskort
@@ -5141,7 +5040,6 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 65%,
 - codice fiscale
 - numero di registrazione fiscale
 - tax id
-
 - codice di identificazione fiscale
 - taxid #
 - taxnumber #
@@ -5238,7 +5136,7 @@ due lettere seguite da sette cifre
 
 Il modello deve includere tutti gli elementi seguenti:
 - una lettera (senza distinzione tra maiuscole/minuscole) da questo set di lettere possibili: abcdefghjklmnprstux, che è un codice dichiarante 
-- una lettera (senza distinzione tra maiuscole/minuscole), che è la prima lettera del cognome del dichiarante. 
+- una lettera (senza distinzione tra maiuscole/minuscole), che è la prima lettera del cognome del dichiarante o della cifra "9"
 - sette cifre, l'ultima delle quali è la cifra di controllo
 
 ### <a name="checksum"></a>Checksum
@@ -5249,20 +5147,41 @@ Sì
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
 - La funzione Func_dea_number restituisce contenuti che corrispondono al modello.
+- Viene trovata una parola chiave `Keyword_dea_number`
+- Il checksum ha esito positivo.
+
+Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
+- La funzione Func_dea_number restituisce contenuti che corrispondono al modello.
 - Il checksum ha esito positivo.
 
 ```xml
-<!-- DEA Number -->
-<Entity id="9a5445ad-406e-43eb-8bd7-cac17ab6d0e4" recommendedConfidence="85" patternsProximity="300">
-  <Pattern confidenceLevel="85">
-     <IdMatch idRef="Func_dea_number"/>
-  </Pattern>
-</Entity>
+    <!-- DEA Number -->
+    <Entity id="9a5445ad-406e-43eb-8bd7-cac17ab6d0e4" patternsProximity="300" recommendedConfidence="85">
+      <Pattern confidenceLevel="75">
+        <IdMatch idRef="Func_dea_number" />
+      </Pattern>
+      <Version minEngineVersion="15.20.1207.000" maxEngineVersion="15.20.3134.000">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Func_dea_number" />
+        </Pattern>
+      </Version>
+      <Version minEngineVersion="15.20.3135.000">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Func_dea_number" />
+          <Match idRef="Keyword_dea_number" />
+        </Pattern>
+      </Version>
+    </Entity>
 ```
 
 ### <a name="keywords"></a>Parole chiave
 
-nessuno
+#### <a name="keyword_dea_number"></a>Keyword_dea_number
+
+- Dea
+- Dea #
+- amministrazione di applicazione della droga
+- Drug Enforcement Agency
 
 
 ## <a name="estonia-drivers-license-number"></a>Numero della patente di guida estone
@@ -5314,8 +5233,8 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - driverlicences
 - LIC del driver
 - driver driver'lics
-- patente di guida
-- licenze per i driver
+- driver license
+- driver licenses
 - patente di guida
 - licenze per i driver
 - driverslic
@@ -5326,9 +5245,9 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - driverslicenses
 - driver Lic
 - driver driver'lics
-- patente di guida
-- licenze per i driver
-- patente di guida
+- drivers license
+- drivers licenses
+- drivers licence
 - licenze per i conducenti
 - driver'lic
 - driver ' LiCS
@@ -5350,9 +5269,9 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - driver'slicences
 - LIC del conducente
 - driver'lics del conducente
-- patente di guida
-- licenze del conducente
-- patente di guida
+- driver's license
+- driver's licenses
+- driver's licence
 - patenti di guida
 - DL #
 - DLS #
@@ -5403,9 +5322,8 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - licenze del conducente #
 - patente di guida #
 - patenti di guida #
-- driving licence
- 
-- patente di guida
+- driving licence 
+- driving license
 - dlno #
 - driv Lic
 - driv licen
@@ -5420,9 +5338,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - Guida licen
 - patenti di guida
 - driving licence
-
 - driving licences
-
 - permesso di guida
 - DL No
 - dlno
@@ -5496,9 +5412,9 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - isikukood #
 - isikukood
 - ID maksu
-- maksukohustuslase identifitseerimisnumber
+- maksukohustuslase identifitseerimisnumber
 - maksunumber
-- numero di identificazione nazionale
+- national identification number
 - numero nazionale
 - codice personale
 - numero ID personale
@@ -5506,7 +5422,6 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - numero di identificazione personale
 - personalidnumber #
 - tax id
-
 - identificazione fiscale No
 - codice di identificazione fiscale
 - tax no #
@@ -5563,13 +5478,13 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 #### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
 
 - passaporto #
-- passaporto #
+- passaporto #
 - passportid
 - passaporti
 - passportno
 - Passport No
 - passportnumber
-- numero di passaporto
+- passport number
 - passportnumbers
 - numeri di passaporto
 
@@ -6132,8 +6047,8 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - driverlicences
 - LIC del driver
 - driver driver'lics
-- patente di guida
-- licenze per i driver
+- driver license
+- driver licenses
 - patente di guida
 - licenze per i driver
 - driverslic
@@ -6144,9 +6059,9 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - driverslicenses
 - driver Lic
 - driver driver'lics
-- patente di guida
-- licenze per i driver
-- patente di guida
+- drivers license
+- drivers licenses
+- drivers licence
 - licenze per i conducenti
 - driver'lic
 - driver ' LiCS
@@ -6168,9 +6083,9 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - driver'slicences
 - LIC del conducente
 - driver'lics del conducente
-- patente di guida
-- licenze del conducente
-- patente di guida
+- driver's license
+- driver's licenses
+- driver's licence
 - patenti di guida
 - DL #
 - DLS #
@@ -6221,9 +6136,8 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - licenze del conducente #
 - patente di guida #
 - patenti di guida #
-- driving licence
- 
-- patente di guida
+- driving licence 
+- driving license
 - dlno #
 - driv Lic
 - driv licen
@@ -6238,9 +6152,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - Guida licen
 - patenti di guida
 - driving licence
-
 - driving licences
-
 - permesso di guida
 - DL No
 - dlno
@@ -6364,8 +6276,8 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 
 ### <a name="keywords"></a>Parole chiave
 
-- ainutlaatuinen henkilökohtainen tunnus
-- henkilökohtainen tunnus
+- ainutlaatuinen henkilökohtainen tunnus
+- henkilökohtainen tunnus
 - henkilötunnus
 - henkilötunnusnumero #
 - henkilötunnusnumero
@@ -6373,12 +6285,11 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - ID No
 - numero ID
 - identification number
-
 - numero identiteetti
 - numero di identità
 - NumeroID del
 - Kansallinen henkilötunnus
-- kansallisen henkilökortin
+- kansallisen henkilökortin
 - carta d'identità nazionale
 - ID nazionale No.
 - ID personale
@@ -6386,10 +6297,9 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - personalidnumber #
 - personbeteckning
 - personnummer
-- codice di previdenza sociale
+- social security number
 - sosiaaliturvatunnus
 - tax id
-
 - identificazione fiscale No
 - codice di identificazione fiscale
 - tax no #
@@ -6453,13 +6363,13 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 #### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
 
 - passaporto #
-- passaporto #
+- passaporto #
 - passportid
 - passaporti
 - passportno
 - Passport No
 - passportnumber
-- numero di passaporto
+- passport number
 - passportnumbers
 - numeri di passaporto
 
@@ -6589,8 +6499,8 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - driverlicences
 - LIC del driver
 - driver driver'lics
-- patente di guida
-- licenze per i driver
+- driver license
+- driver licenses
 - patente di guida
 - licenze per i driver
 - driverslic
@@ -6601,9 +6511,9 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - driverslicenses
 - driver Lic
 - driver driver'lics
-- patente di guida
-- licenze per i driver
-- patente di guida
+- drivers license
+- drivers licenses
+- drivers licence
 - licenze per i conducenti
 - driver'lic
 - driver ' LiCS
@@ -6625,9 +6535,9 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - driver'slicences
 - LIC del conducente
 - driver'lics del conducente
-- patente di guida
-- licenze del conducente
-- patente di guida
+- driver's license
+- driver's licenses
+- driver's licence
 - patenti di guida
 - DL #
 - DLS #
@@ -6678,9 +6588,8 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - licenze del conducente #
 - patente di guida #
 - patenti di guida #
-- driving licence
- 
-- patente di guida
+- driving licence 
+- driving license
 - dlno #
 - driv Lic
 - driv licen
@@ -6695,24 +6604,16 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - Guida licen
 - patenti di guida
 - driving licence
-
 - driving licences
-
 - permesso di guida
 - DL No
 - dlno
 - numero DL
-- 
-permis de conduire
-- 
-licence number
-- 
-license number
-- 
-licence numbers
-- 
-
-license numbers
+- permis de conduire
+- licence number
+- license number
+- licence numbers
+- license numbers
 - Numéros de licence
 
 
@@ -6802,13 +6703,12 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 65%,
 #### <a name="keywords_france_eu_national_id_card"></a>Keywords_france_eu_national_id_card
 
 - card number
-
 - Carte nationale d'identité
 - Carte nationale d'idenite No
 - CNI #
 - CNI
 - compte bancaire
-- numero di identificazione nazionale
+- national identification number
 - identità nazionale
 - nationalidno #
 - numéro d'assurance maladie
@@ -7008,7 +6908,6 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 
 - numéro d'identification fiscale
 - tax id
-
 - identificazione fiscale No
 - codice di identificazione fiscale
 - tax no #
@@ -7136,22 +7035,18 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 
 - ausstellungsdatum
 - ausstellungsort
-- 
-ausstellende behöde
-- 
-ausstellende behorde
-- 
-
-ausstellende behoerde
+- ausstellende behöde
+- ausstellende behorde
+- ausstellende behoerde
 - führerschein
 - fuhrerschein
 - fuehrerschein
 - führerscheinnummer
 - fuhrerscheinnummer
 - fuehrerscheinnummer
-- führerschein- 
-- fuhrerschein- 
-- fuehrerschein- 
+- führerschein- 
+- fuhrerschein- 
+- fuehrerschein- 
 - führerscheinnummernr
 - fuhrerscheinnummernr
 - fuehrerscheinnummernr
@@ -7167,8 +7062,7 @@ ausstellende behoerde
 - n-Führerschein
 - n-fuhrerschein
 - n-fuehrerschein
-- 
-permis de conduire
+- permis de conduire
 - driverlic
 - driverlics
 - driverlicense
@@ -7177,8 +7071,8 @@ permis de conduire
 - driverlicences
 - LIC del driver
 - driver driver'lics
-- patente di guida
-- licenze per i driver
+- driver license
+- driver licenses
 - patente di guida
 - licenze per i driver
 - driverslic
@@ -7189,9 +7083,9 @@ permis de conduire
 - driverslicenses
 - driver Lic
 - driver driver'lics
-- patente di guida
-- licenze per i driver
-- patente di guida
+- drivers license
+- drivers licenses
+- drivers licence
 - licenze per i conducenti
 - driver'lic
 - driver ' LiCS
@@ -7213,9 +7107,9 @@ permis de conduire
 - driver'slicences
 - LIC del conducente
 - driver'lics del conducente
-- patente di guida
-- licenze del conducente
-- patente di guida
+- driver's license
+- driver's licenses
+- driver's licence
 - patenti di guida
 - DL #
 - DLS #
@@ -7266,9 +7160,8 @@ permis de conduire
 - licenze del conducente #
 - patente di guida #
 - patenti di guida #
-- driving licence
- 
-- patente di guida
+- driving licence 
+- driving license
 - dlno #
 - driv Lic
 - driv licen
@@ -7283,9 +7176,7 @@ permis de conduire
 - Guida licen
 - patenti di guida
 - driving licence
-
 - driving licences
-
 - permesso di guida
 - dlno
 
@@ -7342,7 +7233,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 65%,
 - ID personale
 - personalausweis
 - persönliche ID Nummer
-- persönliche identifikationsnummer
+- persönliche identifikationsnummer
 - persönliche-ID-Nummer
 
 
@@ -7459,7 +7350,6 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - steueridentifikationsnummer
 - steuernummer
 - tax id
-
 - identificazione fiscale No
 - codice di identificazione fiscale
 - tax no #
@@ -7539,7 +7429,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - IVA #
 - IVA # Mehrwertsteuer
 - MWST
-- mehrwertsteuer identifikationsnummer
+- mehrwertsteuer identifikationsnummer
 - Mehrwertsteuer Nummer
 
 
@@ -7589,8 +7479,8 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - driverlicences
 - LIC del driver
 - driver driver'lics
-- patente di guida
-- licenze per i driver
+- driver license
+- driver licenses
 - patente di guida
 - licenze per i driver
 - driverslic
@@ -7601,9 +7491,9 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - driverslicenses
 - driver Lic
 - driver driver'lics
-- patente di guida
-- licenze per i driver
-- patente di guida
+- drivers license
+- drivers licenses
+- drivers licence
 - licenze per i conducenti
 - driver'lic
 - driver ' LiCS
@@ -7625,9 +7515,9 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - driver'slicences
 - LIC del conducente
 - driver'lics del conducente
-- patente di guida
-- licenze del conducente
-- patente di guida
+- driver's license
+- driver's licenses
+- driver's licence
 - patenti di guida
 - DL #
 - DLS #
@@ -7678,9 +7568,8 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - licenze del conducente #
 - patente di guida #
 - patenti di guida #
-- driving licence
- 
-- patente di guida
+- driving licence 
+- driving license
 - dlno #
 - driv Lic
 - driv licen
@@ -7695,9 +7584,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - Guida licen
 - patenti di guida
 - driving licence
-
 - driving licences
-
 - permesso di guida
 - DL No
 - dlno
@@ -7811,13 +7698,13 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 #### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
 
 - passaporto #
-- passaporto #
+- passaporto #
 - passportid
 - passaporti
 - passportno
 - Passport No
 - passportnumber
-- numero di passaporto
+- passport number
 - passportnumbers
 - numeri di passaporto
 
@@ -7873,7 +7760,6 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - aφμ | aφμ Αριθμός
 - aφμ
 - tax id
-
 - identificazione fiscale No
 - codice di identificazione fiscale
 - tax no #
@@ -7892,9 +7778,9 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - ID Tin
 - Tin No
 - latta #
-- αριθμός φορολογικού μητρώου
-- τον αριθμό φορολογικού μητρώου
-- φορολογικού μητρώου νο
+- αριθμός φορολογικού μητρώου
+- τον αριθμό φορολογικού μητρώου
+- φορολογικού μητρώου νο
 
 
 ## <a name="hong-kong-identity-card-hkid-number"></a>Numero di carta di identità (HKID) di Hong Kong
@@ -8031,8 +7917,8 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - driverlicences
 - LIC del driver
 - driver driver'lics
-- patente di guida
-- licenze per i driver
+- driver license
+- driver licenses
 - patente di guida
 - licenze per i driver
 - driverslic
@@ -8043,9 +7929,9 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - driverslicenses
 - driver Lic
 - driver driver'lics
-- patente di guida
-- licenze per i driver
-- patente di guida
+- drivers license
+- drivers licenses
+- drivers licence
 - licenze per i conducenti
 - driver'lic
 - driver ' LiCS
@@ -8067,9 +7953,9 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - driver'slicences
 - LIC del conducente
 - driver'lics del conducente
-- patente di guida
-- licenze del conducente
-- patente di guida
+- driver's license
+- driver's licenses
+- driver's licence
 - patenti di guida
 - DL #
 - DLS #
@@ -8120,9 +8006,8 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - licenze del conducente #
 - patente di guida #
 - patenti di guida #
-- driving licence
- 
-- patente di guida
+- driving licence 
+- driving license
 - dlno #
 - driv Lic
 - driv licen
@@ -8137,9 +8022,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - Guida licen
 - patenti di guida
 - driving licence
-
 - driving licences
-
 - permesso di guida
 - DL No
 - dlno
@@ -8212,12 +8095,11 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 
 - numero ID
 - identification number
-
 - SZ IG
-- SZ.IG.
 - SZ. IG.
-- személyazonosító igazolvány
-- személyi igazolvány
+- SZ. IG.
+- személyazonosító igazolvány
+- személyi igazolvány
 
 
 ## <a name="hungary-passport-number"></a>Numero di passaporto ungherese
@@ -8260,13 +8142,13 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 #### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
 
 - passaporto #
-- passaporto #
+- passaporto #
 - passportid
 - passaporti
 - passportno
 - Passport No
 - passportnumber
-- numero di passaporto
+- passport number
 - passportnumbers
 - numeri di passaporto
 
@@ -8395,14 +8277,13 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 
 #### <a name="keywords_hungary_eu_tax_file_number"></a>Keywords_hungary_eu_tax_file_number
 
-- adóazonosító szám
-- adóhatóság szám
+- adóazonosító szám
+- adóhatóság szám
 - adószám
 - Tin ungherese
 - hungatiantin #
 - autorità tributaria No
 - tax id
-
 - identificazione fiscale No
 - codice di identificazione fiscale
 - tax no #
@@ -8480,10 +8361,10 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - hungarianvatno #
 - tassa no.
 - ÁFA d'imposta sul valore aggiunto
-- közösségi adószám
-- általános forgalmi adó szám
-- hozzáadottérték adó
-- áfa szám
+- közösségi adószám
+- általános forgalmi adó szám
+- hozzáadottérték adó
+- áfa szám
 
 
 ## <a name="india-permanent-account-number-pan"></a>India-numero di conto permanente (PAN)
@@ -8495,29 +8376,39 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 ### <a name="pattern"></a>Modello
 
 10 lettere o cifre:
-- Cinque lettere (senza distinzione tra maiuscole e minuscole) 
+- Tre lettere (senza distinzione tra maiuscole e minuscole) 
+- Lettera in C, P, H, F, A, T, B, L, J, G (senza distinzione tra maiuscole e minuscole)
+- Una lettera
 - Quattro cifre 
-- Una lettera, ovvero una cifra di controllo alfabetica
+- Una lettera (senza distinzione tra maiuscole e minuscole)
 
 ### <a name="checksum"></a>Checksum
 
-Sì
+No
 
 ### <a name="definition"></a>Definizione
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
 - L'espressione regolare Regex_india_permanent_account_number trova contenuti che corrispondono al modello.
 - Viene trovata una parola chiave da Keyword_india_permanent_account_number.
-- Il checksum ha esito positivo.
+
+Un criterio DLP rileva questo tipo di informazioni con una probabilità del 65%, entro 300 caratteri, se:
+- L'espressione regolare Regex_india_permanent_account_number trova contenuti che corrispondono al modello.
+
 
 ```xml
-<!-- India Permanent Account Number -->
-<Entity id="2602bfee-9bb0-47a5-a7a6-2bf3053e2804" recommendedConfidence="85" patternsProximity="300">
-  <Pattern confidenceLevel="85">
-     <IdMatch idRef="Regex_india_permanent_account_number"/>
-     <Match idRef="Keyword_india_permanent_account_number"/>
-  </Pattern>
-</Entity>
+      <!-- India Permanent Account Number -->
+      <Entity id="2602bfee-9bb0-47a5-a7a6-2bf3053e2804" patternsProximity="300" recommendedConfidence="85">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Regex_india_permanent_account_number" />
+          <Match idRef="Keyword_india_permanent_account_number" />
+        </Pattern>
+        <Version minEngineVersion="15.20.3520.000">
+          <Pattern confidenceLevel="65">
+            <IdMatch idRef="Regex_india_permanent_account_number" />
+          </Pattern>
+        </Version>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>Parole chiave
@@ -8536,7 +8427,8 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%,
 ### <a name="pattern"></a>Modello
 
 12 cifre:
-- Quattro cifre 
+- Una cifra che non è 0 o 1
+- Tre cifre 
 - Uno spazio o un trattino facoltativo  
 - Quattro cifre 
 - Uno spazio o un trattino facoltativo  
@@ -8573,10 +8465,12 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 ### <a name="keywords"></a>Parole chiave
    
 #### <a name="keyword_india_aadhar"></a>Keyword_india_aadhar
-- Aadhar
-- Aadhaar
+- aadhaar
+- aadhar
+- aadhar #
 - UID
 - आधार
+- uidai
    
 ## <a name="indonesia-identity-card-ktp-number"></a>Numero di carta di identità (KTP) (Indonesia)
 
@@ -8865,8 +8759,8 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - driverlicences
 - LIC del driver
 - driver driver'lics
-- patente di guida
-- licenze per i driver
+- driver license
+- driver licenses
 - patente di guida
 - licenze per i driver
 - driverslic
@@ -8877,9 +8771,9 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - driverslicenses
 - driver Lic
 - driver driver'lics
-- patente di guida
-- licenze per i driver
-- patente di guida
+- drivers license
+- drivers licenses
+- drivers licence
 - licenze per i conducenti
 - driver'lic
 - driver ' LiCS
@@ -8901,9 +8795,9 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - driver'slicences
 - LIC del conducente
 - driver'lics del conducente
-- patente di guida
-- licenze del conducente
-- patente di guida
+- driver's license
+- driver's licenses
+- driver's licence
 - patenti di guida
 - DL #
 - DLS #
@@ -8954,9 +8848,8 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - licenze del conducente #
 - patente di guida #
 - patenti di guida #
-- driving licence
- 
-- patente di guida
+- driving licence 
+- driving license
 - dlno #
 - driv Lic
 - driv licen
@@ -8971,9 +8864,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - Guida licen
 - patenti di guida
 - driving licence
-
 - driving licences
-
 - permesso di guida
 - DL No
 - dlno
@@ -9029,13 +8920,13 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 #### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
 
 - passaporto #
-- passaporto #
+- passaporto #
 - passportid
 - passaporti
 - passportno
 - Passport No
 - passportnumber
-- numero di passaporto
+- passport number
 - passportnumbers
 - numeri di passaporto
 
@@ -9104,11 +8995,10 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 65%,
 
 - servizio identità client
 - identification number
-
 - numero ID personale
 - numero di servizio pubblico personale
 - servizio personale No
-- phearsanta seirbhíse poiblí
+- phearsanta seirbhíse poiblí
 - PPS No
 - numero PPS
 - PP num
@@ -9126,11 +9016,10 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 65%,
 - rsin
 - client di aitheantais di Seirbhís
 - uimh
-- uimhir aitheantais chánach
-- uimhir aitheantais phearsanta
-- uimhir phearsanta seirbhíse poiblí
+- uimhir aitheantais chánach
+- uimhir aitheantais phearsanta
+- uimhir phearsanta seirbhíse poiblí
 - tax id
-
 - identificazione fiscale No
 - codice di identificazione fiscale
 - tax no #
@@ -9234,8 +9123,23 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 
 #### <a name="keyword_israel_national_id"></a>Keyword_Israel_National_ID
 
-- מספר זהות 
-- National ID Number
+-   מספר זהות
+-   מספר זיה וי
+-   מספר זיהוי ישר אלי      
+-   זהותישר אלית
+-   هو ية اسرائيل ية عدد
+-   هوية إسرائ يلية
+-   رقم الهوية
+-   عدد هوية فريدة من نوعها
+-   NumeroID del #
+-   numero ID
+-   identità No        
+-   identitynumber #
+-   numero di identità
+-   israeliidentitynumber       
+-   ID personale
+-   ID univoco  
+
    
 ## <a name="italy-drivers-license-number"></a>Italiano numero di patente di guida
 Questa entità di tipo di informazioni riservate è inclusa nel tipo di informazioni riservate del conducente dell'Unione europea ed è disponibile come entità di tipo di informazioni riservate stand-alone.
@@ -9353,7 +9257,6 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - personalcodeno #
 - codice fiscale
 - tax id
-
 - identificazione fiscale No
 - codice di identificazione fiscale
 - numero dell'identità fiscale
@@ -9414,13 +9317,13 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 #### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
 
 - passaporto #
-- passaporto #
+- passaporto #
 - passportid
 - passaporti
 - passportno
 - Passport No
 - passportnumber
-- numero di passaporto
+- passport number
 - passportnumbers
 - numeri di passaporto
 
@@ -9826,10 +9729,9 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 #### <a name="keyword_jp_passport"></a>Keyword_jp_passport
 
 - Passaporto
-- Numero di passaporto
+- Passport Number
 - Passaporto No.
 - Passport#
-
 - パスポート
 - パスポート番号
 - パスポートナンバー
@@ -10047,8 +9949,8 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - driverlicences
 - LIC del driver
 - driver driver'lics
-- patente di guida
-- licenze per i driver
+- driver license
+- driver licenses
 - patente di guida
 - licenze per i driver
 - driverslic
@@ -10059,9 +9961,9 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - driverslicenses
 - driver Lic
 - driver driver'lics
-- patente di guida
-- licenze per i driver
-- patente di guida
+- drivers license
+- drivers licenses
+- drivers licence
 - licenze per i conducenti
 - driver'lic
 - driver ' LiCS
@@ -10083,9 +9985,9 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - driver'slicences
 - LIC del conducente
 - driver'lics del conducente
-- patente di guida
-- licenze del conducente
-- patente di guida
+- driver's license
+- driver's licenses
+- driver's licence
 - patenti di guida
 - DL #
 - DLS #
@@ -10136,9 +10038,8 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - licenze del conducente #
 - patente di guida #
 - patenti di guida #
-- driving licence
- 
-- patente di guida
+- driving licence 
+- driving license
 - dlno #
 - driv Lic
 - driv licen
@@ -10153,9 +10054,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - Guida licen
 - patenti di guida
 - driving licence
-
 - driving licences
-
 - permesso di guida
 - DL No
 - dlno
@@ -10250,22 +10149,19 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - ID #
 - ID-code
 - identification number
-
-- identifikācijas numurs
+- identifikācijas numurs
 - ID-Number
 - numero individuale
 - Latvija Alva
 - ID Nacionālais
-- 
-national id
+- national id
 - numero di identificazione nazionale
 - numero di identità nazionale
 - national insurance number
-
 - numero del registro nazionale
-- nodokļa numurs
+- nodokļa numurs
 - ID nodokļu
-- nodokļu identifikācija numurs
+- nodokļu identifikācija numurs
 - numero di certificato personale
 - codice personale
 - codice ID personale
@@ -10279,15 +10175,13 @@ national id
 - personas Kods
 - codice di identificazione della popolazione
 - numero di servizio pubblico
-- 
-registration number
+- registration number
 - numero di ricavo
-- numero di previdenza sociale
-- codice di previdenza sociale
+- social insurance number
+- social security number
 - codice fiscale dello stato
-- numero di file fiscale
+- tax file number
 - tax id
-
 - identificazione fiscale No
 - codice di identificazione fiscale
 - tax no #
@@ -10346,13 +10240,13 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 #### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
 
 - passaporto #
-- passaporto #
+- passaporto #
 - passportid
 - passaporti
 - passportno
 - Passport No
 - passportnumber
-- numero di passaporto
+- passport number
 - passportnumbers
 - numeri di passaporto
 
@@ -10411,8 +10305,8 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - driverlicences
 - LIC del driver
 - driver driver'lics
-- patente di guida
-- licenze per i driver
+- driver license
+- driver licenses
 - patente di guida
 - licenze per i driver
 - driverslic
@@ -10423,9 +10317,9 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - driverslicenses
 - driver Lic
 - driver driver'lics
-- patente di guida
-- licenze per i driver
-- patente di guida
+- drivers license
+- drivers licenses
+- drivers licence
 - licenze per i conducenti
 - driver'lic
 - driver ' LiCS
@@ -10447,9 +10341,9 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - driver'slicences
 - LIC del conducente
 - driver'lics del conducente
-- patente di guida
-- licenze del conducente
-- patente di guida
+- driver's license
+- driver's licenses
+- driver's licence
 - patenti di guida
 - DL #
 - DLS #
@@ -10500,9 +10394,8 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - licenze del conducente #
 - patente di guida #
 - patenti di guida #
-- driving licence
- 
-- patente di guida
+- driving licence 
+- driving license
 - dlno #
 - driv Lic
 - driv licen
@@ -10517,9 +10410,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - Guida licen
 - patenti di guida
 - driving licence
-
 - driving licences
-
 - permesso di guida
 - DL No
 - dlno
@@ -10587,19 +10478,18 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 
 #### <a name="keywords_lithuania_eu_national_id_card"></a>Keywords_lithuania_eu_national_id_card
 
-- asmeninis skaitmeninis kodas
-- asmens kodas
+- asmeninis skaitmeninis kodas
+- asmens kodas
 - numero di servizio Citizen
 - ID mokesčių
 - mokesčių identifikavimas numeris
 - mokesčių identifikavimo numeris
 - numeri mokesčių
-- numero di identificazione nazionale
+- national identification number
 - codice personale
 - codice numerico personale
 - piliečio paslaugos numeris
 - tax id
-
 - identificazione fiscale No
 - codice di identificazione fiscale
 - tax no #
@@ -10615,7 +10505,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - ID Tin
 - Tin No
 - latta #
-- unikalus identifikavimo kodas
+- unikalus identifikavimo kodas
 - unikalus identifikavimo numeris
 - numero di identificazione univoco
 - numero di identità univoco
@@ -10660,13 +10550,13 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 #### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
 
 - passaporto #
-- passaporto #
+- passaporto #
 - passportid
 - passaporti
 - passportno
 - Passport No
 - passportnumber
-- numero di passaporto
+- passport number
 - passportnumbers
 - numeri di passaporto
 
@@ -10722,8 +10612,8 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - driverlicences
 - LIC del driver
 - driver driver'lics
-- patente di guida
-- licenze per i driver
+- driver license
+- driver licenses
 - patente di guida
 - licenze per i driver
 - driverslic
@@ -10734,9 +10624,9 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - driverslicenses
 - driver Lic
 - driver driver'lics
-- patente di guida
-- licenze per i driver
-- patente di guida
+- drivers license
+- drivers licenses
+- drivers licence
 - licenze per i conducenti
 - driver'lic
 - driver ' LiCS
@@ -10758,9 +10648,9 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - driver'slicences
 - LIC del conducente
 - driver'lics del conducente
-- patente di guida
-- licenze del conducente
-- patente di guida
+- driver's license
+- driver's licenses
+- driver's licence
 - patenti di guida
 - DL #
 - DLS #
@@ -10811,9 +10701,8 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - licenze del conducente #
 - patente di guida #
 - patenti di guida #
-- driving licence
- 
-- patente di guida
+- driving licence 
+- driving license
 - dlno #
 - driv Lic
 - driv licen
@@ -10828,9 +10717,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - Guida licen
 - patenti di guida
 - driving licence
-
 - driving licences
-
 - permesso di guida
 - DL No
 - dlno
@@ -10912,7 +10799,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - identità personale
 - personalidno #
 - personalidnumber #
-- persönliche identifikationsnummer
+- persönliche identifikationsnummer
 - ID univoco
 - identità univoca
 - uniqueidkey #
@@ -11018,7 +10905,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - numéro d'étain
 - luxembourgeois fiscale di Numéro d'identification
 - numéro d'identification fiscale
-- previdenza sociale
+- social security
 - sozialunterstützung
 - sozialversécherung
 - sozialversicherungsausweis
@@ -11029,7 +10916,6 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - steueridentifikationsnummer
 - steuernummer
 - tax id
-
 - identificazione fiscale No
 - codice di identificazione fiscale
 - tax no #
@@ -11168,8 +11054,8 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - driverlicences
 - LIC del driver
 - driver driver'lics
-- patente di guida
-- licenze per i driver
+- driver license
+- driver licenses
 - patente di guida
 - licenze per i driver
 - driverslic
@@ -11180,9 +11066,9 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - driverslicenses
 - driver Lic
 - driver driver'lics
-- patente di guida
-- licenze per i driver
-- patente di guida
+- drivers license
+- drivers licenses
+- drivers licence
 - licenze per i conducenti
 - driver'lic
 - driver ' LiCS
@@ -11204,9 +11090,9 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - driver'slicences
 - LIC del conducente
 - driver'lics del conducente
-- patente di guida
-- licenze del conducente
-- patente di guida
+- driver's license
+- driver's licenses
+- driver's licence
 - patenti di guida
 - DL #
 - DLS #
@@ -11257,9 +11143,8 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - licenze del conducente #
 - patente di guida #
 - patenti di guida #
-- driving licence
- 
-- patente di guida
+- driving licence 
+- driving license
 - dlno #
 - driv Lic
 - driv licen
@@ -11274,9 +11159,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - Guida licen
 - patenti di guida
 - driving licence
-
 - driving licences
-
 - permesso di guida
 - DL No
 - dlno
@@ -11393,13 +11276,13 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 #### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
 
 - passaporto #
-- passaporto #
+- passaporto #
 - passportid
 - passaporti
 - passportno
 - Passport No
 - passportnumber
-- numero di passaporto
+- passport number
 - passportnumbers
 - numeri di passaporto
 
@@ -11479,7 +11362,6 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 65%,
 - numru Tat-Taxxa
 - codice numerico personale
 - tax id
-
 - identificazione fiscale No
 - codice di identificazione fiscale
 - tax no #
@@ -11555,8 +11437,8 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%,
 - numero di social-Fiscal
 - Sofi
 - sofinummer
-- uniek identificatienummer
-- uniek identiteitsnummer
+- uniek identificatienummer
+- uniek identiteitsnummer
 - numero di identificazione univoco
 - numero di identità univoco
 - uniqueidentityno #
@@ -11607,8 +11489,8 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - driverlicences
 - LIC del driver
 - driver driver'lics
-- patente di guida
-- licenze per i driver
+- driver license
+- driver licenses
 - patente di guida
 - licenze per i driver
 - driverslic
@@ -11619,9 +11501,9 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - driverslicenses
 - driver Lic
 - driver driver'lics
-- patente di guida
-- licenze per i driver
-- patente di guida
+- drivers license
+- drivers licenses
+- drivers licence
 - licenze per i conducenti
 - driver'lic
 - driver ' LiCS
@@ -11643,9 +11525,9 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - driver'slicences
 - LIC del conducente
 - driver'lics del conducente
-- patente di guida
-- licenze del conducente
-- patente di guida
+- driver's license
+- driver's licenses
+- driver's licence
 - patenti di guida
 - DL #
 - DLS #
@@ -11696,9 +11578,8 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - licenze del conducente #
 - patente di guida #
 - patenti di guida #
-- driving licence
- 
-- patente di guida
+- driving licence 
+- driving license
 - dlno #
 - driv Lic
 - driv licen
@@ -11713,9 +11594,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - Guida licen
 - patenti di guida
 - driving licence
-
 - driving licences
-
 - permesso di guida
 - DL No
 - dlno
@@ -11839,7 +11718,6 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 65%,
 - Tin olandesi
 - stagno degli olandesi
 - tax id
-
 - identificazione fiscale No
 - codice di identificazione fiscale
 - identificazione fiscale tal
@@ -11976,7 +11854,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 
 #### <a name="keyword_new_zealand_bank_account_number"></a>Keyword_new_zealand_bank_account_number
 
-- numero account
+- account number
 - conto corrente bancario
 - bank_acct_id
 - bank_acct_branch
@@ -12042,7 +11920,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 65%,
 - driverslicences
 - driver Lic
 - driver driver'lics
-- patente di guida
+- drivers licence
 - licenze per i conducenti
 - driver'lic
 - driver ' LiCS
@@ -12058,7 +11936,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 65%,
 - driver'slicences
 - LIC del conducente
 - driver'lics del conducente
-- patente di guida
+- driver's licence
 - patenti di guida
 - driverlic #
 - driverlics #
@@ -12092,8 +11970,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 65%,
 - driver'lics del conducente #
 - patente di guida #
 - patenti di guida #
-- 
-international driving permit
+- international driving permit
 - international driving permits
 - Associazione automobilistica NZ
 - Associazione automobilistica neozelandese
@@ -12255,7 +12132,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 65%,
 
 #### <a name="keyword_new_zealand_social_welfare_number"></a>Keyword_new_zealand_social_welfare_number
 
-- previdenza sociale #
+- previdenza sociale #
 - previdenza sociale #
 - previdenza sociale No.
 - numero di previdenza sociale
@@ -12412,8 +12289,8 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - driverlicences
 - LIC del driver
 - driver driver'lics
-- patente di guida
-- licenze per i driver
+- driver license
+- driver licenses
 - patente di guida
 - licenze per i driver
 - driverslic
@@ -12424,9 +12301,9 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - driverslicenses
 - driver Lic
 - driver driver'lics
-- patente di guida
-- licenze per i driver
-- patente di guida
+- drivers license
+- drivers licenses
+- drivers licence
 - licenze per i conducenti
 - driver'lic
 - driver ' LiCS
@@ -12448,9 +12325,9 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - driver'slicences
 - LIC del conducente
 - driver'lics del conducente
-- patente di guida
-- licenze del conducente
-- patente di guida
+- driver's license
+- driver's licenses
+- driver's licence
 - patenti di guida
 - DL #
 - DLS #
@@ -12501,9 +12378,8 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - licenze del conducente #
 - patente di guida #
 - patenti di guida #
-- driving licence
- 
-- patente di guida
+- driving licence 
+- driving license
 - dlno #
 - driv Lic
 - driv licen
@@ -12518,9 +12394,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - Guida licen
 - patenti di guida
 - driving licence
-
 - driving licences
-
 - permesso di guida
 - DL No
 - dlno
@@ -12784,7 +12658,6 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%,
 - numero Identyfikacji Podatkowej
 - numeridentyfikacjipodatkowej #
 - tax id
-
 - identificazione fiscale No
 - codice di identificazione fiscale
 - tax no #
@@ -12851,7 +12724,6 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%,
 - numero ID
 - identificazione no
 - identification number
-
 - carta di identità No
 - numero di carta di identità
 - carta d'identità nazionale
@@ -12922,8 +12794,8 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - driverlicences
 - LIC del driver
 - driver driver'lics
-- patente di guida
-- licenze per i driver
+- driver license
+- driver licenses
 - patente di guida
 - licenze per i driver
 - driverslic
@@ -12934,9 +12806,9 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - driverslicenses
 - driver Lic
 - driver driver'lics
-- patente di guida
-- licenze per i driver
-- patente di guida
+- drivers license
+- drivers licenses
+- drivers licence
 - licenze per i conducenti
 - driver'lic
 - driver ' LiCS
@@ -12958,9 +12830,9 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - driver'slicences
 - LIC del conducente
 - driver'lics del conducente
-- patente di guida
-- licenze del conducente
-- patente di guida
+- driver's license
+- driver's licenses
+- driver's licence
 - patenti di guida
 - DL #
 - DLS #
@@ -13011,9 +12883,8 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - licenze del conducente #
 - patente di guida #
 - patenti di guida #
-- driving licence
- 
-- patente di guida
+- driving licence 
+- driving license
 - dlno #
 - driv Lic
 - driv licen
@@ -13028,9 +12899,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - Guida licen
 - patenti di guida
 - driving licence
-
 - driving licences
-
 - permesso di guida
 - DL No
 - dlno
@@ -13092,13 +12961,13 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 #### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
 
 - passaporto #
-- passaporto #
+- passaporto #
 - passportid
 - passaporti
 - passportno
 - Passport No
 - passportnumber
-- numero di passaporto
+- passport number
 - passportnumbers
 - numeri di passaporto
 
@@ -13166,7 +13035,6 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 65%,
 - número de identificação Fisca
 - numero fiscale
 - tax id
-
 - identificazione fiscale No
 - codice di identificazione fiscale
 - tax no #
@@ -13232,8 +13100,8 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - driverlicences
 - LIC del driver
 - driver driver'lics
-- patente di guida
-- licenze per i driver
+- driver license
+- driver licenses
 - patente di guida
 - licenze per i driver
 - driverslic
@@ -13244,9 +13112,9 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - driverslicenses
 - driver Lic
 - driver driver'lics
-- patente di guida
-- licenze per i driver
-- patente di guida
+- drivers license
+- drivers licenses
+- drivers licence
 - licenze per i conducenti
 - driver'lic
 - driver ' LiCS
@@ -13268,9 +13136,9 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - driver'slicences
 - LIC del conducente
 - driver'lics del conducente
-- patente di guida
-- licenze del conducente
-- patente di guida
+- driver's license
+- driver's licenses
+- driver's licence
 - patenti di guida
 - DL #
 - DLS #
@@ -13321,9 +13189,8 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - licenze del conducente #
 - patente di guida #
 - patenti di guida #
-- driving licence
- 
-- patente di guida
+- driving licence 
+- driving license
 - dlno #
 - driv Lic
 - driv licen
@@ -13338,9 +13205,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - Guida licen
 - patenti di guida
 - driving licence
-
 - driving licences
-
 - permesso di guida
 - DL No
 - dlno
@@ -13417,11 +13282,10 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - numero assicurativo
 - insurancenumber #
 - ID nazionale #
-- 
-national id
-- numero di identificazione nazionale
+- national id
+- national identification number
 - Număr identificare Personal
-- număr identitate
+- număr identitate
 - Număr personale Unic
 - număridentitate #
 - număridentitate
@@ -13433,9 +13297,8 @@ national id
 - pin #
 - pin
 - Tax File No
-- numero di file fiscale
+- tax file number
 - tax id
-
 - identificazione fiscale No
 - codice di identificazione fiscale
 - tax no #
@@ -13495,13 +13358,13 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 #### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
 
 - passaporto #
-- passaporto #
+- passaporto #
 - passportid
 - passaporti
 - passportno
 - Passport No
 - passportnumber
-- numero di passaporto
+- passport number
 - passportnumbers
 - numeri di passaporto
 
@@ -13555,19 +13418,19 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 
 #### <a name="keyword_russia_passport_number_domestic"></a>Keyword_russia_passport_number_domestic
 
-- numero di passaporto
+- passport number
 - Passport No
-- passaporto #
+- passaporto #
 - ID passaporto
 - passportno #
 - passportnumber #
-- паспорт нет
+- паспорт нет
 - ID паспорт
-- pоссийской паспорт
+- pоссийской паспорт
 - Pусский Номер паспорта
 - паспорт #
 - паспортid #
-- номер паспорта
+- номер паспорта
 - номерпаспорта #
 
 
@@ -13615,19 +13478,19 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 
 #### <a name="keywords_russia_passport_number_international"></a>Keywords_russia_passport_number_international
 
-- numero di passaporto
+- passport number
 - Passport No
-- passaporto #
+- passaporto #
 - ID passaporto
 - passportno #
 - passportnumber #
-- паспорт нет
+- паспорт нет
 - ID паспорт
-- pоссийской паспорт
+- pоссийской паспорт
 - Pусский Номер паспорта
 - паспорт #
 - паспортid #
-- номер паспорта
+- номер паспорта
 - номерпаспорта #
 
 
@@ -13776,8 +13639,8 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - driverlicences
 - LIC del driver
 - driver driver'lics
-- patente di guida
-- licenze per i driver
+- driver license
+- driver licenses
 - patente di guida
 - licenze per i driver
 - driverslic
@@ -13788,9 +13651,9 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - driverslicenses
 - driver Lic
 - driver driver'lics
-- patente di guida
-- licenze per i driver
-- patente di guida
+- drivers license
+- drivers licenses
+- drivers licence
 - licenze per i conducenti
 - driver'lic
 - driver ' LiCS
@@ -13812,9 +13675,9 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - driver'slicences
 - LIC del conducente
 - driver'lics del conducente
-- patente di guida
-- licenze del conducente
-- patente di guida
+- driver's license
+- driver's licenses
+- driver's licence
 - patenti di guida
 - DL #
 - DLS #
@@ -13865,9 +13728,8 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - licenze del conducente #
 - patente di guida #
 - patenti di guida #
-- driving licence
- 
-- patente di guida
+- driving licence 
+- driving license
 - dlno #
 - driv Lic
 - driv licen
@@ -13882,9 +13744,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - Guida licen
 - patenti di guida
 - driving licence
-
 - driving licences
-
 - permesso di guida
 - DL No
 - dlno
@@ -13948,7 +13808,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 65%,
 
 #### <a name="keywords_slovakia_eu_national_id_card"></a>Keywords_slovakia_eu_national_id_card
 
-- azonosító szám
+- azonosító szám
 - numero di nascita
 - číslo Národnej identifikačnej karty
 - číslo občianského preukazu
@@ -13956,7 +13816,6 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 65%,
 - numero ID
 - identificazione no
 - identification number
-
 - identifikačná Karta č
 - identifikačné číslo
 - carta di identità No
@@ -13967,18 +13826,17 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 65%,
 - Nemzeti személyazonosító igazolvány
 - personalidnumber #
 - rč
-- rodne cislo
+- rodne cislo
 - rodné číslo
-- codice di previdenza sociale
+- social security number
 - SSN #
 - SSN
-- személyi igazolvány szám
-- személyi igazolvány száma
-- személyigazolvány szám
+- személyi igazolvány szám
+- személyi igazolvány száma
+- személyigazolvány szám
 - Tax File No
-- numero di file fiscale
+- tax file number
 - tax id
-
 - identificazione fiscale No
 - codice di identificazione fiscale
 - tax no #
@@ -14034,13 +13892,13 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 #### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
 
 - passaporto #
-- passaporto #
+- passaporto #
 - passportid
 - passaporti
 - passportno
 - Passport No
 - passportnumber
-- numero di passaporto
+- passport number
 - passportnumbers
 - numeri di passaporto
 
@@ -14098,8 +13956,8 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - driverlicences
 - LIC del driver
 - driver driver'lics
-- patente di guida
-- licenze per i driver
+- driver license
+- driver licenses
 - patente di guida
 - licenze per i driver
 - driverslic
@@ -14110,9 +13968,9 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - driverslicenses
 - driver Lic
 - driver driver'lics
-- patente di guida
-- licenze per i driver
-- patente di guida
+- drivers license
+- drivers licenses
+- drivers licence
 - licenze per i conducenti
 - driver'lic
 - driver ' LiCS
@@ -14134,9 +13992,9 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - driver'slicences
 - LIC del conducente
 - driver'lics del conducente
-- patente di guida
-- licenze del conducente
-- patente di guida
+- driver's license
+- driver's licenses
+- driver's licence
 - patenti di guida
 - DL #
 - DLS #
@@ -14187,9 +14045,8 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - licenze del conducente #
 - patente di guida #
 - patenti di guida #
-- driving licence
- 
-- patente di guida
+- driving licence 
+- driving license
 - dlno #
 - driv Lic
 - driv licen
@@ -14204,9 +14061,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - Guida licen
 - patenti di guida
 - driving licence
-
 - driving licences
-
 - permesso di guida
 - DL No
 - dlno
@@ -14272,32 +14127,30 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 
 #### <a name="keywords_slovenia_eu_national_id_card"></a>Keywords_slovenia_eu_national_id_card
 
-- edinstvena številka glavnega državljana
+- edinstvena številka glavnega državljana
 - emšo
-- enotna maticna številka obcana
-- scheda ID
+- enotna maticna številka obcana
+- id card
 - identification number
-
-- identifikacijska številka
+- identifikacijska številka
 - carta di identità
 - ID Nacionalna
 - elenco potni di Nacionalni
-- 
-national id
-- osebna izkaznica
+- national id
+- osebna izkaznica
 - osebni Koda
 - osebni ne
-- osebni številka
+- osebni številka
 - codice personale
 - numero personale
 - codice numerico personale
-- številka državljana
+- številka državljana
 - numero di cittadino univoco
 - numero ID univoco
 - numero di identità univoco
 - numero di cittadino Master univoco
 - numero di registrazione univoco
-- uniqueidentityno #
+- uniqueidentityno #
 - uniqueidentityno #
 
 ## <a name="slovenia-passport-number"></a>Slovenia-numero di passaporto
@@ -14343,13 +14196,13 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 #### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
 
 - passaporto #
-- passaporto #
+- passaporto #
 - passportid
 - passaporti
 - passportno
 - Passport No
 - passportnumber
-- numero di passaporto
+- passport number
 - passportnumbers
 - numeri di passaporto
 
@@ -14410,13 +14263,12 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 65%,
 
 #### <a name="keywords_slovenia_eu_tax_file_number"></a>Keywords_slovenia_eu_tax_file_number
 
-- davčna številka
-- identifikacijska številka davka
-- številka davčne datoteke
+- davčna številka
+- identifikacijska številka davka
+- številka davčne datoteke
 - Tax File No
-- numero di file fiscale
+- tax file number
 - tax id
-
 - identificazione fiscale No
 - codice di identificazione fiscale
 - tax no #
@@ -14597,8 +14449,8 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - driverlicences
 - LIC del driver
 - driver driver'lics
-- patente di guida
-- licenze per i driver
+- driver license
+- driver licenses
 - patente di guida
 - licenze per i driver
 - driverslic
@@ -14609,9 +14461,9 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - driverslicenses
 - driver Lic
 - driver driver'lics
-- patente di guida
-- licenze per i driver
-- patente di guida
+- drivers license
+- drivers licenses
+- drivers licence
 - licenze per i conducenti
 - driver'lic
 - driver ' LiCS
@@ -14633,9 +14485,9 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - driver'slicences
 - LIC del conducente
 - driver'lics del conducente
-- patente di guida
-- licenze del conducente
-- patente di guida
+- driver's license
+- driver's licenses
+- driver's licence
 - patenti di guida
 - DL #
 - DLS #
@@ -14686,9 +14538,8 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - licenze del conducente #
 - patente di guida #
 - patenti di guida #
-- driving licence
- 
-- patente di guida
+- driving licence 
+- driving license
 - dlno #
 - driv Lic
 - driv licen
@@ -14703,9 +14554,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - Guida licen
 - patenti di guida
 - driving licence
-
 - driving licences
-
 - permesso di guida
 - DL No
 - dlno
@@ -14793,7 +14642,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - Identidad único
 - identidadúnico #
 - numero assicurativo
-- numero di identificazione nazionale
+- national identification number
 - identità nazionale
 - nationalid #
 - nationalidno #
@@ -14850,13 +14699,13 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 #### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
 
 - passaporto #
-- passaporto #
+- passaporto #
 - passportid
 - passaporti
 - passportno
 - Passport No
 - passportnumber
-- numero di passaporto
+- passport number
 - passportnumbers
 - numeri di passaporto
 
@@ -15006,9 +14855,8 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - spanishcifno #
 - spanishcifno
 - Tax File No
-- numero di file fiscale
+- tax file number
 - tax id
-
 - identificazione fiscale No
 - codice di identificazione fiscale
 - tax no #
@@ -15152,8 +15000,8 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - driverlicences
 - LIC del driver
 - driver driver'lics
-- patente di guida
-- licenze per i driver
+- driver license
+- driver licenses
 - patente di guida
 - licenze per i driver
 - driverslic
@@ -15164,9 +15012,9 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - driverslicenses
 - driver Lic
 - driver driver'lics
-- patente di guida
-- licenze per i driver
-- patente di guida
+- drivers license
+- drivers licenses
+- drivers licence
 - licenze per i conducenti
 - driver'lic
 - driver ' LiCS
@@ -15188,9 +15036,9 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - driver'slicences
 - LIC del conducente
 - driver'lics del conducente
-- patente di guida
-- licenze del conducente
-- patente di guida
+- driver's license
+- driver's licenses
+- driver's licence
 - patenti di guida
 - DL #
 - DLS #
@@ -15241,9 +15089,8 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - licenze del conducente #
 - patente di guida #
 - patenti di guida #
-- driving licence
- 
-- patente di guida
+- driving licence 
+- driving license
 - dlno #
 - driv Lic
 - driv licen
@@ -15258,9 +15105,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - Guida licen
 - patenti di guida
 - driving licence
-
 - driving licences
-
 - permesso di guida
 - DL No
 - dlno
@@ -15333,7 +15178,6 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - ID #
 - identificazione no
 - identification number
-
 - identifikationsnumret #
 - identifikationsnumret
 - identitetshandling
@@ -15539,11 +15383,10 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - personnummer
 - ID pattinat Nummer
 - Identifikation skatet
-- skattebetalarens identifikationsnummer
+- skattebetalarens identifikationsnummer
 - Tin Sverige
 - file fiscale
 - tax id
-
 - identificazione fiscale No
 - codice di identificazione fiscale
 - tax no #
@@ -15600,7 +15443,6 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 #### <a name="keyword_swift"></a>Keyword_swift
 
 - international organization for standardization 9362
-
 - iso 9362
 - iso9362
 - Swift #
@@ -15608,34 +15450,21 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - swiftnumber
 - swiftroutingnumber
 - swift code
-
 - swift number #
-
 - swift routing number
-
 - bic number
-
 - bic code
-
 - bic #
 - BIC #
 - bank identifier code
-
 - Organisation internationale de normalisation 9362
-
 - rapide #
-
 - code SWIFT
-
 - le numéro de swift
-
 - swift numéro d'acheminement
-
 - le numéro BIC
-
-- # <a name="bic"></a>BIC
+- # <a name="bic"></a>BIC
 - code identificateur de banque
-
 - SWIFTコード
 - SWIFT番号
 - BIC番号
@@ -15707,7 +15536,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - PID
 - numero assicurativo
 - personalidno #
-- codice di previdenza sociale
+- social security number
 - numero ID personale
 - identificazione personale No.
 - insuranceno #
@@ -15719,8 +15548,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - einzigartige Identität nicht
 - sozialversicherungsnummer
 - ID personnelle di identificazione
-- 
-numéro de sécurité sociale
+- numéro de sécurité sociale
 
    
 ## <a name="taiwan-national-identification-number"></a>Numero di identificazione nazionale di Taiwan
@@ -16201,26 +16029,19 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 #### <a name="keyword_uk_nino"></a>Keyword_uk_nino
 
 - national insurance number
-
 - national insurance contributions
-
 - protection act
 - Insurance
-- codice di previdenza sociale
+- social security number
 - insurance application
-
 - medical application
-
 - social insurance
-
 - medical attention
-
-- previdenza sociale
+- social security
 - great britain
-
 - Numero NI
 - NI No.
-- NI #
+- NI #
 - NI #
 - Insurance #
 - insurancenumber
@@ -16272,7 +16093,6 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - codice fiscale
 - file fiscale
 - tax id
-
 - identificazione fiscale No
 - codice di identificazione fiscale
 - tax no #
@@ -16292,11 +16112,11 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 
 ### <a name="format"></a>Formato
 
-8-17 cifre
+6-17 cifre
 
 ### <a name="pattern"></a>Modello
 
-8-17 cifre consecutive
+6-17 cifre consecutive
 
 ### <a name="checksum"></a>Checksum
 
@@ -16533,41 +16353,33 @@ No
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
 - La funzione Func_formatted_itin restituisce contenuti che corrispondono al modello.
-- Si verifica almeno una delle situazioni seguenti:
-    - Viene trovata una parola chiave da Keyword_itin.
-    - La funzione Func_us_address rileva un indirizzo nel formato di data corretto.
-    - La funzione Func_us_date rileva una data nel formato corretto.
-    - Viene trovata una parola chiave da Keyword_itin_collaborative.
+- Viene trovata una parola chiave da Keyword_itin.
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
 - La funzione Func_unformatted_itin restituisce contenuti che corrispondono al modello.
-- Si verifica almeno una delle situazioni seguenti:
-    - Viene trovata una parola chiave da Keyword_itin_collaborative.
-    - La funzione Func_us_address rileva un indirizzo nel formato di data corretto.
-    - La funzione Func_us_date rileva una data nel formato corretto.
+- Viene trovata una parola chiave da Keyword_itin.
+
+Un criterio DLP rileva questo tipo di informazioni con una probabilità del 65%, entro 300 caratteri, se:
+- La funzione Func_formatted_itin o Func_unformatted_itin trova contenuto corrispondente al modello.
 
 ```xml
-<!-- U.S. Individual Taxpayer Identification Number (ITIN) -->
-<Entity id="e55e2a32-f92d-4985-a35d-a0b269eb687b" patternsProximity="300" recommendedConfidence="75">
-    <Pattern confidenceLevel="85">
+    <!-- U.S. Individual Taxpayer Identification Number (ITIN) -->
+    <Entity id="e55e2a32-f92d-4985-a35d-a0b269eb687b" patternsProximity="300" recommendedConfidence="75">
+      <Pattern confidenceLevel="85">
         <IdMatch idRef="Func_formatted_itin" />
-        <Any minMatches="1">
-          <Match idRef="Keyword_itin" />
-          <Match idRef="Func_us_address" />
-          <Match idRef="Func_us_date" />
-          <Match idRef="Keyword_itin_collaborative" />
-        </Any>
-    </Pattern>
-    <Pattern confidenceLevel="75">
+        <Match idRef="Keyword_itin" />
+      </Pattern>
+      <Pattern confidenceLevel="75">
         <IdMatch idRef="Func_unformatted_itin" />
         <Match idRef="Keyword_itin" />
-        <Any minMatches="1">
-          <Match idRef="Keyword_itin_collaborative" />
-          <Match idRef="Func_us_address" />
-          <Match idRef="Func_us_date" />
-        </Any>
-    </Pattern>
-</Entity>
+      </Pattern>
+      <Pattern confidenceLevel="65">
+        <IdMatch idRef="Func_formatted_itin" />
+      </Pattern>
+      <Pattern confidenceLevel="65">
+        <IdMatch idRef="Func_unformatted_itin" />
+      </Pattern>
+    </Entity>
 ```
 
 ### <a name="keywords"></a>Parole chiave
@@ -16578,6 +16390,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - tax id 
 - tax identification 
 - Itin 
+- i.t.i.n.
 - SSN 
 - latta 
 - social security 
@@ -16586,14 +16399,6 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - taxid 
 - individual taxpayer 
 
-#### <a name="keyword_itin_collaborative"></a>Keyword_itin_collaborative
-
-- License 
-- DL 
-- DOB 
-- Data di nascita 
-- Compleanno 
-- Date of Birth 
 
 ## <a name="us-social-security-number-ssn"></a>Codice di previdenza sociale degli Stati Uniti (SSN)
 
@@ -16769,10 +16574,10 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 #### <a name="keyword_ukraine_passport_domestic"></a>Keyword_ukraine_passport_domestic
 
 - passaporto ucraino
-- numero di passaporto
+- passport number
 - Passport No
-- паспорт України
-- номер паспорта
+- паспорт України
+- номер паспорта
 - персональний
 
 
@@ -16819,7 +16624,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 #### <a name="keyword_ukraine_passport_international"></a>Keyword_ukraine_passport_international
 
 - passaporto ucraino
-- numero di passaporto
+- passport number
 - Passport No
-- паспорт України
-- номер паспорта
+- паспорт України
+- номер паспорта

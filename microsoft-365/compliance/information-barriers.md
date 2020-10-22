@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 07/08/2019
+ms.date: ''
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -16,12 +16,12 @@ ms.collection:
 localization_priority: None
 description: Utilizzare le barriere informative per garantire la conformità della comunicazione tramite Microsoft teams all'interno dell'organizzazione.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 7b223de8eba68d49a8cc0c90239305eb05bb1090
-ms.sourcegitcommit: 5e40c760c1af2a4cc6d85cb782b17f5c979677c5
+ms.openlocfilehash: 0630dc607d6993598f356a7090a6be5890028499
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48379192"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48636963"
 ---
 # <a name="information-barriers"></a>Barriere informative
 
@@ -35,7 +35,7 @@ Barriere informative sono ora supportate in Microsoft teams, SharePoint Online e
 - Un team di ricerca deve chiamare o chattare online solo con un team di sviluppo del prodotto
 
 > [!IMPORTANT]
-> Barriere informative ***supportano solo*** due restrizioni di modalità. Restrizioni a un modo, come il marketing può comunicare con i commercianti diurni, ma i trader diurni non possono comunicare con il marketing ***non è supportato***.
+> Barriere informative ***supporta solo**le restrizioni in due modi. Restrizioni a un modo, ad esempio il marketing può comunicare con i commercianti diurni, ma i trader diurni non sono in grado di comunicare con il marketing _ *_non è supportato_* *.
 
 Per tutti questi scenari di esempio e altro ancora, è possibile definire i criteri di barriera delle informazioni per impedire o consentire le comunicazioni in Microsoft teams. Tali criteri possono impedire agli utenti di effettuare chiamate o chattare con coloro che non devono o consentire agli utenti di comunicare solo con gruppi specifici in Microsoft teams. Con i criteri di protezione delle informazioni in vigore, quando gli utenti interessati da tali criteri tentano di comunicare con altri membri di Microsoft teams, vengono eseguiti i controlli per impedire (o consentire) la comunicazione (come definito dai criteri di barriera delle informazioni). Per ulteriori informazioni sull'esperienza utente con barriere informative, vedere [barriere informative in Microsoft teams](https://docs.microsoft.com/MicrosoftTeams/information-barriers-in-teams).
 

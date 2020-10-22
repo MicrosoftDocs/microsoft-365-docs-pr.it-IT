@@ -15,23 +15,26 @@ search.appverid:
 - MET150
 ms.assetid: fd53438a-a760-45f6-9df4-861b50161ae4
 description: Informazioni su come Advanced eDiscovery può aiutare a analizzare i dati, semplificare le recensioni dei documenti e prendere decisioni per eDiscovery efficienti.
-ms.openlocfilehash: 554b8cfc5209ce0764e712c3aff4338347bc2881
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 231064266a2498ec2eb8845da325fba6e5cfeb76
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631837"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48649713"
 ---
 # <a name="advanced-ediscovery-classic"></a>Advanced eDiscovery (classico)
 
 > [!IMPORTANT]
-> Continuando ad investire nelle versioni più recenti di Advanced eDiscovery, si annuncia il pensionamento di Advanced eDiscovery, noto anche come *Advanced eDiscovery (Classic)* o *Advanced eDiscovery v 1.0*. Se si usa ancora Advanced eDiscovery v 1.0, passare al più presto ad [Advanced eDiscovery v2.0](overview-ediscovery-20.md), noto anche come *soluzione Advanced eDiscovery in Microsoft 365*. Advanced eDiscovery 2.0 contiene funzionalità simili a quelle disponibili in Advanced eDiscovery v1.0, ma offre anche numerose nuove caratteristiche, come gestione dei responsabili, gestione delle comunicazioni e insiemi da rivedere. Per altre informazioni sul ritiro di Advanced eDiscovery v 1.0, vedere [Ritiro degli strumenti di eDiscovery legacy](legacy-ediscovery-retirement.md#advanced-ediscovery-v10). 
-  
+> **Advanced eDiscovery (Classic) verrà definitivamente ritirato il 31 dicembre 2020.**<br/>
+> Continuando ad investire nelle versioni più recenti di Advanced eDiscovery, si annuncia il pensionamento e la rimozione permanenti dei casi e dei dati del caso da Advanced eDiscovery (Classic).
+> Se si utilizza ancora Advanced eDiscovery (Classic), noto anche come *Advanced eDiscovery v 1.0*, è necessario eseguire la transizione dell'utilizzo a [Advanced eDiscovery v 2.0](overview-ediscovery-20.md) (noto anche come *advanced eDiscovery Solution in Microsoft 365*) appena possibile.  In preparazione per la rimozione di tutti i casi e dei dati del caso, è possibile archiviare i dati del caso [esportando i dati da un caso](https://docs.microsoft.com/microsoft-365/compliance/export-results-in-advanced-ediscovery?view=o365-worldwide).
+> Advanced eDiscovery v 2.0 contiene funzionalità simili rilevate in Advanced eDiscovery v 1.0, ma offre anche numerose nuove funzionalità come la gestione dei depositari, la gestione delle comunicazioni e i set di revisione. Per ulteriori informazioni sulle fasi precedenti di retirment di Advanced eDiscovery v 1.0, vedere [pensionamento degli strumenti di eDiscovery legacy](legacy-ediscovery-retirement.md#advanced-ediscovery-v10).
+
 Con Advanced eDiscovery, è possibile comprendere meglio i dati e ridurre i costi di eDiscovery. Advanced eDiscovery consente di analizzare i dati non strutturati, di eseguire una revisione dei documenti più efficiente e di prendere decisioni per ridurre i dati per eDiscovery. È possibile utilizzare i dati archiviati in Exchange Online, SharePoint Online, OneDrive for business, Skype for business, Microsoft 365 Groups e Microsoft teams. È possibile eseguire una ricerca di eDiscovery nel centro sicurezza e conformità per cercare contenuto in gruppi, cassette postali e siti singoli e quindi analizzare i risultati della ricerca con eDiscovery avanzato. Quando si preparano i risultati della ricerca per l'analisi in Advanced eDiscovery, il riconoscimento ottico dei caratteri consente l'estrazione del testo dalle immagini. Questa funzionalità consente di applicare ai file di immagine le potenti funzionalità analitiche del testo di Advanced eDiscovery.
   
 Advanced eDiscovery semplifica e velocizza il processo di revisione del documento identificando informazioni ridondanti con caratteristiche come il rilevamento e l'analisi dei thread di posta elettronica quasi duplicati. La funzionalità pertinenza applica la tecnologia di codifica predittiva per identificare i documenti rilevanti. Advanced eDiscovery apprende dalle decisioni di tagging sui documenti di esempio e applica tecniche statistiche e di apprendimento automatico per calcolare la pertinenza di ogni documento nel set di dati. In questo modo è possibile concentrarsi sui documenti principali, prendere decisioni rapide ma informate sulla strategia del caso, i dati di eliminazione e la revisione delle priorità.
   
- **Perché Advanced eDiscovery?** Advanced eDiscovery si basa sul set esistente di funzionalità di eDiscovery in Office 365. Ad esempio, è possibile utilizzare la funzionalità di ricerca nel centro &amp; sicurezza e conformità per eseguire una ricerca iniziale di tutte le origini di contenuto dell'organizzazione per identificare e raccogliere i dati che potrebbero essere rilevanti per uno specifico caso legale. Successivamente, è possibile eseguire un'analisi su tali dati applicando il testo analitico, l'apprendimento automatico e la funzionalità di codifica predittiva e di rilevanza di Advanced eDiscovery. In questo modo, l'organizzazione elaborerà rapidamente migliaia di messaggi di posta elettronica, documenti e altri tipi di dati per individuare gli elementi più probabili rilevanti per una specifica 
+ **Perché Advanced eDiscovery?** Advanced eDiscovery si basa sul set esistente di funzionalità di eDiscovery in Office 365. Ad esempio, è possibile utilizzare la funzionalità di ricerca nel &amp; Centro sicurezza e conformità per eseguire una ricerca iniziale di tutte le origini di contenuto dell'organizzazione per identificare e raccogliere i dati che potrebbero essere rilevanti per uno specifico caso legale. Successivamente, è possibile eseguire un'analisi su tali dati applicando il testo analitico, l'apprendimento automatico e la funzionalità di codifica predittiva e di rilevanza di Advanced eDiscovery. In questo modo, l'organizzazione elaborerà rapidamente migliaia di messaggi di posta elettronica, documenti e altri tipi di dati per individuare gli elementi più probabili rilevanti per una specifica 
  
 > [!NOTE]
 > Advanced eDiscovery richiede un Office 365 E3 con il componente aggiuntivo per la conformità avanzato o un abbonamento E5 per l'organizzazione. Se non si dispone di tale piano e si desidera provare Advanced eDiscovery, è possibile [iscriversi per una versione di valutazione di Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). caso. Il set di dati ridotto può quindi essere esportato fuori da Office 365 per ulteriori riesami. 

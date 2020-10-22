@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: aaca8987-5b62-458b-9882-c28476a66918
 ms.custom: seo-marvel-apr2020
 description: La registrazione di controllo delle cassette postali è attivata per impostazione predefinita in Microsoft 365 (denominato anche controllo delle cassette postali predefinito o controllo delle cassette postali per impostazione predefinita). Ciò significa che alcune azioni eseguite da proprietari, delegati e amministratori delle cassette postali vengono automaticamente registrate in un registro di controllo delle cassette postali, in cui è possibile cercare le attività eseguite sulla cassetta postale.
-ms.openlocfilehash: 7c0a4417496bcf18362dbcfe53b751c549ef98b9
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: 8d91936f82070848dc65d1b160d4df0165875213
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47545842"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48649625"
 ---
 # <a name="manage-mailbox-auditing"></a>Gestire il controllo delle cassette postali
 
@@ -35,7 +35,7 @@ Di seguito sono illustrati alcuni vantaggi del controllo delle cassette postali 
 
 - Non è necessario gestire le azioni delle cassette postali di cui è stato eseguito il controllo. Per impostazione predefinita, per ogni tipo di accesso (amministratore, delegato e proprietario) viene controllata una serie di azioni delle cassette postali predefinite.
 
-- Quando Microsoft rilascia una nuova azione della cassetta postale (in particolare le azioni che consentono di proteggere l'organizzazione e la guida con indagini forensi), l'azione viene aggiunta automaticamente all'elenco delle azioni delle cassette postali controllate per impostazione predefinita. Questo significa che non è necessario monitorare aggiungere nuove azioni alle cassette postali.
+- Quando Microsoft rilascia una nuova azione della cassetta postale, l'azione potrebbe essere aggiunta automaticamente all'elenco delle azioni delle cassette postali controllate per impostazione predefinita (soggetto all'utente avente la licenza appropriata). Questo significa che non è necessario monitorare aggiungere nuove azioni alle cassette postali.
 
 - Si dispone di un criterio di controllo delle cassette postali coerente all'interno dell'organizzazione (perché si controllano le stesse azioni per tutte le cassette postali).
 
@@ -90,7 +90,7 @@ I tipi di accesso classificano l'utente che ha eseguito le azioni sottoposte a c
 
     - eDiscovery o Advanced eDiscovery nel centro conformità.
 
-    - EDiscovery sul posto in Exchange Online.
+    - In-Place eDiscovery in Exchange Online.
 
   - È possibile accedere alla cassetta postale utilizzando l'editor MAPI di Microsoft Exchange Server.
 
@@ -339,7 +339,7 @@ Get-MailboxAuditBypassAssociation -Identity <MailboxIdentity> | Format-List Audi
 
 Il valore **true** indica che la registrazione di controllo delle cassette postali viene ignorata per l'utente.
 
-## <a name="more-information"></a>Altre informazioni
+## <a name="more-information"></a>Ulteriori informazioni
 
 - Anche se la registrazione di controllo delle cassette postali è attivata per impostazione predefinita per tutte le organizzazioni, solo gli utenti con licenze E5 restituiranno gli eventi del registro di controllo delle cassette postali nelle [ricerche del registro di controllo nel centro sicurezza & conformità](search-the-audit-log-in-security-and-compliance.md) o tramite l' [API di gestione di Office 365](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference) **per impostazione predefinita**
 

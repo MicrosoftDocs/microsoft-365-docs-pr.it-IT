@@ -13,12 +13,12 @@ localization_priority: Priority
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: Fornisce un’introduzione ai componenti, ai piani e ai percorsi di distribuzione di Microsoft 365 per le aziende.
-ms.openlocfilehash: d34ddd9b577f4baff4ebb77f84f48bf2b779c93c
-ms.sourcegitcommit: 53ff1fe6d6143b0bf011031eea9b85dc01ae4f74
+ms.openlocfilehash: 0cee9752ae21e08831b6a3df856452a7ca6aec71
+ms.sourcegitcommit: 3b1bd8aa1430bc9565743a446bbc27b199f30f73
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48487153"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48655972"
 ---
 # <a name="microsoft-365-for-enterprise-overview"></a>Panoramica di Microsoft 365 per le aziende
 
@@ -33,7 +33,7 @@ Microsoft 365 per le aziende comprende:
 |Servizi|Descrizione|
 |---|---|
 |App locali e app e servizi di produttività basati sul cloud|Include sia Microsoft 365 Apps for enterprise, le app di Office più recenti per PC e Mac, come Word, Excel, PowerPoint, Outlook e altre, che una gamma completa di servizi online per la posta elettronica, l'archiviazione dei file e la collaborazione, riunioni e altro ancora.|
-|Windows 10 Enterprise|Soddisfa le esigenze delle grandi e medie imprese. È la versione più produttiva e sicura di Windows per gli utenti. Per i professionisti IT, include anche funzionalità complete per la gestione di distribuzioni, dispositivi e app.|
+|Windows 10 Enterprise|Meets the needs of both large and midsize organizations. It's the most productive and secure version of Windows for users. For IT professionals, it also provides comprehensive deployment, device, and app management.|
 |Gestione dei dispositivi e servizi di sicurezza avanzati|Include Microsoft Intune, un servizio di gestione della mobilità aziendale basato su cloud che consente alla forza lavoro di essere produttiva, proteggendo al tempo stesso i dati dell’organizzazione.|
 |||
 
@@ -44,7 +44,7 @@ Microsoft 365 per le aziende è disponibile in tre piani.
 |Nome del piano|Funzionalità|
 |---|---|
 |E3|Accedi ai prodotti e alle funzionalità principali di Microsoft 365 per migliorare in modo sicuro la produttività sul luogo di lavoro e favorire l'innovazione.|
-|E5|Accedi ai prodotti e alle funzionalità più recenti di Microsoft 365. Questi includono gli strumenti avanzati di protezione dalle minacce, di sicurezza e di collaborazione. Questo piano include tutte le funzionalità di E3 e, in aggiunta, strumenti per la sicurezza avanzata, la voce e l'analisi dei dati.|
+|E5|Access the Microsoft 365 latest products and features. These include advanced threat protection, security tools, and collaboration tools. This plan includes all E3 capabilities, plus advanced security, voice, and data analysis tools.|
 |F3|Connettiti con gli operatori sul campo attraverso gli strumenti e le risorse appositamente realizzate che possono usare per lavorare nel modo più efficiente.|
 |||
 
@@ -75,13 +75,11 @@ Si può anche [scaricare una copia del poster](https://github.com/MicrosoftDocs/
 
 ## <a name="transition-your-entire-organization"></a>Transizione dell'intera organizzazione
 
-Per avere un quadro più completo su come introdurre i prodotti e servizi di Microsoft 365 per le aziende in tutta la propria organizzazione, vedere il [poster della transizione](../downloads/transition-org-to-m365.pdf).
+Per avere un quadro più completo su come introdurre i prodotti e servizi di Microsoft 365 per le aziende in tutta la propria organizzazione, vedere il [poster della transizione](https://download.microsoft.com/download/2/c/7/2c7bcc04-aae3-4604-9707-1ffff66b9851/transition-org-to-m365.pdf).
 
-[![Immagine per il poster della transizione a Microsoft 365](../media/microsoft-365-overview/transition-org-to-m365.png)](../downloads/transition-org-to-m365.pdf)
+[![Immagine per il poster della transizione a Microsoft 365](../media/microsoft-365-overview/transition-org-to-m365.png)](https://download.microsoft.com/download/2/c/7/2c7bcc04-aae3-4604-9707-1ffff66b9851/transition-org-to-m365.pdf)
 
-Questo poster di due pagine è modo rapido per inventariare l'infrastruttura esistente. Consente di trovare indicazioni e di passare al prodotto o servizio corrispondente in Microsoft 365. Include i prodotti di Windows e Office e altri elementi di infrastruttura e sicurezza, come la gestione dei dispositivi, le identità e la protezione delle informazioni e dalle minacce.
-
-È anche possibile [scaricare il poster](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/transition-org-to-m365.pdf) e stamparlo in formato lettera, legale o tabloid (11 x 17).
+This two-page poster is a quick way to inventory your existing infrastructure. It helps you to find guidance and move to the corresponding product or service in Microsoft 365 for enterprise. It includes Windows and Office products and other infrastructure and security elements, such as device management, identity, and information and threat protection.
 
 ## <a name="end-of-support-for-windows-7-and-office-2010-clients-and-servers"></a>Fine del supporto per i client e i server di Windows 7 e Office 2010
 
