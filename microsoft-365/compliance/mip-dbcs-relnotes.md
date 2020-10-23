@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Note sulla versione del supporto per i set di caratteri a due byte.
-ms.openlocfilehash: 13bac873f2ba18bc166451ea73ec0d569fb30f68
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 1c2244c49a92aa2c00fad06caa8194cf7e32220e
+ms.sourcegitcommit: 554755bc9ce40228ce6e34bde6fc6e226869b6a1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46695257"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48681502"
 ---
 # <a name="support-for-double-byte-character-set-release-notes-preview"></a>Note sulla versione del supporto per i set di caratteri a due byte (anteprima)
 
@@ -29,15 +29,6 @@ ms.locfileid: "46695257"
 - Cinese (tradizionale)
 - Coreano
 - Giapponese
-
-La versione di anteprima è disponibile solo nel cloud commerciale e l'implementazione è limitata ai paesi o aree geografiche seguenti:
-
-- Giappone
-- Corea del Sud
-- Cina
-- RAS di Hong Kong
-- RAS di Macao
-- Taiwan
 
 Il supporto è disponibile per i tipi di informazioni sensibili e i dizionari di parole chiave e riguarda le soluzioni di prevenzione della perdita dei dati, conformità alle comunicazioni, Exchange Online, SharePoint Online, OneDrive for Business e Teams.
 

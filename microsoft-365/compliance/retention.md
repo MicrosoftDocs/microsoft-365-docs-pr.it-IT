@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Informazioni sui criteri di conservazione e sulle etichette di conservazione, utili per conservare tutto che serve ed eliminare ciò che non serve.
-ms.openlocfilehash: 6dedb3209d16d5d9f18c1277821270f973cc16a6
-ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
+ms.openlocfilehash: fe28e51aa7d93872e5683c3682c110275ece3d54
+ms.sourcegitcommit: cdf2b8dad7db9e16afd339abaaa5397faf11807c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48398983"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48651430"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>Informazioni sui criteri e sulle etichette di conservazione
 
@@ -276,7 +276,7 @@ Usare la tabella seguente per stabilire se usare criteri di conservazione o etic
 |Conservazione applicata in base alle condizioni <br /> - tipi di informazioni sensibili, query KQL, classificatori sottoponibili a training| No | Sì |
 |Conservazione applicata manualmente | No | Sì |
 |Presenza nell'interfaccia utente per gli utenti finali | No | Sì |
-|Persiste se il contenuto viene spostato | No | Sì, in Microsoft 365 |
+|Persiste se il contenuto viene spostato | No | Sì, nel tenant di Microsoft 365 |
 |Dichiarazione elemento come record| No | Sì |
 |Avviare il periodo di conservazione al momento dell'etichettatura o in base a un evento | No | Sì |
 |Revisione per l'eliminazione | No| Sì |
@@ -353,27 +353,50 @@ Per usare i cmdlet di conservazione, è prima necessario [connettersi a PowerShe
 
 - [Set-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/set-retentioncompliancerule)
 
+## <a name="when-to-use-retention-policies-and-retention-labels-or-ediscovery-holds"></a>Quando usare i criteri di conservazione e le etichette di conservazione o i blocchi di eDiscovery
+
+Nonostante sia le impostazioni di conservazione sia [i blocchi creati con un caso di eDiscovery](create-ediscovery-holds.md) possano impedire che i dati vengano eliminati definitivamente, sono progettati per scenari diversi. Per comprendere le differenze e decidere cosa usare, attenersi alle indicazioni seguenti:
+
+- Le impostazioni di conservazione specificate nei criteri di conservazione e nelle etichette di conservazione sono pensate per una strategia di governance delle informazioni a lungo termine al fine di conservare o eliminare i dati per soddisfare i requisiti di conformità. L'ambito è in genere ampio, incentrato in particolare sulla posizione e il contenuto, anziché sui singoli utenti. L'inizio e la fine del periodo di conservazione sono configurabili, con la possibilità di eliminare automaticamente il contenuto senza l’intervento dell'amministratore.
+
+- I blocchi di eDiscovery (casi Core eDiscovery o Advanced eDiscovery) sono progettati per una durata limitata al fine di conservare i dati per indagini legali. L'ambito è specifico, incentrato in particolare su contenuti di proprietà di utenti identificati. L'inizio e la fine del periodo di conservazione non sono configurabili, bensì dipendono da singole azioni dell’amministratore, e non è prevista la possibilità di eliminare automaticamente il contenuto quando viene rilasciato il blocco.
+
+Riepilogo di confronto della conservazione con i blocchi:
+
+|Considerazione|Conservazione |Blocchi di eDiscovery|
+|:-----|:-----|:-----|:-----|
+|Esigenze aziendali: |Conformità |Esigenze legali |
+|Periodo di tempo: |A lungo termine |A breve termine |
+|Ambito di interesse: |Ampio, basato sul contenuto |Specifico, basato sull’utente |
+|Date di inizio e di fine configurabili: |Sì |No |
+|Eliminazione dei contenuti: |Sì (facoltativo) |No |
+|Sorveglianza amministrativa: |Bassa |Alta |
+
+Se il contenuto è soggetto sia alle impostazioni di conservazione sia a un blocco di eDiscovery, la conservazione del contenuto per il blocco di eDiscovery avrà sempre la precedenza. In questo modo, i [principi della conservazione](#the-principles-of-retention-or-what-takes-precedence) si estendono ai blocchi di eDiscovery perché conservano i dati finché un amministratore non rilascia il blocco manualmente. Tuttavia, nonostante abbiano la precedenza, non usare i blocchi di eDiscovery per la governance delle informazioni a lungo termine. Se l’eliminazione automatica dei dati costituisce un motivo di preoccupazione, puoi configurare le impostazioni di conservazione in modo da conservare gli elementi per sempre oppure usare la [revisione per l'eliminazione](disposition.md#disposition-reviews) con le etichette di conservazione.
+
+Se usi strumenti di eDiscovery meno recenti per conservare i dati, vedi le risorse seguenti:
+
+- Exchange: 
+    - [Conservazione in locale e per controversia legale](https://go.microsoft.com/fwlink/?linkid=846124)
+    - [Come identificare il tipo di blocco applicato a una cassetta postale di Exchange Online](https://docs.microsoft.com/microsoft-365/compliance/identify-a-hold-on-an-exchange-online-mailbox)
+
+- SharePoint e OneDrive: 
+    - [Aggiungere contenuto a un caso e archiviare origini blocco nel centro eDiscovery](https://docs.microsoft.com/SharePoint/governance/add-content-to-a-case-and-place-sources-on-hold-in-the-ediscovery-center)
+
+- [Ritiro degli strumenti legacy di eDiscovery](legacy-ediscovery-retirement.md)
+
 ## <a name="use-retention-policies-and-retention-labels-instead-of-older-features"></a>Usare i criteri di conservazione e le etichette di conservazione anziché funzionalità precedenti
 
-Se è necessario conservare o eliminare contenuto in modo proattivo in Microsoft 365 a scopi di governance delle informazioni, è consigliabile usare criteri di conservazione ed etichette di conservazione invece delle funzionalità precedenti indicate di seguito. 
-  
+Se è necessario conservare o eliminare contenuto in modo proattivo in Microsoft 365 a scopi di governance delle informazioni, è consigliabile usare criteri di conservazione ed etichette di conservazione invece delle funzionalità precedenti indicate di seguito.
+
 Se attualmente si usano queste funzionalità, continueranno a funzionare parallelamente ai criteri e alle etichette di conservazione. Tuttavia, si consiglia per il futuro di usare i criteri di conservazione e le etichette di conservazione. Forniscono infatti un unico meccanismo per gestire in modo centralizzato sia la conservazione che l'eliminazione del contenuto in Microsoft 365.
 
 **Funzionalità precedenti di Exchange Online:**
 
-- [Blocco sul posto e blocco per controversia legale](https://go.microsoft.com/fwlink/?linkid=846124) (blocco di eDiscovery) 
-
-- [Come identificare il tipo di blocco applicato a una cassetta postale di Exchange Online](identify-a-hold-on-an-exchange-online-mailbox.md)
-    
 - [Tag di conservazione e criteri di conservazione](https://go.microsoft.com/fwlink/?linkid=846125), noti anche come [gestione record di messaggistica (MRM)](https://go.microsoft.com/fwlink/?linkid=846126) (solo eliminazione)
-    
-Vedere anche [Ritiro degli strumenti legacy di eDiscovery](legacy-ediscovery-retirement.md).
-
 
 **Funzionalità precedenti di SharePoint e OneDrive:**
 
-- [Aggiunta di un contenuto a un caso e archiviare origini blocco nel centro eDiscovery](https://docs.microsoft.com/SharePoint/governance/add-content-to-a-case-and-place-sources-on-hold-in-the-ediscovery-center) (blocco di eDiscovery) 
-    
 - [Criteri di eliminazione dei documenti](https://support.office.com/article/Create-a-document-deletion-policy-in-SharePoint-Server-2016-4fe26e19-4849-4eb9-a044-840ab47458ff) (solo eliminazione)
     
 - [Configurare la gestione dei record sul posto](https://support.office.com/article/7707a878-780c-4be6-9cb0-9718ecde050a) (solo conservazione) 
@@ -382,10 +405,6 @@ Vedere anche [Ritiro degli strumenti legacy di eDiscovery](legacy-ediscovery-ret
     
 - [Criteri di gestione delle informazioni ](intro-to-info-mgmt-policies.md) (solo eliminazione)
      
-Se in passato sono stati usati blocchi di eDiscovery per la governance delle informazioni, per garantire una conformità proattiva ora si devono usare invece i criteri di conservazione. Usare eDiscovery solo per i blocchi.
-  
-### <a name="retention-policies-and-sharepoint-content-type-policies-or-information-management-policies"></a>Criteri di conservazione e criteri tipo di contenuto di SharePoint o criteri di gestione delle informazioni
-
 Se si sono configurati i siti di SharePoint per criteri tipo di contenuto o criteri di gestione delle informazioni mirati alla conservazione del contenuto di un elenco o una raccolta, tali criteri vengono ignorati quando sono applicati i criteri di conservazione. 
 
 ## <a name="related-information"></a>Informazioni correlate

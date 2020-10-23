@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 4ede013a1c9a9bd054fc6965cbb12b5bbabb0b5e
-ms.sourcegitcommit: cdf2b8dad7db9e16afd339abaaa5397faf11807c
+ms.openlocfilehash: c1ef7a765f61ee2231fd99c47f076855225de3fb
+ms.sourcegitcommit: 31f25790b37dfb740530017ef1701db0c5134829
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48651408"
+ms.lasthandoff: 10/23/2020
+ms.locfileid: "48740260"
 ---
 # <a name="communication-compliance-feature-reference"></a>Informazioni di riferimento sulle caratteristiche di conformità comunicazione
 
@@ -183,7 +183,7 @@ Conformità di comunicazione le comunicazioni per i termini, le immagini e il se
 
 I classificatori di immagini *per adulti*, *audace*e *cruenti* analizzano i file. JPEG,. PNG,. GIF e. Formati BMP. Le dimensioni dei file di immagine devono essere inferiori a 4 megabyte (MB) e le dimensioni delle immagini devono essere superiori a 50x50 pixel e superiori a 50 kilobyte (KB) affinché l'immagine sia qualificata per la valutazione. L'identificazione dell'immagine è supportata per i messaggi di posta elettronica di Exchange Online e i canali e le chat di Microsoft teams.
 
-I classificatori incorporati e addestrati a livello globale non forniscono un elenco esaustivo dei termini o delle immagini in queste aree. Inoltre, gli standard linguistici e culturali cambiano continuamente e, alla luce di queste realtà, Microsoft si riserva il diritto di aggiornare i classificatori a propria discrezione. Mentre i classificatori possono assistere l'organizzazione nel monitoraggio di queste aree, i classificatori non sono destinati a fornire il solo mezzo di monitoraggio o di risoluzione di tale lingua o immagine. La propria organizzazione, non Microsoft, resta responsabile di tutte le decisioni relative all'analisi e al blocco della lingua e delle immagini in queste aree.
+I classificatori incorporati e addestrati a livello globale non forniscono un elenco esaustivo dei termini o delle immagini in queste aree. Inoltre, gli standard linguistici e culturali cambiano continuamente e, alla luce di queste realtà, Microsoft si riserva il diritto di aggiornare i classificatori a propria discrezione. Mentre i classificatori possono assistere l'organizzazione nel monitoraggio di queste aree, i classificatori non sono destinati a fornire il solo mezzo di monitoraggio o di risoluzione di tale lingua o immagine. La propria organizzazione, non Microsoft, resta responsabile di tutte le decisioni relative al monitoraggio, all'analisi e al blocco della lingua e delle immagini in queste aree, tra cui la conformità alla privacy locale e altre leggi applicabili. Microsoft incoraggia la consulenza con consulenti legali prima della distribuzione e dell'utilizzo.
 
 Per informazioni sui classificatori addestrabili in Microsoft 365, vedere [Guida introduttiva ai classificatori addestrabili](classifier-get-started-with.md).
 

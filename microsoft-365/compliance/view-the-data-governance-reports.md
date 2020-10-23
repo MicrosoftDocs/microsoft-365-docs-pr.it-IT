@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: I report sulla governance dei dati nel Centro sicurezza e conformità consentono di visualizzare rapidamente se le etichette vengono applicate al contenuto nel modo previsto.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a4d0fb70774dfb03dc0bc674edf09c092d8b498f
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: acd042f73500004014a9c229c2a5f34552888c97
+ms.sourcegitcommit: 554755bc9ce40228ce6e34bde6fc6e226869b6a1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44819006"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48681754"
 ---
 # <a name="view-the-data-governance-reports"></a>Visualizzare i report sulla governance dei dati
 
@@ -37,7 +37,7 @@ Dopo aver creato le etichette, è consigliabile verificare che queste vengano ap
     
 Tutti questi report mostrano il contenuto etichettato di Exchange, SharePoint e OneDrive for Business.
   
-È possibile trovare questi report in Centro sicurezza e conformità \> **Governance delle informazioni** \> **Dashboard**.
+È possibile trovare questi report in Centro sicurezza &amp; conformità \> **Governance delle informazioni** \> [**Dashboard**](https://protection.office.com/datamanagement/dashboard).
   
 ![Grafico che mostra le tendenze delle etichette negli ultimi 90 giorni](../media/0cc06c18-d3b1-4984-8374-47655fb38dd2.png)
   
