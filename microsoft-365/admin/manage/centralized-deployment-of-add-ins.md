@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: b4527d49-4073-4b43-8274-31b7a3166f92
 description: Determinare se il tenant e gli utenti soddisfano i requisiti, in modo che sia possibile utilizzare la distribuzione centralizzata per distribuire i componenti aggiuntivi di Office.
-ms.openlocfilehash: c89cb801a5b2fcad87227feaf4228b0dcabcf609
-ms.sourcegitcommit: bcb88a6171f9e7bdb5b2d8c03cd628d11c5e7bbf
+ms.openlocfilehash: af7a127d438e81d6ecd025b6a71b9d7e5df2ecc8
+ms.sourcegitcommit: 554755bc9ce40228ce6e34bde6fc6e226869b6a1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48464051"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48681625"
 ---
 # <a name="determine-if-centralized-deployment-of-add-ins-works-for-your-organization"></a>Determinare se la distribuzione centralizzata dei componenti aggiuntivi funziona per l'organizzazione
 
@@ -45,7 +45,7 @@ La distribuzione centralizzata supporta tre piattaforme desktop Windows, Mac e l
   
 ## <a name="requirements"></a>Requisiti
 
-La distribuzione centralizzata dei componenti aggiuntivi richiede che gli utenti utilizzino Microsoft 365 Apps for Enterprise o Microsoft 365 Business Premium (e che siano firmati in Office utilizzando l'ID dell'organizzazione) e dispongano di cassette postali di Exchange Online e Active Exchange Online. È necessario che la directory di sottoscrizione sia in o federata in Azure Active Directory.
+La distribuzione centralizzata dei componenti aggiuntivi richiede che gli utenti utilizzino Microsoft 365 Apps per Microsoft 365 per Enterprise o Microsoft 365 for business (e che siano firmati in Office utilizzando il proprio ID organizzazione) e dispongano di cassette postali di Exchange Online e Active Exchange Online. È necessario che la directory di sottoscrizione sia in o federata in Azure Active Directory.
 È possibile visualizzare i requisiti specifici per Office ed Exchange di seguito oppure utilizzare la [Verifica compatibilità della distribuzione centralizzata](#centralized-deployment-compatibility-checker).
 
 La distribuzione centralizzata non supporta quanto segue:
@@ -61,11 +61,11 @@ La distribuzione centralizzata non supporta quanto segue:
 ### <a name="office-requirements"></a>Requisiti di Office
 
 - Per i componenti aggiuntivi di Word, Excel e PowerPoint, è necessario che gli utenti utilizzino uno dei seguenti elementi:
-  - Su un dispositivo Windows, versione 1704 o successiva di Microsoft 365 Apps for Enterprise, o Microsoft 365 Business Premium.
+  - Su un dispositivo Windows, versione 1704 o successiva di Microsoft 365 Apps per Microsoft 365 per Enterprise o Microsoft 365 for business.
   - Su un Mac, versione 15,34 o successiva.
 
 - Per Outlook, è necessario che gli utenti utilizzino una delle opzioni seguenti: 
-  - Versione 1701 o successiva di Microsoft 365 Apps for Enterprise o Microsoft 365 Business Premium.
+  - Versione 1701 o successiva di Microsoft 365 Apps per Microsoft 365 per Enterprise o Microsoft 365 for business.
   - Versione 1808 o successiva di Office Professional Plus 2019 o Office standard 2019.
   - Version 16.0.4494.1000 o versione successiva di Office Professional Plus 2016 (MSI) o Office standard 2016 (MSI)\*
   - Version 15.0.4937.1000 o versione successiva di Office Professional Plus 2013 (MSI) o Office Standard 2013 (MSI)\*
