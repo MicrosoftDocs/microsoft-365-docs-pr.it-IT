@@ -15,12 +15,12 @@ ms.custom:
 - M365solutions
 f1.keywords: NOCSH
 description: Opzioni di fine ciclo di vita per gruppi, team e Yammer.
-ms.openlocfilehash: 3720f63f99711a09d02675f10a7d639fe1bedc65
-ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
+ms.openlocfilehash: 31383287f3288cbab68d6e249f98210dec62af2f
+ms.sourcegitcommit: 554755bc9ce40228ce6e34bde6fc6e226869b6a1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48377176"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48681711"
 ---
 # <a name="end-of-lifecycle-options-for-groups-teams-and-yammer"></a>Opzioni di fine ciclo di vita per gruppi, team e Yammer
 
@@ -225,7 +225,7 @@ Nel caso dei file archiviati all'interno di SharePoint in una delle raccolte sop
 **Spostare i file**
 
 Inoltre, è possibile spostare i file in un'altra posizione all'interno di SharePoint, ad esempio una raccolta in un altro sito.
-Riferimento https://support.office.com/en-us/article/move-or-copy-files-in-sharepoint-00e2f483-4df3-46be-a861-1f5f0c1a87bc
+Riferimento https://support.office.com/article/move-or-copy-files-in-sharepoint-00e2f483-4df3-46be-a861-1f5f0c1a87bc
 
 **Esporta elenco** I dati archiviati negli elenchi di SharePoint possono essere [esportati in un foglio di calcolo di Excel](https://support.office.com/article/bfb2ea48-6118-4fa9-abb6-cced9424e5d9)e importati di nuovo in un elenco di un altro sito.
 
