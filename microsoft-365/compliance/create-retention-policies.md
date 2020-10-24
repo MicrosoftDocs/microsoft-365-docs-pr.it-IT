@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Usare i criteri di conservazione per tenere sotto controllo molto efficacemente i contenuti che gli utenti generano con posta elettronica, documenti e conversazioni. Mantenere il contenuto desiderato e liberarsi di quello che non serve.
-ms.openlocfilehash: 40e405a8ab3ac2159b9a3c5ab8f633bb690d5c24
-ms.sourcegitcommit: 11d1044c6600b1f568b6dc8a53db9b07f2f0ad1c
+ms.openlocfilehash: 848ed959b1ed728a5a193641d7df42a477604d30
+ms.sourcegitcommit: 554755bc9ce40228ce6e34bde6fc6e226869b6a1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/08/2020
-ms.locfileid: "48384550"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48681784"
 ---
 # <a name="create-and-configure-retention-policies"></a>Creare e configurare criteri di conservazione
 
@@ -181,9 +181,10 @@ Selezionando la posizione **Siti di SharePoint**, il criterio di conservazione p
 
 Anche se il criterio di conservazione è applicato a livello di sito, le impostazioni di conservazione sono applicate solo ai documenti. Le impostazioni di conservazione non si applicano alle strutture di organizzazione che includono raccolte, elenchi e cartelle all'interno del sito.
 
-Quando si specificano le posizioni dei siti di SharePoint o gli account di OneDrive, non è necessario disporre delle autorizzazioni per accedere ai siti e non viene eseguita alcuna convalida quando si specifica l'URL nella pagina **Modificare le posizioni**. Tuttavia, i siti di SharePoint devono essere indicizzati e al termine della procedura guidata viene verificata l'esistenza dei siti specificati.
+Quando si specificano le posizioni dei siti di SharePoint o gli account di OneDrive, non è necessario disporre delle autorizzazioni per accedere ai siti e non viene eseguita alcuna convalida quando si specifica l'URL nella pagina **Modificare le posizioni**. Tuttavia, viene verificata l’esistenza dei siti di SharePoint specificati al termine della procedura guidata. Se la verifica dell'URL immesso fallisce, verrà visualizzato un messaggio di errore e la procedura guidata non creerà il criterio di conservazione fino al successo della verifica. Se si visualizza il messaggio di errore, tornare alla procedura guidata per cambiare l'URL o rimuovere il sito dal criterio di conservazione.
 
-Se la verifica dell'URL immesso fallisce, verrà visualizzato un messaggio di errore e la procedura guidata non creerà il criterio di conservazione fino al successo della verifica. Se si visualizza il messaggio di errore, tornare alla procedura guidata per cambiare l'URL o rimuovere il sito dal criterio di conservazione.
+> [!NOTE]
+> I siti di SharePoint devono essere indicizzati affinchè le impostazioni di conservazione vengano applicate. Se gli elementi nelle raccolte documenti di SharePoint sono configurati per non essere visualizzati nei risultati di ricerca, tale configurazione non esclude gli elementi dalle impostazioni di conservazione.
 
 Per specificare singoli account di OneDrive da includere o escludere, l'URL ha il formato seguente: `https://<tenant name>-my.sharepoint.com/personal/<user_name>_<tenant name>_com`
 

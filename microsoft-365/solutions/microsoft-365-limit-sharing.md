@@ -18,12 +18,12 @@ f1.keywords: NOCSH
 ms.custom: ''
 localization_priority: Priority
 description: Altre informazioni sulle opzioni per limitare o disabilitare la condivisione in Microsoft 365.
-ms.openlocfilehash: 7397078b6f347858e4ca91a0deeb9a1cf2fb6911
-ms.sourcegitcommit: d648356b27842e779921859480b1b405a1804c7c
+ms.openlocfilehash: 7ed9cc499e16de835c6ba96eb19bcc28a144b68b
+ms.sourcegitcommit: cdf2b8dad7db9e16afd339abaaa5397faf11807c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "48361906"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48651419"
 ---
 # <a name="limit-sharing-in-microsoft-365"></a>Limitare la condivisione in Microsoft 365
 
@@ -64,7 +64,7 @@ Per disattivare la condivisione guest per Teams
 Se si vuole impedire l'accesso guest nei gruppi di Microsoft 365, è possibile disattivare le impostazioni di accesso guest dei gruppi nell'interfaccia di amministrazione di Microsoft 365.
 
 Per disattivare la condivisione guest nei gruppi di Microsoft 365
-1. Nell'interfaccia di amministrazione di Microsoft 365 fare clic su **Impostazioni** e quindi ancora su **Impostazioni**.
+1. Nell'interfaccia di amministrazione di Microsoft 365 fare clic su **Impostazioni** poi ancora su **Impostazioni dell'organizzazione**.
 2. Nella scheda **Servizi** fare clic su **Gruppi di Microsoft 365**.
 3. Deselezionare le caselle di controllo **Consenti ai membri del gruppo esterni all'organizzazione di accedere al contenuto del gruppo** e **Consenti ai proprietari del gruppo di aggiungere persone esterne all'organizzazione ai gruppi**.
 4. Fare clic su **Salva modifiche**.

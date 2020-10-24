@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: informazioni sui servizi e sui tipi di elementi che è possibile usare per le etichette di sensibilità come condizioni dei criteri di prevenzione della perdita dei dati
-ms.openlocfilehash: 561a6cbd7b8aeb9082862319c5cc6419fd79c896
-ms.sourcegitcommit: f7ca339bdcad38796c550064fb152ea09687d0f3
+ms.openlocfilehash: 2f8eb30e23d722a5e8faf7d0ddaca6b9a94e279b
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48321111"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48649635"
 ---
 # <a name="use-sensitivity-labels-as-conditions-in-dlp-policies-preview"></a>Usare le etichette di riservatezza come condizioni nei criteri di prevenzione della perdita dei dati (anteprima)
 
@@ -38,7 +38,12 @@ Le [etichette di riservatezza](sensitivity-labels.md) possono essere usate come 
 
 Le etichette di riservatezza sono mostrate come opzioni dell'elenco **Il contenuto contiene**.
 
-![etichetta di riservatezza come condizione](../media/dlp-sensitivity-label-as-a-condition.png)
+> [!div class="mx-imgBorder"]
+> ![etichetta di riservatezza come condizione](../media/dlp-sensitivity-label-as-a-condition.png)
+
+> [!IMPORTANT]
+> **Le etichette di riservatezza** come condizione non sono disponibili se sono state selezionate **chat di Teams e i messaggi del canale** come posizione in cui applicare i criteri di prevenzione della perdita dei dati.
+
 
 ## <a name="supported-items-scenarios-and-policy-tips"></a>Elementi supportati, scenari e suggerimenti per i criteri
 
@@ -46,7 +51,7 @@ Le etichette di riservatezza sono mostrate come opzioni dell'elenco **Il contenu
 
 ### <a name="supported-items"></a>Elementi supportati
 
-|servizio  |tipo di elemento  |disponibile per i suggerimento per i criteri  |applicabile  |
+|Servizio  |Tipo di elemento  |Disponibile per suggerimento per i criteri  |Applicabile  |
 |---------|---------|---------|---------|
 |Exchange    |messaggio di posta elettronica         |sì         |sì         |
 |Exchange    |allegato di posta elettronica         |no *         |no *         |
@@ -64,16 +69,20 @@ Le etichette di riservatezza sono mostrate come opzioni dell'elenco **Il contenu
 ### <a name="supported-scenarios"></a>Scenari supportati
 
 - L'amministratore per la prevenzione della perdita dei dati sarà in grado di accedere a un elenco di tutte le etichette di conservazione del tenant quando sceglie di includere una o più etichette di riservatezza come condizioni.
+
 - L'uso delle etichette di riservatezza come condizioni è supportato in tutti i carichi di lavoro, come indicato nella matrice di supporto precedente.
+
 - I suggerimenti per i criteri di prevenzione della perdita dei dati continuano a essere visualizzati in tutti i carichi di lavoro (salvo quelli di Outlook Win32) per i criteri di prevenzione che contengono etichette di riservatezza come condizioni.
+
 - Le etichette di riservatezza sono visualizzate anche all'interno del messaggio di posta elettronica del report degli incidenti, se c'è una corrispondenza con un criterio di prevenzione della perdita dei dati con etichette di riservatezza come condizioni. 
+
 - I dettagli dell'etichetta di riservatezza sono mostrati anche nel log di controllo della corrispondenza delle regole di prevenzione della perdita dei dati, in caso di corrispondenza con criteri di prevenzione che contengono etichette di riservatezza come condizioni.
 
 
 ### <a name="support-policy-tips"></a>Supporto per i suggerimenti per i criteri
 
 
-|carico di lavoro  |suggerimenti per criteri supportati/non supportati  |
+|Carico di lavoro  |Suggerimenti per criteri supportati/non supportati  |
 |---------|---------|
 |OWA |    supportato     |
 |Outlook Win 32    |  non supportato       |

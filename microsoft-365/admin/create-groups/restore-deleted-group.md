@@ -1,10 +1,10 @@
 ---
-title: Ripristinare un gruppo eliminato
+title: Ripristinare un gruppo di Microsoft 365 eliminato
 ms.reviewer: arvaradh
 f1.keywords: CSH
 ms.author: mikeplum
 author: MikePlumleyMSFT
-manager: pamgreen
+manager: serdars
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -20,24 +20,14 @@ search.appverid:
 - MOE150
 ms.assetid: b7c66b59-657a-4e1a-8aa0-8163b1f4eb54
 description: Informazioni su come ripristinare un gruppo di Microsoft 365 eliminato.
-ms.openlocfilehash: 30e267a149bc18c2425d4ea38423b887116794c6
-ms.sourcegitcommit: 554755bc9ce40228ce6e34bde6fc6e226869b6a1
+ms.openlocfilehash: 091697be54b1127a5cb336179733d51519947e14
+ms.sourcegitcommit: 3cdb670f10519f7af4015731e7910954ba9f70dc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48681647"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "48753244"
 ---
-# <a name="restore-a-deleted-group"></a>Ripristinare un gruppo eliminato
-
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> L'interfaccia di amministrazione sta cambiando. Se alcuni dettagli non corrispondono a quelli presentati qui, vedere [Informazioni sulla nuova interfaccia di amministrazione di Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
-
-::: moniker-end
-
-> [!NOTE]
-> In questo articolo viene descritto come ripristinare solo i gruppi di Microsoft 365. Non è possibile ripristinare tutti gli altri gruppi una volta eliminati.
+# <a name="restore-a-deleted-microsoft-365-group"></a>Ripristinare un gruppo di Microsoft 365 eliminato
 
 Se si è eliminato un gruppo, questo verrà mantenuto per 30 giorni per impostazione predefinita. Questo periodo di 30 giorni è considerato "soft-delete" perché è ancora possibile ripristinare il gruppo. Dopo 30 giorni, il gruppo e il relativo contenuto associato vengono eliminati definitivamente e non possono essere ripristinati.
 
@@ -59,7 +49,12 @@ Quando si ripristina un gruppo, vengono ripristinati anche i contenuti seguenti:
 
 - Gruppo di Yammer e contenuto del gruppo (se il gruppo Microsoft 365 è stato creato da Yammer)
 
-## <a name="restore-a-group-that-you-own-by-using-outlook-on-the-web"></a>Ripristinare un gruppo personalizzato tramite Outlook sul Web
+> [!NOTE]
+> In questo articolo viene descritto come ripristinare solo i gruppi di Microsoft 365. Non è possibile ripristinare tutti gli altri gruppi una volta eliminati.
+
+## <a name="restore-a-group"></a>Ripristinare un gruppo
+
+# <a name="outlook"></a>[Outlook](#tab/outlook)
 
 Se si è il proprietario di un gruppo di Microsoft 365, è possibile ripristinare il gruppo manualmente in Outlook sul Web attenendosi alla procedura seguente:
 
@@ -69,7 +64,7 @@ Se si è il proprietario di un gruppo di Microsoft 365, è possibile ripristinar
 
 Se il gruppo eliminato non viene visualizzato, contattare un amministratore.
 
-## <a name="restore-a-group-in-the-microsoft-365-admin-center"></a>Ripristinare un gruppo nell'interfaccia di amministrazione di Microsoft 365
+# <a name="admin-center"></a>[Interfaccia di amministrazione](#tab/admin-center)
 
 Se si è amministratori globali o amministratori di gruppi, è possibile ripristinare un gruppo eliminato nell'interfaccia di amministrazione di Microsoft 365:
 
@@ -79,28 +74,9 @@ Se si è amministratori globali o amministratori di gruppi, è possibile riprist
 
 > [!NOTE]
 > In alcuni casi, può richiedere fino a 24 ore prima che il gruppo e tutti i relativi dati vengano ripristinati. 
-  
-## <a name="permanently-delete-a-microsoft-365-group"></a>Eliminare definitivamente un gruppo di Microsoft 365
 
-A volte è possibile che si desideri eliminare definitivamente un gruppo senza attendere la scadenza del periodo di cancellazione di 30 giorni. A tale scopo, avviare PowerShell ed eseguire questo comando per ottenere l'ID oggetto del gruppo:
-  
-```
-Get-AzureADMSDeletedGroup
-```
+---
 
-Prendere nota dell'ID oggetto del gruppo o dei gruppi che si desidera eliminare definitivamente.
-  
-> [!CAUTION]
-> Il gruppo e i dati che contiene vengono eliminati in modo definitivo. 
-  
-Per eliminare il gruppo, eseguire questo comando in PowerShell:
-  
-```
-Remove-AzureADMSDeletedDirectoryObject -Id <objectId>
-```
-
-Per verificare che il gruppo sia stato eliminato correttamente, eseguire di nuovo il cmdlet  *Get-AzureADMSDeletedGroup*  per controllare che il gruppo non compaia più nell'elenco dei gruppi eliminati temporaneamente. In alcuni casi l'eliminazione definitiva del gruppo e di tutti i suoi dati può richiedere fino a 24 ore. 
-  
 ## <a name="got-questions-about-microsoft-365-groups"></a>Hai domande sui gruppi di Microsoft 365?
 
 Visitare la [Microsoft Tech Community](https://techcommunity.microsoft.com/t5/Office-365-Groups/ct-p/Office365Groups) per inviare domande e partecipare a conversazioni sui gruppi di Microsoft 365. 

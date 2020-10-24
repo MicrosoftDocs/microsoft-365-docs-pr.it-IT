@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Informazioni su come configurare i criteri di prevenzione della perdita dei dati (DLP) per usare le posizioni di Prevenzione della perdita di dati degli endpoint di Microsoft 365.
-ms.openlocfilehash: 38300769a4d6d3a4093fe403e79f5b13e71f2c1c
-ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
+ms.openlocfilehash: 0f1fc3159de6545007ddd62da2fca17ce87ad1dc
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45430244"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48636817"
 ---
 # <a name="using-endpoint-data-loss-prevention-preview"></a>Uso della prevenzione della perdita di dati degli endpoint (anteprima)
 
@@ -40,7 +40,8 @@ Oppure
 
 - Se si vogliono escludere dal monitoraggio i percorsi di file con troppi disturbi
 
-![Impostazioni DLP](../media/endpoint-dlp-1-using-dlp-settings.png)
+  > [!div class="mx-imgBorder"]
+  > ![Impostazioni DLP](../media/endpoint-dlp-1-using-dlp-settings.png)
 
 ### <a name="file-path-exclusions"></a>Esclusioni di percorsi di file
 
@@ -48,13 +49,19 @@ Oppure
 
 Per creare esclusioni di percorsi si può usare questa logica:
 
-- Percorso file valido che termina con "\", per indicare solo i file direttamente nella cartella. Ad esempio, C:\Temp\
-- Percorso file valido che termina con "\*", per indicare solo i file all'interno di sottocartelle, oltre ai file direttamente nella cartella. Ad esempio, C:\Temp\*
-- Percorso file valido che termina senza "\" o "\*", per indicare tutti i file direttamente nella cartella e in tutte le sottocartelle. Ad esempio, C:\Temp
-- Percorso con carattere jolly compreso tra "\" su entrambi i lati. Ad esempio, C:\Users\*\Desktop\
-- Percorso con carattere jolly compreso tra "\" su entrambi i lati e con "(numero)" per indicare il numero esatto di sottocartelle. Ad esempio, C:\Users\*(1)\Downloads\
-- Un percorso con variabili di ambiente di sistema. Ad esempio, %SystemDrive%\Test\*
-- Una combinazione di tutti gli esempi precedenti. Ad esempio, %SystemDrive%\Users\*\Documents\*(2)\Sub\
+- Percorso file valido che termina con "\", per indicare solo i file direttamente nella cartella. <br/>Ad esempio, C:\Temp\
+
+- Percorso file valido che termina con "\*", per indicare solo i file all'interno di sottocartelle, oltre ai file direttamente nella cartella. <br/>Ad esempio, C:\Temp\*
+
+- Percorso file valido che termina senza "\" o "\*", per indicare tutti i file direttamente nella cartella e in tutte le sottocartelle. <br/>Ad esempio, C:\Temp
+
+- Percorso con carattere jolly compreso tra "\" su entrambi i lati. <br/>Ad esempio, C:\Users\*\Desktop\
+
+- Percorso con carattere jolly compreso tra "\" su entrambi i lati e con "(numero)" per indicare il numero esatto di sottocartelle. <br/>Ad esempio, C:\Users\*(1)\Downloads\
+
+- Un percorso con variabili di ambiente di sistema. <br/>Ad esempio, %SystemDrive%\Test\*
+
+- Una combinazione di tutti gli esempi precedenti. <br/>Ad esempio, %SystemDrive%\Users\*\Documents\*(2)\Sub\
 
 ### <a name="service-domains"></a>Domini del servizio
 
@@ -62,15 +69,18 @@ Per creare esclusioni di percorsi si può usare questa logica:
 
 Se la modalità dell'elenco è impostata su **Blocca**, l'utente non potrà caricare elementi sensibili in tali domini. Quando un'azione di caricamento viene bloccata perché un elemento corrisponde a un criterio di prevenzione della perdita dei dati, DLP genera un avviso o blocca il caricamento dell'elemento sensibile.
 
-Se la modalità dell'elenco è impostata su **Consenti**, gli utenti possono caricare gli elementi sensibili ***solo*** in questi domini e l'accesso in caricamento a tutti gli altri domini non è consentito.
+Se la modalità dell'elenco è impostata su **Consenti**, gli utenti possono caricare gli elementi sensibili **_solo_*_ in questi domini e l'accesso in caricamento a tutti gli altri domini non è consentito.
 
 ### <a name="unallowed-apps"></a>App non consentite
 
-Quando l'impostazione **Accesso da app e browser non consentiti** di un criterio è attivata e gli utenti tentano di usare queste app per accedere a un file protetto, l'attività viene consentita, bloccata oppure bloccata ma gli utenti possono ignorare la restrizione. Tutte le attività sono controllate e disponibili per la revisione in Esplora attività.
+Quando l'impostazione _*Accesso da app e browser non consentiti** di un criterio è attivata e gli utenti tentano di usare queste app per accedere a un file protetto, l'attività viene consentita, bloccata oppure bloccata ma gli utenti possono ignorare la restrizione. Tutte le attività sono controllate e disponibili per la revisione in Esplora attività.
 
 ### <a name="unallowed-browsers"></a>Browser non consentiti
 
-È possibile aggiungere browser, identificati dai nomi dei processi, a cui verrà impedito di accedere ai file che corrispondono alle condizioni di un criterio DLP applicato in cui la restrizione relativa al caricamento nei servizi cloud è impostata su Blocca o Blocca con override. Quando a questi browser viene impedito di accedere a un file, gli utenti finali vedranno una notifica di tipo avviso popup che chiede di aprire il file con Microsoft Edge Chromium.
+È possibile aggiungere browser, identificati dai nomi eseguibili, a cui verrà impedito di accedere ai file che corrispondono alle condizioni di un criterio DLP applicato in cui la restrizione relativa al caricamento nei servizi cloud è impostata su Blocca o Blocca con override. Quando a questi browser viene impedito di accedere a un file, gli utenti finali vedranno una notifica di tipo avviso popup che chiede di aprire il file con Microsoft Edge Chromium.
+
+[!IMPORTANT]
+Non includere il percorso del file eseguibile, ma solo il nome eseguibile, (ossia browser. exe).
 
 ## <a name="tying-dlp-settings-together"></a>Unione di impostazioni DLP
 
@@ -80,8 +90,10 @@ Quando si usano il browser Microsoft Edge Chromium e la posizione Endpoint DLP i
 
 Per usare questa restrizione sarà necessario configurare tre elementi importanti:
 
-1. Specificare le posizioni, ovvero servizi, domini o indirizzi IP, con cui si vuole impedire la condivisione di elementi sensibili
-2. Aggiungere i browser ai quali non è consentito accedere a determinati elementi sensibili in caso di corrispondenza con un criterio DLP
+1. Specificare le posizioni, ovvero servizi, domini o indirizzi IP, con cui si vuole impedire la condivisione di elementi sensibili.
+
+2. Aggiungere i browser ai quali non è consentito accedere a determinati elementi sensibili in caso di corrispondenza con un criterio DLP.
+
 3. Configurare criteri DLP per definire i tipi di elementi sensibili per cui limitare il caricamento in queste posizioni, attivando **Carica nei servizi cloud** e **Accedi dai browser non consentiti**.
 
 È possibile continuare ad aggiungere nuovi servizi, app e criteri per estendere e aumentare le restrizioni in modo da soddisfare le esigenze dell'azienda e proteggere i dati sensibili. 
@@ -104,49 +116,83 @@ Per acquisire familiarità con le funzionalità di Endpoint DLP e su come vengon
 Per questi scenari è necessario aver già eseguito l'onboarding di dispositivi, che inviano report a Esplora attività. Se non si è ancora eseguito l'onboarding di dispositivi, vedere [Introduzione alla prevenzione della perdita di dati degli endpoint (anteprima)](endpoint-dlp-getting-started.md).
 
 1. Aprire la [pagina Prevenzione della perdita dei dati](https://compliance.microsoft.com/datalossprevention?viewid=policies).
+
 2. Scegliere **Crea criterio (anteprima)**.
+
 3. Per questo scenario, scegliere **Privacy** e poi **Informazioni personali (USA)**, quindi sceg **Avanti**.
+
 4. Impostare il campo **Stato** in posizione di disattivato per tutte le posizioni tranne **Dispositivi**. Scegliere **Avanti**.
+
 5. Accettare la selezione **Rivedere e personalizzare le impostazioni predefinite dal modello** e scegliere **Avanti**.
+
 6. Accettare i valori predefiniti per le **Azioni di protezione** e scegliere **Avanti**.
+
 7. Selezionare **Controlla o limita le attività nei dispositivi Windows** e uscire dalle azioni impostate su **Solo controllo**. Scegliere **Avanti**.
+
 8. Accettare il valore predefinito **Vorrei prima testarli** e scegliere **Mostra i suggerimenti per i criteri in modalità di test**. Scegliere **Avanti**.
+
 9. Rivedere le impostazioni e scegliere **Invia**.
+
 10. Il nuovo criterio DLP verrà visualizzato nell'elenco dei criteri.
+
 11. Controllare i dati degli endpoint monitorati in Esplora attività. Impostare il filtro della posizione per i dispositivi e aggiungere il criterio, quindi filtrare in base al nome del criterio per vederne l'impatto. Se necessario, vedere [Introduzione a Esplora attività](data-classification-activity-explorer.md).
+
 12. Provare a condividere con un utente esterno all'organizzazione un test con contenuto che attiverà la condizione Informazioni personali (USA). Questo dovrebbe attivare il criterio.
+
 13. Controllare l'evento in Esplora attività.
 
 ### <a name="scenario-2-modify-the-existing-policy-set-an-alert"></a>Scenario 2: Modificare il criterio esistente, impostare un avviso
 
 1. Aprire la [pagina Prevenzione della perdita dei dati](https://compliance.microsoft.com/datalossprevention?viewid=policies).
+
 2. Scegliere il criterio **Informazioni personali (USA)** creato nello scenario 1.
+
 3. Scegliere **Modifica criterio (anteprima)**.
-4. Passare alla pagina **Regole avanzate di prevenzione della perdita dei dati** e modificare il **Rilevato un volume ridotto di contenuti con informazioni personali (Stati Uniti)**
+
+4. Passare alla pagina **Regole avanzate di prevenzione della perdita dei dati** e modificare il **Rilevato un volume ridotto di contenuti con informazioni personali (Stati Uniti)**.
+
 5. Scorrere verso il basso fino alla sezione **Report sugli eventi imprevisti** e impostare **Invia un avviso agli amministratori quando viene soddisfatta una regola** su **Attivato**. Gli avvisi di posta elettronica verranno inviati automaticamente all'amministratore e a tutti gli altri utenti aggiunti all'elenco dei destinatari. 
-![attivare il report sugli eventi imprevisti](../media/endpoint-dlp-2-using-dlp-incident-reports.png)
+
+   > [!div class="mx-imgBorder"]
+   > ![attivare il report sugli eventi imprevisti](../media/endpoint-dlp-2-using-dlp-incident-reports.png)
+   
 6. Ai fini del presente scenario, scegliere **Invia un avviso ogni volta che un'attività corrisponde alla regola**.
+
 7. Scegliere **Salva**.
+
 8. Conservare tutte le impostazioni precedenti scegliendo **Avanti** e quindi **Invia** per applicare le modifiche al criterio.
+
 9. Provare a condividere con un utente esterno all'organizzazione un test con contenuto che attiverà la condizione Informazioni personali (USA). Questo dovrebbe attivare il criterio.
+
 10. Controllare l'evento in Esplora attività.
 
 ### <a name="scenario-3-modify-the-existing-policy-block-the-action-with-allow-override"></a>Scenario 3: Modificare il criterio esistente, bloccare l'azione con Consenti override
 
 1. Aprire la [pagina Prevenzione della perdita dei dati](https://compliance.microsoft.com/datalossprevention?viewid=policies).
+
 2. Scegliere il criterio **Informazioni personali (USA)** creato nello scenario 1.
+
 3. Scegliere **Modifica criterio (anteprima)**.
-4. Passare alla pagina **Regole avanzate di prevenzione della perdita dei dati** e modificare il **Rilevato un volume ridotto di contenuti con informazioni personali (Stati Uniti)**
+
+4. Passare alla pagina **Regole avanzate di prevenzione della perdita dei dati** e modificare il **Rilevato un volume ridotto di contenuti con informazioni personali (Stati Uniti)**.
+
 5. Scorrere verso il basso fino alla sezione **Controlla o limita le attività nei dispositivi Windows** e per ogni attività impostare l'azione corrispondente su **Blocca con override**.
-![impostare l'azione Blocca con override](../media/endpoint-dlp-6-using-dlp-set-blocked-with-override.png)
+
+   > [!div class="mx-imgBorder"]
+   > ![impostare l'azione Blocca con override](../media/endpoint-dlp-6-using-dlp-set-blocked-with-override.png)
+   
 6. Scegliere **Salva**.
+
 7. Ripetere i passaggi da 4 a 7 per **Rilevato un volume elevato di contenuti con informazioni personali (Stati Uniti)**.
+
 8. Conservare tutte le impostazioni precedenti scegliendo **Avanti** e quindi **Invia** per applicare le modifiche al criterio.
+
 9. Provare a condividere con un utente esterno all'organizzazione un test con contenuto che attiverà la condizione Informazioni personali (USA). Questo dovrebbe attivare il criterio.
 
-Nel dispositivo client sarà visualizzato un popup come questo:
+   Nel dispositivo client sarà visualizzato un popup come questo:
 
-![notifica di override client bloccato di Endpoint DLP](../media/endpoint-dlp-3-using-dlp-client-blocked-override-notification.png)
+   > [!div class="mx-imgBorder"]
+   > ![notifica di override client bloccato di Endpoint DLP](../media/endpoint-dlp-3-using-dlp-client-blocked-override-notification.png)
 
 10. Controllare l'evento in Esplora attività.
 

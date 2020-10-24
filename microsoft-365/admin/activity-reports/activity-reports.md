@@ -20,12 +20,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
 description: Ottenere un report periodico sulle modalità di utilizzo dei servizi di Microsoft 365 da parte degli utenti dell'organizzazione. Il dashboard Informazioni generali utilizzo consente di analizzare ogni grafico per ottenere approfondimenti.
-ms.openlocfilehash: e1748cf25fd36787727b0f00f6ddf6553bd454ab
-ms.sourcegitcommit: adaedd1418a3bd6e4875b77fd9e008b47e0b2a51
+ms.openlocfilehash: 4356b287afa56201da7cb644a4056d4c975964e5
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48104451"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48637008"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center"></a>Report di Microsoft 365 nell'interfaccia di amministrazione
 
@@ -102,15 +102,23 @@ In base all'abbonamento, questi sono i report disponibili.
   
 - [Gruppi di Microsoft 365](office-365-groups.md)
   
-- [Attività degli utenti di OneDrive for Business](onedrive-for-business-activity.md)
-  
-- [Utilizzo di OneDrive for Business](onedrive-for-business-usage.md)
+- [Attività degli utenti di OneDrive for Business](onedrive-for-business-activity-ww.md)
+
+- [Attività degli utenti di OneDrive for Business per US Government ](onedrive-for-business-activity.md)
+
+- [Utilizzo di OneDrive for Business](onedrive-for-business-usage-ww.md)
+
+- [Utilizzo di OneDrive for Business per US Government ](onedrive-for-business-usage.md)
 
 - [Utilizzo di Microsoft 365 Apps](microsoft365-apps-usage.md)
   
-- [Utilizzo dei sito di SharePoint](sharepoint-site-usage.md)
+- [Utilizzo dei sito di SharePoint](sharepoint-site-usage-ww.md)
+
+- [Utilizzo del sito di SharePoint per US Government](sharepoint-site-usage.md)
   
-- [Attività di SharePoint](sharepoint-activity.md)
+- [Attività di SharePoint](sharepoint-activity-ww.md)
+
+- [Attività di SharePoint per US Government](sharepoint-activity.md)
   
 - [Attività in Skype for Business Online](https://docs.microsoft.com/SkypeForBusiness/skype-for-business-online-reporting/activity-report)
   

@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: sirkkuw
 author: sirkkuw
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -25,12 +25,12 @@ search.appverid:
 - MOE150
 - BEA160
 description: Informazioni su come configurare la sottoscrizione a Microsoft 365 Business Standard.
-ms.openlocfilehash: cfc198c749cfcaa76bc3fa6323e1dba8a46e7388
-ms.sourcegitcommit: 25afc0c34edc7f8a5eb389d8c701175256c58ec8
+ms.openlocfilehash: e69a3c75d77a8b4721558e72526a068df643f284
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "47324447"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48644556"
 ---
 # <a name="set-up-microsoft-business-standard"></a>Configurare Microsoft Business Standard
 
@@ -40,7 +40,7 @@ Guardare un breve video sulla configurazione di Microsoft 365 Business Standard.
 
 Se il video è stato utile, consultare la [serie di formazione completa per piccole imprese e nuovi utenti di Microsoft 365](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
   
- *Queste procedure interessano le aziende e le [organizzazioni no profit](https://go.microsoft.com/fwlink/p/?LinkId=627221) che usano il **[piano Microsoft 365 Business Standard](https://go.microsoft.com/fwlink/p/?LinkId=627220)***.
+ *Queste procedure interessano le aziende e le [organizzazioni no profit](https://go.microsoft.com/fwlink/p/?LinkId=627221) che usano il **[piano Microsoft 365 Business Standard](https://go.microsoft.com/fwlink/p/?LinkId=627220)**_
 
 È possibile guardare un breve video sulla configurazione di Microsoft 365 Business Standard (noto in precedenza come Office 365 Business Premium).<br><br>
 
@@ -56,7 +56,7 @@ Quando si acquista Microsoft 365 Business Standard, si può scegliere di usare u
 
 1. Autenticarsi allì[interfaccia di amministrazione di Microsoft 365](https://admin.microsoft.com) usando le proprie credenziali globali di amministrazione. 
 
-2. Scegliere **Vai alla configurazione** per avviare la procedura guidata.
+2. Scegliere _*Vai alla configurazione** per avviare la procedura guidata.
 
 3. Nella pagina **Installa le tue app di Office**, è possibile installare le app sul proprio computer.
     
