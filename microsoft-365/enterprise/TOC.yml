@@ -269,6 +269,10 @@
       items:
         - name: Aggiungere un dominio
           href: 'https://docs.microsoft.com/microsoft-365/admin/setup/add-domain'
+    - name: Gestire
+      items:
+        - name: Stato di integrità dei servizi di Microsoft 365
+          href: microsoft-365-service-health.md
         - name: Guide alla configurazione
           href: setup-guides-for-microsoft-365.md
     - name: Più tenant
@@ -571,7 +575,7 @@
               href: view-user-accounts-with-microsoft-365-powershell.md
             - name: Configurare le proprietà
               href: configure-user-account-properties-with-microsoft-365-powershell.md
-            - name: Assegnare ruoli
+            - name: Assegnare i ruoli di amministratore
               href: assign-roles-to-user-accounts-with-microsoft-365-powershell.md
             - name: Eliminare e ripristinare
               href: delete-and-restore-user-accounts-with-microsoft-365-powershell.md
@@ -719,8 +723,6 @@
       href: contoso-info-protect.md
     - name: Riepilogo sicurezza
       href: contoso-security-summary.md
-- name: Stato di integrità dei servizi di Microsoft 365
-  href: microsoft-365-service-health.md
 - name: Conformità Microsoft 365
   href: ../compliance/index.yml
 - name: Sicurezza Microsoft 365

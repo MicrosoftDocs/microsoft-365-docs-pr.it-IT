@@ -238,6 +238,8 @@
           href: create-test-tune-dlp-policy.md
         - name: Usare notifiche e suggerimenti per i criteri nei criteri di prevenzione della perdita dei dati
           href: use-notifications-and-policy-tips.md
+        - name: Configurare e visualizzare gli avvisi per i criteri di prevenzione della perdita dei dati (anteprima)
+          href: dlp-configure-view-alerts-policies.md
         - name: Elementi inclusi nei modelli dei criteri di prevenzione della perdita dei dati
           href: what-the-dlp-policy-templates-include.md
         - name: Creare criteri di prevenzione della perdita dei dati per proteggere i documenti con FCI o altre proprietà
