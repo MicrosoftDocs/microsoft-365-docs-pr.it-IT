@@ -5,7 +5,6 @@ f1.keywords:
 - NOCSH
 ms.author: josephd
 manager: laurawi
-ms.date: 10/01/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -15,12 +14,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Comprendere la struttura di base dell'infrastruttura IT locale di Contoso e in che modo le esigenze aziendali dell'azienda sono soddisfatte da Microsoft 365 per Enterprise.
-ms.openlocfilehash: bc2b34254da01a3d49085082ab8ee8632df2d434
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 767374097efa116f116cff6f6ddf96d075eb71ed
+ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48637176"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "48754587"
 ---
 # <a name="contoso-it-infrastructure-and-business-needs"></a>Infrastruttura IT ed esigenze aziendali di contoso
 
@@ -30,12 +29,10 @@ Contoso si sta spostando da un'infrastruttura IT centralizzata locale a una conf
 
 Contoso utilizza un’infrastruttura IT locale principalmente centralizzata, con centri dati delle applicazioni nella sede di Parigi.
 
-Nella figura 1 viene illustrata la sede centrale con i centri dati delle applicazioni, una DMZ e Internet.
+Di seguito è indicato l'ufficio del quartier generale con i centri dati delle applicazioni, una DMZ e Internet.
 
 ![Infrastruttura IT esistente di contoso](../media/contoso-infra-needs/contoso-infra-needs-fig1.png)
 
-**Figura 1: infrastruttura IT esistente di contoso**
- 
 I centri dati delle applicazioni locali eseguono l'hosting dei seguenti elementi: 
 
 - Applicazioni line-of-business personalizzate che utilizzano SQL Server e altri database di Linux.
@@ -61,7 +58,7 @@ Le esigenze aziendali di Contoso rientrano in cinque categorie principali:
 - Semplificare la collaborazione
 
   Sostituisci la collaborazione basata su condivisione file e la posta elettronica con un modello online che consente modifiche in tempo reale sui documenti, riunioni online più semplici e thread di conversazione acquisiti.
-- Migliorare la produttività per utenti remoti e mobili
+- Migliorare la produttività per lavoratori remoti e mobili
 
   Con molti dipendenti che lavorano da casa o nel campo, sostituire la soluzione VPN con collo di bottiglia con accesso performante ai dati e alle risorse di Contoso nel cloud.
 - Favorire la creatività e l'innovazione
@@ -135,12 +132,12 @@ Il reparto IT di Contoso ha determinato la seguente mappatura delle esigenze azi
 | Conformità |  |  |
 |  | Rispettare i requisiti normativi applicabili | Funzionalità di GDPR in Microsoft 365 |
 | Gestione |  |  |
-|  | Riduzione del sovraccarico per l'installazione degli aggiornamenti client | Anelli di distribuzione <BR> Aggiornamenti di Windows 10 Enterprise <BR> Aggiornamenti di App Microsoft 365 per grandi imprese |
+|  | Riduzione del sovraccarico per l'installazione degli aggiornamenti client | Aggiornamenti di Windows 10 Enterprise <BR> Aggiornamenti di App Microsoft 365 per grandi imprese |
 ||||
 
 ## <a name="next-step"></a>Passaggio successivo
 
-Informazioni [sulla rete](contoso-networking.md) Contoso Corporation in locale e su come è stata ottimizzata per l'accesso e la latenza alle risorse basate su cloud di Microsoft 365.
+Informazioni sulla rete Contoso Corporation [in locale e su](contoso-networking.md) come è stata ottimizzata per l'accesso e la latenza alle risorse basate su cloud di Microsoft 365.
 
 ## <a name="see-also"></a>Vedere anche
 

@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Comprendere in che modo Contoso utilizza le funzionalità di protezione delle informazioni in Microsoft 365 per l'organizzazione per proteggere le proprie risorse digitali nel cloud.
-ms.openlocfilehash: 51740db9a0bb2e770e959fe8d9dcde15c042f5b8
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: a1aa08a20d284d3a003f4a406c37f2107ce19bd1
+ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48637236"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "48754602"
 ---
 # <a name="information-protection-for-the-contoso-corporation"></a>Protezione delle informazioni per Contoso Corporation
 
@@ -54,7 +54,7 @@ Contoso ha seguito questi passaggi per preparare Microsoft 365 per Enterprise ai
 
 1. Identificare le informazioni da proteggere
 
-   Contoso ha eseguito una revisione estensiva delle risorse digitali esistenti presenti nei siti e nelle condivisioni di file di SharePoint locali e ha classificato ogni risorsa.
+   Contoso ha eseguito una revisione estensiva delle risorse digitali esistenti presenti nei siti di SharePoint locali e nelle condivisioni di file e ha classificato ogni risorsa.
 
 2. Determinare i criteri di accesso, conservazione e protezione dei dati per i livelli di dati
 
@@ -113,7 +113,7 @@ Ecco la risultante configurazione della protezione delle informazioni di contoso
 
 ## <a name="next-step"></a>Passaggio successivo
 
-[Vedere](contoso-security-summary.md) in che modo Contoso utilizza le funzionalità di sicurezza in Microsoft 365 per Enterprise per la gestione delle identità e degli accessi, la protezione dalle minacce, la protezione delle informazioni e la gestione della sicurezza.
+Informazioni su come Contoso utilizza le [funzionalità di sicurezza in Microsoft 365 per Enterprise](contoso-security-summary.md) per la gestione delle identità e degli accessi, la protezione dalle minacce, la protezione delle informazioni e la gestione della sicurezza.
 
 ## <a name="see-also"></a>Vedere anche
 

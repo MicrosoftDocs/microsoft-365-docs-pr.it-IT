@@ -5,7 +5,6 @@ f1.keywords:
 - NOCSH
 ms.author: josephd
 manager: laurawi
-ms.date: 10/01/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -15,12 +14,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Comprendere l'infrastruttura di rete di Contoso e come la società utilizza la tecnologia SD-WAN per garantire prestazioni di rete ottimali a Microsoft 365 per i servizi cloud aziendali.
-ms.openlocfilehash: ca673e6dcbf0f3db4bde33d388598e5f4ffac914
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: d5f3581b81d33bdc200321692b82d57a96d09298
+ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48637188"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "48754015"
 ---
 # <a name="networking-for-the-contoso-corporation"></a>Servizi di rete per Contoso Corporation
 
@@ -117,7 +116,7 @@ L'adozione corretta di Microsoft 365 per i servizi Enterprise da parte degli ute
 
 ## <a name="next-step"></a>Passaggio successivo
 
-[Informazioni su](contoso-identity.md) come Contoso si avvale di Active Directory Domain Services (AD DS) locale nel cloud per i dipendenti dell'autenticazione federata per clienti e partner commerciali.
+Informazioni su come Contoso sta facendo [leva sui servizi di dominio Active Directory locali nel cloud](contoso-identity.md) per i dipendenti e l'autenticazione federata per clienti e partner commerciali.
 
 ## <a name="see-also"></a>Vedere anche
 

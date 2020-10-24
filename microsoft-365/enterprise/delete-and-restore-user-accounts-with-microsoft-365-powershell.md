@@ -19,40 +19,42 @@ ms.custom:
 - O365ITProTrain
 - seo-marvel-apr2020
 ms.assetid: 209c9868-448c-49bc-baae-11e28b923a39
-description: In questo articolo vengono fornite informazioni su come utilizzare i diversi moduli di PowerShell per eliminare gli account utente di Microsoft 365.
-ms.openlocfilehash: 0c13b57c13fb3d01d648438a5d6973fea8b9db67
-ms.sourcegitcommit: c1ee4ed3c5826872b57339e1e1aa33b4d2209711
+description: Informazioni su come utilizzare i diversi moduli di PowerShell per eliminare gli account utente di Microsoft 365.
+ms.openlocfilehash: 39bf57fe7e7aad1bdc9915e503107ad799515030
+ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "48235443"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "48754541"
 ---
 # <a name="delete-microsoft-365-user-accounts-with-powershell"></a>Eliminare gli account utente di Microsoft 365 con PowerShell
 
-È possibile utilizzare PowerShell per Microsoft 365 per eliminare e ripristinare un account utente.
+È possibile utilizzare PowerShell per Microsoft 365 per eliminare e ripristinare gli account utente.
 
 >[!Note]
->[Informazioni su come ripristinare un account utente](https://docs.microsoft.com/microsoft-365/admin/add-users/restore-user) con l'interfaccia di amministrazione di Microsoft 365. Per un elenco di risorse aggiuntive, vedere [Manage Users and groups](https://docs.microsoft.com/microsoft-365/admin/add-users/).
+>Informazioni su come [ripristinare un account utente](https://docs.microsoft.com/microsoft-365/admin/add-users/restore-user) tramite l'interfaccia di amministrazione di Microsoft 365.
+>
+>Per un elenco di risorse aggiuntive, vedere [Manage Users and groups](https://docs.microsoft.com/microsoft-365/admin/add-users/).
 >   
    
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Usare il modulo di Azure Active Directory PowerShell per Graph
 
 Per prima cosa, [connettersi al tenant Microsoft 365](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).
 
-Una volta stabilita la connessione, utilizzare la sintassi seguente per rimuovere un singolo account utente:
+Dopo aver eseguito la connessione, utilizzare la sintassi seguente per rimuovere un singolo account utente:
   
 ```powershell
 Remove-AzureADUser -ObjectID <sign-in name>
 ```
 
-Questo esempio consente di rimuovere l'account utente fabricec@litwareinc.com.
+In questo esempio viene rimosso l'account utente *fabricec \@ litwareinc.com*.
   
 ```powershell
 Remove-AzureADUser -ObjectID fabricec@litwareinc.com
 ```
 
 > [!NOTE]
-> Il parametro **-ObjectID** nel cmdlet **Remove-AzureADUser** accetta il nome di accesso dell'account, noto anche come nome dell'entità utente o l'ID oggetto dell'account.
+> Il parametro *-ObjectID* nel cmdlet **Remove-AzureADUser** accetta il nome di accesso dell'account, noto anche come nome dell'entità utente o ID oggetto dell'account.
   
 Per visualizzare il nome dell'account in base al nome dell'utente, usare i comandi seguenti:
   
@@ -61,7 +63,7 @@ $userName="<User name>"
 Write-Host (Get-AzureADUser | where {$_.DisplayName -eq $userName}).UserPrincipalName
 ```
 
-Questo esempio permette di visualizzare il nome dell'account per l'utente Caleb Sillis.
+In questo esempio viene visualizzato il nome dell'account per l'utente *Caleb davanzali*.
   
 ```powershell
 $userName="Caleb Sills"
@@ -77,7 +79,7 @@ Remove-AzureADUser -ObjectID (Get-AzureADUser | where {$_.DisplayName -eq $userN
 
 ## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>Usare il modulo di Microsoft Azure Active Directory per Windows PowerShell
 
-Quando si elimina un account utente con il modulo di Microsoft Azure Active Directory per Windows PowerShell, questo non viene rimosso in modo definitivo. È possibile ripristinare l’account utente eliminato entro 30 giorni.
+Quando si elimina un account utente tramite il modulo di Microsoft Azure Active Directory per Windows PowerShell, l'account non viene eliminato definitivamente. Infatti, si hanno a disposizione 30 giorni di tempo per ripristinare l'account utente eliminato.
 
 Per prima cosa, [connettersi al tenant Microsoft 365](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
 
@@ -88,10 +90,10 @@ Remove-MsolUser -UserPrincipalName <sign-in name>
 ```
 
 >[!Note]
->PowerShell Core non supporta il modulo di Microsoft Azure Active Directory per Windows PowerShell e i cmdlet con **MSOL** all'interno del nome. Per continuare a usare i cmdlet, è necessario eseguirli in Windows PowerShell.
+>PowerShell Core non supporta il modulo di Microsoft Azure Active Directory per il modulo di Windows PowerShell e i cmdlet con *MSOL* nel proprio nome. Eseguire questi cmdlet da Windows PowerShell.
 >
 
-Questo esempio elimina l'account utente BelindaN@litwareinc.com.
+In questo esempio viene eliminato l'account utente *BelindaN@litwareinc.com*.
   
 ```powershell
 Remove-MsolUser -UserPrincipalName belindan@litwareinc.com
@@ -103,21 +105,20 @@ Per ripristinare un account utente eliminato entro la fine del periodo di toller
 Restore-MsolUser -UserPrincipalName <sign-in name>
 ```
 
-Questo esempio consente di ripristinare l'account utente eliminato BelindaN@litwareinc.com.
+In questo esempio viene ripristinato l'account eliminato * \@ litwareinc.com*.
   
 ```powershell
 Restore-MsolUser -UserPrincipalName BelindaN@litwareinc.com
 ```
 
- **Note:**
-  
-- Per visualizzare un elenco di utenti eliminati che possono essere ripristinati, eseguire il comando seguente:
-    
-  ```powershell
-  Get-MsolUser -All -ReturnDeletedUsers
-  ```
-
-- Se il nome dell'entità utente originale di un account viene usato da un altro account, fare ricorso al parametro _NewUserPrincipalName_ invece che a quello _UserPrincipalName_ per specificare un differente nome principale dell'utente, quando si ripristina l'account utente.
+>[!Note]
+> Per visualizzare un elenco di utenti eliminati che possono essere ripristinati, eseguire il comando seguente:
+>    
+> ```powershell
+> Get-MsolUser -All -ReturnDeletedUsers
+> ```
+>
+> Se il nome dell'entità utente originale di un account viene usato da un altro account, fare ricorso al parametro _NewUserPrincipalName_ invece che a quello _UserPrincipalName_ per specificare un differente nome principale dell'utente, quando si ripristina l'account utente.
 
 
 ## <a name="see-also"></a>Vedere anche

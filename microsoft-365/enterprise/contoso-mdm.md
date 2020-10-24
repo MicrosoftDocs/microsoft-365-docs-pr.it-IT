@@ -5,7 +5,6 @@ f1.keywords:
 - NOCSH
 ms.author: josephd
 manager: laurawi
-ms.date: 10/01/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -15,12 +14,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Informazioni sul modo in cui Contoso utilizza Microsoft Intune in Microsoft 365 per l'organizzazione per gestire i propri dispositivi e le app in esecuzione su di essi.
-ms.openlocfilehash: d3f973827a9b05a415efe9225a2bdb3d83ccaf38
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 6d7783e8c2d9b78b63bf9eefe761fbc52d0b280f
+ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48649646"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "48753994"
 ---
 # <a name="mobile-device-management-for-contoso"></a>Gestione dispositivi mobili in Contoso
 
@@ -71,7 +70,7 @@ Di seguito è indicato l'architettura di distribuzione di gestione dei dispositi
 
 ## <a name="next-step"></a>Passaggio successivo
 
-[Scopri](contoso-info-protect.md) come Contoso utilizza le funzionalità di protezione delle informazioni di Microsoft 365 per l'organizzazione per classificare, identificare e proteggere le risorse digitali cruciali all'interno della propria azienda.
+Scopri come Contoso utilizza le [funzionalità di protezione delle informazioni](contoso-info-protect.md) di Microsoft 365 per l'organizzazione per classificare, identificare e proteggere le risorse digitali cruciali all'interno della propria azienda.
 
 ## <a name="see-also"></a>Vedere anche
 

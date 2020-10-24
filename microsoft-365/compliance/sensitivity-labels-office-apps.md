@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Informazioni su come gli utenti lavorano con etichette di riservatezza nelle app di Office per desktop, dispositivi mobili e Web e quali app supportano le etichette di riservatezza.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 5207d0e3e7e6272ab4a498d1cd68ad1fe3865c39
-ms.sourcegitcommit: 6b1d0bea86ced26cae51695c0077adce8bcff3c4
+ms.openlocfilehash: 238dc5c0b54d09258f2f679bff5467052d3448f3
+ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48309208"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "48754564"
 ---
 # <a name="use-sensitivity-labels-in-office-apps"></a>Usare le etichette di riservatezza nelle app di Office
 
@@ -59,6 +59,7 @@ Per iOS e Android: se si dispone di una versione minima elencata, la funzionalit
 |[Richiedere una giustificazione per la modifica di un'etichetta](sensitivity-labels.md#what-label-policies-can-do)                     | 1910+          | 16.21 +     | 2.21+ | 16.0.11231+ | [Sì-opt-in](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[Fornire la guida per il collegamento a una pagina della Guida personalizzata](sensitivity-labels.md#what-label-policies-can-do)                       | 1910+          | 16.21 +     | 2.21+ | 16.0.11231+ | [Sì-opt-in](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[Contrassegnare il contenuto](sensitivity-labels.md#what-sensitivity-labels-can-do)                                              | 1910+          | 16.21 +     | 2.21+ | 16.0.11231+ | [Sì-opt-in](sensitivity-labels-sharepoint-onedrive-files.md) |
+|[Contrassegni dinamici con variabili](#dynamic-markings-with-variables)                                              | Anteprima: [canale beta e canale corrente (anteprima)](https://office.com/insider)           | 16.42 +     | 2.42 + | 16.0.13328 + | In Revisione |
 |[Assegnare le autorizzazioni adesso](encryption-sensitivity-labels.md#assign-permissions-now)                                 | 1910+          | 16.21 +     | 2.21+ | 16.0.11231+ | [Sì-opt-in](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[Consentire agli utenti di assegnare le autorizzazioni](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | [Canale corrente](https://docs.microsoft.com/deployoffice/overview-update-channels#current-channel-overview) (2003 +) | 16.35 +   | In Revisione   | In Revisione         | In Revisione                                                        |
 |[Visualizzazione dell'utilizzo delle etichette con label Analytics](label-analytics.md) e invio dei dati per gli amministratori                      | In Revisione            | In Revisione        | In Revisione   | In Revisione         | In Revisione                                                        |
@@ -76,6 +77,7 @@ Per iOS e Android: se si dispone di una versione minima elencata, la funzionalit
 |[Richiedere una giustificazione per la modifica di un'etichetta](sensitivity-labels.md#what-label-policies-can-do)                     | 1910+                     | 16.21 +                 | 4.7.1 +         | 4.0.39 +           | Sì               |
 |[Fornire la guida per il collegamento a una pagina della Guida personalizzata](sensitivity-labels.md#what-label-policies-can-do)                       | 1910+                     | 16.21 +                 | 4.7.1 +         | 4.0.39 +           | Sì               |
 |[Contrassegnare il contenuto](sensitivity-labels.md#what-label-policies-can-do)                                              | 1910+                     | 16.21 +                 | 4.7.1 +         | 4.0.39 +           | Sì               |
+|[Contrassegni dinamici con variabili](#dynamic-markings-with-variables)                                              | In Revisione                     | In Revisione                 | In Revisione         | In Revisione           | In Revisione               |
 |[Assegnare le autorizzazioni adesso](encryption-sensitivity-labels.md#assign-permissions-now)                                 | 1910+                     | 16.21 +                 | 4.7.1 +         | 4.0.39 +           | Sì               |
 |[Consentire agli utenti di assegnare le autorizzazioni](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | 1910+                     | 16.21 +                 | 4.7.1 +         | 4.0.39 +           | Sì               |
 |[Visualizzazione dell'utilizzo delle etichette con label Analytics](label-analytics.md) e invio dei dati per gli amministratori                      | In Revisione                       | In Revisione                    | In Revisione           | In Revisione               | In Revisione               |
@@ -235,6 +237,27 @@ Gli scenari che includono l'applicazione di un'etichetta di riservatezza esterna
 - Microsoft Cloud App Security
 
 Per questi scenari, utilizzando le proprie app di Office, un utente con etichette predefinite può applicare le indicazioni di contenuto dell'etichetta rimuovendo temporaneamente o sostituendo l'etichetta corrente e quindi riapplicando l'etichetta originale.
+
+### <a name="dynamic-markings-with-variables"></a>Contrassegni dinamici con variabili
+
+> [!IMPORTANT]
+> Attualmente, non tutte le app in tutte le piattaforme supportano le marcature di contenuto dinamico che è possibile specificare per le intestazioni, i piè di pagina e le filigrane. Per le app che non supportano questa funzionalità, applicano le marcature come testo originale specificato nella configurazione dell'etichetta, anziché risolvere le variabili.
+> 
+> Il client Azure Information Protection Unified Labeling supporta la marcatura dinamica. Per l'etichettatura integrata in Office, vedere le tabelle nella sezione [capabilities](#support-for-sensitivity-label-capabilities-in-apps) in questa pagina.
+
+Quando si configura un'etichetta di riservatezza per i contrassegni di contenuto, è possibile utilizzare le seguenti variabili nella stringa di testo per l'intestazione, il piè di pagina o la filigrana:
+
+| Variabile | Descrizione | Esempio di applicazione dell'etichetta |
+| -------- | ----------- | ------- |
+| `${Item.Label}` | Nome visualizzato dell'etichetta corrente | **Generale**|
+| `${Item.Name}` | Nome del file corrente o oggetto di posta elettronica | **Sales.docx** |
+| `${Item.Location}` | Percorso e nome di file correnti del documento o dell'oggetto di posta elettronica per un messaggio di posta elettronica | **\\\Sales\2020\Q3\Report.docx**|
+| `${User.Name}` | Nome visualizzato dell'utente corrente  | **Richard Simone** |
+| `${User.PrincipalName}` | Nome dell'entità utente (UPN) utente corrente di Azure AD | **rsimone \@ contoso.com** |
+| `${Event.DateTime}` | Data e ora correnti per il fuso orario locale | **8/10/2020 1:30 PM** |
+
+> [!NOTE]
+> La sintassi di tali variabili è distinzione tra maiuscole e minuscole.
 
 ## <a name="end-user-documentation"></a>Documentazione per gli utenti finali
 

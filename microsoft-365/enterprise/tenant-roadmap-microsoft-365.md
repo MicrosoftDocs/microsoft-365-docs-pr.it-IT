@@ -5,7 +5,6 @@ f1.keywords:
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 08/10/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -15,27 +14,26 @@ ms.collection:
 - m365initiative-coredeploy
 ms.custom: it-pro
 description: La Guida di orientamento per la configurazione dei tenant per Microsoft 365.
-ms.openlocfilehash: db0f9552fce460ca6d25ee74ea2031bea388b8dc
-ms.sourcegitcommit: 3b1bd8aa1430bc9565743a446bbc27b199f30f73
+ms.openlocfilehash: 038d9b0d94b84d184f0d9d9b250d0ee4d2c19de9
+ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48656008"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "48753967"
 ---
 # <a name="tenant-roadmap-for-microsoft-365"></a>Guida di orientamento tenant per Microsoft 365
 
-Il tenant Microsoft 365 è l'insieme di servizi assegnati alla propria organizzazione. In genere, questo tenant è associato a uno o più nomi di dominio DNS e funge da contenitore centrale per sottoscrizioni diverse e licenze all'interno delle quali viene assegnato agli account utente. Per ulteriori informazioni, vedere [abbonamenti, licenze, account e tenant per offerte cloud di Microsoft](subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings.md).
+Il tenant Microsoft 365 è l'insieme di servizi assegnati alla propria organizzazione. In genere, questo tenant è associato a uno o più nomi di dominio DNS pubblici e funge da contenitore centrale e isolato per sottoscrizioni diverse e licenze all'interno delle quali viene assegnato agli account utente. Per ulteriori informazioni, vedere [abbonamenti, licenze, account e tenant per offerte cloud di Microsoft](subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings.md).
 
 Quando si crea un tenant di Microsoft 365, è possibile assegnarlo a una specifica posizione geografica. È inoltre possibile disporre di un tenant con più posizioni geografiche e spostare il tenant da una posizione a un'altra.
 
-Per ottenere il tenant pronto per l'identità, è importante pianificare attentamente ed eseguire la configurazione del tenant.
-
+Per ottenere il tenant pronto per l'utente, i gruppi, le licenze e le app del cloud, è importante pianificare attentamente ed eseguire la configurazione del tenant.
 
 ## <a name="set-up-your-microsoft-365-tenant"></a>Configurare il tenant di Microsoft 365
 
 Dopo aver verificato che la rete sia stata ottimizzata per l'accesso a Microsoft 365 sia per gli addetti locali che per i dipendenti remoti, le attività importanti successive stanno pianificando e configurando il tenant di Microsoft 365 per i nomi di dominio DNS, i servizi comuni e l'infrastruttura di identità che supporta l'accesso sicuro degli utenti.
 
-## <a name="plan"></a>Piano
+### <a name="plan"></a>Piano
 
 Per pianificare l'implementazione del tenant:
 
@@ -46,9 +44,8 @@ Per pianificare l'implementazione del tenant:
 - [Determinare la modalità di utilizzo dell'autenticazione moderna ibrida](hybrid-modern-auth-overview.md)
 - [Pianificare gli aggiornamenti di Office 2007 e Office 2010](plan-upgrade-previous-versions-office.md)
 - [Comprendere l'isolamento del tenant](microsoft-365-tenant-isolation-overview.md)
-- [Ottenere i dettagli su Microsoft 365 Service Assurance](microsoft-365-administrative-access-controls-overview.md)
 
-### <a name="deploy"></a>Distribuzione
+### <a name="deploy"></a>Distribuire
 
 Per distribuire il tenant: 
 
@@ -69,16 +66,15 @@ Con Microsoft 365 Multi-Geo l'organizzazione può espandere la presenza di Micro
 
 Per ulteriori informazioni, vedere [Microsoft 365 multi-Geo](microsoft-365-multi-geo.md).
 
-## <a name="manage-multiple-microsoft-365-tenancies"></a>Gestire più Microsoft 365 locazione 
+## <a name="manage-multiple-microsoft-365-tenant"></a>Gestire più tenant Microsoft 365 
 
-Anche se l'utilizzo di un singolo tenant per il Oganization è ideale, potrebbe essere una delle numerose organizzazioni con più locazione. Per motivi multipli di locazione è possibile includere fusioni e acquisizioni, si desidera l'isolamento amministrativo o si dispone di una decentralizzata.
+Anche se l'utilizzo di un singolo tenant per il Oganization è l'ideale, potrebbe essere una delle numerose organizzazioni con più tenant. I motivi possono includere fusioni e acquisizioni, si desidera l'isolamento amministrativo o si dispone di una decentralizzata.
 
-Se si dispone di più di Microsoft 365 locazione, vedere questi articoli per ulteriori informazioni su:
+Se si dispone di più tenant Microsoft 365, vedere questi articoli per ulteriori informazioni su:
 
 - [Collaborazione tra tenant](microsoft-365-inter-tenant-collaboration.md)
 - [Migrazione delle cassette postali tra tenant](cross-tenant-mailbox-migration.md)
 - [Migrazioni da tenant a tenant](microsoft-365-tenant-to-tenant-migrations.md)
-
 
 ## <a name="next-step"></a>Passaggio successivo
 

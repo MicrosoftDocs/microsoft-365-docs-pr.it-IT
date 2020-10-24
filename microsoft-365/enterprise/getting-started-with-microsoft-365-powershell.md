@@ -1,5 +1,5 @@
 ---
-title: Iniziare a utilizzare PowerShell per Microsoft 365
+title: Guida introduttiva a PowerShell per Microsoft 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -16,19 +16,19 @@ ms.custom:
 - Ent_Office_Other
 - seo-marvel-apr2020
 ms.assetid: 4712d6fd-d9c7-4ec2-88c1-3ad9201cbb7f
-description: 'Riepilogo: comprendere il valore di PowerShell per Microsoft 365, connettersi al tenant di Microsoft 365 e ottenere assistenza.'
-ms.openlocfilehash: 3a57e5188dd4161442ee722a14c2546ef28ccb01
-ms.sourcegitcommit: aeb94601a81db3ead8610c2f36cff30eb9fe10e7
+description: 'Riepilogo: informazioni sul valore di PowerShell per Microsoft 365, su come connettersi al tenant di Microsoft 365 e su come ottenere assistenza.'
+ms.openlocfilehash: 850d3eea1aa23937bf30795784405119ef6c167c
+ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "47429975"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "48754457"
 ---
-# <a name="get-started-with-powershell-for-microsoft-365"></a>Iniziare a utilizzare PowerShell per Microsoft 365
+# <a name="get-started-with-powershell-for-microsoft-365"></a>Guida introduttiva a PowerShell per Microsoft 365
 
 *Questo articolo può essere applicato sia a Microsoft 365 Enterprise che a Office 365 Enterprise.*
 
-È possibile utilizzare i comandi e gli script di PowerShell per Microsoft 365 per gestire Microsoft 365 e semplificare il lavoro giornaliero. Informazioni su perché PowerShell per Microsoft 365 è cruciale per la gestione di Microsoft 365, per la connessione alla sottoscrizione Microsoft 365 e per la creazione di report e per ottenere ulteriori informazioni e assistenza dalla community di Microsoft 365.
+È possibile utilizzare i comandi e gli script di PowerShell per Microsoft 365 per gestire Microsoft 365 e semplificare il lavoro giornaliero. Utilizzare le informazioni seguenti per sapere perché PowerShell per Microsoft 365 è cruciale per la gestione di Microsoft 365, come connettersi alla sottoscrizione Microsoft 365 e creare report e dove ottenere ulteriori informazioni dalla community di Microsoft 365.
   
 Selezionare da questi argomenti:
   
@@ -54,7 +54,7 @@ Selezionare da questi argomenti:
     
 - [**Risorse della community di Microsoft 365 per PowerShell**](microsoft-365-powershell-community-resources.md)
     
-    Iniziare da qui per connettersi alla community di PowerShell e ricevere assistenza o ulteriori informazioni sull'utilizzo di PowerShell per Microsoft 365.
+    Iniziare da qui per connettersi alla community di PowerShell e ottenere ulteriori informazioni sull'utilizzo di PowerShell per Microsoft 365.
     
 ## <a name="related-topics"></a>Argomenti correlati
 

@@ -5,7 +5,6 @@ f1.keywords:
 - NOCSH
 ms.author: josephd
 manager: laurawi
-ms.date: 06/17/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -15,14 +14,14 @@ ms.collection:
 - M365-subscription-management
 ms.custom: ''
 description: Come un'organizzazione globale fittizia ma rappresentativa ha adottato Microsoft 365 per Enterprise.
-ms.openlocfilehash: 87dd725612ad3dfe422293b28d9643a50f9b1e05
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 980146a2a9c2a909d0b65c20e460841dce9fecee
+ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48637224"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "48754669"
 ---
-# <a name="microsoft-365-for-enterprise-for-contoso-corporation"></a>Microsoft 365 per Enterprise per Contoso Corporation
+# <a name="microsoft-365-for-enterprise-for-the-contoso-corporation"></a>Microsoft 365 per Enterprise per Contoso Corporation
 
 Microsoft 365 for Enterprise è l'offerta cloud di Microsoft Premier che unisce le app e i servizi di produttività locali e basati su cloud con Windows 10 Enterprise e funzionalità di sicurezza avanzate. Si tratta di una soluzione completa e intelligente che consente a tutti di collaborare in modo creativo e sicuro.
 
@@ -36,7 +35,9 @@ Fare riferimento ai seguenti articoli per i dettagli:
 
   Contoso è un'organizzazione globale di produzione, vendita e supporto con più di 100.000 prodotti.
 
-- [Infrastruttura IT ed esigenze di Contoso](contoso-infra-needs.md) Contoso è una transizione da un'infrastruttura IT centralizzata locale a una configurazione cloud-inclusive che incorpora carichi di lavoro di produttività personale basati su cloud, applicazioni e scenari ibridi
+- [Infrastruttura IT ed esigenze di Contoso](contoso-infra-needs.md)
+
+  Contoso si sta spostando da un'infrastruttura IT centralizzata locale a una configurazione cloud-inclusive che incorpora carichi di lavoro di produttività personale basati su cloud, applicazioni e scenari ibridi.
 
 - [Rete](contoso-networking.md)
 
@@ -48,11 +49,11 @@ Fare riferimento ai seguenti articoli per i dettagli:
 
 - [Windows 10 Enterprise](contoso-win10.md)
 
-  L'infrastruttura di Windows 10 Enterprise Contoso distribuisce e installa automaticamente gli aggiornamenti per i dispositivi che eseguono il sistema operativo primario del PC e del dispositivo della società.
+  L'infrastruttura contoso per Windows 10 Enterprise distribuisce e installa automaticamente gli aggiornamenti per i dispositivi che eseguono il sistema operativo primario del PC e del dispositivo della società.
 
 - [App Microsoft 365 per grandi imprese](contoso-o365pp.md)
 
-  L'infrastruttura di Contoso Microsoft 365 Apps for Enterprise distribuisce e installa automaticamente gli aggiornamenti per la famiglia di prodotti Microsoft Office del software di produttività.
+  L'infrastruttura contoso per Microsoft 365 Apps for Enterprise distribuisce e installa automaticamente gli aggiornamenti per la famiglia di prodotti Microsoft Office del software di produttività.
 
 - [Gestione dei dispositivi mobili](contoso-mdm.md)
 
@@ -76,7 +77,7 @@ Fare riferimento ai seguenti articoli per i dettagli:
 
 ## <a name="next-step"></a>Passaggio successivo
 
-[Informazioni su contoso](contoso-overview.md) Corporation e sulle considerazioni relative alla progettazione che sono state affrontate quando sono state distribuite Microsoft 365 per Enterprise.
+Informazioni [su Contoso Corporation](contoso-overview.md) e sulle considerazioni relative alla progettazione che sono state affrontate quando sono state distribuite Microsoft 365 per Enterprise.
 
 
 ## <a name="see-also"></a>Vedere anche

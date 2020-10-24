@@ -5,7 +5,6 @@ f1.keywords:
 - NOCSH
 ms.author: josephd
 manager: laurawi
-ms.date: 10/01/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -15,12 +14,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Come Contoso sfrutta l’identità come servizio (IDaaS) e fornisce l'autenticazione basata su cloud per i dipendenti e l'autenticazione federata per i partner e clienti.
-ms.openlocfilehash: 10db0a35024595c4dba9a33ad83ae75bcad3870c
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: dea0f53ef1c3fdc2ea32256303c6120c614c904d
+ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48637248"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "48754642"
 ---
 # <a name="identity-for-the-contoso-corporation"></a>Identità per Contoso Corporation
 
@@ -43,7 +42,7 @@ Contoso consente:
 - I clienti possono utilizzare gli account Microsoft, Facebook o Google mail per accedere al sito Web pubblico della società.
 - Fornitori e partner per l'utilizzo dei propri account LinkedIn, Salesforce o Google mail per accedere all'Extranet dei partner della società.
 
-Ecco la DMZ di Contoso contenente un sito Web pubblico, un'Extranet di partner e un set di server AD FS. La DMZ è connessa a Internet che contiene clienti, partner e servizi Internet.
+Ecco la DMZ contoso contenente un sito Web pubblico, un'Extranet di partner e un set di server Active Directory Federation Services (AD FS). La DMZ è connessa a Internet che contiene clienti, partner e servizi Internet.
 
 ![Supporto di Contoso per l'autenticazione federata per clienti e partner](../media/contoso-identity/contoso-identity-fig2.png)
  
@@ -77,7 +76,7 @@ Di seguito viene indicato l'insieme risultante dei criteri di accesso condiziona
  
 ## <a name="next-step"></a>Passaggio successivo
 
-[Informazioni](contoso-win10.md) su come Contoso utilizza l'infrastruttura di Microsoft endpoint Configuration Manager per distribuire e mantenere l'attuale Windows 10 Enterprise all'interno dell'organizzazione.
+Informazioni su come Contoso utilizza l'infrastruttura di Microsoft endpoint Configuration Manager per [distribuire e mantenere l'attuale Windows 10 Enterprise](contoso-win10.md) all'interno dell'organizzazione.
 
 ## <a name="see-also"></a>Vedere anche
 

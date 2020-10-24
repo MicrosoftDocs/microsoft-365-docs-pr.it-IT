@@ -20,36 +20,38 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: ede7598c-b5d5-4e3e-a488-195f02f26d93
 description: In questo articolo vengono fornite informazioni su come utilizzare PowerShell per Microsoft 365 in modo rapido e semplice per assegnare ruoli di amministratore agli account utente.
-ms.openlocfilehash: 1486c86172cd34e6e88f8cd02d003967518bcdb7
-ms.sourcegitcommit: 3b1bd8aa1430bc9565743a446bbc27b199f30f73
+ms.openlocfilehash: 7e3292ab26924384beb8d0c7450b7665dccd48fa
+ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48655948"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "48754199"
 ---
 # <a name="assign-admin-roles-to-microsoft-365-user-accounts-with-powershell"></a>Assegnare i ruoli di amministratore agli account utente di Microsoft 365 con PowerShell
 
 *Questo articolo può essere applicato sia a Microsoft 365 Enterprise che a Office 365 Enterprise.*
 
-È possibile assegnare rapidamente e facilmente i ruoli di amministratore agli account utente tramite PowerShell per Microsoft 365.
+È possibile assegnare facilmente i ruoli agli account utente tramite PowerShell per Microsoft 365.
 
 >[!Note]
->[Informazioni su come assegnare i ruoli di amministratore agli account utente](https://docs.microsoft.com/microsoft-365/admin/add-users/assign-admin-roles) con l'interfaccia di amministrazione di Microsoft 365. Per un elenco di risorse aggiuntive, vedere [Manage Users and groups](https://docs.microsoft.com/microsoft-365/admin/add-users/).
+>Informazioni su come  [assegnare i ruoli di amministratore](https://docs.microsoft.com/microsoft-365/admin/add-users/assign-admin-roles) agli account utente con l'interfaccia di amministrazione di Microsoft 365.
+>
+>Per un elenco di risorse aggiuntive, vedere [Manage Users and groups](https://docs.microsoft.com/microsoft-365/admin/add-users/).
 >
 
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Usare il modulo di Azure Active Directory PowerShell per Graph
 
-Per prima cosa, [connettersi al tenant di Microsoft 365](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module) utilizzando un account di amministratore globale.
+Per prima cosa, utilizzare un account di amministratore globale per [connettersi al tenant Microsoft 365](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).
   
-Determinare quindi il nome di accesso dell'account utente da aggiungere a un ruolo (ad esempio mario@contoso.com). Questo nome di accesso è noto anche come nome dell'entità utente (UPN).
+Successivamente, identificare il nome di accesso dell'account utente che si desidera aggiungere a un ruolo (ad esempio: fredsm \@ contoso.com). Questo è conosciuto anche come nome dell'entità utente (UPN, User Principal Name).
 
-Successivamente, determinare il nome del ruolo di amministratore. Usare questo [elenco di autorizzazioni del ruolo di amministratore in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles).
+Successivamente, determinare il nome del ruolo. Vedere [autorizzazioni per i ruoli di amministratore in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles).
 
 >[!Note]
->Prestare attenzione alle note in questo articolo. Alcuni nomi di ruoli sono diversi per Azure AD PowerShell. Ad esempio, il ruolo "Amministratore di SharePoint" nell'interfaccia di amministrazione di Microsoft 365 è denominato "Amministratore del servizio SharePoint" in Azure AD PowerShell.
+>Prestare attenzione alle note in questo articolo. Alcuni nomi di ruolo sono diversi per PowerShell di Azure Active Directory (Azure AD). Ad esempio, il ruolo di *amministratore di SharePoint* nell'interfaccia di amministrazione di Microsoft 365 è amministratore del *servizio di SharePoint* in Azure ad PowerShell.
 >
 
-Immettere quindi i nomi di accesso e di ruolo ed eseguire questi comandi.
+Successivamente, immettere i nomi di accesso e di ruolo ed eseguire i comandi seguenti:
   
 ```powershell
 $userName="<sign-in name of the account>"
@@ -63,7 +65,7 @@ $role = Get-AzureADDirectoryRole | Where {$_.displayName -eq $roleName}
 Add-AzureADDirectoryRoleMember -ObjectId $role.ObjectId -RefObjectId (Get-AzureADUser | Where {$_.UserPrincipalName -eq $userName}).ObjectID
 ```
 
-Di seguito è riportato un esempio di un set di comandi completato che assegna il ruolo di amministratore del servizio di SharePoint all'account belindan@contoso.com:
+Di seguito è riportato un esempio di un set di comandi completato che assegna il ruolo di amministratore del servizio di SharePoint all'account * \@ contoso.com di dilindan* :
   
 ```powershell
 $userName="belindan@contoso.com"
@@ -86,28 +88,28 @@ Get-AzureADDirectoryRole | Where { $_.DisplayName -eq $roleName } | Get-AzureADD
 
 ## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>Usare il Modulo di Microsoft Azure Active Directory per Windows PowerShell
 
-Per prima cosa, [connettersi al tenant di Microsoft 365](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell) utilizzando un account di amministratore globale.
+Per prima cosa, utilizzare un account di amministratore globale per [connettersi al tenant Microsoft 365](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
   
 ### <a name="for-a-single-role-change"></a>Per una singola modifica del ruolo
 
-La modalità più comune di un account utente specifico è il nome visualizzato o il nome di posta elettronica, noto anche come nome di accesso o nome dell'entità utente (UPN).
+La modalità più comune per specificare l'account utente consiste nell'utilizzare il relativo nome visualizzato o il relativo nome di posta elettronica, noto anche come nome di accesso o nome dell'entità utente (UPN, User Principal Name).
 
 #### <a name="display-names-of-user-accounts"></a>Visualizzazione dei nomi degli account utente
 
-Se si è abituati a utilizzare i nomi visualizzati degli account utente, determinare quanto segue:
+Se si è abituati a utilizzare i nomi visualizzati degli account utente, determinare le seguenti informazioni:
   
-- L'account utente da configurare.
+- L'account utente che si desidera configurare
     
-    Per specificare l'account utente, è necessario determinare il nome visualizzato. Per ottenere un elenco completo di account, utilizzare questo comando:
+    Per specificare l'account utente, è necessario determinare il nome visualizzato. Per ottenere un elenco completo degli account, utilizzare questo comando:
     
   ```powershell
   Get-MsolUser -All | Sort DisplayName | Select DisplayName | More
   ```
 
-    Questo comando elenca il nome visualizzato degli account utente, ordinati per nome visualizzato, una schermata alla volta. È possibile filtrare l'elenco in un set più piccolo utilizzando il cmdlet **Where**. Ecco un esempio:
+    Questo comando elenca il nome visualizzato degli account utente, ordinati per nome visualizzato, una schermata alla volta. È possibile filtrare l'elenco in un set più piccolo utilizzando il cmdlet **Where**. Vedere l'esempio seguente.
 
    >[!Note]
-   >PowerShell Core non supporta il modulo di Microsoft Azure Active Directory per Windows PowerShell e i cmdlet con **MSOL** all'interno del nome. Per continuare a usare i cmdlet, è necessario eseguirli in Windows PowerShell.
+   >PowerShell Core non supporta il modulo di Microsoft Azure Active Directory per il modulo di Windows PowerShell e i cmdlet con *MSOL* nel proprio nome. Eseguire questi cmdlet da Windows PowerShell.
    >
     
   ```powershell
@@ -116,7 +118,7 @@ Se si è abituati a utilizzare i nomi visualizzati degli account utente, determi
 
     Questo comando elenca solo gli account utente per cui il nome visualizzato inizia con "John".
     
-- Il ruolo da assegnare.
+- Il ruolo che si desidera assegnare
     
     Per visualizzare l'elenco dei ruoli di amministratore disponibili che è possibile assegnare agli account utente, utilizzare questo comando:
     
@@ -124,7 +126,7 @@ Se si è abituati a utilizzare i nomi visualizzati degli account utente, determi
   Get-MsolRole | Sort Name | Select Name,Description
   ```
 
-Dopo aver determinato il nome visualizzato dell'account e il nome del ruolo di amministratore, utilizzare questi comandi per assegnare il ruolo all'account:
+Dopo aver determinato il nome visualizzato dell'account e il nome del ruolo, utilizzare questi comandi per assegnare il ruolo all'account:
   
 ```powershell
 $dispName="<The Display Name of the account>"
@@ -132,9 +134,9 @@ $roleName="<The admin role name you want to assign to the account>"
 Add-MsolRoleMember -RoleMemberEmailAddress (Get-MsolUser -All | Where DisplayName -eq $dispName).UserPrincipalName -RoleName $roleName
 ```
 
-Copiare i comandi e incollarli nel blocco note. Per le variabili **$dispName** e **$roleName** , sostituire il testo della descrizione con i relativi valori, rimuovere i \< and > caratteri e lasciare le virgolette. Copiare le righe modificate e incollarle nel modulo di Windows Azure Active Directory modulo affinché Windows PowerShell le esegua. È anche possibile utilizzare Windows PowerShell Integrated Scripting Environment (ISE).
+Incollare i comandi nel blocco note. Per le variabili *$dispName* e *$roleName* , sostituire il testo della descrizione con i relativi valori. Rimuovere i \< and > caratteri ma mantenere le virgolette. Incollare le righe modificate nella finestra di Microsoft Azure Active Directory Module per Windows PowerShell per eseguirle. È anche possibile utilizzare Windows PowerShell Integrated Scripting Environment (ISE).
   
-Segue un esempio di un set di comandi completati:
+Di seguito è riportato un esempio di un set di comandi completato:
   
 ```powershell
 $dispName="Scott Wallace"
@@ -144,17 +146,17 @@ Add-MsolRoleMember -RoleMemberEmailAddress (Get-MsolUser -All | Where DisplayNam
 
 #### <a name="sign-in-names-of-user-accounts"></a>Nomi di accesso degli account utente
 
-Se si è abituati a utilizzare i nomi di accesso o gli account utente di UPN, determinare quanto segue:
+Se si è abituati a utilizzare i nomi di accesso o gli account utente di UPN, determinare le informazioni seguenti:
   
-- UPN dell'account utente.
+- UPN dell'account utente
     
-    Se non si conosce già l'UPN, utilizzare il seguente comando:
+    Se non si conosce l'UPN, utilizzare il seguente comando:
     
   ```powershell
   Get-MsolUser -All | Sort UserPrincipalName | Select UserPrincipalName | More
   ```
 
-    Questo comando consente di elencare l'UPN degli account utente, ordinati in base all'UPN, una schermata alla volta. È possibile filtrare l'elenco in un set più piccolo utilizzando il cmdlet **Where**. Ecco un esempio:
+    Questo comando elenca l'UPN degli account utente, ordinati in base all'UPN, una schermata alla volta. È possibile utilizzare il cmdlet **where** per filtrare l'elenco. Di seguito viene riportato un esempio:
     
   ```powershell
   Get-MsolUser -All | Where DisplayName -like "John*" | Sort UserPrincipalName | Select UserPrincipalName | More
@@ -162,15 +164,15 @@ Se si è abituati a utilizzare i nomi di accesso o gli account utente di UPN, de
 
     Questo comando elenca solo gli account utente per cui il nome visualizzato inizia con "John".
     
-- Il ruolo da assegnare.
+- Il ruolo che si desidera assegnare
     
-    Per visualizzare l'elenco dei ruoli disponibili che è possibile assegnare agli account utente, usare il comando:
+    Per visualizzare l'elenco dei ruoli disponibili che è possibile assegnare agli account utente, usare questo comando:
     
   ```powershell
   Get-MsolRole | Sort Name | Select Name,Description
   ```
 
-Una volta che si dispone dell'UPN dell'account e del nome del ruolo, utilizzare questi comandi per assegnare il ruolo all'account:
+Dopo aver utilizzato l'UPN dell'account e il nome del ruolo, utilizzare questi comandi per assegnare il ruolo all'account:
   
 ```powershell
 $upnName="<The UPN of the account>"
@@ -178,9 +180,9 @@ $roleName="<The role name you want to assign to the account>"
 Add-MsolRoleMember -RoleMemberEmailAddress $upnName -RoleName $roleName
 ```
 
-Copiare i comandi e incollarli nel blocco note. Per le variabili **$upnName** e **$roleName** , sostituire il testo della descrizione con i relativi valori, rimuovere i \< and > caratteri e lasciare le virgolette. Copiare le righe modificate e incollarle nel modulo di Windows Azure Active Directory modulo affinché Windows PowerShell le esegua. In alternativa, è possibile utilizzare Windows PowerShell ISE.
+Copiare i comandi e incollarli nel blocco note. Per le variabili **$upnName** e **$roleName** . Sostituire il testo della descrizione con i relativi valori. Rimuovere i \< and > caratteri ma mantenere le virgolette. Incollare le righe modificate nella finestra di Microsoft Azure Active Directory Module per Windows PowerShell per eseguirle. In alternativa, è possibile utilizzare Windows PowerShell ISE.
   
-Segue un esempio di un set di comandi completati:
+Di seguito è riportato un esempio di un set di comandi completato:
   
 ```powershell
 $upnName="scottw@contoso.com"
@@ -190,19 +192,17 @@ Add-MsolRoleMember -RoleMemberEmailAddress $upnName -RoleName $roleName
 
 ### <a name="multiple-role-changes"></a>Modifiche a più ruoli
 
-Per le modifiche a più ruoli, determinare quanto segue:
+Per le modifiche a più ruoli, determinare le seguenti informazioni:
   
-- Quali account utente configurare. È possibile utilizzare i metodi descritti nella sezione precedente per raccogliere il set di nomi visualizzati o UPN.
+- Gli account utente che si desidera configurare. È possibile utilizzare i metodi descritti nella sezione precedente per raccogliere il set di nomi visualizzati o UPN.
     
-- Ruoli che si desidera assegnare a ogni account utente.
-    
-    Per visualizzare l'elenco dei ruoli disponibili che è possibile assegnare agli account utente, usare questo comando:
+- Ruoli che si desidera assegnare a ogni account utente. Per visualizzare l'elenco dei ruoli disponibili che è possibile assegnare agli account utente, usare questo comando:
     
   ```powershell
   Get-MsolRole | Sort Name | Select Name,Description
   ```
 
-Successivamente, creare un file di testo con valori delimitati da virgole (CSV) con il nome visualizzato o i campi UPN e nome ruolo. È possibile eseguire questa operazione facilmente con Microsoft Excel.
+Successivamente, creare un file di testo con valori delimitati da virgole (CSV) con il nome visualizzato o i campi UPN e nome ruolo. È possibile eseguire questa operazione facilmente in Microsoft Excel.
 
 Di seguito è riportato un esempio per i nomi visualizzati:
   
@@ -220,7 +220,7 @@ $roleChanges=Import-Csv $fileName | ForEach {Add-MsolRoleMember -RoleMemberEmail
 
 ```
 
-Di seguito è riportato un esempio per UPN:
+Di seguito è riportato un esempio di UPN:
   
 ```powershell
 UserPrincipalName,RoleName

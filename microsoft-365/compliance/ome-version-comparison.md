@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: In questo articolo vengono illustrate le differenze tra le diverse versioni della crittografia dei messaggi di Office 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 32895f8aae8c6c23ab7f0e3d70d4caa73285fa9e
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: a52d0c0164dfddb9f678bffa088760a271bc28e3
+ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034876"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "48754130"
 ---
 # <a name="compare-versions-of-ome"></a>Confrontare le versioni di OME
 
@@ -39,11 +39,11 @@ In questo articolo viene confrontato legacy Office 365 Message Encryption (OME) 
 |-----------------------------------|-------------------|-------------------|--------------------------|
 |**Funzionalità**                     | **OME legacy**    | **IRM**           | **Nuove funzionalità OME** |
 |*Invio di un messaggio crittografato*        |Tramite le regole del flusso di posta di Exchange|L'utente finale è stato avviato da Outlook desktop o Outlook sul Web. o tramite le regole del flusso di posta di Exchange|L'utente finale è stato avviato dal desktop di Outlook, Outlook per Mac o Outlook sul Web. tramite le regole del flusso di posta di Exchange (note anche come regole di trasporto) e prevenzione della perdita di dati (DLP)|
-|*Modello Rights Management*       |   N/D      |Non inoltrare l'opzione e i modelli personalizzati|Non inoltrare l'opzione, l'opzione solo crittografia e i modelli personalizzati|
+|*Modello Rights Management*       |   N/D      |Non inoltrare l'opzione e i modelli personalizzati|Non inoltrare l'opzione, l'opzione Encrypt-Only e i modelli personalizzati|
 |*Tipo di destinatario*                   |Destinatari interni ed esterni|Solo destinatari interni         |Destinatari interni ed esterni|
 |*Esperienza per il destinatario interno*|I destinatari ricevono un messaggio HTML che consente di scaricare e aprire in un Web browser o in un'app per dispositivi mobili|Utilizzo nativo in linea nei client Outlook|Utilizzo nativo in linea per i destinatari nella stessa organizzazione con i client di Outlook.  I destinatari possono leggere il messaggio dal portale OME usando client diversi da Outlook (non è necessario alcun download o app).|
 |*Esperienza per il destinatario esterno*|I destinatari ricevono un messaggio HTML che consente di scaricare e aprire in un Web browser o in un'app per dispositivi mobili|N/D|Utilizzo nativo in linea per i destinatari di Microsoft 365. Tutti gli altri destinatari possono leggere il messaggio dal portale OME (non è necessario alcun download o app).|
-|*Autorizzazioni per gli allegati*           |Nessuna restrizione sugli allegati|Gli allegati sono protetti|Gli allegati sono protetti per l'opzione non inoltrare e i modelli personalizzati. Gli amministratori possono scegliere se gli allegati per l'opzione solo crittografia sono protetti o meno.|
+|*Autorizzazioni per gli allegati*           |Nessuna restrizione sugli allegati|Gli allegati sono protetti|Gli allegati sono protetti per l'opzione non inoltrare e i modelli personalizzati. Gli amministratori possono scegliere se gli allegati per l'opzione Encrypt-Only sono protetti o meno.|
 |*Fornire il supporto per la chiave personale (BYOK)*|Nessuno                |Nessuno               |BYOK supportato          |
 ||
 
@@ -51,13 +51,13 @@ In questo articolo viene confrontato legacy Office 365 Message Encryption (OME) 
 
 Le nuove funzionalità offrono i vantaggi seguenti:
 
-- Possibilità di utilizzare solo crittografia (che consente la collaborazione sicura), non inoltrare e restrizioni personalizzate.
+- Possibilità di utilizzare Encrypt-Only (che consente la collaborazione sicura), non inoltrare e restrizioni personalizzate.
 - I mittenti possono inviare messaggi di posta elettronica crittografati con le nuove funzionalità manualmente da Outlook desktop, Outlook per Mac e Outlook sul Web client.
 - Microsoft 365 Recipients Get to use an inline Experience nei client Outlook supportati. In alternativa, gli amministratori possono scegliere di mostrare ai destinatari Microsoft 365 un'esperienza di marca.
 - Gli account esterni a Microsoft 365, ad esempio Gmail, Yahoo e gli account Microsoft, sono federati con il portale OME, che offre un'esperienza utente migliore per questi destinatari. Tutte le altre identità utilizzano un codice Pass una tantum per accedere ai messaggi crittografati.
 - Gli amministratori possono personalizzare la personalizzazione e creare modelli di branding multipli.
 - Gli amministratori possono revocare i messaggi di posta elettronica crittografati con le nuove funzionalità.
-- Le nuove funzionalità forniscono rapporti di utilizzo dettagliati tramite &amp; il Centro sicurezza e conformità.
+- Le nuove funzionalità forniscono rapporti di utilizzo dettagliati tramite il Centro sicurezza e &amp; conformità.
 
 ## <a name="office-365-advanced-message-encryption-capabilities"></a>Funzionalità di crittografia dei messaggi avanzate di Office 365
 
@@ -75,21 +75,19 @@ Per informazioni sull'utilizzo della crittografia avanzata dei messaggi, vedere 
 
 ## <a name="unique-characteristics-of-office-365-message-encryption-in-a-gcc-high-deployment"></a>Caratteristiche esclusive della crittografia dei messaggi di Office 365 in una distribuzione ad alta GCC
 
-La crittografia avanzata dei messaggi di Office 365 non è disponibile in un ambiente GCC High. È comunque possibile utilizzare e personalizzare un singolo modello di marca in un ambiente GCC High.
+Se si prevede di utilizzare la crittografia dei messaggi di Office 365 in un ambiente GCC High, esistono alcune caratteristiche uniche relative all'esperienza del destinatario.
 
-Inoltre, se si prevede di usare la crittografia dei messaggi di Office 365 in un ambiente GCC High, esistono alcune caratteristiche uniche relative all'esperienza del destinatario.
-
-### <a name="encrypted-email-from-gcc-high-to-gcc-high-recipients"></a>Messaggi di posta elettronica crittografati da GCC High a GCC High Recipients
+### <a name="encrypted-email-between-gcc-high-and-gcc-high-recipients"></a>Messaggi di posta elettronica crittografati tra GCC High e GCC High Recipients
 
 I mittenti possono crittografare manualmente i messaggi di posta elettronica in Outlook per PC e Mac e Outlook sul Web, oppure le organizzazioni possono configurare un criterio per crittografare i messaggi di posta elettronica utilizzando le regole del flusso del messaggio di Exchange.
 
 I destinatari all'interno di GCC High ricevono la stessa esperienza di lettura in linea in Outlook per PC e Mac e Outlook sul Web come tutti gli altri utenti.
 
-### <a name="encrypted-email-from-gcc-high-to-non-gcc-high-recipients"></a>Messaggi di posta elettronica crittografati da GCC High a destinatari non GCC alti
+### <a name="encrypted-email-between-gcc-high-and-non-gcc-high-recipients"></a>Messaggi di posta elettronica crittografati tra i destinatari High GCC e non GCC
 
-I mittenti all'interno di GCC High possono inviare messaggi di posta elettronica crittografati all'esterno del limite alto GCC.
+I mittenti all'interno di GCC High possono inviare messaggi di posta elettronica crittografati all'esterno del limite alto GCC e viceversa.
 
-Tutti i destinatari esterni a GCC High, compresi gli utenti commerciali di Microsoft 365, gli utenti di Outlook.com e altri utenti di altri provider di posta elettronica, come Gmail e Yahoo, ricevono un messaggio di posta elettronica wrapper. Questo indirizzo di posta elettronica del wrapper reindirizza il destinatario al portale OME in cui il destinatario può leggere e rispondere al messaggio.
+Tutti i destinatari esterni a GCC High, compresi gli utenti commerciali di Microsoft 365, gli utenti di Outlook.com e altri utenti di altri provider di posta elettronica, come Gmail e Yahoo, ricevono un messaggio di posta elettronica wrapper. Questo indirizzo di posta elettronica del wrapper reindirizza il destinatario al portale OME in cui il destinatario può leggere e rispondere al messaggio. Questo vale anche per i mittenti all'esterno della posta elettronica crittografata ad alto livello di GCC.
 
 ## <a name="coexistence-of-legacy-ome-and-the-new-capabilities-in-the-same-tenant"></a>Coesistenza di OME legacy e nuove funzionalità nello stesso tenant
 
