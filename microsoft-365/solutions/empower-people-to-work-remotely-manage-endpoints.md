@@ -17,20 +17,20 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Usare Microsoft Endpoint Manager per gestire dispositivi, PC e altri endpoint.
-ms.openlocfilehash: b50279166b313742dbfbe8e75dd9788aac6b1daa
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: 72aa26c50f5d3c20409382f19d8beabb5d290023
+ms.sourcegitcommit: 554755bc9ce40228ce6e34bde6fc6e226869b6a1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48445966"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48681481"
 ---
 # <a name="step-4-deploy-endpoint-management-for-your-devices-pcs-and-other-endpoints"></a>Passaggio 4. Distribuire la gestione degli endpoint per dispositivi, PC e altri endpoint
 
 Con i lavoratori remoti, è necessario supportare un numero crescente di dispositivi personali. La gestione degli endpoint è un approccio alla sicurezza basato su criteri che richiede che i dispositivi siano conformi a criteri specifici prima che gli venga consentito l'accesso alle risorse. Microsoft Endpoint Manager offre strumenti moderni per la gestione che garantiscono la sicurezza dei dati sia nel cloud sia in locale. 
 
-Endpoint Manager include servizi e strumenti che consentono di gestire dispositivi mobili, computer desktop, macchine virtuali, dispositivi incorporati e server combinando i servizi seguenti, probabilmente già noti e usati.
+[Microsoft Endpoint Manager](https://docs.microsoft.com/mem/endpoint-manager-overview) include servizi e strumenti che consentono di gestire dispositivi mobili, computer desktop, macchine virtuali, dispositivi incorporati e server combinando i servizi seguenti, probabilmente già noti e usati.
 
-![I componenti per la gestione degli endpoint](../media/empower-people-to-work-remotely/endpoint-managment-step-grid.png)
+![Componenti di gestione degli endpoint per Microsoft 365](../media/empower-people-to-work-remotely/endpoint-managment-step-grid.png)
 
 ## <a name="microsoft-intune"></a>Microsoft Intune
 
@@ -58,13 +58,13 @@ Per altre informazioni, vedere questa [panoramica della co-gestione](https://doc
 
 ## <a name="desktop-analytics"></a>Desktop Analytics
 
-Desktop Analytics è un servizio basato sul cloud che si integra con Configuration Manager e fornisce dati analitici e intelligence utili per prendere decisioni informate sui client Windows. Combina i dati dell'organizzazione con i dati aggregati di milioni di dispositivi connessi ai servizi cloud Microsoft. 
+Desktop Analytics è un servizio basato sul cloud che si integra con Configuration Manager e fornisce dati analitici e intelligence utili per prendere decisioni informate sui client Windows. Combina i dati dell'organizzazione con i dati aggregati di milioni di altri dispositivi connessi ai servizi cloud Microsoft. 
 
 Con Desktop Analytics, è possibile:
 
 - Creare un inventario delle app eseguite nell'organizzazione.
 - Valutare la compatibilità delle app con gli aggiornamenti delle caratteristiche più recenti di Windows 10.
-- Individuare i problemi di compatibilità e ricevere suggerimenti di mitigazione in base alle informazioni sui dati abilitati per il cloud.
+- Individuare i problemi di compatibilità e ricevere suggerimenti di mitigazione in base alle informazioni dettagliate sui dati abilitati per il cloud.
 - Creare gruppi pilota che rappresentino l'intera applicazione e le proprietà del driver in un insieme minimo di dispositivi.
 - Distribuire Windows 10 ai dispositivi pilota e gestiti dalla produzione.
 
@@ -83,9 +83,7 @@ Per altre informazioni, vedere questa [panoramica di Windows Autopilot](https://
 
 ## <a name="admin-technical-resources-for-endpoint-management"></a>Risorse amministrative tecniche per la gestione degli endpoint
 
-- [Il video parte 3 sulla gestione dei dispositivi Windows 10 per i lavoratori remoti](https://resources.techcommunity.microsoft.com/enabling-remote-work/#security)
-- [Il video parte 5 sulla gestione dei desktop e browser dell'utente per lavoratori remoti](https://resources.techcommunity.microsoft.com/enabling-remote-work/#security)
-- [Distribuzione di un'infrastruttura di mobilità per Microsoft 365](https://docs.microsoft.com/microsoft-365/enterprise/mobility-infrastructure)
+- [Roadmap di gestione dei dispositivi per Microsoft 365](../enterprise/device-management-roadmap-microsoft-365.md)
 - [Come registrare tipi diversi di dispositivi per la gestione di dispositivi mobili](https://docs.microsoft.com/mem/intune/enrollment/device-enrollment)
 - [Come formare gli utenti finali su Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/end-user-educate)
  

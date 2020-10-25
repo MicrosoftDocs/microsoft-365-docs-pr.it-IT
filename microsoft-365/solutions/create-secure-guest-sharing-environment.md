@@ -16,12 +16,12 @@ ms.custom:
 localization_priority: Priority
 f1.keywords: NOCSH
 description: Questo articolo offre informazioni sulle opzioni disponibili per creare un ambiente di condivisione guest sicuro in Microsoft 365.
-ms.openlocfilehash: 227c609329ae3cca4cc38e65984f1036bfe41068
-ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
+ms.openlocfilehash: d80dd00369b851768849e846449799ff443957f3
+ms.sourcegitcommit: 554755bc9ce40228ce6e34bde6fc6e226869b6a1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46527931"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48681573"
 ---
 # <a name="create-a-secure-guest-sharing-environment"></a>Creare un ambiente di condivisione guest sicuro
 
@@ -165,7 +165,7 @@ Per limitare i guest al solo accesso Web
 9. Nel pannello **Applicazioni cloud o azioni** fare clic su **Fatto**.
 10. In **Assegnazioni** fare clic su **Condizioni**.
 11. Nel pannello **Condizioni** fare clic su **App client**.
-12. Nel pannello **App client** fare clic su **Sì** per **Configura** e quindi selezionare le impostazioni **App per dispositivi mobili e client desktop** e **Client con autenticazione moderna**.</br>
+12. Nel pannello **App client** fare clic su **Sì** per **Configura** e quindi selezionare le impostazioni **App per dispositivi mobili e client desktop**.</br>
     ![Screenshot delle impostazioni per le app client dell'accesso condizionale di Azure AD](../media/azure-ad-conditional-access-client-mobile.png)
 13. Fare clic su **Fatto** e quindi sul pannello **Condizioni** fare di nuovo clic su **Fatto**.
 14. In **Controlli di accesso** fare clic su **Concedi**.

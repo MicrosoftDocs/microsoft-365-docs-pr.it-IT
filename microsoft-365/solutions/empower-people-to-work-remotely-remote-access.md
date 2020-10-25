@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Assicurarsi che i lavoratori remoti possano accedere alle risorse locali e ottimizzare l'accesso ai servizi cloud di Microsoft 365.
-ms.openlocfilehash: 0e44dad5172672cbe06c0690bcfee27ea153c6c3
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: 1fbb1cb6ad9817f0e167ae95f9fc113ecdee4221
+ms.sourcegitcommit: 554755bc9ce40228ce6e34bde6fc6e226869b6a1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48445990"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48681421"
 ---
 # <a name="step-2-provide-remote-access-to-on-premises-apps-and-services"></a>Passaggio 2. Fornire l'accesso remoto alle app e ai servizi locali.
 
@@ -30,17 +30,18 @@ Se l'organizzazione usa una VPN di accesso remoto, in genere con server VPN nel 
 
 Se gli utenti non scelgono una soluzione VPN, è possibile usare il proxy di applicazione di Azure Active Directory (Azure AD) e la VPN da punto a sito (point-to-site) di Azure per fornire l'accesso, nel caso in cui tutte le app siano basate sul Web.
 
-Esistono tre tipi di configurazione principali:
+Ecco le configurazioni principali di accesso remoto:
 
-1. Configurazione con soluzione VPN di accesso remoto.
-2. Configurazione senza soluzione VPN di accesso remoto, bensì con identità ibrida e accesso remoto necessario solo alle app locali basate sul Web.
-3. Configurazione senza soluzione VPN di accesso remoto e accesso necessario alle app locali, alcuni delle quali non basate sul Web.
+- Configurazione con soluzione VPN di accesso remoto.
+- Configurazione senza soluzione VPN di accesso remoto e uso del computer personale da parte dei lavoratori remoti.
+- Configurazione senza soluzione VPN di accesso remoto, bensì con identità ibrida e accesso remoto necessario solo alle app locali basate sul Web.
+- Configurazione senza soluzione VPN di accesso remoto e accesso necessario alle app locali, alcuni delle quali non basate sul Web.
 
 Vedere questo diagramma di flusso per le opzioni di configurazione di accesso remoto descritte in questo articolo.
 
 ![Diagramma di flusso della configurazione di accesso remoto](../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-flowchart.png)
 
-Grazie alle connessioni di accesso remoto, è anche possibile usare il [Desktop remoto](https://support.microsoft.com/help/4028379/windows-10-how-to-use-remote-desktop) per connettere gli utenti a un PC locale. Ad esempio, un lavoratore remoto può usare il Desktop remoto per connettersi al PC che si trova in ufficio dal proprio dispositivo Windows, iOS o Android. Una volta che il lavoratore si sarà connesso in remoto, sarà come lavorare davanti al proprio PC in ufficio.
+Grazie alle connessioni di accesso remoto, è anche possibile usare il [Desktop remoto](https://support.microsoft.com/help/4028379/windows-10-how-to-use-remote-desktop) per connettere gli utenti a un PC locale. Ad esempio, un lavoratore remoto può usare il Desktop remoto per connettersi al PC dell'ufficio dal proprio dispositivo Windows, iOS o Android. Una volta che il lavoratore si sarà connesso in remoto, sarà come lavorare davanti al proprio PC in ufficio.
 
 ## <a name="optimize-performance-for-remote-access-vpn-clients-to-microsoft-365-cloud-services"></a>Ottimizzare le prestazioni per i client VPN di accesso remoto verso i servizi basati nel cloud di Microsoft 365
 
@@ -54,7 +55,9 @@ Il traffico di Microsoft 365 deve avere un percorso indiretto nell'organizzazion
 
 Grazie alla modalità split tunneling, è possibile configurare il client VPN per escludere tipi specifici di traffico da inviare tramite la connessione VPN alla rete dell'organizzazione.
 
-Per ottimizzare l'accesso alle risorse cloud di Microsoft 365, configurare i client VPN di split tunneling per escludere il traffico agli endpoint di Microsoft 365 di categoria **Ottimizzazione** tramite connessione VPN. Per altre informazioni, vedere [Categorie di endpoint di Office 365](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-network-connectivity-principles#new-office-365-endpoint-categories). Vedere l'elenco degli endpoint di categoria Ottimizzazione [qui](https://docs.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges).
+Per ottimizzare l'accesso alle risorse cloud di Microsoft 365, configurare i client VPN di split tunneling per escludere il traffico agli endpoint di Microsoft 365 di categoria **Ottimizzazione** tramite connessione VPN. Per altre informazioni, vedere [Categorie di endpoint di Office 365](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-network-connectivity-principles#new-office-365-endpoint-categories). Consultare l'[elenco](https://docs.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges) degli endpoint di categoria Ottimizzazione.
+
+Ecco il conseguente flusso di traffico, in cui la maggior parte del traffico per le app cloud di Microsoft 365 evita la connessione VPN.
 
 ![Traffico di rete dai client VPN con tunneling](../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-after-tunneling.png)
 
@@ -64,13 +67,13 @@ Per informazioni dettagliate e per materiale sussidiario, consultare [Ottimizzar
 
 ## <a name="deploy-remote-access-when-all-your-apps-are-web-apps-and-you-have-hybrid-identity"></a>Distribuire l'accesso remoto quando si dispone solo di app Web e di un'identità ibrida
 
-Se i lavoratori remoti non usano un client VPN tradizionale e gli account utente, nonché i gruppi locali, sono sincronizzati con Azure AD, è possibile usare il proxy di applicazione di Azure AD per fornire accesso remoto sicuro alle applicazioni basate sul Web ospitate nei server intranet. Le applicazioni basate sul Web includono i siti di SharePoint, i server di Outlook Web Access o qualsiasi altra applicazione aziendale basata sul Web. 
+Se i lavoratori remoti non usano un client VPN tradizionale e gli account utente e i gruppi locali sono sincronizzati con Azure AD, è possibile usare il proxy di applicazione di Azure AD per fornire accesso remoto sicuro alle applicazioni basate sul Web ospitate nei server locali. Le applicazioni basate sul Web includono i siti di SharePoint Server, i server di Outlook Web Access o qualsiasi altra applicazione aziendale basata sul Web. 
 
 Di seguito sono elencati i componenti del proxy di applicazione di Azure AD.
 
 ![Componenti del proxy di applicazione di Azure AD](../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-application-proxy.png)
 
-Per altre informazioni, vedere questa [Panoramica del proxy di applicazioni di Azure AD](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy) e il [Video della parte 3 del proxy di applicazioni di Azure AD](https://resources.techcommunity.microsoft.com/enabling-remote-work/#security).
+Per altre informazioni, vedere la [panoramica sul proxy di applicazione di Azure AD](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy).
 
 >[!Note]
 >Il proxy di applicazione di Azure AD non è incluso in un abbonamento a Microsoft 365. È necessario pagare per l'uso con un abbonamento di Azure diverso.
@@ -78,7 +81,7 @@ Per altre informazioni, vedere questa [Panoramica del proxy di applicazioni di A
 
 ## <a name="deploy-remote-access-when-not-all-your-apps-are-web-apps"></a>Distribuire l'accesso remoto quando le app non sono solo app Web
 
-Se i lavoratori remoti non usano un client VPN tradizionale e le app non sono basate sul Web, è possibile usare una VPN da punto a sito (point-to-site) di Azure.
+Se i lavoratori remoti non usano un client VPN tradizionale e le app non sono basate sul Web, è possibile usare una VPN da punto a sito (point-to-site) P2S di Azure.
 
 Una VPN da punto a sito stabilisce una connessione sicura dal dispositivo di un lavoratore remoto alla rete dell'organizzazione tramite una rete virtuale di Azure. 
 
@@ -96,10 +99,7 @@ Per assistere i lavoratori remoti che possono usare solo i propri dispositivi pe
 
 ![Componenti di Azure Windows Virtual Desktop](../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-windows-virtual-desktop.png)
 
-Per altre informazioni, vedere: 
-
-- Per altre informazioni, vedere la [panoramica su Windows Virtual Desktop](https://docs.microsoft.com/azure/virtual-desktop/overview).
-- [Il video della parte 2 sull'uso di Windows Virtual Desktop per i lavoratori remoti](https://resources.techcommunity.microsoft.com/enabling-remote-work/#productivity).
+Per altre informazioni, vedere la [panoramica sul Desktop virtuale Windows](https://docs.microsoft.com/azure/virtual-desktop/overview). 
 
 >[!Note]
 >Windows Virtual Desktop non è incluso in un abbonamento a Microsoft 365. È necessario pagare per l'uso con un abbonamento di Azure diverso.
@@ -107,7 +107,7 @@ Per altre informazioni, vedere:
 
 ## <a name="protect-your-remote-desktop-services-connections-with-the-remote-desktop-services-gateway"></a>Proteggere le connessioni dei servizi del desktop remoto con il gateway Servizi del desktop remoto
 
-Se si usa Servizi del desktop remoto (SDR) per consentire ai dipendenti di entrare in un computer con Windows in una rete locale, è consigliabile usare un gateway di Servizi del desktop remoto di Microsoft nella rete perimetrale. Il gateway usa Secure Sockets Layer (SSL) per crittografare le comunicazioni ed evita che il sistema che ospita i SDR sia direttamente connesso a Internet.
+Se si usa Servizi del desktop remoto (SDR) per consentire ai dipendenti di entrare in un computer con Windows in una rete locale, è consigliabile usare un gateway di Servizi del desktop remoto di Microsoft nella rete perimetrale. Il gateway usa il protocollo SSL (Secure Sockets Layer) per crittografare le comunicazioni ed evita che il computer locale che ospita i RDS sia direttamente connesso a Internet.
 
 ![Proteggere le connessioni dei Servizi del desktop remoto con il gateway Servizi del desktop remoto](../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-remote-desktop.png)
 

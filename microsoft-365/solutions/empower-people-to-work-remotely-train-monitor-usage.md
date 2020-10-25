@@ -5,7 +5,6 @@ f1.keywords:
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 05/01/2020
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -18,20 +17,20 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Formare gli utenti e garantire che i problemi vengano gestiti in modo rapido.
-ms.openlocfilehash: b1dd55febcd23f6bb8413b0aa5c625f4b785babb
-ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
+ms.openlocfilehash: a987a08b2ebd27f7a9cc299e5c8fbae0376437a3
+ms.sourcegitcommit: 554755bc9ce40228ce6e34bde6fc6e226869b6a1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48377070"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48681385"
 ---
 # <a name="step-6-train-remote-workers-and-address-usage-feedback"></a>Passaggio 6: formare i lavoratori remoti e rispondere al feedback sull'utilizzo
 
 Formare i lavoratori remoti su:
 
 - Corrette procedure di accesso tramite MFA, inclusa la registrazione di un metodo di verifica aggiuntivo.
-- Uso dei dispositivi e modo in cui è possibile usare i criteri di gestione degli endpoint per bloccare l'accesso per dispositivi non conformi.
-- Uso delle app consentite e modo in cui è possibile usare i criteri per le applicazioni di gestione degli endpoint per bloccare le app.
+- Uso dei dispositivi e modo in cui è possibile usare i criteri di gestione degli endpoint per bloccare l'accesso per dispositivi non conformi o non gestiti.
+- Uso delle app consentite e modo in cui è possibile usare i criteri per le applicazioni di gestione degli endpoint per bloccare alcune app.
 - Funzionalità di sicurezza di Windows 10 Enterprise.
 - Come usare [Teams](https://docs.microsoft.com/microsoftteams/training-microsoft-teams-landing-page) per chat, videoconferenze, condivisione di documenti e conversazioni in thread.
 - Come usare [Outlook](https://support.office.com/article/outlook-training-8a5b816d-9052-4190-a5eb-494512343cca) per la posta elettronica e la pianificazione.
@@ -39,14 +38,16 @@ Formare i lavoratori remoti su:
 
 Questa formazione dovrebbe includere esercizi pratici in modo che i lavoratori possano sperimentare queste funzionalità e i loro risultati.
 
+Creare un forum in cui i lavoratori remoti possono fare domande o risolvere i problemi, ad esempio un team o un gruppo di Yammer.
+
 Nelle settimane successive alla formazione:
 
-- Rispondere rapidamente al feedback dei lavoratori remoti e ottimizzare i criteri e le configurazioni.
-- Analizzare l'utilizzo di Teams, posta elettronica, siti di SharePoint e cartelle di OneDrive e confrontarlo con le aspettative di utilizzo.
+- Rispondere rapidamente ai feedback dei lavoratori remoti nel forum e correggere i criteri e le configurazioni dei lavoratori remoti, se necessario.
+- Analizzare l'utilizzo di Teams, posta elettronica, siti di SharePoint e cartelle di OneDrive e confrontarlo con le aspettative di adozione degli utenti.
 
 Ripetere quindi la formazione degli utenti se necessario.
 
 ## <a name="results-of-step-6"></a>Risultati del Passaggio 6
 
-I lavoratori remoti hanno ricevuto la formazione e hanno a disposizione un forum aperto e reattivo per fornire feedback e pubblicare problemi con accesso remoto e app e servizi di produttività.
+I lavoratori remoti hanno ricevuto la formazione e hanno a disposizione un forum aperto e reattivo per fornire feedback e pubblicare problemi con accesso remoto e app di produttività.
 

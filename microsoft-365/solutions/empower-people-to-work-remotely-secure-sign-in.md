@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: È necessario che l'utente remoto acceda con l'autenticazione a più fattori (MFA).
-ms.openlocfilehash: 7f24402dcedd4b544c5e6d8af2a0e18d3b62da27
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: aa9b122ca18c4d8a8123914ee2d29d41c9ec789e
+ms.sourcegitcommit: 554755bc9ce40228ce6e34bde6fc6e226869b6a1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48445931"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48681457"
 ---
 # <a name="step-1-increase-sign-in-security-for-remote-workers-with-mfa"></a>Passaggio 1. Aumentare la sicurezza di accesso per i lavoratori remoti con la MFA.
 
@@ -38,12 +38,12 @@ Sono disponibili tre modi per richiedere agli utenti di utilizzare la MFA in bas
 |---------|---------|
 |Tutti i piani di Microsoft 365 (senza licenze di Azure AD Premium P1 o P2)     |[Abilitare le impostazioni predefinite di sicurezza in Azure AD](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults). Le impostazioni predefinite di sicurezza in Azure AD includono la MFA per utenti e amministratori.   |
 |Microsoft 365 E3 (include le licenze di Azure AD Premium P1)     | Usare i [criteri comuni di accesso condizionale](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-policy-common) per configurare i criteri seguenti: <br>- [Richiedere la MFA per amministratori](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-admin-mfa) <br>- [Richiedere la MFA per tutti gli utenti](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa) <br> - [Bloccare l'autenticazione legacy](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-block-legacy)       |
-|Microsoft 365 E5 (include le licenze di Azure AD Premium P2)     | Sfruttando Azure AD Identity Protection, iniziare a implementare il [set raccomandato di accesso condizionale e criteri correlati](../security/office-365-security/identity-access-policies.md) di Microsoft creando questi due criteri:<br> - [Richiedere la MFA quando il rischio di accesso è considerato *medio* o *elevato*](../security/office-365-security/identity-access-policies.md#require-mfa-based-on-sign-in-risk) <br>- [Bloccare i client che non supportano l'autenticazione moderna](../security/office-365-security/identity-access-policies.md#block-clients-that-dont-support-modern-authentication)<br>- [Gli utenti a rischio elevato devono modificare la password](../security/office-365-security/identity-access-policies.md#high-risk-users-must-change-password)       |
+|Microsoft 365 E5 (include le licenze di Azure AD Premium P2)     | Sfruttando Azure AD Identity Protection, iniziare a implementare il [set raccomandato di accesso condizionale e criteri correlati](../security/office-365-security/identity-access-policies.md) di Microsoft creando questi criteri:<br> - [Richiedere la MFA quando il rischio di accesso è considerato *medio* o *elevato*](../security/office-365-security/identity-access-policies.md#require-mfa-based-on-sign-in-risk) <br>- [Bloccare i client che non supportano l'autenticazione moderna](../security/office-365-security/identity-access-policies.md#block-clients-that-dont-support-modern-authentication)<br>- [Gli utenti a rischio elevato devono modificare la password](../security/office-365-security/identity-access-policies.md#high-risk-users-must-change-password)       |
 | | |
 
 ## <a name="security-defaults"></a>Impostazioni predefinite per la sicurezza
 
-Le impostazioni predefinite di sicurezza sono una nuova funzionalità per gli abbonamenti a pagamento o di valutazione di Microsoft 365 e Office 365 creati dopo il 21 ottobre 2019. Questi abbonamenti hanno impostazioni predefinite di sicurezza attivate, che ***richiedono a tutti gli utenti di utilizzare la MFA con l'app Microsoft Authenticator***.
+Le impostazioni predefinite di sicurezza sono una nuova funzionalità per gli abbonamenti a pagamento o di valutazione di Microsoft 365 e Office 365 creati dopo il 21 ottobre 2019. Questi abbonamenti hanno impostazioni predefinite di sicurezza attivate, che ***richiedono a tutti gli utenti di utilizzare la MFA con l'app Microsoft Authenticator**_.
  
 Gli utenti hanno 14 giorni per registrarsi per la MFA con l'app Microsoft Authenticator dai propri smartphone, periodo che inizia dalla prima volta che accedono dopo aver abilitato le impostazioni predefinite di sicurezza. Trascorsi 14 giorni, l'utente non sarà in grado di accedere fino al completamento della registrazione della MFA.
 
@@ -75,6 +75,9 @@ Azure AD Identity Protection richiede licenze di Azure AD Premium P2, che sono i
 
 Per altre informazioni, vedere [Accesso condizionale basato sul rischio](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-risk#require-mfa-medium-or-high-sign-in-risk-users).
 
+Tramite Azure AD Identity Protection è anche possibile creare un criterio per richiedere agli utenti di iscriversi per l'autenticazione a più fattori. Per altre informazioni, vedere [Configurare i criteri di registrazione dell'autenticazione a più fattori di Azure](https://docs.microsoft.com/azure/active-directory/identity-protection/howto-identity-protection-configure-mfa-policy)
+
+
 ## <a name="using-these-methods-together"></a>Usare questi metodi insieme
 
 Tenere presente quanto segue:
@@ -88,13 +91,13 @@ Questa tabella mostra i risultati dell'abilitazione della MFA con impostazioni p
 
 | Metodo | Abilitato | Disattivato | Metodo di autenticazione aggiuntivo |
 |:-------|:-----|:-------|:-------|
-| **Impostazioni predefinite per la sicurezza**  | Non è possibile utilizzare i criteri di accesso condizionale | È possibile utilizzare i criteri di accesso condizionale | App Microsoft Authenticator |
+| _*Impostazioni predefinite per la sicurezza**  | Non è possibile utilizzare i criteri di accesso condizionale | È possibile utilizzare i criteri di accesso condizionale | App Microsoft Authenticator |
 | **Criteri di accesso condizionale** | Se alcuni sono abilitati, non è possibile abilitare le impostazioni predefinite per la sicurezza | Se sono tutti disabilitati, è possibile abilitare le impostazioni predefinite per la sicurezza  | Specificato dall'utente durante la registrazione della MFA  |
 ||||
 
 ## <a name="let-your-users-reset-their-own-passwords"></a>Consentire agli utenti di reimpostare le loro password
 
-La reimpostazione della password self-service consente agli utenti di reimpostare le proprie password senza bisogno dell'intervento del personale IT. Gli utenti possono reimpostare rapidamente le password in qualsiasi momento e da qualsiasi luogo. Guardare [questo video](https://go.microsoft.com/fwlink/?linkid=2128524) per configurare la reimpostazione della password self-service.
+La reimpostazione della password self-service consente agli utenti di reimpostare le proprie password senza bisogno dell'intervento del personale IT. Gli utenti possono reimpostare rapidamente le password in qualsiasi momento e da qualsiasi luogo. Per altre informazioni, vedere [Pianificare una distribuzione della reimpostazione della password self-service di Azure AD](https://docs.microsoft.com/azure/active-directory/authentication/howto-sspr-deployment).
 
 ## <a name="sign-in-to-saas-apps-with-azure-ad"></a>Accedere alle app SaaS con Azure AD
 
@@ -102,12 +105,9 @@ Oltre a fornire agli utenti l'autenticazione basata sul cloud, Azure AD può anc
 
 ## <a name="admin-technical-resources-for-mfa-and-identity"></a>Risorse tecniche per amministratori per MFA e identità
 
-- [MFA per Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/multi-factor-authentication-microsoft-365)
 - [5 modi principali per abilitare il lavoro remoto in Azure AD](https://techcommunity.microsoft.com/t5/azure-active-directory-identity/top-5-ways-your-azure-ad-can-help-you-enable-remote-work/ba-p/1144691)
 - [Roadmap delle identità per Microsoft 365](../enterprise/identity-roadmap-microsoft-365.md)
 - [Video di formazione su Azure Academy Azure AD](https://www.youtube.com/watch?v=pN8o0owHfI0&list=PL-V4YVm6AmwUFpC3rXr2i2piRQ708q_ia)
-- [Configurare i criteri di registrazione dell'autenticazione a più fattori di Azure](https://docs.microsoft.com/azure/active-directory/identity-protection/howto-identity-protection-configure-mfa-policy)
-- [Pianificare una distribuzione della reimpostazione della password self-service di Azure AD](https://docs.microsoft.com/azure/active-directory/authentication/howto-sspr-deployment)
 
 ## <a name="results-of-step-1"></a>Risultati del Passaggio 1
 

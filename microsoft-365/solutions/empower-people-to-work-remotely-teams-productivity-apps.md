@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Consentire agli utenti di essere produttivi con Teams, Exchange, SharePoint e altri servizi di Microsoft 365.
-ms.openlocfilehash: 879df16b379a82fcdc9478f8b3a787dd74384171
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: 57e862769533b8c076513874e7f6daafdbe836da
+ms.sourcegitcommit: 554755bc9ce40228ce6e34bde6fc6e226869b6a1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48445837"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48681409"
 ---
 # <a name="step-5-deploy-remote-worker-productivity-apps-and-services"></a>Passaggio 5. Distribuire le app e i servizi per la produttività dei lavoratori remoti
 
@@ -39,9 +39,9 @@ Per essere produttivi, le persone devono comunicare e collaborare tra loro. Devo
 
 Teams consente di chattare, fare riunioni, chiamate e collaborare in un'unica posizione. Milioni di persone svolgono il proprio lavoro ogni giorno in Teams perché riunisce tutto il necessario per lavorare in remoto in un hub per il lavoro di in team. 
 
-Usare [questo articolo](https://docs.microsoft.com/microsoftteams/support-remote-work-with-teams) per indicazioni su come supportare i lavoratori remoti con Teams. 
+Per istruzioni dettagliate, vedere [Supporto per i lavoratori remoti con Microsoft Teams](https://docs.microsoft.com/microsoftteams/support-remote-work-with-teams). 
 
-Guardare il video [Parte 1](https://resources.techcommunity.microsoft.com/enabling-remote-work/#productivity) per istruzioni e demo sull'uso di Teams per il lavoro remoto.
+Guarda il video [Abilitare il lavoro ibrido con i webcast di Microsoft Teams](https://resources.techcommunity.microsoft.com/enabling-hybrid-work/) per linee guida e demo sull'uso di Teams per il lavoro remoto.
 
 ### <a name="chat-and-conversations"></a>Chat e conversazioni
 
@@ -82,14 +82,14 @@ Per proteggere SharePoint e OneDrive, vedere [questo articolo](../security/offic
 
 ## <a name="create-and-collaborate-on-content-with-microsoft-365-apps"></a>Creare e collaborare ai contenuti con Microsoft 365 Apps
 
-Microsoft 365 Apps rappresenta l'esperienza di Office più produttiva e più sicura per le aziende, perché consente alle persone di collaborare facilmente ovunque e in qualsiasi momento. I lavoratori remoti possono collaborare a un documento con più persone contemporaneamente, visualizzare modifiche e cambiamenti in tempo reale e creare in modalità condivisa con altri su qualsiasi portatile, PC o dispositivo mobile.
+Microsoft 365 Apps rappresenta l'esperienza di Office più produttiva e sicura per le aziende, perché consente alle persone di collaborare facilmente ovunque e in qualsiasi momento. I lavoratori remoti possono collaborare a un documento con più persone contemporaneamente, visualizzare modifiche e cambiamenti in tempo reale e creare in modalità condivisa con altri su qualsiasi portatile, PC o dispositivo mobile.
 
-Vedere [questo articolo](https://docs.microsoft.com/deployoffice/deployment-guide-microsoft-365-apps) per informazioni su come pianificare, distribuire e gestire Microsoft 365 Apps nell'ambiente aziendale.
+Per altre informazioni, vedere la [Guida alla distribuzione di Microsoft 365 Apps](https://docs.microsoft.com/deployoffice/deployment-guide-microsoft-365-apps).
 
 ## <a name="admin-technical-resources-for-productivity-apps-and-services"></a>Risorse amministrative tecniche per app e servizi per la produttività
 
 - [Supporto per i lavoratori remoti con Microsoft Teams](https://docs.microsoft.com/microsoftteams/support-remote-work-with-teams)
-- [Parte 1 del video su Teams per i lavoratori remoti](https://resources.techcommunity.microsoft.com/enabling-remote-work/#productivity)
+- [Abilitare il lavoro ibrido con i webcast di Microsoft Teams](https://resources.techcommunity.microsoft.com/enabling-hybrid-work/)
 - [Download di Teams Customer Success Kit ](https://www.microsoft.com/download/details.aspx?id=54244)
 - [Strumenti per favorire l'adozione di Teams](https://docs.microsoft.com/microsoftteams/adopt-tools-and-downloads) 
 - [Creare una strategia di gestione del cambiamento per Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/change-management-strategy)

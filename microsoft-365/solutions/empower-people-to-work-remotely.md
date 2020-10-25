@@ -18,12 +18,12 @@ ms.collection:
 - M365initiative-coredeploy
 ms.custom: ''
 description: Configurare le funzionalità di sicurezza e l'infrastruttura di servizio necessarie per consentire ai lavoratori di lavorare in remoto ovunque e in qualsiasi momento.
-ms.openlocfilehash: ca5774c027eebaedd42bcca23292b89d92f1e102
-ms.sourcegitcommit: 53ff1fe6d6143b0bf011031eea9b85dc01ae4f74
+ms.openlocfilehash: 60467f0ed3cf7aa75481cb3bb49f954c32bf2e7d
+ms.sourcegitcommit: 554755bc9ce40228ce6e34bde6fc6e226869b6a1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48487745"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48681397"
 ---
 # <a name="empower-remote-workers-with-microsoft-365"></a>Aumentare la produttività dei lavoratori remoti con Microsoft 365
 
@@ -48,6 +48,7 @@ Questa soluzione include queste funzionalità chiave.
   Da qualunque parte del mondo e in qualsiasi momento, i dipendenti che lavorano a distanza possono accedere a: 
 
   - Dati e servizi basati su cloud tramite la propria sottoscrizione a Microsoft 365. 
+
   - Risorse dell'organizzazione, ad esempio quelle offerte dai data center delle applicazioni locali.
 
 - Protezione
@@ -61,15 +62,18 @@ Questa soluzione include queste funzionalità chiave.
 - Collaborazione e produttività
 
   I dipendenti che lavorano a distanza possono essere produttivi come quelli in ufficio in modi altamente collaborativi, tramite: 
+
   - Riunioni online e sessioni di chat con Teams. 
+
   - Aree di lavoro condivise per l’archiviazione di file basata su cloud, con l’accessibilità globale e la collaborazione in tempo reale di SharePoint e OneDrive.
+
   - Attività e flussi di lavoro condivisi per suddividere il lavoro e portare a termine le attività. 
 
 Per un’esperienza di accesso senza soluzione di continuità, è necessario sincronizzare gli account utente locali di Active Directory Domain Services (AD DS) con Azure Active Directory (Azure AD). Per proteggere i dispositivi Windows 10, è necessario registrarli in Intune. Ecco una panoramica generale dell'infrastruttura.
 
 ![Infrastruttura di base per i lavoratori remoti con Microsoft 365](../media/empower-people-to-work-remotely/remote-workers-basic-infrastructure.png)
 
-Per soddisfare i criteri per i lavoratori remoti, usare queste capacità e funzionalità di Microsoft 365.
+Per abilitare le capacità di Microsoft 365 per i lavoratori remoti, usare queste funzionalità di Microsoft 365.
 
 | Capacità o funzionalità | Descrizione | Licenze |
 |:-------|:-----|:-------|
@@ -86,7 +90,7 @@ Per soddisfare i criteri per i lavoratori remoti, usare queste capacità e funzi
 | Configuration Manager | Gestire installazioni, aggiornamenti e impostazioni del software nei dispositivi | Richiede licenze di Configuration Manager separate |
 | Desktop Analytics | Determinare l'adozione degli aggiornamenti dei client Windows.   | Richiede licenze di Configuration Manager separate |
 | Windows Autopilot | Impostare e preconfigurare nuovi dispositivi Windows 10 in modo da predisporli per l'uso.   | Microsoft 365 E3 o E5 |
-| Microsoft Teams, Exchange Online, SharePoint Online e OneDrive, Microsoft 365 Apps, Microsoft Power Platform, Yammer, Power Apps | Creare, comunicare e collaborare. | Microsoft 365 E3 o E5 |
+| Microsoft Teams, Exchange Online, SharePoint Online e OneDrive, Microsoft 365 Apps, Microsoft Power Platform e Yammer | Creare, comunicare e collaborare. | Microsoft 365 E3 o E5 |
 ||||
 
 Per i criteri di sicurezza e conformità, vedere [Distribuire sicurezza e conformità per i lavoratori remoti](empower-people-to-work-remotely-security-compliance.md).
@@ -97,7 +101,7 @@ Per i criteri di sicurezza e conformità, vedere [Distribuire sicurezza e confor
 
 È anche possibile scaricare il poster in formato [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/empower-remote-workers.pdf) e stamparlo in formato lettera, legale o tabloid (27,9 x 43,2 cm).
 
-Utilizzare i seguenti passaggi per proteggere e ottimizzare l'accesso ai server, ai dati e ai servizi cloud dell'organizzazione e consentire la massima produttività dei lavoratori.
+Utilizzare la procedura seguente per proteggere e ottimizzare l'accesso ai server e ai servizi cloud dell'organizzazione e massimizzare la produttività dei lavoratori remoti.
 
 1. [Aumentare la sicurezza dell'accesso con la MFA](empower-people-to-work-remotely-secure-sign-in.md)
 2. [Fornire l'accesso remoto alle app e ai servizi locali](empower-people-to-work-remotely-remote-access.md)
@@ -108,4 +112,4 @@ Utilizzare i seguenti passaggi per proteggere e ottimizzare l'accesso ai server,
 
 [![Passaggi per aumentare la produttività dei lavoratori remoti con Microsoft 365](../media/empower-people-to-work-remotely/remote-workers-step-grid.png)](empower-people-to-work-remotely-secure-sign-in.md)
 
-Per le ultime informazioni da Microsoft sul supporto dei lavoratori remoti, vedere la pagina sull'[abilitazione del lavoro remoto nel sito Microsoft Tech Community](https://resources.techcommunity.microsoft.com/enabling-remote-work/).
+Per le informazioni più recenti da Microsoft sul supporto dei lavoratori remoti, vedere [Abilitazione del lavoro ibrido nel sito di Microsoft Teams](https://resources.techcommunity.microsoft.com/enabling-hybrid-work/).
