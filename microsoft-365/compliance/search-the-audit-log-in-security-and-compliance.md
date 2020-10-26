@@ -19,16 +19,16 @@ search.appverid:
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: Usare il Centro sicurezza e conformità di Office 365 o il Centro conformità Microsoft 365 per eseguire una ricerca nel log di controllo unificato e vedere le attività di utenti e amministratori nell'organizzazione.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f1f2201d847001a5a9df4a367268f1f764367574
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: e427cb2eaa282ebac46b47c6dd97718039c12cb8
+ms.sourcegitcommit: 3cdb670f10519f7af4015731e7910954ba9f70dc
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48446639"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "48753345"
 ---
 # <a name="search-the-audit-log-in-the-compliance-center"></a>Eseguire una ricerca nel log di controllo nel Centro conformità
 
-Se è necessario verificare se un utente ha visualizzato un documento specifico o ha eliminato un elemento dalla cassetta postale, è possibile usare il Centro sicurezza e conformità per eseguire una ricerca nel log di controllo unificato e visualizzare l'attività degli utenti e degli amministratori nell'organizzazione. Perché usare un log di controllo unificato? Perché è possibile cercare i tipi seguenti di [attività di utenti e amministratori](#audited-activities) in Microsoft 365:
+Se è necessario verificare se un utente ha visualizzato un documento specifico o ha eliminato un elemento dalla cassetta postale, è possibile usare il Centro conformità Microsoft 365 per eseguire una ricerca nel log di controllo unificato e visualizzare le attività degli utenti e degli amministratori nell'organizzazione. Perché usare un log di controllo unificato? Perché è possibile cercare i tipi seguenti di [attività di utenti e amministratori](#audited-activities) in Microsoft 365:
 
 - Attività utente in SharePoint Online e OneDrive for Business
 
@@ -102,9 +102,9 @@ Prima di iniziare la ricerca nel log di controllo, tenere presente quanto segue.
 
   Per altre informazioni, vedere [Disabilitare la ricerca nel log di controllo](turn-audit-log-search-on-or-off.md).
 
-- Come indicato in precedenza, il cmdlet sottostante usato per la ricerca nel log di controllo è un cmdlet di Exchange Online, ovvero **Search-UnifiedAuditLog**. Ciò significa che è possibile usare questo cmdlet anziché la pagina **Ricerca log di controllo** nel Centro sicurezza e conformità per eseguire una ricerca nel log di controllo. È necessario eseguire questo cmdlet in una sessione remota di PowerShell connessa all'organizzazione di Exchange Online. Per altre informazioni, vedere [Search-UnifiedAuditLog](https://go.microsoft.com/fwlink/p/?linkid=834776).
+- Come indicato in precedenza, il cmdlet sottostante usato per la ricerca nel log di controllo è un cmdlet di Exchange Online, ovvero **Search-UnifiedAuditLog** . Ciò significa che è possibile usare questo cmdlet anziché la pagina **Ricerca log di controllo** nel Centro sicurezza e conformità per eseguire una ricerca nel log di controllo. È necessario eseguire questo cmdlet in una sessione remota di PowerShell connessa all'organizzazione di Exchange Online. Per altre informazioni, vedere [Search-UnifiedAuditLog](https://go.microsoft.com/fwlink/p/?linkid=834776).
 
-  Per informazioni sull'esportazione dei risultati della ricerca restituiti dal cmdlet **Search-UnifiedAuditLog** in un file CSV, vedere la sezione "Suggerimenti per l'esportazione e la visualizzazione del log di controllo in [Esportare, configurare e visualizzare i record del log di controllo ](export-view-audit-log-records.md#tips-for-exporting-and-viewing-the-audit-log).
+  Per informazioni sull'esportazione dei risultati della ricerca restituiti dal cmdlet **Search-UnifiedAuditLog** in un file CSV, vedere la sezione "Suggerimenti per l'esportazione e la visualizzazione del log di controllo in [Esportare, configurare e visualizzare i record del log di controllo](export-view-audit-log-records.md#tips-for-exporting-and-viewing-the-audit-log).
 
 - Per scaricare i dati a livello di programmazione dal log di controllo, è consigliabile usare l'API Office 365 Management Activity, invece di uno script di PowerShell. L'API Office 365 Management Activity è un servizio Web REST che è possibile utilizzare per sviluppare operazioni e soluzioni per la sicurezza e il monitoraggio della conformità per l'organizzazione. Per altre informazioni, vedere [Riferimento API Office 365 Management Activity](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference).
 
@@ -158,85 +158,85 @@ Ecco il processo per la ricerca nel log di controllo in Office 365.
 
 2. Accedere usando l'account aziendale o dell'istituto di istruzione.
 
-3. Nel riquadro sinistro del Centro sicurezza e conformità, fare clic su **Cerca**, quindi su **Ricerca log di controllo**.
+3. Nel riquadro sinistro del Centro sicurezza e conformità, fare clic su **Cerca** , quindi su **Ricerca log di controllo** .
 
-    Viene visualizzata la pagina **Ricerca log di controllo**.
+    Viene visualizzata la pagina **Ricerca log di controllo** .
 
     ![Configurare i criteri, quindi fare clic su Cerca per eseguire un report](../media/8639d09c-2843-44e4-8b4b-9f45974ff7f1.png)
 
     > [!NOTE]
-    > È necessario attivare la registrazione di controllo per poter eseguire una ricerca nel log di controllo. Se è visualizzato il collegamento **Avviare la registrazione delle attività di utenti e amministratori**, fare clic su di esso per attivare il controllo. Se questo collegamento non è visualizzato, il controllo è già stato attivato per l'organizzazione.
+    > È necessario attivare la registrazione di controllo per poter eseguire una ricerca nel log di controllo. Se è visualizzato il collegamento **Avviare la registrazione delle attività di utenti e amministratori** , fare clic su di esso per attivare il controllo. Se questo collegamento non è visualizzato, il controllo è già stato attivato per l'organizzazione.
 
 4. Configurare i criteri di ricerca seguenti: 
 
-   1. **Attività**: fare clic sull'elenco a discesa per visualizzare le attività che è possibile cercare. Le attività di utenti e amministratori sono organizzate in gruppi di attività correlate. È possibile selezionare attività specifiche oppure è possibile fare clic sul nome del gruppo di attività per selezionare tutte le attività del gruppo. È anche possibile fare clic su un'attività selezionata per annullare la selezione. Dopo aver eseguito la ricerca, vengono visualizzate solo le voci del log di controllo per le attività selezionate. Se si seleziona **Visualizza i risultati per tutte le attività**, vengono visualizzati i risultati per tutte le attività eseguite dall'utente o dal gruppo di utenti selezionato.
+   1. **Attività** : fare clic sull'elenco a discesa per visualizzare le attività che è possibile cercare. Le attività di utenti e amministratori sono organizzate in gruppi di attività correlate. È possibile selezionare attività specifiche oppure è possibile fare clic sul nome del gruppo di attività per selezionare tutte le attività del gruppo. È anche possibile fare clic su un'attività selezionata per annullare la selezione. Dopo aver eseguito la ricerca, vengono visualizzate solo le voci del log di controllo per le attività selezionate. Se si seleziona **Visualizza i risultati per tutte le attività** , vengono visualizzati i risultati per tutte le attività eseguite dall'utente o dal gruppo di utenti selezionato.
 
       Nel log di controllo vengono registrate più di 100 attività di utenti e amministratori. Fare clic sulla scheda **Attività controllate** in questo articolo per visualizzare le descrizioni delle singole attività per i vari servizi.
 
-   1. **Data inizio** e **Data fine**: per impostazione predefinita, sono selezionati gli ultimi sette giorni. Selezionare un intervallo di date e ore per visualizzare gli eventi che si sono verificati in quel periodo. La data e l'ora sono specificate in formato UTC (Coordinated Universal Time). L'intervallo massimo che è possibile specificare è 90 giorni. Se l'intervallo di date selezionato è maggiore di 90 giorni, verrà visualizzato un errore.
+   1. **Data inizio** e **Data fine** : per impostazione predefinita, sono selezionati gli ultimi sette giorni. Selezionare un intervallo di date e ore per visualizzare gli eventi che si sono verificati in quel periodo. La data e l'ora sono specificate in formato UTC (Coordinated Universal Time). L'intervallo massimo che è possibile specificare è 90 giorni. Se l'intervallo di date selezionato è maggiore di 90 giorni, verrà visualizzato un errore.
 
       > [!TIP]
-      > Se si usa l'intervallo di date massimo di 90 giorni, selezionare l'ora corrente per **Data inizio**. In caso contrario, verrà visualizzato un errore che indica che la data di inizio è precedente alla data di fine. Se è stato attivato il controllo negli ultimi 90 giorni, l'intervallo di date massimo non può iniziare prima della data in cui il controllo è stato attivato.
+      > Se si usa l'intervallo di date massimo di 90 giorni, selezionare l'ora corrente per **Data inizio** . In caso contrario, verrà visualizzato un errore che indica che la data di inizio è precedente alla data di fine. Se è stato attivato il controllo negli ultimi 90 giorni, l'intervallo di date massimo non può iniziare prima della data in cui il controllo è stato attivato.
 
-   1. **Utenti**: fare clic in questa casella e quindi selezionare uno o più utenti per cui visualizzare i risultati della ricerca. Nell'elenco di risultati vengono visualizzate le voci del log di controllo per l'attività selezionata eseguita dagli utenti specificati in questa casella. Lasciare la casella vuota per restituire le voci per tutti gli utenti (e gli account del servizio) nell'organizzazione.
+   1. **Utenti** : fare clic in questa casella e quindi selezionare uno o più utenti per cui visualizzare i risultati della ricerca. Nell'elenco di risultati vengono visualizzate le voci del log di controllo per l'attività selezionata eseguita dagli utenti specificati in questa casella. Lasciare la casella vuota per restituire le voci per tutti gli utenti (e gli account del servizio) nell'organizzazione.
 
-   1. **File, cartella o sito**: digitare alcuni o tutti i nomi di file o cartelle per cercare l'attività relativa al file o alla cartella che contiene la parola chiave specificata. È anche possibile specificare un URL di un file o una cartella. Se si utilizza un URL, assicurarsi di digitare il percorso URL completo oppure, se si digita solo una parte dell'URL, di non includere spazi o caratteri speciali.
+   1. **File, cartella o sito** : digitare alcuni o tutti i nomi di file o cartelle per cercare l'attività relativa al file o alla cartella che contiene la parola chiave specificata. È anche possibile specificare un URL di un file o una cartella. Se si utilizza un URL, assicurarsi di digitare il percorso URL completo oppure, se si digita solo una parte dell'URL, di non includere spazi o caratteri speciali.
 
       Lasciare questa casella vuota per restituire le voci per tutti i file e le cartelle nell'organizzazione.
 
       > [!TIP]
       >
-      > - Se si stanno cercando tutte le attività correlate a un **sito**, aggiungere il simbolo jolly (\*) dopo l'URL per restituire tutte le voci per quel sito; ad esempio, `"https://contoso-my.sharepoint.com/personal*"`.
+      > - Se si stanno cercando tutte le attività correlate a un **sito** , aggiungere il simbolo jolly (\*) dopo l'URL per restituire tutte le voci per quel sito; ad esempio, `"https://contoso-my.sharepoint.com/personal*"`.
       >
-      > - Se si stanno cercando tutte le attività correlate a un **file**, aggiungere il simbolo jolly (\*) prima del nome file per restituire tutte le voci per quel file; ad esempio, `"*Customer_Profitability_Sample.csv"`.
+      > - Se si stanno cercando tutte le attività correlate a un **file** , aggiungere il simbolo jolly (\*) prima del nome file per restituire tutte le voci per quel file; ad esempio, `"*Customer_Profitability_Sample.csv"`.
 
 5. Fare clic su **Cerca** per eseguire la ricerca usando i criteri di ricerca.
 
-   I risultati della ricerca vengono caricati e, dopo alcuni istanti, vengono visualizzati in **Risultati**. Al termine della ricerca, viene visualizzato il numero di risultati trovati. Nel riquadro **Risultati** verranno visualizzati al massimo 5.000 eventi in incrementi di 150 eventi. Se sono presenti più di 5.000 eventi che soddisfano i criteri di ricerca, verranno visualizzati i 5.000 eventi più recenti.
+   I risultati della ricerca vengono caricati e, dopo alcuni istanti, vengono visualizzati in **Risultati** . Al termine della ricerca, viene visualizzato il numero di risultati trovati. Nel riquadro **Risultati** verranno visualizzati al massimo 5.000 eventi in incrementi di 150 eventi. Se sono presenti più di 5.000 eventi che soddisfano i criteri di ricerca, verranno visualizzati i 5.000 eventi più recenti.
 
    ![Il numero di risultati viene visualizzato al termine della ricerca](../media/986216f1-ca2f-4747-9480-e232b5bf094c.png)
 
 #### <a name="tips-for-searching-the-audit-log"></a>Suggerimenti per la ricerca nel log di controllo
 
-- È possibile selezionare attività specifiche da cercare facendo clic sul relativo nome. In alternativa, è possibile cercare tutte le attività in un gruppo (ad esempio **Attività su file e cartelle**) facendo clic sul nome del gruppo. Se è selezionata un'attività, è possibile fare clic su di essa per annullare la selezione. È anche possibile usare la casella di ricerca per visualizzare le attività contenenti la parola chiave digitata.
+- È possibile selezionare attività specifiche da cercare facendo clic sul relativo nome. In alternativa, è possibile cercare tutte le attività in un gruppo (ad esempio **Attività su file e cartelle** ) facendo clic sul nome del gruppo. Se è selezionata un'attività, è possibile fare clic su di essa per annullare la selezione. È anche possibile usare la casella di ricerca per visualizzare le attività contenenti la parola chiave digitata.
 
   ![Fare clic sul nome del gruppo di attività per selezionare tutte le attività](../media/3cde97cb-6f35-47c0-8612-ecd9c6ac36a3.png)
 
-- È necessario selezionare **Visualizza i risultati per tutte le attività** nell'elenco **Attività** per visualizzare gli eventi del log di controllo dell'amministratore di Exchange. Gli eventi di questo log di controllo mostrano un nome di cmdlet (ad esempio, **Set-Mailbox**) nella colonna **Attività** dei risultati. Per altre informazioni, fare clic sulla scheda **Attività controllate** in questo argomento, quindi fare clic su **Attività di amministrazione di Exchange**.
+- È necessario selezionare **Visualizza i risultati per tutte le attività** nell'elenco **Attività** per visualizzare gli eventi del log di controllo dell'amministratore di Exchange. Gli eventi di questo log di controllo mostrano un nome di cmdlet (ad esempio, **Set-Mailbox** ) nella colonna **Attività** dei risultati. Per altre informazioni, fare clic sulla scheda **Attività controllate** in questo argomento, quindi fare clic su **Attività di amministrazione di Exchange** .
 
-  Allo stesso modo, esistono alcune attività di controllo che non hanno un elemento corrispondente nell'elenco **Attività**. Se si conosce il nome dell'operazione per queste attività, è possibile cercare tutte le attività, filtrare i risultati digitando il nome dell'operazione nella casella per la colonna **Attività**. Vedere [Passaggio 3: Filtrare i risultati della ricerca](#step-3-filter-the-search-results) per altre informazioni su come filtrare i risultati.
+  Allo stesso modo, esistono alcune attività di controllo che non hanno un elemento corrispondente nell'elenco **Attività** . Se si conosce il nome dell'operazione per queste attività, è possibile cercare tutte le attività, filtrare i risultati digitando il nome dell'operazione nella casella per la colonna **Attività** . Vedere [Passaggio 3: Filtrare i risultati della ricerca](#step-3-filter-the-search-results) per altre informazioni su come filtrare i risultati.
 
 - Fare clic su **Cancella** per cancellare i criteri di ricerca correnti. L'intervallo di date torna impostato sul valore predefinito corrispondente agli ultimi sette giorni. È anche possibile fare clic su **Deseleziona tutto per visualizzare i risultati per tutte le attività** per annullare tutte le attività selezionate.
 
-- Se vengono trovati 5.000 risultati, è probabile che ci siano più di 5.000 eventi che soddisfano i criteri di ricerca. È possibile perfezionare i criteri di ricerca ed eseguire di nuovo la ricerca in modo che vengano restituiti meno risultati oppure è possibile esportare tutti i risultati della ricerca selezionando **Esporta risultati** \> **Scarica tutti i risultati**.
+- Se vengono trovati 5.000 risultati, è probabile che ci siano più di 5.000 eventi che soddisfano i criteri di ricerca. È possibile perfezionare i criteri di ricerca ed eseguire di nuovo la ricerca in modo che vengano restituiti meno risultati oppure è possibile esportare tutti i risultati della ricerca selezionando **Esporta risultati** \> **Scarica tutti i risultati** .
 
 ### <a name="step-2-view-the-search-results"></a>Passaggio 2: Visualizzare i risultati della ricerca
 
-I risultati di una ricerca nel log di controllo vengono visualizzati in **Risultati** nella pagina **Ricerca log di controllo**. Come affermato in precedenza, vengono visualizzati al massimo 5.000 eventi (i più recenti) in incrementi di 150 eventi. Per visualizzare più eventi, è possibile usare la barra di scorrimento nel riquadro **Risultati** oppure è possibile premere **MAIUSC+FINE** per visualizzare i 150 eventi successivi.
+I risultati di una ricerca nel log di controllo vengono visualizzati in **Risultati** nella pagina **Ricerca log di controllo** . Come affermato in precedenza, vengono visualizzati al massimo 5.000 eventi (i più recenti) in incrementi di 150 eventi. Per visualizzare più eventi, è possibile usare la barra di scorrimento nel riquadro **Risultati** oppure è possibile premere **MAIUSC+FINE** per visualizzare i 150 eventi successivi.
 
 I risultati includono le informazioni seguenti relative a ogni evento restituito dalla ricerca:
 
-- **Data**: data e ora (in formato UTC) in cui si è verificato l'evento.
+- **Data** : data e ora (in formato UTC) in cui si è verificato l'evento.
 
-- **Indirizzo IP**: indirizzo IP del dispositivo usato durante la registrazione dell'attività. L'indirizzo IP viene visualizzato in formato IPv4 o IPv6.
+- **Indirizzo IP** : indirizzo IP del dispositivo usato durante la registrazione dell'attività. L'indirizzo IP viene visualizzato in formato IPv4 o IPv6.
 
    > [!NOTE]
   > Per alcuni servizi, il valore visualizzato in questo campo potrebbe corrispondere all'indirizzo IP di un'applicazione attendibile, ad esempio un'app di Office sul Web, che chiama il servizio per conto di un utente e non l'indirizzo IP del dispositivo usato dalla persona che ha eseguito l'attività. Inoltre, per le attività amministratore (o attività eseguite da un account di sistema) per gli eventi correlati ad Azure Active Directory, l'indirizzo IP non viene registrato e il valore visualizzato nel campo è `null`.
 
-- **Utente**: utente (o account del servizio) che ha eseguito l'azione che ha attivato l'evento.
+- **Utente** : utente (o account del servizio) che ha eseguito l'azione che ha attivato l'evento.
 
-- **Attività**: attività eseguita dall'utente. Questo valore corrisponde alle attività selezionate nell'elenco a discesa **Attività**. Per un evento del log di controllo dell'amministratore di Exchange, il valore in questa colonna è un cmdlet di Exchange.
+- **Attività** : attività eseguita dall'utente. Questo valore corrisponde alle attività selezionate nell'elenco a discesa **Attività** . Per un evento del log di controllo dell'amministratore di Exchange, il valore in questa colonna è un cmdlet di Exchange.
 
-- **Elemento**: oggetto creato o modificato come risultato dell'attività corrispondente. Ad esempio, il file che è stato visualizzato o modificato oppure l'account utente che è stato aggiornato. Non tutte le attività presentano un valore in questa colonna.
+- **Elemento** : oggetto creato o modificato come risultato dell'attività corrispondente. Ad esempio, il file che è stato visualizzato o modificato oppure l'account utente che è stato aggiornato. Non tutte le attività presentano un valore in questa colonna.
 
-- **Dettagli**: dettagli aggiuntivi su un'attività. Anche in questo caso, non tutte le attività hanno un valore.
+- **Dettagli** : dettagli aggiuntivi su un'attività. Anche in questo caso, non tutte le attività hanno un valore.
 
 > [!TIP]
 > Fare clic su un'intestazione di colonna in **Risultati** per ordinare i risultati. È possibile ordinare i risultati dalla A alla Z o dalla Z alla A. Fare clic sull'intestazione **Data** per ordinare i risultati dal meno recente al più recente o viceversa.
 
 #### <a name="view-the-details-for-a-specific-event"></a>Visualizzare i dettagli di un evento specifico
 
-È possibile visualizzare altri dettagli di un evento facendo clic sul record dell'evento nell'elenco dei risultati della ricerca. Verrà visualizzata una pagina **Dettagli** contenente le proprietà dettagliate del record dell'evento. Le proprietà visualizzate dipendono dal servizio in cui si verifica l'evento. Per visualizzare questi dettagli, fare clic su **Altre informazioni**. Per le descrizioni, vedere [Proprietà dettagliate nel log di controllo](detailed-properties-in-the-office-365-audit-log.md).
+È possibile visualizzare altri dettagli di un evento facendo clic sul record dell'evento nell'elenco dei risultati della ricerca. Verrà visualizzata una pagina **Dettagli** contenente le proprietà dettagliate del record dell'evento. Le proprietà visualizzate dipendono dal servizio in cui si verifica l'evento. Per visualizzare questi dettagli, fare clic su **Altre informazioni** . Per le descrizioni, vedere [Proprietà dettagliate nel log di controllo](detailed-properties-in-the-office-365-audit-log.md).
 
 ![Fare clic su Altre informazioni per visualizzare le proprietà dettagliate del record dell'evento del log di controllo](../media/6df582ae-d339-4735-b1a6-80914fb77a08.png)
 
@@ -248,7 +248,7 @@ Per filtrare i risultati:
 
 1. Eseguire una ricerca nel log di controllo.
 
-2. Quando vengono visualizzati i risultati, fare clic su **Filtra risultati**.
+2. Quando vengono visualizzati i risultati, fare clic su **Filtra risultati** .
 
    Sotto ogni intestazione di colonna vengono visualizzate le caselle delle parole chiave.
 
@@ -256,10 +256,10 @@ Per filtrare i risultati:
 
    ![Digitare una parola nel filtro per visualizzare gli eventi corrispondenti al filtro](../media/542dc323-a997-402c-934b-cc5e218e50bc.png)
 
-4. Per cancellare un filtro, fare clic su **X** nella casella del filtro oppure fare clic su **Nascondi filtro**.
+4. Per cancellare un filtro, fare clic su **X** nella casella del filtro oppure fare clic su **Nascondi filtro** .
 
 > [!TIP]
-> Per visualizzare gli eventi del log di controllo dell'amministratore di Exchange, digitare **-** (trattino) nella casella del filtro **Attività**. In questo modo, verranno visualizzati i nomi dei cmdlet, che sono indicati nella colonna **Attività** per gli eventi di amministrazione di Exchange. È anche possibile disporre i nomi dei cmdlet in ordine alfabetico.
+> Per visualizzare gli eventi del log di controllo dell'amministratore di Exchange, digitare **-** (trattino) nella casella del filtro **Attività** . In questo modo, verranno visualizzati i nomi dei cmdlet, che sono indicati nella colonna **Attività** per gli eventi di amministrazione di Exchange. È anche possibile disporre i nomi dei cmdlet in ordine alfabetico.
 
 ### <a name="step-4-export-the-search-results-to-a-file"></a>Passaggio 4: Esportare i risultati della ricerca in un file
 
@@ -269,9 +269,9 @@ Per filtrare i risultati:
 
 2. Fare clic su **Esporta risultati** e selezionare una delle opzioni seguenti:
 
-   - **Salva i risultati caricati**: scegliere questa opzione per esportare solo le voci visualizzate in **Risultati** nella pagina **Ricerca log di controllo**. Il file CSV che viene scaricato contiene le stesse colonne (e gli stessi dati) presenti nella pagina (Data, Utente, Attività, Elemento e Dettagli). Il file CSV contiene una colonna aggiuntiva (denominata **Altro**) con altre informazioni sulla voce del log di controllo. Poiché si stanno esportando gli stessi risultati caricati (e visualizzabili) nella pagina **Ricerca log di controllo**, verranno esportate al massimo 5.000 voci.
+   - **Salva i risultati caricati** : scegliere questa opzione per esportare solo le voci visualizzate in **Risultati** nella pagina **Ricerca log di controllo** . Il file CSV che viene scaricato contiene le stesse colonne (e gli stessi dati) presenti nella pagina (Data, Utente, Attività, Elemento e Dettagli). Il file CSV contiene una colonna aggiuntiva (denominata **Altro** ) con altre informazioni sulla voce del log di controllo. Poiché si stanno esportando gli stessi risultati caricati (e visualizzabili) nella pagina **Ricerca log di controllo** , verranno esportate al massimo 5.000 voci.
 
-   - **Scarica tutti i risultati**: scegliere questa opzione per esportare tutte le voci del log di controllo che soddisfano i criteri di ricerca. Per un ampio set di risultati della ricerca, scegliere questa opzione per scaricare tutte le voci del log di controllo oltre ai 5.000 risultati che possono essere visualizzati nella pagina **Ricerca log di controllo**. Questa opzione consente di scaricare i dati non elaborati dal log di controllo in un file CSV e include informazioni aggiuntive sulle voci del log di controllo in una colonna denominata **AuditData**. Se si sceglie questa opzione di esportazione potrebbe essere necessario più tempo per scaricare il file, in quanto il file potrebbe essere molto più grande di quello scaricato scegliendo l'altra opzione.
+   - **Scarica tutti i risultati** : scegliere questa opzione per esportare tutte le voci del log di controllo che soddisfano i criteri di ricerca. Per un ampio set di risultati della ricerca, scegliere questa opzione per scaricare tutte le voci del log di controllo oltre ai 5.000 risultati che possono essere visualizzati nella pagina **Ricerca log di controllo** . Questa opzione consente di scaricare i dati non elaborati dal log di controllo in un file CSV e include informazioni aggiuntive sulle voci del log di controllo in una colonna denominata **AuditData** . Se si sceglie questa opzione di esportazione potrebbe essere necessario più tempo per scaricare il file, in quanto il file potrebbe essere molto più grande di quello scaricato scegliendo l'altra opzione.
 
      > [!IMPORTANT]
      > È possibile scaricare al massimo 50.000 voci in un file CSV da una singola ricerca nel log di controllo. Se vengono scaricate 50.000 voci nel file CSV, è probabile che ci siano più di 50.000 eventi che soddisfano i criteri di ricerca. Per eseguire l'esportazione oltre questo limite, provare a usare un intervallo di date per ridurre il numero di voci del log di controllo. Potrebbe essere necessario eseguire più ricerche con intervalli di date più piccoli per esportare più di 50.000 voci.
@@ -282,9 +282,9 @@ Per filtrare i risultati:
 
 - Se si scaricano tutti i risultati della ricerca, il file CSV contiene una colonna denominata **AuditData** con informazioni aggiuntive su ogni evento. I dati contenuti in questa colonna sono costituiti da un oggetto JSON che contiene più proprietà del record del log di controllo. Ogni coppia *property:value* dell'oggetto JSON è separata da una virgola. È possibile usare lo strumento di trasformazione JSON nell'editor di Power Query in Excel per dividere la colonna **AuditData** in più colonne, in modo che ogni proprietà dell'oggetto JSON disponga di una colonna specifica. In questo modo è possibile ordinare e filtrare in base a una o più di queste proprietà. Per le istruzioni dettagliate sull'uso dell'editor di Power Query per trasformare l'oggetto JSON, vedere [Esportare, configurare e visualizzare i record del log di controllo](export-view-audit-log-records.md).
 
-  Dopo avere diviso la colonna **AuditData**, è possibile filtrare in base alla colonna **Operazioni** per visualizzare le proprietà dettagliate per un tipo di attività specifico.
+  Dopo avere diviso la colonna **AuditData** , è possibile filtrare in base alla colonna **Operazioni** per visualizzare le proprietà dettagliate per un tipo di attività specifico.
 
-- L'opzione **Scarica tutti i risultati** scarica i dati non elaborati dal log di controllo in un file CSV. Il file contiene nomi di colonna (CreationDate, UserIds, Operation, AuditData) diversi rispetto a quelli nel file scaricato selezionando l'opzione **Salva i risultati caricati**. Anche i valori per la stessa attività potrebbero essere diversi nei due diversi file CSV. Ad esempio, l'attività nella colonna **Azione** nel file CSV può avere un valore diverso rispetto alla versione descrittiva visualizzata nella colonna **Attività** nella pagina **Ricerca log di controllo**. I due valori potrebbero ad esempio essere MailboxLogin e Utente connesso a cassetta postale.
+- L'opzione **Scarica tutti i risultati** scarica i dati non elaborati dal log di controllo in un file CSV. Il file contiene nomi di colonna (CreationDate, UserIds, Operation, AuditData) diversi rispetto a quelli nel file scaricato selezionando l'opzione **Salva i risultati caricati** . Anche i valori per la stessa attività potrebbero essere diversi nei due diversi file CSV. Ad esempio, l'attività nella colonna **Azione** nel file CSV può avere un valore diverso rispetto alla versione descrittiva visualizzata nella colonna **Attività** nella pagina **Ricerca log di controllo** . I due valori potrebbero ad esempio essere MailboxLogin e Utente connesso a cassetta postale.
 
 - Quando si scaricano tutti i risultati di una query di ricerca che contiene eventi di diversi servizi, la colonna **AuditData** nel file CSV contiene proprietà diverse a seconda del servizio in cui è stata eseguita l'azione. Le voci dei log di controllo di Exchange e Azure AD, ad esempio, contengono una proprietà denominata **ResultStatus** che indica se l'azione è riuscita o meno. Questa proprietà non è inclusa per gli eventi di SharePoint. Analogamente, gli eventi di SharePoint hanno una proprietà che identifica l'URL del sito per le attività correlate a file e cartelle. Per ovviare a questo comportamento, è consigliabile usare ricerche diverse per esportare i risultati per le attività da un unico servizio.
 
@@ -453,7 +453,7 @@ La tabella seguente descrive le attività su file e pagine in SharePoint Online 
 |File caricato|FileUploaded|Un utente carica un documento in una cartella in un sito.|
 |Pagina visualizzata|PageViewed|Utente visualizza una pagina in un sito, ma non usa un Web browser per visualizzare i file presenti in una raccolta documenti.|
 |(nessuno)|PageViewedExtended|Elemento correlato all'attività "Pagina visualizzata" (PageViewed). Un evento PageViewedExtended viene registrato quando la stessa persona visualizza in modo continuativo una pagina Web per un periodo prolungato (fino a 3 ore). <br/><br/> Lo scopo della registrazione di eventi PageViewedExtended è di ridurre il numero di eventi PageViewed registrati quando si visualizza una pagina Web in modo continuativo. Ciò consente di ridurre il numero di record PageViewed per un'attività utente sostanzialmente identica e consente di concentrarsi sull'evento PageViewed iniziale (e più importante).|
-|Visualizzazione segnalata dal client|ClientViewSignaled|Il client di un utente (ad esempio un sito Web o un'app per dispositivi mobili) ha segnalato che la pagina indicata è stata visualizzata dall'utente. Questa attività viene spesso registrata dopo un evento PagePrefetched per una pagina. <br/><br/>**NOTA**: poiché gli eventi ClientViewSignaled sono segnalati dal client, anziché dal server, è possibile che l'evento non sia registrato dal server e che quindi non compaia nel log di controllo. È anche possibile che le informazioni nel record di controllo non siano attendibili. Tuttavia, dato che l'identità dell'utente viene convalidata mediante il token usato per creare il segnale, l'identità dell'utente riportata nel record di controllo corrispondente è accurata. |
+|Visualizzazione segnalata dal client|ClientViewSignaled|Il client di un utente (ad esempio un sito Web o un'app per dispositivi mobili) ha segnalato che la pagina indicata è stata visualizzata dall'utente. Questa attività viene spesso registrata dopo un evento PagePrefetched per una pagina. <br/><br/>**NOTA** : poiché gli eventi ClientViewSignaled sono segnalati dal client, anziché dal server, è possibile che l'evento non sia registrato dal server e che quindi non compaia nel log di controllo. È anche possibile che le informazioni nel record di controllo non siano attendibili. Tuttavia, dato che l'identità dell'utente viene convalidata mediante il token usato per creare il segnale, l'identità dell'utente riportata nel record di controllo corrispondente è accurata. |
 |(nessuno)|PagePrefetched|Il client di un utente (ad esempio un sito Web o un'app per dispositivi mobili) ha richiesto la pagina indicata per migliorare le prestazioni in caso di esplorazione da parte dell'utente. Questo evento viene registrato per indicare che il contenuto della pagina è stato servito al client dell'utente. Questo evento non indica definitivamente che l'utente è passato alla pagina. <br/><br/> Quando il contenuto della pagina viene visualizzato dal client (come richiesto dall'utente), è necessario generare un evento ClientViewSignaled. Non tutti i client supportano l'indicazione di caricamento in background, pertanto alcune attività predefinite potrebbero essere registrate come eventi PageViewed.|
 ||||
 
@@ -477,7 +477,7 @@ Sia gli eventi FilePreviewed che FileAccessed indicano che una chiamata utente h
 
 #### <a name="the-appsharepoint-user-in-audit-records"></a>Utente app\@sharepoint nei record di controllo
 
-Nei record di controllo relativi ad alcune attività di file (e altre attività correlate a SharePoint) l'utente che ha eseguito l'attività, identificato nei campi User e UserId, è app@sharepoint. Questo indica che l'utente che ha eseguito l'attività è in realtà un'applicazione. In questo caso, in SharePoint all'applicazione sono state concesse le autorizzazioni per eseguire le azioni a livello di organizzazione, ad esempio cercare un sito di SharePoint o un account di OneDrive, per conto di un utente, un amministratore o un servizio. Questo processo di assegnazione delle autorizzazioni a un'applicazione viene definito accesso di tipo *solo app di SharePoint*. Questo indica che l'autenticazione presentata a SharePoint per eseguire un'azione è stata eseguita da un'applicazione, anziché da un utente. Questo è il motivo per cui in determinati record di controllo è presente l'utente app@sharepoint. Per altre informazioni, vedere [Concedere l'accesso di tipo solo app di SharePoint](https://docs.microsoft.com/sharepoint/dev/solution-guidance/security-apponly-azureacs).
+Nei record di controllo relativi ad alcune attività di file (e altre attività correlate a SharePoint) l'utente che ha eseguito l'attività, identificato nei campi User e UserId, è app@sharepoint. Questo indica che l'utente che ha eseguito l'attività è in realtà un'applicazione. In questo caso, in SharePoint all'applicazione sono state concesse le autorizzazioni per eseguire le azioni a livello di organizzazione, ad esempio cercare un sito di SharePoint o un account di OneDrive, per conto di un utente, un amministratore o un servizio. Questo processo di assegnazione delle autorizzazioni a un'applicazione viene definito accesso di tipo *solo app di SharePoint* . Questo indica che l'autenticazione presentata a SharePoint per eseguire un'azione è stata eseguita da un'applicazione, anziché da un utente. Questo è il motivo per cui in determinati record di controllo è presente l'utente app@sharepoint. Per altre informazioni, vedere [Concedere l'accesso di tipo solo app di SharePoint](https://docs.microsoft.com/sharepoint/dev/solution-guidance/security-apponly-azureacs).
 
 Ad esempio, app@sharepoint spesso viene identificato come utente per gli eventi "La query di ricerca è stata eseguita" e "File aperto". Il motivo è che un'applicazione con accesso di tipo solo app di SharePoint nell'organizzazione esegue query di ricerca e accede ai file durante l'applicazione di criteri di conservazione a siti e account di OneDrive.
 
@@ -578,12 +578,12 @@ La tabella seguente descrive le attività di sincronizzazione file in SharePoint
 
 |Nome descrittivo|Operazione|Descrizione|
 |:-----|:-----|:-----|
-|Computer autorizzato a sincronizzare i file|ManagedSyncClientAllowed|Un utente ha stabilito una relazione di sincronizzazione con un sito. La relazione di sincronizzazione viene eseguita correttamente perché il computer dell'utente fa parte di un dominio che è stato aggiunto all'elenco dei domini (denominato *elenco destinatari attendibili*) che possono accedere alle raccolte documenti all'interno dell'organizzazione. <br/><br/> Per altre informazioni su questa funzionalità, vedere [Usare i cmdlet di Windows PowerShell per abilitare la sincronizzazione di OneDrive per i domini presenti nell'elenco Destinatari attendibili](https://go.microsoft.com/fwlink/p/?LinkID=534609).|
-|Computer non autorizzato a sincronizzare i file|UnmanagedSyncClientBlocked|L'utente prova a stabilire una relazione di sincronizzazione con un sito da un computer che non è membro del dominio dell'organizzazione o è membro di un dominio che non è stato aggiunto all'elenco dei domini (denominato *elenco Destinatari attendibili*) che possono accedere alle raccolte documenti dell'organizzazione. La relazione di sincronizzazione non è consentita e il computer dell'utente non può sincronizzare, scaricare o caricare file in una raccolta documenti. <br/><br/> Per informazioni su questa funzionalità, vedere [Usare i cmdlet di Windows PowerShell per abilitare la sincronizzazione di OneDrive per i domini presenti nell'elenco Destinatari attendibili](https://go.microsoft.com/fwlink/p/?LinkID=534609).|
+|Computer autorizzato a sincronizzare i file|ManagedSyncClientAllowed|Un utente ha stabilito una relazione di sincronizzazione con un sito. La relazione di sincronizzazione viene eseguita correttamente perché il computer dell'utente fa parte di un dominio che è stato aggiunto all'elenco dei domini (denominato *elenco destinatari attendibili* ) che possono accedere alle raccolte documenti all'interno dell'organizzazione. <br/><br/> Per altre informazioni su questa funzionalità, vedere [Usare i cmdlet di Windows PowerShell per abilitare la sincronizzazione di OneDrive per i domini presenti nell'elenco Destinatari attendibili](https://go.microsoft.com/fwlink/p/?LinkID=534609).|
+|Computer non autorizzato a sincronizzare i file|UnmanagedSyncClientBlocked|L'utente prova a stabilire una relazione di sincronizzazione con un sito da un computer che non è membro del dominio dell'organizzazione o è membro di un dominio che non è stato aggiunto all'elenco dei domini (denominato *elenco Destinatari attendibili* ) che possono accedere alle raccolte documenti dell'organizzazione. La relazione di sincronizzazione non è consentita e il computer dell'utente non può sincronizzare, scaricare o caricare file in una raccolta documenti. <br/><br/> Per informazioni su questa funzionalità, vedere [Usare i cmdlet di Windows PowerShell per abilitare la sincronizzazione di OneDrive per i domini presenti nell'elenco Destinatari attendibili](https://go.microsoft.com/fwlink/p/?LinkID=534609).|
 |File scaricati nel computer|FileSyncDownloadedFull|Un utente stabilisce una relazione di sincronizzazione e scarica i file per la prima volta nel suo computer da una raccolta documenti.|
-|Modifiche ai file scaricate nel computer|FileSyncDownloadedPartial|Un utente scarica le modifiche ai file da una raccolta documenti. Questa attività indica che le modifiche apportate ai file nella raccolta documenti sono state scaricate nel computer dell'utente. Sono state scaricate solo le modifiche perché la raccolta documenti è stata scaricata dall'utente in precedenza (come indicato dall'attività **File scaricati nel computer**).|
+|Modifiche ai file scaricate nel computer|FileSyncDownloadedPartial|Un utente scarica le modifiche ai file da una raccolta documenti. Questa attività indica che le modifiche apportate ai file nella raccolta documenti sono state scaricate nel computer dell'utente. Sono state scaricate solo le modifiche perché la raccolta documenti è stata scaricata dall'utente in precedenza (come indicato dall'attività **File scaricati nel computer** ).|
 |File caricati nella raccolta documenti|FileSyncUploadedFull|Un utente stabilisce una relazione di sincronizzazione e carica i file per la prima volta dal suo computer in una raccolta documenti.|
-|Modifiche ai file caricate nella raccolta documenti|FileSyncUploadedPartial|Un utente carica le modifiche ai file in una raccolta documenti. Questo evento indica che le modifiche apportate alla versione locale di un file di una raccolta documenti sono state caricate nella raccolta documenti. Vengono caricate solo le modifiche perché i file sono stati caricati dall'utente in precedenza (come indicato dall'attività **File caricati nella raccolta documenti**).|
+|Modifiche ai file caricate nella raccolta documenti|FileSyncUploadedPartial|Un utente carica le modifiche ai file in una raccolta documenti. Questo evento indica che le modifiche apportate alla versione locale di un file di una raccolta documenti sono state caricate nella raccolta documenti. Vengono caricate solo le modifiche perché i file sono stati caricati dall'utente in precedenza (come indicato dall'attività **File caricati nella raccolta documenti** ).|
 ||||
 
 ### <a name="site-permissions-activities"></a>Attività relative alle autorizzazioni del sito
@@ -601,7 +601,7 @@ La tabella seguente elenca gli eventi correlati all'assegnazione di autorizzazio
 |Impostazioni richieste di accesso modificate|WebRequestAccessModified|Le impostazioni richieste di accesso sono state modificate in un sito.|
 |Impostazione "I membri possono condividere" modificata|WebMembersCanShareModified|L'impostazione **I membri possono condividere** è stata modificata in un sito.|
 |È stato modificato un livello di autorizzazione in una raccolta siti|PermissionLevelModified|Un livello di autorizzazione è stato modificato in una raccolta siti.|
-|Autorizzazioni sito modificate|SitePermissionsModified|Un proprietario o un amministratore del sito (o un account di sistema) modifica il livello di autorizzazioni assegnato a un gruppo in un sito. Questa attività viene registrata anche se vengono rimosse tutte le autorizzazioni da un gruppo. <br/><br/> **NOTA**: questa operazione è deprecata in SharePoint Online. Per trovare gli eventi correlati, è possibile cercare altre attività relative alle autorizzazioni, ad esempio **Amministratore raccolta siti aggiunto**, **Utente o gruppo aggiunto a gruppo di SharePoint**, **Utente autorizzato a creare gruppi**, **Gruppo creato** e **Gruppo eliminato**.|
+|Autorizzazioni sito modificate|SitePermissionsModified|Un proprietario o un amministratore del sito (o un account di sistema) modifica il livello di autorizzazioni assegnato a un gruppo in un sito. Questa attività viene registrata anche se vengono rimosse tutte le autorizzazioni da un gruppo. <br/><br/> **NOTA** : questa operazione è deprecata in SharePoint Online. Per trovare gli eventi correlati, è possibile cercare altre attività relative alle autorizzazioni, ad esempio **Amministratore raccolta siti aggiunto** , **Utente o gruppo aggiunto a gruppo di SharePoint** , **Utente autorizzato a creare gruppi** , **Gruppo creato** e **Gruppo eliminato** .|
 |È stato rimosso un livello di autorizzazione dalla raccolta siti|PermissionLevelRemoved|Un livello di autorizzazione è stato rimosso da una raccolta siti.|
 |Amministratore raccolta siti rimosso|SiteCollectionAdminRemoved|Un proprietario o un amministratore della raccolta siti rimuove una persona come amministratore della raccolta siti per un sito. Anche questa attività viene registrata quando un amministratore rimuove se stesso dall'elenco degli amministratori per l'account OneDrive di un utente (modificando il profilo utente nell'interfaccia di amministrazione di SharePoint).  Per riportare questa attività nei risultati della ricerca nel log di controllo, è necessario cercare tutte le attività.|
 |Utente o gruppo rimosso dal gruppo di SharePoint|RemovedFromGroup|Un utente ha rimosso un membro o un guest da un gruppo di SharePoint. Questa operazione può essere stata intenzionale oppure è il risultato di un'altra attività, ad esempio un evento di annullamento della condivisione.|
@@ -663,7 +663,7 @@ La tabella seguente elenca le attività che possono essere registrate tramite la
 |Messaggi copiati in un'altra cartella|Copy|Un messaggio è stato copiato in un'altra cartella.|
 |Elemento della cassetta postale creato|Creare|Viene creato un elemento nella cartella Calendario, Contatti, Note o Attività nella cassetta postale; ad esempio, viene creata una nuova convocazione di riunione. La creazione, l'invio o la ricezione di un messaggio non viene controllata, così come la creazione di una cartella della cassetta postale.|
 |Creata una nuova regola della posta in arrivo in Outlook Web App|New-InboxRule|Il proprietario di una cassetta postale o un altro utente con accesso alla cassetta postale ha creato una regola di posta in arrivo in Outlook Web App.|
-|Messaggi eliminati dalla cartella Posta eliminata|SoftDelete|Un messaggio è stato eliminato definitivamente oppure è stato eliminato dalla cartella Posta eliminata. Questi elementi vengono spostati nella cartella Elementi ripristinabili. I messaggi vengono spostati nella cartella Elementi ripristinabili anche quando un utente li seleziona e preme **MAIUSC+CANC**.|
+|Messaggi eliminati dalla cartella Posta eliminata|SoftDelete|Un messaggio è stato eliminato definitivamente oppure è stato eliminato dalla cartella Posta eliminata. Questi elementi vengono spostati nella cartella Elementi ripristinabili. I messaggi vengono spostati nella cartella Elementi ripristinabili anche quando un utente li seleziona e preme **MAIUSC+CANC** .|
 |Messaggio con etichetta come record|ApplyRecordLabel|Un messaggio è stato classificato come record. Questa situazione si verifica quando un'etichetta di conservazione che classifica il contenuto come record viene applicata manualmente o automaticamente a un messaggio.|
 |Messaggi spostati in un'altra cartella|Move|Un messaggio è stato spostato in un'altra cartella.|
 |Messaggi spostati nella cartella Posta eliminata|MoveToDeletedItems|Un messaggio è stato eliminato e spostato nella cartella Posta eliminata.|
@@ -773,7 +773,7 @@ Le attività correlate a Ricerca contenuto ed eDiscovery eseguite nel centro sic
 Per un elenco e una descrizione dettagliata delle attività di eDiscovery registrate, vedere [Cercare attività di eDiscovery nel log di controllo](search-for-ediscovery-activities-in-the-audit-log.md).
 
 > [!NOTE]
-> Sono necessari fino a 30 minuti per visualizzare nei risultati della ricerca gli eventi collegati alle attività elencate in **Attività di eDiscovery** e **Attività di Advanced eDiscovery** nell'elenco a discesa **Attività**. Invece, per visualizzare nei risultati della ricerca gli eventi corrispondenti provenienti dalle attività dei cmdlet di eDiscovery sono necessarie fino a 24 ore.
+> Sono necessari fino a 30 minuti per visualizzare nei risultati della ricerca gli eventi collegati alle attività elencate in **Attività di eDiscovery** e **Attività di Advanced eDiscovery** nell'elenco a discesa **Attività** . Invece, per visualizzare nei risultati della ricerca gli eventi corrispondenti provenienti dalle attività dei cmdlet di eDiscovery sono necessarie fino a 24 ore.
 
 ### <a name="advanced-ediscovery-activities"></a>Attività di Advanced eDiscovery 
 
@@ -823,14 +823,14 @@ Per una descrizione delle attività relative alle app Turni, vedere [Eseguire ri
 
 ### <a name="yammer-activities"></a>Attività di Yammer
 
-La tabella seguente elenca le attività degli utenti e degli amministratori di Yammer registrate nel log di controllo. Per restituire le attività correlate a Yammer dal log di controllo, è necessario selezionare **Visualizza i risultati per tutte le attività** nell'elenco **Attività**. Usare le caselle dell'intervallo di date e l'elenco **Utenti** per limitare i risultati della ricerca.
+La tabella seguente elenca le attività degli utenti e degli amministratori di Yammer registrate nel log di controllo. Per restituire le attività correlate a Yammer dal log di controllo, è necessario selezionare **Visualizza i risultati per tutte le attività** nell'elenco **Attività** . Usare le caselle dell'intervallo di date e l'elenco **Utenti** per limitare i risultati della ricerca.
 
 |Nome descrittivo|Operazione|Descrizione|
 |:-----|:-----|:-----|
 |Criteri di conservazione dei dati modificati|SoftDeleteSettingsUpdated|L'amministratore verificato aggiorna l'impostazione per i criteri di conservazione dei dati di rete per l'eliminazione definitiva o l'eliminazione temporanea. Solo gli amministratori verificati possono eseguire questa operazione.|
 |Configurazione di rete modificata|NetworkConfigurationUpdated|L'amministratore di rete o verificato modifica la configurazione della rete Yammer. Imposta anche l'intervallo per l'esportazione dei dati e l'attivazione della chat.|
 |Impostazioni del profilo di rete modificate|ProcessProfileFields|L'amministratore di rete o verificato modifica le informazioni visualizzate nei profili dei membri per gli utenti della rete.|
-|Modalità per il contenuto privato modificata|SupervisorAdminToggled|L'amministratore verificato attiva o disattiva la *Modalità contenuto privato*. Questa modalità consente a un amministratore di visualizzare i post nei gruppi privati e i messaggi privati scambiati tra singoli utenti o gruppi di utenti. Solo gli amministratori verificati possono eseguire questa operazione.|
+|Modalità per il contenuto privato modificata|SupervisorAdminToggled|L'amministratore verificato attiva o disattiva la *Modalità contenuto privato* . Questa modalità consente a un amministratore di visualizzare i post nei gruppi privati e i messaggi privati scambiati tra singoli utenti o gruppi di utenti. Solo gli amministratori verificati possono eseguire questa operazione.|
 |Configurazione della sicurezza modificata|NetworkSecurityConfigurationUpdated|L'amministratore verificato aggiorna la configurazione di sicurezza della rete Yammer. Imposta anche i criteri di scadenza della password e le limitazioni per gli indirizzi IP. Solo gli amministratori verificati possono eseguire questa operazione.|
 |File creato|FileCreated|L'utente carica un file.|
 |Gruppo creato|GroupCreation|Un utente crea un gruppo.|
@@ -922,7 +922,7 @@ Dove indicato di seguito nelle descrizioni, alcune operazioni contengono paramet
 
 #### <a name="forms-activities-performed-by-coauthors-and-anonymous-responders"></a>Attività di Forms eseguite da coautori e partecipanti anonimi
 
-Forms supporta la collaborazione durante la progettazione dei moduli vengono progettati e l'analisi delle risposte. Un collaboratore di moduli è noto come *coautore*. I coautori possono eseguire tutte le operazioni eseguibili da un proprietario del modulo, tranne l'eliminazione o lo spostamento di un modulo. Forms consente anche di creare un modulo a cui è possibile rispondere in modo anonimo. Questo significa che non è necessario che il partecipante sia connesso all'organizzazione per rispondere a un modulo. 
+Forms supporta la collaborazione durante la progettazione dei moduli vengono progettati e l'analisi delle risposte. Un collaboratore di moduli è noto come *coautore* . I coautori possono eseguire tutte le operazioni eseguibili da un proprietario del modulo, tranne l'eliminazione o lo spostamento di un modulo. Forms consente anche di creare un modulo a cui è possibile rispondere in modo anonimo. Questo significa che non è necessario che il partecipante sia connesso all'organizzazione per rispondere a un modulo. 
 
 La tabella seguente descrive le attività di controllo e le informazioni del record di controllo relative alle attività eseguite dai coautori e dai partecipanti anonimi.
 
@@ -966,22 +966,22 @@ La tabella seguente elenca gli eventi risultanti dalle attività di etichettatur
 
 ### <a name="exchange-admin-audit-log"></a>Log di controllo dell'amministratore di Exchange
 
-La registrazione di controllo dell'amministratore di Exchange, abilitata per impostazione predefinita in Office 365, registra un evento nel log di controllo quando un amministratore (o un utente a cui sono state assegnate autorizzazioni amministrative) apporta una modifica nell'organizzazione di Exchange Online. Le modifiche apportate mediante l'interfaccia di amministrazione di Exchange o eseguendo un cmdlet in PowerShell per Exchange Online vengono registrate nel log di controllo di amministrazione di Exchange. I cmdlet che iniziano con **Get-**, **Search-** o **Test-** non vengono registrati nel log di controllo. Per informazioni dettagliate sulla registrazione di controllo dell'amministratore in Exchange, vedere [Registrazione di controllo dell'amministratore](https://go.microsoft.com/fwlink/p/?LinkID=619225).
+La registrazione di controllo dell'amministratore di Exchange, abilitata per impostazione predefinita in Office 365, registra un evento nel log di controllo quando un amministratore (o un utente a cui sono state assegnate autorizzazioni amministrative) apporta una modifica nell'organizzazione di Exchange Online. Le modifiche apportate mediante l'interfaccia di amministrazione di Exchange o eseguendo un cmdlet in PowerShell per Exchange Online vengono registrate nel log di controllo di amministrazione di Exchange. I cmdlet che iniziano con **Get-** , **Search-** o **Test-** non vengono registrati nel log di controllo. Per informazioni dettagliate sulla registrazione di controllo dell'amministratore in Exchange, vedere [Registrazione di controllo dell'amministratore](https://go.microsoft.com/fwlink/p/?LinkID=619225).
 
 > [!IMPORTANT]
 > Alcuni cmdlet di Exchange Online che non sono stati registrati nel log di controllo di amministrazione di Exchange o nel log di controllo. Molti di questi cmdlet sono correlati alla gestione del servizio Exchange Online e sono eseguiti dal personale del centro dati Microsoft o dagli account di servizio. Questi cmdlet non vengono registrati perché comportano un gran numero di eventi di controllo "fastidiosi". Se è presente un cmdlet di Exchange Online che non viene controllato, inviare un suggerimento al [forum UserVoice su sicurezza e conformità](https://office365.uservoice.com/forums/289138-office-365-security-compliance) e chiedere che sia abilitato per il controllo. È anche possibile inviare una richiesta di modifica della progettazione al supporto tecnico Microsoft.
 
 Di seguito sono forniti alcuni suggerimenti per la ricerca delle attività di amministrazione di Exchange durante la ricerca nel log di controllo:
 
-- Per restituire le voci dal log di controllo dell'amministratore di Exchange, è necessario selezionare **Visualizza i risultati per tutte le attività** nell'elenco **Attività**. Usare le caselle relative all'intervallo di date e l'elenco **Utenti** per limitare i risultati della ricerca per i cmdlet eseguiti da uno specifico amministratore di Exchange in un determinato intervallo di date.
+- Per restituire le voci dal log di controllo dell'amministratore di Exchange, è necessario selezionare **Visualizza i risultati per tutte le attività** nell'elenco **Attività** . Usare le caselle relative all'intervallo di date e l'elenco **Utenti** per limitare i risultati della ricerca per i cmdlet eseguiti da uno specifico amministratore di Exchange in un determinato intervallo di date.
 
-- Per visualizzare gli eventi del log di controllo dell'amministratore di Exchange, filtrare i risultati della ricerca e digitare **-** (trattino) nella casella del filtro **Attività**. In questo modo, vengono visualizzati i nomi dei cmdlet, che sono indicati nella colonna **Attività** per gli eventi di amministrazione di Exchange. È anche possibile disporre i nomi dei cmdlet in ordine alfabetico.
+- Per visualizzare gli eventi del log di controllo dell'amministratore di Exchange, filtrare i risultati della ricerca e digitare **-** (trattino) nella casella del filtro **Attività** . In questo modo, vengono visualizzati i nomi dei cmdlet, che sono indicati nella colonna **Attività** per gli eventi di amministrazione di Exchange. È anche possibile disporre i nomi dei cmdlet in ordine alfabetico.
 
   ![Digitare un trattino nella casella Attività per filtrare gli eventi di amministrazione di Exchange](../media/7628e7aa-6263-474a-a28b-2dcf5694bb27.png)
 
-- Per ottenere informazioni sul cmdlet eseguito, sui parametri e sui valori dei parametri usati e sugli oggetti interessati, è possibile esportare i risultati della ricerca e selezionare l'opzione **Scarica tutti i risultati**. Per ulteriori informazioni, vedere [Esportare, configurare e visualizzare i record del log di controllo](export-view-audit-log-records.md).
+- Per ottenere informazioni sul cmdlet eseguito, sui parametri e sui valori dei parametri usati e sugli oggetti interessati, è possibile esportare i risultati della ricerca e selezionare l'opzione **Scarica tutti i risultati** . Per ulteriori informazioni, vedere [Esportare, configurare e visualizzare i record del log di controllo](export-view-audit-log-records.md).
 
-- È anche possibile usare il comando `Search-UnifiedAuditLog -RecordType ExchangeAdmin`in PowerShell di Exchange Online per restituire solo i record di controllo del log di controllo dell'amministratore di Exchange. Dopo l'esecuzione di un cmdlet di Exchange per la voce del log di controllo corrispondente, la restituzione dei risultati della ricerca potrebbe richiedere fino a 30 minuti. Per altre informazioni, vedere [Search-UnifiedAuditLog](https://docs.microsoft.com/powershell/module/exchange/search-unifiedauditlog). Per informazioni sull'esportazione dei risultati della ricerca restituiti dal cmdlet **Search-UnifiedAuditLog** in un file CSV, vedere la sezione "Suggerimenti per l'esportazione e la visualizzazione del log di controllo in [Esportare, configurare e visualizzare i record del log di controllo ](export-view-audit-log-records.md#tips-for-exporting-and-viewing-the-audit-log).
+- È anche possibile usare il comando `Search-UnifiedAuditLog -RecordType ExchangeAdmin`in PowerShell di Exchange Online per restituire solo i record di controllo del log di controllo dell'amministratore di Exchange. Dopo l'esecuzione di un cmdlet di Exchange per la voce del log di controllo corrispondente, la restituzione dei risultati della ricerca potrebbe richiedere fino a 30 minuti. Per altre informazioni, vedere [Search-UnifiedAuditLog](https://docs.microsoft.com/powershell/module/exchange/search-unifiedauditlog). Per informazioni sull'esportazione dei risultati della ricerca restituiti dal cmdlet **Search-UnifiedAuditLog** in un file CSV, vedere la sezione "Suggerimenti per l'esportazione e la visualizzazione del log di controllo in [Esportare, configurare e visualizzare i record del log di controllo](export-view-audit-log-records.md#tips-for-exporting-and-viewing-the-audit-log).
 
 - È inoltre possibile visualizzare gli eventi nel log di controllo dell'amministratore di Exchange mediante l'interfaccia di amministrazione di Exchange o eseguendo **Search-AdminAuditLog** in PowerShell per Exchange Online. Si tratta di un ottimo metodo per cercare in modo specifico l'attività eseguita dagli amministratori di Exchange Online. Per istruzioni, vedere:
 
