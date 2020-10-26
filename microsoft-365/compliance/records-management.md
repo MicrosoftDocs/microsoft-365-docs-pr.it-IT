@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 description: Con la gestione dei record di Microsoft 365, è possibile applicare le pianificazioni di conservazione in un piano di archiviazione che gestisce la conservazione, la dichiarazione dei record e l’eliminazione.
-ms.openlocfilehash: 497e8b9fce06ae64d9f4396f2db05e65274f61dd
-ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
+ms.openlocfilehash: e6e72a14d0d3e22823c8341145f64721831586f9
+ms.sourcegitcommit: 095b1f52f2e73e8d44195916984efeb0908c2ad8
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48399003"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "48755565"
 ---
 # <a name="learn-about-records-management-in-microsoft-365"></a>Informazioni sulla gestione dei record in Microsoft 365
 
@@ -106,7 +106,6 @@ Messaggio che un utente vede se tenta di eliminare un documento con etichetta in
 > Inoltre, le etichette di conservazione configurate per i record normativi hanno le seguenti restrizioni amministrative:
 > - Il periodo di conservazione non può essere abbreviato dopo il salvataggio dell'etichetta, ma solo esteso.
 > - Queste etichette non sono supportate dai criteri di etichettatura automatica, e devono essere applicate usando i [criteri delle etichette di conservazione](create-apply-retention-labels.md). 
-> - Una volta aggiunte e salvate queste etichette in un criterio di un'etichetta di conservazione, non è possibile rimuovere le etichette dalle posizioni, ma solo aggiungere posizioni.
 > 
 > A causa di queste azioni irreversibili, assicurarsi che sia effettivamente necessario usare i record normativi prima di selezionare questa opzione per le etichette di conservazione. Per evitare la configurazione accidentale, questa opzione non è disponibile per impostazione predefinita, ma deve prima essere abilitata con PowerShell. Le istruzioni sono incluse in [Dichiarare i record usando le etichette di conservazione](declare-records.md).
 

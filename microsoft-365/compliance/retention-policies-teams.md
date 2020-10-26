@@ -17,18 +17,32 @@ search.appverid:
 - MOE150
 - MET150
 description: Informazioni sui criteri di conservazione applicabili a Microsoft Teams.
-ms.openlocfilehash: 40e68116c24622fd21bd35531ef7821d8c4b7c62
-ms.sourcegitcommit: 33afa334328cc4e3f2474abd611c1411adabd39f
+ms.openlocfilehash: 32656dc91350e5082171eb4fadd91d3a6287b9b7
+ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48370370"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "48754062"
 ---
 # <a name="learn-about-retention-for-microsoft-teams"></a>Informazioni sulla conservazione per Microsoft Teams
 
 >*[Indicazioni per l'assegnazione di licenze di Microsoft 365 per sicurezza e conformità](https://aka.ms/ComplianceSD).*
 
-Questo articolo integra [Informazioni sulla conservazione](retention.md) con informazioni specifiche per Microsoft Teams.
+Questo articolo integra [Informazioni sulla conservazione](retention.md) con informazioni specifiche per i messaggi di Microsoft Teams.
+
+Per altri carichi di lavoro, vedere:
+
+- [Informazioni sulla conservazione per SharePoint e OneDrive](retention-policies-sharepoint.md)
+- [Informazioni sulla conservazione per Yammer](retention-policies-yammer.md)
+- [Informazioni sulla conservazione per Exchange](retention-policies-exchange.md)
+
+## <a name="whats-included-for-retention-and-deletion"></a>Cosa è incluso per la conservazione e l'eliminazione
+
+Usando i criteri di conservazione per Teams è possibile conservare ed eliminare gli elementi di Teams seguenti: messaggi di chat e canali.
+
+Non sono inclusi i messaggi di Teams nei canali privati, né le reazioni degli altri utenti sotto forma di emoticon.
+
+I messaggi di posta elettronica e i file usati con Teams non sono inclusi nei criteri di conservazione per Teams. Questi elementi hanno criteri di conservazione personalizzati.
 
 ## <a name="how-retention-works-with-microsoft-teams"></a>Funzionamento della conservazione con Microsoft Teams
 
@@ -100,10 +114,6 @@ Se l’utente ha archiviato dei file in Teams, vedere la sezione [corrispondente
 ## <a name="limitations"></a>Limitazioni
 
 Lavoriamo costantemente all'ottimizzazione della funzionalità di conservazione in Teams. Nel frattempo, di seguito sono riportate alcune limitazioni da tenere presenti quando si usa la conservazione per le chat e i messaggi dei canali di Teams:
-
-- **I messaggi di Teams nei canali privati non vengono inclusi quando si configurano criteri di conservazione per i messaggi dei canali di Teams**. I canali privati non sono al momento supportati dai criteri di conservazione. 
-
-- I **Like e le altre reazioni non vengono conservate per la chat dei Team ed il canale messaggi**. Le reazioni degli altri utenti sotto forma di emoticon non sono supportate dalle politiche di conservazione.
 
 - **Problema di visualizzazione non corretta in Outlook**. Se si creano criteri di conservazione per i percorsi di Skype o Teams, uno di questi criteri viene visualizzato come criterio cartella predefinito quando un utente visualizza le proprietà di una cartella della cassetta postale nel client desktop di Outlook. Si tratta di un problema di visualizzazione non corretta in Outlook e di un [problema noto](https://support.microsoft.com/help/4491013/outlook-client-displays-teams-or-skype-for-business-retention-policies). Quello che dovrebbe essere visualizzato come criterio cartella predefinito è il criterio di conservazione della cassetta postale applicato alla cartella. Il criterio di conservazione di Skype o Teams non viene applicato alla cassetta postale dell'utente.
 

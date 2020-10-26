@@ -17,18 +17,37 @@ search.appverid:
 - MOE150
 - MET150
 description: Informazioni sul funzionamento della conservazione per SharePoint e OneDrive.
-ms.openlocfilehash: da700c72a03bad85310be8807bf94e54ec6a4048
-ms.sourcegitcommit: 916fa2dacbc13287b49823176375259d7af03f86
+ms.openlocfilehash: 31ffce3f02e273e771ca1753474bec48b66148bb
+ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/04/2020
-ms.locfileid: "47394703"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "48754140"
 ---
 # <a name="learn-about-retention-for-sharepoint-and-onedrive"></a>Informazioni sulla conservazione per SharePoint e OneDrive
 
 >*[Indicazioni per l'assegnazione di licenze di Microsoft 365 per sicurezza e conformità](https://aka.ms/ComplianceSD).*
 
 Questo articolo integra [Informazioni sulla conservazione](retention.md) con informazioni specifiche per SharePoint e OneDrive.
+
+Per altri carichi di lavoro, vedere:
+
+- [Informazioni sulla conservazione per Microsoft Teams](retention-policies-teams.md)
+- [Informazioni sulla conservazione per Yammer](retention-policies-yammer.md)
+- [Informazioni sulla conservazione per Exchange](retention-policies-exchange.md)
+
+## <a name="whats-included-for-retention-and-deletion"></a>Cosa è incluso per la conservazione e l'eliminazione
+
+È possibile conservare tutti i file archiviati in siti di SharePoint o OneDrive applicando un criterio di conservazione o un'etichetta di conservazione.
+
+È possibile eliminare i file seguenti:
+
+- Se si usa un criterio di conservazione, tutti i file nelle raccolte documenti, il che include tutte le raccolte documenti di SharePoint create automaticamente, come le **Risorse del sito**.
+    
+- Se si usano le etichette di conservazione, tutti i file in tutte le raccolte documenti e tutti i file al livello radice non contenuti in una cartella.
+    
+    Se si usa una [query KQL con un criterio di applicazione automatica per un'etichetta di conservazione](apply-retention-labels-automatically.md#auto-apply-labels-to-content-with-keywords-or-searchable-properties), è possibile escludere raccolte documenti usando la voce seguente: `NOT(DocumentLink:"<URL to document library>")`
+
 
 ## <a name="how-retention-works-for-sharepoint-and-onedrive"></a>Funzionamento della conservazione per SharePoint e OneDrive
 
@@ -68,6 +87,10 @@ Quando l'impostazione di conservazione è Conserva solo o Elimina solo, i percor
 1. **Se il contenuto viene eliminato** durante il periodo configurato: il documento viene spostato nel Cestino di primo livello. Se un utente elimina il documento da questa posizione o svuota questo Cestino, il documento viene spostato nel Cestino di secondo livello. Il periodo di conservazione per i Cestini di primo e secondo livello è di 93 giorni, dopo i quali il documento viene eliminato definitivamente dal Cestino, sia di primo che di secondo livello. Se il contenuto viene modificato durante il periodo configurato, segue lo stesso percorso di eliminazione dopo il periodo configurato.
 
 2. **Se il contenuto non viene eliminato** durante il periodo configurato: alla fine del periodo configurato nel criterio di conservazione, il documento viene spostato nel Cestino di primo livello. Se un utente elimina il documento da questa posizione o svuota questo Cestino, il documento viene spostato nel Cestino di secondo livello. Il periodo di conservazione per i Cestini di primo e secondo livello è di 93 giorni, dopo i quali il documento viene eliminato definitivamente dal Cestino, sia di primo che di secondo livello. Il Cestino non è indicizzato e quindi non è disponibile per la ricerca. Di conseguenza, una ricerca eDiscovery non può trovare alcun contenuto nel Cestino a cui applicare un blocco.
+
+## <a name="how-retention-works-for-onenote-content"></a>Funzionamento della conservazione per il contenuto di OneNote
+
+Quando si applicano criteri di conservazione a una posizione che include contenuto di OneNote, le diverse sezioni di OneNote corrispondono in effetti a file diversi. Questo significa che ogni sezione verrà conservata ed eliminata singolarmente, in base alle impostazioni di conservazione specificate.
 
 ## <a name="how-retention-works-with-document-versions-in-a-site-collection"></a>Funzionamento della conservazione con le versioni del documento in una raccolta siti
 

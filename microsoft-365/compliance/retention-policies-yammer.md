@@ -17,18 +17,30 @@ search.appverid:
 - MOE150
 - MET150
 description: Informazioni sui criteri di conservazione applicabili a Yammer.
-ms.openlocfilehash: 2918efe63947ee17cd7f55f19876ae4b98de7a8a
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 84db671b475a9dade039136380cef0bc5bde7282
+ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48204391"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "48754704"
 ---
 # <a name="learn-about-retention-for-yammer"></a>Informazioni sulla conservazione per Yammer
 
 >*[Indicazioni per l'assegnazione di licenze di Microsoft 365 per sicurezza e conformità](https://aka.ms/ComplianceSD).*
 
 Questo articolo integra [Informazioni sulla conservazione](retention.md) con informazioni specifiche per Yammer.
+
+Per altri carichi di lavoro, vedere:
+
+- [Informazioni sulla conservazione per SharePoint e OneDrive](retention-policies-sharepoint.md)
+- [Informazioni sulla conservazione per Microsoft Teams](retention-policies-teams.md)
+- [Informazioni sulla conservazione per Exchange](retention-policies-exchange.md)
+
+## <a name="whats-included-for-retention-and-deletion"></a>Cosa è incluso per la conservazione e l'eliminazione
+
+Usando i criteri di conservazione per Yammer è possibile conservare ed eliminare gli elementi di Yammer seguenti: messaggi della community e messaggi privati.
+
+Le reazioni degli altri utenti sotto forma di emoticon non sono incluse in questi messaggi.
 
 ## <a name="how-retention-works-with-yammer"></a>Funzionamento della conservazione per Yammer
 
@@ -85,9 +97,7 @@ Se l’utente ha archiviato dei file in Yammer, vedere la [sezione corrispondent
 
 ## <a name="limitations"></a>Limitazioni
 
-I criteri di conservazione di Yammer sono attualmente in anteprima, e stiamo lavorando continuamente all'ottimizzazione della funzionalità di conservazione. Nel frattempo, di seguito sono riportate alcune limitazioni da tenere presenti quando si usa la conservazione per i messaggi della community e i messaggi privati di Yammer:
-
-- I **Like e le altre reazioni non vengono conservate per i messaggi di Yammer**. Le reazioni degli altri utenti sotto forma di emoticon non sono supportate dalle politiche di conservazione.
+I criteri di conservazione di Yammer sono attualmente in anteprima, e stiamo lavorando continuamente all'ottimizzazione della funzionalità di conservazione. Nel frattempo, notare le limitazioni seguenti quando si usa la conservazione per i messaggi della community e i messaggi privati di Yammer:
 
 - Quando si seleziona **Scegli utenti** per la posizione **Messaggi privati di Yammer**, potrebbero essere visualizzati utenti non della cassetta postale e guest. I criteri di conservazione non sono pensati per questi utenti, quindi non selezionarli.
 

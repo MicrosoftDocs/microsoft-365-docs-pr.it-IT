@@ -22,12 +22,12 @@ description: Usare le etichette di riservatezza del framework Microsoft Informat
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 7b2eaf8bcfa7014e8c70f4c7efb7d859b32e5e7e
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: de123c842623d709c9360652becc8c4604b0c234
+ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48446746"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "48754096"
 ---
 # <a name="learn-about-sensitivity-labels"></a>Informazioni sulle etichette di riservatezza
 
@@ -94,6 +94,8 @@ Quando si applica un'etichetta di riservatezza a un messaggio di posta elettroni
     ![Filigrana e intestazione applicate a un documento](../media/Sensitivity-label-watermark-header.png)
     
     Se è necessario verificare se sono stati applicati contrassegni al contenuto, Vedere [Quando le app di Office applicano il contrassegno e la crittografia](sensitivity-labels-office-apps.md#when-office-apps-apply-content-marking-and-encryption).
+    
+    Alcune app, ma non tutte, supportano l'applicazione di contrassegni dinamici mediante l'uso di variabili. Ad esempio, inserire il nome dell'etichetta o il nome del documento nell'intestazione, nel piè di pagina o nella filigrana. Per altre informazioni, vedere [Contrassegni dinamici con variabili](sensitivity-labels-office-apps.md#dynamic-markings-with-variables).
     
     Lunghezza stringa: le filigrane sono limitate a 255 caratteri. Le intestazioni e i piè di pagina hanno un limite di 1024 caratteri, tranne che in Excel. Excel ha un limite totale di 255 caratteri per le intestazioni e i piè di pagina, ma questo limite include i caratteri non visibili, come i codici di formattazione. Se viene raggiunto questo limite, la stringa immessa non viene visualizzata in Excel.
 

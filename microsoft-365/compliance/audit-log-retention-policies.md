@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: I criteri di conservazione dei log di controllo fanno parte delle nuove funzionalità di Audit avanzato di Microsoft 365. Un criterio di conservazione dei log di controllo consente di specificare quanto a lungo conservare i log di controllo nell'organizzazione.
-ms.openlocfilehash: dba14d5a4132bc9c883c531ceeb83a2a8ff3c6cd
-ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
+ms.openlocfilehash: c2449ab90d04fd44909999d25b940ee4d2758b15
+ms.sourcegitcommit: 3cdb670f10519f7af4015731e7910954ba9f70dc
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48398727"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "48753335"
 ---
 # <a name="manage-audit-log-retention-policies"></a>Gestire i criteri di conservazione dei log di controllo
 
@@ -126,7 +126,11 @@ Get-UnifiedAuditLogRetentionPolicy | Sort-Object -Property Priority -Descending 
 
 Per altre informazioni, vedere [Get-UnifiedAuditLogRetentionPolicy](https://docs.microsoft.com/powershell/module/exchange/get-unifiedauditlogretentionpolicy).
 
-## <a name="more-information"></a>Altre informazioni
+## <a name="some-audit-log-retention-policies-not-supported-in-the-ui"></a>Alcuni criteri di conservazione dei log di controllo non supportati nell'interfaccia utente
+
+Se si usa il cmdlet **New-UnifiedAuditLogRetentionPolicy**, è possibile creare un criterio di conservazione dei log di controllo per i tipi di record o le attività non disponibili nello strumento **Crea criteri di conservazione dei log di controllo** del Centro conformità Microsoft 365. In questo caso non sarà possibile modificare il criterio, ad esempio modificare la durata di conservazione o aggiungere e rimuovere attività, dalla scheda **Criteri di conservazione dei log di controllo** nel centro conformità. Nel centro conformità si potrà solo visualizzare ed eliminare il criterio. Per modificarlo sarà necessario usare il cmdlet **Set-UnifiedAuditLogRetentionPolicy** in PowerShell per Centro sicurezza e conformità.
+
+## <a name="more-information"></a>Ulteriori informazioni
 
 - Usare il cmdlet **set-UnifiedAuditLogRetentionPolicy** in PowerShell per Centro sicurezza e conformità per modificare un criterio di conservazione dei log di controllo esistente. Per altre informazioni, vedere [Set-UnifiedAuditLogRetentionPolicy](https://docs.microsoft.com/powershell/module/exchange/set-unifiedauditlogretentionpolicy).
 

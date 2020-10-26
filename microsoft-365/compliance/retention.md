@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Informazioni sui criteri di conservazione e sulle etichette di conservazione, utili per conservare tutto che serve ed eliminare ciò che non serve.
-ms.openlocfilehash: fe28e51aa7d93872e5683c3682c110275ece3d54
-ms.sourcegitcommit: cdf2b8dad7db9e16afd339abaaa5397faf11807c
+ms.openlocfilehash: 089a34d1e9a002bd61e688cd3f721c6e8249c5b7
+ms.sourcegitcommit: 095b1f52f2e73e8d44195916984efeb0908c2ad8
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48651430"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "48755585"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>Informazioni sui criteri e sulle etichette di conservazione
 
@@ -278,7 +278,7 @@ Usare la tabella seguente per stabilire se usare criteri di conservazione o etic
 |Presenza nell'interfaccia utente per gli utenti finali | No | Sì |
 |Persiste se il contenuto viene spostato | No | Sì, nel tenant di Microsoft 365 |
 |Dichiarazione elemento come record| No | Sì |
-|Avviare il periodo di conservazione al momento dell'etichettatura o in base a un evento | No | Sì |
+|Avviare il periodo di conservazione: <br /> - Quando gli elementi sono stati creati o modificati per l'ultima volta<br /> - Al momento dell'etichettatura o in base a un evento | <br />Sì <br />No | <br />Sì <br /> Sì |
 |Revisione per l'eliminazione | No| Sì |
 |Prova di eliminazione per un massimo di 7 anni | No |Sì, quando l'elemento è dichiarato come record|
 |Audit delle attività dell’amministratore| Sì | Sì|

@@ -17,16 +17,30 @@ search.appverid:
 - MOE150
 - MET150
 description: Informazioni sul funzionamento della conservazione per Exchange.
-ms.openlocfilehash: e12f46b68feb4b64ade14cfb046061d89e1a607c
-ms.sourcegitcommit: 916fa2dacbc13287b49823176375259d7af03f86
+ms.openlocfilehash: 4e8a536aaa81b0117f40b0ce330491fa8430f97c
+ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/04/2020
-ms.locfileid: "47394713"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "48754436"
 ---
 # <a name="learn-about-retention-for-exchange"></a>Informazioni sulla conservazione per Exchange
 
-Questo articolo integra [Informazioni sulla conservazione](retention.md) con informazioni specifiche per Exchange.
+Questo articolo integra [Informazioni sulla conservazione](retention.md) con informazioni specifiche per Exchange.  Per altri carichi di lavoro, vedere:
+
+- [Informazioni sulla conservazione per SharePoint e OneDrive](retention-policies-sharepoint.md)
+- [Informazioni sulla conservazione per Microsoft Teams](retention-policies-teams.md)
+- [Informazioni sulla conservazione per Yammer](retention-policies-yammer.md)
+
+## <a name="whats-included-for-retention-and-deletion"></a>Cosa è incluso per la conservazione e l'eliminazione
+
+Usando i criteri di conservazione e le etichette di conservazione è possibile mantenere ed eliminare gli elementi di Exchange seguenti: messaggi di posta elettronica, incluse le bozze, con gli allegati, note e attività che hanno una data di fine. 
+
+Gli elementi del calendario con una data di fine sono supportati per i criteri di conservazione, ma non per le etichette di conservazione.
+
+I contatti, le attività e gli elementi del calendario che non hanno una data di fine non sono supportati.
+
+Altri elementi archiviati in una cassetta postale, ad esempio i messaggi di Skype e di Teams, non sono inclusi nelle etichette o nei criteri di conservazione per Exchange. Questi elementi hanno criteri di conservazione personalizzati.
 
 ## <a name="how-retention-works-for-exchange"></a>Funzionamento della conservazione per Exchange
 
