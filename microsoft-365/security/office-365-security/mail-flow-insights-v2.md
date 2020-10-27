@@ -12,12 +12,12 @@ localization_priority: Normal
 ms.assetid: beb6acaa-6016-4d54-ba7e-3d6d035e2b46
 description: Gli amministratori possono ottenere informazioni sulle intuizioni e sui report disponibili nel dashboard del flusso di posta elettronica nel centro sicurezza & Compliance.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 089c6351485712d841691d5b856b1ba28dfe4fc4
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: f9ac8b8b0d346d78af252a9e427d0ef2b1a4c4ea
+ms.sourcegitcommit: 6647055154002c7d3b8f7ce25ad53c9636bc8066
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48198482"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "48769019"
 ---
 # <a name="mail-flow-insights-in-the-security--compliance-center"></a>Informazioni dettagliate sul flusso di posta nel Centro sicurezza e conformità
 
@@ -60,11 +60,11 @@ Le informazioni disponibili sono le seguenti:
 
 ## <a name="permissions-required-to-view-the-mail-flow-dashboard"></a>Autorizzazioni necessarie per visualizzare il dashboard del flusso di posta
 
-Il dashboard del flusso di posta è disponibile per i membri dei gruppi di route seguenti:
+Il dashboard del flusso di posta è disponibile per i membri dei gruppi di ruoli seguenti:
 
 - **Gestione dell'organizzazione** nel centro sicurezza & Compliance (Global Admins).
 
-- **[Amministratore di Exchange](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#exchange-administrator)** in Azure ad.
+- **[Amministratore di Exchange](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#exchange-administrator)** in Azure Active Directory.
 
 - **Amministratore del flusso** di posta nel centro sicurezza & conformità: se un membro di questo gruppo di ruoli non è anche membro dei gruppi di ruoli amministratore globale o amministratore di Exchange, tenere presente i problemi e i requisiti seguenti:
 
@@ -76,6 +76,6 @@ Per ulteriori informazioni sulle autorizzazioni nel centro sicurezza & Complianc
 
 ## <a name="where-to-find-the-mail-flow-dashboard"></a>Dove trovare il dashboard del flusso di posta
 
-Aprire il Centro sicurezza & Compliance all'indirizzo <https://protection.office.com> , espandere **flusso di posta**e quindi fare clic su **Dashboard**.
+Aprire il Centro sicurezza & Compliance all'indirizzo <https://protection.office.com> , espandere **flusso di posta** e quindi fare clic su **Dashboard** .
 
 Per accedere direttamente al dashboard del flusso di posta, Apri <https://protection.office.com/mailflow/dashboard> .

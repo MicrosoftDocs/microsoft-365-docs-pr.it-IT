@@ -17,25 +17,31 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: e4a9e5f1606b91e4cd41f29b37db2707f4c7df17
-ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
+ms.openlocfilehash: 5465d1a6dc806cb4f76a34801dee2feb87146ad3
+ms.sourcegitcommit: 6647055154002c7d3b8f7ce25ad53c9636bc8066
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "48295083"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "48769269"
 ---
 # <a name="whats-coming-to-microsoft-secure-score"></a>Cosa viene a Microsoft Secure Score
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-
 Sono state apportate alcune modifiche nel prossimo futuro per rendere [Microsoft Secure Score](microsoft-secure-score.md) un migliore rappresentante della propria posizione di sicurezza e migliorare l'usabilità. Il Punteggio e il punteggio massimo possibile possono variare.
 
 ## <a name="proposed-changes"></a>Modifiche proposte
 
-### <a name="october-2020"></a>2020 ottobre
+### <a name="november-2020"></a>2020 novembre
 
-#### <a name="remove-improvement-action-for-microsoft-defender-advanced-threat-protection"></a>Rimuovi azione di miglioramento per Microsoft Defender Advanced Threat Protection
+La rimozione della possibilità di creare i ticket di ServiceNow tramite il Punteggio sicuro è in grado di condividere > ServiceNow.
+
+- Il periodo di anteprima per il connettore ServiceNow termina. Questa funzionalità non sarà più disponibile entro la fine di 2020. La ringrazio per i commenti e il supporto continuo, mentre si determinano i passaggi successivi.
+
+### <a name="october-2020"></a>Ottobre 2020
+
+Rimuovere l'azione di miglioramento relativa a Microsoft Defender Advanced Threat Protection:
+
 - Impostare Microsoft Defender SmartScreen app di Windows Store per il controllo del contenuto Web per l'avviso
 
 ## <a name="related-resources"></a>Risorse correlate

@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 4f5d0a59372fb32b2802a094c247e45740ba3946
-ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
+ms.openlocfilehash: 4dfe1c9595db869a59474a030a5dd8673cf7db24
+ms.sourcegitcommit: 6647055154002c7d3b8f7ce25ad53c9636bc8066
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "48295251"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "48769245"
 ---
 # <a name="track-your-microsoft-secure-score-history-and-meet-goals"></a>Monitorare la cronologia dei punteggi di Microsoft Secure e raggiungere gli obiettivi
 
@@ -60,17 +60,36 @@ Nella scheda **tendenze & metriche** sono disponibili diversi grafici e grafici 
 
 ### <a name="compare-your-score-to-organizations-like-yours"></a>Confronta il tuo punteggio con organizzazioni come le tue
 
-Sono disponibili due posizioni per vedere come il punteggio viene confrontato con le organizzazioni che sono simili all'utente.
+Sono disponibili due posizioni per vedere come il punteggio viene confrontato con le organizzazioni che sono simili all'utente. In entrambi i grafici, è possibile selezionare **Gestisci confronti** per visualizzare e modificare le informazioni dell'organizzazione. È inoltre possibile creare un confronto personalizzato basato sull'industria, la dimensione dell'organizzazione, le licenze e le aree geografiche.
 
-La prima posizione si trova nella scheda **Panoramica** , in cui è possibile visualizzare un grafico a barre di confronto. Posizionare il puntatore del mouse sul grafico per visualizzare la possibilità di punteggio e punteggio.
+#### <a name="comparison-bar-chart"></a>Grafico a barre di confronto
+
+Il grafico a barre di confronto è la scheda **Panoramica** . Posizionare il puntatore del mouse sul grafico per visualizzare la possibilità di punteggio e punteggio. I dati di confronto sono anonimi in modo che non si conoscano esattamente quali altri tenant sono presenti nel mix.
 
 ![Grafico a barre dei punteggi dell'organizzazione simili](../../media/secure-score/secure-score-comparison-bar.png)
 
-La seconda posizione si trova nella scheda **metriche & tendenze** , in cui è possibile visualizzare il confronto tra il Punteggio sicuro dell'organizzazione e gli altri nel corso del tempo.
+- **Organizzazioni come la vostra** : vi daremo un punteggio medio di altri tenant (purché siano presenti almeno 5 o più tenant da confrontare) che si qualificano con i seguenti criteri:
+    1. Stesso settore
+    2. Stesse dimensioni dell'organizzazione
+    3. Tutte le aree
+    4. I prodotti Microsoft utilizzati sono 80% simili
+    5. Opportunità (Punteggio massimo che può essere ottenuto dalla licenza corrente) all'interno di un intervallo del 20% dal tenant
+
+- **Confronto personalizzato** : deve essere configurato per primo selezionando **Gestisci confronto** (solo se sono presenti 5 o più tenant) in base ai criteri seguenti:
+    1. Settore o settori selezionati
+    2. Dimensioni dell'organizzazione selezionate
+    3. Aree selezionate
+    4. Licenze selezionate
+    5. I prodotti Microsoft utilizzati sono 80% simili
+    6. Opportunità (Punteggio massimo che può essere ottenuto dalla licenza corrente) all'interno di un intervallo del 20% dal tenant
+
+Se non è stata effettuata una selezione per la selezione personalizzata del risultato della selezione per ottenere meno di 5 altri tenant di cui è possibile eseguire il confronto, si vedrà "non disponibile a causa di dati limitati".
+
+#### <a name="comparison-trend"></a>Trend di confronto
+
+Nella scheda **tendenze & metriche** , visualizzare la modalità di confronto tra il Punteggio sicuro dell'organizzazione e gli altri nel corso del tempo.
 
 ![Grafico a linee dei punteggi dell'organizzazione simili nel corso del tempo](../../media/secure-score/secure-score-comparison-trend.png)
-
-In entrambi i grafici, è possibile selezionare **Gestisci confronti** per visualizzare e modificare le informazioni dell'organizzazione. È inoltre possibile creare un confronto personalizzato basato sull'industria, la dimensione dell'organizzazione, le licenze e le aree geografiche.
 
 ## <a name="we-want-to-hear-from-you"></a>Si vuole sapere da voi
 

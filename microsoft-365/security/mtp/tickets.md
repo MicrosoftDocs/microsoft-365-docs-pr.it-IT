@@ -19,19 +19,20 @@ search.appverid:
 - MET150
 ms.custom:
 - seo-marvel-apr2020
-ms.openlocfilehash: ca13234a93ffcc226be45d337880692a3a39c28b
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: a2650efbac0966b84e6fbfd6ce78cb732f4933b3
+ms.sourcegitcommit: bd36c88e731e3fee2a3a5cb3564fdc94f11bab94
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48196120"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "48769654"
 ---
 # <a name="integrate-servicenow-tickets-into-the-microsoft-365-security-center-and-compliance-center"></a>Integrazione dei ticket di ServiceNow nel centro sicurezza e conformità di Microsoft 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-
-[!include[Prerelease information](../includes/prerelease.md)]
+>[!CAUTION]
+>**Il periodo di anteprima per il connettore ServiceNow termina**<br>
+>Questa funzionalità non sarà più disponibile entro la fine del 2020 novembre. La ringrazio per i commenti e il supporto continuo, mentre si determinano i passaggi successivi.
 
 ServiceNow è una popolare piattaforma di cloud computing che aiuta le aziende a gestire i flussi di lavoro digitali per le operazioni aziendali. La piattaforma Now include i flussi di lavoro IT, i flussi di lavoro dei dipendenti e i flussi di lavoro del cliente. [Altre informazioni su ServiceNow](https://www.servicenow.com/)
 
@@ -77,7 +78,7 @@ Per informazioni su come connettersi a ServiceNow, vedere [creare e monitorare i
 
 ### <a name="you-receive-an-error-in-the-first-step-of-the-installation-checklist-oauth-creation"></a>Viene visualizzato un messaggio di errore nel primo passaggio dell'elenco di controllo per l'installazione (OAuth Creation)
 
-**Messaggio di errore**: l'operazione di lettura su' oauth_entity ' dall'ambito ' x_mioms_m365ticket ' è stata rifiutata a causa del criterio di accesso cross-scope della tabella
+**Messaggio di errore** : l'operazione di lettura su' oauth_entity ' dall'ambito ' x_mioms_m365ticket ' è stata rifiutata a causa del criterio di accesso cross-scope della tabella
 
 L'app presuppone che qualsiasi amministratore nell'istanza di ServiceNow possa creare e leggere le entità OAuth. Questo errore potrebbe essere causato da una personalizzazione nell'istanza di ServiceNow che limita gli utenti autorizzati a creare o leggere le entità OAuth.
 
@@ -92,7 +93,7 @@ Impostare le configurazioni di tabella "registri applicazioni" su predefinita:
 
 ### <a name="how-to-validate-the-oauth-entity-created-for-microsoft-365-security--compliance-connector"></a>Come convalidare l'entità OAuth creata per Microsoft 365 Security & Compliance Connector
 
-Andare alla tabella registri applicazioni (**Menu > System OAuth > Application Registry**) in ServiceNow. Individuare l'entità OAuth creata dall'utente, con il nome assegnato.
+Andare alla tabella registri applicazioni ( **Menu > System OAuth > Application Registry** ) in ServiceNow. Individuare l'entità OAuth creata dall'utente, con il nome assegnato.
 
 ### <a name="signing-in-as-the-integration-user"></a>Accesso come utente di integrazione
 
