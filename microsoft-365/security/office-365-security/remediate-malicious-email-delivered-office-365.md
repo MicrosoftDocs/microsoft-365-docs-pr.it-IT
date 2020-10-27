@@ -14,19 +14,19 @@ search.appverid: MET150
 description: Correzione delle minacce
 appliesto:
 - Microsoft Threat Protection
-ms.openlocfilehash: 526a88409514127d4fb484f88632bf3185004854
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: a7c1f6f89f5414f5fc6ef8dd59d2894195e75f7f
+ms.sourcegitcommit: 45c0afcf958069c5c1b31f9b6c762d8dd806e1e9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48197442"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "48774060"
 ---
 # <a name="remediate-malicious-email-delivered-in-office-365"></a>Rimediare la posta elettronica dannosa recapitata in Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-La correzione comporta l'esecuzione di un'azione proscritta su una minaccia. I messaggi di posta elettronica dannosi inviati all'organizzazione possono essere rimossi dal sistema, tramite l'AutoPurge (ZAP) zero-hour o dai team di sicurezza mediante azioni correttive come *Sposta in posta in arrivo*, sposta su posta *indesiderata*, *Sposta su elementi eliminati*, Elimina *o Elimina* *temporaneamente*. Office Advanced Threat Protection (Office ATP) P2/E5 consente ai team di sicurezza di correggere le minacce nelle funzionalità di posta elettronica e collaborazione tramite l'analisi manuale e automatizzata.
+La correzione comporta l'esecuzione di un'azione prescritta nei confronti di una minaccia. I messaggi di posta elettronica dannosi inviati all'organizzazione possono essere rimossi dal sistema, tramite l'AutoPurge (ZAP) zero-hour o dai team di sicurezza mediante azioni correttive come *Sposta in posta in arrivo* , sposta su posta *indesiderata* , *Sposta su elementi eliminati* , Elimina *o Elimina* *temporaneamente* . Office Advanced Threat Protection (Office ATP) P2/E5 consente ai team di sicurezza di correggere le minacce nelle funzionalità di posta elettronica e collaborazione tramite l'analisi manuale e automatizzata.
 
 > [!NOTE]
 > Per correggere il messaggio di posta elettronica dannoso, i team di sicurezza devono essere assegnati al ruolo di *ricerca ed eliminazione* . L'assegnazione di ruolo viene fatta tramite le autorizzazioni nel centro sicurezza e conformità.
@@ -39,19 +39,19 @@ Per eseguire operazioni come la visualizzazione delle intestazioni dei messaggi 
 
 |Attività|Gruppo di ruolo|Ruolo di *Anteprima* necessario?|
 |---|---|---|
-|Utilizzo di Esplora minacce (e rilevamenti in tempo reale) per l'analisi delle minacce |Amministratore globale <br> Amministratore della sicurezza <br> Ruolo con autorizzazioni di lettura per la sicurezza|No|
+|Utilizzo di Esplora minacce (e rilevamenti in tempo reale) per l'analisi delle minacce |Amministratore globale <br> Amministratore della sicurezza <br> Ruolo con autorizzazioni di lettura per la sicurezza|No|
 |Utilizzo di Esplora minacce (e rilevamento in tempo reale) per visualizzare le intestazioni dei messaggi di posta elettronica e visualizzare in anteprima e scaricare i messaggi di posta elettronica in quarantena|Amministratore globale <br> Amministratore della sicurezza <br>Ruolo con autorizzazioni di lettura per la sicurezza|No|
 |Utilizzare Esplora minacce per visualizzare le intestazioni e scaricare i messaggi di posta elettronica recapitati alle cassette postali|Amministratore globale <br>Amministratore della sicurezza <br> Ruolo con autorizzazioni di lettura per la sicurezza <br> Anteprima|Sì|
 
 > [!NOTE]
-> L'anteprima è un *ruolo*, non un *gruppo di ruoli*. Il ruolo di anteprima deve essere aggiunto a un gruppo di ruoli esistente per Office 365. Il *ruolo di amministratore globale* è assegnato nell'interfaccia di [amministrazione di Microsoft 365](https://admin.microsoft.com). I ruoli amministratore sicurezza e lettore di sicurezza sono assegnati nei [centri sicurezza e conformità](https://protection.office.com). Per ulteriori informazioni sui ruoli e sulle autorizzazioni, vedere [Permissions in the Security and Compliance Centers](permissions-in-the-security-and-compliance-center.md).
+> L'anteprima è un *ruolo* , non un *gruppo di ruoli* . Il ruolo di anteprima deve essere aggiunto a un gruppo di ruoli esistente per Office 365. Il *ruolo di amministratore globale* è assegnato nell'interfaccia di [amministrazione di Microsoft 365](https://admin.microsoft.com). I ruoli amministratore sicurezza e lettore di sicurezza sono assegnati nei [centri sicurezza e conformità](https://protection.office.com). Per ulteriori informazioni sui ruoli e sulle autorizzazioni, vedere [Permissions in the Security and Compliance Centers](permissions-in-the-security-and-compliance-center.md).
 
 > [!NOTE]
-> Gli amministratori possono intraprendere le azioni necessarie per i messaggi di posta elettronica, ma per approvarle, è necessario che il ruolo di *ricerca e Purge* venga assegnato tramite le autorizzazioni del **Centro sicurezza e conformità**  >  **Permissions**.
+> Gli amministratori possono intraprendere le azioni necessarie per i messaggi di posta elettronica, ma per approvarle, è necessario che il ruolo di *ricerca e Purge* venga assegnato tramite le autorizzazioni del **Centro sicurezza e conformità**  >  **Permissions** .
 
 ## <a name="manual-and-automated-remediation"></a>Correzione automatica e manuale
 
-La *caccia manuale* si verifica quando i team di sicurezza identificano le minacce manualmente utilizzando le funzionalità di ricerca e filtro in Esplora minacce. La correzione dei messaggi di posta elettronica manuale può essere attivata tramite qualsiasi visualizzazione di posta elettronica (*malware*, *phishing*o *tutti i messaggi di posta elettronica*) dopo aver identificato un insieme di messaggi di posta elettronica che devono essere corretti.
+La *caccia manuale* si verifica quando i team di sicurezza identificano le minacce manualmente utilizzando le funzionalità di ricerca e filtro in Esplora minacce. La correzione dei messaggi di posta elettronica manuale può essere attivata tramite qualsiasi visualizzazione di posta elettronica ( *malware* , *phishing* o *tutti i messaggi di posta elettronica* ) dopo aver identificato un insieme di messaggi di posta elettronica che devono essere corretti.
 
 ![Caccia manuale in Office 365 Threat Explorer per data.](../../media/tp-RemediationArticle1.png)
 
@@ -65,7 +65,7 @@ I team di sicurezza possono utilizzare la gestione delle minacce per selezionare
 
 Dopo aver selezionato i messaggi di posta elettronica tramite Threat Explorer, è possibile avviare la correzione mediante l'esecuzione di un'azione diretta o accodando messaggi di posta elettronica per un'azione:
 
-- Approvazione diretta: quando si selezionano azioni come *Sposta in posta in arrivo*, sposta su posta *indesiderata*, *Sposta su elementi eliminati*, *eliminazione*temporanea o *eliminazione* definitiva da personale della sicurezza che dispone delle autorizzazioni appropriate e che vengono seguiti i passaggi successivi per la correzione, il processo di correzione inizia ad eseguire l'azione selezionata. Un riquadro a comparsa temporaneo Visualizza la correzione in corso.
+- Approvazione diretta: quando si selezionano azioni come *Sposta in posta in arrivo* , sposta su posta *indesiderata* , *Sposta su elementi eliminati* , *eliminazione* temporanea o *eliminazione* definitiva da personale della sicurezza che dispone delle autorizzazioni appropriate e che vengono seguiti i passaggi successivi per la correzione, il processo di correzione inizia ad eseguire l'azione selezionata. Un riquadro a comparsa temporaneo Visualizza la correzione in corso.
 
 - Approvazione in due passaggi: un'azione "Aggiungi a correzione" può essere eseguita dagli amministratori che non dispongono delle autorizzazioni appropriate o che devono attendere l'esecuzione dell'azione. In questo caso, i messaggi di posta elettronica mirati vengono aggiunti a un contenitore di correzione. L'approvazione è necessaria prima dell'esecuzione della correzione.
 
@@ -73,7 +73,7 @@ L' **analisi automatizzata e** le azioni di risposta vengono attivate dagli avvi
 
 ![Posta elettronica con malware nella pagina "zapped" che mostra il tempo di esecuzione dello zap.](../../media/tp-RemediationArticle3.png)
 
-Nell'Action Center vengono visualizzate tutte le correzioni, ovvero l'approvazione diretta o in due passaggi, che sono state create in Esplora minacce e le azioni approvate provenienti da indagini automatizzate. Accedere a questi tramite il riquadro di spostamento a sinistra in **Review**  >  **Action Center**.
+Nell'Action Center vengono visualizzate tutte le correzioni, ovvero l'approvazione diretta o in due passaggi, che sono state create in Esplora minacce e le azioni approvate provenienti da indagini automatizzate. Accedere a questi tramite il riquadro di spostamento a sinistra in **Review**  >  **Action Center** .
 
 ![Centro azioni con un elenco di minacce per data e gravità.](../../media/tp-RemediationArticle4.png)
 
@@ -83,7 +83,7 @@ Aprire qualsiasi elemento di correzione per visualizzarne i dettagli, inclusi il
 
 - Scheda **invio posta** : Visualizza il numero di messaggi di posta elettronica inviati tramite Esplora minacce o indagini automatizzate da correggere. Questi messaggi di posta elettronica possono essere fattibili o non utilizzabili.<br/><br/>![Il centro azioni con minacce actionable e not actionable.](../../media/tp-RemediationArticle5.png)
 
-   - **Azione**: i messaggi di posta elettronica nei seguenti percorsi delle cassette postali cloud possono essere attivati e spostati:
+   - **Azione** : i messaggi di posta elettronica nei seguenti percorsi delle cassette postali cloud possono essere attivati e spostati:
 
      - Posta in arrivo
      - Posta indesiderata
@@ -93,7 +93,7 @@ Aprire qualsiasi elemento di correzione per visualizzarne i dettagli, inclusi il
      > [!NOTE]
      > Attualmente, solo un utente con accesso alla cassetta postale può recuperare gli elementi da una cartella eliminata temporaneamente.
 
-   - **Non**utilizzabile: i messaggi di posta elettronica nei seguenti percorsi non possono essere attivati o spostati in azioni di correzione:
+   - **Non** utilizzabile: i messaggi di posta elettronica nei seguenti percorsi non possono essere attivati o spostati in azioni di correzione:
 
      - Quarantena
      - Cartella eliminata definitivamente
@@ -121,21 +121,21 @@ Aprire qualsiasi elemento di correzione per visualizzarne i dettagli, inclusi il
 
    Selezionare un elemento per l'invio della posta per visualizzare i dettagli di tale correzione, ad esempio la query (quando la correzione viene attivata tramite indagini automatizzate o Esplora minacce tramite la selezione di una query) e gli orari di inizio e fine della correzione. Viene inoltre visualizzato un elenco di messaggi inviati per la correzione. Quando i messaggi vengono spostati dal periodo di conservazione di Threat Explorer, i messaggi scompaiono da questo elenco. L'elenco Visualizza anche i singoli messaggi che sono risolvibili.
 
-- **Registri azione**: questa scheda Visualizza i messaggi corretti, inclusa la data approvata, l'amministratore che ha approvato l'azione, l'azione, lo stato e i conteggi.
+- **Registri azione** : questa scheda Visualizza i messaggi corretti, inclusa la data approvata, l'amministratore che ha approvato l'azione, l'azione, lo stato e i conteggi.
 
    Lo stato può essere:
 
-     - **Avviato**: viene attivata la correzione.
-     - **Accodamento**: la correzione è in coda per la riduzione dei messaggi di posta elettronica.
-     - **In corso**: attenuazione in corso.
-     - **Completata**: la mitigazione su tutti i messaggi di posta elettronica rimediable è stata completata correttamente o con alcuni errori.
-     - **Errore**: nessuna correzione ha avuto esito positivo.
+     - **Avviato** : viene attivata la correzione.
+     - **Accodamento** : la correzione è in coda per la riduzione dei messaggi di posta elettronica.
+     - **In corso** : attenuazione in corso.
+     - **Completata** : la mitigazione su tutti i messaggi di posta elettronica rimediable è stata completata correttamente o con alcuni errori.
+     - **Errore** : nessuna correzione ha avuto esito positivo.
 
    Poiché solo i messaggi di posta elettronica rimediabili possono essere attivati, la pulizia di ogni e-mail viene visualizzata con esito positivo o negativo. Dal totale dei messaggi di posta elettronica rimediabili, le attenuazioni riuscite e non riuscite sono segnalate.
 
-   - **Success**: l'azione desiderata sui messaggi di posta elettronica rimediabili è stata compiuta. Ad esempio, un amministratore vuole rimuovere i messaggi di posta elettronica dalle cassette postali, quindi l'amministratore esegue l'azione di eliminazione dei messaggi di posta elettronica soft. Se un messaggio di posta elettronica risolvibile non viene trovato nella cartella originale dopo l'esecuzione dell'azione, lo stato verrà visualizzato come riuscito.
+   - **Success** : l'azione desiderata sui messaggi di posta elettronica rimediabili è stata compiuta. Ad esempio, un amministratore vuole rimuovere i messaggi di posta elettronica dalle cassette postali, quindi l'amministratore esegue l'azione di eliminazione dei messaggi di posta elettronica soft. Se un messaggio di posta elettronica risolvibile non viene trovato nella cartella originale dopo l'esecuzione dell'azione, lo stato verrà visualizzato come riuscito.
 
-   - **Errore**: Impossibile eseguire l'azione desiderata sui messaggi di posta elettronica rimediable. Ad esempio, un amministratore vuole rimuovere i messaggi di posta elettronica dalle cassette postali, quindi l'amministratore esegue l'azione di eliminazione dei messaggi di posta elettronica soft. Se un messaggio di posta elettronica risolvibile viene ancora trovato nella cassetta postale dopo l'operazione, lo stato verrà visualizzato come non riuscito.
+   - **Errore** : Impossibile eseguire l'azione desiderata sui messaggi di posta elettronica rimediable. Ad esempio, un amministratore vuole rimuovere i messaggi di posta elettronica dalle cassette postali, quindi l'amministratore esegue l'azione di eliminazione dei messaggi di posta elettronica soft. Se un messaggio di posta elettronica risolvibile viene ancora trovato nella cassetta postale dopo l'operazione, lo stato verrà visualizzato come non riuscito.
 
    Selezionare un elemento nel log azione per visualizzare i dettagli di correzione. Se i dettagli dicono "riuscito" o "non trovato nella cassetta postale", tale elemento è già stato rimosso dalla cassetta postale. A volte si verifica un errore sistemico durante la correzione. In questi casi, è consigliabile riprovare la correzione.
 
