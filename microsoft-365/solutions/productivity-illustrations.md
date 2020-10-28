@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 01ee05c69a9b649ce3f0c3b93cbdb68bb7a87c69
-ms.sourcegitcommit: 45c0afcf958069c5c1b31f9b6c762d8dd806e1e9
+ms.openlocfilehash: 7709bf9a3063863d802e8c36a09ea10d287d0e34
+ms.sourcegitcommit: c51de5e1a4cb9c4a7a9854a4226b32453d9e73e0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "48774122"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "48779273"
 ---
 # <a name="microsoft-365-productivity-illustrations"></a>Illustrazioni sulla produttività di Microsoft 365
 
@@ -72,7 +72,7 @@ Flussi di lavoro e flusso di dati end-to-end avanzati di eDiscovery, inclusi all
 
 |**Elemento**|**Descrizione**|
 |:-----|:-----|
-|[![Poster del modello: Advanced eDiscovery Architecture in Microsoft 365](../media/solutions-architecture-center/ediscovery-poster-thumb.png)](../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png) <br/> [Visualizzazione come immagine](../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png) \| [Scarica come PDF](https:download.microsoft.com/download/d/1/c/d1ce536d-9bcf-4d31-b75b-fcf0dc560665/m365-advanced-ediscovery-architecture.pdf) \| [Scaricare come Visio](https:download.microsoft.com/download/d/1/c/d1ce536d-9bcf-4d31-b75b-fcf0dc560665/m365-advanced-ediscovery-architecture.vsdx)   <br/> Aggiornato il 2020 ottobre|Include <ul><li>  Flusso di lavoro end-to-end in un singolo ambiente</li><li>Flusso di lavoro end-to-end in un ambiente multi-geo di Microsoft 365 </li><li>Flusso di dati end-to-end che supporta il flusso di lavoro di EDRM</li> |
+|[![Poster del modello: Advanced eDiscovery Architecture in Microsoft 365](../media/solutions-architecture-center/ediscovery-poster-thumb.png)](../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png) <br/> [Visualizzazione come immagine](../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png) \| [Scarica come PDF](https://download.microsoft.com/download/d/1/c/d1ce536d-9bcf-4d31-b75b-fcf0dc560665/m365-advanced-ediscovery-architecture.pdf) \| [Scaricare come Visio](https://download.microsoft.com/download/d/1/c/d1ce536d-9bcf-4d31-b75b-fcf0dc560665/m365-advanced-ediscovery-architecture.vsdx)   <br/> Aggiornato il 2020 ottobre|Include <ul><li>  Flusso di lavoro end-to-end in un singolo ambiente</li><li>Flusso di lavoro end-to-end in un ambiente multi-geo di Microsoft 365 </li><li>Flusso di dati end-to-end che supporta il flusso di lavoro di EDRM</li> |
   
 <!--
 
