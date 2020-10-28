@@ -1,7 +1,7 @@
 ---
 title: Ottenere supporto per Microsoft Managed Desktop
 description: ''
-keywords: Microsoft Managed Desktop, Microsoft 365, servizio, documentazione
+keywords: Microsoft Managed Desktop, Microsoft 365, servizi, documentazione
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 8af782095ada41f0472e1df338ced7ebe76c97fe
-ms.sourcegitcommit: adaedd1418a3bd6e4875b77fd9e008b47e0b2a51
+ms.openlocfilehash: 5b09b59efa6862782b04b7aa58d7c1fdc0383bb0
+ms.sourcegitcommit: 21c3e44862854c74e4008cfb661840f069c6b709
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48104413"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "48787535"
 ---
 # <a name="getting-help-for-users"></a>Ottenere assistenza per gli utenti
 
@@ -25,7 +25,7 @@ Esistono due modi in cui gli utenti dell'organizzazione possono ottenere assiste
 
 ## <a name="get-help-app"></a>Ottenere l'app della Guida
 
-Il metodo preferito per fornire supporto agli utenti è **ottenere assistenza**, un'interfaccia di facile utilizzo integrata nel dispositivo utente.  
+Il metodo preferito per fornire supporto agli utenti è **ottenere assistenza** , un'interfaccia di facile utilizzo integrata nel dispositivo utente.  
 
 ![Icona della Guida per l'app](../../media/get-help.png)
 
@@ -33,6 +33,9 @@ Si tratta di un'applicazione installata su tutti i dispositivi Microsoft Managed
 
 - Gli utenti possono richiedere di nuovo una chiamata a un numero di telefono fornito o chattare online con una rappresentante del servizio.
 - Le richieste che non rientrano nell'ambito di supporto di Microsoft Managed Desktop vengono reindirizzate all'helpdesk IT locale tramite telefonata.
+
+> [!NOTE]
+> La lingua di visualizzazione per l'app Get Help è solo in inglese, anche se un utente ha selezionato una lingua diversa quando si configura il dispositivo o le impostazioni del dispositivo. 
 
 ### <a name="prerequisites"></a>Prerequisiti
 Affinché gli utenti siano in grado di ottenere assistenza tramite l'app, verificare che siano soddisfatti i prerequisiti seguenti:

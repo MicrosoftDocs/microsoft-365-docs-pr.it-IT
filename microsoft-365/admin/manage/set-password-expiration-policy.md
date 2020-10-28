@@ -21,19 +21,19 @@ search.appverid:
 - GEA150
 ms.assetid: 0f54736f-eb22-414c-8273-498a0918678f
 description: Informazioni su come impostare i criteri di scadenza delle password per l'organizzazione nell'interfaccia di amministrazione di Microsoft 365.
-ms.openlocfilehash: 59e9f4e36843d7c5d977a49d42ae0a11e9a2db25
-ms.sourcegitcommit: a6625f76e8f19eebd9353ed70c00d32496ec06eb
+ms.openlocfilehash: 39726846d591b2d1f72a89a7dc59038c726a8e80
+ms.sourcegitcommit: 21c3e44862854c74e4008cfb661840f069c6b709
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47362110"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "48787523"
 ---
 # <a name="set-the-password-expiration-policy-for-your-organization"></a>Impostare i criteri di scadenza delle password per l'organizzazione
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> L'interfaccia di amministrazione sta cambiando. Se alcuni dettagli non corrispondono a quelli presentati qui, vedere [Informazioni sulla nuova interfaccia di amministrazione di Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> L'interfaccia di amministrazione sta cambiando. Se alcuni dettagli non corrispondono a quelli presentati qui, vedere [Informazioni sulla nuova interfaccia di amministrazione di Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-worldwide).
 
 ::: moniker-end
 
@@ -56,28 +56,24 @@ Seguire la procedura seguente se si vogliono impostare le password degli utenti 
 > [!IMPORTANT]
 > Solo gli [amministratori globali](../add-users/about-admin-roles.md) possono eseguire questa procedura.
   
-1. Nell'interfaccia di amministrazione passare a **Impostazioni** \> **Impostazioni organizzazione**.
+1. Nell'interfaccia di amministrazione passare a **Impostazioni** \> **Impostazioni organizzazione** .
 
 2. Passare alla pagina <a href="https://go.microsoft.com/fwlink/p/?linkid=2072756" target="_blank">Sicurezza e privacy</a>.
  Gli utenti che non sono amministratori globali non visualizzeranno l'opzione Sicurezza e privacy.
   
-3. Selezionare **Criterio di scadenza delle password**.
+3. Selezionare **Criterio di scadenza delle password** .
   
-4. Se non si vuole che gli utenti debbano cambiare le password, selezionare la casella di controllo accanto a **Impostare la scadenza delle password dopo un certo numero di giorni**.
+4. Se non si vuole che gli utenti debbano cambiare le password, selezionare la casella di controllo accanto a **Impostare la scadenza delle password dopo un certo numero di giorni** .
   
 5. Digitare la frequenza con cui dovrebbero scadere le password. Scegliere un numero di giorni compreso tra 14 e 730.
   
-6. Nella seconda casella digitare quando verranno avvisati gli utenti dell'imminente scadenza della password e poi selezionare **Salva**. Scegliere un numero di giorni compreso tra 1 e 30.
+6. Nella seconda casella digitare quando verranno avvisati gli utenti dell'imminente scadenza della password e poi selezionare **Salva** . Scegliere un numero di giorni compreso tra 1 e 30.
 
 7. Alla scadenza della password dell'utente, viene visualizzata una notifica nell'angolo in basso a destra dello schermo.
   
 ## <a name="important-things-you-need-to-know-about-the-password-expiration-feature"></a>Informazioni importanti sulla funzionalità di scadenza delle password
-
-Ecco alcune informazioni utili sul funzionamento di questa funzionalità a partire da gennaio 2018:
   
 - Chi usa solo l'app Outlook non sarà obbligato a reimpostare la password di Microsoft 365 fino alla relativa scadenza nella cache. Questo può avvenire diversi giorni dopo la data di scadenza effettiva. Non ci sono soluzioni alternative a livello di amministratore.
-
-- Gli utenti non ricevono una notifica tramite posta elettronica relativa alla scadenza della password dopo un determinato numero di giorni. Questa funzionalità è utile? **[Votare qui.](https://office365.uservoice.com/forums/273493-office-365-admin/suggestions/15028344-office-365-password-email-notification)**
 
 ## <a name="prevent-last-password-from-being-used-again"></a>Impedire il riutilizzo dell'ultima password
 
