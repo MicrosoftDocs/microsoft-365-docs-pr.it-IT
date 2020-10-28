@@ -17,18 +17,18 @@ search.appverid:
 - MET150
 - MOE150
 description: Informazioni sulle richieste dell'archivio protetto dei clienti che consentono di controllare il modo in cui un tecnico del supporto Microsoft può accedere ai dati durante l'esecuzione di un problema.
-ms.openlocfilehash: d71fbaa42fba49bd0f06b26d34d2257f8a4a60ba
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: b475c9af80d0e28961360825788d9e19a426dc69
+ms.sourcegitcommit: 6647055154002c7d3b8f7ce25ad53c9636bc8066
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47546502"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "48768864"
 ---
 # <a name="customer-lockbox-in-office-365"></a>Archivio protetto dei clienti in Office 365
 
 In questo articolo vengono fornite indicazioni sulla distribuzione e sulla configurazione per l'archivio protetto dei clienti. L'archivio protetto dei clienti supporta le richieste di accesso ai dati di Exchange Online, SharePoint Online e OneDrive for business. Per consigliare il supporto per altri servizi, inviare una richiesta a [Office 365 UserVoice](https://office365.uservoice.com/).
 
-Per visualizzare le opzioni per la concessione delle licenze agli utenti per usufruire delle offerte di conformità di Microsoft 365, tra cui il 1 ° aprile 2020, vedere le istruzioni per la [gestione delle licenze di microsoft 365 per la sicurezza & conformità](https://aka.ms/ComplianceSD).
+Per visualizzare le opzioni per la concessione delle licenze agli utenti per usufruire delle offerte di conformità di Microsoft 365, tra cui il 1 ° aprile 2020, vedere le istruzioni per la [gestione delle licenze di microsoft 365 per la sicurezza & conformità](https://aka.ms/ComplianceSD).
 
 L'archivio protetto dei clienti garantisce che Microsoft non sia in grado di accedere al contenuto per eseguire un'operazione del servizio senza l'approvazione esplicita. L'archivio protetto dei clienti introduce il flusso di lavoro di approvazione per le richieste di accesso al contenuto.
 
@@ -74,9 +74,9 @@ I passaggi seguenti delineano il flusso di lavoro tipico quando un tecnico Micro
 
 1. L'utilizzo di un account aziendale o dell'Istituto di istruzione con l'amministratore globale o il ruolo **responsabile approvazione accesso client** , accedere [https://admin.microsoft.com](https://admin.microsoft.com) e accedere.
 
-2. Scegliere **settings > org Settings**.
+2. Scegliere **settings > org Settings** .
 
-3. Scegliere **Services**  >  **modifica archivio protetto dei clienti**di servizi  >  **Edit**e quindi spostare l'interruttore **su** attivato o **disattivato** per attivare o disattivare la funzionalità.
+3. Selezionare **modifica protezione & privacy**  >  **del cliente**  >  **Edit** e quindi spostare l'interruttore su attivato o **On** **disattivato** per attivare o disattivare la funzionalità.
 
     ![Require approval for Customer Lockbox](../media/CustomerLockbox4.png)
 
@@ -84,7 +84,7 @@ I passaggi seguenti delineano il flusso di lavoro tipico quando un tecnico Micro
 
 1. L'utilizzo di un account aziendale o dell'Istituto di istruzione con l'amministratore globale o il ruolo **responsabile approvazione accesso client** , accedere [https://admin.microsoft.com](https://admin.microsoft.com) e accedere.
 
-2. Scegliere **supporto > richieste di archivio clienti**.
+2. Scegliere **supporto > richieste di archivio clienti** .
 
     ![Fare clic su supporto, quindi su richieste archivio clienti](../media/CustomerLockbox5.png)
 
@@ -92,7 +92,7 @@ I passaggi seguenti delineano il flusso di lavoro tipico quando un tecnico Micro
 
     ![Elenco delle richieste dell'archivio protetto dei clienti](../media/CustomerLockbox6.png)
 
-3. Selezionare la richiesta di un archivio protetto dei clienti e quindi scegliere **approva** o **rifiuta**.
+3. Selezionare la richiesta di un archivio protetto dei clienti e quindi scegliere **approva** o **rifiuta** .
 
     ![Approvare o negare le richieste dell'archivio clienti](../media/CustomerLockbox7.png)
 
@@ -101,22 +101,22 @@ I passaggi seguenti delineano il flusso di lavoro tipico quando un tecnico Micro
     ![Approvare o negare le richieste dell'archivio clienti](../media/CustomerLockbox8.png)
 
 > [!NOTE]
-> Utilizzare il cmdlet Set-AccessToCustomerDataRequest per approvare, negare o annullare le richieste dell'archivio clienti di Microsoft 365 che controllano l'accesso ai dati da parte dei tecnici del supporto tecnico Microsoft. Per ulteriori informazioni, vedere [set-AccessToCustomerDataRequest](https://docs.microsoft.com/powershell/module/exchange/set-accesstocustomerdatarequest).
+> Usare il cmdlet Set-AccessToCustomerDataRequest per approvare, negare o eliminare le richieste di Customer Lockbox di Microsoft 365 che controllano l'accesso ai dati da parte dei tecnici del supporto Microsoft. Per ulteriori informazioni, vedere [set-AccessToCustomerDataRequest](https://docs.microsoft.com/powershell/module/exchange/set-accesstocustomerdatarequest).
 
 
 ## <a name="auditing-customer-lockbox-requests"></a>Richieste di controllo dell'archivio protetto dei clienti
 
-I record di controllo che corrispondono alle richieste dell'archivio protetto dei clienti vengono registrati nel log di controllo. È possibile accedere a questi registri utilizzando lo [strumento di ricerca del registro di controllo](search-the-audit-log-in-security-and-compliance.md) nel centro sicurezza & conformità. Le azioni relative a una richiesta di accettazione o negazione di una cassetta del cliente e alle azioni eseguite da ingegneri Microsoft (quando sono approvate le richieste di accesso) vengono registrate nel registro di controllo. È possibile eseguire la ricerca e la revisione dei record di controllo.
+I record di controllo che corrispondono alle richieste dell'archivio protetto dei clienti vengono registrati nel log di controllo. È possibile accedere a questi registri utilizzando lo [strumento di ricerca del registro di controllo](search-the-audit-log-in-security-and-compliance.md) nel centro sicurezza & conformità. Vengono inoltre registrate nel registro di controllo le azioni relative all'accettazione o al rifiuto di una richiesta di archivio clienti e alle azioni eseguite da ingegneri Microsoft (quando le richieste di accesso sono approvate). È possibile eseguire la ricerca e la revisione dei record di controllo.
 
 ### <a name="search-the-audit-log-for-activity-related-to-customer-lockbox-requests"></a>Eseguire una ricerca nel registro di controllo per attività correlate alle richieste dell'archivio protetto dei clienti
 
-Prima di poter utilizzare il registro di controllo per tenere presenti le richieste per l'archivio protetto dei clienti, è necessario eseguire alcuni passaggi per impostare la registrazione di controllo. Per ulteriori informazioni, vedere [Search the audit log in the Security & Compliance Center](https://docs.microsoft.com/office365/securitycompliance/search-the-audit-log-in-security-and-compliance#before-you-begin). Dopo aver completato l'installazione, attenersi alla procedura seguente per creare una query di ricerca del registro di controllo per restituire i record di controllo relativi all'archivio protetto dei clienti:
+Prima di poter utilizzare il registro di controllo per tenere presenti le richieste per l'archivio protetto dei clienti, è necessario eseguire alcuni passaggi per configurare la registrazione di controllo. Per ulteriori informazioni, vedere [Search the audit log in the Security & Compliance Center](https://docs.microsoft.com/office365/securitycompliance/search-the-audit-log-in-security-and-compliance#before-you-begin). Dopo aver completato l'installazione, attenersi alla procedura seguente per creare una query di ricerca del registro di controllo per restituire i record di controllo relativi all'archivio protetto dei clienti:
 
 1. Passare a [https://protection.office.com](https://protection.office.com).
   
 2. Accedere usando l'account di lavoro o della scuola.
 
-3. Nel riquadro sinistro del Centro sicurezza & conformità scegliere **Search &**  >  **Search log di controllo di ricerca**.
+3. Nel riquadro sinistro del Centro sicurezza & conformità scegliere **Search &**  >  **Search log di controllo di ricerca** .
 
     Viene visualizzata la pagina di **ricerca del registro di controllo** .
 
@@ -124,13 +124,13 @@ Prima di poter utilizzare il registro di controllo per tenere presenti le richie
   
 4. Configurare i criteri di ricerca seguenti: 
 
-    a. **Attività** -lasciare vuoto questo campo in modo che la ricerca restituisca i record di controllo per tutte le attività. Questa operazione è necessaria per restituire eventuali record di controllo relativi alle richieste dell'archivio protetto dei clienti e alle attività corrispondenti eseguite dagli ingegneri Microsoft.
+    1. **Attività** -lasciare vuoto questo campo in modo che la ricerca restituisca i record di controllo per tutte le attività. Questa operazione è necessaria per restituire eventuali record di controllo relativi alle richieste dell'archivio protetto dei clienti e alle attività corrispondenti eseguite dagli ingegneri Microsoft.
 
-    b. Data di **inizio** e **Data di fine** : selezionare un intervallo di data e ora per visualizzare gli eventi che si sono verificati entro quel periodo.
+    1. Data di **inizio** e **Data di fine** : selezionare un intervallo di data e ora per visualizzare gli eventi che si sono verificati entro quel periodo.
 
-    c. **Utenti** : lasciare vuoto questo campo.
+    1. **Utenti** : lasciare vuoto questo campo.
 
-    d. **File, cartella o sito** : lasciare vuoto questo campo.
+    1. **File, cartella o sito** : lasciare vuoto questo campo.
 
 5. Fare clic su **Cerca** per eseguire la ricerca usando i criteri di ricerca.
 
@@ -138,9 +138,9 @@ Prima di poter utilizzare il registro di controllo per tenere presenti le richie
 
 6. Fare clic su **Filtra risultati** nella pagina dei risultati di ricerca ed eseguire una delle operazioni seguenti:
 
-   - Per visualizzare i record di controllo relativi a un responsabile approvazione nell'organizzazione che approva o nega una richiesta di archivio protetto dei clienti: nella casella sotto la colonna **attività** digitare **set-AccessToCustomerDataRequest**.
+   - Per visualizzare i record di controllo relativi a un responsabile approvazione nell'organizzazione che approva o nega una richiesta di archivio protetto dei clienti: nella casella sotto la colonna **attività** digitare **set-AccessToCustomerDataRequest** .
 
-   - Per visualizzare i record di controllo relativi a un tecnico Microsoft che esegue azioni in risposta a una richiesta di un archivio clienti approvato: nella casella sotto la colonna **utente** digitare **operatore Microsoft**. Nella colonna **attività** viene visualizzata l'azione eseguita dal tecnico.
+   - Per visualizzare i record di controllo relativi a un tecnico Microsoft che esegue azioni in risposta a una richiesta di un archivio clienti approvato: nella casella sotto la colonna **utente** digitare **operatore Microsoft** . Nella colonna **attività** viene visualizzata l'azione eseguita dal tecnico.
 
       ![Filtro su "operatore Microsoft" per visualizzare i record di controllo](../media/CustomerLockbox10.png)
 
@@ -158,12 +158,12 @@ Quando una persona all'interno dell'organizzazione approva o nega una richiesta 
 | Attività   | Set-AccessToCustomerDataRequest; si tratta dell'attività di controllo che viene registrata quando si approva o si nega una richiesta di archivio protetto dei clienti.                                |
 | Elemento       | Il GUID della richiesta di archivio protetto dei clienti                             |
 
-Nella schermata seguente viene mostrato un esempio di un record del registro di controllo che corrisponde a una richiesta di archivio clienti approvata. Se è stata negata una richiesta di archivio clienti, il valore del parametro **ApprovalDecision** sarebbe **Deny**.
+Nella schermata seguente viene mostrato un esempio di un record del registro di controllo che corrisponde a una richiesta di archivio clienti approvata. Se è stata negata una richiesta di archivio clienti, il valore del parametro **ApprovalDecision** sarebbe **Deny** .
 
 ![Record di controllo per una richiesta di un archivio clienti approvato](../media/CustomerLockbox9.png)
 
 > [!TIP]
-> Per visualizzare informazioni più dettagliate in un record di controllo, fare clic su **altre informazioni**.
+> Per visualizzare informazioni più dettagliate in un record di controllo, fare clic su **altre informazioni** .
 
 ### <a name="audit-record-for-an-action-performed-by-a-microsoft-engineer"></a>Record di controllo per un'azione eseguita da un tecnico Microsoft
 
@@ -185,7 +185,7 @@ L'archivio protetto dei clienti è attualmente supportato in Exchange Online, Sh
 
 #### <a name="is-customer-lockbox-available-to-all-customers"></a>L'archivio protetto dei clienti è disponibile per tutti i clienti?
 
-L'archivio protetto dei clienti è incluso con gli abbonamenti Microsoft 365 o Office 365 E5 e può essere aggiunto ad altri piani con una sottoscrizione di un componente aggiuntivo per la protezione delle informazioni e la conformità o per un abbonamento a Advanced Compliance. Per ulteriori informazioni, vedere [piani e prezzi](https://products.office.com/business/office-365-enterprise-e5-business-software)   .
+L'archivio protetto dei clienti è incluso con gli abbonamenti Microsoft 365 o Office 365 E5 e può essere aggiunto ad altri piani con una sottoscrizione di un componente aggiuntivo per la protezione delle informazioni e la conformità o per un abbonamento a Advanced Compliance. Per ulteriori informazioni, vedere [piani e prezzi](https://products.office.com/business/office-365-enterprise-e5-business-software) .
 
 #### <a name="what-is-customer-content"></a>Che cos'è il contenuto del cliente?
 

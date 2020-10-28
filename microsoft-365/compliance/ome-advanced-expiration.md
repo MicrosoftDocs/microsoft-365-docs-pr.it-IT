@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 description: Usare la crittografia avanzata dei messaggi di Office 365 per estendere la sicurezza della posta elettronica impostando una data di scadenza per i messaggi di posta elettronica tramite un modello personalizzato.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 0dcf9c82f9204f1357b49411d0ca87e87007eb96
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: bbd018e55592e5b17149edf1a4dc0907c0184417
+ms.sourcegitcommit: 6647055154002c7d3b8f7ce25ad53c9636bc8066
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47546160"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "48769166"
 ---
 # <a name="set-an-expiration-date-for-email-encrypted-by-office-365-advanced-message-encryption"></a>Impostare una data di scadenza per un'e-mail crittografata da Office 365 Advanced Message Encryption
 
@@ -30,7 +30,7 @@ La crittografia avanzata dei messaggi di Office 365 è inclusa in [microsoft 365
 
 È possibile utilizzare la scadenza dei messaggi nei messaggi di posta elettronica inviati dagli utenti ai destinatari esterni che utilizzano il portale OME per accedere ai messaggi di posta elettronica crittografati. È possibile forzare i destinatari a utilizzare il portale OME per visualizzare e rispondere ai messaggi di posta elettronica crittografati inviati dall'organizzazione utilizzando un modello personalizzato che specifichi una data di scadenza in Windows PowerShell.
 
-In qualità di amministratore globale di O365, quando si applica il marchio dell'azienda per personalizzare l'aspetto dei messaggi di posta elettronica dell'organizzazione, è anche possibile specificare una scadenza per i messaggi di posta elettronica. Grazie alla crittografia avanzata dei messaggi di Office 365, è possibile creare più modelli per i messaggi di posta elettronica crittografati provenienti dall'organizzazione. Se si utilizza un modello, è possibile controllare la durata di accesso dei destinatari alla posta inviata dagli utenti.
+In qualità di amministratore globale di Office 365, quando si applica il marchio dell'azienda per personalizzare l'aspetto dei messaggi di posta elettronica dell'organizzazione, è anche possibile specificare una scadenza per i messaggi di posta elettronica. Grazie alla crittografia avanzata dei messaggi di Office 365, è possibile creare più modelli per i messaggi di posta elettronica crittografati provenienti dall'organizzazione. Se si utilizza un modello, è possibile controllare la durata di accesso dei destinatari alla posta inviata dagli utenti.
 
 Quando un utente finale riceve la posta con un set di date di scadenza, l'utente Visualizza la data di scadenza nel messaggio di posta elettronica del wrapper. Se un utente tenta di aprire un messaggio di posta elettronica scaduto, viene visualizzato un messaggio di errore nel portale OME.
 
@@ -44,9 +44,9 @@ Con la crittografia avanzata dei messaggi di Office 365, ogni volta che si appli
 
 2. Eseguire il cmdlet New-OMEConfiguration.
 
-     ```powershell
-     New-OMEConfiguration -Identity "Expire in 7 days" -ExternalMailExpiryInDays 7
-     ```
+    ```powershell
+    New-OMEConfiguration -Identity "Expire in 7 days" -ExternalMailExpiryInDays 7
+    ```
 
 Dove:
 

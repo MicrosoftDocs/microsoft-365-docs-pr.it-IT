@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: 6045adec673313514243b023dc6ab688387f78d8
-ms.sourcegitcommit: 79a21583a52aedd06317bbcabd8be40663379dec
+ms.openlocfilehash: c9b19066b57d40ad33ac8d50ee1bee1f4a828030
+ms.sourcegitcommit: 45c0afcf958069c5c1b31f9b6c762d8dd806e1e9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "48341402"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "48774049"
 ---
 # <a name="insider-risk-management-in-microsoft-365"></a>Gestione dei rischi insider in Microsoft 365
 
@@ -48,10 +48,10 @@ Insider Risk Management utilizza l'intera gamma di indicatori di servizio e di t
 
 La gestione dei rischi Insider è incentrata sui seguenti principi:
 
-- **Trasparenza**: bilanciare la privacy degli utenti rispetto al rischio dell'organizzazione con l'architettura privacy-by-Design.
-- **Configurabile**: criteri configurabili basati su gruppi industriali, geografici e aziendali.
-- **Integrated**: workflow integrato tra le soluzioni di conformità di Microsoft 365.
-- **Azione**: fornisce informazioni per abilitare le notifiche degli utenti, le indagini sui dati e le indagini degli utenti.
+- **Trasparenza** : bilanciare la privacy degli utenti rispetto al rischio dell'organizzazione con l'architettura privacy-by-Design.
+- **Configurabile** : criteri configurabili basati su gruppi industriali, geografici e aziendali.
+- **Integrated** : workflow integrato tra le soluzioni di conformità di Microsoft 365.
+- **Azione** : fornisce informazioni per abilitare le notifiche degli utenti, le indagini sui dati e le indagini degli utenti.
 
 ## <a name="workflow"></a>Flusso di lavoro
 
@@ -105,9 +105,9 @@ I [casi](insider-risk-management-cases.md) vengono creati per gli avvisi che ric
 
 Se si seleziona un caso nel dashboard del caso, verrà aperta la causa per l'analisi e la revisione. Questo passaggio è il fulcro del flusso di lavoro di gestione dei rischi Insider. Questa area è la posizione in cui le attività di rischio, le condizioni dei criteri, gli avvisi e i dettagli degli utenti vengono sintetizzati in una visualizzazione integrata per i revisori. Gli strumenti principali di indagine in questo campo sono:
 
-- **Attività utente**: l'attività dell'utente viene visualizzata automaticamente in un grafico interattivo che traccia le attività nel tempo e a livello di rischio per le attività di rischio correnti o precedenti. I revisori possono rapidamente filtrare e visualizzare l'intera cronologia dei rischi per l'utente e analizzare attività specifiche per ulteriori dettagli.
-- **Content Explorer**: tutti i file di dati e i messaggi di posta elettronica associati alle attività di avviso vengono acquisiti e visualizzati automaticamente nell'Esplora contenuto. I revisori possono filtrare e visualizzare i file e i messaggi in base all'origine dati, al tipo di file, ai tag, alla conversazione e a molti altri attributi.
-- **Note di caso**: i revisori possono fornire note per un caso nella sezione case Notes. Questo elenco consolida tutte le note in una visualizzazione centrale e include reviewer e informazioni presentate dalla data.
+- **Attività utente** : l'attività dell'utente viene visualizzata automaticamente in un grafico interattivo che traccia le attività nel tempo e a livello di rischio per le attività di rischio correnti o precedenti. I revisori possono rapidamente filtrare e visualizzare l'intera cronologia dei rischi per l'utente e analizzare attività specifiche per ulteriori dettagli.
+- **Content Explorer** : tutti i file di dati e i messaggi di posta elettronica associati alle attività di avviso vengono acquisiti e visualizzati automaticamente nell'Esplora contenuto. I revisori possono filtrare e visualizzare i file e i messaggi in base all'origine dati, al tipo di file, ai tag, alla conversazione e a molti altri attributi.
+- **Note di caso** : i revisori possono fornire note per un caso nella sezione case Notes. Questo elenco consolida tutte le note in una visualizzazione centrale e include reviewer e informazioni presentate dalla data.
 
 ![Indagini sulla gestione dei rischi Insider](../media/insider-risk-investigate.png)
 
@@ -117,9 +117,12 @@ Dopo aver esaminato i casi, i revisori possono agire rapidamente per risolvere i
 
 Nelle situazioni più gravi, potrebbe essere necessario condividere le informazioni sui casi di gestione dei rischi Insider con altri revisori o servizi nell'organizzazione. La gestione dei rischi Insider è strettamente integrata con altre soluzioni Microsoft 365 Compliance che consentono di risolvere i rischi end-to-end.
 
-- **Advanced eDiscovery**: l'escalation di un caso di indagine consente di trasferire i dati e la gestione del caso in eDiscovery avanzata in Microsoft 365. Advanced eDiscovery offre un flusso di lavoro end-to-end per conservare, raccogliere, rivedere, analizzare ed esportare contenuti rispondenti alle indagini interne ed esterne dell'organizzazione. Consente ai team legali di gestire l'intero flusso di lavoro di notifica della conservazione legale. Per ulteriori informazioni sui casi di eDiscovery avanzati, vedere [Overview of Advanced eDiscovery in Microsoft 365](overview-ediscovery-20.md).
-- **ServiceNow (Preview)**: ServiceNow è una popolare piattaforma di cloud computing che aiuta le organizzazioni a gestire i flussi di lavoro digitali per le operazioni aziendali. Insider Risk Management supporta la condivisione di avvisi in caso di problemi con il servizio ServiceNow e consente di creare incidenti e di modificare le richieste relative ai singoli casi di rischio Insider. Per ulteriori informazioni sulla condivisione dei dati di avviso con ServiceNow, vedere [share a case with ServiceNow](insider-risk-management-cases.md#share-the-case).
-- **Integrazione di office 365 Management Apis (Preview)**: gestione dei rischi Insider supporta l'esportazione di informazioni sugli avvisi per i servizi di gestione eventi e informazioni di sicurezza mediante le API di gestione di Office 365. Accesso alle informazioni sugli avvisi nella piattaforma i processi di rischio dell'organizzazione consentono una maggiore flessibilità nell'agire sulle attività a rischio. Per ulteriori informazioni su come esportare gli avvisi con le API di gestione di Office 365, vedere [Export Alerts](insider-risk-management-settings.md#export-alerts-preview).
+- **Advanced eDiscovery** : l'escalation di un caso di indagine consente di trasferire i dati e la gestione del caso in eDiscovery avanzata in Microsoft 365. Advanced eDiscovery offre un flusso di lavoro end-to-end per conservare, raccogliere, rivedere, analizzare ed esportare contenuti rispondenti alle indagini interne ed esterne dell'organizzazione. Consente ai team legali di gestire l'intero flusso di lavoro di notifica della conservazione legale. Per ulteriori informazioni sui casi di eDiscovery avanzati, vedere [Overview of Advanced eDiscovery in Microsoft 365](overview-ediscovery-20.md).
+- **ServiceNow (Preview)** : ServiceNow è una popolare piattaforma di cloud computing che aiuta le organizzazioni a gestire i flussi di lavoro digitali per le operazioni aziendali. Insider Risk Management supporta la condivisione di avvisi in caso di problemi con il servizio ServiceNow e consente di creare incidenti e di modificare le richieste relative ai singoli casi di rischio Insider. Per ulteriori informazioni sulla condivisione dei dati di avviso con ServiceNow, vedere [share a case with ServiceNow](insider-risk-management-cases.md#share-the-case).
+- **Integrazione di office 365 Management Apis (Preview)** : gestione dei rischi Insider supporta l'esportazione di informazioni sugli avvisi per i servizi di gestione eventi e informazioni di sicurezza mediante le API di gestione di Office 365. Accesso alle informazioni sugli avvisi nella piattaforma i processi di rischio dell'organizzazione consentono una maggiore flessibilità nell'agire sulle attività a rischio. Per ulteriori informazioni su come esportare gli avvisi con le API di gestione di Office 365, vedere [Export Alerts](insider-risk-management-settings.md#export-alerts-preview).
+
+>[!NOTE]
+>L'anteprima di ServiceNow si concluderà il 30 2020 novembre e non continuerà. Grazie per il feedback e il supporto per i passaggi successivi.
 
 ## <a name="scenarios"></a>Scenari
 
