@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Trovare le risposte alle domande frequenti su Microsoft Compliance Manager, che consente alle organizzazioni di semplificare e automatizzare le valutazioni dei rischi.
-ms.openlocfilehash: 3e1b6cdbcafd0cb4af4545cb258dab2ce082a2d8
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 49886cba59cc486c4345e069a4b782951fed4c68
+ms.sourcegitcommit: ccbb405227880f40581c3cdfb974368a29d496f7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48204451"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "48791782"
 ---
 # <a name="compliance-manager-frequently-asked-questions"></a>Domande frequenti su Compliance Manager
 
@@ -27,7 +27,7 @@ ms.locfileid: "48204451"
 
 Ora è disponibile solo una soluzione: Compliance Manager. In questa sezione viene illustrata la transizione, iniziando con una panoramica di base. È inoltre possibile che sia utile passare direttamente a una delle sezioni seguenti:
 
-- [L'organizzazione ha utilizzato principalmente Compliance Manager (le versioni di anteprima di tipo classico o pubblico), che si trova in Microsoft Service Trust Portal.](#your-organization-regularly-used-compliance-manger-in-the-service-trust-portal)
+- [L'organizzazione ha utilizzato principalmente Compliance Manager (le versioni di anteprima di tipo classico o pubblico), che si trova in Microsoft Service Trust Portal.](#your-organization-regularly-used-compliance-manager-in-the-service-trust-portal)
 
 - [L'organizzazione ha utilizzato principalmente il Punteggio di conformità (anteprima pubblica), che si trova nel centro conformità di Microsoft 365](#your-organization-used-compliance-score-public-preview-in-the-microsoft-365-compliance-center)
 
@@ -41,7 +41,7 @@ La disponibilità generale di Compliance Manager nel centro conformità Microsof
 
 Leggere questo [post di Blog](https://aka.ms/compliancemanager/GAblog) per ulteriori informazioni sulle novità con la versione GA di Compliance Manager.
 
-#### <a name="your-organization-regularly-used-compliance-manger-in-the-service-trust-portal"></a>L'organizzazione ha utilizzato regolarmente la gestione della conformità nel Service Trust Portal
+#### <a name="your-organization-regularly-used-compliance-manager-in-the-service-trust-portal"></a>L'organizzazione ha utilizzato regolarmente Compliance Manager nel Service Trust Portal
 
 Se è stato utilizzato Compliance Manager nel Service Trust Portal, tutti i dati dell'organizzazione sono ora presenti in Compliance Manager nel centro conformità di Microsoft 365 all'indirizzo https://compliance.microsoft.com/compliancemanager . Non è necessario eseguire alcuna operazione per riprendere il lavoro di Compliance Manager nel nuovo percorso, se non per aggiornare i segnalibri necessari per la posizione precedente. Tutte le valutazioni e gli altri dati sono stati portati all'utente.
 
@@ -51,7 +51,7 @@ Tutto ciò che è stato utilizzato per eseguire nelle versioni precedenti di Com
 
 Di seguito sono riportate alcune risorse utili:
 
-- [Acquisire familiarità con la nuova esperienza di gestione della conformità](compliance-manager-setup.md#understand-the-compliance-manger-dashboard)
+- [Acquisire familiarità con la nuova esperienza di Compliance Manager](compliance-manager-setup.md#understand-the-compliance-manager-dashboard)
 - [Trovare le autorizzazioni e altre informazioni di installazione per Compliance Manager nella sua nuova abitazione](compliance-manager-setup.md#who-can-access-compliance-manager)
 - [Ulteriori informazioni sul centro conformità di Microsoft 365](microsoft-365-compliance-center.md)
 

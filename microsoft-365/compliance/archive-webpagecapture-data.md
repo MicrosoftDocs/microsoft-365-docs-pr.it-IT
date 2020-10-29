@@ -12,14 +12,14 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Gli amministratori possono configurare un connettore per l'importazione e l'archiviazione dei dati di acquisizione di pagine Web da Globanet in Microsoft 365. Questo connettore consente di archiviare i dati provenienti da origini dati di terze parti in Microsoft 365, in modo da poter utilizzare le funzionalità di conformità, come la conservazione legale, la ricerca di contenuto e i criteri di ritenzione per gestire i dati di terze parti dell'organizzazione.
-ms.openlocfilehash: b3f622a63e4f4dfe550f481bee6b3a56dfd3bdb1
-ms.sourcegitcommit: ae3aa7f29be16d08950cf23cad489bc069aa8617
+ms.openlocfilehash: 766464c14c50b94ec15ce6e4bdc34c3422d8dd54
+ms.sourcegitcommit: 16cbac5eacadd7b30cbca1fd2435ba9098de5e1c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48409146"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "48785508"
 ---
-# <a name="set-up-a-connector-to-archive-webpage-data-preview"></a>Configurare un connettore per archiviare i dati della pagina Web (anteprima)
+# <a name="set-up-a-connector-to-archive-webpage-data"></a>Configurare un connettore per archiviare i dati della pagina Web
 
 Utilizzare un connettore di Globanet nel centro conformità di Microsoft 365 per importare e archiviare i dati dalle pagine Web alle cassette postali degli utenti nell'organizzazione di Microsoft 365. Globanet fornisce un connettore di [acquisizione della pagina](https://globanet.com/webpage-capture) Web che consente di acquisire pagine specifiche (e tutti i collegamenti in tale pagina) in uno specifico sito o in un intero dominio. Il connettore converte il contenuto della pagina Web in un formato di file PDF, PNG o personalizzato, quindi collega i file convertiti a un messaggio di posta elettronica e quindi importa tali elementi nelle cassette postali degli utenti in Microsoft 365.
 
@@ -39,7 +39,7 @@ Nella panoramica seguente viene illustrato il processo di utilizzo di un connett
 
 4. Il connettore importa gli elementi della pagina Web convertita nelle cassette postali di utenti specifici utilizzando il valore della proprietà di *posta elettronica* del mapping automatico degli utenti, come descritto nel [passaggio 3](#step-3-map-users-and-complete-the-connector-setup). Una sottocartella della cartella posta in arrivo denominata **acquisizione webpage** viene creata nelle cassette postali degli utenti e gli elementi della pagina Web vengono importati in tale cartella. Il connettore esegue questa operazione utilizzando il valore della proprietà di *posta elettronica* . Ogni elemento della pagina Web contiene questa proprietà, che viene popolata con gli indirizzi di posta elettronica forniti quando si configura il connettore di acquisizione della pagina Web nel [passaggio 2](#step-2-configure-the-webpage-capture-connector-on-the-globanet-merge1-site).
 
-## <a name="before-you-begin"></a>Prima di iniziare
+## <a name="before-you-begin"></a>Informazioni preliminari
 
 - Creare un account Merge1 di Globanet per i connettori Microsoft. A tale scopo, contattare il [supporto clienti di Globanet](https://globanet.com/ms-connectors-contact/). È necessario accedere a questo account quando si crea il connettore nel passaggio 1.
 
@@ -51,13 +51,13 @@ Nella panoramica seguente viene illustrato il processo di utilizzo di un connett
 
 Il primo passaggio consiste nell'accedere ai **connettori di dati** e creare un connettore per i dati di origine della pagina Web.
 
-1. Andare a [https://compliance.microsoft.com](https://compliance.microsoft.com/) e fare clic **Data connectors**su  >  **acquisizione pagina Web**connettori dati.
+1. Andare a [https://compliance.microsoft.com](https://compliance.microsoft.com/) e fare clic **Data connectors** su  >  **acquisizione pagina Web** connettori dati.
 
-2. Nella pagina Descrizione prodotto **acquisizione** pagina Web fare clic su **Aggiungi connettore**.
+2. Nella pagina Descrizione prodotto **acquisizione** pagina Web fare clic su **Aggiungi connettore** .
 
-3. Nella pagina **condizioni del servizio** fare clic su **Accetto**.
+3. Nella pagina **condizioni del servizio** fare clic su **Accetto** .
 
-4. Immettere un nome univoco che identifichi il connettore e quindi fare clic su **Avanti**.
+4. Immettere un nome univoco che identifichi il connettore e quindi fare clic su **Avanti** .
 
 5. Accedere al proprio account di Merge1 per configurare il connettore.
 
@@ -65,19 +65,19 @@ Il primo passaggio consiste nell'accedere ai **connettori di dati** e creare un 
 
 Il secondo passaggio consiste nel configurare il connettore di acquisizione della pagina Web nel sito Merge1 di Globanet. Per informazioni su come configurare il connettore di acquisizione della pagina Web, vedere [Merge1 di terze parti dei connettori utente](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20Web%20Page%20Capture%20User%20Guide%20.pdf).
 
-Dopo aver fatto clic su **salva & fine**, è possibile tornare al centro conformità di Microsoft 365 alla pagina **mapping utenti** nella procedura guidata del connettore.
+Dopo aver fatto clic su **salva & fine** , è possibile tornare al centro conformità di Microsoft 365 alla pagina **mapping utenti** nella procedura guidata del connettore.
 
 ## <a name="step-3-map-users-and-complete-the-connector-setup"></a>Passaggio 3: mappare gli utenti e completare la configurazione del connettore
 
 Per eseguire il mapping degli utenti e completare la configurazione del connettore nel centro conformità di Microsoft 365, attenersi alla procedura seguente:
 
-1. Nella pagina **mappa Web page Capture users to Microsoft 365** Users, abilitare il mapping automatico degli utenti. Gli elementi di acquisizione della pagina Web includono una proprietà denominata *posta elettronica*, che contiene gli indirizzi di posta elettronica per gli utenti dell'organizzazione. Se il connettore può associare questo indirizzo a un utente di Microsoft 365, gli elementi vengono importati nella cassetta postale dell'utente.
+1. Nella pagina **mappa Web page Capture users to Microsoft 365** Users, abilitare il mapping automatico degli utenti. Gli elementi di acquisizione della pagina Web includono una proprietà denominata *posta elettronica* , che contiene gli indirizzi di posta elettronica per gli utenti dell'organizzazione. Se il connettore può associare questo indirizzo a un utente di Microsoft 365, gli elementi vengono importati nella cassetta postale dell'utente.
 
-2. Nella pagina **consenso amministratore** fare clic su **Fornisci consenso**. L'utente verrà reindirizzato al sito Microsoft. Fare clic su **accetta** per fornire il consenso.
+2. Nella pagina **consenso amministratore** fare clic su **Fornisci consenso** . Verrà reindirizzato al sito Microsoft. Fare clic su **accetta** per fornire il consenso.
 
    L'organizzazione deve autorizzare il servizio di importazione di Office 365 per accedere ai dati delle cassette postali nell'organizzazione. Per fornire il consenso dell'amministratore, è necessario essere connessi con le credenziali di un amministratore globale di Microsoft 365 e quindi accettare la richiesta di consenso. Se non è stato eseguito l'accesso come amministratore globale, è possibile accedere a [Questa pagina](https://login.microsoftonline.com/common/oauth2/authorize?client_id=570d0bec-d001-4c4e-985e-3ab17fdc3073&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent) ed eseguire l'accesso con le credenziali di amministratore globale per accettare la richiesta.
 
-3. Fare clic su **Avanti**, rivedere le impostazioni e passare alla pagina **connettori dati** per visualizzare lo stato di avanzamento del processo di importazione per il nuovo connettore.
+3. Fare clic su **Avanti** , rivedere le impostazioni e passare alla pagina **connettori dati** per visualizzare lo stato di avanzamento del processo di importazione per il nuovo connettore.
 
 ## <a name="step-4-monitor-the-webpage-capture-connector"></a>Passaggio 4: monitorare il connettore di acquisizione della pagina Web
 
@@ -85,9 +85,9 @@ Dopo aver creato il connettore di acquisizione della pagina Web, è possibile vi
 
 1. Andare a [https://compliance.microsoft.com](https://compliance.microsoft.com) e fare clic su **connettori dati** nel NAV sinistro.
 
-2. Fare clic sulla scheda **connettori** e quindi selezionare il connettore di **acquisizione della pagina Web** per visualizzare la pagina del riquadro a comparsa, che contiene le proprietà e le informazioni sul connettore.
+2. Fare clic sulla scheda **connettori** e quindi selezionare il connettore di **acquisizione della pagina Web** per visualizzare la pagina del riquadro a comparsa. Questa pagina contiene le proprietà e le informazioni sul connettore.
 
-3. In **stato connettore con origine**fare clic sul collegamento **Scarica log** per aprire o salvare il registro di stato del connettore. Questo log contiene dati che sono stati importati nel cloud Microsoft.
+3. In **stato connettore con origine** fare clic sul collegamento **Scarica log** per aprire o salvare il registro di stato del connettore. Questo log contiene dati che sono stati importati nel cloud Microsoft.
 
 ## <a name="known-issues"></a>Problemi noti
 

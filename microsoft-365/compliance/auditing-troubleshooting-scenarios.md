@@ -6,7 +6,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 audience: Admin
-ms.topic: article
+ms.topic: troubleshooting
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection:
@@ -17,13 +17,13 @@ search.appverid:
 - MOE150
 ms.custom:
 - seo-marvel-apr2020
-description: Informazioni su come utilizzare lo strumento di ricerca del registro di controllo di Office 365 per risolvere i problemi di supporto comuni per gli account di posta elettronica.
-ms.openlocfilehash: e370a0220fcc42854d3cc570e175ab96845f7d4b
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+description: Informazioni su come utilizzare lo strumento di ricerca del registro di controllo di Microsoft 365 per risolvere i problemi di supporto comuni per gli account di posta elettronica.
+ms.openlocfilehash: a32633d401156e00a45d15e4b38622b13bcb87cf
+ms.sourcegitcommit: 21c3e44862854c74e4008cfb661840f069c6b709
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44351129"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "48787592"
 ---
 # <a name="search-the-audit-log-to-investigate-common-support-issues"></a>Eseguire una ricerca nel registro di controllo per esaminare i problemi di supporto comuni
 
@@ -34,6 +34,8 @@ In questo articolo viene descritto come utilizzare lo strumento di ricerca del r
 - Determinare se un utente ha eliminato gli elementi di posta elettronica nella propria cassetta postale
 - Determinare se un utente ha creato una regola di posta in arrivo
 - Esaminare il motivo per cui è stato eseguito un account di accesso corretto da un utente esterno all'organizzazione
+- Cercare le attività delle cassette postali eseguite dagli utenti con licenze non E5
+- Cercare le attività delle cassette postali eseguite dagli utenti delegati
 
 ## <a name="using-the-audit-log-search-tool"></a>Utilizzo dello strumento di ricerca del registro di controllo
 
@@ -41,7 +43,7 @@ Tutti gli scenari di risoluzione dei problemi descritti in questo articolo si ba
 
 ### <a name="permissions-required-to-use-the-audit-log-search-tool"></a>Autorizzazioni necessarie per l'utilizzo dello strumento di ricerca del registro di controllo
 
-Per eseguire una ricerca nel registro di controllo, è necessario essere assegnati al ruolo di controllo di sola visualizzazione o ai registri di controllo in Exchange Online. Per impostazione predefinita, questi ruoli sono assegnati ai gruppi di ruoli Gestione conformità e Gestione organizzazione nella pagina **Autorizzazioni** nell'Interfaccia di amministrazione di Exchange. Gli amministratori globali di Office 365 e Microsoft 365 vengono aggiunti automaticamente come membri del gruppo di ruoli Gestione organizzazione in Exchange Online. Per altre informazioni, vedere [Gestire i gruppi di ruoli in Exchange Online](https://go.microsoft.com/fwlink/p/?LinkID=730688).
+Per eseguire una ricerca nel registro di controllo, è necessario essere assegnati al ruolo View-Only log di controllo o log di controllo in Exchange Online. Per impostazione predefinita, questi ruoli sono assegnati ai gruppi di ruoli Gestione conformità e Gestione organizzazione nella pagina **Autorizzazioni** nell'Interfaccia di amministrazione di Exchange. Gli amministratori globali di Office 365 e Microsoft 365 vengono aggiunti automaticamente come membri del gruppo di ruoli Gestione organizzazione in Exchange Online. Per altre informazioni, vedere [Gestire i gruppi di ruoli in Exchange Online](https://go.microsoft.com/fwlink/p/?LinkID=730688).
 
 ### <a name="running-audit-log-searches"></a>Esecuzione delle ricerche nei registri di controllo
 
@@ -49,7 +51,7 @@ In questa sezione vengono descritte le nozioni di base per la creazione e l'esec
 
 1. Accedere a [https://protection.office.com/unifiedauditlog](https://protection.office.com/unifiedauditlog) e accedere con l'account aziendale o dell'Istituto di istruzione.
     
-    Viene visualizzata la pagina **Ricerca log di controllo**. 
+    Viene visualizzata la pagina **Ricerca log di controllo** . 
     
     ![Configurare i criteri e quindi selezionare Cerca per eseguire la ricerca](../media/8639d09c-2843-44e4-8b4b-9f45974ff7f1.png)
   
@@ -79,7 +81,7 @@ L'indirizzo IP corrispondente a un'attività eseguita da qualsiasi utente è inc
 
 Ecco come configurare una query di ricerca del registro di controllo per questo scenario:
 
-**Attività:** Se pertinente per il caso, selezionare un'attività specifica da cercare. Per la risoluzione dei problemi relativi agli account compromessi, è consigliabile selezionare l' **utente connesso all'attività della cassetta postale** in **attività Cassetta postale di Exchange**. In questo modo vengono restituiti i record di controllo che mostrano l'indirizzo IP utilizzato per l'accesso alla cassetta postale. In caso contrario, lasciare vuoto questo campo per restituire i record di controllo per tutte le attività. 
+**Attività:** Se pertinente per il caso, selezionare un'attività specifica da cercare. Per la risoluzione dei problemi relativi agli account compromessi, è consigliabile selezionare l' **utente connesso all'attività della cassetta postale** in **attività Cassetta postale di Exchange** . In questo modo vengono restituiti i record di controllo che mostrano l'indirizzo IP utilizzato per l'accesso alla cassetta postale. In caso contrario, lasciare vuoto questo campo per restituire i record di controllo per tutte le attività. 
 
 > [!TIP]
 > Se si lascia questo campo vuoto, verranno restituite le attività di **UserLoggedIn** , che è un'attività di Azure Active Directory che indica che un utente ha eseguito l'accesso a un account. Utilizzare il filtro nei risultati della ricerca per visualizzare i record di controllo di **UserLoggedIn** .
@@ -94,7 +96,7 @@ Dopo aver eseguito la ricerca, l'indirizzo IP di ogni attività viene visualizza
 
 ## <a name="determine-who-set-up-email-forwarding-for-a-mailbox"></a>Determinare gli utenti che configurano l'inoltro della posta elettronica per una cassetta postale
 
-Quando l'inoltro della posta elettronica è configurato per una cassetta postale, i messaggi di posta elettronica inviati alla cassetta postale vengono inoltrati a un'altra cassetta postale. I messaggi possono essere inoltrati agli utenti all'interno o all'esterno dell'organizzazione. Quando l'inoltro della posta elettronica è configurato in una cassetta postale, il cmdlet Exchange Online sottostante utilizzato è **Set-Mailbox**.
+Quando l'inoltro della posta elettronica è configurato per una cassetta postale, i messaggi di posta elettronica inviati alla cassetta postale vengono inoltrati a un'altra cassetta postale. I messaggi possono essere inoltrati agli utenti all'interno o all'esterno dell'organizzazione. Quando l'inoltro della posta elettronica è configurato in una cassetta postale, il cmdlet Exchange Online sottostante utilizzato è **Set-Mailbox** .
 
 Ecco come configurare una query di ricerca del registro di controllo per questo scenario:
 
@@ -110,7 +112,7 @@ Dopo aver eseguito la ricerca, selezionare **Filtra i risultati** nella pagina d
 
 ![Filtraggio dei risultati di una ricerca nel registro di controllo](../media/emailforwarding1.png)
 
-A questo punto, è necessario esaminare i dettagli di ogni record di controllo per determinare se l'attività è correlata all'inoltro della posta elettronica. Selezionare il record di controllo per visualizzare la pagina dei **Dettagli** dell'icona a comparsa e quindi selezionare **altre informazioni**. Nella schermata e nelle descrizioni seguenti vengono evidenziate le informazioni che indicano che l'inoltro della posta elettronica è stato impostato sulla cassetta postale.
+A questo punto, è necessario esaminare i dettagli di ogni record di controllo per determinare se l'attività è correlata all'inoltro della posta elettronica. Selezionare il record di controllo per visualizzare la pagina dei **Dettagli** dell'icona a comparsa e quindi selezionare **altre informazioni** . Nella schermata e nelle descrizioni seguenti vengono evidenziate le informazioni che indicano che l'inoltro della posta elettronica è stato impostato sulla cassetta postale.
 
 ![Informazioni dettagliate dal record di controllo](../media/emailforwarding2.png)
 
@@ -118,7 +120,7 @@ a. Nel campo **ObjectID** viene visualizzato l'alias della cassetta postale in c
 
 b. Nel campo **parametri** , il valore *ForwardingSmtpAddress* indica che l'inoltro della posta elettronica è stato impostato sulla cassetta postale. In questo esempio, la posta viene inoltrata all'indirizzo di posta elettronica mike@contoso.com, che si trova all'esterno dell'organizzazione di alpinehouse.onmicrosoft.com.
 
-c. Il valore *true* per il parametro *DeliverToMailboxAndForward* indica che una copia del messaggio viene recapitata a Sarad@alpinehouse.onmicrosoft.com *ed* è inoltrata all'indirizzo di posta elettronica specificato dal parametro *ForwardingSmtpAddress* , che in questo esempio è Mike@contoso.com. Se il valore del parametro *DeliverToMailboxAndForward* è impostato su *false*, la posta elettronica viene inoltrata solo all'indirizzo specificato dal parametro *ForwardingSmtpAddress* . Non viene recapitato alla cassetta postale specificata nel campo **ObjectID** .
+c. Il valore *true* per il parametro *DeliverToMailboxAndForward* indica che una copia del messaggio viene recapitata a Sarad@alpinehouse.onmicrosoft.com *ed* è inoltrata all'indirizzo di posta elettronica specificato dal parametro *ForwardingSmtpAddress* , che in questo esempio è Mike@contoso.com. Se il valore del parametro *DeliverToMailboxAndForward* è impostato su *false* , la posta elettronica viene inoltrata solo all'indirizzo specificato dal parametro *ForwardingSmtpAddress* . Non viene recapitato alla cassetta postale specificata nel campo **ObjectID** .
 
 d. Il campo **userid** indica l'utente che ha impostato l'inoltro della posta elettronica sulla cassetta postale specificata nel campo **ObjectID** . Questo utente viene inoltre visualizzato nella colonna **utente** della pagina dei risultati di ricerca. In questo caso, sembra che il proprietario della cassetta postale abbia impostato l'inoltro della posta elettronica sulla sua cassetta postale.
 
@@ -138,9 +140,9 @@ Le azioni delle cassette postali registrate per impostazione predefinita includo
 
 Ecco come configurare una query di ricerca del registro di controllo per questo scenario:
 
-**Attività:** In **attività Cassetta postale di Exchange**selezionare una o entrambe le attività seguenti:
+**Attività:** In **attività Cassetta postale di Exchange** selezionare una o entrambe le attività seguenti:
 
-- **Messaggi eliminati dalla cartella Posta eliminata:** Questa attività corrisponde all'azione di controllo delle cassette postali di **SoftDelete** . Questa attività viene inoltre registrata quando un utente Elimina definitivamente un elemento selezionandolo e premendo **MAIUSC + CANC**. Dopo l'eliminazione definitiva di un elemento, l'utente può ripristinarlo fino alla scadenza del periodo di conservazione degli elementi eliminati.
+- **Messaggi eliminati dalla cartella Posta eliminata:** Questa attività corrisponde all'azione di controllo delle cassette postali di **SoftDelete** . Questa attività viene inoltre registrata quando un utente Elimina definitivamente un elemento selezionandolo e premendo **MAIUSC + CANC** . Dopo l'eliminazione definitiva di un elemento, l'utente può ripristinarlo fino alla scadenza del periodo di conservazione degli elementi eliminati.
 
 - **Messaggi eliminati dalla cassetta postale:** Questa attività corrisponde all'azione di controllo delle cassette postali di **HardDelete** . Questa operazione viene registrata quando un utente elimina un elemento dalla cartella elementi ripristinabili. Gli amministratori possono utilizzare lo strumento di ricerca contenuto nel centro sicurezza e conformità per cercare e recuperare gli elementi eliminati fino a quando il periodo di conservazione degli elementi eliminati non scade o più a lungo se la cassetta postale dell'utente è in attesa.
 
@@ -150,7 +152,7 @@ Data di **inizio** e **Data di fine:** Selezionare un intervallo di date applica
 
 **File, cartella o sito:** Lasciare vuoto questo campo.
 
-Dopo aver eseguito la ricerca, è possibile filtrare i risultati della ricerca per visualizzare i record di controllo per gli elementi eliminati temporaneamente o per gli elementi eliminati in modo rigido. Selezionare il record di controllo per visualizzare la pagina dei **Dettagli** dell'icona a comparsa e quindi selezionare **altre informazioni**. Ulteriori informazioni sull'elemento eliminato, ad esempio la riga dell'oggetto e la posizione dell'elemento quando è stata eliminata, vengono visualizzate nel campo **AffectedItems** . Nelle schermate seguenti viene mostrato un esempio del campo **AffectedItems** da un elemento eliminato temporaneamente e da un elemento eliminato definitivamente.
+Dopo aver eseguito la ricerca, è possibile filtrare i risultati della ricerca per visualizzare i record di controllo per gli elementi eliminati temporaneamente o per gli elementi eliminati in modo rigido. Selezionare il record di controllo per visualizzare la pagina dei **Dettagli** dell'icona a comparsa e quindi selezionare **altre informazioni** . Ulteriori informazioni sull'elemento eliminato, ad esempio la riga dell'oggetto e la posizione dell'elemento quando è stata eliminata, vengono visualizzate nel campo **AffectedItems** . Nelle schermate seguenti viene mostrato un esempio del campo **AffectedItems** da un elemento eliminato temporaneamente e da un elemento eliminato definitivamente.
 
 **Esempio di campo AffectedItems per l'elemento eliminato temporaneamente**
 
@@ -178,7 +180,7 @@ Quando gli utenti creano una regola di posta in arrivo per la cassetta postale d
 
 Ecco come configurare una query di ricerca del registro di controllo per questo scenario:
 
-**Attività:** In **attività Cassetta postale di Exchange**, selezionare **New-InboxRule creare/modificare/abilitare/disabilitare la regola di posta in arrivo**.
+**Attività:** In **attività Cassetta postale di Exchange** , selezionare **New-InboxRule creare/modificare/abilitare/disabilitare la regola di posta in arrivo** .
 
 Data di **inizio** e **Data di fine:** Selezionare un intervallo di date applicabile all'inchiesta.
 
@@ -186,7 +188,7 @@ Data di **inizio** e **Data di fine:** Selezionare un intervallo di date applica
 
 **File, cartella o sito:** Lasciare vuoto questo campo.
 
-Dopo aver eseguito la ricerca, i record di controllo per questa attività vengono visualizzati nei risultati della ricerca. Selezionare un record di controllo per visualizzare la pagina dei **Dettagli** del riquadro a comparsa e quindi selezionare **altre informazioni**. Le informazioni sulle impostazioni delle regole di posta in arrivo vengono visualizzate nel campo **parametri** . Nella schermata e nelle descrizioni seguenti vengono evidenziate le informazioni sulle regole di posta in arrivo.
+Dopo aver eseguito la ricerca, i record di controllo per questa attività vengono visualizzati nei risultati della ricerca. Selezionare un record di controllo per visualizzare la pagina dei **Dettagli** del riquadro a comparsa e quindi selezionare **altre informazioni** . Le informazioni sulle impostazioni delle regole di posta in arrivo vengono visualizzate nel campo **parametri** . Nella schermata e nelle descrizioni seguenti vengono evidenziate le informazioni sulle regole di posta in arrivo.
 
 ![Record di controllo per la nuova regola di posta in arrivo](../media/NewInboxRuleRecord.png)
 
@@ -194,20 +196,20 @@ a. Nel campo **ObjectID** viene visualizzato il nome completo della regola di po
 
 b. Nel campo **parametri** viene visualizzata la condizione della regola di posta in arrivo. In questo esempio, la condizione è specificata dal parametro *from* . Il valore definito per il parametro *from* indica che la regola di posta in arrivo agisce sul messaggio di posta elettronica inviato da admin@alpinehouse.onmicrosoft.com. Per un elenco completo dei parametri che possono essere utilizzati per definire le condizioni delle regole di posta in arrivo, vedere l'articolo [New-InboxRule](https://docs.microsoft.com/powershell/module/exchange/new-inboxrule) .
 
-c. Il parametro *MoveToFolder* consente di specificare l'azione per la regola di posta in arrivo. In questo esempio, i messaggi ricevuti da admin@alpinehouse.onmicrosoft.com vengono spostati nella cartella denominata *AdminSearch*. Per un elenco completo dei parametri che possono essere utilizzati per definire l'azione di una regola di posta in arrivo, vedere anche l'articolo [New-InboxRule](https://docs.microsoft.com/powershell/module/exchange/new-inboxrule) .
+c. Il parametro *MoveToFolder* consente di specificare l'azione per la regola di posta in arrivo. In questo esempio, i messaggi ricevuti da admin@alpinehouse.onmicrosoft.com vengono spostati nella cartella denominata *AdminSearch* . Per un elenco completo dei parametri che possono essere utilizzati per definire l'azione di una regola di posta in arrivo, vedere anche l'articolo [New-InboxRule](https://docs.microsoft.com/powershell/module/exchange/new-inboxrule) .
 
 d. Il campo **userid** indica l'utente che ha creato la regola di posta in arrivo specificata nel campo **ObjectID** . Questo utente viene inoltre visualizzato nella colonna **utente** della pagina dei risultati di ricerca.
 
 ## <a name="investigate-why-there-was-a-successful-login-by-a-user-outside-your-organization"></a>Esaminare il motivo per cui è stato eseguito un account di accesso corretto da un utente esterno all'organizzazione
 
-Quando si esaminano i record di controllo nel log di controllo, è possibile che vengano visualizzati record che indicano che un utente esterno è stato autenticato da Azure Active Directory e che ha eseguito correttamente l'accesso all'organizzazione. Ad esempio, un amministratore in contoso.onmicrosoft.com può visualizzare un record di controllo che indica che un utente di un'organizzazione diversa (ad esempio fabrikam.onmicrosoft.com) ha eseguito correttamente l'accesso a contoso.onmicrosoft.com. Analogamente, è possibile che vengano visualizzati i record di controllo che indicano che gli utenti con un account Microsoft (MSA), ad esempio Outlook.com o Live.com, hanno effettuato correttamente l'accesso all'organizzazione. In questi casi, l'attività controllata è l' **utente**che ha effettuato l'accesso. 
+Quando si esaminano i record di controllo nel log di controllo, è possibile che vengano visualizzati record che indicano che un utente esterno è stato autenticato da Azure Active Directory e che ha eseguito correttamente l'accesso all'organizzazione. Ad esempio, un amministratore in contoso.onmicrosoft.com può visualizzare un record di controllo che indica che un utente di un'organizzazione diversa (ad esempio fabrikam.onmicrosoft.com) ha eseguito correttamente l'accesso a contoso.onmicrosoft.com. Analogamente, è possibile che vengano visualizzati i record di controllo che indicano che gli utenti con un account Microsoft (MSA), ad esempio Outlook.com o Live.com, hanno effettuato correttamente l'accesso all'organizzazione. In questi casi, l'attività controllata è l' **utente** che ha effettuato l'accesso. 
 
 Si tratta di un comportamento legato alla progettazione del prodotto. Azure Active Directory (Azure AD), il servizio directory, consente di fare qualcosa chiamato *autenticazione pass-through* quando un utente esterno tenta di accedere a un sito di SharePoint o a una posizione di OneDrive nell'organizzazione. Quando l'utente esterno tenta di eseguire questa operazione, viene richiesto di immettere le proprie credenziali. Azure Active Directory utilizza le credenziali per autenticare l'utente, in modo che solo Azure AD verifichi che l'utente sia quello che dicono di essere. L'indicazione dell'account di accesso con esito positivo nel record di controllo è il risultato di Azure AD Authenticating the user. L'account di accesso con esito positivo non significa che l'utente sia stato in grado di accedere alle risorse o di eseguire altre azioni nell'organizzazione. Indica solo che l'utente è stato autenticato da Azure AD. Per consentire a un utente pass-through di accedere alle risorse di SharePoint o OneDrive, un utente dell'organizzazione deve condividere in modo esplicito una risorsa con l'utente esterno inviando un collegamento di condivisione di un invito o di condivisione anonima. 
 
 > [!NOTE]
-> Azure AD consente l'autenticazione pass-through solo per *le applicazioni di terze parti*, ad esempio SharePoint Online e OneDrive for business. Non è consentito per altre applicazioni di terze parti.
+> Azure AD consente l'autenticazione pass-through solo per *le applicazioni di terze parti* , ad esempio SharePoint Online e OneDrive for business. Non è consentito per altre applicazioni di terze parti.
 
-Di seguito è riportato un esempio e le descrizioni delle proprietà rilevanti in un record di controllo per un utente che ha **eseguito l'accesso** a un evento che è il risultato dell'autenticazione pass-through. Selezionare il record di controllo per visualizzare la pagina dei **Dettagli** dell'icona a comparsa e quindi selezionare **altre informazioni**.
+Di seguito è riportato un esempio e le descrizioni delle proprietà rilevanti in un record di controllo per un utente che ha **eseguito l'accesso** a un evento che è il risultato dell'autenticazione pass-through. Selezionare il record di controllo per visualizzare la pagina dei **Dettagli** dell'icona a comparsa e quindi selezionare **altre informazioni** .
 
 ![Esempio di record di controllo per l'autenticazione pass-thru completata](../media/PassThroughAuth1.png)
 
@@ -229,7 +231,6 @@ Di seguito sono riportati due esempi di scenari che comportano l'accesso di un *
 
   - Un utente con un account aziendale o dell'Istituto di istruzione in un'organizzazione (ad esempio pilarp@fabrikam.onmicrosoft.com) ha tentato di accedere a un sito di SharePoint in contoso.onmicrosoft.com e non è presente un account utente Guest corrispondente per pilarp@fabrikam.com in contoso.onmicrosoft.com.
 
-
 ### <a name="tips-for-investigating-successful-logins-resulting-from-pass-through-authentication"></a>Suggerimenti per l'analisi degli account di accesso riusciti risultanti dall'autenticazione pass-through
 
 - Eseguire una ricerca nel registro di controllo per le attività eseguite dall'utente esterno identificato nell'utente che ha eseguito l' **accesso** al record di controllo. Digitare l'UPN per l'utente esterno nella casella **utenti** e utilizzare un intervallo di date se pertinente allo scenario. Ad esempio, è possibile creare una ricerca utilizzando i seguenti criteri di ricerca:
@@ -240,4 +241,55 @@ Di seguito sono riportati due esempi di scenari che comportano l'accesso di un *
 
 - Cercare le attività di condivisione di SharePoint che indichino che un file è stato condiviso con l'utente esterno identificato da un utente che ha **eseguito l'accesso al** record di controllo. Per altre informazioni, vedere [Usare il controllo della condivisione nel log di controllo](use-sharing-auditing.md).
 
-- Esportare i risultati della ricerca del registro di controllo che contengono record rilevanti per l'analisi in modo che sia possibile utilizzare Excel per cercare altre attività correlate all'utente esterno. Per ulteriori informazioni, vedere [esportare, configurare e visualizzare i record del registro di controllo](export-view-audit-log-records.md).
+- Esportare i risultati della ricerca del registro di controllo che contengono record rilevanti per l'analisi in modo che sia possibile utilizzare Excel per cercare altre attività correlate all'utente esterno. Per ulteriori informazioni, vedere  [esportare, configurare e visualizzare i record del registro di controllo](export-view-audit-log-records.md).
+
+## <a name="search-for-mailbox-activities-performed-by-users-with-non-e5-licenses"></a>Cercare le attività delle cassette postali eseguite dagli utenti con licenze non E5
+
+Anche quando il [controllo delle cassette postali](enable-mailbox-auditing.md) è attivato per impostazione predefinita per l'organizzazione, è possibile notare che gli eventi di controllo delle cassette postali per alcuni utenti non vengono trovati nelle ricerche dei log di controllo utilizzando il centro conformità, il cmdlet **Search-UNIFIEDAUDITLOG** o l'API di attività di gestione di Office 365. Il motivo è che gli eventi di controllo delle cassette postali verranno restituiti solo per gli utenti con licenze E5 quando uno dei metodi precedenti per la ricerca nel registro di controllo unificato.
+
+Per recuperare i record del registro di controllo delle cassette postali per gli utenti non E5, è possibile eseguire una delle soluzioni alternative seguenti:
+
+- Abilitare manualmente il controllo delle cassette postali su singole cassette (eseguire il `Set-Mailbox -Identity <MailboxIdentity> -AuditEnabled $true` comando in PowerShell di Exchange Online). Dopo aver eseguito questa operazione, cercare le attività di controllo delle cassette postali utilizzando il centro conformità, il cmdlet **Search-UnifiedAuditLog** o l'API di attività di gestione di Office 365.
+  
+  > [!NOTE]
+  > Se il controllo delle cassette postali è già abilitato per la cassetta postale, ma le ricerche non restituiscono alcun risultato, modificare il valore del parametro _AuditEnabled consente_ `$false` e quindi tornare a `$true` .
+  
+- Utilizzare i cmdlet seguenti in PowerShell di Exchange Online:
+
+  - [Search-MailboxAuditLog](https://docs.microsoft.com/powershell/module/exchange/search-mailboxauditlog) per eseguire una ricerca nel registro di controllo della cassetta postale per utenti specifici.
+
+  - [New-MailboxAuditLogSearch](https://docs.microsoft.com/powershell/module/exchange/new-mailboxauditlogsearch) per eseguire una ricerca nel log di controllo delle cassette postali per utenti specifici e per inviare i risultati tramite posta elettronica ai destinatari specificati.
+
+## <a name="search-for-mailbox-activities-performed-in-a-specific-mailbox-including-shared-mailboxes"></a>Cercare le attività delle cassette postali eseguite in una cassetta postale specifica (incluse le cassette postali condivise)
+
+Quando si utilizza l'elenco a discesa **degli utenti** nello strumento di ricerca del registro di controllo nel centro conformità o nel comando **Search-UnifiedAuditLog-userids** in Exchange Online PowerShell, è possibile cercare le attività eseguite da un utente specifico. Per le attività di controllo delle cassette postali, questo tipo di ricerca cercherà le attività eseguite dall'utente specificato. Non garantisce che tutte le attività eseguite nella stessa cassetta postale vengano restituite nei risultati della ricerca. Ad esempio, una ricerca del registro di controllo non restituirà i record di controllo per le attività eseguite da un utente delegato perché la ricerca di attività delle cassette postali eseguite da un utente specifico non restituirà attività eseguite da un utente delegato a cui sono state assegnate le autorizzazioni per accedere alla cassetta postale di un altro utente. (Un utente delegato è una persona a cui è stata assegnata l'autorizzazione per la cassetta postale Senda, SendOnBehalf o FullAccess per la cassetta postale di un altro utente.)
+
+Inoltre, l'utilizzo dell'elenco a discesa **utente** nello strumento di ricerca del registro di controllo o di **Search-UnifiedAuditLog-userids** non restituirà i risultati per le attività eseguite in una cassetta postale condivisa.
+
+Per cercare le attività eseguite in una cassetta postale specifica o per cercare le attività eseguite in una cassetta postale condivisa, utilizzare la sintassi seguente quando si esegue il cmdlet **Search-UnifiedAuditLog** :
+
+```powershell
+Search-UnifiedAuditLog  -StartDate <date> -EndDate <date> -FreeText (Get-Mailbox <mailbox identity).ExchangeGuid
+```
+
+Ad esempio, il comando seguente restituisce i record di controllo per le attività eseguite nella cassetta postale condivisa del team di conformità contoso tra il 2020 agosto e l'ottobre 2020:
+
+```powershell
+Search-UnifiedAuditLog  -StartDate 08/01/2020 -EndDate 10/31/2020 -FreeText (Get-Mailbox complianceteam@contoso.onmicrosoft.com).ExchangeGuid
+```
+
+In alternativa, è possibile utilizzare il cmdlet **Search-MailboxAuditLog** per cercare i record di controllo per le attività eseguite in una cassetta postale specifica. Questo include la ricerca di attività eseguite in una cassetta postale condivisa.
+
+Nell'esempio seguente vengono restituiti i record del registro di controllo della cassetta postale per le attività eseguite nella cassetta postale condivisa del team di conformità contoso:
+
+```powershell
+Search-MailboxAuditLog -Identity complianceteam@contoso.onmicrosoft.com -StartDate 08/01/2020 -EndDate 10/31/2020 -ShowDetails
+```
+
+Nell'esempio seguente vengono restituiti i record del registro di controllo delle cassette postali per attività eseguite nella cassetta postale specificata dagli utenti delegati:
+
+```powershell
+Search-MailboxAuditLog -Identity <mailbox identity> -StartDate <date> -EndDate <date> -LogonTypes Delegate -ShowDetails
+```
+
+È inoltre possibile utilizzare il cmdlet **New-MailboxAuditLogSearch** per eseguire una ricerca nel registro di controllo per una cassetta postale specifica e per inviare i risultati tramite posta elettronica ai destinatari specificati.
