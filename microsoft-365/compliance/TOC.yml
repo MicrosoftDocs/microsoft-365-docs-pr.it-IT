@@ -89,8 +89,6 @@
           href: sensitive-information-type-entity-definitions.md
         - name: Elementi cercati dalle funzioni dei criteri di prevenzione della perdita dei dati
           href: what-the-dlp-functions-look-for.md
-        - name: Video della panoramica completa sulla personalizzazione della prevenzione della perdita dei dati
-          href: 'https://go.microsoft.com/fwlink/?linkid=852306'
         - name: Personalizzare una tipologia integrata di informazioni sensibili
           href: customize-a-built-in-sensitive-information-type.md
         - name: Tipi di informazioni sensibili personalizzati
@@ -222,12 +220,26 @@
           href: data-loss-prevention-policies.md
         - name: DLP e Microsoft Teams
           href: dlp-microsoft-teams.md
-        - name: Informazioni sulla prevenzione della perdita di dati degli endpoint (anteprima)
+        - name: Informazioni sulla prevenzione della perdita di dati degli endpoint
           href: endpoint-dlp-learn-about.md
-        - name: Introduzione alla prevenzione della perdita di dati degli endpoint (anteprima)
+        - name: Introduzione alla prevenzione della perdita di dati degli endpoint
           href: endpoint-dlp-getting-started.md
-        - name: Uso della prevenzione della perdita di dati degli endpoint (anteprima)
+        - name: Uso della prevenzione della perdita di dati degli endpoint
           href: endpoint-dlp-using.md
+        - name: Strumenti e metodi di onboarding della prevenzione della perdita di dati degli endpoint per i dispositivi Windows 10
+          items:
+            - name: Strumenti e metodi di onboarding per i dispositivi Windows 10
+              href: dlp-configure-endpoints.md
+            - name: Onboarding di dispositivi Windows 10 tramite Criteri di gruppo
+              href: dlp-configure-endpoints-gp.md
+            - name: Onboarding di dispositivi Windows 10 con gli strumenti di Gestione dispositivi mobili
+              href: dlp-configure-endpoints-mdm.md
+            - name: Onboarding di dispositivi Windows 10 con Configuration Manager
+              href: dlp-configure-endpoints-sccm.md
+            - name: Onboarding di dispositivi Windows 10 con uno script locale
+              href: dlp-configure-endpoints-script.md
+            - name: Onboarding di dispositivi VDI (Virtual Desktop Infrastructure) non persistenti
+              href: dlp-configure-endpoints-vdi.md
         - name: Introduzione alle raccomandazioni per i criteri di prevenzione della perdita dei dati
           href: get-started-with-dlp-policy-recommendations.md
         - name: Introduzione ai criteri di prevenzione della perdita dei dati predefiniti

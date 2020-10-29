@@ -20,12 +20,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
 description: Ottenere un report periodico sulle modalità di utilizzo dei servizi di Microsoft 365 da parte degli utenti dell'organizzazione. Il dashboard Informazioni generali utilizzo consente di analizzare ogni grafico per ottenere approfondimenti.
-ms.openlocfilehash: 4356b287afa56201da7cb644a4056d4c975964e5
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: dee0f3e586c49c25daafe999d065e743babf020e
+ms.sourcegitcommit: c51de5e1a4cb9c4a7a9854a4226b32453d9e73e0
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48637008"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "48779121"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center"></a>Report di Microsoft 365 nell'interfaccia di amministrazione
 
@@ -48,13 +48,13 @@ Guardare questo video per una panoramica sull'uso dei report:
 
 ::: moniker range="o365-germany"
 
-1. Nell'**interfaccia di amministrazione** passare alla pagina <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">Report</a> **\>Utilizzo **.
+1. Nell' **interfaccia di amministrazione** passare alla pagina <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">Report</a> **\>Utilizzo** .
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. Nell'**interfaccia di amministrazione** passare alla pagina <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">Report</a> **\>Utilizzo **.
+1. Nell' **interfaccia di amministrazione** passare alla pagina <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">Report</a> **\>Utilizzo** .
 
 ::: moniker-end
 
@@ -130,19 +130,37 @@ In base all'abbonamento, questi sono i report disponibili.
   
 ::: moniker range="o365-worldwide"
 
-- [Attività in Yammer](yammer-activity-report.md)
+- [Attività in Yammer](yammer-activity-report-ww.md)
 
 ::: moniker-end
 
 ::: moniker range="o365-worldwide"
 
-- [Utilizzo di dispositivi Yammer](yammer-device-usage-report.md)
+- [Attività di Yammer per il Governo degli Stati Uniti](yammer-activity-report.md)
 
 ::: moniker-end
 
 ::: moniker range="o365-worldwide"
 
-- [Report delle attività dei gruppi di Yammer](yammer-groups-activity-report.md)
+- [Utilizzo di dispositivi Yammer](yammer-device-usage-report-ww.md)
+
+::: moniker-end
+
+::: moniker range="o365-worldwide"
+
+- [Utilizzo dei dispositivi Yammer per il Governo degli Stati Uniti](yammer-device-usage-report.md)
+
+::: moniker-end
+
+::: moniker range="o365-worldwide"
+
+- [Report delle attività dei gruppi di Yammer](yammer-groups-activity-report-ww.md)
+
+::: moniker-end
+
+::: moniker range="o365-worldwide"
+
+- [Report delle attività dei gruppi di Yammer per il Governo degli Stati Uniti](yammer-groups-activity-report.md)
 
 ::: moniker-end
 
@@ -174,7 +192,7 @@ In base all'abbonamento, questi sono i report disponibili.
 
 - Per vedere quante sono le licenze assegnate e quelle non assegnate, passare alla pagina **Fatturazione**\><a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank"> Licenze</a> nell'interfaccia di amministrazione.
     
-- Per vedere gli utenti con licenza, senza licenza o guest, nell'interfaccia di amministrazione passare alla pagina **Utenti ** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utenti attivi</a>. 
+- Per vedere gli utenti con licenza, senza licenza o guest, nell'interfaccia di amministrazione passare alla pagina **Utenti** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utenti attivi</a>. 
   
 ## <a name="how-to-view-usage-information-for-a-specific-user"></a>Visualizzare le informazioni sull'utilizzo per un utente specifico
 
@@ -188,7 +206,7 @@ Se si vogliono nascondere le informazioni a livello di utente quando si generano
   
 1. Nell'interfaccia di amministrazione passare a **Impostazioni** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">Servizi &amp; componenti aggiuntivi</a>.
 
-2. Selezionare **Reports**. 
+2. Selezionare **Reports** . 
   
 3. Nel riquadro **Reports** selezionare le opzioni desiderate e poi salvare le modifiche.
   

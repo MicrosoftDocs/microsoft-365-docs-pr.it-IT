@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: Usare il Centro sicurezza e conformità di Office 365 o il Centro conformità Microsoft 365 per eseguire una ricerca nel log di controllo unificato e vedere le attività di utenti e amministratori nell'organizzazione.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e427cb2eaa282ebac46b47c6dd97718039c12cb8
-ms.sourcegitcommit: 3cdb670f10519f7af4015731e7910954ba9f70dc
+ms.openlocfilehash: 6c2ffc926114b8ffc2ebf2005b98e549ac03cf26
+ms.sourcegitcommit: 21c3e44862854c74e4008cfb661840f069c6b709
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "48753345"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "48787582"
 ---
 # <a name="search-the-audit-log-in-the-compliance-center"></a>Eseguire una ricerca nel log di controllo nel Centro conformità
 
@@ -672,6 +672,7 @@ La tabella seguente elenca le attività che possono essere registrate tramite la
 |Messaggi ripuliti dalla cassetta postale|HardDelete|Un messaggio è stato eliminato dalla cartella Elementi ripristinabili (eliminato in modo definitivo dalla cassetta postale).|
 |Rimosse autorizzazioni delegate per le cassette postali|Remove-MailboxPermission|Un amministratore ha rimosso l'autorizzazione FullAccess (che era assegnata a un delegato) dalla cassetta postale di una persona. Dopo aver rimosso l'autorizzazione FullAccess, il delegato non riesce ad aprire la cassetta postale dell'altra persona o ad accedere a qualsiasi suo contenuto.|
 |Autorizzazioni rimosse dalla cartella|RemoveFolderPermissions|Un'autorizzazione per una cartella è stata rimossa. Le autorizzazioni per le cartelle determinano quali utenti dell'organizzazione possono accedere alle cartelle di una cassetta postale e ai messaggi che contengono.|
+|Messaggio inviato|Send|Un messaggio è stato inviato, inoltrato o ha ricevuto risposta. Hanno accesso a questa attività solo per gli utenti con una licenza di Office 365 o Microsoft 365 E5. Per altre informazioni, vedere la sezione "Accesso agli eventi cruciali per le indagini" in [Audit avanzato](advanced-audit.md#access-to-crucial-events-for-investigations).|
 |Messaggio inviato con autorizzazioni Invia come|SendAs|Un messaggio è stato inviato con l'autorizzazione SendAs, Ciò significa che un altro utente ha inviato il messaggio come se provenisse dal proprietario della cassetta postale.|
 |Messaggio inviato con autorizzazioni Invia per conto di|SendOnBehalf|Un messaggio è stato inviato con l'autorizzazione SendOnBehalf, Ciò significa che un altro utente ha inviato il messaggio per conto del proprietario della cassetta postale. Il messaggio indica al destinatario per conto di chi è stato inviato e chi effettivamente lo ha inviato.|
 |Regole della posta in arrivo aggiornate dal client di Outlook|UpdateInboxRules|Il proprietario di una cassetta postale o un altro utente con accesso alla cassetta postale ha modificato una regola di posta in arrivo nel client di Outlook.|
