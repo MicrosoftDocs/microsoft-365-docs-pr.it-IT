@@ -9,16 +9,16 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 2c9638dc7b8c6d095b87cf81114f3812c8362597
-ms.sourcegitcommit: 3b1bd8aa1430bc9565743a446bbc27b199f30f73
+ms.openlocfilehash: a6dec9473ee632b74bb79e50156cedff53a3cba3
+ms.sourcegitcommit: fa26da0be667d4be0121c52b05488dc76c5d626c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48656140"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "48795118"
 ---
 # <a name="fix-issues-found-by-the-readiness-assessment-tool"></a>Risolvere i problemi rilevati dallo strumento di valutazione della conformità
 
-Per ogni controllo, lo strumento riporterà uno dei tre possibili risultati:
+Per ogni controllo, lo strumento riporterà uno dei quattro possibili risultati:
 
 
 |Risultato  |Significato  |
@@ -26,6 +26,7 @@ Per ogni controllo, lo strumento riporterà uno dei tre possibili risultati:
 |Pronto     | Non è necessario eseguire alcuna operazione prima di completare la registrazione.        |
 |Consulenza    | Seguire la procedura descritta nello strumento o in questo articolo per la migliore esperienza di registrazione e per gli utenti. È *possibile* completare la registrazione, ma è necessario correggere questi problemi prima di distribuire il primo dispositivo.        |
 |Non pronto | *La registrazione avrà esito negativo se non si correggeranno questi problemi.* Seguire la procedura descritta nello strumento o in questo articolo per risolverli.        |
+|Error | Il ruolo di Azure Active Director (AD) utilizzato non dispone di autorizzazioni sufficienti per eseguire questo controllo. |
 
 ## <a name="microsoft-intune-settings"></a>Impostazioni di Microsoft Intune
 
@@ -72,6 +73,16 @@ Si dispone di almeno un criterio di accesso condizionale destinato a tutti gli u
 
 Verificare che tutti i criteri di accesso condizionale siano esclusi dal gruppo di Azure AD degli **account di servizio sul posto di lavoro moderno** . Per i passaggi, vedere [regolare l'accesso condizionale](https://docs.microsoft.com/microsoft-365/managed-desktop/get-started/conditional-access). Il gruppo di Azure AD dei **servizi di ambiente di lavoro moderno** è un gruppo dinamico creato per il servizio quando si esegue la registrazione. Sarà necessario tornare a escludere questo gruppo dopo la registrazione. Per ulteriori informazioni su questi account di servizio, vedere [standard operative Procedures](../service-description/operations-and-monitoring.md#standard-operating-procedures).
 
+**Errore**
+
+Il ruolo amministratore di Intune non dispone di autorizzazioni sufficienti per questo controllo. Sarà inoltre necessario uno qualsiasi dei ruoli di Azure AD assegnati per eseguire il controllo:
+
+- Ruolo con autorizzazioni di lettura per la sicurezza
+- Amministratore della sicurezza
+- Amministratore dell'accesso condizionale
+- Ruolo con autorizzazioni di lettura globali
+- Amministratore di dispositivi
+
 
 ### <a name="device-compliance-policies"></a>Criteri di conformità del dispositivo
 
@@ -107,7 +118,7 @@ I dispositivi Microsoft Managed Desktop devono essere autorizzati a eseguire la 
 
 **Non pronto**
 
-Seguire la procedura descritta in [set Restriction](https://docs.microsoft.com/mem/intune/enrollment/enrollment-restrictions-set) **consentitions**to change the setting to allow.
+Seguire la procedura descritta in [set Restriction](https://docs.microsoft.com/mem/intune/enrollment/enrollment-restrictions-set) **consentitions** to change the setting to allow.
 
 
 ### <a name="enrollment-status-page"></a>Pagina stato registrazione
@@ -116,7 +127,7 @@ La pagina stato di registrazione (ESP) è attualmente abilitata. Se si partecipa
 
 **Non pronto**
 
-Si dispone del set di profili ESP predefinito per **visualizzare lo stato di avanzamento della configurazione dei profili e delle app**. Disabilitare questa impostazione attenendosi alla procedura descritta in [impostare la pagina stato di registrazione](https://docs.microsoft.com/mem/intune/enrollment/windows-enrollment-status).
+Si dispone del set di profili ESP predefinito per **visualizzare lo stato di avanzamento della configurazione dei profili e delle app** . Disabilitare questa impostazione attenendosi alla procedura descritta in [impostare la pagina stato di registrazione](https://docs.microsoft.com/mem/intune/enrollment/windows-enrollment-status).
 
 **Consulenza**
 
@@ -128,7 +139,7 @@ I dispositivi Windows 10 nell'organizzazione di Azure AD devono essere registrat
 
 **Non pronto**
 
-Gli utenti dell'organizzazione di Azure AD non vengono automaticamente registrati in Microsoft Intune. Impostare l'ambito dell'utente MDM su **alcuni** o su **tutti**. Se si sceglie. Alcuni * *, ritornati dopo la registrazione e seleziona la pagina di **lavoro moderna-tutto** il gruppo di Azure ad per i **gruppi**.
+Gli utenti dell'organizzazione di Azure AD non vengono automaticamente registrati in Microsoft Intune. Impostare l'ambito dell'utente MDM su **alcuni** o su **tutti** . Se si sceglie **alcuni** , tornare dopo la registrazione e selezionare la **moderna area di lavoro-tutto** il gruppo di Azure ad per i **gruppi** .
 
 
 ### <a name="microsoft-store-for-business"></a>Microsoft Store per le aziende
@@ -152,6 +163,15 @@ Si dispone di alcuni criteri di autenticazione a più fattori (AMF) impostati co
 
 Verificare che tutti i criteri di accesso condizionale che richiedono l'AMF escludano la **moderna area di lavoro-tutti i** gruppi di Azure ad. Per ulteriori informazioni, vedere [criteri di accesso condizionale](#conditional-access-policies) e [accesso condizionale: require Mae per tutti gli utenti](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa). La **moderna area di lavoro-tutti i** gruppi di Azure ad è un gruppo dinamico creato quando ci si iscrive in Microsoft Managed Desktop, quindi sarà necessario tornare a escludere questo gruppo dopo la registrazione.
 
+**Errore**
+
+Il ruolo amministratore di Intune non dispone di autorizzazioni sufficienti per questo controllo. Sarà inoltre necessario uno qualsiasi dei ruoli di Azure AD assegnati per eseguire il controllo:
+
+- Ruolo con autorizzazioni di lettura per la sicurezza
+- Amministratore della sicurezza
+- Amministratore dell'accesso condizionale
+- Ruolo con autorizzazioni di lettura globali
+- Amministratore di dispositivi
 
 
 ### <a name="powershell-scripts"></a>Script di PowerShell
@@ -234,7 +254,7 @@ Si consiglia come controllare un'impostazione che, se impostata su "false", potr
 
 **Consulenza**
 
-Verificare che **AllowAdHocSubscriptions** sia impostato su **true**. In caso contrario, il roaming dello stato dell'organizzazione potrebbe non funzionare. Per ulteriori informazioni, vedere [Set-MsolCompanySettings](https://docs.microsoft.com/powershell/module/msonline/set-msolcompanysettings?view=azureadps-1.0).
+Verificare che **AllowAdHocSubscriptions** sia impostato su **true** . In caso contrario, il roaming dello stato dell'organizzazione potrebbe non funzionare. Per ulteriori informazioni, vedere [Set-MsolCompanySettings](https://docs.microsoft.com/powershell/module/msonline/set-msolcompanysettings?view=azureadps-1.0).
 
 
 ### <a name="enterprise-state-roaming"></a>Enterprise State Roaming
@@ -297,6 +317,11 @@ SSPR deve essere abilitato per tutti gli utenti. In caso contrario, gli account 
 **Consulenza**
 
 Verificare che l'impostazione SSPR **Selected** includa dispositivi Microsoft Managed Desktop.
+
+**Errore**
+
+Il ruolo amministratore di Intune non dispone di autorizzazioni sufficienti per questo controllo. Per eseguire il controllo, è necessario anche il ruolo di Azure AD di Reader di report assegnato.
+
 
 ### <a name="standard-user-role"></a>Ruolo utente standard
 

@@ -17,12 +17,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: Informazioni su come chiudere l'account con Microsoft.
-ms.openlocfilehash: 9545c43ee27fb000149776527030b04b5e807a5c
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 0fed7df54a21b3696e81915af78e377e855bfd12
+ms.sourcegitcommit: fa26da0be667d4be0121c52b05488dc76c5d626c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48638376"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "48794898"
 ---
 # <a name="close-your-account"></a>Chiudere il proprio account
 
@@ -51,9 +51,9 @@ Se nell'organizzazione viene utilizzato Active Directory che esegue la sincroniz
 
 1. Nell'interfaccia di amministrazione, passare alla pagina **Fatturazione** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">I tuoi prodotti</a>.
 
-2. Se l'elenco abbonamenti è in visualizzazione **tabella** , fare clic su **schede**sulla destra.
+2. Se l'elenco abbonamenti è in visualizzazione **tabella** , fare clic su **schede** sulla destra.
 
-3. Per trovare un abbonamento attivo e nella sezione **impostazioni & azioni** , selezionare **Annulla sottoscrizione**.
+3. Per trovare un abbonamento attivo e nella sezione **impostazioni & azioni** , selezionare **Annulla sottoscrizione** .
 
 4. Seguire le istruzioni visualizzate per completare il processo.
 
@@ -63,13 +63,13 @@ Se nell'organizzazione viene utilizzato Active Directory che esegue la sincroniz
 
 1. Nell'interfaccia di amministrazione, passare alla pagina **Fatturazione** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">I tuoi prodotti</a>.
 
-2. Se l'elenco abbonamenti è in visualizzazione **tabella** , fare clic su **schede**sulla destra.
+2. Se l'elenco abbonamenti è in visualizzazione **tabella** , fare clic su **schede** sulla destra.
 
-3. Accanto a **stato sottoscrizione**, selezionare **disattivata**.
+3. Accanto a **stato sottoscrizione** , selezionare **disattivata** .
 
-4. Trovare una sottoscrizione disabilitata e nella sezione **impostazioni & azioni** selezionare **Elimina**.
+4. Trovare una sottoscrizione disabilitata e nella sezione **impostazioni & azioni** selezionare **Elimina** .
 
-5. Nella finestra di dialogo **Elimina sottoscrizione** selezionare la casella di controllo **l'impatto** , quindi selezionare **Elimina sottoscrizione**.
+5. Nella finestra di dialogo **Elimina sottoscrizione** selezionare la casella di controllo **l'impatto** , quindi selezionare **Elimina sottoscrizione** .
 
 6. Per ogni sottoscrizione disabilitata, ripetere i passaggi 4 e 5 finché tutte le sottoscrizioni non sono state eliminate.
 
@@ -77,7 +77,7 @@ Se nell'organizzazione viene utilizzato Active Directory che esegue la sincroniz
 
 1. Nell'interfaccia di amministrazione, andare alla pagina **utenti**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">attivi</a> .
 
-2. Scegliere **l'autenticazione a più fattori**.
+2. Scegliere **l'autenticazione a più fattori** .
 
 3. Nella pagina autenticazione a più fattori disabilitare tutti gli account tranne l'account di amministratore globale attualmente in uso.
 
@@ -87,12 +87,12 @@ Se nell'organizzazione viene utilizzato Active Directory che esegue la sincroniz
 
 1. Accedere all'interfaccia di <a href="https://aad.portal.azure.com/" target="_blank">amministrazione di Azure ad</a> con un account di amministratore globale.
 
-2. Selezionare **Azure Active Directory**.
+2. Selezionare **Azure Active Directory** .
 
-3. Passare alla directory che si desidera eliminare.
+3. Passare all'organizzazione che si desidera eliminare.
 
-4. Selezionare **Elimina directory**.
+4. Selezionare **Elimina tenant** .
 
-5. Se la directory ha esito negativo su uno o più controlli, viene visualizzato un collegamento a ulteriori informazioni su come superare i controlli. Dopo aver superato tutti i controlli, selezionare **Elimina** per completare il processo.
+5. Se l'organizzazione ha esito negativo, viene visualizzato un collegamento a ulteriori informazioni su come superare i controlli. Dopo aver superato tutti i controlli, selezionare **Elimina** per completare il processo.
 
 Dopo aver completato questo passaggio finale, l'account con Microsoft viene chiuso ed eliminato.

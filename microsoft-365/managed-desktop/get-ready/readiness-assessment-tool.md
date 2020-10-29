@@ -9,18 +9,20 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: c574be6d171a230479d8b6c96e2e0a1dec8a87ac
-ms.sourcegitcommit: 3b1bd8aa1430bc9565743a446bbc27b199f30f73
+ms.openlocfilehash: 56d849a7abcbe480d82200cc7841d42e9c189762
+ms.sourcegitcommit: fa26da0be667d4be0121c52b05488dc76c5d626c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48656143"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "48795106"
 ---
 # <a name="readiness-assessment-tool"></a>Strumento di valutazione della conformità
 
 Per una migliore esperienza possibile quando si effettua la registrazione in Microsoft Managed Desktop, sono disponibili diverse impostazioni e altri parametri che è necessario impostare in anticipo. È possibile utilizzare questo strumento per controllare queste impostazioni e ricevere i passaggi dettagliati per la risoluzione di eventuali problemi non corretti.
 
-Lo strumento verifica le impostazioni in Microsoft Endpoint Manager (in particolare, Microsoft Intune), Azure Active Directory (Azure AD) e Microsoft 365 per assicurarsi che funzionino con Microsoft Managed Desktop. Microsoft Managed Desktop conserva i dati associati a questi controlli per 12 mesi dopo l'ultima volta che si esegue un controllo nell'organizzazione di Azure AD (tenant).  Dopo 12 mesi, viene mantenuto in forma deidentificata.  È possibile scegliere di eliminare i dati da raccogliere.
+Lo strumento verifica le impostazioni in Microsoft Endpoint Manager (in particolare, Microsoft Intune), Azure Active Directory (Azure AD) e Microsoft 365 per assicurarsi che funzionino con Microsoft Managed Desktop. Microsoft Managed Desktop conserva i dati associati a questi controlli per 12 mesi dopo l'ultima volta che si esegue un controllo nell'organizzazione di Azure AD (tenant). Dopo 12 mesi, viene mantenuto in forma deidentificata.  È possibile scegliere di eliminare i dati da raccogliere.
+
+Tutti gli utenti con almeno il ruolo di amministratore di Intune saranno in grado di eseguire questo strumento, ma tre dei controlli ([connettori di certificato](readiness-assessment-fix.md#certificate-connectors), [autenticazione](readiness-assessment-fix.md#multi-factor-authentication)a più fattori e [reimpostazione della password self-service](readiness-assessment-fix.md#self-service-password-reset)) richiedono autorizzazioni aggiuntive.
  
 Lo strumento di valutazione verifica gli elementi seguenti:
 
@@ -68,7 +70,7 @@ Lo strumento di valutazione verifica gli elementi seguenti:
 |OneDrive for Business     | Verifica se OneDrive for business utilizza impostazioni non supportate.        |
 
 
-Per ogni controllo, lo strumento riporterà uno dei tre possibili risultati:
+Per ogni controllo, lo strumento riporterà uno dei quattro possibili risultati:
 
 
 |Risultato  |Significato  |
@@ -76,3 +78,4 @@ Per ogni controllo, lo strumento riporterà uno dei tre possibili risultati:
 |Pronto     | Non è necessario eseguire alcuna operazione prima di completare la registrazione.        |
 |Consulenza    | Seguire i passaggi dello strumento per la migliore esperienza di registrazione e per gli utenti. È *possibile* completare la registrazione, ma è necessario correggere questi problemi prima di distribuire il primo dispositivo.        |
 |Non pronto | La *registrazione avrà esito negativo* se non si correggeranno questi problemi. Seguire i passaggi dello strumento per risolverli.        |
+|Error | Il ruolo di Azure Active Director (AD) utilizzato non dispone di autorizzazioni sufficienti per eseguire questo controllo. |
