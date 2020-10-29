@@ -15,28 +15,26 @@ ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 description: Fornire agli utenti notizie aggiornate sul settore e sulle informazioni dell'organizzazione, utilizzare il servizio News per abilitare un feed di notizie personalizzato per l'organizzazione.
-ms.openlocfilehash: 718e48c9db90ff7e598dd56c0228bb894b7a3a4d
-ms.sourcegitcommit: c51de5e1a4cb9c4a7a9854a4226b32453d9e73e0
+ms.openlocfilehash: c0758c3a762c39534629095345d935456cb938e9
+ms.sourcegitcommit: ccbb405227880f40581c3cdfb974368a29d496f7
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 10/28/2020
-ms.locfileid: "48779179"
+ms.locfileid: "48791823"
 ---
 # <a name="manage-industry-news"></a>Gestire le novità del settore
 
 Per fornire agli utenti notizie aggiornate sul settore e sulle informazioni dell'organizzazione, utilizzare il servizio [notizie](https://admin.microsoft.com/adminportal/home?#/Settings/Services/:/Settings/L1/BingNews) per abilitare un feed di notizie personalizzato per l'organizzazione.È inoltre possibile gestire le impostazioni per la pagina iniziale Bing e la scheda Microsoft Edge New (a partire dalla versione di Edge 87).
 
 ## <a name="what-your-users-will-see"></a>Cosa vedranno gli utenti
-
-:::image type="content" source="../../media/manage-industry-news-1.png" alt-text="Rollup degli aggiornamenti del settore Microsoft Search":::
  
 Gli utenti con accesso associato che vengono nella Home page di Bing vedranno il tuo feed di notizie sotto le informazioni personalizzate dell'organizzazione.
 
-:::image type="content" source="../../media/manage-industry-news-2.jpg" alt-text="Rollup degli aggiornamenti del settore Microsoft Search":::
+:::image type="content" source="../../media/manage-industry-news-2.jpg" alt-text="Schermata del carosello di immagini con notizie del settore dal Web":::
 
 È inoltre possibile visualizzare le informazioni aziendali, dell'industria e delle notizie interne o di lavoro personalizzate nella pagina Microsoft Edge nuova scheda. 
 
-:::image type="content" source="../../media/manage-industry-news-3.png" alt-text="Rollup degli aggiornamenti del settore Microsoft Search":::
+:::image type="content" source="../../media/manage-industry-news-3.png" alt-text="Schermata del carosello di immagini con notizie del settore dal Web":::
 
 ## <a name="news-settings"></a>Impostazioni delle notizie
 

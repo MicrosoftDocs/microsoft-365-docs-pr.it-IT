@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Informazioni su come utilizzare Score compliance e Compliance Manager per migliorare il livello di protezione dei dati personali.
-ms.openlocfilehash: 5b41fa9fc52253d415a22aaa3422a87c4f1bda7c
-ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
+ms.openlocfilehash: f90826795197b392f629eb8eec71b7f27081b697
+ms.sourcegitcommit: ccbb405227880f40581c3cdfb974368a29d496f7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48377100"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "48791883"
 ---
 # <a name="use-compliance-manager-to-manage-improvement-actions"></a>Utilizzo di Compliance Manager per gestire le azioni di miglioramento
 
@@ -44,7 +44,7 @@ In questo articolo vengono fornite indicazioni sull'utilizzo di questo strumento
 
 Compliance Manager fornisce modelli predefiniti per la [creazione di valutazioni](../compliance/compliance-manager-assessments.md) allineate ai regolamenti relativi alla privacy dei dati, ad esempio GDPR e HIPAA/HITECH. I modelli dispongono di un mapping di controllo incorporato che consente di eseguire azioni di miglioramento per soddisfare i requisiti del regolamento. Ogni valutazione fornisce informazioni sui controlli che ogni regolamento richiede specifiche per il servizio di destinazione, suddivisi per i controlli gestiti e controllati da Microsoft Manage. 
 
-L'utilizzo di un modello predefinito consente di iniziare rapidamente a valutare i rischi. Man mano che si diventa più abili nell'utilizzo di gestione conformità, è possibile personalizzare un modello precompilato aggiungendo i propri controlli e le azioni di miglioramento oppure è possibile creare valutazioni personalizzate in base alle esigenze dell'organizzazione.
+L'utilizzo di un modello predefinito consente di iniziare rapidamente a valutare i rischi. Man mano che si diventa più abili nell'utilizzo di Compliance Manager, è possibile personalizzare un modello precompilato aggiungendo i propri controlli e le azioni di miglioramento oppure è possibile creare valutazioni personalizzate in base alle esigenze dell'organizzazione.
 
 Visualizzare l' [elenco completo dei modelli di valutazione](../compliance/compliance-manager-templates-list.md) forniti da Compliance Manager.
 
