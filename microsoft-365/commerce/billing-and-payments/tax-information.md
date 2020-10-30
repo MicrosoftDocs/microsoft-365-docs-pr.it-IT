@@ -20,12 +20,12 @@ description: "Scoprire quante tasse verranno addebitate per l'abbonamento a Micr
 ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
-ms.openlocfilehash: d3d1bc1239cb99da33f776e603356ccae95a2353
-ms.sourcegitcommit: bcb88a6171f9e7bdb5b2d8c03cd628d11c5e7bbf
+ms.openlocfilehash: d3654dd307e15e58acdd06277cf7338da537e5c6
+ms.sourcegitcommit: 04a43a146cb62a10b1a4555ec3bed49eb08fbb99
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48464097"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "48806601"
 ---
 # <a name="tax-information"></a>Informazioni fiscali
 
@@ -99,21 +99,21 @@ Le aziende nei seguenti paesi possono fornire il proprio numero di partita IVA o
 
 ## <a name="europe-the-middle-east-and-africa-emea"></a>Europa, Medio Oriente e Africa (EMEA)
 
-Quando si acquistano servizi Microsoft 365 nell'Unione europea, questo acquisto è soggetto a Value-Added Tax (IVA).
+Quando si acquistano servizi Microsoft 365 nell'area EMEA, questo acquisto potrebbe essere soggetto a Value-Added Tax (IVA).
   
-- Se ci si trova in uno Stato membro dell'Unione europea e non si fornisce l'ID IVA locale valido, Microsoft Ireland Operations Ltd. applicherà la tariffa IVA locale corrente, in base al paese di fatturazione su cui è impostato l'account.
+- Se si è situati in uno Stato membro dell'Unione europea, Armenia, Bielorussia, Norvegia, Turchia o Emirati Arabi Uniti e non si fornisce l'ID IVA locale valido, Microsoft Ireland Operations Ltd. applicherà la tariffa IVA locale corrente, in base al paese di fatturazione su cui è impostato l'account.
 
-- Se si risiede in Svizzera o Liechtenstein, viene applicata l'aliquota IVA svizzera corrente, indipendentemente dal fatto che si specifichi o meno una partita IVA.
+- Se si è situati in Liechtenstein, Russia, Serbia, Sud Africa o Svizzera, viene applicata l'IVA, indipendentemente dal fatto che venga fornita o meno l'ID partita IVA.
 
-- In generale, se si è situati in un paese EMEA all'esterno dell'Unione europea e della Svizzera/Liechtenstein, l'IVA non viene addebitata da Microsoft Ireland Operations Ltd.
-
-- Per poter essere convalidata, la partita IVA deve essere disponibile per la verifica nel sistema VIES (VAT Information Exchange System). Se non è possibile verificare l'ID partita IVA, contattare l'autorità tributaria locale.
+- Per i clienti UE, prima di poter convalidare l'ID partita IVA, deve essere disponibile per la verifica nel sistema di scambio di informazioni IVA. Se non è possibile verificare l'ID partita IVA, contattare l'autorità tributaria locale.
 
 È possibile qualificarsi per l'IVA zero-rating se:
   
 - **Si è in uno Stato membro dell'Unione europea al di fuori dell'Irlanda:** È possibile specificare l'ID IVA locale valido. Ciò consente a Microsoft Ireland Operations Ltd. di IVA zero-rate la transazione. Tuttavia, è possibile che si disponga di un obbligo di contabilità IVA locale. In caso di dubbi, consultare i consulenti fiscali. Per istruzioni, vedere [aggiungere l'ID partita IVA](#add-your-vat-id).
 
 - **L'utente è in Irlanda e ha la certificazione valida di esenzione IVA:** Microsoft Ireland Operations Ltd. può essere autorizzata a esonerare la transazione dall'IVA. In caso contrario, Microsoft Ireland Operations Ltd. applica l'aliquota IVA irlandese corrente, se si specifica un ID IVA o meno.
+
+- **Si è in Armenia, Bielorussia, Norvegia, Turchia o Emirati Arabi Uniti:** È possibile specificare l'ID IVA locale. Questo dà diritto a Microsoft Ireland Operations Ltd. a IVA zero-rate la transazione. Tuttavia, si può avere un obbligo di contabilità IVA locale, quindi consultare i consulenti fiscali se si ha qualche problema. Per istruzioni, vedere [aggiungere l'ID partita IVA](#add-your-vat-id).
 
 ## <a name="asia-pacific-countries-apac"></a>Area Asia Pacifico
 
@@ -136,10 +136,10 @@ Se la fatturazione viene fatta da Microsoft Corporation ([vedere la fattura](vie
 ## <a name="add-your-vat-id"></a>Aggiungere l'ID partita IVA
 
 1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">I tuoi prodotti</a>.
-2. Nella scheda **prodotti** selezionare l'abbonamento che si desidera aggiornare.
-3. Nella sezione **indirizzo di utilizzo del servizio** della pagina Dettagli sottoscrizione selezionare **modifica indirizzo di utilizzo del servizio**.
-4. Nella casella **numero di partita IVA** del riquadro **modifica indirizzo di utilizzo del servizio** immettere l'ID partita IVA, incluso il prefisso e senza spazi.
-5. Selezionare **Salva**.
+2. Nella scheda **Prodotti** , selezionare l'abbonamento che si vuole aggiornare.
+3. Nella sezione **indirizzo di utilizzo del servizio** della pagina Dettagli sottoscrizione selezionare **modifica indirizzo di utilizzo del servizio** .
+4. Nel riquadro **indirizzo di utilizzo del servizio di modifica** , nella casella **numero di partita IVA** , immettere l'ID partita IVA, incluso il prefisso e senza spazi.
+5. Seleziona **Salva** .
 
 ## <a name="how-taxes-are-calculated"></a>Modalità di calcolo delle imposte
 

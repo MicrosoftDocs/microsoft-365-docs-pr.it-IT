@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Gli amministratori possono imparare a usare il portale per gli invii nel centro sicurezza & Compliance per inviare messaggi di posta elettronica sospetti, sospette mail di phishing, posta indesiderata e altre informazioni potenzialmente nocive, URL e file a Microsoft per l'analisi.
-ms.openlocfilehash: 4bb0cd95daecfcba18ca1560e4c4780455b40157
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: 5d4123acaf3c9891f9aeb8028173f3071c260935
+ms.sourcegitcommit: 04a43a146cb62a10b1a4555ec3bed49eb08fbb99
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48446720"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "48806761"
 ---
 # <a name="use-admin-submission-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>Usare l'Invio dell'amministratore per inviare posta indesiderata sospetta, phishing, URL e file a Microsoft
 
@@ -36,7 +36,7 @@ Quando si invia un messaggio di posta elettronica, si ottengono informazioni su 
 
 Per altri modi per inviare messaggi di posta elettronica, URL e allegati a Microsoft, vedere [segnalare i messaggi e i file a Microsoft](report-junk-email-messages-to-microsoft.md).
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare
+## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare?
 
 - Aprire il Centro sicurezza e conformità in <https://protection.office.com/>. Per passare direttamente alla pagina **invio** , utilizzare <https://protection.office.com/reportsubmission> .
 
@@ -52,17 +52,17 @@ Per altri modi per inviare messaggi di posta elettronica, URL e allegati a Micro
 
 ## <a name="report-suspicious-content-to-microsoft"></a>Segnalare contenuti sospetti a Microsoft
 
-1. Nel centro sicurezza & conformità, accedere a invii di **gestione delle minacce** \> **Submissions**, verificare di essere nella scheda invii di **Amministrazione** e quindi fare clic su **nuovo invio**.
+1. Nel centro sicurezza & conformità, accedere a invii di **gestione delle minacce** \> **Submissions** , verificare di essere nella scheda invii di **Amministrazione** e quindi fare clic su **nuovo invio** .
 
 2. Utilizzare il riquadro a comparsa **nuovo invio** che sembra inviare il messaggio, l'URL o l'allegato come descritto nelle sezioni seguenti.
 
 ### <a name="submit-a-questionable-email-to-microsoft"></a>Inviare un messaggio di posta elettronica discutibile a Microsoft
 
-1. Nella sezione **tipo oggetto** selezionare **posta elettronica**. Nella sezione **formato invio** , utilizzare una delle seguenti opzioni:
+1. Nella sezione **tipo oggetto** selezionare **posta elettronica** . Nella sezione **formato invio** , utilizzare una delle seguenti opzioni:
 
-   - **ID messaggio di rete**: questo è un valore GUID disponibile nell'intestazione **X-MS-Exchange-Organization-network-Message-ID** del messaggio.
+   - **ID messaggio di rete** : questo è un valore GUID disponibile nell'intestazione **X-MS-Exchange-Organization-network-Message-ID** del messaggio.
 
-   - **File**: fare clic su **Scegli file**. Nella finestra di dialogo che si apre, individuare e selezionare il file. eml o. msg, quindi fare clic su **Apri**.
+   - **File** : fare clic su **Scegli file** . Nella finestra di dialogo che si apre, individuare e selezionare il file. eml o. msg, quindi fare clic su **Apri** .
 
 2. Nella sezione **destinatari** specificare uno o più destinatari a cui si desidera eseguire il controllo dei criteri. Il controllo dei criteri determina se l'analisi del messaggio di posta elettronica è stata ignorata a causa di criteri dell'organizzazione o dell'utente.
 
@@ -70,7 +70,7 @@ Per altri modi per inviare messaggi di posta elettronica, URL e allegati a Micro
 
    - **Non deve essere stato bloccato**
 
-   - **Avrebbe dovuto essere bloccato**: selezionare **posta indesiderata**, **phishing**o **malware**. Se non si è sicuri, utilizzare il miglior giudizio.
+   - **Avrebbe dovuto essere bloccato** : selezionare **posta indesiderata** , **phishing** o **malware** . Se non si è sicuri, utilizzare il miglior giudizio.
 
 4. Se il filtro è stato ignorato a causa di criteri al momento dell'invio, verranno visualizzate le informazioni relative a tale criterio.
 
@@ -82,13 +82,13 @@ Per altri modi per inviare messaggi di posta elettronica, URL e allegati a Micro
 
 ### <a name="send-a-suspect-url-to-microsoft"></a>Inviare un URL sospetto a Microsoft
 
-1. Nella sezione **tipo oggetto** selezionare **URL**. Nella casella che viene visualizzata, immettere l'URL completo (ad esempio, `https://www.fabrikam.com/marketing.html` ).
+1. Nella sezione **tipo oggetto** selezionare **URL** . Nella casella che viene visualizzata, immettere l'URL completo (ad esempio, `https://www.fabrikam.com/marketing.html` ).
 
 2. Nella sezione **motivo della presentazione** selezionare una delle opzioni seguenti:
 
    - **Non deve essere stato bloccato**
 
-   - **Avrebbe dovuto essere bloccato**: selezionare **phishing** o **malware**.
+   - **Avrebbe dovuto essere bloccato** : selezionare **phishing** o **malware** .
 
 3. Al termine, fare clic sul pulsante **Invia** .
 
@@ -96,15 +96,15 @@ Per altri modi per inviare messaggi di posta elettronica, URL e allegati a Micro
 
 ### <a name="submit-a-suspected-file-to-microsoft"></a>Inviare un file sospetto a Microsoft
 
-1. Nella sezione **tipo oggetto** selezionare **allegato**.
+1. Nella sezione **tipo oggetto** selezionare **allegato** .
 
-2. Fare clic su **Scegli file**. Nella finestra di dialogo che si apre, individuare e selezionare il file e quindi fare clic su **Apri**.
+2. Fare clic su **Scegli file** . Nella finestra di dialogo che si apre, individuare e selezionare il file e quindi fare clic su **Apri** .
 
 3. Nella sezione **motivo della presentazione** selezionare una delle opzioni seguenti:
 
    - **Non deve essere stato bloccato**
 
-   - **Avrebbe dovuto essere bloccato**: il **malware** è l'unica scelta e viene selezionato automaticamente..
+   - **Avrebbe dovuto essere bloccato** : il **malware** è l'unica scelta e viene selezionato automaticamente..
 
 4. Al termine, fare clic sul pulsante **Invia** .
 
@@ -112,7 +112,7 @@ Per altri modi per inviare messaggi di posta elettronica, URL e allegati a Micro
 
 ## <a name="view-admin-submissions"></a>Visualizzazione di invii di amministratore
 
-Nel centro sicurezza & conformità, accedere a invii di **gestione delle minacce** \> **Submissions**, verificare di essere nella scheda invii di **Amministrazione** e quindi fare clic su **nuovo invio**.
+Nel centro sicurezza & conformità, accedere a invii di **gestione delle minacce** \> **Submissions** , verificare di essere nella scheda invii di **Amministrazione** e quindi fare clic su **nuovo invio** .
 
 Nei pressi della parte superiore della pagina, è possibile immettere una data di inizio, una data di fine e (per impostazione predefinita) è possibile filtrare per **ID invio** (un valore GUID assegnato a ogni invio) immettendo un valore nella casella e facendo clic su ![ Aggiorna ](../../media/scc-quarantine-refresh.png) . È possibile immettere più valori separati da virgole.
 
@@ -126,9 +126,9 @@ Per modificare i criteri di filtro, fare clic sul pulsante **ID invio** e scegli
 
 ![Opzioni di filtro per invii di amministratore](../../media/admin-submission-email-filter-options.png)
 
-Per esportare i risultati, fare clic su **Esporta** vicino alla parte superiore della pagina e selezionare **dati grafico** o **tabella**. Nella finestra di dialogo che viene visualizzata, salvare il file. csv.
+Per esportare i risultati, fare clic su **Esporta** vicino alla parte superiore della pagina e selezionare **dati grafico** o **tabella** . Nella finestra di dialogo che viene visualizzata, salvare il file. csv.
 
-Al di sotto del grafico sono disponibili tre schede: **posta elettronica** (impostazione predefinita), **URL**e **allegato**.
+Al di sotto del grafico sono disponibili tre schede: **posta elettronica** (impostazione predefinita), **URL** e **allegato** .
 
 ### <a name="view-admin-email-submissions"></a>Visualizzazione di invii di posta elettronica di amministratore
 
@@ -137,7 +137,7 @@ Fare clic sulla scheda **posta elettronica** .
 È possibile fare clic sul pulsante **Opzioni colonna** vicino alla parte inferiore della pagina per aggiungere o rimuovere colonne dalla visualizzazione:
 
 - **Data**
-- **ID invio**: valore GUID assegnato a ogni invio.
+- **ID invio** : valore GUID assegnato a ogni invio.
 - **Inviato da**<sup>\*</sup>
 - **Oggetto**<sup>\*</sup>
 - **Mittente**
@@ -184,9 +184,9 @@ Fare clic sulla scheda **allegati** .
 
 Se è stato distribuito il [componente aggiuntivo](enable-the-report-message-add-in.md)per i messaggi di report o si utilizza la creazione di report [incorporati in Outlook sul Web](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md), è possibile visualizzare gli utenti che segnalano nella scheda **invii utente** .
 
-1. Nel centro sicurezza & conformità, accedere a invii di **gestione delle minacce** \> **Submissions**.
+1. Nel centro sicurezza & conformità, accedere a invii di **gestione delle minacce** \> **Submissions** .
 
-2. Selezionare la scheda **invii utente** e quindi fare clic su **nuovo invio**.
+2. Selezionare la scheda **invii utente** e quindi fare clic su **nuovo invio** .
 
 È possibile fare clic sul pulsante **Opzioni colonna** vicino alla parte inferiore della pagina per aggiungere o rimuovere colonne dalla visualizzazione:
 
@@ -211,13 +211,13 @@ Per modificare i criteri di filtro, fare clic sul pulsante **mittente** e scegli
 
 ![Opzioni di filtro per gli invii degli utenti](../../media/user-submissions-filter-options.png)
 
-Per esportare i risultati, fare clic su **Esporta** vicino alla parte superiore della pagina e selezionare **dati grafico** o **tabella**. Nella finestra di dialogo che viene visualizzata, salvare il file. csv.
+Per esportare i risultati, fare clic su **Esporta** vicino alla parte superiore della pagina e selezionare **dati grafico** o **tabella** . Nella finestra di dialogo che viene visualizzata, salvare il file. csv.
 
 ## <a name="view-user-submissions-to-the-custom-mailbox"></a>Visualizzare gli invii degli utenti alla cassetta postale personalizzata
 
 **Se** è stata [configurata una cassetta postale personalizzata](user-submission.md) per la ricezione di messaggi segnalati dall'utente, è possibile visualizzare e inviare anche messaggi che sono stati recapitati alla cassetta postale di Reporting.
 
-1. Nel centro sicurezza & conformità, accedere a invii di **gestione delle minacce** \> **Submissions**.
+1. Nel centro sicurezza & conformità, accedere a invii di **gestione delle minacce** \> **Submissions** .
 
 2. Selezionare la scheda **cassetta postale personalizzata** .
 
@@ -232,7 +232,11 @@ Per esportare i risultati, fare clic su **Esporta** vicino alla parte superiore 
 
 Nei pressi della parte superiore della pagina, è possibile immettere una data di inizio, una data di fine ed è possibile filtrare in base a quanto **inserito** inserendo un valore nella casella e facendo clic su ![ Aggiorna ](../../media/scc-quarantine-refresh.png) . È possibile immettere più valori separati da virgole.
 
-Per esportare i risultati, fare clic su **Esporta** vicino alla parte superiore della pagina e selezionare **dati grafico** o **tabella**. Nella finestra di dialogo che viene visualizzata, salvare il file. csv.
+Per esportare i risultati, fare clic su **Esporta** vicino alla parte superiore della pagina e selezionare **dati grafico** o **tabella** . Nella finestra di dialogo che viene visualizzata, salvare il file. csv.
+
+## <a name="undo-user-submissions"></a>Annullamento degli invii degli utenti
+
+Dopo che un utente ha inviato un messaggio di posta elettronica sospetto alla cassetta postale personalizzata, l'utente e l'amministratore non dispongono di un'opzione per annullare l'invio. Se l'utente desidera recuperare il messaggio di posta elettronica, sarà disponibile per il ripristino negli elementi eliminati o nelle cartelle di posta indesiderata. 
 
 ### <a name="submit-messages-to-microsoft-from-the-custom-mailbox"></a>Inviare messaggi a Microsoft dalla cassetta postale personalizzata
 

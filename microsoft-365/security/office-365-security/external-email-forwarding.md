@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: .
-ms.openlocfilehash: dff2ea4e144f8f8fcc0f42732141e110effe7e9e
-ms.sourcegitcommit: 45c0afcf958069c5c1b31f9b6c762d8dd806e1e9
+ms.openlocfilehash: 59e2c938c70dd8e3060fd85d084acbe8f79856ad
+ms.sourcegitcommit: 04a43a146cb62a10b1a4555ec3bed49eb08fbb99
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "48774094"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "48806633"
 ---
 # <a name="control-automatic-external-email-forwarding-in-microsoft-365"></a>Controllare l'inoltro automatico di messaggi di posta elettronica esterni in Microsoft 365
 
@@ -31,7 +31,7 @@ In Microsoft 365 sono disponibili i seguenti tipi di inoltro automatico:
 
 - Gli utenti possono configurare [le regole di posta in arrivo](https://support.microsoft.com/office/c24f5dea-9465-4df4-ad17-a50704d66c59) per inoltrare automaticamente i messaggi ai mittenti esterni (deliberatamente o come risultato di un account compromesso).
 
-- Gli amministratori possono configurare l' [inoltro delle cassette postali](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-user-mailboxes/configure-email-forwarding) (noto anche come inoltro SMTP) per inoltrare automaticamente i messaggi ai destinatari esterni.
+- Gli amministratori possono configurare l' [inoltro delle cassette postali](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-user-mailboxes/configure-email-forwarding) (noto anche come _inoltro SMTP_ ) per inoltrare automaticamente i messaggi ai destinatari esterni.
 
 È possibile utilizzare i criteri di filtro della posta indesiderata in uscita per controllare l'inoltro automatico ai destinatari esterni. Sono disponibili tre impostazioni:
 
@@ -45,9 +45,9 @@ Per istruzioni su come configurare queste impostazioni, vedere [configurare il f
 
 > [!NOTE]
 > 
-> - La disabilitazione dell'inoltro automatico disattiverà anche le regole di posta in arrivo che reindirizzano i messaggi agli indirizzi esterni.
+> - La disattivazione dell'inoltro automatico disattiva le regole di posta in arrivo (utenti) o l'inoltro delle cassette postali (amministratori) che reindirizzano i messaggi agli indirizzi esterni.
 > 
->   Office 365 non consente l'inoltro automatico esterno tramite le regole di posta in arrivo o la configurazione della cassetta postale, che fornisce un criterio predefinito sicuro. Tuttavia, l'amministratore può modificare queste impostazioni per tutti gli utenti dell'organizzazione. Creare [criteri di posta indesiderata in uscita](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-the-outbound-spam-policy?view=o365-worldwide&preserve-view=true#use-the-security--compliance-center-to-create-outbound-spam-policies) e modificare la sezione di inoltro automatico per controllare l'inoltro automatico della posta elettronica da parte degli utenti a mittenti esterni. Questo può essere applicato in un secondo momento ai mittenti interni ai quali si applica il criterio. L'inoltro dei messaggi tra utenti interni non è influenzato da tale modifica.
+> - L'inoltro automatico dei messaggi tra gli utenti interni non è influenzato dalle impostazioni nei criteri di filtro della posta indesiderata in uscita.
 > 
 > - È possibile visualizzare informazioni sugli utenti che inoltrano automaticamente i messaggi a destinatari esterni nel [rapporto messaggi auto-inoltrati](mfi-auto-forwarded-messages-report.md).
 
