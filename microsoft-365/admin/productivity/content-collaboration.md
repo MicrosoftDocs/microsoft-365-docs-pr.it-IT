@@ -18,14 +18,13 @@ monikerRange: o365-worldwide
 search.appverid:
 - MET150
 - MOE150
-ROBOTS: NOINDEX, NOFOLLOW
 description: Dettagli della collaborazione del contenuto-persone che hanno un punteggio di produttività.
-ms.openlocfilehash: 6e8f3113d2f35e6af268e4a8088bef34f529a676
-ms.sourcegitcommit: fa26da0be667d4be0121c52b05488dc76c5d626c
+ms.openlocfilehash: 87f89af527e2a1b843a9b70fbef590b69d920f7d
+ms.sourcegitcommit: d578b28ed1886abd083b01b93f01b354067e6d47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "48795531"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "48804598"
 ---
 # <a name="content-collaboration--people-experiences"></a>Collaborazione tra i contenuti – esperienze degli utenti
 
@@ -202,4 +201,13 @@ Le colonne seguenti sono presentate nella tabella a livello di utente:
 - **File condivisi esternamente:** Il numero di file online in OneDrive o SharePoint che la persona ha condiviso con altre persone esterne all'organizzazione negli ultimi 28 giorni.
 - **Allegati di file inviati tramite posta elettronica:** Valore booleano che indica se la persona ha inviato messaggi di posta elettronica con file (non in OneDrive o SharePoint) come allegati negli ultimi 28 giorni.
 - **Allegati di file online inviati tramite posta elettronica:** Valore booleano che indica se la persona ha inviato messaggi di posta elettronica con collegamenti ai file online (su OneDrive o SharePoint) come allegati negli ultimi 28 giorni.
-- **Inserire il collegamento al file online:** Valore booleano che indica se la persona ha inviato messaggi di posta elettronica con collegamenti a file online (su OneDrive o SharePoint) incorporati nel corpo della posta elettronica negli ultimi 28 giorni
+- **Inserire il collegamento al file online:** Valore booleano che indica se la persona ha inviato messaggi di posta elettronica con collegamenti a file online (su OneDrive o SharePoint) incorporati nel corpo della posta elettronica negli ultimi 28 giorni.
+
+## <a name="related-content"></a>Contenuti correlati
+
+[Microsoft 365 Apps Health – esperienze tecnologiche](apps-health.md) (articolo) \
+[Comunicazione – esperienze degli utenti](communication.md) (articolo) \
+[Riunioni – esperienze degli utenti](meetings.md) (articolo) \
+[Mobilità – esperienze degli utenti](mobility.md) (articolo) \
+[Controlli sulla privacy per il Punteggio di produttività](privacy.md) (articolo) \
+[Teamwork – esperienze degli utenti](teamwork.md) (articolo)

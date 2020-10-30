@@ -18,14 +18,13 @@ monikerRange: o365-worldwide
 search.appverid:
 - MET150
 - MOE150
-ROBOTS: NOINDEX, NOFOLLOW
 description: Informazioni dettagliate sul punteggio di produttività delle app di Microsoft 365 Apps Health-Technology.
-ms.openlocfilehash: bb6454b336caa9ac1e7b8f6049ea46c681c8bd77
-ms.sourcegitcommit: fa26da0be667d4be0121c52b05488dc76c5d626c
+ms.openlocfilehash: 4242a9b665bc7292232cc15ee0f1ec37915fb1ac
+ms.sourcegitcommit: d578b28ed1886abd083b01b93f01b354067e6d47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "48795330"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "48804770"
 ---
 # <a name="microsoft-365-apps-health--technology-experiences"></a>Microsoft 365 Apps Health – esperienze tecnologiche
 
@@ -112,3 +111,12 @@ Le colonne seguenti sono presentate nella tabella a livello di utente:
 - **Stato:**   Le app Microsoft 365 supportano lo stato dei dispositivi basati sul canale e sulla versione correnti.
 - **Versioni:**   Versioni correnti di Microsoft 365 Apps nei dispositivi.
 - **# di dispositivi:**  Numero di dispositivi.
+
+## <a name="related-content"></a>Contenuti correlati
+
+[Comunicazione – esperienze degli utenti](communication.md) (articolo) \
+[Collaborazione del contenuto-esperienze degli utenti](content-collaboration.md) (articolo) \
+[Riunioni – esperienze degli utenti](meetings.md) (articolo) \
+[Mobilità – esperienze degli utenti](mobility.md) (articolo) \
+[Controlli sulla privacy per il Punteggio di produttività](privacy.md) (articolo) \
+[Teamwork – esperienze degli utenti](teamwork.md) (articolo)

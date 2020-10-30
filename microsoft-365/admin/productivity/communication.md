@@ -18,14 +18,13 @@ monikerRange: o365-worldwide
 search.appverid:
 - MET150
 - MOE150
-ROBOTS: NOINDEX, NOFOLLOW
 description: Informazioni dettagliate sul punteggio di produttività per la comunicazione-persone.
-ms.openlocfilehash: 071621759a922e6dda28a5a18f531a0f01d2f88f
-ms.sourcegitcommit: fa26da0be667d4be0121c52b05488dc76c5d626c
+ms.openlocfilehash: 6f79a636c24548586048adf0151ac5eefb98fffe
+ms.sourcegitcommit: d578b28ed1886abd083b01b93f01b354067e6d47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "48795037"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "48804656"
 ---
 # <a name="communication--people-experiences"></a>Comunicazione – esperienze degli utenti
 
@@ -160,3 +159,12 @@ In questa sezione vengono fornite informazioni dettagliate sulle attività relat
 - **Giorni usati @mention nella posta elettronica:** Numero di giorni in cui l'utente ha inviato un messaggio di posta elettronica contenente un @mention negli ultimi 28 giorni.
 
 È inoltre possibile esportare i dati del report in un file CSV di Excel selezionando il collegamento del **pulsante Esporta esportazione** . Si noti che è possibile personalizzare il set di colonne nella visualizzazione selezionando le colonne necessarie dopo aver fatto clic su **Scegli colonne** .
+
+## <a name="related-content"></a>Contenuti correlati
+
+[Microsoft 365 Apps Health – esperienze tecnologiche](apps-health.md) (articolo) \
+[Collaborazione del contenuto-esperienze degli utenti](content-collaboration.md) (articolo) \
+[Riunioni – esperienze degli utenti](meetings.md) (articolo) \
+[Mobilità – esperienze degli utenti](mobility.md) (articolo) \
+[Controlli sulla privacy per il Punteggio di produttività](privacy.md) (articolo) \
+[Teamwork – esperienze degli utenti](teamwork.md) (articolo)

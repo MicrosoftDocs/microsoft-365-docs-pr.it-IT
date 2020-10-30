@@ -18,14 +18,13 @@ monikerRange: o365-worldwide
 search.appverid:
 - MET150
 - MOE150
-ROBOTS: NOINDEX, NOFOLLOW
 description: Dettagli del lavoro di squadra-persone che sperimentano il Punteggio di produttività.
-ms.openlocfilehash: d76447a187003aa3d3e87ec293cf4550ced2fc74
-ms.sourcegitcommit: fa26da0be667d4be0121c52b05488dc76c5d626c
+ms.openlocfilehash: d7edd5685c8e818e08faf4ac227f3eb1a416c94c
+ms.sourcegitcommit: d578b28ed1886abd083b01b93f01b354067e6d47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "48795337"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "48804794"
 ---
 # <a name="teamwork--people-experiences"></a>Teamwork – esperienze degli utenti
 
@@ -193,3 +192,12 @@ Le colonne seguenti sono illustrate nella tabella a livello di area di lavoro:
 - Il lavoro di squadra misura l'impegno di persone all'interno dell'organizzazione. Doesn&#39;t acquisisce l'attività dei membri esterni.
 - I messaggi di canale in teamwork non includono i messaggi inviati tramite il client per dispositivi mobili Microsoft teams.
 - Potrebbero verificarsi differenze minime tra le metriche di posta elettronica e i messaggi di canale tra le categorie di comunicazione e teamwork che si sta utilizzando per risolvere.
+
+## <a name="related-content"></a>Contenuti correlati
+
+[Microsoft 365 Apps Health – esperienze tecnologiche](apps-health.md) (articolo) \
+[Comunicazione – esperienze degli utenti](communication.md) (articolo) \
+[Collaborazione del contenuto-esperienze degli utenti](content-collaboration.md) (articolo) \
+[Riunioni – esperienze degli utenti](meetings.md) (articolo) \
+[Mobilità – esperienze degli utenti](mobility.md) (articolo) \
+[Controlli sulla privacy per il Punteggio di produttività](privacy.md) (articolo)

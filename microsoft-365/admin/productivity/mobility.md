@@ -18,14 +18,13 @@ monikerRange: o365-worldwide
 search.appverid:
 - MET150
 - MOE150
-ROBOTS: NOINDEX, NOFOLLOW
 description: Informazioni dettagliate su mobilità-persone sperimentano il Punteggio di produttività.
-ms.openlocfilehash: 0d67cae7421b7b27e39420f691d72abd57a63a32
-ms.sourcegitcommit: fa26da0be667d4be0121c52b05488dc76c5d626c
+ms.openlocfilehash: f40984b3c053dcb976c901830bf796e3b7297f2d
+ms.sourcegitcommit: d578b28ed1886abd083b01b93f01b354067e6d47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "48795555"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "48804782"
 ---
 # <a name="mobility--people-experiences"></a>Mobilità – esperienze degli utenti
 
@@ -172,3 +171,12 @@ Le metriche riportate di seguito si basano sui 28 giorni precedenti:
 - **Giorni in Skype (desktop):** Numero di giorni in cui l'utente era attivo su Skype sulla piattaforma desktop.
 - **Giorni in Skype (Web):** Numero di giorni in cui l'utente era attivo su Skype nella piattaforma Web.
 - **Giorni in Skype (mobile):** Numero di giorni in cui l'utente era attivo su Skype sulla piattaforma mobile.
+
+## <a name="related-content"></a>Contenuti correlati
+
+[Microsoft 365 Apps Health – esperienze tecnologiche](apps-health.md) (articolo) \
+[Comunicazione – esperienze degli utenti](communication.md) (articolo) \
+[Collaborazione del contenuto-esperienze degli utenti](content-collaboration.md) (articolo) \
+[Riunioni – esperienze degli utenti](meetings.md) (articolo) \
+[Controlli sulla privacy per il Punteggio di produttività](privacy.md) (articolo) \
+[Teamwork – esperienze degli utenti](teamwork.md) (articolo)

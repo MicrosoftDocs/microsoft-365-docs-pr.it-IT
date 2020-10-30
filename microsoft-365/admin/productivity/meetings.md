@@ -18,14 +18,13 @@ monikerRange: o365-worldwide
 search.appverid:
 - MET150
 - MOE150
-ROBOTS: NOINDEX, NOFOLLOW
 description: Dettagli degli incontri-persone che hanno un punteggio di produttività.
-ms.openlocfilehash: 09869d92b093304e070d669db7d0e7dea825441f
-ms.sourcegitcommit: fa26da0be667d4be0121c52b05488dc76c5d626c
+ms.openlocfilehash: cdb83000e176fb2a88d848a1b7f114499362672a
+ms.sourcegitcommit: d578b28ed1886abd083b01b93f01b354067e6d47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "48795532"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "48804586"
 ---
 # <a name="meetings--people-experiences"></a>Riunioni – esperienze degli utenti
 
@@ -166,3 +165,12 @@ Le colonne seguenti sono rappresentate nella tabella a livello di utente:
 - Solo gli utenti che dispongono dell'accesso a Microsoft teams vengono considerati per qualsiasi valutazione.
 - Escludiamo gli eventi di trasmissione e alcuni eventi che non sono contrassegnati come riunione o chiamata.
 - Gli eventi che iniziano con la condivisione dello schermo tra i partecipanti sono categorizzati come 1:1 chiamate (con 2 partecipanti) o chiamate di gruppo (3 o più partecipanti).
+
+## <a name="related-content"></a>Contenuti correlati
+
+[Microsoft 365 Apps Health – esperienze tecnologiche](apps-health.md) (articolo) \
+[Comunicazione – esperienze degli utenti](communication.md) (articolo) \
+[Collaborazione del contenuto-esperienze degli utenti](content-collaboration.md) (articolo) \
+[Mobilità – esperienze degli utenti](mobility.md) (articolo) \
+[Controlli sulla privacy per il Punteggio di produttività](privacy.md) (articolo) \
+[Teamwork – esperienze degli utenti](teamwork.md) (articolo)
