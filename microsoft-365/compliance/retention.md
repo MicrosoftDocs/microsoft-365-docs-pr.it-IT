@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Informazioni sui criteri di conservazione e sulle etichette di conservazione, utili per conservare tutto che serve ed eliminare ciò che non serve.
-ms.openlocfilehash: 089a34d1e9a002bd61e688cd3f721c6e8249c5b7
-ms.sourcegitcommit: 095b1f52f2e73e8d44195916984efeb0908c2ad8
+ms.openlocfilehash: 50bbe9d80b7b0a1b9fa346fd6e5abc8971dadcfb
+ms.sourcegitcommit: d578b28ed1886abd083b01b93f01b354067e6d47
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "48755585"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "48804759"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>Informazioni sui criteri e sulle etichette di conservazione
 
@@ -57,9 +57,9 @@ Queste impostazioni di conservazione funzionano con il contenuto in locale, cons
 
 Quando al contenuto è assegnata un'impostazione di conservazione, rimane nella posizione originale. Gli utenti possono continuare a lavorare normalmente con i propri documenti o messaggi di posta elettronica. Tuttavia, se modificano o eliminano contenuto incluso nel criterio di conservazione, verrà conservata una copia del contenuto nello stato in cui si trovava al momento dell'applicazione delle impostazioni di conservazione.
   
-- Per i siti di SharePoint e OneDrive, la copia viene conservata nella **raccolta di archiviazione**.
+- Per i siti di SharePoint e OneDrive, la copia viene conservata nella **raccolta di archiviazione** .
 
-- Per le cassette postali di Exchange, la copia viene conservata nella cartella **Elementi ripristinabili**. 
+- Per le cassette postali di Exchange, la copia viene conservata nella cartella **Elementi ripristinabili** . 
 
 - Per i messaggi di Teams e Yammer, la copia viene conservata in una cartella nascosta denominata **SubstrateHolds** all'interno della cartella **Elementi ripristinabili** di Exchange.
 
@@ -168,7 +168,7 @@ Con le etichette di conservazione è possibile:
 
 - **Avviare il periodo di conservazione dal momento in cui il contenuto è stato etichettato** per i documenti in siti di SharePoint e account di OneDrive e per gli elementi di posta elettronica, ad eccezione degli elementi di calendario. Se si applica un'etichetta di conservazione con questa configurazione a un elemento del calendario, il periodo di conservazione inizia dal momento dell'invio.
 
-- **Avviare il periodo di conservazione quando si verifica un evento**, ad esempio se i dipendenti lasciano l'organizzazione o alla scadenza dei contratti.
+- **Avviare il periodo di conservazione quando si verifica un evento** , ad esempio se i dipendenti lasciano l'organizzazione o alla scadenza dei contratti.
 
 - **Applicare un'etichetta di conservazione predefinita a una raccolta documenti, una cartella o un set di documenti** in SharePoint, in modo che i documenti archiviati in quella posizione ereditino l'etichetta di conservazione predefinita.
 
@@ -241,6 +241,8 @@ Per capire come e perché è stata applicata un'etichetta di conservazione anzic
 
 Un'etichetta di conservazione assegnata in modo esplicito ha la precedenza su un'etichetta di conservazione assegnata in modo implicito. Per altre informazioni, vedere la sezione [Precedenza nei principi di conservazione](retention.md#the-principles-of-retention-or-what-takes-precedence) in questa pagina.
 
+Per SharePoint, le etichette di conservazione possono anche essere assegnate in modo implicito quando si configura un'etichetta predefinita per tutto il contenuto in una raccolta, una cartella o un set di documenti di SharePoint. Per questo scenario, un'etichetta applicata automaticamente ha la precedenza su un'etichetta predefinita, ma per comprendere in pieno tutti i risultati quando si usa un'etichetta predefinita, vedere le informazioni contenute nella sezione [Applicazione di un'etichetta di conservazione predefinita a tutto il contenuto in una raccolta, cartella o set di documenti di SharePoint](create-apply-retention-labels.md#applying-a-default-retention-label-to-all-content-in-a-sharepoint-library-folder-or-document-set). 
+
 #### <a name="monitoring-retention-labels"></a>Monitoraggio delle etichette di conservazione
 
 Dal Centro conformità Microsoft 365 selezionare **Classificazione dei dati** > **Panoramica** per monitorare il modo in cui le etichette di conservazione sono in uso nel tenant e identificare la posizione in cui si trovano gli elementi contrassegnati. Per ulteriori informazioni, inclusi i prerequisiti importanti, vedere [Conoscere i dati - panoramica sulla classificazione dei dati](data-classification-overview.md).
@@ -250,7 +252,7 @@ Dal Centro conformità Microsoft 365 selezionare **Classificazione dei dati** > 
 > [!TIP]
 >È consigliabile usare alcuni degli altri approfondimenti per la classificazione dei dati, ad esempio i classificatori addestrabili e i tipi di informazioni riservate, per identificare il contenuto che potrebbe essere necessario mantenere o eliminare o gestire come risultato.
 
-Il Centro sicurezza e conformità di Office 365 riceve le informazioni generali equivalenti per la conservazione delle etichette dalla **Gestione delle informazioni** > **Dashboard**, e informazioni più dettagliate dalla **Gestione delle informazioni** > **Esploratore delle attività di etichettatura**. Per ulteriori informazioni sul monitoraggio delle etichette di conservazione nell’interfaccia di amministrazione precedente, vedere la seguente documentazione:
+Il Centro sicurezza e conformità di Office 365 riceve le informazioni generali equivalenti per la conservazione delle etichette dalla **Gestione delle informazioni** > **Dashboard** , e informazioni più dettagliate dalla **Gestione delle informazioni** > **Esploratore delle attività di etichettatura** . Per ulteriori informazioni sul monitoraggio delle etichette di conservazione nell’interfaccia di amministrazione precedente, vedere la seguente documentazione:
 - [Visualizzare i report della gestione dei dati](view-the-data-governance-reports.md)
 - [Visualizzare l'utilizzo delle etichette con Analisi delle etichette](label-analytics.md)
 - [Visualizzare le attività delle etichette dei documenti](view-label-activity-for-documents.md)
@@ -259,7 +261,7 @@ Il Centro sicurezza e conformità di Office 365 riceve le informazioni generali 
 
 Dopo l'assegnazione delle etichette di conservazione al contenuto, è possibile usare lo strumento di ricerca del contenuto per trovare tutti gli elementi su cui è applicata quella specifica etichetta di conservazione.
 
-Quando si crea una ricerca di contenuto, scegliere la condizione **Etichetta di conservazione**, quindi immettere il nome completo dell'etichetta di conservazione o parte di esso e usare un carattere jolly. Per altre informazioni, vedere [Query con parola chiave e condizioni di ricerca per la ricerca di contenuto](keyword-queries-and-search-conditions.md).
+Quando si crea una ricerca di contenuto, scegliere la condizione **Etichetta di conservazione** , quindi immettere il nome completo dell'etichetta di conservazione o parte di esso e usare un carattere jolly. Per altre informazioni, vedere [Query con parola chiave e condizioni di ricerca per la ricerca di contenuto](keyword-queries-and-search-conditions.md).
   
 ![Condizione Etichetta di conservazione](../media/retention-label-condition.png)
 

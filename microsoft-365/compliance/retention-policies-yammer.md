@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Informazioni sui criteri di conservazione applicabili a Yammer.
-ms.openlocfilehash: 3e4cfd5c9e5ef8c28ecd069f3474764b966d6c9a
-ms.sourcegitcommit: fa26da0be667d4be0121c52b05488dc76c5d626c
+ms.openlocfilehash: b23161f57aedec062e155586f2e20d2791d02d3f
+ms.sourcegitcommit: d578b28ed1886abd083b01b93f01b354067e6d47
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "48795001"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "48804575"
 ---
 # <a name="learn-about-retention-for-yammer"></a>Informazioni sulla conservazione per Yammer
 
@@ -61,7 +61,7 @@ Se il criterio di conservazione conserva e poi elimina:
 
 Per i due percorsi nel diagramma:
 
-1. **Se un messaggio di Yammer viene modificato o eliminato** dall’utente durante il periodo di conservazione, il messaggio originale viene copiato (se è stato modificato) o spostato (se è stato eliminato) nella cartella SubstrateHolds. Il messaggio viene archiviato in questa posizione fino alla scadenza del periodo di conservazione, quindi viene eliminato immediatamente in modo definitivo.
+1. **Se un messaggio di Yammer viene modificato o eliminato** dall’utente durante il periodo di conservazione, il messaggio originale viene copiato (se è stato modificato) o spostato (se è stato eliminato) immediatamente nella cartella SubstrateHolds. Il messaggio viene archiviato in questa posizione fino alla scadenza del periodo di conservazione, quindi viene eliminato immediatamente in modo definitivo.
 
 2. **Se il messaggio di Yammer non viene eliminato** , così come per i messaggi correnti dopo essere stati modificati, il messaggio viene spostato nella cartella SubstrateHolds alla scadenza del periodo di conservazione. Questa azione richiede fino a sette giorni dalla data di scadenza. Dopo che il messaggio è stato spostato nella cartella SubstrateHolds, viene eliminato immediatamente in modo definitivo. 
 
@@ -72,7 +72,7 @@ Quando il criterio di conservazione è Conserva solo, o Elimina solo, i percorsi
 
 ### <a name="content-paths-for-retain-only-retention-policy"></a>Percorsi di contenuto per il criterio di conservazione Conserva solo
 
-1. **Se un messaggio di Yammer viene modificato o eliminato** : una copia del messaggio originale viene creata nella cartella SubstrateHolds e conservata in tale posizione fino alla scadenza del periodo di conservazione. Quindi il messaggio viene eliminato immediatamente in modo definitivo dalla cartella SubstrateHolds.
+1. **Se un messaggio di Yammer viene modificato o eliminato** : una copia del messaggio originale viene immediatamente creata nella cartella SubstrateHolds e conservata in tale posizione fino alla scadenza del periodo di conservazione. Quindi il messaggio viene eliminato immediatamente in modo definitivo dalla cartella SubstrateHolds.
 
 2. **Se il messaggio di Yammer non viene modificato o eliminato** , così come per i messaggi correnti dopo essere stati modificati durante il periodo di conservazione: non succede niente prima o dopo il periodo di conservazione. L'elemento rimane nella posizione originale.
 
@@ -80,7 +80,7 @@ Quando il criterio di conservazione è Conserva solo, o Elimina solo, i percorsi
 
 1. **Se il messaggio di Yammer non viene eliminato** durante il periodo di conservazione: alla fine del periodo di conservazione il messaggio viene spostato nella cartella SubstrateHolds. Questa azione richiede fino a sette giorni dalla data di scadenza. Quindi il messaggio viene eliminato immediatamente in modo definitivo dalla cartella SubstrateHolds.
 
-2. **Se il messaggio di Yammer viene eliminato dall'utente** durante il periodo, verrà spostato nella cartella SubstrateHolds da dove verrà immediatamente eliminato in modo definitivo.
+2. **Se il messaggio di Yammer viene eliminato dall'utente** durante il periodo, verrà immediatamente spostato nella cartella SubstrateHolds da dove verrà immediatamente eliminato in modo definitivo.
 
 
 ## <a name="messages-and-external-users"></a>Messaggi e utenti esterni

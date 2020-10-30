@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Informazioni sul funzionamento della conservazione per SharePoint e OneDrive.
-ms.openlocfilehash: 31ffce3f02e273e771ca1753474bec48b66148bb
-ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
+ms.openlocfilehash: 258cc8e777ca39d2528e520ff5634086bff302c7
+ms.sourcegitcommit: d578b28ed1886abd083b01b93f01b354067e6d47
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "48754140"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "48804541"
 ---
 # <a name="learn-about-retention-for-sharepoint-and-onedrive"></a>Informazioni sulla conservazione per SharePoint e OneDrive
 
@@ -42,7 +42,7 @@ Per altri carichi di lavoro, vedere:
 
 È possibile eliminare i file seguenti:
 
-- Se si usa un criterio di conservazione, tutti i file nelle raccolte documenti, il che include tutte le raccolte documenti di SharePoint create automaticamente, come le **Risorse del sito**.
+- Se si usa un criterio di conservazione, tutti i file nelle raccolte documenti, il che include tutte le raccolte documenti di SharePoint create automaticamente, come le **Risorse del sito** .
     
 - Se si usano le etichette di conservazione, tutti i file in tutte le raccolte documenti e tutti i file al livello radice non contenuti in una cartella.
     
@@ -51,13 +51,13 @@ Per altri carichi di lavoro, vedere:
 
 ## <a name="how-retention-works-for-sharepoint-and-onedrive"></a>Funzionamento della conservazione per SharePoint e OneDrive
 
-Per supportare la conservazione, SharePoint e OneDrive creano una raccolta di archiviazione se non è presente. È possibile visualizzare questa raccolta nella pagina **Contenuto del sito** nel sito principale della raccolta siti. La maggior parte degli utenti non può visualizzare la raccolta di archiviazione poiché è visibile soltanto agli amministratori della raccolta siti.
+Per supportare la conservazione, SharePoint e OneDrive creano una raccolta di archiviazione se una non è già esistente. È possibile visualizzare questa raccolta nella pagina **Contenuto del sito** nel sito principale della raccolta siti. La maggior parte degli utenti non può visualizzare la raccolta di archiviazione poiché è visibile soltanto agli amministratori della raccolta siti.
   
 Se si tenta di modificare o eliminare un documento soggetto a impostazioni di conservazione, viene eseguita una verifica del contenuto per stabilire se è stato modificato dopo l'applicazione delle impostazioni di conservazione. Nel caso della prima modifica dell’applicazione delle impostazioni di conservazione, il contenuto viene copiato nella raccolta di archiviazione che permette all'utente di modificare o eliminare i contenuti originali. Il contenuto di una raccolta siti può essere copiato nella raccolta di archiviazione, indipendentemente dalle impostazioni di conservazione.
   
 Un processo timer pulisce periodicamente la raccolta di archiviazione. Questo processo confronta tutti i contenuti della raccolta di archiviazione con tutte le query usate dalle impostazioni di conservazione per tali contenuti. Il contenuto precedente al periodo di conservazione configurato viene eliminato dalla raccolta di archiviazione e dalla posizione originale, se è ancora lì. Questo processo timer viene eseguito ogni 7 giorni, quindi può essere necessario attendere fino a 7 giorni prima che il contenuto venga eliminato.
   
-Questo comportamento si applica ai contenuti che esistono al momento dell'applicazione delle impostazioni di conservazione. Inoltre, per i criteri di conservazione, i nuovi contenuti creati o aggiunti alla raccolta siti in seguito all'inclusione nei criteri conservazione, verranno conservati dopo l'eliminazione. Tuttavia, i nuovi contenuti non vengono copiati nella raccolta di archiviazione al momento della prima modifica, ma solo quando viene eliminato. Per conservare tutte le versioni di un file, è necessario attivare il [controllo delle versioni](#how-retention-works-with-document-versions-in-a-site-collection).
+Questo comportamento si applica ai contenuti che esistono al momento dell'applicazione delle impostazioni di conservazione. Inoltre, per i criteri di conservazione, i nuovi contenuti creati o aggiunti alla raccolta siti in seguito all'inclusione nei criteri conservazione, verranno conservati dopo l'eliminazione. Tuttavia, i nuovi contenuti non vengono copiati nella raccolta di archiviazione al momento della prima modifica, ma solo quando viene eliminato. Per conservare tutte le versioni di un file, è necessario attivare il [controllo delle versioni](#how-retention-works-with-document-versions).
   
 Se si prova a eliminare una raccolta, un elenco, una cartella o un sito soggetti a u criteri di conservazione, viene visualizzato un messaggio di errore. Un utente può eliminare una cartella se prima di tutto sposta o elimina gli eventuali file nella cartella soggetta a criteri. Inoltre, la raccolta di archiviazione viene creata in questa fase e non quando si creano i criteri di conservazione o si applica un’etichetta di conservazione. Questo vuol dire che, per testare la conservazione, è necessario prima di tutto modificare o eliminare un documento in un sito soggetto ai criteri di conservazione o con un’etichetta di conservazione applicata, e quindi passare alla raccolta di archiviazione per visualizzare la copia conservata.
   
@@ -90,32 +90,34 @@ Quando l'impostazione di conservazione è Conserva solo o Elimina solo, i percor
 
 ## <a name="how-retention-works-for-onenote-content"></a>Funzionamento della conservazione per il contenuto di OneNote
 
-Quando si applicano criteri di conservazione a una posizione che include contenuto di OneNote, le diverse sezioni di OneNote corrispondono in effetti a file diversi. Questo significa che ogni sezione verrà conservata ed eliminata singolarmente, in base alle impostazioni di conservazione specificate.
+Quando si applicano i criteri di conservazione a una posizione che include contenuto di OneNote, le diverse sezioni di OneNote corrispondono ai file individuali. Questo significa che ogni sezione verrà conservata ed eliminata singolarmente, in base alle impostazioni di conservazione specificate.
 
-## <a name="how-retention-works-with-document-versions-in-a-site-collection"></a>Funzionamento della conservazione con le versioni del documento in una raccolta siti
+## <a name="how-retention-works-with-document-versions"></a>Come funziona la conservazione con le versioni dei documenti
 
-Il controllo delle versioni è una caratteristica di tutte le raccolte documenti di SharePoint e OneDrive. Per impostazione predefinita, il controllo delle versioni conserva almeno 500 versioni principali, limite che è possibile aumentare. Per ulteriori informazioni, vedere [Abilitare e configurare il controllo delle versioni per un elenco o una raccolta](https://support.office.com/article/1555d642-23ee-446a-990a-bcab618c7a37) e [Come funziona il controllo delle versioni negli elenchi e nelle raccolte](https://support.microsoft.com/office/how-versioning-works-in-lists-and-libraries-0f6cd105-974f-44a4-aadb-43ac5bdfd247).
+Il controllo delle versioni è una caratteristica di tutte gli elenchi e raccolte documenti di SharePoint e OneDrive. Per impostazione predefinita, il controllo delle versioni conserva almeno 500 versioni principali, limite che è possibile aumentare. Per ulteriori informazioni, vedere [Abilitare e configurare il controllo delle versioni per un elenco o una raccolta](https://support.office.com/article/1555d642-23ee-446a-990a-bcab618c7a37) e [Come funziona il controllo delle versioni negli elenchi e nelle raccolte](https://support.microsoft.com/office/how-versioning-works-in-lists-and-libraries-0f6cd105-974f-44a4-aadb-43ac5bdfd247).
   
-Le impostazioni di sola conservazione mantengono tutte le versioni di un documento in una raccolta siti di SharePoint o in un account OneDrive. Quando si modifica per la prima volta un documento soggetto a impostazioni di blocco o di sola conservazione, una versione dell'originale viene copiata nella raccolta di archiviazione. Quando si elimina un documento soggetto a impostazioni di blocco o di sola conservazione, vengono copiate tutte le versioni nella raccolta di archiviazione, se è attivato il controllo delle versioni. Ogni versione di un documento nella raccolta di conservazione è un elemento separato con un periodo di conservazione specifico:
-  
+Quando un documento con versioni è soggetto a impostazioni di conservazione per conservare tale contenuto, le versioni che vengono copiate nella libreria di conservazione esistono come elemento distinto. Se le impostazioni di conservazione sono configurate per l'eliminazione al termine del periodo di conservazione:
+
 - Se il periodo di conservazione si basa sulla data di creazione del contenuto, ciascuna versione ha la stessa data di scadenza del documento originale.  Il documento originale e le sue versioni scadono tutti allo stesso tempo.
 
-- Se il periodo di conservazione si basa sulla data dell'ultima modifica del contenuto, ciascuna versione ha la propria data di scadenza in base a quando il documento originale è stato modificato per creare quella versione.  I documenti originali e le relative versioni scadono indipendentemente l'uno dall'altro.
+- Se il periodo di conservazione si basa sulla data dell'ultima modifica del contenuto, ciascuna versione ha la propria data di scadenza in base a quando il documento originale è stato modificato per creare quella versione.  i documenti originali e le relative versioni scadono indipendentemente l'uno dall'altro.
 
 > [!NOTE]
-> Le versioni conservate dei documenti di SharePoint e OneDrive non sono disponibili per la ricerca da parte degli strumenti di eDiscovery.
+> le versioni conservate dei documenti di SharePoint e OneDrive non sono disponibili per la ricerca da parte degli strumenti di eDiscovery.
 
-Se gli elementi sono soggetti a criteri di conservazione (o a un fermo legale), i limiti di controllo delle versioni per la raccolta documenti vengono ignorati finché non viene raggiunto il periodo di conservazione del documento. In questo scenario, le versioni precedenti non vengono eliminate automaticamente e non è possibile eliminarle.
+Quando l'azione di conservazione elimina il documento, tutte le versioni non presenti nella raccolta di archiviazione vengono eliminate contemporaneamente in base alla versione corrente.
 
-Questo non è il caso delle etichette di conservazione quando un criterio di conservazione non è applicato al sito. I limiti di controllo delle versioni sono rispettati in modo che le versioni più vecchie vengano automaticamente cancellate per accogliere le nuove versioni, ma agli utenti viene ancora impedito di cancellare le versioni.
+Se gli elementi sono soggetti a criteri di conservazione (o a un blocco eDiscovery), i limiti di controllo delle versioni per la raccolta documenti vengono ignorati finché non viene raggiunto il periodo di conservazione del documento (o se il blocco eDiscovery viene rilasciato). In questo scenario, le versioni precedenti non vengono eliminate automaticamente e non è possibile eliminarle.
+
+Questo non è il caso delle etichette di conservazione se il contenuto non è soggetto a criteri di conservazione (o blocco eDiscovery). I limiti di controllo delle versioni sono rispettati in modo che le versioni più vecchie vengano automaticamente cancellate per accogliere le nuove versioni, ma agli utenti viene ancora impedito di cancellare le versioni.
 
 ## <a name="when-a-user-leaves-the-organization"></a>Quando un utente abbandona l’organizzazione
 
-**SharePoint**:
+**SharePoint** :
 
 Se un utente abbandona l'organizzazione, tutti i contenuti creati da quest'ultimo non subiranno alcuna modifica in quanto SharePoint è considerato un ambiente di collaborazione, al contrario di una cassetta postale o di un account OneDrive dell'utente.
 
-**OneDrive**:
+**OneDrive** :
 
 Se un utente abbandona l'organizzazione, i file soggetti a un criterio di conservazione o con etichette di conservazione verranno mantenuti per l'intera durata dell'etichetta o del criterio. Durante questo periodo di tempo, tutti gli accessi di condivisione continueranno a funzionare. Quando il periodo di conservazione scade, il contenuto viene spostato nel Cestino della raccolta siti e solo gli amministratori possono accedervi. Se un documento viene contrassegnato come record da un’etichetta di conservazione, il documento viene mantenuto fino allo scadere del periodo di conservazione, al termine del quale il contenuto verrà eliminato definitivamente.
 
