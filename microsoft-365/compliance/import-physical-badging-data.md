@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: Gli amministratori possono configurare un connettore di dati per importare i dati dal sistema fisico di badging dell'organizzazione a Microsoft 365. In questo modo è possibile utilizzare questi dati nei criteri di gestione dei rischi Insider utili per rilevare l'accesso ai propri edifici fisici da parte di utenti specifici che potrebbero indicare una possibili minacce interne all'organizzazione.
-ms.openlocfilehash: 6d52879031c8801191b1a419f38a1167c1bb0688
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 71f43d8e6abd53454b6c81d811d0dca2e8b08388
+ms.sourcegitcommit: 3c39866865c8c61bce2169818d8551da65033cfe
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48204507"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "48816649"
 ---
 # <a name="set-up-a-connector-to-import-physical-badging-data-preview"></a>Configurare un connettore per l'importazione dei dati fisici di badging (anteprima)
 
@@ -51,11 +51,11 @@ L'impostazione di un connettore fisico di badging è costituita dalle attività 
 
 Il primo passaggio consiste nel creare e registrare una nuova app in Azure Active Directory (Azure AD). L'app corrisponderà al connettore badging fisico creato nel passaggio 3. La creazione di questa app consentirà ad Azure ad di autenticare la richiesta push per il payload JSON contenente dati di badging fisici. Durante la creazione di questa applicazione Azure AD, assicurarsi di salvare le informazioni seguenti. Questi valori verranno utilizzati nei passaggi successivi.
 
-- ID applicazione Azure AD (denominato anche ID *app* o *ID client*)
+- ID applicazione Azure AD (denominato anche ID *app* o *ID client* )
 
-- Segreto dell'applicazione Azure AD (denominato anche *segreto client*)
+- Segreto dell'applicazione Azure AD (denominato anche *segreto client* )
 
-- ID tenant (denominato anche *ID directory*)
+- ID tenant (denominato anche *ID directory* )
 
 Per istruzioni dettagliate per la creazione di un'app in Azure AD, vedere registrazione di [un'applicazione con la piattaforma Microsoft Identity](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app).
 
@@ -65,7 +65,7 @@ Il passaggio successivo consiste nel creare un file JSON contenente informazioni
 
 Il file JSON deve essere conforme alla definizione dello schema richiesta dal connettore. Di seguito sono riportate le descrizioni delle proprietà dello schema necessarie per il file JSON:
 
-|**Proprietà**|**Descrizione**|**Data type**|
+| Proprietà | Descrizione | Tipo di dati |
 |:-----------|:--------------|:------------|
 |UserId|Un dipendente può disporre di più identità digitali nei sistemi. Per l'input è necessario che l'ID di Azure AD sia già stato risolto dal sistema di origine. |UPN o indirizzo di posta elettronica|
 |AssetId|ID di riferimento del cespite fisico o del punto di accesso fisico.| Stringa alfanumerica|
@@ -76,7 +76,7 @@ Il file JSON deve essere conforme alla definizione dello schema richiesta dal co
 
 Di seguito è riportato un esempio di file JSON conforme allo schema obbligatorio:
 
-```text
+```json
 [
     {
         "UserId":"sarad@contoso.com"
@@ -137,11 +137,11 @@ Il passaggio successivo consiste nel creare un connettore fisico di badging nel 
 
 1. Andare a [https://compliance.microsoft.com](https://compliance.microsoft.com/) e quindi fare clic su **connettori dati** nel NAV sinistro.
 
-2. Nella pagina **connettori dati** in **badging fisica**fare clic su **Visualizza**.
+2. Nella pagina **connettori dati** in **badging fisica** fare clic su **Visualizza** .
 
-3. Nella pagina **badging fisica** fare clic su **Aggiungi connettore**.
+3. Nella pagina **badging fisica** fare clic su **Aggiungi connettore** .
 
-4. Nella pagina **credenziali di autenticazione** eseguire le operazioni seguenti e quindi fare clic su **Avanti**:
+4. Nella pagina **credenziali di autenticazione** eseguire le operazioni seguenti e quindi fare clic su **Avanti** :
   
    1. Digitare o incollare l'ID dell'applicazione Azure AD per l'app Azure creata al passaggio 1.
   
@@ -155,7 +155,7 @@ Il passaggio successivo consiste nel creare un connettore fisico di badging nel 
 
    La pagina stato contiene anche un collegamento allo script. Fare riferimento a questo script per comprendere come inviare il file JSON all'endpoint dell'API.
 
-7. Fare clic su **Fine**.
+7. Fare clic su **Fatto** .
 
    Il nuovo connettore viene visualizzato nell'elenco della scheda **connettori** .
 
@@ -190,7 +190,7 @@ Dopo aver eseguito lo script, il file JSON contenente i dati fisici di badging v
 
    Nella tabella seguente vengono descritti i parametri da utilizzare con questo script e i valori necessari. Le informazioni ottenute nei passaggi precedenti vengono utilizzate nei valori di questi parametri.
 
-   | **Parametro**|**Descrizione**|
+   | Parametro | Descrizione |
    |:-------------|:--------------|
    |tenantId | Questo è l'ID dell'organizzazione Microsoft 365 ottenuta al passaggio 1. È anche possibile ottenere l'tenantId per l'organizzazione nel pannello **Panoramica** nell'interfaccia di amministrazione di Azure ad. Viene utilizzato per identificare l'organizzazione. |
    |appId | Questo è l'ID dell'applicazione Azure AD per l'app creata in Azure AD nel passaggio 1. Questo metodo viene utilizzato da Azure AD per l'autenticazione quando lo script tenta di accedere all'organizzazione Microsoft 365.                    |
@@ -218,17 +218,17 @@ Dopo aver creato il connettore fisico di badging e aver premuto i dati di badgin
 
 1. Andare a [https://compliance.microsoft.com](https://compliance.microsoft.com/) e fare clic su **connettori dati** nel NAV sinistro.
 
-2. Fare clic sulla scheda **connettori** e quindi selezionare il connettore badging fisico per visualizzare la pagina del riquadro a comparsa, che contiene le proprietà e le informazioni sul connettore.
+2. Fare clic sulla scheda **connettori** e quindi selezionare il connettore badging fisico per visualizzare la pagina del riquadro a comparsa. Questa pagina contiene le proprietà e le informazioni sul connettore.
 
    ![Pagina del riquadro a comparsa di stato per il connettore badging fisico](..\media\PhysicalBadgingStatusFlyout.png)
 
-3. In **Ultima importazione**fare clic sul collegamento **download log** per aprire o salvare il registro di stato del connettore. Questo log contiene informazioni su ogni volta che lo script viene eseguito e carica i dati dal file CSV al cloud Microsoft.
+3. In **Ultima importazione** fare clic sul collegamento **download log** per aprire o salvare il registro di stato del connettore. Questo log contiene informazioni su ogni volta che lo script viene eseguito e carica i dati dal file CSV al cloud Microsoft.
 
    ![Il file di registro del connettore di badging fisico Visualizza le righe di numero da file JSON che sono stati caricati](..\media\PhysicalBadgingConnectorLogFile.png)
 
    Il campo **RecordsSaved** indica il numero di righe nel file CSV che è stato caricato. Ad esempio, se il file CSV contiene quattro righe, il valore dei campi **RecordsSaved** è 4, se lo script ha correttamente caricato tutte le righe del file CSV.
 
-Se non è stato eseguito lo script nel passaggio 4, viene visualizzato un collegamento per scaricare lo script nell' **Ultima importazione**. È possibile scaricare lo script e quindi seguire i passaggi descritti nel passaggio 4 per eseguirlo.
+Se non è stato eseguito lo script nel passaggio 4, viene visualizzato un collegamento per scaricare lo script nell' **Ultima importazione** . È possibile scaricare lo script e quindi seguire i passaggi descritti nel passaggio 4 per eseguirlo.
 
 ## <a name="optional-step-6-schedule-the-script-to-run-automatically"></a>Optional Passaggio 6: pianificare l'esecuzione automatica dello script
 
@@ -236,35 +236,35 @@ Per assicurarsi che i dati di badging fisici più recenti dell'organizzazione si
 
 È possibile utilizzare l'app utilità di pianificazione in Windows per eseguire automaticamente lo script ogni giorno.
 
-1. Nel computer locale, fare clic sul pulsante **Start** di Windows e quindi digitare **utilità di pianificazione**.
+1. Nel computer locale, fare clic sul pulsante **Start** di Windows e quindi digitare **utilità di pianificazione** .
 
 2. Fare clic sull'app **utilità di pianificazione** per aprirla.
 
-3. Nella sezione **azioni** fare clic su **Crea attività**.
+3. Nella sezione **azioni** fare clic su **Crea attività** .
 
-4. Nella scheda **generale** Digitare un nome descrittivo per l'attività pianificata. ad esempio, **script del connettore badging fisico**. È inoltre possibile aggiungere una descrizione facoltativa.
+4. Nella scheda **generale** Digitare un nome descrittivo per l'attività pianificata. ad esempio, **script del connettore badging fisico** . È inoltre possibile aggiungere una descrizione facoltativa.
 
-5. In **Opzioni di sicurezza**eseguire le operazioni seguenti:
+5. In **Opzioni di sicurezza** eseguire le operazioni seguenti:
 
    1. Determinare se eseguire lo script solo quando si è connessi al computer o quando si è connessi o meno.
 
    2. Verificare che sia selezionata la casella **di controllo Esegui con i privilegi più alti** .
 
-6. Selezionare la scheda **trigger** , fare clic su **nuovo**e quindi eseguire le operazioni seguenti:
+6. Selezionare la scheda **trigger** , fare clic su **nuovo** e quindi eseguire le operazioni seguenti:
 
-   1. In **Impostazioni**, selezionare l'opzione **giornaliero** e quindi scegliere una data e un'ora per l'esecuzione dello script per la prima volta. Lo script viene applicato ogni giorno allo stesso tempo specificato.
+   1. In **Impostazioni** , selezionare l'opzione **giornaliero** e quindi scegliere una data e un'ora per l'esecuzione dello script per la prima volta. Lo script viene applicato ogni giorno allo stesso tempo specificato.
 
-   2. In **Impostazioni avanzate**verificare che sia selezionata la casella di controllo **abilitata** .
+   2. In **Impostazioni avanzate** verificare che sia selezionata la casella di controllo **abilitata** .
 
-   3. Fare clic su **OK**.
+   3. Fare clic su **OK** .
 
-7. Selezionare la scheda **azioni** , fare clic su **nuovo**e quindi eseguire le operazioni seguenti:
+7. Selezionare la scheda **azioni** , fare clic su **nuovo** e quindi eseguire le operazioni seguenti:
 
    ![Impostazioni azione per creare una nuova attività pianificata per lo script del connettore badging fisico](..\media\SchedulePhysicalBadgingScript1.png)
 
    1. Nell'elenco a discesa **azione** , verificare che sia selezionata l'opzione **avvia un programma** .
 
-   2. Nella casella **programma/script** fare clic su **Sfoglia**e passare al percorso seguente e selezionarlo in modo che il percorso venga visualizzato nella casella: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe.
+   2. Nella casella **programma/script** fare clic su **Sfoglia** e passare al percorso seguente e selezionarlo in modo che il percorso venga visualizzato nella casella: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe.
 
    3. Nella casella **Add arguments (optional)** incollare lo stesso comando script eseguito nel passaggio 4. Ad esempio, .\PhysicalBadging.ps1-tenantId "d5723623-11CF-4E2E-b5a5-01d1506273g9"-appId "c12823b7-B55A-4989-FABA-02de41bb97c3"-appSecret "MNubVGbcQDkGCnn"-jobId "e081f4f4-3831-48D6-7bb3-fcfab1581458"-jsonFilePath "C:\Users\contosoadmin\Desktop\Data\physical_badging_data.csv"
 
