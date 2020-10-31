@@ -15,12 +15,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: Gli amministratori del cloud governativo degli Stati Uniti possono configurare un connettore dati per importare i dati dei dipendenti dal sistema HR (Human Resources) dell'organizzazione a Microsoft 365. In questo modo è possibile utilizzare i dati HR nei criteri di gestione dei rischi Insider utili per rilevare l'attività da parte di utenti specifici che possono rappresentare un rischio interno per la propria organizzazione.
-ms.openlocfilehash: c1382cd94fcbba1d2ba561657c756e509af21dae
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 28f4c77ec626e2035451ec6e7c9562c5bf20f101
+ms.sourcegitcommit: 3c39866865c8c61bce2169818d8551da65033cfe
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48196389"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "48816841"
 ---
 # <a name="set-up-a-connector-to-import-hr-data-in-us-government"></a>Configurare un connettore per l'importazione dei dati HR nel governo degli Stati Uniti
 
@@ -40,11 +40,11 @@ ms.locfileid: "48196389"
 
 Il primo passaggio consiste nel creare e registrare una nuova app in Azure Active Directory (Azure AD). L'app corrisponderà al connettore HR creato nel passaggio 3. La creazione di questa app consentirà ad Azure AD di autenticare il connettore HR quando viene eseguito e tenta di accedere all'organizzazione. Questa app verrà utilizzata anche per autenticare lo script eseguito nel passaggio 4 per caricare i dati HR nel cloud Microsoft. Durante la creazione di questa applicazione Azure AD, assicurarsi di salvare le informazioni seguenti. Questi valori verranno utilizzati nei passaggi successivi.
 
-- ID applicazione Azure AD (denominato anche ID *app* o *ID client*)
+- ID applicazione Azure AD (denominato anche ID *app* o *ID client* )
 
-- Segreto dell'applicazione Azure AD (denominato anche *segreto client*)
+- Segreto dell'applicazione Azure AD (denominato anche *segreto client* )
 
-- ID tenant (denominato anche *ID directory*)
+- ID tenant (denominato anche *ID directory* )
 
 Per istruzioni dettagliate per la creazione di un'app in Azure AD, vedere registrazione di [un'applicazione con la piattaforma Microsoft Identity](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app).
 
@@ -62,7 +62,7 @@ La prima riga, o riga di intestazione, del file CSV elenca i nomi di colonna nec
 
 Nella tabella seguente vengono descritte tutte le colonne del file CSV:
 
-|**Nome colonna**|**Descrizione**|
+| Nome colonna | Descrizione |
 |:-----|:-----|
 | **EmailAddress** <br/> |Specifica l'indirizzo di posta elettronica del dipendente terminato.|
 | **TerminationDate** <br/> |Specifica la data in cui l'occupazione della persona è stata ufficialmente terminata nell'organizzazione. Ad esempio, questa potrebbe essere la data in cui il dipendente ha dato la propria comunicazione sull'uscita dall'organizzazione. Questa data può essere diversa dalla data dell'ultimo giorno di lavoro dell'utente. Utilizzare il formato di data seguente: `yyyy-mm-ddThh:mm:ss.nnnnnn+|-hh:mm` , ovvero il [formato di data e ora ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html).|
@@ -77,17 +77,17 @@ Il passaggio successivo consiste nel creare un connettore HR nel centro conformi
 
 1. Andare a [https://compliance.microsoft.com](https://compliance.microsoft.com) e quindi fare clic su **connettori dati** nel NAV sinistro.
 
-2. Nella pagina **connettori dati** in **HR**fare clic su **Visualizza**.
+2. Nella pagina **connettori dati** in **HR** fare clic su **Visualizza** .
 
-3. Nella pagina **HR** fare clic su **Aggiungi connettore**.
+3. Nella pagina **HR** fare clic su **Aggiungi connettore** .
 
-4. Nella pagina **credenziali di autenticazione** eseguire le operazioni seguenti e quindi fare clic su **Avanti**:
+4. Nella pagina **credenziali di autenticazione** eseguire le operazioni seguenti e quindi fare clic su **Avanti** :
 
-   a. Digitare o incollare l'ID dell'applicazione Azure AD per l'app Azure creata al passaggio 1.
+   1. Digitare o incollare l'ID dell'applicazione Azure AD per l'app Azure creata al passaggio 1.
 
-   b. Digitare un nome per il connettore HR.
+   1. Digitare un nome per il connettore HR.
 
-5. Nella pagina **mapping file** Digitare i nomi delle tre intestazioni di colonna (denominate anche *parametri*) dal file CSV creato nel passaggio 2 in ognuna delle caselle appropriate. I nomi non sono distinzione tra maiuscole e minuscole. Come spiegato in precedenza, i nomi digitati in queste caselle devono corrispondere ai nomi dei parametri nel file CSV. Ad esempio, nella schermata seguente vengono mostrati i nomi dei parametri dell'esempio in un file CSV di esempio illustrato nel passaggio 2.
+5. Nella pagina **mapping file** Digitare i nomi delle tre intestazioni di colonna (denominate anche *parametri* ) dal file CSV creato nel passaggio 2 in ognuna delle caselle appropriate. I nomi non sono distinzione tra maiuscole e minuscole. Come spiegato in precedenza, i nomi digitati in queste caselle devono corrispondere ai nomi dei parametri nel file CSV. Ad esempio, nella schermata seguente vengono mostrati i nomi dei parametri dell'esempio in un file CSV di esempio illustrato nel passaggio 2.
 
    ![I nomi delle intestazioni di colonna corrispondono a quelli nel file CSV](../media/HRConnectorWizard3.png)
 
@@ -97,11 +97,11 @@ Il passaggio successivo consiste nel creare un connettore HR nel centro conformi
 
    ![Pagina Revisione con ID processo e collegamento a GitHub per lo script di esempio](../media/HRConnector_Confirmation.png)
 
-   a. **ID processo.** Questo ID processo è necessario per eseguire lo script nel passaggio successivo. È possibile copiarlo da questa pagina o dalla pagina del riquadro a comparsa del connettore.
+   1. **ID processo.** Questo ID processo è necessario per eseguire lo script nel passaggio successivo. È possibile copiarlo da questa pagina o dalla pagina del riquadro a comparsa del connettore.
    
-   b. **Collegamento a uno script di esempio.** Fare clic sul collegamento **qui** per passare al sito GitHub per accedere allo script di esempio (il collegamento apre una nuova finestra). Tenere aperta la finestra in modo che sia possibile copiare lo script nel passaggio 4. In alternativa, è possibile aggiungere un segnalibro alla destinazione o copiare l'URL in modo che sia possibile accedervi di nuovo nel passaggio 4. Questo collegamento è disponibile anche nella pagina del riquadro a comparsa del connettore.
+   1. **Collegamento a uno script di esempio.** Fare clic sul collegamento **qui** per passare al sito GitHub per accedere allo script di esempio (il collegamento apre una nuova finestra). Tenere aperta la finestra in modo che sia possibile copiare lo script nel passaggio 4. In alternativa, è possibile aggiungere un segnalibro alla destinazione o copiare l'URL in modo che sia possibile accedervi di nuovo nel passaggio 4. Questo collegamento è disponibile anche nella pagina del riquadro a comparsa del connettore.
 
-7. Fare clic su **Fine**.
+7. Fare clic su **Fatto** .
 
    Il nuovo connettore viene visualizzato nell'elenco della scheda **connettori** . 
 
@@ -109,7 +109,7 @@ Il passaggio successivo consiste nel creare un connettore HR nel centro conformi
 
    ![Pagina a comparsa per il nuovo connettore HR](../media/HRConnectorWizard7.png)
 
-   Se non è stato ancora fatto, è possibile copiare i valori per l'ID dell' **app di Azure** e il **processo di connettore**. Sarà necessario eseguire lo script nel passaggio successivo. È inoltre possibile scaricare lo script dalla pagina del riquadro a comparsa o scaricarlo utilizzando il collegamento nel passaggio successivo.
+   Se non è stato ancora fatto, è possibile copiare i valori per l'ID dell' **app di Azure** e il **processo di connettore** . Sarà necessario eseguire lo script nel passaggio successivo. È inoltre possibile scaricare lo script dalla pagina del riquadro a comparsa o scaricarlo utilizzando il collegamento nel passaggio successivo.
 
    È inoltre possibile fare clic su **modifica** per modificare l'ID dell'app di Azure o i nomi delle intestazioni di colonna definiti nella pagina **mapping dei file** .
 
@@ -137,7 +137,7 @@ L'ultimo passaggio per la configurazione di un connettore HR è l'esecuzione di 
 
    Nella tabella seguente vengono descritti i parametri da utilizzare con questo script e i valori necessari. Le informazioni ottenute nei passaggi precedenti vengono utilizzate nei valori di questi parametri.
 
-   |**Parametro**|**Descrizione**
+   | Parametro | Descrizione |
    |:-----|:-----|:-----|
    |`tenantId`|ID dell'organizzazione Microsoft 365 ottenuta al passaggio 1. È anche possibile ottenere l'ID tenant per l'organizzazione nel pannello **Panoramica** nell'interfaccia di amministrazione di Azure ad. Viene utilizzato per identificare l'organizzazione.|
    |`appId` |ID dell'applicazione Azure AD per l'app creata in Azure AD nel passaggio 1. Questo metodo viene utilizzato da Azure AD per l'autenticazione quando lo script tenta di accedere all'organizzazione Microsoft 365. |
@@ -163,17 +163,17 @@ Dopo aver creato il connettore HR ed eseguito lo script per caricare i dati HR, 
 
 1. Andare a [https://compliance.microsoft.com](https://compliance.microsoft.com) e fare clic su **connettori dati** nel NAV sinistro.
 
-2. Fare clic sulla scheda **connettori** e quindi selezionare il connettore HR per visualizzare la pagina del riquadro a comparsa, che contiene le proprietà e le informazioni sul connettore.
+2. Fare clic sulla scheda **connettori** e quindi selezionare il connettore HR per visualizzare la pagina del riquadro a comparsa. Questa pagina contiene le proprietà e le informazioni sul connettore.
 
    ![Pagina del riquadro a comparsa del connettore HR con proprietà e stato](../media/HRConnectorFlyout1.png)
 
-3. In **stato di avanzamento**fare clic sul collegamento **accedi al registro** per aprire o salvare il registro di stato del connettore. Questo log contiene informazioni su ogni volta che lo script viene eseguito e carica i dati dal file CSV al cloud Microsoft. 
+3. In **stato di avanzamento** fare clic sul collegamento **accedi al registro** per aprire o salvare il registro di stato del connettore. Questo log contiene informazioni su ogni volta che lo script viene eseguito e carica i dati dal file CSV al cloud Microsoft. 
 
    ![Il file di registro del connettore HR Visualizza le righe di numero da file CSV caricati](../media/HRConnectorLogFile.png)
 
    Il `RecordsSaved` campo indica il numero di righe nel file CSV che è stato caricato. Ad esempio, se il file CSV contiene quattro righe, il valore dei `RecordsSaved` campi è 4, se lo script ha correttamente caricato tutte le righe nel file CSV.
 
-Se non è stato eseguito lo script nel passaggio 4, viene visualizzato un collegamento per scaricare lo script nell' **Ultima importazione**. È possibile scaricare lo script e quindi seguire i passaggi descritti nel passaggio 4 per eseguirlo.
+Se non è stato eseguito lo script nel passaggio 4, viene visualizzato un collegamento per scaricare lo script nell' **Ultima importazione** . È possibile scaricare lo script e quindi seguire i passaggi descritti nel passaggio 4 per eseguirlo.
 
 ## <a name="optional-step-6-schedule-the-script-to-run-automatically"></a>Optional Passaggio 6: pianificare l'esecuzione automatica dello script
 
@@ -181,41 +181,41 @@ Per assicurarsi che i dati HR più recenti dell'organizzazione siano disponibili
 
 È possibile utilizzare l'app utilità di pianificazione in Windows per eseguire automaticamente lo script ogni giorno.
 
-1. Nel computer locale, fare clic sul pulsante **Start** di Windows e quindi digitare **utilità di pianificazione**.
+1. Nel computer locale, fare clic sul pulsante **Start** di Windows e quindi digitare **utilità di pianificazione** .
 
 2. Fare clic sull'app **utilità di pianificazione** per aprirla.
 
-3. Nella sezione **azioni** fare clic su **Crea attività**.
+3. Nella sezione **azioni** fare clic su **Crea attività** .
 
-4. Nella scheda **generale** Digitare un nome descrittivo per l'attività pianificata. ad esempio, **lo script del connettore HR**. È inoltre possibile aggiungere una descrizione facoltativa.
+4. Nella scheda **generale** Digitare un nome descrittivo per l'attività pianificata. ad esempio, **lo script del connettore HR** . È inoltre possibile aggiungere una descrizione facoltativa.
 
-5. In **Opzioni di sicurezza**eseguire le operazioni seguenti:
+5. In **Opzioni di sicurezza** eseguire le operazioni seguenti:
 
-   a. Determinare se eseguire lo script solo quando si è connessi al computer o quando si è connessi o meno.
+   1. Determinare se eseguire lo script solo quando si è connessi al computer o quando si è connessi o meno.
    
-   b. Verificare che sia selezionata la casella **di controllo Esegui con i privilegi più alti** .
+   1. Verificare che sia selezionata la casella **di controllo Esegui con i privilegi più alti** .
 
-6. Selezionare la scheda **trigger** , fare clic su **nuovo**e quindi eseguire le operazioni seguenti:
+6. Selezionare la scheda **trigger** , fare clic su **nuovo** e quindi eseguire le operazioni seguenti:
 
-   a. In **Impostazioni**, selezionare l'opzione **giornaliero** e quindi scegliere una data e un'ora per l'esecuzione dello script per la prima volta. Lo script viene applicato ogni giorno allo stesso tempo specificato.
+   1. In **Impostazioni** , selezionare l'opzione **giornaliero** e quindi scegliere una data e un'ora per l'esecuzione dello script per la prima volta. Lo script viene applicato ogni giorno allo stesso tempo specificato.
    
-   b. In **Impostazioni avanzate**verificare che sia selezionata la casella di controllo **abilitata** .
+   1. In **Impostazioni avanzate** verificare che sia selezionata la casella di controllo **abilitata** .
    
-   c. Fare clic su **OK**.
+   1. Fare clic su **OK** .
 
-7. Selezionare la scheda **azioni** , fare clic su **nuovo**e quindi eseguire le operazioni seguenti:
+7. Selezionare la scheda **azioni** , fare clic su **nuovo** e quindi eseguire le operazioni seguenti:
 
    ![Impostazioni azione per creare una nuova attività pianificata per lo script del connettore HR](../media/HRConnectorScheduleTask1.png)
 
-   a. Nell'elenco a discesa **azione** , verificare che sia selezionata l'opzione **avvia un programma** .
+   1. Nell'elenco a discesa **azione** , verificare che sia selezionata l'opzione **avvia un programma** .
 
-   b. Nella casella **programma/script** fare clic su **Sfoglia**e passare al percorso seguente e selezionarlo in modo che il percorso venga visualizzato nella casella: `C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe` .
+   1. Nella casella **programma/script** fare clic su **Sfoglia** e passare al percorso seguente e selezionarlo in modo che il percorso venga visualizzato nella casella: `C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe` .
 
-   c. Nella casella **Add arguments (optional)** incollare lo stesso comando script eseguito nel passaggio 4. Per esempio `.\HRConnector.ps1 -tenantId "d5723623-11cf-4e2e-b5a5-01d1506273g9" -appId "c12823b7-b55a-4989-faba-02de41bb97c3" -appSecret "MNubVGbcQDkGCnn"  -jobId "e081f4f4-3831-48d6-7bb3-fcfab1581458" -csvFilePath "C:\Users\contosoadmin\Desktop\Data\employee_termination_data.csv"`
+   1. Nella casella **Add arguments (optional)** incollare lo stesso comando script eseguito nel passaggio 4. Per esempio `.\HRConnector.ps1 -tenantId "d5723623-11cf-4e2e-b5a5-01d1506273g9" -appId "c12823b7-b55a-4989-faba-02de41bb97c3" -appSecret "MNubVGbcQDkGCnn"  -jobId "e081f4f4-3831-48d6-7bb3-fcfab1581458" -csvFilePath "C:\Users\contosoadmin\Desktop\Data\employee_termination_data.csv"`
 
-   d. Nella casella **inizia in (facoltativo)** incollare il percorso della cartella dello script eseguito nel passaggio 4. Ad esempio, `C:\Users\contosoadmin\Desktop\Scripts`.
+   1. Nella casella **inizia in (facoltativo)** incollare il percorso della cartella dello script eseguito nel passaggio 4. Ad esempio, `C:\Users\contosoadmin\Desktop\Scripts`.
 
-   e. Fare clic su **OK** per salvare le impostazioni per la nuova azione.
+   1. Fare clic su **OK** per salvare le impostazioni per la nuova azione.
 
 8. Nella finestra **Crea attività** fare clic su **OK** per salvare l'attività pianificata. Potrebbe essere richiesto di immettere le credenziali dell'account utente.
 

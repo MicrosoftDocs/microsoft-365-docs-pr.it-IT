@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Informazioni su come creare ed eseguire una query in un set di revisione per organizzare i dati per una revisione più efficiente in un caso avanzato di eDiscovery.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 508e8e9fdb4a558a998a33aa561dc3755edcc40d
-ms.sourcegitcommit: 9f5b136b96b3af4db4cc6f5b1f35130ae60d6b12
+ms.openlocfilehash: 1ead897d412af2356d8b57ab8494539a5ed9a019
+ms.sourcegitcommit: 3c39866865c8c61bce2169818d8551da65033cfe
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "47816719"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "48816569"
 ---
 # <a name="query-the-data-in-a-review-set"></a>Eseguire query sui dati in un insieme da rivedere
 
@@ -36,25 +36,25 @@ Per creare ed eseguire una query sui documenti in un set di revisione, seleziona
 
 ## <a name="building-a-review-set-query"></a>Creazione di una query del set di Revisione
 
-È possibile creare una query utilizzando una combinazione di schede di condizione e lingua di query nella scheda condizione parole chiave. È inoltre possibile raggruppare le schede delle condizioni insieme come blocco (denominato *gruppo di condizioni*) per creare una query più complessa. Per un elenco e una descrizione delle proprietà dei metadati di cui è possibile eseguire la ricerca, vedere [Document Metadata Fields in Advanced eDiscovery](document-metadata-fields-in-Advanced-eDiscovery.md).
+È possibile creare una query utilizzando una combinazione di parole chiave, proprietà e condizioni nella condizione keywords. È inoltre possibile raggruppare le condizioni come blocco (denominato *gruppo di condizioni* ) per creare una query più complessa. Per un elenco e una descrizione delle proprietà dei metadati di cui è possibile eseguire la ricerca, vedere [Document Metadata Fields in Advanced eDiscovery](document-metadata-fields-in-Advanced-eDiscovery.md).
 
-### <a name="condition-cards"></a>Schede delle condizioni
+### <a name="conditions"></a>Condizioni
 
-Tutti i campi ricercabili in un set di revisione dispongono di una scheda di condizione corrispondente che è possibile utilizzare per creare la query.
+Tutti i campi ricercabili in un set di revisione dispongono di una condizione corrispondente che è possibile utilizzare per creare la query.
 
-Sono disponibili più tipi di schede di condizione:
+Sono disponibili più tipi di condizioni:
 
-- FREETEXT: viene utilizzata una scheda di condizione FREETEXT per i campi di testo, ad esempio subject. È possibile elencare più termini di ricerca separandoli con una virgola.
+- FREETEXT: viene utilizzata una condizione FREETEXT per i campi di testo, ad esempio subject. È possibile elencare più termini di ricerca separandoli con una virgola.
 
-- Data: viene utilizzata una scheda condizione data per i campi data, ad esempio la data dell'Ultima modifica.
+- Data: viene utilizzata una condizione data per i campi data, ad esempio la data dell'Ultima modifica.
 
-- Opzioni di ricerca: una scheda condizione opzioni di ricerca fornirà un elenco di valori possibili per il campo specifico del set di revisione. Viene utilizzato per i campi, ad esempio sender, in cui è presente un numero finito di valori possibili nel set di revisione.
+- Opzioni di ricerca: una condizione per le opzioni di ricerca fornirà un elenco di valori possibili per il campo specifico del set di revisione. Viene utilizzato per i campi, ad esempio sender, in cui è presente un numero finito di valori possibili nel set di revisione.
 
-- Keyword: una scheda di condizione di parola chiave è un'istanza specifica di FREETEXT Condition card che è possibile utilizzare per cercare i termini oppure utilizzare la lingua di query KQL-like. Per ulteriori informazioni, vedere di seguito.
+- Keyword: una condizione di parola chiave è un'istanza specifica della condizione di FREETEXT che è possibile utilizzare per cercare i termini oppure utilizzare la lingua di query simile a KQL. Per ulteriori informazioni, vedere di seguito.
 
 ### <a name="query-language"></a>Lingua query
 
-Oltre alle schede delle condizioni, è possibile utilizzare un linguaggio di query simile a KQL nella scheda Parole chiave per creare la query. Il linguaggio di query per le query dei set di revisione supporta gli operatori booleani standard, ad esempio **e**, **o**, **non**e **vicino**. Supporta anche un carattere jolly con caratteri singoli (?) e un carattere jolly a più caratteri (*).
+Oltre alle condizioni, è possibile utilizzare un linguaggio di query simile a KQL nella condizione keywords per creare la query. Il linguaggio di query per le query dei set di revisione supporta gli operatori booleani standard, ad esempio **e** , **o** , **non** e **vicino** . Supporta anche un carattere jolly con caratteri singoli (?) e un carattere jolly a più caratteri (*).
 
 ## <a name="filters"></a>Filtri
 

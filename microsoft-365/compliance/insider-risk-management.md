@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: c9b19066b57d40ad33ac8d50ee1bee1f4a828030
-ms.sourcegitcommit: 45c0afcf958069c5c1b31f9b6c762d8dd806e1e9
+ms.openlocfilehash: 289f0763d6a7e887946a5672fde5341f79f96855
+ms.sourcegitcommit: 3c39866865c8c61bce2169818d8551da65033cfe
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "48774049"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "48816861"
 ---
 # <a name="insider-risk-management-in-microsoft-365"></a>Gestione dei rischi insider in Microsoft 365
 
@@ -122,7 +122,7 @@ Nelle situazioni più gravi, potrebbe essere necessario condividere le informazi
 - **Integrazione di office 365 Management Apis (Preview)** : gestione dei rischi Insider supporta l'esportazione di informazioni sugli avvisi per i servizi di gestione eventi e informazioni di sicurezza mediante le API di gestione di Office 365. Accesso alle informazioni sugli avvisi nella piattaforma i processi di rischio dell'organizzazione consentono una maggiore flessibilità nell'agire sulle attività a rischio. Per ulteriori informazioni su come esportare gli avvisi con le API di gestione di Office 365, vedere [Export Alerts](insider-risk-management-settings.md#export-alerts-preview).
 
 >[!NOTE]
->L'anteprima di ServiceNow si concluderà il 30 2020 novembre e non continuerà. Grazie per il feedback e il supporto per i passaggi successivi.
+>Grazie per il feedback e il supporto durante l'anteprima del connettore ServiceNow. È stato deciso di terminare l'anteprima del connettore di ServiceNow e interrompere il supporto in gestione dei rischi Insider il 30 novembre 2020. Stiamo valutando attivamente metodi alternativi per fornire ai clienti l'integrazione di ServiceNow nella gestione dei rischi Insider.
 
 ## <a name="scenarios"></a>Scenari
 

@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Gli amministratori possono configurare un connettore per l'importazione e l'archiviazione dei dati dalle riunioni dello zoom di Globanet in Microsoft 365. In questo modo è possibile archiviare i dati provenienti da origini dati di terze parti in Microsoft 365 per poter utilizzare le funzionalità di conformità, come la conservazione legale, la ricerca di contenuto e i criteri di ritenzione per gestire i dati di terze parti dell'organizzazione.
-ms.openlocfilehash: ef153ec0a14a257f1f46b011e4c15d2b3b704ed3
-ms.sourcegitcommit: ae3aa7f29be16d08950cf23cad489bc069aa8617
+ms.openlocfilehash: fbedf0521464e5faa0f74e6429d12a3eaa1d0f12
+ms.sourcegitcommit: 3c39866865c8c61bce2169818d8551da65033cfe
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48408944"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "48816719"
 ---
 # <a name="set-up-a-connector-to-archive-zoom-meetings-data"></a>Configurare un connettore per archiviare i dati delle riunioni dello zoom
 
@@ -41,7 +41,7 @@ Nella panoramica seguente viene illustrato il processo di utilizzo di un connett
 
 ## <a name="before-you-begin"></a>Prima di iniziare
 
-- Creare un account Merge1 di Globanet per i connettori Microsoft. A tale scopo, contattare il [supporto clienti di Globanet](https://globanet.com/ms-connectors-contact). È necessario accedere a questo account quando si crea il connettore nel passaggio 1.
+- Creare un account Merge1 di Globanet per i connettori Microsoft. Per creare questo account, contattare il [supporto clienti di Globanet](https://globanet.com/ms-connectors-contact). Si eseguirà l'accesso a questo account quando si crea il connettore nel passaggio 1.
 
 - Ottenere il nome utente e la password per l'account aziendale dello zoom o dello zoom dell'organizzazione. È necessario accedere a questo account nel passaggio 2 quando si configura il connettore di riunioni zoom.
 
@@ -55,19 +55,19 @@ Nella panoramica seguente viene illustrato il processo di utilizzo di un connett
 
   Per istruzioni dettagliate su come creare le applicazioni OAuth e JWT, vedere [Merge1 Third-Party Connectors user guide](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20Zoom%20Meetings%20User%20Guide%20.pdf).
 
-- L'utente che crea il connettore di riunioni zoom nel passaggio 1 (e lo completa nel passaggio 3) deve essere assegnato al ruolo di esportazione delle cassette postali in Exchange Online. Questo ruolo è necessario per aggiungere connettori nella pagina **dei connettori dati** nel centro conformità di Microsoft 365. Per impostazione predefinita, questo ruolo non è assegnato a nessun gruppo di ruoli in Exchange Online. È possibile aggiungere il ruolo import export delle cassette postali al gruppo di ruoli Gestione organizzazione in Exchange Online. In alternativa, è possibile creare un gruppo di ruoli, assegnare il ruolo di esportazione delle cassette postali e quindi aggiungere gli utenti corretti come membri. Per ulteriori informazioni, vedere la sezione creare gruppi di [ruoli](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#create-role-groups) o [modificare gruppi di ruoli](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups) nell'articolo "gestire i gruppi di ruoli in Exchange Online".
+- L'utente che crea il connettore di riunioni zoom nel passaggio 1 (e lo completa nel passaggio 3) deve essere assegnato al ruolo di esportazione delle cassette postali in Exchange Online. Questo ruolo è necessario per aggiungere connettori nella pagina **dei connettori dati** nel centro conformità di Microsoft 365. Per impostazione predefinita, questo ruolo non è assegnato a un gruppo di ruoli in Exchange Online. È possibile aggiungere il ruolo import export delle cassette postali al gruppo di ruoli Gestione organizzazione in Exchange Online. In alternativa, è possibile creare un gruppo di ruoli, assegnare il ruolo di esportazione delle cassette postali e quindi aggiungere gli utenti corretti come membri. Per ulteriori informazioni, vedere la sezione creare gruppi di [ruoli](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#create-role-groups) o [modificare gruppi di ruoli](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups) nell'articolo "gestire i gruppi di ruoli in Exchange Online".
 
 ## <a name="step-1-set-up-the-zoom-meetings-connector"></a>Passaggio 1: configurare il connettore per riunioni zoom
 
 Il primo passaggio consiste nell'accedere ai **connettori di dati** nel centro conformità di Microsoft 365 e creare un connettore di riunioni zoom.
 
-1. Passare a [https://compliance.microsoft.com](https://compliance.microsoft.com/) e quindi fare clic su riunioni zoom **dei connettori dati**  >  **Zoom Meetings**.
+1. Passare a [https://compliance.microsoft.com](https://compliance.microsoft.com/) e quindi fare clic su riunioni zoom **dei connettori dati**  >  **Zoom Meetings** .
 
-2. Nella pagina Descrizione del prodotto **riunioni di zoom** fare clic su **Aggiungi connettore**.
+2. Nella pagina Descrizione del prodotto **riunioni di zoom** fare clic su **Aggiungi connettore** .
 
-3. Nella pagina **condizioni del servizio** fare clic su **Accetto**.
+3. Nella pagina **condizioni del servizio** fare clic su **Accetto** .
 
-4. Immettere un nome univoco che identifichi il connettore e quindi fare clic su **Avanti**.
+4. Immettere un nome univoco che identifichi il connettore e quindi fare clic su **Avanti** .
 
 5. Accedere al proprio account di Merge1 per configurare il connettore.
 
@@ -75,7 +75,7 @@ Il primo passaggio consiste nell'accedere ai **connettori di dati** nel centro c
 
 Il secondo passaggio consiste nel configurare il connettore di riunioni zoom nel sito di Merge1. Per ulteriori informazioni su come configurare il connettore zoom meetings nel sito Globanet Merge1, vedere [Merge1 di terze parti dei connettori utente](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20Zoom%20Meetings%20User%20Guide%20.pdf).
 
-Dopo aver fatto clic su **salva & fine**, è possibile tornare al centro conformità di Microsoft 365 alla pagina **mapping utenti** nella procedura guidata del connettore.
+Dopo aver fatto clic su **salva & fine** , viene visualizzata la pagina di **mapping degli utenti** nella procedura guidata del connettore nel centro conformità di Microsoft 365.
 
 ## <a name="step-3-map-users-and-complete-the-connector-setup"></a>Passaggio 3: mappare gli utenti e completare la configurazione del connettore
 
@@ -83,11 +83,11 @@ Dopo aver fatto clic su **salva & fine**, è possibile tornare al centro conform
 
    Gli elementi di riunioni zoom includono una proprietà denominata *posta elettronica* che contiene gli indirizzi di posta elettronica per gli utenti dell'organizzazione. Se il connettore è in grado di associare l'indirizzo a un utente di Microsoft 365, gli elementi vengono importati nella cassetta postale dell'utente.
 
-2. Nella pagina **consenso amministratore** fare clic su **Fornisci consenso**. L'utente verrà reindirizzato al sito Microsoft. Fare clic su **accetta** per fornire il consenso.
+2. Nella pagina **consenso amministratore** fare clic su **Fornisci consenso** . L'utente verrà reindirizzato al sito Microsoft. Fare clic su **accetta** per fornire il consenso.
   
    L'organizzazione deve autorizzare il servizio di importazione di Office 365 per accedere ai dati delle cassette postali nell'organizzazione. Per fornire il consenso dell'amministratore, è necessario essere connessi con le credenziali di un amministratore globale di Microsoft 365 e quindi accettare la richiesta di consenso. Se non è stato eseguito l'accesso come amministratore globale, è possibile accedere a [Questa pagina](https://login.microsoftonline.com/common/oauth2/authorize?client_id=570d0bec-d001-4c4e-985e-3ab17fdc3073&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent) ed eseguire l'accesso con le credenziali di amministratore globale per accettare la richiesta.
 
-3. Fare clic su **Avanti**, rivedere le impostazioni e passare alla pagina **connettori dati** per visualizzare lo stato di avanzamento del processo di importazione per il nuovo connettore.
+3. Fare clic su **Avanti** , rivedere le impostazioni e passare alla pagina **connettori dati** per visualizzare lo stato di avanzamento del processo di importazione per il nuovo connettore.
 
 ## <a name="step-4-monitor-the-zoom-meetings-connector"></a>Passaggio 4: monitorare il connettore di riunioni zoom
 
@@ -95,9 +95,9 @@ Dopo aver creato il connettore di riunioni zoom, è possibile visualizzare lo st
 
 1. Andare a [https://compliance.microsoft.com](https://compliance.microsoft.com) e fare clic su **connettori dati** nel NAV sinistro.
 
-2. Fare clic sulla scheda **connettori** e quindi selezionare il connettore **ingrandimento riunioni** per visualizzare la pagina del riquadro a comparsa, che contiene le proprietà e le informazioni sul connettore.
+2. Fare clic sulla scheda **connettori** , quindi selezionare il connettore **Zoom Meetings** per visualizzare la pagina a comparsa. Questa pagina contiene le proprietà e le informazioni sul connettore.
 
-3. In **stato connettore con origine**fare clic sul collegamento **Scarica log** per aprire o salvare il registro di stato del connettore. Questo log contiene informazioni sui dati che sono stati importati nel cloud Microsoft.
+3. In **stato connettore con origine** fare clic sul collegamento **Scarica log** per aprire o salvare il registro di stato del connettore. Questo log contiene informazioni sui dati che sono stati importati nel cloud Microsoft.
 
 ## <a name="known-issues"></a>Problemi noti
 
