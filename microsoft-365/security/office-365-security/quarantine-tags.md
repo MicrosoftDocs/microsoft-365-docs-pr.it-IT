@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 ROBOTS: NOINDEX
 description: Gli amministratori possono imparare a usare i tag di quarantena per controllare quali utenti sono in grado di eseguire nei messaggi in quarantena.
-ms.openlocfilehash: 557a6832807c1768f482e76c76c0e92b027e49a7
-ms.sourcegitcommit: 2810d1347e5016412074b2dd18e654aee7e593de
+ms.openlocfilehash: 89f03795d8f12b3df3e5090648c5a6c8b64c322a
+ms.sourcegitcommit: 676479f1e65492b44c4d0316a765f55ae9fae374
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 10/31/2020
-ms.locfileid: "48819230"
+ms.locfileid: "48819741"
 ---
 # <a name="quarantine-tags"></a>Tag di quarantena
 
@@ -477,7 +477,7 @@ L'autorizzazione **Consenti mittente** ( _PermissionToAllowSender_ ) consente di
 
 Per ulteriori informazioni sull'elenco dei mittenti attendibili, vedere [Impedisci](https://support.microsoft.com/office/274ae301-5db2-4aad-be21-25413cede077#__toc304379666) l'esecuzione del blocco dei mittenti trusted e [utilizzo di PowerShell di Exchange Online per configurare la raccolta degli elenchi indirizzi attendibili in una cassetta postale](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-junk-email-settings-on-exo-mailboxes#use-exchange-online-powershell-to-configure-the-safelist-collection-on-a-mailbox).
 
-### <a name="block-sender-permission"></a>Autorizzazione Blocca mittente
+#### <a name="block-sender-permission"></a>Autorizzazione Blocca mittente
 
 L'autorizzazione **Blocca mittente** ( _PermissionToBlockSender_ ) consente di controllare l'accesso al pulsante per consentire agli utenti di aggiungere comodamente il mittente del messaggio in quarantena all'elenco dei mittenti bloccati.
 
@@ -491,7 +491,7 @@ L'autorizzazione **Blocca mittente** ( _PermissionToBlockSender_ ) consente di c
 
 Per ulteriori informazioni sull'elenco dei mittenti bloccati, vedere [blocco dei messaggi da](https://support.microsoft.com/office/274ae301-5db2-4aad-be21-25413cede077#__toc304379667) parte di [un utente e utilizzo di PowerShell di Exchange Online per configurare la raccolta degli elenchi indirizzi attendibili in una cassetta postale](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-junk-email-settings-on-exo-mailboxes#use-exchange-online-powershell-to-configure-the-safelist-collection-on-a-mailbox).
 
-### <a name="delete-permission"></a>Autorizzazione di eliminazione
+#### <a name="delete-permission"></a>Autorizzazione di eliminazione
 
 L'autorizzazione di **eliminazione** ( _PermissionToDelete_ ) consente di controllare la possibilità per gli utenti di eliminare i propri messaggi (messaggi in cui l'utente è destinatario) dalla quarantena.
 
@@ -501,7 +501,7 @@ L'autorizzazione di **eliminazione** ( _PermissionToDelete_ ) consente di contro
 
 - **Notifiche di posta indesiderata dell'utente finale** : nessun effetto.
 
-### <a name="preview-permission"></a>Autorizzazione anteprima
+#### <a name="preview-permission"></a>Autorizzazione anteprima
 
 L'autorizzazione **Preview** ( _PermissionToPreview_ ) consente di controllare la possibilità per gli utenti di visualizzare in anteprima i propri messaggi in quarantena.
 
