@@ -6,7 +6,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 audience: Admin
-ms.topic: how-to
+ms.topic: reference
 ms.service: O365-seccomp
 localization_priority: Priority
 ms.collection:
@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: Usare il Centro sicurezza e conformità di Office 365 o il Centro conformità Microsoft 365 per eseguire una ricerca nel log di controllo unificato e vedere le attività di utenti e amministratori nell'organizzazione.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6c2ffc926114b8ffc2ebf2005b98e549ac03cf26
-ms.sourcegitcommit: 21c3e44862854c74e4008cfb661840f069c6b709
+ms.openlocfilehash: cf5481584031469b459d5662f75e32fd9a793a94
+ms.sourcegitcommit: 3c39866865c8c61bce2169818d8551da65033cfe
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "48787582"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "48816759"
 ---
 # <a name="search-the-audit-log-in-the-compliance-center"></a>Eseguire una ricerca nel log di controllo nel Centro conformità
 
@@ -459,7 +459,7 @@ La tabella seguente descrive le attività su file e pagine in SharePoint Online 
 
 #### <a name="frequently-asked-questions-about-fileaccessed-and-filepreviewed-events"></a>Domande frequenti sugli eventi FileAccessed e FilePreviewed
 
-**Qualsiasi attività non utente potrebbe attivare i record di controllo FilePreviewed che contenga un agente utente come "OneDriveMpc-Transform_Thumbnail"?**
+**È possibile che attività non utente attivino record di controllo FilePreviewed che contengono un agente utente come "OneDriveMpc-Transform_Thumbnail"?**
 
 Non si è a conoscenza degli scenari in cui le azioni non utente generano eventi di questo tipo. Azioni utente come l'apertura di una scheda del profilo utente (facendo clic sul nome o sull'indirizzo di posta elettronica in un messaggio in Outlook sul web) genererebbero eventi simili.
 
@@ -894,7 +894,7 @@ Dove indicato di seguito nelle descrizioni, alcune operazioni contengono paramet
 |:-----|:-----|:-----|
 |Commento creato|CreateComment|Il proprietario del modulo aggiunge un commento o il punteggio a un test.|
 |Modulo creato|CreateForm|Il proprietario del modulo crea un nuovo modulo.|
-|Modulo modificato|EditForm|Il proprietario del modulo modifica un modulo, ad esempio creando, eliminando o modificando una domanda. <br><br>La proprietà EditOperation:stringa indica il nome dell'operazione di modifica. Le operazioni possibili sono: CreateQuestion, CreateQuestionChoice, DeleteQuestion, DeleteQuestionChoice, DeleteFormImage, DeleteQuestionImage, UpdateQuestion, UpdateQuestionChoice, UploadFormImage/Bing/Onedrive, UploadQuestionImage e ChangeTheme.  <br><br>La maggior parte dei nomi delle operazioni è di chiara interpretazione. <br><br>FormImage include qualsiasi posizione all'interno di Forms in cui l'utente può caricare un'immagine, ad esempio in una query o come tema di sfondo.|
+|Modulo modificato|EditForm|Il proprietario del modulo modifica un modulo, ad esempio creando, eliminando o modificando una domanda. La proprietà *EditOperation:string* indica il nome dell'operazione di modifica. Le operazioni possibili sono:<br/>- CreateQuestion<br/>- CreateQuestionChoice <br/>- DeleteQuestion <br/>- DeleteQuestionChoice <br/>- DeleteFormImage <br/>- DeleteQuestionImage <br/>- UpdateQuestion <br/>- UpdateQuestionChoice <br/>- UploadFormImage/Bing/Onedrive <br/>- UploadQuestionImage <br/>- ChangeTheme <br><br>FormImage include qualsiasi posizione all'interno di Forms in cui l'utente può caricare un'immagine, ad esempio in una query o come tema di sfondo.|
 |Modulo spostato|MoveForm|Il proprietario del modulo sposta un modulo. <br><br>La proprietà DestinationUserId:stringa indica l'ID utente della persona che ha spostato il modulo. La proprietà NewFormId:stringa è il nuovo ID per il modulo appena copiato.|
 |Modulo eliminato|DeleteForm|Il proprietario del modulo elimina un modulo. Include SoftDelete (uso dell'opzione Elimina e spostamento del modulo nel Cestino) e HardDelete (svuotamento del Cestino).|
 |Modulo visualizzato (fase di progettazione)|ViewForm|Il proprietario del modulo apre un modulo esistente per la modifica.|
@@ -913,7 +913,8 @@ Dove indicato di seguito nelle descrizioni, alcune operazioni contengono paramet
 |Risposta visualizzata|ViewResponse|Il proprietario del modulo visualizza una risposta specifica. <br><br>Le proprietà ResponseId:stringa e ResponderId:stringa indicano quale risultato viene visualizzato. <br><br>Per un partecipante anonimo, la proprietà ResponderId sarà Null.|
 |Collegamento di riepilogo creato|GetSummaryLink|Il proprietario del modulo crea un collegamento ai risultati di riepilogo per condividere i risultati.|
 |Collegamento di riepilogo eliminato|DeleteSummaryLink|Il proprietario del modulo elimina il collegamento ai risultati di riepilogo.|
-|Stato di phishing modulo aggiornato|UpdatePhishingStatus|Questo evento viene registrato ogni volta che viene modificato il valore dettagliato dello stato di sicurezza interno, indipendentemente dal fatto che sia stato modificato lo stato di sicurezza finale, ad esempio il modulo ora è chiuso o aperto. Ciò significa che potrebbero comparire eventi evento duplicati senza il cambiamento dello stato di sicurezza finale.|
+|Stato di phishing modulo aggiornato|UpdatePhishingStatus|Questo evento viene registrato ogni volta che viene modificato il valore dettagliato dello stato di sicurezza interno, indipendentemente dal fatto che sia stato modificato lo stato di sicurezza finale, ad esempio il modulo ora è chiuso o aperto. Ciò significa che potrebbero comparire eventi duplicati senza il cambiamento dello stato di sicurezza finale. I possibili valori di stato per l'evento sono:<br/>- Rimuovi <br/>- Rimuovi da amministratore <br/>- Amministratore sbloccato <br/>- Bloccato automaticamente <br/>- Sbloccato automaticamente <br/>- Cliente segnalato <br/>- Reimposta cliente segnalato|
+|Stato di phishing utente aggiornato|UpdateUserPhishingStatus|Questo evento viene registrato ogni volta che viene modificato il valore per lo stato di sicurezza degli utenti. Il valore dello stato dell'utente nel record di controllo è **Confermato come phisher** quando l'utente ha creato un modulo di phishing che è stato rimosso dal team di sicurezza online di Microsoft. Se un amministratore sblocca l'utente, il valore dello stato dell'utente è impostato su **Reimposta come utente normale** .|
 |Invito a Forms Pro inviato|ProInvitation|L'utente fa clic per attivare una versione di valutazione Pro.|
 |Impostazione modulo aggiornata|UpdateFormSetting|Il proprietario del modulo aggiorna un'impostazione del modulo. <br><br>La proprietà FormSettingName:stringa indica il nome e il nuovo valore dell'impostazione.|
 |Impostazione utente aggiornata|UpdateUserSetting|Il proprietario del modulo aggiorna un'impostazione utente. <br><br>La proprietà UserSettingName:stringa indica il nome e il nuovo valore dell'impostazione|
@@ -923,7 +924,7 @@ Dove indicato di seguito nelle descrizioni, alcune operazioni contengono paramet
 
 #### <a name="forms-activities-performed-by-coauthors-and-anonymous-responders"></a>Attività di Forms eseguite da coautori e partecipanti anonimi
 
-Forms supporta la collaborazione durante la progettazione dei moduli vengono progettati e l'analisi delle risposte. Un collaboratore di moduli è noto come *coautore* . I coautori possono eseguire tutte le operazioni eseguibili da un proprietario del modulo, tranne l'eliminazione o lo spostamento di un modulo. Forms consente anche di creare un modulo a cui è possibile rispondere in modo anonimo. Questo significa che non è necessario che il partecipante sia connesso all'organizzazione per rispondere a un modulo. 
+Forms supporta la collaborazione quando i moduli vengono progettati e durante l'analisi delle risposte. Un collaboratore di moduli è noto come *coautore* . I coautori possono eseguire tutte le operazioni eseguibili da un proprietario del modulo, tranne l'eliminazione o lo spostamento di un modulo. Forms consente anche di creare un modulo a cui è possibile rispondere in modo anonimo. Questo significa che non è necessario che il partecipante sia connesso all'organizzazione per rispondere a un modulo.
 
 La tabella seguente descrive le attività di controllo e le informazioni del record di controllo relative alle attività eseguite dai coautori e dai partecipanti anonimi.
 
