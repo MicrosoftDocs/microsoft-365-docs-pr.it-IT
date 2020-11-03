@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Gli amministratori possono ottenere informazioni su come visualizzare, creare, modificare ed eliminare i criteri di posta indesiderata in uscita in Exchange Online Protection (EOP).
-ms.openlocfilehash: 2c7a48280487944352f4ee8afc1e7f0596186a3d
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 316bdcf4f7beb0af3dd71fdd3c3a2c0198a89f8d
+ms.sourcegitcommit: 9d1351ea6d9942550b52132817f9f9693ddef2fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48203300"
+ms.lasthandoff: 11/02/2020
+ms.locfileid: "48830650"
 ---
 # <a name="configure-outbound-spam-filtering-in-eop"></a>Configurare il filtro della posta indesiderata in uscita in EOP
 
@@ -42,8 +42,8 @@ Gli amministratori possono visualizzare, modificare e configurare (ma non elimin
 
 Gli elementi di base di un criterio di posta indesiderata in uscita in EOP sono i seguenti:
 
-- **Criterio di filtro per la posta indesiderata in uscita**: consente di specificare le azioni per i verdetti del filtro della posta indesiderata in uscita
-- **Regola del filtro per la posta indesiderata in uscita**: consente di specificare i filtri priorità e destinatario (a chi si applica il criterio) per un criterio di filtro posta indesiderata in uscita.
+- **Criterio di filtro per la posta indesiderata in uscita** : consente di specificare le azioni per i verdetti del filtro della posta indesiderata in uscita
+- **Regola del filtro per la posta indesiderata in uscita** : consente di specificare i filtri priorità e destinatario (a chi si applica il criterio) per un criterio di filtro posta indesiderata in uscita.
 
 La differenza tra questi due elementi non è ovvia quando si gestiscono i criteri di posta indesiderata in uscita nel centro sicurezza & conformità:
 
@@ -61,9 +61,9 @@ Ogni organizzazione dispone di un criterio di posta indesiderata in uscita incor
 
 Per aumentare l'efficacia del filtro per la posta indesiderata in uscita, è possibile creare criteri di posta indesiderata in uscita personalizzati con impostazioni più rigorose applicate a utenti o gruppi di utenti specifici.
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare
+## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare?
 
-- Aprire il Centro sicurezza e conformità in <https://protection.office.com/>. Per passare direttamente alla pagina **Impostazioni di filtro della posta indesiderata**, usare <https://protection.office.com/antispam>.
+- Aprire il Centro sicurezza e conformità in <https://protection.office.com/>. Per passare direttamente alla pagina **Impostazioni di filtro della posta indesiderata** , usare <https://protection.office.com/antispam>.
 
 - Per informazioni su come connettersi a PowerShell per Exchange Online, vedere [Connettersi a PowerShell per Exchange Online](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell). Per connettersi a PowerShell di EOP autonomo, vedere [Connettersi a PowerShell per Exchange Online Protection](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
@@ -81,25 +81,25 @@ Per aumentare l'efficacia del filtro per la posta indesiderata in uscita, è pos
 
 - Per le impostazioni consigliate per i criteri di protezione da posta indesiderata in uscita, vedere [EOP in uscita Spam Policy Filter Settings](recommended-settings-for-eop-and-office365-atp.md#eop-outbound-spam-policy-settings).
 
-- I [criteri di avviso](../../compliance/alert-policies.md) predefiniti denominati limite di invio di posta elettronica sono stati **superati**, sono stati **rilevati modelli di invio di messaggi**di posta elettronica sospetti e non è stato possibile inviare **messaggi** di posta elettronica ai membri del gruppo **TenantAdmins** (**Global Admins**) sull'attività di posta elettronica in uscita inusuale e sugli utenti bloccati. Per ulteriori informazioni, vedere [verificare le impostazioni degli avvisi per gli utenti con restrizioni](removing-user-from-restricted-users-portal-after-spam.md#verify-the-alert-settings-for-restricted-users). È consigliabile utilizzare questi criteri di avviso anziché le opzioni di notifica nei criteri di posta indesiderata in uscita.
+- I [criteri di avviso](../../compliance/alert-policies.md) predefiniti denominati limite di invio di posta elettronica sono stati **superati** , sono stati **rilevati modelli di invio di messaggi** di posta elettronica sospetti e non è stato possibile inviare **messaggi** di posta elettronica ai membri del gruppo **TenantAdmins** ( **Global Admins** ) sull'attività di posta elettronica in uscita inusuale e sugli utenti bloccati. Per ulteriori informazioni, vedere [verificare le impostazioni degli avvisi per gli utenti con restrizioni](removing-user-from-restricted-users-portal-after-spam.md#verify-the-alert-settings-for-restricted-users). È consigliabile utilizzare questi criteri di avviso anziché le opzioni di notifica nei criteri di posta indesiderata in uscita.
 
 ## <a name="use-the-security--compliance-center-to-create-outbound-spam-policies"></a>Utilizzare il Centro sicurezza & conformità per creare i criteri di posta indesiderata in uscita
 
 La creazione di un criterio di posta indesiderata in uscita personalizzato nel centro sicurezza & conformità crea la regola del filtro posta indesiderata e i criteri di filtro della posta indesiderata associati allo stesso tempo utilizzando lo stesso nome per entrambi.
 
-1. Nel Centro sicurezza e conformità, andare a **Gestione delle minacce** \> **Criteri** \> **Filtro della posta indesiderata**.
+1. Nel Centro sicurezza e conformità, andare a **Gestione delle minacce** \> **Criteri** \> **Filtro della posta indesiderata** .
 
-2. Nella pagina impostazioni di protezione da **posta indesiderata** fare clic su **Crea un criterio in uscita**.
+2. Nella pagina impostazioni di protezione da **posta indesiderata** fare clic su **Crea un criterio in uscita** .
 
 3. Nel criterio di filtro per la **posta indesiderata in uscita** che si apre, configurare le seguenti impostazioni:
 
-   - **Nome**: immettere un nome univoco descrittivo per il criterio.
+   - **Nome** : immettere un nome univoco descrittivo per il criterio.
 
-   - **Descrizione**: immettere una descrizione opzionale per il criterio.
+   - **Descrizione** : immettere una descrizione opzionale per il criterio.
 
 4. Optional Espandere la sezione **notifiche** per configurare altri utenti che devono ricevere le copie e le notifiche dei messaggi di posta elettronica in uscita sospetti:
 
-   - **Inviare una copia dei messaggi di posta elettronica in uscita sospetti a persone specifiche**: questa impostazione consente di aggiungere gli utenti specificati come destinatari Ccn ai messaggi in uscita sospetti.
+   - **Inviare una copia dei messaggi di posta elettronica in uscita sospetti a persone specifiche** : questa impostazione consente di aggiungere gli utenti specificati come destinatari Ccn ai messaggi in uscita sospetti.
 
      > [!NOTE]
      > Questa impostazione è compatibile solo con il criterio di posta indesiderata in uscita predefinito. Non è possibile utilizzare i criteri di posta indesiderata in uscita personalizzati creati.
@@ -108,7 +108,7 @@ La creazione di un criterio di posta indesiderata in uscita personalizzato nel c
 
      1. Selezionare la casella di controllo per abilitare l'impostazione.
 
-     1. Fare clic su **Aggiungi utenti**. Nel riquadro a comparsa **Aggiungi o Rimuovi destinatari** visualizzato:
+     1. Fare clic su **Aggiungi utenti** . Nel riquadro a comparsa **Aggiungi o Rimuovi destinatari** visualizzato:
 
      1. Immettere l'indirizzo di posta elettronica del mittente. È possibile specificare più indirizzi di posta elettronica separati da punti e virgola (;) o un destinatario per riga.
 
@@ -118,17 +118,17 @@ La creazione di un criterio di posta indesiderata in uscita personalizzato nel c
 
         I destinatari aggiunti vengono visualizzati nella sezione **elenco dei destinatari** sul riquadro a comparsa. Per eliminare un destinatario, fare clic su ![ Rimuovi ](../../media/scc-remove-icon.png) .
 
-     1. Al termine, scegliere **Salva**.
+     1. Al termine, scegliere **Salva** .
 
         Per disabilitare questa impostazione, deselezionare la casella di controllo.
 
-   - **Notifica a determinate persone se un mittente è bloccato a causa dell'invio di posta indesiderata in uscita**:
+   - **Notifica a determinate persone se un mittente è bloccato a causa dell'invio di posta indesiderata in uscita** :
 
      > [!IMPORTANT]
      >
      > - Questa impostazione è in fase di divenire obsoleta dai criteri di posta indesiderata in uscita.
      >
-     > - Il [criterio di avviso](../../compliance/alert-policies.md) predefinito denominato utente con **restrizioni dall'invio di messaggi di posta** elettronica Invia già notifiche tramite posta elettronica ai membri del gruppo **TenantAdmins** (**Global Admins**) quando gli utenti vengono bloccati a causa del superamento dei limiti nella sezione **limiti dei destinatari** . **È consigliabile utilizzare il criterio di avviso anziché questa impostazione nel criterio di posta indesiderata in uscita per inviare una notifica agli amministratori e ad altri utenti**. Per istruzioni, vedere [verificare le impostazioni degli avvisi per gli utenti con restrizioni](removing-user-from-restricted-users-portal-after-spam.md#verify-the-alert-settings-for-restricted-users).
+     > - Il [criterio di avviso](../../compliance/alert-policies.md) predefinito denominato utente con **restrizioni dall'invio di messaggi di posta** elettronica Invia già notifiche tramite posta elettronica ai membri del gruppo **TenantAdmins** ( **Global Admins** ) quando gli utenti vengono bloccati a causa del superamento dei limiti nella sezione **limiti dei destinatari** . **È consigliabile utilizzare il criterio di avviso anziché questa impostazione nel criterio di posta indesiderata in uscita per inviare una notifica agli amministratori e ad altri utenti** . Per istruzioni, vedere [verificare le impostazioni degli avvisi per gli utenti con restrizioni](removing-user-from-restricted-users-portal-after-spam.md#verify-the-alert-settings-for-restricted-users).
 
 5. Optional Espandere la sezione **limiti dei destinatari** per configurare i limiti e le azioni per i messaggi di posta elettronica in uscita sospetti:
 
@@ -139,15 +139,15 @@ La creazione di un criterio di posta indesiderata in uscita personalizzato nel c
 
      Un valore valido è compreso tra 0 e 10000. Il valore predefinito è 0, il che significa che vengono utilizzati i valori predefiniti del servizio. Per ulteriori informazioni, vedere [invio di limiti](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-1).
 
-     - **Limite orario esterno**: numero massimo di destinatari esterni all'ora.
+     - **Limite orario esterno** : numero massimo di destinatari esterni all'ora.
 
-     - **Limite orario interno**: numero massimo di destinatari interni all'ora.
+     - **Limite orario interno** : numero massimo di destinatari interni all'ora.
 
-     - **Limite giornaliero**: numero totale massimo di destinatari al giorno.
+     - **Limite giornaliero** : numero totale massimo di destinatari al giorno.
 
-   - **Azione quando un utente supera i limiti sopra riportati**: configurare l'azione da eseguire quando si supera il **limite** di uno dei destinatari. Per tutte le azioni, i destinatari specificati nell' **utente hanno limitazioni dall'invio** dei criteri di avviso per la posta elettronica (e nell'ora ridondante **avvisano persone specifiche se un mittente è bloccato a causa** dell'impostazione della posta indesiderata in uscita nel criterio di posta indesiderata in uscita per ricevere notifiche tramite posta elettronica.
+   - **Azione quando un utente supera i limiti sopra riportati** : configurare l'azione da eseguire quando si supera il **limite** di uno dei destinatari. Per tutte le azioni, i destinatari specificati nell' **utente hanno limitazioni dall'invio** dei criteri di avviso per la posta elettronica (e nell'ora ridondante **avvisano persone specifiche se un mittente è bloccato a causa** dell'impostazione della posta indesiderata in uscita nel criterio di posta indesiderata in uscita per ricevere notifiche tramite posta elettronica.
 
-     - **Impedire all'utente di inviare messaggi di posta elettronica fino al giorno seguente**: questo è il valore predefinito. Le notifiche di posta elettronica vengono inviate e l'utente non sarà in grado di inviare altri messaggi fino al giorno seguente, in base all'ora UTC. Non è possibile che l'amministratore esegua l'override di questo blocco.
+     - **Impedire all'utente di inviare messaggi di posta elettronica fino al giorno seguente** : questo è il valore predefinito. Le notifiche di posta elettronica vengono inviate e l'utente non sarà in grado di inviare altri messaggi fino al giorno seguente, in base all'ora UTC. Non è possibile che l'amministratore esegua l'override di questo blocco.
 
        - L'avviso attività denominato **utente con restrizioni dall'invio di messaggi di posta elettronica** informa gli amministratori (tramite posta elettronica e nella pagina **Visualizza avvisi** ).
 
@@ -155,9 +155,9 @@ La creazione di un criterio di posta indesiderata in uscita personalizzato nel c
 
        - L'utente non sarà in grado di inviare altri messaggi fino al giorno seguente, in base all'ora UTC. Non è possibile che l'amministratore esegua l'override di questo blocco.
 
-     - **Impedire all'utente di inviare posta**elettronica: vengono inviate notifiche tramite posta elettronica, l'utente viene aggiunto al portale **[ <https://sip.protection.office.com/restrictedusers> utenti con restrizioni]** nel centro sicurezza & compliance e l'utente non può inviare messaggi di posta elettronica fino a quando non viene rimosso dal portale **degli utenti con restrizioni** da parte di un amministratore. Dopo che un amministratore ha rimosso l'utente dall'elenco, l'utente non sarà più limitato per quel giorno. Per istruzioni, vedere [rimozione di un utente dal portale degli utenti con restrizioni dopo l'invio di posta indesiderata](removing-user-from-restricted-users-portal-after-spam.md).
+     - **Impedire all'utente di inviare posta** elettronica: vengono inviate notifiche tramite posta elettronica, l'utente viene aggiunto al portale **[ <https://sip.protection.office.com/restrictedusers> utenti con restrizioni]** nel centro sicurezza & compliance e l'utente non può inviare messaggi di posta elettronica fino a quando non viene rimosso dal portale **degli utenti con restrizioni** da parte di un amministratore. Dopo che un amministratore ha rimosso l'utente dall'elenco, l'utente non sarà più limitato per quel giorno. Per istruzioni, vedere [rimozione di un utente dal portale degli utenti con restrizioni dopo l'invio di posta indesiderata](removing-user-from-restricted-users-portal-after-spam.md).
 
-     - **Nessuna azione, solo avviso**: le notifiche di posta elettronica vengono inviate.
+     - **Nessuna azione, solo avviso** : le notifiche di posta elettronica vengono inviate.
 
 6. Optional Espandere la sezione **inoltro automatico** per controllare l'inoltro automatico di messaggi di posta elettronica da parte degli utenti a mittenti esterni. Per ulteriori informazioni sull'inoltro automatico, vedere [Configure email forwarding](https://docs.microsoft.com/microsoft-365/admin/email/configure-email-forwarding).
 
@@ -167,69 +167,67 @@ La creazione di un criterio di posta indesiderata in uscita personalizzato nel c
    >
    > - Queste impostazioni si applicano solo alle cassette postali basate sul cloud.
    >
-   > - L'inoltro automatico ai destinatari interni non è influenzato da queste impostazioni.
+   > - Quando l'inoltro automatico è disattivato, il destinatario riceverà un rapporto di mancato recapito (noto anche come NDR o messaggio di rimbalzo) se i mittenti esterni inviano messaggi di posta elettronica a una cassetta postale in cui è in corso l'inoltro. Se il messaggio di posta elettronica viene inviato da un mittente interno, il mittente otterrà il rapporto di mancato recapito.
 
    I valori disponibili sono i seguenti:
 
-   - Controllo **automatico del sistema**: consente il filtro posta indesiderata in uscita per controllare l'inoltro automatico esterno della posta elettronica. Questo è il valore predefinito.
-
-   - **On**: l'inoltro automatico esterno della posta elettronica non è disabilitato dal criterio.
-
-   - **Disattivato**: tutti i messaggi di inoltro automatici esterni sono disabilitati dal criterio.
-
+   - Controllo **automatico del sistema** : consente il filtro posta indesiderata in uscita per controllare l'inoltro automatico esterno della posta elettronica. Questo è il valore predefinito.
+   - **On** : l'inoltro automatico esterno della posta elettronica non è disabilitato dal criterio.
+   - **Disattivato** : tutti i messaggi di inoltro automatici esterni sono disabilitati dal criterio.
+ 
 7. Necessari Espandere la sezione **applicato a** per identificare i mittenti interni ai quali si applica il criterio.
 
-    È possibile utilizzare una condizione o un'eccezione solo una volta, ma è possibile specificare più valori per la condizione o l'eccezione. Più valori della stessa condizione o eccezione utilizzano la logica OR (ad esempio, _\<sender1\>_ o _\<sender2\>_). Condizioni o eccezioni diverse utilizzano la logica AND (ad esempio, _\<sender1\>_ e _\<member of group 1\>_).
+    È possibile utilizzare una condizione o un'eccezione solo una volta, ma è possibile specificare più valori per la condizione o l'eccezione. Più valori della stessa condizione o eccezione utilizzano la logica OR (ad esempio, _\<sender1\>_ o _\<sender2\>_ ). Condizioni o eccezioni diverse utilizzano la logica AND (ad esempio, _\<sender1\>_ e _\<member of group 1\>_ ).
 
     È più facile fare clic su **Aggiungi una condizione** tre volte per visualizzare tutte le condizioni disponibili. È possibile fare clic su ![Pulsante Rimuovi](../../media/scc-remove-icon.png) per rimuovere le condizioni che non si vogliono configurare.
 
-    - **Il dominio del mittente è**: specifica i mittenti in uno o più dei domini accettati configurati nell'organizzazione. Fare clic sulla casella **Aggiungi un tag** per visualizzare e selezionare un dominio. Fare nuovamente clic sulla casella **Aggiungi un tag** per selezionare altri domini se è disponibile più di un dominio.
+    - **Il dominio del mittente è** : specifica i mittenti in uno o più dei domini accettati configurati nell'organizzazione. Fare clic sulla casella **Aggiungi un tag** per visualizzare e selezionare un dominio. Fare nuovamente clic sulla casella **Aggiungi un tag** per selezionare altri domini se è disponibile più di un dominio.
 
-    - **Sender è**: consente di specificare uno o più utenti nell'organizzazione. Fare clic su **Aggiungi un tag** e iniziare a digitare per filtrare l'elenco. Fare di nuovo clic sulla casella **Aggiungi tag** per selezionare mittenti aggiuntivi.
+    - **Sender è** : consente di specificare uno o più utenti nell'organizzazione. Fare clic su **Aggiungi un tag** e iniziare a digitare per filtrare l'elenco. Fare di nuovo clic sulla casella **Aggiungi tag** per selezionare mittenti aggiuntivi.
 
-    - **Sender è un membro di**: consente di specificare uno o più gruppi nell'organizzazione. Fare clic su **Aggiungi un tag** e iniziare a digitare per filtrare l'elenco. Fare di nuovo clic sulla casella **Aggiungi tag** per selezionare mittenti aggiuntivi.
+    - **Sender è un membro di** : consente di specificare uno o più gruppi nell'organizzazione. Fare clic su **Aggiungi un tag** e iniziare a digitare per filtrare l'elenco. Fare di nuovo clic sulla casella **Aggiungi tag** per selezionare mittenti aggiuntivi.
 
-    - **Tranne quando**: per aggiungere eccezioni alla regola, fare clic su **Aggiungi una condizione** tre volte per visualizzare tutte le eccezioni disponibili. Impostazioni e comportamento sono equivalenti alle condizioni.
+    - **Tranne quando** : per aggiungere eccezioni alla regola, fare clic su **Aggiungi una condizione** tre volte per visualizzare tutte le eccezioni disponibili. Impostazioni e comportamento sono equivalenti alle condizioni.
 
-8. Al termine, scegliere **Salva**.
+8. Al termine, scegliere **Salva** .
 
 ## <a name="use-the-security--compliance-center-to-view-outbound-spam-policies"></a>Utilizzare il Centro sicurezza & conformità per visualizzare i criteri di posta indesiderata in uscita
 
-1. Nel Centro sicurezza e conformità, andare a **Gestione delle minacce** \> **Criteri** \> **Filtro della posta indesiderata**.
+1. Nel Centro sicurezza e conformità, andare a **Gestione delle minacce** \> **Criteri** \> **Filtro della posta indesiderata** .
 
 2. Nella pagina impostazioni di protezione da **posta indesiderata** , fare clic su ![ Espandi icona ](../../media/scc-expand-icon.png) per espandere un criterio di posta indesiderata in uscita:
 
-   - Criterio predefinito denominato **criteri di filtro della posta indesiderata in uscita**.
+   - Criterio predefinito denominato **criteri di filtro della posta indesiderata in uscita** .
 
-   - Un criterio personalizzato creato in cui il valore nella colonna **tipo** è criterio di **posta indesiderata in uscita personalizzato**.
+   - Un criterio personalizzato creato in cui il valore nella colonna **tipo** è criterio di **posta indesiderata in uscita personalizzato** .
 
-3. Le impostazioni dei criteri vengono visualizzate nei dettagli dei criteri espansi visualizzati oppure è possibile fare clic su **modifica criterio**.
+3. Le impostazioni dei criteri vengono visualizzate nei dettagli dei criteri espansi visualizzati oppure è possibile fare clic su **modifica criterio** .
 
 ## <a name="use-the-security--compliance-center-to-modify-outbound-spam-policies"></a>Utilizzare il Centro sicurezza & conformità per modificare i criteri di posta indesiderata in uscita
 
-1. Nel Centro sicurezza e conformità, andare a **Gestione delle minacce** \> **Criteri** \> **Filtro della posta indesiderata**.
+1. Nel Centro sicurezza e conformità, andare a **Gestione delle minacce** \> **Criteri** \> **Filtro della posta indesiderata** .
 
 2. Nella pagina impostazioni di protezione da **posta indesiderata** , fare clic su ![ Espandi icona ](../../media/scc-expand-icon.png) per espandere un criterio di posta indesiderata in uscita:
 
-   - Criterio predefinito denominato **criteri di filtro della posta indesiderata in uscita**.
+   - Criterio predefinito denominato **criteri di filtro della posta indesiderata in uscita** .
 
-   - Un criterio personalizzato creato in cui il valore nella colonna **tipo** è criterio di **posta indesiderata in uscita personalizzato**.
+   - Un criterio personalizzato creato in cui il valore nella colonna **tipo** è criterio di **posta indesiderata in uscita personalizzato** .
 
-3. Fare clic su **Modifica criterio**.
+3. Fare clic su **Modifica criterio** .
 
 Per i criteri di posta indesiderata personalizzati in uscita, le impostazioni disponibili nel riquadro a comparsa visualizzato sono identiche a quelle descritte in [use the Security & Compliance Center to create Outbound spam Policies](#use-the-security--compliance-center-to-create-outbound-spam-policies) section.
 
-Per il criterio di protezione da posta indesiderata in uscita predefinito denominato **criterio di filtro posta**indesiderata in uscita, la sezione **applicato a** non è disponibile (il criterio si applica a tutti) e non è possibile rinominare il criterio.
+Per il criterio di protezione da posta indesiderata in uscita predefinito denominato **criterio di filtro posta** indesiderata in uscita, la sezione **applicato a** non è disponibile (il criterio si applica a tutti) e non è possibile rinominare il criterio.
 
 Per abilitare o disabilitare un criterio, impostare l'ordine di priorità dei criteri o configurare le notifiche di quarantena per gli utenti finali. Vedere le sezioni seguenti.
 
 ### <a name="enable-or-disable-outbound-spam-policies"></a>Abilitare o disabilitare i criteri di posta indesiderata in uscita
 
-1. Nel Centro sicurezza e conformità, andare a **Gestione delle minacce** \> **Criteri** \> **Filtro della posta indesiderata**.
+1. Nel Centro sicurezza e conformità, andare a **Gestione delle minacce** \> **Criteri** \> **Filtro della posta indesiderata** .
 
-2. Nella pagina impostazioni di protezione da **posta indesiderata** , fare clic su ![ Espandi icona ](../../media/scc-expand-icon.png) per espandere un criterio personalizzato creato (il valore nella colonna **tipo** è **Custom criterio di posta indesiderata in uscita**).
+2. Nella pagina impostazioni di protezione da **posta indesiderata** , fare clic su ![ Espandi icona ](../../media/scc-expand-icon.png) per espandere un criterio personalizzato creato (il valore nella colonna **tipo** è **Custom criterio di posta indesiderata in uscita** ).
 
-3. Nei dettagli dei criteri espansi visualizzati, notare il valore nella colonna **Attivo**.
+3. Nei dettagli dei criteri espansi visualizzati, notare il valore nella colonna **Attivo** .
 
    Spostare l'interruttore a sinistra per disabilitare il criterio: ![Disattiva](../../media/scc-toggle-off.png)
 
@@ -241,29 +239,29 @@ Non è possibile disabilitare il criterio di posta indesiderata in uscita predef
 
 Per impostazione predefinita, ai criteri di posta indesiderata in uscita viene assegnata una priorità che si basa sull'ordine in cui sono stati creati (le nuove politiche hanno priorità più basse rispetto ai criteri precedenti). Un valore di priorità inferiore indica una priorità più alta per il criterio (0 è il massimo) e i criteri vengono elaborati nell'ordine di priorità (i criteri con priorità più elevata vengono elaborati prima di quelli con priorità più bassa). Nessun criterio può avere la stessa priorità e l'elaborazione dei criteri termina dopo l'applicazione del primo criterio.
 
-I criteri di posta indesiderata in uscita personalizzati vengono visualizzati nell'ordine in cui sono stati elaborati (il primo criterio ha il valore di **priorità** 0). Il criterio di posta indesiderata in uscita predefinito denominato **criterio di filtro posta indesiderata in uscita** ha il valore di priorità **più basso**e non è possibile modificarlo.
+I criteri di posta indesiderata in uscita personalizzati vengono visualizzati nell'ordine in cui sono stati elaborati (il primo criterio ha il valore di **priorità** 0). Il criterio di posta indesiderata in uscita predefinito denominato **criterio di filtro posta indesiderata in uscita** ha il valore di priorità **più basso** e non è possibile modificarlo.
 
 Per modificare la priorità di un criterio, spostare il criterio più in alto o più in basso nell'elenco (non è possibile modificare direttamente il numero **Priority** nel Centro sicurezza e conformità).
 
-1. Nel Centro sicurezza e conformità, andare a **Gestione delle minacce** \> **Criteri** \> **Filtro della posta indesiderata**.
+1. Nel Centro sicurezza e conformità, andare a **Gestione delle minacce** \> **Criteri** \> **Filtro della posta indesiderata** .
 
-2. Nella pagina impostazioni di protezione da **posta indesiderata** individuare i criteri in cui il valore nella colonna **tipo** è **criteri di posta indesiderata personalizzati in uscita**. Notare i valori nella colonna **Priorità**:
+2. Nella pagina impostazioni di protezione da **posta indesiderata** individuare i criteri in cui il valore nella colonna **tipo** è **criteri di posta indesiderata personalizzati in uscita** . Notare i valori nella colonna **Priorità** :
 
-   - Il criterio di posta indesiderata in uscita personalizzato con la priorità più alta ha il valore ![ freccia giù (icona ](../../media/ITPro-EAC-DownArrowIcon.png) **0**).
+   - Il criterio di posta indesiderata in uscita personalizzato con la priorità più alta ha il valore ![ freccia giù (icona ](../../media/ITPro-EAC-DownArrowIcon.png) **0** ).
 
-   - Il criterio di posta indesiderata in uscita personalizzato con la priorità più bassa ha il valore ![ icona freccia su ](../../media/ITPro-EAC-UpArrowIcon.png) **n** (ad esempio, ![ icona freccia su ](../../media/ITPro-EAC-UpArrowIcon.png) **3**).
+   - Il criterio di posta indesiderata in uscita personalizzato con la priorità più bassa ha il valore ![ icona freccia su ](../../media/ITPro-EAC-UpArrowIcon.png) **n** (ad esempio, ![ icona freccia su ](../../media/ITPro-EAC-UpArrowIcon.png) **3** ).
 
-   - Se si dispone di tre o più criteri di posta indesiderata in uscita personalizzati, i criteri tra la priorità più alta e quella più bassa sono valori su icona freccia ![ ](../../media/ITPro-EAC-UpArrowIcon.png)![ giù icona ](../../media/ITPro-EAC-DownArrowIcon.png) **n** (ad esempio freccia ![ giù icona ](../../media/ITPro-EAC-UpArrowIcon.png)![ freccia giù ](../../media/ITPro-EAC-DownArrowIcon.png) **2**).
+   - Se si dispone di tre o più criteri di posta indesiderata in uscita personalizzati, i criteri tra la priorità più alta e quella più bassa sono valori su icona freccia ![ ](../../media/ITPro-EAC-UpArrowIcon.png)![ giù icona ](../../media/ITPro-EAC-DownArrowIcon.png) **n** (ad esempio freccia ![ giù icona ](../../media/ITPro-EAC-UpArrowIcon.png)![ freccia giù ](../../media/ITPro-EAC-DownArrowIcon.png) **2** ).
 
 3. Fare clic su ![Icona Freccia SU](../../media/ITPro-EAC-UpArrowIcon.png) oppure ![Icona Freccia GIÙ](../../media/ITPro-EAC-DownArrowIcon.png) per spostare il criterio della posta indesiderata in uscita personalizzato verso l'alto o verso il basso nell'elenco priorità.
 
 ## <a name="use-the-security--compliance-center-to-remove-outbound-spam-policies"></a>Utilizzare il Centro sicurezza & conformità per rimuovere i criteri di posta indesiderata in uscita
 
-1. Nel Centro sicurezza e conformità, andare a **Gestione delle minacce** \> **Criteri** \> **Filtro della posta indesiderata**.
+1. Nel Centro sicurezza e conformità, andare a **Gestione delle minacce** \> **Criteri** \> **Filtro della posta indesiderata** .
 
-2. Nella pagina impostazioni di protezione da **posta indesiderata** , fare clic su ![ Espandi icona ](../../media/scc-expand-icon.png) per espandere il criterio personalizzato che si desidera eliminare (la colonna **tipo** è un **criterio di posta indesiderata in uscita personalizzato**).
+2. Nella pagina impostazioni di protezione da **posta indesiderata** , fare clic su ![ Espandi icona ](../../media/scc-expand-icon.png) per espandere il criterio personalizzato che si desidera eliminare (la colonna **tipo** è un **criterio di posta indesiderata in uscita personalizzato** ).
 
-3. Nei dettagli sui criteri espansi visualizzati, fare clic su **Elimina criterio**.
+3. Nei dettagli sui criteri espansi visualizzati, fare clic su **Elimina criterio** .
 
 4. Fare clic su **Sì** quando viene visualizzata la finestra di dialogo di avviso.
 
@@ -273,7 +271,7 @@ Non è possibile rimuovere il criterio predefinito.
 
 Come descritto in precedenza, un criterio di posta indesiderata in uscita è costituito da un criterio di filtro per la posta indesiderata in uscita e da una regola di filtro
 
-In Exchange Online PowerShell o standalone EOP PowerShell, la differenza tra i criteri di filtro della posta indesiderata in uscita e le regole del filtro per la posta indesiderata è evidente. È possibile gestire i criteri di filtro della posta indesiderata in uscita utilizzando i cmdlet ** \* -HostedOutboundSpamFilterPolicy** e gestire le regole del filtro per la posta indesiderata in uscita utilizzando i cmdlet ** \* -HostedOutboundSpamFilterRule** .
+In Exchange Online PowerShell o standalone EOP PowerShell, la differenza tra i criteri di filtro della posta indesiderata in uscita e le regole del filtro per la posta indesiderata è evidente. È possibile gestire i criteri di filtro della posta indesiderata in uscita utilizzando i cmdlet **\* -HostedOutboundSpamFilterPolicy** e gestire le regole del filtro per la posta indesiderata in uscita utilizzando i cmdlet **\* -HostedOutboundSpamFilterRule** .
 
 - In PowerShell, creare innanzitutto il criterio di filtro per la posta indesiderata in uscita, quindi creare la regola di filtro posta indesiderata in uscita che identifica il criterio a cui si applica la regola.
 - In PowerShell, è possibile modificare le impostazioni nel criterio di filtro della posta indesiderata in uscita e la regola di filtro posta indesiderata in uscita separatamente.
@@ -286,14 +284,14 @@ La creazione di un criterio di posta indesiderata in uscita in PowerShell è un 
 1. Creare il criterio di filtro per la posta indesiderata in uscita.
 2. Creare la regola di filtro posta indesiderata in uscita che specifica il criterio di filtro della posta indesiderata in uscita a cui si applica la regola.
 
- **Note**:
+ **Note** :
 
 - È possibile creare una nuova regola di filtro per la posta indesiderata in uscita e assegnare un criterio di filtro per la posta indesiderata in uscita non associato. Una regola di filtro per la posta indesiderata in uscita non può essere associata a più criteri di filtro posta indesiderata in uscita.
 
 - È possibile configurare le seguenti impostazioni nei nuovi criteri di filtro per la posta indesiderata in uscita in PowerShell che non sono disponibili nel centro sicurezza & conformità fino a dopo la creazione del criterio:
 
-  - Creare il nuovo criterio come disabilitato (_attivato_ `$false` nel cmdlet **New-HostedOutboundSpamFilterRule** ).
-  - Impostare la priorità del criterio durante la creazione (_priorità_ _\<Number\>_ ) del cmdlet **New-HostedOutboundSpamFilterRule** .
+  - Creare il nuovo criterio come disabilitato ( _attivato_ `$false` nel cmdlet **New-HostedOutboundSpamFilterRule** ).
+  - Impostare la priorità del criterio durante la creazione ( _priorità_ _\<Number\>_ ) del cmdlet **New-HostedOutboundSpamFilterRule** .
 
 - Un nuovo criterio di filtro per la posta indesiderata in uscita creato in PowerShell non è visibile nel centro sicurezza & conformità fino a quando non si assegna il criterio a una regola di filtro posta indesiderata.
 
@@ -402,7 +400,7 @@ Per informazioni dettagliate sulla sintassi e sui parametri, vedere [Get-HostedO
 Le stesse impostazioni sono disponibili quando si modifica un criterio di filtro antimalware in PowerShell come quando si crea il criterio come descritto nel [passaggio 1: utilizzare PowerShell per creare una sezione dei criteri di filtro per la posta indesiderata in uscita](#step-1-use-powershell-to-create-an-outbound-spam-filter-policy) più indietro in questo argomento.
 
 > [!NOTE]
-> Non è possibile rinominare un criterio di filtro per la posta indesiderata in uscita (il cmdlet **set-HostedOutboundSpamFilterPolicy** non ha un parametro _Name_ ). Quando si rinomina un criterio di posta indesiderata in uscita nel centro sicurezza & conformità, viene rinominata solo la _regola_del filtro per la posta indesiderata in uscita.
+> Non è possibile rinominare un criterio di filtro per la posta indesiderata in uscita (il cmdlet **set-HostedOutboundSpamFilterPolicy** non ha un parametro _Name_ ). Quando si rinomina un criterio di posta indesiderata in uscita nel centro sicurezza & conformità, viene rinominata solo la _regola_ del filtro per la posta indesiderata in uscita.
 
 Per modificare un criterio di filtro per la posta indesiderata in uscita, utilizzare la sintassi seguente:
 
@@ -470,7 +468,7 @@ Set-HostedOutboundSpamFilterRule -Identity "Marketing Department" -Priority 2
 >
 > - Per impostare la priorità di una nuova regola al momento della creazione, utilizzare il parametro _Priority_ nel cmdlet **New-HostedOutboundSpamFilterRule** .
 >
-> - I criteri di filtro della posta indesiderata in uscita non dispongono di una regola di filtro di posta indesiderata corrispondente e il valore di priorità immodificabile è sempre **inferiore**.
+> - I criteri di filtro della posta indesiderata in uscita non dispongono di una regola di filtro di posta indesiderata corrispondente e il valore di priorità immodificabile è sempre **inferiore** .
 
 ### <a name="use-powershell-to-remove-outbound-spam-filter-policies"></a>Utilizzo di PowerShell per rimuovere i criteri di filtro della posta indesiderata in uscita
 

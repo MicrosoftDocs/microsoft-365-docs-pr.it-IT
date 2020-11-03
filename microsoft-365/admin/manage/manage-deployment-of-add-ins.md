@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
 description: Informazioni su come distribuire i componenti aggiuntivi per gli utenti e i gruppi dell'organizzazione tramite la distribuzione centralizzata nell'interfaccia di amministrazione.
-ms.openlocfilehash: 20ebdfd2072c49fabadcbaf66dead54e75f9becd
-ms.sourcegitcommit: 888b9355ef7b933c55ca6c18639c12426ff3fbde
+ms.openlocfilehash: 9708ec9877c4d07b0cf93ea9d6815303236eff4b
+ms.sourcegitcommit: 9d1351ea6d9942550b52132817f9f9693ddef2fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "48304793"
+ms.lasthandoff: 11/02/2020
+ms.locfileid: "48830638"
 ---
 # <a name="deploy-add-ins-in-the-admin-center"></a>Distribuire i componenti aggiuntivi nell'interfaccia di amministrazione
 
@@ -63,33 +63,33 @@ Prima di iniziare, vedere [determinare se la distribuzione centralizzata dei com
   
 1. Nell'interfaccia di amministrazione, andare alla pagina dei componenti aggiuntivi di **Impostazioni** \> **Add-ins** . Se la pagina del **componente aggiuntivo** non è visualizzata, passare alla pagina **Impostazioni** \> componenti aggiuntivi **applicazioni integrate** \> **Add-ins** .
     
-2. Selezionare **Distribuisci componente aggiuntivo nella** parte superiore della pagina e quindi fare clic su **Avanti**.
+2. Selezionare **Distribuisci componente aggiuntivo nella** parte superiore della pagina e quindi fare clic su **Avanti** .
  
     > [!NOTE]
-    > L'interfaccia di amministrazione si sta aggiornando all'esperienza di distribuzione con le app integrate. Se non vengono visualizzati i passaggi descritti in questo articolo, accedere alla sezione distribuzione centralizzata accedendo alle **impostazioni delle**  >  **app integrate**. Nella parte superiore della pagina **Apps integrata** scegliere **componenti**aggiuntivi.
+    > L'interfaccia di amministrazione si sta aggiornando all'esperienza di distribuzione con le app integrate. Se non vengono visualizzati i passaggi descritti in questo articolo, accedere alla sezione distribuzione centralizzata accedendo alle **impostazioni delle**  >  **app integrate** . Nella parte superiore della pagina **Apps integrata** scegliere **componenti** aggiuntivi.
     
 3. Seleziona un'opzione e segui le istruzioni.
   
 4. Se è stata selezionata l'opzione per aggiungere un componente aggiuntivo da Office Store, fare la selezione del componente aggiuntivo. </br>
 
-    È possibile visualizzare i componenti aggiuntivi disponibili per categorie: **consigliati per te**, **classificazione**o **nome**. Solo i componenti aggiuntivi gratuiti sono disponibili in Office Store. Quelli a pagamento non sono al momento supportati. Dopo aver selezionato un componente aggiuntivo, accettare i termini e le condizioni per procedere. <br/> 
+    È possibile visualizzare i componenti aggiuntivi disponibili per categorie: **consigliati per te** , **classificazione** o **nome** . Solo i componenti aggiuntivi gratuiti sono disponibili in Office Store. Quelli a pagamento non sono al momento supportati. Dopo aver selezionato un componente aggiuntivo, accettare i termini e le condizioni per procedere. <br/> 
 
     > [!NOTE] 
-    > Con l'opzione Office Store, gli aggiornamenti e i miglioramenti sono automaticamente agli utenti.
+    > Con l'opzione Office Store, gli aggiornamenti e i miglioramenti vengono distribuiti automaticamente agli utenti.
 
-5. Nella pagina successiva selezionare **tutti**, **utenti/gruppi specifici**o **solo me** per specificare l'utente a cui è distribuito il componente aggiuntivo. Utilizzare la casella di ricerca per trovare utenti o gruppi specifici. <br/>
+5. Nella pagina successiva selezionare **tutti** , **utenti/gruppi specifici** o **solo me** per specificare l'utente a cui è distribuito il componente aggiuntivo. Utilizzare la casella di ricerca per trovare utenti o gruppi specifici. <br/>
 
     > [!NOTE] 
     > Per ulteriori informazioni sugli altri Stati che si applicano a un componente aggiuntivo, vedere [stati dei componenti](https://docs.microsoft.com/microsoft-365/admin/manage/manage-addins-in-the-admin-center.md)aggiuntivi.
   
-6. Fare clic su **Distribuisci**.
+6. Fare clic su **Distribuisci** .
   
 7. Quando si distribuisce il componente aggiuntivo, viene visualizzato un segno di spunta verde. Seguire le istruzioni visualizzate nella pagina per testare il componente aggiuntivo.
 
     > [!NOTE]
     > Gli utenti potrebbero dover rilanciare Office per visualizzare l'icona del componente aggiuntivo sulla barra multifunzione dell'app. I componenti aggiuntivi di Outlook possono richiedere fino a 24 ore per essere visualizzati sui nastri delle app.
     
-8. Al termine, selezionare **Avanti**. Se è stata distribuita solo da solo, è possibile selezionare **cambia chi ha accesso al componente aggiuntivo** per la distribuzione a più utenti.
+8. Al termine, selezionare **Avanti** . Se è stata distribuita solo da solo, è possibile selezionare **cambia chi ha accesso al componente aggiuntivo** per la distribuzione a più utenti.
 
     Se il componente aggiuntivo è stato distribuito ad altri membri dell'organizzazione, seguire le istruzioni per annunciare la distribuzione del componente aggiuntivo. <br/>
   

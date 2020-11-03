@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Gli amministratori possono ottenere informazioni su come applicare le impostazioni dei criteri standard e rigorosi nelle caratteristiche di protezione di Exchange Online Protection (EOP) e Office 365 Advanced Threat Protection (ATP)
-ms.openlocfilehash: 8431d36779069b0b289a2533fbd6b85abee24536
-ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
+ms.openlocfilehash: a624d48944965c217fb8547e4f09da0ec388e615
+ms.sourcegitcommit: 9d1351ea6d9942550b52132817f9f9693ddef2fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48326544"
+ms.lasthandoff: 11/02/2020
+ms.locfileid: "48830538"
 ---
 # <a name="preset-security-policies-in-eop-and-office-365-atp"></a>Criteri di sicurezza preimpostati in EOP e Office 365 ATP
 
@@ -44,40 +44,40 @@ Inoltre, l'ordine di precedenza è importante se più criteri di sicurezza preim
 
 Un profilo determina il livello di protezione. Sono disponibili i profili seguenti:
 
-- **Protezione standard**: un profilo di protezione di base appropriato per la maggior parte degli utenti.
-- **Protezione rigorosa**: un profilo di protezione più aggressivo per gli utenti selezionati (target di valore elevato o utenti prioritari).
+- **Protezione standard** : un profilo di protezione di base appropriato per la maggior parte degli utenti.
+- **Protezione rigorosa** : un profilo di protezione più aggressivo per gli utenti selezionati (target di valore elevato o utenti prioritari).
 
 Le regole vengono utilizzate con condizioni ed eccezioni che determinano gli utenti a cui sono stati applicati i profili.
 
-È possibile utilizzare una condizione o un'eccezione solo una volta, ma è possibile specificare più valori per la condizione o l'eccezione. Più valori della stessa condizione o eccezione utilizzano la logica OR (ad esempio, _\<recipient1\>_ o _\<recipient2\>_). Condizioni o eccezioni diverse utilizzano la logica AND (ad esempio, _\<recipient1\>_ e _\<member of group 1\>_).
+È possibile utilizzare una condizione o un'eccezione solo una volta, ma è possibile specificare più valori per la condizione o l'eccezione. Più valori della stessa condizione o eccezione utilizzano la logica OR (ad esempio, _\<recipient1\>_ o _\<recipient2\>_ ). Condizioni o eccezioni diverse utilizzano la logica AND (ad esempio, _\<recipient1\>_ e _\<member of group 1\>_ ).
 
 Le condizioni e le eccezioni disponibili sono le seguenti:
 
-- **I destinatari sono**: cassette postali, utenti di posta elettronica o contatti di posta nell'organizzazione.
-- **I destinatari sono membri di**: gruppi nell'organizzazione.
-- **I domini del destinatario sono**: domini accettati configurati in Microsoft 365.
+- **I destinatari sono** : cassette postali, utenti di posta elettronica o contatti di posta nell'organizzazione.
+- **I destinatari sono membri di** : gruppi nell'organizzazione.
+- **I domini del destinatario sono** : domini accettati configurati in Microsoft 365.
 
 ### <a name="policies-in-preset-security-policies"></a>Criteri di criteri di sicurezza preimpostati
 
 I criteri di sicurezza preimpostati utilizzano i criteri corrispondenti delle diverse funzionalità di protezione di EOP e Office 365 ATP. Questi criteri sono stati creati _dopo aver_ assegnato gli utenti ai criteri di protezione **standard** o **rigorosi** di protezione preimpostati. Non è possibile modificare questi criteri.
 
-- **Criteri di Exchange Online Protection (EOP)**: sono incluse le organizzazioni Microsoft 365 con le cassette postali di Exchange Online e le organizzazioni EOP autonome senza cassette postali di Exchange Online:
+- **Criteri di Exchange Online Protection (EOP)** : sono incluse le organizzazioni Microsoft 365 con le cassette postali di Exchange Online e le organizzazioni EOP autonome senza cassette postali di Exchange Online:
   
   - Criteri di protezione da [posta indesiderata](configure-your-spam-filter-policies.md) denominati criteri di **sicurezza predefiniti standard** e **criteri di sicurezza preimpostati**
-  - Criteri [anti-malware](configure-anti-malware-policies.md) denominati **criteri di sicurezza predefiniti standard** e **criteri di sicurezza preimpostati rigorosi**.
+  - Criteri [anti-malware](configure-anti-malware-policies.md) denominati **criteri di sicurezza predefiniti standard** e **criteri di sicurezza preimpostati rigorosi** .
   - Criteri di protezione [anti-phishing](set-up-anti-phishing-policies.md#spoof-settings) denominati criteri di **sicurezza predefiniti standard** e **criteri di sicurezza preimpostati** (impostazioni spoofing) di EOP.
 
-- **Criteri di Advanced Threat Protection (ATP) di office 365**: sono incluse le organizzazioni con Microsoft 365 E5 o gli abbonamenti al componente aggiuntivo ATP di Office 365:
+- **Criteri di Advanced Threat Protection (ATP) di office 365** : sono incluse le organizzazioni con Microsoft 365 E5 o gli abbonamenti al componente aggiuntivo ATP di Office 365:
 
-  - Criteri di anti-phishing ATP denominati **criteri di sicurezza predefiniti standard** e **criteri di sicurezza preimpostati rigorosi**, tra cui:
+  - Criteri di anti-phishing ATP denominati **criteri di sicurezza predefiniti standard** e **criteri di sicurezza preimpostati rigorosi** , tra cui:
 
     - Le stesse [impostazioni di spoofing](set-up-anti-phishing-policies.md#spoof-settings) disponibili nei criteri di anti-phishing di EOP.
     - [Impostazioni di rappresentazione](set-up-anti-phishing-policies.md#impersonation-settings-in-atp-anti-phishing-policies)
     - [Soglie di phishing avanzate](set-up-anti-phishing-policies.md#advanced-phishing-thresholds-in-atp-anti-phishing-policies)
 
-  - Criteri [collegamenti sicuri](set-up-atp-safe-links-policies.md) denominati **criteri di sicurezza predefiniti standard** e **criteri di sicurezza preimpostati rigorosi**.
+  - Criteri [collegamenti sicuri](set-up-atp-safe-links-policies.md) denominati **criteri di sicurezza predefiniti standard** e **criteri di sicurezza preimpostati rigorosi** .
 
-  - Criteri [allegati sicuri](set-up-atp-safe-attachments-policies.md) denominati criteri di **sicurezza predefiniti standard** e **criteri di sicurezza preimpostati rigorosi**.
+  - Criteri [allegati sicuri](set-up-atp-safe-attachments-policies.md) denominati criteri di **sicurezza predefiniti standard** e **criteri di sicurezza preimpostati rigorosi** .
 
 Si noti che è possibile applicare Protezioni di EOP a utenti diversi rispetto alle protezioni ATP.
 
@@ -114,17 +114,18 @@ In altre parole, le impostazioni dei criteri di **protezione rigorosi** sovrascr
   - Per l'accesso in sola lettura ai criteri di sicurezza preimpostati, è necessario essere membri di uno dei gruppi di ruoli seguenti:
 
     - **Lettore sicurezza** nel [Centro sicurezza e conformità](permissions-in-the-security-and-compliance-center.md).
+    - **Lettore globale** nel [Centro sicurezza & conformità](permissions-in-the-security-and-compliance-center.md).
     - **Gestione organizzazione in sola lettura** in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
 
 ### <a name="use-the-security--compliance-center-to-assign-preset-security-policies-to-users"></a>Utilizzare il Centro sicurezza & conformità per assegnare criteri di sicurezza preimpostati agli utenti
 
-1. Nel centro sicurezza & conformità, accedere a criteri **Threat management** di \> **Policy** \> **protezione preimpostati**per i criteri di gestione delle minacce.
+1. Nel centro sicurezza & conformità, accedere a criteri **Threat management** di \> **Policy** \> **protezione preimpostati** per i criteri di gestione delle minacce.
 
-2. In **protezione standard** o **protezione rigorosa**fare clic su **modifica**.
+2. In **protezione standard** o **protezione rigorosa** fare clic su **modifica** .
 
 3. Viene avviata la procedura guidata **Applica protezione standard** o **Applica protezione rigorosa** . Nelle **Protezioni di EOP si applicano al** passaggio, identificare i destinatari interni a cui si applicano le [Protezioni di EOP](#policies-in-preset-security-policies) :
 
-   1. Fare clic su **Aggiungi condizione**. Nell'elenco a discesa che viene visualizzato, selezionare una condizione in **applicato se**:
+   1. Fare clic su **Aggiungi condizione** . Nell'elenco a discesa che viene visualizzato, selezionare una condizione in **applicato se** :
 
       - **I destinatari sono**
       - **I destinatari sono membri di**
@@ -138,23 +139,23 @@ In altre parole, le impostazioni dei criteri di **protezione rigorosi** sovrascr
 
       Ripetere il passaggio precedente per aggiungere valori alla condizione e ripetere questo passaggio tutte le volte che è necessario o fino a quando non si esauriscono le condizioni.
 
-   4. Per aggiungere un'eccezione, fare clic su **Aggiungi condizione**. Nell'elenco a discesa che viene visualizzato, selezionare una condizione in **tranne quando**. Impostazioni e comportamento sono equivalenti alle condizioni.
+   4. Per aggiungere un'eccezione, fare clic su **Aggiungi condizione** . Nell'elenco a discesa che viene visualizzato, selezionare una condizione in **tranne quando** . Impostazioni e comportamento sono equivalenti alle condizioni.
 
-   Al termine dell'operazione, fare clic su **Avanti**.
+   Al termine dell'operazione, fare clic su **Avanti** .
 
 4. Se l'organizzazione dispone di Office 365 ATP, si **applicano le protezioni ATP** al passaggio per identificare i destinatari interni a cui si applicano le [protezioni atp di Office 365](#policies-in-preset-security-policies) .
 
    Le impostazioni e il comportamento sono esattamente come si **applicano le protezioni di EOP al** passaggio.
 
-   Al termine dell'operazione, fare clic su **Avanti**.
+   Al termine dell'operazione, fare clic su **Avanti** .
 
-5. Nel passaggio **conferma** , verificare le selezioni, quindi fare clic su **conferma**.
+5. Nel passaggio **conferma** , verificare le selezioni, quindi fare clic su **conferma** .
 
 ### <a name="use-the-security--compliance-center-to-modify-the-assignments-of-preset-security-policies"></a>Utilizzare il Centro sicurezza & conformità per modificare le assegnazioni dei criteri di sicurezza preimpostati
 
 La procedura per la modifica dell'assegnazione dei criteri di protezione **standard** o di protezione **rigorosi** è identica a quella in cui gli utenti hanno inizialmente [assegnato i criteri di sicurezza preimpostati](#use-the-security--compliance-center-to-assign-preset-security-policies-to-users).
 
-Per disabilitare la **protezione standard** o i criteri di sicurezza di **protezione rigorosi** mantenendo sempre le condizioni e le eccezioni esistenti, fare scorrere l'interruttore su **disabilitato**. Per abilitare i criteri, fare scorrere l'interruttore su **attivato**.
+Per disabilitare la **protezione standard** o i criteri di sicurezza di **protezione rigorosi** mantenendo sempre le condizioni e le eccezioni esistenti, fare scorrere l'interruttore su **disabilitato** . Per abilitare i criteri, fare scorrere l'interruttore su **attivato** .
 
 ### <a name="how-do-you-know-these-procedures-worked"></a>Come verificare se queste procedure hanno avuto esito positivo?
 
