@@ -17,12 +17,12 @@ ms.collection:
 ms.topic: article
 search.appverid: met150
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 8787bf212db342c84f13f8522e8853310e00c0ce
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: dcb7997c8c248c2b4e7d16902b6ebdd7756ccd0b
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48429408"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48846629"
 ---
 # <a name="app-monitoring-and-reporting-in-the-microsoft-365-security-center"></a>Monitoraggio e creazione di report delle app nel centro sicurezza Microsoft 365
 
@@ -65,10 +65,10 @@ Le **posizioni delle attività delle app Cloud** mostrano dove gli utenti accedo
 
 ## <a name="monitor-health-for-infrastructure-workloads"></a>Monitorare l'integrità dei carichi di lavoro dell'infrastruttura
 
-L' **integrità dell'infrastruttura** Visualizza gli avvisi sullo stato dell'integrità per i carichi di lavoro dell'infrastruttura in Azure Security Center.
+L' **integrità dell'infrastruttura** Visualizza gli avvisi sullo stato dell'integrità per i carichi di lavoro dell'infrastruttura in Azure Defender *.
 
-Azure Security Center fornisce la gestione della sicurezza unificata e la protezione avanzata dalle minacce tra carichi di lavoro locali e cloud. È possibile raccogliere, cercare e analizzare i dati di sicurezza provenienti da origini diverse, tra cui i firewall e altre soluzioni partner.
+Azure Defender * fornisce la gestione della sicurezza unificata e il difensore per Office 365 tra carichi di lavoro locali e cloud. È possibile raccogliere, cercare e analizzare i dati di sicurezza provenienti da origini diverse, tra cui i firewall e altre soluzioni partner.
 
-Per ulteriori informazioni, vedere [documentazione relativa al centro sicurezza di Azure](https://docs.microsoft.com/azure/security-center/).
+Per ulteriori informazioni, vedere [documentazione di Azure Defender *](https://docs.microsoft.com/azure/security-center/).
 
 ![Scheda di integrità dell'infrastruttura](../../media/infrastructure-health.png)

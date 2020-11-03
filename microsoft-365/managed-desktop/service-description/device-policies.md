@@ -1,7 +1,7 @@
 ---
 title: Configurazione delle periferiche
 description: Informazioni sui criteri predefiniti applicati ai dispositivi Microsoft Managed Desktop.
-keywords: Microsoft Managed Desktop, Microsoft 365, servizio, documentazione
+keywords: Microsoft Managed Desktop, Microsoft 365, servizi, documentazione
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: a76bae70adeb07d9ea0574a25bac14f89a0a790d
-ms.sourcegitcommit: 61d7284b412d0f7bbd8bbb2225c2e6324f86b717
+ms.openlocfilehash: 5533284d4a3f55a51b3017a64e4c353b4ec71352
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "48262218"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48846229"
 ---
 # <a name="device-configuration"></a>Configurazione delle periferiche
 
@@ -53,5 +53,5 @@ Connessioni con tassametro | Per impostazione predefinita, gli aggiornamenti su 
  ### <a name="additional-security-policies"></a>Criteri di sicurezza aggiuntivi
 
  Questi criteri vengono aggiunti per aumentare la sicurezza per le industrie altamente regolamentate. 
- - **Monitoraggio della sicurezza**: Microsoft controllerà i dispositivi tramite [Microsoft Defender Advanced Threat Protection](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection). Se viene rilevata una minaccia, Microsoft invierà una notifica al cliente, isolerà il dispositivo e rettificherà il problema in remoto. 
- - **Disabilitare PowerShell V2**: Microsoft ha rimosso PowerShell v2 nell'agosto 2017. Questa funzionalità è stata disattivata su tutti i dispositivi Microsoft Managed Desktop. Per ulteriori informazioni su questa modifica, vedere [Deprecation di Windows PowerShell 2,0](https://devblogs.microsoft.com/powershell/windows-powershell-2-0-deprecation/).
+ - **Monitoraggio della sicurezza** : Microsoft controllerà i dispositivi tramite [Microsoft Defender per endpoint](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection). Se viene rilevata una minaccia, Microsoft invierà una notifica al cliente, isolerà il dispositivo e rettificherà il problema in remoto. 
+ - **Disabilitare PowerShell V2** : Microsoft ha rimosso PowerShell v2 nell'agosto 2017. Questa funzionalità è stata disattivata su tutti i dispositivi Microsoft Managed Desktop. Per ulteriori informazioni su questa modifica, vedere [Deprecation di Windows PowerShell 2,0](https://devblogs.microsoft.com/powershell/windows-powershell-2-0-deprecation/).

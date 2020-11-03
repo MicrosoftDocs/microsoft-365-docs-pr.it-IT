@@ -25,34 +25,34 @@ search.appverid:
 - ZPP160
 - ZWD160
 ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
-description: In questo articolo, gli amministratori possono ottenere informazioni sulla protezione dei collegamenti sicuri in Office 365 Advanced Threat Protection (ATP) per proteggere la propria organizzazione dal phishing e da altri attacchi che utilizzano URL dannosi.
-ms.openlocfilehash: 45936cabf012c5f40080f3bbfee224aec9593d30
-ms.sourcegitcommit: 04a43a146cb62a10b1a4555ec3bed49eb08fbb99
+description: In questo articolo, gli amministratori possono ottenere informazioni sulla protezione dei collegamenti sicuri in Defender per Office 365 per proteggere la propria organizzazione dal phishing e da altri attacchi che utilizzano URL dannosi.
+ms.openlocfilehash: 869cb2f330b81481a2a0a013564853274654d0ef
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "48806727"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48846057"
 ---
-# <a name="safe-links-in-office-365-atp"></a>Collegamenti sicuri in Office 365 ATP
+# <a name="safe-links-in-microsoft-defender-for-office-365"></a>Collegamenti sicuri in Microsoft Defender per Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 > [!IMPORTANT]
-> Questo articolo è destinato ai clienti aziendali che dispongono di [Office 365 Advanced Threat Protection (ATP)](office-365-atp.md). Se si sta utilizzando Outlook.com, Microsoft 365 Family o Microsoft 365 Personal e si cercano informazioni su Safelinks in Outlook, vedere [Advanced Outlook.com Security](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2).
+> Questo articolo è destinato ai clienti aziendali che dispongono di [Microsoft Defender per Office 365](office-365-atp.md). Se si sta utilizzando Outlook.com, Microsoft 365 Family o Microsoft 365 Personal e si cercano informazioni su Safelinks in Outlook, vedere [Advanced Outlook.com Security](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2).
 
-Collegamenti sicuri è una funzionalità di [Office 365 Advanced Threat Protection](office-365-atp.md) che fornisce l'analisi e la riscrittura degli URL dei messaggi di posta elettronica in ingresso nel flusso di posta e la verifica del tempo di clic su URL e collegamenti nei messaggi di posta elettronica e in altre posizioni. L'analisi dei collegamenti sicuri si verifica in aggiunta alla normale [protezione da posta indesiderata e anti-malware](anti-spam-and-anti-malware-protection.md) nei messaggi di posta elettronica in ingresso in Exchange Online Protection (EOP). L'analisi dei collegamenti sicuri può aiutare a proteggere l'organizzazione da collegamenti dannosi che vengono utilizzati in tentativi di phishing e altri attacchi.
+Collegamenti sicuri è una funzionalità di [Defender per Office 365](office-365-atp.md) che fornisce l'analisi e la riscrittura degli URL dei messaggi di posta elettronica in ingresso nel flusso di posta e la verifica del tempo di clic su URL e collegamenti nei messaggi di posta elettronica e in altre posizioni. L'analisi dei collegamenti sicuri si verifica in aggiunta alla normale [protezione da posta indesiderata e anti-malware](anti-spam-and-anti-malware-protection.md) nei messaggi di posta elettronica in ingresso in Exchange Online Protection (EOP). L'analisi dei collegamenti sicuri può aiutare a proteggere l'organizzazione da collegamenti dannosi che vengono utilizzati in tentativi di phishing e altri attacchi.
 
 Protezione dei collegamenti sicuri è disponibile nei seguenti percorsi:
 
-- **Messaggi di posta elettronica** : la protezione dei collegamenti sicuri per i collegamenti nei messaggi di posta elettronica è controllata da criteri collegamenti sicuri. Non esiste alcun criterio di collegamenti sicuri predefinito, **in modo da ottenere la protezione dei collegamenti sicuri nei messaggi di posta elettronica, è necessario creare uno o più criteri collegamenti sicuri** . Per istruzioni, vedere [configurare i criteri per i collegamenti sicuri in ATP](set-up-atp-safe-links-policies.md).
+- **Messaggi di posta elettronica** : la protezione dei collegamenti sicuri per i collegamenti nei messaggi di posta elettronica è controllata da criteri collegamenti sicuri. Non esiste alcun criterio di collegamenti sicuri predefinito, **in modo da ottenere la protezione dei collegamenti sicuri nei messaggi di posta elettronica, è necessario creare uno o più criteri collegamenti sicuri**. Per istruzioni, vedere [configurare i criteri per i collegamenti sicuri in Microsoft Defender per Office 365](set-up-atp-safe-links-policies.md).
 
   Per ulteriori informazioni sulla protezione dei collegamenti sicuri per i messaggi di posta elettronica, vedere la sezione relativa alle [impostazioni dei collegamenti sicuri per i messaggi di posta elettronica](#safe-links-settings-for-email-messages) più avanti in questo articolo.
 
-- **Microsoft teams** (attualmente in tap Preview): la protezione dei collegamenti sicuri per i collegamenti nelle conversazioni dei team, nelle chat di gruppo o nei canali è controllata anche dai criteri collegamenti sicuri. Non esiste alcun criterio di collegamenti sicuri predefinito, **in modo da ottenere la protezione dei collegamenti sicuri nei team, è necessario creare uno o più criteri collegamenti sicuri** .
+- **Microsoft teams** (attualmente in tap Preview): la protezione dei collegamenti sicuri per i collegamenti nelle conversazioni dei team, nelle chat di gruppo o nei canali è controllata anche dai criteri collegamenti sicuri. Non esiste alcun criterio di collegamenti sicuri predefinito, **in modo da ottenere la protezione dei collegamenti sicuri nei team, è necessario creare uno o più criteri collegamenti sicuri**.
 
   Per ulteriori informazioni sulla protezione dei collegamenti sicuri nei team, vedere la sezione [impostazioni collegamenti sicuri per Microsoft teams](#safe-links-settings-for-microsoft-teams) più avanti in questo argomento.
 
-- **App di office 365** : la protezione dei collegamenti sicuri per le app di Office 365 è disponibile in APS desktop, mobili e Web supportati. È possibile **configurare** la protezione dei collegamenti sicuri per le app di Office 365 nell'impostazione globale **all'esterno** dei criteri collegamenti sicuri. Per istruzioni, vedere [Configure Global Settings for Safe Links Settings in Office 365 ATP](configure-global-settings-for-safe-links.md).
+- **App di office 365** : la protezione dei collegamenti sicuri per le app di Office 365 è disponibile in APS desktop, mobili e Web supportati. È possibile **configurare** la protezione dei collegamenti sicuri per le app di Office 365 nell'impostazione globale **all'esterno** dei criteri collegamenti sicuri. Per istruzioni, vedere [configurare le impostazioni globali per le impostazioni dei collegamenti sicuri in Microsoft Defender per Office 365](configure-global-settings-for-safe-links.md).
 
   Tuttavia, la protezione dei collegamenti sicuri per le app di Office 365 viene **applicata** solo agli utenti inclusi nei criteri dei collegamenti sicuri attivi. Se un utente non è incluso in un criterio di collegamenti sicuri attivo, l'utente non riceve la protezione dei collegamenti sicuri nelle app di Office 365 supportate.
 
@@ -71,7 +71,7 @@ In questo articolo sono incluse descrizioni dettagliate dei tipi di impostazioni
   - [Impostazioni dei collegamenti sicuri per le app di Office 365](#safe-links-settings-for-office-365-apps)
   - ["Blocca l'elenco degli URL seguenti" per i collegamenti sicuri](#block-the-following-urls-list-for-safe-links)
 
-Nella tabella seguente vengono descritti gli scenari per i collegamenti sicuri in Microsoft 365 e le organizzazioni di Office 365 che includono ATP (in altre parole, la mancanza di licenze non è mai un problema negli esempi).
+Nella tabella seguente vengono descritti gli scenari per i collegamenti sicuri in Microsoft 365 e le organizzazioni di Office 365 che includono il difensore per Office 365 (in altre parole, la mancanza di licenze non è mai un problema negli esempi).
 
 ****
 
@@ -91,7 +91,7 @@ Dopo che i collegamenti sicuri riscrivono un URL, l'URL rimane riscritto, anche 
 
 Le impostazioni dei criteri collegamenti sicuri che si applicano ai messaggi di posta elettronica sono descritte nel seguente elenco:
 
-- **Selezionare l'azione per gli URL potenzialmente dannosi sconosciuti nei messaggi** : attiva o disattiva l'analisi dei collegamenti sicuri nei messaggi di posta elettronica. Il valore consigliato è **on** . Se si attiva questa impostazione, vengono riportate le azioni seguenti.
+- **Selezionare l'azione per gli URL potenzialmente dannosi sconosciuti nei messaggi** : attiva o disattiva l'analisi dei collegamenti sicuri nei messaggi di posta elettronica. Il valore consigliato è **on**. Se si attiva questa impostazione, vengono riportate le azioni seguenti.
 
   - L'analisi dei collegamenti sicuri è abilitata in Outlook (C2R) in Windows.
   - Gli URL vengono riscritti e gli utenti vengono instradati attraverso la protezione dei collegamenti sicuri quando fanno clic su URL nei messaggi.
@@ -152,7 +152,7 @@ A livello elevato, ecco come funziona la protezione dei collegamenti sicuri sugl
 > [!IMPORTANT]
 > A marzo 2020, questa funzionalità è in anteprima ed è disponibile solo per i membri del Microsoft teams Technology Adoption Program (TAP). Per informazioni sulla pianificazione dei rilasci, vedere la Guida di [orientamento di Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap?rtc=1&filters=&searchterms=Safe%2CLinks%2CProtection%2Cfor%2CMicrosoft%2CTeams).
 
-È possibile abilitare o disabilitare la protezione dei collegamenti sicuri per Microsoft Teams nei criteri collegamenti sicuri. In particolare, è possibile utilizzare l'impostazione **selezionare l'azione per gli URL sconosciuti o potenzialmente dannosi all'interno di Microsoft teams** . Il valore consigliato è **on** .
+È possibile abilitare o disabilitare la protezione dei collegamenti sicuri per Microsoft Teams nei criteri collegamenti sicuri. In particolare, è possibile utilizzare l'impostazione **selezionare l'azione per gli URL sconosciuti o potenzialmente dannosi all'interno di Microsoft teams** . Il valore consigliato è **on**.
 
 Le seguenti impostazioni dei criteri collegamenti sicuri che si applicano ai collegamenti nei messaggi di posta elettronica si applicano anche ai collegamenti nei team:
 
@@ -180,7 +180,7 @@ A livello elevato, ecco come funziona la protezione dei collegamenti sicuri per 
 
 1. Un utente avvia l'app teams.
 
-2. Microsoft 365 verifica che l'organizzazione dell'utente includa Office 365 ATP e che l'utente sia incluso in un criterio di collegamenti sicuri attivo in cui è abilitata la protezione per Microsoft teams.
+2. Microsoft 365 verifica che l'organizzazione dell'utente includa Microsoft Defender per Office 365 e che l'utente sia incluso in un criterio di collegamenti sicuri attivo in cui è abilitata la protezione per Microsoft teams.
 
 3. Gli URL vengono convalidati al momento di fare clic per l'utente nelle chat, nelle chat di gruppo, nei canali e nelle schede.
 
@@ -204,11 +204,11 @@ Protezione dei collegamenti sicuri per le app di Office 365 sono necessari i req
 
 Le seguenti impostazioni dei collegamenti sicuri sono disponibili per le app di Office 365:
 
-- **Applicazioni di office 365** : consente di abilitare o disabilitare l'analisi dei collegamenti sicuri nelle app di Office 365 supportate. Il valore predefinito e **consigliato è attivato** .
+- **Applicazioni di office 365** : consente di abilitare o disabilitare l'analisi dei collegamenti sicuri nelle app di Office 365 supportate. Il valore predefinito e **consigliato è attivato**.
 
 - **Non tenere conto di quando gli utenti fanno clic su collegamenti sicuri** : Abilita o Disabilita l'archiviazione dei collegamenti sicuri fare clic su dati per gli URL su cui si fa clic nelle versioni desktop Word, Excel, PowerPoint e Visio. Il valore consigliato è **disattivato** , il che significa che i clic dell'utente vengono registrati.
 
-- **Non consentire agli utenti di fare clic su collegamenti sicuri con l'URL originale** : consente o blocca gli utenti di fare clic sulla [pagina di avviso](#warning-pages-from-safe-links) nell'URL originale nelle versioni desktop di Word, Excel, PowerPoint e Visio. Il valore predefinito e **consigliato è attivato** .
+- **Non consentire agli utenti di fare clic su collegamenti sicuri con l'URL originale** : consente o blocca gli utenti di fare clic sulla [pagina di avviso](#warning-pages-from-safe-links) nell'URL originale nelle versioni desktop di Word, Excel, PowerPoint e Visio. Il valore predefinito e **consigliato è attivato**.
 
 Per configurare le impostazioni dei collegamenti sicuri per le app di Office 365, vedere [Configure Safe Links Protection for office 365 Apps](configure-global-settings-for-safe-links.md#configure-safe-links-protection-for-office-365-apps-in-the-security--compliance-center).
 

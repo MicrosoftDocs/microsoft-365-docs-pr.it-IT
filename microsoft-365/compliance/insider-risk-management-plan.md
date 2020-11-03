@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 5944439da4c4df9253e5c6d67944ccc1a7339e71
-ms.sourcegitcommit: a08103bc120bdec7cfeaf67c1be4e221241e69ad
+ms.openlocfilehash: b2aa72dea55d4c75f6e73161e07cf0a9bb5ecf1c
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "45199772"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48846274"
 ---
 # <a name="plan-for-insider-risk-management"></a>Piano per la gestione dei rischi Insider
 
@@ -32,7 +32,7 @@ Identificare le parti interessate appropriate nell'organizzazione per collaborar
 - Privacy
 - Sicurezza
 - Risorse umane
-- Ufficio legale
+- Esigenze legali
 
 ## <a name="determine-any-regional-compliance-requirements"></a>Determinare i requisiti di conformità regionali
 
@@ -65,7 +65,7 @@ Se non si dispone di un piano Microsoft 365 Enterprise E5 esistente e si desider
 
 - Quando si utilizza il modello **di furto dei dati da parte degli utenti** , è necessario configurare un connettore Microsoft 365 HR per importare periodicamente le informazioni relative alle dimissioni e alla terminazione per gli utenti dell'organizzazione. Vedere l'articolo [Import Data with the HR Connector](import-hr-data.md) per informazioni dettagliate su come configurare il connettore Microsoft 365 HR per la propria organizzazione.
 - Quando si utilizzano i modelli di **perdita di dati** , è necessario configurare almeno un criterio di prevenzione della perdita di dati (DLP) per definire le informazioni riservate nell'organizzazione e ricevere avvisi di rischio Insider per gli avvisi di criteri DLP di elevata gravità. Per informazioni dettagliate su come configurare i criteri DLP per la propria organizzazione, vedere l'articolo [creare, testare e ottimizzare un criterio DLP](create-test-tune-dlp-policy.md) .
-- Quando si utilizzano i modelli di **violazione dei criteri di sicurezza** , è necessario abilitare Microsoft Defender Advanced Threat Protection (ATP) per l'integrazione di gestione del rischio Insider nel centro sicurezza protezione per importare gli avvisi relativi alla violazione della sicurezza. Vedere l'articolo [configure advanced features in Microsoft Defender](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-features) per istruzioni dettagliate per abilitare l'integrazione di Microsoft Defender ATP con Insider Risk Management.
+- Quando si utilizzano i modelli di **violazione dei criteri di sicurezza** , è necessario abilitare Microsoft Defender per endpoint per l'integrazione di gestione del rischio Insider nel centro sicurezza protezione per importare gli avvisi relativi alla violazione della sicurezza. Vedere l'articolo [configure advanced features in Microsoft Defender](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-features) per istruzioni dettagliate per abilitare il difensore per l'integrazione di endpoint con gestione dei rischi Insider.
 - Quando si utilizzano modelli **utente scontenti** , è necessario configurare un connettore Microsoft 365 HR per importare periodicamente le informazioni sullo stato di prestazioni o di retrocessione per gli utenti dell'organizzazione. Vedere l'articolo [Import Data with the HR Connector](import-hr-data.md) per informazioni dettagliate su come configurare il connettore Microsoft 365 HR per la propria organizzazione.
 
 ## <a name="test-with-a-small-group-of-users-in-a-production-environment"></a>Eseguire il test con un gruppo limitato di utenti in un ambiente di produzione

@@ -21,12 +21,12 @@ ms.topic: conceptual
 ms.custom: autoir
 ms.reviewer: evaldm, isco
 ms.date: 09/16/2020
-ms.openlocfilehash: 83a897438b9da88287574ff576fab9b2f6b30236
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: 183435596706855479c49abc34358c85dccb0da4
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48430800"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48846509"
 ---
 # <a name="details-and-results-of-an-automated-investigation"></a>Dettagli e risultati di un'indagine automatizzata
 
@@ -34,9 +34,9 @@ ms.locfileid: "48430800"
 
 
 **Si applica a:**
-- Microsoft Threat Protection
+- Microsoft 365 Defender
 
-Quando si verifica un'indagine automatizzata in Microsoft Threat Protection, i dettagli di tale indagine sono disponibili durante e dopo il processo di indagine automatizzata. Se di dispone delle [autorizzazioni necessarie](mtp-action-center.md#required-permissions-for-action-center-tasks), è possibile visualizzare i dettagli in una visualizzazione dei dettagli dell'indagine. La vista dei dettagli dell'indagine consente di avere uno stato aggiornato e la possibilità di approvare eventuali azioni in sospeso. 
+Quando si verifica un'indagine automatizzata in Microsoft 365 Defender, i dettagli relativi a tali indagini sono disponibili durante e dopo il processo di analisi automatizzato. Se di dispone delle [autorizzazioni necessarie](mtp-action-center.md#required-permissions-for-action-center-tasks), è possibile visualizzare i dettagli in una visualizzazione dei dettagli dell'indagine. La vista dei dettagli dell'indagine consente di avere uno stato aggiornato e la possibilità di approvare eventuali azioni in sospeso. 
 
 ![Dettagli indagine](../../media/mtp-air-investdetails.png)
 
@@ -48,13 +48,13 @@ Quando si verifica un'indagine automatizzata in Microsoft Threat Protection, i d
 
 ### <a name="select-an-item-in-the-action-center"></a>Selezionare un elemento nel centro notifiche
 
-Usare il centro notifiche per visualizzare le azioni in attesa di approvazione (nella scheda **In sospeso**) o quelle già approvate (nella scheda **Cronologia**). 
+Usare il centro notifiche per visualizzare le azioni in attesa di approvazione (nella scheda **In sospeso** ) o quelle già approvate (nella scheda **Cronologia** ). 
 
 1. Andare su [https://security.microsoft.com](https://security.microsoft.com) ed eseguire l'accesso. 
 
 2. Nel riquadro di spostamento, scegliere **Centro notifiche**. 
 
-3. Nella scheda **In sospeso** o **Cronologia**, selezionare un elemento. Se si dispone delle [autorizzazioni necessarie](mtp-action-center.md#required-permissions-for-action-center-tasks), è possibile approvare (o rifiutare) le azioni in sospeso.
+3. Nella scheda **In sospeso** o **Cronologia** , selezionare un elemento. Se si dispone delle [autorizzazioni necessarie](mtp-action-center.md#required-permissions-for-action-center-tasks), è possibile approvare (o rifiutare) le azioni in sospeso.
 
 ### <a name="open-an-investigation-from-an-incident-details-page"></a>Aprire un'indagine dalla pagina dei dettagli dell'incidente
 
@@ -66,7 +66,7 @@ Utilizzare una pagina dei dettagli di un incidente per visualizzare informazioni
 
 3. Selezionare un elemento nell'elenco per aprire la visualizzazione dei dettagli dell'evento.<br/>![Dettagli incidente](../../media/mtp-incidentdetails-tabs.png)
 
-4. Nella scheda **Indagini**, selezionare un'indagine nell'elenco.
+4. Nella scheda **Indagini** , selezionare un'indagine nell'elenco.
 
 ## <a name="investigation-details"></a>Dettagli indagine
 
@@ -74,7 +74,7 @@ Utilizzare la vista dei dettagli dell'indagine per visualizzare le attività pas
 
 ![Dettagli indagine](../../media/mtp-air-investdetails.png)
 
-Nella visualizzazione dei dettagli dell'indagine, è possibile vedere le informazioni nelle schede **Grafico dell'indagine**, **Avvisi**, **Dispositivi**, **Identità**, **Risultati principali**, **Entità**, **Log**, e **Azioni in sospeso**, descritte nella tabella seguente.
+Nella visualizzazione dei dettagli dell'indagine, è possibile vedere le informazioni nelle schede **Grafico dell'indagine** , **Avvisi** , **Dispositivi** , **Identità** , **Risultati principali** , **Entità** , **Log** , e **Azioni in sospeso** , descritte nella tabella seguente.
 
 |Scheda    |Descrizione |
 |--------|--------|

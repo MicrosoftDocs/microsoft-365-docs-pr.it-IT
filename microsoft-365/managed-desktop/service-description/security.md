@@ -1,19 +1,19 @@
 ---
 title: Tecnologie di sicurezza in Microsoft Managed Desktop
 description: ''
-keywords: Microsoft Managed Desktop, Microsoft 365, servizio, documentazione
+keywords: Microsoft Managed Desktop, Microsoft 365, servizi, documentazione
 ms.service: m365-md
 author: jaimeo
 ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 1e50b07208df46b199aada9c2ccbe04cc1c1ae72
-ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
+ms.openlocfilehash: e69656e13cd9a300cd56bdd5db7703f2387d23d4
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "47289484"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48846205"
 ---
 # <a name="security-technologies-in-microsoft-managed-desktop"></a>Tecnologie di sicurezza in Microsoft Managed Desktop
 
@@ -39,13 +39,13 @@ Servizio | Descrizione
 --- | ---
 Antivirus | Microsoft Defender AV è installato e configurato<br>Le definizioni AV di Microsoft Defender sono aggiornate
 Crittografia a volume completo |    Windows BitLocker è la soluzione di crittografia dei contratti multilicenza per i dispositivi Microsoft Managed Desktop.<br><br>Dopo aver effettuato l'onboarding di un'organizzazione nel servizio, i dispositivi verranno crittografati utilizzando Windows BitLocker con il modulo TPM (Trust Platform Module) incorporato per impedire l'accesso non autorizzato ai dati locali quando il dispositivo è in modalità sospensione o disattivata. 
-Monitoraggio |    Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) viene utilizzato per il monitoraggio delle minacce alla sicurezza su tutti i dispositivi desktop Microsoft gestiti. Microsoft Defender ATP consente ai clienti aziendali di rilevare, indagare e rispondere alle minacce avanzate nella propria rete aziendale. Per ulteriori informazioni, vedere [protezione avanzata dalle minacce di Microsoft Defender.](https://docs.microsoft.com/windows/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection) 
+Monitoraggio |    Microsoft Defender per endpoint viene utilizzato per il monitoraggio delle minacce alla sicurezza su tutti i dispositivi desktop Microsoft gestiti. Defender for endpoint consente ai clienti aziendali di rilevare, analizzare e rispondere alle minacce avanzate nella propria rete aziendale. Per ulteriori informazioni, vedere [Microsoft Defender for endpoint.](https://docs.microsoft.com/windows/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection) 
 Aggiornamenti del sistema operativo |  I dispositivi Microsoft Managed Desktop sono sempre protetti con gli aggiornamenti della sicurezza più recenti.
 Configurazione sicura del dispositivo |   Microsoft Managed Desktop implementa la linea di base per la sicurezza di Microsoft. Per ulteriori informazioni, vedere [previsioni di sicurezza di Windows.](https://docs.microsoft.com/windows/security/threat-protection/windows-security-baselines)
 
 
 
-## <a name="identity-and-access-management"></a>Gestione delle identità e degli accessi
+## <a name="identity-and-access-management"></a>Gestione di identità e accesso
 
 La gestione delle identità e degli accessi protegge le risorse aziendali e i dati aziendali. Microsoft Managed Desktop configura i dispositivi per garantire l'utilizzo sicuro delle identità gestite di Azure Active Directory (Azure AD). È responsabilità del cliente mantenere informazioni accurate nel tenant di Azure AD. 
 

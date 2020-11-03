@@ -17,12 +17,12 @@ ms.custom:
 - SIEM
 - seo-marvel-apr2020
 description: Ottenere una panoramica delle informazioni di sicurezza e dell'integrazione del server di gestione eventi (SIEM) con i servizi e le applicazioni cloud di Microsoft 365
-ms.openlocfilehash: 6d657990417cab2a8cbb1b03b8b79a65c095d1a5
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 0e582333615d11c500b114225435903cea386ade
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48202210"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48846401"
 ---
 # <a name="security-information-and-event-management-siem-server-integration-with-microsoft-365-services-and-applications"></a>Integrazione del server di sicurezza e di gestione eventi (SIEM) con i servizi e le applicazioni Microsoft 365
 
@@ -52,13 +52,13 @@ Un server SIEM può ricevere dati da un'ampia gamma di servizi e applicazioni di
 
 |Servizio o applicazione Microsoft 365|Input/metodi del server SIEM|Risorse per approfondire|
 |---|---|---|
-|[Office 365 Advanced Threat Protection](office-365-atp.md)|Registri di controllo|[Integrazione di SIEM con Office 365 Advanced Threat Protection](siem-integration-with-office-365-ti.md)|
-|[Microsoft Defender Advanced Threat Protection](https://docs.microsoft.com/windows/security/threat-protection/)|Endpoint HTTPS ospitato in Azure <br/>API REST|[Tirare gli avvisi agli strumenti di SIEM](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-siem)|
+|[Microsoft Defender per Office 365](office-365-atp.md)|Registri di controllo|[Integrazione di SIEM con Microsoft Defender per Office 365](siem-integration-with-office-365-ti.md)|
+|[Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/)|Endpoint HTTPS ospitato in Azure <br/>API REST|[Tirare gli avvisi agli strumenti di SIEM](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-siem)|
 |[Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security)|Integrazione del registro|[Integrazione di SIEM con Microsoft cloud app Security](https://docs.microsoft.com/cloud-app-security/siem)|
 |
 
 > [!TIP]
-> Dai un'occhiata a [Azure Sentinel](https://docs.microsoft.com/azure/sentinel/overview). Azure Sentinel è dotato di connettori per le soluzioni Microsoft. Questi connettori sono disponibili "fuori dalla scatola" e forniscono l'integrazione in tempo reale. È possibile utilizzare Azure Sentinel con le soluzioni Microsoft Threat Protection e Microsoft 365 Services, tra cui Office 365, Azure AD, Azure ATP, Microsoft cloud app Security e altro ancora.
+> Dai un'occhiata a [Azure Sentinel](https://docs.microsoft.com/azure/sentinel/overview). Azure Sentinel è dotato di connettori per le soluzioni Microsoft. Questi connettori sono disponibili "fuori dalla scatola" e forniscono l'integrazione in tempo reale. È possibile utilizzare Azure Sentinel con i servizi Microsoft 365 Defender Solutions e Microsoft 365, tra cui Office 365, Azure AD, Microsoft Defender per Identity, Microsoft cloud app Security e altro ancora.
 
 ### <a name="audit-logging-must-be-turned-on"></a>La registrazione di controllo deve essere attivata
 
@@ -70,6 +70,6 @@ Verificare che la registrazione di controllo sia attivata prima di configurare l
 
 ## <a name="more-resources"></a>Altre risorse
 
-[Integrare soluzioni di sicurezza nel centro sicurezza di Azure](https://docs.microsoft.com/azure/security-center/security-center-partner-integration#exporting-data-to-a-siem)
+[Integrare soluzioni di sicurezza in Azure Defender *](https://docs.microsoft.com/azure/security-center/security-center-partner-integration#exporting-data-to-a-siem)
 
 [Integrare gli avvisi dell'API di sicurezza di Microsoft Graph con un SIEM](https://docs.microsoft.com/graph/security-integration)

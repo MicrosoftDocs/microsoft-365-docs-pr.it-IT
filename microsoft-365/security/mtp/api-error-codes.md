@@ -1,6 +1,6 @@
 ---
-title: Codici di errore comuni di Microsoft Threat Protection REST API
-description: Informazioni sui codici di errore dell'API REST comuni di Microsoft Threat Protection
+title: Codici di errore dell'API REST comuni di Microsoft 365 Defender
+description: Informazioni sui codici di errore dell'API REST di Microsoft 365 Defender comuni
 keywords: API, errore, codici, errori comuni, MTP, codici di errore dell'API
 search.product: eADQiWindows 10XVcnh
 ms.prod: microsoft-365-enterprise
@@ -19,25 +19,25 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 81375b919b52ff895e5ec7014feb747b1a0eae65
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: aceb376662f2b27397aa2332f8929a57d5a3ee03
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48201340"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48846009"
 ---
-# <a name="common-microsoft-threat-protection-rest-api-error-codes"></a>Codici di errore comuni di Microsoft Threat Protection REST API
+# <a name="common-microsoft-365-defender-rest-api-error-codes"></a>Codici di errore dell'API REST comuni di Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
 **Si applica a:**
-- Microsoft Threat Protection
+- Microsoft 365 Defender
 
 >[!IMPORTANT] 
 >Alcune informazioni si riferiscono al prodotto prerilasciato che può essere modificato in modo sostanziale prima che venga rilasciato commercialmente. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
-I codici di errore elencati nella tabella riportata di seguito possono essere restituiti da un'operazione in una qualsiasi delle API di Microsoft Threat Protection.
+I codici di errore elencati nella tabella riportata di seguito possono essere restituiti da un'operazione in una qualsiasi delle API di Microsoft 365 Defender.
 
 Ogni risposta di errore contiene un messaggio di errore che può contribuire alla risoluzione del problema.
 

@@ -11,12 +11,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: faf1efd1-3b0c-411a-804d-17f37292eac0
 description: Seguire queste procedure consigliate per l'uso autonomo di Exchange Online Protection (EOP) per essere configurati per l'esito positivo ed evitare errori comuni di configurazione.
-ms.openlocfilehash: b734fe87b82c243531944bbd9cf53d22d5b42f53
-ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
+ms.openlocfilehash: abf68e361293b2a55cd0a382cc376cbfe21236e7
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48414035"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48845949"
 ---
 # <a name="best-practices-for-configuring-standalone-eop"></a>Procedure consigliate per la configurazione di EOP autonomo
 
@@ -35,7 +35,7 @@ Se nell'organizzazione sono presenti account utente esistenti in un ambiente Act
 
 ## <a name="recommended-settings"></a>Impostazioni consigliate
 
-Gli amministratori della sicurezza sono autorizzati a personalizzare le impostazioni di sicurezza per soddisfare le esigenze della propria organizzazione. Anche se, come regola generale, esistono due livelli di sicurezza in EOP e Office 365 ATP che è consigliabile: standard e Strict. Queste impostazioni sono elencate nelle [impostazioni consigliate per EOP e Office 365 ATP Security](recommended-settings-for-eop-and-office365-atp.md).
+Gli amministratori della sicurezza sono autorizzati a personalizzare le impostazioni di sicurezza per soddisfare le esigenze della propria organizzazione. Anche se, come regola generale, esistono due livelli di sicurezza in EOP e Microsoft Defender per Office 365 che è consigliabile: standard e Strict. Queste impostazioni sono elencate nelle [impostazioni consigliate per la sicurezza di EOP e Microsoft Defender per Office 365](recommended-settings-for-eop-and-office365-atp.md).
 
 ### <a name="miscellaneousnon-policy-settings"></a>Varie/impostazioni non relative ai criteri
 

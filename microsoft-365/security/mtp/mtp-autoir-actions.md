@@ -21,12 +21,12 @@ ms.topic: conceptual
 ms.custom: autoir
 ms.reviewer: evaldm, isco
 ms.date: 09/16/2020
-ms.openlocfilehash: 22a40e3c0c804800f2de02e705d1dfec6e296db0
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: ed0b9afa576f65d33cd9a49dfacd96ffaf173d28
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48429612"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48846533"
 ---
 # <a name="approve-or-reject-pending-actions-following-an-automated-investigation"></a>Approvare o rifiutare le azioni in sospeso dopo un'analisi automatizzata
 
@@ -34,12 +34,12 @@ ms.locfileid: "48429612"
 
 
 **Si applica a:**
-- Microsoft Threat Protection
+- Microsoft 365 Defender
 
 Quando viene eseguita un’indagine automatizzata, può dare come risultato una o più [azioni di correzione](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-remediation-actions) che richiedono l’approvazione prima di procedere. Ad esempio, potrebbe essere necessario eliminare un gruppo di email o potrebbe essere necessario eliminare un file in quarantena. È importante approvare (o rifiutare) le azioni in sospeso il prima possibile in modo che l’indagine automatizzata possa essere completata nel tempo previsto. 
 
 > [!TIP]
-> Se si pensa che qualcosa è stato perso o rilevato erroneamente dalle funzionalità di analisi e risposta automatizzate in Microsoft Threat Protection, fatecelo sapere! Vedere [How to report false positives/negatives in Automatic Investigation and Response (Air) capabilities in Microsoft Threat Protection](mtp-autoir-report-false-positives-negatives.md).
+> Se si pensa che qualcosa è stato perso o erroneamente rilevato dalle funzionalità di analisi e risposta automatizzate in Microsoft 365 Defender, fatecelo sapere! Vedere [How to report false positives/negatives in Automatic Investigation and Response (Air) capabilities in Microsoft 365 Defender](mtp-autoir-report-false-positives-negatives.md).
 
 Le azioni in sospeso possono essere esaminate e approvate tramite il [Centro azioni](#review-a-pending-action-in-the-action-center) o la [visualizzazione dettagli analisi](#review-a-pending-action-in-the-investigation-details-view).
 
@@ -52,9 +52,9 @@ Le azioni in sospeso possono essere esaminate e approvate tramite il [Centro azi
 
 2. Nel riquadro di spostamento fare clic su **Centro notifiche**. 
 
-3. Nel centro notifiche, nella scheda **In sospeso**, selezionare un elemento dall’elenco. 
+3. Nel centro notifiche, nella scheda **In sospeso** , selezionare un elemento dall’elenco. 
 
-    - Se si seleziona un elemento nella colonna **Numero indagine**, verrà visualizzata la pagina con i dettagli sulle indagini. In questa pagina è possibile visualizzare i risultati dell'indagine e quindi approvare o rifiutare l'azione consigliata.
+    - Se si seleziona un elemento nella colonna **Numero indagine** , verrà visualizzata la pagina con i dettagli sulle indagini. In questa pagina è possibile visualizzare i risultati dell'indagine e quindi approvare o rifiutare l'azione consigliata.
  
     - Se si seleziona una riga nell'elenco, verrà visualizzato un riquadro a comparsa, in cui sarà possibile vedere le informazioni su quell'elemento. <br/>![Approvare o rifiutare un’azione](../../media/air-actioncenter-itemselected.png)<br/>Utilizzare i collegamenti per visualizzare un avviso associato o un’indagine e approvare o rifiutare l’azione.
 
@@ -62,7 +62,7 @@ Le azioni in sospeso possono essere esaminate e approvate tramite il [Centro azi
 
 ![Dettagli indagine](../../media/mtp-air-investdetails.png)
 
-1. In una pagina di [investigazione dettagli](mtp-autoir-results.md), selezionare la scheda **azioni in sospeso** (o **Azioni**). Gli elementi in attesa di approvazione sono elencati in questa scheda.
+1. In una pagina di [investigazione dettagli](mtp-autoir-results.md), selezionare la scheda **azioni in sospeso** (o **Azioni** ). Gli elementi in attesa di approvazione sono elencati in questa scheda.
 
 2. Selezionare un elemento nella lista, quindi scegliere **Approva** o **Rifiuta**.
 

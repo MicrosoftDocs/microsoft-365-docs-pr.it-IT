@@ -1,18 +1,18 @@
 ---
 title: Supporto per Microsoft Managed Desktop
 description: ''
-keywords: Microsoft Managed Desktop, Microsoft 365, servizio, documentazione
+keywords: Microsoft Managed Desktop, Microsoft 365, servizi, documentazione
 ms.service: m365-md
 author: jaimeo
 ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 39209e81c380887d8a65e28f12ea00c6050e28fa
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: 52bbbad5acac3b0407ffbf0cd78888d74cfb05d3
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47950331"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48846193"
 ---
 # <a name="support-for-microsoft-managed-desktop"></a>Supporto per Microsoft Managed Desktop
 
@@ -33,7 +33,7 @@ Il supporto di Microsoft Managed Desktop include:
 
 Prodotti supportati:
 
-- Windows 10 con Microsoft Defender Advanced Threat Protection 
+- Windows 10 con Microsoft Defender per endpoint
 - Queste app Microsoft 365 per le app Enterprise: Outlook, Word, PowerPoint, Excel, client Skype for business, Microsoft Teams 
 - Microsoft Store per le aziende 
 - Client di OneDrive for business 

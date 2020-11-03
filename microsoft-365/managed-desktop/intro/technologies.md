@@ -1,7 +1,7 @@
 ---
 title: Tecnologie Microsoft Managed Desktop
 description: In questo argomento sono elencate le tecnologie e le app utilizzate in Microsoft Managed Desktop.
-keywords: Microsoft Managed Desktop, Microsoft 365, servizio, documentazione
+keywords: Microsoft Managed Desktop, Microsoft 365, servizi, documentazione
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: f4af346877b41b03c07750508ff93661cc642ec4
-ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
+ms.openlocfilehash: b98cec62a018556bfbd31df0aa824acbd00b37b6
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "47289106"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48846241"
 ---
 # <a name="microsoft-managed-desktop-technologies"></a>Tecnologie Microsoft Managed Desktop
 
@@ -42,7 +42,7 @@ Applicazioni Web |  Yammer, Office in un browser, approfondendo, Flow, StaffHub,
  |
  --- | ---
 Virtualizzazione di applicazioni (App-V) |    I clienti possono distribuire pacchetti App-V utilizzando il client di gestione delle app Win32 di Intune.
-Microsoft Defender Advanced Threat Protection |  Microsoft Managed Desktop utilizza questo strumento per monitorare la sicurezza dei dispositivi. 
+Microsoft Defender ATP |    Microsoft Managed Desktop utilizza questo strumento per monitorare la sicurezza dei dispositivi. 
 
 ## <a name="enterprise-mobility--security-e5"></a>Enterprise Mobility + Security E5
 
