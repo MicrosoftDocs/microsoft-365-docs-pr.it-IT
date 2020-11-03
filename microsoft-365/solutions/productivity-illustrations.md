@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 9c4898f6ecf17ad57da9ecd54499764c7efc2a6c
-ms.sourcegitcommit: 3c39866865c8c61bce2169818d8551da65033cfe
+ms.openlocfilehash: 160211fe481d14749bd778255e6844b12aa80672
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "48816875"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48847237"
 ---
 # <a name="microsoft-365-productivity-illustrations"></a>Illustrazioni sulla produttività di Microsoft 365
 
@@ -58,14 +58,14 @@ Protezione della sicurezza e delle informazioni per le organizzazioni multi-area
 |:-----|:-----|
 |[![Immagine di scorrimento per infografica multi-area](../media/solutions-architecture-center/multi-region-single-tenant-security-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-security-info-protect-multi-region.pdf) <br/> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-security-info-protect-multi-region.pdf) \| [Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-security-info-protect-multi-region.vsdx)<br>Aggiornato nel marzo 2020 |L'uso di un singolo tenant di Microsoft 365 per l'organizzazione globale rappresenta la scelta e l'esperienza migliori per vari motivi. Tuttavia, molti architetti fanno fatica a trovare il modo di soddisfare i requisiti di sicurezza e di protezione delle informazioni nelle varie aree geografiche. Questa serie di argomenti offre alcuni suggerimenti. |
 
-### <a name="microsoft-defender-atp-deployment-strategy"></a>Strategia di distribuzione di Microsoft Defender ATP
+### <a name="microsoft-defender-for-endpoint-deployment-strategy"></a>Strategia di distribuzione di Microsoft Defender per endpoint
 
 Alcuni strumenti sono più adatti per determinate architetture, a seconda dell'ambiente.
 
 
 | Elemento | Descrizione |
 |:-----|:-----|
-|[![Immagine di anteprima per la strategia di distribuzione di Microsoft Defender ATP](../media/solutions-architecture-center/mdatp-deployment-strategy.png)](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/security/threat-protection/microsoft-defender-atp/downloads/mdatp-deployment-strategy.pdf)<br/> [PDF](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/security/threat-protection/microsoft-defender-atp/downloads/mdatp-deployment-strategy.pdf)  \| [Visio](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/security/threat-protection/microsoft-defender-atp/downloads/mdatp-deployment-strategy.vsdx) <br>Aggiornato nel febbraio 2020| Il materiale sull'architettura consente di pianificare la distribuzione per le architetture seguenti: <ul><li> Nativa del cloud </li><li> Co-gestione </li><li> Locale</li><li>Valutazione e onboarding locale</li>
+|[![Immagine Thumb per la strategia di distribuzione di Microsoft Defender per endpoint](../media/solutions-architecture-center/mdatp-deployment-strategy.png)](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/security/threat-protection/microsoft-defender-atp/downloads/mdatp-deployment-strategy.pdf)<br/> [PDF](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/security/threat-protection/microsoft-defender-atp/downloads/mdatp-deployment-strategy.pdf)  \| [Visio](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/security/threat-protection/microsoft-defender-atp/downloads/mdatp-deployment-strategy.vsdx) <br>Aggiornato nel febbraio 2020| Il materiale sull'architettura consente di pianificare la distribuzione per le architetture seguenti: <ul><li> Nativa del cloud </li><li> Co-gestione </li><li> Locale</li><li>Valutazione e onboarding locale</li>
 
 
 <a name="BKMK_O365IDP"></a>

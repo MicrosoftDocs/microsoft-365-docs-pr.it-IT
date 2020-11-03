@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: cb2aad70b8ba6ccd9075513b5f383ede42ebd6c0
-ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
+ms.openlocfilehash: ff81b6e1a290d928d68cb43b455713183d24f75b
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "48295129"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48846641"
 ---
 # <a name="assess-your-security-posture-with-microsoft-secure-score"></a>Valutare la propria posizione di sicurezza con Microsoft Secure Score
 
@@ -38,7 +38,7 @@ Per facilitare le informazioni necessarie più rapidamente, le azioni di miglior
 
 * Identity (Azure Active Directory accounts & Roles)
 * Data (protezione delle informazioni di Microsoft)
-* Dispositivo (Microsoft Defender ATP, noto come [Microsoft Secure Score for Devices](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/tvm-microsoft-secure-score-devices))
+* Dispositivo (Microsoft Defender per endpoint, noto come [Microsoft Secure Score for Devices](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/tvm-microsoft-secure-score-devices))
 * App (applicazioni di posta elettronica e cloud, tra cui Office 365 e Microsoft cloud app Security)
 * Infrastructure (nessuna azione di miglioramento per il momento)
 
@@ -57,9 +57,9 @@ Inoltre, se si seleziona il pulsante **Includi** accanto alla partitura, è poss
 
 Di seguito sono riportati i punteggi che è possibile aggiungere alla visualizzazione del punteggio complessivo per fornire un'immagine più completa del Punteggio globale:
 
-- **Punteggio pianificato**: Mostra il Punteggio proiettato quando vengono completate le azioni pianificate
-- **Punteggio della licenza corrente**: Mostra il punteggio che può essere ottenuto con la licenza Microsoft corrente
-- **Punteggio ottenibile**: Mostra il punteggio che è possibile ottenere con le licenze Microsoft e l'accettazione del rischio corrente
+- **Punteggio pianificato** : Mostra il Punteggio proiettato quando vengono completate le azioni pianificate
+- **Punteggio della licenza corrente** : Mostra il punteggio che può essere ottenuto con la licenza Microsoft corrente
+- **Punteggio ottenibile** : Mostra il punteggio che è possibile ottenere con le licenze Microsoft e l'accettazione del rischio corrente
 
 Questa visualizzazione è l'aspetto che avrà se sono state incluse tutte le visualizzazioni possibili del Punteggio:
 

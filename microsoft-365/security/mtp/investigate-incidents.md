@@ -1,5 +1,5 @@
 ---
-title: Analisi degli incidenti in Microsoft Threat Protection
+title: Esaminare gli incidenti in Microsoft 365 Defender
 description: Analizzare gli incidenti relativi a dispositivi, utenti e cassette postali.
 keywords: incidente, incidenti, computer, dispositivi, utenti, identificare, posta, posta elettronica, cassetta postale, indagine, grafico, prova
 search.product: eADQiWindows 10XVcnh
@@ -21,33 +21,33 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 7a4e901c016d55115eb79001ff2fc42d2340f8f2
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: a6cdf55b33c91a33675bb4909c0cb08e8561d212
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48430598"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48846749"
 ---
-# <a name="investigate-incidents-in-microsoft-threat-protection"></a>Analisi degli incidenti in Microsoft Threat Protection
+# <a name="investigate-incidents-in-microsoft-365-defender"></a>Esaminare gli incidenti in Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
 **Si applica a:**
 
-- Microsoft Threat Protection
+- Microsoft 365 Defender
 
-Microsoft Threat Protection aggrega tutti gli avvisi, le risorse, le indagini e le prove relativi a dispositivi, utenti e cassette postali per avere un quadro generale della portata dell'attacco.
+Microsoft 365 Defender aggrega tutti gli avvisi, le risorse, le indagini e le evidenze correlate da tutti i dispositivi, gli utenti e le cassette postali per fornire una panoramica completa dell'intera gamma di un attacco.
 
 Analizzare gli avvisi che riguardano la rete, comprenderne il significato e raccogliere le prove associate agli incidenti consente di poter elaborare un piano di correzione efficace.
 
 ## <a name="investigate-an-incident"></a>Analizzare un incidente
 
-1. Selezionare un incidente dalla relativa coda. <BR> Così facendo si apre un pannello laterale che fornisce un'anteprima delle informazioni importanti come stato, gravità, categorie ed entità interessate.
+1. Selezionare un incidente dalla relativa coda. <BR> Viene visualizzata una finestra laterale che fornisce un'anteprima di informazioni importanti quali stato, gravità, categorie e entità interessate.
 
     ![Immagine del riquadro laterale dell'incidente](../../media/incident-side-panel.png)
 
-2. Selezionare **Apri pagina dell'incidente**. <BR> L'azione apre la pagina dell'incidente in cui è possibile trovare maggiori informazioni relative all'incidente come dettagli, commenti, azioni e schede (panoramica, avvisi, dispositivi, utenti, indagini, prove).
+2. Selezionare **Apri pagina dell'incidente**. <BR> Verrà aperta la pagina degli incidenti in cui sono disponibili ulteriori informazioni sugli incidenti, i commenti e le azioni, le schede (panoramica, avvisi, dispositivi, utenti, indagini, prove).
 
 3. Esaminare gli avvisi, i dispositivi, gli utenti e altre entità coinvolte nell'incidente.
 
@@ -57,7 +57,7 @@ La pagina di panoramica offre un quadro generale sugli elementi principali relat
 
 ![Immagine della pagina di panoramica degli incidenti](../../media/incidents-overview.png)
 
-Le categorie di attacco consentono di visualizzare in termini numerici il livello di avanzamento dell'attacco rispetto alla kill chain. Come per altri prodotti di sicurezza Microsoft, Microsoft Threat Protection è conforme al framework [MITRE ATT&CK&trade;](https://attack.mitre.org/).
+Le categorie di attacco forniscono una visualizzazione visiva e numerica di come è progredito l'attacco avanzato rispetto alla catena di Kill. Come per altri prodotti Microsoft per la sicurezza, Microsoft 365 Defender è allineato al quadro di taglio [&CK &trade; ](https://attack.mitre.org/) .
 
 La sezione relativa all'ambito fornisce un elenco delle principali risorse interessate che fanno parte di questo incidente. Se sono presenti informazioni specifiche su una determinata risorsa (ad esempio, il livello di rischio, la priorità dell'indagine e i contrassegni sulle attività) saranno disponibili in questa sezione.
 
@@ -69,11 +69,11 @@ Questa panoramica può essere utile nella valutazione iniziale dell'incidente fo
 
 ## <a name="alerts"></a>Avvisi
 
-È possibile visualizzare tutti gli avvisi relativi all'incidente e altre informazioni correlate come gravità, entità che sono state coinvolte nell'avviso, origine degli avvisi (Azure ATP, Microsoft Defender ATP, Office 365 ATP) e il motivo per cui sono stati collegati.
+È possibile visualizzare tutti gli avvisi relativi all'incidente e altre informazioni su di esse, ad esempio la gravità, le entità che sono state coinvolte nell'avviso, l'origine degli avvisi (Microsoft Defender for Identity, Microsoft Defender for endpoint, Microsoft Defender per Office 365) e il motivo per cui sono stati collegati tra loro.
 
 ![Immagine della pagina degli avvisi dell'incidente](../../media/incident-alerts.png)
 
-Per impostazione predefinita, gli avvisi sono ordinati cronologicamente, per consentire di visualizzare prima come si è svolto l'attacco nel tempo. Facendo clic su ciascun avviso, si accederà alla relativa pagina di avviso in cui è possibile condurre un'indagine approfondita di tale avviso.
+Per impostazione predefinita, gli avvisi sono ordinati cronologicamente, per consentire di visualizzare prima come si è svolto l'attacco nel tempo. Se si fa clic su ogni avviso, viene configurata la pagina di avviso pertinente, in cui è possibile eseguire un'analisi approfondita di tale avviso.
 
 ## <a name="devices"></a>Dispositivi
 
@@ -95,21 +95,21 @@ Facendo clic sul nome utente si accede alla pagina di Cloud App Security dell'ut
 
 ## <a name="mailboxes"></a>Cassette postali
 
-Analizzare tutte le cassette postali che sono state identificate come parte di un relativo incidente, oppure relative a esso. Per svolgere ulteriori indagini, selezionando l'avviso relativo alla posta elettronica si aprirà Office 365 Advanced Threat Protection in cui è possibile intraprendere azioni correttive.
+Analizzare tutte le cassette postali che sono state identificate come parte di un relativo incidente, oppure relative a esso. Per ulteriori operazioni di indagine, la selezione dell'avviso relativo alla posta elettronica aprirà Microsoft Defender per Office 365, dove è possibile eseguire operazioni di correzione.
 
 ![Immagine della scheda delle cassette postali di un incidente](../../media/incident-mailboxes.png)
 
 ## <a name="investigations"></a>Indagini
 
-Selezionare **indagini** per visualizzare tutte le indagini automatizzate attivate dagli avvisi in questo incidente. Le indagini eseguiranno azioni correttive o attenderanno l'approvazione delle azioni da parte dell'analista, a seconda di come sono state configurate le indagini automatizzate per l'esecuzione in Microsoft Defender ATP e Office 365 Advanced Threat Protection.
+Selezionare **indagini** per visualizzare tutte le indagini automatizzate attivate dagli avvisi in questo incidente. Le indagini eseguono azioni di correzione o attendono l'approvazione dell'analista delle azioni, a seconda di come sono state configurate le indagini automatizzate per l'esecuzione in Microsoft Defender per endpoint e Defender per Office 365.
 
 ![Immagine della scheda delle indagini di un incidente](../../media/incident-investigations.png)
 
-Selezionare un'indagine per accedere alla pagina dei dettagli dell'indagine per ottenere informazioni complete sull'indagine e sullo stato della correzione. Se sono presenti azioni in attesa di approvazione come parte dell'indagine, verranno visualizzate nella scheda Azioni in sospeso. È necessario quindi agire come parte della correzione dell'incidente.
+Selezionare un'indagine per accedere alla pagina dei dettagli dell'indagine per ottenere informazioni complete sull'indagine e sullo stato della correzione. Se nell'ambito dell'inchiesta sono presenti azioni in sospeso per l'approvazione, queste verranno visualizzate nella scheda azioni in sospeso. Eseguire un'azione nell'ambito della correzione degli incidenti.
 
 ## <a name="evidence"></a>Prove
 
-Microsoft Threat Protection esamina automaticamente tutti gli eventi supportati dagli incidenti e le entità sospette negli avvisi, fornendo risposte automatiche e informazioni su importanti file, processi, servizi, messaggi di posta elettronica e altro ancora. Ciò consente di rilevare e bloccare rapidamente le potenziali minacce nell'incidente.
+Microsoft 365 Defender analizza automaticamente tutti gli eventi e le entità sospette degli incidenti supportati negli avvisi, fornendo risposta automatica e informazioni sui file importanti, i processi, i servizi, i messaggi di posta elettronica e altro ancora. Ciò consente di rilevare e bloccare rapidamente le potenziali minacce nell'incidente.
 
 ![Immagine della scheda delle prove di un incidente](../../media/incident-evidence.png)
 

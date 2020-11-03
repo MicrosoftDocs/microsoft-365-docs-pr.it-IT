@@ -1,5 +1,5 @@
 ---
-title: Gestire gli errori nella ricerca avanzata per la protezione dalle minacce di Microsoft
+title: Gestire gli errori nella ricerca avanzata per Microsoft 365 Defender
 description: Comprendere gli errori visualizzati quando si utilizza la ricerca avanzata
 keywords: caccia avanzata, caccia alle minacce, Cyber Threat Hunting, Microsoft Threat Protection, Microsoft 365, MTP, M365, Search, query, telemetria, schema, kusto, timeout, risorse, errori, errore sconosciuto, limiti, quota, parametro, allocazione
 search.product: eADQiWindows 10XVcnh
@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 8b9c46e312d28c7a08efbfa74f96dc33b90fee0a
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: a5379db66034ecfe537f7d9effdd83f6c41bfd58
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48636894"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48846893"
 ---
 # <a name="handle-advanced-hunting-errors"></a>Gestire gli errori di ricerca avanzata
 

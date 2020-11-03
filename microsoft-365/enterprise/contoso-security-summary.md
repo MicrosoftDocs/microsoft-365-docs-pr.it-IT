@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Come Contoso utilizza le funzionalità di sicurezza di Microsoft 365 per Enterprise.
-ms.openlocfilehash: d84b1423497a6a4358142902c4e159cc54b3500b
-ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
+ms.openlocfilehash: 8d62dba96ecf19f0dc31af2cf5a2d85257ca19d5
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "48754233"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48847107"
 ---
 # <a name="summary-of-microsoft-365-for-enterprise-security-for-the-contoso-corporation"></a>Riepilogo di Microsoft 365 per la sicurezza aziendale per Contoso Corporation
 
@@ -89,9 +89,9 @@ Per seguire le procedure consigliate per la sicurezza e Microsoft 365 per i requ
 
   Contoso usa [Windows Defender Antivirus](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10) per la protezione da malware e la gestione antimalware per computer e dispositivi che eseguono Windows 10 Enterprise.
 
-- Protezione del flusso della posta elettronica e log di controllo della cassetta postale con Office 365 Advanced Threat Protection 
+- Protezione del flusso di posta elettronica e registrazione di controllo delle cassette postali con Microsoft Defender per Office 365 
 
-  Contoso utilizza Exchange Online Protection e [Office 365 Advanced Threat Protection (ATP)](https://docs.microsoft.com/office365/securitycompliance/office-365-atp) per offrire protezione da malware, virus e URL pericolosi trasmessi tramite e-mail.
+  Contoso utilizza Exchange Online Protection e [Defender per Office 365](https://docs.microsoft.com/office365/securitycompliance/office-365-atp) per proteggersi da malware, virus e URL dannosi sconosciuti trasmessi tramite posta elettronica.
 
   Contoso ha inoltre abilitato la registrazione di controllo delle cassette postali per identificare gli utenti che accedono alle cassette postali utente, invia messaggi ed esegue altre attività eseguite dal proprietario della cassetta postale, da un utente delegato o da un amministratore.
 
@@ -127,9 +127,9 @@ Per seguire le procedure consigliate per la sicurezza e Microsoft 365 per i requ
 
 ## <a name="security-management"></a>Gestione della sicurezza
 
-- Dashboard della sicurezza centrale per IT con il Centro sicurezza di Azure
+- Dashboard di protezione centrale per l'IT con Azure Defender *
 
-  Contoso utilizza il [Centro sicurezza di Azure](https://azure.microsoft.com/services/security-center/) per presentare una visualizzazione unificata di sicurezza e protezione dalle minacce, per gestire i criteri di sicurezza tra i carichi di lavoro e rispondere a attacchi cibernetici.
+  Contoso utilizza l' [Azure Defender *](https://azure.microsoft.com/services/security-center/) per presentare una visualizzazione unificata della sicurezza e della protezione dalle minacce, per gestire i criteri di sicurezza tra i carichi di lavoro e rispondere a attacchi cibernetici.
 
 - Dashboard della sicurezza centrale per gli utenti con Windows Defender Security Center
 

@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: L'aggiunta di nuove nuove soluzioni al centro conformità, l'aggiornamento delle funzionalità esistenti in base ai commenti o la documentazione aggiornata e rinnovata, Microsoft 365 consente di rimanere al di sopra del panorama di conformità in continua evoluzione. Scoprire cosa è stato fino a questo mese.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: b124e4c4d120d981766493034aba9bc6eefa7d9c
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: 1ebe91e94b286e7d9a1b46b7fd7abf625881a6a9
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48446559"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48847802"
 ---
 # <a name="whats-new-in-microsoft-365-compliance"></a>Novità sulla conformità Microsoft 365
 
@@ -34,7 +34,7 @@ L'aggiunta di nuove soluzioni al [centro conformità di Microsoft 365](microsoft
 
 
 > [!TIP]
-> Interessato a cosa succede in altri centri di amministrazione? Consultare questi articoli:<br>[Novità dell'interfaccia di amministrazione di Microsoft 365](https://docs.microsoft.com/office365/admin/whats-new-in-preview?view=o365-worldwide)<br>[Novità dell'interfaccia di amministrazione di SharePoint](https://docs.microsoft.com/sharepoint/what-s-new-in-admin-center)<br>[Novità di Microsoft Threat Protection](https://docs.microsoft.com/microsoft-365/security/mtp/whats-new)<br><br>
+> Interessato a cosa succede in altri centri di amministrazione? Consultare questi articoli:<br>[Novità dell'interfaccia di amministrazione di Microsoft 365](https://docs.microsoft.com/office365/admin/whats-new-in-preview?view=o365-worldwide)<br>[Novità dell'interfaccia di amministrazione di SharePoint](https://docs.microsoft.com/sharepoint/what-s-new-in-admin-center)<br>[Novità di Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/mtp/whats-new)<br><br>
 Per informazioni sulle funzionalità di Microsoft 365 che sono state avviate, sono in sviluppo, sono state annullate o sono state rilasciate in precedenza. [365](https://www.microsoft.com/en-us/microsoft-365/roadmap)
 
 ## <a name="august-2020"></a>Agosto 2020
@@ -53,10 +53,10 @@ Numerose funzionalità nuove e migliorate hanno colpito l'anteprima pubblica di 
     - Violazioni dei criteri di sicurezza per gli utenti con priorità
     - Violazioni dei criteri di sicurezza da parte di utenti scontenti
 
-- L'integrazione con [Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) consente di importare e filtrare gli avvisi del trifosfato di adenosina di Microsoft Defender per le attività rilevate dai criteri creati dai nuovi modelli di criteri di violazione della sicurezza. È inoltre disponibile un'impostazione relativa ai [rischi Insider](insider-risk-management-settings.md#microsoft-defender-advanced-threat-protection-preview) in cui è possibile scegliere di importare avvisi di sicurezza per la gestione dei rischi insider in base allo stato di valutazione dell'avviso ATP Microsoft Defender.
+- L'integrazione con [Microsoft Defender per endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) consente di importare e filtrare Microsoft Defender per gli avvisi endpoint per le attività rilevate dai criteri creati dai nuovi modelli di criteri di violazione della sicurezza. È inoltre disponibile un'impostazione relativa ai [rischi Insider](insider-risk-management-settings.md#microsoft-defender-for-endpoint-preview) in cui è possibile scegliere di importare avvisi di sicurezza per la gestione dei rischi insider in base allo stato di valutazione degli avvisi di Microsoft Defender per endpoint.
 
     > [!NOTE]
-    > Per sfruttare l'integrazione di Microsoft Defender ATP (inclusi i nuovi modelli di violazione dei criteri di sicurezza), è necessario che Microsoft Defender ATP sia configurato nell'organizzazione. È inoltre necessario abilitare Microsoft Defender ATP per l'integrazione di gestione dei rischi Insider [configurando funzionalità avanzate in Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-features#share-endpoint-alerts-with-microsoft-compliance-center).
+    > Per usufruire di Microsoft Defender per l'integrazione di endpoint (inclusi i nuovi modelli di violazione dei criteri di sicurezza), è necessario che Microsoft Defender per endpoint sia configurato nell'organizzazione. È inoltre necessario abilitare Microsoft Defender per endpoint per l'integrazione di gestione dei rischi Insider [configurando funzionalità avanzate in Microsoft Defender for endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-features#share-endpoint-alerts-with-microsoft-compliance-center).
  
 - Personalizzare le soglie degli indicatori quando si [Crea un criterio](insider-risk-management-policies.md#create-a-new-policy).
 - Impostare i [gruppi](insider-risk-management-settings.md#priority-user-groups-preview) di utenti prioritari per definire gli utenti dell'organizzazione la cui attività richiede un controllo più approfondito in base a fattori quali la posizione, il livello di accesso alle informazioni riservate o la cronologia dei rischi.
@@ -366,7 +366,7 @@ Si sta chiedendo perché è tranquillo sul fronte del rilascio di questo mese? S
 ### <a name="new-encryption-options-for-sensitivity-labels"></a>Nuove opzioni di crittografia per le etichette di riservatezza 
 
 Quando si configura la crittografia per un'etichetta di riservatezza, sono ora disponibili due opzioni che consentono agli utenti di assegnare le autorizzazioni quando applicano manualmente l'etichetta alla posta elettronica e ai documenti:<br>
-- Quando si applica l'etichetta al **messaggio di posta elettronica di Outlook**, gli utenti possono applicare restrizioni equivalenti all'opzione non inoltrare. I destinatari saranno in grado di leggere il messaggio, ma non di inoltrarlo, stamparlo o copiarlo.
-- Quando si applica l'etichetta ai **file Word, PowerPoint ed Excel**, agli utenti verrà richiesto di assegnare le autorizzazioni di accesso a utenti e gruppi specifici.
+- Quando si applica l'etichetta al **messaggio di posta elettronica di Outlook** , gli utenti possono applicare restrizioni equivalenti all'opzione non inoltrare. I destinatari saranno in grado di leggere il messaggio, ma non di inoltrarlo, stamparlo o copiarlo.
+- Quando si applica l'etichetta ai **file Word, PowerPoint ed Excel** , agli utenti verrà richiesto di assegnare le autorizzazioni di accesso a utenti e gruppi specifici.
 
 Andare a [limitare l'accesso al contenuto utilizzando le etichette di riservatezza per applicare la crittografia](encryption-sensitivity-labels.md#let-users-assign-permissions) per ulteriori informazioni.

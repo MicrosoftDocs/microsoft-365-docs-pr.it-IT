@@ -19,12 +19,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 'Riepilogo: Informazioni sulla migrazione da Microsoft Cloud Germania (Microsoft Cloud Deutschland) ai servizi di Office 365 nella nuova area data center tedesca.'
-ms.openlocfilehash: a77dc43c4c30992d2e50aad94878f9269573db52
-ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
+ms.openlocfilehash: 23ccc30bab5d1045e4716cd637899e20362fc597
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48327118"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48846941"
 ---
 # <a name="migration-from-microsoft-cloud-deutschland-to-office-365-services-in-the-new-german-datacenter-regions"></a>Migrazione da Microsoft Cloud Deutschland a Office 365 Services nelle nuove aree del datacenter tedesco
 
@@ -133,7 +133,7 @@ I seguenti 15 servizi sono disponibili nell'offerta cloud di cloud Deutschland M
 3. Gruppi (gruppi moderni)
 4. Profilo di Delve
 5. Exchange Online Protection
-6. Advanced Threat Protection (ATP)
+6. Defender per Office 365
 7. Advanced eDiscovery
 8. Advanced Data Governance
 9. SharePoint Online
@@ -153,7 +153,7 @@ Attualmente sono disponibili 29 servizi nell'ambito dell'offerta di Office 365 n
 5. MyAnalytics
 6. Workplace Analytics
 7. Exchange Online Protection
-8. Advanced Threat Protection (ATP)
+8. Defender per Office 365
 9. Advanced eDiscovery
 10. Advanced Security Management
 11. Information Rights Management
@@ -221,7 +221,7 @@ Durante la migrazione da Microsoft Cloud Deutschland ai servizi di Office 365, l
 | Office 365 a1 per i docenti \_ de (STANDARDWOFFPACK \_ facoltà \_ de) | Office 365 a1 per i docenti (facoltà di STANDARDWOFFPACK \_ ) |
 | Office 365 a1 per studenti \_ de (STANDARDWOFFPACK \_ Student \_ de) | Office 365 a1 per gli studenti ( \_ allievo di STANDARDWOFFPACK) |
 | Office 365 Advanced Compliance \_ de (EQUIVIO \_ Analytics \_ de) | Conformità Microsoft 365 E5 (conformità di protezione delle informazioni \_ \_ ) |
-| Office 365 Advanced Threat Protection (piano 1) \_ de (ATP \_ Enterprise \_ de) | Office 365 Advanced Threat Protection (piano 1) (ATP \_ Enterprise) |
+|Microsoft Defender per Office 365 (piano 1) \_ de (ATP \_ Enterprise \_ de) |Microsoft Defender per Office 365 (piano 1) (ATP \_ Enterprise) |
 | Office 365 Business Essentials \_ de (O365 \_ business \_ Essentials \_ de) | Microsoft 365 Business Basic (O365 \_ business \_ Essentials) |
 | Office 365 Business Premium \_ de (O365 \_ business \_ Premium \_ de) | Microsoft 365 business standard (O365 \_ business \_ Premium) |
 | Office 365 business \_ de (O365 \_ business \_ de) | Microsoft 365 Apps for business (O365 \_ Business) |

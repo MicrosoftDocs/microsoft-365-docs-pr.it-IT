@@ -14,12 +14,12 @@ ms.custom:
 - it-pro
 ms.collection:
 - M365-subscription-management
-ms.openlocfilehash: 06a82fda31e602ed2feb53d00e8839daf801bf7e
-ms.sourcegitcommit: 1423e08a02d30f0a2b993fb99325c3f499c31787
+ms.openlocfilehash: a9f983cebfbed1482fca7e44b77c200cbd9574ac
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "48277495"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48847119"
 ---
 # <a name="cross-tenant-mailbox-migration-preview"></a>Migrazione delle cassette postali tra tenant (anteprima)
 
@@ -533,7 +533,7 @@ NT AUTHORITY\SELF                                {FullAccess, ReadPermission}   
 
 - **Problema: cloud MailUsers with non-owned SMTP proxyAddress Block MRS Moves background.** Quando si creano oggetti di MailUser tenant di destinazione, è necessario assicurarsi che tutti gli indirizzi proxy SMTP appartengano all'organizzazione tenant di destinazione. Se un proxyAddress SMTP esiste sull'utente di posta elettronica di destinazione che non appartiene al tenant locale, la conversione di MailUser in cassetta postale è impedita. Ciò è dovuto alla nostra certezza che gli oggetti cassetta postale possono solo inviare messaggi di posta elettronica da domini per i quali il tenant è autorevole (domini rivendicati dal tenant): 
 - 
-   - Quando si sincronizzano gli utenti da un ambiente locale con Azure AD Connect, è possibile eseguire il provisioning di oggetti MailUser locali con ExternalEmailAddress che punta al tenant di origine in cui si trova la cassetta postale (laran@contoso \. onmicrosoft.com) e si timbra la PrimarySmtpAddress come un dominio che risiede nel tenant di destinazione (Lara. Newton@northwind \. com). Questi valori vengono sincronizzati con il tenant e viene eseguito il provisioning di un utente di posta elettronica appropriato e pronto per la migrazione. Di seguito è riportato un oggetto di esempio.
+   - Quando si sincronizzano gli utenti da un ambiente locale con Azure AD Connect, è possibile eseguire il provisioning di oggetti MailUser locali con ExternalEmailAddress che punta al tenant di origine in cui esiste la cassetta postale (laran@contoso \. onmicrosoft.com) e si timbra PrimarySmtpAddress come un dominio che risiede nel tenant di destinazione (Lara.Newton@northwind \. com). Questi valori vengono sincronizzati con il tenant e viene eseguito il provisioning di un utente di posta elettronica appropriato e pronto per la migrazione. Di seguito è riportato un oggetto di esempio.
      ```powershell
      target/AADSynced user] PS C> Get-MailUser laran | select ExternalEmailAddress, EmailAddresses   
      ExternalEmailAddress               EmailAddresses 
@@ -644,8 +644,8 @@ NT AUTHORITY\SELF                                {FullAccess, ReadPermission}   
    | Microsoft Business Center                         |
    | Microsoft analisi (completa)                      |
    | Office 365 Advanced eDiscovery                    |
-   | Protezione avanzata dalle minacce di Office 365 (piano 1)    |
-   | Protezione avanzata dalle minacce di Office 365 (piano 2)    |
+   | Microsoft Defender per Office 365 (piano 1)    |
+   | Microsoft Defender per Office 365 (piano 2)    |
    | Gestione degli accessi con privilegi di Office 365           |
    | Outlook Customer Manager                          |
    | Crittografia avanzata in Office 365                  |

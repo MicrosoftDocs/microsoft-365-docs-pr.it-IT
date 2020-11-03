@@ -17,12 +17,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Come implementare lo split tunneling per VPN per Office 365
-ms.openlocfilehash: ff79138d44c98d76af1a3d9c374159b0fae4c7ed
-ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
+ms.openlocfilehash: 4a7c2a18ae5d4f275210ddeaea90eb1bb9bc1f16
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "48295275"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48846989"
 ---
 # <a name="implementing-vpn-split-tunneling-for-office-365"></a>Implementazione dello split tunneling per VPN per Office 365
 
@@ -33,7 +33,7 @@ ms.locfileid: "48295275"
 
 Da molti anni le aziende usano reti VPN per supportare esperienze remote per gli utenti. Sebbene i carichi di lavoro principali siano gestiti in locale, la rete VPN da client remoto instradata attraverso data center della rete aziendale era il metodo principale per consentire agli utenti remoti di accedere alle risorse aziendali. Per proteggere queste connessioni, le aziende creano livelli di soluzioni di sicurezza per la rete lungo percorsi VPN. Tale soluzione permette di proteggere le infrastrutture interne e di salvaguardare la navigazione mobile di siti Web esterni reinstradando il traffico verso la VPN, quindi indirizzandolo all'esterno del perimetro Internet locale. Le connessioni VPN, i perimetri di rete e l'infrastruttura di protezione associata sono stati spesso creati e ridimensionati per un volume di traffico definito, in genere con la maggior parte della connettività avviata dall'interno della rete aziendale e la maggior parte dei limiti relativi alla rete interna.
 
-Per un certo periodo di tempo, i modelli di VPN in cui tutte le connessioni dal dispositivo dell'utente remoto sono inoltrate nuovamente alla rete locale (fenomeno noto come **tunnelling forzato**) erano ampiamente sostenibili fintanto che il numero di utenti remoti simultanei era contenuto e i volumi di traffico che attraversavano la VPN erano bassi.  Alcuni clienti hanno continuato a usare l'imposizione del tunneling VPN come status quo, anche dopo lo spostamento delle applicazioni aziendali dall'interno del perimetro aziendale al cloud SaaS pubblico, di cui Office 365 è un esempio.
+Per un certo periodo di tempo, i modelli di VPN in cui tutte le connessioni dal dispositivo dell'utente remoto sono inoltrate nuovamente alla rete locale (fenomeno noto come **tunnelling forzato** ) erano ampiamente sostenibili fintanto che il numero di utenti remoti simultanei era contenuto e i volumi di traffico che attraversavano la VPN erano bassi.  Alcuni clienti hanno continuato a usare l'imposizione del tunneling VPN come status quo, anche dopo lo spostamento delle applicazioni aziendali dall'interno del perimetro aziendale al cloud SaaS pubblico, di cui Office 365 è un esempio.
 
 L'uso di VPN con tunnel forzato per la connessione ad applicazioni cloud distribuite e sensibili alle prestazioni non è particolarmente ottimale, tuttavia tale aspetto negativo è stato accettato da alcune aziende per mantenere lo status quo dal punto di vista della sicurezza. Di seguito è illustrato un diagramma di esempio di questo scenario:
 
@@ -49,7 +49,7 @@ La strategia raccomandata da Microsoft per l'ottimizzazione della connettività 
 
 ## <a name="common-vpn-scenarios"></a>Scenari VPN comuni
 
-Nell'elenco riportato di seguito sono elencati gli scenari VPN più comuni verificatisi in ambiente aziendale. La maggior parte dei clienti gestisce tradizionalmente il modello 1 (tunnel forzato VPN). In questa sezione viene illustrato come eseguire una transizione rapida e sicura al **modello 2**, raggiungibile con relativamente poco sforzo e con enormi vantaggi per le prestazioni di rete e l'esperienza utente.
+Nell'elenco riportato di seguito sono elencati gli scenari VPN più comuni verificatisi in ambiente aziendale. La maggior parte dei clienti gestisce tradizionalmente il modello 1 (tunnel forzato VPN). In questa sezione viene illustrato come eseguire una transizione rapida e sicura al **modello 2** , raggiungibile con relativamente poco sforzo e con enormi vantaggi per le prestazioni di rete e l'esperienza utente.
 
 | **Modello** | **Descrizione** |
 | --- | --- |
@@ -91,7 +91,7 @@ Versione più avanzata del modello numero 2, in base alla quale tutti i servizi 
 
 ## <a name="implement-vpn-split-tunneling"></a>Implementare lo split tunneling per VPN
 
-In questa sezione è disponibile la semplice procedura per eseguire la migrazione dell'architettura client VPN da _Tunnel forzato VPN_ a _Tunnel forzato VPN con numero limitato di eccezioni attendibili_, [Split tunneling per VPN, modello 2](#2-vpn-forced-tunnel-with-a-small-number-of-trusted-exceptions) della sezione [Scenari VPN comuni](#common-vpn-scenarios).
+In questa sezione è disponibile la semplice procedura per eseguire la migrazione dell'architettura client VPN da _Tunnel forzato VPN_ a _Tunnel forzato VPN con numero limitato di eccezioni attendibili_ , [Split tunneling per VPN, modello 2](#2-vpn-forced-tunnel-with-a-small-number-of-trusted-exceptions) della sezione [Scenari VPN comuni](#common-vpn-scenarios).
 
 Il diagramma seguente illustra come funziona la soluzione split tunneling per VPN consigliata:
 
@@ -128,7 +128,7 @@ Negli esempi riportati sopra, sostituire il **tenant** con il nome del tenant di
 
 #### <a name="optimize-ip-address-ranges"></a>Intervalli di indirizzi IP Optimize
 
-Al momento della scrittura degli intervalli IP a cui corrispondono tali endpoint sono riportati di seguito. Si consiglia **vivamente** di usare uno [script come in questo](https://github.com/microsoft/Office365NetworkTools/tree/master/Scripts/Display%20URL-IPs-Ports%20per%20Category) esempio, l'[IP di Office 365 e il servizio Web dell'URL](microsoft-365-ip-web-service.md) o l'[URL/la pagina IP](urls-and-ip-address-ranges.md) per controllare la disponibilità di aggiornamenti durante l'applicazione della configurazione e di applicare un criterio per questa operazione su base regolare.
+Al momento della scrittura degli intervalli IP a cui corrispondono tali endpoint sono riportati di seguito. Si consiglia **vivamente** di usare uno [script come in questo](https://github.com/microsoft/Office365NetworkTools/tree/master/Scripts/Display%20URL-IPs-Ports%20per%20Category) esempio, l' [IP di Office 365 e il servizio Web dell'URL](microsoft-365-ip-web-service.md) o l' [URL/la pagina IP](urls-and-ip-address-ranges.md) per controllare la disponibilità di aggiornamenti durante l'applicazione della configurazione e di applicare un criterio per questa operazione su base regolare.
 
 ```
 104.146.128.0/17
@@ -169,13 +169,13 @@ $destPrefix = "52.120.0.0/14", "52.112.0.0/14", "13.107.64.0/18" # Teams Media e
 foreach ($prefix in $destPrefix) {New-NetRoute -DestinationPrefix $prefix -InterfaceIndex $intIndex -NextHop $gateway}
 ```
 
-Nello script in alto, _$intIndex_ è l'indice dell'interfaccia connessa a Internet (che è possibile individuare eseguendo **get-netadapter** in PowerShell; cercare il valore di _ifIndex_) e _$gateway_ è il gateway predefinito di tale interfaccia (che è possibile individuare eseguendo **ipconfig** a un prompt dei comandi o **(Get-NetIPConfiguration | Foreach IPv4DefaultGateway).NextHop** in PowerShell).
+Nello script in alto, _$intIndex_ è l'indice dell'interfaccia connessa a Internet (che è possibile individuare eseguendo **get-netadapter** in PowerShell; cercare il valore di _ifIndex_ ) e _$gateway_ è il gateway predefinito di tale interfaccia (che è possibile individuare eseguendo **ipconfig** a un prompt dei comandi o **(Get-NetIPConfiguration | Foreach IPv4DefaultGateway).NextHop** in PowerShell).
 
-Una volta aggiunte le route, è possibile confermare che la tabella di route è corretta, eseguendo **Route Print ** a un prompt dei comandi o PowerShell. L'output deve contenere i percorsi aggiunti, con l'indice dell'interfaccia (_22_ nell'esempio riportato) e il gateway per quell'interfaccia (_192.168.1.1_ nell'esempio riportato):
+Una volta aggiunte le route, è possibile confermare che la tabella di route è corretta, eseguendo **Route Print** a un prompt dei comandi o PowerShell. L'output deve contenere i percorsi aggiunti, con l'indice dell'interfaccia ( _22_ nell'esempio riportato) e il gateway per quell'interfaccia ( _192.168.1.1_ nell'esempio riportato):
 
 ![Output di Route Print](../media/vpn-split-tunneling/vpn-route-print.png)
 
-Per aggiungere route a **tutti** gli intervalli di indirizzi IP correnti nella categoria Optimize, è possibile usare la seguente variante di script per interrogare l'[IP di Office 365 e il servizio Web dell'URL](microsoft-365-ip-web-service.md) per il set corrente delle subnet IP Optimize e aggiungerle alla tabella di route.
+Per aggiungere route a **tutti** gli intervalli di indirizzi IP correnti nella categoria Optimize, è possibile usare la seguente variante di script per interrogare l' [IP di Office 365 e il servizio Web dell'URL](microsoft-365-ip-web-service.md) per il set corrente delle subnet IP Optimize e aggiungerle alla tabella di route.
 
 #### <a name="example-add-all-optimize-subnets-into-the-route-table"></a>Esempio - Come aggiungere tutte le subnet Optimize nella tabella di route
 
@@ -232,7 +232,7 @@ Il traffico di segnalazione viene eseguito su HTTPS e non è sensibile alla late
 
 Un valido motivo per evitare split tunnel è l'inferiore livello di sicurezza. Ad esempio tutto il traffico che non attraversa tunnel VPN non trarrà vantaggi dallo schema di crittografia applicato al tunnel VPN, pertanto sarà meno sicuro.
 
-D'altra parte il traffico multimediale è già crittografato tramite il _protocollo di controllo per RTP sicuro (SRTP)_, un profilo RTP che garantisce riservatezza, autenticazione e la protezione da attacchi replay al traffico RTP. SRTP si basa su una chiave della sessione generata casualmente, che viene scambiata tramite il canale di segnalazione sicuro TLS. L'argomento è ampiamente trattato in questa [guida sulla sicurezza](https://docs.microsoft.com/skypeforbusiness/optimizing-your-network/security-guide-for-skype-for-business-online), tuttavia la sezione di maggiore interesse è la crittografia multimediale.
+D'altra parte il traffico multimediale è già crittografato tramite il _protocollo di controllo per RTP sicuro (SRTP)_ , un profilo RTP che garantisce riservatezza, autenticazione e la protezione da attacchi replay al traffico RTP. SRTP si basa su una chiave della sessione generata casualmente, che viene scambiata tramite il canale di segnalazione sicuro TLS. L'argomento è ampiamente trattato in questa [guida sulla sicurezza](https://docs.microsoft.com/skypeforbusiness/optimizing-your-network/security-guide-for-skype-for-business-online), tuttavia la sezione di maggiore interesse è la crittografia multimediale.
 
 Il traffico multimediale viene crittografato con SRTP, che usa una chiave della sessione generata da un generatore di numeri casuale e scambiata tramite il canale di segnalazione TLS. Inoltre, il flusso multimediale in entrambe le direzioni tra Mediation Server e il successivo hop interno è anche crittografato tramite SRTP.
 
@@ -266,13 +266,13 @@ Se servono altre informazioni per la risoluzione dei problemi o per richiede l'a
 
 Questa sezione contiene collegamenti a guide dettagliate per l'implementazione dello split tunneling per il traffico di Office 365 dai partner più comuni in questo spazio. Ulteriori guide verranno aggiunte non appena rese disponibili.
 
-- **Client VPN per Windows 10**: [ottimizzazione del traffico di Office 365 per i lavoratori remoti con il client VPN di Windows 10 nativo](https://docs.microsoft.com/windows/security/identity-protection/vpn/vpn-office-365-optimization)
-- **Cisco Anyconnect**: [Optimize Anyconnect Split Tunnel per Office365](https://www.cisco.com/c/en/us/support/docs/security/anyconnect-secure-mobility-client/215343-optimize-anyconnect-split-tunnel-for-off.html)
-- **Palo Alto GlobalProtect**: [Optimizing Office 365 Traffic via VPN Split Tunnel Exclude Access Route](https://live.paloaltonetworks.com/t5/Prisma-Access-Articles/GlobalProtect-Optimizing-Office-365-Traffic/ta-p/319669)
-- **F5 Networks BIG-IP APM**: [Optimizing Office 365 traffic on Remote Access through VPNs when using BIG-IP APM](https://devcentral.f5.com/s/articles/SSL-VPN-Split-Tunneling-and-Office-365)
-- **Gateway Citrix**: [ottimizzare lo split tunneling per VPN del gateway Citrix per Office365](https://docs.citrix.com/en-us/citrix-gateway/13/optimizing-citrix-gateway-vpn-split-tunnel-for-office365.html)
-- **Pulse Secure**: [Tunneling VPN: come configurare lo split tunneling in modo da escludere le applicazioni Office365](https://kb.pulsesecure.net/articles/Pulse_Secure_Article/KB44417)
-- **Check Point VPN**: [come configurare il tunnel suddiviso per Office 365 e altre applicazioni SaaS](https://supportcenter.checkpoint.com/supportcenter/portal?eventSubmit_doGoviewsolutiondetails=&solutionid=sk167000)
+- **Client VPN per Windows 10** : [ottimizzazione del traffico di Office 365 per i lavoratori remoti con il client VPN di Windows 10 nativo](https://docs.microsoft.com/windows/security/identity-protection/vpn/vpn-office-365-optimization)
+- **Cisco Anyconnect** : [Optimize Anyconnect Split Tunnel per Office365](https://www.cisco.com/c/en/us/support/docs/security/anyconnect-secure-mobility-client/215343-optimize-anyconnect-split-tunnel-for-off.html)
+- **Palo Alto GlobalProtect** : [Optimizing Office 365 Traffic via VPN Split Tunnel Exclude Access Route](https://live.paloaltonetworks.com/t5/Prisma-Access-Articles/GlobalProtect-Optimizing-Office-365-Traffic/ta-p/319669)
+- **F5 Networks BIG-IP APM** : [Optimizing Office 365 traffic on Remote Access through VPNs when using BIG-IP APM](https://devcentral.f5.com/s/articles/SSL-VPN-Split-Tunneling-and-Office-365)
+- **Gateway Citrix** : [ottimizzare lo split tunneling per VPN del gateway Citrix per Office365](https://docs.citrix.com/en-us/citrix-gateway/13/optimizing-citrix-gateway-vpn-split-tunnel-for-office365.html)
+- **Pulse Secure** : [Tunneling VPN: come configurare lo split tunneling in modo da escludere le applicazioni Office365](https://kb.pulsesecure.net/articles/Pulse_Secure_Article/KB44417)
+- **Check Point VPN** : [come configurare il tunnel suddiviso per Office 365 e altre applicazioni SaaS](https://supportcenter.checkpoint.com/supportcenter/portal?eventSubmit_doGoviewsolutiondetails=&solutionid=sk167000)
 
 ## <a name="faq"></a>Domande frequenti
 
@@ -306,11 +306,11 @@ Possiamo quindi attivare criteri per approvare, attivare MFA o bloccare l'autent
 
 Anche in questo caso, Office 365 garantisce la protezione per gli endpoint contrassegnati come Optimize in vari livelli del servizio, [come descritto nel presente documento](https://docs.microsoft.com/office365/Enterprise/office-365-malware-and-ransomware-protection). Come indicato, è molto più efficiente fornire questi elementi di sicurezza nel servizio stesso anziché provare a farlo in linea con i dispositivi che potrebbero non comprendere appieno i protocolli e il traffico. Per impostazione predefinita, SharePoint Online [analizza automaticamente i caricamenti di file](https://docs.microsoft.com/microsoft-365/security/office-365-security/virus-detection-in-spo) per il malware noto
 
-Per gli endpoint di Exchange elencati sopra, [Exchange Online Protection](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description) e [Office 365 Advanced Threat Protection](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description) svolgono un ottimo lavoro per garantire la sicurezza del traffico nel servizio.
+Per gli endpoint di Exchange sopra elencati, [Exchange Online Protection](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description) e [Microsoft Defender per Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description) offrono un ottimo lavoro per garantire la sicurezza del traffico per il servizio.
 
 ### <a name="can-i-send-more-than-just-the-optimize-traffic-direct"></a>È possibile inviare più del traffico Optimize diretto?
 
-La priorità dovrebbe essere assegnata agli endpoint contrassegnati come **Optimize**, per ottenere il massimo vantaggio per un livello basso di lavoro. Tuttavia, se lo si desidera, è necessario che gli endpoint contrassegnati siano necessari per il funzionamento del servizio e che siano disponibili indirizzi IP per gli endpoint che possono essere utilizzati se necessario.
+La priorità dovrebbe essere assegnata agli endpoint contrassegnati come **Optimize** , per ottenere il massimo vantaggio per un livello basso di lavoro. Tuttavia, se lo si desidera, è necessario che gli endpoint contrassegnati siano necessari per il funzionamento del servizio e che siano disponibili indirizzi IP per gli endpoint che possono essere utilizzati se necessario.
 
 Sono inoltre disponibili vari fornitori che offrono soluzioni proxy/di sicurezza basate su cloud denominate gateway Web sicuri che forniscono un'applicazione di criteri di sicurezza, controllo e Corporate Policy centrale per l'esplorazione generale del Web. Queste soluzioni possono funzionare bene in un primo mondo cloud, se estremamente disponibili, performanti e provisioning vicino agli utenti, consentendo l'accesso a Internet protetto da un percorso basato sul cloud vicino all'utente. In questo modo si rimuove la necessità di hairpinning attraverso la rete VPN/aziendale per il traffico di navigazione generale, pur consentendo comunque il controllo di sicurezza centrale.
 
@@ -324,11 +324,11 @@ La porta 80 viene usata solo per operazioni come il reindirizzamento a una sessi
 
 ### <a name="does-this-advice-apply-to-users-in-china-using-a-worldwide-instance-of-office-365"></a>Ciò è valido anche per gli utenti della Cina che usano un'istanza mondiale di Office 365?
 
-**No**, non lo è. L'unica precisazione sul consiglio riportato riguarda gli utenti della Cina che si connettono a un'istanza mondiale di Office 365. A causa del frequente verificarsi della congestione della rete nell'area geografica, le prestazioni di uscita Internet diretta possono essere variabili. La maggior parte dei clienti dell'area geografica usa una VPN per portare il traffico nella rete aziendale e usa il circuito MPLS autorizzato, o soluzione analoga, per l'uscita all'esterno del paese con un percorso ottimizzato. Questo argomento è descritto più avanti nell'articolo [Ottimizzazione delle prestazioni di Office 365 per utenti della Cina](microsoft-365-networking-china.md).
+**No** , non lo è. L'unica precisazione sul consiglio riportato riguarda gli utenti della Cina che si connettono a un'istanza mondiale di Office 365. A causa del frequente verificarsi della congestione della rete nell'area geografica, le prestazioni di uscita Internet diretta possono essere variabili. La maggior parte dei clienti dell'area geografica usa una VPN per portare il traffico nella rete aziendale e usa il circuito MPLS autorizzato, o soluzione analoga, per l'uscita all'esterno del paese con un percorso ottimizzato. Questo argomento è descritto più avanti nell'articolo [Ottimizzazione delle prestazioni di Office 365 per utenti della Cina](microsoft-365-networking-china.md).
 
 ### <a name="does-split-tunnel-configuration-work-for-teams-running-in-a-browser"></a>La configurazione a tunnel suddiviso funziona per i team in esecuzione in un browser?
 
-**No**, non lo è. Funziona solo su Microsoft teams client version 1.3.00.13565 o versione successiva. Questa versione include miglioramenti nel modo in cui il client rileva i percorsi di rete disponibili.
+**No** , non lo è. Funziona solo su Microsoft teams client version 1.3.00.13565 o versione successiva. Questa versione include miglioramenti nel modo in cui il client rileva i percorsi di rete disponibili.
 
 ## <a name="related-topics"></a>Argomenti correlati
 

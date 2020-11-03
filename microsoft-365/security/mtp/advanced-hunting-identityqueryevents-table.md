@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: bf1c57ee93c6f0e007c1b58e73fb9371799e75c6
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: 2b163dc39e56c82ef177b71d197c431c744b12d7
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48431124"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48847405"
 ---
 # <a name="identityqueryevents"></a>IdentityQueryEvents
 
@@ -32,7 +32,7 @@ ms.locfileid: "48431124"
 
 
 **Si applica a:**
-- Microsoft Threat Protection
+- Microsoft 365 Defender
 
 La `IdentityQueryEvents` tabella nello schema di [ricerca avanzata](advanced-hunting-overview.md) contiene informazioni sulle query eseguite su oggetti di Active Directory, ad esempio utenti, gruppi, dispositivi e domini. Usare questo riferimento per creare query che restituiscono informazioni dalla tabella.
 

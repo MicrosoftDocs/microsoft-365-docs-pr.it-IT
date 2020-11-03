@@ -1,5 +1,5 @@
 ---
-title: Gestire gli eventi imprevisti in Microsoft Threat Protection
+title: Gestire gli incidenti in Microsoft 365 Defender
 description: Informazioni su come assegnare, aggiornare lo stato,
 keywords: evento imprevisto, eventi imprevisti, avvisi, avvisi correlati, assegnare, aggiornare, stato, gestire, classificazione, microsoft, 365, M365
 search.product: eADQiWindows 10XVcnh
@@ -21,24 +21,24 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: c599343233e7e29589bc4e3d1cda01da505b16f1
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: 29f55d99dd3acd26ae305c03b533e2ca9bb61f2a
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48430562"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48846653"
 ---
-# <a name="manage-incidents-in-microsoft-threat-protection"></a>Gestire gli eventi imprevisti in Microsoft Threat Protection
+# <a name="manage-incidents-in-microsoft-365-defender"></a>Gestire gli incidenti in Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
 **Si applica a:**
-- Microsoft Threat Protection
+- Microsoft 365 Defender
 
 
 
-La gestione degli eventi è fondamentale per garantire il controllo e la soluzione delle minacce. In Microsoft Threat Protection si dispone dell'accesso alla gestione degli eventi imprevisti su dispositivi, utenti e cassette postali. 
+La gestione degli eventi è fondamentale per garantire il controllo e la soluzione delle minacce. In Microsoft 365 Defender, è possibile accedere alla gestione degli incidenti su dispositivi, utenti e cassette postali. 
 
 
 È possibile gestire gli eventi selezionandone uno dalla **Coda degli eventi imprevisti**. 
@@ -64,7 +64,7 @@ Se un evento non è stato ancora assegnato, è possibile selezionare **Assegna a
 
 ## <a name="set-status-and-classification"></a>Impostare lo stato e la classificazione
 ### <a name="incident-status"></a>Stato di un evento imprevisto
-È possibile categorizzare gli eventi imprevisti, ad esempio **Attivo** oppure **Risolto**, modificando lo stato durante il corso dell'analisi. Questo consente di organizzare e gestire il modo in cui il team può rispondere agli eventi imprevisti.
+È possibile categorizzare gli eventi imprevisti, ad esempio **Attivo** oppure **Risolto** , modificando lo stato durante il corso dell'analisi. Questo consente di organizzare e gestire il modo in cui il team può rispondere agli eventi imprevisti.
 
 Ad esempio, l'analista SOC può esaminare gli eventi **Attivi** e urgenti del giorno e decidere di assegnarli a se stesso per l'analisi.
 

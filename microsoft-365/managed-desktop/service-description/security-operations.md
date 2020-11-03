@@ -1,7 +1,7 @@
 ---
 title: Operazioni di sicurezza in Microsoft Managed Desktop
 description: ''
-keywords: Microsoft Managed Desktop, Microsoft 365, servizio, documentazione
+keywords: Microsoft Managed Desktop, Microsoft 365, servizi, documentazione
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 15a62da1222fc55d50dfd4c3b2f0e7ba4a0554eb
-ms.sourcegitcommit: 1780359234abdf081097c8064438d415da92fb85
+ms.openlocfilehash: 5698e2a88adf3d2bae84a82e0e001132293e36be
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "46778619"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48847717"
 ---
 # <a name="security-operations-in-microsoft-managed-desktop"></a>Operazioni di sicurezza in Microsoft Managed Desktop
 
@@ -41,4 +41,4 @@ Il SOC fornisce questi servizi:
     - Ripristino
     - Attività post-evento
 - I clienti Microsoft Managed Desktop sono idonei ad iscriversi al servizio Microsoft Threat Experts. Il SOC mantiene con questo servizio per comprendere meglio le complesse minacce che interessano la propria organizzazione, tra cui le richieste di avviso, i dispositivi potenzialmente compromessi, la causa principale di una connessione di rete sospetta e altre informazioni aggiuntive sulle minacce per le campagne di minacce permanenti avanzate. Per ulteriori informazioni, vedere [Microsoft Threat Experts](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-threat-experts).
-- Il processo di gestione della vulnerabilità e delle minacce di SOC utilizza alcuni dei servizi di Microsoft per informare i consigli dell'organizzazione sulla protezione dalle minacce. Il SOC utilizza i dati del Centro sicurezza avanzata di protezione di Microsoft Defender e da fonti di dati di vulnerabilità rilevanti all'interno e all'esterno di Microsoft per individuare vulnerabilità e configurazioni errate e fornire relazioni di azione.
+- Il processo di gestione della vulnerabilità e delle minacce di SOC utilizza alcuni dei servizi di Microsoft per informare i consigli dell'organizzazione sulla protezione dalle minacce. Il SOC utilizza i dati del Centro sicurezza di Microsoft Defender per endpoint e da fonti di dati di vulnerabilità rilevanti all'interno e all'esterno di Microsoft per individuare vulnerabilità e configurazioni errate e fornire relazioni di azione.

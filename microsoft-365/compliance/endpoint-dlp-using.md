@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Informazioni su come configurare i criteri di prevenzione della perdita dei dati (DLP) per usare le posizioni di Prevenzione della perdita di dati degli endpoint di Microsoft 365.
-ms.openlocfilehash: 682996c084f4dce888aaff517ad84d335ed92206
-ms.sourcegitcommit: bd36c88e731e3fee2a3a5cb3564fdc94f11bab94
+ms.openlocfilehash: 95c470a3dfc90f9c7b9a36d282c016781e4e13a8
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "48769665"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48847190"
 ---
 # <a name="using-endpoint-data-loss-prevention-preview"></a>Uso della prevenzione della perdita di dati degli endpoint (anteprima)
 
@@ -94,7 +94,7 @@ Per usare questa restrizione sarà necessario configurare tre elementi important
 
 2. Aggiungere i browser ai quali non è consentito accedere a determinati elementi sensibili in caso di corrispondenza con un criterio DLP.
 
-3. Configurare criteri DLP per definire i tipi di elementi sensibili per cui limitare il caricamento in queste posizioni, attivando **Carica nei servizi cloud** e **Accedi dai browser non consentiti** .
+3. Configurare criteri DLP per definire i tipi di elementi sensibili per cui limitare il caricamento in queste posizioni, attivando **Carica nei servizi cloud** e **Accedi dai browser non consentiti**.
 
 È possibile continuare ad aggiungere nuovi servizi, app e criteri per estendere e aumentare le restrizioni in modo da soddisfare le esigenze dell'azienda e proteggere i dati sensibili. 
 
@@ -117,21 +117,21 @@ Per questi scenari è necessario aver già eseguito l'onboarding di dispositivi,
 
 1. Aprire la [pagina Prevenzione della perdita dei dati](https://compliance.microsoft.com/datalossprevention?viewid=policies).
 
-2. Scegliere **Crea criterio (anteprima)** .
+2. Scegliere **Crea criterio (anteprima)**.
 
-3. Per questo scenario, scegliere **Privacy** e poi **Informazioni personali (USA)** , quindi sceg **Avanti** .
+3. Per questo scenario, scegliere **Privacy** e poi **Informazioni personali (USA)** , quindi sceg **Avanti**.
 
-4. Impostare il campo **Stato** in posizione di disattivato per tutte le posizioni tranne **Dispositivi** . Scegliere **Avanti** .
+4. Impostare il campo **Stato** in posizione di disattivato per tutte le posizioni tranne **Dispositivi**. Scegliere **Avanti**.
 
-5. Accettare la selezione **Rivedere e personalizzare le impostazioni predefinite dal modello** e scegliere **Avanti** .
+5. Accettare la selezione **Rivedere e personalizzare le impostazioni predefinite dal modello** e scegliere **Avanti**.
 
-6. Accettare i valori predefiniti per le **Azioni di protezione** e scegliere **Avanti** .
+6. Accettare i valori predefiniti per le **Azioni di protezione** e scegliere **Avanti**.
 
-7. Selezionare **Controlla o limita le attività nei dispositivi Windows** e uscire dalle azioni impostate su **Solo controllo** . Scegliere **Avanti** .
+7. Selezionare **Controlla o limita le attività nei dispositivi Windows** e uscire dalle azioni impostate su **Solo controllo**. Scegliere **Avanti**.
 
-8. Accettare il valore predefinito **Vorrei prima testarli** e scegliere **Mostra i suggerimenti per i criteri in modalità di test** . Scegliere **Avanti** .
+8. Accettare il valore predefinito **Vorrei prima testarli** e scegliere **Mostra i suggerimenti per i criteri in modalità di test**. Scegliere **Avanti**.
 
-9. Rivedere le impostazioni e scegliere **Invia** .
+9. Rivedere le impostazioni e scegliere **Invia**.
 
 10. Il nuovo criterio DLP verrà visualizzato nell'elenco dei criteri.
 
@@ -147,18 +147,18 @@ Per questi scenari è necessario aver già eseguito l'onboarding di dispositivi,
 
 2. Scegliere il criterio **Informazioni personali (USA)** creato nello scenario 1.
 
-3. Scegliere **Modifica criterio (anteprima)** .
+3. Scegliere **Modifica criterio (anteprima)**.
 
-4. Passare alla pagina **Regole avanzate di prevenzione della perdita dei dati** e modificare il **Rilevato un volume ridotto di contenuti con informazioni personali (Stati Uniti)** .
+4. Passare alla pagina **Regole avanzate di prevenzione della perdita dei dati** e modificare il **Rilevato un volume ridotto di contenuti con informazioni personali (Stati Uniti)**.
 
-5. Scorrere verso il basso fino alla sezione **Report sugli eventi imprevisti** e impostare **Invia un avviso agli amministratori quando viene soddisfatta una regola** su **Attivato** . Gli avvisi di posta elettronica verranno inviati automaticamente all'amministratore e a tutti gli altri utenti aggiunti all'elenco dei destinatari. 
+5. Scorrere verso il basso fino alla sezione **Report sugli eventi imprevisti** e impostare **Invia un avviso agli amministratori quando viene soddisfatta una regola** su **Attivato**. Gli avvisi di posta elettronica verranno inviati automaticamente all'amministratore e a tutti gli altri utenti aggiunti all'elenco dei destinatari. 
 
    > [!div class="mx-imgBorder"]
    > ![attivare il report sugli eventi imprevisti](../media/endpoint-dlp-2-using-dlp-incident-reports.png)
    
-6. Ai fini del presente scenario, scegliere **Invia un avviso ogni volta che un'attività corrisponde alla regola** .
+6. Ai fini del presente scenario, scegliere **Invia un avviso ogni volta che un'attività corrisponde alla regola**.
 
-7. Scegliere **Salva** .
+7. Scegliere **Salva**.
 
 8. Conservare tutte le impostazioni precedenti scegliendo **Avanti** e quindi **Invia** per applicare le modifiche al criterio.
 
@@ -172,18 +172,18 @@ Per questi scenari è necessario aver già eseguito l'onboarding di dispositivi,
 
 2. Scegliere il criterio **Informazioni personali (USA)** creato nello scenario 1.
 
-3. Scegliere **Modifica criterio (anteprima)** .
+3. Scegliere **Modifica criterio (anteprima)**.
 
-4. Passare alla pagina **Regole avanzate di prevenzione della perdita dei dati** e modificare il **Rilevato un volume ridotto di contenuti con informazioni personali (Stati Uniti)** .
+4. Passare alla pagina **Regole avanzate di prevenzione della perdita dei dati** e modificare il **Rilevato un volume ridotto di contenuti con informazioni personali (Stati Uniti)**.
 
-5. Scorrere verso il basso fino alla sezione **Controlla o limita le attività nei dispositivi Windows** e per ogni attività impostare l'azione corrispondente su **Blocca con override** .
+5. Scorrere verso il basso fino alla sezione **Controlla o limita le attività nei dispositivi Windows** e per ogni attività impostare l'azione corrispondente su **Blocca con override**.
 
    > [!div class="mx-imgBorder"]
    > ![impostare l'azione Blocca con override](../media/endpoint-dlp-6-using-dlp-set-blocked-with-override.png)
    
-6. Scegliere **Salva** .
+6. Scegliere **Salva**.
 
-7. Ripetere i passaggi da 4 a 7 per **Rilevato un volume elevato di contenuti con informazioni personali (Stati Uniti)** .
+7. Ripetere i passaggi da 4 a 7 per **Rilevato un volume elevato di contenuti con informazioni personali (Stati Uniti)**.
 
 8. Conservare tutte le impostazioni precedenti scegliendo **Avanti** e quindi **Invia** per applicare le modifiche al criterio.
 
@@ -203,7 +203,7 @@ Per questi scenari è necessario aver già eseguito l'onboarding di dispositivi,
 - [Panoramica sulla prevenzione della perdita dei dati](data-loss-prevention-policies.md)
 - [Creare, testare e ottimizzare un criterio di prevenzione della perdita dei dati](create-test-tune-dlp-policy.md)
 - [Introduzione a Esplora attività](data-classification-activity-explorer.md)
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://docs.microsoft.com/windows/security/threat-protection/)
+- [Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/)
 - [Strumenti e metodi di onboarding per i dispositivi Windows 10](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints)
 - [Abbonamento a Microsoft 365](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1)
 - [Dispositivi aggiunti ad Azure Active Directory (AAD)](https://docs.microsoft.com/azure/active-directory/devices/concept-azure-ad-join)

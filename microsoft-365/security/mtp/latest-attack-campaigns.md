@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 48fd80aca01ab3bf5665a53e5538cc450320cf6b
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 8590f73b32e452c9d34d179db12c4db978df8e4d
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48197918"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48846701"
 ---
 # <a name="understand-the-latest-attack-campaigns-and-techniques-with-threat-analytics"></a>Comprendere le campagne e le tecniche di attacco più recenti con Threat Analytics 
 
@@ -31,4 +31,4 @@ Le minacce cibernetiche stanno diventando sempre più frequenti e sofisticate. �
 
 **Threat Analytics** è un insieme di report interattivi pubblicati non appena vengono identificate minacce emergenti, ovvero nuove tecniche, campagne di attacco e focolai di malware. I report consentono di valutare l'impatto delle minacce all'ambiente e di fornire azioni consigliate per contenere, aumentare la resilienza organizzativa e prevenire minacce specifiche.
 
-[Per ulteriori informazioni, vedere Threat Analytics in Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/threat-analytics).  
+[Per ulteriori informazioni, vedere Threat Analytics in Microsoft Defender for endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/threat-analytics).  

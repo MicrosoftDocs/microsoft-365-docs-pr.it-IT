@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: 289f0763d6a7e887946a5672fde5341f79f96855
-ms.sourcegitcommit: 3c39866865c8c61bce2169818d8551da65033cfe
+ms.openlocfilehash: 82a7d1c9eec13d87fa45b12b072e9712ccd267c2
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "48816861"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48847812"
 ---
 # <a name="insider-risk-management-in-microsoft-365"></a>Gestione dei rischi insider in Microsoft 365
 
@@ -146,7 +146,7 @@ Le comunicazioni da utente a utente spesso sono un'origine di violazioni involon
 
 ## <a name="intentional-or-unintentional-security-policy-violations-preview"></a>Violazioni dei criteri di sicurezza intenzionale o involontaria (anteprima)
 
-Gli utenti in genere dispongono di un elevato livello di controllo per la gestione dei dispositivi nel luogo di lavoro moderno. Ciò può includere le autorizzazioni per l'installazione o la disinstallazione di applicazioni necessarie per l'esecuzione delle loro mansioni o la possibilità di disabilitare temporaneamente le funzionalità di sicurezza dei dispositivi. Se questa attività è involontaria, accidentale o dannosa, questa condotta può rappresentare un rischio per la propria organizzazione ed è importante identificare e agire per minimizzare. Per semplificare l'identità di queste attività di sicurezza, i modelli di violazione dei criteri di sicurezza di gestione del rischio Insider seguenti sono punteggi degli indicatori di rischio per la sicurezza e utilizzano gli avvisi di Microsoft Defender Advanced Threat Protection (ATP) per fornire informazioni utili per le attività relative alla sicurezza:
+Gli utenti in genere dispongono di un elevato livello di controllo per la gestione dei dispositivi nel luogo di lavoro moderno. Ciò può includere le autorizzazioni per l'installazione o la disinstallazione di applicazioni necessarie per l'esecuzione delle loro mansioni o la possibilità di disabilitare temporaneamente le funzionalità di sicurezza dei dispositivi. Se questa attività è involontaria, accidentale o dannosa, questa condotta può rappresentare un rischio per la propria organizzazione ed è importante identificare e agire per minimizzare. Per semplificare l'identità di queste attività di sicurezza, i modelli di violazione dei criteri di sicurezza di gestione del rischio Insider seguenti sono punteggi degli indicatori di rischio per la sicurezza e utilizzano Microsoft Defender per gli avvisi endpoint per fornire informazioni utili per le attività relative alla sicurezza:
 
 - [Violazioni generali dei criteri di sicurezza (anteprima)](insider-risk-management-policies.md#general-security-policy-violations-preview)
 - [Violazioni dei criteri di sicurezza partendo dagli utenti (anteprima)](insider-risk-management-policies.md#security-policy-violations-by-departing-users-preview)

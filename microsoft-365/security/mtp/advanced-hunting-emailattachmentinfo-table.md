@@ -19,12 +19,12 @@ mms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: dcacc31f8ea2546cbf90e45a4323a60670a98458
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: 87ebf4ca0ff773dd5622097385173f538d990afc
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48429840"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48847477"
 ---
 # <a name="emailattachmentinfo"></a>EmailAttachmentInfo
 
@@ -32,11 +32,11 @@ ms.locfileid: "48429840"
 
 
 **Si applica a:**
-- Microsoft Threat Protection
+- Microsoft 365 Defender
 
 
 
-La tabella `EmailAttachmentInfo` nello schema per [ricerca avanzata](advanced-hunting-overview.md) contiene informazioni riguardanti gli allegati dei messaggi di posta elettronica elaborati da Office 365 ATP. Usare questo riferimento per creare query che restituiscono informazioni dalla tabella.
+La `EmailAttachmentInfo` tabella nello schema di [ricerca avanzata](advanced-hunting-overview.md) contiene informazioni sugli allegati nei messaggi di posta elettronica elaborati da Microsoft Defender per Office 365. Usare questo riferimento per creare query che restituiscono informazioni dalla tabella.
 
 Per informazioni su altre tabelle nello schema per Ricerca avanzata, [vedere il riferimento sulla Ricerca avanzata](advanced-hunting-schema-tables.md).
 
@@ -51,7 +51,7 @@ Per informazioni su altre tabelle nello schema per Ricerca avanzata, [vedere il 
 | `FileType` | stringa | Tipo di estensione del file |
 | `SHA256` | stringa | SHA-256 del file a cui è stata applicata l'azione registrata. (questo campo in genere non viene popolato: usare la colonna SHA1, se disponibile). |
 | `MalwareFilterVerdict` | stringa | Verdetto del gruppo di filtri della posta elettronica che indica se il messaggio contiene Malware: Malware, No malware |
-| `MalwareDetectionMethod` | stringa | Metodo utilizzato per rilevare malware nei messaggi di posta elettronica: motore antimalware, reputazione dei file, allegati sicuri di ATP |
+| `MalwareDetectionMethod` | stringa | Metodo utilizzato per rilevare la presenza di malware nel messaggio di posta elettronica: motore antimalware, reputazione dei file, allegati sicuri |
 
 ## <a name="related-topics"></a>Argomenti correlati
 - [Panoramica della ricerca avanzata](advanced-hunting-overview.md)

@@ -14,12 +14,12 @@ ms.collection: M365-security-compliance
 ms.custom: Ent_TLGs
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
 description: Usare questa guida del laboratorio di testing per abilitare altre impostazioni di sicurezza di Microsoft 365 per l'ambiente di testing di Microsoft 365 per l'organizzazione.
-ms.openlocfilehash: 7c3300111f5999714b87a176087207a1651cdcaf
-ms.sourcegitcommit: 53ff1fe6d6143b0bf011031eea9b85dc01ae4f74
+ms.openlocfilehash: d385688a6e59ee500442bcf1b815dfd165102242
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48487401"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48847001"
 ---
 # <a name="increased-microsoft-365-security-for-your-microsoft-365-for-enterprise-test-environment"></a>Maggiore sicurezza di Microsoft 365 per l'ambiente di testing di Microsoft 365 per l'organizzazione
 
@@ -57,16 +57,16 @@ Per le app che non supportano l'autenticazione moderna non è possibile applicar
  
 2. Nella nuova scheda dell'interfaccia di **amministrazione di Microsoft 365** , in interfaccia di **Amministrazione** nel riquadro di spostamento a sinistra, fare clic su **SharePoint**.
 3. Nella nuova scheda dell'interfaccia di **amministrazione di SharePoint** , fare clic su **criteri > controllo di accesso**.
-4. Fare clic su **app che non supportano l'autenticazione moderna**, selezionare **Blocca accesso**e quindi fare clic su **Salva**.
+4. Fare clic su **app che non supportano l'autenticazione moderna** , selezionare **Blocca accesso** e quindi fare clic su **Salva**.
 
 
-### <a name="enable-advanced-threat-protection-for-sharepoint-onedrive-for-business-and-microsoft-teams"></a>Abilitare Advanced Threat Protection per SharePoint, OneDrive for business e Microsoft Teams
+### <a name="enable-defender-for-office-365-for-sharepoint-onedrive-for-business-and-microsoft-teams"></a>Abilitare il difensore per Office 365 per SharePoint, OneDrive for business e Microsoft Teams
 
-Office 365 Advanced Threat Protection (ATP) per SharePoint, OneDrive e Microsoft teams protegge l'organizzazione dall'involontaria condivisione di file dannosi.
+Il difensore per Office 365 per SharePoint, OneDrive e Microsoft teams protegge l'organizzazione dalla condivisione involontaria di file dannosi.
 
 1. Accedere al [Centro sicurezza & Compliance](https://protection.office.com) e accedere con l'account di amministratore globale.
 
-2. Nel riquadro di spostamento a sinistra, in **gestione minacce**, fare clic su **criteri**, quindi fare clic su **allegati sicuri di ATP**. 
+2. Nel riquadro di spostamento a sinistra, in **gestione minacce** , fare clic su **criteri** , quindi fare clic su **allegati sicuri**. 
 
 3. In **proteggere i file in SharePoint, OneDrive e Microsoft teams**. Selezionare **attiva ATP per SharePoint, OneDrive e Microsoft teams**.
 
@@ -85,7 +85,7 @@ Per assicurarsi che l'elaborazione antimalware sia in esecuzione su file con tip
 2. Fare clic su **anti-malware**.
 3. Fare doppio clic sul criterio denominato **default**.
 4. Nella finestra **criteri antimalware** fare clic su **Impostazioni**.
-4. In **filtro tipi di allegati comuni**selezionare **On**attivato e quindi fare clic su **Salva**.
+4. In **filtro tipi di allegati comuni** selezionare **On** attivato e quindi fare clic su **Salva**.
 
 
 ## <a name="phase-3-examine-the-security-dashboard"></a>Fase 3: esaminare il dashboard di sicurezza
@@ -96,7 +96,7 @@ Per visualizzare il dashboard di sicurezza:
 
 1. Se necessario, passare al [Centro sicurezza & Compliance](https://protection.office.com) e accedere con l'account di amministratore globale.
 
-2. Nel riquadro di spostamento a sinistra, in **gestione minacce**, fare clic su **Dashboard**.
+2. Nel riquadro di spostamento a sinistra, in **gestione minacce** , fare clic su **Dashboard**.
 
 Esaminare tutte le schede del dashboard per acquisire familiarità con le informazioni fornite.
 

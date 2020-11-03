@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 8ced46ea30c7225fd3e5c8f1309ef482542e51b2
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: de0bc092c35c7f48c562da8d4218f7a638abe1d5
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48445784"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48847781"
 ---
 # <a name="microsoft-managed-desktop-roles-and-responsibilities"></a>Ruoli e responsabilità Microsoft Managed Desktop
 
@@ -33,7 +33,7 @@ Ruolo o responsabilità | Descrizione
 Gestione dei criteri MDM | Microsoft applica i criteri MDM secondo le procedure consigliate e prende in considerazione le richieste di modifiche ai criteri. Verranno inoltre apportate modifiche al tenant come prescritto nei [criteri dei dispositivi](../service-description/device-policies.md).
 supporto per gli utenti | Microsoft fornisce supporto agli utenti per i dispositivi, Windows e la famiglia di prodotti per le app 365 per tutti i clienti registrati tramite l'app Get Help preinstallata su tutti i dispositivi Microsoft Managed Desktop. 
 Supporto per Microsoft Managed Desktop Service | Microsoft fornirà supporto per il reparto IT tramite un team di operazioni di Microsoft Managed Desktop. Questo team sosterrà la risoluzione dei problemi tecnici, le richieste di modifica e la gestione degli incidenti per l'ambiente desktop Microsoft gestito del cliente. Per ulteriori informazioni, vedere [supporto di amministrazione per Microsoft Managed Desktop](../working-with-managed-desktop/admin-support.md).
-Monitoraggio della sicurezza | Microsoft controllerà i dispositivi Microsoft Managed Desktop utilizzando Microsoft Defender ATP. Se il Microsoft Managed Desktop Security Operations Center (SOC) rileva una minaccia, verrà notificato, isolato il dispositivo e rettificare il problema in remoto. Per ulteriori informazioni, vedere [sicurezza](../service-description/security.md).
+Monitoraggio della sicurezza | Microsoft controllerà i dispositivi Microsoft Managed Desktop utilizzando Microsoft Defender per endpoint. Se il Microsoft Managed Desktop Security Operations Center (SOC) rileva una minaccia, verrà notificato, isolato il dispositivo e rettificare il problema in remoto. Per ulteriori informazioni, vedere [sicurezza](../service-description/security.md).
 Aggiornare il monitoraggio e la gestione | Monitoriamo attivamente i dispositivi Microsoft Managed Desktop per garantire che siano installati gli aggiornamenti di qualità e funzionalità più recenti per Microsoft Windows e Microsoft Office. Per ulteriori informazioni, vedere [la modalità](../service-description/updates.md)di gestione degli aggiornamenti.
 Raggruppamento di utenti e dispositivi | Il team di Microsoft Managed Desktop Operations creerà e gestirà i gruppi di utenti e dispositivi necessari come parte delle operazioni IT. Non sono consentite modifiche alla configurazione o all'appartenenza a questi gruppi. L'alterazione di questi gruppi può comportare una configurazione imprevista dei dispositivi e la perdita di funzionalità. Per eventuali problemi o domande su questi gruppi una volta stabiliti, gli amministratori IT possono contattare le operazioni di Microsoft Managed Desktop. Per ulteriori informazioni, vedere [supporto di amministrazione per Microsoft Managed Desktop](../working-with-managed-desktop/admin-support.md).
 
