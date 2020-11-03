@@ -1,5 +1,5 @@
 ---
-title: Usare le query condivise nella ricerca avanzata di Microsoft Threat Protection
+title: Utilizzare le query condivise in Microsoft 365 Defender Advanced Hunting
 description: Avviare subito la ricerca delle minacce con query predefinite e condivise. Condividere le query con il pubblico o la propria organizzazione.
 keywords: caccia avanzata, caccia alle minacce, Cyber Threat Hunting, Microsoft Threat Protection, Microsoft 365, MTP, M365, Search, query, telemetria, rilevamenti personalizzati, schema, kusto, GitHub repo, My Querys, Shared queries
 search.product: eADQiWindows 10XVcnh
@@ -19,64 +19,64 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 7cdb15be274c89bd92995b9e947489c62521c6bb
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: 48da1a3a64926f44582e7872f0b0ee03240409ca
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48429684"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48844081"
 ---
-# <a name="use-shared-queries-in-advanced-hunting"></a><span data-ttu-id="e91d3-105">Usare le query condivise nella ricerca avanzata</span><span class="sxs-lookup"><span data-stu-id="e91d3-105">Use shared queries in advanced hunting</span></span>
+# <a name="use-shared-queries-in-advanced-hunting"></a><span data-ttu-id="1c764-105">Usare le query condivise nella ricerca avanzata</span><span class="sxs-lookup"><span data-stu-id="1c764-105">Use shared queries in advanced hunting</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
-<span data-ttu-id="e91d3-106">**Si applica a:**</span><span class="sxs-lookup"><span data-stu-id="e91d3-106">**Applies to:**</span></span>
-- <span data-ttu-id="e91d3-107">Microsoft Threat Protection</span><span class="sxs-lookup"><span data-stu-id="e91d3-107">Microsoft Threat Protection</span></span>
+<span data-ttu-id="1c764-106">**Si applica a:**</span><span class="sxs-lookup"><span data-stu-id="1c764-106">**Applies to:**</span></span>
+- <span data-ttu-id="1c764-107">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="1c764-107">Microsoft 365 Defender</span></span>
 
 
 
-<span data-ttu-id="e91d3-108">[Le query Ricerca avanzata](advanced-hunting-overview.md) possono essere condivise tra con gli utenti della stessa organizzazione.</span><span class="sxs-lookup"><span data-stu-id="e91d3-108">[Advanced hunting](advanced-hunting-overview.md) queries can be shared among users in the same organization.</span></span> <span data-ttu-id="e91d3-109">È anche possibile trovare query condivise pubblicamente su GitHub.</span><span class="sxs-lookup"><span data-stu-id="e91d3-109">You can also find queries shared publicly on GitHub.</span></span> <span data-ttu-id="e91d3-110">Queste query consentono di intraprendere rapidamente specifici scenari di ricerca delle minacce senza dover scrivere le query da zero.</span><span class="sxs-lookup"><span data-stu-id="e91d3-110">These queries let you quickly pursue specific threat hunting scenarios without having to write queries from scratch.</span></span>
+<span data-ttu-id="1c764-108">[Le query Ricerca avanzata](advanced-hunting-overview.md) possono essere condivise tra con gli utenti della stessa organizzazione.</span><span class="sxs-lookup"><span data-stu-id="1c764-108">[Advanced hunting](advanced-hunting-overview.md) queries can be shared among users in the same organization.</span></span> <span data-ttu-id="1c764-109">È anche possibile trovare query condivise pubblicamente su GitHub.</span><span class="sxs-lookup"><span data-stu-id="1c764-109">You can also find queries shared publicly on GitHub.</span></span> <span data-ttu-id="1c764-110">Queste query consentono di intraprendere rapidamente specifici scenari di ricerca delle minacce senza dover scrivere le query da zero.</span><span class="sxs-lookup"><span data-stu-id="1c764-110">These queries let you quickly pursue specific threat hunting scenarios without having to write queries from scratch.</span></span>
 
 ![Immagine di query condivise](../../media/advanced-hunting-shared-queries.png)
 
-## <a name="save-modify-and-share-a-query"></a><span data-ttu-id="e91d3-112">Salvare, modificare e condividere una query</span><span class="sxs-lookup"><span data-stu-id="e91d3-112">Save, modify, and share a query</span></span>
-<span data-ttu-id="e91d3-113">È possibile salvare una query nuova o esistente in modo che sia solo accessibile all'utente o condivisa con altri utenti della propria organizzazione.</span><span class="sxs-lookup"><span data-stu-id="e91d3-113">You can save a new or existing query so that it is only accessible to you or shared with other users in your organization.</span></span> 
+## <a name="save-modify-and-share-a-query"></a><span data-ttu-id="1c764-112">Salvare, modificare e condividere una query</span><span class="sxs-lookup"><span data-stu-id="1c764-112">Save, modify, and share a query</span></span>
+<span data-ttu-id="1c764-113">È possibile salvare una query nuova o esistente in modo che sia solo accessibile all'utente o condivisa con altri utenti della propria organizzazione.</span><span class="sxs-lookup"><span data-stu-id="1c764-113">You can save a new or existing query so that it is only accessible to you or shared with other users in your organization.</span></span> 
 
-1. <span data-ttu-id="e91d3-114">Creare o modificare una query.</span><span class="sxs-lookup"><span data-stu-id="e91d3-114">Create or modify a query.</span></span> 
+1. <span data-ttu-id="1c764-114">Creare o modificare una query.</span><span class="sxs-lookup"><span data-stu-id="1c764-114">Create or modify a query.</span></span> 
 
-2. <span data-ttu-id="e91d3-115">Fare clic sul pulsante a discesa **Salva query** e selezionare **Salva con nome**.</span><span class="sxs-lookup"><span data-stu-id="e91d3-115">Click the **Save query** drop-down button and select **Save as**.</span></span>
+2. <span data-ttu-id="1c764-115">Fare clic sul pulsante a discesa **Salva query** e selezionare **Salva con nome**.</span><span class="sxs-lookup"><span data-stu-id="1c764-115">Click the **Save query** drop-down button and select **Save as**.</span></span>
     
-3. <span data-ttu-id="e91d3-116">Immettere un nome per la query.</span><span class="sxs-lookup"><span data-stu-id="e91d3-116">Enter a name for the query.</span></span> 
+3. <span data-ttu-id="1c764-116">Immettere un nome per la query.</span><span class="sxs-lookup"><span data-stu-id="1c764-116">Enter a name for the query.</span></span> 
 
    ![Immagine del salvataggio di una query](../../media/advanced-hunting-save-query.png)
 
-4. <span data-ttu-id="e91d3-118">Selezionare la cartella in cui si vuole salvare la query.</span><span class="sxs-lookup"><span data-stu-id="e91d3-118">Select the folder where you'd like to save the query.</span></span>
-    - <span data-ttu-id="e91d3-119">**Query condivise**: query condivise con tutti gli utenti dell'organizzazione</span><span class="sxs-lookup"><span data-stu-id="e91d3-119">**Shared queries** — shared to all users your organization</span></span>
-    - <span data-ttu-id="e91d3-120">**Query personali**: query accessibili solo all'utente</span><span class="sxs-lookup"><span data-stu-id="e91d3-120">**My queries** — accessible only to you</span></span>
+4. <span data-ttu-id="1c764-118">Selezionare la cartella in cui si vuole salvare la query.</span><span class="sxs-lookup"><span data-stu-id="1c764-118">Select the folder where you'd like to save the query.</span></span>
+    - <span data-ttu-id="1c764-119">**Query condivise** : query condivise con tutti gli utenti dell'organizzazione</span><span class="sxs-lookup"><span data-stu-id="1c764-119">**Shared queries** — shared to all users your organization</span></span>
+    - <span data-ttu-id="1c764-120">**Query personali** : query accessibili solo all'utente</span><span class="sxs-lookup"><span data-stu-id="1c764-120">**My queries** — accessible only to you</span></span>
     
-5. <span data-ttu-id="e91d3-121">Selezionare **Salva**.</span><span class="sxs-lookup"><span data-stu-id="e91d3-121">Select **Save**.</span></span> 
+5. <span data-ttu-id="1c764-121">Selezionare **Salva**.</span><span class="sxs-lookup"><span data-stu-id="1c764-121">Select **Save**.</span></span> 
 
-## <a name="delete-or-rename-a-query"></a><span data-ttu-id="e91d3-122">Eliminare o rinominare una query</span><span class="sxs-lookup"><span data-stu-id="e91d3-122">Delete or rename a query</span></span>
-1. <span data-ttu-id="e91d3-123">Fare clic con il pulsante destro del mouse su una query che si vuole rinominare o eliminare.</span><span class="sxs-lookup"><span data-stu-id="e91d3-123">Right-click on a query you want to rename or delete.</span></span>
+## <a name="delete-or-rename-a-query"></a><span data-ttu-id="1c764-122">Eliminare o rinominare una query</span><span class="sxs-lookup"><span data-stu-id="1c764-122">Delete or rename a query</span></span>
+1. <span data-ttu-id="1c764-123">Fare clic con il pulsante destro del mouse su una query che si vuole rinominare o eliminare.</span><span class="sxs-lookup"><span data-stu-id="1c764-123">Right-click on a query you want to rename or delete.</span></span>
 
     ![Immagine dell'eliminazione di una query](../../media/advanced_hunting_delete_rename.png)
 
-2. <span data-ttu-id="e91d3-125">Selezionare **Elimina** per confermare l'eliminazione.</span><span class="sxs-lookup"><span data-stu-id="e91d3-125">Select **Delete** and confirm deletion.</span></span> <span data-ttu-id="e91d3-126">In alternativa, selezionare **Rinomina** e immettere un nuovo nome per la query.</span><span class="sxs-lookup"><span data-stu-id="e91d3-126">Or select **Rename** and provide a new name for the query.</span></span>
+2. <span data-ttu-id="1c764-125">Selezionare **Elimina** per confermare l'eliminazione.</span><span class="sxs-lookup"><span data-stu-id="1c764-125">Select **Delete** and confirm deletion.</span></span> <span data-ttu-id="1c764-126">In alternativa, selezionare **Rinomina** e immettere un nuovo nome per la query.</span><span class="sxs-lookup"><span data-stu-id="1c764-126">Or select **Rename** and provide a new name for the query.</span></span>
 
-## <a name="create-a-direct-link-to-a-query"></a><span data-ttu-id="e91d3-127">Creare un collegamento diretto a una query</span><span class="sxs-lookup"><span data-stu-id="e91d3-127">Create a direct link to a query</span></span>
-<span data-ttu-id="e91d3-128">Per generare un collegamento che apra la query direttamente nell'editor di query di ricerca avanzata, finalizzare la query e selezionare **Condividi collegamento**.</span><span class="sxs-lookup"><span data-stu-id="e91d3-128">To generate a link that opens your query directly in the advanced hunting query editor, finalize your query and select **Share link**.</span></span>
+## <a name="create-a-direct-link-to-a-query"></a><span data-ttu-id="1c764-127">Creare un collegamento diretto a una query</span><span class="sxs-lookup"><span data-stu-id="1c764-127">Create a direct link to a query</span></span>
+<span data-ttu-id="1c764-128">Per generare un collegamento che apra la query direttamente nell'editor di query di ricerca avanzata, finalizzare la query e selezionare **Condividi collegamento**.</span><span class="sxs-lookup"><span data-stu-id="1c764-128">To generate a link that opens your query directly in the advanced hunting query editor, finalize your query and select **Share link**.</span></span>
 
-## <a name="access-queries-in-the-github-repository"></a><span data-ttu-id="e91d3-129">Accedere alle query nel repository GitHub</span><span class="sxs-lookup"><span data-stu-id="e91d3-129">Access queries in the GitHub repository</span></span>  
-<span data-ttu-id="e91d3-130">I ricercatori della sicurezza Microsoft condividono regolarmente query di ricerca avanzata in un [repository pubblico designato in GitHub](https://aka.ms/hunting-queries).</span><span class="sxs-lookup"><span data-stu-id="e91d3-130">Microsoft security researchers regularly share advanced hunting queries in a [designated public repository on GitHub](https://aka.ms/hunting-queries).</span></span> <span data-ttu-id="e91d3-131">È possibile collaborare a questo repository.</span><span class="sxs-lookup"><span data-stu-id="e91d3-131">This repository is open to contributions.</span></span> <span data-ttu-id="e91d3-132">Per collaborare, [iscriversi a GitHub gratuitamente](https://github.com/).</span><span class="sxs-lookup"><span data-stu-id="e91d3-132">To contribute, [join GitHub for free](https://github.com/).</span></span>
+## <a name="access-queries-in-the-github-repository"></a><span data-ttu-id="1c764-129">Accedere alle query nel repository GitHub</span><span class="sxs-lookup"><span data-stu-id="1c764-129">Access queries in the GitHub repository</span></span>  
+<span data-ttu-id="1c764-130">I ricercatori della sicurezza Microsoft condividono regolarmente query di ricerca avanzata in un [repository pubblico designato in GitHub](https://aka.ms/hunting-queries).</span><span class="sxs-lookup"><span data-stu-id="1c764-130">Microsoft security researchers regularly share advanced hunting queries in a [designated public repository on GitHub](https://aka.ms/hunting-queries).</span></span> <span data-ttu-id="1c764-131">È possibile collaborare a questo repository.</span><span class="sxs-lookup"><span data-stu-id="1c764-131">This repository is open to contributions.</span></span> <span data-ttu-id="1c764-132">Per collaborare, [iscriversi a GitHub gratuitamente](https://github.com/).</span><span class="sxs-lookup"><span data-stu-id="1c764-132">To contribute, [join GitHub for free](https://github.com/).</span></span>
 
 >[!tip]
-><span data-ttu-id="e91d3-133">I ricercatori della sicurezza Microsoft forniscono anche query di ricerca avanzata che è possibile usare per trovare le attività e gli indicatori associati alle minacce emergenti.</span><span class="sxs-lookup"><span data-stu-id="e91d3-133">Microsoft security researchers also provide advanced hunting queries that you can use to locate activities and indicators associated with emerging threats.</span></span> <span data-ttu-id="e91d3-134">Queste query sono incluse nei report di [analisi delle minacce](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/threat-analytics) nel Microsoft Defender Security Center.</span><span class="sxs-lookup"><span data-stu-id="e91d3-134">These queries are provided as part of the [threat analytics](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/threat-analytics) reports in Microsoft Defender Security Center.</span></span>
+><span data-ttu-id="1c764-133">I ricercatori della sicurezza Microsoft forniscono anche query di ricerca avanzata che è possibile usare per trovare le attività e gli indicatori associati alle minacce emergenti.</span><span class="sxs-lookup"><span data-stu-id="1c764-133">Microsoft security researchers also provide advanced hunting queries that you can use to locate activities and indicators associated with emerging threats.</span></span> <span data-ttu-id="1c764-134">Queste query sono incluse nei report di [analisi delle minacce](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/threat-analytics) nel Microsoft Defender Security Center.</span><span class="sxs-lookup"><span data-stu-id="1c764-134">These queries are provided as part of the [threat analytics](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/threat-analytics) reports in Microsoft Defender Security Center.</span></span>
 
-## <a name="related-topics"></a><span data-ttu-id="e91d3-135">Argomenti correlati</span><span class="sxs-lookup"><span data-stu-id="e91d3-135">Related topics</span></span>
-- [<span data-ttu-id="e91d3-136">Panoramica della ricerca avanzata</span><span class="sxs-lookup"><span data-stu-id="e91d3-136">Advanced hunting overview</span></span>](advanced-hunting-overview.md)
-- [<span data-ttu-id="e91d3-137">Capire il linguaggio delle query</span><span class="sxs-lookup"><span data-stu-id="e91d3-137">Learn the query language</span></span>](advanced-hunting-query-language.md)
-- [<span data-ttu-id="e91d3-138">Usare i risultati delle query</span><span class="sxs-lookup"><span data-stu-id="e91d3-138">Work with query results</span></span>](advanced-hunting-query-results.md)
-- [<span data-ttu-id="e91d3-139">Cercare tra dispositivi, posta elettronica, app e identità</span><span class="sxs-lookup"><span data-stu-id="e91d3-139">Hunt across devices, emails, apps, and identities</span></span>](advanced-hunting-query-emails-devices.md)
-- [<span data-ttu-id="e91d3-140">Comprendere lo schema</span><span class="sxs-lookup"><span data-stu-id="e91d3-140">Understand the schema</span></span>](advanced-hunting-schema-tables.md)
-- [<span data-ttu-id="e91d3-141">Applicare le procedure consigliate per le query</span><span class="sxs-lookup"><span data-stu-id="e91d3-141">Apply query best practices</span></span>](advanced-hunting-best-practices.md)
+## <a name="related-topics"></a><span data-ttu-id="1c764-135">Argomenti correlati</span><span class="sxs-lookup"><span data-stu-id="1c764-135">Related topics</span></span>
+- [<span data-ttu-id="1c764-136">Panoramica della ricerca avanzata</span><span class="sxs-lookup"><span data-stu-id="1c764-136">Advanced hunting overview</span></span>](advanced-hunting-overview.md)
+- [<span data-ttu-id="1c764-137">Capire il linguaggio delle query</span><span class="sxs-lookup"><span data-stu-id="1c764-137">Learn the query language</span></span>](advanced-hunting-query-language.md)
+- [<span data-ttu-id="1c764-138">Usare i risultati delle query</span><span class="sxs-lookup"><span data-stu-id="1c764-138">Work with query results</span></span>](advanced-hunting-query-results.md)
+- [<span data-ttu-id="1c764-139">Cercare tra dispositivi, posta elettronica, app e identità</span><span class="sxs-lookup"><span data-stu-id="1c764-139">Hunt across devices, emails, apps, and identities</span></span>](advanced-hunting-query-emails-devices.md)
+- [<span data-ttu-id="1c764-140">Comprendere lo schema</span><span class="sxs-lookup"><span data-stu-id="1c764-140">Understand the schema</span></span>](advanced-hunting-schema-tables.md)
+- [<span data-ttu-id="1c764-141">Applicare le procedure consigliate per le query</span><span class="sxs-lookup"><span data-stu-id="1c764-141">Apply query best practices</span></span>](advanced-hunting-best-practices.md)
