@@ -1,5 +1,5 @@
 ---
-title: Usare le query condivise nella ricerca avanzata di Microsoft Threat Protection
+title: Utilizzare le query condivise in Microsoft 365 Defender Advanced Hunting
 description: Avviare subito la ricerca delle minacce con query predefinite e condivise. Condividere le query con il pubblico o la propria organizzazione.
 keywords: caccia avanzata, caccia alle minacce, Cyber Threat Hunting, Microsoft Threat Protection, Microsoft 365, MTP, M365, Search, query, telemetria, rilevamenti personalizzati, schema, kusto, GitHub repo, My Querys, Shared queries
 search.product: eADQiWindows 10XVcnh
@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 7cdb15be274c89bd92995b9e947489c62521c6bb
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: 48da1a3a64926f44582e7872f0b0ee03240409ca
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48429684"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48844081"
 ---
 # <a name="use-shared-queries-in-advanced-hunting"></a>Usare le query condivise nella ricerca avanzata
 
@@ -32,7 +32,7 @@ ms.locfileid: "48429684"
 
 
 **Si applica a:**
-- Microsoft Threat Protection
+- Microsoft 365 Defender
 
 
 
@@ -52,8 +52,8 @@ ms.locfileid: "48429684"
    ![Immagine del salvataggio di una query](../../media/advanced-hunting-save-query.png)
 
 4. Selezionare la cartella in cui si vuole salvare la query.
-    - **Query condivise**: query condivise con tutti gli utenti dell'organizzazione
-    - **Query personali**: query accessibili solo all'utente
+    - **Query condivise** : query condivise con tutti gli utenti dell'organizzazione
+    - **Query personali** : query accessibili solo all'utente
     
 5. Selezionare **Salva**. 
 

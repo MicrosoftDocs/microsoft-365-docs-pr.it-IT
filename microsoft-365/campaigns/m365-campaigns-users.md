@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Informazioni su come Microsoft 365 per le campagne influisce sugli utenti.
-ms.openlocfilehash: fc10e3521b9e165d0a6efd6d1ed37b53a5abf74f
-ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
+ms.openlocfilehash: c9cbb64a5585aae4db8f878afcfc19c98711518b
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46527019"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48845193"
 ---
 # <a name="how-microsoft-365-for-campaigns-affects-your-users"></a>In che modo Microsoft 365 per le campagne influisce sugli utenti
 
@@ -40,8 +40,8 @@ Microsoft 365 per le campagne rende più difficile per gli hacker accedere all'a
 ## <a name="use-secure-email-practices"></a>Utilizzo di procedure di posta elettronica sicure
 Tutti gli utenti devono essere a conoscenza e utilizzare queste procedure di posta elettronica per garantire la protezione della posta elettronica:
 - Configurare la posta elettronica per l'utilizzo dell'autenticazione a più fattori con l'app Authenticator.
-- Verificare la presenza di messaggi di posta elettronica legittimi e cercare suggerimenti di sicurezza da ATP Advanced Phishing Protection.
-- Aprire solo collegamenti e allegati sicuri, come verificato da collegamenti sicuri di ATP e allegati sicuri di ATP.
+- Verificare la presenza di messaggi di posta elettronica legittimi e cercare suggerimenti di sicurezza da Advanced phishing in Defender per Office 365 Protection.
+- Aprire solo collegamenti e allegati sicuri, come verificato da collegamenti sicuri e allegati sicuri.
 
 Per ulteriori informazioni [, vedere phishing and other Attacks](m365-campaigns-phishing-and-attacks.md). 
 
@@ -66,7 +66,7 @@ Per i [dispositivi Windows 10 e Mac non gestiti](m365-campaigns-protect-pcs-macs
 
 ||||
 |:-----|:-----|:------|
-||**Windows 10**|**Mac**|
+||**Windows 10**|**Mac**|
 |Funzionalità di sicurezza|Abilitare la protezione del dispositivo BitLocker<p><p> Verificare che Windows Defender rimanga acceso <p>Attivazione di Windows Firewall| Utilizzo di FileVault per crittografare il disco Mac <p><p>Utilizzo di un software antivirus affidabile <p>Attiva protezione firewall|
 
 Per ulteriori informazioni su questi suggerimenti, vedere [Protect your account and devices from hacker and malware](https://support.office.com/article/Protect-your-account-and-devices-from-hackers-and-malware-066d6216-a56b-4f90-9af3-b3a1e9a327d6#ID0EAABAAA=Windows_10).

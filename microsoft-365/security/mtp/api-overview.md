@@ -1,6 +1,6 @@
 ---
-title: Panoramica delle API di Microsoft Threat Protection
-description: Informazioni sulle API disponibili in Microsoft Threat Protection
+title: Informazioni generali su Microsoft 365 Defender APIs
+description: Informazioni sulle API disponibili in Microsoft 365 Defender
 keywords: API, API, panoramica, incidenti, incidenti, caccia alle minacce
 search.product: eADQiWindows 10XVcnh
 ms.prod: microsoft-365-enterprise
@@ -19,35 +19,35 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: e80d8143898a31f7ae08b2cb1cf9b0eb2fc8bb8e
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 75a5853e7128667420819c84fbc3c50b07d669b4
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48198668"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48845012"
 ---
-# <a name="overview-of--microsoft-threat-protection-apis"></a>Panoramica delle API di Microsoft Threat Protection
+# <a name="overview-of--microsoft-365-defender-apis"></a>Informazioni generali su Microsoft 365 Defender APIs
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
 **Si applica a:**
-- Microsoft Threat Protection
+- Microsoft 365 Defender
 
 
 >[!IMPORTANT] 
 >Alcune informazioni si riferiscono al prodotto prerilasciato che può essere modificato in modo sostanziale prima che venga rilasciato commercialmente. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
-La soluzione Microsoft Threat Protection è basata su una piattaforma di integrazione pronta. 
+La soluzione Microsoft 365 Defender è basata su una piattaforma di integrazione pronta. 
 
-Le API di Microsoft Threat Protection di Lop Level consentono di automatizzare i flussi di lavoro in base alle tabelle degli incidenti condivisi e di ricerca avanzata.
+Le API di Microsoft 365 Defender di Lop Level consentiranno di automatizzare i flussi di lavoro in base alle tabelle degli incidenti condivisi e di ricerca avanzata.
 
-- **Coda degli incidenti combinati** : consente ai professionisti della sicurezza di concentrarsi su ciò che è critico, garantendo che l'ambito di attacco completo e le risorse interessate siano raggruppati e riemergano in modo tempestivo sotto l'API Incident.
+- **Coda di incidenti combinati** : consente ai professionisti della sicurezza di concentrarsi su ciò che è critico. Consente di verificare che l'ambito di attacco completo e le risorse interessate siano raggruppati e riemersi in modo tempestivo nell'ambito dell'API Incident.
 
 - **Cross-product Threat Hunting** -i team di sicurezza possono sfruttare le proprie conoscenze organizzative esclusive per cercare segni di compromesso creando query personalizzate tramite API sui dati non elaborati raccolti dai vari prodotti di protezione. 
 
 Oltre a questi set di API, ognuno dei diversi prodotti di protezione espone altre API che consentono di innovare in base alle funzionalità di ogni prodotto.
 
 ## <a name="related-topics"></a>Argomenti correlati
-- [Accedere alle API di Microsoft Threat protectin](api-access.md)
+- [Accedere alle API di Microsoft Threat Protection](api-access.md)
 - [Altre risorse API](api-articles.md)

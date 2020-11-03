@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-defender-office365
 description: Informazioni su come utilizzare l'esploratore di minacce e il rapporto sui rilevamenti in tempo reale per esaminare e rispondere alle minacce nel centro sicurezza e &amp; conformità.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 75286b3fa8319afc9baadbc7ed349e8fe689d11c
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: 83fa2d89c74b5ec1e2de7e65457313f20bbf2681
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48447132"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48844321"
 ---
 # <a name="views-in-threat-explorer-and-real-time-detections"></a>Visualizzazioni in Esplora minacce e rilevamenti in tempo reale
 
@@ -32,20 +32,20 @@ ms.locfileid: "48447132"
 
 [Esplora minacce](threat-explorer.md) (e il rapporto rilevamenti in tempo reale) è uno strumento potente e quasi in tempo reale che consente ai team di operazioni di sicurezza di analizzare e rispondere alle minacce nel centro sicurezza e &amp; conformità. Explorer (e il rapporto rilevamenti in tempo reale) Visualizza le informazioni sui sospetti malware e phishing nei messaggi di posta elettronica e nei file di Office 365, oltre ad altre minacce e rischi per la sicurezza per l'organizzazione.
 
-- Se si dispone di [Office 365 Advanced Threat Protection](office-365-atp.md) (ATP) piano 2, è necessario disporre di Esplora risorse.
-- Se si dispone di Office 365 ATP piano 1, è possibile rilevare i rilevamenti in tempo reale.
+- Se si dispone [di Microsoft Defender per Office 365](office-365-atp.md) piano 2, è necessario disporre di Esplora risorse.
+- Se si dispone di Microsoft Defender per Office 365 piano 1, è possibile ottenere rilevamenti in tempo reale.
 
-Quando si apre Explorer (o il rapporto rilevamenti in tempo reale), la visualizzazione predefinita Visualizza i rilevamenti di malware per la posta elettronica negli ultimi 7 giorni. Questo rapporto può anche mostrare rilevamenti di ATP, ad esempio URL dannosi rilevati da [collegamenti sicuri](atp-safe-links.md)e file dannosi rilevati da [allegati sicuri](atp-safe-attachments.md). Questo rapporto può essere modificato in modo da visualizzare i dati negli ultimi 30 giorni (con un abbonamento a pagamento ATP P2). Gli abbonamenti di valutazione includeranno i dati solo per i sette giorni scorsi.
+Quando si apre Explorer (o il rapporto rilevamenti in tempo reale), la visualizzazione predefinita Visualizza i rilevamenti di malware per la posta elettronica negli ultimi 7 giorni. Questo rapporto può anche mostrare Microsoft Defender per i rilevamenti di Office 365, ad esempio URL dannosi rilevati da [collegamenti sicuri](atp-safe-links.md)e file dannosi rilevati da [allegati sicuri](atp-safe-attachments.md). Questo rapporto può essere modificato in modo da visualizzare i dati negli ultimi 30 giorni (con un abbonamento a pagamento a Microsoft Defender per Office 365 P2). Gli abbonamenti di valutazione includeranno i dati solo per i sette giorni scorsi.
 
 ****
 
 |Abbonamento|Utilità|Giorni di dati|
 |---|---|---|
-|Valutazione ATP P1|Rilevamenti in tempo reale|7 |
-|ATP P1 a pagamento|Rilevamenti in tempo reale|30|
-|ATP P1-test a pagamento ATP P2 Trial|Esplora minacce|7 |
-|Trial ATP P2|Esplora minacce|7 |
-|ATP P2 paid|Esplora minacce|30|
+|Microsoft Defender per la versione di valutazione di Office 365 P1|Rilevamenti in tempo reale|7 |
+|Microsoft Defender per Office 365 P1 pagato|Rilevamenti in tempo reale|30|
+|Microsoft Defender per Office 365 P1 ha pagato testing difensore per Office 365 P2 Trial|Esplora minacce|7 |
+|Microsoft Defender per la versione di valutazione di Office 365 P2|Esplora minacce|7 |
+|Microsoft Defender per Office 365 P2 pagato|Esplora minacce|30|
 |
 
 Utilizzare il menu **Visualizza** per modificare le informazioni visualizzate. Le descrizioni comandi consentono di determinare la visualizzazione da utilizzare.
@@ -98,7 +98,7 @@ Per visualizzare questo report, in Esplora risorse (o rilevamenti in tempo reale
 
 Fare clic su **sender** per aprire l'elenco delle opzioni di visualizzazione. Utilizzare questo elenco per visualizzare le informazioni per mittente, destinatario, tipo di rapporto (la determinazione dell'utente che la posta elettronica è indesiderata, non indesiderata o phishing) e altro ancora.
 
-Ad esempio, per visualizzare informazioni sui messaggi di posta elettronica segnalati come tentativi di phishing **Sender**, fare clic su  >  **tipo di rapporto**mittente, selezionare **phishing**e quindi fare clic sul pulsante Aggiorna.
+Ad esempio, per visualizzare informazioni sui messaggi di posta elettronica segnalati come tentativi di phishing **Sender** , fare clic su  >  **tipo di rapporto** mittente, selezionare **phishing** e quindi fare clic sul pulsante Aggiorna.
 
 ![Phishing selezionato per il filtro dei tipi di report](../../media/ThreatExplorerEmailUserReportedPhishSelected.png)
 
@@ -113,9 +113,9 @@ Selezionare un elemento nell'elenco per visualizzare ulteriori dettagli.
 Per visualizzare questo report, in Esplora, scegliere **Visualizza**  >  **posta elettronica**  >  **tutti i messaggi**. Questa visualizzazione Mostra una panoramica completa dell'attività di posta elettronica, inclusi i messaggi di posta elettronica identificati come dannosi a causa di phishing o malware, nonché tutti i messaggi non dannosi (posta elettronica normale, posta indesiderata e messaggi in blocco).
 
 > [!NOTE]
-> Se viene visualizzato un messaggio di errore in cui vengono letti **troppi dati da visualizzare**, aggiungere un filtro e, se necessario, limitare l'intervallo di date che si sta visualizzando.
+> Se viene visualizzato un messaggio di errore in cui vengono letti **troppi dati da visualizzare** , aggiungere un filtro e, se necessario, limitare l'intervallo di date che si sta visualizzando.
 
-Per applicare un filtro, scegliere **mittente**, selezionare un elemento nell'elenco e quindi fare clic sul pulsante Aggiorna. In questo esempio, è stata utilizzata la **tecnologia di rilevamento** come filtro (sono disponibili diverse opzioni). Visualizzare le informazioni per mittente, dominio del mittente, destinatari, oggetto, nome file allegato, famiglia di malware, stato di protezione (azioni intraprese dalle caratteristiche e dai criteri di protezione dalle minacce in Office 365), tecnologia di rilevamento (come è stato rilevato il malware) e altro ancora.
+Per applicare un filtro, scegliere **mittente** , selezionare un elemento nell'elenco e quindi fare clic sul pulsante Aggiorna. In questo esempio, è stata utilizzata la **tecnologia di rilevamento** come filtro (sono disponibili diverse opzioni). Visualizzare le informazioni per mittente, dominio del mittente, destinatari, oggetto, nome file allegato, famiglia di malware, stato di protezione (azioni intraprese dalle caratteristiche e dai criteri di protezione dalle minacce in Office 365), tecnologia di rilevamento (come è stato rilevato il malware) e altro ancora.
 
 ![Visualizzare i dati relativi alla posta elettronica individuata mediante tecnologia di rilevamento](../../media/0c032eb3-6021-4174-9f06-ff8f30c245ca.png)
 
@@ -123,7 +123,7 @@ Al di sotto del grafico, visualizzare ulteriori dettagli su messaggi di posta el
 
 ## <a name="content--malware"></a>Contenuto > malware
 
-Per visualizzare questo report, in Esplora risorse (o rilevamenti in tempo reale), scegliere **View**  >  **Content**  >  **malware**. Questa visualizzazione Mostra i file che sono stati identificati come dannosi da [Office 365 Advanced Threat Protection in SharePoint Online, OneDrive for business e Microsoft teams](atp-for-spo-odb-and-teams.md).
+Per visualizzare questo report, in Esplora risorse (o rilevamenti in tempo reale), scegliere **View**  >  **Content**  >  **malware**. Questa visualizzazione Mostra i file che sono stati identificati come dannosi da [Microsoft Defender per Office 365 in SharePoint Online, OneDrive for business e Microsoft teams](atp-for-spo-odb-and-teams.md).
 
 Consente di visualizzare le informazioni per la famiglia di malware, la tecnologia di rilevamento (come è stato rilevato il malware) e il carico di lavoro (OneDrive, SharePoint o Teams).
 
@@ -139,7 +139,7 @@ Con Esplora risorse (e rilevamenti in tempo reale), è possibile applicare un fi
 
 Facendo clic su **detonazione ATP** in questo grafico viene visualizzato un risultato simile al seguente:
 
-![Filtro Esplora risorse per visualizzare solo i risultati di detonazione ATP](../../media/7241d7dd-27bc-467d-9db8-6e806c49df14.png)
+![Explorer filtrato per visualizzare solo i risultati di detonazione di Defender per Office 365](../../media/7241d7dd-27bc-467d-9db8-6e806c49df14.png)
 
 In questa visualizzazione, vengono ora esaminati i dati per i file che sono stati detonati da [allegati sicuri](atp-safe-attachments.md). Al di sotto del grafico, è possibile visualizzare i dettagli relativi a messaggi di posta elettronica specifici che sono stati rilevati da allegati sicuri.
 

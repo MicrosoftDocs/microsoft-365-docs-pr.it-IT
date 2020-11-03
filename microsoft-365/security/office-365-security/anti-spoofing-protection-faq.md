@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 description: Gli amministratori possono visualizzare le domande frequenti e le risposte sulla protezione anti-spoofing in Exchange Online Protection (EOP).
-ms.openlocfilehash: 3b1a30541c46383284203eee61d8b6679ac3b493
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: a5b0484e41e3df7a7b6ad16e69a4f7062b19b554
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48445712"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48844393"
 ---
 # <a name="anti-spoofing-protection-faq"></a>Domande frequenti sulla protezione anti-spoofing
 
@@ -45,11 +45,9 @@ Quando Microsoft ha abilitato questa funzionalità in 2018, sono successe alcune
 
 Microsoft stesso ha adottato prima i nuovi requisiti di autenticazione della posta elettronica diverse settimane prima di distribuirlo ai clienti. Anche se all'inizio si è verificato un problema di disgregazione, ed è diminuito gradualmente.
 
-## <a name="is-spoof-intelligence-available-to-microsoft-365-customers-without-atp"></a>L'intelligenza spoof è disponibile per i clienti Microsoft 365 senza ATP?
+## <a name="is-spoof-intelligence-available-to-microsoft-365-customers-without-defender-for-office-365"></a>L'intelligence spoof è disponibile per i clienti Microsoft 365 senza Defender per Office 365?
 
 Sì. A ottobre 2018, l'intelligence spoof è disponibile per tutte le organizzazioni con cassette postali in Exchange Online e organizzazioni di EOP autonome senza cassette postali di Exchange Online.
-
-La tecnologia anti-spoofing è stata inizialmente disponibile solo in Office 365 Advanced Threat Protection. Ad esempio, abbonamenti Microsoft E5 o componenti aggiuntivi ATP.
 
 ## <a name="how-can-i-report-spam-or-non-spam-messages-back-to-microsoft"></a>Come si fa a segnalare messaggi di posta indesiderata o non a Microsoft?
 
@@ -73,12 +71,12 @@ Purtroppo no. I pirati informatici si adattano all'utilizzo di altre tecniche (a
 
 Quasi tutti i servizi di posta elettronica di grandi dimensioni implementano i tradizionali controlli SPF, DKIM e DMARC. Alcuni servizi dispongono di altri controlli più rigorosi, ma alcuni si spostano fino a EOP per bloccare la posta elettronica non autenticata e trattarli come messaggi falsificati. Tuttavia, il settore è sempre più attento ai problemi relativi alla posta elettronica non autenticata, in particolare a causa del problema del phishing.
 
-## <a name="do-i-still-need-to-enable-the-advanced-spam-filter-setting-spf-record-hard-fail-_markasspamspfrecordhardfail_-if-i-enable-anti-spoofing"></a>È ancora necessario abilitare l'impostazione del filtro di posta indesiderata avanzata "record SPF: non riuscito" (_MarkAsSpamSpfRecordHardFail_) se si Abilita l'anti-spoofing?
+## <a name="do-i-still-need-to-enable-the-advanced-spam-filter-setting-spf-record-hard-fail-_markasspamspfrecordhardfail_-if-i-enable-anti-spoofing"></a>È ancora necessario abilitare l'impostazione del filtro di posta indesiderata avanzata "record SPF: non riuscito" ( _MarkAsSpamSpfRecordHardFail_ ) se si Abilita l'anti-spoofing?
 
-No. Questa impostazione ASF non è più necessaria. La protezione anti-spoofing considera entrambi i guasti SPF e un insieme di criteri molto più ampio. Se è abilitata la funzionalità di anti-spoofing e il **record SPF: non riuscito** (_MarkAsSpamSpfRecordHardFail_) è attivato, è probabile che vengano configurati più falsi positivi.
+No. Questa impostazione ASF non è più necessaria. La protezione anti-spoofing considera entrambi i guasti SPF e un insieme di criteri molto più ampio. Se è abilitata la funzionalità di anti-spoofing e il **record SPF: non riuscito** ( _MarkAsSpamSpfRecordHardFail_ ) è attivato, è probabile che vengano configurati più falsi positivi.
 
 Si consiglia di disabilitare questa funzionalità poiché non fornisce quasi nessun vantaggio aggiuntivo per il rilevamento di messaggi di posta indesiderata o di phishing e genera invece falsi positivi principalmente. Per ulteriori informazioni, vedere [Advanced Spam Filter (ASF) Settings in EOP](advanced-spam-filtering-asf-options.md).
 
 ## <a name="does-sender-rewriting-scheme-help-fix-forwarded-email"></a>Lo schema di riscrittura del mittente aiuta a risolvere il messaggio di posta elettronica inoltrato?
 
-L’SRS risolve solo parzialmente il problema del messaggio di posta elettronica inoltrato. Riscrivendo la **posta SMTP da**, SRS può garantire che il messaggio inoltrato passi SPF alla prossima destinazione. Tuttavia, poiché l'anti-spoofing è basato sull'indirizzo **from** in combinazione con il dominio di **posta elettronica o di** DKIM (o altri segnali), non è sufficiente impedire che la posta elettronica inoltrata dal servizio SRS venga contrassegnata come contraffatta.
+L’SRS risolve solo parzialmente il problema del messaggio di posta elettronica inoltrato. Riscrivendo la **posta SMTP da** , SRS può garantire che il messaggio inoltrato passi SPF alla prossima destinazione. Tuttavia, poiché l'anti-spoofing è basato sull'indirizzo **from** in combinazione con il dominio di **posta elettronica o di** DKIM (o altri segnali), non è sufficiente impedire che la posta elettronica inoltrata dal servizio SRS venga contrassegnata come contraffatta.

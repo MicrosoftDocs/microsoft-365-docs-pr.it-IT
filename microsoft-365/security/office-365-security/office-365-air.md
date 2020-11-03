@@ -21,12 +21,12 @@ description: Iniziare a utilizzare le funzionalità di analisi e risposta automa
 ms.custom:
 - air
 - seo-marvel-mar2020
-ms.openlocfilehash: 340fc4851043ff917eaff6f237c3ad7d5810a4cb
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: 54dbd419380c18e23119887c93a71885c6f9ce7d
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48430920"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48845805"
 ---
 # <a name="get-started-using-automated-investigation-and-response-air-in-office-365"></a>Iniziare a usare l'analisi e la risposta automatizzate (AIR) in Office 365
 
@@ -34,7 +34,7 @@ ms.locfileid: "48430920"
 
 [Microsoft Defender per Office 365](office-365-atp.md) include potenti funzionalità di analisi e risposta (aria) automatizzate in grado di salvare il tempo e lo sforzo del team per le operazioni di sicurezza. Quando vengono attivati gli avvisi, spetta al team delle operazioni di sicurezza esaminare, assegnare priorità e rispondere a tali avvisi. Tenere il passo con il volume degli avvisi in ingresso può essere travolgente. Automatizzare alcune di queste informazioni può essere di aiuto. Con AIR, il team delle operazioni di sicurezza può concentrarsi sulle attività con priorità più alta senza perdere di vista gli avvisi attivati.
 
-In questo articolo sono inclusi i seguenti:
+In questo articolo sono inclusi gli argomenti seguenti:
 - Il [flusso globale](#the-overall-flow-of-air) di aria;
 - [Come ottenere aria](#how-to-get-air); e 
 - Le [autorizzazioni necessarie](#required-permissions-to-use-air-capabilities) per configurare o utilizzare le funzionalità aeree. 
@@ -62,7 +62,7 @@ A livello elevato viene attivato un avviso e un playbook di sicurezza avvia un'i
     Poiché le azioni di correzione in sospeso sono approvate (o rifiutate), l'analisi automatizzata viene completata.
 
 > [!NOTE]
-> In Office 365 ATP, non viene eseguita automaticamente alcuna azione di correzione. Le azioni di correzione vengono eseguite solo dopo l'approvazione da parte del team di sicurezza dell'organizzazione. 
+> In Microsoft Defender per Office 365, non vengono eseguite automaticamente azioni di correzione. Le azioni di correzione vengono eseguite solo dopo l'approvazione da parte del team di sicurezza dell'organizzazione. 
 
 Durante e dopo un processo di analisi automatizzato, il team di sicurezza può eseguire le operazioni seguenti:
 

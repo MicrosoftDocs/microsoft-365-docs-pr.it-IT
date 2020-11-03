@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 ROBOTS: NOINDEX
 description: Gli amministratori possono imparare a usare i tag di quarantena per controllare quali utenti sono in grado di eseguire nei messaggi in quarantena.
-ms.openlocfilehash: 89f03795d8f12b3df3e5090648c5a6c8b64c322a
-ms.sourcegitcommit: 676479f1e65492b44c4d0316a765f55ae9fae374
+ms.openlocfilehash: e50d7eea4cec3c87231dda855725b1e901f5fa33
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2020
-ms.locfileid: "48819741"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48845697"
 ---
 # <a name="quarantine-tags"></a>Tag di quarantena
 
@@ -68,11 +68,11 @@ Se non si desiderano le autorizzazioni predefinite nei gruppi di autorizzazioni 
 
 ## <a name="step-1-create-quarantine-tags-in-the-security--compliance-center"></a>Passaggio 1: creare tag di quarantena nel centro sicurezza & Compliance
 
-1. Nel centro sicurezza & conformità, accedere a criteri di **gestione delle minacce** \> **Policy** e quindi selezionare i **tag di quarantena** .
+1. Nel centro sicurezza & conformità, accedere a criteri di **gestione delle minacce** \> **Policy** e quindi selezionare i **tag di quarantena**.
 
-2. Nella pagina dei **tag di quarantena** , selezionare **Aggiungi tag personalizzato** .
+2. Nella pagina dei **tag di quarantena** , selezionare **Aggiungi tag personalizzato**.
 
-3. Verrà visualizzata la procedura guidata **nuovo tag** . Nella pagina **nome tag** immettere un nome breve ma univoco nel campo **nome tag** . È necessario identificare e selezionare il tag per nome nei passaggi imminenti. Al termine dell'operazione, fare clic su **Avanti** .
+3. Verrà visualizzata la procedura guidata **nuovo tag** . Nella pagina **nome tag** immettere un nome breve ma univoco nel campo **nome tag** . È necessario identificare e selezionare il tag per nome nei passaggi imminenti. Al termine dell'operazione, fare clic su **Avanti**.
 
 4. Nella pagina **accesso ai messaggi destinatario** selezionare uno dei valori seguenti:
    - **Nessun accesso**
@@ -96,11 +96,11 @@ Se non si desiderano le autorizzazioni predefinite nei gruppi di autorizzazioni 
 
    Queste autorizzazioni e il loro effetto sui messaggi in quarantena e nelle notifiche di posta indesiderata dell'utente finale sono descritte nella sezione [informazioni sulle autorizzazioni dei tag di quarantena](#quarantine-tag-permission-details) più avanti in questo articolo.
 
-   Al termine dell'operazione, fare clic su **Avanti** .
+   Al termine dell'operazione, fare clic su **Avanti**.
 
 5. Nella pagina **Riepilogo** visualizzata, esaminare le impostazioni. È possibile fare clic su **modifica** su ogni impostazione per modificarla.
 
-   Al termine, fare clic su **Invia** .
+   Al termine, fare clic su **Invia**.
 
 6. Fare clic su **fine** nella pagina di conferma che viene visualizzata.
 
@@ -229,7 +229,7 @@ Nelle funzionalità di protezione _supportate_ che consentono di mettere in quar
 |Funzionalità|I tag di quarantena sono supportati?|Tag di quarantena predefiniti utilizzati|
 |---|:---:|---|
 |[Criteri di protezione da posta indesiderata](configure-your-spam-filter-policies.md): <ul><li>**Posta indesiderata** ( _SpamAction_ )</li><li>**Posta indesiderata con elevata sicurezza** ( _HighConfidenceSpamAction_ )</li><li>**Messaggi di posta elettronica di phishing** ( _PhishSpamAction_ )</li><li>**Posta elettronica di phishing con elevata sicurezza** ( _HighConfidencePhishAction_ )</li><li>**Messaggi di posta elettronica in blocco** ( _BulkSpamAction_ )</li></ul>|Sì|<ul><li>DefaultSpamTag (accesso completo)</li><li>DefaultHighConfSpamTag (accesso completo)</li><li>DefaultPhishTag (accesso completo)</li><li>DefaultHighConfPhishTag (nessun accesso)</li><li>DefaultBulkTag (accesso completo)</li></ul>
-|Criteri di anti-phishing: <ul><li>[Protezione di intelligence spoof](set-up-anti-phishing-policies.md#spoof-settings) ( _AuthenticationFailAction_ )</li><li>[Protezione della rappresentazione](set-up-anti-phishing-policies.md#impersonation-settings-in-atp-anti-phishing-policies):<sup>\*</sup> <ul><li>**Se il messaggio di posta elettronica viene inviato da un utente rappresentato** ( _TargetedUserProtectionAction_ )</li><li>**Se il messaggio di posta elettronica viene inviato da un dominio rappresentato** ( _TargetedDomainProtectionAction_ )</li><li>Intelligence delle cassette **postali** \> **Se il messaggio di posta elettronica viene inviato da un utente rappresentato** ( _MailboxIntelligenceProtectionAction_ )</li></ul></li></ul></ul>|No|n/d|
+|Criteri di anti-phishing: <ul><li>[Protezione di intelligence spoof](set-up-anti-phishing-policies.md#spoof-settings) ( _AuthenticationFailAction_ )</li><li>[Protezione della rappresentazione](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365):<sup>\*</sup> <ul><li>**Se il messaggio di posta elettronica viene inviato da un utente rappresentato** ( _TargetedUserProtectionAction_ )</li><li>**Se il messaggio di posta elettronica viene inviato da un dominio rappresentato** ( _TargetedDomainProtectionAction_ )</li><li>Intelligence delle cassette **postali** \> **Se il messaggio di posta elettronica viene inviato da un utente rappresentato** ( _MailboxIntelligenceProtectionAction_ )</li></ul></li></ul></ul>|No|n/d|
 |[Criteri anti-malware](configure-anti-malware-policies.md): tutti i messaggi rilevati vengono sempre messi in quarantena.|No|n/d|
 |[ATP per SharePoint, OneDrive e Microsoft Teams](atp-for-spo-odb-and-teams.md)|No|n/d|
 |[Regole del flusso di posta](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) (note anche come regole di trasporto) con l'azione: **recapitare il messaggio alla quarantena ospitata** ( _Quarantine_ ).|No|n/d|
@@ -243,7 +243,7 @@ Se si è soddisfatti delle autorizzazioni dell'utente finale fornite dai tag di 
 
 Le istruzioni complete per la creazione e la modifica dei criteri di protezione da posta indesiderata sono descritte in [Configure anti-spam Policies in EOP](configure-your-spam-filter-policies.md).
 
-1. Nel centro sicurezza & conformità, accedere a criteri di **gestione delle minacce** \> **Policy** \> e quindi selezionare **protezione da posta indesiderata** . In alternativa, aprire <https://protection.office.com/antispam> .
+1. Nel centro sicurezza & conformità, accedere a criteri di **gestione delle minacce** \> **Policy** \> e quindi selezionare **protezione da posta indesiderata**. In alternativa, aprire <https://protection.office.com/antispam> .
 
 2. Individuare e selezionare un criterio di protezione da posta indesiderata esistente da modificare o creare un nuovo criterio di protezione dalla posta indesiderata.
 
@@ -255,7 +255,7 @@ Le istruzioni complete per la creazione e la modifica dei criteri di protezione 
   
    ![Selezioni dei tag di quarantena in un criterio di protezione da posta indesiderata](../../media/quarantine-tags-in-anti-spam-policies.png)
 
-5. Al termine, scegliere **Salva** .
+5. Al termine, scegliere **Salva**.
 
 #### <a name="assign-quarantine-tags-in-anti-spam-policies-in-powershell"></a>Assegnare i tag di quarantena nei criteri di protezione da posta indesiderata in PowerShell
 
@@ -304,9 +304,9 @@ Per informazioni dettagliate su sintassi e parametri, vedere [Set-HostedContentF
 
 Le impostazioni globali per i tag Quarantine consentono di personalizzare le notifiche di posta indesiderata dell'utente finale inviate ai destinatari dei messaggi in quarantena. Per ulteriori informazioni su queste notifiche, vedere [notifiche di posta indesiderata dell'utente finale](use-spam-notifications-to-release-and-report-quarantined-messages.md).
 
-1. Nel centro sicurezza & conformità, accedere a criteri di **gestione delle minacce** \> **Policy** e quindi selezionare i **tag di quarantena** .
+1. Nel centro sicurezza & conformità, accedere a criteri di **gestione delle minacce** \> **Policy** e quindi selezionare i **tag di quarantena**.
 
-2. Nella pagina **tag di quarantena** selezionare **Impostazioni globali** .
+2. Nella pagina **tag di quarantena** selezionare **Impostazioni globali**.
 
 3. Nel riquadro a comparsa **delle impostazioni di notifica per la quarantena** che si apre, configurare alcune o tutte le impostazioni seguenti:
 
@@ -318,7 +318,7 @@ Le impostazioni globali per i tag Quarantine consentono di personalizzare le not
 
    - **Scegliere la lingua** : le notifiche di posta indesiderata dell'utente finale sono già localizzate in base alle impostazioni della lingua del destinatario. È possibile specificare testo personalizzato in lingue diverse per il **nome visualizzato** e i valori di dichiarazione di non **responsabilità** .
 
-     Selezionare almeno una lingua nella prima casella della lingua e quindi fare clic su **Aggiungi** . È possibile selezionare più lingue facendo clic su **Aggiungi** dopo ogni. Una casella della lingua della sezione Visualizza tutte le lingue selezionate:
+     Selezionare almeno una lingua nella prima casella della lingua e quindi fare clic su **Aggiungi**. È possibile selezionare più lingue facendo clic su **Aggiungi** dopo ogni. Una casella della lingua della sezione Visualizza tutte le lingue selezionate:
 
      ![Lingue selezionate nella seconda lingua nelle impostazioni di notifica della quarantena globale dei tag di quarantena](../../media/quarantine-tags-esn-customization-selected-languages.png)
 
@@ -340,7 +340,7 @@ Le impostazioni globali per i tag Quarantine consentono di personalizzare le not
 
 ## <a name="view-quarantine-tags-in-the-security--compliance-center"></a>Visualizzare i tag per la quarantena nel centro sicurezza & Compliance
 
-1. Nel centro sicurezza & conformità, accedere a criteri di **gestione delle minacce** \> **Policy** e quindi selezionare i **tag di quarantena** .
+1. Nel centro sicurezza & conformità, accedere a criteri di **gestione delle minacce** \> **Policy** e quindi selezionare i **tag di quarantena**.
 
 - Per visualizzare le impostazioni dei tag di quarantena incorporati o personalizzati, selezionare il tag Quarantine nell'elenco (non selezionare la casella di controllo).
 
@@ -384,9 +384,9 @@ Per informazioni dettagliate su sintassi e parametri, vedere [Get-HostedContentF
 
   Se viene utilizzato il tag Quarantine, [sostituire il tag di quarantena assegnato prima di](#step-2-assign-a-quarantine-tag-to-supported-features) rimuoverlo.
 
-1. Nel centro sicurezza & conformità, accedere a criteri di **gestione delle minacce** \> **Policy** e quindi selezionare i **tag di quarantena** .
+1. Nel centro sicurezza & conformità, accedere a criteri di **gestione delle minacce** \> **Policy** e quindi selezionare i **tag di quarantena**.
 
-2. Nella pagina dei **tag di quarantena** selezionare il tag di quarantena personalizzato che si desidera rimuovere e il tag fare clic su **Elimina** .
+2. Nella pagina dei **tag di quarantena** selezionare il tag di quarantena personalizzato che si desidera rimuovere e il tag fare clic su **Elimina**.
 
 3. Fare clic su **Rimuovi tag** nella finestra di dialogo di conferma che viene visualizzata.
 

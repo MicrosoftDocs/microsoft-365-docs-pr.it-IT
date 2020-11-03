@@ -1,5 +1,5 @@
 ---
-title: Office 365 Advanced Threat Protection
+title: Microsoft Defender per Office 365
 f1.keywords:
 - CSH
 ms.author: tracyp
@@ -19,41 +19,41 @@ ms.collection:
 - m365initiative-m365-defender
 ms.custom:
 - seo-marvel-apr2020
-description: Office 365 Advanced Threat Protection include allegati e collegamenti sicuri, strumenti avanzati anti-phishing, strumenti di report e funzionalità Threat Intelligence.
-ms.openlocfilehash: 8acf38cc61f2789c407a80200b97269043bab95e
-ms.sourcegitcommit: 153f413402f93b79be421741f3b9fed318d6d270
+description: Microsoft Defender per Office 365 include allegati e collegamenti sicuri, strumenti avanzati anti-phishing, strumenti di report e funzionalità Threat Intelligence.
+ms.openlocfilehash: a822c3ab8e065d9349172731e2081799853be637
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48600518"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48845781"
 ---
-# <a name="office-365-advanced-threat-protection-atp"></a>Office 365 Advanced Threat Protection (ATP)
+# <a name="microsoft-defender-for-office-365"></a>Microsoft Defender per Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
 > [!IMPORTANT]
-> Questo articolo è rivolto ai clienti aziendali di [Office 365 Advanced Threat Protection](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description). Se si utilizza Outlook.com, Microsoft 365 Family o Microsoft 365 Personal e si cercano informazioni su Collegamenti sicuri o Allegati sicuri in Outlook, vedere [Sicurezza avanzata Outlook.com per gli abbonati a Microsoft 365](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2).
+> Questo articolo è rivolto ai clienti aziendali di [Microsoft Defender per Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description). Se si utilizza Outlook.com, Microsoft 365 Family o Microsoft 365 Personal e si cercano informazioni su Collegamenti sicuri o Allegati sicuri in Outlook, vedere [Sicurezza avanzata Outlook.com per gli abbonati a Microsoft 365](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2).
 
-Office 365 Advanced Threat Protection (ATP) protegge l'organizzazione dalle minacce dannose rappresentate da messaggi di posta elettronica, collegamenti (URL) e strumenti di collaborazione. ATP include:
+Microsoft Defender per Office 365 protegge l'organizzazione dalle minacce dannose rappresentate da messaggi di posta elettronica, collegamenti (URL) e strumenti di collaborazione. Defender per Office 365 include:
 
-- **[Criteri di protezione dalle minacce](#configure-atp-policies)**: consente di definire i criteri di protezione dalle minacce per impostare il livello di protezione appropriato per l'organizzazione.
+- **[Criteri di protezione dalle minacce](#configure-microsoft-defender-for-office-365-policies)** : consente di definire i criteri di protezione dalle minacce per impostare il livello di protezione appropriato per l'organizzazione.
 
-- **[Report](#view-office-365-atp-reports)**: consente di visualizzare report in tempo reale per monitorare le prestazioni ATP dell'organizzazione.
+- **[Report](#view-microsoft-defender-for-office-365-reports)** : consente di visualizzare report in tempo reale per monitorare le prestazioni di Defender per Office 365 dell'organizzazione.
 
-- **[Funzionalità di analisi e risposta alle minacce](#use-threat-investigation-and-response-capabilities)**: consente di utilizzare strumenti all'avanguardia per analizzare, comprendere, simulare e prevenire minacce.
+- **[Funzionalità di analisi e risposta alle minacce](#use-threat-investigation-and-response-capabilities)** : consente di utilizzare strumenti all'avanguardia per analizzare, comprendere, simulare e prevenire minacce.
 
-- **[Funzionalità di analisi e risposta automatizzate](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air)**: consente di risparmiare tempo e fatica nell'analisi e nell'attenuazione delle minacce.
+- **[Funzionalità di analisi e risposta automatizzate](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air)** : consente di risparmiare tempo e fatica nell'analisi e nell'attenuazione delle minacce.
 
-## <a name="getting-started"></a>Introduzione
+## <a name="getting-started"></a>Riquadro attività iniziale
 
-Se non si ha familiarità con Office 365 Advanced Threat Protection o per *fare pratica*, potrebbe essere utile dividere la configurazione iniziale ATP in blocchi, analizzarla e visualizzare i report usando questo articolo come riferimento. Di seguito sono riportati i primi blocchi di configurazione:
+Se non si ha familiarità con Microsoft Defender per Office 365 o per *fare pratica* , potrebbe essere utile dividere la configurazione iniziale di Defender per Office 365 in blocchi, analizzarla e visualizzare i report usando questo articolo come riferimento. Di seguito sono riportati i primi blocchi di configurazione:
 
-- Configurare tutto con "*anti*" nel nome.
+- Configurare tutto con " *anti* " nel nome.
     - anti-malware
     - anti-phishing
     - anti-spam
-- Configurare tutto con "*sicuri*" nel nome.
+- Configurare tutto con " *sicuri* " nel nome.
     - collegamenti sicuri
     - allegati sicuri
 - Difendere i carichi di lavoro (ad esempio SharePoint Online, OneDrive e Teams) 
@@ -62,51 +62,51 @@ Se non si ha familiarità con Office 365 Advanced Threat Protection o per *fare 
 Per altre informazioni, [fare clic su questo collegamento](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats?view=o365-worldwide&preserve-view=true). 
 
 > [!NOTE]
-> ATP include due diversi tipi di piano. È possibile stabilire se si dispone di **Piano 1** se sono presenti "protezione in tempo reale" e **Piano 2**, se si dispone di Cronologia minacce. Il piano di cui si dispone influisce sugli strumenti visualizzati, quindi assicurarsi di conoscere il piano durante l’apprendimento.
+> Microsoft Defender per Office 365 è disponibile in due diversi tipi di piani. È possibile stabilire se si dispone di **Piano 1** se sono presenti "protezione in tempo reale" e **Piano 2** , se si dispone di Cronologia minacce. Il piano di cui si dispone influisce sugli strumenti visualizzati, quindi assicurarsi di conoscere il piano durante l’apprendimento.
 
-## <a name="office-365-atp-plan-1-and-plan-2"></a>Office 365 ATP - Piano 1 e Piano 2
+## <a name="microsoft-defender-for-office-365-plan-1-and-plan-2"></a>Microsoft Defender per Office 365 Piano 1 e Piano 2
 
 La tabella seguente riepiloga cosa è incluso in ogni piano.
 
 ****
 
-|Office 365 ATP Piano 1|Office 365 ATP Piano 2|
+|Microsoft Defender per Office 365 Piano 1|Microsoft Defender per Office 365 Piano 2|
 |---|---|
-|<br/>Funzionalità di configurazione, protezione e rilevamento: <ul><li>[Allegati sicuri](atp-safe-attachments.md)</li><li>[Collegamenti sicuri](atp-safe-links.md)</li><li>[ATP per SharePoint, OneDrive e Microsoft Teams](atp-for-spo-odb-and-teams.md)</li><li>[Protezione anti-phishing ATP](set-up-anti-phishing-policies.md#exclusive-settings-in-atp-anti-phishing-policies)</li><li>[Rilevamenti in tempo reale](threat-explorer.md)</li></ul>|Funzionalità di Office 365 ATP Piano 1<br/>--- più ---<br/>Funzionalità di automazione, analisi, correzione e formazione:</li><li>[Tracker delle minacce](threat-trackers.md)</li><li>[Esplora minacce](threat-explorer.md)</li><li>[Analisi e risposta automatizzate](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air)</li><li>[Simulatore di attacchi](attack-simulator.md)</li></ul>|
+|<br/>Funzionalità di configurazione, protezione e rilevamento: <ul><li>[Allegati sicuri](atp-safe-attachments.md)</li><li>[Collegamenti sicuri](atp-safe-links.md)</li><li>[ATP per SharePoint, OneDrive e Microsoft Teams](atp-for-spo-odb-and-teams.md)</li><li>[Anti-phishing in Defender per la protezione di Office 365](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)</li><li>[Rilevamenti in tempo reale](threat-explorer.md)</li></ul>|Funzionalità di Microsoft Defender per Office 365 Piano 1<br/>--- più ---<br/>Funzionalità di automazione, analisi, correzione e formazione:</li><li>[Tracker delle minacce](threat-trackers.md)</li><li>[Esplora minacce](threat-explorer.md)</li><li>[Analisi e risposta automatizzate](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air)</li><li>[Simulatore di attacchi](attack-simulator.md)</li></ul>|
 |
 
-- Office 365 ATP Piano 2 è incluso in Office 365 E5, Office 365 A5, Microsoft 365 E5 Security e Microsoft 365 E5.
+- Microsoft Defender per Office 365 Piano 2 è incluso in Office 365 E5, Office 365 A5, Microsoft 365 E5 Security e Microsoft 365 E5.
 
-- Office 365 ATP Piano 1 è incluso in Microsoft 365 Business Premium.
+- Microsoft Defender per Office 365 Piano 1 è incluso in Microsoft 365 Business Premium.
 
-- Office 365 ATP Piano 1 e Office 365 ATP Piano 2 sono disponibili come componenti aggiuntivi per alcuni abbonamenti. Per altre informazioni, vedere [Disponibilità delle funzionalità tra i piani di Advanced Threat Protection (ATP)](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans).
+- Microsoft Defender per Office 365 Piano 1 e Microsoft Defender per Office 365 Piano 2 sono disponibili come componenti aggiuntivi per determinati abbonamenti. Per altre informazioni, vedere [Disponibilità delle funzionalità nei piani di Microsoft Defender per Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans).
 
-- La caratteristica [Documenti sicuri](safe-docs.md) è disponibile solo per gli utenti che dispongono di licenze Microsoft 365 E5 o Microsoft 365 E5 Security (non incluse nei piani di Office 365 ATP).
+- La caratteristica [Documenti sicuri](safe-docs.md) è disponibile solo per gli utenti che dispongono di licenze Microsoft 365 E5 o Microsoft 365 E5 Security (non incluse nei piani di Microsoft Defender per Office 365).
 
-- Se l'abbonamento attuale non include Office 365 ATP, [contattare il reparto vendite per iniziare con una versione di valutazione](https://go.microsoft.com/fwlink/p/?LinkId=518644) e vedere cosa può fare ATP per l'organizzazione.
+- Se l'abbonamento attuale non include Microsoft Defender per Office 365, [contattare il reparto vendite per iniziare con una versione di valutazione](https://go.microsoft.com/fwlink/p/?LinkId=518644) e vedere cosa Microsoft Defender per Office 365 può fare per l'organizzazione.
 
-## <a name="configure-atp-policies"></a>Configurare i criteri ATP
+## <a name="configure-microsoft-defender-for-office-365-policies"></a>Configurazione criteri di Microsoft Defender per Office 365
 
-Con Office 365 ATP il team di sicurezza dell'organizzazione può configurare la protezione definendo criteri nel Centro sicurezza e conformità. A questo scopo, passare a [https://protection.office.com](https://protection.office.com) > **Gestione delle minacce** > **Criteri**.
+Con Microsoft Defender per Office 365, il team di sicurezza dell'organizzazione può configurare la protezione definendo criteri nel Centro sicurezza e conformità. A questo scopo, passare a [https://protection.office.com](https://protection.office.com) > **Gestione delle minacce** > **Criteri**.
 
 > [!TIP]
 > Per un rapido elenco dei criteri da definire, vedere [Protezione dalle minacce](protect-against-threats.md).
 
-## <a name="advanced-threat-protection-policies"></a>Criteri di Advanced Threat Protection
+## <a name="defender-for-office-365-policies"></a>Criteri Defender per Office 365
 
 I criteri definiti per l'organizzazione determinano il comportamento e il livello di protezione per le minacce predefinite. Le opzioni criteri sono estremamente flessibili. Ad esempio, il team di sicurezza dell'organizzazione può impostare la protezione dalle minacce specifiche a livello di utente, organizzazione, destinatari e dominio. È importante rivedere regolarmente i criteri perché ogni giorno emergono nuove minacce e nuove sfide.
 
-- **[Allegati sicuri](atp-safe-attachments.md)**: fornisce protezione zero-day per salvaguardare il sistema di messaggistica, verificando l'eventuale presenza di contenuto dannoso negli allegati di posta elettronica. Consente di instradare in un ambiente speciale tutti i messaggi e gli allegati che non hanno un'impronta digitale del virus o del malware, quindi usa tecniche di apprendimento automatico e analisi per individuare intenti dannosi. Se non vengono rilevate attività sospette, il messaggio viene inoltrato alla cassetta postale. Per altre informazioni, vedere [Configurare i criteri Allegati sicuri](set-up-atp-safe-attachments-policies.md).
+- **[Allegati sicuri](atp-safe-attachments.md)** : fornisce protezione zero-day per salvaguardare il sistema di messaggistica, verificando l'eventuale presenza di contenuto dannoso negli allegati di posta elettronica. Consente di instradare in un ambiente speciale tutti i messaggi e gli allegati che non hanno un'impronta digitale del virus o del malware, quindi usa tecniche di apprendimento automatico e analisi per individuare intenti dannosi. Se non vengono rilevate attività sospette, il messaggio viene inoltrato alla cassetta postale. Per altre informazioni, vedere [Configurare i criteri Allegati sicuri](set-up-atp-safe-attachments-policies.md).
 
-- **[Collegamenti sicuri](atp-safe-links.md)**: consente di verificare gli URL quando gli utenti vi fanno clic, ad esempio nei messaggi di posta elettronica e nei file Office. La protezione è in corso e viene applicata a tutti i messaggi e all'ambiente di Office. I collegamenti vengono analizzati per ogni clic: i collegamenti sicuri rimangono accessibili e i collegamenti dannosi sono bloccati in modo dinamico. Per altre informazioni, vedere [Configurare i criteri Collegamenti sicuri](set-up-atp-safe-links-policies.md).
+- **[Collegamenti sicuri](atp-safe-links.md)** : consente di verificare gli URL quando gli utenti vi fanno clic, ad esempio nei messaggi di posta elettronica e nei file Office. La protezione è in corso e viene applicata a tutti i messaggi e all'ambiente di Office. I collegamenti vengono analizzati per ogni clic: i collegamenti sicuri rimangono accessibili e i collegamenti dannosi sono bloccati in modo dinamico. Per altre informazioni, vedere [Configurare i criteri Collegamenti sicuri](set-up-atp-safe-links-policies.md).
 
-- **[ATP per SharePoint, OneDrive e Microsoft Teams](atp-for-spo-odb-and-teams.md)**: protegge l'organizzazione quando gli utenti collaborano e condividono file, identificando e bloccando i file dannosi nei siti del team e nelle raccolte documenti. Per altre informazioni, vedere [Office 365 ATP per SharePoint, OneDrive e Microsoft Teams](turn-on-atp-for-spo-odb-and-teams.md).
+- **[ATP per SharePoint, OneDrive e Microsoft Teams](atp-for-spo-odb-and-teams.md)** : protegge l'organizzazione quando gli utenti collaborano e condividono file, identificando e bloccando i file dannosi nei siti del team e nelle raccolte documenti. Per altre informazioni, vedere [Attivare Microsoft Defender per Office 365 per SharePoint, OneDrive e Microsoft Teams](turn-on-atp-for-spo-odb-and-teams.md).
 
-- **[Protezione anti-phishing ATP](set-up-anti-phishing-policies.md#exclusive-settings-in-atp-anti-phishing-policies)**: rileva i tentativi di imitare i propri utenti e i domini interni o personalizzati. Applica i modelli di apprendimento automatico e gli algoritmi avanzati di rilevamento delle imitazioni per evitare attacchi di phishing. Per altre informazioni, vedere [Configurare i criteri anti-phishing ATP in Office 365](configure-atp-anti-phishing-policies.md).
+- **[Protezione anti-phishing in Microsoft Defender per Office 365](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)** : rileva i tentativi di imitare i propri utenti e i domini interni o personalizzati. Applica i modelli di apprendimento automatico e gli algoritmi avanzati di rilevamento delle imitazioni per evitare attacchi di phishing. Per altre informazioni, vedere [Configurare i criteri anti-phishing in Microsoft Defender per Office 365](configure-atp-anti-phishing-policies.md).
 
-## <a name="view-office-365-atp-reports"></a>Visualizzare i report di Office 365 ATP
+## <a name="view-microsoft-defender-for-office-365-reports"></a>Visualizzazione report di Microsoft Defender per Office 365
 
-Office 365 ATP include una [dashboard dei report](view-reports-for-atp.md) avanzata per monitorare le prestazioni di ATP. È possibile accedervi da **Report** > **Dashboard** nel Centro sicurezza e conformità.
+Microsoft Defender per Office 365 include un [dashboard avanzato per la creazione di report](view-reports-for-atp.md) per monitorare le prestazioni di Microsoft Defender per Office 365. È possibile accedervi da **Report** > **Dashboard** nel Centro sicurezza e conformità.
 
 I report vengono aggiornati in tempo reale, fornendo le informazioni più recenti. Questi report forniscono anche suggerimenti e inviano avvisi in caso di minacce imminenti. I report predefiniti includono quanto segue:
 
@@ -114,15 +114,15 @@ I report vengono aggiornati in tempo reale, fornendo le informazioni più recent
 
 - [Report dello stato di protezione dalle minacce](view-reports-for-atp.md#threat-protection-status-report)
 
-- [Report sui tipi di file di protezione avanzata delle minacce](view-reports-for-atp.md#advanced-threat-protection-file-types-report)
+- [Report tipi di file per Defender per Office 365](view-reports-for-atp.md#defender-for-office-365-file-types-report)
 
-- [Report eliminazione messaggi di protezione avanzata delle minacce](view-reports-for-atp.md#advanced-threat-protection-message-disposition-report)
+- [Report disposizione messaggi di Defender per Office 365](view-reports-for-atp.md#defender-for-office-365-message-disposition-report)
 
 - ... e molti altri.
 
 ## <a name="use-threat-investigation-and-response-capabilities"></a>Usare le funzionalità di analisi e risposta alle minacce
 
-Office 365 ATP - Piano 2 include i migliori [strumenti per l'analisi e la risposta alle minacce](office-365-ti.md) che consentono al team di sicurezza dell'organizzazione di prevedere, comprendere e prevenire attacchi dannosi.
+Microsoft Defender per Office 365 Piano 2 include i migliori [strumenti per l'analisi e la risposta alle minacce](office-365-ti.md) che consentono al team di sicurezza dell'organizzazione di prevedere, comprendere e prevenire attacchi dannosi.
 
 - I **[tracker](threat-trackers.md)** delle minacce offrono le soluzioni di intelligence più recenti per risolvere gli attuali problemi di sicurezza informatica. Ad esempio, consentono di visualizzare informazioni sull'ultima versione del malware e adottare contromisure prima che diventi una minaccia effettiva per l'organizzazione. I tracker disponibili includono [Tracker degni di nota](threat-trackers.md#noteworthy-trackers), [Tracker di tendenza](threat-trackers.md#trending-trackers), [Query registrate](threat-trackers.md#tracked-queries) e [Query salvate](threat-trackers.md#saved-queries).
 
@@ -132,11 +132,11 @@ Office 365 ATP - Piano 2 include i migliori [strumenti per l'analisi e la rispos
 
 ## <a name="save-time-with-automated-investigation-and-response"></a>Risparmiare tempo con Automated Investigation and Response
 
-(**NOVITÀ!**) Quando si analizza un potenziale cyberattacco, il tempo è un fattore essenziale. Prima vengono identificate e attenuate le minacce, meglio sarà per l'organizzazione. Le funzionalità di [analisi e risposta automatizzate](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air) includono un set di playbook di sicurezza che possono essere avviati automaticamente, ad esempio quando viene generato un avviso, o manualmente, ad esempio da una visualizzazione di Explorer. Grazie alla risposta automatica agli incidenti il team delle operazioni di sicurezza può risparmiare tempo e fatica perché tale funzionalità consente di attenuare le minacce in modo efficace ed efficiente. Per ulteriori informazioni, vedere [Adattatore Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air).
+( **NOVITÀ!** ) Quando si analizza un potenziale cyberattacco, il tempo è un fattore essenziale. Prima vengono identificate e attenuate le minacce, meglio sarà per l'organizzazione. Le funzionalità di [analisi e risposta automatizzate](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air) includono un set di playbook di sicurezza che possono essere avviati automaticamente, ad esempio quando viene generato un avviso, o manualmente, ad esempio da una visualizzazione di Explorer. Grazie alla risposta automatica agli incidenti il team delle operazioni di sicurezza può risparmiare tempo e fatica perché tale funzionalità consente di attenuare le minacce in modo efficace ed efficiente. Per ulteriori informazioni, vedere [Adattatore Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air).
 
-## <a name="permissions-required-to-use-atp-features"></a>Autorizzazioni necessarie per usare le funzionalità di ATP
+## <a name="permissions-required-to-use-microsoft-defender-for-office-365-features"></a>Autorizzazioni necessarie per usare le funzionalità di Microsoft Defender per Office 365
 
-Per accedere alle funzionalità di ATP nel Centro sicurezza e conformità, è necessario disporre di un ruolo appropriato. La tabella seguente include alcuni esempi:
+Per accedere alle funzionalità di Microsoft Defender per Office 365 nel Centro sicurezza e conformità, è necessario disporre di un ruolo appropriato. La tabella seguente include alcuni esempi:
 
 |Ruolo o gruppo di ruoli|Risorse per approfondire|
 |---|---|
@@ -147,28 +147,28 @@ Per accedere alle funzionalità di ATP nel Centro sicurezza e conformità, è ne
 
 Per altre informazioni, vedere [Autorizzazioni nel Centro sicurezza e conformità](permissions-in-the-security-and-compliance-center.md).
 
-## <a name="get-office-365-atp"></a>Ottenere Office 365 ATP
+## <a name="get-microsoft-defender-for-office-365"></a>Ottenere Microsoft Defender per Office 365
 
-Office 365 ATP è incluso in alcuni abbonamenti, ad esempio Microsoft 365 E5, Office 365 E5, Office 365 A5 e Microsoft 365 Business Premium. Se l'abbonamento non include Office 365 ATP, è possibile acquistare ATP - Piano 1 o ATP - Piano 2 come componente aggiuntivo per alcuni abbonamenti. Per altre informazioni, vedere le risorse seguenti:
+Microsoft Defender per Office 365 è incluso in alcuni abbonamenti, ad esempio Microsoft 365 E5, Office 365 E5, Office 365 A5 e Microsoft 365 Business Premium. Se l'abbonamento non include Defender per Office 365, è possibile acquistare Defender per Office 365 Piano 1 o Defender per Office 365 Piano 2 come componente aggiuntivo per determinati abbonamenti. Per altre informazioni, vedere le risorse seguenti:
 
-- [Disponibilità di Office 365 Advanced Threat Protection (ATP)](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#office-365-advanced-threat-protection-atp-availability) per un elenco degli abbonamenti che includono i piani ATP.
+- [Disponibilità di Microsoft Defender per Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#office-365-advanced-threat-protection-atp-availability) per un elenco di abbonamenti che includono i piani per Defender per Office 365.
 
-- [Disponibilità delle funzionalità tra i piani di Advanced Threat Protection (ATP)](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans) per un elenco delle funzionalità incluse in Piano 1 e Piano 2.
+- [Disponibilità delle funzionalità tra i piani di Microsoft Defender per Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans) per un elenco delle funzionalità incluse in Piano 1 e Piano 2.
 
-- [Acquista il piano di Office 365 Advanced Threat Protection più adatto alle tue esigenze](https://products.office.com/exchange/advance-threat-protection#pmg-allup-content) per confrontare e acquistare i piani di Office 365 ATP.
+- [Ottenere il giusto Microsoft Defender per Office 365](https://products.office.com/exchange/advance-threat-protection#pmg-allup-content) per confrontare i piani e acquistare Defender per Office 365.
 
 - [Avviare una versione di versione di valutazione gratuita](https://go.microsoft.com/fwlink/p/?LinkID=698279)
 
-## <a name="new-features-in-office-365-atp"></a>Nuove funzionalità in Office 365 ATP
+## <a name="new-features-in-microsoft-defender-for-office-365"></a>Nuove funzionalità di Microsoft Defender per Office 365
 
-Nuove caratteristiche vengono continuamente aggiunte a Office 365 ATP. Per altre informazioni, vedere le risorse seguenti:
+Nuove funzionalità vengono aggiunte continuamente a Microsoft Defender per Office 365. Per altre informazioni, vedere le risorse seguenti:
 
 - [Roadmap di Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=advanced%2Cthreat%2Cprotection) offre un elenco delle nuove funzionalità in fase di sviluppo e implementazione.
 
-- [Descrizione del servizio Office 365 Advanced Threat Protection](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#whats-new-in-office-365-advanced-threat-protection-atp) illustra le funzionalità e include informazioni sulla disponibilità dei piani ATP.
+- [Descrizione del servizio Microsoft Defender per Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#whats-new-in-office-365-advanced-threat-protection-atp) descrive le funzionalità e la disponibilità nei piani di Defender per Office 365.
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Microsoft Threat Protection](../mtp/microsoft-threat-protection.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
-- [Analisi e risposta automatizzate in Microsoft Threat Protection](../mtp/mtp-autoir.md)
+- [Analisi e risposta automatizzate in Microsoft 365 Defender](../mtp/mtp-autoir.md)

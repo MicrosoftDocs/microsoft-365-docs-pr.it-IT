@@ -20,12 +20,12 @@ description: Informazioni sulle azioni di correzione successive all'analisi auto
 ms.date: 09/29/2020
 ms.custom:
 - air
-ms.openlocfilehash: ffd0429d3dc85371e7b6bb1c2d1246d9820d0e2e
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: c178655d60b45e45680a86c3973317e63c354f17
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48446708"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48844537"
 ---
 # <a name="remediation-actions-following-automated-investigation-in-microsoft-defender-for-office-365"></a>Azioni di correzione successive all'analisi automatizzata in Microsoft Defender per Office 365
 
@@ -53,7 +53,7 @@ Nella tabella seguente sono riepilogate le minacce e le azioni correttive approp
 |Categoria|Rischio/pericolo|Azione di correzione|
 |---|---|---|
 |Posta elettronica|Malware|Eliminazione di messaggi di posta elettronica/cluster soft <br/><br/>Se più di un pugno di messaggi di posta elettronica in un cluster contiene malware, il cluster è considerato dannoso.|
-|Posta elettronica|URL dannoso<br/>(Un URL dannoso è stato rilevato da [collegamenti sicuri in Office 365 ATP](atp-safe-links.md).|Eliminazione di messaggi di posta elettronica/cluster soft <br/><br/>Il messaggio di posta elettronica che contiene un URL dannoso è considerato dannoso.|
+|Posta elettronica|URL dannoso<br/>(Un URL dannoso è stato rilevato da [collegamenti sicuri in Microsoft Defender per Office 365](atp-safe-links.md).|Eliminazione di messaggi di posta elettronica/cluster soft <br/><br/>Il messaggio di posta elettronica che contiene un URL dannoso è considerato dannoso.|
 |Posta elettronica|Phishing|Eliminazione di messaggi di posta elettronica/cluster soft <br/><br/>Se più di un pugno di messaggi di posta elettronica in un cluster contiene tentativi di phishing, il cluster è considerato phishing.|
 |Posta elettronica|Phishing zapped <br/>(I messaggi di posta elettronica sono stati recapitati e [zapping](https://docs.microsoft.com/microsoft-365/security/office-365-security/zero-hour-auto-purge)).|Eliminazione di messaggi di posta elettronica/cluster soft <br/><br/>I report sono disponibili per la visualizzazione dei messaggi zapped. [Vedere se zap ha spostato un messaggio e domande frequenti](https://docs.microsoft.com/microsoft-365/security/office-365-security/zero-hour-auto-purge#how-to-see-if-zap-moved-your-message).|
 |Posta elettronica|Mancato messaggio di posta elettronica di phishing [riportato](https://docs.microsoft.com/microsoft-365/security/office-365-security/enable-the-report-message-add-in) da un utente|[Analisi automatizzata attivata dal rapporto dell'utente](https://docs.microsoft.com/microsoft-365/security/office-365-security/automated-investigation-response-office#example-a-user-reported-phish-message-launches-an-investigation-playbook)|

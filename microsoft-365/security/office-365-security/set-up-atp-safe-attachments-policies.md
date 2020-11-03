@@ -1,5 +1,5 @@
 ---
-title: Configurare i criteri Allegati sicuri in Office 365 ATP
+title: Configurare i criteri per gli allegati sicuri in Microsoft Defender per Office 365
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -17,30 +17,30 @@ ms.collection:
 - M365-security-compliance
 description: Informazioni su come definire i criteri per gli allegati sicuri per proteggere l'organizzazione da file dannosi tramite posta elettronica.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6794cf72afdb94e587e06319f87a406521ad2710
-ms.sourcegitcommit: 3a0accd616ca94d6ba7f50e502552b45e9661a95
+ms.openlocfilehash: ca0bfb7ba91f86fee187cfe3445c0dd6c8d4ad56
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "48350374"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48845493"
 ---
-# <a name="set-up-safe-attachments-policies-in-office-365-atp"></a>Configurare i criteri Allegati sicuri in Office 365 ATP
+# <a name="set-up-safe-attachments-policies-in-microsoft-defender-for-office-365"></a>Configurare i criteri per gli allegati sicuri in Microsoft Defender per Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 > [!IMPORTANT]
-> Questo articolo è destinato ai clienti aziendali che dispongono di [Office 365 Advanced Threat Protection (ATP)](office-365-atp.md). Se si è un utente di casa che cerca informazioni sull'analisi degli allegati in Outlook, vedere [Advanced Outlook.com Security](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2).
+> Questo articolo è destinato ai clienti aziendali che dispongono di [Microsoft Defender per Office 365](office-365-atp.md). Se si è un utente di casa che cerca informazioni sull'analisi degli allegati in Outlook, vedere [Advanced Outlook.com Security](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2).
 
-Allegati sicuri è una funzionalità di [Office 365 Advanced Threat Protection (ATP)](office-365-atp.md) che utilizza un ambiente virtuale per controllare gli allegati nei messaggi di posta elettronica in ingresso dopo che sono stati analizzati dalla [protezione antimalware in Exchange Online Protection (EOP)](anti-malware-protection.md), ma prima del recapito ai destinatari. Per ulteriori informazioni, vedere [Safe Attachments in Office 365 ATP](atp-safe-attachments.md).
+Allegati sicuri è una funzionalità di [Microsoft Defender per Office 365](office-365-atp.md) che utilizza un ambiente virtuale per controllare gli allegati nei messaggi di posta elettronica in ingresso dopo che sono stati analizzati dalla [protezione antimalware in Exchange Online Protection (EOP)](anti-malware-protection.md), ma prima del recapito ai destinatari. Per ulteriori informazioni, vedere [allegati sicuri in Microsoft Defender per Office 365](atp-safe-attachments.md).
 
 Non esiste alcun criterio di allegati sicuri incorporato o predefinito. Per ottenere l'analisi degli allegati sicuri degli allegati dei messaggi di posta elettronica, è necessario creare uno o più criteri per gli allegati sicuri come descritto in questo articolo.
 
-È possibile configurare i criteri per gli allegati sicuri nel centro sicurezza & Compliance o in PowerShell (Exchange Online PowerShell per organizzazioni Microsoft 365 idonee con cassette postali in Exchange Online; standalone EOP PowerShell per le organizzazioni senza cassette postali di Exchange Online, ma con gli abbonamenti del componente aggiuntivo ATP di Office 365).
+È possibile configurare i criteri per gli allegati sicuri nel centro sicurezza & Compliance o in PowerShell (Exchange Online PowerShell per organizzazioni Microsoft 365 idonee con cassette postali in Exchange Online; standalone EOP PowerShell per organizzazioni senza cassette postali di Exchange Online, ma con gli abbonamenti del componente aggiuntivo Defender per Office 365).
 
 Gli elementi di base di un criterio di allegati sicuri sono i seguenti:
 
-- **Criterio**degli allegati sicuri: consente di specificare le azioni per i rilevamenti di malware sconosciuti, se inviare messaggi con allegati malware a un indirizzo di posta elettronica specificato e se recapitare i messaggi se l'analisi degli allegati sicuri non può essere completata.
-- **Regola per gli allegati sicuri**: consente di specificare i filtri priorità e destinatario (a chi si applica il criterio).
+- **Criterio** degli allegati sicuri: consente di specificare le azioni per i rilevamenti di malware sconosciuti, se inviare messaggi con allegati malware a un indirizzo di posta elettronica specificato e se recapitare i messaggi se l'analisi degli allegati sicuri non può essere completata.
+- **Regola per gli allegati sicuri** : consente di specificare i filtri priorità e destinatario (a chi si applica il criterio).
 
 La differenza tra questi due elementi non è ovvia quando si gestiscono i criteri degli allegati sicuri nel centro sicurezza & conformità:
 
@@ -55,7 +55,7 @@ In PowerShell di Exchange Online o in EOP PowerShell autonomo i criteri e la reg
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare?
 
-- Aprire il Centro sicurezza e conformità in <https://protection.office.com/>. Per accedere direttamente alla pagina degli **allegati sicuri di ATP** , utilizzare <https://protection.office.com/safeattachmentv2> .
+- Aprire il Centro sicurezza e conformità in <https://protection.office.com/>. Per passare direttamente alla pagina **allegati sicuri** , utilizzare <https://protection.office.com/safeattachmentv2> .
 
 - Per informazioni su come connettersi a PowerShell per Exchange Online, vedere [Connettersi a PowerShell per Exchange Online](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell). Per connettersi a PowerShell di EOP autonomo, vedere [Connettersi a PowerShell per Exchange Online Protection](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
@@ -78,41 +78,41 @@ La creazione di un criterio di allegati sicuri personalizzato nel centro sicurez
 
 3. Verrà visualizzata la procedura guidata **nuovo criterio allegati sicuri** . Nella pagina **Name Your Policy** , configurare le seguenti impostazioni:
 
-   - **Nome**: immettere un nome univoco descrittivo per il criterio.
+   - **Nome** : immettere un nome univoco descrittivo per il criterio.
 
-   - **Descrizione**: immettere una descrizione opzionale per il criterio.
+   - **Descrizione** : immettere una descrizione opzionale per il criterio.
 
    Al termine dell'operazione, fare clic su **Avanti**.
 
 4. Nella pagina **Impostazioni** che viene visualizzata, configurare le seguenti impostazioni:
 
-   - **Risposta malware per gli allegati sicuri**: selezionare uno dei valori seguenti:
+   - **Risposta malware per gli allegati sicuri** : selezionare uno dei valori seguenti:
 
-     - **Off**: in genere, non è consigliabile questo valore.
+     - **Off** : in genere, non è consigliabile questo valore.
      - **Monitor**
-     - **Block**: questo è il valore predefinito e il valore consigliato nei [criteri di sicurezza preimpostati](preset-security-policies.md)standard e rigorosi.
+     - **Block** : questo è il valore predefinito e il valore consigliato nei [criteri di sicurezza preimpostati](preset-security-policies.md)standard e rigorosi.
      - **Sostituisce**
      - **Recapito dinamico (funzionalità di anteprima)**
 
      Questi valori vengono illustrati nelle [impostazioni dei criteri allegati sicuri](atp-safe-attachments.md#safe-attachments-policy-settings).
 
-   - **Inviare l'allegato all'indirizzo di posta elettronica seguente**: per il **blocco**, il **monitoraggio**o la **sostituzione**dei valori di azione, è possibile selezionare **Abilita reindirizzamento** per inviare messaggi che contengono allegati di malware all'indirizzo di posta elettronica interno o esterno specificato per l'analisi e l'indagine.
+   - **Inviare l'allegato all'indirizzo di posta elettronica seguente** : per il **blocco** , il **monitoraggio** o la **sostituzione** dei valori di azione, è possibile selezionare **Abilita reindirizzamento** per inviare messaggi che contengono allegati di malware all'indirizzo di posta elettronica interno o esterno specificato per l'analisi e l'indagine.
 
      La raccomandazione per le impostazioni dei criteri standard e rigorosa consiste nell'abilitare il reindirizzamento. Per ulteriori informazioni, vedere [impostazioni degli allegati sicuri](recommended-settings-for-eop-and-office365-atp.md#safe-attachments-settings).
 
-   - **Applicare la selezione precedente se la ricerca di malware per gli allegati**non è stata eseguita o si verifica un errore: l'azione specificata dalla **risposta malware Unknown Attachments** è presa sui messaggi anche quando l'analisi degli allegati sicuri non può essere completata. Selezionare sempre questa opzione se si seleziona **reindirizza abilitato**. In caso contrario, è possibile che i messaggi vengano persi.
+   - **Applicare la selezione precedente se la ricerca di malware per gli allegati** non è stata eseguita o si verifica un errore: l'azione specificata dalla **risposta malware Unknown Attachments** è presa sui messaggi anche quando l'analisi degli allegati sicuri non può essere completata. Selezionare sempre questa opzione se si seleziona **reindirizza abilitato**. In caso contrario, è possibile che i messaggi vengano persi.
 
    Al termine dell'operazione, fare clic su **Avanti**.
 
 5. Nella pagina **applicata alla** pagina che viene visualizzata, identificare i destinatari interni ai quali si applica il criterio.
 
-   È possibile utilizzare una condizione o un'eccezione solo una volta, ma è possibile specificare più valori per la condizione o l'eccezione. Più valori della stessa condizione o eccezione utilizzano la logica OR (ad esempio, _\<recipient1\>_ o _\<recipient2\>_). Condizioni o eccezioni diverse utilizzano la logica AND (ad esempio, _\<recipient1\>_ e _\<member of group 1\>_).
+   È possibile utilizzare una condizione o un'eccezione solo una volta, ma è possibile specificare più valori per la condizione o l'eccezione. Più valori della stessa condizione o eccezione utilizzano la logica OR (ad esempio, _\<recipient1\>_ o _\<recipient2\>_ ). Condizioni o eccezioni diverse utilizzano la logica AND (ad esempio, _\<recipient1\>_ e _\<member of group 1\>_ ).
 
-   Fare clic su **Aggiungi condizione**. Nell'elenco a discesa che viene visualizzato, selezionare una condizione in **applicato se**:
+   Fare clic su **Aggiungi condizione**. Nell'elenco a discesa che viene visualizzato, selezionare una condizione in **applicato se** :
 
-   - **Il destinatario è**: consente di specificare una o più cassette postali, utenti di posta elettronica o contatti di posta nell'organizzazione.
-   - **Il destinatario è un membro di**: consente di specificare uno o più gruppi nell'organizzazione.
-   - **Il dominio del destinatario è**: specifica i destinatari in uno o più dei domini configurati accettati nell'organizzazione.
+   - **Il destinatario è** : consente di specificare una o più cassette postali, utenti di posta elettronica o contatti di posta nell'organizzazione.
+   - **Il destinatario è un membro di** : consente di specificare uno o più gruppi nell'organizzazione.
+   - **Il dominio del destinatario è** : specifica i destinatari in uno o più dei domini configurati accettati nell'organizzazione.
 
    Dopo aver selezionato la condizione, viene visualizzato un elenco a discesa corrispondente con una **qualsiasi di queste** caselle.
 
@@ -170,7 +170,7 @@ Per altre informazioni sull'ordine di precedenza e su come vengono valutati e ap
 
 I criteri allegati sicuri vengono visualizzati nell'ordine in cui sono stati elaborati (il primo criterio ha il valore di **priorità** 0).
 
-**Nota**: nel centro sicurezza & conformità è possibile modificare solo la priorità del criterio allegati sicuri dopo averlo creato. In PowerShell, è possibile ignorare la priorità predefinita quando si crea la regola degli allegati sicuri (che può influire sulla priorità delle regole esistenti).
+**Nota** : nel centro sicurezza & conformità è possibile modificare solo la priorità del criterio allegati sicuri dopo averlo creato. In PowerShell, è possibile ignorare la priorità predefinita quando si crea la regola degli allegati sicuri (che può influire sulla priorità delle regole esistenti).
 
 Per modificare la priorità di un criterio, spostare il criterio più in alto o più in basso nell'elenco (non è possibile modificare direttamente il numero **Priority** nel Centro sicurezza e conformità).
 
@@ -182,7 +182,7 @@ Per modificare la priorità di un criterio, spostare il criterio più in alto o 
 
    - Il criterio per gli allegati sicuri con il valore di **priorità** **0** ha solo il pulsante di **riduzione della priorità** disponibile.
 
-   - Il criterio per gli allegati sicuri con il valore di **priorità** più basso (ad esempio, **3**) ha solo il pulsante **aumenta priorità** disponibile.
+   - Il criterio per gli allegati sicuri con il valore di **priorità** più basso (ad esempio, **3** ) ha solo il pulsante **aumenta priorità** disponibile.
 
    - Se si dispone di tre o più criteri per gli allegati sicuri, i criteri tra i valori di priorità più alti e quelli più bassi hanno sia la **priorità di aumento** che i pulsanti di **priorità di riduzione** disponibili.
 
@@ -196,13 +196,13 @@ Per modificare la priorità di un criterio, spostare il criterio più in alto o 
 
 2. Nella pagina **allegati sicuri** selezionare un criterio dall'elenco e fare clic su di esso (non selezionare la casella di controllo).
 
-3. Nei dettagli dei criteri che vengono visualizzati, fare clic su **Elimina criteri**, quindi fare clic su **Sì** nella finestra di dialogo di avviso visualizzata.
+3. Nei dettagli dei criteri che vengono visualizzati, fare clic su **Elimina criteri** , quindi fare clic su **Sì** nella finestra di dialogo di avviso visualizzata.
 
 ## <a name="use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-safe-attachments-policies"></a>Utilizzo di PowerShell di Exchange Online o standalone EOP PowerShell per configurare i criteri degli allegati sicuri
 
 Come descritto in precedenza, un criterio di allegati sicuri è costituito da un criterio di allegato sicuro e da una regola di allegato sicura.
 
-In PowerShell, la differenza tra i criteri degli allegati sicuri e le regole degli allegati sicuri è evidente. Per gestire i criteri degli allegati sicuri tramite i cmdlet ** \* -SafeAttachmentPolicy** , è possibile gestire le regole degli allegati sicuri utilizzando i cmdlet ** \* -SafeAttachmentRule** .
+In PowerShell, la differenza tra i criteri degli allegati sicuri e le regole degli allegati sicuri è evidente. Per gestire i criteri degli allegati sicuri tramite i cmdlet **\* -SafeAttachmentPolicy** , è possibile gestire le regole degli allegati sicuri utilizzando i cmdlet **\* -SafeAttachmentRule** .
 
 - In PowerShell, creare innanzitutto il criterio degli allegati sicuri, quindi creare la regola per gli allegati sicuri che identifica il criterio a cui si applica la regola.
 - In PowerShell, è possibile modificare le impostazioni nel criterio degli allegati sicuri e la regola degli allegati sicuri separatamente.
@@ -215,13 +215,13 @@ La creazione di un criterio allegati sicuri in PowerShell è un processo in due 
 1. Creare il criterio degli allegati sicuri.
 2. Creare la regola per gli allegati sicuri che specifichi il criterio degli allegati sicuri a cui si applica la regola.
 
- **Note**:
+ **Note** :
 
 - È possibile creare una nuova regola per gli allegati sicuri e assegnare un criterio di allegato sicuro non associato esistente. Non è possibile associare una regola per gli allegati sicuri a più di un criterio di allegato sicuro.
 
 - È possibile configurare le impostazioni seguenti sui nuovi criteri degli allegati sicuri in PowerShell che non sono disponibili nel centro sicurezza & conformità fino a dopo la creazione del criterio:
-  - Creare il nuovo criterio come disabilitato (_attivato_ `$false` nel cmdlet **New-SafeAttachmentRule** ).
-  - Impostare la priorità del criterio durante la creazione (_priorità_ _\<Number\>_ ) del cmdlet **New-SafeAttachmentRule** .
+  - Creare il nuovo criterio come disabilitato ( _attivato_ `$false` nel cmdlet **New-SafeAttachmentRule** ).
+  - Impostare la priorità del criterio durante la creazione ( _priorità_ _\<Number\>_ ) del cmdlet **New-SafeAttachmentRule** .
 
 - Un nuovo criterio degli allegati sicuri creato in PowerShell non è visibile nel centro sicurezza & conformità fino a quando non si assegna il criterio a una regola di allegato sicura.
 
@@ -322,7 +322,7 @@ Per informazioni dettagliate sulla sintassi e sui parametri, vedere [Get-SafeAtt
 
 ### <a name="use-powershell-to-modify-safe-attachment-policies"></a>Utilizzo di PowerShell per modificare i criteri degli allegati sicuri
 
-Non è possibile rinominare un criterio degli allegati sicuri in PowerShell (il cmdlet **set-SafeAttachmentPolicy** non ha un parametro _Name_ ). Quando si rinomina un criterio di allegati sicuri nel centro sicurezza & Compliance, si sta rinominando solo la _regola_degli allegati sicuri.
+Non è possibile rinominare un criterio degli allegati sicuri in PowerShell (il cmdlet **set-SafeAttachmentPolicy** non ha un parametro _Name_ ). Quando si rinomina un criterio di allegati sicuri nel centro sicurezza & Compliance, si sta rinominando solo la _regola_ degli allegati sicuri.
 
 In caso contrario, le stesse impostazioni sono disponibili quando si crea un criterio degli allegati sicuri come descritto nel [passaggio 1: utilizzare PowerShell per creare una sezione dei criteri per gli allegati sicuri](#step-1-use-powershell-to-create-a-safe-attachment-policy) più indietro in questo articolo.
 
@@ -388,7 +388,7 @@ Nell'esempio seguente la priorità della regola denominata Marketing Department 
 Set-SafeAttachmentRule -Identity "Marketing Department" -Priority 2
 ```
 
-**Nota**: per impostare la priorità di una nuova regola al momento della creazione, utilizzare il parametro _Priority_ nel cmdlet **New-SafeAttachmentRule** .
+**Nota** : per impostare la priorità di una nuova regola al momento della creazione, utilizzare il parametro _Priority_ nel cmdlet **New-SafeAttachmentRule** .
 
 Per informazioni dettagliate sulla sintassi e sui parametri, vedere [set-SafeAttachmentRule](https://docs.microsoft.com/powershell/module/exchange/set-safeattachmentrule).
 
@@ -444,4 +444,4 @@ Per verificare che i criteri allegati sicuri siano stati creati, modificati o ri
   Get-SafeAttachmentRule -Identity "<Name>" | Format-List
   ```
 
-Per verificare che gli allegati sicuri eseguano l'analisi dei messaggi, controllare i report di protezione avanzata delle minacce disponibili. Per ulteriori informazioni, vedere [View Reports for Office 365 ATP](view-reports-for-atp.md) e [use Explorer in the Security & Compliance Center](threat-explorer.md).
+Per verificare che gli allegati sicuri eseguano l'analisi dei messaggi, consultare la pagina Defender per i report di Office 365. Per ulteriori informazioni, vedere [visualizzare i report per Defender per Office 365](view-reports-for-atp.md) e [usare Esplora risorse nel centro sicurezza & Compliance](threat-explorer.md).

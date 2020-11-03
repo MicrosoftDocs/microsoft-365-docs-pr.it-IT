@@ -1,6 +1,6 @@
 ---
-title: API supportate per Microsoft Threat Protection
-description: API supportate per Microsoft Threat Protection
+title: API supportate di Microsoft 365 Defender
+description: API supportate di Microsoft 365 Defender
 keywords: MTP, API, API
 search.product: eADQiWindows 10XVcnh
 ms.prod: microsoft-365-enterprise
@@ -19,19 +19,19 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: fda90945f09abfadfe56ea11469687130d88b2a7
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: b7c0accf2d649d4ad6177260294922ee17783f2c
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48203696"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48844961"
 ---
-# <a name="supported-microsoft-threat-protection-apis"></a>API supportate per Microsoft Threat Protection 
+# <a name="supported-microsoft-365-defender-apis"></a>API supportate di Microsoft 365 Defender 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 **Si applica a:**
-- Microsoft Threat Protection
+- Microsoft 365 Defender
 
 >[!IMPORTANT] 
 >Alcune informazioni si riferiscono al prodotto prerilasciato che può essere modificato in modo sostanziale prima che venga rilasciato commercialmente. Microsoft makes no warranties, express or implied, with respect to the information provided here.

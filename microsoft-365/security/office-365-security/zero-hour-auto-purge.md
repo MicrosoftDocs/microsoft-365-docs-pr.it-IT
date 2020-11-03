@@ -21,12 +21,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Gli amministratori possono sapere in che modo lo ZAP (zero-hour auto Purge) può spostare con effetto retroattivo i messaggi recapitati in una cassetta postale di Exchange Online nella cartella posta indesiderata o in quarantena che sono stati rilevati con effetto retroattivo come spam o phishing.
-ms.openlocfilehash: 31e546ddf6e93ed0a265aef3737182cf30ae5a95
-ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
+ms.openlocfilehash: e59d93285dd75a749739b8247c156c19533ce2b1
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48327976"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48845445"
 ---
 # <a name="zero-hour-auto-purge-zap-in-exchange-online"></a>Zero-hour auto Purge (ZAP) in Exchange Online
 
@@ -57,13 +57,13 @@ Il malware ZAP è abilitato per impostazione predefinita nei criteri anti-malwar
 
 Per i **messaggi letti o non letti** identificati come phishing dopo il recapito, l'esito dello ZAP dipende dall'azione configurata per un verdetto di filtraggio della **posta elettronica di phishing** nei criteri di protezione da posta indesiderata applicabili. Le azioni del verdetto di filtraggio disponibili per phishing e i possibili risultati dello ZAP sono descritte nell'elenco seguente:
 
-- **Aggiungi X-header**, **anteporre la riga dell'oggetto al testo**: zap non esegue alcuna azione sul messaggio.
+- **Aggiungi X-header** , **anteporre la riga dell'oggetto al testo** : zap non esegue alcuna azione sul messaggio.
 
-- **Spostare il messaggio in posta indesiderata**: zap sposta il messaggio nella cartella posta indesiderata, purché la regola di posta indesiderata sia abilitata sulla cassetta postale (abilitata per impostazione predefinita). Per ulteriori informazioni, vedere [configurare le impostazioni della posta indesiderata nelle cassette postali di Exchange online in Microsoft 365](configure-junk-email-settings-on-exo-mailboxes.md).
+- **Spostare il messaggio in posta indesiderata** : zap sposta il messaggio nella cartella posta indesiderata, purché la regola di posta indesiderata sia abilitata sulla cassetta postale (abilitata per impostazione predefinita). Per ulteriori informazioni, vedere [configurare le impostazioni della posta indesiderata nelle cassette postali di Exchange online in Microsoft 365](configure-junk-email-settings-on-exo-mailboxes.md).
 
-- **Reindirizza messaggio all'indirizzo di posta elettronica**, **eliminare**il messaggio, mettere in **quarantena**: zap mette in quarantena il messaggio.
+- **Reindirizza messaggio all'indirizzo di posta elettronica** , **eliminare** il messaggio, mettere in **quarantena** : zap mette in quarantena il messaggio.
 
-Per impostazione predefinita, phishing ZAP è abilitato nei criteri di protezione dalla posta indesiderata e l'azione predefinita per il verdetto del filtro della **posta elettronica di phishing** è **messaggio in quarantena**, il che significa che phishing ZAP la quarantena del messaggio per impostazione predefinita.
+Per impostazione predefinita, phishing ZAP è abilitato nei criteri di protezione dalla posta indesiderata e l'azione predefinita per il verdetto del filtro della **posta elettronica di phishing** è **messaggio in quarantena** , il che significa che phishing ZAP la quarantena del messaggio per impostazione predefinita.
 
 Per ulteriori informazioni sulla configurazione dei verdetti del filtro della posta indesiderata, vedere [Configure anti-spam Policies in Microsoft 365](configure-your-spam-filter-policies.md).
 
@@ -71,19 +71,19 @@ Per ulteriori informazioni sulla configurazione dei verdetti del filtro della po
 
 Per i **messaggi non letti** identificati come posta indesiderata dopo il recapito, l'esito zap dipende dall'azione configurata per il verdetto del filtro della **posta indesiderata** nel criterio di protezione da posta indesiderata applicabile. Le azioni del verdetto di filtraggio disponibili per la posta indesiderata e i possibili risultati dello ZAP sono descritte nell'elenco seguente:
 
-- **Aggiungi X-header**, **anteporre la riga dell'oggetto al testo**: zap non esegue alcuna azione sul messaggio.
+- **Aggiungi X-header** , **anteporre la riga dell'oggetto al testo** : zap non esegue alcuna azione sul messaggio.
 
-- **Spostare il messaggio in posta indesiderata**: zap sposta il messaggio nella cartella posta indesiderata, purché la regola di posta indesiderata sia abilitata sulla cassetta postale (abilitata per impostazione predefinita). Per ulteriori informazioni, vedere [configurare le impostazioni della posta indesiderata nelle cassette postali di Exchange online in Microsoft 365](configure-junk-email-settings-on-exo-mailboxes.md).
+- **Spostare il messaggio in posta indesiderata** : zap sposta il messaggio nella cartella posta indesiderata, purché la regola di posta indesiderata sia abilitata sulla cassetta postale (abilitata per impostazione predefinita). Per ulteriori informazioni, vedere [configurare le impostazioni della posta indesiderata nelle cassette postali di Exchange online in Microsoft 365](configure-junk-email-settings-on-exo-mailboxes.md).
 
-- **Reindirizza messaggio all'indirizzo di posta elettronica**, **eliminare**il messaggio, mettere in **quarantena**: zap mette in quarantena il messaggio. Gli utenti finali possono visualizzare e gestire i propri messaggi di posta indesiderata in quarantena.
+- **Reindirizza messaggio all'indirizzo di posta elettronica** , **eliminare** il messaggio, mettere in **quarantena** : zap mette in quarantena il messaggio. Gli utenti finali possono visualizzare e gestire i propri messaggi di posta indesiderata in quarantena.
 
-Per impostazione predefinita, lo strumento per la posta indesiderata è abilitato nei criteri di protezione dalla posta indesiderata e l'azione predefinita per il verdetto del filtro della **posta** indesiderata è **Sposta messaggio nella cartella posta indesiderata**, il che significa che la posta indesiderata sposta i messaggi non **letti**
+Per impostazione predefinita, lo strumento per la posta indesiderata è abilitato nei criteri di protezione dalla posta indesiderata e l'azione predefinita per il verdetto del filtro della **posta** indesiderata è **Sposta messaggio nella cartella posta indesiderata** , il che significa che la posta indesiderata sposta i messaggi non **letti**
 
 Per ulteriori informazioni sulla configurazione dei verdetti del filtro della posta indesiderata, vedere [Configure anti-spam Policies in Microsoft 365](configure-your-spam-filter-policies.md).
 
-### <a name="zap-considerations-for-office-365-advanced-threat-protection-office-365-atp"></a>Considerazioni su ZAP per Office 365 Advanced Threat Protection (Office 365 ATP)
+### <a name="zap-considerations-for-microsoft-defender-for-office-365"></a>Considerazioni su ZAP per Microsoft Defender per Office 365
 
-ZAP non consentirà di mettere in quarantena nessun messaggio che sia nel processo di [recapito dinamico](atp-safe-attachments.md#dynamic-delivery-in-safe-attachments-policies) nell'analisi degli allegati sicuri o in cui il filtro antimalware di EOP abbia già sostituito l'allegato con il file **Text.txtdi avviso antimalware ** . Se si riceve un segnale di phishing o di posta indesiderata per questi tipi di messaggi e il verdetto di filtraggio nei criteri di protezione da posta indesiderata è impostato per eseguire alcune operazioni sul messaggio (spostamento in posta indesiderata, reindirizzamento, eliminazione o quarantena), per impostazione predefinita, il metodo ZAP passerà all'azione "sposta in spazzatura".
+ZAP non consentirà di mettere in quarantena nessun messaggio che sia nel processo di [recapito dinamico](atp-safe-attachments.md#dynamic-delivery-in-safe-attachments-policies) nell'analisi degli allegati sicuri o in cui il filtro antimalware di EOP abbia già sostituito l'allegato con il file **Text.txtdi avviso antimalware** . Se si riceve un segnale di phishing o di posta indesiderata per questi tipi di messaggi e il verdetto di filtraggio nei criteri di protezione da posta indesiderata è impostato per eseguire alcune operazioni sul messaggio (spostamento in posta indesiderata, reindirizzamento, eliminazione o quarantena), per impostazione predefinita, il metodo ZAP passerà all'azione "sposta in spazzatura".
 
 ## <a name="how-to-see-if-zap-moved-your-message"></a>Come vedere se ZAP ha spostato il messaggio
 

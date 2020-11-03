@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: a1e85b2089663208e8b6004462211263a1b27242
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: fc975610e24980c6a552179359bb643eb9ac040c
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47547798"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48845253"
 ---
 # <a name="to-identity-and-beyond--one-architects-viewpoint"></a>To Identity and Beyond-punto di vista di un architetto
 
@@ -132,11 +132,11 @@ La combinazione di tutti questi segnali consente di combinare criteri dinamici c
 
 Se si è d'accordo con questa definizione espansa di autorizzazione, è necessario implementare altre soluzioni. Le soluzioni implementate dipendono dalla dinamica desiderata per il criterio e dalle minacce che si desidera impostare come priorità. Alcuni esempi di tali sistemi sono:
 - [Azure AD Identity Protection](https://docs.microsoft.com/azure/active-directory/identity-protection/) 
-- [Protezione avanzata dalle minacce di Azure](https://docs.microsoft.com/azure-advanced-threat-protection/) (ATP di Azure)
-- [Microsoft Defender Advanced Threat Protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) (Microsoft Defender ATP)
-- [Office 365 Advanced Threat Protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp?view=o365-worldwide) (Office 365 ATP)
+- [Microsoft Defender per identità](https://docs.microsoft.com/azure-advanced-threat-protection/)
+- [Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)
+- [Microsoft Defender per Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp?view=o365-worldwide)
 - [Sicurezza delle app di Microsoft Cloud](https://docs.microsoft.com/cloud-app-security/) (MCAS)
-- [Microsoft Threat Protection](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-threat-protection?view=o365-worldwide) (MTP)
+- [Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-threat-protection?view=o365-worldwide)
 - [Microsoft Intune](https://docs.microsoft.com/mem/intune/)
 - [Microsoft Information Protection](https://docs.microsoft.com/microsoft-365/compliance/protect-information?view=o365-worldwide) (MIP)
 - [Azure Sentinel](https://docs.microsoft.com/azure/sentinel/) 
@@ -208,7 +208,7 @@ Nella maggior parte delle organizzazioni di grandi dimensioni, la separazione de
 
 Non è possibile delegare tutto (anche se il divario è in calo), il che significa che il ruolo di amministratore globale deve essere utilizzato a volte. La configurazione-come-codice e l'automazione devono essere prese in considerazione invece di appartenere alle persone di questo ruolo.
 
-**Nota**: l'interfaccia di amministrazione di Microsoft 365 è caratterizzata da una più facile da usare, ma ha un sottoinsieme di funzionalità rispetto all'esperienza di amministrazione di Azure ad. Entrambi i portali utilizzano gli stessi ruoli di Azure AD, quindi le modifiche si verificano nello stesso luogo. Suggerimento: se si desidera che l'interfaccia utente di amministrazione di gestione delle identità sia incentrata senza tutti gli ingombri di Azure, utilizzare [https://aad.portal.azure.com](https://aad.portal.azure.com) . 
+**Nota** : l'interfaccia di amministrazione di Microsoft 365 è caratterizzata da una più facile da usare, ma ha un sottoinsieme di funzionalità rispetto all'esperienza di amministrazione di Azure ad. Entrambi i portali utilizzano gli stessi ruoli di Azure AD, quindi le modifiche si verificano nello stesso luogo. Suggerimento: se si desidera che l'interfaccia utente di amministrazione di gestione delle identità sia incentrata senza tutti gli ingombri di Azure, utilizzare [https://aad.portal.azure.com](https://aad.portal.azure.com) . 
 
 Che cos'è il nome? Non creare presupposti dal nome del ruolo. La lingua non è uno strumento molto preciso. L'obiettivo è quello di definire le operazioni che è necessario delegare prima di esaminare i ruoli necessari. L'aggiunta di un elemento al ruolo "lettore di sicurezza" non consente di visualizzare le impostazioni di sicurezza in tutto. 
 
@@ -242,27 +242,27 @@ Come indicato in precedenza, molti clienti stanno cercando di ottenere un modell
 
 - **Exchange Online** - [https://docs.microsoft.com/exchange/permissions-exo/permissions-exo](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo) 
 - **SharePoint Online** - [https://docs.microsoft.com/sharepoint/manage-site-collection-administrators](https://docs.microsoft.com/sharepoint/manage-site-collection-administrators) 
-- **Microsoft teams**  -  [https://docs.microsoft.com/microsoftteams/itadmin-readiness ](https://docs.microsoft.com/microsoftteams/itadmin-readiness )
+- **Microsoft teams**  -  [https://docs.microsoft.com/microsoftteams/itadmin-readiness](https://docs.microsoft.com/microsoftteams/itadmin-readiness )
 - **eDiscovery** - [https://docs.microsoft.com/microsoft-365/compliance/assign-ediscovery-permissions](https://docs.microsoft.com/microsoft-365/compliance/) 
-  + **Filtro**  -  delle autorizzazioni [https://docs.microsoft.com/microsoft-365/compliance/permissions-filtering-for-content-search ](https://docs.microsoft.com/microsoft-365/compliance/)
-  + **Limiti**  -  di conformità [https://docs.microsoft.com/microsoft-365/compliance/set-up-compliance-boundaries ](https://docs.microsoft.com/microsoft-365/compliance/set-up-compliance-boundaries )
-  + **Advanced eDiscovery**  -  [https://docs.microsoft.com/microsoft-365/compliance/overview-ediscovery-20 ](https://docs.microsoft.com/microsoft-365/compliance/overview-ediscovery-20 )
+  + **Filtro**  -  delle autorizzazioni [https://docs.microsoft.com/microsoft-365/compliance/permissions-filtering-for-content-search](https://docs.microsoft.com/microsoft-365/compliance/)
+  + **Limiti**  -  di conformità [https://docs.microsoft.com/microsoft-365/compliance/set-up-compliance-boundaries](https://docs.microsoft.com/microsoft-365/compliance/set-up-compliance-boundaries )
+  + **Advanced eDiscovery**  -  [https://docs.microsoft.com/microsoft-365/compliance/overview-ediscovery-20](https://docs.microsoft.com/microsoft-365/compliance/overview-ediscovery-20 )
 - **Yammer** - [https://docs.microsoft.com/yammer/manage-yammer-users/manage-yammer-admins](https://docs.microsoft.com/yammer/manage-yammer-users/manage-yammer-admins) 
 - **Multi-Geo** - [https://docs.microsoft.com/microsoft-365/enterprise/add-a-sharepoint-geo-admin](https://docs.microsoft.com/microsoft-365/enterprise/add-a-sharepoint-geo-admin) 
 - **Dynamics 365** – [https://docs.microsoft.com/dynamics365/](https://docs.microsoft.com/dynamics365/) <br>
   Nota: questo collegamento si trova nella radice della documentazione. Sono disponibili più tipi di servizi con varianti del modello di amministrazione/delega.
-- **Piattaforma**  -  di alimentazione [https://docs.microsoft.com/power-platform/admin/admin-documentation ](https://docs.microsoft.com/power-platform/admin/admin-documentation )
-  + **Applicazioni**  -  di alimentazione [https://docs.microsoft.com/power-platform/admin/wp-security ](https://docs.microsoft.com/power-platform/admin/wp-security ) <br>
+- **Piattaforma**  -  di alimentazione [https://docs.microsoft.com/power-platform/admin/admin-documentation](https://docs.microsoft.com/power-platform/admin/admin-documentation )
+  + **Applicazioni**  -  di alimentazione [https://docs.microsoft.com/power-platform/admin/wp-security](https://docs.microsoft.com/power-platform/admin/wp-security ) <br>
     Nota: esistono più tipi con varianti nei modelli di amministrazione/delega.
-  + **Automatizzare**  -  la potenza [https://docs.microsoft.com/power-automate/environments-overview-admin ](https://docs.microsoft.com/power-automate/environments-overview-admin )
-  + **PowerBI**  -  [https://docs.microsoft.com/power-bi/service-admin-governance ](https://docs.microsoft.com/power-bi/service-admin-governance ) <br>
+  + **Automatizzare**  -  la potenza [https://docs.microsoft.com/power-automate/environments-overview-admin](https://docs.microsoft.com/power-automate/environments-overview-admin )
+  + **PowerBI**  -  [https://docs.microsoft.com/power-bi/service-admin-governance](https://docs.microsoft.com/power-bi/service-admin-governance ) <br>
 Nota: la sicurezza e la delega della piattaforma dati (che è un componente di Power BI) è un'area complessa.
-- **MEM/Intune**  -  [https://docs.microsoft.com/mem/intune/fundamentals/role-based-access-control ](https://docs.microsoft.com/mem/intune/fundamentals/role-based-access-control )
-- **ATP**  -  Microsoft Defender [https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles ](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles )
-- **Microsoft Threat Protection** - [https://docs.microsoft.com/microsoft-365/security/mtp/mtp-permissions](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-permissions)
+- **MEM/Intune**  -  [https://docs.microsoft.com/mem/intune/fundamentals/role-based-access-control](https://docs.microsoft.com/mem/intune/fundamentals/role-based-access-control )
+- **Microsoft Defender per endpoint**  -  [https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles )
+- **Microsoft 365 Defender** - [https://docs.microsoft.com/microsoft-365/security/mtp/mtp-permissions](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-permissions)
 - **Sicurezza delle app di Microsoft Cloud** - [https://docs.microsoft.com/cloud-app-security/manage-admins](https://docs.microsoft.com/cloud-app-security/manage-admins)
-- Oggetto **Stream**  -  [https://docs.microsoft.com/stream/assign-administrator-user-role ](https://docs.microsoft.com/stream/assign-administrator-user-role )
-- **Barriere**  -  informative [https://docs.microsoft.com/microsoft-365/compliance/information-barriers ](https://docs.microsoft.com/microsoft-365/compliance/information-barriers )
+- Oggetto **Stream**  -  [https://docs.microsoft.com/stream/assign-administrator-user-role](https://docs.microsoft.com/stream/assign-administrator-user-role )
+- **Barriere**  -  informative [https://docs.microsoft.com/microsoft-365/compliance/information-barriers](https://docs.microsoft.com/microsoft-365/compliance/information-barriers )
 
 Per il resto, la ricerca nei documenti è stata molto buona ultimamente [https://docs.microsoft.com/](https://docs.microsoft.com/microsoft-365/compliance/information-barriers) . 
 
@@ -273,7 +273,7 @@ Office 365 è dotato di un [log di controllo unificato](https://docs.microsoft.c
 Di seguito sono riportati alcuni esempi di registri di Microsoft 365 a cui si accede tramite altre API:
 - [Azure ad](https://docs.microsoft.com/azure/azure-monitor/platform/diagnostic-settings) (attività non correlate a Office 365)
 - [Verifica messaggi di Exchange](https://docs.microsoft.com/powershell/module/exchange/get-messagetrace)
-- Sistemi di minacce/UEBA descritti in alto (ad esempio, Azure AD Identity Protection, Microsoft cloud app Security, Microsoft Defender ATP e così via)
+- Sistemi di minacce/UEBA descritti in alto (ad esempio, Azure AD Identity Protection, Microsoft cloud app Security, Microsoft Defender per endpoint e così via)
 - [Microsoft Information Protection](https://docs.microsoft.com/microsoft-365/compliance/data-classification-activity-explorer?view=o365-worldwide)
 - [Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/api-power-bi)
 - [Microsoft Graph](https://graph.microsoft.com)
@@ -292,7 +292,7 @@ La combinazione di tutti i log in una posizione di archiviazione include un vant
 
 I registri non devono essere indirizzati a una sola posizione. Potrebbe anche essere utile integrare i [log di Office 365 con Microsoft cloud app Security](https://docs.microsoft.com/cloud-app-security/connect-office-365-to-microsoft-cloud-app-security) o un modello RBAC personalizzato in [Power bi](https://docs.microsoft.com/microsoft-365/admin/usage-analytics/usage-analytics?view=o365-worldwide). Gli archivi diversi hanno diversi vantaggi e gruppi di destinatari.
 
-È opportuno ricordare che esiste un sistema di analisi integrato molto ricco per la sicurezza, le minacce, le vulnerabilità e così via, in un servizio denominato [Microsoft Threat Protection](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-threat-protection?view=o365-worldwide).
+È opportuno ricordare che esiste un sistema di analisi integrato molto ricco per la sicurezza, le minacce, le vulnerabilità e così via, in un servizio denominato [Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-threat-protection?view=o365-worldwide).
 
 Molti clienti di grandi dimensioni desiderano trasferire i dati di log a un sistema di terze parti (ad esempio, SIEM). Esistono diversi approcci per questo, ma in generale l'hub e il [grafico](https://docs.microsoft.com/graph/security-integration) degli [eventi di Azure](https://docs.microsoft.com/azure/azure-monitor/platform/stream-monitoring-data-event-hubs) sono buoni punti di partenza.
 
@@ -305,7 +305,7 @@ Spesso viene chiesto se esiste un modo per separare i ruoli con privilegi elevat
 -   inviare ognuno di essi tramite un processo di approvazione (Power Platform)
 -   Dopo aver approvato tutti i componenti, assemblarli in un' [API di Microsoft Graph](https://docs.microsoft.com/azure/active-directory/develop/microsoft-graph-intro) (Azure) recapitabili unificati è il miglior amico per questi.  Non impossibile, ma significativamente più complessa per progettare una soluzione che si estende su [più tenant](https://docs.microsoft.com/azure/active-directory/develop/single-and-multi-tenant-apps).
 
-Il controllo di accesso basato sui ruoli (RBAC) di Azure consente la gestione degli accessi specifici per Azure. Se si utilizza RBAC, è possibile gestire l'accesso alle risorse concedendo agli utenti le autorizzazioni necessarie per eseguire i propri processi. Per ulteriori informazioni su RBAC, vedere [che cos'è il controllo di accesso basato sui ruoli (RBAC) in Azure?](https://docs.microsoft.com/azure/role-based-access-control/overview) RBAC è importante, ma è solo una parte delle considerazioni sulla governance di Azure. [Cloud Adoption Framework](https://docs.microsoft.com/azure/cloud-adoption-framework/govern/) è un ottimo punto di partenza per ulteriori informazioni. Mi piace come il mio amico, Andres Ravinet passeggiate clienti Step-by-step anche se diversi componenti per decidere l'approccio. Visualizzazione di alto livello per diversi elementi (non buono come il processo per ottenere il modello del cliente effettivo) è qualcosa di simile al seguente:
+Il controllo di accesso di Azure Role-Based (RBAC) consente la gestione di accessi specifici per Azure. Se si utilizza RBAC, è possibile gestire l'accesso alle risorse concedendo agli utenti le autorizzazioni necessarie per eseguire i propri processi. Per ulteriori informazioni su RBAC, vedere [che cos'è il controllo di accesso basato sui ruoli (RBAC) in Azure?](https://docs.microsoft.com/azure/role-based-access-control/overview) RBAC è importante, ma è solo una parte delle considerazioni sulla governance di Azure. [Cloud Adoption Framework](https://docs.microsoft.com/azure/cloud-adoption-framework/govern/) è un ottimo punto di partenza per ulteriori informazioni. Mi piace come il mio amico, Andres Ravinet passeggiate clienti Step-by-step anche se diversi componenti per decidere l'approccio. Visualizzazione di alto livello per diversi elementi (non buono come il processo per ottenere il modello del cliente effettivo) è qualcosa di simile al seguente:
 
 ![Visualizzazione di alto livello dei componenti di Azure per l'amministrazione delegata](../media/solutions-architecture-center/identity-beyond-illustration-5.png)
 

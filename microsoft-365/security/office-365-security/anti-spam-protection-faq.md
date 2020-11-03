@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Gli amministratori possono visualizzare le domande frequenti e le risposte sulla protezione dalla posta indesiderata in Exchange Online Protection (EOP).
-ms.openlocfilehash: 2bf2808cc0da6124a0377b52dc46f88b2c8a69e0
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: d2505eea572e512b306cf26c7a57d1dc1b705c0b
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48445736"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48844465"
 ---
 # <a name="anti-spam-protection-faq"></a>Domande frequenti sulla protezione da posta indesiderata
 
@@ -59,7 +59,7 @@ Dopo aver eseguito l'iscrizione al servizio e aver aggiunto il dominio, il filtr
 
 Per ulteriori informazioni, vedere i seguenti argomenti:
 
-[Impostazioni consigliate per la sicurezza ATP di EOP e Office 365](recommended-settings-for-eop-and-office365-atp.md)
+[Impostazioni consigliate per EOP e Microsoft Defender per la sicurezza di Office 365](recommended-settings-for-eop-and-office365-atp.md)
 
 [Configurare il filtro connessioni in EOP](configure-the-connection-filter-policy.md)
 
@@ -105,9 +105,9 @@ Se più della metà della posta inviata da un utente tramite il servizio entro u
 
 Sì. Anche se è consigliabile puntare il record MX a Microsoft, ci si rende conto che esistono motivi aziendali legittimi per instradare la posta elettronica in un punto diverso da Microsoft First.
 
-- In **ingresso**: modificare i record MX in modo che puntino al provider di terze parti e quindi reindirizzare i messaggi a EOP per ulteriori elaborazioni. Per ulteriori informazioni, vedere [Enhanced Filtering for Connectors in Exchange Online](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).
+- In **ingresso** : modificare i record MX in modo che puntino al provider di terze parti e quindi reindirizzare i messaggi a EOP per ulteriori elaborazioni. Per ulteriori informazioni, vedere [Enhanced Filtering for Connectors in Exchange Online](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).
 
-- In **uscita**: configurare il routing di smart host da Microsoft 365 al provider di terze parti di destinazione.
+- In **uscita** : configurare il routing di smart host da Microsoft 365 al provider di terze parti di destinazione.
 
 ## <a name="does-microsoft-have-any-documentation-about-how-i-can-protect-myself-from-phishing-scams"></a>Microsoft dispone di documentazione su come è possibile proteggersi da tentativi di phishing?
 

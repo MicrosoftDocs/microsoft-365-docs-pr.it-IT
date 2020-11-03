@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: ed91ca8a2300cf69cb78ae24ad61e9aebb4dcc85
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: 9aaeb5323900e65de47015b8cb28abf967694ea3
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48429420"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48844801"
 ---
 # <a name="overview-of-the-microsoft-365-security-center"></a>Panoramica del Centro sicurezza Microsoft 365
 
@@ -52,13 +52,13 @@ Il Centro sicurezza Microsoft 365 include:
 
 * **Home** -visualizzazione a colpo d'occhio dell'integrità generale della sicurezza dell'organizzazione.
 * **Operazioni** non consentite: vedere la storia più ampia di un attacco collegando i punti visualizzati sui singoli avvisi sulle entità. È possibile sapere esattamente dove è stato avviato un attacco, quali dispositivi sono interessati e quali sono le conseguenze della minaccia.
-* **Avvisi** – avere una maggiore visibilità in tutti gli avvisi nell'ambiente Microsoft 365. Include avvisi di Microsoft cloud app Security, Office 365 ATP, Azure Active Directory, Azure ATP e Microsoft Defender ATP. Disponibile per i clienti E3 ed E5.  
+* **Avvisi** – avere una maggiore visibilità in tutti gli avvisi nell'ambiente Microsoft 365. Include avvisi di Microsoft cloud app Security, Microsoft Defender per Office 365, Azure Active Directory, Microsoft Defender per Identity e Microsoft Defender per endpoint. Disponibile per i clienti E3 ed E5.  
 * **Centro azioni** -ridurre il volume degli avvisi il team di sicurezza deve rispondere manualmente, consentendo al team di operazioni di sicurezza di concentrarsi su minacce più sofisticate e altre iniziative di alto valore.
 * **Report** : consente di visualizzare i dettagli e le informazioni necessari per proteggere meglio gli utenti, i dispositivi, le app e altro ancora.
-* **Secure Score**: consente di ottimizzare il livello di sicurezza complessivo con Microsoft Secure Score. In questa pagina viene fornito un riepilogo di tutte le caratteristiche e funzionalità di sicurezza che sono state abilitate e sono disponibili suggerimenti per migliorare le aree.
+* **Secure Score** : consente di ottimizzare il livello di sicurezza complessivo con Microsoft Secure Score. In questa pagina viene fornito un riepilogo di tutte le caratteristiche e funzionalità di sicurezza che sono state abilitate e sono disponibili suggerimenti per migliorare le aree.
 * **Caccia avanzata** – ricerca proattivamente di malware, file sospetti e attività nell'organizzazione Microsoft 365.
-* **Classificazione**: consente di proteggere la perdita di dati aggiungendo etichette per classificare documenti, messaggi di posta elettronica, documenti, siti e altro. Quando viene applicata un'etichetta (automaticamente o dall'utente), il contenuto o il sito è protetto in base alle impostazioni selezionate. Ad esempio, è possibile creare le etichette per crittografare i file, aggiungere l'indicazione del contenuto e controllare l'accesso degli utenti a siti specifici.
-* **Criteri**: consente di criteri per gestire i dispositivi, proteggere dalle minacce e ricevere avvisi su varie attività dell'organizzazione.
+* **Classificazione** : consente di proteggere la perdita di dati aggiungendo etichette per classificare documenti, messaggi di posta elettronica, documenti, siti e altro. Quando viene applicata un'etichetta (automaticamente o dall'utente), il contenuto o il sito è protetto in base alle impostazioni selezionate. Ad esempio, è possibile creare le etichette per crittografare i file, aggiungere l'indicazione del contenuto e controllare l'accesso degli utenti a siti specifici.
+* **Criteri** : consente di criteri per gestire i dispositivi, proteggere dalle minacce e ricevere avvisi su varie attività dell'organizzazione.
 * **Permissions** -gestire gli utenti dell'organizzazione che dispongono dell'accesso alla visualizzazione del contenuto e all'esecuzione di attività nel centro sicurezza Microsoft 365. È inoltre possibile assegnare autorizzazioni di Microsoft 365 nel portale di Azure AD.
 
 ## <a name="learn-more"></a>Altre informazioni

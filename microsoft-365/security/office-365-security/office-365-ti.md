@@ -1,5 +1,5 @@
 ---
-title: Analisi delle minacce & capacità di risposta-Office 365 ATP piano 2
+title: Analisi delle minacce & funzionalità di risposta-Microsoft Defender per Office 365 piano 2
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -19,20 +19,20 @@ ms.collection:
 - m365initiative-m365-defender
 ms.custom:
 - seo-marvel-apr2020
-description: Informazioni sulle funzionalità di ricerca e risposta alle minacce in Office 365 Advanced Threat Protection Plan.
-ms.openlocfilehash: 4d51a172c3b6fb8641648ecd7a33e320b0a42b24
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+description: Informazioni sulle funzionalità di ricerca e risposta alle minacce in Microsoft Defender per Office 365 piano.
+ms.openlocfilehash: 6dba883a910306b548f1880be00ad45207da27dd
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48431136"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48845793"
 ---
 # <a name="threat-investigation-and-response"></a>Analisi e risposta alle minacce
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-Le funzionalità di ricerca e risposta alle minacce in [Office 365 Advanced Threat Protection](office-365-atp.md) aiutano gli analisti e gli amministratori della sicurezza a proteggere gli utenti di Microsoft 365 per le aziende dell'organizzazione:
+Le funzionalità di ricerca e risposta alle minacce in [Microsoft Defender per Office 365](office-365-atp.md) aiutano gli analisti e gli amministratori della protezione a proteggere gli utenti di Microsoft 365 per le aziende dell'organizzazione:
 - Semplificare l'identificazione, il monitoraggio e la comprensione di attacchi cibernetici
 - Assistenza per l'indirizzamento rapido delle minacce in Exchange Online, SharePoint Online, OneDrive for business e Microsoft Teams
 - Fornire informazioni e conoscenze per aiutare le operazioni di sicurezza a impedire la attacchi cibernetici alla propria organizzazione
@@ -72,7 +72,7 @@ Utilizzare l'elenco degli eventi non consentiti (anche questo è denominato inda
 
 ![Elenco degli incidenti di minacce correnti in Office 365](../../media/acadd4c7-d2de-4146-aeb8-90cfad805a9c.png)
 
-Per visualizzare l'elenco degli incidenti correnti per l'organizzazione, nel centro sicurezza & conformità, accedere a operazioni di **Threat management** \> **Verifica** degli \> **incidenti**di gestione delle minacce.
+Per visualizzare l'elenco degli incidenti correnti per l'organizzazione, nel centro sicurezza & conformità, accedere a operazioni di **Threat management** \> **Verifica** degli \> **incidenti** di gestione delle minacce.
 
 ![Nel centro sicurezza & conformità scegliere Threat Management \> Review](../../media/e0f46454-fa38-40f0-a120-b595614d1d22.png)
 
@@ -86,17 +86,17 @@ Utilizzare le funzionalità di analisi e risposta automatizzate per risparmiare 
 
 ## <a name="threat-intelligence-widgets"></a>Widget di intelligence per le minacce
 
-Nell'ambito dell'offerta di Office 365 Advanced Threat Protection piano 2, gli analisti di sicurezza possono esaminare i dettagli relativi a una minaccia nota. Ciò è utile per determinare se sono disponibili ulteriori misure preventive/passaggi che possono essere adottati per garantire la sicurezza degli utenti.
+Nell'ambito dell'offerta di Microsoft Defender per Office 365 piano 2, gli analisti di sicurezza possono esaminare i dettagli relativi a una minaccia nota. Ciò è utile per determinare se sono disponibili ulteriori misure preventive/passaggi che possono essere adottati per garantire la sicurezza degli utenti.
 
 ![Tendenze della sicurezza che mostrano informazioni sulle minacce recenti](../../media/11e7d40d-139b-4c56-8d52-c091c8654151.png)
 
 ## <a name="how-do-we-get-these-capabilities"></a>Come si ottengono queste funzionalità?
 
-Microsoft 365 Threat Investigation and response capabilities sono incluse in Office 365 Advanced Threat Protection Plan 2, incluso in Enterprise E5 o come componente aggiuntivo di determinate sottoscrizioni. Per ulteriori informazioni, vedere [Office 365 ATP Plan 1 e Plan 2](office-365-atp.md#office-365-atp-plan-1-and-plan-2).
+Microsoft 365 Threat Investigation and response capabilities sono incluse in Microsoft Defender per Office 365 piano 2, incluso in Enterprise E5 o come componente aggiuntivo di determinate sottoscrizioni. Per ulteriori informazioni, vedere [difensore per Office 365 piano 1 e piano 2](office-365-atp.md#microsoft-defender-for-office-365-plan-1-and-plan-2).
 
 ## <a name="required-roles-and-permissions"></a>Ruoli e autorizzazioni necessari
 
-Office 365 Advanced Threat Protection utilizza il controllo di accesso basato sui ruoli. Le autorizzazioni vengono assegnate tramite alcuni ruoli in Azure Active Directory, nell'interfaccia di amministrazione di Microsoft 365 o nel centro sicurezza & Compliance.
+Microsoft Defender per Office 365 utilizza il controllo di accesso basato sui ruoli. Le autorizzazioni vengono assegnate tramite alcuni ruoli in Azure Active Directory, nell'interfaccia di amministrazione di Microsoft 365 o nel centro sicurezza & Compliance.
 
 > [!TIP]
 > Anche se alcuni ruoli, ad esempio amministratore della sicurezza, possono essere assegnati nel centro sicurezza & Compliance, considerare l'utilizzo dell'interfaccia di amministrazione di Microsoft 365 o di Azure Active Directory. Per informazioni sui ruoli, sui gruppi di ruoli e sulle autorizzazioni, vedere le risorse seguenti:
@@ -113,7 +113,7 @@ Office 365 Advanced Threat Protection utilizza il controllo di accesso basato su
 |Utilizzo di [Esplora minacce (e rilevamenti in tempo reale)](threat-explorer.md) per l'analisi delle minacce|Uno dei seguenti: <br/>- **Amministratore globale**  <br/> - **Amministratore della sicurezza** <br/>- **Lettore di sicurezza** <br/> <br/>Questi ruoli possono essere assegnati in Azure Active Directory ( [https://portal.azure.com](https://portal.azure.com) ) o nell'interfaccia di amministrazione di Microsoft 365 ( [https://admin.microsoft.com](https://admin.microsoft.com) ).|
 |Visualizzare gli incidenti (noti anche come indagini) <br/> Aggiungere messaggi di posta elettronica a un evento imprevisto|Uno dei seguenti: <br/>- **Amministratore globale**  <br/> - **Amministratore della sicurezza** <br/>- **Lettore di sicurezza** <br/> <br/>Questi ruoli possono essere assegnati in Azure Active Directory ( [https://portal.azure.com](https://portal.azure.com) ) o nell'interfaccia di amministrazione di Microsoft 365 ( [https://admin.microsoft.com](https://admin.microsoft.com) ).|
 |Attivare le azioni di posta elettronica in un evento imprevisto <br/> <br/> Individuare ed eliminare i messaggi di posta elettronica sospetti|Uno dei seguenti: <br/>- **Amministratore globale**  <br/> - **Amministratore della sicurezza** più il ruolo **di ricerca ed eliminazione**<br/><br/>I ruoli amministratore **globale** e **amministratore della sicurezza** possono essere assegnati in Azure Active Directory ( [https://portal.azure.com](https://portal.azure.com) ) o nell'interfaccia di amministrazione di Microsoft 365 ( [https://admin.microsoft.com](https://admin.microsoft.com) ). <br/><br/>Il ruolo **Search and Purge** deve essere assegnato al centro sicurezza & Compliance ( [https://protection.office.com](https://protection.office.com) ).|
-|Integrazione di Office 365 Advanced Threat Protection Plan 2 con Microsoft Defender Advanced Threat Protection  <br/><br/> Integrazione di Office 365 Advanced Threat Protection Plan 2 con un server SIEM|L' **amministratore globale** o il ruolo di **amministratore della sicurezza** assegnato in Azure Active Directory ( [https://portal.azure.com](https://portal.azure.com) ) o nell'interfaccia di amministrazione di Microsoft 365 ( [https://admin.microsoft.com](https://admin.microsoft.com) ).<br/>--- **più** ---<br/>Un ruolo appropriato assegnato in altre applicazioni, ad esempio il [Centro sicurezza di Microsoft Defender](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles) o il server Siem.|
+|Integrazione di Microsoft Defender per Office 365 piano 2 con Microsoft Defender per endpoint  <br/><br/> Integrazione di Microsoft Defender per Office 365 piano 2 con un server SIEM|L' **amministratore globale** o il ruolo di **amministratore della sicurezza** assegnato in Azure Active Directory ( [https://portal.azure.com](https://portal.azure.com) ) o nell'interfaccia di amministrazione di Microsoft 365 ( [https://admin.microsoft.com](https://admin.microsoft.com) ).<br/>--- **più** ---<br/>Un ruolo appropriato assegnato in altre applicazioni, ad esempio il [Centro sicurezza di Microsoft Defender](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles) o il server Siem.|
 |
 
 ## <a name="next-steps"></a>Passaggi successivi
@@ -122,6 +122,6 @@ Office 365 Advanced Threat Protection utilizza il controllo di accesso basato su
 
 - [Individuare ed esaminare messaggi di posta elettronica dannosi recapitati (Office 365 Threat Investigation and Response)](investigate-malicious-email-that-was-delivered.md)
 
-- [Integrazione di Office 365 Threat Investigation and Response with Microsoft Defender Advanced Threat Protection](integrate-office-365-ti-with-wdatp.md)
+- [Integrazione di Office 365 Threat Investigation and Response with Microsoft Defender for endpoint](integrate-office-365-ti-with-wdatp.md)
 
 - [Informazioni sul simulatore di attacco](attack-simulator.md)

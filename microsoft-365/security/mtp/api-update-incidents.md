@@ -1,6 +1,6 @@
 ---
 title: Aggiornare l'API degli incidenti
-description: Informazioni su come aggiornare gli eventi non consentiti tramite l'API Microsoft Threat Protection
+description: Informazioni su come aggiornare gli eventi non consentiti tramite Microsoft 365 Defender API
 keywords: Update, API, Incident
 search.product: eADQiWindows 10XVcnh
 ms.prod: microsoft-365-enterprise
@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 8ad47453c7163bfac99c17f42986b818cdca603f
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 3f77980863b0c232166d736a6b557444df98c8ac
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48203632"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48844837"
 ---
 # <a name="update-incidents-api"></a>Aggiornare l'API degli incidenti
 
@@ -32,7 +32,7 @@ ms.locfileid: "48203632"
 
 
 **Si applica a:**
-- Microsoft Threat Protection
+- Microsoft 365 Defender
 
 >[!IMPORTANT] 
 >Alcune informazioni si riferiscono al prodotto prerilasciato che può essere modificato in modo sostanziale prima che venga rilasciato commercialmente. Microsoft makes no warranties, express or implied, with respect to the information provided here.
@@ -49,7 +49,7 @@ Aggiorna le proprietà dell'evento Incident esistente.
 
 
 ## <a name="permissions"></a>Autorizzazioni
-Per chiamare l'API è necessaria una delle autorizzazioni seguenti. Per ulteriori informazioni, tra cui la scelta delle autorizzazioni, vedere [Access the Microsoft Threat Protection Apis](api-access.md).
+Per chiamare l'API è necessaria una delle autorizzazioni seguenti. Per ulteriori informazioni, tra cui la scelta delle autorizzazioni, vedere [Access the Microsoft 365 Defender Apis](api-access.md).
 
 Tipo di autorizzazione |   Autorizzazione  |   Nome visualizzato per le autorizzazioni
 :---|:---|:---

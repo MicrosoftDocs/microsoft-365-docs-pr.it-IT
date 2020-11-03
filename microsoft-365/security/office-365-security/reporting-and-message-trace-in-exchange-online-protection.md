@@ -14,12 +14,12 @@ ms.assetid: f40253f2-50a1-426e-9979-be74ba74cb61
 ms.custom:
 - seo-marvel-apr2020
 description: In questo articolo vengono fornite informazioni sui report e gli strumenti per la risoluzione dei problemi disponibili per gli amministratori di Microsoft Exchange Online Protection (EOP).
-ms.openlocfilehash: 86f4e18430324ed95f036f93746d826225ec3b2f
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 9a8eb8e35ef73eb27604eef4bf701982b1d51710
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48196400"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48845553"
 ---
 # <a name="reporting-and-message-trace-in-eop"></a>Creazione di report e traccia dei messaggi in EOP
 
@@ -30,13 +30,13 @@ In Microsoft 365 organizzazioni con cassette postali in Exchange Online o standa
 
 ## <a name="usage-reports"></a>Report sull'uso
 
-**Attività gruppi microsoft 365**: consente di visualizzare informazioni sul numero di gruppi di Microsoft 365 creati e utilizzati.
+**Attività gruppi microsoft 365** : consente di visualizzare informazioni sul numero di gruppi di Microsoft 365 creati e utilizzati.
 
-**Attività di posta elettronica**: consente di visualizzare informazioni sul numero di messaggi inviati, ricevuti e letti nell'intera organizzazione e per utenti specifici.
+**Attività di posta elettronica** : consente di visualizzare informazioni sul numero di messaggi inviati, ricevuti e letti nell'intera organizzazione e per utenti specifici.
 
-**Utilizzo delle app di posta elettronica**: consente di visualizzare le informazioni sulle app di posta elettronica utilizzate. Questi dati includono il numero totale di connessioni per ogni applicazione e le versioni di Outlook con cui si stabilisce la connessione.
+**Utilizzo delle app di posta elettronica** : consente di visualizzare le informazioni sulle app di posta elettronica utilizzate. Questi dati includono il numero totale di connessioni per ogni applicazione e le versioni di Outlook con cui si stabilisce la connessione.
 
-**Utilizzo delle cassette postali**: consente di visualizzare informazioni sull'archiviazione utilizzata, sul consumo di quote, sul numero di elementi e sull'ultima attività (invio o lettura) per le cassette postali.
+**Utilizzo delle cassette postali** : consente di visualizzare informazioni sull'archiviazione utilizzata, sul consumo di quote, sul numero di elementi e sull'ultima attività (invio o lettura) per le cassette postali.
 
 Per ulteriori informazioni, vedere le risorse seguenti:
 
@@ -52,11 +52,11 @@ Per ulteriori informazioni, vedere le risorse seguenti:
 
 Questi report avanzati forniscono un'esperienza di report interattiva per gli amministratori di EOP, che include informazioni di riepilogo e la possibilità di eseguire il drill-down per ulteriori dettagli.
 
-**Advanced Threat Protection (ATP)**: visualizzare informazioni sui collegamenti sicuri e sugli allegati sicuri che fanno parte di ATP.
+**Defender per office 365** : visualizzare informazioni sui collegamenti sicuri e sugli allegati sicuri che fanno parte di Microsoft Defender per Office 365.
 
-**EOP**: consente di visualizzare informazioni su rilevamenti di malware, posta contraffatta, rilevamenti di posta indesiderata e flusso di posta da e verso l'organizzazione.
+**EOP** : consente di visualizzare informazioni su rilevamenti di malware, posta contraffatta, rilevamenti di posta indesiderata e flusso di posta da e verso l'organizzazione.
 
-[Visualizzare i report per Office 365 Advanced Threat Protection](view-reports-for-atp.md)
+[Visualizzare i report per il difensore per Office 365](view-reports-for-atp.md)
 
 ## <a name="custom-reports-using-microsoft-graph"></a>Report personalizzati tramite Microsoft Graph
 

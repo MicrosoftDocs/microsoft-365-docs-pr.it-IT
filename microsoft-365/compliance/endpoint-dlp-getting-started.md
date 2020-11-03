@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Configurare la prevenzione della perdita di dati degli endpoint di Microsoft 365 per monitorare le attività dei file e implementare azioni di protezione per questi file negli endpoint.
-ms.openlocfilehash: 82ba434d1874ce57abcf0bcc4b60858e0e2ccbf8
-ms.sourcegitcommit: c51de5e1a4cb9c4a7a9854a4226b32453d9e73e0
+ms.openlocfilehash: 95446e15e656e3c1aa658f897863608311b350e0
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "48779214"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48842040"
 ---
 # <a name="get-started-with-endpoint-data-loss-prevention-preview"></a>Introduzione alla prevenzione della perdita di dati degli endpoint (anteprima)
 
@@ -110,7 +110,7 @@ In questo scenario di distribuzione si esegue l'onboarding di dispositivi non an
 
 1. Aprire il [Centro conformità Microsoft](https://compliance.microsoft.com).
 
-2. Aprire la pagina delle impostazioni del Centro conformità e scegliere **Onboarding di dispositivi** . 
+2. Aprire la pagina delle impostazioni del Centro conformità e scegliere **Onboarding di dispositivi**. 
 
    > [!div class="mx-imgBorder"]
    > ![abilitare la gestione dei dispositivi](../media/endpoint-dlp-learn-about-1-enable-device-management.png)
@@ -118,11 +118,11 @@ In questo scenario di distribuzione si esegue l'onboarding di dispositivi non an
    > [!NOTE]
    > Anche se in genere sono necessari circa 60 secondi perché l'onboarding dei dispositivi sia abilitato, attendere fino a 30 minuti prima di contattare il supporto tecnico Microsoft.
 
-3. Scegliere **Gestione dispositivi** per aprire l'elenco **Dispositivi** . L'elenco sarà vuoto finché non si caricano dispositivi.
+3. Scegliere **Gestione dispositivi** per aprire l'elenco **Dispositivi**. L'elenco sarà vuoto finché non si caricano dispositivi.
 
 4. Scegliere **Onboarding** per avviare il processo di onboarding.
 
-5. Scegliere il modo in cui si vogliono distribuire questi altri dispositivi dall'elenco **Metodo di distribuzione** e quindi **scaricare il pacchetto** .
+5. Scegliere il modo in cui si vogliono distribuire questi altri dispositivi dall'elenco **Metodo di distribuzione** e quindi **scaricare il pacchetto**.
 
    > [!div class="mx-imgBorder"]
    > ![metodo di distribuzione](../media/endpoint-dlp-getting-started-3-deployment-method.png)
@@ -146,16 +146,16 @@ In questo scenario, Microsoft Defender per endpoint è già distribuito e ci son
 
 1. Aprire il [Centro conformità Microsoft](https://compliance.microsoft.com).
 
-2. Aprire la pagina delle impostazioni del Centro conformità e scegliere **Abilita monitoraggio dispositivi** .
+2. Aprire la pagina delle impostazioni del Centro conformità e scegliere **Abilita monitoraggio dispositivi**.
 
-3. Scegliere **Gestione dispositivi** per aprire l'elenco **Dispositivi** . Dovrebbe essere visualizzato l'elenco dei dispositivi che già inviano report a Microsoft Defender per endpoint.
+3. Scegliere **Gestione dispositivi** per aprire l'elenco **Dispositivi**. Dovrebbe essere visualizzato l'elenco dei dispositivi che già inviano report a Microsoft Defender per endpoint.
 
    > [!div class="mx-imgBorder"]
    > ![gestione dispositivi](../media/endpoint-dlp-getting-started-2-device-management.png)
    
 4. Scegliere **Onboarding** se è necessario aggiungere altri dispositivi.
 
-5. Scegliere il modo in cui si vogliono distribuire questi altri dispositivi dall'elenco **Metodo di distribuzione** e quindi **Scarica pacchetto** .
+5. Scegliere il modo in cui si vogliono distribuire questi altri dispositivi dall'elenco **Metodo di distribuzione** e quindi **Scarica pacchetto**.
 
 6. Seguire le procedure appropriate in [Strumenti e metodi di onboarding per i dispositivi Windows 10](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints). Questo collegamento porta a una pagina di destinazione in cui è possibile accedere alle procedure di Microsoft Defender per endpoint che corrispondono al pacchetto di distribuzione selezionato nel passaggio 5:
 
@@ -165,7 +165,7 @@ In questo scenario, Microsoft Defender per endpoint è già distribuito e ci son
     - Onboarding di dispositivi Windows 10 con uno script locale
     - Onboarding di dispositivi VDI (Virtual Desktop Infrastructure) non persistenti.
 
-Una volta completata l'operazione di onboarding, l'endpoint sarà visibile nell'elenco **Dispositivi** e inizierà anche a inviare log di controllo a **Esplora attività** .
+Una volta completata l'operazione di onboarding, l'endpoint sarà visibile nell'elenco **Dispositivi** e inizierà anche a inviare log di controllo a **Esplora attività**.
 
 > [!NOTE]
 >Questa esperienza richiede la licenza. Se non si ha la licenza necessaria, i dati non saranno visibili o accessibili.
@@ -191,7 +191,7 @@ Ora che si è eseguito l'onboarding dei dispositivi e che è possibile visualizz
 - [Panoramica sulla prevenzione della perdita dei dati](data-loss-prevention-policies.md)
 - [Creare, testare e ottimizzare un criterio di prevenzione della perdita dei dati](create-test-tune-dlp-policy.md)
 - [Introduzione a Esplora attività](data-classification-activity-explorer.md)
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://docs.microsoft.com/windows/security/threat-protection/)
+- [Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/)
 - [Strumenti e metodi di onboarding per i dispositivi Windows 10](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints)
 - [Abbonamento a Microsoft 365](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1)
 - [Dispositivi aggiunti ad Azure AD](https://docs.microsoft.com/azure/active-directory/devices/concept-azure-ad-join)

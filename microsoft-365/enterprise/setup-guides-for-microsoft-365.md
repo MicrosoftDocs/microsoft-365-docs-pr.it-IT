@@ -21,12 +21,12 @@ search.appverid:
 - BCS160
 ms.assetid: 165f46e8-3533-4d76-be57-97f81ebd40f2
 description: Velocizzare la pianificazione e la configurazione di Microsoft 365 o Office 365 con le guide all'installazione.
-ms.openlocfilehash: 215f51af1fc553ef0710565af0a7c25111de8328
-ms.sourcegitcommit: 705915f8bf9b7c082d12a009523d8aa0670a74a1
+ms.openlocfilehash: 7024494de231e5adcce4bb91414b5f7bb3349f88
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48493698"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48844093"
 ---
 # <a name="setup-guides-for-microsoft-365-and-office-365-services"></a>Guide alla configurazione per i servizi di Office 365 e Microsoft 365
 
@@ -135,12 +135,12 @@ La [distribuzione](https://aka.ms/adfsguidance) di ADFS fornisce istruzioni dett
 
 ## <a name="guides-for-security-and-compliance"></a>Guide per la sicurezza e la conformità
 
-### <a name="microsoft-defender-advanced-threat-protection-atp-advisor"></a>Advisor di Microsoft Defender Advanced Threat Protection (ATP)
+### <a name="microsoft-defender-for-endpoint-advisor"></a>Microsoft Defender per endpoint Advisor
 
-[Microsoft Defender Advanced Threat Protection Advisor](https://aka.ms/mdatpsetup) fornisce istruzioni che aiuteranno la rete aziendale a impedire, rilevare, esaminare e rispondere alle minacce avanzate. Effettuare una valutazione informata della vulnerabilità dell'organizzazione e decidere quali pacchetti di distribuzione e metodi di configurazione sono i migliori. 
+[Microsoft Defender per endpoint Advisor](https://aka.ms/mdatpsetup) fornisce istruzioni che consentiranno alla rete aziendale di prevenire, rilevare, indagare e rispondere alle minacce avanzate. Effettuare una valutazione informata della vulnerabilità dell'organizzazione e decidere quali pacchetti di distribuzione e metodi di configurazione sono i migliori. 
 
 >[!NOTE]
->Per Microsoft Defender ATP è necessaria una licenza di volume Microsoft.
+>Per Microsoft Defender per endpoint è necessaria una licenza di volume Microsoft.
 
 ### <a name="exchange-online-protection-setup-guide"></a>Guida alla configurazione di Exchange Online Protection
 
@@ -148,9 +148,9 @@ Microsoft Exchange Online Protection (EOP) è un servizio di filtraggio della po
 
 Utilizzare la [Guida all'installazione di Exchange Online Protection](https://aka.ms/EOPguidance) per configurare EOP selezionando le tre cassette postali locali degli scenari di distribuzione, le cassette postali &mdash; ibride (mix di locali e cloud) o tutte le cassette postali cloud &mdash; adatte alla propria organizzazione. La guida fornisce informazioni e risorse per la configurazione e la revisione delle licenze dell'utente, l'assegnazione delle autorizzazioni nell'interfaccia di amministrazione di Microsoft 365 e la configurazione dei criteri di protezione antimalware e di posta indesiderata dell'organizzazione nel centro sicurezza & Compliance. 
 
-### <a name="office-365-advanced-threat-protection-advisor"></a>Office 365 Advanced Threat Protection Advisor
+### <a name="microsoft-defender-for-office-365-advisor"></a>Microsoft Defender per Office 365 Advisor
 
-[Office 365 Advanced Threat Protection Advisor](https://aka.ms/oatpsetup) protegge la propria organizzazione dalle minacce dannose che l'ambiente potrebbe incontrare tramite messaggi di posta elettronica, collegamenti e strumenti di collaborazione di terze parti. In questa guida vengono fornite le risorse e le informazioni utili per preparare e identificare il piano Advanced Threat Protection per soddisfare le esigenze dell'organizzazione. 
+[Microsoft Defender per Office 365 Advisor](https://aka.ms/oatpsetup) salvaguarda la propria organizzazione dalle minacce dannose che l'ambiente potrebbe incontrare tramite messaggi di posta elettronica, collegamenti e strumenti di collaborazione di terze parti. In questa guida vengono fornite le risorse e le informazioni utili per preparare e identificare il piano difensore per Office 365 per soddisfare le esigenze dell'organizzazione. 
 
 ### <a name="microsoft-information-protection-setup-guide"></a>Guida all'installazione di Microsoft Information Protection
 

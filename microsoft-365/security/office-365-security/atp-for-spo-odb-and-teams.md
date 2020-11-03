@@ -21,19 +21,19 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-description: Informazioni su Office 365 Advanced Threat Protection per i file in SharePoint Online, OneDrive for business e Microsoft teams.
-ms.openlocfilehash: e536809c74abbe87e1250acda3f3922180cfae97
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+description: Informazioni su Microsoft Defender per Office 365 per i file in SharePoint Online, OneDrive for business e Microsoft teams.
+ms.openlocfilehash: 7b007671a7fecb3ae074fd07ce38d17fb025f6b4
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48446264"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48844333"
 ---
 # <a name="atp-for-sharepoint-onedrive-and-microsoft-teams"></a>ATP per SharePoint, OneDrive e Microsoft Teams
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
-ATP per SharePoint, OneDrive e Microsoft teams in [Office 365 Advanced Threat Protection (ATP)](office-365-atp.md) fornisce un ulteriore livello di protezione per i file che sono già stati analizzati al momento del caricamento da parte del [motore di rilevamento virus comune in Microsoft 365](virus-detection-in-spo.md). ATP per SharePoint, OneDrive e Microsoft teams consente di rilevare e bloccare i file esistenti identificati come dannosi nei siti del team e nelle raccolte documenti.
+ATP per SharePoint, OneDrive e Microsoft teams in [Microsoft Defender per Office 365](office-365-atp.md) fornisce un ulteriore livello di protezione per i file che sono già stati analizzati al momento del caricamento da parte del [motore di rilevamento virus comune in Microsoft 365](virus-detection-in-spo.md). ATP per SharePoint, OneDrive e Microsoft teams consente di rilevare e bloccare i file esistenti identificati come dannosi nei siti del team e nelle raccolte documenti.
 
 ATP per SharePoint, OneDrive e Microsoft teams non è abilitato per impostazione predefinita. Per attivarlo, vedere [accendere ATP per SharePoint, OneDrive e Microsoft teams](turn-on-atp-for-spo-odb-and-teams.md).
 
@@ -59,14 +59,14 @@ Per ulteriori informazioni sull'esperienza utente quando un file è stato rileva
 
 ## <a name="view-information-about-malicious-files-detected-by-atp-for-sharepoint-onedrive-and-microsoft-teams"></a>Visualizzare informazioni sui file dannosi rilevati da ATP per SharePoint, OneDrive e Microsoft Teams
 
-I file identificati come dannosi da ATP verranno visualizzati nei [report di Office 365 Advanced Threat Protection](view-reports-for-atp.md) e in [Explorer (e in Real-Time detections)](threat-explorer.md).
+I file identificati come dannosi da Microsoft Defender per Office 365 verranno visualizzati nei [report di Microsoft Defender per office 365](view-reports-for-atp.md) e in [Esplora risorse (e rilevamenti in tempo reale)](threat-explorer.md).
 
-A maggio 2018, quando un file viene identificato come dannoso da ATP, il file è disponibile anche in quarantena. Per ulteriori informazioni, vedere [use the Security & Compliance Center per gestire i file in quarantena](manage-quarantined-messages-and-files.md#atp-only-use-the-security--compliance-center-to-manage-quarantined-files).
+A maggio 2018, quando un file viene identificato come dannoso da Microsoft Defender per Office 365, il file è disponibile anche in quarantena. Per ulteriori informazioni, vedere [use the Security & Compliance Center per gestire i file in quarantena](manage-quarantined-messages-and-files.md#microsoft-defender-for-office-365-only-use-the-security--compliance-center-to-manage-quarantined-files).
 
 ## <a name="keep-these-points-in-mind"></a>Tenere presente questi punti
 
-- ATP non analizzerà tutti i singoli file in SharePoint Online, OneDrive for business o Microsoft teams. Si tratta di un comportamento legato alla progettazione. I file vengono analizzati in modo asincrono. Il processo utilizza gli eventi di condivisione e attività Guest insieme a sistemi euristici intelligenti e segnalazioni di minacce per identificare i file dannosi.
+- Il difensore per Office 365 non analizzerà tutti i singoli file in SharePoint Online, OneDrive for business o Microsoft teams. Si tratta di un comportamento legato alla progettazione. I file vengono analizzati in modo asincrono. Il processo utilizza gli eventi di condivisione e attività Guest insieme a sistemi euristici intelligenti e segnalazioni di minacce per identificare i file dannosi.
 
-- Verificare che i siti di SharePoint siano configurati per l'utilizzo dell' [esperienza moderna](https://docs.microsoft.com/sharepoint/guide-to-sharepoint-modern-experience). La protezione del trifosfato di adenosina applica se viene utilizzata l'esperienza moderna o la visualizzazione classica. Tuttavia, gli indicatori visivi che un file è bloccato sono disponibili solo nell'esperienza moderna.
+- Verificare che i siti di SharePoint siano configurati per l'utilizzo dell' [esperienza moderna](https://docs.microsoft.com/sharepoint/guide-to-sharepoint-modern-experience). Defender for Office 365 Protection si applica se viene utilizzata la visualizzazione moderna o classica. Tuttavia, gli indicatori visivi che un file è bloccato sono disponibili solo nell'esperienza moderna.
 
-- ATP per SharePoint, OneDrive e Microsoft teams è parte integrante della strategia globale di protezione dalle minacce dell'organizzazione, che include la protezione da posta indesiderata e antimalware in Exchange Online Protection (EOP), nonché collegamenti sicuri e allegati sicuri in Office 365 ATP. Per ulteriori informazioni, vedere [protezione dalle minacce in Office 365](protect-against-threats.md).
+- ATP per SharePoint, OneDrive e Microsoft teams fa parte della strategia globale di protezione dalle minacce dell'organizzazione, che include la protezione da posta indesiderata e anti-malware in Exchange Online Protection (EOP), nonché collegamenti sicuri e allegati sicuri in Microsoft Defender per Office 365. Per ulteriori informazioni, vedere [protezione dalle minacce in Office 365](protect-against-threats.md).

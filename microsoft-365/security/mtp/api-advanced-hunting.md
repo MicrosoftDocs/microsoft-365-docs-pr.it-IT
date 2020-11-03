@@ -1,6 +1,6 @@
 ---
 title: API di caccia avanzate
-description: Informazioni su come eseguire query di ricerca avanzata tramite l'API Microsoft Threat Protection
+description: Informazioni su come eseguire query di ricerca avanzata tramite Microsoft 365 Defender API
 keywords: Ricerca avanzata, API, API, MTP
 search.product: eADQiWindows 10XVcnh
 ms.prod: microsoft-365-enterprise
@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: dd7b02200e370588bbb9470a3d7e897b30234ead
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: c43d263009578af6280ffdc780ab0f9a174a3b97
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48197810"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48844033"
 ---
 # <a name="advanced-hunting-apis"></a>API di caccia avanzate
 
@@ -32,7 +32,7 @@ ms.locfileid: "48197810"
 
 
 **Si applica a:**
-- Microsoft Threat Protection
+- Microsoft 365 Defender
 
 >[!IMPORTANT] 
 >Alcune informazioni si riferiscono al prodotto prerilasciato che può essere modificato in modo sostanziale prima che venga rilasciato commercialmente. Microsoft makes no warranties, express or implied, with respect to the information provided here.
@@ -46,7 +46,7 @@ ms.locfileid: "48197810"
 
 
 ## <a name="permissions"></a>Autorizzazioni
-Per chiamare l'API è necessaria una delle autorizzazioni seguenti. Per ulteriori informazioni, inclusa la scelta delle autorizzazioni, vedere [Access the Microsoft Threat Protection Apis](api-access.md)
+Per chiamare l'API è necessaria una delle autorizzazioni seguenti. Per ulteriori informazioni, tra cui la scelta delle autorizzazioni, vedere [Access the Microsoft 365 Defender Apis](api-access.md)
 
 Tipo di autorizzazione |   Autorizzazione  |   Nome visualizzato per le autorizzazioni
 :---|:---|:---
@@ -82,7 +82,7 @@ Se l'operazione ha esito positivo, questo metodo restituirà 200 OK e l'oggetto 
 
 L'oggetto Response è suddiviso in tre parti (proprietà):<br>
 1) ```Stats``` -Statistiche sulle prestazioni delle query.<br>
-2) ```Schema``` -Lo schema della risposta, un elenco delle coppie nome-tipo per ogni colonna. <br>
+2) ```Schema``` -Lo schema della risposta, un elenco di Name-Type coppie per ogni colonna. <br>
 3) ```Results``` -Un elenco di eventi di caccia avanzati.
 
 ## <a name="example"></a>Esempio
@@ -168,4 +168,4 @@ Di seguito è riportato un esempio di risposta.
 ```
 
 ## <a name="related-topic"></a>Argomento correlato
-- [Accedere alle API di Microsoft Threat Protection](api-access.md)
+- [Accedere alle API di Microsoft 365 Defender](api-access.md)

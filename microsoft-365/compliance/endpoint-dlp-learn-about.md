@@ -1,5 +1,5 @@
 ---
-title: Informazioni sulla prevenzione della perdita di dati degli endpoint di Microsoft 365
+title: Informazioni sulla prevenzione della perdita di dati degli endpoint di Microsoft 365 (anteprima)
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -19,14 +19,14 @@ ms.collection:
 search.appverid:
 - MET150
 description: 'La prevenzione della perdita di dati degli endpoint di Microsoft 365 estende il monitoraggio delle attività dei file e le azioni di protezione agli endpoint. I file vengono resi visibili nelle soluzioni di conformità di Microsoft 365 '
-ms.openlocfilehash: d9260da3e007885821441c8217e01650823eb8b4
-ms.sourcegitcommit: 6647055154002c7d3b8f7ce25ad53c9636bc8066
+ms.openlocfilehash: cbf4a53658885102226d2b874180f5cc5f264a91
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "48768964"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48841862"
 ---
-# <a name="learn-about-microsoft-365-endpoint-data-loss-prevention"></a>Informazioni sulla prevenzione della perdita di dati degli endpoint di Microsoft 365
+# <a name="learn-about-microsoft-365-endpoint-data-loss-prevention-preview"></a>Informazioni sulla prevenzione della perdita di dati degli endpoint di Microsoft 365 (anteprima)
 
 È possibile usare la prevenzione della perdita dei dati (DLP) di Microsoft 365 per monitorare le azioni intraprese sugli elementi che si considerano sensibili e per evitare la condivisione involontaria di tali elementi. Per altre informazioni, vedere [Panoramica sulla prevenzione della perdita dei dati](data-loss-prevention-policies.md).
 
@@ -69,7 +69,7 @@ Onboarding e offboarding vengono gestiti tramite script scaricati dal centro ges
 
  Seguire le procedure in [Introduzione a Microsoft 365 Endpoint DLP](endpoint-dlp-getting-started.md) per l'onboarding dei dispositivi.
 
-Se si è già eseguito l'onboarding di dispositivi tramite [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://docs.microsoft.com/windows/security/threat-protection/), verranno visualizzati automaticamente nell'elenco di dispositivi.
+Se è stato eseguito l'onboarding di dispositivi tramite [Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/), questi dispositivi verranno visualizzati automaticamente nell'elenco dei dispositivi.
 
 ![elenco dispositivi gestiti](../media/endpoint-dlp-learn-about-2-device-list.png)
 
@@ -142,5 +142,5 @@ Dopo avere acquisito familiarità con Endpoint DLP, è possibile proseguire con 
 - [Panoramica sulla prevenzione della perdita dei dati](data-loss-prevention-policies.md)
 - [Creare, testare e ottimizzare un criterio di prevenzione della perdita dei dati](create-test-tune-dlp-policy.md)
 - [Introduzione a Esplora attività](data-classification-activity-explorer.md)
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://docs.microsoft.com/windows/security/threat-protection/)
+- [Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/)
 - [Gestione dei rischi Insider](insider-risk-management.md)

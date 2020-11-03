@@ -1,5 +1,5 @@
 ---
-title: Sicurezza documenti di Office 365 ATP
+title: Documenti attendibili in Microsoft Defender per Office 365
 ms.author: chrisda
 author: chrisda
 manager: dansimp
@@ -15,23 +15,23 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Informazioni sui documenti attendibili in Microsoft 365 E5 o Microsoft 365 E5 Security.
-ms.openlocfilehash: baa04f74388b702b42a0bdb83a7f0797ace09883
-ms.sourcegitcommit: 45c0afcf958069c5c1b31f9b6c762d8dd806e1e9
+ms.openlocfilehash: 7fbee440298aea3609665b62a946ae3ce2857e37
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "48773950"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48845481"
 ---
 # <a name="safe-documents-in-microsoft-365-e5"></a>Sicurezza documenti in Microsoft 365 E5
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-Documenti attendibili è una funzionalità di sicurezza di Microsoft 365 E5 o Microsoft 365 E5 che utilizza [Microsoft Defender Advanced Threat Protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) per analizzare documenti e file aperti in [visualizzazione protetta](https://support.microsoft.com/office/d6f09ac7-e6b9-4495-8e43-2bbcdbcb6653).
+Documenti attendibili è una funzionalità di sicurezza di Microsoft 365 E5 o Microsoft 365 E5 che utilizza [Microsoft Defender per endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) per analizzare documenti e file aperti in [visualizzazione protetta](https://support.microsoft.com/office/d6f09ac7-e6b9-4495-8e43-2bbcdbcb6653).
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare?
 
-- I documenti attendibili sono disponibili solo per gli utenti con licenze di sicurezza *microsoft 365 E5* o *Microsoft 365 E5* . Queste licenze non sono incluse nei piani di Office 365 Advanced Threat Protection (ATP).
+- I documenti attendibili sono disponibili solo per gli utenti con licenze di sicurezza *microsoft 365 E5* o *Microsoft 365 E5* . Queste licenze non sono incluse in Microsoft Defender per i piani di Office 365.
 
 - I documenti attendibili sono supportati in Microsoft 365 Apps for Enterprise (in precedenza noto come Office 365 ProPlus) versione 2004 o successiva.
 
@@ -43,13 +43,13 @@ Documenti attendibili è una funzionalità di sicurezza di Microsoft 365 E5 o Mi
 
 ### <a name="how-does-microsoft-handle-your-data"></a>In che modo Microsoft gestisce i dati?
 
-Per proteggersi, i documenti sicuri inviano i file al cloud di [protezione avanzata delle minacce di Microsoft Defender](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) per l'analisi. Informazioni dettagliate su come Microsoft Defender ATP gestisce i dati possono essere reperiti qui: [Microsoft Defender ATP data storage and privacy](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy).
+Per garantire la protezione, i documenti attendibili inviano file a [Microsoft Defender per endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) cloud per l'analisi. Informazioni dettagliate su come Microsoft Defender for Endpoint gestisce i dati possono essere reperiti qui: [Microsoft Defender per l'archiviazione dei dati endpoint e la privacy](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy).
 
 I file inviati dai documenti attendibili non vengono conservati in Defender oltre il tempo necessario per l'analisi (in genere, meno di 24 ore).
 
 ## <a name="use-the-security--compliance-center-to-configure-safe-documents"></a>Utilizzare il Centro sicurezza & conformità per configurare i documenti attendibili
 
-1. Nel centro sicurezza & conformità, accedere a criteri di **gestione delle minacce** per gli \> **Policy** \> **allegati sicuri ATP** e quindi fare clic su **Impostazioni globali** .
+1. Nel centro sicurezza & conformità, accedere a criteri di **gestione delle minacce** per gli \> **Policy** \> **allegati sicuri ATP** e quindi fare clic su **Impostazioni globali**.
 
 2. Nelle **Impostazioni globali** volare che viene visualizzato, configurare le seguenti impostazioni:
 
@@ -57,9 +57,9 @@ I file inviati dai documenti attendibili non vengono conservati in Defender oltr
 
    - **Consenti agli utenti di fare clic su una visualizzazione protetta anche se i documenti sicuri identificano il file come dannoso** : si consiglia di lasciare questa opzione disattivata (lasciare l'interruttore a sinistra: disattivazione ![ ](../../media/scc-toggle-off.png) ).
 
-   Al termine, scegliere **Salva** .
+   Al termine, scegliere **Salva**.
 
-   ![Impostazioni dei documenti attendibili dopo aver selezionato le impostazioni globali nella pagina allegati sicuri di ATP.](../../media/safe-docs.png)
+   ![Impostazioni dei documenti attendibili dopo la selezione delle impostazioni globali nella pagina allegati sicuri.](../../media/safe-docs.png)
 
 ### <a name="use-exchange-online-powershell-to-configure-safe-documents"></a>Utilizzo di PowerShell di Exchange Online per configurare documenti sicuri
 

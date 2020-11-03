@@ -15,12 +15,12 @@ ms.collection:
 - M365-security-compliance
 - remotework
 description: Proteggere la posta elettronica e i dati aziendali da minacce informatiche, tra cui ransomware, phishing e allegati dannosi.
-ms.openlocfilehash: c72090bebe92ea61d99772eccde041d011c05580
-ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
+ms.openlocfilehash: e91d2c6fc3df7cbcd7fedc198747838d470ab7d8
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48398648"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48845421"
 ---
 # <a name="top-12-tasks-for-security-teams-to-support-working-from-home"></a>Top 12 attività per i team di sicurezza per il supporto di lavoro da casa
 
@@ -41,10 +41,10 @@ Per i clienti che utilizzano i piani aziendali, Microsoft consiglia di completar
 |Passaggio|Attività|Tutti i piani di Office 365 Enterprise|Microsoft 365 E3|Microsoft 365 E5|
 |---|---|---|---|---|
 |1 |[Abilitare l'autenticazione a più fattori di Azure (AMF)](#1-enable-azure-multi-factor-authentication-mfa)|![Incluso](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Incluso](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Incluso](../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|2 |[Protezione contro le minacce](#2-protect-against-threats)|![Incluso](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Incluso](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Incluso](../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|3 |[Configurare Office 365 Advanced Threat Protection](#3-configure-office-365-advanced-threat-protection)|||![Incluso](../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|4 |[Configurazione di Azure Advanced Threat Protection (ATP)](#4-configure-azure-advanced-threat-protection)|||![Incluso](../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|5 |[Attivare Microsoft Threat Protection](#5-turn-on-microsoft-threat-protection)|||![Incluso](../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|2|[Protezione contro le minacce](#2-protect-against-threats)|![Incluso](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Incluso](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Incluso](../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|3|[Configurare Microsoft Defender per Office 365](#3-configure-microsoft-defender-for-office-365)|||![Incluso](../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|4 |[Configurare Microsoft Defender per l'identità](#4-configure-microsoft-defender-for-identity)|||![Incluso](../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|5 |[Attiva Microsoft 365 Defender](#5-turn-on-microsoft-365-defender)|||![Incluso](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |6 |[Configurare la protezione delle app per dispositivi mobili di Intune per telefoni e Tablet](#6-configure-intune-mobile-app-protection-for-phones-and-tablets)||![Incluso](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Incluso](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |7 |[Configurare il master e l'accesso condizionale per gli utenti, inclusa la protezione delle app di Intune](#7-configure-mfa-and-conditional-access-for-guests-including-intune-mobile-app-protection)||![Incluso](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Incluso](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |8 |[Registrare i PC nella gestione dei dispositivi e richiedere PC conformi](#8-enroll-pcs-into-device-management-and-require-compliant-pcs)||![Incluso](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Incluso](../media/d238e041-6854-4a78-9141-049224df0795.png)|
@@ -86,17 +86,17 @@ Tutti i piani di Microsoft 365 includono una serie di funzionalità di protezion
 
 Vedere [Protect Against Threats in Office 365](office-365-security/protect-against-threats.md) per indicazioni che è possibile utilizzare come punto di partenza.
 
-## <a name="3-configure-office-365-advanced-threat-protection"></a>3: configurare Office 365 Advanced Threat Protection
+## <a name="3-configure-microsoft-defender-for-office-365"></a>3: configurare Microsoft Defender per Office 365
 
-Office 365 Advanced Threat Protection (ATP), incluso in Microsoft 365 E5 e Office 365 E5, salvaguarda la propria organizzazione dalle minacce dannose poste da messaggi di posta elettronica, collegamenti (URL) e strumenti di collaborazione. Questo può richiedere diverse ore per la configurazione.
+Microsoft Defender per Office 365, incluso in Microsoft 365 E5 e Office 365 E5, salvaguarda la propria organizzazione dalle minacce dannose poste da messaggi di posta elettronica, collegamenti (URL) e strumenti di collaborazione. Questo può richiedere diverse ore per la configurazione.
 
-Office 365 ATP:
+Microsoft Defender per Office 365:
 
 - Protegge la propria organizzazione dalle minacce di posta elettronica sconosciute in tempo reale utilizzando sistemi intelligenti che controllano gli allegati e i collegamenti per contenuti dannosi. Questi sistemi automatizzati includono una robusta piattaforma di detonazione, euristica e modelli di apprendimento automatico.
 - Protegge l'organizzazione quando gli utenti collaborano e condividono file, identificando e bloccando i file dannosi nei siti e nelle raccolte documenti del team.
 - Applica i modelli di apprendimento automatico e gli algoritmi avanzati di rilevamento della rappresentazione per evitare attacchi di phishing.
 
-Per una panoramica, tra cui un riepilogo dei piani, vedere [Office 365 Advanced Threat Protection](office-365-security/office-365-atp.md).
+Per una panoramica, tra cui un riepilogo dei piani, vedere [Defender for Office 365](office-365-security/office-365-atp.md).
 
 L'amministratore globale può configurare queste protezioni:
 
@@ -104,25 +104,25 @@ L'amministratore globale può configurare queste protezioni:
 - [Configurare le impostazioni globali per i collegamenti sicuri](office-365-security/configure-global-settings-for-safe-links.md)
 - [Impostare i criteri per gli allegati sicuri](office-365-security/set-up-atp-safe-attachments-policies.md)
 
-È necessario collaborare con l'amministratore di Exchange Online e l'amministratore di SharePoint Online per configurare ATP per i carichi di lavoro seguenti:
+È necessario collaborare con l'amministratore di Exchange Online e l'amministratore di SharePoint Online per configurare Defender per Office 365 per i carichi di lavoro seguenti:
 
 - [ATP per SharePoint, OneDrive e Microsoft Teams](office-365-security/atp-for-spo-odb-and-teams.md)
 
-## <a name="4-configure-azure-advanced-threat-protection"></a>4: configurare Azure Advanced Threat Protection
+## <a name="4-configure-microsoft-defender-for-identity"></a>4: configurare Microsoft Defender per Identity
 
-[Azure Advanced Threat Protection](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp) (Azure ATP) è una soluzione di sicurezza basata sul cloud che sfrutta i segnali di Active Directory locali per identificare, rilevare ed esaminare le minacce avanzate, le identità compromesse e le azioni Insider dannose indirizzate alla propria organizzazione. Si concentrerà su questo punto perché protegge l'infrastruttura di on-premi e la cloud, non ha dipendenze o prerequisiti e può fornire vantaggi immediati.
+[Microsoft Defender for Identity](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp) è una soluzione di sicurezza basata sul cloud che utilizza i segnali di Active Directory locali per identificare, rilevare ed esaminare le minacce avanzate, le identità compromesse e le azioni di insider dannose indirizzate alla propria organizzazione. Si concentrerà su questo punto perché protegge l'infrastruttura di on-premi e la cloud, non ha dipendenze o prerequisiti e può fornire vantaggi immediati.
 
-- Per ottenere rapidamente l'installazione, vedere [Guide rapide di Azure ATP](https://docs.microsoft.com/azure-advanced-threat-protection/install-atp-step1)
-- [Video: Introduzione a Azure ATP](https://www.youtube.com/watch?reload=9&v=EGY2m8yU_KE)
-- Esaminare le [tre fasi della distribuzione di Azure ATP](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp#whats-next)
+- Per ottenere rapidamente l'installazione, vedere [Microsoft Defender per le guide rapide dell'identità](https://docs.microsoft.com/azure-advanced-threat-protection/install-atp-step1)
+- Guarda il [video: Introduzione a Microsoft Defender for Identity](https://www.youtube.com/watch?reload=9&v=EGY2m8yU_KE)
+- Esaminare le [tre fasi di Microsoft Defender per la distribuzione delle identità](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp#whats-next)
 
-## <a name="5-turn-on-microsoft-threat-protection"></a>5: abilitare Microsoft Threat Protection
+## <a name="5-turn-on-microsoft-365-defender"></a>5: attiva Microsoft 365 Defender
 
-Dopo aver configurato Office 365 ATP e Azure ATP, è possibile visualizzare i segnali combinati da queste funzionalità in un solo dashboard. [Microsoft Threat Protection](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-threat-protection) (MTP) riunisce avvisi, incidenti, indagini e risposte automatiche e una ricerca avanzata tra i carichi di lavoro (Azure ATP, Office 365 ATP, Microsoft Defender ATP e Microsoft cloud app Security) in un unico riquadro di [Security.Microsoft.com](https://security.microsoft.com).
+Dopo aver configurato Microsoft Defender per Office 365 e Microsoft Defender per Identity configurata, è possibile visualizzare i segnali combinati da queste funzionalità in un dashboard. [Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-threat-protection) riunisce avvisi, incidenti, indagini e risposte automatiche e una ricerca avanzata tra i carichi di lavoro (Microsoft Defender per Identity, Defender per Office 365, Microsoft Defender per endpoint e Microsoft cloud app Security) in un unico riquadro di [Security.Microsoft.com](https://security.microsoft.com).
 
 ![Illustrazione del dashboard MTP](../media/top-ten-security-remote-work-mtp-dashboard.png)
 
-Dopo aver configurato uno o più servizi di protezione dalle minacce avanzate, abilitare MTP. Le nuove funzionalità vengono aggiunte continuamente a MTP; prendere in considerazione la possibilità di ricevere funzionalità di anteprima.
+Dopo aver configurato uno o più dei servizi di protezione per Office 365, abilitare MTP. Le nuove funzionalità vengono aggiunte continuamente a MTP; prendere in considerazione la possibilità di ricevere funzionalità di anteprima.
 
 - [Altre informazioni su MTP](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-threat-protection)
 - [Attiva MTP](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-enable)
@@ -173,7 +173,7 @@ Il modo più rapido per andare avanti consiste nel [configurare la registrazione
 
 Dopo aver eseguito la registrazione dei dispositivi, utilizzare le linee guida nei [criteri di identità e accesso](./office-365-security/identity-access-policies.md) ai dispositivi comuni per creare questi criteri:
 
-- [Definire i criteri di conformità del dispositivo](./office-365-security/identity-access-policies.md#define-device-compliance-policies) : le impostazioni consigliate per Windows 10 includono la protezione antivirus. Se si dispone di Microsoft 365 E5, utilizzare Microsoft Defender Advanced Threat Protection per monitorare l'integrità dei dispositivi per i dipendenti. Verificare che i criteri di conformità per altri sistemi operativi includano la protezione antivirus e il software di protezione finale.
+- [Definire i criteri di conformità del dispositivo](./office-365-security/identity-access-policies.md#define-device-compliance-policies) : le impostazioni consigliate per Windows 10 includono la protezione antivirus. Se si dispone di Microsoft 365 E5, utilizzare Microsoft Defender per endpoint per monitorare l'integrità dei dispositivi per i dipendenti. Verificare che i criteri di conformità per altri sistemi operativi includano la protezione antivirus e il software di protezione finale.
 - [Richiedi PC conformi](./office-365-security/identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets) , ovvero la regola di accesso condizionale in Azure ad che applica i criteri di conformità dei dispositivi.
 
 Solo un'organizzazione può gestire un dispositivo, quindi assicuratevi di escludere gli account Guest dalla regola di accesso condizionale di Azure AD. Se non si escludono gli utenti guest e esterni dai criteri che richiedono la conformità del dispositivo, questi criteri bloccano tali utenti. Per ulteriori informazioni, vedere [updating the Common Policies to allow and Protect Guest and External Access](./office-365-security/identity-access-policies-guest-access.md).
@@ -209,7 +209,7 @@ Microsoft 365 fornisce le risorse seguenti per informare gli utenti nell'organiz
 |Concetti|Risorse|
 |---|---|
 |Microsoft 365|[Percorsi di apprendimento personalizzabili](https://docs.microsoft.com/office365/customlearning/) <p>Tali risorse consentono di creare una formazione per gli utenti finali nell'organizzazione|
-|Sicurezza Microsoft 365|[Modulo di apprendimento: proteggere l'organizzazione con sicurezza integrata e intelligente da Microsoft 365](https://docs.microsoft.com/learn/modules/security-with-microsoft-365) <p>Questo modulo consente di descrivere in che modo le funzionalità di sicurezza di Microsoft 365 interagiscono e di articolare i vantaggi di queste funzionalità di sicurezza.|
+|Sicurezza di Microsoft 365|[Modulo di apprendimento: proteggere l'organizzazione con sicurezza integrata e intelligente da Microsoft 365](https://docs.microsoft.com/learn/modules/security-with-microsoft-365) <p>Questo modulo consente di descrivere in che modo le funzionalità di sicurezza di Microsoft 365 interagiscono e di articolare i vantaggi di queste funzionalità di sicurezza.|
 |Autenticazione a più fattori|[Verifica in due passaggi: che cos'è la pagina di verifica aggiuntiva?](https://docs.microsoft.com/azure/active-directory/user-help/multi-factor-authentication-end-user-first-time) <p>Questo articolo aiuta gli utenti finali a capire cosa sia l'autenticazione a più fattori e il motivo per cui viene utilizzato all'interno dell'organizzazione.|
 |
 
@@ -247,6 +247,6 @@ Microsoft 365 include diversi modi per monitorare lo stato e intraprendere le az
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-Congratulazioni! Sono state implementate rapidamente alcune delle protezioni di sicurezza più importanti e la vostra organizzazione è molto più sicura. A questo punto si è pronti per andare anche oltre con le funzionalità di protezione dalle minacce (tra cui Microsoft Defender Advanced Threat Protection), le funzionalità di classificazione e protezione dei dati e la protezione degli account amministrativi. Per un insieme più approfondito e metodico di suggerimenti per la sicurezza per Microsoft 365, vedere [microsoft 365 Security for Business Decision Makers (BDMs)](Microsoft-365-security-for-bdm.md).
+Congratulazioni! Sono state implementate rapidamente alcune delle protezioni di sicurezza più importanti e la vostra organizzazione è molto più sicura. A questo punto si è pronti per andare anche oltre con le funzionalità di protezione dalle minacce (tra cui Microsoft Defender per endpoint), la classificazione dei dati e le funzionalità di protezione e la protezione degli account amministrativi. Per un insieme più approfondito e metodico di suggerimenti per la sicurezza per Microsoft 365, vedere [microsoft 365 Security for Business Decision Makers (BDMs)](Microsoft-365-security-for-bdm.md).
 
 Visitare anche il nuovo Centro sicurezza di Microsoft su [docs.Microsoft.com/Security](https://docs.microsoft.com/security).

@@ -21,12 +21,12 @@ description: Interfaccia di amministrazione di Microsoft 365-informazioni sulle 
 ms.custom:
 - MACDashWhatsNew
 - AdminSurgePortfolio
-ms.openlocfilehash: 64c9939f7dd6c4370b80e74987263942dad0e62f
-ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
+ms.openlocfilehash: f861b346b1dcf9bb0670f1b6ac480f727e97af34
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48208904"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48845217"
 ---
 # <a name="whats-new-in-the-microsoft-365-admin-center"></a>Novità dell'interfaccia di amministrazione di Microsoft 365
 
@@ -45,7 +45,7 @@ Se si desidera sapere cosa c'è di nuovo con altri servizi cloud Microsoft:
 - [Novità dell'interfaccia di amministrazione di Exchange](https://docs.microsoft.com/Exchange/whats-new)
 - [Novità di Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/whats-new)
 - [Novità nel centro conformità di Microsoft 365](https://docs.microsoft.com/Office365/SecurityCompliance/whats-new)
-- [Novità di Microsoft Threat Protection](https://docs.microsoft.com/microsoft-365/security/mtp/whats-new)
+- [Novità di Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/mtp/whats-new)
 - [Novità dell'interfaccia di amministrazione di SharePoint](https://docs.microsoft.com/sharepoint/what-s-new-in-admin-center)
 - [Aggiornamenti di Office](https://docs.microsoft.com/OfficeUpdates/)
 
@@ -59,12 +59,12 @@ Benvenuto in Microsoft Ignite-la prima accensione solo online. Si spera di veder
 
 Sono state sviluppate una serie di funzionalità per gli amministratori multi-tenant come te per ottenere il lavoro più rapido ed efficiente.
 
-- **I tenant**: passano rapidamente tra i tenant gestiti.
-- **Tutti i tenant**: una nuova pagina in cui è possibile visualizzare rapidamente l'integrità di tutti i servizi dei tenant, le richieste di servizi aperti, i prodotti e la fatturazione, le attività di installazione consigliate e il numero di utenti nel tenant.
-- **Setup**: la pagina di installazione multi-tenant fornisce una visualizzazione elenco della pagina di installazione, ma è organizzata per molti tenant. È possibile vedere quali funzionalità non sono attivate, quali attività sono complete per tutti i tenant, attività che devono essere completate dai tenant. Questa visualizzazione consentirà di tenere conto dell'adozione delle funzionalità e di verificare che le attività di configurazione della sicurezza consigliate vengano sempre eseguite.
-- **Integrità del servizio**: la visualizzazione dell'integrità del servizio Mostra se eventuali incidenti o avvisi interessano i tenant. Verrà anche illustrato il numero di tenant gestiti coinvolti. È sufficiente selezionare un evento imprevisto per ottenere ulteriori informazioni sulla scheda Panoramica, quindi passare alla scheda tenant affected per eseguire il drill-down e il supporto del tenant.
+- **I tenant** : passano rapidamente tra i tenant gestiti.
+- **Tutti i tenant** : una nuova pagina in cui è possibile visualizzare rapidamente l'integrità di tutti i servizi dei tenant, le richieste di servizi aperti, i prodotti e la fatturazione, le attività di installazione consigliate e il numero di utenti nel tenant.
+- **Setup** : la pagina di installazione multi-tenant fornisce una visualizzazione elenco della pagina di installazione, ma è organizzata per molti tenant. È possibile vedere quali funzionalità non sono attivate, quali attività sono complete per tutti i tenant, attività che devono essere completate dai tenant. Questa visualizzazione consentirà di tenere conto dell'adozione delle funzionalità e di verificare che le attività di configurazione della sicurezza consigliate vengano sempre eseguite.
+- **Integrità del servizio** : la visualizzazione dell'integrità del servizio Mostra se eventuali incidenti o avvisi interessano i tenant. Verrà anche illustrato il numero di tenant gestiti coinvolti. È sufficiente selezionare un evento imprevisto per ottenere ulteriori informazioni sulla scheda Panoramica, quindi passare alla scheda tenant affected per eseguire il drill-down e il supporto del tenant.
 - La **migrazione delle cassette postali tra tenant** è un nuovo servizio, ora in anteprima pubblica, che consente di spostare le cassette postali tra i tenant senza dover trasferisce e quindi di onboard Mailboxes. 
-- **Condivisione dei domini tra tenant**: in breve, è possibile partecipare a un'anteprima privata per le funzionalità che consentono di condividere un dominio tra più tenant. Ad esempio, se contoso acquisisce i giocattoli di Wingtip, Contoso può condividere il dominio con i giocattoli di Wingtip, in modo che gli utenti di entrambi i tenant possano utilizzare "contoso.com" come indirizzi di posta elettronica.
+- **Condivisione dei domini tra tenant** : in breve, è possibile partecipare a un'anteprima privata per le funzionalità che consentono di condividere un dominio tra più tenant. Ad esempio, se contoso acquisisce i giocattoli di Wingtip, Contoso può condividere il dominio con i giocattoli di Wingtip, in modo che gli utenti di entrambi i tenant possano utilizzare "contoso.com" come indirizzi di posta elettronica.
 
 ![Pagina integrità del servizio per multi-tenant con un evento Incident selezionato e la scheda relativa ai tenant è aperta. Nel menu di spostamento sono disponibili tutti i tenant, l'installazione e l'integrità dei servizi come solo opzioni.](../media/MAC-WN-MTinServiceHealth.png)
 
@@ -81,8 +81,8 @@ Gli account di priorità sono disponibili solo per le organizzazioni che soddisf
 
 Per iniziare, sono disponibili due modalità:
 
-- Andare a **utenti**, quindi nel menu "altre azioni" selezionare **Gestisci gli account prioritari** per aggiungere gli utenti all'elenco.
-- Andare a **installazione**, trovare l'attività di installazione **monitorare gli account più importanti**, quindi selezionare **inizia**.
+- Andare a **utenti** , quindi nel menu "altre azioni" selezionare **Gestisci gli account prioritari** per aggiungere gli utenti all'elenco.
+- Andare a **installazione** , trovare l'attività di installazione **monitorare gli account più importanti** , quindi selezionare **inizia**.
 
 Per ulteriori informazioni sugli account prioritari, vedere [monitoraggio degli account prioritari](https://docs.microsoft.com/microsoft-365/admin/setup/priority-accounts) e [dei problemi di posta elettronica per gli account prioritari](https://docs.microsoft.com/Exchange/mail-flow-best-practices/mail-flow-insights/mfi-email-issues-for-priority-accounts).
 
@@ -93,24 +93,24 @@ Per ulteriori informazioni sugli account prioritari, vedere [monitoraggio degli 
 - La casella di ricerca è stata spostata nell'area di intestazione in cui è indicato "Microsoft 365 Admin Center" in modo da eseguire la ricerca da qualsiasi pagina, non solo dalla Home page. È stato anche ottenuto un collegamento: **ALT + S**.
 - La ricerca è più intelligente e ti darà risultati migliori, anche più velocemente. Provare a digitare "2FA" per iniziare.
 - I risultati della ricerca sono organizzati in base al tipo di elemento o all'azione che è possibile eseguire.
-  - **Utenti**: selezionare il nome dell'utente ed è possibile modificarlo direttamente. Se si seleziona il menu "altre azioni" accanto al nome, è possibile reimpostare la password. È possibile eseguire la ricerca per nome visualizzato, cognome, nome, nome utente o indirizzo di posta elettronica principale e alias di posta elettronica. Ma per ottenere una corrispondenza esatta, eseguire una ricerca in base all'indirizzo di posta elettronica principale o al nome utente.
-  - **Gruppi**: modificare il gruppo da qualsiasi pagina, aggiungere membri, assegnare proprietari.
-  - **Azioni**: simile a come è possibile cercare un utente e quindi reimpostare la propria password, è anche possibile cercare "Reimposta password" da qualsiasi pagina e quindi reimpostare una o più password per gli utenti.
-  - Struttura di **spostamento**: i risultati in esplorazione consentono rapidamente di accedere rapidamente a una pagina nell'interfaccia di amministrazione. Ad esempio, la ricerca di "ruoli" vi consentirà di eseguire la pagina dei ruoli per i ruoli di Azure AD.
-  - **Impostazioni**: ricerca di qualsiasi impostazione relativa all'organizzazione, ai servizi sottoscritti e alle impostazioni di sicurezza e privacy. 
-  - **Domini**: è possibile trovare collegamenti rapidi ai domini e quindi il collegamento vi consentirà di visualizzare la pagina panoramica e integrità del dominio.
-  - **Documentazione**: se non si riesce a trovare un risultato per l'utente, si cercherà di trovare una documentazione per la guida. Per trovare una corrispondenza, è necessario un po' di tempo per l'elenco di articoli a cura, quindi attendere un secondo per consentire alla ricerca di trovare i risultati. 
-  - **Commenti e suggerimenti**: non è stato trovato quello che stavi cercando? Inviaci commenti e suggerimenti dalla ricerca. Verrà aggiunta la funzionalità di ricerca per altre pagine e altre funzionalità nell'interfaccia di amministrazione.
+  - **Utenti** : selezionare il nome dell'utente ed è possibile modificarlo direttamente. Se si seleziona il menu "altre azioni" accanto al nome, è possibile reimpostare la password. È possibile eseguire la ricerca per nome visualizzato, cognome, nome, nome utente o indirizzo di posta elettronica principale e alias di posta elettronica. Ma per ottenere una corrispondenza esatta, eseguire una ricerca in base all'indirizzo di posta elettronica principale o al nome utente.
+  - **Gruppi** : modificare il gruppo da qualsiasi pagina, aggiungere membri, assegnare proprietari.
+  - **Azioni** : simile a come è possibile cercare un utente e quindi reimpostare la propria password, è anche possibile cercare "Reimposta password" da qualsiasi pagina e quindi reimpostare una o più password per gli utenti.
+  - Struttura di **spostamento** : i risultati in esplorazione consentono rapidamente di accedere rapidamente a una pagina nell'interfaccia di amministrazione. Ad esempio, la ricerca di "ruoli" vi consentirà di eseguire la pagina dei ruoli per i ruoli di Azure AD.
+  - **Impostazioni** : ricerca di qualsiasi impostazione relativa all'organizzazione, ai servizi sottoscritti e alle impostazioni di sicurezza e privacy. 
+  - **Domini** : è possibile trovare collegamenti rapidi ai domini e quindi il collegamento vi consentirà di visualizzare la pagina panoramica e integrità del dominio.
+  - **Documentazione** : se non si riesce a trovare un risultato per l'utente, si cercherà di trovare una documentazione per la guida. Per trovare una corrispondenza, è necessario un po' di tempo per l'elenco di articoli a cura, quindi attendere un secondo per consentire alla ricerca di trovare i risultati. 
+  - **Commenti e suggerimenti** : non è stato trovato quello che stavi cercando? Inviaci commenti e suggerimenti dalla ricerca. Verrà aggiunta la funzionalità di ricerca per altre pagine e altre funzionalità nell'interfaccia di amministrazione.
 
 ### <a name="microsoft-365-admin-mobile-app"></a>App Microsoft 365 admin per dispositivi mobili
 
 L' [app microsoft 365 Admin mobile](https://www.microsoft.com/microsoft-365/business/manage-office-365-admin-app), inclusa nell'abbonamento, consente di gestire Microsoft 365 dal dispositivo mobile, in modo da poter uscire dalla propria scrivania per svolgere ogni attività quotidiana. In effetti, esistono più di 90 funzionalità nell'app--e ne sono state aggiunte alcune altre:
 
-- **Supporto per i criteri di gestione delle applicazioni mobili di Microsoft Intune e per l'accesso condizionale**: è ora possibile utilizzare il dispositivo personale per gestire Microsoft 365 anche se l'organizzazione ha attivato i criteri di gestione delle applicazioni mobili di Intune e di accesso condizionale.
-- **Notifiche del centro messaggi**: attiva notifiche del centro messaggi nelle notifiche **delle impostazioni**  >  **Notifications** se si desidera ricevere un avviso sui nuovi post del centro messaggi. Tramite le notifiche, si vuole garantire che l'utente rimanga informato sulle informazioni importanti e sugli eventi all'interno del tenant.
-- **Avvisi di fatturazione**: è inoltre possibile abilitare le notifiche di fatturazione nelle notifiche **delle impostazioni**  >  **Notifications** se si desidera ottenere notifiche di fatturazione sul dispositivo se un abbonamento sta per scadere.
-- **Modalità oscura**: Welcome to the Dark Side dell'app per dispositivi mobili. Questa è stata una delle caratteristiche più richieste. Andare a **temi delle impostazioni**  >  **Themes** per attivarla.
-- **Segnalare un problema**: è ora possibile segnalare un problema nell'app o visualizzare i problemi segnalati da altri amministratori. Visitare l' **integrità del servizio** per estrarlo.
+- **Supporto per i criteri di gestione delle applicazioni mobili di Microsoft Intune e per l'accesso condizionale** : è ora possibile utilizzare il dispositivo personale per gestire Microsoft 365 anche se l'organizzazione ha attivato i criteri di gestione delle applicazioni mobili di Intune e di accesso condizionale.
+- **Notifiche del centro messaggi** : attiva notifiche del centro messaggi nelle notifiche **delle impostazioni**  >  **Notifications** se si desidera ricevere un avviso sui nuovi post del centro messaggi. Tramite le notifiche, si vuole garantire che l'utente rimanga informato sulle informazioni importanti e sugli eventi all'interno del tenant.
+- **Avvisi di fatturazione** : è inoltre possibile abilitare le notifiche di fatturazione nelle notifiche **delle impostazioni**  >  **Notifications** se si desidera ottenere notifiche di fatturazione sul dispositivo se un abbonamento sta per scadere.
+- **Modalità oscura** : Welcome to the Dark Side dell'app per dispositivi mobili. Questa è stata una delle caratteristiche più richieste. Andare a **temi delle impostazioni**  >  **Themes** per attivarla.
+- **Segnalare un problema** : è ora possibile segnalare un problema nell'app o visualizzare i problemi segnalati da altri amministratori. Visitare l' **integrità del servizio** per estrarlo.
 
 ![La pagina integrità in Microsoft 365 admin app con notifiche per il centro messaggi, l'integrità del servizio, gli avvisi di fatturazione.](../media/MAC-WN-AdminMobileApp.png)
 
@@ -120,7 +120,7 @@ Le aziende di piccole e medie dimensioni potrebbero ricevere una raccomandazione
 
 ### <a name="remote-work-collection"></a>Raccolta di lavoro remota
 
-In ottobre, verrà aggiunta una raccolta di lavoro remota per aiutare i proprietari di piccole imprese e il loro staff a ottenere online e a lavorare in remoto.  Il programma di installazione di **Essentials Work Remote** è un elenco curato di tutte le funzionalità che Microsoft consiglia di abilitare in modo sicuro i lavori remoti e collaborare efficacemente. In un paio di settimane, è possibile provare a eseguire l' **installazione**di  >  **Essentials Work Remote**.
+In ottobre, verrà aggiunta una raccolta di lavoro remota per aiutare i proprietari di piccole imprese e il loro staff a ottenere online e a lavorare in remoto.  Il programma di installazione di **Essentials Work Remote** è un elenco curato di tutte le funzionalità che Microsoft consiglia di abilitare in modo sicuro i lavori remoti e collaborare efficacemente. In un paio di settimane, è possibile provare a eseguire l' **installazione** di  >  **Essentials Work Remote**.
 
 ![Pagina di elementi di lavoro remota nel programma di installazione con 7 attività non avviate.](../media/MAC-WN-RemoteWork.png)
 
@@ -135,7 +135,7 @@ In questo articolo viene continuamente analizzato e aggiornato il contenuto e gl
 - Risolvere i problemi di installazione di DKIM
 - Diagnosticare gli errori di registrazione degli utenti di Intune
 
-Si sta implementando la nuova e migliorata esperienza di supporto già presente nell'interfaccia di amministrazione di Microsoft 365 in alcuni degli altri centri di amministrazione. L'interfaccia di amministrazione di team e i centri di amministrazione di sicurezza e conformità sono già presenti in questa nuova esperienza. Presto, interfaccia di **amministrazione di Exchange**, interfaccia di amministrazione di **SharePoint**e **Office.com** verranno aggiornati insieme a questa nuova esperienza di guida per gli amministratori.
+Si sta implementando la nuova e migliorata esperienza di supporto già presente nell'interfaccia di amministrazione di Microsoft 365 in alcuni degli altri centri di amministrazione. L'interfaccia di amministrazione di team e i centri di amministrazione di sicurezza e conformità sono già presenti in questa nuova esperienza. Presto, interfaccia di **amministrazione di Exchange** , interfaccia di amministrazione di **SharePoint** e **Office.com** verranno aggiornati insieme a questa nuova esperienza di guida per gli amministratori.
 
 ### <a name="manage-changes-with-microsoft-planner"></a>Gestire le modifiche con Microsoft Planner
 
@@ -165,9 +165,9 @@ Il prossimo aggiornamento di questo articolo sarà il giorno di apertura del pri
 
 La gestione delle sottoscrizioni è stata molto elaborata in modo da velocizzare il caricamento della pagina, velocizzare la ricerca e rispondere agli standard di accessibilità Web ([linee guida WCAG 2,1](http://www.w3.org/TR/WCAG21/)).
 
-- **Riprogettazione della tabella**: la tabella è stata riprogettata in modo che sia possibile raggruppare abbonamenti simili. Andare a **fatturazione**dei  >  **prodotti**.
-- **Dettagli prodotto**: per ulteriori informazioni sugli abbonamenti, selezionare il prodotto nell'elenco.
-- **Fare tutto da qui**: e non è necessario andare a saltare diverse pagine per gestire un prodotto. Ad esempio, se è necessario annullare un abbonamento, il riquadro si aprirà per eseguire l'azione qui.
+- **Riprogettazione della tabella** : la tabella è stata riprogettata in modo che sia possibile raggruppare abbonamenti simili. Andare a **fatturazione** dei  >  **prodotti**.
+- **Dettagli prodotto** : per ulteriori informazioni sugli abbonamenti, selezionare il prodotto nell'elenco.
+- **Fare tutto da qui** : e non è necessario andare a saltare diverse pagine per gestire un prodotto. Ad esempio, se è necessario annullare un abbonamento, il riquadro si aprirà per eseguire l'azione qui.
 
 ![Pagina prodotti con il riquadro Annulla sottoscrizione aperto.](../media/MAC-WN-SubscrDetails.png)
 
@@ -197,7 +197,7 @@ Alcuni mesi fa, è stata aggiunta un'impostazione che consente di gestire i [nuo
 
 Il 12 maggio, è stata annunciata la disponibilità di un nuovo canale di aggiornamento per Office: Monthly Enterprise Channel. Questo canale di aggiornamento consente agli utenti di disporre di nuove funzionalità di Office una volta al mese, il secondo martedì del mese.
 
-Se si consente agli utenti di eseguire l'installazione automatica di Office dal portale, è possibile selezionare il canale Enterprise mensile. A tale scopo, accedere all'interfaccia di amministrazione di Microsoft 365 e passare a **Mostra tutte**  > **le impostazioni**  >  dell'**organizzazione**per il download del  >  **Services**  >  **software di Office**. Se si seleziona una **volta al mese (Monthly Enterprise Channel)**, tutte le nuove installazioni di Office verranno configurate per l'utilizzo di Monthly Enterprise Channel.
+Se si consente agli utenti di eseguire l'installazione automatica di Office dal portale, è possibile selezionare il canale Enterprise mensile. A tale scopo, accedere all'interfaccia di amministrazione di Microsoft 365 e passare a **Mostra tutte**  > **le impostazioni**  >  dell' **organizzazione** per il download del  >  **Services**  >  **software di Office**. Se si seleziona una **volta al mese (Monthly Enterprise Channel)** , tutte le nuove installazioni di Office verranno configurate per l'utilizzo di Monthly Enterprise Channel.
 
 In combinazione con il rilascio di Monthly Enterprise Channel, stiamo anche rivedendo i nomi dei canali di aggiornamento esistenti. Ad esempio, il canale mensile viene rinominato nel canale corrente. I nuovi nomi hanno effetto il 9 giugno 2020.
 
@@ -215,7 +215,7 @@ Per ulteriori informazioni su questi ruoli, vedere [informazioni sui ruoli di am
 
 ### <a name="export-groups-list"></a>Elenco gruppi di esportazione
 
-Sono stati apportati numerosi amministratori che hanno la necessità di condividere informazioni sui gruppi e il loro utilizzo per gli utenti che non dispongono dell'accesso ai centri di amministrazione. È ora possibile esportare l'elenco dei gruppi in un file CSV per scopi di controllo, il che significa che è possibile eliminare il vecchio script di PowerShell. Per provarlo, **passare a gruppi di gruppi**  >  **Groups**, quindi selezionare **Esporta gruppi** dalla barra dei comandi.
+Sono stati apportati numerosi amministratori che hanno la necessità di condividere informazioni sui gruppi e il loro utilizzo per gli utenti che non dispongono dell'accesso ai centri di amministrazione. È ora possibile esportare l'elenco dei gruppi in un file CSV per scopi di controllo, il che significa che è possibile eliminare il vecchio script di PowerShell. Per provarlo, **passare a gruppi di gruppi**  >  **Groups** , quindi selezionare **Esporta gruppi** dalla barra dei comandi.
 
 ### <a name="microsoft-365-solution-and-architecture-center"></a>Microsoft 365 Solution and Architecture Center
 
@@ -229,7 +229,7 @@ Proprio questo mese, è stato rilasciato un nuovo sito su [https://docs.microsof
 
 ### <a name="docs-training-and-videos-may"></a>Documenti, formazione e video (maggio)
 
-- **What ' s New in microsoft 365 video Series**: questo mese, viene illustrata la nuova esperienza di supporto nei centri di amministrazione e sicurezza e conformità dei team, l'integrazione del pianificatore con il centro messaggi e il nuovo layout video 3x3 in Microsoft teams. 
+- **What ' s New in microsoft 365 video Series** : questo mese, viene illustrata la nuova esperienza di supporto nei centri di amministrazione e sicurezza e conformità dei team, l'integrazione del pianificatore con il centro messaggi e il nuovo layout video 3x3 in Microsoft teams. 
 - La pagina hub della Guida dell'interfaccia di [amministrazione di Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/) è stata aggiornata per trovare le informazioni necessarie più rapidamente. E se si va a vedere la pagina in questo momento, è stata aggiunta una scheda per informare gli aggiornamenti e le modifiche importanti.
 
 ## <a name="april-2020"></a>Aprile 2020
@@ -263,7 +263,7 @@ Durante la creazione di una richiesta di servizio, è possibile visualizzare cha
 Con l'aumento dell'utilizzo dei team, sono state aggiunte alcune funzionalità che consentono di gestirle.
 
 - Una nuova scheda di raccomandazione nella Home page dell'interfaccia di amministrazione Visualizza gli utenti che non hanno utilizzato attivamente i team per 30 giorni. È possibile inviare agli utenti un messaggio di posta elettronica di formazione per iniziare a utilizzare i team.
-- **Unire le persone con i team**: andare a **installazione** per visualizzare una nuova pagina che consente di attivare team per gli utenti con licenza e consentire l'accesso guest, in modo da poter collaborare con clienti esterni in teams.
+- **Unire le persone con i team** : andare a **installazione** per visualizzare una nuova pagina che consente di attivare team per gli utenti con licenza e consentire l'accesso guest, in modo da poter collaborare con clienti esterni in teams.
 - La scheda Microsoft teams è ora bloccata per impostazione predefinita nella Home page. Indica se le squadre sono attivate e se l'accesso Guest è consentito. Consente inoltre di controllare lo stato di installazione per gli utenti di team appena concessi in licenza e verificare se i problemi di rete potrebbero influire sugli utenti dei team.
 - Infine, il team è ora un passaggio nel flusso di configurazione iniziale se è stata acquistata una licenza che include team.
 
@@ -287,7 +287,7 @@ Sono disponibili due aggiornamenti per i gruppi di questo mese:
 
 ### <a name="docs-videos-and-training-april"></a>Documenti, video e formazione (aprile)
 
-**What ' s New in Microsoft 365 video Series**: questo mese, vengono illustrati i suggerimenti e le risorse per aiutare le piccole imprese alla transizione verso il lavoro remoto, tra cui la modalità di implementazione di Microsoft teams, le risorse di formazione del lavoro remoto per rimanere in contatto con clienti e partner e il nuovo piano di Business Voice di Microsoft 365. [Novità di Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=2118096)
+**What ' s New in Microsoft 365 video Series** : questo mese, vengono illustrati i suggerimenti e le risorse per aiutare le piccole imprese alla transizione verso il lavoro remoto, tra cui la modalità di implementazione di Microsoft teams, le risorse di formazione del lavoro remoto per rimanere in contatto con clienti e partner e il nuovo piano di Business Voice di Microsoft 365. [Novità di Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=2118096)
 
 #### <a name="for-your-users"></a>Per gli utenti
 
@@ -342,7 +342,7 @@ I nuovi nomi dei prodotti entrano in vigore il 21 aprile 2020. Si tratta di una 
 |Office 365 Business Essentials     |   Microsoft 365 Business Basic      |
 |Office 365 Business Premium     |    Microsoft 365 Business Standard     |
 |Microsoft 365 Business     |    Microsoft 365 Business Premium     |
-|Office 365 Business     |    App Microsoft 365 per le aziende       |
+|Office 365 Business     |    Microsoft 365 Apps for business       |
 |Office 365 ProPlus    |   Microsoft 365 Apps for Enterprise      |
 
 ### <a name="videos-training-and-docs"></a>Video, formazione e documenti
@@ -353,7 +353,7 @@ I nuovi nomi dei prodotti entrano in vigore il 21 aprile 2020. Si tratta di una 
 
 ### <a name="featured-feedback-fix-multi-organization-switcher"></a>Correzione commenti e suggerimenti in primo piano: switcher multi-Organization
 
-Sono stati ricevuti numerosi commenti e suggerimenti da parte di partner e amministratori sulle sfide relative alla gestione di più org cloud di Microsoft. Una delle prime funzionalità di gestione multi-org è rappresentata dall' **organizzazione Switcher**, che consente di modificare il org che si gestisce in soli 2 clic.
+Sono stati ricevuti numerosi commenti e suggerimenti da parte di partner e amministratori sulle sfide relative alla gestione di più org cloud di Microsoft. Una delle prime funzionalità di gestione multi-org è rappresentata dall' **organizzazione Switcher** , che consente di modificare il org che si gestisce in soli 2 clic.
 > [!TIP]
 > Non è necessario eseguire alcuna operazione per far sì che lo switcher dell'organizzazione venga visualizzato fino a quando si è partner di record per almeno un'organizzazione.
 
@@ -369,14 +369,14 @@ Questo è letteralmente!!!
 
 Un paio di modifiche nell'area gruppi di questo mese:
 
-- **Ordina in base al nome del gruppo**: è possibile ordinare l'elenco dei gruppi in ordine alfabetico selezionando la colonna **nome gruppo** .
-- **Ripristinare i gruppi microsoft 365 eliminati**: non è più necessario accedere all'interfaccia di amministrazione di Exchange per ripristinare i gruppi di Microsoft 365 eliminati. Vai a **Microsoft 365** interfaccia di amministrazione gruppi \> **Groups** \> **eliminati gruppi** \> (seleziona un gruppo dall'elenco) \> **Ripristina gruppo**. Ripristinerà nuovamente il gruppo nell'elenco **gruppi** e ripristinerà la posta elettronica, le conversazioni, il blocco appunti, i file e il calendario del gruppo.
+- **Ordina in base al nome del gruppo** : è possibile ordinare l'elenco dei gruppi in ordine alfabetico selezionando la colonna **nome gruppo** .
+- **Ripristinare i gruppi microsoft 365 eliminati** : non è più necessario accedere all'interfaccia di amministrazione di Exchange per ripristinare i gruppi di Microsoft 365 eliminati. Vai a **Microsoft 365** interfaccia di amministrazione gruppi \> **Groups** \> **eliminati gruppi** \> (seleziona un gruppo dall'elenco) \> **Ripristina gruppo**. Ripristinerà nuovamente il gruppo nell'elenco **gruppi** e ripristinerà la posta elettronica, le conversazioni, il blocco appunti, i file e il calendario del gruppo.
 
 ### <a name="videos-training-and-docs-february"></a>Video, formazione e documenti (febbraio)
 
-- **What ' s New in Microsoft 365 video Series**: questo mese, siamo concentrati sulle funzionalità di ricerca personalizzate per SharePoint Online, la funzionalità di gestione di Office "What ' s New" che consente di mostrare o nascondere caratteristiche specifiche degli utenti finali tramite il riquadro della Guida in-app, gli aggiornamenti più recenti per la sicurezza e la conformità in Yammer e altro ancora. Ecco l'ultimo episodio: [What ' s New in Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=2118096)
+- **What ' s New in Microsoft 365 video Series** : questo mese, siamo concentrati sulle funzionalità di ricerca personalizzate per SharePoint Online, la funzionalità di gestione di Office "What ' s New" che consente di mostrare o nascondere caratteristiche specifiche degli utenti finali tramite il riquadro della Guida in-app, gli aggiornamenti più recenti per la sicurezza e la conformità in Yammer e altro ancora. Ecco l'ultimo episodio: [What ' s New in Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=2118096)
 
-- **Spostamento documenti**: sono stati combinati gli articoli Web di amministrazione di Office 365 con il contenuto di Microsoft 365 e il nuovo URL potrebbe essere stato notato. Ad esempio, questo articolo era ospitato all'indirizzo: **docs.Microsoft.com/Office365/admin/Whats-New-in-Preview**, ma l'URL è ora: **docs.Microsoft.com/Microsoft-365/admin/Whats-New-in-Preview**. Se si dispone di pagine con segnalibro, è necessario aggiornare i collegamenti; Tuttavia, i collegamenti di contenuto verranno reindirizzati al nuovo repo di contenuto.
+- **Spostamento documenti** : sono stati combinati gli articoli Web di amministrazione di Office 365 con il contenuto di Microsoft 365 e il nuovo URL potrebbe essere stato notato. Ad esempio, questo articolo era ospitato all'indirizzo: **docs.Microsoft.com/Office365/admin/Whats-New-in-Preview** , ma l'URL è ora: **docs.Microsoft.com/Microsoft-365/admin/Whats-New-in-Preview**. Se si dispone di pagine con segnalibro, è necessario aggiornare i collegamenti; Tuttavia, i collegamenti di contenuto verranno reindirizzati al nuovo repo di contenuto.
 
 ## <a name="january-2020---happy-new-year"></a>Gennaio 2020-felice anno nuovo
 
@@ -427,7 +427,7 @@ Combiniamo le notizie di novembre e dicembre perché dopo l'accensione sono stat
 
 ### <a name="change-from-credit-card-to-invoice-payment"></a>Passare dalla carta di credito al pagamento della fattura
 
-Si sta iniziando a implementare la possibilità di modificare il metodo di pagamento dalla carta di credito a una fattura. Andare a **fatturazione** \> dei **prodotti**, selezionare un abbonamento, quindi selezionare il collegamento **modifica** accanto al pagamento con carta di credito.
+Si sta iniziando a implementare la possibilità di modificare il metodo di pagamento dalla carta di credito a una fattura. Andare a **fatturazione** \> dei **prodotti** , selezionare un abbonamento, quindi selezionare il collegamento **modifica** accanto al pagamento con carta di credito.
 
 ![Acquisizione schermo: sezione fatturazione della scheda di sottoscrizione con una carta di credito come metodo di pagamento.](../media/MAC-BillingEditCreditCard.png)
 
@@ -447,7 +447,7 @@ Vuoi saperne di più? [Passare da carta di credito o conto corrente bancario a f
 
 ### <a name="new-settings-page"></a>Pagina nuove impostazioni
 
-Le pagine dei componenti aggiuntivi per il **profilo dell'organizzazione**, la **sicurezza & la privacy**e i **Servizi &** sono state tutte combinate in una pagina con 3 schede verticali. E la parte migliore, da una singola posizione, è ora possibile cercare tutte le impostazioni.
+Le pagine dei componenti aggiuntivi per il **profilo dell'organizzazione** , la **sicurezza & la privacy** e i **Servizi &** sono state tutte combinate in una pagina con 3 schede verticali. E la parte migliore, da una singola posizione, è ora possibile cercare tutte le impostazioni.
 ![Schermata di acquisizione: pagina impostazioni con il campo "Cerca tutte le impostazioni" evidenziato nella parte superiore della pagina.](../media/MAC-SettingsMultiPivotSearch.png)
 
 ### <a name="training--docs"></a>Formazione & documenti
@@ -466,7 +466,7 @@ A novembre sono stati rilasciati alcuni percorsi di apprendimento per il sito We
 - [Proteggere le identità e l'accesso con Microsoft 365](https://docs.microsoft.com/learn/paths/m365-identity/)
 - [Proteggere le informazioni aziendali con Microsoft 365](https://docs.microsoft.com/learn/paths/m365-information-protection/)
 - [Gestire la sicurezza con Microsoft 365](https://docs.microsoft.com/learn/paths/m365-security-management/)
-- [Protezione dalle minacce con Microsoft 365 e Microsoft Threat Protection](https://docs.microsoft.com/learn/paths/m365-security-threat-protection/)
+- [Difendersi dalle minacce con Microsoft 365 Defender](https://docs.microsoft.com/learn/paths/m365-security-threat-protection/)
 - [Gestione della collaborazione in team con Microsoft Teams](https://docs.microsoft.com/learn/paths/m365-manage-team-collaboration/)
 - [Collaborare con SharePoint in Microsoft 365](https://docs.microsoft.com/learn/paths/m365-teams-sharepoint/)
 
@@ -481,7 +481,7 @@ Welcome to the Ignite Edition del What ' s New in Microsoft 365 Admin Center! Na
 
 Sono state apportate numerose modifiche ai ruoli nell'interfaccia di amministrazione da quando è stata avviata la distribuzione in giugno:
 
-- **Confronto dei ruoli** : selezionare fino a 3 ruoli per confrontare le autorizzazioni per ognuna di esse. Ciò consentirà di trovare il ruolo meno permissivo da assegnare agli utenti. Andare a **ruoli**, utilizzare la casella di controllo selezione multipla nella prima colonna per scegliere fino a 3 ruoli, quindi selezionare **Confronta ruoli**.
+- **Confronto dei ruoli** : selezionare fino a 3 ruoli per confrontare le autorizzazioni per ognuna di esse. Ciò consentirà di trovare il ruolo meno permissivo da assegnare agli utenti. Andare a **ruoli** , utilizzare la casella di controllo selezione multipla nella prima colonna per scegliere fino a 3 ruoli, quindi selezionare **Confronta ruoli**.
 
     ![Confronto tra l'amministratore di Exchange, l'amministratore del supporto tecnico e i ruoli di amministratore utente.](../media/RBAC-CompareRoles.png)
 
@@ -491,15 +491,15 @@ Sono state apportate numerose modifiche ai ruoli nell'interfaccia di amministraz
 
 ### <a name="report-an-issue"></a>Segnalare un problema
 
-Lo stato del servizio è stato aggiornato al nuovo stile e, se si ha un impatto su un problema che non viene visualizzato nel dashboard di integrità dei servizi, è possibile **segnalare un problema** per consentire a Microsoft di sapere. Andare a **Health**  >  **integrità del servizio**integrità.
+Lo stato del servizio è stato aggiornato al nuovo stile e, se si ha un impatto su un problema che non viene visualizzato nel dashboard di integrità dei servizi, è possibile **segnalare un problema** per consentire a Microsoft di sapere. Andare a **Health**  >  **integrità del servizio** integrità.
 
 ### <a name="viral-subscriptions"></a>Abbonamenti "virali"
 
-Come sapete, gli utenti possono abilitare abbonamenti gratuiti a una miriade di prodotti come Power BI e app Connect. È ora possibile visualizzare gli "abbonamenti virali" che gli utenti hanno provato. Andare a **fatturazione**dei  >  **prodotti**. Selezionare il filtro **tipo di account** nella scheda abbonamenti per visualizzare le sottoscrizioni acquistate dall'utente. Se necessario, è ora possibile rimuovere tali abbonamenti dall'account.
+Come sapete, gli utenti possono abilitare abbonamenti gratuiti a una miriade di prodotti come Power BI e app Connect. È ora possibile visualizzare gli "abbonamenti virali" che gli utenti hanno provato. Andare a **fatturazione** dei  >  **prodotti**. Selezionare il filtro **tipo di account** nella scheda abbonamenti per visualizzare le sottoscrizioni acquistate dall'utente. Se necessario, è ora possibile rimuovere tali abbonamenti dall'account.
 
 ### <a name="user-templates"></a>Modelli utente
 
-I modelli consentono di aggiungere facilmente numerosi utenti salvando e riutilizzando le impostazioni condivise per tali utenti. È possibile salvare i valori per i ruoli, le licenze assegnate, le informazioni di contatto, la posizione e altro ancora. Quando si utilizza il modello per creare un nuovo utente, il valore salvato viene automaticamente ottenuto per queste impostazioni. Passare a **utenti**  >  **attivi**, quindi selezionare **modelli utente** per provarlo.
+I modelli consentono di aggiungere facilmente numerosi utenti salvando e riutilizzando le impostazioni condivise per tali utenti. È possibile salvare i valori per i ruoli, le licenze assegnate, le informazioni di contatto, la posizione e altro ancora. Quando si utilizza il modello per creare un nuovo utente, il valore salvato viene automaticamente ottenuto per queste impostazioni. Passare a **utenti**  >  **attivi** , quindi selezionare **modelli utente** per provarlo.
 
 ### <a name="office-whats-new-management-preview"></a>Gestione di Office "What ' s New" (anteprima)
 
@@ -540,7 +540,7 @@ Si è verificato un aggiornamento a un'altra delle procedure guidate per l'insta
 
 Sono stati apportati alcuni aggiornamenti per la fatturazione e gli abbonamenti di questo mese:
 
-- Abbonamenti basati su dispositivo: è possibile assegnare o annullare **l'assegnazione delle licenze di microsoft 365 Apps for Education (Device)** ai dispositivi nell'interfaccia di amministrazione di Microsoft 365. **Microsoft 365 Apps for Education (Device)** è una licenza per i componenti aggiuntivi che consente di assegnare una licenza a un dispositivo. Andare a **fatturazione**  >  dei**prodotti** per trovare e acquistare la licenza.
+- Abbonamenti basati su dispositivo: è possibile assegnare o annullare **l'assegnazione delle licenze di microsoft 365 Apps for Education (Device)** ai dispositivi nell'interfaccia di amministrazione di Microsoft 365. **Microsoft 365 Apps for Education (Device)** è una licenza per i componenti aggiuntivi che consente di assegnare una licenza a un dispositivo. Andare a **fatturazione**  >  dei **prodotti** per trovare e acquistare la licenza.
 - Gestione delle licenze basata sull'utente: è stato aggiornato il modo in cui si assegnano le licenze **agli utenti**  >  **attivi** per il nuovo stile. Per altre informazioni, vedere:
   - [Assegnare licenze agli utenti](manage/assign-licenses-to-users.md)
   - [Annullare l'assegnazione delle licenze agli utenti](manage/remove-licenses-from-users.md)
@@ -549,11 +549,11 @@ Sono stati apportati alcuni aggiornamenti per la fatturazione e gli abbonamenti 
 
 Nel programma di installazione sono disponibili categorie e sezioni, tra cui una sezione **consigliata** , in cui è consigliabile eseguire il passaggio successivo per attivare le funzionalità e configurare l'organizzazione. Inoltre, è stata aggiunta una nuova funzionalità da configurare:
 
-- **Protezione avanzata dalle minacce di Office** : se l'organizzazione ha la licenza di usare Office ATP e non è stata configurata o attivata, la pagina verrà visualizzata. Andare a **Setup** per provare.
+- **Microsoft Defender per office 365** -se la propria organizzazione ha la licenza di usare Microsoft Defender per Office 365 e non è stata configurata o attivata, la pagina verrà visualizzata. Andare a **Setup** per provare.
 
 ### <a name="report-an-issue-august"></a>Segnalare un problema (agosto)
 
-Se si ha un impatto su un problema che non viene visualizzato nel dashboard di integrità dei servizi, la funzionalità **segnala un problema** fornirà un modo semplice e rapido per farci sapere. Andare a **Health**  >  **integrità del servizio**integrità.
+Se si ha un impatto su un problema che non viene visualizzato nel dashboard di integrità dei servizi, la funzionalità **segnala un problema** fornirà un modo semplice e rapido per farci sapere. Andare a **Health**  >  **integrità del servizio** integrità.
 
 ## <a name="july-2019"></a>Luglio 2019
 
@@ -563,13 +563,13 @@ Il centro messaggi è stato aggiornato al nuovo progetto e ha un aspetto sorpren
 
 ![Acquisizione schermo: centro messaggi aggiornato con la scheda ' tutti i messaggi attivi ' selezionata e il menu filtro aperto.](../media/MAC-MessageCenterUpdated.png)
 
-- È ora possibile visualizzare **i messaggi in base allo stato**. È sufficiente selezionare una delle schede: **tutti i messaggi attivi**, la **priorità alta**, **i messaggi non letti**e **i messaggi ignorati**.
-- È inoltre possibile filtrare in base alla **privacy dei dati**delle categorie, **pianificare la modifica**, **prevenire o risolvere i problemi**e mantenere le categorie di messaggi **informate** .
-- Selezionare un messaggio dall'elenco e sono disponibili alcune opzioni nella barra dei comandi: **Ignora**, **Contrassegna come lettura** o **Segna come non letto**o **Condividi**.
+- È ora possibile visualizzare **i messaggi in base allo stato**. È sufficiente selezionare una delle schede: **tutti i messaggi attivi** , la **priorità alta** , **i messaggi non letti** e **i messaggi ignorati**.
+- È inoltre possibile filtrare in base alla **privacy dei dati** delle categorie, **pianificare la modifica** , **prevenire o risolvere i problemi** e mantenere le categorie di messaggi **informate** .
+- Selezionare un messaggio dall'elenco e sono disponibili alcune opzioni nella barra dei comandi: **Ignora** , **Contrassegna come lettura** o **Segna come non letto** o **Condividi**.
 - Quando si apre un messaggio, sono disponibili altre opzioni:
   - Copiare un collegamento del messaggio negli Appunti per salvarlo in un secondo momento o condividerlo con i colleghi.
   - Contrassegnare i messaggi come **letti** o non **letti**.
-  - Fornire commenti e suggerimenti su un messaggio selezionando **like** o **antipatia**, viene visualizzato un riquadro di feedback che richiede di fornire commenti e suggerimenti specifici su ciò che è piaciuto o non è stato apprezzato per questo messaggio.
+  - Fornire commenti e suggerimenti su un messaggio selezionando **like** o **antipatia** , viene visualizzato un riquadro di feedback che richiede di fornire commenti e suggerimenti specifici su ciò che è piaciuto o non è stato apprezzato per questo messaggio.
 
 ### <a name="navigation-pane-intelligence"></a>Intelligence del riquadro di spostamento
 
@@ -577,7 +577,7 @@ Il centro messaggi è stato aggiornato al nuovo progetto e ha un aspetto sorpren
 
 ### <a name="initial-setup--the-setup-page"></a>Configurazione iniziale & pagina di installazione
 
-Sono state apportate modifiche entusiasmanti che consentono di configurare l'organizzazione. Prima di tutto, discutiamo la differenza tra l' **installazione** e la **pagina di installazione**. Il **programma di installazione** si riferisce all'installazione guidata iniziale utilizzata per l'onboarding ai servizi online di Microsoft. Che in genere include tre passaggi specifici: **connettere un dominio**, **aggiungere utenti**e **scaricare le app di Office**. La **pagina di installazione** è la pagina nell'interfaccia di amministrazione che ha raccomandato di configurare le attività per essere certi di ottenere il massimo dai propri abbonamenti, come l'attivazione delle caratteristiche per le quali sono state acquistate le licenze.
+Sono state apportate modifiche entusiasmanti che consentono di configurare l'organizzazione. Prima di tutto, discutiamo la differenza tra l' **installazione** e la **pagina di installazione**. Il **programma di installazione** si riferisce all'installazione guidata iniziale utilizzata per l'onboarding ai servizi online di Microsoft. Che in genere include tre passaggi specifici: **connettere un dominio** , **aggiungere utenti** e **scaricare le app di Office**. La **pagina di installazione** è la pagina nell'interfaccia di amministrazione che ha raccomandato di configurare le attività per essere certi di ottenere il massimo dai propri abbonamenti, come l'attivazione delle caratteristiche per le quali sono state acquistate le licenze.
 
 - **Setup** : l'installazione guidata iniziale è stata aggiornata per gli abbonamenti a **Microsoft 365 per le aziende** . Questo nuovo progetto aiuterà le nuove organizzazioni a superare la procedura guidata più velocemente e con maggiore successo.
 - **Pagina di installazione** : la pagina di **installazione** consente di terminare la configurazione e la protezione dei servizi disponibili con gli abbonamenti. È inoltre possibile visualizzare eventuali suggerimenti disattivati nella pagina di **installazione** . Per vedere se è ancora disponibile per gli abbonamenti, passare alla configurazione dell'interfaccia di **amministrazione di Microsoft 365**  >  **Setup**.
@@ -601,8 +601,8 @@ Gli amministratori hanno accesso alle informazioni riservate nell'organizzazione
 
 Le pagine degli **utenti eliminati** e **degli utenti Guest** sono state aggiornate nel nuovo stile.
 
-- **Utenti Guest**: si aggiungono gli utenti Guest invitandoli a visualizzare o condividere file da SharePoint o OneDrive. È possibile visualizzare **gli utenti Guest dagli utenti**  >  **Guest**.
-- **Utenti eliminati**: nella pagina aggiornamento **utenti eliminati** è possibile eseguire tutte le azioni possibili nell'interfaccia di amministrazione precedente, ma ora si aggiungono e si rimuovono le colonne. E ci sono molte opzioni di colonna tra cui scegliere. In effetti, sono le stesse colonne che è possibile scegliere nella pagina **utenti attivi** .
+- **Utenti Guest** : si aggiungono gli utenti Guest invitandoli a visualizzare o condividere file da SharePoint o OneDrive. È possibile visualizzare **gli utenti Guest dagli utenti**  >  **Guest**.
+- **Utenti eliminati** : nella pagina aggiornamento **utenti eliminati** è possibile eseguire tutte le azioni possibili nell'interfaccia di amministrazione precedente, ma ora si aggiungono e si rimuovono le colonne. E ci sono molte opzioni di colonna tra cui scegliere. In effetti, sono le stesse colonne che è possibile scegliere nella pagina **utenti attivi** .
 
 ## <a name="june-2019"></a>Giugno 2019
 
@@ -624,7 +624,7 @@ Cos'altro è possibile eseguire qui?
 
 ### <a name="payment-method"></a>Metodo di pagamento
 
-Il modo in cui si pagano gli abbonamenti è stato aggiornato. Accedere alle **Billing**  >  **fatture di fatturazione &**  >  **modalità di pagamento**dei pagamenti. È possibile visualizzare i metodi di pagamento in una visualizzazione elenco. Selezionare un elemento nell'elenco per rimuoverlo, modificarlo e visualizzare facilmente la sottoscrizione a cui è associato il metodo di pagamento.
+Il modo in cui si pagano gli abbonamenti è stato aggiornato. Accedere alle **Billing**  >  **fatture di fatturazione &**  >  **modalità di pagamento** dei pagamenti. È possibile visualizzare i metodi di pagamento in una visualizzazione elenco. Selezionare un elemento nell'elenco per rimuoverlo, modificarlo e visualizzare facilmente la sottoscrizione a cui è associato il metodo di pagamento.
 
 ## <a name="may-2019"></a>Maggio 2019
 
@@ -632,7 +632,7 @@ Il modo in cui si pagano gli abbonamenti è stato aggiornato. Accedere alle **Bi
 
 Quando si esegue la ricerca di cassette postali condivise, contatti, risorse e autorizzazioni per le cassette postali, i termini di ricerca non devono essere sensibili ai casi.
 
-**Gestione di utenti e gruppi** Questo mese è stato aggiornato il **blocco degli utenti**, la **reimpostazione della password**, la visualizzazione elenco **contatti** , la visualizzazione elenco **gruppi** e le pagine dei dettagli per i **gruppi** nel nuovo stile dell'interfaccia di amministrazione.
+**Gestione di utenti e gruppi** Questo mese è stato aggiornato il **blocco degli utenti** , la **reimpostazione della password** , la visualizzazione elenco **contatti** , la visualizzazione elenco **gruppi** e le pagine dei dettagli per i **gruppi** nel nuovo stile dell'interfaccia di amministrazione.
 
 - Con la visualizzazione elenco nuovi **gruppi** , è possibile ottenere dati più dettagliati sui gruppi e personalizzare il modo in cui vengono visualizzati i dati e l'elenco dei gruppi ricorda come visualizzare i dati. Ad esempio, è ora possibile filtrare i **gruppi con i team** per vedere se i gruppi fanno parte di un team ed è possibile aggiungere la colonna **stato teams** .
 - L'elenco dei gruppi comporta anche tutti i miglioramenti apportati all'esperienza di elenco nella gestione degli utenti, incluse le azioni rapide e la barra dei comandi contestuale.
@@ -646,7 +646,7 @@ Potrebbe essere visualizzato un nuovo suggerimento popup nell'interfaccia di amm
 - **Ottenere gli aggiornamenti mensili delle funzionalità di Office** : sono stati ricevuti commenti e suggerimenti dai clienti molto piccoli che, quando ricevono gli aggiornamenti mensili delle funzionalità di Office, gli utenti sono più contenti. Pertanto, se si è un'azienda di piccole dimensioni e si è attualmente ottenere gli aggiornamenti delle funzionalità di Office ogni sei mesi, verrà visualizzato il seguente suggerimento.
 
 **Impostazioni** <br>
-Per quanto riguarda le impostazioni, sono state apportate alcune modifiche. In genere, è sufficiente aggiornare le impostazioni esistenti al nuovo stile dell'interfaccia di amministrazione. Man mano che si sta procedendo in avanti e si aggiungono nuove impostazioni che non sono mai state viste prima, si inizierà a menzionarle qui. Per annunciare **l'autenticazione moderna**, è presente un'impostazione di un intero. Sì, è disponibile una nuova impostazione per abilitare **l'autenticazione moderna**. Per eseguire il check-out, passare a **Impostazioni**  >  **Servizi &**  >  **l'autenticazione moderna**dei componenti aggiuntivi.
+Per quanto riguarda le impostazioni, sono state apportate alcune modifiche. In genere, è sufficiente aggiornare le impostazioni esistenti al nuovo stile dell'interfaccia di amministrazione. Man mano che si sta procedendo in avanti e si aggiungono nuove impostazioni che non sono mai state viste prima, si inizierà a menzionarle qui. Per annunciare **l'autenticazione moderna** , è presente un'impostazione di un intero. Sì, è disponibile una nuova impostazione per abilitare **l'autenticazione moderna**. Per eseguire il check-out, passare a **Impostazioni**  >  **Servizi &**  >  **l'autenticazione moderna** dei componenti aggiuntivi.
 
 ## <a name="april-2019"></a>Aprile 2019
 
@@ -660,10 +660,10 @@ Per aprile, è presente la procedura guidata **Aggiungi utente** che illustra i 
 È possibile effettuare il check-out in due modi: <br>
 
 1. Nella **Home** page, selezionare **Aggiungi utente** dalla scheda di **Gestione utente** . La procedura guidata viene aperta direttamente in questo modo, quindi non è necessario spostarsi da qualsiasi lavoro che si sta svolgendo nella **Home** page.
-2. Passare a **utenti**  >  **attivi**, quindi selezionare **Aggiungi utente** dalla barra dei comandi.
+2. Passare a **utenti**  >  **attivi** , quindi selezionare **Aggiungi utente** dalla barra dei comandi.
 <br><br>
 
-Sono state apportate alcune altre modifiche alla **gestione degli utenti**, ecco un elenco rapido:
+Sono state apportate alcune altre modifiche alla **gestione degli utenti** , ecco un elenco rapido:
 
 - Il riquadro **Gestisci ruoli** è stato aggiornato al nuovo stile ed è accessibile. È stato inoltre aggiornato il **blocco utente** ed **eliminare** i riquadri utente nel nuovo stile.
 - **Gestire le licenze di prodotto** modificate nella barra dei comandi.
@@ -676,9 +676,9 @@ Sono state apportate alcune altre modifiche alla **gestione degli utenti**, ecco
   - A proposito di gruppi, è stata aggiunta una scheda **Microsoft teams** per il riquadro dei dettagli dei gruppi, in cui è possibile trasformare qualsiasi gruppo di Microsoft 365 in un team. Per "teamify" un gruppo seleziona un gruppo di Microsoft 365 dall'elenco, seleziona la scheda **Microsoft teams** e quindi **Crea team**. Se il gruppo è già un team, si otterrà un collegamento per gestirlo dall'interfaccia di **amministrazione dei team**.
   - Infine, è possibile aggiungere lo **stato dei team** all'elenco **gruppi** . Nell'intestazione di colonna selezionare **Scegli colonne**  >  **stato team**  >  **Save**.
 - **Nuovi ruoli di amministratore limitati** -sono stati rilasciati alcuni nuovi ruoli di amministratore in modo da consentire agli utenti solo l'accesso di cui hanno bisogno.
-  - **Amministratore di Kaizala**: gli utenti di questo ruolo dispongono dell'autorizzazione per eseguire tutte le attività di gestione in Microsoft Kaizala, tra cui la creazione e la gestione degli utenti nella directory di Kaizala, la gestione dei gruppi di Kaizala, la gestione di schede e connettori e la creazione di richieste di servizio.
-  - **Amministratore della ricerca**: gli utenti di questo ruolo hanno accesso completo a tutte le funzionalità di gestione di Microsoft Search nell'interfaccia di amministrazione di Microsoft 365. Gli amministratori della ricerca possono delegare i ruoli dell'amministratore della ricerca e dell'editor di ricerca agli utenti e creare e gestire il contenuto, ad esempio i segnalibri, Q&elementi e posizioni. Inoltre, questi utenti possono visualizzare il centro messaggi, monitorare lo stato del servizio e creare richieste di servizio.
-  - **Editor di ricerca**: gli utenti di questo ruolo possono creare, gestire ed eliminare contenuto per Microsoft Search nell'interfaccia di amministrazione di Microsoft 365, inclusi i segnalibri, la Q&elementi e le posizioni.
+  - **Amministratore di Kaizala** : gli utenti di questo ruolo dispongono dell'autorizzazione per eseguire tutte le attività di gestione in Microsoft Kaizala, tra cui la creazione e la gestione degli utenti nella directory di Kaizala, la gestione dei gruppi di Kaizala, la gestione di schede e connettori e la creazione di richieste di servizio.
+  - **Amministratore della ricerca** : gli utenti di questo ruolo hanno accesso completo a tutte le funzionalità di gestione di Microsoft Search nell'interfaccia di amministrazione di Microsoft 365. Gli amministratori della ricerca possono delegare i ruoli dell'amministratore della ricerca e dell'editor di ricerca agli utenti e creare e gestire il contenuto, ad esempio i segnalibri, Q&elementi e posizioni. Inoltre, questi utenti possono visualizzare il centro messaggi, monitorare lo stato del servizio e creare richieste di servizio.
+  - **Editor di ricerca** : gli utenti di questo ruolo possono creare, gestire ed eliminare contenuto per Microsoft Search nell'interfaccia di amministrazione di Microsoft 365, inclusi i segnalibri, la Q&elementi e le posizioni.
 - C'è un Bonanza delle modifiche alla **fatturazione** di questo mese...
   - È ora possibile aggiornare il CVV per le carte di credito esistenti senza dover eliminarlo e aggiungerlo di nuovo. È possibile aggiornare il CVV accedendo ai metodi di pagamento delle **fatture**  >  **Payment methods**.
     - È stato più facile individuare le **fatture** e comprendere eventuali problemi di fatturazione che il tuo account potrebbe avere. E ora è possibile visualizzare le bollette nel Web browser invece di dover scaricare il file PDF. Vai a **fatture bollette**  >  **Invoices**.
@@ -696,14 +696,14 @@ Come sempre, il feedback è importante per noi, quindi continua a venire! In qua
 
 Questo mese, è necessario concentrarsi su tutti i miglioramenti apportati alle aree affettuosamente denominate "fatturazione e abbonamenti". In passato, probabilmente non si riferisce a queste cose con affetto, ma pensiamo che sarà ora...
 
-- **Metodi di pagamento** : sono stati apportati commenti e suggerimenti per il fatto che l'aggiornamento del metodo di pagamento è stato difficile e sono state apportate numerose modifiche. Passare a **Billing**  >  **modalità di pagamento**fatturazione. È possibile visualizzare facilmente i metodi di pagamento, come la carta di credito Visa, e l'abbonamento a cui è associato. Nell'elenco dei metodi di pagamento, selezionare il menu **altro** (3 puntini accanto alla data di scadenza), quindi selezionare **Visualizza abbonamenti**. È inoltre possibile modificare ed eliminare i metodi di pagamento utilizzando il menu **altro** .
-- **Account di fatturazione** i clienti con rilascio mirato vedranno la prima pagina del nuovo account di fatturazione e poi lo rilasceremo a livello mondiale. Quando è disponibile per l'utente, accedere a **Billing**  >  **account di fatturazione**fatturazione. Cosa è possibile fare nella nuova pagina account di fatturazione? Sono contento che mi hai chiesto:
-  - Aggiornare l'indirizzo e altre informazioni di contatto nel profilo dell'organizzazione direttamente da questa pagina. Non è necessario andare al profilo dell'organizzazione **delle impostazioni**  >  **Organization profile**, a meno che non si desideri.
+- **Metodi di pagamento** : sono stati apportati commenti e suggerimenti per il fatto che l'aggiornamento del metodo di pagamento è stato difficile e sono state apportate numerose modifiche. Passare a **Billing**  >  **modalità di pagamento** fatturazione. È possibile visualizzare facilmente i metodi di pagamento, come la carta di credito Visa, e l'abbonamento a cui è associato. Nell'elenco dei metodi di pagamento, selezionare il menu **altro** (3 puntini accanto alla data di scadenza), quindi selezionare **Visualizza abbonamenti**. È inoltre possibile modificare ed eliminare i metodi di pagamento utilizzando il menu **altro** .
+- **Account di fatturazione** i clienti con rilascio mirato vedranno la prima pagina del nuovo account di fatturazione e poi lo rilasceremo a livello mondiale. Quando è disponibile per l'utente, accedere a **Billing**  >  **account di fatturazione** fatturazione. Cosa è possibile fare nella nuova pagina account di fatturazione? Sono contento che mi hai chiesto:
+  - Aggiornare l'indirizzo e altre informazioni di contatto nel profilo dell'organizzazione direttamente da questa pagina. Non è necessario andare al profilo dell'organizzazione **delle impostazioni**  >  **Organization profile** , a meno che non si desideri.
   - Per rendere più semplice la gestione dei clienti con contratti multilicenza o diretti, è possibile accettare ed esaminare gli accordi dei clienti dagli **account di fatturazione**. È inoltre possibile connettersi con altri org che consentano di collegare i org insieme per condividere licenze e risorse.
 - Inoltre, sono stati apportati alcuni miglioramenti più piccoli e correzioni degli errori:
   - Riattivare un abbonamento con un pagamento in fattura
   - Modificare l'indirizzo di utilizzo del servizio per le sottoscrizioni
-  - Nella pagina dettagli inventario sono stati aggiunti alcuni miglioramenti relativi alla notifica, che consentono di collegare la pagina in cui è possibile eseguire il lavoro e sono disponibili altre azioni sulla scheda dettagli inventario. Andare a **Billing**  >  **fatture**di fatturazione  >  **visualizzare i dettagli** su qualsiasi fattura.
+  - Nella pagina dettagli inventario sono stati aggiunti alcuni miglioramenti relativi alla notifica, che consentono di collegare la pagina in cui è possibile eseguire il lavoro e sono disponibili altre azioni sulla scheda dettagli inventario. Andare a **Billing**  >  **fatture** di fatturazione  >  **visualizzare i dettagli** su qualsiasi fattura.
 
 ## <a name="january-2019---happy-new-year"></a>Gennaio 2019-felice anno nuovo
 

@@ -1,6 +1,6 @@
 ---
-title: Utilizzare i risultati delle query di ricerca avanzata in Microsoft Threat Protection
-description: Ottenere la maggior parte dei risultati della query restituiti dalla ricerca avanzata in Microsoft Threat Protection
+title: Utilizzare i risultati della query di ricerca avanzata in Microsoft 365 Defender
+description: Ottenere la maggior parte dei risultati della query restituiti dalla ricerca avanzata in Microsoft 365 Defender
 keywords: caccia avanzata, caccia alle minacce, Cyber Threat Hunting, Microsoft Threat Protection, Microsoft 365, MTP, M365, Search, query, telemetria, rilevamenti personalizzati, schema, kusto, Microsoft 365, Microsoft Threat Protection, visualizzazione, grafico, filtri, drill-down
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: e19859189b57bbc9a6a4bbfb87fb224b2735331b
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: de26989b9092b783a45d27ad2a529720d21169f8
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48431076"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48844129"
 ---
 # <a name="work-with-advanced-hunting-query-results"></a>Utilizzare i risultati della query di ricerca avanzata
 
@@ -32,7 +32,7 @@ ms.locfileid: "48431076"
 
 
 **Si applica a:**
-- Microsoft Threat Protection
+- Microsoft 365 Defender
 
 [!INCLUDE [Prerelease information](../includes/prerelease.md)]
 

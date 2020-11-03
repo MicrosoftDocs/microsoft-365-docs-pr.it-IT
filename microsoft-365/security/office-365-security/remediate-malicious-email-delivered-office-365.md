@@ -13,20 +13,20 @@ MS.collection: ''
 search.appverid: MET150
 description: Correzione delle minacce
 appliesto:
-- Microsoft Threat Protection
-ms.openlocfilehash: a7c1f6f89f5414f5fc6ef8dd59d2894195e75f7f
-ms.sourcegitcommit: 45c0afcf958069c5c1b31f9b6c762d8dd806e1e9
+- Microsoft 365 Defender
+ms.openlocfilehash: af34b171cb213836d47edb2fb2905fb75341b02f
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "48774060"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48845601"
 ---
 # <a name="remediate-malicious-email-delivered-in-office-365"></a>Rimediare la posta elettronica dannosa recapitata in Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-La correzione comporta l'esecuzione di un'azione prescritta nei confronti di una minaccia. I messaggi di posta elettronica dannosi inviati all'organizzazione possono essere rimossi dal sistema, tramite l'AutoPurge (ZAP) zero-hour o dai team di sicurezza mediante azioni correttive come *Sposta in posta in arrivo* , sposta su posta *indesiderata* , *Sposta su elementi eliminati* , Elimina *o Elimina* *temporaneamente* . Office Advanced Threat Protection (Office ATP) P2/E5 consente ai team di sicurezza di correggere le minacce nelle funzionalità di posta elettronica e collaborazione tramite l'analisi manuale e automatizzata.
+La correzione comporta l'esecuzione di un'azione prescritta nei confronti di una minaccia. I messaggi di posta elettronica dannosi inviati all'organizzazione possono essere rimossi dal sistema, tramite l'AutoPurge (ZAP) zero-hour o dai team di sicurezza mediante azioni correttive come *Sposta in posta in arrivo* , sposta su posta *indesiderata* , *Sposta su elementi eliminati* , Elimina *o Elimina* *temporaneamente*. Microsoft Defender per Office 365 P2/E5 consente ai team di sicurezza di correggere le minacce nelle funzionalità di posta elettronica e collaborazione tramite l'analisi manuale e automatizzata.
 
 > [!NOTE]
 > Per correggere il messaggio di posta elettronica dannoso, i team di sicurezza devono essere assegnati al ruolo di *ricerca ed eliminazione* . L'assegnazione di ruolo viene fatta tramite le autorizzazioni nel centro sicurezza e conformità.
@@ -44,10 +44,10 @@ Per eseguire operazioni come la visualizzazione delle intestazioni dei messaggi 
 |Utilizzare Esplora minacce per visualizzare le intestazioni e scaricare i messaggi di posta elettronica recapitati alle cassette postali|Amministratore globale <br>Amministratore della sicurezza <br> Ruolo con autorizzazioni di lettura per la sicurezza <br> Anteprima|Sì|
 
 > [!NOTE]
-> L'anteprima è un *ruolo* , non un *gruppo di ruoli* . Il ruolo di anteprima deve essere aggiunto a un gruppo di ruoli esistente per Office 365. Il *ruolo di amministratore globale* è assegnato nell'interfaccia di [amministrazione di Microsoft 365](https://admin.microsoft.com). I ruoli amministratore sicurezza e lettore di sicurezza sono assegnati nei [centri sicurezza e conformità](https://protection.office.com). Per ulteriori informazioni sui ruoli e sulle autorizzazioni, vedere [Permissions in the Security and Compliance Centers](permissions-in-the-security-and-compliance-center.md).
+> L'anteprima è un *ruolo* , non un *gruppo di ruoli*. Il ruolo di anteprima deve essere aggiunto a un gruppo di ruoli esistente per Office 365. Il *ruolo di amministratore globale* è assegnato nell'interfaccia di [amministrazione di Microsoft 365](https://admin.microsoft.com). I ruoli amministratore sicurezza e lettore di sicurezza sono assegnati nei [centri sicurezza e conformità](https://protection.office.com). Per ulteriori informazioni sui ruoli e sulle autorizzazioni, vedere [Permissions in the Security and Compliance Centers](permissions-in-the-security-and-compliance-center.md).
 
 > [!NOTE]
-> Gli amministratori possono intraprendere le azioni necessarie per i messaggi di posta elettronica, ma per approvarle, è necessario che il ruolo di *ricerca e Purge* venga assegnato tramite le autorizzazioni del **Centro sicurezza e conformità**  >  **Permissions** .
+> Gli amministratori possono intraprendere le azioni necessarie per i messaggi di posta elettronica, ma per approvarle, è necessario che il ruolo di *ricerca e Purge* venga assegnato tramite le autorizzazioni del **Centro sicurezza e conformità**  >  **Permissions**.
 
 ## <a name="manual-and-automated-remediation"></a>Correzione automatica e manuale
 
@@ -73,7 +73,7 @@ L' **analisi automatizzata e** le azioni di risposta vengono attivate dagli avvi
 
 ![Posta elettronica con malware nella pagina "zapped" che mostra il tempo di esecuzione dello zap.](../../media/tp-RemediationArticle3.png)
 
-Nell'Action Center vengono visualizzate tutte le correzioni, ovvero l'approvazione diretta o in due passaggi, che sono state create in Esplora minacce e le azioni approvate provenienti da indagini automatizzate. Accedere a questi tramite il riquadro di spostamento a sinistra in **Review**  >  **Action Center** .
+Nell'Action Center vengono visualizzate tutte le correzioni, ovvero l'approvazione diretta o in due passaggi, che sono state create in Esplora minacce e le azioni approvate provenienti da indagini automatizzate. Accedere a questi tramite il riquadro di spostamento a sinistra in **Review**  >  **Action Center**.
 
 ![Centro azioni con un elenco di minacce per data e gravità.](../../media/tp-RemediationArticle4.png)
 

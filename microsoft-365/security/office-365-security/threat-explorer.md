@@ -18,18 +18,18 @@ ms.collection:
 - m365initiative-defender-office365
 description: Informazioni sull'utilizzo di Esplora risorse e sui rilevamenti in tempo reale nel centro sicurezza e &amp; conformità per esaminare e rispondere alle minacce in modo efficace ed efficiente.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 2ae2c53f12465fd1d6ef5c5e4bd24309467be008
-ms.sourcegitcommit: 6647055154002c7d3b8f7ce25ad53c9636bc8066
+ms.openlocfilehash: a6123306c1d707a3eeab5c5dd67ed25bebb71965
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "48769377"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48845690"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>Esplora minacce e rilevamenti in tempo reale
 
-Se l'organizzazione dispone di [office 365 Advanced Threat Protection](office-365-atp.md) (Office 365 ATP) ed è necessario disporre [delle autorizzazioni necessarie](#required-licenses-and-permissions), sono disponibili **esplorazioni** o **rilevamenti in tempo reale** (in precedenza i *report in tempo reale* , [vedere What ' s New](#new-features-in-threat-explorer-and-real-time-detections)!). Nel centro sicurezza & conformità, accedere a **gestione minacce** , quindi scegliere **Esplora risorse** _o_ **rilevamenti in tempo reale** .
+Se l'organizzazione dispone [di Microsoft Defender per Office 365](office-365-atp.md)e si dispone delle [autorizzazioni necessarie](#required-licenses-and-permissions), è possibile rilevare **esplorazioni** o **rilevamenti in tempo reale** (in precedenza i *report in tempo reale* , [vedere What ' s New](#new-features-in-threat-explorer-and-real-time-detections)!). Nel centro sicurezza & conformità, accedere a **gestione minacce** , quindi scegliere **Esplora risorse** _o_ **rilevamenti in tempo reale**.
 
-|Con ATP piano 2, è possibile vedere:|Con ATP piano 1, è possibile visualizzare le informazioni seguenti:|
+|Con Microsoft Defender per Office 365 piano 2, è possibile visualizzare le informazioni seguenti:|Con Microsoft Defender per Office 365 piano 1, è possibile visualizzare le informazioni seguenti:|
 |---|---|
 |![Esplora minacce](../../media/threatmgmt-explorer.png)|![Rilevamenti in tempo reale](../../media/threatmgmt-realtimedetections.png)|
 |
@@ -42,27 +42,27 @@ Con questo rapporto, è possibile:
 
 - [Vedere malware detected by Microsoft 365 Security features](#see-malware-detected-in-email-by-technology)
 - [Visualizzare i dati relativi agli URL di phishing e fare clic su verdetto](#view-data-about-phishing-urls-and-click-verdict)
-- [Avviare un processo di analisi e risposta automatizzato da una visualizzazione in Explorer](#start-automated-investigation-and-response) (solo ATP piano 2)
+- [Avviare un processo di analisi e risposta automatizzato da una visualizzazione in Explorer](#start-automated-investigation-and-response) (solo Defender per Office 365 piano 2)
 - ... [Esaminare messaggi di posta elettronica dannosi e altro ancora](#more-ways-to-use-explorer-or-real-time-detections)!
 
 
 ## <a name="experience-improvements-to-threat-explorer-and-real-time-detections"></a>Miglioramenti dell'esperienza in Esplora minacce e rilevamenti in tempo reale
 
-## <a name="tags-in-threat-explorer"></a>Tag in Esplora minacce
+### <a name="tags-in-threat-explorer"></a>Tag in Esplora minacce
 
 > [!NOTE]
 > La funzionalità tag utente è in anteprima, non è disponibile per tutti, ed è soggetta a modifiche. Per informazioni sulla pianificazione dei rilasci, vedere la Guida di orientamento di Microsoft 365.
 
-I tag utente sono identificatori per gruppi di utenti specifici in Microsoft Defender per Office 365. Per ulteriori informazioni sui tag, sulla gestione delle licenze e sulla configurazione dei tag, leggi tutto qui: [tag utente in Office 365 ATP](user-tags.md).
+I tag utente sono identificatori per gruppi di utenti specifici in Microsoft Defender per Office 365. Per ulteriori informazioni sui tag, la gestione delle licenze e la configurazione dei tag, vedere [tag degli utenti in Defender per Office 365](user-tags.md).
 
-In Esplora minacce, è possibile visualizzare le informazioni relative ai tag degli utenti nelle esperienze seguenti:
+In Esplora minacce, è possibile visualizzare le informazioni sui tag degli utenti nelle seguenti esperienze:
 
 #### <a name="email-grid-view"></a>Visualizzazione della griglia di posta elettronica
 
 La colonna tag visualizzata nella griglia di posta elettronica conterrebbe tutti i tag che sono stati applicati alle cassette postali del mittente o del destinatario. Per impostazione predefinita, i tag di sistema come gli account prioritari vengono visualizzati per primo.
 
 > [!div class="mx-imgBorder"]
-> ![Tag del filtro](../../media/tags-grid.png)
+> ![Filtro tag nella visualizzazione griglia di posta elettronica](../../media/tags-grid.png)
 
 #### <a name="filtering"></a>Filtro
 Sono ora disponibili tag come filtro in modo che sia possibile cercare solo tra gli account prioritari o gli scenari specifici dei tag utente (e persino escludere i risultati con alcuni tag come parte di questa esperienza). Combinando queste informazioni con gli altri filtri che vengono forniti, è possibile limitare l'ambito delle indagini
@@ -123,7 +123,7 @@ Oltre a identificare tutti gli eventi di recapito e post-recapito, la visualizza
 
 Oggi, il percorso di recapito in superficie all'interno della griglia e-mail e del riquadro a comparsa. In futuro, il campo percorso di recapito verrà rinominato nel percorso di recapito originale. Inoltre, è stato introdotto anche un altro campo denominato ultima posizione di recapito.
 
-Il percorso di recapito originale darebbe maggiori informazioni sul luogo in cui è stato recapitato un messaggio di posta elettronica. Il percorso di recapito più recente dovrebbe includere il percorso in cui un messaggio di posta elettronica potrebbe essere atterrato dopo azioni del sistema come ZAP o azioni amministrative come **Move to Deleted Items** . Il percorso di recapito più recente ha lo scopo di informare gli amministratori dell'ultima posizione nota del messaggio dopo il recapito o di qualsiasi azione di sistema/amministratore. In base alla progettazione, non include alcuna azione relativa all'utente finale sul messaggio di posta elettronica. Ad esempio, se un utente elimina un messaggio o sposta il messaggio in Archive/PST, il percorso del messaggio "recapito" non verrà aggiornato. Tuttavia, se un'azione del sistema ha aggiornato la posizione (ad esempio, ZAP risultante in un messaggio di posta elettronica che si sposta in quarantena), è possibile visualizzare il percorso di recapito più recente in quarantena.
+Il percorso di recapito originale darebbe maggiori informazioni sul luogo in cui è stato recapitato un messaggio di posta elettronica. Il percorso di recapito più recente dovrebbe includere il percorso in cui un messaggio di posta elettronica potrebbe essere atterrato dopo azioni del sistema come ZAP o azioni amministrative come **Move to Deleted Items**. Il percorso di recapito più recente ha lo scopo di informare gli amministratori dell'ultima posizione nota del messaggio dopo il recapito o di qualsiasi azione di sistema/amministratore. In base alla progettazione, non include alcuna azione relativa all'utente finale sul messaggio di posta elettronica. Ad esempio, se un utente elimina un messaggio o sposta il messaggio in Archive/PST, il percorso del messaggio "recapito" non verrà aggiornato. Tuttavia, se un'azione del sistema ha aggiornato la posizione (ad esempio, ZAP risultante in un messaggio di posta elettronica che si sposta in quarantena), è possibile visualizzare il percorso di recapito più recente in quarantena.
 
 > [!div class="mx-imgBorder"]
 > ![Posizioni di recapito aggiornate](../../media/Updated_Delivery_Location.png)
@@ -196,6 +196,16 @@ Nell'ambito del miglioramento del processo di ricerca, sono stati apportati alcu
 - [Aggiornamento nel processo di aggiornamento](#update-in-the-refresh-process)
 - [Drill-down del grafico da aggiungere ai filtri](#chart-drilldown-to-add-to-filters)
 - [Negli aggiornamenti delle informazioni sui prodotti](#in-product-information-updates)
+
+### <a name="filter-by-user-tags"></a>Filtrare in base ai tag utente
+
+È ora possibile ordinare e filtrare in base al sistema o ai tag utente personalizzati, per afferrare rapidamente l'ambito delle minacce. Per ulteriori informazioni, vedere [tag degli utenti in Office 365 ATP](user-tags.md) .
+
+> [!IMPORTANT]
+> Il filtro e l'ordinamento in base ai tag utente è attualmente in anteprima pubblica.
+> Esso può essere sostanzialmente modificato prima che venga rilasciato commercialmente. Microsoft non fornisce garanzie, espresse o implicite, in relazione alle informazioni fornite in proposito.
+
+![Colonna Tag in Esplora risorse](../../media/threat-explorer-tags.png)
 
 ### <a name="timezone-improvements"></a>Miglioramenti del fuso orario
 
@@ -345,12 +355,12 @@ Si supponga di voler vedere malware rilevato nella posta elettronica, tramite la
 
 1. Nel centro sicurezza & conformità ( [https://protection.office.com](https://protection.office.com) ), scegliere **gestione minacce**  >  **Explorer** (o **rilevamenti in tempo reale** ). In questo esempio viene utilizzato Esplora.
 
-2. Scegliere malware **tramite posta elettronica** dal menu **Visualizza**  >  **Malware** .
+2. Scegliere malware **tramite posta elettronica** dal menu **Visualizza**  >  **Malware**.
 
    > [!div class="mx-imgBorder"]
    > ![Menu Visualizza per Esplora risorse](../../media/ExplorerViewEmailMalwareMenu.png)
 
-3. Fare clic su **mittente** e quindi scegliere tecnologia di rilevamento di **base**  >  **Detection technology** .
+3. Fare clic su **mittente** e quindi scegliere tecnologia di rilevamento di **base**  >  **Detection technology**.
 
    Le tecnologie di rilevamento sono ora disponibili come filtri per il report.
 
@@ -372,12 +382,12 @@ Per esaminare gli URL di phishing nei messaggi e fare clic su URL nei messaggi d
 
 1. Nel centro sicurezza & conformità ( [https://protection.office.com](https://protection.office.com) ), scegliere **gestione minacce**  >  **Explorer** (o **rilevamenti in tempo reale** ). In questo esempio viene utilizzato Esplora.
 
-2. Nel menu **Visualizza** scegliere **posta elettronica**  >  **phishing** .
+2. Nel menu **Visualizza** scegliere **posta elettronica**  >  **phishing**.
 
    > [!div class="mx-imgBorder"]
-   > ![Menu Visualizza per Esplora risorse](../../media/ExplorerViewEmailPhishMenu.png)
+   > ![Menu Visualizza per Esplora in contesto di phishing](../../media/ExplorerViewEmailPhishMenu.png)
 
-3. Fare clic su **sender** e quindi scegliere **urls**  >  **Click verdict** .
+3. Fare clic su **sender** e quindi scegliere **urls**  >  **Click verdict**.
 
 4. Selezionare una o più opzioni, ad esempio **bloccate** e **bloccate** , e quindi fare clic sul pulsante **Aggiorna** che si trova nella stessa riga delle opzioni per applicare il filtro. (Non aggiornare la finestra del browser.)
 
@@ -419,24 +429,24 @@ Si supponga di voler visualizzare i messaggi di posta elettronica che gli utenti
 
 1. Nel centro sicurezza & conformità ( [https://protection.office.com](https://protection.office.com) ), scegliere **gestione minacce**  >  **Explorer** (o **rilevamenti in tempo reale** ). In questo esempio viene utilizzato Esplora.
 
-2. Scegliere **invii di posta elettronica** dal menu **Visualizza**  >  **Submissions** .
+2. Scegliere **invii di posta elettronica** dal menu **Visualizza**  >  **Submissions**.
 
    > [!div class="mx-imgBorder"]
-   > ![Menu Visualizza per Esplora risorse](../../media/explorer-view-menu-email-user-reported.png)
+   > ![Menu Visualizza per Esplora risorse per i messaggi di posta elettronica](../../media/explorer-view-menu-email-user-reported.png)
 
-3. Fare clic su **mittente** e quindi scegliere tipo di report di **base**  >  **Report type** .
+3. Fare clic su **mittente** e quindi scegliere tipo di report di **base**  >  **Report type**.
 
 4. Selezionare un'opzione, ad esempio **phishing** , e quindi fare clic sul pulsante **Aggiorna** .
 
    > [!div class="mx-imgBorder"]
    > ![Phishing segnalati dall'utente](../../media/EmailUserReportedReportType.png)
 
-Il rapporto viene aggiornato per visualizzare i dati relativi ai messaggi di posta elettronica che gli utenti dell'organizzazione hanno segnalato come tentativo di phishing. È possibile utilizzare queste informazioni per eseguire un'ulteriore analisi e, se necessario, regolare i [criteri di anti-phishing ATP](configure-atp-anti-phishing-policies.md).
+Il rapporto viene aggiornato per visualizzare i dati relativi ai messaggi di posta elettronica che gli utenti dell'organizzazione hanno segnalato come tentativo di phishing. È possibile utilizzare queste informazioni per eseguire un'ulteriore analisi e, se necessario, modificare i [criteri di anti-phishing in Microsoft Defender per Office 365](configure-atp-anti-phishing-policies.md).
 
 ## <a name="start-automated-investigation-and-response"></a>Avviare l'analisi e la risposta automatizzata
 
 > [!NOTE]
-> Le funzionalità di ricerca e risposta automatizzate sono disponibili in **office 365 ATP piano 2** e **Office 365 E5** .
+> Le funzionalità di ricerca e risposta automatizzate sono disponibili in **Microsoft Defender per office 365 piano 2** e **Office 365 E5**.
 
 (Nuovo!) L' [analisi e la risposta automatizzate](automated-investigation-response-office.md) sono in grado di salvare il team delle operazioni di sicurezza molto tempo ed energie nell'analisi e nell'attenuazione di attacchi cibernetici. Oltre a configurare gli avvisi che possono attivare un PlayBook per la sicurezza, è possibile avviare un processo di analisi e risposta automatizzato da una visualizzazione di Esplora risorse.
 
@@ -454,11 +464,11 @@ Oltre agli scenari descritti in questo articolo, sono disponibili molte altre op
 
 ## <a name="required-licenses-and-permissions"></a>Licenze e autorizzazioni obbligatorie
 
-È necessario disporre di [Office 365 ATP](office-365-atp.md) per ottenere rilevamenti di Esplora risorse o in tempo reale.
+Per ottenere esplorazioni o rilevamenti in tempo reale, è necessario disporre di [Microsoft Defender per Office 365](office-365-atp.md) .
 
-- Explorer è incluso in Office 365 ATP piano 2.
-- Il rapporto sui rilevamenti in tempo reale è incluso in Office 365 ATP Plan 1.
-- Pianificare l'assegnazione delle licenze per tutti gli utenti che devono essere protetti da Office 365 ATP. (Esplora risorse o rilevamenti in tempo reale mostrano i dati di rilevamento per gli utenti con licenza).
+- Explorer è incluso in Defender per Office 365 piano 2.
+- Il rapporto sui rilevamenti in tempo reale è incluso in Defender per Office 365 piano 1.
+- Pianificare l'assegnazione delle licenze per tutti gli utenti che devono essere protetti da Defender per Office 365. (Esplora risorse o rilevamenti in tempo reale mostrano i dati di rilevamento per gli utenti con licenza).
 
 Per visualizzare e utilizzare esplorazioni o rilevamenti in tempo reale, è necessario disporre delle autorizzazioni appropriate, ad esempio quelle concesse a un amministratore della sicurezza o a un lettore di sicurezza.
 
@@ -482,9 +492,9 @@ Per ulteriori informazioni sui ruoli e sulle autorizzazioni, vedere le risorse s
 
 ## <a name="some-differences-between-threat-explorer-and-real-time-detections"></a>Alcune differenze tra Esplora minacce e rilevamenti in tempo reale
 
-- Il rapporto sui **rilevamenti in tempo reale** è disponibile in Office 365 ATP Plan 1, mentre l' **esploratore di minacce** è disponibile in Office 365 ATP piano 2.
+- Il rapporto sui **rilevamenti in tempo reale** è disponibile in Defender per Office 365 piano 1, mentre **Esplora minacce** è disponibile in Defender per Office 365 piano 2.
 - Il rapporto sui **rilevamenti in tempo reale** consente di visualizzare i rilevamenti in tempo reale. **Threat Explorer** Anche questo consente di visualizzare ulteriori dettagli relativi a un determinato attacco.
 - La visualizzazione di **tutti i messaggi di posta elettronica** è disponibile in **Esplora minacce** (e non è presente nel rapporto **rilevamenti in tempo reale** ).
-- Altre funzionalità di filtro e le azioni disponibili sono incluse in **Esplora minacce** .
+- Altre funzionalità di filtro e le azioni disponibili sono incluse in **Esplora minacce**.
 
-Per ulteriori informazioni, vedere [Descrizione del servizio ATP di Office 365: disponibilità delle funzionalità tra i piani di Advanced Threat Protection (ATP)](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans).
+Per ulteriori informazioni, vedere [Descrizione del servizio Microsoft Defender per office 365: disponibilità delle funzionalità tra i piani di protezione per office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans).

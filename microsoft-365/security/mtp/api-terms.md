@@ -1,6 +1,6 @@
 ---
-title: Licenza di Microsoft Threat Protection APIs e condizioni di utilizzo
-description: Descrizione della licenza e delle condizioni di utilizzo per le API in Microsoft Threat Protection
+title: Licenza e condizioni di utilizzo di Microsoft 365 Defender APIs
+description: Descrizione della licenza e condizioni di utilizzo per le API in Microsoft 365 Defender
 keywords: API, API, licenze, termini, API, legale, notifiche, codice di condotta
 search.product: eADQiWindows 10XVcnh
 ms.prod: microsoft-365-enterprise
@@ -19,19 +19,19 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: d76992108fb3cda82bd9ad9886a2886f70695788
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: e88b59ea28f9e71c677c25d95edc2f91cc2e56d4
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48203673"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48844897"
 ---
-#  <a name="microsoft-threat-protection-apis-license-and-terms-of-use"></a>Licenza di Microsoft Threat Protection APIs e condizioni di utilizzo
+#  <a name="microsoft-365-defender-apis-license-and-terms-of-use"></a>Licenza e condizioni di utilizzo di Microsoft 365 Defender APIs
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 **Si applica a:**
-- Microsoft Threat Protection
+- Microsoft 365 Defender
 
 >[!IMPORTANT] 
 >Alcune informazioni si riferiscono al prodotto prerilasciato che può essere modificato in modo sostanziale prima che venga rilasciato commercialmente. Microsoft makes no warranties, express or implied, with respect to the information provided here.
@@ -39,7 +39,7 @@ ms.locfileid: "48203673"
 
 ## <a name="apis"></a>API
 
- Le API di Microsoft Threat Protection sono regolate dalla [licenza API Microsoft e dalle condizioni di utilizzo](https://docs.microsoft.com/legal/microsoft-apis/terms-of-use).
+ Le API Microsoft 365 Defender sono regolate dalla [licenza API Microsoft e dalle condizioni di utilizzo](https://docs.microsoft.com/legal/microsoft-apis/terms-of-use).
 
 ### <a name="throttling-limits"></a>Limitazioni
 

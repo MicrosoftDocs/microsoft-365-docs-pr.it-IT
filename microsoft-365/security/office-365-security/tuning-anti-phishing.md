@@ -15,12 +15,12 @@ ms.collection:
 - m365initiative-defender-office365
 - MET150
 description: Gli amministratori possono imparare a identificare i motivi per cui e come è stato ottenuto un messaggio di phishing in Microsoft 365 e cosa fare per evitare ulteriori messaggi di phishing in futuro.
-ms.openlocfilehash: ab7087355ce8ee41616f63a7b466a0d5d0fc7b0f
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: e933769b6bce9eb10765fb2b58025445432bed18
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48446466"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48845469"
 ---
 # <a name="tune-anti-phishing-protection"></a>Ottimizzare la protezione anti-phishing
 
@@ -33,15 +33,15 @@ Anche se Microsoft 365 viene fornito con una vasta gamma di funzionalità di ant
 
 Se l'account di un destinatario è stato compromesso a causa del messaggio di phishing, seguire la procedura descritta in [risposta a un account di posta elettronica compromesso in Microsoft 365](responding-to-a-compromised-email-account.md).
 
-Se l'abbonamento include Advanced Threat Protection (ATP), è possibile utilizzare [Office 365 Threat Intelligence](office-365-ti.md) per identificare gli altri utenti che hanno ricevuto anche il messaggio di phishing. Sono disponibili altre opzioni per bloccare i messaggi di phishing:
+Se l'abbonamento include Microsoft Defender per Office 365, è possibile utilizzare [office 365 Threat Intelligence](office-365-ti.md) per identificare gli altri utenti che hanno ricevuto anche il messaggio di phishing. Sono disponibili altre opzioni per bloccare i messaggi di phishing:
 
-- [Collegamenti sicuri in Office 365 ATP](set-up-atp-safe-links-policies.md)
+- [Collegamenti sicuri in Microsoft Defender per Office 365](set-up-atp-safe-links-policies.md)
 
-- [Allegati sicuri in Office 365 ATP](set-up-atp-safe-attachments-policies.md)
+- [Allegati sicuri in Microsoft Defender per Office 365](set-up-atp-safe-attachments-policies.md)
 
-- [Criteri di anti-phishing in Office 365 ATP](configure-atp-anti-phishing-policies.md). Si noti che è possibile aumentare temporaneamente **le soglie di phishing avanzate** nel criterio da **standard** a **aggressivo**, **più aggressivo**o **più aggressivo**.
+- [Criteri di anti-phishing in Microsoft Defender per Office 365](configure-atp-anti-phishing-policies.md). Si noti che è possibile aumentare temporaneamente **le soglie di phishing avanzate** nel criterio da **standard** a **aggressivo** , **più aggressivo** o **più aggressivo**.
 
-Verificare che queste funzionalità ATP siano attivate.
+Verificare che queste funzionalità di protezione per Office 365 siano attivate.
 
 ## <a name="report-the-phishing-message-to-microsoft"></a>Segnalare il messaggio di phishing a Microsoft
 
@@ -59,9 +59,9 @@ In particolare, è necessario controllare il campo di intestazione **X-Forefront
 
 - Per i messaggi che finiscono in quarantena per sbaglio o per i messaggi consentiti tramite, è consigliabile cercare tali messaggi in [Esplora minacce e rilevamenti in tempo reale](threat-explorer.md). È possibile eseguire una ricerca in base al mittente, al destinatario o all'ID del messaggio. Dopo aver individuato il messaggio, passare a dettagli facendo clic sull'oggetto. Per un messaggio in quarantena, vedere che cos'è la "tecnologia di rilevamento" in modo che sia possibile utilizzare il metodo appropriato per eseguire l'override. Per un messaggio consentito, vedere i criteri consentiti per il messaggio. 
 
-- La posta contraffatta è contrassegnata come phishing in ATP. A volte lo spoofing è benigno e a volte gli utenti non lo desiderano in quarantena. Per ridurre al minimo l'impatto degli utenti, esaminare periodicamente il [report di intelligence spoof](learn-about-spoof-intelligence.md). Dopo aver esaminato e apportato le modifiche necessarie, è possibile avere la certezza di [configurare l'intelligence spoof](set-up-anti-phishing-policies.md#spoof-settings) per la **quarantena** dei messaggi sospetti anziché recapitarli nella cartella posta indesiderata dell'utente.
+- La posta contraffatta è contrassegnata come phishing in Defender per Office 365. A volte lo spoofing è benigno e a volte gli utenti non lo desiderano in quarantena. Per ridurre al minimo l'impatto degli utenti, esaminare periodicamente il [report di intelligence spoof](learn-about-spoof-intelligence.md). Dopo aver esaminato e apportato le modifiche necessarie, è possibile avere la certezza di [configurare l'intelligence spoof](set-up-anti-phishing-policies.md#spoof-settings) per la **quarantena** dei messaggi sospetti anziché recapitarli nella cartella posta indesiderata dell'utente.
 
-- È possibile ripetere il passaggio precedente per la rappresentazione (dominio o utente). Il rapporto di rappresentazione è disponibile in **Threat Management** \> **Dashboard** \> **Insights**dashboard di gestione delle minacce.
+- È possibile ripetere il passaggio precedente per la rappresentazione (dominio o utente). Il rapporto di rappresentazione è disponibile in **Threat Management** \> **Dashboard** \> **Insights** dashboard di gestione delle minacce.
 
 - Esaminare periodicamente il [rapporto sullo stato della protezione dalle minacce](view-reports-for-atp.md#threat-protection-status-report).
 
