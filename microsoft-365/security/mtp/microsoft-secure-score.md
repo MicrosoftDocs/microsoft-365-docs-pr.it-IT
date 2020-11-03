@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: ea580ad6b7bb7cc905a299e473f23a4c74fb289e
-ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
+ms.openlocfilehash: a41e05f54a8ba94752c6df91628a2200367ac0f3
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "48294785"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48843841"
 ---
 # <a name="microsoft-secure-score"></a>Microsoft Secure Score
 
@@ -76,7 +76,7 @@ Ad esempio, un'azione di miglioramento dichiara di ottenere 10 punti proteggendo
 
 ### <a name="products-included-in-secure-score"></a>Prodotti inclusi nel punteggio sicuro
 
-Sono attualmente disponibili suggerimenti per Microsoft 365 (incluso Exchange Online), Azure Active Directory, Microsoft Defender ATP, Azure ATP e cloud app Security. Sono disponibili suggerimenti per gli altri prodotti di sicurezza. I suggerimenti non riguarderanno tutte le superfici di attacco associate a ciascun prodotto, ma sono una buona linea di base. È inoltre possibile contrassegnare le azioni di miglioramento riportate da terze parti o da una attenuazione alternativa.
+Sono attualmente disponibili suggerimenti per Microsoft 365 (incluso Exchange Online), Azure Active Directory, Microsoft Defender per endpoint, Microsoft Defender per Identity e cloud app Security. Sono disponibili suggerimenti per gli altri prodotti di sicurezza. I suggerimenti non riguarderanno tutte le superfici di attacco associate a ciascun prodotto, ma sono una buona linea di base. È inoltre possibile contrassegnare le azioni di miglioramento riportate da terze parti o da una attenuazione alternativa.
 
 ### <a name="security-defaults"></a>Impostazioni predefinite per la sicurezza
 

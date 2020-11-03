@@ -24,12 +24,12 @@ description: Informazioni su come acquistare un componente aggiuntivo per aggiun
 ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
-ms.openlocfilehash: e73a3430dbcded25a15fad19815106a72798d8e8
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: cfbce7efa1c80d9e5da8390c183233a6f2a12eb7
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48638388"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48842821"
 ---
 # <a name="buy-or-edit-an-add-on"></a>Acquistare o modificare un componente aggiuntivo
 
@@ -48,7 +48,7 @@ Alcuni dei piani di Microsoft 365 for business dispongono di componenti aggiunti
 
 1. Nell'interfaccia di amministrazione, andare alla **Billing** \> pagina <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">servizi di acquisto</a> per la fatturazione.
 
-2. Nella parte inferiore della pagina **acquisto servizi** selezionare **componenti**aggiuntivi.
+2. Nella parte inferiore della pagina **acquisto servizi** selezionare **componenti** aggiuntivi.
 
 3. Nella pagina **acquisto servizi** selezionare l'abbonamento al componente aggiuntivo che si desidera acquistare.
 
@@ -68,7 +68,7 @@ Alcuni dei piani di Microsoft 365 for business dispongono di componenti aggiunti
 
 2. Nella pagina **abbonamenti** selezionare l'abbonamento per cui si desidera acquistare un componente aggiuntivo.
 
-3. Nell'angolo in basso a sinistra dei dettagli della sottoscrizione, selezionare **componenti** aggiuntivi per \> **acquistare i componenti**aggiuntivi.
+3. Nell'angolo in basso a sinistra dei dettagli della sottoscrizione, selezionare **componenti** aggiuntivi per \> **acquistare i componenti** aggiuntivi.
 
     ![Acquistare un collegamento per i componenti aggiuntivi nella pagina abbonamenti dell'interfaccia di amministrazione di Microsoft 365.](../media/f5cbc3fa-90f7-4299-976d-2482f2c69755.png)
   
@@ -90,7 +90,7 @@ Alcuni dei piani di Microsoft 365 for business dispongono di componenti aggiunti
 
 2. Nella pagina **abbonamenti** selezionare l'abbonamento per cui si desidera acquistare un componente aggiuntivo.
 
-3. Nell'angolo in basso a sinistra dei dettagli della sottoscrizione, selezionare **componenti** aggiuntivi per \> **acquistare i componenti**aggiuntivi.
+3. Nell'angolo in basso a sinistra dei dettagli della sottoscrizione, selezionare **componenti** aggiuntivi per \> **acquistare i componenti** aggiuntivi.
 
     ![Acquistare un collegamento per i componenti aggiuntivi nella pagina abbonamenti dell'interfaccia di amministrazione di Microsoft 365.](../media/f5cbc3fa-90f7-4299-976d-2482f2c69755.png)
   
@@ -122,7 +122,7 @@ I *componenti aggiuntivi autonomi* non sono collegati a una sottoscrizione speci
 
 2. Nella pagina i **prodotti** selezionare l'abbonamento per cui si desidera aggiornare un componente aggiuntivo.
 
-3. Selezionare **componenti**aggiuntivi. Vengono visualizzati i componenti aggiuntivi acquistati.
+3. Selezionare **componenti** aggiuntivi. Vengono visualizzati i componenti aggiuntivi acquistati.
 
 4. Selezionare **Cambia quantità** per il componente aggiuntivo che si desidera modificare.
 
@@ -136,7 +136,7 @@ I *componenti aggiuntivi autonomi* non sono collegati a una sottoscrizione speci
 
 2. Nella pagina **abbonamenti** selezionare l'abbonamento per cui si desidera aggiornare un componente aggiuntivo.
 
-3. Selezionare **componenti**aggiuntivi.
+3. Selezionare **componenti** aggiuntivi.
 
     Vengono visualizzati i componenti aggiuntivi acquistati e sotto ognuno compare il collegamento **Cambio di quantità**.
 
@@ -159,7 +159,7 @@ I *componenti aggiuntivi autonomi* non sono collegati a una sottoscrizione speci
 
 2. Nella pagina **abbonamenti** selezionare l'abbonamento per cui si desidera aggiornare un componente aggiuntivo.
 
-3. Selezionare **componenti**aggiuntivi.
+3. Selezionare **componenti** aggiuntivi.
 
     Vengono visualizzati i componenti aggiuntivi acquistati e sotto ognuno compare il collegamento **Cambio di quantità**.
 
@@ -234,11 +234,11 @@ Per informazioni sui componenti aggiuntivi di Skype for Business, vedere [Licenz
 |**Componente aggiuntivo**|**Disponibile in questi abbonamenti**|
 |:-----|:-----|
 |Customer Lockbox  <br/> | Office 365 Enterprise E1  <br/>  Office 365 Enterprise E3  <br/>  Office 365 Enterprise E4  <br/> |
-|[Protezione avanzata dalle minacce di Office 365](https://go.microsoft.com/fwlink/p/?LinkId=691156) <br/> | Office 365 Enterprise E1  <br/>  Office 365 Enterprise E3  <br/>  Office 365 Enterprise E4  <br/> |
+|[Microsoft Defender per Office 365](https://go.microsoft.com/fwlink/p/?LinkId=691156) <br/> | Office 365 Enterprise E1  <br/>  Office 365 Enterprise E3  <br/>  Office 365 Enterprise E4  <br/> |
 |[Archiviazione Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=691157) <br/> | Microsoft 365 Business Basic  <br/>  Microsoft 365 Business Standard  <br/>  Office 365 Enterprise E1  <br/>  Office 365 Enterprise F1  <br/> |
 |Microsoft MyAnalytics  <br/> | Office 365 Enterprise E1  <br/>  Office 365 Enterprise E3  <br/>  Office 365 Enterprise E4  <br/> |
 |Office 365 Advanced Compliance  <br/> | Office 365 Enterprise E1  <br/>  Office 365 Enterprise E3  <br/>  Office 365 Enterprise E4  <br/> |
-|Spazio di archiviazione file aggiuntivo per Office 365  <br/> | App Microsoft 365 per le aziende  <br/>  Microsoft 365 Business Basic  <br/>  Microsoft 365 Business Standard  <br/>  Office 365 Enterprise E1  <br/>  Office 365 Enterprise E2  <br/>  Office 365 Enterprise E3  <br/>  Office 365 Enterprise E4  <br/>  Office 365 Enterprise E5  <br/>  Office per il Web con SharePoint piano 1  <br/>  Office per il Web con SharePoint piano 2  <br/>  SharePoint Online Piano 1  <br/>  SharePoint Online Piano 2  <br/> |
+|Spazio di archiviazione file aggiuntivo per Office 365  <br/> | Microsoft 365 Apps for business  <br/>  Microsoft 365 Business Basic  <br/>  Microsoft 365 Business Standard  <br/>  Office 365 Enterprise E1  <br/>  Office 365 Enterprise E2  <br/>  Office 365 Enterprise E3  <br/>  Office 365 Enterprise E4  <br/>  Office 365 Enterprise E5  <br/>  Office per il Web con SharePoint piano 1  <br/>  Office per il Web con SharePoint piano 2  <br/>  SharePoint Online Piano 1  <br/>  SharePoint Online Piano 2  <br/> |
 |Sistema telefonico  <br/> | Office 365 Enterprise E1  <br/>  Office 365 Enterprise E3  <br/>  Office 365 Enterprise E4  <br/>  Office 365 Enterprise E5  <br/> |
 |Audioconferenza  <br/> |  Microsoft 365 Business Basic <br/> Microsoft 365 Business Standard <br/> Office 365 Enterprise E1 <br/> Office 365 Enterprise E3 <br/> Office 365 Enterprise E4 <br/> Office 365 Enterprise E5 senza servizi di audioconferenza <br/> Microsoft 365 Business Premium <br/> Microsoft 365 E3 <br/> Microsoft 365 E5  <br/> |
 |Credito per la comunicazione  <br/> | Office 365 Enterprise E5  <br/> |

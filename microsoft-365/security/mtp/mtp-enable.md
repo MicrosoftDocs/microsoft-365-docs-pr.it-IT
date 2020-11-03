@@ -1,6 +1,6 @@
 ---
-title: Attivare Microsoft Threat Protection nel Centro sicurezza Microsoft 365
-description: Informazioni su come abilitare Microsoft Threat Protection e iniziare a integrare i problemi di sicurezza e le relative risposte.
+title: Attiva Microsoft 365 Defender in Microsoft 365 Security Center
+description: Informazioni su come abilitare Microsoft 365 Defender e avviare l'integrazione degli incidenti di sicurezza e della risposta.
 keywords: Introduzione, abilitare MTP, Microsoft Threat Protection, M365, sicurezza, percorso dati, autorizzazioni necessarie, idoneità licenza, pagina impostazioni
 search.product: eADQiWindows 10XVcnh
 ms.prod: microsoft-365-enterprise
@@ -19,57 +19,57 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 65e3a2609bc41ddeda95134874e5873e184a2a54
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: b5bb99ed4b8cee7ea920679e20f69c7a0e002d26
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48201160"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48843637"
 ---
-# <a name="turn-on-microsoft-threat-protection"></a>Attivare Microsoft Threat Protection
+# <a name="turn-on-microsoft-365-defender"></a>Attiva Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
 **Si applica a:**
-- Microsoft Threat Protection
+- Microsoft 365 Defender
 
-[Microsoft Threat Protection](microsoft-threat-protection.md) unifica il processo di risposta agli incidenti mediante l'integrazione di funzionalità chiave in Microsoft Defender Advanced Threat Protection (ATP), Office 365 ATP, Microsoft cloud app Security e Azure ATP. Questa esperienza unificata aggiunge importanti funzionalità alle quali è possibile accedere nel Centro sicurezza Microsoft 365.
+[Microsoft 365 Defender](microsoft-threat-protection.md) unifica il processo di risposta agli incidenti mediante l'integrazione delle funzionalità chiave in Microsoft Defender per endpoint, Microsoft Defender per Office 365, Microsoft cloud app Security e Microsoft Defender per Identity. Questa esperienza unificata aggiunge importanti funzionalità alle quali è possibile accedere nel Centro sicurezza Microsoft 365.
 
-Microsoft Threat Protection si attiva automaticamente quando i clienti idonei con le autorizzazioni necessarie visitano Microsoft 365 Security Center. Leggere questo articolo per comprendere i vari prerequisiti e il provisioning di Microsoft Threat Protection.
+Microsoft 365 Defender si attiva automaticamente quando i clienti idonei con le autorizzazioni necessarie visitano il Centro sicurezza di Microsoft 365. Leggere questo articolo per comprendere i vari prerequisiti e il provisioning di Microsoft 365 Defender.
 
 ## <a name="check-license-eligibility-and-required-permissions"></a>Verificare l'idoneità delle licenze e le autorizzazioni necessarie
-Una licenza per un prodotto di sicurezza Microsoft 365 in genere consente di utilizzare Microsoft Threat Protection in Microsoft 365 Security Center senza ulteriori costi di licenza. Si consiglia di ottenere una licenza di sicurezza Microsoft 365 E5, E5 Security, a5 o a5 o una combinazione valida di licenze che fornisce l'accesso a tutti i servizi supportati.
+Una licenza per un prodotto di sicurezza di Microsoft 365 generalmente autorizza l'utilizzo di Microsoft 365 Defender in Microsoft 365 Security Center senza ulteriori costi di licenza. Si consiglia di ottenere una licenza di sicurezza Microsoft 365 E5, E5 Security, a5 o a5 o una combinazione valida di licenze che fornisce l'accesso a tutti i servizi supportati.
 
 Per informazioni dettagliate sulla licenza, [leggere i requisiti di licenza](prerequisites.md#licensing-requirements).
 
 ### <a name="check-your-role"></a>Controllare il ruolo
-Per abilitare Microsoft Threat Protection, è necessario essere un amministratore **globale** o un **amministratore della sicurezza** in Azure Active Directory. [Visualizzare i ruoli in Azure AD](https://docs.microsoft.com//azure/active-directory/users-groups-roles/directory-manage-roles-portal)
+È necessario essere un **amministratore globale** o un **amministratore della sicurezza** in Azure Active Directory per abilitare Microsoft 365 Defender. [Visualizzare i ruoli in Azure AD](https://docs.microsoft.com//azure/active-directory/users-groups-roles/directory-manage-roles-portal)
 
 ## <a name="supported-services"></a>Servizi supportati
-Microsoft Threat Protection aggrega i dati provenienti dai vari servizi supportati già distribuiti. I dati verranno elaborati e archiviati in modo centralizzato per identificare nuove informazioni e rendere possibili flussi di lavoro di risposta centralizzati. In questo caso, senza influire sulle distribuzioni, le impostazioni o i dati esistenti associati ai servizi integrati.
+Microsoft 365 Defender aggrega i dati provenienti dai vari servizi supportati già distribuiti. I dati verranno elaborati e archiviati in modo centralizzato per identificare nuove informazioni e rendere possibili flussi di lavoro di risposta centralizzati. In questo caso, senza influire sulle distribuzioni, le impostazioni o i dati esistenti associati ai servizi integrati.
 
-Per ottenere la migliore protezione e ottimizzare Microsoft Threat Protection, è consigliabile distribuire tutti i servizi supportati in rete. Per ulteriori informazioni, [vedere informazioni sulla distribuzione di servizi supportati](deploy-supported-services.md).
+Per ottenere la migliore protezione e ottimizzare Microsoft 365 Defender, è consigliabile distribuire tutti i servizi supportati applicabili sulla rete. Per ulteriori informazioni, [vedere informazioni sulla distribuzione di servizi supportati](deploy-supported-services.md).
 
 ## <a name="before-starting-the-service"></a>Prima di avviare il servizio
-Prima di abilitare il servizio, Microsoft 365 Security Center ([Security.Microsoft.com](https://security.microsoft.com)) consente di visualizzare la pagina delle impostazioni di protezione delle minacce di Microsoft quando si seleziona **incidenti**, **Centro azioni**o **ricerca** nel riquadro di spostamento. Questi elementi di spostamento non vengono visualizzati se non si è idonei per l'utilizzo di Microsoft Threat Protection.
+Prima di abilitare il servizio, Microsoft 365 Security Center ( [Security.Microsoft.com](https://security.microsoft.com)) Visualizza la pagina delle impostazioni di Microsoft 365 Defender quando si seleziona **incidenti** , **Centro azioni** o **ricerca** nel riquadro di spostamento. Questi elementi di spostamento non vengono visualizzati se non si è idonei per l'utilizzo di Microsoft 365 Defender.
 
-![Immagine della pagina delle impostazioni di protezione dalle minacce di Microsoft visualizzata se Microsoft Threat Protection non è stato attivato ](../../media/mtp-enable/mtp-settings.png)
- *nelle impostazioni di Microsoft Threat Protection in Microsoft 365 Security Center*
+![Immagine della pagina Microsoft 365 Defender Settings visualizzata se Microsoft 365 Defender non è stato attivato ](../../media/mtp-enable/mtp-settings.png)
+ *nelle impostazioni di Microsoft 365 Defender in Microsoft 365 Security Center*
 
 ## <a name="starting-the-service"></a>Avvio del servizio
-Per abilitare Microsoft Threat Protection, è sufficiente selezionare **attiva Microsoft Threat Protection** e applicare la modifica. È inoltre possibile accedere a questa opzione selezionando **Impostazioni** ([Security.Microsoft.com/settings](https://security.microsoft.com/settings)) nel riquadro di spostamento e quindi selezionando **Microsoft Threat Protection**.
+Per abilitare Microsoft 365 Defender, è sufficiente selezionare **attiva microsoft 365 Defender** e applicare la modifica. È inoltre possibile accedere a questa opzione selezionando **Impostazioni** ( [Security.Microsoft.com/settings](https://security.microsoft.com/settings)) nel riquadro di spostamento e quindi selezionando **Microsoft 365 Defender**.
 
 >[!NOTE]
 >Se non si visualizzano le **Impostazioni** nel riquadro di spostamento o non è stato possibile accedere alla pagina, controllare autorizzazioni e licenze.
 
 ### <a name="data-center-location"></a>Percorso Data Center
-Microsoft Threat Protection archivierà ed elaborerà i dati nello [stesso percorso utilizzato da Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy). Se non si dispone di Microsoft Defender ATP, viene selezionata automaticamente una nuova posizione del Data Center in base alla posizione dei servizi di sicurezza Microsoft 365 attivi. La posizione del Data Center selezionato viene visualizzata nella schermata. 
+Microsoft 365 Defender archivierà e elaborerà i dati nello [stesso percorso utilizzato da Microsoft Defender per endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy). Se non si dispone di Microsoft Defender per endpoint, viene selezionata automaticamente una nuova posizione del Data Center in base alla posizione dei servizi di sicurezza Microsoft 365 attivi. La posizione del Data Center selezionato viene visualizzata nella schermata. 
 
-Selezionare **serve assistenza?** nel centro sicurezza Microsoft 365 contattare il supporto tecnico Microsoft per il provisioning di Microsoft Threat Protection in una posizione data center diversa. 
+Selezionare **serve assistenza?** nel centro sicurezza Microsoft 365 contattare il supporto tecnico Microsoft per il provisioning di Microsoft 365 Defender in una posizione data center diversa. 
 
 >[!NOTE]
->Microsoft Defender ATP accantona automaticamente i data center dell'Unione europea (EU) quando viene attivato tramite il Centro sicurezza di Azure. Microsoft Threat Protection provisionerà automaticamente nello stesso data center dell'Unione europea per i clienti che hanno eseguito il provisioning di Microsoft Defender ATP in questo modo. 
+>Microsoft Defender per endpoint si riattiva automaticamente nei data center dell'Unione europea (EU) quando viene attivato tramite Azure Defender *. Microsoft 365 Defender provvederà alla provisioning automatico nello stesso data center EU per i clienti che hanno eseguito il preprovisioning di Defender per endpoint in questo modo. 
 
 ### <a name="confirm-that-the-service-is-on"></a>Verificare che il servizio sia attivo
 Dopo aver eseguito il provisioning il servizio aggiunge:
@@ -78,32 +78,32 @@ Dopo aver eseguito il provisioning il servizio aggiunge:
 - Un centro operativo per la gestione delle [analisi e risposte automatiche](mtp-autoir.md)
 - Funzionalità di [ricerca avanzata](advanced-hunting-overview.md)
 
-![Immagine del riquadro di spostamento Microsoft 365 Centro sicurezza con Microsoft Threat Protection caratteristiche ](../../media/mtp-enable/mtp-on.png)
- *Microsoft 365 Security Center con gestione degli incidenti e altre funzionalità di Microsoft Threat Protection*
+![Immagine del riquadro di spostamento Microsoft 365 Centro sicurezza con Microsoft 365 Defender caratteristiche ](../../media/mtp-enable/mtp-on.png)
+ *Centro sicurezza Microsoft 365 con gestione eventi non consentiti e altre funzionalità di Microsoft 365 Defender*
 
-### <a name="getting-azure-atp-data"></a>Ottenere i dati di Azure ATP
-Per condividere i dati di Azure ATP con Microsoft Threat Protection, accertarsi che l'integrazione di Microsoft Cloud App Security e Azure ATP sia attivata. [Altre informazioni sull'integrazione](https://docs.microsoft.com/cloud-app-security/aatp-integration)
+### <a name="getting-microsoft-defender-for-identity-data"></a>Ottenere Microsoft Defender per i dati dell'identità
+Per condividere Microsoft Defender per i dati di identità con Microsoft 365 Defender, verificare che Microsoft cloud app Security e Microsoft Defender per l'integrazione delle identità sia attivata. [Altre informazioni sull'integrazione](https://docs.microsoft.com/cloud-app-security/aatp-integration)
 
 
-## <a name="turn-off-microsoft-threat-protection"></a>Disattivare Microsoft Threat Protection
-Per interrompere l'uso del servizio Microsoft Threat Protection, passare a **Impostazioni** > **Microsoft Threat Protection** > ** Consenso esplicito/rifiuto esplicito** nel Centro sicurezza Microsoft 365. Deselezionare **attiva Microsoft Threat Protection** e applicare le modifiche.
+## <a name="turn-off-microsoft-365-defender"></a>Disattiva Microsoft 365 Defender
+Per interrompere l'utilizzo di Microsoft 365 Defender, accedere a **Settings**  >  **Microsoft 365 Defender**  >  **opt-in/opt-out** nel centro protezione Microsoft 365. Deseleziona **attiva Microsoft 365 Defender** e applica le modifiche.
 
 Le funzionalità corrispondenti verranno rimosse dal centro sicurezza Microsoft 365.
 
 ## <a name="get-assistance"></a>Ottenere assistenza
 
-Per ottenere le risposte alle domande più frequenti relative all'attivazione di Microsoft Threat Protection, [leggere le FAQ](mtp-enable-faq.md).
+Per ottenere le risposte alle domande più frequenti sull'attivazione di Microsoft 365 Defender, [Leggi le domande frequenti](mtp-enable-faq.md).
 
-Il personale del supporto tecnico Microsoft può contribuire a provisionare o deprovisionare il servizio e le risorse correlate sul tenant. Per assistenza, selezionare **serve assistenza?** nel centro sicurezza Microsoft 365. Per contattare il supporto tecnico, fare riferimento a Microsoft Threat Protection.
+Il personale del supporto tecnico Microsoft può contribuire a provisionare o deprovisionare il servizio e le risorse correlate sul tenant. Per assistenza, selezionare **serve assistenza?** nel centro sicurezza Microsoft 365. Quando si contatta il supporto tecnico, fare riferimento a Microsoft 365 Defender.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 - [Domande frequenti](mtp-enable-faq.md)
 - [Requisiti relativi alle licenze e altri prerequisiti](prerequisites.md)
 - [Distribuire i servizi supportati](deploy-supported-services.md)
-- [Panoramica di Microsoft Threat Protection](microsoft-threat-protection.md)
-- [Panoramica di Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)
-- [Panoramica di Office 365 ATP](../office-365-security/office-365-atp.md)
+- [Panoramica di Microsoft 365 Defender](microsoft-threat-protection.md)
+- [Panoramica di Microsoft Defender per endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)
+- [Panoramica del difensore per Office 365](../office-365-security/office-365-atp.md)
 - [Panoramica di Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security)
-- [Panoramica di Azure ATP](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp)
-- [Archiviazione dei dati di Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy)
+- [Panoramica di Microsoft Defender per l'identità](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp)
+- [Microsoft Defender per l'archiviazione dei dati di endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy)

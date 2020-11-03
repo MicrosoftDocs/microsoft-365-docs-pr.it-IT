@@ -19,12 +19,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Gli amministratori possono ottenere informazioni su spoofing Intelligence in Exchange Online Protection (EOP), in cui è possibile consentire o bloccare specifici mittenti contraffatti.
-ms.openlocfilehash: 86771397f0175d389a69c1008e0ac5471697afc5
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 4ebc32a6c87c58edcceb0d57ee8d55be43f2dd20
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48199602"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48841829"
 ---
 # <a name="configure-spoof-intelligence-in-eop"></a>Configurare l'intelligence spoof in EOP
 
@@ -51,9 +51,9 @@ L'intelligenza contraffatta e, in particolare, il criterio di intelligence spoof
 
 È possibile gestire l'intelligence spoof nel centro sicurezza & Compliance o in PowerShell (Exchange Online PowerShell per Microsoft 365 organizzazioni con cassette postali in Exchange Online, standalone EOP PowerShell per organizzazioni senza cassette postali di Exchange Online).
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare
+## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare?
 
-- Aprire il Centro sicurezza e conformità in <https://protection.office.com/>. Per passare direttamente alla pagina **Impostazioni di filtro della posta indesiderata**, usare <https://protection.office.com/antispam>. Per passare direttamente alla pagina **anti-phishing** , utilizzare <https://protection.office.com/antiphishing> .
+- Aprire il Centro sicurezza e conformità in <https://protection.office.com/>. Per passare direttamente alla pagina **Impostazioni di filtro della posta indesiderata** , usare <https://protection.office.com/antispam>. Per passare direttamente alla pagina **anti-phishing** , utilizzare <https://protection.office.com/antiphishing> .
 
 - Per informazioni su come connettersi a PowerShell per Exchange Online, vedere [Connettersi a PowerShell per Exchange Online](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell). Per connettersi a PowerShell di EOP autonomo, vedere [Connettersi a PowerShell per Exchange Online Protection](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
@@ -74,7 +74,7 @@ L'intelligenza contraffatta e, in particolare, il criterio di intelligence spoof
 ## <a name="use-the-security--compliance-center-to-manage-spoofed-senders"></a>Utilizzare il Centro sicurezza & conformità per gestire i mittenti falsificati
 
 > [!NOTE]
-> Se si dispone di un abbonamento a Microsoft 365 Enterprise E5 o se è stato acquistato un componente aggiuntivo di Office 365 Advanced Threat Protection (Office 365 ATP), è anche possibile gestire i mittenti che eseguono lo spoofing del dominio tramite l' [Insight di intelligence di spoofing](walkthrough-spoof-intelligence-insight.md).
+> Se si dispone di un abbonamento a Microsoft 365 Enterprise E5 o se è stato acquistato un componente aggiuntivo Microsoft Defender per Office 365, è possibile gestire anche i mittenti che eseguono lo spoofing del dominio tramite l' [Insight di intelligence di spoofing](walkthrough-spoof-intelligence-insight.md).
 
 1. Nel Centro sicurezza e conformità, andare a **Gestione delle minacce** \> **Criteri** \> **Filtro della posta indesiderata**.
 
@@ -89,49 +89,49 @@ L'intelligenza contraffatta e, in particolare, il criterio di intelligence spoof
 
 4. Nel **decidere se questi mittenti sono autorizzati a falsificare il riquadro a comparsa degli utenti** visualizzato, selezionare una delle seguenti schede:
 
-   - **Domini: i**mittenti che eseguono lo spoofing degli utenti nei domini interni.
-   - **Domini esterni**: mittenti che eseguono lo spoofing degli utenti nei domini esterni.
+   - **Domini: i** mittenti che eseguono lo spoofing degli utenti nei domini interni.
+   - **Domini esterni** : mittenti che eseguono lo spoofing degli utenti nei domini esterni.
 
-5. Fare clic su ![ Espandi icona ](../../media/scc-expand-icon.png) nella colonna **consentito di falsificazione?** . Scegliere **Sì** per consentire il mittente contraffatto oppure scegliere **No** per contrassegnare il messaggio come falsificato. L'azione è controllata dal criterio anti-phishing predefinito o dai criteri di anti-phishing ATP personalizzati (il valore predefinito è **Move Message to junk email Folder**). Per ulteriori informazioni, vedere [spoofing Settings in anti-phishing Policies](set-up-anti-phishing-policies.md#spoof-settings).
+5. Fare clic su ![ Espandi icona ](../../media/scc-expand-icon.png) nella colonna **consentito di falsificazione?** . Scegliere **Sì** per consentire il mittente contraffatto oppure scegliere **No** per contrassegnare il messaggio come falsificato. L'azione è controllata dal criterio anti-phishing predefinito o dai criteri di anti-phishing personalizzati (il valore predefinito è **spostamento messaggio nella cartella posta indesiderata** ). Per ulteriori informazioni, vedere [spoofing Settings in anti-phishing Policies](set-up-anti-phishing-policies.md#spoof-settings).
 
    ![Schermata che mostra il riquadro a comparsa di mittenti contraffatti e se il mittente è autorizzato a eseguire la falsificazione](../../media/c0c062fd-f4a4-4d78-96f7-2c22009052bb.jpg)
 
    Le colonne e i valori visualizzati sono illustrati nell'elenco seguente:
 
-   - **Utente contraffatto**: l'account utente contraffatto. Si tratta del mittente del messaggio nell'indirizzo from (noto anche come `5322.From` indirizzo) visualizzato nei client di posta elettronica. La validità di questo indirizzo non è controllata da SPF.
+   - **Utente contraffatto** : l'account utente contraffatto. Si tratta del mittente del messaggio nell'indirizzo from (noto anche come `5322.From` indirizzo) visualizzato nei client di posta elettronica. La validità di questo indirizzo non è controllata da SPF.
 
      - Nella scheda **domini** , il valore contiene un singolo indirizzo di posta elettronica o se il server di posta elettronica di origine falsifica più account utente, ne contiene **più di uno**.
 
      - Nella scheda **domini esterni** , il valore contiene il dominio dell'utente contraffatto, non l'indirizzo di posta elettronica completo.
 
-   - **Infrastruttura di invio**: il dominio trovato in una ricerca DNS inversa (record PTR) dell'indirizzo IP del server di posta elettronica di origine o l'indirizzo IP se l'origine non ha un record PTR.
+   - **Infrastruttura di invio** : il dominio trovato in una ricerca DNS inversa (record PTR) dell'indirizzo IP del server di posta elettronica di origine o l'indirizzo IP se l'origine non ha un record PTR.
 
      Per ulteriori informazioni sulle origini dei messaggi e sui mittenti di messaggi, vedere [una panoramica degli standard per i messaggi di posta elettronica](how-office-365-validates-the-from-address.md#an-overview-of-email-message-standards).
 
-   - **# dei messaggi**: il numero di messaggi dall'infrastruttura di invio all'organizzazione che contengono il mittente o i mittenti falsificati specificati negli ultimi 30 giorni.
+   - **# dei messaggi** : il numero di messaggi dall'infrastruttura di invio all'organizzazione che contengono il mittente o i mittenti falsificati specificati negli ultimi 30 giorni.
 
-   - **# dei reclami degli**utenti: denunce presentate dagli utenti nei confronti del mittente negli ultimi 30 giorni. I reclami sono di solito sotto forma di invii di posta indesiderata a Microsoft.
+   - **# dei reclami degli** utenti: denunce presentate dagli utenti nei confronti del mittente negli ultimi 30 giorni. I reclami sono di solito sotto forma di invii di posta indesiderata a Microsoft.
 
-   - **Risultato dell'autenticazione**: uno dei seguenti valori:
+   - **Risultato dell'autenticazione** : uno dei seguenti valori:
 
-      - **Superato**: il mittente ha superato i controlli di autenticazione della posta elettronica del mittente (SPF o DKIM).
-      - **Errore**: il mittente ha superato i controlli di autenticazione del mittente EOP.
-      - **Unknown**: il risultato di questi controlli non è noto.
+      - **Superato** : il mittente ha superato i controlli di autenticazione della posta elettronica del mittente (SPF o DKIM).
+      - **Errore** : il mittente ha superato i controlli di autenticazione del mittente EOP.
+      - **Unknown** : il risultato di questi controlli non è noto.
 
-   - **Decision set by**: indica chi ha determinato se l'infrastruttura di invio è consentita per la falsificazione dell'utente:
+   - **Decision set by** : indica chi ha determinato se l'infrastruttura di invio è consentita per la falsificazione dell'utente:
 
        - **Criteri di intelligence spoof** (automatici)
        - **Amministratore** (manuale)
 
-   - **Ultimo**aggiornamento: l'ultima data in cui un messaggio è stato ricevuto dall'infrastruttura di invio che contiene l'utente falsificato.
+   - **Ultimo** aggiornamento: l'ultima data in cui un messaggio è stato ricevuto dall'infrastruttura di invio che contiene l'utente falsificato.
 
-   - **Consentita la falsificazione?**: i valori visualizzati qui sono:
+   - **Consentita la falsificazione?** : i valori visualizzati qui sono:
 
-     - **Yes**: i messaggi provenienti dalla combinazione di utenti falsificati e dell'infrastruttura di invio sono consentiti e non vengono considerati come posta elettronica contraffatta.
+     - **Yes** : i messaggi provenienti dalla combinazione di utenti falsificati e dell'infrastruttura di invio sono consentiti e non vengono considerati come posta elettronica contraffatta.
 
-     - **No**: i messaggi provenienti dalla combinazione di utenti falsificati e dell'infrastruttura di invio sono contrassegnati come falsificati. L'azione è controllata dal criterio anti-phishing predefinito o dai criteri di anti-phishing ATP personalizzati (il valore predefinito è **Move Message to junk email Folder**). Per ulteriori informazioni, vedere la sezione successiva.
+     - **No** : i messaggi provenienti dalla combinazione di utenti falsificati e dell'infrastruttura di invio sono contrassegnati come falsificati. L'azione è controllata dal criterio anti-phishing predefinito o dai criteri di anti-phishing personalizzati (il valore predefinito è **spostamento messaggio nella cartella posta indesiderata** ). Per ulteriori informazioni, vedere la sezione successiva.
 
-     - **Alcuni utenti** (solo**la scheda domini** ): un'infrastruttura di invio è spoofing di più utenti, in cui alcuni utenti falsificati sono consentiti e altri no. Utilizzare la scheda **Dettagli** per visualizzare gli indirizzi specifici.
+     - **Alcuni utenti** (solo **la scheda domini** ): un'infrastruttura di invio è spoofing di più utenti, in cui alcuni utenti falsificati sono consentiti e altri no. Utilizzare la scheda **Dettagli** per visualizzare gli indirizzi specifici.
 
 6. Nella parte inferiore della pagina fare clic su **Salva**.
 
@@ -181,7 +181,7 @@ Le opzioni di configurazione per l'intelligence spoof sono descritte in [Imposta
 
 - [Configurare i criteri di anti-phishing in EOP](configure-anti-phishing-policies-eop.md).
 
-- [Configurare i criteri di anti-phishing ATP in Microsoft 365](configure-atp-anti-phishing-policies.md).
+- [Configurazione dei criteri anti-phishing in Microsoft Defender per Office 365 in microsoft 365](configure-atp-anti-phishing-policies.md).
 
 ## <a name="how-do-you-know-these-procedures-worked"></a>Come verificare se queste procedure hanno avuto esito positivo?
 
@@ -204,7 +204,7 @@ Per verificare di aver configurato l'intelligence spoof con i mittenti autorizza
    Get-PhishFilterPolicy -Detailed | Export-CSV "C:\My Documents\Spoofed Senders.csv"
    ```
 
-- Nel centro sicurezza & conformità, accedere a criteri di **gestione delle minacce** \> **Policy** \> **anti-phishing** o **ATP anti-phishing**, quindi eseguire una delle operazioni seguenti:  
+- Nel centro sicurezza & conformità, accedere a criteri di **gestione delle minacce** \> **Policy** \> **anti-phishing** o **ATP anti-phishing** , quindi eseguire una delle operazioni seguenti:  
 
   - Selezionare un criterio dall'elenco. Nel riquadro a comparsa visualizzato, verificare i valori nella sezione **spoofing** .
   - Fare clic su **criteri predefiniti**. Nel riquadro a comparsa visualizzato, verificare i valori nella sezione **spoofing** .

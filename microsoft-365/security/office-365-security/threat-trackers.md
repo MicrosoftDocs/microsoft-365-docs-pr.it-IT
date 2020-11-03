@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 description: Informazioni su informatori di minacce, inclusi i nuovi informatori degni di nota, per consentire all'organizzazione di rimanere al di sopra dei problemi relativi alla sicurezza.
-ms.openlocfilehash: a810dca8dd556d91196d48f387c799bbf89ef869
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: df544da7bfc5abebd45b0861c29f9e49632cdcd8
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48446490"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48842321"
 ---
 # <a name="threat-trackers---new-and-noteworthy"></a>Inseguimenti di minacce-nuovi e degni di nota
 
@@ -32,7 +32,7 @@ ms.locfileid: "48446490"
 Le funzionalità di [ricerca e risposta](office-365-ti.md) alle minacce di Office 365 consentono al team di sicurezza dell'organizzazione di individuare ed eseguire azioni contro le minacce di Cybersecurity. Le funzionalità di ricerca e risposta alle minacce di Office 365 includono le funzionalità di monitoraggio delle minacce, compresi i Tracker degni di nota. Leggere questo articolo per ottenere una panoramica delle nuove funzionalità e dei passaggi successivi. 
 
 > [!IMPORTANT]
-> Office 365 Threat Intelligence è ora Office 365 Advanced Threat Protection piano 2, insieme a ulteriori funzionalità di protezione dalle minacce. Per ulteriori informazioni, vedere i [piani e i prezzi di office 365 Advanced Threat Protection](https://products.office.com/exchange/advance-threat-protection) e la [Descrizione del servizio Advanced Threat protection di Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
+> Office 365 Threat Intelligence è ora Microsoft Defender per Office 365 piano 2, insieme ad altre funzionalità di protezione dalle minacce. Per ulteriori informazioni, vedere i [piani e i prezzi di Microsoft Defender per office 365](https://products.office.com/exchange/advance-threat-protection) e la [Descrizione del servizio Microsoft defender per Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
   
 ## <a name="what-are-threat-trackers"></a>Cosa sono gli inpistatori di minacce?
 
@@ -44,7 +44,7 @@ La maggior parte delle pagine del depistaggio include i numeri di tendenza che v
   
 ![Esempio di informazioni sulla campagna in Esplora risorse](../../media/e426f220-fdcb-4dd9-99a2-db97dbcf71d5.png)
   
-I dispositivi di rilevamento sono solo alcune delle numerose funzionalità che si ottengono con [Office 365 Advanced Threat Protection Plan 2](office-365-ti.md). Gli inseguitori di minacce includono [inseguitori di Noteworth](#noteworthy-trackers), inseguitori di [tendenza](#trending-trackers), [query registrate](#tracked-queries)e [query salvate](#saved-queries).
+Gli incaricati sono solo alcune delle numerose caratteristiche che si ottengono con [Microsoft Defender per Office 365 piano 2](office-365-ti.md). Gli inseguitori di minacce includono [inseguitori di Noteworth](#noteworthy-trackers), inseguitori di [tendenza](#trending-trackers), [query registrate](#tracked-queries)e [query salvate](#saved-queries).
   
 Per visualizzare e utilizzare i Tracker di minacce per la propria organizzazione, andare al &amp; Centro sicurezza [https://protection.office.com](https://protection.office.com) e scegliere Threat **Management** \> **Threat Tracker**.
   
@@ -87,13 +87,13 @@ Tenere presente che è sempre possibile fornire commenti e suggerimenti su quest
   
 ![Security &amp; Compliance Center](../../media/86c330db-8132-4150-8475-220258fe04fb.png)
   
-## <a name="trackers-and-office-365-advanced-threat-protection"></a>Inseguimenti e protezione avanzata dalle minacce di Office 365
+## <a name="trackers-and-microsoft-defender-for-office-365"></a>Trackers e Microsoft Defender per Office 365
 
-Con la nostra minaccia degna di nota inaugurale, vengono evidenziate le minacce di malware avanzate rilevate dagli [allegati sicuri](atp-safe-attachments.md). Se si è un cliente di Office 365 Enterprise E5 e non si utilizza [office 365 Advanced Threat Protection](office-365-atp.md) (ATP), è necessario che sia incluso nell'abbonamento. ATP fornisce valore anche se si dispone di altri strumenti di sicurezza che filtrano il flusso di posta elettronica con i servizi di Office 365. Tuttavia, le funzionalità di protezione da posta indesiderata e [collegamenti sicuri](atp-safe-links.md) funzionano meglio quando la soluzione di sicurezza della posta elettronica principale è tramite Office 365.
+Con la nostra minaccia degna di nota inaugurale, vengono evidenziate le minacce di malware avanzate rilevate dagli [allegati sicuri](atp-safe-attachments.md). Se si è un cliente di Office 365 Enterprise E5 e non si utilizza [Microsoft Defender per office 365](office-365-atp.md), è necessario essere-è incluso nell'abbonamento. Difensore per Office 365 fornisce valore anche se si dispone di altri strumenti di sicurezza che filtrano il flusso di posta elettronica con i servizi di Office 365. Tuttavia, le funzionalità di protezione da posta indesiderata e [collegamenti sicuri](atp-safe-links.md) funzionano meglio quando la soluzione di sicurezza della posta elettronica principale è tramite Office 365.
   
-![ATP nel centro sicurezza e &amp; conformità](../../media/cee70d07-f0c1-459b-843c-2d10c253349f.png)
+![Microsoft Defender per Office 365 nel centro sicurezza e &amp; conformità](../../media/cee70d07-f0c1-459b-843c-2d10c253349f.png)
   
-In questo mondo a rischio di minacce, l'esecuzione di solo scansioni antimalware tradizionali significa che non si è sufficientemente protetti dagli attacchi. Gli aggressori più sofisticati di oggi utilizzano gli strumenti comunemente disponibili per creare attacchi nuovi, offuscati o ritardati che non verranno riconosciuti dai motori antimalware tradizionali basati sulla firma. La funzionalità allegati sicuri accetta gli allegati di posta elettronica e li fa esplodere in un ambiente virtuale per determinare se sono sicuri o dannosi. Questo processo di detonazione apre ogni file in un ambiente computer virtuale, quindi Guarda cosa succede dopo l'apertura del file. Che si tratti di un file PDF e compresso o di un documento di Office, il codice dannoso può essere nascosto in un file, attivando solo una volta che la vittima l'ha aperta nel computer. Facendo detonare e analizzando il file nel flusso di posta elettronica, le funzionalità ATP di Office 365 trovano tali minacce in base ai comportamenti, alla reputazione dei file e a una serie di regole euristiche.
+In questo mondo a rischio di minacce, l'esecuzione di solo scansioni antimalware tradizionali significa che non si è sufficientemente protetti dagli attacchi. Gli aggressori più sofisticati di oggi utilizzano gli strumenti comunemente disponibili per creare attacchi nuovi, offuscati o ritardati che non verranno riconosciuti dai motori antimalware tradizionali basati sulla firma. La funzionalità allegati sicuri accetta gli allegati di posta elettronica e li fa esplodere in un ambiente virtuale per determinare se sono sicuri o dannosi. Questo processo di detonazione apre ogni file in un ambiente computer virtuale, quindi Guarda cosa succede dopo l'apertura del file. Che si tratti di un file PDF e compresso o di un documento di Office, il codice dannoso può essere nascosto in un file, attivando solo una volta che la vittima l'ha aperta nel computer. Facendo detonare e analizzando il file nel flusso di posta elettronica, le funzionalità di Defender per Office 365 trovano tali minacce in base ai comportamenti, alla reputazione dei file e a una serie di regole euristiche.
   
 Il nuovo filtro minacce notevole evidenzia gli elementi che sono stati rilevati di recente tramite allegati sicuri. Tali rilevamenti rappresentano gli elementi che sono nuovi file dannosi, non precedentemente trovati da Microsoft 365 nel flusso di posta elettronica o nella posta elettronica di altri clienti. Fare attenzione agli elementi contenuti nell'informatore di minacce considerevole, vedere chi è stato designato da loro e esaminare i dettagli di detonazione mostrati nella scheda analisi avanzata (trovato facendo clic sull'oggetto del messaggio di posta elettronica in Esplora). Nota Questa scheda è disponibile solo per i messaggi di posta elettronica rilevati dalla funzionalità allegati sicuri: questo inseguitore notevole include tale filtro, ma è possibile utilizzare tale filtro anche per altre ricerche in Esplora.
   
@@ -103,6 +103,6 @@ Il nuovo filtro minacce notevole evidenzia gli elementi che sono stati rilevati 
 
 - Assicurarsi che il team di sicurezza disponga dei ruoli e delle autorizzazioni corretti assegnati. È necessario essere un amministratore globale o disporre dell'amministratore della sicurezza o del ruolo di ricerca e spurgo assegnato nel &amp; Centro sicurezza e conformità. Vedere [Permissions in the Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
-- Tenere presente che i nuovi inpistatori vengono visualizzati nell'ambiente Microsoft 365. Se disponibile, è possibile trovare i propri [inseguitori.](https://protection.office.com/) Accedere a **Threat management** \> **inseguimenti di minacce**per la gestione delle minacce.
+- Tenere presente che i nuovi inpistatori vengono visualizzati nell'ambiente Microsoft 365. Se disponibile, è possibile trovare i propri [inseguitori.](https://protection.office.com/) Accedere a **Threat management** \> **inseguimenti di minacce** per la gestione delle minacce.
 
-- Se non è stato ancora fatto, è possibile ottenere ulteriori informazioni e configurare [Office 365 Advanced Threat Protection](office-365-atp.md) per l'organizzazione, inclusi i [collegamenti sicuri](atp-safe-links.md) e gli [allegati sicuri](atp-safe-attachments.md).
+- Se non è stato ancora fatto, per ulteriori informazioni e per configurare [Microsoft Defender per Office 365](office-365-atp.md) per la propria organizzazione, inclusi i [collegamenti sicuri](atp-safe-links.md) e gli [allegati sicuri](atp-safe-attachments.md).

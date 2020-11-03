@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Utilizzare il nuovo dashboard di sicurezza per esaminare lo stato di protezione dalle minacce di Office 365 e visualizzare e agire sugli avvisi di sicurezza.
-ms.openlocfilehash: 1bef6d0496c39d5157bbc40893d2710e89d1c734
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: f7576de9db1403c3c010b2fd826866ec11a7e20a
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48200074"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48843625"
 ---
 # <a name="security-dashboard"></a>Dashboard di sicurezza
 
@@ -57,7 +57,7 @@ Le informazioni visualizzate nel Riepilogo di gestione delle minacce dipendono d
 |---|---|
 |Messaggi di malware bloccati<br/>Messaggi di phishing bloccati<br>Messaggi segnalati dagli utenti<br><br><br><br>|Messaggi di malware bloccati<br>Messaggi di phishing bloccati<br>Messaggi segnalati dagli utenti<br>Malware zero-day bloccato<br>Messaggi di phishing avanzati rilevati<br>URL dannosi bloccati|
 
-Per visualizzare o accedere al widget di riepilogo di gestione delle minacce, è necessario disporre delle autorizzazioni per visualizzare i report di Advanced Threat Protection. Per ulteriori informazioni, vedere [quali autorizzazioni sono necessarie per visualizzare i rapporti ATP?](view-reports-for-atp.md#what-permissions-are-needed-to-view-the-atp-reports).
+Per visualizzare o accedere al widget di riepilogo di gestione delle minacce, è necessario disporre delle autorizzazioni per visualizzare i report di Defender per Office 365. Per ulteriori informazioni, vedere [quali autorizzazioni sono necessarie per visualizzare i report del difensore per Office 365?](view-reports-for-atp.md#what-permissions-are-needed-to-view-the-defender-for-office-365-reports).
 
 ## <a name="threat-protection-status"></a>Stato di protezione dalle minacce
 
@@ -65,14 +65,14 @@ Il widget dello stato di protezione delle minacce Mostra l'efficacia della prote
 
 ![Widget sullo stato della protezione dalle minacce](../../media/tpswidget.png)
 
-I dettagli dipendono dal fatto che la sottoscrizione Microsoft 365 includa [Exchange Online Protection](exchange-online-protection-overview.md) (EOP) con o senza [Office 365 Advanced Threat Protection](office-365-atp.md) (ATP).
+I dettagli dipendono dal fatto che la sottoscrizione Microsoft 365 includa [Exchange Online Protection](exchange-online-protection-overview.md) (EOP) con o senza [Microsoft Defender per Office 365](office-365-atp.md).
 
 |Se l'abbonamento è incluso in...|Vedrai questi dettagli|
 |---|---|
-|EOP ma non Office 365 ATP|Messaggi di posta elettronica dannosi che sono stati rilevati e bloccati da EOP.<br><br> Vedere [Threat Protection status report (EOP)](view-email-security-reports.md#threat-protection-status-report).|
-|Office 365 ATP|Contenuto dannoso e messaggi di posta elettronica dannosi rilevati e bloccati da EOP e Office 365 ATP<br><br>Numero aggregato di messaggi di posta elettronica univoci con contenuti dannosi bloccati dal motore antimalware, da [zero-hour auto Purge](zero-hour-auto-purge.md)e dalle funzionalità ATP (inclusi [collegamenti sicuri](atp-safe-links.md), [allegati sicuri](atp-safe-attachments.md)e [anti-phishing ATP](set-up-anti-phishing-policies.md#exclusive-settings-in-atp-anti-phishing-policies)).<br><br>Vedere [rapporto sullo stato della protezione dalle minacce (ATP)](view-reports-for-atp.md#threat-protection-status-report).|
+|EOP ma non Microsoft Defender per Office 365|Messaggi di posta elettronica dannosi che sono stati rilevati e bloccati da EOP.<br><br> Vedere [Threat Protection status report (EOP)](view-email-security-reports.md#threat-protection-status-report).|
+|Microsoft Defender per Office 365|Contenuto dannoso e messaggi di posta elettronica dannosi rilevati e bloccati da EOP e Defender per Office 365<br><br>Numero aggregato di messaggi di posta elettronica univoci con contenuti dannosi bloccati dal motore antimalware, [zero-hour auto Purge](zero-hour-auto-purge.md)e Defender for Office 365 features (inclusi [collegamenti sicuri](atp-safe-links.md), [allegati sicuri](atp-safe-attachments.md)e [anti-phishing in Defender per Office 365](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)).<br><br>Vedere [rapporto sullo stato della protezione dalle minacce](view-reports-for-atp.md#threat-protection-status-report).|
 
-Per visualizzare o accedere al widget dello stato di protezione dalle minacce, è necessario disporre delle autorizzazioni per visualizzare i report di Advanced Threat Protection. Per ulteriori informazioni, vedere [quali autorizzazioni sono necessarie per visualizzare i rapporti ATP?](view-reports-for-atp.md#what-permissions-are-needed-to-view-the-atp-reports)
+Per visualizzare o accedere al widget dello stato di protezione dalle minacce, è necessario disporre delle autorizzazioni per visualizzare i report di Defender per Office 365. Per ulteriori informazioni, vedere [quali autorizzazioni sono necessarie per visualizzare i report del difensore per Office 365?](view-reports-for-atp.md#what-permissions-are-needed-to-view-the-defender-for-office-365-reports)
 
 ## <a name="global-weekly-threat-detections"></a>Rilevamenti di minacce globali settimanali
 
@@ -86,7 +86,7 @@ Le metriche vengono calcolate come descritto nella tabella seguente:
 |---|---|
 |Messaggi analizzati|Numero di messaggi di posta elettronica analizzati moltiplicati per il numero di destinatari|
 |Minacce interrotte|Numero di messaggi di posta elettronica identificati come contenenti malware moltiplicato per il numero di destinatari|
-|Bloccato da [ATP](office-365-atp.md)|Numero di messaggi di posta elettronica bloccati da ATP moltiplicati per il numero di destinatari|
+|Bloccato da [difensore per Office 365 ](office-365-atp.md)|Numero di messaggi di posta elettronica bloccati dal difensore per Office 365 moltiplicato per il numero di destinatari|
 |Rimossi dopo il recapito|Numero di messaggi rimossi da [zero-hour auto Purge](zero-hour-auto-purge.md) moltiplicato per il numero di destinatari|
 
 ## <a name="malware"></a>Malware
@@ -105,7 +105,7 @@ Ad esempio, si potrebbe vedere che i messaggi di posta elettronica di phishing v
 
 ## <a name="threat-investigation-and-response"></a>Analisi e risposta alle minacce
 
-Se l'abbonamento dell'organizzazione include  [Office 365 Advanced Threat Protection Plan 2](office-365-ti.md), il dashboard di sicurezza ha una sezione che include l'analisi avanzata delle minacce e gli strumenti di risposta. Questi strumenti includono le [funzionalità di analisi e risposta automatizzate](automated-investigation-response-office.md). L'analisi e la risposta automatizzate possono essere utili in scenari quali l' [indirizzamento rapido degli account utente compromessi](address-compromised-users-quickly.md).
+Se l'abbonamento dell'organizzazione include  [Microsoft Defender per Office 365 piano 2](office-365-ti.md), nel dashboard di sicurezza è presente una sezione che include l'analisi avanzata delle minacce e gli strumenti di risposta. Questi strumenti includono le [funzionalità di analisi e risposta automatizzate](automated-investigation-response-office.md). L'analisi e la risposta automatizzate possono essere utili in scenari quali l' [indirizzamento rapido degli account utente compromessi](address-compromised-users-quickly.md).
 
 Per ulteriori informazioni, vedere [Introduzione all'analisi automatizzata e alla risposta (Air) in Office 365](office-365-air.md).
 
@@ -115,9 +115,9 @@ Nella parte inferiore del dashboard di sicurezza è presente una sezione **Trend
 
 ![La sezione Trends riepiloga le tendenze del flusso di posta elettronica per l'organizzazione](../../media/trends.png)
 
-Inoltre, se la sottoscrizione dell'organizzazione include [Office 365 Advanced Threat Protection Plan 2](office-365-ti.md), in questa sezione è disponibile anche un rapporto di **avvisi sulla gestione delle minacce** che consente al team di sicurezza di visualizzare e intervenire su avvisi di sicurezza ad alta priorità.
+Inoltre, se la sottoscrizione dell'organizzazione include il [difensore per Office 365 piano 2](office-365-ti.md), è disponibile un rapporto di **avvisi di gestione delle minacce recente** in questa sezione che consente al team di sicurezza di visualizzare e intervenire su avvisi di sicurezza ad alta priorità.
 
-Per visualizzare o accedere al widget messaggi di posta elettronica inviati e ricevuti, è necessario disporre delle autorizzazioni per visualizzare i report di Advanced Threat Protection. Per ulteriori informazioni, vedere [quali autorizzazioni sono necessarie per visualizzare i rapporti ATP?](view-reports-for-atp.md#what-permissions-are-needed-to-view-the-atp-reports).
+Per visualizzare o accedere al widget messaggi di posta elettronica inviati e ricevuti, è necessario disporre delle autorizzazioni per visualizzare i report di Defender per Office 365. Per ulteriori informazioni, vedere [quali autorizzazioni sono necessarie per visualizzare i report del difensore per Office 365?](view-reports-for-atp.md#what-permissions-are-needed-to-view-the-defender-for-office-365-reports).
 
 Per visualizzare o accedere al widget recenti avvisi di gestione delle minacce, è necessario disporre delle autorizzazioni per visualizzare gli avvisi. Per ulteriori informazioni, vedere le [autorizzazioni RBAC necessarie per visualizzare gli avvisi](../../compliance/alert-policies.md#rbac-permissions-required-to-view-alerts).
 
@@ -125,8 +125,8 @@ Per visualizzare o accedere al widget recenti avvisi di gestione delle minacce, 
 
 [Visualizzare i report sulla sicurezza della posta elettronica nel Centro sicurezza e conformità](view-email-security-reports.md)
 
-[Visualizzare i report per Office 365 Advanced Threat Protection](view-reports-for-atp.md)
+[Visualizzare i report per Microsoft Defender per Office 365](view-reports-for-atp.md)
 
-[Office 365 Advanced Threat Protection](office-365-atp.md)
+[Defender per Office 365](office-365-atp.md)
 
 [Indagine e risposta alle minacce di Office 365](office-365-ti.md)

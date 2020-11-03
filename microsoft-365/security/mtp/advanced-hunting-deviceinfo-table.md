@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 966f329d1d3ce374cc3eed9eccb6c337071f4ee1
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: 1bb48b4332bc9d60de15bb513f04a503d6a6913b
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48430080"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48842715"
 ---
 # <a name="deviceinfo"></a>DeviceInfo
 
@@ -32,7 +32,7 @@ ms.locfileid: "48430080"
 
 
 **Si applica a:**
-- Microsoft Threat Protection
+- Microsoft 365 Defender
 
 
 
@@ -46,7 +46,7 @@ Per informazioni su altre tabelle nello schema per Ricerca avanzata, [vedere il 
 | `DeviceId` | stringa | Identificatore univoco per il computer nel servizio |
 | `DeviceName` | stringa | Nome di dominio completo (FQDN) del computer |
 | `ClientVersion` | stringa | Versione dell'agente endpoint o del sensore in esecuzione nel computer |
-| `PublicIP` | stringa | Indirizzo IP pubblico utilizzato dal computer onboarded per la connessione al servizio ATP Microsoft Defender. Questo potrebbe essere l'indirizzo IP del computer stesso, un dispositivo NAT o un proxy |
+| `PublicIP` | stringa | Indirizzo IP pubblico utilizzato dal computer onboarded per la connessione al servizio Microsoft Defender per endpoint. Questo potrebbe essere l'indirizzo IP del computer stesso, un dispositivo NAT o un proxy |
 | `OSArchitecture` | stringa | Architettura del sistema operativo in esecuzione sul computer |
 | `OSPlatform` | stringa | Piattaforma del sistema operativo in esecuzione sul computer. Questo indica sistemi operativi specifici, tra cui le varianti all'interno della stessa famiglia, ad esempio Windows 10 e Windows 7 |
 | `OSBuild` | stringa | Versione di compilazione del sistema operativo in esecuzione nel computer |

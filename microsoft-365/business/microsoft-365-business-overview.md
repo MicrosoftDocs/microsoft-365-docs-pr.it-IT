@@ -29,12 +29,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Informazioni su Microsoft 365 Business Premium, un servizio in abbonamento che include le app di produttività di Office e funzionalità di protezione avanzata dalle minacce informatiche.
-ms.openlocfilehash: 50b1fec21593bd22577e07e000cedb89dfd90f66
-ms.sourcegitcommit: f7566dd6010744c72684efdc37f4471672330b61
+ms.openlocfilehash: e67ae036bf3ce7811f19c8745838bb51dde073ea
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "45138229"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48842181"
 ---
 # <a name="overview-of-microsoft-365-business-premium"></a>Panoramica di Microsoft 365 Business Premium
 
@@ -71,11 +71,11 @@ Microsoft 365 Business Premium aiuta a proteggere i dati in tutte queste circost
 
 Microsoft 365 Business Premium aiuta a **difendersi dalle minacce** mediante:
 
-- Analisi in tempo reale dei collegamenti in messaggi di posta elettronica e documenti per bloccare i siti Web non sicuri (Collegamenti sicuri ATP).
+- Scansione dei collegamenti nei messaggi di posta elettronica e nei documenti in tempo reale per bloccare siti Web non sicuri (collegamenti sicuri).
 
-- Analisi avanzata degli allegati di posta elettronica in ambiente sandbox per rilevare il nuovo malware (Allegati sicuri ATP). 
+- Esecuzione di analisi avanzate degli allegati di posta elettronica in un ambiente sandbox per rilevare malware di recente sviluppo (allegati sicuri). 
 
-- Abilitazione di criteri anti-phishing che usano modelli di Machine Learning e rilevamento delle imitazioni per offrire protezione dagli attacchi avanzati (intelligence anti-phishing ATP). 
+- Abilitazione dei criteri di anti-phishing che utilizzano modelli di apprendimento automatico e rilevamento della rappresentazione per garantire la protezione da attacchi avanzati (anti-phishing in Defender per Office 365 Intelligence). 
 
 - Configurazione di criteri avanzati che disabilitano l'accesso da posizioni non attendibili o escludono l'autenticazione a più fattori da posizioni attendibili, ad esempio la rete dell'ufficio (Azure MFA con IP attendibili e accesso condizionale). 
 

@@ -1,5 +1,5 @@
 ---
-title: Tag utente in Office 365 ATP
+title: Tag utente in Microsoft Defender per Office 365
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -14,25 +14,25 @@ search.appverid:
 - MET150
 ms.collection:
 - M365-security-compliance
-description: Gli amministratori possono imparare a identificare gruppi specifici di utenti con tag utente in Office 365 ATP piano 2. Il filtro tag è disponibile tra gli avvisi, i report e le indagini di Office 365 ATP per identificare rapidamente gli utenti contrassegnati.
-ms.openlocfilehash: 475bf976a71fb688df8db9ac25f3b397c078d79a
-ms.sourcegitcommit: 260c69fa31a898428d51cfdbd762c5f0213c403c
+description: Gli amministratori possono sapere come identificare gruppi specifici di utenti con tag utente in Microsoft Defender per Office 365 piano 2. Il filtro tag è disponibile tra gli avvisi, i report e le indagini in Microsoft Defender per Office 365 per identificare rapidamente gli utenti contrassegnati.
+ms.openlocfilehash: fcc13a04ed603712bb2a45ccaadbaf161702c502
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "48417281"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48842881"
 ---
-# <a name="user-tags-in-office-365-atp"></a>Tag utente in Office 365 ATP
+# <a name="user-tags-in-microsoft-defender-for-office-365"></a>Tag utente in Microsoft Defender per Office 365
 
 > [!NOTE]
 > La funzionalità tag utente è in anteprima, non è disponibile per tutti, ed è soggetta a modifiche. Per informazioni sulla pianificazione dei rilasci, vedere la Guida di [orientamento di Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap).
 
-I tag utente sono identificatori di gruppi specifici di utenti in [Office 365 Advanced Threat Protection (ATP)](office-365-atp.md). Sono disponibili due tipi di tag utente:
+I tag utente sono identificatori di gruppi specifici di utenti in [Defender per Office 365](office-365-atp.md). Sono disponibili due tipi di tag utente:
 
-- **Tag di sistema**: attualmente, gli [account di priorità](https://docs.microsoft.com/microsoft-365/admin/setup/priority-accounts) sono l'unico tipo di tag di sistema.
-- **Tag personalizzati**: creare personalmente questi tag utente.
+- **Tag di sistema** : attualmente, gli [account di priorità](https://docs.microsoft.com/microsoft-365/admin/setup/priority-accounts) sono l'unico tipo di tag di sistema.
+- **Tag personalizzati** : creare personalmente questi tag utente.
 
-Se l'organizzazione dispone di Office 365 ATP piano 2 (incluso nell'abbonamento o come componente aggiuntivo), è possibile creare tag utente personalizzati oltre a utilizzare il tag account prioritari.
+Se l'organizzazione dispone di un difensore per Office 365 piano 2 (incluso nell'abbonamento o come componente aggiuntivo), è possibile creare tag utente personalizzati oltre a utilizzare il tag account prioritari.
 
 Dopo aver applicato i tag di sistema o i tag personalizzati agli utenti, è possibile utilizzare tali tag come filtri in avvisi, rapporti ed indagini:
 
@@ -43,11 +43,11 @@ Dopo aver applicato i tag di sistema o i tag personalizzati agli utenti, è poss
 
 In questo articolo viene illustrato come configurare i tag utente nel centro sicurezza & Compliance. Non sono presenti cmdlet nel centro sicurezza & conformità per la gestione dei tag utente.
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare
+## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare?
 
 - Aprire il Centro sicurezza e conformità in <https://protection.office.com/>. Per passare direttamente alla pagina **tag utente** , Apri <https://protection.office.com/userTags> .
 
-- Per creare, modificare o rimuovere **tag utente personalizzati**, è necessario essere membri dei gruppi di ruoli **Gestione organizzazione** o **amministratore sicurezza** nel centro sicurezza & conformità. Per altre informazioni, vedere [Autorizzazioni nel Centro sicurezza e conformità](permissions-in-the-security-and-compliance-center.md).
+- Per creare, modificare o rimuovere **tag utente personalizzati** , è necessario essere membri dei gruppi di ruoli **Gestione organizzazione** o **amministratore sicurezza** nel centro sicurezza & conformità. Per altre informazioni, vedere [Autorizzazioni nel Centro sicurezza e conformità](permissions-in-the-security-and-compliance-center.md).
 
 - Per configurare gli account prioritari (tag di sistema), è necessario essere un [amministratore globale](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#global-administrator--company-administrator) o un [amministratore di Exchange](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#exchange-administrator).
 
@@ -55,15 +55,15 @@ In questo articolo viene illustrato come configurare i tag utente nel centro sic
 
 ## <a name="use-the-security-center-to-create-user-tags"></a>Utilizzare il Centro sicurezza per creare tag utente
 
-1. Nel centro sicurezza accedere a **Threat management** \> **tag utente**di gestione delle minacce.
+1. Nel centro sicurezza accedere a **Threat management** \> **tag utente** di gestione delle minacce.
 
 2. Nella pagina **tag utente** visualizzata, fare clic su **Crea tag**.
 
 3. La creazione guidata **tag** viene aperta in un nuovo volo. Nella pagina **Definisci Tag** configurare le seguenti impostazioni:
 
-   - **Nome**: immettere un nome descrittivo univoco per il tag. Questo è il valore che verrà visualizzato e utilizzato.
+   - **Nome** : immettere un nome descrittivo univoco per il tag. Questo è il valore che verrà visualizzato e utilizzato.
 
-   - **Descrizione**: immettere una descrizione facoltativa per il tag.
+   - **Descrizione** : immettere una descrizione facoltativa per il tag.
 
    Al termine dell'operazione, fare clic su **Avanti**.
 
@@ -89,7 +89,7 @@ In questo articolo viene illustrato come configurare i tag utente nel centro sic
 
 ## <a name="use-the-security-center-to-view-user-tags"></a>Utilizzare il Centro sicurezza per visualizzare i tag utente
 
-1. Nel centro sicurezza accedere a **Threat management** \> **tag utente**di gestione delle minacce.
+1. Nel centro sicurezza accedere a **Threat management** \> **tag utente** di gestione delle minacce.
 
 2. Nella pagina **tag utente** che viene visualizzata, selezionare il tag utente che si desidera visualizzare (non fare clic sulla casella di controllo).
 
@@ -99,7 +99,7 @@ In questo articolo viene illustrato come configurare i tag utente nel centro sic
 
 ## <a name="use-the-security-center-to-modify-user-tags"></a>Utilizzare il Centro sicurezza per modificare i tag utente
 
-1. Nel centro sicurezza accedere a **Threat management** \> **tag utente**di gestione delle minacce.
+1. Nel centro sicurezza accedere a **Threat management** \> **tag utente** di gestione delle minacce.
 
 2. Nella pagina **tag utente** che viene visualizzata, selezionare il tag utente che si desidera visualizzare e quindi fare clic su **Modifica tag**.
 
@@ -109,8 +109,8 @@ In questo articolo viene illustrato come configurare i tag utente nel centro sic
 
 ## <a name="use-the-security-center-to-remove-user-tags"></a>Utilizzare il Centro sicurezza per rimuovere i tag utente
 
-**Nota**: non è possibile rimuovere il tag dell' **account prioritario** incorporato.
+**Nota** : non è possibile rimuovere il tag dell' **account prioritario** incorporato.
 
-1. Nel centro sicurezza accedere a **Threat management** \> **tag utente**di gestione delle minacce.
+1. Nel centro sicurezza accedere a **Threat management** \> **tag utente** di gestione delle minacce.
 
-2. Nella pagina **tag utente** che viene visualizzata, selezionare il tag utente che si desidera rimuovere, fare clic su **Elimina tag**, quindi selezionare **Sì, Rimuovi** nell'avviso che viene visualizzato.
+2. Nella pagina **tag utente** che viene visualizzata, selezionare il tag utente che si desidera rimuovere, fare clic su **Elimina tag** , quindi selezionare **Sì, Rimuovi** nell'avviso che viene visualizzato.

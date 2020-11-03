@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: a7d79684a085072e1af113bc0466ab26574ab904
-ms.sourcegitcommit: c51de5e1a4cb9c4a7a9854a4226b32453d9e73e0
+ms.openlocfilehash: d63994778762968962b2a32f026dbb81af39b664
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "48779229"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48843817"
 ---
 # <a name="whats-new-in-microsoft-secure-score"></a>Novità di Microsoft Secure Score
 
@@ -35,7 +35,7 @@ Per rendere Microsoft Secure Score un migliore rappresentante della posizione di
 
 ## <a name="october-2020"></a>Ottobre 2020
 
-### <a name="remove-improvement-action-related-to-microsoft-defender-advanced-threat-protection"></a>Rimuovere l'azione di miglioramento relativa a Microsoft Defender Advanced Threat Protection
+### <a name="remove-improvement-action-related-to-microsoft-defender-for-endpoint"></a>Rimuovere l'azione di miglioramento relativa a Microsoft Defender per endpoint
 
 - Impostare Microsoft Defender SmartScreen app di Windows Store per il controllo del contenuto Web per l'avviso
 
@@ -54,8 +54,8 @@ Nel tempo, il Punteggio di sicurezza dell'identità e l'API del grafico adottera
 ## <a name="updated-improvement-actions"></a>Azioni di miglioramento aggiornate
 
 - Aggiunta delle azioni di miglioramento di Azure Active Directory
-- Aggiunta delle azioni di miglioramento di Azure Advanced Threat Protection
-- Supporto per le indicazioni sulla sicurezza del trifosfato di adenosina di Microsoft Defender [& vulnerabilità](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)
+- Aggiunta di Microsoft Defender per azioni di miglioramento dell'identità
+- Supporto di Microsoft Defender per la [minaccia](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt) di endpoint & le indicazioni sulla sicurezza per la gestione delle vulnerabilità
     - Tutti i consigli di sicurezza rilasciati forniti da TVM sono ora disponibili
 
 ## <a name="updated-interface-and-functionality"></a>Interfaccia e funzionalità aggiornate

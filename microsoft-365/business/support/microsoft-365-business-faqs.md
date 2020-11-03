@@ -1,6 +1,6 @@
 ---
-title: Domande frequenti su Microsoft 365 Business Premium 
-description: Trovare le risposte alle più domande frequenti su Microsoft 365 Business, una nuova soluzione progettata per le piccole e medie imprese (PMI). 
+title: Domande frequenti su Microsoft 365 Business Premium
+description: Trovare le risposte alle più domande frequenti su Microsoft 365 Business, una nuova soluzione progettata per le piccole e medie imprese (PMI).
 author: Sirkkuw
 f1.keywords:
 - NOCSH
@@ -10,15 +10,15 @@ ms.prod: microsoft-365-business
 ms.collection: M365-subscription-management
 ms.custom: AdminSurgePortfolio
 localization_priority: Normal
-audience: microsoft-business 
+audience: microsoft-business
 keywords: Microsoft 365 Business Premium, Microsoft 365, PMI, FAQ, domande frequenti, risposte, business
 ms.date: 07/21/2020
-ms.openlocfilehash: a8547240a2733a10730d0f8fb62fe8e8c7ef971c
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: b117f0aecb76dc3b30a30e067c37328865eb0fdf
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47948569"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48842111"
 ---
 # <a name="microsoft-365-business-premium-frequently-asked-questions"></a>Domande frequenti su Microsoft 365 Business Premium
 
@@ -27,15 +27,15 @@ ms.locfileid: "47948569"
 ### <a name="what-is-microsoft-365-business-premium"></a>Che cos'è Microsoft 365 Business Premium?
 Microsoft 365 è una soluzione integrata che riunisce gli strumenti di produttività migliori della categoria e le funzionalità di gestione dispositivi e sicurezza per le piccole e medie imprese. Include:
 
-**Un insieme di strumenti di produttività e collaborazione aziendali**:
+**Un insieme di strumenti di produttività e collaborazione aziendali** :
 
 - Word, Excel, PowerPoint, Outlook, OneNote, Publisher e Access
 - Exchange, OneDrive, Skype for Business, Microsoft Teams e SharePoint.
 - App aziendali di Office (Bookings, MileIQ<sup>[1](#footnote1)</sup>).
 
-**Funzionalità di sicurezza e gestione dei dispositivi di livello aziendale**:
+**Funzionalità di sicurezza e gestione dei dispositivi di livello aziendale** :
 
-- Aiuta a garantire la protezione da minacce esterne come il phishing e il malware sofisticato con Office 365 Advanced Threat Protection Plan 1 e Microsoft Defender exploit Guard.
+- Aiuta a garantire la protezione da minacce esterne come il phishing e il malware sofisticato con Microsoft Defender per Office 365 piano 1 e Microsoft Defender exploit Guard.
 - Controllo e gestione della modalità di accesso e della trasmissione delle informazioni riservate con i criteri di prevenzione della perdita di dati e Azure Information Protection piano 1.
 - Protezione, gestione e backup dei dati con Archiviazione Exchange Online.
 - Protezione delle app per Office e altre app per dispositivi mobili con Protezione app di Intune.
@@ -43,14 +43,14 @@ Microsoft 365 è una soluzione integrata che riunisce gli strumenti di produttiv
 - Protezione delle identità con l'autenticazione a più fattori, la reimpostazione della password in modalità self-service e l'accesso condizionale.
 - Configurazione di sicurezza coerente tra &mdash; i dispositivi per la protezione dei dati aziendali tra i dispositivi; Microsoft Defender Antivirus, che è sempre attivo e aggiornato.
 
-**Distribuzione semplificata del dispositivo e installazione degli utenti**:
+**Distribuzione semplificata del dispositivo e installazione degli utenti** :
 
 - Console di amministrazione singola per configurare e gestire utenti e dispositivi
 - Installazione automatica di app di Office su PC Windows 10.
 - Office e Windows 10 sempre aggiornati.
 - Distribuzione facilitata di PC con Windows AutoPilot.
 
-**Altri diritti**:
+**Altri diritti** :
 
 - I clienti di Microsoft 365 Business Premium hanno accesso anche a Desktop virtuale Windows e alle funzionalità di attivazione di computer condivisi per Office. Per altre informazioni, leggere il [blog di Microsoft 365 Business Premium](https://techcommunity.microsoft.com/t5/Microsoft-365-Business-Blog/bg-p/Microsoft365BusinessBlog). Vedere anche la [Descrizione del servizio Microsoft 365 for business](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-business-service-description).
 
@@ -156,7 +156,7 @@ Il percorso più diretto per una corretta distribuzione di Microsoft 365 Busines
 
 ### <a name="does-microsoft-365-business-premium-include-the-full-capabilities-of-microsoft-intune"></a>Microsoft 365 Business Premium include tutte le funzionalità di Microsoft Intune?
 
-Sì, gli abbonati Microsoft 365 Business Premium sono concessi in licenza per utilizzare le funzionalità di Intune complete per iOS, Android, macOS e altre gestione dei dispositivi Cross-Platform. Le funzionalità non disponibili nella console di gestione semplificata in Microsoft 365 Business Premium, come la gestione delle app di terze parti, la configurazione dei profili Wi-Fi e i certificati VPN, possono essere gestite nella console Full Intune.
+Sì, gli abbonati Microsoft 365 Business Premium sono concessi in licenza per utilizzare le funzionalità di Intune complete per iOS, Android, macOS e altre gestione dei dispositivi Cross-Platform. Le funzionalità non disponibili nella console di gestione semplificata in Microsoft 365 Business Premium, come la gestione delle app di terze parti, la configurazione dei profili di Wi-Fi e i certificati VPN, possono essere gestite nella console Full Intune.
 
 ### <a name="does-azure-active-directory-azure-ad-premium-p1-come-with-microsoft-365-business-premium"></a>Azure Active Directory (Azure AD) Premium P1 è dotato di Microsoft 365 Business Premium?
 
@@ -180,9 +180,9 @@ Tutti i componenti aggiuntivi che possono essere aggiunti a Microsoft 365 Busine
 
 Sì, è possibile acquistare un abbonamento a una segreteria telefonica. [Business Voice](https://docs.microsoft.com/microsoftteams/business-voice/whats-business-voice) è una soluzione di telefonia progettata per aziende di piccole e medie dimensioni, con un massimo di 300 utenti che bundle sistema telefonico, audioconferenza, un piano per le chiamate nazionali e altro ancora. Le funzionalità del sistema telefonico che si otterranno includono segreteria telefonica, ID chiamante, parcheggio di chiamata, inoltro di chiamata, operatori automatici e code di chiamata. <br> Per sapere se Business Voice è disponibile nel proprio paese o nella propria area geografica, vedere [disponibilità dei paesi e delle aree](https://docs.microsoft.com/microsoftteams/business-voice/country-region-availability)geografiche per le aziende. Per informazioni sui prezzi, vedere [Pricing for Business Voice](https://go.microsoft.com/fwlink/?linkid=2127221).
 
-### <a name="can-microsoft-365-business-premium-customers-use--microsoft-defender-advanced-threat-protection"></a>I clienti di 365 Microsoft Business Premium possono utilizzare Microsoft Defender Advanced Threat Protection?
+### <a name="can-microsoft-365-business-premium-customers-use-microsoft-defender-for-endpoint"></a>È possibile che i clienti Microsoft 365 Business Premium utilizzino Microsoft Defender per endpoint?
 
-Sì, Microsoft Defender Advanced Threat Protection è disponibile come componente aggiuntivo di Microsoft 365 Business Premium quando è stato acquistato da un [provider di soluzioni cloud Microsoft](https://partner.microsoft.com/membership/cloud-solution-provider/find-a-provider).
+Sì, Microsoft Defender per endpoint è disponibile come componente aggiuntivo di Microsoft 365 Business Premium quando è stato acquistato da un [provider di soluzioni cloud Microsoft](https://partner.microsoft.com/membership/cloud-solution-provider/find-a-provider).
 
 ## <a name="partner-opportunity"></a>Opportunità per i partner
 
@@ -224,7 +224,7 @@ Microsoft 365 Business Premium non trasforma una versione di Windows non origina
 
 ### <a name="what-is-the-gdpr-and-how-does-microsoft-365-business-premium-help-customers-with-their-compliance-obligations"></a>Che cos'è il GDPR e in che modo Microsoft 365 Business Premium aiuta i clienti con i propri obblighi di conformità?
 
-Il Regolamento generale sulla protezione dei dati (GDPR) è una nuova e completa legge sulla privacy che fornisce agli utenti residenti nell'Unione Europea un controllo maggiore sui "dati personali" e obbliga le organizzazioni a mantenere l'integrità di tali dati. Il GDPR richiede che le organizzazioni che controllano o trattano i dati personali dei residenti nell'UE si servano solo di responsabili del trattamento terzi che soddisfano i requisiti previsti nel GDPR stesso in merito all'elaborazione dei dati personali. Nel marzo 2017 Microsoft ha reso disponibili garanzie contrattuali che forniscono tali assicurazioni. I clienti che hanno domande su come Microsoft può aiutarli a soddisfare gli ulteriori obblighi del Regolamento generale sulla protezione dei dati dovrebbero acquisire conoscenze sulle funzionalità di sicurezza e conformità avanzate disponibili in Microsoft 365 Business Premium (ad esempio Azure Information Protection, prevenzione della perdita di dati, Advanced Threat Protection e così via) e in altre famiglie di prodotti (ad esempio, Microsoft 365 Enterprise E5). Per altre informazioni, visitare [www.microsoft.com/gdpr](https://www.microsoft.com/gdpr).
+Il Regolamento generale sulla protezione dei dati (GDPR) è una nuova e completa legge sulla privacy che fornisce agli utenti residenti nell'Unione Europea un controllo maggiore sui "dati personali" e obbliga le organizzazioni a mantenere l'integrità di tali dati. Il GDPR richiede che le organizzazioni che controllano o trattano i dati personali dei residenti nell'UE si servano solo di responsabili del trattamento terzi che soddisfano i requisiti previsti nel GDPR stesso in merito all'elaborazione dei dati personali. Nel marzo 2017 Microsoft ha reso disponibili garanzie contrattuali che forniscono tali assicurazioni. I clienti che hanno domande sul modo in cui Microsoft può aiutarli a soddisfare gli obblighi di GDPR aggiuntivi devono conoscere le funzionalità di sicurezza e conformità avanzate disponibili in Microsoft 365 Business Premium (ad esempio, Azure Information Protection, prevenzione della perdita di dati, protezione per Office 365 e così via) e in altre suite (ad esempio, Microsoft 365 Enterprise E5). Per altre informazioni, visitare [www.microsoft.com/gdpr](https://www.microsoft.com/gdpr).
 
 ## <a name="footnotes"></a>Note a piè di pagina
 

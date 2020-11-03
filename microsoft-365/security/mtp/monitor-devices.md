@@ -17,12 +17,12 @@ ms.collection:
 ms.topic: article
 search.appverid: met150
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 9b84ca774e1b9bd0bca51b8ee21f6a06f2fde5b4
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: 92760ef14fb1192e4462bab656e22f3595f9b449
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48430622"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48843865"
 ---
 # <a name="device-monitoring-and-reporting-in-the-microsoft-365-security-center"></a>Monitoraggio e Reporting dei dispositivi nel centro sicurezza Microsoft 365
 
@@ -33,11 +33,11 @@ Mantenere i dispositivi sicuri, aggiornati e individuare potenziali minacce nel 
 
 ## <a name="view-device-alerts"></a>Visualizzare gli avvisi per i dispositivi
 
-Ottenere avvisi aggiornati sull'attività di violazione e altre minacce sui dispositivi da Microsoft Defender ATP (disponibile con una licenza E5). Microsoft 365 Security Center monitora efficacemente gli avvisi a un livello elevato utilizzando il flusso di lavoro preferito.
+Ottenere avvisi aggiornati sull'attività di violazione e altre minacce sui dispositivi da Microsoft Defender per endpoint (disponibile con una licenza E5). Microsoft 365 Security Center monitora efficacemente gli avvisi a un livello elevato utilizzando il flusso di lavoro preferito.
 
 ### <a name="monitor-high-impact-alerts"></a>Monitorare gli avvisi ad impatto elevato
 
-Ogni avviso del trifosfato di adenosina di Microsoft Defender ha un livello di gravità corrispondente (alto, medio, basso o informativo). Indica un impatto potenziale per la rete se non è presente.  
+Ogni avviso di Microsoft Defender per endpoint ha un livello di gravità corrispondente (alto, medio, basso o informativo). Indica un impatto potenziale per la rete se non è presente.  
 
 Utilizzare la scheda **gravità avviso dispositivo** per concentrarsi in modo specifico sugli avvisi più gravi e potrebbe richiedere una risposta immediata. Da questa scheda, è possibile visualizzare altre informazioni sul portale Microsoft Defender Security Center.
 
@@ -45,7 +45,7 @@ Utilizzare la scheda **gravità avviso dispositivo** per concentrarsi in modo sp
 
 ### <a name="understand-sources-of-alerts"></a>Informazioni sulle origini degli avvisi
 
-Microsoft Defender ATP utilizza i dati provenienti da una vasta gamma di sensori di sicurezza e fonti di intelligence per generare avvisi. Ad esempio, è possibile utilizzare le informazioni di rilevamento di Microsoft Defender Antivirus e di terze parti antimalware. È inoltre possibile utilizzare la propria Intelligence di minacce personalizzata fornita tramite l'API del servizio Web.
+Microsoft Defender for endpoint utilizza i dati di una vasta gamma di sensori di sicurezza e fonti di intelligence per generare avvisi. Ad esempio, è possibile utilizzare le informazioni di rilevamento di Microsoft Defender Antivirus e di terze parti antimalware. È inoltre possibile utilizzare la propria Intelligence di minacce personalizzata fornita tramite l'API del servizio Web.
 
 La scheda fonti di **rilevamento avvisi dispositivo** Visualizza la distribuzione degli avvisi per origine. Monitorare le attività relative a determinate origini, in particolare le origini personalizzate. È inoltre possibile utilizzare la scheda per concentrarsi sugli avvisi provenienti da sensori che non sono configurati per bloccare automaticamente le attività o i componenti dannosi.
 
@@ -55,7 +55,7 @@ Da questa scheda, è possibile visualizzare altre informazioni sul portale Micro
 
 ### <a name="understand-the-types-of-threats-that-trigger-alerts"></a>Comprendere i tipi di minacce che attivano gli avvisi
 
-Microsoft Defender ATP Ordina ogni avviso in una categoria che rappresenta una determinata fase della catena di attacco o del tipo di componente di minaccia. Ad esempio, un'attività di minacce rilevata potrebbe essere categorizzata come "movimento laterale" per indicare che si è verificato un tentativo di raggiungere altri dispositivi sulla rete. L'attività è probabile che si verifichi dopo che gli aggressori hanno acquisito un punto di appoggio iniziale. Una volta rilevato, un componente di rischio può essere classificato in senso lato come malware o in modo specifico come tipo di minaccia specifico. Le specifiche includono ransomware, furto di credenziali o altri tipi di software dannoso o indesiderato.
+Microsoft Defender for endpoint Ordina ogni avviso in una categoria che rappresenta una determinata fase della catena di attacco o del tipo di componente di minaccia. Ad esempio, un'attività di minacce rilevata potrebbe essere categorizzata come "movimento laterale" per indicare che si è verificato un tentativo di raggiungere altri dispositivi sulla rete. L'attività è probabile che si verifichi dopo che gli aggressori hanno acquisito un punto di appoggio iniziale. Una volta rilevato, un componente di rischio può essere classificato in senso lato come malware o in modo specifico come tipo di minaccia specifico. Le specifiche includono ransomware, furto di credenziali o altri tipi di software dannoso o indesiderato.
 
 La scheda **categorie minacce dispositivo** Visualizza la distribuzione degli avvisi in queste categorie. Utilizzare queste informazioni per identificare le attività di minacce, ad esempio i tentativi di furto di credenziali, che in genere hanno un impatto maggiore rispetto ai tentativi di social engineering. È inoltre possibile eseguire il monitoraggio di minacce potenzialmente distruttive come ransomware.
 
@@ -69,7 +69,7 @@ La scheda **stato avviso dispositivo** indica il numero di avvisi che non sono s
 
 ### <a name="monitor-classification-of-resolved-alerts"></a>Monitorare la classificazione degli avvisi risolti
 
-Durante la risoluzione di un avviso di Microsoft Defender ATP, il personale di sicurezza può specificare se un avviso è stato verificato come:
+Durante la risoluzione di un avviso di Microsoft Defender per endpoint, il personale di sicurezza può specificare se un avviso è stato verificato come:
 
 * Un avviso vero che identifica le attività di violazione effettive o i componenti di minaccia
 * Un falso avviso che ha rilevato erroneamente attività normale
@@ -86,12 +86,12 @@ Insieme alla classificazione se un avviso è vero o falso durante la risoluzione
 
 La scheda di **determinazione dell'avviso del dispositivo** Visualizza la determinazione fornita per ogni avviso.
 
-* **Apt**: Advanced Persistent Threat, che indica che l'attività rilevata o il componente di minaccia è parte di una sofisticata violazione progettata per ottenere un punto di appoggio nella rete in questione  
-* **Malware**: file o codice dannoso
-* **Personale di sicurezza**: attività normale eseguita dal personale della sicurezza
-* **Test di sicurezza**: attività o componenti studiati per simulare le minacce effettive e prevedere l'attivazione di sensori di sicurezza e generare avvisi
-* **Software indesiderato**: app e altri software che non sono considerati dannosi, ma violano in altro modo i criteri o gli standard di utilizzo accettabili
-* **Altri**: qualsiasi altra determinazione che non rientra nei tipi forniti
+* **Apt** : Advanced Persistent Threat, che indica che l'attività rilevata o il componente di minaccia è parte di una sofisticata violazione progettata per ottenere un punto di appoggio nella rete in questione  
+* **Malware** : file o codice dannoso
+* **Personale di sicurezza** : attività normale eseguita dal personale della sicurezza
+* **Test di sicurezza** : attività o componenti studiati per simulare le minacce effettive e prevedere l'attivazione di sensori di sicurezza e generare avvisi
+* **Software indesiderato** : app e altri software che non sono considerati dannosi, ma violano in altro modo i criteri o gli standard di utilizzo accettabili
+* **Altri** : qualsiasi altra determinazione che non rientra nei tipi forniti
 
 Da questa scheda, è possibile visualizzare altre informazioni in Microsoft Defender Security Center.
 
@@ -162,9 +162,9 @@ La scheda **Regole per la riduzione della superficie di attacco** fornisce una p
 
 La barra superiore della scheda mostra il numero totale di dispositivi che si trovano nelle modalità di distribuzione seguenti:
 
-* **Modalità di blocco**: dispositivi con almeno una regola configurata per bloccare l'attività rilevata
-* **Modalità di controllo**: i dispositivi con nessuna regola impostata per bloccare l'attività rilevata, ma hanno almeno un set di regole per il controllo dell'attività rilevata  
-* **Disattivato**: i dispositivi con tutte le regole di ASR sono disattivati
+* **Modalità di blocco** : dispositivi con almeno una regola configurata per bloccare l'attività rilevata
+* **Modalità di controllo** : i dispositivi con nessuna regola impostata per bloccare l'attività rilevata, ma hanno almeno un set di regole per il controllo dell'attività rilevata  
+* **Disattivato** : i dispositivi con tutte le regole di ASR sono disattivati
 
 La parte inferiore della scheda mostra le impostazioni per ciascuna regola in tutti i dispositivi. Ogni barra indica il numero di dispositivi impostati per il blocco, il rilevamento di controllo o la regola completamente disattivata.
 
@@ -176,10 +176,10 @@ Per visualizzare informazioni dettagliate sui rilevamenti delle regole di ASR ne
 
 Il grafico nella parte superiore della pagina Visualizza rilevamenti nel tempo di rilevamenti di sovrapposizione che sono stati bloccati o controllati. La tabella in basso elenca i rilevamenti più recenti. Utilizzare le informazioni seguenti nella tabella per comprendere la natura dei rilevamenti:
 
-* **File rilevato**: il file, in genere uno script o un documento, il cui contenuto ha attivato l'attività di attacco sospetta
-* **Regola**: nome che descrive le attività di attacco la regola è progettata per essere intercettata. Leggere le regole ASR esistenti
-* **App di origine**: l'applicazione che ha caricato o eseguito contenuto che attiva l'attività di attacco sospetta. Potrebbe essere un'applicazione legittima, ad esempio il Web browser, un'applicazione di Office o uno strumento di sistema come PowerShell.
-* **Publisher**: il fornitore che ha rilasciato l'app di origine
+* **File rilevato** : il file, in genere uno script o un documento, il cui contenuto ha attivato l'attività di attacco sospetta
+* **Regola** : nome che descrive le attività di attacco la regola è progettata per essere intercettata. Leggere le regole ASR esistenti
+* **App di origine** : l'applicazione che ha caricato o eseguito contenuto che attiva l'attività di attacco sospetta. Potrebbe essere un'applicazione legittima, ad esempio il Web browser, un'applicazione di Office o uno strumento di sistema come PowerShell.
+* **Publisher** : il fornitore che ha rilasciato l'app di origine
 
 ### <a name="review-device-asr-rule-settings"></a>Esaminare le impostazioni della regola di ASR del dispositivo
 
@@ -207,7 +207,7 @@ Nella tabella sono elencati tutti i nomi di file rilevati dalle regole di riduzi
 
 Per ottenere un elenco dei file selezionati con i percorsi completi per l'esclusione, selezionare **Ottieni percorsi di esclusione**.
 
-Registri per la regola di ASR **Block Credential Stealing from the Windows Local Security Authority Subsystem (lsass.exe)** Capture the source app **lsass.exe**. Si tratta di un normale file di sistema, ma acquisito come file rilevato. Di conseguenza, l'elenco generato dei percorsi di esclusione includerà questo file. Per escludere il file che ha attivato questa regola anziché **lsass.exe**, utilizzare il percorso dell'applicazione di origine anziché del file rilevato.
+Registri per la regola di ASR **Block Credential Stealing from the Windows Local Security Authority Subsystem (lsass.exe)** Capture the source app **lsass.exe**. Si tratta di un normale file di sistema, ma acquisito come file rilevato. Di conseguenza, l'elenco generato dei percorsi di esclusione includerà questo file. Per escludere il file che ha attivato questa regola anziché **lsass.exe** , utilizzare il percorso dell'applicazione di origine anziché del file rilevato.
 
 Per individuare l'app di origine, eseguire la [query di ricerca avanzata](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting) seguente per questa regola specifica (identificata dalla regola ID 9e6c4e1f-7d60-472F-ba1a-a39ef669e4b2):
 

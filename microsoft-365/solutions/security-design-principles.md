@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 563972c458e77d96cf075f048dcee027bf29bc95
-ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
+ms.openlocfilehash: 9a1a0204f1c79ad1eab7d62adf45022d1d5bc035
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48399398"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48842799"
 ---
 # <a name="security-hurdles-you-can-sail-over--one-architects-viewpoint"></a>Ostacoli alla sicurezza in cui è possibile navigare, ovvero il punto di vista di un architetto
 
@@ -55,7 +55,7 @@ Per una configurazione consigliata, vedere [configurazioni di accesso a identit�
 
 Molti team di sicurezza utilizzano ancora le procedure consigliate per la sicurezza tradizionali create per un mondo tutto in locale, incluso il mantenimento di una "sicurezza del perimetro di rete" e il tentativo di "forzare" gli strumenti e i controlli di sicurezza su Cloud Solutions. Tali controlli non sono stati creati per il cloud, sono inefficaci e impediscono l'adozione di funzionalità cloud moderne. I processi e gli strumenti che funzionano per un approccio di sicurezza del perimetro di rete hanno dimostrato di essere inefficienti, ostruttivi nelle funzionalità del cloud e non consentono di sfruttare le funzionalità di sicurezza moderne e automatizzate.
 
-È possibile navigare su questo ostacolo spostando le strategie di difesa per la protezione gestita dal cloud, l'analisi automatizzata e la risoluzione dei problemi, il testing automatico della penna, la protezione avanzata dalle minacce e l'indagine sugli incidenti. I clienti che utilizzano moderne soluzioni di gestione dei dispositivi hanno implementato la gestione automatizzata, il patching standardizzato, l'antivirus, l'applicazione dei criteri e la protezione delle applicazioni su tutti i dispositivi (se si tratta di smartphone, personal computer, laptop o tablet). In questo modo viene eliminata la necessità di una VPN, di Microsoft System Center Configuration Manager (SCCM) e di criteri di gruppo di Active Directory. Questo, insieme ai criteri di accesso condizionale, fornisce un controllo e una visibilità potenti, nonché un accesso semplificato alle risorse indipendentemente dal luogo in cui operano gli utenti.
+È possibile navigare su questo ostacolo spostando le strategie di difesa per la protezione gestita dal cloud, l'analisi automatizzata e la risoluzione dei problemi, il testing automatico di penna, il difensore per Office 365 e la verifica degli incidenti. I clienti che utilizzano moderne soluzioni di gestione dei dispositivi hanno implementato la gestione automatizzata, il patching standardizzato, l'antivirus, l'applicazione dei criteri e la protezione delle applicazioni su tutti i dispositivi (se si tratta di smartphone, personal computer, laptop o tablet). In questo modo viene eliminata la necessità di una VPN, di Microsoft System Center Configuration Manager (SCCM) e di criteri di gruppo di Active Directory. Questo, insieme ai criteri di accesso condizionale, fornisce un controllo e una visibilità potenti, nonché un accesso semplificato alle risorse indipendentemente dal luogo in cui operano gli utenti.
 
 ## <a name="strive-for-best-together-security-tools"></a>Cercare gli strumenti di sicurezza ' migliori insieme '
 

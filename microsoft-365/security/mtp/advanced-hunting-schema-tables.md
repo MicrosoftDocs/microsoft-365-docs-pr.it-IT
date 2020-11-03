@@ -1,5 +1,5 @@
 ---
-title: Tabelle dati nello schema di ricerca avanzata di Microsoft Threat Protection
+title: Tabelle di dati nello schema di caccia avanzato di Microsoft 365 Defender
 description: Informazioni sulle tabelle nello schema di ricerca avanzata per comprendere i dati su cui è possibile eseguire query di ricerca delle minacce
 keywords: caccia avanzata, caccia alle minacce, Cyber Threat Hunting, Microsoft Threat Protection, Microsoft 365, MTP, M365, Search, query, telemetria, riferimento allo schema, kusto, Table, data
 search.product: eADQiWindows 10XVcnh
@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: c23637f2a26f62e3fa1ca50e9f8c75edb7c2b50a
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: d267219cfa36987c7372a42572d00f4441ccd0cd
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48429654"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48842489"
 ---
 # <a name="understand-the-advanced-hunting-schema"></a>Comprendere schema di ricerca avanzato
 
@@ -32,7 +32,7 @@ ms.locfileid: "48429654"
 
 
 **Si applica a:**
-- Microsoft Threat Protection
+- Microsoft 365 Defender
 
 [!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
@@ -57,7 +57,7 @@ Di seguito sono elencate tutte le tabelle dello schema. Ogni nome di tabella rim
 | Nome della tabella | Descrizione |
 |------------|-------------|
 | **[AlertEvidence](advanced-hunting-alertevidence-table.md)** | File, indirizzi IP, URL, utenti o dispositivi associati agli avvisi |
-| **[AlertInfo](advanced-hunting-alertinfo-table.md)** | Avvisi di Microsoft Defender ATP, Office 365 ATP, Microsoft cloud app Security e Azure ATP, incluse le informazioni sulla gravità e la categorizzazione delle minacce  |
+| **[AlertInfo](advanced-hunting-alertinfo-table.md)** | Avvisi di Microsoft Defender per endpoint, Microsoft Defender per Office 365, Microsoft cloud app Security e Microsoft Defender per Identity, incluse le informazioni sulla gravità e la categorizzazione delle minacce  |
 | **[AppFileEvents](advanced-hunting-appfileevents-table.md)** | Attività correlate ai file nelle app e nei servizi cloud |
 | **[DeviceEvents](advanced-hunting-deviceevents-table.md)** | Più tipi di evento, inclusi gli eventi attivati da controlli di sicurezza, ad esempio Windows Defender Antivirus e protezione dagli exploit |
 | **[DeviceFileCertificateInfo](advanced-hunting-DeviceFileCertificateInfo-table.md)** | Informazioni sui certificati dei file firmati ottenuti da eventi di verifica certificati sugli endpoint |

@@ -14,12 +14,12 @@ ms.collection:
 ms.custom: ''
 f1.keywords: NOCSH
 description: Informazioni su come configurare i team per la protezione dei dati in base alla relativa sensibilità
-ms.openlocfilehash: ef49e788805139bf82fa5b1b43d2a87323640820
-ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
+ms.openlocfilehash: 5cf4937a79fdf33e160432c740504ec84d196585
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46527709"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48843541"
 ---
 # <a name="set-up-secure-collaboration-with-microsoft-365"></a>Proteggere la collaborazione con Microsoft 365
 
@@ -62,7 +62,7 @@ Per configurare Secure collabration, è possibile utilizzare le funzionalità e 
 
 | Prodotto o componente | Capacità o funzionalità | Licenze |
 |:-------|:-----|:-------|
-| Office 365 Advanced Threat Protection | Allegati sicuri di ATP per SPO, OneDrive e teams; Documenti sicuri ATP; Collegamenti sicuri ATP per i team    | Microsoft 365 E1, E3 ed E5 |
+| Microsoft Defender per Office 365 | Allegati sicuri per SPO, OneDrive e teams; Documenti attendibili; Collegamenti sicuri per i team    | Microsoft 365 E1, E3 ed E5 |
 | SharePoint    | Criteri di condivisione siti e file, autorizzazioni di condivisione siti, collegamenti di condivisione, richieste di accesso, impostazioni di condivisione Guest site | Microsoft 365 E1, E3 ed E5 |
 | Microsoft Teams   | Accesso guest, team privati, canali privati | Microsoft 365 E1, E3 ed E5 |
 | Conformità di Microsoft 365  | Etichette di riservatezza    | Microsoft 365 E3 e E5 |
@@ -74,7 +74,7 @@ Per gestire l'accesso alle informazioni con sensibilità diverse, sono stati svi
 ![Immagine di scorrimento per poster dell'architettura logica di Teams](../media/solutions-architecture-center/Teams-tiers-of-protection-1.png)
 
 
-Questi livelli- *linee di base*, *sensibili*e *altamente sensibili* -aumentano gradualmente le protezioni che impediscono la sovracondivisione e la potenziale perdita di informazioni, come illustrato nella tabella seguente.
+Questi livelli- *linee di base* , *sensibili* e *altamente sensibili* -aumentano gradualmente le protezioni che impediscono la sovracondivisione e la potenziale perdita di informazioni, come illustrato nella tabella seguente.
 
 ||**Livello di base**|**Livello di riservatezza**|**Livello estremamente riservato**|
 |:--|:-----------|:------------|:-------------------|

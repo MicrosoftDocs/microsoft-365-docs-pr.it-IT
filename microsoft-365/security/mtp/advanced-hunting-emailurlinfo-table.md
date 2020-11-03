@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 2d37868af5c582512b543c1e2ca859e63b190425
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: 6684f2d56cb30c909cae57e7b3e6593377449f6b
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48430836"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48842561"
 ---
 # <a name="emailurlinfo"></a>EmailUrlInfo
 
@@ -32,9 +32,9 @@ ms.locfileid: "48430836"
 
 
 **Si applica a:**
-- Microsoft Threat Protection
+- Microsoft 365 Defender
 
-La tabella `EmailUrlInfo` nello schema per [Ricerca avanzata](advanced-hunting-overview.md) contiene informazioni riguardanti gli URL nei messaggi di posta elettronica e gli allegati elaborati da Office 365 ATP. Usare questo riferimento per creare query che restituiscono informazioni dalla tabella.
+La `EmailUrlInfo` tabella nello schema di [ricerca avanzata](advanced-hunting-overview.md) contiene informazioni sugli URL dei messaggi di posta elettronica e degli allegati elaborati da Microsoft Defender per Office 365. Usare questo riferimento per creare query che restituiscono informazioni dalla tabella.
 
 Per informazioni su altre tabelle nello schema per Ricerca avanzata, [vedere il riferimento sulla Ricerca avanzata](advanced-hunting-schema-tables.md).
 

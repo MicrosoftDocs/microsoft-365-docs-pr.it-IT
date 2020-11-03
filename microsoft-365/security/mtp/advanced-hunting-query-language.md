@@ -1,5 +1,5 @@
 ---
-title: Il linguaggio delle query in Ricerca avanzata in Microsoft Threat Protection
+title: Informazioni sul linguaggio di query di ricerca avanzata in Microsoft 365 Defender
 description: Creare una prima query di ricerca delle minacce, conoscere gli operatori più comuni e altri aspetti del linguaggio di query di Ricerca avanzata
 keywords: caccia avanzata, caccia alle minacce, Cyber Threat Hunting, Microsoft Threat Protection, Microsoft 365, MTP, M365, Search, query, language, Learn, First query, telemetria, eventi, telemetria, rilevamenti personalizzati, schema, kusto, operatori, tipi di dati, download di PowerShell, esempio di query
 search.product: eADQiWindows 10XVcnh
@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 09f0a5437c3ae3b54fa086d93e475e4881c2d4bf
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: bb3caff642e752cb6d3941b697820fbad69ae23c
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48431052"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48841977"
 ---
 # <a name="learn-the-advanced-hunting-query-language"></a>Scoprire il linguaggio delle query in Ricerca avanzata
 
@@ -32,7 +32,7 @@ ms.locfileid: "48431052"
 
 
 **Si applica a:**
-- Microsoft Threat Protection
+- Microsoft 365 Defender
 
 Ricerca avanzata si basa sul [linguaggio delle query in Esplora dati](https://docs.microsoft.com/azure/kusto/query/). È possibile utilizzare gli operatori e le istruzioni di Kusto per creare query che consentono di individuare le informazioni in uno [schema](advanced-hunting-schema-tables.md)specializzato. Per comprendere meglio questi concetti, eseguire la prima query.
 
@@ -155,9 +155,9 @@ Per ulteriori informazioni su questi tipi di dati, [leggere informazioni sui tip
 
 ## <a name="get-help-as-you-write-queries"></a>Ottenere assistenza nella scrittura delle query
 Trarre vantaggio dalle seguenti funzionalità per scrivere query più velocemente:
-- **AutoSuggest**: durante la scrittura di query, la ricerca avanzata fornisce suggerimenti da IntelliSense. 
-- **Albero dello schema**: una rappresentazione dello schema che include l'elenco delle tabelle e delle relative colonne viene fornita accanto all'area di lavoro. Per altre informazioni, passare il puntatore su un elemento. Fare doppio clic su un elemento per inserirlo nell'editor di query.
-- **[Riferimenti dello schema](advanced-hunting-schema-tables.md#get-schema-information-in-the-security-center)**: riferimenti in-Portal con descrizioni di tabelle e colonne, nonché tipi di evento supportati ( `ActionType` valori) e query di esempio
+- **AutoSuggest** : durante la scrittura di query, la ricerca avanzata fornisce suggerimenti da IntelliSense. 
+- **Albero dello schema** : una rappresentazione dello schema che include l'elenco delle tabelle e delle relative colonne viene fornita accanto all'area di lavoro. Per altre informazioni, passare il puntatore su un elemento. Fare doppio clic su un elemento per inserirlo nell'editor di query.
+- **[Riferimenti dello schema](advanced-hunting-schema-tables.md#get-schema-information-in-the-security-center)** : riferimenti in-Portal con descrizioni di tabelle e colonne, nonché tipi di evento supportati ( `ActionType` valori) e query di esempio
 
 ## <a name="work-with-multiple-queries-in-the-editor"></a>Utilizzo di più query nell'editor
 È possibile utilizzare l'editor di query per sperimentare più query. Per utilizzare più query:

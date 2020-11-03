@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 63f12aaa84415b354fd257558612dbbe28e41360
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: 86cc32cf395f2216eb3e167e372d1225734c4c28
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48429456"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48842633"
 ---
 # <a name="emailevents"></a>EmailEvents
 
@@ -32,11 +32,11 @@ ms.locfileid: "48429456"
 
 
 **Si applica a:**
-- Microsoft Threat Protection
+- Microsoft 365 Defender
 
 
 
-La tabella `EmailEvents` nello schema per [ricerca avanzata](advanced-hunting-overview.md) contiene informazioni riguardanti gli eventi che interessano l'elaborazione dei messaggi di posta elettronica in Office 365 ATP. Utilizzare questo riferimento per creare query che forniscano informazioni da questa tabella.
+La `EmailEvents` tabella nello schema di [ricerca avanzata](advanced-hunting-overview.md) contiene informazioni sugli eventi che coinvolgono l'elaborazione dei messaggi di posta elettronica su Microsoft Defender per Office 365. Utilizzare questo riferimento per creare query che forniscano informazioni da questa tabella.
 
 >[!TIP]
 > Per informazioni dettagliate sui tipi di eventi ( `ActionType` valori) supportati da una tabella, utilizzare la Guida di [riferimento allo schema incorporata](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) disponibile nel centro sicurezza.
@@ -62,9 +62,9 @@ Per informazioni su altre tabelle nello schema per Ricerca avanzata, [vedere il 
 | `DeliveryAction` | stringa | Azioni di recapito del messaggio di posta elettronica: consegnato, inserito nella posta indesiderata, bloccato o sostituito |
 | `DeliveryLocation` | stringa | Posizione di recapito del messaggio di posta elettronica: cartella Posta in arrivo, locale/esterno, Posta indesiderata, Quarantena, invio non riuscito, non elaborato, Elementi eliminati |
 | `PhishFilterVerdict` | stringa | Verdetto del gruppo di filtri della posta elettronica che indica se il messaggio contiene phishing: Phishing o No phishing |
-| `PhishDetectionMethod` | stringa | Metodo usato per rilevare se un messaggio di posta elettronica contiene phishing: reputazione di URL pericolosi, detonazione di URL di Collegamenti sicuri ATP, Filtro avanzato di phishing, Filtro generale di phishing, Anti-spoofing: interno all'organizzazione, Anti-spoofing: dominio esterno, Imitazione del dominio, Imitazione dell'utente, Imitazione del marchio |
+| `PhishDetectionMethod` | stringa | Metodo utilizzato per rilevare il messaggio di posta elettronica come phishing: reputazione URL dannosi, detonazione URL collegamenti sicuri, filtro phishing avanzato, filtro phishing generale, anti-spoofing: intra-org, anti-spoofing: dominio esterno, rappresentazione del dominio, rappresentazione utente, rappresentazione del marchio |
 | `MalwareFilterVerdict` | stringa | Verdetto del gruppo di filtri della posta elettronica che indica se il messaggio contiene Malware: Malware, No malware |
-| `MalwareDetectionMethod` | stringa | Metodo usato per rilevare il malware nel messaggio di posta elettronica: Antimalware Engine, Reputazione file, Allegati sicuri ATP |
+| `MalwareDetectionMethod` | stringa | Metodo utilizzato per rilevare la presenza di malware nel messaggio di posta elettronica: motore antimalware, reputazione dei file, allegati sicuri |
 | `FinalEmailAction` | stringa | Azione finale intrapresa sul messaggio di posta elettronica basata su verdetto del filtro, criteri e azioni dell'utente: spostare il messaggio nella cartella posta indesiderata, aggiungere X-Header, modificare l'oggetto, reindirizzare il messaggio, eliminare il messaggio, inviare in quarantena, non eseguire nessuna azione, messaggio in Ccn |
 | `FinalEmailActionPolicy` | stringa | Criteri di azione che hanno avuto effetto: filtro posta indesiderata con alta confidenza, filtro posta indesiderata, filtro posta indesiderata per la posta inviata in blocco, filtro posta indesiderata per il phishing, imitazione dominio anti-phishing, imitazione utente anti-phishing, spoofing anti-phishing, imitazione grafico anti-phishing, anti-malware, allegati sicuri, regole del flusso di posta (ETR) |
 | `FinalEmailActionPolicyGuid` | stringa | Identificatore univoco dei criteri che hanno determinato l'azione finale per la posta |

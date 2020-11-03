@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 9ff029904a34291f4131f2013ffe30b73aa3233c
-ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
+ms.openlocfilehash: 722f0bfe18e5e7375da17f6fc6ebdb7f32676488
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48208782"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48842810"
 ---
 # <a name="insider-risk-management-policies"></a>Criteri di gestione dei rischi Insider
 
@@ -27,12 +27,12 @@ I criteri di gestione dei rischi Insider determinano quali utenti sono nell'ambi
 
 Il **dashboard dei criteri** consente di visualizzare rapidamente i criteri dell'organizzazione e lo stato corrente degli avvisi associati a ogni criterio.
 
-- **Nome criterio**: il nome assegnato al criterio nella procedura guidata per i criteri.
-- **Avvisi attivi**: il numero di avvisi attivi per ogni criterio.
-- **Avvisi confermati**: il numero totale di avvisi restituiti nei casi dal criterio negli ultimi 365 giorni.
-- **Azioni intraprese sugli avvisi**: il numero totale di avvisi che sono stati confermati o scartati negli ultimi 365 giorni.
-- **Efficacia dei criteri**: la percentuale determinata dal totale degli avvisi confermati diviso per le azioni totali eseguite sugli avvisi (ovvero la somma degli avvisi che sono stati confermati o scartati nell'ultimo anno).
-- **Attivo**: lo stato del caso, ovvero *Sì* o *No*.
+- **Nome criterio** : il nome assegnato al criterio nella procedura guidata per i criteri.
+- **Avvisi attivi** : il numero di avvisi attivi per ogni criterio.
+- **Avvisi confermati** : il numero totale di avvisi restituiti nei casi dal criterio negli ultimi 365 giorni.
+- **Azioni intraprese sugli avvisi** : il numero totale di avvisi che sono stati confermati o scartati negli ultimi 365 giorni.
+- **Efficacia dei criteri** : la percentuale determinata dal totale degli avvisi confermati diviso per le azioni totali eseguite sugli avvisi (ovvero la somma degli avvisi che sono stati confermati o scartati nell'ultimo anno).
+- **Attivo** : lo stato del caso, ovvero *Sì* o *No*.
 
 ![Dashboard dei criteri di gestione del rischio Insider](../media/insider-risk-policy-dashboard.png)
 
@@ -77,7 +77,7 @@ Per informazioni dettagliate su come configurare i criteri DLP per la propria or
 
 La protezione dei dati e la prevenzione della perdita di dati per gli utenti dell'organizzazione possono dipendere dalla posizione, dal livello di accesso alle informazioni riservate o dalla cronologia dei rischi. Le perdite di dati possono includere la sovracondivisione accidentale di informazioni estremamente riservate all'esterno dell'organizzazione o il furto di dati con intenti dolosi. In combinazione con un criterio di prevenzione della perdita di dati (DLP, Data Loss Prevention) assegnato, questo modello inizia a segnare i rilevamenti in tempo reale dell'attività sospetta e comporta una maggiore probabilità di avvisi e avvisi con livelli di gravità superiori. Gli utenti prioritari sono definiti in [gruppi di utenti prioritari](insider-risk-management-settings.md#priority-user-groups-preview) configurati nell'area impostazioni di gestione dei rischi Insider.
 
-Come per il **modello di perdita di dati generale**, è necessario assegnare un criterio DLP per attivare gli indicatori nei criteri di rischio Insider per gli avvisi di gravità elevata nell'organizzazione. Seguire le linee guida relative ai criteri per le perdite di dati precedenti quando si crea un criterio utilizzando questo modello. È inoltre necessario assegnare ai criteri i gruppi di utenti prioritari creati **Insider risk management**in  >  **Settings**  >  **gruppi di priorità** delle impostazioni di gestione dei rischi Insider.
+Come per il **modello di perdita di dati generale** , è necessario assegnare un criterio DLP per attivare gli indicatori nei criteri di rischio Insider per gli avvisi di gravità elevata nell'organizzazione. Seguire le linee guida relative ai criteri per le perdite di dati precedenti quando si crea un criterio utilizzando questo modello. È inoltre necessario assegnare ai criteri i gruppi di utenti prioritari creati **Insider risk management** in  >  **Settings**  >  **gruppi di priorità** delle impostazioni di gestione dei rischi Insider.
 
 ### <a name="data-leaks-by-disgruntled-users-preview"></a>Perdite di dati da parte di utenti scontenti (anteprima)
 
@@ -87,23 +87,23 @@ Quando si utilizza questo modello, è inoltre necessario configurare un connetto
 
 ### <a name="general-security-policy-violations-preview"></a>Violazioni generali dei criteri di sicurezza (anteprima)
 
-In molte organizzazioni, gli utenti dispongono delle autorizzazioni per installare il software nei propri dispositivi o per modificare le impostazioni del dispositivo per agevolare le attività. Involontariamente o con intenti dolosi, gli utenti possono installare malware o disabilitare importanti funzionalità di sicurezza che consentono di proteggere le informazioni sul dispositivo o sulle risorse di rete. Questo modello di criteri utilizza gli avvisi di sicurezza di Microsoft Defender Advanced Threat Protection (ATP) per iniziare a segnare queste attività e a concentrare il rilevamento e gli avvisi su questa area di rischio. Utilizzare questo modello per fornire informazioni sulle violazioni dei criteri di sicurezza negli scenari in cui gli utenti potrebbero avere una cronologia delle violazioni dei criteri di sicurezza che possono essere un indicatore del rischio Insider.
+In molte organizzazioni, gli utenti dispongono delle autorizzazioni per installare il software nei propri dispositivi o per modificare le impostazioni del dispositivo per agevolare le attività. Involontariamente o con intenti dolosi, gli utenti possono installare malware o disabilitare importanti funzionalità di sicurezza che consentono di proteggere le informazioni sul dispositivo o sulle risorse di rete. Questo modello di criteri utilizza gli avvisi di sicurezza di Microsoft Defender per endpoint per iniziare a segnare queste attività e a concentrare il rilevamento e gli avvisi su questa area di rischio. Utilizzare questo modello per fornire informazioni sulle violazioni dei criteri di sicurezza negli scenari in cui gli utenti potrebbero avere una cronologia delle violazioni dei criteri di sicurezza che possono essere un indicatore del rischio Insider.
 
-Per importare gli avvisi relativi alla violazione di sicurezza, è necessario che Microsoft Defender ATP sia configurato nell'organizzazione e abilitare Microsoft Defender ATP per l'integrazione di gestione dei rischi Insider nel centro sicurezza protezione. Per ulteriori informazioni sulla configurazione di Microsoft Defender ATP per l'integrazione di gestione dei rischi Insider, vedere [configure advanced features in Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-features#share-endpoint-alerts-with-microsoft-compliance-center).
+Per importare gli avvisi relativi alla violazione di sicurezza, è necessario che Microsoft Defender per endpoint sia configurato nell'organizzazione e che consenta a Defender for endpoint per l'integrazione di gestione dei rischi Insider nel centro sicurezza protezione. Per ulteriori informazioni sulla configurazione di Defender per endpoint per l'integrazione di gestione dei rischi Insider, vedere [configure advanced features in Defender for endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-features#share-endpoint-alerts-with-microsoft-compliance-center).
 
 ### <a name="security-policy-violations-by-departing-users-preview"></a>Violazioni dei criteri di sicurezza partendo dagli utenti (anteprima)
 
-La partenza degli utenti, indipendentemente dal fatto che si verifichino condizioni positive o negative, potrebbe essere un rischio maggiore per le violazioni dei criteri di sicurezza. Per garantire la protezione da violazioni accidentali o dannose per la sicurezza per gli utenti in partenza, questo modello di criteri utilizza gli avvisi di Microsoft Defender ATP per fornire informazioni dettagliate sulle attività relative alla sicurezza. Tali attività includono l'installazione di malware o altre applicazioni potenzialmente nocive e la disabilitazione delle funzionalità di sicurezza sui propri dispositivi. Gli indicatori dei criteri vengono attivati dopo che gli utenti hanno una data di dimissioni o di terminazione importata dal connettore Microsoft 365 HR come evento di attivazione.
+La partenza degli utenti, indipendentemente dal fatto che si verifichino condizioni positive o negative, potrebbe essere un rischio maggiore per le violazioni dei criteri di sicurezza. Per garantire la protezione da violazioni accidentali o dannose per la sicurezza per gli utenti in partenza, questo modello di criteri utilizza il difensore per gli avvisi endpoint per fornire informazioni dettagliate sulle attività relative alla sicurezza. Tali attività includono l'installazione di malware o altre applicazioni potenzialmente nocive e la disabilitazione delle funzionalità di sicurezza sui propri dispositivi. Gli indicatori dei criteri vengono attivati dopo che gli utenti hanno una data di dimissioni o di terminazione importata dal connettore Microsoft 365 HR come evento di attivazione.
 
 Quando si utilizza questo modello, è necessario configurare un connettore Microsoft 365 HR per importare periodicamente le informazioni relative alle dimissioni e alla terminazione per gli utenti dell'organizzazione. Vedere l'articolo [Import Data with the HR Connector](import-hr-data.md) per informazioni dettagliate su come configurare il connettore Microsoft 365 HR per la propria organizzazione.
 
-Per importare gli avvisi relativi alla violazione di sicurezza, è necessario che Microsoft Defender ATP sia configurato nell'organizzazione e abilitare Microsoft Defender ATP per l'integrazione di gestione dei rischi Insider nel centro sicurezza protezione. Per ulteriori informazioni sulla configurazione di Microsoft Defender ATP per l'integrazione di gestione dei rischi Insider, vedere [configure advanced features in Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-features#share-endpoint-alerts-with-microsoft-compliance-center).
+Per importare gli avvisi relativi alla violazione di sicurezza, è necessario che Microsoft Defender per endpoint sia configurato nell'organizzazione e che consenta a Defender for endpoint per l'integrazione di gestione dei rischi Insider nel centro sicurezza protezione. Per ulteriori informazioni sulla configurazione di Defender per endpoint per l'integrazione di gestione dei rischi Insider, vedere [configure advanced features in Defender for endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-features#share-endpoint-alerts-with-microsoft-compliance-center).
 
 ### <a name="security-policy-violations-by-priority-users-preview"></a>Violazioni dei criteri di sicurezza per gli utenti con priorità (anteprima)
 
-La protezione da violazioni di sicurezza per gli utenti dell'organizzazione può dipendere dalla posizione, dal livello di accesso alle informazioni riservate o dalla cronologia dei rischi. Poiché le violazioni della sicurezza per gli utenti con priorità potrebbero avere un impatto ingrandito sulle aree critiche dell'organizzazione, questo modello di criteri inizia a segnare questi indicatori e utilizza gli avvisi di Microsoft Defender ATP per fornire informazioni dettagliate sulle attività relative alla sicurezza per questi utenti. Questi possono includere gli utenti prioritari che installano malware o altre applicazioni potenzialmente nocive e disabilitano le funzionalità di sicurezza sui propri dispositivi. Gli utenti prioritari sono definiti in gruppi di utenti prioritari configurati nell'area impostazioni di gestione dei rischi Insider.
+La protezione da violazioni di sicurezza per gli utenti dell'organizzazione può dipendere dalla posizione, dal livello di accesso alle informazioni riservate o dalla cronologia dei rischi. Poiché le violazioni di sicurezza per gli utenti con priorità potrebbero avere un impatto ingrandito sulle aree critiche dell'organizzazione, questo modello di criteri inizia a segnare questi indicatori e utilizza Microsoft Defender per gli avvisi endpoint per fornire informazioni sulle attività relative alla sicurezza per questi utenti. Questi possono includere gli utenti prioritari che installano malware o altre applicazioni potenzialmente nocive e disabilitano le funzionalità di sicurezza sui propri dispositivi. Gli utenti prioritari sono definiti in gruppi di utenti prioritari configurati nell'area impostazioni di gestione dei rischi Insider.
 
-Per importare gli avvisi relativi alla violazione di sicurezza, è necessario che Microsoft Defender ATP sia configurato nell'organizzazione e abilitare Microsoft Defender ATP per l'integrazione di gestione dei rischi Insider nel centro sicurezza protezione. Per ulteriori informazioni sulla configurazione di Microsoft Defender ATP per l'integrazione di gestione dei rischi Insider, vedere [configure advanced features in Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-features#share-endpoint-alerts-with-microsoft-compliance-center). È inoltre necessario assegnare ai criteri i gruppi di utenti prioritari creati **Insider risk management**in  >  **Settings**  >  **gruppi di priorità** delle impostazioni di gestione dei rischi Insider.
+Per importare gli avvisi relativi alla violazione di sicurezza, è necessario che Microsoft Defender per endpoint sia configurato nell'organizzazione e che consenta a Defender for endpoint per l'integrazione di gestione dei rischi Insider nel centro sicurezza protezione. Per ulteriori informazioni sulla configurazione di Defender per endpoint per l'integrazione di gestione dei rischi Insider, vedere [configure advanced features in Defender for endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-features#share-endpoint-alerts-with-microsoft-compliance-center). È inoltre necessario assegnare ai criteri i gruppi di utenti prioritari creati **Insider risk management** in  >  **Settings**  >  **gruppi di priorità** delle impostazioni di gestione dei rischi Insider.
 
 ### <a name="security-policy-violations-by-disgruntled-users-preview"></a>Violazioni dei criteri di sicurezza da parte di utenti scontenti (anteprima)
 
@@ -111,7 +111,7 @@ Gli utenti che avvertono fattori di stress occupazionali possono avere un rischi
 
 Quando si utilizza questo modello, è inoltre necessario configurare un connettore Microsoft 365 HR per importare periodicamente le notifiche di miglioramento delle prestazioni, lo stato di revisione delle prestazioni scadente o le informazioni sulle modifiche a livello di processo per gli utenti dell'organizzazione. Vedere l'articolo [Import Data with the HR Connector](import-hr-data.md) per informazioni dettagliate su come configurare il connettore Microsoft 365 HR per la propria organizzazione.
 
-È inoltre necessario che Microsoft Defender ATP sia configurato nell'organizzazione e abilitare Microsoft Defender ATP per l'integrazione di gestione dei rischi Insider nel centro sicurezza protezione per importare gli avvisi relativi alla violazione della sicurezza. Per ulteriori informazioni sulla configurazione di Microsoft Defender ATP per l'integrazione di gestione dei rischi Insider, vedere [configure advanced features in Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-features#share-endpoint-alerts-with-microsoft-compliance-center).
+È inoltre necessario che Microsoft Defender per endpoint sia configurato nell'organizzazione e che consenta a Defender per endpoint l'integrazione di gestione dei rischi Insider nel centro sicurezza protezione per importare gli avvisi relativi alla violazione della sicurezza. Per ulteriori informazioni sulla configurazione di Defender per endpoint per l'integrazione di gestione dei rischi Insider, vedere [configure advanced features in Defender for endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-features#share-endpoint-alerts-with-microsoft-compliance-center).
 
 ### <a name="offensive-language-in-email"></a>Lingua offensiva nel messaggio di posta elettronica
 
@@ -132,10 +132,10 @@ Nella tabella seguente sono elencati gli eventi di attivazione e i prerequisiti 
 | Perdite di dati generali | Attività del criterio di perdita dei dati che crea un avviso di gravità elevato | Criteri DLP configurati per avvisi di gravità elevata |
 | Perdite di dati da parte di utenti prioritari | Attività del criterio di perdita dei dati che crea un avviso di gravità elevato | Criteri DLP configurati per avvisi di gravità elevata <br><br> Gruppi di utenti prioritari configurati nelle impostazioni dei rischi Insider |
 | Perdite di dati da parte di utenti scontenti | Miglioramenti delle prestazioni, prestazioni insufficienti o indicatori di modifica a livello di processo dal connettore HR | Connettore Microsoft 365 HR configurato per gli indicatori di malumore |
-| Violazioni dei criteri di sicurezza generali | Evasione difensiva dei controlli di sicurezza o del software indesiderato rilevato da Microsoft Defender ATP | Sottoscrizione di Microsoft Defender ATP attiva <br><br> Integrazione di Microsoft Defender ATP con centro conformità Microsoft 365 configurato |
-| Violazioni dei criteri di sicurezza da parte degli utenti | Indicatori di data di dimissioni o di terminazione dal connettore HR | Connettore Microsoft 365 HR configurato per gli indicatori di data di terminazione e dimissioni <br><br> Sottoscrizione di Microsoft Defender ATP attiva <br><br> Integrazione di Microsoft Defender ATP con centro conformità Microsoft 365 configurato |
-| Violazioni dei criteri di sicurezza per gli utenti con priorità | Evasione difensiva dei controlli di sicurezza o del software indesiderato rilevato da Microsoft Defender ATP | Sottoscrizione di Microsoft Defender ATP attiva <br><br> Integrazione di Microsoft Defender ATP con centro conformità Microsoft 365 configurato <br><br> Gruppi di utenti prioritari configurati nelle impostazioni dei rischi Insider |
-| Violazioni dei criteri di sicurezza da parte di utenti scontenti | Miglioramenti delle prestazioni, prestazioni insufficienti o indicatori di modifica a livello di processo dal connettore HR | Connettore Microsoft 365 HR configurato per gli indicatori di malumore <br><br> Sottoscrizione di Microsoft Defender ATP attiva <br><br> Integrazione di Microsoft Defender ATP con centro conformità Microsoft 365 configurato |
+| Violazioni dei criteri di sicurezza generali | Evasione difensiva dei controlli di sicurezza o software indesiderato rilevato da Microsoft Defender per endpoint | Sottoscrizione Microsoft Defender per endpoint attiva <br><br> Microsoft Defender for endpoint Integration with Microsoft 365 Compliance Center configurato |
+| Violazioni dei criteri di sicurezza da parte degli utenti | Indicatori di data di dimissioni o di terminazione dal connettore HR | Connettore Microsoft 365 HR configurato per gli indicatori di data di terminazione e dimissioni <br><br> Sottoscrizione Microsoft Defender per endpoint attiva <br><br> Microsoft Defender for endpoint Integration with Microsoft 365 Compliance Center configurato |
+| Violazioni dei criteri di sicurezza per gli utenti con priorità | Evasione difensiva dei controlli di sicurezza o software indesiderato rilevato da Microsoft Defender per endpoint | Sottoscrizione Microsoft Defender per endpoint attiva <br><br> Microsoft Defender for endpoint Integration with Microsoft 365 Compliance Center configurato <br><br> Gruppi di utenti prioritari configurati nelle impostazioni dei rischi Insider |
+| Violazioni dei criteri di sicurezza da parte di utenti scontenti | Miglioramenti delle prestazioni, prestazioni insufficienti o indicatori di modifica a livello di processo dal connettore HR | Connettore Microsoft 365 HR configurato per gli indicatori di malumore <br><br> Sottoscrizione Microsoft Defender per endpoint attiva <br><br> Microsoft Defender for endpoint Integration with Microsoft 365 Compliance Center configurato |
 | Lingua offensiva nel messaggio di posta elettronica | Linguaggio blasfemo, minacce o molestie nei messaggi di posta elettronica | Abbonamento a Exchange Online attivo |
 
 ## <a name="prioritize-content-in-policies"></a>Definire la priorità del contenuto nei criteri
@@ -146,9 +146,9 @@ Ad esempio, l'organizzazione dispone di un sito di SharePoint dedicato per un pr
 
 Quando si crea un criterio di gestione dei rischi Insider nella procedura guidata dei criteri, è possibile scegliere tra le seguenti priorità:
 
-- **Siti di SharePoint**: a qualsiasi attività associata a tutti i tipi di file in siti di SharePoint definiti viene assegnato un punteggio di rischio maggiore. 
-- **Tipi di informazioni riservate**: a qualsiasi attività associata a contenuto che contiene [tipi di informazioni riservate](sensitive-information-type-entity-definitions.md) viene assegnato un punteggio di rischio maggiore.
-- **Etichette di riservatezza**: a qualsiasi attività associata a contenuto con [etichette di riservatezza](sensitivity-labels.md) specifiche viene assegnato un punteggio di rischio maggiore.
+- **Siti di SharePoint** : a qualsiasi attività associata a tutti i tipi di file in siti di SharePoint definiti viene assegnato un punteggio di rischio maggiore. 
+- **Tipi di informazioni riservate** : a qualsiasi attività associata a contenuto che contiene [tipi di informazioni riservate](sensitive-information-type-entity-definitions.md) viene assegnato un punteggio di rischio maggiore.
+- **Etichette di riservatezza** : a qualsiasi attività associata a contenuto con [etichette di riservatezza](sensitivity-labels.md) specifiche viene assegnato un punteggio di rischio maggiore.
 
 ## <a name="create-a-new-policy"></a>Creare un nuovo criterio
 
@@ -159,9 +159,9 @@ Completare la procedura seguente per creare un nuovo criterio:
 1. Nel [centro conformità di Microsoft 365](https://compliance.microsoft.com)accedere a **gestione dei rischi Insider** e selezionare la scheda **criteri** .
 2. Selezionare **create Policy** per aprire la procedura guidata per i criteri
 3. Nella pagina **nuovo criterio di rischio Insider** completare i seguenti campi:
-    - **Nome (obbligatorio)**: immettere un nome descrittivo per il criterio.
-    - **Description (facoltativo)**: immettere una descrizione per il criterio.
-    - **Scegliere il modello di criteri (obbligatorio)**: selezionare uno dei [modelli di criteri](insider-risk-management-policies.md#policy-templates) per definire i tipi di indicatori di rischio sono monitorati dal criterio.
+    - **Nome (obbligatorio)** : immettere un nome descrittivo per il criterio.
+    - **Description (facoltativo)** : immettere una descrizione per il criterio.
+    - **Scegliere il modello di criteri (obbligatorio)** : selezionare uno dei [modelli di criteri](insider-risk-management-policies.md#policy-templates) per definire i tipi di indicatori di rischio sono monitorati dal criterio.
 
     >[!IMPORTANT]
     >La maggior parte dei modelli di criteri ha prerequisiti che devono essere configurati per il criterio per generare avvisi rilevanti. Se non sono stati configurati i prerequisiti per i criteri applicabili, vedere [Introduzione alla gestione dei rischi Insider](insider-risk-management-configure.md#step-3-configure-prerequisites-for-templates).
@@ -169,9 +169,9 @@ Completare la procedura seguente per creare un nuovo criterio:
 4. Fare clic su **Avanti** per continuare.
 5. Nella pagina **utenti** selezionare **Aggiungi utente o gruppo** oppure **scegliere gruppi** di utenti prioritari per definire quali utenti o gruppi di priorità sono inclusi nel criterio, a seconda del modello di criteri selezionato. Selezionare **tutti gli utenti e i gruppi abilitati alla posta elettronica** , se applicabile (se non è stato selezionato un modello di priorità basato sull'utente). Fare clic su **Avanti** per continuare.
 6. Nella pagina **specificare il contenuto di cui definire la priorità (facoltativa)** , è possibile assegnare le origini alla priorità per i punteggi di rischio aumentati. Tuttavia, alcune attività non genereranno alcun avviso, a meno che il contenuto correlato contenga tipi di informazioni riservate incorporate o personalizzati o sia stato specificato come priorità in questa pagina:
-    - **Siti di SharePoint**: selezionare **Aggiungi sito di SharePoint** e selezionare le organizzazioni di SharePoint a cui si desidera assegnare la priorità. Ad esempio, *"group1@contoso.sharepoint.com/sites/group1"*.
-    - **Tipo di informazioni riservate**: selezionare **Aggiungi tipo di informazioni riservate** e selezionare i tipi di sensibilità che si desidera impostare come priorità. Ad esempio, *"numero di conto corrente bancario statunitense"* e *"numero di carta di credito"*.
-    - **Etichette di riservatezza**: selezionare **Aggiungi etichetta di riservatezza** e selezionare le etichette che si desidera impostare come priorità. Ad esempio, *"confidenziale"* e *"segreto"*.
+    - **Siti di SharePoint** : selezionare **Aggiungi sito di SharePoint** e selezionare le organizzazioni di SharePoint a cui si desidera assegnare la priorità. Ad esempio, *"group1@contoso.sharepoint.com/sites/group1"*.
+    - **Tipo di informazioni riservate** : selezionare **Aggiungi tipo di informazioni riservate** e selezionare i tipi di sensibilità che si desidera impostare come priorità. Ad esempio, *"numero di conto corrente bancario statunitense"* e *"numero di carta di credito"*.
+    - **Etichette di riservatezza** : selezionare **Aggiungi etichetta di riservatezza** e selezionare le etichette che si desidera impostare come priorità. Ad esempio, *"confidenziale"* e *"segreto"*.
 7. Fare clic su **Avanti** per continuare.
 8. Nella pagina **Selezione indicatori di criteri** verranno visualizzati gli [indicatori](insider-risk-management-settings.md#indicators) definiti come disponibili nella pagina indicatori **impostazioni di rischio Insider**  >  **Indicators** . Se all'inizio della procedura guidata è stato selezionato un modello per le *perdite di dati* , è necessario selezionare un criterio DLP dall'elenco a discesa dei **criteri DLP** per abilitare gli indicatori di attivazione per il criterio. Selezionare gli indicatori che si desidera applicare al criterio. Se si preferisce non utilizzare le impostazioni predefinite della soglia dei criteri per questi indicatori, disabilitare le **soglie di utilizzo predefinite consigliate da Microsoft** e immettere i valori di soglia per ogni indicatore selezionato. Se è stato selezionato almeno un indicatore di *Office* o *dispositivo* , selezionare i **Booster del Punteggio di rischio** in base alle esigenze. I booster del Punteggio di rischio sono applicabili solo per gli indicatori selezionati.
 
@@ -193,15 +193,15 @@ Completare la procedura seguente per gestire un criterio esistente:
 2. Nel dashboard dei criteri selezionare il criterio che si desidera gestire.
 3. Nella pagina dei dettagli del criterio, selezionare **modifica criterio**
 4. Nella creazione guidata criteri non è possibile modificare i campi seguenti:
-    - **Nome**: nome descrittivo per il criterio
-    - **Scegliere il modello di criteri**: il modello utilizzato per definire i tipi di indicatori di rischio monitorati dal criterio.
+    - **Nome** : nome descrittivo per il criterio
+    - **Scegliere il modello di criteri** : il modello utilizzato per definire i tipi di indicatori di rischio monitorati dal criterio.
 5. Immettere una nuova descrizione per il criterio nel campo **Descrizione** . 
 6. Fare clic su **Avanti** per continuare.
 7. Nella pagina **utenti** selezionare **Aggiungi utente o gruppo** oppure **scegliere gruppi** di utenti prioritari per definire quali utenti o gruppi di priorità sono inclusi nel criterio, a seconda del modello di criteri selezionato. Selezionare **tutti gli utenti e i gruppi abilitati alla posta elettronica** , se applicabile (se non è stato selezionato un modello di priorità basato sull'utente). Fare clic su **Avanti** per continuare.
 8. Nella pagina **specificare il contenuto di cui definire la priorità (facoltativa)** , è possibile assegnare le origini alla priorità per i punteggi di rischio aumentati. Tuttavia, alcune attività non genereranno alcun avviso, a meno che il contenuto correlato contenga tipi di informazioni riservate incorporate o personalizzati o sia stato specificato come priorità in questa pagina:
-    - **Siti di SharePoint**: selezionare **Aggiungi sito di SharePoint** e selezionare le organizzazioni di SharePoint a cui si desidera assegnare la priorità. Ad esempio, *"group1@contoso.sharepoint.com/sites/group1"*.
-    - **Tipo di informazioni riservate**: selezionare **Aggiungi tipo di informazioni riservate** e selezionare i tipi di sensibilità che si desidera impostare come priorità. Ad esempio, *"numero di conto corrente bancario statunitense"* e *"numero di carta di credito"*.
-    - **Etichette di riservatezza**: selezionare **Aggiungi etichetta di riservatezza** e selezionare le etichette che si desidera impostare come priorità. Ad esempio, *"confidenziale"* e *"segreto"*.
+    - **Siti di SharePoint** : selezionare **Aggiungi sito di SharePoint** e selezionare le organizzazioni di SharePoint a cui si desidera assegnare la priorità. Ad esempio, *"group1@contoso.sharepoint.com/sites/group1"*.
+    - **Tipo di informazioni riservate** : selezionare **Aggiungi tipo di informazioni riservate** e selezionare i tipi di sensibilità che si desidera impostare come priorità. Ad esempio, *"numero di conto corrente bancario statunitense"* e *"numero di carta di credito"*.
+    - **Etichette di riservatezza** : selezionare **Aggiungi etichetta di riservatezza** e selezionare le etichette che si desidera impostare come priorità. Ad esempio, *"confidenziale"* e *"segreto"*.
 9. Fare clic su **Avanti** per continuare.
 10. Nella pagina **Selezione indicatori di criteri** verranno visualizzati gli [indicatori](insider-risk-management-settings.md#indicators) definiti come disponibili nella pagina indicatori **impostazioni di rischio Insider**  >  **Indicators** . Se all'inizio della procedura guidata è stato selezionato un modello per le *perdite di dati* , è necessario selezionare un criterio DLP dall'elenco a discesa dei **criteri DLP** per abilitare gli indicatori di attivazione per il criterio. Selezionare gli indicatori che si desidera applicare al criterio. Se si preferisce non utilizzare le impostazioni predefinite della soglia dei criteri per questi indicatori, disabilitare le **soglie di utilizzo predefinite consigliate da Microsoft** e immettere i valori di soglia per ogni indicatore selezionato. Se è stato selezionato almeno un indicatore di *Office* o *dispositivo* , selezionare i **Booster del Punteggio di rischio** in base alle esigenze. I booster del Punteggio di rischio sono applicabili solo per gli indicatori selezionati.
 

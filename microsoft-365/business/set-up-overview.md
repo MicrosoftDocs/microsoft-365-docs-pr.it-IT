@@ -27,12 +27,12 @@ search.appverid:
 - MET150
 ms.assetid: 6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece
 description: Per ulteriori informazioni, vedere la procedura di installazione di Microsoft 365 Business Premium, dalla sottoscrizione all'aggiunta di un dominio e degli utenti, alla configurazione dei criteri di sicurezza e altro ancora.
-ms.openlocfilehash: 8ec01a58d1a15d5c4aa1cef8b81518b474630d8b
-ms.sourcegitcommit: e56894917d2aae05705c3b9447388d10e2156183
+ms.openlocfilehash: 46370166a9d5e8c9308b8947513e631c159f0b86
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 11/03/2020
-ms.locfileid: "48841141"
+ms.locfileid: "48842131"
 ---
 # <a name="overview-of-setup"></a>Panoramica dell'installazione
 
@@ -48,7 +48,7 @@ La maggior parte dei passaggi di installazione può essere effettuata nell'insta
 
    - **[Aggiungere il dominio](set-up.md#add-your-domain-to-personalize-sign-in)** (se è stato acquistato il dominio durante l' [iscrizione](sign-up.md), questo passaggio è già stato fatto).
 
-   - **Aggiungere utenti** . È possibile aggiungere utenti in uno dei tre modi seguenti:
+   - **Aggiungere utenti**. È possibile aggiungere utenti in uno dei tre modi seguenti:
         - Nell' [installazione guidata](set-up.md#add-users-in-the-wizard).
         - Utilizzare la sincronizzazione della directory per [aggiungere utenti utilizzando Azure ad Connect](https://docs.microsoft.com/microsoft-365/enterprise/set-up-directory-synchronization) se si dispone di Active Directory locale.
         - È inoltre possibile [aggiungere gli utenti in un secondo momento](add-users-m365b.md) nell'interfaccia di amministrazione.
@@ -61,7 +61,7 @@ La maggior parte dei passaggi di installazione può essere effettuata nell'insta
   Oltre alle impostazioni di sicurezza nell'installazione guidata, è possibile aumentare la sicurezza aggiungendo le seguenti impostazioni:
 
 - **Protezione antimalware per la posta elettronica**
-- **Anti-phishing ATP**
+- **Anti-phishing in Defender per Office 365**
 - **Archiviazione Exchange Online**
 - **Protezione delle informazioni di Azure (PLAN1** )
 

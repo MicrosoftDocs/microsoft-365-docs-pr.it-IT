@@ -16,25 +16,25 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Gli amministratori possono ottenere informazioni sull'ordine di protezione delle applicazioni in Exchange Online Protection (EOP) e sul modo in cui il valore di priorità nei criteri di protezione determina il criterio applicato.
-ms.openlocfilehash: 6b17a524fb9dfbf5e33604c2ec26a678befc8834
-ms.sourcegitcommit: 153f413402f93b79be421741f3b9fed318d6d270
+ms.openlocfilehash: 9bff44a0c9964c60f5b8b5c0afdfe6d29ee6da93
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48600286"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48843613"
 ---
 # <a name="order-and-precedence-of-email-protection"></a>Ordine e precedenza della protezione della posta elettronica
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-In Microsoft 365 organizzazioni con cassette postali in Exchange Online o standalone Exchange Online Protection (EOP) organizzazioni senza cassette postali di Exchange Online, la posta elettronica in ingresso può essere contrassegnata da più forme di protezione. Ad esempio, i criteri di anti-phishing EOP incorporati disponibili per tutti i clienti di Microsoft 365 e i più robusti criteri di anti-phishing ATP disponibili anche per i clienti di Office 365 Advanced Threat Protection (Office 365 ATP). I messaggi passano anche attraverso analisi di rilevamento multiple per malware, posta indesiderata, phishing e così via. Date tutte queste attività, è possibile che si verifichi una certa confusione sui criteri applicati.
+In Microsoft 365 organizzazioni con cassette postali in Exchange Online o standalone Exchange Online Protection (EOP) organizzazioni senza cassette postali di Exchange Online, la posta elettronica in ingresso può essere contrassegnata da più forme di protezione. Ad esempio, i criteri di anti-phishing incorporati in EOP che sono disponibili per tutti i clienti di Microsoft 365 e i più robusti criteri di anti-phishing disponibili per Microsoft Defender per i clienti di Office 365. I messaggi passano anche attraverso analisi di rilevamento multiple per malware, posta indesiderata, phishing e così via. Date tutte queste attività, è possibile che si verifichi una certa confusione sui criteri applicati.
 
 In generale, un criterio applicato a un messaggio viene identificato nell'intestazione **X-Forefront-antispam-report** nella proprietà **Cat (categoria)** . Per ulteriori informazioni, vedere [Intestazioni messaggi della protezione da posta indesiderata](anti-spam-message-headers.md).
 
 Esistono due fattori principali che determinano il criterio applicato a un messaggio:
 
-- **La priorità del tipo di protezione della posta elettronica**: questo ordine non è configurabile ed è descritto nella tabella seguente:
+- **La priorità del tipo di protezione della posta elettronica** : questo ordine non è configurabile ed è descritto nella tabella seguente:
 
   ****
 
@@ -44,23 +44,23 @@ Esistono due fattori principali che determinano il criterio applicato a un messa
   |2|Phishing|CAT: PHSH|[Configurare criteri di protezione dalla posta indesiderata in EOP](configure-your-spam-filter-policies.md)|
   |3|Alta probabilità di posta indesiderata|CAT: HSPM|[Configurare criteri di protezione dalla posta indesiderata in EOP](configure-your-spam-filter-policies.md)|
   |4 |Spoofing|CAT: SPOOFING|[Configurare l'intelligence spoof in EOP](learn-about-spoof-intelligence.md)|
-  |5<sup>\*</sup>|Rappresentazione utente (domini protetti)|UIMP|[Configurare i criteri anti-phishing ATP](configure-atp-anti-phishing-policies.md)|
-  |6<sup>\*</sup>|Rappresentazione del dominio (utenti protetti)|DIMP|[Configurare i criteri anti-phishing ATP](configure-atp-anti-phishing-policies.md)|
+  |5<sup>\*</sup>|Rappresentazione utente (domini protetti)|UIMP|[Configurazione dei criteri anti-phishing in Microsoft Defender per Office 365](configure-atp-anti-phishing-policies.md)|
+  |6<sup>\*</sup>|Rappresentazione del dominio (utenti protetti)|DIMP|[Configurazione dei criteri anti-phishing in Microsoft Defender per Office 365](configure-atp-anti-phishing-policies.md)|
   |7 |Posta indesiderata|CAT: SPM|[Configurare criteri di protezione dalla posta indesiderata in EOP](configure-your-spam-filter-policies.md)|
   |8 |Invio in blocco|CAT: IN BLOCCO|[Configurare criteri di protezione dalla posta indesiderata in EOP](configure-your-spam-filter-policies.md)|
   |
 
-  <sup>\*</sup> Queste funzionalità sono disponibili solo nei criteri di anti-phishing ATP.
+  <sup>\*</sup> Queste funzionalità sono disponibili solo nei criteri di anti-phishing in Microsoft Defender per Office 365.
 
-- **Priorità del criterio**: per ogni tipo di protezione (antispam, anti-malware, anti-phishing e così via), è presente un criterio predefinito che si applica a tutti, ma è possibile creare criteri personalizzati che si applicano a utenti specifici. Ogni criterio personalizzato ha un valore di priorità che determina l'ordine in cui vengono applicati i criteri. Il criterio predefinito viene sempre applicato per ultimo.
+- **Priorità del criterio** : per ogni tipo di protezione (antispam, anti-malware, anti-phishing e così via), è presente un criterio predefinito che si applica a tutti, ma è possibile creare criteri personalizzati che si applicano a utenti specifici. Ogni criterio personalizzato ha un valore di priorità che determina l'ordine in cui vengono applicati i criteri. Il criterio predefinito viene sempre applicato per ultimo.
 
   Se un utente è definito in più criteri dello stesso tipo, viene applicato solo il criterio con la priorità più alta. Tutti i criteri restanti di quel tipo non vengono valutati per l'utente (incluso il criterio predefinito).
 
-Si consideri, ad esempio, i seguenti criteri di anti-phishing ATP **che si applicano agli stessi utenti**e un messaggio identificato come rappresentazione e spoofing degli utenti:
+Si consideri, ad esempio, i seguenti criteri di anti-phishing in Microsoft Defender per Office 365 **che si applicano agli stessi utenti** e un messaggio identificato come rappresentazione utente e spoofing:
 
   ****
 
-  |Criteri di anti-phishing ATP|Priority|Rappresentazione utente|Anti-spoofing|
+  |Nome criterio|Priority|Rappresentazione utente|Anti-spoofing|
   |---|---|---|---|
   |Criteri A|1 |Attivato|Disattivato|
   |Criterio B|2|Disattivato|Attivato|

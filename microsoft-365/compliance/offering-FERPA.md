@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 89f7e0ca95144e783b70e23c21008dcc46328522
-ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
+ms.openlocfilehash: 668a92bf57e61d68d07a2d40e4405cc7bd111580
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48208458"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48843118"
 ---
 # <a name="family-educational-rights-and-privacy-act-ferpa"></a>Legge sull'educazione alla famiglia e la Privacy Act (FERPA)
 
@@ -51,7 +51,7 @@ I servizi per i quali Microsoft accetta di essere designati come ' ufficiali sco
 - [Office 365, Office 365 U.S. Government e Office 365 U.S. Government Defense](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
 - Power BI, PowerApps e Power automatizzate (in precedenza Microsoft Flow) come servizio autonomo o come incluso in un piano o in una famiglia di prodotti di Office 365
 - Azure DevOps Services
-- Windows Defender ATP
+- Microsoft Defender ATP 
 
 ## <a name="audits-reports-and-certificates"></a>Controlli, report e certificati
 
@@ -68,9 +68,9 @@ La legge federale degli Stati Uniti incarica la protezione della privacy dei rec
 - [Federal Register: regola finale di FERPA](https://aka.ms/ferpa-reg) (2011 dicembre)
 - [Linee guida generali di FERPA per i genitori](https://www2.ed.gov/policy/gen/guid/fpco/ferpa/parents.html)
 
-## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>Utilizzo di Microsoft Compliance Manager per valutare i rischi
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>Usare Microsoft Compliance Manager per valutare i rischi
 
-[Microsoft Compliance Manager](compliance-manager.md) è una funzionalità del [centro conformità di Microsoft 365](microsoft-365-compliance-center.md) che consente di comprendere la posizione di conformità dell'organizzazione e di intraprendere azioni per contribuire alla riduzione dei rischi. Compliance Manager offre un modello Premium per la creazione di una valutazione per questo regolamento. Individuare il modello nella pagina **modelli di valutazione** in Compliance Manager. Informazioni su come [creare valutazioni in Compliance Manager](compliance-manager-assessments.md).
+[Microsoft Compliance Manager](compliance-manager.md) è una funzionalità nel [Centro conformità Microsoft 365](microsoft-365-compliance-center.md) utile per comprendere lo stato di conformità dell'organizzazione e intraprendere azioni per ridurre i rischi. Compliance Manager offre un modello premium per creare una valutazione per questa normativa. Individuare il modello nella pagina **modelli di valutazioni** in Compliance Manager. Informazioni su come [creare valutazioni in Compliance Manager](compliance-manager-assessments.md).
 
 ## <a name="resources"></a>Risorse
 
@@ -79,5 +79,5 @@ La legge federale degli Stati Uniti incarica la protezione della privacy dei rec
 - [Federal Register: regola finale di FERPA](https://aka.ms/ferpa-reg)
 - [Guida all'implementazione di FERPA per Microsoft Azure](https://aka.ms/azureferpa)
 - [Mapping del Framework di conformità di FERPA di Azure](https://aka.ms/AzureFERPAMapping)
-- [Condizioni dei servizi online di Microsoft](https://aka.ms/Online-Services-Terms)
+- [Condizioni di Microsoft Online Services](https://aka.ms/Online-Services-Terms)
 - [Conformità nel Centro protezione Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)

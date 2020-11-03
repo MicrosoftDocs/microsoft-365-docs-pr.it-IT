@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: Ottenere Microsoft 365 per le campagne in modo da poter proteggere la propria campagna dalle minacce di Cybersecurity a posta elettronica, dati e comunicazioni.
-ms.openlocfilehash: fcb28ba7ca52ee3498afd12cf93157fa90d0d80b
-ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
+ms.openlocfilehash: 6fe67f8e5723a272643c7980bf1744f80c612188
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48131977"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48843235"
 ---
 # <a name="get-microsoft-365-for-campaigns"></a>Ottenere Microsoft 365 per le campagne
 
@@ -43,11 +43,11 @@ Se non si è idoneo per i prezzi speciali, Microsoft 365 Business Premium è anc
 
 ## <a name="what-does-microsoft-365-for-campaigns-include"></a>Che cosa include Microsoft 365 per le campagne?
 Questa configurazione di Microsoft 365 Business Premium include controlli semplici che consentono all'utente e al personale di collaborare in modo sicuro: 
-- **Proteggere l'identità dell'utente**: assicurarsi che gli utenti siano quelli che dicono di essere quando accedono per inviare messaggi di posta elettronica o per accedere ai file (autenticazione a più fattori).
-- **Proteggere le informazioni riservate**: proteggere le informazioni riservate per monitorare le informazioni che vengono condivise all'esterno dell'organizzazione (prevenzione della perdita di dati).
-- **Proteggi i dispositivi mobili**: Proteggi i dati nei dispositivi mobili (criteri di protezione delle app per dispositivi mobili).
-- **Proteggi da contenuti dannosi**: Impedisci l'accesso a contenuti dannosi tramite analisi degli allegati di posta elettronica (Advanced Threat Protection).
-- **Protezione delle password**: impostare le password in modo che non scadano più sicure e che contribuiscano a impedire interruzioni del lavoro (criteri password). 
+- **Proteggere l'identità dell'utente** : assicurarsi che gli utenti siano quelli che dicono di essere quando accedono per inviare messaggi di posta elettronica o per accedere ai file (autenticazione a più fattori).
+- **Proteggere le informazioni riservate** : proteggere le informazioni riservate per monitorare le informazioni che vengono condivise all'esterno dell'organizzazione (prevenzione della perdita di dati).
+- **Proteggi i dispositivi mobili** : Proteggi i dati nei dispositivi mobili (criteri di protezione delle app per dispositivi mobili).
+- **Proteggi da contenuti dannosi** : Impedisci l'accesso a contenuti dannosi tramite l'analisi degli allegati di posta elettronica (Defender per Office 365).
+- **Protezione delle password** : impostare le password in modo che non scadano più sicure e che contribuiscano a impedire interruzioni del lavoro (criteri password). 
 
 
 ## <a name="what-does-it-cost-who-needs-it-and-what-is-the-commitment"></a>Quali sono i costi, chi ne ha bisogno e qual è l'impegno?

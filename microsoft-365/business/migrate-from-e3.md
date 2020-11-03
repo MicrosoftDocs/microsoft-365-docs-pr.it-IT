@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Informazioni su come spostare la propria azienda in Microsoft 365 Business Premium da Office 365 E3.
-ms.openlocfilehash: f3f3894a2a5cb69f9f91825d89db4f4b857fac5c
-ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
+ms.openlocfilehash: b8aa58f1f050ec6247479ed02e142507a2df45fc
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "48295291"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48842161"
 ---
 # <a name="migrating-from-office-365-e3-to-microsoft-365-business-premium"></a>Migrazione da Office 365 E3 a Microsoft 365 Business Premium 
 
@@ -42,7 +42,7 @@ In questa tabella vengono illustrate le differenze tra Microsoft 365 Business Pr
 | Funzionalità    | Supporto in Microsoft 365 Business Premium    | Supporto in Office 365 E3 | 
 |:-------|:-----|:-----|
 | **Locale**        | | | 
-| App di Office<sup>1</sup>    | App Microsoft 365 per le aziende    | Microsoft 365 Apps for enterprise | 
+| App di Office<sup>1</sup>    | Microsoft 365 Apps for business    | Microsoft 365 Apps for enterprise | 
 | **App per la produttività del cloud**        | | | 
 | Exchange Online e Outlook    | 50 GB di spazio di archiviazione per cassetta postale e archiviazione Exchange Online illimitata    | 100 GB di spazio di archiviazione per cassetta postale e archiviazione Exchange Online illimitata | 
 | Teams    | ![Incluso in Microsoft 365 Business Premium](../media/check-mark.png)    | ![Incluso con Office 365 E3](../media/check-mark.png) | 
@@ -51,7 +51,7 @@ In questa tabella vengono illustrate le differenze tra Microsoft 365 Business Pr
 | StaffHub    | ![Incluso in Microsoft 365 Business Premium](../media/check-mark.png)    | ![Incluso con Office 365 E3](../media/check-mark.png) | 
 | Gestione clienti di Outlook, MileIQ    | ![Incluso in Microsoft 365 Business Premium](../media/check-mark.png)    | | 
 | **Protezione dalle minacce**        | | | 
-| Piano 1 di Office 365 Advanced Threat Protection (ATP) | ![Incluso in Microsoft 365 Business Premium](../media/check-mark.png)    | Non incluso, ma può essere aggiunto | 
+| Difensore per Office 365 piano 1 | ![Incluso in Microsoft 365 Business Premium](../media/check-mark.png)    | Non incluso, ma può essere aggiunto | 
 | **Gestione delle identità**        | | | 
 | Reimpostazione della password in modalità self-service per gli account di Azure Active Directory (Azure AD), l'autenticazione a più fattori di Azure (AMF), l'accesso condizionale, il writeback delle password per le identità locali|     ![Incluso in Microsoft 365 Business Premium](../media/check-mark.png)    |  | 
 | **Gestione di dispositivi e app**        | | |
@@ -122,7 +122,7 @@ Microsoft 365 Business Premium ha un limite di archiviazione di 50 GB poiché ut
 
 ### <a name="threat-protection"></a>Protezione dalle minacce
 
-Dopo aver eseguito la migrazione a Microsoft 365 Business Premium, si dispone di Office 365 ATP. Per una panoramica, vedere [Office 365 ATP](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp) . Per impostare, vedere [set up ATP Safe Links](https://support.microsoft.com/office/61492713-53c2-47da-a6e7-fa97479e97fa), [set up ATP Safe Attachments](https://support.microsoft.com/office/e7e68934-23dc-4b9c-b714-e82e27a8f8a5)e [set up ATP anti-phishing](https://support.microsoft.com/office/86c425e1-1686-430a-9151-f7176cce4f2c).
+Dopo aver eseguito la migrazione a Microsoft 365 Business Premium, si ha il difensore per Office 365. Per una panoramica, vedere [Microsoft Defender per Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp) . Per impostare, vedere [set up Safe Links](https://support.microsoft.com/office/61492713-53c2-47da-a6e7-fa97479e97fa), [set up Safe Attachments](https://support.microsoft.com/office/e7e68934-23dc-4b9c-b714-e82e27a8f8a5)e [set up anti-phishing in Defender for Office 365](https://support.microsoft.com/office/86c425e1-1686-430a-9151-f7176cce4f2c).
 
 ### <a name="sensitivity-labels"></a>Etichette di riservatezza
 
