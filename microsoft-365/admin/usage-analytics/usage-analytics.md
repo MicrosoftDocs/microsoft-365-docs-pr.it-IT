@@ -19,29 +19,28 @@ search.appverid:
 - MOE150
 ms.assetid: 77ff780d-ab19-4553-adea-09cb65ad0f1f
 description: Ottenere una panoramica del modo in cui l'organizzazione adotta i servizi Microsoft 365 per comunicare e collaborare.
-ms.openlocfilehash: fecaed3aa9fc2d0990cb3e7b416cee1bfab21d7e
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: d7e9e6cf945134df54221bb8a03ef83d1a8851cc
+ms.sourcegitcommit: e56894917d2aae05705c3b9447388d10e2156183
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47948629"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48841388"
 ---
 # <a name="microsoft-365-usage-analytics"></a>Analisi di utilizzo di Microsoft 365
----
 
 ## <a name="overview-of-microsoft-365-usage-analytics"></a>Panoramica dell'analisi dell'utilizzo di Microsoft 365
 
-Utilizzare l'analisi di utilizzo di Microsoft 365 all'interno di Power BI per ottenere informazioni sul modo in cui l'organizzazione adotta i diversi servizi di Microsoft 365 per comunicare e collaborare. È possibile visualizzare e analizzare i dati di utilizzo di Microsoft 365, creare report personalizzati e condividere le informazioni riportate all'interno dell'organizzazione e acquisire informazioni dettagliate sul modo in cui aree o reparti specifici utilizzano Microsoft 365.
+Utilizzare l'analisi di utilizzo di Microsoft 365 all'interno di Power BI per ottenere informazioni sul modo in cui l'organizzazione adotta i diversi servizi in Microsoft 365. È possibile visualizzare e analizzare i dati di utilizzo di Microsoft 365, creare report personalizzati e condividere le informazioni dettagliate all'interno dell'organizzazione. È inoltre possibile ottenere informazioni dettagliate sul modo in cui aree o reparti specifici utilizzano Microsoft 365.
   
-Microsoft 365 Usage Analytics è un'app modello che consente di accedere a un dashboard precompilato che fornisce una visualizzazione cross-product degli ultimi 12 mesi e contiene una serie di rapporti precompilati. Ogni report fornisce informazioni specifiche sull'utilizzo. Per il primo mese completo di calendario sono disponibili informazioni specifiche degli utenti.
+Microsoft 365 Usage Analytics consente di accedere a un dashboard precompilato che fornisce una visualizzazione cross-product degli ultimi 12 mesi e contiene una serie di rapporti precompilati. Ogni report fornisce informazioni specifiche sull'utilizzo. Le informazioni specifiche dell'utente sono disponibili per l'ultimo mese di calendario completo.
   
-Il [modello di dati](usage-analytics-data-model.md) che alimenta l'app modello include gli attributi degli utenti di Active Directory, consentendo la possibilità di eseguire il pivot in alcuni report. Sono inclusi gli attributi di posizione, reparto e organizzazione di Active Directory. 
+Il [modello di dati](usage-analytics-data-model.md) che alimenta l'app modello include gli attributi degli utenti di Active Directory, consentendo la possibilità di eseguire il pivot in alcuni report. Sono inclusi gli attributi di Active Directory seguenti: percorso, reparto e organizzazione. 
   
 Per iniziare a raccogliere dati, vedere [Abilitare l'analisi dell'utilizzo di Microsoft 365](enable-usage-analytics.md). 
   
 L'analisi di utilizzo di Microsoft 365 contiene una serie di rapporti descritti nelle sezioni seguenti. 
 
-È possibile accedere a report dettagliati per ogni area selezionando le tabelle di dati. È possibile visualizzare tutti i report predefiniti selezionando le schede nella parte inferiore del sito, dopo aver visualizzato i report. Per istruzioni più dettagliate, vedere [esplorazione e utilizzo dei report in microsoft 365 Analytics di utilizzo](navigate-and-utilize-reports.md) e [personalizzazione dei report in Microsoft 365 Usage Analytics](customize-reports.md).
+È possibile accedere a report dettagliati per ogni area selezionando le tabelle di dati. È possibile visualizzare tutti i report predefiniti selezionando le schede nella parte inferiore del sito. Per istruzioni più dettagliate, vedere [esplorazione e utilizzo dei report](navigate-and-utilize-reports.md) e [personalizzazione dei report](customize-reports.md).
 
 ## <a name="executive-summary"></a>Riepilogo esecutivo
 
@@ -93,7 +92,7 @@ Per condividere i dashboard con altri utenti, vedere altre informazioni su [Cond
 
 ### <a name="who-can-connect-to-microsoft-365-usage-analytics"></a>Chi può connettersi all'analisi dell'utilizzo di Microsoft 365?
 
-È necessario essere un amministratore **globale**, un amministratore di **Exchange**, un amministratore di **Skype for business**, un amministratore di **SharePoint**, un **lettore globale** o un **lettore di report** per stabilire la connessione all'app del modello. Per ulteriori informazioni, vedere informazioni [sui ruoli di amministratore](../add-users/about-admin-roles.md) .
+È necessario essere un amministratore **globale** , un amministratore di **Exchange** , un amministratore di **Skype for business** , un amministratore di **SharePoint** , un **lettore globale** o un **lettore di report** per stabilire la connessione all'app del modello. Per ulteriori informazioni, vedere informazioni [sui ruoli di amministratore](../add-users/about-admin-roles.md) .
 
 ### <a name="who-can-customize-the-usage-analytics-reports"></a>Chi può personalizzare i report di analisi dei dati di utilizzo?
 

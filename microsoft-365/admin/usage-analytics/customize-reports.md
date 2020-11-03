@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9b76065f-29b9-4b89-8059-c5f9db9ddbf6
 description: Informazioni su come personalizzare i report nel desktop del browser e Power BI.
-ms.openlocfilehash: 121a9be4a83570b7fcf358c48bf558d3bc7c1131
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 8baeb1a9f48d8f1ccdb591a60fefe863502344b6
+ms.sourcegitcommit: e56894917d2aae05705c3b9447388d10e2156183
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44402931"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48841424"
 ---
 # <a name="customize-the-reports-in-microsoft-365-usage-analytics"></a>Personalizzare i report nell'analisi dell'utilizzo di Microsoft 365
 
@@ -48,19 +48,19 @@ I due esempi seguenti illustrano come modificare un oggetto visivo esistente e c
 
 In questo esempio viene illustrato come modificare la scheda **attivazione** all'interno del rapporto di **attivazione/gestione licenze** . 
   
-1. All'interno del rapporto di **attivazione/gestione delle licenze** , fare clic sulla scheda **attivazione** .
+1. All'interno del rapporto di **attivazione/gestione delle licenze** selezionare la scheda **attivazione** .
     
-2. Immettere la modalità di modifica facendo clic sul pulsante **modifica** nella parte superiore tramite il pulsante ![ altro pagina nel pulsante Power bi ](../../media/d8da3c19-3f2d-4bf6-811e-faa804f74770.png) . 
+2. Immettere la modalità di modifica scegliendo il pulsante **modifica** nella parte superiore tramite il pulsante ![ altro pagina nel pulsante Power bi ](../../media/d8da3c19-3f2d-4bf6-811e-faa804f74770.png) . 
     
     ![Click Edit report on the top right navigation](../../media/e2c16663-1fbd-4d7f-887c-0cbb891d3b3d.png)
   
-3. In alto a destra, fare clic su **Duplica questa pagina**.
+3. In alto a destra, scegliere **Duplica questa pagina** .
     
     ![Choose Duplicate this page](../../media/b2d18dcd-6b82-4ce7-ab79-1b24e3721309.png)
   
-4. In basso a destra, fare clic su uno dei grafici a barre che mostra il numero di utenti che si attivano in base al sistema operativo, ad esempio Android, iOS, Mac e così via.
+4. In basso a destra, scegliere uno qualsiasi dei grafici a barre che mostra il numero di utenti che si attivano in base al sistema operativo, ad esempio Android, iOS, Mac e così via.
     
-5. Nell'area **visualizzazioni** a destra, per rimuovere **Mac count** dall'elemento visivo, fare clic sulla **X** accanto ad essa.
+5. Nell'area **visualizzazioni** a destra, per rimuovere **Mac count** dalla visualizzazione, selezionare la **X** accanto ad essa.
 
     ![Rimuovi conteggio Mac](../../media/ce3d8358-df57-4f64-bd25-ac5be7fc8713.png)    
     
@@ -68,43 +68,43 @@ In questo esempio viene illustrato come modificare la scheda **attivazione** all
 
 L'esempio seguente illustra come creare un nuovo oggetto visivo per tenere traccia di nuovi utenti di Yammer su base mensile.
   
-1. Accedere al report **sull'utilizzo del prodotto** usando il NAV sinistro e fare clic sulla scheda **Yammer** .
+1. Accedere al report **sull'utilizzo del prodotto** usando il NAV sinistro e selezionare la scheda **Yammer** .
     
-2. Passare alla modalità di modifica facendo clic sul ![ pulsante altro pagina in Power bi ](../../media/d8da3c19-3f2d-4bf6-811e-faa804f74770.png) e **modifica**. 
+2. Passare alla modalità di modifica scegliendo ![ il pulsante altro pagina in Power bi ](../../media/d8da3c19-3f2d-4bf6-811e-faa804f74770.png) e **modifica** . 
     
-3. Nella parte inferiore della pagina, fare clic su ![Pulsante Aggiungi pagina in Power BI](../../media/d3b8c117-17d4-4f53-b078-8fefc2155b24.png) per creare una nuova pagina.
+3. Nella parte inferiore della pagina, seleziona il ![Pulsante Aggiungi pagina in Power BI](../../media/d3b8c117-17d4-4f53-b078-8fefc2155b24.png) per creare una nuova pagina.
   
-4. Nell'area **visualizzazioni** a destra fare clic sul **grafico a barre in pila** (riga superiore, primo da sinistra).
+4. Nell'area **visualizzazioni** a destra scegliere il grafico a barre in **Pila** (riga superiore, primo da sinistra).
 
     ![Seleziona grafico a barre](../../media/214c3fed-6eae-43e6-83fb-708a2d74406e.png)
     
-5. Fare clic sull'angolo inferiore destro della visualizzazione e trascinarla per ingrandirla.
+5. Selezionare l'angolo inferiore destro della visualizzazione e trascinarlo per renderlo più grande.
 
 6. Nell'area **campi** a destra espandere la tabella **Calendario** .
 
-7. Trascinare **MonthName** nell'area campi, direttamente sotto l'intestazione **Asse** nell'area **Visualizzazioni**.
+7. Trascinare **MonthName** nell'area campi, direttamente sotto l'intestazione **Asse** nell'area **Visualizzazioni** .
  
     ![Nome del mese di trascinamento](../../media/bff99987-8c4b-4618-89fd-47df557b0ed7.png)
     
-8. Nell'area **Campi** a destra espandere la tabella **TenantProductUsage**.
+8. Nell'area **Campi** a destra espandere la tabella **TenantProductUsage** .
 
-9. Trascinare **FirstTimeUsers** nell'area campi, direttamente sotto l'intestazione **Valore**.
+9. Trascinare **FirstTimeUsers** nell'area campi, direttamente sotto l'intestazione **Valore** .
 
-10. Trascinare **Prodotto** nell'area **Filtri**, direttamente sotto l'intestazione **Filtri a livello di oggetto visivo**.
+10. Trascinare **Prodotto** nell'area **Filtri** , direttamente sotto l'intestazione **Filtri a livello di oggetto visivo** .
 
-11. Nell'area **Tipo di filtro** che viene visualizzata, selezionare la casella di controllo **Yammer**.
+11. Nell'area **Tipo di filtro** che viene visualizzata, selezionare la casella di controllo **Yammer** .
 
     ![Selezionare la casella di controllo Yammer](../../media/82e99730-0de9-42da-928a-76aab0c3e609.png)
   
-12. Appena sotto l'elenco delle visualizzazioni, fare clic sull'icona **formato formato icona** ![ in Power bi Visualizaions ](../../media/ee0602f3-3df5-4930-b862-db1d90ae4ae2.png) .
+12. Appena sotto l'elenco delle visualizzazioni, scegliere l'icona **formato** formato icona ![ in Power bi Visualizaions ](../../media/ee0602f3-3df5-4930-b862-db1d90ae4ae2.png) .
 
-13. Espandere Titolo e cambiare il valore **Testo titolo** in **Nuovi utenti di Yammer per mese**.
+13. Espandere Titolo e cambiare il valore **Testo titolo** in **Nuovi utenti di Yammer per mese** .
     
-14. Cambiare il valore **Dimensione testo** in **12**.
+14. Cambiare il valore **Dimensione testo** in **12** .
     
 15. Modificare il titolo della nuova pagina modificando il nome della pagina in basso a destra.
 
-16.  Salvare il rapporto facendo clic sulla **visualizzazione lettura** in alto e quindi su **Salva**.
+16.  Salvare il rapporto facendo clic sulla **visualizzazione lettura** in alto e quindi su **Salva** .
     
 ## <a name="customizing-the-reports-in-power-bi-desktop"></a>Personalizzazione dei report in Power BI Desktop
 
@@ -114,7 +114,7 @@ Per la maggior parte dei clienti è sufficiente modificare i report e gli oggett
 
 È possibile iniziare collegandosi direttamente alle API di Reporting ODATA da Microsoft 365 che alimentano questi rapporti.
   
-1. Passare a **Recupera dati** \> **Altro** \> **Feed OData** \> **Connetti**.
+1. Passare a **Recupera dati** \> **Altro** \> **Feed OData** \> **Connetti** .
     
 2. Nella finestra URL immettere "https:// <i></i> Reports.Office.com/PBI/V1.0/ \<tenantid\> "
     
@@ -128,7 +128,7 @@ Per la maggior parte dei clienti è sufficiente modificare i report e gli oggett
     
 4. Dopo aver autorizzato la connessione, viene visualizzata la finestra Strumento di navigazione che mostra i set di dati disponibili a cui connettersi.
     
-    Selezionare tutto e fare clic su **Carica**.
+    Seleziona tutto e scegli **carica** .
     
     I dati verranno in Power BI Desktop. Salvare questo file per iniziare a creare i report necessari.
     

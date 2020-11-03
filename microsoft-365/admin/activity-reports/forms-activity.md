@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - GEA150
 description: Informazioni su come ottenere un report attività di Microsoft Forms utilizzando il Dashboard Microsoft 365 Reports nell'interfaccia di amministrazione di Microsoft 365.
-ms.openlocfilehash: 78b09edfbfeb83c056af16787085b7c4cfe93fc6
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: 843548e77067c7598cfa78ba6fac985237f6f62c
+ms.sourcegitcommit: e56894917d2aae05705c3b9447388d10e2156183
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47949205"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48841114"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---forms-activity"></a>Microsoft 365 segnalazioni nell'interfaccia di amministrazione-moduli
 
@@ -39,7 +39,7 @@ Ad esempio, è possibile comprendere l'attività di ogni utente concesso in lice
 1. Nell'interfaccia di amministrazione passare alla pagina **Report** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">Utilizzo</a>.
 
     
-2. Nell'elenco **a discesa selezionare un report** selezionare **Forms** \> **attività**moduli.
+2. Nell'elenco **a discesa selezionare un report** selezionare **Forms** \> **attività** moduli.
 
 ## <a name="interpret-the-forms-activity-report"></a>Interpretare il report attività moduli
 

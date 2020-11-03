@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: a73632a1-62c8-4a13-8115-913773b30f93
 description: Informazioni su come risolvere i problemi relativi all'app modello di analisi dei dati di utilizzo di Microsoft 365.
-ms.openlocfilehash: 4696dd0c5140cdc110781c226819fc64a90fae1b
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: bf8e4ece7b1e310d91f418f5388cae9aa27f2aa7
+ms.sourcegitcommit: e56894917d2aae05705c3b9447388d10e2156183
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44402035"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48841436"
 ---
 # <a name="troubleshooting-microsoft-365-usage-analytics"></a>Risoluzione dei problemi relativi all'analisi dell'utilizzo di Microsoft 365
 
@@ -38,9 +38,9 @@ Esaminare l'elenco dei messaggi di errore seguenti per ottenere assistenza con i
   
  **Dove viene visualizzato questo messaggio:** In Power BI quando ci si connette all'app modello di analisi dei dati di utilizzo di Microsoft 365 o quando si chiama direttamente le API di report di Microsoft 365. 
   
- **Causa:** Prima di potersi connettere all'app, è necessario sottoscrivere i dati dell'interfaccia di amministrazione di Microsoft 365. Se questo passaggio non viene effettuato per primo, non sarà possibile connettersi all'app modello, anche se si fornisce l'ID tenant Microsoft 365. 
+ **Causa:** Prima di potersi connettere all'app, è necessario abbonarsi ai dati dell'interfaccia di amministrazione di Microsoft 365. Se questo passaggio non viene effettuato per primo, non sarà possibile connettersi all'app modello, anche se si fornisce l'ID tenant Microsoft 365. 
   
- **Per correggere l'errore:** Per sottoscrivere i dati, passare all'interfaccia di amministrazione \> **segnala** l' \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">utilizzo</a> e individuare il riquadro Analisi utilizzo Microsoft 365 nella pagina del dashboard principale. Selezionare il pulsante **inizia** e quindi nel riquadro **report** che si apre, trasformare i **dati disponibili in analisi di utilizzo di Microsoft 365 per** l'impostazione di Power bi su e **Save**.
+ **Per correggere l'errore:** Per sottoscrivere i dati, passare all'interfaccia di amministrazione \> **segnala** l' \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">utilizzo</a> e individuare il riquadro Analisi utilizzo Microsoft 365 nella pagina del dashboard principale. Selezionare il pulsante **inizia** e quindi nel riquadro **report** che si apre, trasformare i **dati disponibili in analisi di utilizzo di Microsoft 365 per** l'impostazione di Power bi su e **Save** .
   
 ## <a name="we-are-processing-your-data"></a>Stiamo elaborando i dati
 
@@ -54,9 +54,9 @@ Esaminare l'elenco dei messaggi di errore seguenti per ottenere assistenza con i
 
  **Codice di errore:** 423 
   
- **Dove viene visualizzato questo messaggio:** In Power BI quando ci si connette all'app modello di analisi dei dati di utilizzo di Microsoft 365 o quando si chiama direttamente le API di report di Microsoft 365. 
+ **Dove viene visualizzato questo messaggio:** In Power BI, quando ci si connette all'app modello di analisi di utilizzo di Microsoft 365 o quando si chiamano direttamente le API di report di Microsoft 365. 
   
- **Causa:** Quando si [sceglie di visualizzare i dati nell'app modello](enable-usage-analytics.md) dall'interfaccia di amministrazione, il sistema Microsoft 365 inizia a generare dati di utilizzo cronologici per l'organizzazione. A seconda delle dimensioni del tenant, questa operazione potrebbe richiedere da 2 a 48 ore. 
+ **Causa:** Quando si [sceglie di visualizzare i dati nell'app modello](enable-usage-analytics.md) dall'interfaccia di amministrazione, il sistema Microsoft 365 inizia a generare dati di utilizzo cronologici per l'organizzazione. A seconda delle dimensioni del tenant, questo passaggio può richiedere da due ore a 48 ore. 
   
  **Per risolvere il riguardo:** Basta essere pazienti, ma se il messaggio non cambia ai **dati è pronto** anche 3 giorni dopo l'inizio, contattare il [supporto tecnico Microsoft 365 for business](../contact-support-for-business-products.md).
   
@@ -64,11 +64,11 @@ Esaminare l'elenco dei messaggi di errore seguenti per ottenere assistenza con i
 
  **Codice di errore:** 400 
   
- **Dove viene visualizzato questo messaggio:** In Power BI quando ci si connette all'app modello di analisi dei dati di utilizzo di Microsoft 365 o quando si chiama direttamente le API di report di Microsoft 365. 
+ **Dove viene visualizzato questo messaggio:** In Power BI, quando ci si connette all'app modello di analisi di utilizzo di Microsoft 365 o quando si chiamano direttamente le API di report di Microsoft 365. 
   
- **Causa:** l'ID tenant è un GUID e deve essere nel formato xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx. Se si immette qualsiasi altra stringa nella casella d input del tenant, verrà visualizzato questo messaggio di errore. 
+ **Causa:** L'ID tenant è un GUID e deve essere nel formato xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx. Se si immette qualsiasi altra stringa nella casella di input tenant, verrà visualizzato questo errore. 
   
- **Per correggere l'errore:** Passare all'interfaccia di amministrazione \> **segnala** l' \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">utilizzo</a> e individuare il riquadro Analisi utilizzo Microsoft 365 nella pagina del dashboard principale. L'ID tenant è indicato nel riquadro. È possibile copiarlo da qui e incollarlo nella finestra di dialogo per la connessione all'app modello. 
+ **Per correggere l'errore:** Passare all'interfaccia di amministrazione \> **segnala** l' \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">utilizzo</a> e individuare il riquadro Analisi utilizzo Microsoft 365 nella pagina del dashboard principale. L'ID tenant è elencato nel riquadro. È possibile copiarlo da qui e incollarlo nella finestra di dialogo per la connessione all'app modello. 
   
 ## <a name="the-tenant-id-you-provided-is-not-recognized-by-our-system"></a>L'ID tenant specificato non è stato riconosciuto dal sistema
 
@@ -76,9 +76,9 @@ Esaminare l'elenco dei messaggi di errore seguenti per ottenere assistenza con i
   
  **Dove viene visualizzato questo messaggio:** In Power BI quando ci si connette all'app modello di analisi dei dati di utilizzo di Microsoft 365 o quando si chiama direttamente le API di report di Microsoft 365. 
   
- **Causa:** l'ID tenant specificato non è valido o non esiste. 
+ **Causa:** L'ID tenant specificato non è valido o non esiste. 
   
- **Per correggere l'errore:** Passare all'interfaccia di amministrazione \> **segnala** l' \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">utilizzo</a> e individuare il riquadro Analisi utilizzo Microsoft 365 nella pagina del dashboard principale. L'ID tenant è indicato nel riquadro. È possibile copiarlo da qui e incollarlo nella finestra di dialogo per la connessione all'app modello. 
+ **Per correggere l'errore:** Passare all'interfaccia di amministrazione \> **segnala** l' \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">utilizzo</a> e individuare il riquadro Analisi utilizzo Microsoft 365 nella pagina del dashboard principale. L'ID tenant è elencato nel riquadro. È possibile copiarlo da qui e incollarlo nella finestra di dialogo per la connessione all'app modello. 
   
 ## <a name="please-re-enter-your-credentials-to-sign-in-to-power-bi-again"></a>Immettere di nuovo le credenziali per accedere a Power BI
 
@@ -98,7 +98,7 @@ Codice di errore: 302
   
  **Causa:** Il codice di autorizzazione ha avuto esito negativo perché l'utente che ha tentato di connettersi all'app modello non ha il livello di autorizzazione appropriato per accedere a questi dati. 
   
- **Per correggere l'errore:** Specificare le credenziali di un utente che sia un amministratore **globale**, un amministratore di **Exchange**, un amministratore di **Skype for business**, un amministratore di **SharePoint**, un **lettore globale** o un **lettore di report** per connettersi all'app modello. Per ulteriori informazioni, vedere informazioni [sui ruoli di amministratore](../add-users/about-admin-roles.md) . 
+ **Per correggere l'errore:** Specificare le credenziali di un utente che sia un amministratore **globale** , un amministratore di **Exchange** , un amministratore di **Skype for business** , un amministratore di **SharePoint** , un **lettore globale** o un **lettore di report** per connettersi all'app modello. Per ulteriori informazioni, vedere informazioni [sui ruoli di amministratore](../add-users/about-admin-roles.md) . 
   
 ## <a name="refresh-failed"></a>Aggiornamento non riuscito
 

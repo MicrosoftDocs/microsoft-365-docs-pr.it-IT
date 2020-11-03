@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Configurare le funzionalità di conformità per evitare la perdita di dati e proteggere le informazioni riservate dei clienti.
-ms.openlocfilehash: 18886ff3a0ba5e99e63c70ef083d7a69c75bac91
-ms.sourcegitcommit: e5bc49f0a25954d008b6cc09c2b98bb7bfe1aa2f
+ms.openlocfilehash: 2c95ad3f36df28af2c68cd11192bcfe92dfe29e3
+ms.sourcegitcommit: e56894917d2aae05705c3b9447388d10e2156183
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44785833"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48841174"
 ---
 # <a name="set-up-compliance-features"></a>Funzionalità di conformità della configurazione
 
@@ -35,7 +35,7 @@ Microsoft 365 Business Premium è dotato di funzionalità per proteggere i dati 
 
 ## <a name="set-up-dlp-features"></a>Configurare le funzionalità DLP
 
-Vedere [creare un criterio DLP da un modello](https://docs.microsoft.com/microsoft-365/compliance/create-a-dlp-policy-from-a-template) per un esempio su come impostare un criterio per proteggere le informazioni personali. 
+Vedere [creare un criterio DLP da un modello](https://docs.microsoft.com/microsoft-365/compliance/create-a-dlp-policy-from-a-template) per un esempio su come impostare un criterio per proteggere la protezione dalla perdita dei dati personali. 
   
 DLP viene fornito con molti modelli di criteri pronti per l'uso per molte impostazioni locali diverse. Ad esempio, Australia Financial Data, Canada Personal Information Act, US Financial Data e così via. Vedere [cosa includono i modelli di criteri DLP](https://docs.microsoft.com/microsoft-365/compliance/what-the-dlp-policy-templates-include) per un elenco completo. Tutti questi modelli possono essere abilitati in modo analogo all'esempio del modello PII. 
   
@@ -47,13 +47,13 @@ DLP viene fornito con molti modelli di criteri pronti per l'uso per molte impost
     
 Per inserire una cassetta postale per il blocco per controversia legale, nell'interfaccia di amministrazione:
     
-1. Nella barra di spostamento a sinistra, passare a utenti attivi degli **utenti** \> **Active users**.
+1. Nella barra di spostamento a sinistra, passare a utenti attivi degli **utenti** \> **Active users** .
     
-2. Selezionare un utente la cui cassetta postale si desidera inserire nel blocco per controversia legale. Nel riquadro utente espandere Impostazioni di **posta elettronica**e accanto a **altre impostazioni**scegliere **modifica proprietà di Exchange**.
+2. Selezionare un utente la cui cassetta postale si desidera inserire nel blocco per controversia legale. Nel riquadro utente espandere Impostazioni di **posta elettronica** e accanto a **altre impostazioni** scegliere **modifica proprietà di Exchange** .
     
-3. Nella pagina Cassetta postale per l'utente, scegliere * * funzionalità cassetta postale * * sulla barra di spostamento sinistra e quindi scegliere il collegamento **attiva** in **blocco per controversia legale**.
+3. Nella pagina Cassetta postale per l'utente, scegliere * * funzionalità cassetta postale * * sulla barra di spostamento sinistra e quindi scegliere il collegamento **attiva** in **blocco per controversia legale** .
     
-4. Nella finestra di dialogo **blocco per controversia legale** , è possibile specificare la durata del blocco per controversia legale nel campo **Durata blocco** per controversia legale. Lasciare vuoto il campo se si desidera inserire un blocco infinito. È inoltre possibile aggiungere note e indirizzare il proprietario della cassetta postale a un sito Web potrebbe essere necessario spiegarne di più sul blocco per controversia legale. \>**Save**.
+4. Nella finestra di dialogo **blocco per controversia legale** , è possibile specificare la durata del blocco per controversia legale nel campo **Durata blocco** per controversia legale. Lasciare vuoto il campo se si desidera inserire un blocco infinito. È inoltre possibile aggiungere note e indirizzare il proprietario della cassetta postale a un sito Web potrebbe essere necessario spiegarne di più sul blocco per controversia legale. \>**Save** .
     
 **Conservazione:** È possibile abilitare i criteri di conservazione personalizzati, ad esempio per mantenere un determinato intervallo di tempo o eliminare il contenuto in modo permanente alla fine del periodo di conservazione. Per ulteriori informazioni, vedere [Overview of Retention Policies](https://docs.microsoft.com/microsoft-365/compliance/retention-policies).
 

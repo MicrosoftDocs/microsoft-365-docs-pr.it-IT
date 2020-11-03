@@ -19,16 +19,16 @@ search.appverid:
 - MET150
 - MOE150
 description: Informazioni dettagliate sul punteggio di produttività delle app di Microsoft 365 Apps Health-Technology.
-ms.openlocfilehash: 4242a9b665bc7292232cc15ee0f1ec37915fb1ac
-ms.sourcegitcommit: d578b28ed1886abd083b01b93f01b354067e6d47
+ms.openlocfilehash: 9497118f4ebfb1cb2b64670638ce939da21eb261
+ms.sourcegitcommit: e56894917d2aae05705c3b9447388d10e2156183
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "48804770"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48841190"
 ---
 # <a name="microsoft-365-apps-health--technology-experiences"></a>Microsoft 365 Apps Health – esperienze tecnologiche
 
-Il Punteggio di produttività consente alle organizzazioni di trasformare la modalità di utilizzo delle metriche su come gli utenti utilizzano le app di Microsoft 365 e le esperienze tecnologiche di supporto. Lo Score riflette le prestazioni dell'organizzazione&#39;s per le categorie di utenti e tecnologie e confronta il tuo punteggio con organizzazioni come la tua. La categoria teamwork è parte integrante delle misurazioni che rientrano nelle esperienze degli utenti. Per ulteriori informazioni, vedere the [Productivity Score Overview](productivity-score.md) .
+Il Punteggio di produttività consente alle organizzazioni di trasformare la modalità di utilizzo delle metriche su come gli utenti utilizzano le app di Microsoft 365 e le esperienze tecnologiche di supporto. Lo Score riflette le prestazioni dell'organizzazione&#39;s per le categorie di utenti e tecnologie e confronta il tuo punteggio con organizzazioni come la tua. La categoria delle app per l'integrità è parte integrante delle misurazioni che rientrano nelle esperienze degli utenti. Per ulteriori informazioni, vedere the [Productivity Score Overview](productivity-score.md) .
 
 ## <a name="why-your-organization39s-microsoft-365-apps-health-score-matters"></a>Perché l'organizzazione&#39;s Microsoft 365 Apps Health Score Matters
 
