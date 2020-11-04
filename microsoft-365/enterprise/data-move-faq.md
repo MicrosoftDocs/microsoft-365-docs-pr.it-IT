@@ -15,12 +15,12 @@ f1.keywords:
 - NOCSH
 description: Trovare le risposte alle domande frequenti su come spostare i dati di base in un nuovo datacenter geo di Office 365.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 043c5ee5206b30cbbc656c8886c806c2b7c2361c
-ms.sourcegitcommit: b06a4f21da247edb03fdf6a01eafb7d4fb387b33
+ms.openlocfilehash: 3eb3b7ec99da2cdca357f45eb4e71500a235fc61
+ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48333571"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48877826"
 ---
 # <a name="data-move-general-faq"></a>Domande frequenti sullo spostamento dati
 
@@ -28,10 +28,10 @@ Di seguito sono riportate le risposte alle domande generali su come spostare i d
   
 ## <a name="what-customers-are-eligible-to-request-a-move"></a>Quali clienti sono idonei a richiedere una mossa?
   
-I clienti commerciali Microsoft 365 esistenti che hanno selezionato un paese idoneo per il nuovo datacenter Geo potranno richiedere uno spostamento.  Il programma esiste solo per i tenant che dispongono di un codice paese idoneo assegnato al tenant di Microsoft 365 per eseguire la migrazione dei dati del cliente di base a REST per i carichi di lavoro idonei per il datacenter geografico Microsoft 365 corrispondente.  Fare riferimento alla pagina [come richiedere lo spostamento dei dati](request-your-data-move.md) per confermare l'idoneità del paese.   
+I clienti commerciali Microsoft 365 esistenti che hanno selezionato un paese idoneo per il nuovo datacenter Geo potranno richiedere uno spostamento.  Il programma esiste solo per i tenant che dispongono di un codice paese idoneo assegnato al tenant di Microsoft 365 per eseguire la migrazione dei dati del cliente di base a REST per i carichi di lavoro idonei per il datacenter geografico Microsoft 365 corrispondente.  Fare riferimento alla pagina [come richiedere lo spostamento dei dati](request-your-data-move.md) per confermare l'idoneità del paese.   
 
 ## <a name="how-do-we-define-core-customer-data"></a>Come definire i dati di base dei clienti
- 
+ 
 I dati dei clienti di base sono un termine che fa riferimento a un sottoinsieme di dati dei clienti definiti nelle [condizioni dei servizi online Microsoft](https://aka.ms/ost): 
 - Contenuto delle cassette postali di Exchange Online (corpo del messaggio di posta elettronica, voci del calendario e contenuto degli allegati di posta elettronica)
 - Contenuto del sito di SharePoint Online e file archiviati all'interno del sito
@@ -43,7 +43,7 @@ Oltre a Exchange Online, SharePoint Online e OneDrive for business; Microsoft es
 - Messaggi di chat dei team, inclusi i messaggi privati e i messaggi di canale. 
 - Immagini di Team utilizzate nelle chat. 
 
-I file dei team sono archiviati in SharePoint Online e i file chat di team sono archiviati in OneDrive for business.  La segreteria telefonica, il calendario, la cronologia chat e i contatti sono archiviati in Exchange Online.  In molti casi, Exchange Online, SharePoint Online e OneDrive for business sono già utilizzati dal cliente nel centro dati geografico locale e fanno parte del programma di migrazione Microsoft 365 per i paesi idonei ai clienti.
+I file dei team sono archiviati in SharePoint Online e i file chat di team sono archiviati in OneDrive for business.  La segreteria telefonica, il calendario e i contatti sono archiviati in Exchange Online.  In molti casi, Exchange Online, SharePoint Online e OneDrive for business sono già utilizzati dal cliente nel centro dati geografico locale e fanno parte del programma di migrazione Microsoft 365 per i paesi idonei ai clienti.
 
 ## <a name="at-what-point-is-my-migration-complete-so-that-my-tenants-core-customer-data-is-being-stored-at-rest-in-my-new-geo"></a>A che punto viene completata la migrazione in modo che i dati del cliente principale del tenant vengano archiviati a riposo nel nuovo geografico?
 
@@ -57,11 +57,11 @@ Tutti i servizi di Microsoft 365 eseguono le stesse versioni nei data center, pe
   
 ## <a name="what-is-the-impact-of-having-different-services-located-in-different-geos"></a>Quali sono le conseguenze dell'utilizzo di servizi diversi in GEOS?
 
-Alcuni dei servizi di Microsoft 365 possono trovarsi in GEOS diversi per alcuni clienti esistenti e per i clienti che si trovano al centro del processo di spostamento. I nostri servizi vengono eseguiti indipendentemente l'uno dall'altro e non vi è alcun impatto sull'esperienza utente, se questo è il caso.Tuttavia, a fini di residenza dei dati, una migrazione tenant non può essere considerata completa finché sia Exchange Online che SharePoint Online/OneDrive for business non verranno migrati nello stesso datacenter Geo.
+Alcuni dei servizi di Microsoft 365 possono trovarsi in GEOS diversi per alcuni clienti esistenti e per i clienti che si trovano al centro del processo di spostamento. I nostri servizi vengono eseguiti indipendentemente l'uno dall'altro e non vi è alcun impatto sull'esperienza utente, se questo è il caso. Tuttavia, a fini di residenza dei dati, una migrazione tenant non può essere considerata completa finché sia Exchange Online che SharePoint Online/OneDrive for business non verranno migrati nello stesso datacenter Geo.
 
  ## <a name="where-is-my-core-customer-data-located"></a>Dove si trovano i dati dei clienti di base?
 
-Gli amministratori dei tenant dei clienti possono visualizzare la scheda percorso dati nell'interfaccia di amministrazione in qualsiasi momento per confermare i dati del cliente di base in posizione Rest per ogni servizio, in particolare per il tenant.È inoltre possibile pubblicare la posizione dei data center GEOS, datacenters e location of Office 365 i dati dei clienti nelle [mappe dei datacenter interattivi di Microsoft 365 ](https://office.com/datamaps) come riferimento per i dati dei clienti di base predefiniti correnti nelle posizioni REST per i nuovi tenant.  È possibile verificare il percorso dei dati del cliente a riposo tramite la sezione percorso dati sotto il profilo dell'organizzazione nell'interfaccia di amministrazione di Microsoft 365.  
+Gli amministratori dei tenant dei clienti possono visualizzare la scheda percorso dati nell'interfaccia di amministrazione in qualsiasi momento per confermare i dati del cliente di base in posizione Rest per ogni servizio, in particolare per il tenant.  È inoltre possibile pubblicare la posizione dei data center GEOS, datacenters e location of Office 365 i dati dei clienti nelle [mappe dei datacenter interattivi di Microsoft 365 ](https://office.com/datamaps) come riferimento per i dati dei clienti di base predefiniti correnti nelle posizioni REST per i nuovi tenant.  È possibile verificare il percorso dei dati del cliente a riposo tramite la sezione percorso dati sotto il profilo dell'organizzazione nell'interfaccia di amministrazione di Microsoft 365.  
  
 ## <a name="when-will-i-be-able-to-request-a-move"></a>Quando sarà possibile richiedere una mossa?
   
@@ -101,7 +101,7 @@ Vedere [durante e dopo lo spostamento dei dati](during-and-after-your-data-move.
   
  ## <a name="how-do-i-know-the-move-is-complete"></a>Come si fa a sapere se lo spostamento è stato completato?
   
-Controllare il centro messaggi di Microsoft 365 per confermare che lo spostamento dei dati di ogni servizio è stato completato. Quando i dati di ogni servizio vengono spostati, verrà visualizzato un avviso di completamento per ottenere tre notifiche di completamento: una per Exchange Online, SharePoint Online e Skype for business online.  È inoltre possibile verificare il percorso dei dati del cliente a riposo tramite la sezione percorso dati sotto il profilo dell'organizzazione nell'interfaccia di amministrazione di Microsoft 365.  
+Controllare il centro messaggi di Microsoft 365 per confermare che lo spostamento dei dati di ogni servizio è stato completato. Quando i dati di ogni servizio vengono spostati, verrà visualizzato un avviso di completamento per ottenere tre notifiche di completamento: una per Exchange Online, SharePoint Online e Skype for business online.  È inoltre possibile verificare il percorso dei dati del cliente a riposo tramite la sezione percorso dati sotto il profilo dell'organizzazione nell'interfaccia di amministrazione di Microsoft 365.  
   
 ## <a name="i-am-a-microsoft-365-customer-in-one-of-the-new-datacenter-geos-but-when-i-signed-up-i-selected-a-different-country-how-can-i-be-moved-to-the-new-datacenter-geo"></a>Sono un cliente Microsoft 365 in uno dei nuovi datacenter GEOS, ma al momento dell'iscrizione, ho selezionato un paese diverso. Come si può essere spostati nel nuovo datacenter Geo?
 
@@ -109,7 +109,7 @@ Non è possibile modificare il paese di iscrizione associato al tenant. Al contr
   
 ## <a name="what-happens-if-we-are-in-process-of-email-data-migration-to-microsoft-365-during-the-exchange-online-move"></a>Cosa succede se si è in fase di migrazione dei dati di posta elettronica a Microsoft 365 durante lo spostamento di Exchange Online?
 
-Si tratta di uno scenario molto comune ed è completamente supportato.  La migrazione cloud tra i datacenter GEOS non interferisce con le migrazioni delle cassette postali di premisis su cloud.
+Si tratta di uno scenario molto comune ed è completamente supportato.  La migrazione cloud tra datacenter GEOS non interferisce con le migrazioni delle cassette postali cloud locali.
   
  ## <a name="can-i-pilot-some-users"></a>È possibile pilotare alcuni utenti?
   

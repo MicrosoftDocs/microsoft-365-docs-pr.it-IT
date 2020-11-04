@@ -2,7 +2,7 @@
 title: Installare e utilizzare il componente aggiuntivo per la segnalazione della posta indesiderata per Microsoft Outlook
 f1.keywords:
 - NOCSH
-ms.author: chrisda
+ms.author: siosulli
 author: chrisda
 manager: dansimp
 ms.date: ''
@@ -14,12 +14,12 @@ ms.assetid: 4650fec1-4ee3-4659-abbc-bf091718cb26
 ms.collection:
 - M365-security-compliance
 description: Informazioni su come installare e utilizzare il componente aggiuntivo per la segnalazione della posta indesiderata di Microsoft per segnalare messaggi di posta indesiderata, non di posta indesiderata e phishing a Microsoft.
-ms.openlocfilehash: 096bd83c53149360e6cdd3ba8e73aacce5b1106f
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 6e4c16ed8efd781a6e8ecea422fe55fb6723209c
+ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48199686"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48877550"
 ---
 # <a name="install-and-use-the-junk-email-reporting-add-in-for-microsoft-outlook"></a>Installare e utilizzare il componente aggiuntivo per la segnalazione della posta indesiderata per Microsoft Outlook
 
@@ -33,7 +33,7 @@ Il componente aggiuntivo per la segnalazione della posta indesiderata per Micros
 
 In questo argomento viene descritto come installare e utilizzare il componente aggiuntivo per la segnalazione della posta indesiderata.
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare
+## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare?
 
 - Per installare il componente aggiuntivo per la segnalazione della posta indesiderata, vedere la sezione [installazione del componente aggiuntivo per la segnalazione della posta indesiderata](#install-the-junk-email-reporting-add-in) più avanti in questo argomento.
 
@@ -48,11 +48,11 @@ In questo argomento viene descritto come installare e utilizzare il componente a
 
 1. Per i messaggi nella cartella posta in arrivo o in altre cartelle di posta elettronica, ad eccezione della posta indesiderata, utilizzare uno dei metodi seguenti per segnalare messaggi di posta indesiderata
 
-   - Selezionare il messaggio o aprire il messaggio. Nella scheda **Home** o **Message** della barra multifunzione fare clic su **posta indesiderata**e quindi selezionare **segnala come posta indesiderata** o **segnala come phishing**.
+   - Selezionare il messaggio o aprire il messaggio. Nella scheda **Home** o **Message** della barra multifunzione fare clic su **posta indesiderata** e quindi selezionare **segnala come posta indesiderata** o **segnala come phishing**.
 
      ![Segnalare messaggi di posta indesiderata o di phishing dalla barra multifunzione](../../media/junk-email-reporting-ribbon.png)
 
-   - Fare clic con il pulsante destro del mouse sul messaggio, selezionare **indesiderato**e quindi selezionare **segnala come posta indesiderata** o **segnala come phishing**.
+   - Fare clic con il pulsante destro del mouse sul messaggio, selezionare **indesiderato** e quindi selezionare **segnala come posta indesiderata** o **segnala come phishing**.
 
      ![Segnalare messaggi di posta indesiderata o di phishing dal pulsante destro del mouse](../../media/junk-email-reporting-right-click.png)
 
@@ -77,11 +77,11 @@ In questo argomento viene descritto come installare e utilizzare il componente a
 
 1. Nella cartella posta indesiderata, utilizzare uno dei metodi seguenti per segnalare messaggi di posta indesiderata falsi positivi o di phishing:
 
-   - Selezionare il messaggio o aprire il messaggio. Nella scheda **Home** o **Message** della barra multifunzione fare clic su **non indesiderata**e quindi selezionare **segnala come non indesiderato** o **segnala come phishing**.
+   - Selezionare il messaggio o aprire il messaggio. Nella scheda **Home** o **Message** della barra multifunzione fare clic su **non indesiderata** e quindi selezionare **segnala come non indesiderato** o **segnala come phishing**.
 
      ![Segnalare messaggi di posta indesiderata o di phishing dalla barra multifunzione nella cartella posta indesiderata](../../media/junk-email-reporting-junk-folder-ribbon.png)
 
-   - Fai clic con il pulsante destro del mouse sul messaggio, fai clic su **posta indesiderata**e quindi seleziona **segnala come non indesiderato** o **segnala come phishing**.
+   - Fai clic con il pulsante destro del mouse sul messaggio, fai clic su **posta indesiderata** e quindi seleziona **segnala come non indesiderato** o **segnala come phishing**.
 
      ![Segnala la posta elettronica non indesiderata o di phishing dal pulsante destro del mouse nella cartella posta indesiderata](../../media/junk-email-reporting-junk-folder-right-click.png)
 
@@ -108,8 +108,8 @@ In questo argomento viene descritto come installare e utilizzare il componente a
 
 - Andare a <https://www.microsoft.com/download/details.aspx?id=18275> e scaricare il file. msi appropriato per la versione di Office in un percorso facile da trovare:
 
-  - **32 bit**: `Junk Reporting Add-in for Office 2007, 2010, 2013, and 2016 (32-bit).msi`
-  - **64 bit**: `Junk Reporting Add-in for Office 2007, 2010, 2013, and 2016 (64-bit).msi`
+  - **32 bit** : `Junk Reporting Add-in for Office 2007, 2010, 2013, and 2016 (32-bit).msi`
+  - **64 bit** : `Junk Reporting Add-in for Office 2007, 2010, 2013, and 2016 (64-bit).msi`
 
 - Per Outlook 2013 o versione successiva, l'unico prerequisito è Microsoft .NET Framework 2,0. In Windows 10 non è possibile installare .NET Framework 2,0 da un download.
 
@@ -172,7 +172,7 @@ Scegliere la freccia in giù accanto a **Posta indesiderata** per visualizzare a
 
 Per verificare che il componente aggiuntivo per la segnalazione della posta indesiderata sia stato installato correttamente, eseguire una delle operazioni seguenti in Outlook:
 
-- Selezionare il messaggio o aprire il messaggio. Nella scheda **Home** o **Message** della barra multifunzione fare clic su **posta indesiderata**e verificare che siano disponibili le opzioni seguenti:
+- Selezionare il messaggio o aprire il messaggio. Nella scheda **Home** o **Message** della barra multifunzione fare clic su **posta indesiderata** e verificare che siano disponibili le opzioni seguenti:
 
   - **Segnala come posta indesiderata**
   - **Segnala come phishing**
@@ -181,7 +181,7 @@ Per verificare che il componente aggiuntivo per la segnalazione della posta inde
 
   ![Segnalare messaggi di posta indesiderata o di phishing dalla barra multifunzione](../../media/junk-email-reporting-ribbon.png)
 
-- Fare clic con il pulsante destro del mouse sul messaggio, selezionare **indesiderato**e verificare che siano disponibili le opzioni seguenti:
+- Fare clic con il pulsante destro del mouse sul messaggio, selezionare **indesiderato** e verificare che siano disponibili le opzioni seguenti:
 
   - **Segnala come posta indesiderata**
   - **Segnala come phishing**
@@ -209,27 +209,27 @@ Per verificare che il componente aggiuntivo per la segnalazione della posta inde
 
 Dopo aver chiuso Outlook, utilizzare una delle procedure seguenti per disinstallare il componente aggiuntivo per la segnalazione della posta indesiderata:
 
-- **Pannello di controllo**: premere il tasto Windows + R. Nella finestra di dialogo **Esegui** che viene visualizzata, immettere `control appwiz.cpl` e quindi fare clic su **OK**.
+- **Pannello di controllo** : premere il tasto Windows + R. Nella finestra di dialogo **Esegui** che viene visualizzata, immettere `control appwiz.cpl` e quindi fare clic su **OK**.
 
   Individuare e selezionare il **componente aggiuntivo per la segnalazione della posta indesiderata di Microsoft** nell'elenco e quindi fare clic su **Disinstalla**.
 
-- **Pacchetto di Windows Installer**: trovare o scaricare il file. msi appropriato e fare doppio clic su di esso.
+- **Pacchetto di Windows Installer** : trovare o scaricare il file. msi appropriato e fare doppio clic su di esso.
 
-  - **32 bit**: `Junk Reporting Add-in for Office 2007, 2010, 2013, and 2016 (32-bit).msi`
+  - **32 bit** : `Junk Reporting Add-in for Office 2007, 2010, 2013, and 2016 (32-bit).msi`
 
-  - **64 bit**: `Junk Reporting Add-in for Office 2007, 2010, 2013, and 2016 (64-bit).msi`
+  - **64 bit** : `Junk Reporting Add-in for Office 2007, 2010, 2013, and 2016 (64-bit).msi`
 
   Nella finestra di dialogo visualizzata, selezionare **Rimuovi componente aggiuntivo per la segnalazione della posta indesiderata di Microsoft per Outlook** e quindi fare clic su **Avanti**.
 
-- **Modalità invisibile all'utente**: trovare o scaricare il file. msi appropriato. In una finestra del prompt dei comandi, sostituire \<PathToFile\> con il percorso del file con estensione msi ed eseguire uno dei seguenti comandi:
+- **Modalità invisibile all'utente** : trovare o scaricare il file. msi appropriato. In una finestra del prompt dei comandi, sostituire \<PathToFile\> con il percorso del file con estensione msi ed eseguire uno dei seguenti comandi:
 
-  - **32 bit**:
+  - **32 bit** :
 
     ```dos
     msiexec /x "<PathToFile>\Junk Reporting Add-in for Office 2007, 2010, 2013, and 2016 (32-bit).msi" /qn MSIRESTARTMANAGERCONTROL="DisableShutdown"
     ```
 
-  - **64 bit**:
+  - **64 bit** :
 
     ```dos
     msiexec /x "<PathToFile>\Junk Reporting Add-in for Office 2007, 2010, 2013, and 2016 (64-bit).msi" /qn MSIRESTARTMANAGERCONTROL="DisableShutdown"
@@ -263,7 +263,7 @@ Per gli altri metodi che è possibile utilizzare per inviare messaggi a Microsof
 
 1. Verificare o impostare la `LoggingLevel` chiave del registro di sistema sul valore "verbose":
 
-   - **Outlook a 32 bit su Windows a 32 bit**:
+   - **Outlook a 32 bit su Windows a 32 bit** :
 
      ```text
      Windows Registry Editor Version 5.00
@@ -272,7 +272,7 @@ Per gli altri metodi che è possibile utilizzare per inviare messaggi a Microsof
      "LoggingLevel"="Verbose"
      ```
 
-   - **Outlook a 32 bit su Windows a 64 bit**:
+   - **Outlook a 32 bit su Windows a 64 bit** :
 
      ```text
      Windows Registry Editor Version 5.00
@@ -281,7 +281,7 @@ Per gli altri metodi che è possibile utilizzare per inviare messaggi a Microsof
      "LoggingLevel"="Verbose"
      ```
 
-   - **Outlook a 64 bit**:
+   - **Outlook a 64 bit** :
 
      ```text
      Windows Registry Editor Version 5.00

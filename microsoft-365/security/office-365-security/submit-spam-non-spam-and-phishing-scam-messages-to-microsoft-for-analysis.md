@@ -2,7 +2,7 @@
 title: Inviare manualmente messaggi a Microsoft per l'analisi
 f1.keywords:
 - NOCSH
-ms.author: chrisda
+ms.author: siosulli
 author: chrisda
 manager: dansimp
 ms.date: ''
@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 description: Gli amministratori e gli utenti finali possono imparare a inviare messaggi di posta elettronica (buona posta contrassegnata come cattiva o cattiva posta elettronica consentita) a Microsoft per l'analisi.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6673dc7e7ac263ea9f734c002d0ffac410fadc07
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 68a0921f85e5b916cd53ebe84e4ea7d35e39967e
+ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48202200"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48877706"
 ---
 # <a name="manually-submit-messages-to-microsoft-for-analysis"></a>Inviare manualmente messaggi a Microsoft per l'analisi
 
@@ -48,9 +48,9 @@ Se si riceve un messaggio che passa attraverso il filtro di posta indesiderata c
 
 1. Creare un nuovo messaggio di posta elettronica vuoto con uno dei destinatari seguenti:
 
-   - **Posta indesiderata**: `junk@office365.microsoft.com`
+   - **Posta indesiderata** : `junk@office365.microsoft.com`
 
-   - **Phishing**: `phish@office365.microsoft.com`
+   - **Phishing** : `phish@office365.microsoft.com`
 
 2. Trascinare e rilasciare il messaggio di posta indesiderata o di phishing nel nuovo messaggio. In questo modo verrà salvato il messaggio di posta indesiderata o di phishing come allegato nel nuovo messaggio. Non copiare e incollare il contenuto del messaggio o inoltrare il messaggio (è necessario il messaggio originale, in modo da poter ispezionare le intestazioni del messaggio).
 

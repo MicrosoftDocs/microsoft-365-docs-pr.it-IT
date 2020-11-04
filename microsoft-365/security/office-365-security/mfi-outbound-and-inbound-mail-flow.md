@@ -2,7 +2,7 @@
 title: Insight sul flusso di posta in uscita e in ingresso nel dashboard del flusso di posta
 f1.keywords:
 - NOCSH
-ms.author: chrisda
+ms.author: siosulli
 author: chrisda
 manager: dansimp
 ms.date: ''
@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: f2738dec-41b0-43c4-b814-84c0a4e45c6d
 description: Gli amministratori possono ottenere informazioni sull'Insight del flusso di posta in uscita e in ingresso nel dashboard del flusso di posta elettronica nel centro sicurezza & Compliance.
-ms.openlocfilehash: 33bfe3882c274fa655d17c80aba007e8d246b250
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: cff7c3a14b62475903729f4528652f192c2da09f
+ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48199302"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48877670"
 ---
 # <a name="outbound-and-inbound-mail-flow-insight-in-the-security--compliance-center"></a>Insight sul flusso di posta in uscita e in ingresso nel centro sicurezza & Compliance
 

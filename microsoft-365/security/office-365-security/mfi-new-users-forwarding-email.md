@@ -2,7 +2,7 @@
 title: Informazioni dettagliate sui messaggi di posta elettronica dei nuovi utenti inoltrati
 f1.keywords:
 - NOCSH
-ms.author: chrisda
+ms.author: siosulli
 author: chrisda
 manager: dansimp
 audience: ITPro
@@ -11,12 +11,12 @@ ms.service: exchange-online
 localization_priority: Normal
 ms.assetid: ''
 description: Gli amministratori possono scoprire come utilizzare i nuovi utenti per l'inoltro della posta elettronica nel centro sicurezza & Compliance per esaminare quando gli utenti dell'organizzazione stanno inoltrando i messaggi ai nuovi domini.
-ms.openlocfilehash: 42f8c536f8a8a1421d97726c7af432c01d053b05
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: af66a84efbd4c0b8f1ccdacf4b71d1caca1c3929
+ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48200656"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48877526"
 ---
 # <a name="new-users-forwarding-email-insight-in-the-security--compliance-center"></a>Nuovi utenti che inoltrano informazioni sulla posta elettronica nel centro sicurezza & Compliance
 
@@ -35,7 +35,7 @@ Quando si fa clic sul widget, viene visualizzato un riquadro a comparsa in cui �
 
 ![Riquadro a comparsa Dettagli visualizzato dopo aver fatto clic sul nuovo messaggio di posta elettronica di inoltro degli utenti](../../media/mfi-new-users-forwarding-email-details.png)
 
-È inoltre possibile accedere a questa pagina dei dettagli quando si seleziona l'Insight dopo aver fatto clic su **Visualizza tutti** nell'area **suggerimenti & consigliati** (dashboard dei**report** \> **Dashboard** o <https://protection.office.com/insightdashboard> ).
+È inoltre possibile accedere a questa pagina dei dettagli quando si seleziona l'Insight dopo aver fatto clic su **Visualizza tutti** nell'area **suggerimenti & consigliati** (dashboard dei **report** \> **Dashboard** o <https://protection.office.com/insightdashboard> ).
 
 È possibile fare clic sul collegamento **Visualizza rapporto associato a Insight** per passare al **rapporto modifiche di inoltro** come descritto nella sezione successiva.
 
@@ -59,11 +59,11 @@ Questo report non è disponibile direttamente nel [Dashboard del flusso di posta
 
 Nella visualizzazione report sono disponibili i grafici seguenti:
 
-- **Mostra dati per: nuovi utenti di inoltro**:
+- **Mostra dati per: nuovi utenti di inoltro** :
 
   ![Visualizzazione di nuovi utenti di inoltro nel rapporto modifiche di inoltro](../../media/forwarding-modifications-report-new-forwarding-users.png)
 
-- **Mostra dati per: nuovi domini di inoltro**:
+- **Mostra dati per: nuovi domini di inoltro** :
 
   ![Nuova visualizzazione domini inoltrati nel rapporto modifiche di inoltro](../../media/forwarding-modifications-report-new-forwarded-domains.png)
 
@@ -71,20 +71,20 @@ Se si fa clic su **filtri** in una visualizzazione report, è possibile specific
 
 ### <a name="details-table-view-for-the-forwarding-modifications-report"></a>Visualizzazione tabella dettagli per il report modifiche di inoltro
 
-Se si fa clic su **Visualizza tabella dettagli**, le informazioni visualizzate dipendono dal grafico che si sta esaminando:
+Se si fa clic su **Visualizza tabella dettagli** , le informazioni visualizzate dipendono dal grafico che si sta esaminando:
 
-- **Mostra dati per: nuovi utenti di inoltro**:
+- **Mostra dati per: nuovi utenti di inoltro** :
 
-  - **Nome**: l'indirizzo di posta elettronica del mittente.
+  - **Nome** : l'indirizzo di posta elettronica del mittente.
   - **Tipo di inoltro**
   - **Indirizzo del destinatario**
   - **Dettagli**
   - **Numero**
   - **Prima data di inoltro**
 
-- **Mostra dati per: nuovi domini di inoltro**:
+- **Mostra dati per: nuovi domini di inoltro** :
 
-  - **Nome**: il dominio di posta elettronica del mittente.
+  - **Nome** : il dominio di posta elettronica del mittente.
   - **Tipo di inoltro**
   - **Indirizzo del destinatario**
   - **Dettagli**
@@ -95,13 +95,13 @@ Se si fa clic su **filtri** in una visualizzazione tabella dettagli, è possibil
 
 Se si seleziona una riga dalla tabella, verrà visualizzato un riquadro a comparsa **Dettagli** con le informazioni seguenti:
 
-- **Nome**: questo è l'indirizzo di posta elettronica del mittente (da Mostra **dati per: nuova visualizzazione utenti di inoltro** ) o il dominio di posta elettronica del mittente (da Mostra **dati per: nuova visualizzazione domini di inoltro** ).
+- **Nome** : questo è l'indirizzo di posta elettronica del mittente (da Mostra **dati per: nuova visualizzazione utenti di inoltro** ) o il dominio di posta elettronica del mittente (da Mostra **dati per: nuova visualizzazione domini di inoltro** ).
 - **Tipo di inoltro**
 - **Destinatario**
 - **Dettagli**
 - **Numero**
 - **Data di inizio**
-- **Suggerimento**: da qui, è possibile fare clic sul collegamento per gestire l'utente nell'interfaccia di amministrazione di Microsoft 365.
+- **Suggerimento** : da qui, è possibile fare clic sul collegamento per gestire l'utente nell'interfaccia di amministrazione di Microsoft 365.
 
 ![Riquadro a comparsa dettagli dalla tabella dei dettagli della nuova visualizzazione utenti di inoltro nel rapporto modifiche di inoltro](../../media/mfi-forwarding-modifications-report-new-forwarding-users-view-details-table-details.png)
 

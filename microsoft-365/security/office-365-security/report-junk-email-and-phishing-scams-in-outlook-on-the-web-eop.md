@@ -2,7 +2,7 @@
 title: Segnalare messaggi di posta indesiderata e di phishing in Outlook sul Web
 f1.keywords:
 - NOCSH
-ms.author: chrisda
+ms.author: siosulli
 author: chrisda
 manager: dansimp
 ms.date: ''
@@ -16,12 +16,12 @@ ms.assetid: 758822b5-0126-463a-9d08-7366bb2a807d
 ms.collection:
 - M365-security-compliance
 description: Gli amministratori possono ottenere informazioni sulle opzioni di creazione di report di posta indesiderata, non di posta indesiderata e di phishing in Outlook sul Web (Outlook Web App) in Exchange Online, nonché su come disabilitare tali opzioni di creazione dei rapporti per gli utenti.
-ms.openlocfilehash: 076f2858e84359d788714dc5d7e8bdb972b2c2ee
-ms.sourcegitcommit: 3a0accd616ca94d6ba7f50e502552b45e9661a95
+ms.openlocfilehash: ebf266f3bb825a5ef81a3cd2b5d2bceb270fc260
+ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "48351078"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48877374"
 ---
 # <a name="report-junk-and-phishing-email-in-outlook-on-the-web-in-exchange-online"></a>Segnalare messaggi di posta indesiderata e di phishing in Outlook sul Web in Exchange Online
 
@@ -128,13 +128,13 @@ Per verificare la corretta abilitazione o disabilitazione della creazione di rep
   Get-OwaMailboxPolicy | Format-Table Name,ReportJunkEmailEnabled
   ```
 
-- Aprire una cassetta postale di un utente in questione in Outlook sul Web, selezionare un messaggio nella posta in arrivo **, fare clic** su posta indesiderata e verificare che la \> **Junk** richiesta di segnalazione del messaggio a Microsoft sia o non sia visualizzata.<sup>\*</sup>
+- Aprire una cassetta postale di un utente in questione in Outlook sul Web, selezionare un messaggio nella posta in arrivo **, fare clic** su posta indesiderata e verificare che la \> **Junk** richiesta di segnalazione del messaggio a Microsoft sia o non sia visualizzata. <sup>\*</sup>
 
-- Aprire una cassetta postale di un utente in questione in Outlook sul Web, selezionare un messaggio nella cartella posta indesiderata **, fare clic su posta** indesiderata \> **Junk** e verificare che la richiesta di segnalazione del messaggio a Microsoft sia o non sia visualizzata.<sup>\*</sup>
+- Aprire una cassetta postale di un utente in questione in Outlook sul Web, selezionare un messaggio nella cartella posta indesiderata **, fare clic su posta** indesiderata \> **Junk** e verificare che la richiesta di segnalazione del messaggio a Microsoft sia o non sia visualizzata. <sup>\*</sup>
 
 <sup>\*</sup> Gli utenti possono nascondere il prompt per segnalare il messaggio mentre segnalano il messaggio. Per controllare questa impostazione in Outlook sul Web:
 
-1. Fare clic su **Impostazioni** ![ di Outlook sull'icona Impostazioni Web ](../../media/owa-settings-icon.png) \> **Visualizza tutte le impostazioni** di \> **posta indesiderata**di Outlook.
+1. Fare clic su **Impostazioni** ![ di Outlook sull'icona Impostazioni Web ](../../media/owa-settings-icon.png) \> **Visualizza tutte le impostazioni** di \> **posta indesiderata** di Outlook.
 2. Nella sezione **report** verificare il valore: Chiedi a **me prima di inviare un rapporto**.
 
    ![Impostazioni di segnalazione della posta indesiderata di Outlook sul Web](../../media/owa-junk-email-reporting-options.png)

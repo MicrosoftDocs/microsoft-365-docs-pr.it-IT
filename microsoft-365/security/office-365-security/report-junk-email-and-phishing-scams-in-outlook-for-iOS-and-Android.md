@@ -2,7 +2,7 @@
 title: Segnalare messaggi di posta indesiderata e di phishing in Outlook per iOS e Android
 f1.keywords:
 - NOCSH
-ms.author: chrisda
+ms.author: siosulli
 author: chrisda
 manager: dansimp
 ms.date: ''
@@ -16,12 +16,12 @@ ms.assetid: 758822b5-0126-463a-9d08-7366bb2a807d
 ms.collection:
 - M365-security-compliance
 description: Gli amministratori possono ottenere informazioni sulle opzioni di creazione di report di posta indesiderata, non indesiderata e di phishing in Outlook per iOS e Android.
-ms.openlocfilehash: 23668a762301ee442bc805e62863079ee7ae6076
-ms.sourcegitcommit: 3a0accd616ca94d6ba7f50e502552b45e9661a95
+ms.openlocfilehash: 1c842ac5349f9c2804c637fa4c5598b06e8f489f
+ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "48350856"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48877292"
 ---
 # <a name="report-junk-and-phishing-email-in-outlook-for-ios-and-android-in-exchange-online"></a>Segnalare messaggi di posta indesiderata e di phishing in Outlook per iOS e Android in Exchange Online
 
@@ -54,7 +54,7 @@ Per i messaggi nella posta in arrivo o in qualsiasi altra cartella di posta elet
 
    ![Segnalare messaggi di posta indesiderata o di phishing](../../media/Android-report-junk-or-phishing.png)
 
-4. Nella finestra di dialogo che viene visualizzata, è possibile scegliere **segnala** o **No grazie**. Se si seleziona **No Thanks**, se si utilizza la posta **indesiderata** , il messaggio viene spostato nella cartella posta indesiderata, se il messaggio viene toccato tramite **phishing** , la cartella degli elementi eliminati viene spostata. Selezionare **segnala** anche per inviare una copia del messaggio a Microsoft.
+4. Nella finestra di dialogo che viene visualizzata, è possibile scegliere **segnala** o **No grazie**. Se si seleziona **No Thanks** , se si utilizza la posta **indesiderata** , il messaggio viene spostato nella cartella posta indesiderata, se il messaggio viene toccato tramite **phishing** , la cartella degli elementi eliminati viene spostata. Selezionare **segnala** anche per inviare una copia del messaggio a Microsoft.
 
    ![Segnalare le opzioni di segnalazione di posta indesiderata o phishing](../../media/Android-junk-email-reporting-options.png)
 

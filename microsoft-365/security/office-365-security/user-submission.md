@@ -2,7 +2,7 @@
 title: Criteri per gli invii degli utenti
 f1.keywords:
 - NOCSH
-ms.author: chrisda
+ms.author: siosulli
 author: chrisda
 manager: dansimp
 ms.date: ''
@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 description: Gli amministratori possono imparare a configurare una cassetta postale per raccogliere messaggi di posta indesiderata e di phishing segnalati dagli utenti.
-ms.openlocfilehash: d39614c2cafd3469625c4a01bdc63a1e60fead85
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: edef506074faa1c2104069e6042ee58111d5e367
+ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 11/03/2020
-ms.locfileid: "48842905"
+ms.locfileid: "48877478"
 ---
 # <a name="user-submissions-policy"></a>Criteri per gli invii degli utenti
 

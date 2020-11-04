@@ -2,7 +2,7 @@
 title: Insight e report dei client auth SMTP nel dashboard del flusso di posta
 f1.keywords:
 - NOCSH
-ms.author: chrisda
+ms.author: siosulli
 author: chrisda
 manager: dansimp
 audience: ITPro
@@ -13,12 +13,12 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: Gli amministratori possono imparare a usare l'Insight e il report SMTP AUTH nel dashboard del flusso di posta elettronica nel centro sicurezza & conformità per monitorare i mittenti di posta elettronica nell'organizzazione che utilizzano SMTP autenticato (AUTH) per inviare messaggi di posta elettronica.
-ms.openlocfilehash: 7ca673e5ecc92c28996a976c26a38ae570f16203
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 54798dfcad50c263705b027c879fdf71d0dabfba
+ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48199242"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48877562"
 ---
 # <a name="smtp-auth-clients-insight-and-report-in-the-security--compliance-center"></a>Insight e report dei client auth SMTP nel centro sicurezza & Compliance
 
@@ -45,11 +45,11 @@ Per impostazione predefinita, il report Visualizza i dati per gli ultimi 7 giorn
 
 La sezione Panoramica contiene i grafici seguenti:
 
-- **Visualizzazione dei dati per: volume di invio**: per impostazione predefinita, il grafico mostra il numero di messaggi client di autenticazione SMTP inviati da tutti i domini (**Mostra dati per: tutti i domini mittente** è selezionata per impostazione predefinita). È possibile filtrare i risultati in uno specifico dominio del mittente facendo clic su **Mostra dati per** e selezionando il dominio del mittente dall'elenco a discesa. Se si posiziona il puntatore del mouse su un punto dati specifico (giorno), viene visualizzato il numero di messaggi.
+- **Visualizzazione dei dati per: volume di invio** : per impostazione predefinita, il grafico mostra il numero di messaggi client di autenticazione SMTP inviati da tutti i domini ( **Mostra dati per: tutti i domini mittente** è selezionata per impostazione predefinita). È possibile filtrare i risultati in uno specifico dominio del mittente facendo clic su **Mostra dati per** e selezionando il dominio del mittente dall'elenco a discesa. Se si posiziona il puntatore del mouse su un punto dati specifico (giorno), viene visualizzato il numero di messaggi.
 
   ![Invio della visualizzazione volume nel rapporto client auth SMTP nel centro sicurezza & Compliance](../../media/mfi-smtp-auth-clients-report-sending-volume-view.png)
 
-- **Visualizzare i dati in base a: utilizzo TLS**: il grafico mostra la percentuale di utilizzo di TLS per tutti i messaggi client auth SMTP durante il periodo di tempo selezionato. Questo grafico consente di identificare ed eseguire azioni su utenti e account di sistema che continuano a utilizzare versioni precedenti di TLS.
+- **Visualizzare i dati in base a: utilizzo TLS** : il grafico mostra la percentuale di utilizzo di TLS per tutti i messaggi client auth SMTP durante il periodo di tempo selezionato. Questo grafico consente di identificare ed eseguire azioni su utenti e account di sistema che continuano a utilizzare versioni precedenti di TLS.
 
   ![Visualizzazione utilizzo TLS nel rapporto client auth SMTP nel centro sicurezza & Compliance](../../media/mfi-smtp-auth-clients-report-tls-usage-view.png)
 
@@ -59,16 +59,16 @@ Fare clic su **Richiedi report** per ricevere una versione più dettagliata del 
 
 ### <a name="details-table-view-for-the-smtp-auth-clients-report"></a>Visualizzazione tabella dettagli per il rapporto client auth SMTP
 
-Se si fa clic su **Visualizza tabella dettagli**, le informazioni visualizzate dipendono dal grafico che si sta esaminando:
+Se si fa clic su **Visualizza tabella dettagli** , le informazioni visualizzate dipendono dal grafico che si sta esaminando:
 
-- **Visualizzare i dati in base a: volume di invio**: le informazioni seguenti sono visualizzate in una tabella:
+- **Visualizzare i dati in base a: volume di invio** : le informazioni seguenti sono visualizzate in una tabella:
 
   - **Indirizzo del mittente**
   - **Numero di messaggi**
 
   Se si seleziona una riga, gli stessi dettagli vengono visualizzati in un riquadro a comparsa.
 
-- **Visualizzare i dati in base a: utilizzo di TLS**: le informazioni seguenti sono visualizzate in una tabella:
+- **Visualizzare i dati in base a: utilizzo di TLS** : le informazioni seguenti sono visualizzate in una tabella:
 
   - **Indirizzo del mittente**
   - **TLS 1.0%**<sup>\*</sup>

@@ -21,12 +21,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: f681d02cc4af8bd56ba945a3d944798e545bf93c
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 4369d51ed740af652be632ba0b8752c708d6c719
+ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 11/03/2020
-ms.locfileid: "48846713"
+ms.locfileid: "48877220"
 ---
 # <a name="prioritize-incidents-in-microsoft-365-defender"></a>Assegnare la priorità agli incidenti in Microsoft 365 Defender
 
@@ -46,9 +46,9 @@ La **coda degli eventi imprevisti** mostra una raccolta di eventi imprevisti con
 
 ![Immagine della coda eventi imprevisti](../../media/incidents-queue.png) 
 
-Per impostazione predefinita, la coda disponibile nel Centro sicurezza Microsoft 365 mostra gli eventi imprevisti verificatisi negli ultimi 30 giorni, con l'evento più recente visualizzato in testa all'elenco, consentendoti quindi di visualizzare prima gli eventi più recenti.
+Per impostazione predefinita, la coda nel centro sicurezza Microsoft 365 Visualizza gli incidenti riscontrati negli ultimi 30 giorni. L'evento più recente si trova nella parte superiore dell'elenco, in modo che sia possibile visualizzarlo per primo.
 
-La coda degli eventi imprevisti dispone di colonne personalizzabili che rendono visibili le diverse caratteristiche dell'evento o delle entità che questo contiene e ti aiuta a scegliere in modo mirato gli eventi imprevisti a cui dare la priorità.
+La coda di eventi non consentiti espone colonne personalizzabili che consentono di visualizzare le diverse caratteristiche dell'evento Incident o delle entità contenute. In questo modo è possibile prendere una decisione informata in merito alle priorità degli incidenti da gestire.
 
 Per una maggiore visibilità a colpo d'occhio, la denominazione degli incidenti automatici genera nomi degli incidenti in base agli attributi di avviso, ad esempio il numero di endpoint coinvolti, gli utenti coinvolti, le origini di rilevamento o le categorie. In questo modo è possibile comprendere rapidamente l'ambito dell'evento Incident.
 
@@ -57,33 +57,18 @@ Ad esempio: *eventi a più fasi su più endpoint segnalati da più origini.*
 > [!NOTE]
 > Gli incidenti che sono stati precedenti all'implementazione della denominazione degli incidenti automatici non avranno il nome modificato.
 
-La coda dispone anche di più opzioni di filtro, che, se applicate, consentono di avere un’idea globale di tutti gli eventi esistenti nell'ambiente o di concentrarsi su uno scenario o una minaccia specifici. Applicando i filtri a una coda di eventi imprevisti puoi determinare quale evento richiede un’attenzione immediata. 
+La coda degli incidenti espone anche più opzioni di filtro, che quando vengono applicate, consentono di eseguire un'ampia gamma di tutti gli incidenti esistenti nell'ambiente o di decidere di concentrarsi su uno scenario specifico o una minaccia. Applicando i filtri a una coda di eventi imprevisti puoi determinare quale evento richiede un’attenzione immediata. 
 
 ## <a name="available-filters"></a>Filtri disponibili
 
-### <a name="status"></a>Stato
-Puoi scegliere di limitare l'elenco degli eventi imprevisti visualizzati in base al loro stato per vedere quali sono attivi o risolti.
-
-### <a name="severity"></a>Gravità
-Il livello di gravità di un evento indica l'impatto che questo può avere sulle risorse. Maggiore sarà la gravità, maggiore sarà l'impatto e in genere l’evento richiederà quindi attenzione immediata. 
-
-### <a name="assigned-to-owner"></a>Assegnato a (proprietario)
-Puoi scegliere di filtrare l'elenco selezionando gli eventi assegnati a un altro utente o quelli assegnati a te.
-
-### <a name="multiple-alerts"></a>Più avvisi 
-Applica un filtro per visualizzare solo gli eventi imprevisti che contengono più di un avviso. Potrebbe indicare un attacco più complesso o a uno stadio più avanzato nella kill chain. 
-
-
-### <a name="multiple-service-sources"></a>Più servizi di origine 
-Filtro per visualizzare solo gli incidenti che contengono avvisi provenienti da origini diverse (Microsoft Defender per endpoint, Microsoft cloud app Security, Microsoft Defender for Identity, Microsoft Defender per Office 365)
-### <a name="service-sources"></a>Servizi di origine
-Scegliendo un’origine specifica puoi concentrarti sugli eventi imprevisti che contengono almeno un avviso dall'origine selezionata. 
-
-### <a name="multiple-categories"></a>Più categorie 
-Puoi scegliere di visualizzare solo gli eventi imprevisti associati a più categorie della kill chain e che potenzialmente possono causare più danni. 
+### <a name="assigned-to"></a>Assegnata a
+È possibile scegliere di visualizzare gli avvisi assegnati all'utente o a quelli gestiti dall'automazione.
 
 ### <a name="categories"></a>Categorie
-Scegli delle categorie specifiche per concentrarti su un passaggio specifico della kill chain.
+Scegliere categorie per concentrarsi su specifiche tattiche, tecniche o componenti di attacco visibili. 
+
+### <a name="classification"></a>Classificazione
+Filtrare gli eventi non consentiti in base alla classificazione impostata degli avvisi correlati. I valori includono avvisi veri, falsi avvisi o non impostati.
 
 ### <a name="data-sensitivity"></a>Riservatezza dei dati
 Alcuni attacchi sono incentrati sull’estrazione di dati riservati o di valore. Applicando un filtro per vedere se sono coinvolte informazioni riservate nell'evento, puoi determinare rapidamente se le informazioni riservate sono potenzialmente compromesse e assegnare priorità all'intervento.
@@ -91,13 +76,40 @@ Alcuni attacchi sono incentrati sull’estrazione di dati riservati o di valore.
 >[!NOTE]
 >Applicabile solo se Microsoft Information Protection è attivo.
 
+### <a name="device-group"></a>Gruppo di dispositivi
+Filtrare in base ai gruppi di dispositivi definiti.
+
+### <a name="investigation-state"></a>Stato di indagine
+Filtrare gli incidenti in base allo stato dell'analisi automatizzata. 
+
+### <a name="multiple-categories"></a>Più categorie 
+È possibile scegliere di visualizzare solo gli incidenti che sono stati mappati a più categorie e pertanto possono causare più danni. 
+
+### <a name="multiple-service-sources"></a>Più servizi di origine 
+Filtro per visualizzare solo gli incidenti che contengono avvisi provenienti da origini diverse (Microsoft Defender per endpoint, Microsoft cloud app Security, Microsoft Defender for Identity, Microsoft Defender per Office 365).
+
+### <a name="os-platform"></a>Piattaforma OS
+Limitare la visualizzazione delle code degli incidenti in base al sistema operativo.
+
+### <a name="service-sources"></a>Servizi di origine
+Scegliendo un’origine specifica puoi concentrarti sugli eventi imprevisti che contengono almeno un avviso dall'origine selezionata. 
+
+### <a name="severity"></a>Gravità
+La gravità di un evento imprevisto è indicativa dell'impatto che può avere sui cespiti. Maggiore è la gravità, maggiore è l'impatto e in genere è necessaria l'attenzione più immediata. 
+
+### <a name="status"></a>Stato
+Puoi scegliere di limitare l'elenco degli eventi imprevisti visualizzati in base al loro stato per vedere quali sono attivi o risolti.
+
+>[!IMPORTANT]
+>La classificazione, il gruppo di dispositivi, lo stato di indagine e i filtri della piattaforma OS sono attualmente disponibili solo in anteprima pubblica.
+
 
 ## <a name="next-steps"></a>Passaggi successivi
 Dopo aver individuato l'evento che richiede maggiore priorità, puoi continuare eseguendo ulteriori operazioni di indagine su un evento.
 - [Indagare sugli eventi imprevisti](investigate-incidents.md)
 
 
-## <a name="related-topics"></a>Argomenti correlati
+## <a name="see-also"></a>Vedere anche
 - [Panoramica degli eventi imprevisti](incidents-overview.md)
 - [Indagare sugli eventi imprevisti](investigate-incidents.md)
 - [Gestire gli eventi imprevisti](manage-incidents.md)

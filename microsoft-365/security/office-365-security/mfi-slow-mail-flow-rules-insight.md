@@ -2,7 +2,7 @@
 title: Correggere informazioni dettagliate sulle regole del flusso di posta lento
 f1.keywords:
 - NOCSH
-ms.author: chrisda
+ms.author: siosulli
 author: chrisda
 manager: dansimp
 ms.date: ''
@@ -14,12 +14,12 @@ ms.assetid: 37125cdb-715d-42d0-b669-1a8efa140813
 ms.custom:
 - seo-marvel-apr2020
 description: Gli amministratori possono ottenere informazioni su come utilizzare le & regole del flusso di posta indesiderata per identificare e correggere le regole del flusso di posta inefficienti o interrotte (note anche come regole di trasporto) nell'organizzazione.
-ms.openlocfilehash: 2f9a35534ab4377cff164b38eeb66dd55c48d5b9
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 6a2a3c42eadf3c621b34d2a21344eafd2618e669
+ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48199266"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48877538"
 ---
 # <a name="fix-slow-mail-flow-rules-insight-in-the-security--compliance-center"></a>Fix Slow Mail Flow Rules Insight nel centro sicurezza & Compliance
 
@@ -40,10 +40,10 @@ La **correzione delle regole del flusso di posta lenta** nell'area **consigliata
 
 Quando si fa clic su **Visualizza dettagli** nel widget, viene visualizzato un riquadro a comparsa con ulteriori informazioni:
 
-- **Regola**: è possibile posizionare il puntatore del mouse sul riepilogo per visualizzare tutte le condizioni, le eccezioni e le azioni della regola. È possibile fare clic sul riepilogo per modificare la regola nell'interfaccia di amministrazione di Exchange (EAC).
-- **Numero di messaggi valutati**: è possibile fare clic su **Visualizza messaggi di esempio** per visualizzare i risultati di [traccia](message-trace-scc.md) dei messaggi per un esempio di messaggi che sono stati interessati dalla regola.
+- **Regola** : è possibile posizionare il puntatore del mouse sul riepilogo per visualizzare tutte le condizioni, le eccezioni e le azioni della regola. È possibile fare clic sul riepilogo per modificare la regola nell'interfaccia di amministrazione di Exchange (EAC).
+- **Numero di messaggi valutati** : è possibile fare clic su **Visualizza messaggi di esempio** per visualizzare i risultati di [traccia](message-trace-scc.md) dei messaggi per un esempio di messaggi che sono stati interessati dalla regola.
 - **Tempo medio impiegato per ogni messaggio**
-- **Tempo mediano dedicato a un messaggio**: il valore medio che separa la metà superiore dalla metà inferiore dei dati temporali.
+- **Tempo mediano dedicato a un messaggio** : il valore medio che separa la metà superiore dalla metà inferiore dei dati temporali.
 
 ![Riquadro a comparsa dettagli che viene visualizzato dopo aver fatto clic su Visualizza dettagli nell'Insight delle regole del flusso di posta lenta](../../media/mfi-fix-slow-mail-flow-rules-details.png)
 

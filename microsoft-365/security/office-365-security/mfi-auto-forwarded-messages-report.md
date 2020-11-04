@@ -2,7 +2,7 @@
 title: Informazioni dettagliate sui messaggi inoltrati automaticamente
 f1.keywords:
 - NOCSH
-ms.author: chrisda
+ms.author: siosulli
 author: chrisda
 manager: dansimp
 audience: ITPro
@@ -11,12 +11,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: b5543faa-44fa-44c5-8180-fb835e7e452d
 description: Gli amministratori possono ottenere informazioni sul rapporto messaggi auto-inoltrati nel dashboard del flusso di posta elettronica nel centro sicurezza & Compliance.
-ms.openlocfilehash: d4b772e6392e0af22e6bed475970f637ed03dcb1
-ms.sourcegitcommit: 1522a6471e0c5254a6d0f592e1f4dfacd1dd473a
+ms.openlocfilehash: 01a094b8531672708fc024e8ed0c5833786dbb0c
+ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "48245948"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48877790"
 ---
 # <a name="auto-forwarded-messages-insight-in-the-security--compliance-center"></a>Insight dei messaggi auto-inoltrati nel centro sicurezza & Compliance
 
@@ -31,14 +31,14 @@ L'Insight dei **messaggi auto-inoltrati** nel [Dashboard del flusso di posta ele
 
 Quando si fa clic sul numero di messaggi nel widget, viene visualizzato un riquadro a comparsa che consente di visualizzare ulteriori informazioni sui messaggi auto-inoltrati:
 
-- Inoltro **automatico dei messaggi tramite i metodi di inoltro**:
+- Inoltro **automatico dei messaggi tramite i metodi di inoltro** :
 
   - **Regole del flusso di posta**
   - **Dalle regole di posta in arrivo**
-  - **By SMTP forwarding**: questo è l'inoltro automatico che gli amministratori possono configurare su una cassetta postale, come descritto in [Configure email forwarding for a Mailbox](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-user-mailboxes/configure-email-forwarding).
+  - **By SMTP forwarding** : questo è l'inoltro automatico che gli amministratori possono configurare su una cassetta postale, come descritto in [Configure email forwarding for a Mailbox](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-user-mailboxes/configure-email-forwarding).
   - Un collegamento al [rapporto di inoltro](view-mail-flow-reports.md#forwarding-report) per ulteriori dettagli.
 
-- **Messaggi auto-inoltrati da domini e utenti**:
+- **Messaggi auto-inoltrati da domini e utenti** :
 
   - **Top 5 domini inoltrati a**
   - **Nuovi domini (la settimana scorsa)**

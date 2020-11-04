@@ -2,7 +2,7 @@
 title: Segnalare messaggi di posta indesiderata, non di posta indesiderata e phishing a Microsoft
 f1.keywords:
 - NOCSH
-ms.author: chrisda
+ms.author: siosulli
 author: chrisda
 manager: dansimp
 ms.date: ''
@@ -16,12 +16,12 @@ ms.assetid: c31406ea-2979-4fac-9288-f835269b9d2f
 ms.collection:
 - M365-security-compliance
 description: Gli amministratori possono ottenere informazioni sui diversi modi per segnalare messaggi buoni e non validi e file a Microsoft per l'analisi.
-ms.openlocfilehash: 294f74daf8dcbb94c9416f3fa1bb799ebd974c60
-ms.sourcegitcommit: 3a0accd616ca94d6ba7f50e502552b45e9661a95
+ms.openlocfilehash: 28018446b40c6dee95e3be230b3897c645d9b211
+ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "48351024"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48877244"
 ---
 # <a name="report-messages-and-files-to-microsoft"></a>Segnalazione di messaggi e file a Microsoft
 

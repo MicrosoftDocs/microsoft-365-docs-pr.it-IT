@@ -2,7 +2,7 @@
 title: Intelligence del flusso di posta
 f1.keywords:
 - NOCSH
-ms.author: chrisda
+ms.author: siosulli
 author: chrisda
 manager: dansimp
 audience: ITPro
@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: c29f75e5-c16e-409e-a123-430691e38276
 description: Gli amministratori possono ottenere informazioni sui codici di errore associati al recapito dei messaggi utilizzando i connettori (noti anche come Intelligence del flusso di posta).
-ms.openlocfilehash: 0d73ea1fe64cda3c3f29f7bd437bba4e93f37529
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 461d9bfa91d88b8bbec52d5aad6ec7a2e534bc96
+ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48198504"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48877802"
 ---
 # <a name="mail-flow-intelligence-in-eop"></a>Intelligence del flusso di posta in Exchange Online Protection
 
@@ -81,7 +81,7 @@ In genere, questo errore indica che Microsoft 365 ha riscontrato un errore di co
 
   - Modificare il dominio accettato in Microsoft 365 associato all'ambiente di posta elettronica locale dall' **inoltro interno** a **autorevole**. Per istruzioni, vedere [Manage Accepted Domains in Exchange Online](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains).
 
-  **Nota**: in genere, queste modifiche impiegano tra 30 minuti e un'ora per rendere effettive le operazioni. Dopo un'ora, verificare che l'errore non sia più stato ricevuto.
+  **Nota** : in genere, queste modifiche impiegano tra 30 minuti e un'ora per rendere effettive le operazioni. Dopo un'ora, verificare che l'errore non sia più stato ricevuto.
 
 - Se l'errore è generato nell'organizzazione del partner (ad esempio, il provider di servizi cloud di terze parti), è necessario contattarlo e chiedere la risoluzione del problema.
 
