@@ -15,12 +15,12 @@ audience: itpro
 ms.collection:
 - GDPR
 - M365-security-compliance
-ms.openlocfilehash: 6fc99048a4a60991b9ba098249692584f596545b
-ms.sourcegitcommit: 888b9355ef7b933c55ca6c18639c12426ff3fbde
+ms.openlocfilehash: 30fefe49dbbe1bffa0447d66695431d30342b843
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "48305116"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48843140"
 ---
 # <a name="data-processor-service-for-windows-enterprise-breach-notification-under-the-gdpr"></a>Notifica di violazione relativa al servizio di trattamento dei dati per Windows Enterprise ai sensi del GDPR
 
@@ -33,11 +33,11 @@ La sicurezza è integrata nel servizio di trattamento dei dati per Windows Enter
 
 |**Fase**|**Descrizione**|
 | ------- | ------------- |
-| ***1 - Rilevamento*** | Prima indicazione di un potenziale incidente. |
-| ***2 - Valutazione*** | Un tecnico di turno del team di intervento per gli incidenti valuta l'impatto e la gravità dell'incidente. Secondo le prove raccolte, la valutazione può comportare o meno un'ulteriore escalation al team di intervento della sicurezza. |
-| ***3 - Diagnostica*** | Gli esperti del team di intervento della sicurezza svolgono le indagini tecniche o forensi, identificano le strategie di contenimento, mitigazione e le soluzioni alternative. Se il team della sicurezza ritiene che i dati del cliente potrebbero essere stati esposti a un individuo non autorizzato o a un criminale, il processo di notifica dell'incidente al cliente si svolge in parallelo. |
-| ***4 - Stabilizzazione e ripristino*** | Il team di intervento per gli incidenti crea un piano di ripristino per mitigare il problema. Le misure di contenimento della crisi, come l'applicazione della quarantena ai sistemi colpiti, possono verificarsi immediatamente e parallelamente alla fase di diagnosi. Si possono pianificare misure di mitigazione a lungo termine da implementare dopo che è passato il rischio immediato. |
-| ***5 - Chiusura e relazione finale*** | Il team di intervento per gli incidenti crea una relazione finale dettagliata dell'incidente finalizzata alla revisione di criteri, procedure e interventi per prevenire il ripetersi dell'evento. |
+| **_1 — Rilevamento_* _ | Prima indicazione di un potenziale incidente. |
+| _*_2 — Valutazione_*_ | Un tecnico di turno del team di intervento per gli incidenti valuta l'impatto e la gravità dell'incidente. Secondo le prove raccolte, la valutazione può comportare o meno un'ulteriore escalation al team di intervento della sicurezza. |
+| _*_3 — Diagnostica_*_ | Gli esperti del team di intervento della sicurezza svolgono le indagini tecniche o forensi, identificano le strategie di contenimento, mitigazione e le soluzioni alternative. Se il team della sicurezza ritiene che i dati del cliente potrebbero essere stati esposti a un individuo non autorizzato o a un criminale, il processo di notifica dell'incidente al cliente si svolge in parallelo. |
+| _*_4 — Stabilizzazione e ripristino_*_ | Il team di intervento per gli incidenti crea un piano di ripristino per mitigare il problema. Le misure di contenimento della crisi, come l'applicazione della quarantena ai sistemi colpiti, possono verificarsi immediatamente e parallelamente alla fase di diagnosi. Si possono pianificare misure di mitigazione a lungo termine da implementare dopo che è passato il rischio immediato. |
+| _*_5 — Chiusura e relazione finale_*_ | Il team di intervento per gli incidenti crea una relazione finale dettagliata dell'incidente finalizzata alla revisione di criteri, procedure e interventi per prevenire il ripetersi dell'evento. |
 
 I processi di rilevamento utilizzati dal servizio di trattamento dei dati per Windows Enterprise di Microsoft sono progettati per rilevare eventi che mettono a rischio la riservatezza, l'integrità e la disponibilità dei servizi del servizio di trattamento dei dati per Windows Enterprise. Diversi eventi possono dare il via a un'indagine: 
 
@@ -52,19 +52,19 @@ I processi di rilevamento utilizzati dal servizio di trattamento dei dati per Wi
 
  Microsoft assegna all'indagine adeguati livelli di priorità e gravità determinando l'impatto funzionale, la recuperabilità e l'impatto dell'evento sulle informazioni. La priorità e la gravità possono cambiare nel corso dell'indagine sulla base di nuove scoperte e conclusioni. Gli eventi di sicurezza che comportano rischi imminenti o confermati per i dati del cliente sono considerati di gravità elevata e vengono seguiti 24 ore su 24 fino a quando non vengono risolti. Il servizio di trattamento dei dati per Windows Enterprise di Microsoft classifica l'impatto dell'incidente sulle informazioni nelle seguenti categorie di violazione: 
 
-| **Categoria**             | **Definizione**                                                                                                                   |
+| _ *Categoria**             | **Definizione**                                                                                                                   |
 | ------------------------ | -------------------------------------------------------------------------------------------------------------------------------- |
-| ***Nessuna***               | Nessuna informazione è stata rimossa, modificata, cancellata o comunque compromessa. |
-| ***Violazione della privacy***     | È stato possibile accedere o rimuovere dati personali sensibili riguardanti i contribuenti, i dipendenti, i beneficiari e così via. |
-| ***Violazioni di proprietà*** | È stato possibile accedere o rimuovere informazioni proprietarie non classificate, ad esempio informazioni riguardanti l'infrastruttura critica protetta (PCII). |
-| ***Perdita di integrità***     | Sono state modificate o cancellate informazioni sensibili o proprietarie. |
+| **_Nessuna_* _               | Nessuna informazione è stata rimossa, modificata, cancellata o comunque compromessa. |
+| _*_Violazione della privacy_*_     | È stato possibile accedere o rimuovere dati personali sensibili riguardanti i contribuenti, i dipendenti, i beneficiari e così via. |
+| _*_Violazioni di proprietà_*_ | È stato possibile accedere o rimuovere informazioni proprietarie non classificate, ad esempio informazioni riguardanti l'infrastruttura critica protetta (PCII). |
+| _*_Perdita di integrità_*_     | Sono state modificate o cancellate informazioni sensibili o proprietarie. |
 
 Il team di Security Response collabora con il servizio di trattamento dei dati di Microsoft per Windows Enterprise Security Engineers e SME al fine di classificare l'evento sulla base di dati concreti tratti dalle prove raccolte. Un evento di sicurezza può essere classificato come: 
 
- - **Falso positivo**: un evento che soddisfa i criteri di rilevamento ma che risulta essere parte di una normale pratica aziendale e può avere bisogno di essere filtrato. Il team del servizio identificherà la causa principale dei falsi positivi e li risolverà in modo sistematico sfruttando le fonti di rilevamento e ottimizzandole se necessario. 
- - **Incidente di sicurezza**: un accesso illecito o non autorizzato ai dati del cliente o ai dati di supporto archiviati nelle apparecchiature o strutture Microsoft che ha provocato la perdita, la divulgazione o l'alterazione dei dati del cliente o dei dati di supporto. 
- - **Incidente di sicurezza segnalabile dal cliente (CRSI)**: un accesso o un utilizzo illecito o non autorizzato dei sistemi, delle apparecchiature o strutture Microsoft che ha provocato la divulgazione, la modifica o la perdita dei dati del cliente. 
- - **Violazione della privacy**: un sottotipo di incidente di sicurezza che coinvolge dati personali. Le procedure di gestione non sono diverse da un incidente di sicurezza. 
+ - *Falso positivo**: un evento che soddisfa i criteri di rilevamento ma che risulta essere parte di una normale pratica aziendale e può avere bisogno di essere filtrato. Il team del servizio identificherà la causa principale dei falsi positivi e li risolverà in modo sistematico sfruttando le fonti di rilevamento e ottimizzandole se necessario. 
+ - **Incidente di sicurezza** : un accesso illecito o non autorizzato ai dati del cliente o ai dati di supporto archiviati nelle apparecchiature o strutture Microsoft che ha provocato la perdita, la divulgazione o l'alterazione dei dati del cliente o dei dati di supporto. 
+ - **Incidente di sicurezza segnalabile dal cliente (CRSI)** : un accesso o un utilizzo illecito o non autorizzato dei sistemi, delle apparecchiature o strutture Microsoft che ha provocato la divulgazione, la modifica o la perdita dei dati del cliente. 
+ - **Violazione della privacy** : un sottotipo di incidente di sicurezza che coinvolge dati personali. Le procedure di gestione non sono diverse da un incidente di sicurezza. 
 
  Affinché un incidente di sicurezza segnalabile dal cliente possa essere dichiarato, Microsoft deve stabilire che l'accesso non autorizzato ai dati del cliente è avvenuto o molto probabilmente si è verificato e/o che esiste un impegno legale o contrattuale perché si verifichi la notifica. È auspicabile, ma non è necessario, conoscere lo specifico impatto sul cliente, l'accesso alle risorse e i passaggi di ripristino. Un incidente di sicurezza è generalmente dichiarato incidente di sicurezza segnalabile dal cliente dopo la conclusione della fase di diagnosi; tuttavia, la dichiarazione può avvenire in qualsiasi momento in cui tutte le informazioni pertinenti siano disponibili. Il responsabile dell'incidente deve stabilire oltre ogni ragionevole dubbio che si è verificato un evento da segnalare per iniziare l'esecuzione del Processo di notifica dell'incidente del cliente. 
 
@@ -85,7 +85,7 @@ Dopo aver dichiarato un CRSI, il processo di notifica si verificherà nel modo p
 
  Il servizio di trattamento dei dati per Windows Enterprise di Microsoft fornisce ai clienti informazioni dettagliate che consentono loro di svolgere indagini interne e di assisterli nell'adempimento degli impegni assunti con l'utente finale, senza ritardare ingiustificatamente il processo di notifica. 
 
-La notifica di una violazione dei dati personali verrà recapitata al cliente con qualsiasi mezzo Microsoft selezioni, anche tramite posta elettronica. La notifica di una violazione dei dati verrà inviata all'elenco dei contatti di sicurezza specificato nel Centro sicurezza di Azure, che può essere configurato seguendo le [linee guida per l'implementazione](https://docs.microsoft.com/azure/security-center/security-center-provide-security-contact-details). Se le informazioni sui contatti non sono disponibili nel Centro sicurezza di Azure, la notifica verrà inviata a uno o più amministratori di una sottoscrizione di Azure. Per fare in modo che la notifica possa essere recapitata correttamente, il cliente è tenuto a verificare la correttezza delle informazioni sui contatti amministrativi relative a ogni sottoscrizione e portale dei servizi online applicabile.
+La notifica di una violazione dei dati personali verrà recapitata al cliente con qualsiasi mezzo Microsoft selezioni, anche tramite posta elettronica. La notifica di una violazione dei dati verrà recapitata all'elenco dei contatti di sicurezza disponibili nell' *di Azure Defender, che può essere configurata seguendo le indicazioni di [implementazione](https://docs.microsoft.com/azure/security-center/security-center-provide-security-contact-details). Se le informazioni sui contatti non sono disponibili in Azure Defender* , la notifica viene inviata a uno o più amministratori di un abbonamento ad Azure. Per fare in modo che la notifica possa essere recapitata correttamente, il cliente è tenuto a verificare la correttezza delle informazioni sui contatti amministrativi relative a ogni sottoscrizione e portale dei servizi online applicabile.
 
 Il team del Servizio di trattamento dei dati aziendali per Windows può anche decidere di informare altri membri del personale Microsoft, ad esempio il Supporto tecnico (CSS), e l'Account Manager (AM) o il Technical Account Manager (TAM) del cliente. Tali figure hanno spesso strette relazioni con il cliente e possono facilitare una correzione più rapida. 
 

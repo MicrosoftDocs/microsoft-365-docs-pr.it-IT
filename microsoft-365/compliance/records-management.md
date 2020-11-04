@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 description: Con la gestione dei record di Microsoft 365, è possibile applicare le pianificazioni di conservazione in un piano di archiviazione che gestisce la conservazione, la dichiarazione dei record e l’eliminazione.
-ms.openlocfilehash: e6e72a14d0d3e22823c8341145f64721831586f9
-ms.sourcegitcommit: 095b1f52f2e73e8d44195916984efeb0908c2ad8
+ms.openlocfilehash: 6648a3a671e40dd5218eba1a1e8bafe42120f0de
+ms.sourcegitcommit: 9d1351ea6d9942550b52132817f9f9693ddef2fd
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "48755565"
+ms.lasthandoff: 11/02/2020
+ms.locfileid: "48830527"
 ---
 # <a name="learn-about-records-management-in-microsoft-365"></a>Informazioni sulla gestione dei record in Microsoft 365
 
@@ -42,11 +42,11 @@ Usa le funzionalità seguenti per supportare la soluzione di gestione dei record
 
 - **Configurare le impostazioni di conservazione ed eliminazione con etichetta di conservazione**. Configurare [etichette di conservazione](retention.md#retention-labels) con i periodi e le azioni di conservazione in base a vari fattori, tra cui la data dell'ultima modifica o di creazione.
 
-- **Avviare periodi di conservazione diversi quando si verifica un evento** con la[conservazione basata su eventi](event-driven-retention.md).
+- **Avviare periodi di conservazione diversi quando si verifica un evento** con la [conservazione basata su eventi](event-driven-retention.md).
 
-- **Rivedere e convalidare l'eliminazione ** con la [revisione per l'eliminazione](disposition.md#disposition-reviews) e la prova dell'[eliminazione dei record](disposition.md#disposition-of-records).
+- **Rivedere e convalidare l'eliminazione** con la [revisione per l'eliminazione](disposition.md#disposition-reviews) e la prova dell' [eliminazione dei record](disposition.md#disposition-of-records).
 
-- **Esportare le informazioni riguardanti tutti gli elementi eliminati** con l'[opzione di esportazione](disposition.md#filter-and-export-the-views).
+- **Esportare le informazioni riguardanti tutti gli elementi eliminati** con l' [opzione di esportazione](disposition.md#filter-and-export-the-views).
 
 - **Impostare autorizzazioni specifiche** per le funzioni di gestione dei record nell'organizzazione per [avere l’accesso corretto](../security/office-365-security/permissions-in-the-security-and-compliance-center.md).
 
@@ -64,7 +64,7 @@ Quando il contenuto è dichiarato come record:
 
 - Si ha una prova dell'eliminazione quando l'elemento viene eliminato al termine del periodo di conservazione.
 
-È possibile usare le [etichette di conservazione](retention.md#retention-labels) per contrassegnare il conenuto come un **record** o un **record normativo** (al momento in anteprima). La differenza tra le due è spiegata nella prossima sezione. È possibile pubblicare tali etichette in modo che utenti e amministratori possano applicarle manualmente al contenuto oppure applicarle automaticamente al contenuto che si desidera contrassegnare come record o record normativo.
+È possibile usare le [etichette di conservazione](retention.md#retention-labels) per contrassegnare il contenuto come un **record** o un **record normativo**. La differenza tra le due è spiegata nella prossima sezione. È possibile pubblicare tali etichette in modo che utenti e amministratori possano applicarle manualmente al contenuto oppure applicarle automaticamente al contenuto che si desidera contrassegnare come record o record normativo.
 
 Usando le etichette di conservazione per dichiarare i record, è possibile implementare una strategia unica e coerente per la gestione dei record nell'ambiente Microsoft 365.
 

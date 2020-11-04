@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 3dc182ce799078e50087699aa3ca88c3abbcf769
-ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
+ms.openlocfilehash: 1acab5da365b8d89671bca37a5b84bdab9e3e47b
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48208428"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48843372"
 ---
 # <a name="isoiec-270012013-information-security-management-standards"></a>Standard di gestione della sicurezza delle informazioni ISO/IEC 27001:2013
 
@@ -42,7 +42,7 @@ Per informazioni sui vantaggi di ISO/IEC 27001 in Microsoft Cloud, [scaricare il
 - [Azure, Azure per enti pubblici e Azure Germania](https://aka.ms/AzureCompliance)
 - Azure DevOps Services
 - Microsoft Cloud App Security
-- Microsoft Defender Advanced Threat Protection
+- Microsoft Defender per endpoint
 - [Dynamics 365, Dynamics 365 Government e Dynamics 365 Germany](https://aka.ms/d365-compliance-list)
 - Microsoft Graph
 - Microsoft Healthcare Bot
@@ -128,7 +128,7 @@ Sì. Se l'azienda richiede la certificazione ISO/IEC 27001 per le implementazion
 
 ## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>Usare Microsoft Compliance Manager per valutare i rischi
 
-[Microsoft Compliance Manager](compliance-manager.md) è una funzionalità nel [Centro conformità Microsoft 365](microsoft-365-compliance-center.md) utile per comprendere lo stato di conformità dell'organizzazione e attuare misure per ridurre i rischi. Compliance Manager offre una valutazione predefinita per questa normativa ai clienti Enterprise E5. Individuare il modello per la creazione della valutazione nella pagina **modelli di valutazioni** di Compliance Manager. Informazioni su come [creare valutazioni in Compliance Manager](compliance-manager-assessments.md).
+[Microsoft Compliance Manager](compliance-manager.md) è una funzionalità del [Centro conformità Microsoft 365](microsoft-365-compliance-center.md) utile per comprendere lo stato di conformità dell'organizzazione e adottare misure per ridurre i rischi. Compliance Manager offre una valutazione predefinita per questa normativa ai clienti Enterprise E5. Il modello per realizzare la valutazione è disponibile nella pagina dei **modelli di valutazioni** di Compliance Manager. Informazioni su come [creare valutazioni in Compliance Manager](compliance-manager-assessments.md).
 
 ## <a name="resources"></a>Risorse
 

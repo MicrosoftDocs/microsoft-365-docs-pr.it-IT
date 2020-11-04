@@ -17,21 +17,18 @@ search.appverid:
 - MOE150
 - MET150
 description: Usare le etichette di conservazione per dichiarare i record.
-ms.openlocfilehash: 490f81ba9c1d2d291539107650ec3c3f5938eba8
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 34b5272a8bed9be01c3965dae258c88facec0145
+ms.sourcegitcommit: 9d1351ea6d9942550b52132817f9f9693ddef2fd
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48198925"
+ms.lasthandoff: 11/02/2020
+ms.locfileid: "48830605"
 ---
 # <a name="declare-records-by-using-retention-labels"></a>Usare le etichette di conservazione per dichiarare i record
 
 >*[Indicazioni per l'assegnazione di licenze di Microsoft 365 per sicurezza e conformità](https://aka.ms/ComplianceSD).*
 
 Per dichiarare documenti e messaggi di posta elettronica come [record](records-management.md#records), usare [etichette di conservazione](retention.md#retention-labels) che contrassegnano i contenuti come **record** o **record normativi**.
-
-> [!NOTE]
-> Al momento i record normativi sono in anteprima.
 
 Se si hanno dubbi sull'uso di un record oppure di un record normativo, vedere [Confrontare le restrizioni relative alle azioni consentite o bloccate](records-management.md#compare-restrictions-for-what-actions-are-allowed-or-blocked). Se bisogna usare i record regolatori, per prima cosa si deve eseguire un comando di PowerShell, come descritto nella sezione seguente.
 
@@ -40,7 +37,7 @@ In seguito è possibile pubblicare tali etichetta in un criterio per le etichett
 ## <a name="how-to-display-the-option-to-mark-content-as-a-regulatory-record"></a>Come visualizzare l'opzione per contrassegnare i contenuti come record normativi
 
 >[!NOTE] 
-> Questa procedura è un'azione controllabile, che registra l'**Opzione dei record normativi abilitata per le etichette di conservazione** nella sezione [Criteri di conservazione e attività delle etichette di conservazione](search-the-audit-log-in-security-and-compliance.md#retention-policy-and-retention-label-activities) del log di controllo.
+> Questa procedura è un'azione controllabile, che registra l' **Opzione dei record normativi abilitata per le etichette di conservazione** nella sezione [Criteri di conservazione e attività delle etichette di conservazione](search-the-audit-log-in-security-and-compliance.md#retention-policy-and-retention-label-activities) del log di controllo.
 
 Per impostazione predefinita, l'opzione dell'etichetta di conservazione per contrassegnare i contenuti come record normativi non è mostrata nella procedura guidata dell'etichetta di conservazione. Per visualizzare questa opzione, è prima necessario eseguire un comando di PowerShell:
 
@@ -53,7 +50,7 @@ Per impostazione predefinita, l'opzione dell'etichetta di conservazione per cont
     ````
     Non viene richiesta la conferma, e l'impostazione ha effetto immediato.
 
-Se si cambia idea in merito alla configurazione di questa opzione nella procedura di creazione dell'etichetta di conservazione, la si può nascondere eseguendo lo stesso cmdlet con il valore **false**: `Set-RegulatoryComplianceUI -Enabled $false` 
+Se si cambia idea in merito alla configurazione di questa opzione nella procedura di creazione dell'etichetta di conservazione, la si può nascondere eseguendo lo stesso cmdlet con il valore **false** : `Set-RegulatoryComplianceUI -Enabled $false` 
 
 ## <a name="configuring-retention-labels-to-declare-records"></a>Configurare le etichette di conservazione per dichiarare i record
 

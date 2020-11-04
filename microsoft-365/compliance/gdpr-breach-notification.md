@@ -17,12 +17,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-mar2020
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: e4750e063c0f049c5f3faa1667aafb7f1afa6586
-ms.sourcegitcommit: 888b9355ef7b933c55ca6c18639c12426ff3fbde
+ms.openlocfilehash: e94cd9e615ee53827517dd7de02d9c0002532688
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "48305180"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48843150"
 ---
 # <a name="gdpr-breach-notification"></a>Notifica di violazione del GDPR
 
@@ -36,10 +36,10 @@ Per dati personali si intendono tutte le informazioni relative a un individuo ch
 
 Definizioni utili per i termini relativi al GDPR usati nel documento:
 
-- *Titolare del trattamento dei dati (titolare)*: una persona giuridica, un'autorità pubblica, un'agenzia o un altro organismo che, da solo o congiuntamente con altri, determina le finalità e le modalità di trattamento dei dati personali.  
-- *Dati personali* e *interessato*: qualsiasi informazione relativa a una persona fisica identificata o identificabile (interessato); una persona fisica identificabile è una persona che può essere identificata, direttamente o indirettamente.  
-- *Responsabile*: una persona fisica o giuridica, un'autorità pubblica o un altro ente che si occupa del trattamento dei dati personali per conto del titolare.  
-- *Dati dei clienti*: dati prodotti e archiviati relativi alle attività quotidiane di gestione della propria attività.
+- *Titolare del trattamento dei dati (titolare)* : una persona giuridica, un'autorità pubblica, un'agenzia o un altro organismo che, da solo o congiuntamente con altri, determina le finalità e le modalità di trattamento dei dati personali.  
+- *Dati personali* e *interessato* : qualsiasi informazione relativa a una persona fisica identificata o identificabile (interessato); una persona fisica identificabile è una persona che può essere identificata, direttamente o indirettamente.  
+- *Responsabile* : una persona fisica o giuridica, un'autorità pubblica o un altro ente che si occupa del trattamento dei dati personali per conto del titolare.  
+- *Dati dei clienti* : dati prodotti e archiviati relativi alle attività quotidiane di gestione della propria attività.
 
 ## <a name="microsoft-and-breach-notification"></a>Microsoft e la notifica di violazione
 
@@ -61,14 +61,14 @@ Di seguito sono indicati i dettagli relativi alla notifica della violazione per 
 2. **[Azure e Dynamics 365](gdpr-breach-azure-dynamics.md)**  
     Microsoft ha un servizio globale di risposta per gli eventi imprevisti, attivo 24 ore su 24 e 7 giorni su 7, che lavora per attenuare gli effetti degli attacchi nei confronti di Microsoft Azure e Dynamics 365.
 
-    - *Rilevamento delle violazioni*: poiché sia Microsoft che il cliente hanno obblighi nei confronti della sicurezza, i servizi di Azure usano un modello di responsabilità condivisa per definire la sicurezza e le responsabilità operative. Microsoft non monitora o interviene in caso di incidenti di sicurezza nell'ambito della responsabilità del cliente. L’intervento in caso di incidente del cliente può comportare la collaborazione con il [supporto clienti](https://azure.microsoft.com/support/options/) di Azure secondo adeguati contratti di servizio. Microsoft Azure offre anche diversi servizi, ad esempio il [Centro sicurezza di Azure](https://azure.microsoft.com/services/security-center/) che i clienti possono usare per sviluppare e gestire gli interventi in caso di incidenti di sicurezza.
+    - *Rilevamento delle violazioni* : poiché sia Microsoft che il cliente hanno obblighi nei confronti della sicurezza, i servizi di Azure usano un modello di responsabilità condivisa per definire la sicurezza e le responsabilità operative. Microsoft non monitora o interviene in caso di incidenti di sicurezza nell'ambito della responsabilità del cliente. L’intervento in caso di incidente del cliente può comportare la collaborazione con il [supporto clienti](https://azure.microsoft.com/support/options/) di Azure secondo adeguati contratti di servizio. Microsoft Azure offre anche diversi servizi, ad esempio il [Azure Defender*](https://azure.microsoft.com/services/security-center/) che i clienti possono usare per sviluppare e gestire gli interventi in caso di incidenti relativi alla sicurezza.
 
         Per un elenco degli eventi che attivano le indagini sulle violazioni in Microsoft Azure vedere [Rilevamento di potenziali violazioni](https://docs.microsoft.com/microsoft-365/compliance/gdpr-breach-azure-dynamics#detection-of-potential-breaches). In [Azure e notifica di violazione secondo il GDPR](gdpr-breach-azure-dynamics.md) sono disponibili ulteriori dettagli su come Microsoft indaga, gestisce e interviene relativamente agli incidenti di sicurezza all'interno di Azure.
 
-    - *Intervento in caso di violazione dei dati*: Microsoft stabilisce adeguati livelli di priorità e gravità di una violazione tramite l’analisi dell'impatto funzionale, la recuperabilità e l'impatto dell’evento sulle informazioni. La priorità e la gravità potrebbero cambiare nel corso dell'indagine in base a nuovi risultati e conclusioni.
+    - *Intervento in caso di violazione dei dati* : Microsoft stabilisce adeguati livelli di priorità e gravità di una violazione tramite l’analisi dell'impatto funzionale, la recuperabilità e l'impatto dell’evento sulle informazioni. La priorità e la gravità potrebbero cambiare nel corso dell'indagine in base a nuovi risultati e conclusioni.
     Il team di intervento in casi di incidenti di sicurezza di Microsoft lavora a stretto contatto con i consulenti legali globali per assicurare che le analisi dei dati vengano eseguite in conformità agli obblighi normativi e agli obblighi nei confronti dei clienti. Questi processi sono descritti dettagliatamente in [Intervento in caso di violazione dei dati di Azure](https://docs.microsoft.com/microsoft-365/compliance/gdpr-breach-azure-dynamics#azures-data-breach-response).
 
-    - *Notifica al cliente*: Microsoft Azure invia una notifica al cliente e alle autorità competenti sulle violazioni dei dati come previsto. Le notifiche ai cliente vengono recapitate entro 72 ore dall’identificazione di una violazione tranne nei casi seguenti:
+    - *Notifica al cliente* : Microsoft Azure invia una notifica al cliente e alle autorità competenti sulle violazioni dei dati come previsto. Le notifiche ai cliente vengono recapitate entro 72 ore dall’identificazione di una violazione tranne nei casi seguenti:
 
         - Microsoft ritiene che l’azione di inviare una notifica possa aumentare il rischio per altri clienti.
         - La sequenza temporale di 72 ore potrebbe rendere pubblici alcuni dettagli sull'evento. Questi dettagli verranno forniti nel corso delle indagini.
@@ -80,7 +80,7 @@ Di seguito sono indicati i dettagli relativi alla notifica della violazione per 
 
 ## <a name="breach-notification-admin-tools"></a>Strumenti di amministratore della notifica di violazione
 
-- **Nominare il contatto responsabile della privacy nell'organizzazione**: gli amministratori tenant possono utilizzare il [Portale di amministrazione di Active Directory](https://go.microsoft.com/fwlink/p/?linkid=2052736) per definire il contatto responsabile della privacy nell'organizzazione per eventuali comunicazioni di Microsoft.
+- **Nominare il contatto responsabile della privacy nell'organizzazione** : gli amministratori tenant possono utilizzare il [Portale di amministrazione di Active Directory](https://go.microsoft.com/fwlink/p/?linkid=2052736) per definire il contatto responsabile della privacy nell'organizzazione per eventuali comunicazioni di Microsoft.
 
 ## <a name="learn-more"></a>Ulteriori informazioni
 
