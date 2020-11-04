@@ -12,17 +12,16 @@ ms.collection:
 - M365-subscription-management
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: a0dabc7694c925f35a98d9ca0c9855bd85bf6c53
-ms.sourcegitcommit: 0f71042edc7c3a7f10a7b92e1943abf51532cbf5
+ms.openlocfilehash: 3d8ee3dd32810adf967f45e54e38e71301c60e07
+ms.sourcegitcommit: 371249d3dde12092b820cd11ed3e02b31e88636a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "46521386"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48897222"
 ---
 # <a name="microsoft-365-foundation-solutions-overview"></a>Panoramica delle soluzioni di Microsoft 365 Foundation
 
-
-![Blocks ](https://docs.microsoft.com/office/media/icons/blocks-blue.png) **Foundation Solutions** queste soluzioni forniscono una guida completa per un problema o una necessità aziendali specifiche. Consentono di eseguire le scelte che determinano un risultato finale funzionante, dalla pianificazione all'implementazione e all'adozione. 
+![Blocks ](https://docs.microsoft.com/office/media/icons/blocks-blue.png) **Foundation Solutions**  queste soluzioni forniscono una guida completa per un problema o una necessità aziendali specifiche. Consentono di eseguire le scelte che determinano un risultato finale funzionante, dalla pianificazione all'implementazione e all'adozione.
 
 - [Supportare i lavoratori remoti](empower-people-to-work-remotely.md)
 - [Collaborare in modo sicuro in team, gruppi e siti](setup-secure-collaboration-with-teams.md)
