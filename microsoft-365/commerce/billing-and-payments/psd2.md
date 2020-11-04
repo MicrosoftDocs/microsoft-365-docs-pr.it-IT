@@ -14,18 +14,18 @@ ms.collection:
 ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
-description: A partire dal 14 settembre 2019, le banche nei 31 paesi dello spazio economico europeo sono tenute a verificare l'identità della persona che effettua un acquisto online prima che il pagamento possa essere elaborato.
+description: Al 14 settembre 2019, le banche nei 31 paesi dello spazio economico europeo sono tenute a verificare l'identità della persona che effettua un acquisto online prima che il pagamento possa essere evaso.
 keywords: direttiva sui servizi di pagamento 2, autenticazione dei clienti complessa, autenticazione a più fattori
-ms.openlocfilehash: fc8784949cdacea10957660c99795b4ade0f9f7a
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: d6564a8c6d31bd0758f1084e7ee9b6857aed034e
+ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48638424"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48906610"
 ---
 # <a name="payment-services-directive-2-and-strong-customer-authentication-for-commercial-customers"></a>Direttiva sui servizi di pagamento 2 e autenticazione del cliente avanzata per clienti commerciali
 
-A partire dal 14 settembre 2019, le banche nei 31 paesi dello spazio economico europeo sono tenute a verificare l'identità della persona che effettua un acquisto online prima che il pagamento possa essere elaborato. Questa verifica richiede l'autenticazione a più fattori per garantire la sicurezza e la protezione degli acquisti online. La data del requisito di verifica verrà posticipata per alcuni paesi. 
+Al 14 settembre 2019, le banche nei 31 paesi dello spazio economico europeo sono tenute a verificare l'identità della persona che effettua un acquisto online prima che il pagamento possa essere elaborato. Questa verifica richiede l'autenticazione a più fattori per garantire la sicurezza e la protezione degli acquisti online. La data del requisito di verifica verrà posticipata per alcuni paesi.
 
 Per ulteriori informazioni, vedere [Microsoft FAQ about Payment Services Directive 2 e Strong Customer Authentication](https://support.microsoft.com/help/4517854/microsoft-account-open-banking-customer-authentication).
 

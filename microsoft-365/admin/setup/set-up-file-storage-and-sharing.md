@@ -19,6 +19,7 @@ ms.custom:
 - IT_Networking
 - TRN_M365B
 - OKR_SMB_Videos
+- seo-marvel-may2020
 - AdminSurgePortfolio
 search.appverid:
 - BCS160
@@ -27,27 +28,27 @@ search.appverid:
 - ODB150
 - ODB160
 ms.assetid: 7aa9cdc8-2245-4218-81ee-86fa7c35f1de
-description: Informazioni su come utilizzare OneDrive e un sito del team per l'archiviazione e la condivisione dei file.
-ms.openlocfilehash: e6722dc7460a63878ba7fc6a15f6c384ca37e136
-ms.sourcegitcommit: 3a0accd616ca94d6ba7f50e502552b45e9661a95
+description: Informazioni su come utilizzare OneDrive e un sito del team per Microsoft 365 storage e Microsoft 365 file sharing.
+ms.openlocfilehash: cc6a7a45fda65073dc9b0cd15a844ec9aefca794
+ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "48350362"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48906394"
 ---
-# <a name="set-up-file-storage-and-sharing"></a>Configurare l'archiviazione e la condivisione di file
+# <a name="set-up-file-storage-and-sharing-in-microsoft-365"></a>Configurare l'archiviazione e la condivisione dei file in Microsoft 365
 
 Uno dei modi migliori per configurare l'archiviazione e la condivisione dei file per la propria azienda consiste nell'utilizzare OneDrive e un sito del team insieme. Questa soluzione è ideale per le piccole aziende con pochi dipendenti.
 
-Guardare un breve video sul percorso in cui archiviare i file in Microsoft 365.<br><br>
+Guardare un breve video sull'archiviazione dei file nel cloud Microsoft 365.<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FTHX] 
 
 Se il video è stato utile, consultare la [serie di formazione completa per piccole imprese e nuovi utenti di Microsoft 365](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
 
-## <a name="where-you-can-store-documents-in-microsoft-365"></a>Dove è possibile archiviare i documenti in Microsoft 365
+## <a name="microsoft-365-document-storage-and-management"></a>"Archiviazione e gestione di documenti Microsoft 365"
 
-- OneDrive è stato ideato per l'utilizzo individuale, con la condivisione occasionale dei file. 
+- OneDrive è stato ideato per l'utilizzo individuale, con la condivisione occasionale dei file.
 
 - Un sito del team è stato creato per la condivisione e la collaborazione dei file regolarmente. Un sito del team è ideale per l'archiviazione di file che dispongono di proprietà condivisa in cui più utenti possiedono i file e che possono collaborare su di essi. Creare un team di Microsoft per aggiungere un sito del team. Per ulteriori informazioni, vedere [creare un team in](https://support.microsoft.com/office/174adf5f-846b-4780-b765-de1a0a737e2b)teams.
 
@@ -72,7 +73,7 @@ Di seguito sono riportati alcuni suggerimenti su cosa archiviare in ogni percors
 
 Ogni persona dell'azienda che dispone di una licenza Microsoft 365 assegnata (e di SharePoint Online selezionata) ottiene lo spazio di archiviazione cloud di OneDrive. Sono in grado di archiviare i file correlati alle aziende per l'accesso da qualsiasi dispositivo e sono disponibili solo per l'utente. Si può ad esempio archiviare una bozza di proposta, le note di una riunione o il testo di una demo da presentare.
   
-I dipendenti possono anche condividere file e cartelle di OneDrive. Se un dipendente è via o lascia la società, altri utenti possono accedere ai file condivisi archiviati in OneDrive.
+I dipendenti possono anche condividere file e cartelle di OneDrive. Se un dipendente è via o lascia la società, altri utenti possono accedere ai file condivisi archiviati in OneDrive (condivisione cartelle del team di OneDrive).
   
 Di seguito viene illustrato come ogni persona del team può configurare OneDrive e condividere file.
 
@@ -157,11 +158,11 @@ Di seguito vengono forniti alcuni suggerimenti per ottenere il massimo da OneDri
   
 ### <a name="file-storage-and-collaboration-recommendations-for-other-types-of-small-businesses"></a>Suggerimenti sulla collaborazione e l'archiviazione di file per altri tipi di piccole aziende
 
-- **Sole individuali**: utilizzare OneDrive per archiviare i propri file e condividerli con i clienti caso per caso.
+- **Sole individuali** : utilizzare OneDrive per archiviare i propri file e condividerli con i clienti caso per caso.
 
-- **Comproprietà**: entrambi i proprietari utilizzano OneDrive e condividono i file avanti e indietro.
+- **Comproprietà** : entrambi i proprietari utilizzano OneDrive e condividono i file avanti e indietro.
 
-- **Aziende con client o partner esterni che hanno necessità di accedere ai file**: creare un nuovo sito del team per archiviare e condividere documenti destinati a un cliente specifico. Configurare il sito in modo da consentire l'accesso solo al cliente. Non è quindi necessario preoccuparsi che un cliente ottenga accidentalmente accesso alle informazioni destinate a un altro cliente.
+- **Aziende con client o partner esterni che hanno necessità di accedere ai file** : creare un nuovo sito del team per archiviare e condividere documenti destinati a un cliente specifico. Configurare il sito in modo da consentire l'accesso solo al cliente. Non è quindi necessario preoccuparsi che un cliente ottenga accidentalmente accesso alle informazioni destinate a un altro cliente.
 
 ### <a name="keep-private-files-private"></a>Mantenere privati i file riservati
 

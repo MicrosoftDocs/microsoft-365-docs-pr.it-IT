@@ -14,12 +14,12 @@ ms.collection:
 - m365solution-threatprotection
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 2d1316927124b1ce03910190922fa0804853ae4b
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 1bf06c605290dc94f64da6c2aabca3683c234c9a
+ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48845277"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48906752"
 ---
 # <a name="deploy-threat-protection-capabilities-across-microsoft-365"></a>Distribuire le funzionalità di protezione dalle minacce in Microsoft 365
 
@@ -55,7 +55,7 @@ Nella figura seguente viene illustrato un percorso consigliato per la distribuzi
 |Autenticazione a più fattori e accesso condizionale     |Protezione da identità e dispositivi compromessi. Iniziare con questa protezione perché è fondamentale. La configurazione consigliata in queste linee guida include Azure AD Identity Protection come prerequisito.     |
 |Microsoft Defender per identità     |  Una soluzione di sicurezza basata sul cloud che sfrutta i segnali di Active Directory locali per identificare, rilevare ed esaminare le minacce avanzate, le identità compromesse e le azioni Insider dannose indirizzate alla propria organizzazione. Concentrarsi su Microsoft Defender per Identity Next, in quanto protegge l'infrastruttura on-premi e cloud, non ha dipendenze o prerequisiti e può fornire vantaggi immediati.       | 
 |Microsoft Defender per Office 365     | Salvaguarda la propria organizzazione dalle minacce dannose poste da messaggi di posta elettronica, collegamenti (URL) e strumenti di collaborazione. Protezioni per malware, phishing, spoofing e altri tipi di attacco. La configurazione di Microsoft Defender per Office 365 è consigliata in seguito perché il controllo delle modifiche, la migrazione delle impostazioni dal sistema incumbent e altre considerazioni possono richiedere più tempo per la distribuzione. <br><br>Nota: assicurarsi di configurare le funzionalità di protezione dalle minacce incluse in tutte le sottoscrizioni di Office 365 (Exchange Online Protection).       |
-|Microsoft Defender ATP    | Piattaforma di protezione endpoint che consente di prevenire, rilevare, esaminare e rispondere alle minacce avanzate.  Il difensore dell'endpoint può richiedere del tempo per la distribuzione, ma la configurazione può essere eseguita in parallelo con altre funzionalità.   |
+|Microsoft Defender per endpoint    | Piattaforma di protezione endpoint che consente di prevenire, rilevare, esaminare e rispondere alle minacce avanzate.  Il difensore dell'endpoint può richiedere del tempo per la distribuzione, ma la configurazione può essere eseguita in parallelo con altre funzionalità.   |
 |Microsoft Cloud App Security     |   Un broker di sicurezza per l'accesso cloud per l'individuazione, l'analisi e la governance. Per iniziare a raccogliere dati e informazioni dettagliate, è possibile abilitare Microsoft cloud app Security Early. L'implementazione di informazioni e di altre protezioni mirate nelle app SaaS implica la pianificazione e la possibilità di richiedere più tempo.       | 
 
 > [!TIP]
@@ -77,5 +77,3 @@ Per assicurarsi che l'organizzazione disponga della migliore protezione possibil
 Le funzionalità di protezione dalle minacce possono essere configurate in parallelo, pertanto, se si dispone di più team di sicurezza di rete responsabili di diversi servizi, è possibile configurare le funzionalità di protezione dell'organizzazione contemporaneamente. Nella figura seguente viene illustrato il processo di alto livello per la distribuzione delle funzionalità di protezione dalle minacce. 
 
 ![Processo di distribuzione delle funzionalità di protezione dalle minacce](../media/solutions-architecture-center/deploy-threat-protection-across-m365-grid.png) 
-
-

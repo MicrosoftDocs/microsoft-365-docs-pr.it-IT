@@ -1,5 +1,5 @@
 ---
-title: Aggiornare gli utenti di Microsoft 365 per le aziende all'ultimo client di Office
+title: Aggiornare il proprio Office 2010 a Microsoft 365-Microsoft 365 admin
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -16,16 +16,19 @@ search.appverid:
 - MET150
 - MOE150
 ms.custom:
+- fwlink 824861; CampaignID
+- O365_Comm_SR_UpgradeOffice
+- seo-marvel-may2020
 - fwlink 824861; CampaignID O365_Comm_SR_UpgradeOffice
 - AdminSurgePortfolio
 ms.assetid: f6b00895-b5fd-4af6-a656-b7788ea20cbb
-description: Informazioni su come aggiornare gli utenti all'ultimo client di Office.
-ms.openlocfilehash: 40160dc5590144a1132971368da70c6f36ed460c
-ms.sourcegitcommit: d76a4c07f0be2938372bdfae50e0e4d523bd8e9f
+description: Informazioni su come eseguire l'aggiornamento di Microsoft Office all'ultimo client di Office per gli utenti dell'organizzazione.
+ms.openlocfilehash: 596dfc8f4a005d01c0bf330243bf1fb3c639f97e
+ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48456329"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48906442"
 ---
 # <a name="upgrade-your-microsoft-365-for-business-users-to-the-latest-office-client"></a>Aggiornare gli utenti di Microsoft 365 per le aziende all'ultimo client di Office
 
@@ -47,7 +50,7 @@ Per ulteriori informazioni, vedere la Guida [di orientamento alla fine del suppo
 
  Se non si è un amministratore e si dispone di un prodotto [Microsoft 365 Family](https://support.microsoft.com/office/28cbc8cf-1332-4f04-9123-9b660abb629e#BKMK_OfficePlans) , vedere [How do I upgrade Office](https://support.microsoft.com/office/ee68f6cf-422f-464a-82ec-385f65391350) per informazioni sull'aggiornamento delle versioni precedenti di Office.
 
-## <a name="get-ready-to-upgrade"></a>Prepararsi all'aggiornamento
+## <a name="get-ready-to-upgrade-to-microsoft-365"></a>Prepararsi per l'aggiornamento a Microsoft 365
 
 Come amministratore, è possibile controllare quale versione di Office people nell'organizzazione è in grado di installare. È consigliabile aiutare gli utenti dell'organizzazione a eseguire le versioni precedenti di Office, ad esempio Office 2010, Office 2013 o Office 2016, per l'aggiornamento alla versione più recente per trarre vantaggio dai miglioramenti relativi alla sicurezza e alla produttività.
 

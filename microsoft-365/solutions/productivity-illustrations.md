@@ -1,6 +1,6 @@
 ---
 title: Illustrazioni sulla produttività di Microsoft 365
-description: Usare queste illustrazioni per comprendere le nozioni di base relative all'architettura per implementare le soluzioni di produttività di Microsoft 365.
+description: Utilizzare queste illustrazioni, ad esempio il diagramma di architettura dei team, per comprendere le nozioni di base dell'architettura per l'implementazione di soluzioni di produttività Microsoft 365.
 ms.author: samanro
 author: samanro
 manager: bcarter
@@ -13,23 +13,23 @@ ms.collection:
 - M365-security-compliance
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 160211fe481d14749bd778255e6844b12aa80672
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: f84c1c4a8d507ae9a4be3cb69a816a8494e08cc3
+ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48847237"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48906788"
 ---
 # <a name="microsoft-365-productivity-illustrations"></a>Illustrazioni sulla produttività di Microsoft 365
 
-La serie di soluzioni di Microsoft 365 Enterprise fornisce indicazioni per l'implementazione delle funzionalità di Microsoft 365, in particolare quando si combinano funzionalità e tecnologie.
+La serie di soluzioni Microsoft 365 Enterprise fornisce linee guida per l'implementazione delle funzionalità di Microsoft 365, in particolare per le funzionalità Cross Technologies, inclusi i diagrammi dell'architettura dei team.
 
 ### <a name="microsoft-teams-and-related-productivity-services-in-microsoft-365-for-it-architects"></a>Microsoft Teams e servizi di produttività correlati in Microsoft 365 per architetti IT
 L'architettura logica dei servizi di produttività in Microsoft 365, con Microsoft Teams.
 
 | Elemento | Descrizione |
 |:-----|:-----|
-|[![Immagine di scorrimento per poster dell'architettura logica di Teams](../downloads/msft-teams-logical-architecture-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-teams-logical-architecture.pdf) <br/> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-teams-logical-architecture.pdf) \| [Visio](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/msft-m365-teams-logical-architecture.vsdx)  <br>Aggiornato nell'aprile 2019   |Microsoft offre una serie di servizi di produttività che interagiscono tra loro per offrire esperienze di collaborazione con governance dei dati, sicurezza e conformità integrate. <br/> <br/>Questa serie di immagini consente di visualizzare l'architettura logica di servizi di produttività per enterprise architect, con Microsoft Teams.|
+|[![Poster dell'architettura logica Teams](../downloads/msft-teams-logical-architecture-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-teams-logical-architecture.pdf) <br/> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-teams-logical-architecture.pdf) \| [Visio](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/msft-m365-teams-logical-architecture.vsdx)  <br>Aggiornato nell'aprile 2019   |Microsoft offre una serie di servizi di produttività che interagiscono tra loro per offrire esperienze di collaborazione con governance dei dati, sicurezza e conformità integrate. <br/> <br/>Questa serie di immagini consente di visualizzare l'architettura logica di servizi di produttività per enterprise architect, con Microsoft Teams.|
 
 
 ### <a name="groups-in-microsoft-365-for-it-architects"></a>Gruppi in Microsoft 365 per architetti IT
@@ -56,7 +56,7 @@ Protezione della sicurezza e delle informazioni per le organizzazioni multi-area
 
 | Elemento | Descrizione |
 |:-----|:-----|
-|[![Immagine di scorrimento per infografica multi-area](../media/solutions-architecture-center/multi-region-single-tenant-security-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-security-info-protect-multi-region.pdf) <br/> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-security-info-protect-multi-region.pdf) \| [Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-security-info-protect-multi-region.vsdx)<br>Aggiornato nel marzo 2020 |L'uso di un singolo tenant di Microsoft 365 per l'organizzazione globale rappresenta la scelta e l'esperienza migliori per vari motivi. Tuttavia, molti architetti fanno fatica a trovare il modo di soddisfare i requisiti di sicurezza e di protezione delle informazioni nelle varie aree geografiche. Questa serie di argomenti offre alcuni suggerimenti. |
+|[![Infografica multi-region](../media/solutions-architecture-center/multi-region-single-tenant-security-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-security-info-protect-multi-region.pdf) <br/> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-security-info-protect-multi-region.pdf) \| [Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-security-info-protect-multi-region.vsdx)<br>Aggiornato nel marzo 2020 |L'uso di un singolo tenant di Microsoft 365 per l'organizzazione globale rappresenta la scelta e l'esperienza migliori per vari motivi. Tuttavia, molti architetti fanno fatica a trovare il modo di soddisfare i requisiti di sicurezza e di protezione delle informazioni nelle varie aree geografiche. Questa serie di argomenti offre alcuni suggerimenti. |
 
 ### <a name="microsoft-defender-for-endpoint-deployment-strategy"></a>Strategia di distribuzione di Microsoft Defender per endpoint
 
@@ -125,7 +125,7 @@ This guidance includes Test Lab Guides. For more information, see [Microsoft Sec
 Microsoft supporta diverse opzioni per iniziare il viaggio verso l'implementazione di Teams nel cloud Microsoft. Questo poster è utile per decidere la soluzione di telefonia Microsoft (Sistema telefonico nel cloud o VoIP aziendale in locale) più adatta per gli utenti dell'organizzazione e per stabilire in che modo l'organizzazione si connetterà alla rete PSTN (Public Switched Telephone Network).
 
 
-[![Anteprima del poster di Soluzioni di telefonia Microsoft](../media/solutions-architecture-center/microsoft-telephony-solutions-thumb.png)](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/raw/live/Teams/downloads/telephony-solutions/microsoft-telephony-solutions-12-19.pdf) <br/>
+[![Poster delle soluzioni di telefonia Microsoft](../media/solutions-architecture-center/microsoft-telephony-solutions-thumb.png)](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/raw/live/Teams/downloads/telephony-solutions/microsoft-telephony-solutions-12-19.pdf) <br/>
 [PDF](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/raw/live/Teams/downloads/telephony-solutions/microsoft-telephony-solutions-12-19.pdf) | [Visio](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/raw/live/Teams/downloads/telephony-solutions/microsoft-telephony-solutions-12-18.vsdx) <br>
 Aggiornato nel gennaio 2019
 

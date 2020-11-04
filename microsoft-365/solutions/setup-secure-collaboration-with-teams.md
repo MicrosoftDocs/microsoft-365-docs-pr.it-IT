@@ -11,27 +11,29 @@ ms.collection:
 - M365-collaboration
 - m365solution-securecollab
 - m365solution-overview
-ms.custom: ''
+ms.custom:
+- M365solutions
+- seo-marvel-jun2020
 f1.keywords: NOCSH
-description: Informazioni su come configurare i team per la protezione dei dati in base alla relativa sensibilità
-ms.openlocfilehash: 5cf4937a79fdf33e160432c740504ec84d196585
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+description: Informazioni su come configurare la collaborazione per il contenuto sicuro in teams per proteggere i dati in base alla sua sensibilità.
+ms.openlocfilehash: 310605d0db84e33be1d5fdc925fadcfcdf9dddaf
+ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48843541"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48906800"
 ---
 # <a name="set-up-secure-collaboration-with-microsoft-365"></a>Proteggere la collaborazione con Microsoft 365
 
 Essere in grado di condividere facilmente le informazioni con gli utenti giusti impedendo la sovracondivisione è la chiave del successo di un'organizzazione. Questo include la possibilità di condividere i dati sensibili in modo sicuro solo con gli utenti che devono accedervi. A seconda del progetto, potrebbe essere possibile includere la condivisione di dati riservati con persone esterne all'organizzazione.
 
-Questa guida per la soluzione include due componenti che consentono di:
+Questa guida alla soluzione di collaborazione include due componenti che consentono di:
 - Distribuire Microsoft teams con il livello di protezione appropriato per ogni progetto
 - Configurare la condivisione esterna con le impostazioni di sicurezza appropriate per ogni progetto
 
 ![Distribuire Team con protezione appropriata e configurare la condivisione esterna con le impostazioni di sicurezza appropriate](..\media\solutions-architecture-center\secure-collaboration-overview.png)
 
-Se non sono disponibili strumenti di collaborazione versatili e di facile utilizzo, gli utenti spesso collaborano tramite la posta elettronica dei documenti. Si tratta di un metodo di collaborazione noioso e incline all'errore e può aumentare il rischio di una condivisione inadeguata delle informazioni. Se le informazioni sulla condivisione sono troppo difficili, è possibile ripristinare l'utilizzo di prodotti consumer non disciplinati da esso. Ciò può comportare un rischio ancora maggiore.
+Se non sono disponibili strumenti di collaborazione di contenuti versatili e di facile utilizzo, gli utenti spesso collaborano tramite posta elettronica. Si tratta di un metodo di collaborazione noioso e incline all'errore e può aumentare il rischio di una condivisione inadeguata delle informazioni. Se le informazioni sulla condivisione sono troppo difficili, è possibile ripristinare l'utilizzo di prodotti consumer non disciplinati da esso. Ciò può comportare un rischio ancora maggiore.
 
 Con Microsoft 365, è possibile distribuire Team con una vasta gamma di configurazioni che consentono di:
 

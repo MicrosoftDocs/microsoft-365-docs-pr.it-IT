@@ -16,6 +16,7 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - okr_smb
+- seo-marvel-may2020
 search.appverid:
 - BCS160
 - MET150
@@ -23,20 +24,20 @@ search.appverid:
 - BEA160
 - GEA150
 ms.assetid: 1272bad0-4bd4-4796-8005-67d6fb3afc5a
-description: Per ulteriori informazioni sui domini, è possibile trovare le risposte alle domande più frequenti.
-ms.openlocfilehash: b51b5fe56bbae56dd473dd831ec91e629d9233f3
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+description: Per ulteriori informazioni sui domini (dominio onmicrosoft e trasferimento di dominio), è possibile trovare le risposte alle domande più frequenti.
+ms.openlocfilehash: 8d504711f46383000697736d6825a813f01fbe69
+ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48644585"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48906478"
 ---
 # <a name="domains-faq"></a>Domande frequenti sui domini
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> L'interfaccia di amministrazione sta cambiando. Se alcuni dettagli non corrispondono a quelli presentati qui, vedere [Informazioni sulla nuova interfaccia di amministrazione di Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> L'interfaccia di amministrazione sta cambiando. Se alcuni dettagli non corrispondono a quelli presentati qui, vedere [Informazioni sulla nuova interfaccia di amministrazione di Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview).
 
 ::: moniker-end
 
@@ -85,7 +86,7 @@ La posta viene recapitata al server Mail Exchange con il numero di preferenza pi
 
 Un dominio è un nome univoco che segue il segno **@** negli indirizzi di posta elettronica e **www.** negli indirizzi Web. In genere è composto dal nome dell'organizzazione e da un suffisso Internet standard, come  *nomeazienda.com*  o  *nomeuniversità.edu*  . 
   
-L'utilizzo di un dominio personalizzato come "**rob \@ contoso.com**" con Microsoft 365 può contribuire a creare credibilità e riconoscimento per il proprio marchio. 
+L'utilizzo di un dominio personalizzato come " **rob \@ contoso.com** " con Microsoft 365 può contribuire a creare credibilità e riconoscimento per il proprio marchio. 
   
 È possibile [acquistare un dominio in Microsoft 365 e noi lo configurano automaticamente](../get-help-with-domains/buy-a-domain-name.md)oppure è possibile acquistarne uno o portarlo già da un registrar.
     
@@ -200,15 +201,15 @@ Quando si aggiungono più domini a Microsoft 365, è possibile ospitare uno qual
 
 Per la procedura per il trasferimento di un dominio, vedere [trasferire un dominio da Microsoft a un altro host](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/transfer-a-domain-from-microsoft-to-another-host).
 
-## <a name="pilot-microsoft-365-from-my-custom-domain"></a>Eseguire il pilota Microsoft 365 dal dominio personalizzato
+## <a name="pilot-microsoft-365-from-my-custom-domain"></a>Pilotare Microsoft 365 dal dominio personalizzato
 
 Per la procedura per pilotare la funzionalità di posta elettronica Microsoft 365 da un dominio personalizzato a una cassetta postale di Microsoft 365, vedere [Pilot microsoft 365 from My Custom Domain](https://docs.microsoft.com/microsoft-365/admin/misc/pilot-microsoft-365-from-my-custom-domain).
 
 ## <a name="why-do-i-have-an-onmicrosoftcom-domain"></a>Perché è presente un dominio "onmicrosoft.com"?
 
-Microsoft 365 crea un dominio per l'utente, come *contoso.onmicrosoft.com*, quando si esegue l'iscrizione al servizio. L'ID utente creato al momento dell'iscrizione include il dominio, ad esempio *Alan@contoso.onmicrosoft.com*. 
+Microsoft 365 crea un dominio per l'utente, come *contoso.onmicrosoft.com* , quando si esegue l'iscrizione al servizio. L'ID utente creato al momento dell'iscrizione include il dominio, ad esempio *Alan@contoso.onmicrosoft.com*. 
   
- **Se si desidera che la posta elettronica sia simile a *Alan \@ contoso.com*:** [acquistare il dominio](../get-help-with-domains/buy-a-domain-name.md) oppure seguire la procedura descritta in [aggiungere gli utenti e il dominio a Microsoft 365](add-domain.md) , se lo si possiede già. 
+ **Se si desidera che la posta elettronica sia simile a *Alan \@ contoso.com* :** [acquistare il dominio](../get-help-with-domains/buy-a-domain-name.md) oppure seguire la procedura descritta in [aggiungere gli utenti e il dominio a Microsoft 365](add-domain.md) , se lo si possiede già. 
   
 - **Dopo l'iscrizione, non è possibile rinominare il dominio onmicrosoft**. Se ad esempio il dominio iniziale scelto è fourthcoffee.onmicrosoft.com, non lo si può cambiare in fabrikam.onmicrosoft.com. Per utilizzare un dominio onmicrosoft.com diverso, è necessario avviare un nuovo abbonamento con Microsoft 365. 
     
@@ -223,9 +224,9 @@ Si può continuare a usare il dominio iniziale onmicrosoft.com anche dopo l'aggi
 ::: moniker range="o365-germany"
 ## <a name="why-do-i-have-an-onmicrosoftde-domain"></a>Perché è presente un dominio "onmicrosoft.de"?
 
-Microsoft 365 crea un dominio per l'utente, come *contoso.onmicrosoft.de*, quando si esegue l'iscrizione al servizio. L'ID utente creato al momento dell'iscrizione include il dominio, ad esempio *Alan@contoso.onmicrosoft.de*. 
+Microsoft 365 crea un dominio per l'utente, come *contoso.onmicrosoft.de* , quando si esegue l'iscrizione al servizio. L'ID utente creato al momento dell'iscrizione include il dominio, ad esempio *Alan@contoso.onmicrosoft.de*. 
   
- **Se si desidera che la posta elettronica sia simile a *Alan@contoso.de*:** [acquistare il dominio](../get-help-with-domains/buy-a-domain-name.md) oppure seguire la procedura descritta in [aggiungere gli utenti e il dominio a Microsoft 365](add-domain.md) , se lo si possiede già. 
+ **Se si desidera che la posta elettronica sia simile a *Alan@contoso.de* :** [acquistare il dominio](../get-help-with-domains/buy-a-domain-name.md) oppure seguire la procedura descritta in [aggiungere gli utenti e il dominio a Microsoft 365](add-domain.md) , se lo si possiede già. 
   
 - **Dopo l'iscrizione, non è possibile rinominare il dominio onmicrosoft**. Ad esempio, se il dominio iniziale scelto era fourthcoffee.onmicrosoft.de, non è possibile modificarlo in modo che sia fabrikam.onmicrosoft.de. Per utilizzare un dominio onmicrosoft.de diverso, è necessario avviare un nuovo abbonamento con Microsoft 365. 
     

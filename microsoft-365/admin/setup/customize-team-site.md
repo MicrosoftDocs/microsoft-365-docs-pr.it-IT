@@ -1,5 +1,5 @@
 ---
-title: Personalizzare il sito del team per l'archiviazione e la condivisione dei file-SharePoint Online
+title: Personalizzare un sito del team di SharePoint per l'archiviazione e la condivisione dei file
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -17,19 +17,20 @@ ms.collection:
 ms.custom:
 - IT_Networking
 - seo-marvel-apr2020
+- seo-marvel-may2020
 - AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 70a62f09-45ea-4968-8482-43cddfb8cc01
-description: In questo articolo vengono fornite informazioni su come personalizzare, organizzare e gestire il sito del team per l'archiviazione e la condivisione dei file.
-ms.openlocfilehash: f2c59607d006cd6e5529d9e5ffb3d2f6eead6edf
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+description: Informazioni su come personalizzare, organizzare e gestire il sito del team di SharePoint con le raccolte documenti, gli elenchi e gli hub.
+ms.openlocfilehash: 3eb09f0b0160333e3b17ebc5f02424ba3d24a13c
+ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48644568"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48906490"
 ---
 # <a name="customize-your-team-site-for-file-storage-and-sharing"></a>Personalizzare il sito del team per l'archiviazione e la condivisione dei file
 
@@ -39,7 +40,7 @@ Se si dispone di una piccola azienda con alcuni dipendenti, uno dei modi miglior
   
 [Creare un sito del team in SharePoint](https://support.microsoft.com/office/ef10c1e7-15f3-42a3-98aa-b5972711777d)
   
-Di seguito sono riportate alcune idee e collegamenti che consentono di personalizzare, organizzare e gestire il sito del team. 
+Di seguito sono riportate alcune idee e collegamenti che consentono di personalizzare, organizzare e gestire il sito del team.
   
  
 ## <a name="customize-your-team-site"></a>Personalizzare il sito del team
@@ -60,7 +61,7 @@ Per informazioni sulle impostazioni del sito del team, vedere [gestire le impost
   
 ## <a name="work-with-document-libraries"></a>Utilizzo delle raccolte documenti
 
-Un sito del team include una raccolta documenti che è possibile iniziare a utilizzare immediatamente. 
+Un sito del team include una raccolta documenti che è possibile iniziare a utilizzare immediatamente per l'archiviazione dei file e la gestione dei documenti.
 
 Per iniziare il caricamento, vedere [caricare una cartella o un file in una raccolta documenti](https://support.microsoft.com/office/eb18fcba-c953-4d45-8d90-8da66edeacdb)
    
@@ -70,7 +71,7 @@ Per informazioni sulla creazione di visualizzazioni di raccolte per visualizzare
   
 ## <a name="work-with-lists-to-organize-data"></a>Utilizzare gli elenchi per organizzare i dati
 
-SharePoint include numerosi modelli per gli elenchi che è possibile aggiungere al sito, ad esempio un elenco di collegamenti, un calendario, i contatti o le attività. 
+SharePoint include numerosi modelli per gli elenchi che è possibile aggiungere al sito, ad esempio un elenco di collegamenti, un calendario, i contatti o le attività.
   
 Informazioni su come [creare un elenco in SharePoint](https://support.microsoft.com/office/0D397414-D95F-41EB-ADDD-5E6EFF41B083#ID0EAAGAAA=Online).
   
@@ -82,7 +83,7 @@ Visualizzare un video sull'aggiunta di calendari al sito, vedere [creare un cale
 
 ## <a name="organize-sites-into-hubs"></a>Organizzare i siti in hub
 
-Il sito del team condivide quasi tutto con tutti i membri del gruppo associati al sito. Se si desidera disporre di un sito separato per clienti specifici, è possibile creare ulteriori siti del team e gestirli utilizzando i siti hub di SharePoint. Ecco altre informazioni. 
+Il sito del team condivide quasi tutto con tutti i membri del gruppo associati al sito. Se si desidera disporre di un sito separato per clienti specifici, è possibile creare ulteriori siti del team e gestirli utilizzando i siti hub di SharePoint. Ecco altre informazioni.
   
 I siti hub consentono di aggiungere e associare siti. Per altre informazioni, vedere [che cos'è un sito hub di SharePoint?](https://support.microsoft.com/office/fe26ae84-14b7-45b6-a6d1-948b3966427f).
   
@@ -92,7 +93,7 @@ Per informazioni su come aggiungere siti a un sito hub, vedere [associare un sit
   
 ## <a name="sharing-files-with-the-team"></a>Condivisione di file con il team
 
-Anche se l'archiviazione e l'organizzazione sono all'inizio, è importante condividere la condivisione con il team e i client esterni. Di seguito sono riportati alcuni collegamenti ad argomenti che consentiranno di gestire gli utenti e condividere i dati. 
+L'archiviazione di file e la gestione dei documenti è un inizio, è importante anche la condivisione con il team e i client esterni. Di seguito sono riportati alcuni collegamenti ad argomenti che consentiranno di gestire gli utenti e condividere i dati.
   
 Per la condivisione di file con il team, vedere [condividere file o cartelle di SharePoint in Microsoft 365](https://support.microsoft.com/office/1fe37332-0f9a-4719-970e-d2578da4941c).
   
@@ -100,7 +101,7 @@ Per comprendere la condivisione all'esterno del team, vedere [Panoramica della c
   
 ## <a name="managing-users-and-groups"></a>Gestione di utenti e gruppi
 
-Durante la gestione del sito del team, potrebbe essere necessario aggiungere o rimuovere utenti. Di seguito vengono fornite informazioni che consentono di comprendere, aggiungere e gestire gli utenti nel sito del team. 
+Durante la gestione del sito del team, potrebbe essere necessario aggiungere o rimuovere utenti. Di seguito vengono fornite informazioni che consentono di comprendere, aggiungere e gestire gli utenti nel sito del team.
   
 Visualizzare un video sui gruppi con i [gruppi understand and Manage](https://support.microsoft.com/office/9c1037b7-de0b-41cd-b8f0-79a95aac854d). 
   
@@ -119,6 +120,3 @@ Informazioni su come gestire le richieste di accesso con la [configurazione e la
   - [Configurare Office in Windows Phone con Microsoft 365](https://support.microsoft.com/office/2b7c1b51-a717-45d6-90c9-ee1c1c5ee0b7)
     
 - [Altre informazioni sull'uso di OneDrive](https://go.microsoft.com/fwlink/?LinkID=511458).
-    
-
-

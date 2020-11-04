@@ -15,13 +15,13 @@ ms.custom:
 - seo-marvel-apr2020
 localization_priority: Normal
 f1.keywords: NOCSH
-description: Informazioni sui passaggi di configurazione di Microsoft 365 necessari per configurare un team per la collaborazione con gli utenti in teams.
-ms.openlocfilehash: 7a2259358d6976184d393980b2b7c0320c3bb171
-ms.sourcegitcommit: ae3aa7f29be16d08950cf23cad489bc069aa8617
+description: Informazioni sui passaggi di configurazione di Microsoft 365 necessari per configurare un team per l'attività, la conversazione e la documentazione per la collaborazione con i clienti del team.
+ms.openlocfilehash: b4eea473f03441144a0236ec53dcecde9080fc7a
+ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48409049"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48906860"
 ---
 # <a name="collaborate-with-guests-in-a-team"></a>Collaborare con gli utenti guest in un team
 
@@ -54,7 +54,7 @@ Per impostare le impostazioni delle relazioni organizzative
 
 Prendere nota delle impostazioni nella sezione **vincoli di collaborazione** . Verificare che i domini degli utenti con cui si desidera collaborare non siano bloccati.
 
-Se si lavora con clienti provenienti da più organizzazioni, è possibile che si desideri limitare la possibilità di accedere ai dati della directory. Ciò impedirà loro di vedere chi altro è un ospite nella directory. Per eseguire questa operazione, in **restrizioni di accesso degli utenti Guest**, selezionare **Guest gli utenti hanno accesso limitato alle proprietà e l'appartenenza delle impostazioni degli oggetti directory** o **l'accesso degli utenti Guest è limitato alle proprietà e alle appartenenze dei propri oggetti directory**.
+Se si lavora con clienti provenienti da più organizzazioni, è possibile che si desideri limitare la possibilità di accedere ai dati della directory. Ciò impedirà loro di vedere chi altro è un ospite nella directory. Per eseguire questa operazione, in **restrizioni di accesso degli utenti Guest** , selezionare **Guest gli utenti hanno accesso limitato alle proprietà e l'appartenenza delle impostazioni degli oggetti directory** o **l'accesso degli utenti Guest è limitato alle proprietà e alle appartenenze dei propri oggetti directory**.
 
 ## <a name="teams-guest-access-settings"></a>Impostazioni di accesso Guest Teams
 
@@ -70,7 +70,7 @@ Per configurare le impostazioni di accesso guest di Teams
 2. Nel riquadro di spostamento a sinistra, fare clic su **Mostra tutto**.
 3. In **Interfacce di amministrazione** fare clic su **Teams**.
 4. Nell'interfaccia di amministrazione dei team, nel riquadro di spostamento a sinistra, espandere **impostazioni a livello di organizzazione** e fare clic su **accesso Guest**.
-5. Assicurarsi che l'opzione **Consenti accesso ospite in Teams** sia** **abilitata.
+5. Assicurarsi che l'opzione **Consenti accesso ospite in Teams** sia **** abilitata.
 6. Apportare le modifiche desiderate alle impostazioni guest aggiuntive e quindi fare clic su **Salva**.
 
 > [!NOTE]
@@ -104,7 +104,7 @@ Se si desidera consentire la condivisione di file e cartelle con persone non aut
 
 Per impostare le impostazioni di condivisione a livello di organizzazione di SharePoint
 
-1. Nell'interfaccia di amministrazione di Microsoft 365, nel riquadro di spostamento a sinistra, in interfaccia di **Amministrazione**, fare clic su **SharePoint**.
+1. Nell'interfaccia di amministrazione di Microsoft 365, nel riquadro di spostamento a sinistra, in interfaccia di **Amministrazione** , fare clic su **SharePoint**.
 2. Nell'interfaccia di amministrazione di SharePoint, nel riquadro di spostamento a sinistra, espandere **criteri** e quindi fare clic su **condivisione**.
 3. Assicurarsi che la condivisione esterna per SharePoint sia impostata su **tutti gli utenti** o **gli ospiti nuovi e esistenti**.
 4. Se si apportano modifiche, fare clic su **Salva**.
@@ -128,7 +128,7 @@ Scegliere uno dei seguenti tipi di collegamento che verranno selezionati per imp
 Per impostare le impostazioni dei collegamenti predefiniti a livello di organizzazione di SharePoint
 
 1. Passare alla pagina condivisione nell'interfaccia di amministrazione di SharePoint.
-2. In **collegamenti a file e cartelle**selezionare il collegamento di condivisione predefinito che si desidera utilizzare.
+2. In **collegamenti a file e cartelle** selezionare il collegamento di condivisione predefinito che si desidera utilizzare.
 3. Se si apportano modifiche, fare clic su **Salva**.
 
 ## <a name="create-a-team"></a>Creare un team
@@ -147,7 +147,7 @@ Gli utenti verranno invitati in un secondo momento. Successivamente, è importan
 
 ## <a name="sharepoint-site-level-sharing-settings"></a>Impostazioni di condivisione a livello di sito di SharePoint
 
-Controllare le impostazioni di condivisione a livello di sito per assicurarsi che consentano il tipo di accesso desiderato per il team. Ad esempio, se si impostano le impostazioni a livello di organizzazione per tutti gli **utenti**, ma si desidera che tutti gli ospiti eseguano l'autenticazione per questo team, assicurarsi che le impostazioni di condivisione a livello di sito siano impostate su **Guest nuovi e esistenti**.
+Controllare le impostazioni di condivisione a livello di sito per assicurarsi che consentano il tipo di accesso desiderato per il team. Ad esempio, se si impostano le impostazioni a livello di organizzazione per tutti gli **utenti** , ma si desidera che tutti gli ospiti eseguano l'autenticazione per questo team, assicurarsi che le impostazioni di condivisione a livello di sito siano impostate su **Guest nuovi e esistenti**.
 
 ![Screenshot delle impostazioni di condivisione esterna dei siti di SharePoint](../media/sharepoint-site-external-sharing-settings.png)
 
@@ -166,14 +166,14 @@ Le impostazioni di condivisione Guest sono ora configurate, quindi è possibile 
 Per invitare gli utenti interni a un team
 1. Nel team, fare clic su **altre opzioni** ( **\*\*\*** ), quindi fare clic su **Aggiungi membro**.
 2. Digitare il nome della persona che si desidera invitare.
-3. Fare clic su **Aggiungi**, quindi fare clic su **Chiudi**.
+3. Fare clic su **Aggiungi** , quindi fare clic su **Chiudi**.
 
 Per invitare gli ospiti a un team
 1. Nel team, fare clic su **altre opzioni** ( **\*\*\*** ), quindi fare clic su **Aggiungi membro**.
 2. Digitare l'indirizzo di posta elettronica dell'ospite che si desidera invitare.
 3. Fare clic su **modifica informazioni Guest**.
 4. Digitare il nome completo dell'ospite e fare clic sul segno di spunta.
-5. Fare clic su **Aggiungi**, quindi fare clic su **Chiudi**.
+5. Fare clic su **Aggiungi** , quindi fare clic su **Chiudi**.
 
 ## <a name="see-also"></a>Vedere anche
 

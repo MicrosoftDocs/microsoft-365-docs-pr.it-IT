@@ -1,6 +1,6 @@
 ---
-title: Modelli di architettura cloud Microsoft
-description: Questi poster sull'architettura cloud offrono informazioni sui servizi cloud Microsoft, tra cui Microsoft 365, Azure Active Directory (Azure AD), Microsoft Intune, Microsoft Dynamics 365 e soluzioni cloud locali e ibride.
+title: Modelli di architettura cloud Microsoft-pianificazione delle risorse dell'organizzazione
+description: Questi poster di Microsoft Cloud Architecture offrono informazioni sui servizi cloud Microsoft come Azure e Office 365.
 ms.author: samanro
 author: samanro
 manager: bcarter
@@ -10,14 +10,15 @@ ms.prod: microsoft-365-enterprise
 localization_priority: Normal
 ms.collection:
 - M365-subscription-management
-ms.custom: ''
+- M365solutions
+ms.custom: seo-marvel-jun2020
 f1.keywords: NOCSH
-ms.openlocfilehash: 9988a822880db43feebb6ef007c39bd59c5ce6c7
-ms.sourcegitcommit: bcb88a6171f9e7bdb5b2d8c03cd628d11c5e7bbf
+ms.openlocfilehash: 0089210b72f65a05b87446132572de028b2a67a8
+ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48464457"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48906872"
 ---
 # <a name="microsoft-cloud-for-enterprise-architects-illustrations"></a>Microsoft cloud per le illustrazioni di Enterprise Architecture
 
@@ -55,7 +56,7 @@ Cosa devono sapere gli architetti IT del cloud ibrido per i servizi cloud e le p
    
 
 ### <a name="architecture-approaches-for-microsoft-cloud-tenant-to-tenant-migrations"></a>Approcci dell'architettura in materia di migrazioni da tenant a tenant del cloud Microsoft 
-Questa serie di argomenti illustra diversi approcci dell'architettura in materia di fusioni, acquisizioni, cessioni e altri scenari che potrebbero indurre la migrazione in un nuovo tenant del cloud. Questi argomenti forniscono le indicazioni da cui partire per la pianificazione. 
+Questa serie di argomenti illustra diversi approcci dell'architettura in materia di fusioni, acquisizioni, cessioni e altri scenari che potrebbero indurre la migrazione in un nuovo tenant del cloud. Questi argomenti forniscono linee guida di avvio per la pianificazione delle risorse dell'organizzazione. 
 
 |**Elemento**|**Descrizione**|
 |:-----|:-----|
@@ -74,7 +75,7 @@ What IT architects need to know about security in Microsoft cloud services and p
   
 |**Item**|**Description**|
 |:-----|:-----|
-|[![Thumb image for Microsoft cloud security model](../media/solutions-architecture-center/msft-cloud-security-model-thumb.png)          ](https://www.microsoft.com/download/details.aspx?id=48121) <br/> [PDF](https://go.microsoft.com/fwlink/p/?linkid=842070)  \| [Visio](https://go.microsoft.com/fwlink/p/?LinkId=842071)  \| [More languages](https://www.microsoft.com/download/details.aspx?id=48121) <br/>Updated December 2018 | This model contains: <ul><li>Microsoft's role in providing secure services and platforms</li><li>Customer responsibilities to mitigate security risks</li><li>Top security certifications </li><li>Security offerings provided by Microsoft consulting services </ul><br/>|
+|[![Poster for Microsoft cloud security model](../media/solutions-architecture-center/msft-cloud-security-model-thumb.png)          ](https://www.microsoft.com/download/details.aspx?id=48121) <br/> [PDF](https://go.microsoft.com/fwlink/p/?linkid=842070)  \| [Visio](https://go.microsoft.com/fwlink/p/?LinkId=842071)  \| [More languages](https://www.microsoft.com/download/details.aspx?id=48121) <br/>Updated December 2018 | This model contains: <ul><li>Microsoft's role in providing secure services and platforms</li><li>Customer responsibilities to mitigate security risks</li><li>Top security certifications </li><li>Security offerings provided by Microsoft consulting services </ul><br/>|
 
 --> 
 
@@ -84,5 +85,5 @@ What IT architects need to know about security in Microsoft cloud services and p
 
 |**Elemento**|**Descrizione**|
 |:-----|:-----|
-|[![Immagine di scorrimento del poster sugli attacchi comuni.](../media/solutions-architecture-center/common-attacks-model-thumb.png) ](https://download.microsoft.com/download/F/A/C/FACFC1E9-FA35-4DF1-943C-8D4237B4275B/MSFT_Cloud_architecture_security_commonattacks.pdf) <br/> [PDF](https://download.microsoft.com/download/F/A/C/FACFC1E9-FA35-4DF1-943C-8D4237B4275B/MSFT_Cloud_architecture_security_commonattacks.pdf) \| [Visio](https://download.microsoft.com/download/F/A/C/FACFC1E9-FA35-4DF1-943C-8D4237B4275B/MSFT_Cloud_architecture_security_commonattacks.vsdx) <br/> Aggiornato il 2017 agosto | Questo poster illustra il percorso degli attacchi comuni e descrive le funzionalità che consentono di bloccare i pirati informatici in ogni fase di un attacco. <br/>|
+|[![Illustrazione del manifesto degli attacchi comuni. ](../media/solutions-architecture-center/common-attacks-model-thumb.png)](https://download.microsoft.com/download/F/A/C/FACFC1E9-FA35-4DF1-943C-8D4237B4275B/MSFT_Cloud_architecture_security_commonattacks.pdf) <br/> [PDF](https://download.microsoft.com/download/F/A/C/FACFC1E9-FA35-4DF1-943C-8D4237B4275B/MSFT_Cloud_architecture_security_commonattacks.pdf) \| [Visio](https://download.microsoft.com/download/F/A/C/FACFC1E9-FA35-4DF1-943C-8D4237B4275B/MSFT_Cloud_architecture_security_commonattacks.vsdx) <br/> Aggiornato il 2017 agosto | Questo poster illustra il percorso degli attacchi comuni e descrive le funzionalità che consentono di bloccare i pirati informatici in ogni fase di un attacco. <br/>|
 

@@ -1,6 +1,6 @@
 ---
-title: To Identity and Beyond-punto di vista di un architetto
-description: Descrizione.
+title: Pianificazione delle risorse di Microsoft 365 Enterprise-architettura di sicurezza
+description: Informazioni sulle strategie di progettazione di Microsoft Enterprise Architecture di Alex Shteynberg, Technical Principal Architect di Microsoft.
 ms.author: bcarter
 author: brendacarter
 manager: bcarter
@@ -11,14 +11,15 @@ localization_priority: Normal
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.custom: ''
+- M365solutions
+ms.custom: seo-marvel-jun2020
 f1.keywords: NOCSH
-ms.openlocfilehash: fc975610e24980c6a552179359bb643eb9ac040c
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: e691b47a2d508064243886957ac491088df2f8ae
+ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48845253"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48906896"
 ---
 # <a name="to-identity-and-beyond--one-architects-viewpoint"></a>To Identity and Beyond-punto di vista di un architetto
 
@@ -284,7 +285,7 @@ Dal punto di vista della delega di amministratore, la maggior parte dei log atti
 
 Diagramma di livello elevato:
 
-![diagramma ad alto livello del flusso di log](../media/solutions-architecture-center/identity-beyond-illustration-4.png)  
+![diagramma delle origini dei registri per un programma di sicurezza e conformità](../media/solutions-architecture-center/identity-beyond-illustration-4.png)  
 
 Il diagramma sopra riportato rappresenta le funzionalità predefinite per l'invio di registri a hub eventi e/o archiviazione Azure e/o analisi dei log di Azure. Non tutti i sistemi includono ancora questo out-of-the-box. Tuttavia, esistono altri approcci per inviare questi registri allo stesso repository. Ad esempio, vedere [Protecting Your teams with Azure Sentinel](https://techcommunity.microsoft.com/t5/azure-sentinel/protecting-your-teams-with-azure-sentinel/ba-p/1265761).
 

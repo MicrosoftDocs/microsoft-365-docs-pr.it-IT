@@ -11,25 +11,25 @@ ms.service: o365-administration
 search.appverid: ''
 ROBOTS: NOINDEX, NOFOLLOW
 localization_priority: None
-ms.openlocfilehash: 6e4038982f396bbd427273225c2a3d1a9f866252
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: d87a52bc6aca2f033a6e0d26a8c9c0e167908759
+ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47948127"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48906966"
 ---
 # <a name="topic-center-overview-preview"></a>Panoramica del centro argomenti (anteprima)
 
 > [!Note] 
-> Il contenuto di questo articolo è relativo all'anteprima privata di Project Cortex. [Per ulteriori informazioni, vedere Project Cortex](https://aka.ms/projectcortex).
+> Il contenuto di questo articolo è relativo all'anteprima privata di Project Cortex. [Altre informazioni su Project Cortex](https://aka.ms/projectcortex).
 
 Il centro argomenti è un sito di SharePoint moderno che funge da centro di conoscenza per la propria organizzazione. Viene creato durante l' [installazione di Knowledge Management](set-up-knowledge-network.md) nell'interfaccia di amministrazione di Microsoft 365.
 
-Tramite il centro argomenti gli utenti con le autorizzazioni appropriate possono eseguire le operazioni seguenti:
+Nel centro argomenti è presente una Home page predefinita in cui è possibile visualizzare gli argomenti a cui sono stati connessi o che sono stati consigliati di essere connessi. Gli utenti che dispongono delle autorizzazioni appropriate possono anche:
 
-- Confermare o rifiutare gli argomenti individuati
 - Creare una nuova pagina di argomento
-- Modificare una pagina di un argomento esistente
+- Confermare o rifiutare gli argomenti suggeriti
+- Modificare e pubblicare le modifiche apportate a una pagina di argomento
 
 > [!Note] 
 > È possibile ottenere ulteriori informazioni su ogni attività in [work with topics in the topic Center](work-with-topics.md).
@@ -44,14 +44,26 @@ Il centro argomenti è stato creato durante l'installazione di Knowledge Managem
 
 2. Nella sezione **con una panoramica** della pagina **Connetti persone alla conoscenza** , vedere l' **argomento centro degli argomenti** per l'URL del sito.
 
-## <a name="permissions-to-use-the-topic-center"></a>Autorizzazioni per l'utilizzo del centro argomenti
+## <a name="home-page"></a>Home page
 
-Per utilizzare il centro argomenti, è necessario disporre delle autorizzazioni necessarie. L'amministratore può assegnare queste autorizzazioni agli utenti durante l' [installazione di Knowledge Management](set-up-knowledge-network.md)oppure è possibile aggiungere nuovi utenti in [seguito](give-user-permissions-to-the-topic-center.md) da un amministratore tramite l'interfaccia di amministrazione di Microsoft 365.
+Per visualizzare il centro argomenti, è necessario disporre delle autorizzazioni per visualizzare gli argomenti e l'argomento esperienze. L'amministratore può assegnare queste autorizzazioni agli utenti durante l' [installazione di Knowledge Management](set-up-knowledge-network.md)oppure è possibile aggiungere nuovi utenti in [seguito](give-user-permissions-to-the-topic-center.md) da un amministratore tramite l'interfaccia di amministrazione di Microsoft 365.
+
+Nella Home page 
+- **Visualizza argomenti** : Visualizza l'argomento experiences. In questo modo, è possibile visualizzare gli argomenti nell'organizzazione e fornire commenti e suggerimenti sugli argomenti in cui sono stati connessi:
+1. Connessioni consigliate: argomenti in cui è stata suggerita la connessione
+2. Connessioni confermate: si tratta di argomenti in cui sono bloccati sull'argomento o sono stati confermati gli argomenti di connessione che verranno spostati dalla sezione consigliata a confermata quando si conferma una connessione consigliata.
+Una volta bloccato, le modifiche alla pagina dell'argomento possono essere eseguite per curare la connessione.
+
+- **Creare e modificare gli argomenti** : è disponibile un nuovo argomento ed è possibile modificare le pagine
+
+
+## <a name="permissions-to-use-the-manage-topics-capability-topic-center"></a>Autorizzazioni per l'utilizzo del centro tematico gestione argomenti funzionalità
+
+Per utilizzare la sezione Gestisci argomenti del centro argomenti, è necessario disporre delle autorizzazioni necessarie. L'amministratore può assegnare queste autorizzazioni agli utenti durante l' [installazione di Knowledge Management](set-up-knowledge-network.md)oppure è possibile aggiungere nuovi utenti in [seguito](give-user-permissions-to-the-topic-center.md) da un amministratore tramite l'interfaccia di amministrazione di Microsoft 365.
 
 Agli utenti del centro argomenti possono essere assegnati due set di autorizzazioni:
 
-- **Creare e modificare gli argomenti**: creare nuovi argomenti o aggiornare il contenuto dell'argomento, ad esempio la descrizione, i documenti e le persone associate. Assegnare questa autorizzazione agli esperti in materia che hanno il compito di esaminare le pagine degli argomenti.
-- **Gestire gli argomenti**: utilizzare l'argomento dashboard per esaminare gli argomenti nell'organizzazione. Gli utenti possono eseguire azioni come la conferma e il rifiuto di argomenti non confermati.
+- **Gestire gli argomenti** : utilizzare l'argomento dashboard per esaminare gli argomenti nell'organizzazione. Gli utenti possono eseguire azioni come la conferma e il rifiuto di argomenti non confermati.
 
 Un utente può disporre di entrambi i set di autorizzazioni o di uno solo, se necessario. 
 

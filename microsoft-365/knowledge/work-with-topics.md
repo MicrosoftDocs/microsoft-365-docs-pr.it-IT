@@ -11,17 +11,17 @@ ms.service: o365-administration
 search.appverid: ''
 ROBOTS: NOINDEX, NOFOLLOW
 localization_priority: None
-ms.openlocfilehash: 82a1b1990f464a892b8216caa26e0422b093bf37
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: d2fd3df200ab350ca3e6595402bab17034d960a7
+ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47948055"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48906920"
 ---
 # <a name="work-with-topics-in-the-topic-center-preview"></a>Utilizzare gli argomenti nell'argomento centro (anteprima)
 
 > [!Note] 
-> Il contenuto di questo articolo è relativo all'anteprima privata di Project Cortex. [Per ulteriori informazioni, vedere Project Cortex](https://aka.ms/projectcortex).
+> Il contenuto di questo articolo è relativo all'anteprima privata di Project Cortex. [Altre informazioni su Project Cortex](https://aka.ms/projectcortex).
 
 
 Nel centro argomenti, un responsabile della Knowledge base può esaminare gli argomenti che sono stati estratti e scoperti nei percorsi di origine di SharePoint specificati e può confermarli o rifiutarli. Un responsabile della Knowledge base può inoltre creare e pubblicare nuove pagine degli argomenti se non si è trovato nell'argomento Discovery o modificare quelli esistenti se è necessario aggiornarli.
@@ -32,49 +32,78 @@ Per poter utilizzare il centro argomenti, è necessario disporre delle autorizza
 
 Agli utenti del centro argomenti possono essere assegnati due set di autorizzazioni:
 
-- Creare e modificare gli argomenti: creare nuovi argomenti o aggiornare il contenuto dell'argomento, ad esempio la descrizione, i documenti e le persone associate
-- Gestire gli argomenti: utilizzare l'argomento Management Dashboard per esaminare gli argomenti nell'organizzazione. Gli utenti possono eseguire azioni quali gli argomenti di conferma e rifiuto
+- Creare e modificare gli argomenti: creare nuovi argomenti o aggiornare il contenuto dell'argomento, ad esempio la descrizione, i documenti e le persone associate.
+
+- Gestire gli argomenti: utilizzare l'argomento Management Dashboard per esaminare gli argomenti nell'organizzazione. Gli utenti possono eseguire azioni quali gli argomenti Confirm e Reject.
 
 
-## <a name="review-unconfirmed-topics"></a>Esaminare gli argomenti non confermati
+## <a name="review-suggested-topics"></a>Esaminare gli argomenti consigliati
 
-Nella Home page del centro argomenti, gli argomenti che sono stati individuati nei percorsi di origine di SharePoint specificati saranno elencati nella scheda non **confermata** . Un utente con autorizzazioni per la gestione degli argomenti può esaminare gli argomenti non confermati e scegliere di confermarli o rifiutarli.
+Nella Home page del centro argomenti, gli argomenti che sono stati individuati nei percorsi di origine di SharePoint specificati saranno elencati nella scheda **suggerito** . Un utente con autorizzazioni per la gestione degli argomenti può esaminare gli argomenti non confermati e scegliere di confermarli o rifiutarli.
 
 
-Per esaminare un argomento non confermato:
+Per esaminare un argomento consigliato:
 
-1. Nella scheda non **confermata** , selezionare l'argomento per aprire la pagina dell'argomento.</br>
+1. Nella scheda **suggerito** selezionare l'argomento per aprire la pagina dell'argomento.</br>
 
 2. Nella pagina dell'argomento esaminare la pagina dell'argomento e selezionare **modifica** se è necessario apportare modifiche alla pagina.
-3. Nella Home page del centro informazioni, per l'argomento selezionato, è possibile:</br>
-    a. Selezionare la casella di controllo per confermare che si desidera mantenere l'argomento.</br>
-    b. Selezionare la **x** se si desidera rifiutare l'argomento.</br>
 
-    Gli argomenti confermati verranno rimossi dall' **elenco non confermato e** verranno visualizzati nella scheda **confermata** .</br>
+3. Nella Home page del centro informazioni, per l'argomento selezionato, è possibile:
 
-    Gli argomenti rifiutati verranno rimossi dall'elenco non **confermato** e verranno visualizzati nella scheda **rifiutata o esclusa** .</br>
+    1. Selezionare la casella di controllo per confermare che si desidera mantenere l'argomento.
     
+    1. Selezionare la **x** se si desidera rifiutare l'argomento.
+
+    Gli argomenti confermati verranno rimossi dall' **elenco non confermato e** verranno visualizzati nella scheda **confermata** .
+
+    Gli argomenti rifiutati verranno rimossi dall'elenco non **confermato** e verranno visualizzati nella scheda **rifiutata o esclusa** .
+
+## <a name="review-confirmed-topics"></a>Esaminare gli argomenti confermati
+
+Nella Home page del centro argomenti, gli argomenti che sono stati individuati nei percorsi di origine di SharePoint specificati e che sono stati confermati da un responsabile della Knowledge base o in crowdsourcing confermati da 2 o più persone tramite il meccanismo di commenti e suggerimenti della scheda saranno elencati nella scheda **confermata** . Un utente con autorizzazioni per la gestione degli argomenti può esaminare gli argomenti confermati e scegliere di rifiutarli.
+
+
+Per esaminare un argomento confermato:
+
+1. Nella scheda **confermata** selezionare l'argomento per aprire la pagina dell'argomento.</br>
+
+2. Nella pagina dell'argomento esaminare la pagina dell'argomento e selezionare **modifica** se è necessario apportare modifiche alla pagina.
+
+3. È possibile rifiutarla troppo
+
+## <a name="review-published-topics"></a>Esaminare gli argomenti pubblicati
+Gli argomenti pubblicati sono stati modificati in modo che le informazioni di speific vengano sempre visualizzate a chiunque incontri la pagina. Gli argomenti creati manualmente sono riportati di seguito.
+
    
 ## <a name="create-a-new-topic"></a>Creare un nuovo argomento
 
 Se necessario, è possibile creare un nuovo argomento in un utente con le autorizzazioni Crea o modifica argomento. Potrebbe essere necessario eseguire questa operazione se l'argomento non è stato individuato tramite Discovery o se la tecnologia AI non ha trovato prove sufficienti per stabilirlo come argomento.
 
 Per creare un nuovo argomento:
-1. Nella pagina Centro argomenti selezionare **nuovo**e quindi **pagina argomento**.</br>
 
-    ![Nuovo argomento](../media/content-understanding/k-new-topic.png) </br>
+1. Nella pagina Centro argomenti selezionare **nuovo** e quindi **pagina argomento**.
 
-2. Nella pagina nuovo argomento, è possibile inserire le informazioni nel nuovo modello di argomento:</br>
-    a. Nella sezione **nome in questo argomento** Digitare il nome del nuovo argomento.</br>
-    b. Nella sezione **Alternate Names** Digitare nomi o acronimi utilizzati anche per fare riferimento all'argomento.</br>
-    c. Nella sezione **Descrizione breve** Digitare una descrizione di una o due frasi dell'argomento. Questo testo verrà utilizzato per la scheda argomento associato.</br>
-    d. Nella sezione **utenti** Digitare i nomi degli esperti dell'argomento.</br>
-    e. Nella sezione **file e pagine** selezionare **Aggiungi** e quindi nella pagina successiva è possibile selezionare i file di OneDrive associati o le pagine di SharePoint Online.</br>
-    f. Nella sezione **siti** selezionare **Aggiungi**. Nel riquadro  **siti** che viene visualizzato selezionare i siti associati all'argomento.</br>
+    ![Nuovo argomento](../media/content-understanding/k-new-topic.png)
 
-    ![Pagina nuovo argomento](../media/content-understanding/k-new-topic-page.png) </br>
+2. Nella pagina nuovo argomento, è possibile inserire le informazioni nel nuovo modello di argomento:
+
+    1. Nella sezione **nome in questo argomento** Digitare il nome del nuovo argomento.
+    
+    1. Nella sezione **Alternate Names** Digitare nomi o acronimi utilizzati anche per fare riferimento all'argomento.
+    
+    1. Nella sezione **Descrizione breve** Digitare una descrizione di una o due frasi dell'argomento. Questo testo verrà utilizzato per la scheda argomento associato.
+    
+    1. Nella sezione **utenti** Digitare i nomi degli esperti dell'argomento.
+    
+    1. Nella sezione **file e pagine** selezionare **Aggiungi** e quindi nella pagina successiva è possibile selezionare i file di OneDrive associati o le pagine di SharePoint Online.
+    
+    1. Nella sezione **siti** selezionare **Aggiungi**. Nel riquadro  **siti** che viene visualizzato selezionare i siti associati all'argomento.
+
+    ![Pagina nuovo argomento](../media/content-understanding/k-new-topic-page.png)
+    
 3. Se è necessario aggiungere altri componenti alla pagina, ad esempio testo, immagini, WebParts, collegamenti e così via, selezionare l'icona Canvas al centro della pagina per individuarla e aggiungerla.
-    ![Aggiungere elementi alla pagina](../media/content-understanding/static-icon.png) </br> 
+
+    ![Aggiungere elementi alla pagina](../media/content-understanding/static-icon.png)
 
 4. Al termine, fare clic su **pubblica** per pubblicare la pagina dell'argomento. Verranno visualizzate le pagine degli argomenti pubblicati nella scheda **pagine** .
 
@@ -86,27 +115,23 @@ Per creare un nuovo argomento:
 
 Le pagine degli argomenti esistenti sono disponibili nella pagina **pagine** . 
 
-1. Nella pagina Centro argomenti selezionare **pagine**.</br>
-2. Nella pagina **pagine** verrà visualizzato un elenco delle pagine degli argomenti. Utilizzare la casella di ricerca per trovare la pagina di argomento che si desidera aggiornare. Fare clic sul nome della pagina dell'argomento che si desidera modificare.</br>
-3. Nella pagina dell'argomento selezionare **modifica**. </br>
-4. Apportare le modifiche necessarie per la pagina. Sono inclusi gli aggiornamenti per i seguenti campi:</br>
-    a. Nomi alternativi</br>
-    b. Descrizione</br>
-    c. Persone</br>
-    d. File e pagine</br>
-    e. Siti</br>
-    f. È inoltre possibile aggiungere elementi statici alla pagina, ad esempio testo, immagini o collegamento, selezionando l'icona Canvas.</br>
+1. Nella pagina Centro argomenti selezionare **pagine**.
+
+2. Nella pagina **pagine** verrà visualizzato un elenco delle pagine degli argomenti. Utilizzare la casella di ricerca per trovare la pagina di argomento che si desidera aggiornare. Fare clic sul nome della pagina dell'argomento che si desidera modificare.
+
+3. Nella pagina dell'argomento selezionare **modifica**.
+
+4. Apportare le modifiche necessarie per la pagina. Sono inclusi gli aggiornamenti per i seguenti campi:
+
+    1. Nomi alternativi
+    1. Descrizione
+    1. Persone
+    1. File e pagine
+    1. Siti
+    1. È inoltre possibile aggiungere elementi statici alla pagina, ad esempio testo, immagini o collegamento, selezionando l'icona Canvas.
 
 5. Selezionare **Ripubblica** per salvare le modifiche.
 
-## <a name="see-also"></a>Vedere anche
-
-
-
-  
-
-
-
-
+<!--## See also-->
 
 

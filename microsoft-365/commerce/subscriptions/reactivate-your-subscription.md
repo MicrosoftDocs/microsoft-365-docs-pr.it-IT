@@ -21,13 +21,13 @@ ms.custom:
 search.appverid:
 - MET150
 ms.assetid: 23aa9dd5-a2b0-42f5-8893-9541d2f3761f
-description: Informazioni su come riattivare l'abbonamento alla scadenza o se Microsoft la disattiva o se viene annullata al centro.
-ms.openlocfilehash: cbd5fbc5bd6423f6583701682e63ed93206b562e
-ms.sourcegitcommit: 25afc0c34edc7f8a5eb389d8c701175256c58ec8
+description: Informazioni su come riattivare l'abbonamento quando scade, è disabilitato o annullato.
+ms.openlocfilehash: 36d82699f6eb0c1cd4a1c404d7b030a865111d03
+ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "47324293"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48906776"
 ---
 # <a name="reactivate-your-subscription"></a>Riattivare l'abbonamento
 
@@ -38,9 +38,9 @@ ms.locfileid: "47324293"
 
 ::: moniker-end
 
-Se l'abbonamento scade oppure è stato disabilitato da Microsoft o se è stato annullato nel corso di un periodo di sottoscrizione, è possibile riattivarlo nell'interfaccia di amministrazione.
+È possibile riattivare l'abbonamento nell'interfaccia di amministrazione se: la sottoscrizione è scaduta, è stata disattivata da Microsoft o se è stata annullata nel corso di un periodo di sottoscrizione.
   
-## <a name="before-you-begin"></a>Prima di iniziare
+## <a name="before-you-begin"></a>Informazioni preliminari
 
 È necessario essere un amministratore globale o di fatturazione per riattivare un abbonamento. Per altre informazioni, vedere [Informazioni sui ruoli di amministratore](../../admin/add-users/about-admin-roles.md).
 
@@ -51,9 +51,9 @@ Se l'abbonamento scade oppure è stato disabilitato da Microsoft o se è stato a
 ::: moniker range="o365-worldwide"
 
 1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">I tuoi prodotti</a>.
-2. Nella scheda **prodotti** individuare la sottoscrizione che si desidera riattivare. Selezionare **altre azioni** (tre punti) e quindi selezionare **riattiva la sottoscrizione**. \
-    Se non si visualizza **riattivare la sottoscrizione**, [contattare il supporto](../../admin/contact-support-for-business-products.md).
-3. Nel riquadro **riattivare la sottoscrizione** , selezionare un metodo di pagamento nell'elenco a discesa oppure selezionare **Aggiungi metodo di pagamento**.
+2. Nella scheda **Prodotti** , trovare l'abbonamento da riattivare. Selezionare **altre azioni** (tre punti) e quindi selezionare **riattiva la sottoscrizione**. \
+    Se non si visualizza **riattivare la sottoscrizione** , [contattare il supporto](../../admin/contact-support-for-business-products.md).
+3. Nel riquadro **Riattiva l’abbonamento** , selezionare una modalità di pagamento nell'elenco a discesa oppure selezionare **Aggiungi modalità di pagamento**.
 4. Selezionare **Salva**.
 
 ::: moniker-end
@@ -100,7 +100,7 @@ Se l'abbonamento scade oppure è stato disabilitato da Microsoft o se è stato a
 
 ::: moniker-end
 
-## <a name="related-content"></a>Contenuto correlato
+## <a name="related-content"></a>Contenuti correlati
 
 [Provare o acquistare un abbonamento a Microsoft 365 for business](../try-or-buy-microsoft-365.md) (articolo) \
 [Rinnovare Microsoft 365 for business](renew-your-subscription.md) (articolo) \

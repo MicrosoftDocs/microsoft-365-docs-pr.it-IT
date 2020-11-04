@@ -23,12 +23,12 @@ search.appverid:
 - GEA150
 ms.assetid: 4436582f-211a-45ec-b72e-33647f97d8a3
 description: Informazioni su cosa succede ai dati quando la sottoscrizione Microsoft 365 for business scade, è disabilitata o se si Annulla.
-ms.openlocfilehash: 77b65931056ca504d6f3efd7ca86560496495f5d
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: b09f56fefb7791af012c9dab2ba4e5684b9bf89f
+ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48646872"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48906824"
 ---
 # <a name="what-happens-to-my-data-and-access-when-my-microsoft-365-for-business-subscription-ends"></a>Cosa succede ai dati e all'accesso quando termina l'abbonamento a Microsoft 365 for business?
 
@@ -203,6 +203,10 @@ A questo punto non è più possibile riattivare l'abbonamento. Tuttavia, come am
 > [!NOTE]
 > Se si aggiunge un nuovo abbonamento dello stesso tipo di quello di cui è stato eseguito il deprovisioning, non è possibile ripristinare i dati precedentemente associati all'abbonamento rimosso con deprovisioning.
 
+
+> [!NOTE]
+> Se una licenza CSP è sospesa, non esiste un periodo di tolleranza di 30 giorni e i servizi vengono disabilitati immediatamente. I dati verranno eliminati dopo 90 giorni se il tenant non viene riattivato con l'aggiunta di una nuova licenza.
+
 ### <a name="what-happens-when-my-trial-ends"></a>Cosa succede alla fine del periodo di valutazione?
 
 Al termine del processo, non è possibile continuare a utilizzare Microsoft 365 gratuitamente. È possibile procedere in diversi modi:
@@ -237,3 +241,4 @@ Al termine del processo, non è possibile continuare a utilizzare Microsoft 365 
 [Annullare l'abbonamento](https://docs.microsoft.com/microsoft-365/commerce/subscriptions/cancel-your-subscription) (articolo) \
 [Rinnovare Microsoft 365 for business](https://docs.microsoft.com/microsoft-365/commerce/subscriptions/renew-your-subscription) (articolo) \
 [Riattivare l'abbonamento](https://docs.microsoft.com/microsoft-365/commerce/subscriptions/reactivate-your-subscription) (articolo)
+

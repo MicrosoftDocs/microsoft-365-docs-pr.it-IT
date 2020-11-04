@@ -26,36 +26,36 @@ search.appverid:
 - GEA150
 ms.assetid: 9b23c065-eef9-4bf7-acf5-127eb46d5e67
 ROBOTS: NOINDEX
-description: 'Informazioni su ciò che è necessario conoscere prima di passare attraverso il processo di iscrizione per Office 365. '
-ms.openlocfilehash: 0e5e4d89811807bfdb1bb71fb213973bdba075e2
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+description: 'Capire cosa è necessario sapere prima di passare attraverso il processo di iscrizione per Office 365. '
+ms.openlocfilehash: 7cbbcecdf3520ce5f8bd266100c3934a9cd7a664
+ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48646632"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48906276"
 ---
 # <a name="how-to-sign-up---admin-help"></a>Come iscriversi-Guida per gli amministratori
 
 ::: moniker range="o365-worldwide"
 
-Iscriversi a Microsoft 365 for business in modo che il team possa iniziare a utilizzare le versioni più recenti di Word, Excel, PowerPoint e altre applicazioni di Office nella propria azienda.
+Iscriversi a Microsoft 365 for business in modo che il team possa iniziare a utilizzare le versioni più recenti di Word, Excel, PowerPoint e altre applicazioni di Office.
   
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-Iscriversi a Microsoft 365 for business in modo che il team possa iniziare a utilizzare le versioni più recenti di Word, Excel, PowerPoint e altre applicazioni di Office nella propria azienda.
+Iscriversi a Microsoft 365 for business in modo che il team possa iniziare a utilizzare le versioni più recenti di Word, Excel, PowerPoint e altre applicazioni di Office.
   
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-Office 365 gestito da 21Vianet è stato ideato per soddisfare le esigenze di servizi cloud sicuri, affidabili e scalabili in Cina. Il servizio è dotato di una tecnologia che Microsoft ha concesso in licenza a 21Vianet. Microsoft non utilizza il servizio stesso. 21Vianet opera, fornisce e gestisce il recapito del servizio. 21Vianet è il principale provider di servizi Internet Data Center neutro per i vettori in Cina, che fornisce hosting, servizi di rete gestiti e servizi di infrastruttura cloud computing. Tramite la gestione delle licenze Microsoft Technologies, 21Vianet gestisce i datacenter Microsoft locali per offrire la possibilità di utilizzare i servizi Microsoft mantenendo i dati in Cina. 21Vianet fornisce anche i servizi di sottoscrizione e fatturazione, nonché il supporto.
+Office 365 gestito da 21Vianet è pensato per soddisfare le esigenze di servizi cloud sicuri, affidabili e scalabili in Cina. Il servizio è dotato di una tecnologia che Microsoft ha concesso in licenza a 21Vianet. Microsoft non utilizza il servizio stesso. 21Vianet opera, fornisce e gestisce il recapito del servizio. 21Vianet è il principale provider di servizi Internet Data Center neutro per i vettori in Cina, che fornisce hosting, servizi di rete gestiti e servizi di infrastruttura cloud computing. Tramite la gestione delle licenze Microsoft Technologies, 21Vianet gestisce i datacenter Microsoft locali per offrire la possibilità di utilizzare i servizi Microsoft mantenendo i dati in Cina. 21Vianet fornisce anche i servizi di sottoscrizione e fatturazione, nonché il supporto.
   
 > [!NOTE]
 > Questi servizi sono soggetti alle leggi vigenti in Cina.
   
-Quando si esegue l'iscrizione a Office 365 gestito da 21Vianet, il team può iniziare a utilizzare le versioni più recenti di Word, Excel, PowerPoint e altre applicazioni di Office nella propria azienda.
+Iscriversi a Office 365 gestito da 21Vianet in modo che il team possa iniziare a utilizzare le versioni più recenti di Word, Excel, PowerPoint e altre applicazioni di Office.
   
 Pronto per l'iscrizione? [Selezionare un piano](https://products.office.com/zh-cn/business/compare-office-365-for-business-plans).
   
@@ -72,7 +72,7 @@ Guarda un breve video sulla scelta di un piano Microsoft 365 for business.<br><b
 
 Se il video è stato utile, consultare la [serie di formazione completa per piccole imprese e nuovi utenti di Microsoft 365](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
 
-Serve aiuto nella scelta? I consulenti di vendita sono a disposizione per rispondere a qualsiasi domanda. Basta andare a [confrontare tutti i prodotti](https://products.office.com/compare-all-microsoft-office-products?tab=2) e scegliere una delle opzioni di supporto per i contatti elencate sul lato sinistro della pagina.
+Serve assistenza per la scelta di un piano? I consulenti di vendita sono a disposizione per rispondere a qualsiasi domanda. Andare a [confrontare tutti i prodotti](https://products.office.com/compare-all-microsoft-office-products?tab=2) e scegliere una delle opzioni di supporto per i contatti elencate sul lato sinistro della pagina.
   
 ::: moniker-end
 
@@ -81,7 +81,7 @@ Serve aiuto nella scelta? I consulenti di vendita sono a disposizione per rispon
 
 Prima di acquistare, inserire alcuni pensieri nel piano di iscrizione. Si eviteranno problemi in futuro.
   
-Serve aiuto nella scelta? I consulenti di vendita sono a disposizione per rispondere a qualsiasi domanda. Basta andare a [confrontare tutti i prodotti](https://products.office.com/compare-all-microsoft-office-products?tab=2) e scegliere una delle opzioni di supporto per i contatti elencate sul lato sinistro della pagina. 
+Serve assistenza per la scelta di un piano? I consulenti di vendita sono a disposizione per rispondere a qualsiasi domanda. Basta andare a [confrontare tutti i prodotti](https://products.office.com/compare-all-microsoft-office-products?tab=2) e scegliere una delle opzioni di supporto per i contatti elencate sul lato sinistro della pagina. 
   
 ::: moniker-end
 
@@ -96,8 +96,8 @@ Non è necessario annullare la versione di valutazione. Se non si acquista la so
 
 Guardare un breve video in cui viene illustrato il processo di iscrizione.<br><br>
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE471FJ] 
- 
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE471FJ]
+
 ::: moniker-end
 
 ::: moniker range="o365-germany"
@@ -115,16 +115,16 @@ Non è necessario annullare la versione di valutazione. Se non si acquista la so
 
 - **Indirizzo e informazioni di contatto dell'abbonamento:**
 
-  - **Paese** in cui verranno usati i servizi. **Non** sarà possibile modificare queste informazioni in un secondo momento, nemmeno durante il processo di iscrizione; sarà necessario riavviare la procedura guidata di iscrizione.
+  - **Paese** in cui verranno usati i servizi. **Non** sarà possibile modificare il paese in un secondo momento, anche durante il processo di iscrizione; sarà necessario riavviare la procedura guidata di iscrizione.
 
   - **Indirizzo di posta elettronica** e **numero di telefono** per poter essere contattati in merito all'abbonamento, se necessario. Se ad esempio si dimentica la password, Microsoft può usare queste informazioni per inviarne una temporanea. Inoltre, le informazioni sulla fatturazione vengono inviate all'indirizzo specificato.
 
     > [!NOTE]
     > L'indirizzo di posta elettronica immesso qui è diverso dall'indirizzo di posta elettronica Microsoft 365 (il nome di accesso, in basso). Poiché a questo indirizzo vengono inviate anche le informazioni sulla fatturazione, è consigliabile usare un indirizzo appropriato per la ricezione di posta elettronica aziendale.
   
-- **Un nome di accesso (ID utente):** Questo diventa l'indirizzo di posta elettronica Microsoft 365 iniziale, solo per iniziare rapidamente.
+- **Un nome di accesso (ID utente):** Questo ID utente diventa l'indirizzo di posta elettronica Microsoft 365 iniziale, solo per iniziare rapidamente.
 
-    Questo è l'indirizzo di posta elettronica utilizzato per l'accesso. Ad esempio, se il nome dell'azienda è Fourth Coffee, è possibile scegliere roberto@fourthcoffee.onmicrosoft.com come ID utente.
+    Questo ID utente è l'indirizzo di posta elettronica utilizzato per l'accesso. Ad esempio, se il nome dell'azienda è Fourth Coffee, è possibile scegliere roberto@fourthcoffee.onmicrosoft.com come ID utente.
 
     La maggior parte delle persone aggiunge il proprio dominio personalizzato poco dopo la registrazione in modo che possano iniziare a ricevere messaggi di posta elettronica. Ad esempio, se si ha un dominio personalizzato con nome fourthcoffee.com, è possibile configurare l'indirizzo di posta elettronica come roberto@fourthcoffee.com.
 
