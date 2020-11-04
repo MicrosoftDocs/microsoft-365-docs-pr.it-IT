@@ -1,5 +1,5 @@
 ---
-title: Creare gruppi di distribuzione nell'interfaccia di amministrazione di Microsoft 365
+title: Creare gruppi di distribuzione
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -13,64 +13,66 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
-ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: b1ffe755-59e5-4369-826d-825f145a8400
-description: Inviare messaggi di posta elettronica a un gruppo di persone senza dover digitare il nome di ogni singolo destinatario creando la distribuzione (elenco).
-ms.openlocfilehash: eaa1051c83f64a6a20d3f27eb17f2a0fef5f2b12
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+ms.custom:
+- seo-marvel-may2020
+- AdminSurgePortfolio
+description: Informazioni su come creare elenchi o gruppi di distribuzione nell'interfaccia di amministrazione di Microsoft 365 in modo da poter inviare messaggi di posta elettronica a un gruppo senza dover digitare il nome di ogni destinatario.
+ms.openlocfilehash: c206e3eaa7987ba90d54daa55ae069d188908a0b
+ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44779894"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48906370"
 ---
-# <a name="create-distribution-groups-in-the-microsoft-365-admin-center"></a><span data-ttu-id="0b8ff-103">Creare gruppi di distribuzione nell'interfaccia di amministrazione di Microsoft 365</span><span class="sxs-lookup"><span data-stu-id="0b8ff-103">Create distribution groups in the Microsoft 365 admin center</span></span>
+# <a name="create-distribution-groups-in-the-microsoft-365-admin-center"></a><span data-ttu-id="b704b-103">Creare gruppi di distribuzione nell'interfaccia di amministrazione di Microsoft 365</span><span class="sxs-lookup"><span data-stu-id="b704b-103">Create distribution groups in the Microsoft 365 admin center</span></span>
   
-<span data-ttu-id="0b8ff-104">Utilizzato quando si desidera inviare messaggi di posta elettronica a un gruppo di persone senza dover digitare il nome di ogni singolo destinatario, i gruppi di distribuzione sono organizzati da un particolare argomento di discussione (ad esempio "marketing") o da utenti che condividono lavori comuni che richiedono la comunicazione frequente.</span><span class="sxs-lookup"><span data-stu-id="0b8ff-104">Used when you want to send email to group of people without having to type each individual recipient's name, distribution groups are organized by a particular discussion subject (such as "Marketing") or by users who share common work that requires them to communicate frequently.</span></span> <span data-ttu-id="0b8ff-105">Le liste di distribuzione consentono anche di inoltrare automaticamente messaggi a più indirizzi di posta elettronica.</span><span class="sxs-lookup"><span data-stu-id="0b8ff-105">They also provide a way for you to automatically forward email to multiple email addresses.</span></span>
-  
-<span data-ttu-id="0b8ff-106">I gruppi di distribuzione sono talvolta denominati liste di distribuzione.</span><span class="sxs-lookup"><span data-stu-id="0b8ff-106">Distribution groups are sometimes called distribution lists.</span></span>
+<span data-ttu-id="b704b-104">Utilizzato quando si desidera inviare messaggi di posta elettronica a un gruppo di persone senza dover digitare il nome di ogni singolo destinatario, i gruppi di distribuzione (liste di distribuzione) sono organizzati da un particolare argomento di discussione (ad esempio "marketing") o da utenti che condividono lavori comuni che richiedono la comunicazione frequente.</span><span class="sxs-lookup"><span data-stu-id="b704b-104">Used when you want to send email to group of people without having to type each individual recipient's name, distribution groups (distribution lists) are organized by a particular discussion subject (such as "Marketing") or by users who share common work that requires them to communicate frequently.</span></span> <span data-ttu-id="b704b-105">Le liste di distribuzione consentono anche di inoltrare automaticamente messaggi a più indirizzi di posta elettronica.</span><span class="sxs-lookup"><span data-stu-id="b704b-105">They also provide a way for you to automatically forward email to multiple email addresses.</span></span>
+
+<span data-ttu-id="b704b-106">I gruppi di distribuzione sono talvolta denominati liste di distribuzione.</span><span class="sxs-lookup"><span data-stu-id="b704b-106">Distribution groups are sometimes called distribution lists.</span></span>
   
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/e8747233-4f1c-4bf4-81cf-2a4ea9ccd80d?autoplay=false]
   
-## <a name="create-a-distribution-group-list"></a><span data-ttu-id="0b8ff-107">Creare un gruppo di distribuzione (elenco)</span><span class="sxs-lookup"><span data-stu-id="0b8ff-107">Create a distribution group (list)</span></span>
+## <a name="create-a-distribution-group-list"></a><span data-ttu-id="b704b-107">Creare un gruppo di distribuzione (elenco)</span><span class="sxs-lookup"><span data-stu-id="b704b-107">Create a distribution group (list)</span></span>
 
 ::: moniker range="o365-worldwide"
 
-<span data-ttu-id="0b8ff-108">Passare all'interfaccia di amministrazione all'indirizzo <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>.</span><span class="sxs-lookup"><span data-stu-id="0b8ff-108">Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>.</span></span>
+<span data-ttu-id="b704b-108">Passare all'interfaccia di amministrazione all'indirizzo <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>.</span><span class="sxs-lookup"><span data-stu-id="b704b-108">Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>.</span></span>
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-<span data-ttu-id="0b8ff-109">Passare all'interfaccia di amministrazione all'indirizzo <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">https://portal.office.de/adminportal</a>.</span><span class="sxs-lookup"><span data-stu-id="0b8ff-109">Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">https://portal.office.de/adminportal</a>.</span></span>
+<span data-ttu-id="b704b-109">Passare all'interfaccia di amministrazione all'indirizzo <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">https://portal.office.de/adminportal</a>.</span><span class="sxs-lookup"><span data-stu-id="b704b-109">Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">https://portal.office.de/adminportal</a>.</span></span>
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-<span data-ttu-id="0b8ff-110">Passare all'interfaccia di amministrazione all'indirizzo <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">https://portal.partner.microsoftonline.cn/adminportal</a>.</span><span class="sxs-lookup"><span data-stu-id="0b8ff-110">Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">https://portal.partner.microsoftonline.cn/adminportal</a>.</span></span>
+<span data-ttu-id="b704b-110">Passare all'interfaccia di amministrazione all'indirizzo <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">https://portal.partner.microsoftonline.cn/adminportal</a>.</span><span class="sxs-lookup"><span data-stu-id="b704b-110">Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">https://portal.partner.microsoftonline.cn/adminportal</a>.</span></span>
 
 ::: moniker-end
 
-1. <span data-ttu-id="0b8ff-111">Selezionare l'icona di avvio delle app  e scegliere **Amministratore**.</span><span class="sxs-lookup"><span data-stu-id="0b8ff-111">Select the app launcher icon and choose **Admin**.</span></span>
+1. <span data-ttu-id="b704b-111">Selezionare l'icona di avvio delle app  e scegliere **Amministratore**.</span><span class="sxs-lookup"><span data-stu-id="b704b-111">Select the app launcher icon and choose **Admin**.</span></span>
     
-    <span data-ttu-id="0b8ff-112">Non è possibile trovare l'app che si sta cercando?</span><span class="sxs-lookup"><span data-stu-id="0b8ff-112">Can't find the app you're looking for?</span></span> <span data-ttu-id="0b8ff-113">Dall'icona di avvio delle app, seleziona **tutte le app** per visualizzare un elenco alfabetico delle app disponibili.</span><span class="sxs-lookup"><span data-stu-id="0b8ff-113">From the app launcher, select **All apps** to see an alphabetical list of the apps available to you.</span></span> <span data-ttu-id="0b8ff-114">Da qui, è possibile cercare un'app specifica.</span><span class="sxs-lookup"><span data-stu-id="0b8ff-114">From there, you can search for a specific app.</span></span> 
+    <span data-ttu-id="b704b-112">Non riesci a trovare l'app che stai cercando?</span><span class="sxs-lookup"><span data-stu-id="b704b-112">Can't find the app you're looking for?</span></span> <span data-ttu-id="b704b-113">Dall'icona di avvio delle app, seleziona **tutte le app** per visualizzare un elenco alfabetico delle app disponibili.</span><span class="sxs-lookup"><span data-stu-id="b704b-113">From the app launcher, select **All apps** to see an alphabetical list of the apps available to you.</span></span> <span data-ttu-id="b704b-114">Tramite la lista è possibile cercare un'applicazione specifica.</span><span class="sxs-lookup"><span data-stu-id="b704b-114">From there, you can search for a specific app.</span></span> 
     
-2. <span data-ttu-id="0b8ff-115">Selezionare **gruppi gruppi** \> **Groups** nel riquadro di spostamento sinistro e quindi fare clic su **Aggiungi gruppo**.</span><span class="sxs-lookup"><span data-stu-id="0b8ff-115">Select **Groups** \> **Groups** in the left navigation pane, and then select **Add a group**.</span></span> 
+2. <span data-ttu-id="b704b-115">Selezionare **gruppi gruppi** \> **Groups** nel riquadro di spostamento sinistro e quindi fare clic su **Aggiungi gruppo**.</span><span class="sxs-lookup"><span data-stu-id="b704b-115">Select **Groups** \> **Groups** in the left navigation pane, and then select **Add a group**.</span></span> 
       
-3. <span data-ttu-id="0b8ff-116">Nel campo **scegliere un tipo di gruppo** scegliere **distribuzione**e quindi fare clic su **Avanti**.</span><span class="sxs-lookup"><span data-stu-id="0b8ff-116">On the **Choose a group type** field, choose **Distribution**, and then choose **Next**.</span></span>
+3. <span data-ttu-id="b704b-116">Nel campo **scegliere un tipo di gruppo** scegliere **distribuzione** e quindi fare clic su **Avanti**.</span><span class="sxs-lookup"><span data-stu-id="b704b-116">On the **Choose a group type** field, choose **Distribution** , and then choose **Next**.</span></span>
   
-4. <span data-ttu-id="0b8ff-117">Immettere un nome, una descrizione e un alias di posta elettronica per il nuovo gruppo e scegliere se si desidera che gli utenti esterni all'organizzazione inviino messaggi di posta elettronica al gruppo.</span><span class="sxs-lookup"><span data-stu-id="0b8ff-117">Enter a name, description, and email alias for your new group, and choose whether you want people outside your organization to send email to the group.</span></span> 
+4. <span data-ttu-id="b704b-117">Immettere un nome, una descrizione e un alias di posta elettronica per il nuovo gruppo e scegliere se si desidera che gli utenti esterni all'organizzazione inviino messaggi di posta elettronica al gruppo.</span><span class="sxs-lookup"><span data-stu-id="b704b-117">Enter a name, description, and email alias for your new group, and choose whether you want people outside your organization to send email to the group.</span></span> 
     
-5. <span data-ttu-id="0b8ff-118">Premere **Aggiungi** per creare un gruppo e quindi esaminare il gruppo e scegliere **Chiudi**.</span><span class="sxs-lookup"><span data-stu-id="0b8ff-118">Press **Add** to create a group, and then review your group and choose **Close**.</span></span> 
+5. <span data-ttu-id="b704b-118">Premere **Aggiungi** per creare un gruppo e quindi esaminare il gruppo e scegliere **Chiudi**.</span><span class="sxs-lookup"><span data-stu-id="b704b-118">Press **Add** to create a group, and then review your group and choose **Close**.</span></span> 
     
-6. <span data-ttu-id="0b8ff-119">Per aggiungere utenti al gruppo di distribuzione, vedere [aggiungere un utente o un contatto a un gruppo di distribuzione](../email/add-user-or-contact-to-distribution-list.md).</span><span class="sxs-lookup"><span data-stu-id="0b8ff-119">To add users to your distribution group, see [Add a user or contact to a distribution group](../email/add-user-or-contact-to-distribution-list.md).</span></span>
+6. <span data-ttu-id="b704b-119">Per aggiungere utenti alla lista di distribuzione, vedere [aggiungere un utente o un contatto a un gruppo di distribuzione](../email/add-user-or-contact-to-distribution-list.md).</span><span class="sxs-lookup"><span data-stu-id="b704b-119">To add users to your distribution list, see [Add a user or contact to a distribution group](../email/add-user-or-contact-to-distribution-list.md).</span></span>
     
-<span data-ttu-id="0b8ff-120">Per informazioni su come utilizzare gruppo in Outlook 2016 e Outlook sul Web, vedere l'argomento [utilizzo dei gruppi di contatti (in precedenza liste di distribuzione) in Outlook](https://support.microsoft.com/office/1c97fcb2-0ed4-41e6-b401-58f9d7d40e39) .</span><span class="sxs-lookup"><span data-stu-id="0b8ff-120">Check out how to use group in Outlook 2016 and Outlook on the web in the [Use contact groups (formerly distribution lists) in Outlook](https://support.microsoft.com/office/1c97fcb2-0ed4-41e6-b401-58f9d7d40e39) topic.</span></span> 
+<span data-ttu-id="b704b-120">Per informazioni su come utilizzare gruppo in Outlook 2016 e Outlook sul Web, vedere l'argomento [utilizzo dei gruppi di contatti (in precedenza liste di distribuzione) in Outlook](https://support.microsoft.com/office/1c97fcb2-0ed4-41e6-b401-58f9d7d40e39) .</span><span class="sxs-lookup"><span data-stu-id="b704b-120">Check out how to use group in Outlook 2016 and Outlook on the web in the [Use contact groups (formerly distribution lists) in Outlook](https://support.microsoft.com/office/1c97fcb2-0ed4-41e6-b401-58f9d7d40e39) topic.</span></span> 
   
-<span data-ttu-id="0b8ff-121">Consultare i [problemi del gruppo di distribuzione](https://docs.microsoft.com/office365/troubleshoot/groups/distribution-list-issues) per informazioni sui problemi del gruppo di distribuzione.</span><span class="sxs-lookup"><span data-stu-id="0b8ff-121">Check out [Distribution group issues](https://docs.microsoft.com/office365/troubleshoot/groups/distribution-list-issues) for help with distribution group issues.</span></span> 
+<span data-ttu-id="b704b-121">Per informazioni sui problemi relativi alla lista di distribuzione, vedere [problemi del gruppo di distribuzione](https://docs.microsoft.com/office365/troubleshoot/groups/distribution-list-issues) .</span><span class="sxs-lookup"><span data-stu-id="b704b-121">Check out [Distribution group issues](https://docs.microsoft.com/office365/troubleshoot/groups/distribution-list-issues) for help with distribution list issues.</span></span> 
   
 
