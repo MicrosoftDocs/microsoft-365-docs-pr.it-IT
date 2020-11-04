@@ -15,12 +15,12 @@ ms.collection:
 - GDPR
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: c262e496313ec5f59e9e369d8622f4698a9a585a
-ms.sourcegitcommit: 888b9355ef7b933c55ca6c18639c12426ff3fbde
+ms.openlocfilehash: c420e5a8fd94a9fb549cb6683f46c4bc5457632a
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "48305200"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48843172"
 ---
 # <a name="azure-and-dynamics-365-breach-notification-under-the-gdpr"></a>Notifica di violazione nell'ambito del GDPR in Azure e Dynamics 365
 
@@ -40,11 +40,11 @@ Azure risponde a una potenziale violazione dei dati in base al processo di rispo
 
 |**Fase**|**Descrizione**|
 | ------- | ------------- |
-| ***1 - Rilevamento*** | Prima indicazione di un potenziale incidente. |
-| ***2 - Valutazione*** | Un tecnico di turno del team di intervento per gli incidenti valuta l'impatto e la gravità dell'incidente. Secondo le prove raccolte, la valutazione può comportare o meno un'ulteriore escalation al team di intervento della sicurezza. |
-| ***3 - Diagnostica*** | Gli esperti del team di intervento della sicurezza svolgono le indagini tecniche o forensi, identificano le strategie di contenimento, mitigazione e le soluzioni alternative. Se il team della sicurezza ritiene che i dati del cliente potrebbero essere stati esposti a un individuo non autorizzato o a un criminale, il processo di notifica dell'incidente al cliente si svolge in parallelo. |
-| ***4 - Stabilizzazione e ripristino*** | Il team di intervento per gli incidenti crea un piano di ripristino per mitigare il problema. Le misure di contenimento della crisi, come l'applicazione della quarantena ai sistemi colpiti, possono verificarsi immediatamente e parallelamente alla fase di diagnosi. Si possono pianificare misure di mitigazione a lungo termine da implementare dopo che è passato il rischio immediato. |
-| ***5 - Chiusura e relazione finale*** | Il team di intervento per gli incidenti crea una relazione finale dettagliata dell'incidente finalizzata alla revisione di criteri, procedure e interventi per prevenire il ripetersi dell'evento. |
+| **_1 — Rilevamento_* _ | Prima indicazione di un potenziale incidente. |
+| _*_2 - Valutazione_*_ | Un tecnico di turno del team di intervento per gli incidenti valuta l'impatto e la gravità dell'incidente. Secondo le prove raccolte, la valutazione può comportare o meno un'ulteriore escalation al team di intervento della sicurezza. |
+| _*_3 - Diagnostica_*_ | Gli esperti del team di intervento della sicurezza svolgono le indagini tecniche o forensi, identificano le strategie di contenimento, mitigazione e le soluzioni alternative. Se il team della sicurezza ritiene che i dati del cliente potrebbero essere stati esposti a un individuo non autorizzato o a un criminale, il processo di notifica dell'incidente al cliente si svolge in parallelo. |
+| _*_4 - Stabilizzazione e ripristino_*_ | Il team di intervento per gli incidenti crea un piano di ripristino per mitigare il problema. Le misure di contenimento della crisi, come l'applicazione della quarantena ai sistemi colpiti, possono verificarsi immediatamente e parallelamente alla fase di diagnosi. Si possono pianificare misure di mitigazione a lungo termine da implementare dopo che è passato il rischio immediato. |
+| _*_5 - Chiusura e relazione finale_*_ | Il team di intervento per gli incidenti crea una relazione finale dettagliata dell'incidente finalizzata alla revisione di criteri, procedure e interventi per prevenire il ripetersi dell'evento. |
 
 Il white paper di [Microsoft Azure Security Response nel cloud](https://gallery.technet.microsoft.com/Azure-Security-Response-in-dd18c678) fornisce ulteriori dettagli su come Microsoft indaga, gestisce e interviene agli incidenti di sicurezza all'interno di Azure.
 
@@ -63,19 +63,19 @@ Microsoft assegna all'indagine adeguati livelli di priorità e gravità determin
 
 Microsoft Azure classifica l'impatto dell'evento sulle informazioni nelle seguenti categorie di violazione:
 
-| **Categoria**             | **Definizione**                                                                                                                   |
+| _ *Categoria**             | **Definizione**                                                                                                                   |
 | ------------------------ | -------------------------------------------------------------------------------------------------------------------------------- |
-| ***Nessuna***               | Nessuna informazione è stata estratta, modificata, cancellata o comunque compromessa.                                                      |
-| ***Violazione della privacy***     | È stato possibile accedere o estrarre dati personali sensibili riguardanti i contribuenti, i dipendenti, i beneficiari e così via.                                |
-| ***Violazioni di proprietà*** | È stato possibile accedere o estrarre informazioni proprietarie non classificate, ad esempio informazioni riguardanti l'infrastruttura critica protetta (PCII). |
-| ***Perdita di integrità***     | Sono state modificate o cancellate informazioni sensibili o proprietarie.                                                                     |
+| **_Nessuna_* _               | Nessuna informazione è stata estratta, modificata, cancellata o comunque compromessa.                                                      |
+| _*_Violazione della privacy_*_     | È stato possibile accedere o estrarre dati personali sensibili riguardanti i contribuenti, i dipendenti, i beneficiari e così via.                                |
+| _*_Violazioni di proprietà_*_ | È stato possibile accedere o estrarre informazioni proprietarie non classificate, ad esempio informazioni riguardanti l'infrastruttura critica protetta (PCII). |
+| _*_Perdita di integrità_*_     | Sono state modificate o cancellate informazioni sensibili o proprietarie.                                                                     |
 
 Il team di Security Response collabora con Microsoft Azure Security Engineers e SME per classificare l'evento sulla base di dati concreti tratti dalle prove raccolte. Un incidente di sicurezza può essere classificato come:
 
-- **Falso positivo**: un evento che soddisfa i criteri di rilevamento ma che risulta essere parte di una normale pratica aziendale e può avere bisogno di essere filtrato. Il team del servizio identifica la causa radice dei falsi positivi e li risolve in modo sistematico usando le fonti di rilevamento e ottimizzandole se necessario.
-- **Incidente di sicurezza**: un accesso illecito o non autorizzato ai dati del cliente o ai dati di supporto archiviati nelle apparecchiature o strutture Microsoft che ha provocato la perdita, la divulgazione o l'alterazione dei dati del cliente o dei dati di supporto.
-- **Incidente di sicurezza/privacy segnalabile dal cliente (CRSPI)**: un accesso o un utilizzo illecito o non autorizzato dei sistemi, dei dispositivi o delle sedi Microsoft che ha provocato la divulgazione, la modifica o la perdita dei dati del cliente.
-- **Violazione della privacy**: un sottotipo di incidente di sicurezza che coinvolge dati personali. Le procedure di gestione non sono diverse da un incidente di sicurezza.
+- *Falso positivo**: un evento che soddisfa i criteri di rilevamento ma che risulta essere parte di una normale pratica aziendale e può avere bisogno di essere filtrato. Il team del servizio identifica la causa radice dei falsi positivi e li risolve in modo sistematico usando le fonti di rilevamento e ottimizzandole se necessario.
+- **Incidente di sicurezza** : un accesso illecito o non autorizzato ai dati del cliente o ai dati di supporto archiviati nelle apparecchiature o strutture Microsoft che ha provocato la perdita, la divulgazione o l'alterazione dei dati del cliente o dei dati di supporto.
+- **Incidente di sicurezza/privacy segnalabile dal cliente (CRSPI)** : un accesso o un utilizzo illecito o non autorizzato dei sistemi, dei dispositivi o delle sedi Microsoft che ha provocato la divulgazione, la modifica o la perdita dei dati del cliente.
+- **Violazione della privacy** : un sottotipo di incidente di sicurezza che coinvolge dati personali. Le procedure di gestione non sono diverse da un incidente di sicurezza.
 
 Per dichiarare un CRSPI, Microsoft deve stabilire che l'accesso non autorizzato ai dati del cliente è effettivamente o probabilmente avvenuto e/o che esiste un impegno legale o contrattuale perché la notifica abbia luogo. È auspicabile, ma non obbligatorio, conoscere lo specifico impatto sul cliente, l'accesso alle risorse e i passaggi di ripristino. Un incidente viene generalmente dichiarato un CRSPI dopo la conclusione della fase diagnostica di un incidente di sicurezza. Tuttavia, la dichiarazione può avvenire in qualsiasi momento, in modo che tutte le informazioni pertinenti siano disponibili. Il responsabile per gli incidenti di sicurezza deve trovare delle prove oltre ogni ragionevole dubbio che si sia verificato un evento segnalabile per avviare l'esecuzione del processo di notifica sull'incidente del cliente.
 
@@ -97,7 +97,7 @@ Dopo aver dichiarato un CRSPI, il processo di notifica si verificherà nel modo 
 
 Microsoft Azure fornisce ai clienti informazioni dettagliate che consentono loro di svolgere indagini interne e di assisterli nell'adempimento degli impegni assunti con l'utente finale, senza ritardare ingiustificatamente il processo di notifica.
 
-La notifica di una violazione dei dati personali verrà recapitata al cliente con qualsiasi mezzo Microsoft selezioni, anche tramite posta elettronica. La notifica di una violazione dei dati verrà inviata all'elenco dei contatti di sicurezza specificato nel Centro sicurezza di Azure, che può essere configurato seguendo le [linee guida per l'implementazione](https://docs.microsoft.com/azure/security-center/security-center-provide-security-contact-details). Se le informazioni sui contatti non sono disponibili nel Centro sicurezza di Azure, la notifica verrà inviata a uno o più amministratori di una sottoscrizione di Azure. Per fare in modo che la notifica possa essere recapitata correttamente, il cliente è tenuto a verificare la correttezza delle informazioni sui contatti amministrativi relative a ogni sottoscrizione e portale dei servizi online applicabile.
+La notifica di una violazione dei dati personali verrà recapitata al cliente con qualsiasi mezzo Microsoft selezioni, anche tramite posta elettronica. La notifica di una violazione dei dati verrà recapitata all'elenco dei contatti di sicurezza disponibili nell' *di Azure Defender, che può essere configurata seguendo le indicazioni di [implementazione](https://docs.microsoft.com/azure/security-center/security-center-provide-security-contact-details). Se le informazioni sui contatti non sono disponibili in Azure Defender* , la notifica viene inviata a uno o più amministratori di un abbonamento ad Azure. Per fare in modo che la notifica possa essere recapitata correttamente, il cliente è tenuto a verificare la correttezza delle informazioni sui contatti amministrativi relative a ogni sottoscrizione e portale dei servizi online applicabile.
 
 Il team di Microsoft Azure o Azure per enti pubblici può anche decidere di informare altri membri del personale Microsoft, ad esempio il servizio clienti (CSS) e l'Account Manager del cliente (AM) o il Technical Account Manager (TAM). Tali figure hanno spesso strette relazioni con il cliente e possono facilitare una correzione più rapida.
 

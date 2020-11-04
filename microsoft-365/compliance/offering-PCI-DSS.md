@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 1151fd74e5f40a91107467b6004049081c4a9a69
-ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
+ms.openlocfilehash: 00f9832eadb55b3056ca3fcd3a79ee12afe83034
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48208238"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48841885"
 ---
 # <a name="payment-card-industry-pci-data-security-standard-dss"></a>Payment Card Industry (PCI) Data Security Standard (DSS)
 
@@ -44,7 +44,7 @@ I clienti che intendono sviluppare un ambiente per i titolari di carte di credit
 - Servizio cloud Flow, indipendente o incluso in un piano o in una famiglia di prodotti Office 365 o Dynamics 365
 - Microsoft Graph
 - Intune
-- [Microsoft Defender Advanced Threat Protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)
+- [Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)
 - Servizio cloud PowerApps come servizio autonomo o incluso in un piano o in una famiglia di prodotti con marchio Office 365 o Dynamics 365
 - Servizio cloud Power BI, autonomo o incluso in un piano o in una famiglia di prodotti Office 365
 - Ricerca in OneDrive for Business e SharePoint Online (solo Stati Uniti)

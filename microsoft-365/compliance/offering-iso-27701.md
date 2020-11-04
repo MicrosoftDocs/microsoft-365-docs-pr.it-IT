@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: e156a8dc71dc9aca4a5d608b29307f4d36f0ec6b
-ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
+ms.openlocfilehash: 697124400ab869825a0d7e46357566c82b1583b3
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48208138"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48845044"
 ---
 # <a name="isoiec-27701-privacy-information-management-system-pims"></a>ISO/IEC 27701 Privacy Information Management System (PIMS)
 
@@ -33,9 +33,9 @@ Il nuovo standard internazionale [ISO/IEC 27701 Privacy Information Management S
 
 Richiedere ai fornitori la certificazione secondo lo standard PIMS consentirà di stabilire in modo efficace le procedure relative alla privacy di partner e fornitori, indipendentemente dalle dimensioni dell'organizzazione. ISO/IEC 27701 fornisce la soluzione a tre obblighi di conformità chiave:
 
-- **L'eccessivo numero di requisiti normativi da gestire**: soddisfare più requisiti normativi tramite l'uso di un set di controlli operativi che consente un'implementazione coerente ed efficiente.
-- **Il costo eccessivo per il controllo di ogni singola normativa**: i revisori, sia interni che di terze parti, possono valutare la conformità alle normative con un controllo operativo universale impostato in un unico ciclo di controllo.
-- **I potenziali rischi del prendere accordi relativi alla conformità senza alcuna prova**: gli accordi commerciali che comportano il trasferimento di informazioni personali possono garantire la certificazione di conformità.
+- **L'eccessivo numero di requisiti normativi da gestire** : soddisfare più requisiti normativi tramite l'uso di un set di controlli operativi che consente un'implementazione coerente ed efficiente.
+- **Il costo eccessivo per il controllo di ogni singola normativa** : i revisori, sia interni che di terze parti, possono valutare la conformità alle normative con un controllo operativo universale impostato in un unico ciclo di controllo.
+- **I potenziali rischi del prendere accordi relativi alla conformità senza alcuna prova** : gli accordi commerciali che comportano il trasferimento di informazioni personali possono garantire la certificazione di conformità.
 
 ## <a name="too-many-regulatory-requirements-to-juggle"></a>L'eccessivo numero di requisiti normativi da gestire
 
@@ -84,7 +84,7 @@ Indipendentemente dalle dimensioni dell'organizzazione e che si tratti di un tit
 - Power Virtual Agents
 - Microsoft Stream
 - Microsoft Threat Experts
-- Windows Defender Advanced Threat Protection
+- Microsoft Defender per endpoint
 
 ## <a name="audits-reports-and-certificates"></a>Controlli, report e certificati
 
