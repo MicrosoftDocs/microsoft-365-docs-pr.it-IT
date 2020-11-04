@@ -18,14 +18,19 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-mar2020
 description: In questo articolo verranno illustrati gli strumenti di analisi dei dati (Preview) in Microsoft 365. Lo strumento indagini dati consente di valutare e correggere la fuoriuscita dei dati.
-ms.openlocfilehash: 21241ad36278bc75a8363b9aeefeaf4caec783b5
-ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
+ms.openlocfilehash: f3e08ca602d9d131cd25d234c96c660f0b9639aa
+ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48285992"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48906931"
 ---
 # <a name="overview-of-data-investigations-preview-in-microsoft-365"></a>Panoramica delle indagini sui dati (anteprima) in Microsoft 365
+
+> [!IMPORTANT]
+> Dopo molte considerazioni e discussioni con i clienti, è stato deciso di non rilasciare lo strumento indagini sui dati per la disponibilità generale. Di conseguenza, si rimuoverà questo strumento e tutti i dati associati ai casi di indagini sui dati esistenti il 31 dicembre 2020.  Per gestire le indagini sui dati nell'organizzazione, si consiglia di utilizzare i casi di eDiscovery di base. Se è necessario cercare ed eliminare contenuto da Microsoft 365, vedere gli articoli seguenti: 
+> - [serie di soluzioni di eDiscovery: scenario di fuoriuscita dei dati-ricerca ed eliminazione](data-spillage-scenariosearch-and-purge.md)
+> - [Cercare ed eliminare i messaggi di posta elettronica](search-for-and-delete-messages-in-your-organization.md)
 
 La fuoriuscita di dati si verifica quando un documento contenente contenuti riservati, sensibili o dannosi viene rilasciato in un ambiente non attendibile. Quando viene rilevata una fuoriuscita di dati, è importante contenere rapidamente l'ambiente, valutare la dimensione e le posizioni del versamento, esaminare le attività degli utenti e quindi eliminare i dati versati dal servizio. Utilizzando lo strumento nuovo data Investigation (Preview), è possibile eseguire la ricerca di dati sensibili, dannosi o fuori luogo tra Office 365, esaminare cosa è successo e intraprendere le azioni appropriate per correggere la fuoriuscita.  
 
