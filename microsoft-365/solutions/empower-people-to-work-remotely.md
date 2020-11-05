@@ -16,14 +16,14 @@ ms.collection:
 - m365solution-remotework
 - m365solution-overview
 - M365initiative-coredeploy
-ms.custom: ''
-description: Configurare le funzionalità di sicurezza e l'infrastruttura di servizio necessarie per consentire ai lavoratori di lavorare in remoto ovunque e in qualsiasi momento.
-ms.openlocfilehash: 23ec0ef33294bb532229c8f736ab5b6a5d000d4e
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.custom: seo-marvel-jun2020
+description: Assicurarsi di aver abilitato tutte le caratteristiche di Microsoft 365 per massimizzare la produttività dei lavoratori remoti e mantenere l'accesso sicuro ai server, ai dati e al cloud.
+ms.openlocfilehash: b886341adc49ba728856dc39786e926ebfadd3ef
+ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48845241"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48906740"
 ---
 # <a name="empower-remote-workers-with-microsoft-365"></a>Aumentare la produttività dei lavoratori remoti con Microsoft 365
 
