@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: È possibile creare un'esenzione associata a un caso di eDiscovery di base per conservare il contenuto che potrebbe essere pertinente per un'indagine.
-ms.openlocfilehash: bf04fd0f0637247e4637b5d3fce82f911ca51f0e
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: d2c9c02f7530c58975ddf99289a3a0872788146a
+ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47546882"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48920330"
 ---
 # <a name="create-an-ediscovery-hold"></a>Creare un blocco di eDiscovery
 
@@ -42,7 +42,7 @@ Per creare un blocco di eDiscovery associato a un caso di eDiscovery di base:
   
 1. Passare a [https://compliance.microsoft.com](https://compliance.microsoft.com) e accedere con le credenziali per l'account utente a cui sono state assegnate le autorizzazioni di eDiscovery appropriate.
 
-2. Nel riquadro di spostamento a sinistra del centro conformità di Microsoft 365 fare clic su **Mostra tutto**e quindi su **eDiscovery > Core**.
+2. Nel riquadro di spostamento a sinistra del centro conformità di Microsoft 365 fare clic su **Mostra tutto** e quindi su **eDiscovery > Core**.
 
 3. Nella pagina **Core eDiscovery** selezionare il caso in cui si desidera creare l'esenzione e quindi fare clic su **Apri caso**.
 
@@ -56,11 +56,11 @@ Per creare un blocco di eDiscovery associato a un caso di eDiscovery di base:
 
     ![Scegliere i percorsi dei contenuti da mettere in attesa](../media/a59e4265-9151-4dbf-913f-6a4ab8db06b4.png)
   
-   a. **Posizioni delle cassette postali** -fare clic su **Scegli utenti, gruppi o team** e quindi fare di nuovo clic su **Scegli utenti, gruppi o team** per specificare le cassette postali da inserire in attesa. Utilizzare la casella di ricerca per trovare le cassette postali degli utenti e i gruppi di distribuzione (per inserire un'esenzione nelle cassette postali dei membri del gruppo) per effettuare il blocco. È inoltre possibile inserire un blocco sulla cassetta postale associata per un gruppo di Microsoft, un gruppo di Office 365 o Yammer. Selezionare la casella di controllo utente, gruppo, team, fare clic su **Scegli**e quindi su **fine**.
+   1. **Posizioni delle cassette postali** -fare clic su **Scegli utenti, gruppi o team** e quindi fare di nuovo clic su **Scegli utenti, gruppi o team** per specificare le cassette postali da inserire in attesa. Utilizzare la casella di ricerca per trovare le cassette postali degli utenti e i gruppi di distribuzione (per inserire un'esenzione nelle cassette postali dei membri del gruppo) per effettuare il blocco. È inoltre possibile inserire un blocco sulla cassetta postale associata per un gruppo di Microsoft, un gruppo di Office 365 o Yammer. Selezionare la casella di controllo utente, gruppo, team, fare clic su **Scegli** e quindi su **fine**.
 
-   b. **Posizioni del sito** -fare clic su **Scegli siti** , quindi fare di nuovo clic su **Choose sites** per specificare gli account di SharePoint e OneDrive da inserire in attesa. Digitare l'URL per ogni sito che si desidera conservare. È inoltre possibile aggiungere l'URL per il sito di SharePoint per un gruppo di Microsoft Team, Office 365 o un gruppo di Yammer. Fare clic su **Scegli**e quindi su **fine**.
+   1. **Posizioni del sito** -fare clic su **Scegli siti** , quindi fare di nuovo clic su **Choose sites** per specificare gli account di SharePoint e OneDrive da inserire in attesa. Digitare l'URL per ogni sito che si desidera conservare. È inoltre possibile aggiungere l'URL per il sito di SharePoint per un gruppo di Microsoft Team, Office 365 o un gruppo di Yammer. Fare clic su **Scegli** e quindi su **fine**.
   
-   c. **Cartelle pubbliche di Exchange.** Spostare il controllo Toggle toggle switch nella ![ ](../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png) posizione **All** per inserire in attesa tutte le cartelle pubbliche nell'organizzazione di Exchange Online. Non è possibile scegliere cartelle pubbliche specifiche da mantenere in attesa. Lasciare l'opzione toggle impostata su **None** se non si desidera inserire un blocco nelle cartelle pubbliche.
+   1. **Cartelle pubbliche di Exchange.** Spostare il controllo Toggle toggle switch nella ![ ](../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png) posizione **All** per inserire in attesa tutte le cartelle pubbliche nell'organizzazione di Exchange Online. Non è possibile scegliere cartelle pubbliche specifiche da mantenere in attesa. Lasciare l'opzione toggle impostata su **None** se non si desidera inserire un blocco nelle cartelle pubbliche.
 
    > [!NOTE]
    > È necessario aggiungere almeno un percorso di contenuto all'esenzione. In caso contrario, l'eDiscovery Hold statics mostrerà che non sono presenti elementi in attesa.
@@ -71,9 +71,9 @@ Per creare un blocco di eDiscovery associato a un caso di eDiscovery di base:
 
     ![Creare un blocco basato su query con condizioni](../media/d587b58e-d05c-4ac0-b0fe-09019e4f1063.png)
   
-    a. Nella casella **parole chiave**Digitare una query di ricerca in modo che venga conservato solo il contenuto che soddisfa i criteri di ricerca. È possibile specificare le parole chiave, le proprietà del messaggio di posta elettronica o le proprietà del documento, ad esempio i nomi di file. È inoltre possibile utilizzare query più complesse che utilizzano un operatore booleano, ad esempio **e**, **o**o **meno**.
+    1. Nella casella **parole chiave** Digitare una query di ricerca in modo che venga conservato solo il contenuto che soddisfa i criteri di ricerca. È possibile specificare le parole chiave, le proprietà del messaggio di posta elettronica o le proprietà del documento, ad esempio i nomi di file. È inoltre possibile utilizzare query più complesse che utilizzano un operatore booleano, ad esempio **e** , **o** o **meno**.
 
-    b. Fare clic su **Aggiungi condizioni** per aggiungere una o più condizioni per limitare la query di ricerca per il blocco. Ogni condizione aggiunge una clausola alla query di ricerca di KQL che viene creata e eseguita quando si crea il blocco. Ad esempio, è possibile specificare un intervallo di date in modo che i documenti di posta elettronica o di sito creati entro la data di intervallo siano stati inseriti in attesa. Una condizione è connessa logicamente alla query con parole chiave (specificata nella casella **Keywords** ) dall'operatore **and** . Questo significa che gli elementi devono soddisfare sia la query di parole chiave che la condizione da mantenere.
+    1. Fare clic su **Aggiungi condizioni** per aggiungere una o più condizioni per limitare la query di ricerca per il blocco. Ogni condizione aggiunge una clausola alla query di ricerca di KQL che viene creata e eseguita quando si crea il blocco. Ad esempio, è possibile specificare un intervallo di date in modo che i documenti di posta elettronica o di sito creati entro la data di intervallo siano stati inseriti in attesa. Una condizione è connessa logicamente alla query con parole chiave (specificata nella casella **Keywords** ) dall'operatore **and** . Questo significa che gli elementi devono soddisfare sia la query di parole chiave che la condizione da mantenere.
 
     Per ulteriori informazioni sulla creazione di una query di ricerca e sull'utilizzo di condizioni, vedere [keyword queries and Search Conditions for content search](keyword-queries-and-search-conditions.md).
 
@@ -123,13 +123,13 @@ Di seguito sono riportate alcune altre informazioni da tenere presenti quando si
 
 - Se più eDiscovery contiene sono posizionate in una singola posizione in un caso di eDiscovery e si seleziona per eseguire la ricerca di percorsi in attesa, il numero massimo di parole chiave per la query di ricerca è 500. Ciò è dovuto al fatto che la ricerca combina tutte le esenzioni basate su query utilizzando l'operatore **or** . Se sono presenti più di 500 parole chiave nelle query di archiviazione combinata e nella query di ricerca, viene cercato tutto il contenuto della cassetta postale, non solo il contenuto che corrisponde al caso basato su query.
 
-- Se un blocco di eDiscovery ha lo stato di **attivazione**, è comunque possibile cercare le posizioni in attesa mentre il blocco è attivo.
+- Se un blocco di eDiscovery ha lo stato di **attivazione** , è comunque possibile cercare le posizioni in attesa mentre il blocco è attivo.
 
 ## <a name="preserve-content-in-microsoft-teams"></a>Preservare il contenuto in Microsoft Teams
 
 Le conversazioni che fanno parte di un canale Microsoft teams vengono memorizzate nella cassetta postale associata al team di Microsoft. Allo stesso modo, i file che i membri del team condividono in un canale vengono archiviati nel sito di SharePoint del team. Pertanto, è necessario inserire la cassetta postale del team e il sito di SharePoint in eDiscovery Hold per conservare le conversazioni e i file in un canale.
 
-In alternativa, le conversazioni che fanno parte dell'elenco chat in teams (denominate *1:1 chat* o *1: N Group Chat*) sono archiviate nelle cassette postali degli utenti che partecipano alla chat. E i file che gli utenti condividono nelle conversazioni chat sono archiviati nell'account OneDrive dell'utente che condivide il file. Pertanto, è necessario aggiungere le singole cassette postali degli utenti e gli account di OneDrive a un blocco eDiscovery per conservare le conversazioni e i file nell'elenco chat. È consigliabile applicare un blocco alle cassette postali dei membri di un team Microsoft oltre a mettere in attesa la cassetta postale e il sito del team.
+In alternativa, le conversazioni che fanno parte dell'elenco chat in teams (denominate *1:1 chat* o *1: N Group Chat* ) sono archiviate nelle cassette postali degli utenti che partecipano alla chat. E i file che gli utenti condividono nelle conversazioni chat sono archiviati nell'account OneDrive dell'utente che condivide il file. Pertanto, è necessario aggiungere le singole cassette postali degli utenti e gli account di OneDrive a un blocco eDiscovery per conservare le conversazioni e i file nell'elenco chat. È consigliabile applicare un blocco alle cassette postali dei membri di un team Microsoft oltre a mettere in attesa la cassetta postale e il sito del team.
 
 A partire dal febbraio 2020, è stata attivata la possibilità di conservare il contenuto nei canali privati. Poiché le chat del canale privato sono memorizzate nelle cassette postali dei partecipanti alla chat, l'inserimento di una cassetta postale utente su eDiscovery Hold conserverà le chat del canale privato. Inoltre, se una cassetta postale utente è stata inserita in un blocco di eDiscovery prima del 2020 febbraio, il blocco verrà applicato automaticamente ai messaggi del canale privato archiviati nella cassetta postale. È supportata anche la conservazione dei file condivisi nei canali privati.
 
@@ -163,7 +163,7 @@ Tenere presente quanto segue quando si inseriscono i gruppi di team e di Office 
     ```
 
     > [!NOTE]
-    > Per eseguire il cmdlet **Get-UnifiedGroup**, è necessario avere il ruolo Destinatari di sola lettura in Exchange Online o essere membri di un gruppo di ruoli assegnato al ruolo Destinatari di sola lettura. 
+    > Per eseguire il cmdlet **Get-UnifiedGroup** , è necessario avere il ruolo Destinatari di sola lettura in Exchange Online o essere membri di un gruppo di ruoli assegnato al ruolo Destinatari di sola lettura. 
   
 - Quando viene eseguita la ricerca della cassetta postale di un utente, qualsiasi team o gruppo di Office 365 di cui l'utente è membro non verrà cercato. Analogamente, quando si inserisce un team o un gruppo di Office 365 in eDiscovery Hold, solo la cassetta postale di gruppo e il sito del gruppo vengono inseriti in attesa. Le cassette postali e i siti di OneDrive for business dei membri del gruppo non vengono conservati a meno che non vengano aggiunti in modo esplicito all'esenzione di eDiscovery. Pertanto, se è necessario disporre di un team o di un gruppo di Office 365 in attesa per un motivo legale, è consigliabile aggiungere le cassette postali e gli account di OneDrive dei membri del team o del gruppo nello stesso blocco.
 
@@ -174,7 +174,7 @@ Tenere presente quanto segue quando si inseriscono i gruppi di team e di Office 
     ```
 
     > [!NOTE]
-    > Per eseguire il cmdlet **Get-UnifiedGroupLinks**, è necessario avere il ruolo Destinatari di sola lettura in Exchange Online o essere membri di un gruppo di ruoli assegnato al ruolo Destinatari di sola lettura.
+    > Per eseguire il cmdlet **Get-UnifiedGroupLinks** , è necessario avere il ruolo Destinatari di sola lettura in Exchange Online o essere membri di un gruppo di ruoli assegnato al ruolo Destinatari di sola lettura.
 
 ## <a name="onedrive-accounts"></a>Account di OneDrive
 
@@ -187,19 +187,19 @@ Per raccogliere un elenco degli URL per i siti di OneDrive for business nell'org
 
 Dopo la rimozione di una cassetta postale, un sito di SharePoint o un account OneDrive da un'esenzione di eDiscovery, viene applicato un *blocco di ritardo* . Questo significa che la rimozione effettiva del blocco viene posticipata di 30 giorni per impedire che i dati vengano eliminati definitivamente (eliminati) da una posizione di contenuto. In questo modo gli amministratori avranno la possibilità di cercare o recuperare contenuti che verranno eliminati dopo la rimozione di un blocco di eDiscovery. I dettagli sulla modalità di funzionamento del blocco di ritardo per le cassette postali e i siti sono diversi.
 
-- **Cassette postali:** Un blocco di ritardo viene inserito in una cassetta postale alla successiva elaborazione della cassetta postale da parte dell'Assistente cartelle gestite e viene rilevato che un blocco di eDiscovery è stato rimosso. In particolare, un blocco di ritardo viene applicato a una cassetta postale quando l'Assistente cartelle gestite imposta una delle seguenti proprietà della cassetta postale su **true**:
+- **Cassette postali:** Un blocco di ritardo viene inserito in una cassetta postale alla successiva elaborazione della cassetta postale da parte dell'Assistente cartelle gestite e viene rilevato che un blocco di eDiscovery è stato rimosso. In particolare, un blocco di ritardo viene applicato a una cassetta postale quando l'Assistente cartelle gestite imposta una delle seguenti proprietà della cassetta postale su **true** :
 
    - **DelayHoldApplied:** Questa proprietà si applica al contenuto relativo alla posta elettronica (generato da utenti che utilizzano Outlook e Outlook sul Web) archiviato nella cassetta postale di un utente.
 
    - **DelayReleaseHoldApplied:** Questa proprietà si applica ai contenuti basati sul cloud (generati da app non Outlook, ad esempio Microsoft teams, Microsoft Forms e Microsoft Yammer) archiviati nella cassetta postale di un utente. I dati del cloud generati da un'app Microsoft vengono in genere archiviati in una cartella nascosta della cassetta postale di un utente.
 
-   Quando una conservazione di ritardo viene posizionata sulla cassetta postale (quando una delle proprietà precedenti è impostata su **true**), la cassetta postale è ancora considerata in attesa per una durata di conservazione illimitata, come se la cassetta postale fosse in conservazione per controversia legale. Dopo 30 giorni, scade il ritardo e Microsoft 365 tenterà automaticamente di rimuovere il blocco di ritardo (impostando la proprietà DelayHoldApplied o DelayReleaseHoldApplied su **false**) in modo che il blocco venga rimosso. Dopo che entrambe le proprietà sono state impostate su **false**, gli elementi corrispondenti contrassegnati per la rimozione vengono eliminati alla successiva elaborazione della cassetta postale da parte dell'Assistente cartelle gestite.
+   Quando una conservazione di ritardo viene posizionata sulla cassetta postale (quando una delle proprietà precedenti è impostata su **true** ), la cassetta postale è ancora considerata in attesa per una durata di conservazione illimitata, come se la cassetta postale fosse in conservazione per controversia legale. Dopo 30 giorni, scade il ritardo e Microsoft 365 tenterà automaticamente di rimuovere il blocco di ritardo (impostando la proprietà DelayHoldApplied o DelayReleaseHoldApplied su **false** ) in modo che il blocco venga rimosso. Dopo che entrambe le proprietà sono state impostate su **false** , gli elementi corrispondenti contrassegnati per la rimozione vengono eliminati alla successiva elaborazione della cassetta postale da parte dell'Assistente cartelle gestite.
 
    Per altre informazioni, vedere [Gestione della permanenza nelle cassette postali ](identify-a-hold-on-an-exchange-online-mailbox.md#managing-mailboxes-on-delay-hold).
 
 - **Siti di SharePoint e OneDrive:** Qualsiasi contenuto di SharePoint o OneDrive che viene conservato nella raccolta di conservazione non viene eliminato durante il periodo di attesa di 30 giorni dopo la rimozione di un sito da un blocco eDiscovery. Questo è simile a quello che succede quando un sito viene rilasciato da un criterio di conservazione. Inoltre, non è possibile eliminare manualmente il contenuto nella raccolta conservazione per il periodo di attesa di 30 giorni. 
 
-   Per ulteriori informazioni, vedere [rilasciando un criterio di conservazione](retention.md#releasing-a-retention-policy).
+   Per ulteriori informazioni, vedere [rilasciando un criterio per la conservazione](retention.md#releasing-a-policy-for-retention).
 
 Un blocco di ritardo viene applicato anche ai percorsi di contenuto in attesa quando si chiude un caso di eDiscovery di base perché le esenzioni sono disattivate quando si chiude un caso. Per ulteriori informazioni sulla chiusura di un caso, vedere [chiudere, riaprire ed eliminare un caso di eDiscovery di base](close-reopen-delete-core-ediscovery-cases.md).
 
@@ -207,7 +207,7 @@ Un blocco di ritardo viene applicato anche ai percorsi di contenuto in attesa qu
 
 Nella tabella seguente sono elencati i limiti per i casi di eDiscovery e le esenzioni del caso.
 
-  |**Descrizione del limite**|**Tipo di limite**|
+  | Descrizione del limite | Limite |
   |:-----|:-----|
   |Numero massimo di casi per un'organizzazione  <br/> |Nessun limite  <br/> |
   |Numero massimo di eDiscovery per un'organizzazione  <br/> |10.000  <br/> |
@@ -217,4 +217,9 @@ Nella tabella seguente sono elencati i limiti per i casi di eDiscovery e le esen
   |||
 
    > [!NOTE]
-   > <sup>1</sup> per visualizzare un elenco di più di 1.000 casi, esenzioni, ricerche o esportazioni, è possibile utilizzare il cmdlet di PowerShell per la sicurezza & conformità corrispondente di Office 365:<br/> [Get-ComplianceCase](https://docs.microsoft.com/powershell/module/exchange/get-compliancecase) <br/> [Get-CaseHoldPolicy](https://docs.microsoft.com/powershell/module/exchange/get-caseholdpolicy)<br/> [Get-ComplianceSearch](https://docs.microsoft.com/powershell/module/exchange/get-compliancesearch)<br/> [Get-ComplianceSearchAction](https://docs.microsoft.com/powershell/module/exchange/get-compliancesearchaction)
+   > <sup>1</sup> per visualizzare un elenco di più di 1.000 casi, esenzioni, ricerche o esportazioni, è possibile utilizzare il cmdlet di PowerShell per la sicurezza & conformità corrispondente di Office 365:
+   >
+   > - [Get-ComplianceCase](https://docs.microsoft.com/powershell/module/exchange/get-compliancecase)
+   > - [Get-CaseHoldPolicy](https://docs.microsoft.com/powershell/module/exchange/get-caseholdpolicy)
+   > - [Get-ComplianceSearch](https://docs.microsoft.com/powershell/module/exchange/get-compliancesearch)
+   > - [Get-ComplianceSearchAction](https://docs.microsoft.com/powershell/module/exchange/get-compliancesearchaction)

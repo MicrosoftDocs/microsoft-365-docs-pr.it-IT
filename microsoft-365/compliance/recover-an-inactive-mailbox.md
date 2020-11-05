@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: 35d0ecdb-7cb0-44be-ad5c-69df2f8f8b25
 ms.custom: seo-marvel-apr2020
 description: Informazioni su come ripristinare il contenuto di una cassetta postale inattiva in Office 365 mediante la conversione in una nuova cassetta postale contenente il contenuto della cassetta postale inattiva.
-ms.openlocfilehash: 41096df9fe4c2ae78b07e06ebf8bd8384a83f4fa
-ms.sourcegitcommit: 3b1bd8aa1430bc9565743a446bbc27b199f30f73
+ms.openlocfilehash: ab5b3265cd9d3b1bab539d45e5daf0e6b4110f9a
+ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48655747"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48920052"
 ---
 # <a name="recover-an-inactive-mailbox"></a>Recuperare una cassetta postale inattiva
 
@@ -87,7 +87,7 @@ Dopo aver ripristinato una cassetta postale inattiva, viene creato anche un nuov
 
     - Archiviazione **sul posto** In-Place esenzioni vengono rimosse dalla cassetta postale recuperata. Questo significa che la cassetta postale recuperata viene rimossa come cassetta postale di origine da qualsiasi In-Place Hold o In-Place ricerca di eDiscovery.
 
-    - **Criterio di conservazione Microsoft 365 con blocco conservazione.** Se la cassetta postale inattiva è stata assegnata a un criterio di conservazione con blocco conservazione (denominato *criterio di conservazione bloccato*), la cassetta postale recuperata viene assegnata allo stesso criterio di conservazione bloccato. Per ulteriori informazioni sui criteri di conservazione bloccati, vedere [use Preservation Lock to conforme ai requisiti normativi](retention.md#use-preservation-lock-to-comply-with-regulatory-requirements).
+    - **Criterio di conservazione Microsoft 365 con blocco conservazione.** Se la cassetta postale inattiva è stata assegnata a un criterio di conservazione con blocco conservazione (denominato *criterio di conservazione bloccato* ), la cassetta postale recuperata viene assegnata allo stesso criterio di conservazione bloccato. Per ulteriori informazioni sui criteri di conservazione bloccati, vedere [[use Preservation Lock to Restrict changes to Retention Policies and Retention label Policies](retention-preservation-lock.md).
 
     - **Criterio di conservazione Microsoft 365 senza blocco conservazione.** La cassetta postale inattiva viene rimossa da qualsiasi criterio di conservazione Microsoft 365 sbloccato che è stato applicato. Tuttavia, il blocco per controversia legale è abilitato sulla cassetta postale recuperata per impedire l'eliminazione del contenuto delle cassette postali in base a criteri di conservazione a livello di organizzazione che eliminano il contenuto antecedente a una determinata età. È possibile mantenere il blocco per controversia legale o rimuoverlo. Per ulteriori informazioni, vedere [creazione di un blocco per controversia legale](create-a-litigation-hold.md).
 
@@ -107,6 +107,6 @@ Dopo aver ripristinato una cassetta postale inattiva, viene creato anche un nuov
   Get-Mailbox -InactiveMailboxOnly <identity of inactive mailbox> | Format-List ExternalDirectoryObjectId
   ```
 
-  Se non è presente un valore per la proprietà **ExternalDirectoryObjectId**, il periodo di conservazione della cassetta postale è scaduto ed è possibile recuperare la cassetta postale inattiva eseguendo il comando **New-Mailbox -InactiveMailbox**. Se è presente un valore per la proprietà **ExternalDirectoryObjectId** , il periodo di conservazione della cassetta postale eliminata temporaneamente non è scaduto ed è necessario ripristinare la cassetta postale ripristinando l'account utente. Vedere [Eliminare un utente dall'organizzazione](https://docs.microsoft.com/microsoft-365/admin/add-users/delete-a-user).
+  Se non è presente un valore per la proprietà **ExternalDirectoryObjectId** , il periodo di conservazione della cassetta postale è scaduto ed è possibile recuperare la cassetta postale inattiva eseguendo il comando **New-Mailbox -InactiveMailbox**. Se è presente un valore per la proprietà **ExternalDirectoryObjectId** , il periodo di conservazione della cassetta postale eliminata temporaneamente non è scaduto ed è necessario ripristinare la cassetta postale ripristinando l'account utente. Vedere [Eliminare un utente dall'organizzazione](https://docs.microsoft.com/microsoft-365/admin/add-users/delete-a-user).
 
 - **Prendere in considerazione l'abilitazione della cassetta postale di archiviazione dopo aver recuperato la cassetta postale inattiva.** In questo modo l'utente che ritorna nell'organizzazione o il nuovo dipendente possono spostare i vecchi messaggi nella cassetta postale di archiviazione. Quando scade il blocco della conservazione, i criteri di archiviazione che fanno parte dei criteri di conservazione predefiniti di Exchange assegnati alle cassette postali di Exchange Online spostano gli elementi risalenti ad almeno due anni prima nella cassetta postale di archiviazione. Se non si abilita la cassetta postale di archiviazione, gli elementi risalenti a più di due anni prima rimarranno nella cassetta postale principale dell'utente. Per ulteriori informazioni, vedere [abilitare le cassette postali di archiviazione](enable-archive-mailboxes.md).

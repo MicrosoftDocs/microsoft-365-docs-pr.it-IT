@@ -18,12 +18,12 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: Informazioni su come aggiungere i risultati di ricerca o gli esempi di tali risultati di ricerca a un set di analisi del caso di eDiscovery avanzato.
-ms.openlocfilehash: 6eed13c2096ad3cd33fbc7af93399824866b17c2
-ms.sourcegitcommit: 2179abfe0b7a8bea917eb1c1057ed3795bdf91e6
+ms.openlocfilehash: 25ea5fe076753d4a5685f1224b98a2005d334f5f
+ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "47336654"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48919978"
 ---
 # <a name="add-search-results-to-a-review-set"></a>Aggiungere i risultati della ricerca a un insieme da rivedere
 
@@ -37,23 +37,25 @@ Quando si aggiungono i risultati di una ricerca a un set di revisione (i set di 
 
 - Tutti gli elementi (inclusi il contenuto e i metadati) vengono reindicizzati in modo che tutti i dati del set di revisione siano completamente ricercabili durante la revisione dei dati del caso. La reindicizzazione dei risultati dei dati viene eseguita in ricerche accurate e veloci quando si esegue una ricerca nei dati del set di verifica durante l'analisi del caso.
 
+- Un file crittografato con una [tecnologia di crittografia Microsoft](encryption.md) ed è collegato a un messaggio di posta elettronica restituito nei risultati della ricerca viene decrittografato quando il messaggio di posta elettronica e il file allegato vengono aggiunti al set di revisione. È possibile esaminare e interrogare il file decrittografato nel set di revisione. È necessario essere assegnati al ruolo di decrittografia RMS per aggiungere allegati di posta elettronica decrittografati a un set di revisione. Per ulteriori informazioni, vedere [decryption in Microsoft 365 eDiscovery Tools](ediscovery-decryption.md).
+
 Per aggiungere dati a un set di revisione, fare clic su una ricerca nella scheda **ricerche** e quindi fare clic su **Aggiungi risultati al set di revisione** nella pagina a comparsa.
 
 È possibile aggiungere a un set di revisione esistente o creare un nuovo set di revisione.  Se si aggiunge un nuovo set di revisione, specificare il nome e quindi fare clic su **Aggiungi** per visualizzare la pagina del riquadro a comparsa.
 
 ![Selezionare un set di revisione e configurare le opzioni di raccolta](../media/AeD_AddToReviewSet.png)
 
-L'aggiunta di dati a un set di revisione è un processo a esecuzione prolungata. Questo processo include la raccolta di elementi provenienti dalle origini dati originali in Microsoft 365 (ad esempio, da cassette postali e siti), copiarli nel percorso di archiviazione di Azure (questo processo di copia viene chiamato anche *ingestione*) e quindi reindicizzare gli elementi. È possibile monitorare lo stato di avanzamento nella scheda **processi** o nella scheda **ricerche** monitorando lo stato nella colonna **set di dati aggiunti a revisione** . Dopo aver completato l'elaborazione del set di revisione, fare clic sulla scheda **Revisione set** nel caso, quindi fare clic sul set di riesame per avviare il processo di filtro, revisione, tagging ed esportazione dei dati nel set di revisione.
+L'aggiunta di dati a un set di revisione è un processo a esecuzione prolungata. Questo processo include la raccolta di elementi provenienti dalle origini dati originali in Microsoft 365 (ad esempio, da cassette postali e siti), copiarli nel percorso di archiviazione di Azure (questo processo di copia viene chiamato anche *ingestione* ) e quindi reindicizzare gli elementi. È possibile monitorare lo stato di avanzamento nella scheda **processi** o nella scheda **ricerche** monitorando lo stato nella colonna **set di dati aggiunti a revisione** . Dopo aver completato l'elaborazione del set di revisione, fare clic sulla scheda **Revisione set** nel caso, quindi fare clic sul set di riesame per avviare il processo di filtro, revisione, tagging ed esportazione dei dati nel set di revisione.
 
 ## <a name="define-options-to-scope-your-collection-for-review"></a>Definire le opzioni per l'ambito della raccolta per la revisione
 
 Quando si aggiunge il contenuto di una ricerca a un set di revisione esistente o nuovo, sono disponibili le opzioni seguenti per la raccolta del contenuto per la Revisione:
 
-- **Includi versioni di SharePoint (beta)**: utilizzare questa opzione per abilitare l'insieme di tutte le versioni di un documento di SharePoint per i limiti di versione e i parametri di ricerca dell'insieme. Se si seleziona questa opzione, si aumenterà significativamente le dimensioni degli elementi che verranno aggiunti al set di revisione.
+- **Includi versioni di SharePoint (beta)** : utilizzare questa opzione per abilitare l'insieme di tutte le versioni di un documento di SharePoint per i limiti di versione e i parametri di ricerca dell'insieme. Se si seleziona questa opzione, si aumenterà significativamente le dimensioni degli elementi che verranno aggiunti al set di revisione.
 
-- **Opzioni di recupero**delle conversazioni: gli elementi aggiunti al set di riesame sono abilitati per le conversazioni filettate che consentono di controllare il contenuto nel contesto della conversazione avanti e indietro. Per ulteriori informazioni, vedere [rivedere le conversazioni in Advanced eDiscovery](conversation-review-sets.md).
+- **Opzioni di recupero** delle conversazioni: gli elementi aggiunti al set di riesame sono abilitati per le conversazioni filettate che consentono di controllare il contenuto nel contesto della conversazione avanti e indietro. Per ulteriori informazioni, vedere [rivedere le conversazioni in Advanced eDiscovery](conversation-review-sets.md).
 
-- **Abilitare il recupero per gli allegati moderni**: utilizzare questa opzione per includere gli allegati moderni o i file collegati nell'insieme per ulteriori riesami. Per ulteriori informazioni sulle proprietà disponibili per la ricerca relative agli allegati moderni, vedere [Document Metadata Fields in Advanced eDiscovery](document-metadata-fields-in-Advanced-eDiscovery.md).
+- **Abilitare il recupero per gli allegati moderni** : utilizzare questa opzione per includere gli allegati moderni o i file collegati nell'insieme per ulteriori riesami. Per ulteriori informazioni sulle proprietà disponibili per la ricerca relative agli allegati moderni, vedere [Document Metadata Fields in Advanced eDiscovery](document-metadata-fields-in-Advanced-eDiscovery.md).
 
 ## <a name="add-a-sample-to-a-review-set"></a>Aggiungere un esempio a un set di Revisione
 

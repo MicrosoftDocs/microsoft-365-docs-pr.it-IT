@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: b70393bfff32d855e49c74bab340379cdaf488f1
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: dc4adef382724ce4176f2b5f779218d62b6079e0
+ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47415870"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48919690"
 ---
 # <a name="financial-industry-regulatory-authority-finra-rule-4511c-united-states"></a>Autorità di regolamentazione del settore finanziario (FINRA) regola 4511 (c) Stati Uniti
 
@@ -47,11 +47,11 @@ I provider di software e i partner che dispongono di carichi di lavoro sensibili
 
 ## <a name="microsoft-office-365"></a>Microsoft Office 365
 
-Per valutare Office 365 compliance with FINRA Rule 4511 (c), Microsoft ha mantenuto uno studio legale leader indipendente specializzato in questioni normative, Covington & Burling, LLP. Nel report risultante, archiving in Microsoft Office 365, data retention e Rule 17a-4 Compliance, Covington ha convalidato che [Office 365 con Preservation Lock](retention.md#use-preservation-lock-to-comply-with-regulatory-requirements) include funzionalità di archiviazione che consentono ai clienti regolamentati, inclusi i broker-dealer, di archiviare i dati in modo che li consentano di soddisfare i requisiti di FINRA per la conservazione dei record.
+Per valutare Office 365 compliance with FINRA Rule 4511 (c), Microsoft ha mantenuto uno studio legale leader indipendente specializzato in questioni normative, Covington & Burling, LLP. Nel report risultante, archiving in Microsoft Office 365, data retention e Rule 17a-4 Compliance, Covington ha convalidato che [Office 365 con Preservation Lock](retention-preservation-lock.md) include funzionalità di archiviazione che consentono ai clienti regolamentati, inclusi i broker-dealer, di archiviare i dati in modo che li consentano di soddisfare i requisiti di FINRA per la conservazione dei record.
 
 L'archiviazione in Office 365 consente di mantenere una vasta gamma di dati, tra cui la posta elettronica, la segreteria telefonica, i documenti condivisi, i messaggi istantanei e i dati di terze parti. In particolare, l'archiviazione in Office 365 consente ai clienti di impostare i criteri di conservazione dei messaggi globali o granulari per archiviare i dati per un periodo definito e oltre in un formato non riscrivibile e non cancellabile.
 
-## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud Microsoft inclusi nell'ambito
+## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud Microsoft inclusi
 
 - [Azure](https://gallery.technet.microsoft.com/Overview-of-Azure-c1be3942)
 - [Office 365](https://aka.ms/Office365ComplianceOfferings)
@@ -68,9 +68,9 @@ L'archiviazione in Office 365 consente di mantenere una vasta gamma di dati, tra
 
 ## <a name="how-to-implement"></a>Come eseguire l'implementazione
 
-- **Regolamento sui servizi finanziari**: mappa di conformità dei principali principi di regolamentazione degli Stati Uniti per il cloud computing e i Microsoft Online Services. [Altre informazioni](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=5b483567-00b0-4d86-96ae-ee887dadb61c&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_Compliance_Guides)
-- **Valutazione dei rischi e guida alla conformità**: creare un modello di governance per la valutazione dei rischi dei servizi cloud Microsoft e la notifica all'organismo di regolamentazione. [Altre informazioni](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=edee9b14-3661-4a16-ba83-c35caf672bd7&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers)
-- **Casi di utilizzo del settore finanziario**: i casi di utilizzo, le guide e le altre risorse aiutano a sviluppare le soluzioni Azure per i servizi finanziari. [Altre informazioni](https://docs.microsoft.com/azure/industry/financial/)
+- **Regolamento sui servizi finanziari** : mappa di conformità dei principali principi di regolamentazione degli Stati Uniti per il cloud computing e i Microsoft Online Services. [Altre informazioni](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=5b483567-00b0-4d86-96ae-ee887dadb61c&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_Compliance_Guides)
+- **Linee guida per la valutazione dei rischi e per la conformità** : creare un modello di governance per la valutazione dei rischi dei servizi cloud Microsoft e la notifica all'organismo di regolamentazione. [Altre informazioni](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=edee9b14-3661-4a16-ba83-c35caf672bd7&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers)
+- **Casi di utilizzo finanziari** : usare panoramiche di casi, esercitazioni e altre risorse per creare soluzioni di Azure per i servizi finanziari. [Altre informazioni](https://docs.microsoft.com/azure/industry/financial/)
 
 ## <a name="resources"></a>Risorse
 
