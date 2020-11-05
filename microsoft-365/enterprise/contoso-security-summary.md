@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Come Contoso utilizza le funzionalità di sicurezza di Microsoft 365 per Enterprise.
-ms.openlocfilehash: 8d62dba96ecf19f0dc31af2cf5a2d85257ca19d5
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: a72a770029328eaddf76cbe1b2039386c50c2750
+ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48847107"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48920419"
 ---
 # <a name="summary-of-microsoft-365-for-enterprise-security-for-the-contoso-corporation"></a>Riepilogo di Microsoft 365 per la sicurezza aziendale per Contoso Corporation
 
@@ -127,9 +127,9 @@ Per seguire le procedure consigliate per la sicurezza e Microsoft 365 per i requ
 
 ## <a name="security-management"></a>Gestione della sicurezza
 
-- Dashboard di protezione centrale per l'IT con Azure Defender *
+- Dashboard di protezione centrale per l'IT con Azure Defender
 
-  Contoso utilizza l' [Azure Defender *](https://azure.microsoft.com/services/security-center/) per presentare una visualizzazione unificata della sicurezza e della protezione dalle minacce, per gestire i criteri di sicurezza tra i carichi di lavoro e rispondere a attacchi cibernetici.
+  Contoso utilizza il [difensore di Azure](https://azure.microsoft.com/services/security-center/) per presentare una visualizzazione unificata di sicurezza e protezione dalle minacce, per gestire i criteri di sicurezza tra i carichi di lavoro e rispondere a attacchi cibernetici.
 
 - Dashboard della sicurezza centrale per gli utenti con Windows Defender Security Center
 

@@ -16,12 +16,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Gli amministratori possono ottenere informazioni sui criteri di anti-phishing disponibili in Exchange Online Protection (EOP) e Microsoft Defender per Office 365.
-ms.openlocfilehash: 5c3b79dcf462dbab4fc67b75952ca0ef39b80e75
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: c1254ccdc678bd25c2d3481b0a43cca5ff9816c0
+ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48844297"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48919777"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Criteri di anti-phishing in Microsoft 365
 
@@ -57,7 +57,7 @@ Per configurare i criteri di anti-phishing, vedere gli articoli seguenti:
 
 - [Configurazione dei criteri di anti-phishing in EOP](configure-anti-phishing-policies-eop.md)
 
-- [Configurazione dei criteri anti-phishing in Microsoft Defender per Office 365 in Microsoft 365](configure-atp-anti-phishing-policies.md)
+- [Configurazione dei criteri anti-phishing in Microsoft Defender per Office 365](configure-atp-anti-phishing-policies.md)
 
 Nella parte restante di questo articolo vengono descritte le impostazioni disponibili nei criteri di anti-phishing in EOP e Defender per Office 365.
 

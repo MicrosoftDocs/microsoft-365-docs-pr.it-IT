@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 64535a0a-1044-413f-8bc2-ed8e8a0bc54c
 description: Viene fornita da Microsoft l'assistenza per EOP attraverso una cospicua varietà di luoghi e metodi tra cui tra cui il supporto in autonomia e assistito.
-ms.openlocfilehash: c305f2e63d668a163bb82f5a4712cbdddc6f9259
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: dd68200b7a3723adc7ccba899c0cc88031891197
+ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48202724"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48920431"
 ---
 # <a name="help-and-support-for-eop"></a>Guida e supporto tecnico per Exchange Online Protection
 
@@ -28,7 +28,7 @@ In Microsoft 365 organizzazioni con cassette postali in Exchange Online o in org
 
 ## <a name="self-support-options"></a>Opzioni di supporto in autonomia
 
-Dopo aver effettuato l'accesso, l'interfaccia di amministrazione di Microsoft 365 fornisce informazioni sullo stato dei servizi dell'organizzazione. Inoltre, la sezione Health Service Visualizza lo stato corrente dei servizi, i dettagli relativi alle interruzioni e i tempi di inattività e gli elenchi degli orari di manutenzione pianificati. L'interfaccia di amministrazione di Microsoft 365 fornisce anche informazioni sui problemi noti e sulle risoluzioni previste. Se si è interessati da un evento a livello di servizio, verrà visualizzato un avviso (generalmente unito all'icona di una campana). Si consiglia di leggere e intervenire su tutti gli elementi, come necessario. Per ulteriori informazioni sull'area di integrità dei servizi, vedere [Service Health and Continuity](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/service-health-and-continuity). È possibile trovare ulteriori informazioni autonomamente utilizzando i siti degli strumenti, dei forum e delle community elencati di seguito.
+Dopo aver effettuato l'accesso, l'interfaccia di amministrazione di Microsoft 365 fornisce informazioni sullo stato dei servizi dell'organizzazione. Inoltre, la sezione Health Service Visualizza lo stato corrente dei servizi, i dettagli relativi alle interruzioni e i tempi di inattività e gli elenchi degli orari di manutenzione pianificati. L'interfaccia di amministrazione di Microsoft 365 fornisce anche informazioni sui problemi noti e sulle risoluzioni previste. Se si è interessati da un evento a livello di servizio, verrà visualizzato un avviso (generalmente unito all'icona di una campana). Si consiglia di leggere e intervenire su tutti gli elementi, come necessario. Per ulteriori informazioni sull'area di integrità dei servizi, vedere [Service Health and Continuity](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/service-health-and-continuity). Potrebbe essere possibile trovare ulteriori informazioni in modo autonomo utilizzando gli strumenti, i forum e i siti community elencati qui.
 
 Articolo relativo alle [informazioni generali dei prodotti per Exchange Online Protection](https://products.office.com/exchange/exchange-email-security-spam-protection)
 
@@ -42,7 +42,7 @@ Articolo relativo alle [informazioni generali dei prodotti per Exchange Online P
 
 ## <a name="assisted-support-from-microsoft"></a>Supporto assistito di Microsoft
 
-È possibile ottenere assistenza da Microsoft avviando una nuova richiesta di servizio all'interno dell'interfaccia di amministrazione di Microsoft 365 o chiamando il telefono. I sottoscrittori del Supporto Premier hanno opzioni di supporto supplementare.
+È possibile ottenere assistenza da Microsoft avviando una nuova richiesta di servizio all'interno dell'interfaccia di amministrazione di Microsoft 365 o chiamando il telefono. I sottoscrittori del supporto Premier dispongono di opzioni di supporto aggiuntive.
 
 ### <a name="support-for-microsoft-premier-support-subscribers"></a>Supporto per i sottoscrittori del Supporto Premier Microsoft
 
@@ -62,7 +62,7 @@ Per ulteriori informazioni su come il supporto Premier può aiutare l'organizzaz
 
 1. Accedere all'interfaccia di amministrazione di Microsoft 365.
 
-2. Per i problemi generali dei prodotti andare nella pagina **Supporto** \> **Richiedi l'assistenza clienti** \> **Chiamare il supporto tecnico**.
+2. Per i problemi di prodotto generale, andare a **supporto** \> Richiedi supporto tecnico per le chiamate di **supporto clienti** \> **Call technical support**.
 
    Per le domande antecedenti all'acquisto di EOP o domande su fatturazione e sottoscrizioni, andare alla pagina **Supporto** \> **Richiedi l'assistenza clienti** \> **Chiamare il supporto per la sottoscrizione e la fatturazione**.
 

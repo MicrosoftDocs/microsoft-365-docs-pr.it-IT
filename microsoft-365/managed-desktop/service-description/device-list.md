@@ -8,12 +8,12 @@ ms.localizationpriority: normal
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 37a43717ebb003c10a65e14da46012dab164916d
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: 2af301fcac2f02a415972f8bf7857fa7b6ee0c1e
+ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48429384"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48919833"
 ---
 # <a name="microsoft-managed-desktop-devices"></a>Dispositivi Microsoft Managed Desktop 
 
@@ -28,7 +28,7 @@ Per essere registrato in Microsoft Managed Desktop, un dispositivo deve essere u
 I collegamenti ai dispositivi sono disponibili solo per il riferimento. Se si desidera ordinare i dispositivi, utilizzare i contatti del canale commerciale per assicurarsi di scegliere le configurazioni corrette. In questa tabella la *Data di archiviazione* è la data in cui questi modelli saranno soggetti a una più breve durata del servizio Microsoft Managed Desktop; Tutti questi dispositivi onboarded dopo questa data non riceveranno un termine completo di tre anni di supporto da Microsoft Managed Desktop. I dispositivi archiviati sono elencati anche nei [dispositivi archiviati di Microsoft Managed Desktop](archived-device-list.md). *Data di pensionamento* è la data in cui questo modello non sarà più supportato da Microsoft Managed Desktop. A tale data, tutti i dispositivi registrati di questo modello verranno rimossi da Microsoft Managed Desktop, indipendentemente dal momento in cui sono stati registrati.
 
 >[!NOTE]
->I dispositivi possono essere aggiunti a questa tabella in qualsiasi momento, ma verranno forniti 90 giorni di preavviso per eventuali modifiche che interessano l'archiviazione o la data di pensionamento. I dispositivi aggiunti più di recente sono contrassegnati con **\*** .
+>I dispositivi possono essere aggiunti a questa tabella in qualsiasi momento, ma verranno forniti 90 giorni di preavviso per eventuali modifiche che interessano l'archiviazione o la data di pensionamento. I dispositivi aggiunti più di recente sono contrassegnati con * *\** _.
 
 
 ## <a name="microsoft-managed-desktop-devices"></a>Dispositivi Microsoft Managed Desktop
@@ -37,7 +37,7 @@ I collegamenti ai dispositivi sono disponibili solo per il riferimento. Se si de
 
 | Modello    | Specifiche minime  | Requisiti aggiuntivi    | Data archivio   | Data di pensionamento   |
 |----------|----------------|---------------------------|----------------|--------------------|
-| **\*[Dell Precision 5310 2-in-1](https://www.dell.com/en-us/work/shop/2-in-1-laptops-tablets/new-latitude-5310-2-in-1-business-laptop/spd/latitude-13-5310-2-in-1-laptop)** | 256 GB/Intel i5/8 GB di RAM | Telecamera IR obbligatoria | 2022 aprile 28  | 2025 aprile 28 |
+| _ *\* [Dell Precision 5310 2-in-1](https://www.dell.com/en-us/work/shop/2-in-1-laptops-tablets/new-latitude-5310-2-in-1-business-laptop/spd/latitude-13-5310-2-in-1-laptop)** | 256 GB/Intel i5/8 GB di RAM | Telecamera IR obbligatoria | 2022 aprile 28  | 2025 aprile 28 |
 | **\*[Dell Latitude 5410](https://www.dell.com/en-us/work/shop/dell-laptops-and-notebooks/new-latitude-5410-business-laptop/spd/latitude-14-5410-laptop)** | 256 GB/Intel i5/8 GB di RAM | Telecamera IR obbligatoria | 2022 aprile 28 | 2025 aprile 28  |
 | **\*[Dell Latitude 5510](https://www.dell.com/en-us/work/shop/laptops/15-5510/spd/latitude-15-5510-laptop)** | 256 GB/Intel i5/8 GB di RAM | Telecamera IR obbligatoria | 2022 aprile 28 | 2025 aprile 28 |
 | **\*[Dell Latitude 7310/7310 2-in-1](https://www.dell.com/en-us/work/shop/2-in-1-laptops-tablets/latitude-7310-business-laptop-or-2-in-1/spd/latitude-13-7310-2-in-1-laptop)** | 256 GB/Intel i5/8 GB di RAM | Telecamera IR obbligatoria | 4 maggio 2022  | 4 maggio 2025  |
@@ -59,7 +59,7 @@ I collegamenti ai dispositivi sono disponibili solo per il riferimento. Se si de
 | [HP EliteBook X360 1040 G7](https://store.hp.com/us/en/pdp/hp-elitebook-x360-1040-g7-notebook-pc-customizable-8wa57av-mb) | 256 GB/Intel i5/8 GB di RAM | SKU con 8XW08AV| Aug 31, 2021 | Aug 31, 2024 |
 | [HP Elite DragonFly](https://www8.hp.com/us/en/laptops/2-in-1s/elite-dragonfly-convertible.html) | 256 GB/Intel i5/8 GB di RAM | SKU con 9MZ21AV | Mar 31, 2021 | Mar 31, 2024 |
 | [Workstation HP Z2 Mini G5](https://store.hp.com/us/en/pdp/hp-z2-mini-g5-workstation-customizable-9jd39av-mb) | 256 GB/Intel i5/8 GB di RAM | SKU con 8QR48AV| 31 dicembre 2021 | 31 dicembre 2024 |
-| [Workstation mobile HP ZBook 14U/15U G6](https://store.hp.com/us/en/mdp/hp-zbook-14u-mobile-workstation) | 256 GB/Intel i5/8 GB di RAM | SKU con 9JD63AV, videocamera IR necessaria | Nov 30, 2020 | Nov 30, 2023 |
+| **\*[Workstation mobile HP ZBook Firefly 14/15 G7](https://store.hp.com/us/en/mdp/laptops/hp-zbook-14u-mobile-workstation)** | 256 GB/Intel i5/8 GB di RAM | SKU con 9MZ22AV, videocamera IR necessaria | Nov 30, 2021 | Nov 30, 2024 |
 
 ### <a name="microsoft"></a>Microsoft
 

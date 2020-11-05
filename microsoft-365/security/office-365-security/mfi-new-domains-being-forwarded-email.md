@@ -10,20 +10,22 @@ ms.topic: conceptual
 ms.service: exchange-online
 localization_priority: Normal
 ms.assetid: ''
-description: Gli amministratori possono scoprire come utilizzare i nuovi domini che vengono inoltrati tramite posta elettronica nell'interfaccia di amministrazione di Exchange moderna per esaminare quando gli utenti dell'organizzazione stanno inoltrando messaggi a domini esterni che non sono mai stati inoltrati.
-ms.openlocfilehash: 7dfdd63a9358b1057313962bc21424a325d7bc52
-ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
+description: Gli amministratori possono scoprire come utilizzare i nuovi domini che vengono inoltrati tramite la posta elettronica Insight nel dashboard del flusso di posta elettronica nel centro sicurezza & Compliance per esaminare quando gli utenti inoltrano i messaggi ai domini esterni che non sono mai stati inoltrati.
+ms.openlocfilehash: f2d8c9229062cbef0ad90b3d0fd843d6588a08dc
+ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48877742"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48920568"
 ---
 # <a name="new-domains-being-forwarded-email-insight-in-the-security--compliance-center"></a>Nuovi domini che vengono inoltrati Insight di posta elettronica nel centro sicurezza & Compliance
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-Anche se è possibile che si disponga di motivi aziendali validi per inoltrare messaggi di posta elettronica a destinatari esterni in domini specifici, è sospetto quando gli utenti dell'organizzazione iniziano improvvisamente a inoltrare messaggi a domini esterni e nessuno nell'organizzazione ha mai inoltrato i messaggi a tali domini prima (nuovi domini). Questa condizione potrebbe indicare che gli account utente sono compromessi. Se si sospetta che gli account siano stati compromessi, vedere [rispondere a un account di posta elettronica compromesso](https://docs.microsoft.com/microsoft-365/security/office-365-security/responding-to-a-compromised-email-account).
+Esistono motivi aziendali validi per inoltrare i messaggi di posta elettronica ai destinatari esterni in domini specifici. Tuttavia, è sospettoso quando gli utenti dell'organizzazione iniziano improvvisamente a inoltrare i messaggi a un dominio in cui nessuno nell'organizzazione ha mai inoltrato messaggi a (un nuovo dominio).
+
+Questa condizione potrebbe indicare che gli account utente sono compromessi. Se si sospetta che gli account siano stati compromessi, vedere [rispondere a un account di posta elettronica compromesso](https://docs.microsoft.com/microsoft-365/security/office-365-security/responding-to-a-compromised-email-account).
 
 I **nuovi domini che vengono inoltrati tramite posta elettronica** nel [Centro sicurezza & Compliance](https://protection.office.com) notifica quando gli utenti dell'organizzazione stanno inoltrando i messaggi ai nuovi domini.
 

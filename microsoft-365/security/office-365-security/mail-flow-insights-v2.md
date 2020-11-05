@@ -12,12 +12,12 @@ localization_priority: Normal
 ms.assetid: beb6acaa-6016-4d54-ba7e-3d6d035e2b46
 description: Gli amministratori possono ottenere informazioni sulle intuizioni e sui report disponibili nel dashboard del flusso di posta elettronica nel centro sicurezza & Compliance.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d252b9d898d4ee5a0df854a871f821c2b02bb482
-ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
+ms.openlocfilehash: f7781dca48e1eae4716dbe6c7c3b40da4bae0cd8
+ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48877778"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48920009"
 ---
 # <a name="mail-flow-insights-in-the-security--compliance-center"></a>Informazioni dettagliate sul flusso di posta nel Centro sicurezza e conformità
 
@@ -66,13 +66,12 @@ Il dashboard del flusso di posta è disponibile per i membri dei gruppi di ruoli
 
 - **[Amministratore di Exchange](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#exchange-administrator)** in Azure Active Directory.
 
-- **Amministratore del flusso** di posta nel centro sicurezza & conformità: se un membro di questo gruppo di ruoli non è anche membro dei gruppi di ruoli amministratore globale o amministratore di Exchange, tenere presente i problemi e i requisiti seguenti:
-
+- **Amministratore del flusso** di posta nel centro sicurezza & conformità. Se l'account non è un membro del gruppo di ruoli Gestione organizzazione o amministratore di Exchange, tenere in considerazione i seguenti problemi:
   - L'utente deve accedere al centro sicurezza & conformità direttamente a <https://protection.office.com> .
   - L'utente avrà solo l'autorizzazione di sola lettura per il dashboard del flusso di posta.
   - L'utente non avrà accesso all'interfaccia di amministrazione di Microsoft 365.
 
-Per ulteriori informazioni sulle autorizzazioni nel centro sicurezza & Compliance, vedere [Permissions in the security & Compliance Center](permissions-in-the-security-and-compliance-center.md) e [fornire agli utenti l'accesso al centro sicurezza & Compliance](grant-access-to-the-security-and-compliance-center.md).
+Per ulteriori informazioni sulle autorizzazioni, vedere [Permissions in the security & Compliance Center](permissions-in-the-security-and-compliance-center.md) e [fornire agli utenti l'accesso al centro sicurezza & Compliance](grant-access-to-the-security-and-compliance-center.md).
 
 ## <a name="where-to-find-the-mail-flow-dashboard"></a>Dove trovare il dashboard del flusso di posta
 

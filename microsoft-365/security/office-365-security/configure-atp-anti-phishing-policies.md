@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Gli amministratori possono ottenere informazioni su come creare, modificare ed eliminare i criteri di anti-phishing avanzati disponibili nelle organizzazioni con Microsoft Defender per Office 365.
-ms.openlocfilehash: 9e07107c302f83b71a97517b11e71eac81f84f6b
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: ecc68a8dc050a5f08c6982b023861e0ea8976775
+ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48845925"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48920657"
 ---
 # <a name="configure-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>Configurazione dei criteri anti-phishing in Microsoft Defender per Office 365
 
@@ -159,9 +159,9 @@ Per modificare i criteri di anti-phishing, utilizzare le procedure seguenti: un 
 
      - **Indirizzo di posta elettronica** :
 
-        - Fare clic nella casella e scorrere l'elenco degli utenti da selezionare.
-        - Fare clic nella casella e iniziare a digitare per filtrare l'elenco e selezionare un utente.
-        - Per rimuovere una voce, fare clic su **Rimuovi** ![ icona Rimuovi ](../../media/scc-remove-icon.png) sull'utente.
+       - Fare clic nella casella e scorrere l'elenco degli utenti da selezionare.
+       - Fare clic nella casella e iniziare a digitare per filtrare l'elenco e selezionare un utente.
+       - Per rimuovere una voce, fare clic su **Rimuovi** ![ icona Rimuovi ](../../media/scc-remove-icon.png) sull'utente.
 
      - **Nome** : questo valore viene popolato in base all'indirizzo di posta elettronica selezionato, ma è possibile modificarlo.
 
@@ -170,15 +170,15 @@ Per modificare i criteri di anti-phishing, utilizzare le procedure seguenti: un 
      Per modificare una voce esistente, selezionare l'utente protetto nell'elenco.
 
      > [!NOTE]
-     > È possibile immettere un massimo di 60 utenti nel centro sicurezza & conformità o in PowerShell.
-       
+     > È possibile disporre di un massimo di 60 utenti in tutti i criteri di anti-phishing. In altre parole, è possibile avere 60 utenti protetti in un unico criterio, 12 utenti protetti in 5 criteri e così via.
+
    - **Aggiungere i domini da proteggere** : configurare una o entrambe le impostazioni seguenti:
 
      - **Includere automaticamente i domini che possiedo** : il valore predefinito è **disattivata**. Per attivarla, fare scorrere l'interruttore **su** attivato.
      - **Includi domini personalizzati** : il valore predefinito è **disattivata**. Per attivarla, scorrere l'interruttore **su** attivato e nella casella **Aggiungi domini** immettere il nome di dominio (ad esempio, contoso.com), premere invio e ripetere il secondo caso.
 
      > [!NOTE]
-     > È possibile immettere un massimo di 50 domini nel centro sicurezza & conformità o in PowerShell.
+     > È possibile disporre di un massimo di 50 domini in tutti i criteri di anti-phishing. In altre parole, è possibile avere 50 utenti protetti in un criterio, 10 utenti protetti in 5 criteri e così via.
 
    - **Azioni** : fare clic su **modifica**
 
@@ -193,12 +193,12 @@ Per modificare i criteri di anti-phishing, utilizzare le procedure seguenti: un 
 
      - **Se il messaggio di posta elettronica viene inviato da un dominio rappresentato** : configurare una delle seguenti azioni per i messaggi in cui il mittente contraffatto si trova in uno dei domini protetti specificati in **Aggiungi domini da proteggere** :
 
-     - **Non applicare alcuna azione**
-     - **Reindirizza il messaggio ad altri indirizzi di posta elettronica**
-     - **Sposta messaggio nella cartella Posta indesiderata**
-     - **Mettere in quarantena il messaggio**
-     - **Recapitare il messaggio e aggiungere altri indirizzi alla riga Ccn**
-     - **Eliminare il messaggio prima di essere recapitato**
+       - **Non applicare alcuna azione**
+       - **Reindirizza il messaggio ad altri indirizzi di posta elettronica**
+       - **Sposta messaggio nella cartella Posta indesiderata**
+       - **Mettere in quarantena il messaggio**
+       - **Recapitare il messaggio e aggiungere altri indirizzi alla riga Ccn**
+       - **Eliminare il messaggio prima di essere recapitato**
 
    - Fare clic **su Attiva suggerimenti per la sicurezza della rappresentazione** e configurare una delle seguenti impostazioni:
 
@@ -267,7 +267,6 @@ Per modificare i criteri di anti-phishing, utilizzare le procedure seguenti: un 
 
      - È possibile fare clic su **modifica** in ogni sezione per tornare alla pagina pertinente.
      - È possibile attivare o **disattivare** le seguenti impostazioni **direttamente in questa** pagina:
-
        - **Abilitare la protezione antispoofing**
        - **Abilitare la funzionalità mittente non autenticato**
 

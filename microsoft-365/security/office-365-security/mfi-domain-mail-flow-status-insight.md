@@ -12,20 +12,22 @@ localization_priority: Normal
 ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
-description: Gli amministratori possono ottenere informazioni su come utilizzare la panoramica dello stato del flusso di posta del dominio principale nel dashboard del flusso di posta nel centro sicurezza & Compliance per risolvere i problemi relativi al flusso di posta relativi ai record MX nei domini di posta elettronica.
-ms.openlocfilehash: d4abc311e96df87894d5f059328f1a16a00190b8
-ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
+description: Gli amministratori possono ottenere informazioni su come utilizzare la panoramica dello stato del flusso di posta del dominio principale nel dashboard del flusso di posta nel centro sicurezza & conformità per risolvere i problemi relativi al flusso di posta relativo ai record MX.
+ms.openlocfilehash: 0d750ab4dbe5875796118086fae1d9119dc486f0
+ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48877510"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48920585"
 ---
 # <a name="top-domain-mail-flow-status-insight-in-the-security--compliance-center"></a>Informazioni sullo stato del flusso di posta del dominio principale nel centro sicurezza & Compliance
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-La panoramica dello **stato del flusso di posta del dominio principale** nel [Dashboard del flusso di posta elettronica](mail-flow-insights-v2.md) nel [Centro sicurezza & conformità](https://protection.office.com) fornisce lo stato corrente dei domini dell'organizzazione in termini di flusso di posta. Questo Insight consente di identificare e risolvere i problemi dei domini che stanno riscontrando un *_impatto sul flusso di posta_* (ad esempio, non è possibile ricevere messaggi di posta elettronica esterni), in particolare le scadenze del dominio o i domini con record MX non corretti.
+La panoramica dello **stato del flusso di posta del dominio principale** nel [Dashboard del flusso di posta elettronica](mail-flow-insights-v2.md) nel [Centro sicurezza & conformità](https://protection.office.com) fornisce lo stato corrente del flusso di posta per l'organizzazione.
+
+Questo Insight consente di identificare e risolvere i problemi relativi ai domini che si verificano * *_flussi di posta_* _. Ad esempio, il dominio non è in grado di ricevere messaggi di posta elettronica esterni perché il dominio è scaduto o il dominio ha un record MX non corretto.
 
 ![Widget dello stato del flusso di dominio principale nel dashboard del flusso di posta elettronica nel centro sicurezza & conformità](../../media/mfi-top-domain-mail-flow-status-widget.png)
 
@@ -43,6 +45,6 @@ Quando si fa clic su _ *Visualizza dettagli* * nel widget, viene visualizzato un
 
 ![Riquadro a comparsa dettagli nell'Insight sullo stato del flusso di posta di dominio superiore](../../media/mfi-top-domain-mail-flow-status-view-details.png)
 
-## <a name="related-topics"></a>Argomenti correlati
+## <a name="see-also"></a>Vedere anche
 
 Per informazioni su altre intuizioni nel dashboard del flusso di posta, vedere [Mail Flow Insights in the Security & Compliance Center](mail-flow-insights-v2.md).

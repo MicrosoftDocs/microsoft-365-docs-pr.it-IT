@@ -14,12 +14,12 @@ ms.assetid: 37125cdb-715d-42d0-b669-1a8efa140813
 ms.custom:
 - seo-marvel-apr2020
 description: Gli amministratori possono ottenere informazioni su come utilizzare le & regole del flusso di posta indesiderata per identificare e correggere le regole del flusso di posta inefficienti o interrotte (note anche come regole di trasporto) nell'organizzazione.
-ms.openlocfilehash: 6a2a3c42eadf3c621b34d2a21344eafd2618e669
-ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
+ms.openlocfilehash: f51c5a577fc6d9c52e35a5217cae4ae94c546c9d
+ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48877538"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48920549"
 ---
 # <a name="fix-slow-mail-flow-rules-insight-in-the-security--compliance-center"></a>Fix Slow Mail Flow Rules Insight nel centro sicurezza & Compliance
 
@@ -32,7 +32,9 @@ Inefficienti regole del flusso di posta (note anche come regole di trasporto) po
 - Condizioni che utilizzano la corrispondenza del modello di espressione regolare (Regex) complessa.
 - Condizioni che utilizzano il controllo del contenuto negli allegati.
 
-La **correzione delle regole del flusso di posta lenta** nell'area **consigliata per l'utente** del [Dashboard del flusso di posta elettronica](mail-flow-insights-v2.md) nel [Centro sicurezza & conformità](https://protection.office.com) informa quando una regola del flusso di posta richiede troppo tempo per essere completata. Questa intuizione viene visualizzata solo dopo che è stata rilevata la condizione (se non si dispone di alcun loop di posta elettronica, non si vedrà l'Insight).
+La **correzione delle regole del flusso di posta lenta** nell'area **consigliata per l'utente** del [Dashboard del flusso di posta elettronica](mail-flow-insights-v2.md) nel [Centro sicurezza & conformità](https://protection.office.com) informa quando una regola del flusso di posta richiede troppo tempo per essere completata.
+
+Questa intuizione viene visualizzata solo dopo che è stata rilevata la condizione (se non si dispone di alcun loop di posta elettronica, non si vedrà l'Insight).
 
 È possibile utilizzare questa notifica per identificare e ottimizzare le regole del flusso di posta per contribuire a ridurre i ritardi del flusso di posta.
 
@@ -47,8 +49,8 @@ Quando si fa clic su **Visualizza dettagli** nel widget, viene visualizzato un r
 
 ![Riquadro a comparsa dettagli che viene visualizzato dopo aver fatto clic su Visualizza dettagli nell'Insight delle regole del flusso di posta lenta](../../media/mfi-fix-slow-mail-flow-rules-details.png)
 
-Per ulteriori informazioni sulle condizioni e le eccezioni nelle regole del flusso di posta in Exchange Online, vedere [Mail Flow Rule conditions and Exceptions (Predicates) in Exchange Online](https://docs.microsoft.com/Exchange/security-and-compliance/mail-flow-rules/conditions-and-exceptions).
+Per ulteriori informazioni sulle condizioni e le eccezioni nelle regole del flusso di posta, vedere [Mail Flow Rule conditions and Exceptions (Predicates) in Exchange Online](https://docs.microsoft.com/Exchange/security-and-compliance/mail-flow-rules/conditions-and-exceptions).
 
-## <a name="related-topics"></a>Argomenti correlati
+## <a name="see-also"></a>Vedere anche
 
 Per informazioni su altre intuizioni nel dashboard del flusso di posta, vedere [Mail Flow Insights in the Security & Compliance Center](mail-flow-insights-v2.md).

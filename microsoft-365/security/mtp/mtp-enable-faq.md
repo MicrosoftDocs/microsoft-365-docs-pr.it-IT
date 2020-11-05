@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: bfb58cb043f2bc641245814c41e389ddcdbfdefa
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 3dae9f208f5bb08d694322eb9f7cff35986930da
+ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48842417"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48920491"
 ---
 # <a name="frequently-asked-questions-when-turning-on-microsoft-365-defender"></a>Domande frequenti quando si attiva Microsoft 365 Defender
 
@@ -42,7 +42,7 @@ Per istruzioni su come abilitare il servizio, [leggere attiva Microsoft 365 Defe
 
 I clienti con le seguenti licenze non E5 possono utilizzare Microsoft 365 Defender:
 
-- Microsoft Defender ATP
+- Microsoft Defender per endpoint
 - Microsoft Defender per identità
 - Microsoft Cloud App Security
 - Difensore per Office 365 (piano 2)
@@ -59,7 +59,7 @@ Per ottimizzare le esperienze di Microsoft 365 Defender, è consigliabile distri
 Microsoft 365 Defender seleziona automaticamente una posizione ottimale per il Data Center in cui vengono elaborati e archiviati i dati consolidati. Se si dispone di Microsoft Defender per endpoint, viene selezionato lo stesso percorso utilizzato da Defender per endpoint.
 
 >[!NOTE]
->Microsoft Defender per endpoint si riattiva automaticamente nei data center dell'Unione europea (EU) quando viene attivato tramite Azure Defender *. Microsoft 365 Defender provvederà alla provisioning automatico nello stesso data center EU per i clienti che hanno sottoposto a Microsoft Defender per endpoint in questo modo. 
+>Microsoft Defender per endpoint si riattiva automaticamente nei data center dell'Unione europea (EU) quando viene attivato tramite Azure Defender. Microsoft 365 Defender provvederà alla provisioning automatico nello stesso data center EU per i clienti che hanno sottoposto a Microsoft Defender per endpoint in questo modo. 
 
 La posizione del Data Center viene visualizzata prima e dopo il provisioning del servizio nella pagina impostazioni di Microsoft 365 Defender ( **impostazioni > microsoft 365 Defender** ). Se si preferisce utilizzare un altro percorso Data Center, selezionare **serve assistenza?** nel centro sicurezza Microsoft 365 per contattare il supporto tecnico Microsoft.
 
