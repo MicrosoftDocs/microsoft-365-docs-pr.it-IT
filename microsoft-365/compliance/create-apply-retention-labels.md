@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Istruzioni sulla creazione e la pubblicazione di etichette di conservazione per applicarle nelle app al fine di conservare ciò che serve ed eliminare ciò che non serve
-ms.openlocfilehash: e1504bf4dda8ee2e9f78f84c147bb4f3ebc22887
-ms.sourcegitcommit: 45c0afcf958069c5c1b31f9b6c762d8dd806e1e9
+ms.openlocfilehash: e13da466e10a347270d4b1097d36476d974557a7
+ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "48773997"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48920340"
 ---
 # <a name="create-retention-labels-and-apply-them-in-apps"></a>Creare etichette di conservazione e applicarle nelle app
 
@@ -65,15 +65,15 @@ La posizione in cui si creano e si configurano le etichette di conservazione var
     - Se non si usa la gestione dei record:
        - **Soluzioni** > **Governance delle informazioni** > scheda **Etichette** > + **Crea un'etichetta**
     
-    L'opzione non è immediatamente visibile? Selezionare per prima cosa **Mostra tutto** . 
+    L'opzione non è immediatamente visibile? Selezionare per prima cosa **Mostra tutto**. 
 
 2. Seguire le istruzioni della procedura guidata. Se si usa la gestione dei record:
     
     - Per informazioni sui descrittori del piano di archiviazione, vedere [Usare il piano di archiviazione per gestire le etichette di conservazione](file-plan-manager.md).
     
-    - Per usare le etichette di conservazione per dichiarare i record, selezionare **Contrassegna elementi come record** o **Contrassegna elementi come record normativi** . Per altre informazioni, vedere [Configurare le etichette di conservazione per dichiarare i record](declare-records.md#configuring-retention-labels-to-declare-records).
+    - Per usare le etichette di conservazione per dichiarare i record, selezionare **Contrassegna elementi come record** o **Contrassegna elementi come record normativi**. Per altre informazioni, vedere [Configurare le etichette di conservazione per dichiarare i record](declare-records.md#configuring-retention-labels-to-declare-records).
 
-3. Dopo aver creato l’etichetta, quando compare l'opzione per pubblicarla, applicare automaticamente l’etichetta oppure salvarla: selezionare **Salva etichetta per ora** e quindi fare clic su **Fatto** .
+3. Dopo aver creato l’etichetta, quando compare l'opzione per pubblicarla, applicare automaticamente l’etichetta oppure salvarla: selezionare **Salva etichetta per ora** e quindi fare clic su **Fatto**.
 
 4. Ripetere questi passaggi per creare altre etichette.
 
@@ -91,7 +91,7 @@ Pubblicare le etichette di conservazione in modo che possano essere applicate da
     - Se non si usa la gestione dei record:
         - **Soluzioni** > **Governance delle informazioni** > scheda **Criteri delle etichette** > **Pubblica etichette**
     
-    L'opzione non è immediatamente visibile? Selezionare per prima cosa **Mostra tutto** . 
+    L'opzione non è immediatamente visibile? Selezionare per prima cosa **Mostra tutto**. 
 
 2. Seguire le istruzioni della procedura guidata.
     
@@ -272,7 +272,11 @@ When you edit a retention label or retention label policy, and the retention lab
 
 Some settings can't be changed after the label or policy is created and saved, which include:
 - The retention settings except the retention period, unless you've configured the label to retain or delete the content based on when it was created.
-- The option to classify as a record.
+- The option to mark items as a record.
+
+## Locking the policy to prevent changes
+
+If you need to ensure that that no one can turn off the policy, delete the policy, or make it less restrictive, see [Use Preservation Lock to restrict changes to retention policies and retention label policies](retention-preservation-lock.md).
 
 ## Next steps
 
