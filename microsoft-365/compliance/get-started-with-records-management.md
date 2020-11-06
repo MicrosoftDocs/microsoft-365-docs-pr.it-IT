@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Se è necessaria una soluzione di gestione dei record per Microsoft 365 che gestisca i contenuti di valore per obblighi legali, aziendali o normativi, di seguito vengono riportate alcune indicazioni utili per iniziare.
-ms.openlocfilehash: b7fc33e8a58857d839598cc74cdddc5247fd4a0d
-ms.sourcegitcommit: 7e8151ff74cb1cfc0dd59fadcac423c338415d77
+ms.openlocfilehash: 679300f581dd9177c00f367f4452d12142f49ee4
+ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/08/2020
-ms.locfileid: "48390163"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48919854"
 ---
 # <a name="get-started-with-records-management"></a>Introduzione alla gestione dei record
 
@@ -49,9 +49,9 @@ Per visualizzare le opzioni di licenza da assegnare agli utenti per trarre vanta
 
 ## <a name="permissions-required-for-records-management"></a>Autorizzazioni necessarie per la gestione dei record
 
-Ai membri del team di conformità responsabili della gestione dei record è necessario assegnare autorizzazioni per il [Centro conformità Microsoft 365](https://compliance.microsoft.com/). Per impostazione predefinita, l'amministratore del tenant (amministratore globale) ha accesso a questa posizione e può fornire l'accesso ai responsabili della conformità e ad altre persone senza concedere loro tutte le autorizzazioni di un amministratore del tenant. Per concedere le autorizzazioni per questa amministrazione limitata, è consigliabile aggiungere gli utenti al gruppo di ruoli di amministratore **Gestione dei record**, che concede il ruolo **RecordManagement**.
+Ai membri del team di conformità responsabili della gestione dei record è necessario assegnare autorizzazioni per il [Centro conformità Microsoft 365](https://compliance.microsoft.com/). Per impostazione predefinita, l'amministratore del tenant (amministratore globale) ha accesso a questa posizione e può fornire l'accesso ai responsabili della conformità e ad altre persone senza concedere loro tutte le autorizzazioni di un amministratore del tenant. Per concedere le autorizzazioni per questa amministrazione limitata, è consigliabile aggiungere gli utenti al gruppo di ruoli di amministratore **Gestione dei record** , che concede il ruolo **RecordManagement**.
 
-Le autorizzazioni incluse in questo gruppo di ruoli non comprendono le autorizzazioni necessarie per la [revisione e verifica per l'eliminazione](disposition.md), e anche un amministratore globale non ha questa autorizzazione per impostazione predefinita. Per gestire l'eliminazione, usare il ruolo **Gestione eliminazione**, creando un gruppo di ruoli personalizzato o usando un gruppo di ruoli predefinito che includa questo ruolo; ad esempio **Compliance Administrator**.
+Le autorizzazioni incluse in questo gruppo di ruoli non comprendono le autorizzazioni necessarie per la [revisione e verifica per l'eliminazione](disposition.md), e anche un amministratore globale non ha questa autorizzazione per impostazione predefinita. Per gestire l'eliminazione, usare il ruolo **Gestione eliminazione** , creando un gruppo di ruoli personalizzato o usando un gruppo di ruoli predefinito che includa questo ruolo; ad esempio **Compliance Administrator**.
 
 Per altre informazioni su questi gruppi di ruoli e ruoli, vedere [Autorizzazioni nel Centro sicurezza e conformità](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center#roles-in-the-security--compliance-center).
 
@@ -76,10 +76,11 @@ Usare la seguente tabella per eseguire il mapping dei requisiti aziendali relati
 |Consentire agli amministratori di applicare azioni di conservazione ed eliminazione a un modello di analisi dei documenti, in modo che vengano applicate automaticamente ai documenti identificati in una raccolta di SharePoint.|[Creare etichette di conservazione e applicarle nelle app](create-apply-retention-labels.md)|
 |Applicare automaticamente azioni di conservazione ed eliminazione ai documenti e ai messaggi di posta elettronica |[Applicare automaticamente un'etichetta di conservazione al contenuto](apply-retention-labels-automatically.md)|
 |Avviare il periodo di conservazione quando si verifica un evento, ad esempio:  <br />- Dipendenti che lasciano l'organizzazione <br />- Scadenza contratti <br />- Fine del ciclo di vita del prodotto| [Avviare la conservazione al verificarsi di un evento](event-driven-retention.md)|
+|Limitare le modifiche ai criteri per soddisfare i requisiti normativi o garantire la protezione da amministratori non autorizzati| [Usare la protezione dell'archiviazione per limitare le modifiche ai criteri di conservazione e ai criteri per le etichette di conservazione](retention-preservation-lock.md)
 |Gestire il ciclo di vita di tipi di documenti diversi in SharePoint| [Usare etichette di riservatezza per gestire il ciclo di vita dei documenti archiviati in SharePoint](auto-apply-retention-labels-scenario.md)|
-|Prevedere la revisione e l’approvazione di un soggetto terzo prima che il contenuto sia eliminato definitivamente al termine del periodo di conservazione|[Revisioni per l'eliminazione](disposition.md#disposition-reviews) |
+|Assicurarsi il tutto sia revisionato e approvato prima di eliminare il contenuto al termine del periodo di conservazione|[Revisioni per l'eliminazione](disposition.md#disposition-reviews) |
 |Disporre di una prova di eliminazione quando il contenuto viene eliminato definitivamente al termine del periodo di conservazione|[Eliminazione dei record](disposition.md#disposition-of-records) |
-|Monitorare come e dove le impostazioni di conservazione ed eliminazione sono applicate agli elementi | [Monitoraggio delle etichette di conservazione](retention.md#monitoring-retention-labels) |
+| Monitorare come e dove le impostazioni di conservazione ed eliminazione sono applicate agli elementi | [Monitoraggio delle etichette di conservazione](retention.md#monitoring-retention-labels) |
 
 ## <a name="end-user-documentation-for-records"></a>Documentazione per gli utenti finali sui record
 
