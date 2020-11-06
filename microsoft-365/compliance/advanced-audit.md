@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Audit avanzato in Microsoft 365 fornisce nuove funzionalità di audit per aiutare l'organizzazione nelle indagini forensi e di conformità.
-ms.openlocfilehash: c63280825c04d401c0cdc44d7128031c3b7ffdd8
-ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
+ms.openlocfilehash: 6524eadfd1622771e0da5bb8bcec73e11c0cfcdf
+ms.sourcegitcommit: 751dc531f0410ee075c179efe409a01664483ee2
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48398557"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48925616"
 ---
 # <a name="advanced-audit-in-microsoft-365"></a>Audit avanzato in Microsoft 365
 
@@ -36,7 +36,7 @@ Questo articolo offre una panoramica delle funzionalità di Audit avanzato.
 
 ## <a name="long-term-retention-of-audit-logs"></a>Conservazione a lungo termine dei log di controllo
 
-Audit avanzato conserva tutti i record di controllo di Exchange, SharePoint e Azure Active Directory per un anno. Questa operazione viene eseguita da un criterio di conservazione predefinito dei log di controllo che conserva per un anno tutti i record di controllo che contengono il valore **Exchange**, **SharePoint** o **AzureActiveDirectory** per la proprietà **Workload**, che indica il servizio in cui si è verificata l'attività. Conservare i record di controllo per periodi più lunghi può essere utile per le indagini forensi o di conformità in corso. Per altre informazioni, vedere la sezione "Criterio di conservazione dei log di controllo predefinito" in [Gestire i criteri di conservazione dei log di controllo](audit-log-retention-policies.md#default-audit-log-retention-policy).
+Audit avanzato conserva tutti i record di controllo di Exchange, SharePoint e Azure Active Directory per un anno. Questa operazione viene eseguita da un criterio di conservazione predefinito dei log di controllo che conserva per un anno tutti i record di controllo che contengono il valore **Exchange** , **SharePoint** o **AzureActiveDirectory** per la proprietà **Workload** , che indica il servizio in cui si è verificata l'attività. Conservare i record di controllo per periodi più lunghi può essere utile per le indagini forensi o di conformità in corso. Per altre informazioni, vedere la sezione "Criterio di conservazione dei log di controllo predefinito" in [Gestire i criteri di conservazione dei log di controllo](audit-log-retention-policies.md#default-audit-log-retention-policy).
 
 Stiamo anche offrendo la possibilità di conservare i log di controllo per 10 anni. Il periodo di conservazione di 10 anni dei log di controllo consente di supportare le indagini lunghe e rispondere a obblighi normativi, legali e interni.
 
@@ -107,7 +107,7 @@ Per cercare i record di controllo dell'evento Send, cercare l'attività **Messag
 
 ### <a name="searchqueryinitiatedexchange"></a>SearchQueryInitiatedExchange
 
-L'evento SearchQueryInitiatedExchange viene attivato quando un utente usa la barra di ricerca in Outlook o in Outlook sul web per cercare gli elementi di una cassetta postale. Gli investigatori possono usare l'evento SearchQueryInitiatedExchange per determinare se un utente malintenzionato può aver compromesso un account cercato, oppure aver tentato di accedere alle informazioni sensibili della cassetta postale. Il record di controllo degli eventi SearchQueryInitiatedExchange contiene informazioni come il testo effettivo della ricerca, e se la ricerca è stata eseguita usando il client desktop di Outlook o in Outlook sul web. Esaminando le ricerche che possono essere state eseguite dagli utenti malintenzionati, gli investigatori possono comprendere meglio la finalità dei dati della posta elettronica che sono stati cercati.
+L'evento SearchQueryInitiatedExchange viene attivato quando un utente usa la barra di ricerca in Outlook sul web per cercare gli elementi di una cassetta postale. Gli investigatori possono usare l'evento SearchQueryInitiatedExchange per determinare se un utente malintenzionato può aver compromesso un account che hanno cercato o hanno tentato di accedere alle informazioni sensibili della cassetta postale. Il record di controllo per un evento SearchQueryInitiatedExchange contiene informazioni come il testo effettivo della query di ricerca. Osservando le query di ricerca che un utente malintenzionato potrebbe aver eseguito, un investigatore può comprendere meglio l'intento dei dati di posta elettronica ricercati.
 
 Per cercare i record di controllo dell'evento SearchQueryInitiatedExchange, cercare l'attività **Ricerche email eseguite** nell'elenco a discesa **Attività di ricerca** nello [Strumento di ricerca dei log di controllo](search-the-audit-log-in-security-and-compliance.md) del Centro conformità.
 
@@ -120,7 +120,7 @@ Per cercare i record di controllo dell'evento SearchQueryInitiatedExchange, cerc
 
 ### <a name="searchqueryinitiatedsharepoint"></a>SearchQueryInitiatedSharePoint
 
-Analogamente agli elementi della cassetta postale, l'evento SearchQueryInitiatedSharePoint viene attivato quando un utente cerca degli elementi nel sito iniziale di SharePoint, nei siti di Teams, nei siti di collaborazione e nei siti hub dell'organizzazione. Gli investigatori possono usare l'evento SearchQueryInitiatedSharePoint per stabilire se un utente malintenzionato ha tentato di trovare (e potenzialmente accedere) a informazioni sensibili in SharePoint. Il record di controllo degli eventi SearchQueryInitiatedSharePoint contiene anche il testo effettivo della ricerca eseguita. Esaminando le ricerche che possono essere state eseguite dagli utenti malintenzionati, gli investigatori possono comprendere meglio la finalità e la portata dei dati dei file che sono stati cercati.
+Analogamente agli elementi della cassetta postale, l'evento SearchQueryInitiatedSharePoint viene attivato quando un utente cerca degli elementi nel sito iniziale di SharePoint dell'organizzazione. Gli investigatori possono usare l'evento SearchQueryInitiatedSharePoint per stabilire se un utente malintenzionato ha tentato di trovare e potenzialmente accedere a informazioni sensibili in SharePoint. Il record di controllo per un evento SearchQueryInitiatedSharePoint contiene anche il testo effettivo della query di ricerca. Esaminando le query di ricerca che un utente malintenzionato potrebbe aver eseguito, un investigatore può comprendere meglio l'intento e l'ambito dei dati dei file ricercati.
 
 Per cercare i record di controllo dell'evento SearchQueryInitiatedSharePoint, cercare l'attività **Ricerche di SharePoint eseguite** nell'elenco a discesa **Attività di ricerca** nello [Strumento di ricerca dei log di controllo](search-the-audit-log-in-security-and-compliance.md) del Centro conformità.
 

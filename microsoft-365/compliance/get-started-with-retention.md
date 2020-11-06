@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Pronti per iniziare a implementare i criteri e le etichette di riservatezza per gestire i dati della tua organizzazione, ma in dubbio su come iniziare? Leggere alcune indicazioni utili per iniziare.
-ms.openlocfilehash: ea5ccdbe0267c2b894e6b69cf8b048925af1b409
-ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
+ms.openlocfilehash: b4dcbe15e2a2d9e3d056555a9212125b60133826
+ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48399511"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48919864"
 ---
 # <a name="get-started-with-retention-policies-and-retention-labels"></a>Informazioni sui criteri e sulle etichette di conservazione
 
@@ -38,7 +38,7 @@ Pronti per iniziare a gestire i dati della tua organizzazione, conservando il co
     
     Nell'ambito di questo processo di valutazione, determinare se si userà [Gestione dei record](records-management.md).
 
-3. **Creare criteri di conservazione e etichette di conservazione**, in base alle impostazioni e azioni di conservazione identificate.
+3. **Creare criteri di conservazione e etichette di conservazione** , in base alle impostazioni e azioni di conservazione identificate.
     
     Per le etichette di conservazione, potrebbe risultare utile usare un [piano di archiviazione](file-plan-manager.md) per definire e perfezionare le etichette di conservazione in un foglio di calcolo. Successivamente, importare il foglio di calcolo per creare le etichette.
     
@@ -69,9 +69,8 @@ Usare la seguente tabella per eseguire il mapping dei requisiti aziendali relati
 |Consentire agli amministratori di applicare azioni di conservazione ed eliminazione a un modello di analisi dei documenti, in modo che vengano applicate automaticamente ai documenti identificati in una raccolta di SharePoint.|[Creare etichette di conservazione e applicarle nelle app](create-apply-retention-labels.md)|
 |Applicare automaticamente azioni di conservazione ed eliminazione ai documenti e ai messaggi di posta elettronica |[Applicare automaticamente un'etichetta di conservazione al contenuto](apply-retention-labels-automatically.md)|
 |Avviare il periodo di conservazione quando si verifica un evento, ad esempio:  <br />- Dipendenti che lasciano l'organizzazione <br />- Scadenza contratti <br />- Fine del ciclo di vita del prodotto| [Avviare la conservazione al verificarsi di un evento](event-driven-retention.md)|
-|Gestire il ciclo di vita di tipi di documenti diversi in SharePoint| [Usare etichette di riservatezza per gestire il ciclo di vita dei documenti archiviati in SharePoint](auto-apply-retention-labels-scenario.md)|
-|Rispettare la SEC Rule 17a-4|[Usare Exchange Online e il Centro sicurezza e conformità per conformarsi alla regola SEC 17a-4](use-exchange-online-to-comply-with-sec-rule-17a-4.md) |
-|Prevedere la revisione e l’approvazione di un soggetto terzo prima che il contenuto sia eliminato definitivamente al termine del periodo di conservazione|[Revisioni per l'eliminazione](disposition.md#disposition-reviews) |
+|Limitare le modifiche ai criteri per soddisfare i requisiti normativi o garantire la protezione da amministratori non autorizzati| [Usare la protezione dell'archiviazione per limitare le modifiche ai criteri di conservazione e ai criteri per le etichette di conservazione](retention-preservation-lock.md)
+|Assicurarsi il tutto sia revisionato e approvato prima di eliminare il contenuto al termine del periodo di conservazione|[Revisioni per l'eliminazione](disposition.md#disposition-reviews) |
 | Monitorare come e dove le impostazioni di conservazione ed eliminazione sono applicate agli elementi | [Monitoraggio delle etichette di conservazione](retention.md#monitoring-retention-labels) |
 |Usare una soluzione di gestione dei record singola per documenti e messaggi di posta elettronica |[Informazioni sulla gestione dei record](records-management.md) |
 
