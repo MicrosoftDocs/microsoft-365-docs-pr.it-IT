@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 56d849a7abcbe480d82200cc7841d42e9c189762
-ms.sourcegitcommit: fa26da0be667d4be0121c52b05488dc76c5d626c
+ms.openlocfilehash: 347266f71dada3de1bbd9b1434cb1e6628249147
+ms.sourcegitcommit: 24826e1b61e7aace12fc9e8ae84ae3e760658b50
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "48795106"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "48931925"
 ---
 # <a name="readiness-assessment-tool"></a>Strumento di valutazione della conformità
 
@@ -22,7 +22,7 @@ Per una migliore esperienza possibile quando si effettua la registrazione in Mic
 
 Lo strumento verifica le impostazioni in Microsoft Endpoint Manager (in particolare, Microsoft Intune), Azure Active Directory (Azure AD) e Microsoft 365 per assicurarsi che funzionino con Microsoft Managed Desktop. Microsoft Managed Desktop conserva i dati associati a questi controlli per 12 mesi dopo l'ultima volta che si esegue un controllo nell'organizzazione di Azure AD (tenant). Dopo 12 mesi, viene mantenuto in forma deidentificata.  È possibile scegliere di eliminare i dati da raccogliere.
 
-Tutti gli utenti con almeno il ruolo di amministratore di Intune saranno in grado di eseguire questo strumento, ma tre dei controlli ([connettori di certificato](readiness-assessment-fix.md#certificate-connectors), [autenticazione](readiness-assessment-fix.md#multi-factor-authentication)a più fattori e [reimpostazione della password self-service](readiness-assessment-fix.md#self-service-password-reset)) richiedono autorizzazioni aggiuntive.
+Tutti gli utenti con almeno il ruolo di amministratore di Intune saranno in grado di eseguire questo strumento, ma due controlli (i[connettori di certificato](readiness-assessment-fix.md#certificate-connectors) e [l'autenticazione](readiness-assessment-fix.md#multi-factor-authentication) a più fattori richiedono autorizzazioni aggiuntive.
  
 Lo strumento di valutazione verifica gli elementi seguenti:
 

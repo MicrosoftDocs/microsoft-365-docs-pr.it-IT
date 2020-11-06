@@ -8,7 +8,7 @@ author: denisebmsft
 manager: dansimp
 audience: ITPro
 ms.topic: article
-ms.date: 11/04/2020
+ms.date: 11/05/2020
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
@@ -21,23 +21,27 @@ description: Iniziare a utilizzare le funzionalità di analisi e risposta automa
 ms.custom:
 - air
 - seo-marvel-mar2020
-ms.openlocfilehash: 7e9b786a9d00a34f5e2e88a8481e82fa8425a501
-ms.sourcegitcommit: 751dc531f0410ee075c179efe409a01664483ee2
+ms.openlocfilehash: 5796cdf21f9dd12c35a2f84422f03503433755b0
+ms.sourcegitcommit: 24826e1b61e7aace12fc9e8ae84ae3e760658b50
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48925605"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "48931937"
 ---
 # <a name="get-started-using-automated-investigation-and-response-air-in-microsoft-defender-for-office-365"></a>Iniziare a usare l'analisi e la risposta automatizzata (AIR) in Microsoft Defender per Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
-[Microsoft Defender per Office 365](office-365-atp.md) include potenti funzionalità di analisi e risposta (aria) automatizzate in grado di salvare il tempo e lo sforzo del team per le operazioni di sicurezza. Quando vengono attivati gli avvisi, spetta al team delle operazioni di sicurezza esaminare, assegnare priorità e rispondere a tali avvisi. Tenere il passo con il volume degli avvisi in ingresso può essere travolgente. L'automazione di alcune di queste attività può essere di aiuto. Con AIR, il team delle operazioni di sicurezza può concentrarsi sulle attività con priorità più alta senza perdere di vista gli avvisi importanti che vengono attivati.
+[Microsoft Defender per Office 365](office-365-atp.md) include potenti funzionalità di analisi e risposta (aria) automatizzate in grado di salvare il tempo e lo sforzo del team per le operazioni di sicurezza. Quando vengono attivati gli avvisi, spetta al team delle operazioni di sicurezza esaminare, assegnare priorità e rispondere a tali avvisi. Tenere il passo con il volume degli avvisi in ingresso può essere travolgente. L'automazione di alcune di queste attività può essere di aiuto. 
+
+AIR consente al team di operazioni di sicurezza di operare in modo più efficiente ed efficace. Le funzionalità AEREe includono processi di analisi automatizzati in risposta a minacce ben note che esistono oggi. Le azioni correttive appropriate attendono l'approvazione, consentendo al team di operazioni di sicurezza di rispondere efficacemente alle minacce rilevate. Con AIR, il team delle operazioni di sicurezza può concentrarsi sulle attività con priorità più alta senza perdere di vista gli avvisi importanti che vengono attivati.
 
 In questo articolo viene descritto:
 - Il [flusso globale di aria](#the-overall-flow-of-air);
 - [Come ottenere aria](#how-to-get-air); e 
 - Le [autorizzazioni necessarie](#required-permissions-to-use-air-capabilities) per configurare o utilizzare le funzionalità aeree. 
+
+In questo articolo sono inoltre inclusi i [passaggi successivi](#next-steps)e le risorse per ulteriori informazioni.
 
 ## <a name="the-overall-flow-of-air"></a>Flusso globale dell'aria
 
@@ -45,7 +49,7 @@ Viene attivato un avviso e un playbook di sicurezza avvia un'indagine automatizz
 
 1. Un'analisi automatizzata viene avviata in uno dei modi seguenti:
 
-   - Un [avviso](https://docs.microsoft.com/microsoft-365/compliance/alert-policies) viene attivato da un messaggio di posta elettronica (ad esempio messaggi, allegati o URL) sospetto. Viene creato un evento Incident. A seconda del tipo di evento imprevisto, viene eseguito un [PlayBook di sicurezza](automated-investigation-response-office.md#security-playbooks) e viene avviata un'indagine automatizzata. 
+   - Un [avviso viene attivato](#which-alert-policies-trigger-automated-investigations) da un messaggio di posta elettronica (ad esempio messaggi, allegati, URL o account utente compromessi). Viene creato un evento imprevisto e viene avviata un'indagine automatizzata. 
 
      --- o ---
    
@@ -61,7 +65,9 @@ Viene attivato un avviso e un playbook di sicurezza avvia un'indagine automatizz
 5. Poiché le azioni di correzione in sospeso sono approvate (o rifiutate), l'analisi automatizzata viene completata.
 
 > [!IMPORTANT]
-> In Microsoft Defender per Office 365, non vengono eseguite automaticamente azioni di correzione. Le azioni di correzione vengono eseguite solo dopo l'approvazione da parte del team di sicurezza dell'organizzazione. Tuttavia, le funzionalità AEREe salvano il tempo del team delle operazioni di sicurezza identificando le azioni correttive e fornendo i dettagli necessari per prendere una decisione informata.
+> In Microsoft Defender per Office 365, non vengono eseguite automaticamente azioni di correzione. Le azioni di correzione vengono eseguite solo dopo l'approvazione da parte del team di sicurezza dell'organizzazione. 
+>
+> Le funzionalità AEREe salvano il tempo del team delle operazioni di sicurezza identificando le azioni correttive e fornendo i dettagli necessari per prendere una decisione informata.
 
 Durante e dopo ogni indagine automatizzata, il team delle operazioni di sicurezza può:
 
@@ -96,29 +102,35 @@ Inoltre, assicurarsi di esaminare i [criteri di avviso dell'organizzazione](http
 
 ## <a name="which-alert-policies-trigger-automated-investigations"></a>Quali criteri di avviso attivano le indagini automatizzate?
 
-Microsoft 365 offre numerosi criteri di avviso incorporati che consentono di identificare l'abuso delle autorizzazioni di amministratore di Exchange, l'attività antimalware, le potenziali minacce esterne e interne e i rischi di governance delle informazioni. Alcuni dei [criteri di avviso predefiniti](https://docs.microsoft.com/microsoft-365/compliance/alert-policies#default-alert-policies) possono attivare indagini automatizzate. Tra le caratteristiche vi sono le seguenti:
+Microsoft 365 offre numerosi criteri di avviso incorporati che consentono di identificare l'abuso delle autorizzazioni di amministratore di Exchange, l'attività antimalware, le potenziali minacce esterne e interne e i rischi di governance delle informazioni. Alcuni dei [criteri di avviso predefiniti](https://docs.microsoft.com/microsoft-365/compliance/alert-policies#default-alert-policies) possono attivare indagini automatizzate. Nella tabella seguente vengono descritti gli avvisi che attivano le indagini automatizzate, la gravità del Centro sicurezza di Microsoft 365 e il modo in cui vengono generati:
 
-- Viene rilevato un clic URL potenzialmente dannoso
-- Un messaggio di posta elettronica viene segnalato da un utente come phishing
-- I messaggi di posta elettronica contenenti malware vengono rimossi dopo il recapito
-- I messaggi di posta elettronica contenenti URL di phishing vengono rimossi dopo il recapito
-- Vengono rilevati modelli di invio sospetti di posta elettronica
-- Un utente ha la limitazione di inviare messaggi di posta elettronica
+
+|Avviso  |Gravità |Come viene generato l'avviso  |
+|---------|---------|--------|
+|È stato rilevato un clic URL potenzialmente dannoso     |**High** |Questo avviso viene generato quando si verifica una delle operazioni seguenti:<br/> -Un utente protetto da [collegamenti sicuri](atp-safe-links.md) nell'organizzazione fa clic su un collegamento dannoso <br/>-Le modifiche al verdetto per gli URL sono identificate da Microsoft Defender per Office 365 <br/>-Gli utenti sovrascrivono le pagine di avviso dei collegamenti sicuri (in base ai [criteri dei collegamenti sicuri](set-up-atp-safe-links-policies.md)dell'organizzazione).<br/><br/> Per ulteriori informazioni sugli eventi che attivano questo avviso, vedere Configurare i criteri per i [collegamenti sicuri](set-up-atp-safe-links-policies.md).         |
+|Un messaggio di posta elettronica viene segnalato da un utente come malware o phishing |**Informativo**    |Questo avviso viene generato quando gli utenti dell'organizzazione segnalano i messaggi come messaggio di posta elettronica di phishing tramite il [componente aggiuntivo dei messaggi di report](https://docs.microsoft.com/microsoft-365/security/office-365-security/enable-the-report-message-add-in). |
+|I messaggi di posta elettronica contenenti malware vengono rimossi dopo il recapito |**Informativo**     |Questo avviso viene generato quando tutti i messaggi di posta elettronica contenenti malware vengono recapitati alle cassette postali dell'organizzazione. Se si verifica questo evento, Microsoft rimuove i messaggi infetti dalle cassette postali di Exchange Online utilizzando l' [eliminazione automatica zero-hour](https://docs.microsoft.com/microsoft-365/security/office-365-security/zero-hour-auto-purge).   |
+|I messaggi di posta elettronica contenenti URL di phishing vengono rimossi dopo il recapito     |**Informativo**        |Questo avviso viene generato quando tutti i messaggi contenenti phishing vengono recapitati alle cassette postali dell'organizzazione. Se si verifica questo evento, Microsoft rimuove i messaggi infetti dalle cassette postali di Exchange Online utilizzando l' [eliminazione automatica zero-hour](https://docs.microsoft.com/microsoft-365/security/office-365-security/zero-hour-auto-purge).  |
+|Vengono rilevati modelli di invio sospetti di posta elettronica     |**Medium**         |Questo avviso viene generato quando un utente dell'organizzazione ha inviato messaggi di posta elettronica sospetti ed è a rischio di essere limitato dall'invio di messaggi di posta elettronica. Si tratta di un avviso iniziale per il comportamento che potrebbe indicare che l'account è stato compromesso, ma non abbastanza grave da limitare l'utente.<br/><br/> Anche se è raro, un avviso generato da questo criterio potrebbe essere un'anomalia. Tuttavia, è consigliabile [verificare se l'account utente è stato compromesso](https://docs.microsoft.com/microsoft-365/security/office-365-security/responding-to-a-compromised-email-account).  |
+|Un utente ha la limitazione di inviare messaggi di posta elettronica    |**High** |Questo avviso viene generato quando un utente dell'organizzazione ha la limitazione di inviare la posta in uscita. Questo in genere risulta quando un [account di posta elettronica viene compromesso](responding-to-a-compromised-email-account.md).<br/><br/>Per ulteriori informazioni sugli utenti con restrizioni, vedere [Remove blocked users from the Restricted Users Portal in Microsoft 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/removing-user-from-restricted-users-portal-after-spam).    |
+
+> [!TIP]
+> Per ulteriori informazioni sui criteri di avviso o su come modificare le impostazioni predefinite, vedere [Alert policys in the Microsoft 365 Compliance Center](https://docs.microsoft.com/microsoft-365/compliance/alert-policies).
 
 ## <a name="required-permissions-to-use-air-capabilities"></a>Autorizzazioni necessarie per l'utilizzo delle funzionalità AEREe
 
 Le autorizzazioni vengono concesse tramite alcuni ruoli, ad esempio quelli descritti nella tabella seguente: 
 
 |Attività |Ruoli necessari |
-|--|--|
-|Per impostare le caratteristiche dell'aria |Uno dei ruoli seguenti: <br/>-Amministratore globale<br/>-Amministratore della sicurezza <br/>Questi ruoli possono essere assegnati in [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles) o nel [Centro sicurezza & Compliance](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center). |
-|Per approvare o rifiutare le azioni consigliate|Uno dei ruoli seguenti, assegnati in [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles) o nel [Centro sicurezza & Compliance](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center):<br/>-Amministratore globale <br/>-Amministratore della sicurezza<br/>-Lettore di sicurezza <br/>--- e ---<br/>-Search and Purge (questo ruolo è assegnato solo nel [Centro sicurezza & Compliance](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center). Potrebbe essere necessario creare un nuovo gruppo di ruoli e aggiungere il ruolo Search and Purge a quel nuovo gruppo di ruoli.
+|:--|:--|
+|Configurare le caratteristiche dell'aria |Uno dei ruoli seguenti: <br/>-Amministratore globale<br/>-Amministratore della sicurezza <br/>Questi ruoli possono essere assegnati in [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles) o nel [Centro sicurezza & Compliance](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center). |
+|Avviare un'analisi automatizzata <br/><br/>--- o ---<br/><br/>Approva o rifiuta azioni consigliate|Uno dei ruoli seguenti, assegnati in [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles) o nel [Centro sicurezza & Compliance](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center):<br/>-Amministratore globale <br/>-Amministratore della sicurezza<br/>-Lettore di sicurezza <br/>--- e ---<br/>-Search and Purge (questo ruolo è assegnato solo nel [Centro sicurezza & Compliance](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center). Potrebbe essere necessario creare un nuovo gruppo di ruoli e aggiungere il ruolo Search and Purge a quel nuovo gruppo di ruoli. |
 
 ## <a name="required-licenses"></a>Licenze necessarie
 
-Le licenze di [Microsoft Defender per Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp#office-365-atp-plan-1-and-plan-2) devono essere assegnate a:
+Le licenze di [Microsoft Defender per Office 365 piano 2](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp#microsoft-defender-for-office-365-plan-1-and-plan-2) devono essere assegnate a:
 - Amministratori della sicurezza (compresi gli amministratori globali)
-- Il team delle operazioni di sicurezza dell'organizzazione (inclusi i lettori di sicurezza e quelli con il ruolo di ricerca e spurgo)
+- Il team delle operazioni di sicurezza dell'organizzazione (inclusi i lettori di sicurezza e quelli con il ruolo di **ricerca e spurgo** )
 - Utenti finali
 
 
@@ -128,7 +140,7 @@ Le licenze di [Microsoft Defender per Office 365](https://docs.microsoft.com/mic
 
 - [Esaminare e approvare le azioni in sospeso](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-remediation-actions)
 
-## <a name="related-articles"></a>Articoli correlati
+## <a name="see-also"></a>Vedere anche
 
 - [Analisi e correzione automatizzate in Microsoft Defender per endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)
 

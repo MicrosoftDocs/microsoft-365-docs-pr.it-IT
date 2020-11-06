@@ -17,40 +17,38 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 description: Durante e dopo un'analisi automatizzata in Microsoft 365, è possibile visualizzare i risultati e i risultati principali.
-ms.date: 09/29/2020
-ms.openlocfilehash: 9640ec9429f1c8317c6526976b2fe24c1137115a
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.date: 11/05/2020
+ms.openlocfilehash: 0f472c117ff1f6c2b563063d0eeb9a27cc5afebe
+ms.sourcegitcommit: 24826e1b61e7aace12fc9e8ae84ae3e760658b50
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48844573"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "48931991"
 ---
 # <a name="details-and-results-of-an-automated-investigation-in-microsoft-365"></a>Dettagli e risultati di un'indagine automatizzata in Microsoft 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-Quando si verifica un' [indagine automatizzata](office-365-air.md) in [Microsoft Defender per Office 365](office-365-atp.md), i dettagli relativi a tali indagini sono disponibili durante e dopo il processo di analisi automatizzato. Se di dispone delle autorizzazioni necessarie, è possibile visualizzare i dettagli in una visualizzazione dei dettagli dell'indagine. La vista dei dettagli dell'indagine consente di avere uno stato aggiornato e la possibilità di approvare eventuali azioni in sospeso.
+Quando si verifica un' [indagine automatizzata](office-365-air.md) in [Microsoft Defender per Office 365](office-365-atp.md), i dettagli relativi a tali indagini sono disponibili durante e dopo il processo di analisi automatizzato. Se si dispone delle autorizzazioni necessarie, è possibile visualizzare tali dettagli nel centro sicurezza Microsoft 365. I dettagli dell'analisi forniscono lo stato di aggiornamento e la possibilità di approvare le azioni in sospeso.
 
 ## <a name="investigation-status"></a>Stato analisi
 
 Lo stato dell'indagine indica lo stato di avanzamento dell'analisi e delle azioni. Durante l'esecuzione dell'indagine, lo stato cambia per indicare se sono state trovate minacce e se le azioni sono state approvate.
 
-****
-
-|Stato|Cosa significa|
-|---|---|
-|In avvio| L'indagine è stata attivata e in attesa di avviare l'esecuzione.|
-|In esecuzione| Il processo di indagine è iniziato ed è in corso. Questo stato si verifica anche quando vengono approvate le [azioni in sospeso](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-review-approve-pending-completed-actions#approve-or-reject-pending-actions) .|
-|Non sono state trovate minacce| L'inchiesta è terminata e non sono state identificate minacce (account utente, messaggio di posta elettronica, URL o file). <br/><br/>**Suggerimento** : se si sospetta che qualcosa sia stato perso (ad esempio, un falso negativo), è possibile eseguire un'azione utilizzando [Esplora minacce](https://docs.microsoft.com/microsoft-365/security/office-365-security/threat-explorer).|
-|Minacce trovate|L'analisi automatizzata ha riscontrato problemi, ma non sono state eseguite azioni correttive specifiche per risolvere tali problemi.<br/><br/> Lo stato delle minacce individuate può verificarsi quando è stato identificato un tipo di attività dell'utente, ma non sono disponibili azioni di pulizia. Negli esempi sono incluse le attività utente seguenti: <br/>-Un evento di [prevenzione della perdita di dati](https://docs.microsoft.com/Microsoft-365/compliance/data-loss-prevention-policies) (DLP) <br/>-Un'anomalia di invio di messaggi di posta elettronica <br/>-Malware inviato <br/>-Sent phishing<br/>Nell'inchiesta non sono stati trovati URL dannosi, file o messaggi di posta elettronica da correggere e non è stata rilevata alcuna attività della cassetta postale, ad esempio la disattivazione delle regole di inoltro o la delega. <br/><br/>**Suggerimento** : se si sospetta che qualcosa sia stato perso (ad esempio, un falso negativo), è possibile esaminare e intraprendere un'azione tramite l'utilizzo di [Esplora minacce](https://docs.microsoft.com/microsoft-365/security/office-365-security/threat-explorer).|
-|Terminato dal sistema| L'indagine è stata interrotta. L'analisi può essere interrotta per diversi motivi:<br/>-Le azioni in sospeso dell'inchiesta sono scadute. Timeout delle azioni in sospeso dopo aver atteso l'approvazione per una settimana. <br/>-Ci sono troppe azioni. Ad esempio, se sono presenti troppi utenti che fanno clic su URL dannosi, può superare la capacità dell'indagine di eseguire tutti gli analizzatori, in modo che l'analisi venga interrotta. <br/><br/>**Suggerimento** : se un'analisi si interrompe prima che vengano eseguite azioni, provare a utilizzare [Threat Explorer](https://docs.microsoft.com/microsoft-365/security/office-365-security/threat-explorer) per individuare e risolvere le minacce.|
-|Azione in sospeso| L'inchiesta ha individuato una minaccia, ad esempio un messaggio di posta indesiderata, un URL dannoso o un'impostazione di cassetta postale rischiosa e un'azione per correggere tale minaccia è in attesa di [approvazione](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-review-approve-pending-completed-actions).<br/><br/>Lo stato dell'azione in sospeso viene attivato quando viene trovata una minaccia con un'azione corrispondente. Tuttavia, l'elenco delle azioni in sospeso può aumentare durante l'esecuzione di un'indagine. Controllare il [registro delle indagini](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-view-investigation-results#playbook-log) per verificare se altri elementi sono ancora in attesa di completamento.|
-|Corretti| L'inchiesta è stata completata e tutte le azioni sono state approvate (completamente rimediate).<br/><br/>**Nota** : le azioni di correzione approvate possono avere errori che impediscono l'esecuzione delle azioni. Indipendentemente dal fatto che le azioni di correzione siano state completate correttamente, lo stato dell'inchiesta non cambia. Controllare il [registro delle indagini](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-view-investigation-results) per ottenere risultati dettagliati.|
-|Parzialmente rimediato| L'analisi ha portato a operazioni di correzione e alcune sono state approvate e completate. Altre azioni sono ancora [in sospeso](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-review-approve-pending-completed-actions).|
-|Esito negativo| Almeno un analizzatore dell'analisi ha riscontrato un problema in cui non è stato possibile completarlo correttamente. <br/><br/>**Nota** : se un'indagine ha esito negativo dopo che sono state approvate le azioni di correzione, le azioni di correzione potrebbero essere state eseguite correttamente. Controllare il [registro delle indagini](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-view-investigation-results) per ottenere risultati dettagliati.|
-|Accodamento tramite limitazione| Viene eseguita un'analisi in una coda. Quando vengono completate altre indagini, vengono avviate indagini accodate. La limitazione consente di evitare scarse prestazioni del servizio. <br/><br/>**Suggerimento** : le azioni in sospeso possono limitare il numero di nuove indagini che è possibile eseguire. Assicurarsi di [approvare (o rifiutare) le azioni in sospeso](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-review-approve-pending-completed-actions#approve-or-reject-pending-actions).|
-|Terminata mediante limitazione| Se una ricerca viene mantenuta troppo a lungo in coda, si interrompe. <br/><br/>**Suggerimento** : è possibile [avviare un'indagine da Esplora minacce](https://docs.microsoft.com/microsoft-365/security/office-365-security/automated-investigation-response-office#example-a-security-administrator-triggers-an-investigation-from-threat-explorer).|
+|Stato|Descrizione|
+|:---|:---|
+|**In avvio** | L'indagine è stata attivata e in attesa di avviare l'esecuzione.|
+|**In esecuzione** | Il processo di indagine è iniziato ed è in corso. Questo stato si verifica anche quando vengono approvate le [azioni in sospeso](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-review-approve-pending-completed-actions#approve-or-reject-pending-actions) .|
+|**Non sono state trovate minacce** | L'inchiesta è terminata e non sono state identificate minacce (account utente, messaggio di posta elettronica, URL o file). <br/><br/>**Suggerimento** : se si sospetta che qualcosa sia stato perso (ad esempio, un falso negativo), è possibile eseguire un'azione utilizzando [Esplora minacce](https://docs.microsoft.com/microsoft-365/security/office-365-security/threat-explorer).|
+|**Minacce trovate** |L'analisi automatizzata ha riscontrato problemi, ma non sono state eseguite azioni correttive specifiche per risolvere tali problemi.<br/><br/> Lo stato delle **minacce individuate** può verificarsi quando è stato identificato un tipo di attività dell'utente, ma non sono disponibili azioni di pulizia. Negli esempi sono incluse le attività utente seguenti: <br/>-Un evento di [prevenzione della perdita di dati](https://docs.microsoft.com/Microsoft-365/compliance/data-loss-prevention-policies) (DLP) <br/>-Un'anomalia di invio di messaggi di posta elettronica <br/>-Malware inviato <br/>-Sent phishing<br/>Nell'inchiesta non sono stati trovati URL dannosi, file o messaggi di posta elettronica da correggere e non è stata rilevata alcuna attività della cassetta postale, ad esempio la disattivazione delle regole di inoltro o la delega. <br/><br/>**Suggerimento** : se si sospetta che qualcosa sia stato perso (ad esempio, un falso negativo), è possibile esaminare e intraprendere un'azione tramite l'utilizzo di [Esplora minacce](https://docs.microsoft.com/microsoft-365/security/office-365-security/threat-explorer).|
+|**Terminato dal sistema** | L'indagine è stata interrotta. L'analisi può essere interrotta per diversi motivi:<br/>-Le azioni in sospeso dell'inchiesta sono scadute. Timeout delle azioni in sospeso dopo aver atteso l'approvazione per una settimana. <br/>-Ci sono troppe azioni. Ad esempio, se sono presenti troppi utenti che fanno clic su URL dannosi, può superare la capacità dell'indagine di eseguire tutti gli analizzatori, in modo che l'analisi venga interrotta. <br/><br/>**Suggerimento** : se un'analisi si interrompe prima che vengano eseguite azioni, provare a utilizzare [Threat Explorer](https://docs.microsoft.com/microsoft-365/security/office-365-security/threat-explorer) per individuare e risolvere le minacce.|
+|**Azione in sospeso** | L'inchiesta ha individuato una minaccia, ad esempio un messaggio di posta indesiderata, un URL dannoso o un'impostazione di cassetta postale rischiosa e un'azione per correggere tale minaccia è in [attesa di approvazione](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-review-approve-pending-completed-actions).<br/><br/>Lo stato dell' **azione in sospeso** viene attivato quando viene trovata una minaccia con un'azione corrispondente. Tuttavia, l'elenco delle azioni in sospeso può aumentare durante l'esecuzione di un'indagine. Controllare il [registro delle indagini](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-view-investigation-results#playbook-log) per verificare se altri elementi sono ancora in attesa di completamento.|
+|**Corretti** | L'inchiesta è stata completata e tutte le azioni di correzione sono state approvate (viene indicato come completamente corretti).<br/><br/>**Nota** : le azioni di correzione approvate possono avere errori che impediscono l'esecuzione delle azioni. Indipendentemente dal fatto che le azioni di correzione siano state completate correttamente, lo stato dell'inchiesta non cambia. Controllare il [registro delle indagini](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-view-investigation-results) per ottenere risultati dettagliati.|
+|**Parzialmente rimediato**| L'analisi ha portato a operazioni di correzione e alcune sono state approvate e completate. Altre azioni sono ancora [in sospeso](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-review-approve-pending-completed-actions).|
+|**Operazione non riuscita** | Almeno un analizzatore dell'analisi ha riscontrato un problema in cui non è stato possibile completarlo correttamente. <br/><br/>**Nota** : se un'indagine ha esito negativo dopo che sono state approvate le azioni di correzione, le azioni di correzione potrebbero essere state eseguite correttamente. Controllare il [registro delle indagini](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-view-investigation-results) per ottenere risultati dettagliati.|
+|**Accodamento tramite limitazione** | Viene eseguita un'analisi in una coda. Quando vengono completate altre indagini, vengono avviate indagini accodate. La limitazione consente di evitare scarse prestazioni del servizio. <br/><br/>**Suggerimento** : le azioni in sospeso possono limitare il numero di nuove indagini che è possibile eseguire. Assicurarsi di [approvare (o rifiutare) le azioni in sospeso](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-review-approve-pending-completed-actions#approve-or-reject-pending-actions).|
+|**Terminata mediante limitazione** | Se una ricerca viene mantenuta troppo a lungo in coda, si interrompe. <br/><br/>**Suggerimento** : è possibile [avviare un'indagine da Esplora minacce](https://docs.microsoft.com/microsoft-365/security/office-365-security/automated-investigation-response-office#example-a-security-administrator-triggers-an-investigation-from-threat-explorer).|
 |
 
 ## <a name="view-details-of-an-investigation"></a>Visualizzare i dettagli di un'indagine
@@ -75,7 +73,9 @@ Lo stato dell'indagine indica lo stato di avanzamento dell'analisi e delle azion
 
 ## <a name="view-details-about-an-alert-related-to-an-investigation"></a>Visualizzare i dettagli relativi a un avviso relativo a un'indagine
 
-Alcuni tipi di avvisi attivano l'analisi automatizzata in Microsoft 365. Per ulteriori informazioni, vedere [Alerts](automated-investigation-response-office.md#alerts). Utilizzare la procedura seguente per visualizzare i dettagli relativi a un avviso associato a un'indagine automatizzata.
+Alcuni tipi di avvisi attivano l'analisi automatizzata in Microsoft 365. Per ulteriori informazioni, vedere [criteri di avviso che attivano le indagini automatizzate](office-365-air.md#which-alert-policies-trigger-automated-investigations). 
+
+Utilizzare la procedura seguente per visualizzare i dettagli relativi a un avviso associato a un'indagine automatizzata.
 
 1. Accedere al centro sicurezza & conformità ( [https://protection.office.com](https://protection.office.com) ) ed eseguire l'accesso.
 
@@ -108,7 +108,9 @@ Nella pagina indagini automatizzate vengono visualizzate le indagini dell'organi
 È possibile:
 
 - Passare direttamente a un'indagine (selezionare un **ID di ricerca** ).
+
 - Applicare filtri. Scegliere tra il **tipo di analisi** , l'intervallo di **tempo** , **lo stato** o una combinazione di questi.
+
 - Esportare i dati in un file. csv.
 
 ### <a name="investigation-graph"></a>Grafico dell'indagine
@@ -120,8 +122,11 @@ Quando si apre una specifica indagine, viene visualizzata la pagina del grafico 
 È possibile:
 
 - Ottenere una panoramica visiva dell'indagine corrente.
+
 - Visualizzare un riepilogo della durata dell'indagine.
+
 - Selezionare un nodo nella visualizzazione per visualizzare i dettagli per il nodo.
+
 - Selezionare una scheda all'interno della parte superiore per visualizzare i dettagli per tale scheda.
 
 ### <a name="alert-investigation"></a>Indagine sugli avvisi
@@ -133,52 +138,85 @@ Nella scheda **avvisi** per un'indagine, è possibile visualizzare gli avvisi ri
 È possibile:
 
 - Ottenere una panoramica visiva dell'avviso di attivazione corrente e degli eventuali avvisi associati.
+
 - Selezionare un avviso nell'elenco per aprire una pagina di volo che Visualizza i dettagli degli avvisi completi.
 
 ### <a name="email-investigation"></a>Indagine tramite posta elettronica
 
-Nella scheda **posta elettronica** per un'indagine, è possibile visualizzare i messaggi di e-mail originali e i cluster di messaggi di posta elettronica analoghi identificati nell'ambito dell'inchiesta.
-
-Dato il volume totale di messaggi di posta elettronica che gli utenti di un'organizzazione inviano e ricevono, oltre alla natura multi-utente delle comunicazioni e degli attacchi di posta elettronica, il processo di
-
-- clustering dei messaggi di posta elettronica in base a attributi simili provenienti da un'intestazione, corpo, URL e allegati del messaggio;
-- separazione di messaggi di posta elettronica dannosi dal buon messaggio di posta elettronica; e
-- esecuzione di un'azione su messaggi di posta elettronica dannosi
-
-può richiedere molto tempo. AIR ora automatizza questo processo, salvando il tempo e lo sforzo del team di sicurezza dell'organizzazione.
-
-È possibile identificare tre diversi tipi di cluster di posta elettronica durante il passaggio di analisi della posta elettronica: cluster di somiglianza (tutte le indagini), cluster di indicatori (tutte le indagini) e cluster di cassette postali/utenti.
-
-- I cluster di somiglianza sono messaggi di posta elettronica identificati dalla ricerca di messaggi di posta elettronica con attributi di contenuto e mittente simili. Tali cluster vengono valutati per i contenuti dannosi in base ai risultati di rilevamento originali. I cluster di posta elettronica che contengono sufficienti rilevamenti di posta elettronica dannosi sono considerati dannosi.
-- I cluster di indicatori sono messaggi di posta elettronica identificati tramite la ricerca per la stessa entità indicatore (hash di file o URL) dal messaggio di posta elettronica originale. Quando l'entità file/URL di ouserriginal viene identificata come dannosa, AIR applica l'indicatore verdetto all'intero gruppo di messaggi di posta elettronica che contiene tale entità. Un file identificato come malware indica che il cluster di messaggi di posta elettronica che contiene il file viene trattato come messaggio di posta elettronica antimalware.
-- I cluster di cassette postali/utenti sono messaggi di posta elettronica correlati all'utente coinvolto in un'indagine di compromesso per gli utenti.  Si noti che questi cluster di posta elettronica sono per un'ulteriore analisi da parte del team delle operazioni di sicurezza e non generano azioni di correzione della posta elettronica.  I cluster di cassette postali/utenti del PlayBook di compromesso esaminano i messaggi di posta elettronica inviati dall'utente in fase di analisi per comprendere l'impatto potenziale dei messaggi di posta elettronica inviati dalla cassetta postale:
-    - Messaggi di posta elettronica dannosi inviati dalla cassetta postale o dall'utente, che indicano un potenziale compromesso della cassetta postale/account e mostrerà ad altri utenti/cassette postali un impatto potenzialmente dannoso nell'ambito di un compromesso.
-    - Messaggi di posta elettronica sospetti inviati dalla cassetta postale/dall'utente, che mostrano qualsiasi e-mail di posta indesiderata o bulk inviata dalla cassetta postale, che potrebbe essere correlata a un potenziale compromesso o almeno indicare un'attività potenzialmente indesiderata dall'account di posta elettronica
-    - Pulire i messaggi di posta elettronica inviati dalla cassetta postale/utente, che fornirà al team delle operazioni di sicurezza una visualizzazione dei messaggi di posta elettronica legittimi inviati, ma può includere exfiltration di dati quando l'account di posta elettronica viene compromesso.
-
-L'obiettivo del raggruppamento è la ricerca e la ricerca di altri messaggi di posta elettronica correlati inviati dallo stesso mittente come parte di un attacco o di una campagna.  In alcuni casi, la posta elettronica legittima può attivare un'indagine (ad esempio, un utente segnala un messaggio di posta elettronica di marketing).  In questi scenari, il clustering di posta elettronica dovrebbe identificare che i cluster di posta elettronica non sono dannosi – quando lo fa in modo appropriato, **non** indicherà una minaccia né la rimozione della posta elettronica.
-
-La scheda **posta elettronica** Visualizza anche gli elementi di posta elettronica relativi all'indagine, ad esempio i dettagli di posta elettronica segnalati dall'utente, il messaggio di posta elettronica originale riportato, i messaggi di posta elettronica zapped a causa di malware/phishing e così via.
-
-Il numero di messaggi di posta elettronica identificati nella scheda posta elettronica rappresenta attualmente la somma totale di tutti gli SMS visualizzati nella scheda **posta elettronica** . Poiché i messaggi di posta elettronica sono presenti in più cluster, il conteggio totale effettivo dei messaggi di posta elettronica identificati (ed è influenzato dalle azioni correttive) è il numero di messaggi di posta elettronica univoci presenti in tutti i cluster e nei messaggi di posta elettronica dei destinatari originali.
-
-Entrambi i messaggi di posta elettronica di Explorer e conteggio aria per ogni destinatario, perché i verdetti di sicurezza, le azioni e i percorsi di recapito variano in base al destinatario. Pertanto, un messaggio di posta elettronica originale inviato a tre utenti conta come un totale di tre messaggi di posta elettronica anziché un messaggio di posta elettronica. Potrebbero verificarsi casi in cui un messaggio di posta elettronica viene contato due o più volte, ad esempio quando un messaggio di posta elettronica contiene più azioni o quando sono presenti più copie del messaggio di posta elettronica quando si verificano tutte le azioni. Ad esempio, un messaggio di posta elettronica antimalware rilevato al momento del parto può comportare sia un messaggio di posta elettronica bloccato (in quarantena) che un messaggio di posta elettronica sostituito (file di minacce sostituito da un file di avviso, quindi recapitato alla cassetta postale dell'utente Poiché vi sono letteralmente due copie del messaggio di posta elettronica nel sistema, entrambe possono essere conteggiate nei conteggi dei cluster.
-
-I conteggi dei messaggi di posta elettronica vengono calcolati al momento dell'indagine e alcuni conteggi vengono ricalcolati quando si apre l'indagine comparsa (in base a una query sottostante). Il numero di messaggi di posta elettronica visualizzati per i cluster di posta elettronica nella scheda posta elettronica e il valore della quantità di posta elettronica visualizzato nel riquadro a comparsa del cluster vengono calcolati al momento dell'indagine e non cambiano. Il numero di posta elettronica visualizzato nella parte inferiore della scheda posta elettronica del riquadro a comparsa del cluster di posta elettronica e il numero di messaggi di posta elettronica visualizzati in Esplora riflettono i messaggi di posta elettronica ricevuti dopo l'analisi iniziale dell'indagine. In questo modo un cluster di posta elettronica che mostra una quantità originale di 10 messaggi di posta elettronica mostrerà una lista di posta elettronica di 15 quando altri cinque messaggi di posta elettronica arrivano tra la fase di analisi dell'inchiesta e quando l'amministratore esamina l'indagine.  Analogamente, le indagini precedenti potrebbero avere un numero maggiore di query di Explorer, poiché il difensore per Office 365 P2 scade i dati dopo 7 giorni per le prove e 30 giorni per le licenze a pagamento.  La visualizzazione dei conteggi cronologici e correnti di count in visualizzazioni diverse viene eseguita per indicare l'impatto della posta elettronica al momento dell'indagine e l'impatto corrente fino al momento in cui viene eseguita la correzione.
-
-Si consideri, ad esempio, lo scenario seguente. Il primo gruppo di tre messaggi di posta elettronica è stato ritenuto phishing. Un altro gruppo di messaggi simili con lo stesso IP e l'oggetto è stato trovato e considerato dannoso, in quanto alcuni di essi sono stati identificati come phishing durante il rilevamento iniziale.
+Nella scheda **posta elettronica** per un'indagine, è possibile visualizzare i messaggi di e-mail originali e i cluster di messaggi di posta elettronica analoghi identificati nell'ambito dell'inchiesta. La scheda **posta elettronica** Visualizza anche gli elementi di posta elettronica relativi all'indagine, ad esempio i dettagli di posta elettronica segnalati dall'utente, il messaggio di posta elettronica originale riportato, i messaggi di posta elettronica zapped a causa di malware/phishing e così via.
 
 ![Pagina di ricerca della posta elettronica AEREa](../../media/air-investigationemailpage.png)
 
-È possibile:
+Con l'indagine tramite posta elettronica, è possibile:
+
 - Ottenere una panoramica visiva dei risultati del clustering corrente e delle minacce trovate.
+
 - Fare clic su un'entità cluster o su un elenco di minacce per aprire una pagina di volo che Visualizza i dettagli degli avvisi completi.
-- Esaminare ulteriormente il cluster di posta elettronica facendo clic sul collegamento ' Apri in Esplora risorse ' nella parte superiore della scheda ' dettagli cluster di posta elettronica '
+
+- Esaminare ulteriormente il cluster di posta elettronica facendo clic sul collegamento **Apri in Esplora nella** parte superiore della scheda **Dettagli cluster di posta elettronica**
 
 ![Messaggi di posta elettronica di analisi AEREa con dettagli a comparsa](../../media/air-investigationemailpageflyoutdetails.png)
 
+Dato il volume totale di messaggi di posta elettronica che gli utenti di un'organizzazione inviano e ricevono, oltre alla natura multiutente delle comunicazioni e degli attacchi di posta elettronica, il processo seguente può richiedere una quantità di tempo significativa:
+
+1. Clustering dei messaggi di posta elettronica in base a attributi simili provenienti da un'intestazione, corpo, URL e allegati di un messaggio
+
+2. Separazione di messaggi di posta elettronica dannosi dal buon messaggio di posta elettronica
+
+3. Esecuzione di un'azione su messaggi di posta elettronica dannosi
+
+AIR automatizza questo processo, salvando il tempo e lo sforzo del team di sicurezza dell'organizzazione. 
+
+#### <a name="types-of-email-clusters"></a>Tipi di cluster di posta elettronica
+
+È possibile identificare tre diversi tipi di cluster di posta elettronica durante il passaggio di analisi della posta elettronica: cluster di somiglianza (tutte le indagini), cluster di indicatori (tutte le indagini) e cluster di cassette postali/utenti. Nella tabella seguente vengono descritti questi tipi di cluster di posta elettronica.
+
+|Cluster di posta elettronica  |Descrizione  |
+|---------|---------|
+|Cluster di somiglianza     |Messaggi di posta elettronica identificati dalla ricerca di messaggi di posta elettronica con attributi di contenuto e mittente simili. Tali cluster vengono valutati per i contenuti dannosi in base ai risultati di rilevamento originali. I cluster di posta elettronica che contengono sufficienti rilevamenti di posta elettronica dannosi sono considerati dannosi.         |
+|Cluster di indicatori | Messaggi di posta elettronica identificati tramite la ricerca per la stessa entità indicatore (hash di file o URL) dal messaggio di posta elettronica originale. Quando l'entità file/URL originale viene identificata come dannosa, AIR applica l'indicatore verdetto all'intero gruppo di messaggi di posta elettronica che contiene tale entità. Un file identificato come malware indica che il cluster di messaggi di posta elettronica che contiene il file viene trattato come messaggio di posta elettronica antimalware. |
+|Cluster di cassette postali/utenti | Messaggi di posta elettronica relativi all'utente coinvolto in un'indagine di compromesso dell'utente.  Questi cluster di posta elettronica sono per un'ulteriore analisi da parte del team delle operazioni di sicurezza e non generano azioni di correzione della posta elettronica. <br/> The Compromised User Security PlayBook esamina i messaggi di posta elettronica inviati dall'utente analizzato per comprendere l'impatto potenziale dei messaggi di posta elettronica inviati dalla cassetta postale. |
+
 > [!NOTE]
-> Nel contesto della posta elettronica, è possibile che venga visualizzata una superficie di minaccia per l'anomalia del volume come parte dell'indagine. Un'anomalia del volume indica un picco nei messaggi di posta elettronica simili nei pressi del tempo dell'evento di indagine rispetto ai tempi precedenti. Questo picco del traffico di posta elettronica con caratteristiche simili (ad esempio, dominio del mittente e del soggetto, somiglianza del corpo e IP del mittente) è tipico dell'inizio delle campagne di posta elettronica o degli attacchi. Tuttavia, la massa, la posta indesiderata e le campagne di posta elettronica legittime condividono queste caratteristiche. Le anomalie dei volumi rappresentano una potenziale minaccia e, di conseguenza, potrebbero essere meno gravi rispetto alle minacce di malware o phishing identificate con motori anti-virus, detonazione o reputazione dannosa.
+> L'obiettivo del raggruppamento è la ricerca e la ricerca di altri messaggi di posta elettronica correlati inviati dallo stesso mittente come parte di un attacco o di una campagna.  In alcuni casi, la posta elettronica legittima potrebbe attivare un'indagine (ad esempio, un utente segnala un messaggio di posta elettronica di marketing).  In questi scenari, il clustering di posta elettronica dovrebbe identificare che i cluster di posta elettronica non sono dannosi – quando lo fa in modo appropriato, **non** indicherà una minaccia o la rimozione della posta elettronica.
+
+#### <a name="email-classifications"></a>Classificazione della posta elettronica
+
+Poiché i messaggi di posta elettronica vengono analizzati, sono classificati come *dannosi* , *sospetti* o *puliti* (come in, *non identificati come una minaccia* ):
+
+- I *messaggi di posta elettronica dannosi* inviati dalla cassetta postale o dall'utente indicano un potenziale compromesso della cassetta postale/account. Sono visualizzati altri utenti e cassette postali che possono essere influenzati da messaggi di posta elettronica dannosi come parte di un compromesso.
+
+- I messaggi di posta elettronica *sospetti* inviati dalla cassetta postale/utente indicano il potenziale per un account compromesso o un'attività di posta indesiderata. Questi messaggi includono qualsiasi messaggio di posta indesiderata o in blocco inviato dalla cassetta postale.
+
+- La *pulizia* dei messaggi di posta elettronica (messaggi di posta elettronica che non sono considerati una minaccia) inviati dalla cassetta postale/utente può fornire al team delle operazioni di sicurezza la visualizzazione di messaggi di posta elettronica legittimi inviati. Tuttavia, questi messaggi di posta elettronica possono includere anche i dati exfiltration se l'account di posta elettronica è compromesso.
+
+#### <a name="more-about-email-counts"></a>Altre informazioni sui conteggi di posta elettronica
+
+Il numero di messaggi di posta elettronica identificati nella scheda posta elettronica rappresenta al momento la somma totale di tutte le e-mail che sono state visualizzate nella scheda **posta elettronica** . Poiché i messaggi di posta elettronica sono presenti in più cluster, il conteggio totale effettivo dei messaggi di posta elettronica identificati (ed è influenzato dalle azioni correttive) è il numero di messaggi di posta elettronica univoci presenti in tutti i cluster e nei messaggi di posta elettronica dei destinatari originali.
+
+Entrambi i messaggi di posta elettronica per l' [esploratore](threat-explorer.md) e il numero di aria su una base per destinatario, perché i verdetti di sicurezza, le azioni e i percorsi di recapito variano in base al destinatario. Pertanto, un messaggio di posta elettronica originale inviato a tre utenti conta come un totale di tre messaggi di posta elettronica anziché un messaggio di posta elettronica. 
+
+Potrebbero verificarsi casi in cui un messaggio di posta elettronica viene contato due o più volte, ad esempio quando un messaggio di posta elettronica contiene più azioni o quando sono presenti più copie del messaggio di posta elettronica quando si verificano tutte le azioni. 
+
+Ad esempio, un messaggio di posta elettronica antimalware rilevato al momento del parto può comportare sia un messaggio di posta elettronica bloccato (in quarantena) che un messaggio di posta elettronica sostituito (file di minacce sostituito da un file di avviso, quindi recapitato alla cassetta postale dell'utente Poiché vi sono letteralmente due copie del messaggio di posta elettronica nel sistema, entrambe possono essere conteggiate nei conteggi dei cluster.
+
+> [!IMPORTANT]
+> Di seguito sono riportate alcune considerazioni da tenere presenti:
+> 
+> - I conteggi dei messaggi di posta elettronica vengono calcolati al momento dell'indagine e alcuni conteggi vengono ricalcolati quando si apre l'indagine comparsa (in base a una query sottostante). 
+> 
+> - Il numero di messaggi di posta elettronica visualizzati per i cluster di posta elettronica nella scheda **posta elettronica** e il valore della quantità di posta elettronica visualizzato nel riquadro a comparsa del cluster vengono calcolati al momento dell'indagine e non cambiano. 
+> 
+> - Il numero di posta elettronica visualizzato nella parte inferiore della scheda **posta elettronica** del riquadro a comparsa del cluster di posta elettronica e il numero di messaggi di posta elettronica visualizzati in Esplora riflettono i messaggi di posta elettronica ricevuti dopo l'analisi iniziale dell'indagine. 
+
+Di conseguenza, un cluster di posta elettronica che mostra una quantità originale di 10 messaggi di posta elettronica mostrerebbe un totale di 15 messaggi di posta elettronica quando vengono visualizzati altri cinque messaggio di posta elettronica tra la fase di analisi dell'inchiesta e quando l'amministratore esamina l'indagine. Analogamente, le indagini precedenti potrebbero iniziare a mostrare conteggi superiori rispetto alle query di Esplora risorse, poiché i dati in Microsoft Defender per Office 365 piano 2 scadono dopo 7 giorni per le prove e dopo 30 giorni per le licenze a pagamento.  
+
+La visualizzazione dei conteggi cronologici e correnti di count in visualizzazioni diverse viene eseguita per indicare l'impatto della posta elettronica al momento dell'indagine e l'impatto corrente fino al momento in cui viene eseguita la correzione.
+
+> [!NOTE]
+> Nel contesto della posta elettronica, è possibile che venga visualizzata una superficie di minaccia per l'anomalia del volume come parte dell'indagine. Un'anomalia del volume indica un picco nei messaggi di posta elettronica simili nei pressi del tempo dell'evento di indagine rispetto ai tempi precedenti. Questo picco del traffico di posta elettronica con caratteristiche simili (ad esempio, dominio del mittente e del soggetto, somiglianza del corpo e IP del mittente) è tipico dell'inizio delle campagne di posta elettronica o degli attacchi. Tuttavia, la massa, la posta indesiderata e le campagne di posta elettronica legittime condividono queste caratteristiche. 
+>
+> Le anomalie dei volumi rappresentano una potenziale minaccia e, di conseguenza, potrebbero essere meno gravi rispetto alle minacce di malware o phishing identificate con motori anti-virus, detonazione o reputazione dannosa.
 
 ### <a name="user-investigation"></a>Analisi degli utenti
 
@@ -189,7 +227,9 @@ Ad esempio, nell'immagine seguente, l'aria ha identificato indicatori di comprom
 ![Pagina utenti di analisi AEREa](../../media/air-investigationuserspage.png)
 
 È possibile:
+
 - Ottenere una panoramica visiva dei risultati e dei rischi individuati dall'utente.
+
 - Selezionare un utente per l'apertura di una pagina di fly-out che Visualizza i dettagli degli avvisi completi.
 
 ### <a name="machine-investigation"></a>Indagine del computer
@@ -204,7 +244,8 @@ Come parte di alcuni PlayBook, AIR correla le minacce alla posta elettronica ai 
 È possibile:
 
 - Ottenere una panoramica visiva dei computer e delle minacce correnti trovati.
-- Selezionare un computer per aprire una visualizzazione che si riferisce alle [indagini Microsoft Defender per endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations) in Microsoft Defender Security Center.
+
+-  Selezionare un computer per aprire una visualizzazione che si riferisce alle [indagini Microsoft Defender per endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations) in Microsoft Defender Security Center.
 
 ### <a name="entity-investigation"></a>Indagine su entità
 
@@ -215,7 +256,9 @@ In questa sezione, è possibile visualizzare le entità indagate e i dettagli de
 ![Pagina delle entità di indagine AEREa](../../media/air-investigationentitiespage.png)
 
 È possibile:
+
 - Ottenere una panoramica visiva delle entità investigative e delle minacce trovate.
+
 - Selezionare un'entità per aprire una pagina di fly-out che Visualizza i dettagli dell'entità correlata.
 
 ![Dettagli sulle entità di indagine AEREa](../../media/air-investigationsentitiespagedetails.png)
@@ -229,50 +272,36 @@ Nella scheda **log** , è possibile visualizzare tutti i passaggi del PlayBook c
 È possibile:
 
 - Ottenere una panoramica visiva dei passaggi di PlayBook eseguiti.
+
 - Esportare i risultati in un file CSV.
 - Filtrare la visualizzazione.
 
-****
-
-|Dell'analizzatore dell'| Descrizione|
-|---|---|
-|Indagini sulle violazioni DLP|Esaminare eventuali violazioni rilevate dalla [prevenzione della perdita di dati](../../compliance/data-loss-prevention-policies.md) (DLP)|
-|Estrazione degli indicatori di posta elettronica|Estrarre indicatori dall'intestazione, dal corpo e dal contenuto di un messaggio di posta elettronica per l'analisi|
-|Reputazione hash file|Rilevare anomalie in base agli hash dei file per gli utenti e i computer dell'organizzazione|
-|Identificazione del cluster di posta|Analisi del cluster di posta elettronica basata su intestazione, corpo, contenuto, file e URL|
-|Analisi del volume del cluster di posta|Analisi del cluster di posta elettronica basata su modelli di volume del flusso di posta in uscita|
-|Indagine sulla delega della posta|Esaminare l'accesso alla delega della posta per le cassette postali degli utenti correlate all'analisi|
-|Analisi delle regole di inoltro della posta|Esaminare le regole di inoltro della posta per le cassette postali degli utenti relative a questa indagine|
-|Rilevato malware rilevati|Rilevare la presenza di malware mancante recapitato alla cassetta postale dell'utente nell'organizzazione|
-|Detonazione su richiesta|Detonazione su richiesta attivata per i messaggi di posta elettronica, gli allegati e gli URL|
-|Indagine sull'anomalia della posta in uscita|Rilevare anomalie basate su modelli di invio di flussi di posta cronologici per gli utenti dell'organizzazione|
-|Indagine su malware e posta indesiderata in uscita|Rilevare malware, phishing o posta indesiderata intra-org e in uscita provenienti da utenti dell'organizzazione|
-|Indagine sul dominio del mittente|Controllo su richiesta della reputazione del dominio da [Microsoft Intelligent Security Graph](https://www.microsoft.com/security/operations/intelligence) e fonti di intelligence per le minacce esterne|
-|Indagine IP del mittente| Controllo su richiesta della reputazione IP dal [grafico Microsoft Intelligent Security Graph](https://www.microsoft.com/security/operations/intelligence) e dalle fonti di intelligence per le minacce esterne|
-|Indagine clic URL| Esaminare gli scatti degli utenti protetti da [collegamenti sicuri in Microsoft Defender per Office 365](atp-safe-links.md) nell'organizzazione|
-|Indagine sulla reputazione URL|Verifica su richiesta sulla reputazione URL del grafico di [sicurezza intelligente di Microsoft](https://www.microsoft.com/security/operations/intelligence) e delle origini di intelligence per le minacce esterne|
-|Indagine sulle attività degli utenti|Analisi delle anomalie delle attività degli utenti in [Microsoft cloud app Security](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security)|
-|Estrazione degli indicatori di messaggi di posta elettronica segnalati dall'utente|Estrarre indicatori dall'intestazione, dal corpo e dal contenuto della [posta elettronica segnalata dall'utente](enable-the-report-message-add-in.md) per l'analisi|
-|
-
 ### <a name="recommended-actions"></a>Azioni consigliate
 
-Nella scheda **azioni** , è possibile visualizzare tutte le azioni di PlayBook consigliate per la correzione dopo il completamento dell'indagine.
+Nella scheda **azioni** , è possibile visualizzare tutte le azioni di PlayBook consigliate per la correzione dopo il completamento dell'indagine. Azioni acquisire i passaggi consigliati da Microsoft al termine di un'indagine. È possibile eseguire le azioni di correzione selezionando una o più azioni. 
 
-Azioni acquisire i passaggi consigliati da Microsoft al termine di un'indagine. È possibile eseguire le azioni di correzione selezionando una o più azioni. Se si fa clic su **approva** è possibile iniziare la correzione. (Sono necessarie autorizzazioni appropriate: il ruolo ' Search and Purge ' è necessario per eseguire azioni da Explorer e AIR). Ad esempio, un lettore di sicurezza è in grado di visualizzare le azioni, ma non di approvarle. Nota: non è necessario approvare ogni azione. Se non si è d'accordo con l'azione consigliata o l'organizzazione non sceglie alcuni tipi di azioni, è possibile scegliere di **rifiutare** le azioni o semplicemente ignorarle e non intraprendere alcuna azione. L'approvazione e/o il rifiuto di tutte le azioni consente di chiudere completamente l'indagine (lo stato viene ripristinato), lasciando inalterate alcune azioni allo stato dell'inchiesta che cambia in uno stato parzialmente rimediato.
+Selezionando **approva** è possibile iniziare la correzione. (Sono necessarie autorizzazioni appropriate: il ruolo di **ricerca ed eliminazione** è necessario per eseguire azioni da Esplora risorse e dall'aria). 
+
+Ad esempio, un lettore di sicurezza è in grado di visualizzare le azioni, ma non di approvarle. 
+
+> [!IMPORTANT]
+> Non è necessario approvare ogni azione. Se non si è d'accordo con l'azione consigliata o l'organizzazione non sceglie alcuni tipi di azioni, è possibile scegliere di **rifiutare** le azioni o semplicemente ignorarle e non intraprendere alcuna azione. L'approvazione e/o il rifiuto di tutte le azioni consente di chiudere completamente l'indagine (lo stato viene ripristinato), lasciando inalterate alcune azioni allo stato dell'inchiesta che cambia in uno stato parzialmente rimediato.
 
 ![Pagina azione indagini AEREe](../../media/air-investigationactionspage.png)
 
 È possibile:
 
 - Ottenere una panoramica visiva delle azioni consigliate in PlayBook.
+
 - Selezionare una singola azione o più azioni.
+
 - Approvare o rifiutare le azioni consigliate con i commenti.
+
 - Esportare i risultati in un file CSV.
+
 - Filtrare la visualizzazione.
 
 ## <a name="next-steps"></a>Passaggi successivi
 
 - [Esaminare e approvare le azioni in sospeso](air-review-approve-pending-completed-actions.md#approve-or-reject-pending-actions)
 
-- [Informazioni su indagini e risposte automatizzate in Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-autoir)

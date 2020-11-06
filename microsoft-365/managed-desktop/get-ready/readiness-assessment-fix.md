@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: a6dec9473ee632b74bb79e50156cedff53a3cba3
-ms.sourcegitcommit: fa26da0be667d4be0121c52b05488dc76c5d626c
+ms.openlocfilehash: c28353698dd372e14d5ec51b92eb4c0c051c92a4
+ms.sourcegitcommit: 24826e1b61e7aace12fc9e8ae84ae3e760658b50
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "48795118"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "48931913"
 ---
 # <a name="fix-issues-found-by-the-readiness-assessment-tool"></a>Risolvere i problemi rilevati dallo strumento di valutazione della conformità
 
@@ -127,7 +127,7 @@ La pagina stato di registrazione (ESP) è attualmente abilitata. Se si partecipa
 
 **Non pronto**
 
-Si dispone del set di profili ESP predefinito per **visualizzare lo stato di avanzamento della configurazione dei profili e delle app** . Disabilitare questa impostazione attenendosi alla procedura descritta in [impostare la pagina stato di registrazione](https://docs.microsoft.com/mem/intune/enrollment/windows-enrollment-status).
+Si dispone del set di profili ESP predefinito per **visualizzare lo stato di avanzamento della configurazione dei profili e delle app**. Disabilitare questa impostazione o verificare che le assegnazioni a un gruppo di Azure AD non includano i dispositivi Microsoft Managed Desktop attenendosi alla procedura descritta in [set up the registration status page](https://docs.microsoft.com/mem/intune/enrollment/windows-enrollment-status).
 
 **Consulenza**
 
@@ -137,9 +137,9 @@ Verificare che i profili con l'impostazione **Mostra avanzamento configurazione 
 
 I dispositivi Windows 10 nell'organizzazione di Azure AD devono essere registrati automaticamente in Intune.
 
-**Non pronto**
+**Consulenza**
 
-Gli utenti dell'organizzazione di Azure AD non vengono automaticamente registrati in Microsoft Intune. Impostare l'ambito dell'utente MDM su **alcuni** o su **tutti** . Se si sceglie **alcuni** , tornare dopo la registrazione e selezionare la **moderna area di lavoro-tutto** il gruppo di Azure ad per i **gruppi** .
+Verificare che l'ambito dell'utente MDM sia impostato su **alcuni** o su **tutti** , non su **None**. Se si sceglie **alcuni** , tornare dopo la registrazione e selezionare la **moderna area di lavoro-tutto** il gruppo di Azure ad per i **gruppi**.
 
 
 ### <a name="microsoft-store-for-business"></a>Microsoft Store per le aziende
@@ -180,7 +180,7 @@ Gli script di Windows PowerShell non possono essere assegnati in modo da indiriz
 
 **Consulenza**
 
-Assicurarsi che gli script di Windows PowerShell nell'organizzazione Azure AD non vengano indirizzati a qualsiasi dispositivo o utente di Microsoft Manage desktop. Per ulteriori informazioni, vedere [utilizzare gli script di PowerShell nei dispositivi Windows 10 in Intune](https://docs.microsoft.com/mem/intune/apps/intune-management-extension).
+Assicurarsi che gli script di Windows PowerShell nell'organizzazione Azure AD non vengano indirizzati a qualsiasi dispositivo o utente di Microsoft Manage desktop. Non assegnare uno script di PowerShell per indirizzare tutti gli utenti, tutti i dispositivi o entrambi. Modificare il criterio per l'utilizzo di un'assegnazione che è destinata a un gruppo di Azure AD specifico che non include alcun dispositivo desktop Microsoft gestito. Per ulteriori informazioni, vedere [utilizzare gli script di PowerShell nei dispositivi Windows 10 in Intune](https://docs.microsoft.com/mem/intune/apps/intune-management-extension).
 
 ### <a name="region"></a>Area geografica
 
@@ -254,7 +254,7 @@ Si consiglia come controllare un'impostazione che, se impostata su "false", potr
 
 **Consulenza**
 
-Verificare che **AllowAdHocSubscriptions** sia impostato su **true** . In caso contrario, il roaming dello stato dell'organizzazione potrebbe non funzionare. Per ulteriori informazioni, vedere [Set-MsolCompanySettings](https://docs.microsoft.com/powershell/module/msonline/set-msolcompanysettings?view=azureadps-1.0).
+Verificare che **AllowAdHocSubscriptions** sia impostato su **true**. In caso contrario, il roaming dello stato dell'organizzazione potrebbe non funzionare. Per ulteriori informazioni, vedere [Set-MsolCompanySettings](https://docs.microsoft.com/powershell/module/msonline/set-msolcompanysettings?view=azureadps-1.0).
 
 
 ### <a name="enterprise-state-roaming"></a>Enterprise State Roaming
@@ -308,19 +308,11 @@ Sono state attivate le impostazioni predefinite per la sicurezza. Disattivare le
 
 ### <a name="self-service-password-reset"></a>Reimpostazione della password in modalità self-service
 
-È necessario abilitare la reimpostazione della password in modalità self-service (SSPR).
-
-**Non pronto**
-
-SSPR deve essere abilitato per tutti gli utenti. In caso contrario, gli account di servizio di Microsoft Managed Desktop non possono funzionare. Per ulteriori informazioni, vedere [esercitazione: consentire agli utenti di sbloccare l'account o reimpostare le password tramite la reimpostazione della password self-service di Azure Active Directory](https://docs.microsoft.com/azure/active-directory/authentication/tutorial-enable-sspr).
+La reimpostazione della password in modalità self-service (SSPR) deve essere abilitata per tutti gli utenti. In caso contrario, gli account di servizio di Microsoft Managed Desktop non possono funzionare. Per ulteriori informazioni, vedere [esercitazione: consentire agli utenti di sbloccare l'account o reimpostare le password tramite la reimpostazione della password self-service di Azure Active Directory](https://docs.microsoft.com/azure/active-directory/authentication/tutorial-enable-sspr).
 
 **Consulenza**
 
 Verificare che l'impostazione SSPR **Selected** includa dispositivi Microsoft Managed Desktop.
-
-**Errore**
-
-Il ruolo amministratore di Intune non dispone di autorizzazioni sufficienti per questo controllo. Per eseguire il controllo, è necessario anche il ruolo di Azure AD di Reader di report assegnato.
 
 
 ### <a name="standard-user-role"></a>Ruolo utente standard
