@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 4ca7654482251d86c44a3956c71f704a0cc3f2d4
-ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
+ms.openlocfilehash: 042555cfcbe231f370c07ee3887e6b7f6b3701b8
+ms.sourcegitcommit: 751dc531f0410ee075c179efe409a01664483ee2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48208618"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48925593"
 ---
 # <a name="criminal-justice-information-services-cjis-security-policy"></a>Criteri di sicurezza per i servizi di CJIS (Criminal Justice Information Services)
 
@@ -43,7 +43,7 @@ Informazioni sui vantaggi dei criteri di sicurezza di CJIS nel cloud Microsoft: 
 
 Informazioni su come accelerare i criteri di sicurezza di CJIS con il modello di sicurezza e conformità di Azure: [scaricare le linee guida per l'implementazione di CJIS per i servizi cloud di Microsoft Government](https://gallery.technet.microsoft.com/CJIS-Implementation-62af7c27)
 
-## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud Microsoft in ambito
+## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud Microsoft inclusi
 
 - [Amministrazione di Azure](https://aka.ms/AzureCompliance)
 - [Governo degli Stati Uniti Dynamics 365](https://aka.ms/d365-compliance-list)
@@ -56,11 +56,11 @@ L'FBI non offre la certificazione della conformità di Microsoft ai requisiti di
 
 [Requisiti cloud di Microsoft CJIS](https://aka.ms/MicrosoftCJISCloudRequirements)
 
-## <a name="cjis-status-in-the-united-states-current-as-of-9232019"></a>Stato CJIS negli Stati Uniti (corrente di 9/23/2019)
+## <a name="cjis-status-in-the-united-states-current-as-of-1152020"></a>Stato CJIS negli Stati Uniti (corrente di 11/5/2020)
 
-37 gli Stati e il distretto di Columbia con i contratti di gestione, evidenziati sulla mappa in verde includono:
+44 gli Stati e il distretto di Columbia con i contratti di gestione, evidenziati sulla mappa in verde includono:
 
-Alabama, Alaska, Arkansas, Arizona, California, Colorado, Florida, Georgia, Hawaii, Illinois, indiana, Iowa, Kansas, Kentucky, Maine, Massachusetts, Michigan, Minnesota, Missouri, Montana, New Jersey, New York, Nevada, North Carolina, Oklahoma, Oregon, Pennsylvania, Rhode Island, Carolina del sud, Tennessee, Texas, Utah, Vermont, Virginia, Washington, Washington D.C., West Virginia, Wisconsin.
+Alabama, Alaska, Arizona, Arkansas, California, Colorado, Connecticut, Florida, Georgia, Hawaii, Idaho, Illinois, indiana, Iowa, Kansas, Kentucky, Maine, Massachusetts, Michigan, Minnesota, Mississippi, Missouri, Montana, Nebraska, Nevada, New Hampshire, New Jersey, New York, North Carolina, North Dakota, Oklahoma, Oregon, Pennsylvania, Rhode Island, Carolina del sud, Tennessee, Texas, Utah, Vermont, Virginia, Washington, West Virginia, Wisconsin e distretto di Columbia
 
 L'impegno di Microsoft per soddisfare i controlli normativi applicabili di CJIS consente alle organizzazioni di giustizia penale di implementare soluzioni basate sul cloud ed essere conformi ai criteri di sicurezza di CJIS V 5.8.
 
@@ -78,15 +78,15 @@ Microsoft firma un contratto informativo con uno stato CJIS Systems Agency (CSA)
 
 I [criteri di sicurezza di CJIS](https://aka.ms/cjis-security-policy) riguardano le precauzioni che l'Agenzia deve intraprendere per proteggere CJI. Inoltre, il rappresentante dell'account Microsoft può mettere in contatto con coloro che hanno familiarità con i requisiti della propria giurisdizione
 
-## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>Utilizzo di Microsoft Compliance Manager per valutare i rischi
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>Usare Microsoft Compliance Manager per valutare i rischi
 
-[Microsoft Compliance Manager](compliance-manager.md) è una funzionalità del [centro conformità di Microsoft 365](microsoft-365-compliance-center.md) che consente di comprendere la posizione di conformità dell'organizzazione e di intraprendere azioni per contribuire alla riduzione dei rischi. Compliance Manager offre un modello Premium per la creazione di una valutazione per questo regolamento. Individuare il modello nella pagina **modelli di valutazione** in Compliance Manager. Informazioni su come [creare valutazioni in Compliance Manager](compliance-manager-assessments.md).
+[Microsoft Compliance Manager](compliance-manager.md) è una funzionalità nel [Centro conformità Microsoft 365](microsoft-365-compliance-center.md) utile per comprendere lo stato di conformità dell'organizzazione e intraprendere azioni per ridurre i rischi. Compliance Manager offre un modello premium per creare una valutazione per questa normativa. Individuare il modello nella pagina **modelli di valutazioni** in Compliance Manager. Informazioni su come [creare valutazioni in Compliance Manager](compliance-manager-assessments.md).
 
 ## <a name="resources"></a>Risorse
 
 - [Servizi di informazione sulla giustizia penale](https://aka.ms/cjis)
 - [Criteri di sicurezza di CJIS](https://aka.ms/cjis-security-policy)
 - [Linee guida per l'implementazione di CJIS per Azure Government](https://aka.ms/cjisimplementationguidelines)
-- [Hub dei controlli comuni del framework di conformità Microsoft](https://www.microsoft.com/trustcenter/common-controls-hub)
+- [Framework di conformità dell'hub dei controlli comuni di Microsoft](https://www.microsoft.com/trustcenter/common-controls-hub)
 - [Cloud Microsoft per enti pubblici](https://go.microsoft.com/fwlink/?linkid=2087246)
-- [Conformità nel Centro protezione di Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Conformità in Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)

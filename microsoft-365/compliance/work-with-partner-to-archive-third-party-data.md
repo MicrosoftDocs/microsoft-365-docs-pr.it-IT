@@ -16,17 +16,20 @@ ms.collection: M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
 description: Informazioni su come configurare un connettore personalizzato per l'importazione di dati di terze parti da origini dati quali Salesforce Chatter, Yahoo Messenger o Yammer.
-ms.openlocfilehash: c3b824909ae1243e2dd1f12b799e53d00d9615ca
-ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
+ms.openlocfilehash: 97e36566c3dcc9b069a39eb50e203cda971ba3c2
+ms.sourcegitcommit: 24826e1b61e7aace12fc9e8ae84ae3e760658b50
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45126655"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "48931948"
 ---
 # <a name="work-with-a-partner-to-archive-third-party-data"></a>Collaborare con un partner per archiviare i dati di terze parti
 
-È possibile collaborare con un partner Microsoft per importare e archiviare i dati da un'origine dati di terze parti a Microsoft 365. Un partner può fornire un connettore personalizzato configurato per estrarre elementi dall'origine dati di terze parti (su base regolare) e quindi importare tali elementi. Il connettore partner converte il contenuto di un elemento dall'origine dati in un formato di messaggio di posta elettronica e quindi archivia gli elementi nelle cassette postali. Dopo l'importazione di dati di terze parti, è possibile applicare le funzionalità di conformità di Microsoft 365, ad esempio il blocco per controversia legale, la ricerca del contenuto, l'archiviazione sul posto, il controllo e i criteri di conservazione di Microsoft 365 a questi dati.
-  
+È possibile collaborare con un partner Microsoft per importare e archiviare i dati da un'origine dati di terze parti a Microsoft 365. Un partner può fornire un connettore personalizzato configurato per estrarre elementi dall'origine dati di terze parti (su base regolare) e quindi importare tali elementi. Il connettore partner converte il contenuto di un elemento dall'origine dati in un formato di messaggio di posta elettronica e quindi archivia gli elementi nelle cassette postali. Dopo aver importato i dati di terze parti, è possibile applicare le funzionalità di conformità di Microsoft 365, ad esempio conservazione per controversia legale, eDiscovery, In-Place archiviazione, controllo e Microsoft 365 per questi dati.
+ 
+>[!IMPORTANT]
+>La soluzione di [conformità alla comunicazione](communication-compliance.md) in Microsoft 365 non può essere applicata ai dati di terze parti importati dai connettori partner menzionati in questo articolo. 
+ 
 Di seguito è riportata una panoramica del processo e dei passaggi necessari per l'utilizzo di un partner Microsoft per l'importazione di dati di terze parti.
 
 [Step 1: Find a third-party data partner](#step-1-find-a-third-party-data-partner)
@@ -121,7 +124,7 @@ Nelle sezioni seguenti vengono elencati i partner Microsoft e le origini dati di
   
 ### <a name="archivesocial"></a>ArchiveSocial
 
-[ArchiveSocial](https://www.archivesocial.com) supporta le origini dati di terze parti seguenti: 
+[ArchiveSocial ](https://www.archivesocial.com) supporta le origini dati di terze parti seguenti: 
   
 - Facebook
     
@@ -205,7 +208,7 @@ Nelle sezioni seguenti vengono elencati i partner Microsoft e le origini dati di
     
 - Slack Enterprise Grid
     
-- Sinfonia
+- Symphony
     
 - Thomson Reuters Eikon
     
@@ -377,7 +380,7 @@ Nelle sezioni seguenti vengono elencati i partner Microsoft e le origini dati di
     
 - SoftEther
     
-- Sinfonia
+- Symphony
     
 - Thomson Reuters Eikon
     
@@ -499,7 +502,7 @@ Di seguito sono riportati i passaggi per la creazione e la configurazione di una
     
       - [Applicare un blocco per controversia legale a una cassetta postale](https://go.microsoft.com/fwlink/p/?LinkId=404420)
     
-      - [Informazioni sui criteri di conservazione e sulle etichette di conservazione](retention.md)
+      - [Informazioni sui criteri e sulle etichette di conservazione](retention.md)
     
     - Abilitare la registrazione di controllo delle cassette postali per l'accesso proprietario, delegato e amministratore alla cassetta postale dei dati di terze parti; vedere [abilitare il controllo delle cassette postali](enable-mailbox-auditing.md). In questo modo è possibile controllare tutte le attività eseguite da qualsiasi utente che abbia accesso alla cassetta postale di dati di terze parti.
 
@@ -513,7 +516,7 @@ Il passaggio successivo consiste nel configurare cassette postali degli utenti p
     
     - [Applicare un blocco per controversia legale a una cassetta postale](https://go.microsoft.com/fwlink/p/?LinkId=404420)
     
-    - [Informazioni sui criteri di conservazione e sulle etichette di conservazione](retention.md)
+    - [Informazioni sui criteri e sulle etichette di conservazione](retention.md)
     
     Come precedentemente illustrato, quando si abilita un blocco delle cassette postali, è possibile impostare una durata per definire quanto tempo devono essere conservati gli elementi dell'origine dati di terze parti oppure è possibile scegliere di conservare gli elementi per un periodo di tempo indeterminato.
 
@@ -533,7 +536,7 @@ Il passaggio finale consiste nel fornire al partner le seguenti informazioni in 
 
 A partire da settembre 30, 2018, il servizio di Azure in Office 365 inizierà a utilizzare l'autenticazione moderna in Exchange Online per autenticare i connettori di dati di terze parti che tentano di connettersi alla propria organizzazione per importare i dati. La causa di questa modifica consiste nel fatto che l'autenticazione moderna fornisce una maggiore sicurezza rispetto al metodo corrente, basato su un elenco Consenti per i connettori di terze parti che utilizzano l'endpoint descritto in precedenza per la connessione al servizio Azure.
 
-Per abilitare un connettore di dati di terze parti per la connessione a Office 365 utilizzando il nuovo metodo di autenticazione moderno, un amministratore dell'organizzazione deve acconsentire a registrare il connettore come applicazione di servizio attendibile in Azure Active Directory. Per eseguire questa operazione, è necessario accettare una richiesta di autorizzazione per consentire al connettore di accedere ai dati dell'organizzazione in Azure Active Directory. Dopo aver accettato la richiesta, il connettore di dati di terze parti viene aggiunto come applicazione Enterprise ad Azure Active Directory e rappresentato come entità di servizio. Per ulteriori informazioni sul processo di consenso, vedere [tenant admin consenso](https://docs.microsoft.com/skype-sdk/trusted-application-api/docs/tenantadminconsent).
+Per abilitare un connettore di dati di terze parti per la connessione a Office 365 utilizzando il nuovo metodo di autenticazione moderno, un amministratore dell'organizzazione deve acconsentire a registrare il connettore come applicazione di servizio attendibile in Azure Active Directory. Per eseguire questa operazione, è necessario accettare una richiesta di autorizzazione per consentire al connettore di accedere ai dati dell'organizzazione in Azure Active Directory. Dopo aver accettato la richiesta, il connettore di dati di terze parti viene aggiunto come applicazione Enterprise ad Azure Active Directory e rappresentato come entità di servizio. Per ulteriori informazioni sul processo di consenso, vedere  [tenant admin consenso](https://docs.microsoft.com/skype-sdk/trusted-application-api/docs/tenantadminconsent).
 
 Di seguito sono riportati i passaggi per accedere e accettare la richiesta di registrazione del connettore:
 
@@ -568,9 +571,9 @@ Per revocare il consenso per un connettore di dati di terze parti, è possibile 
     |**Data** <br/> |Sì  <br/> |La data in cui l'elemento è stato originariamente creato o pubblicato nell'origine dati del cliente. Ad esempio, la data in cui un messaggio Twitter è stato tweeted.  <br/> | `01 NOV 2015` <br/> |
     |**CORPO** <br/> |No  <br/> |Il contenuto del messaggio o del post. Per alcune origini dati, il contenuto di questa proprietà può corrispondere al contenuto della proprietà **SUBJECT**. Durante il processo di importazione, il connettore del partner tenta di mantenere la fedeltà completa dall'origine di contenuto il più possibile. Se possibile, i file, gli elementi grafici o altri contenuti del corpo dell'elemento di origine sono inclusi in questa proprietà. In caso contrario, il contenuto dell'elemento di origine è incluso nella proprietà **ATTACHMENT**. I contenuti di questa proprietà dipendono dal connettore del partner e dalla funzionalità della piattaforma di origine.  <br/> | `Author: bob@contoso.com` <br/>  `Date: 10 DEC 2014` <br/>  `Tweet: "Mega deals with Contoso coming your way! #ContosoHolidayDeals"` <br/>  `Date: 01 NOV 2015` <br/> |
     |**ALLEGATO** <br/> |No  <br/> |Se un elemento nell'origine dati, ad esempio un tweet in Twitter o una conversazione di messaggistica istantanea, ha un file allegato o include immagini, la connessione del partner tenterà innanzitutto di includere gli allegati nella proprietà **Body** . Se non è possibile, allora viene aggiunto alla proprietà * * ATTACHMENT * *. Altri esempi di allegati sono i Like su Facebook, i metadati dell'origine del contenuto e le risposte a un messaggio o a un post.  <br/> | `image.gif` <br/> |
-    |**MESSAGECLASS** <br/> |Sì  <br/> | Si tratta di una proprietà multivalore, che viene creata e compilata dal connettore partner. Il formato di questa proprietà è `IPM.NOTE.Source.Event` . Questa proprietà deve iniziare con `IPM.NOTE` . Questo formato è simile a quello della `IPM.NOTE.X` classe Message. Questa proprietà include le informazioni seguenti:  <br/><br/>`Source`: Indica l'origine dati di terze parti; ad esempio, Twitter, Facebook o BlackBerry.  <br/> <br/>  `Event`: Indica il tipo di attività eseguita nell'origine dati di terze parti che ha prodotto gli elementi; ad esempio, un tweet in Twitter o un post in Facebook. Gli eventi sono specifici per l'origine dati.  <br/> <br/>  Uno scopo di questa proprietà risiede nel filtrare gli elementi specifici in base all'origine dati in cui un elemento ha avuto origine o in base al tipo di evento. In una ricerca eDiscovery, ad esempio, è possibile creare una query di ricerca per trovare tutti i tweet pubblicati da un utente specifico.  <br/> | `IPM.NOTE.Twitter.Tweet` <br/> |
+    |**MESSAGECLASS** <br/> |Sì  <br/> | Si tratta di una proprietà multivalore, che viene creata e compilata dal connettore partner. Il formato di questa proprietà è  `IPM.NOTE.Source.Event` . Questa proprietà deve iniziare con  `IPM.NOTE` . Questo formato è simile a quello della  `IPM.NOTE.X` classe Message. Questa proprietà include le informazioni seguenti:  <br/><br/>`Source`: Indica l'origine dati di terze parti; ad esempio, Twitter, Facebook o BlackBerry.  <br/> <br/>  `Event`: Indica il tipo di attività eseguita nell'origine dati di terze parti che ha prodotto gli elementi; ad esempio, un tweet in Twitter o un post in Facebook. Gli eventi sono specifici per l'origine dati.  <br/> <br/>  Uno scopo di questa proprietà risiede nel filtrare gli elementi specifici in base all'origine dati in cui un elemento ha avuto origine o in base al tipo di evento. In una ricerca eDiscovery, ad esempio, è possibile creare una query di ricerca per trovare tutti i tweet pubblicati da un utente specifico.  <br/> | `IPM.NOTE.Twitter.Tweet` <br/> |
    
-- Quando gli elementi vengono importati correttamente nelle cassette postali di Office 365, viene restituito un identificatore univoco al chiamante come parte della risposta HTTP. Questo identificatore, denominato `x-IngestionCorrelationID` , può essere utilizzato per la risoluzione dei problemi successivi da parte di partner per il monitoraggio end-to-end degli elementi. Si consiglia di raccogliere queste informazioni e registrarle nel modo più appropriato. Di seguito è riportato un esempio di una risposta HTTP che mostra l'identificatore:
+- Quando gli elementi vengono importati correttamente nelle cassette postali di Office 365, viene restituito un identificatore univoco al chiamante come parte della risposta HTTP. Questo identificatore, denominato  `x-IngestionCorrelationID` , può essere utilizzato per la risoluzione dei problemi successivi da parte di partner per il monitoraggio end-to-end degli elementi. Si consiglia di raccogliere queste informazioni e registrarle nel modo più appropriato. Di seguito è riportato un esempio di una risposta HTTP che mostra l'identificatore:
 
     ```http
     HTTP/1.1 200 OK
@@ -584,11 +587,11 @@ Per revocare il consenso per un connettore di dati di terze parti, è possibile 
 
 - È possibile utilizzare lo strumento di ricerca contenuto nel centro sicurezza e conformità per cercare gli elementi importati nelle cassette postali da un'origine dati di terze parti. Per eseguire la ricerca in modo specifico per questi elementi importati, è possibile utilizzare le seguenti coppie proprietà-valore del messaggio nella casella parola chiave per una ricerca contenuto.
     
-  - **`kind:externaldata`**: Utilizzare questa coppia proprietà-valore per eseguire la ricerca in tutti i tipi di dati di terze parti. Ad esempio, per cercare gli elementi importati da un'origine dati di terze parti e contenere la parola "contoso" nella proprietà Subject dell'elemento importato, è necessario utilizzare la query di parole chiave `kind:externaldata AND subject:contoso` .
+  - **`kind:externaldata`** : Utilizzare questa coppia proprietà-valore per eseguire la ricerca in tutti i tipi di dati di terze parti. Ad esempio, per cercare gli elementi importati da un'origine dati di terze parti e contenere la parola "contoso" nella proprietà Subject dell'elemento importato, è necessario utilizzare la query di parole chiave  `kind:externaldata AND subject:contoso` .
     
-  - **`itemclass:ipm.externaldata.<third-party data type>`**: Utilizzare questa coppia proprietà-valore per cercare solo un tipo di dati di terze parti. Ad esempio, per cercare solo i dati di Facebook che contengono la parola "contoso" nella proprietà Subject, è necessario utilizzare la query di parole chiave `itemclass:ipm.externaldata.Facebook* AND subject:contoso` . 
+  - **`itemclass:ipm.externaldata.<third-party data type>`** : Utilizzare questa coppia proprietà-valore per cercare solo un tipo di dati di terze parti. Ad esempio, per cercare solo i dati di Facebook che contengono la parola "contoso" nella proprietà Subject, è necessario utilizzare la query di parole chiave  `itemclass:ipm.externaldata.Facebook* AND subject:contoso` . 
 
-  Per un elenco completo dei valori da utilizzare per i tipi di dati di terze parti per la `itemclass` proprietà, vedere [utilizzare Ricerca contenuto per cercare i dati di terze parti che sono stati importati in Office 365](use-content-search-to-search-third-party-data-that-was-imported.md).
+  Per un elenco completo dei valori da utilizzare per i tipi di dati di terze parti per la  `itemclass` proprietà, vedere [utilizzare Ricerca contenuto per cercare i dati di terze parti che sono stati importati in Office 365](use-content-search-to-search-third-party-data-that-was-imported.md).
     
    Per ulteriori informazioni sull'utilizzo di Ricerca contenuto e sulla creazione di query di ricerca con parole chiave, vedere:
     
