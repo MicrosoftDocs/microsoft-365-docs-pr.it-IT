@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Informazioni sui criteri di conservazione e sulle etichette di conservazione, utili per conservare tutto che serve ed eliminare ciò che non serve.
-ms.openlocfilehash: 50bbe9d80b7b0a1b9fa346fd6e5abc8971dadcfb
-ms.sourcegitcommit: d578b28ed1886abd083b01b93f01b354067e6d47
+ms.openlocfilehash: 0dfccef331c279354f066ebffa80143d43192472
+ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "48804759"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48920526"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>Informazioni sui criteri e sulle etichette di conservazione
 
@@ -55,11 +55,11 @@ Queste impostazioni di conservazione funzionano con il contenuto in locale, cons
 
 ## <a name="how-retention-settings-work-with-content-in-place"></a>Funzionamento delle impostazioni di conservazione con i contenuti in locale
 
-Quando al contenuto è assegnata un'impostazione di conservazione, rimane nella posizione originale. Gli utenti possono continuare a lavorare normalmente con i propri documenti o messaggi di posta elettronica. Tuttavia, se modificano o eliminano contenuto incluso nel criterio di conservazione, verrà conservata una copia del contenuto nello stato in cui si trovava al momento dell'applicazione delle impostazioni di conservazione.
+Quando al contenuto è assegnata un'impostazione di conservazione, rimane nella posizione originale. Gli utenti possono continuare a lavorare normalmente con i propri documenti o messaggi di posta elettronica. Tuttavia, se modificano o eliminano il contenuto incluso nel criterio di conservazione, verrà conservata automaticamente una copia del contenuto.
   
-- Per i siti di SharePoint e OneDrive, la copia viene conservata nella **raccolta di archiviazione** .
+- Per i siti di SharePoint e OneDrive, la copia viene conservata nella **raccolta di archiviazione**.
 
-- Per le cassette postali di Exchange, la copia viene conservata nella cartella **Elementi ripristinabili** . 
+- Per le cassette postali di Exchange, la copia viene conservata nella cartella **Elementi ripristinabili**. 
 
 - Per i messaggi di Teams e Yammer, la copia viene conservata in una cartella nascosta denominata **SubstrateHolds** all'interno della cartella **Elementi ripristinabili** di Exchange.
 
@@ -77,13 +77,13 @@ Per informazioni più dettagliate sul funzionamento delle impostazioni di conser
 
 ## <a name="retention-policies-and-retention-labels"></a>Criteri di conservazione ed etichette di conservazione.
 
-Per assegnare impostazioni di conservazione al contenuto è possibile usare sia criteri di conservazione che etichette di conservazione. 
+Per assegnare impostazioni di conservazione al contenuto è possibile usare sia criteri di conservazione che etichette di conservazione con i criteri delle etichette. 
 
 Usare un criterio di conservazione per assegnare le stesse impostazioni di conservazione per il contenuto a livello di sito o cassetta postale e usare un'etichetta di conservazione per assegnare impostazioni di conservazione a livello di elemento (cartelle, documenti o messaggi di posta elettronica).
 
 Ad esempio, se tutti i documenti in un sito di SharePoint devono essere conservati per 5 anni, è più efficiente farlo con un criterio di conservazione anziché applicare la stessa etichetta di conservazione a tutti i documenti del sito. Tuttavia, se alcuni documenti di quel sito devono essere conservati per 5 anni e altri per 10 anni, un criterio di conservazione potrebbe non essere adatto. Quando è necessario specificare impostazioni di conservazione a livello di elemento, usare le etichette di conservazione. 
 
-Diversamente dai criteri di conservazione, le impostazioni di conservazione delle etichette di conservazione restano associate al contenuto se questo viene copiato o spostato in una posizione diversa di Microsoft 365. Inoltre, le etichette di conservazione hanno le funzionalità seguenti, che i criteri di conservazione non supportano: 
+Diversamente dai criteri di conservazione, le impostazioni di conservazione delle etichette di conservazione vengono trasferite con il contenuto se questo viene copiato o spostato in una posizione diversa all'interno del tenant di Microsoft 365. Inoltre, le etichette di conservazione hanno le funzionalità seguenti, che i criteri di conservazione non supportano: 
  
 - Opzioni per iniziare il periodo di conservazione dal momento in cui il contenuto è stato etichettato o in base a un evento, oltre che in base all'età o alla data di ultima modifica.
 
@@ -110,38 +110,8 @@ Diversamente dai criteri di conservazione, le impostazioni di conservazione dell
 - Messaggi privati di Yammer
 
 È possibile applicare in modo efficiente un singolo criterio a più posizioni oppure a posizioni o utenti specifici.
-    
-Si può anche applicare un criterio a tutto il contenuto o al contenuto che soddisfa specifiche condizioni, ad esempio che contiene parole chiave o [tipi di informazioni sensibili](sensitive-information-type-entity-definitions.md).
 
-#### <a name="use-preservation-lock-to-comply-with-regulatory-requirements"></a>Usare la protezione dell'archiviazione per la conformità ai requisiti normativi
-
-Per alcune organizzazioni può essere necessario rispettare i regolamenti definiti da enti normativi come la Securities and Exchange Commission (SEC) Rule 17a-4, in base alla quale, una volta attivato, un criterio di conservazione non può essere disattivato o reso meno restrittivo. 
-
-La protezione dell'archiviazione garantisce che l'organizzazione possa rispettare tali requisiti normativi perché blocca i criteri di conservazione in modo che nessuno, incluso l'amministratore, possa disattivarli, eliminarli o renderli meno restrittivi.
-  
-Quando un criterio di conservazione è bloccato:
-
-- Nessuno può disattivarlo.
-- È possibile aggiungere percorsi, ma non rimuoverli
-- Il contenuto soggetto al criterio non può essere modificato o eliminato durante il periodo di conservazione
-- È possibile estendere un periodo di conservazione, ma non ridurlo
-
-In sintesi, un criterio bloccato può essere aumentato o esteso, ma non ridotto, disabilitato o disattivato.
-  
-> [!IMPORTANT]
-> Prima di bloccare un criterio di conservazione, è essenziale comprendere l'impatto dell'operazione e verificare se sia necessario all'organizzazione per soddisfare i requisiti normativi. Dopo l'applicazione del blocco di conservazione, gli amministratori non potranno disabilitare o eliminare il criterio.
-
-La Protezione dell'archiviazione viene applicata dopo la creazione del criterio di conservazione utilizzando PowerShell. Le istruzioni sono incluse in[Creare e configurare criteri di conservazione. ](create-retention-policies.md).
-
-#### <a name="releasing-a-retention-policy"></a>Rilascio dei criteri di conservazione
-
-Posto che un criterio di conservazione non sia bloccato con Protezione dell'archiviazione, è possibile disattivarlo o eliminarlo in qualsiasi momento. 
-
-Eseguendo questa operazione, il contenuto di SharePoint o OneDrive conservato nella Raccolta di archiviazione non viene eliminato immediatamente e definitivamente. Per evitare perdite accidentali di dati, è previsto un periodo di tolleranza di 30 giorni, durante il quale la scadenza del contenuto per tale criterio non viene applicata alla raccolta di archiviazione, in modo da poter ripristinare qualsiasi contenuto in caso di necessità. Inoltre, non è possibile eliminare manualmente questo contenuto durante il periodo di tolleranza.
-
-È possibile attivare di nuovo i criteri di conservazione durante il periodo di tolleranza; in tal caso, nessun contenuto verrà eliminato per tale criterio.
-
-Il periodo di tolleranza di 30 giorni in SharePoint e in OneDrive corrisponde al periodo di attesa di 30 giorni in Exchange. Per altre informazioni, vedere [Gestione della permanenza nelle cassette postali ](identify-a-hold-on-an-exchange-online-mailbox.md#managing-mailboxes-on-delay-hold).
+Gli elementi ereditano le impostazioni di conservazione dal contenitore specificato nei criteri di conservazione. Se vengono poi spostati all'esterno del contenitore quando il criterio è configurato per la conservazione del contenuto, viene mantenuta una copia dell'elemento nella posizione protetta del carico di lavoro. Le impostazioni di conservazione, tuttavia, non vengono trasferite nella nuova posizione con il contenuto. Se necessario, usare le etichette di conservazione anziché i criteri di conservazione.
 
 ### <a name="retention-labels"></a>Etichette di conservazione
 
@@ -252,7 +222,7 @@ Dal Centro conformità Microsoft 365 selezionare **Classificazione dei dati** > 
 > [!TIP]
 >È consigliabile usare alcuni degli altri approfondimenti per la classificazione dei dati, ad esempio i classificatori addestrabili e i tipi di informazioni riservate, per identificare il contenuto che potrebbe essere necessario mantenere o eliminare o gestire come risultato.
 
-Il Centro sicurezza e conformità di Office 365 riceve le informazioni generali equivalenti per la conservazione delle etichette dalla **Gestione delle informazioni** > **Dashboard** , e informazioni più dettagliate dalla **Gestione delle informazioni** > **Esploratore delle attività di etichettatura** . Per ulteriori informazioni sul monitoraggio delle etichette di conservazione nell’interfaccia di amministrazione precedente, vedere la seguente documentazione:
+Il Centro sicurezza e conformità di Office 365 riceve le informazioni generali equivalenti per la conservazione delle etichette dalla **Gestione delle informazioni** > **Dashboard** , e informazioni più dettagliate dalla **Gestione delle informazioni** > **Esploratore delle attività di etichettatura**. Per ulteriori informazioni sul monitoraggio delle etichette di conservazione nell’interfaccia di amministrazione precedente, vedere la seguente documentazione:
 - [Visualizzare i report della gestione dei dati](view-the-data-governance-reports.md)
 - [Visualizzare l'utilizzo delle etichette con Analisi delle etichette](label-analytics.md)
 - [Visualizzare le attività delle etichette dei documenti](view-label-activity-for-documents.md)
@@ -273,7 +243,7 @@ Usare la tabella seguente per stabilire se usare criteri di conservazione o etic
 |Funzionalità|Criterio di conservazione |Etichetta di conservazione|
 |:-----|:-----|:-----|:-----|
 |Impostazioni per conservare e poi eliminare, solo conservare oppure solo eliminare |Sì |Sì |
-|Carichi di lavoro supportati: <br />- Exchange <br />- SharePoint <br />- OneDrive <br />- Gruppi di Microsoft 365 <br />- Skype for Business <br />- Teams<br />- Yammer|<br /> Sì <br /> Sì <br /> Sì <br /> Sì <br /> Sì <br /> Sì | <br /> Sì, tranne le cartelle pubbliche <br /> Sì <br /> Sì <br /> Sì <br /> No <br /> No <br /> No |
+|Carichi di lavoro supportati: <br />- Exchange <br />- SharePoint <br />- OneDrive <br />- Gruppi di Microsoft 365 <br />- Skype for Business <br />- Teams<br />- Yammer|<br /> Sì <br /> Sì <br /> Sì <br /> Sì <br /> Sì <br /> Sì <br /> Sì | <br /> Sì, tranne le cartelle pubbliche <br /> Sì <br /> Sì <br /> Sì <br /> No <br /> No <br /> No |
 |Conservazione applicata automaticamente | Sì | Sì |
 |Conservazione applicata in base alle condizioni <br /> - tipi di informazioni sensibili, query KQL, classificatori sottoponibili a training| No | Sì |
 |Conservazione applicata manualmente | No | Sì |
@@ -311,13 +281,31 @@ Spiegazione per i quattro diversi livelli:
     
 3. **L'inclusione esplicita prevale sull'inclusione implicita.** Questo significa che: 
     
-    1. Se un utente assegna manualmente un'etichetta di conservazione con impostazioni di conservazione a un elemento, ad esempio un messaggio di posta elettronica di Exchange o un documento di OneDrive, l'etichetta di conservazione ha la precedenza sui criteri di conservazione assegnati a livello di sito o di cassetta postale e su un'etichetta di conservazione predefinita assegnata alla raccolta documenti. Ad esempio, se l'etichetta di conservazione esplicita è configurata per conservare il contenuto per dieci anni, ma un criterio di conservazione assegnato al sito indica di conservare il contenuto solo per cinque anni, l'etichetta di conservazione ha la precedenza. Le etichette di conservazione applicate automaticamente sono considerate implicite e non esplicite, perché vengono applicate automaticamente da Microsoft 365.
+    1. Se un utente assegna manualmente un'etichetta di conservazione con impostazioni di conservazione a un elemento, ad esempio un messaggio di posta elettronica di Exchange o un documento di OneDrive, l'etichetta di conservazione ha la precedenza sui criteri di conservazione assegnati a livello di sito o di cassetta postale e su un'etichetta di conservazione predefinita assegnata alla raccolta documenti. Ad esempio, se l'etichetta di conservazione esplicita è configurata per conservare il contenuto per dieci anni, ma un criterio di conservazione assegnato al sito indica di conservare il contenuto solo per cinque anni, l'etichetta di conservazione ha la precedenza.
     
     2. Se un criterio di conservazione include una posizione specifica, ad esempio la cassetta postale o l'account di OneDrive di un particolare utente, il criterio di conservazione ha la precedenza su un altro criterio di conservazione applicato alle cassette postali o agli account di OneDrive di tutti gli utenti, ma che non include specificamente la cassetta postale di quell'utente.
     
 4. **Prevale il periodo di eliminazione più breve.** Analogamente, se un contenuto è soggetto a più impostazioni di conservazione che eliminano il contenuto senza un periodo di conservazione, verrà eliminato alla fine del periodo di conservazione più breve. 
 
 Infine, un criterio di conservazione o un'etichetta di conservazione non può eliminare definitivamente qualsiasi contenuto che si trovi in stato di blocco per eDiscovery. Quando il blocco viene rilasciato, il contenuto torna idoneo per il processo di pulizia nelle posizioni protette per il carico di lavoro.
+
+## <a name="use-preservation-lock-to-restrict-changes-to-policies"></a>Usare la protezione dell'archiviazione per limitare le modifiche ai criteri
+
+Per alcune organizzazioni può essere necessario rispettare i regolamenti definiti da enti normativi come la Securities and Exchange Commission (SEC) Rule 17a-4, in base alla quale, una volta attivato, un criterio per la conservazione non può essere disattivato o reso meno restrittivo. 
+
+La protezione dell'archiviazione garantisce che l'organizzazione possa rispettare tali requisiti normativi perché blocca i criteri di conservazione o i criteri per le etichette di conservazione in modo che nessuno, incluso l'amministratore, possa disattivarli, eliminarli o renderli meno restrittivi.
+  
+La protezione dell'archiviazione viene applicata dopo la creazione dei criteri di conservazione o dei criteri per le etichette di conservazione. Per altre informazioni e indicazioni, vedere [Usare la protezione dell'archiviazione per limitare le modifiche ai criteri di conservazione e ai criteri per le etichette di conservazione](retention-preservation-lock.md).
+
+## <a name="releasing-a-policy-for-retention"></a>Rilascio dei criteri di conservazione
+
+Se i criteri di conservazione non hanno una protezione dell'archiviazione è possibile eliminare i criteri in qualsiasi momento, in questo modo vengono disabilitate le impostazioni di conservazione applicate in precedenza. È anche possibile mantenere i criteri ma cambiare lo stato della posizione su Disattivato.
+ 
+Eseguendo entrambe le operazione, il contenuto di SharePoint o OneDrive conservato nella Raccolta di archiviazione non viene eliminato immediatamente e definitivamente. Per evitare perdite accidentali di dati, è previsto un periodo di tolleranza di 30 giorni, durante il quale la scadenza del contenuto per tale criterio non viene applicata alla raccolta di archiviazione, in modo da poter ripristinare qualsiasi contenuto in caso di necessità. Inoltre, non è possibile eliminare manualmente questo contenuto durante il periodo di tolleranza.
+
+È possibile riportare lo stato della posizione su Attivato durante il periodo di tolleranza; in tal caso, nessun contenuto verrà eliminato per tale criterio.
+
+Il periodo di tolleranza di 30 giorni in SharePoint e in OneDrive corrisponde al periodo di attesa di 30 giorni in Exchange. Per altre informazioni, vedere [Gestione della permanenza nelle cassette postali ](identify-a-hold-on-an-exchange-online-mailbox.md#managing-mailboxes-on-delay-hold).
 
 ## <a name="auditing-retention-configuration"></a>Configurazione del controllo della conservazione
 
@@ -413,7 +401,7 @@ Se si sono configurati i siti di SharePoint per criteri tipo di contenuto o crit
 
 - [Limiti di SharePoint Online](https://docs.microsoft.com/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits)
 - [Limiti e specifiche per Microsoft Teams](https://docs.microsoft.com/microsoftteams/limits-specifications-teams) 
-- [Rispettare la SEC Rule 17a-4](use-exchange-online-to-comply-with-sec-rule-17a-4.md)
+- [Risorse che consentono di soddisfare i requisiti normativi per la governance delle informazioni e la gestione dei record](retention-regulatory-requirements.md)
 
 ## <a name="next-steps"></a>Passaggi successivi
 
