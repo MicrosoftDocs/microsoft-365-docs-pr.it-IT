@@ -292,6 +292,8 @@
       items:
         - name: Panoramica
           items:
+            - name: Roadmap per la sicurezza
+              href: ./office-365-security/security-roadmap.md
             - name: Exchange Online Protection
               items:
                 - name: Panoramica su Exchange Online Protection
@@ -318,8 +320,6 @@
               href: ./office-365-security/atp-for-spo-odb-and-teams.md
             - name: Nuovo Centro sicurezza Microsoft 365
               href: ./mtp/overview-security-center.md
-            - name: Roadmap per la sicurezza
-              href: ./office-365-security/security-roadmap.md
             - name: Esplora minacce (e rilevamenti in tempo reale)
               href: ./office-365-security/threat-explorer.md
             - name: Panoramica AIR
@@ -376,7 +376,9 @@
               href: ./office-365-security/siem-server-integration.md
             - name: Integrazione di SIEM con Defender per Office 365
               href: ./office-365-security/siem-integration-with-office-365-ti.md
-            - name: Configurare i criteri anti-phishing
+            - name: Sicuro per impostazione predefinita
+              href: ./office-365-security/secure-by-default.md
+            - name: Configurare i criteri anti-phishing ATP
               href: ./office-365-security/configure-atp-anti-phishing-policies.md
             - name: Configurare i criteri anti-malware
               href: ./office-365-security/configure-anti-malware-policies.md
@@ -461,6 +463,12 @@
               href: ./office-365-security/configuration-analyzer-for-security-policies.md
             - name: Simulatore di attacchi in Office 365
               href: ./office-365-security/attack-simulator.md
+            - name: Simulazione di un attacco di phishing con la formazione del Simulatore di attacchi
+              href: ./office-365-security/attack-simulation-training.md
+            - name: Creare un payload personalizzato per la formazione del Simulatore di attacchi
+              href: ./office-365-security/attack-simulation-training-payloads.md
+            - name: Acquisire informazioni approfondite attraverso la formazione del Simulatore di attacchi
+              href: ./office-365-security/attack-simulation-training-insights.md
             - name: Impostazioni consigliate per la configurazione della sicurezza di EOP e Defender per Office 365
               href: ./office-365-security/recommended-settings-for-eop-and-office365-atp.md
             - name: Procedure consigliate per la configurazione di Exchange Online Protection

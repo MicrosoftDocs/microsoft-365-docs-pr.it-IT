@@ -68,6 +68,11 @@
           items:
             - name: Lavorare con Microsoft Consulting Services
               href: get-ready/apps-MCS.md
+        - name: Usare lo strumento di valutazione dell'idoneità
+          href: get-ready/readiness-assessment-tool.md
+          items:
+            - name: Risolvere problemi trovati dallo strumento di valutazione dell'idoneità
+              href: get-ready/readiness-assessment-fix.md
     - name: Guida introduttiva a Microsoft Managed Desktop
       href: get-started/index.md
       items:
