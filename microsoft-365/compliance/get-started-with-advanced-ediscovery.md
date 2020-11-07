@@ -17,18 +17,17 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-ms.assetid: ''
 description: In questo articolo viene descritto come iniziare a utilizzare Advanced eDiscovery in Microsoft 365. Dopo aver completato alcuni passaggi rapidi, lo strumento Advanced eDiscovery è pronto per l'uso. Il primo passaggio consiste nel creare un caso e quindi iniziare a utilizzare le funzionalità e le caratteristiche avanzate di eDiscovery.
-ms.openlocfilehash: 64c8681a47c21a7a6bfa9d67677405f74d75a96f
-ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
+ms.openlocfilehash: 59537499ed52f44a9d32b8921fd297c5cd7c0d3f
+ms.sourcegitcommit: dab50e1cc5bba920720b80033c93457f5ca1c330
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48398495"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "48944334"
 ---
 # <a name="get-started-with-advanced-ediscovery"></a>Introduzione ad Advanced eDiscovery
 
-Advanced eDiscovery in Microsoft 365 offre un flusso di lavoro end-to-end per conservare, raccogliere, esaminare, analizzare ed esportare i dati che rispondono alle indagini interne ed esterne dell'organizzazione. Non è necessario eseguire alcuna operazione per la distribuzione di Advanced eDiscovery, ma sono necessarie alcune attività prerequisite che devono essere completate da un amministratore IT e da un responsabile di eDiscovery prima che l'organizzazione possa iniziare a creare e utilizzare i casi avanzati di eDiscovery per gestire le indagini.
+Advanced eDiscovery in Microsoft 365 offre un [flusso di lavoro end-to-end](overview-ediscovery-20.md#advanced-ediscovery-architecture) per conservare, raccogliere, esaminare, analizzare ed esportare i dati che rispondono alle indagini interne ed esterne dell'organizzazione. Non è necessario eseguire alcuna operazione per la distribuzione di Advanced eDiscovery, ma sono necessarie alcune attività prerequisite che devono essere completate da un amministratore IT e da un responsabile di eDiscovery prima che l'organizzazione possa iniziare a creare e utilizzare i casi avanzati di eDiscovery per gestire le indagini.
 
 In questo articolo vengono illustrati i passaggi necessari per configurare Advanced eDiscovery. In questo modo è possibile garantire la corretta gestione delle licenze necessarie per accedere a Advanced eDiscovery e aggiungere i depositari ai casi, nonché assegnare le autorizzazioni al team legale e investigativo affinché possano accedere e gestire i casi. In questo articolo viene inoltre fornita una panoramica generale dell'utilizzo dei casi per gestire il flusso di lavoro avanzato di eDiscovery per un'indagine legale.
 
@@ -110,7 +109,7 @@ Il passaggio successivo consiste nel creare un caso e iniziare a utilizzare Adva
 
 1. Passare a [https://compliance.microsoft.com](https://compliance.microsoft.com) e accedere con le credenziali per l'account utente a cui sono state assegnate le autorizzazioni di eDiscovery appropriate. I membri del gruppo di ruoli Gestione organizzazione possono anche creare casi avanzati di eDiscovery.
 
-2. Nel riquadro di spostamento a sinistra del centro conformità di Microsoft 365 fare clic su **Mostra tutto**, quindi fare clic su **eDiscovery > avanzate**.
+2. Nel riquadro di spostamento a sinistra del centro conformità di Microsoft 365 fare clic su **Mostra tutto** , quindi fare clic su **eDiscovery > avanzate**.
 
 3. Nella pagina **Advanced eDiscovery** , fare clic sulla scheda **case** , quindi fare clic su **Crea un caso**.
 
@@ -120,11 +119,11 @@ Il passaggio successivo consiste nel creare un caso e iniziare a utilizzare Adva
 
    Viene creato il nuovo caso e viene visualizzata la scheda **Impostazioni** del nuovo caso. 
 
-6. Nella sezione **accesso & autorizzazioni** della scheda **Impostazioni** fare clic su **Seleziona**e quindi su **Aggiorna**.
+6. Nella sezione **accesso & autorizzazioni** della scheda **Impostazioni** fare clic su **Seleziona** e quindi su **Aggiorna**.
 
 7. Fare clic su **Aggiorna**.
 
-8. Nella pagina **Gestisci** il riquadro a comparsa di questo caso, in **Manage members**fare clic su **Aggiungi** per aggiungere membri al caso.
+8. Nella pagina **Gestisci** il riquadro a comparsa di questo caso, in **Manage members** fare clic su **Aggiungi** per aggiungere membri al caso.
 
 9. Nell'elenco di utenti selezionare la casella di controllo accanto ai nomi degli utenti che si desidera aggiungere al caso. Come spiegato in precedenza, accertarsi che alle persone aggiunte al caso siano state assegnate le autorizzazioni di eDiscovery appropriate.
 
@@ -144,7 +143,7 @@ Per iniziare a utilizzare Advanced eDiscovery, ecco un semplice flusso di lavoro
 
    - I dati nella cassetta postale di Exchange del custode, nell'account OneDrive e in tutti i gruppi di Microsoft teams o Yammer a cui il custode è membro possono essere "contrassegnati" come dati di custodia nel caso.
   
-   - I dati del custode vengono reindicizzati (tramite un processo denominato *Advanced indicizzazione*). Questo consente di ottimizzare la ricerca nel passaggio successivo.
+   - I dati del custode vengono reindicizzati (tramite un processo denominato *Advanced indicizzazione* ). Questo consente di ottimizzare la ricerca nel passaggio successivo.
   
    - È possibile applicare un'esenzione ai dati del custode. Questo consente di conservare i dati che potrebbero essere rilevanti per il caso durante l'inchiesta.
   
@@ -164,7 +163,7 @@ Per iniziare a utilizzare Advanced eDiscovery, ecco un semplice flusso di lavoro
 
    È inoltre disponibile un tipo speciale di recensione a cui è possibile aggiungere dati, denominato set di *recensioni di conversazione*. Questi tipi di recensioni consentono di fornire funzionalità di ricostruzione delle conversazioni per ricostruire, rivedere ed esportare conversazioni filettate come quelle di Microsoft teams. Per ulteriori informazioni, vedere [rivedere le conversazioni in Advanced eDiscovery](conversation-review-sets.md).
 
-4. **Esaminare e analizzare i dati in un set di revisione**. Ora che i dati si trova in un set di revisione, è possibile utilizzare una vasta gamma di strumenti e funzionalità per visualizzare e analizzare i dati del caso con l'obiettivo di ridurre il set di dati a ciò che è più rilevante per il caso in cui si sta indagando. Ecco un elenco di alcuni strumenti e funzionalità che è possibile utilizzare durante questo processo.
+4. **Esaminare e analizzare i dati in un set di revisione**. Ora che i dati si trova in un set di revisione, è possibile utilizzare una vasta gamma di strumenti e funzionalità per visualizzare e analizzare i dati del caso con l'obiettivo di ridurre il set di dati a ciò che è più pertinente per il caso in cui si sta indagando. Ecco un elenco di alcuni strumenti e funzionalità che è possibile utilizzare durante questo processo.
 
    - [Visualizzare i documenti](view-documents-in-review-set.md). Ciò include la visualizzazione dei metadati per ogni documento in un set di revisione e la visualizzazione del documento nella versione nativa o nella versione di testo.
 

@@ -475,7 +475,7 @@
               href: change-the-size-of-pst-files-when-exporting-results.md
             - name: Disabilitare i report quando si esportano i risultati della ricerca
               href: disable-reports-when-you-export-content-search-results.md
-        - name: Informazioni sulla ricerca contenuto
+        - name: Riferimento ricerca contenuto
           items:
             - name: Limiti di Ricerca contenuto
               href: limits-for-content-search.md
@@ -535,6 +535,8 @@
               href: preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery.md
             - name: Decrittografia negli strumenti di eDiscovery
               href: ediscovery-decryption.md
+            - name: Raccogliere informazioni di diagnostica di eDiscovery
+              href: ediscovery-diagnostic-info.md
             - name: Risolvere i problemi comuni di eDiscovery
               href: ediscovery-troubleshooting-common-issues.md
             - name: Eseguire nuovamente una ricerca non riuscita
@@ -666,6 +668,8 @@
               href: set-up-compliance-boundaries.md
             - name: Decrittografia negli strumenti di eDiscovery
               href: ediscovery-decryption.md
+            - name: Raccogliere informazioni di diagnostica di eDiscovery
+              href: ediscovery-diagnostic-info.md
             - name: Cercare le attività di eDiscovery nel log di controllo
               href: search-for-ediscovery-activities-in-the-audit-log.md
             - name: Risoluzione dei problemi di AzCopy

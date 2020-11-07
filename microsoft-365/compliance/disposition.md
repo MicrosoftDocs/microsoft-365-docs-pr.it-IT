@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Monitorare e gestire lo smaltimento del contenuto, sia che si utilizzi una revisione per l'eliminazione o che il contenuto venga eliminato automaticamente in base alle impostazioni configurate.
-ms.openlocfilehash: a0fd71aa1eb7c0a7eff97e783f4b0dfb8a50a915
-ms.sourcegitcommit: 61d7284b412d0f7bbd8bbb2225c2e6324f86b717
+ms.openlocfilehash: dfea1cfece8a9faccced134cf30923527bd241f5
+ms.sourcegitcommit: 36795a6735cd3fc678c7d5db71ddc97fac3f6f8a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "48262239"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "48941367"
 ---
 # <a name="disposition-of-content"></a>Eliminazione del contenuto
 
@@ -75,7 +75,7 @@ Una revisione per l'eliminazione può includere il contenuto di cassette postali
 
 ![Eliminazioni in sospeso nella panoramica sulla gestione dei record](../media/dispositions-overview.png)
 
-Quando si seleziona **Visualizza tutte le eliminazioni in sospeso**, viene visualizzata la pagina **eliminazione**. Ad esempio:
+Quando si seleziona **Visualizza tutte le eliminazioni in sospeso** , viene visualizzata la pagina **eliminazione**. Ad esempio:
 
 ![Pagina eliminazioni nel Centro conformità Microsoft 365.](../media/disposition-tab.png)
 
@@ -92,7 +92,7 @@ Dalla pagina **Definisci le impostazioni di conservazione** per un'etichetta di 
 
 ![Impostazioni di conservazione per l'etichetta](../media/disposition-review-option.png)
  
-Dopo aver selezionato l'opzione **Attiva una revisione per l'eliminazione**, si specificano i revisori per l’eliminazione nella pagina successiva della procedura guidata:
+Dopo aver selezionato l'opzione **Attiva una revisione per l'eliminazione** , si specificano i revisori per l’eliminazione nella pagina successiva della procedura guidata:
 
 ![Specifica dei revisori per l’eliminazione](../media/disposition-reviewers.png)
 
@@ -132,10 +132,12 @@ Gli elementi visualizzati nella scheda **elementi eliminati** delle etichette de
 
 > [!NOTE]
 > Questa funzionalità si basa sulle informazioni provenienti dal [Log di controllo unificato](search-the-audit-log-in-security-and-compliance.md) e, di conseguenza, è necessario che il controllo sia [abilitato e con ricerca consentita](turn-audit-log-search-on-or-off.md) in modo da acquisire gli eventi corrispondenti.
-    
+
+Per il controllo, cercare **File eliminato contrassegnato come record**.
+
 ## <a name="filter-and-export-the-views"></a>Filtrare ed esportare le visualizzazioni
 
-Se si seleziona un'etichetta di conservazione dalla pagina **eliminazione**, la scheda **eliminazione in sospeso**(se applicabile) e la scheda **elementi eliminati** consentono di filtrare le visualizzazioni per trovare più facilmente gli elementi. 
+Se si seleziona un'etichetta di conservazione dalla pagina **eliminazione** , la scheda **eliminazione in sospeso** (se applicabile) e la scheda **elementi eliminati** consentono di filtrare le visualizzazioni per trovare più facilmente gli elementi. 
 
 Per le eliminazioni in sospeso, l'intervallo di tempo si basa sulla data di scadenza. Per gli elementi eliminati, l'intervallo di tempo si basa sulla data di eliminazione.
   

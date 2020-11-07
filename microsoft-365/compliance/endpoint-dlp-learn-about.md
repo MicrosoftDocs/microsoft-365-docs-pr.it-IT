@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 'La prevenzione della perdita di dati degli endpoint di Microsoft 365 estende il monitoraggio delle attività dei file e le azioni di protezione agli endpoint. I file vengono resi visibili nelle soluzioni di conformità di Microsoft 365 '
-ms.openlocfilehash: cbf4a53658885102226d2b874180f5cc5f264a91
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 3dedf8f3134dbdd00c45e6b0aed741a3b3173984
+ms.sourcegitcommit: 24826e1b61e7aace12fc9e8ae84ae3e760658b50
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48841862"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "48931970"
 ---
 # <a name="learn-about-microsoft-365-endpoint-data-loss-prevention-preview"></a>Informazioni sulla prevenzione della perdita di dati degli endpoint di Microsoft 365 (anteprima)
 
@@ -55,7 +55,8 @@ Ci sono alcuni concetti aggiuntivi che è necessario conoscere prima di approfon
 
 La gestione dei dispositivi è la funzionalità che consente la raccolta di dati di telemetria dai dispositivi e la introduce nelle soluzioni di conformità di Microsoft 365, come Endpoint DLP e [Gestione dei rischi Insider](insider-risk-management.md). È necessario eseguire l'onboarding di tutti i dispositivi che si vogliono usare come posizioni nei criteri DLP.
 
-![abilitare la gestione dei dispositivi](../media/endpoint-dlp-learn-about-1-enable-device-management.png)
+> [!div class="mx-imgBorder"]
+> ![abilitare la gestione dei dispositivi](../media/endpoint-dlp-learn-about-1-enable-device-management.png)
 
 Onboarding e offboarding vengono gestiti tramite script scaricati dal centro gestione dispositivi. Nel centro sono disponibili script personalizzati per ognuno di questi metodi di distribuzione:
 
@@ -65,17 +66,19 @@ Onboarding e offboarding vengono gestiti tramite script scaricati dal centro ges
 - Gestione dispositivi mobili/Microsoft Intune
 - Script di onboarding VDI per dispositivi non persistenti
 
-![pagina di onboarding dispositivi](../media/endpoint-dlp-learn-about-3-device-onboarding-page.png)
+> [!div class="mx-imgBorder"]
+> ![pagina di onboarding dispositivi](../media/endpoint-dlp-learn-about-3-device-onboarding-page.png)
 
- Seguire le procedure in [Introduzione a Microsoft 365 Endpoint DLP](endpoint-dlp-getting-started.md) per l'onboarding dei dispositivi.
+ Seguire le procedure in [Informazioni sulla prevenzione della perdita di dati degli endpoint di Microsoft 365](endpoint-dlp-getting-started.md) per l'onboarding dei dispositivi.
 
-Se è stato eseguito l'onboarding di dispositivi tramite [Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/), questi dispositivi verranno visualizzati automaticamente nell'elenco dei dispositivi.
+Se è stato eseguito l'onboarding di dispositivi tramite [Microsoft Defender per endpoint](https://docs.microsoft.com/windows/security/threat-protection/), questi dispositivi verranno visualizzati automaticamente nell'elenco dei dispositivi.
 
-![elenco dispositivi gestiti](../media/endpoint-dlp-learn-about-2-device-list.png)
+> [!div class="mx-imgBorder"]
+> ![elenco dispositivi gestiti](../media/endpoint-dlp-learn-about-2-device-list.png)
 
-### <a name="viewing-endpoint-dlp-data"></a>Visualizzazione dei dati di Endpoint DLP
+### <a name="viewing-endpoint-dlp-data"></a>Visualizzazione dei dati di prevenzione della perdita di dati degli endpoint
 
- Endpoint DLP monitora le attività in base al tipo MIME, in modo che le attività vengano acquisite anche se l'estensione del file viene cambiata. Nell'anteprima pubblica viene controllato tutto:
+ La prevenzione della perdita di dati degli endpoint monitora le attività in base al tipo MIME, in modo che le attività vengano acquisite anche se l'estensione del file viene cambiata. Nell'anteprima pubblica viene controllato tutto:
 
 - File di Word
 - File di PowerPoint
@@ -83,21 +86,24 @@ Se è stato eseguito l'onboarding di dispositivi tramite [Microsoft Defender ATP
 - File PDF
 - File CSV
 - File TSV
+- File TXT
+- File RTF
 - File C
-- File di classe
+- File CLASS
 - File CPP
 - File CS
 - File H
 - File Java
 
 > [!NOTE]
-> I file TXT e di codice sorgente non vengono controllati per impostazione predefinita, DLP li valuta in base ai criteri applicati e le azioni utente vengono controllate o bloccate di conseguenza.
+> La prevenzione della perdita di dati degli endpoint valuta i file di tutti i tipi precedenti rispetto ai criteri DLP e applica le azioni di protezione di conseguenza. Tutti i file che corrispondono a un criterio DLP vengono controllati per tutte le azioni supportate, anche se non vengono bloccati. Inoltre, le attività sui file eseguite in qualsiasi file di Word, PowerPoint, Excel, PDF e CSV vengono controllate per impostazione predefinita, indipendentemente dal fatto che esista un criterio DLP o che corrisponda a questi file.
 
-Dopo l'onboarding di un dispositivo, le informazioni sulle attività controllate fluiscono in Esplora attività anche prima che vengano configurati e distribuiti criteri di prevenzione della perdita dei dati che usano dispositivi come posizione.
+Dopo l'onboarding di un dispositivo, le informazioni sulle attività controllate fluiscono in Esplora attività anche prima che vengano configurati e distribuiti criteri DLP che usano dispositivi come posizione.
 
-![Eventi di Endpoint DLP in Esplora attività](../media/endpoint-dlp-learn-about-4-activity-explorer.png)
+> [!div class="mx-imgBorder"]
+> ![eventi di prevenzione della perdita di dati degli endpoint in Esplora attività](../media/endpoint-dlp-learn-about-4-activity-explorer.png)
 
-Endpoint DLP raccoglie informazioni complete sulle attività controllate.
+La prevenzione della perdita di dati degli endpoint raccoglie informazioni complete sulle attività controllate.
 
 Ad esempio, se un file viene copiato in un supporto USB rimovibile, nei dettagli attività vengono visualizzati questi attributi:
 
@@ -126,7 +132,8 @@ Ad esempio, se un file viene copiato in un supporto USB rimovibile, nei dettagli
 - modello di dispositivo multimediale rimovibile
 - numero di serie del dispositivo multimediale rimovibile
 
-![attributi dell'attività di copia su USB](../media/endpoint-dlp-learn-about-5-activity-attributes.png)
+> [!div class="mx-imgBorder"]
+> ![attributi dell'attività di copia su USB](../media/endpoint-dlp-learn-about-5-activity-attributes.png)
 
 ## <a name="next-steps"></a>Passaggi successivi
 

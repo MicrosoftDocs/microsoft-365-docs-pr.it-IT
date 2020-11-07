@@ -16,12 +16,12 @@ ms.collection:
 localization_priority: None
 description: Informazioni su come definire i criteri per le barriere informative in Microsoft teams.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f7e1fbb0f1d468f8e1b79f9cc414fdb87a224283
-ms.sourcegitcommit: 5e40c760c1af2a4cc6d85cb782b17f5c979677c5
+ms.openlocfilehash: ffeb1f1ca3296390fa10a636d3806127095712f8
+ms.sourcegitcommit: 36795a6735cd3fc678c7d5db71ddc97fac3f6f8a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48379183"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "48941431"
 ---
 # <a name="define-information-barrier-policies"></a>Definire i criteri delle barriere informative
 
@@ -38,7 +38,7 @@ Quando si definiscono i criteri per gli ostacoli alle informazioni, è possibile
 
 - Gli attributi degli account utente sono definiti in Azure Active Directory (o Exchange Online). Questi attributi possono includere reparto, titolo del processo, posizione, nome del team e altre informazioni sul profilo dei processi. 
 
-- I segmenti sono insiemi di utenti definiti nel centro sicurezza & conformità utilizzando un **attributo account utente**selezionato. (Vedere l' [elenco degli attributi supportati](information-barriers-attributes.md)). 
+- I segmenti sono insiemi di utenti definiti nel centro sicurezza & conformità utilizzando un **attributo account utente** selezionato. (Vedere l' [elenco degli attributi supportati](information-barriers-attributes.md)). 
 
 - I criteri barriera di informazioni determinano limiti di comunicazione o restrizioni. Quando si definiscono i criteri di barriera delle informazioni, è possibile scegliere tra due tipi di criteri:
     - I criteri "blocca" impediscono a un segmento di comunicare con un altro segmento.
@@ -70,7 +70,7 @@ Oltre alle [licenze e le autorizzazioni necessarie](information-barriers.md#requ
 
 - Registrazione di controllo: per cercare lo stato di un'applicazione di criteri, è necessario che la registrazione di controllo sia attivata. Si consiglia di eseguire questa operazione prima di iniziare a definire segmenti o criteri. Per ulteriori informazioni, vedere [abilitare o disabilitare la ricerca del registro di controllo](turn-audit-log-search-on-or-off.md).
 
-- Nessun criterio rubrica-prima di definire e applicare i criteri di barriera delle informazioni, assicurarsi che non siano presenti criteri Rubrica di Exchange. Le barriere informative si basano sui criteri della Rubrica, ma i due tipi di criteri non sono compatibili. Se si dispone di tali criteri, assicurarsi che [i criteri della Rubrica siano rimossi](https://docs.microsoft.com/exchange/address-books/address-book-policies/remove-an-address-book-policy) per primi. Dopo aver abilitato i criteri barriera informativi e aver abilitato la rubrica gerarchica, tutti gli utenti ***che non sono inclusi*** in un segmento barriera informazioni vedranno la [rubrica gerarchica](https://docs.microsoft.com/exchange/address-books/hierarchical-address-books/hierarchical-address-books) in Exchange Online.
+- Nessun criterio rubrica-prima di definire e applicare i criteri di barriera delle informazioni, assicurarsi che non siano presenti criteri Rubrica di Exchange. Le barriere informative si basano sui criteri della Rubrica, ma i due tipi di criteri non sono compatibili. Se si dispone di tali criteri, assicurarsi che [i criteri della Rubrica siano rimossi](https://docs.microsoft.com/exchange/address-books/address-book-policies/remove-an-address-book-policy) per primi. Dopo aver abilitato i criteri barriera informativi e aver abilitato la rubrica gerarchica, tutti gli utenti * *_che non sono inclusi_* in un segmento barriera di informazioni vedranno la [rubrica gerarchica](https://docs.microsoft.com/exchange/address-books/hierarchical-address-books/hierarchical-address-books) in Exchange Online.
 
 - PowerShell-attualmente, i criteri di barriera delle informazioni vengono definiti e gestiti nel centro sicurezza & conformità di Office 365 tramite i cmdlet di PowerShell. Anche se alcuni esempi sono disponibili in questo articolo, è necessario avere familiarità con i cmdlet e i parametri di PowerShell. Sarà inoltre necessario il modulo di Azure PowerShell.
     - [Connettersi a PowerShell in Centro sicurezza e conformità](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell)
@@ -90,7 +90,7 @@ Oltre alle [licenze e le autorizzazioni necessarie](information-barriers.md#requ
 
    2. Quando richiesto, accedere con l'account aziendale o dell'Istituto di istruzione per Office 365.
 
-   3. Nella finestra di dialogo **autorizzazioni richieste** esaminare le informazioni e quindi scegliere **accetta**.
+   3. Nella finestra di dialogo _ *autorizzazioni richieste* * esaminare le informazioni e quindi scegliere **accetta**.
 
 Quando vengono soddisfatti tutti i prerequisiti, passare alla sezione successiva.
 
@@ -116,7 +116,7 @@ Oltre all'elenco iniziale dei criteri, creare un elenco di segmenti per l'organi
 > [!IMPORTANT]
 > Un utente può trovarsi in un solo segmento.
 
-Determinare gli attributi dei dati di directory dell'organizzazione che verranno utilizzati per definire i segmenti. È possibile utilizzare *Department*, *member*o uno qualsiasi degli attributi supportati. Assicurarsi di avere valori nell'attributo selezionato per gli utenti. [Vedere l'elenco degli attributi supportati per le barriere informative](information-barriers-attributes.md).
+Determinare gli attributi dei dati di directory dell'organizzazione che verranno utilizzati per definire i segmenti. È possibile utilizzare *Department* , *member* o uno qualsiasi degli attributi supportati. Assicurarsi di avere valori nell'attributo selezionato per gli utenti. [Vedere l'elenco degli attributi supportati per le barriere informative](information-barriers-attributes.md).
 
 > [!IMPORTANT]
 > **Prima di procedere alla sezione successiva, verificare che i dati della directory dispongano di valori per gli attributi che è possibile utilizzare per definire i segmenti**. Se i dati della directory non contengono valori per gli attributi che si desidera utilizzare, gli account utente devono essere aggiornati per includere tali informazioni prima di procedere con le barriere informative. Per ottenere assistenza, vedere le risorse seguenti:<br/>- [Configurare le proprietà degli account utente con Office 365 PowerShell](https://docs.microsoft.com/microsoft-365/enterprise/configure-user-account-properties-with-microsoft-365-powershell)<br/>- [Aggiungere o aggiornare le informazioni del profilo di un utente tramite Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)
@@ -129,7 +129,7 @@ La definizione di segmenti non influisce sugli utenti. imposta solo la fase per 
 
     |Sintassi   |Esempio  |
     |---------|---------|
-    |`New-OrganizationSegment -Name "segmentname" -UserGroupFilter "attribute -eq 'attributevalue'"`     |`New-OrganizationSegment -Name "HR" -UserGroupFilter "Department -eq 'HR'"` <p>In questo esempio, un segmento denominato *HR* è definito utilizzando *HR*, un valore nell'attributo *Department* . La parte **-EQ** del cmdlet si riferisce a "uguale a". (In alternativa, è possibile utilizzare **-ne** per indicare "non uguale a". Vedere [utilizzo di "Equals" e "not equals" nelle definizioni di segmento](#using-equals-and-not-equals-in-segment-definitions).        |
+    |`New-OrganizationSegment -Name "segmentname" -UserGroupFilter "attribute -eq 'attributevalue'"`     |`New-OrganizationSegment -Name "HR" -UserGroupFilter "Department -eq 'HR'"` <p>In questo esempio, un segmento denominato *HR* è definito utilizzando *HR* , un valore nell'attributo *Department* . La parte **-EQ** del cmdlet si riferisce a "uguale a". (In alternativa, è possibile utilizzare **-ne** per indicare "non uguale a". Vedere [utilizzo di "Equals" e "not equals" nelle definizioni di segmento](#using-equals-and-not-equals-in-segment-definitions).        |
 
     Dopo aver eseguito ogni cmdlet, verrà visualizzato un elenco di dettagli sul nuovo segmento. I dettagli includono il tipo di segmento, che ha creato o modificato l'ultima volta e così via. 
 
@@ -150,7 +150,7 @@ Nell'esempio seguente viene definito un segmento in modo che "Department sia ugu
 |`New-OrganizationSegment -Name "HR" -UserGroupFilter "Department -eq 'HR'"` <p>Si noti che in questo esempio, la definizione del segmento include un parametro "Equals" indicato come **-EQ**. 
   |
 
-È inoltre possibile definire segmenti utilizzando un parametro "not equals", indicato come **-ne**, come illustrato nella tabella seguente:
+È inoltre possibile definire segmenti utilizzando un parametro "not equals", indicato come **-ne** , come illustrato nella tabella seguente:
 
 |Sintassi  |Esempio  |
 |---------|---------|
@@ -180,7 +180,7 @@ Con l'elenco dei segmenti di utenti e dei criteri barriera informativi che si de
 - [Scenario 2: consentire a un segmento di comunicare solo con un altro segmento](#scenario-2-allow-a-segment-to-communicate-only-with-one-other-segment)
 
 > [!IMPORTANT]
-> Assicurarsi **che durante la definizione dei criteri non venga assegnato più di un criterio a un segmento**. Ad esempio, se si definisce un criterio per un segmento denominato *Sales*, non definire un criterio aggiuntivo per le *vendite*.<p>Inoltre, quando si definiscono i criteri di barriera delle informazioni, assicurarsi di impostare tali criteri sullo stato inattivo fino a quando non si è pronti per applicarli. La definizione o la modifica dei criteri non influiscono sugli utenti finché tali criteri non sono impostati sullo stato attivo e quindi applicati.
+> Assicurarsi **che durante la definizione dei criteri non venga assegnato più di un criterio a un segmento**. Ad esempio, se si definisce un criterio per un segmento denominato *Sales* , non definire un criterio aggiuntivo per le *vendite*.<p>Inoltre, quando si definiscono i criteri di barriera delle informazioni, assicurarsi di impostare tali criteri sullo stato inattivo fino a quando non si è pronti per applicarli. La definizione o la modifica dei criteri non influiscono sugli utenti finché tali criteri non sono impostati sullo stato attivo e quindi applicati.
 
 Vedere l' [esempio: criteri di protezione delle informazioni di Contoso](#contosos-information-barrier-policies) in questo articolo.
 
@@ -256,11 +256,11 @@ Con PowerShell, è possibile visualizzare lo stato degli account utente, i segme
 
 |Per visualizzare questo  |Eseguire l'operazione seguente  |
 |---------|---------|
-|Account utente     |Utilizzare il cmdlet **Get-InformationBarrierRecipientStatus** con i parametri Identity. <p>Sintassi `Get-InformationBarrierRecipientStatus -Identity <value> -Identity2 <value>` <p>È possibile utilizzare qualsiasi valore che identifichi in modo univoco ogni utente, ad esempio nome, alias, nome distinto, nome di dominio canonico, indirizzo di posta elettronica o GUID. <p>Esempio: `Get-InformationBarrierRecipientStatus -Identity meganb -Identity2 alexw` <p>In questo esempio, si fa riferimento a due account utente in Office 365: *meganb* per *Megan*e *alexw* per *Alex*. <p>È inoltre possibile utilizzare questo cmdlet per un singolo `Get-InformationBarrierRecipientStatus -Identity <value>` utente: <p>Questo cmdlet restituisce informazioni sugli utenti, ad esempio i valori degli attributi e tutti i criteri di barriera delle informazioni applicati.|
+|Account utente     |Utilizzare il cmdlet **Get-InformationBarrierRecipientStatus** con i parametri Identity. <p>Sintassi `Get-InformationBarrierRecipientStatus -Identity <value> -Identity2 <value>` <p>È possibile utilizzare qualsiasi valore che identifichi in modo univoco ogni utente, ad esempio nome, alias, nome distinto, nome di dominio canonico, indirizzo di posta elettronica o GUID. <p>Esempio: `Get-InformationBarrierRecipientStatus -Identity meganb -Identity2 alexw` <p>In questo esempio, si fa riferimento a due account utente in Office 365: *meganb* per *Megan* e *alexw* per *Alex*. <p>È inoltre possibile utilizzare questo cmdlet per un singolo `Get-InformationBarrierRecipientStatus -Identity <value>` utente: <p>Questo cmdlet restituisce informazioni sugli utenti, ad esempio i valori degli attributi e tutti i criteri di barriera delle informazioni applicati.|
 |Segmenti     |Utilizzare il cmdlet **Get-OrganizationSegment** .<p>Sintassi `Get-OrganizationSegment` <p>In questo modo verrà visualizzato un elenco di tutti i segmenti definiti per l'organizzazione.         |
 |Criteri barriera di informazioni     |Utilizzare il cmdlet **Get-InformationBarrierPolicy** . <p> Sintassi `Get-InformationBarrierPolicy` <p>In questo modo verrà visualizzato un elenco di criteri barriera informativi definiti e il relativo stato.       |
 |Applicazione dei criteri barriera informativa più recente     | Utilizzare il cmdlet **Get-InformationBarrierPoliciesApplicationStatus** . <p>Sintassi `Get-InformationBarrierPoliciesApplicationStatus`<p>    Verranno visualizzate informazioni sul modo in cui l'applicazione del criterio è stata completata, non è riuscita o è in corso.       |
-|Tutte le applicazioni dei criteri barriera di informazioni|Usare `Get-InformationBarrierPoliciesApplicationStatus -All $true`<p>Verranno visualizzate informazioni sul modo in cui l'applicazione del criterio è stata completata, non è riuscita o è in corso.|
+|Tutte le applicazioni dei criteri barriera di informazioni|Usare `Get-InformationBarrierPoliciesApplicationStatus -All`<p>Verranno visualizzate informazioni sul modo in cui l'applicazione del criterio è stata completata, non è riuscita o è in corso.|
 
 <!-- IN the " The most recent information barrier policy application, add link to troubleshooting topic -->
 

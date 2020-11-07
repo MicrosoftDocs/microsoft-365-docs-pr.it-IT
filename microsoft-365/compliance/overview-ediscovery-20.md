@@ -20,16 +20,16 @@ search.appverid:
 ms.assetid: ''
 description: In questo articolo viene fornita una panoramica delle funzionalità avanzate di eDiscovery in Microsoft 365, uno strumento per le indagini interne ed esterne.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d8a43d8a7f0b1803b374839d8ed0d7d82c6adace
-ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
+ms.openlocfilehash: 95c864b9e2222000b1114ae42dbbb5705228d531
+ms.sourcegitcommit: dab50e1cc5bba920720b80033c93457f5ca1c330
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48399055"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "48944344"
 ---
 # <a name="overview-of-the-advanced-ediscovery-solution-in-microsoft-365"></a>Panoramica della soluzione avanzata di eDiscovery in Microsoft 365
 
-La soluzione avanzata di eDiscovery in Microsoft 365 si basa sulle funzionalità esistenti di eDiscovery e analisi di Office 365. Questa nuova soluzione, denominata *Advanced eDiscovery*, offre un flusso di lavoro end-to-end per conservare, raccogliere, rivedere, analizzare ed esportare il contenuto rispondente alle indagini interne ed esterne dell'organizzazione. Consente inoltre ai team legali di gestire l'intero flusso di lavoro di notifica per la conservazione legale per comunicare con i depositari coinvolti in un caso. 
+La soluzione avanzata di eDiscovery in Microsoft 365 si basa sulle funzionalità esistenti di eDiscovery e analisi di Office 365. Questa nuova soluzione, denominata *Advanced eDiscovery* , offre un flusso di lavoro end-to-end per conservare, raccogliere, rivedere, analizzare ed esportare il contenuto rispondente alle indagini interne ed esterne dell'organizzazione. Consente inoltre ai team legali di gestire l'intero flusso di lavoro di notifica per la conservazione legale per comunicare con i depositari coinvolti in un caso. 
 
 > [!NOTE]
 > Advanced eDiscovery richiede un abbonamento a Office 365 o Microsoft 365 E5 Enterprise. Per ulteriori informazioni sulle licenze avanzate di eDiscovery, vedere [Microsoft 365 Licensing Guidance for security & Compliance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#advanced-ediscovery).
@@ -44,27 +44,35 @@ Il flusso di lavoro incorporato di Advanced eDiscovery è allineato al processo 
 
 A livello elevato, ecco come Advanced eDiscovery supporta il flusso di lavoro di EDRM:
 
-- **Identificazione.** Dopo aver identificato potenziali persone di interesse in un'indagine, è possibile aggiungerle come depositari (denominate anche *depositari dei dati*, in quanto potrebbero essere in possesso di informazioni rilevanti per l'indagine) in un caso di eDiscovery avanzato. Dopo che gli utenti vengono aggiunti come depositari, è facile conservare, raccogliere e rivedere i documenti del custode.
+- **Identificazione.** Dopo aver identificato potenziali persone di interesse in un'indagine, è possibile aggiungerle come depositari (denominate anche *depositari dei dati* , in quanto potrebbero essere in possesso di informazioni rilevanti per l'indagine) in un caso di eDiscovery avanzato. Dopo che gli utenti vengono aggiunti come depositari, è facile conservare, raccogliere e rivedere i documenti del custode.
 
 - **Conservazione.** Per conservare e proteggere i dati rilevanti per un'indagine, Advanced eDiscovery consente di inserire una conservazione legale sulle origini dati associate ai depositari in un caso. È inoltre possibile inserire i dati non detentivi in attesa. Advanced eDiscovery dispone anche di un flusso di lavoro di comunicazione incorporato in modo da poter inviare notifiche di archiviazione legale ai depositari e tenere conto dei loro ringraziamenti.
 
 - **Raccolta.** Dopo aver identificato (e conservato) le origini dati rilevanti per l'analisi, è possibile utilizzare lo strumento di ricerca incorporato in Advanced eDiscovery Search for and Collect Live Data from the detenzione Data Sources (e le origini dati non detentive, se applicabile) che potrebbero essere rilevanti per il caso.
 
-- **Elaborazione.** Dopo aver raccolto tutti i dati rilevanti per il caso, il passaggio successivo consiste nel processo per ulteriori riesami e analisi. In Advanced eDiscovery, i dati sul posto identificati nella fase di raccolta vengono copiati in un percorso di archiviazione di Azure (denominato *set di revisione*), in cui viene fornita una visualizzazione statica dei dati del caso. 
- 
+- **Elaborazione.** Dopo aver raccolto tutti i dati rilevanti per il caso, il passaggio successivo consiste nel processo per ulteriori riesami e analisi. In Advanced eDiscovery, i dati sul posto identificati nella fase di raccolta vengono copiati in un percorso di archiviazione di Azure (denominato *set di revisione* ), in cui viene fornita una visualizzazione statica dei dati del caso. 
+
 - **Recensione.** Dopo aver aggiunto i dati a un set di revisione, è possibile visualizzare documenti specifici ed eseguire un'altra query per ridurre i dati a ciò che è più pertinente per il caso. Inoltre, è possibile annotare e contrassegnare documenti specifici.
- 
+
 - **Analisi.** Advanced eDiscovery fornisce uno strumento di analisi integrata che consente di eliminare i dati dall'insieme di revisione che si determina non è pertinente per l'indagine. Oltre a ridurre il volume dei dati rilevanti, Advance eDiscovery aiuta anche a salvare i costi di revisione legale, consentendo di organizzare il contenuto per semplificare e rendere più efficiente il processo di revisione.
 
 - **Produzione** e **presentazione.** Quando si è pronti, è possibile esportare i documenti da un set di revisione per la revisione legale. È possibile esportare documenti nel formato nativo o in un formato specificato per EDRM in modo che possano essere importati in applicazioni di revisione di terze parti.
 
-## <a name="advanced-ediscovery-workflow"></a>Flusso di lavoro avanzato di eDiscovery
+## <a name="advanced-ediscovery-architecture"></a>Architettura di eDiscovery avanzata
 
-Nelle sezioni seguenti vengono descritti i singoli passaggi del flusso di lavoro incorporato in Advanced eDiscovery. Nella schermata seguente viene illustrata la scheda **Home** di un caso denominato *Product passivity 2019002*. Nota le schede del flusso di lavoro nella parte superiore della pagina vengono sequenziate per essere allineate al processo EDRM. 
+Di seguito è riportato un diagramma di architettura di eDiscovery avanzato che consente di visualizzare il flusso di lavoro end-to-end in un ambiente geo singolo e in un ambiente multi-geografico e il flusso di dati end-to-end che è allineato con EDRM.
+
+[![Poster del modello: Advanced eDiscovery Architecture in Microsoft 365](../media/solutions-architecture-center/ediscovery-poster-thumb.png)](../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png)
+
+[Visualizzazione come immagine](../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png)
+
+[Scaricare come file PDF](https://download.microsoft.com/download/d/1/c/d1ce536d-9bcf-4d31-b75b-fcf0dc560665/m365-advanced-ediscovery-architecture.pdf)
+
+[Scaricare come file di Visio](https://download.microsoft.com/download/d/1/c/d1ce536d-9bcf-4d31-b75b-fcf0dc560665/m365-advanced-ediscovery-architecture.vsdx)
 
 Per ulteriori informazioni sul flusso di lavoro end-to-end in Advanced eDiscovery, vedere this [Microsoft Mechanics video](https://go.microsoft.com/fwlink/?linkid=2066133).
 
-![Le schede in Advanced eDiscovery seguono il flusso di lavoro di EDRM](../media/aedisco-homepage-1.png)
+Nelle sezioni seguenti vengono descritti i singoli passaggi del flusso di lavoro incorporato in Advanced eDiscovery.
 
 ## <a name="managing-custodians-and-non-custodial-data-sources"></a>Gestione di depositari e origini dati non detentive
 
@@ -80,7 +88,7 @@ Quando si aggiunge un custode a un caso, è possibile applicare un blocco ai dat
 
 ## <a name="indexing-custodian-data"></a>Indicizzazione dei dati del custode
 
-Quando si aggiunge un custode e le origini dati di custodia corrispondenti a un caso, qualsiasi elemento parzialmente indicizzato da un'origine dati di un oggetto depositaria viene reindicizzato tramite un processo denominato *Advanced indicizzazione*. In questo modo, è possibile eseguire ricerche per raccogliere i dati per il caso in cui vengano eseguiti contenuti di archiviazione, ad esempio immagini, tipi di file non supportati e altro contenuto potenzialmente non indicizzato. Utilizzare la scheda **elaborazione** per monitorare lo stato dell'indicizzazione avanzata e correggere gli errori di elaborazione utilizzando un *processo denominato correzione degli errori.* Per ulteriori informazioni, vedere [correggere gli errori di elaborazione in Advanced eDiscovery](processing-data-for-case.md).
+Quando si aggiunge un custode e le origini dati di custodia corrispondenti a un caso, tutti gli elementi parzialmente indicizzati provenienti da un'origine dati di un oggetto depositaria vengono reindicizzati tramite un processo denominato *Advanced indicizzazione*. In questo modo, è possibile eseguire ricerche per raccogliere i dati per il caso in cui vengano eseguiti contenuti di archiviazione, ad esempio immagini, tipi di file non supportati e altro contenuto potenzialmente non indicizzato. Utilizzare la scheda **elaborazione** per monitorare lo stato dell'indicizzazione avanzata e correggere gli errori di elaborazione utilizzando un *processo denominato correzione degli errori.* Per ulteriori informazioni, vedere [correggere gli errori di elaborazione in Advanced eDiscovery](processing-data-for-case.md).
 
 ## <a name="collecting-case-data"></a>Raccolta dei dati del caso
 
