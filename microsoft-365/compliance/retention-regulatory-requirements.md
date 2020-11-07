@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Risorse che consentono di soddisfare i requisiti normativi per la governance delle informazioni e la gestione dei record.
-ms.openlocfilehash: 2aa413400d9d60b759b35d04175b674cedb0a733
-ms.sourcegitcommit: 5a355bde865369f64ea1788a378da23c65b1d249
+ms.openlocfilehash: f8641af2ec839c9ed3f4d029b4f6de52fe7033e3
+ms.sourcegitcommit: 36795a6735cd3fc678c7d5db71ddc97fac3f6f8a
 ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 11/06/2020
-ms.locfileid: "48930189"
+ms.locfileid: "48941421"
 ---
 # <a name="regulatory-requirements-for-information-governance-and-records-management"></a>Requisiti normativi per la governance delle informazioni e la gestione dei record
 
@@ -36,7 +36,7 @@ Queste risorse sono disponibili per il download dalla pagina [Domande frequenti 
 
 Carichi di lavoro applicabili: SharePoint, OneDrive, Teams, Exchange e Skype for Business
 
-Pubblicato nel mese di ottobre 2020, il report è stato creato in collaborazione con Cohasset Associates, Inc. (Cohasset) per valutare le funzionalità dei servizi Microsoft 365 per la registrazione, l’archiviazione e la gestione dei requisiti per i record elettronici, come specificato da:  
+Pubblicato nel mese di novembre 2020, il report è stato creato in collaborazione con Cohasset Associates, Inc. (Cohasset) per valutare le funzionalità dei servizi Microsoft 365 per la registrazione, l’archiviazione e la gestione dei requisiti per i record elettronici, come specificato da:  
 
 - Securities and Exchange Commission (SEC) in 17 CFR § 240.17 a-4 (f), che regola gli operatori e i mediatori di borsa.   
 
