@@ -15,19 +15,19 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Gli amministratori possono sapere come identificare gruppi specifici di utenti con tag utente in Microsoft Defender per Office 365 piano 2. Il filtro tag è disponibile tra gli avvisi, i report e le indagini in Microsoft Defender per Office 365 per identificare rapidamente gli utenti contrassegnati.
-ms.openlocfilehash: fcc13a04ed603712bb2a45ccaadbaf161702c502
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 9c83a323a3116b3da61a133c7fb449978ca13841
+ms.sourcegitcommit: 9dbc6a08177aaca112e84d30dbaa79a0a8e9dbf8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48842881"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "48945319"
 ---
 # <a name="user-tags-in-microsoft-defender-for-office-365"></a>Tag utente in Microsoft Defender per Office 365
 
 > [!NOTE]
 > La funzionalità tag utente è in anteprima, non è disponibile per tutti, ed è soggetta a modifiche. Per informazioni sulla pianificazione dei rilasci, vedere la Guida di [orientamento di Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap).
 
-I tag utente sono identificatori di gruppi specifici di utenti in [Defender per Office 365](office-365-atp.md). Sono disponibili due tipi di tag utente:
+I tag utente sono identificatori per gruppi di utenti specifici in [Microsoft Defender per Office 365](office-365-atp.md). Sono disponibili due tipi di tag utente:
 
 - **Tag di sistema** : attualmente, gli [account di priorità](https://docs.microsoft.com/microsoft-365/admin/setup/priority-accounts) sono l'unico tipo di tag di sistema.
 - **Tag personalizzati** : creare personalmente questi tag utente.
