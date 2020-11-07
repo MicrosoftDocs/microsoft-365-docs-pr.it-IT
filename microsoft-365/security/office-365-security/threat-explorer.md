@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-office365
 description: Informazioni sull'utilizzo di Esplora risorse e sui rilevamenti in tempo reale nel centro sicurezza e &amp; conformità per esaminare e rispondere alle minacce in modo efficace ed efficiente.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a6123306c1d707a3eeab5c5dd67ed25bebb71965
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 6a1aff37cc845e09be332b853aa938cb66fdb43f
+ms.sourcegitcommit: 36795a6735cd3fc678c7d5db71ddc97fac3f6f8a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48845690"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "48941488"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>Esplora minacce e rilevamenti in tempo reale
 
@@ -53,7 +53,7 @@ Con questo rapporto, è possibile:
 > [!NOTE]
 > La funzionalità tag utente è in anteprima, non è disponibile per tutti, ed è soggetta a modifiche. Per informazioni sulla pianificazione dei rilasci, vedere la Guida di orientamento di Microsoft 365.
 
-I tag utente sono identificatori per gruppi di utenti specifici in Microsoft Defender per Office 365. Per ulteriori informazioni sui tag, la gestione delle licenze e la configurazione dei tag, vedere [tag degli utenti in Defender per Office 365](user-tags.md).
+I tag utente sono identificatori per gruppi di utenti specifici in Microsoft Defender per Office 365. Per ulteriori informazioni sui tag, sulla gestione delle licenze e sulla configurazione dei tag, vedere [tag utente](user-tags.md).
 
 In Esplora minacce, è possibile visualizzare le informazioni sui tag degli utenti nelle seguenti esperienze:
 
@@ -199,7 +199,7 @@ Nell'ambito del miglioramento del processo di ricerca, sono stati apportati alcu
 
 ### <a name="filter-by-user-tags"></a>Filtrare in base ai tag utente
 
-È ora possibile ordinare e filtrare in base al sistema o ai tag utente personalizzati, per afferrare rapidamente l'ambito delle minacce. Per ulteriori informazioni, vedere [tag degli utenti in Office 365 ATP](user-tags.md) .
+È ora possibile ordinare e filtrare in base al sistema o ai tag utente personalizzati, per afferrare rapidamente l'ambito delle minacce. Per ulteriori informazioni, vedere [tag utente](user-tags.md) .
 
 > [!IMPORTANT]
 > Il filtro e l'ordinamento in base ai tag utente è attualmente in anteprima pubblica.

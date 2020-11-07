@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: c28353698dd372e14d5ec51b92eb4c0c051c92a4
-ms.sourcegitcommit: 24826e1b61e7aace12fc9e8ae84ae3e760658b50
+ms.openlocfilehash: 642de80e1a133f212b7afb6774d9aab2eeaabdbf
+ms.sourcegitcommit: 36795a6735cd3fc678c7d5db71ddc97fac3f6f8a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 11/06/2020
-ms.locfileid: "48931913"
+ms.locfileid: "48941410"
 ---
 # <a name="fix-issues-found-by-the-readiness-assessment-tool"></a>Risolvere i problemi rilevati dallo strumento di valutazione della conformità
 
@@ -308,20 +308,20 @@ Sono state attivate le impostazioni predefinite per la sicurezza. Disattivare le
 
 ### <a name="self-service-password-reset"></a>Reimpostazione della password in modalità self-service
 
-La reimpostazione della password in modalità self-service (SSPR) deve essere abilitata per tutti gli utenti. In caso contrario, gli account di servizio di Microsoft Managed Desktop non possono funzionare. Per ulteriori informazioni, vedere [esercitazione: consentire agli utenti di sbloccare l'account o reimpostare le password tramite la reimpostazione della password self-service di Azure Active Directory](https://docs.microsoft.com/azure/active-directory/authentication/tutorial-enable-sspr).
+La reimpostazione della password self-service (SSPR) deve essere abilitata per tutti gli utenti che escludono gli account di servizio Microsoft Managed Desktop. Per ulteriori informazioni, vedere [esercitazione: consentire agli utenti di sbloccare l'account o reimpostare le password tramite la reimpostazione della password self-service di Azure Active Directory](https://docs.microsoft.com/azure/active-directory/authentication/tutorial-enable-sspr).
 
 **Consulenza**
 
-Verificare che l'impostazione SSPR **Selected** includa dispositivi Microsoft Managed Desktop.
+Verificare che l'impostazione SSPR **Selected** includa i dispositivi Microsoft Managed Desktop ma escluda gli account di servizio di Microsoft Managed Desktop. Gli account di servizio di Microsoft Managed Desktop non possono funzionare come previsto quando SSPR è abilitato.  
 
 
 ### <a name="standard-user-role"></a>Ruolo utente standard
 
-Gli utenti di Microsoft Managed Desktop devono essere utenti standard senza privilegi di amministratore locale. Al momento dell'avvio del dispositivo Microsoft Managed Desktop verrà assegnato un ruolo utente standard.
+A parte gli utenti a cui sono stati assegnati i ruoli di Azure AD di amministratore globale e amministratore di dispositivi, gli utenti di Microsoft Managed Desktop saranno utenti standard senza privilegi di amministratore locale. A tutti gli altri utenti verrà assegnato un ruolo utente standard quando avviano il dispositivo Microsoft Managed Desktop.
 
 **Consulenza**
 
-Gli utenti di Microsoft Managed Desktop non devono avere privilegi di amministratore locale prima di effettuare l'iscrizione.
+Gli utenti di Microsoft Managed Desktop non disporranno dei privilegi di amministratore locale nei dispositivi desktop Microsoft gestiti dopo la registrazione.
 
 ## <a name="microsoft-365-apps-for-enterprise"></a>Microsoft 365 Apps for enterprise
 

@@ -1,18 +1,18 @@
 ---
 title: Dati analitici sugli aggiornamenti della sicurezza di Windows
 description: ''
-keywords: Microsoft Managed Desktop, Microsoft 365, servizio, documentazione
+keywords: Microsoft Managed Desktop, Microsoft 365, servizi, documentazione
 ms.service: m365-md
 author: jaimeo
 ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 772d1d52e977a067ff9bc3517de9cb2ae6c8c9a3
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: b3b1f43217b3be285f20925065bf9710a38f9606
+ms.sourcegitcommit: 36795a6735cd3fc678c7d5db71ddc97fac3f6f8a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47950368"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "48941442"
 ---
 # <a name="windows-security-update-insights"></a>Dati analitici sugli aggiornamenti della sicurezza di Windows
 In questa visualizzazione viene fornita una panoramica dello stato degli aggiornamenti della sicurezza per i dispositivi Microsoft Managed Desktop. 
@@ -23,11 +23,11 @@ Per visualizzare i dati di utilizzo, selezionare la scheda aggiornamenti per la 
 
 ## <a name="device-status"></a>Stato del dispositivo
 
-Affinché i dispositivi vengano aggiornati da Windows Update, è necessario che siano connessi a Internet e che non siano in letargo per un minimo di sei ore, due dei quali devono essere continue. A condizione che un dispositivo sia connesso e che non sia in modalità ibernazione, viene considerato "in uso". Anche se è possibile che un dispositivo che non soddisfa questi requisiti venga aggiornato, i dispositivi che li soddisfano hanno la maggiore probabilità di essere aggiornati. 
+Affinché i dispositivi vengano aggiornati da Windows Update, è necessario che siano connessi a Internet e che non siano in letargo per un minimo di sei ore, due dei quali devono essere continue. Anche se è possibile che un dispositivo che non soddisfa questi requisiti venga aggiornato, i dispositivi che li soddisfano hanno la maggiore probabilità di essere aggiornati. 
 
 La categorizzazione dell'attività del dispositivo nel contesto di Windows Update viene confrontata con questi termini:
 
-- <strong>Attivo:</strong> Dispositivi che soddisfano i criteri di utilizzo minimi (sei ore, due continue) per la versione più recente dell'aggiornamento della sicurezza e che hanno eseguito l'archiviazione con Microsoft Intune almeno ogni cinque giorni
+- <strong>Attivo:</strong> Dispositivi che soddisfano i criteri minimi di attività (sei ore, due continue) per la versione di aggiornamento della sicurezza più recente e che sono stati archiviati con Microsoft Intune almeno ogni cinque giorni
 - <strong>Sincronizzati:</strong> Dispositivi che sono stati archiviati con Intune negli ultimi 28 giorni
 - Non <strong>sincronizzato:</strong> Dispositivi che <i>non</i> sono stati archiviati con Intune negli ultimi 28 giorni
 

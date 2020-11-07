@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Informazioni su come trovare e utilizzare i report sulla sicurezza della posta elettronica per l'organizzazione. I report sulla sicurezza della posta elettronica sono disponibili nel centro sicurezza & conformità.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 36d7fde77ae8a6280dae26e5a0f7a75537bf28d4
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: fafb499e40c0014a85c9566b3e5aadf2751202a1
+ms.sourcegitcommit: 36795a6735cd3fc678c7d5db71ddc97fac3f6f8a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48841873"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "48941476"
 ---
 # <a name="view-email-security-reports-in-the-security--compliance-center"></a>Visualizzare i report sulla sicurezza della posta elettronica nel Centro sicurezza e conformità
 
@@ -336,7 +336,7 @@ Sono disponibili le visualizzazioni seguenti:
 
 - **Scomposizione per: tecnologia di rilevamento** e **visualizzazione dei dati in base a: posta elettronica \> malware** : vengono visualizzate le informazioni seguenti:
 
-  - **Reputazione dei file generati dal trifosfato di adenosina**<sup>1</sup>: la reputazione di tutti i file dannosi generati da detonazioni ATP.
+  - **Reputazione dei file generati dal trifosfato di adenosina**<sup>1</sup>: tutti i file dannosi reputazione generati da Defender per Office 365 detonazioni.
   - **Motore anti-malware**<sup>1</sup>: rilevamento da motori antimalware.
   - **Blocco dei tipi di file di criteri antimalware** : si tratta di messaggi di posta elettronica filtrati a causa del tipo di file dannoso identificato nel messaggio.
   - **Detonazione file**<sup>1</sup>: la detonazione dei file viene intercettata da allegati sicuri.  

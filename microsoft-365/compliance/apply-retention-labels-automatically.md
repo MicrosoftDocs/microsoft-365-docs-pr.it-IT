@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Creare e pubblicare automaticamente etichette di conservazione in modo da poter applicare automaticamente etichette per conservare ciò che serve ed eliminare ciò che non serve
-ms.openlocfilehash: cb8b6840085a1a044c0bcb7bf8b09c5776a31e0e
-ms.sourcegitcommit: 31f25790b37dfb740530017ef1701db0c5134829
+ms.openlocfilehash: 5833684c729876315ce3866a8af52d79b924caef
+ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2020
-ms.locfileid: "48740270"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48920020"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>Applicare automaticamente un'etichetta di conservazione per conservare o eliminare il contenuto
 
@@ -86,9 +86,9 @@ Le istruzioni di spostamento variano a seconda che si usi o meno la [gestione de
     
     - Per informazioni sui descrittori del piano di archiviazione, vedere [Usare il piano di archiviazione per gestire le etichette di conservazione](file-plan-manager.md).
     
-    - Per usare le etichette di conservazione per dichiarare i record, selezionare **Contrassegna elementi come record**o **Contrassegna elementi come record normativi**. Per altre informazioni, vedere [Configurare le etichette di conservazione per dichiarare i record](declare-records.md#configuring-retention-labels-to-declare-records).
+    - Per usare le etichette di conservazione per dichiarare i record, selezionare **Contrassegna elementi come record** o **Contrassegna elementi come record normativi**. Per altre informazioni, vedere [Configurare le etichette di conservazione per dichiarare i record](declare-records.md#configuring-retention-labels-to-declare-records).
 
-3. Una volta creata l'etichetta e dopo la comparsa dell'opzione per pubblicarla, applicare automaticamente l'etichetta o semplicemente salvarla: selezionare **Applica automaticamente questa etichetta a un tipo specifico di contenuto**, quindi selezionare **Fatto** per avviare la procedura guidata di creazione automatica delle etichette e procedere direttamente al passaggio 2 della procedura seguente.
+3. Una volta creata l'etichetta e dopo la comparsa dell'opzione per pubblicarla, applicare automaticamente l'etichetta o semplicemente salvarla: selezionare **Applica automaticamente questa etichetta a un tipo specifico di contenuto** , quindi selezionare **Fatto** per avviare la procedura guidata di creazione automatica delle etichette e procedere direttamente al passaggio 2 della procedura seguente.
 
 Per modificare un'etichetta esistente, selezionarla e quindi selezionare l'opzione **Modifica etichetta** per avviare la procedura guidata di modifica che consente di modificare le descrizioni dell'etichetta e qualsiasi [impostazione idonea](#updating-retention-labels-and-their-policies) del passaggio 2.
 
@@ -99,7 +99,7 @@ Quando si crea un criterio di applicazione automatica, si seleziona un'etichetta
 
 1. Nel [Centro conformità Microsoft 365](https://compliance.microsoft.com/) passare a una delle posizioni seguenti:
     
-    - Se si usa la gestione dei record: **Governance delle informazioni**:
+    - Se si usa la gestione dei record: **Governance delle informazioni** :
         - **Soluzioni** > **Gestione dei record** > scheda **Criteri delle etichette** > **Applica automaticamente etichetta**
     
     - Se non si usa la gestione dei record:
@@ -128,7 +128,7 @@ Per modificare un criterio di applicazione automatica esistente, selezionarlo pe
 
 #### <a name="auto-apply-labels-to-content-with-specific-types-of-sensitive-information"></a>Applicare automaticamente etichette al contenuto con tipi specifici di informazioni sensibili
 
-Quando si creano etichette di conservazione ad applicazione automatica per le informazioni riservate, viene visualizzato lo stesso elenco di modelli di criteri mostrato quando si creano criteri di prevenzione della perdita dei dati (DLP). Ogni modello è preconfigurato in modo da cercare specifici tipi di informazioni riservate. Ad esempio, il modello mostrato qui cerca i numeri ITIN, SSN e di passaporto nella categoria **Privacy**, e nel **Modello dati personali (PII) Stati Uniti**:
+Quando si creano criteri di conservazione ad applicazione automatica per le informazioni riservate, viene visualizzato lo stesso elenco di modelli di criteri mostrato quando si creano criteri di prevenzione della perdita dei dati (DLP). Ogni modello è preconfigurato in modo da cercare specifici tipi di informazioni riservate. Ad esempio, il modello mostrato qui cerca i numeri ITIN, SSN e di passaporto nella categoria **Privacy** , e nel **Modello dati personali (PII) Stati Uniti** :
 
 ![Modelli di criteri con le tipologie di informazioni sensibili](../media/dafd87d4-c7bb-439a-ac7b-193c018f98a5.png)
 
@@ -136,7 +136,7 @@ Per altre informazioni sui tipi di informazioni sensibili, vedere [Definizioni d
 
 Dopo aver selezionato un modello di criteri, è possibile aggiungere o rimuovere qualunque tipo di informazione riservata e modificare il numero di istanze e l'accuratezza della corrispondenza. Nella schermata di esempio seguente, un'etichetta di conservazione sarà applicata automaticamente solo quando:
   
-- Il tipo di informazioni sensibili rilevate ha un'accuratezza della corrispondenza (o livello di attendibilità) di almeno 75. Molti tipi di informazioni sensibili sono definiti con più criteri. I criteri con un livello di accuratezza della corrispondenza superiore richiedono l'individuazione di ulteriori elementi di prova (ad esempio parole chiave, date o indirizzi), mentre i criteri con un livello di accuratezza della corrispondenza inferiore richiedono meno elementi di prova. Più basso è il valore di accuratezza della corrispondenza **min**, più facile sarà che il contenuto soddisfi la condizione.
+- Il tipo di informazioni sensibili rilevate ha un'accuratezza della corrispondenza (o livello di attendibilità) di almeno 75. Molti tipi di informazioni sensibili sono definiti con più criteri. I criteri con un livello di accuratezza della corrispondenza superiore richiedono l'individuazione di ulteriori elementi di prova (ad esempio parole chiave, date o indirizzi), mentre i criteri con un livello di accuratezza della corrispondenza inferiore richiedono meno elementi di prova. Più basso è il valore di accuratezza della corrispondenza **min** , più facile sarà che il contenuto soddisfi la condizione.
 
 - Il contenuto include tra 1 e 9 istanze di qualsiasi di questi tre tipi di informazioni riservate. È possibile eliminare il valore **a** in modo che diventi **Qualsiasi**.
 
@@ -174,7 +174,7 @@ Esempi di query:
 > [!NOTE]
 > La funzionalità che consente di mantenere o eliminare le registrazioni delle riunioni di Teams verrà rilasciata in anteprima, e non sarà disponibile prima che le registrazioni siano salvate in OneDrive o SharePoint. Per altre informazioni, vedere [Usare OneDrive for Business e SharePoint o Stream per registrare le riunioni](https://docs.microsoft.com/MicrosoftTeams/tmr-meeting-recording-change).
 
-Per identificare le registrazioni delle riunioni di Microsoft Teams salvate negli account OneDrive degli utenti o in SharePoint, specificare quanto segue nell'**Editor di query con parole chiave**:
+Per identificare le registrazioni delle riunioni di Microsoft Teams salvate negli account OneDrive degli utenti o in SharePoint, specificare quanto segue nell' **Editor di query con parole chiave** :
 
 ``` 
 ProgID:Media AND ProgID:Meeting
@@ -182,24 +182,24 @@ ProgID:Media AND ProgID:Meeting
 
 Questa etichetta di conservazione deve anche essere pubblicata negli account OneDrive degli utenti o nei siti di SharePoint pertinenti, creando un criterio per l'etichetta. Nella maggior parte dei casi le registrazioni delle riunioni vengono salvate in OneDrive, ma le riunioni di canale vengono salvate in SharePoint.
 
-Dopo aver salvato i criteri di applicazione automatica:
+Dopo aver salvato i criteri di applicazione automatica delle etichette di conservazione:
 
 1. Selezionare **Criteri delle etichette** scheda > **Pubblica etichette**
 
-2. Quando viene richiesto di selezionare un'etichetta, scegliere quella creata con la query KQL per identificare le registrazioni delle riunioni di Teams.
+2. Quando viene chiesto di selezionare un'etichetta, scegliere la stessa etichetta selezionata per il criterio di applicazione automatica che identifica le registrazioni delle riunioni di Teams.
 
-3. Quando viene richiesta la posizione, scegliere **siti di SharePoint** e **account di OneDrive**. Si può mantenere il valore predefinito, **Tutte**, oppure immettere posizioni specifiche, ad esempio includendo o escludendo specifici account di OneDrive. 
+3. Quando viene richiesta la posizione, scegliere **siti di SharePoint** e **account di OneDrive**. Si può mantenere il valore predefinito, **Tutte** , oppure immettere posizioni specifiche, ad esempio includendo o escludendo specifici account di OneDrive. 
 
 4. Completare la procedura guidata e salvare i criteri dell'etichetta.
 
 #### <a name="auto-apply-labels-to-content-by-using-trainable-classifiers"></a>Etichette applicate automaticamente al contenuto con classificatori sottoponibili a training
 
-Se si sceglie l'opzione del classificatore sottoponibile a training, è possibile selezionare un classificatore predefinito oppure personalizzato. I classificatori predefiniti includono i **curriculum**, il **codice sorgente**, le **molestie mirate**, i **contenuti volgari** e le **minacce**:
+Se si sceglie l'opzione del classificatore sottoponibile a training, è possibile selezionare un classificatore predefinito oppure personalizzato. I classificatori predefiniti includono i **curriculum** , il **codice sorgente** , le **molestie mirate** , i **contenuti volgari** e le **minacce** :
 
 ![Scegliere un classificatore sottoponibile a training](../media/retention-label-classifers.png)
 
 > [!CAUTION]
-> Il classificatore predefinito **Linguaggio offensivo** è stato deprecato perché generava un numero elevato di falsi positivi. Non usare questo classificatore predefinito e, se è in uso, è consigliabile spostare i processi aziendali da esso. Usare invece i classificatori predefiniti per **molestie**, **volgarità** e **minacce**.
+> Il classificatore predefinito **Linguaggio offensivo** è stato deprecato perché generava un numero elevato di falsi positivi. Non usare questo classificatore predefinito e, se è in uso, è consigliabile spostare i processi aziendali da esso. Usare invece i classificatori predefiniti per **molestie** , **volgarità** e **minacce**.
 
 Per applicare automaticamente un'etichetta utilizzando questa opzione, i siti e le cassette postali di SharePoint devono avere almeno 10 MB di dati.
 
@@ -224,8 +224,6 @@ Se le etichette previste non compaiono dopo sette giorni, verificare lo **stato*
     Set-RetentionCompliancePolicy -Identity <policy name> -RetryDistribution
    ```
 
-
-
 ## <a name="updating-retention-labels-and-their-policies"></a>Aggiornare le etichette di conservazione e i criteri
 
 Quando si modifica un'etichetta di conservazione o un criterio di applicazione automatica e l'etichetta di conservazione è già applicata al contenuto, le impostazioni aggiornate verranno applicate automaticamente a tale contenuto oltre che a quello identificato per la prima volta.
@@ -234,6 +232,10 @@ Alcune impostazioni non possono essere modificate dopo aver creato e salvato l'e
 - Le impostazioni di conservazione tranne il periodo di conservazione, a meno che l'etichetta non sia stata configurata per conservare o eliminare il contenuto in base alla data di creazione.
 - Opzione per contrassegnare gli elementi come record.
 
+## <a name="locking-the-policy-to-prevent-changes"></a>Blocco dei criteri per evitare le modifiche
+
+Se occorre fare in modo che nessuno possa disattivare o eliminarle i criteri o renderli meno restrittivi, vedere [Usare la protezione dell'archiviazione per limitare le modifiche ai criteri di conservazione e ai criteri per le etichette di conservazione](retention-preservation-lock.md).
+
 ## <a name="next-steps"></a>Passaggi successivi
 
-Vedere [Usare etichette di riservatezza per gestire il ciclo di vita dei documenti archiviati in SharePoint](auto-apply-retention-labels-scenario.md) per uno scenario di esempio in cui vengono usati un criterio di applicazione automatica con proprietà gestite in SharePoint conservazione e la conservazione basata su eventi per avviare il periodo di conservazione.
+Vedere [Usare etichette di riservatezza per gestire il ciclo di vita dei documenti archiviati in SharePoint](auto-apply-retention-labels-scenario.md) per uno scenario di esempio in cui viene usato un criterio di applicazione automatica dell'etichetta di conservazione con proprietà gestite in SharePoint, e la conservazione basata su eventi per avviare il periodo di conservazione.

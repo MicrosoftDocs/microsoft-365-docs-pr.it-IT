@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 description: Informazioni sulle visualizzazioni della campagna in Microsoft Defender per Office 365.
-ms.openlocfilehash: 7ee4f724295994a402a006906412c5d84bab5095
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 181b6ce5859dd5146512fe854c983b6b9096d8c6
+ms.sourcegitcommit: 36795a6735cd3fc678c7d5db71ddc97fac3f6f8a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48845937"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "48941356"
 ---
 # <a name="campaign-views-in-microsoft-defender-for-office-365"></a>Visualizzazioni della campagna in Microsoft Defender per Office 365
 
@@ -60,11 +60,8 @@ Le visualizzazioni della campagna sono disponibili nel [Centro sicurezza & confo
 È inoltre possibile accedere alle visualizzazioni della campagna da:
 
 - **Gestione delle minacce** \> **Gestione risorse** \> **Visualizzazione** \> **Campagne**
-
 - **Gestione delle minacce** \> **Gestione risorse** \> **Visualizzazione** \> **Tutti i messaggi di posta elettronica** \> Scheda **campagna**
-
 - **Gestione delle minacce** \> **Gestione risorse** \> **Visualizzazione** \> **Phishing** \> Scheda **campagna**
-
 - **Gestione delle minacce** \> **Gestione risorse** \> **Visualizzazione** \> **Malware** \> Scheda **campagna**
 
 Per accedere alle visualizzazioni della campagna, è necessario essere membri dei gruppi di ruoli **Gestione organizzazione** , **amministratore sicurezza** o **lettore di sicurezza** nel centro sicurezza & conformità. Per altre informazioni, vedere [Autorizzazioni nel Centro sicurezza e conformità](permissions-in-the-security-and-compliance-center.md).
@@ -89,12 +86,10 @@ La parte restante della pagina Panoramica Visualizza le informazioni seguenti ne
 - **Type** : questo valore è **phishing** o **malware**.
 
 - **Sottotipo** : questo valore contiene maggiori dettagli sulla campagna. Ad esempio:
-
   - **Phishing** : se disponibile, il marchio che viene phishing da questa campagna. Ad esempio,,,, `Microsoft` `365` `Unknown` `Outlook` o `DocuSign` .
-
   - **Malware** : ad esempio, `HTML/PHISH` o `HTML/<MalwareFamilyName>` .
 
-Se disponibile, il marchio che viene phishing da questa campagna. Quando il rilevamento è guidato dalla tecnologia ATP, il prefisso **ATP-** viene aggiunto al valore del sottotipo.
+  Se disponibile, il marchio che viene phishing da questa campagna. Quando il rilevamento è guidato da Defender per la tecnologia Office 365, il prefisso **ATP-** viene aggiunto al valore del sottotipo.
 
 - **Destinatari** : il numero di utenti oggetti dell'attacco della campagna.
 
@@ -123,7 +118,6 @@ Per filtrare ulteriormente la visualizzazione, è possibile eseguire una singola
 Le proprietà della campagna disponibili sono descritte nell'elenco seguente:
 
 - Basic
-
   - **Tipo di campagna** : selezionare **malware** o **phishing**. La cancellazione delle selezioni ha lo stesso risultato della selezione di entrambi.
   - **Nome della campagna**
   - **Sottotipo di campagna**
@@ -139,17 +133,13 @@ Le proprietà della campagna disponibili sono descritte nell'elenco seguente:
   - **Sostituzioni del sistema**
 
 - Avanzate
-
   - **ID messaggio Internet** : disponibile nel campo di intestazione **Message-ID** nell'intestazione del messaggio. Un valore di esempio è `<08f1e0f6806a47b4ac103961109ae6ef@server.domain>` (si notino le parentesi angolari).
-  
   - **ID messaggio di rete** : valore GUID disponibile nel campo di intestazione **X-MS-Exchange-Organization-network-Message-ID** nell'intestazione del messaggio.
-  
   - **Indirizzo IP mittente**
-  
   - **Attachment SHA256** : per trovare il valore hash SHA256 di un file in Windows, eseguire il comando seguente in un prompt dei comandi: `certutil.exe -hashfile "<Path>\<Filename>" SHA256` .
-  
+
   - **ID cluster**
-  
+
   - **ID criteri di avviso**
 
 - URL
@@ -187,7 +177,6 @@ Nella parte superiore della visualizzazione dettagli campagna sono disponibili l
 - **Started** and **ended** : la data di inizio e la data di fine della campagna. Si noti che queste date potrebbero essere estese oltre le date di filtro selezionate nella pagina panoramica.
 
 - **Impatto** : in questa sezione sono contenuti i dati seguenti per il filtro intervallo di date selezionato (o che si seleziona nella sequenza temporale):
-  
   - Numero totale di destinatari.
   - Il numero di messaggi che sono stati "ricevuti" (ovvero recapitati nella posta in arrivo, non nella cartella posta indesiderata).
   - Il numero di utenti che hanno fatto clic sul payload URL nel messaggio di phishing.
@@ -215,9 +204,7 @@ Se si passa il mouse su una fascia orizzontale nel diagramma, viene visualizzato
 Il diagramma include le seguenti informazioni:
 
 - **Indirizzi IP mittenti**
-
 - **Domini mittenti**
-
 - **Verdetti del filtro** : i valori del verdetto sono correlati ai verdetti del filtro antispamming e di phishing disponibili come descritto nelle intestazioni dei messaggi di protezione dalla [posta indesiderata](anti-spam-message-headers.md). I valori disponibili sono descritti nella tabella seguente:
 
   ****
@@ -241,7 +228,6 @@ Il diagramma include le seguenti informazioni:
   <sup>\*\*</sup> Esaminare i criteri di protezione da posta indesiderata, poiché tali messaggi devono essere messi in quarantena, non recapitati.
 
 - **Posizioni di recapito** : è probabile che si desideri esaminare i messaggi che sono stati recapitati ai destinatari (nella cartella posta in arrivo o posta indesiderata), anche se gli utenti non hanno fatto clic sull'URL payload del messaggio. È inoltre possibile rimuovere i messaggi in quarantena dalla quarantena. Per ulteriori informazioni, vedere [messaggi di posta elettronica in quarantena in EOP](quarantine-email-messages.md).
-
   - **Cartella eliminata**
   - **Interrotte**
   - **External** : il destinatario si trova nell'organizzazione di posta elettronica locale in ambienti ibridi.
@@ -264,13 +250,9 @@ Quando un messaggio di phishing viene recapitato nella cartella posta in arrivo 
 Se un utente ha fatto clic sull'URL payload nel messaggio di phishing, le azioni vengono visualizzate nell'area **clic URL** del diagramma nella visualizzazione dettagli campagna.
 
 - **Consentito**
-
 - **BlockPage** : il destinatario ha fatto clic sull'URL payload, ma l'accesso al sito Web dannoso è stato bloccato da un criterio [collegamenti sicuri](atp-safe-links.md) nell'organizzazione.
-
 - **BlockPageOverride** : il destinatario ha fatto clic sull'URL payload nel messaggio, i collegamenti sicuri hanno tentato di arrestarli, ma sono stati autorizzati a eseguire l'override del blocco. Esaminare i [criteri dei collegamenti sicuri](set-up-atp-safe-links-policies.md) per individuare il motivo per cui gli utenti possono ignorare il verdetto relativo ai collegamenti sicuri e continuare con il sito Web dannoso.
-
 - **PendingDetonationPage** : allegati sicuri in Microsoft Defender per Office 365 è in fase di apertura e analisi dell'URL di payload in un ambiente computer virtuale.
-
 - **PendingDetonationPageOverride** : al destinatario è stato consentito di ignorare il processo di detonazione del payload e di aprire l'URL senza attendere i risultati.
 
 ### <a name="tabs"></a>Schede
@@ -281,14 +263,12 @@ Le schede nella visualizzazione dettagli campagna consentono di analizzare ulter
 > Le informazioni visualizzate nelle schede sono controllate dall'intervallo di date ombreggiato nella sequenza temporale, come descritto nella sezione [informazioni sulla campagna](#campaign-information) .
 
 - **Clic URL** : se gli utenti non hanno fatto clic sull'URL payload nel messaggio, questa sezione sarà vuota. Se un utente è stato in grado di fare clic sull'URL, verranno inseriti i valori seguenti:
-
   - **Utente:**<sup>\*</sup>
   - **URL**<sup>\*</sup>
   - **Fare clic su tempo**
   - **Fare clic su verdetto**
 
 - **Indirizzi IP mittenti**
-
   - **Indirizzo IP mittente**<sup>\*</sup>
   - **Conteggio totale**
   - **Posta in arrivo**
@@ -296,7 +276,6 @@ Le schede nella visualizzazione dettagli campagna consentono di analizzare ulter
   - **SPF superato** : il mittente è stato autenticato da [Sender Policy Framework (SPF)](how-office-365-uses-spf-to-prevent-spoofing.md). Un mittente che non supera la convalida SPF indica un mittente non autenticato oppure il messaggio spoofing è un mittente legittimo.
 
 - **Mittenti**
-
   - **Sender** : questo è l'indirizzo effettivo del mittente nel comando SMTP mail from, che non è necessariamente l'indirizzo di posta elettronica da: che gli utenti visualizzano nei client di posta elettronica.
   - **Conteggio totale**
   - **Posta in arrivo**
@@ -305,14 +284,12 @@ Le schede nella visualizzazione dettagli campagna consentono di analizzare ulter
   - **DMARC superato** : il mittente è stato autenticato da [autenticazione dei messaggi basata sul dominio, Reporting e conformità (DMARC)](use-dmarc-to-validate-email.md). Un mittente che non supera la convalida di DMARC indica un mittente non autenticato o il messaggio è spoofing di un mittente legittimo.
 
 - **Allegati**
-
   - **Filename**
   - **SHA256**
   - **Famiglia di malware**
   - **Conteggio totale**
 
 - **URL**
-
   - **URL**<sup>\*</sup>
   - **Conteggio totale**
 
@@ -323,5 +300,4 @@ Le schede nella visualizzazione dettagli campagna consentono di analizzare ulter
 I pulsanti nella visualizzazione dei dettagli della campagna consentono di usare la potenza di Esplora minacce per approfondire la campagna.
 
 - **Esplora minacce** : apre una nuova scheda di ricerca in Esplora minacce usando il valore **ID campagna** come filtro di ricerca.
-
 - **Esplorare i messaggi in arrivo** : apre una nuova scheda di ricerca di Esplora minacce utilizzando l' **ID della campagna** e il **percorso di recapito: posta in arrivo** come filtro di ricerca.
