@@ -14,12 +14,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: gli scenari di minacce e attacchi più comuni attualmente affrontati dalle organizzazioni per gli ambienti Microsoft 365 e le azioni consigliate per attenuare tali rischi.
-ms.openlocfilehash: b359b16042d419a06096a48ddcbc50affbcc4cd6
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 64f4491db3dc4ef18411b166fb23c4388383dae2
+ms.sourcegitcommit: dab50e1cc5bba920720b80033c93457f5ca1c330
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48843129"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "48944305"
 ---
 # <a name="microsoft-365-security-for-business-decision-makers-bdms"></a>Microsoft 365 Security for Business Decision Makers (BDMs)
 
@@ -30,6 +30,8 @@ Questo articolo è organizzato in base alla priorità del lavoro, a partire dall
 [![Immagine del pollice Microsoft 365 adesso Security consigliati foglio di calcolo](../downloads/microsoft-365-bdm-security-recommendations-spreadsheet-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/Microsoft-365-BDM-security-recommendations-spreadsheet.xlsx)
 
 Microsoft fornisce lo strumento di valutazione sicura all'interno del tenant per analizzare automaticamente la posizione di sicurezza in base alle attività normali, assegnare un punteggio e fornire suggerimenti per il miglioramento della sicurezza. Prima di prendere le azioni consigliate in questo articolo, prendere nota del punteggio corrente e suggerimenti. Le azioni consigliate in questo articolo aumenteranno il punteggio. L'obiettivo non è quello di ottenere il punteggio massimo, ma di essere a conoscenza delle opportunità di protezione dell'ambiente in modo da non influire negativamente sulla produttività per gli utenti. Vedere [Microsoft Secure Score](mtp/microsoft-secure-score.md).
+
+![Attenersi alla procedura seguente per attenuare i rischi per la propria azienda.](../media/security/security-for-bdms-overview.png)
 
 Un'altra cosa prima di iniziare. . . Assicurarsi di [abilitare il log di controllo](../compliance/search-the-audit-log-in-security-and-compliance.md). Questi dati sono necessari in un secondo momento, nel caso in cui sia necessario indagare su un incidente o una violazione. 
 
