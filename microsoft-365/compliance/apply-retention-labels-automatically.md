@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Creare e pubblicare automaticamente etichette di conservazione in modo da poter applicare automaticamente etichette per conservare ciò che serve ed eliminare ciò che non serve
-ms.openlocfilehash: 5833684c729876315ce3866a8af52d79b924caef
-ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
+ms.openlocfilehash: c1c18f5445b326ad7353d8c534940d3db69a3f24
+ms.sourcegitcommit: 24826e1b61e7aace12fc9e8ae84ae3e760658b50
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48920020"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "48931980"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>Applicare automaticamente un'etichetta di conservazione per conservare o eliminare il contenuto
 
@@ -180,17 +180,8 @@ Per identificare le registrazioni delle riunioni di Microsoft Teams salvate negl
 ProgID:Media AND ProgID:Meeting
 ```
 
-Questa etichetta di conservazione deve anche essere pubblicata negli account OneDrive degli utenti o nei siti di SharePoint pertinenti, creando un criterio per l'etichetta. Nella maggior parte dei casi le registrazioni delle riunioni vengono salvate in OneDrive, ma le riunioni di canale vengono salvate in SharePoint.
+Nella maggior parte dei casi, le registrazioni delle riunioni vengono salvate in OneDrive. Tuttavia, le riunioni di canale vengono salvate in SharePoint.
 
-Dopo aver salvato i criteri di applicazione automatica delle etichette di conservazione:
-
-1. Selezionare **Criteri delle etichette** scheda > **Pubblica etichette**
-
-2. Quando viene chiesto di selezionare un'etichetta, scegliere la stessa etichetta selezionata per il criterio di applicazione automatica che identifica le registrazioni delle riunioni di Teams.
-
-3. Quando viene richiesta la posizione, scegliere **siti di SharePoint** e **account di OneDrive**. Si può mantenere il valore predefinito, **Tutte** , oppure immettere posizioni specifiche, ad esempio includendo o escludendo specifici account di OneDrive. 
-
-4. Completare la procedura guidata e salvare i criteri dell'etichetta.
 
 #### <a name="auto-apply-labels-to-content-by-using-trainable-classifiers"></a>Etichette applicate automaticamente al contenuto con classificatori sottoponibili a training
 
@@ -216,7 +207,7 @@ In caso di applicazione automatica di etichette di conservazione, possono essere
 
 Se le etichette previste non compaiono dopo sette giorni, verificare lo **stato** del criterio di applicazione automatica selezionandolo dalla pagina **Criteri etichetta** nel centro conformità. Se viene visualizzato lo stato **Disattivato (errore)** e nei dettagli per i percorsi viene visualizzato un messaggio che richiede più tempo del previsto per la distribuzione del criterio (per SharePoint) o per provare a ridistribuire i criteri (per OneDrive), provare a eseguire il comando di PowerShell [Set-RetentionCompliancePolicy](https://docs.microsoft.com/powershell/module/exchange/set-retentioncompliancepolicy) per riprovare la distribuzione dei criteri:
 
-1. [Connettersi a PowerShell in Centro sicurezza e conformità](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell)
+1. [Connettersi a PowerShell in Centro sicurezza e conformità](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell).
 
 2. Eseguire il comando seguente:
     
