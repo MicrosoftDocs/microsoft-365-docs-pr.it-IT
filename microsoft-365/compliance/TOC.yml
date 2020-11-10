@@ -487,7 +487,9 @@
               href: de-duplication-in-ediscovery-search-results.md
             - name: Differenze tra i risultati della ricerca stimati ed effettivi
               href: differences-between-estimated-and-actual-ediscovery-search-results.md
-        - name: Eseguire gli script di PowerShell per la ricerca contenuto
+            - name: Decrittografia negli strumenti di eDiscovery
+              href: ediscovery-decryption.md
+        - name: Script di PowerShell per la ricerca contenuto
           items:
             - name: Usare la ricerca contenuto per le raccolte di destinazione
               href: use-content-search-for-targeted-collections.md
