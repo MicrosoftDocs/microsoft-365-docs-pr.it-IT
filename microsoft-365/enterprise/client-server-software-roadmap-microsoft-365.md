@@ -13,18 +13,18 @@ localization_priority: Normal
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: Utilizzare questa guida di orientamento per configurare il software client e server per Microsoft 365.
-ms.openlocfilehash: 2fb63f73ad49c68cbeb6c92497835c36f9faf737
-ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
+ms.openlocfilehash: 7ebb48eb474991feae325cab00ebc2a0e9348db8
+ms.sourcegitcommit: 9bf6a4f77f9af5fd988f6795bad3b240213a51fc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48920443"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48950962"
 ---
 # <a name="client-and-server-software-roadmap-for-microsoft-365"></a>Roadmap software client e server per Microsoft 365
 
-La maggior parte delle organizzazioni dell'organizzazione dispone di un ambiente eterogeneo che include più versioni di sistemi operativi, software client e server. Microsoft 365 Enterprise include le versioni più sicure dei componenti principali dell'infrastruttura IT. Include anche funzionalità di produttività progettate per sfruttare le tecnologie cloud.
+La maggior parte delle organizzazioni dell'organizzazione dispone di un ambiente eterogeneo che include più versioni di sistemi operativi, software client e server. Microsoft 365 per Enterprise include le versioni più sicure dei componenti chiave dell'infrastruttura IT. Include anche funzionalità di produttività progettate per sfruttare le tecnologie cloud.
 
-Per ottimizzare il valore aziendale della famiglia integrata dei prodotti Microsoft 365 Enterprise, iniziare a pianificare e implementare una strategia per eseguire la migrazione delle versioni di quanto segue:
+Per massimizzare il valore aziendale della famiglia di prodotti integrata Microsoft 365 for Enterprise, iniziare la pianificazione e l'implementazione di una strategia per la migrazione dei rilasci di:
 
 - Il client di Office installato nei computer a Microsoft 365 Apps for Enterprise.
 - I server di Office installati nei server nei rispettivi servizi equivalenti in Microsoft 365.
@@ -34,7 +34,7 @@ Per ottimizzare il valore aziendale della famiglia integrata dei prodotti Micros
 >Il supporto per Windows 7 è terminato il *14 gennaio 2020*. Per ulteriori informazioni, vedere i [Dettagli del supporto finale](https://support.microsoft.com/help/4057281/windows-7-support-will-end-on-january-14-2020).
 >
 
-Quando si eseguono queste migrazioni nel tempo, la propria organizzazione si avvicina alla visione del luogo di [lavoro moderno](https://www.microsoft.com/microsoft-365/blog/2018/04/27/making-it-simpler-with-a-modern-workplace/). Questo ambiente sicuro e integrato può aiutare a sbloccare il lavoro di squadra e la creatività nell'organizzazione. Microsoft 365 Enterprise consente di abilitare e autorizzare tutti lungo la strada.
+Quando si eseguono queste migrazioni nel tempo, la propria organizzazione si avvicina alla visione del luogo di [lavoro moderno](https://www.microsoft.com/microsoft-365/blog/2018/04/27/making-it-simpler-with-a-modern-workplace/). Questo ambiente sicuro e integrato può aiutare a sbloccare il lavoro di squadra e la creatività nell'organizzazione. Microsoft 365 for Enterprise consente di abilitare e potenziare tutti lungo la strada.
 
 ## <a name="migration-for-office-client-products"></a>Migrazione per i prodotti client di Office
 
@@ -44,7 +44,7 @@ Le organizzazioni sia grandi che piccole spesso utilizzano una combinazione di v
 - Non sono ottimizzate per l'utilizzo delle tecnologie cloud Microsoft che consentono di trasformare digitalmente la propria azienda.
 - Non fornire le funzionalità più recenti.
 
-Microsoft 365 Enterprise include le app di Microsoft 365 per Enterprise. Questa versione dei prodotti client di Office è disponibile con una licenza di Microsoft 365 Enterprise. È installato e aggiornato dal cloud Microsoft. Microsoft 365 Apps for enterprise include aggiornamenti della sicurezza e le funzionalità più recenti. Per ulteriori informazioni, vedere [About Microsoft 365 Apps for Enterprise](https://docs.microsoft.com/deployoffice/about-microsoft-365-apps).
+Microsoft 365 per Enterprise include le app Microsoft 365 per Enterprise. Questa versione dei prodotti client di Office è disponibile con una licenza Microsoft 365 per Enterprise. È installato e aggiornato dal cloud Microsoft. Microsoft 365 Apps for enterprise include aggiornamenti della sicurezza e le funzionalità più recenti. Per ulteriori informazioni, vedere [About Microsoft 365 Apps for Enterprise](https://docs.microsoft.com/deployoffice/about-microsoft-365-apps).
 
 ### <a name="office-2007"></a>Office 2007
 
@@ -72,7 +72,7 @@ Microsoft 365 Apps for Enterprise installa automaticamente sia gli aggiornamenti
 
 ### <a name="office-2013-and-office-2016"></a>Office 2013 e Office 2016
 
-La Guida di orientamento alla fine del supporto per Office 2013 e Office 2016 non è stata ancora determinata. In queste versioni, come Office 2010, è comunque necessario [installare gli aggiornamenti della sicurezza](https://support.office.com/article/install-office-updates-2ab296f3-7f03-43a2-8e50-46de917611c5). È possibile che questa attività non venga ridimensionata in base alle dimensioni dell'organizzazione.
+Consultare la Guida [di orientamento alla fine del supporto per Office 2013](https://docs.microsoft.com/lifecycle/products/microsoft-office-2013). La fine del supporto per Office 2016 non è stata ancora determinata. In queste versioni, come Office 2010, è comunque necessario [installare gli aggiornamenti della sicurezza](https://support.office.com/article/install-office-updates-2ab296f3-7f03-43a2-8e50-46de917611c5). È possibile che questa attività non venga ridimensionata in base alle dimensioni dell'organizzazione.
 
 Invece di mantenere aggiornati i computer con gli aggiornamenti della sicurezza più recenti per Office 2013 o Office 2016 o di aggiornare i computer da Office 2013 a Office 2016, è consigliabile eseguire le operazioni seguenti:
 
@@ -91,7 +91,7 @@ Sia le organizzazioni grandi che quelle di piccole dimensioni spesso utilizzano 
 - Non includere nuove applicazioni di produttività, ad esempio Microsoft teams.
 - Non includere le funzionalità di sicurezza più recenti, ad esempio Exchange e Defender per Office 365.
 
-Microsoft 365 Enterprise include versioni basate su cloud dei servizi di Office Server che utilizzano alcuni degli stessi strumenti delle versioni locali del software di Office Server, ad esempio i Web browser e il client di Outlook. Questi servizi vengono aggiornati automaticamente per la sicurezza. In questo modo il personale IT Salva il tempo necessario per gestire e aggiornare i server locali. Questi servizi offrono anche nuove funzionalità che non sono presenti nel software di Office Server.
+Microsoft 365 per Enterprise include versioni basate su cloud dei servizi di Office Server che utilizzano alcuni degli stessi strumenti delle versioni locali del software di Office Server, ad esempio i Web browser e il client di Outlook. Questi servizi vengono aggiornati automaticamente per la sicurezza. In questo modo il personale IT Salva il tempo necessario per gestire e aggiornare i server locali. Questi servizi offrono anche nuove funzionalità che non sono presenti nel software di Office Server.
 
 Utilizzare le risorse seguenti per informazioni sulla migrazione di utenti e dati per carichi di lavoro specifici di Microsoft 365:
 
@@ -155,21 +155,21 @@ Di seguito sono riportate le opzioni di aggiornamento, migrazione e spostamento 
 
 [![Immagine che mostra le opzioni per la fine del supporto per i client e i server di Office 2010 e Windows 7.](../media/microsoft-365-overview/office2010-windows7-end-of-support.png)](../downloads/Office2010Windows7EndOfSupport.pdf)
 
-Questo poster di una pagina rappresenta un modo rapido per comprendere i percorsi che è possibile eseguire per gestire la fine del supporto per i prodotti client e server di Office 2010 e Windows 7. I percorsi preferiti sono supportati in Microsoft 365 Enterprise.
+Questo poster di una pagina rappresenta un modo rapido per comprendere i percorsi che è possibile eseguire per gestire la fine del supporto per i prodotti client e server di Office 2010 e Windows 7. I percorsi preferiti sono supportati in Microsoft 365 per Enterprise.
 
 È possibile [scaricare questo poster](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/Office2010Windows7EndOfSupport.pdf) e stamparlo in formato lettera, dimensione legale o tabloid (11 x 17).
 
 ## <a name="transition-your-entire-organization"></a>Transizione dell'intera organizzazione
 
-Per ottenere un'immagine migliore di come spostare l'intera organizzazione ai prodotti e ai servizi in Microsoft 365 Enterprise, scaricare questo poster di transizione:
+Per ottenere un'immagine migliore di come spostare l'intera organizzazione ai prodotti e ai servizi in Microsoft 365 for Enterprise, scaricare questo poster di transizione:
 
 [![Immagine che mostra la transizione al poster di Microsoft 365.](../media/microsoft-365-overview/transition-org-to-m365.png)](https://download.microsoft.com/download/2/c/7/2c7bcc04-aae3-4604-9707-1ffff66b9851/transition-org-to-m365.pdf)
 
-Questo poster di due pagine è modo rapido per inventariare l'infrastruttura esistente. Utilizzarlo per ottenere indicazioni per lo spostamento a un prodotto o a un servizio in Microsoft 365 Enterprise. Vengono visualizzati i prodotti Windows e Office e altri elementi di infrastruttura e sicurezza, quali gestione dei dispositivi, identità e protezione dalle minacce, nonché protezione delle informazioni e della conformità.
+Questo poster di due pagine è modo rapido per inventariare l'infrastruttura esistente. Utilizzarlo per ottenere indicazioni per il passaggio a un prodotto o a un servizio in Microsoft 365 per Enterprise. Vengono visualizzati i prodotti Windows e Office e altri elementi di infrastruttura e sicurezza, quali gestione dei dispositivi, identità e protezione dalle minacce, nonché protezione delle informazioni e della conformità.
 
-## <a name="how-microsoft-migrated-to-microsoft-365-enterprise"></a>Come Microsoft ha eseguito la migrazione a Microsoft 365 Enterprise
+## <a name="how-microsoft-migrated-to-microsoft-365-for-enterprise"></a>Come Microsoft ha eseguito la migrazione a Microsoft 365 per Enterprise
 
-Vedere in che modo gli esperti IT di Microsoft hanno eseguito la migrazione della società a Microsoft 365 Enterprise:
+Vedere in che modo gli esperti IT di Microsoft hanno eseguito la migrazione della società a Microsoft 365 per Enterprise:
 
 - [Distribuzione e aggiornamento di Microsoft 365 Apps for Enterprise](https://www.microsoft.com/itshowcase/Article/Content/757/Deploying-and-updating-Microsoft-Office-365-ProPlus)
 - [Microsoft esegue la migrazione di 150.000 cassette postali a Exchange Online](https://www.microsoft.com/itshowcase/Article/Content/577/Microsoft-migrates-150000-mailboxes-to-Exchange-Online)

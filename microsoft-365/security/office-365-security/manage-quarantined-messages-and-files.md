@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Gli amministratori possono imparare a visualizzare e gestire i messaggi in quarantena per tutti gli utenti in Exchange Online Protection (EOP). Gli amministratori nelle organizzazioni con Microsoft Defender per Office 365 possono anche gestire i file in quarantena in SharePoint Online, OneDrive for business e Microsoft teams.
-ms.openlocfilehash: b6f6f47dc227d3bada425d02784a8aff5da8b3d3
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 9d58f8c08d994e5e9736c8223239b54e52c4edab
+ms.sourcegitcommit: 9bf6a4f77f9af5fd988f6795bad3b240213a51fc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48842929"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48951048"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-admin-in-eop"></a>Gestire i messaggi e i file messi in quarantena come amministratore in EOP
 
@@ -127,14 +127,6 @@ Gli amministratori nelle organizzazioni con Microsoft Defender per Office 365 po
    Dopo avere immesso i criteri di ricerca, fare clic sul ![pulsante Aggiorna](../../media/scc-quarantine-refresh.png) **Aggiorna** per filtrare i risultati.
 
 Dopo aver trovato un messaggio in quarantena specifico, selezionarlo per visualizzarne i dettagli ed eseguire delle operazioni (ad esempio, visualizzare, rilasciare, scaricare o eliminare il messaggio).
-
-#### <a name="export-message-results"></a>Esportare i risultati di un messaggio
-
-1. Selezionare i messaggi a cui si è interessati e quindi fare clic su **Esporta risultati**.
-
-2. Fare clic su **Sì** nel messaggio di conferma che avverte di tenere aperta la finestra del browser.
-
-3. Una volta completata l'esportazione, è possibile assegnare un nome e scegliere il percorso di download per il file .csv.
 
 #### <a name="view-quarantined-message-details"></a>Visualizzare i dettagli dei messaggi in quarantena
 
@@ -255,14 +247,6 @@ Nelle organizzazioni con Defender per Office 365, gli amministratori possono ges
    - **Tipo di criterio**
 
 Dopo aver individuato uno specifico file in quarantena, selezionare il file per visualizzarne i dettagli e per intervenire su di esso (ad esempio, visualizzare, rilasciare, scaricare o eliminare il messaggio).
-
-#### <a name="export-file-results"></a>Esportare i risultati dei file
-
-1. Selezionare i file a cui si è interessati e fare clic su **Esporta risultati**.
-
-2. Fare clic su **Sì** nel messaggio di conferma che avverte di tenere aperta la finestra del browser.
-
-3. Una volta completata l'esportazione, è possibile assegnare un nome e scegliere il percorso di download per il file .csv.
 
 #### <a name="view-quarantined-file-details"></a>Visualizzare i dettagli dei file in quarantena
 
