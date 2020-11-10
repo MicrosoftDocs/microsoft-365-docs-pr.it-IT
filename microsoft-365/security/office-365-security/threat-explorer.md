@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-office365
 description: Informazioni sull'utilizzo di Esplora risorse e sui rilevamenti in tempo reale nel centro sicurezza e &amp; conformità per esaminare e rispondere alle minacce in modo efficace ed efficiente.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6a1aff37cc845e09be332b853aa938cb66fdb43f
-ms.sourcegitcommit: 36795a6735cd3fc678c7d5db71ddc97fac3f6f8a
+ms.openlocfilehash: 561e4c62922a4da0789111de5c3be7844bb83692
+ms.sourcegitcommit: c84cceb07e748969723a31b350e37f3ec79255ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "48941488"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "48948494"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>Esplora minacce e rilevamenti in tempo reale
 
@@ -45,7 +45,6 @@ Con questo rapporto, è possibile:
 - [Avviare un processo di analisi e risposta automatizzato da una visualizzazione in Explorer](#start-automated-investigation-and-response) (solo Defender per Office 365 piano 2)
 - ... [Esaminare messaggi di posta elettronica dannosi e altro ancora](#more-ways-to-use-explorer-or-real-time-detections)!
 
-
 ## <a name="experience-improvements-to-threat-explorer-and-real-time-detections"></a>Miglioramenti dell'esperienza in Esplora minacce e rilevamenti in tempo reale
 
 ### <a name="tags-in-threat-explorer"></a>Tag in Esplora minacce
@@ -65,6 +64,7 @@ La colonna tag visualizzata nella griglia di posta elettronica conterrebbe tutti
 > ![Filtro tag nella visualizzazione griglia di posta elettronica](../../media/tags-grid.png)
 
 #### <a name="filtering"></a>Filtro
+
 Sono ora disponibili tag come filtro in modo che sia possibile cercare solo tra gli account prioritari o gli scenari specifici dei tag utente (e persino escludere i risultati con alcuni tag come parte di questa esperienza). Combinando queste informazioni con gli altri filtri che vengono forniti, è possibile limitare l'ambito delle indagini
 
 [![Tag ](../../media/tags-filter-normal.png) del filtro](../../media/tags-filter-normal.png#lightbox)
@@ -113,11 +113,11 @@ Nella scheda riquadro a comparsa posta elettronica-> dettagli, è ora possibile 
 
 Oltre a identificare tutti gli eventi di recapito e post-recapito, la visualizzazione sequenza temporale fornisce anche informazioni sulla minaccia identificata in quel momento per un sottoinsieme di questi eventi. Sono inoltre disponibili ulteriori informazioni sulle azioni aggiuntive (ad esempio, ZAP, la correzione manuale) insieme al risultato di tale azione. La visualizzazione sequenza temporale contiene informazioni sul recapito originale e successivamente su tutti gli eventi successivi al recapito eseguiti su un messaggio di posta elettronica.
 
--   Origine: può essere l'amministratore/sistema/utente in base all'origine dell'evento.
--   Evento: include eventi di primo livello quali il recapito originale, la correzione manuale, lo ZAP, gli invii e il recapito dinamico.
--   Azione: in questo modo viene illustrata l'azione specifica che è stata eseguita come parte di un'azione ZAP o admin (ad esempio, soft delete).
--   Minacce: copre le minacce (malware, phishing, posta indesiderata) identificate in quel momento.
--   Result/Details: vengono illustrate altre informazioni sul risultato dell'azione, se è stato eseguito come parte dell'azione ZAP/admin.
+- Origine: può essere l'amministratore/sistema/utente in base all'origine dell'evento.
+- Evento: include eventi di primo livello quali il recapito originale, la correzione manuale, lo ZAP, gli invii e il recapito dinamico.
+- Azione: in questo modo viene illustrata l'azione specifica che è stata eseguita come parte di un'azione ZAP o admin (ad esempio, soft delete).
+- Minacce: copre le minacce (malware, phishing, posta indesiderata) identificate in quel momento.
+- Result/Details: vengono illustrate altre informazioni sul risultato dell'azione, se è stato eseguito come parte dell'azione ZAP/admin.
 
 ### <a name="original-and-latest-delivery-location"></a>Percorso di recapito originale e più recente
 
@@ -170,15 +170,15 @@ Le sostituzioni di sistema sono un metodo di esecuzione di eccezioni per il perc
 
 Il set di miglioramenti incentrati sui dati relativi ai clic su URL e URL include:
 
- - Visualizzazione di un URL con clic completo (compresi i parametri di query che fanno parte dell'URL) nella sezione clic nel riquadro a comparsa URL. Attualmente viene mostrato il dominio e il percorso dell'URL nella barra del titolo. Le informazioni vengono estese per visualizzare l'URL completo.
+- Visualizzazione di un URL con clic completo (compresi i parametri di query che fanno parte dell'URL) nella sezione clic nel riquadro a comparsa URL. Attualmente viene mostrato il dominio e il percorso dell'URL nella barra del titolo. Le informazioni vengono estese per visualizzare l'URL completo.
 
- - Correzioni tra i filtri URL (URL e URL, dominio e percorso URL): sono stati apportati aggiornamenti per la ricerca di messaggi che contengono un verdetto URL/clic. Come parte di ciò, è stato abilitato il supporto per le ricerche agnostiche del protocollo (ovvero è possibile cercare direttamente un URL senza http). Per impostazione predefinita, la ricerca URL esegue il mapping a http, a meno che non sia specificato in modo esplicito. Ad esempio:
+- Correzioni tra i filtri URL (URL e URL, dominio e percorso URL): sono stati apportati aggiornamenti per la ricerca di messaggi che contengono un verdetto URL/clic. Come parte di ciò, è stato abilitato il supporto per le ricerche agnostiche del protocollo (ovvero è possibile cercare direttamente un URL senza http). Per impostazione predefinita, la ricerca URL esegue il mapping a http, a meno che non sia specificato in modo esplicito. Ad esempio:
 
-   1. Eseguire una ricerca con e senza il `http://` prefisso nei campi "URL", "URL domain" e "URL Domain and path". Questo comportamento è coerente e deve mostrare lo stesso risultato.
+  1. Eseguire una ricerca con e senza il `http://` prefisso nei campi "URL", "URL domain" e "URL Domain and path". Questo comportamento è coerente e deve mostrare lo stesso risultato.
 
-   1. Cercare il `https://` prefisso in "URL". Se non è presente, `http://` viene utilizzato il prefisso.
+  1. Cercare il `https://` prefisso in "URL". Se non è presente, `http://` viene utilizzato il prefisso.
 
-   1. `/` all'inizio e alla fine del "percorso URL", "dominio URL", i campi "URL Domain and path" vengono ignorati. `/` alla fine del campo "URL" viene ignorato.
+  1. `/` all'inizio e alla fine del "percorso URL", "dominio URL", i campi "URL Domain and path" vengono ignorati. `/` alla fine del campo "URL" viene ignorato.
 
 ### <a name="phish-confidence-level"></a>Livello di confidenza phishing
 
@@ -247,12 +247,13 @@ Oggi viene esposto l'elenco degli utenti di destinazione principali nella visual
 > [!div class="mx-imgBorder"]
 > ![Utenti di destinazione principali](../../media/Top_Targeted_Users.png)
 
-
 ### <a name="exchange-transport-rules"></a>Regole di trasporto di Exchange
+
 Nell'ambito dell'arricchimento dei dati, è inoltre necessario essere in grado di visualizzare tutte le diverse regole di trasporto applicate a un messaggio. Queste informazioni saranno presenti all'interno della visualizzazione griglia di posta elettronica (per visualizzare questa opzione, selezionare le opzioni di colonna nella griglia e aggiungere la regola di trasporto di Exchange dalle opzioni di colonna nella griglia), nonché il riquadro a comparsa dettagli nel messaggio di posta elettronica.
 È possibile visualizzare sia il GUID che il nome delle regole di trasporto che sono state applicate al messaggio. Inoltre, è possibile cercare i messaggi utilizzando il nome della regola di trasporto. Si tratta di una ricerca "contiene" che indica che è possibile effettuare ricerche anche utilizzando ricerche parziali.
 
 #### <a name="important-note"></a>Nota importante:
+
 La disponibilità del nome e della ricerca di ETR dipenderà dal ruolo specifico che è stato assegnato all'utente. Per visualizzare i nomi e la ricerca di ETR, è necessario disporre di uno dei ruoli e delle autorizzazioni seguenti.  Se non si dispone di uno dei ruoli seguenti assegnati all'utente, non sarà possibile visualizzare i nomi delle regole di trasporto e cercare i messaggi utilizzando i nomi di ETR. Tuttavia, sarà possibile visualizzare l'etichetta di ETR e le informazioni sui GUID all'interno dei dettagli di posta elettronica. Le altre esperienze che riguardano la visualizzazione dei record nelle griglie di posta elettronica, l'comparsa della posta elettronica, i filtri e l'esportazione non sono interessati.
 
 - EXO only-prevenzione della perdita di dati: All

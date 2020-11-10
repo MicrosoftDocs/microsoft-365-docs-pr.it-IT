@@ -1,5 +1,5 @@
 ---
-title: Risolvere i problemi rilevati dallo strumento di valutazione della conformità
+title: Risolvere problemi trovati dallo strumento di valutazione dell'idoneità
 description: Azioni dettagliate da intraprendere per ogni problema rilevato dallo strumento
 keywords: Microsoft Managed Desktop, Microsoft 365, servizi, documentazione
 ms.service: m365-md
@@ -9,14 +9,14 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 642de80e1a133f212b7afb6774d9aab2eeaabdbf
-ms.sourcegitcommit: 36795a6735cd3fc678c7d5db71ddc97fac3f6f8a
+ms.openlocfilehash: c342ea9f662d883883755d2f67e5c25ffabddf83
+ms.sourcegitcommit: c84cceb07e748969723a31b350e37f3ec79255ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "48941410"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "48948410"
 ---
-# <a name="fix-issues-found-by-the-readiness-assessment-tool"></a>Risolvere i problemi rilevati dallo strumento di valutazione della conformità
+# <a name="fix-issues-found-by-the-readiness-assessment-tool"></a>Risolvere problemi trovati dallo strumento di valutazione dell'idoneità
 
 Per ogni controllo, lo strumento riporterà uno dei quattro possibili risultati:
 
@@ -242,7 +242,7 @@ Si dispone di un criterio "anello di aggiornamento" che consente di indirizzare 
 
 **Consulenza**
 
-Assicurarsi che tutti i criteri anello di aggiornamento che è possibile escludere il **luogo di lavoro moderno-tutti i gruppi di** Azure ad. Per i passaggi, vedere [gestire gli aggiornamenti software di Windows 10 in Intune](https://docs.microsoft.com/mem/intune/protect/windows-update-for-business-configure). I **dispositivi di lavoro moderni-tutti** i gruppi di Azure ad è un gruppo dinamico creato quando ci si iscrive in Microsoft Managed Desktop, quindi sarà necessario tornare a escludere questo gruppo dopo la registrazione.
+Verificare che tutti i criteri anello di aggiornamento siano esclusi dai **dispositivi di lavoro moderni: tutti** i gruppi di Azure ad. Se è stato assegnato un gruppo di utenti di Azure AD a questi criteri, verificare che i criteri di aggiornamento siano stati esclusi anche dalla **moderna area di lavoro: tutti** i gruppi di Azure ad che includono gli utenti di Microsoft Managed Desktop. Per i passaggi, vedere [gestire gli aggiornamenti software di Windows 10 in Intune](https://docs.microsoft.com/mem/intune/protect/windows-update-for-business-configure). Sia i **dispositivi di lavoro moderni-tutti** che quelli **moderni-tutti** i gruppi di Azure ad sono assegnati ai gruppi creati quando si effettua la registrazione in Microsoft Managed Desktop, quindi sarà necessario tornare a escludere questo gruppo dopo la registrazione.
 
 
 ## <a name="azure-active-directory-settings"></a>Impostazioni di Azure Active Directory

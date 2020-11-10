@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Informazioni sul modo in cui EOP e Office 365 proteggono i messaggi di posta indesiderata, phishing e antimalware aggiungendo un suggerimento per la sicurezza all'inizio della posta elettronica.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 3da52a8ef2913c30c281fec74f92142847e29792
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 0e204021bfd79dabd4abdeefaa990da50915eaf0
+ms.sourcegitcommit: c84cceb07e748969723a31b350e37f3ec79255ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48201984"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "48948458"
 ---
 # <a name="safety-tips-in-email-messages"></a>Suggerimenti per la sicurezza nei messaggi di posta elettronica
 
@@ -47,14 +47,6 @@ Il suggerimento per la sicurezza, ovvero un messaggio con codice a colori, avvis
     ![Schermata che visualizza un suggerimento per la sicurezza verde.](../../media/acbc11d0-f626-4848-9fbf-66eeeda3f803.png)
 
     Oltre ai messaggi non sicuri, verranno inoltre illustrati i messaggi validi provenienti da mittenti attendibili con un suggerimento per la sicurezza verde. Un suggerimento per la sicurezza verde in un messaggio di posta elettronica indica che il mittente è stato controllato e verificato che sia sicuro. Microsoft gestisce questo elenco di mittenti attendibili che include organizzazioni finanziarie e altri spesso contraffatti o rappresentati.
-
-- Posta non filtrata (suggerimento per la sicurezza grigia).
-
-    ![Schermata che visualizza un suggerimento per la sicurezza grigia.](../../media/c4d0cf8f-08e9-4c84-beee-1d9e0b022e0a.png)
-
-    Quando si ignora il controllo di un messaggio di posta elettronica, verrà inoltre visualizzato un mittente attendibile nell'elenco dei mittenti attendibili o se esiste una regola del flusso di posta per ignorare il filtro.
-
-    La punta di sicurezza grigia viene visualizzata anche quando le immagini esterne sono bloccate, ovvero il messaggio è nella posta in arrivo e non sembra essere posta indesiderata, ma contiene immagini esterne che non si è scelto di scaricare.
 
 ## <a name="working-with-safety-tips"></a>Utilizzo dei suggerimenti per la sicurezza
 
