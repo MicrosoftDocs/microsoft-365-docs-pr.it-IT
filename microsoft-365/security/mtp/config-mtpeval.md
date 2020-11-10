@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-scenario
 - m365solution-evalutatemtp
 ms.topic: article
-ms.openlocfilehash: 88db2182ec1a3250d2f4308858026fec97a2f91b
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 5259c7b74446ad273ff9b1ae0baccd339e34baa3
+ms.sourcegitcommit: 89f56c3e0b619a4700a75a21927d9ffc90658632
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48844105"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48984951"
 ---
 # <a name="configure-microsoft-365-defender-pillars-for-your-trial-lab-or-pilot-environment"></a>Configurare i pilastri Microsoft 365 Defender per il laboratorio di valutazione o l'ambiente pilota
 
@@ -68,13 +68,13 @@ La preparazione è la chiave per una distribuzione corretta. In questo articolo 
 ## <a name="microsoft-365-defender-pillars"></a>Pilastri Microsoft 365 Defender
 Microsoft 365 Defender è costituito da quattro pilastri. Anche se un pilastro può già fornire valore alla sicurezza dell'organizzazione della rete, l'abilitazione dei quattro pilastri Microsoft 365 Defender consentirà alla propria organizzazione di ottenere il massimo valore.
 
-![Image of_Microsoft soluzione Defender di 365 per gli utenti, Microsoft Defender for Identity, per gli endpoint Microsoft Defender per endpoint, per le app Cloud, per la sicurezza di Microsoft cloud app e per i dati, Microsoft Defender per Office 365](../../media/mtp-eval-31.png)
+![Image of_Microsoft soluzione Defender di 365 per gli utenti, Microsoft Defender for Identity, per gli endpoint Microsoft Defender per endpoint, per le app Cloud, per la sicurezza di Microsoft cloud app e per i dati, Microsoft Defender per Office 365](../../media/mtp/m365pillars.png)
 
 In questa sezione viene illustrata la configurazione:
 -   Microsoft Defender per Office 365
 -   Microsoft Defender per identità 
 -   Microsoft Cloud App Security
--   Microsoft Defender ATP
+-   Microsoft Defender per endpoint
 
 
 ## <a name="configure-microsoft-defender-for-office-365"></a>Configurare Microsoft Defender per Office 365

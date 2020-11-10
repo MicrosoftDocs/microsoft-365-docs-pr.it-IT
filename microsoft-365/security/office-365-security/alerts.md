@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-defender-office365
 description: Informazioni su come utilizzare le funzionalità avvisi nel centro sicurezza & conformità di Office 365 per visualizzare e gestire gli avvisi, tra cui la gestione di avvisi avanzati.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 8867732611af275b45b14dc0894e24ed4c89d062
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: a29da0a76ff1b681c87182ff55b787327a969607
+ms.sourcegitcommit: 89f56c3e0b619a4700a75a21927d9ffc90658632
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48447048"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48984889"
 ---
 # <a name="alerts-in-the-security--compliance-center"></a>Avvisi nel centro sicurezza & conformità
 
@@ -40,9 +40,9 @@ Gli avvisi sono nel centro sicurezza & conformità. Ecco come accedere alla pagi
 
 ### <a name="to-go-directly-to-the-security--compliance-center"></a>Per accedere direttamente al centro sicurezza & conformità
 
-1. Passare a [https://protection.office.com](https://protection.office.com).
+1. Passare a <https://protection.office.com>.
 
-2. Accedere usando l'account di lavoro o della scuola.
+2. Accedere usando l'account aziendale o dell'istituto di istruzione.
 
 3. Nel riquadro sinistro fare clic su **avvisi** per visualizzare le funzionalità avvisi.
 
@@ -52,7 +52,7 @@ Gli avvisi sono nel centro sicurezza & conformità. Ecco come accedere alla pagi
 
 2. Fare clic sull'icona di avvio delle app nell'angolo in alto a sinistra, quindi fare clic su **sicurezza & conformità**.
 
-    Se non si trova l'app che si sta cercando, nell'icona di avvio delle app selezionare **Tutte le app** per visualizzare un elenco in ordine alfabetico delle app di Office 365 disponibili. Da qui è possibile cercare un'app specifica.
+   Se non si trova l'app che si sta cercando, nell'icona di avvio delle app selezionare **Tutte le app** per visualizzare un elenco in ordine alfabetico delle app di Office 365 disponibili. Da qui è possibile cercare un'app specifica.
 
 3. Nel riquadro sinistro fare clic su **avvisi** per visualizzare le funzionalità avvisi.
 
@@ -64,6 +64,6 @@ Nella tabella seguente vengono descritti gli strumenti disponibili in **avvisi**
 
 |Strumento|Descrizione|
 |---|---|
-|[Gestione avvisi](../../compliance/create-activity-alerts.md)|Utilizzare gli avvisi di attività per inviare notifiche tramite posta elettronica a se stessi o ad altri amministratori quando gli utenti eseguono attività specifiche in Office 365. Gli avvisi di attività sono simili alla ricerca del registro di controllo per eventi, tranne per il fatto che verrà inviato un messaggio di posta elettronica quando viene creato un avviso per il verificarsi di un evento.|
-|[Gestire gli avvisi avanzati ](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security)|Utilizzare la funzionalità **Gestisci avvisi avanzati** di Office 365 cloud app Security per impostare i criteri che possono avvisare l'utente di attività sospette e anomale in Office 365. Dopo aver eseguito l'avviso, è possibile esaminare le situazioni potenzialmente problematiche e, se necessario, intervenire per risolvere i problemi di sicurezza.|
+|[Gestione avvisi](../../compliance/create-activity-alerts.md)|Utilizzare gli avvisi di attività per inviare notifiche tramite posta elettronica a se stessi o ad altri amministratori quando gli utenti eseguono attività specifiche in Microsoft 365. Gli avvisi di attività sono simili alla ricerca del registro di controllo per eventi, tranne per il fatto che verrà inviato un messaggio di posta elettronica quando viene creato un avviso per il verificarsi di un evento.|
+|[Gestire gli avvisi avanzati](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security)|Utilizzare la funzionalità **Gestisci avvisi avanzati** di Microsoft 365 cloud app Security per configurare i criteri che possono avvisare l'utente di attività sospette e anomale in Microsoft 365. Dopo aver eseguito l'avviso, è possibile esaminare le situazioni potenzialmente problematiche e, se necessario, intervenire per risolvere i problemi di sicurezza.|
 |
