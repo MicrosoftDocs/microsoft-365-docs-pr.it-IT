@@ -15,12 +15,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: È ora possibile applicare i criteri DLP alle chat e ai canali di Microsoft teams. Leggere questo articolo per ulteriori informazioni su come funziona.
-ms.openlocfilehash: 58a96cea3a45fb640b06e09debd35dd005b15a32
-ms.sourcegitcommit: 51a9f34796535309b8ca8b52da92da0a3621327b
+ms.openlocfilehash: 22f279eaccaed20984a59b9b3ae5655df00b2ae3
+ms.sourcegitcommit: 9bf6a4f77f9af5fd988f6795bad3b240213a51fc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "45024726"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48951074"
 ---
 # <a name="data-loss-prevention-and-microsoft-teams"></a>Prevenzione della perdita di dati e Microsoft Teams
 
@@ -69,7 +69,7 @@ Per eseguire questa attività, è necessario essere assegnati a un ruolo che dis
 
 2. Scegliere **i criteri di prevenzione della perdita di dati**  >  **Policy**.
 
-3. Selezionare un criterio e fare clic su **modifica**accanto a **impostazioni criterio**.
+3. Selezionare un criterio e fare clic su **modifica** accanto a **impostazioni criterio**.
 
 4. Creare una nuova regola o modificare una regola esistente per il criterio.<br/>![Modifica di una regola per un criterio](../media/dlp-teams-editrule.png)<br/>
 
@@ -89,7 +89,7 @@ Per eseguire questa attività, è necessario essere assegnati a un ruolo che dis
 
 2. Scegliere **i criteri di prevenzione della perdita di dati**  >  **Policy**.
 
-3. Selezionare un criterio e esaminare i valori in **percorsi**. Se si visualizzano **i messaggi chat e canali del team**, è tutto pronto. In caso contrario, fare clic su **modifica**.<br/>![Posizioni per i criteri esistenti](../media/dlp-teams-editexistingpolicy.png)<br/>
+3. Selezionare un criterio e esaminare i valori in **percorsi**. Se si visualizzano **i messaggi chat e canali del team** , è tutto pronto. In caso contrario, fare clic su **modifica**.<br/>![Posizioni per i criteri esistenti](../media/dlp-teams-editexistingpolicy.png)<br/>
 
 4. Nella colonna **stato** , attiva il criterio per i **messaggi di chat e di canale dei team**.<br/>![DLP per le chat e i canali di Teams](../media/dlp-teams-addteamschatschannels.png)<br/>
 
@@ -111,21 +111,46 @@ Per eseguire questa attività, è necessario essere assegnati a un ruolo che dis
 
 4. Nella scheda **denominare i criteri** specificare un nome e una descrizione per il criterio e quindi fare clic su **Avanti**.
 
-5. Nella scheda **Scegli percorsi** mantenere l'impostazione predefinita di tutti i percorsi oppure selezionare **Consenti percorsi specifici**e quindi scegliere **Avanti**.<br/>Se sono stati scelti percorsi specifici, selezionarli per il criterio DLP e quindi scegliere **Avanti**.<br/>![Posizioni dei criteri DLP](../media/dlp-teams-selectlocationsnewpolicy.png)<br/>
+5. Nella scheda **Scegli percorsi** mantenere l'impostazione predefinita di tutti i percorsi oppure selezionare **Consenti percorsi specifici** e quindi scegliere **Avanti**.<br/>Se sono stati scelti percorsi specifici, selezionarli per il criterio DLP e quindi scegliere **Avanti**.<br/>![Posizioni dei criteri DLP](../media/dlp-teams-selectlocationsnewpolicy.png)<br/>
     > [!NOTE]
     > Se si desidera verificare che i documenti che contengono informazioni riservate non siano condivisi in modo improprio nei team, verificare che i **siti di SharePoint** e gli **account di OneDrive** siano attivati, insieme ai **messaggi di chat e di canale dei team**.
 
 <br/>
 
-6. Nella scheda **impostazioni dei criteri** , in **Personalizza il tipo di contenuto che si desidera proteggere**, mantenere le impostazioni predefinite semplici oppure scegliere **Usa impostazioni avanzate**e quindi scegliere **Avanti**. Se si scelgono le impostazioni avanzate, è possibile creare o modificare regole per i criteri. Per ottenere assistenza, vedere [Simple Settings vs Advanced Settings](data-loss-prevention-policies.md#simple-settings-vs-advanced-settings).
+6. Nella scheda **impostazioni dei criteri** , in **Personalizza il tipo di contenuto che si desidera proteggere** , mantenere le impostazioni predefinite semplici oppure scegliere **Usa impostazioni avanzate** e quindi scegliere **Avanti**. Se si scelgono le impostazioni avanzate, è possibile creare o modificare regole per i criteri. Per ottenere assistenza, vedere [Simple Settings vs Advanced Settings](data-loss-prevention-policies.md#simple-settings-vs-advanced-settings).
 
-7.  Nella scheda **impostazioni dei criteri** , in **che cosa si desidera eseguire se vengono rilevate informazioni riservate?**, esaminare le impostazioni. (Ecco dove è possibile scegliere se mantenere i suggerimenti per i [criteri e le notifiche di posta elettronica](use-notifications-and-policy-tips.md)predefiniti oppure personalizzarli).<br/>![Impostazioni dei criteri DLP con suggerimenti e notifiche](../media/dlp-teams-policysettings-tipsemails.png)<br/>Dopo aver completato la revisione o la modifica delle impostazioni, scegliere **Avanti**.
+7.  Nella scheda **impostazioni dei criteri** , in **che cosa si desidera eseguire se vengono rilevate informazioni riservate?** , esaminare le impostazioni. (Ecco dove è possibile scegliere se mantenere i suggerimenti per i [criteri e le notifiche di posta elettronica](use-notifications-and-policy-tips.md)predefiniti oppure personalizzarli).<br/>![Impostazioni dei criteri DLP con suggerimenti e notifiche](../media/dlp-teams-policysettings-tipsemails.png)<br/>Dopo aver completato la revisione o la modifica delle impostazioni, scegliere **Avanti**.
 
-8. Nella scheda **impostazioni dei criteri** , in **fare in modo che si desideri disattivare il criterio o eseguire prima un test?**, scegliere se abilitare il criterio, [testarlo prima](data-loss-prevention-policies.md#roll-out-dlp-policies-gradually-with-test-mode)oppure tenerlo disattivato per ora, quindi scegliere **Avanti**.<br/>![Specificare se si desidera che il criterio venga attivato](../media/dlp-teams-policysettings-turnonnow.png)<br/>
+8. Nella scheda **impostazioni dei criteri** , in **fare in modo che si desideri disattivare il criterio o eseguire prima un test?** , scegliere se abilitare il criterio, [testarlo prima](data-loss-prevention-policies.md#roll-out-dlp-policies-gradually-with-test-mode)oppure tenerlo disattivato per ora, quindi scegliere **Avanti**.<br/>![Specificare se si desidera che il criterio venga attivato](../media/dlp-teams-policysettings-turnonnow.png)<br/>
 
 9. Nella scheda **Verifica le impostazioni** , esaminare le impostazioni per il nuovo criterio. Scegliere **modifica** per apportare modifiche. Al termine, scegliere **Crea**.
 
 Consentire a circa un'ora che il nuovo criterio funzioni correttamente attraverso il Data Center e sincronizzare gli account utente.
+
+## <a name="prevent-external-access-to-sensitive-documents"></a>Impedire l'accesso esterno ai documenti riservati
+
+Per garantire che i documenti di SharePoint che contengono informazioni riservate non possano essere accessibili da parte di utenti esterni da SharePoint o team per impostazione predefinita, selezionare quanto segue:
+
+- È possibile garantire che i documenti siano protetti fino a quando le analisi DLP non vengono analizzate e contrassegnate come sicure per la condivisione [contrassegnando nuovi file come sensibili per impostazione predefinita](https://docs.microsoft.com/sharepoint/sensitive-by-default)
+- Struttura dei criteri DLP consigliata
+    - **Condizioni**
+        - Content contiene uno qualsiasi di questi tipi di informazioni riservate: [Seleziona tutto ciò che si applica]
+        - Il contenuto è condiviso da Microsoft 365 con utenti esterni all'organizzazione
+        <br/>![Condizioni DLP per rilevare la condivisione esterna di contenuti sensibili](../media/dlp-teams-external-sharing/external-condition.png)<br/>
+
+
+    - **Azioni**
+        - Limitare l'accesso al contenuto per gli utenti esterni
+        - Notificare agli utenti messaggi di posta elettronica e suggerimenti sui criteri
+        - Inviare rapporti sugli incidenti all'amministratore    
+        <br/>![Azione DLP per bloccare la condivisione esterna di contenuti sensibili](../media/dlp-teams-external-sharing/external-action.png)<br/>
+
+Criterio DLP in azione quando si tenta di condividere un documento in SharePoint che contiene informazioni riservate con un ospite esterno:
+<br/>![Condivisione esterna bloccata](../media/dlp-teams-external-sharing/external-sharing-blocked.png)<br/>
+
+
+Criterio DLP in azione quando l'ospite tenta di aprire un documento in teams with Block External:
+<br/>![Accesso esterno bloccato](../media/dlp-teams-external-sharing/external-access-blocked.png)<br/>
 
 ## <a name="related-articles"></a>Articoli correlati
 

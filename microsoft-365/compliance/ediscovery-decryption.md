@@ -15,26 +15,28 @@ search.appverid:
 - MET150
 ms.custom:
 - seo-marvel-apr2020
-ROBOTS: NOINDEX, NOFOLLOW
 description: Informazioni su come gli strumenti di Microsoft 365 eDiscovery gestiscono i documenti crittografati allegati ai messaggi di posta elettronica.
-ms.openlocfilehash: b7c1dc20b8e400b9880cc00a88a2d23a4b6d1979
-ms.sourcegitcommit: 751dc531f0410ee075c179efe409a01664483ee2
+ms.openlocfilehash: 3a4a094f1da28c9a017836c099507f5af739b0b9
+ms.sourcegitcommit: 9bf6a4f77f9af5fd988f6795bad3b240213a51fc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48925585"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48951119"
 ---
 # <a name="decryption-in-microsoft-365-ediscovery-tools"></a>Decrittografia negli strumenti di Microsoft 365 eDiscovery
 
-Le organizzazioni utilizzano la tecnologia di crittografia per proteggere i contenuti sensibili all'interno dell'organizzazione e assicurarsi che solo le persone giuste abbiano accesso a tale contenuto. Le organizzazioni utilizzano vari tipi di crittografia, sia Microsoft Encryption Technologies che di terze parti per soddisfare i propri requisiti di sicurezza e proteggere le informazioni riservate.
+La crittografia è una parte importante della strategia di protezione dei file e della protezione delle informazioni. Le organizzazioni di tutti i tipi utilizzano la tecnologia di crittografia per proteggere i contenuti sensibili all'interno dell'organizzazione e assicurarsi che solo le persone giuste abbiano accesso a tale contenuto.
 
-Fino ad oggi, la gestione del contenuto crittografato nel flusso di lavoro di eDiscovery in Microsoft 365 richiede una gestione speciale degli elementi crittografati a seconda del tipo di crittografia utilizzata e della fase specifica del flusso di lavoro. Ciò è stato principalmente ottenuto decrittografando il contenuto del messaggio di posta elettronica quando è stato esportato dalle ricerche di contenuto, i casi di eDiscovery di base e i casi avanzati di eDiscovery Non è stato possibile visualizzare in anteprima il contenuto crittografato con le tecnologie di crittografia Microsoft fino all'esportazione. In Advanced eDiscovery, il contenuto crittografato è stato contrassegnato da un errore di elaborazione, che richiedeva di scaricare l'elemento crittografato, decrittografarlo e quindi caricare il file decrittografato in un set di revisione.
+Per eseguire le attività comuni di eDiscovery su contenuto crittografato, i manager di eDiscovery sono stati tenuti a decrittografare il contenuto del messaggio di posta elettronica come è stato esportato dalle ricerche di contenuto, i casi di eDiscovery di base e Il contenuto crittografato con le tecnologie di crittografia Microsoft non è stato disponibile per la revisione finché non è stato esportato.
 
-Per semplificare la gestione del contenuto crittografato nel flusso di lavoro di eDiscovery, Microsoft 365 eDiscovery Tools è in grado di decrittografare i file crittografati allegati ai messaggi di posta elettronica e inviati in Exchange Online. Prima di questa nuova funzionalità, solo il contenuto di un messaggio di posta elettronica protetto da Rights Management (e non i file allegati) è stato decrittografato. Se un file crittografato con una tecnologia di crittografia Microsoft è associato a un messaggio di posta elettronica che corrisponde ai criteri di ricerca, il file crittografato verrà decrittografato quando i risultati della ricerca verranno preparati per l'anteprima. Questo consente ai responsabili di eDiscovery di visualizzare il contenuto degli allegati di posta elettronica crittografati quando si visualizzano i risultati della ricerca.
+Per semplificare la gestione del contenuto crittografato nel flusso di lavoro di eDiscovery, gli strumenti di Microsoft 365 eDiscovery ora incorporano la decrittografia dei file crittografati allegati ai messaggi di posta elettronica e inviati in Exchange Online. Prima di questa nuova funzionalità, solo il contenuto di un messaggio di posta elettronica protetto da Rights Management (e non i file allegati) è stato decrittografato. Se un file crittografato con una tecnologia di crittografia Microsoft è associato a un messaggio di posta elettronica che corrisponde ai criteri di ricerca, il file crittografato verrà decrittografato quando i risultati della ricerca verranno preparati per la revisione. Questo consente ai responsabili di eDiscovery di visualizzare il contenuto degli allegati di posta elettronica crittografati quando si visualizzano in anteprima i risultati della ricerca e di verificarli dopo averli aggiunti a un set di revisione in Advanced eDiscovery.
+
+> [!NOTE]
+> A partire da subito gli strumenti di Microsoft 365 eDiscovery supporteranno i documenti crittografati archiviati in SharePoint Online e OneDrive for business.
 
 ## <a name="supported-encryption-technologies"></a>Tecnologie di crittografia supportate
 
-Gli strumenti di Microsoft eDiscovery supportano gli elementi crittografati con le tecnologie di crittografia Microsoft. Queste tecnologie includono la crittografia dei messaggi di Office, Microsoft Information Protection (Sensitivity labels) e Azure Rights Management. Per ulteriori informazioni sulle tecnologie di crittografia Microsoft, vedere [Encryption](encryption.md). Il contenuto crittografato dalle tecnologie di crittografia di terze parti non è supportato. Questo non include il supporto per l'anteprima o l'esportazione di contenuto crittografato con le tecnologie non Microsoft.
+Gli strumenti di Microsoft eDiscovery supportano gli elementi crittografati con le tecnologie di crittografia Microsoft. Queste tecnologie includono la crittografia dei messaggi di Office, Microsoft Information Protection (prossimamente) e Azure Rights Management. Per ulteriori informazioni sulle tecnologie di crittografia Microsoft, vedere [Encryption](encryption.md). Il contenuto crittografato dalle tecnologie di crittografia di terze parti non è supportato. Questo non include il supporto per l'anteprima o l'esportazione di contenuto crittografato con le tecnologie non Microsoft.
 
 ## <a name="ediscovery-activities-that-support-encrypted-items"></a>attività di eDiscovery che supportano gli elementi crittografati
 
@@ -42,7 +44,7 @@ Nella tabella seguente vengono identificate le attività eseguite negli strument
 
 |attività di eDiscovery  |Ricerca contenuto  |Core eDiscovery  |Advanced eDiscovery  |
 |:---------|:---------|:---------|:---------|
-|Ricerca di contenuto nei file crittografati     |No      |No      |No      |
+|Ricerca di contenuto nei file crittografati     |Sì      |Sì      |Sì      |
 |Visualizzare in anteprima i file crittografati     |Sì      |Sì     |Sì       |
 |Esaminare i file crittografati in un set di Revisione    |N/D      |N/D        | Sì        |
 |Esportare file crittografati    |Sì       |Sì  |Sì    |

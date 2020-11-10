@@ -20,12 +20,12 @@ search.appverid:
 ms.assetid: ''
 description: In questo articolo viene fornita una panoramica delle funzionalità avanzate di eDiscovery in Microsoft 365, uno strumento per le indagini interne ed esterne.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 95c864b9e2222000b1114ae42dbbb5705228d531
-ms.sourcegitcommit: dab50e1cc5bba920720b80033c93457f5ca1c330
+ms.openlocfilehash: 2ef61c8c60cb2cd7114798969dce14c7dce0a2fd
+ms.sourcegitcommit: 9bf6a4f77f9af5fd988f6795bad3b240213a51fc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "48944344"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48951153"
 ---
 # <a name="overview-of-the-advanced-ediscovery-solution-in-microsoft-365"></a>Panoramica della soluzione avanzata di eDiscovery in Microsoft 365
 
@@ -72,11 +72,13 @@ Di seguito è riportato un diagramma di architettura di eDiscovery avanzato che 
 
 Per ulteriori informazioni sul flusso di lavoro end-to-end in Advanced eDiscovery, vedere this [Microsoft Mechanics video](https://go.microsoft.com/fwlink/?linkid=2066133).
 
-Nelle sezioni seguenti vengono descritti i singoli passaggi del flusso di lavoro incorporato in Advanced eDiscovery.
+Le sezioni seguenti descrivono ogni passaggio del flusso di lavoro incorporato in Advanced eDiscovery. Nella schermata seguente viene illustrata la scheda **Panoramica** di un caso denominato *2020.11.03-contoso v. fabrikam*.
+
+![Schede del flusso di lavoro avanzato di eDiscovery incorporato](../media/AeD-Case-Screenshot1.png)
 
 ## <a name="managing-custodians-and-non-custodial-data-sources"></a>Gestione di depositari e origini dati non detentive
 
-Utilizzare la scheda **origini** per aggiungere e gestire le persone che sono state identificate come persone di interesse nel caso e altre origini dati che potrebbero non essere associate a un custode. Quando si aggiungono conservanti o origini dati non detentive, è possibile eseguire rapidamente azioni come l'archiviazione legale su fonti di dati depositarie e non detentive, la comunicazione con i depositari e la ricerca di fonti di dati depositarie e non detentive per raccogliere contenuti rilevanti per il caso. Quando il caso progredisce, è facile aggiungere nuovi depositari o fonti di data non detentive o rilasciarli dal caso. Per ulteriori informazioni, vedere [lavorare con i depositari in Advanced eDiscovery](managing-custodians.md).
+Utilizzare la scheda **origini dati** per aggiungere e gestire le persone che sono state identificate come persone di interesse nel caso e altre origini dati che potrebbero non essere associate a un custode. Quando si aggiungono conservanti o origini dati non detentive, è possibile eseguire rapidamente azioni come l'archiviazione legale su fonti di dati depositarie e non detentive, la comunicazione con i depositari e la ricerca di fonti di dati depositarie e non detentive per raccogliere contenuti rilevanti per il caso. Quando il caso progredisce, è facile aggiungere nuovi depositari o fonti di data non detentive o rilasciarli dal caso. Per ulteriori informazioni, vedere [lavorare con i depositari in Advanced eDiscovery](managing-custodians.md).
 
 ## <a name="managing-legal-hold-notifications"></a>Gestione delle notifiche di blocco legale
 
@@ -84,7 +86,7 @@ Utilizzare la scheda **comunicazioni** per gestire il processo di comunicazione 
 
 ## <a name="managing-content-preservation"></a>Gestione della conservazione dei contenuti
 
-Quando si aggiunge un custode a un caso, è possibile applicare un blocco ai dati della custodia. Utilizzare la scheda **esenzioni** per gestire il blocco creato quando si aggiungono i depositari e per gestire altre esenzioni legali associate al caso. ad esempio, è possibile identificare e applicare un'esenzione su origini dati non detentive. È inoltre possibile modificare qualsiasi blocco nel caso e renderlo un blocco basato su query per conservare solo il contenuto che corrisponde alla query. Ad esempio, è possibile aggiungere un intervallo di date alla conservazione in modo che solo il contenuto creato all'interno di una data specifica sia stato conservato. È anche possibile ottenere statistiche sul contenuto che è in attesa, rimuovere il blocco dopo che non è più pertinente al caso o eliminarlo. Per ulteriori informazioni, vedere [Manage holds in Advanced eDiscovery](managing-holds.md).
+Quando si aggiunge un custode a un caso, è possibile applicare un blocco ai dati della custodia. Utilizzare la scheda **blocco** per gestire il blocco creato quando si aggiungono i depositari e per gestire altre esenzioni legali associate al caso. ad esempio, è possibile identificare e applicare un'esenzione su origini dati non detentive. È inoltre possibile modificare qualsiasi blocco nel caso e renderlo un blocco basato su query per conservare solo il contenuto che corrisponde alla query. Ad esempio, è possibile aggiungere un intervallo di date alla conservazione in modo che solo il contenuto creato all'interno di una data specifica sia stato conservato. È anche possibile ottenere statistiche sul contenuto che è in attesa, rimuovere il blocco dopo che non è più pertinente al caso o eliminarlo. Per ulteriori informazioni, vedere [Manage holds in Advanced eDiscovery](managing-holds.md).
 
 ## <a name="indexing-custodian-data"></a>Indicizzazione dei dati del custode
 

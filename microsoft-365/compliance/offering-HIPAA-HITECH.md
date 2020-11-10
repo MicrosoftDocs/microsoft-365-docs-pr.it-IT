@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: a6605f7d8561532121e54f02b579de26879baa1a
-ms.sourcegitcommit: 888b9355ef7b933c55ca6c18639c12426ff3fbde
+ms.openlocfilehash: 6e0f8e2661692930469aff85e0a7eeef2dd647e0
+ms.sourcegitcommit: c84cceb07e748969723a31b350e37f3ec79255ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "48305240"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "48948387"
 ---
 # <a name="health-insurance-portability-and-accountability-hipaa--hitech-acts"></a>Portabilità e responsabilità dell'assicurazione malattia (HIPAA) & atti HITECH
 
@@ -51,10 +51,11 @@ I servizi cloud di Microsoft Enterprise sono coperti anche da valutazioni FedRAM
 
 Per informazioni su come il cloud Microsoft aiuta i clienti a supportare HIPAA e i requisiti di HITECH, visitare le storie dei clienti [Microsoft](https://customers.microsoft.com).
 
-## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud Microsoft inclusi nell'ambito
+## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud Microsoft in ambito
 
 - [Azure e Azure per enti pubblici](https://aka.ms/AzureCompliance)
 - Microsoft Cloud App Security
+- [Microsoft Cloud per il Settore sanitario](https://aka.ms/MicrosoftCloudforHealthcareCompliance)
 - Microsoft Microsoft Healthcare bot Service
 - Microsoft Stream
 - Microsoft Professional Services: premier e locale per Azure, Dynamics 365, Intune e per le medie e grandi imprese clienti di Microsoft 365 per le aziende
