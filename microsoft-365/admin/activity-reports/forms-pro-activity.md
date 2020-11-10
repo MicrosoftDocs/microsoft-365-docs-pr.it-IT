@@ -1,5 +1,5 @@
 ---
-title: Rapporti Microsoft 365 nell'interfaccia di amministrazione-attività di moduli Pro
+title: Microsoft 365 report nell'interfaccia di amministrazione-Dynamics 365 Customer Voice
 ms.author: sirkkuw
 author: sirkkuw
 manager: scotv
@@ -17,19 +17,19 @@ search.appverid:
 - MET150
 - MOE150
 - GEA150
-description: Informazioni su come ottenere un report di attività di Microsoft Forms Pro utilizzando il Dashboard Microsoft 365 Reports nell'interfaccia di amministrazione di Microsoft 365.
-ms.openlocfilehash: d7252aae40a61d65a32630d01dc2a6fcd1466212
-ms.sourcegitcommit: e56894917d2aae05705c3b9447388d10e2156183
+description: Informazioni su come ottenere un report attività vocale del cliente di Microsoft Dynamics 365 utilizzando il Dashboard Microsoft 365 Reports nell'interfaccia di amministrazione di Microsoft 365.
+ms.openlocfilehash: de03067197c80634f02318b35a79eb84e33c4b86
+ms.sourcegitcommit: 82d8be71c5861a501ac62a774b306a3fc1d4e627
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48841158"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48988553"
 ---
-# <a name="microsoft-365-reports-in-the-admin-center---forms-pro-activity"></a>Rapporti Microsoft 365 nell'interfaccia di amministrazione-attività di moduli Pro
+# <a name="microsoft-365-reports-in-the-admin-center---dynamics-365-customer-voice-activity"></a>Microsoft 365 report nell'interfaccia di amministrazione-Dynamics 365 Customer Voice
 
 Il Dashboard Microsoft 365 **Reports** illustra la panoramica delle attività tra i prodotti dell'organizzazione. Consente di eseguire il drill-down fino a visualizzare report a livello di singolo prodotto, per ottenere informazioni più dettagliate sulle attività in ogni prodotto. Vedere l' [argomento introduttivo sui report](activity-reports.md).
   
-Ad esempio, è possibile comprendere l'attività di ogni utente concesso in licenza per l'utilizzo di Microsoft Forms Pro analizzando le interazioni con i moduli Pro. Consente inoltre di comprendere il livello di collaborazione che si sta verificando analizzando il numero di sondaggi Pro creati e le indagini Pro a cui gli utenti hanno risposto. 
+Ad esempio, è possibile comprendere l'attività di ogni utente concesso in licenza per l'utilizzo di Microsoft Dynamics 365 Customer Voice analizzando le interazioni con la voce del cliente Dynamics 365. Consente inoltre di comprendere il livello di collaborazione che si sta verificando analizzando il numero di sondaggi Pro creati e le indagini Pro a cui gli utenti hanno risposto. 
   
 > [!NOTE]
 > È necessario essere un amministratore globale, un lettore globale o un lettore di report in Microsoft 365 o un amministratore di Exchange, SharePoint, teams, Communications o Skype for business per visualizzare i report. 
@@ -39,21 +39,21 @@ Ad esempio, è possibile comprendere l'attività di ogni utente concesso in lice
 1. Nell'interfaccia di amministrazione passare alla pagina **Report** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">Utilizzo</a>.
 
     
-2. Nell'elenco **a discesa selezionare un report** selezionare attività **moduli Pro** \> **activity** .
+2. Nell'elenco **a discesa selezionare un report** selezionare **Dynamics 365 Customer** \> **Activity** Voice.
 
-## <a name="interpret-the-forms-activity-report"></a>Interpretare il report attività moduli
+## <a name="interpret-the-dynamics-365-customer-voice-activity-report"></a>Interpretare il report attività vocali del cliente Dynamics 365
 
-È possibile ottenere una visualizzazione nell'attività Forms Pro dell'utente esaminando i grafici **attività** e **utenti** . 
+È possibile ottenere una visualizzazione nell'attività vocale del cliente Dynamics 365 dell'utente esaminando i grafici **attività** e **utenti** . 
 
 ![Report attività moduli](../../media/formsproactivity.png)
 
 |Elemento|Descrizione|
 |:-----|:-----|
-|1.  <br/> |Il report attività **moduli Pro** può essere visualizzato per le tendenze degli ultimi 7, 30, 90 giorni o 180 giorni. Tuttavia, se si seleziona un giorno specifico nel report, la tabella (7) visualizzerà i dati per un massimo di 28 giorni dalla data corrente (non la data in cui è stato generato il report).   <br/> |
+|1.  <br/> |Il rapporto attività **vocali del cliente Dynamics 365** può essere visualizzato per le tendenze degli ultimi 7, 30, 90 o 180 giorni. Tuttavia, se si seleziona un giorno specifico nel report, la tabella (7) visualizzerà i dati per un massimo di 28 giorni dalla data corrente (non la data in cui è stato generato il report).   <br/> |
 |2.  <br/> |I dati di ogni report sono in genere recenti come le ultime 48 ore.  <br/> |
-|3.  <br/> |La visualizzazione **utenti** consente di conoscere la tendenza nel numero di utenti di moduli attivi Pro. Un utente viene considerato attivo se ha eseguito un'attività attorno a un sondaggio Pro (creare, modificare, visualizzare e così via) entro il periodo di tempo specifico.  <br/> |
-|4.  <br/> |La visualizzazione **attività** consente di comprendere la tendenza nel numero di utenti attivi. Un utente viene considerato attivo se ha eseguito un'attività di file (salvataggio, sincronizzazione, modifica o condivisione) oppure ha visitato una pagina entro il periodo di tempo specificato.<br/> Nota: un'attività può verificarsi più volte per un singolo sondaggio, ma conterà solo come un sondaggio attivo. Ad esempio, è possibile creare un sondaggio Pro e continuare a modificare lo stesso sondaggio più volte nel corso di un periodo di tempo specificato, conterà solo come un singolo sondaggio. <br>|
-|5.<br/>|Nel grafico **utenti** l'asse Y rappresenta il numero di utenti univoci. Asse X è la data in cui gli utenti univoci sono attivi. Le legende sono:<br/><br/>I **progettisti** significa che l'utente ha creato o modificato un sondaggio moduli Pro.<br><br>Nel grafico **attività** , l'asse Y è il numero di risposte Pro dei moduli per sondaggio. Asse X è la data in cui si è verificata l'attività di rilevamento o di risposta. Le legende sono:<br/><br/>I **sondaggi creati** sono il numero di sondaggi specifici per i moduli Pro creati dagli utenti<br>**Responses** è il numero di risposte anonime o non anonime che gli utenti che hanno ricevuto il sondaggio sono stati inviati. |
+|3.  <br/> |La visualizzazione **utenti** consente di comprendere l'andamento del numero di utenti di Voice clienti attivi di Dynamics 365. Un utente viene considerato attivo se ha eseguito un'attività attorno a un sondaggio Pro (creare, modificare, visualizzare e così via) entro il periodo di tempo specifico.  <br/> |
+|4.  <br/> |La visualizzazione **attività** consente di comprendere la tendenza nel numero di utenti attivi. Un utente viene considerato attivo se ha eseguito un'attività sui file, ad esempio salvataggio, sincronizzazione, modifica o condivisione, o ha visitato una pagina in un intervallo di tempo specificato.<br/> Nota: un'attività può verificarsi più volte per un singolo sondaggio, ma conterà solo come un sondaggio attivo. Ad esempio, è possibile creare un sondaggio Pro e continuare a modificare lo stesso sondaggio più volte nel corso di un periodo di tempo specificato, conterà solo come un singolo sondaggio. <br>|
+|5.<br/>|Nel grafico **utenti** l'asse Y rappresenta il numero di utenti univoci. Asse X è la data in cui gli utenti univoci sono attivi. Le legende sono:<br/><br/>I **progettisti** significa che l'utente ha creato o modificato un sondaggio di VoIP del cliente di Dynamics 365.<br><br>Nel grafico **attività** , l'asse Y è il numero di risposte vocali del cliente Dynamics 365 per sondaggio. Asse X è la data in cui si è verificata l'attività di rilevamento o di risposta. Le legende sono:<br/><br/>I **sondaggi creati** sono il numero di sondaggi vocali dei clienti di Dynamics 365 univoci creati dagli utenti<br>**Responses** è il numero di risposte anonime o non anonime che gli utenti che hanno ricevuto il sondaggio sono stati inviati. |
 |6.<br/>|È possibile filtrare la serie visualizzata nel grafico selezionando un elemento nella legenda. Ad esempio, nel grafico utenti, selezionare progettisti, risponditori o utenti totali per visualizzare solo le informazioni relative a ognuna di esse. La modifica di questa selezione non modifica le informazioni nella tabella della griglia sottostante.|
 |7.<br/>|Nella tabella viene illustrata una ripartizione delle attività a livello di utente. Le legende sono:<br/><br/>**Username** è l'indirizzo di posta elettronica dell'utente che ha eseguito l'attività in Microsoft Forms.<br/>**Data ultima attività (UTC)** è la data più recente in cui l'utente ha eseguito un'attività del modulo per l'intervallo di date selezionato. Per visualizzare l'attività relativa a una data specifica, selezionare la data direttamente nel grafico.<br/>In questo modo la tabella verrà filtrata per visualizzare i dati relativi alle attività dei file solo per gli utenti che hanno eseguito l'attività in quel giorno specifico.<br/><br/>**Numero di sondaggi creati** è il numero di sondaggi creati dall'utente.<br/> Il **numero di risposte di sondaggio** è il numero di risposte provenienti da risponditori a cui è stato distribuito il sondaggio.|
 |8.<br/>|Selezionare l'icona **Gestisci colonne** per aggiungere o rimuovere colonne dal report.|

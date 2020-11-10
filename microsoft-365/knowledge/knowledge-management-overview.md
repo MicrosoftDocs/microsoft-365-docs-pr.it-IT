@@ -11,12 +11,12 @@ search.appverid: ''
 localization_priority: None
 ROBOTS: NOINDEX, NOFOLLOW
 description: Panoramica della gestione delle informazioni in Project Cortex.
-ms.openlocfilehash: d422b54bb7991fb5fd61465cd0428ab586d10bf5
-ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
+ms.openlocfilehash: 27ce6457f2329ccaa4738d6868b4f2051c0c0a51
+ms.sourcegitcommit: 82d8be71c5861a501ac62a774b306a3fc1d4e627
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "48906942"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48988843"
 ---
 # <a name="knowledge-management-overview-preview"></a>Panoramica della gestione delle informazioni (anteprima)
 
@@ -75,7 +75,7 @@ I controlli di amministratore nell'interfaccia di amministrazione di Microsoft 3
 - Controllare quali utenti possono confermare o rifiutare gli argomenti nell'argomento centro.
 - Controllare quali utenti possono creare e modificare gli argomenti nel centro argomenti.
 
-Per ulteriori informazioni, vedere [Manage Your Knowledge Network](manage-knowledge-network.md) . 
+Per ulteriori informazioni, vedere [Manage Your Knowledge Network](topic-experiences-discovery.md) . 
 
 ## <a name="topic-curation--feedback"></a>& commenti e suggerimenti per la cura dell'argomento
 
@@ -87,5 +87,5 @@ Inoltre, gli utenti con autorizzazioni appropriate possono contrassegnare elemen
 
 
 ## <a name="see-also"></a>Vedere anche
-[Configurare la gestione delle informazioni](set-up-knowledge-network.md)</br>
+[Configurare la gestione delle informazioni](set-up-topic-experiences.md)</br>
 [Panoramica del centro argomenti](topic-center-overview.md)

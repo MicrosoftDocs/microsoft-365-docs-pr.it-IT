@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Informazioni su come ottenere il report attività degli utenti di Microsoft teams e acquisire maggiori informazioni sull'attività dei team nell'organizzazione.
-ms.openlocfilehash: 8ce29b43e6238883470d1159ad1d22fefca88792
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: b85f073a2916b646a5a03e62913de44b410ca058
+ms.sourcegitcommit: 82d8be71c5861a501ac62a774b306a3fc1d4e627
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48637068"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48988471"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-teams-user-activity"></a>Report di Microsoft 365 nell'interfaccia di amministrazione-attività utente di Microsoft Teams
 
@@ -44,7 +44,7 @@ Il Dashboard Microsoft 365 **Reports** illustra la panoramica delle attività tr
 
 Selezionare **Scegli colonne** per aggiungere o rimuovere colonne dal report.  <br/> ![Teams user activity report - choose columns](../../media/a1513028-cf09-4186-93a6-8a203cd22475.png)
 
-È inoltre possibile esportare i dati del report in un file CSV di Excel selezionando il collegamento **Esporta** . Vengono esportati i dati di tutti gli utenti, che possono poi essere ordinati e filtrati per ulteriore analisi. Se gli utenti sono meno di 2000, è possibile ordinarli e filtrarli direttamente nella tabella del report. Se invece gli utenti sono più di 2000, per ordinarli e filtrarli occorre esportare i dati. Il formato esportato per il tempo **audio**, **video** e tempo di **condivisione dello schermo** segue il formato di durata ISO8601.
+È inoltre possibile esportare i dati del report in un file CSV di Excel selezionando il collegamento **Esporta** . Vengono esportati i dati di tutti gli utenti, che possono poi essere ordinati e filtrati per ulteriore analisi. Se gli utenti sono meno di 2000, è possibile ordinarli e filtrarli direttamente nella tabella del report. Se invece gli utenti sono più di 2000, per ordinarli e filtrarli occorre esportare i dati. Il formato esportato per il tempo **audio** , **video** e tempo di **condivisione dello schermo** segue il formato di durata ISO8601.
 
 |Elemento|Descrizione|
 |:-----|:-----|
@@ -59,5 +59,5 @@ Selezionare **Scegli colonne** per aggiungere o rimuovere colonne dal report.  <
 |Riunioni organizzate ad hoc <br/> |Il numero di riunioni non pianificate nel calendario che l'utente ha organizzato durante il periodo di tempo specificato. <br/>|
 |Riunioni organizzate pianificate  <br/> |Il numero di riunioni pianificate che un utente ha organizzato durante il periodo di tempo specificato.  <br/> |
 |È concesso in licenza |Selezionato se l'utente è autorizzato a usare i team.|
-|Altre attività|l'utente è considerato attivo ma ha un valore pari a zero per i messaggi di chat, 1:1 chiamate, i messaggi di canale, le riunioni totali e i valori metrici organizzati per le riunioni. Esempi di azioni si verificano quando un utente apre un messaggio di canale, ma non risponde o quando viene ricevuto un messaggio privato e viene letto ma non risposto. |
+|Altre attività|L'utente è attivo ma ha eseguito altre attività rispetto ai tipi di azione esposti offerti nel rapporto (invio o risposta a messaggi di canale e messaggi di chat, pianificazione o partecipazione a chiamate e riunioni di 1:1). Esempi di azioni si verificano quando un utente modifica lo stato del team o il messaggio di stato del team o apre un messaggio di canale ma non risponde. |
 |||

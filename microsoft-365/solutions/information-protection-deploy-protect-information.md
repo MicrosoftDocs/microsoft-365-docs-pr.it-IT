@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Distribuire le funzionalità di sicurezza e conformità di Microsoft 365 e proteggere le informazioni personali.
-ms.openlocfilehash: 97c34ca236ea4be98b9412518788630732259d5a
-ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
+ms.openlocfilehash: f17568c5a19446644cfb7ee64aac3e0f9eae5793
+ms.sourcegitcommit: 82d8be71c5861a501ac62a774b306a3fc1d4e627
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48377152"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48988483"
 ---
 # <a name="protect-information-subject-to-data-privacy-regulation"></a>Proteggere le informazioni soggette alla normativa sulla privacy dei dati
 
@@ -65,7 +65,7 @@ Per iniziare a utilizzare uno schema di protezione delle informazioni in Microso
 
 ## <a name="managing-information-protection-in-microsoft-365"></a>Gestione della protezione delle informazioni in Microsoft 365
 
-[Le soluzioni](../compliance/protect-information.md) Microsoft per la protezione delle informazioni includono una serie di funzionalità integrate tra Microsoft 365, Microsoft Azure e Microsoft Windows. In Microsoft 365, le soluzioni di protezione delle informazioni includono:
+[Le soluzioni](../compliance/information-protection.md) Microsoft per la protezione delle informazioni includono una serie di funzionalità integrate tra Microsoft 365, Microsoft Azure e Microsoft Windows. In Microsoft 365, le soluzioni di protezione delle informazioni includono:
 
 - [Crittografia del servizio con la chiave del cliente](../compliance/customer-key-overview.md)
 - [Tipi di informazioni riservate](../compliance/what-the-sensitive-information-types-look-for.md) (descritti nell' [articolo valutare i rischi per la privacy dei dati e identificare gli elementi sensibili](information-protection-deploy-assess.md))
@@ -144,7 +144,7 @@ Quando si creano [etichette di riservatezza](../compliance/sensitivity-labels-te
 Usare le impostazioni di etichetta seguenti per proteggere il contenuto in tali contenitori:
 
 - Privacy (pubblico o privato) dei siti di Team connessi a Microsoft 365 gruppi
-- Accesso utente esterno
+- Accesso utenti esterni
 - Accesso da dispositivi non gestiti
 
 Per la privacy dei dati, per impedire la condivisione esterna per i contenitori che verranno utilizzati per l'archiviazione del contenuto con dati personali sensibili, contrassegnare i file che contengono i dati come privati e richiedere i dispositivi gestiti.

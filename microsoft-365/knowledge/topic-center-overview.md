@@ -11,19 +11,19 @@ ms.service: o365-administration
 search.appverid: ''
 ROBOTS: NOINDEX, NOFOLLOW
 localization_priority: None
-ms.openlocfilehash: d87a52bc6aca2f033a6e0d26a8c9c0e167908759
-ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
+ms.openlocfilehash: 39a851ed3613057c7b3b931a94a79fed235d277a
+ms.sourcegitcommit: 82d8be71c5861a501ac62a774b306a3fc1d4e627
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "48906966"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48988831"
 ---
 # <a name="topic-center-overview-preview"></a>Panoramica del centro argomenti (anteprima)
 
 > [!Note] 
 > Il contenuto di questo articolo è relativo all'anteprima privata di Project Cortex. [Altre informazioni su Project Cortex](https://aka.ms/projectcortex).
 
-Il centro argomenti è un sito di SharePoint moderno che funge da centro di conoscenza per la propria organizzazione. Viene creato durante l' [installazione di Knowledge Management](set-up-knowledge-network.md) nell'interfaccia di amministrazione di Microsoft 365.
+Il centro argomenti è un sito di SharePoint moderno che funge da centro di conoscenza per la propria organizzazione. Viene creato durante l' [installazione di Knowledge Management](set-up-topic-experiences.md) nell'interfaccia di amministrazione di Microsoft 365.
 
 Nel centro argomenti è presente una Home page predefinita in cui è possibile visualizzare gli argomenti a cui sono stati connessi o che sono stati consigliati di essere connessi. Gli utenti che dispongono delle autorizzazioni appropriate possono anche:
 
@@ -36,7 +36,7 @@ Nel centro argomenti è presente una Home page predefinita in cui è possibile v
 
 ## <a name="where-is-the-topic-center"></a>Dove è il centro argomenti
 
-Il centro argomenti è stato creato durante l'installazione di Knowledge Management. Al termine dell'installazione, un amministratore può trovare l'URL nella [pagina Gestione centro informazioni](manage-knowledge-network.md).
+Il centro argomenti è stato creato durante l'installazione di Knowledge Management. Al termine dell'installazione, un amministratore può trovare l'URL nella [pagina Gestione centro informazioni](topic-experiences-discovery.md).
 
 1. Nell'interfaccia di amministrazione di Microsoft 365, selezionare **installazione** nel riquadro di spostamento e nella sezione **informazioni organizzative** Selezionare **Connetti persone alla conoscenza**.
 
@@ -46,7 +46,7 @@ Il centro argomenti è stato creato durante l'installazione di Knowledge Managem
 
 ## <a name="home-page"></a>Home page
 
-Per visualizzare il centro argomenti, è necessario disporre delle autorizzazioni per visualizzare gli argomenti e l'argomento esperienze. L'amministratore può assegnare queste autorizzazioni agli utenti durante l' [installazione di Knowledge Management](set-up-knowledge-network.md)oppure è possibile aggiungere nuovi utenti in [seguito](give-user-permissions-to-the-topic-center.md) da un amministratore tramite l'interfaccia di amministrazione di Microsoft 365.
+Per visualizzare il centro argomenti, è necessario disporre delle autorizzazioni per visualizzare gli argomenti e l'argomento esperienze. L'amministratore può assegnare queste autorizzazioni agli utenti durante l' [installazione di Knowledge Management](set-up-topic-experiences.md)oppure è possibile aggiungere nuovi utenti in [seguito](give-user-permissions-to-the-topic-center.md) da un amministratore tramite l'interfaccia di amministrazione di Microsoft 365.
 
 Nella Home page 
 - **Visualizza argomenti** : Visualizza l'argomento experiences. In questo modo, è possibile visualizzare gli argomenti nell'organizzazione e fornire commenti e suggerimenti sugli argomenti in cui sono stati connessi:
@@ -59,7 +59,7 @@ Una volta bloccato, le modifiche alla pagina dell'argomento possono essere esegu
 
 ## <a name="permissions-to-use-the-manage-topics-capability-topic-center"></a>Autorizzazioni per l'utilizzo del centro tematico gestione argomenti funzionalità
 
-Per utilizzare la sezione Gestisci argomenti del centro argomenti, è necessario disporre delle autorizzazioni necessarie. L'amministratore può assegnare queste autorizzazioni agli utenti durante l' [installazione di Knowledge Management](set-up-knowledge-network.md)oppure è possibile aggiungere nuovi utenti in [seguito](give-user-permissions-to-the-topic-center.md) da un amministratore tramite l'interfaccia di amministrazione di Microsoft 365.
+Per utilizzare la sezione Gestisci argomenti del centro argomenti, è necessario disporre delle autorizzazioni necessarie. L'amministratore può assegnare queste autorizzazioni agli utenti durante l' [installazione di Knowledge Management](set-up-topic-experiences.md)oppure è possibile aggiungere nuovi utenti in [seguito](give-user-permissions-to-the-topic-center.md) da un amministratore tramite l'interfaccia di amministrazione di Microsoft 365.
 
 Agli utenti del centro argomenti possono essere assegnati due set di autorizzazioni:
 

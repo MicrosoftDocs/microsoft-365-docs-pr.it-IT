@@ -11,12 +11,12 @@ ms.service: o365-administration
 search.appverid: ''
 ROBOTS: NOINDEX, NOFOLLOW
 localization_priority: None
-ms.openlocfilehash: d2fd3df200ab350ca3e6595402bab17034d960a7
-ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
+ms.openlocfilehash: 464a926b99cceeb652756ad6d1456c5e17d2a925
+ms.sourcegitcommit: 82d8be71c5861a501ac62a774b306a3fc1d4e627
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "48906920"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48988739"
 ---
 # <a name="work-with-topics-in-the-topic-center-preview"></a>Utilizzare gli argomenti nell'argomento centro (anteprima)
 
@@ -28,7 +28,7 @@ Nel centro argomenti, un responsabile della Knowledge base può esaminare gli ar
 
 ## <a name="requirements"></a>Requisiti
 
-Per poter utilizzare il centro argomenti, è necessario disporre delle autorizzazioni necessarie. L'amministratore può aggiungervi durante la [configurazione della Knowledge Management](set-up-knowledge-network.md)oppure è possibile aggiungere nuovi utenti in un momento [successivo](give-user-permissions-to-the-topic-center.md).
+Per poter utilizzare il centro argomenti, è necessario disporre delle autorizzazioni necessarie. L'amministratore può aggiungervi durante la [configurazione della Knowledge Management](set-up-topic-experiences.md)oppure è possibile aggiungere nuovi utenti in un momento [successivo](give-user-permissions-to-the-topic-center.md).
 
 Agli utenti del centro argomenti possono essere assegnati due set di autorizzazioni:
 
@@ -72,7 +72,7 @@ Per esaminare un argomento confermato:
 3. È possibile rifiutarla troppo
 
 ## <a name="review-published-topics"></a>Esaminare gli argomenti pubblicati
-Gli argomenti pubblicati sono stati modificati in modo che le informazioni di speific vengano sempre visualizzate a chiunque incontri la pagina. Gli argomenti creati manualmente sono riportati di seguito.
+Gli argomenti pubblicati sono stati modificati in modo che informazioni specifiche vengano sempre visualizzate a chiunque incontri la pagina. Gli argomenti creati manualmente sono riportati di seguito.
 
    
 ## <a name="create-a-new-topic"></a>Creare un nuovo argomento
@@ -101,7 +101,7 @@ Per creare un nuovo argomento:
 
     ![Pagina nuovo argomento](../media/content-understanding/k-new-topic-page.png)
     
-3. Se è necessario aggiungere altri componenti alla pagina, ad esempio testo, immagini, WebParts, collegamenti e così via, selezionare l'icona Canvas al centro della pagina per individuarla e aggiungerla.
+3. Se è necessario aggiungere altri componenti alla pagina, ad esempio testo, immagini, Web part, collegamenti e così via, selezionare l'icona Canvas al centro della pagina per individuarla e aggiungerla.
 
     ![Aggiungere elementi alla pagina](../media/content-understanding/static-icon.png)
 

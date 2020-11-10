@@ -12,12 +12,12 @@ ms.custom: seo-marvel-jun2020
 localization_priority: Priority
 description: Come le istituzioni dei servizi finanziari possono mantenere conformità e sicurezza finanziarie e collaborare efficacemente con Microsoft 365 e Teams.
 f1.keywords: NOCSH
-ms.openlocfilehash: 8bc9e965029414dadc39757b926949f3f60afc16
-ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
+ms.openlocfilehash: 7192b29d09acb23df368e2458fac62c18bbbadb2
+ms.sourcegitcommit: 82d8be71c5861a501ac62a774b306a3fc1d4e627
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "48906908"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48988715"
 ---
 # <a name="key-compliance-and-security-considerations-for-us-banking-and-capital-markets"></a>Considerazioni chiave su conformità e sicurezza per i mercati bancario e finanziario degli Stati Uniti
 
@@ -164,7 +164,7 @@ Microsoft 365 consente a tutte le organizzazioni di identificare i dati sensibil
 * **Microsoft Information Protection (MIP)** sia per la classificazione basata sull'utente che per la classificazione automatica dei dati sensibili.
 * La **prevenzione della perdita dei dati (DLP) di Office 365** per l'identificazione automatica dei dati sensibili con tipi di dati sensibili (ossia espressioni regolari), parole chiave e applicazione dei criteri.
 
-**[Microsoft Information Protection (MIP)](../compliance/protect-information.md)** consente alle organizzazioni di classificare intelligentemente documenti e messaggi di posta elettronica usando etichette di riservatezza. Gli utenti possono applicare manualmente le etichette di riservatezza ai documenti nelle applicazioni di Microsoft Office e ai messaggi di posta elettronica in Outlook. Le etichette possono applicare automaticamente i contrassegni di documento, la protezione con crittografia e l'applicazione della gestione dei diritti. È possibile applicare automaticamente le etichette di riservatezza anche configurando criteri che usano parole chiave e tipi di dati riservati, come numeri di carta di credito, numeri di previdenza sociale e numeri di identità, per trovare e classificare automaticamente i dati riservati.
+**[Microsoft Information Protection (MIP)](../compliance/information-protection.md)** consente alle organizzazioni di classificare intelligentemente documenti e messaggi di posta elettronica usando etichette di riservatezza. Gli utenti possono applicare manualmente le etichette di riservatezza ai documenti nelle applicazioni di Microsoft Office e ai messaggi di posta elettronica in Outlook. Le etichette possono applicare automaticamente i contrassegni di documento, la protezione con crittografia e l'applicazione della gestione dei diritti. È possibile applicare automaticamente le etichette di riservatezza anche configurando criteri che usano parole chiave e tipi di dati riservati, come numeri di carta di credito, numeri di previdenza sociale e numeri di identità, per trovare e classificare automaticamente i dati riservati.
 
 Microsoft include anche "classificatori sottoponibili a training" che usano modelli di apprendimento automatico per identificare i dati sensibili in base al contenuto, anziché semplicemente attraverso criteri di ricerca o in base agli elementi all'interno del contenuto. Un classificatore apprende come identificare un tipo di contenuto esaminando numerosi esempi del contenuto da classificare. Il training di un classificatore inizia fornendo esempi di contenuto in una determinata categoria. Dopo avere appreso dagli esempi, il modello viene testato fornendogli una combinazione di esempi corrispondenti e non corrispondenti. Il classificatore stima se un determinato esempio rientra nella categoria o meno. Una persona poi conferma i risultati, ordinando i positivi, i negativi, i falsi positivi e i falsi negativi per aumentare l'accuratezza delle previsioni del classificatore. Quando viene pubblicato, il classificatore sottoposto a training elabora il contenuto in Microsoft SharePoint Online, Exchange Online e OneDrive for Business e lo classifica automaticamente.
 
