@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Usare i criteri di conservazione per tenere sotto controllo molto efficacemente i contenuti che gli utenti generano con posta elettronica, documenti e conversazioni. Mantenere il contenuto desiderato e liberarsi di quello che non serve.
-ms.openlocfilehash: 4e4ced42424abe024a1230c24814c420a59ed3dc
-ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
+ms.openlocfilehash: 3b68de3594e4a31040a6ee0698c3c600490bd5d9
+ms.sourcegitcommit: 9bf6a4f77f9af5fd988f6795bad3b240213a51fc
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48919988"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48950954"
 ---
 # <a name="create-and-configure-retention-policies"></a>Creare e configurare criteri di conservazione
 
@@ -169,9 +169,9 @@ Usare le istruzioni seguenti per i criteri di conservazione che si applicano a u
 
 La posizione **Posta elettronica di Exchange** supporta la conservazione per i messaggi di posta elettronica, il calendario e altri elementi delle cassette postali degli utenti applicando le impostazioni di conservazione a livello di cassetta postale.
 
-Sono inclusi gli elementi di posta elettronica seguenti: i messaggi di posta elettronica con allegati, incluse le bozze, le attività, gli elementi del calendario quando hanno una data di fine e le note. I contatti, le attività e gli elementi del calendario che non hanno una data di fine sono esclusi. Altri elementi archiviati in una cassetta postale, ad esempio i messaggi salvati di Skype e di Teams, non sono inclusi con questa posizione. Questi elementi hanno posizioni di conservazione personalizzate.
+Per informazioni dettagliate sugli elementi inclusi ed esclusi quando si configurano le impostazioni di conservazione per Exchange, vedere [Cosa è incluso per la conservazione e l'eliminazione](retention-policies-exchange.md#whats-included-for-retention-and-deletion)
 
-Anche se un gruppo di Microsoft 365 ha una cassetta postale di Exchange, un criterio di conservazione che include l'intero percorso **Posta elettronica di Exchange** non includerà il contenuto nelle cassette postali del gruppo di Microsoft 365. Per conservare il contenuto delle cassette postali, selezionare la posizione **Gruppi di Microsoft 365**.
+Si noti che anche se un gruppo di Microsoft 365 ha una cassetta postale di Exchange, un criterio di conservazione che include l'intero percorso **Posta elettronica di Exchange** non includerà il contenuto nelle cassette postali del gruppo di Microsoft 365. Per conservare il contenuto delle cassette postali, selezionare la posizione **Gruppi di Microsoft 365**.
 
 La posizione **Cartelle pubbliche di Exchange** applica le impostazioni di conservazione a tutte le cartelle pubbliche e non può essere applicata a livello di cartella o cassetta postale.
 
@@ -179,12 +179,9 @@ La posizione **Cartelle pubbliche di Exchange** applica le impostazioni di conse
 
 Selezionando la posizione **Siti di SharePoint** , il criterio di conservazione può conservare ed eliminare documenti all'interno di siti di comunicazione di SharePoint, siti del team non collegati a gruppi di Microsoft 365 e siti classici. I siti del team collegati a gruppi di Microsoft 365 non sono supportati con questa opzione. In alternativa, usare la posizione **Gruppi di Microsoft 365** che si applica al contenuto dei file, del sito e della cassetta postale del gruppo.
 
-Anche se il criterio di conservazione è applicato a livello di sito, le impostazioni di conservazione sono applicate solo ai documenti. Le impostazioni di conservazione non si applicano alle strutture di organizzazione che includono raccolte, elenchi e cartelle all'interno del sito.
+Anche se il criterio di conservazione è applicato a livello di sito, le impostazioni di conservazione sono applicate solo ai documenti. Per informazioni dettagliate cosa è incluso ed escluso quando si configurano le impostazioni di conservazione per SharePoint and OneDrive, vedere [Cosa è incluso per la conservazione e l'eliminazione](retention-policies-sharepoint.md#whats-included-for-retention-and-deletion). 
 
 Quando si specificano le posizioni dei siti di SharePoint o gli account di OneDrive, non è necessario disporre delle autorizzazioni per accedere ai siti e non viene eseguita alcuna convalida quando si specifica l'URL nella pagina **Modificare le posizioni**. Tuttavia, viene verificata l’esistenza dei siti di SharePoint specificati al termine della procedura guidata. Se la verifica dell'URL immesso fallisce, verrà visualizzato un messaggio di errore e la procedura guidata non creerà il criterio di conservazione fino al successo della verifica. Se si visualizza il messaggio di errore, tornare alla procedura guidata per cambiare l'URL o rimuovere il sito dal criterio di conservazione.
-
-> [!NOTE]
-> I siti di SharePoint devono essere indicizzati affinchè le impostazioni di conservazione vengano applicate. Se gli elementi nelle raccolte documenti di SharePoint sono configurati per non essere visualizzati nei risultati di ricerca, tale configurazione non esclude gli elementi dalle impostazioni di conservazione.
 
 Per specificare singoli account di OneDrive da includere o escludere, l'URL ha il formato seguente: `https://<tenant name>-my.sharepoint.com/personal/<user_name>_<tenant name>_com`
 

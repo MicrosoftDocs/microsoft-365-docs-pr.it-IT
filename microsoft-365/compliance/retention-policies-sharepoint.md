@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Informazioni sul funzionamento della conservazione per SharePoint e OneDrive.
-ms.openlocfilehash: 258cc8e777ca39d2528e520ff5634086bff302c7
-ms.sourcegitcommit: d578b28ed1886abd083b01b93f01b354067e6d47
+ms.openlocfilehash: 84191cf7df1c8382b336ecce47c50ca24bc2aede
+ms.sourcegitcommit: 9bf6a4f77f9af5fd988f6795bad3b240213a51fc
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "48804541"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48951109"
 ---
 # <a name="learn-about-retention-for-sharepoint-and-onedrive"></a>Informazioni sulla conservazione per SharePoint e OneDrive
 
@@ -38,16 +38,20 @@ Per altri carichi di lavoro, vedere:
 
 ## <a name="whats-included-for-retention-and-deletion"></a>Cosa è incluso per la conservazione e l'eliminazione
 
-È possibile conservare tutti i file archiviati in siti di SharePoint o OneDrive applicando un criterio di conservazione o un'etichetta di conservazione.
+È possibile conservare tutti i file archiviati in siti di SharePoint o OneDrive applicando un criterio di conservazione o un'etichetta di conservazione. 
 
 È possibile eliminare i file seguenti:
 
-- Se si usa un criterio di conservazione, tutti i file nelle raccolte documenti, il che include tutte le raccolte documenti di SharePoint create automaticamente, come le **Risorse del sito** .
+- Se si usa un criterio di conservazione, tutti i file nelle raccolte documenti, il che include tutte le raccolte documenti di SharePoint create automaticamente, come le **Risorse del sito**.
     
-- Se si usano le etichette di conservazione, tutti i file in tutte le raccolte documenti e tutti i file al livello radice non contenuti in una cartella.
+- Se si usano le etichette di conservazione, tutti i file in tutte le raccolte documenti e tutti i file a livello radice non contenuti in una cartella.
     
-    Se si usa una [query KQL con un criterio di applicazione automatica per un'etichetta di conservazione](apply-retention-labels-automatically.md#auto-apply-labels-to-content-with-keywords-or-searchable-properties), è possibile escludere raccolte documenti usando la voce seguente: `NOT(DocumentLink:"<URL to document library>")`
+> [!TIP]
+> Se si usa una [query con un criterio di applicazione automatica per un'etichetta di conservazione](apply-retention-labels-automatically.md#auto-apply-labels-to-content-with-keywords-or-searchable-properties), è possibile escludere raccolte documenti usando la voce seguente: `NOT(DocumentLink:"<URL to document library>")`
 
+Le impostazioni di conservazione non si applicano alle strutture di organizzazione che includono raccolte, elenchi e cartelle. In alternativa, agli elementi negli elenchi di sistema, che sono elenchi nascosti utilizzati da SharePoint per gestire il sistema e includono il catalogo della pagina master, il catalogo della soluzione e le origini dati.
+
+Per i criteri di conservazione e i criteri di etichetta applicati automaticamente: i siti di SharePoint devono essere indicizzati per applicare le impostazioni di conservazione. Se gli elementi nelle raccolte documenti di SharePoint sono configurati per non essere visualizzati nei risultati di ricerca, tale configurazione non esclude i file dalle impostazioni di conservazione.
 
 ## <a name="how-retention-works-for-sharepoint-and-onedrive"></a>Funzionamento della conservazione per SharePoint e OneDrive
 
