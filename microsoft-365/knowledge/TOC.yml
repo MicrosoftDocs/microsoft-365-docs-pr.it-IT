@@ -11,6 +11,6 @@
 - name: Introduzione all'installazione
   items:
     - name: Configurare la gestione delle informazioni
-      href: set-up-knowledge-network.md
+      href: set-up-topic-experiences.md
     - name: Gestire la rete di gestione delle informazioni
-      href: manage-knowledge-network.md
+      href: topic-experiences-discovery.md
