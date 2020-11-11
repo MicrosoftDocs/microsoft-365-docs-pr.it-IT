@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: L'aggiunta di nuove nuove soluzioni al centro conformità, l'aggiornamento delle funzionalità esistenti in base ai commenti o la documentazione aggiornata e rinnovata, Microsoft 365 consente di rimanere al di sopra del panorama di conformità in continua evoluzione. Scoprire cosa è stato fino a questo mese.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 1ebe91e94b286e7d9a1b46b7fd7abf625881a6a9
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: cf019e15b1d5b915c58325c7d7c6f160acffe03e
+ms.sourcegitcommit: 82d8be71c5861a501ac62a774b306a3fc1d4e627
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48847802"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48988854"
 ---
 # <a name="whats-new-in-microsoft-365-compliance"></a>Novità sulla conformità Microsoft 365
 
@@ -100,7 +100,7 @@ L'attività amministrativa relativa alla conservazione è ora registrata e dispo
 
 Per facilitare la comprensione delle soluzioni di conformità che consentono di proteggere e gestire i dati sensibili dell'organizzazione, sono state create due nuove pagine di destinazione con una panoramica del modo in cui le soluzioni interagiscono per raggiungere tali obiettivi, inclusi i collegamenti ai documenti correlati, in modo da poterli immergere ulteriormente.
 
-[Microsoft Information Protection in Microsoft 365](protect-information.md)<br>
+[Microsoft Information Protection in Microsoft 365](information-protection.md)<br>
 [Microsoft Information Governance in Microsoft 365](manage-Information-governance.md)
 
 ### <a name="advanced-ediscovery-add-non-custodial-data-sources-to-your-cases"></a>Advanced eDiscovery: aggiungere origini dati non detentive ai casi

@@ -1,5 +1,5 @@
 ---
-title: Condizioni ed eccezioni dei criteri DLP (anteprima)
+title: Condizioni, eccezioni e azioni dei criteri DLP (anteprima)
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -14,18 +14,25 @@ search.appverid:
 - MOE150
 - MET150
 description: informazioni sulle condizioni e le eccezioni dei criteri DLP
-ms.openlocfilehash: 2ce49b15bdb13035a37f6895b4b8865b55a62f78
-ms.sourcegitcommit: e56894917d2aae05705c3b9447388d10e2156183
+ms.openlocfilehash: a371c564cc314c457e1d9afe667115c244e0185d
+ms.sourcegitcommit: f941495e9257a0013b4a6a099b66c649e24ce8a1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48841472"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "48993344"
 ---
-# <a name="dlp-policy-conditions-and-exceptions-preview"></a>Condizioni ed eccezioni dei criteri DLP (anteprima)
+# <a name="dlp-policy-conditions-exceptions-and-actions-preview"></a>Condizioni, eccezioni e azioni dei criteri DLP (anteprima)
 
-Le condizioni e le eccezioni nei criteri DLP identificano gli elementi sensibili a cui viene applicato il criterio. Le condizioni definiscono gli elementi da includere e le eccezioni definiscono gli elementi da escludere. Per ogni condizione è presente un'eccezione corrispondente che utilizza la stessa identica sintassi.
+Le condizioni e le eccezioni nei criteri DLP identificano gli elementi sensibili a cui viene applicato il criterio. Le azioni definiscono cosa succede a causa di una condizione di eccezione soddisfatta.
 
- La maggior parte delle condizioni e delle eccezioni ha una proprietà che supporta uno o più valori. Ad esempio, se il criterio DLP viene applicato ai messaggi di posta elettronica di Exchange, il **mittente** è la condizione richiede il mittente del messaggio. Alcune condizioni dispongono di due proprietà. Ad esempio, la condizione **Un'intestazione di messaggio include una di queste parole** richiede una proprietà per specificare il campo dell'intestazione del messaggio e un'altra proprietà per specificare il testo da cercare nel campo dell'intestazione. Alcune condizioni o eccezioni non dispongono di proprietà. Ad esempio, la condizione di **allegato è protetta da password** Cerca solo gli allegati nei messaggi protetti da password.
+- Condizioni definiscono gli elementi da includere
+- Le eccezioni definiscono gli elementi da escludere.
+- Le azioni definiscono cosa accade a causa di una condizione o di un'eccezione soddisfatte
+ 
+La maggior parte delle condizioni e delle eccezioni ha una proprietà che supporta uno o più valori. Ad esempio, se il criterio DLP viene applicato ai messaggi di posta elettronica di Exchange, il **mittente** è la condizione richiede il mittente del messaggio. Alcune condizioni dispongono di due proprietà. Ad esempio, la condizione **Un'intestazione di messaggio include una di queste parole** richiede una proprietà per specificare il campo dell'intestazione del messaggio e un'altra proprietà per specificare il testo da cercare nel campo dell'intestazione. Alcune condizioni o eccezioni non dispongono di proprietà. Ad esempio, la condizione di **allegato è protetta da password** Cerca solo gli allegati nei messaggi protetti da password.
+
+In genere, per le azioni sono necessarie proprietà aggiuntive. Ad esempio, quando la regola del criterio DLP reindirizza un messaggio, è necessario specificare la posizione in cui il messaggio viene reindirizzato. 
+<!-- Some actions have multiple properties that are available or required. For example, when the rule adds a header field to the message header, you need to specify both the name and value of the header. When the rule adds a disclaimer to messages, you need to specify the disclaimer text, but you can also specify where to insert the text, or what to do if the disclaimer can't be added to the message. Typically, you can configure multiple actions in a rule, but some actions are exclusive. For example, one rule can't reject and redirect the same message.-->
 
 ## <a name="conditions-and-exceptions-for-dlp-policies"></a>Condizioni ed eccezioni per i criteri DLP
 
@@ -38,7 +45,7 @@ Nelle tabelle riportate di seguito vengono descritte le condizioni e le eccezion
 - [Intestazioni del messaggio](#message-headers)
 - [Proprietà dei messaggi](#message-properties)
 
-## <a name="senders"></a>Mittenti
+### <a name="senders"></a>Mittenti
 
 
 |**condizione o eccezione in DLP**  |**parametri di condizione/eccezione in Microsoft 365 PowerShell** |**tipo di proprietà**  |**description**|
@@ -49,7 +56,7 @@ Nelle tabelle riportate di seguito vengono descritte le condizioni e le eccezion
 | Indirizzo mittente corrisponde a modelli    | condizione: *FromAddressMatchesPatterns* <br/> eccezione: *ExceptFromAddressMatchesPatterns*       |      Modelli   |  Messaggi in cui l'indirizzo e-mail del mittente contiene modelli di testo che corrispondono alle espressioni regolari specificate.  |
 |Il dominio del mittente è  |  condizione: *SenderDomainIs* <br/> eccezione: *ExceptIfSenderDomainIs*       |DomainName         |     Messaggi in cui il dominio dell'indirizzo di posta elettronica del mittente corrisponde al valore specificato. Se è necessario trovare i domini mittente che *contengono* il dominio specificato (ad esempio, qualsiasi sottodominio di un dominio), utilizzare la condizione *FromAddressMatchesPatterns* ( **sender address Matches** ) e specificare il dominio utilizzando la sintassi:' \. Domain \. com $'.    |
 
-## <a name="recipients"></a>Destinatari
+### <a name="recipients"></a>Destinatari
 
 |**condizione o eccezione in DLP**| **parametri di condizione/eccezione in Microsoft 365 PowerShell** |    **tipo di proprietà** | **description**|
 |---------|---------|---------|---------|
@@ -59,7 +66,7 @@ Nelle tabelle riportate di seguito vengono descritte le condizioni e le eccezion
 |Indirizzi del destinatario corrisponde a modelli| condizione: *RecipientAddressMatchesPatterns* <br/> eccezione: *ExceptIfRecipientAddressMatchesPatterns*|   Modelli    |Messaggi in cui l'indirizzo e-mail del destinatario contiene modelli di testo che corrispondono alle espressioni regolari specificate. <br/> **Nota** : questa condizione non considera i messaggi che vengono inviati all'indirizzo proxy del destinatario. Esegue la corrispondenza solo dei messaggi che vengono inviati all'indirizzo e-mail principale del destinatario.|
 |Inviato a membro di| condizione: *SentToMemberOf* <br/> eccezione: *ExceptIfSentToMemberOf*|  Addresses|  Messaggi che contengono destinatari che sono membri del gruppo di distribuzione specificato, del gruppo di sicurezza abilitato alla posta elettronica o del gruppo Microsoft 365. Il gruppo può essere nei campi **To** , **Cc** o **Bcc** del messaggio.|
 
-## <a name="message-subject-or-body"></a>Oggetto o corpo del messaggio
+### <a name="message-subject-or-body"></a>Oggetto o corpo del messaggio
 
 |**condizione o eccezione in DLP** | **parametri di condizione/eccezione in Microsoft 365 PowerShell** |**tipo di proprietà**| **description**|
 |---------|---------|---------|---------|
@@ -68,7 +75,7 @@ Nelle tabelle riportate di seguito vengono descritte le condizioni e le eccezion
 |Contenuto contiene|  condizione: *ContentContainsSensitiveInformation* <br/> eccezione *ExceptIfContentContainsSensitiveInformation*| SensitiveInformationTypes|  Messaggi o documenti che contengono informazioni riservate come definito dai criteri di prevenzione della perdita di dati (DLP).|
 
 
-## <a name="attachments"></a>Allegati
+### <a name="attachments"></a>Allegati
 
 |**condizione o eccezione in DLP**| **parametri di condizione/eccezione in Microsoft 365 PowerShell**| **tipo di proprietà**   |**description**|
 |---------|---------|---------|---------|
@@ -81,16 +88,31 @@ Nelle tabelle riportate di seguito vengono descritte le condizioni e le eccezion
 |La proprietà del documento è|condizione: *ContentPropertyContainsWords* <br/> eccezione: *ExceptIfContentPropertyContainsWords* |Parole| Messaggi o documenti in cui l'estensione del file di un allegato corrisponde a una delle parole specificate.|
 |La dimensione del documento è uguale o maggiore di| condizione: *DocumentSizeOver* <br/> eccezione: *ExceptIfDocumentSizeOver*|    Dimensioni    |Messaggi in cui un allegato ha una dimensione uguale o superiore al valore specificato.|
 
-## <a name="message-headers"></a>Intestazioni del messaggio
+### <a name="message-headers"></a>Intestazioni del messaggio
 
 |**condizione o eccezione in DLP**| **parametri di condizione/eccezione in Microsoft 365 PowerShell**| **tipo di proprietà**|  **description**|
 |---------|---------|---------|---------|
 |L'intestazione contiene parole o frasi|condizione: *HeaderContainsWords* <br/> eccezione: *ExceptIfHeaderContainsWords*|  Tabella hash  |Messaggi che contengono il campo di intestazione specificato e il valore di tale campo di intestazione contiene le parole specificate.|
 |Modelli di corrispondenza di intestazione|   condizione: *HeaderMatchesPatterns* <br/> eccezione: *ExceptIfHeaderMatchesPatterns*|    Tabella hash  |Messaggi che contengono il campo di intestazione specificato e il valore di tale campo di intestazione contiene le espressioni regolari specificate.|
 
-## <a name="message-properties"></a>Proprietà del messaggio
+### <a name="message-properties"></a>Proprietà del messaggio
 
 |**condizione o eccezione in DLP**| **parametri di condizione/eccezione in Microsoft 365 PowerShell**| **tipo di proprietà**   |**description**|
 |---------|---------|---------|---------|
 |Dimensione del messaggio sopra|condizione: *MessageSizeOver* <br/> eccezione: *ExceptIfMessageSizeOver*| Dimensioni    |Messaggi in cui la dimensione totale (messaggio più allegato) è uguale o superiore al valore specificato. <br/>**Nota** : i limiti di dimensione dei messaggi per le cassette postali vengono valutati prima delle regole del flusso di posta. Un messaggio troppo grande per una cassetta postale verrà rifiutato prima che una regola con questa condizione possa essere applicata al messaggio.  |
+
+## <a name="actions-for-dlp-policies"></a>Azioni per i criteri DLP
+
+In questa tabella vengono descritte le azioni della regola del flusso di posta di Exchange Online disponibili in DLP.
+
+
+|**azione in DLP**|**parametri azione in Microsoft 365 PowerShell**|**tipo di proprietà**|**description**|
+|---------|---------|---------|---------|
+|Imposta intestazione|SetHeader|Proprietà First: *nome intestazione* </br> Proprietà secondaria: *valore di intestazione*|Il parametro reheader consente di specificare un'azione per la regola DLP che aggiunge o modifica un campo di intestazione e un valore nell'intestazione del messaggio. Questo parametro utilizza la sintassi "HeaderName: HeaderValue". È possibile specificare più coppie nome e valore di intestazione separate da virgole|
+|Rimuovi intestazione| RemoveHeader| Proprietà principale: *MessageHeaderField*</br> Proprietà secondaria: *String*|  Il parametro RemoveHeader consente di specificare un'azione per la regola DLP che rimuove un campo di intestazione dall'intestazione del messaggio. Questo parametro utilizza la sintassi "headerName" o "HeaderName: HeaderValue". È possibile specificare più nomi di intestazione o coppie nome e valore di intestazione separati da virgole|
+|Reindirizzare il messaggio a utenti specifici|*RedirectMessageTo*|Addresses| Reindirizza il messaggio ai destinatari specificati. Il messaggio non viene recapitato ai destinatari originali e non viene inviata nessuna notifica né a questi né al mittente.|
+|Inoltrare il messaggio per l'approvazione al responsabile del mittente| Moderato|Proprietà principale: *ModerateMessageByManager*</br> Proprietà secondaria: *Boolean*|Il parametro moderato consente di specificare un'azione per la regola DLP che invia il messaggio di posta elettronica a un moderatore. Questo parametro utilizza la sintassi seguente: @ {ModerateMessageByManager = <$true \| $false>;|
+|Inoltrare il messaggio per l'approvazione a specifiche responsabili approvazione| Moderato|Proprietà principale: *ModerateMessageByUser*</br>Proprietà secondaria: *Addresses*|Il parametro moderato consente di specificare un'azione per la regola DLP che invia il messaggio di posta elettronica a un moderatore. Questo parametro utilizza la sintassi seguente: @ {ModerateMessageByUser = @ ("EmailAddress1", "EmailAddress2",... "EmailAddressN")}|
+|Aggiungi destinatario|AddRecipients|First, proprietà: *Field*</br>Proprietà secondaria: *Addresses*| Aggiunge uno o più destinatari al campo a/CC/Ccn del messaggio. Questo parametro utilizza la sintassi seguente: @ {<AddToRecipients \| CopyTo \| BlindCopyTo> = "EmailAddress"}|
+|Aggiungere il responsabile del mittente come destinatario|AddRecipients | Proprietà principale: *AddedManagerAction*</br>Proprietà secondaria: *Field* | Aggiunge il responsabile del mittente al messaggio come tipo di destinatario specificato ( To, Cc, Bcc ) o reindirizza il messaggio al gestore del mittente senza indicare il mittente o il destinatario. Questa operazione funziona solo se l'attributo Manager del mittente è definito in Active Directory. Questo parametro utilizza la sintassi seguente: @ {AddManagerAsRecipientType = "<a \| CC \| BCC>"}|
 

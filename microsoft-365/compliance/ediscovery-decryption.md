@@ -16,12 +16,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Informazioni su come gli strumenti di Microsoft 365 eDiscovery gestiscono i documenti crittografati allegati ai messaggi di posta elettronica.
-ms.openlocfilehash: 3a4a094f1da28c9a017836c099507f5af739b0b9
-ms.sourcegitcommit: 9bf6a4f77f9af5fd988f6795bad3b240213a51fc
+ms.openlocfilehash: 91d5689bfb64d272c896c0e92422ce1f45fd5f72
+ms.sourcegitcommit: 89f56c3e0b619a4700a75a21927d9ffc90658632
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 11/10/2020
-ms.locfileid: "48951119"
+ms.locfileid: "48984900"
 ---
 # <a name="decryption-in-microsoft-365-ediscovery-tools"></a>Decrittografia negli strumenti di Microsoft 365 eDiscovery
 
@@ -32,11 +32,11 @@ Per eseguire le attività comuni di eDiscovery su contenuto crittografato, i man
 Per semplificare la gestione del contenuto crittografato nel flusso di lavoro di eDiscovery, gli strumenti di Microsoft 365 eDiscovery ora incorporano la decrittografia dei file crittografati allegati ai messaggi di posta elettronica e inviati in Exchange Online. Prima di questa nuova funzionalità, solo il contenuto di un messaggio di posta elettronica protetto da Rights Management (e non i file allegati) è stato decrittografato. Se un file crittografato con una tecnologia di crittografia Microsoft è associato a un messaggio di posta elettronica che corrisponde ai criteri di ricerca, il file crittografato verrà decrittografato quando i risultati della ricerca verranno preparati per la revisione. Questo consente ai responsabili di eDiscovery di visualizzare il contenuto degli allegati di posta elettronica crittografati quando si visualizzano in anteprima i risultati della ricerca e di verificarli dopo averli aggiunti a un set di revisione in Advanced eDiscovery.
 
 > [!NOTE]
-> A partire da subito gli strumenti di Microsoft 365 eDiscovery supporteranno i documenti crittografati archiviati in SharePoint Online e OneDrive for business.
+> A partire da Microsoft 365 eDiscovery Tools supporterà documenti crittografati archiviati in SharePoint Online e OneDrive for business. Verranno inclusi i documenti crittografati a causa delle etichette di riservatezza applicate.
 
 ## <a name="supported-encryption-technologies"></a>Tecnologie di crittografia supportate
 
-Gli strumenti di Microsoft eDiscovery supportano gli elementi crittografati con le tecnologie di crittografia Microsoft. Queste tecnologie includono la crittografia dei messaggi di Office, Microsoft Information Protection (prossimamente) e Azure Rights Management. Per ulteriori informazioni sulle tecnologie di crittografia Microsoft, vedere [Encryption](encryption.md). Il contenuto crittografato dalle tecnologie di crittografia di terze parti non è supportato. Questo non include il supporto per l'anteprima o l'esportazione di contenuto crittografato con le tecnologie non Microsoft.
+Gli strumenti di Microsoft eDiscovery supportano gli elementi crittografati con le tecnologie di crittografia Microsoft. Queste tecnologie includono la crittografia dei messaggi di Office e Azure Rights Management. Per ulteriori informazioni sulle tecnologie di crittografia Microsoft, vedere [Encryption](encryption.md). Il contenuto crittografato dalle tecnologie di crittografia di terze parti non è supportato. Questo non include il supporto per l'anteprima o l'esportazione di contenuto crittografato con le tecnologie non Microsoft.
 
 ## <a name="ediscovery-activities-that-support-encrypted-items"></a>attività di eDiscovery che supportano gli elementi crittografati
 
