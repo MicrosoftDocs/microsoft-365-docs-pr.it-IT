@@ -1,5 +1,5 @@
 ---
-title: Introduzione alla prevenzione della perdita di dati degli endpoint di Microsoft 365 (anteprima)
+title: Introduzione alla prevenzione della perdita di dati degli endpoint di Microsoft 365
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -19,16 +19,16 @@ ms.collection:
 search.appverid:
 - MET150
 description: Configurare la prevenzione della perdita di dati degli endpoint di Microsoft 365 per monitorare le attività dei file e implementare azioni di protezione per questi file negli endpoint.
-ms.openlocfilehash: 95446e15e656e3c1aa658f897863608311b350e0
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 8f4b1b04aadbb639f6c7daeeb564c10abd7737b2
+ms.sourcegitcommit: ca733da1ed919b286a93068b560608e82f8def05
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48842040"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48990551"
 ---
-# <a name="get-started-with-endpoint-data-loss-prevention-preview"></a>Introduzione alla prevenzione della perdita di dati degli endpoint (anteprima)
+# <a name="get-started-with-endpoint-data-loss-prevention"></a>Introduzione alla prevenzione della perdita di dati degli endpoint
 
-Microsoft Endpoint Data Loss Prevention (Endpoint DLP) fa parte della famiglia di funzionalità di prevenzione della perdita dei dati (DLP) di Microsoft 365 che è possibile usare per individuare e proteggere gli elementi sensibili nei servizi di Microsoft 365. Per altre informazioni su tutte le offerte DLP di Microsoft, vedere [Panoramica sulla prevenzione della perdita dei dati](data-loss-prevention-policies.md). Per altre informazioni su Endpoint DLP, vedere [Informazioni sulla prevenzione della perdita di dati degli endpoint (anteprima)](endpoint-dlp-learn-about.md)
+La prevenzione della perdita di dati degli endpoint di Microsoft 365 (Endpoint DLP) fa parte della famiglia di funzionalità di prevenzione della perdita dei dati (DLP) di Microsoft 365 che è possibile usare per individuare e proteggere gli elementi sensibili nei servizi di Microsoft 365. Per altre informazioni su tutte le offerte DLP di Microsoft, vedere [Panoramica sulla prevenzione della perdita dei dati](data-loss-prevention-policies.md). Per altre informazioni su Endpoint DLP, vedere [Informazioni sulla prevenzione della perdita di dati degli endpoint (anteprima)](endpoint-dlp-learn-about.md)
 
 Microsoft Endpoint DLP consente di monitorare i dispositivi Windows 10 e rilevare l'uso e la condivisione di elementi sensibili. In questo modo si ottengono la visibilità e il controllo necessari per assicurarsi che vengano usati e protetti correttamente e per evitare comportamenti rischiosi che potrebbero comprometterli.
 
@@ -44,6 +44,7 @@ Prima di iniziare a usare Endpoint DLP, è necessario confermare l'[abbonamento 
 - Microsoft 365 A5 Compliance
 - Microsoft 365 E5 Information Protection and Governance
 - Microsoft 365 A5 Information Protection and Governance
+
 
 ### <a name="permissions"></a>Autorizzazioni
 
@@ -95,6 +96,8 @@ Verificare che i dispositivi Windows 10 in cui si prevede di distribuire Endpoin
 4. Tutti i dispositivi devono essere [aggiunti ad Azure Active Directory (Azure AD)](https://docs.microsoft.com/azure/active-directory/devices/concept-azure-ad-join) o aggiunti ad Azure AD ibrido.
 
 5. Installare il browser Microsoft Edge Chromium nel dispositivo endpoint per applicare azioni dei criteri per l'attività di caricamento nel cloud. Vedere [Scaricare il nuovo Microsoft Edge basato su Chromium](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium).
+
+6. Se si usa il Canale Enterprise mensile di Microsoft 365 Apps versioni 2004-2008, esiste un problema noto con Endpoint DLP che classifica il contenuto di Office ed è necessario eseguire l'aggiornamento alla versione 2009 o successiva. Vedere [Cronologia degli aggiornamenti per Microsoft 365 Apps (elencati in ordine cronologico)](https://docs.microsoft.com/officeupdates/update-history-microsoft365-apps-by-date) per le versioni correnti. Per altre informazioni su questo problema, vedere la sezione relativa alle famiglia di prodotti di Office di [Note sulla versione del Canale corrente nel 2020](https://docs.microsoft.com/officeupdates/current-channel#version-2010-october-27).
 
 ## <a name="onboarding-devices-into-device-management"></a>Onboarding di dispositivi nella gestione dei dispositivi
 

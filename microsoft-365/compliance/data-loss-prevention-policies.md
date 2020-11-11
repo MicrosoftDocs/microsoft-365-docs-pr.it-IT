@@ -22,12 +22,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Informazioni su come identificare, monitorare e proteggere automaticamente le informazioni riservate della tua organizzazione in tutta la suite Office 365.
-ms.openlocfilehash: 9e201b7adcde638cc87f57c7c28180420b9e8125
-ms.sourcegitcommit: 5e40c760c1af2a4cc6d85cb782b17f5c979677c5
+ms.openlocfilehash: d1b82f1e5581e1d24284a549f3c9572e0f8343a3
+ms.sourcegitcommit: 89f56c3e0b619a4700a75a21927d9ffc90658632
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48379289"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48984940"
 ---
 # <a name="overview-of-data-loss-prevention"></a>Panoramica sulla prevenzione della perdita dei dati
 <!-- this topic needs to be split into smaller, more coherent ones. It is confusing as it is. -->
@@ -59,9 +59,9 @@ Con i criteri di prevenzione della perdita dei dati è possibile:
     
     Per valutare se l'organizzazione è conforme ai criteri di prevenzione della perdita dei dati, è possibile contare il numero di corrispondenze con criteri e regole nel corso del tempo. Se esistono criteri di prevenzione della perdita dei dati che consentono agli utenti di eseguire l'override di un suggerimento per i criteri e segnalare un falso positivo, si può anche visualizzare il contenuto della segnalazione.
     
-È possibile creare e gestire i criteri di prevenzione della perdita dei dati nella pagina Prevenzione della perdita di dati nel Centro conformità e sicurezza di Office 365.
+È possibile creare e gestire i criteri di prevenzione della perdita dei dati nella pagina Prevenzione della perdita di dati nel Centro conformità e sicurezza di Microsoft 365.
   
-![Pagina Prevenzione della perdita di dati nel Centro sicurezza e conformità di Office 365](../media/943fd01c-d7aa-43a9-846d-0561321a405e.png)
+![Pagina Prevenzione della perdita di dati nel Centro sicurezza &amp; conformità di Office 365](../media/943fd01c-d7aa-43a9-846d-0561321a405e.png)
   
 ## <a name="what-a-dlp-policy-contains"></a>Contenuto di un criterio DLP
 
@@ -81,13 +81,22 @@ In un criterio DLP sono disponibili alcuni elementi di base:
   
 ![Diagramma che mostra criterio di prevenzione della perita dei dati contenente posizioni e regole](../media/c006860c-2d00-42cb-aaa4-5b5638d139f7.png)
   
-### <a name="locations"></a>Sedi
+### <a name="locations"></a>Posizioni
 
-I criteri di prevenzione della perdita dei dati consentono di trovare e proteggere le informazioni riservate in tutto Microsoft 365, indipendentemente dal fatto che si trovino in un sito di Exchange Online, SharePoint Online, OneDrive for Business o Microsoft Teams. È possibile scegliere di proteggere il contenuto in un messaggio di posta elettronica di Exchange, nei messaggi delle chat e dei canali di Microsoft Teams e in tutte le raccolte di SharePoint o OneDrive o di selezionare percorsi specifici per i criteri.
-  
-![Opzioni per le posizioni in cui è possibile applicare i criteri di prevenzione della perdita dei dati](../media/ee50a61a-e867-4571-a150-3eec8d83650f.png)
+I criteri di prevenzione della perdita dei dati vengono applicati agli elementi sensibili nelle diverse posizioni di Microsoft 365 e l’ambito può essere ulteriormente definito come descritto in questa tabella.
 
- Se si sceglie di includere gruppi di distribuzione specifici in Exchange, i criteri DLP verranno applicati solo ai membri di quel gruppo. Analogamente, escludendo un gruppo di distribuzione si escluderanno tutti i membri di quel gruppo di distribuzione dalla valutazione dei criteri. È possibile scegliere di applicare un criterio ai membri delle liste di distribuzione, dei gruppi di distribuzione dinamici e dei gruppi di sicurezza. Una politica DLP non può contenere più di 50 inclusioni ed esclusioni.
+
+|posizione | includo/escluso da|
+|---------|---------|
+|Posta elettronica di Exchange| gruppi di distribuzione|
+|Siti di SharePoint |siti |
+|Account di OneDrive |account |
+|Messaggi di chat e canali di Teams |account |
+|Dispositivi Windows 10 |utente o gruppo |
+|Microsoft Cloud App Security |istanza |
+
+
+ Se si sceglie di includere gruppi di distribuzione specifici in Exchange, i criteri di prevenzione della perdita dei dati verranno applicati solo ai membri di quel gruppo. Analogamente, escludendo un gruppo di distribuzione si escluderanno tutti i membri di quel gruppo di distribuzione dalla valutazione dei criteri. È possibile scegliere di applicare un criterio ai membri delle liste di distribuzione, dei gruppi di distribuzione dinamici e dei gruppi di sicurezza. Una politica DLP non può contenere più di 50 inclusioni ed esclusioni.
 
 Se si sceglie di includere o escludere specifici siti di SharePoint o account di OneDrive, i criteri di prevenzione della perdita dei dati possono contenere non più di 100 inclusioni ed esclusioni di questo tipo. Anche se questi limiti esistono, è importante sapere che possono essere superati applicando criteri a livello di organizzazione o validi per intere posizioni.
   
@@ -108,7 +117,7 @@ Ecco i componenti di una regola, spiegati di seguito.
 
 Le condizioni sono importanti perché determinano i tipi di informazioni desiderati e il momento in cui eseguire un'azione. Ad esempio, si può scegliere di ignorare i contenuti che includono numeri di passaporto, nel caso in cui il contenuto contenga oltre 10 di questi numeri e sia condiviso con utenti esterni all'organizzazione.
   
-Le condizioni si focalizzano sul **contenuto**, come i tipi di informazioni riservate desiderati, e sul **contesto**, come l'utente con cui viene condiviso il documento. È possibile usare le condizioni per assegnare azioni diverse a livelli di rischio diversi. Ad esempio, i contenuti riservati condivisi all'interno dell'organizzazione potrebbero essere caratterizzati da un livello di rischio inferiore rispetto ai contenuti riservati condivisi con utenti esterni all'organizzazione. 
+Le condizioni si focalizzano sul **contenuto** , come i tipi di informazioni riservate desiderati, e sul **contesto** , come l'utente con cui viene condiviso il documento. È possibile usare le condizioni per assegnare azioni diverse a livelli di rischio diversi. Ad esempio, i contenuti riservati condivisi all'interno dell'organizzazione potrebbero essere caratterizzati da un livello di rischio inferiore rispetto ai contenuti riservati condivisi con utenti esterni all'organizzazione. 
   
 ![Elenco che mostra le condizioni disponibili per i criteri di prevenzione della perdita dei dati](../media/0fa43f90-d007-4506-ae93-43e8424fe103.png)
   
@@ -193,7 +202,7 @@ Quando viene trovata una corrispondenza con una regola, è possibile inviare il 
   
 ![Pagina per la configurazione di rapporti operazioni non consentite](../media/31c6da0e-981c-415e-91bf-d94ca391a893.png)
 
-La prevenzione della perdita dei dati esegue la scansione della posta elettronica in modo diverso dagli elementi in SharePoint Online o OneDrive for Business. In SharePoint Online e OneDrive for Business, la prevenzione della perdita dei dati analizza gli elementi esistenti e quelli nuovi e genera un report degli incidenti ogni volta che viene trovata una corrispondenza. In Exchange Online, la prevenzione della perdita dei dati esegue la scansione di nuovi messaggi di posta elettronica e genera un report in caso di corrispondenza dei criteri. La prevenzione della perdita dei dati ***non*** esegue la scansione o la corrispondenza di elementi di posta elettronica esistenti in precedenza archiviati in una cassetta postale o in un archivio.
+La prevenzione della perdita dei dati esegue la scansione della posta elettronica in modo diverso dagli elementi in SharePoint Online o OneDrive for Business. In SharePoint Online e OneDrive for Business, la prevenzione della perdita dei dati analizza gli elementi esistenti e quelli nuovi e genera un report degli incidenti ogni volta che viene trovata una corrispondenza. In Exchange Online, la prevenzione della perdita dei dati esegue la scansione di nuovi messaggi di posta elettronica e genera un report in caso di corrispondenza dei criteri. La prevenzione della perdita dei dati *_non_* esegue la scansione o la corrispondenza di elementi di posta elettronica esistenti in precedenza archiviati in una cassetta postale o in un archivio.
   
 ## <a name="grouping-and-logical-operators"></a>Raggruppamento e operatori logici
 
@@ -229,7 +238,7 @@ All'interno di un gruppo è possibile scegliere se è necessario che sia soddisf
 
 Tra i gruppi è possibile scegliere se è necessario che siano soddisfatte le condizioni di un solo gruppo o di tutti perché il contenuto corrisponda alla regola.
   
-Ad esempio, il criterio predefinito **Stati Uniti - HIPAA** ha una regola che usa un operatore **E** tra i gruppi per identificare il contenuto che include: 
+Ad esempio, il criterio predefinito _ *Stati Uniti - HIPAA* * ha una regola che usa un operatore **E** tra i gruppi per identificare il contenuto che include: 
   
 - dal gruppo **Identificatori di informazioni personali** (almeno un numero di previdenza sociale **O** un numero DEA) 
     
@@ -245,7 +254,7 @@ Quando si creano regole in un criterio, a ogni regola viene assegnata una priori
   
 ![Regole in ordine di priorità](../media/dlp-rules-in-priority-order.png)
   
-Dopo aver configurato più criteri di prevenzione della perdita dei dati, è possibile cambiare la priorità di uno o più criteri. Per farlo, selezionare un criterio, scegliere **Modifica criterio**e usare l'elenco **priorità** per specificare la priorità.
+Dopo aver configurato più criteri di prevenzione della perdita dei dati, è possibile cambiare la priorità di uno o più criteri. Per farlo, selezionare un criterio, scegliere **Modifica criterio** e usare l'elenco **priorità** per specificare la priorità.
 
 ![Impostare la priorità per un criterio](../media/dlp-set-policy-priority.png)
 
@@ -331,7 +340,7 @@ Quindi, se per le carte di credito si vogliono creare due regole che si escludon
   
 Per questi motivi, le indicazioni per la creazione di regole con diverse accuratezze di corrispondenza sono:
   
-- Il livello di probabilità inferiore usa generalmente lo stesso valore per **min** e **max**, anziché un intervallo. 
+- Il livello di probabilità inferiore usa generalmente lo stesso valore per **min** e **max** , anziché un intervallo. 
     
 - Il livello di probabilità superiore è costituito in genere da un intervallo che inizia appena al di sopra del livello di probabilità inferiore e arriva a 100.
     
@@ -343,13 +352,13 @@ Quando si usa un'[etichetta di conservazione](retention.md#retention-labels) cre
 
 - È necessario aver precedentemente creato e pubblicato l'etichetta di conservazione prima di usarla come condizione nei criteri DLP.
 - La sincronizzazione delle etichette di conservazione pubblicate può richiedere da uno a sette giorni. Per altre informazioni, vedere [Quando le etichette di conservazione diventano disponibili per l'applicazione](create-apply-retention-labels.md#when-retention-labels-become-available-to-apply) per le etichette di conservazione pubblicate in un criterio di conservazione e [Tempo necessario per l'applicazione delle etichette di conservazione](apply-retention-labels-automatically.md#how-long-it-takes-for-retention-labels-to-take-effect) per le etichette di conservazione pubblicate automaticamente.
-- L'uso di un'etichetta di conservazione in un criterio **è supportato solo per gli elementi di SharePoint e OneDrive***.
+- L'uso di un'etichetta di conservazione in un criterio **è supportato solo per gli elementi di SharePoint e OneDrive** _.
 
   ![Etichette come condizione](../media/5b1752b4-a129-4a88-b010-8dcf8a38bb09.png)
 
   È consigliabile usare un'etichetta di conservazione nei criteri DLP se sono presenti elementi in corso di conservazione ed eliminazione e si desidera applicare anche altri controlli, ad esempio:
 
-  - È stata pubblicata un'etichetta di conservazione denominata **Anno di imposta 2018**, che una volta applicata ai documenti fiscali del 2018 archiviati in SharePoint, li conserva per 10 anni e poi li elimina. Inoltre, se si desidera che gli elementi non vengano condivisi all'esterno dell'organizzazione, è possibile usare i criteri DLP.
+  - È stata pubblicata un'etichetta di conservazione denominata _*Anno di imposta 2018**, che una volta applicata ai documenti fiscali del 2018 archiviati in SharePoint, li conserva per 10 anni e poi li elimina. Inoltre, se si desidera che gli elementi non vengano condivisi all'esterno dell'organizzazione, è possibile usare i criteri di prevenzione della perdita dei dati.
 
   > [!IMPORTANT]
   > Se si specifica un'etichetta di conservazione come condizione in un criterio di prevenzione della perdita dei dati (DLP) e si includono anche Exchange e/o Teams come posizione, si visualizzerà un messaggio di errore simile al seguente: **"La protezione dei contenuti etichettati nelle e-mail e nei messaggi di Teams non è supportata. Rimuovere l'etichetta seguente o disabilitare Exchange e Teams come posizione."** Questo perché il trasporto di Exchange non valuta i metadati dell'etichetta durante l'invio e il recapito dei messaggi. 
@@ -362,7 +371,7 @@ Attualmente è possibile usare solo un'etichetta di conservazione come condizion
 
 Al contenuto che include informazioni riservate possono essere applicate diverse funzionalità:
   
-- Sia un'[etichetta di conservazione che un criterio di conservazione](retention.md) possono applicare azioni di **conservazione** a questo contenuto. 
+- Sia un' [etichetta di conservazione che un criterio di conservazione](retention.md) possono applicare azioni di **conservazione** a questo contenuto. 
     
 - I criteri di prevenzione della perdita dei dati possono applicare azioni di **protezione** al contenuto. Inoltre, prima di applicare queste azioni, i criteri di prevenzione della perdita dei dati possono richiedere che siano soddisfatte altre condizioni oltre alla presenza di una specifica etichetta nel contenuto. 
     
@@ -418,7 +427,7 @@ Quando si creano i criteri di prevenzione della perdita dei dati, considerare l'
   
 Se si creano criteri DLP con un forte impatto potenziale, si consiglia di attenersi alla sequenza riportata di seguito:
   
-1. **Iniziare in modalità test senza suggerimenti per i criteri**, quindi utilizzare i report di prevenzione della perdita dei dati e i rapporti operazioni non consentite per valutare l'impatto. È possibile usare i report di prevenzione della perdita dei dati per visualizzare il numero, la posizione, il tipo e la gravità delle corrispondenze ai criteri. In base ai risultati, è possibile ottimizzare le regole come necessario. In modalità test, i criteri DLP non avranno effetto sulla produttività degli utenti dell'organizzazione. 
+1. **Iniziare in modalità test senza suggerimenti per i criteri** , quindi utilizzare i report di prevenzione della perdita dei dati e i rapporti operazioni non consentite per valutare l'impatto. È possibile usare i report di prevenzione della perdita dei dati per visualizzare il numero, la posizione, il tipo e la gravità delle corrispondenze ai criteri. In base ai risultati, è possibile ottimizzare le regole come necessario. In modalità test, i criteri DLP non avranno effetto sulla produttività degli utenti dell'organizzazione. 
     
 2. **Passare alla modalità test con notifiche e suggerimenti per i criteri** in modo da istruire gli utenti in merito ai criteri di conformità e prepararli all'applicazione delle regole. In questa fase, è inoltre possibile chiedere agli utenti di segnalare i falsi positivi per definire ulteriormente le regole. 
     
@@ -430,7 +439,7 @@ Se si creano criteri DLP con un forte impatto potenziale, si consiglia di attene
 
     ![Opzioni per disattivare una regola in un criterio](../media/f7b258ff-1b8b-4127-b580-83c6492f2bef.png)
 
-    È anche possibile modificare la priorità di più regole in un criterio. Per farlo, aprire un criterio per modificarlo. In una riga per una regola, scegliere i puntini di sospensione (**...**), quindi scegliere un'opzione, ad esempio **Sposta giù** o **Porta su ultimo**.
+    È anche possibile modificare la priorità di più regole in un criterio. Per farlo, aprire un criterio per modificarlo. In una riga per una regola, scegliere i puntini di sospensione ( **...** ), quindi scegliere un'opzione, ad esempio **Sposta giù** o **Porta su ultimo**.
 
     ![Impostare la priorità delle regole](../media/dlp-set-rule-priority.png)
   

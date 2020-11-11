@@ -20,12 +20,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
 description: Ottenere un report periodico sulle modalità di utilizzo dei servizi di Microsoft 365 da parte degli utenti dell'organizzazione. Il dashboard Informazioni generali utilizzo consente di analizzare ogni grafico per ottenere approfondimenti.
-ms.openlocfilehash: dee0f3e586c49c25daafe999d065e743babf020e
-ms.sourcegitcommit: c51de5e1a4cb9c4a7a9854a4226b32453d9e73e0
+ms.openlocfilehash: 9c3416f415c43377669b2c032e10696343c4416f
+ms.sourcegitcommit: 82d8be71c5861a501ac62a774b306a3fc1d4e627
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "48779121"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48988459"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center"></a>Report di Microsoft 365 nell'interfaccia di amministrazione
 
@@ -48,13 +48,13 @@ Guardare questo video per una panoramica sull'uso dei report:
 
 ::: moniker range="o365-germany"
 
-1. Nell' **interfaccia di amministrazione** passare alla pagina <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">Report</a> **\>Utilizzo** .
+1. Nell' **interfaccia di amministrazione** passare alla pagina <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">Report</a> **\>Utilizzo**.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. Nell' **interfaccia di amministrazione** passare alla pagina <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">Report</a> **\>Utilizzo** .
+1. Nell' **interfaccia di amministrazione** passare alla pagina <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">Report</a> **\>Utilizzo**.
 
 ::: moniker-end
 
@@ -96,10 +96,14 @@ In base all'abbonamento, questi sono i report disponibili.
   
 - [Utilizzo delle applicazioni di posta elettronica](email-apps-usage.md)
 
-- [Attività di Forms](forms-activity.md)
+- [Attività di Forms](forms-activity-ww.md)
 
-- [Attività Forms Pro](forms-pro-activity.md)
+- [Attività di Forms per il Governo degli Stati Uniti](forms-activity.md)
+
+- [Attività Dynamics 365 Customer Voice](forms-pro-activity-ww.md)
   
+- [Attività Dynamics 365 Customer Voice per il Governo degli Stati Uniti](forms-pro-activity.md)
+
 - [Gruppi di Microsoft 365](office-365-groups.md)
   
 - [Attività degli utenti di OneDrive for Business](onedrive-for-business-activity-ww.md)
@@ -206,7 +210,7 @@ Se si vogliono nascondere le informazioni a livello di utente quando si generano
   
 1. Nell'interfaccia di amministrazione passare a **Impostazioni** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">Servizi &amp; componenti aggiuntivi</a>.
 
-2. Selezionare **Reports** . 
+2. Selezionare **Reports**. 
   
 3. Nel riquadro **Reports** selezionare le opzioni desiderate e poi salvare le modifiche.
   

@@ -18,19 +18,19 @@ search.appverid:
 - MOE150
 - MET150
 description: Audit avanzato in Microsoft 365 fornisce nuove funzionalità di audit per aiutare l'organizzazione nelle indagini forensi e di conformità.
-ms.openlocfilehash: 51ec75cc8d8ae554ea9cbef3a9ea2aa18171e70a
-ms.sourcegitcommit: 9bf6a4f77f9af5fd988f6795bad3b240213a51fc
+ms.openlocfilehash: bd7b4f78d37feddd7c66322460a6532a77045ba2
+ms.sourcegitcommit: 82d8be71c5861a501ac62a774b306a3fc1d4e627
 ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 11/10/2020
-ms.locfileid: "48950995"
+ms.locfileid: "48988668"
 ---
 # <a name="advanced-audit-in-microsoft-365"></a>Audit avanzato in Microsoft 365
 
 La [ funzionalità di controllo unificato ](search-the-audit-log-in-security-and-compliance.md) in Microsoft 365 offre alle organizzazioni visibilità in molti tipi di attività controllate relative a differenti servizi in Microsoft 365. Audit avanzato consente alle organizzazioni di svolgere indagini forensi e di conformità aumentando il periodo di conservazione dei log di controllo richiesti per condurre un'indagine, fornendo accesso a eventi cruciali che consentono di determinare la portata della violazione e velocizzando l'accesso all’API Office 365 Management Activity.
 
 > [!NOTE]
-> Audit avanzato è disponibile per le organizzazioni con un abbonamento a Office 365 E5 o Microsoft 365 Enterprise E5. Inoltre, è possibile assegnare agli utenti una licenza di Microsoft 365 E5 Compliance o E5 eDiscovery e il componente aggiuntivo di controllo, quando le licenze per utente sono obbligatorie per le funzionalità di Audit avanzato, come accade per la conservazione a lungo termine dei log di controllo e l'accesso a eventi cruciali per le indagini. Per altre informazioni sulle licenze, vedere [Guida alle licenze di Microsoft 365 per sicurezza e conformità](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#advanced-audit).
+> Audit avanzato è disponibile per le organizzazioni con un abbonamento a Office 365 E5/G5 o Microsoft 365 Enterprise E5/G5. Inoltre, è possibile assegnare agli utenti una licenza di Microsoft 365 E5 Compliance o G5 eDiscovery e il componente aggiuntivo di controllo, quando le licenze per utente sono obbligatorie per le funzionalità di Audit avanzato, come accade per la conservazione a lungo termine dei log di controllo e l'accesso a eventi cruciali per le indagini. Per altre informazioni sulle licenze, vedere [Guida alle licenze di Microsoft 365 per sicurezza e conformità](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#advanced-audit).
 
 Questo articolo offre una panoramica delle funzionalità di Audit avanzato.
 
@@ -155,7 +155,7 @@ Per i clienti idonei e gli utenti a cui è assegnata la licenza appropriata, non
 
 Il nuovo componente per la conservazione dei log di controllo per 10 anni sarà disponibile per i clienti con abbonamento E5 all'inizio del 2021.
 
-**Che cosa succede ai log di controllo della mia organizzazione se creo un criterio di conservazione dei log di controllo per 10 anni quando la funzionalità viene rilasciata al pubblico, ma prima che la licenza necessaria per il componente aggiuntivo sia resa disponibile all'inizio del 2021?**
+**Che cosa succede ai log di controllo dell’organizzazione se viene creato un criterio di conservazione dei log di controllo per 10 anni quando la funzionalità viene rilasciata al pubblico, ma prima che la licenza necessaria per il componente aggiuntivo sia resa disponibile all'inizio del 2021?**
 
 Qualsiasi dato dei log di controllo coperto da un criterio di conservazione per 10 anni creato dopo che il componente sarà reso disponibile sarà conservato per 10 anni. Se la licenza per il componente aggiuntivo di conservazione del log di controllo per 10 anni sarà disponibile all'inizio del 2021, l'utente dovrà acquistare le licenze del componente aggiuntivo per gli utenti i cui dati di controllo vengono conservati ai sensi di un criterio di conservazione da 10 anni già esistente. Inoltre, quando la licenza per il componente aggiuntivo sarà disponibile all'inizio del 2021, verrà applicata la licenza appropriata quando saranno creati i nuovi criteri di conservazione dei log di controllo per 10 anni.
 

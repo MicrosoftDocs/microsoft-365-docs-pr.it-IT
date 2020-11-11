@@ -22,12 +22,12 @@ description: Usare le etichette di riservatezza del framework Microsoft Informat
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: de123c842623d709c9360652becc8c4604b0c234
-ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
+ms.openlocfilehash: f29ba461cb3ae8cc79ff90b7b129e82f7401e187
+ms.sourcegitcommit: 82d8be71c5861a501ac62a774b306a3fc1d4e627
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "48754096"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48988864"
 ---
 # <a name="learn-about-sensitivity-labels"></a>Informazioni sulle etichette di riservatezza
 
@@ -97,6 +97,8 @@ Quando si applica un'etichetta di riservatezza a un messaggio di posta elettroni
     
     Alcune app, ma non tutte, supportano l'applicazione di contrassegni dinamici mediante l'uso di variabili. Ad esempio, inserire il nome dell'etichetta o il nome del documento nell'intestazione, nel piè di pagina o nella filigrana. Per altre informazioni, vedere [Contrassegni dinamici con variabili](sensitivity-labels-office-apps.md#dynamic-markings-with-variables).
     
+    Sebbene sia possibile configurare un nome carattere personalizzato per i contrassegni di contenuto e un'ampia gamma di colori di carattere che includono un codice RGB personalizzato, queste impostazioni sono supportate solo dal [client di etichettatura unificata di Azure Information Protection](https://docs.microsoft.com/azure/information-protection/rms-client/aip-clientv2). Se si usa l'etichettatura predefinita, l'impostazione nome carattere viene ignorata e sono supportati solo i colori seguenti: nero, giallo, blu, verde, rosso. Se si seleziona un colore non supportato, verrà usato il nero come predefinito.
+
     Lunghezza stringa: le filigrane sono limitate a 255 caratteri. Le intestazioni e i piè di pagina hanno un limite di 1024 caratteri, tranne che in Excel. Excel ha un limite totale di 255 caratteri per le intestazioni e i piè di pagina, ma questo limite include i caratteri non visibili, come i codici di formattazione. Se viene raggiunto questo limite, la stringa immessa non viene visualizzata in Excel.
 
 - **Proteggere il contenuto in contenitori come siti e gruppi** quando si abilita la capacità di [usare le etichette di riservatezza con Microsoft Teams, gruppi di Microsoft 365 e siti di SharePoint](sensitivity-labels-teams-groups-sites.md).
@@ -107,7 +109,7 @@ Quando si applica un'etichetta di riservatezza a un messaggio di posta elettroni
     
     ![Messaggio in cui si richiede di assegnare un'etichetta obbligatoria](../media/Sensitivity-label-Prompt-for-required-label.png)
     
-    Per altre informazioni sull'**applicazione automatica di etichette per le app di Office**, vedere [Applicare automaticamente un'etichetta di riservatezza al contenuto](apply-sensitivity-label-automatically.md).
+    Per altre informazioni sull' **applicazione automatica di etichette per le app di Office** , vedere [Applicare automaticamente un'etichetta di riservatezza al contenuto](apply-sensitivity-label-automatically.md).
 
 ### <a name="label-scopes"></a>Ambiti di etichetta
 
@@ -192,7 +194,7 @@ Non esiste un numero limite di etichette di riservatezza che è possibile creare
 
 ### <a name="label-policy-priority-order-matters"></a>Priorità dei criteri di etichetta (l’ordine è importante)
 
-Per rendere disponibili le etichette di riservatezza agli utenti, è possibile pubblicarle in un criterio di etichetta di riservatezza, incluso in un elenco della scheda **Criteri di riservatezza** nella pagina **Criteri etichetta**. Come le etichette di riservatezza (vedere [Priorità dell'etichetta (l'ordine è importante)](#label-priority-order-matters)), l'ordine dei criteri di etichetta di riservatezza è importante perché ne rispecchia la priorità. Il criterio di etichetta con priorità più bassa viene visualizzato nella parte **superiore**, mentre il criterio di etichetta con priorità più alta viene visualizzato nella parte **inferiore**.
+Per rendere disponibili le etichette di riservatezza agli utenti, è possibile pubblicarle in un criterio di etichetta di riservatezza, incluso in un elenco della scheda **Criteri di riservatezza** nella pagina **Criteri etichetta**. Come le etichette di riservatezza (vedere [Priorità dell'etichetta (l'ordine è importante)](#label-priority-order-matters)), l'ordine dei criteri di etichetta di riservatezza è importante perché ne rispecchia la priorità. Il criterio di etichetta con priorità più bassa viene visualizzato nella parte **superiore** , mentre il criterio di etichetta con priorità più alta viene visualizzato nella parte **inferiore**.
 
 Un criterio di etichetta è costituito da:
 

@@ -9,12 +9,12 @@ ms.prod: microsoft-365-enterprise
 search.appverid: MET150
 localization_priority: Priority
 description: Configurazione della comprensione dei contenuti in Project Cortex
-ms.openlocfilehash: 6078b41f8911301d343925c5bf895e881abddffe
-ms.sourcegitcommit: 88c2461b14cd16f74979f4bcd0a9ad18e4422cb3
+ms.openlocfilehash: 8f1ebd70f932bce874efc19f525b549f6717f532
+ms.sourcegitcommit: 82d8be71c5861a501ac62a774b306a3fc1d4e627
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "48469722"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48988685"
 ---
 # <a name="set-up-sharepoint-syntex"></a>Configurazione di SharePoint Syntex
 
@@ -43,16 +43,16 @@ Gli amministratori possono anche modificare le impostazioni selezionate in quals
 
 1. Nell'interfaccia di amministrazione di Microsoft 365, selezionare **Configura** e poi visualizzare la sezione **File e contenuti**.
 
-2. Nella sezione **File e contenuti**, selezionare **Comprensione dei contenuti automatica**.<br/>
+2. Nella sezione **File e contenuti** , selezionare **Comprensione dei contenuti automatica**.<br/>
 
-3. Nella pagina **Comprensione dei contenuti automatica**, fare clic su **Inizia** e seguire le istruzioni per completare il processo di configurazione.<br/>
+3. Nella pagina **Comprensione dei contenuti automatica** , fare clic su **Inizia** e seguire le istruzioni per completare il processo di configurazione.<br/>
 
     > [!div class="mx-imgBorder"]
     > ![Avviare la configurazione](../media/content-understanding/admin-content-understanding-get-started.png)</br>
 
-4. Nella pagina **Configurare l’elaborazione moduli**, è possibile scegliere se si vuole consentire agli utenti di creare modelli di elaborazione moduli in raccolte documenti di SharePoint specifiche. Nella barra multifunzione della raccolta documenti sarà disponibile un'opzione del menu che consente di **Creare un modello di elaborazione moduli** nelle raccolte documenti di SharePoint in cui è abilitato.
+4. Nella pagina **Configurare l’elaborazione moduli** , è possibile scegliere se si vuole consentire agli utenti di creare modelli di elaborazione moduli in raccolte documenti di SharePoint specifiche. Nella barra multifunzione della raccolta documenti sarà disponibile un'opzione del menu che consente di **Creare un modello di elaborazione moduli** nelle raccolte documenti di SharePoint in cui è abilitato.
  
-     In **Quale raccolta di SharePoint deve mostrare l'opzione di creazione del modello di elaborazione moduli**, è possibile selezionare:</br>
+     In **Quale raccolta di SharePoint deve mostrare l'opzione di creazione del modello di elaborazione moduli** , è possibile selezionare:</br>
       - **Tutte le raccolte di SharePoint** per renderla disponibile per tutte le raccolte di SharePoint nell'organizzazione.</br>
       - **Solo le raccolte dei siti selezionati** e quindi selezionare i siti in cui si vuole rendere l’opzione disponibile o caricare un elenco di massimo 50 siti.</br>
       - **Nessuna raccolta di SharePoint** se non si vuole rendere l’opzione disponibile in alcun sito. È possibile modificare questa impostazione dopo la configurazione.
@@ -63,18 +63,18 @@ Gli amministratori possono anche modificare le impostazioni selezionate in quals
    > [!Note]
    > Rimuovere un sito dopo che l’opzione è stata inclusa, non influisce sui modelli esistenti applicati alle raccolte del sito o sulla possibilità di applicare modelli di analisi dei documenti a una raccolta. 
     
-5. Nella pagina **Creare un centro contenuti**, è possibile creare un sito del centro contenuti di SharePoint in cui gli utenti possono creare e gestire i modelli di analisi dei documenti.
+5. Nella pagina **Creare un centro contenuti** , è possibile creare un sito del centro contenuti di SharePoint in cui gli utenti possono creare e gestire i modelli di analisi dei documenti.
 
-    1. Per **Nome del sito**, digitare il nome che si desidera assegnare al sito del centro contenuti.
+    1. Per **Nome del sito** , digitare il nome che si desidera assegnare al sito del centro contenuti.
     
-    1. L’**Indirizzo del sito** mostrerà l'URL del sito in base a ciò che è stato selezionato per il nome del sito. Per modificarlo, fare clic su **Modifica**.
+    1. L’ **Indirizzo del sito** mostrerà l'URL del sito in base a ciò che è stato selezionato per il nome del sito. Per modificarlo, fare clic su **Modifica**.
 
        > [!div class="mx-imgBorder"]
        > ![Creare un centro contenuti](../media/content-understanding/admin-cu-create-cc.png)</br>
 
        Selezionare **Avanti**.
 
-6. Nella pagina **Verificare e completare**, è possibile esaminare l'impostazione selezionata e scegliere se apportare modifiche. Al termine, selezionare **Attiva**.
+6. Nella pagina **Verificare e completare** , è possibile esaminare l'impostazione selezionata e scegliere se apportare modifiche. Al termine, selezionare **Attiva**.
 
 7. Nella pagina di conferma, fare clic su **Fine**.
 
@@ -92,7 +92,7 @@ Per assegnare le licenze:
 
 3. Selezionare **Assegna altre**.
 
-4. Selezionare **Servizi per contenuti intelligenti**. In **App**, verificare che siano selezionate le opzioni **Common Data Services per i servizi per contenuti intelligenti** e **Servizi per contenuti intelligenti**.
+4. Selezionare **SharePoint Syntex**. In **App** verificare che l'opzione **Common Data Service per SharePoint Syntex** , **SharePoint Syntex** e **SharePoint Syntex - tipo SPO** sia selezionata.
 
     > [!div class="mx-imgBorder"]
     > ![Licenze di SharePoint Syntex nell'interfaccia di amministrazione di Microsoft 365](../media/content-understanding/sharepoint-syntex-licenses.png)
