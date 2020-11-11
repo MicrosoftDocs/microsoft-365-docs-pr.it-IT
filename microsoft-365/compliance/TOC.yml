@@ -82,7 +82,7 @@
 - name: Gestire la protezione delle informazioni
   items:
     - name: 'Conoscere i dati, proteggere i dati, prevenire le perdite di dati'
-      href: protect-information.md
+      href: information-protection.md
     - name: Tipi di informazioni sensibili
       items:
         - name: Definizioni delle entità tipo di informazioni sensibili
@@ -1019,7 +1019,7 @@
           href: gdpr-information-protection.md
         - name: Responsabile della protezione dei dati di Microsoft
           href: gdpr-data-protection-officer.md
-        - name: Ulteriore procedura di esportazione dei dati del log generato dal sistema
+        - name: Ulteriore procedura di esportazione dei dati del registro generato dal sistema
           href: gdpr-system-generated-log-data.md
 - name: Funzionalità per la conformità ibrida
   items:
