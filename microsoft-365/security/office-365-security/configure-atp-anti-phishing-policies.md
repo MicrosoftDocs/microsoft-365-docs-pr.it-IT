@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Gli amministratori possono ottenere informazioni su come creare, modificare ed eliminare i criteri di anti-phishing avanzati disponibili nelle organizzazioni con Microsoft Defender per Office 365.
-ms.openlocfilehash: ecc68a8dc050a5f08c6982b023861e0ea8976775
-ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
+ms.openlocfilehash: 7665d0dc475909d04da209aa6c1cd6b12378f8a9
+ms.sourcegitcommit: f941495e9257a0013b4a6a099b66c649e24ce8a1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48920657"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "48993389"
 ---
 # <a name="configure-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>Configurazione dei criteri anti-phishing in Microsoft Defender per Office 365
 
@@ -170,7 +170,10 @@ Per modificare i criteri di anti-phishing, utilizzare le procedure seguenti: un 
      Per modificare una voce esistente, selezionare l'utente protetto nell'elenco.
 
      > [!NOTE]
-     > È possibile disporre di un massimo di 60 utenti in tutti i criteri di anti-phishing. In altre parole, è possibile avere 60 utenti protetti in un unico criterio, 12 utenti protetti in 5 criteri e così via.
+     >
+     > - In ogni criterio anti-phishing, è possibile specificare un massimo di 60 utenti protetti (indirizzi di posta elettronica del mittente). Non è possibile specificare lo stesso utente protetto in più criteri.
+     >
+     > - La protezione della rappresentazione utente non funziona se il mittente e il destinatario hanno precedentemente comunicato tramite posta elettronica. Se il mittente e il destinatario non hanno mai comunicato tramite posta elettronica, il messaggio verrà identificato come tentativo di rappresentazione.
 
    - **Aggiungere i domini da proteggere** : configurare una o entrambe le impostazioni seguenti:
 
@@ -178,7 +181,7 @@ Per modificare i criteri di anti-phishing, utilizzare le procedure seguenti: un 
      - **Includi domini personalizzati** : il valore predefinito è **disattivata**. Per attivarla, scorrere l'interruttore **su** attivato e nella casella **Aggiungi domini** immettere il nome di dominio (ad esempio, contoso.com), premere invio e ripetere il secondo caso.
 
      > [!NOTE]
-     > È possibile disporre di un massimo di 50 domini in tutti i criteri di anti-phishing. In altre parole, è possibile avere 50 utenti protetti in un criterio, 10 utenti protetti in 5 criteri e così via.
+     > È possibile disporre di un massimo di 50 domini in tutti i criteri di anti-phishing.
 
    - **Azioni** : fare clic su **modifica**
 

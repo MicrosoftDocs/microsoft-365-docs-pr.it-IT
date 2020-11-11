@@ -16,12 +16,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Gli amministratori possono ottenere informazioni sui criteri di anti-phishing disponibili in Exchange Online Protection (EOP) e Microsoft Defender per Office 365.
-ms.openlocfilehash: c1254ccdc678bd25c2d3481b0a43cca5ff9816c0
-ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
+ms.openlocfilehash: b54f452fb984f61913f2ade53ad45ed169a43832
+ms.sourcegitcommit: f941495e9257a0013b4a6a099b66c649e24ce8a1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48919777"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "48993355"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Criteri di anti-phishing in Microsoft 365
 
@@ -97,7 +97,7 @@ Le seguenti impostazioni di spoofing sono disponibili nei criteri di anti-phishi
   > [!NOTE]
   >
   > - La protezione anti-spoofing è abilitata per impostazione predefinita nei criteri anti-phishing predefiniti e in tutti i nuovi criteri di anti-phishing personalizzati creati.
-  > 
+  >
   > - Non è necessario disabilitare la protezione anti-spoofing se il record MX non punta a Microsoft 365; è invece possibile abilitare il filtro avanzato per i connettori. Per istruzioni, vedere [Enhanced Filtering for Connectors in Exchange Online](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).
 
   Per i messaggi provenienti da mittenti bloccati, è inoltre possibile specificare l'azione da eseguire sui messaggi:
@@ -158,7 +158,10 @@ Le seguenti impostazioni di rappresentazione sono disponibili solo nei criteri d
   È possibile utilizzare gli utenti protetti per aggiungere indirizzi di posta elettronica del mittente interni ed esterni per proteggersi dalla rappresentazione. Questo elenco di **mittenti** protetti dalla rappresentazione utente è diverso dall'elenco dei **destinatari** a cui si applica il criterio (tutti i destinatari per il criterio predefinito, ovvero i destinatari specifici configurati nell'impostazione **applicato a** nella sezione impostazioni dei [criteri](#policy-settings) ).
 
   > [!NOTE]
-  > Il numero massimo di utenti protetti (indirizzi di posta elettronica del mittente) che è possibile definire in tutti i criteri di anti-phishing è 60. In altre parole, è possibile avere 60 utenti protetti in un unico criterio, 12 utenti protetti in 5 criteri e così via.
+  >
+  > - In ogni criterio anti-phishing, è possibile specificare un massimo di 60 utenti protetti (indirizzi di posta elettronica del mittente). Non è possibile specificare lo stesso utente protetto in più criteri.
+  >
+  > - La protezione della rappresentazione utente non funziona se il mittente e il destinatario hanno precedentemente comunicato tramite posta elettronica. Se il mittente e il destinatario non hanno mai comunicato tramite posta elettronica, il messaggio verrà identificato come tentativo di rappresentazione.
 
   Per impostazione predefinita, non sono configurati indirizzi di posta elettronica del mittente per la protezione della rappresentazione **degli utenti da proteggere**. Pertanto, per impostazione predefinita, nessun indirizzo di posta elettronica del mittente è coperto dalla protezione della rappresentazione, sia nel criterio predefinito che nei criteri personalizzati.
 
@@ -167,7 +170,7 @@ Le seguenti impostazioni di rappresentazione sono disponibili solo nei criteri d
 - **Domini da proteggere** : impedisce la rappresentazione dei domini specificati **nel dominio del mittente del messaggio**. Ad esempio, tutti i domini che possiedi ([domini accettati](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)) o domini specifici (domini che possiedi o domini partner). Questo elenco di **domini mittente** protetti dalla rappresentazione è diverso dall'elenco dei **destinatari** a cui si applica il criterio (tutti i destinatari per il criterio predefinito, ovvero i destinatari specifici configurati nell'impostazione **applicato a** nella sezione [impostazioni dei criteri](#policy-settings) ).
 
   > [!NOTE]
-  > Il numero massimo di domini protetti che è possibile definire in tutti i criteri di anti-phishing è 50. In altre parole, è possibile avere 50 domini protetti in un criterio, 10 domini protetti in 5 criteri e così via.
+  > Il numero massimo di domini protetti che è possibile definire in tutti i criteri di anti-phishing è 50.
 
   Per impostazione predefinita, nessun dominio mittente è configurato per la protezione della rappresentazione nei **domini da proteggere**. Pertanto, per impostazione predefinita, nessun dominio del mittente è coperto dalla protezione della rappresentazione, sia nel criterio predefinito che nei criteri personalizzati.
 
