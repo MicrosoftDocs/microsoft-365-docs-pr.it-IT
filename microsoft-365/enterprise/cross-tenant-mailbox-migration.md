@@ -14,12 +14,12 @@ ms.custom:
 - it-pro
 ms.collection:
 - M365-subscription-management
-ms.openlocfilehash: a9f983cebfbed1482fca7e44b77c200cbd9574ac
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: a2065ac324acd0a4d5980bceb97f9f6b8ad73058
+ms.sourcegitcommit: f07442d077eb4357fa5d99d051b035705eb30efa
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48847119"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "49002246"
 ---
 # <a name="cross-tenant-mailbox-migration-preview"></a>Migrazione delle cassette postali tra tenant (anteprima)
 
@@ -647,7 +647,5 @@ NT AUTHORITY\SELF                                {FullAccess, ReadPermission}   
    | Microsoft Defender per Office 365 (piano 1)    |
    | Microsoft Defender per Office 365 (piano 2)    |
    | Gestione degli accessi con privilegi di Office 365           |
-   | Outlook Customer Manager                          |
    | Crittografia avanzata in Office 365                  |
-   || 
- 
+    

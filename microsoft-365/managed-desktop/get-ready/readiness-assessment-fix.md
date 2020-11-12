@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: c342ea9f662d883883755d2f67e5c25ffabddf83
-ms.sourcegitcommit: c84cceb07e748969723a31b350e37f3ec79255ab
+ms.openlocfilehash: b77313a18a5744549e492de991e282bc34dbb6da
+ms.sourcegitcommit: f07442d077eb4357fa5d99d051b035705eb30efa
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "48948410"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "49002418"
 ---
 # <a name="fix-issues-found-by-the-readiness-assessment-tool"></a>Risolvere problemi trovati dallo strumento di valutazione dell'idoneità
 
@@ -214,7 +214,7 @@ Esaminare le app desiderate dagli utenti di Microsoft Managed Desktop.
 
 **Consulenza**
 
-È consigliabile preparare un inventario delle app che si desidera vengano convogliate dagli utenti di Microsoft Desktop gestiti. Verificare che le app possano essere distribuite da Intune. Per ulteriori informazioni, vedere [app in Microsoft Managed Desktop](apps.md).
+È consigliabile preparare un inventario delle app che si desidera vengano convogliate dagli utenti di Microsoft Desktop gestiti. Poiché queste app devono essere distribuite da Intune, valutare il riutilizzo delle app di Intune esistenti. È consigliabile utilizzare il portale aziendale (vedere [Install Intune Company Portal on Devices](https://docs.microsoft.com/microsoft-365/managed-desktop/get-started/company-portal) and Registration status page (ESP) to distribute Apps to your users. Per ulteriori informazioni, vedere [app in Microsoft Managed Desktop](apps.md) and [First-Run experience with Autopilot e la pagina status di registrazione](https://docs.microsoft.com/microsoft-365/managed-desktop/get-started/esp-first-run).
 
 È possibile richiedere al rappresentante dell'account Microsoft una query in Microsoft endpoint Configuration Manager per identificare le applicazioni che sono pronte per la migrazione a Intune o che devono essere rettificate.
 
@@ -289,9 +289,8 @@ Gli utenti con determinati ruoli di sicurezza devono avere quelli assegnati in M
 
 **Consulenza**
 
-Se si dispone di uno di questi ruoli assegnati nell'organizzazione di Azure AD, assicurarsi che dispongano anche di questi ruoli assegnati in Microsoft Defender per endpoint. In caso contrario, gli amministratori con questi ruoli non saranno in grado di accedere al portale di amministrazione.
+Se gli utenti sono assegnati a uno di questi ruoli nell'organizzazione di Azure AD, assicurarsi che dispongano anche di questi ruoli assegnati in Microsoft Defender per endpoint. In caso contrario, gli amministratori con questi ruoli non saranno in grado di accedere al portale di amministrazione.
 
-- Ruolo con autorizzazioni di lettura per la sicurezza
 - Operatore della sicurezza
 - Ruolo con autorizzazioni di lettura globali
 
@@ -308,7 +307,7 @@ Sono state attivate le impostazioni predefinite per la sicurezza. Disattivare le
 
 ### <a name="self-service-password-reset"></a>Reimpostazione della password in modalità self-service
 
-La reimpostazione della password self-service (SSPR) deve essere abilitata per tutti gli utenti che escludono gli account di servizio Microsoft Managed Desktop. Per ulteriori informazioni, vedere [esercitazione: consentire agli utenti di sbloccare l'account o reimpostare le password tramite la reimpostazione della password self-service di Azure Active Directory](https://docs.microsoft.com/azure/active-directory/authentication/tutorial-enable-sspr).
+La reimpostazione della password self-service (SSPR) deve essere abilitata per tutti gli utenti di Microsoft Managed Desktop esclusi gli account di servizio Microsoft Managed Desktop. Per ulteriori informazioni, vedere [esercitazione: consentire agli utenti di sbloccare l'account o reimpostare le password tramite la reimpostazione della password self-service di Azure Active Directory](https://docs.microsoft.com/azure/active-directory/authentication/tutorial-enable-sspr).
 
 **Consulenza**
 
@@ -325,11 +324,11 @@ Gli utenti di Microsoft Managed Desktop non disporranno dei privilegi di amminis
 
 ## <a name="microsoft-365-apps-for-enterprise"></a>Microsoft 365 Apps for enterprise
 
-### <a name="onedrive-for-business"></a>OneDrive for Business
+### <a name="onedrive"></a>OneDrive
 
 L'impostazione **Consenti sincronizzazione solo sui PC aggiunti a domini specifici** sarà in conflitto con Microsoft Managed Desktop.
 
 **Consulenza**
 
-Si sta utilizzando l'impostazione **Consenti sincronizzazione solo sui PC aggiunti a domini specifici** . Questa impostazione non funzionerà con Microsoft Managed Desktop. Disabilitare questa impostazione e configurare OneDrive for business per l'utilizzo di un criterio di accesso condizionale. Per informazioni, vedere [pianificare una distribuzione di accesso condizionale](https://docs.microsoft.com/azure/active-directory/conditional-access/plan-conditional-access) .
+Si sta utilizzando l'impostazione **Consenti sincronizzazione solo sui PC aggiunti a domini specifici** . Questa impostazione non funzionerà con Microsoft Managed Desktop. Disabilitare questa impostazione e configurare OneDrive per l'utilizzo di un criterio di accesso condizionale. Per informazioni, vedere [pianificare una distribuzione di accesso condizionale](https://docs.microsoft.com/azure/active-directory/conditional-access/plan-conditional-access) .
 
