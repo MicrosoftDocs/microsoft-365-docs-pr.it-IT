@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: bff804e726a62563621b11932e590ffcb631835a
-ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
+ms.openlocfilehash: 3026c2490c88d03cda948e6da972d8663c4d6d5c
+ms.sourcegitcommit: 321610fd312e5c54ae8a757a71ab0c9fd2f1ac03
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48920398"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "48995869"
 ---
 # <a name="commodity-futures-trading-commission-cftc-rule-131c-d-united-states"></a>Regole di trading futures di commodity (CFTC) regola 1.31 (c-d) Stati Uniti
 
@@ -39,13 +39,11 @@ I clienti dei servizi finanziari, che rappresentano una delle industrie più for
 
 Per valutare la conformità di Azure alla regola di CFTC 1.31 (c-d), Microsoft ha mantenuto una società di valutazione indipendente specializzata in Records Management and information governance, Cohasset Associates. Nel rapporto risultante, [CFTC 1,31 (c) – (d) valutazione della conformità: Microsoft Azure Storage](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=19b08fd4-d276-43e8-9461-715981d0ea20&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_GRC_Assessment_Reports), Cohasset ha convalidato che l' [archiviazione BLOB immutabile di Azure](https://docs.microsoft.com/azure/storage/blobs/storage-blob-immutable-storage) con l'opzione di blocco dei criteri, se utilizzata per mantenere i BLOB basati sul tempo in un formato non cancellabile e non riscrivibile (Worm), soddisfa i requisiti basati sui principi della regola CFTC. Ogni BLOB (record) è protetto dall'essere modificato, sovrascritto o eliminato fino a quando non è scaduto il periodo di conservazione obbligatorio e sono state rilasciate eventuali esenzioni legali associate. I provider di software e i partner che dispongono di carichi di lavoro sensibili possono ora basarsi sull'archiviazione BLOB immutabile di Azure come soluzione cloud One-Stop Shop per la conservazione dei record. Gli istituti finanziari possono ora creare le proprie applicazioni approfittando di queste funzionalità pur rimanendo conformi.
 
-### <a name="microsoft-office-365"></a>Microsoft Office 365
+### <a name="microsoft-365"></a>Microsoft 365
 
-Per valutare la conformità di Office 365 alla regola di CFTC 1.31 (c-d), Microsoft ha ingaggiato uno studio legale leader indipendente specializzato in questioni normative, Covington & Burling, LLP. Nel report risultante, [Archiving in Microsoft Office 365, data retention e Rule 17a-4 Compliance](https://go.microsoft.com/fwlink/?linkid=830440), Covington ha convalidato che [Office 365 con conservazione Lock](retention-preservation-lock.md) include funzionalità di archiviazione che consentono ai clienti regolamentati di archiviare i dati in modo da aiutarli a conformarsi ai requisiti di CFTC per la conservazione dei record.
+Per [CFTC 1.31 (c)-(d)](retention-regulatory-requirements.md#sec-17a-4f-finra-4511c-and-cftc-131c-d) requisiti, Cohasset ha convalidato che Microsoft 365 include funzionalità di archiviazione che consentono ai clienti regolamentati, inclusi i broker-dealer, di archiviare i dati in modo da aiutarli a rispettare i requisiti sec per la conservazione dei record. Le funzionalità di conservazione in Microsoft 365 consentono di mantenere una vasta gamma di dati, tra cui la posta elettronica, la segreteria telefonica, i documenti condivisi, i messaggi istantanei e i dati di terze parti. In particolare, l'archiviazione in Microsoft 365 consente ai clienti di impostare criteri globali o granulari per la conservazione dei messaggi per archiviare i dati per un periodo definito e oltre, in un formato non riscrivibile e non cancellabile.
 
-L'archiviazione in Office 365 consente di mantenere una vasta gamma di dati, tra cui la posta elettronica, la segreteria telefonica, i documenti condivisi, i messaggi istantanei e i dati di terze parti. In particolare, l'archiviazione in Office 365 consente ai clienti di impostare i criteri di conservazione dei messaggi globali o granulari per archiviare i dati per un periodo definito e oltre in un formato non riscrivibile e non cancellabile.
-
-## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud Microsoft inclusi
+## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud Microsoft in ambito
 
 - [Azure](https://aka.ms/AzureCompliance)
 - [Office 365](https://aka.ms/o365-compliance-framework)

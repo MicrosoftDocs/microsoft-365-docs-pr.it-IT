@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 6b575573753ef270b5936c315c8bbf3acf9e4a7f
-ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
+ms.openlocfilehash: 6e8291f4fc21b0a1d3aaee74b47760fca3a4b220
+ms.sourcegitcommit: 321610fd312e5c54ae8a757a71ab0c9fd2f1ac03
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48919700"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "48995879"
 ---
 # <a name="securities-and-exchange-commission-sec-rule-17a-4f-united-states"></a>Securities and Exchange Commission (SEC) Rule 17a-4 (f) Stati Uniti
 
@@ -40,9 +40,9 @@ Lo spazio di archiviazione BLOB Microsoft Azure immutabile con il blocco dei cri
 Per valutare Azure e Office 365 compliance with SEC Rule 17a-4 (f), Microsoft ha mantenuto una società di valutazione indipendente specializzata in Records Management and information governance, Cohasset Associates. Nel rapporto risultante per:
 
 - **Azure** : [SEC 17a-4 (f) valutazione della conformità: Microsoft Azure Storage](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=19b08fd4-d276-43e8-9461-715981d0ea20&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_GRC_Assessment_Reports), Cohasset ha convalidato che l' [archiviazione BLOB immutabile di Azure](https://docs.microsoft.com/azure/storage/blobs/storage-blob-immutable-storage) con l'opzione di blocco dei criteri, quando viene utilizzata per mantenere i BLOB basati sul tempo in un formato non cancellabile e non riscrivibile (Worm), soddisfa i requisiti di archiviazione immutabili della regola sec. Ogni BLOB (record) è protetto dall'essere modificato, sovrascritto o eliminato fino a quando non è scaduto il periodo di conservazione obbligatorio e sono state rilasciate eventuali esenzioni legali associate. I provider di software e i partner che dispongono di carichi di lavoro sensibili possono ora basarsi sull'archiviazione BLOB immutabile di Azure come soluzione cloud di onestop-Shop per la conservazione dei record e l'archiviazione immutabile. Gli istituti finanziari possono ora creare le proprie applicazioni approfittando di queste funzionalità pur rimanendo conformi.
-- **Microsoft 365** : [SEC 17a-4 (f), FINRA 4511 (c) e CFTC 1.31 (c)-(d)](retention-regulatory-requirements.md#sec-17a-4f-finra-4511c-and-cftc-131c-d), Cohasset ha convalidato che Microsoft 365 include funzionalità di archiviazione che consentono ai clienti regolamentati, inclusi i broker-dealer, di archiviare i dati in modo da aiutarli a rispettare i requisiti sec per la conservazione dei record. Le funzionalità di conservazione in Microsoft 365 consentono di mantenere una vasta gamma di dati, tra cui la posta elettronica, la segreteria telefonica, i documenti condivisi, i messaggi istantanei e i dati di terze parti. In particolare, l'archiviazione in Microsoft 365 consente ai clienti di impostare criteri globali o granulari per la conservazione dei messaggi per archiviare i dati per un periodo definito e oltre, in un formato non riscrivibile e non cancellabile.
+- **Microsoft 365** : [SEC 17a-4 (f)](retention-regulatory-requirements.md#sec-17a-4f-finra-4511c-and-cftc-131c-d), Cohasset ha convalidato che Microsoft 365 include funzionalità di archiviazione che consentono ai clienti regolamentati, inclusi i broker-dealer, di archiviare i dati in modo da aiutarli a rispettare i requisiti sec per la conservazione dei record. Le funzionalità di conservazione in Microsoft 365 consentono di mantenere una vasta gamma di dati, tra cui la posta elettronica, la segreteria telefonica, i documenti condivisi, i messaggi istantanei e i dati di terze parti. In particolare, l'archiviazione in Microsoft 365 consente ai clienti di impostare criteri globali o granulari per la conservazione dei messaggi per archiviare i dati per un periodo definito e oltre, in un formato non riscrivibile e non cancellabile.
 
-## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud Microsoft inclusi
+## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud Microsoft in ambito
 
 - [Azure](https://gallery.technet.microsoft.com/Overview-of-Azure-c1be3942)
 - [Office 365](https://aka.ms/Office365ComplianceOfferings)

@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 0310226bba62995a6e72178fcf1fd2e96f462944
-ms.sourcegitcommit: 888b9355ef7b933c55ca6c18639c12426ff3fbde
+ms.openlocfilehash: 9a0878e513b48b7c6d5ca95cc9399918e1998af0
+ms.sourcegitcommit: 321610fd312e5c54ae8a757a71ab0c9fd2f1ac03
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "48304816"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "48995899"
 ---
 # <a name="general-data-protection-regulation-summary"></a>Riepilogo del Regolamento generale sulla protezione dei dati
 
@@ -31,10 +31,10 @@ Il Regolamento generale sulla protezione dei dati (GDPR) introduce nuove regole 
 
 Definizioni utili per i termini relativi al GDPR usati nel documento:
 
-- **Titolare del trattamento dei dati (titolare)**: una persona giuridica, un'autorità pubblica, un'agenzia o un altro organismo che, da solo o congiuntamente con altri, determina le finalità e le modalità di trattamento dei dati personali.  
-- **Dati personali e interessato**: qualsiasi informazione relativa a una persona fisica identificata o identificabile (interessato); una persona fisica identificabile è una persona che può essere identificata, direttamente o indirettamente.  
-- **Responsabile**: una persona fisica o giuridica, un'autorità pubblica o un altro ente che si occupa del trattamento dei dati personali per conto del titolare.  
-- **Dati dei clienti**: dati prodotti e archiviati relativi alle attività quotidiane di gestione della propria attività.
+- **Titolare del trattamento dei dati (titolare)** : una persona giuridica, un'autorità pubblica, un'agenzia o un altro organismo che, da solo o congiuntamente con altri, determina le finalità e le modalità di trattamento dei dati personali.  
+- **Dati personali e interessato** : qualsiasi informazione relativa a una persona fisica identificata o identificabile (interessato); una persona fisica identificabile è una persona che può essere identificata, direttamente o indirettamente.  
+- **Responsabile** : una persona fisica o giuridica, un'autorità pubblica o un altro ente che si occupa del trattamento dei dati personali per conto del titolare.  
+- **Dati dei clienti** : dati prodotti e archiviati relativi alle attività quotidiane di gestione della propria attività.
 
 ## <a name="what-is-the-gdpr"></a>Che cos'è il GDPR?
 
@@ -209,7 +209,7 @@ Le Condizioni per il GDPR di Microsoft riflettono gli impegni che l'Articolo 28 
 
 **In che modo Microsoft semplifica il trasferimento dei dati personali al di fuori dell'Unione Europea?**
 
-Microsoft utilizza da molto le clausole contrattuali standard (note anche come Clausole modello) come base per il trasferimento dei dati per i propri servizi online aziendali. Le clausole contrattuali standard sono condizioni standard fornite dalla Commissione Europea che possono essere usate per trasferire i dati al di fuori dello Spazio economico europeo in modo conforme. Microsoft ha integrato le clausole contrattuali standard in tutti i suoi contratti multilicenza tramite le [Condizioni dei servizi online ](http://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=46). L'implementazione delle clausole contrattuali standard da parte di Microsoft è stata ritenuta conforme dal Gruppo dell'articolo 29 per la tutela dei dati. Inoltre, quando è entrato in vigore l'EU-US Privacy Shield, Microsoft è stata la prima azienda a certificarsi. Vedere la [certificazione Microsoft per il Privacy Shield](https://www.privacyshield.gov/participant?id=a2zt0000000KzNaAAK&status=Active) e leggere le [Condizioni per i servizi online](http://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=46). L'EU-US Privacy Shield consente ai clienti che desiderano trasferire i propri dati negli Stati Uniti di farlo in maniera conforme ai propri obblighi di protezione dei dati.
+Microsoft utilizza da molto le clausole contrattuali standard (note anche come Clausole modello) come base per il trasferimento dei dati per i propri servizi online aziendali. Le clausole contrattuali standard sono condizioni standard fornite dalla Commissione Europea che possono essere usate per trasferire i dati al di fuori dello Spazio economico europeo in modo conforme. Microsoft ha integrato le clausole contrattuali standard in tutti i suoi contratti multilicenza tramite le [Condizioni dei servizi online ](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=46). L'implementazione delle clausole contrattuali standard da parte di Microsoft è stata ritenuta conforme dal Gruppo dell'articolo 29 per la tutela dei dati. Inoltre, quando è entrato in vigore l'EU-US Privacy Shield, Microsoft è stata la prima azienda a certificarsi. Vedere la [certificazione Microsoft per il Privacy Shield](https://www.privacyshield.gov/participant?id=a2zt0000000KzNaAAK&status=Active) e leggere le [Condizioni per i servizi online](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=46). L'EU-US Privacy Shield consente ai clienti che desiderano trasferire i propri dati negli Stati Uniti di farlo in maniera conforme ai propri obblighi di protezione dei dati.
 
 **Quali sono le altre offerte di Microsoft per la conformità?**
 
@@ -219,12 +219,12 @@ Essendo un'azienda globale con clienti in quasi ogni paese del mondo, Microsoft 
 
 Il GDPR impone alle organizzazioni che raccolgono o trattano dati personali un'ampia gamma di requisiti, tra cui quello di rispettare sei principi chiave:
 
-- *Trasparenza*, *correttezza* e *liceità* nel trattamento e nell'utilizzo dei dati personali. Sarà necessario spiegare chiaramente alle persone in che modo verranno usati i dati personali e avere una "base legittima" per trattarli.
-- Limitare il trattamento dei dati personali a *finalità determinate*, *esplicite* e *legittime*. Non è consentito riutilizzare o divulgare i dati personali per scopi non "compatibili" con lo scopo per il quale sono stati raccolti in origine.
+- *Trasparenza* , *correttezza* e *liceità* nel trattamento e nell'utilizzo dei dati personali. Sarà necessario spiegare chiaramente alle persone in che modo verranno usati i dati personali e avere una "base legittima" per trattarli.
+- Limitare il trattamento dei dati personali a *finalità determinate* , *esplicite* e *legittime*. Non è consentito riutilizzare o divulgare i dati personali per scopi non "compatibili" con lo scopo per il quale sono stati raccolti in origine.
 - *Minimizzare la raccolta e l'archiviazione dei dati personali* a quanto sia adeguato e pertinente per le finalità previste.
-- Garantire l'*esattezza dei dati personali* e consentirne la *cancellazione o rettifica*. Devono essere adottate tutte le misure necessarie affinché i dati personali conservati siano esatti e possano essere corretti in caso di errori.
+- Garantire l' *esattezza dei dati personali* e consentirne la *cancellazione o rettifica*. Devono essere adottate tutte le misure necessarie affinché i dati personali conservati siano esatti e possano essere corretti in caso di errori.
 - *Limitare l'archiviazione dei dati personali*. I dati personali devono essere conservati solo per il periodo necessario a raggiungere gli scopi per i quali sono stati raccolti.
-- Garantire la *sicurezza*, l'*integrità* e la *riservatezza dei dati personali*. L'organizzazione deve adoperarsi per proteggere i dati personali adottando misure tecniche e organizzative adeguate.
+- Garantire la *sicurezza* , l' *integrità* e la *riservatezza dei dati personali*. L'organizzazione deve adoperarsi per proteggere i dati personali adottando misure tecniche e organizzative adeguate.
 
 Occorrerà comprendere quali sono gli obblighi specifici dell'organizzazione per quanto riguarda il GDPR e in che modo è possibile rispettarli, potendo contare sull'aiuto di Microsoft lungo il percorso di adeguamento al GDPR.
 

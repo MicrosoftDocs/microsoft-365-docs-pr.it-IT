@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: dc4adef382724ce4176f2b5f779218d62b6079e0
-ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
+ms.openlocfilehash: 2ba5dc4726f359545d59de7387fc62a3fe897588
+ms.sourcegitcommit: 321610fd312e5c54ae8a757a71ab0c9fd2f1ac03
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48919690"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "48995889"
 ---
 # <a name="financial-industry-regulatory-authority-finra-rule-4511c-united-states"></a>Autorità di regolamentazione del settore finanziario (FINRA) regola 4511 (c) Stati Uniti
 
@@ -45,13 +45,11 @@ Cohasset ha convalidato che l' [archiviazione BLOB immutabile in Azure](https://
 
 I provider di software e i partner che dispongono di carichi di lavoro sensibili possono ora basarsi sull'archiviazione BLOB immutabile di Azure come soluzione cloud One-Stop Shop per la conservazione dei record e l'archiviazione immutabile. Gli istituti finanziari possono ora creare le proprie applicazioni approfittando di queste funzionalità pur rimanendo conformi.
 
-## <a name="microsoft-office-365"></a>Microsoft Office 365
+## <a name="microsoft-365"></a>Microsoft 365
 
-Per valutare Office 365 compliance with FINRA Rule 4511 (c), Microsoft ha mantenuto uno studio legale leader indipendente specializzato in questioni normative, Covington & Burling, LLP. Nel report risultante, archiving in Microsoft Office 365, data retention e Rule 17a-4 Compliance, Covington ha convalidato che [Office 365 con Preservation Lock](retention-preservation-lock.md) include funzionalità di archiviazione che consentono ai clienti regolamentati, inclusi i broker-dealer, di archiviare i dati in modo che li consentano di soddisfare i requisiti di FINRA per la conservazione dei record.
+Per i requisiti di [FINRA 4511 (c)](retention-regulatory-requirements.md#sec-17a-4f-finra-4511c-and-cftc-131c-d) , Cohasset ha convalidato che Microsoft 365 include funzionalità di archiviazione che consentono ai clienti regolamentati, inclusi i broker-dealer, di archiviare i dati in modo da aiutarli a rispettare i requisiti sec per la conservazione dei record. Le funzionalità di conservazione in Microsoft 365 consentono di mantenere una vasta gamma di dati, tra cui la posta elettronica, la segreteria telefonica, i documenti condivisi, i messaggi istantanei e i dati di terze parti. In particolare, l'archiviazione in Microsoft 365 consente ai clienti di impostare criteri globali o granulari per la conservazione dei messaggi per archiviare i dati per un periodo definito e oltre, in un formato non riscrivibile e non cancellabile.
 
-L'archiviazione in Office 365 consente di mantenere una vasta gamma di dati, tra cui la posta elettronica, la segreteria telefonica, i documenti condivisi, i messaggi istantanei e i dati di terze parti. In particolare, l'archiviazione in Office 365 consente ai clienti di impostare i criteri di conservazione dei messaggi globali o granulari per archiviare i dati per un periodo definito e oltre in un formato non riscrivibile e non cancellabile.
-
-## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud Microsoft inclusi
+## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud Microsoft in ambito
 
 - [Azure](https://gallery.technet.microsoft.com/Overview-of-Azure-c1be3942)
 - [Office 365](https://aka.ms/Office365ComplianceOfferings)
