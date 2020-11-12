@@ -19,24 +19,24 @@ ms.collection:
 search.appverid:
 - MET150
 description: Configurare la prevenzione della perdita di dati degli endpoint di Microsoft 365 per monitorare le attività dei file e implementare azioni di protezione per questi file negli endpoint.
-ms.openlocfilehash: 8f4b1b04aadbb639f6c7daeeb564c10abd7737b2
-ms.sourcegitcommit: ca733da1ed919b286a93068b560608e82f8def05
+ms.openlocfilehash: 3f29d8e49daa6dd4f0900e0e92123306c799c6ee
+ms.sourcegitcommit: da34ac08c7d029c2c42d4428d0bb03fd57c448be
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48990551"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "48999418"
 ---
 # <a name="get-started-with-endpoint-data-loss-prevention"></a>Introduzione alla prevenzione della perdita di dati degli endpoint
 
-La prevenzione della perdita di dati degli endpoint di Microsoft 365 (Endpoint DLP) fa parte della famiglia di funzionalità di prevenzione della perdita dei dati (DLP) di Microsoft 365 che è possibile usare per individuare e proteggere gli elementi sensibili nei servizi di Microsoft 365. Per altre informazioni su tutte le offerte DLP di Microsoft, vedere [Panoramica sulla prevenzione della perdita dei dati](data-loss-prevention-policies.md). Per altre informazioni su Endpoint DLP, vedere [Informazioni sulla prevenzione della perdita di dati degli endpoint (anteprima)](endpoint-dlp-learn-about.md)
+La prevenzione della perdita dei dati degli endpoint di Microsoft (Endpoint DLP) fa parte della famiglia di funzionalità della prevenzione della perdita dei dati di Microsoft 365 che è possibile usare per rilevare e proteggere elementi riservati nei servizi Microsoft 365. Per ulteriori informazioni sull'offerta completa della prevenzione della perdita di dati di Microsoft, vedere [Panoramica della prevenzione della perdita dei dati](data-loss-prevention-policies.md). Per ulteriori informazioni su Endpoint DLP, vedere [Informazioni sulla prevenzione della perdita di dati degli endpoint (anteprima)](endpoint-dlp-learn-about.md)
 
-Microsoft Endpoint DLP consente di monitorare i dispositivi Windows 10 e rilevare l'uso e la condivisione di elementi sensibili. In questo modo si ottengono la visibilità e il controllo necessari per assicurarsi che vengano usati e protetti correttamente e per evitare comportamenti rischiosi che potrebbero comprometterli.
+La prevenzione della perdita di dati degli endpoint di Microsoft consente di monitorare i dispositivi Windows 10 e rilevare quando vengono usati e condivisi elementi riservati. Questo fornisce la visibilità e il controllo necessari per garantire che vengano usati e protetti in modo appropriato e per prevenire comportamenti rischiosi che potrebbero comprometterli.
 
-## <a name="before-you-begin"></a>Informazioni preliminari
+## <a name="before-you-begin"></a>Prima di iniziare
 
-### <a name="skusubscriptions-licensing"></a>Licenze per SKU/abbonamenti
+### <a name="skusubscriptions-licensing"></a>Licenze per SKU/sottoscrizioni
 
-Prima di iniziare a usare Endpoint DLP, è necessario confermare l'[abbonamento a Microsoft 365](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1) e gli eventuali componenti aggiuntivi. Per accedere e usare le funzionalità di Endpoint DLP, è necessario disporre di uno di questi abbonamenti o componenti aggiuntivi.
+Prima di iniziare a usare Endpoint DLP, è necessario confermare [la sottoscrizione a Microsoft 365](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1) e a qualsiasi componente aggiuntivo. Per accedere a e usare la funzionalità Endpoint DLP, è necessario disporre di una delle seguenti sottoscrizioni o dei seguenti componenti aggiuntivi.
 
 - Microsoft 365 E5
 - Microsoft 365 A5 (EDU)
@@ -71,7 +71,7 @@ Se si vuole usare un account personalizzato per attivare o disattivare il monito
 - Amministratore globale
 - Amministratore di conformità
 
-I dati provenienti da Endpoint DLP possono essere visualizzati in [Esplora attività](data-classification-activity-explorer.md). Sono disponibili quattro ruoli che concedono l'autorizzazione per Esplora attività, l'account usato per accedere ai dati deve essere membro di uno di essi.
+I dati da Endpoint DLP possono essere visualizzati in [Esplora attività](data-classification-activity-explorer.md). Sono disponibili quattro ruoli che concedono l'autorizzazione per Esplora attività e l'account usato per accedere ai dati deve essere membro di uno di essi.
 
 - Amministratore globale
 - Amministratore di conformità
@@ -84,9 +84,9 @@ Verificare che i dispositivi Windows 10 in cui si prevede di distribuire Endpoin
 
 1. Devono eseguire Windows 10 x 64, build 1809 o successiva.
 
-2. La versione del client antimalware deve essere 4.18.2009.7 o successiva. Controllare la versione corrente aprendo l'app Sicurezza di Windows e facendo clic sull'icona impostazioni e quindi su Informazioni. Il numero di versione è elencato in Versione client antimalware. Eseguire l'aggiornamento all'ultima versione del client antimalware installando l'aggiornamento di Windows KB4052623. Nota: nessun componente di Sicurezza di Windows deve essere attivo, ma è possibile eseguire Endpoint DLP indipendentemente dallo stato di Sicurezza di Windows.
+2. La versione del client antimalware è 4.18.2009.7 o più recente. Verificare la versione corrente aprendo l'app Sicurezza di Windows, selezionare l'icona Impostazioni, quindi Informazioni. Il numero versione compare sotto Versione client antimalware. Eseguira l'aggiornamento all'ultima versione del client antimalware installando Windows Update KB4052623. Not: nessun componente di Sicurezza di Windows deve essere attivo, è possibile eseguire Endpoint DLP a prescindere dallo stato di Sicurezza di Windows.
 
-3. Devono essere installati gli aggiornamenti seguenti di Windows. Nota: questi aggiornamenti non sono prerequisiti per l'onboarding di un dispositivo in Endpoint DLP, ma contengono correzioni per problemi importanti, pertanto vanno installati prima di usare il prodotto.
+3. I seguenti aggiornamenti di Windows sono installati. Nota: questi aggiornamenti non costituiscono un prerequisito per eseguire l'onboarding di un dispositivo a Endpoint DLP, ma contengono correzioni per errori importanti, pertanto devono essere installati prima di usare il prodotto.
 
     - Per Windows 10 1809 - KB4559003, KB4577069, KB4580390
     - Per Windows 10 1903 o 1909 - KB4559004, KB4577062, KB4580386
@@ -95,17 +95,17 @@ Verificare che i dispositivi Windows 10 in cui si prevede di distribuire Endpoin
 
 4. Tutti i dispositivi devono essere [aggiunti ad Azure Active Directory (Azure AD)](https://docs.microsoft.com/azure/active-directory/devices/concept-azure-ad-join) o aggiunti ad Azure AD ibrido.
 
-5. Installare il browser Microsoft Edge Chromium nel dispositivo endpoint per applicare azioni dei criteri per l'attività di caricamento nel cloud. Vedere [Scaricare il nuovo Microsoft Edge basato su Chromium](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium).
+5. Installare il browser Microsoft Chromium Edge sul dispositivo endpoint per applicare le azioni dei criteri per l'attività di caricamento nel cloud. Vedere [Scaricare il nuovo Microsoft Edge basato su Chromium](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium).
 
-6. Se si usa il Canale Enterprise mensile di Microsoft 365 Apps versioni 2004-2008, esiste un problema noto con Endpoint DLP che classifica il contenuto di Office ed è necessario eseguire l'aggiornamento alla versione 2009 o successiva. Vedere [Cronologia degli aggiornamenti per Microsoft 365 Apps (elencati in ordine cronologico)](https://docs.microsoft.com/officeupdates/update-history-microsoft365-apps-by-date) per le versioni correnti. Per altre informazioni su questo problema, vedere la sezione relativa alle famiglia di prodotti di Office di [Note sulla versione del Canale corrente nel 2020](https://docs.microsoft.com/officeupdates/current-channel#version-2010-october-27).
+6. Se si è in un Canale Enterprise mensile di Microsoft 365 Apps, versioni 2004-2008, è presente un problema noto relativo alla classificazione dei contenuti di Office da parte di Endpoint DLP ed è necessaria la versione 2009 o successiva. Vedere [Aggiornare la cronologia per Microsoft 365 Apps (per data)](https://docs.microsoft.com/officeupdates/update-history-microsoft365-apps-by-date) per le versioni correnti. Per ulteriori informazioni in merito a questo problema, vedere la sezione della famiglia di prodotti Office di [Note sulla versione per i rilasci del canale corrente nel 2020](https://docs.microsoft.com/officeupdates/current-channel#version-2010-october-27).
 
 ## <a name="onboarding-devices-into-device-management"></a>Onboarding di dispositivi nella gestione dei dispositivi
 
-Per poter monitorare e proteggere gli elementi sensibili in un dispositivo, è necessario abilitare il monitoraggio dei dispositivi ed eseguire l'onboarding degli endpoint. Entrambe le azioni vengono eseguite nel portale Conformità Microsoft 365.
+Per poter monitorare e proteggere gli elementi riservati in un dispositivo, è necessario abilitare il monitoraggio dei dispositivi ed eseguire l'onboarding degli endpoint. Entrambe queste azioni vengono eseguite nel portale per la conformità di Microsoft 365.
 
-Quando si vuole eseguire l'onboarding di nuovi dispositivi, si scarica lo script appropriato e lo si distribuisce in questi dispositivi. Seguire la [procedura di onboarding dei dispositivi](endpoint-dlp-getting-started.md#onboarding-devices).
+Quando si desidera eseguire l'onboarding di nuovi dispositivi, si scarica lo script appropriato e lo si distribuisce in questi dispositivi. Seguire la [Procedura di onboarding dei dispositivi](endpoint-dlp-getting-started.md#onboarding-devices).
 
-Se i dispositivi sono già presenti in [Microsoft Defender per endpoint](https://docs.microsoft.com/windows/security/threat-protection/), verranno visualizzati nell'elenco dei dispositivi gestiti. Seguire la [Procedura con dispositivi già presenti in Microsoft Defender per endpoint](endpoint-dlp-getting-started.md#with-devices-onboarded-into-microsoft-defender-for- endpoint).
+Se si dispone già di dispositivi per cui è stato eseguito l'onboarding in [Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/), compariranno già nell'elenco dei dispositivi gestiti. Seguire la [Procedura con i dispositivi per cui è stato eseguito l'onboarding in Microsoft ATP](endpoint-dlp-getting-started.md#with-devices-onboarded-into-microsoft-defender-for- endpoint).
 
 ### <a name="onboarding-devices"></a>Onboarding dei dispositivi
 
@@ -121,7 +121,7 @@ In questo scenario di distribuzione si esegue l'onboarding di dispositivi non an
    > [!NOTE]
    > Anche se in genere sono necessari circa 60 secondi perché l'onboarding dei dispositivi sia abilitato, attendere fino a 30 minuti prima di contattare il supporto tecnico Microsoft.
 
-3. Scegliere **Gestione dispositivi** per aprire l'elenco **Dispositivi**. L'elenco sarà vuoto finché non si caricano dispositivi.
+3. Scegliere **Gestione dispositivi** per aprire l'elenco dei **Dispositivi**. L'elenco sarà vuoto fino all'onboarding dei dispositivi.
 
 4. Scegliere **Onboarding** per avviare il processo di onboarding.
 
@@ -130,7 +130,7 @@ In questo scenario di distribuzione si esegue l'onboarding di dispositivi non an
    > [!div class="mx-imgBorder"]
    > ![metodo di distribuzione](../media/endpoint-dlp-getting-started-3-deployment-method.png)
    
-6. Seguire le procedure appropriate in [Strumenti e metodi di onboarding per i dispositivi Windows 10](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints). Questo collegamento porta a una pagina di destinazione in cui è possibile accedere alle procedure di Microsoft Defender per endpoint che corrispondono al pacchetto di distribuzione selezionato nel passaggio 5:
+6. Seguire le procedure appropriate in [Strumenti per l'onboarding e metodi per i computer Windows 10](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints). Questo collegamento porta alla pagina di destinazione in cui è possibile accedere alle procedure di Microsoft Defender ATP che corrispondono al pacchetto di distribuzione selezionato al passaggio 5:
 
     - Onboarding di dispositivi Windows 10 con Criteri di gruppo
     - Onboarding di dispositivi Windows 10 con Microsoft Endpoint Configuration Manager
@@ -138,20 +138,20 @@ In questo scenario di distribuzione si esegue l'onboarding di dispositivi non an
     - Onboarding di dispositivi Windows 10 con uno script locale
     - Onboarding di dispositivi VDI (Virtual Desktop Infrastructure) non persistenti.
 
-Una volta completata l'operazione di onboarding, l'endpoint sarà visibile nell'elenco dei dispositivi e inizierà anche a inviare log di controllo delle attività a Esplora attività.
+Una volta completata l'operazione di onboarding, l'endpoint sarà visibile nell'elenco dei dispositivi e inizierà anche a inviare log audit delle attività a Esplora attività.
 
 > [!NOTE]
-> Questa esperienza richiede la licenza. Se non si ha la licenza necessaria, i dati non saranno visibili o accessibili.
+> Questa esperienza richiede l'applicazione di una licenza. Senza la licenza richiesta, i dati non saranno visibili o accessibili.
 
 ### <a name="with-devices-onboarded-into-microsoft-defender-for-endpoint"></a>Con dispositivi già presenti in Microsoft Defender per endpoint
 
-In questo scenario, Microsoft Defender per endpoint è già distribuito e ci sono endpoint per cui vengono creati report. Tutti questi endpoint compariranno nell'elenco dei dispositivi gestiti. È possibile continuare a eseguire l'onboarding di nuovi dispositivi in Endpoint DLP per ampliare la copertura usando la [procedura di onboarding dei dispositivi](endpoint-dlp-getting-started.md#onboarding-devices).
+In questo scenario, Microsoft Defender ATP è già stato distribuito e sono presenti endpoint che inviano report a esso. Tutti questi endpoint compariranno nell'elenco dei dispositivi gestiti. È possibile continuare a eseguire l'onboarding di nuovi dispositivi in Endpoint DLP per espandere la copertura tramite la [Procedura di onboarding dei dispositivi](endpoint-dlp-getting-started.md#onboarding-devices).
 
 1. Aprire il [Centro conformità Microsoft](https://compliance.microsoft.com).
 
 2. Aprire la pagina delle impostazioni del Centro conformità e scegliere **Abilita monitoraggio dispositivi**.
 
-3. Scegliere **Gestione dispositivi** per aprire l'elenco **Dispositivi**. Dovrebbe essere visualizzato l'elenco dei dispositivi che già inviano report a Microsoft Defender per endpoint.
+3. Scegliere **Gestione dispositivi** per aprire l'elenco dei **Dispositivi**. Dovrebbe essere visualizzato l'elenco dei dispositivi che inviano già report a Microsoft Defender ATP.
 
    > [!div class="mx-imgBorder"]
    > ![gestione dispositivi](../media/endpoint-dlp-getting-started-2-device-management.png)
@@ -160,7 +160,7 @@ In questo scenario, Microsoft Defender per endpoint è già distribuito e ci son
 
 5. Scegliere il modo in cui si vogliono distribuire questi altri dispositivi dall'elenco **Metodo di distribuzione** e quindi **Scarica pacchetto**.
 
-6. Seguire le procedure appropriate in [Strumenti e metodi di onboarding per i dispositivi Windows 10](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints). Questo collegamento porta a una pagina di destinazione in cui è possibile accedere alle procedure di Microsoft Defender per endpoint che corrispondono al pacchetto di distribuzione selezionato nel passaggio 5:
+6. Seguire le procedure appropriate in [Strumenti per l'onboarding e metodi per i computer Windows 10](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints). Questo collegamento porta alla pagina di destinazione in cui è possibile accedere alle procedure di Microsoft Defender ATP che corrispondono al pacchetto di distribuzione selezionato al passaggio 5:
 
     - Onboarding di dispositivi Windows 10 con Criteri di gruppo
     - Onboarding di dispositivi Windows 10 con Microsoft Endpoint Configuration Manager
@@ -171,7 +171,14 @@ In questo scenario, Microsoft Defender per endpoint è già distribuito e ci son
 Una volta completata l'operazione di onboarding, l'endpoint sarà visibile nell'elenco **Dispositivi** e inizierà anche a inviare log di controllo a **Esplora attività**.
 
 > [!NOTE]
->Questa esperienza richiede la licenza. Se non si ha la licenza necessaria, i dati non saranno visibili o accessibili.
+>Questa esperienza richiede l'applicazione di una licenza. Senza la licenza richiesta, i dati non saranno visibili o accessibili.
+
+### <a name="viewing-endpoint-dlp-alerts-in-dlp-alerts-management-dashboard"></a>Visualizzazione degli avvisi di Endpoint DLP nel dashboard di gestione degli avvisi DLP
+
+1. Aprire la pagina Prevenzione della perdita dei dati nel centro conformità Microsoft 365 e scegliere Avvisi.
+
+2. Fare riferimento alle procedure in [Come configurare e visualizzare gli avvisi per i criteri di prevenzione della perdita dei dati](dlp-configure-view-alerts-policies.md) per visualizzare gli avvisi per i criteri di Endpoint DLP.
+
 
 ### <a name="viewing-endpoint-dlp-data-in-activity-explorer"></a>Visualizzazione dei dati di Endpoint DLP in Esplora attività
 
