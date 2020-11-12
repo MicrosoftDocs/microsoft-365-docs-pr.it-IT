@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Dettagli della collaborazione del contenuto-persone che hanno un punteggio di produttività.
-ms.openlocfilehash: 87f89af527e2a1b843a9b70fbef590b69d920f7d
-ms.sourcegitcommit: d578b28ed1886abd083b01b93f01b354067e6d47
+ms.openlocfilehash: 5cdbe0cbb683715a19b182d0781fe238d026a400
+ms.sourcegitcommit: da34ac08c7d029c2c42d4428d0bb03fd57c448be
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "48804598"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "48999429"
 ---
 # <a name="content-collaboration--people-experiences"></a>Collaborazione tra i contenuti – esperienze degli utenti
 
@@ -32,7 +32,7 @@ Il Punteggio di produttività consente di trasformare la modalità di utilizzo d
 
 ## <a name="why-your-organization39s-content-collaboration-score-matters"></a>Motivi per cui l'organizzazione&#39;il Punteggio di collaborazione sul contenuto
 
-Un pilastro fondamentale per la produttività organizzativa è il modo in cui le persone collaborano nei file. Con il contenuto in Microsoft 365, gli utenti accedono, creano, modificano e collaborano ai contenuti con altre persone provenienti da qualsiasi posizione. La ricerca dimostra che quando la gente collabora con i file online, ogni persona salva una media di 100 minuti alla settimana. Vedere l' [evidenza](https://vc2prod.blob.core.windows.net/vc-resources/TEIStudies/TEI%20of%20Microsoft%20365%20E5%20-%20Oct%202018.pdf).
+Un pilastro fondamentale per la produttività organizzativa è il modo in cui le persone collaborano nei file. Con il contenuto in Microsoft 365, gli utenti accedono, creano, modificano e collaborano ai contenuti con altre persone provenienti da qualsiasi posizione. La ricerca dimostra che quando la gente collabora con i file online, ogni persona salva una media di 100 minuti alla settimana. [Vedere l'evidenza](https://vc2prod.blob.core.windows.net/vc-resources/TEIStudies/TEI%20of%20Microsoft%20365%20E5%20-%20Oct%202018.pdf).
 
 ## <a name="how-we-calculate-the-content-collaboration-score"></a>Come si calcola il Punteggio di collaborazione del contenuto
 
@@ -81,7 +81,7 @@ I tipi considerati per queste informazioni includono i file Word, Excel, PowerPo
 
 Il grafico delle visualizzazioni di tendenza Visualizza la linea di tendenza delle metriche principali per i lettori, i creatori e i collaboratori negli ultimi 180 giorni. Ogni punto dati del grafico è una aggregazione di attività negli ultimi 28 giorni. Ogni punto dati creatore fornisce un conteggio di tutte le persone contrassegnate come creatori negli ultimi 28 giorni per ogni data sull'asse x.
 
-:::image type="content" source="../../media/trendvisualization.jpg" alt-text="Intuizioni primarie dal punteggio di collaborazione di comunicazione.":::
+:::image type="content" source="../../media/trendvisualization.jpg" alt-text="Grafico con tendenze per la collaborazione Insight principale.":::
 
 ### <a name="scoring-framework"></a>Framework di Punteggio
 
@@ -93,7 +93,7 @@ Vengono inoltre fornite informazioni che consentono di acquisire visibilità sul
 
 ### <a name="creating-files-to-onedrive-or-sharepoint"></a>Creazione di file in OneDrive o SharePoint
 
-:::image type="content" source="../../media/sharepointonedrivefiles.jpg" alt-text="Intuizioni primarie dal punteggio di collaborazione di comunicazione.":::
+:::image type="content" source="../../media/sharepointonedrivefiles.jpg" alt-text="Grafico che indica il numero di utenti che creano file in OneDrive o SharePoint":::
 
 1. **Intestazione:** Evidenzia la percentuale di utenti attivi nelle applicazioni di Office di Microsoft 365 che creano file in OneDrive o SharePoint.
 2. **Corpo:** Vengono fornite informazioni sul valore della creazione di contenuto in OneDrive e SharePoint.
@@ -109,7 +109,7 @@ Vengono inoltre fornite informazioni che consentono di acquisire visibilità sul
 
 ### <a name="use-of-attachments-in-email"></a>Utilizzo degli allegati nel messaggio di posta elettronica
 
-:::image type="content" source="../../media/emailattachments.png" alt-text="Intuizioni primarie dal punteggio di collaborazione di comunicazione.":::
+:::image type="content" source="../../media/emailattachments.png" alt-text="Utilizzo degli allegati di posta elettronica.":::
 
 1. **Intestazione:** Evidenzia la percentuale di utenti che utilizzano allegati nei messaggi di posta elettronica che non sono stati salvati in OneDrive o SharePoint.
 2. **Corpo:** Vengono fornite informazioni sul valore della condivisione dei collegamenti ai file online da una prospettiva di collaborazione e sicurezza.
@@ -127,7 +127,7 @@ Vengono inoltre fornite informazioni che consentono di acquisire visibilità sul
 
 ### <a name="sharing-of-online-files"></a>Condivisione di file online
 
-:::image type="content" source="../../media/sharingonlinefiles.png" alt-text="Intuizioni primarie dal punteggio di collaborazione di comunicazione.":::
+:::image type="content" source="../../media/sharingonlinefiles.png" alt-text="Grafico che indica il numero di utenti che condividono i file online.":::
 
 1. **Intestazione:** Evidenzia la percentuale di utenti che dispongono dell'accesso a OneDrive o SharePoint che condividono i file esternamente.
 2. **Corpo:** Vengono fornite informazioni sugli amministratori&#39; la possibilità di modificare le impostazioni di condivisione file nell'organizzazione per abilitare il livello di collaborazione più appropriato per l'organizzazione.
@@ -142,7 +142,7 @@ Vengono inoltre fornite informazioni che consentono di acquisire visibilità sul
 
 ### <a name="intensity-of-files-collaborated-on"></a>Intensità dei file in cui è stata collaborata
 
-:::image type="content" source="../../media/intensityofcollab.png" alt-text="Intuizioni primarie dal punteggio di collaborazione di comunicazione.":::
+:::image type="content" source="../../media/intensityofcollab.png" alt-text="Grafico che mostra il numero di file di cui è stata più collaborata.":::
 
 1. **Intestazione:** In questo modo viene evidenziata la percentuale di utenti che hanno accesso a OneDrive o SharePoint che collaborano su 4 o più file.
 2. **Corpo:** In questo modo vengono fornite informazioni su come gli utenti possono sfruttare i file online per una migliore collaborazione.
@@ -164,7 +164,7 @@ Vengono inoltre fornite informazioni che consentono di acquisire visibilità sul
 
 ### <a name="network-performance-strength-for-onedrive-and-sharepoint"></a>Potenza delle prestazioni di rete per OneDrive e SharePoint
 
-:::image type="content" source="../../media/networkperfstrength.png" alt-text="Intuizioni primarie dal punteggio di collaborazione di comunicazione.":::
+:::image type="content" source="../../media/networkperfstrength.png" alt-text="Grafico che mostra le prestazioni di rete per OneDrive e SharePoint.":::
 
 1. **Intestazione:** Evidenzia la percentuale di dispositivi che non sono stati testati e che dispongono di una connessione di rete scadente a OneDrive e SharePoint. 
 2. **Corpo:** Vengono fornite informazioni sul perché le prestazioni della connessione di rete sono importanti per la collaborazione. 
