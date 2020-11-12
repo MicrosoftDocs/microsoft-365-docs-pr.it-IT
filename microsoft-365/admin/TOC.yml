@@ -224,18 +224,20 @@
           href: manage/pin-apps-to-app-launcher.md
         - name: Aggiornare gli utenti alle app più recenti
           href: setup/upgrade-users-to-latest-office-client.md
-        - name: Requisiti per la distribuzione centralizzata dei componenti aggiuntivi
-          href: manage/centralized-deployment-of-add-ins.md
+        - name: Distribuzione centralizzata dei componenti aggiuntivi
+          items:
+            - name: Requisiti per la distribuzione centralizzata dei componenti aggiuntivi
+              href: manage/centralized-deployment-of-add-ins.md
+            - name: Distribuire i componenti aggiuntivi nell'interfaccia di amministrazione
+              href: manage/manage-deployment-of-add-ins.md
+            - name: Gestire i componenti aggiuntivi nell'interfaccia di amministrazione
+              href: manage/manage-addins-in-the-admin-center.md
+            - name: Domande frequenti sulla distribuzione centralizzata
+              href: manage/centralized-deployment-faq.md
         - name: Gestire le notizie di settore
           href: manage/manage-industry-news.md
-        - name: Distribuire i componenti aggiuntivi nell'interfaccia di amministrazione
-          href: manage/manage-deployment-of-add-ins.md
-        - name: Gestire i componenti aggiuntivi nell'interfaccia di amministrazione
-          href: manage/manage-addins-in-the-admin-center.md
         - name: Gestire le impostazioni di Office Scripts
           href: manage/manage-office-scripts-settings.md
-        - name: Domande frequenti sulla distribuzione centralizzata
-          href: manage/centralized-deployment-faq.md
         - name: Trovare un partner o un rivenditore
           href: manage/find-your-partner-or-reseller.md
         - name: Gestire i messaggi del Centro messaggi
