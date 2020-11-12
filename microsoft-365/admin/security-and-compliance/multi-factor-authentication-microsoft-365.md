@@ -21,12 +21,12 @@ search.appverid:
 ms.assetid: 043807b2-21db-4d5c-b430-c8a6dee0e6ba
 ROBOTS: NOINDEX, NOFOLLOW
 description: Informazioni sull'autenticazione a più fattori in Microsoft 365.
-ms.openlocfilehash: bca84e949e696b483b567bf5f72233840023abca
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: cb425f3fd3d97dc0cd8815699bd22cb2540aed46
+ms.sourcegitcommit: 09518b7c9146cda7fd42839ee644ad418d48491a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47948713"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "49001514"
 ---
 # <a name="multi-factor-authentication-for-microsoft-365"></a>Autenticazione a più fattori per Microsoft 365
 
@@ -40,26 +40,26 @@ Per fornire un ulteriore livello di sicurezza per gli accessi, è necessario uti
 Il metodo di verifica aggiuntivo non viene utilizzato fino a quando la password dell'utente non è stata verificata. Con AMF, anche se una password utente complessa è danneggiata, l'aggressore non ha lo Smart Phone o l'impronta digitale per completare l'accesso.
 
 ## <a name="mfa-support-in-microsoft-365"></a>Supporto dell'AMF in Microsoft 365
+
 Per impostazione predefinita, sia Microsoft 365 che Office 365 supportano AMF per gli account utente utilizzando:
 
 - Un messaggio di testo inviato a un telefono che richiede all'utente di immettere un codice di verifica.
 - Una telefonata.
 - App Smart Phone Microsoft Authenticator.
 
-In entrambi i casi, l'accesso dell'AMF utilizza il metodo "something you have with you that is not facilmente Duplicated" per la verifica aggiuntiva.
-Esistono diversi modi in cui è possibile abilitare l'AMF per Microsoft 365 e Office 365:
+In entrambi i casi, l'accesso dell'AMF utilizza il metodo "something you have with you that is not facilmente Duplicated" per la verifica aggiuntiva. Esistono diversi modi in cui è possibile abilitare l'AMF per Microsoft 365 e Office 365:
 
 - Con le impostazioni predefinite di sicurezza
 - Con i criteri di accesso condizionale
 - Per ogni singolo account utente (non consigliato)
 
 Questi modi si basano sul piano Microsoft 365.
-    
-|Piano  |Consiglio  | Tipo di cliente |
-|---------|---------|----------|
-| Tutti i piani di Microsoft 365 | Utilizzare le impostazioni predefinite per la sicurezza, che richiedono l'AMF per tutti gli account utente. <br> È inoltre possibile richiedere l'utilizzo dell'AMF in base all'account utente, ma non è consigliabile. | Azienda di piccole dimensioni |
-| Microsoft 365 Business Premium <br><br> Microsoft 365 E3 <br><br> Licenze P1 di Azure Active Directory (Azure AD) | Utilizzare i criteri di accesso condizionale per richiedere l'utilizzo dell'AMF per gli account utente in base all'appartenenza ai gruppi, alle app o ad altri criteri. | Small Business to Enterprise |
-| Microsoft 365 E5 <br><br> Licenze P2 di Azure AD Premium | Usare Azure AD Identity Protection per richiedere l'utilizzo dell'AMF in base ai criteri di rischio di accesso. |  Enterprise |
+
+|Piano|Consiglio|Tipo di cliente|
+|---|---|---|
+|Tutti i piani di Microsoft 365|Utilizzare le impostazioni predefinite per la sicurezza, che richiedono l'AMF per tutti gli account utente. <p> È inoltre possibile configurare l'autenticazione per utente su singoli account utente, ma non è consigliabile.|Azienda di piccole dimensioni|
+|Microsoft 365 Business Premium <p> Microsoft 365 E3 <p> Licenze P1 di Azure Active Directory (Azure AD)|Utilizzare i criteri di accesso condizionale per richiedere l'utilizzo dell'AMF per gli account utente in base all'appartenenza ai gruppi, alle app o ad altri criteri.|Small Business to Enterprise|
+|Microsoft 365 E5 <p> Licenze P2 di Azure AD Premium|Usare Azure AD Identity Protection per richiedere l'utilizzo dell'AMF in base ai criteri di rischio di accesso.|Enterprise|
 ||||
 
 ### <a name="security-defaults"></a>Impostazioni predefinite per la sicurezza
@@ -79,7 +79,7 @@ Le impostazioni di sicurezza predefinite garantiscono che tutte le organizzazion
 
 È possibile utilizzare le impostazioni predefinite di sicurezza con qualsiasi piano di Microsoft 365.
 
-Per altre informazioni, vedere questa [panoramica delle impostazioni predefinite di sicurezza](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults). 
+Per altre informazioni, vedere questa [panoramica delle impostazioni predefinite di sicurezza](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults).
 
 ### <a name="conditional-access-policies"></a>Criteri di accesso condizionale
 
@@ -93,13 +93,13 @@ Questo criterio consente di richiedere l'autenticazione a più fattori in base a
 
 È possibile configurare i criteri di accesso condizionale dal riquadro di **sicurezza** di Azure ad nel portale di Azure.
 
-![Picure dell'opzione di menu per l'accesso condizionale](../../media/multi-factor-authentication-microsoft-365/conditional-access-mfa.png)
+![Immagine dell'opzione di menu per l'accesso condizionale](../../media/multi-factor-authentication-microsoft-365/conditional-access-mfa.png)
 
 È possibile utilizzare i criteri di accesso condizionale con:
 
 - Microsoft 365 Business Premium
 - Microsoft 365 E3 e E5
-- Licenze di Azure AD Premium P1 e Azure AD Premium P2 
+- Licenze di Azure AD Premium P1 e Azure AD Premium P2
 
 Per le aziende di piccole dimensioni con Microsoft 365 Business Premium, è possibile utilizzare facilmente i criteri di accesso condizionale con i passaggi seguenti:
 
@@ -134,9 +134,9 @@ Con Azure AD Identity Protection, è possibile creare un ulteriore criterio di a
 
 Per ulteriori informazioni, vedere questa [panoramica di Azure AD Identity Protection](https://docs.microsoft.com/azure/active-directory/identity-protection/overview-identity-protection).
 
-### <a name="legacy-per-person-mfa-not-recommended"></a>Legacy per persona Mae (non consigliata)
+### <a name="legacy-per-user-mfa-not-recommended"></a>AMF per utente legacy (scelta non consigliata)
 
-È consigliabile utilizzare i criteri di sicurezza o di accesso condizionale per richiedere l'autenticazione per l'account utente. Tuttavia, se una di queste non può essere utilizzata, Microsoft consiglia di utilizzare l'AMF per gli account utente che dispongono di ruoli di amministratore, in particolare il ruolo di amministratore globale, per qualsiasi sottoscrizione di dimensioni. 
+È consigliabile utilizzare i criteri di sicurezza o di accesso condizionale per richiedere l'autenticazione per l'account utente. Tuttavia, se una di queste non può essere utilizzata, Microsoft consiglia di utilizzare l'AMF per gli account utente che dispongono di ruoli di amministratore, in particolare il ruolo di amministratore globale, per qualsiasi sottoscrizione di dimensioni.
 
 È possibile abilitare l'AMF per singoli account utente dal riquadro **utente attivo dell'interfaccia** di amministrazione di Microsoft 365.
 
@@ -148,11 +148,11 @@ Dopo essere stato abilitato, la volta successiva che l'utente accede, verrà ric
 
 Questa tabella mostra i risultati dell'abilitazione della MFA con impostazioni predefinite di sicurezza, criteri di accesso condizionale e impostazioni dell'account per utente.
 
-|| Abilitato | Disattivato | Metodo di autenticazione secondario |
-|:-------|:-----|:-------|:-------|
-| **Impostazioni predefinite per la sicurezza** | Non è possibile utilizzare i criteri di accesso condizionale |   È possibile utilizzare i criteri di accesso condizionale | App Microsoft Authenticator |
-| **Criteri di accesso condizionale** |Se alcuni sono abilitati, non è possibile abilitare le impostazioni predefinite per la sicurezza | Se sono tutti disabilitati, è possibile abilitare le impostazioni predefinite per la sicurezza | Specificato dall'utente durante la registrazione della MFA |
-| **Legacy per persona Mae (non consigliata)** | Esegue l'override delle impostazioni predefinite per la sicurezza e i criteri di accesso condizionale che richiedono l'AMF a ogni accesso | Sottoposto a override da criteri di accesso condizionale e impostazioni predefinite per la sicurezza | Specificato dall'utente durante la registrazione della MFA|
+||Abilitato|Disattivato|Metodo di autenticazione secondario|
+|---|---|---|---|
+|**Impostazioni predefinite per la sicurezza**|Non è possibile utilizzare i criteri di accesso condizionale|È possibile utilizzare i criteri di accesso condizionale|App Microsoft Authenticator|
+|**Criteri di accesso condizionale**|Se sono abilitati, non è possibile abilitare le impostazioni predefinite per la sicurezza|Se sono tutti disabilitati, è possibile abilitare le impostazioni predefinite per la sicurezza|Specificato dall'utente durante la registrazione della MFA|
+|**AMF per utente legacy (scelta non consigliata)**|Esegue l'override delle impostazioni predefinite per la sicurezza e i criteri di accesso condizionale che richiedono l'AMF a ogni accesso|Sottoposto a override da criteri di accesso condizionale e impostazioni predefinite per la sicurezza|Specificato dall'utente durante la registrazione della MFA|
 ||||
 
 Se le impostazioni predefinite per la sicurezza sono abilitate, tutti i nuovi utenti vengono richieste per la registrazione dell'AMF e per l'utilizzo dell'app Microsoft Authenticator all'accesso successivo.

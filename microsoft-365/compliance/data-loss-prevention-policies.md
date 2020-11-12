@@ -22,20 +22,20 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Informazioni su come identificare, monitorare e proteggere automaticamente le informazioni riservate della tua organizzazione in tutta la suite Office 365.
-ms.openlocfilehash: d1b82f1e5581e1d24284a549f3c9572e0f8343a3
-ms.sourcegitcommit: 89f56c3e0b619a4700a75a21927d9ffc90658632
+ms.openlocfilehash: 0817d48879fccbefcda22d677c85a250dc017dd0
+ms.sourcegitcommit: da34ac08c7d029c2c42d4428d0bb03fd57c448be
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48984940"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "48999496"
 ---
 # <a name="overview-of-data-loss-prevention"></a>Panoramica sulla prevenzione della perdita dei dati
 <!-- this topic needs to be split into smaller, more coherent ones. It is confusing as it is. -->
 <!-- move this note to a more appropriate place, no topic should start with a note -->
 > [!NOTE]
-> Le funzionalità di prevenzione della perdita dei dati sono state aggiunte di recente ai messaggi di chat e canali di Microsoft Teams per gli utenti con licenza di Office 365 Advanced Compliance, che è disponibile come opzione indipendente e incluso in Office 365 E5 e Microsoft 365 E5 Compliance. Per altre informazioni sui requisiti di licenza, vedere [Linee guida per le licenze dei servizi a livello di tenant di Microsoft 365](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance).
+> Le funzionalità di prevenzione della perdita di dati sono state aggiunte recentemente ai messaggi chat e di canale di Microsoft Teams per gli utenti che dispongano di licenza Office 365 Advanced Compliance, che è disponibile come opzione indipendente ed è inclusa in Office 365 E5 e Microsoft 365 E5 Compliance. Per ulteriori informazioni sui requisiti di licenza, vedere [Linee guida per le licenze dei servizi a livello di tenant di Microsoft 365](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance).
 
-Per ottenere la conformità agli standard aziendali e alle normative di settore, le organizzazioni devono proteggere le informazioni riservate e impedirne la divulgazione accidentale. Le informazioni riservate possono essere dati finanziari o informazioni di identificazione personale (PII) come numeri di carta di credito, codici fiscali o cartelle cliniche. I criteri di prevenzione della perdita dei dati del Centro sicurezza e conformità di Office 365 permettono di identificare, monitorare e proteggere automaticamente le informazioni riservate in tutto Office 365.
+Per garantire la conformità a questi standard aziendali e alle normative di settore, le organizzazioni devono proteggere le informazioni riservate ed evitare la loro divulgazione involontaria. Le informazioni riservate comprendono dati finanziari o informazioni di identificazione personale quali numeri di carta di credito, di previdenza sociale o cartelle cliniche. Con un criterio di prevenzione della perdita dei dati nel Centro sicurezza e conformità di &amp; Office 365, è possibile identificare, monitora e proteggere automaticamente le informazioni riservate in Office 365.
   
 Con i criteri di prevenzione della perdita dei dati è possibile:
   
@@ -49,15 +49,15 @@ Con i criteri di prevenzione della perdita dei dati è possibile:
     
 - **Monitorare e proteggere le informazioni riservate nelle versioni desktop di Excel, PowerPoint e Word.**
     
-    Analogamente a Exchange Online, SharePoint Online e OneDrive for Business, questi programmi desktop di Office dispongono delle stesse caratteristiche per identificare le informazioni riservate e applicare i criteri di prevenzione della perdita dei dati. La prevenzione della perdita dei dati fornisce un monitoraggio continuo quando gli utenti condividono contenuti in questi programmi di Office.
+    Come in Exchange Online, SharePoint Online e OneDrive for Business, questi programmi desktop di Office includono le stesse funzionalità per identificare le informazioni riservate e applicare i criteri di prevenzione della perdita dei dati. Questi criteri monitorano continuamente la condivisione dei contenuti degli utenti nei programmi Office.
     
 - **Informare gli utenti su come garantire la conformità senza interrompere il flusso di lavoro.**
     
-    È possibile informare gli utenti sui criteri di prevenzione della perdita dei dati e aiutarli a rimanere conformi senza comprometterne la produttività. Se ad esempio un utente prova a condividere un documento contenente informazioni riservate, è possibile inviargli una notifica tramite posta elettronica e mostrargli un suggerimento per i criteri nel contesto della raccolta documenti, che gli consente di ignorare i criteri se giustificato da motivi aziendali. Gli stessi suggerimenti per i criteri vengono visualizzati anche in Outlook sul web, Outlook, Excel, PowerPoint e Word.
+    È possibile fornire agli utenti informazioni sui criteri DLP e aiutarli a garantire la conformità senza interrompere il lavoro. Ad esempio, se un utente tenta di condividere un documento che include informazioni riservate, il criterio di prevenzione della perdita dei dati invia una notifica tramite posta elettronica e mostra un suggerimento per i criteri nell'ambito della raccolta documenti che consente all'utente di ignorare il criterio per motivi aziendali. Gli stessi suggerimenti per i criteri vengono visualizzati anche in Outlook sul Web, Outlook, PowerPoint e Word.
     
-- **Visualizzare report che indicano i contenuti corrispondenti ai criteri di prevenzione della perdita dei dati dell'organizzazione.**
+- **Visualizzare avvisi e report DLP che indicano i contenuti corrispondenti ai criteri DLP dell'organizzazione.**
     
-    Per valutare se l'organizzazione è conforme ai criteri di prevenzione della perdita dei dati, è possibile contare il numero di corrispondenze con criteri e regole nel corso del tempo. Se esistono criteri di prevenzione della perdita dei dati che consentono agli utenti di eseguire l'override di un suggerimento per i criteri e segnalare un falso positivo, si può anche visualizzare il contenuto della segnalazione.
+    Per visualizzare gli avvisi e i metadati relativi ai criteri di prevenzione della perdita dei dati, è possibile usare il [Dashboard di gestione degli avvisi DLP](dlp-configure-view-alerts-policies.md). È anche possibile visualizzare i report della corrispondenza dei criteri per valutare il modo in cui l'organizzazione rispetta i criteri di prevenzione della perdita dei dati. Se esistono criteri di prevenzione della perdita dei dati che consentono agli utenti di ignorare un suggerimento per i criteri e segnalare un falso positivo, si può anche visualizzare il contenuto della segnalazione.
     
 È possibile creare e gestire i criteri di prevenzione della perdita dei dati nella pagina Prevenzione della perdita di dati nel Centro conformità e sicurezza di Microsoft 365.
   
@@ -196,13 +196,15 @@ Ecco l'aspetto di un suggerimento per i criteri in un account di OneDrive for Bu
 
  Per ulteriori informazioni sulle notifiche all'utente e i suggerimenti per i criteri nei criteri DLP, vedere [Utilizzare notifiche e suggerimenti per i criteri](use-notifications-and-policy-tips.md).
 
-#### <a name="incident-reports"></a>Rapporti operazioni non consentite
+#### <a name="alerts-and-incident-reports"></a>Avvisi e report degli incidenti
 
-Quando viene trovata una corrispondenza con una regola, è possibile inviare il report dell'evento al responsabile della conformità (o a chiunque si voglia) con i relativi dettagli. Il report include informazioni sull'elemento con cui è stata trovata una corrispondenza, sull'effettivo contenuto che ha soddisfatto la regola, oltre al nome dell'ultima persona che ha modificato il contenuto. Per i messaggi di posta elettronica, il report include anche il messaggio originale che corrisponde ai criteri di prevenzione della perdita dei dati, sotto forma di allegato.
+Quando viene trovata una corrispondenza con una regola, è possibile inviare un avviso tramite posta elettronica al responsabile della conformità (o a chiunque si desideri) con i relativi dettagli. Questo avviso tramite posta elettronica includerà un collegamento del [Dashboard di gestione degli avvisi DLP](dlp-configure-view-alerts-policies.md), tramite cui il responsabile della conformità potrà visualizzare i dettagli dell'avviso e degli eventi. Il dashboard contiene dettagli dell'evento che ha attivato l'avviso, insieme alle informazioni sul criterio di prevenzione della perdita di dati e sui contenuti riservati rilevati.
+
+Inoltre, è possibile inviare un report degli incidenti con i dettagli dell'evento. Il report include informazioni sull'elemento con cui è stata trovata una corrispondenza, sull'effettivo contenuto che ha soddisfatto la regola, oltre al nome dell'ultima persona che ha modificato il contenuto. Per i messaggi di posta elettronica, il report include anche il messaggio originale che corrisponde ai criteri di prevenzione della perdita dei dati, sotto forma di allegato.
   
-![Pagina per la configurazione di rapporti operazioni non consentite](../media/31c6da0e-981c-415e-91bf-d94ca391a893.png)
+![Pagina per la configurazione di rapporti operazioni non consentite](../media/Alerts-and-incident-report.png)
 
-La prevenzione della perdita dei dati esegue la scansione della posta elettronica in modo diverso dagli elementi in SharePoint Online o OneDrive for Business. In SharePoint Online e OneDrive for Business, la prevenzione della perdita dei dati analizza gli elementi esistenti e quelli nuovi e genera un report degli incidenti ogni volta che viene trovata una corrispondenza. In Exchange Online, la prevenzione della perdita dei dati esegue la scansione di nuovi messaggi di posta elettronica e genera un report in caso di corrispondenza dei criteri. La prevenzione della perdita dei dati *_non_* esegue la scansione o la corrispondenza di elementi di posta elettronica esistenti in precedenza archiviati in una cassetta postale o in un archivio.
+La prevenzione della perdita dei dati esegue la scansione della posta elettronica in modo diverso dagli elementi in SharePoint Online o OneDrive for Business. In SharePoint Online e OneDrive for Business, la prevenzione della perdita dei dati analizza gli elementi esistenti e quelli nuovi e genera un avviso e un report degli incidenti ogni volta in cui viene trovata una corrispondenza. In Exchange Online, la prevenzione della perdita dei dati esegue la scansione di nuovi messaggi di posta elettronica e genera un report in caso di corrispondenza dei criteri. La prevenzione della perdita dei dati *_non_* esegue la scansione o la corrispondenza di elementi di posta elettronica esistenti in precedenza archiviati in una cassetta postale o in un archivio.
   
 ## <a name="grouping-and-logical-operators"></a>Raggruppamento e operatori logici
 

@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: Usare il Centro sicurezza e conformità di Office 365 o il Centro conformità Microsoft 365 per eseguire una ricerca nel log di controllo unificato e vedere le attività di utenti e amministratori nell'organizzazione.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 2254fb9fd47b1554064194b815ff4d19b2d33472
-ms.sourcegitcommit: 36795a6735cd3fc678c7d5db71ddc97fac3f6f8a
+ms.openlocfilehash: ded01bc262cd1bb2fbabcd237278447e486d109a
+ms.sourcegitcommit: da34ac08c7d029c2c42d4428d0bb03fd57c448be
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "48941453"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "48999510"
 ---
 # <a name="search-the-audit-log-in-the-compliance-center"></a>Eseguire una ricerca nel log di controllo nel Centro conformità
 
@@ -137,12 +137,12 @@ Prima di iniziare la ricerca nel log di controllo, tenere presente quanto segue.
 
 - La registrazione di controllo per Power BI non è abilitata per impostazione predefinita. Per cercare le attività di Power BI nel log di controllo, è necessario abilitare il controllo nel portale di amministrazione di Power BI. Per le istruzioni, vedere la sezione "Log di controllo" nel [portale di amministrazione di Power BI](https://docs.microsoft.com/power-bi/service-admin-portal#audit-logs).
 
-## <a name="search-the-audit-log"></a>Eseguire ricerche nel log di controllo
+## <a name="search-the-audit-log"></a>Eseguire ricerche nel log di audit
 
 > [!NOTE]
-> Stiamo lavorando a un problema relativo al fatto che le attività di Azure Active Directory non sono disponibili nello strumento di ricerca nel log di audit. Il problema si è verificato a partire dal 26 ottobre 2020. Queste attività includono le attività di amministrazione degli utenti di Azure Active Directory, le attività di amministrazione gruppi, le attività di amministrazione delle applicazioni, le attività di amministrazione dei ruoli e le attività di amministrazione directory. Forniremo un aggiornamento non appena risolto il problema.
+> È stato riscontrato un problema per cui le attività di Azure AD non sono disponibili nello strumento di ricerca nel log di audit dal 22 ottobre 2020 al 6 novembre 2020. Queste attività includono le attività di amministrazione degli utenti di Azure Active Directory, le attività di amministrazione gruppi, le attività di amministrazione delle applicazioni, le attività di amministrazione dei ruoli e le attività di amministrazione directory. Gli eventi mancanti per il periodo di impatto saranno disponibili nei prossimi giorni e si prevede che verranno completati entro il 20 novembre 2020. In alcuni casi, i clienti potrebbero notare dati di eventi duplicati per gli eventi generati tra il 26 ottobre 2020 e il 5 novembre 2020.
     
-Ecco il processo per la ricerca nel log di controllo in Office 365.
+Ecco il processo per la ricerca nel log di audit in Office 365.
 
 [Passaggio 1: Eseguire una ricerca nel log di controllo](#step-1-run-an-audit-log-search)
 
