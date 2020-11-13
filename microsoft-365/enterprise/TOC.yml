@@ -415,8 +415,6 @@
           href: manage-microsoft-365-groups.md
         - name: Governance
           href: manage-microsoft-365-identity-governance.md
-        - name: Recuperare gli elementi eliminati nella cassetta postale di un utente
-          href: recover-deleted-items-in-a-mailbox.md
         - name: Sincronizzazione della directory
           items:
             - name: Visualizzare lo stato
@@ -604,9 +602,9 @@
                   href: disable-access-to-services-while-assigning-user-licenses.md
         - name: Gruppi
           items:
-            - name: Gestire l'appartenenza ai gruppi
+            - name: Mantenere l’appartenenza ai gruppi di sicurezza
               href: maintain-group-membership-with-microsoft-365-powershell.md
-            - name: Gestire i gruppi di Microsoft 365
+            - name: Gestire gruppi di Microsoft 365
               href: manage-microsoft-365-groups-with-powershell.md
     - name: Gestire SharePoint
       href: manage-sharepoint-online-with-microsoft-365-powershell.md

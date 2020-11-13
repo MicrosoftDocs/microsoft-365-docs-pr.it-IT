@@ -240,8 +240,6 @@
               href: dlp-configure-endpoints-script.md
             - name: Onboarding di dispositivi VDI (Virtual Desktop Infrastructure) non persistenti
               href: dlp-configure-endpoints-vdi.md
-        - name: Introduzione alle raccomandazioni per i criteri di prevenzione della perdita dei dati
-          href: get-started-with-dlp-policy-recommendations.md
         - name: Introduzione ai criteri di prevenzione della perdita dei dati predefiniti
           href: get-started-with-the-default-dlp-policy.md
         - name: Creare criteri di prevenzione della perdita dei dati da un modello
@@ -342,6 +340,8 @@
               href: archive-twitter-data-with-sample-connector.md
         - name: Connettori dati Globanet
           items:
+            - name: CellTrust
+              href: archive-celltrust-data.md
             - name: Cisco Jabber
               href: archive-ciscojabberonmssql-data.md
             - name: .EML
@@ -350,10 +350,16 @@
               href: archive-fxconnect-data.md
             - name: Jive
               href: archive-jive-data.md
+            - name: Database MS SQL
+              href: archive-mssqldatabaseimporter-data.md
             - name: Pivot
               href: archive-pivot-data.md
+            - name: Reuters Dealing
+              href: archive-reutersdealing-data.md
             - name: Reuters Eikon
               href: archive-reuterseikon-data.md
+            - name: Reuters FX
+              href: archive-reutersfx-data.md
             - name: Margine di flessibilità eDiscovery
               href: archive-slack-data.md
             - name: Symphony
@@ -366,6 +372,8 @@
               href: archive-webexteams-data.md
             - name: Workplace from Facebook
               href: archive-workplacefromfacebook-data.md
+            - name: XIP
+              href: archive-xip-data.md
             - name: XSLT/XML
               href: archive-xslt-xml-data.md
             - name: Riunioni Zoom
