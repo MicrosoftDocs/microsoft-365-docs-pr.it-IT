@@ -11,17 +11,18 @@ ms.collection:
 - M365-collaboration
 - m365solution-3tiersprotection
 - m365solution-securecollab
+- m365initiative-externalcollab
 ms.custom:
 - seo-marvel-apr2020
 localization_priority: Normal
 f1.keywords: NOCSH
 description: In questo articolo vengono fornite informazioni su come collaborare con gli utenti di un documento in SharePoint e OneDrive.
-ms.openlocfilehash: 022811be642a79c07c632cefcc67a27f19e3af4f
-ms.sourcegitcommit: 39af527404cb06e05c5aa4550dbec39aec133016
+ms.openlocfilehash: e3492732756aecb176eb21f0bdfd0d394013975e
+ms.sourcegitcommit: 8a726ed7ec19a8728c079780fa4d343a5f759fbb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "48422606"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "49030006"
 ---
 # <a name="collaborate-with-guests-on-a-document"></a>Collaborare con gli utenti guest a un documento
 
@@ -54,7 +55,7 @@ Per impostare le impostazioni di collaborazione esterna
 
 Prendere nota delle impostazioni nella sezione **vincoli di collaborazione** . Verificare che i domini degli utenti con cui si desidera collaborare non siano bloccati.
 
-Se si lavora con clienti provenienti da più organizzazioni, è possibile che si desideri limitare la possibilità di accedere ai dati della directory. Ciò impedirà loro di vedere chi altro è un ospite nella directory. Per eseguire questa operazione, in **restrizioni di accesso degli utenti Guest**, selezionare **Guest gli utenti hanno accesso limitato alle proprietà e l'appartenenza delle impostazioni degli oggetti directory** o **l'accesso degli utenti Guest è limitato alle proprietà e alle appartenenze dei propri oggetti directory**.
+Se si lavora con clienti provenienti da più organizzazioni, è possibile che si desideri limitare la possibilità di accedere ai dati della directory. Ciò impedirà loro di vedere chi altro è un ospite nella directory. Per eseguire questa operazione, in **restrizioni di accesso degli utenti Guest** , selezionare **Guest gli utenti hanno accesso limitato alle proprietà e l'appartenenza delle impostazioni degli oggetti directory** o **l'accesso degli utenti Guest è limitato alle proprietà e alle appartenenze dei propri oggetti directory**.
 
 ## <a name="sharepoint-organization-level-sharing-settings"></a>Impostazioni di condivisione a livello di organizzazione di SharePoint
 
@@ -71,8 +72,8 @@ Per SharePoint, scegliere l'impostazione più permissiva che sarà necessaria pe
 
 Per impostare le impostazioni di condivisione a livello di organizzazione di SharePoint
 
-1. Nell'interfaccia di amministrazione di Microsoft 365, nel riquadro di spostamento a sinistra, in interfaccia di **Amministrazione**, fare clic su **SharePoint**.
-2. Nell'interfaccia di amministrazione di SharePoint, nel riquadro di spostamento a sinistra, in **criteri**fare clic su **condivisione**.
+1. Nell'interfaccia di amministrazione di Microsoft 365, nel riquadro di spostamento a sinistra, in interfaccia di **Amministrazione** , fare clic su **SharePoint**.
+2. Nell'interfaccia di amministrazione di SharePoint, nel riquadro di spostamento a sinistra, in **criteri** fare clic su **condivisione**.
 3. Verificare che la condivisione esterna per SharePoint o OneDrive sia impostata su chiunque o su un **utente** **nuovo o esistente**. Si noti che l'impostazione di OneDrive non può essere più permissiva dell'impostazione di SharePoint.
 4. Se si apportano modifiche, fare clic su **Salva**.
 
@@ -94,7 +95,7 @@ Scegliere un collegamento tra i tipi seguenti, che vengono quindi selezionati pe
 Per impostare le impostazioni dei collegamenti predefiniti a livello di organizzazione di SharePoint e OneDrive
 
 1. Passare alla pagina condivisione nell'interfaccia di amministrazione di SharePoint.
-2. In **collegamenti a file e cartelle**selezionare il collegamento di condivisione predefinito che si desidera utilizzare.
+2. In **collegamenti a file e cartelle** selezionare il collegamento di condivisione predefinito che si desidera utilizzare.
 3. Se si apportano modifiche, fare clic su **Salva**.
 
 Per impostare l'autorizzazione per il collegamento di condivisione, in **scegliere l'autorizzazione selezionata per impostazione predefinita per i collegamenti di condivisione.**

@@ -11,16 +11,17 @@ ms.collection:
 - M365-collaboration
 - m365solution-3tiersprotection
 - m365solution-securecollab
+- m365initiative-externalcollab
 ms.custom: ''
 localization_priority: Normal
 f1.keywords: NOCSH
 description: Informazioni su come creare un sito Extranet o un team B2B con gli utenti Guest gestiti provenienti da un'organizzazione partner.
-ms.openlocfilehash: 83252241833f3dfe663cc70eae28a5df1214cce0
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: b052598f86072776f69e538c70a6bd56d79c3f81
+ms.sourcegitcommit: 8a726ed7ec19a8728c079780fa4d343a5f759fbb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47949385"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "49030054"
 ---
 # <a name="create-a-b2b-extranet-with-managed-guests"></a>Creare una Extranet B2B con guest gestiti.
 
@@ -55,7 +56,7 @@ Per aggiungere un'organizzazione connessa
 5. Digitare un nome e una descrizione per l'organizzazione, quindi fare clic su **Avanti: directory + dominio**.
 6. Fare clic su **Aggiungi directory + dominio**.
 7. Digitare il dominio per l'organizzazione che si desidera connettere e quindi fare clic su **Aggiungi**.
-8. Fare clic su **Connetti**e quindi su **Avanti: sponsor**.
+8. Fare clic su **Connetti** e quindi su **Avanti: sponsor**.
 9. Aggiungere persone dall'organizzazione o dall'organizzazione a cui si sta effettuando la connessione a chi si desidera approvare l'accesso per gli utenti guest.
 10. Fare clic su **Avanti: recensione + crea**.
 11. Esaminare le impostazioni selezionate e quindi fare clic su **Crea**.
@@ -78,7 +79,7 @@ Per creare un catalogo
 Dopo aver creato il catalogo, è necessario aggiungere il sito o il team di SharePoint che si desidera condividere con l'organizzazione partner.
 
 Per aggiungere risorse a un catalogo
-1. In Azure AD Identity governance fare clic su **cataloghi**e quindi fare clic sul catalogo in cui si desidera aggiungere risorse.
+1. In Azure AD Identity governance fare clic su **cataloghi** e quindi fare clic sul catalogo in cui si desidera aggiungere risorse.
 2. Fare clic su **risorse** e quindi su **Aggiungi risorse**.
 3. Selezionare i team o i siti di SharePoint che si desidera includere nella rete Extranet, quindi fare clic su **Aggiungi**.
 
@@ -87,20 +88,20 @@ Per aggiungere risorse a un catalogo
 Dopo aver definito le risorse che si desidera condividere, il passaggio successivo consiste nel creare un pacchetto di Access, che definisce il tipo di accesso che gli utenti partner sono concessi e il processo di approvazione per i nuovi utenti partner che richiedono l'accesso.
 
 Per creare un pacchetto di Access
-1. In Azure AD Identity governance, fare clic su **cataloghi**, quindi fare clic sul catalogo in cui si desidera creare un pacchetto di accesso.
-2. Fare clic su **Access**Packages, quindi fare clic su **nuovo pacchetto di accesso**.
+1. In Azure AD Identity governance, fare clic su **cataloghi** , quindi fare clic sul catalogo in cui si desidera creare un pacchetto di accesso.
+2. Fare clic su **Access** Packages, quindi fare clic su **nuovo pacchetto di accesso**.
 3. Digitare un nome e una descrizione per il pacchetto di accesso e quindi fare clic su **Avanti: ruoli risorse**.
 4. Scegliere le risorse del catalogo che si desidera utilizzare per l'Extranet.
 5. Per ogni risorsa, nella colonna **ruolo** scegliere il ruolo utente che si desidera concedere agli utenti guest che utilizzano la rete Extranet.
 6. Fare clic su **Avanti: richieste**.
-7. In **utenti che possono richiedere l'accesso**, scegliere **per gli utenti non presenti nella directory**.
+7. In **utenti che possono richiedere l'accesso** , scegliere **per gli utenti non presenti nella directory**.
 8. Verificare che l'opzione **specifiche organizzazioni connesse** sia selezionata e quindi fare clic su **Aggiungi directory**.
 9. Scegliere l'organizzazione connessa aggiunta in precedenza e quindi fare clic su **Seleziona**
-10. In **approvazione**, scegliere **Sì** per **richiedere l'approvazione**.
-11. In **primo responsabile approvazione**scegliere uno dei garanti aggiunti in precedenza o scegliere un utente specifico.
+10. In **approvazione** , scegliere **Sì** per **richiedere l'approvazione**.
+11. In **primo responsabile approvazione** scegliere uno dei garanti aggiunti in precedenza o scegliere un utente specifico.
 12. Fare clic su **Aggiungi fallback** e selezionare un responsabile approvazione fallback.
-13. In **attiva**, scegliere **Sì**.
-14. Fare clic su **Avanti: ciclo**di vita.
+13. In **attiva** , scegliere **Sì**.
+14. Fare clic su **Avanti: ciclo** di vita.
 15. Scegliere le impostazioni di scadenza e revisione di Access che si desidera utilizzare e quindi fare clic su **Avanti: recensione + crea**.
 16. Esaminare le impostazioni, quindi fare clic su **Crea**.
 
@@ -109,9 +110,9 @@ Per creare un pacchetto di Access
 Se si è in partnership con un'organizzazione di grandi dimensioni, è possibile che si desideri nascondere il pacchetto di accesso. Se il pacchetto è nascosto, gli utenti dell'organizzazione partner non vedranno il pacchetto sul proprio portale di *accesso* . Al contrario, è necessario inviare un collegamento diretto per iscriversi al pacchetto. Se si nasconde il pacchetto di Access, è possibile ridurre il numero di richieste di accesso inappropriate e consentire anche di mantenere i pacchetti di accesso disponibili organizzati nel portale dell'organizzazione partner.
 
 Per impostare un pacchetto di accesso su nascosto
-1. In Azure AD Identity governance, fare clic su **Access**Packages, quindi fare clic sul pacchetto di accesso.
+1. In Azure AD Identity governance, fare clic su **Access** Packages, quindi fare clic sul pacchetto di accesso.
 2. Nella pagina **Panoramica** fare clic su **modifica**.
-3. In **Proprietà**, scegliere **Sì** per **nascosto**, quindi fare clic su **Salva**.
+3. In **Proprietà** , scegliere **Sì** per **nascosto** , quindi fare clic su **Salva**.
 
    ![Schermata di una finestra di modifica delle proprietà di un pacchetto di Access](../media/identity-governance-access-package-hidden.png)
 
@@ -120,7 +121,7 @@ Per impostare un pacchetto di accesso su nascosto
 Se si imposta il pacchetto di accesso su nascosto, è necessario inviare un collegamento diretto all'organizzazione partner in modo che possano richiedere l'accesso al sito o al team.
 
 Per trovare il collegamento al portale di accesso
-1. In Azure AD Identity governance, fare clic su **Access**Packages, quindi fare clic sul pacchetto di accesso.
+1. In Azure AD Identity governance, fare clic su **Access** Packages, quindi fare clic sul pacchetto di accesso.
 2. Nella pagina **Panoramica** fare clic su **copia nel** collegamento degli Appunti per il **collegamento portale My Access**.
 
    ![Schermata delle proprietà del pacchetto di accesso con il collegamento al portale di accesso](../media/identity-governance-access-portal-link.png)

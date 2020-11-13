@@ -15,12 +15,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: seo-marvel-apr2020
 description: Informazioni su come gli amministratori possono configurare e utilizzare un connettore di dati per importare e archiviare i dati dallo strumento Instant Bloomberg chat in Microsoft 365.
-ms.openlocfilehash: 3a00e74d138810c4f9bc2ca851696a8c39b9f082
-ms.sourcegitcommit: ae3aa7f29be16d08950cf23cad489bc069aa8617
+ms.openlocfilehash: 18635e6f197d954ae90c32bf5e3ae1ea8193f06d
+ms.sourcegitcommit: f07442d077eb4357fa5d99d051b035705eb30efa
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48408756"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "49002361"
 ---
 # <a name="set-up-a-connector-to-archive-instant-bloomberg-data"></a>Configurare un connettore per archiviare i dati di Instant Bloomberg
 
@@ -52,7 +52,7 @@ Alcuni dei passaggi di implementazione necessari per archiviare i dati di Bloomb
 
 - Configurare un sito Bloomberg SFTP (Secure File Transfer Protocol). Dopo aver lavorato con Bloomberg per configurare il sito SFTP, i dati provenienti da Instant Bloomberg vengono caricati nel sito SFTP ogni giorno. Il connettore creato nel passaggio 2 si connette a questo sito SFTP e trasferisce i dati della chat alle cassette postali di Microsoft 365. SFTP crittografa anche i dati di chat istantanea di Bloomberg inviati alle cassette postali durante il processo di trasferimento.
 
-  Per informazioni su Bloomberg SFTP (denominato anche *BB-SFTP*):
+  Per informazioni su Bloomberg SFTP (denominato anche *BB-SFTP* ):
 
   - Vedere il documento "standard di connettività SFTP" sul [supporto di Bloomberg](https://www.bloomberg.com/professional/support/documentation/).
 
@@ -80,7 +80,7 @@ Il primo passaggio consiste nell'ottenere una copia delle chiavi pubbliche per S
 
 3. Nella pagina **condizioni del servizio** fare clic su **Accetto**.
 
-4. Nel **sito Add credentials for Bloomberg SFTP** al passaggio 1, fare clic sul pulsante **Scarica SSH Key**, **scaricare PGP Key**e scaricare i collegamenti agli **indirizzi IP** per salvare una copia di ogni file nel computer locale. Questi file contengono gli elementi seguenti che vengono utilizzati per configurare il sito Bloomberg SFTP nel passaggio 2:
+4. Nel **sito Add credentials for Bloomberg SFTP** al passaggio 1, fare clic sul pulsante **Scarica SSH Key** , **scaricare PGP Key** e scaricare i collegamenti agli **indirizzi IP** per salvare una copia di ogni file nel computer locale. Questi file contengono gli elementi seguenti che vengono utilizzati per configurare il sito Bloomberg SFTP nel passaggio 2:
 
    - Chiave pubblica SSH: questa chiave viene utilizzata per configurare Secure Shell (SSH) per abilitare un account di accesso remoto sicuro quando il connettore si connette al sito Bloomberg SFTP.
 
@@ -117,11 +117,13 @@ L'ultimo passaggio consiste nel creare un connettore Bloomberg istantaneo nel ce
 
     - **Porta SFTP:** Il numero di porta per il sito Bloomberg SFTP. Il connettore utilizza questa porta per la connessione al sito SFTP.
 
-5. Nella pagina **mapping utenti** abilitare il mapping automatico degli utenti e fornire il mapping degli utenti personalizzato come richiesto
+5. Nella pagina **selezionare i tipi di dati da importare** selezionare i tipi di dati necessari che devono essere importati oltre ai **messaggi**
+
+6. Nella pagina **mapping utenti** abilitare il mapping automatico degli utenti e fornire il mapping degli utenti personalizzato come richiesto
 
    > [!NOTE]
    > Il connettore importa gli elementi del messaggio di chat nella cassetta postale di un utente specifico. Viene creata una nuova cartella denominata **InstantBloomberg** nella cassetta postale dell'utente specifico e gli elementi verranno importati. Il connettore viene utilizzato utilizzando il valore della proprietà *CorporateEmailAddress* . Ogni messaggio di chat contiene questa proprietà e la proprietà viene popolata con l'indirizzo di posta elettronica di ogni partecipante del messaggio di chat. Oltre a eseguire il mapping automatico degli utenti utilizzando il valore della proprietà *CorporateEmailAddress* , è anche possibile definire il mapping personalizzato caricando un file di mapping CSV. Il file di mapping deve contenere l'UUID di Bloomberg e l'indirizzo della cassetta postale di Microsoft 365 corrispondente per ogni utente. Se si Abilita il mapping automatico degli utenti e si fornisce un mapping personalizzato, per ogni elemento di chat il connettore osserverà per prima cosa il file di mapping personalizzato. Se non trova un utente valido di Microsoft 365 che corrisponde all'UUID di Bloomberg di un utente, il connettore utilizzerà la proprietà *CorporateEmailAddress* dell'elemento chat. Se il connettore non trova un utente valido di Microsoft 365 nel file di mapping personalizzato o nella proprietà *CorporateEmailAddress* dell'elemento chat, l'elemento non verrà importato.
 
-6. Fare clic su **Avanti**, rivedere le impostazioni e quindi fare clic su **prepara** per creare il connettore.
+7. Fare clic su **Avanti** , rivedere le impostazioni e quindi fare clic su **prepara** per creare il connettore.
 
-7. Passare alla pagina **connettori dati** per visualizzare lo stato di avanzamento del processo di importazione per il nuovo connettore.
+8. Passare alla pagina **connettori dati** per visualizzare lo stato di avanzamento del processo di importazione per il nuovo connettore.

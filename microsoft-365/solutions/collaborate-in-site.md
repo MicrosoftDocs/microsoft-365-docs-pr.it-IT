@@ -11,17 +11,18 @@ ms.collection:
 - M365-collaboration
 - m365solution-3tiersprotection
 - m365solution-securecollab
+- m365initiative-externalcollab
 ms.custom:
 - seo-marvel-apr2020
 localization_priority: Normal
 f1.keywords: NOCSH
 description: Informazioni sui passaggi di configurazione di Microsoft 365 necessari per configurare un sito di SharePoint per la collaborazione con gli utenti.
-ms.openlocfilehash: dbbf84539c1bef239abc76e142922976902a01ed
-ms.sourcegitcommit: ae3aa7f29be16d08950cf23cad489bc069aa8617
+ms.openlocfilehash: df9068ef4b4eb35f946b78d8f7fefa01c254c79c
+ms.sourcegitcommit: 8a726ed7ec19a8728c079780fa4d343a5f759fbb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48409037"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "49029994"
 ---
 # <a name="collaborate-with-guests-in-a-site"></a>Collaborare con gli utenti guest a un sito
 
@@ -54,7 +55,7 @@ Per impostare le impostazioni di collaborazione esterna
 
 Prendere nota delle impostazioni nella sezione **vincoli di collaborazione** . Verificare che i domini degli utenti con cui si desidera collaborare non siano bloccati.
 
-Se si lavora con clienti provenienti da più organizzazioni, è possibile che si desideri limitare la possibilità di accedere ai dati della directory. Ciò impedirà loro di vedere chi altro è un ospite nella directory. Per eseguire questa operazione, in **restrizioni di accesso degli utenti Guest**, selezionare **Guest gli utenti hanno accesso limitato alle proprietà e l'appartenenza delle impostazioni degli oggetti directory** o **l'accesso degli utenti Guest è limitato alle proprietà e alle appartenenze dei propri oggetti directory**.
+Se si lavora con clienti provenienti da più organizzazioni, è possibile che si desideri limitare la possibilità di accedere ai dati della directory. Ciò impedirà loro di vedere chi altro è un ospite nella directory. Per eseguire questa operazione, in **restrizioni di accesso degli utenti Guest** , selezionare **Guest gli utenti hanno accesso limitato alle proprietà e l'appartenenza delle impostazioni degli oggetti directory** o **l'accesso degli utenti Guest è limitato alle proprietà e alle appartenenze dei propri oggetti directory**.
 
 ## <a name="microsoft-365-groups-guest-settings"></a>Microsoft 365 groups Guest Settings
 
@@ -83,8 +84,8 @@ Se si desidera consentire la condivisione di file e cartelle non autenticata, sc
 
 Per impostare le impostazioni di condivisione a livello di organizzazione di SharePoint
 
-1. Nell'interfaccia di amministrazione di Microsoft 365, nel riquadro di spostamento a sinistra, in interfaccia di **Amministrazione**, fare clic su **SharePoint**.
-2. Nell'interfaccia di amministrazione di SharePoint, nel riquadro di spostamento a sinistra, in **criteri**fare clic su **condivisione**.
+1. Nell'interfaccia di amministrazione di Microsoft 365, nel riquadro di spostamento a sinistra, in interfaccia di **Amministrazione** , fare clic su **SharePoint**.
+2. Nell'interfaccia di amministrazione di SharePoint, nel riquadro di spostamento a sinistra, in **criteri** fare clic su **condivisione**.
 3. Assicurarsi che la condivisione esterna per SharePoint sia impostata su **tutti gli utenti** o **gli ospiti nuovi e esistenti**.
 4. Se si apportano modifiche, fare clic su **Salva**.
 
@@ -97,7 +98,7 @@ Per creare un sito
 2. Fare clic su **Crea**.
 3. Fare clic su **sito del team**.
 4. Digitare il nome di un sito e immettere un nome per il proprietario del gruppo (proprietario del sito).
-5. In **Impostazioni avanzate**scegliere se si desidera che il sito sia pubblico o privato.
+5. In **Impostazioni avanzate** scegliere se si desidera che il sito sia pubblico o privato.
 6. Fare clic su **Avanti**.
 7. Fare clic su **Fine**.
 
@@ -105,9 +106,9 @@ Gli utenti verranno invitati in un secondo momento. Successivamente, è importan
 
 ## <a name="sharepoint-site-level-sharing-settings"></a>Impostazioni di condivisione a livello di sito di SharePoint
 
-Controllare le impostazioni di condivisione a livello di sito per assicurarsi che consentano il tipo di accesso desiderato per il sito. Ad esempio, se si impostano le impostazioni a livello di organizzazione per tutti gli **utenti**, ma si desidera che tutti gli ospiti eseguano l'autenticazione per questo sito, assicurarsi che le impostazioni di condivisione a livello di sito siano impostate su **ospiti nuovi e esistenti**.
+Controllare le impostazioni di condivisione a livello di sito per assicurarsi che consentano il tipo di accesso desiderato per il sito. Ad esempio, se si impostano le impostazioni a livello di organizzazione per tutti gli **utenti** , ma si desidera che tutti gli ospiti eseguano l'autenticazione per questo sito, assicurarsi che le impostazioni di condivisione a livello di sito siano impostate su **ospiti nuovi e esistenti**.
 
-Si noti che il sito non può essere condiviso con persone non autenticate (impostazione di**tutti** gli utenti), ma è possibile eseguire singoli file e cartelle.
+Si noti che il sito non può essere condiviso con persone non autenticate (impostazione di **tutti** gli utenti), ma è possibile eseguire singoli file e cartelle.
 
 ![Screenshot delle impostazioni di condivisione esterna dei siti di SharePoint](../media/sharepoint-site-external-sharing-settings.png)
 
@@ -131,7 +132,7 @@ Per invitare gli utenti interni a un gruppo
 Gli utenti guest non possono essere aggiunti dal sito. È necessario aggiungerli utilizzando Outlook sul Web. Pertanto, come prerequisito per aggiungere e invitare gli utenti a un gruppo, fare clic sull'URL del sito nella colonna **URL**  per passare alla pagina specifica del sito. Da questa pagina, fare clic sull'icona di **avvio delle app** e selezionare **Outlook**. Questa è la schermata dalla quale è possibile invitare gli utenti a un gruppo, per la procedura descritta di seguito.
 
 Per invitare gli ospiti a un gruppo
-1. In **gruppi**fare clic sul gruppo a cui si desidera invitare gli utenti.
+1. In **gruppi** fare clic sul gruppo a cui si desidera invitare gli utenti.
 2. Aprire la scheda contatto di gruppo, fare clic su collegamenti **membri** in alto a destra, ovvero il collegamento che indica il numero di membri.
 3. fare clic su **Aggiungi membri**.
 4. Digitare gli indirizzi di posta elettronica degli utenti che si desidera invitare e quindi fare clic su **Aggiungi**.

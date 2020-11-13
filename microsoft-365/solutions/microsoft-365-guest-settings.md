@@ -11,17 +11,18 @@ ms.collection:
 - M365-collaboration
 - m365solution-3tiersprotection
 - m365solution-securecollab
+- m365initiative-externalcollab
 f1.keywords: NOCSH
 ms.custom:
 - seo-marvel-apr2020
 localization_priority: Priority
 description: Informazioni sulle impostazioni di condivisione guest disponibili in Microsoft 365 che possono influire sulla condivisione con persone esterne all'organizzazione.
-ms.openlocfilehash: 204f13cb9546d4604f8789d54ce3164788b64a95
-ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
+ms.openlocfilehash: 184962b1de8d1dccf86541dba302ca9de26989c2
+ms.sourcegitcommit: 8a726ed7ec19a8728c079780fa4d343a5f759fbb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46528207"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "49030078"
 ---
 # <a name="microsoft-365-guest-sharing-settings-reference"></a>Riferimento alle impostazioni di condivisione guest di Microsoft 365
 
@@ -45,10 +46,10 @@ Azure Active Directory è il servizio directory utilizzato da Microsoft 365. Le 
 |**Impostazione**|**Predefinita**|**Descrizione**|
 |:-----|:-----|:-----|
 |Le autorizzazioni degli utenti guest sono limitate|Sì|Questa impostazione interessa le attività della directory che un utente guest può eseguire.|
-|Gli amministratori e gli utenti nel ruolo Mittente dell'invito guest possono inviare inviti|Sì|Se l'impostazione è su **Sì**, gli amministratori possono invitare utenti guest tramite Azure AD e tramite le esperienze di condivisione di Microsoft 365, come Teams e SharePoint; se l'impostazione è su **No**, non possono farlo.|
-|I membri possono invitare|Sì|Se l'impostazione è su **Sì**, i membri di Azure AD possono invitare utenti guest tramite Azure AD; se l'impostazione è su **No**, non possono farlo. Se l'impostazione è su **Sì**, i membri dei gruppi di Microsoft 365 possono invitare guest con l'approvazione dei proprietari; se l'impostazione è su **No**, i membri dei gruppi di Microsoft 365 possono invitare guest con l'approvazione dei proprietari ma i proprietari devono essere amministratori globali per concedere l'approvazione. <br><br>Tenere presente che **I membri possono invitare** si riferisce ai membri di Azure AD (anziché agli utenti guest) e non ai membri di siti o gruppi in Microsoft 365. <br><br>È identica all'impostazione **Consenti agli utenti di aggiungere nuovi utenti guest all'organizzazione** in Sicurezza e protezione di Microsoft 365.|
-|Gli utenti guest possono invitare|Sì|Se l'impostazione è su **Sì**, gli utenti guest nella directory possono invitare altri utenti guest a collaborare su risorse di Azure AD e su file e cartelle in SharePoint e OneDrive; se l'impostazione è su **No**, non possono farlo. <br><br>Tenere presente che **Consentire agli utenti esterni di trovare gli account utente nella directory digitando le corrispondenze esatte degli indirizzi di posta elettronica** deve essere attivata nell'interfaccia di amministrazione di SharePoint affinché gli utenti guest possano condividere file e cartelle con altri utenti guest.|
-|Abilita passcode monouso tramite posta elettronica per gli utenti guest (anteprima)|No|Se l'impostazione è su **Sì**, gli utenti guest senza un account del servizio gestito o un account aziendale o dell'istituto di istruzione possono [eseguire l'autenticazione con Azure AD utilizzando un passcode monouso](https://docs.microsoft.com/azure/active-directory/b2b/one-time-passcode); se l'impostazione è su **No**, gli utenti dovranno creare un account Microsoft per eseguire l'autenticazione. Questa impostazione deve essere su **Sì** affinché [Integrazione di SharePoint e OneDrive con Azure AD B2B (anteprima)](https://docs.microsoft.com/sharepoint/sharepoint-azureb2b-integration-preview) funzioni.|
+|Gli amministratori e gli utenti nel ruolo Mittente dell'invito guest possono inviare inviti|Sì|Se l'impostazione è su **Sì** , gli amministratori possono invitare utenti guest tramite Azure AD e tramite le esperienze di condivisione di Microsoft 365, come Teams e SharePoint; se l'impostazione è su **No** , non possono farlo.|
+|I membri possono invitare|Sì|Se l'impostazione è su **Sì** , i membri di Azure AD possono invitare utenti guest tramite Azure AD; se l'impostazione è su **No** , non possono farlo. Se l'impostazione è su **Sì** , i membri dei gruppi di Microsoft 365 possono invitare guest con l'approvazione dei proprietari; se l'impostazione è su **No** , i membri dei gruppi di Microsoft 365 possono invitare guest con l'approvazione dei proprietari ma i proprietari devono essere amministratori globali per concedere l'approvazione. <br><br>Tenere presente che **I membri possono invitare** si riferisce ai membri di Azure AD (anziché agli utenti guest) e non ai membri di siti o gruppi in Microsoft 365. <br><br>È identica all'impostazione **Consenti agli utenti di aggiungere nuovi utenti guest all'organizzazione** in Sicurezza e protezione di Microsoft 365.|
+|Gli utenti guest possono invitare|Sì|Se l'impostazione è su **Sì** , gli utenti guest nella directory possono invitare altri utenti guest a collaborare su risorse di Azure AD e su file e cartelle in SharePoint e OneDrive; se l'impostazione è su **No** , non possono farlo. <br><br>Tenere presente che **Consentire agli utenti esterni di trovare gli account utente nella directory digitando le corrispondenze esatte degli indirizzi di posta elettronica** deve essere attivata nell'interfaccia di amministrazione di SharePoint affinché gli utenti guest possano condividere file e cartelle con altri utenti guest.|
+|Abilita passcode monouso tramite posta elettronica per gli utenti guest (anteprima)|No|Se l'impostazione è su **Sì** , gli utenti guest senza un account del servizio gestito o un account aziendale o dell'istituto di istruzione possono [eseguire l'autenticazione con Azure AD utilizzando un passcode monouso](https://docs.microsoft.com/azure/active-directory/b2b/one-time-passcode); se l'impostazione è su **No** , gli utenti dovranno creare un account Microsoft per eseguire l'autenticazione. Questa impostazione deve essere su **Sì** affinché [Integrazione di SharePoint e OneDrive con Azure AD B2B (anteprima)](https://docs.microsoft.com/sharepoint/sharepoint-azureb2b-integration-preview) funzioni.|
 |Restrizioni di collaborazione|Consenti l'invio di inviti a qualsiasi dominio|Questa impostazione consente di specificare un elenco di domini autorizzati o bloccati per la condivisione. Se si specificano domini autorizzati, gli inviti di condivisione possono essere inviati solo a tali domini. Se si specificano domini non autorizzati, gli inviti di condivisione non possono essere inviati a tali domini.<br><br> Questa impostazione interessa le esperienze di condivisione di Microsoft 365 come Teams e SharePoint. È possibile autorizzare o bloccare i domini a un livello più granulare utilizzando i filtri per i domini in SharePoint o Teams.|
 
 Questa impostazione influisce sul modo in cui gli utenti sono invitati nella directory. Non influisce sulla condivisione con gli utenti guest già presenti nella directory.
@@ -67,7 +68,7 @@ L'interfaccia di amministrazione di Microsoft 365 presenta delle impostazioni a 
 
 |**Impostazione**|**Predefinita**|**Descrizione**|
 |:-----|:-----|:-----|
-|Consenti agli utenti di aggiungere nuovi utenti guest all'organizzazione|Attivato|Se l'impostazione è su **Sì**, i membri di Azure AD possono invitare utenti guest tramite Azure AD; se l'impostazione è su **No**, non possono farlo. Se l'impostazione è su **Sì**, i membri dei gruppi di Microsoft 365 possono invitare guest con l'approvazione dei proprietari; se l'impostazione è su **No**, i membri dei gruppi di Microsoft 365 possono invitare guest con l'approvazione dei proprietari ma i proprietari devono essere amministratori globali per concedere l'approvazione. <br><br>Tenere presente che **I membri possono invitare** si riferisce ai membri di Azure AD (anziché agli utenti guest) e non ai membri di siti o gruppi in Microsoft 365. <br><br>È identica all'impostazione **I membri possono invitare** nelle impostazioni delle relazioni aziendali di Azure Active Directory.|
+|Consenti agli utenti di aggiungere nuovi utenti guest all'organizzazione|Attivato|Se l'impostazione è su **Sì** , i membri di Azure AD possono invitare utenti guest tramite Azure AD; se l'impostazione è su **No** , non possono farlo. Se l'impostazione è su **Sì** , i membri dei gruppi di Microsoft 365 possono invitare guest con l'approvazione dei proprietari; se l'impostazione è su **No** , i membri dei gruppi di Microsoft 365 possono invitare guest con l'approvazione dei proprietari ma i proprietari devono essere amministratori globali per concedere l'approvazione. <br><br>Tenere presente che **I membri possono invitare** si riferisce ai membri di Azure AD (anziché agli utenti guest) e non ai membri di siti o gruppi in Microsoft 365. <br><br>È identica all'impostazione **I membri possono invitare** nelle impostazioni delle relazioni aziendali di Azure Active Directory.|
 
 ### <a name="microsoft-365-groups"></a>Gruppi di Microsoft 365
 
@@ -77,14 +78,14 @@ L'interfaccia di amministrazione di Microsoft 365 presenta delle impostazioni a 
 
 |**Impostazione**|**Predefinita**|**Descrizione**|
 |:-----|:-----|:-----|
-|Consenti ai membri del gruppo esterni all'organizzazione di accedere al contenuto del gruppo|Attivato|Se l'impostazione è su **Attivato**, gli utenti guest possono accedere al contenuto del gruppo; se l'impostazione è su **Disattivato**, non possono farlo. Questa impostazione deve essere su **Attivato** per qualsiasi scenario in cui gli utenti guest interagiscono con Teams o Gruppi di Microsoft 365.|
-|Consenti ai proprietari del gruppo di aggiungere persone esterne all'organizzazione ai gruppi|Attivato|Se è su **Attivato**, i proprietari di Teams o Gruppi di Microsoft 365 possono invitare nuovi guest al gruppo. Se è su **Disattivato**, i proprietari possono invitare solo utenti guest già presenti nella directory.|
+|Consenti ai membri del gruppo esterni all'organizzazione di accedere al contenuto del gruppo|Attivato|Se l'impostazione è su **Attivato** , gli utenti guest possono accedere al contenuto del gruppo; se l'impostazione è su **Disattivato** , non possono farlo. Questa impostazione deve essere su **Attivato** per qualsiasi scenario in cui gli utenti guest interagiscono con Teams o Gruppi di Microsoft 365.|
+|Consenti ai proprietari del gruppo di aggiungere persone esterne all'organizzazione ai gruppi|Attivato|Se è su **Attivato** , i proprietari di Teams o Gruppi di Microsoft 365 possono invitare nuovi guest al gruppo. Se è su **Disattivato** , i proprietari possono invitare solo utenti guest già presenti nella directory.|
 
 Queste impostazioni sono a livello di organizzazione. Vedere [Creare impostazioni per un gruppo specifico](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-settings-cmdlets#create-settings-for-a-specific-group) per informazioni sulle modifiche di queste impostazioni a livello di gruppo con PowerShell.
 
 ## <a name="teams"></a>Teams
 
-L'opzione di accesso guest principale di Teams, **Consenti accesso ospite in Teams**, deve essere **attivata** affinché le altre impostazioni guest siano disponibili.
+L'opzione di accesso guest principale di Teams, **Consenti accesso ospite in Teams** , deve essere **attivata** affinché le altre impostazioni guest siano disponibili.
 
 **Ruolo di amministratore:** Amministratore del servizio Teams
 
@@ -106,7 +107,7 @@ L'opzione di accesso guest principale di Teams, **Consenti accesso ospite in Tea
 
 |**Impostazione**|**Predefinita**|**Descrizione**|
 |:-----|:-----|:-----|
-|Effettua chiamate private|Attivato|Se è su **Attivato**, gli utenti guest possono effettuare chiamate peer-to-peer in Teams; se è su **Disattivato**, non possono farlo.|
+|Effettua chiamate private|Attivato|Se è su **Attivato** , gli utenti guest possono effettuare chiamate peer-to-peer in Teams; se è su **Disattivato** , non possono farlo.|
 
 ### <a name="guest-meeting"></a>Riunioni guest
 
@@ -116,9 +117,9 @@ L'opzione di accesso guest principale di Teams, **Consenti accesso ospite in Tea
 
 |**Impostazione**|**Predefinita**|**Descrizione**|
 |:-----|:-----|:-----|
-|Consenti video IP|Attivato|Se è su **Attivato**, gli utenti guest possono utilizzare i video nelle chiamate e nelle riunioni; se è su **Disattivato**, non possono farlo.|
-|Modalità di condivisione dello schermo|Schermo intero|Se **disabilitato**, gli utenti guest non possono condividere gli schermi in Teams. Se impostato su **Applicazione singola**, gli utenti guest possono condividere solo una singola applicazione sullo schermo. Se impostato su **Schermo intero**, i guest possono scegliere di condividere un'applicazione o lo schermo interno.|
-|Consenti Riunione immediata|Attivato|Se è su **Attivato**, gli utenti guest possono utilizzare la funzionalità Riunione immediata in Teams; se è su **Disattivato**, non possono farlo.|
+|Consenti video IP|Attivato|Se è su **Attivato** , gli utenti guest possono utilizzare i video nelle chiamate e nelle riunioni; se è su **Disattivato** , non possono farlo.|
+|Modalità di condivisione dello schermo|Schermo intero|Se **disabilitato** , gli utenti guest non possono condividere gli schermi in Teams. Se impostato su **Applicazione singola** , gli utenti guest possono condividere solo una singola applicazione sullo schermo. Se impostato su **Schermo intero** , i guest possono scegliere di condividere un'applicazione o lo schermo interno.|
+|Consenti Riunione immediata|Attivato|Se è su **Attivato** , gli utenti guest possono utilizzare la funzionalità Riunione immediata in Teams; se è su **Disattivato** , non possono farlo.|
 
 ### <a name="guest-messaging"></a>Messaggistica guest
 
@@ -128,14 +129,14 @@ L'opzione di accesso guest principale di Teams, **Consenti accesso ospite in Tea
 
 |**Impostazione**|**Predefinita**|**Descrizione**|
 |:-----|:-----|:-----|
-|Modifica i messaggi inviati|Attivato|Se è su **Attivato**, gli utenti guest possono modificare i messaggi inviati in precedenza; se è su **Disattivato**, non possono farlo.|
-|Elimina i messaggi inviati|Attivato|Se è su **Attivato**, gli utenti guest possono eliminare i messaggi inviati in precedenza; se è su **Disattivato**, non possono farlo.|
-|Chat|Attivato|Se è su **Attivato**, gli utenti guest possono utilizzare la chat in Teams; se è su **Disattivato**, non possono farlo.|
-|Usa Giphy nelle conversazioni|Attivato|Se è su **Attivato**, gli utenti guest possono usare Giphy nelle conversazioni; se è su **Disattivato**, non possono farlo.|
-|Classificazione contenuto Giphy|Moderato|Se impostato su **Consenti tutti i contenuti**, gli utenti guest possono inserire tutti i contenuti Giphy nelle chat, indipendentemente dalla loro classificazione. Se impostato su **Moderato**, i guest possono inserire contenuti Giphy nelle chat, ma i contenuti per adulti saranno moderatamente limitati. Se impostato su **Rigido**, gli utenti guest possono inserire contenuti Giphy nelle chat, ma i contenuti per adulti saranno vietati.|
-|Usa meme nelle conversazioni|Attivato|Se è su **Attivato**, gli utenti guest possono usare meme nelle conversazioni; se è su **Disattivato**, non possono farlo.|
-|Usa sticker nelle conversazioni|Attivato|Se è su **Attivato**, gli utenti guest possono usare sticker nelle conversazioni; se è su **Disattivato**, non possono farlo.|
-|Consenti lo strumento di lettura immersiva per la visualizzazione dei messaggi|Attivato|Se è su **Attivato**, gli utenti guest possono visualizzare i messaggi con lo strumento di lettura immersiva; se è su **Disattivato**, non possono farlo.|
+|Modifica i messaggi inviati|Attivato|Se è su **Attivato** , gli utenti guest possono modificare i messaggi inviati in precedenza; se è su **Disattivato** , non possono farlo.|
+|Elimina i messaggi inviati|Attivato|Se è su **Attivato** , gli utenti guest possono eliminare i messaggi inviati in precedenza; se è su **Disattivato** , non possono farlo.|
+|Chat|Attivato|Se è su **Attivato** , gli utenti guest possono utilizzare la chat in Teams; se è su **Disattivato** , non possono farlo.|
+|Usa Giphy nelle conversazioni|Attivato|Se è su **Attivato** , gli utenti guest possono usare Giphy nelle conversazioni; se è su **Disattivato** , non possono farlo.|
+|Classificazione contenuto Giphy|Moderato|Se impostato su **Consenti tutti i contenuti** , gli utenti guest possono inserire tutti i contenuti Giphy nelle chat, indipendentemente dalla loro classificazione. Se impostato su **Moderato** , i guest possono inserire contenuti Giphy nelle chat, ma i contenuti per adulti saranno moderatamente limitati. Se impostato su **Rigido** , gli utenti guest possono inserire contenuti Giphy nelle chat, ma i contenuti per adulti saranno vietati.|
+|Usa meme nelle conversazioni|Attivato|Se è su **Attivato** , gli utenti guest possono usare meme nelle conversazioni; se è su **Disattivato** , non possono farlo.|
+|Usa sticker nelle conversazioni|Attivato|Se è su **Attivato** , gli utenti guest possono usare sticker nelle conversazioni; se è su **Disattivato** , non possono farlo.|
+|Consenti lo strumento di lettura immersiva per la visualizzazione dei messaggi|Attivato|Se è su **Attivato** , gli utenti guest possono visualizzare i messaggi con lo strumento di lettura immersiva; se è su **Disattivato** , non possono farlo.|
 
 ## <a name="sharepoint-and-onedrive-organization-level"></a>SharePoint e OneDrive (livello organizzazione)
 
@@ -166,7 +167,7 @@ Poiché OneDrive è una gerarchia di siti all'interno di SharePoint, le impostaz
 |:-----|:-----|:-----|
 |Limita condivisione esterna in base al dominio|Disattivato|Questa impostazione consente di specificare un elenco di domini autorizzati o bloccati per la condivisione. Se si specificano domini autorizzati, gli inviti di condivisione possono essere inviati solo a tali domini. Se si specificano domini non autorizzati, gli inviti di condivisione non possono essere inviati a tali domini.<br><br> Questa impostazione influisce su tutti i siti di SharePoint e OneDrive nell'organizzazione.|
 |Gli utenti guest devono accedere con lo stesso account a cui vengono inviati gli inviti di condivisione|Disattivato|Impedisce agli utenti guest di utilizzare gli inviti di condivisione dei siti con un indirizzo di posta elettronica diverso da quello al quale è stato inviato l'invito.<br><br>[L'integrazione di SharePoint e OneDrive con Azure AD B2B (anteprima)](https://docs.microsoft.com/sharepoint/sharepoint-azureb2b-integration-preview) non usa questa impostazione perché tutti gli utenti guest vengono aggiunti alla directory in base all'indirizzo di posta elettronica al quale è stato inviato l'invito. Non è possibile utilizzare indirizzi di posta elettronica alternativi per accedere al sito.|
-|Consenti agli utenti guest di condividere elementi che non possiedono|Attivato|Se è su **Attivato**, gli utenti guest possono condividere elementi che non possiedono con altri utenti o utenti guest; se è su **Disattivato**, non possono farlo. Gli utenti guest possono sempre condividere elementi di cui hanno il controllo completo.|
+|Consenti agli utenti guest di condividere elementi che non possiedono|Attivato|Se è su **Attivato** , gli utenti guest possono condividere elementi che non possiedono con altri utenti o utenti guest; se è su **Disattivato** , non possono farlo. Gli utenti guest possono sempre condividere elementi di cui hanno il controllo completo.|
 
 ### <a name="sharepoint-and-onedrive-file-and-folder-link-settings"></a>Impostazioni dei collegamenti a file e cartelle di SharePoint e OneDrive
 
@@ -178,10 +179,10 @@ Quando si condividono file e cartelle in SharePoint e OneDrive, ai destinatari d
 
 |**Impostazione**|**Predefinita**|**Descrizione**|
 |:-----|:-----|:-----|
-|Collegamenti di file e cartelle|Chiunque abbia il collegamento|Specifica quale collegamento di condivisione viene visualizzato per impostazione predefinita quando un utente condivide un file o una cartella. Se lo desiderano, gli utenti possono modificare l'opzione prima di condividere. Se l'impostazione predefinita è su **Chiunque abbia il collegamento** e *Chiunque*, la condivisione non è consentita per un determinato sito, **Solo persone nell'organizzazione** sarà visualizzata come impostazione predefinita per tale sito.|
+|Collegamenti di file e cartelle|Chiunque abbia il collegamento|Specifica quale collegamento di condivisione viene visualizzato per impostazione predefinita quando un utente condivide un file o una cartella. Se lo desiderano, gli utenti possono modificare l'opzione prima di condividere. Se l'impostazione predefinita è su **Chiunque abbia il collegamento** e *Chiunque* , la condivisione non è consentita per un determinato sito, **Solo persone nell'organizzazione** sarà visualizzata come impostazione predefinita per tale sito.|
 |Questi collegamenti devono scadere entro questo numero di giorni|Disattivato (nessuna scadenza)|Specifica il numero di giorni dopo che un collegamento *Chiunque* creato scade. I collegamenti scaduti non possono essere rinnovati. Creare un nuovo collegamento se è necessario continuare a condividere dopo la scadenza.|
-|Autorizzazioni per i file|Visualizzazione e modifica|Specifica i livelli di autorizzazione per i file disponibili per gli utenti quando si crea un collegamento *Chiunque*. Se si seleziona **Visualizzazione**, gli utenti possono creare collegamenti ai file *Chiunque* solo con autorizzazioni di visualizzazione. Se si seleziona **Visualizzazione e modifica**, gli utenti possono scegliere tra le autorizzazioni di visualizzazione e le autorizzazioni di visualizzazione e modifica quando creano il collegamento.|
-|Autorizzazioni per le cartelle|Visualizzazione, modifica e caricamento|Specifica i livelli di autorizzazione per le cartelle disponibili per gli utenti quando si crea un collegamento *Chiunque*. Se si seleziona **Visualizzazione**, gli utenti possono creare collegamenti alle cartelle *Chiunque* solo con autorizzazioni di visualizzazione. Se si seleziona **Visualizzazione, modifica e caricamento**, gli utenti possono scegliere tra le autorizzazioni di visualizzazione e le autorizzazioni di visualizzazione, modifica e caricamento quando creano il collegamento.|
+|Autorizzazioni per i file|Visualizzazione e modifica|Specifica i livelli di autorizzazione per i file disponibili per gli utenti quando si crea un collegamento *Chiunque*. Se si seleziona **Visualizzazione** , gli utenti possono creare collegamenti ai file *Chiunque* solo con autorizzazioni di visualizzazione. Se si seleziona **Visualizzazione e modifica** , gli utenti possono scegliere tra le autorizzazioni di visualizzazione e le autorizzazioni di visualizzazione e modifica quando creano il collegamento.|
+|Autorizzazioni per le cartelle|Visualizzazione, modifica e caricamento|Specifica i livelli di autorizzazione per le cartelle disponibili per gli utenti quando si crea un collegamento *Chiunque*. Se si seleziona **Visualizzazione** , gli utenti possono creare collegamenti alle cartelle *Chiunque* solo con autorizzazioni di visualizzazione. Se si seleziona **Visualizzazione, modifica e caricamento** , gli utenti possono scegliere tra le autorizzazioni di visualizzazione e le autorizzazioni di visualizzazione, modifica e caricamento quando creano il collegamento.|
 
 ### <a name="sharepoint-and-onedrive-security-group-settings"></a>Impostazioni dei gruppi di sicurezza in SharePoint e OneDrive
 
@@ -193,20 +194,20 @@ Se si desidera limitare chi può condividere contenuti con utenti guest in Share
 
 |**Impostazione**|**Predefinita**|**Descrizione**|
 |:-----|:-----|:-----|
-|Consenti solo agli utenti dei gruppi di sicurezza selezionati di condividere con utenti esterni autenticati|Disattivato|Se è su **Attivato**, solo le persone nei gruppi di sicurezza specificati possono condividere con gli utenti esterni. Sono disponibili solo i collegamenti *Persone specifiche*. La condivisione *Chiunque* è disabilitata a meno che anche **Consenti la condivisione con utenti esterni autenticati e usando collegamenti anonimi ai soli utenti dei gruppi di sicurezza selezionati** sia su **Attivato**|
-|Consenti la condivisione con utenti esterni autenticati e usando collegamenti anonimi ai soli utenti dei gruppi di sicurezza selezionati|Disattivato|Se è su **Attivato**, solo le persone nei gruppi di sicurezza specificati possono condividere con utenti guest. Sono disponibili i collegamenti *Chiunque* e *Persone specifiche*.|
+|Consenti solo agli utenti dei gruppi di sicurezza selezionati di condividere con utenti esterni autenticati|Disattivato|Se è su **Attivato** , solo le persone nei gruppi di sicurezza specificati possono condividere con gli utenti esterni. Sono disponibili solo i collegamenti *Persone specifiche*. La condivisione *Chiunque* è disabilitata a meno che anche **Consenti la condivisione con utenti esterni autenticati e usando collegamenti anonimi ai soli utenti dei gruppi di sicurezza selezionati** sia su **Attivato**|
+|Consenti la condivisione con utenti esterni autenticati e usando collegamenti anonimi ai soli utenti dei gruppi di sicurezza selezionati|Disattivato|Se è su **Attivato** , solo le persone nei gruppi di sicurezza specificati possono condividere con utenti guest. Sono disponibili i collegamenti *Chiunque* e *Persone specifiche*.|
 
-Queste due impostazioni possono essere usate contemporaneamente. Se un utente si trova nel gruppo di sicurezza specificato per entrambe le impostazioni, il livello di autorizzazione più elevato prevale (*Chiunque* più *Utente specifico*). I gruppi di sicurezza annidati sono supportati.
+Queste due impostazioni possono essere usate contemporaneamente. Se un utente si trova nel gruppo di sicurezza specificato per entrambe le impostazioni, il livello di autorizzazione più elevato prevale ( *Chiunque* più *Utente specifico* ). I gruppi di sicurezza annidati sono supportati.
 
 ## <a name="sharepoint-site-level"></a>SharePoint (livello sito)
 
 **Ruolo di amministratore:** Amministratore di SharePoint
 
-Poiché queste impostazioni sono soggette alle impostazioni a livello di organizzazione per SharePoint, l'impostazione di condivisione effettiva per il sito potrebbe cambiare se l'impostazione a livello di organizzazione cambia. Se si sceglie un'impostazione qui e il livello di organizzazione viene impostato successivamente su un valore più restrittivo, a questo sito sarà applicato tale livello più restrittivo. Ad esempio, se si sceglie **Chiunque** e l'impostazione a livello di organizzazione viene in seguito impostata su **Utenti guest nuovi ed esistenti**, il sito consentirà solo utenti guest nuovi ed esistenti. Se l'impostazione a livello di organizzazione viene quindi reimpostata su **Chiunque**, il sito consentirà di nuovo i collegamenti *Chiunque*.
+Poiché queste impostazioni sono soggette alle impostazioni a livello di organizzazione per SharePoint, l'impostazione di condivisione effettiva per il sito potrebbe cambiare se l'impostazione a livello di organizzazione cambia. Se si sceglie un'impostazione qui e il livello di organizzazione viene impostato successivamente su un valore più restrittivo, a questo sito sarà applicato tale livello più restrittivo. Ad esempio, se si sceglie **Chiunque** e l'impostazione a livello di organizzazione viene in seguito impostata su **Utenti guest nuovi ed esistenti** , il sito consentirà solo utenti guest nuovi ed esistenti. Se l'impostazione a livello di organizzazione viene quindi reimpostata su **Chiunque** , il sito consentirà di nuovo i collegamenti *Chiunque*.
 
 ### <a name="site-sharing"></a>Condivisione di siti
 
-È possibile impostare le autorizzazioni di condivisione guest per ogni sito di SharePoint. Questa impostazione è valida sia per la condivisione di siti che per la condivisione di file e cartelle. La condivisione *Chiunque* non è disponibile per la condivisione di siti. Se si sceglie **Chiunque**, gli utenti possono condividere file e cartelle utilizzando i collegamenti *Chiunque* e il sito stesso con utenti guest nuovi ed esistenti.
+È possibile impostare le autorizzazioni di condivisione guest per ogni sito di SharePoint. Questa impostazione è valida sia per la condivisione di siti che per la condivisione di file e cartelle. La condivisione *Chiunque* non è disponibile per la condivisione di siti. Se si sceglie **Chiunque** , gli utenti possono condividere file e cartelle utilizzando i collegamenti *Chiunque* e il sito stesso con utenti guest nuovi ed esistenti.
 
 **Navigazione:** Interfaccia di amministrazione di SharePoint > Siti attivi > selezionare il sito > scheda Criteri > Modifica le impostazioni di condivisione esterna
 
@@ -239,7 +240,7 @@ Nella tabella seguente viene mostrata l'impostazione di condivisione predefinita
 |:-----|:-----|
 |Classico|**Solo gli utenti dell'organizzazione**|
 |OneDrive|**Chiunque**|
-|Siti collegati ai gruppi (tra cui Teams)|**Guest nuovi ed esistenti** se l'impostazione di Gruppi di Microsoft 365 **Consenti ai proprietari di gruppi di aggiungere persone esterne all'organizzazione ai gruppi** è su **Attivato**; altrimenti, **Solo utenti guest esistenti**|
+|Siti collegati ai gruppi (tra cui Teams)|**Guest nuovi ed esistenti** se l'impostazione di Gruppi di Microsoft 365 **Consenti ai proprietari di gruppi di aggiungere persone esterne all'organizzazione ai gruppi** è su **Attivato** ; altrimenti, **Solo utenti guest esistenti**|
 |Comunicazione|**Solo gli utenti dell'organizzazione**|
 |Siti moderni senza gruppo (#STS3 TeamSite)|**Solo gli utenti dell'organizzazione**|
 

@@ -11,6 +11,7 @@ ms.collection:
 - M365-collaboration
 - m365solution-3tiersprotection
 - m365solution-securecollab
+- m365initiative-externalcollab
 search.appverid:
 - SPO160
 - MET150
@@ -18,12 +19,12 @@ f1.keywords: NOCSH
 ms.custom: ''
 localization_priority: Priority
 description: Altre informazioni sulle opzioni per limitare o disabilitare la condivisione in Microsoft 365.
-ms.openlocfilehash: 7ed9cc499e16de835c6ba96eb19bcc28a144b68b
-ms.sourcegitcommit: cdf2b8dad7db9e16afd339abaaa5397faf11807c
+ms.openlocfilehash: 504d2b5dd72aead266697d273395e371ad6f5846
+ms.sourcegitcommit: 8a726ed7ec19a8728c079780fa4d343a5f759fbb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48651419"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "49030042"
 ---
 # <a name="limit-sharing-in-microsoft-365"></a>Limitare la condivisione in Microsoft 365
 
@@ -37,7 +38,7 @@ I metodi di condivisione dei file sono elencati nella tabella seguente. Per info
 |[Sito di SharePoint](#sharepoint-site)|Agli utenti può essere concesso l'accesso come proprietari, membri o visitatori di un sito di SharePoint e avranno quel livello di accesso ai file nel sito.|È possibile limitare le autorizzazioni per il sito in modo che solo i proprietari possano condividere il sito. Gli amministratori possono configurare un sito come di sola lettura, o bloccare del tutto l’accesso.|
 |[Condivisione con persone specifiche](#sharing-with-specific-people)|I membri del sito e le persone con autorizzazioni di modifica possono concedere autorizzazioni dirette ai file e alle cartelle o condividerli con collegamenti *Persone specifiche*.|È possibile limitare le autorizzazioni per il sito in modo che solo i proprietari possano condividere file e cartelle. In questo caso, l'accesso diretto e la condivisione di collegamenti *Persone specifiche* da parte dei membri del sito passano dal proprietario del sito per l'approvazione.|
 |[Condivisione guest di SharePoint](#sharepoint-guest-sharing)|I proprietari e i membri dei siti di SharePoint possono condividere file e cartelle con persone esterne all'organizzazione.|La condivisione guest può essere disabilitata per l'intera organizzazione o per singoli siti.|
-|[Collegamenti di condivisione *Persone nell'organizzazione*](#people-in-your-organization-sharing-links)|I proprietari e i membri dei siti di SharePoint possono condividere file usando collegamenti di tipo *Persone nell'organizzazione*, che funzioneranno per chiunque si trovi all'interno dell'organizzazione.|I collegamenti *Persone nell'organizzazione* possono essere disattivati a livello di sito.|
+|[Collegamenti di condivisione *Persone nell'organizzazione*](#people-in-your-organization-sharing-links)|I proprietari e i membri dei siti di SharePoint possono condividere file usando collegamenti di tipo *Persone nell'organizzazione* , che funzioneranno per chiunque si trovi all'interno dell'organizzazione.|I collegamenti *Persone nell'organizzazione* possono essere disattivati a livello di sito.|
 |[Condividere siti, gruppi e team](#create-sites-groups-and-teams)|Per impostazione predefinita, gli utenti possono creare nuovi siti, gruppi e team da cui possono condividere i contenuti.|Gli amministratori possono limitare chi può creare siti, gruppi e team.|
 |[Posta elettronica](#email)|Le persone che hanno accesso a un file possono inviarlo ad altri tramite posta elettronica.|Gli amministratori possono crittografare i file usando etichette di riservatezza per evitare che vengano condivisi con persone non autorizzate.|
 |[Download o copia di file](#download-or-file-copy)|Le persone che hanno accesso a un file possono scaricarlo o copiarlo e condividerlo con altri utenti esterni all'ambito di Microsoft 365.|Gli amministratori possono crittografare i file usando etichette di riservatezza per evitare che vengano condivisi con persone non autorizzate.|
@@ -108,7 +109,7 @@ Per disattivare le richieste di accesso
 Per limitare la condivisione del sito in base al dominio
 1. Nell'interfaccia di amministrazione di SharePoint, in **Siti** fare clic su **Siti attivi**.
 2. Fare clic sul sito che si vuole configurare.
-3. Nella scheda **Criteri**, in **Condivisione esterna** fare clic su **Modifica**.
+3. Nella scheda **Criteri** , in **Condivisione esterna** fare clic su **Modifica**.
 4. In **Impostazioni avanzate per la condivisione esterna** selezionare **Limita la condivisione esterna in base al dominio**.
 5. Aggiungere i domini da consentire o bloccare e quindi fare clic su **Salva**.
 6. Fare clic su **Salva**.
@@ -150,7 +151,7 @@ Per disattivare la condivisione guest di SharePoint per l'organizzazione
 Per disattivare la condivisione guest per un sito
 1. Nell'interfaccia di amministrazione di SharePoint, in **Siti** fare clic su **Siti attivi**.
 2. Fare clic sul sito che si vuole configurare.
-3. Nella scheda **Criteri**, in **Condivisione esterna** fare clic su **Modifica**.
+3. Nella scheda **Criteri** , in **Condivisione esterna** fare clic su **Modifica**.
 4. In **Condivisione esterna** scegliere **Solo persone nell'organizzazione** e quindi fare clic su **Salva**.
 
     ![Screenshot delle impostazioni di condivisione a livello di sito in SharePoint configurato come “Solo persone nell’organizzazione”](../media/sharepoint-site-external-sharing-settings-off.png)
@@ -167,7 +168,7 @@ Per disattivare i collegamenti di tipo *Chiunque* a livello di organizzazione
 Per disattivare i collegamenti di tipo *Chiunque* per un sito
 1. Nell'interfaccia di amministrazione di SharePoint, in **Siti** fare clic su **Siti attivi**.
 2. Fare clic sul sito che si vuole configurare.
-3. Nella scheda **Criteri**, in **Condivisione esterna** fare clic su **Modifica**.
+3. Nella scheda **Criteri** , in **Condivisione esterna** fare clic su **Modifica**.
 4. In **Condivisione esterna** scegliere **Utenti guest nuovi ed esistenti** e quindi fare clic su **Salva**.
 
     ![Screenshot delle impostazioni di condivisione a livello di sito in SharePoint configurato come “Impostazioni nuove ed esistenti”](../media/sharepoint-site-external-sharing-settings-new-existing-guests.png)
