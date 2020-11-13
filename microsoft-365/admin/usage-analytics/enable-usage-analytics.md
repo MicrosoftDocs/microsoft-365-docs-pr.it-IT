@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9db96e9f-a622-4d5d-b134-09dcace55b6a
 description: Informazioni su come avviare la raccolta dei dati per il tenant utilizzando l'app modello di analisi di utilizzo di Microsoft 365 in Power BI.
-ms.openlocfilehash: 347256fa7acaae18cd31f0c8c6b7eca20ad2e9dd
-ms.sourcegitcommit: 36795a6735cd3fc678c7d5db71ddc97fac3f6f8a
+ms.openlocfilehash: cda5931e81f7ea13208825afa658f1c672a2f326
+ms.sourcegitcommit: 34ebec8e2bd54ba3d4ccfd9724797665c965c17f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "48941332"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "49071456"
 ---
 # <a name="enable-microsoft-365-usage-analytics"></a>Abilitare l'analisi dell'utilizzo di Microsoft 365
 
@@ -92,7 +92,7 @@ Per avviare l'app modello, è necessario essere un **amministratore globale** , 
   
 8. Dopo aver creato un'istanza dell'app modello, il Dashboard Microsoft 365 Usage Analytics sarà disponibile in Power BI sul Web. Il caricamento iniziale del dashboard richiederà da 2 a 30 minuti.
   
-Le aggregazioni a livello di tenant saranno disponibili in tutti i report. I **dettagli a livello di utente diventeranno disponibili solo dopo il 1 ° o 15 ° giorno del mese di calendario dopo l'opt-in**. Ciò avrà un impatto su tutti i report in attività utente. Per suggerimenti su come visualizzare e utilizzare i report, vedere [esplorazione e utilizzo dei report in Microsoft 365 Usage Analytics](navigate-and-utilize-reports.md) .
+Le aggregazioni a livello di tenant saranno disponibili in tutti i rapporti dopo l'opt-in. I **dettagli a livello di utente diventeranno disponibili solo intorno al quinto del mese di calendario successivo dopo l'opt-in**. Questo influirà su tutti i report in attività utente (vedere [navigare e utilizzare i report di analisi di utilizzo di Microsoft 365](navigate-and-utilize-reports.md) per suggerimenti su come visualizzare e utilizzare questi report).
     
 ## <a name="make-the-collected-data-anonymous"></a>Rendere anonimi i dati raccolti
 

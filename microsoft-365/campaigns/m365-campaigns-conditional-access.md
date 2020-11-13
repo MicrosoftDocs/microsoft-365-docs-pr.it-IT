@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Informazioni su come richiedere il master e configurare i criteri di accesso condizionale per Microsoft 365 for business.
-ms.openlocfilehash: 917fb52eb5034c3dda28c277b9e86e04db6cac62
-ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
+ms.openlocfilehash: 5908a36f09753cd8f66169c6a67be45c748807b7
+ms.sourcegitcommit: 34ebec8e2bd54ba3d4ccfd9724797665c965c17f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46527199"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "49071502"
 ---
 # <a name="require-multi-factor-authentication-and-set-up-conditional-access-policies"></a>Richiedere l'autenticazione a più fattori e configurare i criteri di accesso condizionale
 
@@ -71,16 +71,16 @@ Per richiedere che tutti gli utenti eseguano l'accesso con una seconda forma di 
 
 ## <a name="set-up-baseline-policies"></a>Impostare i criteri di base
 
-1. Accedere a [portale di Azure](https://portal.azure.com)e quindi passare a **Azure Active Directory** \> **accesso condizionale**di Azure Active Directory.
-    
-    I criteri di base sono elencati nella pagina ed è possibile vedere che richiedono l' **AMF per gli amministratori** e la **protezione degli utenti finali** sono già abilitati dopo aver completato la procedura in [Require AMF](#require-mfa).
+1. Andare al [portale di Azure](https://portal.azure.com), quindi passare a accesso condizionale di **Azure Active Directory** \> **Conditional Access** per creare un **nuovo criterio**.
 
-    ![Pagina in cui sono elencati i criteri di base per l'accesso condizionale.](../media/casettings.png)
-2. Per ogni criterio, vedere le istruzioni specifiche seguenti:
-
-    - [Richiedi l'autenticazione a più fattori per gli amministratori](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-baseline-protect-administrators)
-    - [Richiedi l'autenticazione per gli utenti](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-baseline-protect-end-users)  
-    - [Blocca l'autenticazione legacy](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-baseline-protect-legacy-auth)
+Per ogni criterio, vedere le istruzioni specifiche seguenti: <br>
+    - [Richiedi l'autenticazione a più fattori per gli amministratori](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-baseline-protect-administrators) <br>
+    - [Richiedi l'autenticazione per gli utenti](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-baseline-protect-end-users) <br>
+    - [Bloccare l'autenticazione legacy](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-baseline-protect-legacy-auth) <br>
     - [Richiedere l'autenticazione dell'AMF per la gestione dei servizi](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-baseline-protect-azure)
+    
+> [!NOTE]
+> I criteri di anteprima non esistono più e gli utenti dovranno creare i propri criteri.
+
 
 È possibile configurare criteri aggiuntivi, ad esempio per le app client approvate. Per ulteriori informazioni, vedere la [documentazione relativa all'accesso condizionale](https://docs.microsoft.com/azure/active-directory/conditional-access/).

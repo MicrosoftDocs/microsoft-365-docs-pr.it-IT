@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
 description: Informazioni su come utilizzare i componenti aggiuntivi centralizzati per distribuire i componenti aggiuntivi agli utenti e ai gruppi nell'organizzazione.
-ms.openlocfilehash: 6339858871834637c0b8fdd1b16c17b534026de9
-ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
+ms.openlocfilehash: 5521b01e059ca8ae4a97ecb094f9aa1198263701
+ms.sourcegitcommit: 34ebec8e2bd54ba3d4ccfd9724797665c965c17f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48207887"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "49071478"
 ---
 # <a name="manage-add-ins-in-the-admin-center"></a>Gestire i componenti aggiuntivi nell'interfaccia di amministrazione
 
@@ -61,7 +61,7 @@ Se non è più in uso, è consigliabile eliminare un componente aggiuntivo. La d
 1. Nell'interfaccia di amministrazione passare alla pagina **Impostazioni**  >  **& componenti** aggiuntivi.
 
      > [!NOTE]
-    > L'interfaccia di amministrazione si sta aggiornando all'esperienza di distribuzione con le app integrate. Se non vengono visualizzati i passaggi descritti in questo articolo, accedere alla sezione distribuzione centralizzata accedendo alle **impostazioni delle**  >  **app integrate**. Nella parte superiore della pagina **Apps integrata** scegliere **componenti**aggiuntivi.
+    > L'interfaccia di amministrazione si sta aggiornando all'esperienza di distribuzione con le app integrate. Se non vengono visualizzati i passaggi descritti in questo articolo, accedere alla sezione distribuzione centralizzata accedendo alle **impostazioni delle**  >  **app integrate**. Nella parte superiore della pagina **Apps integrata** scegliere **componenti** aggiuntivi.
 
 2. Selezionare il componente aggiuntivo distribuito.
 
@@ -76,7 +76,7 @@ Dopo la distribuzione, gli amministratori possono anche gestire l'accesso degli 
 1. Nell'interfaccia di amministrazione passare alla pagina **Impostazioni**  >  **& componenti** aggiuntivi.
 
      > [!NOTE]
-    > L'interfaccia di amministrazione si sta aggiornando all'esperienza di distribuzione con le app integrate. Se non vengono visualizzati i passaggi descritti in questo articolo, accedere alla sezione distribuzione centralizzata accedendo alle **impostazioni delle**  >  **app integrate**. Nella parte superiore della pagina **Apps integrata** scegliere **componenti**aggiuntivi.
+    > L'interfaccia di amministrazione si sta aggiornando all'esperienza di distribuzione con le app integrate. Se non vengono visualizzati i passaggi descritti in questo articolo, accedere alla sezione distribuzione centralizzata accedendo alle **impostazioni delle**  >  **app integrate**. Nella parte superiore della pagina **Apps integrata** scegliere **componenti** aggiuntivi.
 
 2. Selezionare il componente aggiuntivo distribuito.
 
@@ -96,7 +96,7 @@ Come organizzazione, è possibile che si desideri impedire il download di nuovi 
 1. Nell'interfaccia di amministrazione passare a **Impostazioni** \> [Servizi &amp; componenti aggiuntivi](https://go.microsoft.com/fwlink/p/?linkid=2053743).
 
      > [!NOTE]
-    > L'interfaccia di amministrazione si sta aggiornando all'esperienza di distribuzione con le app integrate. Se non vengono visualizzati i passaggi descritti in questo articolo, accedere alla sezione distribuzione centralizzata accedendo alle **impostazioni delle**  >  **app integrate**. Nella parte superiore della pagina **Apps integrata** scegliere **componenti**aggiuntivi.
+    > L'interfaccia di amministrazione si sta aggiornando all'esperienza di distribuzione con le app integrate. Se non vengono visualizzati i passaggi descritti in questo articolo, accedere alla sezione distribuzione centralizzata accedendo alle **impostazioni delle**  >  **app integrate**. Nella parte superiore della pagina **Apps integrata** scegliere **componenti** aggiuntivi.
     
 3. Selezionare **le app e i servizi posseduti dall'utente**.
     
@@ -133,6 +133,9 @@ Questo non impedisce a un amministratore di utilizzare la distribuzione centrali
   
 Per impedire a un utente di accedere con un account Microsoft, è possibile limitare l'accesso per utilizzare solo l'account dell'organizzazione. Per ulteriori informazioni, vedere [identità, autenticazione e autorizzazione in Office 2016](https://technet.microsoft.com/library/jj683102%28v=office.16%29.aspx).  
 
+> [!NOTE]
+> Impedire agli utenti di accedere a Office Store impedirà inoltre ai [componenti aggiuntivi di Office di sideload di eseguire il testing](https://docs.microsoft.com/office/dev/add-ins/testing/create-a-network-shared-folder-catalog-for-task-pane-and-content-add-ins).
+
 ## <a name="more-about-the-end-user-experience-with-add-ins"></a>Ulteriori informazioni sull'esperienza degli utenti finali con i componenti aggiuntivi
 
 Dopo aver distribuito un componente aggiuntivo, gli utenti finali possono iniziare a utilizzarlo nelle proprie applicazioni di Office (vedere [iniziare a usare il componente aggiuntivo di Office](https://support.microsoft.com/office/82e665c4-6700-4b56-a3f3-ef5441996862)). Il componente aggiuntivo viene visualizzato in tutte le piattaforme supportate dal componente aggiuntivo.
@@ -141,11 +144,11 @@ Se il componente aggiuntivo supporta i comandi dell'interfaccia, questi vengono 
 
 ![Barra multifunzione di Office con citazioni di ricerca](../../media/553b0c0a-65e9-4746-b3b0-8c1b81715a86.png)
   
-Se il componente aggiuntivo distribuito non supporta i comandi del componente aggiuntivo o se si desidera visualizzare tutti i componenti aggiuntivi distribuiti, è possibile visualizzarli tramite i **componenti**aggiuntivi. 
+Se il componente aggiuntivo distribuito non supporta i comandi del componente aggiuntivo o se si desidera visualizzare tutti i componenti aggiuntivi distribuiti, è possibile visualizzarli tramite i **componenti** aggiuntivi. 
   
 ### <a name="in-word-2016-excel-2016-or-powerpoint-2016"></a>In Word 2016, Excel 2016 o PowerPoint 2016
 
-1. Selezionare **Inserisci \> i componenti**aggiuntivi. 
+1. Selezionare **Inserisci \> i componenti** aggiuntivi. 
     
 2. Selezionare la scheda **Gestito dall'amministratore** nella finestra Componenti aggiuntivi per Office. 
     
@@ -153,11 +156,11 @@ Se il componente aggiuntivo distribuito non supporta i comandi del componente ag
   
 ### <a name="in-outlook"></a>In Outlook
 
-1. Nella barra multifunzione **Home** selezionare **Ricevi componenti**aggiuntivi.<br/>![Pulsante Store in Outlook](../../media/getaddinsicon.png)
+1. Nella barra multifunzione **Home** selezionare **Ricevi componenti** aggiuntivi.<br/>![Pulsante Store in Outlook](../../media/getaddinsicon.png)
   
 2. Selezionare **gestito dall'amministratore** nel NAV sinistro. 
 
-## <a name="learn-more"></a>Altre informazioni
+## <a name="learn-more"></a>Ulteriori informazioni
 
 [Distribuire i componenti aggiuntivi nell'interfaccia di amministrazione](https://docs.microsoft.com/microsoft-365/admin/manage/manage-deployment-of-add-ins)
 

@@ -7,12 +7,12 @@ f1.keywords:
 - NOCSH
 ms.author: jaimeo
 ms.localizationpriority: medium
-ms.openlocfilehash: f1b1a8f03b7a11a0467826281bc2b789140dbcee
-ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
+ms.openlocfilehash: 7e40a5eb7144fef3d330e0e8fc3c711af15d4c49
+ms.sourcegitcommit: 34ebec8e2bd54ba3d4ccfd9724797665c965c17f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "44327057"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "49071444"
 ---
 # <a name="steps-for-partners-to-register-devices"></a>Procedura per i partner per la registrazione dei dispositivi
 
@@ -46,7 +46,7 @@ Dopo aver stabilito la relazione con i clienti, è possibile utilizzare il centr
 >[!NOTE]
 > Il file. CSV dovrebbe essere stato ricevuto con l'acquisto del dispositivo. Se non è stato ricevuto un file. csv, è possibile crearne uno manualmente attenendosi alla procedura descritta in [aggiunta di dispositivi a Windows Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/add-devices#collecting-the-hardware-id-from-existing-devices-using-powershell). Lo script di Windows PowerShell è diverso da quello utilizzato per il [portale di amministrazione di Microsoft Managed Desktop](https://docs.microsoft.com/microsoft-365/managed-desktop/get-started/register-devices-self?view=o365-worldwide#obtain-the-hardware-hash). I partner devono utilizzare [Get-WindowsAutoPilotInfo](https://www.powershellgallery.com/packages/Get-WindowsAutoPilotInfo) per registrare i dispositivi per i dispositivi Microsoft Managed Desktop in centro partner.
 
-Se viene visualizzato un messaggio di errore durante il tentativo di caricamento del file. csv, controllare il formato del file. È possibile utilizzare solo l'hash hardware oppure il nome OEM, il numero di serie e il modello (nell'ordine di colonna) oppure l'ID prodotto di Windows. È inoltre possibile utilizzare il file. CSV di esempio fornito dal collegamento accanto a **Aggiungi dispositivi** per creare un elenco di dispositivi. 
+Se viene visualizzato un messaggio di errore durante il tentativo di caricamento del file. csv, controllare il formato del file. Verificare che l'ordine di colonna corrisponda a quanto descritto in [use Windows Autopilot profiles on New Devices per personalizzare l'esperienza fuori campo di un cliente](https://docs.microsoft.com/partner-center/autopilot#add-devices-to-a-customers-account). È inoltre possibile utilizzare il file. CSV di esempio fornito dal collegamento accanto a **Aggiungi dispositivi** per creare un elenco di dispositivi. 
 
 Per ulteriori informazioni sull'Autopilot negli scenari dei partner, vedere [aggiungere dispositivi all'account di un cliente](https://docs.microsoft.com/partner-center/autopilot#add-devices-to-a-customers-account).
 

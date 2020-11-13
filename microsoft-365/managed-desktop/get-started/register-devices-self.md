@@ -7,12 +7,12 @@ f1.keywords:
 - NOCSH
 ms.author: jaimeo
 ms.localizationpriority: medium
-ms.openlocfilehash: 225cb8b74a50fa8308cc14e8ad35283e6a7aa044
-ms.sourcegitcommit: e9f32675061cd1cf4a3e2dada393e10d7c552efe
+ms.openlocfilehash: 48c69a71a98e381123a8f87acc20a34eb6e99806
+ms.sourcegitcommit: 34ebec8e2bd54ba3d4ccfd9724797665c965c17f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "48279564"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "49071490"
 ---
 # <a name="register-new-devices-yourself"></a>Registrare manualmente i nuovi dispositivi
 
@@ -47,6 +47,8 @@ Microsoft Managed Desktop identifica ogni dispositivo in modo univoco facendo ri
 1.  Aprire un prompt di PowerShell con diritti amministrativi.
 2.  Correre `Install-Script -Name Get-WindowsAutoPilotInfo`
 3.  Correre `powershell -ExecutionPolicy Unrestricted Get-WindowsAutoPilotInfo -OutputFile <path>\hardwarehash.csv`
+4.  Eseguire `powershell -ExecutionPolicy restricted` per impedire l'esecuzione di script successivi senza restrizioni.
+
 
 #### <a name="flash-drive-method"></a>Metodo dell'unità flash
 
@@ -81,10 +83,10 @@ In [Microsoft Endpoint Manager](https://endpoint.microsoft.com/)selezionare **di
 <!--Registering any existing devices with Managed Desktop will completely re-image them; make sure you've backed up any important data prior to starting the registration process.-->
 
 
-Procedere come segue:
+attenersi alla seguente procedura:
 
-1. In **caricamento file**, specificare un percorso per il file CSV creato in precedenza.
-3. Selezionare **registra dispositivi**. Il sistema aggiungerà i dispositivi all'elenco di dispositivi sul Blade dei **dispositivi**, contrassegnati come **registrazione in sospeso**. La registrazione richiede in genere meno di 10 minuti e, in caso di esito positivo, il dispositivo verrà visualizzato come **pronto per il significato dell'utente** è pronto e in attesa che un utente inizi a utilizzare.
+1. In **caricamento file** , specificare un percorso per il file CSV creato in precedenza.
+3. Selezionare **registra dispositivi**. Il sistema aggiungerà i dispositivi all'elenco di dispositivi sul Blade dei **dispositivi** , contrassegnati come **registrazione in sospeso**. La registrazione richiede in genere meno di 10 minuti e, in caso di esito positivo, il dispositivo verrà visualizzato come **pronto per il significato dell'utente** è pronto e in attesa che un utente inizi a utilizzare.
 
 
 È possibile monitorare lo stato di avanzamento della registrazione dei dispositivi nella pagina principale. Gli stati possibili segnalati includono:
@@ -119,7 +121,6 @@ Se si preferisce, è anche possibile applicare l'immagine da soli. Per iniziare,
 > Prima di distribuire il dispositivo all'utente, verificare di aver ottenuto e applicato le [licenze appropriate](../get-ready/prerequisites.md) per l'utente.
 
 Se vengono applicate tutte le licenze, è possibile [ottenere gli utenti pronti per l'utilizzo dei dispositivi](get-started-devices.md)e quindi l'utente può avviare il dispositivo e procedere con l'esperienza di installazione di Windows.
-
 
 
 
