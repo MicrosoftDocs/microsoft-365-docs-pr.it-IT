@@ -16,12 +16,12 @@ ms.assetid: 19fd3e0f-8dbf-4049-a810-2c8ee6cefd48
 ms.collection:
 - M365-security-compliance
 description: Per mantenere la fiducia degli utenti nell'utilizzo della posta elettronica, Microsoft ha messo a punto vari criteri e tecnologie che consentono di proteggere gli utenti.
-ms.openlocfilehash: e9389d52ee1d6c1c0bbab8630778749a6ed6005f
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 478f94d2ed1a03253168486d48fb2b2df57a6a5e
+ms.sourcegitcommit: 9546708a5506fdbadbfe2500cbf1bd1aeaec6fcb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48199578"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "49021026"
 ---
 # <a name="services-for-non-customers-sending-mail-to-microsoft-365"></a>Servizi per i non clienti che inviano la posta a Microsoft 365
 
@@ -38,7 +38,7 @@ In questa panoramica vengono fornite informazioni sui vantaggi forniti all'organ
 
 |Servizio|Vantaggi|
 |---|---|
-|Contenuto della Guida in linea|Fornisce <br/> Punto di partenza per qualsiasi problema relativo alla distribuzione di comunicazioni agli utenti di EOP. <br/><br/> Include una semplice guida online con i criteri e i requisiti. <br/><br/> Una panoramica dei filtri per la posta indesiderata e delle tecnologie di autenticazione impiegate da Microsoft.|
+|Contenuto della Guida in linea|Fornisce <ul><li>Punto di partenza per qualsiasi problema relativo alla distribuzione di comunicazioni agli utenti di EOP.</li><li>Include una semplice guida online con i criteri e i requisiti.</li><li>Una panoramica dei filtri per la posta indesiderata e delle tecnologie di autenticazione impiegate da Microsoft.</li><ul>|
 |[Supporto tecnico Microsoft](#microsoft-support)|Fornisce supporto per l'escalation e la self-service per i problemi di recapito.|
 |[Portale di delist IP di protezione da posta indesiderata](#anti-spam-ip-delist-portal)|Strumento per inviare la richiesta di esclusione di indirizzi IP. Prima di inoltrare la richiesta, è responsabilità del mittente garantire che qualsiasi ulteriore messaggio di posta proveniente dall'IP in questione non sia abusivo o dannoso.|
 |[Segnalazione di abusi e posta indesiderata per posta indesiderata proveniente da Exchange Online](#abuse-and-spam-reporting-for-junk-email-originating-from-exchange-online)|Consente di mantenere la posta indesiderata e gli altri messaggi non voluti inviati da Exchange Online e ingombrare Internet e il sistema di posta elettronica.|

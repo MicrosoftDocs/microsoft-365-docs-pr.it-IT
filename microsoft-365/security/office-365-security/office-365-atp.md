@@ -20,12 +20,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Microsoft Defender per Office 365 include allegati e collegamenti sicuri, strumenti avanzati anti-phishing, strumenti di report e funzionalità Threat Intelligence.
-ms.openlocfilehash: a822c3ab8e065d9349172731e2081799853be637
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: c102948ff66a6362a1adb60734629b79e7eb7ad5
+ms.sourcegitcommit: 9546708a5506fdbadbfe2500cbf1bd1aeaec6fcb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48845781"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "49021110"
 ---
 # <a name="microsoft-defender-for-office-365"></a>Microsoft Defender per Office 365
 
@@ -141,8 +141,8 @@ Per accedere alle funzionalità di Microsoft Defender per Office 365 nel Centro 
 |Ruolo o gruppo di ruoli|Risorse per approfondire|
 |---|---|
 |Amministratore globale, che può essere assegnato a Azure Active Directory o al Centro sicurezza e conformità|[Informazioni sui ruoli di amministratore di Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)|
-|Amministratore della sicurezza, che può essere assegnato a Azure Active Directory o al Centro sicurezza e conformità|[Autorizzazioni del ruolo di amministratore in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)<br><br/>[Autorizzazioni nel Centro sicurezza e conformità](permissions-in-the-security-and-compliance-center.md)|
-|Gestione dell'organizzazione di Exchange Online (assegnata a Exchange Online)|[Autorizzazioni in Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo)<br><br> [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell)|
+|Amministratore della sicurezza, che può essere assegnato a Azure Active Directory o al Centro sicurezza e conformità|[Autorizzazioni del ruolo di amministratore in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles) <p> [Autorizzazioni nel Centro sicurezza e conformità](permissions-in-the-security-and-compliance-center.md)|
+|Gestione dell'organizzazione di Exchange Online (assegnata a Exchange Online)|[Autorizzazioni in Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo) <p> [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell)|
 |Ricerca ed eliminazione (questa operazione è assegnata solo al Centro sicurezza e conformità)|[Autorizzazioni nel Centro sicurezza e conformità](permissions-in-the-security-and-compliance-center.md)|
 
 Per altre informazioni, vedere [Autorizzazioni nel Centro sicurezza e conformità](permissions-in-the-security-and-compliance-center.md).

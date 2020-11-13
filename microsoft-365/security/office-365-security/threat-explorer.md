@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-office365
 description: Informazioni sull'utilizzo di Esplora risorse e sui rilevamenti in tempo reale nel centro sicurezza e &amp; conformità per esaminare e rispondere alle minacce in modo efficace ed efficiente.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 561e4c62922a4da0789111de5c3be7844bb83692
-ms.sourcegitcommit: c84cceb07e748969723a31b350e37f3ec79255ab
+ms.openlocfilehash: bc137a7390961e2b6abe049aead2b238cb9d3a16
+ms.sourcegitcommit: 9546708a5506fdbadbfe2500cbf1bd1aeaec6fcb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "48948494"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "49021122"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>Esplora minacce e rilevamenti in tempo reale
 

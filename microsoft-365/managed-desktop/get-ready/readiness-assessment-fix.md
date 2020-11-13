@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: b77313a18a5744549e492de991e282bc34dbb6da
-ms.sourcegitcommit: f07442d077eb4357fa5d99d051b035705eb30efa
+ms.openlocfilehash: 0459de8974fe6bae98e6984fd7dc65afeb04b4e7
+ms.sourcegitcommit: 9546708a5506fdbadbfe2500cbf1bd1aeaec6fcb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "49002418"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "49021086"
 ---
 # <a name="fix-issues-found-by-the-readiness-assessment-tool"></a>Risolvere problemi trovati dallo strumento di valutazione dell'idoneità
 
@@ -29,6 +29,8 @@ Per ogni controllo, lo strumento riporterà uno dei quattro possibili risultati:
 |Error | Il ruolo di Azure Active Director (AD) utilizzato non dispone di autorizzazioni sufficienti per eseguire questo controllo. |
 
 ## <a name="microsoft-intune-settings"></a>Impostazioni di Microsoft Intune
+
+È possibile accedere alle impostazioni di Intune nell'interfaccia di [Amministrazione](https://endpoint.microsoft.com)di Microsoft Endpoint Manager.
 
 ### <a name="autopilot-deployment-profile"></a>Profilo di distribuzione Autopilot
 
@@ -247,6 +249,7 @@ Verificare che tutti i criteri anello di aggiornamento siano esclusi dai **dispo
 
 ## <a name="azure-active-directory-settings"></a>Impostazioni di Azure Active Directory
 
+È possibile accedere alle impostazioni di Azure Active Directory nel [portale di Azure](https://portal.azure.com).
 
 ### <a name="ad-hoc-subscriptions"></a>Abbonamenti ad hoc
 
@@ -326,7 +329,7 @@ Gli utenti di Microsoft Managed Desktop non disporranno dei privilegi di amminis
 
 ### <a name="onedrive"></a>OneDrive
 
-L'impostazione **Consenti sincronizzazione solo sui PC aggiunti a domini specifici** sarà in conflitto con Microsoft Managed Desktop.
+L'impostazione **Consenti sincronizzazione solo sui PC aggiunti a domini specifici** sarà in conflitto con Microsoft Managed Desktop. È possibile accedere alle impostazioni di OneDrive nell'interfaccia di [Amministrazione](https://admin.onedrive.com)di OneDrive.
 
 **Consulenza**
 
