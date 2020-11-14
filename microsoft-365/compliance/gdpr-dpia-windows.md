@@ -8,24 +8,24 @@ ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
-ms.author: daniha
+ms.author: siosulli
 author: DaniHalfin
 manager: dansimp
 audience: itpro
 ms.collection:
 - GDPR
 - M365-security-compliance
-ms.openlocfilehash: 5d30440d0051f4ec678effac657808853c7a6515
-ms.sourcegitcommit: 888b9355ef7b933c55ca6c18639c12426ff3fbde
+ms.openlocfilehash: a31ccc8cab6995e0647e397be4b869e48da599b4
+ms.sourcegitcommit: e03bc2945e63f7f2638257e530056ae9283b45d9
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "48305006"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "49070890"
 ---
-# <a name="data-protection-impact-assessments-guidance-for-data-controllers-using-microsoft-data-processor-service-for-windows-enterprise"></a>Valutazioni d'impatto sulla protezione dei dati: guida per i titolari del trattamento dei dati che usano il servizio di trattamento dei dati di Microsoft Enterprise
+# <a name="data-protection-impact-assessments-guidance-for-data-controllers-using-microsoft-data-processor-service-for-windows-enterprise"></a>Valutazioni d'impatto sulla protezione dei dati: guida per i titolari del trattamento dei dati che usano il servizio di trattamento dei dati di Microsoft per Windows Enterprise
 
 >[!NOTE]
->Questo argomento è rivolto ai partecipanti al servizio di trattamento dei dati per il programma di anteprima di Windows Enterprise e richiede l'accettazione di specifiche condizioni d'uso. Per maggiori informazioni sul programma e per l'accettazione delle condizioni d'uso, vedere [https://aka.ms/WindowsEnterprisePublicPreview](https://aka.ms/WindowsEnterprisePublicPreview).
+>Questo argomento è rivolto ai partecipanti al servizio di trattamento dei dati per l'anteprima programma di Windows Enterprise e richiede l'accettazione di condizioni per l'utilizzo specifiche. Per ulteriori informazioni sul programma e accettare le condizioni per l'utilizzo, vedere [https://aka.ms/WindowsEnterprisePublicPreview](https://aka.ms/WindowsEnterprisePublicPreview).
 
 Il Regolamento generale sulla protezione dei dati (GDPR) prevede che i titolari del trattamento preparino una valutazione dell'impatto sulla protezione dei dati (DPIA) per i trattamenti che "possano presentare un rischio elevato per i diritti e le libertà delle persone fisiche". Il servizio di trattamento dei dati di Windows Enterprise non comporta di per sé la necessità della realizzazione di una DPIA da parte del titolare del trattamento che lo usa. La necessità di una DPIA dipende dai dettagli e dal contesto relativo alle modalità con cui il titolare del trattamento distribuisce, configura e usa il servizio di trattamento dei dati per Windows Enterprise. 
 

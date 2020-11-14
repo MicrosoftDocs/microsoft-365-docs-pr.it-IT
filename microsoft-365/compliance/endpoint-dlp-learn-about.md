@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 'La prevenzione della perdita di dati degli endpoint di Microsoft 365 estende il monitoraggio delle attività dei file e le azioni di protezione agli endpoint. I file sono visibili nelle soluzioni del Centro conformità Microsoft 365 '
-ms.openlocfilehash: 0f69261cb5617c7d6de7900b85a5a254a04bc45e
-ms.sourcegitcommit: da34ac08c7d029c2c42d4428d0bb03fd57c448be
+ms.openlocfilehash: e469872dac19db08f7b525c8a5ada725c75bfa10
+ms.sourcegitcommit: fcc1b40732f28f075d95faffc1655473e262dd95
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "48999469"
+ms.lasthandoff: 11/14/2020
+ms.locfileid: "49072975"
 ---
 # <a name="learn-about-microsoft-365-endpoint-data-loss-prevention"></a>Informazioni sulla prevenzione della perdita di dati degli endpoint di Microsoft 365
 
@@ -145,15 +145,15 @@ Ad esempio, se un file viene copiato in un supporto USB rimovibile, nei dettagli
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-Dopo avere acquisito familiarità con Endpoint DLP, è possibile proseguire con questi argomenti:
+Dopo avere acquisito familiarità con la prevenzione della perdita di dati degli endpoint, è possibile proseguire con questi argomenti:
 
-1) [Introduzione alla prevenzione della perdita di dati degli endpoint Microsoft (anteprima)](endpoint-dlp-getting-started.md)
-2) [Uso della prevenzione della perdita di dati degli endpoint Microsoft (anteprima)](endpoint-dlp-using.md)
+1) [Introduzione alla prevenzione della perdita di dati degli endpoint Microsoft](endpoint-dlp-getting-started.md)
+2) [Uso della prevenzione della perdita di dati degli endpoint Microsoft](endpoint-dlp-using.md)
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Introduzione alla prevenzione della perdita di dati degli endpoint Microsoft (anteprima)](endpoint-dlp-getting-started.md)
-- [Uso della prevenzione della perdita di dati degli endpoint Microsoft (anteprima)](endpoint-dlp-using.md)
+- [Introduzione alla prevenzione della perdita di dati degli endpoint Microsoft](endpoint-dlp-getting-started.md)
+- [Uso della prevenzione della perdita di dati degli endpoint Microsoft](endpoint-dlp-using.md)
 - [Panoramica sulla prevenzione della perdita dei dati](data-loss-prevention-policies.md)
 - [Creare, testare e ottimizzare un criterio di prevenzione della perdita dei dati](create-test-tune-dlp-policy.md)
 - [Introduzione a Esplora attività](data-classification-activity-explorer.md)
