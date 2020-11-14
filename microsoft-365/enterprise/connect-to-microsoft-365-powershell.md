@@ -17,12 +17,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: 5ebc0e21-b72d-46d8-96fa-00643b18eaec
 description: Connettersi al tenant di Microsoft 365 con PowerShell per Microsoft 365 per eseguire attività dell'interfaccia di amministrazione tramite riga di comando.
-ms.openlocfilehash: d8263fd14d5eae58d3686f18056945a60158b421
-ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
+ms.openlocfilehash: 33f9af45418ae8a1f126d2b321e7246201bd1f6e
+ms.sourcegitcommit: f07442d077eb4357fa5d99d051b035705eb30efa
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "48754305"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "49002406"
 ---
 # <a name="connect-to-microsoft-365-with-powershell"></a>Connettersi a Microsoft 365 con PowerShell
 
@@ -33,7 +33,7 @@ PowerShell per Microsoft 365 consente di gestire le impostazioni di Microsoft 36
 Sono disponibili due versioni del modulo PowerShell che è possibile usare per connettersi a Microsoft 365 e amministrare gli account utente, i gruppi e le licenze:
 
 - Azure Active Directory PowerShell per Graph, i cui cmdlet includono *AzureAD* nel nome
-- Modulo di Microsoft Azure Active Directory per Windows PowerShell, i cui cmdlet includono *Sol* nel nome.
+- Modulo di Microsoft Azure Active Directory per Windows PowerShell, i cui cmdlet includono *MSol* nel nome.
 
 Attualmente il modulo di Azure Active Directory PowerShell per Graph non sostituisce completamente le funzionalità del Modulo di Microsoft Azure Active Directory per Windows PowerShell per l'amministrazione di utenti, gruppi e licenze. In alcuni casi, è necessario usare entrambe le versioni. È possibile installare tranquillamente entrambe le versioni nello stesso computer.
 
@@ -98,7 +98,7 @@ Per connettersi ad Azure Active Directory (Azure AD) per l'abbonamento a Microso
 | U.S. Government DoD di Office 365 e U.S. Government GCC High di Office 365 | `Connect-AzureAD -AzureEnvironmentName AzureUSGovernment` |
 |||
 
-Nella finestra di dialogo per **accedere all'account** , digitare nome utente e password dell'account aziendale o dell'istituto di istruzione di Microsoft 365, quindi fare clic su **OK** .
+Nella finestra di dialogo per **accedere all'account** , digitare nome utente e password dell'account aziendale o dell'istituto di istruzione di Microsoft 365, quindi fare clic su **OK**.
 
 Se si utilizza l'autenticazione a più fattori, seguire le istruzioni per fornire ulteriori informazioni di autenticazione, ad esempio un codice di verifica.
 
@@ -122,7 +122,7 @@ PowerShell Core non supporta il Modulo di Microsoft Azure Active Directory per W
 2. Seguire questa procedura per installare il Modulo di Microsoft Azure Active Directory per Windows PowerShell:
     
    1. Aprire un prompt dei comandi di Windows PowerShell con privilegi elevati (eseguire Windows PowerShell come amministratore).
-   1.  Eseguire il comando **Install-Module MSOnline** .
+   1.  Eseguire il comando **Install-Module MSOnline**.
    1. Se viene richiesto di installare il provider NuGet, digitare **Y** e premere INVIO.
    1. Se viene richiesto di installare il modulo da PSGallery, digitare **Y** e premere INVIO.
     
@@ -138,7 +138,7 @@ Per connettersi ad Azure AD per l'abbonamento a Microsoft 365 con un nome accoun
 | U.S. Government DoD di Office 365 e U.S. Government GCC High di Office 365 | `Connect-MsolService -AzureEnvironment USGovernment` |
 |||
 
-Nella finestra di dialogo per **accedere all'account** , digitare nome utente e password dell'account aziendale o dell'istituto di istruzione di Microsoft 365, quindi fare clic su **OK** .
+Nella finestra di dialogo per **accedere all'account** , digitare nome utente e password dell'account aziendale o dell'istituto di istruzione di Microsoft 365, quindi fare clic su **OK**.
 
 Se si utilizza l'autenticazione a più fattori, seguire le istruzioni per fornire ulteriori informazioni di autenticazione, ad esempio un codice di verifica.
 
@@ -148,7 +148,7 @@ Se non viene visualizzato un messaggio di errore, la connessione è riuscita. Pe
   
 Se viene visualizzato un messaggio di errore, controllare i problemi seguenti:
   
-- **Un problema comune è l'uso di una password errata** . Eseguire di nuovo il [Passaggio 2](#step-2-connect-to-azure-ad-for-your-microsoft-365-subscription) e prestare particolare attenzione al nome utente e alla password immessi.
+- **Un problema comune è l'uso di una password errata**. Eseguire di nuovo il [Passaggio 2](#step-2-connect-to-azure-ad-for-your-microsoft-365-subscription) e prestare particolare attenzione al nome utente e alla password immessi.
     
 - **Il Modulo di Microsoft Azure Active Directory per Windows PowerShell richiede che Microsoft .NET Framework 3.5.* x* sia abilitato nel computer**. È probabile che nel computer sia installata una versione più recente, ad esempio 4 o 4.5.* x*. La compatibilità con le versioni precedenti di .NET Framework può però essere abilitata o disabilitata. Per altre informazioni, vedere gli articoli seguenti:
     

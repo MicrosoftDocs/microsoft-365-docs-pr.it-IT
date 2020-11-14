@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Utilizzare la Guida introduttiva di Compliance Manager per facilitare il percorso di comprensione, ottenere la configurazione e l'utilizzo di Compliance Manager.
-ms.openlocfilehash: 895f03482c0af9603aa96d907d7339a853ef5e9d
-ms.sourcegitcommit: ccbb405227880f40581c3cdfb974368a29d496f7
+ms.openlocfilehash: 9f24a0495b7d453b70a28ad54d76ccf835000ed6
+ms.sourcegitcommit: d333d82fd5e4f3265e8b9372094e85875bee6fe5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "48791792"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "49071971"
 ---
 # <a name="compliance-manager-quickstart"></a>Guida rapida a Compliance Manager
 
@@ -43,6 +43,7 @@ La [pagina Panoramica di Compliance Manager](compliance-manager.md) è la prima 
 - [Filtrare la visualizzazione del dashboard](compliance-manager-setup.md#filtering-your-dashboard-view)
 - [Informazioni sulle azioni di miglioramento](compliance-manager-setup.md#improvement-actions-page)
 - [Comprendere le valutazioni](compliance-manager.md#assessments)
+- [Eseguire una rapida analisi dell'ambiente utilizzando Microsoft Compliance Configuration Manager](compliance-manager-mcca.md)
 
 ## <a name="ramping-up-configure-compliance-manager-to-manage-your-compliance-activities"></a>Ramping up: configurare Compliance Manager per gestire le attività di conformità
 

@@ -9,12 +9,12 @@ ms.prod: microsoft-365-enterprise
 search.appverid: ''
 localization_priority: Priority
 description: Creare un modello di elaborazione dei moduli in Microsoft SharePoint Syntex.
-ms.openlocfilehash: 784a3e0a918424e599e87852d2a36b613867f62e
-ms.sourcegitcommit: 7e8151ff74cb1cfc0dd59fadcac423c338415d77
+ms.openlocfilehash: 7edea0d36c85fba7bda31effdcdff08cd59a1174
+ms.sourcegitcommit: f07442d077eb4357fa5d99d051b035705eb30efa
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/08/2020
-ms.locfileid: "48390186"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "49002430"
 ---
 # <a name="create-a-form-processing-model-in-microsoft-sharepoint-syntex"></a>Creare un modello di elaborazione dei moduli in Microsoft SharePoint Syntex
 
@@ -44,11 +44,11 @@ La creazione di un modello di elaborazione dei moduli prevede i passaggi seguent
 
 Per creare un modello di elaborazione dei moduli, occorre prima di tutto assegnare un nome al modello, creare e definire il nuovo tipo di contenuto e creare una specifica visualizzazione della raccolta documenti.
 
-1. Nella raccolta documenti scegliere **AI Builder**, dal menu **Automatizza**, quindi selezionare **Crea un modello di elaborazione dei moduli**.
+1. Nella raccolta documenti scegliere **AI Builder** , dal menu **Automatizza** , quindi selezionare **Crea un modello di elaborazione dei moduli**.
 
     ![Creare un modello](../media/content-understanding/create-ai-builder-model.png)</br>
 
-2. Nel riquadro **Nuovo modello di elaborazione dei moduli** digitare un nome per il modello nel campo **Nome**, ad esempio *Ordini di acquisto*.
+2. Nel riquadro **Nuovo modello di elaborazione dei moduli** digitare un nome per il modello nel campo **Nome** , ad esempio *Ordini di acquisto*.
 
     ![Nuovo modello di elaborazione dei moduli](../media/content-understanding/new-form-model.png)</br> 
 
@@ -69,7 +69,7 @@ Dopo aver creato il nuovo modello di elaborazione dei moduli, nel browser viene 
 
    ![Power Apps AI Builder](../media/content-understanding/powerapps.png)</br> 
  
-1. Selezionare **Aggiungi documenti** per iniziare ad aggiungere documenti di esempio analizzati per determinare le coppie di valori denominate che è possibile estrarre. È quindi possibile scegliere **Carica dalla risorsa di archiviazione locale**, **SharePoint** o **Archiviazione BLOB di Azure**. È necessario usare almeno cinque file per il training.
+1. Selezionare **Aggiungi documenti** per iniziare ad aggiungere documenti di esempio analizzati per determinare le coppie di valori denominate che è possibile estrarre. È quindi possibile scegliere **Carica dalla risorsa di archiviazione locale** , **SharePoint** o **Archiviazione BLOB di Azure**. È necessario usare almeno cinque file per il training.
 
 2. Dopo aver aggiunto i file, selezionare **Analizza** per verificare se esistono informazioni comuni a tutti i file. Questo processo potrebbe richiedere alcuni minuti.</br> 
  
@@ -87,7 +87,7 @@ Una volta analizzati i documenti per individuare i campi, è possibile vedere i 
 
     ![Pagina Seleziona campi](../media/content-understanding/select-fields-page.png)</br> 
 
-2. Selezionare i campi a salvare e selezionare la casella di controllo per confermare la selezione. Ad esempio, nel modello di ordine di acquisto selezionare i campi *Data*, *Ordine d'acquisto* e *Totale*.  Se si vuole, è possibile anche decidere di rinominare un campo. </br>
+2. Selezionare i campi a salvare e selezionare la casella di controllo per confermare la selezione. Ad esempio, nel modello di ordine di acquisto selezionare i campi *Data* , *Ordine d'acquisto* e *Totale*.  Se si vuole, è possibile anche decidere di rinominare un campo. </br>
 
     ![Selezionare il numero dell'ordine d'acquisto](../media/content-understanding/po.png)</br> 
 
@@ -115,7 +115,7 @@ Dopo aver selezionato i campi da salvare, nella pagina **Riepilogo modelli** è 
 
 2. Quando viene indicato che il training è terminato, selezionare **Vai alla pagina Dettagli**. 
 
-3. Nella pagina **Dettagli modello**, scegliere di testare il funzionamento del modello selezionando **Test rapido**. Questo consente di trascinare i file nella pagina e verificare se i campi vengono rilevati.
+3. Nella pagina **Dettagli modello** , scegliere di testare il funzionamento del modello selezionando **Test rapido**. Questo consente di trascinare i file nella pagina e verificare se i campi vengono rilevati.
 
 ## <a name="step-5-publish-your-model"></a>Passaggio 5: pubblicare il modello
 

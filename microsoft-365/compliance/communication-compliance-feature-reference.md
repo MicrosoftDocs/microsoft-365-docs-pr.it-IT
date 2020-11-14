@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 9cb1afe0d8983943b83661880b4b41a6138703ad
-ms.sourcegitcommit: 5a355bde865369f64ea1788a378da23c65b1d249
+ms.openlocfilehash: e8ce5a144c7361cd483a903dc3e287a4a51a508b
+ms.sourcegitcommit: fcc1b40732f28f075d95faffc1655473e262dd95
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "48930209"
+ms.lasthandoff: 11/14/2020
+ms.locfileid: "49073073"
 ---
 # <a name="communication-compliance-feature-reference"></a>Informazioni di riferimento sulle caratteristiche di conformità comunicazione
 
@@ -58,7 +58,7 @@ A seconda del modo in cui si desidera gestire i criteri di comunicazione e gli a
 
 Scegliere tra queste opzioni del gruppo di ruoli quando si configura la conformità delle comunicazioni:
 
-|**Ruolo**|**Autorizzazioni di ruolo**|
+|**Gruppo di ruolo**|**Autorizzazioni per i gruppi di ruoli**|
 |:-----|:-----|
 | **Conformità alla comunicazione** | Utilizzare questo gruppo di ruoli per gestire la conformità di comunicazione per l'organizzazione in un singolo gruppo. Aggiungendo tutti gli account utente per gli amministratori, gli analisti, gli investigatori e i visualizzatori designati, è possibile configurare le autorizzazioni di conformità per le comunicazioni in un singolo gruppo. Questo gruppo di ruoli contiene tutti i ruoli di autorizzazione di conformità di comunicazione. Questa configurazione è il modo più semplice per iniziare rapidamente con la conformità alla comunicazione ed è adatta per le organizzazioni che non necessitano di autorizzazioni separate definite per gruppi di utenti separati. |
 | **Amministratore della conformità alla comunicazione** | Utilizzare questo gruppo di ruoli per configurare inizialmente la conformità della comunicazione e successivamente per separare gli amministratori della conformità di comunicazione in un gruppo definito. Gli utenti assegnati a questo gruppo di ruoli possono creare, leggere, aggiornare ed eliminare i criteri di conformità della comunicazione, le impostazioni globali e le assegnazioni dei gruppi di ruoli. Gli utenti assegnati a questo gruppo di ruoli non possono visualizzare gli avvisi dei messaggi. |
@@ -241,7 +241,7 @@ La protezione della privacy degli utenti che dispongono di corrispondenze di cri
 
 Per gli utenti con una corrispondenza di conformità di comunicazione, è possibile scegliere una delle impostazioni seguenti nelle **impostazioni di conformità della comunicazione** :
 
-- **Mostrare le versioni di anonimi dei** nomi utente: i denominati degli utenti sono anonimi per impedire agli amministratori, agli analisti, ai ricercatori e ai revisori di vedere gli utenti associati agli avvisi dei criteri. Ad esempio, un utente ' Grace Taylor ' verrebbe visualizzato con uno pseudonimo randomizzato come ' AnonIS8-988' in tutte le aree dell'esperienza di conformità alla comunicazione. Se si sceglie questa impostazione, anonimizza tutti gli utenti con le corrispondenze di criteri correnti e precedenti e si applica a tutti i criteri. Le informazioni sui profili utente nei dettagli avviso di conformità della comunicazione non saranno disponibili quando si seleziona questa opzione. Tuttavia, i nomi utente vengono visualizzati quando si aggiungono nuovi utenti ai criteri esistenti o quando si assegnano gli utenti ai nuovi criteri. Se si sceglie di disattivare questa impostazione, i nomi utente vengono visualizzati per tutti gli utenti che hanno corrispondenze di criteri correnti o passate.
+- **Mostrare le versioni di anonimi dei** nomi utente: i names d'Users sono anonimi per impedire agli utenti del gruppo di ruoli *Analyst Compliance Communication* di vedere chi è associato agli avvisi dei criteri. Gli utenti del gruppo di ruolo *ricercatore conformità comunicazione* vedranno sempre i nomi utente e non le versioni di anonimi. Ad esempio, un utente ' Grace Taylor ' verrebbe visualizzato con uno pseudonimo randomizzato come ' AnonIS8-988' in tutte le aree dell'esperienza di conformità alla comunicazione. Se si sceglie questa impostazione, anonimizza tutti gli utenti con le corrispondenze di criteri correnti e precedenti e si applica a tutti i criteri. Le informazioni sui profili utente nei dettagli avviso di conformità della comunicazione non saranno disponibili quando si seleziona questa opzione. Tuttavia, i nomi utente vengono visualizzati quando si aggiungono nuovi utenti ai criteri esistenti o quando si assegnano gli utenti ai nuovi criteri. Se si sceglie di disattivare questa impostazione, i nomi utente vengono visualizzati per tutti gli utenti che hanno corrispondenze di criteri correnti o passate.
 - Non vengono visualizzate le **versioni di nomi utente di anonimi: sono visualizzabili** per tutte le corrispondenze di criteri correnti e precedenti per gli avvisi di conformità alla comunicazione. Le informazioni sui profili utente, ovvero il nome, il titolo, l'alias e l'organizzazione o il reparto, vengono visualizzate per tutti gli avvisi di conformità alla comunicazione.
 
 ## <a name="notice-templates"></a>Modelli di avviso

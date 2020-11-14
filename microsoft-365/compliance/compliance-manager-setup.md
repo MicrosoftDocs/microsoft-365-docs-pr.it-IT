@@ -17,22 +17,22 @@ search.appverid:
 - MOE150
 - MET150
 description: Impostare le autorizzazioni e i ruoli utente di Microsoft Compliance Manager e configurare il testing automatizzato delle azioni. Gestire la cronologia degli utenti e filtrare la visualizzazione del dashboard.
-ms.openlocfilehash: 141ddc8ac371b1a36c69ee79b5438408f8da19e8
-ms.sourcegitcommit: ccbb405227880f40581c3cdfb974368a29d496f7
+ms.openlocfilehash: d6dd7263779ae7f3e9366c0984360c191a62d5e8
+ms.sourcegitcommit: fcc1b40732f28f075d95faffc1655473e262dd95
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "48791894"
+ms.lasthandoff: 11/14/2020
+ms.locfileid: "49072891"
 ---
 # <a name="get-started-with-compliance-manager"></a>Introduzione a Compliance Manager
 
-**In questo articolo:** In questo articolo viene illustrato come configurare Compliance Manager. Informazioni su come **accedere** a Compliance Manager, **impostare i ruoli e le autorizzazioni** e configurare il **test automatico delle azioni di miglioramento** . Scorrere il **dashboard di Compliance Manager** e comprendere le pagine principali: la pagina azioni di miglioramento, la pagina soluzioni, la pagina valutazioni e la pagina modelli di valutazione.
+**In questo articolo:** In questo articolo viene illustrato come configurare Compliance Manager. Informazioni su come **accedere** a Compliance Manager, **impostare i ruoli e le autorizzazioni** e configurare il **test automatico delle azioni di miglioramento**. Scorrere il **dashboard di Compliance Manager** e comprendere le pagine principali: la pagina azioni di miglioramento, la pagina soluzioni, la pagina valutazioni e la pagina modelli di valutazione.
 
 ## <a name="who-can-access-compliance-manager"></a>Chi può accedere a Compliance Manager
 
-Compliance Manager è disponibile per le organizzazioni con licenza di Office 365 e Microsoft 365. La disponibilità e le funzionalità di gestione della valutazione dipendono dal contratto di licenza.  [Visualizzare i dettagli della descrizione del servizio](https://go.microsoft.com/fwlink/?linkid=2132371).
+Compliance Manager è disponibile per le organizzazioni con licenza di Office 365 e Microsoft 365 e per i clienti di US Government community Cloud (GCC) moderati. La disponibilità e le funzionalità di gestione della valutazione dipendono dal contratto di licenza.  [Visualizzare i dettagli della descrizione del servizio](https://go.microsoft.com/fwlink/?linkid=2132371).
 
-## <a name="before-you-begin"></a>Informazioni preliminari
+## <a name="before-you-begin"></a>Prima di iniziare
 
 L'amministratore globale di Microsoft 365 per l'organizzazione sarà probabilmente il primo utente a accedere a Compliance Manager. È consigliabile accedere all'amministratore globale e impostare le autorizzazioni utente come indicato di seguito quando si visita Compliance Manager per la prima volta.
 
@@ -61,13 +61,13 @@ Per impostare le autorizzazioni e assegnare i ruoli dall'interno del centro conf
 
 4. Nel riquadro a comparsa del gruppo, selezionare **modifica** sotto l'intestazione **membri** .
 
-5. Selezionare **Scegli membri** . Verrà visualizzata un'altra finestra a comparsa.
+5. Selezionare **Scegli membri**. Verrà visualizzata un'altra finestra a comparsa.
 
 6. Selezionare **+ Aggiungi** per scegliere uno o più utenti da aggiungere al gruppo.
 
 7. Selezionare la casella di controllo accanto ai nomi che si desidera aggiungere, quindi selezionare il pulsante **Aggiungi** nella parte inferiore.
 
-8. Al termine dell'assegnazione degli utenti, selezionare fine, quindi **fare** clic su **Salva** e quindi su **Chiudi** .
+8. Al termine dell'assegnazione degli utenti, selezionare fine, quindi **fare** clic su **Salva** e quindi su **Chiudi**.
 
 ##### <a name="more-about-the-office-365-secruity--compliance-center"></a>Ulteriori informazioni sul centro conformità di Office 365 Secruity &
 
@@ -110,7 +110,7 @@ L'amministratore globale dell'organizzazione può modificare le impostazioni per
 
 1. Selezionare **Impostazioni** sulla barra di spostamento sinistra da qualsiasi punto del [centro conformità di Microsoft 365](https://compliance.microsoft.com/).
 
-2. Nella pagina Impostazioni selezionare **Compliance Manager** .
+2. Nella pagina Impostazioni selezionare **Compliance Manager**.
 
 3. Selezionare **test automatizzati** dalla barra di spostamento a sinistra.
 
@@ -132,7 +132,7 @@ Le impostazioni della cronologia degli utenti consentono anche di riassegnare tu
 
 1. Selezionare impostazioni sulla barra di spostamento sinistra da qualsiasi punto del [centro conformità di Microsoft 365](https://compliance.microsoft.com/).
 
-2. Nella pagina Impostazioni selezionare **Compliance Manager** .
+2. Nella pagina Impostazioni selezionare **Compliance Manager**.
 
 3. Selezionare **Gestisci cronologia utenti** dalla barra di spostamento a sinistra.
 
@@ -150,13 +150,13 @@ Il rapporto riflette lo stato dell'azione di miglioramento alla data di creazion
 
 1. Selezionare **Impostazioni** sulla barra di spostamento sinistra da qualsiasi punto del [centro conformità di Microsoft 365](https://compliance.microsoft.com/).
 
-2. Nella pagina Impostazioni selezionare **Compliance Manager** .
+2. Nella pagina Impostazioni selezionare **Compliance Manager**.
 
 3. Selezionare **Gestisci cronologia utenti** dalla struttura di spostamento a sinistra.
 
 4. Individuare l'utente desiderato eseguendo una ricerca nell'elenco degli indirizzi di posta elettronica o selezionando **Cerca** e immettendo l'indirizzo di posta elettronica dell'utente.
 
-5. Nel menu a discesa **Seleziona** scegliere **Esporta rapporto** .
+5. Nel menu a discesa **Seleziona** scegliere **Esporta rapporto**.
 
 6. Dopo aver generato il file di Excel del report, è possibile aprirlo e salvarlo nel computer locale.
 
@@ -168,17 +168,17 @@ Il rapporto riflette lo stato dell'azione di miglioramento alla data di creazion
 
 1. Selezionare **Impostazioni** sulla barra di spostamento sinistra da qualsiasi punto del [centro conformità di Microsoft 365](https://compliance.microsoft.com/).
 
-2. Nella pagina Impostazioni selezionare **Compliance Manager** .
+2. Nella pagina Impostazioni selezionare **Compliance Manager**.
 
 3. Selezionare **Gestisci cronologia utenti** dalla struttura di spostamento a sinistra.
 
 4. Trovare un utente eseguendo una ricerca nell'elenco indirizzi di posta elettronica o selezionando **Cerca** e inserendo l'indirizzo di posta elettronica dell'utente.
 
-5. Nel menu a discesa **Seleziona** , scegliere **riassegna azioni di miglioramento** . Verrà visualizzato il riquadro a comparsa **riassegna azioni di miglioramento** .
+5. Nel menu a discesa **Seleziona** , scegliere **riassegna azioni di miglioramento**. Verrà visualizzato il riquadro a comparsa **riassegna azioni di miglioramento** .
 
 6. Nel campo **Search Users** immettere il nome o l'indirizzo di posta elettronica dell'utente a cui si desidera assegnare le azioni *di* miglioramento.
 
-7. Quando viene visualizzato il nome dell'utente desiderato in **azioni di miglioramento** , selezionare l'utente, quindi selezionare **assegna azioni** .
+7. Quando viene visualizzato il nome dell'utente desiderato in **azioni di miglioramento** , selezionare l'utente, quindi selezionare **assegna azioni**.
 
 8. Al termine della riassegnazione, nel riquadro a comparsa verrà visualizzato un messaggio di conferma che conferma che tutte le azioni di miglioramento provenienti dall'utente precedente sono state riassegnate al nuovo utente. Se si riceve una notifica di errore di riassegnazione, chiudere la finestra e riprovare. Per chiudere il riquadro a comparsa, **fare** clic su fine.
 
@@ -195,7 +195,7 @@ Per eliminare la cronologia di un utente, eseguire la procedura seguente:
 
 1. Selezionare **Impostazioni** sulla barra di spostamento sinistra da qualsiasi punto del [centro conformità di Microsoft 365](https://compliance.microsoft.com/).
 
-2. Nella pagina Impostazioni selezionare **Compliance Manager** .
+2. Nella pagina Impostazioni selezionare **Compliance Manager**.
 
 3. Selezionare **Gestisci cronologia utenti** dalla struttura di spostamento a sinistra.
 
@@ -203,7 +203,7 @@ Per eliminare la cronologia di un utente, eseguire la procedura seguente:
 
 5. Scegliere **Elimina cronologia** dal menu a discesa **Seleziona** .
 
-6. Viene visualizzata una finestra in cui viene chiesto di confermare l'eliminazione definitiva della cronologia dell'utente. Per continuare con l'eliminazione, selezionare **Elimina cronologia** . Per uscire senza eliminare la cronologia, selezionare **Annulla** .
+6. Viene visualizzata una finestra in cui viene chiesto di confermare l'eliminazione definitiva della cronologia dell'utente. Per continuare con l'eliminazione, selezionare **Elimina cronologia**. Per uscire senza eliminare la cronologia, selezionare **Annulla**.
 
 7. È possibile tornare alla pagina **Gestisci cronologia utenti** con un messaggio di conferma nella parte superiore che la cronologia dell'utente è stata eliminata.
 
@@ -243,14 +243,14 @@ In questa sezione viene fornita una visualizzazione più dettagliata del puntegg
 Per applicare i filtri:
 
 1. Selezionare **filtro** sul lato superiore destro del dashboard.
-2. Selezionare i criteri di filtro dal riquadro a comparsa **filtri** , quindi fare clic su **applica** .
+2. Selezionare i criteri di filtro dal riquadro a comparsa **filtri** , quindi fare clic su **applica**.
 
 Dopo aver applicato un filtro, vedrai il tuo punteggio rettificato in tempo reale. La percentuale del Punteggio di conformità e le informazioni di ripartizione e le azioni e le soluzioni di miglioramento, ora riguardano solo i dati trattati dai criteri di filtro. Se si disattivano i responsabili della conformità, la visualizzazione filtrata rimane invariata quando si accede.
 
 Per rimuovere i filtri:
 
 - Nella sezione **filtri applicati** sopra il Punteggio di conformità, selezionare la **X** accanto al singolo filtro che si desidera rimuovere. o
-- Seleziona **filtro** nella parte superiore destra del dashboard, quindi nel riquadro a comparsa **filtri** , seleziona **Pulisci filtri** .
+- Seleziona **filtro** nella parte superiore destra del dashboard, quindi nel riquadro a comparsa **filtri** , seleziona **Pulisci filtri**.
 
 ## <a name="improvement-actions-page"></a>Pagina azioni di miglioramento
 
@@ -264,7 +264,7 @@ La pagina azioni di miglioramento Visualizza tutte le azioni di miglioramento ge
 
 Se si dispone di un lungo elenco di azioni nella pagina azioni di miglioramento, potrebbe essere utile filtrare la visualizzazione. Selezionare **filtro** nell'angolo in alto a destra dell'elenco delle azioni. Quando viene visualizzato il riquadro dei **filtri** a comparsa, selezionare i criteri in base alle normative e agli standard, alla soluzione e al gruppo. È inoltre possibile personalizzare la visualizzazione selezionando **gruppo** nell'angolo in alto a destra. Dal menu a discesa, selezionare per visualizzare per gruppo, soluzione, categoria, tipo di azione o stato.
 
-La visualizzazione predefinita per questa pagina non Mostra azioni di miglioramento con uno stato di test **superato** . Per visualizzare le azioni che hanno superato il testing, selezionare la casella **passata** nel riquadro dei filtri a comparsa. Solo le azioni con uno stato di prova del conteggio **superato** verso il punteggio. Alcune azioni possono mostrare un' **etichetta di aggiornamento in sospeso.** Ulteriori informazioni sugli [aggiornamenti per le azioni di miglioramento](compliance-manager-improvement-actions.md#accepting-updates-to-improvement-actions).
+La visualizzazione predefinita per questa pagina non Mostra azioni di miglioramento con uno stato di test **superato**. Per visualizzare le azioni che hanno superato il testing, selezionare la casella **passata** nel riquadro dei filtri a comparsa. Solo le azioni con uno stato di prova del conteggio **superato** verso il punteggio. Alcune azioni possono mostrare un' **etichetta di aggiornamento in sospeso.** Ulteriori informazioni sugli [aggiornamenti per le azioni di miglioramento](compliance-manager-improvement-actions.md#accepting-updates-to-improvement-actions).
 
 Nella pagina azioni di miglioramento vengono visualizzate le seguenti coordinate per ogni azione di miglioramento:
 

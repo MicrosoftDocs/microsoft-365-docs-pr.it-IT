@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft Compliance Manager aiuta le organizzazioni a semplificare e automatizzare le valutazioni dei rischi e suggerisce azioni consigliate per aiutare a gestire i rischi.
-ms.openlocfilehash: d7136368a1c9726d1a77a0c99e717b98e1920242
-ms.sourcegitcommit: ccbb405227880f40581c3cdfb974368a29d496f7
+ms.openlocfilehash: 4508f07b0077d409de1ac033de67d20d1c3f2a7e
+ms.sourcegitcommit: fcc1b40732f28f075d95faffc1655473e262dd95
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "48791804"
+ms.lasthandoff: 11/14/2020
+ms.locfileid: "49072935"
 ---
 # <a name="microsoft-compliance-manager"></a>Microsoft Compliance Manager
 
@@ -30,7 +30,7 @@ ms.locfileid: "48791804"
 
 ## <a name="whats-new-the-ga-release-of-compliance-manager"></a>Novità: la versione GA di Compliance Manager
 
-Compliance Manager è ora generalmente disponibile (GA) come soluzione di gestione della conformità end-to-end all'interno del [centro conformità Microsoft 365](microsoft-365-compliance-center.md). Con questa versione, Compliance Manager completa la transizione dal suo percorso precedente nel portale Microsoft Service Trust.
+Compliance Manager è ora generalmente disponibile (GA) come soluzione di gestione della conformità end-to-end all'interno del [centro conformità Microsoft 365](microsoft-365-compliance-center.md). Con questa versione, Compliance Manager completa la transizione dal suo percorso precedente nel portale Microsoft Service Trust. Compliance Manager è ora disponibile anche per i clienti moderati degli Stati Uniti (GCC).
 
 Che cosa è iniziato come l'anteprima pubblica del Punteggio di conformità si è evoluta in uno strumento centralizzato con funzionalità di gestione della conformità avanzate e una maggiore facilità di utilizzo.  La versione GA apporta una raccolta più ampia di valutazioni predefinite per semplificare la scalabilità delle attività di conformità.
 
@@ -67,7 +67,7 @@ Compliance Manager premia i punti per il completamento delle azioni di miglioram
 
 Compliance Manager fornisce un punteggio iniziale basato sulla linea di base per la protezione dei dati di Microsoft 365. Questa linea di base è un insieme di controlli che include le normative fondamentali e gli standard per la protezione dei dati e la governance dei dati generale.
 
-##### <a name="learn-more"></a>Altre informazioni
+##### <a name="learn-more"></a>Ulteriori informazioni
 
 [Capire in che modo viene calcolato il Punteggio di conformità](compliance-score-calculation.md).
 
@@ -87,7 +87,7 @@ Compliance Manager tiene traccia dei tipi di controlli seguenti:
 2. **I controlli** : a volte definiti controlli gestiti dal cliente, questi sono i controlli implementati e gestiti dall'organizzazione
 3. **Controlli condivisi** : questi sono i controlli che sia l'organizzazione che la responsabilità di Microsoft condividono per l'implementazione
 
-##### <a name="learn-more"></a>Altre informazioni
+##### <a name="learn-more"></a>Ulteriori informazioni
 
 [Monitorare lo stato dei controlli](compliance-manager-assessments.md#monitor-assessment-progress-and-controls).
 
@@ -107,7 +107,7 @@ Le valutazioni hanno diversi componenti:
 
 Quando si creano valutazioni, è necessario assegnarle a un gruppo. È possibile configurare i gruppi in qualunque modo la più logica per l'organizzazione. Ad esempio, è possibile raggruppare le valutazioni per anno di controllo, area geografica, soluzione, team all'interno dell'organizzazione o in altro modo. Dopo aver creato i gruppi, è possibile [filtrare il dashboard Compliance Manager](compliance-manager-setup.md#filtering-your-dashboard-view) per visualizzare il Punteggio di uno o più gruppi.
 
-##### <a name="learn-more"></a>Altre informazioni
+##### <a name="learn-more"></a>Ulteriori informazioni
 
 [Creare e gestire valutazioni in Compliance Manager](compliance-manager-assessments.md).
 
@@ -115,7 +115,7 @@ Quando si creano valutazioni, è necessario assegnarle a un gruppo. È possibile
 
 Compliance Manager fornisce modelli che consentono di creare rapidamente valutazioni. È possibile modificare questi modelli per creare una valutazione ottimizzata per le proprie esigenze. È inoltre possibile creare una valutazione personalizzata creando un modello con i propri controlli e le proprie azioni. Ad esempio, potrebbe essere necessario un modello per coprire un controllo del processo aziendale interno o uno standard di protezione dei dati regionale non incluso in uno dei modelli di valutazione precompilati di 150 +.
 
-##### <a name="learn-more"></a>Altre informazioni
+##### <a name="learn-more"></a>Ulteriori informazioni
 
 [Visualizzare l'elenco dei modelli di valutazione forniti da Compliance Manager](compliance-manager-templates-list.md).
 
@@ -125,7 +125,7 @@ Compliance Manager fornisce modelli che consentono di creare rapidamente valutaz
 
 Le azioni di miglioramento consentono di centralizzare le attività di conformità. Ogni azione di miglioramento fornisce indicazioni consigliate che consentono di allineare le normative e i criteri di protezione dei dati. Le azioni di miglioramento possono essere assegnate agli utenti dell'organizzazione per eseguire il lavoro di implementazione e testing. È inoltre possibile archiviare la documentazione, le note e gli aggiornamenti dello stato del record all'interno dell'azione di miglioramento.
 
-##### <a name="learn-more"></a>Altre informazioni
+##### <a name="learn-more"></a>Ulteriori informazioni
 
 [Utilizzare azioni di miglioramento per gestire il flusso di lavoro di conformità](compliance-manager-improvement-actions.md).
 

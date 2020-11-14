@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Un classificatore addestrabile di Microsoft 365 è uno strumento che è possibile addestrare per riconoscere vari tipi di contenuto, fornendo campioni positivi e negativi da esaminare. Una volta che il classificatore è stato addestrato, conferma che i risultati sono accurati. È quindi possibile utilizzarla per eseguire una ricerca nel contenuto dell'organizzazione e classificarla in modo da applicare etichette di conservazione o di sensibilità o includerla nella prevenzione della perdita di dati (DLP) o nei criteri di conservazione.
-ms.openlocfilehash: 7abfbe101508d24e58464ff38b14ab87447001f0
-ms.sourcegitcommit: 5e40c760c1af2a4cc6d85cb782b17f5c979677c5
+ms.openlocfilehash: d26e33efea09c2afb33c2b5e5ade264cb8bfaee6
+ms.sourcegitcommit: fcc1b40732f28f075d95faffc1655473e262dd95
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48379308"
+ms.lasthandoff: 11/14/2020
+ms.locfileid: "49072945"
 ---
 # <a name="learn-about-classifiers-preview"></a>Informazioni sui classificatori (anteprima)
 
@@ -68,10 +68,10 @@ Le etichette di riservatezza possono utilizzare i classificatori come condizioni
 Microsoft 365 viene fornito con cinque classificatori prequalificati:
 
 > [!CAUTION]
-> Il classificatore preconfigurato per la **lingua offensiva** è obsoleto perché produce un numero elevato di falsi positivi. Non utilizzarlo e, se lo si sta attualmente utilizzando, è consigliabile spostarne i processi aziendali. Si consiglia di utilizzare invece la **minaccia**, la **profanità**e le **molestie** prequalificate.
+> Il classificatore preconfigurato per la **lingua offensiva** è obsoleto perché produce un numero elevato di falsi positivi. Non utilizzarlo e, se lo si sta attualmente utilizzando, è consigliabile spostarne i processi aziendali. Si consiglia di utilizzare invece la **minaccia** , la **profanità** e le **molestie** prequalificate.
 
-- **Resumes**: rileva gli elementi che sono account testuali di qualifiche personali, didattiche, professionali del richiedente, esperienze lavorative e altre informazioni di identificazione personale
-- **Codice sorgente**: consente di rilevare gli elementi che contengono una serie di istruzioni e istruzioni scritte nella Top 25 linguaggi di programmazione utilizzati su GitHub
+- **Resumes** : rileva gli elementi che sono account testuali di qualifiche personali, didattiche, professionali del richiedente, esperienze lavorative e altre informazioni di identificazione personale
+- **Codice sorgente** : consente di rilevare gli elementi che contengono una serie di istruzioni e istruzioni scritte nella Top 25 linguaggi di programmazione utilizzati su GitHub
     - ActionScript
     - C
     - C #
@@ -99,9 +99,9 @@ Microsoft 365 viene fornito con cinque classificatori prequalificati:
 > [!NOTE]
 > Il codice sorgente è addestrato per rilevare quando la maggior parte del testo è codice sorgente. Non rileva il testo del codice sorgente intervallato da testo normale.
 
-- **Molestie**: rileva una categoria specifica di elementi di testo di lingua offensiva relativi alla condotta offensiva che mira a una o più persone in base alle caratteristiche seguenti: razza, etnia, religione, origine nazionale, genere, orientamento sessuale, età, disabilità
-- **Parolacce**: rileva una categoria specifica di elementi di testo di lingua offensiva che contengono espressioni che imbarazzano la maggior parte delle persone
-- **Threat**: rileva una categoria specifica di elementi di testo offensivi relativi alle minacce per commettere violenze o arrecare danni fisici a una persona o a una proprietà
+- **Molestie** : rileva una categoria specifica di elementi di testo di lingua offensiva relativi alla condotta offensiva che mira a una o più persone in base alle caratteristiche seguenti: razza, etnia, religione, origine nazionale, genere, orientamento sessuale, età, disabilità
+- **Parolacce** : rileva una categoria specifica di elementi di testo di lingua offensiva che contengono espressioni che imbarazzano la maggior parte delle persone
+- **Threat** : rileva una categoria specifica di elementi di testo offensivi relativi alle minacce per commettere violenze o arrecare danni fisici a una persona o a una proprietà
 
 Questi vengono visualizzati nella visualizzazione classificazione dei classificati di **Microsoft 365 Compliance Center**  >  **Data Classification (Preview)**  >  **Trainable classifiers** con lo stato di `Ready to use` .
 
@@ -113,9 +113,6 @@ Questi vengono visualizzati nella visualizzazione classificazione dei classifica
 ### <a name="custom-classifiers"></a>Classificatori personalizzati
 
 Quando i classificatori prequalificati non soddisfano le proprie esigenze, è possibile creare e formare i propri classificatori. È molto più necessario collaborare con la creazione dei propri utenti, ma sarà molto meglio adattare le proprie esigenze alle organizzazioni.
-
-> [!IMPORTANT]
-> Per impostazione predefinita, solo l'utente che crea un classificatore personalizzato può formare ed esaminare le stime eseguite dal classificatore. Se si desidera che gli altri utenti siano in grado di formare e rivedere le stime del classificatore, vedere [Give others Train and Review Rights](classifier-get-started-with.md#give-others-train-and-review-rights).
 
 #### <a name="process-flow-for-creating-custom-classifiers"></a>Flusso di processo per la creazione di classificatori personalizzati
 

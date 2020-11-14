@@ -20,12 +20,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: f4cd713abdda0eba20e0b783ff89653ae02efb72
-ms.sourcegitcommit: bcb88a6171f9e7bdb5b2d8c03cd628d11c5e7bbf
+ms.openlocfilehash: b9d7655377b1bb5ff4810fd469efd092bd7a5f67
+ms.sourcegitcommit: fcc1b40732f28f075d95faffc1655473e262dd95
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48464086"
+ms.lasthandoff: 11/14/2020
+ms.locfileid: "49072925"
 ---
 # <a name="get-started-with-communication-compliance"></a>Introduzione alla conformità delle comunicazioni
 
@@ -65,9 +65,9 @@ A seconda del modo in cui si desidera gestire i criteri di comunicazione e gli a
 
 Scegliere tra queste opzioni del gruppo di ruoli quando si configura la conformità delle comunicazioni:
 
-|**Ruolo**|**Autorizzazioni di ruolo**|
+| Ruolo | Autorizzazioni di ruolo |
 |:-----|:-----|
-| **Conformità delle comunicazioni** | Utilizzare questo gruppo di ruoli per gestire la conformità di comunicazione per l'organizzazione in un singolo gruppo. Aggiungendo tutti gli account utente per gli amministratori, gli analisti, gli investigatori e i visualizzatori designati, è possibile configurare le autorizzazioni di conformità per le comunicazioni in un singolo gruppo. Questo gruppo di ruoli contiene tutti i ruoli di autorizzazione di conformità di comunicazione. Questa configurazione è il modo più semplice per iniziare rapidamente con la conformità alla comunicazione ed è adatta per le organizzazioni che non necessitano di autorizzazioni separate definite per gruppi di utenti separati. |
+| **Conformità alla comunicazione** | Utilizzare questo gruppo di ruoli per gestire la conformità di comunicazione per l'organizzazione in un singolo gruppo. Aggiungendo tutti gli account utente per gli amministratori, gli analisti, gli investigatori e i visualizzatori designati, è possibile configurare le autorizzazioni di conformità per le comunicazioni in un singolo gruppo. Questo gruppo di ruoli contiene tutti i ruoli di autorizzazione di conformità di comunicazione. Questa configurazione è il modo più semplice per iniziare rapidamente con la conformità alla comunicazione ed è adatta per le organizzazioni che non necessitano di autorizzazioni separate definite per gruppi di utenti separati. |
 | **Amministratore della conformità alla comunicazione** | Utilizzare questo gruppo di ruoli per configurare inizialmente la conformità della comunicazione e successivamente per separare gli amministratori della conformità di comunicazione in un gruppo definito. Gli utenti assegnati a questo gruppo di ruoli possono creare, leggere, aggiornare ed eliminare i criteri di conformità della comunicazione, le impostazioni globali e le assegnazioni dei gruppi di ruoli. Gli utenti assegnati a questo gruppo di ruoli non possono visualizzare gli avvisi dei messaggi. |
 | **Analista conformità comunicazione** | Utilizzare questo gruppo per assegnare le autorizzazioni agli utenti che fungeranno da analisti di conformità della comunicazione. Gli utenti assegnati a questo gruppo di ruoli possono visualizzare i criteri in cui vengono assegnati come revisori, visualizzare i metadati dei messaggi (non il contenuto del messaggio), inoltrare a revisori aggiuntivi o inviare notifiche agli utenti. Gli analisti non sono in grado di risolvere gli avvisi in sospeso. |
 | **Ricercatore conformità comunicazione** | Utilizzare questo gruppo per assegnare le autorizzazioni agli utenti che agiranno come ricercatori per la conformità della comunicazione. Gli utenti assegnati a questo gruppo di ruoli possono visualizzare i metadati e il contenuto del messaggio, inoltrare ai revisori aggiuntivi, inoltrare a un caso avanzato di eDiscovery, inviare notifiche agli utenti e risolvere l'avviso. |
@@ -85,7 +85,7 @@ Scegliere tra queste opzioni del gruppo di ruoli quando si configura la conformi
 
 5. Selezionare **Aggiungi** e quindi selezionare la casella di controllo per tutti gli utenti che si desidera aggiungere al gruppo di ruolo *conformità comunicazione* .
 
-6. Selezionare **Aggiungi**, quindi fare clic su **fine**.
+6. Selezionare **Aggiungi** , quindi fare clic su **fine**.
 
 7. Selezionare **Salva** per aggiungere gli utenti al gruppo di ruoli. Selezionare **Chiudi** per completare la procedura
 
@@ -103,7 +103,7 @@ Utilizzare questa opzione per assegnare gli utenti a specifici gruppi di ruoli p
 
 5. Selezionare **Aggiungi** e quindi selezionare la casella di controllo per tutti gli utenti che si desidera aggiungere al gruppo di ruoli.
 
-6. Selezionare **Aggiungi**, quindi fare clic su **fine**.
+6. Selezionare **Aggiungi** , quindi fare clic su **fine**.
 
 7. Selezionare **Salva** per aggiungere gli utenti al gruppo di ruoli.
 
@@ -125,9 +125,9 @@ Per istruzioni dettagliate su come abilitare il controllo, vedere [attivazione o
 
 Utilizzare il seguente grafico per facilitare la configurazione dei gruppi nell'organizzazione per i criteri di conformità della comunicazione:
 
-| **Membro del criterio** | **Gruppi supportati** | **Gruppi non supportati** |
+| Membro del criterio | Gruppi supportati | Gruppi non supportati |
 |:-----|:-----|:-----|
-|Utenti controllati <br> Utenti non controllati | Gruppi di distribuzione <br> Gruppi di Microsoft 365 | Gruppi di distribuzione dinamici |
+|Utenti controllati <br> Utenti non controllati | Gruppi di distribuzione <br> Gruppi di Microsoft 365 | Gruppi di distribuzione dinamici <br> Gruppi di sicurezza abilitati alla posta elettronica |
 | Revisori | Nessuno | Gruppi di distribuzione <br> Gruppi di distribuzione dinamici <br> Gruppi di sicurezza abilitati alla posta elettronica |
   
 Quando si assegna un gruppo di distribuzione nel criterio, il criterio monitora tutti i messaggi di posta elettronica e le chat dei team di ogni utente del gruppo di distribuzione. Quando si assegna un gruppo di Microsoft 365 nel criterio, il criterio monitora tutti i messaggi di posta elettronica e le chat di Team inviate a quel gruppo, non i singoli messaggi di posta elettronica e le chat ricevute da ogni membro del gruppo.
@@ -140,11 +140,11 @@ Se si è un'organizzazione che dispone di una distribuzione locale di Exchange o
 Per ulteriori informazioni sulla configurazione dei gruppi, vedere:
 
 - [Creazione e gestione dei gruppi di distribuzione](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-distribution-groups/manage-distribution-groups)
-- [Panoramica dei gruppi di Microsoft 365](https://docs.microsoft.com/office365/admin/create-groups/office-365-groups?view=o365-worldwide)
+- [Panoramica dei gruppi di Microsoft 365](https://docs.microsoft.com/office365/admin/create-groups/office-365-groups)
 
 ## <a name="step-4-optional-verify-your-yammer-tenant-is-in-native-mode"></a>Passaggio 4 (facoltativo): verificare che il tenant di Yammer sia in modalità nativa
 
-In modalità nativa, tutti gli utenti di Yammer sono in Azure Active Directory (AAD), tutti i gruppi sono gruppi di Office 365 e tutti i file vengono archiviati in SharePoint Online. Il tenant di Yammer deve essere in modalità nativa per i criteri di conformità della comunicazione per analizzare e identificare le conversazioni rischiose nei messaggi privati e nelle conversazioni della community in Yammer.
+In modalità nativa, tutti gli utenti di Yammer sono in Azure Active Directory (Azure AD), tutti i gruppi sono gruppi di Office 365 e tutti i file vengono archiviati in SharePoint Online. Il tenant di Yammer deve essere in modalità nativa per i criteri di conformità della comunicazione per analizzare e identificare le conversazioni rischiose nei messaggi privati e nelle conversazioni della community in Yammer.
 
 Per ulteriori informazioni sulla configurazione di Yammer in modalità nativa, vedere:
 
@@ -167,25 +167,36 @@ Per ulteriori informazioni sulla configurazione di Yammer in modalità nativa, v
     Se si sceglie un modello di criteri per creare un criterio, sarà necessario:
 
     - Confermare o aggiornare il nome del criterio. Non è possibile modificare i nomi dei criteri dopo la creazione del criterio.
+    
     - Scegliere gli utenti o i gruppi da controllare, inclusa la scelta degli utenti o dei gruppi che si desidera escludere.
+    
     - Scegliere i revisori per il criterio. I revisori sono utenti singoli e tutti i revisori devono disporre di cassette postali ospitate in Exchange Online. Revisori aggiunti qui sono i revisori che è possibile scegliere quando si effettua l'escalation di un avviso nel flusso di lavoro di analisi e correzione. Quando i revisori vengono aggiunti a un criterio, ricevono automaticamente un messaggio di posta elettronica che informa gli utenti dell'assegnazione ai criteri e fornisce collegamenti alle informazioni sul processo di revisione.
+    
     - Scegliere un campo di condizioni limitate, in genere un tipo di informazioni riservate o un dizionario di parole chiave da applicare al criterio.
 
     Se si sceglie di utilizzare la procedura guidata dei criteri per creare un criterio personalizzato, sarà necessario:
 
     - Assegnare al criterio un nome e una descrizione. Non è possibile modificare i nomi dei criteri dopo la creazione del criterio.
+    
     - Scegliere gli utenti o i gruppi da controllare, inclusi tutti gli utenti dell'organizzazione, utenti e gruppi specifici o altri utenti e gruppi che si desidera escludere.
+    
     - Scegliere i revisori per il criterio. I revisori sono utenti singoli e tutti i revisori devono disporre di cassette postali ospitate in Exchange Online. Revisori aggiunti qui sono i revisori che è possibile scegliere quando si effettua l'escalation di un avviso nel flusso di lavoro di analisi e correzione. Quando i revisori vengono aggiunti a un criterio, ricevono automaticamente un messaggio di posta elettronica che informa gli utenti dell'assegnazione ai criteri e fornisce collegamenti alle informazioni sul processo di revisione.
+    
     - Scegliere i canali di comunicazione da analizzare, tra cui Exchange, Microsoft teams, Yammer o Skype for business. Se si è configurato un connettore in Microsoft 365, è inoltre possibile scegliere di eseguire l'analisi delle origini di terze parti.
+    
     - Scegliere la direzione di comunicazione da monitorare, incluse le comunicazioni in ingresso, in uscita o interne.
+    
     - Definire le [condizioni](communication-compliance-feature-reference.md#ConditionalSettings)dei criteri di conformità della comunicazione. È possibile scegliere tra l'indirizzo del messaggio, la parola chiave, i tipi di file e le condizioni di corrispondenza delle dimensioni.
+    
     - Scegliere se si desidera includere tipi di informazioni riservate. In questo passaggio è possibile selezionare i tipi di informazioni riservate predefinite e personalizzate. Scegliere tra tipi di informazioni riservate personalizzate esistenti o dizionari di parole chiave personalizzati nella procedura guidata criteri di conformità della comunicazione. È possibile creare questi elementi prima di eseguire la procedura guidata, se necessario. È inoltre possibile creare nuovi tipi di informazioni riservate dall'interno della procedura guidata criteri di conformità della comunicazione.
-    - Scegliere se si desidera abilitare i classificatori. I classificatori possono rilevare la lingua e le immagini inappropriate inviate o ricevute nel corpo dei messaggi di posta elettronica o di altri tipi di testo. È possibile scegliere i seguenti classificatori incorporati: *minaccia*, *profanità*, *molestie mirate*, *Immagini per adulti*, *Immagini*in fila e *immagini cruente*.
+    
+    - Scegliere se si desidera abilitare i classificatori. I classificatori possono rilevare la lingua e le immagini inappropriate inviate o ricevute nel corpo dei messaggi di posta elettronica o di altri tipi di testo. È possibile scegliere i seguenti classificatori incorporati: *minaccia* , *profanità* , *molestie mirate* , *Immagini per adulti* , *Immagini* in fila e *immagini cruente*.
 
-    >[!CAUTION]
-    >Il classificatore predefinito **Linguaggio offensivo** è stato deprecato perché generava un numero elevato di falsi positivi. Non utilizzarlo e, se lo si sta attualmente utilizzando, è consigliabile spostarne i processi aziendali. È consigliabile utilizzare invece la **minaccia**, la **profanità**e i classificatori incorporati per **molestie mirate** .
+      > [!CAUTION]
+      > Il classificatore predefinito **Linguaggio offensivo** è stato deprecato perché generava un numero elevato di falsi positivi. Non utilizzarlo e, se lo si sta attualmente utilizzando, è consigliabile spostarne i processi aziendali. È consigliabile utilizzare invece la **minaccia** , la **profanità** e i classificatori incorporati per **molestie mirate** .
 
     - Definire la percentuale di comunicazioni da esaminare.
+    
     - Esaminare le selezioni dei criteri e creare il criterio.
 
 5. Selezionare **Crea criterio** quando si utilizzano i modelli o **Invia** quando si utilizza la procedura guidata per i criteri personalizzati.
@@ -227,10 +238,11 @@ Dopo aver creato un criterio di conformità della comunicazione, è consigliabil
 Eseguire la procedura seguente per testare i criteri di conformità della comunicazione:
 
 1. Aprire un client di posta elettronica, Microsoft teams o Yammer mentre è stato eseguito l'accesso come utente controllato definito nel criterio che si desidera sottoporre a test.
+
 2. Inviare un messaggio di posta elettronica, Microsoft teams chat o Yammer che soddisfi i criteri definiti nel criterio di conformità della comunicazione. Questo test può essere una parola chiave, le dimensioni degli allegati, il dominio e così via. Assicurarsi di determinare se le impostazioni condizionali configurate nel criterio sono troppo restrittive o troppo indulgenti.
 
     > [!NOTE]
-    > Le comunicazioni in tutti i canali di origine possono richiedere fino a 24 ore per il processo completo in un criterio.
+    > I messaggi di posta elettronica possono richiedere fino a 24 ore per elaborarli completamente in un criterio. Le comunicazioni in Microsoft teams, Yammer e le piattaforme di terze parti possono richiedere fino a 48 ore per il processo completo in un criterio.
 
 3. Accedere a Microsoft 365 come un revisore designato nei criteri di conformità della comunicazione. Passare a **avvisi conformità comunicazione**  >  **Alerts** per visualizzare gli avvisi per i criteri.
 
@@ -238,6 +250,6 @@ Eseguire la procedura seguente per testare i criteri di conformità della comuni
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-Dopo aver completato questa procedura per creare il primo criterio di conformità della comunicazione, si inizierà a ricevere avvisi da indicatori di attività dopo circa 24 ore. Configurare criteri aggiuntivi in base alle esigenze utilizzando le indicazioni riportate nel passaggio 5 di questo articolo.
+Dopo aver completato questa procedura per creare il primo criterio di conformità della comunicazione, si inizierà a ricevere avvisi da indicatori attività dopo 24-48 ore. Configurare criteri aggiuntivi in base alle esigenze utilizzando le indicazioni riportate nel passaggio 5 di questo articolo.
 
 Per ulteriori informazioni su come esaminare gli avvisi relativi alla conformità della comunicazione, vedere [indagare e correggere gli avvisi di conformità della comunicazione](communication-compliance-investigate-remediate.md).

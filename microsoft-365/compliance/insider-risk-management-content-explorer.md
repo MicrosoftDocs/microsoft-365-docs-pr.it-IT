@@ -12,16 +12,16 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 1523e80f187cd7df6d8e44b91b85c39608e2f49c
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 6eb8bf91f5af60658686066b75b33b7a8dabe6bc
+ms.sourcegitcommit: e03bc2945e63f7f2638257e530056ae9283b45d9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47416490"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "49070870"
 ---
 # <a name="insider-risk-management-content-explorer"></a>Esploratore contenuto gestione dei rischi Insider
 
-L'esploratore contenuto di gestione dei rischi insider consente agli utenti assegnati al ruolo **investigatori di gestione dei rischi Insider** di esaminare il contesto e i dettagli delle comunicazioni acquisite negli avvisi. Per tutti gli avvisi, le copie dei dati e i file dei messaggi vengono archiviati come snapshot nel tempo degli elementi, mantenendo i file e i messaggi originali nelle origini di archiviazione. La copia di dati e messaggi è trasparente per l'utente associato all'avviso e per il proprietario del contenuto. Le impostazioni di autorizzazione e i diritti di accesso per i dati vengono mantenuti per il contenuto copiato e i messaggi e gli analisti dei rischi e gli investigatori devono disporre di tali autorizzazioni e diritti, se necessario, per aprire e visualizzare i file. A ciascun file e al messaggio viene assegnato automaticamente un ID file univoco nel caso di gestione dei rischi Insider per la gestione. I documenti associati alle attività degli indicatori di dispositivo non sono inclusi in Esplora contenuto.
+L'esploratore contenuto di gestione dei rischi insider consente agli utenti assegnati al ruolo *investigatori di gestione dei rischi Insider* di esaminare il contesto e i dettagli del contenuto associato all'attività negli avvisi. Per tutti gli avvisi confermati in un caso, le copie dei dati e i file dei messaggi vengono archiviati come snapshot nel tempo degli elementi, mantenendo i file e i messaggi originali nelle origini di archiviazione. La copia di dati e messaggi è trasparente per l'utente associato all'avviso e per il proprietario del contenuto. Se il contenuto include autorizzazioni di Information Rights Management, queste autorizzazioni vengono mantenute per il contenuto copiato e gli utenti assegnati al ruolo *investigatori di gestione dei rischi Insider* avranno bisogno di tali autorizzazioni e diritti, se necessario, per aprire e visualizzare i file. A ciascun file e al messaggio viene assegnato automaticamente un ID file univoco nel caso di gestione dei rischi Insider a scopo di gestione. I documenti associati alle attività degli indicatori di dispositivo non sono inclusi in Esplora contenuto.
 
 ![Esploratore contenuto gestione dei rischi Insider](../media/insider-risk-content-explorer.png)
 
@@ -44,7 +44,7 @@ Per aggiungere o rimuovere intestazioni di colonna per la coda di contenuto, uti
 | **Tema dominante** | Tema dominante calcolato per l'analisi. |
 | **ID set di posta elettronica** | ID gruppo per tutti i messaggi nello stesso set di posta elettronica. |
 | **ID famiglia** | Gruppi di ID famiglia insieme tutti gli elementi; per la posta elettronica, questa colonna include il messaggio e tutti gli allegati. per i documenti, questa colonna include il documento e tutti gli elementi incorporati. |
-| **Classe file** | Per il contenuto di SharePoint e OneDrive: **Document**; per il contenuto da Exchange: * * E-mail o **allegato**. |
+| **Classe file** | Per il contenuto di SharePoint e OneDrive: **Document** ; per il contenuto da Exchange: * * E-mail o **allegato**. |
 | **ID file** | Identificatore di documento univoco all'interno del caso. |
 | **Icona tipo di file** | L'estensione di un file; ad esempio, docx, 1, pptx o xlsx. Questo campo è la stessa proprietà della proprietà del sito FileExtension. |
 | **ID** | Identificatore GUID per il file. |
@@ -127,7 +127,7 @@ Nella tabella seguente sono elencate le condizioni delle proprietà dei messaggi
 | **Partecipanti** | Tutti i campi persone in un messaggio di posta elettronica. Questi campi sono da, a, CC e Ccn. |
 | **Received** | La data in cui un messaggio di posta elettronica viene ricevuto da un destinatario. |
 | **Domini destinatario** | Elenco di tutti i domini dei destinatari di un messaggio. |
-| **Mittente** | Campo mittente (da) per i tipi di messaggio.  Format è **DisplayName \<SmtpAddress> **. |
+| **Mittente** | Campo mittente (da) per i tipi di messaggio.  Format è **DisplayName \<SmtpAddress>**. |
 | **Dominio mittente** | Dominio del mittente. |
 | **Oggetto** | Il testo nella riga dell'oggetto di un messaggio di posta elettronica.  <br/> **Nota:** Quando si utilizza la proprietà Subject in una query, la ricerca restituisce tutti i messaggi in cui la riga dell'oggetto contiene il testo che si sta cercando. In altre parole, la query non restituisce solo i messaggi che hanno una corrispondenza esatta. Ad esempio, se si cerca `subject:"Quarterly Financials"` , i risultati includono i messaggi con l'oggetto "Financials trimestrali 2018". |
 | **To** | Il campo To (A) di un messaggio di posta elettronica. |
@@ -148,7 +148,7 @@ Nella tabella seguente sono elencate le condizioni delle proprietà dei document
 | **Custode** | Nome del custode a cui è stato associato l'elemento. |
 | **Tema dominante** | Tema dominante calcolato per l'analisi. |
 | **ID famiglia** | Gruppi di ID famiglia insieme tutti gli elementi; per la posta elettronica, questo campo include il messaggio e tutti gli allegati. per i documenti, questo campo include il documento e tutti gli elementi incorporati. |
-| **Classe file** | Per il contenuto di SharePoint e OneDrive: **Document**; per il contenuto da Exchange: * * E-mail o **allegato**. |
+| **Classe file** | Per il contenuto di SharePoint e OneDrive: **Document** ; per il contenuto da Exchange: * * E-mail o **allegato**. |
 | **Tipi di file** | L'estensione di un file; ad esempio, docx, 1, pptx o xlsx. |
 | **Ha un partecipante all'avvocato** | Ha valore true se almeno uno dei partecipanti è presente nell'elenco degli avvocati. in caso contrario, il valore è false. |
 | **ID non modificabile** | ID non modificabile memorizzato in Office 365. |

@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Un classificatore Microsoft 365 è uno strumento che è possibile addestrare per riconoscere vari tipi di contenuto fornendo esempi da esaminare. In questo articolo viene illustrato come creare e formare un classificatore personalizzato e come riqualificarli per aumentare l'accuratezza.
-ms.openlocfilehash: f0d3659c1ee03fe69a5513f24d15b295400a24dc
-ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
+ms.openlocfilehash: 9fe50f7faada77492fd93a86d0c3549cc8e1d361
+ms.sourcegitcommit: fcc1b40732f28f075d95faffc1655473e262dd95
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "48906347"
+ms.lasthandoff: 11/14/2020
+ms.locfileid: "49072965"
 ---
 # <a name="get-started-with-trainable-classifiers-preview"></a>Introduzione ai classificatori sottoponibili a training (anteprima)
 
@@ -53,7 +53,7 @@ Sono necessari account con queste autorizzazioni per l'utilizzo dei classificato
 - Scenario di criteri di conformità della comunicazione: amministratore di gestione dei rischi Insider, Responsabile Revisione di supervisione 
 
 > [!IMPORTANT]
-> Per impostazione predefinita, solo l'utente che crea un classificatore personalizzato può formare ed esaminare le stime eseguite dal classificatore. Se si desidera che gli altri utenti siano in grado di formare e rivedere le stime del classificatore, vedere [Give others Train and Review Rights](#give-others-train-and-review-rights).
+> Per impostazione predefinita, solo l'utente che crea un classificatore personalizzato può formare ed esaminare le stime eseguite dal classificatore.
 
 ## <a name="prepare-for-a-custom-trainable-classifier"></a>Prepararsi per un classificatore addestrabile personalizzato 
 
@@ -156,21 +156,3 @@ Dopo che il classificatore addestratore ha elaborato campioni positivi sufficien
 20. Pubblicare il classificatore.
 
 21. Dopo aver pubblicato il classificatore sarà disponibile come condizione in [Office auto-Labeling con etichette di riservatezza](apply-sensitivity-label-automatically.md), [applicare automaticamente i criteri delle etichette di conservazione in base a una condizione](apply-retention-labels-automatically.md#configuring-conditions-for-auto-apply-retention-labels) e in [conformità alla comunicazione](communication-compliance.md).
-
-## <a name="give-others-train-and-review-rights"></a>Concedere a altri i diritti di treno e Revisione
-
-Utilizzare questa procedura per concedere ad altri utenti le autorizzazioni per la formazione, la revisione e la ottimizzazione del classificatore addestrabile personalizzato.  
- 
-1. In qualità di creatore del classificatore, un amministratore globale o un amministratore di eDiscovery si connettono al centro conformità tramite PowerShell utilizzando le procedure descritte in [Connect to Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell?view=exchange-ps&preserve-view=true).
-
-2. Eseguire questo comando:
-
-   ```powershell
-   Add-ComplianceCaseMember -Case "<classifier name>" -Member "<user or role group>"
-   ```
-   
-   Ad esempio:
-   
-   `Add-ComplianceCaseMember -Case "Financial Contract Classifier" -Member johnevans@contoso.com`
-
-   È possibile eseguire questo comando più volte per aggiungere più utenti. Si noti che è possibile aggiungere solo gruppi di ruoli di Exchange Online Protection (EOP) e non gruppi di ruoli di Azure.
