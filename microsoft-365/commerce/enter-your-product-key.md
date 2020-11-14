@@ -15,34 +15,30 @@ ms.collection:
 - commerce
 - Adm_NonTOC
 search.appverid:
-- BCS160
 - MET150
-- MOE150
-- BEA160
-ms.assetid: 0199dd39-7c46-4875-af9b-588df3a9afea
 ROBOTS: NOINDEX
 description: Informazioni su come riscattare un codice Product Key Microsoft 365 business standard acquistato in un negozio al dettaglio.
 ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
-ms.openlocfilehash: 9dcf38937e6140f1b0b20688d1dac0a9f3962cbe
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 1c647efaa880096a9fc7713aa28960d563eff69d
+ms.sourcegitcommit: fcc1b40732f28f075d95faffc1655473e262dd95
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48638364"
+ms.lasthandoff: 11/14/2020
+ms.locfileid: "49072748"
 ---
 # <a name="enter-your-product-key-for-microsoft-365-business-standard"></a>Immettere il codice "Product Key" per Microsoft 365 business standard
 
-Se è stato acquistato Microsoft 365 business standard da un punto vendita, questo articolo consente di attivare l'abbonamento. 
+Se è stato acquistato Microsoft 365 business standard da un punto vendita, questo articolo consente di attivare l'abbonamento.
   
  **Serve altro?**
- **Per informazioni sulla famiglia microsoft 365 o su microsoft 365 Personal**, vedere [utilizzo dei codici Product Key con Office](https://support.microsoft.com/office/12a5763a-d45c-4685-8c95-a44500213759.aspx).  
+ **Per informazioni sulla famiglia microsoft 365 o su microsoft 365 Personal** , vedere [utilizzo dei codici Product Key con Office](https://support.microsoft.com/office/12a5763a-d45c-4685-8c95-a44500213759.aspx).  
  **Si ha un contratto multilicenza?** Se Microsoft 365 for business è stato acquistato tramite un [programma Microsoft Open License](https://go.microsoft.com/fwlink/p/?LinkID=613298), vedere l'articolo [immettere il codice Product Key acquistato da Microsoft Open](purchases-from-microsoft-open.md).
   
 ## <a name="activate-a-new-subscription"></a>Attivare un nuovo abbonamento
 
-1. Accedere a <a href="https://go.microsoft.com/fwlink/p/?LinkId=839911" target="_blank">Office.com/SetupKey</a>.
+1. Passare a <a href="https://go.microsoft.com/fwlink/p/?LinkId=839911" target="_blank">https://microsoft365.com/setupbusiness</a>.
 
 2. Immettere il codice "Product Key", quindi selezionare **Avanti**.
 
@@ -59,7 +55,7 @@ Se è stato acquistato Microsoft 365 business standard da un punto vendita, ques
 
 ## <a name="extend-the-expiration-date-or-add-a-license-to-an-existing-subscription"></a>Estendere la data di scadenza o aggiungere una licenza a un abbonamento esistente
 
-Per utilizzare un codice "Product Key" per estendere la data di scadenza o aggiungere una licenza alla sottoscrizione Microsoft 365 business standard esistente, è necessaria una chiave nuova e inutilizzata per lo stesso piano di Microsoft 365. L'immissione del codice Product Key originale di Microsoft 365 non funzionerà perché non è possibile utilizzare di nuovo un tasto che è già stato riscattato. Vedere [aggiungere licenze o estendere una sottoscrizione a pagamento per l'utilizzo di un codice Product Key](licenses/add-licenses-using-product-key.md).
+Per estendere la data di scadenza o aggiungere una licenza alla sottoscrizione Microsoft 365 business standard esistente, utilizzare una chiave nuova e inutilizzata per lo stesso piano di Microsoft 365. L'immissione del codice Product Key originale di Microsoft 365 non funzionerà perché non è possibile utilizzare di nuovo un tasto che è già stato riscattato. Vedere [aggiungere licenze o estendere una sottoscrizione a pagamento per l'utilizzo di un codice Product Key](licenses/add-licenses-using-product-key.md).
 
 ## <a name="whats-next"></a>Operazioni successive
 

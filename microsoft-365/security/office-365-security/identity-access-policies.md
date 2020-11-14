@@ -18,12 +18,12 @@ ms.collection:
 - remotework
 - m365solution-identitydevice
 - m365solution-scenario
-ms.openlocfilehash: f9c26e7e4af99174c5723b44c59d7279ca93afa5
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 19e121ce3f85dc31c3bf81c4750300c4016b1222
+ms.sourcegitcommit: fcc1b40732f28f075d95faffc1655473e262dd95
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48846449"
+ms.lasthandoff: 11/14/2020
+ms.locfileid: "49072772"
 ---
 # <a name="common-identity-and-device-access-policies"></a>Criteri comuni di identità e accesso dei dispositivi
 
@@ -35,8 +35,9 @@ In questa guida viene descritto come distribuire i criteri consigliati in un amb
 
 Nel diagramma seguente viene illustrato il set di criteri consigliato. Indica il livello di protezione a cui si applica ogni criterio e se i criteri si applicano ai PC o ai telefoni e ai tablet oppure a entrambe le categorie di dispositivi. Indica inoltre la posizione in cui vengono configurati i criteri.
 
-[ ![ Criteri comuni per la configurazione dell'identità e dell'accesso ai dispositivi](../../media/microsoft-365-policies-configurations/Identity_device_access_policies_byplan.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/Identity_device_access_policies_byplan.png) 
- [vedere una versione più grande di questa immagine](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/Identity_device_access_policies_byplan.png)
+[![Criteri comuni per la configurazione dell'identità e dell'accesso ai dispositivi](../../media/microsoft-365-policies-configurations/Identity_device_access_policies_byplan.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/Identity_device_access_policies_byplan.png)
+
+[Visualizzazione di una versione più grande di questa immagine](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/Identity_device_access_policies_byplan.png)
 
 Di seguito viene indicato un riepilogo di una pagina in formato PDF con collegamenti ai singoli criteri:
 

@@ -26,12 +26,12 @@ search.appverid:
 - IWA160
 ms.assetid: 932ad3ad-533c-418a-b938-6e44e8bc33b0
 description: Visualizzare lo stato di integrità dei servizi Microsoft 365 prima di contattare il supporto per verificare se è presente un'interruzione del servizio attiva.
-ms.openlocfilehash: 20e19072e1a851fba20e556be696146b8ad57a2f
-ms.sourcegitcommit: 392f60efa0921c64ac1462dd63985cd156e6498a
+ms.openlocfilehash: b1819e455732d142c563f598433c410b0ae60882
+ms.sourcegitcommit: fcc1b40732f28f075d95faffc1655473e262dd95
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "48134076"
+ms.lasthandoff: 11/14/2020
+ms.locfileid: "49072760"
 ---
 # <a name="how-to-check-microsoft-365-service-health"></a>Come verificare l'integrità del servizio Microsoft 365
 
@@ -39,7 +39,8 @@ ms.locfileid: "48134076"
 
 È possibile visualizzare l'integrità dei servizi Microsoft, tra cui Office sul Web, Yammer, Microsoft Dynamics CRM e servizi cloud per la gestione di dispositivi mobili, nella pagina **integrità del servizio** nell'interfaccia di amministrazione di [Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=2024339). If you are experiencing problems with a cloud service, you can check the service health to determine whether this is a known issue with a resolution in progress before you call support or spend time troubleshooting.
 
-Se non si è in grado di accedere al portale del servizio, è possibile utilizzare la [pagina stato del servizio](https://status.office365.com) per verificare la disponibilità di problemi noti che impediscono l'accesso al tenant.
+Se non si è in grado di accedere all'interfaccia di amministrazione, è possibile utilizzare la [pagina stato del servizio](https://status.office365.com) per verificare la disponibilità di problemi noti che impediscono l'accesso al tenant.  Iscriviti anche per seguirci su [@MSFT365status](https://twitter.com/MSFT365Status) su Twitter per visualizzare informazioni su alcuni eventi.
+
   
 ### <a name="how-to-check-service-health"></a>Come verificare l'integrità dei servizi
 
@@ -50,7 +51,7 @@ Se non si è in grado di accedere al portale del servizio, è possibile utilizza
   
 2. Se non si utilizza il nuovo interfaccia di amministrazione, nella **Home** page selezionare il pulsante **prova il nuovo** interfaccia di amministrazione nell'angolo in alto a destra.
 
-3. Per visualizzare l'integrità del servizio, nell'interfaccia di amministrazione passare **Health**a  >  **integrità del servizio**integrità oppure selezionare la scheda integrità del **servizio** nel **dashboard principale**. La scheda del dashboard indica se esiste un problema del servizio attivo e si collega alla pagina di **integrità del servizio** dettagliato.
+3. Per visualizzare l'integrità del servizio, nell'interfaccia di amministrazione passare **Health** a  >  **integrità del servizio** integrità oppure selezionare la scheda integrità del **servizio** nel **dashboard principale**. La scheda del dashboard indica se esiste un problema del servizio attivo e si collega alla pagina di **integrità del servizio** dettagliato.
   
 4. Nella pagina **integrità del servizio** , lo stato di integrità di ogni servizio cloud viene visualizzato in un formato di tabella.
 
@@ -62,11 +63,11 @@ Per filtrare la visualizzazione per i servizi che stanno vivendo un incidente, s
 
 La scheda **cronologia** Visualizza la cronologia degli incidenti e degli avvisi risolti.
 
-Se si verifica un problema con un servizio Microsoft 365 e non viene visualizzato nell'elenco nella pagina **integrità del servizio** , parlarne selezionando **segnala un problema**e completando la maschera breve. Verranno esaminati i dati correlati e i report di altre organizzazioni per vedere quanto è diffuso il problema e se sono stati originati dal servizio. In tal caso, verrà aggiunto come nuovo incidente o Advisory nella pagina **integrità del servizio** , in cui è possibile monitorarne la risoluzione. Se non viene visualizzato nell'elenco entro circa 30 minuti, prendere in considerazione l'eventualità di contattare il supporto tecnico per risolvere il problema.
+Se si verifica un problema con un servizio Microsoft 365 e non viene visualizzato nell'elenco nella pagina **integrità del servizio** , parlarne selezionando **segnala un problema** e completando la maschera breve. Verranno esaminati i dati correlati e i report di altre organizzazioni per vedere quanto è diffuso il problema e se sono stati originati dal servizio. In tal caso, verrà aggiunto come nuovo incidente o Advisory nella pagina **integrità del servizio** , in cui è possibile monitorarne la risoluzione. Se non viene visualizzato nell'elenco entro circa 30 minuti, prendere in considerazione l'eventualità di contattare il supporto tecnico per risolvere il problema.
 
-Per personalizzare la visualizzazione dei servizi visualizzati nel dashboard, selezionare **Preferenze**  >  **visualizzazione personalizzata**e deselezionare le caselle di controllo per i servizi che si desidera escludere dalla visualizzazione del dashboard di integrità del servizio. Verificare che sia selezionata la casella di controllo per ogni servizio che si desidera monitorare.    
+Per personalizzare la visualizzazione dei servizi visualizzati nel dashboard, selezionare **Preferenze**  >  **visualizzazione personalizzata** e deselezionare le caselle di controllo per i servizi che si desidera escludere dalla visualizzazione del dashboard di integrità del servizio. Verificare che sia selezionata la casella di controllo per ogni servizio che si desidera monitorare.    
 
-Per iscriversi per le notifiche di posta elettronica di nuovi incidenti che influiscono sul tenant e le modifiche dello stato per un incidente attivo, selezionare **Preferenze**di  >  **posta elettronica**, fare clic su **Invia me notifiche brughiere del servizio nella posta elettronica**e quindi specificare quanto segue:
+Per iscriversi per le notifiche di posta elettronica di nuovi incidenti che influiscono sul tenant e le modifiche dello stato per un incidente attivo, selezionare **Preferenze** di  >  **posta elettronica** , fare clic su **Invia me notifiche brughiere del servizio nella posta elettronica** e quindi specificare quanto segue:
 
 - Fino a due indirizzi di posta elettronica.
 - Se si desiderano notifiche per gli eventi o gli avvisi
