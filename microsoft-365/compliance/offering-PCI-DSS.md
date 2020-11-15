@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 00f9832eadb55b3056ca3fcd3a79ee12afe83034
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: cb4d1a4c4632763506fd2d3b05431acb9233f744
+ms.sourcegitcommit: d333d82fd5e4f3265e8b9372094e85875bee6fe5
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48841885"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "49071964"
 ---
 # <a name="payment-card-industry-pci-data-security-standard-dss"></a>Payment Card Industry (PCI) Data Security Standard (DSS)
 
@@ -37,9 +37,9 @@ I clienti che intendono sviluppare un ambiente per i titolari di carte di credit
 
 È importante capire che lo stato di conformità allo standard PCI DSS di Azure, OneDrive for Business e SharePoint Online non si traduce automaticamente in una certificazione PCI DSS per i servizi che i clienti creano o ospitano su queste piattaforme. Il rispetto dei requisiti PCI DSS è responsabilità dei clienti.
 
-## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud Microsoft inclusi
+## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud Microsoft associati
 
-- [Azure e Azure per enti pubblici](https://aka.ms/AzureCompliance)
+- [Azure e Azure per enti pubblici](https://azure.microsoft.com/global-infrastructure/government/)
 - Microsoft Cloud App Security
 - Servizio cloud Flow, indipendente o incluso in un piano o in una famiglia di prodotti Office 365 o Dynamics 365
 - Microsoft Graph
@@ -60,7 +60,7 @@ Per creare e implementare una soluzione PCI DSS nel cloud in maniera ancora più
 
 ## <a name="frequently-asked-questions"></a>Domande frequenti
 
-**Perché la data riportata sulla prima pagina dell'Attestato di conformità adeguamento (AoC) è ‘giugno 2018’?**
+**Perché la data riportata sulla prima pagina dell'Attestato di conformità adeguamento (AoC) è “giugno 2018”?**
 
 La data giugno 2018 riportata sulla prima pagina dell’attestato si riferisce a quando il modello AoC è stato pubblicato. Fare riferimento alla Sezione 2 per la data della valutazione.
 
@@ -82,7 +82,7 @@ PCI DSS si applica a qualsiasi azienda, a prescindere dalle dimensioni o dal num
 
 **Come inizio il processo di adeguamento a PCI DSS della mia organizzazione per una soluzione in un ambiente Azure?**
 
-Le pubblicazioni del PCI Security Standards Council offrono informazioni molto utili sui requisiti di conformità. L’organizzazione pubblica la [PCI DSS Quick Reference Guide](https://www.pcisecuritystandards.org/documents/PCISSC%20QRG%20August%202014%20-print.pdf) per gli esercenti e gli altri istituti che elaborano i pagamenti con le carte. La guida spiega come lo standard PCI DSS contribuisce a proteggere l'ambiente in cui avvengono le transazioni con carta di credito e come applicarlo.
+Le pubblicazioni del PCI Security Standards Council offrono informazioni molto utili sui requisiti di conformità. L’organizzazione pubblica la [Guida di riferimento rapida PCI DSS](https://www.pcisecuritystandards.org/documents/PCISSC%20QRG%20August%202014%20-print.pdf) per gli esercenti e gli altri istituti che elaborano i pagamenti con le carte. La guida spiega come lo standard PCI DSS contribuisce a proteggere l'ambiente in cui avvengono le transazioni con carta di credito e come applicarlo.
 
 Il processo di adeguamento implica diversi elementi, tra cui la valutazione dei sistemi e dei processi non ospitati in Azure. I singoli requisiti dipendono dai servizi di Azure usati e da come vengono impiegati nell'ambito della soluzione.
 
@@ -96,7 +96,7 @@ Attualmente, solo i file e i documenti caricati su OneDrive for Business e Share
 
 ## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>Usare Microsoft Compliance Manager per valutare i rischi
 
-[Microsoft Compliance Manager](compliance-manager.md) è una funzionalità nel [Centro conformità Microsoft 365](microsoft-365-compliance-center.md) utile per comprendere lo stato di conformità dell'organizzazione e intraprendere azioni per ridurre i rischi. Compliance Manager offre un modello premium per creare una valutazione per questa normativa. Individuare il modello nella pagina **modelli di valutazioni** in Compliance Manager. Informazioni su come [creare valutazioni in Compliance Manager](compliance-manager-assessments.md).
+[Microsoft Compliance Manager](compliance-manager.md) è una funzionalità del [Centro conformità Microsoft 365](microsoft-365-compliance-center.md) utile per comprendere lo stato di conformità dell'organizzazione e adottare misure per ridurre i rischi. Compliance Manager offre un modello premium per creare una valutazione per questa normativa. È possibile trovare il modello nella pagina dei **modelli di valutazione** in Compliance Manager. Informazioni su come [creare valutazioni in Compliance Manager](compliance-manager-assessments.md).
 
 ## <a name="resources"></a>Risorse
 

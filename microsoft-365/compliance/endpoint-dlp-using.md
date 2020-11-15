@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Informazioni su come configurare i criteri di prevenzione della perdita dei dati (DLP) per usare le posizioni di Prevenzione della perdita di dati degli endpoint di Microsoft 365.
-ms.openlocfilehash: 6de6443dc0d276c862db43963ac28bd762e3756f
-ms.sourcegitcommit: 89f56c3e0b619a4700a75a21927d9ffc90658632
+ms.openlocfilehash: 64cdfeab4b527dd3b84e7586d1419e5bf8b383df
+ms.sourcegitcommit: fcc1b40732f28f075d95faffc1655473e262dd95
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48984920"
+ms.lasthandoff: 11/14/2020
+ms.locfileid: "49073105"
 ---
 # <a name="using-endpoint-data-loss-prevention"></a>Uso della prevenzione della perdita di dati degli endpoint
 
@@ -43,7 +43,7 @@ Oppure
   > [!div class="mx-imgBorder"]
   > ![Impostazioni DLP](../media/endpoint-dlp-1-using-dlp-settings.png)
 
-### <a name="file-path-exclusions"></a>Esclusioni di percorsi di file
+### <a name="file-path-exclusions"></a>esclusioni di percorsi di file
 
 È possibile escludere alcuni percorsi dal monitoraggio DLP, dagli avvisi DLP e dall'applicazione dei criteri DLP nei dispositivi, perché sono troppo disturbati o non contengono file a cui si è interessati. I file presenti in tali posizioni non verranno controllati e i file creati o modificati in tali posizioni non saranno soggetti all'applicazione dei criteri di prevenzione della perdita dei dati. È possibile configurare le esclusioni di percorsi nelle impostazioni DLP.
 
@@ -113,11 +113,11 @@ Per acquisire familiarità con le funzionalità di Endpoint DLP e su come vengon
 
 ### <a name="scenario-1-create-a-policy-from-a-template-audit-only"></a>Scenario 1: Creare un criterio da un modello, solo controllo
 
-Per questi scenari è necessario aver già eseguito l'onboarding di dispositivi, che inviano report a Esplora attività. Se non si è ancora eseguito l'onboarding di dispositivi, vedere [Introduzione alla prevenzione della perdita di dati degli endpoint (anteprima)](endpoint-dlp-getting-started.md).
+Per questi scenari è necessario aver già eseguito l'onboarding di dispositivi, che inviano report a Esplora attività. Se ancora non si è effettuato l’onboarding dei dispositivi, vedere [Introduzione alla prevenzione della perdita di dati degli endpoint](endpoint-dlp-getting-started.md).
 
 1. Aprire la [pagina Prevenzione della perdita dei dati](https://compliance.microsoft.com/datalossprevention?viewid=policies).
 
-2. Scegliere **Crea criterio (anteprima)**.
+2. Scegliere **Crea criterio**.
 
 3. Per questo scenario, scegliere **Privacy** e poi **Informazioni personali (USA)** , quindi sceg **Avanti**.
 
@@ -147,7 +147,7 @@ Per questi scenari è necessario aver già eseguito l'onboarding di dispositivi,
 
 2. Scegliere il criterio **Informazioni personali (USA)** creato nello scenario 1.
 
-3. Scegliere **Modifica criterio (anteprima)**.
+3. Scegliere **Modifica criterio**.
 
 4. Passare alla pagina **Regole avanzate di prevenzione della perdita dei dati** e modificare il **Rilevato un volume ridotto di contenuti con informazioni personali (Stati Uniti)**.
 
@@ -172,7 +172,7 @@ Per questi scenari è necessario aver già eseguito l'onboarding di dispositivi,
 
 2. Scegliere il criterio **Informazioni personali (USA)** creato nello scenario 1.
 
-3. Scegliere **Modifica criterio (anteprima)**.
+3. Scegliere **Modifica criterio**.
 
 4. Passare alla pagina **Regole avanzate di prevenzione della perdita dei dati** e modificare il **Rilevato un volume ridotto di contenuti con informazioni personali (Stati Uniti)**.
 
@@ -198,8 +198,8 @@ Per questi scenari è necessario aver già eseguito l'onboarding di dispositivi,
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Informazioni sulla prevenzione della perdita di dati degli endpoint (anteprima)](endpoint-dlp-learn-about.md)
-- [Introduzione alla prevenzione della perdita di dati degli endpoint (anteprima)](endpoint-dlp-getting-started.md)
+- [Informazioni sulla prevenzione della perdita di dati degli endpoint](endpoint-dlp-learn-about.md)
+- [Introduzione alla prevenzione della perdita di dati degli endpoint](endpoint-dlp-getting-started.md)
 - [Panoramica sulla prevenzione della perdita dei dati](data-loss-prevention-policies.md)
 - [Creare, testare e ottimizzare un criterio di prevenzione della perdita dei dati](create-test-tune-dlp-policy.md)
 - [Introduzione a Esplora attività](data-classification-activity-explorer.md)
