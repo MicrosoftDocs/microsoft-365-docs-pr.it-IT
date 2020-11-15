@@ -19,16 +19,16 @@ ms.collection:
 search.appverid:
 - MET150
 description: Configurare la prevenzione della perdita di dati degli endpoint di Microsoft 365 per monitorare le attività dei file e implementare azioni di protezione per questi file negli endpoint.
-ms.openlocfilehash: 3f29d8e49daa6dd4f0900e0e92123306c799c6ee
-ms.sourcegitcommit: da34ac08c7d029c2c42d4428d0bb03fd57c448be
+ms.openlocfilehash: 6ba3b83d634f946f818890a732a83166f346162d
+ms.sourcegitcommit: fcc1b40732f28f075d95faffc1655473e262dd95
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "48999418"
+ms.lasthandoff: 11/14/2020
+ms.locfileid: "49073095"
 ---
 # <a name="get-started-with-endpoint-data-loss-prevention"></a>Introduzione alla prevenzione della perdita di dati degli endpoint
 
-La prevenzione della perdita dei dati degli endpoint di Microsoft (Endpoint DLP) fa parte della famiglia di funzionalità della prevenzione della perdita dei dati di Microsoft 365 che è possibile usare per rilevare e proteggere elementi riservati nei servizi Microsoft 365. Per ulteriori informazioni sull'offerta completa della prevenzione della perdita di dati di Microsoft, vedere [Panoramica della prevenzione della perdita dei dati](data-loss-prevention-policies.md). Per ulteriori informazioni su Endpoint DLP, vedere [Informazioni sulla prevenzione della perdita di dati degli endpoint (anteprima)](endpoint-dlp-learn-about.md)
+La prevenzione della perdita dei dati degli endpoint di Microsoft (Endpoint DLP) fa parte della famiglia di funzionalità della prevenzione della perdita dei dati di Microsoft 365 che è possibile usare per rilevare e proteggere elementi riservati nei servizi Microsoft 365. Per ulteriori informazioni sull'offerta completa della prevenzione della perdita di dati di Microsoft, vedere [Panoramica della prevenzione della perdita dei dati](data-loss-prevention-policies.md). Per ulteriori informazioni su Endpoint DLP, vedere [Informazioni sulla prevenzione della perdita di dati degli endpoint](endpoint-dlp-learn-about.md)
 
 La prevenzione della perdita di dati degli endpoint di Microsoft consente di monitorare i dispositivi Windows 10 e rilevare quando vengono usati e condivisi elementi riservati. Questo fornisce la visibilità e il controllo necessari per garantire che vengano usati e protetti in modo appropriato e per prevenire comportamenti rischiosi che potrebbero comprometterli.
 

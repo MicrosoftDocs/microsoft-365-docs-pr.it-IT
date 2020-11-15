@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Informazioni sui criteri di conservazione e sulle etichette di conservazione, utili per conservare tutto che serve ed eliminare ciò che non serve.
-ms.openlocfilehash: 0dfccef331c279354f066ebffa80143d43192472
-ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
+ms.openlocfilehash: bedf82d9d53ef14755651d5994e6c5c269cf5d6e
+ms.sourcegitcommit: fcc1b40732f28f075d95faffc1655473e262dd95
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48920526"
+ms.lasthandoff: 11/14/2020
+ms.locfileid: "49073137"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>Informazioni sui criteri e sulle etichette di conservazione
 
@@ -204,14 +204,7 @@ A un messaggio di posta elettronica o un documento è possibile assegnare una so
     
 - Se sono presenti più regole che assegnano automaticamente un'etichetta e il contenuto soddisfa le condizioni di più regole, viene assegnata l'etichetta di conservazione della regola meno recente (per data di creazione).
     
-Per capire come e perché è stata applicata un'etichetta di conservazione anziché un'altra, è utile comprendere la differenza tra assegnare esplicitamente un'etichetta un'etichetta assegnata in modo implicito:
-
-- Le etichette di conservazione applicate da un criterio di etichetta vengono assegnate in modo esplicito
-- Le etichette di conservazione applicate automaticamente da un criterio di applicazione automatica vengono assegnate in modo implicito
-
-Un'etichetta di conservazione assegnata in modo esplicito ha la precedenza su un'etichetta di conservazione assegnata in modo implicito. Per altre informazioni, vedere la sezione [Precedenza nei principi di conservazione](retention.md#the-principles-of-retention-or-what-takes-precedence) in questa pagina.
-
-Per SharePoint, le etichette di conservazione possono anche essere assegnate in modo implicito quando si configura un'etichetta predefinita per tutto il contenuto in una raccolta, una cartella o un set di documenti di SharePoint. Per questo scenario, un'etichetta applicata automaticamente ha la precedenza su un'etichetta predefinita, ma per comprendere in pieno tutti i risultati quando si usa un'etichetta predefinita, vedere le informazioni contenute nella sezione [Applicazione di un'etichetta di conservazione predefinita a tutto il contenuto in una raccolta, cartella o set di documenti di SharePoint](create-apply-retention-labels.md#applying-a-default-retention-label-to-all-content-in-a-sharepoint-library-folder-or-document-set). 
+Per comprendere in pieno tutti i risultati quando si usa un'etichetta predefinita, vedere le informazioni contenute nella sezione [Applicazione di un'etichetta di conservazione predefinita a tutto il contenuto in una raccolta, cartella o set di documenti di SharePoint](create-apply-retention-labels.md#applying-a-default-retention-label-to-all-content-in-a-sharepoint-library-folder-or-document-set).
 
 #### <a name="monitoring-retention-labels"></a>Monitoraggio delle etichette di conservazione
 
