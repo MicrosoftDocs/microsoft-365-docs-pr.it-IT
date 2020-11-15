@@ -467,10 +467,10 @@
               href: 'https://docs.microsoft.com/skypeforbusiness/plan-your-deployment/upgrade'
             - name: "Project Server\_2010"
               href: project-server-2010-end-of-support.md
-- name: Sicurezza
-  href: 'https://docs.microsoft.com/microsoft-365/security/'
 - name: Conformità
-  href: 'https://docs.microsoft.com/microsoft-365/compliance/'
+  href: ../compliance/index.yml
+- name: Sicurezza
+  href: ../security/index.yml
 - name: Servizi cloud
   items:
     - name: Roadmap
@@ -564,7 +564,7 @@
           href: cmdlet-references-for-microsoft-365-services.md
         - name: Risorse della community di PowerShell
           href: microsoft-365-powershell-community-resources.md
-    - name: 'Gestire gli account utente, le licenze e i gruppi con PowerShell'
+    - name: 'Gestire gli account utente, le password, le licenze e i gruppi con PowerShell'
       href: manage-user-accounts-and-licenses-with-microsoft-365-powershell.md
       items:
         - name: Account utente
@@ -581,6 +581,8 @@
               href: delete-and-restore-user-accounts-with-microsoft-365-powershell.md
             - name: Blocca
               href: block-user-accounts-with-microsoft-365-powershell.md
+            - name: Password
+              href: manage-passwords-with-microsoft-365-powershell.md
         - name: Licenze e servizi
           items:
             - name: Visualizzare le licenze e i servizi
@@ -602,6 +604,8 @@
                   href: disable-access-to-services-while-assigning-user-licenses.md
         - name: Gruppi
           items:
+            - name: Gestire i gruppi di sicurezza.
+              href: manage-security-groups-with-microsoft-365-powershell.md
             - name: Mantenere l’appartenenza ai gruppi di sicurezza
               href: maintain-group-membership-with-microsoft-365-powershell.md
             - name: Gestire gruppi di Microsoft 365
@@ -723,10 +727,6 @@
       href: contoso-info-protect.md
     - name: Riepilogo sicurezza
       href: contoso-security-summary.md
-- name: Conformità Microsoft 365
-  href: ../compliance/index.yml
-- name: Sicurezza Microsoft 365
-  href: ../security/index.yml
 - name: Architettura e soluzioni di Microsoft 365
   href: ../solutions/index.yml
 - name: Gestione della continuità aziendale della società con i servizi cloud
