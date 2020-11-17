@@ -7,14 +7,15 @@ audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 search.appverid: ''
+ms.collection: enabler-strategic
 localization_priority: Priority
 description: Informazioni su come creare un classificatore
-ms.openlocfilehash: 97a7b28d45499a46d72029d47b422d2c32696a54
-ms.sourcegitcommit: d578b28ed1886abd083b01b93f01b354067e6d47
+ms.openlocfilehash: 478b4253f7bb888323c2a873f3ab295cc841e193
+ms.sourcegitcommit: e7bf23df4852b78912229d1d38ec475223597f34
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "48804816"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49087680"
 ---
 # <a name="create-a-classifier-in-microsoft-sharepoint-syntex"></a>Creare un classificatore in Microsoft SharePoint Syntex
 
@@ -49,13 +50,13 @@ Per creare un classificatore, è necessario:
 
 Per creare un modello occorre prima di tutto assegnargli un nome:
 
-1. Nel centro contenuti selezionare **Nuovo** e quindi **Crea un modello** .
-2. Nel riquadro **Nuovo modello di comprensione dei documenti** digitare il nome del modello nel campo **Nome** . Ad esempio, se si vogliono identificare i documenti di rinnovo del contratto, è possibile denominare il modello *Rinnovo del contratto* .
-3. Scegliere **Crea** . Verrà creata una home page per il modello.</br>
+1. Nel centro contenuti selezionare **Nuovo** e quindi **Crea un modello**.
+2. Nel riquadro **Nuovo modello di comprensione dei documenti** digitare il nome del modello nel campo **Nome**. Ad esempio, se si vogliono identificare i documenti di rinnovo del contratto, è possibile denominare il modello *Rinnovo del contratto*.
+3. Scegliere **Crea**. Verrà creata una home page per il modello.</br>
 
     ![Home page del modello di classificatore](../media/content-understanding/model-home.png)
 
-Quando si crea un modello, viene creato anche un nuovo tipo di contenuto del sito. Un tipo di contenuto rappresenta una categoria di documenti che hanno caratteristiche comuni e condividono una raccolta di colonne o proprietà dei metadati per quel particolare contenuto. I tipi di contenuto di SharePoint vengono gestiti tramite la [Raccolta tipi di contenuto](https://support.microsoft.com/office/create-or-customize-a-site-content-type-27eb6551-9867-4201-a819-620c5658a60f). In questo esempio, quando si crea il modello, si crea un nuovo tipo di contenuto *Rinnovo del contratto* .
+Quando si crea un modello, viene creato anche un nuovo tipo di contenuto del sito. Un tipo di contenuto rappresenta una categoria di documenti che hanno caratteristiche comuni e condividono una raccolta di colonne o proprietà dei metadati per quel particolare contenuto. I tipi di contenuto di SharePoint vengono gestiti tramite la [Raccolta tipi di contenuto](https://support.microsoft.com/office/create-or-customize-a-site-content-type-27eb6551-9867-4201-a819-620c5658a60f). In questo esempio, quando si crea il modello, si crea un nuovo tipo di contenuto *Rinnovo del contratto*.
 
 Selezionare **Impostazioni avanzate** se si vuole associare questo modello a un tipo di contenuto aziendale esistente nella Raccolta tipi di contenuto di SharePoint per usarne lo schema. I tipi di contenuto aziendale sono archiviati nell'hub del tipo di contenuto nell'interfaccia di amministrazione di SharePoint e vengono diffusi a tutti i siti del tenant. Tenere presente che, anche se è possibile usare un tipo di contenuto esistente per utilizzarne lo schema e agevolare l'identificazione e la classificazione, è comunque necessario addestrare il modello a estrarre le informazioni dai file identificati.</br>
 
@@ -81,9 +82,9 @@ Usare almeno cinque esempi positivi e almeno un esempio negativo per addestrare 
 
 Per aggiungere file di esempio:
 
-1. Nella home page del modello fare clic su **Aggiungi file** nel riquadro **Aggiungi file di esempio** .
+1. Nella home page del modello fare clic su **Aggiungi file** nel riquadro **Aggiungi file di esempio**.
 2. Nella pagina **Selezionare i file di esempio per il modello** selezionare i file di esempio nella raccolta di file di training nel centro contenuti. Se non sono ancora stati caricati, scegliere di caricarli subito facendo clic su **Carica** per copiarli nella raccolta di file di training.
-3. Dopo aver selezionato i file di esempio da usare per il modello, fare clic su **Aggiungi** .
+3. Dopo aver selezionato i file di esempio da usare per il modello, fare clic su **Aggiungi**.
 
     ![Selezionare i file di esempio](../media/content-understanding/select-sample.png) 
 
@@ -91,9 +92,9 @@ Per aggiungere file di esempio:
 
 Dopo aver aggiunto i file di esempio, è necessario etichettarli come esempi positivi o negativi.
 
-1. Nella home page del modello, fare clic su **Esegui il training del classificatore** nel riquadro **Classificare i file ed eseguire il training** .
+1. Nella home page del modello, fare clic su **Esegui il training del classificatore** nel riquadro **Classificare i file ed eseguire il training**.
    Verrà visualizzata la pagina dell'etichetta con un elenco dei file di esempio e il primo file mostrato nel visualizzatore.
-2. Nel visualizzatore nella parte superiore del primo file di esempio dovrebbe essere presente un testo che chiede se il file è un esempio del modello appena creato. Se è un esempio positivo, selezionare **Sì** . Se è un esempio negativo, selezionare **No** .
+2. Nel visualizzatore nella parte superiore del primo file di esempio dovrebbe essere presente un testo che chiede se il file è un esempio del modello appena creato. Se è un esempio positivo, selezionare **Sì**. Se è un esempio negativo, selezionare **No**.
 3. Nell'elenco **Esempi etichettati** a sinistra selezionare altri file da usare come esempi ed etichettarli. 
 
     ![Home page del classificatore](../media/content-understanding/classifier-home-page.png) 
@@ -104,7 +105,7 @@ Dopo aver aggiunto i file di esempio, è necessario etichettarli come esempi pos
 
 ## <a name="create-an-explanation"></a>Creare una spiegazione
 
-Il passaggio successivo consiste nel creare una spiegazione nella pagina Avvia training. Una spiegazione aiuta il modello a comprendere come riconoscere il documento. Ad esempio, i documenti relativi al rinnovo del contratto contengono sempre una stringa di testo *Richiesta di informazioni aggiuntive* .
+Il passaggio successivo consiste nel creare una spiegazione nella pagina Avvia training. Una spiegazione aiuta il modello a comprendere come riconoscere il documento. Ad esempio, i documenti relativi al rinnovo del contratto contengono sempre una stringa di testo *Richiesta di informazioni aggiuntive*.
 
 > [!Note]
 > Quando viene usata con gli estrattori, una spiegazione identifica la stringa da estrarre dal documento. 
@@ -113,12 +114,12 @@ Per creare una spiegazione:
 
 1. Nella home page del modello selezionare la scheda **Avvia training** per passare alla pagina corrispondente.
 2. Nella sezione **File con training** della pagina Avvia training dovrebbe essere presente un elenco dei file di esempio precedentemente etichettati. Selezionare uno dei file positivi nell'elenco. Verrà visualizzato nel visualizzatore.
-3. Nella sezione Spiegazione selezionare **Nuovo** e quindi **Vuoto** .
-4. Nella pagina **Crea spiegazione** :</br>
-    a. Digitare il **Nome** , ad esempio "Blocco divulgazione".</br>
-    b. Selezionare il **Tipo** . In questo caso selezionare **Elenco frasi** perché viene aggiunta una stringa di testo.</br>
-    c. Digitare la stringa nella casella **Digitare qui** . Per questo esempio, aggiungere "Richiesta di informazioni aggiuntive". È possibile selezionare **Maiuscole/Minuscole** se è necessario distinguere tra maiuscole e minuscole nella stringa.</br>
-    d. Fare clic su **Salva** .
+3. Nella sezione Spiegazione selezionare **Nuovo** e quindi **Vuoto**.
+4. Nella pagina **Crea spiegazione**:</br>
+    a. Digitare il **Nome**, ad esempio "Blocco divulgazione".</br>
+    b. Selezionare il **Tipo**. In questo caso selezionare **Elenco frasi** perché viene aggiunta una stringa di testo.</br>
+    c. Digitare la stringa nella casella **Digitare qui**. Per questo esempio, aggiungere "Richiesta di informazioni aggiuntive". È possibile selezionare **Maiuscole/Minuscole** se è necessario distinguere tra maiuscole e minuscole nella stringa.</br>
+    d. Fare clic su **Salva**.
 
     ![Creare una spiegazione](../media/content-understanding/explanation.png) 
     
@@ -126,13 +127,13 @@ Per creare una spiegazione:
 
     ![Valore Corrisponde](../media/content-understanding/match.png) 
 
-Se i file etichettati risultano **Non corrispondenti** , può essere necessario creare un'ulteriore spiegazione per fornire altre informazioni al modello per identificare il tipo di documento. In questo caso, fare clic sul file per ottenere altre informazioni sul motivo della mancata corrispondenza.
+Se i file etichettati risultano **Non corrispondenti**, può essere necessario creare un'ulteriore spiegazione per fornire altre informazioni al modello per identificare il tipo di documento. In questo caso, fare clic sul file per ottenere altre informazioni sul motivo della mancata corrispondenza.
 
 ## <a name="test-your-model"></a>Testare il modello
 
 Se è stata rilevata una corrispondenza nei file di esempio etichettati, è possibile testare il modello nei rimanenti file di esempio non etichettati, non ancora esaminati dal modello.  Questo è un passaggio opzionale, ma utile per valutare l'adeguatezza del modello prima di usarlo, testandolo sui file che il modello non ha ancora esaminato.
 
-1. Nella home page del modello selezionare la scheda **Test** . Il modello viene eseguito nei file di esempio non etichettati.
+1. Nella home page del modello selezionare la scheda **Test**. Il modello viene eseguito nei file di esempio non etichettati.
 2. Nell'elenco **Testa i file** vengono visualizzati i file di esempio e viene indicato se il modello prevede che siano positivi o negativi. Usare queste informazioni per determinare l'efficacia del classificatore nell'identificazione dei documenti.
 
     ![Test di file non etichettati](../media/content-understanding/test-on-files.png) 

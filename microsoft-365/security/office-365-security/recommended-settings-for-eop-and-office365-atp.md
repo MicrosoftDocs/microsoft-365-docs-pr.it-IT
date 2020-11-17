@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 description: Quali sono le procedure consigliate per le impostazioni di sicurezza di Exchange Online Protection (EOP) e Defender per Office 365? Quali sono le raccomandazioni aggiornate per la protezione standard? Che cosa dovrebbe essere utilizzato se si desidera essere più severi? Quali sono gli extra che si ottengono se si utilizza Defender anche per Office 365?
-ms.openlocfilehash: 032cd6a50f56fd3e1e47faebfaea5f6665553a4b
-ms.sourcegitcommit: 09518b7c9146cda7fd42839ee644ad418d48491a
+ms.openlocfilehash: bc91ba58c9dc14954f638853ad24fcf7a26684e3
+ms.sourcegitcommit: 2d3e85173c65a9e0ce92624a80ed7a9839f5b8bd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "49001526"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49123473"
 ---
 # <a name="recommended-settings-for-eop-and-microsoft-defender-for-office-365-security"></a>Impostazioni consigliate per EOP e Microsoft Defender per la sicurezza di Office 365
 
@@ -81,21 +81,21 @@ Si **consiglia di disattivare queste impostazioni ASF** sia per i livelli **stan
 
 |Nome della funzionalità di sicurezza|Commento|
 |---|---|
-|**Collegamenti di immagini a siti remoti** ( _IncreaseScoreWithImageLinks_ )||
-|**Indirizzo IP numerico in URL** ( _IncreaseScoreWithNumericIps_ )||
-|**Reindirizzamento UL ad altre porte** ( _IncreaseScoreWithRedirectToOtherPort_ )||
-|**URL di siti Web. biz o. info** ( _IncreaseScoreWithBizOrInfoUrls_ )||
-|**Messaggi vuoti** ( _MarkAsSpamEmptyMessages_ )||
-|**JavaScript o VBScript in HTML** ( _MarkAsSpamJavaScriptInHtml_ )||
-|**Tag frame o iframe in formato HTML** ( _MarkAsSpamFramesInHtml_ )||
-|**Tag Object in HTML** ( _MarkAsSpamObjectTagsInHtml_ )||
-|**Tag embed in HTML** ( _MarkAsSpamEmbedTagsInHtml_ )||
-|**Tag del modulo in formato HTML** ( _MarkAsSpamFormTagsInHtml_ )||
-|**Bug Web in HTML** ( _MarkAsSpamWebBugsInHtml_ )||
-|**Applicazione di un elenco di parole riservate** ( _MarkAsSpamSensitiveWordList_ )||
-|**Record SPF: errore** irreversibile ( _MarkAsSpamSpfRecordHardFail_ )||
-|**Filtro ID mittente condizionale: errore** irreversibile ( _MarkAsSpamFromAddressAuthFail_ )||
-|Backscatter del rapporto di **mancato recapito** ( _MarkAsSpamNdrBackscatter_ )||
+|**Collegamenti di immagini a siti remoti** (_IncreaseScoreWithImageLinks_)||
+|**Indirizzo IP numerico in URL** (_IncreaseScoreWithNumericIps_)||
+|**Reindirizzamento UL ad altre porte** (_IncreaseScoreWithRedirectToOtherPort_)||
+|**URL di siti Web. biz o. info** (_IncreaseScoreWithBizOrInfoUrls_)||
+|**Messaggi vuoti** (_MarkAsSpamEmptyMessages_)||
+|**JavaScript o VBScript in HTML** (_MarkAsSpamJavaScriptInHtml_)||
+|**Tag frame o iframe in formato HTML** (_MarkAsSpamFramesInHtml_)||
+|**Tag Object in HTML** (_MarkAsSpamObjectTagsInHtml_)||
+|**Tag embed in HTML** (_MarkAsSpamEmbedTagsInHtml_)||
+|**Tag del modulo in formato HTML** (_MarkAsSpamFormTagsInHtml_)||
+|**Bug Web in HTML** (_MarkAsSpamWebBugsInHtml_)||
+|**Applicazione di un elenco di parole riservate** (_MarkAsSpamSensitiveWordList_)||
+|**Record SPF: errore** irreversibile (_MarkAsSpamSpfRecordHardFail_)||
+|**Filtro ID mittente condizionale: errore** irreversibile (_MarkAsSpamFromAddressAuthFail_)||
+|Backscatter del rapporto di **mancato recapito** (_MarkAsSpamNdrBackscatter_)||
 |
 
 #### <a name="eop-outbound-spam-policy-settings"></a>Impostazioni di criteri di posta indesiderata in uscita di EOP
@@ -148,7 +148,7 @@ Ulteriori vantaggi per la sicurezza sono disponibili con un abbonamento a Micros
 
 > [!IMPORTANT]
 >
-> - Il criterio anti-phishing predefinito in Microsoft Defender per Office 365 garantisce la [protezione da spoofing](set-up-anti-phishing-policies.md#spoof-settings) per tutti i destinatari. Tuttavia, le impostazioni di [protezione della rappresentazione](#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) disponibili per i mittenti o i domini mittenti specifici non sono configurate o abilitate nel criterio predefinito. Per abilitare la protezione della rappresentazione, configurare il criterio predefinito o creare ulteriori criteri anti-phishing in Defender per Office 365.
+> - Il criterio anti-phishing predefinito in Microsoft Defender per Office 365 fornisce [protezione da spoofing](set-up-anti-phishing-policies.md#spoof-settings) e funzionalità di intelligence delle cassette postali per tutti i destinatari. Tuttavia, le altre funzionalità di [protezione delle rappresentazioni](#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) disponibili e le [Impostazioni avanzate](#advanced-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) non sono configurate o abilitate nel criterio predefinito. Per abilitare tutte le funzionalità di protezione, modificare il criterio di anti-phishing predefinito o creare ulteriori criteri anti-phishing.
 >
 > - Non ci sono criteri collegamenti sicuri predefiniti o criteri allegati sicuri che proteggono automaticamente tutti i destinatari nell'organizzazione. Per ottenere le protezioni, è necessario creare almeno un criterio per i collegamenti sicuri e un criterio degli allegati sicuri.
 >
@@ -287,7 +287,7 @@ In PowerShell, è possibile utilizzare i cmdlet [New-SafeAttachmentPolicy](https
 
 ## <a name="related-articles"></a>Articoli correlati
 
-- Per informazioni sulle procedure consigliate per **le regole del flusso di posta di Exchange (note anche come regole di trasporto** ) Vedere [procedure consigliate per la configurazione delle regole del flusso di posta in Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/configuration-best-practices).
+- Per informazioni sulle procedure consigliate per **le regole del flusso di posta di Exchange (note anche come regole di trasporto**) Vedere [procedure consigliate per la configurazione delle regole del flusso di posta in Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/configuration-best-practices).
 
 - Gli amministratori e gli utenti possono inviare falsi positivi (buon messaggio di posta elettronica contrassegnato come cattivo) e falsi negativi (messaggi di posta elettronica non consentiti) a Microsoft per l'analisi. Per altre informazioni, vedere [Segnalazione di messaggi e file a Microsoft](report-junk-email-messages-to-microsoft.md).
 

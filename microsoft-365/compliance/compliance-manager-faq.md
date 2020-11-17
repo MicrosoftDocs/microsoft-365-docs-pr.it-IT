@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Trovare le risposte alle domande frequenti su Microsoft Compliance Manager, che consente alle organizzazioni di semplificare e automatizzare le valutazioni dei rischi.
-ms.openlocfilehash: 49886cba59cc486c4345e069a4b782951fed4c68
-ms.sourcegitcommit: ccbb405227880f40581c3cdfb974368a29d496f7
+ms.openlocfilehash: 91b5957d843a2e3fba22a1a9f1e630fbfede8713
+ms.sourcegitcommit: e7bf23df4852b78912229d1d38ec475223597f34
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "48791782"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49087069"
 ---
 # <a name="compliance-manager-frequently-asked-questions"></a>Domande frequenti su Compliance Manager
 
@@ -73,7 +73,7 @@ Compliance Manager è una soluzione end-to-end nel centro conformità Microsoft 
 
 ## <a name="are-there-licensing-requirements-for-using-compliance-manager"></a>Esistono requisiti di licenza per l'utilizzo di Compliance Manager?
 
-Sì. La versione GA di Compliance Manager contiene nuove condizioni di licenza. Tutte le organizzazioni con licenza di Office 365 e Microsoft 365 (ad eccezione del governo degli Stati Uniti e del DoD) hanno accesso a Compliance Manager. Tuttavia, le valutazioni disponibili per l'organizzazione e la modalità di gestione dei modelli di valutazione dipendono dal contratto di licenza. Per informazioni dettagliate, vedere la [Guida alla gestione delle licenze di Microsoft 365 per la sicurezza e la conformità](https://go.microsoft.com/fwlink/?linkid=2132371) .
+Sì. La versione GA di Compliance Manager contiene nuove condizioni di licenza. Tutte le organizzazioni con le licenze di Office 365 e Microsoft 365 e i clienti moderati di US Government community (GCC) hanno accesso a Compliance Manager. Tuttavia, le valutazioni disponibili per l'organizzazione e la modalità di gestione dei modelli di valutazione dipendono dal contratto di licenza. Per informazioni dettagliate, vedere la [Guida alla gestione delle licenze di Microsoft 365 per la sicurezza e la conformità](https://go.microsoft.com/fwlink/?linkid=2132371) .
 
 ## <a name="if-i-have-a-high-score-does-it-mean-im-fully-compliant"></a>Se si dispone di un punteggio elevato, significa che sono pienamente conforme?
 

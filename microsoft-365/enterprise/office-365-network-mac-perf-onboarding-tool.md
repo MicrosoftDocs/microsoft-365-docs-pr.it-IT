@@ -14,12 +14,12 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Strumento di test della connettività di rete Microsoft 365 (anteprima)
-ms.openlocfilehash: 2be48f42c8529334b55b311e6f202d9f3b25ff9e
-ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
+ms.openlocfilehash: 4fc12645ccd6a022e4ef4ebe849ac91ba431129b
+ms.sourcegitcommit: e7bf23df4852b78912229d1d38ec475223597f34
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "48295527"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49087080"
 ---
 # <a name="microsoft-365-network-connectivity-test-tool-preview"></a>Strumento di test della connettività di rete Microsoft 365 (anteprima)
 
@@ -217,7 +217,7 @@ Visualizza l'instabilità UDP misurata, che deve essere inferiore a **30ms**.
 
 Testiamo la connettività HTTP dal percorso dell'utente a tutti gli endpoint di rete Microsoft 365 necessari. Questi sono pubblicati su [https://aka.ms/o365ip](https://aka.ms/o365ip) . Viene visualizzata una panoramica della rete per tutti gli endpoint di rete necessari che non possono essere connessi.
 
-La connettività ay deve essere bloccata da un server proxy, un firewall o un altro dispositivo di sicurezza di rete nel perimetro della rete aziendale o in uso come proxy cloud.
+La connettività può essere bloccata da un server proxy, da un firewall o da un altro dispositivo di sicurezza di rete nel perimetro della rete aziendale. La connettività alla porta TCP 80 viene testata con una richiesta HTTP e la connettività alla porta TCP 443 viene testata con una richiesta HTTPS. Se non è presente alcuna risposta, il nome di dominio completo viene contrassegnato come errore. Se è presente un codice di risposta HTTP 407, il nome di dominio completo viene contrassegnato come errore. Se è presente un codice di risposta HTTP 403, è necessario controllare l'attributo server della risposta e, se si tratta di un server proxy, questo viene contrassegnato come un errore. È possibile simulare i test eseguiti con lo strumento da riga di comando di Windows curl.exe.
 
 Testiamo il certificato SSL a ogni endpoint di rete Microsoft 365 necessario che si trova nella categoria ottimizza o Consenti come definito in [https://aka.ms/o365ip](https://aka.ms/o365ip) . Se i test non trovano un certificato SSL Microsoft, è necessario che la rete crittografata connessa sia stata intercettata da un dispositivo di rete intermediario. Un'analisi di rete viene visualizzata su tutti gli endpoint di rete crittografati intercettati.
 

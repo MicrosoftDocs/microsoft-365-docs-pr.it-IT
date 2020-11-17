@@ -17,90 +17,126 @@ search.appverid:
 - SPO160
 - MET150
 description: In questo articolo viene descritto come avviare il portale utilizzando l'utilità di pianificazione di avvio del portale
-ms.openlocfilehash: 929492742fd140654bd13be8165093ee10647c6d
-ms.sourcegitcommit: da34ac08c7d029c2c42d4428d0bb03fd57c448be
+ms.openlocfilehash: 6a191cf323e180fa77614eb09bae4185228a5029
+ms.sourcegitcommit: e7bf23df4852b78912229d1d38ec475223597f34
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "48999580"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49087668"
 ---
 # <a name="launch-your-portal-using-the-portal-launch-scheduler"></a>Avviare il portale utilizzando l'utilità di pianificazione del lancio del portale
 
-È possibile avviare il portale utilizzando l'utilità di avvio del portale, convalidando la capacità dell'amministratore del tenant di impostare un'ondata per un nuovo portale. L'amministratore può quindi convalidare il reindirizzamento delle richieste, in base all'esistenza di un utente nelle onde attive.
+Un portale è un sito di SharePoint nell’Intranet con un numero elevato di utenti che ne usano il contenuto. L'avvio del portale in Waves è una parte importante per garantire agli utenti un'esperienza fluida ed eseguibile nell'accesso a un nuovo portale di SharePoint Online. 
 
-Per ulteriori informazioni sull'avvio di un portale con esito positivo, seguire i principi di base, le procedure e i suggerimenti illustrati nell'ambiente di [creazione, avvio e gestione di un portale integro](https://go.microsoft.com/fwlink/?linkid=2105838). 
+L'avvio in onda è un modo essenziale per implementare il portale, come descritto in [Planning Your Portal Launch-out Plan in SharePoint Online](https://docs.microsoft.com/en-us/microsoft-365/Enterprise/Planportallaunchroll-out?view=o365-worldwide). L'utilità di pianificazione di avvio del portale è stata progettata per consentire l'esecuzione di un approccio di distribuzione Wave/phased tramite la gestione dei reindirizzamenti per il nuovo portale. Durante ciascuna delle onde, è possibile raccogliere commenti e suggerimenti per gli utenti e monitorare le prestazioni durante ogni ondata di distribuzione. Questo ha il vantaggio di introdurre lentamente il portale, offrendo la possibilità di sospendere e risolvere i problemi prima di procedere con l'ondata successiva e, infine, garantire un'esperienza positiva per gli utenti. 
 
-## <a name="app-setup"></a>Configurazione delle app
-1. Disinstalla se esiste una esistente `Microsoft.Online.SharePoint.PowerShell` dal computer tramite il pannello di controllo.
-2. Sul passaggio di PowerShell `Install-Module -Name Microsoft.Online.SharePoint.PowerShell` .
+Sono disponibili due tipi di reindirizzamento: 
+- bidirezionale: avviare un nuovo portale di SharePoint Online moderno per sostituire un portale esistente di SharePoint classico o moderno 
+- Reindirizzamento della pagina temporanea: avviare un nuovo portale di SharePoint Online moderno con nessun portale di SharePoint esistente
 
-## <a name="connect-to-sharepoint-online"></a>Connessione a SharePoint Online
-1. Aprire [SharePoint Online Management Shell](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online) in Windows.
-2. Connettersi al tenant come amministratore.
-   - `Connect-SPOService -Url "https://*-admin.sharepoint.com" -Credential "username”`
-3.  Fornire la password quando richiesto.
+L'utilità di pianificazione di avvio portale è disponibile solo per il lancio dei portali di SharePoint Online moderni, come i siti di comunicazione e i siti del team moderno. I lanci devono essere pianificati con almeno 7 giorni di anticipo. Il numero di ondate richieste è determinato dal numero previsto di utenti. Prima di pianificare l'avvio di un portale, è necessario eseguire lo [strumento page Diagnostics for SharePoint](https://aka.ms/perftool) per verificare che la Home page del portale sia integra. Al termine del lancio del portale, tutti gli utenti con autorizzazioni per il sito potranno accedere al nuovo sito. 
 
-## <a name="command-to-get-an-existing-setup"></a>Comando per ottenere un'installazione esistente
+Per ulteriori informazioni sull'avvio di un portale con esito positivo, seguire i principi di base, le procedure e le raccomandazioni dettagliate per la [creazione, l'avvio e la gestione di un portale integro](https://docs.microsoft.com/sharepoint/portal-health). 
 
-Per visualizzare le configurazioni di avvio dei portale esistenti:
+> [!NOTE]
+> Questa funzionalità non è disponibile per Office 365 Germany, Office 365 gestito da 21Vianet (Cina) o con i piani di Microsoft 365 US Government.
 
-1. Passare `Get-SPOPortalLaunchWaves  -LaunchSiteUrl  https://*.sharepoint.com/sites/newsite` .
-2. Passare il parametro addition `-DisplayFormat Raw` se si desidera visualizzare l'insieme Wave formattato come formato di input non elaborato.
+## <a name="app-setup-and-connecting-to-sharepoint-online"></a>Configurazione delle app e connessione a SharePoint Online
+1. [Scaricare l'ultima versione di SharePoint Online Management Shell](https://go.microsoft.com/fwlink/p/?LinkId=255251).
 
-## <a name="commands-for-bi-directional-redirection"></a>Comandi per il reindirizzamento bi-direzionale
+    > [!NOTE]
+    > Se hai installato una versione precedente di SharePoint Online Management Shell, vai su Installazione applicazioni e disinstallare SharePoint Online Management Shell.<br>Nella pagina Download Center selezionare la lingua e fare clic sul pulsante Scarica. Ti verrà chiesto di scegliere tra il download di un file x64 e x86 con estensione msi. Scaricare il file x64 se stai eseguendo la versione a 64 bit di Windows e il file x86 se stai eseguendo quella a 32 bit. Se non conosci quale versione stai eseguendo, vedere[Quale versione del sistema operativo Windows sto eseguendo?](https://support.microsoft.com/help/13443/windows-which-operating-system). Dopo aver scaricato il file, eseguirlo e seguire i passaggi della configurazione guidata.
 
-Per migrare gli utenti di siti precedenti al nuovo sito in modo a fasi:
+2. Connettiti a SharePoint come [amministratore globale o amministratore di SharePoint](/sharepoint/sharepoint-admin-role) in Microsoft 365. Per informazioni in merito, vedere [Guida introduttiva a SharePoint Online Management Shell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online).
 
-1. Creare onde di avvio del portale.
-   - Questa operazione è applicabile solo nella fase di test delle versioni precedenti.
-   - Per testare immediatamente l'impatto della modifica, verificare che la prima ondata `LaunchDateUtc` sia impostata sulla data corrente. Se non si specifica questo flag, viene visualizzato un messaggio di errore. Questo errore si verifica perché i lanci in produzione devono essere pianificati con almeno 7 giorni di anticipo.
 
-  `New-SPOPortalLaunchWaves  -LaunchSiteUrl "https://*.sharepoint.com/sites/newsite" -RedirectionType Bidirectional -RedirectUrl "https://*.sharepoint.com/sites/oldsite" -ExpectedNumberOfUsers LessThan10kUsers -WaveOverrideUsers "*@microsoft.com" -Waves ' [{Name:"Wave 1", Groups:["Viewers SG1"], LaunchDateUtc:"2020/10/14"}, {Name:"Wave 2", Groups:["Viewers SG2"], LaunchDateUtc:"2020/10/15"}]' -IsTesting $true`
+## <a name="view-any-existing-portal-launch-setups"></a>Visualizzazione di tutte le configurazioni di avvio dei portale esistenti
 
-2. Completamento della convalida.
-  - Il reindirizzamento può richiedere fino a 5 minuti per completare la configurazione del servizio, quindi attendere prima di continuare.
-  - Se si effettua l'accesso con l'utente specificato come `WaveOverrideUsers` , quindi nulla cambia. Si consiglia di soggiornare nel sito a cui si accede.
-  - Accedere con un utente che fa parte dei *visualizzatori SG1*.
-    - Passare al sito precedente ed essere reindirizzato al nuovo sito.
-    - Passare al nuovo sito ed è necessario rimanere nel nuovo sito.
-    - Accedere con l'utente in *visualizzatori SG2* e passare al vecchio sito e rimanere nel sito precedente.
-    - Passare al nuovo sito e procedere con il reindirizzamento al sito precedente.
+Per verificare se sono presenti configurazioni di avvio dei portale esistenti:
 
-3. Sospendere il lancio del portale.
-  - Se è necessario sospendere le onde di lancio, è possibile sospenderle per il numero di giorni "x". L'impostazione del `Status` flag su pause impedisce tutte le progressioni dell'onda imminenti. 
-  - `Set-SPOPortalLaunchWaves -Status Pause - LaunchSiteUrl  https://*.sharepoint.com/sites/NewSite`.
-  - Ciò consente di verificare che tutti gli utenti vengano reindirizzati al sito precedente.
+   ```PowerShell
+   Get-SPOPortalLaunchWaves -LaunchSiteUrl <object> -DisplayFormat <object>
+   ```
 
-4. Riavviare la progressione del lancio del portale. 
-  - `Set-SPOPortalLaunchWaves -Status Restart - LaunchSiteUrl  https://*.sharepoint.com/sites/NewSite`.
-  - Verificare che il reindirizzamento venga ripristinato.
+## <a name="schedule-a-portal-launch-on-the-site"></a>Pianificare un avvio del portale nel sito
 
-5. Eliminare una configurazione di avvio del portale.
-  - `Remove-SPOPortalLaunchWaves -LaunchSiteUrl https://*.sharepoint.com/sites/NewSite`.
-  - Verificare che non venga eseguito alcun reindirizzamento per tutti gli utenti.
+Il numero di ondate richieste dipende dalle dimensioni previste per il lancio. 
+- Utenti con meno di 10K: 1 onda
+- 10K per gli utenti di 30K: 3 ondate 
+- 30K + a 100K utenti: 5 ondate
+- Più di 100K utenti: 5 ondate e contattare il team dell'account Microsoft
 
-## <a name="commands-for-redirection-to-temporary-page"></a>Comandi per il reindirizzamento alla pagina temporanea
+### <a name="steps-for-bi-directional-redirection"></a>Passaggi per il reindirizzamento bi-direzionale
 
-Seguire questa procedura se non si dispone di un sito precedente e si desidera omettere gli utenti non presenti nell'ondata dall'atterraggio nella nuova pagina del portale.
+Il reindirizzamento bidirezionale implica l'avvio di un nuovo portale di SharePoint Online moderno per la sostituzione di un portale SharePoint classico o moderno esistente. Gli utenti in ondate attive verranno reindirizzati al nuovo sito indipendentemente dal fatto che vengano spostati nel sito precedente o nuovo. Gli utenti in un'ondata non avviata che tentano di accedere al nuovo sito verranno reindirizzati al vecchio sito fino a quando non verrà avviata l'ondata. Se si dispone di amministratori o proprietari che devono accedere ai siti precedenti e nuovi senza essere reindirizzati, verificare che siano elencati utilizzando il `WaveOverrideUsers` parametro. 
 
-Per creare una pagina temporanea in uno dei siti seguenti:
+Per eseguire la migrazione di utenti da un sito di SharePoint esistente a un nuovo sito di SharePoint in modo graduale:
 
+1. Eseguire il seguente comando per designare le onde di avvio del portale.
+   
+   ```PowerShell
+    New-SPOPortalLaunchWaves -LaunchSiteUrl <object> -RedirectionType Bidirectional -RedirectUrl <string> -ExpectedNumberOfUsers <object> -WaveOverrideUsers <object> -Waves <object>
+    ```
+
+Esempio:
+   ```PowerShell
+   New-SPOPortalLaunchWaves -LaunchSiteUrl "https://contoso.sharepoint.com/teams/newsite" -RedirectionType Bidirectional -RedirectUrl "https://contoso.sharepoint.com/teams/oldsite" -ExpectedNumberOfUsers 10kTo30kUsers -WaveOverrideUsers "admin@contoso.com" -Waves ' 
+[{Name:"Wave 1", Groups:["Viewers 1"], LaunchDateUtc:"2020/10/14"}, 
+{Name:"Wave 2", Groups:["Viewers 2"], LaunchDateUtc:"2020/10/15"}, 
+{Name:"Wave 3", Groups:["Viewers 3"], LaunchDateUtc:"2020/10/16"}]'
+   ```
+
+2. Completamento della convalida. Per completare la configurazione del servizio, il reindirizzamento può richiedere 5-10 minuti. 
+
+### <a name="steps-for-redirection-to-temporary-page"></a>Passaggi per il reindirizzamento alla pagina temporanea
+
+Il reindirizzamento di pagine temporanee deve essere utilizzato quando non esiste alcun portale di SharePoint esistente. Gli utenti vengono indirizzati a un nuovo portale di SharePoint Online moderno in modalità a fasi. Se un utente si trova in un'ondata che non è stato avviato, verrà reindirizzato a una pagina temporanea (qualsiasi URL). 
+
+1. Eseguire il seguente comando per designare le onde di avvio del portale.
+   
+      ```PowerShell
+    New-SPOPortalLaunchWaves -LaunchSiteUrl <object> -RedirectionType ToTemporaryPage -RedirectUrl <string> -ExpectedNumberOfUsers <object> -WaveOverrideUsers <object> -Waves <object>
+    ```
+
+Esempio:
+   ```PowerShell
+   New-SPOPortalLaunchWaves -LaunchSiteUrl "https://contoso.sharepoint.com/teams/newsite" -RedirectionType ToTemporaryPage -RedirectUrl "https://portal.contoso.com/UnderConstruction.aspx" -ExpectedNumberOfUsers 10kTo30kUsers -WaveOverrideUsers "admin@contoso.com" -Waves ' 
+[{Name:"Wave 1", Groups:["Viewers 1"], LaunchDateUtc:"2020/10/14"}, 
+{Name:"Wave 2", Groups:["Viewers 2"], LaunchDateUtc:"2020/10/15"}, 
+{Name:"Wave 3", Groups:["Viewers 3"], LaunchDateUtc:"2020/10/16"}]'
+   ```
+
+2. Completamento della convalida. Per completare la configurazione del servizio, il reindirizzamento può richiedere 5-10 minuti. 
+   - `New-SPOPortalLaunchWaves  -LaunchSiteUrl "https://*.sharepoint.com/sites/newsite" -RedirectionType Bidirectional -RedirectUrl "https://*.sharepoint.com/sites/oldsite" -ExpectedNumberOfUsers LessThan10kUsers -WaveOverrideUsers "*@microsoft.com" -Waves ' [{Name:"Wave 1", Groups:["Viewers SG1"], LaunchDateUtc:"2020/10/14"}, {Name:"Wave 2", Groups:["Viewers SG2"], LaunchDateUtc:"2020/10/15"}]' -IsTesting $true`
+
+## <a name="pause-or-restart-a-portal-launch-on-the-site"></a>Sospendere o riavviare un avvio portale nel sito
+
+1. Per sospendere un avvio del portale in corso e impedire temporaneamente che si verifichino progressi dell'onda imminente, eseguire il seguente comando:
+
+   ```PowerShell
+   Set-SPOPortalLaunchWaves -Status Pause - LaunchSiteUrl <object>
+   ```
+2. Verificare che tutti gli utenti vengano reindirizzati al vecchio sito. 
+
+3. Per riavviare un avvio del portale che è stato sospeso, eseguire il comando riportato di seguito:
+
+   ```PowerShell
+   Set-SPOPortalLaunchWaves -Status Restart - LaunchSiteUrl <object>
+   ```
+   
+4. Verificare che il reindirizzamento venga ripristinato. 
+
+## <a name="delete-a-portal-launch-on-the-site"></a>Eliminare un avvio portale nel sito
 1. Creare un'onda di avvio portale.
-   - `New-SPOPortalLaunchWaves  -LaunchSiteUrl "https://*.sharepoint.com/sites/NewSite" -RedirectionType ToTemporaryPage -RedirectUrl "https://*.sharepoint.com/sites/OldSite" -ExpectedNumberOfUsers From10kTo30kUsers -WaveOverrideUsers *@microsoft.com -Waves [{Name:"Wave 1", Groups:["Viewers SG1"], LaunchDateUtc:"2020/10/14"}, {Name:"Wave 2", Groups:["Viewers SG2"], LaunchDateUtc:"2020/10/15"}]' -IsTesting $true`
+  - `New-SPOPortalLaunchWaves  -LaunchSiteUrl "https://*.sharepoint.com/sites/NewSite" -RedirectionType ToTemporaryPage -RedirectUrl "https://*.sharepoint.com/sites/OldSite" -ExpectedNumberOfUsers From10kTo30kUsers -WaveOverrideUsers *@microsoft.com -Waves [{Name:"Wave 1", Groups:["Viewers SG1"], LaunchDateUtc:"2020/10/14"}, {Name:"Wave 2", Groups:["Viewers SG2"], LaunchDateUtc:"2020/10/15"}]' -IsTesting $true`
 
-2. Completamento della convalida.
+2. Eseguire il seguente comando per eliminare un avvio del portale pianificato o in corso per un sito.
 
-  - Attendere cinque minuti prima di continuare, in quanto l'azione può richiedere fino a cinque minuti per il completamento.
-  - Accedere con l'utente che fa parte dei *visualizzatori SG1* e:
-     - Passare al nuovo sito ed è necessario rimanere nel nuovo sito.
-     - Passare alla pagina Temp ed è necessario rimanere nella pagina Temp.
-  - Accedere con l'utente che fa parte di *visualizzatori SG2* e:
-     - Passare al nuovo sito ed essere reindirizzato alla pagina Temp.
-     - Passare alla pagina Temp e mantenere la pagina temporanea.
+   ```PowerShell
+   Remove-SPOPortalLaunchWaves -LaunchSiteUrl <object>
+   ```
 
-3. Eliminare una configurazione di avvio del portale.
-  - `Remove-SPOPortalLaunchWaves - LaunchSiteUrl  https://*.sharepoint.com/sites/NewSite`.
-  - Verificare che non venga eseguito alcun reindirizzamento per tutti gli utenti.
+3. Verificare che non venga eseguito alcun reindirizzamento per tutti gli utenti.
 
 ## <a name="learn-more"></a>Ulteriori informazioni
 [Pianificazione del piano di avvio del portale per il lancio in SharePoint Online](https://docs.microsoft.com/microsoft-365/Enterprise/Planportallaunchroll-out)

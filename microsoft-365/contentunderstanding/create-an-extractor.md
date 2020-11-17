@@ -7,14 +7,15 @@ audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 search.appverid: ''
+ms.collection: enabler-strategic
 localization_priority: Priority
 description: Informazioni su come creare un estrattore in Microsoft SharePoint Syntex.
-ms.openlocfilehash: 260486c128ce76c31fe5f4a0994b4e103687b829
-ms.sourcegitcommit: 0f48beaca3afa4df12d41847014975d50a4ebe7d
+ms.openlocfilehash: 99d2a4602c03d8a7207736ea17ed500626ce43ac
+ms.sourcegitcommit: e7bf23df4852b78912229d1d38ec475223597f34
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "48338650"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49087464"
 ---
 # <a name="create-an-extractor-in-microsoft-sharepoint-syntex"></a>Creare un estrattore in Microsoft SharePoint Syntex.
 

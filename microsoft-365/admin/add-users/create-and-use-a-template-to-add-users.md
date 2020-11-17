@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: È possibile creare e utilizzare un modello per risparmiare tempo e standardizzare le impostazioni quando si aggiungono più utenti.
-ms.openlocfilehash: 92d3bd68a57291586da27eb2d578a26c53d20d78
-ms.sourcegitcommit: 1522a6471e0c5254a6d0f592e1f4dfacd1dd473a
+ms.openlocfilehash: aef5085da603c38b37544b76c5336c9bfe4edd24
+ms.sourcegitcommit: 2d3e85173c65a9e0ce92624a80ed7a9839f5b8bd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "48245858"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49123418"
 ---
 # <a name="create-and-use-a-template-to-add-users"></a>Creare e usare un modello per aggiungere utenti
 
@@ -33,7 +33,7 @@ ms.locfileid: "48245858"
 
 ## <a name="create-a-template"></a>Creare un modello
 
-I modelli sono facili da creare &mdash; è possibile selezionare **utenti**  >  **attivi**user  >  **template utente**, quindi selezionare **Aggiungi un modello** dall'elenco a discesa oppure è possibile aggiungere un nuovo utente e al termine, si avrà la possibilità di salvare la voce come modello.
+I modelli sono facili da creare &mdash; è possibile selezionare **utenti**  >  **attivi** user  >  **template utente**, quindi selezionare **Aggiungi un modello** dall'elenco a discesa oppure è possibile aggiungere un nuovo utente e al termine, si avrà la possibilità di salvare la voce come modello.
 
 Quando si crea un modello dopo l'aggiunta di un utente, i valori scelti per le impostazioni seguenti vengono salvati nel modello:
 
@@ -44,7 +44,7 @@ Quando si crea un modello dopo l'aggiunta di un utente, i valori scelti per le i
 - Scelte di licenza
 - Scelte dell'applicazione
 - Ruolo
-- La maggior parte delle informazioni sul profilo, ad esempio **profilo dei processi**, **reparto**, **Office**, **telefono di Office**e indirizzo di **strada** 
+- La maggior parte delle informazioni sul profilo, ad esempio **profilo dei processi**, **reparto**, **Office**, **telefono di Office** e indirizzo di **strada** 
 
 Le informazioni seguenti sono specifiche dell'utente e non vengono salvate nel modello:
 
@@ -64,23 +64,23 @@ Per utilizzare un modello esistente per aggiungere un utente:
 
 1. Nell'interfaccia di **Amministrazione selezionare utenti**  >  **attivi**.
 
-2. Selezionare **modelli utente**e quindi selezionare un modello nell'elenco a discesa. L'elenco conterrà solo i modelli creati e non quelli creati da altri amministratori.
+2. Selezionare **modelli utente** e quindi selezionare un modello nell'elenco a discesa. L'elenco conterrà solo i modelli creati e non quelli creati da altri amministratori.
 
- > [!NOTE]
- > È inoltre possibile utilizzare un modello per aggiungere un utente selezionando **modelli utente**per la  >  **gestione dei modelli**, selezionando un modello e quindi selezionando **utilizza modello**.
+   > [!NOTE]
+   > È inoltre possibile utilizzare un modello per aggiungere un utente selezionando **modelli utente** per la  >  **gestione dei modelli**, selezionando un modello e quindi selezionando **utilizza modello**.
 
 3. Seguire la procedura per creare un utente dal modello selezionato.
 
-> [!NOTE]
-> Se sono disponibili licenze insufficienti per un utente aggiunto e le informazioni sui pagamenti sono disponibili, si tenterà di acquistare un'altra licenza utilizzando le informazioni di pagamento esistenti. Se le informazioni di pagamento non sono disponibili, l'utente verrà creato come utente senza licenza.
+   > [!NOTE]
+   > Se sono disponibili licenze insufficienti per un utente aggiunto e le informazioni sui pagamenti sono disponibili, si tenterà di acquistare un'altra licenza utilizzando le informazioni di pagamento esistenti. Se le informazioni di pagamento non sono disponibili, l'utente verrà creato come utente senza licenza.
 
 ## <a name="manage-templates"></a>Gestire i modelli
 
-È possibile eliminare facilmente i modelli che non sono più necessari e aggiungerne di nuovi. Per eliminare un modello:
+È possibile eliminare solo i modelli che non sono più necessari e aggiungerne di nuovi. Per eliminare un modello:
 
 1. Nell'interfaccia di **Amministrazione selezionare utenti**  >  **attivi**.
 
-2. Selezionare **modelli**e quindi fare clic su **Gestisci modelli** nell'elenco a discesa.
+2. Selezionare **modelli** e quindi fare clic su **Gestisci modelli** nell'elenco a discesa.
 
 3. Verrà visualizzato un elenco di modelli. È possibile eliminare un modello eseguendo una delle operazioni seguenti:
     - Selezionare uno o più modelli, quindi fare clic su **Elimina**. 

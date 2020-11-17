@@ -15,12 +15,12 @@ ms.collection:
 ms.custom: autoir
 ms.reviewer: evaldm, isco
 f1.keywords: CSH
-ms.openlocfilehash: 5ba17c414b6f6470d2e9af14d1f484b435cb4f51
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 3c8477ce16249cb4d21c736da60d619774175041
+ms.sourcegitcommit: 2d3e85173c65a9e0ce92624a80ed7a9839f5b8bd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48846497"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49123608"
 ---
 # <a name="configure-automated-investigation-and-response-capabilities-in-microsoft-365-defender"></a>Configurare le funzionalità di analisi e risposta automatizzate in Microsoft 365 Defender
 
@@ -91,13 +91,13 @@ Le impostazioni di sicurezza di Office 365 consentono di proteggere la posta ele
 
 1. Accedere al centro sicurezza Microsoft 365 ( [https://security.microsoft.com](https://security.microsoft.com) ) ed eseguire l'accesso.
 
-2. Nel riquadro di spostamento cercare gli **eventi incidentati** , il **centro operazioni** e la **ricerca** , come illustrato nell'immagine seguente:
+2. Nel riquadro di spostamento cercare gli **eventi incidentati**, il **centro operazioni** e la **ricerca**, come illustrato nell'immagine seguente:
 
    :::image type="content" source="../../media/mtp-enable/mtp-on.png" alt-text="MTP su":::
 
-   - Se si verificano **incidenti** , **Centro azioni** e **caccia** , Microsoft 365 Defender è attivato. Passare alla procedura successiva, [esaminare o modificare il livello di automazione per i gruppi di dispositivi](#review-or-change-the-automation-level-for-device-groups).
+   - Se si verificano **incidenti**, **Centro azioni** e **caccia**, Microsoft 365 Defender è attivato. Vedere la procedura, [esaminare o modificare il livello di automazione per i gruppi di dispositivi](#review-or-change-the-automation-level-for-device-groups) (in questo articolo).
 
-   - Se *non* si vedono **incidenti** , **Action Center** o **hunting** , è possibile che Microsoft 365 Defender non venga attivato. In questo caso, procedere al passaggio successivo.
+   - Se *non* si vedono **incidenti**, **Action Center** o **hunting**, è possibile che Microsoft 365 Defender non venga attivato. In questo caso, procedere con il passaggio successivo ([rivedere le azioni in sospeso e completate](#review-pending-and-completed-actions-in-the-action-center)in questo articolo).
 
 3. Nel riquadro di spostamento, scegliere **Settings**  >  **Microsoft 365 Defender**. Confermare che Microsoft 365 Defender sia attivato. 
 

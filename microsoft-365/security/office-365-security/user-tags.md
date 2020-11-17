@@ -15,12 +15,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Gli amministratori possono sapere come identificare gruppi specifici di utenti con tag utente in Microsoft Defender per Office 365 piano 2. Il filtro tag è disponibile tra gli avvisi, i report e le indagini in Microsoft Defender per Office 365 per identificare rapidamente gli utenti contrassegnati.
-ms.openlocfilehash: 9c83a323a3116b3da61a133c7fb449978ca13841
-ms.sourcegitcommit: 9dbc6a08177aaca112e84d30dbaa79a0a8e9dbf8
+ms.openlocfilehash: 14ebcebeb8081a2de341fd06facabd9f7d55b119
+ms.sourcegitcommit: 2d3e85173c65a9e0ce92624a80ed7a9839f5b8bd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "48945319"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49123620"
 ---
 # <a name="user-tags-in-microsoft-defender-for-office-365"></a>Tag utente in Microsoft Defender per Office 365
 
@@ -29,8 +29,8 @@ ms.locfileid: "48945319"
 
 I tag utente sono identificatori per gruppi di utenti specifici in [Microsoft Defender per Office 365](office-365-atp.md). Sono disponibili due tipi di tag utente:
 
-- **Tag di sistema** : attualmente, gli [account di priorità](https://docs.microsoft.com/microsoft-365/admin/setup/priority-accounts) sono l'unico tipo di tag di sistema.
-- **Tag personalizzati** : creare personalmente questi tag utente.
+- **Tag di sistema**: attualmente, gli [account di priorità](https://docs.microsoft.com/microsoft-365/admin/setup/priority-accounts) sono l'unico tipo di tag di sistema.
+- **Tag personalizzati**: creare personalmente questi tag utente.
 
 Se l'organizzazione dispone di un difensore per Office 365 piano 2 (incluso nell'abbonamento o come componente aggiuntivo), è possibile creare tag utente personalizzati oltre a utilizzare il tag account prioritari.
 
@@ -40,6 +40,7 @@ Dopo aver applicato i tag di sistema o i tag personalizzati agli utenti, è poss
 - [Esplora minacce e rilevamenti in tempo reale](threat-explorer.md)
 - [Report dello stato di protezione dalle minacce](view-email-security-reports.md#threat-protection-status-report)
 - [Visualizzazioni campagna](campaigns.md)
+- Per gli account prioritari, è possibile utilizzare i [problemi di posta elettronica per il rapporto account prioritari](https://docs.microsoft.com/exchange/monitoring/mail-flow-reports/mfr-email-issues-for-priority-accounts-report) nell'interfaccia di amministrazione di Exchange (EAC).
 
 In questo articolo viene illustrato come configurare i tag utente nel centro sicurezza & Compliance. Non sono presenti cmdlet nel centro sicurezza & conformità per la gestione dei tag utente.
 
@@ -47,7 +48,7 @@ In questo articolo viene illustrato come configurare i tag utente nel centro sic
 
 - Aprire il Centro sicurezza e conformità in <https://protection.office.com/>. Per passare direttamente alla pagina **tag utente** , Apri <https://protection.office.com/userTags> .
 
-- Per creare, modificare o rimuovere **tag utente personalizzati** , è necessario essere membri dei gruppi di ruoli **Gestione organizzazione** o **amministratore sicurezza** nel centro sicurezza & conformità. Per altre informazioni, vedere [Autorizzazioni nel Centro sicurezza e conformità](permissions-in-the-security-and-compliance-center.md).
+- Per creare, modificare o rimuovere **tag utente personalizzati**, è necessario essere membri dei gruppi di ruoli **Gestione organizzazione** o **amministratore sicurezza** nel centro sicurezza & conformità. Per altre informazioni, vedere [Autorizzazioni nel Centro sicurezza e conformità](permissions-in-the-security-and-compliance-center.md).
 
 - Per configurare gli account prioritari (tag di sistema), è necessario essere un [amministratore globale](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#global-administrator--company-administrator) o un [amministratore di Exchange](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#exchange-administrator).
 
@@ -60,17 +61,14 @@ In questo articolo viene illustrato come configurare i tag utente nel centro sic
 2. Nella pagina **tag utente** visualizzata, fare clic su **Crea tag**.
 
 3. La creazione guidata **tag** viene aperta in un nuovo volo. Nella pagina **Definisci Tag** configurare le seguenti impostazioni:
-
-   - **Nome** : immettere un nome descrittivo univoco per il tag. Questo è il valore che verrà visualizzato e utilizzato.
-
-   - **Descrizione** : immettere una descrizione facoltativa per il tag.
+   - **Nome**: immettere un nome descrittivo univoco per il tag. Questo è il valore che verrà visualizzato e utilizzato.
+   - **Descrizione**: immettere una descrizione facoltativa per il tag.
 
    Al termine dell'operazione, fare clic su **Avanti**.
 
 4. Nella pagina **assegnare le cassette postali** , eseguire una delle operazioni seguenti:
 
    - Fare clic su **Aggiungi cassette postali**. Nel volo che viene visualizzato, eseguire una delle operazioni seguenti per aggiungere singoli utenti o gruppi:
-
      - Fare clic nella casella e scorrere l'elenco per selezionare un utente o un gruppo.
      - Fare clic nella casella e iniziare a digitare per filtrare l'elenco e selezionare un utente o un gruppo.
      - Per aggiungere ulteriori valori, fare clic in un'area vuota nella casella.
@@ -109,8 +107,8 @@ In questo articolo viene illustrato come configurare i tag utente nel centro sic
 
 ## <a name="use-the-security-center-to-remove-user-tags"></a>Utilizzare il Centro sicurezza per rimuovere i tag utente
 
-**Nota** : non è possibile rimuovere il tag dell' **account prioritario** incorporato.
+**Nota**: non è possibile rimuovere il tag dell' **account prioritario** incorporato.
 
 1. Nel centro sicurezza accedere a **Threat management** \> **tag utente** di gestione delle minacce.
 
-2. Nella pagina **tag utente** che viene visualizzata, selezionare il tag utente che si desidera rimuovere, fare clic su **Elimina tag** , quindi selezionare **Sì, Rimuovi** nell'avviso che viene visualizzato.
+2. Nella pagina **tag utente** che viene visualizzata, selezionare il tag utente che si desidera rimuovere, fare clic su **Elimina tag**, quindi selezionare **Sì, Rimuovi** nell'avviso che viene visualizzato.

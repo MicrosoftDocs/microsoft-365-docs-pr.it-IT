@@ -7,14 +7,15 @@ audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 search.appverid: ''
+ms.collection: enabler-strategic
 localization_priority: Priority
 description: Informazioni sull'elaborazione di moduli in Microsoft SharePoint Syntex
-ms.openlocfilehash: 7340e0c78db71fbb0acc05c2985b60f6bafbba80
-ms.sourcegitcommit: 705915f8bf9b7c082d12a009523d8aa0670a74a1
+ms.openlocfilehash: 6c2cb2ee3c1fc621e7814f4603ad2e6f0b891701
+ms.sourcegitcommit: e7bf23df4852b78912229d1d38ec475223597f34
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48493674"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49087404"
 ---
 # <a name="form-processing-overview"></a>Panoramica dell'elaborazione di moduli
 
@@ -29,7 +30,7 @@ Spesso le organizzazioni ricevono un gran numero di fatture da diverse origini, 
 > [!NOTE]
 > Per altri esempi di scenari di elaborazione dei moduli, vedere[Adozione di SharePoint Syntex: guida introduttiva](https://docs.microsoft.com/microsoft-365/contentunderstanding/adoption-getstarted#form-processing-scenario-example).
 
-Ad esempio, è possibile creare un modello di elaborazione moduli che identifichi tutti i documenti relativi agli ordini di acquisto caricati nella raccolta documenti. Da ogni ordine di acquisto è quindi possibile estrarre e visualizzare dati specifici importanti per l'utente, come il*numero ordine d’acquisto*, la *data* o l’*ammontare totale*.
+Ad esempio, è possibile creare un modello di elaborazione moduli che identifichi tutti i documenti relativi agli ordini di acquisto caricati nella raccolta documenti. Da ogni ordine di acquisto è quindi possibile estrarre e visualizzare dati specifici importanti per l'utente, come il *numero ordine d’acquisto*, la *data* o l’*ammontare totale*.
 
 ![Visualizzazione della raccolta documenti](../media/content-understanding/doc-lib-done.png)</br>  
 

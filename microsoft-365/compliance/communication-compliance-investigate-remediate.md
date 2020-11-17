@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: f39b374926ef714a32cfce4a625cc1387bb68097
-ms.sourcegitcommit: adaedd1418a3bd6e4875b77fd9e008b47e0b2a51
+ms.openlocfilehash: f214c1fcfa8a68695ca0c32a9807972a71ba7612
+ms.sourcegitcommit: e7bf23df4852b78912229d1d38ec475223597f34
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48104473"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49087161"
 ---
 # <a name="investigate-and-remediate-communication-compliance-alerts"></a>Esaminare e correggere gli avvisi di conformità delle comunicazioni
 
@@ -55,7 +55,7 @@ Per un elenco completo dei filtri e dettagli sul campo, vedere [filtri](communic
 
 5. Selezionare il controllo **filtri** per aprire la pagina dei dettagli sui **filtri** .
 
-6. Selezionare una o più caselle di controllo per abilitare i filtri per questi avvisi. È possibile scegliere tra numerosi filtri, tra cui *Data*, *mittente*, *oggetto/titolo*, *classificatori*e altro ancora.
+6. Selezionare una o più caselle di controllo per abilitare i filtri per questi avvisi. È possibile scegliere tra numerosi filtri, tra cui *Data*, *mittente*, *oggetto/titolo*, *classificatori* e altro ancora.
 
 7. Se si desidera salvare il filtro selezionato come filtro predefinito, fare clic su **Salva con nome predefinito**. Se si desidera utilizzare questo filtro come filtro salvato, fare clic su **fine**.
 
@@ -81,7 +81,7 @@ I criteri di conformità della comunicazione analizzano e pregruppo i duplicati 
 
 6. Selezionare uno o più messaggi per i controlli azione di correzione per questi messaggi.
 
-7. Selezionare **Risolvi**, **notifica**, **Inoltra**o **Scarica** per applicare l'azione ai messaggi duplicati selezionati come filtro predefinito.
+7. Selezionare **Risolvi**, **notifica**, **Inoltra** o **Scarica** per applicare l'azione ai messaggi duplicati selezionati come filtro predefinito.
 
 8. Selezionare **Chiudi** dopo aver completato le operazioni di correzione dei messaggi.
 
@@ -102,7 +102,7 @@ Indipendentemente dal punto in cui si inizia a esaminare gli avvisi o il filtro 
 Dopo aver esaminato le nozioni di base sui messaggi, è necessario aprire un messaggio per esaminare i dettagli e determinare ulteriori azioni di correzione. Selezionare un messaggio per visualizzare le informazioni complete sull'intestazione e sul corpo del messaggio. Sono disponibili diverse visualizzazioni per facilitare la scelta del corso di azione appropriato:
 
 - **Visualizzazione origine**: questa visualizzazione è la visualizzazione standard dei messaggi comunemente visualizzata nella maggior parte delle piattaforme di messaggistica basate sul Web. Le informazioni di intestazione sono formattate nello stile normale e il corpo del messaggio supporta i file grafici incorporati e il testo con wrapping di Word.
-- **Visualizzazione testo**: la visualizzazione del testo Visualizza una visualizzazione di solo testo numerato in linea del messaggio e include l'evidenziazione delle parole chiave per i termini corrispondenti nei criteri di conformità della comunicazione associati. L'evidenziazione delle parole chiave può essere utile per l'analisi rapida dei messaggi lunghi per l'area di interesse. I file incorporati non vengono visualizzati e la numerazione delle righe questa visualizzazione è utile per fare riferimento ai dettagli pertinenti tra più revisori.
+- **Visualizzazione testo**: la visualizzazione del testo Visualizza una visualizzazione di solo testo numerata in linea del messaggio e include l'evidenziazione delle parole chiave nei messaggi e negli allegati per i termini corrispondenti ai criteri di conformità della comunicazione associati. L'evidenziazione delle parole chiave consente di analizzare rapidamente i messaggi e gli allegati lunghi per l'area di interesse. In alcuni casi, il testo evidenziato può trovarsi solo in allegati per i messaggi che soddisfano le condizioni dei criteri. I file incorporati non vengono visualizzati e la numerazione delle righe questa visualizzazione è utile per fare riferimento ai dettagli pertinenti tra più revisori.
 - **Visualizzazione annotazioni**: questa visualizzazione consente ai revisori di aggiungere annotazioni direttamente sul messaggio salvato nella visualizzazione del messaggio.
 - **Cronologia utenti**: visualizzazione cronologia utenti Visualizza tutti gli altri avvisi generati da tutti i criteri di conformità della comunicazione per l'utente che invia il messaggio.
 - **Visualizzazione Dettagli messaggio**: visualizzazione avanzata dei metadati del messaggio e delle informazioni di configurazione.
@@ -117,11 +117,11 @@ Dopo aver esaminato i dettagli del messaggio per l'avviso, è possibile sceglier
 - **Risoluzione**: se si seleziona il controllo **Risolvi** , il messaggio viene rimosso immediatamente dalla coda degli **avvisi in sospeso** e non è possibile eseguire altre operazioni sul messaggio. Selezionando **Risolvi**, l'avviso è stato sostanzialmente chiuso senza ulteriore classificazione e non può essere riaperto per ulteriori azioni. Tutti i messaggi risolti vengono visualizzati nella scheda **risolti** .
 - **False positive**: è sempre possibile risolvere un messaggio come falso positivo in qualsiasi momento durante il flusso di lavoro per la revisione dei messaggi. False positive indica che l'avviso è stato non utilizzabile o che l'avviso è stato generato erroneamente dal processo di avviso. Il messaggio non può essere riaperto e tutti i messaggi falsi positivi sono visualizzati nella scheda **risolti** .
 - **Power automatizzate (Preview)**: utilizzare un flusso Power automatizzate per automatizzare le attività del processo per un messaggio di avviso. Per impostazione predefinita, la conformità alla comunicazione include la *gestione notifiche quando un utente dispone di un* modello di flusso di avviso per la conformità delle comunicazioni che i revisori possono utilizzare per automatizzare il processo di notifica per gli utenti con avvisi dei messaggi. Per ulteriori informazioni sulla creazione e sulla gestione dei flussi automatici di alimentazione in conformità alla comunicazione, vedere l'articolo di [riferimento sulla funzionalità di conformità della comunicazione](communication-compliance-feature-reference.md#power-automate-flows-preview) .
-- **Tag As**: contrassegnare il messaggio come *conforme*, *non conforme*o come *discutibile* in relazione ai criteri e agli standard per l'organizzazione. L'aggiunta di tag e commenti di tagging consente di filtrare gli avvisi per i criteri per le escalation o come parte di altri processi di revisione interni. Dopo aver completato il tagging, è anche possibile scegliere di risolvere il messaggio per spostarlo fuori dalla coda di revisione in sospeso.
+- **Tag As**: contrassegnare il messaggio come *conforme*, *non conforme* o come *discutibile* in relazione ai criteri e agli standard per l'organizzazione. L'aggiunta di tag e commenti di tagging consente di filtrare gli avvisi per i criteri per le escalation o come parte di altri processi di revisione interni. Dopo aver completato il tagging, è anche possibile scegliere di risolvere il messaggio per spostarlo fuori dalla coda di revisione in sospeso.
 - **Notify**: è possibile utilizzare il controllo **Notify** per assegnare un modello di avviso personalizzato all'avviso e per inviare un avviso all'utente. Scegliere il modello di avviso appropriato configurato nell'area delle **impostazioni di conformità della comunicazione** e selezionare Invia per **inviare** un sollecito all'utente che ha inviato il messaggio e per risolvere il problema.
 - **Escalation**: se si utilizza il controllo **escalation** , è possibile scegliere chi altro nell'organizzazione deve esaminare il messaggio. Scegliere da un elenco di revisori configurati nel criterio di conformità della comunicazione per inviare una notifica tramite posta elettronica che richiede ulteriori riesami dell'avviso del messaggio. Il revisore selezionato può utilizzare un collegamento nella notifica di posta elettronica per passare direttamente agli elementi che sono stati escalati per la revisione.
 - **Escalation for investigation**: using the **escalation for investigation** Control, è possibile creare un nuovo [caso di Advanced eDiscovery](overview-ediscovery-20.md) per singoli o più messaggi. Verranno forniti un nome e note per il nuovo caso e l'utente che ha inviato il messaggio che corrisponde al criterio viene automaticamente assegnato come custode del caso. Non sono necessarie ulteriori autorizzazioni per gestire il caso. La creazione di un caso non risolve o crea un nuovo tag per il messaggio. È possibile selezionare un totale di 100 messaggi durante la creazione di un caso avanzato di eDiscovery durante il processo di correzione. Sono supportati i messaggi in tutti i canali di comunicazione controllati dalla conformità di comunicazione. Ad esempio, è possibile selezionare 50 chat di Microsoft teams, 25 messaggi di posta elettronica di Exchange Online e 25 messaggi di Yammer quando si apre un nuovo caso avanzato di eDiscovery per un utente.
-- **Migliorare la classificazione (anteprima)**: gli avvisi creati dal tipo di classificazione corrispondono potrebbero essere necessari commenti e suggerimenti per ridurre al minimo i falsi positivi nell'organizzazione. Utilizzare il controllo **migliora classificazione** per fornire commenti e suggerimenti se la classificazione di conformità della comunicazione è valida o suggerire altri classificatori addestrabili per questo tipo di corrispondenza. È possibile verificare che i classificatori *corrispondano* o meno a *una corrispondenza*o che altri classificatori addestrabili vengano associati a questo tipo di attività di avviso in futuro.
+- **Migliorare la classificazione (anteprima)**: gli avvisi creati dal tipo di classificazione corrispondono potrebbero essere necessari commenti e suggerimenti per ridurre al minimo i falsi positivi nell'organizzazione. Utilizzare il controllo **migliora classificazione** per fornire commenti e suggerimenti se la classificazione di conformità della comunicazione è valida o suggerire altri classificatori addestrabili per questo tipo di corrispondenza. È possibile verificare che i classificatori *corrispondano* o meno a *una corrispondenza* o che altri classificatori addestrabili vengano associati a questo tipo di attività di avviso in futuro.
 
     1. Selezionare un messaggio dall'elenco degli avvisi.
     2. Scegliere i puntini di sospensione e selezionare **migliora classificazione**.

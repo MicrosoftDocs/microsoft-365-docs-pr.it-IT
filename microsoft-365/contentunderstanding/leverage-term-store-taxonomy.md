@@ -7,14 +7,15 @@ audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 search.appverid: ''
+ms.collection: enabler-strategic
 localization_priority: Priority
 description: Sfruttare la tassonomia dell'archivio termini durante la creazione di un estrattore nel modello di analisi dei documenti in Microsoft SharePoint Syntex.
-ms.openlocfilehash: f7219f6facc1d29242f7bd52743da92e13de3b89
-ms.sourcegitcommit: 3f8e573244bc082518125e339a385c41ef6ee800
+ms.openlocfilehash: 0008dd02ef46401e9f0c9414b8363cff034c18eb
+ms.sourcegitcommit: e7bf23df4852b78912229d1d38ec475223597f34
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "48337278"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49087322"
 ---
 # <a name="leverage-term-store-taxonomy-when-creating-an-extractor"></a>Sfruttare la tassonomia dell'archivio termini durante la creazione di un estrattore
 

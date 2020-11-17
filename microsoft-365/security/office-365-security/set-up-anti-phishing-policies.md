@@ -16,12 +16,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Gli amministratori possono ottenere informazioni sui criteri di anti-phishing disponibili in Exchange Online Protection (EOP) e Microsoft Defender per Office 365.
-ms.openlocfilehash: b54f452fb984f61913f2ade53ad45ed169a43832
-ms.sourcegitcommit: f941495e9257a0013b4a6a099b66c649e24ce8a1
+ms.openlocfilehash: c728a69a3b0841219e4f9b546e80e71b2cf89151
+ms.sourcegitcommit: 2d3e85173c65a9e0ce92624a80ed7a9839f5b8bd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "48993355"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49123632"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Criteri di anti-phishing in Microsoft 365
 
@@ -65,19 +65,19 @@ Nella parte restante di questo articolo vengono descritte le impostazioni dispon
 
 Le impostazioni dei criteri seguenti sono disponibili nei criteri di anti-phishing in EOP e Microsoft Defender per Office 365:
 
-- **Nome** : non è possibile rinominare i criteri di anti-phishing predefiniti, ma possono essere denominati e rinominati criteri personalizzati creati.
+- **Nome**: non è possibile rinominare i criteri di anti-phishing predefiniti, ma possono essere denominati e rinominati criteri personalizzati creati.
 
 - **Descrizione/Controlli** Non è possibile aggiungere una descrizione ai criteri anti-phishing predefiniti, ma è possibile aggiungere e modificare la descrizione per i criteri personalizzati creati.
 
-- **Applicato a** : identifica i destinatari interni ai quali si applica il criterio di anti-phishing. Questo valore è obbligatorio nei criteri personalizzati e non è disponibile nel criterio predefinito (il criterio predefinito si applica a tutti i destinatari).
+- **Applicato a**: identifica i destinatari interni ai quali si applica il criterio di anti-phishing. Questo valore è obbligatorio nei criteri personalizzati e non è disponibile nel criterio predefinito (il criterio predefinito si applica a tutti i destinatari).
 
-  È possibile utilizzare una condizione o un'eccezione solo una volta, ma è possibile specificare più valori per la condizione o l'eccezione. Più valori della stessa condizione o eccezione utilizzano la logica OR (ad esempio, _\<recipient1\>_ o _\<recipient2\>_ ). Condizioni o eccezioni diverse utilizzano la logica AND (ad esempio, _\<recipient1\>_ e _\<member of group 1\>_ ).
+  È possibile utilizzare una condizione o un'eccezione solo una volta, ma è possibile specificare più valori per la condizione o l'eccezione. Più valori della stessa condizione o eccezione utilizzano la logica OR (ad esempio, _\<recipient1\>_ o _\<recipient2\>_). Condizioni o eccezioni diverse utilizzano la logica AND (ad esempio, _\<recipient1\>_ e _\<member of group 1\>_).
 
-  - Il **destinatario è** : una o più cassette postali, utenti di posta elettronica o contatti di posta nell'organizzazione.
-  - Il **destinatario è un membro di** : uno o più gruppi nell'organizzazione.
-  - **Il dominio del destinatario è** : uno o più domini accettati configurati in Microsoft 365.
+  - Il **destinatario è**: una o più cassette postali, utenti di posta elettronica o contatti di posta nell'organizzazione.
+  - Il **destinatario è un membro di**: uno o più gruppi nell'organizzazione.
+  - **Il dominio del destinatario è**: uno o più domini accettati configurati in Microsoft 365.
 
-  - **Eccetto quando** : eccezioni per la regola. Le impostazioni e il comportamento sono esattamente come le condizioni seguenti:
+  - **Eccetto quando**: eccezioni per la regola. Le impostazioni e il comportamento sono esattamente come le condizioni seguenti:
 
     - **Il destinatario è**
     - **Il destinatario è un membro di**
@@ -92,7 +92,7 @@ Lo spoofing è quando l'indirizzo from in un messaggio di posta elettronica (l'i
 
 Le seguenti impostazioni di spoofing sono disponibili nei criteri di anti-phishing in EOP e Microsoft Defender per Office 365:
 
-- **Protezione anti-spoofing** : consente di abilitare o disabilitare la protezione anti-spoofing. Si consiglia di lasciarla abilitata. È possibile utilizzare il **criterio di intelligence di spoofing** per consentire o bloccare specifici mittenti interni ed esterni falsificati. Per altre informazioni, vedere [Configurare spoof intelligence in Microsoft 365](learn-about-spoof-intelligence.md).
+- **Protezione anti-spoofing**: consente di abilitare o disabilitare la protezione anti-spoofing. Si consiglia di lasciarla abilitata. È possibile utilizzare il **criterio di intelligence di spoofing** per consentire o bloccare specifici mittenti interni ed esterni falsificati. Per altre informazioni, vedere [Configurare spoof intelligence in Microsoft 365](learn-about-spoof-intelligence.md).
 
   > [!NOTE]
   >
@@ -102,15 +102,15 @@ Le seguenti impostazioni di spoofing sono disponibili nei criteri di anti-phishi
 
   Per i messaggi provenienti da mittenti bloccati, è inoltre possibile specificare l'azione da eseguire sui messaggi:
 
-  - **Sposta messaggio nella cartella posta indesiderata** : questo è il valore predefinito. Il messaggio viene recapitato alla cassetta postale e spostato nella cartella posta indesiderata. In Exchange Online, il messaggio viene spostato nella cartella posta indesiderata se la regola di posta indesiderata è abilitata per la cassetta postale (abilitata per impostazione predefinita). Per ulteriori informazioni, vedere [configurare le impostazioni della posta indesiderata nelle cassette postali di Exchange online in Microsoft 365](configure-junk-email-settings-on-exo-mailboxes.md).
+  - **Sposta messaggio nella cartella posta indesiderata**: questo è il valore predefinito. Il messaggio viene recapitato alla cassetta postale e spostato nella cartella posta indesiderata. In Exchange Online, il messaggio viene spostato nella cartella posta indesiderata se la regola di posta indesiderata è abilitata per la cassetta postale (abilitata per impostazione predefinita). Per ulteriori informazioni, vedere [configurare le impostazioni della posta indesiderata nelle cassette postali di Exchange online in Microsoft 365](configure-junk-email-settings-on-exo-mailboxes.md).
 
-  - Mettere in **quarantena il messaggio** : Invia il messaggio in quarantena invece dei destinatari previsti. Per informazioni sulla quarantena, vedere gli articoli seguenti:
+  - Mettere in **quarantena il messaggio**: Invia il messaggio in quarantena invece dei destinatari previsti. Per informazioni sulla quarantena, vedere gli articoli seguenti:
 
     - [Quarantena in Microsoft 365](quarantine-email-messages.md)
     - [Gestire i messaggi e i file in quarantena come amministratore in Microsoft 365](manage-quarantined-messages-and-files.md)
     - [Trovare e rilasciare i messaggi in quarantena come utente in Microsoft 365](find-and-release-quarantined-messages-as-a-user.md)
 
-- **Mittente non autenticato** : vedere le informazioni nella sezione successiva.
+- **Mittente non autenticato**: vedere le informazioni nella sezione successiva.
 
 ### <a name="unauthenticated-sender"></a>Mittente non autenticato
 
@@ -140,7 +140,7 @@ Per ulteriori informazioni, vedere [Identificazione dei messaggi sospetti in Out
 In questa sezione vengono descritte le impostazioni dei criteri che sono disponibili solo nei criteri di anti-phishing in Microsoft Defender per Office 365.
 
 > [!NOTE]
-> Per impostazione predefinita, le impostazioni esclusive in Defender per Office 365 non sono configurate o attivate, anche nel criterio predefinito. Per sfruttare queste funzionalità, è necessario abilitarle e configurarle nei criteri anti-phishing predefiniti oppure creare e configurare criteri di anti-phishing personalizzati.
+> Il criterio anti-phishing predefinito in Microsoft Defender per Office 365 fornisce [protezione da spoofing](set-up-anti-phishing-policies.md#spoof-settings) e funzionalità di intelligence delle cassette postali per tutti i destinatari. Tuttavia, le altre funzionalità di [protezione delle rappresentazioni](#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) disponibili e le [Impostazioni avanzate](set-up-anti-phishing-policies.md#advanced-phishing-thresholds-in-anti-phishing-policies-in-microsoft-defender-for-office-365) non sono configurate o abilitate nel criterio predefinito. Per abilitare tutte le funzionalità di protezione, modificare il criterio di anti-phishing predefinito o creare ulteriori criteri anti-phishing.
 
 ### <a name="impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>Impostazioni di rappresentazione nei criteri di anti-phishing in Microsoft Defender per Office 365
 
@@ -153,7 +153,7 @@ Un dominio rappresentato potrebbe essere considerato legittimo (dominio registra
 
 Le seguenti impostazioni di rappresentazione sono disponibili solo nei criteri di anti-phishing in Microsoft Defender per Office 365:
 
-- **Utenti da proteggere** : impedisce che gli indirizzi di posta elettronica interni o esterni specificati vengano rappresentati **come mittenti dei messaggi**. Ad esempio, viene visualizzato un messaggio di posta elettronica del vicepresidente della società in cui viene chiesto di inviarle alcune informazioni interne della società. Lo faresti? Molte persone avrebbero inviato la risposta senza pensarci.
+- **Utenti da proteggere**: impedisce che gli indirizzi di posta elettronica interni o esterni specificati vengano rappresentati **come mittenti dei messaggi**. Ad esempio, viene visualizzato un messaggio di posta elettronica del vicepresidente della società in cui viene chiesto di inviarle alcune informazioni interne della società. Lo faresti? Molte persone avrebbero inviato la risposta senza pensarci.
 
   È possibile utilizzare gli utenti protetti per aggiungere indirizzi di posta elettronica del mittente interni ed esterni per proteggersi dalla rappresentazione. Questo elenco di **mittenti** protetti dalla rappresentazione utente è diverso dall'elenco dei **destinatari** a cui si applica il criterio (tutti i destinatari per il criterio predefinito, ovvero i destinatari specifici configurati nell'impostazione **applicato a** nella sezione impostazioni dei [criteri](#policy-settings) ).
 
@@ -167,7 +167,7 @@ Le seguenti impostazioni di rappresentazione sono disponibili solo nei criteri d
 
   Quando si aggiungono indirizzi di posta elettronica interni o esterni all'elenco **degli utenti da proteggere** , i messaggi provenienti da tali **mittenti** sono soggetti ai controlli di protezione della rappresentazione. Il messaggio viene controllato per la rappresentazione **se** il messaggio viene inviato a un **destinatario** a cui si applica il criterio (tutti i destinatari per il criterio predefinito; **Applicato ai** destinatari nei criteri personalizzati). Se la rappresentazione viene rilevata nell'indirizzo di posta elettronica del mittente, le azioni di protezione della rappresentazione per gli utenti vengono applicate al messaggio (cosa fare con il messaggio, se mostrare suggerimenti di sicurezza per gli utenti rappresentati e così via).
 
-- **Domini da proteggere** : impedisce la rappresentazione dei domini specificati **nel dominio del mittente del messaggio**. Ad esempio, tutti i domini che possiedi ([domini accettati](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)) o domini specifici (domini che possiedi o domini partner). Questo elenco di **domini mittente** protetti dalla rappresentazione è diverso dall'elenco dei **destinatari** a cui si applica il criterio (tutti i destinatari per il criterio predefinito, ovvero i destinatari specifici configurati nell'impostazione **applicato a** nella sezione [impostazioni dei criteri](#policy-settings) ).
+- **Domini da proteggere**: impedisce la rappresentazione dei domini specificati **nel dominio del mittente del messaggio**. Ad esempio, tutti i domini che possiedi ([domini accettati](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)) o domini specifici (domini che possiedi o domini partner). Questo elenco di **domini mittente** protetti dalla rappresentazione è diverso dall'elenco dei **destinatari** a cui si applica il criterio (tutti i destinatari per il criterio predefinito, ovvero i destinatari specifici configurati nell'impostazione **applicato a** nella sezione [impostazioni dei criteri](#policy-settings) ).
 
   > [!NOTE]
   > Il numero massimo di domini protetti che è possibile definire in tutti i criteri di anti-phishing è 50.
@@ -176,36 +176,36 @@ Le seguenti impostazioni di rappresentazione sono disponibili solo nei criteri d
 
   Quando si aggiungono domini ai **domini per proteggere** l'elenco, i messaggi provenienti da **mittenti in tali domini** sono soggetti ai controlli di protezione della rappresentazione. Il messaggio viene controllato per la rappresentazione **se** il messaggio viene inviato a un **destinatario** a cui si applica il criterio (tutti i destinatari per il criterio predefinito; **Applicato ai** destinatari nei criteri personalizzati). Se la rappresentazione viene rilevata nel dominio del mittente, le azioni di protezione della rappresentazione per i domini vengono applicate al messaggio (cosa fare con il messaggio, se mostrare suggerimenti di sicurezza per gli utenti rappresentati e così via).
 
-- **Azioni per gli utenti o i domini protetti** : scegliere l'azione da intraprendere nei messaggi in ingresso che contengono tentativi di rappresentazione per gli utenti protetti e i domini protetti nel criterio. È possibile specificare diverse azioni per la rappresentazione degli utenti protetti e la rappresentazione dei domini protetti:
+- **Azioni per gli utenti o i domini protetti**: scegliere l'azione da intraprendere nei messaggi in ingresso che contengono tentativi di rappresentazione per gli utenti protetti e i domini protetti nel criterio. È possibile specificare diverse azioni per la rappresentazione degli utenti protetti e la rappresentazione dei domini protetti:
 
   - **Non applicare alcuna azione**
 
-  - **Reindirizza il messaggio ad altri indirizzi di posta elettronica** : Invia il messaggio ai destinatari specificati anziché ai destinatari previsti.
+  - **Reindirizza il messaggio ad altri indirizzi di posta elettronica**: Invia il messaggio ai destinatari specificati anziché ai destinatari previsti.
 
-  - **Sposta messaggio nella cartella posta indesiderata** : il messaggio viene recapitato alla cassetta postale e spostato nella cartella posta indesiderata. In Exchange Online, il messaggio viene spostato nella cartella posta indesiderata se la regola di posta indesiderata è abilitata per la cassetta postale (abilitata per impostazione predefinita). Per ulteriori informazioni, vedere [configurare le impostazioni della posta indesiderata nelle cassette postali di Exchange online in Microsoft 365](configure-junk-email-settings-on-exo-mailboxes.md).
+  - **Sposta messaggio nella cartella posta indesiderata**: il messaggio viene recapitato alla cassetta postale e spostato nella cartella posta indesiderata. In Exchange Online, il messaggio viene spostato nella cartella posta indesiderata se la regola di posta indesiderata è abilitata per la cassetta postale (abilitata per impostazione predefinita). Per ulteriori informazioni, vedere [configurare le impostazioni della posta indesiderata nelle cassette postali di Exchange online in Microsoft 365](configure-junk-email-settings-on-exo-mailboxes.md).
 
-    - Mettere in **quarantena il messaggio** : Invia il messaggio in quarantena invece dei destinatari previsti. Per informazioni sulla quarantena, vedere gli articoli seguenti:
+    - Mettere in **quarantena il messaggio**: Invia il messaggio in quarantena invece dei destinatari previsti. Per informazioni sulla quarantena, vedere gli articoli seguenti:
 
     - [Quarantena in Microsoft 365](quarantine-email-messages.md)
     - [Gestire i messaggi e i file in quarantena come amministratore in Microsoft 365](manage-quarantined-messages-and-files.md)
     - [Trovare e rilasciare i messaggi in quarantena come utente in Microsoft 365](find-and-release-quarantined-messages-as-a-user.md)
 
-  - **Recapitare il messaggio e aggiungere altri indirizzi alla riga Ccn** : recapitare il messaggio ai destinatari desiderati e recapitare il messaggio ai destinatari specificati.
+  - **Recapitare il messaggio e aggiungere altri indirizzi alla riga Ccn**: recapitare il messaggio ai destinatari desiderati e recapitare il messaggio ai destinatari specificati.
 
-  - **Eliminare il messaggio prima di essere recapitato** : Elimina automaticamente l'intero messaggio, inclusi tutti gli allegati.
+  - **Eliminare il messaggio prima di essere recapitato**: Elimina automaticamente l'intero messaggio, inclusi tutti gli allegati.
 
 - **Suggerimenti** per la sicurezza: consente di abilitare o disabilitare i suggerimenti di sicurezza per la rappresentazione seguenti che verranno visualizzati i messaggi che non hanno eseguito il controllo della rappresentazione:
 
-  - **Utenti rappresentati** : l'indirizzo from contiene un utente protetto.
-  - **Domini rappresentati** : l'indirizzo from contiene un dominio protetto.
-  - **Caratteri insoliti** : l'indirizzo from contiene set di caratteri inusuali, ad esempio simboli matematici e testo o una combinazione di lettere maiuscole e minuscole, in un mittente o dominio protetto.
+  - **Utenti rappresentati**: l'indirizzo from contiene un utente protetto.
+  - **Domini rappresentati**: l'indirizzo from contiene un dominio protetto.
+  - **Caratteri insoliti**: l'indirizzo from contiene set di caratteri inusuali, ad esempio simboli matematici e testo o una combinazione di lettere maiuscole e minuscole, in un mittente o dominio protetto.
 
   > [!NOTE]
   > Anche quando i suggerimenti per la sicurezza della rappresentazione sono disattivati, è possibile utilizzare una regola del flusso di posta (nota anche come regola di trasporto) per aggiungere un'intestazione del messaggio denominata **X-MS-Exchange-EnableFirstContactSafetyTip** ai messaggi. Verranno visualizzati suggerimenti specifici per la sicurezza che notificano ai destinatari che spesso non ricevono messaggi di posta elettronica dal mittente o nei casi in cui il destinatario riceve un messaggio di posta elettronica per la prima volta dal mittente.
 
-- **Intelligence delle cassette postali** : consente di abilitare o disabilitare l'intelligenza artificiale (ai) che determina i modelli di posta elettronica degli utenti con i contatti frequenti. Questa impostazione consente all'AI di distinguere tra la posta elettronica legittima e contraffatta da tali contatti. L'intelligence della cassetta postale è disponibile solo per le cassette postali di Exchange Online.
+- **Intelligence delle cassette postali**: consente di abilitare o disabilitare l'intelligenza artificiale (ai) che determina i modelli di posta elettronica degli utenti con i contatti frequenti. Questa impostazione consente all'AI di distinguere tra la posta elettronica legittima e contraffatta da tali contatti. L'intelligence della cassetta postale è disponibile solo per le cassette postali di Exchange Online.
 
-- **Protezione della rappresentazione basata sull'Intelligence delle cassette postali** : consente di abilitare o disabilitare i risultati della rappresentazione migliorati in base alla mappa del mittente individuale di ogni utente. Questa funzionalità di Intelligence consente a Microsoft 365 di personalizzare il rilevamento delle rappresentazioni degli utenti e gestire in modo migliore i falsi positivi. Quando viene rilevata la rappresentazione utente, è possibile definire un'azione specifica da intraprendere sul messaggio:
+- **Protezione della rappresentazione basata sull'Intelligence delle cassette postali**: consente di abilitare o disabilitare i risultati della rappresentazione migliorati in base alla mappa del mittente individuale di ogni utente. Questa funzionalità di Intelligence consente a Microsoft 365 di personalizzare il rilevamento delle rappresentazioni degli utenti e gestire in modo migliore i falsi positivi. Quando viene rilevata la rappresentazione utente, è possibile definire un'azione specifica da intraprendere sul messaggio:
 
   - **Non applicare alcuna azione**
   - **Reindirizza il messaggio ad altri indirizzi di posta elettronica**
@@ -214,18 +214,18 @@ Le seguenti impostazioni di rappresentazione sono disponibili solo nei criteri d
   - **Recapitare il messaggio e aggiungere altri indirizzi alla riga Ccn**
   - **Eliminare il messaggio prima di essere recapitato**
 
-- **Mittenti e domini attendibili** : eccezioni per le impostazioni di protezione della rappresentazione. I messaggi provenienti dai mittenti e dai domini mittente specificati non vengono mai classificati come attacchi basati sulla rappresentazione da parte del criterio. In altre parole, l'azione per i mittenti protetti, i domini protetti o la protezione dall'Intelligence delle cassette postali non viene applicata a questi mittenti attendibili o ai domini mittente. Il limite massimo per questi elenchi è approssimativamente pari a 1000 voci.
+- **Mittenti e domini attendibili**: eccezioni per le impostazioni di protezione della rappresentazione. I messaggi provenienti dai mittenti e dai domini mittente specificati non vengono mai classificati come attacchi basati sulla rappresentazione da parte del criterio. In altre parole, l'azione per i mittenti protetti, i domini protetti o la protezione dall'Intelligence delle cassette postali non viene applicata a questi mittenti attendibili o ai domini mittente. Il limite massimo per questi elenchi è approssimativamente pari a 1000 voci.
 
 ### <a name="advanced-phishing-thresholds-in-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>Soglie di phishing avanzate nei criteri di anti-phishing in Microsoft Defender per Office 365
 
 Le soglie di phishing avanzate seguenti sono disponibili solo nei criteri di anti-phishing in Microsoft Defender per Office 365. Queste soglie controllano la sensibilità per l'applicazione dei modelli di apprendimento automatico ai messaggi per determinare un verdetto di phishing:
 
-- **1-standard** : questo è il valore predefinito. Il livello di gravità dell'azione intrapresa sul messaggio dipende dal grado di sicurezza del messaggio (basso, medio, alto o estremamente elevato). Ad esempio, i messaggi identificati come phishing con un livello di sicurezza molto elevato hanno le azioni più gravi applicate, mentre i messaggi che vengono identificati come phishing con un livello di confidenza basso presentano azioni meno gravi applicate.
+- **1-standard**: questo è il valore predefinito. Il livello di gravità dell'azione intrapresa sul messaggio dipende dal grado di sicurezza del messaggio (basso, medio, alto o estremamente elevato). Ad esempio, i messaggi identificati come phishing con un livello di sicurezza molto elevato hanno le azioni più gravi applicate, mentre i messaggi che vengono identificati come phishing con un livello di confidenza basso presentano azioni meno gravi applicate.
 
-- **2-aggressivo** : i messaggi identificati come phishing con un elevato livello di sicurezza vengono considerati come se fossero stati identificati con un livello di attendibilità elevatissimo.
+- **2-aggressivo**: i messaggi identificati come phishing con un elevato livello di sicurezza vengono considerati come se fossero stati identificati con un livello di attendibilità elevatissimo.
 
-- **3-più aggressivo** : i messaggi identificati come phishing con un livello di sicurezza medio o elevato vengono considerati come se fossero stati identificati con un livello di attendibilità elevatissimo.
+- **3-più aggressivo**: i messaggi identificati come phishing con un livello di sicurezza medio o elevato vengono considerati come se fossero stati identificati con un livello di attendibilità elevatissimo.
 
-- **4-la maggior parte degli utenti aggressivi** : i messaggi identificati come phishing con un livello di attendibilità basso, medio o alto vengono considerati come se fossero stati identificati con un livello di attendibilità elevatissimo.
+- **4-la maggior parte degli utenti aggressivi**: i messaggi identificati come phishing con un livello di attendibilità basso, medio o alto vengono considerati come se fossero stati identificati con un livello di attendibilità elevatissimo.
 
 La probabilità di falsi positivi (buoni messaggi contrassegnati come danneggiati) aumenta man mano che si aumenta questa impostazione. Per informazioni sulle impostazioni consigliate, vedere [anti-phishing Policy in Microsoft Defender for Office 365 Settings](recommended-settings-for-eop-and-office365-atp.md#anti-phishing-policy-settings-in-microsoft-defender-for-office-365).

@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Informazioni dettagliate sul punteggio di produttività per la comunicazione-persone.
-ms.openlocfilehash: 6f79a636c24548586048adf0151ac5eefb98fffe
-ms.sourcegitcommit: d578b28ed1886abd083b01b93f01b354067e6d47
+ms.openlocfilehash: ba2e69659f49c90d3b65e56e54b3026c7c9ff36a
+ms.sourcegitcommit: 2d3e85173c65a9e0ce92624a80ed7a9839f5b8bd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "48804656"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49123448"
 ---
 # <a name="communication--people-experiences"></a>Comunicazione – esperienze degli utenti
 
@@ -57,8 +57,8 @@ Microsoft 365 offre alle persone la possibilità di adattare lo stile di comunic
 3. **Visualizzazione dello stato corrente:**
     - Barra orizzontale in cui la parte blu rappresenta la percentuale espressa nell'intestazione
     - Evidenzia il (numeratore/denominatore) utilizzato per calcolare la percentuale espressa nell'intestazione:
-      - **Numeratore** : # di persone che usano più di una modalità di comunicazione negli ultimi 28 giorni
-      - **Denominatore** : # di persone contrassegnate come abilitate per più di un prodotto di comunicazione negli ultimi 28 giorni
+      - **Numeratore**: # di persone che usano più di una modalità di comunicazione negli ultimi 28 giorni
+      - **Denominatore**: # di persone contrassegnate come abilitate per più di un prodotto di comunicazione negli ultimi 28 giorni
     - Il valore **benchmark peer** della metrica chiave viene mostrato anche come percentuale
 
 1. **Visualizzare le risorse di comunicazione:** Fare clic qui per integrare tutto il contenuto del supporto in formato video/articoli relativi alla comunicazione. Da questi è possibile passare alla playlist personalizzata per la comunicazione e successivamente, per tutte le categorie di Punteggio di produttività.
@@ -67,7 +67,7 @@ Microsoft 365 offre alle persone la possibilità di adattare lo stile di comunic
 
  Questo grafico fornisce l'andamento del numeratore della metrica chiave nell'Insight principale, ovvero il numero di persone che usano più di una modalità di comunicazione negli ultimi 180 giorni. Di seguito viene indicato che il valore giornaliero è un'aggregazione del numero di utenti che utilizzano più forme di comunicazione negli ultimi 28 giorni.
 
-:::image type="content" source="../../media/trend-communication.png" alt-text="Intuizione principale per le modalità di comunicazione.":::
+:::image type="content" source="../../media/trend-communication.png" alt-text="Grafico che indica il numero di utenti che utilizzano più modalità per comunicare con il tempo.":::
 
 ### <a name="scoring-model"></a>Modello di Punteggio
 
@@ -79,17 +79,17 @@ Vengono inoltre fornite informazioni che consentono di acquisire visibilità sul
 
 ### <a name="breakdown-of-communication-by-modes"></a>Ripartizione della comunicazione per modalità
 
-:::image type="content" source="../../media/howpeoplecommunicate.png" alt-text="Intuizione principale per le modalità di comunicazione.":::
+:::image type="content" source="../../media/howpeoplecommunicate.png" alt-text="! [Scomposizione delle modalità di comunicazione]":::
 
 1. **Intestazione:** Evidenzia l'obiettivo dell'Insight di fornire una ripartizione dettagliata tra le diverse modalità di comunicazione che vengono considerate all'interno della comunicazione
 2. **Corpo:** Vengono fornite informazioni sul valore dell'utilizzo di diverse modalità per la condivisione delle conoscenze
 3. **Visualizzazione:** La scomposizione rappresenta l'UES per ogni modalità. La parte colorata e la frazione di ogni barra rappresentano il numero di persone che inviano messaggi di posta elettronica, messaggi o post della community come percentuale del numero di utenti abilitati per tale modalità:
       - **Utenti che inviano messaggi di posta elettronica:** La parte colorata e la frazione rappresentano la percentuale di utenti abilitati per Exchange che inviano messaggi di posta elettronica. Questa frazione è costituita da:
-          - **Numeratore** : utenti che inviano messaggi di posta elettronica negli ultimi 28 giorni
-          - **Denominatore** : utenti abilitati per Exchange negli ultimi 28 giorni
+          - **Numeratore**: utenti che inviano messaggi di posta elettronica negli ultimi 28 giorni
+          - **Denominatore**: utenti abilitati per Exchange negli ultimi 28 giorni
       - **Utenti che inviano messaggi in Microsoft teams:** La parte colorata e la frazione rappresentano la percentuale di utenti abilitati per i team di Microsoft che inviano messaggi. Questa frazione è costituita da:
-          - **Numeratore** : utenti che inviano messaggi su Microsoft teams negli ultimi 28 giorni
-          - **Denominatore** : utenti abilitati per Microsoft teams negli ultimi 28 giorni
+          - **Numeratore**: utenti che inviano messaggi su Microsoft teams negli ultimi 28 giorni
+          - **Denominatore**: utenti abilitati per Microsoft teams negli ultimi 28 giorni
       - **Registrazione utenti nelle community:** La parte colorata e la frazione rappresentano la percentuale di utenti abilitati per Yammer che vengono disposte nelle community. Questa frazione è costituita da:
           - **Numeratore:** Registrazione di persone nelle community di Yammer negli ultimi 28 giorni
           - **Denominatore:** Utenti abilitati per Yammer negli ultimi 28 giorni
@@ -97,15 +97,15 @@ Vengono inoltre fornite informazioni che consentono di acquisire visibilità sul
 
 ### <a name="mentions-in-emails"></a>@mentions nei messaggi di posta elettronica
 
-:::image type="content" source="../../media/emailmentions.png" alt-text="Intuizione principale per le modalità di comunicazione.":::
+:::image type="content" source="../../media/emailmentions.png" alt-text="! [Messaggi di posta elettronica con menzioni.]":::
 
 1. **Intestazione:** Evidenzia l'aumento del tasso di risposta per i nuovi thread di posta elettronica avviati negli ultimi 28 giorni quando contengono @mentions
 2. **Corpo:** Vengono fornite informazioni sul valore dell'utilizzo di @mentions nei messaggi di posta elettronica. Inoltre, le persone che usano @mentions sono espresse in percentuale di tutti gli utenti che hanno inviato un messaggio di posta elettronica negli ultimi 28 giorni.
 3. **Visualizzazione:** Suddivide la frequenza di risposta per i nuovi thread di posta elettronica in base al fatto che siano @mentions o meno:
-      - **Risposte ai messaggi di posta elettronica con @mentions:** La parte colorata e la frazione rappresentano la frequenza di risposta per i nuovi thread di posta elettronica contenenti @mentions. Questa frazione è costituita da:
+      - **Risposte ai messaggi di posta elettronica con \@ menzioni:** la parte colorata e la frazione rappresentano la percentuale di risposta per i nuovi thread di posta elettronica contenenti @mentions. Questa frazione è costituita da:
           - **Numeratore:** Nuovi thread di posta elettronica contenenti @mentions che sono stati avviati e hanno ricevuto una risposta negli ultimi 28 giorni.
           - **Denominatore:** Nuovi thread di posta elettronica contenenti @mentions che sono stati avviati negli ultimi 28 giorni
-      - **Risposte ai messaggi di posta elettronica senza @mentions:** La parte colorata e la frazione rappresentano la frequenza di risposta per i nuovi thread di posta elettronica contenenti @mentions. Questa frazione è costituita da:
+      - **Risposte a messaggi di posta elettronica senza \@ menzioni:** la parte colorata e la frazione rappresentano la percentuale di risposta per i nuovi thread di posta elettronica contenenti @mentions. Questa frazione è costituita da:
           - **Numeratore:** I nuovi thread di posta elettronica che non contengono @mentions, che sono stati avviati e hanno ricevuto una risposta negli ultimi 28 giorni.
           - **Denominatore:** Nuovi thread di posta elettronica che non contengono @mentions che sono stati avviati negli ultimi 28 giorni.
 4. **Visualizzazione del contenuto correlato:** Selezionare questo collegamento per visualizzare i video fascicolati e altri contenuti della Guida correlati.
@@ -113,7 +113,7 @@ Vengono inoltre fornite informazioni che consentono di acquisire visibilità sul
 
 ### <a name="breakdown-of-messages-by-type-in-microsoft-teams"></a>Suddivisione dei messaggi per tipo in Microsoft Teams
 
-:::image type="content" source="../../media/teamsmessages.png" alt-text="Intuizione principale per le modalità di comunicazione.":::
+:::image type="content" source="../../media/teamsmessages.png" alt-text="! [Tipi di messaggio teams.]":::
 
 1. **Intestazione:** Evidenzia gli utenti che hanno inviato messaggi di canale come percentuale di persone che hanno inviato qualsiasi tipo di messaggio (compresi i messaggi di chat e di canale) negli ultimi 28 giorni.
 2. **Corpo:** Vengono fornite informazioni sul valore dell'utilizzo dei messaggi di canale all'interno di Microsoft Teams
@@ -128,7 +128,7 @@ Vengono inoltre fornite informazioni che consentono di acquisire visibilità sul
 
 ### <a name="questions-and-answers-in-yammer"></a>Domande e risposte in Yammer
 
-:::image type="content" source="../../media/yammerqsandas.png" alt-text="Intuizione principale per le modalità di comunicazione.":::
+:::image type="content" source="../../media/yammerqsandas.png" alt-text="[Domande e risposte in Yammer]":::
 
 1. **Intestazione:** Evidenzia i post contrassegnati come domande su Yammer che hanno ricevuto una risposta contrassegnata come &quot; risposta migliore &quot; come percentuale di tutti i post contrassegnati come domande su Yammer negli ultimi 28 giorni
 2. **Corpo:** Vengono fornite informazioni sul valore dell'utilizzo di domande e risposte in Yammer per condividere le conoscenze.
@@ -158,7 +158,7 @@ In questa sezione vengono fornite informazioni dettagliate sulle attività relat
 - **Giorni inviati a Yammer:** Numero di giorni in cui l'utente è stato inviato su Yammer negli ultimi 28 giorni.
 - **Giorni usati @mention nella posta elettronica:** Numero di giorni in cui l'utente ha inviato un messaggio di posta elettronica contenente un @mention negli ultimi 28 giorni.
 
-È inoltre possibile esportare i dati del report in un file CSV di Excel selezionando il collegamento del **pulsante Esporta esportazione** . Si noti che è possibile personalizzare il set di colonne nella visualizzazione selezionando le colonne necessarie dopo aver fatto clic su **Scegli colonne** .
+È inoltre possibile esportare i dati del report in un file CSV di Excel selezionando il collegamento del **pulsante Esporta esportazione** . Si noti che è possibile personalizzare il set di colonne nella visualizzazione selezionando le colonne necessarie dopo aver fatto clic su **Scegli colonne**.
 
 ## <a name="related-content"></a>Contenuti correlati
 
