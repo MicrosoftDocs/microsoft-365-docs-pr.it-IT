@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 description: Quali sono le procedure consigliate per le impostazioni di sicurezza di Exchange Online Protection (EOP) e Defender per Office 365? Quali sono le raccomandazioni aggiornate per la protezione standard? Che cosa dovrebbe essere utilizzato se si desidera essere più severi? Quali sono gli extra che si ottengono se si utilizza Defender anche per Office 365?
-ms.openlocfilehash: bc91ba58c9dc14954f638853ad24fcf7a26684e3
-ms.sourcegitcommit: 2d3e85173c65a9e0ce92624a80ed7a9839f5b8bd
+ms.openlocfilehash: bcad3609f5f73ac538ae9d1a0964ecc8e176003e
+ms.sourcegitcommit: 0402d3275632fceda9137b6abc3ce48c8020172a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 11/17/2020
-ms.locfileid: "49123473"
+ms.locfileid: "49126638"
 ---
 # <a name="recommended-settings-for-eop-and-microsoft-defender-for-office-365-security"></a>Impostazioni consigliate per EOP e Microsoft Defender per la sicurezza di Office 365
 
@@ -189,11 +189,11 @@ Si noti che si tratta delle stesse impostazioni disponibili nelle impostazioni d
 
 ****
 
-|Nome della funzionalità di sicurezza|Standard|Rigorosa|Commento|
-|---|---|---|---|
-|**Abilitare la protezione anti-spoofing** <p> _EnableAntispoofEnforcement_|Attivato <p> `$true`|Attivato <p> `$true`||
-|**Abilitazione del mittente non autenticato** <p> _EnableUnauthenticatedSender_|Attivato <p> `$true`|Attivato <p> `$true`|Aggiunge un punto interrogativo (?) alla foto del mittente in Outlook per i mittenti non identificati falsificati. Per ulteriori informazioni, vedere [spoofing Settings in anti-phishing Policies](set-up-anti-phishing-policies.md).|
-|**Se il messaggio di posta elettronica viene inviato da un utente che non ha il diritto di falsificare il dominio** <p> _AuthenticationFailAction_|**Spostare il messaggio nelle cartelle di posta indesiderata dei destinatari** <p> `MoveToJmf`|**Mettere in quarantena il messaggio** <p> `Quarantine`|Questa impostazione si applica ai mittenti bloccati in [Intelligence contraffatta](learn-about-spoof-intelligence.md).|
+|Nome della funzionalità di sicurezza|Predefiniti|Standard|Rigorosa|Commento|
+|---|---|---|---|---|
+|**Abilitare la protezione anti-spoofing** <p> _EnableAntispoofEnforcement_|Attivato <p> `$true`|Attivato <p> `$true`|Attivato <p> `$true`||
+|**Abilitazione del mittente non autenticato** <p> _EnableUnauthenticatedSender_|Attivato <p> `$true`|Attivato <p> `$true`|Attivato <p> `$true`|Aggiunge un punto interrogativo (?) alla foto del mittente in Outlook per i mittenti non identificati falsificati. Per ulteriori informazioni, vedere [spoofing Settings in anti-phishing Policies](set-up-anti-phishing-policies.md).|
+|**Se il messaggio di posta elettronica viene inviato da un utente che non ha il diritto di falsificare il dominio** <p> _AuthenticationFailAction_|**Spostare il messaggio nelle cartelle di posta indesiderata dei destinatari** <p> `MoveToJmf`|**Spostare il messaggio nelle cartelle di posta indesiderata dei destinatari** <p> `MoveToJmf`|**Mettere in quarantena il messaggio** <p> `Quarantine`|Questa impostazione si applica ai mittenti bloccati in [Intelligence contraffatta](learn-about-spoof-intelligence.md).|
 |
 
 #### <a name="advanced-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>Impostazioni avanzate nei criteri di anti-phishing in Microsoft Defender per Office 365
