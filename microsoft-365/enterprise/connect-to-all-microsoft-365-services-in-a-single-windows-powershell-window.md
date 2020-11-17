@@ -18,104 +18,104 @@ ms.custom:
 - httpsfix
 ms.assetid: 53d3eef6-4a16-4fb9-903c-816d5d98d7e8
 description: "Riepilogo: Effettuare la connessione a tutti i servizi di Microsoft 365 in un'unica finestra di PowerShell."
-ms.openlocfilehash: 04be916f745e2bde70554045340fc8ec03f87413
-ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
+ms.openlocfilehash: 4128e360a3664d3a61559139bc4e6e346418fa61
+ms.sourcegitcommit: e7bf23df4852b78912229d1d38ec475223597f34
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "48754317"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49087028"
 ---
-# <a name="connect-to-all-microsoft-365-services-in-a-single-powershell-window"></a><span data-ttu-id="9fef2-103">Effettuare la connessione a tutti i servizi di Microsoft 365 in un'unica finestra di PowerShell</span><span class="sxs-lookup"><span data-stu-id="9fef2-103">Connect to all Microsoft 365 services in a single PowerShell window</span></span>
+# <a name="connect-to-all-microsoft-365-services-in-a-single-powershell-window"></a><span data-ttu-id="ad410-103">Effettuare la connessione a tutti i servizi di Microsoft 365 in un'unica finestra di PowerShell</span><span class="sxs-lookup"><span data-stu-id="ad410-103">Connect to all Microsoft 365 services in a single PowerShell window</span></span>
 
-<span data-ttu-id="9fef2-104">Quando si usa PowerShell per gestire Microsoft 365, è possibile aprire contemporaneamente più sessioni di PowerShell.</span><span class="sxs-lookup"><span data-stu-id="9fef2-104">When you use PowerShell to manage Microsoft 365, you can have multiple PowerShell sessions open at the same time.</span></span> <span data-ttu-id="9fef2-105">Si potrebbero avere finestre di PowerShell diverse per gestire gli account utente, SharePoint Online, Exchange Online, Skype for Business Online, Microsoft Teams e il Centro sicurezza &amp; conformità.</span><span class="sxs-lookup"><span data-stu-id="9fef2-105">You might have different PowerShell windows to manage user accounts, SharePoint Online, Exchange Online, Skype for Business Online, Microsoft Teams, and the Security &amp; Compliance center.</span></span>
+<span data-ttu-id="ad410-104">Quando si usa PowerShell per gestire Microsoft 365, è possibile aprire contemporaneamente più sessioni di PowerShell.</span><span class="sxs-lookup"><span data-stu-id="ad410-104">When you use PowerShell to manage Microsoft 365, you can have multiple PowerShell sessions open at the same time.</span></span> <span data-ttu-id="ad410-105">Si potrebbero avere finestre di PowerShell diverse per gestire gli account utente, SharePoint Online, Exchange Online, Skype for Business Online, Microsoft Teams e il Centro sicurezza &amp; conformità.</span><span class="sxs-lookup"><span data-stu-id="ad410-105">You might have different PowerShell windows to manage user accounts, SharePoint Online, Exchange Online, Skype for Business Online, Microsoft Teams, and the Security &amp; Compliance center.</span></span>
   
-<span data-ttu-id="9fef2-106">Non si tratta di uno scenario ottimale per la gestione di Microsoft 365, poiché non è possibile gestire i servizi scambiando i dati tra le finestre.</span><span class="sxs-lookup"><span data-stu-id="9fef2-106">This scenario isn't optimal for managing Microsoft 365, because you can't exchange data among those windows for cross-service management.</span></span> <span data-ttu-id="9fef2-107">Questo articolo descrive come usare una singola istanza di PowerShell per gestire gli account di Microsoft 365, Skype for Business Online, Exchange Online, SharePoint Online, Microsoft Teams e il Centro sicurezza &amp; conformità.</span><span class="sxs-lookup"><span data-stu-id="9fef2-107">This article describes how to use a single instance of PowerShell to manage Microsoft 365 accounts, Skype for Business Online, Exchange Online, SharePoint Online, Microsoft Teams, and the Security &amp; Compliance Center.</span></span>
+<span data-ttu-id="ad410-106">Non si tratta di uno scenario ottimale per la gestione di Microsoft 365, poiché non è possibile gestire i servizi scambiando i dati tra le finestre.</span><span class="sxs-lookup"><span data-stu-id="ad410-106">This scenario isn't optimal for managing Microsoft 365, because you can't exchange data among those windows for cross-service management.</span></span> <span data-ttu-id="ad410-107">Questo articolo descrive come usare una singola istanza di PowerShell per gestire gli account di Microsoft 365, Skype for Business Online, Exchange Online, SharePoint Online, Microsoft Teams e il Centro sicurezza &amp; conformità.</span><span class="sxs-lookup"><span data-stu-id="ad410-107">This article describes how to use a single instance of PowerShell to manage Microsoft 365 accounts, Skype for Business Online, Exchange Online, SharePoint Online, Microsoft Teams, and the Security &amp; Compliance Center.</span></span>
 
 >[!Note]
-><span data-ttu-id="9fef2-108">Questo articolo contiene al momento solo i comandi per connettersi al cloud internazionale (+GCC).</span><span class="sxs-lookup"><span data-stu-id="9fef2-108">This article currently only contains the commands to connect to the Worldwide (+GCC) cloud.</span></span> <span data-ttu-id="9fef2-109">Le note contengono collegamenti agli articoli con informazioni sulla connessione ad altri cloud di Microsoft 365.</span><span class="sxs-lookup"><span data-stu-id="9fef2-109">Notes provide links to articles about connecting to the other Microsoft 365 clouds.</span></span>
+><span data-ttu-id="ad410-108">Questo articolo contiene al momento solo i comandi per connettersi al cloud internazionale (+GCC).</span><span class="sxs-lookup"><span data-stu-id="ad410-108">This article currently only contains the commands to connect to the Worldwide (+GCC) cloud.</span></span> <span data-ttu-id="ad410-109">Le note contengono collegamenti agli articoli con informazioni sulla connessione ad altri cloud di Microsoft 365.</span><span class="sxs-lookup"><span data-stu-id="ad410-109">Notes provide links to articles about connecting to the other Microsoft 365 clouds.</span></span>
 
-## <a name="before-you-begin"></a><span data-ttu-id="9fef2-110">Prima di iniziare</span><span class="sxs-lookup"><span data-stu-id="9fef2-110">Before you begin</span></span>
+## <a name="before-you-begin"></a><span data-ttu-id="ad410-110">Prima di iniziare</span><span class="sxs-lookup"><span data-stu-id="ad410-110">Before you begin</span></span>
 
-<span data-ttu-id="9fef2-111">Per poter gestire tutti i servizi di Microsoft 365 da una singola istanza di PowerShell, prendere in considerazione i prerequisiti seguenti:</span><span class="sxs-lookup"><span data-stu-id="9fef2-111">Before you can manage all of Microsoft 365 from a single instance of PowerShell, consider the following prerequisites:</span></span>
+<span data-ttu-id="ad410-111">Per poter gestire tutti i servizi di Microsoft 365 da una singola istanza di PowerShell, prendere in considerazione i prerequisiti seguenti:</span><span class="sxs-lookup"><span data-stu-id="ad410-111">Before you can manage all of Microsoft 365 from a single instance of PowerShell, consider the following prerequisites:</span></span>
   
-- <span data-ttu-id="9fef2-112">L'account aziendale o dell'istituto di istruzione di Microsoft 365 usato per queste procedure deve avere un ruolo di amministratore di Microsoft 365.</span><span class="sxs-lookup"><span data-stu-id="9fef2-112">The Microsoft 365 work or school account that you use must be a member of a Microsoft 365 admin role.</span></span> <span data-ttu-id="9fef2-113">Per altre informazioni, vedere [Informazioni sui ruoli di amministratore](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).</span><span class="sxs-lookup"><span data-stu-id="9fef2-113">For more information, see [About admin roles](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).</span></span> <span data-ttu-id="9fef2-114">Questo è un requisito per PowerShell per Microsoft 365, ma non necessariamente per tutti gli altri servizi di Microsoft 365.</span><span class="sxs-lookup"><span data-stu-id="9fef2-114">This is a requirement for PowerShell for Microsoft 365, but not necessarily for all other Microsoft 365 services.</span></span>
+- <span data-ttu-id="ad410-112">L'account aziendale o dell'istituto di istruzione di Microsoft 365 usato per queste procedure deve avere un ruolo di amministratore di Microsoft 365.</span><span class="sxs-lookup"><span data-stu-id="ad410-112">The Microsoft 365 work or school account that you use must be a member of a Microsoft 365 admin role.</span></span> <span data-ttu-id="ad410-113">Per altre informazioni, vedere [Informazioni sui ruoli di amministratore](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).</span><span class="sxs-lookup"><span data-stu-id="ad410-113">For more information, see [About admin roles](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).</span></span> <span data-ttu-id="ad410-114">Questo è un requisito per PowerShell per Microsoft 365, ma non necessariamente per tutti gli altri servizi di Microsoft 365.</span><span class="sxs-lookup"><span data-stu-id="ad410-114">This is a requirement for PowerShell for Microsoft 365, but not necessarily for all other Microsoft 365 services.</span></span>
     
-- <span data-ttu-id="9fef2-115">È possibile usare le seguenti versioni a 64 bit di Windows:</span><span class="sxs-lookup"><span data-stu-id="9fef2-115">You can use the following 64-bit versions of Windows:</span></span>
+- <span data-ttu-id="ad410-115">È possibile usare le seguenti versioni a 64 bit di Windows:</span><span class="sxs-lookup"><span data-stu-id="ad410-115">You can use the following 64-bit versions of Windows:</span></span>
     
-  - <span data-ttu-id="9fef2-116">Windows 10</span><span class="sxs-lookup"><span data-stu-id="9fef2-116">Windows 10</span></span>
+  - <span data-ttu-id="ad410-116">Windows 10</span><span class="sxs-lookup"><span data-stu-id="ad410-116">Windows 10</span></span>
     
-  - <span data-ttu-id="9fef2-117">Windows 8.1 o Windows 8</span><span class="sxs-lookup"><span data-stu-id="9fef2-117">Windows 8.1 or Windows 8</span></span>
+  - <span data-ttu-id="ad410-117">Windows 8.1 o Windows 8</span><span class="sxs-lookup"><span data-stu-id="ad410-117">Windows 8.1 or Windows 8</span></span>
     
-  - <span data-ttu-id="9fef2-118">Windows Server 2019</span><span class="sxs-lookup"><span data-stu-id="9fef2-118">Windows Server 2019</span></span>
+  - <span data-ttu-id="ad410-118">Windows Server 2019</span><span class="sxs-lookup"><span data-stu-id="ad410-118">Windows Server 2019</span></span>
     
-  - <span data-ttu-id="9fef2-119">Windows Server 2016</span><span class="sxs-lookup"><span data-stu-id="9fef2-119">Windows Server 2016</span></span>
+  - <span data-ttu-id="ad410-119">Windows Server 2016</span><span class="sxs-lookup"><span data-stu-id="ad410-119">Windows Server 2016</span></span>
     
-  - <span data-ttu-id="9fef2-120">Windows Server 2012 R2 o Windows Server 2012</span><span class="sxs-lookup"><span data-stu-id="9fef2-120">Windows Server 2012 R2 or Windows Server 2012</span></span>
+  - <span data-ttu-id="ad410-120">Windows Server 2012 R2 o Windows Server 2012</span><span class="sxs-lookup"><span data-stu-id="ad410-120">Windows Server 2012 R2 or Windows Server 2012</span></span>
     
-  - <span data-ttu-id="9fef2-121">Windows 7 Service Pack 1 (SP1)\*</span><span class="sxs-lookup"><span data-stu-id="9fef2-121">Windows 7 Service Pack 1 (SP1)\*</span></span>
+  - <span data-ttu-id="ad410-121">Windows 7 Service Pack 1 (SP1)\*</span><span class="sxs-lookup"><span data-stu-id="ad410-121">Windows 7 Service Pack 1 (SP1)\*</span></span>
     
-  - <span data-ttu-id="9fef2-122">Windows Server 2008 R2 SP1\*</span><span class="sxs-lookup"><span data-stu-id="9fef2-122">Windows Server 2008 R2 SP1\*</span></span>
+  - <span data-ttu-id="ad410-122">Windows Server 2008 R2 SP1\*</span><span class="sxs-lookup"><span data-stu-id="ad410-122">Windows Server 2008 R2 SP1\*</span></span>
     
-    <span data-ttu-id="9fef2-123">\* È necessario installare Microsoft .NET Framework 4.5. *x* e quindi Windows Management Framework 3.0 o 4.0.</span><span class="sxs-lookup"><span data-stu-id="9fef2-123">\* You need to install Microsoft .NET Framework 4.5. *x* and then Windows Management Framework 3.0 or 4.0.</span></span> <span data-ttu-id="9fef2-124">Per altre informazioni, vedere [Windows Management Framework](https://docs.microsoft.com/powershell/scripting/windows-powershell/wmf/overview?view=powershell-7).</span><span class="sxs-lookup"><span data-stu-id="9fef2-124">For more information, see [Windows Management Framework](https://docs.microsoft.com/powershell/scripting/windows-powershell/wmf/overview?view=powershell-7).</span></span>
+    <span data-ttu-id="ad410-123">\* È necessario installare Microsoft .NET Framework 4.5.*x* e quindi Windows Management Framework 3.0 o 4.0.</span><span class="sxs-lookup"><span data-stu-id="ad410-123">\* You need to install Microsoft .NET Framework 4.5.*x* and then Windows Management Framework 3.0 or 4.0.</span></span> <span data-ttu-id="ad410-124">Per altre informazioni, vedere [Windows Management Framework](https://docs.microsoft.com/powershell/scripting/windows-powershell/wmf/overview?view=powershell-7).</span><span class="sxs-lookup"><span data-stu-id="ad410-124">For more information, see [Windows Management Framework](https://docs.microsoft.com/powershell/scripting/windows-powershell/wmf/overview?view=powershell-7).</span></span>
     
-    <span data-ttu-id="9fef2-125">È necessario utilizzare una versione a 64 bit di Windows, a causa dei requisiti, per il modulo di Skype for Business Online e una per moduli di Microsoft 365.</span><span class="sxs-lookup"><span data-stu-id="9fef2-125">You need to use a 64-bit version of Windows because of the requirements for the Skype for Business Online module and one of the Microsoft 365 modules.</span></span>
+    <span data-ttu-id="ad410-125">È necessario utilizzare una versione a 64 bit di Windows, a causa dei requisiti, per il modulo di Skype for Business Online e una per moduli di Microsoft 365.</span><span class="sxs-lookup"><span data-stu-id="ad410-125">You need to use a 64-bit version of Windows because of the requirements for the Skype for Business Online module and one of the Microsoft 365 modules.</span></span>
     
-- <span data-ttu-id="9fef2-126">È necessario installare i moduli necessari per Azure Active Directory (Azure AD), Exchange Online, SharePoint Online, Skype for Business Online e Teams:</span><span class="sxs-lookup"><span data-stu-id="9fef2-126">You need to install the modules that are required for Azure Active Directory (Azure AD), Exchange Online, SharePoint Online, Skype for Business Online and Teams:</span></span>
+- <span data-ttu-id="ad410-126">È necessario installare i moduli necessari per Azure Active Directory (Azure AD), Exchange Online, SharePoint Online, Skype for Business Online e Teams:</span><span class="sxs-lookup"><span data-stu-id="ad410-126">You need to install the modules that are required for Azure Active Directory (Azure AD), Exchange Online, SharePoint Online, Skype for Business Online and Teams:</span></span>
     
-  - [<span data-ttu-id="9fef2-127">Azure Active Directory V2</span><span class="sxs-lookup"><span data-stu-id="9fef2-127">Azure Active Directory V2</span></span>](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)
-  - [<span data-ttu-id="9fef2-128">SharePoint Online Management Shell</span><span class="sxs-lookup"><span data-stu-id="9fef2-128">SharePoint Online Management Shell</span></span>](https://go.microsoft.com/fwlink/p/?LinkId=255251)
-  - [<span data-ttu-id="9fef2-129">Skype for Business Online, moduli PowerShell</span><span class="sxs-lookup"><span data-stu-id="9fef2-129">Skype for Business Online, PowerShell Module</span></span>](https://docs.microsoft.com/microsoftteams/teams-powershell-overview)
-  - [<span data-ttu-id="9fef2-130">Exchange Online PowerShell V2</span><span class="sxs-lookup"><span data-stu-id="9fef2-130">Exchange Online PowerShell V2</span></span>](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell-v2#install-and-maintain-the-exchange-online-powershell-v2-module)
-  - [<span data-ttu-id="9fef2-131">Panoramica di PowerShell per Teams</span><span class="sxs-lookup"><span data-stu-id="9fef2-131">Teams PowerShell Overview</span></span>](https://docs.microsoft.com/microsoftteams/teams-powershell-overview)
+  - [<span data-ttu-id="ad410-127">Azure Active Directory V2</span><span class="sxs-lookup"><span data-stu-id="ad410-127">Azure Active Directory V2</span></span>](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)
+  - [<span data-ttu-id="ad410-128">SharePoint Online Management Shell</span><span class="sxs-lookup"><span data-stu-id="ad410-128">SharePoint Online Management Shell</span></span>](https://go.microsoft.com/fwlink/p/?LinkId=255251)
+  - [<span data-ttu-id="ad410-129">Skype for Business Online, moduli PowerShell</span><span class="sxs-lookup"><span data-stu-id="ad410-129">Skype for Business Online, PowerShell Module</span></span>](https://docs.microsoft.com/microsoftteams/teams-powershell-overview)
+  - [<span data-ttu-id="ad410-130">Exchange Online PowerShell V2</span><span class="sxs-lookup"><span data-stu-id="ad410-130">Exchange Online PowerShell V2</span></span>](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell-v2#install-and-maintain-the-exchange-online-powershell-v2-module)
+  - [<span data-ttu-id="ad410-131">Panoramica di PowerShell per Teams</span><span class="sxs-lookup"><span data-stu-id="ad410-131">Teams PowerShell Overview</span></span>](https://docs.microsoft.com/microsoftteams/teams-powershell-overview)
     
--  <span data-ttu-id="9fef2-132">PowerShell deve essere configurato per l'esecuzione di script firmati per Skype for Business Online e il Centro sicurezza &amp; conformità.</span><span class="sxs-lookup"><span data-stu-id="9fef2-132">PowerShell must be configured to run signed scripts for Skype for Business Online and the Security &amp; Compliance Center.</span></span> <span data-ttu-id="9fef2-133">Eseguire il comando seguente in una sessione di PowerShell con privilegi elevati, ossia una sessione di PowerShell aperta usando **Esegui come amministratore** .</span><span class="sxs-lookup"><span data-stu-id="9fef2-133">Run the following command in an elevated PowerShell session (a PowerShell session that you **Run as administrator** ).</span></span>
+-  <span data-ttu-id="ad410-132">PowerShell deve essere configurato per l'esecuzione di script firmati per Skype for Business Online e il Centro sicurezza &amp; conformità.</span><span class="sxs-lookup"><span data-stu-id="ad410-132">PowerShell must be configured to run signed scripts for Skype for Business Online and the Security &amp; Compliance Center.</span></span> <span data-ttu-id="ad410-133">Eseguire il comando seguente in una sessione di PowerShell con privilegi elevati, ossia una sessione di PowerShell aperta usando **Esegui come amministratore**.</span><span class="sxs-lookup"><span data-stu-id="ad410-133">Run the following command in an elevated PowerShell session (a PowerShell session that you **Run as administrator**).</span></span>
     
    ```powershell
    Set-ExecutionPolicy RemoteSigned
    ```
 
-## <a name="exchange-online-and-security-amp-compliance-center-with-the-exchange-online-powershell-v2-module"></a><span data-ttu-id="9fef2-134">Exchange Online e Centro sicurezza &amp; conformità con il modulo PowerShell V2 di Exchange Online </span><span class="sxs-lookup"><span data-stu-id="9fef2-134">Exchange Online and Security &amp; Compliance Center with the Exchange Online PowerShell V2 module</span></span>
+## <a name="exchange-online-and-security-amp-compliance-center-with-the-exchange-online-powershell-v2-module"></a><span data-ttu-id="ad410-134">Exchange Online e Centro sicurezza &amp; conformità con il modulo PowerShell V2 di Exchange Online </span><span class="sxs-lookup"><span data-stu-id="ad410-134">Exchange Online and Security &amp; Compliance Center with the Exchange Online PowerShell V2 module</span></span>
 
-<span data-ttu-id="9fef2-135">Le procedure in questo articolo usano il modulo PowerShell V2 di Exchange Online per connettersi sia a Exchange Online che al Centro sicurezza &amp; conformità.</span><span class="sxs-lookup"><span data-stu-id="9fef2-135">The procedures in this article use the Exchange Online PowerShell V2 module to connect to both Exchange Online and the Security &amp; Compliance Center.</span></span> <span data-ttu-id="9fef2-136">Al momento non è possibile connettersi a entrambi *nella stessa finestra di PowerShell* .</span><span class="sxs-lookup"><span data-stu-id="9fef2-136">But currently you can't connect to both *in the same PowerShell window* .</span></span> <span data-ttu-id="9fef2-137">Quando si configura una finestra di PowerShell per più servizi di Microsoft 365 è quindi necessario scegliere se connettersi all'uno o all'altro.</span><span class="sxs-lookup"><span data-stu-id="9fef2-137">So you have to choose to connect to one or the other when you configure a PowerShell window for multiple Microsoft 365 services.</span></span>
+<span data-ttu-id="ad410-135">Le procedure in questo articolo usano il modulo PowerShell V2 di Exchange Online per connettersi sia a Exchange Online che al Centro sicurezza &amp; conformità.</span><span class="sxs-lookup"><span data-stu-id="ad410-135">The procedures in this article use the Exchange Online PowerShell V2 module to connect to both Exchange Online and the Security &amp; Compliance Center.</span></span> <span data-ttu-id="ad410-136">Al momento non è possibile connettersi a entrambi *nella stessa finestra di PowerShell*.</span><span class="sxs-lookup"><span data-stu-id="ad410-136">But currently you can't connect to both *in the same PowerShell window*.</span></span> <span data-ttu-id="ad410-137">Quando si configura una finestra di PowerShell per più servizi di Microsoft 365 è quindi necessario scegliere se connettersi all'uno o all'altro.</span><span class="sxs-lookup"><span data-stu-id="ad410-137">So you have to choose to connect to one or the other when you configure a PowerShell window for multiple Microsoft 365 services.</span></span>
 
-## <a name="connection-steps-when-using-just-a-password"></a><span data-ttu-id="9fef2-138">Procedura di connessione se si usa solo una password</span><span class="sxs-lookup"><span data-stu-id="9fef2-138">Connection steps when using just a password</span></span>
+## <a name="connection-steps-when-using-just-a-password"></a><span data-ttu-id="ad410-138">Procedura di connessione se si usa solo una password</span><span class="sxs-lookup"><span data-stu-id="ad410-138">Connection steps when using just a password</span></span>
 
-<span data-ttu-id="9fef2-139">Seguire questa procedura per connettersi a tutti i servizi in una singola finestra di PowerShell se si usa solo una password per accedere.</span><span class="sxs-lookup"><span data-stu-id="9fef2-139">Follow these steps to connect to all the services in a single PowerShell window when you're using just a password for sign-in.</span></span>
+<span data-ttu-id="ad410-139">Seguire questa procedura per connettersi a tutti i servizi in una singola finestra di PowerShell se si usa solo una password per accedere.</span><span class="sxs-lookup"><span data-stu-id="ad410-139">Follow these steps to connect to all the services in a single PowerShell window when you're using just a password for sign-in.</span></span>
   
-1. <span data-ttu-id="9fef2-140">Aprire Windows PowerShell.</span><span class="sxs-lookup"><span data-stu-id="9fef2-140">Open Windows PowerShell.</span></span>
+1. <span data-ttu-id="ad410-140">Aprire Windows PowerShell.</span><span class="sxs-lookup"><span data-stu-id="ad410-140">Open Windows PowerShell.</span></span>
     
-2. <span data-ttu-id="9fef2-141">Eseguire il comando seguente e immettere le credenziali dell'account aziendale o dell'Istituto di istruzione di Microsoft 365.</span><span class="sxs-lookup"><span data-stu-id="9fef2-141">Run this command and enter your Microsoft 365 work or school account credentials.</span></span>
+2. <span data-ttu-id="ad410-141">Eseguire il comando seguente e immettere le credenziali dell'account aziendale o dell'Istituto di istruzione di Microsoft 365.</span><span class="sxs-lookup"><span data-stu-id="ad410-141">Run this command and enter your Microsoft 365 work or school account credentials.</span></span>
     
    ```powershell
    $credential = Get-Credential
    ```
 
-3. <span data-ttu-id="9fef2-142">Eseguire questo comando per connettersi ad Azure AD tramite il modulo di Azure Active Directory PowerShell per Graph.</span><span class="sxs-lookup"><span data-stu-id="9fef2-142">Run this command to connect to Azure AD by using the Azure Active Directory PowerShell for Graph module.</span></span>
+3. <span data-ttu-id="ad410-142">Eseguire questo comando per connettersi ad Azure AD tramite il modulo di Azure Active Directory PowerShell per Graph.</span><span class="sxs-lookup"><span data-stu-id="ad410-142">Run this command to connect to Azure AD by using the Azure Active Directory PowerShell for Graph module.</span></span>
     
    ```powershell
    Connect-AzureAD -Credential $credential
    ```
   
-   <span data-ttu-id="9fef2-143">In alternativa, se si usa il Modulo di Microsoft Azure Active Directory per Windows PowerShell, eseguire il comando seguente.</span><span class="sxs-lookup"><span data-stu-id="9fef2-143">Or if you're using the Microsoft Azure Active Directory Module for Windows PowerShell module, run this command.</span></span>
+   <span data-ttu-id="ad410-143">In alternativa, se si usa il Modulo di Microsoft Azure Active Directory per Windows PowerShell, eseguire il comando seguente.</span><span class="sxs-lookup"><span data-stu-id="ad410-143">Or if you're using the Microsoft Azure Active Directory Module for Windows PowerShell module, run this command.</span></span>
       
    ```powershell
    Connect-MsolService -Credential $credential
    ```
 
    > [!Note]
-   > <span data-ttu-id="9fef2-144">PowerShell Core non supporta il Modulo di Microsoft Azure Active Directory per Windows PowerShell e i cmdlet con *Msol* all'interno del nome.</span><span class="sxs-lookup"><span data-stu-id="9fef2-144">PowerShell Core doesn't support the Microsoft Azure Active Directory Module for Windows PowerShell module and cmdlets with *Msol* in their name.</span></span> <span data-ttu-id="9fef2-145">È necessario eseguire questi cmdlet da PowerShell.</span><span class="sxs-lookup"><span data-stu-id="9fef2-145">You must run these cmdlets from PowerShell.</span></span>
+   > <span data-ttu-id="ad410-144">PowerShell Core non supporta il Modulo di Microsoft Azure Active Directory per Windows PowerShell e i cmdlet con *Msol* all'interno del nome.</span><span class="sxs-lookup"><span data-stu-id="ad410-144">PowerShell Core doesn't support the Microsoft Azure Active Directory Module for Windows PowerShell module and cmdlets with *Msol* in their name.</span></span> <span data-ttu-id="ad410-145">È necessario eseguire questi cmdlet da PowerShell.</span><span class="sxs-lookup"><span data-stu-id="ad410-145">You must run these cmdlets from PowerShell.</span></span>
 
-4. <span data-ttu-id="9fef2-146">Eseguire i comandi seguenti per la connessione a SharePoint Online.</span><span class="sxs-lookup"><span data-stu-id="9fef2-146">Run these commands to connect to SharePoint Online.</span></span> <span data-ttu-id="9fef2-147">Specificare il nome dell'organizzazione per il dominio.</span><span class="sxs-lookup"><span data-stu-id="9fef2-147">Specify the organization name for your domain.</span></span> <span data-ttu-id="9fef2-148">Ad esempio, per "litwareinc\.onmicrosoft.com", il valore del nome dell'organizzazione è "litwareinc".</span><span class="sxs-lookup"><span data-stu-id="9fef2-148">For example, for "litwareinc\.onmicrosoft.com", the  organization name value is "litwareinc".</span></span>
+4. <span data-ttu-id="ad410-146">Eseguire i comandi seguenti per la connessione a SharePoint Online.</span><span class="sxs-lookup"><span data-stu-id="ad410-146">Run these commands to connect to SharePoint Online.</span></span> <span data-ttu-id="ad410-147">Specificare il nome dell'organizzazione per il dominio.</span><span class="sxs-lookup"><span data-stu-id="ad410-147">Specify the organization name for your domain.</span></span> <span data-ttu-id="ad410-148">Ad esempio, per "litwareinc\.onmicrosoft.com", il valore del nome dell'organizzazione è "litwareinc".</span><span class="sxs-lookup"><span data-stu-id="ad410-148">For example, for "litwareinc\.onmicrosoft.com", the  organization name value is "litwareinc".</span></span>
     
    ```powershell
    $orgName="<for example, litwareinc for litwareinc.onmicrosoft.com>"
-   Connect-SPOService -Url https://$orgName-admin.sharepoint.com -Credential $userCredential
+   Connect-SPOService -Url https://$orgName-admin.sharepoint.com -Credential $Credential
    ```
 
-5. <span data-ttu-id="9fef2-149">Eseguire questi comandi per connettersi a Skype for Business Online.</span><span class="sxs-lookup"><span data-stu-id="9fef2-149">Run these commands to connect to Skype for Business Online.</span></span> <span data-ttu-id="9fef2-150">La prima volta che ci si connette, verrà visualizzato un messaggio di avviso relativo all'aumento del valore `WSMan NetworkDelayms`.</span><span class="sxs-lookup"><span data-stu-id="9fef2-150">A warning about increasing the `WSMan NetworkDelayms` value will appear the first time that you connect.</span></span> <span data-ttu-id="9fef2-151">Ignorarlo.</span><span class="sxs-lookup"><span data-stu-id="9fef2-151">Ignore it.</span></span>
+5. <span data-ttu-id="ad410-149">Eseguire questi comandi per connettersi a Skype for Business Online.</span><span class="sxs-lookup"><span data-stu-id="ad410-149">Run these commands to connect to Skype for Business Online.</span></span> <span data-ttu-id="ad410-150">La prima volta che ci si connette, verrà visualizzato un messaggio di avviso relativo all'aumento del valore `WSMan NetworkDelayms`.</span><span class="sxs-lookup"><span data-stu-id="ad410-150">A warning about increasing the `WSMan NetworkDelayms` value will appear the first time that you connect.</span></span> <span data-ttu-id="ad410-151">Ignorarlo.</span><span class="sxs-lookup"><span data-stu-id="ad410-151">Ignore it.</span></span>
      
    > [!Note]
-   > <span data-ttu-id="9fef2-152">Il connettore di Skype for Business Online fa parte al momento del modulo PowerShell di Teams più recente.</span><span class="sxs-lookup"><span data-stu-id="9fef2-152">Skype for Business Online Connector is currently part of the latest Teams PowerShell module.</span></span> <span data-ttu-id="9fef2-153">Se si usa la versione pubblica di PowerShell di Teams più recente, non è necessario installare il connettore di Skype for Business Online.</span><span class="sxs-lookup"><span data-stu-id="9fef2-153">If you're using the latest Teams PowerShell public release, you don't need to install the Skype for Business Online Connector.</span></span>
+   > <span data-ttu-id="ad410-152">Il connettore di Skype for Business Online fa parte al momento del modulo PowerShell di Teams più recente.</span><span class="sxs-lookup"><span data-stu-id="ad410-152">Skype for Business Online Connector is currently part of the latest Teams PowerShell module.</span></span> <span data-ttu-id="ad410-153">Se si usa la versione pubblica di PowerShell di Teams più recente, non è necessario installare il connettore di Skype for Business Online.</span><span class="sxs-lookup"><span data-stu-id="ad410-153">If you're using the latest Teams PowerShell public release, you don't need to install the Skype for Business Online Connector.</span></span>
    
    ```powershell
    Import-Module MicrosoftTeams
@@ -123,7 +123,7 @@ ms.locfileid: "48754317"
    Import-PSSession $sfboSession
    ```
 
-6. <span data-ttu-id="9fef2-154">Eseguire il comando seguente per connettersi a Exchange Online.</span><span class="sxs-lookup"><span data-stu-id="9fef2-154">Run this command to connect to Exchange Online.</span></span>
+6. <span data-ttu-id="ad410-154">Eseguire il comando seguente per connettersi a Exchange Online.</span><span class="sxs-lookup"><span data-stu-id="ad410-154">Run this command to connect to Exchange Online.</span></span>
     
    ```powershell
    Import-Module ExchangeOnlineManagement
@@ -131,9 +131,9 @@ ms.locfileid: "48754317"
    ```
 
    > [!Note]
-   > <span data-ttu-id="9fef2-155">Per connettersi a Exchange Online per i cloud di Microsoft 365 diversi da quello internazionale, vedere [Connettersi a PowerShell per Exchange Online](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).</span><span class="sxs-lookup"><span data-stu-id="9fef2-155">To connect to Exchange Online for Microsoft 365 clouds other than Worldwide, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).</span></span>
+   > <span data-ttu-id="ad410-155">Per connettersi a Exchange Online per i cloud di Microsoft 365 diversi da quello internazionale, vedere [Connettersi a PowerShell per Exchange Online](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).</span><span class="sxs-lookup"><span data-stu-id="ad410-155">To connect to Exchange Online for Microsoft 365 clouds other than Worldwide, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).</span></span>
 
-   <span data-ttu-id="9fef2-156">In alternativa, eseguire questi comandi per connettersi al Centro sicurezza &amp; conformità.</span><span class="sxs-lookup"><span data-stu-id="9fef2-156">Alternatively, run these commands to connect to the Security &amp; Compliance Center.</span></span>
+   <span data-ttu-id="ad410-156">In alternativa, eseguire questi comandi per connettersi al Centro sicurezza &amp; conformità.</span><span class="sxs-lookup"><span data-stu-id="ad410-156">Alternatively, run these commands to connect to the Security &amp; Compliance Center.</span></span>
     
    ```powershell
    $acctName="<UPN of the account, such as belindan@litwareinc.onmicrosoft.com>"
@@ -142,9 +142,9 @@ ms.locfileid: "48754317"
    ```
 
    > [!Note]
-   > <span data-ttu-id="9fef2-157">Per connettersi al Centro sicurezza &amp; conformità per i cloud di Microsoft 365 diversi da quello internazionale, vedere [Connettersi al Centro sicurezza e conformità di PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell).</span><span class="sxs-lookup"><span data-stu-id="9fef2-157">To connect to the Security &amp; Compliance Center for Microsoft 365 clouds other than Worldwide, see [Connect to Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell).</span></span>
+   > <span data-ttu-id="ad410-157">Per connettersi al Centro sicurezza &amp; conformità per i cloud di Microsoft 365 diversi da quello internazionale, vedere [Connettersi al Centro sicurezza e conformità di PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell).</span><span class="sxs-lookup"><span data-stu-id="ad410-157">To connect to the Security &amp; Compliance Center for Microsoft 365 clouds other than Worldwide, see [Connect to Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell).</span></span>
 
-   <span data-ttu-id="9fef2-158">Eseguire i comandi seguenti per connettersi a PowerShell di Teams.</span><span class="sxs-lookup"><span data-stu-id="9fef2-158">Run these commands to connect to Teams PowerShell.</span></span>
+   <span data-ttu-id="ad410-158">Eseguire i comandi seguenti per connettersi a PowerShell di Teams.</span><span class="sxs-lookup"><span data-stu-id="ad410-158">Run these commands to connect to Teams PowerShell.</span></span>
     
    ```powershell
    Import-Module MicrosoftTeams
@@ -152,12 +152,12 @@ ms.locfileid: "48754317"
    ```
   
    > [!Note]
-   > <span data-ttu-id="9fef2-159">Per connettersi a cloud di Microsoft Teams diversi da quello  internazionale, vedere [Connect-MicrosoftTeams](https://docs.microsoft.com/powershell/module/teams/connect-microsoftteams).</span><span class="sxs-lookup"><span data-stu-id="9fef2-159">To connect to Microsoft Teams clouds other than *Worldwide* , see [Connect-MicrosoftTeams](https://docs.microsoft.com/powershell/module/teams/connect-microsoftteams).</span></span>
+   > <span data-ttu-id="ad410-159">Per connettersi a cloud di Microsoft Teams diversi da quello \*\* internazionale, vedere [Connect-MicrosoftTeams](https://docs.microsoft.com/powershell/module/teams/connect-microsoftteams).</span><span class="sxs-lookup"><span data-stu-id="ad410-159">To connect to Microsoft Teams clouds other than *Worldwide*, see [Connect-MicrosoftTeams](https://docs.microsoft.com/powershell/module/teams/connect-microsoftteams).</span></span>
 
 
-### <a name="azure-active-directory-powershell-for-graph-module"></a><span data-ttu-id="9fef2-160">Modulo di Azure Active Directory PowerShell per Graph</span><span class="sxs-lookup"><span data-stu-id="9fef2-160">Azure Active Directory PowerShell for Graph module</span></span>
+### <a name="azure-active-directory-powershell-for-graph-module"></a><span data-ttu-id="ad410-160">Modulo di Azure Active Directory PowerShell per Graph</span><span class="sxs-lookup"><span data-stu-id="ad410-160">Azure Active Directory PowerShell for Graph module</span></span>
 
-<span data-ttu-id="9fef2-161">Di seguito sono elencati i comandi per tutti i servizi *ad eccezione del Centro sicurezza &amp; conformità* in un unico blocco quando si usa il modulo di Azure Active Directory PowerShell per Graph.</span><span class="sxs-lookup"><span data-stu-id="9fef2-161">Here are the commands for all the services *except Security &amp; Compliance Center* in a single block when you use the Azure Active Directory PowerShell for Graph module.</span></span> <span data-ttu-id="9fef2-162">Specificare il nome dell'host del dominio e poi eseguirli tutti contemporaneamente.</span><span class="sxs-lookup"><span data-stu-id="9fef2-162">Specify the name of your domain host and run them all at the same time.</span></span>
+<span data-ttu-id="ad410-161">Di seguito sono elencati i comandi per tutti i servizi *ad eccezione del Centro sicurezza &amp; conformità* in un unico blocco quando si usa il modulo di Azure Active Directory PowerShell per Graph.</span><span class="sxs-lookup"><span data-stu-id="ad410-161">Here are the commands for all the services *except Security &amp; Compliance Center* in a single block when you use the Azure Active Directory PowerShell for Graph module.</span></span> <span data-ttu-id="ad410-162">Specificare il nome dell'host del dominio e poi eseguirli tutti contemporaneamente.</span><span class="sxs-lookup"><span data-stu-id="ad410-162">Specify the name of your domain host and run them all at the same time.</span></span>
   
 ```powershell
 $orgName="<for example, litwareinc for litwareinc.onmicrosoft.com>"
@@ -174,7 +174,7 @@ Import-Module MicrosoftTeams
 Connect-MicrosoftTeams -Credential $credential
 ```
 
-<span data-ttu-id="9fef2-163">Di seguito sono elencati i comandi per tutti i servizi *ad eccezione di Exchange Online* in un unico blocco quando si usa il modulo di Azure Active Directory PowerShell per Graph.</span><span class="sxs-lookup"><span data-stu-id="9fef2-163">Here are the commands for all the services *except Exchange Online* in a single block when you use the Azure Active Directory PowerShell for Graph module.</span></span> <span data-ttu-id="9fef2-164">Specificare il nome dell'host del dominio e l'UPN per l'accesso, quindi eseguirli tutti contemporaneamente.</span><span class="sxs-lookup"><span data-stu-id="9fef2-164">Specify the name of your domain host and the UPN for the sign-in and run them all at the same time.</span></span>
+<span data-ttu-id="ad410-163">Di seguito sono elencati i comandi per tutti i servizi *ad eccezione di Exchange Online* in un unico blocco quando si usa il modulo di Azure Active Directory PowerShell per Graph.</span><span class="sxs-lookup"><span data-stu-id="ad410-163">Here are the commands for all the services *except Exchange Online* in a single block when you use the Azure Active Directory PowerShell for Graph module.</span></span> <span data-ttu-id="ad410-164">Specificare il nome dell'host del dominio e l'UPN per l'accesso, quindi eseguirli tutti contemporaneamente.</span><span class="sxs-lookup"><span data-stu-id="ad410-164">Specify the name of your domain host and the UPN for the sign-in and run them all at the same time.</span></span>
   
 ```powershell
 $orgName="<for example, litwareinc for litwareinc.onmicrosoft.com>"
@@ -192,9 +192,9 @@ Import-Module MicrosoftTeams
 Connect-MicrosoftTeams -Credential $credential
 ```
 
-### <a name="microsoft-azure-active-directory-module-for-windows-powershell-module"></a><span data-ttu-id="9fef2-165">Modulo di Microsoft Azure Active Directory per Windows PowerShell</span><span class="sxs-lookup"><span data-stu-id="9fef2-165">Microsoft Azure Active Directory Module for Windows PowerShell module</span></span>
+### <a name="microsoft-azure-active-directory-module-for-windows-powershell-module"></a><span data-ttu-id="ad410-165">Modulo di Microsoft Azure Active Directory per Windows PowerShell</span><span class="sxs-lookup"><span data-stu-id="ad410-165">Microsoft Azure Active Directory Module for Windows PowerShell module</span></span>
 
-<span data-ttu-id="9fef2-166">Di seguito sono elencati i comandi per tutti i servizi *ad eccezione del Centro sicurezza &amp; conformità* in un unico blocco quando si usa il Modulo di Microsoft Azure Active Directory per Windows PowerShell.</span><span class="sxs-lookup"><span data-stu-id="9fef2-166">Here are the commands for all the services *except Security &amp; Compliance Center* in a single block when you use the Microsoft Azure Active Directory Module for Windows PowerShell module.</span></span> <span data-ttu-id="9fef2-167">Specificare il nome dell'host del dominio e poi eseguirli tutti contemporaneamente.</span><span class="sxs-lookup"><span data-stu-id="9fef2-167">Specify the name of your domain host and run them all at one time.</span></span>
+<span data-ttu-id="ad410-166">Di seguito sono elencati i comandi per tutti i servizi *ad eccezione del Centro sicurezza &amp; conformità* in un unico blocco quando si usa il Modulo di Microsoft Azure Active Directory per Windows PowerShell.</span><span class="sxs-lookup"><span data-stu-id="ad410-166">Here are the commands for all the services *except Security &amp; Compliance Center* in a single block when you use the Microsoft Azure Active Directory Module for Windows PowerShell module.</span></span> <span data-ttu-id="ad410-167">Specificare il nome dell'host del dominio e poi eseguirli tutti contemporaneamente.</span><span class="sxs-lookup"><span data-stu-id="ad410-167">Specify the name of your domain host and run them all at one time.</span></span>
   
 ```powershell
 $orgName="<for example, litwareinc for litwareinc.onmicrosoft.com>"
@@ -211,7 +211,7 @@ Import-Module MicrosoftTeams
 Connect-MicrosoftTeams -Credential $credential
 ```
 
-<span data-ttu-id="9fef2-168">Di seguito sono elencati i comandi per tutti i servizi *ad eccezione di Exchange Online* in un unico blocco, quando si usa il Modulo di Microsoft Azure Active Directory per Windows PowerShell.</span><span class="sxs-lookup"><span data-stu-id="9fef2-168">Here are the commands for all the services *except Exchange Online* in a single block when you use the Microsoft Azure Active Directory Module for Windows PowerShell module.</span></span> <span data-ttu-id="9fef2-169">Specificare il nome dell'host del dominio e l'UPN per l'accesso ed eseguirli tutti contemporaneamente.</span><span class="sxs-lookup"><span data-stu-id="9fef2-169">Specify the name of your domain host and the UPN for the sign-in and run them all at one time.</span></span>
+<span data-ttu-id="ad410-168">Di seguito sono elencati i comandi per tutti i servizi *ad eccezione di Exchange Online* in un unico blocco, quando si usa il Modulo di Microsoft Azure Active Directory per Windows PowerShell.</span><span class="sxs-lookup"><span data-stu-id="ad410-168">Here are the commands for all the services *except Exchange Online* in a single block when you use the Microsoft Azure Active Directory Module for Windows PowerShell module.</span></span> <span data-ttu-id="ad410-169">Specificare il nome dell'host del dominio e l'UPN per l'accesso ed eseguirli tutti contemporaneamente.</span><span class="sxs-lookup"><span data-stu-id="ad410-169">Specify the name of your domain host and the UPN for the sign-in and run them all at one time.</span></span>
   
 ```powershell
 $orgName="<for example, litwareinc for litwareinc.onmicrosoft.com>"
@@ -228,11 +228,11 @@ Connect-IPPSSession -UserPrincipalName $acctName
 Import-Module MicrosoftTeams
 Connect-MicrosoftTeams -Credential $credential
 ```
-## <a name="connection-steps-when-using-multi-factor-authentication"></a><span data-ttu-id="9fef2-170">Procedura di connessione quando si usa l'autenticazione a più fattori</span><span class="sxs-lookup"><span data-stu-id="9fef2-170">Connection steps when using multi-factor authentication</span></span>
+## <a name="connection-steps-when-using-multi-factor-authentication"></a><span data-ttu-id="ad410-170">Procedura di connessione quando si usa l'autenticazione a più fattori</span><span class="sxs-lookup"><span data-stu-id="ad410-170">Connection steps when using multi-factor authentication</span></span>
 
-### <a name="azure-active-directory-powershell-for-graph-module"></a><span data-ttu-id="9fef2-171">Modulo di Azure Active Directory PowerShell per Graph</span><span class="sxs-lookup"><span data-stu-id="9fef2-171">Azure Active Directory PowerShell for Graph module</span></span>
+### <a name="azure-active-directory-powershell-for-graph-module"></a><span data-ttu-id="ad410-171">Modulo di Azure Active Directory PowerShell per Graph</span><span class="sxs-lookup"><span data-stu-id="ad410-171">Azure Active Directory PowerShell for Graph module</span></span>
 
-<span data-ttu-id="9fef2-172">Di seguito sono elencati tutti i comandi in un singolo blocco per connettersi a più servizi di Microsoft 365 *ad eccezione del Centro sicurezza &amp; conformità* quando si usa l'autenticazione a più fattori con il modulo di Azure Active Directory PowerShell per Graph.</span><span class="sxs-lookup"><span data-stu-id="9fef2-172">Here are all the commands in a single block to connect to multiple Microsoft 365 services *except Security &amp; Compliance Center* when you use multi-factor authentication with the Azure Active Directory PowerShell for Graph module.</span></span>
+<span data-ttu-id="ad410-172">Di seguito sono elencati tutti i comandi in un singolo blocco per connettersi a più servizi di Microsoft 365 *ad eccezione del Centro sicurezza &amp; conformità* quando si usa l'autenticazione a più fattori con il modulo di Azure Active Directory PowerShell per Graph.</span><span class="sxs-lookup"><span data-stu-id="ad410-172">Here are all the commands in a single block to connect to multiple Microsoft 365 services *except Security &amp; Compliance Center* when you use multi-factor authentication with the Azure Active Directory PowerShell for Graph module.</span></span>
 
 ```powershell
 $acctName="<UPN of the account, such as belindan@litwareinc.onmicrosoft.com>"
@@ -252,7 +252,7 @@ Connect-ExchangeOnline -UserPrincipalName $acctName -ShowProgress $true
 Import-Module MicrosoftTeams
 Connect-MicrosoftTeams
 ```
-<span data-ttu-id="9fef2-173">Di seguito sono elencati tutti i comandi in un singolo blocco per connettersi a più servizi di Microsoft 365 *ad eccezione di Exchange Online* con l'autenticazione a più fattori quando si usa il modulo di Azure Active Directory PowerShell per Graph.</span><span class="sxs-lookup"><span data-stu-id="9fef2-173">Here are all the commands in a single block to connect to multiple Microsoft 365 services *except Exchange Online* with multi-factor authentication when you use the Azure Active Directory PowerShell for Graph module.</span></span>
+<span data-ttu-id="ad410-173">Di seguito sono elencati tutti i comandi in un singolo blocco per connettersi a più servizi di Microsoft 365 *ad eccezione di Exchange Online* con l'autenticazione a più fattori quando si usa il modulo di Azure Active Directory PowerShell per Graph.</span><span class="sxs-lookup"><span data-stu-id="ad410-173">Here are all the commands in a single block to connect to multiple Microsoft 365 services *except Exchange Online* with multi-factor authentication when you use the Azure Active Directory PowerShell for Graph module.</span></span>
 
 ```powershell
 $acctName="<UPN of the account, such as belindan@litwareinc.onmicrosoft.com>"
@@ -272,9 +272,9 @@ Connect-IPPSSession -UserPrincipalName $acctName
 Import-Module MicrosoftTeams
 Connect-MicrosoftTeams
 ```
-### <a name="microsoft-azure-active-directory-module-for-windows-powershell-module"></a><span data-ttu-id="9fef2-174">Modulo di Microsoft Azure Active Directory per Windows PowerShell</span><span class="sxs-lookup"><span data-stu-id="9fef2-174">Microsoft Azure Active Directory Module for Windows PowerShell module</span></span>
+### <a name="microsoft-azure-active-directory-module-for-windows-powershell-module"></a><span data-ttu-id="ad410-174">Modulo di Microsoft Azure Active Directory per Windows PowerShell</span><span class="sxs-lookup"><span data-stu-id="ad410-174">Microsoft Azure Active Directory Module for Windows PowerShell module</span></span>
 
-<span data-ttu-id="9fef2-175">Di seguito sono elencati tutti i comandi in un singolo blocco per connettersi a più servizi di Microsoft 365 *ad eccezione del Centro sicurezza &amp; conformità* quando si usa l'autenticazione a più fattori con il Modulo di Microsoft Azure Active Directory per Windows PowerShell.</span><span class="sxs-lookup"><span data-stu-id="9fef2-175">Here are all the commands in a single block to connect to multiple Microsoft 365 services *except Security &amp; Compliance Center* when you use multi-factor authentication with the Microsoft Azure Active Directory Module for Windows PowerShell module.</span></span>
+<span data-ttu-id="ad410-175">Di seguito sono elencati tutti i comandi in un singolo blocco per connettersi a più servizi di Microsoft 365 *ad eccezione del Centro sicurezza &amp; conformità* quando si usa l'autenticazione a più fattori con il Modulo di Microsoft Azure Active Directory per Windows PowerShell.</span><span class="sxs-lookup"><span data-stu-id="ad410-175">Here are all the commands in a single block to connect to multiple Microsoft 365 services *except Security &amp; Compliance Center* when you use multi-factor authentication with the Microsoft Azure Active Directory Module for Windows PowerShell module.</span></span>
 
 ```powershell
 $acctName="<UPN of the account, such as belindan@litwareinc.onmicrosoft.com>"
@@ -294,7 +294,7 @@ Connect-ExchangeOnline -UserPrincipalName $acctName -ShowProgress $true
 Import-Module MicrosoftTeams
 Connect-MicrosoftTeams
 ```
-<span data-ttu-id="9fef2-176">Di seguito sono elencati tutti i comandi in un singolo blocco per connettersi a più servizi di Microsoft 365 *ad eccezione di Exchange Online* quando si usa l'autenticazione a più fattori con il Modulo di Microsoft Azure Active Directory per Windows PowerShell.</span><span class="sxs-lookup"><span data-stu-id="9fef2-176">Here are all the commands in a single block to connect to multiple Microsoft 365 services *except Exchange Online* when you use multi-factor authentication with the Microsoft Azure Active Directory Module for Windows PowerShell module.</span></span>
+<span data-ttu-id="ad410-176">Di seguito sono elencati tutti i comandi in un singolo blocco per connettersi a più servizi di Microsoft 365 *ad eccezione di Exchange Online* quando si usa l'autenticazione a più fattori con il Modulo di Microsoft Azure Active Directory per Windows PowerShell.</span><span class="sxs-lookup"><span data-stu-id="ad410-176">Here are all the commands in a single block to connect to multiple Microsoft 365 services *except Exchange Online* when you use multi-factor authentication with the Microsoft Azure Active Directory Module for Windows PowerShell module.</span></span>
 
 ```powershell
 $acctName="<UPN of the account, such as belindan@litwareinc.onmicrosoft.com>"
@@ -315,16 +315,16 @@ Import-Module MicrosoftTeams
 Connect-MicrosoftTeams
 ```
 
-## <a name="close-the-powershell-window"></a><span data-ttu-id="9fef2-177">Chiudere la finestra di PowerShell</span><span class="sxs-lookup"><span data-stu-id="9fef2-177">Close the PowerShell window</span></span>
+## <a name="close-the-powershell-window"></a><span data-ttu-id="ad410-177">Chiudere la finestra di PowerShell</span><span class="sxs-lookup"><span data-stu-id="ad410-177">Close the PowerShell window</span></span>
 
-<span data-ttu-id="9fef2-178">Per chiudere la finestra di PowerShell, eseguire questo comando per rimuovere le sessioni attive verso Skype for Business Online, SharePoint Online e Teams:</span><span class="sxs-lookup"><span data-stu-id="9fef2-178">To close down the PowerShell window, run this command to remove the active sessions to Skype for Business Online, SharePoint Online, and Teams:</span></span>
+<span data-ttu-id="ad410-178">Per chiudere la finestra di PowerShell, eseguire questo comando per rimuovere le sessioni attive verso Skype for Business Online, SharePoint Online e Teams:</span><span class="sxs-lookup"><span data-stu-id="ad410-178">To close down the PowerShell window, run this command to remove the active sessions to Skype for Business Online, SharePoint Online, and Teams:</span></span>
   
 ```powershell
 Remove-PSSession $sfboSession ; Disconnect-SPOService ; Disconnect-MicrosoftTeams 
 ```
 
-## <a name="see-also"></a><span data-ttu-id="9fef2-179">Vedere anche</span><span class="sxs-lookup"><span data-stu-id="9fef2-179">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="ad410-179">Vedere anche</span><span class="sxs-lookup"><span data-stu-id="ad410-179">See also</span></span>
 
-- [<span data-ttu-id="9fef2-180">Collegarsi a Microsoft 365 con PowerShell</span><span class="sxs-lookup"><span data-stu-id="9fef2-180">Connect to Microsoft 365 with PowerShell</span></span>](connect-to-microsoft-365-powershell.md)
-- [<span data-ttu-id="9fef2-181">Gestire SharePoint Online con PowerShell</span><span class="sxs-lookup"><span data-stu-id="9fef2-181">Manage SharePoint Online with PowerShell</span></span>](manage-sharepoint-online-with-microsoft-365-powershell.md)
-- [<span data-ttu-id="9fef2-182">Gestire gli account utente, le licenze e i gruppi di Microsoft 365 con PowerShell</span><span class="sxs-lookup"><span data-stu-id="9fef2-182">Manage Microsoft 365 user accounts, licenses, and groups with PowerShell</span></span>](manage-user-accounts-and-licenses-with-microsoft-365-powershell.md)
+- [<span data-ttu-id="ad410-180">Collegarsi a Microsoft 365 con PowerShell</span><span class="sxs-lookup"><span data-stu-id="ad410-180">Connect to Microsoft 365 with PowerShell</span></span>](connect-to-microsoft-365-powershell.md)
+- [<span data-ttu-id="ad410-181">Gestire SharePoint Online con PowerShell</span><span class="sxs-lookup"><span data-stu-id="ad410-181">Manage SharePoint Online with PowerShell</span></span>](manage-sharepoint-online-with-microsoft-365-powershell.md)
+- [<span data-ttu-id="ad410-182">Gestire gli account utente, le licenze e i gruppi di Microsoft 365 con PowerShell</span><span class="sxs-lookup"><span data-stu-id="ad410-182">Manage Microsoft 365 user accounts, licenses, and groups with PowerShell</span></span>](manage-user-accounts-and-licenses-with-microsoft-365-powershell.md)
