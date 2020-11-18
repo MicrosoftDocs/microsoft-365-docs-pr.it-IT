@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-scenario
 - m365solution-evalutatemtp
 ms.topic: article
-ms.openlocfilehash: 5259c7b74446ad273ff9b1ae0baccd339e34baa3
-ms.sourcegitcommit: 89f56c3e0b619a4700a75a21927d9ffc90658632
+ms.openlocfilehash: 240ffd7ec8d46da33c43ec2f9cb50cf59c89f11b
+ms.sourcegitcommit: ce46d1bd67091d4ed0e2b776dfed55e2d88cdbf4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48984951"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49131298"
 ---
 # <a name="configure-microsoft-365-defender-pillars-for-your-trial-lab-or-pilot-environment"></a>Configurare i pilastri Microsoft 365 Defender per il laboratorio di valutazione o l'ambiente pilota
 
@@ -38,29 +38,11 @@ ms.locfileid: "48984951"
 
 La creazione di un ambiente pilota o di un laboratorio di valutazione di Microsoft 365 Defender è un processo in tre fasi:
 
-<br>
-<table border="0" width="100%" align="center">
-  <tr style="text-align:center;">
-    <td align="center" style="width:25%; border:0;" >
-      <a href= "https://docs.microsoft.com/microsoft-365/security/mtp/prepare-mtpeval?view=o365-worldwide"> 
-        <img src="../../media/prepare.png" alt="Prepare your Microsoft 365 Defender trial lab or pilot environment" title="Preparare il laboratorio di valutazione Microsoft 365 Defender o l'ambiente pilota" />
-      <br/>Fase 1: preparazione </a><br>
-    </td>
-     <td align="center">
-      <a href="https://docs.microsoft.com/microsoft-365/security/mtp/setup-mtpeval?view=o365-worldwide">
-        <img src="../../media/setup.png" alt="Set up your Microsoft 365 Defender trial lab or pilot environment" title="Configurare il laboratorio di valutazione Microsoft 365 Defender o l'ambiente pilota" />
-      <br/>Fase 2: installazione </a><br>
-    </td>
-    <td align="center" bgcolor="#d5f5e3">
-      <a href="https://docs.microsoft.com/microsoft-365/security/mtp/config-mtpeval?view=o365-worldwide">
-        <img src="../../media/config-onboard.png" alt="Configure & Onboard" title="Configurare ogni pilastro Microsoft 365 Defender per il laboratorio di valutazione Microsoft 365 Defender o l'ambiente pilota e gli endpoint di bordo" />
-      <br/>Fase 3: configurare & onboard </a><br>
-</td>
-  </tr>
-</table>
+|[![Fase 1: preparazione](../../media/phase-diagrams/prepare.png)](prepare-mtpeval.md)<br/>[Fase 1: preparazione](prepare-mtpeval.md) |[![Fase 2: configurare](../../media/phase-diagrams/setup.png)](setup-mtpeval.md)<br/>[Fase 2: configurare](setup-mtpeval.md) |![Fase 3: Onboard](../../media/phase-diagrams/onboard.png)<br/>Fase 3: Onboard | [![Torna a Pilot](../../media/phase-diagrams/backtopilot.png)](mtp-pilot.md)<br/>[Torna a Pilot PlayBook](mtp-pilot.md) |
+|--|--|--|--|
+|| |*Sei qui!* | |
 
 Si è attualmente in fase di configurazione.
-
 
 La preparazione è la chiave per una distribuzione corretta. In questo articolo verranno illustrati i punti che è necessario prendere in considerazione durante la preparazione per la distribuzione di Microsoft Defender per endpoint.
 
@@ -88,7 +70,7 @@ In questa sezione viene illustrata la configurazione:
 
    ![Pagina Image of_Office 365 Security & Compliance Center Threat Management Policy](../../media/mtp-eval-32.png)
  
-2. Fare clic su **anti-phishing** , selezionare **Crea** e compila il nome e la descrizione dei criteri. Fare clic su **Avanti**.
+2. Fare clic su **anti-phishing**, selezionare **Crea** e compila il nome e la descrizione dei criteri. Fare clic su **Avanti**.
 
    ![Image of_Office 365 Security & Compliance Center anti-phishing policy page in cui è possibile assegnare un nome ai criteri](../../media/mtp-eval-33.png)
 
@@ -200,7 +182,7 @@ In questa sezione viene illustrata la configurazione:
    > [!NOTE]
    > Se non viene visualizzato questo messaggio, potrebbe significare che l'integrazione dei dati di Microsoft Defender per Identity è già stata abilitata. Tuttavia, se non si è certi, contattare l'amministratore IT per confermare. 
 
-3. Andare a **Impostazioni** , attivare l'interruttore **Microsoft Defender per l'integrazione delle identità** , quindi fare clic su **Salva**. 
+3. Andare a **Impostazioni**, attivare l'interruttore **Microsoft Defender per l'integrazione delle identità** , quindi fare clic su **Salva**. 
 
    ![Pagina Impostazioni of_the immagine in cui è necessario attivare l'interruttore Microsoft Defender per l'integrazione delle identità e quindi fare clic su Salva](../../media/mtp-eval-55.png)
    
@@ -308,5 +290,5 @@ Congratulazioni! Si è appena creato il laboratorio di valutazione Microsoft 365
 Successivamente, è possibile simulare un attacco e vedere in che modo le funzionalità del prodotto incrociato rilevano, creano avvisi e rispondono automaticamente a un attacco non file su un endpoint.
 
 ## <a name="next-step"></a>Passaggio successivo
-|![Fase di simulazione d'attacco](../../media/mtp/run-sim.png) <br>[Fase di simulazione d'attacco](mtp-pilot-simulate.md) | Eseguire la simulazione di attacco per l'ambiente pilota Microsoft 365 Defender.
+|[Fase di simulazione d'attacco](mtp-pilot-simulate.md) | Eseguire la simulazione di attacco per l'ambiente pilota Microsoft 365 Defender.
 |:-------|:-----|

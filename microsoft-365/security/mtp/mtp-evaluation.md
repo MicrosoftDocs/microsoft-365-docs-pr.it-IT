@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-overview
 - m365solution-evalutatemtp
 ms.topic: conceptual
-ms.openlocfilehash: d6c96f7720344721bb2786dc130c490a5a8ea657
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: fe0a06dd104f0f0532363ee046f4bad1c03c5400
+ms.sourcegitcommit: ce46d1bd67091d4ed0e2b776dfed55e2d88cdbf4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48846485"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49130891"
 ---
 # <a name="create-a-microsoft-365-defender-trial-lab-or-pilot-environment"></a>Creare un laboratorio di valutazione di Microsoft 365 Defender o un ambiente pilota 
 
@@ -54,11 +54,13 @@ Questa guida ti aiuterà a:
 
 Sono disponibili tre fasi per la creazione di un ambiente di laboratorio di valutazione di Microsoft 365 Defender e la relativa distribuzione:
 
+![Fasi di distribuzione: preparazione, installazione, Onboard](../../media/phase-diagrams/deployment-phases.png)
+
 |Fase | Descrizione | 
 |:-------|:-----|
-| ![Fase 1: preparazione](../../media/prepare.png)<br>[Fase 1: preparazione](prepare-mtpeval.md)| Informazioni su ciò che è necessario prendere in considerazione quando si distribuisce Microsoft 365 Defender in un laboratorio di valutazione o in un ambiente pilota: <br><br>-Parti interessate e disconnessione <br> -Considerazioni sull'ambiente <br>-Access <br>-Configurazione di Azure Active Directory <br> -Ordine di configurazione
-|  ![Fase 2: installazione](../../media/setup.png) <br>[Fase 2: installazione](setup-mtpeval.md)|  Eseguire la procedura iniziale per accedere al centro sicurezza Microsoft 365 per configurare l'ambiente pilota o il laboratorio di valutazione di Microsoft 365 Defender. Verrà visualizzata la guida per:<br><br>-Iscriversi alla versione di valutazione di Microsoft 365 E5 <br>  -Configurare il dominio<br>-Assegnare licenze Microsoft 365 E5<br>-Completare l'installazione guidata nel portale|
-|  ![Fase 3: configurare & onboard](../../media/config-onboard.png) <br>[Fase 3: configurare & onboard](config-mtpeval.md) | Configurare ogni pilastro Microsoft 365 Defender e gli endpoint di bordo. Verrà visualizzata la guida per:<br><br>-Configurare Microsoft Defender per Office 365<br>-Configurare Microsoft cloud app Security<br>-Configurare Microsoft Defender per Identity<br>-Configurare Microsoft Defender per endpoint
+|[Fase 1: preparazione](prepare-mtpeval.md)| Informazioni su ciò che è necessario prendere in considerazione quando si distribuisce Microsoft 365 Defender in un laboratorio di valutazione o in un ambiente pilota: <br><br>-Parti interessate e disconnessione <br> -Considerazioni sull'ambiente <br>-Access <br>-Configurazione di Azure Active Directory <br> -Ordine di configurazione
+|[Fase 2: installazione](setup-mtpeval.md)|  Eseguire la procedura iniziale per accedere al centro sicurezza Microsoft 365 per configurare l'ambiente pilota o il laboratorio di valutazione di Microsoft 365 Defender. Verrà visualizzata la guida per:<br><br>-Iscriversi alla versione di valutazione di Microsoft 365 E5 <br>  -Configurare il dominio<br>-Assegnare licenze Microsoft 365 E5<br>-Completare l'installazione guidata nel portale|
+|[Fase 3: configurare & onboard](config-mtpeval.md) | Configurare ogni pilastro Microsoft 365 Defender e gli endpoint di bordo. Verrà visualizzata la guida per:<br><br>-Configurare Microsoft Defender per Office 365<br>-Configurare Microsoft cloud app Security<br>-Configurare Microsoft Defender per Identity<br>-Configurare Microsoft Defender per endpoint
 
 
 ## <a name="in-scope"></a>Nell'ambito
@@ -74,7 +76,7 @@ Le attività seguenti rientrano nell'ambito di questa guida:
     -   Microsoft Defender per Office 365
     -   Microsoft Defender per identità
     -   Microsoft Cloud App Security
-    -   Microsoft Defender ATP
+    -   Microsoft Defender per endpoint
 
 ## <a name="out-of-scope"></a>Esclusioni
 
@@ -84,5 +86,5 @@ Di seguito sono riportate le seguenti condizioni:
 -   Test di penetrazione nell'ambiente di produzione
 
 ## <a name="next-step"></a>Passaggio successivo
-![Fase 1: preparazione](../../media/prepare.png) <br>[Fase 1: preparazione](prepare-mtpeval.md) 
+[Fase 1: preparazione](prepare-mtpeval.md) 
 <br> Preparare il laboratorio di valutazione Microsoft 365 Defender o l'ambiente pilota

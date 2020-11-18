@@ -20,59 +20,21 @@ ms.collection:
 - m365solution-scenario
 - m365solution-pilotmtpproject
 ms.topic: conceptual
-ms.openlocfilehash: 700bd7a3f4ba8d152cf66a27c0f66aa375872698
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: fac3a79f1522e5e7777b2b54bce2b8bd695f8d7a
+ms.sourcegitcommit: ce46d1bd67091d4ed0e2b776dfed55e2d88cdbf4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48842063"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49131346"
 ---
 # <a name="run-your-microsoft-365-defender-attack-simulations"></a>Eseguire le simulazioni di attacco di Microsoft 365 Defender  
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
-**Si applica a:**
-- Microsoft 365 Defender
-<br>
-<table border="0" width="100%" align="center">
-  <tr style="text-align:center;">
-    <td align="center" style="width:25%; border:0;" >
-      <a href= "https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-plan"> 
-        <img src="../../media/mtp/plan.png" alt="Plan your pilot Microsoft 365 Defender project" title="Pianificare il progetto pilota Microsoft 365 Defender" />
-      <br/>Pianificare </a><br>
-    </td>
-    <td align="center">
-      <a href="https://docs.microsoft.com/microsoft-365/security/mtp/prepare-mtpeval">
-        <img src="../../media/mtp/prep.png" alt="Prepare your Microsoft 365 Defender trial lab or pilot environment" title="Preparare il laboratorio di valutazione Microsoft 365 Defender o l'ambiente pilota" />
-      <br/>Preparare </a><br>
-    </td>
-    <td align="center"bgcolor="#d5f5e3">
-      <a href="https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-simulate">
-        <img src="../../media/mtp/run-sim.png" alt="Run your Microsoft 365 Defender attack simulations" title="Eseguire le simulazioni di attacco di Microsoft 365 Defender" />
-      <br/>Simula attacco </a><br>
-    </td>
-    <td align="center">
-      <a href="https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-close">
-        <img src="../../media/mtp/close.png" alt="Close and summarize your Microsoft 365 Defender pilot" title="Chiudere e riepilogare il pilota Microsoft 365 Defender" />
-      <br/>Chiudi e riassumi </a><br>
-    </td>
-  </tr>
-  <tr>
-    <td style="width:25%; border:0;">
-   
-    </td>
-    <td valign="top" style="width:25%; border:0;">
-    
-</td>
-    <td valign="top" style="width:25%; border:0;">
-
-</td>    
-    <td valign="top" style="width:25%; border:0;">
-
-</td>
-  </tr>
-</table>
+|[![Pianificazione](../../media/phase-diagrams/1-planning.png)](mtp-pilot-plan.md)<br/>[Pianificazione](mtp-pilot-plan.md) |[![Preparazione](../../media/phase-diagrams/2-prepare.png)](prepare-mtpeval.md)<br/>[Preparazione](prepare-mtpeval.md) | ![Simula attacco](../../media/phase-diagrams/3-simluate.png)<br/>Simula attacco| [![Chiudi e riepiloga](../../media/phase-diagrams/4-summary.png)](mtp-pilot-close.md)<br/>[Chiudi e riepiloga](mtp-pilot-close.md)|
+|--|--|--|--|
+|| |*Sei qui!* | |
 
 Si è attualmente in fase di simulazione di attacco.
 
@@ -369,9 +331,9 @@ Per questo scenario è necessaria una singola cassetta postale interna e un disp
 
     1.  Esaminare i risultati e vedere se è possibile identificare l'indirizzo di posta elettronica che è stato aperto.  Potrebbe essere necessario fino a 2 ore affinché il messaggio venga visualizzato nella ricerca avanzata. Se l'ambiente di posta elettronica è di grandi dimensioni e sono presenti numerosi risultati, è consigliabile utilizzare l' **opzione Mostra filtri** per trovare il messaggio. 
 
-   Nell'esempio, il messaggio di posta elettronica è stato inviato da un account Yahoo. Fare clic sull' **+** icona accanto a **yahoo.com** nella sezione SenderFromDomain e quindi fare clic su **applica** per aggiungere il dominio selezionato alla query.  Utilizzare il dominio o l'account di posta elettronica utilizzato per inviare il messaggio di prova nel passaggio 1 di eseguire la simulazione per filtrare i risultati.  Eseguire di nuovo la query per ottenere un set di risultati più piccolo per verificare che venga visualizzato il messaggio dalla simulazione.
+           Nell'esempio, il messaggio di posta elettronica è stato inviato da un account Yahoo. Fare clic sull' **+** icona accanto a **yahoo.com** nella sezione SenderFromDomain e quindi fare clic su **applica** per aggiungere il dominio selezionato alla query.  Utilizzare il dominio o l'account di posta elettronica utilizzato per inviare il messaggio di prova nel passaggio 1 di eseguire la simulazione per filtrare i risultati.  Eseguire di nuovo la query per ottenere un set di risultati più piccolo per verificare che venga visualizzato il messaggio dalla simulazione.
    
-        ![Screenshot of the filters. Use filters to narrow down the search, and find what you’re looking for faster.](../../media/mtp/fig20.png) 
+        ![Schermata dei filtri. Utilizzare i filtri per limitare la ricerca e trovare ciò che si sta cercando più velocemente.](../../media/mtp/fig20.png) 
 
         ```console
         EmailEvents 
@@ -382,7 +344,7 @@ Per questo scenario è necessaria una singola cassetta postale interna e un disp
    
         ![Schermata del pannello laterale del record Inspect che si apre quando viene selezionato un risultato di caccia avanzato](../../media/mtp/fig21.png) 
 
-4.  Dopo aver verificato che è possibile visualizzare il messaggio di posta elettronica, aggiungere un filtro per gli allegati. Concentrarsi su tutti i messaggi di posta elettronica con allegati nell'ambiente. Per questo scenario, concentrarsi sui messaggi di posta elettronica in ingresso, non su quelli inviati dall'ambiente. Rimuovere tutti i filtri aggiunti per individuare il messaggio e aggiungere "| dove **AttachmentCount > 0** e **EmailDirection** "in  ==  **ingresso"** "
+4.  Dopo aver verificato che è possibile visualizzare il messaggio di posta elettronica, aggiungere un filtro per gli allegati. Concentrarsi su tutti i messaggi di posta elettronica con allegati nell'ambiente. Per questo scenario, concentrarsi sui messaggi di posta elettronica in ingresso, non su quelli inviati dall'ambiente. Rimuovere tutti i filtri aggiunti per individuare il messaggio e aggiungere "| dove **AttachmentCount > 0** e **EmailDirection**"in  ==  **ingresso"** "
 
     La query seguente mostrerà il risultato con un elenco più breve rispetto alla query iniziale per tutti gli eventi di posta elettronica:
 
@@ -394,7 +356,7 @@ Per questo scenario è necessaria una singola cassetta postale interna e un disp
 
 5.  Successivamente, includere le informazioni sull'allegato, ad esempio: nome file, hash, nel set di risultati. A tale scopo, partecipare alla tabella **EmailAttachmentInfo** . I campi comuni da utilizzare per l'aggiunta, in questo caso sono **NetworkMessageId** e **RecipientObjectId**.
 
-La query seguente include anche una riga aggiuntiva "| **Project-Rename EmailTimestamp = timestamp** "che consente di identificare il timestamp relativo alla posta elettronica rispetto ai timestamp relativi alle azioni dei file che verranno aggiunte nel prossimo passaggio.
+    La query seguente include anche una riga aggiuntiva "| **Project-Rename EmailTimestamp = timestamp**"che consente di identificare il timestamp relativo alla posta elettronica rispetto ai timestamp relativi alle azioni dei file che verranno aggiunte nel prossimo passaggio.
 
     ```console
     EmailEvents 
@@ -473,9 +435,9 @@ I rilevamenti personalizzati eseguiranno la query in base alla frequenza imposta
 
     ![Schermata della pagina regole di rilevamento che visualizza la regola e i dettagli sull'esecuzione](../../media/mtp/fig27b.png) 
 
-Da questa pagina, è possibile selezionare la regola di rilevamento, che aprirà una pagina dei dettagli. 
+    Da questa pagina, è possibile selezionare la regola di rilevamento, che aprirà una pagina dei dettagli. 
 
-    ![Screenshot of the email attachments page where you can see the status of the rule execution, triggered alerts and actions, edit the detection, and so on](../../media/mtp/fig28.png) 
+    ![Schermata della pagina allegati di posta elettronica in cui è possibile visualizzare lo stato dell'esecuzione della regola, gli avvisi e le azioni attivati, modificare il rilevamento e così via](../../media/mtp/fig28.png) 
 
 ### <a name="additional-advanced-hunting-walk-through-exercises"></a>Ulteriori esercizi di Walking-through di caccia
 

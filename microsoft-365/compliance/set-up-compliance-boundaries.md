@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 1b45c82f-26c8-44fb-9f3b-b45436fe2271
 description: Informazioni su come utilizzare i limiti di conformità per creare confini logici che controllano i percorsi dei contenuti degli utenti che un Manager di eDiscovery può cercare in Microsoft 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: c57689cc6e626b62ae976bac9f9771205431bc8a
-ms.sourcegitcommit: 33afa334328cc4e3f2474abd611c1411adabd39f
+ms.openlocfilehash: afc01ea88e9a2de6550741dcaac105ef764a752f
+ms.sourcegitcommit: ce46d1bd67091d4ed0e2b776dfed55e2d88cdbf4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48370402"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49131131"
 ---
 # <a name="set-up-compliance-boundaries-for-ediscovery-investigations"></a>Configurare i limiti di conformità per le indagini di eDiscovery
 
@@ -179,7 +179,7 @@ Per creare un caso e assegnare membri:
 
 2. Nell'elenco dei casi di eDiscovery, fare clic sul nome del caso creato.
 
-3. Nella pagina **Gestisci** il riquadro a comparsa di questo caso, in **Manage role groups**fare clic su ![ Aggiungi icona ](../media/8ee52980-254b-440b-99a2-18d068de62d3.gif) **Aggiungi**.
+3. Nella pagina **Gestisci** il riquadro a comparsa di questo caso, in **Manage role groups** fare clic su ![ Aggiungi icona ](../media/8ee52980-254b-440b-99a2-18d068de62d3.gif) **Aggiungi**.
 
     ![Aggiungere un gruppo di ruoli come membro di un caso di eDiscovery](../media/f8b4b557-01b9-4388-85be-b5b5ab7c5629.png)
   
@@ -219,6 +219,8 @@ I filtri per le autorizzazioni di ricerca consentono inoltre di controllare il p
     |JPN  <br/> |Asia Pacifico  <br/> |
     |IND  <br/> |Asia Pacifico  <br/> |
     |LAM  <br/> |NOI  <br/> |
+    |NÉ  <br/> |Europa |
+    |REGGISENO  <br/> |Datacenter nordamericani |
     |||
 
    Se non si specifica il parametro **Region** per un filtro delle autorizzazioni di ricerca, verrà eseguita la ricerca nell'area di SharePoint principale dell'organizzazione. I risultati della ricerca vengono esportati nel centro dati più vicino.
@@ -282,7 +284,7 @@ Quando si gestiscono i casi di eDiscovery e le indagini sull'utilizzo dei limiti
 
 - I filtri delle autorizzazioni di ricerca non vengono applicati alle cartelle pubbliche di Exchange.
 
-## <a name="more-information"></a>Altre informazioni
+## <a name="more-information"></a>Ulteriori informazioni
 
 - Se una cassetta postale è deautorizzata o eliminata temporaneamente, gli attributi di Azure AD non vengono più sincronizzati con la cassetta postale. Se un blocco è stato inserito nella cassetta postale quando è stato eliminato, il contenuto conservato nella cassetta postale è ancora soggetto a un limite di conformità o a un filtro delle autorizzazioni di ricerca in base all'ultima sincronizzazione degli attributi di Azure AD prima che la cassetta postale sia stata eliminata. 
 
@@ -300,7 +302,7 @@ Quando si gestiscono i casi di eDiscovery e le indagini sull'utilizzo dei limiti
 
 ## <a name="frequently-asked-questions"></a>Domande frequenti
 
-**Chi può creare e gestire i filtri delle autorizzazioni di ricerca (utilizzando i cmdlet New-ComplianceSecurityFilter e set-ComplianceSecurityFilter)?**
+**Chi può creare e gestire i filtri delle autorizzazioni di ricerca (utilizzando New-ComplianceSecurityFilter e Set-ComplianceSecurityFilter cmdlet)?**
   
 Per creare, visualizzare e modificare i filtri delle autorizzazioni di ricerca, è necessario essere membri del gruppo di ruoli Gestione organizzazione nel centro sicurezza & Compliance.
   

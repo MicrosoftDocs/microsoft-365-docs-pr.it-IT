@@ -20,12 +20,12 @@ ms.topic: conceptual
 ms.date: 10/09/2020
 ms.custom: seo-marvel-apr2020
 ms.reviewer: vippand
-ms.openlocfilehash: e0801fb26b0bc7c4d37ab9455d9fcd2630f0fe51
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 5aa1d5fe14f6213931e089c2f97fcf06c96397b3
+ms.sourcegitcommit: ce46d1bd67091d4ed0e2b776dfed55e2d88cdbf4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48842845"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49131150"
 ---
 # <a name="whats-new-in-microsoft-defender-for-office-365"></a>Novità di Microsoft Defender per Office 365
 
@@ -40,6 +40,10 @@ In questo articolo vengono elencate le nuove funzionalità nell'ultima versione 
 
 > [!TIP]
 > Non si dispone ancora di Microsoft Defender per Office 365? [Contattare Sales per avviare una versione di valutazione](https://go.microsoft.com/fwlink/p/?LinkId=518644).
+
+## <a name="november-2020"></a>2020 novembre 
+
+- Limiti di esportazione aggiornati in Review > Action Center > correzione dall'invio di posta e dal log azione (Defender per Office 365 piano 2)
 
 ## <a name="septemberoctober-2020"></a>Settembre/ottobre 2020 
 
@@ -75,11 +79,11 @@ In questo articolo vengono elencate le nuove funzionalità nell'ultima versione 
 
 - [Esportare l'URL fare clic su dati per l'analisi offline](threat-explorer.md#new-features-in-threat-explorer-and-real-time-detections) (Microsoft Defender per Office 365 piano 1 o piano 2)
 
-- [Utilizzare le visualizzazioni della campagna in Microsoft Defender per office 365 ( **Preview** )](campaigns.md) (microsoft Defender per Office 365 piano 2)
+- [Utilizzare le visualizzazioni della campagna in Microsoft Defender per office 365 (**Preview**)](campaigns.md) (microsoft Defender per Office 365 piano 2)
 
 ## <a name="november-2019"></a>Novembre 2019
 
-- [Consultare le nuove funzionalità di rilevamento e risposta degli utenti compromesse](address-compromised-users-quickly.md) ( **Anteprima** ) (Microsoft Defender per Office 365 piano 2)
+- [Consultare le nuove funzionalità di rilevamento e risposta degli utenti compromesse](address-compromised-users-quickly.md) (**Anteprima**) (Microsoft Defender per Office 365 piano 2)
 
 ## <a name="september-2019"></a>Settembre 2019
 
@@ -101,7 +105,7 @@ In questo articolo vengono elencate le nuove funzionalità nell'ultima versione 
 
 - [Visualizzare i dati relativi agli URL di phishing e fare clic su Verdet](threat-explorer.md#view-data-about-phishing-urls-and-click-verdict) (Microsoft Defender per Office 365 piano 1 o piano 2)
 
-## <a name="microsoft-defender-for-office-365-plan-1-and-plan-2"></a>Microsoft Defender per Office 365 piano 1 e piano 2
+## <a name="microsoft-defender-for-office-365-plan-1-and-plan-2"></a>Microsoft Defender per Office 365 Piano 1 e Piano 2
 
 Lo sapevate che Microsoft Defender per Office 365 è disponibile in due piani? Ulteriori [informazioni su ciò che include ogni piano](office-365-atp.md#microsoft-defender-for-office-365-plan-1-and-plan-2).
 

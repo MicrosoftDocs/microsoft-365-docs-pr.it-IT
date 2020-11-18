@@ -18,12 +18,12 @@ ms.collection:
 - m365solution-scenario
 - m365solution-evalutatemtp
 ms.topic: article
-ms.openlocfilehash: a255c74db030325ba22c2095fba732a93b8c269c
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 7149524de868a3670807556f5f423ba0ee4a772a
+ms.sourcegitcommit: ce46d1bd67091d4ed0e2b776dfed55e2d88cdbf4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48844849"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49131266"
 ---
 # <a name="prepare-your-microsoft-365-defender-trial-lab-or-pilot-environment"></a>Preparare il laboratorio di valutazione Microsoft 365 Defender o l'ambiente pilota
 
@@ -35,37 +35,9 @@ ms.locfileid: "48844849"
 
 La creazione di un ambiente pilota o di un laboratorio di valutazione di Microsoft 365 Defender è un processo in tre fasi:
 
-<br>
-<table border="0" width="100%" align="center">
-  <tr style="text-align:center;">
-    <td align="center" style="width:25%; border:0;" bgcolor="#d5f5e3">
-      <a href= "https://docs.microsoft.com/microsoft-365/security/mtp/prepare-mtpeval"> 
-        <img src="../../media/prepare.png" alt="Prepare your Microsoft 365 Defender trial lab environment" title="Preparare il laboratorio di valutazione Microsoft 365 Defender o l'ambiente pilota" />
-      <br/>Fase 1: preparazione </a><br>
-    </td>
-     <td align="center"  >
-      <a href="https://docs.microsoft.com/microsoft-365/security/mtp/setup-mtpeval">
-        <img src="../../media/setup.png" alt="Set up your Microsoft 365 Defender trial lab environment" title="Configurare il laboratorio di valutazione Microsoft 365 Defender o l'ambiente pilota" />
-      <br/>Fase 2: installazione </a><br>
-        </td>
-    <td align="center">
-      <a href="https://docs.microsoft.com/microsoft-365/security/mtp/config-mtpeval">
-        <img src="../../media/config-onboard.png" alt="Configure each Microsoft 365 Defender pillar" title="Configurare ogni pilastro Microsoft 365 Defender e onboard your Endpoints" />
-      <br/>Fase 3: configurare & onboard</a><br>
-</td>
-  </tr>
-  <tr>
-    <td style="width:25%; border:0;">
-   
-    </td>
-    <td valign="top" style="width:25%; border:0;">
-    
-</td>
-    <td valign="top" style="width:25%; border:0;">
-
-</td>    
-  </tr>
-</table>
+|![Fase 1: preparazione](../../media/phase-diagrams/prepare.png)<br/>Fase 1: preparazione |[![Fase 2: configurare](../../media/phase-diagrams/setup.png)](setup-mtpeval.md)<br/>[Fase 2: configurare](setup-mtpeval.md) |[![Fase 3: Onboard](../../media/phase-diagrams/onboard.png)](config-mtpeval.md)<br/>[Fase 3: Onboard](config-mtpeval.md) | [![Torna a Pilot](../../media/phase-diagrams/backtopilot.png)](mtp-pilot.md)<br/>[Torna a Pilot PlayBook](mtp-pilot.md) |
+|--|--|--|--|
+|*Sei qui!* | || |
 
 Si è attualmente in fase di preparazione.
 
@@ -132,10 +104,10 @@ Nella tabella seguente viene indicato l'ordine consigliato da Microsoft per la c
 
 | Componente                               | Descrizione                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              | Classificazione degli ordini di configurazione |
 |-----------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------|
-|Microsoft Defender per Office 365|Microsoft Defender per Office 365 salvaguarda la propria organizzazione dalle minacce dannose poste da messaggi di posta elettronica, collegamenti (URL) e strumenti di collaborazione. <br> [Ulteriori informazioni.](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)                                                                                                                                                                                                                                             | 1                    |
-|Microsoft Defender per identità|Microsoft Defender for Identity utilizza segnali di Active Directory per identificare, rilevare ed esaminare le minacce avanzate, le identità compromesse e le azioni Insider dannose indirizzate alla propria organizzazione. <br> [Altre informazioni](https://docs.microsoft.com/azure-advanced-threat-protection/).| 2 |
+|Microsoft Defender per Office 365|Microsoft Defender per Office 365 protegge l'organizzazione dalle minacce dannose rappresentate da messaggi di posta elettronica, collegamenti (URL) e strumenti di collaborazione. <br> [Ulteriori informazioni.](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)                                                                                                                                                                                                                                             | 1                    |
+|Microsoft Defender per identità|Microsoft Defender for Identity utilizza segnali di Active Directory per identificare, rilevare ed esaminare le minacce avanzate, le identità compromesse e le azioni Insider dannose indirizzate alla propria organizzazione. <br> [Altre informazioni](https://docs.microsoft.com/azure-advanced-threat-protection/).| 2  |
 |Microsoft Cloud App Security| Microsoft cloud app Security è un broker di sicurezza cloud Access (CASB) che opera su più cloud. Offre una visibilità completa, il controllo dei dati di viaggio e un'analisi avanzata per identificare e combattere Cyberthreats in tutti i servizi cloud. <br> [Altre informazioni](https://docs.microsoft.com/cloud-app-security/).                                                                                                                                                                                                                                                                                                                                                                       |3                   |
-|Microsoft Defender ATP | Microsoft Defender per il rilevamento endpoint endpoint e le funzionalità di risposta offrono rilevamenti di attacchi avanzati che sono quasi in tempo reale e utilizzabili. I responsabili della sicurezza possono assegnare priorità agli avvisi in modo efficace, ottenere una visibilità completa su una violazione e adottare azioni di risposta per correggere le minacce. <br> [Ulteriori informazioni.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)                                     |4                    |                                                                                                                                                                                                                                    
+|Microsoft Defender per endpoint | Microsoft Defender per il rilevamento endpoint endpoint e le funzionalità di risposta offrono rilevamenti di attacchi avanzati che sono quasi in tempo reale e utilizzabili. I responsabili della sicurezza possono assegnare priorità agli avvisi in modo efficace, ottenere una visibilità completa su una violazione e adottare azioni di risposta per correggere le minacce. <br> [Ulteriori informazioni.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)                                     |4                    |                                                                                                                                                                                                                                    
 
 ## <a name="next-step"></a>Passaggio successivo
 |![Fase 2: installazione](../../media/setup.png) <br>[Fase 2: installazione](setup-mtpeval.md) | Configurare il laboratorio di valutazione Microsoft 365 Defender o l'ambiente pilota

@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: In questo articolo viene descritto come iniziare a utilizzare Advanced eDiscovery in Microsoft 365. Dopo aver completato alcuni passaggi rapidi, lo strumento Advanced eDiscovery è pronto per l'uso. Il primo passaggio consiste nel creare un caso e quindi iniziare a utilizzare le funzionalità e le caratteristiche avanzate di eDiscovery.
-ms.openlocfilehash: 59537499ed52f44a9d32b8921fd297c5cd7c0d3f
-ms.sourcegitcommit: dab50e1cc5bba920720b80033c93457f5ca1c330
+ms.openlocfilehash: 13a4bfac34201e81ba13b76791e097891409dd0b
+ms.sourcegitcommit: ce46d1bd67091d4ed0e2b776dfed55e2d88cdbf4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "48944334"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49130841"
 ---
 # <a name="get-started-with-advanced-ediscovery"></a>Introduzione ad Advanced eDiscovery
 
@@ -68,7 +68,7 @@ Completare la procedura seguente per aggiungere gli utenti al gruppo di ruoli eD
 
 3. Nella pagina riquadro a comparsa di eDiscovery Manager, fare clic su **modifica** accanto alla sezione **gestione eDiscovery** .
 
-4. Nella pagina **Scegli eDiscovery Manager** nella procedura guidata modifica gruppo di ruoli fare clic su **Scegli Gestione individuazione**.
+4. Nella pagina **Scegli eDiscovery Manager** nella procedura guidata modifica gruppo di ruoli fare clic su **Scegli gestione eDiscovery**.
 
 5. Fare clic su **Aggiungi** e quindi selezionare la casella di controllo per tutti gli utenti che si desidera aggiungere al gruppo di ruoli.
 
@@ -107,9 +107,9 @@ Per ulteriori informazioni sulla configurazione e sull'utilizzo del modello di r
 
 Il passaggio successivo consiste nel creare un caso e iniziare a utilizzare Advanced eDiscovery. Completare la procedura seguente per creare un caso e aggiungere membri. L'utente che crea il caso viene aggiunto automaticamente come membro.
 
-1. Passare a [https://compliance.microsoft.com](https://compliance.microsoft.com) e accedere con le credenziali per l'account utente a cui sono state assegnate le autorizzazioni di eDiscovery appropriate. I membri del gruppo di ruoli Gestione organizzazione possono anche creare casi avanzati di eDiscovery.
+1. Passare a [https://compliance.microsoft.com](https://compliance.microsoft.com) e accedere con un account utente a cui sono state assegnate le autorizzazioni di eDiscovery appropriate. I membri del gruppo di ruoli Gestione organizzazione possono anche creare casi avanzati di eDiscovery.
 
-2. Nel riquadro di spostamento a sinistra del centro conformità di Microsoft 365 fare clic su **Mostra tutto** , quindi fare clic su **eDiscovery > avanzate**.
+2. Nel riquadro di spostamento a sinistra del centro conformità di Microsoft 365 fare clic su **Mostra tutto**, quindi fare clic su **eDiscovery > avanzate**.
 
 3. Nella pagina **Advanced eDiscovery** , fare clic sulla scheda **case** , quindi fare clic su **Crea un caso**.
 
@@ -117,7 +117,7 @@ Il passaggio successivo consiste nel creare un caso e iniziare a utilizzare Adva
 
 5. Fare clic su **Salva** per creare il caso.
 
-   Viene creato il nuovo caso e viene visualizzata la scheda **Impostazioni** del nuovo caso. 
+   Viene creato il nuovo caso e viene visualizzata la scheda **Impostazioni** del nuovo caso.
 
 6. Nella sezione **accesso & autorizzazioni** della scheda **Impostazioni** fare clic su **Seleziona** e quindi su **Aggiorna**.
 
@@ -143,7 +143,7 @@ Per iniziare a utilizzare Advanced eDiscovery, ecco un semplice flusso di lavoro
 
    - I dati nella cassetta postale di Exchange del custode, nell'account OneDrive e in tutti i gruppi di Microsoft teams o Yammer a cui il custode è membro possono essere "contrassegnati" come dati di custodia nel caso.
   
-   - I dati del custode vengono reindicizzati (tramite un processo denominato *Advanced indicizzazione* ). Questo consente di ottimizzare la ricerca nel passaggio successivo.
+   - I dati del custode vengono reindicizzati (tramite un processo denominato *Advanced indicizzazione*). Questo consente di ottimizzare la ricerca nel passaggio successivo.
   
    - È possibile applicare un'esenzione ai dati del custode. Questo consente di conservare i dati che potrebbero essere rilevanti per il caso durante l'inchiesta.
   
@@ -161,18 +161,18 @@ Per iniziare a utilizzare Advanced eDiscovery, ecco un semplice flusso di lavoro
 
 3. **[Aggiungere dati a un set di revisione](add-data-to-review-set.md)**. Dopo aver configurato e verificato che una ricerca restituisce i dati desiderati, il passaggio successivo consiste nell'aggiungere i risultati della ricerca a un set di revisione. Quando si aggiungono dati a un set di revisione, gli elementi vengono copiati dal percorso originale a un percorso di archiviazione di Azure sicuro. I dati vengono riindicizzati di nuovo per ottimizzare le ricerche accurate e veloci quando si esaminano e analizzano gli elementi nel set di revisione. Inoltre, è anche possibile [aggiungere dati non di Office 365 in un set di revisione](load-non-office-365-data-into-a-review-set.md).
 
-   È inoltre disponibile un tipo speciale di recensione a cui è possibile aggiungere dati, denominato set di *recensioni di conversazione*. Questi tipi di recensioni consentono di fornire funzionalità di ricostruzione delle conversazioni per ricostruire, rivedere ed esportare conversazioni filettate come quelle di Microsoft teams. Per ulteriori informazioni, vedere [rivedere le conversazioni in Advanced eDiscovery](conversation-review-sets.md).
+   È inoltre disponibile un tipo speciale di recensione a cui è possibile aggiungere dati, denominato set di *recensioni di conversazione*. Questi tipi di set di revisione offrono funzionalità di ricostruzione delle conversazioni per ricostruire, rivedere ed esportare conversazioni filettate come quelle di Microsoft teams. Per ulteriori informazioni, vedere [rivedere le conversazioni in Advanced eDiscovery](conversation-review-sets.md).
 
 4. **Esaminare e analizzare i dati in un set di revisione**. Ora che i dati si trova in un set di revisione, è possibile utilizzare una vasta gamma di strumenti e funzionalità per visualizzare e analizzare i dati del caso con l'obiettivo di ridurre il set di dati a ciò che è più pertinente per il caso in cui si sta indagando. Ecco un elenco di alcuni strumenti e funzionalità che è possibile utilizzare durante questo processo.
 
    - [Visualizzare i documenti](view-documents-in-review-set.md). Ciò include la visualizzazione dei metadati per ogni documento in un set di revisione e la visualizzazione del documento nella versione nativa o nella versione di testo.
 
-   - [Creare query e filtri](review-set-search.md). È possibile creare query di ricerca utilizzando una vasta gamma di criteri di ricerca (inclusa la possibilità di eseguire una ricerca in tutte le [proprietà dei metadati di file](document-metadata-fields-in-advanced-ediscovery.md)) per affinare ulteriormente i dati del caso e abbatterli in ciò che è più pertinente al caso. È inoltre possibile utilizzare i filtri set di revisione per applicare rapidamente ulteriori condizioni ai risultati di una query di ricerca per affinare ulteriormente i risultati. 
+   - [Creare query e filtri](review-set-search.md). È possibile creare query di ricerca utilizzando una vasta gamma di criteri di ricerca (inclusa la possibilità di eseguire una ricerca in tutte le [proprietà dei metadati di file](document-metadata-fields-in-advanced-ediscovery.md)) per affinare ulteriormente i dati del caso e abbatterli in ciò che è più pertinente al caso. È inoltre possibile utilizzare i filtri set di revisione per applicare rapidamente ulteriori condizioni ai risultati di una query di ricerca per affinare ulteriormente i risultati.
 
    - [Creare e utilizzare i tag](tagging-documents.md). È possibile applicare tag ai documenti in un set di revisione per identificare quali reattivi (o non rispondere al caso) e quindi utilizzare tali tag durante la creazione di query di ricerca per includere o escludere i documenti contrassegnati. È inoltre possibile contrassegnare per determinare i documenti da esportare.
 
-   - [Annota e redigere i documenti](view-documents-in-review-set.md#annotate-view). È possibile utilizzare lo strumento annotazione in una recensione per annotare i documenti e il contenuto di redigere in documenti come prodotto di lavoro. Durante la revisione viene generata una versione in formato PDF di un documento annotato o redatto per ridurre il rischio di esportare la versione nativa di unredacted del documento.
+   - [Annota e redigere i documenti](view-documents-in-review-set.md#annotate-view). È possibile utilizzare lo strumento annotazione in una recensione per annotare i documenti e il contenuto di redigere in documenti come prodotto di lavoro. Durante la revisione viene generata una versione in formato PDF di un documento annotato o redatto per ridurre il rischio di esportare la versione nativa non ritirata del documento.
 
-   - [Analizzare i dati del caso](analyzing-data-in-review-set.md). La funzionalità di analisi in Advanced eDiscovery è potente. Dopo aver eseguito l'analisi sui dati del set di revisione, vengono eseguiti i risultati analizzati, ad esempio, il rilevamento di duplicati, il threading di posta elettronica e i temi che possono contribuire a ridurre il volume di documenti che è necessario esaminare. È inoltre possibile generare un report di analisi che riepiloga il risultato dell'esecuzione di analisi. Come spiegato in precedenza, l'esecuzione di analisi esegue anche [il modello di rilevamento dei privilegi del procuratore client](attorney-privilege-detection.md#use-the-attorney-client-privilege-detection-model).
+   - [Analizzare i dati del caso](analyzing-data-in-review-set.md). La funzionalità di analisi in Advanced eDiscovery è potente. Advanced eDiscovery fornisce una serie di strumenti per analizzare i documenti in modo da ridurre ulteriormente il volume dei documenti da rivedere in un set di revisione. Inoltre, vengono generati report di analisi che riepilogano il risultato dell'esecuzione di analisi. Come spiegato in precedenza, l'esecuzione di analisi esegue anche [il modello di rilevamento dei privilegi del procuratore client](attorney-privilege-detection.md#use-the-attorney-client-privilege-detection-model).
 
 5. **Esportare e scaricare i dati del caso**. Un passaggio finale dopo la raccolta, la revisione e l'analisi dei dati del caso consiste nell'esportarlo da Advanced eDiscovery per la revisione esterna o per la verifica da parte di utenti esterni al team di analisi. L'esportazione dei dati è un processo in due passaggi. Il primo passaggio consiste nell' [esportare](export-documents-from-review-set.md) i dati dall'insieme di revisione e copiarli in una posizione di archiviazione di Azure diversa (uno fornito da Microsoft o da uno gestito dall'organizzazione). Utilizzare quindi Esplora archivi di Azure per [scaricare](download-export-jobs.md) i dati in un computer locale. Oltre ai file di dati esportati, il contenuto del pacchetto di esportazione contiene anche un rapporto di esportazione, un rapporto riepilogativo e un report di errore.

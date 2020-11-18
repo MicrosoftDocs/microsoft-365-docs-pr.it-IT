@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-overview
 - m365solution-pilotmtpproject
 ms.topic: conceptual
-ms.openlocfilehash: 350904022ec86acdbebf109dd5946598643aea83
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 50f334a055a5bd974f9ea1f39c8fa38d44be9c26
+ms.sourcegitcommit: ce46d1bd67091d4ed0e2b776dfed55e2d88cdbf4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48843661"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49131289"
 ---
 # <a name="run-your-pilot-microsoft-365-defender-project"></a>Eseguire il progetto pilota Microsoft 365 Defender 
 
@@ -56,7 +56,7 @@ Con la soluzione Microsoft 365 Defender integrata, i professionisti della sicure
 
 La sequenza temporale di esempio seguente varia a seconda dell'utilizzo delle risorse corrette nell'ambiente in uso. Alcuni rilevamenti e flussi di lavoro potrebbero richiedere più tempo di apprendimento rispetto agli altri.
 
-![Sequenza temporale di esempio per l'esecuzione di un pilota Microsoft 365 Defender](../../media/pilotimeline.png)
+![Sequenza temporale di esempio per l'esecuzione di un pilota Microsoft 365 Defender](../../media/phase-diagrams/pilot-phases.png)
 
 >[!IMPORTANT]
 >Per ottenere risultati ottimali, seguire le istruzioni pilota il più fedelmente possibile.
@@ -68,11 +68,11 @@ Sono disponibili quattro fasi per l'esecuzione di un pilota Microsoft 365 Defend
 
 |Fase | Descrizione | 
 |:-------|:-----|
-| ![Pianificazione](../../media/mtp/plan.png)<br>[Pianificazione](mtp-pilot-plan.md)| Informazioni su ciò che è necessario prendere in considerazione prima di eseguire il progetto pilota Microsoft 365 Defender: <br><br>-Scope <br> -Use Cases <br>- Requisiti <br>-Piano di testing <br> -Criteri di esito positivo <br> -Scorecard 
-| ![Preparazione](../../media/mtp/prep.png) <br>[Preparazione](mtp-evaluation.md)|  Accedere al centro sicurezza Microsoft 365 per configurare l'ambiente pilota Microsoft 365 Defender. Verrà visualizzata la guida per:<br><br>-Identificare le parti interessate e cercare l'accesso per il pilota <br> -Considerazioni sull'ambiente <br>-Access <br>-Configurazione di Azure Active Directory <br> -Ordine di configurazione <br> -Iscriversi alla versione di valutazione di Microsoft 365 E5 <br> -Configurare il dominio <br>-Assegnare licenze Microsoft 365 E5 <br> -Completare l'installazione guidata nel portale|
-| ![Simulazione di attacco](../../media/mtp/run-sim.png) <br>[Simulazione di attacco](mtp-pilot-simulate.md) | Per simulare un attacco, è possibile eseguire le operazioni seguenti:<br><br>-Verificare i requisiti dell'ambiente di testing <br>-Eseguire la simulazione <br>-Indagare su un evento imprevisto <br>-risolvere l'evento non consentita 
-| ![Chiusura e riepilogo](../../media/mtp/close.png) <br>[Chiusura e riepilogo](mtp-pilot-close.md) | Dopo aver raggiunto la fine del processo, si verrà guidati a:<br><br>-Passare attraverso l'output finale<br>-Presentare l'output alle parti interessate <br>-Fornire commenti e suggerimenti <br>-Eseguire i passaggi successivi 
+| [Pianificazione](mtp-pilot-plan.md)<br> ~ 1 giorno| Informazioni su ciò che è necessario prendere in considerazione prima di eseguire il progetto pilota Microsoft 365 Defender: <br><br>-Scope <br> -Use Cases <br>- Requisiti <br>-Piano di testing <br> -Criteri di esito positivo <br> -Scorecard 
+| [Preparazione](mtp-evaluation.md) <br>~ 2 giorni|  Accedere al centro sicurezza Microsoft 365 per configurare l'ambiente pilota Microsoft 365 Defender. Verrà visualizzata la guida per:<br><br>-Identificare le parti interessate e cercare l'accesso per il pilota <br> -Considerazioni sull'ambiente <br>-Access <br>-Configurazione di Azure Active Directory <br> -Ordine di configurazione <br> -Iscriversi alla versione di valutazione di Microsoft 365 E5 <br> -Configurare il dominio <br>-Assegnare licenze Microsoft 365 E5 <br> -Completare l'installazione guidata nel portale|
+| [Simulazione di attacco](mtp-pilot-simulate.md) <br>~ 2 giorni| Per simulare un attacco, è possibile eseguire le operazioni seguenti:<br><br>-Verificare i requisiti dell'ambiente di testing <br>-Eseguire la simulazione <br>-Indagare su un evento imprevisto <br>-risolvere l'evento non consentita 
+| [Chiusura e riepilogo](mtp-pilot-close.md) <br>~ 1 giorno| Dopo aver raggiunto la fine del processo, si verrà guidati a:<br><br>-Passare attraverso l'output finale<br>-Presentare l'output alle parti interessate <br>-Fornire commenti e suggerimenti <br>-Eseguire i passaggi successivi 
 
 ## <a name="next-step"></a>Passaggio successivo
-|![Fase di pianificazione](../../media/mtp/plan.png) <br>[Fase di pianificazione](mtp-pilot-plan.md) | Pianificare il progetto pilota Microsoft 365 Defender 
+|[Fase di pianificazione](mtp-pilot-plan.md) | Pianificare il progetto pilota Microsoft 365 Defender 
 |:-------|:-----|

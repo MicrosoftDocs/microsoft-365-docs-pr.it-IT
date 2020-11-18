@@ -15,12 +15,12 @@ ms.collection:
 - m365initiative-defender-office365
 - MET150
 description: Gli amministratori possono imparare a identificare i motivi per cui e come è stato ottenuto un messaggio di phishing in Microsoft 365 e cosa fare per evitare ulteriori messaggi di phishing in futuro.
-ms.openlocfilehash: e933769b6bce9eb10765fb2b58025445432bed18
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: c495be3f5a90ca96f9a7a05513df9438f88910ad
+ms.sourcegitcommit: ce46d1bd67091d4ed0e2b776dfed55e2d88cdbf4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48845469"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49131322"
 ---
 # <a name="tune-anti-phishing-protection"></a>Ottimizzare la protezione anti-phishing
 
@@ -39,7 +39,7 @@ Se l'abbonamento include Microsoft Defender per Office 365, è possibile utilizz
 
 - [Allegati sicuri in Microsoft Defender per Office 365](set-up-atp-safe-attachments-policies.md)
 
-- [Criteri di anti-phishing in Microsoft Defender per Office 365](configure-atp-anti-phishing-policies.md). Si noti che è possibile aumentare temporaneamente **le soglie di phishing avanzate** nel criterio da **standard** a **aggressivo** , **più aggressivo** o **più aggressivo**.
+- [Criteri di anti-phishing in Microsoft Defender per Office 365](configure-atp-anti-phishing-policies.md). Si noti che è possibile aumentare temporaneamente **le soglie di phishing avanzate** nel criterio da **standard** a **aggressivo**, **più aggressivo** o **più aggressivo**.
 
 Verificare che queste funzionalità di protezione per Office 365 siano attivate.
 
@@ -51,13 +51,13 @@ La segnalazione dei messaggi di phishing è utile per ottimizzare i filtri utili
 
 È possibile esaminare le intestazioni del messaggio di phishing per vedere se c'è qualcosa che può essere fatto personalmente per evitare che vengano inviati più messaggi di phishing. In altre parole, l'esame delle intestazioni dei messaggi può essere utile per identificare le impostazioni dell'organizzazione responsabili dell'autorizzazione dei messaggi di phishing.
 
-In particolare, è necessario controllare il campo di intestazione **X-Forefront-antispam-report** nelle intestazioni del messaggio per le indicazioni relative alla posta indesiderata o al filtro di phishing nel valore del parametro di filtro posta indesiderata (SFV). I messaggi che ignorano il filtro avranno una voce di `SCL:-1` , il che significa che una delle impostazioni ha consentito questo messaggio tramite l'override dei verdetti di posta indesiderata o phishing che sono stati determinati dal servizio. Per ulteriori informazioni su come ottenere le intestazioni del messaggio e l'elenco completo di tutte le intestazioni dei messaggi di protezione da posta indesiderata e anti-phishing disponibili, vedere intestazioni dei messaggi di protezione da [posta indesiderata in Microsoft 365](anti-spam-message-headers.md).
+In particolare, è necessario controllare il campo di intestazione **X-Forefront-antispam-report** nelle intestazioni del messaggio per le indicazioni del filtro ignorato per la posta indesiderata o il phishing nel valore del filtro di posta indesiderata (SFV). I messaggi che ignorano il filtro avranno una voce di `SCL:-1` , il che significa che una delle impostazioni ha consentito questo messaggio mediante l'override dei verdetti di posta indesiderata o di phishing che sono stati determinati dal servizio. Per ulteriori informazioni su come ottenere le intestazioni del messaggio e l'elenco completo di tutte le intestazioni dei messaggi di protezione da posta indesiderata e anti-phishing disponibili, vedere [intestazioni dei messaggi di protezione da posta indesiderata in Microsoft 365](anti-spam-message-headers.md).
 
 ## <a name="best-practices-to-stay-protected"></a>Procedure consigliate per mantenere la protezione
 
 - Su base mensile, eseguire il [Punteggio sicuro](../mtp/microsoft-secure-score.md) per valutare le impostazioni di sicurezza dell'organizzazione.
 
-- Per i messaggi che finiscono in quarantena per sbaglio o per i messaggi consentiti tramite, è consigliabile cercare tali messaggi in [Esplora minacce e rilevamenti in tempo reale](threat-explorer.md). È possibile eseguire una ricerca in base al mittente, al destinatario o all'ID del messaggio. Dopo aver individuato il messaggio, passare a dettagli facendo clic sull'oggetto. Per un messaggio in quarantena, vedere che cos'è la "tecnologia di rilevamento" in modo che sia possibile utilizzare il metodo appropriato per eseguire l'override. Per un messaggio consentito, vedere i criteri consentiti per il messaggio. 
+- Per i messaggi che finiscono in quarantena per sbaglio o per i messaggi consentiti tramite, è consigliabile cercare tali messaggi in [Esplora minacce e rilevamenti in tempo reale](threat-explorer.md). È possibile eseguire una ricerca in base al mittente, al destinatario o all'ID del messaggio. Dopo aver individuato il messaggio, passare a dettagli facendo clic sull'oggetto. Per un messaggio in quarantena, vedere che cos'è la "tecnologia di rilevamento" in modo che sia possibile utilizzare il metodo appropriato per eseguire l'override. Per un messaggio consentito, vedere i criteri consentiti per il messaggio.
 
 - La posta contraffatta è contrassegnata come phishing in Defender per Office 365. A volte lo spoofing è benigno e a volte gli utenti non lo desiderano in quarantena. Per ridurre al minimo l'impatto degli utenti, esaminare periodicamente il [report di intelligence spoof](learn-about-spoof-intelligence.md). Dopo aver esaminato e apportato le modifiche necessarie, è possibile avere la certezza di [configurare l'intelligence spoof](set-up-anti-phishing-policies.md#spoof-settings) per la **quarantena** dei messaggi sospetti anziché recapitarli nella cartella posta indesiderata dell'utente.
 
@@ -74,7 +74,7 @@ In particolare, è necessario controllare il campo di intestazione **X-Forefront
   - Utilizzare l'operazione non riuscita ( \- tutto) per garantire che i mittenti non autorizzati vengano rifiutati dai sistemi di posta elettronica configurati per l'esecuzione. È possibile utilizzare l' [Intelligence spoof](learn-about-spoof-intelligence.md) per identificare i mittenti che utilizzano il dominio in modo che sia possibile includere mittenti di terze parti autorizzati nel record SPF.
 
   Per istruzioni sulla configurazione, vedere:
-  
+
   - [Configurazione di SPF per evitare lo spoofing](set-up-spf-in-office-365-to-help-prevent-spoofing.md)
 
   - [Usare DKIM per convalidare la posta elettronica in uscita inviata dal dominio personalizzato](use-dkim-to-validate-outbound-email.md)

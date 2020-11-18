@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Informazioni su come trovare e utilizzare i report sulla sicurezza della posta elettronica per l'organizzazione. I report sulla sicurezza della posta elettronica sono disponibili nel centro sicurezza & conformità.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 75370cbbdfbc59bf8e9334d1e11d8b92c5c97e61
-ms.sourcegitcommit: e7bf23df4852b78912229d1d38ec475223597f34
+ms.openlocfilehash: 1b2fd7a18589932d56ea39722b48462d2a6eac2f
+ms.sourcegitcommit: ce46d1bd67091d4ed0e2b776dfed55e2d88cdbf4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49087752"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49131202"
 ---
 # <a name="view-email-security-reports-in-the-security--compliance-center"></a>Visualizzare i report sulla sicurezza della posta elettronica nel Centro sicurezza e conformità
 
@@ -334,7 +334,7 @@ Sono disponibili le visualizzazioni seguenti:
   - **Reputazione URL EOP**: reputazione URL dannosi.
   - **Filtro generale phishing**: segnali di phishing basati sulle regole dell'analista.
   - **Altri**
-  - Messaggi di phishing di **phishing zap**<sup>2</sup>: zero hour.
+  - **Phishing zap**<sup>2</sup>: zero hour auto purge dei messaggi di phishing.
   - **Detonazione URL**<sup>1</sup>
   - **Rappresentazione utente**<sup>1</sup>: rappresentazione degli utenti definiti dall'amministratore o appresa tramite Intelligence delle cassette postali.
 
