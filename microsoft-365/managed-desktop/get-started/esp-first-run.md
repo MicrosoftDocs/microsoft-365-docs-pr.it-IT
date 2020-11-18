@@ -10,12 +10,12 @@ audience: ITpro
 ms.topic: article
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 7337dd28f7940256d1753cd4c0b6309406fab2d1
-ms.sourcegitcommit: 888b9355ef7b933c55ca6c18639c12426ff3fbde
+ms.openlocfilehash: 5e2340c7c0bf00165bb43740d3d095b5b0402fc0
+ms.sourcegitcommit: 0402d3275632fceda9137b6abc3ce48c8020172a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "48305271"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49126626"
 ---
 # <a name="first-run-experience-with-autopilot-and-the-enrollment-status-page"></a>Esperienza iniziale con Autopilot e pagina stato registrazione
 
@@ -95,7 +95,7 @@ Se il programma di installazione utilizzato da Microsoft Managed Desktop non sod
 
 ### <a name="autopilot-settings-change"></a>Modifica delle impostazioni del pilota automatico
 
-Potrebbe essere necessario richiedere un modello di nome dispositivo diverso. Tuttavia, non è possibile modificare la modalità di distribuzione, aggiungersi a Azure As, impostazioni della privacy o tipo di account utente.
+Potrebbe essere necessario richiedere un modello di nome dispositivo diverso. Tuttavia, non è possibile modificare la modalità di distribuzione, aggiungersi ad Azure AD As, impostazioni della privacy o tipo di account utente.
 
 ### <a name="enrollment-status-page-settings-change"></a>Modifica delle impostazioni della pagina di stato di registrazione
 

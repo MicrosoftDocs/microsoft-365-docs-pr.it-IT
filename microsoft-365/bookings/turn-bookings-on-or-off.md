@@ -9,12 +9,12 @@ ms.service: bookings
 localization_priority: Normal
 ms.assetid: 5382dc07-aaa5-45c9-8767-502333b214ce
 description: Informazioni su come accedere a Microsoft bookings in Microsoft 365.
-ms.openlocfilehash: 815aa3a859db15364aa18d3550001a28d085b711
-ms.sourcegitcommit: 41fd71ec7175ea3b94f5d3ea1ae2c8fb8dc84227
+ms.openlocfilehash: 7e4eaa1e474f3f49807b842097c855193f028af0
+ms.sourcegitcommit: 0402d3275632fceda9137b6abc3ce48c8020172a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47419733"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49126592"
 ---
 # <a name="turn-microsoft-bookings-on-or-off"></a>Attivazione o disattivazione delle prenotazioni Microsoft
 
@@ -27,7 +27,7 @@ Le prenotazioni possono essere attivate o disattivate per l'intera organizzazion
 
 1. Accedere all'interfaccia di amministrazione di Microsoft 365 come amministratore globale.
 
-2. Nell'interfaccia di amministrazione, andare a impostazioni **Impostazioni**   \> **Settings** e selezionare **prenotazioni**.
+2. Nell'interfaccia di amministrazione, passare a  **Settings** impostazioni   \> **org** impostazioni e selezionare **prenotazioni**.
 
 3. Selezionare la casella di controllo per **consentire all'organizzazione di utilizzare le prenotazioni** per abilitare o disabilitare le prenotazioni per la propria organizzazione.
 
@@ -38,7 +38,7 @@ Le prenotazioni possono essere attivate o disattivate per l'intera organizzazion
 
 ## <a name="turn-bookings-on-or-off-for-your-organization-using-powershell"></a>Attivazione o disattivazione delle prenotazioni per la propria organizzazione tramite PowerShell
 
-Per abilitare o disabilitare le prenotazioni per l'organizzazione utilizzando il cmdlet [Set-OrganizationConfig](https://docs.microsoft.com/powershell/module/exchange/set-organizationconfig)di PowerShell, [connettersi a PowerShell di Exchange Online]() ed eseguire il comando riportato di seguito:
+Per abilitare o disabilitare le prenotazioni per l'organizzazione utilizzando il cmdlet [Set-OrganizationConfig](https://docs.microsoft.com/powershell/module/exchange/set-organizationconfig)di PowerShell, [connettersi a PowerShell di Exchange Online](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell) ed eseguire il comando riportato di seguito:
 
 ```PowerShell
    Set-OrganizationConfig -BookingsEnabled $false
@@ -56,7 +56,7 @@ Per abilitare o disabilitare le prenotazioni per l'organizzazione utilizzando il
 
 ## <a name="require-staff-approvals-before-sharing-freebusy-information"></a>Richiedi approvazione del personale prima della condivisione delle informazioni sulla disponibilità
 
-Gli amministratori possono richiedere ai dipendenti dell'organizzazione l'opt-in prima che le informazioni sulla disponibilità siano condivise tramite le prenotazioni e prima che possano essere prenotabili tramite una pagina di prenotazione. Questa impostazione è disponibile nell'interfaccia di amministrazione di Microsoft 365 **Settings** nelle \> **Settings** \> **prenotazioni**delle impostazioni delle impostazioni.
+Gli amministratori possono richiedere ai dipendenti dell'organizzazione l'opt-in prima che le informazioni sulla disponibilità siano condivise tramite le prenotazioni e prima che possano essere prenotabili tramite una pagina di prenotazione. Questa impostazione è disponibile nell'interfaccia di amministrazione di Microsoft 365 **Settings** nelle \> **Settings** \> **prenotazioni** delle impostazioni delle impostazioni.
 
 Quando questa impostazione è abilitata, i dipendenti aggiunti come personale nei calendari di prenotazione troveranno un collegamento Approva/Rifiuta nella notifica di posta elettronica che ricevono.
 
@@ -64,7 +64,7 @@ Questa funzionalità è gradualmente distribuita a livello mondiale nei clienti 
 
 ## <a name="block-social-sharing-options"></a>Bloccare le opzioni di condivisione sociale
 
-Gli amministratori possono controllare il modo in cui le pagine di prenotazione sono condivise sui social network. Questa impostazione è disponibile nell'interfaccia di amministrazione di Microsoft 365 **Settings** nelle \> **Settings** \> **prenotazioni**delle impostazioni delle impostazioni.
+Gli amministratori possono controllare il modo in cui le pagine di prenotazione sono condivise sui social network. Questa impostazione è disponibile nell'interfaccia di amministrazione di Microsoft 365 **Settings** nelle \> **Settings** \> **prenotazioni** delle impostazioni delle impostazioni.
 
 Questa funzionalità è gradualmente distribuita a livello mondiale nei clienti di Microsoft 365. Se questa opzione non è disponibile nell'interfaccia di amministrazione di Microsoft 365, eseguire il controllo di nuovo a breve.
 

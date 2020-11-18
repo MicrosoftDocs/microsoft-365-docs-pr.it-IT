@@ -19,12 +19,12 @@ search.appverid:
 - GEA150
 ms.assetid: beffbe01-ce2d-4614-9ae5-7898868e2729
 description: Informazioni su come ottenere il report sull'utilizzo delle cassette postali per conoscere le attività degli utenti con una cassetta postale utente.
-ms.openlocfilehash: 0b0c57bda813e1600866513df86b7c973dcdffdc
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: 8d942f507c1e3102f909fb33eb16e00f7ebf05ea
+ms.sourcegitcommit: 0402d3275632fceda9137b6abc3ce48c8020172a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47949133"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49126568"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---mailbox-usage"></a>Report di Microsoft 365 nell'interfaccia di amministrazione-utilizzo delle cassette postali
 
@@ -37,8 +37,8 @@ Il **report sull'utilizzo delle cassette postali** fornisce informazioni sugli u
 
 1. Nell'interfaccia di amministrazione passare alla pagina **Report** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">Utilizzo</a>.
 
-    
-2. Nell'elenco **a discesa selezionare un report** selezionare **Exchange** \> **utilizzo delle cassette postali**di Exchange.
+2. Selezionare **Visualizza altro** in **utenti attivi-servizi Microsoft 365**. 
+3. Nell'elenco a discesa **utenti attivi** selezionare **Exchange** \> **utilizzo delle cassette postali** di Exchange.
   
 ## <a name="interpret-the-mailbox-usage-report"></a>Interpretare il report sull'utilizzo delle cassette postali
 
@@ -57,4 +57,3 @@ Il **report sull'utilizzo delle cassette postali** fornisce informazioni sugli u
 |9.  <br/> |È inoltre possibile esportare i dati del report in un file CSV di Excel selezionando il collegamento **Esporta** .  <br/> |
 |||
    
-
