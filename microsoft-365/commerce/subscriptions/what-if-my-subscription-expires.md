@@ -23,28 +23,28 @@ search.appverid:
 - GEA150
 ms.assetid: 4436582f-211a-45ec-b72e-33647f97d8a3
 description: Informazioni su cosa succede ai dati quando la sottoscrizione Microsoft 365 for business scade, è disabilitata o se si Annulla.
-ms.openlocfilehash: b09f56fefb7791af012c9dab2ba4e5684b9bf89f
-ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
+ms.openlocfilehash: c191b2fa795614a272b28cedae8d23693933dc95
+ms.sourcegitcommit: 0badd6a7af803a52c7c46a4374211cb89307eacf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "48906824"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49135980"
 ---
 # <a name="what-happens-to-my-data-and-access-when-my-microsoft-365-for-business-subscription-ends"></a>Cosa succede ai dati e all'accesso quando termina l'abbonamento a Microsoft 365 for business?
 
-Se l'abbonamento termina, perché scade o perché si decide di annullare, l'accesso ai servizi Microsoft 365, le applicazioni e i dati dei clienti passano attraverso più stati prima che la sottoscrizione sia completamente disattivata o *deprovisioned*. Se si è a conoscenza di questa progressione, sarà più opportuno riportare l'abbonamento a uno stato attivo prima che sia troppo tardi oppure, se si sta lasciando Microsoft 365, eseguire il backup dei dati prima che vengano eliminati definitivamente.
+Se l'abbonamento termina, perché scade o perché si decide di annullare, l'accesso ai servizi Microsoft 365, le applicazioni e i dati dei clienti passano attraverso più stati prima che la sottoscrizione sia completamente disattivata o *eliminata*. Se si è a conoscenza di questa progressione, sarà più opportuno riportare l'abbonamento a uno stato attivo prima che sia troppo tardi oppure, se si sta lasciando Microsoft 365, eseguire il backup dei dati prima che vengano eliminati definitivamente.
 
 Leggere queste importanti informazioni prima di contattare il [supporto di Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/contact-support-for-business-products).
   
 ## <a name="what-happens-to-data-when-a-subscription-expires"></a>Cosa succede ai dati quando un abbonamento scade?
 
-- Se l'abbonamento scade, viene eseguito nelle fasi seguenti: scaduto/disattivato/deprovisioned. La fase scaduta inizia subito dopo che la sottoscrizione ha raggiunto la data di fine.
+- Se l'abbonamento scade, passa attraverso le seguenti fasi: scaduto/disabilitato/eliminato. La fase scaduta inizia subito dopo che la sottoscrizione ha raggiunto la data di fine.
 - Se si disattiva la fatturazione ricorrente per l'abbonamento annuale, si passa alle stesse fasi della sottoscrizione scaduta. La prima fase inizia è l'anniversario dell'abbonamento annuale, non iniziando dalla data in cui è stata disattivata l'impostazione di fatturazione ricorrente dell'abbonamento.
 - Se si annulla la sottoscrizione mensile, questa verrà disabilitata immediatamente (alla data di cancellazione). Questo significa che gli utenti perdono immediatamente l'accesso alle risorse di Microsoft 365 e solo gli amministratori hanno accesso ai dati per i prossimi 90 giorni.
 
 Nella tabella seguente vengono illustrate le operazioni che è possibile prevedere quando un abbonamento a pagamento Microsoft 365 for business scade.
 
-| **Attivazione**                                                             | **Scaduto <br/> (30 giorni \* )**                                                | **Disabled <br/> (90 giorni \* )**                                               | **Senza provisioning**                                                                         |
+| Attivazione | Scaduto <br/>(30 giorni \* ) | Disattivato <br/>(90 giorni \* ) | Eliminato |
 |------------------------------------------------------------------------|------------------------------------------------------------------------------|------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------|
 | *Dati accessibili a tutti*                                               | *Dati accessibili a tutti*                                                     | *Dati accessibili solo agli amministratori*                                             | **Data eliminazione <br/> di Azure Active Directory viene rimossa, se non utilizzata da altri servizi** |
 | Gli utenti hanno accesso normale a Microsoft 365, file e applicazioni   | Gli utenti hanno accesso normale a Microsoft 365, file e applicazioni              | Gli utenti non possono accedere a Microsoft 365, file o applicazioni                        | Gli utenti non possono accedere a Microsoft 365, file o applicazioni                                     |
@@ -192,16 +192,16 @@ In questo stato, l'accesso diminuisce in modo significativo. Gli utenti non poss
 
 In qualità di amministratore globale o di fatturazione, è possibile [riattivare l'abbonamento](reactivate-your-subscription.md) e continuare a usare Microsoft 365 con tutti i dati dei clienti intatti. Se si sceglie di non riattivare, [eseguire il backup dei dati](back-up-data-before-switching-plans.md).
 
-### <a name="state-deprovisioned"></a>Stato: annullamento del provisioning
+### <a name="state-deleted"></a>Stato: eliminato
   
- **Cosa aspettarsi:** se l'abbonamento non viene riattivato durante il periodo di tolleranza o disabilitazione, ne viene eseguito il deprovisioning.
+ **Cosa aspettarsi:** Se l'abbonamento non viene riattivato quando è in stato di grazia o disabilitato, l'abbonamento viene eliminato.
   
 Gli amministratori e gli utenti non hanno più accesso ai servizi o alle applicazioni di Office incluse nell'abbonamento. Tutti i dati dei clienti, dai dati degli utenti ai documenti e ai messaggi di posta elettronica, vengono eliminati definitivamente e non sono recuperabili.
   
 A questo punto non è più possibile riattivare l'abbonamento. Tuttavia, come amministratore globale o di fatturazione, è comunque possibile accedere all'interfaccia di amministrazione per gestire altri abbonamenti o acquistare nuovi abbonamenti per soddisfare le proprie esigenze aziendali.
   
 > [!NOTE]
-> Se si aggiunge un nuovo abbonamento dello stesso tipo di quello di cui è stato eseguito il deprovisioning, non è possibile ripristinare i dati precedentemente associati all'abbonamento rimosso con deprovisioning.
+> L'aggiunta di una nuova sottoscrizione dello stesso tipo che è stata eliminata non ripristina i dati associati alla sottoscrizione eliminata.
 
 
 > [!NOTE]
