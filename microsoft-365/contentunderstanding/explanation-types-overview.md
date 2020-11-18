@@ -7,14 +7,15 @@ audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 search.appverid: ''
+ms.collection: enabler-strategic
 localization_priority: Priority
 description: Informazioni sui tipi di spiegazione in Microsoft SharePoint Syntex
-ms.openlocfilehash: 2d76fec3ee98f7c096c44a2b19b52da9fb70859d
-ms.sourcegitcommit: 82d8be71c5861a501ac62a774b306a3fc1d4e627
+ms.openlocfilehash: f01529199bf4dea0a14c7dc30b39fcaa5078931b
+ms.sourcegitcommit: e7bf23df4852b78912229d1d38ec475223597f34
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48988763"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49087644"
 ---
 # <a name="introduction-to-explanation-types"></a>Introduzione ai tipi di spiegazione
 
@@ -24,17 +25,17 @@ Le spiegazioni vengono usate per definire meglio le informazioni da etichettare 
    
 Sono disponibili questi tipi di spiegazione:
 
-- **Elenco frasi** : elenco di parole, frasi, numeri o altri caratteri che è possibile usare nel documento o nelle informazioni che si stanno estraendo. Ad esempio, la stringa di testo **Medico richiedente** è inclusa in tutti i documenti di richiesta di visita specialistica che si stanno identificando.</br>
+- **Elenco frasi**: elenco di parole, frasi, numeri o altri caratteri che è possibile usare nel documento o nelle informazioni che si stanno estraendo. Ad esempio la stringa di testo **Medico richiedente** è presente costantemente nei documenti del medico richiedente che si stanno identificando.</br>
 
-- **Elenco criteri** : elenco di criteri di numeri, lettere o altri caratteri usati per identificare le informazioni che si stanno estraendo. Ad esempio, è possibile estrarre il **numero di telefono** del medico richiedente da tutti i documenti di richiesta di visita specialistica che si stanno identificando.</br>
+- **Elenco criteri**: elenco di criteri di numeri, lettere o altri caratteri usati per identificare le informazioni che si stanno estraendo. Ad esempio, è possibile estrarre **il numero di telefono** del medico richiedente da tutti i documenti del medico richiedente identificati.</br>
 
-- **Prossimità** : descrive la relazione di prossimità tra le spiegazioni. Ad esempio, un elenco criteri *numero civico* precede immediatamente l'elenco di frasi *nome della via* , senza token intermedi (i token verranno illustrati più avanti in questo articolo). Se si usa il tipo di prossimità, il modello deve includere almeno due spiegazioni, altrimenti l'opzione verrà disabilitata. 
+- **Prossimità**: descrive la relazione di prossimità tra le spiegazioni. Ad esempio, un elenco dei criteri con un *numero civico* deve essere posizionato subito prima dell’elenco frasi con il *nome della via*, senza token in mezzo (i token vengono descritti più avanti in questo articolo). Se si usa il tipo di prossimità, il modello deve includere almeno due spiegazioni, altrimenti l'opzione verrà disabilitata. 
  
 ## <a name="phrase-list"></a>Elenco frasi
 
-Il tipo di spiegazione elenco frasi viene usato generalmente per identificare e classificare un documento tramite il modello. Come descritto nell'esempio di etichetta *Medico richiedente* , si tratta di una stringa di parole, frasi, numeri o caratteri presente costantemente nei documenti che si stanno identificando.
+Il tipo di spiegazione elenco frasi viene usato generalmente per identificare e classificare un documento tramite il modello. Come descritto nell'esempio di etichetta *Medico richiedente*, si tratta di una stringa di parole, frasi, numeri o caratteri presente costantemente nei documenti che si stanno identificando.
 
-Anche se non è necessario, la spiegazione risulta più efficace se la frase acquisita si trova in una posizione ricorrente nel documento. Ad esempio, l'etichetta *Medico richiedente* potrebbe essere situata sempre nel primo paragrafo del documento.
+Anche se non è necessario, la spiegazione risulta più efficace se la frase acquisita si trova in una posizione ricorrente nel documento. Per esempio l’etichetta *Medico richiedente* potrebbe essere situata sempre nel primo paragrafo del documento.
 
 Se la distinzione tra maiuscole e minuscole è un requisito per identificare l'etichetta, il tipo elenco frasi consente di specificarlo nella spiegazione selezionando la casella di controllo **Solo le maiuscole esatte**.
 
@@ -42,9 +43,9 @@ Se la distinzione tra maiuscole e minuscole è un requisito per identificare l'e
 
 ## <a name="pattern-lists"></a>Elenchi di criteri
 
-Il tipo elenco criteri risulta particolarmente utile quando si crea una spiegazione che identifica ed estrae informazioni da un documento. Generalmente viene presentato in vari formati, come date, numeri di telefono e numeri di carte di credito. Ad esempio, una data può essere visualizzata in diversi formati (1/1/2020, 1-1-2020, 01/01/20, 01/01/2020, 1 gen 2020 e così via). La definizione di un elenco di criteri rende più efficace la spiegazione attraverso l'acquisizione di tutte le possibili varianti nei dati che si sta provando a identificare ed estrarre. 
+Il tipo elenco criteri risulta particolarmente utile quando si crea una spiegazione che identifica ed estrae informazioni da un documento.Generalmente viene presentato in vari formati, come date, numeri di telefono e numeri di carte di credito.Ad esempio, una data può essere visualizzata in diversi formati (1/1/2020, 1-1-2020, 01/01/20, 01/01/2020, 1 gen 2020 e così via).La definizione di un elenco di criteri rende più efficace la spiegazione attraverso l'acquisizione di tutte le possibili varianti nei dati che si sta provando a identificare ed estrarre. 
 
-Per l'esempio relativo al **numero di telefono** , estrarre il numero di telefono per ogni medico richiedente da tutti i documenti di richiesta di visita specialistica identificati dal modello. Quando si crea la spiegazione, selezionare il tipo Elenco criteri affinché vengano restituiti i vari formati previsti.
+Per l'esempio relativo al **numero di telefono**, estrarre il numero di telefono per ogni medico richiedente da tutti i documenti di richiesta di visita specialistica identificati dal modello. Quando si crea la spiegazione, selezionare il tipo Elenco criteri affinché vengano restituiti i vari formati previsti.
 
    ![Elenco criteri numero di telefono](../media/content-understanding/pattern-list.png)
 
@@ -54,7 +55,7 @@ Nel caso di questo esempio, selezionare la casella di controllo **Qualsiasi cifr
 
 Analogamente, se si crea un elenco di criteri che include caratteri di testo, selezionare la casella di controllo **Qualsiasi lettera dalla a alla z** per riconoscere ogni carattere "a" usato nell'elenco dei criteri per essere qualsiasi carattere compreso dalla "a" alla "z".
 
-Ad esempio, se si crea un elenco di criteri **Data** e si vuole fare in modo che venga riconosciuto un formato di data come *1 gen 2020* , bisogna immettere:
+Ad esempio, se si crea un elenco di criteri **Data** e si vuole fare in modo che venga riconosciuto un formato di data come *1 gen 2020*, bisogna immettere:
 - Aggiungere *0 aaa 0000* e *00 aaa 0000* all'elenco criteri.
 - Assicurarsi che sia selezionata anche l'opzione **Qualsiasi lettera dalla a alla z**.
 
@@ -68,7 +69,7 @@ Inoltre, se l'elenco criteri prevede requisiti per le maiuscole, è possibile se
    ![solo le maiuscole esatte](../media/content-understanding/exact-caps.png)
 
 > [!NOTE]
-> Anziché creare manualmente una spiegazione elenco criteri, usare la [raccolta spiegazioni](https://docs.microsoft.com/microsoft-365/contentunderstanding/explanation-types-overview#use-explanation-templates) per usare modelli di elenchi di criteri per elenchi di criteri comuni, quali *Data* , *Numero di telefono* , *Numero di carta di credito* e così via.
+> Anziché creare manualmente una spiegazione elenco criteri, usare la [raccolta spiegazioni](https://docs.microsoft.com/microsoft-365/contentunderstanding/explanation-types-overview#use-explanation-templates) per usare modelli di elenchi di criteri per elenchi di criteri comuni, quali *Data*, *Numero di telefono*, *Numero di carta di credito* e così via.
 
 ## <a name="proximity"></a>Prossimità 
 
@@ -95,12 +96,12 @@ Nella tabella seguente sono illustrati alcuni esempi per determinare il numero d
 |--|--|--|
 |`Dog`|1|Una singola parola senza punteggiatura o spazi.|
 |`RMT33W`|1|Un numero di localizzazione record. Può includere numeri e lettere, ma non include segni di punteggiatura.|
-|`425-555-5555`|5|Un numero di telefono. Ogni segno di punteggiatura è un token, quindi `425-555-5555` corrisponde a 5 token:<br>`425`<br>`-`<br>`555`<br>`-`<br>`5555` |
+|`425-555-5555`|5|Un numero di telefono. Ogni segno di punteggiatura è un token, quindi `425-555-5555` corrisponderebbe a 5 token:<br>`425`<br>`-`<br>`555`<br>`-`<br>`5555` |
 |`https://luis.ai`|7|`https`<br>`:`<br>`/`<br>`/`<br>`luis`<br>`.`<br>`ai`<br>|
 
 #### <a name="configure-the-proximity-explanation-type"></a>Configurare il tipo di spiegazione di prossimità
 
-Per questo esempio, configurare l'impostazione di prossimità in modo da poter definire l'intervallo del numero di token di distanza nella spiegazione *Numero di telefono* dalla spiegazione *Numero civico*. Si noti che l'intervallo minimo dovrebbe risultare "0" perché non c'è nessun token tra il numero di telefono e il numero civico.
+Per questo esempio, configurare l'impostazione di prossimità in modo da poter definire l'intervallo del numero di token di distanza nella spiegazione *Numero di telefono* dalla spiegazione *Numero civico*.Si noti che l'intervallo minimo dovrebbe risultare "0" perché non c'è nessun token tra il numero di telefono e il numero civico.
 
 Dopo alcuni numeri di telefono nei documenti di esempio, invece, è presente la dicitura *(cellulare)*.
 
@@ -125,7 +126,7 @@ Configurare l'impostazione di prossimità su un intervallo compreso tra 0 e 3.
 
 Anche se è possibile aggiungere manualmente vari valori dell'elenco di criteri per la spiegazione, può essere più semplice usare i modelli disponibili nella raccolta di spiegazioni.
 
-Ad esempio, invece di aggiungere manualmente tutte le varianti per *Data* , è possibile usare il modello di elenco pattern per *Data* , poiché include già molti valori di elenchi di criteri:</br>
+Ad esempio, invece di aggiungere manualmente tutte le varianti per *Data*, è possibile usare il modello di elenco pattern per *Data*, poiché include già molti valori di elenchi di criteri:</br>
 
    ![Raccolta di spiegazioni](../media/content-understanding/explanation-template.png)</br>
  
@@ -147,7 +148,7 @@ Si noti che la raccolta di spiegazioni include modelli per le spiegazioni elenco
 
 #### <a name="to-use-a-template-from-the-explanation-library"></a>Per usare un modello dalla raccolta di spiegazioni
 
-1. Nella sezione **Spiegazioni** della pagina **Avvia training** del modello selezionare **Nuovo** , quindi **Da un modello**.</br>
+1. Nella sezione **Spiegazioni** della pagina **Avvia training** del modello selezionare **Nuovo**, quindi **Da un modello**.</br>
 
    ![Crea da modello](../media/content-understanding/from-template.png)</br>
 
@@ -155,7 +156,7 @@ Si noti che la raccolta di spiegazioni include modelli per le spiegazioni elenco
 
        ![Selezionare un modello](../media/content-understanding/phone-template.png)</br>
 
-3. Le informazioni relative al modello selezionato sono visualizzate nella pagina **Crea spiegazione**. Se necessario, modificare il nome della spiegazione e aggiungere o rimuovere voci nell'elenco criteri. </br> 
+3. Le informazioni relative al modello selezionato sono visualizzate nella pagina **Crea spiegazione**. Se necessario, modificare il nome della spiegazione e aggiungere o rimuovere voci nell'elenco criteri.</br> 
 
    ![Modifica modello](../media/content-understanding/phone-template-live.png)</br>
 
