@@ -14,12 +14,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 description: Gli amministratori di Microsoft 365 possono ottenere informazioni su come eseguire il ripristino da un attacco ransomware.
-ms.openlocfilehash: de1cddbdf1c2b3ffeb8fd74a8f0d31e815eb1b70
-ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
+ms.openlocfilehash: a1369e64821902e3c2a3061acd1bbebeeb6c85ac
+ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48920609"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49357098"
 ---
 # <a name="recover-from-a-ransomware-attack-in-microsoft-365"></a>Eseguire il ripristino da un attacco ransomware in Microsoft 365
 
@@ -76,7 +76,7 @@ Se queste opzioni non funzionano, è possibile provare [Windows Defender offline
 
 Dopo aver completato il passaggio precedente per rimuovere il payload ransomware dall'ambiente (che impedirà al ransomware di crittografare o rimuovere i file), è possibile utilizzare la [cronologia dei file](https://support.microsoft.com/help/17128) in Windows 10 e Windows 8,1 o System Protection in Windows 7 per tentare di recuperare i file e le cartelle locali.
 
-**Note** :
+**Note**:
 
 - Alcuni ransomware anche crittografare o eliminare le versioni di backup, quindi non è possibile utilizzare la cronologia dei file o la protezione del sistema per ripristinare i file. In tal caso, è necessario utilizzare i backup su unità esterne o su dispositivi che non sono stati interessati dal ransomware o OneDrive, come descritto nella sezione successiva.
 
@@ -88,7 +88,7 @@ Il ripristino dei file in OneDrive for business consente di ripristinare l'inter
 
 ## <a name="step-6-recover-deleted-email"></a>Passaggio 6: recuperare il messaggio di posta elettronica eliminato
 
-Nel caso raro che il ransomware ha eliminato tutti i messaggi di posta elettronica, è probabile che gli elementi eliminati possano essere recuperati. Per altre informazioni, vedere:
+Nel caso raro che il ransomware ha eliminato tutti i messaggi di posta elettronica, è probabile che gli elementi eliminati possano essere recuperati. Per ulteriori informazioni, vedere:
 
 - [Recupero dei messaggi eliminati nella cassetta postale di un utente](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-user-mailboxes/recover-deleted-messages)
 
@@ -148,7 +148,7 @@ Se il paese non è elencato, chiedere alle agenzie di applicazione della legge f
 
 - [Abilitare o disabilitare le macro nei file di Office](https://support.microsoft.com/office/12b036fd-d140-4e74-b45e-16fed1a7e5c6)
 
-- [Impostazioni consigliate per EOP e Microsoft Defender per la sicurezza di Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/recommended-settings-for-eop-and-office365-atp)
+- [Impostazioni consigliate per EOP e Microsoft Defender per la sicurezza di Office 365](recommended-settings-for-eop-and-office365-atp.md)
 
 - [Un aggiornamento meritevole: la sicurezza di Next-gen su Windows 10 risulta resiliente rispetto ai focolai di ransomware nel 2017](https://www.microsoft.com/security/blog/2018/01/10/a-worthy-upgrade-next-gen-security-on-windows-10-proves-resilient-against-ransomware-outbreaks-in-2017/)
 

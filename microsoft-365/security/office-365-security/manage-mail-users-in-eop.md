@@ -1,5 +1,5 @@
 ---
-title: Gestire gli utenti di posta in Exchange Online Protection autonome
+title: Gestire gli utenti di posta in Exchange Online Protection autonomo
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -13,14 +13,14 @@ localization_priority: Normal
 ms.assetid: 4bfaf2ab-e633-4227-8bde-effefb41a3db
 description: Informazioni su come gestire gli utenti di posta elettronica in Exchange Online Protection (EOP), tra cui l'utilizzo della sincronizzazione della directory, EAC e PowerShell per la gestione degli utenti.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 56e6f8955b5993fb4b5064aa92cdde80a4c67ffe
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 3c3e69def731a85c0dccffdcb5620560dcf00052
+ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48201784"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49356728"
 ---
-# <a name="manage-mail-users-in-standalone-eop"></a>Gestire gli utenti di posta in Exchange Online Protection autonome
+# <a name="manage-mail-users-in-standalone-eop"></a>Gestire gli utenti di posta in Exchange Online Protection autonomo
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -34,7 +34,7 @@ Il metodo consigliato per creare e gestire gli utenti di posta in EOP autonomo c
 
 Per le organizzazioni di EOP autonome con un numero limitato di utenti, è possibile aggiungere e gestire gli utenti di posta elettronica nell'interfaccia di amministrazione di Exchange (EAC) o in EOP standalone PowerShell come descritto in questo argomento.
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare
+## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare?
 
 - Per aprire l'interfaccia di amministrazione di Exchange (EAC), vedere interfaccia [di amministrazione di Exchange in EOP autonomo](exchange-admin-center-in-exchange-online-protection-eop.md).
 
@@ -63,7 +63,7 @@ Per le organizzazioni di EOP autonome con un numero limitato di utenti, è possi
 
    - **Cognome**
 
-   - <sup>\*</sup>**Nome visualizzato**: per impostazione predefinita, questa casella consente di visualizzare i valori delle caselle **nome**, **iniziali**e **Cognome** . È possibile accettare questo valore o modificarlo. Il valore deve essere univoco e ha una lunghezza massima di 64 caratteri.
+   - <sup>\*</sup>**Nome visualizzato**: per impostazione predefinita, questa casella consente di visualizzare i valori delle caselle **nome**, **iniziali** e **Cognome** . È possibile accettare questo valore o modificarlo. Il valore deve essere univoco e ha una lunghezza massima di 64 caratteri.
 
    - <sup>\*</sup>**Alias**: immettere un alias univoco, con un massimo di 64 caratteri, per l'utente
 
@@ -258,11 +258,11 @@ In EOP autonomo, la sincronizzazione della directory è disponibile per i client
 
 - Si consiglia di utilizzare la sincronizzazione della directory con le seguenti funzionalità:
 
-  - Elenchi di **Mittenti attendibili di Outlook e elenchi di mittenti bloccati**: quando vengono sincronizzati con il servizio, questi elenchi avranno la precedenza sul filtro di posta indesiderata nel servizio. Questo consente agli utenti di gestire l'elenco dei mittenti attendibili e l'elenco dei mittenti bloccati con le singole voci del mittente e del dominio. Per altre informazioni, vedere [Configurare le impostazioni della posta indesiderata nelle cassette postali di Exchange Online](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-junk-email-settings-on-exo-mailboxes).
+  - Elenchi di **Mittenti attendibili di Outlook e elenchi di mittenti bloccati**: quando vengono sincronizzati con il servizio, questi elenchi avranno la precedenza sul filtro di posta indesiderata nel servizio. Questo consente agli utenti di gestire l'elenco dei mittenti attendibili e l'elenco dei mittenti bloccati con le singole voci del mittente e del dominio. Per altre informazioni, vedere [Configurare le impostazioni della posta indesiderata nelle cassette postali di Exchange Online](configure-junk-email-settings-on-exo-mailboxes.md).
 
   - **Blocking Edge basato su directory (DBEB)**: per ulteriori informazioni su DBEB, vedere [use directory based Edge Blocking to Reject messages sent to invalid recipients](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-directory-based-edge-blocking).
 
-  - **Accesso degli utenti finali alla quarantena**: per accedere ai messaggi in quarantena, i destinatari devono disporre di un ID utente e di una password validi nel servizio. Per ulteriori informazioni sulla quarantena, vedere [trovare e rilasciare i messaggi in quarantena come utente](https://docs.microsoft.com/microsoft-365/security/office-365-security/find-and-release-quarantined-messages-as-a-user).
+  - **Accesso degli utenti finali alla quarantena**: per accedere ai messaggi in quarantena, i destinatari devono disporre di un ID utente e di una password validi nel servizio. Per ulteriori informazioni sulla quarantena, vedere [trovare e rilasciare i messaggi in quarantena come utente](find-and-release-quarantined-messages-as-a-user.md).
 
   - **Regole del flusso di posta (note anche come regole di trasporto)**: quando si utilizza la sincronizzazione della directory, gli utenti e i gruppi di Active Directory esistenti vengono caricati automaticamente nel cloud ed è quindi possibile creare le regole del flusso di posta che devono essere indirizzate a utenti e/o gruppi specifici senza dover aggiungerle manualmente nel servizio. Si noti che non è possibile sincronizzare i [gruppi di distribuzione dinamici](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-dynamic-distribution-groups/manage-dynamic-distribution-groups) tramite la sincronizzazione delle directory.
 

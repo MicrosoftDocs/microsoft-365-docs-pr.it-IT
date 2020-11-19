@@ -19,18 +19,18 @@ ms.collection:
 - m365initiative-defender-office365
 - seo-marvel-apr2020
 description: Gli amministratori possono conoscere la funzionalità allegati sicuri in Microsoft Defender per Office 365.
-ms.openlocfilehash: d758db46f53be46d8213794f90bf8c462f9135e8
-ms.sourcegitcommit: 9546708a5506fdbadbfe2500cbf1bd1aeaec6fcb
+ms.openlocfilehash: da3949a4520c52c7f5685efd109f8c976305ea06
+ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "49020952"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49357214"
 ---
 # <a name="safe-attachments-in-microsoft-defender-for-office-365"></a>Allegati sicuri in Microsoft Defender per Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
-Gli allegati sicuri in [Microsoft Defender per Office 365](office-365-atp.md) offrono un ulteriore livello di protezione per gli allegati di posta elettronica che sono già stati analizzati dalla [protezione antimalware in Exchange Online Protection (EOP)](anti-malware-protection.md). In particolare, gli allegati sicuri utilizzano un ambiente virtuale per controllare gli allegati nei messaggi di posta elettronica prima di essere recapitati ai destinatari (processo noto come _detonazione_ ).
+Gli allegati sicuri in [Microsoft Defender per Office 365](office-365-atp.md) offrono un ulteriore livello di protezione per gli allegati di posta elettronica che sono già stati analizzati dalla [protezione antimalware in Exchange Online Protection (EOP)](anti-malware-protection.md). In particolare, gli allegati sicuri utilizzano un ambiente virtuale per controllare gli allegati nei messaggi di posta elettronica prima di essere recapitati ai destinatari (processo noto come _detonazione_).
 
 Protezione degli allegati sicuri per i messaggi di posta elettronica è controllata da criteri allegati sicuri. Non esiste alcun criterio di allegati sicuri predefinito, **per ottenere la protezione degli allegati sicuri, è necessario creare uno o più criteri per gli allegati sicuri**. Per istruzioni, vedere [configurare i criteri per gli allegati sicuri in Defender per Office 365](set-up-atp-safe-attachments-policies.md).
 
@@ -59,7 +59,7 @@ L'analisi degli allegati sicuri si verifica nella stessa area in cui si trovano 
 
 In questa sezione vengono descritte le impostazioni dei criteri allegati sicuri:
 
-- **Risposta malware per gli allegati sicuri** : questa impostazione consente di controllare l'azione per gli allegati sicuri che analizzano i messaggi di posta elettronica. Le opzioni disponibili sono descritte nella tabella seguente:
+- **Risposta malware per gli allegati sicuri**: questa impostazione consente di controllare l'azione per gli allegati sicuri che analizzano i messaggi di posta elettronica. Le opzioni disponibili sono descritte nella tabella seguente:
 
   ****
 
@@ -69,24 +69,24 @@ In questa sezione vengono descritte le impostazioni dei criteri allegati sicuri:
   |**Monitor**|Recapita messaggi con allegati e quindi tiene traccia di cosa accade con malware rilevato. <p> Il recapito dei messaggi sicuri potrebbe essere ritardato a causa dell'analisi degli allegati sicuri.|Vedere dove il malware rilevato entra nell'organizzazione.|
   |**Blocca**|Impedisce la recapito dei messaggi con allegati malware rilevati. <p> I messaggi vengono [messi in quarantena](manage-quarantined-messages-and-files.md) se solo gli amministratori (non gli utenti finali) possono esaminare, rilasciare o eliminare i messaggi. <p> Blocca automaticamente le istanze future dei messaggi e degli allegati. <p> Il recapito dei messaggi sicuri potrebbe essere ritardato a causa dell'analisi degli allegati sicuri.|Protegge l'organizzazione da attacchi ripetuti con gli stessi allegati di malware. <p> Questo è il valore predefinito e il valore consigliato nei [criteri di sicurezza preimpostati](preset-security-policies.md)standard e rigorosi.|
   |**Sostituisce**|Rimuove gli allegati di malware rilevati. <p> Notifica ai destinatari che gli allegati sono stati rimossi. <p>  I messaggi vengono [messi in quarantena](manage-quarantined-messages-and-files.md) se solo gli amministratori (non gli utenti finali) possono esaminare, rilasciare o eliminare i messaggi. <p> Il recapito dei messaggi sicuri potrebbe essere ritardato a causa dell'analisi degli allegati sicuri.|Aumentare la visibilità ai destinatari che gli allegati sono stati rimossi a causa del malware rilevato.|
-  |**Recapito dinamico**|Recapita immediatamente i messaggi, ma sostituisce gli allegati con i segnaposto fino al completamento dell'analisi degli allegati sicuri. <p> Per informazioni dettagliate, vedere la sezione criteri per il [recapito dinamico in allegati sicuri](#dynamic-delivery-in-safe-attachments-policies) più avanti in questo argomento.|Evitare ritardi nei messaggi durante la protezione dei destinatari da file dannosi <br/> <br/> Abilitazione dei destinatari all'anteprima degli allegati in modalità provvisoria durante la scansione|
+  |**Recapito dinamico**|Recapita immediatamente i messaggi, ma sostituisce gli allegati con i segnaposto fino al completamento dell'analisi degli allegati sicuri. <p> Per informazioni dettagliate, vedere la sezione criteri per il [recapito dinamico in allegati sicuri](#dynamic-delivery-in-safe-attachments-policies) più avanti in questo argomento.|Evitare ritardi nei messaggi durante la protezione dei destinatari da file dannosi. <p> Consente ai destinatari di visualizzare in anteprima gli allegati in modalità provvisoria durante l'analisi.|
   |
 
-- **Redirect Attachment on Detection: Enable redirect** and **Send the attachment to the indirizzo di posta elettronica seguente** : per le azioni **blocca** , **monitora** o **Sostituisci** , invia messaggi che contengono allegati di malware all'indirizzo di posta elettronica interno o esterno specificato per l'analisi e l'indagine.
+- **Redirect Attachment on Detection: Enable redirect** and **Send the attachment to the indirizzo di posta elettronica seguente**: per le azioni **blocca**, **monitora** o **Sostituisci** , invia messaggi che contengono allegati di malware all'indirizzo di posta elettronica interno o esterno specificato per l'analisi e l'indagine.
 
   La raccomandazione per le impostazioni dei criteri standard e rigorosa consiste nell'abilitare il reindirizzamento. Per ulteriori informazioni, vedere [impostazioni degli allegati sicuri](recommended-settings-for-eop-and-office365-atp.md#safe-attachments-settings).
 
 - **Applicare la selezione precedente se la ricerca di malware per gli allegati** non è stata eseguita o si verifica un errore: l'azione specificata dalla **risposta malware Unknown Attachments** è presa sui messaggi anche quando l'analisi degli allegati sicuri non può essere completata. Selezionare sempre questa opzione se si seleziona **Abilita reindirizzamento**. In caso contrario, è possibile che i messaggi vengano persi.
 
-- **Filtri destinatario** : è necessario specificare le condizioni del destinatario e le eccezioni che determinano gli utenti a cui si applica il criterio. È possibile utilizzare queste proprietà per le condizioni e le eccezioni:
+- **Filtri destinatario**: è necessario specificare le condizioni del destinatario e le eccezioni che determinano gli utenti a cui si applica il criterio. È possibile utilizzare queste proprietà per le condizioni e le eccezioni:
 
   - **Il destinatario è**
   - **Il dominio del destinatario è**
   - **Il destinatario è un membro di**
 
-  È possibile utilizzare solo un'eccezione una volta, ma la condizione o l'eccezione può contenere più valori. Più valori della stessa condizione o eccezione utilizzano la logica OR (ad esempio, _\<recipient1\>_ o _\<recipient2\>_ ). Condizioni o eccezioni diverse utilizzano la logica AND (ad esempio, _\<recipient1\>_ e _\<member of group 1\>_ ).
+  È possibile utilizzare solo un'eccezione una volta, ma la condizione o l'eccezione può contenere più valori. Più valori della stessa condizione o eccezione utilizzano la logica OR (ad esempio, _\<recipient1\>_ o _\<recipient2\>_). Condizioni o eccezioni diverse utilizzano la logica AND (ad esempio, _\<recipient1\>_ e _\<member of group 1\>_).
 
-- **Priorità** : se si creano più criteri, è possibile specificare l'ordine in cui sono stati applicati. Nessun criterio può avere la stessa priorità e l'elaborazione dei criteri termina dopo l'applicazione del primo criterio.
+- **Priorità**: se si creano più criteri, è possibile specificare l'ordine in cui sono stati applicati. Nessun criterio può avere la stessa priorità e l'elaborazione dei criteri termina dopo l'applicazione del primo criterio.
 
   Per altre informazioni sull'ordine di precedenza e su come vengono valutati e applicati multipli criteri, vedere [Ordine e precedenza della protezione della posta elettronica](how-policies-and-protections-are-combined.md).
 

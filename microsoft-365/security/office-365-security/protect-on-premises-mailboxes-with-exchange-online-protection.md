@@ -21,12 +21,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Gli amministratori in Cina che utilizzano Office 365 gestito da 21Vianet possono imparare a usare standalone Exchange Online Protection (EOP) per proteggere le cassette postali locali.
-ms.openlocfilehash: eb17b25db93aa50c6c390b5f79cdbd707762a0f9
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 9b91abec8d258df2b549cee1d538d2f65d2974ab
+ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48202484"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49356896"
 ---
 # <a name="protect-on-premises-mailboxes-in-china-with-standalone-eop"></a>Proteggere caselle di posta elettronica locali in Cina con Exchange Online Protection autonomo
 
@@ -36,7 +36,7 @@ ms.locfileid: "48202484"
 > [!NOTE]
 > Questo articolo si applica solo a Office 365 gestito da 21Vianet in Cina.
 
-Anche se si prevede di ospitare alcune o tutte le cassette postali locali, è comunque possibile proteggere le cassette postali con Exchange Online Protection (EOP). Per configurare i connettori, è necessario che l'account sia un amministratore globale o che sia membro di Exchange Company Administrator (gruppo di ruoli di gestione dell'organizzazione). Per informazioni su come le autorizzazioni di Office 365 riguardano le autorizzazioni di Exchange, vedere [assegnazione di ruoli di amministratore in Office 365 gestito da 21ViaNet](https://docs.microsoft.com/microsoft-365/admin/add-users/assign-admin-roles?view=o365-21vianet). Se tutte le cassette postali di Exchange sono in locale, attenersi alla procedura seguente per configurare il servizio EOP.
+Anche se si prevede di ospitare alcune o tutte le cassette postali locali, è comunque possibile proteggere le cassette postali con Exchange Online Protection (EOP). Per configurare i connettori, è necessario che l'account sia un amministratore globale o che sia membro di Exchange Company Administrator (gruppo di ruoli di gestione dell'organizzazione). Per informazioni su come le autorizzazioni di Office 365 riguardano le autorizzazioni di Exchange, vedere [assegnazione di ruoli di amministratore in Office 365 gestito da 21ViaNet](https://docs.microsoft.com/microsoft-365/admin/add-users/assign-admin-roles?view=o365-21vianet&preserve-view=true). Se tutte le cassette postali di Exchange sono in locale, attenersi alla procedura seguente per configurare il servizio EOP.
 
 ## <a name="step-1-use-the-microsoft-365-admin-center-to-add-and-verify-your-domain"></a>Passaggio 1: utilizzare l'interfaccia di amministrazione di Microsoft 365 per aggiungere e verificare il dominio
 
@@ -45,7 +45,7 @@ Anche se si prevede di ospitare alcune o tutte le cassette postali locali, è co
 2. Seguire la procedura descritta nel portale per aggiungere i record DNS applicabili al provider di hosting DNS per verificare la proprietà del dominio.
 
 > [!TIP]
-> [Aggiungere il dominio e gli utenti a office 365 gestito da 21ViaNet](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain?view=o365-21vianet) e [creare record dns per Office 365 quando si gestiscono i record DNS](https://docs.microsoft.com/microsoft-365/admin/services-in-china/create-dns-records-when-you-manage-your-dns-records?view=o365-21vianet) sono risorse utili da fare riferimento quando si aggiunge il dominio al servizio e si configura DNS.
+> [Aggiungere il dominio e gli utenti a office 365 gestito da 21ViaNet](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain?view=o365-21vianet&preserve-view=true) e [creare record dns per Office 365 quando si gestiscono i record DNS](https://docs.microsoft.com/microsoft-365/admin/services-in-china/create-dns-records-when-you-manage-your-dns-records?view=o365-21vianet&preserve-view=true) sono risorse utili da fare riferimento quando si aggiunge il dominio al servizio e si configura DNS.
 
 ### <a name="step-2-add-recipients-and-configure-the-domain-type"></a>Passaggio 2: aggiungere destinatari e configurare il tipo di dominio
 

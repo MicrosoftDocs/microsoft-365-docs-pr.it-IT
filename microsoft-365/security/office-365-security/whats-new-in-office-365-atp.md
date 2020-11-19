@@ -20,12 +20,12 @@ ms.topic: conceptual
 ms.date: 10/09/2020
 ms.custom: seo-marvel-apr2020
 ms.reviewer: vippand
-ms.openlocfilehash: 5aa1d5fe14f6213931e089c2f97fcf06c96397b3
-ms.sourcegitcommit: ce46d1bd67091d4ed0e2b776dfed55e2d88cdbf4
+ms.openlocfilehash: 01a5e374396b1f7ef79dff436cd9ecc4e0c4abf1
+ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49131150"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49357238"
 ---
 # <a name="whats-new-in-microsoft-defender-for-office-365"></a>Novità di Microsoft Defender per Office 365
 
@@ -41,11 +41,11 @@ In questo articolo vengono elencate le nuove funzionalità nell'ultima versione 
 > [!TIP]
 > Non si dispone ancora di Microsoft Defender per Office 365? [Contattare Sales per avviare una versione di valutazione](https://go.microsoft.com/fwlink/p/?LinkId=518644).
 
-## <a name="november-2020"></a>2020 novembre 
+## <a name="november-2020"></a>2020 novembre
 
 - Limiti di esportazione aggiornati in Review > Action Center > correzione dall'invio di posta e dal log azione (Defender per Office 365 piano 2)
 
-## <a name="septemberoctober-2020"></a>Settembre/ottobre 2020 
+## <a name="septemberoctober-2020"></a>Settembre/ottobre 2020
 
 - [Controllare i criteri utilizzando l'analizzatore di configurazione](configuration-analyzer-for-security-policies.md)
 - [Sostituisci manualmente i verdetti del filtro utilizzando l'elenco Consenti/blocca tenant](tenant-allow-block-list.md)
@@ -53,27 +53,27 @@ In questo articolo vengono elencate le nuove funzionalità nell'ultima versione 
 - Minacce all'URL di emersione in [Esplora minacce](threat-explorer.md#threats-in-urls) (malware, phishing, posta indesiderata o nessuno) (Defender per Office 365 piano 2)
 - [Miglioramenti alla funzionalità di ricerca di Esplora minacce](threat-explorer.md#improvements-to-threat-hunting-experience-upcoming) con aggiornamenti su minacce, azioni aggiuntive, posizioni di recapito e visualizzazione della sequenza temporale aggiornata (Defender per Office 365 piano 2)
 
-## <a name="julyaugust-2020"></a>Luglio/agosto 2020 
+## <a name="julyaugust-2020"></a>Luglio/agosto 2020
 
 - [Miglioramenti dell'esperienza di caccia](threat-explorer.md#experience-improvements-to-threat-explorer-and-real-time-detections) (Microsoft Defender per Office 365 piano 1 o piano 2)
 - [Applicare facilmente le impostazioni consigliate utilizzando i criteri di sicurezza predefiniti](preset-security-policies.md) 
 
 ## <a name="marchapril-2020"></a>Marzo/aprile 2020
 
-- La possibilità di [gestire gli account utente compromessi con l'analisi e la risposta automatizzata](https://docs.microsoft.com/microsoft-365/security/office-365-security/address-compromised-users-quickly?view=o365-worldwide) è ora generalmente disponibile. (Microsoft Defender per Office 365 piano 2)
+- La possibilità di [gestire gli account utente compromessi con l'analisi e la risposta automatizzata](address-compromised-users-quickly.md) è ora generalmente disponibile. (Microsoft Defender per Office 365 piano 2)
 
 ## <a name="januaryfebruary-2020"></a>Gennaio/febbraio 2020
 
 - [Disponibilità generale delle visualizzazioni della campagna in Microsoft Defender per office 365](campaigns.md) (Microsoft Defender per Office 365 piano 2)
 - Miglioramenti a [Threat Explorer](threat-explorer.md) per consentire ai team di operazioni di sicurezza di eseguire ricerche e filtrare su più campi durante l' [analisi della posta elettronica](investigate-malicious-email-that-was-delivered.md): (Microsoft Defender per Office 365 piano 2)
-    - Percorso di recapito e azioni speciali
-    - Direzionalità (in ingresso, in uscita o intra-org)
-    - Advanced NOT Filters (queste sono le opzioni di filtro avanzate che includono non contiene, non include, ecc.)
-    - Filtri temporali granulari (giorno, ora, mezz'ora) 
+  - Percorso di recapito e azioni speciali
+  - Direzionalità (in ingresso, in uscita o intra-org)
+  - Advanced NOT Filters (queste sono le opzioni di filtro avanzate che includono non contiene, non include, ecc.)
+  - Filtri temporali granulari (giorno, ora, mezz'ora)
 
 - Il widget **eventi** non consentiti è ora il widget **Centro azioni** . Per visualizzare i widget di sicurezza, nel centro sicurezza & conformità, accedere a **gestione minacce**  >  **Revisione**.) (Microsoft Defender per Office 365 piano 2)
 
-- [Documenti attendibili in Microsoft 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/safe-docs) **(anteprima)**
+- [Documenti attendibili in Microsoft 365](safe-docs.md) **(anteprima)**
 
 ## <a name="december-2019"></a>Dicembre 2019
 

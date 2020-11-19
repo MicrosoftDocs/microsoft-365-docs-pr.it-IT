@@ -16,12 +16,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Per ulteriori informazioni sull'impostazione sicura per impostazione predefinita in Exchange Online Protection (EOP)
-ms.openlocfilehash: 9f676dcd89f0322792bd40e06879b9758082d94e
-ms.sourcegitcommit: ce46d1bd67091d4ed0e2b776dfed55e2d88cdbf4
+ms.openlocfilehash: 23c0cad2b96b3a2002f235db7739b903cf862366
+ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49131098"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49357864"
 ---
 # <a name="secure-by-default-in-office-365"></a>Protezione per impostazione predefinita in Office 365
 
@@ -47,7 +47,7 @@ Poiché Microsoft desidera mantenere i clienti sicuri per impostazione predefini
 - Mittenti attendibili di Outlook
 - Elenco indirizzi IP consentiti (filtro connessioni)
 
-Per ulteriori informazioni su tali sostituzioni, vedere [creare elenchi di mittenti attendibili](https://docs.microsoft.com/microsoft-365/security/office-365-security/create-safe-sender-lists-in-office-365).
+Per ulteriori informazioni su tali sostituzioni, vedere [creare elenchi di mittenti attendibili](create-safe-sender-lists-in-office-365.md).
 
 Sicuro per impostazione predefinita qui non è un'impostazione che potrebbe essere attivata o disattivata, ma il modo in cui il filtro funziona fuori dalla casella per mantenere i messaggi potenzialmente pericolosi o indesiderati fuori dalle cassette postali. Per la quarantena, è necessario inviare malware e phishing con elevata sicurezza. Solo gli amministratori possono gestire i messaggi che sono stati messi in quarantena come malware o phishing con elevato livello di sicurezza e possono anche segnalare falsi positivi a Microsoft da qui. Per ulteriori informazioni, vedere [gestire i messaggi e i file in quarantena come amministratore in EOP](manage-quarantined-messages-and-files.md)
 

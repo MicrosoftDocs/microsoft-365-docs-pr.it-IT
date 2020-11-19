@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-m365-defender
 description: Gli amministratori possono acquisire informazioni sulla protezione dalle minacce in Microsoft 365 e configurare come utilizzarla per l'organizzazione.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f6ac5b67d589db57d449ba61f07668b10b32706d
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: d80e81ab5648d186bb72f29acc010442877aba7c
+ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48845721"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49356680"
 ---
 # <a name="protect-against-threats"></a>Protezione dalle minacce
 
@@ -43,14 +43,14 @@ Di seguito viene illustrata una guida introduttiva che interrompe la configurazi
 Le funzionalità di protezione dalle minacce sono incluse in *tutte le* sottoscrizioni Microsoft o Office 365. Tuttavia, alcuni abbonamenti dispongono di funzionalità avanzate. Nella tabella seguente sono elencate le funzionalità di protezione incluse in questo articolo, insieme ai requisiti minimi di sottoscrizione.
 
 > [!TIP]
-> Si noti che, oltre le istruzioni per attivare il controllo, i *passaggi* avviano anti-malware, anti-phishing e anti-spam, contrassegnati come parte di Office 365 Exchange Online Protection ( **EOP** ). Questo può sembrare dispari in un articolo di Defender per Office 365, finché non viene ricordato ( **Defender per office 365** ) contiene e si basa su EOP.
+> Si noti che, oltre le istruzioni per attivare il controllo, i *passaggi* avviano anti-malware, anti-phishing e anti-spam, contrassegnati come parte di Office 365 Exchange Online Protection (**EOP**). Questo può sembrare dispari in un articolo di Defender per Office 365, finché non viene ricordato (**Defender per office 365**) contiene e si basa su EOP.
 
 ****
 
 |Tipo di protezione|Requisito di sottoscrizione|
 |---|---|
 |Registrazione di controllo (ai fini dei rapporti)|[Exchange Online](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-service-description)|
-|Protezione anti-malware|[Exchange Online Protection](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description) ( **EOP** )|
+|Protezione anti-malware|[Exchange Online Protection](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description) (**EOP**)|
 |Protezione anti-phishing|[EOP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)|
 |Protezione dalla posta indesiderata|[EOP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)|
 |Spurgo automatico zero-hour (per la posta elettronica)|[EOP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)|
@@ -139,7 +139,7 @@ La [protezione da posta indesiderata](anti-spam-protection.md) è disponibile in
 
 2. Nella scheda **personalizzato** , attiva impostazioni personalizzate.
 
-3. Espandere **criteri di filtro della posta indesiderata predefiniti** , fare clic su **modifica criteri** e quindi specificare le impostazioni seguenti:
+3. Espandere **criteri di filtro della posta indesiderata predefiniti**, fare clic su **modifica criteri** e quindi specificare le impostazioni seguenti:
 
    - Nella sezione **azioni di posta indesiderata e di massa** impostare la soglia su un valore pari a 5 o 6.
 
@@ -169,7 +169,7 @@ Per configurare gli [allegati sicuri](atp-safe-attachments.md), creare almeno un
 
      Fare clic su **Avanti**.
 
-3. Nella pagina **applicato a** , fare clic su **Aggiungi una condizione** , **scegliere applicato se: il dominio del destinatario è** , fare clic su **Aggiungi** , selezionare il dominio o i domini, fare clic su **Aggiungi** , fare clic su **fine** e quindi su **Avanti**.
+3. Nella pagina **applicato a** , fare clic su **Aggiungi una condizione**, **scegliere applicato se: il dominio del destinatario è**, fare clic su **Aggiungi**, selezionare il dominio o i domini, fare clic su **Aggiungi**, fare clic su **fine** e quindi su **Avanti**.
 
 4. Rivedere le impostazioni e quindi fare clic su **fine**.
 
@@ -180,8 +180,8 @@ Per configurare i [collegamenti sicuri](atp-safe-links.md), esaminare e modifica
 1. Nel [Centro sicurezza & conformità](https://protection.office.com)scegliere criteri di **gestione dei**  >  **Policy**  >  **collegamenti sicuri ATP** e quindi fare clic su **Impostazioni globali** e quindi configurare le impostazioni seguenti:
 
    - Verificare l' **utilizzo di collegamenti sicuri in: le applicazioni di Office 365** sono attivate: ![ Attiva/disattiva ](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png) .
-   - **Non monitorare quando gli utenti fanno clic su collegamenti sicuri** : disattivare questa impostazione per tener conto degli scatti degli utenti: ![ disattivazione ](../../media/scc-toggle-off.png) .
-   - **Non consentire agli utenti di fare clic su collegamenti sicuri con l'URL originale** : verificare che questa impostazione sia attivata: ![ Attiva/disattiva ](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png) .
+   - **Non monitorare quando gli utenti fanno clic su collegamenti sicuri**: disattivare questa impostazione per tener conto degli scatti degli utenti: ![ disattivazione ](../../media/scc-toggle-off.png) .
+   - **Non consentire agli utenti di fare clic su collegamenti sicuri con l'URL originale**: verificare che questa impostazione sia attivata: ![ Attiva/disattiva ](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png) .
 
    Al termine, scegliere **Salva**.
 
@@ -201,7 +201,7 @@ Per configurare i [collegamenti sicuri](atp-safe-links.md), esaminare e modifica
 
      Fare clic su **Avanti**.
 
-4. Nella pagina **applicato a** , fare clic su **Aggiungi una condizione** , **scegliere applicato se: il dominio del destinatario è** , fare clic su **Aggiungi** , selezionare il dominio o i domini, fare clic su **Aggiungi** , fare clic su **fine** e quindi su **Avanti**.
+4. Nella pagina **applicato a** , fare clic su **Aggiungi una condizione**, **scegliere applicato se: il dominio del destinatario è**, fare clic su **Aggiungi**, selezionare il dominio o i domini, fare clic su **Aggiungi**, fare clic su **fine** e quindi su **Avanti**.
 
 5. Rivedere le impostazioni e quindi fare clic su **fine**.
 
@@ -209,7 +209,7 @@ Per altre informazioni, vedere [Configurare i criteri Collegamenti sicuri](set-u
 
 ## <a name="part-5---verify-atp-for-sharepoint-onedrive-and-microsoft-teams-is-turned-on"></a>Parte 5-verificare che ATP per SharePoint, OneDrive e Microsoft teams sia attivato
 
-Carichi di lavoro come SharePoint, OneDrive e teams sono stati creati per la collaborazione. L'utilizzo di Defender per Office 365 contribuisce al blocco e al rilevamento dei file identificati come dannosi nei siti e nelle raccolte documenti del team. È possibile leggere altre informazioni su come funziona [qui](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-for-spo-odb-and-teams).
+Carichi di lavoro come SharePoint, OneDrive e teams sono stati creati per la collaborazione. L'utilizzo di Defender per Office 365 contribuisce al blocco e al rilevamento dei file identificati come dannosi nei siti e nelle raccolte documenti del team. È possibile leggere altre informazioni su come funziona [qui](atp-for-spo-odb-and-teams.md).
 
 > [!IMPORTANT]
 > **Prima di iniziare questa procedura, verificare che la registrazione di controllo sia già attiva per l'ambiente Microsoft 365**. Questa operazione viene in genere fatta da una persona a cui è stato assegnato il ruolo registri di controllo in Exchange Online. Per ulteriori informazioni, vedere [attivazione o disattivazione della ricerca nel registro di controllo](../../compliance/turn-audit-log-search-on-or-off.md).

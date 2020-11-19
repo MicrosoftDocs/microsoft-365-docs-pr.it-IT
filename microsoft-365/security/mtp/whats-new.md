@@ -17,17 +17,19 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: conceptual
-ms.openlocfilehash: 5214f7c399ab511ec16231e4dda97a2c33b37668
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: ade93bf8c89077c117ada764478cc74f4a5f14cc
+ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48844705"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49357320"
 ---
 # <a name="whats-new-in-microsoft-365-defender"></a>Novità di Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
+> Vuoi provare Microsoft 365 Defender? È possibile [valutarla in un ambiente lab](https://aka.ms/mtp-trial-lab) o [eseguire il progetto pilota in produzione](https://aka.ms/m365d-pilotplaybook).
+>
 
 Le caratteristiche seguenti sono generalmente disponibili (GA) nella versione più recente di Microsoft 365 Defender.
 
@@ -35,6 +37,9 @@ Feed RSS: ricevere una notifica quando questa pagina viene aggiornata copiando e
 ```http
 https://docs.microsoft.com/api/search/rss?search=%22Lists+the+new+features+and+functionality+in+Microsoft+Threat+Protection%22&locale=en-us
 ```
+> Vuoi provare Microsoft 365 Defender? È possibile [valutarla in un ambiente lab](https://aka.ms/mtp-trial-lab) o [eseguire il progetto pilota in produzione](https://aka.ms/m365d-pilotplaybook)
+>
+
 ## <a name="september-2020"></a>Settembre 2020
 - [Tabella IdentityDirectoryEvents](advanced-hunting-identitydirectoryevents-table.md) <br> Individuare gli eventi che coinvolgono un controller di dominio locale che esegue Active Directory (AD). Questa tabella dello schema di [caccia avanzata](advanced-hunting-overview.md) copre una serie di eventi correlati all'identità e di eventi di sistema nel controller di dominio.
 - [Funzione AssignedIPAddresses ()](advanced-hunting-assignedipaddresses-function.md) <br> Utilizzare questa funzione nelle query di caccia avanzate per ottenere rapidamente gli indirizzi IP più recenti assegnati a un dispositivo o gli indirizzi IP più recenti da un determinato periodo di tempo.

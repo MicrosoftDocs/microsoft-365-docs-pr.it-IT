@@ -11,12 +11,12 @@ ms.service: exchange-online
 localization_priority: Normal
 ms.assetid: ''
 description: Gli amministratori possono scoprire come utilizzare i nuovi utenti per l'inoltro della posta elettronica nel centro sicurezza & Compliance per esaminare quando gli utenti dell'organizzazione stanno inoltrando i messaggi ai nuovi domini.
-ms.openlocfilehash: af66a84efbd4c0b8f1ccdacf4b71d1caca1c3929
-ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
+ms.openlocfilehash: 22bbd762b221fae151a489aa1e9485dfc7baf06a
+ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48877526"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49357274"
 ---
 # <a name="new-users-forwarding-email-insight-in-the-security--compliance-center"></a>Nuovi utenti che inoltrano informazioni sulla posta elettronica nel centro sicurezza & Compliance
 
@@ -25,7 +25,7 @@ ms.locfileid: "48877526"
 
 È sospetto che i nuovi account utente dell'organizzazione inizino improvvisamente a inoltrare messaggi di posta elettronica ai domini esterni.
 
-I **nuovi domini che vengono inoltrati tramite posta elettronica** nel [Centro sicurezza & Compliance](https://protection.office.com) notifica quando gli utenti appena creati nell'organizzazione stanno inoltrando i messaggi a domini esterni. Questa condizione potrebbe indicare che sono stati utilizzati account di amministrazione compromessi per creare i nuovi utenti. Se si sospetta che gli account siano stati compromessi, vedere [rispondere a un account di posta elettronica compromesso](https://docs.microsoft.com/microsoft-365/security/office-365-security/responding-to-a-compromised-email-account).
+I **nuovi domini che vengono inoltrati tramite posta elettronica** nel [Centro sicurezza & Compliance](https://protection.office.com) notifica quando gli utenti appena creati nell'organizzazione stanno inoltrando i messaggi a domini esterni. Questa condizione potrebbe indicare che sono stati utilizzati account di amministrazione compromessi per creare i nuovi utenti. Se si sospetta che gli account siano stati compromessi, vedere [rispondere a un account di posta elettronica compromesso](responding-to-a-compromised-email-account.md).
 
 Questa intuizione viene visualizzata solo quando il problema viene rilevato e viene visualizzato nella pagina del [rapporto di inoltro](view-mail-flow-reports.md#forwarding-report) .
 
@@ -59,11 +59,11 @@ Questo report non è disponibile direttamente nel [Dashboard del flusso di posta
 
 Nella visualizzazione report sono disponibili i grafici seguenti:
 
-- **Mostra dati per: nuovi utenti di inoltro** :
+- **Mostra dati per: nuovi utenti di inoltro**:
 
   ![Visualizzazione di nuovi utenti di inoltro nel rapporto modifiche di inoltro](../../media/forwarding-modifications-report-new-forwarding-users.png)
 
-- **Mostra dati per: nuovi domini di inoltro** :
+- **Mostra dati per: nuovi domini di inoltro**:
 
   ![Nuova visualizzazione domini inoltrati nel rapporto modifiche di inoltro](../../media/forwarding-modifications-report-new-forwarded-domains.png)
 
@@ -71,20 +71,20 @@ Se si fa clic su **filtri** in una visualizzazione report, è possibile specific
 
 ### <a name="details-table-view-for-the-forwarding-modifications-report"></a>Visualizzazione tabella dettagli per il report modifiche di inoltro
 
-Se si fa clic su **Visualizza tabella dettagli** , le informazioni visualizzate dipendono dal grafico che si sta esaminando:
+Se si fa clic su **Visualizza tabella dettagli**, le informazioni visualizzate dipendono dal grafico che si sta esaminando:
 
-- **Mostra dati per: nuovi utenti di inoltro** :
+- **Mostra dati per: nuovi utenti di inoltro**:
 
-  - **Nome** : l'indirizzo di posta elettronica del mittente.
+  - **Nome**: l'indirizzo di posta elettronica del mittente.
   - **Tipo di inoltro**
   - **Indirizzo del destinatario**
   - **Dettagli**
   - **Numero**
   - **Prima data di inoltro**
 
-- **Mostra dati per: nuovi domini di inoltro** :
+- **Mostra dati per: nuovi domini di inoltro**:
 
-  - **Nome** : il dominio di posta elettronica del mittente.
+  - **Nome**: il dominio di posta elettronica del mittente.
   - **Tipo di inoltro**
   - **Indirizzo del destinatario**
   - **Dettagli**
@@ -95,13 +95,13 @@ Se si fa clic su **filtri** in una visualizzazione tabella dettagli, è possibil
 
 Se si seleziona una riga dalla tabella, verrà visualizzato un riquadro a comparsa **Dettagli** con le informazioni seguenti:
 
-- **Nome** : questo è l'indirizzo di posta elettronica del mittente (da Mostra **dati per: nuova visualizzazione utenti di inoltro** ) o il dominio di posta elettronica del mittente (da Mostra **dati per: nuova visualizzazione domini di inoltro** ).
+- **Nome**: questo è l'indirizzo di posta elettronica del mittente (da Mostra **dati per: nuova visualizzazione utenti di inoltro** ) o il dominio di posta elettronica del mittente (da Mostra **dati per: nuova visualizzazione domini di inoltro** ).
 - **Tipo di inoltro**
 - **Destinatario**
 - **Dettagli**
 - **Numero**
 - **Data di inizio**
-- **Suggerimento** : da qui, è possibile fare clic sul collegamento per gestire l'utente nell'interfaccia di amministrazione di Microsoft 365.
+- **Suggerimento**: da qui, è possibile fare clic sul collegamento per gestire l'utente nell'interfaccia di amministrazione di Microsoft 365.
 
 ![Riquadro a comparsa dettagli dalla tabella dei dettagli della nuova visualizzazione utenti di inoltro nel rapporto modifiche di inoltro](../../media/mfi-forwarding-modifications-report-new-forwarding-users-view-details-table-details.png)
 

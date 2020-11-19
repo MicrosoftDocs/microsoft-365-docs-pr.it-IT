@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 627791e9dc3d4bf18047a05734a4e275152d19da
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: bab055036a8e7fdcf88329413c9fd86269af2aaa
+ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48845033"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49357222"
 ---
 # <a name="proactively-hunt-for-threats-with-advanced-hunting-in-microsoft-365-defender"></a>Caccia proattivamente per minacce con caccia avanzata in Microsoft 365 Defender
 
@@ -34,6 +34,9 @@ ms.locfileid: "48845033"
 
 **Si applica a:**
 - Microsoft 365 Defender
+
+> Vuoi provare Microsoft 365 Defender? È possibile [valutarla in un ambiente lab](https://aka.ms/mtp-trial-lab) o [eseguire il progetto pilota in produzione](https://aka.ms/m365d-pilotplaybook).
+>
 
 La ricerca avanzata è uno strumento di ricerca delle minacce basato sulla query che permette di esplorare dati non elaborati fino a 30 giorni. È possibile ispezionare in modo proattivo gli eventi della rete per individuare gli indicatori e le entità delle minacce. L'accesso flessibile ai dati consente di abilitare la ricerca non vincolata per minacce note e potenziali.
 <p></p>
@@ -44,7 +47,7 @@ La ricerca avanzata è uno strumento di ricerca delle minacce basato sulla query
 
 Questa funzionalità è simile alla [ricerca avanzata in Microsoft Defender per endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview). Disponibile in Microsoft 365 Security Center, questa funzionalità supporta le query che controllano un set di dati più ampio da:
 
-- Microsoft Defender ATP
+- Microsoft Defender per endpoint
 - Microsoft Defender per Office 365
 - Microsoft Cloud App Security
 - Microsoft Defender per identità
@@ -70,8 +73,8 @@ Per utilizzare la ricerca avanzata o altre funzionalità di [Microsoft 365 Defen
 ## <a name="data-freshness-and-update-frequency"></a>Aggiornamento dei dati e frequenza degli aggiornamenti
 I dati di caccia avanzati possono essere categorizzati in due tipi distinti, ognuno consolidati in modo diverso.
 
-- **Dati relativi a eventi o attività** : popola le tabelle relative agli avvisi, agli eventi di sicurezza, agli eventi di sistema e alle valutazioni di routine. La ricerca avanzata riceve questi dati quasi subito dopo che i sensori che li raccolgono li trasmettono correttamente ai servizi cloud corrispondenti. Ad esempio, è possibile eseguire query sui dati di eventi da sensori integri su workstation o controller di dominio quasi immediatamente dopo che sono disponibili in Microsoft Defender per endpoint e Microsoft Defender per Identity.
-- **Dati entità** : popola le tabelle con informazioni su utenti e dispositivi. Questi dati provengono da origini dati relativamente statiche e da origini dinamiche, ad esempio voci di Active Directory e registri eventi. Per fornire dati aggiornati, le tabelle vengono aggiornate con tutte le nuove informazioni ogni 15 minuti, aggiungendo righe che potrebbero non essere completamente popolate. Ogni 24 ore, i dati vengono consolidati per inserire un record che contiene il set di dati più recente e completo su ogni entità.
+- **Dati relativi a eventi o attività**: popola le tabelle relative agli avvisi, agli eventi di sicurezza, agli eventi di sistema e alle valutazioni di routine. La ricerca avanzata riceve questi dati quasi subito dopo che i sensori che li raccolgono li trasmettono correttamente ai servizi cloud corrispondenti. Ad esempio, è possibile eseguire query sui dati di eventi da sensori integri su workstation o controller di dominio quasi immediatamente dopo che sono disponibili in Microsoft Defender per endpoint e Microsoft Defender per Identity.
+- **Dati entità**: popola le tabelle con informazioni su utenti e dispositivi. Questi dati provengono da origini dati relativamente statiche e da origini dinamiche, ad esempio voci di Active Directory e registri eventi. Per fornire dati aggiornati, le tabelle vengono aggiornate con tutte le nuove informazioni ogni 15 minuti, aggiungendo righe che potrebbero non essere completamente popolate. Ogni 24 ore, i dati vengono consolidati per inserire un record che contiene il set di dati più recente e completo su ogni entità.
 
 ## <a name="time-zone"></a>Fuso orario
 Le informazioni temporali nella ricerca avanzata sono nel fuso orario UTC.

@@ -21,12 +21,12 @@ description: Vedere come funzionano le funzionalità di analisi e risposta autom
 ms.custom:
 - air
 - seo-marvel-mar2020
-ms.openlocfilehash: 039cca2f6f61d7c82f8c3e85f1fd147a68f84b68
-ms.sourcegitcommit: c84cceb07e748969723a31b350e37f3ec79255ab
+ms.openlocfilehash: b901585f0a25c51c377e974c56faffe560eab5f3
+ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "48948434"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49357672"
 ---
 # <a name="how-automated-investigation-and-response-works-in-microsoft-defender-for-office-365"></a>Come funziona l'analisi e la risposta automatizzata in Microsoft Defender per Office 365
 
@@ -97,4 +97,4 @@ Ad esempio, di recente, un'organizzazione ha configurato un modo per il team del
 
 - [Visitare la roadmap di Microsoft 365 per vedere cosa è stato pianificato e rilasciarlo presto](https://www.microsoft.com/microsoft-365/roadmap?filters=)
 
-- [Informazioni sulle funzionalità di analisi e risposta automatizzate in Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-autoir?view=o365-worldwide&preserve-view=true)
+- [Informazioni sulle funzionalità di analisi e risposta automatizzate in Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-autoir)

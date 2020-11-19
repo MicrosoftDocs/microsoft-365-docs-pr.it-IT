@@ -21,12 +21,12 @@ ms.topic: conceptual
 ms.custom: autoir
 ms.date: 09/16/2020
 ms.reviewer: evaldm, isco
-ms.openlocfilehash: d17bd49206bcdef9f60a4873c642179165753887
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 2b8872288291adc0b9fc5e1c1541f885711df230
+ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48843685"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49356704"
 ---
 # <a name="automated-investigation-and-response-in-microsoft-365-defender"></a>Analisi e risposta automatizzate in Microsoft 365 Defender
 
@@ -35,6 +35,9 @@ ms.locfileid: "48843685"
 
 **Si applica a:**
 - Microsoft 365 Defender
+
+> Vuoi provare Microsoft 365 Defender? È possibile [valutarla in un ambiente lab](https://aka.ms/mtp-trial-lab) o [eseguire il progetto pilota in produzione](https://aka.ms/m365d-pilotplaybook).
+>
 
 Quando vengono attivati gli avvisi di sicurezza, spetta al team delle operazioni di sicurezza esaminare gli avvisi e procedere per proteggere l'organizzazione. La classificazione in ordine di priorità e l'analisi degli avvisi può richiedere molto tempo, soprattutto quando continuano ad arrivare nuovi avvisi durante il corso di un'indagine. I team delle operazioni di sicurezza possono sentirsi sopraffatti dall'enorme volume di minacce che devono monitorare e da cui devono proteggersi. Le funzionalità di ricerca e risposta automatizzate, con la correzione automatica, possono essere utili in Microsoft 365 Defender.
 
@@ -72,7 +75,7 @@ Un avviso attivato crea un evento Incident che può avviare un'indagine automati
 |Dispositivi (detti anche endpoint)     |[Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)<br/>[Microsoft Defender per identità](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp) |      
 |Contenuto della posta elettronica (file e messaggi nelle cassette postali)     |[Microsoft Defender per Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)         |
 
-Ogni indagine genera verdetti ( *dannosi* , *sospetti* o *non sono state trovate minacce* ) per ogni elemento di prova indagato. A seconda del tipo di minaccia e del verdetto risultante, le azioni di correzione si verificano automaticamente o dopo l'approvazione da parte del team di operazioni di sicurezza dell'organizzazione. Le azioni in sospeso e quelle completate sono elencate nel [centro notifiche](mtp-action-center.md).
+Ogni indagine genera verdetti (*dannosi*, *sospetti* o *non sono state trovate minacce*) per ogni elemento di prova indagato. A seconda del tipo di minaccia e del verdetto risultante, le azioni di correzione si verificano automaticamente o dopo l'approvazione da parte del team di operazioni di sicurezza dell'organizzazione. Le azioni in sospeso e quelle completate sono elencate nel [centro notifiche](mtp-action-center.md).
 
 Durante l'esecuzione di un'indagine, tutti gli altri avvisi correlati che emergono vengono aggiunti all'indagine fino al suo completamento. Se un'entità incriminata viene visualizzata altrove, l'indagine automatizzata amplierà il suo ambito per includere tale entità e verrà eseguito un playbook della sicurezza generale. 
 

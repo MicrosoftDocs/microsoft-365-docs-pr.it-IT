@@ -14,12 +14,12 @@ ms.collection:
 - M365-subscription-management
 ms.custom: ''
 description: Come un'organizzazione globale fittizia ma rappresentativa ha adottato Microsoft 365 per Enterprise.
-ms.openlocfilehash: 980146a2a9c2a909d0b65c20e460841dce9fecee
-ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
+ms.openlocfilehash: eef22b372df36a4e5d14351df342268c195d04ce
+ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "48754669"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49356992"
 ---
 # <a name="microsoft-365-for-enterprise-for-the-contoso-corporation"></a>Microsoft 365 per Enterprise per Contoso Corporation
 
@@ -66,6 +66,12 @@ Fare riferimento ai seguenti articoli per i dettagli:
 - [Riepilogo di Microsoft 365 per la sicurezza aziendale](contoso-security-summary.md)
 
   Contoso utilizza lo spettro completo di Microsoft 365 per le funzionalità di sicurezza aziendale per la gestione delle identità e degli accessi, la protezione dalle minacce, la protezione delle informazioni e la gestione della sicurezza.
+
+Per ulteriori informazioni, vedere scenari IT e configurazioni:
+
+- [COVID-19 Response and Infrastructure per una forza lavoro ibrida](../solutions/contoso-hybrid-workforce.md)
+
+  Informazioni su come Contoso ha aggiornato l'infrastruttura di accesso remoto per la pandemia di COVID-19 e la nuova infrastruttura di installazione e aggiornamento per una forza lavoro ibrida.
 
 - [Team per un progetto interno](../solutions/contoso-team-for-top-secret-project.md)
 

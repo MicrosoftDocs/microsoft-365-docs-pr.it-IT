@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Gli amministratori possono imparare a visualizzare e gestire i messaggi in quarantena per tutti gli utenti in Exchange Online Protection (EOP). Gli amministratori nelle organizzazioni con Microsoft Defender per Office 365 possono anche gestire i file in quarantena in SharePoint Online, OneDrive for business e Microsoft teams.
-ms.openlocfilehash: 94dfc8503d61c16aadc8e9d0ccfd295e2684fbba
-ms.sourcegitcommit: 1db81b85d327fe423695ce675ad325e538417211
+ms.openlocfilehash: fed05ee202e4352200a80516e0ec1b62c8421178
+ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49349281"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49357134"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-admin-in-eop"></a>Gestire i messaggi e i file messi in quarantena come amministratore in EOP
 
@@ -103,7 +103,7 @@ Gli amministratori nelle organizzazioni con Microsoft Defender per Office 365 po
      - **Criteri anti-malware**
      - **Criteri allegati sicuri**
      - **Criteri anti-phishing**
-     - **Criteri di filtro contenuto ospitati** (criteri di protezione da posta indesiderata)
+     - **Criteri filtro contenuti ospitati** (criteri di protezione dalla posta indesiderata)
      - **Regola di trasporto**
 
    - **Destinatario di posta elettronica**: tutti gli utenti o solo i messaggi inviati all'utente. Gli utenti finali possono gestire solo i messaggi in quarantena inviati.
@@ -165,7 +165,7 @@ Dopo aver selezionato un messaggio, sono disponibili diverse opzioni per le oper
   - Scegliere una delle opzioni seguenti:
     - **Rilasciare messaggi a tutti i destinatari**
     - **Rilasciare messaggi a destinatari specifici**
-    - **Rilasciare messaggi ad altri utenti**
+    - **Rilasciare messaggi ad altre persone**: si noti che il rilascio di messaggi di malware a utenti diversi dai destinatari originali non è supportato. 
 
   Al termine, fare clic su **Rilascia messaggio**.
 
@@ -208,7 +208,7 @@ Quando si selezionano più messaggi in quarantena nell'elenco (fino a 100), vien
   > [!NOTE]
   > Si consideri lo scenario seguente: john@gmail.com Invia un messaggio a faith@contoso.com e john@subsidiary.contoso.com. Gmail moltiplica questo messaggio in due copie che sono entrambe instradate alla quarantena come phishing in Microsoft. Un amministratore rilascia entrambi i messaggi a admin@contoso.com. Il primo messaggio rilasciato che raggiunge la cassetta postale di amministrazione viene recapitato. Il secondo messaggio rilasciato viene identificato come recapito duplicato e viene ignorato. I messaggi vengono identificati come duplicati se dispongono dello stesso ID messaggio e del tempo di ricezione.
 
-- **Elimina messaggi**: dopo aver fatto clic su **Sì** nell'avviso visualizzato, i messaggi saranno immediatamente eliminati senza essere inviati ai destinatari originali.
+- **Elimina messaggi**: dopo aver fatto clic su **Sì** nell'avviso che viene visualizzato, i messaggi vengono immediatamente eliminati senza che vengano inviati ai destinatari originali.
 
 Al termine, fare clic su **Chiudi**.
 

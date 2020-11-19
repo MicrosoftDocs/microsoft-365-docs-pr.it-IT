@@ -20,19 +20,19 @@ description: Informazioni su come integrare l'analisi e la risposta automatizzat
 ms.date: 09/29/2020
 ms.custom:
 - air
-ms.openlocfilehash: 8b08b441ca468b5efa1c4c003c636de2a43b3e7d
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 7b0b0570624b2e0dd40d40b178951a747698afe2
+ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48844549"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49357468"
 ---
 # <a name="use-the-management-activity-api-for-custom-or-third-party-reporting-solutions"></a>Utilizzare l'API di gestione attività per soluzioni di Reporting personalizzate o di terze parti
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-Con [Microsoft Defender per Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp), vengono [fornite informazioni dettagliate sulle indagini automatizzate](air-view-investigation-results.md). Tuttavia, alcune organizzazioni utilizzano anche una soluzione di reporting personalizzata o di terze parti. Se l'organizzazione desidera integrare informazioni su indagini automatizzate con una soluzione di questo tipo, è possibile utilizzare l'API di attività di gestione di Office 365.
+Con [Microsoft Defender per Office 365](office-365-atp.md), vengono [fornite informazioni dettagliate sulle indagini automatizzate](air-view-investigation-results.md). Tuttavia, alcune organizzazioni utilizzano anche una soluzione di reporting personalizzata o di terze parti. Se l'organizzazione desidera integrare informazioni su indagini automatizzate con una soluzione di questo tipo, è possibile utilizzare l'API di attività di gestione di Office 365.
 
 Per impostare questa impostazione, utilizzare le risorse seguenti:
 

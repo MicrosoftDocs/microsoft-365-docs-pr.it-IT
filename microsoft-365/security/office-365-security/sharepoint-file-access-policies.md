@@ -17,18 +17,18 @@ ms.collection:
 - M365-security-compliance
 - m365solution-identitydevice
 - m365solution-scenario
-ms.openlocfilehash: 653bd90fb68eb42423d5f32633736bba4b5943b4
-ms.sourcegitcommit: bcb88a6171f9e7bdb5b2d8c03cd628d11c5e7bbf
+ms.openlocfilehash: 7e8104e234bd1b724bc62fb1a9b401ab83a2bcb4
+ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48464313"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49357528"
 ---
 # <a name="policy-recommendations-for-securing-sharepoint-sites-and-files"></a>Suggerimenti sui criteri per la protezione di siti e file di SharePoint
 
 In questo articolo viene descritto come implementare i criteri di identità e accesso ai dispositivi consigliati per la protezione di SharePoint e OneDrive for business. Queste linee guida si basano sui [criteri comuni di identità e accesso ai dispositivi](identity-access-policies.md).
 
-Questi suggerimenti si basano su tre diversi livelli di sicurezza e protezione per i file di SharePoint che possono essere applicati in base alla granularità delle proprie esigenze: **linea di base**, **sensibile**e **altamente regolamentata**. È possibile ottenere ulteriori informazioni su questi livelli di sicurezza e sui sistemi operativi client consigliati, a cui si fa riferimento in questa [sezione](microsoft-365-policies-configurations.md).
+Questi suggerimenti si basano su tre diversi livelli di sicurezza e protezione per i file di SharePoint che possono essere applicati in base alla granularità delle proprie esigenze: **linea di base**, **sensibile** e **altamente regolamentata**. È possibile ottenere ulteriori informazioni su questi livelli di sicurezza e sui sistemi operativi client consigliati, a cui si fa riferimento in questa [sezione](microsoft-365-policies-configurations.md).
 
 Oltre all'implementazione di queste linee guida, assicurarsi di configurare i siti di SharePoint con la giusta quantità di protezione, tra cui l'impostazione delle autorizzazioni appropriate per i contenuti sensibili e altamente regolamentati.
 
@@ -47,17 +47,18 @@ I nuovi criteri implementano la protezione del dispositivo per soddisfare sensib
 Nella tabella seguente sono elencati i criteri che è necessario rivedere e aggiornare o creare nuovi per SharePoint. I criteri comuni collegano le istruzioni di configurazione associate nell'articolo [Common Identity and Device Access Policies](identity-access-policies.md) .
 
 |Livello di protezione|Criteri|Ulteriori informazioni|
-|:---------------|:-------|:----------------|
+|---|---|---|
 |**Protezione di base**|[Richiedere l'AMF quando il rischio di accesso è *medio* o *elevato*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Includere SharePoint nell'assegnazione delle app cloud.|
-|        |[Bloccare i client che non supportano l'autenticazione moderna](identity-access-policies.md#block-clients-that-dont-support-modern-authentication)|Includere SharePoint nell'assegnazione delle app cloud.|
-|        |[Applicare i criteri di protezione dei dati dell'APP](identity-access-policies.md#apply-app-data-protection-policies)|Assicurarsi che tutte le app consigliate siano incluse nell'elenco delle app. Assicurarsi di aggiornare i criteri per ogni piattaforma (iOS, Android, Windows).|
-|        |[Richiedere computer conformi](identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets)|Includere SharePoint nell'elenco delle app cloud.|
-|        |[Utilizzare le restrizioni applicate dalle app in SharePoint](#use-app-enforced-restrictions-in-sharepoint)|Aggiungere il nuovo criterio. Questo indica ad Azure Active Directory (Azure AD) di utilizzare le impostazioni specificate in SharePoint. Questo criterio si applica a tutti gli utenti, ma influenza solo l'accesso ai siti inclusi nei criteri di accesso di SharePoint.|
+||[Bloccare i client che non supportano l'autenticazione moderna](identity-access-policies.md#block-clients-that-dont-support-modern-authentication)|Includere SharePoint nell'assegnazione delle app cloud.|
+||[Applicare i criteri di protezione dei dati dell'APP](identity-access-policies.md#apply-app-data-protection-policies)|Assicurarsi che tutte le app consigliate siano incluse nell'elenco delle app. Assicurarsi di aggiornare i criteri per ogni piattaforma (iOS, Android, Windows).|
+||[Richiedere computer conformi](identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets)|Includere SharePoint nell'elenco delle app cloud.|
+||[Utilizzare le restrizioni applicate dalle app in SharePoint](#use-app-enforced-restrictions-in-sharepoint)|Aggiungere il nuovo criterio. Questo indica ad Azure Active Directory (Azure AD) di utilizzare le impostazioni specificate in SharePoint. Questo criterio si applica a tutti gli utenti, ma influenza solo l'accesso ai siti inclusi nei criteri di accesso di SharePoint.|
 |**Sensibili**|[Richiedere l'AMF quando il rischio di accesso è *basso*, *medio* o *alto*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Includere SharePoint nelle assegnazioni delle app cloud.|
-|         |[Richiedere PC conformi *e* dispositivi mobili](identity-access-policies.md#require-compliant-pcs-and-mobile-devices)|Includere SharePoint nell'elenco delle app cloud.|
+||[Richiedere PC conformi *e* dispositivi mobili](identity-access-policies.md#require-compliant-pcs-and-mobile-devices)|Includere SharePoint nell'elenco delle app cloud.|
 ||[Criteri di controllo di accesso di SharePoint](#sharepoint-access-control-policies): Consenti accesso solo browser a siti di SharePoint specifici da dispositivi non gestiti.|In questo modo si impedisce la modifica e il download dei file. Utilizzare PowerShell per specificare i siti.|
 |**Riservatezza elevata**|[Richiede *sempre* l'autenticazione Master](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Includere SharePoint nell'assegnazione delle app cloud.|
 ||[Criteri di controllo dell'accesso di SharePoint](#use-app-enforced-restrictions-in-sharepoint): bloccare l'accesso a siti di SharePoint specifici da dispositivi non gestiti.|Utilizzare PowerShell per specificare i siti.|
+|
 
 ## <a name="use-app-enforced-restrictions-in-sharepoint"></a>Utilizzare le restrizioni applicate dalle app in SharePoint
 
@@ -98,4 +99,3 @@ Configurare i criteri di accesso condizionale per:
 
 - [Microsoft Teams](teams-access-policies.md)
 - [Exchange Online](secure-email-recommended-policies.md)
-
