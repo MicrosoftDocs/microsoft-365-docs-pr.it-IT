@@ -6,7 +6,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 audience: Admin
-ms.topic: conceptual
+ms.topic: reference
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection:
@@ -19,12 +19,12 @@ ms.assetid: 8927b8b9-c5bc-45a8-a9f9-96c732e58264
 ms.custom:
 - seo-marvel-apr2020
 description: Creare criteri di avviso nel centro sicurezza e conformità di Office 365 e Microsoft 365 per monitorare le potenziali minacce, la perdita di dati e i problemi relativi alle autorizzazioni.
-ms.openlocfilehash: 400c2373ea9c1f6c19e5481c620a657df2c22aa8
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 7b2d5b380f71a31302a54cedb6076e6fca54fa86
+ms.sourcegitcommit: 5480982967a90ca3060a59676a6b29155f2de861
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48842146"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49350746"
 ---
 # <a name="alert-policies-in-the-security-and-compliance-center"></a>Criteri di avviso nel Centro sicurezza e conformità
 
@@ -94,7 +94,7 @@ Un criterio di avviso è costituito dalle impostazioni e dalle condizioni seguen
 
   Quando si verifica un'attività che corrisponde alle condizioni dei criteri di avviso, l'avviso generato viene contrassegnato con la categoria definita in questa impostazione. In questo modo è possibile monitorare e gestire gli avvisi con la stessa impostazione di categoria nella pagina **Visualizza avvisi** nel centro sicurezza e conformità, in quanto consente di ordinare e filtrare gli avvisi in base alla categoria.
 
-- **Severità degli avvisi** -analoga alla categoria di avviso, è possibile assegnare un attributo Severity ( **basso** , **medio** , **alto** o **informativo** ) ai criteri di avviso. Analogamente alla categoria avviso, quando si verifica un'attività che corrisponde alle condizioni del criterio di avviso, l'avviso generato viene contrassegnato con lo stesso livello di gravità impostato per il criterio di avviso. Di nuovo, in questo modo è possibile monitorare e gestire gli avvisi che hanno la stessa impostazione di gravità nella pagina **Visualizza avvisi** . Ad esempio, è possibile filtrare l'elenco di avvisi in modo che vengano visualizzati solo gli avvisi con un livello di gravità **elevato** .
+- **Severità degli avvisi** -analoga alla categoria di avviso, è possibile assegnare un attributo Severity (**basso**, **medio**, **alto** o **informativo**) ai criteri di avviso. Analogamente alla categoria avviso, quando si verifica un'attività che corrisponde alle condizioni del criterio di avviso, l'avviso generato viene contrassegnato con lo stesso livello di gravità impostato per il criterio di avviso. Di nuovo, in questo modo è possibile monitorare e gestire gli avvisi che hanno la stessa impostazione di gravità nella pagina **Visualizza avvisi** . Ad esempio, è possibile filtrare l'elenco di avvisi in modo che vengano visualizzati solo gli avvisi con un livello di gravità **elevato** .
 
     > [!TIP]
     > Quando si configura un criterio di avviso, è consigliabile assegnare un livello di gravità maggiore alle attività che possono comportare conseguenze gravemente negative, ad esempio il rilevamento di malware dopo il recapito agli utenti, la visualizzazione di dati sensibili o classificati, la condivisione di dati con utenti esterni o altre attività che possono causare perdite di dati o minacce alla sicurezza. In questo modo è possibile definire la priorità per gli avvisi e le azioni da intraprendere per analizzare e risolvere le cause sottostanti.
@@ -134,7 +134,7 @@ La tabella indica anche il piano Office 365 Enterprise and Office 365 US Governm
 |**Volume insolito di eliminazione dei file**|Genera un avviso quando un numero insolitamente elevato di file viene eliminato in SharePoint o OneDrive in un intervallo di tempo breve. Questo criterio ha un'impostazione di gravità **media** .|Governance delle informazioni|Abbonamento al componente aggiuntivo E5/G5, Defender per Office 365 P2 o Microsoft 365 E5|
 |**Aumento insolito del messaggio di posta elettronica riportato come phishing**|Genera un avviso quando si verifica un aumento significativo del numero di persone nell'organizzazione che utilizzano il componente aggiuntivo segnala messaggio in Outlook per segnalare i messaggi come messaggio di posta elettronica di phishing. Questo criterio è impostato **su un livello** di gravità elevato. Per ulteriori informazioni su questo componente aggiuntivo, vedere [use the report Message Add-in](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2).|Gestione dei rischi|Sottoscrizione al componente aggiuntivo di E5/G5 o Defender per Office 365 P2|
 |**Phishing rappresentazione utente recapitata in posta in arrivo/cartella**<sup>1,</sup><sup>2</sup>|Genera un avviso quando Microsoft rileva che un amministratore o un override dell'utente ha consentito il recapito di un messaggio di phishing della rappresentazione dell'utente alla posta in arrivo (o a un'altra cartella accessibile dall'utente) di una cassetta postale. Esempi di sostituzioni includono una regola di posta in arrivo o flusso di posta che consente messaggi provenienti da un mittente o da un dominio specifico oppure da un criterio di protezione da posta indesiderata che consente messaggi provenienti da mittenti o domini specifici Questo criterio ha un'impostazione di gravità **media** .|Gestione dei rischi|Sottoscrizione al componente aggiuntivo di E5/G5 o Defender per Office 365 P2|
-|**Utente con limitazioni all'invio di posta elettronica**|Genera un avviso quando un utente dell'organizzazione ha la limitazione di inviare la posta in uscita. Questo in genere risulta quando un account è compromesso e l'utente è elencato nella pagina **utenti con restrizioni** nel centro sicurezza & conformità. Per accedere a questa pagina, passare a **threat management > Review > utenti con restrizioni** ). Questo criterio è impostato **su un livello** di gravità elevato. Per ulteriori informazioni sugli utenti con restrizioni, vedere [rimozione di un utente, dominio o indirizzo IP da un elenco di blocco dopo l'invio di posta indesiderata](https://docs.microsoft.com/office365/securitycompliance/removing-user-from-restricted-users-portal-after-spam).|Gestione dei rischi|E1/F1/G1, E3/G3 o E5/G5|
+|**Utente con limitazioni all'invio di posta elettronica**|Genera un avviso quando un utente dell'organizzazione ha la limitazione di inviare la posta in uscita. Questo in genere risulta quando un account è compromesso e l'utente è elencato nella pagina **utenti con restrizioni** nel centro sicurezza & conformità. Per accedere a questa pagina, passare a **threat management > Review > utenti con restrizioni**). Questo criterio è impostato **su un livello** di gravità elevato. Per ulteriori informazioni sugli utenti con restrizioni, vedere [rimozione di un utente, dominio o indirizzo IP da un elenco di blocco dopo l'invio di posta indesiderata](https://docs.microsoft.com/office365/securitycompliance/removing-user-from-restricted-users-portal-after-spam).|Gestione dei rischi|E1/F1/G1, E3/G3 o E5/G5|
 |||||
 
 > [!NOTE]
@@ -263,7 +263,7 @@ Per visualizzare la categoria a cui è assegnato un criterio di avviso predefini
 
 Dopo che gli avvisi sono stati generati e visualizzati nella pagina **Visualizza avvisi** nel centro sicurezza e conformità, è possibile eseguire la valutazione, l'analisi e la risoluzione dei problemi. Di seguito sono riportate alcune attività che è possibile eseguire per gestire gli avvisi.
 
-- **Assegnare uno stato agli avvisi.** È possibile assegnare uno degli Stati seguenti agli avvisi: **attivo** (valore predefinito), **analisi** , **risoluzione** **o annullamento**. È quindi possibile filtrare su questa impostazione per visualizzare gli avvisi con la stessa impostazione di stato. Questa impostazione di stato può contribuire a monitorare il processo di gestione degli avvisi.
+- **Assegnare uno stato agli avvisi.** È possibile assegnare uno degli Stati seguenti agli avvisi: **attivo** (valore predefinito), **analisi**, **risoluzione** **o annullamento**. È quindi possibile filtrare su questa impostazione per visualizzare gli avvisi con la stessa impostazione di stato. Questa impostazione di stato può contribuire a monitorare il processo di gestione degli avvisi.
 
 - **Visualizzare i dettagli degli avvisi.** È possibile selezionare un avviso per visualizzare una pagina a comparsa con informazioni dettagliate sull'avviso. Le informazioni dettagliate dipendono dal criterio di avviso corrispondente, ma in genere sono incluse le seguenti: nome dell'operazione effettiva che ha attivato l'avviso (ad esempio, un cmdlet), una descrizione dell'attività che ha attivato l'avviso, l'utente (o l'elenco di utenti) che ha attivato l'avviso e il nome e il collegamento del criterio di avviso corrispondente.
 
@@ -281,7 +281,7 @@ Dopo che gli avvisi sono stati generati e visualizzati nella pagina **Visualizza
 
 - **Non visualizzare le notifiche tramite posta elettronica.** È possibile disattivare (o sopprimere) le notifiche di posta elettronica dalla pagina del riquadro a comparsa per un avviso. Quando si eliminano le notifiche tramite posta elettronica, Microsoft non invierà notifiche quando le attività o gli eventi che soddisfano le condizioni del criterio di avviso. Tuttavia, gli avvisi vengono attivati quando le attività eseguite dagli utenti soddisfano le condizioni del criterio di avviso. È inoltre possibile disattivare le notifiche di posta elettronica modificando il criterio di avviso.
 
-- **Risoluzione degli avvisi.** È possibile contrassegnare un avviso come risolto nella pagina a comparsa per un avviso (che imposta lo stato dell'avviso su **risolto** ). A meno che non si modifichi il filtro, gli avvisi risolti non vengono visualizzati nella pagina **Visualizza avvisi** .
+- **Risoluzione degli avvisi.** È possibile contrassegnare un avviso come risolto nella pagina a comparsa per un avviso (che imposta lo stato dell'avviso su **risolto**). A meno che non si modifichi il filtro, gli avvisi risolti non vengono visualizzati nella pagina **Visualizza avvisi** .
 
 ## <a name="viewing-cloud-app-security-alerts"></a>Visualizzazione degli avvisi di sicurezza delle app Cloud
 

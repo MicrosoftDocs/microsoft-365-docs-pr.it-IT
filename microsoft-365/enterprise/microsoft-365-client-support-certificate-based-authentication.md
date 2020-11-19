@@ -16,12 +16,12 @@ f1.keywords:
 - NOCSH
 description: In questo articolo sono disponibili informazioni dettagliate sul supporto delle app client di Microsoft 365 per l'autenticazione basata su certificati.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 57ced47c268f4d0515acb26aa8f705fa6e9ae0f9
-ms.sourcegitcommit: da34ac08c7d029c2c42d4428d0bb03fd57c448be
+ms.openlocfilehash: fde124fcefdf3b949ec35a3b2ed99b15ee36f85e
+ms.sourcegitcommit: 2beefb695cead03cc21d6066f589572d3ae029aa
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "48999385"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49349681"
 ---
 # <a name="microsoft-365-client-app-support-certificate-based-authentication"></a>Supporto delle app client Microsoft 365: autenticazione basata su certificato
 
@@ -29,8 +29,8 @@ ms.locfileid: "48999385"
 
 L'autenticazione moderna è un termine ombrello per una combinazione di metodi di autenticazione e autorizzazione. Ad esempio:
 
-- **Metodi di autenticazione** : autenticazione a più fattori; Autenticazione basata su certificato client.
-- **Metodi di autorizzazione** : implementazione di Microsoft di autorizzazione aperta (OAuth).
+- **Metodi di autenticazione**: autenticazione a più fattori; Autenticazione basata su certificato client.
+- **Metodi di autorizzazione**: implementazione di Microsoft di autorizzazione aperta (OAuth).
 
 L'autenticazione moderna è abilitata mediante l'utilizzo di una raccolta di autenticazione, ad esempio la libreria di autenticazione di Active Directory (ADAL) o la libreria di autenticazione Microsoft (MSAL). L'autenticazione moderna è ciò che i client utilizzano per autenticare e autorizzare l'accesso alle risorse di Microsoft 365. L'autenticazione moderna utilizza OAuth e fornisce un meccanismo sicuro per i client di accedere ai servizi Microsoft 365, senza richiedere l'accesso alle credenziali dell'utente. All'accesso, l'utente autentica direttamente con Azure Active Directory e riceve una coppia di token di accesso/aggiornamento in ritorno. Il token di accesso concede all'utente l'accesso alle risorse appropriate nel tenant di Microsoft 365. Un token di aggiornamento viene utilizzato per ottenere una nuova coppia di token di accesso o di aggiornamento quando scade il token di accesso corrente.
 
@@ -55,7 +55,7 @@ Le versioni più recenti dei client e delle piattaforme seguenti supportano l'au
 | Edge<sup>1</sup> | ![Supportato](../media/check-mark.png) | ![Supportato](../media/check-mark.png) | N/D | N/D | ![Supportato](../media/check-mark.png) |
 | Excel | ![Supportato](../media/check-mark.png) | ![Supportato](../media/check-mark.png) | ![Supportato](../media/check-mark.png) | ![Supportato](../media/check-mark.png) | ![Supportato](../media/check-mark.png) |
 | Amministratore di Exchange Online | N/D | N/D | N/D | N/D | ![Supportato](../media/check-mark.png) |
-| Forms | N/D | N/D | N/D | N/D | N/D |
+| Moduli | N/D | N/D | N/D | N/D | N/D |
 | Amministratore di Office 365 | N/D | N/D | N/D | N/D | ![Supportato](../media/check-mark.png) |  |
 | Kaizala | ![Supportato](../media/check-mark.png) | ![Supportato](../media/check-mark.png) | N/D | N/D | N/D |
 | Office Lens| ![Supportato](../media/check-mark.png) | ![Supportato](../media/check-mark.png) | N/D | ![Supportato](../media/check-mark.png) | N/D |
@@ -87,7 +87,7 @@ Le versioni più recenti dei client e delle piattaforme seguenti supportano l'au
 | Yammer | ![Supportato](../media/check-mark.png) | ![Supportato](../media/check-mark.png) | Pianificata | N/D | Pianificata |
 
 >[!NOTE]
-><sup>1</sup> Edge per iOS e Android supporta l'autenticazione basata su certificato durante l'aggiunta dei flussi di account. Edge per iOS e Android non supporta l'autenticazione basata sui certificati quando eseguono l'autenticazione nei siti Web, che in genere sono siti Intranet. <br><br>  In questo scenario, un utente accede a un sito Web (in genere sulla rete Intranet) in cui il sito Web richiede all'utente di eseguire l'autenticazione tramite un certificato. Questo non comporta affatto l'autenticazione moderna e non utilizza una libreria di autenticazione di Microsoft. Ciò è dovuto a una limitazione con iOS: iOS impedisce alle app di terze parti di accedere al portachiavi del sistema in cui vengono archiviati i certificati (solo le app Apple e il [controller WebView di Safari](https://developer.apple.com/documentation/safariservices/sfsafariviewcontroller) possono accedere al portachiavi del sistema). <br><br> Poiché Edge si basa su WebKit, Edge non è in grado di accedere al portachiavi del sistema e di presentare l'utente con la scelta cert. Questo, purtroppo, è in base alla progettazione a causa dell'architettura di Apple.
+><sup>1</sup> Edge per iOS e Android supporta l'autenticazione basata su certificato durante l'aggiunta dei flussi di account. Edge per iOS e Android non supporta l'autenticazione basata sui certificati quando eseguono l'autenticazione nei siti Web, che in genere sono siti Intranet. <br><br>  In questo scenario, un utente accede a un sito Web (in genere sulla rete Intranet) in cui il sito Web richiede all'utente di eseguire l'autenticazione tramite un certificato. Questo non comporta affatto l'autenticazione moderna e non utilizza una libreria di autenticazione di Microsoft. Ciò è dovuto a una limitazione con iOS: iOS impedisce alle app di terze parti di accedere al portachiavi del sistema in cui vengono archiviati i certificati (solo le app Apple e il [controller WebView di Safari](https://developer.apple.com/documentation/safariservices/sfsafariviewcontroller) possono accedere al portachiavi del sistema). <br><br> Poiché Edge si basa sul Framework [WebKit](https://developer.apple.com/documentation/webkit) per il rendering dei siti Web, Edge non è in grado di accedere al portachiavi del sistema e di presentare l'utente con una scelta di certificato. Questo, purtroppo, è in base alla progettazione a causa dell'architettura di Apple.
 
 ## <a name="supported-powershell-modules"></a>Moduli di PowerShell supportati
 

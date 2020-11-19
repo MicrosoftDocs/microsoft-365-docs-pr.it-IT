@@ -16,12 +16,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Informazioni sui criteri di scadenza dei gruppi di Microsoft 365.
-ms.openlocfilehash: 8fc9c48d5a86c68eabd4139ad0a2d0dc1e83da0f
-ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
+ms.openlocfilehash: 4b283bcc9f4e54462a71b9aee70d6312b9f127d6
+ms.sourcegitcommit: 5480982967a90ca3060a59676a6b29155f2de861
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48377224"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49350713"
 ---
 # <a name="microsoft-365-group-expiration-policy"></a>Criteri di scadenza del gruppo Microsoft 365
 
@@ -34,7 +34,7 @@ Quando un gruppo scade è "Soft-deleted", il che significa che può essere ancor
 Gli amministratori possono specificare un periodo di scadenza e qualsiasi gruppo inattivo che raggiunge la fine di quel periodo e non viene rinnovato, verrà eliminato. (Include team archiviati). Il periodo di scadenza inizia quando viene creato il gruppo oppure alla data in cui è stato rinnovato per ultimo. I proprietari del gruppo invieranno automaticamente un messaggio di posta elettronica prima della scadenza che consente loro di rinnovare il gruppo per un altro intervallo di scadenza. Gli utenti di team vedranno notifiche permanenti nei team.
 
 I gruppi che sono attivamente in uso vengono rinnovati automaticamente. Una delle azioni seguenti consente di rinnovare automaticamente un gruppo:
-- SharePoint: visualizzazione, modifica, download, spostamento, condivisione o caricamento dei file.
+- SharePoint: visualizzazione, modifica, download, spostamento, condivisione o caricamento dei file. La visualizzazione di una pagina di SharePoint non viene conteggiata come azione per il rinnovo automatico.
 - Outlook-join Group, lettura o scrittura di un messaggio di gruppo dal gruppo e come un messaggio (Outlook sul Web).
 - Teams-visiting a teams Channel.
 
@@ -55,7 +55,7 @@ I gruppi che sono attivamente in uso vengono rinnovati automaticamente. Una dell
 
 ## <a name="how-to-set-the-expiration-policy"></a>Informazioni su come impostare i criteri di scadenza
 
-Come indicato in alto, la scadenza è disattivata per impostazione predefinita. Un amministratore dovrà abilitare i criteri di scadenza e impostare le proprietà per rendere effettive le stesse. Per abilitarlo, passare alla scadenza per i gruppi di **Azure Active Directory**  >  **Groups**  >  **Expiration**. In questa sezione è possibile impostare la durata predefinita del gruppo e specificare quanto in anticipo si desidera che la prima e la seconda notifica di scadenza vadano al proprietario del gruppo.
+Come indicato in alto, la scadenza è disattivata per impostazione predefinita. Un amministratore dovrà abilitare i criteri di scadenza e impostare le proprietà per rendere effettive le stesse. Per abilitarlo, passare a scadenza gruppi di **Azure Active Directory**  >  **Groups**  >  **Expiration**. In questa sezione è possibile impostare la durata predefinita del gruppo e specificare quanto in anticipo si desidera che la prima e la seconda notifica di scadenza vadano al proprietario del gruppo.
 
 La durata del gruppo è specificata in giorni e può essere impostata su 180, 365 o su un valore personalizzato specificato. Il valore personalizzato deve essere di almeno 30 giorni.
 
