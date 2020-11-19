@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 localization_priority: Priority
 description: Informazioni per amministratori sulle funzionalità anti-spoofing disponibili in Exchange Online Protection (EOP), che possono contribuire a ridurre gli attacchi di phishing da mittenti e domini contraffatti.
-ms.openlocfilehash: 631c38a49b3e1fa5217545449c522ccc9cf0d913
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 57d6dc8d9c1935578db15abdbb3e17e72bb64257
+ms.sourcegitcommit: ce46d1bd67091d4ed0e2b776dfed55e2d88cdbf4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48844417"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49130830"
 ---
 # <a name="anti-spoofing-protection-in-eop"></a>Protezione anti-spoofing in EOP
 
@@ -39,11 +39,11 @@ Quando si tratta di proteggere gli utenti, Microsoft prende seriamente in consid
 
 In EOP sono disponibili le tecnologie anti-spoofing seguenti:
 
-- **Spoof Intelligence** : per esaminare i messaggi falsificati inviati da mittenti in domini interni ed esterni e consentire o bloccare tali mittenti. Per altre informazioni, vedere [Configurare spoof intelligence in Microsoft 365](learn-about-spoof-intelligence.md).
+- **Spoof Intelligence**: per esaminare i messaggi falsificati inviati da mittenti in domini interni ed esterni e consentire o bloccare tali mittenti. Per altre informazioni, vedere [Configurare spoof intelligence in Microsoft 365](learn-about-spoof-intelligence.md).
 
-- **Criteri anti-phishing** : in EOP i criteri anti-phishing consentono di attivare o disattivare spoof intelligence, attivare o disattivare l'identificazione dei mittenti non autenticati in Outlook e specificare l'azione per i mittenti di spoofing bloccati (spostare nella cartella Posta indesiderata o mettere in quarantena). I criteri anti-phishing avanzati disponibili in Microsoft Defender per Office 365 includono anche impostazioni anti-imitazione (mittenti e domini protetti), impostazioni di intelligence sulle cassette postali e soglie di phishing avanzate. Per altre informazioni, vedere [Criteri anti-phishing in Microsoft 365](set-up-anti-phishing-policies.md).
+- **Criteri anti-phishing**: in EOP i criteri anti-phishing consentono di attivare o disattivare spoof intelligence, attivare o disattivare l'identificazione dei mittenti non autenticati in Outlook e specificare l'azione per i mittenti di spoofing bloccati (spostare nella cartella Posta indesiderata o mettere in quarantena). I criteri anti-phishing avanzati disponibili in Microsoft Defender per Office 365 includono anche impostazioni anti-imitazione (mittenti e domini protetti), impostazioni di intelligence sulle cassette postali e soglie di phishing avanzate. Per altre informazioni, vedere [Criteri anti-phishing in Microsoft 365](set-up-anti-phishing-policies.md).
 
-- **Autenticazione e-mail** : parte integrante di qualsiasi iniziativa anti-spoofing è l'uso dell'autenticazione e-mail, nota anche come convalida della posta elettronica, tramite i record SPF, DKIM e DMARC nel DNS. È possibile configurare questi record per un dominio in modo che i sistemi di posta elettronica di destinazione possano controllare la validità dei messaggi che dichiarano di provenire da mittenti in tale dominio. Per i messaggi in ingresso, Microsoft 365 richiede l'autenticazione di posta elettronica per i domini dei mittenti. Per altre informazioni, vedere [Autenticazione di posta elettronica in Microsoft 365](email-validation-and-authentication.md).
+- **Autenticazione e-mail**: parte integrante di qualsiasi iniziativa anti-spoofing è l'uso dell'autenticazione e-mail, nota anche come convalida della posta elettronica, tramite i record SPF, DKIM e DMARC nel DNS. È possibile configurare questi record per un dominio in modo che i sistemi di posta elettronica di destinazione possano controllare la validità dei messaggi che dichiarano di provenire da mittenti in tale dominio. Per i messaggi in ingresso, Microsoft 365 richiede l'autenticazione di posta elettronica per i domini dei mittenti. Per altre informazioni, vedere [Autenticazione di posta elettronica in Microsoft 365](email-validation-and-authentication.md).
 
 Dall'ottobre 2018, la protezione anti-spoofing è disponibile in EOP.
 
@@ -55,7 +55,7 @@ EOP analizza e blocca i messaggi che non è possibile autenticare con una combin
 
 I messaggi oggetto di spoofing, ovvero falsificati, hanno le implicazioni negative seguenti per gli utenti:
 
-- **I messaggi falsificati ingannano gli utenti** : un messaggio oggetto di spoofing potrebbe indurre un utente a fare clic su un collegamento e fornire le proprie credenziali, a scaricare malware o a rispondere a un messaggio con contenuti sensibili. Quest'ultimo attacco è noto come Business Email Compromise (BEC), compromissione dell'e-mail aziendale.
+- **I messaggi falsificati ingannano gli utenti**: un messaggio oggetto di spoofing potrebbe indurre un utente a fare clic su un collegamento e fornire le proprie credenziali, a scaricare malware o a rispondere a un messaggio con contenuti sensibili. Quest'ultimo attacco è noto come Business Email Compromise (BEC), compromissione dell'e-mail aziendale.
 
   Il messaggio seguente è un esempio di phishing che usa il mittente contraffatto msoutlook94@service.outlook.com:
 
@@ -69,7 +69,7 @@ I messaggi oggetto di spoofing, ovvero falsificati, hanno le implicazioni negati
 
   Il messaggio sembra legittimo ma il mittente è contraffatto.
 
-- **Gli utenti confondono i messaggi autentici con quelli contraffatti** : anche gli utenti che conoscono il phishing potrebbero avere difficoltà a distinguere tra messaggi reali e falsificati.
+- **Gli utenti confondono i messaggi autentici con quelli contraffatti**: anche gli utenti che conoscono il phishing potrebbero avere difficoltà a distinguere tra messaggi reali e falsificati.
 
   Il messaggio di seguito è un esempio di messaggio reale di reimpostazione della password inviato dal team per la sicurezza degli account Microsoft:
 
@@ -81,7 +81,7 @@ I messaggi oggetto di spoofing, ovvero falsificati, hanno le implicazioni negati
 
 Microsoft distingue tra due diversi tipi di spoofing dei messaggi:
 
-- **Spoofing intra-organizzazione** : anche noto come spoofing _self-to-self_. Ad esempio:
+- **Spoofing intra-organizzazione**: anche noto come spoofing _self-to-self_. Ad esempio:
 
   - Il mittente e il destinatario si trovano nello stesso dominio:
     > Da: chris@contoso.com <br/> A: michelle@contoso.com
@@ -104,7 +104,7 @@ Microsoft distingue tra due diversi tipi di spoofing dei messaggi:
 
   - SFTY è il livello di sicurezza del messaggio. 9 indica il phishing, .11 indica lo spoofing intra-organizzazione.
 
-- **Spoofing tra domini** : i domini del mittente e del destinatario sono diversi e non hanno relazioni gli uni con gli altri (si parla anche di domini esterni). Ad esempio:
+- **Spoofing tra domini**: i domini del mittente e del destinatario sono diversi e non hanno relazioni gli uni con gli altri (si parla anche di domini esterni). Ad esempio:
     > Da: chris@contoso.com <br/> A: michelle@tailspintoys.com
 
   I messaggi che non superano l'[autenticazione composita](email-validation-and-authentication.md#composite-authentication) a causa dello spoofing tra domini contengono i valori di intestazione seguenti:
@@ -133,11 +133,11 @@ Un' organizzazione con Microsoft Defender per Office 365 può usare Esplora mina
 
 Ad esempio, Gabriela Laureano (glaureano@contoso.com) è interessata al birdwatching, aderisce alla lista di distribuzione birdwatchers@fabrikam.com e invia il messaggio seguente alla lista:
 
-> **Da:** "Gabriela Laureano" \<glaureano@contoso.com\> <br/> **A:** Elenchi di Discussione dei Birdwatcher \<birdwatchers@fabrikam.com\> <br/> **Oggetto:** ottimo avvistamento dei Jays blu sula cima del Monte Rainier questa settimana <br/><br/>Qualche utente desidera vedere la visualizzazione di questa settimana dal monte Rainier?
+> **Da:** "Gabriela Laureano" \<glaureano@contoso.com\> <br/> **A:** Elenchi di Discussione dei Birdwatcher \<birdwatchers@fabrikam.com\> <br/> **Oggetto:** ottimo avvistamento dei Jays blu sula cima del Monte Rainier questa settimana <p> Qualche utente desidera vedere la visualizzazione di questa settimana dal monte Rainier?
 
 Il server della lista di distribuzione riceve il messaggio, ne modifica il contenuto e lo riproduce ai membri della lista. Il messaggio riprodotto ha lo stesso indirizzo del mittente (glaureano@contoso.com), ma è stato modificato aggiungendo un tag alla riga dell'oggetto e un piè di pagina in fondo. Questo tipo di modifica è comune nelle liste di distribuzione e può generare falsi positivi.
 
-> **Da:** "Gabriela Laureano" \<glaureano@contoso.com\> <br/> **A:** Elenchi di Discussione dei Birdwatcher \<birdwatchers@fabrikam.com\> <br/> **Oggetto:** [BIRDWATCHING] ottimo avvistamento dei Jays blu sula cima del Monte Rainier questa settimana <br/><br/> Qualche utente desidera vedere la visualizzazione di questa settimana dal monte Rainier? <br/><br/> Questo messaggio è stato inviato all'elenco di discussione degli amanti del birdwatching. È possibile annullare l’iscrizione in qualsiasi momento.
+> **Da:** "Gabriela Laureano" \<glaureano@contoso.com\> <br/> **A:** Elenchi di Discussione dei Birdwatcher \<birdwatchers@fabrikam.com\> <br/> **Oggetto:** [BIRDWATCHING] ottimo avvistamento dei Jays blu sula cima del Monte Rainier questa settimana <p> Qualche utente desidera vedere la visualizzazione di questa settimana dal monte Rainier? <p> Questo messaggio è stato inviato all'elenco di discussione degli amanti del birdwatching. È possibile annullare l’iscrizione in qualsiasi momento.
 
 Per consentire ai messaggi delle liste di distribuzione di superare i controlli anti-spoofing, eseguire le operazioni seguenti in base al fatto che si controlli o meno la lista di distribuzione:
 
@@ -165,7 +165,7 @@ Se il problema persiste, è possibile segnalare il messaggio come falso positivo
 
 ## <a name="considerations-for-anti-spoofing-protection"></a>Considerazioni per la protezione anti-spoofing
 
-Gli amministratori che attualmente inviano messaggi a Microsoft 365 devono assicurarsi che la posta elettronica venga autenticata correttamente. In caso contrario, potrebbero essere contrassegnati come posta indesiderata o phishing. Per altre informazioni, vedere [Soluzioni per i mittenti legittimi che inviano messaggi di posta elettronica non autenticati](email-validation-and-authentication.md#solutions-for-legitimate-senders-who-are-sending-unauthenticated-email).
+Gli amministratori che attualmente inviano messaggi a Microsoft 365 devono verificare che i messaggi di posta elettronica siano autenticati correttamente. In caso contrario, potrebbero essere contrassegnati come posta indesiderata o phishing. Per altre informazioni, vedere [Soluzioni per i mittenti legittimi che inviano messaggi di posta elettronica non autenticati](email-validation-and-authentication.md#solutions-for-legitimate-senders-who-are-sending-unauthenticated-email).
 
 I mittenti di un elenco di mittenti di un utente (o amministratore) specifico ignoreranno delle parti dello stack di filtraggio, inclusa la protezione contro lo spoofing. Per altre informazioni, vedere [Mittenti attendibili di Outlook](create-safe-sender-lists-in-office-365.md#use-outlook-safe-senders).
 

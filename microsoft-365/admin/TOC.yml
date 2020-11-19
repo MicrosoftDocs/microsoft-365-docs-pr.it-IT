@@ -210,8 +210,21 @@
       items:
         - name: Monitorare l'attività utente utilizzando i report
           href: activity-reports/activity-reports.md
-        - name: Monitorare la produttività degli utenti con Punteggio della produttività
+        - name: Monitorare la produttività degli utenti con il Punteggio della produttività Microsoft
           href: productivity/productivity-score.md
+          items:
+            - name: Collaborazione sui contenuti
+              href: productivity/content-collaboration.md
+            - name: Comunicazione
+              href: productivity/communication.md
+            - name: Mobilità
+              href: productivity/mobility.md
+            - name: Lavoro in team
+              href: productivity/teamwork.md
+            - name: Integrità di Microsoft 365 Apps
+              href: productivity/apps-health.md
+            - name: Creare record DNS presso un host DNS
+              href: get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md
         - name: Modificare le informazioni di contatto dell'organizzazione
           href: manage/change-address-contact-and-more.md
         - name: Aggiornare le informazioni di contatto dell'amministratore

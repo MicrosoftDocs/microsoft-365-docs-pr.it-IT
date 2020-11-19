@@ -18,12 +18,12 @@ ms.collection:
 ms.custom: TopSMBIssues
 localization_priority: Priority
 description: Informazioni per amministratori sul modo in cui EOP usa l'autenticazione della posta elettronica (SPF, DKIM e DMARC) per prevenire lo spoofing, il phishing e la posta indesiderata.
-ms.openlocfilehash: d490caf600fef9d9caab79a1a97ec29637e10d66
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 7c196b68d88187da2890cc886f646c5416ef9a11
+ms.sourcegitcommit: ce46d1bd67091d4ed0e2b776dfed55e2d88cdbf4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48202976"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49131074"
 ---
 # <a name="email-authentication-in-eop"></a>Autenticazione e-mail in EOP
 
@@ -32,9 +32,9 @@ ms.locfileid: "48202976"
 
 Con la denominazione di autenticazione e-mail, nota anche come autenticazione della posta elettronica o convalida della posta elettronica, si indica un gruppo di standard che prova a bloccare lo spoofing, ossia i messaggi di posta elettronica provenienti da mittenti contraffatti. In tutte le organizzazioni Microsoft 365, EOP usa questi standard per verificare la posta elettronica in ingresso:
 
-- [SPF](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-spf-in-office-365-to-help-prevent-spoofing?view=o365-worldwide)
+- [SPF](set-up-spf-in-office-365-to-help-prevent-spoofing.md)
 
-- [DKIM](https://docs.microsoft.com/microsoft-365/security/office-365-security/use-dkim-to-validate-outbound-email?view=o365-worldwide)
+- [DKIM](use-dkim-to-validate-outbound-email.md)
 
 - [DMARC](use-dmarc-to-validate-email.md)
 
@@ -175,7 +175,7 @@ Per consentire al mittente di inviare messaggi di posta elettronica non autentic
 
 ### <a name="create-an-allow-entry-for-the-senderrecipient-pair"></a>Creare una voce Consenti per la coppia mittente/destinatario
 
-Per ignorare il filtro della posta indesiderata, alcune parti del filtro anti-phishing, ma non il filtro antimalware per mittenti specifici, vedere [Creare elenchi di mittenti attendibili in Microsoft 365](create-safe-sender-lists-in-office-365.md).
+Per ignorare il filtro della posta indesiderata, alcune parti del filtro anti-phishing ma non il filtro antimalware per mittenti specifici, vedere [Creare elenchi di mittenti attendibili in Microsoft 365](create-safe-sender-lists-in-office-365.md).
 
 ### <a name="ask-the-sender-to-configure-email-authentication-for-domains-you-dont-own"></a>Chiedere al mittente di configurare l'autenticazione e-mail per i domini di cui non si è proprietari
 
@@ -188,7 +188,7 @@ A causa dei problemi generati dalla posta indesiderata e dal phishing, Microsoft
 - Se usano mittenti in blocco per inviare messaggi di posta elettronica per loro conto, assicurarsi che il dominio nell'indirizzo Da (se di loro proprietà) sia allineato al dominio che supera i controlli SPF o DMARC.
 
 - Verificare che le posizioni seguenti, se in uso, siano incluse nel record SPF:
-  
+
   - Server di posta elettronica locali.
   - Messaggi di posta elettronica inviati da un provider di software come un servizio (SaaS).
   - Messaggi di posta elettronica inviati da un servizio di hosting cloud (Microsoft Azure, GoDaddy, Rackspace, Amazon Web Services e così via).

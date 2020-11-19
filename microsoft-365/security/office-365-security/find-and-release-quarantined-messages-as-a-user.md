@@ -19,12 +19,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Informazioni su come gli utenti possono visualizzare e gestire i messaggi in quarantena in Exchange Online Protection (EOP) che avrebbero dovuto essere recapitati.
-ms.openlocfilehash: 2a8e37dc430af5b3d3c47179c721d83832f01184
-ms.sourcegitcommit: 153f413402f93b79be421741f3b9fed318d6d270
+ms.openlocfilehash: 48c727c442ee6f861499f1a72c687f7b3457c594
+ms.sourcegitcommit: ce46d1bd67091d4ed0e2b776dfed55e2d88cdbf4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48600346"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49130852"
 ---
 # <a name="find-and-release-quarantined-messages-as-a-user-in-eop"></a>Trovare e rilasciare i messaggi messi in quarantena come utente di EOP
 
@@ -54,27 +54,16 @@ L'utente può visualizzare, rilasciare ed eliminare i messaggi in quarantena di 
 2. È possibile ordinare i risultati facendo clic su un'intestazione di colonna disponibile. Fare clic su **Modifica colonne** per visualizzare un massimo di sette colonne. I valori predefiniti sono contrassegnati da un asterisco (<sup>\*</sup>):
 
    - **Ricevuto**<sup>\*</sup>
-
    - **Mittente**<sup>\*</sup>
-
    - **Oggetto**<sup>\*</sup>
-
    - **Motivo della quarantena**<sup>\*</sup>
-
    - **Rilasciato?**<sup>\*</sup>
-
    - **Tipo di criterio**<sup>\*</sup>
-
    - **Scadenza**<sup>\*</sup>
-
    - **Destinatario**
-
    - **ID messaggio**
-
    - **Nome criterio**
-
    - **Dimensioni**
-
    - **Direzione**
 
    Al termine, fare clic su **Salva** o fare clic su **Imposta su valore predefinito**.
@@ -82,29 +71,21 @@ L'utente può visualizzare, rilasciare ed eliminare i messaggi in quarantena di 
 3. Per filtrare i risultati, selezionare **Filtro**. I filtri disponibili sono:
 
    - **Ora di scadenza**: filtrare i messaggi in base alla scadenza dalla quarantena:
-
      - **Oggi**
-
      - **Prossimi 2 giorni**
-
      - **Prossimi 7 giorni**
-
      - **Personalizzato**: immettere una **data di inizio** e una **data di fine**.
 
    - **Ora ricezione**: immettere una **data di inizio** e una **data di fine**.
 
    - **Motivo della quarantena**:
-
      - **Invio in blocco**
-
      - **Posta indesiderata**
-
      - **Phishing**
-     
+
    - **Tipo di criteri**: filtrare i messaggi in base al tipo di criteri:
      - **Criteri anti-phishing**
-     - **Criteri filtro contenuti ospitati**
-     
+     - **Criteri filtro contenuti ospitati** (criteri di protezione dalla posta indesiderata)
 
    Per cancellare il filtro, fare clic su **Cancella**. Per nascondere il riquadro a comparsa del filtro, fare di nuovo clic su **Filtro**.
 
@@ -113,7 +94,7 @@ L'utente può visualizzare, rilasciare ed eliminare i messaggi in quarantena di 
    - **ID messaggio**: identificatore univoco globale del messaggio. Se si seleziona un messaggio nell'elenco, il valore **ID messaggio** viene visualizzato nel riquadro a comparsa **Dettagli**. Gli amministratori possono usare [Traccia messaggio](message-trace-scc.md) per trovare i messaggi e i valori ID messaggio corrispondenti.
 
    - **Indirizzo di posta elettronica del mittente**: indirizzo di posta elettronica di un singolo mittente.
-   
+
    - **Nome dei criteri**: usare l'intero nome dei criteri del messaggio. Per la ricerca non viene fatta distinzione tra maiuscole e minuscole.
 
    - **Indirizzo di posta elettronica del destinatario**: indirizzo di posta elettronica di un singolo destinatario.
@@ -165,9 +146,7 @@ Dopo aver selezionato un messaggio, sono disponibili diverse opzioni per le oper
 - **Visualizza intestazione messaggio**: scegliere questo collegamento per vedere il testo dell'intestazione del messaggio. Per analizzare i campi dell'intestazione e i valori in modo approfondito, copiare il testo negli Appunti e poi scegliere **Microsoft Message Header Analyzer** per passare all'Analizzatore connettività remota. Fare clic con il pulsante destro del mouse e scegliere **Apri in una nuova scheda** se non si vuole uscire da Microsoft 365 per completare questa attività. Incollare l'intestazione del messaggio nella pagina nella sezione Message Header Analyzer e scegliere **Analizza intestazioni**:
 
 - **Anteprima messaggio**: nel riquadro a comparsa visualizzato, scegliere una delle seguenti opzioni:
-
   - **Visualizzazione origine**: mostra la versione HTML del corpo del messaggio con tutti i collegamenti disabilitati.
-  
   - **Visualizzazione testo**: Mostra il corpo del messaggio in testo normale.
 
 - **Scarica il messaggio**: nel riquadro a comparsa visualizzato, selezionare **Sono consapevole dei rischi associati al download di questo messaggio** per salvare una copia locale del messaggio in formato .eml.
