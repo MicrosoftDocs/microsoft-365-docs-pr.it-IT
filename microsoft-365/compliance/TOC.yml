@@ -858,11 +858,11 @@
       href: increase-the-recoverable-quota-for-mailboxes-on-hold.md
     - name: Mantenere Ccn e i destinatari del gruppo di distribuzione espanso
       href: preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery.md
-- name: Gestire i criteri di controllo e avviso
+- name: Gestire i criteri relativi a controlli e avvisi
   items:
-    - name: Controllo unificato
+    - name: Controllo di base
       items:
-        - name: Eseguire ricerche nel log di controllo
+        - name: Eseguire ricerche nel log di audit
           href: search-the-audit-log-in-security-and-compliance.md
         - name: Abilitare o disabilitare la ricerca dei log di controllo
           href: turn-audit-log-search-on-or-off.md

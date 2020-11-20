@@ -13,12 +13,12 @@ metadata:
   ms.author: macapara
   ms.date: 09/13/2019
   localization_priority: Priority
-  ms.openlocfilehash: be575abfe658c77c0346b20efe77e1d52bc49918
-  ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
+  ms.openlocfilehash: 971382e5da5b8bedf7527a7f30ae81dcbffdebdd
+  ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
   ms.translationtype: HT
   ms.contentlocale: it-IT
-  ms.lasthandoff: 11/04/2020
-  ms.locfileid: "48906812"
+  ms.lasthandoff: 11/19/2020
+  ms.locfileid: "49356692"
 landingContent:
 - title: Microsoft 365 Defender
   linkLists:
@@ -32,9 +32,9 @@ landingContent:
   linkLists:
   - linkListType: overview
     links:
-    - text: Valutare Microsoft Threat Protection
+    - text: Valutare Microsoft 365 Defender
       url: mtp/mtp-evaluation.md
-    - text: Playbook pilota di Microsoft Threat Protection
+    - text: Playbook pilota di Microsoft 365 Defender
       url: mtp/mtp-pilot.md
 - title: Proteggere il personale remoto
   linkLists:
