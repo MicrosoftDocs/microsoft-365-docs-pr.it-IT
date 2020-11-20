@@ -20,18 +20,18 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: b9d7655377b1bb5ff4810fd469efd092bd7a5f67
-ms.sourcegitcommit: fcc1b40732f28f075d95faffc1655473e262dd95
+ms.openlocfilehash: d41965741bc02876cde7e99904194c9f5787202a
+ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/14/2020
-ms.locfileid: "49072925"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49357191"
 ---
 # <a name="get-started-with-communication-compliance"></a>Introduzione alla conformità delle comunicazioni
 
 Utilizzare i criteri di conformità della comunicazione per identificare le comunicazioni degli utenti per l'esame da parte di revisori interni o esterni. Per ulteriori informazioni su come i criteri di conformità della comunicazione consentono di monitorare le comunicazioni nell'organizzazione, vedere [Communication Compliance Policies in Microsoft 365](communication-compliance.md). Se si desidera esaminare in che modo Contoso ha configurato rapidamente un criterio di conformità della comunicazione per il monitoraggio per la lingua offensiva in Microsoft teams, Exchange Online e Yammer Communications, vedere questo [caso di studio](communication-compliance-case-study.md).
 
-## <a name="before-you-begin"></a>Prima di iniziare
+## <a name="subscriptions-and-licensing"></a>Abbonamenti e licenze
 
 Prima di iniziare a utilizzare la conformità alla comunicazione, è necessario confermare la [sottoscrizione Microsoft 365](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans) e i componenti aggiuntivi. Per accedere e utilizzare la conformità di comunicazione, è necessario che l'organizzazione disponga di una delle sottoscrizioni o dei componenti aggiuntivi seguenti:
 
@@ -85,7 +85,7 @@ Scegliere tra queste opzioni del gruppo di ruoli quando si configura la conformi
 
 5. Selezionare **Aggiungi** e quindi selezionare la casella di controllo per tutti gli utenti che si desidera aggiungere al gruppo di ruolo *conformità comunicazione* .
 
-6. Selezionare **Aggiungi** , quindi fare clic su **fine**.
+6. Selezionare **Aggiungi**, quindi fare clic su **fine**.
 
 7. Selezionare **Salva** per aggiungere gli utenti al gruppo di ruoli. Selezionare **Chiudi** per completare la procedura
 
@@ -103,7 +103,7 @@ Utilizzare questa opzione per assegnare gli utenti a specifici gruppi di ruoli p
 
 5. Selezionare **Aggiungi** e quindi selezionare la casella di controllo per tutti gli utenti che si desidera aggiungere al gruppo di ruoli.
 
-6. Selezionare **Aggiungi** , quindi fare clic su **fine**.
+6. Selezionare **Aggiungi**, quindi fare clic su **fine**.
 
 7. Selezionare **Salva** per aggiungere gli utenti al gruppo di ruoli.
 
@@ -190,10 +190,10 @@ Per ulteriori informazioni sulla configurazione di Yammer in modalità nativa, v
     
     - Scegliere se si desidera includere tipi di informazioni riservate. In questo passaggio è possibile selezionare i tipi di informazioni riservate predefinite e personalizzate. Scegliere tra tipi di informazioni riservate personalizzate esistenti o dizionari di parole chiave personalizzati nella procedura guidata criteri di conformità della comunicazione. È possibile creare questi elementi prima di eseguire la procedura guidata, se necessario. È inoltre possibile creare nuovi tipi di informazioni riservate dall'interno della procedura guidata criteri di conformità della comunicazione.
     
-    - Scegliere se si desidera abilitare i classificatori. I classificatori possono rilevare la lingua e le immagini inappropriate inviate o ricevute nel corpo dei messaggi di posta elettronica o di altri tipi di testo. È possibile scegliere i seguenti classificatori incorporati: *minaccia* , *profanità* , *molestie mirate* , *Immagini per adulti* , *Immagini* in fila e *immagini cruente*.
+    - Scegliere se si desidera abilitare i classificatori. I classificatori possono rilevare la lingua e le immagini inappropriate inviate o ricevute nel corpo dei messaggi di posta elettronica o di altri tipi di testo. È possibile scegliere i seguenti classificatori incorporati: *minaccia*, *profanità*, *molestie mirate*, *Immagini per adulti*, *Immagini* in fila e *immagini cruente*.
 
       > [!CAUTION]
-      > Il classificatore predefinito **Linguaggio offensivo** è stato deprecato perché generava un numero elevato di falsi positivi. Non utilizzarlo e, se lo si sta attualmente utilizzando, è consigliabile spostarne i processi aziendali. È consigliabile utilizzare invece la **minaccia** , la **profanità** e i classificatori incorporati per **molestie mirate** .
+      > Il classificatore predefinito **Linguaggio offensivo** è stato deprecato perché generava un numero elevato di falsi positivi. Non utilizzarlo e, se lo si sta attualmente utilizzando, è consigliabile spostarne i processi aziendali. È consigliabile utilizzare invece la **minaccia**, la **profanità** e i classificatori incorporati per **molestie mirate** .
 
     - Definire la percentuale di comunicazioni da esaminare.
     

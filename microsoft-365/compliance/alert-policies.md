@@ -19,12 +19,12 @@ ms.assetid: 8927b8b9-c5bc-45a8-a9f9-96c732e58264
 ms.custom:
 - seo-marvel-apr2020
 description: Creare criteri di avviso nel centro sicurezza e conformità di Office 365 e Microsoft 365 per monitorare le potenziali minacce, la perdita di dati e i problemi relativi alle autorizzazioni.
-ms.openlocfilehash: 7b2d5b380f71a31302a54cedb6076e6fca54fa86
-ms.sourcegitcommit: 5480982967a90ca3060a59676a6b29155f2de861
+ms.openlocfilehash: b6a1689ab475b9518c290bf3db03d2144610bf8b
+ms.sourcegitcommit: 001e64f89f9c3cd6bbd4a25459f5bee3b966820c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49350746"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "49367179"
 ---
 # <a name="alert-policies-in-the-security-and-compliance-center"></a>Criteri di avviso nel Centro sicurezza e conformità
 
@@ -33,7 +33,7 @@ ms.locfileid: "49350746"
 I criteri di avviso consentono di suddividere in categorie gli avvisi attivati da un criterio, applicare il criterio a tutti gli utenti dell'organizzazione, impostare un livello di soglia per il momento in cui viene attivato un avviso e decidere se ricevere notifiche tramite posta elettronica quando vengono attivati gli avvisi. È inoltre disponibile una pagina **Visualizza avvisi** nel centro sicurezza e conformità in cui è possibile visualizzare e filtrare gli avvisi, impostare lo stato di avviso per la gestione degli avvisi e quindi ignorare gli avvisi dopo aver affrontato o risolto l'evento sottostante.
 
 > [!NOTE]
-> I criteri di avviso sono disponibili per le organizzazioni che dispongono di un abbonamento a Microsoft 365 Enterprise, Office 365 Enterprise o Office 365 US Government E1/F1/G1, E3/G3 o E5/G5. La funzionalità avanzata è disponibile solo per le organizzazioni con un abbonamento E5/G5 o per le organizzazioni che dispongono di un abbonamento E1/F1/G1 o E3/G3 e di una sottoscrizione Microsoft Defender per Office 365 P2 o Microsoft 365 E5 o Microsoft 365 E5 eDiscovery e l'abbonamento di controllo del componente aggiuntivo. In questo argomento è evidenziata la funzionalità che richiede un abbonamento E5/G5 o un componente aggiuntivo. Si noti inoltre che i criteri di avviso sono disponibili in Office 365 GCC, GCC High e DoD US Government environments.
+> I criteri di avviso sono disponibili per le organizzazioni che dispongono di un abbonamento a Microsoft 365 Enterprise, Office 365 Enterprise o Office 365 US Government E1/F1/G1, E3/G3 o E5/G5. La funzionalità avanzata è disponibile solo per le organizzazioni con un abbonamento E5/G5 o per le organizzazioni che dispongono di un abbonamento E1/F1/G1 o E3/G3 e di una sottoscrizione di Microsoft Defender per Office 365 P2 o di Microsoft 365 E5 o di un abbonamento E5 eDiscovery e di controllo del componente aggiuntivo. In questo argomento è evidenziata la funzionalità che richiede un abbonamento E5/G5 o un componente aggiuntivo. Si noti inoltre che i criteri di avviso sono disponibili in Office 365 GCC, GCC High e DoD US Government environments.
 
 ## <a name="how-alert-policies-work"></a>Funzionamento di criteri di avviso
 

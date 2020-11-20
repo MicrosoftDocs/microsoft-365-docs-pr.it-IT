@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: b2aa72dea55d4c75f6e73161e07cf0a9bb5ecf1c
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: e8bf55cf3c27170c471dd45a68fd1ec2fa4a615b
+ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48846274"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49357445"
 ---
 # <a name="plan-for-insider-risk-management"></a>Piano per la gestione dei rischi Insider
 
@@ -57,7 +57,7 @@ A seconda della struttura del team di gestione della conformità, sono disponibi
 
 A seconda del modo in cui si prevede di implementare i criteri di gestione dei rischi Insider, è necessario disporre delle sottoscrizioni di licenza Microsoft 365 appropriate e comprendere e pianificare alcuni prerequisiti della soluzione.
 
-**Licenze:** La gestione dei rischi Insider è disponibile come parte di una vasta gamma di abbonamenti alle licenze Microsoft 365. Per informazioni dettagliate, vedere la [Guida introduttiva all'articolo sulla gestione dei rischi Insider](insider-risk-management-configure.md#before-you-begin) .
+**Licenze:** La gestione dei rischi Insider è disponibile come parte di una vasta gamma di abbonamenti alle licenze Microsoft 365. Per informazioni dettagliate, vedere la [Guida introduttiva all'articolo sulla gestione dei rischi Insider](insider-risk-management-configure.md#subscriptions-and-licensing) .
 
 Se non si dispone di un piano Microsoft 365 Enterprise E5 esistente e si desidera tentare la gestione dei rischi Insider, è possibile [aggiungere microsoft 365](https://docs.microsoft.com/office365/admin/try-or-buy-microsoft-365) alla sottoscrizione esistente oppure [iscriversi per una versione di valutazione](https://www.microsoft.com/microsoft-365/enterprise) di Microsoft 365 Enterprise E5.
 
