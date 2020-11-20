@@ -1,11 +1,11 @@
 ---
-title: Registrazione dei dispositivi iOS e Android nell'ambiente di testing di Microsoft 365 per l'organizzazione
+title: Registrare i dispositivi iOS/iPados e Android nell'ambiente di testing di Microsoft 365 per l'organizzazione
 f1.keywords:
 - NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/09/2019
+ms.date: 11/19/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -14,23 +14,23 @@ ms.collection: M365-identity-device-management
 ms.custom: Ent_TLGs
 ms.assetid: 49c7758a-1c01-4153-9b63-5eae3f6305ce
 description: Utilizzare questa guida del laboratorio di testing per registrare i dispositivi nell'ambiente di testing di Microsoft 365 e gestirli in remoto.
-ms.openlocfilehash: 3736934dbb62e84aad6a91fcd1d65b4a47ef8637
-ms.sourcegitcommit: 53ff1fe6d6143b0bf011031eea9b85dc01ae4f74
+ms.openlocfilehash: 06f83d1ed61bcc530b6aa974d7730f1aadc0ecbd
+ms.sourcegitcommit: 001e64f89f9c3cd6bbd4a25459f5bee3b966820c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48487697"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "49367084"
 ---
 # <a name="enroll-ios-and-android-devices-in-your-microsoft-365-for-enterprise-test-environment"></a>Registrazione dei dispositivi iOS e Android nell'ambiente di testing di Microsoft 365 per l'organizzazione
 
 *Questa guida del laboratorio di testing può essere utilizzata solo per Microsoft 365 per gli ambienti di testing dell'organizzazione.*
 
-In questo articolo viene descritto come eseguire la registrazione e il testing delle funzionalità di base per la gestione dei dispositivi mobili per iOS e Android nell'ambiente di testing Microsoft 365 for Enterprise.
+In questo articolo viene descritto come eseguire la registrazione e il testing delle funzionalità di base per la gestione dei dispositivi mobili per iOS/iPados e i dispositivi Android nell'ambiente di testing Microsoft 365 for Enterprise.
 
-La registrazione dei dispositivi iOS e Android nell'ambiente di testing comporta tre fasi:
+La registrazione di dispositivi iOS/iPados e Android nell'ambiente di testing comporta tre fasi:
 - [Fase 1: creare l'ambiente di testing di Microsoft 365 per l'organizzazione](#phase-1-build-out-your-microsoft-365-for-enterprise-test-environment)
-- [Fase 2: registrare i dispositivi iOS e Android](#phase-2-enroll-your-ios-and-android-devices)
-- [Fase 3: gestire i dispositivi iOS e Android in remoto](#phase-3-manage-your-ios-and-android-devices-remotely)
+- [Fase 2: registrare i dispositivi iOS/iPados e Android](#phase-2-enroll-your-ios-and-android-devices)
+- [Fase 3: gestire i dispositivi iOS/iPados e Android in remoto](#phase-3-manage-your-ios-and-android-devices-remotely)
 
 ![Guide al lab di test per il cloud Microsoft](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
   
@@ -39,40 +39,36 @@ La registrazione dei dispositivi iOS e Android nell'ambiente di testing comporta
 
 ## <a name="phase-1-build-out-your-microsoft-365-for-enterprise-test-environment"></a>Fase 1: creare l'ambiente di testing di Microsoft 365 per l'organizzazione
 
-Se si desidera registrare i dispositivi iOS e Android in modo semplice con i requisiti minimi, seguire le istruzioni in [Lightweight base Configuration](lightweight-base-configuration-microsoft-365-enterprise.md).
+Se si desidera registrare i dispositivi iOS/iPados e Android in modo semplice con i requisiti minimi, seguire le istruzioni contenute in [Lightweight base Configuration](lightweight-base-configuration-microsoft-365-enterprise.md).
   
-Se si desidera registrare i dispositivi iOS e Android in un'azienda simulata, seguire le istruzioni riportate nell' [autenticazione pass-through](pass-through-auth-m365-ent-test-environment.md).
+Se si desidera registrare i dispositivi iOS/iPados e Android in un'azienda simulata, seguire le istruzioni riportate nell' [autenticazione pass-through](pass-through-auth-m365-ent-test-environment.md).
   
 > [!NOTE]
 > Testing Automatic Licensing and Group Membership non richiede l'ambiente di testing dell'organizzazione simulata, che include una rete Intranet simulata connessa a Internet e la sincronizzazione della directory per una foresta di servizi di dominio Active Directory (AD DS). È disponibile come opzione in modo che sia possibile testare la licenza automatizzata e l'appartenenza ai gruppi ed è possibile sperimentarla in un ambiente che rappresenta un'organizzazione tipica.
 
 ## <a name="phase-2-enroll-your-ios-and-android-devices"></a>Fase 2: registrare i dispositivi iOS e Android
 
-In primo luogo, utilizzare le istruzioni riportate in [Install and Sign in to the Company Portal app](https://docs.microsoft.com/intune-user-help/install-and-sign-in-to-the-intune-company-portal-app-ios) per personalizzare l'app portale aziendale di Microsoft Intune per l'ambiente di testing.
+Se si sta prendendo in considerazione una soluzione di gestione dei dispositivi mobili (MDM) per la gestione del dispositivo, è possibile utilizzare Microsoft Intune. Quando si utilizza un provider MDM, tra cui Intune, i dispositivi vengono "registrati". Quando si effettua la registrazione, ricevono le caratteristiche e le impostazioni configurate. 
 
-Successivamente, seguire le istruzioni riportate in [configurare l'accesso alle risorse aziendali](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-ios) per registrare un dispositivo iOS.
+In Intune, esistono alcuni modi per registrare i dispositivi iOS/iPados e Android. È possibile scegliere l'opzione di registrazione più adatta per l'organizzazione. Per ulteriori informazioni e indicazioni, vedere gli articoli seguenti:
 
-Successivamente, seguire le istruzioni riportate in [registrazione del dispositivo Android in Intune](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-android) per registrare un dispositivo Android.
+- [Guida alla distribuzione: registrare i dispositivi iOS e iPados in Microsoft Intune](/mem/intune/fundamentals/deployment-guide-enrollment-ios-ipados)
+- [Guida alla distribuzione: registrare i dispositivi Android in Microsoft Intune](/mem/intune/fundamentals/deployment-guide-enrollment-android)
+
+Se si è pronti per l'utilizzo di Intune per la gestione dei dispositivi e si desidera una guida, è possibile che le informazioni seguenti possano essere utili:
+
+- [Panoramica della gestione dei dispositivi](/mem/intune/fundamentals/what-is-device-management)
+- [Esercitazione: procedura dettagliata di Intune in Microsoft Endpoint Manager](/mem/intune/fundamentals/tutorial-walkthrough-endpoint-manager)
+- [Guida alla distribuzione: installazione o spostamento in Microsoft Intune](/mem/intune/fundamentals/deployment-guide-intune-setup)
 
 ## <a name="phase-3-manage-your-ios-and-android-devices-remotely"></a>Fase 3: gestire i dispositivi iOS e Android in remoto
 
-Microsoft Intune fornisce sia la funzionalità di blocco remoto sia quella di reimpostazione del passcode. Se un utente perde il dispositivo, è possibile bloccare il dispositivo in remoto. Se qualcuno dimentica il proprio codice di accesso, è possibile reimpostarlo in remoto.
-  
-Per bloccare in remoto un dispositivo iOS o Android:
+Microsoft Intune offre funzionalità di ripristino di codice e di blocco remoto. Se un utente perde il dispositivo, è possibile bloccare il dispositivo in remoto. Se qualcuno dimentica il proprio codice di accesso, è possibile reimpostarlo in remoto.
 
-1. Accedere al portale di Azure [https://portal.azure.com](https://portal.azure.com) con le credenziali dell'account di amministratore globale.
-2. Nel portale di Azure, immettere **Intune** nella casella di ricerca e quindi fare clic su **Intune**.
-3. Fare clic su **dispositivi > tutti i dispositivi**.
-4. Nell'elenco dei dispositivi, selezionare un dispositivo iOS o Android, quindi selezionare l'azione **Remote Lock** .
-    
-Per reimpostare in remoto il codice di accesso:
+- Per bloccare in remoto un dispositivo iOS/iPados o Android, vedere [Remote Lock Devices with Intune](/mem/intune/remote-actions/device-remote-lock).
+- Per reimpostare in remoto il codice di accesso, vedere [reimpostare o rimuovere un codice di accesso al dispositivo in Intune](/mem/intune/remote-actions/device-passcode-reset).
 
-1. Se necessario, accedere al portale di Azure [https://portal.azure.com](https://portal.azure.com) con le credenziali dell'account di amministratore globale.
-2. Nel portale di Azure, immettere **Intune** nella casella di ricerca e quindi fare clic su **Intune**.
-3. Selezionare **dispositivi**per  >  **tutti i dispositivi**.
-4. Nell'elenco dei dispositivi gestiti, selezionare un dispositivo iOS o Android, selezionare **... **E quindi seleziona l'azione remota **Rimuovi** dispositivo di accesso.
-
-Per ulteriori esperimenti, vedere [available device actions](https://docs.microsoft.com/intune/device-management#available-device-actions).
+Per le attività aggiuntive che è possibile eseguire in remoto, vedere [available device actions](/mem/intune/remote-actions/device-management#available-device-actions).
     
 ## <a name="next-step"></a>Passaggio successivo
 

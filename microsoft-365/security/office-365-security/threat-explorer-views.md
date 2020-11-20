@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-defender-office365
 description: Informazioni su come utilizzare l'esploratore di minacce e il rapporto sui rilevamenti in tempo reale per esaminare e rispondere alle minacce nel centro sicurezza e &amp; conformità.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 83fa2d89c74b5ec1e2de7e65457313f20bbf2681
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: f9412350384c0b2092c376db371e93fa5295c454
+ms.sourcegitcommit: 001e64f89f9c3cd6bbd4a25459f5bee3b966820c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48844321"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "49367190"
 ---
 # <a name="views-in-threat-explorer-and-real-time-detections"></a>Visualizzazioni in Esplora minacce e rilevamenti in tempo reale
 
@@ -98,7 +98,7 @@ Per visualizzare questo report, in Esplora risorse (o rilevamenti in tempo reale
 
 Fare clic su **sender** per aprire l'elenco delle opzioni di visualizzazione. Utilizzare questo elenco per visualizzare le informazioni per mittente, destinatario, tipo di rapporto (la determinazione dell'utente che la posta elettronica è indesiderata, non indesiderata o phishing) e altro ancora.
 
-Ad esempio, per visualizzare informazioni sui messaggi di posta elettronica segnalati come tentativi di phishing **Sender** , fare clic su  >  **tipo di rapporto** mittente, selezionare **phishing** e quindi fare clic sul pulsante Aggiorna.
+Ad esempio, per visualizzare informazioni sui messaggi di posta elettronica segnalati come tentativi di phishing **Sender**, fare clic su  >  **tipo di rapporto** mittente, selezionare **phishing** e quindi fare clic sul pulsante Aggiorna.
 
 ![Phishing selezionato per il filtro dei tipi di report](../../media/ThreatExplorerEmailUserReportedPhishSelected.png)
 
@@ -113,9 +113,9 @@ Selezionare un elemento nell'elenco per visualizzare ulteriori dettagli.
 Per visualizzare questo report, in Esplora, scegliere **Visualizza**  >  **posta elettronica**  >  **tutti i messaggi**. Questa visualizzazione Mostra una panoramica completa dell'attività di posta elettronica, inclusi i messaggi di posta elettronica identificati come dannosi a causa di phishing o malware, nonché tutti i messaggi non dannosi (posta elettronica normale, posta indesiderata e messaggi in blocco).
 
 > [!NOTE]
-> Se viene visualizzato un messaggio di errore in cui vengono letti **troppi dati da visualizzare** , aggiungere un filtro e, se necessario, limitare l'intervallo di date che si sta visualizzando.
+> Se viene visualizzato un messaggio di errore in cui vengono letti **troppi dati da visualizzare**, aggiungere un filtro e, se necessario, limitare l'intervallo di date che si sta visualizzando.
 
-Per applicare un filtro, scegliere **mittente** , selezionare un elemento nell'elenco e quindi fare clic sul pulsante Aggiorna. In questo esempio, è stata utilizzata la **tecnologia di rilevamento** come filtro (sono disponibili diverse opzioni). Visualizzare le informazioni per mittente, dominio del mittente, destinatari, oggetto, nome file allegato, famiglia di malware, stato di protezione (azioni intraprese dalle caratteristiche e dai criteri di protezione dalle minacce in Office 365), tecnologia di rilevamento (come è stato rilevato il malware) e altro ancora.
+Per applicare un filtro, scegliere **mittente**, selezionare un elemento nell'elenco e quindi fare clic sul pulsante Aggiorna. In questo esempio, è stata utilizzata la **tecnologia di rilevamento** come filtro (sono disponibili diverse opzioni). Visualizzare le informazioni per mittente, dominio del mittente, destinatari, oggetto, nome file allegato, famiglia di malware, stato di protezione (azioni intraprese dalle caratteristiche e dai criteri di protezione dalle minacce in Office 365), tecnologia di rilevamento (come è stato rilevato il malware) e altro ancora.
 
 ![Visualizzare i dati relativi alla posta elettronica individuata mediante tecnologia di rilevamento](../../media/0c032eb3-6021-4174-9f06-ff8f30c245ca.png)
 

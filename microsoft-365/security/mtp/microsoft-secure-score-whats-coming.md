@@ -17,12 +17,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 82ec67cae86525c055b2232667cccb603830d15f
-ms.sourcegitcommit: c51de5e1a4cb9c4a7a9854a4226b32453d9e73e0
+ms.openlocfilehash: 5627358db1b762db772b8f4ee61569968dc73a73
+ms.sourcegitcommit: 001e64f89f9c3cd6bbd4a25459f5bee3b966820c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "48779249"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "49367116"
 ---
 # <a name="whats-coming-to-microsoft-secure-score"></a>Cosa viene a Microsoft Secure Score
 
@@ -34,33 +34,10 @@ Sono state apportate alcune modifiche nel prossimo futuro per rendere [Microsoft
 
 ### <a name="november-2020"></a>2020 novembre
 
-La rimozione della possibilità di creare i ticket di ServiceNow tramite il Punteggio sicuro è in grado di **condividere > ServiceNow** .
+La rimozione della possibilità di creare i ticket di ServiceNow tramite il Punteggio sicuro è in grado di **condividere > ServiceNow**.
 
 - Il periodo di anteprima per il connettore ServiceNow termina. Questa funzionalità non sarà più disponibile entro la fine di 2020. La ringrazio per i commenti e il supporto continuo, mentre si determinano i passaggi successivi.
 
-Aggiunta di 18 azioni di miglioramento relative a Microsoft Defender per endpoint (in precedenza Microsoft Defender ATP):
-
-Suggerimenti correlati alla riduzione della superficie di attacco (ASR):
-- Bloccare i contenuti eseguibili dal client di posta elettronica e webmail
-- Blocca tutte le applicazioni di Office dalla creazione dei processi figlio
-- Bloccare le applicazioni di Office dalla creazione di contenuto eseguibile
-- Blocca le applicazioni di Office dall'inserimento di codice in altri processi
-- Blocca JavaScript o VBScript dall'avvio del contenuto eseguibile scaricato
-- Bloccare l'esecuzione di script potenzialmente offuscati
-- Bloccare le chiamate API Win32 dalle macro di Office
-- Bloccare l'esecuzione di file eseguibili a meno che non soddisfino un criterio di prevalenza, età o elenco attendibile
-- Utilizzare Advanced Protection against ransomware
-- Bloccare la sottrazione di credenziali dal sottosistema di autorità di sicurezza locale di Windows (lsass.exe)
-- Bloccare le creazioni dei processi originati da comandi di PSExec e WMI
-- Blocca processi non attendibili e non firmati che vengono eseguiti da USB
-- Bloccare l'applicazione di comunicazione di Office dalla creazione dei processi figlio
-- Impedire a Adobe Reader di creare processi figlio
-- Blocca la persistenza tramite la sottoscrizione di eventi WMI
-
-Suggerimenti relativi ai servizi:
-- Risolvere il percorso del servizio non quotato per i servizi Windows
-- Modificare il percorso eseguibile del servizio in una posizione protetta comune
-- Cambiare l'account del servizio per evitare la password memorizzata nella cache nel registro di sistema
 
 ## <a name="related-resources"></a>Risorse correlate
 

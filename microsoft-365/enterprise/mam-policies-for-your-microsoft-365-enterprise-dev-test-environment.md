@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/09/2019
+ms.date: 11/19/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -14,12 +14,12 @@ ms.collection: M365-identity-device-management
 ms.custom: Ent_TLGs
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
 description: Utilizzare questa guida del laboratorio di testing per aggiungere criteri di conformità dei dispositivi di Intune all'ambiente di testing di Microsoft 365 per l'organizzazione.
-ms.openlocfilehash: c1de822e5a97416bd0c672d88f2902d8986638c8
-ms.sourcegitcommit: 53ff1fe6d6143b0bf011031eea9b85dc01ae4f74
+ms.openlocfilehash: d42c9a603ca581941cb5a8f30b9ecd9d6f780759
+ms.sourcegitcommit: 001e64f89f9c3cd6bbd4a25459f5bee3b966820c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48487413"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "49367096"
 ---
 # <a name="device-compliance-policies-for-your-microsoft-365-for-enterprise-test-environment"></a>Criteri di conformità dei dispositivi per l'ambiente di testing di Microsoft 365 per l'organizzazione
 
@@ -48,34 +48,25 @@ Se si desidera configurare i criteri MAM in un'azienda simulata, seguire le istr
 
 ## <a name="phase-2-create-a-device-compliance-policy-for-windows-10-devices"></a>Fase 2: creare un criterio di conformità del dispositivo per i dispositivi Windows 10
 
-In questa fase, creare un criterio di conformità del dispositivo per i dispositivi Windows 10.
-  
-1. Accedere all'interfaccia di [amministrazione di microsoft 365](https://admin.microsoft.com) e accedere all'abbonamento al laboratorio di testing di Microsoft 365 con l'account di amministratore globale.
-1. In una nuova scheda del browser, aprire il portale di Azure all'indirizzo [https://portal.azure.com](https://portal.azure.com) .
-1. Nella casella di ricerca del portale di Azure, immettere **Intune**e quindi fare clic su **Intune**.
-1. Se viene visualizzato un messaggio **che non è ancora stato abilitato** per la gestione dei dispositivi nel riquadro di **Microsoft Intune** , selezionarlo. Nel riquadro **autorità di gestione dei dispositivi mobili** selezionare **autorità**di amministrazione di Intune, quindi **scegliere Scegli**.
-1. Aggiornare la scheda del browser.
-1. Nel riquadro di spostamento a sinistra, selezionare **gruppi**.
-1. Nel riquadro **gruppi-tutti i gruppi** selezionare **+ nuovo gruppo**.
-1. Nel riquadro **gruppo** selezionare **Microsoft 365** o **sicurezza** per tipo di **gruppo**, immettere **gli utenti del dispositivo Windows 10 gestiti** in **nome**, selezionare **assegnato** in **tipo di appartenenza**e quindi selezionare **Crea**.
-1. Selezionare **Microsoft Intune**.
-1. Nell'elenco **attività rapide** del riquadro di **Microsoft Intune** selezionare **Crea un criterio di conformità**.
-1. Nel riquadro **profili criteri di conformità** , selezionare **Crea criterio**.
-1. Nel riquadro **Crea criterio** , in **nome**, immettere **Windows 10**. In **piattaforma**selezionare **Windows 10 e versioni successive**, fare clic su **OK** nel riquadro **criteri di conformità di Windows 10** e quindi selezionare **Crea**.
-1. Selezionare **profili dei criteri di conformità**e quindi selezionare il nome del criterio di **Windows 10** .
-1. Nel riquadro di **Windows 10** , selezionare **assegnazioni**, quindi selezionare **gruppi da includere**.
-1. Nel riquadro **Seleziona gruppi da includere** selezionare il gruppo di **utenti del dispositivo Windows 10 gestito** e quindi selezionare **Seleziona**.
-1. Selezionare **Salva**, selezionare **Microsoft Intune-Panoramica**, quindi selezionare **app client** nella barra di spostamento a sinistra.
-1. Nel riquadro **app client** , selezionare **app**, quindi fare clic su **Aggiungi**.
-1. Nel riquadro **Aggiungi app** selezionare tipo di **app**e quindi selezionare **Windows 10** in **Microsoft 365 Suite**.
-1. Nel riquadro **Aggiungi app** , seleziona **informazioni sulla famiglia di applicazioni**.
-1. Nel riquadro **delle informazioni della famiglia** di applicazioni, immettere **Microsoft 365 Apps for Enterprise** sia in **Suite Name** che nella **Descrizione della famiglia**, quindi selezionare **OK**.
-1. Nel riquadro **Aggiungi applicazione** , selezionare **Configura app Suite**, quindi fare clic su **OK**.
-1. Nel riquadro **Aggiungi app** selezionare impostazioni della **famiglia di applicazioni**.
-1. Per il **canale di aggiornamento**, selezionare **organizzazione semestrale**e quindi fare clic su **OK**.
-1. Nel riquadro **Aggiungi applicazione** selezionare **Aggiungi**.
+In questa fase, è possibile creare un criterio di conformità del dispositivo per i dispositivi Windows 10. In questa fase vengono utilizzati Microsoft Intune e l'interfaccia di [amministrazione di Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431) per aggiungere un gruppo e creare un criterio di conformità.
 
-Ora si dispone di un criterio di conformità del dispositivo per testare le app selezionate nei criteri di conformità dei dispositivi **Windows 10** e per i membri del gruppo di **utenti del dispositivo Windows 10 gestito** . Tenere presente che se si seleziona **Microsoft 365** come tipo di gruppo, vengono create altre risorse.
+1. Accedere all'interfaccia di [amministrazione di microsoft 365](https://admin.microsoft.com)e accedere all'abbonamento al laboratorio di testing di Microsoft 365 con l'account di amministratore globale. Selezionare l'interfaccia di amministrazione di **Endpoint Manager** . Verrà aperto l'interfaccia di [amministrazione di Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431) .
+
+    Se un messaggio simile a non è stato abilitato per la **gestione dei dispositivi** , viene visualizzato il messaggio, quindi selezionare Intune come autorità MDM. Per la procedura specifica, vedere [impostare l'autorità di gestione dei dispositivi mobili](/mem/intune/fundamentals/mdm-authority-set).
+
+    L'interfaccia di amministrazione di Endpoint Manager si concentra sulla gestione dei dispositivi e sulla gestione delle app. Per un tour di questo interfaccia di amministrazione, vedere [tutorial: Walkthrough Intune in Microsoft Endpoint Manager](/mem/intune/fundamentals/tutorial-walkthrough-endpoint-manager).
+
+2. In **gruppi**, aggiungere un nuovo gruppo di **sicurezza** o di **Microsoft 365** denominato **utenti del dispositivo Windows 10 gestiti**, con un tipo di appartenenza **assegnato** . Nei passaggi successivi, verranno assegnati i criteri di conformità a questo gruppo. 
+
+    Per i passaggi specifici e per informazioni su **Microsoft 365** o gruppi di **sicurezza** , vedere [aggiungere gruppi per l'organizzazione di utenti e dispositivi](/mem/intune/fundamentals/groups-add).
+
+3. In **dispositivi**, creare un criterio di conformità di Windows 10. Assegnare questo criterio al gruppo di **utenti di dispositivi Windows 10 gestito** creato.
+
+    Nel criterio, è possibile bloccare le password semplici, richiedere un firewall, richiedere che il servizio antimalware di Microsoft Defender sia in esecuzione e altro ancora. I criteri di conformità in genere includono le impostazioni di base o il minimo indispensabile per ogni dispositivo.
+
+    Per i passaggi specifici e per informazioni sulle impostazioni di conformità disponibili che è possibile configurare, vedere [use Compliance Policies to set rules for Devices you manage](/mem/intune/protect/device-compliance-get-started).
+
+Al termine, si dispone di un criterio di conformità del dispositivo per i membri di testing nel gruppo di **utenti di dispositivi Windows 10 gestito** .
   
 ## <a name="next-step"></a>Passaggio successivo
 
