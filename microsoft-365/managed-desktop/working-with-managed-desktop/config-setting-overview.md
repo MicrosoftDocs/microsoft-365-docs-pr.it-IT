@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 1af320ee6151036000e4e8c6fedc4d9152411283
-ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
+ms.openlocfilehash: bf8672ee6c3332ea6f8522f5086d72e58d1b9048
+ms.sourcegitcommit: bdf65d48b20f0f428162c39ee997accfa84f4e5d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46530236"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "49371491"
 ---
 # <a name="configurable-settings---microsoft-managed-desktop"></a>Impostazioni configurabili - Microsoft Managed Desktop
 
@@ -22,7 +22,7 @@ Microsoft Managed Desktop distribuisce le impostazioni e i criteri applicati a t
 
 Le impostazioni configurabili in Microsoft Managed Desktop offrono agli amministratori un modo per personalizzare e distribuire le impostazioni univoche per la propria organizzazione e le proprie esigenze aziendali. Queste impostazioni sono oltre alle impostazioni di configurazione dei dispositivi e ai criteri gestiti da Microsoft Managed Desktop.  
 
-Le modifiche alle impostazioni configurabili vengono apportate nel cloud e applicate ai dispositivi Microsoft Managed Desktop in gruppi di distribuzione definiti. Questo processo è simile a quello in cui Microsoft Managed Desktop gestisce le modifiche apportate alle impostazioni e ai criteri di configuruation del dispositivo definiti e gestiti dal servizio. Se si utilizza lo stesso processo utilizzato da Microsoft Managed Desktop per la distribuzione delle modifiche, è possibile continuare a spostare l'organizzazione in avanti, utilizzando le procedure moderne di gestione IT.
+Le modifiche alle impostazioni configurabili vengono apportate nel cloud e applicate ai dispositivi Microsoft Managed Desktop in gruppi di distribuzione definiti. Questo processo è simile a quello in cui Microsoft Managed Desktop gestisce le modifiche apportate alle impostazioni di configurazione dei dispositivi e ai criteri definiti e gestiti dal servizio. Se si utilizza lo stesso processo utilizzato da Microsoft Managed Desktop per la distribuzione delle modifiche, è possibile continuare a spostare l'organizzazione in avanti, utilizzando le procedure moderne di gestione IT.
 
 ## <a name="when-to-use-configurable-settings"></a>Quando utilizzare le impostazioni configurabili?
 
@@ -64,7 +64,7 @@ Le modifiche vengono configurate e inscenate nel portale di amministrazione di M
 Tutte le impostazioni configurabili vengono gestite tramite il portale di amministrazione di Microsoft Managed Desktop. Per ulteriori informazioni, vedere [Deploy Changes](config-setting-deploy.md). 
 
 **Passaggio 5-track changes** – monitorare lo stato di avanzamento delle modifiche apportate allo stato di distribuzione. Per ogni impostazione, è possibile:
-- **Track Progress** – stato del rilevamento dopo la distribuzione della modifica. Lo stato verrà modificato **in in corso**e quindi **completo**o **non riuscito**. Se una distribuzione ha esito negativo, viene aperta automaticamente una richiesta di supporto per le operazioni di Microsoft Managed Desktop per esaminare il problema.  
+- **Track Progress** – stato del rilevamento dopo la distribuzione della modifica. Lo stato verrà modificato **in in corso** e quindi **completo** o **non riuscito**. Se una distribuzione ha esito negativo, viene aperta automaticamente una richiesta di supporto per le operazioni di Microsoft Managed Desktop per esaminare il problema.  
 - **Vedere la versione distribuita** : ogni modifica distribuita ha un numero di versione.
 - **Ripristina modifiche** – il ripristino di una modifica interrompe la distribuzione corrente e ripristina tutti i gruppi alle ultime modifiche che sono state distribuite a tutti i gruppi. Si sta ripristinando il valore dell'impostazione dell'ultima nota.
 - **Convalidare le modifiche** -dopo aver completato la distribuzione, convalidare le modifiche sono state applicate come previsto.  

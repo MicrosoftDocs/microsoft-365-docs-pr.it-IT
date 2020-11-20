@@ -9,12 +9,12 @@ audience: ITPro
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: laurawi
-ms.openlocfilehash: 5adf57c2397c4de3c5ea8622a2a9be7207ebf152
-ms.sourcegitcommit: 5e40c760c1af2a4cc6d85cb782b17f5c979677c5
+ms.openlocfilehash: 66e4e5c305947f90f935563a3baf0592ce42480a
+ms.sourcegitcommit: bdf65d48b20f0f428162c39ee997accfa84f4e5d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48379299"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "49371671"
 ---
 # <a name="access-the-admin-portal"></a>Accedere al portale di amministrazione
 
@@ -37,7 +37,7 @@ Per poter accedere alle funzionalità amministrative di Microsoft Managed Deskto
 |Amministratore globale     | Gli amministratori con questo ruolo avranno **autorizzazioni di lettura e scrittura per tutte le funzionalità** nel portale di amministrazione di Microsoft Managed Desktop.         |
 |Ruolo con autorizzazioni di lettura globali     | Gli amministratori con questo ruolo avranno le **autorizzazioni di sola lettura per tutte le funzionalità** nel portale di amministrazione di Microsoft Managed Desktop.         |
 |Amministratore del servizio Intune     |  Gli amministratori con questo ruolo avranno **autorizzazioni di lettura e scrittura per le caratteristiche non correlate alla sicurezza** nel portale di amministrazione di Microsoft Managed Desktop.       |
-|Amministratore del supporto tecnico     | Gli amministratori con questo ruolo avranno **autorizzazioni di lettura e scrittura per le caratteristiche non correlate alla sicurezza** nel portale di amministrazione di Microsoft Managed Desktop.         |
+|Amministratore del supporto tecnico     | Gli amministratori con questo ruolo avranno le **autorizzazioni di sola lettura per le funzionalità non correlate alla sicurezza** e alle **autorizzazioni di scrittura per gestire le richieste di supporto** nel portale di amministrazione di Microsoft Managed Desktop.         |
 |Amministratore della sicurezza | Gli amministratori con questo ruolo avranno le **autorizzazioni di sola lettura per tutte le caratteristiche** e le **autorizzazioni di scrittura per le funzionalità relative alla sicurezza** in Microsoft Managed Desktop nel portale di amministrazione. |
 |Ruolo con autorizzazioni di lettura per la sicurezza |Gli amministratori con questo ruolo avranno le **autorizzazioni di sola lettura per tutte le funzionalità** nel portale di amministrazione di Microsoft Managed Desktop.|
 

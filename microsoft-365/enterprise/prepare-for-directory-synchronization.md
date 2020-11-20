@@ -26,12 +26,12 @@ search.appverid:
 - MBS150
 ms.assetid: 01920974-9e6f-4331-a370-13aea4e82b3e
 description: Descrive come prepararsi a eseguire il provisioning degli utenti a Microsoft 365 utilizzando la sincronizzazione della directory e i vantaggi a lungo termine dell'utilizzo di questo metodo.
-ms.openlocfilehash: b74310b0f444da118699c5ad5fbb68b15519b830
-ms.sourcegitcommit: 45c0afcf958069c5c1b31f9b6c762d8dd806e1e9
+ms.openlocfilehash: e49cc4472b47320650d8a0ca90395b69ae5b6df7
+ms.sourcegitcommit: bdf65d48b20f0f428162c39ee997accfa84f4e5d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "48773986"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "49371625"
 ---
 # <a name="prepare-for-directory-synchronization-to-microsoft-365"></a>Preparare la sincronizzazione della directory con Microsoft 365
 
@@ -60,9 +60,9 @@ In servizi di dominio Active Directory, completare le seguenti attività di puli
 
 1. Verificare l'indirizzo di posta elettronica valido e univoco nell'attributo **proxyAddresses** .
 
-2. Rimuovere tutti i valori duplicati nell'attributo **proxyAddresses** .
+2. Rimuovere tutti i valori duplicati nell'attributo **proxyAddresses**.
 
-3. Se possibile, garantire un valore valido e univoco per l'attributo **userPrincipalName** nell'oggetto **utente** dell'utente. Per un'esperienza di sincronizzazione ottimale, verificare che l'UPN di servizi di dominio Active Directory corrisponda all'UPN di Azure AD. Se un utente non dispone di un valore per l'attributo **userPrincipalName** , l'oggetto **user** deve contenere un valore univoco e valido per l'attributo **sAMAccountName** . Rimuovere tutti i valori duplicati nell'attributo **userPrincipalName** .
+3. Se possibile, garantire un valore valido e univoco per l'attributo **userPrincipalName** nell'oggetto **utente** dell'utente. Per un'esperienza di sincronizzazione ottimale, verificare che l'UPN di servizi di dominio Active Directory corrisponda all'UPN di Azure AD. Se un utente non dispone di un valore per l'attributo **userPrincipalName**, l'oggetto **user** deve contenere un valore univoco e valido per l'attributo **sAMAccountName**. Rimuovere tutti i valori duplicati nell'attributo **userPrincipalName**.
 
 4. Per un utilizzo ottimale dell'elenco indirizzi globale (GAL, Global Address List), assicurarsi che le informazioni contenute nei seguenti attributi dell'account utente di servizi di dominio Active Directory siano corrette:
 
@@ -127,7 +127,7 @@ Gli attributi necessari per la preparazione sono elencati di seguito:
     Si noti che i caratteri non validi si applicano ai caratteri che seguono il delimitatore di tipo e ":", in modo che SMTP:User@contso.com sia consentita, ma SMTP:user:M@contoso.com non lo è.
 
     > [!IMPORTANT]
-    > Tutti gli indirizzi SMTP (Simple Mail Transport Protocol) devono essere conformi agli standard di messaggistica di posta elettronica Se esistono indirizzi duplicati o indesiderati, vedere l'argomento della Guida relativo alla [rimozione di indirizzi proxy duplicati e indesiderati in Exchange](https://go.microsoft.com/fwlink/?LinkId=293860).
+    > Tutti gli indirizzi SMTP (Simple Mail Transport Protocol) devono essere conformi agli standard di messaggistica di posta elettronica Se esistono, rimuovere gli indirizzi duplicati o indesiderati.
 
 - **sAMAccountName**
 
@@ -160,8 +160,8 @@ Gli attributi necessari per la preparazione sono elencati di seguito:
   - Caratteri non validi: \% &amp; \* +/=? { } | \< \> ( ) ; : , [ ] "
   - Caratteri consentiti: A – Z, a-z, 0 – 9,'. - _ ! # ^ ~
   - Le lettere con segni diacritici, ad esempio dieresi, accenti e tilde, sono caratteri non validi.
-  - Il carattere @ è necessario in ogni valore **userPrincipalName** .
-  - Il carattere @ non può essere il primo carattere in ogni valore **userPrincipalName** .
+  - Il carattere @ è necessario in ogni valore **userPrincipalName**.
+  - Il carattere @ non può essere il primo carattere in ogni valore **userPrincipalName**.
   - Il nome utente non può terminare con un punto (.), una e commerciale ( &amp; ), uno spazio o un segno di chiocciola (@).
   - Il nome utente non può contenere spazi.
   - I domini instradabili devono essere utilizzati. ad esempio, non è possibile utilizzare i domini locali o interni.
@@ -170,7 +170,7 @@ Gli attributi necessari per la preparazione sono elencati di seguito:
 
 ## <a name="3-prepare-the-userprincipalname-attribute"></a>3. preparare l'attributo userPrincipalName
 
-Active Directory è stato creato per consentire agli utenti finali dell'organizzazione di accedere alla directory tramite **sAMAccountName** o **userPrincipalName** . Analogamente, gli utenti finali possono accedere a Microsoft 365 utilizzando il nome dell'entità utente (UPN) dell'account aziendale o dell'Istituto di istruzione. La sincronizzazione della directory tenta di creare nuovi utenti in Azure Active Directory utilizzando lo stesso UPN presente in servizi di dominio Active copia. L'UPN viene formattato come un indirizzo di posta elettronica.
+Active Directory è stato creato per consentire agli utenti finali dell'organizzazione di accedere alla directory tramite **sAMAccountName** o **userPrincipalName**. Analogamente, gli utenti finali possono accedere a Microsoft 365 utilizzando il nome dell'entità utente (UPN) dell'account aziendale o dell'Istituto di istruzione. La sincronizzazione della directory tenta di creare nuovi utenti in Azure Active Directory utilizzando lo stesso UPN presente in servizi di dominio Active copia. L'UPN viene formattato come un indirizzo di posta elettronica.
 
 In Microsoft 365, l'UPN è l'attributo predefinito utilizzato per generare l'indirizzo di posta elettronica. È facile ottenere **userPrincipalName** (in servizi di dominio Active Directory e in Azure ad) e l'indirizzo di posta elettronica principale in **proxyAddresses** impostato su valori diversi. Quando sono impostati su valori diversi, possono generare confusione per amministratori e utenti finali.
 
