@@ -18,23 +18,22 @@ ms.collection:
 - M365-security-compliance
 description: Informazioni sul modo in cui EOP e Office 365 proteggono i messaggi di posta indesiderata, phishing e antimalware aggiungendo un suggerimento per la sicurezza all'inizio della posta elettronica.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 0e204021bfd79dabd4abdeefaa990da50915eaf0
-ms.sourcegitcommit: c84cceb07e748969723a31b350e37f3ec79255ab
+ms.openlocfilehash: e36887e2bb0146c86a8a4f1526f1e712a38b46ba
+ms.sourcegitcommit: 20d1158c54a5058093eb8aac23d7e4dc68054688
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "48948458"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "49376620"
 ---
 # <a name="safety-tips-in-email-messages"></a>Suggerimenti per la sicurezza nei messaggi di posta elettronica
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
-
 Exchange Online Protection (EOP) e Microsoft 365 proteggono i propri messaggi di posta indesiderata, phishing e prevenzione antimalware. Oggi, alcuni di questi attacchi sono così ben congegnati che sembrano legittimi. L'invio di messaggi alla cartella posta indesiderata non è sempre sufficiente. A questo punto, quando si controlla il messaggio di posta elettronica in Outlook o Outlook sul Web o in un altro client di posta elettronica, EOP controlla automaticamente il mittente e aggiunge una punta di sicurezza all'inizio della posta elettronica.
 
 I suggerimenti per la sicurezza in Outlook non dipendono dalla versione di Outlook in uso perché il suggerimento per la sicurezza è incrinato e viene inserito direttamente nel corpo del messaggio. Questo significa che il suggerimento per la sicurezza verrà visualizzato in qualunque client di posta elettronica che si sta utilizzando. Viene eseguito a livello di filtro della posta elettronica e non viene eseguito il rendering a livello di client di posta, quindi non viene visualizzato solo in qualsiasi versione di Outlook, ma viene visualizzato anche in qualsiasi client di posta elettronica.
 
-Il suggerimento per la sicurezza, ovvero un messaggio con codice a colori, avviserà i messaggi potenzialmente dannosi. La maggior parte dei messaggi nella posta in arrivo non avrà un suggerimento per la sicurezza. Saranno visibili solo quando EOP e Microsoft 365 dispongono di informazioni necessarie per impedire attacchi di posta indesiderata, phishing e malware. Se nella cartella posta in arrivo sono presenti suggerimenti per la sicurezza, è possibile utilizzare gli esempi seguenti per ulteriori informazioni su ogni tipo di suggerimento per la sicurezza.
+Il suggerimento per la sicurezza, un messaggio con codice a colori, avvisa i messaggi potenzialmente dannosi. La maggior parte dei messaggi nella posta in arrivo non avrà un suggerimento per la sicurezza. Saranno visibili solo quando EOP e Microsoft 365 dispongono di informazioni necessarie per impedire attacchi di posta indesiderata, phishing e malware. Se nella cartella posta in arrivo sono presenti suggerimenti per la sicurezza, è possibile utilizzare gli esempi seguenti per ulteriori informazioni su ogni tipo di suggerimento per la sicurezza.
 
 - Posta elettronica sospetta (punta di sicurezza rossa).
 

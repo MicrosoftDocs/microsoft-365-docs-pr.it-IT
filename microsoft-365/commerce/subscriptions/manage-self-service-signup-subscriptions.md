@@ -18,26 +18,31 @@ ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 description: Informazioni su come gestire le sottoscrizioni di registrazione Self-Service gratuite per l'organizzazione.
-ms.openlocfilehash: fb70d0c40d4358abc227c8f6ff4a0e0dce1a7265
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 589466908dcda1461011f046b99be21788c1a018
+ms.sourcegitcommit: 20d1158c54a5058093eb8aac23d7e4dc68054688
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48647832"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "49376306"
 ---
 # <a name="manage-self-service-sign-up-subscriptions"></a>Gestione delle sottoscrizioni di iscrizione self-service
 
 ## <a name="what-are-self-service-sign-up-subscriptions"></a>Che cosa sono le sottoscrizioni di iscrizione self-service?
 
-Sono disponibili un numero limitato di sottoscrizioni di iscrizione gratuite in modalità self-service in cui gli utenti dell'organizzazione possono iscriversi. Un utente può solo iscriversi e utilizzare una sottoscrizione di iscrizione self-service per se stessi. Le sottoscrizioni vengono visualizzate nella pagina dei **prodotti** , sono contrassegnate come **gratuite**e hanno una nota che indica che "questo è un abbonamento gratuito attivato dagli utenti della propria azienda". È possibile gestire le sottoscrizioni di iscrizione self-service bloccando gli utenti dall'iscrizione e eliminando gratuitamente gli abbonamenti a cui gli utenti hanno effettuato l'accesso. Per ulteriori informazioni sull'accesso self-service e le sottoscrizioni disponibili, vedere [using self-service sign up nella propria organizzazione](../../admin/misc/self-service-sign-up.md).
+È disponibile un numero limitato di sottoscrizioni di iscrizione self-service gratuite per gli utenti dell'organizzazione a cui iscriversi. Un utente può solo iscriversi e utilizzare una sottoscrizione di iscrizione self-service per se stessi. È possibile gestire le sottoscrizioni di iscrizione self-service bloccando gli utenti dall'iscrizione e eliminando gratuitamente gli abbonamenti a cui gli utenti hanno effettuato l'accesso. Per ulteriori informazioni sull'accesso self-service e le sottoscrizioni disponibili, vedere [using self-service sign up nella propria organizzazione](../../admin/misc/self-service-sign-up.md).
+
+## <a name="view-a-list-of-self-service-sign-up-subscriptions"></a>Visualizzazione di un elenco di sottoscrizioni di iscrizione self-service
+
+1. Nell'interfaccia di amministrazione, passare alla pagina **Fatturazione** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">I tuoi prodotti</a>.
+2. Nella scheda **prodotti** selezionare l'icona filtro e quindi fare clic su **libera**. Viene visualizzato un elenco di tutte le sottoscrizioni di iscrizione self-service.
 
 ## <a name="how-are-these-subscriptions-different-from-self-service-purchase-subscriptions"></a>In che modo queste sottoscrizioni sono diverse dagli abbonamenti all'acquisto in modalità self-service?
 
-Le sottoscrizioni di iscrizione self-service sono gratuite e sono disponibili per un elenco di prodotti più esteso rispetto alle sottoscrizioni di acquisto self-service. Quando un utente si iscrive a un abbonamento di acquisto in modalità self-service, è responsabile del pagamento. Inoltre, le sottoscrizioni di acquisto in modalità self-service sono disponibili solo per i prodotti Power Platform (Power BI, Power Apps e Power automatizzate). Per ulteriori informazioni, vedere [domande frequenti sull'acquisto in modalità self-service](self-service-purchase-faq.md).
+Le sottoscrizioni di iscrizione self-service sono gratuite e sono disponibili per un elenco di prodotti più esteso rispetto alle sottoscrizioni di acquisto self-service. Quando un utente si iscrive a un abbonamento di acquisto in modalità self-service, è responsabile del pagamento. Le sottoscrizioni di acquisto self-service sono disponibili solo per i prodotti Power Platform (Power BI, Power Apps e Power automatizzate), Project e Visio. Per ulteriori informazioni, vedere [domande frequenti sull'acquisto in modalità self-service](self-service-purchase-faq.md).
 
 ## <a name="block-users-from-signing-up"></a>Bloccare gli utenti dall'iscrizione
 
-Utilizzare il cmdlet [**Set-MsolCompanySettings**](https://docs.microsoft.com/powershell/module/msonline/set-msolcompanysettings?view=azureadps-1.0) con il parametro **AllowAdHocSubscriptions** per controllare se gli utenti possono iscriversi per le sottoscrizioni di iscrizione self-service. Per ulteriori informazioni, vedere [come si controllano le impostazioni self-service?](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-self-service-signup#how-do-i-control-self-service-settings)
+Utilizzare il cmdlet [**Set-MsolCompanySettings**](https://docs.microsoft.com/powershell/module/msonline/set-msolcompanysettings?view=azureadps-1.0&preserve-view=true) con il parametro **AllowAdHocSubscriptions** per controllare se gli utenti possono iscriversi per le sottoscrizioni di iscrizione self-service. Per ulteriori informazioni, vedere [come si controllano le impostazioni self-service?](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-self-service-signup#how-do-i-control-self-service-settings)
 
 ## <a name="delete-a-self-service-sign-up-subscription"></a>Eliminare una sottoscrizione di iscrizione self-service
 
@@ -45,8 +50,10 @@ Utilizzare il cmdlet [**Set-MsolCompanySettings**](https://docs.microsoft.com/po
 > Quando si elimina una sottoscrizione di registrazione in modalità self-service, tutti gli utenti possono accedere ai propri dati e alla posta elettronica ed eliminare tutti i dati e la posta elettronica.
 
 1. Nell'interfaccia di amministrazione, passare alla pagina **Fatturazione** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">I tuoi prodotti</a>.
-2. Individuare la sottoscrizione di accesso self-service che si desidera eliminare. Nella sezione **impostazioni & azioni** selezionare **Elimina sottoscrizione**.
-3. Nel riquadro **Elimina sottoscrizione** , selezionare la casella di controllo, quindi selezionare **Elimina sottoscrizione**.
+2. Nella scheda **prodotti** selezionare l'icona filtro e quindi fare clic su **libera**.
+3. Selezionare l'abbonamento di iscrizione self-service che si desidera eliminare. 
+4. Nella sezione **abbonamenti e impostazioni di pagamento** della pagina Dettagli sottoscrizione selezionare **Elimina sottoscrizione**.
+5. Nel riquadro **Elimina sottoscrizione** , selezionare la casella di controllo, quindi selezionare **Elimina sottoscrizione**.
 
 ## <a name="i-have-a-self-service-sign-up-subscription-that-blocks-directory-deletion"></a>Si dispone di una sottoscrizione di iscrizione self-service che blocca l'eliminazione della directory
 

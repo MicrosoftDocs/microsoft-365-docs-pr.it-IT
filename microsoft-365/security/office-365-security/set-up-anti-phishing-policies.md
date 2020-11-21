@@ -16,12 +16,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Gli amministratori possono ottenere informazioni sui criteri di anti-phishing disponibili in Exchange Online Protection (EOP) e Microsoft Defender per Office 365.
-ms.openlocfilehash: c728a69a3b0841219e4f9b546e80e71b2cf89151
-ms.sourcegitcommit: 2d3e85173c65a9e0ce92624a80ed7a9839f5b8bd
+ms.openlocfilehash: a02d69b278420d814871df8eebdd6efcdf5d8e7f
+ms.sourcegitcommit: 20d1158c54a5058093eb8aac23d7e4dc68054688
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49123632"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "49376355"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Criteri di anti-phishing in Microsoft 365
 
@@ -200,8 +200,11 @@ Le seguenti impostazioni di rappresentazione sono disponibili solo nei criteri d
   - **Domini rappresentati**: l'indirizzo from contiene un dominio protetto.
   - **Caratteri insoliti**: l'indirizzo from contiene set di caratteri inusuali, ad esempio simboli matematici e testo o una combinazione di lettere maiuscole e minuscole, in un mittente o dominio protetto.
 
-  > [!NOTE]
-  > Anche quando i suggerimenti per la sicurezza della rappresentazione sono disattivati, è possibile utilizzare una regola del flusso di posta (nota anche come regola di trasporto) per aggiungere un'intestazione del messaggio denominata **X-MS-Exchange-EnableFirstContactSafetyTip** ai messaggi. Verranno visualizzati suggerimenti specifici per la sicurezza che notificano ai destinatari che spesso non ricevono messaggi di posta elettronica dal mittente o nei casi in cui il destinatario riceve un messaggio di posta elettronica per la prima volta dal mittente.
+> [!IMPORTANT]
+>
+> Anche quando i suggerimenti per la sicurezza della rappresentazione sono disattivati, è **consigliabile** utilizzare una regola del flusso di posta (nota anche come regola di trasporto) per aggiungere un'intestazione del messaggio denominata **X-MS-Exchange-EnableFirstContactSafetyTip** ai messaggi. Verranno visualizzati suggerimenti specifici per la sicurezza che notificano ai destinatari che spesso non ricevono messaggi di posta elettronica dal mittente o nei casi in cui il destinatario riceve un messaggio di posta elettronica per la prima volta dal mittente.
+>:::image type="content" source="../../media/Urja_FirstContactEmail-Set-us-anti-phish-pol-safetyTip-ImpersonationProtection-MultipleRecipients.png" alt-text="Il testo del suggerimento di sicurezza per la protezione della rappresentazione con più destinatari.":::
+<p>
 
 - **Intelligence delle cassette postali**: consente di abilitare o disabilitare l'intelligenza artificiale (ai) che determina i modelli di posta elettronica degli utenti con i contatti frequenti. Questa impostazione consente all'AI di distinguere tra la posta elettronica legittima e contraffatta da tali contatti. L'intelligence della cassetta postale è disponibile solo per le cassette postali di Exchange Online.
 

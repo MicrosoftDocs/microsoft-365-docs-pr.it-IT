@@ -23,12 +23,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Informazioni su come proteggere i PC Windows 10 dopo aver configurato Microsoft 365 Business Premium.
-ms.openlocfilehash: a70fcd330fe6ef330fac08512aded4d8913313d5
-ms.sourcegitcommit: 1780359234abdf081097c8064438d415da92fb85
+ms.openlocfilehash: 286393779eaa92d33432ff9ad4b21c0a1fb8612c
+ms.sourcegitcommit: 20d1158c54a5058093eb8aac23d7e4dc68054688
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "46778385"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "49376278"
 ---
 # <a name="secure-windows-10-computers"></a>Proteggere i computer Windows 10
 
@@ -36,7 +36,7 @@ Questo articolo si applica a Microsoft 365 Business Premium.
 
 Dopo aver [configurato](set-up.md) Microsoft 365 Business Premium, è possibile proteggere i computer Windows 10 dell'organizzazione da furti e minacce dannose come virus e malware.
 
-## <a name="to-secure-your-windows-10-pcs"></a>Per proteggere i PC Windows 10
+## <a name="to-secure-your-windows-10-computers"></a>Per proteggere i computer con Windows 10
 
 1. Autenticarsi allì[interfaccia di amministrazione di Microsoft 365](https://admin.microsoft.com) usando le proprie credenziali globali di amministrazione. 
 2. Sulla barra di spostamento sinistra, selezionare **installazione** e quindi, in **accesso e sicurezza**, scegliere **Proteggi i computer Windows 10**. Scegliere **View** per iniziare.
