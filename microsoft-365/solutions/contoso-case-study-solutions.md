@@ -15,12 +15,12 @@ ms.collection:
 - M365-subscription-management
 ms.custom: ''
 description: Modalità di distribuzione delle soluzioni di Microsoft 365 da parte di un'organizzazione fittizia ma rappresentativa a livello internazionale.
-ms.openlocfilehash: 8ee25baa9c412e51de7d70e35662d03d1c148369
-ms.sourcegitcommit: 0f71042edc7c3a7f10a7b92e1943abf51532cbf5
+ms.openlocfilehash: 8ba1661a2a4257409b7622b6d78dca4bcd103929
+ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "46521638"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49357696"
 ---
 # <a name="microsoft-365-solutions-for-the-contoso-corporation"></a>Soluzioni di Microsoft 365 per Contoso Corporation
 
@@ -31,6 +31,8 @@ L'obiettivo generale di Contoso per Microsoft 365 Enterprise è accelerare la su
 Consultare prima le informazioni su [Contoso Corporation](../enterprise/contoso-overview.md), sulle sue sedi nel mondo e sulle considerazioni di progettazione risolte durante la distribuzione di Microsoft 365 Enterprise.
 
 Vedere in che modo Contoso ha usato Microsoft 365 per le soluzioni e gli scenari seguenti:
+
+- [Risposta e infrastruttura COVID-19 per una forza lavoro ibrida](contoso-hybrid-workforce.md)
 
 - [Un team isolato per un progetto di massima riservatezza](contoso-team-for-top-secret-project.md)
 

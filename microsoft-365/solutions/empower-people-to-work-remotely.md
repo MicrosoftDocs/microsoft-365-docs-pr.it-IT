@@ -18,12 +18,12 @@ ms.collection:
 - M365initiative-coredeploy
 ms.custom: seo-marvel-jun2020
 description: Assicurarsi di aver abilitato tutte le caratteristiche di Microsoft 365 per massimizzare la produttività dei lavoratori remoti e mantenere l'accesso sicuro ai server, ai dati e al cloud.
-ms.openlocfilehash: b886341adc49ba728856dc39786e926ebfadd3ef
-ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
+ms.openlocfilehash: 6cf956d7d7e895dc328c8551f98e78d0fc42d86c
+ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "48906740"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49357038"
 ---
 # <a name="empower-remote-workers-with-microsoft-365"></a>Aumentare la produttività dei lavoratori remoti con Microsoft 365
 
@@ -113,3 +113,5 @@ Utilizzare la procedura seguente per proteggere e ottimizzare l'accesso ai serve
 [![Passaggi per aumentare la produttività dei lavoratori remoti con Microsoft 365](../media/empower-people-to-work-remotely/remote-workers-step-grid.png)](empower-people-to-work-remotely-secure-sign-in.md)
 
 Per le informazioni più recenti da Microsoft sul supporto dei lavoratori remoti, vedere [Abilitazione del lavoro ibrido nel sito di Microsoft Teams](https://resources.techcommunity.microsoft.com/enabling-hybrid-work/).
+
+Per scoprire in che modo un'organizzazione multi-nazionale fittizia, ma rappresentativa, ha rafforzato il proprio lavoro remoto, vedere [Risposta e infrastruttura di Contoso a COVID 19 per una forza lavoro ibrida](contoso-hybrid-workforce.md).

@@ -16,12 +16,12 @@ ms.assetid: 316544cb-db1d-4c25-a5b9-c73bbcf53047
 ms.collection:
 - M365-security-compliance
 description: Informazioni per amministratori su come visualizzare, creare, modificare ed eliminare criteri di protezione dalla posta indesiderata in Exchange Online Protection (EOP).
-ms.openlocfilehash: 2bb6bff5fae661d755ea19dbb5af8ca62fbacbd8
-ms.sourcegitcommit: ce46d1bd67091d4ed0e2b776dfed55e2d88cdbf4
+ms.openlocfilehash: 34e0f3cf1ae382dcb256887557af18556d52a7df
+ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49130864"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49357888"
 ---
 # <a name="configure-anti-spam-policies-in-eop"></a>Configurare criteri di protezione dalla posta indesiderata in EOP
 
@@ -30,7 +30,7 @@ ms.locfileid: "49130864"
 
 Nelle organizzazioni di Microsoft 365 con cassette postali in Exchange Online o nelle organizzazioni di Exchange Online Protection (EOP) autonomo senza cassette postali di Exchange Online, i messaggi di posta elettronica in ingresso vengono protetti automaticamente dalla posta indesiderata da EOP. Come parte del sistema di difesa dell'organizzazione, EOP utilizza criteri di protezione dalla posta indesiderata, noti anche come criteri di filtro della posta indesiderata o criteri di filtro di contenuti. Per altre informazioni, vedere [Protezione dalla posta indesiderata](anti-spam-protection.md).
 
-Gli amministratori possono visualizzare, modificare e configurare, ma non eliminare, il criterio di protezione dalla posta indesiderata predefinito. Per una maggiore granularità, è anche possibile creare criteri di protezione dalla posta indesiderata personalizzati applicabili a utenti, gruppi o domini specifici nell'organizzazione. I criteri personalizzati hanno sempre la precedenza sul criterio predefinito, ma non è possibile modificarne la priorità (in funzione).
+Gli amministratori possono visualizzare, modificare e configurare, ma non eliminare, il criterio di protezione dalla posta indesiderata predefinito. Per una maggiore granularità, è possibile creare criteri di filtro della posta indesiderata personalizzati e applicarli a specifici utenti, gruppi o domini all'interno della propria organizzazione. I criteri personalizzati hanno sempre la precedenza sui criteri predefiniti, ma non è possibile modificarne la priorità (in funzione).
 
 È possibile configurare criteri di protezione dalla posta indesiderata nel Centro sicurezza e conformità o in PowerShell (PowerShell di Exchange Online per organizzazioni di Microsoft 365 con cassette postali in Exchange Online; PowerShell di EOP autonomo per organizzazioni prive di cassette postali di Exchange Online).
 
@@ -57,9 +57,9 @@ Per aumentare l'efficacia del filtro della posta indesiderata, è possibile crea
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare?
 
-- Aprire il Centro sicurezza e conformità in <https://protection.office.com/>. Per passare direttamente alla pagina **Impostazioni di filtro della posta indesiderata**, usare <https://protection.office.com/antispam>.
+- Aprire il Centro sicurezza e conformità in<https://protection.office.com/>. Per passare direttamente alla pagina per la **protezione dalla posta indesiderata nel Centro sicurezza e conformità**, usare <https://protection.office.com/antispam>
 
-- Per informazioni su come connettersi a PowerShell per Exchange Online, vedere [Connettersi a PowerShell per Exchange Online](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell). Per connettersi a PowerShell di EOP autonomo, vedere [Connettersi a PowerShell per Exchange Online Protection](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
+- Per informazioni su come connettersi a PowerShell per Exchange Online, vedere [Connettersi a PowerShell per Exchange Online](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell). Per connettersi a EOP di PowerShell autonomo, vedere [Connettersi a Exchange Online Protection di PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
 - È necessario disporre delle autorizzazioni per eseguire le procedure di questo argomento:
 
@@ -85,7 +85,7 @@ La creazione di un criterio di protezione dalla posta indesiderata nel Centro si
 
 3. Nel riquadro a comparsa **Nuovo criterio di filtro della posta indesiderata** che si apre, configurare le seguenti impostazioni:
 
-   - **Nome**: immettere un nome univoco descrittivo per il criterio. Non usare i caratteri seguenti: `\ % & * + / = ? { } | < > ( ) ; : , [ ] "`.
+   - **Nome**: Immettere un nome descrittivo e univoco per il criterio. Non usare i caratteri seguenti: `\ % & * + / = ? { } | < > ( ) ; : , [ ] "`.
 
       Se nell'interfaccia di amministrazione di Exchange in precedenza sono stati creati criteri di protezione dalla posta indesiderata contenenti questi caratteri, è consigliabile rinominare tali criteri in PowerShell. Per le istruzioni, vedere la sezione [Utilizzo di PowerShell per modificare regole di filtro della posta indesiderata](#use-powershell-to-modify-spam-filter-rules) più avanti in questo argomento.
 
@@ -108,7 +108,7 @@ La creazione di un criterio di protezione dalla posta indesiderata nel Centro si
 
      ****
 
-     |<span>|Posta indesiderata|Fortemente<br/>confidenziale<br/>posta indesiderata|Phishing<br/>e-mail|Fortemente<br/>confidenziale<br/>phishing<br/>e-mail|Invio in blocco<br/>e-mail|
+     |Azione|Posta indesiderata|Fortemente<br/>confidenziale<br/>posta indesiderata|Phishing<br/>e-mail|Fortemente<br/>confidenziale<br/>phishing<br/>e-mail|Invio in blocco<br/>e-mail|
      |---|:---:|:---:|:---:|:---:|:---:|
      |**Spostare un messaggio nella cartella Posta indesiderata**: il messaggio viene recapitato nella cassetta postale e spostato nella cartella Posta indesiderata.<sup>1</sup>|![Segno di spunta](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Segno di spunta](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Segno di spunta](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Segno di spunta](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Segno di spunta](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
      |**Aggiungi X-Header**: aggiunge un X-Header all'intestazione del messaggio e recapita il messaggio nella cassetta postale. <p> Immettere il nome del campo X-Header (non il valore) successivamente nella casella **Aggiungi testo X-Header**. <p> Per i verdetti **Posta indesiderata** e **Posta indesiderata con alta confidenza**, il messaggio viene spostato nella cartella Posta indesiderata.<sup>1,2</sup>|![Segno di spunta](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Segno di spunta](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Segno di spunta](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||![Segno di spunta](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
