@@ -18,28 +18,30 @@ search.appverid:
 - MET150
 ms.assetid: e3cbc79c-5e97-43d3-8371-9fbc398cd92e
 ms.custom: seo-marvel-apr2020
-description: Utilizzare la ricerca contenuto nel centro sicurezza & conformità per eseguire raccolte mirate, che garantiscono che gli elementi si trovino in una cassetta postale o in una cartella specifica del sito.
-ms.openlocfilehash: 7257ae669e7d325140af546466fb3e6a8a8a17fe
-ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
+description: Utilizzare la ricerca contenuto nel centro conformità di Microsoft 365 per eseguire raccolte di destinazione, in modo da garantire che gli elementi siano situati in una cassetta postale o in una cartella specifica del sito.
+ms.openlocfilehash: 0908b8262942e7a1c4d80bc511d4b8cbcc6dc646
+ms.sourcegitcommit: 20d1158c54a5058093eb8aac23d7e4dc68054688
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47357656"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "49376593"
 ---
 # <a name="use-content-search-for-targeted-collections"></a>Usare Ricerca contenuto per le raccolte di destinazione
 
-La funzionalità di ricerca contenuto nel &amp; Centro sicurezza e conformità non fornisce un modo diretto nell'interfaccia utente per eseguire ricerche in cartelle specifiche nelle cassette postali di Exchange o nei siti di SharePoint e OneDrive for business. Tuttavia, è possibile eseguire ricerche in cartelle specifiche (denominate *insieme mirato*) specificando la proprietà ID cartella per la proprietà posta elettronica o percorso (DocumentLink) per i siti nella sintassi della query di ricerca effettiva. L'utilizzo di ricerca contenuto per l'esecuzione di una raccolta mirata è utile quando si è certi che gli elementi sensibili a un caso o a elementi privilegiati si trovino in una specifica cassetta postale o cartella del sito. È possibile utilizzare lo script in questo articolo per ottenere l'ID della cartella per le cartelle delle cassette postali o il percorso (DocumentLink) per le cartelle in un sito di SharePoint e OneDrive for business. Successivamente, è possibile utilizzare l'ID o il percorso della cartella in una query di ricerca per restituire gli elementi che si trovano nella cartella.
+La funzionalità di ricerca contenuto nel centro conformità di Microsoft 365 non fornisce un modo diretto nell'interfaccia utente per la ricerca di cartelle specifiche nelle cassette postali di Exchange o nei siti di SharePoint e OneDrive for business. Tuttavia, è possibile eseguire ricerche in cartelle specifiche (denominate *insieme mirato*) specificando la proprietà ID cartella per la proprietà posta elettronica o percorso (DocumentLink) per i siti nella sintassi della query di ricerca effettiva. L'utilizzo di ricerca contenuto per l'esecuzione di una raccolta mirata è utile quando si è certi che gli elementi sensibili a un caso o a elementi privilegiati si trovino in una specifica cassetta postale o cartella del sito. È possibile utilizzare lo script in questo articolo per ottenere l'ID della cartella per le cartelle delle cassette postali o il percorso (DocumentLink) per le cartelle in un sito di SharePoint e OneDrive for business. Successivamente, è possibile utilizzare l'ID o il percorso della cartella in una query di ricerca per restituire gli elementi che si trovano nella cartella.
 
 > [!NOTE]
 > Per restituire il contenuto presente in una cartella di un sito di SharePoint o OneDrive for business, lo script in questo argomento utilizza la proprietà gestita DocumentLink anziché la proprietà Path. La proprietà DocumentLink è più robusta della proprietà Path perché restituirà tutto il contenuto di una cartella, mentre la proprietà Path non restituirà alcuni file multimediali.
 
 ## <a name="before-you-run-a-targeted-collection"></a>Prima di eseguire una raccolta di destinazione
 
-- Per eseguire lo script nel passaggio 1, è necessario essere membri del gruppo di ruoli eDiscovery Manager nel &amp; Centro sicurezza e conformità. Per altre informazioni, vedere [Assegnare autorizzazioni di eDiscovery](assign-ediscovery-permissions.md).
+- Per eseguire lo script nel passaggio 1, è necessario essere membri del gruppo di ruoli eDiscovery Manager nel centro sicurezza & Compliance. Per altre informazioni, vedere [Assegnare autorizzazioni di eDiscovery](assign-ediscovery-permissions.md).
 
-    Inoltre, è necessario essere assegnati al ruolo destinatari di posta elettronica nell'organizzazione di Exchange Online. Questo è necessario per eseguire il cmdlet **Get-MailboxFolderStatistics** , incluso nello script nel passaggio 1. Per impostazione predefinita, il ruolo destinatari di posta viene assegnato ai gruppi di ruoli Gestione organizzazione e gestione destinatari in Exchange Online. Per ulteriori informazioni sull'assegnazione delle autorizzazioni in Exchange Online, vedere [Manage Role Group Members](https://go.microsoft.com/fwlink/p/?linkid=692102). È inoltre possibile creare un gruppo di ruoli personalizzato, assegnare il ruolo destinatari di posta elettronica e quindi aggiungere i membri che devono eseguire lo script nel passaggio 1. Per ulteriori informazioni, vedere [Gestire gruppi di ruoli](https://go.microsoft.com/fwlink/p/?linkid=730688).
+    Inoltre, è necessario essere assegnati al ruolo destinatari di posta elettronica nell'organizzazione di Exchange Online. Questo è necessario per eseguire il cmdlet **Get-MailboxFolderStatistics** , incluso nello script. Per impostazione predefinita, il ruolo destinatari di posta viene assegnato ai gruppi di ruoli Gestione organizzazione e gestione destinatari in Exchange Online. Per ulteriori informazioni sull'assegnazione delle autorizzazioni in Exchange Online, vedere [Manage Role Group Members](https://go.microsoft.com/fwlink/p/?linkid=692102). È inoltre possibile creare un gruppo di ruoli personalizzato, assegnare il ruolo destinatari di posta elettronica e quindi aggiungere i membri che devono eseguire lo script nel passaggio 1. Per ulteriori informazioni, vedere [Gestire gruppi di ruoli](https://go.microsoft.com/fwlink/p/?linkid=730688).
 
-- Ogni volta che si esegue lo script nel passaggio 1, viene creata una nuova sessione di PowerShell remota. In questo modo, è possibile utilizzare tutte le sessioni remote di PowerShell disponibili. Per evitare che ciò accada, è possibile eseguire il comando riportato di seguito per disconnettere le sessioni di PowerShell remote attive.
+- Lo script in questo articolo supporta l'autenticazione moderna. È possibile utilizzare lo script così com'è se si è un'organizzazione Microsoft 365 o Microsoft 365 GCC. Se si è un'organizzazione di Office 365 Germany, un'organizzazione di Microsoft 365 GCC High o un'organizzazione di Microsoft 365 DoD, sarà necessario modificare lo script per eseguirlo correttamente. In particolare, è necessario modificare la riga `Connect-ExchangeOnline` e utilizzare il parametro *ExchangeEnvironmentName* (e il valore appropriato per il tipo di organizzazione) per connettersi a PowerShell di Exchange Online.  Inoltre, è necessario modificare la riga `Connect-IPPSSession` e utilizzare i parametri *ConnectionURI* e *AzureADAuthorizationEndpointUri* (e i valori corretti per il tipo di organizzazione) per connettersi a PowerShell per il Centro sicurezza & Compliance. Per ulteriori informazioni, vedere gli esempi in [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell?#connect-to-exchange-online-powershell-without-using-mfa) e [connect to Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell#connect-to-security--compliance-center-powershell-without-using-mfa).
+
+- Ogni volta che si esegue lo script, viene creata una nuova sessione di PowerShell remota. Questo significa che è possibile utilizzare tutte le sessioni remote di PowerShell disponibili. Per evitare che ciò accada, eseguire il comando riportato di seguito per disconnettere le sessioni di PowerShell remote attive.
 
   ```powershell
   Get-PSSession | Remove-PSSession
@@ -57,18 +59,18 @@ Lo script eseguito in questo primo passaggio restituirà un elenco di cartelle d
   
 - **Indirizzo di posta elettronica o URL del sito**: digitare un indirizzo di posta elettronica del custode per restituire un elenco di cartelle di cassette postali di Exchange e ID cartella. In alternativa, digitare l'URL di un sito di SharePoint o di un sito di OneDrive for business per restituire un elenco di percorsi per il sito specificato. Ecco alcuni esempi:
 
-  - **Exchange**: stacig@contoso.onmicrosoft.com 
+  - **Exchange**: stacig@contoso. onmicrosoft <spam> <spam> . com
 
-  - **SharePoint**: https://contoso.sharepoint.com/sites/marketing 
+  - **SharePoint**: https <span>://</span>contoso.SharePoint.com/sites/marketing 
 
-  - **OneDrive for business**: https://contoso-my.sharepoint.com/personal/stacig_contoso_onmicrosoft_com 
+  - **OneDrive for business**: https <span>://</span>contoso-My.SharePoint.com/Personal/stacig_contoso_onmicrosoft_com 
 
-- **Credenziali utente**: lo script utilizzerà le credenziali per la connessione a Exchange Online e il centro sicurezza & conformità con Remote PowerShell. Come spiegato in precedenza, è necessario assegnare le autorizzazioni appropriate per eseguire correttamente lo script.
+- **Credenziali utente**: lo script utilizzerà le credenziali per connettersi a PowerShell di Exchange Online o al centro di sicurezza & conformità con l'autenticazione moderna. Come spiegato in precedenza, è necessario assegnare le autorizzazioni appropriate per eseguire correttamente lo script.
 
 Per visualizzare un elenco delle cartelle delle cassette postali o dei nomi del sito documentlink (percorso):
   
 1. Salvare il testo seguente in un file di script di Windows PowerShell utilizzando un suffisso FileName di. ps1. ad esempio, `GetFolderSearchParameters.ps1` .
-    
+
    ```powershell
    #########################################################################################################
    # This PowerShell script will prompt you for:                                #
@@ -91,19 +93,15 @@ Per visualizzare un elenco delle cartelle delle cassette postali o dei nomi del 
    # Collect the target email address or SharePoint Url
    $addressOrSite = Read-Host "Enter an email address or a URL for a SharePoint or OneDrive for Business site"
    # Authenticate with Exchange Online and the Security & Compliance Center (Exchange Online Protection - EOP)
-   if (!$credentials)
-   {
-      $credentials = Get-Credential
-   }
    if ($addressOrSite.IndexOf("@") -ige 0)
    {
       # List the folder Ids for the target mailbox
       $emailAddress = $addressOrSite
-      # Authenticate with Exchange Online
+      # Connect to Exchange Online PowerShell
       if (!$ExoSession)
       {
-          $ExoSession = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.outlook.com/powershell-liveid/ -Credential $credentials -Authentication Basic -AllowRedirection
-          Import-PSSession $ExoSession -AllowClobber -DisableNameChecking
+          Import-Module ExchangeOnlineManagement
+          Connect-ExchangeOnline
       }
       $folderQueries = @()
       $folderStatistics = Get-MailboxFolderStatistics $emailAddress
@@ -132,11 +130,11 @@ Per visualizzare un elenco delle cartelle delle cassette postali o dei nomi del 
       $searchActionName = "SPFoldersSearch_Preview"
       # List the folders for the SharePoint or OneDrive for Business Site
       $siteUrl = $addressOrSite
-      # Authenticate with the Security & Compliance Center
+      # Connect to Security & Compliance Center PowerShell
       if (!$SccSession)
       {
-          $SccSession = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.compliance.protection.outlook.com/powershell-liveid -Credential $credentials -Authentication Basic -AllowRedirection
-          Import-PSSession $SccSession -AllowClobber -DisableNameChecking
+          Import-Module ExchangeOnlineManagement
+          Connect-IPPSSession
       }
       # Clean-up, if the script was aborted, the search we created might not have been deleted.  Try to do so now.
       Remove-ComplianceSearch $searchName -Confirm:$false -ErrorAction 'SilentlyContinue'
@@ -197,7 +195,7 @@ Per visualizzare un elenco delle cartelle delle cassette postali o dei nomi del 
   
 ### <a name="script-output-for-mailbox-folders"></a>Output dello script per le cartelle delle cassette postali
 
-Se si ricevono gli ID della cartella delle cassette postali, lo script si connette a Exchange Online tramite Remote PowerShell, esegue il cmdlet **Get-MailboxFolderStatisics** e quindi Visualizza l'elenco delle cartelle dalla cassetta postale specificata. Per ogni cartella della cassetta postale, nello script viene visualizzato il nome della cartella nella colonna **percorsocartella** e l'ID della cartella nella colonna **FolderQuery** . Inoltre, lo script aggiunge il prefisso di **FolderId** (che è il nome della proprietà della cassetta postale) all'ID della cartella. Poiché la proprietà **FolderId** è una proprietà ricercabile, è possibile utilizzare  `folderid:<folderid>` in una query di ricerca nel passaggio 2 per eseguire una ricerca in tale cartella. Lo script Visualizza un massimo di 100 cartelle di cassette postali.
+Se si ricevono gli ID della cartella delle cassette postali, lo script si connette a PowerShell di Exchange Online, esegue il cmdlet **Get-MailboxFolderStatisics** e quindi Visualizza l'elenco delle cartelle dalla cassetta postale specificata. Per ogni cartella della cassetta postale, nello script viene visualizzato il nome della cartella nella colonna **percorsocartella** e l'ID della cartella nella colonna **FolderQuery** . Inoltre, lo script aggiunge il prefisso di **FolderId** (che è il nome della proprietà della cassetta postale) all'ID della cartella. Poiché la proprietà **FolderId** è una proprietà ricercabile, è possibile utilizzare  `folderid:<folderid>` in una query di ricerca nel passaggio 2 per eseguire una ricerca in tale cartella. Lo script Visualizza un massimo di 100 cartelle di cassette postali.
 
 > [!IMPORTANT]
 > Lo script in questo articolo include la logica di codifica che converte i valori ID della cartella di 64 caratteri restituiti da **Get-MailboxFolderStatistics** allo stesso formato 48-character indicizzato per la ricerca. Se si esegue il cmdlet **Get-MailboxFolderStatistics** in PowerShell per ottenere un ID cartella (invece di eseguire lo script in questo articolo), una query di ricerca che utilizza tale valore ID cartella avrà esito negativo. È necessario eseguire lo script per ottenere gli ID di cartella formattati correttamente che possono essere utilizzati in una ricerca di contenuto.
@@ -210,7 +208,7 @@ Nell'esempio del passaggio 2 viene illustrata la query utilizzata per eseguire l
   
 ### <a name="script-output-for-site-folders"></a>Output dello script per le cartelle del sito
 
-Se si riceve il percorso della proprietà **documentlink** da siti di SharePoint o OneDrive for business, lo script si connette al centro sicurezza & conformità tramite Remote PowerShell, crea una nuova ricerca di contenuto in cui vengono eseguite ricerche nel sito per le cartelle e quindi viene visualizzato un elenco delle cartelle che si trovano nel sito specificato. Lo script Visualizza il nome di ogni cartella e aggiunge il prefisso di **documentlink** all'URL della cartella. Poiché la proprietà **documentlink** è una proprietà per la ricerca, è possibile utilizzare la `documentlink:<path>` coppia Property: value in una query di ricerca nel passaggio 2 per eseguire una ricerca nella cartella. Lo script Visualizza un massimo di 200 cartelle del sito. Se sono presenti più di 200 cartelle del sito, vengono visualizzate quelle più recenti.
+Se si sta ottenendo il percorso della proprietà **documentlink** da siti di SharePoint o OneDrive for business, lo script si connette a PowerShell per la sicurezza & Compliance, crea una nuova ricerca di contenuto che cerca il sito per le cartelle e quindi Visualizza un elenco delle cartelle che si trovano nel sito specificato. Lo script Visualizza il nome di ogni cartella e aggiunge il prefisso di **documentlink** all'URL della cartella. Poiché la proprietà **documentlink** è una proprietà per la ricerca, è possibile utilizzare la `documentlink:<path>` coppia Property: value in una query di ricerca nel passaggio 2 per eseguire una ricerca nella cartella. Lo script Visualizza un massimo di 200 cartelle del sito. Se sono presenti più di 200 cartelle del sito, vengono visualizzate quelle più recenti.
   
 Di seguito è riportato un esempio dell'output restituito dallo script per le cartelle del sito.
   
@@ -218,33 +216,29 @@ Di seguito è riportato un esempio dell'output restituito dallo script per le ca
   
 ## <a name="step-2-use-a-folder-id-or-documentlink-to-perform-a-targeted-collection"></a>Passaggio 2: utilizzare un ID cartella o documentlink per eseguire una raccolta di destinazione
 
-Dopo aver eseguito lo script per raccogliere un elenco di ID cartella o collegamenti di documento per un utente specifico, il passaggio successivo per accedere al centro sicurezza & conformità e creare una nuova ricerca contenuto per eseguire la ricerca in una cartella specifica. Si utilizzerà la  `folderid:<folderid>`  `documentlink:<path>` coppia o proprietà: valore nella query di ricerca configurata nella casella parola chiave ricerca contenuto (o come valore per il parametro  *ContentMatchQuery*  se si utilizza il cmdlet **New-ComplianceSearch** ). È possibile combinare la  `folderid`  `documentlink` Proprietà or con altri parametri di ricerca o condizioni di ricerca. Se nella query è inclusa solo la  `folderid`  `documentlink` Proprietà or, la ricerca restituirà tutti gli elementi presenti nella cartella specificata.
+Dopo aver eseguito lo script per raccogliere un elenco di ID cartella o collegamenti di documento per un utente specifico, il passaggio successivo per passare al centro conformità di Microsoft 365 e creare una nuova ricerca contenuto per eseguire la ricerca in una cartella specifica. Si utilizzerà la  `folderid:<folderid>`  `documentlink:<path>` coppia o proprietà: valore nella query di ricerca configurata nella casella parola chiave ricerca contenuto (o come valore per il parametro  *ContentMatchQuery*  se si utilizza il cmdlet **New-ComplianceSearch** ). È possibile combinare la  `folderid`  `documentlink` Proprietà or con altri parametri di ricerca o condizioni di ricerca. Se nella query è inclusa solo la  `folderid`  `documentlink` Proprietà or, la ricerca restituirà tutti gli elementi presenti nella cartella specificata.
   
-1. Passare a [https://protection.office.com](https://protection.office.com).
+1. Passare a [https://compliance.microsoft.com](https://compliance.microsoft.com) e accedere utilizzando l'account e le credenziali utilizzati per eseguire lo script nel passaggio 1.
 
-2. Accedere utilizzando l'account e le credenziali utilizzati per eseguire lo script nel passaggio 1.
+2. Nel riquadro sinistro del centro conformità fare clic su **Mostra tutte le**  >  **ricerche di contenuto** e quindi fare clic su **nuova ricerca**.
 
-3. Nel riquadro sinistro del Centro sicurezza & conformità fare clic su ricerca **Search** \> **contenuto**ricerca, quindi fare clic su **nuova** ![ icona Aggiungi ](../media/O365-MDM-CreatePolicy-AddIcon.gif) .
-
-4. Nella pagina **Nuova ricerca**, digitare un nome relativo alla ricerca contenuto. Questo nome deve essere univoco nell'organizzazione. 
-
-5. In **dove si desidera**eseguire la ricerca, eseguire una delle operazioni seguenti, a seconda che si cerchi una cartella della cassetta postale o una cartella del sito:
-
-    - Fare clic su **Scegli cassette postali specifiche da cercare** e quindi aggiungere la stessa cassetta postale specificata al momento dell'esecuzione dello script nel passaggio 1.
-
-      Oppure
-
-    - Fare clic su **Choose sites specific to search** e quindi aggiungere lo stesso URL del sito specificato durante l'esecuzione dello script nel passaggio 1.
-
-6. Fare clic su **Avanti**.
-
-7. Nella casella parola chiave della pagina **che cosa si desidera cercare per** la pagina, incollare il  `folderid:<folderid>` valore o  `documentlink:<path>` restituito dallo script nel passaggio 1. 
+3. Nella casella **parole chiave** incollare il `folderid:<folderid>` valore o  `documentlink:<path>` restituito dallo script nel passaggio 1.
 
     Ad esempio, la query nello screenshot seguente cercherà tutti gli elementi nella sottocartella Purges nella cartella elementi ripristinabili dell'utente (il valore della `folderid` proprietà per la sottocartella Purges viene visualizzato nello screenshot del passaggio 1):
 
-    ![Incollare il FolderId o documentlink nella casella parola chiave della query di ricerca](../media/84057516-b663-48a4-a78f-8032a8f8da80.png)
-  
-8. Fare clic su **Cerca** per avviare la ricerca di raccolta di destinazione. 
+    ![Incollare il FolderId o documentlink nella casella parola chiave della query di ricerca](../media/FolderIDSearchQuery.png)
+
+4. In **percorsi** selezionare **percorsi specifici** e quindi fare clic su **modifica**.
+
+5. Eseguire una delle operazioni seguenti, a seconda che si cerchi una cartella della cassetta postale o una cartella del sito:
+
+    - Accanto a **posta elettronica di Exchange**, fare clic su **Scegli utenti, gruppi o team** e quindi aggiungere la stessa cassetta postale specificata al momento dell'esecuzione dello script nel passaggio 1.
+
+      Oppure
+
+    - Accanto a **siti di SharePoint** fare clic su **Scegli siti** e quindi aggiungere lo stesso URL del sito specificato durante l'esecuzione dello script nel passaggio 1.
+
+6. Dopo aver salvato il percorso del contenuto per la ricerca, fare clic su **salva & Esegui**, digitare un nome per la ricerca di contenuto e quindi fare clic su **Salva** per avviare la ricerca di raccolta di destinazione. 
   
 ### <a name="examples-of-search-queries-for-targeted-collections"></a>Esempi di query di ricerca per gli insiemi di destinazione
 

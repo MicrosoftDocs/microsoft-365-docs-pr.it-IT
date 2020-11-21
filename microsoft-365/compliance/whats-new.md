@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: L'aggiunta di nuove nuove soluzioni al centro conformità, l'aggiornamento delle funzionalità esistenti in base ai commenti o la documentazione aggiornata e rinnovata, Microsoft 365 consente di rimanere al di sopra del panorama di conformità in continua evoluzione. Scoprire cosa è stato fino a questo mese.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: cf019e15b1d5b915c58325c7d7c6f160acffe03e
-ms.sourcegitcommit: 82d8be71c5861a501ac62a774b306a3fc1d4e627
+ms.openlocfilehash: 27228f37673eee64ae44de9b88b7505d1958c05f
+ms.sourcegitcommit: 20d1158c54a5058093eb8aac23d7e4dc68054688
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48988854"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "49376609"
 ---
 # <a name="whats-new-in-microsoft-365-compliance"></a>Novità sulla conformità Microsoft 365
 
@@ -36,6 +36,77 @@ L'aggiunta di nuove soluzioni al [centro conformità di Microsoft 365](microsoft
 > [!TIP]
 > Interessato a cosa succede in altri centri di amministrazione? Consultare questi articoli:<br>[Novità dell'interfaccia di amministrazione di Microsoft 365](https://docs.microsoft.com/office365/admin/whats-new-in-preview?view=o365-worldwide)<br>[Novità dell'interfaccia di amministrazione di SharePoint](https://docs.microsoft.com/sharepoint/what-s-new-in-admin-center)<br>[Novità di Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/mtp/whats-new)<br><br>
 Per informazioni sulle funzionalità di Microsoft 365 che sono state avviate, sono in sviluppo, sono state annullate o sono state rilasciate in precedenza. [365](https://www.microsoft.com/en-us/microsoft-365/roadmap)
+
+## <a name="october-2020"></a>Ottobre 2020
+
+### <a name="advanced-ediscovery"></a>Advanced eDiscovery
+
+[Supporto per la lingua CJK](ediscovery-cjk-support.md). Advanced eDiscovery ora supporta le lingue del set di caratteri a doppio byte, conosciute collettivamente come lingue CJK (include cinese semplificato, cinese tradizionale, giapponese e coreano). Questi possono essere utilizzati in diversi scenari di set di revisione avanzati.
+
+### <a name="sensitivity-labels"></a>Etichette di riservatezza
+
+- [Ambito delle etichette](sensitivity-labels.md#label-scopes). Quando si crea un'etichetta di riservatezza, viene visualizzata una nuova opzione per definire l'ambito dell'etichetta. Questa opzione consente di configurare le etichette solo per file e messaggi di posta elettronica, contenitori (come i siti di SharePoint e i team) o entrambi.
+- [Contrassegno contenuto dinamico](sensitivity-labels-office-apps.md#dynamic-markings-with-variables). Quando si configura la marcatura del contenuto per un'etichetta di riservatezza, è ora possibile utilizzare le variabili dinamiche come `${Item.Label}` e `${Item.Location}` nella stringa di testo per l'intestazione, il piè di pagina o la filigrana.
+
+## <a name="september-2020"></a>Settembre 2020
+
+### <a name="spotlight-compliance-manager"></a>Spotlight: Compliance Manager
+
+Annunciato in Ignite quest'anno, il Punteggio di conformità è stato rebranded As [Compliance Manager](compliance-manager.md). Questa versione completa la transizione dalla Home page precedente di Compliance Manager nel Service Trust Portal e introduce una soluzione di gestione della conformità end-to-end nel centro conformità di Microsoft 365.
+
+Guarda il video seguente per informazioni su come Compliance Manager può aiutare a semplificare la gestione della conformità dell'organizzazione.
+<br>
+<br>
+>[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4FGYZ]
+
+### <a name="advanced-audit"></a>Audit avanzato
+
+- La nuova conservazione di 10 anni dei registri di controllo consente di supportare indagini lunghe e di rispondere a obblighi normativi, legali e interni.
+- [Tre nuovi nuovi eventi cruciali](advanced-audit.md#access-to-crucial-events-for-investigations). I nuovi eventi riportati di seguito possono essere utili per individuare possibili violazioni e determinare l'ambito di compromesso: Send, SearchQueryInitiatedExchange e SearchQueryInitiatedSharePoint.
+
+### <a name="communication-compliance"></a>Conformità delle comunicazioni
+
+- [Gruppi di ruoli aggiornati](communication-compliance-configure.md#step-1-required-enable-permissions-for-communication-compliance). I gruppi di ruoli Compliance Communication ora corrispondono alla struttura del gruppo di ruoli disponibile per la soluzione di gestione dei rischi Insider.
+- [Dashboard report](communication-compliance-feature-reference.md#reports-preview). La posizione centrale per la visualizzazione di tutti i report di conformità della comunicazione. I widget dei report offrono una rapida visualizzazione delle informazioni più comuni necessarie per una valutazione complessiva dello stato delle attività di conformità alla comunicazione.
+- [Flussi automatici di alimentazione automatizzati](communication-compliance-feature-reference.md#power-automate-flows-preview). Impostare i flussi per automatizzare le attività per gli avvisi e gli utenti, informare i responsabili quando gli utenti attivano gli avvisi e altro ancora.
+- [Azione di correzione ' migliorare la classificazione '](communication-compliance-investigate-remediate.md#step-3-decide-on-a-remediation-action). Gli avvisi contenenti elementi che soddisfano i classificatori addestrati potrebbero trarre vantaggio da commenti e suggerimenti utili per ridurre al minimo i falsi positivi nell'organizzazione. L'opzione **migliora classificazione** consente di fornire commenti e suggerimenti se gli elementi rilevati corrispondono al classificatore configurato nei criteri di conformità della comunicazione correlati. È anche possibile suggerire ad altri classificatori di associarsi all'elemento per migliorare l'accuratezza della corrispondenza per gli avvisi futuri.
+
+### <a name="data-connectors"></a>Connettori dati
+
+- [Nuovi connettori di dati di terze parti](archiving-third-party-data.md#third-party-data-connectors). 25 nuovi connettori di dati, tra cui 14 connettori di Globanet e 8 da TeleMessage.
+- [Connettore badging fisico](import-physical-badging-data.md). Importare dati fisici di badging, ad esempio gli eventi di accesso fisico non elaborati del dipendente o gli allarmi di accesso fisico generati dal sistema badging dell'organizzazione. Tra gli esempi sono inclusi le voci di edifici, sale server o Data Center. I dati fisici di badging possono essere utilizzati dalla soluzione di gestione dei rischi Insider per proteggere l'organizzazione da attività dannose o furti di dati all'interno dell'organizzazione.
+
+### <a name="insider-risk-management"></a>Gestione dei rischi Insider
+
+- [Integrazione di Microsoft teams](insider-risk-management-settings.md#microsoft-teams-preview). Quando l'integrazione di teams è attivata nelle impostazioni di rischio Insider, è possibile coordinare e collaborare con altre parti interessate in teams in attività come la condivisione e l'archiviazione sicure dei dati relativi a singoli casi, la verifica e la revisione delle attività di risposta da analisti e ricercatori e altro ancora.
+- [Flussi automatici di alimentazione automatizzati](insider-risk-management-settings.md#power-automate-flows-preview). Impostare i flussi per automatizzare le attività importanti per i casi e gli utenti, ad esempio il recupero di informazioni sull'utente, l'avviso e i casi da condividere con le parti interessate e altre app, automatizzando azioni come la pubblicazione di note di caso e altro ancora.
+- [Esplora attività](insider-risk-management-alerts.md#activity-explorer-preview). Disponibile quando si esaminano gli avvisi, attività Esplora risorse fornisce ai ricercatori e agli analisti uno strumento analitico completo per eseguire il drill-down in ogni avviso. Esaminare rapidamente una cronologia delle attività a rischio individuate e identificare e filtrare tutte le attività di rischio associate agli avvisi.
+
+### <a name="retention-policies-and-retention-labels"></a>Criteri di conservazione ed etichette di conservazione.
+
+- [Supporto per Yammer](retention-policies-yammer.md). È ora possibile utilizzare i criteri di conservazione per conservare ed eliminare i messaggi della community e i messaggi privati di Yammer.
+- [Applicare etichette alle registrazioni di riunioni di teams](apply-retention-labels-automatically.md#microsoft-teams-meeting-recordings). Quando si crea un criterio di etichettatura automatica, utilizzare l'editor di query con parole chiave per identificare le registrazioni delle riunioni dei team archiviate negli account di OneDrive degli utenti o in SharePoint.
+
+### <a name="records-management"></a>Gestione dei record
+
+[Supporto per i record normativi](declare-records.md#how-to-display-the-option-to-mark-content-as-a-regulatory-record). La classificazione di un'etichetta come record normativo aumenta le restrizioni applicate al contenuto a cui è applicata l'etichetta e limita le azioni di gestione disponibili per l'etichetta stessa. Ad esempio, dopo che è stato applicato al contenuto, nessuno, neanche un amministratore globale, può rimuovere l'etichetta. Per [ulteriori](records-management.md#compare-restrictions-for-what-actions-are-allowed-or-blocked) informazioni, vedere quali azioni sono consentite e bloccate per i record normativi.
+
+### <a name="sensitivity-labels"></a>Etichette di riservatezza
+
+[Supporto per i clienti del governo degli Stati Uniti](https://docs.microsoft.com/en-us/enterprise-mobility-security/solutions/ems-aip-premium-govt-service-description). Le etichette di riservatezza sono ora supportate per i clienti GCC, GCC High e DoD, solo per il client e lo scanner di Azure Information Protection Unified labeling.
+
+### <a name="trainable-classifiers"></a>Classificatori sottoponibili a training
+
+Nuove funzionalità di riqualificazione e feedback consentono di migliorare l'accuratezza e ridurre al minimo le corrispondenze false positive per tutti i classificatori personalizzati e alcuni classificatori prequalificati. Questo flusso consente di fornire commenti e suggerimenti su come gli elementi corrispondono a determinati classificatori, suggerire ad altri classificatori di associare gli elementi e riqualificare i classificatori per affinare e migliorare l'accuratezza delle corrispondenze.
+
+Questa nuova funzionalità è inclusa nelle caratteristiche seguenti:
+
+> [!NOTE]
+> Per tutte le funzionalità, se si forniscono almeno 30 risposte di feedback, verrà creata una versione riqualificata del classificatore che è possibile esaminare. Se si verifica un miglioramento, è possibile ripubblicare il classificatore.
+
+- [Classificatori addestrabili](classifier-learn-about.md#retraining-classifiers). Per migliorare l'accuratezza dei classificatori pubblicati, è possibile fornire commenti e suggerimenti sull'eventuale corrispondenza tra gli elementi rilevati e il classificatore.
+- [Conformità alla comunicazione](classifier-how-to-retrain-comms-compliance.md). La nuova azione **miglioramento classificazione** consente di fornire commenti e suggerimenti se un elemento di un avviso di conformità della comunicazione corrisponde al classificatore configurato nel criterio di conformità della comunicazione.
+- [Esplora contenuto](classifier-how-to-retrain-content-explorer.md). Se si configura un criterio di etichettatura automatica di conservazione per applicare automaticamente le etichette ai messaggi di posta elettronica che corrispondono ai classificatori addestrabili, è possibile utilizzare Esplora contenuto per esaminare gli elementi contrassegnati e fornire commenti e suggerimenti se gli elementi corrispondono al classificatore.
 
 ## <a name="august-2020"></a>Agosto 2020
 
@@ -101,7 +172,7 @@ L'attività amministrativa relativa alla conservazione è ora registrata e dispo
 Per facilitare la comprensione delle soluzioni di conformità che consentono di proteggere e gestire i dati sensibili dell'organizzazione, sono state create due nuove pagine di destinazione con una panoramica del modo in cui le soluzioni interagiscono per raggiungere tali obiettivi, inclusi i collegamenti ai documenti correlati, in modo da poterli immergere ulteriormente.
 
 [Microsoft Information Protection in Microsoft 365](information-protection.md)<br>
-[Microsoft Information Governance in Microsoft 365](manage-Information-governance.md)
+[Governance delle informazioni Microsoft in Microsoft 365](manage-Information-governance.md)
 
 ### <a name="advanced-ediscovery-add-non-custodial-data-sources-to-your-cases"></a>Advanced eDiscovery: aggiungere origini dati non detentive ai casi
 
@@ -326,7 +397,7 @@ Di seguito è illustrato un riepilogo delle nuove soluzioni disponibili. Tieni d
 |Catalogo delle soluzioni (anteprima) <br/>|Il catalogo della soluzione è il One-Stop-Shop per scoprire, conoscere e iniziare rapidamente con le nostre soluzioni di gestione dei rischi e conformità. Il catalogo è suddiviso in tre categorie di conformità, ognuna delle quali contiene informazioni dettagliate sulle soluzioni che compongono tale categoria. Le categorie includono la protezione delle informazioni & governance, gestione dei rischi Insider e individuazione & risposta <br/>|[Panoramica del catalogo delle soluzioni (anteprima)](microsoft-365-solution-catalog.md)|
 |Conformità alla comunicazione (anteprima) <br/>|La conformità alla comunicazione è parte integrante della nuova categoria di gestione dei rischi Insider che consente di ridurre al minimo i rischi di comunicazione contribuendo a rilevare, acquisire e intraprendere azioni correttive per i messaggi inopportuni nell'organizzazione. La soluzione consente di estendere le funzionalità dei criteri di supervisione in Office 365 introducendo diversi nuovi miglioramenti, ad esempio modelli intelligenti, flussi di lavoro di correzione flessibili e approfondimenti che consentono di eseguire le operazioni di monitoraggio. <br/>|[Conformità della comunicazione in Microsoft 365 (anteprima)](communication-compliance.md)|
 |Classificazione dei dati (anteprima) <br/>|La nuova pagina di classificazione dei dati contiene potenti strumenti e intuizioni utili per individuare e valutare la modalità di utilizzo di informazioni e etichette sensibili (conservazione e sensibilità) nei contenuti all'interno dell'organizzazione. Esaminare il contenuto che contiene informazioni riservate o applicare etichette, esplorare l'attività delle etichette tra le posizioni di Microsoft 365, creare tipi di informazioni riservate personalizzate e molto altro ancora.<br/>|[Panoramica della classificazione dei dati (anteprima)](data-classification-overview.md)|
-|Classificatori addestrabili (anteprima) <br/>|Questo nuovo potente strumento utilizza il motore di apprendimento automatico per identificare le categorie di contenuto dell'organizzazione, ad esempio i documenti di regolamentazione o i contratti con i dipendenti. Una volta creato, i classificatori possono essere utilizzati in diverse soluzioni di conformità per individuare il contenuto correlato e classificarlo, proteggerlo, conservarlo e altro ancora.<br/>|[Informazioni sui classificatori sottoponibili a training (anteprima)](classifier-learn-about.md)|
+|Classificatori sottoponibili a training (anteprima) <br/>|Questo nuovo potente strumento utilizza il motore di apprendimento automatico per identificare le categorie di contenuto dell'organizzazione, ad esempio i documenti di regolamentazione o i contratti con i dipendenti. Una volta creato, i classificatori possono essere utilizzati in diverse soluzioni di conformità per individuare il contenuto correlato e classificarlo, proteggerlo, conservarlo e altro ancora.<br/>|[Informazioni sui classificatori sottoponibili a training (anteprima)](classifier-learn-about.md)|
 
 #### <a name="updated-compliance-solutions"></a>Soluzioni di conformità aggiornate
 
@@ -346,7 +417,7 @@ Se è stato utilizzato il Centro sicurezza & conformità di Office 365 per soddi
 |Ricerca contenuto|Ricerca di contenuti > di ricerca <br/> https://protection.office.com/contentsearchbeta?ContentOnly=1 | Ricerca contenuto <br/> https://compliance.microsoft.com/contentsearch |[Ricerca di contenuto in Office 365](search-for-content.md) |
 |Connettori dati|Information Governance > archiviazione dei dati di terze parti <br/> https://protection.office.com/nativeconnector | Connettori dati <br/> https://compliance.microsoft.com/connectorlanding |[Archiviare i dati di terze parti](archiving-third-party-data.md)|
 |Prevenzione della perdita di dati|Prevenzione della perdita di dati <br/> https://protection.office.com/datalossprevention |Prevenzione della perdita di dati <br/> https://compliance.microsoft.com/datalossprevention |[Panoramica sulla prevenzione della perdita dei dati](data-loss-prevention-policies.md)|
-|Richieste del soggetto dei dati |Privacy dei dati > richieste del soggetto dei dati <br/> https://protection.office.com/dsrcases |Richieste del soggetto dei dati <br/> https://compliance.microsoft.com/datasubjectrequest |[Gestire le richieste del soggetto dei dati di GDPR con lo strumento di gestione dei casi DSR](manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md)|
+|Richieste del soggetto dei dati |Privacy dei dati > richieste del soggetto dei dati <br/> https://protection.office.com/dsrcases |Richieste degli interessati <br/> https://compliance.microsoft.com/datasubjectrequest |[Gestire le richieste del soggetto dei dati di GDPR con lo strumento di gestione dei casi DSR](manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md)|
 |eDiscovery|eDiscovery > eDiscovery <br/> https://protection.office.com/ediscoveryv1 |eDiscovery > Core <br/> https://compliance.microsoft.com/classicediscovery |[Gestire casi di eDiscovery](ediscovery-cases.md) |
 |Events|Eventi > di gestione dei record <br/> https://protection.office.com/events |Scheda eventi > di gestione dei record <br/> https://compliance.microsoft.com/recordsmanagement?viewid=events |[Avviare la conservazione al verificarsi di un evento](event-driven-retention.md)|
 |Piano di archiviazione|Gestione dei record > piano file <br/> https://protection.office.com/fileplan |Scheda Gestione record > piano file <br/> https://compliance.microsoft.com/recordsmanagement?viewid=fileplan |[Usare il piano di archiviazione per gestire le etichette di conservazione](file-plan-manager.md)|
@@ -358,15 +429,3 @@ Se è stato utilizzato il Centro sicurezza & conformità di Office 365 per soddi
 |Etichette di riservatezza e criteri di etichetta|Classificazione > etichette di riservatezza > etichette e schede criteri etichetta <br/> https://protection.office.com/sensitivity |Schede per la protezione delle informazioni > etichette e criteri etichette <br/> https://compliance.microsoft.com/informationprotection?viewid=sensitivitylabels <br/> https://compliance.microsoft.com/informationprotection?viewid=sensitivitylabelpolicies |[Informazioni sulle etichette di riservatezza](sensitivity-labels.md) |
 |Garanzia del servizio|Garanzia del servizio <br/> https://protection.office.com/serviceassurance/dashboard |A questo punto, è possibile accedere alle risorse di Service Assurance solo nel centro sicurezza & conformità di Office 365. |[Garanzia del servizio nel Centro sicurezza e conformità](service-assurance.md)|
 |Supervisione|Supervisione <br/> https://protection.office.com/supervisoryreviewv2 |Conformità delle comunicazioni <br/> https://compliance.microsoft.com/supervisoryreview |[Conformità della comunicazione in Microsoft 365 (anteprima)](communication-compliance.md) |
-
-## <a name="september-2019"></a>Settembre 2019
-
-Si sta chiedendo perché è tranquillo sul fronte del rilascio di questo mese? Siamo responsabili della creazione di nuove soluzioni di conformità innovative che verranno svelate a [Microsoft Ignite](https://www.microsoft.com/ignite) nel novembre. Restate sintonizzati!
-
-### <a name="new-encryption-options-for-sensitivity-labels"></a>Nuove opzioni di crittografia per le etichette di riservatezza 
-
-Quando si configura la crittografia per un'etichetta di riservatezza, sono ora disponibili due opzioni che consentono agli utenti di assegnare le autorizzazioni quando applicano manualmente l'etichetta alla posta elettronica e ai documenti:<br>
-- Quando si applica l'etichetta al **messaggio di posta elettronica di Outlook** , gli utenti possono applicare restrizioni equivalenti all'opzione non inoltrare. I destinatari saranno in grado di leggere il messaggio, ma non di inoltrarlo, stamparlo o copiarlo.
-- Quando si applica l'etichetta ai **file Word, PowerPoint ed Excel** , agli utenti verrà richiesto di assegnare le autorizzazioni di accesso a utenti e gruppi specifici.
-
-Andare a [limitare l'accesso al contenuto utilizzando le etichette di riservatezza per applicare la crittografia](encryption-sensitivity-labels.md#let-users-assign-permissions) per ulteriori informazioni.

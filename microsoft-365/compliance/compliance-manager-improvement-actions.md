@@ -14,16 +14,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Informazioni su come eseguire l'implementazione e il testing sui controlli in Microsoft Compliance Manager. Assegnare lavoro, archiviare la documentazione ed esportare i report.
-ms.openlocfilehash: 99b08ca1336c3f347764230896af47fe1486d4b2
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 4b7ece89752a2c3e54a0a69bade2f489feacd0c3
+ms.sourcegitcommit: 20d1158c54a5058093eb8aac23d7e4dc68054688
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48204444"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "49376527"
 ---
 # <a name="assign-and-complete-improvement-actions-in-compliance-manager"></a>Assegnare e completare azioni di miglioramento in Compliance Manager
 
-**In questo articolo:** In questo articolo viene illustrato come **gestire il flusso di lavoro di conformità** con le azioni di miglioramento. Informazioni su come **assegnare azioni di miglioramento** per l'implementazione e il testing, **gestire gli aggiornamenti**ed esportare i **report**.
+**In questo articolo:** In questo articolo viene illustrato come **gestire il flusso di lavoro di conformità** con le azioni di miglioramento. Informazioni su come **assegnare azioni di miglioramento** per l'implementazione e il testing, **gestire gli aggiornamenti** ed esportare i **report**.
 
 ## <a name="manage-compliance-workflows-with-improvement-actions"></a>Gestire i flussi di lavoro di conformità con azioni di miglioramento
 
@@ -56,7 +56,7 @@ Dopo aver identificato l'assegnatario appropriato, accertarsi che dispongano di 
 
 2. Nel riquadro icona di modifica dello stato, selezionare la casella **assegnata** a per visualizzare un elenco di utenti **consigliato** . È possibile selezionare l'utente dall'elenco oppure digitare l'indirizzo di posta elettronica della persona a cui si desidera assegnarlo.
 
-3. Selezionare **Salva e Chiudi**. L'utente assegnato riceverà un messaggio di posta elettronica in cui viene spiegato che è stata assegnata l'azione di miglioramento, con un collegamento diretto all'azione di miglioramento.
+3. Selezionare **Salva e Chiudi**. L'utente assegnato riceverà un messaggio di posta elettronica in cui viene spiegato che è stata assegnata l'azione di miglioramento, con un collegamento diretto all'azione di miglioramento. (Nota: i clienti di US Government community (GCC) High non riceveranno un messaggio di posta elettronica quando le azioni vengono assegnate a tali utenti.
 
 L'utente assegnato può quindi eseguire le azioni consigliate.
 

@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Impostare le autorizzazioni e i ruoli utente di Microsoft Compliance Manager e configurare il testing automatizzato delle azioni. Gestire la cronologia degli utenti e filtrare la visualizzazione del dashboard.
-ms.openlocfilehash: d6dd7263779ae7f3e9366c0984360c191a62d5e8
-ms.sourcegitcommit: fcc1b40732f28f075d95faffc1655473e262dd95
+ms.openlocfilehash: bcb75943df88578b30063d8e35877cb2e3e6250b
+ms.sourcegitcommit: 20d1158c54a5058093eb8aac23d7e4dc68054688
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/14/2020
-ms.locfileid: "49072891"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "49376557"
 ---
 # <a name="get-started-with-compliance-manager"></a>Introduzione a Compliance Manager
 
@@ -30,7 +30,7 @@ ms.locfileid: "49072891"
 
 ## <a name="who-can-access-compliance-manager"></a>Chi può accedere a Compliance Manager
 
-Compliance Manager è disponibile per le organizzazioni con licenza di Office 365 e Microsoft 365 e per i clienti di US Government community Cloud (GCC) moderati. La disponibilità e le funzionalità di gestione della valutazione dipendono dal contratto di licenza.  [Visualizzare i dettagli della descrizione del servizio](https://go.microsoft.com/fwlink/?linkid=2132371).
+Compliance Manager è disponibile per le organizzazioni con le licenze di Office 365 e Microsoft 365 e per i clienti di US Government community Cloud (GCC) moderato e GCC High. La disponibilità e le funzionalità di gestione della valutazione dipendono dal contratto di licenza.  [Visualizzare i dettagli della descrizione del servizio](https://go.microsoft.com/fwlink/?linkid=2132371).
 
 ## <a name="before-you-begin"></a>Prima di iniziare
 
@@ -50,6 +50,9 @@ Compliance Manager utilizza un modello di autorizzazione di controllo di accesso
 ### <a name="where-to-set-permissions"></a>Dove impostare le autorizzazioni
 
 La persona che detiene il ruolo di amministratore globale per l'organizzazione può impostare le autorizzazioni utente nel centro conformità di Microsoft 365, nonché in Azure Active Directory (Azure AD).
+
+> [!NOTE]
+> I clienti negli ambienti high di US Government community (GCC) possono impostare solo le autorizzazioni e i ruoli degli utenti per Compliance Manager in Azure AD. Vedere di seguito le istruzioni di Azure AD e le definizioni dei tipi di ruolo.
 
 Per impostare le autorizzazioni e assegnare i ruoli dall'interno del centro conformità di Microsoft 365, attenersi alla procedura seguente:
 
@@ -98,6 +101,9 @@ Nella tabella seguente vengono illustrate le funzioni consentite da ogni ruolo i
 
 Le impostazioni di Compliance Manager nel centro conformità di Microsoft 365 consentono di abilitare e disabilitare il test automatico delle azioni di miglioramento. Le impostazioni consentono anche di gestire i dati degli utenti associati ad azioni di miglioramento, tra cui la possibilità di riassegnare azioni di miglioramento a un altro utente.  Solo gli utenti che dispongono di un ruolo amministratore globale o responsabile della conformità possono accedere alle impostazioni di Compliance Manager.
 
+> [!NOTE]
+> La funzionalità di testing automatizzato non è disponibile per i clienti in ambienti high GCC perché il Punteggio sicuro non è disponibile in questi ambienti. I clienti GCC High dovranno implementare e testare manualmente le loro azioni di miglioramento.
+
 ### <a name="set-up-automated-testing"></a>Configurare il testing automatizzato
 
 Alcune azioni di miglioramento in Compliance Manager sono monitorate anche da [Microsoft Secure Score](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-secure-score). È possibile configurare il testing automatizzato delle azioni monitorate congiuntamente, il che significa che quando un'azione viene testata e aggiornata nel punteggio sicuro, questi risultati vengono sincronizzati con le stesse azioni in Compliance Manager e contano verso il Punteggio di conformità.
@@ -116,7 +122,7 @@ L'amministratore globale dell'organizzazione può modificare le impostazioni per
 
 4. Selezionare il pulsante applicabile per abilitare il test automatico per tutte le azioni di miglioramento, disattivarlo per tutte le azioni o attivarlo per azione individuale.
 
-5. Se si seleziona **attiva per azione di miglioramento** , un elenco mostrerà tutte le azioni di miglioramento disponibili tra cui scegliere.  Selezionare la casella accanto a qualsiasi azione che si desidera venga testata automaticamente.
+5. Se si seleziona **attiva per azione di miglioramento**, un elenco mostrerà tutte le azioni di miglioramento disponibili tra cui scegliere.  Selezionare la casella accanto a qualsiasi azione che si desidera venga testata automaticamente.
 
 6. Fare clic su **Salva** per salvare le impostazioni. Verrà visualizzato un messaggio di conferma nella parte superiore dello schermo in cui è stata salvata la selezione. Se si riceve un avviso di errore, riprovare.
 
@@ -178,7 +184,7 @@ Il rapporto riflette lo stato dell'azione di miglioramento alla data di creazion
 
 6. Nel campo **Search Users** immettere il nome o l'indirizzo di posta elettronica dell'utente a cui si desidera assegnare le azioni *di* miglioramento.
 
-7. Quando viene visualizzato il nome dell'utente desiderato in **azioni di miglioramento** , selezionare l'utente, quindi selezionare **assegna azioni**.
+7. Quando viene visualizzato il nome dell'utente desiderato in **azioni di miglioramento**, selezionare l'utente, quindi selezionare **assegna azioni**.
 
 8. Al termine della riassegnazione, nel riquadro a comparsa verrà visualizzato un messaggio di conferma che conferma che tutte le azioni di miglioramento provenienti dall'utente precedente sono state riassegnate al nuovo utente. Se si riceve una notifica di errore di riassegnazione, chiudere la finestra e riprovare. Per chiudere il riquadro a comparsa, **fare** clic su fine.
 
@@ -233,8 +239,8 @@ In questa sezione vengono illustrate le soluzioni che contengono azioni di migli
 
 In questa sezione viene fornita una visualizzazione più dettagliata del punteggio in due modi diversi:
 
-- **Categorie** : indica la percentuale del Punteggio generale all'interno delle categorie di protezione dei dati, ad esempio "Protect Information" o "Manage Devices".
-- **Valutazioni** : indica la percentuale di progressi nella gestione delle valutazioni per una particolare conformità e standard di protezione dei dati, normative o leggi, come GDPR o NIST 800-53.
+- **Categorie**: indica la percentuale del Punteggio generale all'interno delle categorie di protezione dei dati, ad esempio "Protect Information" o "Manage Devices".
+- **Valutazioni**: indica la percentuale di progressi nella gestione delle valutazioni per una particolare conformità e standard di protezione dei dati, normative o leggi, come GDPR o NIST 800-53.
 
 ### <a name="filtering-your-dashboard-view"></a>Filtrare la visualizzazione del dashboard
 
@@ -268,13 +274,13 @@ La visualizzazione predefinita per questa pagina non Mostra azioni di migliorame
 
 Nella pagina azioni di miglioramento vengono visualizzate le seguenti coordinate per ogni azione di miglioramento:
 
-- **Punti ottenuti** : il numero di punti ottenuti al di fuori del totale disponibile completando l'azione
-- **Regolamenti** : le normative o gli standard relativi all'azione
-- **Gruppo** : gruppo a cui è stata assegnata l'azione
-- **Solutions** : la soluzione in cui è possibile accedere per eseguire l'azione
-- **Valutazioni** : le valutazioni che contengono l'azione
-- **Categorie** : la categoria relativa alla protezione dei dati (ad esempio, protezione delle informazioni, gestione di dispositivi e così via)
-- **Stato del test** :
+- **Punti ottenuti**: il numero di punti ottenuti al di fuori del totale disponibile completando l'azione
+- **Regolamenti**: le normative o gli standard relativi all'azione
+- **Gruppo**: gruppo a cui è stata assegnata l'azione
+- **Solutions**: la soluzione in cui è possibile accedere per eseguire l'azione
+- **Valutazioni**: le valutazioni che contengono l'azione
+- **Categorie**: la categoria relativa alla protezione dei dati (ad esempio, protezione delle informazioni, gestione di dispositivi e così via)
+- **Stato del test**:
     - **None** : non è stato registrato alcun aggiornamento dello stato
     - **Non valutato** : il testing non è stato avviato
     - L'implementazione **passata** ha testato correttamente
@@ -320,18 +326,18 @@ La pagina valutazioni elenca tutte le [valutazioni](compliance-manager-assessmen
 
 Nella pagina valutazioni vengono riepilogate le informazioni principali su ogni valutazione:
 
-- **Valutazione** : nome della valutazione
-- **Stato** :
+- **Valutazione**: nome della valutazione
+- **Stato**:
     - **Complete** -tutti i controlli hanno lo stato "superato" o almeno uno viene superato e gli altri sono "fuori ambito"
     - **Incompleto** : almeno un controllo ha lo stato "non riuscito"
     - **None** -tutti i controlli non sono stati testati
     - **In Progress** -le azioni di miglioramento hanno qualsiasi altro stato, tra cui "in corso", "credito parziale" o "non rilevato
-- **Progress Assessment** : la percentuale del lavoro eseguito verso il completamento, misurata in base al numero di controlli verificati con esito positivo
-- **Azioni di miglioramento** : il numero di azioni completate per soddisfare l'implementazione dei controlli
-- **Azioni Microsoft** : il numero di azioni completate per soddisfare l'implementazione dei controlli Microsoft
-- **Gruppo** : nome del gruppo a cui appartiene la valutazione
-- **Prodotto** : servizio Microsoft 365 associato
-- **Regolamentazione** : lo standard normativo, la politica o la legge che si applica alla valutazione
+- **Progress Assessment**: la percentuale del lavoro eseguito verso il completamento, misurata in base al numero di controlli verificati con esito positivo
+- **Azioni di miglioramento**: il numero di azioni completate per soddisfare l'implementazione dei controlli
+- **Azioni Microsoft**: il numero di azioni completate per soddisfare l'implementazione dei controlli Microsoft
+- **Gruppo**: nome del gruppo a cui appartiene la valutazione
+- **Prodotto**: servizio Microsoft 365 associato
+- **Regolamentazione**: lo standard normativo, la politica o la legge che si applica alla valutazione
 
 ### <a name="filtering-your-assessments-view"></a>Filtrare la visualizzazione delle valutazioni
 

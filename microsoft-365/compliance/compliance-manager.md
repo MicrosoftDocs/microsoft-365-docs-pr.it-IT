@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft Compliance Manager aiuta le organizzazioni a semplificare e automatizzare le valutazioni dei rischi e suggerisce azioni consigliate per aiutare a gestire i rischi.
-ms.openlocfilehash: 4508f07b0077d409de1ac033de67d20d1c3f2a7e
-ms.sourcegitcommit: fcc1b40732f28f075d95faffc1655473e262dd95
+ms.openlocfilehash: 7bff6a2a7a150a08b98fe7a92cd71d266df9fda7
+ms.sourcegitcommit: 20d1158c54a5058093eb8aac23d7e4dc68054688
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/14/2020
-ms.locfileid: "49072935"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "49376547"
 ---
 # <a name="microsoft-compliance-manager"></a>Microsoft Compliance Manager
 
@@ -30,7 +30,7 @@ ms.locfileid: "49072935"
 
 ## <a name="whats-new-the-ga-release-of-compliance-manager"></a>Novità: la versione GA di Compliance Manager
 
-Compliance Manager è ora generalmente disponibile (GA) come soluzione di gestione della conformità end-to-end all'interno del [centro conformità Microsoft 365](microsoft-365-compliance-center.md). Con questa versione, Compliance Manager completa la transizione dal suo percorso precedente nel portale Microsoft Service Trust. Compliance Manager è ora disponibile anche per i clienti moderati degli Stati Uniti (GCC).
+Compliance Manager è ora generalmente disponibile (GA) come soluzione di gestione della conformità end-to-end all'interno del [centro conformità Microsoft 365](microsoft-365-compliance-center.md). Con questa versione, Compliance Manager completa la transizione dal suo percorso precedente nel portale Microsoft Service Trust. Compliance Manager è ora disponibile anche per i clienti di US Government community (GCC) moderato e GCC High.
 
 Che cosa è iniziato come l'anteprima pubblica del Punteggio di conformità si è evoluta in uno strumento centralizzato con funzionalità di gestione della conformità avanzate e una maggiore facilità di utilizzo.  La versione GA apporta una raccolta più ampia di valutazioni predefinite per semplificare la scalabilità delle attività di conformità.
 
@@ -83,9 +83,9 @@ Un controllo è un requisito di una norma, di uno standard o di un criterio. Def
 
 Compliance Manager tiene traccia dei tipi di controlli seguenti:
 
-1. **Controlli gestiti Microsoft** : controlli per i servizi cloud Microsoft, che Microsoft è responsabile dell'implementazione
-2. **I controlli** : a volte definiti controlli gestiti dal cliente, questi sono i controlli implementati e gestiti dall'organizzazione
-3. **Controlli condivisi** : questi sono i controlli che sia l'organizzazione che la responsabilità di Microsoft condividono per l'implementazione
+1. **Controlli gestiti Microsoft**: controlli per i servizi cloud Microsoft, che Microsoft è responsabile dell'implementazione
+2. **I controlli**: a volte definiti controlli gestiti dal cliente, questi sono i controlli implementati e gestiti dall'organizzazione
+3. **Controlli condivisi**: questi sono i controlli che sia l'organizzazione che la responsabilità di Microsoft condividono per l'implementazione
 
 ##### <a name="learn-more"></a>Ulteriori informazioni
 
@@ -99,11 +99,11 @@ Una valutazione è il raggruppamento di controlli da una regolamentazione, stand
 
 Le valutazioni hanno diversi componenti:
 
-- **Servizi nell'ambito** : l'insieme specifico di servizi Microsoft applicabile alla valutazione
-- **Controlli gestiti Microsoft** : controlli per i servizi cloud Microsoft, che Microsoft implementa per conto dell'utente
-- **I controlli** : a volte definiti controlli gestiti dal cliente, questi sono i controlli implementati e gestiti dall'organizzazione
-- **Controlli condivisi** : questi sono i controlli che sia l'organizzazione che la responsabilità di Microsoft condividono per l'implementazione
-- **Punteggio di valutazione** : consente di visualizzare i progressi compiuti per ottenere i possibili punti totali dalle azioni all'interno della valutazione gestita dall'organizzazione e da Microsoft
+- **Servizi nell'ambito**: l'insieme specifico di servizi Microsoft applicabile alla valutazione
+- **Controlli gestiti Microsoft**: controlli per i servizi cloud Microsoft, che Microsoft implementa per conto dell'utente
+- **I controlli**: a volte definiti controlli gestiti dal cliente, questi sono i controlli implementati e gestiti dall'organizzazione
+- **Controlli condivisi**: questi sono i controlli che sia l'organizzazione che la responsabilità di Microsoft condividono per l'implementazione
+- **Punteggio di valutazione**: consente di visualizzare i progressi compiuti per ottenere i possibili punti totali dalle azioni all'interno della valutazione gestita dall'organizzazione e da Microsoft
 
 Quando si creano valutazioni, è necessario assegnarle a un gruppo. È possibile configurare i gruppi in qualunque modo la più logica per l'organizzazione. Ad esempio, è possibile raggruppare le valutazioni per anno di controllo, area geografica, soluzione, team all'interno dell'organizzazione o in altro modo. Dopo aver creato i gruppi, è possibile [filtrare il dashboard Compliance Manager](compliance-manager-setup.md#filtering-your-dashboard-view) per visualizzare il Punteggio di uno o più gruppi.
 

@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Informazioni su come gli utenti lavorano con etichette di riservatezza nelle app di Office per desktop, dispositivi mobili e Web e quali app supportano le etichette di riservatezza.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: de005e40cf346c8dd6e02e0394272a97b186920f
-ms.sourcegitcommit: ce46d1bd67091d4ed0e2b776dfed55e2d88cdbf4
+ms.openlocfilehash: 415f9345c3634adf62c42b9e13192be5ad7ea795
+ms.sourcegitcommit: bdf65d48b20f0f428162c39ee997accfa84f4e5d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49131109"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "49371694"
 ---
 # <a name="use-sensitivity-labels-in-office-apps"></a>Usare le etichette di riservatezza nelle app di Office
 
@@ -258,6 +258,41 @@ Quando si configura un'etichetta di riservatezza per i contrassegni di contenuto
 
 > [!NOTE]
 > La sintassi di tali variabili è distinzione tra maiuscole e minuscole.
+
+#### <a name="setting-different-visual-markings-for-word-excel-powerpoint-and-outlook"></a>Impostazione di segni visivi diversi per Word, Excel, PowerPoint e Outlook
+
+Come variabile aggiuntiva, è possibile configurare i contrassegni visivi per tipo di applicazione di Office utilizzando un'istruzione variabile "If. app" nella stringa di testo e identificare il tipo di applicazione utilizzando i valori **Word**, **Excel**, **PowerPoint** o **Outlook**. È inoltre possibile abbreviare questi valori, che è necessario se si desidera specificare più di uno nello stesso istruzione if. app.
+
+> [!NOTE]
+> Per completezza, le istruzioni per Outlook sono incluse, anche se attualmente supportate solo dal client di etichettatura unificata di Azure Information Protection.
+
+Utilizzare la sintassi seguente:
+
+```
+${If.App.<application type>}<your visual markings text> ${If.End}
+```
+
+Come per gli altri segni visivi dinamici, la sintassi è distinzione tra maiuscole e minuscole.
+
+Esempi:
+
+- **Impostare il testo dell'intestazione solo per i documenti di Word:**
+
+    `${If.App.Word}This Word document is sensitive ${If.End}`
+
+    Solo nelle intestazioni dei documenti di Word, l'etichetta applica il testo dell'intestazione "questo documento di Word è sensibile". Nessun testo di intestazione viene applicato ad altre applicazioni di Office.
+
+- **Impostare il testo del piè di pagina per Word, Excel e Outlook e il testo del piè di pagina diverso per PowerPoint:**
+
+    `${If.App.WXO}This content is confidential. ${If.End}${If.App.PowerPoint}This presentation is confidential. ${If.End}`
+
+    In Word, Excel e Outlook, l'etichetta applica il testo del piè di pagina "questo contenuto è riservato". In PowerPoint, l'etichetta applica il testo del piè di pagina "questa presentazione è riservata".
+
+- **Impostare il testo specifico della filigrana per Word e PowerPoint e quindi il testo della filigrana per Word, Excel e PowerPoint:**
+
+    `${If.App.WP}This content is ${If.End}Confidential`
+
+    In Word e PowerPoint, l'etichetta applica il testo della filigrana "questo contenuto è riservato". In Excel, l'etichetta applica il testo della filigrana "confidenziale". In Outlook l'etichetta non applica alcun testo della filigrana perché le filigrane come segni visivi non sono supportate per Outlook.
 
 ## <a name="end-user-documentation"></a>Documentazione per gli utenti finali
 
