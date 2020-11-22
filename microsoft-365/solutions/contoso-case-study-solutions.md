@@ -15,12 +15,12 @@ ms.collection:
 - M365-subscription-management
 ms.custom: ''
 description: Modalità di distribuzione delle soluzioni di Microsoft 365 da parte di un'organizzazione fittizia ma rappresentativa a livello internazionale.
-ms.openlocfilehash: 8ba1661a2a4257409b7622b6d78dca4bcd103929
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.openlocfilehash: 66040bdd64e83d796e6d045aad2f512898452c50
+ms.sourcegitcommit: bdf65d48b20f0f428162c39ee997accfa84f4e5d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49357696"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "49371637"
 ---
 # <a name="microsoft-365-solutions-for-the-contoso-corporation"></a>Soluzioni di Microsoft 365 per Contoso Corporation
 
@@ -32,9 +32,9 @@ Consultare prima le informazioni su [Contoso Corporation](../enterprise/contoso-
 
 Vedere in che modo Contoso ha usato Microsoft 365 per le soluzioni e gli scenari seguenti:
 
-- [Risposta e infrastruttura COVID-19 per una forza lavoro ibrida](contoso-hybrid-workforce.md)
+- [Risposta al COVID-19 e infrastruttura per il lavoro da remoto e in sede](contoso-remote-onsite-work.md)
 
-- [Un team isolato per un progetto di massima riservatezza](contoso-team-for-top-secret-project.md)
+- [Team isolato per un progetto di massima riservatezza](contoso-team-for-top-secret-project.md)
 
 - [La migrazione degli utenti locali a Teams per servizi di comunicazioni, collaborazione e voce unificati](https://docs.microsoft.com/MicrosoftTeams/voice-case-study-overview)
 

@@ -18,12 +18,12 @@ ms.collection:
 - M365initiative-coredeploy
 ms.custom: seo-marvel-jun2020
 description: Assicurarsi di aver abilitato tutte le caratteristiche di Microsoft 365 per massimizzare la produttività dei lavoratori remoti e mantenere l'accesso sicuro ai server, ai dati e al cloud.
-ms.openlocfilehash: 6cf956d7d7e895dc328c8551f98e78d0fc42d86c
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.openlocfilehash: 833f0351c3eb78afb7218ea1c1c51151d70bb608
+ms.sourcegitcommit: bdf65d48b20f0f428162c39ee997accfa84f4e5d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49357038"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "49371503"
 ---
 # <a name="empower-remote-workers-with-microsoft-365"></a>Aumentare la produttività dei lavoratori remoti con Microsoft 365
 
@@ -114,4 +114,4 @@ Utilizzare la procedura seguente per proteggere e ottimizzare l'accesso ai serve
 
 Per le informazioni più recenti da Microsoft sul supporto dei lavoratori remoti, vedere [Abilitazione del lavoro ibrido nel sito di Microsoft Teams](https://resources.techcommunity.microsoft.com/enabling-hybrid-work/).
 
-Per scoprire in che modo un'organizzazione multi-nazionale fittizia, ma rappresentativa, ha rafforzato il proprio lavoro remoto, vedere [Risposta e infrastruttura di Contoso a COVID 19 per una forza lavoro ibrida](contoso-hybrid-workforce.md).
+Per scoprire in che modo un'organizzazione multi-nazionale fittizia, ma rappresentativa, ha potenziato il proprio lavoro da remoto, vedere [Risposta al COVID-19 e infrastruttura per il lavoro da remoto e in sede di Contoso](contoso-remote-onsite-work.md).

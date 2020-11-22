@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Usare i criteri di conservazione per tenere sotto controllo molto efficacemente i contenuti che gli utenti generano con posta elettronica, documenti e conversazioni. È possibile tenere ciò che si vuole ed eliminare il resto.
-ms.openlocfilehash: 83f438b6a32ad56f1f239858d2f3fad61875c460
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.openlocfilehash: bcf0ef5aa76113102013bc20fca02e6d516c3203
+ms.sourcegitcommit: 20d1158c54a5058093eb8aac23d7e4dc68054688
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49357341"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "49376579"
 ---
 # <a name="create-and-configure-retention-policies"></a>Creare e configurare criteri di conservazione
 
@@ -96,12 +96,12 @@ Se si hanno siti del team non connessi a un gruppo di Microsoft 365, è necessar
 
 È possibile che un criterio di conservazione applicato ai gruppi di Microsoft 365, ai siti di SharePoint o agli account di OneDrive sia in grado di eliminare un file a cui viene fatto riferimento in una chat di Teams o un messaggio di canale prima che quei messaggi vengano eliminati. In questo scenario, il file viene ancora visualizzato nel messaggio di Teams, ma quando gli utenti selezionano il file, viene visualizzato un errore di tipo "file non trovato". Questo comportamento non è specifico dei criteri di conservazione e può verificarsi anche se un utente elimina manualmente un file da SharePoint o da OneDrive.
 
-### <a name="retention-policy-for-yammer-locations"></a>Criterio di conservazione per posizioni di Yammer
+### <a name="retention-policy-for-yammer-locations"></a>Criteri di conservazione per le posizioni di Yammer
 
 > [!NOTE]
-> I criteri di conservazione per Yammer sono implementati in anteprima. Se i nuovi percorsi di Yammer non sono ancora visualizzati, riprovare tra qualche giorno.
+> I criteri di conservazione per Yammer sono distribuiti in anteprima. Se le nuove posizioni di Yammer non sono ancora visibili, riprovare tra qualche giorno.
 >
-> Per usare questa funzionalità, la rete Yammer deve essere in [Modalità nativa](https://docs.microsoft.com/yammer/configure-your-yammer-network/overview-native-mode), non nella Modalità ibrida.
+> Per usare questa funzionalità, la rete Yammer deve essere in [Modalità nativa](https://docs.microsoft.com/yammer/configure-your-yammer-network/overview-native-mode), non in Modalità ibrida.
 
 1. Nel [Centro conformità Microsoft 365](https://compliance.microsoft.com/) selezionare **Criteri** > **Conservazione**.
 
@@ -191,11 +191,11 @@ Per verificare la sintassi del tenant e identificare gli URL per gli utenti, ved
 
 ### <a name="configuration-information-for-microsoft-365-groups"></a>Informazioni di configurazione per i gruppi di Microsoft 365
 
-Per conservare o eliminare il contenuto di un gruppo di Microsoft 365 (in precedenza gruppo di Office365), è necessario usare la posizione **Gruppi di Microsoft 365**. Anche se un gruppo di Microsoft 365 dispone di una cassetta postale di Exchange, un criterio di conservazione che include la posizione **Posta elettronica di Exchange** non includerà contenuti nelle cassette postali dei gruppi di Microsoft 365. Inoltre, sebbene la posizione **Posta elettronica di Exchange** consenta inizialmente di specificare una cassetta postale di gruppo da includere o escludere, quando si prova a salvare il criterio di conservazione, viene visualizzato un messaggio di errore che indica che “RemoteGroupMailbox” non è una selezione valida per la posizione di Exchange.
+Per conservare o eliminare i contenuti di un gruppo di Microsoft 365 (in precedenza gruppo di Office 365), è necessario usare la posizione dei **Gruppi di Microsoft 365**. Anche se un gruppo di Microsoft 365 dispone di una cassetta postale di Exchange, un criterio di conservazione che include la posizione **Posta elettronica di Exchange** non includerà contenuti nelle cassette postali dei gruppi di Microsoft 365. Inoltre, sebbene la posizione **Posta elettronica di Exchange** consenta inizialmente di specificare una cassetta postale di gruppo da includere o escludere, quando si prova a salvare il criterio di conservazione, viene visualizzato un messaggio di errore che indica che “RemoteGroupMailbox” non è una selezione valida per la posizione di Exchange.
 
-Un criterio di conservazione applicato a un gruppo di Microsoft 365 include la cassetta postale di gruppo e il sito dei team di SharePoint. I file archiviati nel sito del team di SharePoint sono coperti da questa posizione, al contrario delle chat di Teams o messaggi del canale di Teams che hanno le loro posizioni dei criteri di conservazione.
+I criteri di conservazione applicati a un gruppo di Microsoft 365 includono la cassetta postale del gruppo e il sito del team di SharePoint. I file archiviati nel sito del team di SharePoint sono inclusi in questa posizione, i messaggi delle chat o dei canali di Teams hanno invece le proprie posizioni per i criteri di conservazione.
 
-### <a name="configuration-information-for-skype-for-business"></a>Informazioni di configurazione per Skype for Business
+### <a name="configuration-information-for-skype-for-business"></a>Informazioni sulla configurazione di Skype for Business
 
 A differenza della posta elettronica di Exchange, non è possibile attivare lo stato della posizione Skype per includere automaticamente tutti gli utenti ma quando si attiva la posizione, sarà necessario scegliere manualmente gli utenti di cui si desidera conservare le conversazioni:
 

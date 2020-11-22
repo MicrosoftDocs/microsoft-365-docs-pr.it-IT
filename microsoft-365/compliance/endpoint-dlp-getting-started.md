@@ -19,18 +19,18 @@ ms.collection:
 search.appverid:
 - MET150
 description: Configurare la prevenzione della perdita di dati degli endpoint di Microsoft 365 per monitorare le attività dei file e implementare azioni di protezione per questi file negli endpoint.
-ms.openlocfilehash: 6ba3b83d634f946f818890a732a83166f346162d
-ms.sourcegitcommit: fcc1b40732f28f075d95faffc1655473e262dd95
+ms.openlocfilehash: 8211ffbe3a84c0ee9fb4cb4c22d4dcea7f906a78
+ms.sourcegitcommit: bdf65d48b20f0f428162c39ee997accfa84f4e5d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/14/2020
-ms.locfileid: "49073095"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "49371602"
 ---
 # <a name="get-started-with-endpoint-data-loss-prevention"></a>Introduzione alla prevenzione della perdita di dati degli endpoint
 
-La prevenzione della perdita dei dati degli endpoint di Microsoft (Endpoint DLP) fa parte della famiglia di funzionalità della prevenzione della perdita dei dati di Microsoft 365 che è possibile usare per rilevare e proteggere elementi riservati nei servizi Microsoft 365. Per ulteriori informazioni sull'offerta completa della prevenzione della perdita di dati di Microsoft, vedere [Panoramica della prevenzione della perdita dei dati](data-loss-prevention-policies.md). Per ulteriori informazioni su Endpoint DLP, vedere [Informazioni sulla prevenzione della perdita di dati degli endpoint](endpoint-dlp-learn-about.md)
+La prevenzione della perdita di dati degli endpoint di Microsoft 365 (Endpoint DLP) fa parte della famiglia di funzionalità di prevenzione della perdita dei dati (DLP) di Microsoft 365 che è possibile usare per individuare e proteggere gli elementi sensibili nei servizi di Microsoft 365. Per altre informazioni su tutte le offerte DLP Microsoft, vedere [Panoramica della prevenzione della perdita dei dati](data-loss-prevention-policies.md). Per altre informazioni sulla perdita dei dati degli endpoint, vedere [Informazioni sulla prevenzione della perdita di dati degli endpoint ](endpoint-dlp-learn-about.md)
 
-La prevenzione della perdita di dati degli endpoint di Microsoft consente di monitorare i dispositivi Windows 10 e rilevare quando vengono usati e condivisi elementi riservati. Questo fornisce la visibilità e il controllo necessari per garantire che vengano usati e protetti in modo appropriato e per prevenire comportamenti rischiosi che potrebbero comprometterli.
+La prevenzione della perdita di dati degli endpoint di Microsoft consente di monitorare i dispositivi Windows 10 e rilevare quando vengono usati e condivisi elementi sensibili. Questo fornisce la visibilità e il controllo necessari per garantire che vengano usati e protetti in modo appropriato e per prevenire comportamenti rischiosi che potrebbero comprometterli.
 
 ## <a name="before-you-begin"></a>Prima di iniziare
 
@@ -105,7 +105,7 @@ Per poter monitorare e proteggere gli elementi riservati in un dispositivo, è n
 
 Quando si desidera eseguire l'onboarding di nuovi dispositivi, si scarica lo script appropriato e lo si distribuisce in questi dispositivi. Seguire la [Procedura di onboarding dei dispositivi](endpoint-dlp-getting-started.md#onboarding-devices).
 
-Se si dispone già di dispositivi per cui è stato eseguito l'onboarding in [Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/), compariranno già nell'elenco dei dispositivi gestiti. Seguire la [Procedura con i dispositivi per cui è stato eseguito l'onboarding in Microsoft ATP](endpoint-dlp-getting-started.md#with-devices-onboarded-into-microsoft-defender-for- endpoint).
+Se si dispone già di dispositivi per cui è stato eseguito l'onboarding in [Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/), compariranno già nell'elenco dei dispositivi gestiti. Seguire la [Procedura con i dispositivi per cui è stato eseguito l'onboarding in Microsoft ATP](https://docs.microsoft.com/microsoft-365/compliance/endpoint-dlp-getting-started?view=o365-worldwide&source=docs#with-devices-onboarded-into-microsoft-defender-for-endpoint).
 
 ### <a name="onboarding-devices"></a>Onboarding dei dispositivi
 
