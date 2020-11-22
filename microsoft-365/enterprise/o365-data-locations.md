@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 'Determinare dove sono archiviati i dati dei clienti Microsoft 365 in tutto il mondo '
-ms.openlocfilehash: 4fd3f480ef2ad3389e9a959695b9654badbda27f
-ms.sourcegitcommit: 0badd6a7af803a52c7c46a4374211cb89307eacf
+ms.openlocfilehash: 6ad35082cbed602325e2a32edb825a17b5cb9f4a
+ms.sourcegitcommit: 20d1158c54a5058093eb8aac23d7e4dc68054688
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49135992"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "49376516"
 ---
 <!--
 Note to new owner: Links in the Notes and FAQ sections need to be added from the source document at https://microsoft.sharepoint.com/:w:/t/golocalteam/Ebv6_Lw6FvNKucfA1eESTPUBy6O1MdvWEeT-L8O5a2HsIg?e=4%3AUfF1Uj&at=9&xsdata=MDR8MDF8am9zZXBoZEBtaWNyb3NvZnQuY29tfGM1ZTg1ODI0ZWRmMTRlN2E3MDkzMDhkNzgzNDMxYTczfDcyZjk4OGJmODZmMTQxYWY5MWFiMmQ3Y2QwMTFkYjQ3fDF8MHw2MzcxMjIxOTY1MzQ5NjM5NDl8VW5rbm93bnxUV0ZwYkdac2IzZDhleUpXSWpvaU1DNHdMakF3TURBaUxDSlFJam9pVjJsdU16SWlMQ0pCVGlJNklrMWhhV3dpTENKWFZDSTZNbjA9fC0x&sdata=MkxOUXhlZEdyR0I1SzBvd044d2hkd2RPaGN2RUpaS09jMkZTcys0dkZQRT0%3D
@@ -31,6 +31,8 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 
 Le tabelle seguenti mostrano le posizioni in cui sono archiviati i dati inattivi dei clienti per i servizi di Microsoft 365 in tutte le aree geografiche del cloud globale di Microsoft. Espandere la posizione del paese in cui si trova l'indirizzo di fatturazione per scoprire dove verranno archiviati i dati dei clienti per ogni servizio.
 
+Se l'organizzazione si trova nell'Unione europea, per altre informazioni, vedere [Posizioni dei dati per l'Unione europea](EU-data-storage-locations.md). 
+
 I clienti possono visualizzare informazioni sulla posizione di dati specifici del tenant nell'interfaccia di amministrazione di Microsoft 365 in **Impostazioni | Impostazioni organizzazione | Profilo organizzazione | Percorso dati**.
 
 Per impostazione predefinita, i nuovi tenant di Microsoft 365 vengono ospitati in un'area geografica in base al paese della transazione associata al primo abbonamento del tenant.
@@ -38,7 +40,6 @@ Per impostazione predefinita, i nuovi tenant di Microsoft 365 vengono ospitati i
 Informazioni sugli impegni contrattuali relativi alla posizione di archiviazione dei dati inattivi dei clienti sono disponibili nelle [Condizioni di Microsoft Online Services (OST)](https://go.microsoft.com/fwlink/p/?LinkId=2098215).
 
 Per le posizioni dei dati di Azure Active Directory, visitare la [mappa dei dati di AAD](https://go.microsoft.com/fwlink/p/?linkid=2092972).
-
 
 Se l'indirizzo di fatturazione del cliente è esterno all'Europa e il cliente ha un abbonamento a Office 365 Education, nonostante la sezione "Località dei dati dei clienti disponibili per i servizi di base online" della OST, Microsoft può eseguire il provisioning del tenant di Office 365 del cliente, trasferire i dati dei clienti a e archiviare i dati dei clienti in qualsiasi punto dell'Europa o del Nord America.  Se l'indirizzo di fatturazione del cliente è in Europa e il cliente ha un abbonamento a Office 365 Education, nonostante la sezione "Località dei dati dei clienti disponibili per i servizi di base online" della OST, Microsoft può eseguire il provisioning del tenant di Office 365 del cliente, trasferire i dati dei clienti a e archiviare i dati dei clienti in qualsiasi punto dell'Unione europea.
 
