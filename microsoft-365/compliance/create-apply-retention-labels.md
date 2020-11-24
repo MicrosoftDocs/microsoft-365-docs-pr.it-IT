@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Istruzioni sulla creazione e la pubblicazione di etichette di conservazione per applicarle nelle app al fine di conservare ciò che serve ed eliminare ciò che non serve
-ms.openlocfilehash: e13da466e10a347270d4b1097d36476d974557a7
-ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
+ms.openlocfilehash: ea67d5942f5134e4e34c3add9bdfc48771201e2d
+ms.sourcegitcommit: 26b35012c42fef935d6c4a6509dde6c22a9b922a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48920340"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "49385188"
 ---
 # <a name="create-retention-labels-and-apply-them-in-apps"></a>Creare etichette di conservazione e applicarle nelle app
 
@@ -97,7 +97,7 @@ Pubblicare le etichette di conservazione in modo che possano essere applicate da
     
     Per informazioni sulle posizioni supportate dalle etichette di conservazione, vedere la sezione [Etichette di conservazione e posizioni](retention.md#retention-label-policies-and-locations). 
 
-Per modificare un criterio esistente delle etichette di conservazione (il tipo di criterio è **Pubblica** ), selezionare il criterio e quindi selezionare l’opzione **Modifica** per avviare Modifica criterio di conservazione. Questa procedura guidata consente di modificare la descrizione del criterio e qualsiasi [impostazione idonea](#updating-retention-labels-and-their-policies) del passaggio 2.
+Per modificare un criterio esistente delle etichette di conservazione (il tipo di criterio è **Pubblica**), selezionare il criterio e quindi selezionare l’opzione **Modifica** per avviare Modifica criterio di conservazione. Questa procedura guidata consente di modificare la descrizione del criterio e qualsiasi [impostazione idonea](#updating-retention-labels-and-their-policies) del passaggio 2.
 
 
 ## <a name="when-retention-labels-become-available-to-apply"></a>Tempo necessario prima che le etichette diventino visibili
@@ -271,7 +271,7 @@ Although the UI refers to retention policies, it's your retention labels that di
 When you edit a retention label or retention label policy, and the retention label or policy is already applied to content, your updated settings will automatically be applied to this content in addition to content that's newly identified.
 
 Some settings can't be changed after the label or policy is created and saved, which include:
-- The retention settings except the retention period, unless you've configured the label to retain or delete the content based on when it was created.
+- The retention label and policy name, and the retention settings except the retention period. However, you can't change the retention period when the retention period is based on when items were labeled.
 - The option to mark items as a record.
 
 ## Locking the policy to prevent changes
