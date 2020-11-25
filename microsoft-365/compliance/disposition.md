@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Monitorare e gestire lo smaltimento del contenuto, sia che si utilizzi una revisione per l'eliminazione o che il contenuto venga eliminato automaticamente in base alle impostazioni configurate.
-ms.openlocfilehash: dfea1cfece8a9faccced134cf30923527bd241f5
-ms.sourcegitcommit: 36795a6735cd3fc678c7d5db71ddc97fac3f6f8a
+ms.openlocfilehash: 9900bbc58818a98ad41f4f796184ccf21041bbfe
+ms.sourcegitcommit: a9486f9dc51f0908393000ec3c211e3430c26abd
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "48941367"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "49409213"
 ---
 # <a name="disposition-of-content"></a>Eliminazione del contenuto
 
@@ -40,7 +40,9 @@ Per accedere correttamente alla scheda **eliminazione** nel Centro conformità M
 Per attribuire agli utenti il necessario ruolo di gestione dell’eliminazione, aggiungere gli utenti a uno di questi gruppi di ruoli predefiniti oppure creare un gruppo di ruoli personalizzato (denominato ad esempio "revisori per l’eliminazione") e attribuire al gruppo il ruolo di gestione dell’eliminazione.  
 
 > [!NOTE]
-> Anche un amministratore globale deve avere il ruolo di **gestione dell’eliminazione**. 
+> Anche un amministratore globale deve avere il ruolo di **gestione dell'eliminazione**. 
+
+Inoltre, per visualizzare il contenuto degli elementi durante il processo di eliminazione, aggiungere utenti ai due gruppi di ruoli seguenti: **Visualizzatore contenuto di Esplora contenuto** e **Visualizzatore elenco di Esplora contenuto**. Se gli utenti non hanno le autorizzazioni di questi gruppi di ruoli, possono comunque selezionare un'azione di revisione per l'eliminazione per completare l'operazione, ma devono farlo senza poter vedere il contenuto dell'elemento nel centro conformità.
 
 Per le istruzioni, vedere [Fornire agli utenti l'accesso al Centro sicurezza e conformità di Office 365](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
 
@@ -75,7 +77,7 @@ Una revisione per l'eliminazione può includere il contenuto di cassette postali
 
 ![Eliminazioni in sospeso nella panoramica sulla gestione dei record](../media/dispositions-overview.png)
 
-Quando si seleziona **Visualizza tutte le eliminazioni in sospeso** , viene visualizzata la pagina **eliminazione**. Ad esempio:
+Quando si seleziona **Visualizza tutte le eliminazioni in sospeso**, viene visualizzata la pagina **eliminazione**. Ad esempio:
 
 ![Pagina eliminazioni nel Centro conformità Microsoft 365.](../media/disposition-tab.png)
 
@@ -92,7 +94,7 @@ Dalla pagina **Definisci le impostazioni di conservazione** per un'etichetta di 
 
 ![Impostazioni di conservazione per l'etichetta](../media/disposition-review-option.png)
  
-Dopo aver selezionato l'opzione **Attiva una revisione per l'eliminazione** , si specificano i revisori per l’eliminazione nella pagina successiva della procedura guidata:
+Dopo aver selezionato l'opzione **Attiva una revisione per l'eliminazione**, si specificano i revisori per l’eliminazione nella pagina successiva della procedura guidata:
 
 ![Specifica dei revisori per l’eliminazione](../media/disposition-reviewers.png)
 
@@ -133,11 +135,11 @@ Gli elementi visualizzati nella scheda **elementi eliminati** delle etichette de
 > [!NOTE]
 > Questa funzionalità si basa sulle informazioni provenienti dal [Log di controllo unificato](search-the-audit-log-in-security-and-compliance.md) e, di conseguenza, è necessario che il controllo sia [abilitato e con ricerca consentita](turn-audit-log-search-on-or-off.md) in modo da acquisire gli eventi corrispondenti.
 
-Per il controllo, cercare **File eliminato contrassegnato come record**.
+Per il controllo, cercare **File eliminato contrassegnato come record** nella categoria **Attività su file e pagine**. Questo evento di controllo è applicabile ai documenti e ai messaggi di posta elettronica.
 
 ## <a name="filter-and-export-the-views"></a>Filtrare ed esportare le visualizzazioni
 
-Se si seleziona un'etichetta di conservazione dalla pagina **eliminazione** , la scheda **eliminazione in sospeso** (se applicabile) e la scheda **elementi eliminati** consentono di filtrare le visualizzazioni per trovare più facilmente gli elementi. 
+Se si seleziona un'etichetta di conservazione dalla pagina **eliminazione**, la scheda **eliminazione in sospeso**(se applicabile) e la scheda **elementi eliminati** consentono di filtrare le visualizzazioni per trovare più facilmente gli elementi. 
 
 Per le eliminazioni in sospeso, l'intervallo di tempo si basa sulla data di scadenza. Per gli elementi eliminati, l'intervallo di tempo si basa sulla data di eliminazione.
   

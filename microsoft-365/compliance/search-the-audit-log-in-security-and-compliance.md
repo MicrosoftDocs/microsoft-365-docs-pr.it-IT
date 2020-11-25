@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: Usare il Centro sicurezza e conformità di Office 365 o il Centro conformità Microsoft 365 per eseguire una ricerca nel log di controllo unificato e vedere le attività di utenti e amministratori nell'organizzazione.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: aa47cc0c460e77a6faadd5cb2ff7d46c62ed88ab
-ms.sourcegitcommit: 20d1158c54a5058093eb8aac23d7e4dc68054688
+ms.openlocfilehash: b27ba2ff9343599dc35b1bae8cd5656197497bea
+ms.sourcegitcommit: a9486f9dc51f0908393000ec3c211e3430c26abd
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "49376655"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "49409267"
 ---
 # <a name="search-the-audit-log-in-the-compliance-center"></a>Eseguire una ricerca nel log di controllo nel Centro conformità
 
@@ -438,7 +438,7 @@ La tabella seguente descrive le attività su file e pagine in SharePoint Online 
 |File eliminato|FileDeleted|Un utente elimina un documento da un sito.|
 |File eliminato dal Cestino|FileDeletedFirstStageRecycleBin|L'utente elimina un file dal Cestino di un sito.|
 |File eliminato dal Cestino di secondo livello|FileDeletedSecondStageRecycleBin|L'utente elimina un file dal Cestino di secondo livello di un sito.|
-|File eliminato contrassegnato come record|RecordDelete|Un documento contrassegnato come record è stato eliminato. Un documento viene considerato un record se al documento è applicata un'etichetta di conservazione che contrassegna il contenuto come record.|
+|File eliminato contrassegnato come record|RecordDelete|Un documento o un messaggio di posta elettronica contrassegnato come record è stato eliminato. Un elemento viene considerato un record se al contenuto è applicata un'etichetta di conservazione che contrassegna gli elementi come record.|
 |È stata rilevata una mancata corrispondenza della riservatezza del documento|DocumentSensitivityMismatchDetected|Un utente carica un documento in un sito protetto con un'etichetta di riservatezza e il documento ha un'etichetta di riservatezza con priorità più elevata rispetto all'etichetta di riservatezza applicata al sito. Ad esempio, un documento etichettato come Riservato viene caricato in un sito etichettato come Generale.<br/><br/> Questo evento non viene generato se il documento ha un'etichetta di riservatezza con priorità inferiore rispetto all'etichetta di riservatezza applicata al sito. Ad esempio, un documento etichettato come Generale viene caricato in un sito etichettato come Riservato. Per altre informazioni sulla priorità delle etichette di riservatezza, vedere [Priorità delle etichette (l’ordine è rilevante)](sensitivity-labels.md#label-priority-order-matters).|
 |Malware rilevato nel file|FileMalwareDetected|Il motore antivirus di SharePoint rileva malware in un file.|
 |Estrazione file rimossa|FileCheckOutDiscarded|Un utente elimina (o annulla) l'estrazione di un file. Ciò significa che le modifiche apportate al file dopo l'estrazione vengono eliminate e non salvate nella versione del documento nella raccolta documenti.|
