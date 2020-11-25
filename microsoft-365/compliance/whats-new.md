@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: L'aggiunta di nuove nuove soluzioni al centro conformità, l'aggiornamento delle funzionalità esistenti in base ai commenti o la documentazione aggiornata e rinnovata, Microsoft 365 consente di rimanere al di sopra del panorama di conformità in continua evoluzione. Scoprire cosa è stato fino a questo mese.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 27228f37673eee64ae44de9b88b7505d1958c05f
-ms.sourcegitcommit: 20d1158c54a5058093eb8aac23d7e4dc68054688
+ms.openlocfilehash: 1d4583e5216a369801c48a47b488a35fc4e62b37
+ms.sourcegitcommit: 95b85a1fdf43e3f0839483fa22e279262703f15f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "49376609"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "49407340"
 ---
 # <a name="whats-new-in-microsoft-365-compliance"></a>Novità sulla conformità Microsoft 365
 
@@ -93,7 +93,7 @@ Guarda il video seguente per informazioni su come Compliance Manager può aiutar
 
 ### <a name="sensitivity-labels"></a>Etichette di riservatezza
 
-[Supporto per i clienti del governo degli Stati Uniti](https://docs.microsoft.com/en-us/enterprise-mobility-security/solutions/ems-aip-premium-govt-service-description). Le etichette di riservatezza sono ora supportate per i clienti GCC, GCC High e DoD, solo per il client e lo scanner di Azure Information Protection Unified labeling.
+[Supporto per i clienti del governo degli Stati Uniti](https://docs.microsoft.com/enterprise-mobility-security/solutions/ems-aip-premium-govt-service-description). Le etichette di riservatezza sono ora supportate per i clienti GCC, GCC High e DoD, solo per il client e lo scanner di Azure Information Protection Unified labeling.
 
 ### <a name="trainable-classifiers"></a>Classificatori sottoponibili a training
 
@@ -417,7 +417,7 @@ Se è stato utilizzato il Centro sicurezza & conformità di Office 365 per soddi
 |Ricerca contenuto|Ricerca di contenuti > di ricerca <br/> https://protection.office.com/contentsearchbeta?ContentOnly=1 | Ricerca contenuto <br/> https://compliance.microsoft.com/contentsearch |[Ricerca di contenuto in Office 365](search-for-content.md) |
 |Connettori dati|Information Governance > archiviazione dei dati di terze parti <br/> https://protection.office.com/nativeconnector | Connettori dati <br/> https://compliance.microsoft.com/connectorlanding |[Archiviare i dati di terze parti](archiving-third-party-data.md)|
 |Prevenzione della perdita di dati|Prevenzione della perdita di dati <br/> https://protection.office.com/datalossprevention |Prevenzione della perdita di dati <br/> https://compliance.microsoft.com/datalossprevention |[Panoramica sulla prevenzione della perdita dei dati](data-loss-prevention-policies.md)|
-|Richieste del soggetto dei dati |Privacy dei dati > richieste del soggetto dei dati <br/> https://protection.office.com/dsrcases |Richieste degli interessati <br/> https://compliance.microsoft.com/datasubjectrequest |[Gestire le richieste del soggetto dei dati di GDPR con lo strumento di gestione dei casi DSR](manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md)|
+|Richieste degli interessati |Privacy dei dati > richieste del soggetto dei dati <br/> https://protection.office.com/dsrcases |Richieste del soggetto dei dati <br/> https://compliance.microsoft.com/datasubjectrequest |[Gestire le richieste del soggetto dei dati di GDPR con lo strumento di gestione dei casi DSR](manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md)|
 |eDiscovery|eDiscovery > eDiscovery <br/> https://protection.office.com/ediscoveryv1 |eDiscovery > Core <br/> https://compliance.microsoft.com/classicediscovery |[Gestire casi di eDiscovery](ediscovery-cases.md) |
 |Events|Eventi > di gestione dei record <br/> https://protection.office.com/events |Scheda eventi > di gestione dei record <br/> https://compliance.microsoft.com/recordsmanagement?viewid=events |[Avviare la conservazione al verificarsi di un evento](event-driven-retention.md)|
 |Piano di archiviazione|Gestione dei record > piano file <br/> https://protection.office.com/fileplan |Scheda Gestione record > piano file <br/> https://compliance.microsoft.com/recordsmanagement?viewid=fileplan |[Usare il piano di archiviazione per gestire le etichette di conservazione](file-plan-manager.md)|

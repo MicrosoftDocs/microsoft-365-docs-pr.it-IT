@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Informazioni su come gli utenti lavorano con etichette di riservatezza nelle app di Office per desktop, dispositivi mobili e Web e quali app supportano le etichette di riservatezza.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 415f9345c3634adf62c42b9e13192be5ad7ea795
-ms.sourcegitcommit: bdf65d48b20f0f428162c39ee997accfa84f4e5d
+ms.openlocfilehash: b616a25f4e130f7b73b82e80bf82136c229d5efd
+ms.sourcegitcommit: a9486f9dc51f0908393000ec3c211e3430c26abd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "49371694"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "49409203"
 ---
 # <a name="use-sensitivity-labels-in-office-apps"></a>Usare le etichette di riservatezza nelle app di Office
 
@@ -62,11 +62,15 @@ Per iOS e Android: se si dispone di una versione minima elencata, la funzionalit
 |[Contrassegni dinamici con variabili](#dynamic-markings-with-variables)                                              | 2010 +           | 16.42 +     | 2.42 + | 16.0.13328 + | In Revisione |
 |[Assegnare le autorizzazioni adesso](encryption-sensitivity-labels.md#assign-permissions-now)                                 | 1910+          | 16.21 +     | 2.21+ | 16.0.11231+ | [Sì-opt-in](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[Consentire agli utenti di assegnare le autorizzazioni](encryption-sensitivity-labels.md#let-users-assign-permissions)                     |2004 + | 16.35 +   | In Revisione   | In Revisione         | In Revisione                                                        |
-|[Visualizzazione dell'utilizzo delle etichette con label Analytics](label-analytics.md) e invio dei dati per gli amministratori                      | In Revisione            | In Revisione        | In Revisione   | In Revisione         | In Revisione                                                        |
+|[Visualizzazione dell'utilizzo delle etichette con label Analytics](label-analytics.md) e invio dei dati per gli amministratori                      | In Revisione            | In Revisione        | In Revisione   | In Revisione         | Sì <sup>\*</sup>                                                        |
 |[Richiedere agli utenti di applicare un'etichetta ai propri messaggi di posta elettronica e documenti](sensitivity-labels.md#what-label-policies-can-do)   | In Revisione            | In Revisione        | In Revisione   | In Revisione         | In Revisione                                                        |
 |[Applicare automaticamente un'etichetta di riservatezza al contenuto](apply-sensitivity-label-automatically.md)                    | 2009 +                                  | Anteprima di Word e PowerPoint: implementazione del [canale corrente (anteprima)](https://office.com/insider) | In Revisione | In Revisione | [Sì-opt-in](sensitivity-labels-sharepoint-onedrive-files.md) |
 |Supporto per il [salvataggio automatico](https://support.office.com/article/6d6bd723-ebfd-4e40-b5f6-ae6e8088f7a5) e la [CoAuthoring](https://support.office.com/article/ee1509b4-1f6e-401e-b04a-782d26f564a4) sui documenti etichettati e protetti | In Revisione | In Revisione | In Revisione | In Revisione | [Sì-opt-in](sensitivity-labels-sharepoint-onedrive-files.md) |
 |
+
+**Nota a piè**
+
+<sup>\*</sup> Attualmente, non include il testo di giustificazione per rimuovere un'etichetta o abbassare il livello di classificazione
 
 ### <a name="sensitivity-label-capabilities-in-outlook"></a>Funzionalità delle etichette di riservatezza in Outlook
 
@@ -80,10 +84,11 @@ Per iOS e Android: se si dispone di una versione minima elencata, la funzionalit
 |[Contrassegni dinamici con variabili](#dynamic-markings-with-variables)                                              | In Revisione                     | In Revisione                 | In Revisione         | In Revisione           | In Revisione               |
 |[Assegnare le autorizzazioni adesso](encryption-sensitivity-labels.md#assign-permissions-now)                                 | 1910+                     | 16.21 +                 | 4.7.1 +         | 4.0.39 +           | Sì               |
 |[Consentire agli utenti di assegnare le autorizzazioni](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | 1910+                     | 16.21 +                 | 4.7.1 +         | 4.0.39 +           | Sì               |
-|[Visualizzazione dell'utilizzo delle etichette con label Analytics](label-analytics.md) e invio dei dati per gli amministratori                      | In Revisione                       | In Revisione                    | In Revisione           | In Revisione               | In Revisione               |
+|[Visualizzazione dell'utilizzo delle etichette con label Analytics](label-analytics.md) e invio dei dati per gli amministratori                      | In Revisione                       | In Revisione                    | In Revisione           | In Revisione               | Sì               |
 |[Richiedere agli utenti di applicare un'etichetta ai propri messaggi di posta elettronica e documenti](sensitivity-labels.md#what-label-policies-can-do)   | In Revisione                       | In Revisione                    | In Revisione           | In Revisione               | In Revisione               |
 |[Applicare automaticamente un'etichetta di riservatezza al contenuto](apply-sensitivity-label-automatically.md)                    | 2009 +                      | In Revisione                    | In Revisione           | In Revisione               | Sì |
 |
+
 
 ## <a name="office-built-in-labeling-client-and-other-labeling-solutions"></a>Client di etichettatura incorporato di Office e altre soluzioni di etichettatura
 
@@ -199,7 +204,7 @@ Oltre a limitare l'accesso agli utenti nella propria organizzazione, è possibil
 
 Se gli utenti esterni non dispongono di un account in Azure Active Directory, è possibile creare un account Guest per il proprio tenant. Per l'indirizzo di posta elettronica, è possibile specificare qualsiasi indirizzo di posta elettronica che già utilizza. Ad esempio, l'indirizzo Gmail. Questo account Guest può anche essere utilizzato per accedere a un documento condiviso in SharePoint o OneDrive quando sono state [abilitate le etichette di riservatezza per i file di Office in SharePoint e OneDrive](sensitivity-labels-sharepoint-onedrive-files.md).
 
-Gli utenti esterni possono anche utilizzare un account Microsoft per i documenti crittografati quando utilizzano Microsoft 365 Apps (in[precedenza Office 365 Apps](https://docs.microsoft.com/deployoffice/name-change)) su Windows e ora su Android (versione 13029 +) e iOS (versione 1385219 +). Questa funzionalità non è ancora supportata per macOS. Ad esempio, qualcuno condivide un documento crittografato con loro e le impostazioni di crittografia specificano l'indirizzo di posta elettronica di Gmail. Questo utente può creare un proprio account Microsoft che usa il proprio indirizzo di posta elettronica di Gmail. Successivamente, dopo aver eseguito l'accesso con questo account, è possibile aprire il documento e modificarlo in base alle restrizioni di utilizzo specificate per tale utente. Per un esempio di procedura dettagliata di questo scenario, vedere [Opening and editing the protected Document](https://docs.microsoft.com/azure/information-protection/secure-collaboration-documents#opening-and-editing-the-protected-document).
+Gli utenti esterni possono anche utilizzare un account Microsoft per i documenti crittografati quando utilizzano le app Microsoft 365 (in[precedenza Office 365 Apps](https://docs.microsoft.com/deployoffice/name-change)) su Windows e sono state di recente supportate su MacOS (versione 16.42 +), Android (versione 13029 +) e iOS (versione 2.42 +). Ad esempio, qualcuno condivide un documento crittografato con loro e le impostazioni di crittografia specificano l'indirizzo di posta elettronica di Gmail. Questo utente può creare un proprio account Microsoft che usa il proprio indirizzo di posta elettronica di Gmail. Successivamente, dopo aver eseguito l'accesso con questo account, è possibile aprire il documento e modificarlo in base alle restrizioni di utilizzo specificate per tale utente. Per un esempio di procedura dettagliata di questo scenario, vedere [Opening and editing the protected Document](https://docs.microsoft.com/azure/information-protection/secure-collaboration-documents#opening-and-editing-the-protected-document).
 
 > [!NOTE]
 > L'indirizzo di posta elettronica dell'account Microsoft deve corrispondere all'indirizzo di posta elettronica specificato per limitare l'accesso alle impostazioni di crittografia.
