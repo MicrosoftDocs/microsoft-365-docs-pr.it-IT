@@ -1,6 +1,6 @@
 ---
 title: Assegnare la priorità agli incidenti in Microsoft 365 Defender
-description: Informazioni su come definire la priorità degli incidenti dalla coda degli incidenti in Microsoft 365 Defender
+description: Informazioni su come filtrare gli incidenti dalla coda degli incidenti in Microsoft 365 Defender
 keywords: evento imprevisto, coda, panoramica, dispositivi, identità, utenti, cassetta postale, posta elettronica, eventi imprevisti
 search.product: eADQiWindows 10XVcnh
 ms.prod: microsoft-365-enterprise
@@ -21,12 +21,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 4369d51ed740af652be632ba0b8752c708d6c719
-ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
+ms.openlocfilehash: e587004fbb3bc6defab985cea9b427f64b3aab35
+ms.sourcegitcommit: a9486f9dc51f0908393000ec3c211e3430c26abd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48877220"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "49409256"
 ---
 # <a name="prioritize-incidents-in-microsoft-365-defender"></a>Assegnare la priorità agli incidenti in Microsoft 365 Defender
 
@@ -38,7 +38,7 @@ ms.locfileid: "48877220"
 
 
 
-Microsoft 365 Defender applica l'analisi della correlazione e aggrega tutti gli avvisi e le indagini correlati provenienti da prodotti diversi in un unico evento. Microsoft 365 Defender attiva anche avvisi univoci sulle attività che possono essere identificate solo come dannose, data la visibilità end-to-end che Microsoft 365 Defender ha nell'intera proprietà e nella famiglia di prodotti. In questo modo, Microsoft 365 Defender narra la storia degli attacchi più ampia, consentendo a un analista delle operazioni di sicurezza di comprendere e gestire le minacce complesse all'interno dell'organizzazione.
+Microsoft 365 Defender applica l'analisi della correlazione e aggrega tutti gli avvisi e le indagini correlati provenienti da prodotti diversi in un unico evento. Microsoft 365 Defender attiva anche avvisi univoci sulle attività che possono essere identificate solo come dannose, data la visibilità end-to-end che Microsoft 365 Defender ha nell'intera proprietà e nella famiglia di prodotti. Questa visualizzazione fornisce all'analista delle operazioni di sicurezza la storia degli attacchi più ampia, che li aiuta a comprendere meglio e a gestire le minacce complesse nell'organizzazione.
 
 
 La **coda degli eventi imprevisti** mostra una raccolta di eventi imprevisti contrassegnati da diversi dispositivi, utenti e cassette postali. Ti aiuta a ordinare gli eventi imprevisti in base alla loro priorità e a definire una risposta di cybersecurity mirata.
@@ -100,8 +100,7 @@ La gravità di un evento imprevisto è indicativa dell'impatto che può avere su
 ### <a name="status"></a>Stato
 Puoi scegliere di limitare l'elenco degli eventi imprevisti visualizzati in base al loro stato per vedere quali sono attivi o risolti.
 
->[!IMPORTANT]
->La classificazione, il gruppo di dispositivi, lo stato di indagine e i filtri della piattaforma OS sono attualmente disponibili solo in anteprima pubblica.
+
 
 
 ## <a name="next-steps"></a>Passaggi successivi
