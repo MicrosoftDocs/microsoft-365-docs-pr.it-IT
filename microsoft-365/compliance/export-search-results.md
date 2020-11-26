@@ -20,14 +20,14 @@ search.appverid:
 - MED150
 - MET150
 ms.assetid: ed48d448-3714-4c42-85f5-10f75f6a4278
-description: 'Esportare i risultati della ricerca da una ricerca contenuto nel centro sicurezza & conformità a un computer locale. I risultati della posta elettronica vengono esportati come file PST. I contenuti dei siti di SharePoint e OneDrive for business vengono esportati come documenti di Office nativi. '
+description: Esportare i risultati della ricerca da una ricerca di contenuto nel centro conformità di Microsoft 365 a un computer locale. I risultati della posta elettronica vengono esportati come file PST. I contenuti dei siti di SharePoint e OneDrive for business vengono esportati come documenti di Office nativi.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d1d657c7dc004bc587a8934292b6117ac4e023a0
-ms.sourcegitcommit: e7bf23df4852b78912229d1d38ec475223597f34
+ms.openlocfilehash: 48f5cab4c25199873c795cdfb9afac54f4f402a0
+ms.sourcegitcommit: 8ad481ed61cb6dabf8afb0fb04296666fa166450
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49087333"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "49422875"
 ---
 # <a name="export-content-search-results"></a>Esportare i risultati di Ricerca contenuto
 
@@ -57,7 +57,9 @@ L'esportazione dei risultati di una ricerca di contenuto comporta la preparazion
   > <sup>1</sup> Microsoft non produce estensioni o componenti aggiuntivi di terze parti per le applicazioni ClickOnce. L'esportazione dei risultati di ricerca utilizzando un browser non supportato con le estensioni di terze parti o i componenti aggiuntivi non è supportata.<br/>
   > <sup>2</sup> come risultato delle recenti modifiche apportate a Microsoft Edge, il supporto ClickOnce non è più abilitato per impostazione predefinita. Per istruzioni sull'abilitazione del supporto ClickOnce in Edge, vedere [utilizzare lo strumento di esportazione di eDiscovery in Microsoft Edge](configure-edge-to-export-search-results.md).
   
-- Quando si scaricano i risultati della ricerca (descritti nel passaggio 2), è possibile aumentare la velocità di download configurando un'impostazione del registro di sistema di Windows nel computer utilizzato per esportare i risultati della ricerca. Per ulteriori informazioni, vedere [aumentare la velocità di download quando si esportano i risultati di ricerca di eDiscovery da Office 365](increase-download-speeds-when-exporting-ediscovery-results.md).
+- Si consiglia di scaricare i risultati della ricerca in un computer locale. Tuttavia, per eliminare l'infrastruttura del firewall o del proxy dell'azienda dalla causa dei problemi durante il download dei risultati della ricerca, è possibile prendere in considerazione la possibilità di scaricare i risultati della ricerca in un desktop virtuale all'esterno della rete. In questo caso, potrebbero verificarsi dei timeout che si verificano nelle connessioni dati di Azure durante l'esportazione di un numero elevato di file. Per ulteriori informazioni sui desktop virtuali, vedere [Windows Virtual Desktop](https://azure.microsoft.com/services/virtual-desktop). 
+
+- Per migliorare le prestazioni durante il download dei risultati della ricerca, è consigliabile dividere le ricerche che restituiscono un set di risultati di grandi dimensioni in ricerche più piccole. Ad esempio, è possibile utilizzare intervalli di date nelle query di ricerca per restituire un insieme di risultati più piccolo che può essere scaricato più velocemente.
   
 - Quando si esportano i risultati della ricerca, i dati vengono temporaneamente archiviati in una posizione di archiviazione di Azure fornita da Microsoft nel cloud Microsoft prima che vengano scaricati nel computer locale. Assicurarsi che l'organizzazione sia in grado di connettersi all'endpoint in Azure, che è **\* . blob.Core.Windows.NET** (il carattere jolly rappresenta un identificatore univoco per l'esportazione). I dati dei risultati della ricerca vengono eliminati dal percorso di archiviazione di Azure due settimane dopo la sua creazione. 
   
@@ -135,8 +137,6 @@ Vedere la sezione successiva per istruzioni per scaricare i risultati della rice
 ## <a name="step-2-download-the-search-results"></a>Passaggio 2: Scaricare i risultati della ricerca
 
 Il passaggio successivo consiste nel scaricare i risultati della ricerca dal percorso di archiviazione di Azure nel computer locale.
-  
-Come spiegato in precedenza, è possibile aumentare la velocità di download configurando un'impostazione del registro di sistema di Windows nel computer utilizzato per esportare i risultati della ricerca. Per ulteriori informazioni, vedere [aumentare la velocità di download quando si esportano i risultati di ricerca di eDiscovery da Office 365](increase-download-speeds-when-exporting-ediscovery-results.md).
   
 1. Nella pagina **Ricerca contenuto** fare clic sulla scheda **esportazioni** . 
   

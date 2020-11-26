@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Informazioni su come gli utenti lavorano con etichette di riservatezza nelle app di Office per desktop, dispositivi mobili e Web e quali app supportano le etichette di riservatezza.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b616a25f4e130f7b73b82e80bf82136c229d5efd
-ms.sourcegitcommit: a9486f9dc51f0908393000ec3c211e3430c26abd
+ms.openlocfilehash: fb1918d2d6b39d01cf6340276c8d8ee00a5e1670
+ms.sourcegitcommit: ad0a63aa94cbfa686bf1ecbfec0152bb8e0e35af
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 11/25/2020
-ms.locfileid: "49409203"
+ms.locfileid: "49413054"
 ---
 # <a name="use-sensitivity-labels-in-office-apps"></a>Usare le etichette di riservatezza nelle app di Office
 
@@ -204,7 +204,7 @@ Oltre a limitare l'accesso agli utenti nella propria organizzazione, è possibil
 
 Se gli utenti esterni non dispongono di un account in Azure Active Directory, è possibile creare un account Guest per il proprio tenant. Per l'indirizzo di posta elettronica, è possibile specificare qualsiasi indirizzo di posta elettronica che già utilizza. Ad esempio, l'indirizzo Gmail. Questo account Guest può anche essere utilizzato per accedere a un documento condiviso in SharePoint o OneDrive quando sono state [abilitate le etichette di riservatezza per i file di Office in SharePoint e OneDrive](sensitivity-labels-sharepoint-onedrive-files.md).
 
-Gli utenti esterni possono anche utilizzare un account Microsoft per i documenti crittografati quando utilizzano le app Microsoft 365 (in[precedenza Office 365 Apps](https://docs.microsoft.com/deployoffice/name-change)) su Windows e sono state di recente supportate su MacOS (versione 16.42 +), Android (versione 13029 +) e iOS (versione 2.42 +). Ad esempio, qualcuno condivide un documento crittografato con loro e le impostazioni di crittografia specificano l'indirizzo di posta elettronica di Gmail. Questo utente può creare un proprio account Microsoft che usa il proprio indirizzo di posta elettronica di Gmail. Successivamente, dopo aver eseguito l'accesso con questo account, è possibile aprire il documento e modificarlo in base alle restrizioni di utilizzo specificate per tale utente. Per un esempio di procedura dettagliata di questo scenario, vedere [Opening and editing the protected Document](https://docs.microsoft.com/azure/information-protection/secure-collaboration-documents#opening-and-editing-the-protected-document).
+Gli utenti esterni possono anche utilizzare un account Microsoft per i documenti crittografati quando utilizzano le app Microsoft 365 (in[precedenza Office 365 Apps](https://docs.microsoft.com/deployoffice/name-change)) su Windows e sono state di recente supportate su MacOS (versione 16.42 +), Android (versione 16.0.13029 +) e iOS (versione 2.42 +). Ad esempio, qualcuno condivide un documento crittografato con loro e le impostazioni di crittografia specificano l'indirizzo di posta elettronica di Gmail. Questo utente può creare un proprio account Microsoft che usa il proprio indirizzo di posta elettronica di Gmail. Successivamente, dopo aver eseguito l'accesso con questo account, è possibile aprire il documento e modificarlo in base alle restrizioni di utilizzo specificate per tale utente. Per un esempio di procedura dettagliata di questo scenario, vedere [Opening and editing the protected Document](https://docs.microsoft.com/azure/information-protection/secure-collaboration-documents#opening-and-editing-the-protected-document).
 
 > [!NOTE]
 > L'indirizzo di posta elettronica dell'account Microsoft deve corrispondere all'indirizzo di posta elettronica specificato per limitare l'accesso alle impostazioni di crittografia.

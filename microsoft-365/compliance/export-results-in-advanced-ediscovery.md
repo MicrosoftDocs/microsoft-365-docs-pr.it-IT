@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: a9951a07-10b3-48cb-b37a-0ffaa24931ad
 description: "Informazioni su come definire le opzioni per l'esportazione dei risultati da Advanced eDiscovery, inclusa la procedura per specificare i parametri per un batch di esportazione. "
-ms.openlocfilehash: 4d94b7d1f1d475916e7b0b44a98dd878a1bd5fde
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 252a4a52cc505914b379ea2c0fbfd832ca18deeb
+ms.sourcegitcommit: 8ad481ed61cb6dabf8afb0fb04296666fa166450
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43616000"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "49422885"
 ---
 # <a name="export-results-in-advanced-ediscovery-classic"></a>Esportare i risultati in Advanced eDiscovery (Classic)
 
@@ -60,7 +60,7 @@ Ad esempio, si supponga che sia stato importato un caso e che i dati siano stati
 ## <a name="set-up-batch-export-parameters"></a>Impostare i parametri di esportazione batch
 <a name="BK_SetUpExport"> </a>
 
-Lo strumento di esportazione di eDiscovery viene utilizzato per esportare i risultati della ricerca da Advanced eDiscovery al computer locale. Per aumentare la velocità effettiva di trasferimento dei dati e velocizzare il processo di esportazione, è possibile configurare un'impostazione del registro di sistema di Windows nel computer utilizzato per esportare i risultati della ricerca. Se si desidera aumentare la velocità di download, configurare l'impostazione del registro di sistema prima di impostare i parametri di esportazione. Per ulteriori informazioni, vedere [aumentare la velocità di download quando si esportano i risultati di ricerca di eDiscovery da Office 365](increase-download-speeds-when-exporting-ediscovery-results.md).
+Lo strumento di esportazione di eDiscovery viene utilizzato per esportare i risultati della ricerca da Advanced eDiscovery al computer locale.
   
 1. In Advanced eDiscovery, selezionare un caso e fare clic su **Esporta** \> **installazione**.
     
@@ -68,26 +68,26 @@ Lo strumento di esportazione di eDiscovery viene utilizzato per esportare i risu
     
     - Per esportare i risultati per i nuovi file aggiunti a un caso esistente, continuare con il batch corrente. Per creare una sessione nel batch, selezionare lo stesso numero di batch e fare clic su **Crea sessione di esportazione** è possibile utilizzare questa opzione per esportare gli stessi parametri del batch precedente, in modo incrementale. 
     
-    - Per esportare in un nuovo batch, fare **Add** ![clic su Aggiungi](../media/c2dd8b3a-5a22-412c-a7fa-143f5b2b5612.png)icona e immettere un nuovo nome in **batch Name** (o accettare il valore predefinito) e una descrizione in **batch Description**. Fare clic su **OK**.
+    - Per esportare in un nuovo batch, fare clic su **Aggiungi** ![ icona ](../media/c2dd8b3a-5a22-412c-a7fa-143f5b2b5612.png) e immettere un nuovo nome in **batch Name** (o accettare il valore predefinito) e una descrizione in **batch Description**. Fare clic su **OK**.
     
-    - Per modificare un nome o una descrizione in batch, selezionare il nome in **batch di esportazione**, fare](../media/3d613660-7602-4df2-bdb9-14e9ca2f9cf2.png)clic su **modifica** ![icona modifica e quindi modificare i campi.
+    - Per modificare un nome o una descrizione in batch, selezionare il nome in **batch di esportazione**, fare clic su **modifica** ![ icona modifica ](../media/3d613660-7602-4df2-bdb9-14e9ca2f9cf2.png) e quindi modificare i campi.
     
       > [!NOTE]
       > Dopo aver eseguito le sessioni per un batch di esportazione, non è possibile eliminarle. Inoltre, solo alcuni parametri possono essere modificati dopo l'esecuzione della prima sessione. 
   
-    - Per creare un batch di esportazione duplicato, scegliere **Duplica esportazione batch** ![creare un'icona](../media/3f6d5f59-e842-4946-a493-473528af0119.jpg) del batch di esportazione duplicata e immettere un nome e una descrizione per il batch duplicato nel pannello. 
+    - Per creare un batch di esportazione duplicato, scegliere **Duplica esportazione batch** ![ creare un'icona del batch di esportazione duplicata ](../media/3f6d5f59-e842-4946-a493-473528af0119.jpg) e immettere un nome e una descrizione per il batch duplicato nel pannello. 
     
-    - Per eliminare un batch di esportazione, scegliere **Delete** ![Delete an export batch](../media/92a9f8e0-d469-48da-addb-69365e7ffb6f.jpg)Icon.
+    - Per eliminare un batch di esportazione, scegliere **Delete** ![ Delete an export batch Icon ](../media/92a9f8e0-d469-48da-addb-69365e7ffb6f.jpg) .
     
-    - Per visualizzare la cronologia di un batch, fare clic su cronologia **batch** ![Visualizza](../media/a80cc320-d96c-4d91-8884-75fe2cb147e2.jpg)cronologia.
+    - Per visualizzare la cronologia di un batch, fare clic su cronologia **batch** ![ Visualizza cronologia ](../media/a80cc320-d96c-4d91-8884-75fe2cb147e2.jpg) .
     
-2. In **popolamento**selezionare **Includi solo i file sopra il Punteggio di rilevanza** e/o il **batch di esportazione** se si desidera ottimizzare le impostazioni per il batch di esportazione. 
+2. In **popolamento** selezionare **Includi solo i file sopra il Punteggio di rilevanza** e/o il **batch di esportazione** se si desidera ottimizzare le impostazioni per il batch di esportazione. 
     
 3. Se si seleziona **Includi solo i file sopra il Punteggio di rilevanza**, il **problema** è abilitato. Se il Punteggio di pertinenza del file è superiore al Punteggio di troncamento per il problema selezionato, il file verrà esportato a meno che non sia escluso dal filtro ' per la revisione '. 
   
     Se si seleziona **affina esportazione batch**, i pulsanti di opzione **deduplicazione** e filtro in base a' per la revisione ' sono abilitati. Se si sceglie **deduplicazione**, i file duplicati verranno filtrati in base al criterio definito [case Level (impostazione predefinita): da ogni set di file duplicati nell'intero caso, tutti tranne un file verranno deselezionati. Livello di custode: da ogni serie di file duplicati dello stesso custode, tutti tranne un file verranno deduplicati. L'output di esportazione contiene un record di tutti i file duplicati. Se si sceglie **Filtra per campo ' per la revisione '** , selezionare **modifica in metadati** per immettere le impostazioni del campo **' per la revisione '** . Selezionare **Includi file di input** per includere i file di origine nel contenuto del pacchetto. È possibile cancellare questa impostazione per velocizzare il processo di esportazione. Si noti che i file nativi verranno esportati in tutti i casi. 
     
-4. In **metadati**selezionare una delle opzioni seguenti nell'elenco **modello di esportazione** (una volta per sessione). 
+4. In **metadati** selezionare una delle opzioni seguenti nell'elenco **modello di esportazione** (una volta per sessione). 
     
     - **Standard**: set di elementi di dati, metadati e proprietà di base. Utilizzare questa opzione quando i dati di importazione sono già stati elaborati in Advanced eDiscovery e i dati di esportazione vengono caricati in un sistema che già contiene i file. Per impostazione predefinita, le colonne dei modelli di esportazione vengono create e riempite.
     
@@ -125,7 +125,7 @@ Lo strumento di esportazione di eDiscovery viene utilizzato per esportare i risu
     
       - **Personalizzato** (consente di definire le opzioni nella finestra di dialogo): l'impostazione predefinita consiste nel mantenere le selezioni correnti e attivare tutte le opzioni di dialogo, per consentire la selezione. Se si seleziona questa opzione, è possibile personalizzare le impostazioni per i messaggi di posta elettronica, i documenti, gli allegati e varie.
     
-    - In **messaggi di posta elettronica**selezionare i messaggi di posta elettronica che si desidera esportare.
+    - In **messaggi di posta elettronica** selezionare i messaggi di posta elettronica che si desidera esportare.
     
       - **Tutti i messaggi di posta elettronica**: (impostazione predefinita) tutti i messaggi sono selezionati.
     
@@ -133,7 +133,7 @@ Lo strumento di esportazione di eDiscovery viene utilizzato per esportare i risu
     
       - **Inclusioni e copie esclusive inclusive**: copie inclusive e inclusive con gli stessi soggetti, corpo e allegati; le copie uniche Inclusive sono copie univoche di questi messaggi di posta elettronica.
     
-    - In **documenti**selezionare i documenti che si desidera esportare. 
+    - In **documenti** selezionare i documenti che si desidera esportare. 
     
       - **Tutti i documenti**: (impostazione predefinita) sono selezionati tutti i documenti.
     
@@ -141,7 +141,7 @@ Lo strumento di esportazione di eDiscovery viene utilizzato per esportare i risu
     
       - **Rappresentante da ogni set di duplicati esatti**: file quasi duplicati univoci (incluso il pivot).
     
-    - In **allegati**selezionare gli allegati che si desidera esportare. 
+    - In **allegati** selezionare gli allegati che si desidera esportare. 
     
       - **Tutti gli allegati**: (impostazione predefinita) tutti gli allegati sono selezionati.
     
@@ -149,7 +149,7 @@ Lo strumento di esportazione di eDiscovery viene utilizzato per esportare i risu
     
       - **Allegato univoco nel set di messaggi di posta elettronica**: file di allegati univoci all'interno del caso di posta elettronica specificato.
     
-   - In**Micellaneous**, è possibile scegliere di **trattare gli allegati come documenti**, **considerare i messaggi di posta elettronica come documenti**o **espanderli in modo da includere i file della famiglia**. Quando si sceglie **Espandi per includere i file della famiglia**, per ogni file contrassegnato per la revisione, verranno contrassegnati anche tutti i file della stessa famiglia.
+   - In **Micellaneous**, è possibile scegliere di **trattare gli allegati come documenti**, **considerare i messaggi di posta elettronica come documenti** o **espanderli in modo da includere i file della famiglia**. Quando si sceglie **Espandi per includere i file della famiglia**, per ogni file contrassegnato per la revisione, verranno contrassegnati anche tutti i file della stessa famiglia.
     
 7. Scegliere **Salva** per salvare le impostazioni. 
     
@@ -161,7 +161,7 @@ Lo strumento di esportazione di eDiscovery viene utilizzato per esportare i risu
     
     ![Scaricare file](../media/99cf2c13-4954-479f-9741-80d7458c1a15.png)
   
-10. Fare clic su **Chiudi**. 
+10. Scegliere **Chiudi**. 
     
     Lo strumento di esportazione di eDiscovery è stato avviato.
     
@@ -169,7 +169,7 @@ Lo strumento di esportazione di eDiscovery viene utilizzato per esportare i risu
   
 11. Nello **strumento di esportazione di eDiscovery**:
     
-    -  In **Incolla la firma di accesso condiviso che verrà utilizzata per la connessione all'origine**, incollare la chiave di esportazione che youcopied negli Appunti nel passaggio 7.
+    -  In **Incolla la firma di accesso condiviso che verrà utilizzata per la connessione all'origine**, incollare la chiave di esportazione copiata negli Appunti nel passaggio 7.
     
     - Fare clic su **Sfoglia** per selezionare il percorso di destinazione per l'archiviazione dei file di esportazione scaricati nel computer locale. 
     
@@ -190,7 +190,7 @@ Nella tabella seguente sono elencati i file di output generati quando si esegue 
 |Input o file nativi  <br/> |Cartella file  <br/> |Cartella che contiene i file nativi e di input dei file esportati.  <br/> |
 |Esporta elenco  <br/> |XLSX  <br/> |Metadati dei file esportati in formato xlsx. I campi nei file sono conformi all'utente modello selezionato per l'esportazione. Se necessario, vengono creati diversi file, ognuno contenente le righe di 100 150K. Se un determinato valore contiene più caratteri di una cella di Excel che può contenere (attualmente il limite è 32.767 caratteri), il valore verrà tagliato fino alla lunghezza massima consentita. Se viene tagliato un valore, il colore di sfondo della cella è rosso per indicare l'utente. " Partecipanti al messaggio di posta elettronica "è un esempio di un campo che può superare il limite di lunghezza, se il messaggio di posta elettronica è stato inviato a una distribuzione di grandi dimensioni. Per informazioni dettagliate sui campi di output, vedere [Export report Fields](export-report-fields-in-advanced-ediscovery.md) .  <br/> |
 |Carica file  <br/> |CSV  <br/> |Metadati dei file esportati in formato CSV per il caricamento in un'altra applicazione. I campi nei file sono conformi all'utente modello selezionato per l'esportazione.  <br/> |
-|Indicatore di esito positivo  <br/> |txt  <br/> |Creato solo quando viene esportato in un BLOB di Azure di terze parti. Se l'esportazione ha esito positivo, il file verrà creato. In caso di errore o di esito positivo parziale, il file non verrà creato. Il file verrà creato nella cartella radice, consentendo la verifica automatica su diversi Stati di batch/sessioni di esportazione. Si tratta di un file vuoto. Il nome è: TenantId_CaseId_ExternalCaseId_CaseName_ExportBatchId_SessionId_DateTime. txt.  <br/> |
+|Indicatore di esito positivo  <br/> |txt  <br/> |Creato solo quando viene esportato in un BLOB di Azure di terze parti. Se l'esportazione ha esito positivo, il file verrà creato. In caso di errore o di esito positivo parziale, il file non verrà creato. Il file verrà creato nella cartella radice, consentendo la verifica automatica su diversi Stati di batch/sessioni di esportazione. Si tratta di un file vuoto. Il suo nome è: TenantId_CaseId_ExternalCaseId_CaseName_ExportBatchId_SessionId_DateTime.txt.  <br/> |
    
 ## <a name="see-also"></a>Vedere anche
 
@@ -198,9 +198,6 @@ Nella tabella seguente sono elencati i file di output generati quando si esegue 
   
 [Visualizzazione della cronologia batch ed esportazione dei risultati precedenti](view-batch-history-and-export-past-results.md)
   
-[Configurazione rapida per Advanced eDiscovery](quick-setup-for-advanced-ediscovery.md)
+[Configurazione rapida di Advanced eDiscovery](quick-setup-for-advanced-ediscovery.md)
 
 [Esportare i campi del report](export-report-fields-in-advanced-ediscovery.md)
-  
-[Aumentare la velocità di download quando si esportano i risultati di ricerca di eDiscovery da Office 365](increase-download-speeds-when-exporting-ediscovery-results.md)
-
