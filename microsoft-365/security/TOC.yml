@@ -141,6 +141,8 @@
                       href: mtp/advanced-hunting-shared-queries.md
                     - name: 'Cercare tra dispositivi, posta elettronica, app e identità'
                       href: mtp/advanced-hunting-query-emails-devices.md
+                    - name: Ricerca ransomware
+                      href: mtp/advanced-hunting-find-ransomware.md
                     - name: Transizione da Defender per endpoint
                       href: mtp/advanced-hunting-migrate-from-mdatp.md
                 - name: Usare i risultati delle query
