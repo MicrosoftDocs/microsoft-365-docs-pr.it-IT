@@ -123,7 +123,7 @@ Questo esempio **disattiva** la Posta in arrivo evidenziata per Tim Matthews nel
 
     L'immagine seguente mostra un esempio in cui tutti i messaggi inviati da "Reparto Retribuzioni" devono essere recapitati in Posta in arrivo evidenziata.
 
-    ![retribuzione focusedinbox](../../media/focusedinbox-transport-rule.PNG)
+    ![retribuzioni focusedinbox](../../media/focusedinbox-transport-rule.PNG)
 
 > [!NOTE]
 > Il testo del valore dell’intestazione del messaggio in questo esempio è **X-MS-Exchange-Organization-BypassFocusedInbox**.
