@@ -1,7 +1,7 @@
 ---
 title: Conformità
 description: In questo articolo vengono elencati gli standard di conformità rilevanti per Microsoft Managed Desktop.
-keywords: Microsoft Managed Desktop, Microsoft 365, servizio, documentazione
+keywords: Microsoft Managed Desktop, Microsoft 365, servizi, documentazione
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 7674777214cb5684bb02039f739458352bc701ad
-ms.sourcegitcommit: 61d7284b412d0f7bbd8bbb2225c2e6324f86b717
+ms.openlocfilehash: 65d1d18037a10cd36c3be9498a4373fa67b6afd9
+ms.sourcegitcommit: d3ca8021f7da00a474ac14aac5f1358204a848f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "48262280"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49519611"
 ---
 # <a name="compliance"></a>Conformità
 
@@ -24,17 +24,17 @@ Quando si utilizza Microsoft Managed Desktop IT-as-a-Service, Microsoft fornisce
 
 Microsoft Managed Desktop ha ottenuto le seguenti certificazioni:
 
-- [Standard di gestione della sicurezza delle informazioni di ISO 27001 (dottrine)](../../compliance/offering-ISO-27001.md)
-- [Sistema di gestione delle informazioni sulla privacy di ISO 27701 (PIMS)](../../compliance/offering-iso-27701.md)
-- [Codice di pratica ISO 27017 per i controlli di sicurezza delle informazioni](../../compliance/offering-ISO-27017.md)
-- [Codice di pratica ISO 27018 per la protezione dei dati personali nel cloud](../../compliance/offering-ISO-27018.md)
-- [Standard di sistemi di gestione della qualità ISO 9001](../../compliance/offering-ISO-9001.md)
-- [Gestione dei servizi di Information Technology ISO 20000-1](../../compliance/offering-ISO-20000-1-2011.md)
-- [Standard di gestione della continuità aziendale ISO 22301](../../compliance/offering-ISO-22301.md)
-- [Attestazione Cloud Security Alliance (CSA) STAR](../../compliance/offering-CSA-STAR-Attestation.md)
-- [Certificazione Cloud Security Alliance (CSA) STAR](../../compliance/offering-CSA-Star-Certification.md)
-- [Controlli dell'organizzazione del servizio (SOC) 1, 2, 3](../../compliance/offering-SOC.md)
-- [Payment Card Industry (PCI) Data Security Standard (DSS)](../../compliance/offering-PCI-DSS.md)
+- [Standard di gestione della sicurezza delle informazioni di ISO 27001 (dottrine)](https://docs.microsoft.com/compliance/regulatory/offering-ISO-27001)
+- [Sistema di gestione delle informazioni sulla privacy di ISO 27701 (PIMS)](https://docs.microsoft.com/compliance/regulatory/offering-iso-27701)
+- [Codice di pratica ISO 27017 per i controlli di sicurezza delle informazioni](https://docs.microsoft.com/compliance/regulatory/offering-ISO-27017)
+- [Codice di pratica ISO 27018 per la protezione dei dati personali nel cloud](https://docs.microsoft.com/compliance/regulatory/offering-ISO-27018)
+- [Standard di sistemi di gestione della qualità ISO 9001](https://docs.microsoft.com/compliance/regulatory/offering-ISO-9001)
+- [Gestione dei servizi di Information Technology ISO 20000-1](https://docs.microsoft.com/compliance/regulatory/offering-ISO-20000-1-2011)
+- [Standard di gestione della continuità aziendale ISO 22301](https://docs.microsoft.com/compliance/regulatory/offering-ISO-22301)
+- [Attestazione Cloud Security Alliance (CSA) STAR](https://docs.microsoft.com/compliance/regulatory/offering-CSA-STAR-Attestation)
+- [Certificazione Cloud Security Alliance (CSA) STAR](https://docs.microsoft.com/compliance/regulatory/offering-CSA-Star-Certification)
+- [Controlli dell'organizzazione del servizio (SOC) 1, 2, 3](https://docs.microsoft.com/compliance/regulatory/offering-SOC)
+- [Payment Card Industry (PCI) Data Security Standard (DSS)](https://docs.microsoft.com/compliance/regulatory/offering-PCI-DSS)
 
 ## <a name="auditor-reports-and-compliance-certificates"></a>Rapporti dei revisori e certificati di conformità
 

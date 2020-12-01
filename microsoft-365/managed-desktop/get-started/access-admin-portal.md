@@ -9,12 +9,12 @@ audience: ITPro
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: laurawi
-ms.openlocfilehash: 66e4e5c305947f90f935563a3baf0592ce42480a
-ms.sourcegitcommit: bdf65d48b20f0f428162c39ee997accfa84f4e5d
+ms.openlocfilehash: deeced350ad867a374a486967c2cbd278ba91710
+ms.sourcegitcommit: d3ca8021f7da00a474ac14aac5f1358204a848f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "49371671"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49519330"
 ---
 # <a name="access-the-admin-portal"></a>Accedere al portale di amministrazione
 
@@ -59,7 +59,7 @@ Per poter accedere alle funzionalità amministrative di Microsoft Managed Deskto
 Se si ha bisogno di assistenza per l'assegnazione dei ruoli di Azure Active Directory, vedere [autorizzazioni per il ruolo di amministratore in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles).
 
 Per semplificare la gestione dei ruoli incorporati, è stato creato un gruppo di sicurezza per ogni ruolo personalizzato (ad esempio, "ruoli di lavoro moderni – responsabile della sicurezza"). Per assegnare gli utenti a uno dei gruppi di sicurezza, eseguire la procedura seguente:
-1.  Andare al portale di Azure e passare al blade di Azure Active Directory.
+1.  Andare al portale di Microsoft Endpoint Manager
 2.  Seleziona gruppi sul lato sinistro.
 3.  Cercare i ruoli di lavoro moderni e quindi selezionare il gruppo associato al ruolo che si desidera assegnare. 
 4.  Selezionare membri sul lato sinistro e quindi selezionare + Aggiungi membri sulla barra dei comandi.

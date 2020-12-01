@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Informazioni su e dove accedere al Lab Kit di distribuzione di Windows e Office.
-ms.openlocfilehash: bf49a815c0d3d952187f863120865ab3aa4674fc
-ms.sourcegitcommit: cd11588b47904c7d2ae899a9f5280f93d3850171
+ms.openlocfilehash: 65c251b2cd161687eb0a2e9c7ece29f453fcaae8
+ms.sourcegitcommit: d3ca8021f7da00a474ac14aac5f1358204a848f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "48171411"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49519623"
 ---
 # <a name="windows-and-office-deployment-lab-kit"></a>Kit Lab per la distribuzione di Windows e Office
 
@@ -34,9 +34,9 @@ Questo kit è altamente consigliato per le organizzazioni che si preparano per g
 
 Il lab fornisce un ambiente lab virtuale con provisioning automatico, che comprende client desktop aggiunti a un dominio, un controller di dominio, gateway Internet e un'istanza completamente configurata di Configuration Manager. Lab contiene le versioni di valutazione più recenti dei prodotti seguenti:
 
-  - NOVITÀ! Windows 10 Enterprise, versione 2004
+  - NOVITÀ! Windows 10 Enterprise, versione 20H2
   - Windows 7 Enterprise
-  - NOVITÀ! Microsoft Endpoint Configuration Manager, versione 2002
+  - Microsoft Endpoint Configuration Manager, versione 2002
   - Windows Assessment and Deployment Kit per Windows 10
   - Microsoft Deployment Toolkit
   - Microsoft Application Virtualization (App-V)
@@ -90,11 +90,11 @@ Le guide dei lab forniscono indicazioni dettagliate su più scenari di distribuz
 ### <a name="deploy-windows-virtual-desktop"></a>Distribuire desktop virtuale di Windows  
 - Preparare, distribuire, ottimizzare
  
-### <a name="download-the-windows-and-office-deployment-lab-kit"></a>Scaricare il Lab Kit di distribuzione di Windows e Office
+## <a name="download-the-windows-and-office-deployment-lab-kit"></a>Scaricare il Lab Kit di distribuzione di Windows e Office
 
 [Scaricare il Lab Kit di distribuzione di Windows e Office](https://www.microsoft.com/evalcenter/evaluate-lab-kit).
 
-*Utilizzare un'ampia larghezza di banda per scaricare questo contenuto per migliorare l'esperienza di download e consentire 30-45 minuti per il provisioning automatico. L'ambiente lab richiede almeno 16 GB di memoria disponibile e 150 GB di spazio libero su disco. Per ottenere prestazioni ottimali, è consigliabile 32 GB di memoria disponibile. Il laboratorio scade il 5 dicembre 2020. Prima della scadenza verrà pubblicata una nuova versione.*
+* Utilizzare un'ampia larghezza di banda per scaricare questo contenuto per migliorare l'esperienza di download e consentire 30-45 minuti per il provisioning automatico. L'ambiente lab richiede almeno 16 GB di memoria disponibile e 300 GB di spazio libero su disco. Per ottenere prestazioni ottimali, è consigliabile 32 GB di memoria disponibile. Il laboratorio scade il febbraio 2020. Prima della scadenza verrà pubblicata una nuova versione.
 
 ## <a name="additional-guidance"></a>Indicazioni aggiuntive
 

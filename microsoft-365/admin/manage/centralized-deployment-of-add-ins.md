@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: b4527d49-4073-4b43-8274-31b7a3166f92
 description: Determinare se il tenant e gli utenti soddisfano i requisiti, in modo che sia possibile utilizzare la distribuzione centralizzata per distribuire i componenti aggiuntivi di Office.
-ms.openlocfilehash: af7a127d438e81d6ecd025b6a71b9d7e5df2ecc8
-ms.sourcegitcommit: 554755bc9ce40228ce6e34bde6fc6e226869b6a1
+ms.openlocfilehash: 04c5f9090ca788f00f2d17d3af59e8022195e9be
+ms.sourcegitcommit: d3ca8021f7da00a474ac14aac5f1358204a848f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48681625"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49519366"
 ---
 # <a name="determine-if-centralized-deployment-of-add-ins-works-for-your-organization"></a>Determinare se la distribuzione centralizzata dei componenti aggiuntivi funziona per l'organizzazione
 
@@ -45,7 +45,7 @@ La distribuzione centralizzata supporta tre piattaforme desktop Windows, Mac e l
   
 ## <a name="requirements"></a>Requisiti
 
-La distribuzione centralizzata dei componenti aggiuntivi richiede che gli utenti utilizzino Microsoft 365 Apps per Microsoft 365 per Enterprise o Microsoft 365 for business (e che siano firmati in Office utilizzando il proprio ID organizzazione) e dispongano di cassette postali di Exchange Online e Active Exchange Online. È necessario che la directory di sottoscrizione sia in o federata in Azure Active Directory.
+La distribuzione centralizzata dei componenti aggiuntivi richiede che gli utenti utilizzino SKU di Microsoft 365 Enterprise: E3/E5/F3 o SKU aziendali: Business Basic, business standard, Business Premium (e che sono connessi con il proprio ID organizzazione) e dispongono di cassette postali di Exchange Online e Active Exchange Online. È necessario che la directory di sottoscrizione sia in o federata in Azure Active Directory.
 È possibile visualizzare i requisiti specifici per Office ed Exchange di seguito oppure utilizzare la [Verifica compatibilità della distribuzione centralizzata](#centralized-deployment-compatibility-checker).
 
 La distribuzione centralizzata non supporta quanto segue:
@@ -55,17 +55,17 @@ La distribuzione centralizzata non supporta quanto segue:
 - Distribuzione di componenti aggiuntivi in una cassetta postale di Exchange on-Prem
 - Distribuzione di componenti aggiuntivi in SharePoint  
 - App Teams
-- Distribuzione dei componenti aggiuntivi Component Object Model (COM) o Visual Studio Tools per Office (VSTO)
-- Distribuzioni di Microsoft 365 che non includono Exchange, ad esempio Microsoft 365 Apps for business
+- Distribuzione di componenti aggiuntivi COM (Component Object Model) o Visual Studio Tools per Office (VSTO).
+- Distribuzioni di Microsoft 365 che non includono Exchange Online, ad esempio SKU: Microsoft 365 Apps for business e Microsoft 365 Apps for Enterprise.
 
 ### <a name="office-requirements"></a>Requisiti di Office
 
 - Per i componenti aggiuntivi di Word, Excel e PowerPoint, è necessario che gli utenti utilizzino uno dei seguenti elementi:
-  - Su un dispositivo Windows, versione 1704 o successiva di Microsoft 365 Apps per Microsoft 365 per Enterprise o Microsoft 365 for business.
+  - In un dispositivo Windows, versione 1704 o successiva di Microsoft 365 Enterprise SKU: E3/E5/F3 o SKU Business: Business Basic, business standard, Business Premium.
   - Su un Mac, versione 15,34 o successiva.
 
 - Per Outlook, è necessario che gli utenti utilizzino una delle opzioni seguenti: 
-  - Versione 1701 o successiva di Microsoft 365 Apps per Microsoft 365 per Enterprise o Microsoft 365 for business.
+  - Versione 1701 o successiva degli SKU di Microsoft 365 Enterprise: E3/E5/F3 o SKU aziendali: Business Basic, business standard, Business Premium.
   - Versione 1808 o successiva di Office Professional Plus 2019 o Office standard 2019.
   - Version 16.0.4494.1000 o versione successiva di Office Professional Plus 2016 (MSI) o Office standard 2016 (MSI)\*
   - Version 15.0.4937.1000 o versione successiva di Office Professional Plus 2013 (MSI) o Office Standard 2013 (MSI)\*
@@ -74,20 +74,6 @@ La distribuzione centralizzata non supporta quanto segue:
 - Version 2.2.145 o versione successiva di Outlook Mobile per Android 
     
     * Le versioni MSI di Outlook visualizzano i componenti aggiuntivi installati dall'amministratore nella barra multifunzione di Outlook appropriata e non nella sezione "componenti aggiuntivi".
-    
-
-#### <a name="find-out-if-microsoft-365-apps-for-enterprise-is-installed"></a>Scoprire se Microsoft 365 Apps for Enterprise è installato
-
-Per utilizzare Microsoft 365 Apps for Enterprise, un utente deve disporre di un account Microsoft 365 e deve disporre di una licenza. Per ulteriori informazioni, vedere [Overview of Microsoft 365 Apps for Enterprise](https://go.microsoft.com/fwlink/p/?linkid=846328).
-
-Il modo più semplice per rilevare se un utente ha installato Microsoft 365 Apps for Enterprise e lo ha utilizzato di recente consiste nell'utilizzare il rapporto attivazioni di Microsoft Office, disponibile nell'interfaccia di amministrazione di Microsoft 365. Il rapporto fornisce un elenco di tutti gli utenti che hanno attivato Microsoft 365 Apps for Enterprise negli ultimi 7 giorni, 30 giorni, 90 o 180 giorni. Ai fini della distribuzione centralizzata, le attivazioni desktop per Windows o Mac rappresentano le colonne più importanti del report. È possibile esportare il report in Excel. Per ulteriori informazioni sul report, vedere [rapporti microsoft 365 nell'interfaccia di amministrazione-attivazioni di Microsoft Office](../activity-reports/microsoft-office-activations.md).
-  
-Se non si desidera utilizzare il rapporto attivazioni, è possibile chiedere a un utente di aprire un'applicazione di Office come Word nel computer in uso e quindi scegliere **File** \> **account**file. In **informazioni sui prodotti**, dovrebbe essere visualizzato il **prodotto di sottoscrizione** e **Microsoft 365 per Enterprise**, o Microsoft 365 Business Premium, analogo a quello mostrato nell'immagine seguente.
-
-![Informazioni sul prodotto in un'applicazione di Office](../../media/product-information-microsoft-365-enterprise.png)
-  
-Per informazioni su Microsoft 365 Apps for Enterprise, vedere [Troubleshooting Tips for microsoft 365 Apps for Enterprise](https://go.microsoft.com/fwlink/p/?linkid=846339).
-
 
 ### <a name="exchange-online-requirements"></a>Requisiti di Exchange Online
 

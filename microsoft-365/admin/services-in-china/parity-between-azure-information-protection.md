@@ -20,12 +20,12 @@ search.appverid:
 - GEA150
 description: Per ulteriori informazioni, vedere Azure Information Protection per Office 365 gestito da 21Vianet e come configurarlo per i clienti in Cina.
 monikerRange: o365-21vianet
-ms.openlocfilehash: ad3420483701c83ffef65994996047de56a7085c
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 7be40466c43a49cf51a2a2c1c273cef035bee831
+ms.sourcegitcommit: d3ca8021f7da00a474ac14aac5f1358204a848f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48644664"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49519342"
 ---
 # <a name="parity-between-azure-information-protection-for-office-365-operated-by-21vianet-and-commercial-offerings"></a>Parità tra Azure Information Protection per Office 365 gestito da 21Vianet e offerte commerciali
 
@@ -42,8 +42,6 @@ L'elenco seguente include gli spazi vuoti esistenti tra Azure Information Protec
 - La condivisione dei documenti e degli allegati di posta elettronica per gli utenti nel cloud commerciale non è attualmente disponibile. Questo include Office 365 gestito dagli utenti di 21Vianet nel cloud commerciale, non Office 365 gestito dagli utenti di 21Vianet nel cloud commerciale e gli utenti con una licenza RMS per i singoli.
   
 - IRM con SharePoint (siti e raccolte protette con IRM) non è attualmente disponibile.
-  
-- Il connettore Rights Management non è attualmente disponibile.
   
 - L'estensione del dispositivo mobile per AD RMS non è attualmente disponibile.
 

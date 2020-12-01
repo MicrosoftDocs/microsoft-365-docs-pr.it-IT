@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Modalità di protezione della privacy con il Punteggio di produttività.
-ms.openlocfilehash: 8686c7c86249a408fe8d4fda14c2ae23a168cafe
-ms.sourcegitcommit: da34ac08c7d029c2c42d4428d0bb03fd57c448be
+ms.openlocfilehash: c88886e9d1470bda48d023b77472e7dd296508a0
+ms.sourcegitcommit: d3ca8021f7da00a474ac14aac5f1358204a848f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "48999407"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49519354"
 ---
 # <a name="privacy-controls-for-productivity-score"></a>Controlli sulla privacy per il Punteggio di produttività
 
@@ -54,7 +54,7 @@ Per visualizzare l'intero Punteggio di produttività, incluse le metriche a live
 
 Assegnare il ruolo lettore report a tutti coloro che sono responsabili della gestione delle modifiche e dell'adozione. Questo ruolo consente di accedere all'esperienza completa, incluse le metriche a livello di tenant e i dettagli a livello di utente.
 
-Il rapporto persone esperienze contiene dettagli attività per utente per ogni pagina di dettaglio categoria. Assegnare un ruolo personalizzato denominato Reader report di riepilogo di utilizzo (disponibile a partire dal 29 ottobre 2020) per consentire l'accesso solo alle metriche di aggregazione delle esperienze degli utenti. Questo ruolo dovrà essere assegnato tramite i cmdlet di PowerShell fino a quando non diventa assegnabile dall'interfaccia di amministrazione di Microsoft su 11/15/2020.
+Il rapporto persone esperienze contiene dettagli attività per utente per ogni pagina di dettaglio categoria. Assegnare un ruolo personalizzato denominato Reader report di riepilogo di utilizzo (disponibile a partire dal 29 ottobre 2020) per consentire l'accesso solo alle metriche di aggregazione delle esperienze degli utenti. Questo ruolo dovrà essere assegnato tramite i cmdlet di PowerShell fino a quando non diventa assegnato dall'interfaccia di amministrazione di Microsoft entro la fine dell'anno.
 
 Per assegnare il ruolo Reader dei report di riepilogo di utilizzo con PowerShell:
 
@@ -62,6 +62,7 @@ Per assegnare il ruolo Reader dei report di riepilogo di utilizzo con PowerShell
 
 ```powershell
 Connect-AzureAD
+Enable-AzureADDirectoryRole -RoleTemplateId '75934031-6c7e-415a-99d7-48dbd49e875e'
 $role=Get-AzureADDirectoryRole -Filter "roleTemplateId eq '75934031-6c7e-415a-99d7-48dbd49e875e'"
 Get-AzureADDirectoryRoleMember -ObjectId $role.ObjectId
 $u=Get-AzureADUser -ObjectId <user upn>

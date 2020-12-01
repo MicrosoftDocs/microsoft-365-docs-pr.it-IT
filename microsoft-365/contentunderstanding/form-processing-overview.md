@@ -10,12 +10,12 @@ search.appverid: ''
 ms.collection: enabler-strategic
 localization_priority: Priority
 description: Informazioni sull'elaborazione di moduli in Microsoft SharePoint Syntex
-ms.openlocfilehash: 6c2cb2ee3c1fc621e7814f4603ad2e6f0b891701
-ms.sourcegitcommit: e7bf23df4852b78912229d1d38ec475223597f34
+ms.openlocfilehash: a1429d93d6716fe5db31f0da2a77a68dcf98cd6e
+ms.sourcegitcommit: d3ca8021f7da00a474ac14aac5f1358204a848f2
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49087404"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49519671"
 ---
 # <a name="form-processing-overview"></a>Panoramica dell'elaborazione di moduli
 
@@ -35,8 +35,6 @@ Ad esempio, è possibile creare un modello di elaborazione moduli che identifich
 ![Visualizzazione della raccolta documenti](../media/content-understanding/doc-lib-done.png)</br>  
 
 L’utente usa i file di esempio per eseguire il training del modello e definire le informazioni da estrarre dal modulo. Il layout del documento viene acquisito eseguendo il training del modello. Per iniziare, sono necessari solo cinque moduli. AI Builder analizza i file di esempio per individuare le coppie chiave-valore e l’utente può identificare manualmente quelli che non sono stati rilevati.  AI Builder consente di testare l’accuratezza del modello nei file di esempio.
-
-Per iniziare, sono necessari almeno cinque moduli. AI Builder analizza i file di esempio per individuare le coppie chiave-valore e poi identifica manualmente quelli che non sono stati rilevati.  AI Builder consente di testare l’accuratezza del modello nei file di esempio.
 
 Dopo aver eseguito il training del modello e averlo pubblicato, quest’ultimo crea un [flusso di Power Automate](https://docs.microsoft.com/power-automate/getting-started). Il flusso viene eseguito quando un file è caricato nella raccolta documenti di SharePoint ed estrarrà i dati che sono stati identificati nel modello. I dati estratti saranno visualizzati nelle colonne di visualizzazione della raccolta documenti del modello.
 
