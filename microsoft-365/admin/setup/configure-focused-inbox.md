@@ -2,8 +2,8 @@
 title: Configurare Posta in arrivo evidenziata per tutti gli utenti nell'organizzazione
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
-author: cmcatee-MSFT
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 613a845c-4b71-41de-b331-acdcf5b6625d
 description: "Informazioni su come configurare Posta in arrivo evidenziata per tutti gli utenti o per utenti specifici dell'organizzazione. "
-ms.openlocfilehash: 76a449295b7a2ad0cc1c82488a131a3a89fe41fc
-ms.sourcegitcommit: 2d3e85173c65a9e0ce92624a80ed7a9839f5b8bd
+ms.openlocfilehash: e6c77bdff00e7cd98f5034267699e19d8582db27
+ms.sourcegitcommit: 38d828ae8d4350ae774a939c8decf30cb36c3bea
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49123430"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "49551902"
 ---
 # <a name="configure-focused-inbox-for-everyone-in-your-organization"></a>Configurare Posta in arrivo evidenziata per tutti gli utenti nell'organizzazione
 

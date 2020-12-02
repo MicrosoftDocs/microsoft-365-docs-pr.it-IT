@@ -1,5 +1,5 @@
 ---
-title: Risolvere problemi trovati dallo strumento di valutazione dell'idoneità
+title: Risolvere i problemi rilevati dallo strumento di valutazione della conformità
 description: Azioni dettagliate da intraprendere per ogni problema rilevato dallo strumento
 keywords: Microsoft Managed Desktop, Microsoft 365, servizi, documentazione
 ms.service: m365-md
@@ -9,14 +9,14 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 0459de8974fe6bae98e6984fd7dc65afeb04b4e7
-ms.sourcegitcommit: 9546708a5506fdbadbfe2500cbf1bd1aeaec6fcb
+ms.openlocfilehash: f23209568fcfc2db4a22dbb034890c5a25e21bf7
+ms.sourcegitcommit: 4cbb4ec26f022f5f9d9481f55a8a6ee8406968d2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "49021086"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49527734"
 ---
-# <a name="fix-issues-found-by-the-readiness-assessment-tool"></a>Risolvere problemi trovati dallo strumento di valutazione dell'idoneità
+# <a name="fix-issues-found-by-the-readiness-assessment-tool"></a>Risolvere i problemi rilevati dallo strumento di valutazione della conformità
 
 Per ogni controllo, lo strumento riporterà uno dei quattro possibili risultati:
 
@@ -141,7 +141,7 @@ I dispositivi Windows 10 nell'organizzazione di Azure AD devono essere registrat
 
 **Consulenza**
 
-Verificare che l'ambito dell'utente MDM sia impostato su **alcuni** o su **tutti** , non su **None**. Se si sceglie **alcuni** , tornare dopo la registrazione e selezionare la **moderna area di lavoro-tutto** il gruppo di Azure ad per i **gruppi**.
+Verificare che l'ambito dell'utente MDM sia impostato su **alcuni** o su **tutti**, non su **None**. Se si sceglie **alcuni**, tornare dopo la registrazione e selezionare la **moderna area di lavoro-tutto** il gruppo di Azure ad per i **gruppi**.
 
 
 ### <a name="microsoft-store-for-business"></a>Microsoft Store per le aziende
@@ -152,14 +152,14 @@ Microsoft Store for business viene utilizzato in modo da poter scaricare il port
 
 Microsoft Store for business non è abilitato o non è sincronizzato con Intune. Per ulteriori informazioni, vedere [How to Manage volume purchased Apps from the Microsoft Store for business with Microsoft Intune](https://docs.microsoft.com/mem/intune/apps/windows-store-for-business) and [Install Intune Company Portal on on Devices](../get-started/company-portal.md).
 
-### <a name="multi-factor-authentication"></a>Autenticazione a più fattori
+### <a name="multifactor-authentication"></a>Autenticazione a più fattori
 
-Per l'autenticazione a più fattori non è necessario applicare accidentalmente gli account di servizio di Microsoft Managed Desktop.
+L'autenticazione a più fattori non deve essere applicata accidentalmente agli account di servizio di Microsoft Managed Desktop.
 
 
 **Non pronto**
 
-Si dispone di alcuni criteri di autenticazione a più fattori (AMF) impostati come "necessari" per i criteri di accesso condizionale assegnati a tutti gli utenti. Modificare il criterio per l'utilizzo di un'assegnazione che è destinata a un gruppo di Azure AD specifico che non include alcun dispositivo desktop Microsoft gestito. Per ulteriori informazioni, vedere [criteri di accesso condizionale](#conditional-access-policies) e [accesso condizionale: require Mae per tutti gli utenti](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa).
+Sono stati impostati alcuni criteri di autenticazione a più fattori (AMF) come "required" per i criteri di accesso condizionale assegnati a tutti gli utenti. Modificare il criterio per l'utilizzo di un'assegnazione che è destinata a un gruppo di Azure AD specifico che non include alcun dispositivo desktop Microsoft gestito. Per ulteriori informazioni, vedere [criteri di accesso condizionale](#conditional-access-policies) e [accesso condizionale: require Mae per tutti gli utenti](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa).
 
 **Consulenza**
 

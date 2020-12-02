@@ -15,12 +15,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Gli amministratori possono sapere come identificare gruppi specifici di utenti con tag utente in Microsoft Defender per Office 365 piano 2. Il filtro tag è disponibile tra gli avvisi, i report e le indagini in Microsoft Defender per Office 365 per identificare rapidamente gli utenti contrassegnati.
-ms.openlocfilehash: 14ebcebeb8081a2de341fd06facabd9f7d55b119
-ms.sourcegitcommit: 2d3e85173c65a9e0ce92624a80ed7a9839f5b8bd
+ms.openlocfilehash: 136de95addae7dcd48de2c6ac1f30ce67714817c
+ms.sourcegitcommit: 38d828ae8d4350ae774a939c8decf30cb36c3bea
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49123620"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "49552020"
 ---
 # <a name="user-tags-in-microsoft-defender-for-office-365"></a>Tag utente in Microsoft Defender per Office 365
 
@@ -44,7 +44,7 @@ Dopo aver applicato i tag di sistema o i tag personalizzati agli utenti, è poss
 
 In questo articolo viene illustrato come configurare i tag utente nel centro sicurezza & Compliance. Non sono presenti cmdlet nel centro sicurezza & conformità per la gestione dei tag utente.
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare?
+## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare
 
 - Aprire il Centro sicurezza e conformità in <https://protection.office.com/>. Per passare direttamente alla pagina **tag utente** , Apri <https://protection.office.com/userTags> .
 
@@ -66,9 +66,9 @@ In questo articolo viene illustrato come configurare i tag utente nel centro sic
 
    Al termine dell'operazione, fare clic su **Avanti**.
 
-4. Nella pagina **assegnare le cassette postali** , eseguire una delle operazioni seguenti:
+4. Nella pagina **Assegna utenti** eseguire una delle operazioni seguenti:
 
-   - Fare clic su **Aggiungi cassette postali**. Nel volo che viene visualizzato, eseguire una delle operazioni seguenti per aggiungere singoli utenti o gruppi:
+   - Fare clic su **Aggiungi utenti**. Nel volo che viene visualizzato, eseguire una delle operazioni seguenti per aggiungere singoli utenti o gruppi:
      - Fare clic nella casella e scorrere l'elenco per selezionare un utente o un gruppo.
      - Fare clic nella casella e iniziare a digitare per filtrare l'elenco e selezionare un utente o un gruppo.
      - Per aggiungere ulteriori valori, fare clic in un'area vuota nella casella.

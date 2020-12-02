@@ -1,5 +1,5 @@
 ---
-title: Utilizzo di uno script per aggiungere gli utenti a un'esenzione in un caso di eDiscovery di base nel centro sicurezza & Compliance
+title: Utilizzo di uno script per aggiungere gli utenti a un'esenzione in un caso di eDiscovery di base
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -19,19 +19,19 @@ search.appverid:
 - MET150
 ms.assetid: bad352ff-d5d2-45d8-ac2a-6cb832f10e73
 ms.custom: seo-marvel-apr2020
-description: Informazioni su come eseguire uno script per aggiungere cassette postali & siti di OneDrive for business a un nuovo blocco associato a un caso di eDiscovery nel centro sicurezza & Compliance.
-ms.openlocfilehash: 454fd4ea4517a46410c9d0922cc83b141fdbd893
-ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
+description: Informazioni su come eseguire uno script per aggiungere cassette postali & siti di OneDrive for business a un nuovo blocco associato a un caso di eDiscovery nel centro conformità di Microsoft 365.
+ms.openlocfilehash: 31c3bfef4eda4802618020f607bc7706780f3629
+ms.sourcegitcommit: 4a9e1b6851b988bcd31e87b184fc185be949840d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47357676"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49525615"
 ---
 # <a name="use-a-script-to-add-users-to-a-hold-in-a-core-ediscovery-case"></a>Utilizzo di uno script per aggiungere gli utenti a un'esenzione in un caso di eDiscovery di base
 
-Il Centro sicurezza & conformità fornisce i cmdlet di PowerShell che consentono di automatizzare le attività che richiedono tempo per la creazione e la gestione dei casi di eDiscovery. Attualmente, utilizzando lo strumento case di eDiscovery nel centro sicurezza & conformità per inserire un numero elevato di posizioni di contenuto del custode in attesa richiede tempo e preparazione. Ad esempio, prima di creare un'esenzione, è necessario raccogliere l'URL per ogni sito di OneDrive for business che si desidera inserire in attesa. Quindi, per ogni utente che si desidera inserire in attesa, è necessario aggiungere la propria cassetta postale e il proprio sito di OneDrive for business all'esenzione. Nelle versioni future del Centro sicurezza & conformità, questo sarà più facile da fare. Fino a quel momento, è possibile utilizzare lo script in questo articolo per automatizzare il processo.
+Sicurezza & Compliance Center PowerShell fornisce cmdlet che consentono di automatizzare le attività che richiedono tempo per la creazione e la gestione dei casi di eDiscovery. Attualmente, l'utilizzo del case di eDiscovery di base nel centro sicurezza & Compliance per inserire un numero elevato di posizioni di contenuto del custode in attesa richiede tempo e preparazione. Ad esempio, prima di creare un'esenzione, è necessario raccogliere l'URL per ogni sito di OneDrive for business che si desidera inserire in attesa. Quindi, per ogni utente che si desidera inserire in attesa, è necessario aggiungere la propria cassetta postale e il proprio sito di OneDrive for business all'esenzione. È possibile utilizzare lo script in questo articolo per automatizzare il processo.
   
-Lo script richiede il nome del dominio del sito personale dell'organizzazione, ad esempio **Contoso** nell'URL https://contoso-my.sharepoint.com) , il nome di un caso di eDiscovery esistente, il nome del nuovo blocco associato al caso, un elenco di indirizzi di posta elettronica degli utenti che si desidera conservare e una query di ricerca da utilizzare se si desidera creare un blocco basato su query. Lo script ottiene quindi l'URL del sito di OneDrive for business per ogni utente nell'elenco, crea la nuova esenzione e quindi aggiunge la cassetta postale e il sito di OneDrive for business per ogni utente nell'elenco all'esenzione. Lo script genera anche file di registro che contengono informazioni sul nuovo blocco.
+Lo script richiede il nome del dominio del sito personale dell'organizzazione (ad esempio, `contoso` nell'URL https://contoso-my.sharepoint.com) , il nome di un caso di eDiscovery esistente, il nome della nuova esenzione associata al caso, un elenco di indirizzi di posta elettronica degli utenti che si desidera conservare e una query di ricerca da utilizzare se si desidera creare un blocco basato su query. Lo script ottiene quindi l'URL del sito di OneDrive for business per ogni utente nell'elenco, crea la nuova esenzione e quindi aggiunge la cassetta postale e il sito di OneDrive for business per ogni utente nell'elenco all'esenzione. Lo script genera anche file di registro che contengono informazioni sul nuovo blocco.
   
 Di seguito vengono illustrati i passaggi per eseguire questa operazione:
   
@@ -51,7 +51,9 @@ Di seguito vengono illustrati i passaggi per eseguire questa operazione:
 
 - Lo script aggiunge l'elenco di utenti a un nuovo blocco associato a un caso esistente. Verificare che il caso in cui si desidera associare l'esenzione venga creato prima di eseguire lo script.
 
-- Ogni volta che si esegue lo script, vengono create nuove sessioni di PowerShell di sicurezza & conformità e di PowerShell di SharePoint Online. In questo modo, è possibile utilizzare tutte le sessioni di PowerShell disponibili. Per evitare che ciò accada, è possibile eseguire i seguenti comandi per disconnettere le sessioni di PowerShell attive.
+- Lo script in questo articolo supporta l'autenticazione moderna quando si effettua la connessione a PowerShell per Centro sicurezza & Compliance. È possibile utilizzare lo script così com'è se si è un'organizzazione Microsoft 365 o Microsoft 365 GCC. Se si è un'organizzazione di Office 365 Germany, un'organizzazione di Microsoft 365 GCC High o un'organizzazione di Microsoft 365 DoD, sarà necessario modificare lo script per eseguirlo correttamente. In particolare, è necessario modificare la riga `Connect-IPPSSession` e utilizzare i parametri *ConnectionURI* e *AzureADAuthorizationEndpointUri* (e i valori corretti per il tipo di organizzazione) per connettersi a PowerShell per il Centro sicurezza & Compliance. Per ulteriori informazioni, vedere gli esempi in [Connect to Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell#connect-to-security--compliance-center-powershell-without-using-mfa).
+
+- Ogni volta che si esegue lo script, vengono create nuove sessioni di sicurezza & conformità PowerShell e SharePoint Online Management Shell. In questo modo, è possibile utilizzare tutte le sessioni di PowerShell disponibili. Per evitare che ciò accada, è possibile eseguire i seguenti comandi per disconnettere le sessioni di PowerShell attive.
 
   ```powershell
   Get-PSSession | Remove-PSSession
@@ -115,21 +117,20 @@ Dopo aver raccolto le informazioni che verranno richieste dallo script, il passa
 
    ```powershell
    #script begin
-   " " 
+   " "
    write-host "***********************************************"
    write-host "   Security & Compliance Center   " -foregroundColor yellow -backgroundcolor darkgreen
    write-host "   eDiscovery cases - Add users to a hold   " -foregroundColor yellow -backgroundcolor darkgreen 
    write-host "***********************************************"
-   " " 
-   # Get user credentials &amp; Connect to Office 365 SCC, SPO
-   $credentials = Get-Credential -Message "Specify your credentials to connect to the Security & Compliance Center and SharePoint Online"
-   $s = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri "https://ps.compliance.protection.outlook.com/powershell-liveid" -Credential $credentials -Authentication Basic -AllowRedirection -SessionOption (New-PSSessionOption -SkipCACheck -SkipCNCheck -SkipRevocationCheck)
-   $a = Import-PSSession $s -AllowClobber
-       if (!$s)
-       {
-           Write-Error "Couldn't create PowerShell session."
-           return;
-       }
+   " "
+   # Connect to SCC PowerShell using modern authentication
+   if (!$SccSession)
+   {
+     Import-Module ExchangeOnlineManagement
+     Connect-IPPSSession
+   }
+   # Get user credentials to connect to SPO Management Shell
+   $credentials = Get-Credential -Message "Type your credentials again to connect to SharePoint Online Management Shell"
    # Load the SharePoint assemblies from the SharePoint Online Management Shell
    # To install, go to https://go.microsoft.com/fwlink/p/?LinkId=255251
    if (!$SharePointClient -or !$SPRuntime -or !$SPUserProfile)
@@ -296,7 +297,7 @@ Dopo aver raccolto le informazioni che verranno richieste dallo script, il passa
 
 4. Immettere le informazioni richieste dallo script.
 
-   Lo script si connette a PowerShell per la sicurezza & Compliance Center e quindi crea la nuova conservazione nel caso di eDiscovery e aggiunge le cassette postali e OneDrive for business per gli utenti nell'elenco. Per visualizzare il nuovo blocco, è possibile accedere al caso nella pagina **eDiscovery** del centro sicurezza & Compliance. 
+   Lo script si connette a PowerShell per la sicurezza & Compliance Center e quindi crea la nuova conservazione nel caso di eDiscovery e aggiunge le cassette postali e OneDrive for business per gli utenti nell'elenco. Per visualizzare il nuovo blocco, è possibile accedere al caso nella pagina **eDiscovery** del centro sicurezza & Compliance.
 
 Al termine dell'esecuzione dello script, vengono creati i file di registro riportati di seguito e vengono salvati nella cartella in cui si trova lo script.
   

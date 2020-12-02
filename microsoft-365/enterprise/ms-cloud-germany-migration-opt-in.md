@@ -3,7 +3,7 @@ title: Come acconsentire esplicitamente alla migrazione da Microsoft Cloud Germa
 ms.author: andyber
 author: andybergen
 manager: laurawi
-ms.date: 09/30/2020
+ms.date: 12/01/2020
 audience: ITPro
 ms.topic: hub-page
 ms.service: o365-solutions
@@ -19,12 +19,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 'Riepilogo: '
-ms.openlocfilehash: 41f3e928bde0b366b17f698c30f33359a471e757
-ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
+ms.openlocfilehash: 76cad72d742f6bf7ab6ddd1f90bfe0e5a2435df1
+ms.sourcegitcommit: 38d828ae8d4350ae774a939c8decf30cb36c3bea
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48327190"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "49552088"
 ---
 # <a name="how-to-opt-in-for-migration-from-microsoft-cloud-germany-microsoft-cloud-deutschland-to-office-365-services-in-the-new-german-datacenter-regions"></a>Come acconsentire esplicitamente alla migrazione da Microsoft Cloud Germania (Microsoft Cloud Deutschland) ai servizi di Office 365 nelle nuove aree data center tedesche
 
@@ -44,7 +44,7 @@ Se l'organizzazione desidera eseguire la migrazione del servizio da Microsoft Cl
  
 ![Introduzione al consenso esplicito](../media/ms-cloud-germany-migration-opt-in/tenant-migration.png)
 
-Una nuova sezione apparirà sul lato destro dello schermo per accettare la conferma. Impostare l'interruttore su **Sì**e quindi fare clic su **Salva**.
+Una nuova sezione apparirà sul lato destro dello schermo per accettare la conferma. Impostare l'interruttore su **Sì** e quindi fare clic su **Salva**.
  
 ![Accettazione consenso esplicito](../media/ms-cloud-germany-migration-opt-in/tenant-migration-new-regions.png)
 
@@ -62,10 +62,27 @@ I termini dei servizi online sono cambiati in modo da includere termini che cons
 
 Gli amministratori dei tenant del cliente e del partner sono invitati a partecipare all'opt-in per la migrazione nell'interfaccia di amministrazione in modo che il processo di migrazione possa iniziare il prima possibile.
 
+
+## <a name="next-step"></a>Passaggio successivo
+
+[Comprendere l'esperienza del cliente durante la migrazione](ms-cloud-germany-transition-experience.md)
+
 ## <a name="more-information"></a>Altre informazioni
 
+Guida introduttiva:
+
+- [Migrazione da Microsoft Cloud Deutschland a Office 365 Services nelle nuove aree del datacenter tedesco](ms-cloud-germany-transition.md)
 - [Assistenza per la migrazione di Microsoft Cloud Deutschland](https://aka.ms/germanymigrateassist)
-- [Programma di migrazione di Office 365 per clienti di Microsoft Cloud Deutschland](https://aka.ms/office365germanymove)
-- [Programma di migrazione di Dynamics 365 per clienti di Microsoft Cloud Deutschland](https://aka.ms/d365ceoptin)
-- [Programma di migrazione di Power BI per clienti di Microsoft Cloud Deutschland](https://aka.ms/pbioptin)
-- Inviare domande tramite il collegamento "Serve aiuto?" nell'[interfaccia di amministrazione di Microsoft 365](https://portal.office.de/)
+- [Esperienza del cliente durante la migrazione](ms-cloud-germany-transition-experience.md)
+
+Spostamento attraverso la transizione:
+
+- [Operazioni e impatto delle fasi di migrazione](ms-cloud-germany-transition-phases.md)
+- [Ulteriore prelavoro](ms-cloud-germany-transition-add-pre-work.md)
+- Informazioni aggiuntive su [Servizi](ms-cloud-germany-transition-add-general.md), [dispositivi](ms-cloud-germany-transition-add-devices.md), [esperienze](ms-cloud-germany-transition-add-experience.md)e [ad FS](ms-cloud-germany-transition-add-adfs.md).
+
+App Cloud:
+
+- [Informazioni sul programma di migrazione di Dynamics 365](https://aka.ms/d365ceoptin)
+- [Informazioni sul programma di migrazione di Power BI](https://aka.ms/pbioptin)
+- [Guida introduttiva all'aggiornamento di Microsoft Teams](https://aka.ms/SkypeToTeams-Home)

@@ -2,8 +2,8 @@
 title: Configurare l'archiviazione e la condivisione di file
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
-author: cmcatee-MSFT
+ms.author: sharik
+author: SKjerland
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -29,12 +29,12 @@ search.appverid:
 - ODB160
 ms.assetid: 7aa9cdc8-2245-4218-81ee-86fa7c35f1de
 description: Informazioni su come utilizzare OneDrive e un sito del team per Microsoft 365 storage e Microsoft 365 file sharing.
-ms.openlocfilehash: cc6a7a45fda65073dc9b0cd15a844ec9aefca794
-ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
+ms.openlocfilehash: aa85789b950965a33c07214b5eaebf827ed8cc92
+ms.sourcegitcommit: 4a9e1b6851b988bcd31e87b184fc185be949840d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "48906394"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49525570"
 ---
 # <a name="set-up-file-storage-and-sharing-in-microsoft-365"></a>Configurare l'archiviazione e la condivisione dei file in Microsoft 365
 
@@ -117,7 +117,7 @@ Di seguito sono riportati i passaggi per aggiungere file:
   
 5. È possibile eliminare i file dal computer. Nel passaggio successivo, [sincronizzare i file online con il PC o il Mac](#sync-online-files-with-your-pc-or-mac), si creerà un nuovo percorso per questi file nel computer.
 
-    Se si hanno molti file o file di grandi dimensioni da caricare nel sito del team, leggere questi suggerimenti sul [caricamento di molti file o di file di grandi dimensioni in una raccolta](https://support.microsoft.com/office/da549fb1-1fcb-4167-87d0-4693e93cb7a0#__toc384119242).
+    Se si dispone di numerosi file o file di grandi dimensioni da caricare nel sito del team, leggere questi suggerimenti [per il caricamento di file di grandi dimensioni o molti in una raccolta](https://support.microsoft.com/office/da549fb1-1fcb-4167-87d0-4693e93cb7a0#__toc384119242).
 
     Se serve più spazio di archiviazione, vedere [Modificare lo spazio di archiviazione per l'abbonamento](../../commerce/add-storage-space.md).
 
@@ -158,11 +158,11 @@ Di seguito vengono forniti alcuni suggerimenti per ottenere il massimo da OneDri
   
 ### <a name="file-storage-and-collaboration-recommendations-for-other-types-of-small-businesses"></a>Suggerimenti sulla collaborazione e l'archiviazione di file per altri tipi di piccole aziende
 
-- **Sole individuali** : utilizzare OneDrive per archiviare i propri file e condividerli con i clienti caso per caso.
+- **Sole individuali**: utilizzare OneDrive per archiviare i propri file e condividerli con i clienti caso per caso.
 
-- **Comproprietà** : entrambi i proprietari utilizzano OneDrive e condividono i file avanti e indietro.
+- **Comproprietà**: entrambi i proprietari utilizzano OneDrive e condividono i file avanti e indietro.
 
-- **Aziende con client o partner esterni che hanno necessità di accedere ai file** : creare un nuovo sito del team per archiviare e condividere documenti destinati a un cliente specifico. Configurare il sito in modo da consentire l'accesso solo al cliente. Non è quindi necessario preoccuparsi che un cliente ottenga accidentalmente accesso alle informazioni destinate a un altro cliente.
+- **Aziende con client o partner esterni che hanno necessità di accedere ai file**: creare un nuovo sito del team per archiviare e condividere documenti destinati a un cliente specifico. Configurare il sito in modo da consentire l'accesso solo al cliente. Non è quindi necessario preoccuparsi che un cliente ottenga accidentalmente accesso alle informazioni destinate a un altro cliente.
 
 ### <a name="keep-private-files-private"></a>Mantenere privati i file riservati
 

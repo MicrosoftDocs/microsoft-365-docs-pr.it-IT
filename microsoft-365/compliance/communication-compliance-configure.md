@@ -20,12 +20,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: d41965741bc02876cde7e99904194c9f5787202a
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.openlocfilehash: a3c9aabd370117c085574144ff9450e74ae277c7
+ms.sourcegitcommit: 4cbb4ec26f022f5f9d9481f55a8a6ee8406968d2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49357191"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49527525"
 ---
 # <a name="get-started-with-communication-compliance"></a>Introduzione alla conformità delle comunicazioni
 
@@ -45,6 +45,7 @@ Prima di iniziare a utilizzare la conformità alla comunicazione, è necessario 
 - Sottoscrizione Microsoft 365 G5 + componente aggiuntivo Microsoft 365 G5 Compliance
 - Microsoft 365 G5 Subscription + Microsoft 365 G5 Insider Risk Management componente aggiuntivo
 - Abbonamento a Office 365 Enterprise E5 (a pagamento o versione di valutazione)
+- Abbonamento a Office 365 a5 (versione a pagamento o di valutazione)
 - Abbonamento a Office 365 Enterprise E3 + il componente aggiuntivo Office 365 Advanced Compliance (non più disponibile per le nuove sottoscrizioni, vedere note)
 
 Agli utenti inclusi nei criteri di conformità della comunicazione deve essere assegnata una delle licenze sopra riportate.
@@ -52,7 +53,7 @@ Agli utenti inclusi nei criteri di conformità della comunicazione deve essere a
 >[!IMPORTANT]
 >La conformità avanzata di Office 365 non viene più venduta come sottoscrizione autonoma. Quando le sottoscrizioni correnti scadono, i clienti devono passare a una delle sottoscrizioni precedenti, che contengono le stesse funzionalità di conformità o aggiuntive.
 
-Se non si dispone di un piano di Office 365 Enterprise E5 esistente e si desidera tentare la gestione dei rischi Insider, è possibile [aggiungere Microsoft 365](https://docs.microsoft.com/office365/admin/try-or-buy-microsoft-365) alla sottoscrizione esistente oppure [iscriversi a una versione di valutazione](https://www.microsoft.com/microsoft-365/enterprise) di Office 365 Enterprise E5.
+Se non si dispone di un piano Office 365 Enterprise E5 esistente e si desidera provare la conformità alla comunicazione, è possibile [aggiungere Microsoft 365](https://docs.microsoft.com/office365/admin/try-or-buy-microsoft-365) alla sottoscrizione esistente oppure [iscriversi per una versione di valutazione](https://www.microsoft.com/microsoft-365/enterprise) di Office 365 Enterprise E5.
 
 ## <a name="step-1-required-enable-permissions-for-communication-compliance"></a>Passaggio 1 (obbligatorio): abilitare le autorizzazioni per la conformità della comunicazione
 
@@ -125,10 +126,10 @@ Per istruzioni dettagliate su come abilitare il controllo, vedere [attivazione o
 
 Utilizzare il seguente grafico per facilitare la configurazione dei gruppi nell'organizzazione per i criteri di conformità della comunicazione:
 
-| Membro del criterio | Gruppi supportati | Gruppi non supportati |
+| **Membro del criterio** | **Gruppi supportati** | **Gruppi non supportati** |
 |:-----|:-----|:-----|
-|Utenti controllati <br> Utenti non controllati | Gruppi di distribuzione <br> Gruppi di Microsoft 365 | Gruppi di distribuzione dinamici <br> Gruppi di sicurezza abilitati alla posta elettronica |
-| Revisori | Nessuno | Gruppi di distribuzione <br> Gruppi di distribuzione dinamici <br> Gruppi di sicurezza abilitati alla posta elettronica |
+|Utenti controllati <br> Utenti non controllati | Gruppi di distribuzione <br> Gruppi di Microsoft 365 | Gruppi di distribuzione dinamici <br> Gruppi di distribuzione nidificati <br> Gruppi di sicurezza abilitati alla posta elettronica |
+| Revisori | Nessuno | Gruppi di distribuzione <br> Gruppi di distribuzione dinamici <br> Gruppi di distribuzione nidificati <br> Gruppi di sicurezza abilitati alla posta elettronica |
   
 Quando si assegna un gruppo di distribuzione nel criterio, il criterio monitora tutti i messaggi di posta elettronica e le chat dei team di ogni utente del gruppo di distribuzione. Quando si assegna un gruppo di Microsoft 365 nel criterio, il criterio monitora tutti i messaggi di posta elettronica e le chat di Team inviate a quel gruppo, non i singoli messaggi di posta elettronica e le chat ricevute da ogni membro del gruppo.
 

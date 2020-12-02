@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: e2d1c68c3fe963c957e4c3e18fce441b92c96bf1
-ms.sourcegitcommit: d3ca8021f7da00a474ac14aac5f1358204a848f2
+ms.openlocfilehash: 491422126f7d159689e7995b69bef0f395491dcb
+ms.sourcegitcommit: 4cbb4ec26f022f5f9d9481f55a8a6ee8406968d2
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 12/01/2020
-ms.locfileid: "49519822"
+ms.locfileid: "49527710"
 ---
 # <a name="readiness-assessment-tool"></a>Strumento di valutazione della conformità
 
@@ -22,7 +22,7 @@ Per una migliore esperienza possibile quando si effettua la registrazione in Mic
 
 Lo strumento verifica le impostazioni in Microsoft Endpoint Manager (in particolare, Microsoft Intune), Azure Active Directory (Azure AD) e Microsoft 365 per assicurarsi che funzionino con Microsoft Managed Desktop. Microsoft Managed Desktop conserva i dati associati a questi controlli per 12 mesi dopo l'ultima volta che si esegue un controllo nell'organizzazione di Azure AD (tenant). Dopo 12 mesi, viene mantenuto in forma deidentificata.  È possibile scegliere di eliminare i dati da raccogliere.
 
-Tutti gli utenti che dispongono almeno del ruolo di amministratore di Intune saranno in grado di eseguire questo strumento, ma due dei controlli ([criteri di accesso condizionale](readiness-assessment-fix.md#conditional-access-policies) e autenticazione a più [fattori](readiness-assessment-fix.md#multi-factor-authentication) richiedono autorizzazioni aggiuntive.
+Tutti gli utenti che dispongono almeno del ruolo di amministratore di Intune saranno in grado di eseguire questo strumento, ma due dei controlli ([criteri di accesso condizionale](readiness-assessment-fix.md#conditional-access-policies) e autenticazione a più [fattori](readiness-assessment-fix.md#multifactor-authentication) richiedono autorizzazioni aggiuntive.
  
 Lo strumento di valutazione verifica gli elementi seguenti:
 
@@ -79,3 +79,7 @@ Per ogni controllo, lo strumento riporterà uno dei quattro possibili risultati:
 |Consulenza    | Seguire i passaggi dello strumento per la migliore esperienza di registrazione e per gli utenti. È *possibile* completare la registrazione, ma è necessario correggere questi problemi prima di distribuire il primo dispositivo.        |
 |Non pronto | La *registrazione avrà esito negativo* se non si correggeranno questi problemi. Seguire i passaggi dello strumento per risolverli.        |
 |Error | Il ruolo di Azure Active Director (AD) utilizzato non dispone di autorizzazioni sufficienti per eseguire questo controllo. |
+
+## <a name="after-enrollment"></a>Dopo la registrazione
+
+Dopo aver completato la registrazione in Microsoft Managed Desktop, ricordarsi di tornare indietro e regolare determinate impostazioni di Intune e Azure AD. Per ulteriori informazioni, vedere [adjust settings after registration](../get-started/conditional-access.md).

@@ -2,8 +2,8 @@
 title: Eliminare un utente dall'organizzazione
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
-author: cmcatee-MSFT
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 ms.assetid: d5155593-3bac-4d8d-9d8b-f4513a81479e
 description: Informazioni su come eliminare un account utente. Decidere cosa fare con l'indirizzo di posta elettronica e il contenuto di OneDrive dell'utente. E decidere se mantenere la licenza del prodotto o smettere di pagarla.
-ms.openlocfilehash: bcccaa13614114c9588c43d857336bce44a84147
-ms.sourcegitcommit: 25afc0c34edc7f8a5eb389d8c701175256c58ec8
+ms.openlocfilehash: 45cf8b9173a3a4260fe664b809f47ab14b57d9fe
+ms.sourcegitcommit: 38d828ae8d4350ae774a939c8decf30cb36c3bea
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "47324561"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "49551377"
 ---
 # <a name="delete-a-user-from-your-organization"></a>Eliminare un utente dall'organizzazione
   

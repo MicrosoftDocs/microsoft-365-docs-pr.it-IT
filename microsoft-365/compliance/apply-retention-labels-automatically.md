@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Creare etichette di conservazione e criteri di etichettatura automatica in modo da poter applicare automaticamente etichette per conservare ciò che serve ed eliminare ciò che non serve
-ms.openlocfilehash: ebfd088dd6dc3205f02e563e31f6fb25372608ad
-ms.sourcegitcommit: 26b35012c42fef935d6c4a6509dde6c22a9b922a
+ms.openlocfilehash: 766106e9c650047e37c9fa341bd2e78b390d814d
+ms.sourcegitcommit: d3ca8021f7da00a474ac14aac5f1358204a848f2
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "49385262"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49519454"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>Applicare automaticamente un'etichetta di conservazione per conservare o eliminare il contenuto
 
@@ -31,9 +31,9 @@ ms.locfileid: "49385262"
 > [!NOTE]
 > Questo scenario non è supportato per i [record normativi](records-management.md#records).
 
-Una delle funzionalità più efficaci delle [etichette di conservazione](retention.md) è la possibilità di applicarle automaticamente al contenuto che soddisfa condizioni specificate. In questo caso, gli utenti dell'organizzazione non dovranno applicare le etichette di conservazione. Microsoft 365 lo farà automaticamente.
+Una delle funzionalità più efficaci delle [etichette di conservazione](retention.md) è la possibilità di applicarle automaticamente al contenuto che soddisfa condizioni specifiche. In questo caso, gli utenti dell'organizzazione non dovranno applicare le etichette di conservazione, perché Microsoft 365 lo farà al loro posto.
   
-Le etichette di conservazione applicate automaticamente sono potenti perché:
+Le etichette di conservazione applicate automaticamente sono efficaci perché:
   
 - Non è necessario formare gli utenti su tutte le classificazioni.
     
@@ -50,23 +50,23 @@ I processi per l'applicazione automatica di un'etichetta di conservazione si bas
 
 ![Diagramma di ruoli e attività per le etichette applicate automaticamente](../media/32f2f2fd-18a8-43fd-839d-72ad7a43e069.png)
 
-Usare le istruzioni seguenti per i due passaggi per l'amministratore.
+Usare le istruzioni seguenti per i due passaggi dell’amministratore.
 
 > [!NOTE]
-> I criteri di applicazione automatica usano l'etichettatura sul lato servizio con condizioni per applicare automaticamente etichette di conservazione. È anche possibile applicare automaticamente un'etichetta di conservazione con un criterio di etichetta eseguendo le operazioni seguenti: 
+> I criteri automatici usano l'etichettatura sul lato del servizio con condizione di applicare automaticamente le etichette di conservazione. È possibile applicare una etichetta di conservazione con criteri di applicazione nei casi seguenti: 
 >
-> - Applicare un'etichetta di conservazione predefinita a un set di documenti, una cartella o una raccolta di SharePoint in modo che il contenuto non etichettato presente nel contenitore venga etichettato automaticamente
+> - Applicazione di un’etichetta di conservazione predefinita per SharePoint e Outlook, in modo che i contenuti ai quali non è applicata un’etichetta vengano etichettati automaticamente:
 >- Applicazione automatica di un'etichetta di conservazione alla posta elettronica mediante regole
 >
 > Per questi scenari, vedere [Creare e applicare etichette di conservazione nelle app](create-apply-retention-labels.md).
 
 ## <a name="before-you-begin"></a>Prima di iniziare
 
-L'amministratore globale dell'organizzazione dispone delle autorizzazioni complete per creare e modificare le etichette conservazione e i relativi criteri. Se non si esegue l'accesso come amministratore globale, vedere le [autorizzazioni necessarie per creare e gestire criteri di conservazione ed etichette di conservazione](get-started-with-retention.md#permissions-required-to-create-and-manage-retention-policies-and-retention-labels).
+L'amministratore globale dell'organizzazione dispone delle autorizzazioni complete per creare e modificare le etichette conservazione e i relativi criteri. Se non si esegue l'accesso come amministratore globale, vedere [Autorizzazioni necessarie per creare e gestire criteri ed etichette di conservazione](get-started-with-retention.md#permissions-required-to-create-and-manage-retention-policies-and-retention-labels).
 
 ## <a name="how-to-auto-apply-a-retention-label"></a>Come applicare automaticamente un'etichetta di conservazione
 
-Creare prima di tutto l'etichetta di conservazione. Quindi, creare un criterio automatico per applicare l'etichetta. Se è già stata creata l'etichetta di conservazione, passare a [Creare un criterio di applicazione automatica](#step-2-create-an-auto-apply-policy).
+Innanzitutto, creare un’etichetta di conservazione. Successivamente creare un criterio automatico per l’applicazione di tale etichetta. Se è già stata creata un’etichetta di conservazione, passare a [Creazione di un criterio automatico](#step-2-create-an-auto-apply-policy).
 
 Le istruzioni di spostamento variano a seconda che si usi o meno la [gestione dei record](records-management.md). Sono disponibili istruzioni per entrambi gli scenari.
 
@@ -80,7 +80,7 @@ Le istruzioni di spostamento variano a seconda che si usi o meno la [gestione de
     - Se non si usa la gestione dei record:
        - **Soluzioni** > **Governance delle informazioni** > scheda **Etichette** > + **Crea un'etichetta**
     
-    L'opzione non è immediatamente visibile? Selezionare per prima cosa **Mostra tutto**. 
+    L'opzione non è immediatamente visibile? Selezionare prima **Mostra tutto**. 
 
 2. Seguire le istruzioni della procedura guidata. Se si usa la gestione dei record:
     
@@ -88,10 +88,9 @@ Le istruzioni di spostamento variano a seconda che si usi o meno la [gestione de
     
     - Per usare le etichette di conservazione per dichiarare i record, selezionare **Contrassegna elementi come record** o **Contrassegna elementi come record normativi**. Per altre informazioni, vedere [Configurare le etichette di conservazione per dichiarare i record](declare-records.md#configuring-retention-labels-to-declare-records).
 
-3. Una volta creata l'etichetta e dopo la comparsa dell'opzione per pubblicarla, applicare automaticamente l'etichetta o semplicemente salvarla: selezionare **Applica automaticamente questa etichetta a un tipo specifico di contenuto**, quindi selezionare **Fatto** per avviare la procedura guidata di creazione automatica delle etichette e procedere direttamente al passaggio 2 della procedura seguente.
+3. Una volta creata l'etichetta e dopo la comparsa dell'opzione per la pubblicazione, applicare automaticamente l'etichetta o salvarla semplicemente: selezionare **Applica automaticamente questa etichetta a un tipo specifico di contenuto**, poi selezionare **Fatto** per avviare la procedura guidata di creazione automatica delle etichette e procedere direttamente al passaggio 2 della procedura seguente.
 
 Per modificare un'etichetta esistente, selezionarla e quindi selezionare l'opzione **Modifica etichetta** per avviare la procedura guidata di modifica che consente di modificare le descrizioni dell'etichetta e qualsiasi [impostazione idonea](#updating-retention-labels-and-their-policies) del passaggio 2.
-
 
 ### <a name="step-2-create-an-auto-apply-policy"></a>Passaggio 2: Creare un criterio di applicazione automatica
 
@@ -105,7 +104,7 @@ Quando si crea un criterio di applicazione automatica, si seleziona un'etichetta
     - Se non si usa la gestione dei record:
         - **Soluzioni** > **Governance delle informazioni** > scheda **Criteri delle etichette** > **Applica automaticamente etichetta**
     
-    L'opzione non è immediatamente visibile? Selezionare per prima cosa **Mostra tutto**. 
+    L'opzione non è immediatamente visibile? Selezionare prima **Mostra tutto**. 
 
 2. Seguire le istruzioni della procedura guidata per la creazione automatica di etichette.
     
@@ -115,6 +114,7 @@ Quando si crea un criterio di applicazione automatica, si seleziona un'etichetta
 
 Per modificare un criterio di applicazione automatica esistente, selezionarlo per avviare la procedura guidata di modifica del criteri di conservazione, che consente di modificare l'etichetta selezionata e qualsiasi [impostazione idonea](#updating-retention-labels-and-their-policies) del passaggio 2.
 
+Dopo aver applicato l’etichetta al contenuto tramite un criterio di applicazione automatica, non è possibile rimuovere o cambiare automaticamente l’etichetta cambiando il contenuto o il criterio oppure tramite un nuovo criterio di applicazione automatica dell’etichetta. Per altre informazioni, vedere [Panoramica delle etichette di conservazione](retention.md#only-one-retention-label-at-a-time).
 
 ### <a name="configuring-conditions-for-auto-apply-retention-labels"></a>Configurare le condizioni per l'applicazione automatica delle etichette di conservazione
 

@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Informazioni su e dove accedere al Lab Kit di distribuzione di Windows e Office.
-ms.openlocfilehash: 65c251b2cd161687eb0a2e9c7ece29f453fcaae8
-ms.sourcegitcommit: d3ca8021f7da00a474ac14aac5f1358204a848f2
+ms.openlocfilehash: 4ee3663e326dc5a7fbefce06a696cca6a4b060a9
+ms.sourcegitcommit: 4cbb4ec26f022f5f9d9481f55a8a6ee8406968d2
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 12/01/2020
-ms.locfileid: "49519623"
+ms.locfileid: "49527456"
 ---
 # <a name="windows-and-office-deployment-lab-kit"></a>Kit Lab per la distribuzione di Windows e Office
 
@@ -36,7 +36,7 @@ Il lab fornisce un ambiente lab virtuale con provisioning automatico, che compre
 
   - NOVITÀ! Windows 10 Enterprise, versione 20H2
   - Windows 7 Enterprise
-  - Microsoft Endpoint Configuration Manager, versione 2002
+  - Microsoft endpoint Configuration Manager, versione 2010 *
   - Windows Assessment and Deployment Kit per Windows 10
   - Microsoft Deployment Toolkit
   - Microsoft Application Virtualization (App-V)
@@ -94,7 +94,7 @@ Le guide dei lab forniscono indicazioni dettagliate su più scenari di distribuz
 
 [Scaricare il Lab Kit di distribuzione di Windows e Office](https://www.microsoft.com/evalcenter/evaluate-lab-kit).
 
-* Utilizzare un'ampia larghezza di banda per scaricare questo contenuto per migliorare l'esperienza di download e consentire 30-45 minuti per il provisioning automatico. L'ambiente lab richiede almeno 16 GB di memoria disponibile e 300 GB di spazio libero su disco. Per ottenere prestazioni ottimali, è consigliabile 32 GB di memoria disponibile. Il laboratorio scade il febbraio 2020. Prima della scadenza verrà pubblicata una nuova versione.
+* L'installazione della baseline Version 2002 può essere aggiornata alla versione 2010 utilizzando l'aggiornamento in-console. Utilizzare un'ampia larghezza di banda per scaricare questo contenuto per migliorare l'esperienza di download e consentire 30-45 minuti per il provisioning automatico. L'ambiente lab richiede almeno 16 GB di memoria disponibile e 150 GB dello spazio libero su disco. Per ottenere prestazioni ottimali, è consigliabile 32GB di memoria disponibile e 300 GB dello spazio libero. Il laboratorio scade il 7 febbraio 2021. Prima della scadenza verrà pubblicata una nuova versione.
 
 ## <a name="additional-guidance"></a>Indicazioni aggiuntive
 

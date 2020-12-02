@@ -16,12 +16,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Per ulteriori informazioni sull'impostazione sicura per impostazione predefinita in Exchange Online Protection (EOP)
-ms.openlocfilehash: 23c0cad2b96b3a2002f235db7739b903cf862366
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.openlocfilehash: 1a68c14a2d37f1fc3bfb032c4d3ca34c09a89890
+ms.sourcegitcommit: 4cbb4ec26f022f5f9d9481f55a8a6ee8406968d2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49357864"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49527770"
 ---
 # <a name="secure-by-default-in-office-365"></a>Protezione per impostazione predefinita in Office 365
 
@@ -59,5 +59,5 @@ Le sostituzioni devono essere utilizzate solo per:
 
 - Simulazioni di phishing: gli attacchi simulati consentono di identificare gli utenti vulnerabili prima che un attacco reale influenzi l'organizzazione.
 - Cassette postali di sicurezza/secops: cassette postali dedicate utilizzate dai team di sicurezza per ottenere messaggi non filtrati (sia buoni che cattivi). I team possono quindi verificare se contengono contenuto dannoso.
-- Filtri di terze parti: alcuni fornitori di terze parti consigliano di disattivare EOP (SCL =-1) come filtro di terze parti per gestire il filtro della posta. Microsoft non consiglia di disattivare EOP poiché EOP è obbligatorio per Defender per Office 365.
+- Filtri di terze parti: alcuni fornitori di terze parti consigliano di disattivare EOP (SCL =-1) come filtro di terze parti per gestire il filtro della posta. Microsoft non consiglia di disattivare EOP poiché EOP è obbligatorio per Defender per Office 365. In questo caso, invece, si consiglia di abilitare il [filtro avanzato per i connettori](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors) .
 - Falsi positivi: è possibile che si desideri consentire a alcuni messaggi che vengono ancora analizzati da Microsoft [tramite invii di amministratore](admin-submission.md). Come per tutte le sostituzioni, è consigliabile che siano temporanei.

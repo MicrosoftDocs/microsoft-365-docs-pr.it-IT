@@ -21,12 +21,12 @@ search.appverid:
 - GEA150
 ms.assetid: 097ae285-c4af-4319-9770-e2559d66e4c8
 description: "Gli amministratori di Exchange Online gestiscono la posta elettronica e le cassette postali dell'organizzazione. Ad esempio, recuperano gli elementi eliminati nella cassetta postale di un utente. "
-ms.openlocfilehash: cd2c4c10554cbaf425fa6ae9156a8ceeb1a21503
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 8e332e886ca25221fefbbc5d1bb790bd4f513f00
+ms.sourcegitcommit: 4cbb4ec26f022f5f9d9481f55a8a6ee8406968d2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48646704"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49527514"
 ---
 # <a name="about-the-exchange-online-admin-role"></a>Informazioni sul ruolo di amministratore di Exchange Online
 
@@ -34,7 +34,7 @@ Per facilitare l'amministrazione di Microsoft 365, è possibile [assegnare](assi
   
  **Suggerimento**: Quando si assegna il ruolo di amministratore di Exchange a un utente, assegnare anche il ruolo di amministratore dei servizi. In questo modo è possibile visualizzare informazioni importanti nell'interfaccia di amministrazione di Microsoft 365, ad esempio l'integrità del servizio Exchange Online, nonché le notifiche relative a modifiche e rilasci.
   
-## <a name="before-you-begin"></a>Informazioni preliminari
+## <a name="before-you-begin"></a>Prima di iniziare
 
 Ecco alcune delle principali attività che possono eseguire gli utenti a cui è stato assegnato il ruolo di amministratore di Exchange:
   
@@ -44,7 +44,7 @@ Ecco alcune delle principali attività che possono eseguire gli utenti a cui è 
 
 - Impostare le caratteristiche delle cassette postali, ad esempio i criteri di condivisione della cassetta postale: con che modalità gli utenti possono condividere le informazioni su calendario e contatti con altri utenti all'esterno dell'organizzazione.
 
-- Impostare i delegati "[Invia come](give-mailbox-permissions-to-another-user.md#send-email-from-another-users-mailbox)" e "[Invia su abehalf](give-mailbox-permissions-to-another-user.md#send-email-on-behalf-of-another-user)" per la cassetta postale di un utente. Ad esempio, un dirigente potrebbe richiedere che il proprio assistente possa inviare messaggi di posta elettronica per conto suo.
+- Impostare i delegati "[Invia come](give-mailbox-permissions-to-another-user.md#send-email-from-another-users-mailbox)" e "[Invia per conto](give-mailbox-permissions-to-another-user.md#send-email-on-behalf-of-another-user)di" per la cassetta postale di un utente. Ad esempio, un dirigente potrebbe richiedere che il proprio assistente possa inviare messaggi di posta elettronica per conto suo.
 
 - [Creare una cassetta postale condivisa](../email/create-a-shared-mailbox.md) in modo che un gruppo di persone possa monitorare e inviare messaggi di posta elettronica da un indirizzo di posta elettronica comune.
 
@@ -58,7 +58,7 @@ Se si ha un'organizzazione di grandi dimensioni, l'amministratore di Exchange pu
   
  Ad esempio, l'amministratore di Exchange può assegnare un utente al gruppo di ruoli Gestione individuazione in modo che possa eseguire ricerche nelle cassette postali per i dati che soddisfano determinati criteri. Per altre informazioni, vedere [Autorizzazioni in Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo) e [Gestire gruppi di ruoli](https://docs.microsoft.com/exchange/manage-role-groups-exchange-2013-help).
   
-## <a name="learn-about-other-admin-role"></a>Informazioni sull'altro ruolo di amministratore
+## <a name="learn-about-other-admin-roles"></a>Informazioni su altri ruoli di amministratore
 
 - [Informazioni sui ruoli di amministratore di Microsoft 365](about-admin-roles.md)
 

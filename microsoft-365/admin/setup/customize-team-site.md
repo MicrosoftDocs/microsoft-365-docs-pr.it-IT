@@ -2,8 +2,8 @@
 title: Personalizzare un sito del team di SharePoint per l'archiviazione e la condivisione dei file
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
-author: cmcatee-MSFT
+ms.author: sharik
+author: SKjerland
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -25,12 +25,12 @@ search.appverid:
 - MOE150
 ms.assetid: 70a62f09-45ea-4968-8482-43cddfb8cc01
 description: Informazioni su come personalizzare, organizzare e gestire il sito del team di SharePoint con le raccolte documenti, gli elenchi e gli hub.
-ms.openlocfilehash: 3eb09f0b0160333e3b17ebc5f02424ba3d24a13c
-ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
+ms.openlocfilehash: 3ef82cecf22226380fbb18492a7630aa023b4036
+ms.sourcegitcommit: 4a9e1b6851b988bcd31e87b184fc185be949840d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "48906490"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49525534"
 ---
 # <a name="customize-your-team-site-for-file-storage-and-sharing"></a>Personalizzare il sito del team per l'archiviazione e la condivisione dei file
 
@@ -93,11 +93,11 @@ Per informazioni su come aggiungere siti a un sito hub, vedere [associare un sit
   
 ## <a name="sharing-files-with-the-team"></a>Condivisione di file con il team
 
-L'archiviazione di file e la gestione dei documenti è un inizio, è importante anche la condivisione con il team e i client esterni. Di seguito sono riportati alcuni collegamenti ad argomenti che consentiranno di gestire gli utenti e condividere i dati.
+L'archiviazione di file e la gestione dei documenti è un inizio, è importante anche la condivisione con il team e i client esterni. Negli articoli seguenti sono contenute informazioni utili per la gestione degli utenti e la condivisione dei dati:
   
-Per la condivisione di file con il team, vedere [condividere file o cartelle di SharePoint in Microsoft 365](https://support.microsoft.com/office/1fe37332-0f9a-4719-970e-d2578da4941c).
+- Per la condivisione di file con il team, vedere [condividere file o cartelle di SharePoint in Microsoft 365](https://support.microsoft.com/office/1fe37332-0f9a-4719-970e-d2578da4941c).
   
-Per comprendere la condivisione all'esterno del team, vedere [Panoramica della condivisione esterna](/sharepoint/external-sharing-overview).
+- Per comprendere la condivisione all'esterno del team, vedere [Panoramica della condivisione esterna](/sharepoint/external-sharing-overview).
   
 ## <a name="managing-users-and-groups"></a>Gestione di utenti e gruppi
 
@@ -109,9 +109,9 @@ Per aggiungere utenti a un gruppo di Microsoft 365, vedere [aggiungere utenti e 
   
 Informazioni su come gestire le richieste di accesso con la [configurazione e la gestione delle richieste di accesso](https://support.microsoft.com/office/94B26E0B-2822-49D4-929A-8455698654B3).
   
-## <a name="here-are-more-topics-you-might-be-interested-in"></a>Altri argomenti che potrebbero interessare
+## <a name="here-are-more-articles-you-might-be-interested-in"></a>Di seguito sono riportati altri articoli che potrebbero interessare
 
-- **Configurare le app di Office su tablet e telefoni**. Questa operazione è necessaria per poter modificare i file archiviati nel sito del team dal tablet o dal telefono. Se non si installano le app di Office per tablet o telefono, sarà possibile visualizzare i file sul sito del team ma non modificarli. 
+- **Configurare le app di Office su tablet e telefoni**. È necessario eseguire questa operazione in modo che sia possibile modificare i file archiviati nel sito del team dal tablet o dal telefono. Se non si installano le app di Office per tablet o telefono, sarà possibile visualizzare i file sul sito del team ma non modificarli. 
     
   - [Installare e configurare Office in un dispositivo Android con Microsoft 365](https://support.microsoft.com/office/cafe9d6f-8b0c-4b03-b20a-12438a82a22d)
     

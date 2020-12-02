@@ -2,8 +2,8 @@
 title: Configurare l'inoltro della posta elettronica
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
-author: cmcatee-MSFT
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: ab5eb117-0f22-4fa7-a662-3a6bdb0add74
 description: Impostare l'inoltro della posta elettronica su uno o più account di posta elettronica utilizzando Office365.
-ms.openlocfilehash: d19e2c533be6fac927bdf2aa65d72acab9fad6f6
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: acdca0b19eda70d7da34ce1093a4a1b11052fd79
+ms.sourcegitcommit: 38d828ae8d4350ae774a939c8decf30cb36c3bea
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48645528"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "49551835"
 ---
 # <a name="configure-email-forwarding"></a>Configurare l'inoltro della posta elettronica
 
@@ -45,7 +45,7 @@ Come amministratore di un'organizzazione, potrebbe essere necessario disporre de
 
  Prima di configurare l'inoltro della posta elettronica, tenere presente quanto segue: 
 
-- Dopo aver configurato l'inoltro della posta elettronica, solo i **nuovi** messaggi di posta elettronica inviati alla cassetta postale  *da*  saranno fowarded. 
+- Dopo aver configurato l'inoltro della posta elettronica, verranno inoltrati solo i **nuovi** messaggi di posta elettronica inviati alla cassetta postale  *da*  . 
     
 - L'inoltro della posta elettronica richiede che l'account  *da*  disponga di una licenza. Se si sta configurando l'inoltro della posta elettronica perché l'utente ha lasciato la propria organizzazione, un'altra opzione consiste nel [convertire la cassetta postale in una cassetta postale condivisa](convert-user-mailbox-to-shared-mailbox.md). In questo modo diverse persone possono accedervi. Tuttavia, una cassetta postale condivisa non può essere superiore a 50 GB. 
     
@@ -75,9 +75,9 @@ Per eseguire questa procedura, è necessario essere un amministratore di Exchang
     
 2. Selezionare il nome dell'utente di cui si desidera inoltrare la posta elettronica per aprire la pagina delle proprietà. 
 
-3. Espandere **impostazioni di posta elettronica**e quindi nella sezione **inoltro della posta elettronica** Selezionare **modifica**.
+3. Espandere **impostazioni di posta elettronica** e quindi nella sezione **inoltro della posta elettronica** Selezionare **modifica**.
 
-4. Nella pagina inoltro di posta elettronica, impostare l'interruttore **su**attivato, immettere l'indirizzo di inoltro e scegliere se si desidera mantenere una copia dei messaggi di posta elettronica inoltrati. Se non si vede questa opzione, assicurarsi che sia assegnata una licenza all'account utente. Selezionare **Salva**.
+4. Nella pagina inoltro di posta elettronica, impostare l'interruttore **su** attivato, immettere l'indirizzo di inoltro e scegliere se si desidera mantenere una copia dei messaggi di posta elettronica inoltrati. Se non si vede questa opzione, assicurarsi che sia assegnata una licenza all'account utente. Selezionare **Salva**.
     
     **Per inoltrare a più indirizzi di posta elettronica**, è possibile chiedere all'utente di impostare una regola in Outlook per inoltrare agli indirizzi. Per ulteriori informazioni, vedere [utilizzare le regole per inoltrare automaticamente i messaggi](https://support.microsoft.com/office/45aa9664-4911-4f96-9663-ece42816d746). 
     
@@ -93,9 +93,9 @@ Per eseguire questa procedura, è necessario essere un amministratore di Exchang
     
 2. Selezionare il nome dell'utente di cui si desidera inoltrare la posta elettronica per aprire la pagina delle proprietà. 
 
-3. Espandere **impostazioni di posta elettronica**e quindi nella sezione **inoltro della posta elettronica** Selezionare **modifica**.
+3. Espandere **impostazioni di posta elettronica** e quindi nella sezione **inoltro della posta elettronica** Selezionare **modifica**.
 
-4. Nella pagina inoltro di posta elettronica, impostare l'interruttore **su**attivato, immettere l'indirizzo di inoltro e scegliere se si desidera mantenere una copia dei messaggi di posta elettronica inoltrati. Se non si vede questa opzione, assicurarsi che sia assegnata una licenza all'account utente. Selezionare **Salva**.
+4. Nella pagina inoltro di posta elettronica, impostare l'interruttore **su** attivato, immettere l'indirizzo di inoltro e scegliere se si desidera mantenere una copia dei messaggi di posta elettronica inoltrati. Se non si vede questa opzione, assicurarsi che sia assegnata una licenza all'account utente. Selezionare **Salva**.
     
     **Per inoltrare a più indirizzi di posta elettronica**, è possibile chiedere all'utente di impostare una regola in Outlook per inoltrare agli indirizzi. Per ulteriori informazioni, vedere [utilizzare le regole per inoltrare automaticamente i messaggi](https://support.microsoft.com/office/45aa9664-4911-4f96-9663-ece42816d746). 
     

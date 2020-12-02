@@ -20,12 +20,12 @@ description: Informazioni su come verificare il dominio e creare record DNS pres
 ms.custom:
 - okr_smb
 - AdminSurgePortfolio
-ms.openlocfilehash: 6c2359cbf2da24fa7e2cd579d61216d948e0cb83
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: bc22dbd3a050516f518c9ddc9ccf5a3af9c76f12
+ms.sourcegitcommit: d3ca8021f7da00a474ac14aac5f1358204a848f2
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48645372"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49519294"
 ---
 # <a name="add-dns-records-to-connect-your-domain"></a>Aggiungere record DNS per connettere il dominio
 

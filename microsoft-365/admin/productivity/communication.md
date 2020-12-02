@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Informazioni dettagliate sul punteggio di produttività per la comunicazione-persone.
-ms.openlocfilehash: ba2e69659f49c90d3b65e56e54b3026c7c9ff36a
-ms.sourcegitcommit: 2d3e85173c65a9e0ce92624a80ed7a9839f5b8bd
+ms.openlocfilehash: a6fccdcc7f6440195bb83949ee294bbb4fe5ce7f
+ms.sourcegitcommit: 4cbb4ec26f022f5f9d9481f55a8a6ee8406968d2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49123448"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49527502"
 ---
 # <a name="communication--people-experiences"></a>Comunicazione – esperienze degli utenti
 
@@ -119,9 +119,9 @@ Vengono inoltre fornite informazioni che consentono di acquisire visibilità sul
 2. **Corpo:** Vengono fornite informazioni sul valore dell'utilizzo dei messaggi di canale all'interno di Microsoft Teams
 3. **Visualizzazione:** Suddivide l'utilizzo dei messaggi chat e del canale:
       - **Utenti che inviano messaggi chat:** La parte colorata e la frazione rappresentano l'utilizzo dei messaggi di chat all'interno di persone che hanno inviato messaggi su Microsoft teams. La frazione è costituita da:
-        - **Numeratore:** Utenti che hanno inviato messaggi di chat su Microsoft teams negli ultimi 28 giorni
-        - **Denominatore:** Gli utenti hanno inviato messaggi su Microsoft teams negli ultimi 28 giorni
-      - **Utenti che inviano messaggi chat:** La parte colorata e la frazione rappresentano l'utilizzo dei messaggi di canale all'interno di persone che inviano messaggi su Microsoft teams. La frazione è costituita da:
+        - **Numeratore:** Utenti che hanno inviato messaggi di chat su Microsoft teams negli ultimi 28 giorni.
+        - **Denominatore:** Utenti che hanno inviato messaggi su Microsoft teams negli ultimi 28 giorni.
+      - **Utenti che inviano messaggi di canale:** La parte colorata e la frazione rappresentano l'utilizzo dei messaggi di canale all'interno di persone che inviano messaggi su Microsoft teams. La frazione è costituita da:
         - **Numeratore:** Utenti che hanno inviato messaggi di chat su Microsoft teams negli ultimi 28 giorni.
         - **Denominatore:** Utenti che hanno inviato messaggi su Microsoft teams negli ultimi 28 giorni.
 4. **Visualizzazione del contenuto correlato:** Selezionare questo collegamento per visualizzare i video fascicolati e altri contenuti della Guida correlati.

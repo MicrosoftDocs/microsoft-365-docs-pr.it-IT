@@ -2,8 +2,8 @@
 title: Consentire agli utenti di reimpostare le loro password
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
-author: cmcatee-MSFT
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -24,18 +24,18 @@ search.appverid:
 - MOE150
 ms.assetid: 5bc3f460-13cc-48c0-abd6-b80bae72d04a
 description: Informazioni su come è possibile reimpostare le password utilizzando lo strumento di reimpostazione della password self-service.
-ms.openlocfilehash: 7ecadaa42610e0b77dc1727c11140080bd7b1779
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: bbde517858186d844412aca21f231620ed76496a
+ms.sourcegitcommit: 38d828ae8d4350ae774a939c8decf30cb36c3bea
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48646680"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "49551921"
 ---
 # <a name="let-users-reset-their-own-passwords"></a>Consentire agli utenti di reimpostare le loro password
 
 Come amministratore di Microsoft 365, è possibile consentire agli utenti di utilizzare lo [strumento di reimpostazione della password in modalità self-service](https://go.microsoft.com/fwlink/p/?LinkId=522677) in modo che non sia necessario reimpostare le password. Un gran risparmio di tempo!
   
-## <a name="before-you-begin"></a>Informazioni preliminari
+## <a name="before-you-begin"></a>Prima di iniziare
   
 - Si ottiene la reimpostazione della password in modalità self-service per gli utenti Cloud **gratis** con qualsiasi piano di Microsoft 365 business, Education o no profit paid. Non funziona con Microsoft 365 Trial.
 
@@ -65,13 +65,13 @@ Con questi passaggi si attiva la reimpostazione della password in modalità self
 
 ::: moniker range="o365-germany"
 
-1. Nell'interfaccia di <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">Amministrazione</a>passare alla pagina **Impostazioni** \> ** &amp; privacy sicurezza** .
+1. Nell'interfaccia di <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">Amministrazione</a>passare alla pagina **Impostazioni** \> **&amp; privacy sicurezza** .
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. Nell'interfaccia di <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">Amministrazione</a>passare alla pagina impostazioni di sicurezza **per la** \> **Settings** \> ** &amp; privacy** delle impostazioni.
+1. Nell'interfaccia di <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">Amministrazione</a>passare alla pagina impostazioni di sicurezza **per la** \> **Settings** \> **&amp; privacy** delle impostazioni.
 
 ::: moniker-end
 
@@ -79,9 +79,9 @@ Con questi passaggi si attiva la reimpostazione della password in modalità self
   
 3. Selezionare **reimpostazione della password in modalità self-service**.
 
-4. In **reimpostazione della password self-service**selezionare **Vai al portale di Azure per abilitare la reimpostazione della password in modalità self-service**.
+4. In **reimpostazione della password self-service** selezionare **Vai al portale di Azure per abilitare la reimpostazione della password in modalità self-service**.
 
-5. Nel riquadro di spostamento a sinistra, selezionare **utenti**e quindi fare clic su **utenti | Pagina tutti gli utenti** , selezionare **Reimposta password**.
+5. Nel riquadro di spostamento a sinistra, selezionare **utenti** e quindi fare clic su **utenti | Pagina tutti gli utenti** , selezionare **Reimposta password**.
   
 6. Nella pagina delle **Proprietà** , selezionare **tutto** per attivarlo per tutti gli utenti dell'azienda, quindi selezionare **Salva**.
   

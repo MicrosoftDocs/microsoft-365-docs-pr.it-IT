@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Gli amministratori possono imparare a usare il portale per gli invii nel centro sicurezza & Compliance per inviare messaggi di posta elettronica sospetti, sospette mail di phishing, posta indesiderata e altre informazioni potenzialmente nocive, URL e file a Microsoft per l'analisi.
-ms.openlocfilehash: be2fc8e41e3b53923b0297f30dfb102bbabd7489
-ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
+ms.openlocfilehash: 1e133c0d4a875fc9735cc8a92e42b6ffeee6dd5f
+ms.sourcegitcommit: 4cbb4ec26f022f5f9d9481f55a8a6ee8406968d2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48877268"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49527746"
 ---
 # <a name="use-admin-submission-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>Usare l'Invio dell'amministratore per inviare posta indesiderata sospetta, phishing, URL e file a Microsoft
 
@@ -36,7 +36,7 @@ Quando si invia un messaggio di posta elettronica, si ottengono informazioni su 
 
 Per altri modi per inviare messaggi di posta elettronica, URL e allegati a Microsoft, vedere [segnalare i messaggi e i file a Microsoft](report-junk-email-messages-to-microsoft.md).
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare?
+## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare
 
 - Aprire il Centro sicurezza e conformità in <https://protection.office.com/>. Per passare direttamente alla pagina **invio** , utilizzare <https://protection.office.com/reportsubmission> .
 
@@ -52,7 +52,7 @@ Per altri modi per inviare messaggi di posta elettronica, URL e allegati a Micro
 
 ## <a name="report-suspicious-content-to-microsoft"></a>Segnalare contenuti sospetti a Microsoft
 
-1. Nel centro sicurezza & conformità, accedere a invii di **gestione delle minacce** \> **Submissions** , verificare di essere nella scheda invii di **Amministrazione** e quindi fare clic su **nuovo invio**.
+1. Nel centro sicurezza & conformità, accedere a invii di **gestione delle minacce** \> **Submissions**, verificare di essere nella scheda invii di **Amministrazione** e quindi fare clic su **nuovo invio**.
 
 2. Utilizzare il riquadro a comparsa **nuovo invio** che sembra inviare il messaggio, l'URL o l'allegato come descritto nelle sezioni seguenti.
 
@@ -60,9 +60,12 @@ Per altri modi per inviare messaggi di posta elettronica, URL e allegati a Micro
 
 1. Nella sezione **tipo oggetto** selezionare **posta elettronica**. Nella sezione **formato invio** , utilizzare una delle seguenti opzioni:
 
-   - **ID messaggio di rete** : questo è un valore GUID disponibile nell'intestazione **X-MS-Exchange-Organization-network-Message-ID** del messaggio.
+   - **ID messaggio di rete**: questo è un valore GUID disponibile nell'intestazione **X-MS-Exchange-Organization-network-Message-ID** del messaggio.
 
-   - **File** : fare clic su **Scegli file**. Nella finestra di dialogo che si apre, individuare e selezionare il file. eml o. msg, quindi fare clic su **Apri**.
+   - **File**: fare clic su **Scegli file**. Nella finestra di dialogo che si apre, individuare e selezionare il file. eml o. msg, quindi fare clic su **Apri**.
+   
+   > [!NOTE]
+   > Gli amministratori con Defender per Office 365 piano 1 o piano 2 sono in grado di inviare messaggi vecchi come 30 giorni. Altri amministratori saranno in grado di tornare indietro di 7 giorni.
 
 2. Nella sezione **destinatari** specificare uno o più destinatari a cui si desidera eseguire il controllo dei criteri. Il controllo dei criteri determina se l'analisi del messaggio di posta elettronica è stata ignorata a causa di criteri dell'organizzazione o dell'utente.
 
@@ -70,13 +73,9 @@ Per altri modi per inviare messaggi di posta elettronica, URL e allegati a Micro
 
    - **Non deve essere stato bloccato**
 
-   - **Avrebbe dovuto essere bloccato** : selezionare **posta indesiderata** , **phishing** o **malware**. Se non si è sicuri, utilizzare il miglior giudizio.
+   - **Avrebbe dovuto essere bloccato**: selezionare **posta indesiderata**, **phishing** o **malware**. Se non si è sicuri, utilizzare il miglior giudizio.
 
-4. Se il filtro è stato ignorato a causa di criteri al momento dell'invio, verranno visualizzate le informazioni relative a tale criterio.
-
-   Se il filtro non è stato bypassato a causa di uno o più criteri, l'analisi verrà completata in alcuni minuti. Vedrai altre informazioni sull'invio facendo clic sul collegamento di stato. Questo include i risultati del controllo dei criteri e il verdetto di rianalisi. Si noti che questo non esegue di nuovo il messaggio di posta elettronica tramite lo stack di filtraggio completo di Microsoft Defender per Office 365 ma esegue una rianalisi parziale in base a determinati attributi di posta, URL o file.
-
-5. Al termine, fare clic sul pulsante **Invia** .
+4. Al termine, fare clic sul pulsante **Invia** .
 
 ![Esempio di invio di URL](../../media/submission-flyout-email.PNG)
 
@@ -88,7 +87,7 @@ Per altri modi per inviare messaggi di posta elettronica, URL e allegati a Micro
 
    - **Non deve essere stato bloccato**
 
-   - **Avrebbe dovuto essere bloccato** : selezionare **phishing** o **malware**.
+   - **Avrebbe dovuto essere bloccato**: selezionare **phishing** o **malware**.
 
 3. Al termine, fare clic sul pulsante **Invia** .
 
@@ -104,7 +103,7 @@ Per altri modi per inviare messaggi di posta elettronica, URL e allegati a Micro
 
    - **Non deve essere stato bloccato**
 
-   - **Avrebbe dovuto essere bloccato** : il **malware** è l'unica scelta e viene selezionato automaticamente..
+   - **Avrebbe dovuto essere bloccato**: il **malware** è l'unica scelta e viene selezionato automaticamente..
 
 4. Al termine, fare clic sul pulsante **Invia** .
 
@@ -112,7 +111,7 @@ Per altri modi per inviare messaggi di posta elettronica, URL e allegati a Micro
 
 ## <a name="view-admin-submissions"></a>Visualizzazione di invii di amministratore
 
-Nel centro sicurezza & conformità, accedere a invii di **gestione delle minacce** \> **Submissions** , verificare di essere nella scheda invii di **Amministrazione** e quindi fare clic su **nuovo invio**.
+Nel centro sicurezza & conformità, accedere a invii di **gestione delle minacce** \> **Submissions**, verificare di essere nella scheda invii di **Amministrazione** e quindi fare clic su **nuovo invio**.
 
 Nei pressi della parte superiore della pagina, è possibile immettere una data di inizio, una data di fine e (per impostazione predefinita) è possibile filtrare per **ID invio** (un valore GUID assegnato a ogni invio) immettendo un valore nella casella e facendo clic su ![ Aggiorna ](../../media/scc-quarantine-refresh.png) . È possibile immettere più valori separati da virgole.
 
@@ -137,7 +136,7 @@ Fare clic sulla scheda **posta elettronica** .
 È possibile fare clic sul pulsante **Opzioni colonna** vicino alla parte inferiore della pagina per aggiungere o rimuovere colonne dalla visualizzazione:
 
 - **Data**
-- **ID invio** : valore GUID assegnato a ogni invio.
+- **ID invio**: valore GUID assegnato a ogni invio.
 - **Inviato da**<sup>\*</sup>
 - **Oggetto**<sup>\*</sup>
 - **Mittente**
@@ -145,10 +144,19 @@ Fare clic sulla scheda **posta elettronica** .
 - **Tipo di invio**
 - **Motivo per il recapito**
 - **Stato**<sup>\*</sup>
-- **Tipo di controllo**
-- **Origine di controllo**
 
   <sup>\*</sup> Se si fa clic su questo valore, le informazioni dettagliate vengono visualizzate in un riquadro a comparsa.
+
+#### <a name="admin-submission-rescan-details"></a>Dettagli di rianalisi dell'invio dell'amministratore
+
+I messaggi inviati in invii di amministratore vengono rianalizzati e i risultati vengono visualizzati nel riquadro a comparsa dei dettagli:
+
+- Se si è verificato un errore nell'autenticazione della posta elettronica del mittente al momento del recapito.
+- Informazioni su eventuali hit di criteri che potrebbero aver influenzato o ignorato il verdetto di un messaggio.
+- Risultati di detonazione correnti per verificare se gli URL o i file contenuti nel messaggio sono stati dannosi o meno.
+- Commenti e suggerimenti dei selezionatori.
+
+Se è stata trovata una sostituzione, la rianalisi deve essere completata in alcuni minuti. Se non è stato riscontrato un problema nell'autenticazione della posta elettronica o se il recapito non è stato influenzato da una sostituzione, il feedback dei selezionatori potrebbe richiedere fino a un giorno.
 
 ### <a name="view-admin-url-submissions"></a>Visualizzazione di invii di URL di amministrazione
 

@@ -16,12 +16,12 @@ ms.assetid: c31406ea-2979-4fac-9288-f835269b9d2f
 ms.collection:
 - M365-security-compliance
 description: Gli amministratori possono ottenere informazioni sui diversi modi per segnalare messaggi buoni e non validi e file a Microsoft per l'analisi.
-ms.openlocfilehash: 379393919274662554522e21e98637105bc82287
-ms.sourcegitcommit: 9546708a5506fdbadbfe2500cbf1bd1aeaec6fcb
+ms.openlocfilehash: df89e90998b5aa482dc1ea4003d53cf98b4b4d3f
+ms.sourcegitcommit: 4cbb4ec26f022f5f9d9481f55a8a6ee8406968d2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "49020904"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49527782"
 ---
 # <a name="report-messages-and-files-to-microsoft"></a>Segnalazione di messaggi e file a Microsoft
 
@@ -37,7 +37,7 @@ In Microsoft 365 organizzazioni con cassette postali in Exchange Online o standa
 |[Abilitare il componente aggiuntivo Segnala messaggio](enable-the-report-message-add-in.md)|È compatibile con Outlook, Outlook per Mac e Outlook sul Web (in precedenza noto come Outlook Web App) ed è il componente aggiuntivo consigliato. <p> A seconda dell'abbonamento, i messaggi segnalati dagli utenti con il componente aggiuntivo sono disponibili nel [portale](admin-submission.md)di gestione delle risorse, nei [risultati di ricerca e di risposta automatizzati (aria)](air-view-investigation-results.md), nel [rapporto messaggi segnalati dall'utente](view-email-security-reports.md#user-reported-messages-report)e in [Esplora minacce](threat-explorer-views.md#email--submissions). <p> È possibile configurare i messaggi segnalati in modo che vengano copiati o reindirizzati a una cassetta postale specificata. Per ulteriori informazioni, vedere [criteri degli invii degli utenti](user-submission.md).|
 |[Installare e utilizzare il componente aggiuntivo per la segnalazione della posta indesiderata per Microsoft Outlook](junk-email-reporting-add-in-for-microsoft-outlook.md)|Funziona solo in Outlook.|
 |[Segnalare messaggi di posta indesiderata e di phishing in Outlook sul Web](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md)|Utilizzare le funzionalità predefinite in Outlook sul Web per le organizzazioni con cassette postali di Exchange Online (non disponibile in EOP autonomo). <p> I messaggi segnalati dagli utenti sono disponibili nel [portale di amministrazione degli invii](admin-submission.md). <p> È possibile configurare i messaggi segnalati in modo che vengano copiati o reindirizzati a una cassetta postale specificata. Per ulteriori informazioni, vedere [criteri degli invii degli utenti](user-submission.md).|
-|[Segnalare messaggi di posta indesiderata e di phishing in Outlook per iOS e Android](report-junk-email-and-phishing-scams-in-outlook-for-iOS-and-Android.md)|Utilizzare le funzionalità predefinite in Outlook per iOS un androide per le organizzazioni con cassette postali di Exchange Online (non disponibile in EOP autonomo). <p> I messaggi segnalati dagli utenti sono disponibili nel [portale di amministrazione degli invii](admin-submission.md). <p> È possibile configurare i messaggi segnalati in modo che vengano copiati o reindirizzati a una cassetta postale specificata. Per ulteriori informazioni, vedere [criteri degli invii degli utenti](user-submission.md).|
+|[Segnalare messaggi di posta indesiderata e di phishing in Outlook per iOS e Android](report-junk-email-and-phishing-scams-in-outlook-for-iOS-and-Android.md)|Utilizzare le funzionalità predefinite di Outlook per iOS e Android per le organizzazioni con cassette postali di Exchange Online (non disponibile in EOP autonomo). <p> I messaggi segnalati dagli utenti sono disponibili nel [portale di amministrazione degli invii](admin-submission.md). <p> È possibile configurare i messaggi segnalati in modo che vengano copiati o reindirizzati a una cassetta postale specificata. Per ulteriori informazioni, vedere [criteri degli invii degli utenti](user-submission.md).|
 |[Inviare manualmente messaggi a Microsoft per l'analisi](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md)|Inviare manualmente messaggi allegati a indirizzi di posta elettronica Microsoft specifici per la posta indesiderata, non la posta indesiderata e il phishing|
 |[Utilizzare le regole del flusso di posta per vedere quali segnalazioni gli utenti inviano a Microsoft](use-mail-flow-rules-to-see-what-your-users-are-reporting-to-microsoft.md)|Informazioni su come creare una regola del flusso di posta (nota anche come regola di trasporto) che informa quando gli utenti segnalano i messaggi a Microsoft per l'analisi.
 |||

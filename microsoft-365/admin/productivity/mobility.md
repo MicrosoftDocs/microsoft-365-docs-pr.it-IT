@@ -19,16 +19,16 @@ search.appverid:
 - MET150
 - MOE150
 description: Informazioni dettagliate su mobilità-persone sperimentano il Punteggio di produttività.
-ms.openlocfilehash: f40984b3c053dcb976c901830bf796e3b7297f2d
-ms.sourcegitcommit: d578b28ed1886abd083b01b93f01b354067e6d47
+ms.openlocfilehash: e37d5ff0377163bea270b1d16e8b4fddae9099b4
+ms.sourcegitcommit: 38d828ae8d4350ae774a939c8decf30cb36c3bea
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "48804782"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "49551864"
 ---
 # <a name="mobility--people-experiences"></a>Mobilità – esperienze degli utenti
 
-Il Punteggio di produttività consente alle organizzazioni di trasformare la modalità di utilizzo delle metriche su come gli utenti utilizzano le app di Microsoft 365 e le esperienze tecnologiche di supporto. Lo Score riflette le prestazioni dell'organizzazione&#39;s per le categorie di utenti e tecnologie e confronta il tuo punteggio con organizzazioni come la tua. La categoria teamwork è parte integrante delle misurazioni che rientrano nelle esperienze degli utenti. Per ulteriori informazioni, vedere the [Productivity Score Overview](productivity-score.md) .
+La produttività Score supporta il viaggio verso la trasformazione digitale con approfondimenti su come l'organizzazione usa Microsoft 365 e la sua tecnologia. Il Punteggio dell'organizzazione riflette le misure di utenti e tecnologie e può essere paragonato ai benchmark di org simili per dimensioni al proprio. La categoria mobilità è parte integrante delle esperienze degli utenti. Per ulteriori informazioni, vedere the [Productivity Score Overview](productivity-score.md) .
 
 ## <a name="why-your-organization39s-mobility-score-matters"></a>Perché l'organizzazione&#39;s mobile Score Matters
 
@@ -56,19 +56,20 @@ Microsoft 365 consente alle persone di lavorare in modo flessibile tra le app, t
 
 #### <a name="trend-visualization-of-the-primary-insight"></a>Visualizzazione della tendenza dell'intuizione principale
 
-:::image type="content" source="../../media/mobility-primary.png" alt-text="Grafico che mostra l'Insight principale per la mobilità-persone che percepiscono il Punteggio di produttività.":::
+:::image type="content" source="../../media/mobility-primary.png" alt-text="Grafico che mostra il numero di utenti che utilizzano più piattaforme rispetto all'ora.":::
 
 Questo grafico Visualizza la linea di tendenza, in cui il numeratore è il numero di utenti che hanno utilizzato le app, negli ultimi 180 giorni. Ogni punto dati del grafico a linee è una aggregazione di attività negli ultimi 28 giorni. Ogni punto dati fornisce un conteggio di tutti gli utenti che utilizzano un'applicazione in almeno due piattaforme negli ultimi 28 giorni per ogni data sull'asse x.
 
 ### <a name="scoring-framework"></a>Framework di Punteggio
 
-Il Punteggio per dispositivi mobili misura se gli utenti utilizzano Microsoft 365 Apps-Outlook, teams, Word, Excel, PowerPoint, OneNote, Yammer e Skype-tra le diverse piattaforme-desktop, Web e mobile.
+Il Punteggio per dispositivi mobili per l'organizzazione misura a livello di organizzazione (aggregato) se gli utenti utilizzano le app Microsoft 365-Outlook, teams, Word, Excel, PowerPoint, OneNote, Yammer e Skype-tra le diverse piattaforme-desktop, Web e mobile.
+I punteggi non vengono forniti a livello di singolo utente.
 
 ## <a name="explore-how-your-org-works-across-platforms-and-locations"></a>Esplorare la modalità di funzionamento dell'organizzazione tra piattaforme e posizioni
 
 ### <a name="use-of-outlook-across-platforms"></a>Utilizzo di Outlook su più piattaforme
 
-:::image type="content" source="../../media/outlook-across-platforms.png" alt-text="Grafico che mostra l'Insight principale per la mobilità-persone che percepiscono il Punteggio di produttività.":::
+:::image type="content" source="../../media/outlook-across-platforms.png" alt-text="Grafico che indica il numero di utenti che utilizzano Outlook su più piattaforme.":::
 
 1. **Intestazione:** Visualizza la percentuale di utenti attivi su Outlook che utilizzano Outlook su più piattaforme.
 2. **Corpo:** Vengono fornite informazioni sul valore dell'utilizzo di Outlook su dispositivi mobili che consentono di rimanere connessi da qualsiasi posizione tramite posta elettronica.
@@ -89,7 +90,7 @@ Il Punteggio per dispositivi mobili misura se gli utenti utilizzano Microsoft 36
 
 ### <a name="use-of-teams-across-platforms"></a>Utilizzo di team tra piattaforme
 
-:::image type="content" source="../../media/teams-across-platforms.png" alt-text="Grafico che mostra l'Insight principale per la mobilità-persone che percepiscono il Punteggio di produttività.":::
+:::image type="content" source="../../media/teams-across-platforms.png" alt-text="Grafico che indica il numero di utenti che utilizzano Team su più di una o più piattaforme.":::
 
 1. **Intestazione:** Indica la percentuale di utenti attivi su Microsoft teams che lo utilizzano su più piattaforme.
 2. **Corpo:** Vengono fornite informazioni sul valore dell'utilizzo di Team su dispositivi mobili per consentire agli utenti di rimanere sempre aggiornati sui messaggi durante il lavoro da qualsiasi posizione.
@@ -110,7 +111,7 @@ Il Punteggio per dispositivi mobili misura se gli utenti utilizzano Microsoft 36
 
 ### <a name="use-of-microsoft-365-apps-across-platforms"></a>Utilizzo delle app di Microsoft 365 tra piattaforme
 
-:::image type="content" source="../../media/microsoft365apps-platforms.png" alt-text="Grafico che mostra l'Insight principale per la mobilità-persone che percepiscono il Punteggio di produttività.":::
+:::image type="content" source="../../media/microsoft365apps-platforms.png" alt-text="Grafico che indica il numero di utenti che utilizzano le app Microsoft 365 su più piattaforme.":::
 
 1. **Intestazione:** Visualizza la percentuale di utenti attivi nelle app di Microsoft 365 (Word, Excel, PowerPoint e OneNote) su più piattaforme.
 2. **Corpo:** Fornisce informazioni sul valore di fornire agli utenti dell'organizzazione la possibilità di accedere ai propri file da qualsiasi luogo.
@@ -123,7 +124,7 @@ Il Punteggio per dispositivi mobili misura se gli utenti utilizzano Microsoft 36
 
 ### <a name="remote-work"></a>Lavoro remoto
 
-:::image type="content" source="../../media/remotework-trend.png" alt-text="Grafico che mostra l'Insight principale per la mobilità-persone che percepiscono il Punteggio di produttività.":::
+:::image type="content" source="../../media/remotework-trend.png" alt-text="Grafico che indica il numero di utenti che lavorano in remoto, in un sito o in entrambi i siti.":::
 
 1. **Intestazione:** Visualizza la percentuale di utenti che lavorano solo da casa o dalla posizione all'esterno della rete aziendale&#39;s.
 2. **Corpo:** Evidenzia l'importanza di facilitare il lavoro a distanza per gli utenti senza l'accesso agli uffici fisici dell'organizzazione&#39;s.
