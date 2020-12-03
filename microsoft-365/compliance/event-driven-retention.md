@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-may2020
 - seo-marvel-jun2020
 description: In genere, nell’ambito di una soluzione di gestione dei record, è possibile configurare un’etichetta di conservazione per avviare il periodo di conservazione in base a un evento identificato.
-ms.openlocfilehash: 1572995909f370c5c3a544cb3f85e20c35629f88
-ms.sourcegitcommit: 9f5b136b96b3af4db4cc6f5b1f35130ae60d6b12
+ms.openlocfilehash: cf8ce1dc2ca77e2ba028d0c35f58cd0ab419b32d
+ms.sourcegitcommit: 5ce64d510b15c6e2df32b78e6086f77156731e3c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "47816893"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "49477625"
 ---
 # <a name="start-retention-when-an-event-occurs"></a>Avviare la conservazione al verificarsi di un evento
 
@@ -143,6 +143,7 @@ Quando si verifica un'istanza particolare di quel tipo di evento, ad esempio qua
 
 ![Creare un evento per attivare l'inizio della conservazione per le etichette di conservazione basate su eventi](../media/create-event-records-management.png)
 
+È supportato fino a 1 milione di eventi per tenant.
 
 ### <a name="step-6-choose-the-same-event-type-used-by-the-label-in-step-2"></a>Passaggio 6: scegliere lo stesso tipo di evento utilizzato per l'etichetta nel Passaggio 2
 

@@ -119,12 +119,12 @@
               href: microsoft-365-client-support-certificate-based-authentication.md
             - name: Accesso condizionale
               href: microsoft-365-client-support-conditional-access.md
-            - name: Scegliere tra Basic Mobility Security e Intune
-              href: 'https://docs.microsoft.com/office365/securitycompliance/choose-between-mdm-and-intune'
             - name: Autenticazione moderna
               href: microsoft-365-client-support-modern-authentication.md
             - name: Single Sign-On
               href: microsoft-365-client-support-single-sign-on.md
+            - name: Scegliere tra Basic Mobility Security e Intune
+              href: 'https://docs.microsoft.com/office365/securitycompliance/choose-between-mdm-and-intune'
         - name: Autenticazione moderna ibrida
           items:
             - name: Prerequisiti per Skype for Business Server ed Exchange Server
@@ -187,84 +187,6 @@
               href: microsoft-365-isolation-in-microsoft-365-video.md
             - name: Isolamento del tenant in Office Graph e Delve
               href: microsoft-365-isolation-in-graph-and-delve.md
-        - name: Garanzia del servizio
-          items:
-            - name: Garanzia del servizio nel Centro sicurezza e conformità
-              href: 'https://docs.microsoft.com/microsoft-365/compliance/service-assurance'
-            - name: Controlli di accesso amministrativo
-              href: microsoft-365-administrative-access-controls-overview.md
-              items:
-                - name: Monitoraggio e audit dei controlli di accesso
-                  href: microsoft-365-monitoring-and-auditing-access-controls.md
-                - name: Controlli di isolamento
-                  href: microsoft-365-isolation-controls.md
-                - name: Controlli del personale
-                  href: microsoft-365-personnel-controls.md
-                - name: Controlli tecnologia
-                  href: microsoft-365-technology-controls.md
-                - name: Controlli di accesso di Yammer Enterprise
-                  href: microsoft-365-yammer-enterprise-access-controls.md
-            - name: Controllo e creazione di report
-              href: microsoft-365-auditing-and-reporting-overview.md
-              items:
-                - name: Funzionalità di creazione di report
-                  href: microsoft-365-reporting-features.md
-                - name: Funzionalità di ricerca e di eDiscovery
-                  href: microsoft-365-ediscovery-and-search-features.md
-                - name: Log interni per Microsoft 365 Engineering
-                  href: microsoft-365-internal-logging.md
-                - name: Migrazioni delle cassette postali
-                  href: microsoft-365-mailbox-migrations.md
-                - name: API delle attività di gestione
-                  href: microsoft-365-management-activity-api.md
-            - name: Resilienza dei dati
-              href: microsoft-365-data-resiliency-overview.md
-              items:
-                - name: Gestione della corruzione dei dati
-                  href: microsoft-365-dealing-with-data-corruption.md
-                - name: Resilienza dei dati di Exchange Online
-                  href: microsoft-365-exchange-data-resiliency.md
-                - name: Protezione malware e ransomware
-                  href: microsoft-365-malware-and-ransomware-protection.md
-                - name: Monitoraggio e riparazione automatica
-                  href: microsoft-365-monitoring-and-self-healing.md
-            - name: 'Conservazione, eliminazione e distruzione dei dati'
-              href: microsoft-365-data-retention-deletion-and-destruction-overview.md
-              items:
-                - name: Distruzione dei dati
-                  href: microsoft-365-data-destruction.md
-                - name: Immutabilità
-                  href: microsoft-365-data-immutability.md
-                - name: Eliminazione dei dati di Exchange Online
-                  href: microsoft-365-exchange-online-data-deletion.md
-                - name: Eliminazione dei dati di SharePoint Online
-                  href: microsoft-365-sharepoint-online-data-deletion.md
-                - name: Eliminazione dei dati di Skype for Business
-                  href: microsoft-365-skype-data-deletion.md
-            - name: Protezione contro gli attacchi Denial of Service
-              href: microsoft-365-defending-cloud-services-against-dos-attacks.md
-              items:
-                - name: Strategia di Microsoft per la protezione contro gli attacchi Denial of Service
-                  href: microsoft-365-microsoft-dos-defense-strategy.md
-                - name: Principi fondamentali di protezione contro gli attacchi Denial of Service
-                  href: microsoft-365-core-principles-of-defense-against-dos-attacks.md
-            - name: Crittografia nel Microsoft Cloud
-              href: 'https://docs.microsoft.com/microsoft-365/compliance/office-365-encryption-in-the-microsoft-cloud-overview'
-              items:
-                - name: Servizio di crittografia di Microsoft 365
-                  href: 'https://docs.microsoft.com/microsoft-365/compliance/office-365-service-encryption'
-                - name: Crittografia per i dati in transito
-                  href: 'https://docs.microsoft.com/microsoft-365/compliance/office-365-encryption-for-data-in-transit'
-                - name: Funzionalità di crittografia gestite dai clienti
-                  href: 'https://docs.microsoft.com/microsoft-365/compliance/office-365-customer-managed-encryption-features'
-                - name: Protezione e rischi della crittografa
-                  href: 'https://docs.microsoft.com/microsoft-365/compliance/office-365-encryption-risks-and-protections'
-                - name: 'Crittografia per Skype for Business, OneDrive for Business, SharePoint Online ed Exchange Online'
-                  href: 'https://docs.microsoft.com/microsoft-365/compliance/office-365-encryption-for-skype-onedrive-sharepoint-and-exchange'
-                - name: Crittografia in Microsoft Dynamics 365
-                  href: 'https://docs.microsoft.com/microsoft-365/compliance/office-365-encryption-in-microsoft-dynamics-365'
-                - name: Crittografia in Azure
-                  href: 'https://docs.microsoft.com/microsoft-365/compliance/office-365-azure-encryption'
     - name: Distribuire
       items:
         - name: Aggiungere un dominio

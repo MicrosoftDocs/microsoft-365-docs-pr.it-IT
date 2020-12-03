@@ -17,12 +17,12 @@ f1.keywords:
 - NOCSH
 description: Questo articolo fornisce le indicazioni più recenti per ottimizzare in modo sicuro la connettività di rete di Microsoft 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 8036a4759f959a075ad0398e823116491e128c0b
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: a6f104f53abd0a9aa2376b09c93af96d7f8178e8
+ms.sourcegitcommit: d3ca8021f7da00a474ac14aac5f1358204a848f2
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48847013"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49519740"
 ---
 # <a name="microsoft-365-network-connectivity-principles"></a>Principi di connettività di rete di Microsoft 365
 
@@ -67,7 +67,7 @@ L'obiettivo principale della struttura di rete deve essere ridurre al minimo la 
   
 Identificare il traffico di rete di Microsoft 365 è il primo passaggio per poter distinguere tale traffico da quello di rete generico Internet. La connettività di Microsoft 365 può essere ottimizzata implementando una combinazione di approcci come l'ottimizzazione del percorso di rete, regole del firewall, impostazioni del proxy del browser ed esclusione dei dispositivi di controllo di rete per alcuni endpoint.
   
-Le precedenti indicazioni per l'ottimizzazione di Microsoft 365 divideva gli endpoint in due categorie: **Necessario** e **Facoltativo**. Quando sono stati aggiunti endpoint per supportare nuovi servizi e caratteristiche di Microsoft 365, tali sono stati riorganizzati in tre categorie: **Ottimizzare** , **Consentire** , e **Predefinito**. Le linee guida per ogni categoria sono valide per tutti gli endpoint della categoria, semplificando la comprensione e l'implementazione delle ottimizzazioni.
+Le precedenti indicazioni per l'ottimizzazione di Microsoft 365 divideva gli endpoint in due categorie: **Necessario** e **Facoltativo**. Quando sono stati aggiunti endpoint per supportare nuovi servizi e caratteristiche di Microsoft 365, tali sono stati riorganizzati in tre categorie: **Ottimizzare**, **Consentire**, e **Predefinito**. Le linee guida per ogni categoria sono valide per tutti gli endpoint della categoria, semplificando la comprensione e l'implementazione delle ottimizzazioni.
   
 Per altre informazioni sulle categorie e sui metodi di ottimizzazione di Microsoft 365, vedere la sezione [Nuove categorie di endpoint di Office 365](microsoft-365-network-connectivity-principles.md#BKMK_Categories).
   
@@ -150,20 +150,20 @@ Per ulteriori informazioni sui centri dati Microsoft e sulla sicurezza della ret
 ## <a name="new-office-365-endpoint-categories"></a>Nuove categorie di endpoint di Office 365
 <a name="BKMK_Categories"> </a>
 
-Gli endpoint di Office 365 rappresentano un set variegato di indirizzi di rete e subnet. Gli endpoint potrebbero essere URL, indirizzi IP o intervalli di indirizzi IP e alcuni endpoint sono elencati con porte TCP/UDP specifiche. Gli URL possono essere un nome di dominio completo, come *account.office.net* , o un URL con caratteri jolly come *\*.office365.com*.
+Gli endpoint di Office 365 rappresentano un set variegato di indirizzi di rete e subnet. Gli endpoint potrebbero essere URL, indirizzi IP o intervalli di indirizzi IP e alcuni endpoint sono elencati con porte TCP/UDP specifiche. Gli URL possono essere un nome di dominio completo, come *account.office.net*, o un URL con caratteri jolly come *\*.office365.com*.
   
 > [!NOTE]
 > Le posizioni degli endpoint di Office 365 all'interno della rete non sono direttamente correlate alla posizione dei dati del tenant Microsoft 365. Per questo motivo, i clienti devono considerare Microsoft 365 come un servizio distribuito e globale e non devono cercare di bloccare connessioni di rete agli endpoint di Office 365 in base a criteri geografici.
   
 Nelle precedenti indicazioni per la gestione del traffico di Microsoft 365, gli endpoint erano organizzati in due categorie: **necessario** e **facoltativo**.  Agli endpoint all'interno di ogni categoria erano richieste ottimizzazioni diverse a seconda della criticità del servizio e molti clienti sono stati messi a dura prova per giustificare l'applicazione delle stesse ottimizzazioni di rete all'elenco completo di URL e indirizzi IP di Office 365.
   
-Nel nuovo modello, gli endpoint sono suddivisi in tre categorie, **ottimizzare** , **consentire** , e **predefinito** , fornendo un pivot basato sulle priorità su cui focalizzare l'attenzione sugli sforzi per ottimizzare la rete al fine di migliorare le prestazioni e avere un ritorno degli investimenti. Gli endpoint sono consolidati nelle categorie descritte in base alla sensibilità dell'esperienza utente effettiva rispetto alla qualità della rete, al volume e all'inviluppo delle prestazioni degli scenari e alla facilità di implementazione. È possibile applicare le ottimizzazioni consigliate allo stesso modo per tutti gli endpoint di una specifica categoria.
+Nel nuovo modello, gli endpoint sono suddivisi in tre categorie, **ottimizzare**, **consentire**, e **predefinito**, fornendo un pivot basato sulle priorità su cui focalizzare l'attenzione sugli sforzi per ottimizzare la rete al fine di migliorare le prestazioni e avere un ritorno degli investimenti. Gli endpoint sono consolidati nelle categorie descritte in base alla sensibilità dell'esperienza utente effettiva rispetto alla qualità della rete, al volume e all'inviluppo delle prestazioni degli scenari e alla facilità di implementazione. È possibile applicare le ottimizzazioni consigliate allo stesso modo per tutti gli endpoint di una specifica categoria.
   
 - Gli endpoint della categoria **Ottimizzare** sono obbligatori per la connessione a tutti i servizi di Office 365 e rappresentano più del 75% della larghezza di banda, delle connessioni e del volume di dati di Microsoft 365. Questi endpoint rappresentano gli scenari di Office 365 più sensibili alle prestazioni, la latenza e la disponibilità di rete. Tutti gli endpoint sono ospitati in centri dati Microsoft. Si prevede che il tasso di variazione agli endpoint di questa categoria sia molto inferiore rispetto agli endpoint nelle altre due categorie. Questa categoria include un piccolo set, nell'ordine di ~ 10, di URL chiave e una serie definita di sottoreti IP dedicate ai carichi principali di lavoro di Office 365 come Exchange Online, SharePoint Online, Skype for Business Online e Microsoft Teams.
 
     Un elenco ridotto di endpoint critici ben definiti dovrebbe aiutarti a pianificare e implementare le ottimizzazioni di rete di alto valore per queste destinazioni in modo più rapido e semplice.
 
-    Alcuni esempi di endpoint della categoria *Ottimizzare*  sono *https://outlook.office365.com* , *https://\<tenant\>.sharepoint.com* , and *https://\<tenant\>-my.sharepoint.com*.
+    Alcuni esempi di endpoint della categoria *Ottimizzare*  sono *https://outlook.office365.com*, *https://\<tenant\>.sharepoint.com*, and *https://\<tenant\>-my.sharepoint.com*.
 
     I metodi di ottimizzazione includono:
 
@@ -228,7 +228,7 @@ Per raggiungere un approccio olistico alla sicurezza avanzata, è necessario con
   - Assicura l'uscita locale per il traffico di Microsoft 365
 - È possibile indirizzare i miglioramenti in modo incrementale come descritto nella sezione [Ottimizzazione incrementale](microsoft-365-network-connectivity-principles.md#BKMK_IncOpt). Alcune tecniche di ottimizzazione possono offrire rapporti costi/benefici migliori in base all'architettura di rete, ed è necessario scegliere ottimizzazioni che siano più importanti per la propria organizzazione.
 
-Per ulteriori informazioni sulla sicurezza e conformità di Microsoft 365, vedere l’articolo [Sicurezza Microsoft 365](https://docs.microsoft.com/microsoft-365/security) and [Sicurezza Microsoft 365](https://docs.microsoft.com/microsoft-365/compliance).
+Per ulteriori informazioni sulla sicurezza e conformità di Microsoft 365, vedere l’articolo [Sicurezza Microsoft 365](https://docs.microsoft.com/microsoft-365/security) e [Conformità Microsoft 365](https://docs.microsoft.com/microsoft-365/compliance).
   
 ## <a name="incremental-optimization"></a>Ottimizzazione incrementale
 <a name="BKMK_IncOpt"> </a>
