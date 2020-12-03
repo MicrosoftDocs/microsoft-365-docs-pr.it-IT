@@ -19,16 +19,16 @@ search.appverid:
 - MET150
 - MOE150
 description: Informazioni dettagliate sul punteggio di produttività delle app di Microsoft 365 Apps Health-Technology.
-ms.openlocfilehash: c38f2109ed41377cfccb9838c95dbfbebbfd322a
-ms.sourcegitcommit: 2d3e85173c65a9e0ce92624a80ed7a9839f5b8bd
+ms.openlocfilehash: a84e919ce01775b8791ed7a1992464e4f52c7234
+ms.sourcegitcommit: a566ef236c85edfd566c8c3f859b80f9e5ce0473
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49123512"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49562944"
 ---
 # <a name="microsoft-365-apps-health--technology-experiences"></a>Microsoft 365 Apps Health – esperienze tecnologiche
 
-Il Punteggio di produttività consente alle organizzazioni di trasformare la modalità di utilizzo delle metriche su come gli utenti utilizzano le app di Microsoft 365 e le esperienze tecnologiche di supporto. Lo Score riflette le prestazioni dell'organizzazione&#39;s per le categorie di utenti e tecnologie e confronta il tuo punteggio con organizzazioni come la tua. La categoria Health Apps è parte integrante delle misurazioni che rientrano nelle esperienze tecnologiche. Per ulteriori informazioni, vedere the [Productivity Score Overview](productivity-score.md) .
+Produttività Score fornisce informazioni dettagliate sul percorso di trasformazione digitale dell'organizzazione tramite l'utilizzo di Microsoft 365 e le esperienze tecnologiche che lo supportano. Il Punteggio dell'organizzazione riflette le misure relative a utenti e tecnologie e può essere paragonato ai benchmark di organizzazioni simili ai propri. La categoria Health Apps è parte integrante delle misurazioni che rientrano nelle esperienze tecnologiche. Per ulteriori informazioni, vedere la [Panoramica del Punteggio di produttività](productivity-score.md) e leggere l' [informativa sulla privacy di Microsoft](https://privacy.microsoft.com/privacystatement).
 
 ## <a name="why-your-organization39s-microsoft-365-apps-health-score-matters"></a>Perché l'organizzazione&#39;s Microsoft 365 Apps Health Score Matters
 
@@ -101,11 +101,11 @@ Questo grafico Visualizza la linea di tendenza dei dispositivi che eseguono le v
 
 :::image type="content" source="../../media/trendline-devices-supportedversions.png" alt-text="Grafico in cui viene visualizzato il numero di dispositivi che eseguono le versioni supportate e più recenti delle app nel tempo.":::
 
-## <a name="people-in-your-organization"></a>Utenti dell'organizzazione
+## <a name="devices-in-your-organization"></a>Dispositivi nell'organizzazione
 
 In questa sezione viene illustrato come intervenire sulle metriche su cui si desidera concentrarsi, fornendo informazioni rilevanti a tutte le metriche per le esperienze tecnologiche di Microsoft 365 Apps.
 
-Le colonne seguenti sono presentate nella tabella a livello di utente:
+Le colonne seguenti sono illustrate nella tabella a livello di canale/versione:
 
 - **Canale** : Current Microsoft 365 Apps Channel sui dispositivi.
 - **Stato:**   Le app Microsoft 365 supportano lo stato dei dispositivi basati sul canale e sulla versione correnti.

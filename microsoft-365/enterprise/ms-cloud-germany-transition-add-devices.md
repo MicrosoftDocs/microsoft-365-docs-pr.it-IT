@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 'Riepilogo: informazioni aggiuntive sui servizi per il passaggio da Microsoft Cloud Germany (Microsoft Cloud Deutschland) a servizi di Office 365 nella nuova area datacenter tedesca.'
-ms.openlocfilehash: da05a3c2eb6a8d579c53d403a1ef575c389eda12
-ms.sourcegitcommit: 38d828ae8d4350ae774a939c8decf30cb36c3bea
+ms.openlocfilehash: 941b836871f4ffb7f39f6e144675e9ee15510270
+ms.sourcegitcommit: ff1f0a97e9d43bc786f04d2ea7e01695531b9f28
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 12/02/2020
-ms.locfileid: "49551954"
+ms.locfileid: "49560858"
 ---
 # <a name="additional-device-information-for-the-migration-from-microsoft-cloud-deutschland"></a>Informazioni aggiuntive sul dispositivo per la migrazione da Microsoft Cloud Deutschland
 
@@ -136,6 +136,12 @@ Il dispositivo viene automaticamente aggiunto ad Azure AD senza l'intervento di 
 
 
 ## <a name="windows-azure-ad-join"></a>Join di Windows Azure AD
+
+**Importante:** L'entità servizio di Intune verrà abilitata dopo la migrazione del commercio, che implica l'attivazione della registrazione dei dispositivi di Azure AD. Se la registrazione del dispositivo Azure AD è stata bloccata prima della migrazione, è necessario disabilitare l'entità servizio di Intune con PowerShell per disabilitare di nuovo la registrazione del dispositivo Azure AD con il portale di Azure AD. È possibile disabilitare l'entità servizio di Intune con questo comando nel modulo di Azure Active Directory PowerShell per Graph.
+
+```powershell
+Get-AzureADServicePrincipal -All:$true |Where-object -Property AppId -eq "0000000a-0000-0000-c000-000000000000" | Set-AzureADServicePrincipal -AccountEnabled:$false
+```
 
 ### <a name="unjoin"></a>Separazione
 

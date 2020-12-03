@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 ms.assetid: 5b4ba843-24b8-4526-8e1f-f9b9eab89d06
 description: Informazioni su come spostare la propria azienda da Microsoft 365 Business Premium a Microsoft 365 E3.
-ms.openlocfilehash: 3f840a27cdcf50bba7710681135f6c2e241ad14b
-ms.sourcegitcommit: 001e64f89f9c3cd6bbd4a25459f5bee3b966820c
+ms.openlocfilehash: 3f1bb9591e1bd2bac49326325ce6c8c2d6778497
+ms.sourcegitcommit: c1dd5be42fe0c5dcc7c05817c941edd9076febf8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "49367056"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "49558240"
 ---
 # <a name="migrate-from-microsoft-365-business-premium-to-microsoft-365-e3"></a>Eseguire la migrazione da Microsoft 365 Business Premium a Microsoft 365 E3
 
@@ -51,7 +51,7 @@ In questa tabella vengono illustrate le differenze tra Microsoft 365 Business Pr
 |:-------|:-----|:-----|
 | **Locale**        | | | 
 | Windows 10    | Windows 10 Business  |     Windows 10 Enterprise E3| 
-| App di Office *    | [Microsoft 365 Apps for business](#office-365-business)    | Microsoft 365 Apps for enterprise | 
+| App di Office *    | [App Microsoft 365 per le aziende](#office-365-business)    | Microsoft 365 Apps for enterprise | 
 | **App per la produttività del cloud**        | | | 
 | Exchange Online e Outlook    | 50 GB di spazio di archiviazione per cassetta postale e archiviazione Exchange Online illimitata    | 100 GB di spazio di archiviazione per cassetta postale e archiviazione Exchange Online illimitata | 
 | Teams    | ![Incluso in Microsoft 365 Business Premium](../media/check-mark.png)    | ![Incluso in Microsoft 365 E3](../media/check-mark.png) | 
@@ -62,7 +62,7 @@ In questa tabella vengono illustrate le differenze tra Microsoft 365 Business Pr
 | Funzionalità di riduzione della superficie di attacco    | [Vedere questo elenco](#threat-protection) | Gestione aziendale dell'isolamento basato sull'hardware per Microsoft Edge | 
 | Difensore per Office 365 piano 1 | ![Incluso in Microsoft 365 Business Premium](../media/check-mark.png)    | Non incluso, ma può essere aggiunto | 
 | **Gestione delle identità**        | | | 
-| Reimpostazione della password in modalità self-service per gli account di Azure Active Directory (Azure AD), l'autenticazione a più fattori di Azure (AMF), l'accesso condizionale, il writeback delle password per le identità locali|     ![Incluso in Microsoft 365 Business Premium](../media/check-mark.png)    | ![Incluso in Microsoft 365 E3](../media/check-mark.png) | 
+| Reimpostazione della password in modalità self-service per gli account di Azure Active Directory (Azure AD), autenticazione a più fattori di Azure AD, accesso condizionale, writeback delle password per le identità locali|     ![Incluso in Microsoft 365 Business Premium](../media/check-mark.png)    | ![Incluso in Microsoft 365 E3](../media/check-mark.png) | 
 | Individuazione delle app Cloud, Azure AD Connect Health    |     | ![Incluso in Microsoft 365 E3](../media/check-mark.png) | 
 | Azure AD Office 365 Apps Single Sign-On (SSO): 10 app per utente (app SaaS Galleria come Salesforce) * | ![Incluso in Microsoft 365 Business Premium](../media/check-mark.png)    | ![Incluso in Microsoft 365 E3](../media/check-mark.png) | 
 | Azure AD Premium 1 SSO: No Limit (app locali attraverso il proxy di applicazione Azure AD e le app non di raccolta utilizzando Self-Service modelli di integrazione delle app)    |     | ![Incluso in Microsoft 365 E3](../media/check-mark.png) | 
@@ -141,7 +141,7 @@ Non è necessario apportare modifiche alla configurazione di Intune corrente pri
 Microsoft 365 Business Premium include Windows 10 business, che è possibile installare con Windows Autopilot. Quando si esegue la migrazione a Microsoft 365 E3, ogni licenza utente include Windows 10 Enterprise E3, che è possibile installare anche con Windows Autopilot.
 
 <a name="office-365-business"></a>
-###  <a name="microsoft-365-apps-for-business"></a>Microsoft 365 Apps for business
+###  <a name="microsoft-365-apps-for-business"></a>App Microsoft 365 per le aziende
 
 Il client Microsoft 365 Apps for business installato nei dispositivi inizierà automaticamente a utilizzare le funzionalità di Microsoft 365 Apps for Enterprise. Dopo la migrazione, è ora possibile utilizzare:
 

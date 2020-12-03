@@ -21,12 +21,12 @@ search.appverid:
 - GEA150
 ms.assetid: a36e5a52-4df2-479e-bb97-9e67b8483e10
 description: Informazioni su come apportare modifiche al profilo dell'organizzazione, ad esempio il nome dell'organizzazione, l'indirizzo, il telefono, il contatto tecnico e la posta elettronica.
-ms.openlocfilehash: 17202bb35e6d5e7d40b135f65467aef111aad070
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 19769c827284000e1ad0e86e3666d9980322b6a9
+ms.sourcegitcommit: ff1f0a97e9d43bc786f04d2ea7e01695531b9f28
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48645108"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "49560857"
 ---
 # <a name="change-your-organizations-address-technical-contact-and-more"></a>Modificare l'indirizzo dell'organizzazione, il contatto tecnico e altre informazioni
 
@@ -73,14 +73,15 @@ Come amministratore, è possibile modificare l'indirizzo di posta elettronica al
 
 1. Accedere all'interfaccia di <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">amministrazione di Microsoft 365</a>.
 
-2. Nell'intestazione, selezionare l'icona del profilo, quindi selezionare **l'account personale**.
+2. Nell'intestazione, selezionare l'icona del profilo, quindi selezionare **Visualizza account**.
 
-3. Sulla sinistra, seleziona **informazioni personali**.
+3. Sulla sinistra, selezionare **informazioni di sicurezza**.
 
-4. Nella scheda **Dettagli contatto** selezionare **modifica**.
+4. Nella sezione posta elettronica selezionare **Cambia**
 
-5. Modificare l'indirizzo nella casella di **posta elettronica alternativa** , quindi selezionare **Salva**.
+5. Modificare l'indirizzo nella casella di **posta elettronica alternativa** , quindi selezionare **Avanti**.
 
+6. Immettere il codice inviato all'indirizzo di posta elettronica alternativo e selezionare **OK** per verificare la modifica.
 Per ulteriori informazioni sulla modifica di altri dati del profilo, vedere [modificare le preferenze di contatto](change-contact-preferences.md) o [modificare la lingua di visualizzazione](https://support.microsoft.com/office/6f238bff-5252-441e-b32b-655d5d85d15b.aspx).
   
 ### <a name="email-signatures"></a>Firme di posta elettronica

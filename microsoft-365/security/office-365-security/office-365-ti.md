@@ -20,12 +20,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Informazioni sulle funzionalità di ricerca e risposta alle minacce in Microsoft Defender per Office 365 piano.
-ms.openlocfilehash: 6dba883a910306b548f1880be00ad45207da27dd
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 7ae61e7ea70d8be5c31ec12443c8943f6e54bcf4
+ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48845793"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49561256"
 ---
 # <a name="threat-investigation-and-response"></a>Analisi e risposta alle minacce
 
@@ -33,12 +33,13 @@ ms.locfileid: "48845793"
 
 
 Le funzionalità di ricerca e risposta alle minacce in [Microsoft Defender per Office 365](office-365-atp.md) aiutano gli analisti e gli amministratori della protezione a proteggere gli utenti di Microsoft 365 per le aziende dell'organizzazione:
+
 - Semplificare l'identificazione, il monitoraggio e la comprensione di attacchi cibernetici
 - Assistenza per l'indirizzamento rapido delle minacce in Exchange Online, SharePoint Online, OneDrive for business e Microsoft Teams
 - Fornire informazioni e conoscenze per aiutare le operazioni di sicurezza a impedire la attacchi cibernetici alla propria organizzazione
 - Utilizzo di [indagini e risposte automatiche in Office 365](automated-investigation-response-office.md) per minacce critiche basate sulla posta elettronica
-    
-Le funzionalità di ricerca e di risposta alle minacce consentono di approfondire i rischi e le azioni di risposta correlate disponibili nel centro sicurezza e &amp; conformità. Queste informazioni possono aiutare il team di sicurezza dell'organizzazione a proteggere gli utenti dagli attacchi basati su file o posta elettronica. Le funzionalità consentono di monitorare i segnali e raccogliere dati provenienti da più origini, ad esempio attività utente, autenticazione, posta elettronica, PC compromessi e incidenti di sicurezza. I decision maker aziendali e il team delle operazioni di sicurezza possono utilizzare queste informazioni per comprendere e rispondere alle minacce per la propria organizzazione e proteggere la propria proprietà intellettuale.
+
+Le funzionalità di ricerca e di risposta alle minacce forniscono informazioni dettagliate sui rischi e sulle azioni di risposta correlate disponibili nel centro sicurezza & conformità. Queste informazioni possono aiutare il team di sicurezza dell'organizzazione a proteggere gli utenti dagli attacchi basati su file o posta elettronica. Le funzionalità consentono di monitorare i segnali e raccogliere dati provenienti da più origini, ad esempio attività utente, autenticazione, posta elettronica, PC compromessi e incidenti di sicurezza. I decision maker aziendali e il team delle operazioni di sicurezza possono utilizzare queste informazioni per comprendere e rispondere alle minacce per la propria organizzazione e proteggere la propria proprietà intellettuale.
 
 ## <a name="get-acquainted-with-threat-investigation-and-response-tools"></a>Familiarizzare con gli strumenti di ricerca e di risposta alle minacce
 
@@ -53,19 +54,19 @@ L'analisi delle minacce e la superficie delle funzionalità di risposta nel cent
 ### <a name="threat-dashboard"></a>Dashboard di minacce
 
 Utilizzare il dashboard di minacce (indicato anche come [dashboard di sicurezza](security-dashboard.md)) per vedere rapidamente quali minacce sono state affrontate e come modo visivo per segnalare ai responsabili delle decisioni aziendali come i servizi di Microsoft 365 proteggono l'azienda.
-  
+
 ![Dashboard di minacce](../../media/ce013a31-3f80-4d09-bb95-bfb7623b8bc4.png)
-  
-Per visualizzare e utilizzare questo dashboard, nel centro sicurezza &amp; e conformità, accedere a **Threat Management** \> **Dashboard**.
-  
+
+Per visualizzare e utilizzare questo dashboard, nel centro sicurezza & conformità, accedere a **Threat Management** \> **Dashboard**.
+
 ### <a name="threat-explorer"></a>Esplora minacce
 
 Utilizzare [Esplora minacce (e rilevamenti in tempo reale)](threat-explorer.md) per analizzare le minacce, vedere il volume degli attacchi nel tempo e analizzare i dati dalle famiglie di minacce, dall'infrastruttura di attacco e altro ancora. L'esploratore di minacce (noto anche come esploratore) è il punto di partenza per il flusso di lavoro dell'analisi di qualsiasi analista di sicurezza.
 
 ![Esplora minacce](../../media/7a7cecee-17f0-4134-bcb8-7cee3f3c3890.png)
-  
-Per visualizzare e utilizzare questo report, nel &amp; centro conformità sicurezza accedere a **gestione minacce** \> **Explorer**.
-  
+
+Per visualizzare e utilizzare questo report, nel centro sicurezza & conformità accedere a **gestione minacce** \> **Explorer**.
+
 ### <a name="incidents"></a>Eventi imprevisti
 
 Utilizzare l'elenco degli eventi non consentiti (anche questo è denominato indagini) per visualizzare un elenco degli incidenti di sicurezza in volo. Gli eventi non consentiti vengono utilizzati per tenere conto di minacce quali messaggi di posta elettronica sospetti e per eseguire ulteriori indagini e correggere i problemi.
@@ -101,7 +102,7 @@ Microsoft Defender per Office 365 utilizza il controllo di accesso basato sui ru
 > [!TIP]
 > Anche se alcuni ruoli, ad esempio amministratore della sicurezza, possono essere assegnati nel centro sicurezza & Compliance, considerare l'utilizzo dell'interfaccia di amministrazione di Microsoft 365 o di Azure Active Directory. Per informazioni sui ruoli, sui gruppi di ruoli e sulle autorizzazioni, vedere le risorse seguenti:
 >
-> - [Autorizzazioni nel centro sicurezza e &amp; conformità](permissions-in-the-security-and-compliance-center.md)
+> - [Autorizzazioni nel Centro sicurezza e conformità](permissions-in-the-security-and-compliance-center.md)
 >
 > - [Autorizzazioni del ruolo di amministratore in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)
 

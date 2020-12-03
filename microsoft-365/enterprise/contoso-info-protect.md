@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Comprendere in che modo Contoso utilizza le funzionalità di protezione delle informazioni in Microsoft 365 per l'organizzazione per proteggere le proprie risorse digitali nel cloud.
-ms.openlocfilehash: a1aa08a20d284d3a003f4a406c37f2107ce19bd1
-ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
+ms.openlocfilehash: 7cc51110a0bc4c87e57e71b2ddb42aa0dbaa288d
+ms.sourcegitcommit: c1dd5be42fe0c5dcc7c05817c941edd9076febf8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "48754602"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "49558505"
 ---
 # <a name="information-protection-for-the-contoso-corporation"></a>Protezione delle informazioni per Contoso Corporation
 
@@ -34,7 +34,7 @@ Contoso ha eseguito un'analisi dei dati e ha determinato i livelli di classifica
 
 | Livello 1: base | Livello 2: dati sensibili | Livello 3: dati altamente regolamentati |
 |:-------|:-----|:-----|
-| I dati vengono crittografati e sono disponibili solo per gli utenti autenticati.<BR> <BR> Fornito per tutti i dati archiviati in locale e in archiviazione e carichi di lavoro basati sul cloud. I dati vengono crittografati mentre risiede nel servizio e in transito tra il servizio e i dispositivi client. <BR><BR>Esempi di dati di livello 1 sono le normali comunicazioni aziendali (posta elettronica) e i file dei dipendenti di amministrazione, vendita e supporto. | Livello 1 più autenticazione avanzata e protezione da perdita dei dati.<BR> <BR> L'autenticazione avanzata include Azure Multi-Factor Authentication (MFA) con convalida SMS. La prevenzione della perdita di dati garantisce che le informazioni sensibili o critiche non viaggino all'esterno del cloud Microsoft.<BR><BR>Esempi di dati di livello 2 sono le informazioni legali e finanziarie e i dati di ricerca e sviluppo per i nuovi prodotti. | Livello 2 più i livelli più elevati di crittografia, autenticazione e controllo.<BR><BR>I livelli di crittografia più elevati per i dati statici e nel cloud, conformi alle norme internazionali, combinati con MFA con smart card e il controllo granulare, nonché avvisi.<BR> <BR>Esempi di dati di livello 3 sono le informazioni personali di clienti e partner, le specifiche ingegneristiche dei prodotti e le tecniche di produzione proprietarie.  |
+| I dati vengono crittografati e sono disponibili solo per gli utenti autenticati.<BR> <BR> Fornito per tutti i dati archiviati in locale e in archiviazione e carichi di lavoro basati sul cloud. I dati vengono crittografati mentre risiede nel servizio e in transito tra il servizio e i dispositivi client. <BR><BR>Esempi di dati di livello 1 sono le normali comunicazioni aziendali (posta elettronica) e i file dei dipendenti di amministrazione, vendita e supporto. | Livello 1 più autenticazione avanzata e protezione da perdita dei dati.<BR> <BR> L'autenticazione avanzata include l'autenticazione di Azure AD multi-factor authentication (AMF) con la convalida SMS. La prevenzione della perdita di dati garantisce che le informazioni sensibili o critiche non viaggino all'esterno del cloud Microsoft.<BR><BR>Esempi di dati di livello 2 sono le informazioni legali e finanziarie e i dati di ricerca e sviluppo per i nuovi prodotti. | Livello 2 più i livelli più elevati di crittografia, autenticazione e controllo.<BR><BR>I livelli di crittografia più elevati per i dati statici e nel cloud, conformi alle norme internazionali, combinati con MFA con smart card e il controllo granulare, nonché avvisi.<BR> <BR>Esempi di dati di livello 3 sono le informazioni personali di clienti e partner, le specifiche ingegneristiche dei prodotti e le tecniche di produzione proprietarie.  |
 ||||
 
 ## <a name="contoso-information-policies"></a>Criteri delle informazioni di contoso

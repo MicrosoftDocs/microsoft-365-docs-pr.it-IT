@@ -14,19 +14,19 @@ search.appverid: MET150
 description: Correzione delle minacce
 appliesto:
 - Microsoft 365 Defender
-ms.openlocfilehash: 5568a296697c7cdbbada333d45f498a2876603f9
-ms.sourcegitcommit: 5480982967a90ca3060a59676a6b29155f2de861
+ms.openlocfilehash: 4adabe3e85b2bff26167bfad92a9a7fcbf24e58e
+ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49350735"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49561292"
 ---
 # <a name="remediate-malicious-email-delivered-in-office-365"></a>Rimediare la posta elettronica dannosa recapitata in Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-La correzione comporta l'esecuzione di un'azione prescritta nei confronti di una minaccia. I messaggi di posta elettronica dannosi inviati all'organizzazione possono essere rimossi dal sistema, tramite l'AutoPurge (ZAP) zero-hour o dai team di sicurezza mediante azioni correttive come *Sposta in posta in arrivo*, sposta su posta *indesiderata*, *Sposta su elementi eliminati*, Elimina *o Elimina* *temporaneamente*. Microsoft Defender per Office 365 P2/E5 consente ai team di sicurezza di correggere le minacce nelle funzionalità di posta elettronica e collaborazione tramite l'analisi manuale e automatizzata.
+La correzione comporta l'esecuzione di un'azione prescritta nei confronti di una minaccia. I messaggi di posta elettronica dannosi inviati all'organizzazione possono essere rimossi dal sistema, tramite lo zapping automatico zero-hour (ZAP) o dai team di sicurezza tramite azioni correttive come *Sposta in posta in arrivo*, *Sposta su posta indesiderata*, *Sposta su elementi eliminati*, Elimina o Elimina *temporaneamente* *.* Microsoft Defender per Office 365 P2/E5 consente ai team di sicurezza di correggere le minacce nelle funzionalità di posta elettronica e collaborazione tramite l'analisi manuale e automatizzata.
 
 > [!NOTE]
 > Per correggere il messaggio di posta elettronica dannoso, i team di sicurezza devono essere assegnati al ruolo di *ricerca ed eliminazione* . L'assegnazione di ruolo viene fatta tramite le autorizzazioni nel centro sicurezza e conformità.

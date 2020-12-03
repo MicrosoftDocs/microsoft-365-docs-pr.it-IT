@@ -19,12 +19,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: In questo articolo viene illustrato come utilizzare il portale di esclusione per rimuovere se stessi dall'elenco dei mittenti bloccati di Microsoft 365.
-ms.openlocfilehash: 637b610d0dd621e6d922d23354aead8e3824ad6a
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: f4e7bcc13ac6c133880eb0ebe69ba3f724d0a84e
+ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48445532"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49561424"
 ---
 # <a name="use-the-delist-portal-to-remove-yourself-from-the-blocked-senders-list"></a>Usare il portale di esclusione per rimuoversi dall'elenco dei mittenti bloccati
 
@@ -39,13 +39,13 @@ Microsoft utilizza l'elenco dei mittenti bloccati per proteggere i propri client
 
 Gli utenti scoprono di essere stati aggiunti all'elenco quando ricevono una risposta a un messaggio di posta elettronica che include un errore simile a quanto segue:
 
-> 550 5.7.606-649 Access Denied, Banned Inviing IP [_indirizzo IP_]; Per richiedere la rimozione da questo elenco https://sender.office.com/ , visitare e seguire le indicazioni. Per ulteriori informazioni [, vedere rapporti di mancato recapito della posta elettronica in Exchange Online](https://docs.microsoft.com/Exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/non-delivery-reports-in-exchange-online).
+> 550 5.7.606-649 Access Denied, Banned Inviing IP [_indirizzo IP_]; Per richiedere la rimozione da questo elenco <https://sender.office.com/> , visitare e seguire le indicazioni. Per ulteriori informazioni [, vedere rapporti di mancato recapito della posta elettronica in Exchange Online](https://docs.microsoft.com/Exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/non-delivery-reports-in-exchange-online).
 
 _IP address_ è l'indirizzo IP del computer in cui è in esecuzione il server di posta.
 
 ### <a name="to-use-delist-portal-to-remove-yourself-from-the-blocked-senders-list"></a>Per utilizzare il portale di delist per rimuovere se stessi dall'elenco dei mittenti bloccati
 
-1. In un browser Web, andare a [https://sender.office.com](https://sender.office.com).
+1. In un browser Web, andare a <https://sender.office.com>.
 
 2. Seguire le istruzioni visualizzate sulla pagina. Accertarsi di utilizzare l'indirizzo di posta elettronica al quale è stato recapitato il messaggio di errore e l'indirizzo IP specificato nel messaggio di errore. È possibile immettere solo un indirizzo di posta elettronica e un indirizzo IP per accesso.
 

@@ -14,14 +14,14 @@ search.appverid: ''
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-description: Informazioni su come utilizzare l'esploratore di minacce e il rapporto sui rilevamenti in tempo reale per esaminare e rispondere alle minacce nel centro sicurezza e &amp; conformità.
+description: Informazioni su come utilizzare l'esploratore di minacce e il rapporto sui rilevamenti in tempo reale per esaminare e rispondere alle minacce nel centro sicurezza & conformità.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f9412350384c0b2092c376db371e93fa5295c454
-ms.sourcegitcommit: 001e64f89f9c3cd6bbd4a25459f5bee3b966820c
+ms.openlocfilehash: 551425bf3e6b2c4fbb429dd6698b4f85e30d1ebe
+ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "49367190"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49561232"
 ---
 # <a name="views-in-threat-explorer-and-real-time-detections"></a>Visualizzazioni in Esplora minacce e rilevamenti in tempo reale
 
@@ -30,7 +30,7 @@ ms.locfileid: "49367190"
 
 ![Esplora minacce](../../media/ThreatExplorerFirstOpened.png)
 
-[Esplora minacce](threat-explorer.md) (e il rapporto rilevamenti in tempo reale) è uno strumento potente e quasi in tempo reale che consente ai team di operazioni di sicurezza di analizzare e rispondere alle minacce nel centro sicurezza e &amp; conformità. Explorer (e il rapporto rilevamenti in tempo reale) Visualizza le informazioni sui sospetti malware e phishing nei messaggi di posta elettronica e nei file di Office 365, oltre ad altre minacce e rischi per la sicurezza per l'organizzazione.
+[Esplora minacce](threat-explorer.md) (e il rapporto rilevamenti in tempo reale) è uno strumento potente e quasi in tempo reale che consente ai team di operazioni di sicurezza di analizzare e rispondere alle minacce nel centro sicurezza & conformità. Explorer (e il rapporto rilevamenti in tempo reale) Visualizza le informazioni sui sospetti malware e phishing nei messaggi di posta elettronica e nei file di Office 365, oltre ad altre minacce e rischi per la sicurezza per l'organizzazione.
 
 - Se si dispone [di Microsoft Defender per Office 365](office-365-atp.md) piano 2, è necessario disporre di Esplora risorse.
 - Se si dispone di Microsoft Defender per Office 365 piano 1, è possibile ottenere rilevamenti in tempo reale.

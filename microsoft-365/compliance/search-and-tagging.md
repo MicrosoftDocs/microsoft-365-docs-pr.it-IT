@@ -2,8 +2,8 @@
 title: Ricerca e tagging
 f1.keywords:
 - NOCSH
-ms.author: chrfox
-author: chrfox
+ms.author: markjjo
+author: markjjo
 manager: laurawi
 titleSuffix: Office 365
 audience: ITPro
@@ -15,12 +15,12 @@ search.appverid:
 ms.assetid: 22f5adad-1bc0-460d-94a9-8732929f5b99
 description: In Advanced eDiscovery, il modulo di ricerca e tagging consente di cercare, visualizzare in anteprima e organizzare i documenti nel caso. Attualmente, questo modulo è in versione beta.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: eba95f4832e674bae0a26d3fa8466b0118a9715d
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 7afa106d07e60dfc297b90c25965dafeeb7337a7
+ms.sourcegitcommit: a566ef236c85edfd566c8c3f859b80f9e5ce0473
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44818895"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49562933"
 ---
 # <a name="search-and-tagging"></a>Ricerca e tagging
 
@@ -64,9 +64,9 @@ Nella tabella seguente sono elencate le proprietà che è possibile cercare util
 |**relevancetag_ [TagName]**\*\* <br/> | Se un elemento è stato contrassegnato manualmente per la pertinenza, il tag definito da [TagName]. <br/> |
 |||
 
-\*Disponibile solo se è stato eseguito il modulo temi.
+\* Disponibile solo se è stato eseguito il modulo temi.
 
-\*\*Disponibile solo se è stato eseguito il modulo pertinenza.
+\*\* Disponibile solo se è stato eseguito il modulo pertinenza.
 
 In alternativa, è possibile utilizzare una scheda di condizione nello strumento di ricerca di eDiscovery avanzato per aggiungere una condizione (per le proprietà selezionate) a una query di ricerca. Nella schermata seguente vengono riportate le condizioni che è possibile aggiungere a una query. La colonna **gruppo** indica se la proprietà si applica ai messaggi di posta elettronica, ai documenti del sito o a entrambi (indicati dal valore *comune*). In questa colonna vengono inoltre identificate le proprietà disponibili per la ricerca che possono essere eseguite dopo l'esecuzione del modulo pertinenza.
 

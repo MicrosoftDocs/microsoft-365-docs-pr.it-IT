@@ -15,12 +15,12 @@ ms.collection:
 - M365-security-compliance
 - remotework
 description: Proteggere la posta elettronica e i dati aziendali da minacce informatiche, tra cui ransomware, phishing e allegati dannosi.
-ms.openlocfilehash: 8f170079a5542f703376139cdd6ec4550712d0fd
-ms.sourcegitcommit: dab50e1cc5bba920720b80033c93457f5ca1c330
+ms.openlocfilehash: df6d837c31244efb1b6cea804972601acdb5dc17
+ms.sourcegitcommit: c1dd5be42fe0c5dcc7c05817c941edd9076febf8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "48944384"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "49558539"
 ---
 # <a name="top-12-tasks-for-security-teams-to-support-working-from-home"></a>Top 12 attività per i team di sicurezza per il supporto di lavoro da casa
 
@@ -42,11 +42,11 @@ Per i clienti che utilizzano i piani aziendali, Microsoft consiglia di completar
 
 |Passaggio|Attività|Tutti i piani di Office 365 Enterprise|Microsoft 365 E3|Microsoft 365 E5|
 |---|---|---|---|---|
-|1 |[Abilitare l'autenticazione a più fattori di Azure (AMF)](#1-enable-azure-multi-factor-authentication-mfa)|![Incluso](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Incluso](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Incluso](../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|2|[Protezione contro le minacce](#2-protect-against-threats)|![Incluso](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Incluso](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Incluso](../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|3|[Configurare Microsoft Defender per Office 365](#3-configure-microsoft-defender-for-office-365)|||![Incluso](../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|1 |[Abilitare l'autenticazione a più fattori di Azure AD (AMF)](#1-enable-azure-ad-multi-factor-authentication-mfa)|![Incluso](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Incluso](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Incluso](../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|2 |[Protezione contro le minacce](#2-protect-against-threats)|![Incluso](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Incluso](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Incluso](../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|3 |[Configurare Microsoft Defender per Office 365](#3-configure-microsoft-defender-for-office-365)|||![Incluso](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |4 |[Configurare Microsoft Defender per l'identità](#4-configure-microsoft-defender-for-identity)|||![Incluso](../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|5 |[Attivare Microsoft 365 Defender](#5-turn-on-microsoft-365-defender)|||![Incluso](../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|5 |[Attiva Microsoft 365 Defender](#5-turn-on-microsoft-365-defender)|||![Incluso](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |6 |[Configurare la protezione delle app per dispositivi mobili di Intune per telefoni e Tablet](#6-configure-intune-mobile-app-protection-for-phones-and-tablets)||![Incluso](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Incluso](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |7 |[Configurare il master e l'accesso condizionale per gli utenti, inclusa la protezione delle app di Intune](#7-configure-mfa-and-conditional-access-for-guests-including-intune-mobile-app-protection)||![Incluso](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Incluso](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |8 |[Registrare i PC nella gestione dei dispositivi e richiedere PC conformi](#8-enroll-pcs-into-device-management-and-require-compliant-pcs)||![Incluso](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Incluso](../media/d238e041-6854-4a78-9141-049224df0795.png)|
@@ -60,7 +60,7 @@ Prima di iniziare, controllare il [Punteggio microsoft 365 Secure](https://docs.
 
 ![Schermata di Microsoft Secure Score](../media/secure-score.png)
 
-## <a name="1-enable-azure-multi-factor-authentication-mfa"></a>1: abilitare l'autenticazione a più fattori di Azure (AMF)
+## <a name="1-enable-azure-ad-multi-factor-authentication-mfa"></a>1: abilitare l'autenticazione a più fattori di Azure AD (AMF)
 
 La cosa migliore che è possibile fare per migliorare la sicurezza per i dipendenti che lavorano da casa è l'attivazione dell'AMF. Se non si dispone già di processi, trattarlo come un pilota di emergenza e assicurarsi di disporre di personale di supporto pronto per aiutare i dipendenti che si bloccano. Poiché probabilmente non è possibile distribuire dispositivi di sicurezza hardware, utilizzare la biometria di Windows Hello e le app di autenticazione dello smartphone come Microsoft Authenticator.
 
@@ -112,7 +112,7 @@ L'amministratore globale può configurare queste protezioni:
 
 ## <a name="4-configure-microsoft-defender-for-identity"></a>4: configurare Microsoft Defender per Identity
 
-[Microsoft Defender per identità](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp) è una soluzione di sicurezza basata sul cloud che sfrutta i segnali di Active Directory locali per identificare, rilevare e analizzare minacce avanzate, identità compromesse ed azioni Insider dannose dirette all'organizzazione. Si concentrerà su questo punto perché protegge l'infrastruttura di on-premi e la cloud, non ha dipendenze o prerequisiti e può fornire vantaggi immediati.
+[Microsoft Defender for Identity](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp) è una soluzione di sicurezza basata sul cloud che utilizza i segnali di Active Directory locali per identificare, rilevare ed esaminare le minacce avanzate, le identità compromesse e le azioni di insider dannose indirizzate alla propria organizzazione. Si concentrerà su questo punto perché protegge l'infrastruttura di on-premi e la cloud, non ha dipendenze o prerequisiti e può fornire vantaggi immediati.
 
 - Per ottenere rapidamente l'installazione, vedere [Microsoft Defender per le guide rapide dell'identità](https://docs.microsoft.com/azure-advanced-threat-protection/install-atp-step1)
 - Guarda il [video: Introduzione a Microsoft Defender for Identity](https://www.youtube.com/watch?reload=9&v=EGY2m8yU_KE)
@@ -211,7 +211,7 @@ Microsoft 365 fornisce le risorse seguenti per informare gli utenti nell'organiz
 |Concetti|Risorse|
 |---|---|
 |Microsoft 365|[Percorsi di apprendimento personalizzabili](https://docs.microsoft.com/office365/customlearning/) <p>Tali risorse consentono di creare una formazione per gli utenti finali nell'organizzazione|
-|Centro sicurezza Microsoft 365|[Modulo di apprendimento: proteggere l'organizzazione con sicurezza integrata e intelligente da Microsoft 365](https://docs.microsoft.com/learn/modules/security-with-microsoft-365) <p>Questo modulo consente di descrivere in che modo le funzionalità di sicurezza di Microsoft 365 interagiscono e di articolare i vantaggi di queste funzionalità di sicurezza.|
+|Sicurezza di Microsoft 365|[Modulo di apprendimento: proteggere l'organizzazione con sicurezza integrata e intelligente da Microsoft 365](https://docs.microsoft.com/learn/modules/security-with-microsoft-365) <p>Questo modulo consente di descrivere in che modo le funzionalità di sicurezza di Microsoft 365 interagiscono e di articolare i vantaggi di queste funzionalità di sicurezza.|
 |Autenticazione a più fattori|[Verifica in due passaggi: che cos'è la pagina di verifica aggiuntiva?](https://docs.microsoft.com/azure/active-directory/user-help/multi-factor-authentication-end-user-first-time) <p>Questo articolo aiuta gli utenti finali a capire cosa sia l'autenticazione a più fattori e il motivo per cui viene utilizzato all'interno dell'organizzazione.|
 |
 

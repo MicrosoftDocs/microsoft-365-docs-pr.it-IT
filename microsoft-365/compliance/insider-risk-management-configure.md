@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: 9c8d9dbc0087f1b7311863ea63e578bad3040249
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.openlocfilehash: 793f51146dc85dc1c6750e82301d0e1206187ad9
+ms.sourcegitcommit: c1dd5be42fe0c5dcc7c05817c941edd9076febf8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49357435"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "49558200"
 ---
 # <a name="get-started-with-insider-risk-management"></a>Introduzione alla gestione dei rischi Insider
 
@@ -92,8 +92,6 @@ Per istruzioni dettagliate su come abilitare il controllo, vedere [attivazione o
 ## <a name="step-3-configure-prerequisites-for-templates"></a>Passaggio 3: configurare i prerequisiti per i modelli
 
 La maggior parte dei modelli di gestione del rischio Insider sono prerequisiti che devono essere configurati per gli indicatori dei criteri per generare avvisi attività rilevanti. Configurare i prerequisiti adeguati a seconda dei criteri che si intende configurare per l'organizzazione.
-
-Se si sta configurando un criterio utilizzando la *lingua offensiva nel modello di criteri di posta elettronica* , è possibile ignorare questo passaggio e passare direttamente al **passaggio 4**.
 
 ### <a name="configure-microsoft-365-hr-connector"></a>Configurare il connettore Microsoft 365 HR
 

@@ -16,18 +16,18 @@ ms.assetid: 82ac9922-939c-41be-9c8a-7c75b0a4e27d
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-description: Informazioni sull'utilizzo di Esplora risorse e sui rilevamenti in tempo reale nel centro sicurezza e &amp; conformità per esaminare e rispondere alle minacce in modo efficace ed efficiente.
+description: Informazioni sull'utilizzo di Esplora risorse e sui rilevamenti in tempo reale nel centro sicurezza & Compliance per esaminare e rispondere alle minacce in modo efficace ed efficiente.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: bc137a7390961e2b6abe049aead2b238cb9d3a16
-ms.sourcegitcommit: 9546708a5506fdbadbfe2500cbf1bd1aeaec6fcb
+ms.openlocfilehash: 021810a4d64dc3a8d9089a3b7174a1b5f536745a
+ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "49021122"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49561400"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>Esplora minacce e rilevamenti in tempo reale
 
-Se l'organizzazione dispone [di Microsoft Defender per Office 365](office-365-atp.md)e si dispone delle [autorizzazioni necessarie](#required-licenses-and-permissions), è possibile rilevare **esplorazioni** o **rilevamenti in tempo reale** (in precedenza i *report in tempo reale* , [vedere What ' s New](#new-features-in-threat-explorer-and-real-time-detections)!). Nel centro sicurezza & conformità, accedere a **gestione minacce** , quindi scegliere **Esplora risorse** _o_ **rilevamenti in tempo reale**.
+Se l'organizzazione dispone [di Microsoft Defender per Office 365](office-365-atp.md)e si dispone delle [autorizzazioni necessarie](#required-licenses-and-permissions), è possibile rilevare **esplorazioni** o **rilevamenti in tempo reale** (in precedenza i *report in tempo reale* , [vedere What ' s New](#new-features-in-threat-explorer-and-real-time-detections)!). Nel centro sicurezza & conformità, accedere a **gestione minacce**, quindi scegliere **Esplora risorse** _o_ **rilevamenti in tempo reale**.
 
 |Con Microsoft Defender per Office 365 piano 2, è possibile visualizzare le informazioni seguenti:|Con Microsoft Defender per Office 365 piano 1, è possibile visualizzare le informazioni seguenti:|
 |---|---|
@@ -289,7 +289,7 @@ Queste nuove funzionalità sono descritte di seguito.
 
 ### <a name="preview-email-header-and-download-email-body"></a>Anteprima della posta elettronica e scaricare il corpo della posta elettronica
 
-La possibilità di visualizzare in anteprima l'intestazione di un messaggio di posta elettronica e di scaricare il corpo della posta elettronica sono nuove funzionalità disponibili in Esplora minacce. Gli amministratori saranno in grado di analizzare le intestazioni o i messaggi di posta elettronica scaricati per individuare eventuali minacce. Poiché il download dei messaggi di posta elettronica può rischiare l'esposizione delle informazioni, questo processo è controllato dal controllo di accesso basato sui ruoli (RBAC). Un nuovo ruolo, l' *Anteprima* , deve essere aggiunto a un altro gruppo di ruoli, ad esempio operazioni di sicurezza o amministratore della sicurezza, per garantire la possibilità di scaricare i messaggi di posta elettronica e visualizzare le intestazioni di anteprima in tutte le visualizzazioni.
+La possibilità di visualizzare in anteprima l'intestazione di un messaggio di posta elettronica e di scaricare il corpo della posta elettronica sono nuove funzionalità disponibili in Esplora minacce. Gli amministratori saranno in grado di analizzare le intestazioni o i messaggi di posta elettronica scaricati per individuare eventuali minacce. Poiché il download dei messaggi di posta elettronica può rischiare l'esposizione delle informazioni, questo processo è controllato dal controllo di accesso basato sui ruoli (RBAC). Un nuovo ruolo, l' *Anteprima*, deve essere aggiunto a un altro gruppo di ruoli, ad esempio operazioni di sicurezza o amministratore della sicurezza, per garantire la possibilità di scaricare i messaggi di posta elettronica e visualizzare le intestazioni di anteprima in tutte le visualizzazioni.
 
 Ma Explorer (e rilevamenti in tempo reale) aggiunge anche nuovi campi creati per fornire un'immagine più completa della posizione in cui i messaggi di posta elettronica atterrano. Parte dell'obiettivo di questa modifica è facilitare la ricerca per gli addetti alle operazioni di sicurezza, ma il risultato della rete è la conoscenza del percorso dei messaggi di posta elettronica problematici.
 
@@ -318,13 +318,13 @@ Ecco cosa può essere visualizzato dall'utente e cosa non è possibile:
 
 Il percorso di recapito consente di visualizzare i risultati dei criteri e i rilevamenti eseguiti dopo il recapito. È collegato a un'azione di recapito. Questo campo è stato aggiunto per fornire informazioni dettagliate sull'azione intrapresa quando viene trovata una posta elettronica problematica. Di seguito sono riportati i possibili valori del percorso di recapito:
 
-- **Posta in arrivo o cartella** : la posta elettronica è in posta in arrivo o in una cartella (in base alle regole di posta elettronica).
-- **On-Prem o External** : la cassetta postale non esiste sul cloud ma è in locale.
-- **Cartella posta indesiderata** : l'indirizzo di posta elettronica si trova nella cartella Junk di un utente.
-- **Cartella Posta eliminata** : il messaggio nella cartella elementi eliminati di un utente.
-- **Quarantine** : l'indirizzo di posta elettronica in quarantena e non è incluso nella cassetta postale di un utente.
-- **Errore** : il messaggio di posta elettronica non è riuscito a raggiungere la cassetta postale.
-- **Eliminato** : il messaggio di posta elettronica viene perso da qualche parte nel flusso di posta.
+- **Posta in arrivo o cartella**: la posta elettronica è in posta in arrivo o in una cartella (in base alle regole di posta elettronica).
+- **On-Prem o External**: la cassetta postale non esiste sul cloud ma è in locale.
+- **Cartella posta indesiderata**: l'indirizzo di posta elettronica si trova nella cartella Junk di un utente.
+- **Cartella Posta eliminata**: il messaggio nella cartella elementi eliminati di un utente.
+- **Quarantine**: l'indirizzo di posta elettronica in quarantena e non è incluso nella cassetta postale di un utente.
+- **Errore**: il messaggio di posta elettronica non è riuscito a raggiungere la cassetta postale.
+- **Eliminato**: il messaggio di posta elettronica viene perso da qualche parte nel flusso di posta.
 
 ### <a name="email-timeline"></a>Sequenza temporale della posta elettronica
 
@@ -354,7 +354,7 @@ Quando si fa clic su un URL nell'elenco, verrà visualizzato un nuovo pulsante E
 
 Si supponga di voler vedere malware rilevato nella posta elettronica, tramite la tecnologia Microsoft 365. A tale scopo, utilizzare la visualizzazione [posta elettronica > malware](threat-explorer-views.md#email--malware) di Esplora risorse (o rilevamenti in tempo reale).
 
-1. Nel centro sicurezza & conformità ( [https://protection.office.com](https://protection.office.com) ), scegliere **gestione minacce**  >  **Explorer** (o **rilevamenti in tempo reale** ). In questo esempio viene utilizzato Esplora.
+1. Nel centro sicurezza & conformità ( [https://protection.office.com](https://protection.office.com) ), scegliere **gestione minacce**  >  **Explorer** (o **rilevamenti in tempo reale**). In questo esempio viene utilizzato Esplora.
 
 2. Scegliere malware **tramite posta elettronica** dal menu **Visualizza**  >  **Malware**.
 
@@ -381,7 +381,7 @@ Si supponga di voler visualizzare i tentativi di phishing tramite URL nella post
 
 Per esaminare gli URL di phishing nei messaggi e fare clic su URL nei messaggi di phishing, utilizzare la visualizzazione di [posta elettronica > phishing](threat-explorer-views.md#email--phish) di Esplora risorse (o rilevamenti in tempo reale).
 
-1. Nel centro sicurezza & conformità ( [https://protection.office.com](https://protection.office.com) ), scegliere **gestione minacce**  >  **Explorer** (o **rilevamenti in tempo reale** ). In questo esempio viene utilizzato Esplora.
+1. Nel centro sicurezza & conformità ( [https://protection.office.com](https://protection.office.com) ), scegliere **gestione minacce**  >  **Explorer** (o **rilevamenti in tempo reale**). In questo esempio viene utilizzato Esplora.
 
 2. Nel menu **Visualizza** scegliere **posta elettronica**  >  **phishing**.
 
@@ -390,7 +390,7 @@ Per esaminare gli URL di phishing nei messaggi e fare clic su URL nei messaggi d
 
 3. Fare clic su **sender** e quindi scegliere **urls**  >  **Click verdict**.
 
-4. Selezionare una o più opzioni, ad esempio **bloccate** e **bloccate** , e quindi fare clic sul pulsante **Aggiorna** che si trova nella stessa riga delle opzioni per applicare il filtro. (Non aggiornare la finestra del browser.)
+4. Selezionare una o più opzioni, ad esempio **bloccate** e **bloccate**, e quindi fare clic sul pulsante **Aggiorna** che si trova nella stessa riga delle opzioni per applicare il filtro. (Non aggiornare la finestra del browser.)
 
    > [!div class="mx-imgBorder"]
    > ![URL e fare clic su verdetti](../../media/ThreatExplorerEmailPhishClickVerdictOptions.png)
@@ -415,20 +415,20 @@ Per esaminare gli URL di phishing nei messaggi e fare clic su URL nei messaggi d
 
 All'interno di comparsa di posta elettronica o URL, clic principali e all'interno delle nostre esperienze di filtraggio, verranno visualizzati diversi valori di clic come parte dell'esperienza di caccia. Di seguito sono riportati i valori possibili di clic verdetti e la loro interpretazione:
 
-- **None** : non è stato possibile acquisire il verdetto per l'URL. È possibile che l'utente abbia fatto clic su di esso tramite l'URL.
-- **Consentito** : all'utente è stato consentito di passare all'URL.
-- **Bloccato** : l'utente è stato bloccato dall'esplorazione all'URL.
-- **Verdetto in sospeso** : l'utente è stato presentato con la pagina di detonazione in sospeso.
-- **Bloccato sottoposto a override** : l'utente è stato bloccato dall'esplorazione all'URL. Tuttavia, l'utente ha scavalcato il blocco per passare all'URL.
-- **Verdetto in sospeso bypassato** : l'utente è stato presentato con la pagina di detonazione; Tuttavia, l'utente ha ripercorso la pagina per passare all'URL.
-- **Errore** : l'utente è stato presentato con la pagina di errore. Questo può anche significare che si è verificato un errore nell'acquisizione del verdetto.
-- **Errore** : si è verificato l'eccezione sconosciuta durante l'acquisizione del verdetto. È possibile che l'utente abbia fatto clic su di esso tramite l'URL.
+- **None**: non è stato possibile acquisire il verdetto per l'URL. È possibile che l'utente abbia fatto clic su di esso tramite l'URL.
+- **Consentito**: all'utente è stato consentito di passare all'URL.
+- **Bloccato**: l'utente è stato bloccato dall'esplorazione all'URL.
+- **Verdetto in sospeso**: l'utente è stato presentato con la pagina di detonazione in sospeso.
+- **Bloccato sottoposto a override**: l'utente è stato bloccato dall'esplorazione all'URL. Tuttavia, l'utente ha scavalcato il blocco per passare all'URL.
+- **Verdetto in sospeso bypassato**: l'utente è stato presentato con la pagina di detonazione; Tuttavia, l'utente ha ripercorso la pagina per passare all'URL.
+- **Errore**: l'utente è stato presentato con la pagina di errore. Questo può anche significare che si è verificato un errore nell'acquisizione del verdetto.
+- **Errore**: si è verificato l'eccezione sconosciuta durante l'acquisizione del verdetto. È possibile che l'utente abbia fatto clic su di esso tramite l'URL.
 
 ## <a name="review-email-messages-reported-by-users"></a>Esaminare i messaggi di posta elettronica segnalati dagli utenti
 
 Si supponga di voler visualizzare i messaggi di posta elettronica che gli utenti dell'organizzazione hanno segnalato come posta indesiderata, non indesiderata o phishing tramite il [componente aggiuntivo per Outlook e Outlook sul Web](enable-the-report-message-add-in.md). A tale scopo, utilizzare la visualizzazione [> invii di posta elettronica](threat-explorer-views.md#email--submissions) di Esplora risorse (o rilevamenti in tempo reale).
 
-1. Nel centro sicurezza & conformità ( [https://protection.office.com](https://protection.office.com) ), scegliere **gestione minacce**  >  **Explorer** (o **rilevamenti in tempo reale** ). In questo esempio viene utilizzato Esplora.
+1. Nel centro sicurezza & conformità ( [https://protection.office.com](https://protection.office.com) ), scegliere **gestione minacce**  >  **Explorer** (o **rilevamenti in tempo reale**). In questo esempio viene utilizzato Esplora.
 
 2. Scegliere **invii di posta elettronica** dal menu **Visualizza**  >  **Submissions**.
 
@@ -437,7 +437,7 @@ Si supponga di voler visualizzare i messaggi di posta elettronica che gli utenti
 
 3. Fare clic su **mittente** e quindi scegliere tipo di report di **base**  >  **Report type**.
 
-4. Selezionare un'opzione, ad esempio **phishing** , e quindi fare clic sul pulsante **Aggiorna** .
+4. Selezionare un'opzione, ad esempio **phishing**, e quindi fare clic sul pulsante **Aggiorna** .
 
    > [!div class="mx-imgBorder"]
    > ![Phishing segnalati dall'utente](../../media/EmailUserReportedReportType.png)
@@ -473,7 +473,7 @@ Per ottenere esplorazioni o rilevamenti in tempo reale, è necessario disporre d
 
 Per visualizzare e utilizzare esplorazioni o rilevamenti in tempo reale, è necessario disporre delle autorizzazioni appropriate, ad esempio quelle concesse a un amministratore della sicurezza o a un lettore di sicurezza.
 
-- Per il &amp; Centro sicurezza e conformità, è necessario che sia assegnato uno dei ruoli seguenti:
+- Per il Centro sicurezza & conformità, è necessario che sia assegnato uno dei ruoli seguenti:
 
   - Gestione organizzazione
   - Amministratore della sicurezza (è possibile assegnarlo nell'interfaccia di amministrazione di Azure Active Directory ( [https://aad.portal.azure.com](https://aad.portal.azure.com) ))
@@ -488,7 +488,7 @@ Per visualizzare e utilizzare esplorazioni o rilevamenti in tempo reale, è nece
 
 Per ulteriori informazioni sui ruoli e sulle autorizzazioni, vedere le risorse seguenti:
 
-- [Autorizzazioni nel centro sicurezza e &amp; conformità](permissions-in-the-security-and-compliance-center.md)
+- [Autorizzazioni nel Centro sicurezza e conformità](permissions-in-the-security-and-compliance-center.md)
 - [Autorizzazioni funzionalità in Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/feature-permissions)
 
 ## <a name="some-differences-between-threat-explorer-and-real-time-detections"></a>Alcune differenze tra Esplora minacce e rilevamenti in tempo reale

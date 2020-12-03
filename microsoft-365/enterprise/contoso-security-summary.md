@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Come Contoso utilizza le funzionalità di sicurezza di Microsoft 365 per Enterprise.
-ms.openlocfilehash: a72a770029328eaddf76cbe1b2039386c50c2750
-ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
+ms.openlocfilehash: 5c951a973fbebeff92040f9411ad2c81788f920a
+ms.sourcegitcommit: c1dd5be42fe0c5dcc7c05817c941edd9076febf8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48920419"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "49558395"
 ---
 # <a name="summary-of-microsoft-365-for-enterprise-security-for-the-contoso-corporation"></a>Riepilogo di Microsoft 365 per la sicurezza aziendale per Contoso Corporation
 
@@ -56,7 +56,7 @@ Per seguire le procedure consigliate per la sicurezza e Microsoft 365 per i requ
 
 - Account di amministratore globale dedicati con MFA e PIM
 
-  Invece di assegnare il ruolo di amministratore globale agli account utente giornalieri, Contoso ha creato tre account di amministratore globale dedicati con password complesse. Gli account sono protetti da Azure multi-factor authentication (AMF) e Azure Active Directory (Azure AD) Privileged Identity Management (PIM). *PIM è disponibile solo con Microsoft 365 E5.*
+  Invece di assegnare il ruolo di amministratore globale agli account utente giornalieri, Contoso ha creato tre account di amministratore globale dedicati con password complesse. Gli account sono protetti da Azure AD multi-factor authentication (AMF) e Azure Active Directory (Azure AD) Privileged Identity Management (PIM). *PIM è disponibile solo con Microsoft 365 E5.*
 
   L'accesso con un account di amministratore globale viene effettuato solo per attività amministrative specifiche. Le password sono note solo per il personale designato e possono essere utilizzate solo entro un periodo di tempo configurato in Azure AD PIM.
 

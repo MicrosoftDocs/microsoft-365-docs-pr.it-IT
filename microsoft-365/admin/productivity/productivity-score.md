@@ -19,30 +19,30 @@ search.appverid:
 - MET150
 - MOE150
 description: Panoramica del Punteggio di produttività Microsoft.
-ms.openlocfilehash: 49ae35d68b0d0ebf627e44e5912d4a1bb7b712c0
-ms.sourcegitcommit: 2d3e85173c65a9e0ce92624a80ed7a9839f5b8bd
+ms.openlocfilehash: f1edc1a66763562b233455609f3381e3f4fbfa98
+ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49123490"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49561475"
 ---
 # <a name="microsoft-productivity-score"></a>Punteggio di produttività Microsoft 
 
-Il Punteggio di produttività consente alle organizzazioni di trasformare il lavoro svolto con informazioni su come gli utenti utilizzano Microsoft 365 e le esperienze tecnologiche che le supportano. Lo Score riflette le prestazioni dell'organizzazione rispetto alle persone e alle esperienze tecnologiche e confronta il tuo punteggio con organizzazioni come le tue.
+La produttività Score supporta il viaggio verso la trasformazione digitale con approfondimenti su come l'organizzazione usa Microsoft 365 e le esperienze tecnologiche che la supportano. Il Punteggio dell'organizzazione riflette le misure di utenti e tecnologie e può essere paragonato ai benchmark di organizzazioni simili per dimensioni al proprio.
 
-La partitura include:
+Offre:
 
-- **Metriche** che consentono di vedere in che modo le persone usano prodotti Microsoft 365 per collaborare, comunicare e lavorare su più piattaforme.
-- Informazioni dettagliate sui dati utili per identificare le opportunità di migliorare la produttività e la **soddisfazione dei dipendenti** .
-- Le **azioni consigliate** che è possibile eseguire per aiutare gli utenti dell'organizzazione a utilizzare i prodotti Microsoft 365 sono efficienti in modo che tutti possano svolgere il proprio lavoro.
+- **Metriche** che consentono di visualizzare la posizione in cui si trova il percorso di trasformazione digitale.
+- **Informazioni dettagliate sui** dati che consentono di identificare le opportunità di migliorare la produttività e la soddisfazione nell'organizzazione.
+- **Azioni consigliate** che è possibile eseguire per aiutare l'organizzazione a utilizzare i prodotti Microsoft 365 in modo efficiente.
 
-Vengono forniti dati, informazioni dettagliate e suggerimenti in due aree: 
+Vengono fornite metriche, informazioni dettagliate e suggerimenti in due aree: 
 
-- **Esperienze degli utenti:** Misura il modo in cui le persone collaborano al contenuto, il modo in cui utilizzano i prodotti Microsoft 365 per comunicare e se utilizzano Microsoft 365 su più piattaforme. 
+- **Esperienze degli utenti:** Quantifica il modo in cui l'organizzazione funziona con le categorie Microsoft 365 come la collaborazione, la mobilità, la comunicazione, le riunioni e il lavoro di squadra del contenuto.  
 
-    Queste informazioni vengono fornite perché quando le persone collaborano online, risparmiano tempo e con la libertà di lavorare su qualsiasi dispositivo rende più produttivo e soddisfatto. La capacità di comunicare in modo flessibile rende le persone più efficienti, in grado di formare relazioni migliori e quindi rendere l'organizzazione più unita. Per ulteriori informazioni, vedere [rapporto Forrester](https://vc2prod.blob.core.windows.net/vc-resources/TEIStudies/TEI%20of%20Microsoft%20365%20E5%20-%20Oct%202018.pdf).
+    Per ognuna delle categorie citate, vengono esaminate le ricerche pubbliche per identificare alcune procedure consigliate e i vantaggi associati in forma di efficacia organizzativa. Ad esempio, [Forrester] ( https://vc2prod.blob.core.windows.net/vc-resources/TEIStudies/TEI%20of%20Microsoft%20365%20E5%20-%20Oct%202018.pdf la ricerca ha mostrato che quando la gente collabora e condivide il contenuto nel cloud (invece di inviare messaggi di posta elettronica), può salvare fino a 100 minuti alla settimana. È inoltre possibile quantificare l'utilizzo di queste procedure consigliate nell'organizzazione per individuare la posizione del percorso di trasformazione digitale. 
 
-- **Esperienze tecnologiche:** La produttività del team dipende da una tecnologia affidabile e ben performante, oltre che da un utilizzo efficiente di Microsoft 365. L' [analisi di endpoint](https://aka.ms/endpointanalytics) consente di comprendere in che modo la produttività degli utenti può essere influenzata da problemi di prestazioni e integrità con l'hardware e il software. Le azioni consigliate consentono di risolvere questi problemi. Microsoft 365 informazioni sulla connettività di rete consentono di risolvere i problemi di connectivty per l'organizzazione.
+- **Esperienze tecnologiche:** L'organizzazione dipende da una tecnologia affidabile e ben performante, nonché dall'utilizzo efficiente di Microsoft 365. L' [analisi di endpoint](https://aka.ms/endpointanalytics) consente di comprendere in che modo l'organizzazione può avere un impatto sui problemi di prestazioni e integrità dell'hardware e del software. Microsoft 365 Apps Health aiuta a capire se i dispositivi dell'organizzazione eseguono le app Microsoft 365 nei canali consigliati.
 
 Vedere [che cos'è l'analisi di endpoint](https://docs.microsoft.com/mem/analytics/overview) per una panoramica e Dettagli prerequisito. Per ulteriori informazioni sulle considerazioni relative alla connettività di rete di Microsoft 365, leggere [la panoramica della connettività di rete](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-networking-overview).
   
@@ -63,22 +63,22 @@ Il Punteggio di produttività è basato sui punteggi combinati delle categorie d
 - Microsoft 365 Apps Health (100 punti)
 - **Totale possibile = 800 punti**
  
- In ogni categoria di punteggio vengono identificati i modelli per le attività chiave che sono indicatori per la modalità con cui gli utenti utilizzano i prodotti Microsoft 365 per collaborare, comunicare e lavorare su più piattaforme. Vengono fornite le visualizzazioni di 28 giorni e 180 giorni delle attività principali. Sono inoltre disponibili metriche di supporto che non fanno parte del calcolo del punteggio, ma sono importanti per identificare i comportamenti e le impostazioni sottostanti che è possibile risolvere.
+ In ogni categoria di punteggio vengono quantificati gli indicatori chiave per il modo in cui l'organizzazione utilizza Microsoft 365 nel suo percorso verso la trasformazione digitale. Vengono fornite le visualizzazioni di 28 giorni e 180 giorni delle attività principali. Sono inoltre disponibili metriche di supporto che non fanno parte del calcolo del punteggio, ma sono importanti per identificare le statistiche e le configurazioni di utilizzo sottostanti che è possibile risolvere.
 
 ### <a name="products-included-in-productivity-score"></a>Prodotti inclusi nel punteggio di produttività 
 
 Il Punteggio di produttività include i dati di Exchange, SharePoint, OneDrive, teams, Word, Excel, PowerPoint, OneNote, Outlook, Yammer e Skype.
 
-Il Punteggio viene aggiornato giornalmente e riflette le azioni dell'utente completate negli ultimi 28 (compreso il giorno corrente).
+Il Punteggio dell'organizzazione viene aggiornato giornalmente e riflette le azioni degli utenti completate negli ultimi 28 (compreso il giorno corrente).
 
 
 ## <a name="pre-requisites"></a>Prerequisiti 
 
-Per le persone che hanno esperienza di dati, è necessario un abbonamento a Microsoft 365 for business o Office 365 for Enterprise. Per i dati di analisi endpoint per il tenant, è necessario aggiungere Microsoft Intune all'abbonamento. Intune consente di proteggere i dati dell'organizzazione tramite la gestione di dispositivi e app. Dopo aver installato Intune, è possibile abilitare l'analisi di endpoint all'interno dell'esperienza di Intune. Per ulteriori informazioni, vedere Microsoft Intune. 
+Per le persone che hanno esperienza di dati, è necessario un abbonamento a Microsoft 365 for business o Office 365 for Enterprise. Per i dati di analisi endpoint per il tenant, è necessario aggiungere Microsoft Intune all'abbonamento. Intune consente di proteggere i dati dell'organizzazione tramite la gestione di dispositivi e app. Dopo aver installato Intune, è possibile abilitare l'analisi di endpoint all'interno dell'esperienza di Intune. Per ulteriori informazioni, vedere [Microsoft Intune](https://docs.microsoft.com/mem/intune/). 
 > [!NOTE]
 > Non è necessaria una licenza per l'analisi del posto di lavoro per ottenere le funzionalità di valutazione della produttività.
 
-Per visualizzare il Punteggio di produttività per l'organizzazione, è necessario disporre di uno dei ruoli seguenti: 
+Il Punteggio di produttività è disponibile solo nell'interfaccia di amministrazione di Microsoft 365 ed è accessibile solo ai professionisti IT che hanno uno dei ruoli seguenti:  
 
 - Amministratore globale 
 - Amministratori di Exchange
@@ -88,17 +88,21 @@ Per visualizzare il Punteggio di produttività per l'organizzazione, è necessar
 - Ruolo con autorizzazioni di lettura globali 
 - Lettore report 
 
+Tenere presente che le informazioni devono essere utilizzate solo per favorire la trasformazione digitale tramite Microsoft 365 e pertanto è opportuno condividerle con discrezione. 
+
+Microsoft si impegna a proteggere la privacy individuale. In questo [documento sulla privacy](privacy.md)  vengono illustrati i controlli che vengono forniti dall'amministratore IT dell'organizzazione per garantire che le informazioni siano eseguibili senza compromettere la relazione di trust eseguita in Microsoft.
+
 È possibile accedere all'esperienza da Microsoft 365 admin Home in **report**  >  **Productivity Score**.
 
-## <a name="interpreting-productivity-score"></a>Interpretazione del Punteggio di produttività 
+## <a name="interpreting-your-organizations-productivity-score"></a>Interpretazione del Punteggio di produttività dell'organizzazione 
 
-La Home page del Punteggio di produttività Visualizza il punteggio totale e la cronologia dei punteggi e l'intuizione principale di ogni categoria.
+La Home page del Punteggio di produttività Visualizza la cronologia totale dei punteggi e del punteggio dell'organizzazione e l'intuizione principale di ogni categoria.
 
 :::image type="content" source="../../media/prodscore-landing.png" alt-text="Pagina Punteggio di produttività nei report.":::
 
-**Il Punteggio** viene visualizzato come valore percentuale e in punti. È possibile visualizzare i punti nel numeratore e i punti massimi possibili nel denominatore.
+**Il punteggio dell'organizzazione** viene visualizzato come valore percentuale e in punti. È possibile visualizzare i punti nel numeratore e i punti massimi possibili nel denominatore.
 
-I **benchmark peer** consentono di confrontare il punteggio con organizzazioni come la propria. Il benchmark peer per le categorie people experiences viene calcolato come media delle misure all'interno di un insieme di organizzazioni simili. Il set di organizzazioni è costituito da organizzazioni nella propria area geografica con un numero analogo di utenti con licenza, tipi di licenze, industria e possesso di Microsoft 365. 
+I **benchmark peer** consentono di confrontare il punteggio dell'organizzazione con organizzazioni come la propria. Il benchmark peer per le categorie people experiences viene calcolato come media delle misure all'interno di un insieme di organizzazioni simili. Il set di organizzazioni è costituito da organizzazioni nella propria area geografica con un numero analogo di utenti con licenza, tipi di licenze, industria e possesso di Microsoft 365. 
 
 Il benchmark peer analisi endpoint include gli obiettivi per le prestazioni di avvio del dispositivo e la configurazione software consigliata in base ai valori mediani aggregati in tutti i tenant.
 
@@ -126,7 +130,7 @@ Le pagine dei dettagli sono le seguenti:
 
 Il rapporto di continuità aziendale è un report di intelligence sul luogo di lavoro a tempo limitato disponibile per tutti i clienti di Microsoft 365 per aiutarli a guidare le loro organizzazioni durante questo momento impegnativo.  
 
-Questo rapporto aiuta i leader aziendali a comprendere quanto segue: 
+Questo rapporto aiuta le organizzazioni a comprendere quanto segue: 
 
 - Il modo in cui la collaborazione e la comunicazione sono intaccate dal passaggio al lavoro remoto. 
 
@@ -140,4 +144,4 @@ Questo rapporto aiuta i leader aziendali a comprendere quanto segue:
 
 ## <a name="we-want-to-hear-from-you"></a>Si vuole sapere da voi
 
-Condividi i tuoi pensieri sul punteggio di produttività e sulle tue idee su come migliorarlo. Utilizzare le sezioni di **feedback** all'interno del prodotto e/o raggiungere il team del Punteggio di produttività in ProductivityScorePreview@service.microsoft.com.
+Condividi i tuoi pensieri sul punteggio di produttività e sulle tue idee su come migliorarlo. Utilizzare le sezioni di **feedback** all'interno del prodotto e/o raggiungere il team del Punteggio di produttività in prodscorefeedback@microsoft.com.

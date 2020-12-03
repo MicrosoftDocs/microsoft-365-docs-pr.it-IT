@@ -17,14 +17,14 @@ ms.assetid: e47e838c-d99e-4c0b-b9aa-e66c4fae902f
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-description: Trovare e utilizzare i report per Microsoft Defender per Office 365 nel centro sicurezza e &amp; conformità.
+description: Trovare e utilizzare i report per Microsoft Defender per Office 365 nel centro sicurezza & Compliance.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 8885eea2168cc40c497f6fa1066ae020dda7fd7c
-ms.sourcegitcommit: e7bf23df4852b78912229d1d38ec475223597f34
+ms.openlocfilehash: 5efaef018c78bd161c9cde81af36be92173479ae
+ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49087719"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49561728"
 ---
 # <a name="view-reports-for-microsoft-defender-for-office-365"></a>Visualizzare i report per Microsoft Defender per Office 365
 
@@ -35,7 +35,7 @@ Microsoft Defender per le organizzazioni di Office 365 (ad esempio, abbonamenti 
 
 ![Dashboard dei report nel centro sicurezza & Compliance](../../media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
 
-## <a name="defender-for-office-365-file-types-report"></a>Report tipi di file per Defender per Office 365
+## <a name="defender-for-office-365-file-types-report"></a>Report sui tipi di file di Defender per Office 365
 
 Il report del **rapporto tipi di file di Defender per Office 365** Visualizza il tipo di file rilevati come dannosi per gli [allegati sicuri](atp-safe-attachments.md).
 
@@ -119,7 +119,7 @@ Se si fa clic su **Visualizza tabella dettagli**, il rapporto fornisce una visua
 
 Per tornare alla visualizzazione report, fare clic su **Visualizza report**.
 
-## <a name="defender-for-office-365-message-disposition-report"></a>Report disposizione messaggi di Defender per Office 365
+## <a name="defender-for-office-365-message-disposition-report"></a>Protezione per il rapporto disposizione messaggi di Office 365
 
 Il rapporto di **disposizione dei messaggi ATP** indica le azioni eseguite per i messaggi di posta elettronica rilevati come contenuti dannosi.
 
@@ -338,7 +338,7 @@ Oltre ai rapporti descritti in questo argomento, sono disponibili diversi altri 
 
 ## <a name="what-permissions-are-needed-to-view-the-defender-for-office-365-reports"></a>Quali autorizzazioni sono necessarie per visualizzare i report del difensore per Office 365?
 
-Per visualizzare e utilizzare i report descritti in questo argomento, **è necessario che sia assegnato un ruolo appropriato per il &amp; Centro sicurezza e l'interfaccia di amministrazione di Exchange**.
+Per visualizzare e utilizzare i report descritti in questo argomento, **è necessario che sia assegnato un ruolo appropriato per il Centro sicurezza & conformità e l'interfaccia di amministrazione di Exchange**.
 
 - Per il Centro sicurezza & conformità, è necessario che sia assegnato uno dei ruoli seguenti:
 

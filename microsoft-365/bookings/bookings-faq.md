@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: bookings
 localization_priority: Normal
 description: Domande frequenti su Microsoft bookings.
-ms.openlocfilehash: 40605cfc7e5d30e12cd34a463a76e8d9c324efc7
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: 47bb71476c3fd0b32f9be3e71b188bef6efe2498
+ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48445452"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49561556"
 ---
 # <a name="microsoft-bookings-frequently-asked-questions"></a>Domande frequenti su Microsoft bookings
 
@@ -29,7 +29,7 @@ Bookings è un servizio online, quindi non è necessario scaricare nulla. Basta 
 
 ### <a name="who-has-access-to-microsoft-bookings"></a>Chi ha accesso a Microsoft bookings?
 
-La prenotazione è disponibile e attiva per impostazione predefinita per i clienti Microsoft 365 Business Premium, a3, a5, E3 ed E5 in tutto il mondo. Le prenotazioni sono disponibili anche in Office 365 gestito da 21Vianet.
+La prenotazione è disponibile e attiva per impostazione predefinita per i clienti Microsoft 365 Business Premium, Microsoft 365 business standard, a3, a5, E3 ed E5 in tutto il mondo. Le prenotazioni sono disponibili anche in Office 365 gestito da 21Vianet.
 
 ### <a name="will-my-customers-see-my-personal-or-business-calendar"></a>I clienti visualizzeranno il calendario personale o aziendale?
 
@@ -37,7 +37,7 @@ I clienti vedranno solo il calendario delle prenotazioni che pubblichi online pe
 
 ### <a name="how-do-end-users-access-the-bookings-app"></a>In che modo gli utenti finali accedono all'app bookings?
 
-Tutti gli utenti che dispongono della licenza per Microsoft 365 Business Premium, a3, a5, E3, E5 o vengono aggiunti come membri del personale nell'amministratore o nei ruoli del visualizzatore possono accedere alle prenotazioni nella finestra di scelta delle app all'interno dell'esperienza Web di Microsoft 365. Esiste anche un'app Companion disponibile per iOS e Android.
+Tutti gli utenti che dispongono della licenza per Microsoft 365 Business Premium, Microsoft 365 business standard, a3, a5, E3, E5 o vengono aggiunti come membri del personale nell'amministratore o nei ruoli del visualizzatore possono accedere alle prenotazioni nella finestra di scelta delle app all'interno dell'esperienza Web di Microsoft 365. Esiste anche un'app Companion disponibile per iOS e Android.
 
 ### <a name="can-i-use-bookings-in-my-own-web-site"></a>È possibile utilizzare le prenotazioni nel proprio sito Web?
 
@@ -49,9 +49,9 @@ Sì. Viene fornito un collegamento alla pagina di prenotazione all'interno della
 
 ### <a name="can-our-it-department-control-whether-end-users-can-access-bookings"></a>Il reparto IT può controllare se gli utenti finali possono accedere alle prenotazioni?
 
-Le prenotazioni sono disponibili in Business Premium, M365 a3/a5 e E3/E5 tenant per impostazione predefinita, ma gli amministratori possono disattivarlo nell'interfaccia di amministrazione di Microsoft 365 se lo desiderano. A tale scopo, [seguire le istruzioni](turn-bookings-on-or-off.md)riportate di seguito.
+Le prenotazioni sono disponibili in Microsoft 365 Business Premium, Microsoft 365 business standard, M365 a3/a5 e E3/E5 tenant per impostazione predefinita, ma gli amministratori possono disattivarlo nell'interfaccia di amministrazione di Microsoft 365 se lo desiderano. A tale scopo, [seguire le istruzioni](turn-bookings-on-or-off.md)riportate di seguito.
 
-Se un cliente desidera disabilitare l'accesso alle prenotazioni per determinate licenze idonee nel proprio tenant, può essere utilizzato da un criterio di gruppo per limitare le licenze o implementare un criterio di cassette postali OWA che consentirà di limitare gli utenti in grado di creare nuovi calendari di prenotazione.
+Se un cliente desidera disabilitare l'accesso alle prenotazioni per determinate licenze idonee nel proprio tenant, può utilizzare un criterio di gruppo per limitare le licenze o implementare un criterio cassetta postale OWA che consentirà di limitare gli utenti in grado di creare nuovi calendari di prenotazione.
 
 Se si utilizza un criterio cassetta postale di OWA per disabilitare l'accesso alle prenotazioni, tutti gli utenti disporranno di una licenza di prenotazione, tuttavia quando tentano di accedere all'app, avranno esito positivo solo se fanno parte del criterio o se sono stati aggiunti a un calendario delle prenotazioni esistente come personale. Per [informazioni dettagliate](turn-bookings-on-or-off.md) , vedere la sezione "Consenti solo gli utenti selezionati per creare calendari di prenotazione".
 
@@ -114,7 +114,7 @@ Bookings è la soluzione ideale sia per i clienti aziendali sia per le piccole i
 
 ### <a name="how-do-i-get-microsoft-bookings"></a>Come si ottengono le prenotazioni Microsoft?
 
-Le prenotazioni sono disponibili in Microsoft 365 per i clienti con licenze Business Premium, a3, a5, E3 ed E5, insieme a un'app Companion iOS e Android. Le prenotazioni non sono disponibili come app autonoma. Outlook Web App o Outlook sul Web devono essere abilitati per l'utilizzo di prenotazioni, poiché memorizza i dati in Outlook.
+Le prenotazioni sono disponibili in Microsoft 365 per i clienti con licenze Microsoft 365 Business Premium, Microsoft 365 business standard, a3, a5, E3 ed E5, insieme a un'app Companion iOS e Android. Le prenotazioni non sono disponibili come app autonoma. Outlook Web App o Outlook sul Web devono essere abilitati per l'utilizzo di prenotazioni, poiché memorizza i dati in Outlook.
 
 Una licenza di prenotazione fornisce funzionalità complete al prodotto, tra cui la creazione e la gestione dei calendari. Consente inoltre agli utenti di visualizzare e modificare i calendari esistenti, quando gli utenti vengono aggiunti come membri del personale in un ruolo amministratore o visualizzatore.
 
@@ -172,9 +172,9 @@ Un'impostazione denominata **Maximum lead time** determina il più lontano in an
 
 ### <a name="how-does-bookings-work-across-time-zones"></a>In che modo le prenotazioni interagiscono tra fusi orari?
 
-Tutti gli orari sono nel fuso orario di ufficio (il fuso orario locale) per impostazione predefinita. Questo significa che tutte le impostazioni configurate per un calendario delle prenotazioni, ad esempio le ore lavorative, verranno visualizzate nel fuso orario. La pagina Self-Service ha la possibilità di visualizzare tutti i tempi di appuntamenti nel fuso orario dell'utente finale, che può essere disattivato se lo si desidera.Se **sempre la visualizzazione delle fasce orarie nel fuso orario di ufficio** rimane deselezionata nella scheda pagina prenotazioni, gli utenti che visitano la pagina vedranno gli intervalli di tempo nei rispettivi fusi orari locali.
+Tutti gli orari sono nel fuso orario di ufficio (il fuso orario locale) per impostazione predefinita. Questo significa che tutte le impostazioni configurate per un calendario delle prenotazioni, ad esempio le ore lavorative, verranno visualizzate nel fuso orario. La pagina Self-Service ha la possibilità di visualizzare tutti i tempi di appuntamenti nel fuso orario dell'utente finale, che può essere disattivato se lo si desidera. Se **sempre la visualizzazione delle fasce orarie nel fuso orario di ufficio** rimane deselezionata nella scheda pagina prenotazioni, gli utenti che visitano la pagina vedranno gli intervalli di tempo nei rispettivi fusi orari locali.
 
-:::image type="content" source="media/bookings-faq-region.png" alt-text="Pianificazione nelle prenotazioni":::
+:::image type="content" source="media/bookings-faq-region.png" alt-text="Impostazioni delle aree di prenotazione e del fuso orario":::
 
 Non è previsto l'impostazione del fuso orario per il personale nelle prenotazioni. Il fuso orario del personale e quindi l'orario di ufficio sarà nel fuso orario di ufficio.
 
@@ -200,9 +200,9 @@ Sì, è presente una funzionalità di prenotazioni di gruppo che consente a più
 
 ### <a name="can-calendars-remain-unpublished-not-public-facing-but-still-accessible-to-designated-users"></a>I calendari possono rimanere inediti (non di fronte pubblico) ma ancora accessibili agli utenti designati?
 
-Sì. È presente una casella di controllo nella scheda pagina di prenotazione nell'app Web: **richiedere l'esecuzione di un account di Microsoft 365 o di Office 365 da**parte dell'organizzazione. Se si seleziona questa casella di controllo, si limita l'accesso alle pagine in modalità self-service solo a quelle presenti all'interno del tenant. Il calendario delle prenotazioni che si trova all'interno dell'app Web per la creazione e la gestione può essere eseguito solo dagli utenti aggiunti come personale alla pagina con ruoli di amministratore o di visualizzatore.
+Sì. È presente una casella di controllo nella scheda pagina di prenotazione nell'app Web: **richiedere l'esecuzione di un account di Microsoft 365 o di Office 365 da** parte dell'organizzazione. Se si seleziona questa casella di controllo, si limita l'accesso alle pagine in modalità self-service solo a quelle presenti all'interno del tenant. Il calendario delle prenotazioni che si trova all'interno dell'app Web per la creazione e la gestione può essere eseguito solo dagli utenti aggiunti come personale alla pagina con ruoli di amministratore o di visualizzatore.
 
-:::image type="content" source="media/bookings-faq-access-ctrl.png" alt-text="Pianificazione nelle prenotazioni":::
+:::image type="content" source="media/bookings-faq-access-ctrl.png" alt-text="Controllo di accesso alle pagine di prenotazione nelle prenotazioni":::
 
 ### <a name="how-frequently-does-the-home-page-update"></a>Con quale frequenza viene aggiornata la Home page?
 
@@ -250,7 +250,7 @@ Ogni calendario delle prenotazioni viene gestito in modo indipendente. Non esist
 
 L'accesso all'app Web bookings implica l'autenticazione tramite l'autenticazione di Azure Active Directory (AAD) normale. La pagina di prenotazione self-service può essere messa a disposizione di tutti gli utenti con il collegamento alla pagina Web. Tuttavia, quando è selezionata l'impostazione **Richiedi un account di microsoft 365 o Office 365 dall'organizzazione** per la Rubrica, la pagina viene limitata per essere utilizzata solo all'interno del tenant di Microsoft 365 (utilizzando l'autenticazione AAD).
 
-:::image type="content" source="media/bookings-faq-access-ctrl.png" alt-text="Pianificazione nelle prenotazioni":::
+:::image type="content" source="media/bookings-faq-access-ctrl.png" alt-text="Controllo di accesso alle pagine di prenotazione nelle prenotazioni":::
 
 ### <a name="does-customer-data-leave-the-production-system-for-any-reason"></a>I dati dei clienti lasciano il sistema di produzione per qualsiasi motivo?
 
@@ -303,18 +303,20 @@ Affinché le prenotazioni siano sincronizzate correttamente con i calendari dei 
 
 1. Accedere a Microsoft 365, quindi selezionare **Outlook** dall'icona di avvio delle app.
 
-   ![Immagine di Outlook nell'icona di avvio delle app](../media/bookings-applauncher-outlook.png)
+   > [!div class="mx-imgBorder"]
+   > ![Immagine di Outlook nell'icona di avvio delle app](../media/bookings-applauncher-outlook.png)
 
 1. Nella parte superiore della pagina, selezionare **Condividi** \> **Calendario**.
 
    ![Immagine del menu di condivisione del calendario](../media/bookings-share-calendar.png)
 
-1. Nella sezione **utenti all'interno della propria organizzazione** selezionare la casella di menu a discesa accanto a **organizzazione**e quindi selezionare **può visualizzare quando sono occupato**.
+1. Nella sezione **utenti all'interno della propria organizzazione** selezionare la casella di menu a discesa accanto a **organizzazione** e quindi selezionare **può visualizzare quando sono occupato**.
 
-> [!NOTE]
-> Questa impostazione consente di condividere le informazioni sulla disponibilità con le prenotazioni e con gli altri utenti dell'organizzazione. Non include altre informazioni, ad esempio il tipo di appuntamento pianificato, a cui è stato pianificato l'appuntamento o il percorso.
+   > [!NOTE]
+   > Questa impostazione consente di condividere le informazioni sulla disponibilità con le prenotazioni e con gli altri utenti dell'organizzazione. Non include altre informazioni, ad esempio il tipo di appuntamento pianificato, a cui è stato pianificato l'appuntamento o il percorso.
 
-   ![Immagine della schermata di condivisione del calendario con la visualizzazione possibile quando sono occupato abilitato](../media/bookings-view-busy.png)
+   > [!div class="mx-imgBorder"]
+   > ![Immagine della schermata di condivisione del calendario con la visualizzazione possibile quando sono occupato abilitato](../media/bookings-view-busy.png)
 
 1. Scegliere **Fatto**.
 
@@ -335,7 +337,7 @@ Se un dipendente ha lasciato la propria azienda e li ha rimossi dall'organizzazi
 
 Per verificare se sono presenti più calendari, nel menu a sinistra selezionare la freccia a discesa accanto al nome della società e quindi selezionare **Apri**. Se si dispone di un solo calendario, sarà possibile visualizzare solo l'opzione per aggiungere un calendario di prenotazione. In questo esempio viene mostrato che è presente un secondo calendario denominato "contoso CO".
 
-   ![Immagine di scegliere una schermata del calendario con un secondo calendario visualizzato](../media/bookings-choose-calendar.png)
+![Immagine di scegliere una schermata del calendario con un secondo calendario visualizzato](../media/bookings-choose-calendar.png)
 
 ### <a name="theres-a-syncing-error-we-cant-identify"></a>È presente un errore di sincronizzazione che non è possibile identificare
 

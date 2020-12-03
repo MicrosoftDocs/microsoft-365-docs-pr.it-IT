@@ -16,18 +16,18 @@ ms.custom:
 - Ent_TLGs
 - seo-marvel-apr2020
 description: Configurare l'autenticazione a più fattori tramite messaggi di testo inviati a uno Smart Phone nell'ambiente di testing di Microsoft 365 per l'organizzazione.
-ms.openlocfilehash: f41fe7ad933f85c4b44a1e90529a998651412191
-ms.sourcegitcommit: 53ff1fe6d6143b0bf011031eea9b85dc01ae4f74
+ms.openlocfilehash: 4c59405c1ce59cafaf0309e2314e5cbfa4eb080a
+ms.sourcegitcommit: c1dd5be42fe0c5dcc7c05817c941edd9076febf8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48487141"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "49558443"
 ---
 # <a name="multi-factor-authentication-for-your-microsoft-365-for-enterprise-test-environment"></a>Autenticazione a più fattori per l'ambiente di testing di Microsoft 365 per l'organizzazione
 
 *Questa guida del laboratorio di testing può essere utilizzata per ambienti di testing Microsoft 365 per Enterprise e Office 365 Enterprise.*
 
-Per un ulteriore livello di sicurezza per l'accesso a Microsoft 365 o qualsiasi servizio o applicazione che utilizza il tenant di Azure AD per l'abbonamento, è possibile abilitare l'autenticazione a più fattori di Azure, che richiede più di un semplice nome utente e una password per verificare un account.
+Per un ulteriore livello di sicurezza per l'accesso a Microsoft 365 o qualsiasi servizio o applicazione che utilizza il tenant di Azure AD per l'abbonamento, è possibile abilitare l'autenticazione a più fattori di Azure AD, che richiede più di un semplice nome utente e una password per verificare un account.
 
 Con l'autenticazione a più fattori, agli utenti viene richiesto di riconoscere una telefonata, digitare un codice di verifica inviato in un messaggio di testo oppure verificare l'autenticazione con un'app nei rispettivi smartphone dopo aver inserito correttamente le password. È possibile effettuare l'accesso solo dopo aver soddisfatto questo secondo fattore di autenticazione.
   
@@ -64,9 +64,9 @@ Abilitare l'autenticazione a più fattori per l'account User 2 procedendo nel mo
     
 4. Nell'elenco, selezionare l'account **User 2** .
     
-5. Nella sezione **User 2** fare clic su **Abilita**in **passaggi rapidi**.
+5. Nella sezione **User 2** fare clic su **Abilita** in **passaggi rapidi**.
     
-6. Nella finestra **di dialogo informazioni sull'abilitazione dell'autenticazione** a più fattori selezionare **Abilita autenticazione**a più fattori.
+6. Nella finestra **di dialogo informazioni sull'abilitazione dell'autenticazione** a più fattori selezionare **Abilita autenticazione** a più fattori.
     
 7. Nella finestra di dialogo **aggiornamenti con esito positivo** selezionare **Chiudi**.
     
@@ -88,7 +88,7 @@ Completare la configurazione dell'account User 2 per utilizzare un messaggio di 
     
    - Immettere il numero di telefono dello Smart Phone che riceverà i messaggi di testo.
     
-   - In **Metodo**selezionare **Invia un codice tramite messaggio di testo**.
+   - In **Metodo** selezionare **Invia un codice tramite messaggio di testo**.
     
 5. Selezionare **Avanti**.
     
@@ -111,7 +111,7 @@ Successivamente, creare un nuovo gruppo denominato MFAUsers e aggiungere l'accou
 1. Nella scheda dell'interfaccia di **amministrazione di Microsoft 365** selezionare **gruppi** nel riquadro di spostamento sinistro e quindi selezionare **gruppi**.
 2. Selezionare **Aggiungi un gruppo**.
 3. Nel riquadro **scegliere un tipo di gruppo** , selezionare **sicurezza**, quindi fare clic su **Avanti**.
-4. Nel riquadro **Configura le nozioni di base** , selezionare **Crea gruppo**e quindi **Chiudi**.
+4. Nel riquadro **Configura le nozioni di base** , selezionare **Crea gruppo** e quindi **Chiudi**.
 5. Nel riquadro **revisione e termina aggiunta gruppo** , immettere **MFAUsers**, quindi fare clic su **Avanti**.
 6. Nell'elenco dei gruppi, selezionare il gruppo **MFAUsers** .
 7. Nel riquadro **MFAUsers** , selezionare **membri**, quindi fare clic su **Visualizza tutti e Gestisci membri**.
@@ -120,14 +120,14 @@ Successivamente, creare un nuovo gruppo denominato MFAUsers e aggiungere l'accou
 Successivamente, creare un criterio di accesso condizionale per richiedere l'autenticazione a più fattori per i membri del gruppo MFAUsers.
 
 1. In una nuova scheda del browser, passare a [https://portal.azure.com](https://portal.azure.com) .
-2. Selezionare **Azure Active Directory**  >  **Security**  >  **l'accesso condizionale**per la sicurezza di Azure Active Directory.
+2. Selezionare **Azure Active Directory**  >  **Security**  >  **l'accesso condizionale** per la sicurezza di Azure Active Directory.
 3. Nel riquadro **criteri di accesso condizionale** selezionare **nuovo criterio**.
 4. Nel **nuovo** riquadro, immettere **AMF per gli account utente** nella casella **nome** .
 5. Nella sezione **assegnazioni** selezionare **utenti e gruppi**.
 6. Nella scheda **Includi** del riquadro **utenti e gruppi** Selezionare Seleziona utenti e **gruppi utenti e**  >  **gruppi**  >  **Select**.
 7. Nel riquadro **Seleziona** selezionare il gruppo **MFAUsers** e **quindi selezionare**  >  **fine**.
 8. Nella sezione **controlli di accesso** del **nuovo** riquadro selezionare **Concedi**.
-9. Nel riquadro **Concedi** selezionare **Richiedi autenticazione**a più fattori e quindi selezionare **Seleziona**.
+9. Nel riquadro **Concedi** selezionare **Richiedi autenticazione** a più fattori e quindi selezionare **Seleziona**.
 10. Nel **nuovo** riquadro, selezionare attivato **per** **attivare il criterio**, quindi selezionare **Crea**.
 11. Chiudere le schede di interfaccia di amministrazione di **Azure Portal** e **Microsoft 365** .
 

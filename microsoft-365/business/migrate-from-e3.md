@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Informazioni su come spostare la propria azienda in Microsoft 365 Business Premium da Office 365 E3.
-ms.openlocfilehash: b8aa58f1f050ec6247479ed02e142507a2df45fc
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: eebf78c24ed4bfd1a4fc2d843f37aebbe3d35e31
+ms.sourcegitcommit: c1dd5be42fe0c5dcc7c05817c941edd9076febf8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48842161"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "49558259"
 ---
 # <a name="migrating-from-office-365-e3-to-microsoft-365-business-premium"></a>Migrazione da Office 365 E3 a Microsoft 365 Business Premium 
 
@@ -42,7 +42,7 @@ In questa tabella vengono illustrate le differenze tra Microsoft 365 Business Pr
 | Funzionalità    | Supporto in Microsoft 365 Business Premium    | Supporto in Office 365 E3 | 
 |:-------|:-----|:-----|
 | **Locale**        | | | 
-| App di Office<sup>1</sup>    | Microsoft 365 Apps for business    | Microsoft 365 Apps for enterprise | 
+| App di Office<sup>1</sup>    | App Microsoft 365 per le aziende    | Microsoft 365 Apps for enterprise | 
 | **App per la produttività del cloud**        | | | 
 | Exchange Online e Outlook    | 50 GB di spazio di archiviazione per cassetta postale e archiviazione Exchange Online illimitata    | 100 GB di spazio di archiviazione per cassetta postale e archiviazione Exchange Online illimitata | 
 | Teams    | ![Incluso in Microsoft 365 Business Premium](../media/check-mark.png)    | ![Incluso con Office 365 E3](../media/check-mark.png) | 
@@ -53,7 +53,7 @@ In questa tabella vengono illustrate le differenze tra Microsoft 365 Business Pr
 | **Protezione dalle minacce**        | | | 
 | Difensore per Office 365 piano 1 | ![Incluso in Microsoft 365 Business Premium](../media/check-mark.png)    | Non incluso, ma può essere aggiunto | 
 | **Gestione delle identità**        | | | 
-| Reimpostazione della password in modalità self-service per gli account di Azure Active Directory (Azure AD), l'autenticazione a più fattori di Azure (AMF), l'accesso condizionale, il writeback delle password per le identità locali|     ![Incluso in Microsoft 365 Business Premium](../media/check-mark.png)    |  | 
+| Reimpostazione della password in modalità self-service per gli account di Azure Active Directory (Azure AD), autenticazione a più fattori di Azure AD, accesso condizionale, writeback delle password per le identità locali|     ![Incluso in Microsoft 365 Business Premium](../media/check-mark.png)    |  | 
 | **Gestione di dispositivi e app**        | | |
 | Microsoft Intune, Windows Autopilot|     ![Incluso in Microsoft 365 Business Premium](../media/check-mark.png)    |  |
 | Attivazione di computer condivisi|     ![Incluso in Microsoft 365 Business Premium](../media/check-mark.png)    | ![Incluso con Office 365 E3](../media/check-mark.png)| 

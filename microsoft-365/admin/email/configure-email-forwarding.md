@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: ab5eb117-0f22-4fa7-a662-3a6bdb0add74
 description: Impostare l'inoltro della posta elettronica su uno o più account di posta elettronica utilizzando Office365.
-ms.openlocfilehash: acdca0b19eda70d7da34ce1093a4a1b11052fd79
-ms.sourcegitcommit: 38d828ae8d4350ae774a939c8decf30cb36c3bea
+ms.openlocfilehash: c821d4363a053b432c4376d7b4fec4926df7b568
+ms.sourcegitcommit: ff1f0a97e9d43bc786f04d2ea7e01695531b9f28
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 12/02/2020
-ms.locfileid: "49551835"
+ms.locfileid: "49560793"
 ---
 # <a name="configure-email-forwarding"></a>Configurare l'inoltro della posta elettronica
 
@@ -39,6 +39,9 @@ ms.locfileid: "49551835"
 ::: moniker-end
   
 Come amministratore di un'organizzazione, potrebbe essere necessario disporre dei requisiti aziendali per configurare l'inoltro della posta elettronica per la cassetta postale di un utente. L'inoltro della posta elettronica consente di inoltrare i messaggi inviati alla cassetta postale di un utente a quella di un altro utente all'interno o all'esterno dell'organizzazione.
+
+> [!IMPORTANT]
+> È possibile utilizzare i criteri di filtro della posta indesiderata in uscita per controllare l'inoltro automatico ai destinatari esterni. Per ulteriori informazioni, vedere [controllo dell'inoltro automatico di messaggi di posta elettronica esterno in Microsoft 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/external-email-forwarding?view=o365-worldwide#how-the-outbound-spam-filter-policy-settings-work-with-other-automatic-email-forwarding-controls).
 
   
 ## <a name="configure-email-forwarding"></a>Configurare l'inoltro della posta elettronica
@@ -102,5 +105,6 @@ Per eseguire questa procedura, è necessario essere un amministratore di Exchang
      In alternativa, nell'interfaccia di amministrazione, [creare un gruppo di distribuzione](../setup/create-distribution-lists.md), [aggiungere gli indirizzi](add-user-or-contact-to-distribution-list.md)e quindi impostare l'inoltro in modo che punti al DL seguendo le istruzioni riportate in questo articolo.
     
 5. Non eliminare l'account dell'utente che si sta inoltrando o rimuovere la propria licenza.  In caso contrario, l'inoltro della posta elettronica si arresterà. 
+
 
 ::: moniker-end 

@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-m365-defender
 description: Gli amministratori possono acquisire informazioni sulla protezione dalle minacce in Microsoft 365 e configurare come utilizzarla per l'organizzazione.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d80e81ab5648d186bb72f29acc010442877aba7c
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.openlocfilehash: 98a20c8805ff9eb735ca880cfc24a0acf9698b3e
+ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49356680"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49561208"
 ---
 # <a name="protect-against-threats"></a>Protezione dalle minacce
 
@@ -56,7 +56,7 @@ Le funzionalità di protezione dalle minacce sono incluse in *tutte le* sottoscr
 |Spurgo automatico zero-hour (per la posta elettronica)|[EOP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)|
 |Protezione da URL e file dannosi nei messaggi di posta elettronica e nei documenti di Office (collegamenti sicuri e allegati sicuri)|[Microsoft Defender per Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)|
 |Attivazione dei carichi di lavoro ATP per SharePoint, OneDrive e Microsoft Teams|[Difensore per Office 365 ](atp-for-spo-odb-and-teams.md)|
-|Protezione anti-phishing avanzata|[Defender per Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)|
+|Protezione anti-phishing avanzata|[Difensore per Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)|
 
 ### <a name="roles-and-permissions"></a>Ruoli e autorizzazioni
 
@@ -71,7 +71,7 @@ Per configurare la protezione per i criteri di Office 365, è necessario essere 
 |Gestione organizzazione di Exchange Online|[Autorizzazioni in Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo) <br>e<br> [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell)|
 |
 
-Per ulteriori informazioni, vedere [Permissions in the Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md).
+Per ulteriori informazioni, vedere [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
 ## <a name="before-you-begin-turn-on-audit-logging-for-reporting-and-investigation"></a>Prima di iniziare, abilitare la registrazione di controllo per la creazione di report e le indagini
 

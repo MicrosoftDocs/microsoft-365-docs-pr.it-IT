@@ -15,12 +15,12 @@ ms.custom:
 - M365solutions
 f1.keywords: NOCSH
 description: Informazioni su come gestire l'accesso in Microsoft 365 gruppi, teams e SharePoint.
-ms.openlocfilehash: ec4e62f4d77b9aadbdc7457631ac1c4b498221c3
-ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
+ms.openlocfilehash: 2a3a5a126a340a8ec1036eaebd22a0a0a81cf6c3
+ms.sourcegitcommit: c1dd5be42fe0c5dcc7c05817c941edd9076febf8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48377570"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "49558223"
 ---
 # <a name="governing-access-in-microsoft-365-groups-teams-and-sharepoint"></a>Gestione dell'accesso in Microsoft 365 groups, teams e SharePoint
 
@@ -35,7 +35,7 @@ Nella tabella seguente viene fornita una guida di riferimento rapida per i contr
 ||Appartenenza a gruppi dinamici in base alle regole|[Creare o aggiornare un gruppo dinamico in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-create-rule)|
 ||Controllare gli utenti che possono condividere file, cartelle e siti.|[Configurare e gestire le richieste di accesso](https://support.microsoft.com/office/94b26e0b-2822-49d4-929a-8455698654b3)|
 |Accesso condizionale|||
-||Autenticazione a più fattori|[Multi-Factor Authentication di Azure](https://docs.microsoft.com/azure/active-directory/authentication/concept-mfa-howitworks)|
+||Autenticazione a più fattori|[Autenticazione a più fattori di Azure AD](https://docs.microsoft.com/azure/active-directory/authentication/concept-mfa-howitworks)|
 ||Controllo dell'accesso al dispositivo basato sul gruppo, sul team o sulla sensibilità del sito.|[Usare le etichette di riservatezza per proteggere il contenuto in Microsoft Teams, gruppi di Microsoft 365 e siti di SharePoint](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites)|
 ||Limitare l'accesso al sito per i dispositivi non gestiti.|[Controllare l'accesso a SharePoint da dispositivi non gestiti](https://docs.microsoft.com/sharepoint/control-access-from-unmanaged-devices)|
 ||Controllare l'accesso ai siti in base alla posizione|[Controllare l'accesso ai dati di SharePoint e OneDrive in base al percorso di rete](https://docs.microsoft.com/sharepoint/control-access-based-on-network-location)|
@@ -73,7 +73,7 @@ I siti di SharePoint offrono la possibilità di aggiungere proprietari, membri e
 
 Con Microsoft 365, è possibile richiedere l'autenticazione a più fattori per entrambe le persone all'interno e all'esterno dell'organizzazione. Sono disponibili molte opzioni per le circostanze in cui le persone vengono richieste per un secondo fattore di autenticazione. Si consiglia di distribuire l'autenticazione a più fattori per l'organizzazione:
 
-- [Multi-Factor Authentication di Azure](https://docs.microsoft.com/azure/active-directory/authentication/concept-mfa-howitworks)
+- [Autenticazione a più fattori di Azure AD](https://docs.microsoft.com/azure/active-directory/authentication/concept-mfa-howitworks)
 
 Se si dispone di informazioni riservate in alcuni gruppi e team, è possibile applicare i criteri di gestione dei dispositivi basati sull'etichetta di riservatezza del gruppo o del team. È possibile bloccare l'accesso completamente dai dispositivi non gestiti o consentire l'accesso solo web limitato:
 

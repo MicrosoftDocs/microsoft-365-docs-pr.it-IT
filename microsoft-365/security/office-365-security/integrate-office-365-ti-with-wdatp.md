@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Utilizzare Microsoft Defender per Office 365 insieme a Microsoft Defender per endpoint per ottenere informazioni più dettagliate sulle minacce nei confronti dei dispositivi e del contenuto della posta elettronica.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 7f668aa1234509789dacd2b018b94f1bfbc79e2c
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.openlocfilehash: 8a598dce3a8049d97d43b742477ca8f7a2bfeadb
+ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49357780"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49561220"
 ---
 # <a name="use-microsoft-defender-for-office-365-together-with-microsoft-defender-for-endpoint"></a>Utilizzare Microsoft Defender per Office 365 insieme a Microsoft Defender per endpoint
 
@@ -47,7 +47,7 @@ In questo esempio, è possibile vedere che i destinatari del messaggio di posta 
 
 - L'organizzazione deve disporre di Microsoft Defender per Office 365 (o Office 365 E5) e Microsoft Defender per endpoint.
     
-- È necessario essere un amministratore globale o un ruolo di amministratore della sicurezza, ad esempio amministratore della sicurezza, assegnato [nel &amp; centro conformità sicurezza](https://protection.office.com). (Vedere [Permissions in the Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md))
+- È necessario essere un amministratore globale o disporre di un ruolo di amministratore della sicurezza, ad esempio amministratore della sicurezza, assegnato nel [Centro sicurezza & Compliance](https://protection.office.com). (Vedere [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md))
     
 - È necessario disporre dell'accesso sia all' [esploratore (o ai rilevamenti in tempo reale)](threat-explorer.md) nel centro sicurezza & compliance e al Centro protezione Microsoft Defender.
     
@@ -75,4 +75,4 @@ L'integrazione di Microsoft Defender per Office 365 con Microsoft Defender per e
   
 [Microsoft Defender per Office 365](office-365-atp.md)
   
-[Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection)
+[Microsoft Defender per endpoint](https://docs.microsoft.com/windows/security/threat-protection)

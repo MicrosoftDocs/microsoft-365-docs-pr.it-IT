@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - m365solution-identitydevice
 - m365solution-overview
-ms.openlocfilehash: 993dd1ed66ca5bc6635c0eadf2dc7345ab84b57d
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.openlocfilehash: 0144e9478e74e252e0c4ccc0c902df376129c388
+ms.sourcegitcommit: c1dd5be42fe0c5dcc7c05817c941edd9076febf8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49356920"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "49558287"
 ---
 # <a name="identity-and-device-access-configurations"></a>Configurazioni di identità e accesso dei dispositivi
 
@@ -110,7 +110,7 @@ Azure AD offre una serie completa di funzionalità di gestione delle identità. 
 
 |Capacità o funzionalità|Descrizione|Licenze|
 |---|---|---|
-|[Autenticazione a più fattori (MFA)](/azure/active-directory/authentication/concept-mfa-howitworks)|L'AMF richiede agli utenti di fornire due forme di verifica, ad esempio una password utente e una notifica dall'app Microsoft Authenticator o da una telefonata. Il Master riduce notevolmente il rischio che le credenziali rubate possano essere utilizzate per accedere all'ambiente. Microsoft 365 utilizza il servizio di autenticazione a più fattori di Azure per gli accessi basati su AMF.|Microsoft 365 E3 o E5|
+|[Autenticazione a più fattori (MFA)](/azure/active-directory/authentication/concept-mfa-howitworks)|L'AMF richiede agli utenti di fornire due forme di verifica, ad esempio una password utente e una notifica dall'app Microsoft Authenticator o da una telefonata. Il Master riduce notevolmente il rischio che le credenziali rubate possano essere utilizzate per accedere all'ambiente. Microsoft 365 utilizza il servizio di autenticazione a più fattori di Azure AD per gli accessi basati su AMF.|Microsoft 365 E3 o E5|
 |[Accesso condizionale](/azure/active-directory/conditional-access/overview)|Azure AD valuta le condizioni dell'accesso dell'utente e utilizza i criteri di accesso condizionale per determinare gli accessi consentiti. Ad esempio, in questa guida viene illustrato come creare un criterio di accesso condizionale per richiedere la conformità del dispositivo all'accesso ai dati riservati. In questo modo si riduce notevolmente il rischio che un hacker con il proprio dispositivo e le credenziali rubate possano accedere ai dati riservati. Protegge inoltre i dati sensibili nei dispositivi, in quanto i dispositivi devono soddisfare requisiti specifici per la sicurezza e l'integrità.|Microsoft 365 E3 o E5|
 |[Gruppi di Azure AD](/azure/active-directory/fundamentals/active-directory-manage-groups)|I criteri di accesso condizionale, la gestione dei dispositivi con Intune e persino le autorizzazioni per i file e i siti dell'organizzazione si basano sull'assegnazione agli account utente o ai gruppi di Azure AD. Si consiglia di creare gruppi di Azure AD che corrispondono ai livelli di protezione che si stanno implementando. Ad esempio, il personale esecutivo è probabilmente un obiettivo di valore superiore per gli hacker. Pertanto, è opportuno aggiungere gli account utente di questi dipendenti a un gruppo di Azure AD e assegnare questo gruppo ai criteri di accesso condizionale e ad altri criteri che applicano un livello di protezione più elevato per l'accesso.|Microsoft 365 E3 o E5|
 |[Registrazione del dispositivo](/azure/active-directory/devices/overview)|La registrazione di un dispositivo in Azure AD per la creazione di un'identità per il dispositivo. Questa identità viene utilizzata per autenticare il dispositivo quando un utente accede e per applicare criteri di accesso condizionale che richiedono PC conformi a un dominio. Per queste linee guida, viene utilizzata la registrazione dei dispositivi per registrare automaticamente i computer Windows con join di dominio. La registrazione del dispositivo è un prerequisito per la gestione dei dispositivi con Intune.|Microsoft 365 E3 o E5|

@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: Ottenere la versione più recente dell'isolamento basato sull'hardware. Impedire attacchi correnti ed emergenti come exploit o collegamenti dannosi dall'interrompere la produttività dei dipendenti e la sicurezza dell'organizzazione.
-ms.openlocfilehash: c9b31ff91521b6badda31b6eb3202f370769a0fd
-ms.sourcegitcommit: 9546708a5506fdbadbfe2500cbf1bd1aeaec6fcb
+ms.openlocfilehash: 075006bb8f000dbbda2fd564e0c7cf83c1a15129
+ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "49021074"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49561436"
 ---
 # <a name="application-guard-for-office-public-preview-for-admins"></a>Applicazione di protezione per Office (anteprima pubblica) per gli amministratori
 
@@ -29,8 +29,8 @@ ms.locfileid: "49021074"
 
 **Si applica a:** Word, Excel e PowerPoint per Microsoft 365, Windows 10 Enterprise
 
->[!IMPORTANT]
->Alcune informazioni si riferiscono a un prodotto prerilasciato che può essere modificato in modo sostanziale prima che venga rilasciato commercialmente. Microsoft makes no warranties, express or implied, with respect to the information provided here.
+> [!IMPORTANT]
+> Alcune informazioni si riferiscono a un prodotto prerilasciato che può essere modificato in modo sostanziale prima che venga rilasciato commercialmente. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 Microsoft Defender Application Guard for Office (Application Guard for Office) consente di evitare che i file non attendibili accedano a risorse attendibili, mantenendo l'organizzazione sicura da attacchi nuovi ed emergenti. In questo articolo vengono illustrati gli amministratori tramite la configurazione dei dispositivi per un'anteprima di Application Guard per Office. Fornisce informazioni sui requisiti di sistema e sui passaggi di installazione per abilitare la protezione delle applicazioni per Office in un dispositivo.
 
@@ -38,15 +38,15 @@ Microsoft Defender Application Guard for Office (Application Guard for Office) c
 
 ### <a name="minimum-hardware-requirements"></a>Requisiti hardware minimi
 
-* **CPU** : 64 bit, 4 core (fisico o virtuale), estensioni di virtualizzazione (Intel VT-x o AMD-V), Core i5 equivalente o superiore consigliato
-* **Memoria fisica** : 8 GB di RAM
-* **Disco rigido** : 10 GB di spazio libero nell'unità di sistema (consigliato da SSD)
+* **CPU**: 64 bit, 4 core (fisico o virtuale), estensioni di virtualizzazione (Intel VT-x o AMD-V), Core i5 equivalente o superiore consigliato
+* **Memoria fisica**: 8 GB di RAM
+* **Disco rigido**: 10 GB di spazio libero nell'unità di sistema (consigliato da SSD)
 
 ### <a name="minimum-software-requirements"></a>Requisiti software minimi
 
-* **Windows 10** : Windows 10 Enterprise Edition, generazione Client versione 2004 (20H1) Build 19041
-* **Office** : build di Office beta Channel versione 2008 16.0.13212 o versioni successive
-* **Pacchetto di aggiornamento** : aggiornamenti della sicurezza cumulativi mensili di Windows 10 [KB4571756](https://support.microsoft.com/help/4571756/windows-10-update-KB4571756)
+* **Windows 10**: Windows 10 Enterprise Edition, generazione Client versione 2004 (20H1) Build 19041
+* **Office**: build di Office beta Channel versione 2008 16.0.13212 o versioni successive
+* **Pacchetto di aggiornamento**: aggiornamenti della sicurezza cumulativi mensili di Windows 10 [KB4571756](https://support.microsoft.com/help/4571756/windows-10-update-KB4571756)
 
 Per informazioni dettagliate sui requisiti di sistema, vedere [requisiti di sistema per Microsoft Defender Application Guard](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-application-guard/reqs-md-app-guard). Per ulteriori informazioni sulle compilazioni di Office Insider Preview, vedere [Guida introduttiva alla distribuzione di Office Insider Builds](https://insider.office.com/business/deploy).
 
@@ -90,7 +90,7 @@ Questo passaggio garantisce che i dati necessari per identificare e correggere i
 
    ![Menu Start](../../media/ag05-diagnostic.png)
 
-2. Nelle **impostazioni di Windows** , selezionare **privacy**.
+2. Nelle **impostazioni di Windows**, selezionare **privacy**.
 
    ![Menu impostazioni di Windows](../../media/ag06-diagnostic.png)
 
@@ -158,9 +158,9 @@ Se si verificano problemi durante l'avvio dell'applicazione di protezione per Of
 
 4. Compilare la casella **spiega in più dettagli** con una descrizione dettagliata del problema che si è verificato e quali operazioni sono state eseguite, quindi selezionare **Avanti**.
 
-5. Selezionare la bolla accanto a problema. Verificare che la categoria selezionata sia **sicurezza e privacy \> Microsoft Defender Application Guard – Office** , quindi selezionare **Avanti**.
+5. Selezionare la bolla accanto a problema. Verificare che la categoria selezionata sia **sicurezza e privacy \> Microsoft Defender Application Guard – Office**, quindi selezionare **Avanti**.
 
-6. Selezionare **nuovo feedback** , quindi **Avanti**.
+6. Selezionare **nuovo feedback**, quindi **Avanti**.
 
 7. Raccogliere le tracce sul problema:
 

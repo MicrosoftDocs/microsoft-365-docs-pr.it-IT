@@ -19,24 +19,30 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Informazioni su come utilizzare un criterio di prevenzione della perdita di dati (DLP) per proteggere i documenti che dispongono di proprietà di un sistema di terze parti.
-ms.openlocfilehash: 38177e9ec813c8eb0c36428d3e9f5b6cb0902861
-ms.sourcegitcommit: 50526f81ce3f57d58f0a7c0df4fe21685c5a0236
+ms.openlocfilehash: a3dd82dae76336dc3d1293430e10ba505585e707
+ms.sourcegitcommit: a566ef236c85edfd566c8c3f859b80f9e5ce0473
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45434323"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49562977"
 ---
 # <a name="create-a-dlp-policy-to-protect-documents-with-fci-or-other-properties"></a>Creare criteri di prevenzione della perdita dei dati per proteggere i documenti con FCI o altre proprietà
 
-In Microsoft 365, è possibile utilizzare un criterio di prevenzione della perdita di dati (DLP) per identificare, monitorare e proteggere le informazioni riservate. Molte organizzazioni dispongono già di un processo per identificare e classificare le informazioni riservate mediante le proprietà di classificazione nell'Infrastruttura di classificazione file (FCI) di Windows Server, le proprietà dei documenti in SharePoint o le proprietà dei documenti applicate da un sistema di terze parti. Se in questo articolo viene descritta l'organizzazione, è possibile creare un criterio DLP che riconosca le proprietà applicate ai documenti da Windows Server FCI o da un altro sistema in modo che sia possibile applicare il criterio DLP ai documenti di Office con valori di proprietà FCI o altri specifici.
+I criteri di prevenzione della perdita di dati (DLP) di 365 Microsoft possono utilizzare proprietà di classificazione o proprietà elemento per identificare gli elementi sensibili. Ad esempio, è possibile utilizzare:
+
+- Proprietà dell'infrastruttura di classificazione file di Windows Server (FCI)
+- Proprietà del documento di SharePoint
+- Proprietà del documento di sistema di terze parti
 
 ![Diagramma con Office 365 e il sistema di classificazione esterno](../media/59ad0ac1-4146-4919-abd1-c74d8508d25e.png)
 
-Ad esempio, l'organizzazione potrebbe utilizzare FCI di Windows Server per identificare i documenti con le informazioni di identificazione personale (PII), come i numeri di previdenza sociale, e quindi classificare il documento impostando la proprietà **Informazioni di identificazione personale** su **Elevata**, **Moderata**, **Bassa**, **Pubblica** o **Non PII** in base al tipo e al numero di occorrenze di informazioni personali rilevate nel documento. In Microsoft 365 è possibile creare un criterio DLP che identifichi i documenti che dispongono di una proprietà impostata su valori specifici, ad esempio **alto** e **medio**, e quindi esegue un'azione, ad esempio bloccando l'accesso a tali file. Lo stesso criterio può disporre di un'altra regola che consente di eseguire un'azione diversa se la proprietà è impostata su **Bassa**, come l'invio di una notifica tramite posta elettronica. In questo modo, DLP si integra con Windows Server FCI e può contribuire alla protezione dei documenti di Office caricati o condivisi in Microsoft 365 da file server basati su Windows Server.
+Ad esempio, è possibile che l'organizzazione utilizzi Windows Server FCI per identificare gli elementi con dati personali, come i numeri di previdenza sociale, e quindi classificare il documento impostando la proprietà di **informazioni** personali su **alto**, **medio**, **basso**, **pubblico** o **No** , in base al tipo e al numero di occorrenze dei dati personale trovati nel documento.
 
-Un criterio DLP cerca semplicemente una coppia di nome/valore di proprietà specifiche. È possibile utilizzare qualsiasi proprietà del documento, purché la proprietà disponga di una proprietà gestita corrispondente per la ricerca in SharePoint. Ad esempio, una raccolta siti di SharePoint potrebbe utilizzare un tipo di contenuto denominato **Report di andata e ritorno** con un campo obbligatorio denominato **Cliente**. Ogni volta che un utente crea un report di questo tipo, è necessario immettere il nome del cliente. Questa coppia di nome/valore della proprietà può essere utilizzata anche in un criterio DLP; ad esempio, se si desidera che una regola blocchi l'accesso al documento per gli utenti esterni quando il campo **Cliente** contiene **Contoso**.
+In Microsoft 365 è possibile creare un criterio DLP che identifichi i documenti che dispongono di una proprietà impostata su valori specifici, ad esempio **alto** e **medio**, e quindi esegue un'azione, ad esempio bloccando l'accesso a tali file. Lo stesso criterio può disporre di un'altra regola che consente di eseguire un'azione diversa se la proprietà è impostata su **Bassa**, come l'invio di una notifica tramite posta elettronica. In questo modo, DLP si integra con Windows Server FCI e può contribuire alla protezione dei documenti di Office caricati o condivisi in Microsoft 365 da file server basati su Windows Server.
 
-Si noti che se si desidera applicare il criterio DLP al contenuto con etichette specifiche di Microsoft 365, non è necessario eseguire la procedura seguente. In alternativa, viene illustrato come [utilizzare un'etichetta di conservazione come condizione in un criterio DLP](data-loss-prevention-policies.md#using-a-retention-label-as-a-condition-in-a-dlp-policy).
+Un criterio DLP cerca semplicemente una coppia di nome/valore di proprietà specifiche. È possibile utilizzare qualsiasi proprietà del documento, purché la proprietà disponga di una proprietà gestita corrispondente per la ricerca in SharePoint. Ad esempio, una raccolta siti di SharePoint potrebbe utilizzare un tipo di contenuto denominato **Report di andata e ritorno** con un campo obbligatorio denominato **Cliente**. Ogni volta che un utente crea un report di questo tipo, è necessario immettere il nome del cliente. Questa coppia nome proprietà/valore può essere utilizzata anche in un criterio DLP, ad esempio se si desidera che la regola di accesso al documento venga bloccata quando il campo **Customer** contiene **Contoso**.
+
+Se si desidera applicare il criterio DLP ai contenuti con etichette specifiche di Microsoft 365, non è necessario eseguire la procedura seguente. In alternativa, viene illustrato come [utilizzare un'etichetta di conservazione come condizione in un criterio DLP](data-loss-prevention-policies.md#using-a-retention-label-as-a-condition-in-a-dlp-policy).
 
 ## <a name="before-you-create-the-dlp-policy"></a>Prima di creare il criterio DLP
 
@@ -82,7 +88,7 @@ Prima di tutto, è necessario caricare un documento con la proprietà cui si des
 
 ## <a name="create-a-dlp-policy-that-uses-an-fci-property-or-other-property"></a>Creare un criterio DLP che utilizza una proprietà FCI o un'altra proprietà
 
-In questo esempio un'organizzazione utilizza FCI nei file server basati su Windows Server. in particolare, si utilizza la proprietà di classificazione FCI **denominata informazioni di identificazione personale** con i possibili valori di **alto**, **moderato**, **basso**, **pubblico**e **non di pii**. Ora desiderano sfruttare la classificazione FCI esistente nei criteri DLP in Office 365.
+In questo esempio un'organizzazione utilizza FCI nei file server basati su Windows Server. in particolare, si utilizza la proprietà di classificazione FCI **denominata informazioni di identificazione personale** con i possibili valori di **alto**, **moderato**, **basso**, **pubblico** e **non di pii**. A questo punto si desidera utilizzare la classificazione FCI esistente nei criteri DLP in Office 365.
 
 Prima di tutto, eseguire la procedura precedente per creare una proprietà gestita in SharePoint Online, che consente di eseguire il mapping alla proprietà sottoposta a ricerca per indicizzazione creata automaticamente dalla proprietà FCI.
 
@@ -94,31 +100,31 @@ Successivamente, si crea un criterio DLP con due regole che entrambe utilizzano 
 
 ### <a name="create-the-dlp-policy-by-using-powershell"></a>Creare il criterio DLP tramite PowerShell
 
-Tenere presente che le **proprietà del documento Condition contengono uno qualsiasi di questi valori** non è temporaneamente disponibile nell'interfaccia utente del &amp; Centro sicurezza e conformità, ma è comunque possibile utilizzare questa condizione tramite PowerShell. È possibile utilizzare i `New\Set\Get-DlpCompliancePolicy` cmdlet per l'utilizzo di un criterio DLP e utilizzare i `New\Set\Get-DlpComplianceRule` cmdlet con il `ContentPropertyContainsWords` parametro per aggiungere le proprietà del documento condition che **contengono uno dei valori seguenti**.
+Le proprietà del documento della condizione **contengono uno qualsiasi di questi valori** non è temporaneamente disponibile nell'interfaccia utente del &amp; Centro sicurezza e conformità, ma è comunque possibile utilizzare PowerShell. È possibile utilizzare i  `New\Set\Get-DlpCompliancePolicy` cmdlet per l'utilizzo di un criterio DLP e utilizzare i  `New\Set\Get-DlpComplianceRule` cmdlet con il  `ContentPropertyContainsWords` parametro per aggiungere le proprietà del documento condition che **contengono uno dei valori seguenti**.
 
 Per ulteriori informazioni su questi cmdlet, vedere [cmdlet del &amp; Centro sicurezza e conformità](https://go.microsoft.com/fwlink/?LinkID=799772&amp;clcid=0x409).
 
 1. [Connettersi al centro sicurezza e &amp; conformità tramite Remote PowerShell](https://go.microsoft.com/fwlink/?LinkID=799771&amp;clcid=0x409)
 
-2. Creare il criterio utilizzando `New-DlpCompliancePolicy` .
+2. Creare il criterio utilizzando  `New-DlpCompliancePolicy` .
 
-   Di seguito è riportato un esempio di PowerShell che consente di creare un criterio DLP che si applica a tutte le posizioni.
+In questa PowerShell viene creato un criterio DLP che si applica a tutte le posizioni.
 
    ```powershell
    New-DlpCompliancePolicy -Name FCI_PII_policy -ExchangeLocation All -SharePointLocation All -OneDriveLocation All -Mode Enable
    ```
 
-3. Creare le due regole sopra descritte utilizzando `New-DlpComplianceRule` , in cui una regola è per il valore **basso** e un'altra regola per i valori **alto** e **medio** .
+3. Creare le due regole sopra descritte utilizzando  `New-DlpComplianceRule` , in cui una regola è per il valore **basso** e un'altra regola per i valori **alto** e **medio** .
 
-   Di seguito è riportato un esempio di PowerShell che consente di creare queste due regole. Si noti che le coppie nome/valore della proprietà sono racchiuse tra virgolette e il nome di una proprietà può specificare più valori separati da virgole senza spazi, ad esempio`"<Property1>:<Value1>,<Value2>","<Property2>:<Value3>,<Value4>"....`
+   Di seguito è riportato un esempio di PowerShell che consente di creare queste due regole. Le coppie nome/valore della proprietà sono racchiuse tra virgolette e il nome di una proprietà può specificare più valori separati da virgole senza spazi, ad esempio  `"<Property1>:<Value1>,<Value2>","<Property2>:<Value3>,<Value4>"....`
 
    ```powershell
    New-DlpComplianceRule -Name FCI_PII_content-High,Moderate -Policy FCI_PII_policy -AccessScope NotInOrganization -BlockAccess $true -ContentPropertyContainsWords "Personally Identifiable Information:High,Moderate" -Disabled $falseNew-DlpComplianceRule -Name FCI_PII_content-Low -Policy FCI_PII_policy -AccessScope NotInOrganization -BlockAccess $false -ContentPropertyContainsWords "Personally Identifiable Information:Low" -Disabled $false -NotifyUser Owner
    ```
 
-   Si noti che Windows Server FCI include molte proprietà predefinite, incluse **le informazioni di identificazione personale** utilizzate in questo esempio. I valori possibili per ogni proprietà possono essere diversi per ogni organizzazione. I valori **alto**, **medio**e **basso** utilizzati qui sono solo un esempio. Per l'organizzazione, è possibile visualizzare le proprietà di classificazione FCI di Windows Server con i relativi valori possibili in Gestione risorse file server nel server file basato su Windows Server. Per ulteriori informazioni, vedere [Create a Classification Property](https://go.microsoft.com/fwlink/p/?LinkID=627456).
+   Windows Server FCI include molte proprietà predefinite, incluse **le informazioni di identificazione personale** utilizzate in questo esempio. I valori possibili per ogni proprietà possono essere diversi per ogni organizzazione. I valori **alto**, **medio** e **basso** utilizzati qui sono solo un esempio. Per l'organizzazione, è possibile visualizzare le proprietà di classificazione FCI di Windows Server con i relativi valori possibili in Gestione risorse file server nel server file basato su Windows Server. Per ulteriori informazioni, vedere [Create a Classification Property](https://go.microsoft.com/fwlink/p/?LinkID=627456).
 
-Al termine, i criteri devono disporre di due nuove regole che entrambe utilizzano le **proprietà del documento contengono una qualsiasi delle condizioni di questi valori** . Si noti che questa condizione non viene visualizzata nell'interfaccia utente, anche se vengono visualizzate le altre condizioni, azioni e impostazioni.
+Al termine, i criteri devono disporre di due nuove regole che entrambe utilizzano le **proprietà del documento contengono una qualsiasi delle condizioni di questi valori** . Questa condizione non viene visualizzata nell'interfaccia utente, anche se vengono visualizzate le altre condizioni, azioni e impostazioni.
 
 Una regola blocca l'accesso al contenuto dove la proprietà **Informazioni personali** è uguale a **Elevata** o **Moderata**. Una seconda regola invia una notifica sul contenuto dove la proprietà **Informazioni personali** è uguale a **Bassa**.
 
@@ -135,11 +141,11 @@ Per rilevare il contenuto con tale proprietà ovunque, è possibile richiedere m
 
 Per altre informazioni, vedere [Richiedere manualmente la ricerca per indicizzazione e la reindicizzazione di un sito, di una raccolta o di un elenco](https://go.microsoft.com/fwlink/p/?LinkID=627457).
 
-### <a name="re-index-a-site-optional"></a>Reindicizzare un sito (facoltativo)
+### <a name="reindex-a-site-optional"></a>Reindicizzare un sito (facoltativo)
 
 1. Nel sito scegliere **Impostazioni** (icona a ingranaggi in alto a destra) \> **impostazioni del sito**.
 
-2. In **ricerca**, scegliere **ricerca e** \> **reindicizzazione**disponibilità offline sito.
+2. In **ricerca**, scegliere **ricerca e** \> **reindicizzazione** disponibilità offline sito.
 
 ## <a name="more-information"></a>Ulteriori informazioni
 

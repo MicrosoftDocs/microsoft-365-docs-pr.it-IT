@@ -21,18 +21,18 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: ''
 description: Utilizzare questo articolo per ulteriori informazioni sull'abilitazione e sulla configurazione della gestione degli accessi con privilegi in Office 365.
-ms.openlocfilehash: d75a8944cdacb6df2d6ee6570c0ce327d0e7ae00
-ms.sourcegitcommit: 79a21583a52aedd06317bbcabd8be40663379dec
+ms.openlocfilehash: 6018d3b842dcadb60208e6ab53707a50e26f9d35
+ms.sourcegitcommit: ff1f0a97e9d43bc786f04d2ea7e01695531b9f28
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "48341204"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "49560874"
 ---
 # <a name="get-started-with-privileged-access-management"></a>Introduzione alla gestione degli accessi con privilegi
 
 In questo argomento viene illustrata la possibilità di abilitare e configurare la gestione degli accessi con privilegi nell'organizzazione. È possibile utilizzare l'interfaccia di amministrazione di Microsoft 365 o Exchange Management PowerShell per gestire e utilizzare accesso privilegiato.
 
-## <a name="before-you-begin"></a>Informazioni preliminari
+## <a name="before-you-begin"></a>Prima di iniziare
 
 Prima di iniziare a utilizzare la gestione degli accessi con privilegi, è necessario confermare la [sottoscrizione Microsoft 365](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans) e gli eventuali componenti aggiuntivi. Per accedere e utilizzare la gestione degli accessi con privilegi, è necessario che l'organizzazione disponga di una delle sottoscrizioni o dei componenti aggiuntivi seguenti:
 
@@ -85,7 +85,7 @@ Dopo aver concesso l'approvazione, l'utente richiedente può eseguire l'attivit�
 
 2. Nell'interfaccia di amministrazione, andare a **gruppi**  >  **aggiungere un gruppo**.
 
-3. Selezionare **gruppo di sicurezza abilitato alla posta elettronica** e quindi completare il **nome**, l' **indirizzo di posta elettronica del gruppo**e i campi **Descrizione** per il nuovo gruppo.
+3. Selezionare **gruppo di sicurezza abilitato alla posta elettronica** e quindi completare il **nome**, l' **indirizzo di posta elettronica del gruppo** e i campi **Descrizione** per il nuovo gruppo.
 
 4. Salvare il gruppo. Il gruppo può richiedere alcuni minuti completamente configurati e comparire nell'interfaccia di amministrazione di Microsoft 365.
 
@@ -101,7 +101,7 @@ Dopo aver concesso l'approvazione, l'utente richiedente può eseguire l'attivit�
 
 1. Accedere all'interfaccia di [amministrazione di Microsoft 365](https://admin.microsoft.com) utilizzando le credenziali per un account di amministratore nell'organizzazione.
 
-2. Nell'interfaccia di amministrazione, andare a **Impostazioni**  >  **org**impostazioni di  >  **sicurezza & privacy**  >  **accesso privilegiato**.
+2. Nell'interfaccia di amministrazione, andare a **Impostazioni**  >  **org** impostazioni di  >  **sicurezza & privacy**  >  **accesso privilegiato**.
 
 3. Abilitare il controllo **Richiedi approvazioni per le attività privilegiate** .
 
@@ -120,7 +120,7 @@ Enable-ElevatedAccessControl -AdminGroup '<default approver group>' -SystemAccou
 Esempio:
 
 ```PowerShell
-Enable-ElevatedAccessControl -AdminGroup 'pamapprovers@fabrikam.onmicrosoft.com' -SystemAccounts @('sys1@fabrikamorg.onmicrosoft.com', sys2@fabrikamorg.onmicrosoft.com')
+Enable-ElevatedAccessControl -AdminGroup 'pamapprovers@fabrikam.onmicrosoft.com' -SystemAccounts @('sys1@fabrikamorg.onmicrosoft.com', 'sys2@fabrikamorg.onmicrosoft.com')
 ```
 
 >[!NOTE]
@@ -136,7 +136,7 @@ Enable-ElevatedAccessControl -AdminGroup 'pamapprovers@fabrikam.onmicrosoft.com'
 
 1. Accedere all'interfaccia di [amministrazione di Microsoft 365](https://admin.microsoft.com) utilizzando le credenziali per un account di amministratore nell'organizzazione.
 
-2. Nell'interfaccia di amministrazione, andare a **Impostazioni**  >  **org**impostazioni di  >  **sicurezza & privacy**  >  **accesso privilegiato**.
+2. Nell'interfaccia di amministrazione, andare a **Impostazioni**  >  **org** impostazioni di  >  **sicurezza & privacy**  >  **accesso privilegiato**.
 
 3. Selezionare **Gestisci criteri di accesso e richieste**.
 
@@ -182,7 +182,7 @@ Le richieste di accesso con privilegi sono valide per un massimo di 24 ore dopo 
 
 1. Accedere all'interfaccia di [amministrazione di Microsoft 365](https://admin.microsoft.com) utilizzando le proprie credenziali.
 
-2. Nell'interfaccia di amministrazione, andare a **Impostazioni**  >  **org**impostazioni di  >  **sicurezza & privacy**  >  **accesso privilegiato**.
+2. Nell'interfaccia di amministrazione, andare a **Impostazioni**  >  **org** impostazioni di  >  **sicurezza & privacy**  >  **accesso privilegiato**.
 
 3. Selezionare **Gestisci criteri di accesso e richieste**.
 
@@ -222,11 +222,11 @@ Dopo la creazione di una richiesta di approvazione, lo stato della richiesta di 
 
 1. Accedere all'interfaccia di [amministrazione di Microsoft 365](https://admin.microsoft.com) con le proprie credenziali.
 
-2. Nell'interfaccia di amministrazione, andare a **Impostazioni**  >  **org**impostazioni di  >  **sicurezza & privacy**  >  **accesso privilegiato**.
+2. Nell'interfaccia di amministrazione, andare a **Impostazioni**  >  **org** impostazioni di  >  **sicurezza & privacy**  >  **accesso privilegiato**.
 
 3. Selezionare **Gestisci criteri di accesso e richieste**.
 
-4. Selezionare **Visualizza** per filtrare le richieste inviate mediante lo stato **in sospeso**, **approvato**, **negato**o **protetto dall'archivio dei clienti** .
+4. Selezionare **Visualizza** per filtrare le richieste inviate mediante lo stato **in sospeso**, **approvato**, **negato** o **protetto dall'archivio dei clienti** .
 
 #### <a name="in-exchange-management-powershell"></a>In Exchange Management PowerShell
 
@@ -250,7 +250,7 @@ Quando viene creata una richiesta di approvazione, i membri del gruppo di approv
 
 1. Accedere all'interfaccia di [amministrazione di Microsoft 365](https://admin.microsoft.com) con le proprie credenziali.
 
-2. Nell'interfaccia di amministrazione, andare a **Impostazioni**  >  **org**impostazioni di  >  **sicurezza & privacy**  >  **accesso privilegiato**.
+2. Nell'interfaccia di amministrazione, andare a **Impostazioni**  >  **org** impostazioni di  >  **sicurezza & privacy**  >  **accesso privilegiato**.
 
 3. Selezionare **Gestisci criteri di accesso e richieste**.
 
@@ -292,7 +292,7 @@ Se non è più necessario nell'organizzazione, è possibile eliminare un criteri
 
 1. Accedere all'interfaccia di [amministrazione di Microsoft 365](https://admin.microsoft.com) utilizzando le credenziali per un account di amministratore nell'organizzazione.
 
-2. Nell'interfaccia di amministrazione, andare a **Impostazioni**  >  **org**impostazioni di  >  **sicurezza & privacy**  >  **accesso privilegiato**.
+2. Nell'interfaccia di amministrazione, andare a **Impostazioni**  >  **org** impostazioni di  >  **sicurezza & privacy**  >  **accesso privilegiato**.
 
 3. Selezionare **Gestisci criteri di accesso e richieste**.
 
@@ -318,7 +318,7 @@ Se necessario, è possibile disabilitare la gestione degli accessi con privilegi
 
 1. Accedere all'interfaccia di [amministrazione di Microsoft 365](https://admin.microsoft.com) con le credenziali di un account di amministratore nell'organizzazione.
 
-2. Nell'interfaccia di amministrazione, andare a **Impostazioni**  >  **org**impostazioni di  >  **sicurezza & privacy**  >  **accesso privilegiato**.
+2. Nell'interfaccia di amministrazione, andare a **Impostazioni**  >  **org** impostazioni di  >  **sicurezza & privacy**  >  **accesso privilegiato**.
 
 3. Abilitare le **autorizzazioni necessarie per il controllo di accesso privilegiato** .
 
