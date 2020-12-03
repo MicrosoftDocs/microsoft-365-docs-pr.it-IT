@@ -2,8 +2,8 @@
 title: Cambiare un nome utente e un indirizzo e-mail
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
-author: cmcatee-MSFT
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: fb5ac074-e203-4e1f-9843-b9d1a3e03297
 description: "Informazioni su come un amministratore globale può modificare il nome visualizzato e l'indirizzo e-mail di un utente. "
-ms.openlocfilehash: 82284f653675ee4f8c89fe52d75bbc0a0efe2e2b
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 1672401e9a8e994b91804870130b659ad8724b5e
+ms.sourcegitcommit: 38d828ae8d4350ae774a939c8decf30cb36c3bea
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48646692"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "49551509"
 ---
 # <a name="change-a-user-name-and-email-address"></a>Cambiare un nome utente e un indirizzo e-mail
 
@@ -38,15 +38,15 @@ Guardare un breve video su come modificare l'indirizzo di posta elettronica di u
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1SJuc] 
 
-Se il video è stato utile, consultare la [serie di formazione completa per piccole imprese e nuovi utenti di Microsoft 365](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
-
-## <a name="change-a-users-email-address"></a>Cambiare l'indirizzo di posta elettronica di un utente
+Se il video è stato utile, consultare la [serie dei corsi di formazione completa per piccole imprese e nuovi utenti di Microsoft 365](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
 
 Per eseguire questi passaggi, è necessario essere un [amministratore globale](about-admin-roles.md). 
 
+## <a name="change-a-users-email-address"></a>Cambiare l'indirizzo di posta elettronica di un utente
+
 ::: moniker range="o365-worldwide"
  
-1. Nell'interfaccia di amministrazione passare alla pagina **Utenti** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utenti attivi</a>.
+1. Nell'interfaccia di amministrazione, passare alla pagina **Utenti** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utenti attivi</a>.
     
 2. Selezionare il nome dell'utente e quindi, nella scheda **Account**, selezionare **Gestisci nome utente**.
     
