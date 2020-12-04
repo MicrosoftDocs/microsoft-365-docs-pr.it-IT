@@ -14,16 +14,19 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Strumento di test della connettività di rete Microsoft 365 (anteprima)
-ms.openlocfilehash: 4fc12645ccd6a022e4ef4ebe849ac91ba431129b
-ms.sourcegitcommit: e7bf23df4852b78912229d1d38ec475223597f34
+ms.openlocfilehash: b29eb29cd390c3febd0992e942cf8ab39f652fb2
+ms.sourcegitcommit: 26c2f01d6f88f6c288b04f9f08062d68dd1e67e1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49087080"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "49569988"
 ---
 # <a name="microsoft-365-network-connectivity-test-tool-preview"></a>Strumento di test della connettività di rete Microsoft 365 (anteprima)
 
 Lo strumento di test della connettività di rete di Microsoft 365 si trova in <https://connectivity.office.com> . Si tratta di uno strumento aggiunto per la valutazione della rete e le informazioni di rete disponibili nell'interfaccia di amministrazione di Microsoft 365 nell'area **integrità | Menu connettività** .
+
+> [!IMPORTANT]
+> È importante accedere al tenant di Microsoft 365 come tutti i rapporti di test vengono condivisi con l'amministratore e caricati nel tenant durante l'accesso.
 
 ![Strumento di test della connettività](../media/m365-mac-perf/m365-mac-perf-test-tool-page.png)
 

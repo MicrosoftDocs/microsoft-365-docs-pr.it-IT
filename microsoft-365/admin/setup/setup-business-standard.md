@@ -25,28 +25,16 @@ search.appverid:
 - MOE150
 - BEA160
 description: Informazioni su come configurare la sottoscrizione a Microsoft 365 Business Standard.
-ms.openlocfilehash: e69a3c75d77a8b4721558e72526a068df643f284
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 61ba3b0a8a753c9c441fc5a2ffa66b63da9af675
+ms.sourcegitcommit: d81c7cea85af6ad5fef81d3c930514a51464368c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48644556"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "49572418"
 ---
 # <a name="set-up-microsoft-business-standard"></a>Configurare Microsoft Business Standard
 
-Guardare un breve video sulla configurazione di Microsoft 365 Business Standard.<br><br>
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4ELKR]
-
-Se il video è stato utile, consultare la [serie di formazione completa per piccole imprese e nuovi utenti di Microsoft 365](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
-  
- *Queste procedure interessano le aziende e le [organizzazioni no profit](https://go.microsoft.com/fwlink/p/?LinkId=627221) che usano il **[piano Microsoft 365 Business Standard](https://go.microsoft.com/fwlink/p/?LinkId=627220)**_
-
-È possibile guardare un breve video sulla configurazione di Microsoft 365 Business Standard (noto in precedenza come Office 365 Business Premium).<br><br>
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/913be1ad-bae1-40c0-9ded-15bb477b828b]
-
-Se il video è stato utile, consultare la [serie di formazione completa per piccole imprese e nuovi utenti di Microsoft 365](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
 
 ## <a name="add-your-domain-to-personalize-sign-in"></a>Aggiungere il proprio dominio per personalizzare l’accesso
 
@@ -56,7 +44,7 @@ Quando si acquista Microsoft 365 Business Standard, si può scegliere di usare u
 
 1. Autenticarsi allì[interfaccia di amministrazione di Microsoft 365](https://admin.microsoft.com) usando le proprie credenziali globali di amministrazione. 
 
-2. Scegliere _*Vai alla configurazione** per avviare la procedura guidata.
+2. Scegliere **Vai alla configurazione** per avviare la procedura guidata.
 
 3. Nella pagina **Installa le tue app di Office**, è possibile installare le app sul proprio computer.
     
@@ -126,7 +114,7 @@ Se si stava usando Outlook con un altro account di posta elettronica, è possibi
   
 1. **Esportare i vecchi messaggi di posta elettronica**
 
-    In Outlook scegliere **File** \> **Apri ed esporta&amp; ** \> **Importa/Esporta**.
+    In Outlook scegliere **File** \> **Apri ed esporta&amp;** \> **Importa/Esporta**.
 
     Selezionare **Esporta in un file** e quindi seguire le istruzioni per esportare il file di dati di Outlook (pst) e le eventuali sottocartelle.
 

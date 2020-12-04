@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Gli amministratori possono ottenere informazioni su come configurare il filtro connessioni in Exchange Online Protection (EOP) per consentire o bloccare i messaggi di posta elettronica dai server.
-ms.openlocfilehash: 95e178e34c944c13cd99e4d4a0e9f30ed083842c
-ms.sourcegitcommit: 61ef32f802a1fb6d1e3a3aa005764ead32a7951e
+ms.openlocfilehash: a2a755516f029f5d72016e9ea8fcb87a997d5065
+ms.sourcegitcommit: d81c7cea85af6ad5fef81d3c930514a51464368c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48318253"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "49572826"
 ---
 # <a name="configure-connection-filtering"></a>Configurare il filtro connessioni
 
@@ -49,17 +49,16 @@ In questo argomento viene descritto come configurare i criteri di filtro delle c
 
 - Per informazioni su come connettersi a PowerShell per Exchange Online, vedere [Connettersi a PowerShell per Exchange Online](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell). Per connettersi a PowerShell di EOP autonomo, vedere [Connettersi a PowerShell per Exchange Online Protection](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
-- È necessario disporre delle autorizzazioni per eseguire le procedure di questo argomento:
+- Prima di poter eseguire le procedure descritte in questo articolo, è necessario disporre delle autorizzazioni per il Centro sicurezza & Compliance:
+  - Per modificare i criteri di filtro delle connessioni predefiniti, è necessario essere membri dei gruppi di ruoli **Gestione organizzazione** o **amministratore sicurezza** .
+  - Per l'accesso in sola lettura ai criteri di filtro delle connessioni predefiniti, è necessario essere membri dei gruppi di ruoli **lettore globale** o lettore di **sicurezza** .
 
-  - Per modificare i criteri di filtro delle connessioni predefiniti, è necessario essere membri di uno dei gruppi di ruoli seguenti:
+  Per altre informazioni, vedere [Autorizzazioni nel Centro sicurezza e conformità](permissions-in-the-security-and-compliance-center.md).
 
-    - **Gestione organizzazione** o **Amministratore sicurezza** nel [Centro sicurezza e conformità](permissions-in-the-security-and-compliance-center.md).
-    - **Gestione organizzazione** o **Gestione igiene** in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
+  **Note**:
 
-  - Per l'accesso in sola lettura ai criteri di filtro delle connessioni predefiniti, è necessario essere membri di uno dei gruppi di ruoli seguenti:
-
-    - **Lettore sicurezza** nel [Centro sicurezza e conformità](permissions-in-the-security-and-compliance-center.md).
-    - **Gestione organizzazione in sola lettura** in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
+  - L'aggiunta di utenti al ruolo di Azure Active Directory corrispondente nell'interfaccia di amministrazione di Microsoft 365 fornisce agli utenti le autorizzazioni necessarie per il Centro sicurezza & Compliance _e_ le autorizzazioni per altre funzionalità di Microsoft 365. Per altre informazioni, vedere [Informazioni sui ruoli di amministratore](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
+  - Il gruppo di ruoli di **gestione dell'organizzazione di sola visualizzazione** in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) fornisce anche l'accesso in sola lettura alla funzionalità.
 
 - Per trovare gli indirizzi IP di origine dei server di posta elettronica che si desidera consentire o bloccare, è possibile controllare il campo di intestazione IP di connessione (**CIP**) nell'intestazione del messaggio. Per visualizzare l'intestazione di un messaggio in vari client di posta elettronica, vedere [visualizzare le intestazioni dei messaggi Internet in Outlook](https://support.microsoft.com/office/cd039382-dc6e-4264-ac74-c048563d212c).
 
@@ -145,7 +144,7 @@ Per informazioni dettagliate sulla sintassi e sui parametri, vedere [Set-HostedC
 
 Per verificare la corretta modifica del criterio del filtro di connessione predefinito, eseguire una delle operazioni seguenti:
 
-- Nel centro sicurezza & conformità, accedere a protezione **Threat management** dalla \> **Policy** \> **posta indesiderata** dei criteri di gestione delle minacce \> fare clic sul menu a discesa accanto a **criterio filtro connessioni (sempre**attivato) e verificare le impostazioni.
+- Nel centro sicurezza & conformità, accedere a protezione **Threat management** dalla \> **Policy** \> **posta indesiderata** dei criteri di gestione delle minacce \> fare clic sul menu a discesa accanto a **criterio filtro connessioni (sempre** attivato) e verificare le impostazioni.
 
 - In Exchange Online PowerShell o standalone EOP PowerShell, eseguire il comando riportato di seguito e verificare le impostazioni:
 

@@ -1,5 +1,5 @@
 ---
-title: Creare un sito per le comunicazioni
+title: Creare un sito di comunicazione
 f1.keywords:
 - NOCSH
 ms.author: samanro
@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Creare un sito per le comunicazioni per la campagna.
-ms.openlocfilehash: 3435ede554c16bb787b87a6ea76e0c41f62b8fe5
-ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
+ms.openlocfilehash: 5bd0dd36188f5ec1d550c9baa875e18debd99528
+ms.sourcegitcommit: 26c2f01d6f88f6c288b04f9f08062d68dd1e67e1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "44165722"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "49569964"
 ---
 # <a name="create-a-communications-site-for-your-campaign"></a>Creare un sito per le comunicazioni per la propria campagna
 
@@ -51,7 +51,7 @@ I collegamenti seguenti per PowerPoint e PDF possono essere scaricati e stampati
 
 [![Immagine per i siti di comunicazione infografica](../media/M365-Campaigns-CreateCommunicationSite-358-201.png)](downloads/M365CampaignsCreateCommunicationSite.pdf)
 
-[PDF](downloads/M365CampaignsCreateCommunicationSite.pdf) | [PowerPoint](https://github.com/MicrosoftDocs/microsoft-365-docs-pr/raw/live/m365-democracy/microsoft-365/campaigns/downloads/M365CampaignsCreateCommunicationSite.pptx) (PDF)
+[File PDF](downloads/M365CampaignsCreateCommunicationSite.pdf)  |  [PowerPoint](downloads/M365CampaignsCreateCommunicationSite.pptx)
 
 
 ## <a name="set-it-up"></a>Configurazione

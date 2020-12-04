@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: In questo articolo vengono fornite informazioni per la risoluzione dei problemi relativi all'invio di posta elettronica alle cassette postali in Microsoft 365 & procedure consigliate per la posta in blocco ai clienti di Microsoft 365.
-ms.openlocfilehash: 52b4bb333a92dcaa21f45977b3d59a96053a69c2
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 895f2651529cd46968d053fefac10cb22b6a5d86
+ms.sourcegitcommit: 7e003ee0a06f61bfb9f80441c3479fa3148afafe
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48201736"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49568555"
 ---
 # <a name="troubleshooting-mail-sent-to-microsoft-365"></a>Risoluzione dei problemi della posta elettronica inviati a Microsoft 365
 
@@ -51,9 +51,7 @@ Per istruzioni su come creare e gestire i record DNS, incluso il record MX neces
 Non è possibile accettare messaggi di posta elettronica provenienti da mittenti che non eseguono una ricerca DNS inversa. In alcuni casi, i mittenti legittimi si annunciano in modo errato come IP instradabile non Internet quando si tenta di aprire una connessione a EOP. Gli indirizzi IP riservati per la rete privata (non instradabile) includono:
 
 - 192.168.0.0/16 (o 192.168.0.0-192.168.255.255)
-
 - 10.0.0.0/8 (o 10.0.0.0-10.255.255.255)
-
 - 172.16.0.0/11 (o 172.16.0.0-172.31.255.255)
 
 ## <a name="you-received-a-non-delivery-report-ndr-when-sending-email-to-a-user-in-office-365"></a>Si è ricevuto un rapporto di mancato recapito (NDR) quando si invia un messaggio di posta elettronica a un utente in Office 365

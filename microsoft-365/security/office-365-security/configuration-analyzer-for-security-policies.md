@@ -17,12 +17,12 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Gli amministratori possono ottenere informazioni su come utilizzare l'analizzatore di configurazione per individuare e correggere i criteri di sicurezza che si trovano al di sotto dei criteri di protezione standard e di protezione preimpostati.
-ms.openlocfilehash: 1429bddc5ae5f8409ad4f3593f7ea236b13f854c
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 7d02a6f83ceb06eb56039b449890fd90712c76e5
+ms.sourcegitcommit: d81c7cea85af6ad5fef81d3c930514a51464368c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48846473"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "49572538"
 ---
 # <a name="configuration-analyzer-for-protection-policies-in-eop-and-microsoft-defender-for-office-365"></a>Analizzatore di configurazione per i criteri di protezione in EOP e Microsoft Defender per Office 365
 
@@ -36,13 +36,13 @@ Analizzatore di configurazione nel centro sicurezza & conformità fornisce una p
 
 I seguenti tipi di criteri vengono analizzati dall'analizzatore della configurazione:
 
-- **Criteri di Exchange Online Protection (EOP)** : sono incluse le organizzazioni Microsoft 365 con le cassette postali di Exchange Online e le organizzazioni EOP autonome senza cassette postali di Exchange Online:
+- **Criteri di Exchange Online Protection (EOP)**: sono incluse le organizzazioni Microsoft 365 con le cassette postali di Exchange Online e le organizzazioni EOP autonome senza cassette postali di Exchange Online:
   
   - [Criteri di protezione da posta indesiderata](configure-your-spam-filter-policies.md).
   - [Criteri anti-malware](configure-anti-malware-policies.md).
   - [Criteri di anti-phishing di EOP](set-up-anti-phishing-policies.md#spoof-settings).
 
-- **Microsoft Defender per i criteri di office 365** : include le organizzazioni con Microsoft 365 E5 o gli abbonamenti del componente aggiuntivo Defender per Office 365:
+- **Microsoft Defender per i criteri di office 365**: include le organizzazioni con Microsoft 365 E5 o gli abbonamenti del componente aggiuntivo Defender per Office 365:
 
   - Criteri di anti-phishing in Microsoft Defender per Office 365, che includono:
 
@@ -56,23 +56,22 @@ I seguenti tipi di criteri vengono analizzati dall'analizzatore della configuraz
 
 I valori di impostazione dei criteri **standard** e **rigorosi** utilizzati come linee di base sono descritti in [impostazioni consigliate per EOP e Microsoft Defender per la sicurezza di Office 365](recommended-settings-for-eop-and-office365-atp.md).
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare?
+## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare
 
 - Aprire il Centro sicurezza e conformità in <https://protection.office.com/>. Per passare direttamente alla pagina dell' **analizzatore** dell'utilità di configurazione, utilizzare <https://protection.office.com/configurationAnalyzer> .
 
 - Per informazioni su come connettersi a PowerShell per Exchange Online, vedere [Connettersi a PowerShell per Exchange Online](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
 
-- Prima di poter eseguire le procedure descritte in questo articolo, è necessario disporre delle autorizzazioni seguenti:
+- Prima di poter eseguire le procedure descritte in questo articolo, è necessario disporre delle autorizzazioni per il Centro sicurezza & Compliance:
+  - Per utilizzare l'analizzatore di configurazione **e** aggiornare i criteri di sicurezza, è necessario essere membri dei gruppi di ruoli **Gestione organizzazione** o **amministratore sicurezza** .
+  - Per l'accesso in sola lettura all'analizzatore di configurazione, è necessario essere membri dei gruppi di ruoli **lettore globale** o lettore di **sicurezza** .
 
-  - Per utilizzare l'analizzatore di configurazione **e** aggiornare i criteri di sicurezza, è necessario essere membri di uno dei gruppi di ruoli seguenti:
+  Per altre informazioni, vedere [Autorizzazioni nel Centro sicurezza e conformità](permissions-in-the-security-and-compliance-center.md).
 
-    - **Gestione organizzazione** o **Amministratore sicurezza** nel [Centro sicurezza e conformità](permissions-in-the-security-and-compliance-center.md).
-    - **Gestione organizzazione** o **Gestione igiene** in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
+  **Note**:
 
-  - Per l'accesso in sola lettura all'analizzatore di configurazione, è necessario essere membri di uno dei gruppi di ruoli seguenti:
-
-    - **Lettore sicurezza** nel [Centro sicurezza e conformità](permissions-in-the-security-and-compliance-center.md).
-    - **Gestione organizzazione in sola lettura** in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
+  - L'aggiunta di utenti al ruolo di Azure Active Directory corrispondente nell'interfaccia di amministrazione di Microsoft 365 fornisce agli utenti le autorizzazioni necessarie per il Centro sicurezza & Compliance _e_ le autorizzazioni per altre funzionalità di Microsoft 365. Per altre informazioni, vedere [Informazioni sui ruoli di amministratore](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
+  - Il gruppo di ruoli di **gestione dell'organizzazione di sola visualizzazione** in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) fornisce anche l'accesso in sola lettura alla funzionalità.
 
 ## <a name="use-the-configuration-analyzer-in-the-security--compliance-center"></a>Utilizzare l'analizzatore di configurazione nel centro sicurezza & Compliance
 
@@ -82,9 +81,9 @@ Nel centro sicurezza & conformità, accedere a **Threat management** \> **Policy
 
 L'analizzatore di configurazione dispone di due schede principali:
 
-- **Impostazioni e suggerimenti** : si seleziona standard o Strict e si confrontano tali impostazioni con i criteri di sicurezza esistenti. Nei risultati, è possibile modificare i valori delle impostazioni per riportarli allo stesso livello di standard o Strict.
+- **Impostazioni e suggerimenti**: si seleziona standard o Strict e si confrontano tali impostazioni con i criteri di sicurezza esistenti. Nei risultati, è possibile modificare i valori delle impostazioni per riportarli allo stesso livello di standard o Strict.
 
-- **Analisi della deriva di configurazione e cronologia** : questa visualizzazione consente di monitorare le modifiche dei criteri nel tempo.
+- **Analisi della deriva di configurazione e cronologia**: questa visualizzazione consente di monitorare le modifiche dei criteri nel tempo.
 
 ### <a name="setting-and-recommendations-tab-in-the-configuration-analyzer"></a>Scheda Impostazioni e suggerimenti nell'analizzatore di configurazione
 
@@ -102,27 +101,27 @@ Per impostazione predefinita, la colonna **gruppo di criteri/Nome impostazione**
 
 Nella visualizzazione predefinita, tutto è compresso. Accanto a ogni criterio, è disponibile un riepilogo dei risultati del confronto tra i criteri (che è possibile modificare) e le impostazioni nei criteri corrispondenti per i profili di protezione standard o rigorosi (che non è possibile modificare). Verranno visualizzate le informazioni seguenti per il profilo di protezione a cui si sta eseguendo il confronto:
 
-- **Verde** : tutte le impostazioni di tutti i criteri esistenti sono almeno altrettanto sicure del profilo di protezione.
-- **Ambra** : un numero limitato di impostazioni nei criteri esistenti non è più sicuro del profilo di protezione.
-- **Rosso** : un numero significativo di impostazioni nei criteri esistenti non è più sicuro del profilo di protezione. Questo potrebbe essere un paio di impostazioni in molti criteri o in molte impostazioni di un criterio.
+- **Verde**: tutte le impostazioni di tutti i criteri esistenti sono almeno altrettanto sicure del profilo di protezione.
+- **Ambra**: un numero limitato di impostazioni nei criteri esistenti non è più sicuro del profilo di protezione.
+- **Rosso**: un numero significativo di impostazioni nei criteri esistenti non è più sicuro del profilo di protezione. Questo potrebbe essere un paio di impostazioni in molti criteri o in molte impostazioni di un criterio.
 
 Per i confronti favorevoli, viene visualizzato il testo: **tutte le impostazioni seguono** i \<**Standard** or **Strict**\> **suggerimenti**. In caso contrario, verrà visualizzato il numero di impostazioni consigliate da modificare.
 
-Se si espande il **nome del gruppo di criteri/impostazione** , vengono rivelati tutti i criteri e le impostazioni associate in ogni criterio specifico che richiede attenzione. In alternativa, è possibile espandere un tipo specifico di criteri, ad esempio la protezione da **posta indesiderata** , per visualizzare solo tali impostazioni in quei tipi di criteri che richiedono attenzione.
+Se si espande il **nome del gruppo di criteri/impostazione**, vengono rivelati tutti i criteri e le impostazioni associate in ogni criterio specifico che richiede attenzione. In alternativa, è possibile espandere un tipo specifico di criteri, ad esempio la protezione da **posta indesiderata**, per visualizzare solo tali impostazioni in quei tipi di criteri che richiedono attenzione.
 
 Se il confronto non ha suggerimenti per il miglioramento (verde), l'espansione del criterio non rivela nulla. Se è presente un numero qualsiasi di suggerimenti per il miglioramento (ambra o rosso), vengono rivelate le impostazioni che richiedono attenzione e vengono riportate le informazioni corrispondenti nelle colonne seguenti:
 
 - Nome dell'impostazione che richiede attenzione. Ad esempio, nella schermata precedente, è la soglia di **posta elettronica in blocco** in un criterio di protezione da posta indesiderata.
 
-- **Policy** : il nome del criterio coinvolto che contiene l'impostazione.
+- **Policy**: il nome del criterio coinvolto che contiene l'impostazione.
 
-- **Applicato a** : il numero di utenti a cui sono applicati i criteri coinvolti.
+- **Applicato a**: il numero di utenti a cui sono applicati i criteri coinvolti.
 
-- **Configurazione corrente** : valore corrente dell'impostazione.
+- **Configurazione corrente**: valore corrente dell'impostazione.
 
-- **Last modified** : la data in cui è stato modificato l'ultima volta il criterio.
+- **Last modified**: la data in cui è stato modificato l'ultima volta il criterio.
 
-- **Suggerimenti** : il valore dell'impostazione nel profilo di protezione standard o rigoroso. Per modificare il valore dell'impostazione del criterio in modo che corrisponda al valore consigliato nel profilo di protezione, fare clic su **adotta**. Se la modifica ha esito positivo, verrà visualizzato il messaggio: **suggerimenti adottati correttamente**. Fare clic su **Aggiorna** per visualizzare il numero ridotto di suggerimenti e la rimozione della riga specifica dell'impostazione o dei criteri dai risultati.
+- **Suggerimenti**: il valore dell'impostazione nel profilo di protezione standard o rigoroso. Per modificare il valore dell'impostazione del criterio in modo che corrisponda al valore consigliato nel profilo di protezione, fare clic su **adotta**. Se la modifica ha esito positivo, verrà visualizzato il messaggio: **suggerimenti adottati correttamente**. Fare clic su **Aggiorna** per visualizzare il numero ridotto di suggerimenti e la rimozione della riga specifica dell'impostazione o dei criteri dai risultati.
 
 ### <a name="configuration-drift-analysis-and-history-tab-in-the-configuration-analyzer"></a>Scheda cronologia e analisi della deriva di configurazione nell'analizzatore di configurazione
 

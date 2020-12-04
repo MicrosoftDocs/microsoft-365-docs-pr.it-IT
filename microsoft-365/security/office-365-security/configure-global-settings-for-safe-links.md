@@ -17,12 +17,12 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Gli amministratori possono ottenere informazioni su come visualizzare e configurare le impostazioni globali (l'elenco ' blocca gli URL seguenti ' e la protezione per le app di Office 365) per i collegamenti sicuri in Microsoft Defender per Office 365.
-ms.openlocfilehash: 655fba35bf3675bfd571c8e4923a00fbeba85304
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 2793985e6289b26baad268925cbf9c5e9a89dce9
+ms.sourcegitcommit: d81c7cea85af6ad5fef81d3c930514a51464368c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48842429"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "49572430"
 ---
 # <a name="configure-global-settings-for-safe-links-in-microsoft-defender-for-office-365"></a>Configurare le impostazioni globali per i collegamenti sicuri in Microsoft Defender per Office 365
 
@@ -42,7 +42,7 @@ Tuttavia, i collegamenti sicuri utilizzano anche le impostazioni globali che si 
 
 È possibile configurare le impostazioni globali dei collegamenti sicuri nel centro sicurezza & Compliance o in PowerShell (Exchange Online PowerShell per organizzazioni Microsoft 365 idonee con cassette postali in Exchange Online; standalone EOP PowerShell per organizzazioni senza cassette postali di Exchange Online, ma con gli abbonamenti del componente aggiuntivo Microsoft Defender per Office 365).
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare?
+## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare
 
 - Le funzionalità fornite dalle impostazioni globali per i collegamenti sicuri vengono applicate solo agli utenti inclusi nei criteri dei collegamenti sicuri attivi. Non esiste alcun criterio di collegamenti sicuri incorporato o predefinito, pertanto è necessario creare almeno un criterio collegamenti sicuri affinché tali impostazioni globali siano attive. Per istruzioni, vedere [configurare i criteri per i collegamenti sicuri in Microsoft Defender per Office 365](set-up-atp-safe-links-policies.md).
 
@@ -50,10 +50,16 @@ Tuttavia, i collegamenti sicuri utilizzano anche le impostazioni globali che si 
 
 - Per informazioni su come connettersi a PowerShell per Exchange Online, vedere [Connettersi a PowerShell per Exchange Online](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell). Per connettersi a PowerShell di EOP autonomo, vedere [Connettersi a PowerShell per Exchange Online Protection](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
-- Per visualizzare e configurare le impostazioni globali per i collegamenti sicuri, è necessario essere membri di uno dei gruppi di ruoli seguenti:
+- Prima di poter eseguire le procedure descritte in questo articolo, è necessario disporre delle autorizzazioni per il Centro sicurezza & Compliance:
+  - Per configurare le impostazioni globali per i collegamenti sicuri, è necessario essere membri dei gruppi di ruoli **Gestione organizzazione** o **amministratore sicurezza** .
+  - Per l'accesso in sola lettura alle impostazioni globali per i collegamenti sicuri, è necessario essere membri dei gruppi di ruoli **lettore globale** o **lettore di sicurezza** .
 
-  - **Gestione organizzazione** o **Amministratore sicurezza** nel [Centro sicurezza e conformità](permissions-in-the-security-and-compliance-center.md).
-  - **Gestione dell'organizzazione** in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
+  Per altre informazioni, vedere [Autorizzazioni nel Centro sicurezza e conformità](permissions-in-the-security-and-compliance-center.md).
+
+  **Note**:
+
+  - L'aggiunta di utenti al ruolo di Azure Active Directory corrispondente nell'interfaccia di amministrazione di Microsoft 365 fornisce agli utenti le autorizzazioni necessarie per il Centro sicurezza & Compliance _e_ le autorizzazioni per altre funzionalità di Microsoft 365. Per altre informazioni, vedere [Informazioni sui ruoli di amministratore](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
+  - Il gruppo di ruoli di **gestione dell'organizzazione di sola visualizzazione** in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) fornisce anche l'accesso in sola lettura alla funzionalità.
 
 - Per i valori consigliati per le impostazioni globali per i collegamenti sicuri, vedere [Safe Links Settings](recommended-settings-for-eop-and-office365-atp.md#safe-links-settings).
 
@@ -114,11 +120,11 @@ Protezione dei collegamenti sicuri per le app di Office 365 si applica ai docume
 
 2. Nel **criterio collegamenti sicuri per l'organizzazione** è possibile volare fuori, configurare le impostazioni seguenti nelle **impostazioni che si applicano al contenuto, ad eccezione della sezione posta elettronica** :
 
-   - **Applicazioni di office 365** : verificare che l'interruttore sia a destra per abilitare i collegamenti sicuri per le app di Office 365 supportate: ![ attiva o disattiva l'attivazione ](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png) .
+   - **Applicazioni di office 365**: verificare che l'interruttore sia a destra per abilitare i collegamenti sicuri per le app di Office 365 supportate: ![ attiva o disattiva l'attivazione ](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png) .
 
-   - **Non monitorare quando gli utenti fanno clic su collegamenti sicuri** : spostare l'interruttore verso sinistra per tener conto dei clic degli utenti relativi agli URL bloccati nelle app di Office 365 supportate: disattivazione ![ ](../../media/scc-toggle-off.png) .
+   - **Non monitorare quando gli utenti fanno clic su collegamenti sicuri**: spostare l'interruttore verso sinistra per tener conto dei clic degli utenti relativi agli URL bloccati nelle app di Office 365 supportate: disattivazione ![ ](../../media/scc-toggle-off.png) .
 
-   - **Non consentire agli utenti di fare clic su collegamenti sicuri con l'URL originale** : verificare che l'interruttore sia a destra per impedire agli utenti di fare clic sull'URL bloccato originale nelle app di Office 365 supportate: ![ Attiva/disattiva ](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png) .
+   - **Non consentire agli utenti di fare clic su collegamenti sicuri con l'URL originale**: verificare che l'interruttore sia a destra per impedire agli utenti di fare clic sull'URL bloccato originale nelle app di Office 365 supportate: ![ Attiva/disattiva ](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png) .
 
    Al termine, scegliere **Salva**.
 
@@ -146,7 +152,7 @@ Per informazioni dettagliate sulla sintassi e sui parametri, vedere [set-AtpPoli
 
 Per verificare di aver configurato correttamente le impostazioni globali per i collegamenti sicuri ( **blocca l'elenco degli URL seguenti** e le impostazioni di protezione delle app di Office 365), eseguire una delle operazioni seguenti:
 
-- Nel centro sicurezza & conformità, accedere a criteri di **gestione delle minacce** per i \> **Policy** \> **collegamenti sicuri ATP** , fare clic su **Impostazioni globali** e verificare le impostazioni nel volo che viene visualizzato.
+- Nel centro sicurezza & conformità, accedere a criteri di **gestione delle minacce** per i \> **Policy** \> **collegamenti sicuri ATP**, fare clic su **Impostazioni globali** e verificare le impostazioni nel volo che viene visualizzato.
 
 - In Exchange Online PowerShell o Exchange Online Protection PowerShell, eseguire il comando riportato di seguito e verificare le impostazioni:
 

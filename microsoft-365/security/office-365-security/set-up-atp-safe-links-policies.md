@@ -17,12 +17,12 @@ ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
 ms.collection:
 - M365-security-compliance
 description: Gli amministratori possono ottenere informazioni su come visualizzare, creare, modificare ed eliminare i criteri per i collegamenti sicuri e le impostazioni dei collegamenti sicuri globali in Microsoft Defender per Office 365.
-ms.openlocfilehash: ed95c72c98e0c9d59b9860e89843c5f9b4970c8e
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 550be48d5f1cae490c53c8f4a9fcedb0b9f21f73
+ms.sourcegitcommit: d81c7cea85af6ad5fef81d3c930514a51464368c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48846437"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "49572718"
 ---
 # <a name="set-up-safe-links-policies-in-microsoft-defender-for-office-365"></a>Configurare i criteri per i collegamenti sicuri in Microsoft Defender per Office 365
 
@@ -39,8 +39,8 @@ Non esiste alcun criterio di collegamenti sicuri incorporato o predefinito. Per 
 
 Gli elementi di base di un criterio collegamenti sicuri sono i seguenti:
 
-- **Il criterio collegamenti sicuri** : attiva la protezione dei collegamenti sicuri, attiva l'analisi degli URL in tempo reale, specifica se attendere che l'analisi in tempo reale venga completata prima di recapitare il messaggio, attivare la ricerca per i messaggi interni, specificare se tenere presenti gli scatti degli utenti sugli URL e specificare se consentire agli utenti di fare clic su trogolo all'URL originale.
-- **La regola per i collegamenti sicuri** : specifica i filtri priorità e destinatario (a chi si applica il criterio).
+- **Il criterio collegamenti sicuri**: attiva la protezione dei collegamenti sicuri, attiva l'analisi degli URL in tempo reale, specifica se attendere che l'analisi in tempo reale venga completata prima di recapitare il messaggio, attivare la ricerca per i messaggi interni, specificare se tenere presenti gli scatti degli utenti sugli URL e specificare se consentire agli utenti di fare clic su trogolo all'URL originale.
+- **La regola per i collegamenti sicuri**: specifica i filtri priorità e destinatario (a chi si applica il criterio).
 
 La differenza tra questi due elementi non è ovvia quando si gestiscono le politiche dei collegamenti sicuri nel centro sicurezza & conformità:
 
@@ -53,16 +53,22 @@ In PowerShell di Exchange Online o in EOP PowerShell autonomo i criteri e la reg
 > [!NOTE]
 > È possibile configurare le impostazioni globali per la protezione di collegamenti sicuri **all'esterno** dei criteri collegamenti sicuri. Per istruzioni, vedere [configurare le impostazioni globali per i collegamenti sicuri in Microsoft Defender per Office 365](configure-global-settings-for-safe-links.md).
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare?
+## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare
 
 - Aprire il Centro sicurezza e conformità in <https://protection.office.com/>. Per passare direttamente alla pagina **collegamenti sicuri** , utilizzare <https://protection.office.com/safelinksv2> .
 
 - Per informazioni su come connettersi a PowerShell per Exchange Online, vedere [Connettersi a PowerShell per Exchange Online](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell). Per connettersi a PowerShell di EOP autonomo, vedere [Connettersi a PowerShell per Exchange Online Protection](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
-- Per visualizzare, creare, modificare ed eliminare i criteri per i collegamenti sicuri, è necessario essere membri di uno dei gruppi di ruoli seguenti:
+- Prima di poter eseguire le procedure descritte in questo articolo, è necessario disporre delle autorizzazioni per il Centro sicurezza & Compliance:
+  - Per creare, modificare ed eliminare i criteri per i collegamenti sicuri, è necessario essere membri dei gruppi di ruoli **Gestione organizzazione** o **amministratore sicurezza** .
+  - Per l'accesso in sola lettura ai criteri per i collegamenti sicuri, è necessario essere membri dei gruppi di ruoli **lettore globale** o lettore di **sicurezza** .
 
-  - **Gestione organizzazione** o **Amministratore sicurezza** nel [Centro sicurezza e conformità](permissions-in-the-security-and-compliance-center.md).
-  - **Gestione dell'organizzazione** in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
+  Per altre informazioni, vedere [Autorizzazioni nel Centro sicurezza e conformità](permissions-in-the-security-and-compliance-center.md).
+
+  **Note**:
+
+  - L'aggiunta di utenti al ruolo di Azure Active Directory corrispondente nell'interfaccia di amministrazione di Microsoft 365 fornisce agli utenti le autorizzazioni necessarie per il Centro sicurezza & Compliance _e_ le autorizzazioni per altre funzionalità di Microsoft 365. Per altre informazioni, vedere [Informazioni sui ruoli di amministratore](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
+  - Il gruppo di ruoli di **gestione dell'organizzazione di sola visualizzazione** in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) fornisce anche l'accesso in sola lettura alla funzionalità.
 
 - Per le impostazioni consigliate per i criteri collegamenti sicuri, vedere [impostazioni dei criteri collegamenti sicuri](recommended-settings-for-eop-and-office365-atp.md#safe-links-policy-settings).
 
@@ -80,29 +86,29 @@ La creazione di un criterio collegamenti sicuri personalizzato nel centro sicure
 
 3. Verrà visualizzata la procedura guidata **nuovo criterio collegamenti sicuri** . Nella pagina **Name Your Policy** , configurare le seguenti impostazioni:
 
-   - **Nome** : immettere un nome univoco descrittivo per il criterio.
+   - **Nome**: immettere un nome univoco descrittivo per il criterio.
 
-   - **Descrizione** : immettere una descrizione opzionale per il criterio.
+   - **Descrizione**: immettere una descrizione opzionale per il criterio.
 
    Al termine dell'operazione, fare clic su **Avanti**.
 
 4. Nella pagina **Impostazioni** che viene visualizzata, configurare le seguenti impostazioni:
 
-   - **Selezionare l'azione per gli URL potenzialmente dannosi sconosciuti nei messaggi** : selezionare Attiva per abilitare la protezione dei collegamenti sicuri per i collegamenti nei **messaggi di posta** elettronica.
+   - **Selezionare l'azione per gli URL potenzialmente dannosi sconosciuti nei messaggi**: selezionare Attiva per abilitare la protezione dei collegamenti sicuri per i collegamenti nei **messaggi di posta** elettronica.
 
    - **Selezionare l'azione per gli URL sconosciuti o potenzialmente dannosi all'interno di Microsoft teams** **: selezionare Attiva** per abilitare la protezione dei collegamenti sicuri per i collegamenti nei team.
 
-   - **Applicazione dell'analisi degli URL in tempo reale per collegamenti e collegamenti sospetti che puntano a file** : selezionare questa impostazione per abilitare l'analisi in tempo reale dei collegamenti nei messaggi di posta elettronica.
+   - **Applicazione dell'analisi degli URL in tempo reale per collegamenti e collegamenti sospetti che puntano a file**: selezionare questa impostazione per abilitare l'analisi in tempo reale dei collegamenti nei messaggi di posta elettronica.
 
-   - **Attendere il completamento dell'analisi degli URL prima di recapitare il messaggio** : selezionare questa impostazione per attendere il completamento dell'analisi degli URL in tempo reale prima di recapitare il messaggio.
+   - **Attendere il completamento dell'analisi degli URL prima di recapitare il messaggio**: selezionare questa impostazione per attendere il completamento dell'analisi degli URL in tempo reale prima di recapitare il messaggio.
 
-   - **Applicazione di collegamenti sicuri ai messaggi di posta elettronica inviati all'interno dell'organizzazione** : selezionare questa impostazione per applicare il criterio collegamenti sicuri ai messaggi tra i mittenti interni e i destinatari interni.
+   - **Applicazione di collegamenti sicuri ai messaggi di posta elettronica inviati all'interno dell'organizzazione**: selezionare questa impostazione per applicare il criterio collegamenti sicuri ai messaggi tra i mittenti interni e i destinatari interni.
 
-   - **Non tenere traccia dei clic degli utenti** : lasciare questa impostazione deselezionata per abilitare l'utente di verifica facendo clic sugli URL nei messaggi di posta elettronica.
+   - **Non tenere traccia dei clic degli utenti**: lasciare questa impostazione deselezionata per abilitare l'utente di verifica facendo clic sugli URL nei messaggi di posta elettronica.
 
-   - **Non consentire agli utenti di fare clic sull'URL originale** : selezionare questa impostazione per impedire agli utenti di fare clic sull'URL originale nelle [pagine di avviso](atp-safe-links.md#warning-pages-from-safe-links).
+   - **Non consentire agli utenti di fare clic sull'URL originale**: selezionare questa impostazione per impedire agli utenti di fare clic sull'URL originale nelle [pagine di avviso](atp-safe-links.md#warning-pages-from-safe-links).
 
-   - **Non riscrivere gli URL seguenti** : consente di accedere agli URL specificati che altrimenti verrebbero bloccati da collegamenti sicuri.
+   - **Non riscrivere gli URL seguenti**: consente di accedere agli URL specificati che altrimenti verrebbero bloccati da collegamenti sicuri.
 
      Nella casella digitare l'URL o il valore desiderato e quindi fare clic su ![Icona Aggiungi pulsante](../../media/ITPro-EAC-AddIcon.png).
 
@@ -118,13 +124,13 @@ La creazione di un criterio collegamenti sicuri personalizzato nel centro sicure
 
 5. Nella pagina **applicata alla** pagina che viene visualizzata, identificare i destinatari interni ai quali si applica il criterio.
 
-   È possibile utilizzare una condizione o un'eccezione solo una volta, ma è possibile specificare più valori per la condizione o l'eccezione. Più valori della stessa condizione o eccezione utilizzano la logica OR (ad esempio, _\<recipient1\>_ o _\<recipient2\>_ ). Condizioni o eccezioni diverse utilizzano la logica AND (ad esempio, _\<recipient1\>_ e _\<member of group 1\>_ ).
+   È possibile utilizzare una condizione o un'eccezione solo una volta, ma è possibile specificare più valori per la condizione o l'eccezione. Più valori della stessa condizione o eccezione utilizzano la logica OR (ad esempio, _\<recipient1\>_ o _\<recipient2\>_). Condizioni o eccezioni diverse utilizzano la logica AND (ad esempio, _\<recipient1\>_ e _\<member of group 1\>_).
 
-   Fare clic su **Aggiungi condizione**. Nell'elenco a discesa che viene visualizzato, selezionare una condizione in **applicato se** :
+   Fare clic su **Aggiungi condizione**. Nell'elenco a discesa che viene visualizzato, selezionare una condizione in **applicato se**:
 
-   - **Il destinatario è** : consente di specificare una o più cassette postali, utenti di posta elettronica o contatti di posta nell'organizzazione.
-   - **Il destinatario è un membro di** : consente di specificare uno o più gruppi nell'organizzazione.
-   - **Il dominio del destinatario è** : specifica i destinatari in uno o più dei domini configurati accettati nell'organizzazione.
+   - **Il destinatario è**: consente di specificare una o più cassette postali, utenti di posta elettronica o contatti di posta nell'organizzazione.
+   - **Il destinatario è un membro di**: consente di specificare uno o più gruppi nell'organizzazione.
+   - **Il dominio del destinatario è**: specifica i destinatari in uno o più dei domini configurati accettati nell'organizzazione.
 
    Dopo aver selezionato la condizione, viene visualizzato un elenco a discesa corrispondente con una **qualsiasi di queste** caselle.
 
@@ -182,7 +188,7 @@ Per altre informazioni sull'ordine di precedenza e su come vengono valutati e ap
 
 I criteri collegamenti sicuri vengono visualizzati nell'ordine in cui sono stati elaborati (il primo criterio ha il valore di **priorità** 0).
 
-**Nota** : nel centro sicurezza & conformità è possibile modificare solo la priorità dei criteri collegamenti sicuri dopo averlo creato. In PowerShell, è possibile ignorare la priorità predefinita quando si crea la regola per i collegamenti sicuri (che può influire sulla priorità delle regole esistenti).
+**Nota**: nel centro sicurezza & conformità è possibile modificare solo la priorità dei criteri collegamenti sicuri dopo averlo creato. In PowerShell, è possibile ignorare la priorità predefinita quando si crea la regola per i collegamenti sicuri (che può influire sulla priorità delle regole esistenti).
 
 Per modificare la priorità di un criterio, spostare il criterio più in alto o più in basso nell'elenco (non è possibile modificare direttamente il numero **Priority** nel Centro sicurezza e conformità).
 
@@ -194,7 +200,7 @@ Per modificare la priorità di un criterio, spostare il criterio più in alto o 
 
    - Il criterio collegamenti sicuri con il valore di **priorità** **0** ha solo il pulsante di **riduzione della priorità** disponibile.
 
-   - Il criterio collegamenti sicuri con il valore di **priorità** più basso (ad esempio, **3** ) ha solo il pulsante **aumenta priorità** disponibile.
+   - Il criterio collegamenti sicuri con il valore di **priorità** più basso (ad esempio, **3**) ha solo il pulsante **aumenta priorità** disponibile.
 
    - Se si dispone di tre o più criteri per i collegamenti sicuri, i criteri tra i valori di priorità più alti e quelli più bassi sono disponibili per i pulsanti **aumenta priorità** e **Riduci priorità** .
 
@@ -208,7 +214,7 @@ Per modificare la priorità di un criterio, spostare il criterio più in alto o 
 
 2. Nella pagina **collegamenti attendibili** , selezionare un criterio dall'elenco e fare clic su di esso (non selezionare la casella di controllo).
 
-3. Nei dettagli dei criteri che vengono visualizzati, fare clic su **Elimina criteri** , quindi fare clic su **Sì** nella finestra di dialogo di avviso visualizzata.
+3. Nei dettagli dei criteri che vengono visualizzati, fare clic su **Elimina criteri**, quindi fare clic su **Sì** nella finestra di dialogo di avviso visualizzata.
 
 ## <a name="use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-safe-links-policies"></a>Utilizzare PowerShell di Exchange Online o standalone EOP PowerShell per configurare i criteri per i collegamenti sicuri
 
@@ -227,14 +233,14 @@ La creazione di un criterio collegamenti sicuri in PowerShell è un processo in 
 1. Creare il criterio collegamenti sicuri.
 2. Creare la regola per i collegamenti sicuri che specifica il criterio collegamenti sicuri a cui si applica la regola.
 
- **Note** :
+ **Note**:
 
 - È possibile creare una nuova regola per i collegamenti sicuri e assegnare un criterio di collegamenti sicuri esistente e non associato. Una regola per i collegamenti sicuri non può essere associata a più di un criterio collegamenti sicuri.
 
 - È possibile configurare le impostazioni seguenti sui nuovi criteri collegamenti sicuri in PowerShell che non sono disponibili nel centro sicurezza & conformità fino a dopo la creazione del criterio:
 
-  - Creare il nuovo criterio come disabilitato ( _attivato_ `$false` nel cmdlet **New-SafeLinksRule** ).
-  - Impostare la priorità del criterio durante la creazione ( _priorità_ _\<Number\>_ ) del cmdlet **New-SafeLinksRule** .
+  - Creare il nuovo criterio come disabilitato (_attivato_ `$false` nel cmdlet **New-SafeLinksRule** ).
+  - Impostare la priorità del criterio durante la creazione (_priorità_ _\<Number\>_ ) del cmdlet **New-SafeLinksRule** .
 
 - Un nuovo criterio collegamenti sicuri creato in PowerShell non è visibile nel centro sicurezza & conformità fino a quando non si assegna il criterio a una regola per i collegamenti sicuri.
 
@@ -246,7 +252,7 @@ Per creare un criterio per i collegamenti sicuri, utilizzare la sintassi seguent
 New-SafeLinksPolicy -Name "<PolicyName>" [-AdminDisplayName "<Comments>"] [-IsEnabled <$true | $false>] [-EnableSafeLinksForTeams <$true | $false>] [-ScanUrls <$true | $false>] [-DeliverMessageAfterScan <$true | $false>] [-EnableForInternalSenders <$true | $false>] [-DoNotAllowClickThrough <$true | $false>] [-DoNotTrackUserClicks <$true | $false>] [-DoNotRewriteUrls "Entry1","Entry2",..."EntryN"]
 ```
 
-**Note** :
+**Note**:
 
 - Per informazioni dettagliate sulla sintassi delle voci da utilizzare per il parametro _DoNotRewriteUrls_ , vedere la [sintassi relativa alla voce per l'elenco "non riscrivere gli URL seguenti"](atp-safe-links.md#entry-syntax-for-the-do-not-rewrite-the-following-urls-list).
 
@@ -416,7 +422,7 @@ Nell'esempio seguente la priorità della regola denominata Marketing Department 
 Set-SafeLinksRule -Identity "Marketing Department" -Priority 2
 ```
 
-**Nota** : per impostare la priorità di una nuova regola al momento della creazione, utilizzare il parametro _Priority_ nel cmdlet **New-SafeLinksRule** .
+**Nota**: per impostare la priorità di una nuova regola al momento della creazione, utilizzare il parametro _Priority_ nel cmdlet **New-SafeLinksRule** .
 
 Per informazioni dettagliate sulla sintassi e sui parametri, vedere [set-SafeLinksRule](https://docs.microsoft.com/powershell/module/exchange/set-safelinksrule).
 

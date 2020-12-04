@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Le cassette postali condivise vengono utilizzate quando più persone devono accedere alla stessa cassetta postale. Informazioni su ciò che è necessario sapere prima di creare una cassetta postale condivisa.
-ms.openlocfilehash: d0e0888a71e2a017b3934caa67f8d53ffb787fe7
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: cc94ae30edcc7a8307328230989dc4a883732b0e
+ms.sourcegitcommit: 7e003ee0a06f61bfb9f80441c3479fa3148afafe
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48445700"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49568295"
 ---
 # <a name="about-shared-mailboxes"></a>Informazioni sulle cassette postali condivise
 
@@ -42,7 +42,7 @@ Prima [di creare una cassetta postale condivisa](create-a-shared-mailbox.md), ec
 
 - **Utenti esterni:** Non è possibile concedere agli utenti esterni alla propria azienda (ad esempio persone con un account Gmail) l'accesso alla cassetta postale condivisa. Se si vuole farlo comunque, è consigliabile creare un gruppo di Outlook. Per ulteriori informazioni, vedere [creare un gruppo di Microsoft 365 nell'](../create-groups/create-groups.md)interfaccia di amministrazione.
 
--  **Utilizzo con Outlook:** Oltre a utilizzare Outlook sul Web dal browser per accedere alle cassette postali condivise, è anche possibile usare l'app Outlook per iOS o l'app Outlook per Android. Per ulteriori informazioni, vedere <a href="https://support.microsoft.com/office/f866242c-81b2-472e-8776-6c49c5473c9f" target="_blank">aggiungere una cassetta postale condivisa a Outlook Mobile</a>. Un'altra opzione consiste nel creare un gruppo per la cassetta postale condivisa. Per ulteriori informazioni, vedere [confronto di gruppi](../create-groups/compare-groups.md).  
+- **Utilizzo con Outlook:** Oltre a utilizzare Outlook sul Web dal browser per accedere alle cassette postali condivise, è anche possibile usare l'app Outlook per iOS o l'app Outlook per Android. Per ulteriori informazioni, vedere [aggiungere una cassetta postale condivisa a Outlook Mobile](https://support.microsoft.com/office/f866242c-81b2-472e-8776-6c49c5473c9f). Un'altra opzione consiste nel creare un gruppo per la cassetta postale condivisa. Per ulteriori informazioni, vedere [confronto di gruppi](../create-groups/compare-groups.md).
 
 - **Crittografia:** Non è possibile crittografare la posta elettronica inviata da una cassetta postale condivisa. Ciò è dovuto al fatto che una cassetta postale condivisa non dispone di un proprio contesto di sicurezza (nome utente/password) in modo che non possa essere assegnata una chiave. Se più di una persona è un membro e inviano/ricevono messaggi di posta elettronica crittografati con le proprie chiavi, altri membri potrebbero essere in grado di leggere il messaggio di posta elettronica e altri potrebbero non, a seconda di quale chiave pubblica il messaggio di posta elettronica è stato crittografato con.
 

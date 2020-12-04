@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Gli amministratori possono sapere come funziona l'Insight di intelligence di spoofing. Possono determinare rapidamente quali mittenti stanno inviando messaggi di posta elettronica nelle loro organizzazioni da domini che non superano i controlli di autenticazione della posta elettronica (SPF, DKIM o DMARC).
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 89a31c6df7c9b6e02f52ea414ceb6334427feab1
-ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
+ms.openlocfilehash: 6f5ebd0fd42d17354eeb1e03c946ac5446c3667c
+ms.sourcegitcommit: d81c7cea85af6ad5fef81d3c930514a51464368c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48920479"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "49572742"
 ---
 # <a name="walkthrough---spoof-intelligence-insight-in-microsoft-defender-for-office-365"></a>Procedura dettagliata-spoofing Intelligence Insight in Microsoft Defender per Office 365
 
@@ -38,18 +38,19 @@ Per ulteriori informazioni sui report e sulle intuizioni, vedere [Reports and In
 
 Questa procedura dettagliata è una delle numerose per il Centro sicurezza & Compliance. Per informazioni sull'esplorazione di report e approfondimenti, vedere le procedure dettagliate nella sezione [argomenti correlati](#related-topics) .
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare?
+## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare
 
 - Aprire il Centro sicurezza e conformità in <https://protection.office.com/>. Per accedere direttamente alla pagina del **dashboard di sicurezza** , utilizzare <https://protection.office.com/searchandinvestigation/dashboard> .
 
   È possibile visualizzare l'Insight di intelligence di spoofing da più di un dashboard nel centro sicurezza & Compliance. Indipendentemente dal dashboard che si sta esaminando, l'Insight fornisce gli stessi dettagli e consente di eseguire rapidamente le stesse attività.
 
-- Prima di poter eseguire le procedure descritte in questo argomento, è necessario disporre delle autorizzazioni assegnate. Per utilizzare lo spoofing Intelligence Insight, è necessario essere membri di uno dei gruppi di ruoli seguenti:
+- Prima di poter eseguire le procedure descritte in questo articolo, è necessario disporre delle autorizzazioni per il Centro sicurezza & Compliance:
+  - **Gestione organizzazione**
+  - **Amministratore della sicurezza**
+  - **Lettore di sicurezza**
+  - **Ruolo con autorizzazioni di lettura globali**
 
-  - **Gestione organizzazione** o **Amministratore sicurezza** nel [Centro sicurezza e conformità](permissions-in-the-security-and-compliance-center.md).
-  - **Gestione organizzazione** o **Gestione igiene** in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
-  - **Lettore sicurezza** nel [Centro sicurezza e conformità](permissions-in-the-security-and-compliance-center.md).
-  - **Gestione organizzazione in sola lettura** in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
+  **Nota**: l'aggiunta di utenti al ruolo di Azure Active Directory corrispondente nell'interfaccia di amministrazione di Microsoft 365 fornisce agli utenti le autorizzazioni necessarie nel centro sicurezza & Compliance _e_ le autorizzazioni per altre caratteristiche in Microsoft 365. Per altre informazioni, vedere [Informazioni sui ruoli di amministratore](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
 
 - È possibile abilitare e disabilitare l'intelligence spoof nei criteri di anti-phishing in Microsoft Defender per Office 365. Per ulteriori informazioni, vedere [Configure anti-phishing Policies in Microsoft Defender for Office 365](configure-atp-anti-phishing-policies.md).
 
@@ -61,8 +62,8 @@ Questa procedura dettagliata è una delle numerose per il Centro sicurezza & Com
 
 2. Nella riga **Insights** cercare uno degli elementi seguenti:
 
-   - L' **intelligenza spoof è abilitata** : l'Insight è denominato **domini falsificati che non hanno eseguito l'autenticazione degli ultimi 30 giorni**. non vengono intraprese azioni in modalità test sul messaggio.
-   - L' **intelligenza contraffatta è disattivata** : l'Insight nel nome **Abilita la protezione spoof** e facendo clic su di essa è possibile abilitare l'intelligence spoof.
+   - L' **intelligenza spoof è abilitata**: l'Insight è denominato **domini falsificati che non hanno eseguito l'autenticazione degli ultimi 30 giorni**. non vengono intraprese azioni in modalità test sul messaggio.
+   - L' **intelligenza contraffatta è disattivata**: l'Insight nel nome **Abilita la protezione spoof** e facendo clic su di essa è possibile abilitare l'intelligence spoof.
 
 3. L'Insight sul dashboard Visualizza informazioni di questo tipo:
 
@@ -70,9 +71,9 @@ Questa procedura dettagliata è una delle numerose per il Centro sicurezza & Com
 
    Questa intuizione ha due modalità:
 
-   - **Modalità Insight** : se l'intelligence spoof è abilitata, l'Insight Visualizza il numero di messaggi che sono stati influenzati dalle funzionalità di intelligence spoof negli ultimi 30 giorni.
+   - **Modalità Insight**: se l'intelligence spoof è abilitata, l'Insight Visualizza il numero di messaggi che sono stati influenzati dalle funzionalità di intelligence spoof negli ultimi 30 giorni.
 
-   - **Cosa succede se la modalità** : se l'intelligence di spoofing è disabilitata, l'Insight Visualizza il numero *di messaggi che* sono stati influenzati dalle funzionalità di intelligence spoof negli ultimi 30 giorni.
+   - **Cosa succede se la modalità**: se l'intelligence di spoofing è disabilitata, l'Insight Visualizza il numero *di messaggi che* sono stati influenzati dalle funzionalità di intelligence spoof negli ultimi 30 giorni.
 
    In entrambi i casi, i domini falsificati visualizzati nell'Insight sono separati in due categorie: **coppie di domini sospetti** e **coppie di domini non sospetti**. Queste categorie sono ulteriormente suddivise in tre diversi bucket che è possibile esaminare.
 
@@ -84,11 +85,11 @@ Questa procedura dettagliata è una delle numerose per il Centro sicurezza & Com
 
    Le **coppie di domini sospetti** includono:
 
-   - **Spoof ad alta confidenza** : sulla base dei modelli di invio storico e del Punteggio di reputazione dei domini, è estremamente sicuro che i domini siano spoofing e che i messaggi provenienti da questi domini abbiano maggiori probabilità di essere dannosi.
+   - **Spoof ad alta confidenza**: sulla base dei modelli di invio storico e del Punteggio di reputazione dei domini, è estremamente sicuro che i domini siano spoofing e che i messaggi provenienti da questi domini abbiano maggiori probabilità di essere dannosi.
 
-   - **Falsificazione della confidenza moderata** : in base ai modelli di invio cronologici e al Punteggio di reputazione dei domini, si è certi che i domini siano spoofing e che i messaggi inviati da questi domini siano legittimi. I falsi positivi sono più probabili in questa categoria rispetto alla falsificazione con attendibilità elevata.
+   - **Falsificazione della confidenza moderata**: in base ai modelli di invio cronologici e al Punteggio di reputazione dei domini, si è certi che i domini siano spoofing e che i messaggi inviati da questi domini siano legittimi. I falsi positivi sono più probabili in questa categoria rispetto alla falsificazione con attendibilità elevata.
 
-   - **Coppie di domini non sospetti** (include **Rescued spoof** ): il dominio non è riuscito l'autenticazione esplicita della posta elettronica controlla [SPF](how-office-365-uses-spf-to-prevent-spoofing.md), [DKIM](use-dkim-to-validate-outbound-email.md)e [DMARC](use-dmarc-to-validate-email.md)). Tuttavia, il dominio ha superato i controlli di autenticazione della posta elettronica impliciti ([autenticazione composita](email-validation-and-authentication.md#composite-authentication)). Di conseguenza, non è stata eseguita alcuna azione antispoofing sul messaggio.
+   - **Coppie di domini non sospetti** (include **Rescued spoof**): il dominio non è riuscito l'autenticazione esplicita della posta elettronica controlla [SPF](how-office-365-uses-spf-to-prevent-spoofing.md), [DKIM](use-dkim-to-validate-outbound-email.md)e [DMARC](use-dmarc-to-validate-email.md)). Tuttavia, il dominio ha superato i controlli di autenticazione della posta elettronica impliciti ([autenticazione composita](email-validation-and-authentication.md#composite-authentication)). Di conseguenza, non è stata eseguita alcuna azione antispoofing sul messaggio.
 
 ### <a name="view-detailed-information-about-suspicious-domain-pairs-from-the-spoof-intelligence-insight"></a>Visualizzare informazioni dettagliate sulle coppie di domini sospetti da spoofing Intelligence Insight
 
@@ -119,7 +120,7 @@ La possibilità di una coppia di domini consente solo la combinazione del domini
 
 Ad esempio, è possibile consentire alla coppia di domini seguente di inviare messaggi falsificati all'organizzazione:
 
-- *Dominio contraffatto* : Gmail.com "
+- *Dominio contraffatto*: Gmail.com "
 - *Infrastruttura di invio* `tms.mx.com` :
 
 Solo il messaggio di posta elettronica da tale coppia di dominio sarà autorizzato allo spoofing. Gli altri mittenti che tentano di falsificare gmail.com non sono consentiti. I messaggi in altri domini di tms.mx.com vengono controllati da spoofing Intelligence.
