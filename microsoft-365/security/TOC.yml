@@ -527,7 +527,7 @@
               href: ./office-365-security/campaigns.md
             - name: Indagare i messaggi di posta elettronica dannosi
               href: ./office-365-security/investigate-malicious-email-that-was-delivered.md
-            - name: Visualizzare report nel Centro sicurezza e conformità
+            - name: Vedere Report nel Centro sicurezza e conformità di Office 365
               href: ./office-365-security/view-reports-for-atp.md
             - name: Visualizzare dettagli e risultati di un'indagine automatizzata
               href: ./office-365-security/air-view-investigation-results.md
