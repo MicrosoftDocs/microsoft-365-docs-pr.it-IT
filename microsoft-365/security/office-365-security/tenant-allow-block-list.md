@@ -15,14 +15,14 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Gli amministratori possono ottenere informazioni su come configurare le voci URL nell'elenco Consenti/blocca tenant nel centro sicurezza & Compliance.
-ms.openlocfilehash: eb9dcc5b239aae1366a0a2e0eebd68b3f0082e6b
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 1aae54ffd6026a7fc131017a10f9676d96be9b69
+ms.sourcegitcommit: d81c7cea85af6ad5fef81d3c930514a51464368c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48202340"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "49572641"
 ---
-# <a name="manage-urls-in-the-tenant-allowblock-list"></a>Gestire URL e file nell'elenco di tenant consentiti/bloccati
+# <a name="manage-urls-in-the-tenant-allowblock-list"></a>Gestire URL nell'elenco di tenant consentiti/bloccati
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -52,17 +52,16 @@ In questo argomento viene descritto come configurare le voci nell'elenco Consent
 
 - Per informazioni su come connettersi a PowerShell per Exchange Online, vedere [Connettersi a PowerShell per Exchange Online](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell). Per connettersi a PowerShell di EOP autonomo, vedere [Connettersi a PowerShell per Exchange Online Protection](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
-- È necessario disporre delle autorizzazioni per eseguire le procedure di questo argomento:
+- Prima di poter eseguire le procedure descritte in questo articolo, è necessario disporre delle autorizzazioni per il Centro sicurezza & Compliance:
+  - Per aggiungere e rimuovere valori dall'elenco Consenti/blocca tenant, è necessario essere membri dei gruppi di ruoli **Gestione organizzazione** o **amministratore sicurezza** .
+  - Per l'accesso in sola lettura all'elenco Consenti/blocca tenant, è necessario essere membri dei gruppi di ruoli **lettore globale** o **lettore di sicurezza** .
 
-  - Per aggiungere e rimuovere valori dall'elenco Consenti/blocca tenant, è necessario essere membri di uno dei gruppi di ruoli seguenti:
+  Per altre informazioni, vedere [Autorizzazioni nel Centro sicurezza e conformità](permissions-in-the-security-and-compliance-center.md).
 
-    - **Gestione organizzazione** o **Amministratore sicurezza** nel [Centro sicurezza e conformità](permissions-in-the-security-and-compliance-center.md).
-    - **Gestione organizzazione** o **Gestione igiene** in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
+  **Note**:
 
-  - Per l'accesso in sola lettura all'elenco Consenti/blocca tenant, è necessario essere membri di uno dei gruppi di ruoli seguenti:
-
-    - **Lettore sicurezza** nel [Centro sicurezza e conformità](permissions-in-the-security-and-compliance-center.md).
-    - **Gestione organizzazione in sola lettura** in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
+  - L'aggiunta di utenti al ruolo di Azure Active Directory corrispondente nell'interfaccia di amministrazione di Microsoft 365 fornisce agli utenti le autorizzazioni necessarie per il Centro sicurezza & Compliance _e_ le autorizzazioni per altre funzionalità di Microsoft 365. Per altre informazioni, vedere [Informazioni sui ruoli di amministratore](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
+  - Il gruppo di ruoli di **gestione dell'organizzazione di sola visualizzazione** in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) fornisce anche l'accesso in sola lettura alla funzionalità.
 
 ## <a name="use-the-security--compliance-center-to-create-url-entries-in-the-tenant-allowblock-list"></a>Utilizzare il Centro sicurezza & conformità per creare le voci URL nell'elenco Consenti/blocca tenant
 
@@ -116,11 +115,11 @@ Fare clic su **filtro**. Nel riquadro a comparsa del **filtro** visualizzato, co
 
 - **Ultimo aggiornamento**: selezionare una data di inizio (**da**), una data di fine (**a**) o entrambe.
 
-- **Data di scadenza**: selezionare una data di inizio (**da**), una data**di**fine (a) o entrambe.
+- **Data di scadenza**: selezionare una data di inizio (**da**), una data **di** fine (a) o entrambe.
 
 Al termine, fare clic su **applica**.
 
-Per cancellare i filtri esistenti, fare clic su **filtro**e, nel riquadro a comparsa **filtro** visualizzato, fare clic su **Pulisci filtri**.
+Per cancellare i filtri esistenti, fare clic su **filtro** e, nel riquadro a comparsa **filtro** visualizzato, fare clic su **Pulisci filtri**.
 
 ## <a name="use-the-security--compliance-center-to-modify-entries-in-the-tenant-allowblock-list"></a>Utilizzare il Centro sicurezza & conformità per modificare le voci nell'elenco Consenti/blocca tenant
 
@@ -319,7 +318,7 @@ Le voci URL valide e i relativi risultati sono descritte nelle sezioni seguenti.
   - www.contoso.com
   - xyz.abc.contoso.com
 
-- **Consenti non corrispondente** e **non corrisponde**a un blocco:
+- **Consenti non corrispondente** e **non corrisponde** a un blocco:
 
   - 123contoso.com
   - contoso.com
@@ -336,7 +335,7 @@ Le voci URL valide e i relativi risultati sono descritte nelle sezioni seguenti.
   - contoso.com/a/b/c
   - contoso. com/a/? q = joe@t. com
 
-- **Consenti non corrispondente** e **non corrisponde**a un blocco:
+- **Consenti non corrispondente** e **non corrisponde** a un blocco:
 
   - contoso.com
   - contoso.com/a
@@ -353,7 +352,7 @@ Le voci URL valide e i relativi risultati sono descritte nelle sezioni seguenti.
   - www.contoso.com
   - xyz.abc.contoso.com
 
-- **Consenti non corrispondente** e **non corrisponde**a un blocco:
+- **Consenti non corrispondente** e **non corrisponde** a un blocco:
 
   - 123contoso.com
   - contoso.com/abc
@@ -401,7 +400,7 @@ Le voci URL valide e i relativi risultati sono descritte nelle sezioni seguenti.
   - www.contoso.com/b
   - xyz.abc.contoso.com
 
-- **Consenti non corrispondente** e **non corrisponde**a un blocco:
+- **Consenti non corrispondente** e **non corrisponde** a un blocco:
 
   - 123contoso.com
   - contoso.org
@@ -412,7 +411,7 @@ Le voci URL valide e i relativi risultati sono descritte nelle sezioni seguenti.
 
 - **Consenti** corrispondenza e **blocca corrispondenza**: 1.2.3.4
 
-- **Consenti non corrispondente** e **non corrisponde**a un blocco:
+- **Consenti non corrispondente** e **non corrisponde** a un blocco:
 
   - 1.2.3.4/a
   - 11.2.3.4/a

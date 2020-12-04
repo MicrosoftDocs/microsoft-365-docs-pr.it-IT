@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 ROBOTS: NOINDEX
 description: Gli amministratori possono imparare a usare i tag di quarantena per controllare quali utenti sono in grado di eseguire nei messaggi in quarantena.
-ms.openlocfilehash: e194aabf57a1a105f01d8d34815312d3c2fa153d
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.openlocfilehash: 68f28e2dff3bdeada2685ef6806489f5e57f5daf
+ms.sourcegitcommit: d81c7cea85af6ad5fef81d3c930514a51464368c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49357648"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "49572670"
 ---
 # <a name="quarantine-tags"></a>Tag di quarantena
 
@@ -56,15 +56,13 @@ Se non si desiderano le autorizzazioni predefinite nei gruppi di autorizzazioni 
 
 È possibile creare e assegnare tag di quarantena nel centro sicurezza & Compliance o in PowerShell (Exchange Online PowerShell per Microsoft 365 organizzazioni con cassette postali di Exchange Online; standalone EOP PowerShell nelle organizzazioni di EOP senza cassette postali di Exchange Online).
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare?
+## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare
 
 - Aprire il Centro sicurezza e conformità in <https://protection.office.com/>. Per passare direttamente alla pagina dei **tag di quarantena** , Apri <https://protection.office.com/quarantineTags> .
 
 - Per informazioni su come connettersi a PowerShell per Exchange Online, vedere [Connettersi a PowerShell per Exchange Online](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell). Per connettersi a PowerShell di EOP autonomo, vedere [Connettersi a PowerShell per Exchange Online Protection](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
-- Per visualizzare, creare, modificare o rimuovere i tag di quarantena, è necessario essere membri di uno dei gruppi di ruoli seguenti:
-  - **Gestione organizzazione** o **Amministratore sicurezza** nel [Centro sicurezza e conformità](permissions-in-the-security-and-compliance-center.md).
-  - **Gestione organizzazione** o **Gestione igiene** in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
+- Per visualizzare, creare, modificare o rimuovere i tag di quarantena, è necessario essere membri dei ruoli **Gestione organizzazione** o **amministratore sicurezza** nel [Centro sicurezza & Compliance](permissions-in-the-security-and-compliance-center.md).
 
 ## <a name="step-1-create-quarantine-tags-in-the-security--compliance-center"></a>Passaggio 1: creare tag di quarantena nel centro sicurezza & Compliance
 

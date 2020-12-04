@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Impostare le autorizzazioni e i ruoli utente di Microsoft Compliance Manager e configurare il testing automatizzato delle azioni. Gestire la cronologia degli utenti e filtrare la visualizzazione del dashboard.
-ms.openlocfilehash: bcb75943df88578b30063d8e35877cb2e3e6250b
-ms.sourcegitcommit: 20d1158c54a5058093eb8aac23d7e4dc68054688
+ms.openlocfilehash: 9a09e12457d39e2f4aab99d3bec68b77c1a3a975
+ms.sourcegitcommit: d81c7cea85af6ad5fef81d3c930514a51464368c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "49376557"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "49572395"
 ---
 # <a name="get-started-with-compliance-manager"></a>Introduzione a Compliance Manager
 
@@ -72,7 +72,7 @@ Per impostare le autorizzazioni e assegnare i ruoli dall'interno del centro conf
 
 8. Al termine dell'assegnazione degli utenti, selezionare fine, quindi **fare** clic su **Salva** e quindi su **Chiudi**.
 
-##### <a name="more-about-the-office-365-secruity--compliance-center"></a>Ulteriori informazioni sul centro conformità di Office 365 Secruity &
+##### <a name="more-about-the-office-365-security--compliance-center"></a>Ulteriori informazioni sul centro sicurezza & conformità di Office 365
 
 Per ulteriori informazioni sulle autorizzazioni, vedere [Office 365 Security & Compliance Center](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center).
 

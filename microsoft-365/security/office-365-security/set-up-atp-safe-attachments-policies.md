@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 description: Informazioni su come definire i criteri per gli allegati sicuri per proteggere l'organizzazione da file dannosi tramite posta elettronica.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ca0bfb7ba91f86fee187cfe3445c0dd6c8d4ad56
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: a14f5a22795fc08b76165466d8e44ee38d8a2d81
+ms.sourcegitcommit: d81c7cea85af6ad5fef81d3c930514a51464368c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48845493"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "49572640"
 ---
 # <a name="set-up-safe-attachments-policies-in-microsoft-defender-for-office-365"></a>Configurare i criteri per gli allegati sicuri in Microsoft Defender per Office 365
 
@@ -40,7 +40,7 @@ Non esiste alcun criterio di allegati sicuri incorporato o predefinito. Per otte
 Gli elementi di base di un criterio di allegati sicuri sono i seguenti:
 
 - **Criterio** degli allegati sicuri: consente di specificare le azioni per i rilevamenti di malware sconosciuti, se inviare messaggi con allegati malware a un indirizzo di posta elettronica specificato e se recapitare i messaggi se l'analisi degli allegati sicuri non può essere completata.
-- **Regola per gli allegati sicuri** : consente di specificare i filtri priorità e destinatario (a chi si applica il criterio).
+- **Regola per gli allegati sicuri**: consente di specificare i filtri priorità e destinatario (a chi si applica il criterio).
 
 La differenza tra questi due elementi non è ovvia quando si gestiscono i criteri degli allegati sicuri nel centro sicurezza & conformità:
 
@@ -53,16 +53,22 @@ In PowerShell di Exchange Online o in EOP PowerShell autonomo i criteri e la reg
 > [!NOTE]
 > Nell'area impostazioni globali delle impostazioni degli allegati sicuri, è possibile configurare le funzionalità che non dipendono dai criteri degli allegati sicuri. Per le istruzioni [, vedere Abilitare ATP per SharePoint, OneDrive e Microsoft teams](turn-on-atp-for-spo-odb-and-teams.md) e [documenti attendibili in Microsoft 365 E5](safe-docs.md).
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare?
+## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare
 
 - Aprire il Centro sicurezza e conformità in <https://protection.office.com/>. Per passare direttamente alla pagina **allegati sicuri** , utilizzare <https://protection.office.com/safeattachmentv2> .
 
 - Per informazioni su come connettersi a PowerShell per Exchange Online, vedere [Connettersi a PowerShell per Exchange Online](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell). Per connettersi a PowerShell di EOP autonomo, vedere [Connettersi a PowerShell per Exchange Online Protection](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
-- Per visualizzare, creare, modificare ed eliminare i criteri per gli allegati sicuri, è necessario essere membri di uno dei gruppi di ruoli seguenti:
+- Prima di poter eseguire le procedure descritte in questo articolo, è necessario disporre delle autorizzazioni per il Centro sicurezza & Compliance:
+  - Per creare, modificare ed eliminare i criteri per gli allegati sicuri, è necessario essere membri dei gruppi di ruoli **Gestione organizzazione** o **amministratore sicurezza** .
+  - Per l'accesso in sola lettura ai criteri allegati sicuri, è necessario essere membri dei gruppi di ruoli **lettore globale** o lettore di **sicurezza** .
 
-  - **Gestione organizzazione** o **Amministratore sicurezza** nel [Centro sicurezza e conformità](permissions-in-the-security-and-compliance-center.md).
-  - **Gestione dell'organizzazione** in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
+  Per altre informazioni, vedere [Autorizzazioni nel Centro sicurezza e conformità](permissions-in-the-security-and-compliance-center.md).
+
+  **Note**:
+
+  - L'aggiunta di utenti al ruolo di Azure Active Directory corrispondente nell'interfaccia di amministrazione di Microsoft 365 fornisce agli utenti le autorizzazioni necessarie per il Centro sicurezza & Compliance _e_ le autorizzazioni per altre funzionalità di Microsoft 365. Per altre informazioni, vedere [Informazioni sui ruoli di amministratore](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
+  - Il gruppo di ruoli di **gestione dell'organizzazione di sola visualizzazione** in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) fornisce anche l'accesso in sola lettura alla funzionalità.
 
 - Per le impostazioni consigliate per i criteri per gli allegati sicuri, vedere [Safe Attachments Settings](recommended-settings-for-eop-and-office365-atp.md#safe-attachments-settings).
 
@@ -78,25 +84,25 @@ La creazione di un criterio di allegati sicuri personalizzato nel centro sicurez
 
 3. Verrà visualizzata la procedura guidata **nuovo criterio allegati sicuri** . Nella pagina **Name Your Policy** , configurare le seguenti impostazioni:
 
-   - **Nome** : immettere un nome univoco descrittivo per il criterio.
+   - **Nome**: immettere un nome univoco descrittivo per il criterio.
 
-   - **Descrizione** : immettere una descrizione opzionale per il criterio.
+   - **Descrizione**: immettere una descrizione opzionale per il criterio.
 
    Al termine dell'operazione, fare clic su **Avanti**.
 
 4. Nella pagina **Impostazioni** che viene visualizzata, configurare le seguenti impostazioni:
 
-   - **Risposta malware per gli allegati sicuri** : selezionare uno dei valori seguenti:
+   - **Risposta malware per gli allegati sicuri**: selezionare uno dei valori seguenti:
 
-     - **Off** : in genere, non è consigliabile questo valore.
+     - **Off**: in genere, non è consigliabile questo valore.
      - **Monitor**
-     - **Block** : questo è il valore predefinito e il valore consigliato nei [criteri di sicurezza preimpostati](preset-security-policies.md)standard e rigorosi.
+     - **Block**: questo è il valore predefinito e il valore consigliato nei [criteri di sicurezza preimpostati](preset-security-policies.md)standard e rigorosi.
      - **Sostituisce**
      - **Recapito dinamico (funzionalità di anteprima)**
 
      Questi valori vengono illustrati nelle [impostazioni dei criteri allegati sicuri](atp-safe-attachments.md#safe-attachments-policy-settings).
 
-   - **Inviare l'allegato all'indirizzo di posta elettronica seguente** : per il **blocco** , il **monitoraggio** o la **sostituzione** dei valori di azione, è possibile selezionare **Abilita reindirizzamento** per inviare messaggi che contengono allegati di malware all'indirizzo di posta elettronica interno o esterno specificato per l'analisi e l'indagine.
+   - **Inviare l'allegato all'indirizzo di posta elettronica seguente**: per il **blocco**, il **monitoraggio** o la **sostituzione** dei valori di azione, è possibile selezionare **Abilita reindirizzamento** per inviare messaggi che contengono allegati di malware all'indirizzo di posta elettronica interno o esterno specificato per l'analisi e l'indagine.
 
      La raccomandazione per le impostazioni dei criteri standard e rigorosa consiste nell'abilitare il reindirizzamento. Per ulteriori informazioni, vedere [impostazioni degli allegati sicuri](recommended-settings-for-eop-and-office365-atp.md#safe-attachments-settings).
 
@@ -106,13 +112,13 @@ La creazione di un criterio di allegati sicuri personalizzato nel centro sicurez
 
 5. Nella pagina **applicata alla** pagina che viene visualizzata, identificare i destinatari interni ai quali si applica il criterio.
 
-   È possibile utilizzare una condizione o un'eccezione solo una volta, ma è possibile specificare più valori per la condizione o l'eccezione. Più valori della stessa condizione o eccezione utilizzano la logica OR (ad esempio, _\<recipient1\>_ o _\<recipient2\>_ ). Condizioni o eccezioni diverse utilizzano la logica AND (ad esempio, _\<recipient1\>_ e _\<member of group 1\>_ ).
+   È possibile utilizzare una condizione o un'eccezione solo una volta, ma è possibile specificare più valori per la condizione o l'eccezione. Più valori della stessa condizione o eccezione utilizzano la logica OR (ad esempio, _\<recipient1\>_ o _\<recipient2\>_). Condizioni o eccezioni diverse utilizzano la logica AND (ad esempio, _\<recipient1\>_ e _\<member of group 1\>_).
 
-   Fare clic su **Aggiungi condizione**. Nell'elenco a discesa che viene visualizzato, selezionare una condizione in **applicato se** :
+   Fare clic su **Aggiungi condizione**. Nell'elenco a discesa che viene visualizzato, selezionare una condizione in **applicato se**:
 
-   - **Il destinatario è** : consente di specificare una o più cassette postali, utenti di posta elettronica o contatti di posta nell'organizzazione.
-   - **Il destinatario è un membro di** : consente di specificare uno o più gruppi nell'organizzazione.
-   - **Il dominio del destinatario è** : specifica i destinatari in uno o più dei domini configurati accettati nell'organizzazione.
+   - **Il destinatario è**: consente di specificare una o più cassette postali, utenti di posta elettronica o contatti di posta nell'organizzazione.
+   - **Il destinatario è un membro di**: consente di specificare uno o più gruppi nell'organizzazione.
+   - **Il dominio del destinatario è**: specifica i destinatari in uno o più dei domini configurati accettati nell'organizzazione.
 
    Dopo aver selezionato la condizione, viene visualizzato un elenco a discesa corrispondente con una **qualsiasi di queste** caselle.
 
@@ -170,7 +176,7 @@ Per altre informazioni sull'ordine di precedenza e su come vengono valutati e ap
 
 I criteri allegati sicuri vengono visualizzati nell'ordine in cui sono stati elaborati (il primo criterio ha il valore di **priorità** 0).
 
-**Nota** : nel centro sicurezza & conformità è possibile modificare solo la priorità del criterio allegati sicuri dopo averlo creato. In PowerShell, è possibile ignorare la priorità predefinita quando si crea la regola degli allegati sicuri (che può influire sulla priorità delle regole esistenti).
+**Nota**: nel centro sicurezza & conformità è possibile modificare solo la priorità del criterio allegati sicuri dopo averlo creato. In PowerShell, è possibile ignorare la priorità predefinita quando si crea la regola degli allegati sicuri (che può influire sulla priorità delle regole esistenti).
 
 Per modificare la priorità di un criterio, spostare il criterio più in alto o più in basso nell'elenco (non è possibile modificare direttamente il numero **Priority** nel Centro sicurezza e conformità).
 
@@ -182,7 +188,7 @@ Per modificare la priorità di un criterio, spostare il criterio più in alto o 
 
    - Il criterio per gli allegati sicuri con il valore di **priorità** **0** ha solo il pulsante di **riduzione della priorità** disponibile.
 
-   - Il criterio per gli allegati sicuri con il valore di **priorità** più basso (ad esempio, **3** ) ha solo il pulsante **aumenta priorità** disponibile.
+   - Il criterio per gli allegati sicuri con il valore di **priorità** più basso (ad esempio, **3**) ha solo il pulsante **aumenta priorità** disponibile.
 
    - Se si dispone di tre o più criteri per gli allegati sicuri, i criteri tra i valori di priorità più alti e quelli più bassi hanno sia la **priorità di aumento** che i pulsanti di **priorità di riduzione** disponibili.
 
@@ -196,7 +202,7 @@ Per modificare la priorità di un criterio, spostare il criterio più in alto o 
 
 2. Nella pagina **allegati sicuri** selezionare un criterio dall'elenco e fare clic su di esso (non selezionare la casella di controllo).
 
-3. Nei dettagli dei criteri che vengono visualizzati, fare clic su **Elimina criteri** , quindi fare clic su **Sì** nella finestra di dialogo di avviso visualizzata.
+3. Nei dettagli dei criteri che vengono visualizzati, fare clic su **Elimina criteri**, quindi fare clic su **Sì** nella finestra di dialogo di avviso visualizzata.
 
 ## <a name="use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-safe-attachments-policies"></a>Utilizzo di PowerShell di Exchange Online o standalone EOP PowerShell per configurare i criteri degli allegati sicuri
 
@@ -215,13 +221,13 @@ La creazione di un criterio allegati sicuri in PowerShell è un processo in due 
 1. Creare il criterio degli allegati sicuri.
 2. Creare la regola per gli allegati sicuri che specifichi il criterio degli allegati sicuri a cui si applica la regola.
 
- **Note** :
+ **Note**:
 
 - È possibile creare una nuova regola per gli allegati sicuri e assegnare un criterio di allegato sicuro non associato esistente. Non è possibile associare una regola per gli allegati sicuri a più di un criterio di allegato sicuro.
 
 - È possibile configurare le impostazioni seguenti sui nuovi criteri degli allegati sicuri in PowerShell che non sono disponibili nel centro sicurezza & conformità fino a dopo la creazione del criterio:
-  - Creare il nuovo criterio come disabilitato ( _attivato_ `$false` nel cmdlet **New-SafeAttachmentRule** ).
-  - Impostare la priorità del criterio durante la creazione ( _priorità_ _\<Number\>_ ) del cmdlet **New-SafeAttachmentRule** .
+  - Creare il nuovo criterio come disabilitato (_attivato_ `$false` nel cmdlet **New-SafeAttachmentRule** ).
+  - Impostare la priorità del criterio durante la creazione (_priorità_ _\<Number\>_ ) del cmdlet **New-SafeAttachmentRule** .
 
 - Un nuovo criterio degli allegati sicuri creato in PowerShell non è visibile nel centro sicurezza & conformità fino a quando non si assegna il criterio a una regola di allegato sicura.
 
@@ -388,7 +394,7 @@ Nell'esempio seguente la priorità della regola denominata Marketing Department 
 Set-SafeAttachmentRule -Identity "Marketing Department" -Priority 2
 ```
 
-**Nota** : per impostare la priorità di una nuova regola al momento della creazione, utilizzare il parametro _Priority_ nel cmdlet **New-SafeAttachmentRule** .
+**Nota**: per impostare la priorità di una nuova regola al momento della creazione, utilizzare il parametro _Priority_ nel cmdlet **New-SafeAttachmentRule** .
 
 Per informazioni dettagliate sulla sintassi e sui parametri, vedere [set-SafeAttachmentRule](https://docs.microsoft.com/powershell/module/exchange/set-safeattachmentrule).
 

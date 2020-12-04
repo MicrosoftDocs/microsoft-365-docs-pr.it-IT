@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Pronti per iniziare a implementare le etichette di riservatezza per proteggere i dati dell'organizzazione, ma in dubbio su come iniziare? Leggere alcune guide pratiche utili per iniziare il percorso di implementazione dell'etichettatura.
-ms.openlocfilehash: 12da7f3dd5e6d0d4650d19a8cd5f6f41b51f2558
-ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
+ms.openlocfilehash: 79dc57e545c3063cae641bab2603e3011c5a1769
+ms.sourcegitcommit: 7e003ee0a06f61bfb9f80441c3479fa3148afafe
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48398843"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49568602"
 ---
 # <a name="get-started-with-sensitivity-labels"></a>Iniziare a usare le etichette di riservatezza
 
@@ -93,6 +93,8 @@ Tutti gli scenari richiedono di [Creare e configurare etichette di riservatezza 
 |Applicare e visualizzare le etichette di riservatezza in Power BI e proteggere i dati durante l'esportazione|[Come applicare le etichette di riservatezza in Power BI](https://docs.microsoft.com/power-bi/admin/service-security-apply-data-sensitivity-labels)|
 |Monitorare e capire come vengono usate le etichette di riservatezza nell'organizzazione|[Conoscere i dati - Panoramica della classificazione dei dati](data-classification-overview.md) <br /><br /> [Visualizzare l'utilizzo delle etichette con Analisi delle etichette](label-analytics.md)|
 |Estendere le etichette di riservatezza ad app e servizi di terze parti|[SDK di Microsoft Information Protection](https://docs.microsoft.com/information-protection/develop/overview#microsoft-information-protection-sdk)|
+|Estendere etichette di riservatezza ai contenuti di Archiviazione BLOB di Azure, File di Azure, Azure Data Lake Storage Gen1 e Azure Data Lake Storage Gen12|[Etichettare automaticamente contenuti in Azure Purview](https://docs.microsoft.com/azure/purview/create-sensitivity-label) |
+
 
 ## <a name="end-user-documentation-for-sensitivity-labels"></a>Documentazione per gli utenti finali sulle etichette di riservatezza
 
