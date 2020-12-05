@@ -18,12 +18,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: La sicurezza e la mobilità di base fanno parte dei piani di Microsoft 365.
-ms.openlocfilehash: 8724b3dccbdb5949190ceda4b804b9f1f2a5d4b2
-ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
+ms.openlocfilehash: 75fef5bd70d7b8926d31b80f16952aa996bc625c
+ms.sourcegitcommit: e53234b1f64ebca00e121da1706c02b3337c35f0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49561496"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "49580662"
 ---
 # <a name="choose-between-basic-mobility-and-security-or-intune"></a>Scegliere tra mobilità e sicurezza di base o Intune
 
@@ -69,8 +69,7 @@ Microsoft Intune e la sicurezza e la mobilità di base incorporati offrono la po
 |Tipi di dispositivi|Gestione di diverse piattaforme del sistema operativo e varianti di modalità di gestione principali. |Windows<br/>iOS<br/>Android<br/>Android Samsung KNOX<br/>|Windows<br/>iOS<br/>Android<br/>Android Samsung KNOX<br/>Mac OS, sistema operativo iPad|
 |Conformità dispositivo|Impostare e gestire i criteri di sicurezza, ad esempio il blocco PIN a livello di dispositivo e il rilevamento jailbreak. |Limitazioni su dispositivi Android 9 e versioni successive. Vedere [Details](capabilities.md). |Sì|
 |Accesso condizionale basato sulla conformità del dispositivo |Impedire ai dispositivi non conformi di accedere alla posta elettronica aziendale e ai dati dal cloud. |Non supportato in Windows 10.<br/>Limitato a controllare l'accesso a Exchange Online, SharePoint Online e Outlook. |Sì |
-|Configurazione delle periferiche  |Configurare le impostazioni dei dispositivi (ad esempio, disabilitando la videocamera)|Conformità dispositivo|Impostare e gestire i criteri di sicurezza, ad esempio il blocco PIN a livello di dispositivo e il rilevamento jailbreak. |Limitazioni su dispositivi Android 9 e versioni successive. Vedere [Details](capabilities.md). |Sì|
- |Set limitato di impostazioni. |Sì|
+|Configurazione delle periferiche  |Configurare le impostazioni dei dispositivi (ad esempio, disabilitando la videocamera)|Set limitato di impostazioni.|Sì|Conformità dispositivo|Impostare e gestire i criteri di sicurezza, ad esempio il blocco PIN a livello di dispositivo e il rilevamento jailbreak. |Limitazioni su dispositivi Android 9 e versioni successive. Vedere [Details](capabilities.md). |Sì|
 |Profili di posta elettronica  |Eseguire il provisioning di un profilo di posta elettronica nativo nel dispositivo. |Sì|Sì|
 |Profili WiFi |Provisioning di un profilo Wi-Fi nativo sul dispositivo. |No|Sì|
 |Profili VPN |Provisioning di un profilo VPN nativo nel dispositivo. |No|Sì|

@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: f493e3af-e1d8-4668-9211-230c245a0466
 description: Informazioni su come impostare le singole password utente in modo che non scadano mai, utilizzando Windows PowerShell.
-ms.openlocfilehash: 9497dfb5793ddbfc3d6845ec1efba91ad972ea38
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 2d60a8312be070d3f56cfef7cfb93e6c5da32991
+ms.sourcegitcommit: e53234b1f64ebca00e121da1706c02b3337c35f0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48646656"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "49580638"
 ---
 # <a name="set-an-individual-users-password-to-never-expire"></a>Impostare la password di un singolo utente in modo che non scada mai
 
@@ -107,6 +107,9 @@ Run one of the following commands:
     Get-AzureADUser -All $true | Set-AzureADUser -PasswordPolicies DisablePasswordExpiration
     ```
 
+> [!WARNING]
+> Gli account utente configurati con il `-PasswordPolicies DisablePasswordExpiration` parametro Age è ancora basato sull' `pwdLastSet` attributo. In base all' `pwdLastSet` attributo, se si modifica la data di scadenza `-PasswordPolicies None` , tutte le password con un pwdLastSet precedente a 90 giorni richiedono all'utente di modificarle al successivo accesso. Questa modifica può influire su un numero elevato di utenti.
+
 ### <a name="set-a-password-to-expire"></a>Impostare una password per la scadenza
 
 Eseguire uno dei comandi riportati di seguito:
@@ -122,9 +125,6 @@ Eseguire uno dei comandi riportati di seguito:
     ```powershell
     Get-AzureADUser -All $true | Set-AzureADUser -PasswordPolicies None
     ```
-
-> [!WARNING]
-> Account utente configurati con il `-PasswordPolicies DisablePasswordExpiration` parametro still Age in base all' `pwdLastSet` attributo dell'account utente. Ad esempio, se si impostano le password degli utenti a non scadere mai e quindi 90 o più giorni passano, le password scadono ancora. In base all' `pwdLastSet` attributo dell'account utente, per gli account utente configurati con il `-PasswordPolicies None` parametro, tutte le password con un `pwdLastSet` tempo precedente a 90 giorni richiedono all'utente di modificarle al successivo accesso. Questa modifica può influire su un numero elevato di utenti.
 
 ## <a name="related-content"></a>Contenuti correlati
 

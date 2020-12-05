@@ -13,12 +13,12 @@ localization_priority: Normal
 f1.keywords:
 - NOCSH
 description: In questo articolo vengono fornite informazioni su come espandere la presenza di Microsoft 365 a più aree geografiche con Microsoft 365 multi-Geo.
-ms.openlocfilehash: 10f941549fd4899d5b3a14c97e6f301339702722
-ms.sourcegitcommit: cd11588b47904c7d2ae899a9f5280f93d3850171
+ms.openlocfilehash: cf5f655e2b205001c6c16ed05abc33d68324ff15
+ms.sourcegitcommit: e53234b1f64ebca00e121da1706c02b3337c35f0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "48171327"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "49580698"
 ---
 # <a name="microsoft-365-multi-geo"></a>Microsoft 365 Multi-Geo
 
@@ -52,7 +52,8 @@ Ecco i termini chiave usati nella descrizione di Microsoft 365 Multi-Geo:
 
 Microsoft 365 multi-Geo è disponibile come componente aggiuntivo per i seguenti piani di abbonamento Microsoft 365 per i clienti EA con un minimo di 250 postazioni Microsoft 365 nel loro tenant, di cui almeno il 5% deve utilizzare multi-Geo. Per informazioni dettagliate, contattare il team del proprio account Microsoft.
 
-- Microsoft 365 F1, E1, E3 o E5
+- Microsoft 365 F1, F3, E3 o E5
+- Office 365 F3, E1, E3 o E5
 - Piano 1 o Piano 2 di Exchange Online
 - Piano 1 o Piano 2 di OneDrive for Business
 - Piano 1 o Piano 2 di SharePoint Online
