@@ -18,12 +18,12 @@ search.appverid:
 ms.custom: seo-marvel-apr2020
 ms.assetid: c2112ce8-1c4b-424f-b200-59e161db2d21
 description: 'Sintesi: creare siti del team di SharePoint Online pubblici, privati, riservati ed estremamente riservati nel proprio ambiente di sviluppo/testinging per la campagna politica.'
-ms.openlocfilehash: 1ae147cef3f7c946946d10fe50a7c23bd9e61a2e
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: d6fe2067e51e47fed4bd90e1a1fa6c898034a6d7
+ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48203156"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49561202"
 ---
 # <a name="create-team-sites-in-a-political-campaign-devtest-environment"></a>Creare siti del team in un ambiente di sviluppo/testinging per la campagna politica
 
@@ -48,11 +48,11 @@ In questa fase, vengono create le etichette per i diversi livelli di sicurezza p
     
 3. Dalla nuova scheda **Interfaccia di amministrazione di Microsoft 365** del browser fare clic su **Interfacce di amministrazione > Sicurezza e conformità**.
     
-4. Dalla nuova scheda **Home: Sicurezza e conformità** del browser fare clic su Classificazioni > Etichette.
+4. Dalla nuova scheda **Home: Sicurezza e conformità** del browser, fare clic su **Classificazioni > Etichette**.
     
-5. Dal riquadro **Home > Etichette** fare clic su **Create a label** (Crea un'etichetta).
+5. Dal riquadro **Home > Etichette**, fare clic su **Crea un’etichetta**.
     
-6. Nel riquadro **Denomina l'etichetta **, digitare **Interno** e fare clic su **Avanti**.
+6. Nel riquadro **Denomina l'etichetta**, digitare **Interno** e fare clic su **Avanti**.
     
 7. Nel riquadro **Label settings** (Importazioni etichetta) fare clic su **Avanti**.
     
@@ -216,13 +216,13 @@ Successivamente, configurare la cartella dei documenti del sito del team Marketi
     
 4. In **Impostazioni - Applica etichetta**, selezionare **Riservato** e quindi fare clic su **Salva**.
     
-Configurare quindi un criterio di prevenzione della perdita di dati che informa gli utenti quando condividono un documento presente su un sito del team di SharePoint Online con etichetta Sensitive al di fuori dell'organizzazione. Questo criterio di prevenzione della perdita di dati verrà applicato alle risorse nel sito marketing della campagna.
+Configurare quindi un criterio di prevenzione della perdita di dati che informa gli utenti quando condividono un documento presente su un sito del team di SharePoint Online con etichetta Sensibile al di fuori dell'organizzazione. Questo criterio di prevenzione della perdita di dati verrà applicato alle risorse nel sito marketing della campagna.
   
-1. Dalla scheda **Microsoft Office Home** del browser fare clic sul riquadro **Sicurezza e conformità**.
+1. Dalla scheda **Microsoft Office Home** del browser, fare clic sul riquadro **Sicurezza e conformità**.
     
 2. Nella nuova scheda **Sicurezza e conformità** del browser fare clic su **Prevenzione perdita dati > Criterio**.
     
-3. Nel riquadro **Prevenzione perdita dati** fare clic su **+ Crea un criterio**.
+3. Nel riquadro **Prevenzione della perdita di dati**, fare clic su **+ Crea un criterio**.
     
 4. Nel riquadro **Inizia con un modello o crea un criterio personalizzato**, fare clic su **Personalizza**, quindi su **Avanti**.
     
@@ -329,11 +329,11 @@ Configurare quindi un criterio di prevenzione della perdita di dati che blocca g
   
 1. Se necessario, usare un browser nel computer locale e accedere all'interfaccia di amministrazione ([https://admin.microsoft.com](https://admin.microsoft.com)) con un account che dispone del ruolo Amministratore della sicurezza o Amministratore società.
     
-2. Dalla scheda **Microsoft Office Home** del browser fare clic sul riquadro **Sicurezza e conformità**.
+2. Dalla scheda **Microsoft Office Home** del browser, fare clic sul riquadro **Sicurezza e conformità**.
     
 3. Nella nuova scheda **Sicurezza e conformità** del browser fare clic su **Prevenzione perdita dati > Criterio**.
     
-4. Nel riquadro **Prevenzione perdita dati** fare clic su **+ Crea un criterio**.
+4. Nel riquadro **Prevenzione della perdita di dati**, fare clic su **+ Crea un criterio**.
     
 5. Nel riquadro **Inizia con un modello o crea un criterio personalizzato**, fare clic su **Personalizza**, quindi su **Avanti**.
     
@@ -395,7 +395,7 @@ Configurare quindi Azure Information Protection con un nuovo criterio con ambito
     
 12. Nel riquadro **Utenti e gruppi di AAD**, selezionare **Personale senior e strategico** e quindi fare clic su **Seleziona**.
     
-13. In **Scegliere le autorizzazioni dal set di impostazioni o imposta personalizzato** fare clic su **Personalizza**, quindi sulla casella **Visualizza diritti**, **Modifica contenuto**, ** Salva**, **Rispondi** e **Rispondi a tutti**
+13. In **Scegliere le autorizzazioni dal set di impostazioni o imposta personalizzato** fare clic su **Personalizza**, quindi sulla casella **Visualizza diritti**, **Modifica contenuto**, **Salva**, **Rispondi** e **Rispondi a tutti**
     
 14. Fare due volte clic su **OK**.
     

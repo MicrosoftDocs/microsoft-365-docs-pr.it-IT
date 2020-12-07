@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Configurare etichette di riservatezza per la crittografia per proteggere i dati con restrizioni di accesso e utilizzo.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 3856b92126d660ed0cdbfd1280d778ac9f072424
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: b862cbffcc4268876444618f7c2708c04b63630e
+ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48446157"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49561717"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>Limitare l'accesso al contenuto utilizzando la crittografia nelle etichette di riservatezza
 
@@ -43,15 +43,15 @@ Quando un documento o un messaggio di posta elettronica è crittografato, l'acce
 Infine, quando si configura la crittografia nelle etichette di riservatezza come amministratore, è possibile scegliere di:
 
 - **Assegnare le autorizzazioni adesso**, in modo da determinare esattamente quali utenti ottengono le autorizzazioni per il contenuto con tale etichetta.
-- **Let users assign permissions** when they apply the label to content. This way, you can allow people in your organization some flexibility that they might need to collaborate and get their work done.
+- **Consentire agli utenti di assegnare le autorizzazioni** quando applicano l'etichetta al contenuto. In questo modo è possibile consentire agli utenti dell'organizzazione una certa flessibilità, che potrebbe essere necessaria per collaborare e svolgere il proprio lavoro.
 
 Le impostazioni di crittografia sono disponibili quando si [crea un'etichetta di riservatezza](create-sensitivity-labels.md) nel Centro conformità Microsoft 365, nel Centro sicurezza Microsoft 365 o nel Centro sicurezza e conformità.
 
 ## <a name="understand-how-the-encryption-works"></a>Come funziona la crittografia
 
-Encryption uses the Azure Rights Management service (Azure RMS) from Azure Information Protection. This protection solution uses encryption, identity, and authorization policies. To learn more, see [What is Azure Rights Management?](https://docs.microsoft.com/azure/information-protection/what-is-azure-rms) from the Azure Information Protection documentation. 
+La crittografia usa il servizio Azure Rights Management (Azure RMS) di Azure Information Protection. Questa soluzione di protezione usa criteri di crittografia, identità e autorizzazione. Per ulteriori informazioni, vedere [Informazioni su Azure Rights Management](https://docs.microsoft.com/azure/information-protection/what-is-azure-rms) nella documentazione di Azure Information Protection. 
 
-When you use this encryption solution, the **super user** feature ensures that authorized people and services can always read and inspect the data that has been encrypted for your organization. If necessary, the encryption can then be removed or changed. For more information, see [Configuring super users for Azure Information Protection and discovery services or data recovery](https://docs.microsoft.com/azure/information-protection/configure-super-users).
+Se si usa questa soluzione di crittografia, la caratteristica **utente con privilegi avanzati** garantisce che le persone e i servizi autorizzati possano sempre leggere e controllare i dati crittografati per l'organizzazione. Se necessario, la crittografia può essere rimossa o modificata. Per altre informazioni, vedere [Configurazione di utenti con privilegi avanzati per Azure Information Protection e servizi di individuazione o di ripristino dei dati](https://docs.microsoft.com/azure/information-protection/configure-super-users).
 
 ## <a name="how-to-configure-a-label-for-encryption"></a>Come configurare un'etichetta per la crittografia
 
@@ -85,7 +85,7 @@ Tuttavia, il contenuto potrebbe essere già crittografato. Ad esempio, un altro 
 
 La tabella seguente identifica cosa accade alla crittografia esistente quando si applica un'etichetta di riservatezza a tale contenuto:
 
-| |**Crittografia: non selezionata**|**Crittografia: configurata**|**Crittografia: rimuovi**|
+| | Crittografia: non selezionata | Crittografia: configurata | Crittografia: rimuovere |
 |:-----|:-----|:-----|:-----|
 |**Autorizzazioni specificate da un utente**|La crittografia originale viene mantenuta|Viene applicata una nuova crittografia dell'etichetta|La crittografia originale viene rimossa|
 |**Modello di protezione**|La crittografia originale viene mantenuta|Viene applicata una nuova crittografia dell'etichetta|La crittografia originale viene rimossa|
@@ -383,9 +383,11 @@ La crittografia dei documenti e dei messaggi di posta elettronica più sensibili
 
 - La funzionalità [Salvataggio automatico](https://support.office.com/article/what-is-autosave-6d6bd723-ebfd-4e40-b5f6-ae6e8088f7a5) nelle app di Office (Windows, Mac, Android e iOS) è disabilitata per i file crittografati. Gli utenti visualizzano un messaggio che indica che il file dispone di autorizzazioni limitate che è necessario rimuovere prima di poter attivare il salvataggio automatico.
 
-- L'apertura di file crittografati nelle app di Office (Windows, Mac, Android e iOS) potrebbe richiedere più tempo.
+- L'apertura di file crittografati nelle app Office (Windows, Mac, Android e iOS) potrebbe richiedere più tempo.
 
-- Le azioni seguenti per i file crittografati non sono supportate dalle app di Office (Windows, Mac, Android e iOS) e gli utenti visualizzano un messaggio di errore che indica che si è verificato un problema. Tuttavia, in alternativa è possibile usare la funzionalità di SharePoint:
+- Se un'etichetta che applica la crittografia viene aggiunta con un'app Office quando il documento viene [estratto da SharePoint](https://support.microsoft.com/office/check-out-check-in-or-discard-changes-to-files-in-a-library-7e2c12a9-a874-4393-9511-1378a700f6de) e l'utente ignora l'estrazione, il documento resta etichettato e crittografato.
+
+- Le azioni seguenti non sono supportate per i file crittografati dalle app Office (Windows, Mac, Android e iOS) e gli utenti visualizzano un messaggio di errore che indica che si è verificato un problema. Tuttavia, in alternativa è possibile usare la funzionalità di SharePoint:
 
   - Visualizzare, ripristinare e salvare copie delle versioni precedenti. In alternativa, gli utenti possono eseguire queste azioni usando Office sul Web per [attivare e configurare il controllo delle versioni per un elenco o una raccolta](https://support.office.com/article/enable-and-configure-versioning-for-a-list-or-library-1555d642-23ee-446a-990a-bcab618c7a37).
   - Modificare il nome o il percorso dei file. In alternativa, gli utenti possono [rinominare un file, una cartella o un collegamento in una raccolta documenti](https://support.microsoft.com/office/rename-a-file-folder-or-link-in-a-document-library-bc493c1a-921f-4bc1-a7f6-985ce11bb185) in SharePoint.

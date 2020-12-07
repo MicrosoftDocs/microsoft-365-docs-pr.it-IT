@@ -17,12 +17,12 @@ ms.custom:
 localization_priority: Priority
 f1.keywords: NOCSH
 description: Informazioni sulle opzioni disponibili per creare un ambiente di condivisione guest sicuro in Microsoft 365, fornendo l'accesso guest per una migliore collaborazione.
-ms.openlocfilehash: e0b943ce698cc6b93bd250a83b1c94eba406c484
-ms.sourcegitcommit: 8a726ed7ec19a8728c079780fa4d343a5f759fbb
+ms.openlocfilehash: 4e2045113a6c98e2b3839a3a2cdd83105be94023
+ms.sourcegitcommit: c1dd5be42fe0c5dcc7c05817c941edd9076febf8
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "49030018"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "49558189"
 ---
 # <a name="create-a-secure-guest-sharing-environment"></a>Creare un ambiente di condivisione guest sicuro
 
@@ -55,18 +55,18 @@ Per configurare l'autenticazione a più fattori per i guest
 2. Nel pannello **Accesso condizionale - Criteri** fare clic su **Nuovi criteri**.
 3. Digitare un nome nel campo **Nome**.
 4. In **Assegnazioni** fare clic su **Utenti e gruppi**.
-5. Nel pannello **Utenti e gruppi** , scegliere **Seleziona utenti e gruppi** , quindi la casella di controllo **Tutti gli utenti guest ed esterni**.
+5. Nel pannello **Utenti e gruppi**, scegliere **Seleziona utenti e gruppi**, quindi la casella di controllo **Tutti gli utenti guest ed esterni**.
 6. In **Assegnazioni** fare clic su **Applicazioni cloud o azioni**.
-7. Nel pannello **App cloud o azioni** , selezionare **Tutte le app cloud** nella scheda **Includi**.
+7. Nel pannello **App cloud o azioni**, selezionare **Tutte le app cloud** nella scheda **Includi**.
 8. In **Controlli di accesso** fare clic su **Concedi**.
 9. Nel pannello **Concedi** selezionare la casella di controllo **Richiedi autenticazione a più fattori** e quindi fare clic su **Seleziona**.
-10. Nel pannello **Nuovo** , in **Abilita criterio** fare clic su **Sì** e quindi su **Crea**.
+10. Nel pannello **Nuovo**, in **Abilita criterio** fare clic su **Sì** e quindi su **Crea**.
 
 Ora gli utenti guest dovranno effettuare la registrazione all'autenticazione a più fattori per poter accedere a team, siti o contenuti condivisi.
 
-### <a name="more-information"></a>Ulteriori informazioni
+### <a name="more-information"></a>Altre informazioni
 
-[Pianificazione di una distribuzione di Azure Multi-Factor Authentication](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfa-getstarted)
+[Pianificare la distribuzione dell’autenticazione a più fattori di Azure AD](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfa-getstarted)
 
 ## <a name="set-up-a-terms-of-use-for-guests"></a>Configurare un documento di condizioni per l'utilizzo per gli utenti guest
 
@@ -86,7 +86,7 @@ Per creare un documento di condizioni per l'utilizzo di Azure AD
 6. Per **Documento sulle Condizioni per l'utilizzo** passare al file PDF creato e selezionarlo.
 7. Selezionare la lingua per il documento delle condizioni per l'utilizzo.
 8. Impostare **Richiedi agli utenti di espandere le Condizioni per l'utilizzo** su **Attivata**.
-9. In **Accesso condizionale** , nell'elenco **Applica con i modelli di criteri per l'accesso condizionale** scegliere **Crea criteri di accesso condizionale in seguito**.
+9. In **Accesso condizionale**, nell'elenco **Applica con i modelli di criteri per l'accesso condizionale** scegliere **Crea criteri di accesso condizionale in seguito**.
 10. Fare clic su **Crea**.
 
 Dopo aver creato le condizioni per l'utilizzo, il passaggio successivo consiste nel creare criteri di accesso condizionale che mostrano il documento agli utenti guest.
@@ -97,13 +97,13 @@ Per creare i criteri di accesso condizionale
 2. Nel pannello **Accesso condizionale - Criteri** fare clic su **Nuovi criteri**.
 3. Digitare un nome nella casella **Nome**.
 4. In **Assegnazioni** fare clic su **Utenti e gruppi**.
-5. Nel pannello **Utenti e gruppi** , scegliere **Seleziona utenti e gruppi** , quindi la casella di controllo **Tutti gli utenti guest ed esterni**.
+5. Nel pannello **Utenti e gruppi**, scegliere **Seleziona utenti e gruppi**, quindi la casella di controllo **Tutti gli utenti guest ed esterni**.
 6. In **Assegnazioni** fare clic su **Applicazioni cloud o azioni**.
 7. Nella scheda **Includi** scegliere **Seleziona le app** e quindi fare clic su **Seleziona**.
-8. Nel pannello **Seleziona** scegliere **Microsoft Teams** , **Office 365 SharePoint Online** e **Outlook Groups** , quindi fare clic su **Seleziona**.
+8. Nel pannello **Seleziona** scegliere **Microsoft Teams**, **Office 365 SharePoint Online** e **Outlook Groups**, quindi fare clic su **Seleziona**.
 9. In **Controlli di accesso** fare clic su **Concedi**.
 10. Nel pannello **Concedi** selezionare **Condizioni per l'utilizzo guest** e quindi fare clic su **Seleziona**.
-11. Nel pannello **Nuovo** , in **Abilita criterio** fare clic su **Sì** e quindi su **Crea**.
+11. Nel pannello **Nuovo**, in **Abilita criterio** fare clic su **Sì** e quindi su **Crea**.
 
 Ora, la prima volta che un utente guest tenterà di accedere al contenuto, a un team o a un sito dell'organizzazione, dovrà accettare le condizioni per l'utilizzo.
 
@@ -141,7 +141,7 @@ Per configurare una verifica di accesso per gli utenti guest
 4. Per **Frequenza** scegliere **Trimestrale**.
 5. Per **Fine** scegliere **Mai**.
 6. Per **Ambito** scegliere **Solo utenti guest**.
-7. Fare clic su **Raggruppa** , selezionare i gruppi che si vogliono includere nella verifica di accesso e quindi fare clic su **Seleziona**.
+7. Fare clic su **Raggruppa**, selezionare i gruppi che si vogliono includere nella verifica di accesso e quindi fare clic su **Seleziona**.
 8. In **Programmi** fare clic su **Collegamento al programma**.
 9. Nel pannello **Selezionare un programma** scegliere **Programma verifiche accesso guest**
 10. Fare clic su **Avvia**.
@@ -168,10 +168,10 @@ Per limitare i guest al solo accesso Web per gruppi e team
 2. Nel pannello **Accesso condizionale - Criteri** selezionare **Nuovi criteri**.
 3. Digitare un nome nella casella **Nome**.
 4. In **Assegnazioni** fare clic su **Utenti e gruppi**.
-5. Nel pannello **Utenti e gruppi** , scegliere **Seleziona utenti e gruppi** , quindi la casella di controllo **Tutti gli utenti guest ed esterni**.
+5. Nel pannello **Utenti e gruppi**, scegliere **Seleziona utenti e gruppi**, quindi la casella di controllo **Tutti gli utenti guest ed esterni**.
 6. In **Assegnazioni** fare clic su **Applicazioni cloud o azioni**.
 7. Nella scheda **Includi** scegliere **Seleziona le app** e quindi fare clic su **Seleziona**.
-8. Nel pannello **Seleziona** scegliere **Microsoft Teams** , e **Outlook Groups** , quindi fare clic su **Seleziona**.
+8. Nel pannello **Seleziona** scegliere **Microsoft Teams**, e **Outlook Groups**, quindi fare clic su **Seleziona**.
 9. In **Assegnazioni** fare clic su **Condizioni**.
 10. Nel pannello **Condizioni** fare clic su **App client**.
 11. Nel pannello **App client** fare clic su **Sì** per **Configura** e quindi selezionare le impostazioni **App per dispositivi mobili e client desktop** e **Client Exchange ActiveSync** e **Altri client**. Deselezionare la casella di controllo **Browser**.
@@ -182,11 +182,11 @@ Per limitare i guest al solo accesso Web per gruppi e team
 13. In **Controlli di accesso** fare clic su **Concedi**.
 14. Nel pannello **Concedi** selezionare **Richiedi che i dispositivi siano contrassegnati come conformi** e **Richiedi dispositivo aggiunto ad Azure AD ibrido**.
 15. In **Per più controlli** selezionare **Richiedi uno dei controlli selezionati** e quindi fare clic su **Seleziona**.
-16. Nel pannello **Nuovo** , in **Abilita criterio** fare clic su **Sì** e quindi su **Crea**.
+16. Nel pannello **Nuovo**, in **Abilita criterio** fare clic su **Sì** e quindi su **Crea**.
 
 Per limitare i guest al solo accesso Web per SharePoint
 
-1. Nell' [interfaccia di amministrazione di SharePoint](https://admin.microsoft.com/sharepoint) espandere **Criteri** e quindi fare clic su **Controllo di accesso**.
+1. Nell'[interfaccia di amministrazione di SharePoint](https://admin.microsoft.com/sharepoint) espandere **Criteri** e quindi fare clic su **Controllo di accesso**.
 2. Fare clic su **Dispositivi non gestiti**.
 3. Selezionare l'opzione di **Consenti l'accesso limitato, solo sul Web** e quindi fare clic su **Salva**.
 
@@ -202,14 +202,14 @@ Per configurare un criterio di timeout della sessione guest
 2. Nel pannello **Accesso condizionale - Criteri** selezionare **Nuovi criteri**.
 3. Nella casella **Nome** digitare *Timeout sessioni guest*.
 4. In **Assegnazioni** fare clic su **Utenti e gruppi**.
-5. Nel pannello **Utenti e gruppi** , scegliere **Seleziona utenti e gruppi** , quindi la casella di controllo **Tutti gli utenti guest ed esterni**.
+5. Nel pannello **Utenti e gruppi**, scegliere **Seleziona utenti e gruppi**, quindi la casella di controllo **Tutti gli utenti guest ed esterni**.
 6. In **Assegnazioni** fare clic su **Applicazioni cloud o azioni**.
 7. Nella scheda **Includi** scegliere **Seleziona le app** e quindi fare clic su **Seleziona**.
-8. Nel pannello **Seleziona** scegliere **Microsoft Teams** , **Office 365 SharePoint Online** e **Outlook Groups** , quindi fare clic su **Seleziona**.
+8. Nel pannello **Seleziona** scegliere **Microsoft Teams**, **Office 365 SharePoint Online** e **Outlook Groups**, quindi fare clic su **Seleziona**.
 9. In **Controlli di accesso** fare clic su **Sessione**.
 10. Nel pannello **Sessione** selezionare **Frequenza di accesso**.
 11. Selezionare **1** e **Giorni** per il periodo di tempo e quindi fare clic su **Seleziona**.
-12. Nel pannello **Nuovo** , in **Abilita criterio** fare clic su **Sì** e quindi su **Crea**.
+12. Nel pannello **Nuovo**, in **Abilita criterio** fare clic su **Sì** e quindi su **Crea**.
 
 ## <a name="create-a-sensitive-information-type-for-a-highly-sensitive-project"></a>Creare un tipo di informazioni sensibili per un progetto estremamente riservato
 
@@ -248,9 +248,9 @@ Per creare un criterio di applicazione automatica di etichette
 9. Nella pagina **Configura regole comuni o avanzate** scegliere **Regole comuni** e quindi fare clic su **Avanti**.
 10. Nella pagina **Definisci le regole per i contenuti di tutte le posizioni** fare clic su **Nuova regola**.
 11. Nella pagina **Nuova regola** assegnare un nome alla regola, fare clic su **Aggiungi condizione** e quindi fare clic su **Il contenuto contiene tipi di informazioni sensibili**.
-12. Fare clic su **Aggiungi** , selezionare **Tipi di informazioni sensibili** , scegliere i tipi di informazioni sensibili da usare, fare clic su **Aggiungi** e quindi fare clic su **Salva**.
+12. Fare clic su **Aggiungi**, selezionare **Tipi di informazioni sensibili**, scegliere i tipi di informazioni sensibili da usare, fare clic su **Aggiungi** e quindi fare clic su **Salva**.
 13. Fare clic su **Avanti**.
-14. Fare clic su **Scegliere un'etichetta** , selezionare l'etichetta da usare e quindi fare clic su **Aggiungi**.
+14. Fare clic su **Scegliere un'etichetta**, selezionare l'etichetta da usare e quindi fare clic su **Aggiungi**.
 15. Fare clic su **Avanti**.
 16. Lasciare il criterio in modalità di simulazione e fare clic su **Avanti**.
 17. Fare clic su **Crea criterio** e quindi su **Fatto**.
@@ -271,11 +271,11 @@ Per creare una regola DLP
 2. Fare clic su **Crea criterio**.
 3. Scegliere **Personalizzato** e quindi fare clic su **Avanti**.
 4. Digitare un nome per il criterio, quindi fare clic su **Avanti**.
-5. Nella pagina **Posizioni in cui applicare il criterio** disattivare tutte le impostazioni tranne **Siti di SharePoint** e **Account di OneDrive** , quindi fare clic su **Avanti**.
+5. Nella pagina **Posizioni in cui applicare il criterio** disattivare tutte le impostazioni tranne **Siti di SharePoint** e **Account di OneDrive**, quindi fare clic su **Avanti**.
 6. Nella pagina **Definire le impostazioni dei criteri** fare clic su **Avanti**.
 7. Nella pagina **Personalizzare regole avanzate di prevenzione della perdita dei dati** fare clic su **Crea regola** e digitare un nome per la regola.
 8. In **Condizioni** fare clic su **Aggiungi condizione** e scegliere **Il contenuto include**.
-9. Fare clic su **Aggiungi** , scegliere **Etichette di riservatezza** , scegliere le etichette da usare e fare clic su **Aggiungi**.
+9. Fare clic su **Aggiungi**, scegliere **Etichette di riservatezza**, scegliere le etichette da usare e fare clic su **Aggiungi**.
 
    ![Screenshot delle opzioni per condizioni, tipi di informazioni sensibili, etichette di riservatezza ed etichette di conservazione.](../media/limit-accidental-exposure-dlp-conditions.png)
 
@@ -284,9 +284,9 @@ Per creare una regola DLP
 
       ![Screenshot delle opzioni di azione della regola DLP](../media/dlp-remove-guest-access-sensitive-files.png)
 
-12. Fare clic su **Salva** , quindi su **Avanti**.
+12. Fare clic su **Salva**, quindi su **Avanti**.
 13. Scegliere le opzioni di test e fare clic su **Avanti**.
-14. Fare clic su **Invia** , quindi su **Fatto**.
+14. Fare clic su **Invia**, quindi su **Fatto**.
 
 È importante notare che il criterio non rimuove l'accesso se il guest è membro del sito o del team nel suo complesso. Se si prevede di avere documenti estremamente riservati in un sito o in un team con utenti guest, è consigliabile usare [canali privati in Teams](https://support.microsoft.com/office/de3e20b0-7494-439c-b7e5-75899ebe6a0e) e consentire l'accesso ai canali privati solo ai membri dell'organizzazione.
 

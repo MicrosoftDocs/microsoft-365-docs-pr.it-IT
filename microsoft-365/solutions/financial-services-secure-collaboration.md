@@ -12,21 +12,21 @@ ms.custom: seo-marvel-jun2020
 localization_priority: Priority
 description: Come le istituzioni dei servizi finanziari possono mantenere conformità e sicurezza finanziarie e collaborare efficacemente con Microsoft 365 e Teams.
 f1.keywords: NOCSH
-ms.openlocfilehash: cf485ec673c2f53d1b088c24be950dfe98c71276
-ms.sourcegitcommit: 20d1158c54a5058093eb8aac23d7e4dc68054688
+ms.openlocfilehash: ff4ce29e42ea3a8a5619f514373041c1e8c3e138
+ms.sourcegitcommit: c1dd5be42fe0c5dcc7c05817c941edd9076febf8
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "49376644"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "49558479"
 ---
 # <a name="key-compliance-and-security-considerations-for-us-banking-and-capital-markets"></a>Considerazioni chiave su conformità e sicurezza per i mercati bancario e finanziario degli Stati Uniti
 
 ## <a name="introduction"></a>Introduzione
-Gli istituti di servizi finanziari superano quasi tutte le altre realtà commerciali per quanto riguarda l'esigenza di controlli rigorosi di sicurezza, conformità e governance. La protezione di dati, identità, dispositivi e applicazioni non solo è fondamentale per la loro attività, ma è soggetta ai requisiti di conformità e alle linee guida di enti normativi, quali SEC (Securities and Exchange Commission), FINRA (Financial Industry Regulatory Authority), FFIEC (Federal Financial Institutions Examination Council) e CFTC (Commodity Futures Trading Commission). Gli istituti finanziari sono anche soggetti a leggi come la riforma Dodd-Frank e il Sarbanes-Oxley Act del 2002.
+Gli istituti di servizi finanziari sorpassano quasi tutte le aziende commerciali nella loro richiesta di controlli rigorosi di sicurezza, conformità e governance. La protezione di dati, identità, dispositivi e applicazioni non è solo fondamentale per la loro attività, ma è soggetta ai requisiti di conformità e alle linee guida di enti normativi, quali SEC (Securities and Exchange Commission), FINRA (Financial Industry Regulatory Authority), FFIEC (Federal Financial Institutions Examination Council) e CFTC (Commodity Futures Trading Commission). Gli istituti finanziari sono anche soggetti a leggi come la riforma Dodd-Frank e la Sarbanes-Oxley Act del 2002.
 
-Nel contesto odierno di una maggiore attenzione alla sicurezza, delle problematiche del rischio Insider e delle violazioni dei dati pubblici, anche i clienti richiedono elevati livelli di sicurezza dagli istituti finanziari per affidare loro i propri dati personali e il proprio patrimonio.
+Nel contesto odierno di una maggiore vigilanza della sicurezza, delle problematiche del rischio Insider e delle violazioni dei dati pubblici, i clienti richiedono elevati livelli di sicurezza dai loro istituti finanziari anche per affidare a essi i propri dati personali e gli attivi bancari.
 
-In passato, la necessità di controlli completi ha influenzato direttamente e vincolato i sistemi IT e le piattaforme usati dagli istituti finanziari per la collaborazione interna ed esterna. Oggi, ai dipendenti dei servizi finanziari serve una moderna piattaforma di collaborazione che sia semplice da adottare e facile da usare. I servizi finanziari, tuttavia, non possono rinunciare alla flessibilità necessaria per collaborare tra utenti, team e reparti in nome di controlli di sicurezza e conformità che impongono criteri per proteggere gli utenti e i sistemi IT dalle minacce.
+In passato, la necessità di controlli completi ha influenzato direttamente e vincolato i sistemi IT e le piattaforme usati dagli istituti finanziari per la collaborazione interna ed esterna. Oggi, ai dipendenti dei servizi finanziari serve una moderna piattaforma di collaborazione che sia semplice da adottare e facile da usare. I servizi finanziari, tuttavia, non possono rinunciare alla flessibilità necessaria per collaborare tra utenti, team e reparti in nome di controlli di sicurezza e conformità che applicano criteri per proteggere gli utenti e i sistemi IT dalle minacce.
 
 Nel settore dei servizi finanziari è necessaria un'attenta considerazione alla configurazione e alla distribuzione di strumenti di collaborazione e controlli di sicurezza, tra cui:
 - Valutazione dei rischi relativi a scenari di collaborazione organizzativa comune e di processo aziendale
@@ -37,7 +37,7 @@ Nel settore dei servizi finanziari è necessaria un'attenta considerazione alla 
 
 **Microsoft 365 è un ambiente cloud moderno che può risolvere le sfide contemporanee che gli istituti di servizi finanziari si trovano ad affrontare. La collaborazione sicura e flessibile nell'intera organizzazione si combina ai controlli e all'applicazione dei criteri per rispettare i più rigidi framework di conformità normativa.** Questo articolo descrive in che modo la piattaforma Microsoft 365 consente ai servizi finanziari di passare a una moderna piattaforma di collaborazione, contribuendo a mantenere i dati e i sistemi sicuri e conformi alle normative:
 
-* Abilitare la produttività dell'organizzazione e dei dipendenti usando Microsoft 365 e Microsoft Teams
+* Abilitare la produttività organizzativa e dei dipendenti usando Microsoft 365 e Microsoft Teams
 * Proteggere la collaborazione moderna usando Microsoft 365 
 * Identificare i dati sensibili ed evitare la perdita di dati
 * Difendere la fortezza
@@ -47,7 +47,7 @@ Nel settore dei servizi finanziari è necessaria un'attenta considerazione alla 
 
 Come partner Microsoft, Protiviti ha contribuito a fornire il proprio feedback su questo articolo.
 
-Le illustrazioni scaricabili di seguito completano questo articolo. Woodgrove Bank e Contoso sono usati per dimostrare come sia possibile applicare le capacità descritte in questo articolo per soddisfare i requisiti normativi comuni dei servizi finanziari. Queste illustrazioni possono essere personalizzate. 
+Le illustrazioni scaricabili di seguito completano questo articolo. Woodgrove Bank e Contoso sono utilizzati per dimostrare come le capacità descritte in questo articolo possano essere applicate per soddisfare i requisiti normativi comuni dei servizi finanziari. Queste illustrazioni possono essere personalizzate. 
 
 **Illustrazioni della Conformità e protezione delle informazioni di Microsoft 365**
 
@@ -121,7 +121,7 @@ Durante la loro attività, i dipendenti possono spostarsi da un'applicazione all
 
 Microsoft 365 include una piattaforma di identità sicura in [Azure Active Directory (Azure AD)](https://docs.microsoft.com/azure/active-directory/), in cui le identità sono archiviate centralmente e gestite in modo sicuro. Azure AD, insieme a una vasta gamma di servizi di sicurezza di Microsoft 365 correlati, costituisce la base per fornire ai dipendenti l'accesso necessario per lavorare in tutta sicurezza proteggendo anche l'organizzazione dalle minacce.
 
-L'[autenticazione a più fattori di Azure (MFA)](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-mfa-get-started) è incorporata nella piattaforma e rappresenta una prova di autenticazione aggiuntiva che consente di verificare l'identità dell'utente quando accede alle applicazioni e ai dati finanziari sensibili. Azure MFA richiede almeno due forme di autenticazione, come una password più un dispositivo mobile noto. Supporta diverse opzioni di autenticazione a due fattori, tra cui:
+L'[autenticazione a più fattori di Azure (MFA)](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-mfa-get-started) è incorporata nella piattaforma e rappresenta una prova di autenticazione aggiuntiva che consente di verificare l'identità dell'utente quando accede alle applicazioni e ai dati finanziari sensibili. Azure MFA richiede almeno due forme di autenticazione, ad esempio una password più un dispositivo mobile noto. Supporta diverse opzioni di autenticazione a due fattori, tra cui:
 
 - L'app Microsoft Authenticator
 - Un passcode monouso recapitato via SMS
