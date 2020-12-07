@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Informazioni su come configurare i criteri di prevenzione della perdita dei dati (DLP) per usare le posizioni di Prevenzione della perdita di dati degli endpoint di Microsoft 365.
-ms.openlocfilehash: 64cdfeab4b527dd3b84e7586d1419e5bf8b383df
-ms.sourcegitcommit: fcc1b40732f28f075d95faffc1655473e262dd95
+ms.openlocfilehash: 0a6883bd785141af6f198f0cd871c11794618e27
+ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/14/2020
-ms.locfileid: "49073105"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49561683"
 ---
 # <a name="using-endpoint-data-loss-prevention"></a>Uso della prevenzione della perdita di dati degli endpoint
 
@@ -43,7 +43,7 @@ Oppure
   > [!div class="mx-imgBorder"]
   > ![Impostazioni DLP](../media/endpoint-dlp-1-using-dlp-settings.png)
 
-### <a name="file-path-exclusions"></a>esclusioni di percorsi di file
+### <a name="file-path-exclusions"></a>Esclusioni di percorsi di file
 
 È possibile escludere alcuni percorsi dal monitoraggio DLP, dagli avvisi DLP e dall'applicazione dei criteri DLP nei dispositivi, perché sono troppo disturbati o non contengono file a cui si è interessati. I file presenti in tali posizioni non verranno controllati e i file creati o modificati in tali posizioni non saranno soggetti all'applicazione dei criteri di prevenzione della perdita dei dati. È possibile configurare le esclusioni di percorsi nelle impostazioni DLP.
 
@@ -63,26 +63,38 @@ Per creare esclusioni di percorsi si può usare questa logica:
 
 - Una combinazione di tutti gli esempi precedenti. <br/>Ad esempio, %SystemDrive%\Users\*\Documents\*(2)\Sub\
 
-### <a name="service-domains"></a>Domini del servizio
-
-È possibile aggiungere domini a questo elenco, a cui Microsoft Edge Chromium farà riferimento durante l'applicazione della restrizione di accesso relativa al caricamento nel cloud di Endpoint DLP. 
-
-Se la modalità dell'elenco è impostata su **Blocca** , l'utente non potrà caricare elementi sensibili in tali domini. Quando un'azione di caricamento viene bloccata perché un elemento corrisponde a un criterio di prevenzione della perdita dei dati, DLP genera un avviso o blocca il caricamento dell'elemento sensibile.
-
-Se la modalità dell'elenco è impostata su **Consenti** , gli utenti possono caricare gli elementi sensibili * *_solo_* _ in questi domini e l'accesso in caricamento a tutti gli altri domini non è consentito.
-
 ### <a name="unallowed-apps"></a>App non consentite
 
-Quando l'impostazione _ *Accesso da app e browser non consentiti* * di un criterio è attivata e gli utenti tentano di usare queste app per accedere a un file protetto, l'attività viene consentita, bloccata oppure bloccata ma gli utenti possono ignorare la restrizione. Tutte le attività sono controllate e disponibili per la revisione in Esplora attività.
+Quando l'impostazione **Accesso da app e browser non consentiti** di un criterio è attivata e gli utenti tentano di usare queste app per accedere a un file protetto, l'attività viene consentita, bloccata oppure bloccata ma gli utenti possono ignorare la restrizione. Tutte le attività sono controllate e disponibili per la revisione in Esplora attività.
 
-### <a name="unallowed-browsers"></a>Browser non consentiti
+> [!IMPORTANT]
+> Non includere il percorso del file eseguibile, ma solo il nome (ad esempio browser.exe).
 
-È possibile aggiungere browser, identificati dai nomi eseguibili, a cui verrà impedito di accedere ai file che corrispondono alle condizioni di un criterio DLP applicato in cui la restrizione relativa al caricamento nei servizi cloud è impostata su Blocca o Blocca con override. Quando a questi browser viene impedito di accedere a un file, gli utenti finali vedranno una notifica di tipo avviso popup che chiede di aprire il file con Microsoft Edge Chromium.
 
-[!IMPORTANT]
-Non includere il percorso del file eseguibile, ma solo il nome eseguibile, (ossia browser. exe).
+### <a name="browser-and-domain-restrictions"></a>Restrizioni del browser e del dominio
+Limitare la condivisione dei file riservati che corrispondono ai criteri, con i domini del servizio cloud senza restrizioni.
 
-## <a name="tying-dlp-settings-together"></a>Unione di impostazioni DLP
+#### <a name="service-domains"></a>Domini di servizio
+
+È possibile controllare se i file riservati protetti dai criteri possono essere caricati in specifici domini di servizio da Microsoft Edge.
+
+Se la modalità elenco è impostata su **Blocca**, l'utente non potrà caricare elementi sensibili in tali domini. Quando un'azione di caricamento viene bloccata perché un elemento corrisponde a un criterio di prevenzione della perdita dei dati, DLP genera un avviso o blocca il caricamento dell'elemento sensibile.
+
+Se la modalità elenco è impostata su **Consenti**, gli utenti possono caricare gli elementi sensibili **_solo_* _ in tali domini e l'accesso di caricamento a tutti gli altri domini non è consentito.
+
+#### <a name="unallowed-browsers"></a>Browser non consentiti
+
+È possibile aggiungere browser, identificati dai nomi eseguibili, a cui verrà impedito di accedere ai file che corrispondono alle condizioni di un criterio DLP applicato in cui la restrizione relativa al caricamento nei servizi cloud è impostata su Blocca o Blocca con override. Quando a tali browser viene impedito di accedere a un file, gli utenti finali visualizzeranno un avviso popup con la richiesta di aprire il file con Microsoft Edge Chromium.
+
+### <a name="always-audit-file-activity-from-onboarded-devices"></a>Controllare sempre l'attività dei file di controllo dai dispositivi di cui è stato eseguito l’onboarding
+
+Controllare se l'attività di prevenzione della perdita dei dati per i file Office, PDF e CSV è verificata automaticamente e disponibile per la revisione nella telemetria di controllo e in Esplora attività dai dispositivi di cui è stato eseguito l’onboarding. 
+
+Se tale impostazione è attivata (impostazione predefinita), le attività dei file sono sempre verificate per i dispositivi di cui è stato eseguito l’onboarding, indipendentemente dal fatto che siano o meno inclusi in un criterio di prevenzione della perdita dei dati.
+Se l’impostazione è disattivata, le attività dei file sono verificate per i dispositivi di cui è stato eseguito l’onboarding solo quando sono inclusi in un criterio attivo di prevenzione della perdita dei dati. 
+
+
+## <a name="tying-dlp-settings-together"></a>Collegamento delle impostazioni DLP
 
 Con Endpoint DLP e il Web browser Microsoft Edge Chromium, è possibile limitare la condivisione involontaria di elementi sensibili con app e i servizi cloud non consentiti. Microsoft Edge Chromium riconosce quando un elemento è limitato da un criterio di Endpoint DLP e impone restrizioni di accesso.
 
@@ -94,7 +106,7 @@ Per usare questa restrizione sarà necessario configurare tre elementi important
 
 2. Aggiungere i browser ai quali non è consentito accedere a determinati elementi sensibili in caso di corrispondenza con un criterio DLP.
 
-3. Configurare criteri DLP per definire i tipi di elementi sensibili per cui limitare il caricamento in queste posizioni, attivando **Carica nei servizi cloud** e **Accedi dai browser non consentiti**.
+3. Configurare i criteri DLP per definire i tipi di elementi sensibili per cui limitare il caricamento in queste posizioni, attivando _ *Carica nei servizi cloud** e **Accedi dai browser non consentiti**.
 
 È possibile continuare ad aggiungere nuovi servizi, app e criteri per estendere e aumentare le restrizioni in modo da soddisfare le esigenze dell'azienda e proteggere i dati sensibili. 
 
@@ -113,13 +125,13 @@ Per acquisire familiarità con le funzionalità di Endpoint DLP e su come vengon
 
 ### <a name="scenario-1-create-a-policy-from-a-template-audit-only"></a>Scenario 1: Creare un criterio da un modello, solo controllo
 
-Per questi scenari è necessario aver già eseguito l'onboarding di dispositivi, che inviano report a Esplora attività. Se ancora non si è effettuato l’onboarding dei dispositivi, vedere [Introduzione alla prevenzione della perdita di dati degli endpoint](endpoint-dlp-getting-started.md).
+Per questi scenari è necessario aver già eseguito l'onboarding dei dispositivi che inviano report a Esplora attività. Se non si è ancora eseguito l'onboarding di dispositivi, vedere [Introduzione alla prevenzione della perdita di dati degli endpoint](endpoint-dlp-getting-started.md).
 
 1. Aprire la [pagina Prevenzione della perdita dei dati](https://compliance.microsoft.com/datalossprevention?viewid=policies).
 
 2. Scegliere **Crea criterio**.
 
-3. Per questo scenario, scegliere **Privacy** e poi **Informazioni personali (USA)** , quindi sceg **Avanti**.
+3. Per questo scenario, scegliere **Privacy** e poi **Informazioni personali (USA)**, quindi scegliere **Avanti**.
 
 4. Impostare il campo **Stato** in posizione di disattivato per tutte le posizioni tranne **Dispositivi**. Scegliere **Avanti**.
 
@@ -149,7 +161,7 @@ Per questi scenari è necessario aver già eseguito l'onboarding di dispositivi,
 
 3. Scegliere **Modifica criterio**.
 
-4. Passare alla pagina **Regole avanzate di prevenzione della perdita dei dati** e modificare il **Rilevato un volume ridotto di contenuti con informazioni personali (Stati Uniti)**.
+4. Passare alla pagina **Regole avanzate di prevenzione della perdita dei dati** e modificare il **Volume ridotto di contenuti rilevato nelle informazioni personali (Stati Uniti)**.
 
 5. Scorrere verso il basso fino alla sezione **Report sugli eventi imprevisti** e impostare **Invia un avviso agli amministratori quando viene soddisfatta una regola** su **Attivato**. Gli avvisi di posta elettronica verranno inviati automaticamente all'amministratore e a tutti gli altri utenti aggiunti all'elenco dei destinatari. 
 

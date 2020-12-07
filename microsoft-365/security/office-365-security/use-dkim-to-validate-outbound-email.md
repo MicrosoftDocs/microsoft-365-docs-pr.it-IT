@@ -19,12 +19,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Informazioni su come usare DomainKeys Identified Mail (DKIM) insieme a Microsoft 365 per garantire che i sistemi di posta elettronica di destinazione ritengano attendibili i messaggi inviati dal dominio personalizzato.
-ms.openlocfilehash: 7f9e33a6f117f5da592d875e40cefc6a0072fd4a
-ms.sourcegitcommit: 0402d3275632fceda9137b6abc3ce48c8020172a
+ms.openlocfilehash: 66f352b6c3a5d3b3beff3043a3f0d1a435d1e5d1
+ms.sourcegitcommit: ff1f0a97e9d43bc786f04d2ea7e01695531b9f28
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49126674"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "49560885"
 ---
 # <a name="use-dkim-to-validate-outbound-email-sent-from-your-custom-domain"></a>Usare DKIM per convalidare la posta elettronica in uscita inviata dal dominio personalizzato
 
@@ -130,6 +130,9 @@ Per configurare DKIM, eseguire la procedura seguente:
 
 Per ogni dominio al quale si intende aggiungere una firma DKIM in DNS è necessario pubblicare due record CNAME.
 
+> [!NOTE]
+> Se non si è letto l'articolo completo, probabilmente si sono perse le informazioni rapide sulla connessione di PowerShell: [Connettersi ai carichi di lavoro di Office 365 tramite PowerShell](https://docs.microsoft.com/microsoft-365/enterprise/connect-to-all-microsoft-365-services-in-a-single-windows-powershell-window). (Il cmdlet proviene da Exchange Online.) 
+
 Per creare i record dei selettori eseguire i comandi riportati di seguito:
 
 ```powershell
@@ -185,10 +188,8 @@ TTL:                3600
 ```
 
 > [!NOTE]
-> È importante creare il secondo record, ma solo uno dei selettori può essere disponibile al momento della creazione. In sostanza, il secondo selettore potrebbe puntare a un indirizzo che non è ancora stato creato. È comunque consigliabile creare il secondo record CNAME, perché la rotazione delle chiavi non verrà interrotta.
+> È importante creare il secondo record, ma solo uno dei selettori può essere disponibile al momento della creazione. In sostanza, il secondo selettore potrebbe puntare a un indirizzo che non è ancora stato creato. È comunque consigliabile creare il secondo record CNAME, perché la rotazione delle chiavi non venga interrotta.
 
-> [!CAUTION]
-> La rotazione automatica delle chiavi è stata temporaneamente disabilitata a causa dell'implementazione di alcune modifiche di progettazione nel modo in cui vengono create le chiavi. È buona norma avere più chiavi in modo che sia possibile eseguirne una rotazione periodica. Anche se è difficile da decifrare, è comunque una pratica strategia di attenuazione che protegge contro cose come la rappresentazione. È possibile consultare il documento [Rotate-DkimSigningConfig](https://docs.microsoft.com/powershell/module/exchange/rotate-dkimsigningconfig) per informazioni utili in merito per l'organizzazione. La rotazione automatica dovrebbe essere riabilitata entro il mese di agosto 2020.
 
 ### <a name="enable-dkim-signing-for-your-custom-domain"></a>Abilitare la firma DKIM per il dominio personalizzato
 <a name="EnableDKIMinO365"> </a>
@@ -311,9 +312,9 @@ In questo caso, il nome host e il dominio includono i valori a cui dovrebbe punt
 ## <a name="set-up-dkim-so-that-a-third-party-service-can-send-or-spoof-email-on-behalf-of-your-custom-domain"></a>Configurare DKIM in modo che un servizio di terze parti possa inviare la posta elettronica o effettuarne lo spoofing per conto del dominio personalizzato dell'utente
 <a name="SetUp3rdPartyspoof"> </a>
 
-Alcuni provider di servizi di posta elettronica in blocco o di software come servizio consentono di configurare le chiavi DKIM per la posta elettronica che viene creata dal servizio. Per configurare i record DNS necessari, l'utente e la terza parte devono essere coordinati. Alcuni server di terze parti possono avere i propri record CNAME con selettori diversi. Nessuna organizzazione esegue questa operazione nello stesso modo. Al contrario, il processo dipende interamente dell'organizzazione.
+Alcuni provider di servizi di posta di blocco o di software come servizio consentono di configurare le chiavi DKIM per la posta elettronica originata dal servizio. Per configurare i record DNS necessari, l'utente e la terza parte devono essere coordinati. Alcuni server di terze parti possono avere propri record CNAME con selettori diversi. Nessuna organizzazione esegue questa operazione nello stesso modo. Al contrario, il processo dipende interamente dall'organizzazione.
 
-Messaggio di esempio che mostra che sarà una chiave DKIM correttamente configurata per contoso.com e bulkemailprovider.com:
+Messaggio di esempio che mostra come potrebbe essere una chiave DKIM correttamente configurata per contoso.com e bulkemailprovider.com:
 
 ```console
 Return-Path: <communication@bulkemailprovider.com>
@@ -349,4 +350,8 @@ Ad esempio, il record DKIM avrà un aspetto simile al seguente:
 ## <a name="next-steps-after-you-set-up-dkim-for-microsoft-365"></a>Passaggi successivi: dopo aver configurato DKIM per Microsoft 365
 <a name="DKIMNextSteps"> </a>
 
-Sebbene la chiave DKIM sia stata realizzata per impedire lo spoofing, è più efficace se utilizzata con SPF e DMARC. Dopo aver configurato DKIM, impostare SPF, se non è stato già fatto. Per una rapida introduzione a SPF e le istruzioni di configurazione, vedere [Configurare SPF in Microsoft 365 per prevenire lo spoofing](set-up-spf-in-office-365-to-help-prevent-spoofing.md). Per informazioni più dettagliate su come Microsoft 365 utilizza SPF oppure per risolvere i problemi o per eseguire distribuzioni non standard (ad esempio, le distribuzioni ibride), consultare innanzitutto [Come Microsoft 365 utilizza Sender Policy Framework (SPF) per prevenire lo spoofing](how-office-365-uses-spf-to-prevent-spoofing.md). Successivamente, vedere [Usare DMARC per convalidare la posta elettronica](use-dmarc-to-validate-email.md). [Intestazioni messaggi della protezione da posta indesiderata](anti-spam-message-headers.md) include la sintassi e i campi di intestazione usati da Microsoft 365 per i controlli DKIM.
+Sebbene la chiave DKIM sia stata realizzata per impedire lo spoofing, è più efficace se utilizzata con SPF e DMARC. Dopo aver configurato DKIM, impostare SPF, se non è stato già fatto. Per una rapida introduzione a SPF e le istruzioni di configurazione, vedere [Configurare SPF in Microsoft 365 per prevenire lo spoofing](set-up-spf-in-office-365-to-help-prevent-spoofing.md). Per informazioni più dettagliate su come Microsoft 365 utilizza SPF oppure per risolvere i problemi o per eseguire distribuzioni non standard (ad esempio, le distribuzioni ibride), consultare innanzitutto [Come Microsoft 365 utilizza Sender Policy Framework (SPF) per prevenire lo spoofing](how-office-365-uses-spf-to-prevent-spoofing.md). Successivamente, vedere [Usare DMARC per convalidare la posta elettronica](use-dmarc-to-validate-email.md). [Intestazioni dei messaggi della protezione da posta indesiderata](anti-spam-message-headers.md) include la sintassi e i campi di intestazione usati da Microsoft 365 per i controlli DKIM.
+
+## <a name="more-information"></a>Altre informazioni
+
+Rotazione delle chiavi tramite PowerShell [Rotate-DkimSigningConfig](https://docs.microsoft.com/powershell/module/exchange/rotate-dkimsigningconfig)

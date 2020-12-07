@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-coredeploy
 ms.custom: ''
 description: Richiedere agli utenti di accedere in modo sicuro con l'autenticazione a più fattori (MFA) e altre funzionalità.
-ms.openlocfilehash: a3a63dfc06f5470c2151cd2ff140ad5dee19b0ce
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: 8426d902ff8be8541b5d770af6d34cdf71868047
+ms.sourcegitcommit: c1dd5be42fe0c5dcc7c05817c941edd9076febf8
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48446078"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "49558527"
 ---
 # <a name="secure-user-sign-ins-to-your-microsoft-365-tenant"></a>Autenticazioni sicure degli utenti nel tenant di Microsoft 365
 
@@ -50,11 +50,11 @@ Per altre informazioni, vedere [Configurare la protezione delle password di prot
 
 La MFA richiede che gli accessi utente siano soggetti a un'ulteriore verifica oltre alla password dell'account utente. Anche se un utente malintenzionato determina una password dell'account utente, deve anche essere in grado di rispondere a un'ulteriore verifica, ad esempio un SMS inviato a uno smartphone prima che venga concesso l'accesso.
 
-![L'inserimento della password corretta e un'ulteriore verifica permettono di accedere](../media/empower-people-to-work-remotely/remote-workers-mfa.png)
+![L'inserimento della password corretta e una verifica aggiuntiva consentono di eseguire l’accesso correttamente.](../media/empower-people-to-work-remotely/remote-workers-mfa.png)
 
-Il primo passo per usare l'autenticazione MFA è di ***richiederla per tutti gli account amministratore***, noti anche come account privilegiati.
+Il primo passo per usare l'autenticazione MFA è di ***richiederla per tutti gli account amministratore** _, noti anche come account con privilegi.
 
-Oltre a questo primo passaggio, Microsoft raccomanda l'autenticazione a più fattori per tutti gli utenti.
+Oltre a questo primo passaggio, Microsoft consiglia l'autenticazione a più fattori per tutti gli utenti.
 
 Sono disponibili tre modi per richiedere agli amministratori o agli utenti di utilizzare la MFA in base al piano Microsoft 365.
 
@@ -67,9 +67,9 @@ Sono disponibili tre modi per richiedere agli amministratori o agli utenti di ut
 
 ### <a name="security-defaults"></a>Impostazioni predefinite per la sicurezza
 
-Le impostazioni predefinite di sicurezza sono una nuova funzionalità per gli abbonamenti a pagamento o di valutazione di Microsoft 365 e Office 365 creati dopo il 21 ottobre 2019. Questi abbonamenti hanno impostazioni predefinite di sicurezza attivate, che ***richiedono a tutti gli utenti di utilizzare la MFA con l'app Microsoft Authenticator***.
+Le impostazioni predefinite di sicurezza sono una nuova funzionalità per gli abbonamenti a pagamento o di valutazione di Microsoft 365 e Office 365 creati dopo il 21 ottobre 2019. Questi abbonamenti hanno impostazioni predefinite di sicurezza attivate, che _*_richiedono a tutti gli utenti di utilizzare la MFA con l'app Microsoft Authenticator_*_.
  
-Gli utenti hanno 14 giorni per registrarsi per la MFA con l'app Microsoft Authenticator dai propri smartphone, periodo che inizia dalla prima volta che accedono dopo aver abilitato le impostazioni predefinite di sicurezza. Trascorsi 14 giorni, l'utente non sarà in grado di accedere fino al completamento della registrazione della MFA.
+Per registrarsi per la MFA con l'app Microsoft Authenticator dai propri smartphone, gli utenti hanno a disposizione 14 giorni dalla prima volta che accedono dopo aver abilitato le impostazioni predefinite di sicurezza. Trascorsi 14 giorni, l'utente non sarà in grado di accedere fino al completamento della registrazione della MFA.
 
 Le impostazioni di sicurezza predefinite garantiscono che tutte le organizzazioni dispongano di un livello base di sicurezza per l'accesso degli utenti abilitato per impostazione predefinita. È possibile disabilitare le impostazioni predefinite di sicurezza a favore della MFA con criteri di accesso condizionale o per singoli account.
 
@@ -102,7 +102,7 @@ Questa tabella mostra i risultati dell'abilitazione della MFA con impostazioni p
 
 | Metodo | Abilitato | Disattivato | Metodo di autenticazione aggiuntivo |
 |:-------|:-----|:-------|:-------|
-| **Impostazioni predefinite per la sicurezza**  | Non è possibile utilizzare i criteri di accesso condizionale | È possibile utilizzare i criteri di accesso condizionale | App Microsoft Authenticator |
+| _ *Impostazioni predefinite per la sicurezza**  | Non è possibile utilizzare i criteri di accesso condizionale | È possibile utilizzare i criteri di accesso condizionale | App Microsoft Authenticator |
 | **Criteri di accesso condizionale** | Se alcuni sono abilitati, non è possibile abilitare le impostazioni predefinite per la sicurezza | Se sono tutti disabilitati, è possibile abilitare le impostazioni predefinite per la sicurezza  | Specificato dall'utente durante la registrazione della MFA  |
 ||||
 
@@ -133,7 +133,7 @@ Con Azure AD Identity Protection, è possibile:
 |Funzionalità|Descrizione|
 |:---------|:---------|
 | Determinare e affrontare possibili vulnerabilità relative alle identità dell'organizzazione | Azure AD usa l'apprendimento automatico per rilevare anomalie e attività sospette, come le attività di accesso e conseguenti all’accesso. Con questi dati, Azure AD Identity Protection genera report e avvisi che consentono di valutare i problemi e intervenire.|
-|Rilevare azioni sospette correlate alle identità dell'organizzazione e intervenire automaticamente|È possibile configurare criteri basati sul rischio che rispondano automaticamente ai problemi rilevati quando viene raggiunto un livello di rischio specificato. Questi criteri, con altri controlli di accesso condizionale forniti da Azure AD e Microsoft Intune, possono bloccare automaticamente l’accesso o avviare azioni di correzione, incluse la reimpostazione della password e la richiesta dell'autenticazione a più fattori di Azure per gli accessi successivi. |
+|Rilevare azioni sospette correlate alle identità dell'organizzazione e intervenire automaticamente|È possibile configurare criteri basati sul rischio che rispondano automaticamente ai problemi rilevati quando viene raggiunto un livello di rischio specificato. Questi criteri, insieme ad altri controlli di accesso condizionale forniti da Azure AD e Microsoft Intune, possono bloccare automaticamente l’accesso o avviare azioni di correzione, incluse la reimpostazione della password e la richiesta dell'autenticazione a più fattori di Azure per gli accessi successivi. |
 | Esaminare gli incidenti sospetti e risolverli con azioni amministrative | È possibile esaminare gli eventi di rischio usando le informazioni sugli incidenti di sicurezza. I flussi di lavoro di base sono disponibili per tenere traccia delle analisi e per attuare azioni correttive, come le reimpostazioni delle password. |
 |||
 
@@ -146,7 +146,7 @@ Vedere i [passaggi per abilitare Azure AD Identity Protection](https://docs.micr
 - [MFA per Microsoft 365](../admin/security-and-compliance/multi-factor-authentication-microsoft-365.md)
 - [Roadmap delle identità per Microsoft 365](identity-roadmap-microsoft-365.md)
 - [Video di formazione su Azure Academy Azure AD](https://www.youtube.com/watch?v=pN8o0owHfI0&list=PL-V4YVm6AmwUFpC3rXr2i2piRQ708q_ia)
-- [Configurare i criteri di registrazione dell'autenticazione a più fattori di Azure](https://docs.microsoft.com/azure/active-directory/identity-protection/howto-identity-protection-configure-mfa-policy)
+- [Configurare i criteri di registrazione dell'autenticazione a più fattori di Azure AD](https://docs.microsoft.com/azure/active-directory/identity-protection/howto-identity-protection-configure-mfa-policy)
 - [Configurazioni di identità e accesso dei dispositivi](../security/office-365-security/microsoft-365-policies-configurations.md)
 
 ## <a name="next-step"></a>Passaggio successivo
