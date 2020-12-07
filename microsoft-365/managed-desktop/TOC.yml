@@ -82,7 +82,7 @@
           href: get-started/access-admin-portal.md
         - name: Aggiungere e verificare i contatti degli amministratori nel portale di amministrazione
           href: get-started/add-admin-contacts.md
-        - name: Modificare l'accesso condizionale
+        - name: Modificare le impostazioni dopo la registrazione
           href: get-started/conditional-access.md
         - name: Assegnazione delle licenze
           href: get-started/assign-licenses.md
