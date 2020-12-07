@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: Determinare dove sono archiviati i dati dei clienti Microsoft 365 nell’Unione europea.
-ms.openlocfilehash: 5a50600c123dad1a0e4d14fd8f47283f951d3edc
-ms.sourcegitcommit: 20d1158c54a5058093eb8aac23d7e4dc68054688
+ms.openlocfilehash: 78c2ae75656df017631fce0a189f6e25ee44f20f
+ms.sourcegitcommit: 4cbb4ec26f022f5f9d9481f55a8a6ee8406968d2
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "49376715"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49527686"
 ---
 # <a name="data-locations-for-the-european-union"></a>Posizioni dei dati per l'Unione europea
 
@@ -63,10 +63,12 @@ Il data center GEOS è disponibile in Germania e in Francia e consente di archiv
 ||||| 
 
 >[!Note]
->Se si ha un abbonamento a Office 365 Education con un indirizzo di fatturazione in Francia o Germania, i dati possono essere archiviati nei data center dell'Unione europea. 
+>Se si dispone di un abbonamento a Office 365 Education con un indirizzo di fatturazione in Francia o Germania, i dati potrebbero essere archiviati nei data center dell'Unione europea. Per le posizioni dei dati del tenant all'esterno dell'Unione europea, vedere [Dove sono archiviati i dati dei clienti di Microsoft 365](o365-data-locations.md).
 >
 
-### <a name="where-eu-data-is-computed"></a>Dove vengono calcolati i dati UE dei clienti
+
+
+### <a name="where-eu-data-is-computed"></a>Dove vengono calcolati i dati nell’Unione europea
 
 Quando si inizia a usare uno dei servizi sopraindicati, i calcoli necessari per fornire il servizio per i dati archiviati in uno dei data center europei locali (o nel proprio paese) vengono eseguiti all'interno di tale confine geografico, a meno che non sia necessario un trasferimento temporaneo dei dati per eseguire il calcolo in un data center Microsoft disponibile più lontano. 
 
