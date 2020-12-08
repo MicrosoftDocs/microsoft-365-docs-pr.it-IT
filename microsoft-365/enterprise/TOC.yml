@@ -195,6 +195,8 @@
       items:
         - name: Stato di integrità dei servizi di Microsoft 365
           href: microsoft-365-service-health.md
+        - name: Monitoraggio di Exchange Online
+          href: microsoft-365-exchange-monitoring.md
         - name: Guide alla configurazione
           href: setup-guides-for-microsoft-365.md
     - name: Più tenant
@@ -272,6 +274,22 @@
               href: ms-cloud-germany-transition.md
             - name: Acconsentire esplicitamente a eseguire la migrazione
               href: ms-cloud-germany-migration-opt-in.md
+            - name: Esperienza cliente
+              href: ms-cloud-germany-transition-experience.md
+            - name: Azioni ed impatti sulle fasi della migrazione
+              href: ms-cloud-germany-transition-phases.md
+            - name: Informazioni aggiuntive
+              items:
+                - name: Generale
+                  href: ms-cloud-germany-transition-add-general.md
+                - name: Dispositivi
+                  href: ms-cloud-germany-transition-add-devices.md
+                - name: Lavoro preliminare
+                  href: ms-cloud-germany-transition-add-pre-work.md
+                - name: Funzionalità
+                  href: ms-cloud-germany-transition-add-experience.md
+                - name: Procedura della migrazione ADFS
+                  href: ms-cloud-germany-transition-add-adfs.md
 - name: Identità
   items:
     - name: Roadmap
