@@ -99,24 +99,36 @@
       items:
         - name: Poster sull'architettura di Teams
           href: 'https://docs.microsoft.com/MicrosoftTeams/teams-architecture-solutions-posters?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json'
-        - name: Soluzioni di telefonia
+        - name: Implementare la soluzione vocale di Teams in Microsoft 365
           items:
-            - name: Scegliere la soluzione vocale di Teams
+            - name: Panoramica
+              href: deploy-voice.md
+            - name: Passaggio 1. Scegliere la soluzione vocale
               href: 'https://docs.microsoft.com/MicrosoftTeams/cloud-voice-landing-page?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json'
+            - name: Passaggio 2. - Configurare il sistema telefonico
+              href: 'https://docs.microsoft.com/microsoftteams/setting-up-your-phone-system?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json'
+            - name: Passaggio 3. - Configurare la connettività PSTN
+              items:
+                - name: Opzione piano per chiamate
+                  href: 'https://docs.microsoft.com/microsoftteams/set-up-calling-plans?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json'
+                - name: Opzione di instradamento diretto
+                  href: 'https://docs.microsoft.com/microsoftteams/direct-routing-configure?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json'
             - name: Case study per società multinazionale
               href: 'https://docs.microsoft.com/MicrosoftTeams/voice-case-study-overview?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json'
         - name: Collaborazione di governance
           items:
             - name: Panoramica
               href: collaboration-governance-overview.md
-            - name: 'Governance per prima '
+            - name: Creare il piano di governance
               href: collaboration-governance-first.md
-            - name: Gruppi con SharePoint
-              href: groups-sharepoint-governance.md
-            - name: 'Gruppi, SharePoint e Teams'
-              href: groups-sharepoint-teams-governance.md
-            - name: Riferimenti alle interazioni dei servizi
-              href: groups-services-interactions.md
+            - name: Impostazioni dei servizi
+              items:
+                - name: Gruppi con SharePoint
+                  href: groups-sharepoint-governance.md
+                - name: 'Gruppi, SharePoint e Teams'
+                  href: groups-sharepoint-teams-governance.md
+                - name: Gruppi con altri servizi
+                  href: groups-services-interactions.md
             - name: Accesso
               href: groups-teams-access-governance.md
             - name: Conformità
