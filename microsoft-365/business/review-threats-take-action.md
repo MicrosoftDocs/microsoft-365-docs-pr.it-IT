@@ -15,12 +15,12 @@ ms.collection:
 ms.custom: AdminSurgePortfolio
 search.appverid: MET150
 description: Informazioni su come esaminare e gestire le minacce rilevate da Microsoft Defender antivirus nei dispositivi Windows 10.
-ms.openlocfilehash: ffdf5cffb50d6145d6059233e0850839f4dfb582
-ms.sourcegitcommit: 26b35012c42fef935d6c4a6509dde6c22a9b922a
+ms.openlocfilehash: 41465cb81850415a7b490b6af7f0ec66c724ca68
+ms.sourcegitcommit: 490a65d32b6d656c661c36a2cc8dda03bf6cba77
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "49385241"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "49588518"
 ---
 # <a name="review-detected-threats-and-take-action"></a>Rivedere le minacce individuate e intervenire
 
@@ -42,7 +42,7 @@ Sono disponibili diverse opzioni per visualizzare informazioni specifiche sui di
 
 - La pagina **dispositivi attivi** nell'interfaccia di <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">amministrazione di Microsoft 365</a>. Vedere [gestire i rilevamenti di minacce nella pagina dispositivi attivi](#manage-threat-detections-on-the-active-devices-page) in questo articolo.
 - La pagina **minacce attive** nell'interfaccia di <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">amministrazione di Microsoft 365</a>. Vedere [gestire i rilevamenti di minacce nella pagina minacce attive](#manage-threat-detections-on-the-active-threats-page) in questo articolo.
-- La pagina **antivirus** in <a href="https://endpoint.microsoft.com" target="_blank">Microsoft Endpoint Manager</a>. Vedere [gestire i rilevamenti di minacce in Microsoft Endpoint Manager](#manage-threat-detections-in-microsoft-endpoint-manager) in questo articolo.
+- La pagina **antivirus** in <a href="https://go.microsoft.com/fwlink/p/?linkid=2150463" target="_blank">Microsoft Endpoint Manager</a>. Vedere [gestire i rilevamenti di minacce in Microsoft Endpoint Manager](#manage-threat-detections-in-microsoft-endpoint-manager) in questo articolo.
 
 Per ulteriori informazioni, vedere [minacce rilevate da Microsoft Defender Antivirus](threats-detected-defender-av.md).
 
@@ -88,7 +88,7 @@ Quando si visualizzano i dettagli relativi a minacce o dispositivi specifici, ve
 
 È possibile utilizzare Microsoft Endpoint Manager per gestire i rilevamenti di minacce. I dispositivi Windows 10 devono essere [registrati in Intune](/mem/intune/enrollment/windows-enrollment-methods) (parte di Microsoft Endpoint Manager).
 
-1. Accedere all'interfaccia di amministrazione di Microsoft Endpoint Manager <a href="https://endpoint.microsoft.com" target="_blank">https://endpoint.microsoft.com</a> ed eseguire l'accesso.
+1. Accedere all'interfaccia di amministrazione di Microsoft Endpoint Manager <a href="https://go.microsoft.com/fwlink/p/?linkid=2150463" target="_blank">https://endpoint.microsoft.com</a> ed eseguire l'accesso.
 
 2. Nel riquadro di spostamento selezionare **Endpoint Security**.
 

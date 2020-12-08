@@ -10,12 +10,12 @@ f1.keywords:
 ms.author: jaimeo
 ms.topic: article
 ms.localizationpriority: normal
-ms.openlocfilehash: 294a3c6c54e28fa03ff6264898e7763325f78c3e
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 8412c10416a4a131129eebd20d1b4f01228afaf3
+ms.sourcegitcommit: 280200281aec862517876319a3fe4ce170674047
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48847769"
+ms.lasthandoff: 12/07/2020
+ms.locfileid: "49586686"
 ---
 # <a name="privacy-and-personal-data"></a>Privacy e dati personali
 
@@ -46,6 +46,10 @@ Microsoft Managed Desktop archivia i dati in uno o più dei seguenti servizi di 
 - Spazio di archiviazione di Azure
 
 Microsoft Managed Desktop archivia i propri dati negli Stati Uniti. I dati personali vengono conservati da Microsoft Managed Desktop per un massimo di 30 giorni.
+
+### <a name="staff-location"></a>Posizione del personale
+
+Le operazioni di MMD e i team di operazioni di sicurezza di MMD sono ubicati negli Stati Uniti e in India.
 
 ## <a name="data-usage-of-microsoft-managed-desktop"></a>Utilizzo dei dati di Microsoft Managed Desktop
 

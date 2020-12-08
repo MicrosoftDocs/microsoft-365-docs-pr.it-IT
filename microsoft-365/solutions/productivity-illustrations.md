@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 9bd5ad3e2544e0c715ade59ca4744e08c8a548a6
-ms.sourcegitcommit: 20d1158c54a5058093eb8aac23d7e4dc68054688
+ms.openlocfilehash: 81e729d9b0ff145d1d10a385cdd3f0856287dd9f
+ms.sourcegitcommit: 490a65d32b6d656c661c36a2cc8dda03bf6cba77
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "49376666"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "49588586"
 ---
 # <a name="microsoft-365-productivity-illustrations"></a>Illustrazioni sulla produttività di Microsoft 365
 
@@ -48,7 +48,7 @@ Questo set di illustrazioni utilizza uno dei settori più regolamentati, i servi
 
 | Elemento | Descrizione |
 |:-----|:-----|
-|[![Modello poster: Capacità della Conformità e protezione dell’imformazione di Microsoft 365](../media/solutions-architecture-center/m365-compliance-illustrations-thumb.png)](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf) <br/> Italiano: [scaricare come](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf) \| [Download PDF come Visio](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.vsdx)   <br/> Giapponese: [scaricare come](https://download.microsoft.com/download/6/f/1/6f1a7d0e-dd8e-442e-b073-8e94327ae4f8/m365-compliance-illustrations.pdf) \| [Download PDF come Visio](https://download.microsoft.com/download/6/f/1/6f1a7d0e-dd8e-442e-b073-8e94327ae4f8/m365-compliance-illustrations.vsdx)   <br/> Aggiornato il 2020 novembre|Include <ul><li>  Protezione dell’informazione e prevenzione della perdita dei dati di Microsoft</li><li>Criteri di conservazione ed etichette di conservazione. </li><li>Barriere informative</li><li>Conformità delle comunicazioni</li><li>Rischio Insider</li><li>Gestione dei dati di terze parti</li>|
+|[![Modello poster: Capacità della Conformità e protezione delle informazioni di Microsoft 365](../media/solutions-architecture-center/m365-compliance-illustrations-thumb.png)](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf) <br/> Inglese: [Scarica come PDF](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf)  \| [Scarica come Visio](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.vsdx) <br/> Giapponese: [Scarica come PDF](https://download.microsoft.com/download/6/f/1/6f1a7d0e-dd8e-442e-b073-8e94327ae4f8/m365-compliance-illustrations.pdf)  \| [Scarica come Visio](https://download.microsoft.com/download/6/f/1/6f1a7d0e-dd8e-442e-b073-8e94327ae4f8/m365-compliance-illustrations.vsdx) <br/> Ultimo aggiornamento nel novembre 2020|Include <ul><li>  Protezione dell’informazione e prevenzione della perdita dei dati di Microsoft</li><li>Criteri di conservazione ed etichette di conservazione. </li><li>Barriere informative</li><li>Conformità delle comunicazioni</li><li>Rischio Insider</li><li>Gestione dei dati di terze parti</li>|
 
 
 ### <a name="security-and-information-protection-for-multi-region-organizations"></a>Protezione della sicurezza e delle informazioni per le organizzazioni multi-area
@@ -84,7 +84,7 @@ Flussi di lavoro e flusso di dati end-to-end avanzati di eDiscovery, inclusi all
 
 | Elemento | Descrizione |
 |:-----|:-----|
-|[![Poster del modello: Advanced eDiscovery Architecture in Microsoft 365](../media/solutions-architecture-center/ediscovery-poster-thumb.png)](../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png) <br/> [Visualizzazione come immagine](../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png) \| [Scarica come PDF](https://download.microsoft.com/download/d/1/c/d1ce536d-9bcf-4d31-b75b-fcf0dc560665/m365-advanced-ediscovery-architecture.pdf) \| [Scaricare come Visio](https://download.microsoft.com/download/d/1/c/d1ce536d-9bcf-4d31-b75b-fcf0dc560665/m365-advanced-ediscovery-architecture.vsdx)   <br/> Ultimo aggiornamento: ottobre 2020|Include <ul><li>  Flusso di lavoro end-to-end in un singolo ambiente</li><li>Flusso di lavoro end-to-end in un ambiente multi-geo di Microsoft 365 </li><li>Flusso di dati end-to-end che supporta il flusso di lavoro di EDRM</li> |
+|[![Poster del modello: Advanced eDiscovery Architecture in Microsoft 365](../media/solutions-architecture-center/ediscovery-poster-thumb.png)](../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png) <br/> [Visualizzazione come immagine](../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png) \| [Scarica come PDF](https://download.microsoft.com/download/d/1/c/d1ce536d-9bcf-4d31-b75b-fcf0dc560665/m365-advanced-ediscovery-architecture.pdf) \| [Scaricare come Visio](https://download.microsoft.com/download/d/1/c/d1ce536d-9bcf-4d31-b75b-fcf0dc560665/m365-advanced-ediscovery-architecture.vsdx)   <br/> Aggiornato il 2020 ottobre|Include <ul><li>  Flusso di lavoro end-to-end in un singolo ambiente</li><li>Flusso di lavoro end-to-end in un ambiente multi-geo di Microsoft 365 </li><li>Flusso di dati end-to-end che supporta il flusso di lavoro di EDRM</li> |
   
 <!--
 
@@ -130,7 +130,26 @@ Microsoft supporta diverse opzioni per iniziare il viaggio verso l'implementazio
 Aggiornato nel gennaio 2019
 
 Per altre informazioni, vedere l'articolo correlato a questo poster: [Soluzioni di telefonia Microsoft](https://docs.microsoft.com/SkypeForBusiness/hybrid/msft-telephony-solutions).
-  
+
+### <a name="empower-remote-workers"></a>Supportare i lavoratori remoti
+
+Con Microsoft 365 e altre tecnologie cloud di Microsoft, è possibile fornire agli utenti l'accesso sicuro alle informazioni, agli strumenti e alle risorse locali e basate su cloud dell'organizzazione dalle proprie case. 
+
+[![Poster Supportare i lavoratori remoti](../media/empower-people-to-work-remotely/empower-remote-workers-poster.png)](../downloads/empower-remote-workers.pdf) <br/>
+[File PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/empower-remote-workers.pdf)  |  [PowerPoint](https://download.microsoft.com/download/5/1/1/511b77a9-a34c-4ea7-af2a-32b07f20b780/empower-remote-workers.pptx) <br>
+Aggiornato il 2020 luglio
+
+Per ulteriori informazioni, vedere l'articolo relativo a questo poster: [Empower Remote Workers with Microsoft 365](empower-people-to-work-remotely.md).
+
+### <a name="microsoft-teams-with-security-isolation"></a>Microsoft teams con isolamento della sicurezza
+
+Con Microsoft 365, è possibile configurare un team privato in Microsoft teams e utilizzare le impostazioni di sicurezza del sito di SharePoint e un'etichetta di sensibilità univoca per crittografare i file in modo che solo i membri del team possano decrittografarli.
+
+[![Poster Microsoft Teams con l’isolamento di sicurezza](../media/secure-teams-security-isolation/team-security-isolation-poster.png)](../downloads/team-security-isolation-poster.pdf) <br/>
+[PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/team-security-isolation-poster.pdf) <br> Aggiornato il 2020 agosto
+
+Per ulteriori informazioni, vedere l'articolo relativo a questo poster: [configurare un team con isolamento della sicurezza](secure-teams-security-isolation.md).
+
   
 ## <a name="see-also"></a>Vedere anche
 
