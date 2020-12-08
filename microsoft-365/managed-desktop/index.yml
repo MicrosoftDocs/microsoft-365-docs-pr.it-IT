@@ -1,6 +1,6 @@
 ### YamlMime:Landing
 title: Documentazione di Microsoft Managed Desktop
-summary: Microsoft Managed Desktop riunisce Microsoft 365 Enterprise, la gestione dei dispositivi basata su cloud di Microsoft e il monitoraggio della sicurezza, consentendo di liberare i team IT per concentrarsi sulle esigenze aziendali fondamentali.
+summary: Microsoft Managed Desktop è una soluzione ITaaS completa che coniuga la gestione degli endpoint e il monitoraggio della sicurezza in modo da fornire agli utenti un'esperienza dispositivo sicura e produttiva sui cui possano fare affidamento i professionisti IT.
 metadata:
   title: Documentazione di Microsoft Managed Desktop
   description: Microsoft Managed Desktop riunisce Microsoft 365 Enterprise, la gestione dei dispositivi basata su cloud di Microsoft e il monitoraggio della sicurezza, consentendo di liberare i team IT per concentrarsi sulle esigenze aziendali fondamentali.
@@ -9,13 +9,13 @@ metadata:
   ms.topic: landing-page
   author: jaimeo
   ms.author: jaimeo
-  ms.date: 07/13/2020
-  ms.openlocfilehash: 08ff51dcc2ecc7bb5f7a11616f011964d99287f2
-  ms.sourcegitcommit: 48f3c002678906189bfba079bbf055d67d08a60f
+  ms.date: 12/04/2020
+  ms.openlocfilehash: 59d8d4ae0986af58c086ea08f486feca5cb23f71
+  ms.sourcegitcommit: 9d5ddfc856926ce6919498c9c42a7421fef78328
   ms.translationtype: HT
   ms.contentlocale: it-IT
-  ms.lasthandoff: 08/05/2020
-  ms.locfileid: "46564144"
+  ms.lasthandoff: 12/04/2020
+  ms.locfileid: "49576776"
 landingContent:
 - title: Informazioni su Microsoft Managed Desktop
   linkLists:
@@ -33,21 +33,33 @@ landingContent:
       url: get-started/index.md
     - text: Utilizzo di Microsoft Managed Desktop
       url: /microsoft-365/managed-desktop/working-with-managed-desktop/
-- title: Nuovi articoli e post di blog
+- title: Articoli e post di blog
   linkLists:
-  - linkListType: whats-new
+  - linkListType: learn
     links:
-    - text: '[Roadmap] La roadmap completa per Microsoft Managed Desktop'
-      url: https://techcommunity.microsoft.com/t5/Microsoft-Managed-Desktop/Your-Complete-Roadmap-to-Microsoft-Managed-Desktop/ba-p/1000482
-    - text: '[White paper] Studio: la domanda crescente per i servizi di Managed Desktop'
-      url: https://techcommunity.microsoft.com/t5/Microsoft-Managed-Desktop/Study-Rising-Demand-for-Managed-Desktop-Services/ba-p/917182
-    - text: '[E-book] Offri alla tua azienda un ambiente di lavoro moderno'
-      url: https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE3ewtw
-- title: Video
+    - text: '[Blog] Workplace devices are the new "free snacks" (I dispositivi per le aree di lavoro sono i nuovi "omaggi gratuiti")'
+      url: https://techcommunity.microsoft.com/t5/microsoft-managed-desktop/workplace-devices-are-the-new-free-snacks/ba-p/1675936
+    - text: '[Whitepaper] Study: Microsoft Managed Desktop saves time and costs (Studio: Microsoft Managed Desktop fa risparmiare tempo e denaro)'
+      url: https://techcommunity.microsoft.com/t5/microsoft-managed-desktop/study-microsoft-managed-desktop-saves-time-and-costs/ba-p/1403408
+    - text: '[Whitepaper] Microsoft Managed Desktop Can Help Boost Engagement (Microsoft Managed Desktop può ottimizzare il coinvolgimento)'
+      url: https://techcommunity.microsoft.com/t5/microsoft-managed-desktop/microsoft-managed-desktop-can-help-boost-engagement/ba-p/1031932
+    - text: '[Whitepaper] SA Power Networks deploys Microsoft Managed Desktop to satisfy evolving user needs (SA Power Networks implementa Microsoft Managed Desktop per soddisfare le necessità in continua evoluzione degli utenti)'
+      url: https://customers.microsoft.com/story/832888-sa-power-networks-case-study-energy-microsoft-managed-desktop
+- title: Vantaggi e notizie in evidenza
   linkLists:
   - linkListType: video
     links:
-    - text: Altre informazioni sui vantaggi offerti da Microsoft Managed Desktop dal direttore di ingegneria del Lloyds Banking Group.
+    - text: Microsoft Managed Desktop - Esperienza amministratore IT
+      url: https://www.youtube.com/watch?v=UQ8VRSysUXw&feature=youtu.be
+    - text: Cosa amano le aziende di Microsoft Managed Desktop
+      url: https://www.microsoft.com/en-us/videoplayer/embed/RE4yjfL
+    - text: Microsoft Managed Desktop - Esperienze dispositivo fantastiche
+      url: https://www.microsoft.com/en-us/videoplayer/embed/RE41urx?autoplay=false
+    - text: Microsoft Managed Desktop - Operazioni di sicurezza
+      url: https://www.microsoft.com/videoplayer/embed/RE4COuk
+    - text: Microsoft Managed Desktop - Processo di modifica e rilascio
+      url: https://www.microsoft.com/videoplayer/embed/RE4COuk
+    - text: "The Shiproom / IGM / Episode 29 - Prioritizing user experience with security (Episodio 29: Dare priorità all'esperienza utente grazie alla sicurezza)"
+      url: https://www.youtube.com/watch?v=im11J9C1MTA&feature=youtu.be
+    - text: 'The Shiproom / Lloyds Banking Group / Episode 25 - Leadership amid rapid transformation (Episodio 25: Leadeship e trasformazione rapida)'
       url: https://www.youtube.com/watch?v=B9Gqj66qxNo&feature=youtu.be
-    - text: 'Elementi salienti di Microsoft Managed Desktop alla conferenza annuale Ignite '
-      url: /microsoft-365/managed-desktop/service-description
