@@ -11,23 +11,23 @@ ms.topic: reference
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: eb8ddf15-0080-457e-9d83-e73e193da334
-description: Archiviazione sul posto, blocco per controversia legale e criteri di conservazione Microsoft 365 consentono di conservare il contenuto delle cassette postali per soddisfare i requisiti di conformità alle normative e eDiscovery.
-ms.openlocfilehash: 62029ff742f9fe4aec1fed23d74b01b145da6cfe
-ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
+description: In-Place blocco, blocco per controversia legale e criteri di conservazione Microsoft 365 consentono di preservare il contenuto delle cassette postali per soddisfare i requisiti di conformità alle normative e eDiscovery.
+ms.openlocfilehash: c864a963bec7a7d342a8ad90b6edc57c88f5205b
+ms.sourcegitcommit: 490a65d32b6d656c661c36a2cc8dda03bf6cba77
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47358484"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "49588507"
 ---
 # <a name="preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery"></a>Conservazione dei destinatari Ccn e del gruppo di destinazione esteso per eDiscovery
   
-Archiviazione sul posto, blocco per controversia legale e [criteri di conservazione Microsoft 365](https://go.microsoft.com/fwlink/?LinkID=827811) (creati nel centro sicurezza & conformità) consentono di conservare il contenuto delle cassette postali per soddisfare i requisiti di conformità alle normative e eDiscovery. Per impostazione predefinita, le informazioni sui destinatari inseriti direttamente nei campi A e Cc di un messaggio sono incluse in tutti i messaggi, ma l'organizzazione può richiedere la possibilità di cercare e riprodurre i dettagli di tutti i destinatari di un messaggio. Ciò include: 
+In-Place blocco, blocco per controversia legale e [criteri di conservazione Microsoft 365](https://go.microsoft.com/fwlink/?LinkID=827811) (creati nel centro sicurezza & conformità) consentono di conservare il contenuto delle cassette postali per soddisfare i requisiti di conformità alle normative e eDiscovery. Per impostazione predefinita, le informazioni sui destinatari indirizzati direttamente nei campi a e CC di un messaggio sono incluse in tutti i messaggi. Tuttavia, l'organizzazione potrebbe richiedere la possibilità di cercare e riprodurre informazioni su tutti i destinatari di un messaggio. Questo include:
   
 - **Destinatari indirizzati utilizzando il campo Ccn di un messaggio:** I destinatari Ccn vengono archiviati nel messaggio nella cassetta postale del mittente, ma non sono inclusi nelle intestazioni del messaggio recapitato ai destinatari. 
     
 - **Destinatari del gruppo di distribuzione espanso:** Destinatari che ricevono il messaggio perché sono membri di un gruppo di distribuzione a cui il messaggio è stato indirizzato, sia nei campi a, CC o Ccn. 
     
-Exchange Online e Exchange Server 2013 (aggiornamento cumulativo 7 e versioni successive) conservano informazioni sui destinatari Ccn e dei gruppi di distribuzione espansi. È possibile cercare queste informazioni utilizzando una ricerca eDiscovery sul posto nell'interfaccia di amministrazione di Exchange (EAC) o in una ricerca contenuto nel centro sicurezza & conformità. 
+Exchange Online e Exchange Server 2013 (aggiornamento cumulativo 7 e versioni successive) conservano informazioni sui destinatari Ccn e dei gruppi di distribuzione espansi. È possibile cercare queste informazioni utilizzando una ricerca di In-Place eDiscovery nell'interfaccia di amministrazione di Exchange (EAC) o in una ricerca contenuto nel centro sicurezza & conformità. 
   
 ## <a name="how-bcc-recipients-and-expanded-distribution-group-recipients-are-preserved"></a>Come mantenere i destinatari Ccn e del gruppo di distribuzione espanso
 
@@ -35,11 +35,11 @@ Come già indicato, le informazioni sui destinatari Ccn vengono archiviate con i
   
 Le informazioni relative ai destinatari del gruppo di distribuzione espanso vengono archiviate con il messaggio dopo aver abilitato il blocco sul posto o il blocco per controversia legale per una cassetta postale. In Office 365, queste informazioni vengono archiviate anche quando un criterio di conservazione di Microsoft 365 viene applicato a una cassetta postale. L'appartenenza al gruppo di distribuzione viene determinata al momento dell'invio del messaggio. L'elenco dei destinatari espanso archiviato con il messaggio non viene influenzato dalle modifiche apportate all'appartenenza del gruppo dopo l'invio del messaggio. 
   
-|**Informazioni su...**|**Sono archiviati in...**|**Sono archiviati per impostazione predefinita?**|**Sono accessibili a...**|
+| Informazioni su... | Sono archiviati in... | Sono archiviati per impostazione predefinita? | Sono accessibili a... |
 |:-----|:-----|:-----|:-----|
 |Destinatari A e Cc  <br/> |Proprietà del messaggio nelle cassette postali del mittente e dei destinatari.  <br/> |Sì  <br/> |Mittente, destinatari e responsabili della conformità  <br/> |
 |Destinatari Ccn  <br/> |Proprietà del messaggio nella cassetta postale del mittente.  <br/> |Sì  <br/> |Mittente e responsabili della conformità  <br/> |
-|Destinatari del gruppo di distribuzione espanso  <br/> |Proprietà del messaggio nella cassetta postale del mittente.  <br/> |No. Le informazioni sui destinatari del gruppo di distribuzione espanso vengono archiviate dopo che una cassetta postale è stata inserita nell'archiviazione sul posto o in una conservazione per controversia legale o assegnata a un criterio di ritenzione Microsoft 365.  <br/> |Responsabili della conformità  <br/> |
+|Destinatari del gruppo di distribuzione espanso  <br/> |Proprietà del messaggio nella cassetta postale del mittente.  <br/> |No. Le informazioni sui destinatari del gruppo di distribuzione espanso vengono archiviate dopo che una cassetta postale è stata inserita In-Place conservazione o blocco per controversia legale oppure è stata assegnata a Microsoft 365 Retention Policy.  <br/> |Responsabili della conformità  <br/> |
    
 ## <a name="searching-for-messages-sent-to-bcc-and-expanded-distribution-group-recipients"></a>Cercare i messaggi inviati a destinatari Ccn e del gruppo di distribuzione espanso
 
@@ -47,7 +47,7 @@ Quando si cercano i messaggi inviati a un destinatario, i risultati della ricerc
   
 Scenario 1: John è un membro del gruppo di distribuzione Vendite USA In questa tabella sono riportati i risultati della ricerca eDiscovery quando Bob invia un messaggio a John direttamente o indirettamente tramite un gruppo di distribuzione.
   
-|**Quando si effettua una ricerca nella cassetta postale di Bobper i messaggi inviati…**|**E il messaggio è inviato con...**|**I risultati includono il messaggio?**|
+| Quando si esegue la ricerca della cassetta postale di Bob per i messaggi inviati... | E il messaggio è inviato con... | I risultati includono il messaggio? |
 |:-----|:-----|:-----|
 |A:John  <br/> |John in A  <br/> |Sì  <br/> |
 |A:John  <br/> |Vendite USA in A  <br/> |Sì  <br/> |
@@ -58,7 +58,7 @@ Scenario 1: John è un membro del gruppo di distribuzione Vendite USA In questa 
    
 Scenario 2: Bob invia un'e-mail a John (A/Cc) e Jack (Ccn direttamente o indirettamente tramite un gruppo di distribuzione). Nella tabella seguente sono mostrati i risultati della ricerca eDiscovery.
   
-|**Quando si effettua una ricerca nella...**|**Per i messaggi inviati...**|**I risultati includono il messaggio?**|**Note**|
+| Quando si effettua una ricerca nella...  | Per i messaggi inviati... | I risultati includono il messaggio? | Note |
 |:-----|:-----|:-----|:-----|
 |Cassetta postale di Bob  <br/> |A/Cc:John  <br/> |Sì  <br/> |Presenta un'indicazione del fatto che Jack fosse incluso in Ccn.  <br/> |
 |Cassetta postale di Bob  <br/> |Ccn:Jack  <br/> |Sì  <br/> |Presenta un'indicazione del fatto che Jack fosse incluso in Ccn.  <br/> |
@@ -76,7 +76,7 @@ R. Per impostazione predefinita, le informazioni dei destinatari Ccn vengono man
   
  **D. Quando e dove viene archiviato l'elenco dei destinatari del gruppo di distribuzione espanso?**
   
-R. L'appartenenza al gruppo viene espansa al momento dell'invio del messaggio. L'elenco dei membri del gruppo di distribuzione espanso viene archiviato nel messaggio originale nella cassetta postale del mittente. La cassetta postale del mittente deve essere in archiviazione sul posto, blocco per controversia legale o assegnata a un criterio di conservazione Microsoft 365.
+R. L'appartenenza al gruppo viene espansa al momento dell'invio del messaggio. L'elenco dei membri del gruppo di distribuzione espanso viene archiviato nel messaggio originale nella cassetta postale del mittente. La cassetta postale del mittente deve essere in In-Place blocco, conservazione per controversia legale o assegnata a un criterio di ritenzione di Microsoft 365.
   
  **D. I destinatari A/Cc sono in grado di visualizzare quali destinatari sono stati inclusi come Ccn?**
   

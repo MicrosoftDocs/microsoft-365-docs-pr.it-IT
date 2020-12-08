@@ -20,12 +20,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: a3c9aabd370117c085574144ff9450e74ae277c7
-ms.sourcegitcommit: 4cbb4ec26f022f5f9d9481f55a8a6ee8406968d2
+ms.openlocfilehash: e88b26fcfbcc9cbb0c2c53ed8fdb6b875ef4adc9
+ms.sourcegitcommit: 98146c67a1d99db5510fa130340d3b7be8d81b21
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49527525"
+ms.lasthandoff: 12/07/2020
+ms.locfileid: "49585306"
 ---
 # <a name="get-started-with-communication-compliance"></a>Introduzione alla conformità delle comunicazioni
 
@@ -68,7 +68,7 @@ Scegliere tra queste opzioni del gruppo di ruoli quando si configura la conformi
 
 | Ruolo | Autorizzazioni di ruolo |
 |:-----|:-----|
-| **Conformità alla comunicazione** | Utilizzare questo gruppo di ruoli per gestire la conformità di comunicazione per l'organizzazione in un singolo gruppo. Aggiungendo tutti gli account utente per gli amministratori, gli analisti, gli investigatori e i visualizzatori designati, è possibile configurare le autorizzazioni di conformità per le comunicazioni in un singolo gruppo. Questo gruppo di ruoli contiene tutti i ruoli di autorizzazione di conformità di comunicazione. Questa configurazione è il modo più semplice per iniziare rapidamente con la conformità alla comunicazione ed è adatta per le organizzazioni che non necessitano di autorizzazioni separate definite per gruppi di utenti separati. |
+| **Conformità delle comunicazioni** | Utilizzare questo gruppo di ruoli per gestire la conformità di comunicazione per l'organizzazione in un singolo gruppo. Aggiungendo tutti gli account utente per gli amministratori, gli analisti, gli investigatori e i visualizzatori designati, è possibile configurare le autorizzazioni di conformità per le comunicazioni in un singolo gruppo. Questo gruppo di ruoli contiene tutti i ruoli di autorizzazione di conformità di comunicazione. Questa configurazione è il modo più semplice per iniziare rapidamente con la conformità alla comunicazione ed è adatta per le organizzazioni che non necessitano di autorizzazioni separate definite per gruppi di utenti separati. |
 | **Amministratore della conformità alla comunicazione** | Utilizzare questo gruppo di ruoli per configurare inizialmente la conformità della comunicazione e successivamente per separare gli amministratori della conformità di comunicazione in un gruppo definito. Gli utenti assegnati a questo gruppo di ruoli possono creare, leggere, aggiornare ed eliminare i criteri di conformità della comunicazione, le impostazioni globali e le assegnazioni dei gruppi di ruoli. Gli utenti assegnati a questo gruppo di ruoli non possono visualizzare gli avvisi dei messaggi. |
 | **Analista conformità comunicazione** | Utilizzare questo gruppo per assegnare le autorizzazioni agli utenti che fungeranno da analisti di conformità della comunicazione. Gli utenti assegnati a questo gruppo di ruoli possono visualizzare i criteri in cui vengono assegnati come revisori, visualizzare i metadati dei messaggi (non il contenuto del messaggio), inoltrare a revisori aggiuntivi o inviare notifiche agli utenti. Gli analisti non sono in grado di risolvere gli avvisi in sospeso. |
 | **Ricercatore conformità comunicazione** | Utilizzare questo gruppo per assegnare le autorizzazioni agli utenti che agiranno come ricercatori per la conformità della comunicazione. Gli utenti assegnati a questo gruppo di ruoli possono visualizzare i metadati e il contenuto del messaggio, inoltrare ai revisori aggiuntivi, inoltrare a un caso avanzato di eDiscovery, inviare notifiche agli utenti e risolvere l'avviso. |
@@ -137,6 +137,35 @@ Se si è un'organizzazione che dispone di una distribuzione locale di Exchange o
 
 >[!IMPORTANT]
 >Per cercare i dati delle chat di Teams degli utenti locali, è necessario presentare al Supporto tecnico Microsoft la richiesta di abilitare l'organizzazione all'uso dell'interfaccia utente grafica nel Centro sicurezza e conformità. Per ulteriori informazioni, vedere [ricerca di cassette postali basate sul cloud per gli utenti locali](search-cloud-based-mailboxes-for-on-premises-users.md).
+
+Per gestire gli utenti controllati nelle organizzazioni aziendali di grandi dimensioni, potrebbe essere necessario monitorare tutti gli utenti in gruppi di grandi dimensioni. È possibile utilizzare PowerShell per configurare un gruppo di distribuzione per un criterio di conformità globale della comunicazione per il gruppo assegnato. In questo modo è possibile monitorare migliaia di utenti con un singolo criterio e mantenere aggiornati i criteri di conformità della comunicazione Man mano che i nuovi dipendenti fanno parte dell'organizzazione.
+
+1. Creare un [gruppo di distribuzione](https://docs.microsoft.com/powershell/module/exchange/new-distributiongroup) dedicato per i criteri di conformità della comunicazione globale con le proprietà seguenti: verificare che questo gruppo di distribuzione non venga utilizzato per altri scopi o per altri servizi di Office 365.
+
+    - **MemberDepartRestriction = chiuso**. Assicura che gli utenti non possano rimuoversi dal gruppo di distribuzione.
+    - **MemberJoinRestriction = chiuso**. Assicura che gli utenti non possano aggiungersi al gruppo di distribuzione.
+    - **ModerationEnabled = true**. Garantisce che tutti i messaggi inviati a questo gruppo siano soggetti all'approvazione e che il gruppo non venga utilizzato per comunicare al di fuori della configurazione dei criteri di conformità della comunicazione.
+
+    ```PowerShell
+    New-DistributionGroup -Name <your group name> -Alias <your group alias> -MemberDepartRestriction 'Closed' -MemberJoinRestriction 'Closed' -ModerationEnabled $true
+    ```
+
+2. Selezionare un [attributo personalizzato di Exchange](https://docs.microsoft.com/Exchange/recipients/mailbox-custom-attributes) inutilizzato per verificare che gli utenti siano stati aggiunti al criterio di conformità della comunicazione nell'organizzazione.
+
+3. Eseguire il seguente script di PowerShell su una pianificazione ricorrente per aggiungere gli utenti ai criteri di conformità della comunicazione:
+
+    ```PowerShell
+    $Mbx = (Get-Mailbox -RecipientTypeDetails UserMailbox -ResultSize Unlimited -Filter {CustomAttribute9 -eq $Null})
+    $i = 0
+    ForEach ($M in $Mbx) 
+    {
+      Write-Host "Adding" $M.DisplayName
+      Add-DistributionGroupMember -Identity <your group name> -Member $M.DistinguishedName -ErrorAction SilentlyContinue
+      Set-Mailbox -Identity $M.Alias -<your custom attribute name> SRAdded 
+      $i++
+    }
+    Write-Host $i "Mailboxes added to supervisory review distribution group."
+    ```
 
 Per ulteriori informazioni sulla configurazione dei gruppi, vedere:
 
@@ -218,7 +247,7 @@ Se si desidera avere la possibilità di rispondere a un avviso di criteri invian
 
 4. Per abilitare Anonymization, selezionare **Mostra le versioni di anonimi dei nomi utente**.
 
-5. Selezionare **Salva**.
+5. Seleziona **Salva**.
 
 6. Passare alla scheda **modelli di avviso** e quindi selezionare **Crea modello di avviso**.
 

@@ -18,24 +18,24 @@ ms.assetid: 4e8ff113-6361-41e2-915a-6338a7e2a1ed
 ms.custom:
 - seo-marvel-apr2020
 description: Informazioni su come gestire gli elementi parzialmente indicizzati (o non indicizzati) da Exchange, SharePoint e OneDrive for business all'interno dell'organizzazione.
-ms.openlocfilehash: bbf234e2051cd103d1b99ab75b8e5c15365762a9
-ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
+ms.openlocfilehash: 132a174f0c163c75939b75906baa3833c6387fa7
+ms.sourcegitcommit: 490a65d32b6d656c661c36a2cc8dda03bf6cba77
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48919998"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "49588563"
 ---
 # <a name="investigating-partially-indexed-items-in-ediscovery"></a>Analisi degli elementi parzialmente indicizzati in eDiscovery
 
 Una ricerca di eDiscovery eseguita dal centro conformità di Microsoft 365 include automaticamente gli elementi parzialmente indicizzati nei risultati della ricerca stimati durante l'esecuzione di una ricerca. Gli elementi parzialmente indicizzati sono gli elementi della cassetta postale di Exchange e i documenti sui siti di SharePoint e OneDrive for business che per qualche motivo non sono stati completamente indicizzati per la ricerca. La maggior parte dei messaggi di posta elettronica e i documenti del sito vengono indicizzati correttamente perché rientrano nei [limiti di indicizzazione dei messaggi di posta elettronica](limits-for-content-search.md#indexing-limits-for-email-messages) Tuttavia, alcuni elementi possono superare questi limiti di indicizzazione e verranno parzialmente indicizzati. Di seguito sono riportati altri motivi per i quali gli elementi non possono essere indicizzati per la ricerca e vengono restituiti come elementi parzialmente indicizzati quando si esegue una ricerca eDiscovery:
   
-- I messaggi di posta elettronica dispongono di un file allegato privo di un gestore valido, ad esempio file di immagine. Questa è la causa più comune degli elementi di posta elettronica parzialmente indicizzati
+- I messaggi di posta elettronica dispongono di un file allegato privo di un gestore valido, ad esempio file di immagine. Questa è la causa più comune degli elementi di posta elettronica parzialmente indicizzati.
 
-- Troppi file allegati a un messaggio di posta elettronica
+- Troppi file allegati a un messaggio di posta elettronica.
 
-- Un file allegato a un messaggio di posta elettronica è troppo grande
+- Un file allegato a un messaggio di posta elettronica è troppo grande.
 
-- Il tipo di file è supportato per l'indicizzazione, ma si è verificato un errore di indicizzazione per un file specifico.
+- Il tipo di file è supportato per l'indicizzazione ma si è verificato un errore di indicizzazione per un file specifico.
 
 Anche se varia, la maggior parte delle organizzazioni clienti ha meno dell'1% del contenuto in base al volume e meno del 12% del contenuto in base alle dimensioni parzialmente indicizzate. Il motivo della differenza tra il volume e la dimensione è che i file più grandi hanno una probabilità maggiore di contenere contenuto che non può essere completamente indicizzato.
   
@@ -45,10 +45,10 @@ Dopo aver eseguito una ricerca eDiscovery, il numero totale e la dimensione degl
   
 - Se un elemento è parzialmente indicizzato e corrisponde alla query di ricerca, è incluso sia nel conteggio (sia nelle dimensioni) degli elementi dei risultati di ricerca e degli elementi parzialmente indicizzati. Tuttavia, quando vengono esportati i risultati della stessa ricerca, l'elemento viene incluso solo con un set di risultati di ricerca. non è incluso come elemento parzialmente indicizzato.
 
-- Se si specifica un intervallo di date per una query di ricerca, inclusa nella query di parole chiave o tramite una condizione, qualsiasi elemento parzialmente indicizzato che non corrisponde all'intervallo di date non è incluso nel numero di elementi parzialmente indicizzati. Solo gli elementi parzialmente indicizzati che rientrano nell'intervallo di date sono inclusi nel numero di elementi parzialmente indicizzati.
+- Se si specifica un intervallo di date per una query di ricerca, inclusa nella query di parole chiave o tramite una condizione, qualsiasi elemento parzialmente indicizzato che non corrisponde all'intervallo di date non è incluso nel numero di elementi parzialmente indicizzati. Solo gli elementi parzialmente indicizzati che rientrano nell'intervallo di date sono inclusi nel numero di elementi indicizzati.
 
-> [!NOTE]
-> Gli elementi parzialmente indicizzati che si trovano in siti di SharePoint e OneDrive *non sono* inclusi nella stima degli elementi parzialmente indicizzati visualizzati nelle statistiche dettagliate per la ricerca. Tuttavia, gli elementi parzialmente indicizzati possono essere esportati quando si esportano i risultati di una ricerca di eDiscovery. Ad esempio, se si cercano solo i siti, il numero stimato di elementi parzialmente indicizzati sarà zero.
+  > [!NOTE]
+  > Gli elementi parzialmente indicizzati che si trovano in siti di SharePoint e OneDrive *non sono* inclusi nella stima degli elementi parzialmente indicizzati visualizzati nelle statistiche dettagliate per la ricerca. Tuttavia, gli elementi parzialmente indicizzati possono essere esportati quando si esportano i risultati di una ricerca di eDiscovery. Ad esempio, se si cercano solo i siti, il numero stimato di elementi parzialmente indicizzati sarà zero.
   
 ## <a name="calculating-the-ratio-of-partially-indexed-items-in-your-organization"></a>Calcolo del rapporto tra gli elementi parzialmente indicizzati nell'organizzazione
 
@@ -87,7 +87,7 @@ Quando si esportano i risultati della ricerca di eDiscovery o un report di ricer
   
 ## <a name="errors-related-to-partially-indexed-items"></a>Errori relativi agli elementi parzialmente indicizzati
 
-I tag di errore sono costituiti da due parti di informazioni, l'errore e il tipo di file. Ad esempio, in questa coppia errore/filetype:
+I tag di errore sono costituiti da due parti di informazioni, l'errore e il tipo di file. Ad esempio, in questa coppia errore/tipo di file:
 
 ```text
  parseroutputsize_xls
@@ -97,7 +97,7 @@ I tag di errore sono costituiti da due parti di informazioni, l'errore e il tipo
   
 Di seguito è riportato un elenco di errori di indicizzazione e una descrizione della possibile causa dell'errore.
   
-|**Tag di errore**|**Descrizione**|
+| Tag di errore | Descrizione |
 |:-----|:-----|
 | `attachmentcount` <br/> |Un messaggio di posta elettronica aveva troppi allegati e alcuni di questi allegati non sono stati elaborati.  <br/> |
 | `attachmentdepth` <br/> |La funzione di recupero contenuto e l'analizzatore del documento hanno rilevato troppi livelli di allegati annidati all'interno di altri allegati. Alcuni di questi allegati non sono stati elaborati.  <br/> |
@@ -108,7 +108,7 @@ Di seguito è riportato un elenco di errori di indicizzazione e una descrizione 
 | `parserencrypted` <br/> |Il contenuto dell'allegato o del messaggio di posta elettronica è crittografato e Microsoft 365 non è in grado di decodificare il contenuto.  <br/> |
 | `parsererror` <br/> |Si è verificato un errore sconosciuto durante l'analisi. Questo in genere deriva da un errore del software o da un arresto del servizio.  <br/> |
 | `parserinputsize` <br/> |Un allegato è troppo grande per la gestione del parser e l'analisi di tale allegato non è stata eseguita o non è stata completata.  <br/> |
-| `parsermalformed` <br/> |Un allegato non è stato corretto e non è stato possibile gestirlo dal parser. Questo risultato può essere costituito da vecchi formati di file, file creati da software incompatibili o virus che fingono di essere diversi da quelli richiesti.  <br/> |
+| `parsermalformed` <br/> |Un allegato non è stato corretto e non è stato possibile gestirlo dal parser. Questo risultato può essere dovuto ai vecchi formati di file, ai file creati da software incompatibili o a virus che fingono di essere diversi da quelli richiesti.  <br/> |
 | `parseroutputsize` <br/> |L'output dell'analisi di un allegato è troppo grande e deve essere troncato.  <br/> |
 | `parserunknowntype` <br/> |Un allegato ha un tipo di file che Microsoft 365 non è in grado di rilevare.  <br/> |
 | `parserunsupportedtype` <br/> |Un allegato ha un tipo di file che può essere rilevato da Office 365, ma l'analisi del tipo di file non è supportata.  <br/> |
