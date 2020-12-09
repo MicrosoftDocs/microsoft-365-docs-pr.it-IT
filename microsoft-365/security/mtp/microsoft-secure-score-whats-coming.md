@@ -17,12 +17,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: e42c65fdb4d409c1da7b85fbe7eca13170b9b974
-ms.sourcegitcommit: a9486f9dc51f0908393000ec3c211e3430c26abd
+ms.openlocfilehash: 950daef315ef27fe5d6bc40528eb0104974c8c00
+ms.sourcegitcommit: d859ea36152c227699c1786ef08cda5805ecf7db
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "49409234"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49604396"
 ---
 # <a name="whats-coming-to-microsoft-secure-score"></a>Cosa viene a Microsoft Secure Score
 
@@ -44,14 +44,6 @@ Aggiunta di 6 azioni di miglioramento correlate agli account per Microsoft Defen
 - Impostare ' validità minima password ' su' 1 o più giorni '
 - Disabilitare l'account di amministratore predefinito
 - Disabilitare l'account Guest incorporato
-
-### <a name="november-2020"></a>2020 novembre
-
-#### <a name="removing-the-ability-to-create-servicenow-tickets-through-secure-score"></a>Rimozione della possibilità di creare ticket di ServiceNow tramite un punteggio sicuro 
-
-La possibilità di creare biglietti di ServiceNow tramite il Punteggio sicuro accedendo alla **condivisione > ServiceNow** verrà rimossa.
-
-Il periodo di anteprima per il connettore ServiceNow termina. Questa funzionalità non sarà più disponibile entro la fine di 2020. La ringrazio per i commenti e il supporto continuo, mentre si determinano i passaggi successivi.
 
 ## <a name="related-resources"></a>Risorse correlate
 

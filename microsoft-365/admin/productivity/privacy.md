@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Modalità di protezione della privacy con il Punteggio di produttività.
-ms.openlocfilehash: db123042761b07ed64dd2dd94e783d65205e1460
-ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
+ms.openlocfilehash: ceb19fcb7bbf2f6a58e38684604ed3b0dac2a5d4
+ms.sourcegitcommit: d859ea36152c227699c1786ef08cda5805ecf7db
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49561511"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49604327"
 ---
 # <a name="privacy-controls-for-productivity-score"></a>Controlli sulla privacy per il Punteggio di produttività
 
@@ -47,8 +47,8 @@ Per visualizzare l'intero Punteggio di produttività, è necessario essere uno d
 - Amministratore di SharePoint
 - Amministratore di Skype for Business
 - Amministratore di Teams
-- Ruolo con autorizzazioni di lettura globali
-- Lettore report
+- Lettore globale
+- Amministratore che legge i report
 - Reader report di riepilogo utilizzo
 
 Assegnare il lettore report o il ruolo Reader report di riepilogo utilizzo a tutti coloro che sono responsabili della gestione delle modifiche e dell'adozione, ma non necessariamente di un amministratore IT. Questo ruolo consente di accedere all'interfaccia di amministrazione di Microsoft 365.
@@ -73,7 +73,7 @@ Add-AzureADDirectoryRoleMember -ObjectId $role.ObjectId -RefObjectId $u.ObjectId
 
 ## <a name="capability-to-opt-out-of-people-experiences"></a>Possibilità di escludere le esperienze degli utenti
 
-È inoltre possibile escludere l'area persone esperienze del Punteggio di produttività. In caso di disattivazione, nessuno dell'organizzazione sarà in grado di visualizzare queste metriche e l'organizzazione verrà rimossa da qualsiasi calcolo che comprenda la comunicazione, le riunioni, il lavoro di squadra, la collaborazione di contenuto e la mobilità.
+È inoltre possibile escludere l'area persone esperienze del Punteggio di produttività. In caso di disattivazione, nessuno dell'organizzazione sarà in grado di visualizzare queste metriche e l'organizzazione verrà rimossa da qualsiasi calcolo che comprenda la comunicazione, le riunioni, il lavoro di squadra, la collaborazione di contenuto e la mobilità. È necessario essere un amministratore globale per scegliere la propria organizzazione fuori dai rapporti sulle esperienze degli utenti.
 
 Per scegliere l'opzione put:
 

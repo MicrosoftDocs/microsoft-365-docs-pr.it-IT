@@ -16,12 +16,12 @@ ms.custom:
 - seo-marvel-jun2020
 f1.keywords: NOCSH
 description: Informazioni su come configurare la collaborazione per il contenuto sicuro in teams per proteggere i dati in base alla sua sensibilità.
-ms.openlocfilehash: 310605d0db84e33be1d5fdc925fadcfcdf9dddaf
-ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
+ms.openlocfilehash: 4f2e157025f00660e77ba3377221368e37e45445
+ms.sourcegitcommit: 1beaf89d2faa32f11fe1613be2fa2b31c4bc4a91
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "48906800"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "49602074"
 ---
 # <a name="set-up-secure-collaboration-with-microsoft-365"></a>Proteggere la collaborazione con Microsoft 365
 
@@ -60,7 +60,7 @@ Le informazioni che sono fondamentali per il successo dell'organizzazione o che 
 
 Per tutti gli scenari descritti in alto, è possibile utilizzare Team di Microsoft teams per archiviare, condividere e collaborare alle informazioni. 
 
-Per configurare Secure collabration, è possibile utilizzare le funzionalità e le funzionalità di Microsoft 365.
+Per configurare la collaborazione sicura, è possibile utilizzare le funzionalità e le funzionalità di Microsoft 365.
 
 | Prodotto o componente | Capacità o funzionalità | Licenze |
 |:-------|:-----|:-------|
@@ -76,9 +76,9 @@ Per gestire l'accesso alle informazioni con sensibilità diverse, sono stati svi
 ![Immagine di scorrimento per poster dell'architettura logica di Teams](../media/solutions-architecture-center/Teams-tiers-of-protection-1.png)
 
 
-Questi livelli- *linee di base* , *sensibili* e *altamente sensibili* -aumentano gradualmente le protezioni che impediscono la sovracondivisione e la potenziale perdita di informazioni, come illustrato nella tabella seguente.
+Questi livelli- *linee di base*, *sensibili* e *altamente sensibili* -aumentano gradualmente le protezioni che impediscono la sovracondivisione e la potenziale perdita di informazioni, come illustrato nella tabella seguente.
 
-||**Livello di base**|**Livello di riservatezza**|**Livello estremamente riservato**|
+|-|**Livello di base**|**Livello di riservatezza**|**Livello estremamente riservato**|
 |:--|:-----------|:------------|:-------------------|
 |Team pubblico o privato|Sia|Private|Private|
 |Condivisione non autenticata|Bloccato|Bloccato|Bloccato|

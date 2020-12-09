@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: 824864ffd69a1f885c56a55957fc369fec4f640a
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.openlocfilehash: a1e8c083c0769031fcc17cc799e7edc29fc9bc57
+ms.sourcegitcommit: d859ea36152c227699c1786ef08cda5805ecf7db
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49357298"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49604408"
 ---
 # <a name="top-scoring-in-industry-tests"></a>Punteggio principale nei test del settore
 
@@ -40,7 +40,7 @@ Microsoft 365 Defender unisce le funzionalità di [Microsoft Defender per endpoi
 
 Il metodo core to MITRE ' s testing emula gli attacchi del mondo reale per capire se le soluzioni possono essere adeguatamente rilevate e rispondenti. Mentre il test è concentrato sul rilevamento e la risposta degli endpoint, l'attacco simulato di APT29 di MITRE si estende su più domini di attacco, creando opportunità per consentire ai difensori di superare solo endpoint protection. Visibilità dei difensori di Microsoft espansa oltre l'endpoint con Microsoft 365 Defender.
 
-- Valutazione ATT&basata su CK di Microsoft 365 Defender — May 2020: [Leading in Real-World Detection](https://www.microsoft.com/security/blog/2020/05/01/microsoft-threat-protection-leads-real-world-detection-mitre-attck-evaluation/)
+- Valutazione ATT&basata su CK di Microsoft 365 Defender-May 2020: [Leading in Real-World Detection](https://www.microsoft.com/security/blog/2020/05/01/microsoft-threat-protection-leads-real-world-detection-mitre-attck-evaluation/)
 
     Microsoft 365 Defender ha fornito una copertura di quasi il 100% nelle fasi della catena di attacco. Ha fornito una visibilità iniziale all'interno delle attività di un utente malintenzionato. La visibilità riduce drasticamente il lavoro manuale per il centro operazioni di sicurezza e le soluzioni fornitore che si basano su specifiche modifiche alla configurazione. Microsoft 365 Defender ha anche avuto il minor numero di spazi di visibilità, diminuendo la capacità degli aggressori di funzionare non rilevati.
 
@@ -56,21 +56,21 @@ Il report di valutazione del prodotto AV-TEST e la certificazione test su tre ca
 
 **Scaricare l'ultima relazione sulla trasparenza: [esaminare i risultati dei test AV, January-February 2020](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4CflZ)**
 
-- Luglio-agosto 2020 AV-TEST business test utente: [Punteggio di protezione 6.0/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/august-2020/microsoft-defender-antivirus-4.18-203215/) <sup>**più recente**</sup>
+- Settembre-ottobre 2020 AV-TEST business test utente: [Punteggio di protezione 6.0/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/october-2020/microsoft-defender-antivirus-4.18-204116/) <sup>**più recente**</sup>
 
-    Microsoft Defender Antivirus ha ottenuto un perfetto Punteggio di protezione di 6.0/6.0, con 100% in luglio e agosto. 13.941 sono stati utilizzati esempi di malware.
+    Microsoft Defender Antivirus ha ottenuto un perfetto Punteggio di protezione di 6.0/6.0, con 100% in settembre e ottobre. 12.650 sono stati utilizzati esempi di malware.
 
-- Maggio — giugno 2020 AV-TEST business test utente: [Punteggio di protezione 6.0/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/june-2020/microsoft-windows-defender-antivirus-4.18-202513/)
+- Test utente business di luglio-agosto 2020 AV-TEST: [Punteggio di protezione 6.0/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/august-2020/microsoft-defender-antivirus-4.18-203215/)
 
-- Marzo-aprile 2020 AV-TEST business test utente: [Punteggio di protezione 5.5/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/february-2020/microsoft-windows-defender-antivirus-4.18-200614/)
+- Maggio-giugno 2020 AV-TEST business test utente: [Punteggio di protezione 6.0/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/june-2020/microsoft-windows-defender-antivirus-4.18-202513/)
 
-- Gennaio-febbraio 2020 AV-test Business Test utente: valutazione di [protezione 5.5/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/february-2020/microsoft-windows-defender-antivirus-4.18-200614/)  |  [analisi](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4CflZ)
+- Test dell'utente aziendale di marzo-aprile 2020 AV-TEST: [Punteggio di protezione 5.5/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/february-2020/microsoft-windows-defender-antivirus-4.18-200614/)
+
+- Gennaio-febbraio 2020 test dell'utente aziendale di AV-test: analisi del [Punteggio di protezione 5.5/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/february-2020/microsoft-windows-defender-antivirus-4.18-200614/)  |  [Analysis](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4CflZ)
 
 - Novembre-dicembre 2019 AV-TEST business test utente: [Punteggio di protezione 6.0/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/december-2019/microsoft-windows-defender-antivirus-4.18-195015/)
 
 - Settembre-ottobre 2019 AV-TEST business test utente: [Punteggio di protezione 5.5/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/october-2019/microsoft-windows-defender-antivirus-4.18-194115/)
-
-- Luglio-agosto 2019 AV-test Business Test utente: analisi del [Punteggio di protezione 6.0/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/august-2019/microsoft-windows-defender-antivirus-4.18-193215/)  |  [Analysis](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4kagp)
 
 ### <a name="av-comparatives-protection-rating-of-997-in-the-latest-test"></a>AV-Comparatives: valutazione di protezione del 99,7% nell'ultimo test
 
@@ -113,7 +113,7 @@ Microsoft Defender per le funzionalità EDR e Endpoint Protection di endpoint ha
 
 MITRE ha testato la capacità dei prodotti di rilevare le tecniche comunemente utilizzate dal gruppo di attacco mirato APT3 (noto anche come boro o UPS). Per isolare le funzionalità di rilevamento, tutte le funzionalità di protezione e prevenzione sono state disattivate. Microsoft è lieta di essere uno dei primi fornitori EDR a iscriversi alla valutazione MITRE basata sul Framework ATT&CK. Il Framework è oggi ampiamente considerato come il catalogo più completo delle tecniche e delle tattiche degli aggressori.
 
-- Valutazione att&basata su CK di Microsoft Defender per endpoint — dicembre 2018: analisi delle [funzionalità di rilevamento e ottica principali](https://www.microsoft.com/security/blog/2018/12/03/insights-from-the-mitre-attack-based-evaluation-of-windows-defender-atp/)  |  [Analysis](https://techcommunity.microsoft.com/t5/Windows-Defender-ATP/MITRE-evaluation-highlights-industry-leading-EDR-capabilities-in/ba-p/369831)
+- Valutazione att&basata su CK di Microsoft Defender per endpoint-dicembre 2018: analisi delle [funzionalità di rilevamento e ottica principali](https://www.microsoft.com/security/blog/2018/12/03/insights-from-the-mitre-attack-based-evaluation-of-windows-defender-atp/)  |  [Analysis](https://techcommunity.microsoft.com/t5/Windows-Defender-ATP/MITRE-evaluation-highlights-industry-leading-EDR-capabilities-in/ba-p/369831)
 
     Microsoft Defender per endpoint ha fornito una copertura completa delle tecniche degli aggressori all'interno dell'intera catena di attacchi. Highlights includeva l'ampiezza della telemetria, la forza dell'Intelligence per le minacce e il rilevamento automatico avanzato tramite l'apprendimento automatizzato, l'euristica e il monitoraggio dei comportamenti.
 

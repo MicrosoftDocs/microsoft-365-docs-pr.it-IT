@@ -16,12 +16,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Per ulteriori informazioni sull'impostazione sicura per impostazione predefinita in Exchange Online Protection (EOP)
-ms.openlocfilehash: 54000d351463ba90751f1f27638fb52847cf05ce
-ms.sourcegitcommit: c1dd5be42fe0c5dcc7c05817c941edd9076febf8
+ms.openlocfilehash: 758d2169d80630a38c0b498e8c1848568e5ec941
+ms.sourcegitcommit: 1beaf89d2faa32f11fe1613be2fa2b31c4bc4a91
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "49558515"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "49602042"
 ---
 # <a name="secure-by-default-in-office-365"></a>Protezione per impostazione predefinita in Office 365
 
@@ -40,6 +40,8 @@ Microsoft 365 le organizzazioni con cassette postali in Exchange Online sono pro
 
 - La posta elettronica con sospetto di malware verrà automaticamente messa in quarantena e i destinatari verranno informati. Vedere [Configure anti-malware Policies in EOP](configure-anti-malware-policies.md).
 - La posta elettronica identificata come phishing con elevata sicurezza verrà gestita in base all'azione relativa ai criteri di protezione da posta indesiderata. Vedere [configurare i criteri di protezione dalla posta indesiderata in EOP](configure-your-spam-filter-policies.md).
+
+Per ulteriori informazioni su EOP, vedere [Exchange Online Protection Overview](exchange-online-protection-overview.md).
 
 Poiché Microsoft desidera mantenere i clienti sicuri per impostazione predefinita, alcune sostituzioni dei tenant non vengono applicate per il phishing con malware o con elevato livello di sicurezza. Tali sostituzioni includono:
 
@@ -65,5 +67,5 @@ L'unica sostituzione che consente ai messaggi di phishing con elevata sicurezza 
 
 - Simulazioni di phishing: gli attacchi simulati consentono di identificare gli utenti vulnerabili prima che un attacco reale influenzi l'organizzazione.
 - Cassette postali di sicurezza/secops: cassette postali dedicate utilizzate dai team di sicurezza per ottenere messaggi non filtrati (sia buoni che cattivi). I team possono quindi verificare se contengono contenuto dannoso.
-- Filtri di terze parti: alcuni fornitori di terze parti consigliano di disattivare EOP (SCL =-1) come filtro di terze parti per gestire il filtro della posta. Microsoft non consiglia di disattivare EOP poiché EOP è obbligatorio per Defender per Office 365. In questo caso, è consigliabile abilitare il [filtro avanzato per i connettori](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).
+- Filtri di terze parti: alcuni fornitori di terze parti consigliano di disattivare EOP (SCL =-1) come filtro di terze parti per gestire il filtro della posta. Microsoft non consiglia di disattivare EOP come EOP è necessario per [Microsoft Defender per Office 365](office-365-atp.md). In questo caso, è consigliabile abilitare il [filtro avanzato per i connettori](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).
 - Falsi positivi: è possibile che si desideri consentire temporaneamente alcuni messaggi che vengono ancora analizzati da Microsoft [tramite invii di amministratore](admin-submission.md). Come per tutte le sostituzioni, è consigliabile che siano temporanei.
