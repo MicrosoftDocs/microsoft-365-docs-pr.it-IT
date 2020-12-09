@@ -19,12 +19,12 @@ ms.assetid: ''
 description: Informazioni sui passaggi di base per la risoluzione dei problemi che è possibile eseguire per risolvere i problemi comuni in Office 365 eDiscovery.
 siblings_only: true
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a2db7fac04f29587f451b8feff5b641624e0cf45
-ms.sourcegitcommit: 8ad481ed61cb6dabf8afb0fb04296666fa166450
+ms.openlocfilehash: 4f1bad23705729c15976959a3902501f05da7600
+ms.sourcegitcommit: 1beaf89d2faa32f11fe1613be2fa2b31c4bc4a91
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "49422865"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "49602037"
 ---
 # <a name="investigate-troubleshoot-and-resolve-common-ediscovery-issues"></a>Esaminare, risolvere i problemi e risolvere i problemi comuni relativi a eDiscovery
 
@@ -58,8 +58,7 @@ Controllare gli utenti duplicati o la lista di distribuzione con lo stesso ID ut
 
 ## <a name="errorissue-search-fails-on-specific-locations"></a>Errore/problema: la ricerca ha esito negativo su percorsi specifici
 
-Un eDiscovery o una ricerca di contenuto può generare l'errore seguente:
->Questa ricerca è stata completata con gli errori (#).  Si desidera riprovare la ricerca nelle posizioni non riuscite?
+Un eDiscovery o una ricerca di contenuto può generare l'errore seguente: `This search completed with (#) errors.  Would you like to retry the search on the failed locations?`
 
 ![Posizione specifica della ricerca non riuscita screenshot di errore](../media/edisc-tshoot-specific-location-search-fails.png)
 
@@ -194,6 +193,14 @@ errore di distribuzione della sincronizzazione del criterio di eDiscovery in cas
    ```
 
 4. Contattare il Servizio Supporto Tecnico Clienti Microsoft.
+
+## <a name="error-the-condition-specified-using-http-conditional-headers-is-not-met"></a>Errore: "la condizione specificata utilizzando le intestazioni condizionali HTTP non è soddisfatta"
+
+Quando si scaricano i risultati della ricerca utilizzando lo strumento di esportazione di eDiscovery, è possibile che venga visualizzato il seguente messaggio di errore: `System.Net.WebException: The remote server returned an error: (412) The condition specified using HTTP conditional header(s) is not met.` errore temporaneo, che in genere si verifica nel percorso di archiviazione di Azure.
+
+### <a name="resolution"></a>Risoluzione
+
+Per risolvere il problema, riprovare a [scaricare i risultati della ricerca](export-search-results.md#step-2-download-the-search-results), che riavvierà lo strumento di esportazione di eDiscovery.
 
 ## <a name="see-also"></a>Vedere anche
 
