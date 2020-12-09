@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Informazioni sui criteri di conservazione e sulle etichette di conservazione, utili per conservare tutto che serve ed eliminare ciò che non serve.
-ms.openlocfilehash: 5ceec4ed45286afa14004dcfcb9476040df9a5ec
-ms.sourcegitcommit: 26b35012c42fef935d6c4a6509dde6c22a9b922a
+ms.openlocfilehash: e2833d966fb8a1fcc15cbeb02b781d9c0325b9c1
+ms.sourcegitcommit: d3ca8021f7da00a474ac14aac5f1358204a848f2
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "49385272"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49519377"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>Informazioni sui criteri e sulle etichette di conservazione
 
@@ -55,7 +55,7 @@ Queste impostazioni di conservazione funzionano con il contenuto in locale, cons
 
 ## <a name="how-retention-settings-work-with-content-in-place"></a>Funzionamento delle impostazioni di conservazione con i contenuti in locale
 
-Quando al contenuto è assegnata un’impostazione di conservazione, nei criteri di conservazione, tale contenuto rimane nella posizione originale. Gli utenti possono continuare a lavorare normalmente con i propri documenti o messaggi di posta elettronica. Tuttavia, se modificano o eliminano il contenuto incluso nei criteri di conservazione, una copia del contenuto viene automaticamente conservata.
+Quando al contenuto è assegnata un'impostazione di conservazione, rimane nella posizione originale. Gli utenti possono continuare a lavorare normalmente con i propri documenti o messaggi di posta elettronica. Tuttavia, se modificano o eliminano il contenuto incluso nel criterio di conservazione, verrà conservata automaticamente una copia del contenuto.
   
 - Per i siti di SharePoint e OneDrive, la copia viene conservata nella **raccolta di archiviazione**.
 
@@ -196,17 +196,26 @@ Le cartelle pubbliche di Exchange, Skype e i messaggi di Teams e Yammer non supp
 
 #### <a name="only-one-retention-label-at-a-time"></a>Una sola etichetta di conservazione alla volta
 
-A un messaggio di posta elettronica o un documento è possibile assegnare una sola etichetta di conservazione alla volta:
-  
-- Per le etichette di conservazione assegnate manualmente da amministratori o utenti finali, è possibile rimuovere o cambiare l'etichetta di conservazione assegnata.
+È possibile applicare una sola etichetta di conservazione alla volta a un messaggio di posta elettronica o un documento. Un'etichetta di conservazione può essere applicata [manualmente](create-apply-retention-labels.md#manually-apply-retention-labels) da un utente finale o da un amministratore oppure automaticamente utilizzando uno dei seguenti metodi:
+
+- [Criteri applicazione automatica etichette](apply-retention-labels-automatically.md).
+- [Modello di analisi dei documenti in Microsoft SharePoint Syntex](https://docs.microsoft.com/microsoft-365/contentunderstanding/apply-a-retention-label-to-a-model)
+- [Etichetta predefinita per i documenti di SharePoint](create-apply-retention-labels.md#applying-a-default-retention-label-to-all-content-in-a-sharepoint-library-folder-or-document-set) o [Outlook](create-apply-retention-labels.md#applying-a-default-retention-label-to-an-outlook-folder)
+- [Regole di Outlook](create-apply-retention-labels.md#automatically-applying-a-retention-label-to-email-by-using-rules)
+
+Per le etichette di conservazione standard (non contrassegnano gli elementi come [record o record normativi](records-management.md#records)):
+
+- Gli amministratori e gli utenti finali possono modificare o rimuovere manualmente un'etichetta di conservazione esistente applicata al contenuto. 
+
+- Quando al contenuto è già applicata un'etichetta di conservazione, l'etichetta esistente non verrà automaticamente rimossa o sostituita da un'altra etichetta di conservazione con una possibile eccezione: l'etichetta esistente è stata applicata come etichetta predefinita.
     
-- Se al contenuto è assegnata un'etichetta applicata automaticamente, tale etichetta può essere sostituita da un'etichetta di conservazione pubblicata.
-    
-- Se al contenuto è assegnata un'etichetta di conservazione pubblicata, non è possibile sostituirla con un'etichetta applicata automaticamente.
-    
-- Se sono presenti più regole che assegnano automaticamente un'etichetta e il contenuto soddisfa le condizioni di più regole, viene assegnata l'etichetta di conservazione della regola meno recente (per data di creazione).
-    
-Per comprendere in pieno tutti i risultati quando si usa un'etichetta predefinita, vedere le informazioni contenute nella sezione [Applicazione di un'etichetta di conservazione predefinita a tutto il contenuto in una raccolta, cartella o set di documenti di SharePoint](create-apply-retention-labels.md#applying-a-default-retention-label-to-all-content-in-a-sharepoint-library-folder-or-document-set).
+    Per ulteriori informazioni sul comportamento dell'etichetta quando viene applicata utilizzando un'etichetta predefinita:
+    - Etichetta predefinita per SharePoint: [comportamento dell'etichetta quando si usa un'etichetta predefinita per SharePoint](create-apply-retention-labels.md#label-behavior-when-you-use-a-default-label-for-sharepoint)
+    - Etichetta predefinita per Outlook: [applicazione di un'etichetta di conservazione predefinita a una cartella di Outlook](create-apply-retention-labels.md#applying-a-default-retention-label-to-an-outlook-folder)
+
+- Se sono presenti più criteri delle etichette di applicazione automatica che potrebbero applicare un'etichetta di conservazione e il contenuto soddisfa le condizioni di più criteri, viene applicata l'etichetta di conservazione per i criteri delle etichette di applicazione automatica meno recenti (per data di creazione).
+
+Quando le etichette di conservazione contrassegnano gli elementi come record o record normativi, queste etichette non vengono mai modificate automaticamente. Solo gli amministratori del contenitore possono modificare o rimuovere manualmente le etichette di conservazione che contrassegnano gli elementi come record, ma non i record normativi. Per altre informazioni, vedere [confrontare le restrizioni relative alle azioni consentite o bloccate](records-management.md#compare-restrictions-for-what-actions-are-allowed-or-blocked).
 
 #### <a name="monitoring-retention-labels"></a>Monitoraggio delle etichette di conservazione
 

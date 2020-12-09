@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Usare le etichette di riservatezza per proteggere il contenuto in siti di SharePoint e Microsoft Teams e in gruppi di Microsoft 365.
-ms.openlocfilehash: 7f8337d368c5c9de7cf1d9ff90831777c0811b87
-ms.sourcegitcommit: 153f413402f93b79be421741f3b9fed318d6d270
+ms.openlocfilehash: 927b85a5c2ef14313acd5c1637f561342d71ccc0
+ms.sourcegitcommit: 4cbb4ec26f022f5f9d9481f55a8a6ee8406968d2
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48600471"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49527571"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>Usare le etichette di riservatezza per proteggere il contenuto in Microsoft Teams, gruppi di Microsoft 365 e siti di SharePoint
 
@@ -32,6 +32,7 @@ Le [etichette di riservatezza](sensitivity-labels.md), oltre a essere usate per 
 
 - Privacy (pubblica o privata) dei siti dei team e dei gruppi di Microsoft 365
 - Accesso utenti esterni
+- Condivisione esterna dai siti di SharePoint (anteprima)
 - Accesso da dispositivi non gestiti
 
 > [!IMPORTANT]
@@ -83,7 +84,7 @@ L'abilitazione delle etichette di riservatezza per i contenitori indica che è p
 2. Quindi, nella pagina **Definisci impostazioni di protezione per gruppi e siti**, selezionare una o entrambe le opzioni disponibili:
     
     - **Privacy e impostazioni di accesso utente esterno** per configurare le impostazioni di **Privacy** e **Accesso utenti esterni**. 
-    - **Impostazioni di accesso al dispositivo e condivisione esterna** per configurare l'impostazione** Accesso da dispositivi non gestiti**.
+    - **Impostazioni di accesso al dispositivo e condivisione esterna** per configurare le impostazioni **Controlla la condivisione esterna da siti di SharePoint etichettati** e **Accedi da dispositivi non gestiti**.
 
 3. Se è stato selezionato **Privacy e impostazioni di accesso utente esterno**, configurare le seguenti impostazioni:
     
@@ -97,7 +98,9 @@ L'abilitazione delle etichette di riservatezza per i contenitori indica che è p
     
     - **Accesso utente esterno**: controllare se il proprietario del gruppo può [aggiungere utenti guest al gruppo](/office365/admin/create-groups/manage-guest-access-in-groups).
 
-4. Se è stato selezionato **Accesso dispositivo e impostazioni condivisione esterna**, configurare la seguente impostazione:
+4. Se è stato selezionato **Accesso dispositivo e impostazioni condivisione esterna**, configurare le seguenti impostazioni:
+    
+    - **Controlla la condivisione esterna da siti di SharePoint etichettati**: selezionare questa opzione, attualmente in anteprima, per selezionare in seguito la condivisione con tutti gli utenti, gli utenti guest nuovi ed esistenti, o soltanto gli utenti della propria organizzazione. Per altre informazioni su questa configurazione e sulle impostazioni, vedere la documentazione di SharePoint [Attivare e disattivare la condivisione esterna per un sito](https://docs.microsoft.com/sharepoint/change-external-sharing-site).
     
     - **Accedi da dispositivi non gestiti**: questa opzione si serve della funzionalità di SharePoint che usa l'accesso condizionale di Azure AD per bloccare o limitare l'accesso ai contenuti di SharePoint e OneDrive da dispositivi non gestiti. Per altre informazioni, vedere [Controllare l'accesso da dispositivi non gestiti](/sharepoint/control-access-from-unmanaged-devices) dalla documentazione di SharePoint. L'opzione specificata per questa impostazione dell'etichetta equivale all'esecuzione di un comando di PowerShell per un sito, come descritto nei passaggi 3-5 [Bloccare o limitare l'accesso a uno specifico sito di SharePoint o OneDrive](https://docs.microsoft.com/sharepoint/control-access-from-unmanaged-devices#block-or-limit-access-to-a-specific-sharepoint-site-or-onedrive) della sezione delle istruzioni di SharePoint.
         
@@ -356,7 +359,7 @@ Per facilitare la gestione della coesistenza di etichette di riservatezza e clas
 ## <a name="auditing-sensitivity-label-activities"></a>Controllo delle attività sulle etichette di riservatezza
 
 > [!IMPORTANT]
-> Se si usa la separazione delle etichette selezionando solo l'ambito **Gruppi e siti** per le etichette che proteggono i contenitori: a causa dell'evento di controllo **Rilevata mancata corrispondenza della riservatezza del documento**e dei messaggi di posta elettronica descritti in questa sezione, è consigliabile [ordinare queste etichette](sensitivity-labels.md#label-priority-order-matters) prima delle etichette che hanno un ambito per **File e messaggi di posta elettronica**. 
+> Se si usa la separazione delle etichette selezionando solo l'ambito **Gruppi e siti** per le etichette che proteggono i contenitori: a causa dell'evento di controllo **Rilevata mancata corrispondenza della riservatezza del documento** e dei messaggi di posta elettronica descritti in questa sezione, è consigliabile [ordinare queste etichette](sensitivity-labels.md#label-priority-order-matters) prima delle etichette che hanno un ambito per **File e messaggi di posta elettronica**. 
 
 Se qualcuno carica un documento in un sito protetto con un'etichetta di riservatezza e il documento ha un'etichetta di riservatezza con [priorità più elevata](sensitivity-labels.md#label-priority-order-matters) rispetto all'etichetta di riservatezza applicata al sito, l'azione non verrà bloccata. Ad esempio, si supponga sia stata applicata l'etichetta **Generale** a un sito di SharePoint e che qualcuno carichi su tale sito un documento con etichetta **Riservato**. Dato che un'etichetta di riservatezza con una priorità più elevata identifica un contenuto maggiormente riservato di quello contrassegnato con un ordine di priorità inferiore, la situazione potrebbe porre un problema di sicurezza.
 
