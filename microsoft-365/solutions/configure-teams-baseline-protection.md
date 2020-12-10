@@ -3,7 +3,7 @@ title: Configurare team con la protezione di base
 f1.keywords: NOCSH
 ms.author: mikeplum
 author: MikePlumleyMSFT
-manager: pamgreen
+manager: serdars
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: Come distribuire team con un livello di protezione di base.
-ms.openlocfilehash: 76b60a61812c4d30884825b41ee7220d6686b58b
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 16f37175c3aa7b420745e6126de1aa96368d618a
+ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48845301"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49613443"
 ---
 # <a name="configure-teams-with-baseline-protection"></a>Configurare team con la protezione di base
 
@@ -88,7 +88,7 @@ Per aggiornare le impostazioni di condivisione del sito
 2. Fare clic su **Apri in SharePoint**.
 3. Nella barra degli strumenti del sito di SharePoint fare clic sull'icona delle impostazioni, poi su **Autorizzazioni sito**.
 4. Nel riquadro **Autorizzazioni sito** fare clic su **Modifica impostazioni di condivisione** in **Impostazioni di condivisione**.
-5. In **Autorizzazioni di condivisione** selezionare **I proprietari e i membri del sito e gli utenti con autorizzazioni di modifica possono condividere file e cartelle, ma solo i proprietari del sito possono condividere il sito** , quindi fare clic su **Salva**.
+5. In **Autorizzazioni di condivisione** selezionare **I proprietari e i membri del sito e gli utenti con autorizzazioni di modifica possono condividere file e cartelle, ma solo i proprietari del sito possono condividere il sito**, quindi fare clic su **Salva**.
 
 ## <a name="additional-protections"></a>Protezioni aggiuntive
 

@@ -20,12 +20,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
 description: Ottenere un report periodico sulle modalità di utilizzo dei servizi di Microsoft 365 da parte degli utenti dell'organizzazione. Il dashboard Informazioni generali utilizzo consente di analizzare ogni grafico per ottenere approfondimenti.
-ms.openlocfilehash: 9c3416f415c43377669b2c032e10696343c4416f
-ms.sourcegitcommit: 82d8be71c5861a501ac62a774b306a3fc1d4e627
+ms.openlocfilehash: d2c5b4f67d93500f7341463a01313271d182dc38
+ms.sourcegitcommit: 039205fdaaa2a233ff7e95cd91bace474b84b68c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48988459"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49611350"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center"></a>Report di Microsoft 365 nell'interfaccia di amministrazione
 
@@ -48,13 +48,13 @@ Guardare questo video per una panoramica sull'uso dei report:
 
 ::: moniker range="o365-germany"
 
-1. Nell' **interfaccia di amministrazione** passare alla pagina <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">Report</a> **\>Utilizzo**.
+1. Nell'**interfaccia di amministrazione** passare alla pagina <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">Report</a> **\>Utilizzo**.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. Nell' **interfaccia di amministrazione** passare alla pagina <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">Report</a> **\>Utilizzo**.
+1. Nell'**interfaccia di amministrazione** passare alla pagina <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">Report</a> **\>Utilizzo**.
 
 ::: moniker-end
 
@@ -90,9 +90,13 @@ In base all'abbonamento, questi sono i report disponibili.
     
 - [Utilizzo delle cassette postali](mailbox-usage.md)
     
-- [Attivazioni di Office](microsoft-office-activations.md)
+- [Attivazioni di Office](microsoft-office-activations-ww.md)
 
-- [Utenti attivi](active-users.md)
+- [Attivazioni di Office per il Governo degli Stati Uniti](microsoft-office-activations.md)
+
+- [Utenti attivi](active-users-ww.md)
+
+- [Utenti attivi per il Governo degli Stati Uniti](active-users.md)
   
 - [Utilizzo delle applicazioni di posta elettronica](email-apps-usage.md)
 
@@ -104,7 +108,9 @@ In base all'abbonamento, questi sono i report disponibili.
   
 - [Attività Dynamics 365 Customer Voice per il Governo degli Stati Uniti](forms-pro-activity.md)
 
-- [Gruppi di Microsoft 365](office-365-groups.md)
+- [Gruppi di Microsoft 365](office-365-groups-ww.md)
+
+- [Gruppi di Microsoft 365 per il Governo degli Stati Uniti](office-365-groups.md)
   
 - [Attività degli utenti di OneDrive for Business](onedrive-for-business-activity-ww.md)
 
@@ -114,7 +120,9 @@ In base all'abbonamento, questi sono i report disponibili.
 
 - [Utilizzo di OneDrive for Business per US Government ](onedrive-for-business-usage.md)
 
-- [Utilizzo di Microsoft 365 Apps](microsoft365-apps-usage.md)
+- [Utilizzo di Microsoft 365 Apps](microsoft365-apps-usage-ww.md)
+
+- [Utilizzo di Microsoft 365 Apps per il Governo degli Stati Uniti](microsoft365-apps-usage.md)
   
 - [Utilizzo dei sito di SharePoint](sharepoint-site-usage-ww.md)
 
@@ -203,6 +211,8 @@ In base all'abbonamento, questi sono i report disponibili.
 Usare i report del servizio per sapere quanto viene usato il servizio da uno specifico utente. Ad esempio, per sapere quanto spazio di archiviazione della cassetta postale è stato usato da un utente specifico, aprire il report Utilizzo cassette postali e ordinare gli utenti in base al nome. Se ci sono migliaia di utenti, esportare il report in Excel per filtrare rapidamente l'elenco.
   
 Non è possibile generare un report in cui si immette l'account di un utente e viene visualizzato un elenco con i servizi usati dall'utente e l'entità dell'utilizzo.
+
+In alcune circostanze i nuovi utenti vengono visualizzati come **sconosciuti**. Ciò è dovuto a ritardi occasionali nella creazione dei profili utente.  
   
 ## <a name="hide-user-details-in-the-reports"></a>Nascondere i dettagli utente nei report
 

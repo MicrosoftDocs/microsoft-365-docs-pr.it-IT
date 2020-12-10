@@ -18,8 +18,32 @@
       href: compliance-extensibility.md
 - name: Gestire i rischi Insider
   items:
+    - name: Soluzioni per il rischio Insider di Microsoft 365
+      href: insider-risk-solution-overview.md
+    - name: Conformità delle comunicazioni
+      items:
+        - name: Panoramica
+          href: communication-compliance-solution-overview.md
+        - name: Informazioni sulla conformità delle comunicazioni
+          href: communication-compliance.md
+        - name: Piano per la conformità delle comunicazioni
+          href: communication-compliance-plan.md
+        - name: Introduzione alla conformità delle comunicazioni
+          href: communication-compliance-configure.md
+        - name: Esaminare e correggere gli avvisi di conformità delle comunicazioni
+          href: communication-compliance-investigate-remediate.md
+        - name: Riferimento alle funzionalità per la conformità delle comunicazioni
+          href: communication-compliance-feature-reference.md
+        - name: 'Case Study: Contoso configura rapidamente i criteri relativi al linguaggio offensivo'
+          href: communication-compliance-case-study.md
+        - name: Criteri di supervisione in Office 365
+          href: supervision-policies.md
+        - name: Configurare i criteri di supervisione per Office 365
+          href: configure-supervision-policies.md
     - name: Gestione dei rischi Insider
       items:
+        - name: Panoramica
+          href: insider-risk-management-solution-overview.md
         - name: Informazioni sulla gestione dei rischi Insider
           href: insider-risk-management.md
         - name: Piano per la gestione dei rischi Insider
@@ -40,27 +64,12 @@
           href: insider-risk-management-users.md
         - name: Creare modelli di avviso relativi ai rischi Insider
           href: insider-risk-management-notices.md
-    - name: Conformità delle comunicazioni
-      items:
-        - name: Informazioni sulla conformità delle comunicazioni
-          href: communication-compliance.md
-        - name: Piano per la conformità delle comunicazioni
-          href: communication-compliance-plan.md
-        - name: Introduzione alla conformità delle comunicazioni
-          href: communication-compliance-configure.md
-        - name: Esaminare e correggere gli avvisi di conformità delle comunicazioni
-          href: communication-compliance-investigate-remediate.md
-        - name: Riferimento alle funzionalità per la conformità delle comunicazioni
-          href: communication-compliance-feature-reference.md
-        - name: 'Case Study: Contoso configura rapidamente i criteri relativi al linguaggio offensivo'
-          href: communication-compliance-case-study.md
-        - name: Criteri di supervisione in Office 365
-          href: supervision-policies.md
-        - name: Configurare i criteri di supervisione per Office 365
-          href: configure-supervision-policies.md
     - name: Barriere informative
-      href: information-barriers.md
       items:
+        - name: Panoramica
+          href: information-barriers-solution-overview.md
+        - name: Informazioni sulle barriere informative
+          href: information-barriers.md
         - name: Definire i criteri delle barriere informative
           href: information-barriers-policies.md
         - name: Attributi per i criteri delle barriere informative
@@ -71,6 +80,8 @@
           href: information-barriers-edit-segments-policies.md
     - name: Gestione accessi con privilegi
       items:
+        - name: Panoramica
+          href: privileged-access-management-solution-overview.md
         - name: Informazioni sulla gestione degli accessi con privilegi
           href: privileged-access-management-overview.md
         - name: Introduzione alla gestione degli accessi con privilegi
@@ -856,11 +867,11 @@
       href: increase-the-recoverable-quota-for-mailboxes-on-hold.md
     - name: Mantenere Ccn e i destinatari del gruppo di distribuzione espanso
       href: preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery.md
-- name: Gestire i criteri relativi a controlli e avvisi
+- name: Gestire i criteri di controllo e avviso
   items:
     - name: Controllo di base
       items:
-        - name: Eseguire ricerche nel log di audit
+        - name: Eseguire ricerche nel log di controllo
           href: search-the-audit-log-in-security-and-compliance.md
         - name: Abilitare o disabilitare la ricerca dei log di controllo
           href: turn-audit-log-search-on-or-off.md

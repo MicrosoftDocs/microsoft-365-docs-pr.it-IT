@@ -1,5 +1,5 @@
 ---
-title: Applicare automaticamente un'etichetta di riservatezza al contenuto
+title: Applicare automaticamente un'etichetta di riservatezza al contenuto in Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -15,19 +15,22 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-description: Quando si crea automaticamente un'etichetta di riservatezza, è possibile assegnare un'etichetta a un documento o un messaggio di posta elettronica oppure è possibile chiedere agli utenti di selezionare l'etichetta consigliata.
-ms.openlocfilehash: 2cfe509e61737cde77dbf865d4d56d9e7f8d0d33
-ms.sourcegitcommit: 95b85a1fdf43e3f0839483fa22e279262703f15f
+description: Quando si crea un'etichetta di riservatezza, è possibile assegnare automaticamente un'etichetta a file e messaggi di posta elettronica oppure chiedere agli utenti di selezionare l'etichetta consigliata.
+ms.openlocfilehash: 15b841f857eee1861a39a3d0e2e27025fadb90f4
+ms.sourcegitcommit: 7e003ee0a06f61bfb9f80441c3479fa3148afafe
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "49407350"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49568498"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Applicare automaticamente un'etichetta di riservatezza al contenuto
 
 >*[Indicazioni per l'assegnazione di licenze di Microsoft 365 per sicurezza e conformità](https://aka.ms/ComplianceSD).*
 
-Quando si crea un'etichetta di riservatezza, è possibile assegnarla automaticamente al contenuto quando soddisfa le condizioni specificate.
+> [!NOTE]
+> Per informazioni su come classificare ed etichettare i dati in Azure Purview, attualmente in anteprima, vedere [Etichettare automaticamente contenuti in Azure Purview](https://docs.microsoft.com/azure/purview/create-sensitivity-label).
+
+Quando si crea un'etichetta di riservatezza, è possibile assegnarla automaticamente a file e messaggi di posta elettronica quando soddisfano le condizioni specificate.
 
 La possibilità di applicare automaticamente etichette di riservatezza al contenuto è importante perché:
 
@@ -37,9 +40,11 @@ La possibilità di applicare automaticamente etichette di riservatezza al conten
 
 - Gli utenti non hanno più bisogno di conoscere i criteri e possono concentrarsi sul loro lavoro.
 
-Esistono due metodi diversi per applicare automaticamente un'etichetta di riservatezza:
+Quando il contenuto è stato etichettato manualmente, quell'etichetta non verrà mai sostituita dall'etichettatura automatica. Tuttavia, l'etichettatura automatica può sostituire un'[etichetta con livello di priorità inferiore](sensitivity-labels.md#label-priority-order-matters) applicata automaticamente.
 
-- **Etichettatura lato client quando gli utenti modificano documenti o compongono (e rispondono o inoltrano) messaggi di posta elettronica**: usare un'etichetta configurata per l'applicazione automatica di etichette per le app di Office (Word, Excel, PowerPoint e Outlook). 
+Esistono due metodi diversi per applicare automaticamente un'etichetta di riservatezza al contenuto in Microsoft 365:
+
+- **Etichettatura lato client quando gli utenti modificano documenti o compongono (e rispondono o inoltrano) messaggi di posta elettronica**: usare un'etichetta configurata per l'applicazione automatica di etichette per file e messaggi di posta elettronica (include Word, Excel, PowerPoint e Outlook). 
     
     Questo metodo supporta la raccomandazione di un'etichetta agli utenti, nonché l'applicazione automatica di un'etichetta. In entrambi i casi, comunque, l'utente decide se accettarla o rifiutarla, per garantire la corretta etichettatura del contenuto. Questa etichettatura lato client ha un ritardo minimo per i documenti perché l'etichetta può essere applicata anche prima di salvare il documento. Tuttavia, non tutte le app client supportano l'etichettatura automatica. Questa funzionalità è supportata dal client di etichettatura unificata di Azure Information Protection e da [alcune versioni di Office](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps). 
     
@@ -73,7 +78,7 @@ Esistono due metodi diversi per applicare automaticamente un'etichetta di riserv
 
 Nella tabella seguente sono riportate le differenze di comportamento tra i due metodi complementari di etichettatura automatica:
 
-|Funzionalità o comportamento|Impostazione di etichettatura: Applicazione di etichette automatica per le app di Office |Criterio: Etichettatura automatica|
+|Funzionalità o comportamento|Impostazione di etichettatura: Applicazione automatica delle etichette per file e messaggi di posta elettronica  |Criterio: Etichettatura automatica|
 |:-----|:-----|:-----|
 |Dipendenza dall'app|[Sì](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps) |No \* |
 |Limitazione in base alla posizione|No |Sì |
@@ -86,10 +91,7 @@ Nella tabella seguente sono riportate le differenze di comportamento tra i due m
 |Override della crittografia IRM applicata senza etichetta|Sì, se l'utente dispone del diritto minimo di utilizzo per l'esportazione |Sì (solo posta elettronica) |
 |Etichettatura della posta in arrivo|No |Sì (crittografia non applicata) |
 
-\* L'applicazione automatica di etichette non è attualmente disponibile in tutte le aree geografiche. Se il tenant non supporta questa funzionalità, la scheda di applicazione automatica di etichette non è visibile nell'interfaccia di amministrazione di applicazione delle etichette.
-
-> [!NOTE]
-> Quando il contenuto è stato etichettato manualmente, quell'etichetta non verrà mai sostituita dall'etichettatura automatica. I criteri di applicazione automatica di etichette, però, possono sostituire un'[etichetta con priorità inferiore](sensitivity-labels.md#label-priority-order-matters) che è stata applicata con l'applicazione automatica di etichette per le app di Office.
+\* L'applicazione automatica di etichette non è attualmente disponibile in tutte le aree geografiche. Se il tenant non supporta questa funzionalità, la scheda di applicazione automatica delle etichette non è visibile nell'interfaccia di amministrazione relativa all’applicazione delle etichette.
 
 ## <a name="how-multiple-conditions-are-evaluated-when-they-apply-to-more-than-one-label"></a>Modalità di valutazione di più condizioni quando si applicano a più etichette
 
@@ -111,7 +113,7 @@ Le impostazioni di applicazione automatica delle etichette per le app di Office 
 
 ![Opzioni relative all'ambito dell'etichetta di riservatezza per file e messaggi di posta elettronica](../media/filesandemails-scope-options-sensitivity-label.png)
 
-Mentre ci si sposta attraverso la procedura guidata, viene visualizzata la pagina **Applicazione automatica di etichette per le app di Office** in cui è possibile scegliere da un elenco di tipi di informazioni riservate o di classificatori sottoponibili a training:
+Mentre ci si sposta attraverso la procedura guidata, viene visualizzata la pagina **Applicazione automatica delle etichette per file e messaggi di posta elettronica**, in cui è possibile scegliere da un elenco di tipi di informazioni sensibili o di classificatori sottoponibili a training:
 
 ![Condizioni delle etichette per l'applicazione automatica di etichette nelle app di Office](../media/sensitivity-labels-conditions.png)
 

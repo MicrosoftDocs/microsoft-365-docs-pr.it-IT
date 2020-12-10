@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 description: Informazioni su come configurare DMARC (Domain-based Message Authentication, Reporting, and Conformance) per convalidare i messaggi inviati dall'organizzazione.
-ms.openlocfilehash: 4ff2c93e420957714815100243a6502e7ea087a7
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: 9dd97b1fc60f0b6198bb6c55af291c7dd103ac5d
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48446372"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49615337"
 ---
 # <a name="use-dmarc-to-validate-email"></a>Usare DMARC per convalidare la posta elettronica
 
@@ -191,7 +191,7 @@ Dopo aver creato il record, è necessario aggiornare il record nel registrar del
 3. Richiedere che i sistemi di posta esterni non accettino messaggi che non superano DMARC
 
     Il passaggio finale consiste nell'implementare un criterio reject. Un criterio reject è un record TXT DMARC il cui criterio è impostato su reject (p=reject). Quando si esegue questa operazione, si chiede ai destinatari DMARC di non accettare messaggi che non superano i controlli DMARC.
-    
+
 4. Come si configura DMARC per il sottodominio?
 
 DMARC viene implementato pubblicando un criterio come record TXT nel DNS ed è gerarchico (ad esempio, i criteri pubblicati per contoso.com verranno applicati a sub.domain.contonos.com, a meno che non vengano definiti in modo esplicito criteri diversi per il sottodominio). Questa operazione è utile perché le organizzazioni possono specificare un numero ridotto di record DMARC di livello elevato per una copertura più ampia. È consigliabile prestare attenzione a configurare i record di sottodomini DMARC espliciti quando non si vuole che i sottodomini ereditino il record DMARC del dominio di primo livello.
