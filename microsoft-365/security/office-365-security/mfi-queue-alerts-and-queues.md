@@ -11,12 +11,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 37640c80-ce6f-47e2-afd1-bc1d3c50e637
 description: Gli amministratori possono imparare a usare il widget code nel dashboard del flusso di posta nel centro sicurezza & conformità per monitorare il flusso di posta non riuscito nelle loro organizzazioni locali o partner su connettori in uscita.
-ms.openlocfilehash: e6935793cd04c6072784cd20b55649126864c369
-ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
+ms.openlocfilehash: c582a7f459d89fa1515713c4f55dea14b619a6ec
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48877574"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49616393"
 ---
 # <a name="queues-insight-in-the-security--compliance-center"></a>Insight nelle code nel centro sicurezza & Compliance
 
@@ -33,8 +33,8 @@ Microsoft 365 continuerà a riprovare al recapito per 24 ore. Dopo 24 ore, i mes
 Se il volume della posta in coda supera la soglia predefinita (il valore predefinito è 200 messaggi), le informazioni sono disponibili nelle posizioni seguenti:
 
 - Le **Code** Insight nel dashboard del [flusso di posta elettronica](mail-flow-insights-v2.md) nel [Centro sicurezza & Compliance](https://protection.office.com). Per ulteriori informazioni, vedere l'articolo relativo alle [code nella sezione Dashboard del flusso di posta](#queues-insight-in-the-mail-flow-dashboard) di questo argomento.
-  
-- Viene visualizzato un avviso in **avvisi recenti** il dashboard avvisi nel [Centro sicurezza & conformità](https://protection.office.com) (Dashboard **avvisi** \> **Dashboard** o <https://protection.office.com/alertsdashboard> ).
+
+- Viene visualizzato un avviso in **avvisi recenti** il dashboard avvisi nel [Centro sicurezza & conformità](https://protection.office.com) (Dashboard **avvisi** \>  o <https://protection.office.com/alertsdashboard> ).
 
   ![Avvisi recenti nel dashboard avvisi nel centro sicurezza & Compliance](../../media/mfi-queued-messages-alert.png)
 
@@ -44,7 +44,7 @@ Se il volume della posta in coda supera la soglia predefinita (il valore predefi
 
 ## <a name="customize-queue-alerts"></a>Personalizzare gli avvisi delle code
 
-1. Nel [Centro sicurezza & conformità](https://protection.office.com), accedere a criteri **Alerts** di \> **avviso** avvisi o Apri <https://protection.office.com/alertpolicies> .
+1. Nel [Centro sicurezza & conformità](https://protection.office.com), accedere a criteri  di \> **avviso** avvisi o Apri <https://protection.office.com/alertpolicies> .
 
 2. Nella pagina **criteri di avviso** individuare e selezionare i criteri denominati **messaggi sono stati posticipati**.
 
@@ -52,16 +52,16 @@ Se il volume della posta in coda supera la soglia predefinita (il valore predefi
 
    ![I messaggi sono stati ritardati dettagli dei criteri di avviso il Centro sicurezza & Compliance](../../media/mfi-queued-messages-alert-policy.png)
 
-   - **Stato** : è possibile attivare o disattivare l'avviso.
+   - **Stato**: è possibile attivare o disattivare l'avviso.
 
-   - **Destinatari della posta elettronica** e **limite di notifica giornaliero** : fare clic su **modifica** per configurare le impostazioni seguenti:
+   - **Destinatari della posta elettronica** e **limite di notifica giornaliero**: fare clic su **modifica** per configurare le impostazioni seguenti:
 
 4. Per configurare le impostazioni di notifica, fare clic su **modifica**. Nel riquadro a comparsa dei **criteri di modifica** che viene visualizzato, configurare le seguenti impostazioni:
 
-   - **Invia notifiche tramite posta elettronica** : il valore predefinito è attivato.
-   - **Destinatari della posta elettronica** : il valore predefinito è **TenantAdmins**.
-   - **Limite di notifica giornaliero** : il valore predefinito è **Nessun limite**.
-   - **Soglia** : il valore predefinito è 200.
+   - **Invia notifiche tramite posta elettronica**: il valore predefinito è attivato.
+   - **Destinatari della posta elettronica**: il valore predefinito è **TenantAdmins**.
+   - **Limite di notifica giornaliero**: il valore predefinito è **Nessun limite**.
+   - **Soglia**: il valore predefinito è 200.
 
    ![Le impostazioni di notifica nei messaggi sono state ritardate dettagli dei criteri di avviso il Centro sicurezza & conformità](../../media/mfi-queued-messages-alert-policy-notification-settings.png)
 
@@ -76,7 +76,7 @@ Anche se il volume del messaggio in coda non ha superato la soglia e ha generato
 Se si fa clic sul numero di messaggi sul widget, viene visualizzato un riquadro a comparsa in **coda dei messaggi** con le seguenti informazioni:
 
 - **Numero di messaggi in coda**
-- **Nome connettore** : fare clic sul nome del connettore per gestire il connettore nell'interfaccia di amministrazione di Exchange (EAC).
+- **Nome connettore**: fare clic sul nome del connettore per gestire il connettore nell'interfaccia di amministrazione di Exchange (EAC).
 - **Ora di inizio coda**
 - **Messaggi meno recenti scaduti**
 - **Server di destinazione**

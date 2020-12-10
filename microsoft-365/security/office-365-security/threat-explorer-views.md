@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-defender-office365
 description: Informazioni su come utilizzare l'esploratore di minacce e il rapporto sui rilevamenti in tempo reale per esaminare e rispondere alle minacce nel centro sicurezza & conformità.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 551425bf3e6b2c4fbb429dd6698b4f85e30d1ebe
-ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
+ms.openlocfilehash: b7300f8c87b100a38117b0cc4bee1bb95c9584c6
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49561232"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49615709"
 ---
 # <a name="views-in-threat-explorer-and-real-time-detections"></a>Visualizzazioni in Esplora minacce e rilevamenti in tempo reale
 
@@ -56,7 +56,7 @@ Dopo aver selezionato una visualizzazione, è possibile applicare filtri e confi
 
 ## <a name="email--malware"></a>> di malware per la posta elettronica
 
-Per visualizzare questo report, in Esplora risorse (o rilevamenti in tempo reale), scegliere **Visualizza**  >  **messaggio di posta elettronica**  >  **malware**. Questa visualizzazione Mostra informazioni sui messaggi di posta elettronica che sono stati identificati come contenenti malware.
+Per visualizzare questo report, in Esplora risorse (o rilevamenti in tempo reale), scegliere **Visualizza** \> **messaggio di posta elettronica** \> **malware**. Questa visualizzazione Mostra informazioni sui messaggi di posta elettronica che sono stati identificati come contenenti malware.
 
 ![Visualizzare i dati relativi alla posta elettronica identificata come malware](../../media/ExplorerEmailMalwareMenu.png)
 
@@ -72,7 +72,7 @@ Al di sotto del grafico, visualizzare ulteriori dettagli su messaggi specifici. 
 
 ## <a name="email--phish"></a>> di posta elettronica phishing
 
-Per visualizzare questo report, in Esplora risorse (o rilevamenti in tempo reale), scegliere **View**  >  **email**  >  **phishing**. Questa visualizzazione Mostra i messaggi di posta elettronica identificati come tentativi di phishing.
+Per visualizzare questo report, in Esplora risorse (o rilevamenti in tempo reale), scegliere **View** \> **email** \> **phishing**. Questa visualizzazione Mostra i messaggi di posta elettronica identificati come tentativi di phishing.
 
 ![Visualizzare i dati relativi alla posta elettronica identificata come tentativi di phishing](../../media/ThreatExplorerEmailPhish.png)
 
@@ -92,13 +92,13 @@ Quando si seleziona un elemento nell'elenco, ad esempio un URL rilevato, viene a
 
 ## <a name="email--submissions"></a>Invii di > di posta elettronica
 
-Per visualizzare questo report, in Esplora risorse (o rilevamenti in tempo reale), scegliere **Visualizza**  >  **invii di posta elettronica**  >  **Submissions**. Questa visualizzazione Mostra la posta elettronica che gli utenti hanno segnalato come posta indesiderata, non indesiderata o phishing.
+Per visualizzare questo report, in Esplora risorse (o rilevamenti in tempo reale), scegliere **Visualizza** \> **invii di posta elettronica** \> . Questa visualizzazione Mostra la posta elettronica che gli utenti hanno segnalato come posta indesiderata, non indesiderata o phishing.
 
 ![Messaggi di posta elettronica segnalati dagli utenti](../../media/ThreatExplorerEmailUserReportedViewOptions.png)
 
 Fare clic su **sender** per aprire l'elenco delle opzioni di visualizzazione. Utilizzare questo elenco per visualizzare le informazioni per mittente, destinatario, tipo di rapporto (la determinazione dell'utente che la posta elettronica è indesiderata, non indesiderata o phishing) e altro ancora.
 
-Ad esempio, per visualizzare informazioni sui messaggi di posta elettronica segnalati come tentativi di phishing **Sender**, fare clic su  >  **tipo di rapporto** mittente, selezionare **phishing** e quindi fare clic sul pulsante Aggiorna.
+Ad esempio, per visualizzare informazioni sui messaggi di posta elettronica segnalati come tentativi di phishing  , fare clic su \> **tipo di rapporto** mittente, selezionare **phishing** e quindi fare clic sul pulsante Aggiorna.
 
 ![Phishing selezionato per il filtro dei tipi di report](../../media/ThreatExplorerEmailUserReportedPhishSelected.png)
 
@@ -110,7 +110,7 @@ Selezionare un elemento nell'elenco per visualizzare ulteriori dettagli.
 
 ## <a name="email--all-email"></a>Posta elettronica > tutti i messaggi di posta elettronica
 
-Per visualizzare questo report, in Esplora, scegliere **Visualizza**  >  **posta elettronica**  >  **tutti i messaggi**. Questa visualizzazione Mostra una panoramica completa dell'attività di posta elettronica, inclusi i messaggi di posta elettronica identificati come dannosi a causa di phishing o malware, nonché tutti i messaggi non dannosi (posta elettronica normale, posta indesiderata e messaggi in blocco).
+Per visualizzare questo report, in Esplora, scegliere **Visualizza** \> **posta elettronica** \> **tutti i messaggi**. Questa visualizzazione Mostra una panoramica completa dell'attività di posta elettronica, inclusi i messaggi di posta elettronica identificati come dannosi a causa di phishing o malware, nonché tutti i messaggi non dannosi (posta elettronica normale, posta indesiderata e messaggi in blocco).
 
 > [!NOTE]
 > Se viene visualizzato un messaggio di errore in cui vengono letti **troppi dati da visualizzare**, aggiungere un filtro e, se necessario, limitare l'intervallo di date che si sta visualizzando.
@@ -123,7 +123,7 @@ Al di sotto del grafico, visualizzare ulteriori dettagli su messaggi di posta el
 
 ## <a name="content--malware"></a>Contenuto > malware
 
-Per visualizzare questo report, in Esplora risorse (o rilevamenti in tempo reale), scegliere **View**  >  **Content**  >  **malware**. Questa visualizzazione Mostra i file che sono stati identificati come dannosi da [Microsoft Defender per Office 365 in SharePoint Online, OneDrive for business e Microsoft teams](atp-for-spo-odb-and-teams.md).
+Per visualizzare questo report, in Esplora risorse (o rilevamenti in tempo reale), scegliere **View** \> **Content** \> **malware**. Questa visualizzazione Mostra i file che sono stati identificati come dannosi da [Microsoft Defender per Office 365 in SharePoint Online, OneDrive for business e Microsoft teams](atp-for-spo-odb-and-teams.md).
 
 Consente di visualizzare le informazioni per la famiglia di malware, la tecnologia di rilevamento (come è stato rilevato il malware) e il carico di lavoro (OneDrive, SharePoint o Teams).
 

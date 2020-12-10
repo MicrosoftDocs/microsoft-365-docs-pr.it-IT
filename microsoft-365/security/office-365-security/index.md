@@ -15,12 +15,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 description: Sicurezza in Office 365, da EOP a Defender per Office 365 piani 1 e 2, configurazioni di sicurezza standard e rigorose e altro ancora. Informazioni su ciò che si ha e su come proteggere le proprietà.
-ms.openlocfilehash: 008488149a403fdafef9de0b0f64a9a43616debe
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.openlocfilehash: 84d7dcfc68ce78bfde92f3d7096cd4104355ce94
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49357756"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49616249"
 ---
 # <a name="office-365-security-overview"></a>Panoramica della sicurezza di Office 365
 
@@ -124,16 +124,16 @@ Questo rapido riferimento consentirà di comprendere quali funzionalità vengono
 
 |Difensore per Office 365 piano 1|Difensore per Office 365 piano 2|
 |---|---|
-|Funzionalità di configurazione, protezione e rilevamento: <ul><li>[Allegati sicuri](atp-safe-attachments.md)</li><li>[Collegamenti sicuri](atp-safe-links.md)</li><li>[ATP per SharePoint, OneDrive e Microsoft Teams](atp-for-spo-odb-and-teams.md)</li><li>[Protezione anti-phishing in Defender per Office 365](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)</li><li>[Rilevamenti in tempo reale](threat-explorer.md)</li></ul>|Protezione per le funzionalità di Office 365 piano 1<br/>--- più ---<br/>Funzionalità di automazione, analisi, correzione e formazione:</li><li>[Tracker delle minacce](threat-trackers.md)</li><li>[Esplora minacce](threat-explorer.md)</li><li>[Analisi e risposta automatizzate](office-365-air.md)</li><li>[Simulatore di attacchi](attack-simulator.md)</li></ul>|
+|Funzionalità di configurazione, protezione e rilevamento: <ul><li>[Allegati sicuri](atp-safe-attachments.md)</li><li>[Collegamenti sicuri](atp-safe-links.md)</li><li>[ATP per SharePoint, OneDrive e Microsoft Teams](atp-for-spo-odb-and-teams.md)</li><li>[Protezione anti-phishing in Defender per Office 365](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)</li><li>[Rilevamenti in tempo reale](threat-explorer.md)</li></ul>|Protezione per le funzionalità di Office 365 piano 1 <p> --- più --- <p> Funzionalità di automazione, analisi, correzione e formazione: <ul><li>[Tracker delle minacce](threat-trackers.md)</li><li>[Esplora minacce](threat-explorer.md)</li><li>[Analisi e risposta automatizzate](office-365-air.md)</li><li>[Simulatore di attacchi](attack-simulator.md)</li></ul>|
 |
 
 - Microsoft Defender per Office 365 piano 2 è incluso in Office 365 E5, Office 365 a5 e Microsoft 365 E5.
 
-- Microsoft Defender per Office 365 Piano 1 è incluso in Microsoft 365 Business Premium.
+- Microsoft Defender per Office 365 piano 1 è incluso in Microsoft 365 Business Premium.
 
 - Microsoft Defender per Office 365 piano 1 e Defender per Office 365 piano 2 sono disponibili come componente aggiuntivo per alcuni abbonamenti. Per ulteriori informazioni, vedere la disponibilità di un'altra funzionalità di collegamento [tra Microsoft Defender per Office 365 piani](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans).
 
-- La caratteristica [Documenti sicuri](safe-docs.md) è disponibile solo per gli utenti che dispongono di licenze Microsoft 365 E5 o Microsoft 365 E5 Security (non incluse nei piani di Microsoft Defender per Office 365).
+- La funzionalità [documenti attendibili](safe-docs.md) è disponibile solo per gli utenti che dispongono delle licenze di sicurezza Microsoft 365 E5 o Microsoft 365 E5 (non incluse nei piani Microsoft Defender per Office 365).
 
 - Se l'abbonamento corrente non include Microsoft Defender per Office 365 e lo si desidera, [contattare Sales per avviare una versione di valutazione](https://go.microsoft.com/fwlink/p/?LinkId=518644)e scoprire in che modo Microsoft Defender per Office 365 può funzionare nell'organizzazione.
 

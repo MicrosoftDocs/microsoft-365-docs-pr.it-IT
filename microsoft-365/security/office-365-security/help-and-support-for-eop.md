@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 64535a0a-1044-413f-8bc2-ed8e8a0bc54c
 description: Viene fornita da Microsoft l'assistenza per EOP attraverso una cospicua varietà di luoghi e metodi tra cui tra cui il supporto in autonomia e assistito.
-ms.openlocfilehash: dd68200b7a3723adc7ccba899c0cc88031891197
-ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
+ms.openlocfilehash: 3d11abee08fa3fdd7dfb659bd90e29908f9e4bda
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48920431"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49614859"
 ---
 # <a name="help-and-support-for-eop"></a>Guida e supporto tecnico per Exchange Online Protection
 
@@ -62,7 +62,7 @@ Per ulteriori informazioni su come il supporto Premier può aiutare l'organizzaz
 
 1. Accedere all'interfaccia di amministrazione di Microsoft 365.
 
-2. Per i problemi di prodotto generale, andare a **supporto** \> Richiedi supporto tecnico per le chiamate di **supporto clienti** \> **Call technical support**.
+2. Per i problemi di prodotto generale, andare a **supporto** \> Richiedi supporto tecnico per le chiamate di **supporto clienti** \> .
 
    Per le domande antecedenti all'acquisto di EOP o domande su fatturazione e sottoscrizioni, andare alla pagina **Supporto** \> **Richiedi l'assistenza clienti** \> **Chiamare il supporto per la sottoscrizione e la fatturazione**.
 
@@ -76,13 +76,13 @@ Microsoft fornisce numeri di telefono locali o un numero verde per il supporto d
 
 |Paese|Domande per l'acquisto e la fatturazione|Domande per il supporto tecnico|
 |---|---|---|
-|Brasile|Numero verde: 08007621146 <br/> Locale: 1147001999|Stesso|
-|Francia|Numero verde: 0805 540 594 <br/> Locale: 01 57 32 42 97|Stesso|
-|Germania|Numero verde: 0800 589 2332 <br/>  Locale: 069 380 789 508|Stesso|
-|Giappone|Numero verde: 0120-628860 <br/> Locale: 343326257|Numero verde: 0120-996680 <br/> Locale: 357679793|
-|Corea del Sud|Numero verde: 080-495-0880 <br/> Locale: 234831937|Stesso|
-|Spagna|Numero verde: 900 814 197 <br/> Locale: 912 718 160|Stesso|
-|Regno Unito|Numero verde: 0800 032 6417 <br/> Locale: 0203 450 6455|Stesso|
+|Brasile|Numero verde: 08007621146 <br> Locale: 1147001999|Stesso|
+|Francia|Numero verde: 0805 540 594 <br> Locale: 01 57 32 42 97|Stesso|
+|Germania|Numero verde: 0800 589 2332 <br>  Locale: 069 380 789 508|Stesso|
+|Giappone|Numero verde: 0120-628860 <br> Locale: 343326257|Numero verde: 0120-996680 <br> Locale: 357679793|
+|Corea del Sud|Numero verde: 080-495-0880 <br> Locale: 234831937|Stesso|
+|Spagna|Numero verde: 900 814 197 <br> Locale: 912 718 160|Stesso|
+|Regno Unito|Numero verde: 0800 032 6417 <br> Locale: 0203 450 6455|Stesso|
 |Stati Uniti|Numero verde: 1-877-913-2707|Numero verde: 1-800-865-9408|
 |
 

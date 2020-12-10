@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 description: Informazioni su come utilizzare le funzionalità di analisi e risposta alle minacce per individuare e studiare messaggi di posta elettronica dannosi.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a411e221d49a30a103de6e0f169588d13c387443
-ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
+ms.openlocfilehash: f3fd2e5c0f75de9a1b942e8f0baa8e9d44843de4
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49561329"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49616525"
 ---
 # <a name="investigate-malicious-email-that-was-delivered-in-office-365"></a>Esaminare la posta elettronica dannosa che è stata recapitata in Office 365
 
@@ -62,7 +62,7 @@ Per eseguire determinate azioni, ad esempio la visualizzazione delle intestazion
 |
 
 > [!NOTE]
-> L' *Anteprima* è un ruolo e non un gruppo di ruoli. il ruolo di anteprima deve essere aggiunto a un gruppo di ruoli esistente per Office 365. Al ruolo di amministratore globale viene assegnato l'interfaccia di amministrazione di Microsoft 365 ( [https://admin.microsoft.com](https://admin.microsoft.com) ) e i ruoli amministratore sicurezza e lettore di sicurezza sono assegnati nel centro sicurezza & Compliance ( [https://protection.office.com](https://protection.office.com) ). Per ulteriori informazioni sui ruoli e sulle autorizzazioni, vedere [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
+> L' *Anteprima* è un ruolo e non un gruppo di ruoli. il ruolo di anteprima deve essere aggiunto a un gruppo di ruoli esistente per Office 365. Al ruolo di amministratore globale viene assegnato l'interfaccia di amministrazione di Microsoft 365 ( <https://admin.microsoft.com> ) e i ruoli amministratore sicurezza e lettore di sicurezza sono assegnati nel centro sicurezza & Compliance ( <https://protection.office.com> ). Per ulteriori informazioni sui ruoli e sulle autorizzazioni, vedere [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
 ## <a name="find-suspicious-email-that-was-delivered"></a>Trovare messaggi di posta elettronica sospetti recapitati
 
@@ -71,9 +71,9 @@ Threat Explorer è un potente report che può servire a molteplici scopi, ad ese
 > [!NOTE]
 > Le ricerche predefinite in Esplora risorse non includono attualmente gli elementi zapping.  Questo vale per tutte le visualizzazioni, ad esempio le visualizzazioni di malware o phishing. Per includere gli elementi zapped, è necessario aggiungere un'azione di recapito ' impostato su Includi ' rimosso da ZAP '. Se si includono tutte le opzioni, verranno visualizzati tutti i risultati dell'azione di recapito, compresi gli elementi zapped.
 
-1. **Passare a Esplora minacce**: accedere a [https://protection.office.com](https://protection.office.com) e accedere con l'account aziendale o dell'Istituto di istruzione per Office 365. Questo porta al centro sicurezza & Compliance.
+1. **Passare a Esplora minacce**: accedere a <https://protection.office.com> e accedere con l'account aziendale o dell'Istituto di istruzione per Office 365. Questo porta al centro sicurezza & Compliance.
 
-2. Nella barra di avvio veloce di spostamento a sinistra, scegliere **gestione minacce** \> **Explorer**.
+2. Nella barra di avvio veloce di spostamento a sinistra, scegliere **gestione minacce** \> .
 
     ![Explorer con campi azione di recapito e posizione di recapito.](../../media/ThreatExFields.PNG)
 

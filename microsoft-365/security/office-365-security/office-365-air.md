@@ -21,12 +21,12 @@ description: Iniziare a utilizzare le funzionalità di analisi e risposta automa
 ms.custom:
 - air
 - seo-marvel-mar2020
-ms.openlocfilehash: 86414eaf0917a6cad7debc44e3f7aa604c55ae70
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.openlocfilehash: 8b6ef712e2e90e6798f16c54bc82f99590dbea42
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49357744"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49614835"
 ---
 # <a name="automated-investigation-and-response-air-in-microsoft-defender-for-office-365"></a>Indagine automatizzata e risposta (AIR) in Microsoft Defender per Office 365
 
@@ -124,7 +124,7 @@ Le autorizzazioni vengono concesse tramite alcuni ruoli, ad esempio quelli descr
 |Attività|Ruoli necessari|
 |---|---|
 |Configurare le caratteristiche dell'aria|Uno dei ruoli seguenti: <ul><li>Amministratore globale</li><li>Amministratore della sicurezza</li></ul> <p> Questi ruoli possono essere assegnati in [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles) o nel [Centro sicurezza & Compliance](permissions-in-the-security-and-compliance-center.md).|
-|Avviare un'analisi automatizzata <p> --- o --- <p> Approva o rifiuta azioni consigliate|Uno dei ruoli seguenti, assegnati in [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles) o nel [Centro sicurezza & Compliance](permissions-in-the-security-and-compliance-center.md): <ul><li>Amministratore globale</li><li>Amministratore della sicurezza</li><li>Ruolo con autorizzazioni di lettura per la sicurezza <br/>--- e ---</li><li>Search and Purge (questo ruolo è assegnato solo nel [Centro sicurezza & Compliance](permissions-in-the-security-and-compliance-center.md). Potrebbe essere necessario creare un nuovo gruppo di ruoli e aggiungere il ruolo Search and Purge a quel nuovo gruppo di ruoli.</li></ul>|
+|Avviare un'analisi automatizzata <p> --- o --- <p> Approva o rifiuta azioni consigliate|Uno dei ruoli seguenti, assegnati in [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles) o nel [Centro sicurezza & Compliance](permissions-in-the-security-and-compliance-center.md): <ul><li>Amministratore globale</li><li>Amministratore della sicurezza</li><li>Ruolo con autorizzazioni di lettura per la sicurezza <br> --- e --- </li><li>Search and Purge (questo ruolo è assegnato solo nel [Centro sicurezza & Compliance](permissions-in-the-security-and-compliance-center.md). Potrebbe essere necessario creare un nuovo gruppo di ruoli e aggiungere il ruolo Search and Purge a quel nuovo gruppo di ruoli.</li></ul>|
 |
 
 ## <a name="required-licenses"></a>Licenze necessarie

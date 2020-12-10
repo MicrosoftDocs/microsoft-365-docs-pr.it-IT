@@ -18,12 +18,12 @@ ms.collection:
 - remotework
 - m365solution-identitydevice
 - m365solution-scenario
-ms.openlocfilehash: b4468bfc7ef4b6f76d44b328f4e5b6d61d7f06ac
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.openlocfilehash: 0a9c09e33eb8fd5d03fcbdf44701544e656673d2
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49357840"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49615157"
 ---
 # <a name="common-identity-and-device-access-policies"></a>Criteri comuni di identità e accesso dei dispositivi
 
@@ -41,7 +41,7 @@ Nel diagramma seguente viene illustrato il set di criteri consigliato. Indica il
 
 Di seguito viene indicato un riepilogo di una pagina in formato PDF con collegamenti ai singoli criteri:
 
-[![Immagine del pollice per l'identità e la protezione del dispositivo per Microsoft 365 volantino](../../media/microsoft-365-policies-configurations/MSFT-cloud-architecture-identity-device-protection-handout.png)](../../downloads/MSFT-cloud-architecture-identity-device-protection-handout.pdf) <br/>  [Visualizzazione in formato PDF](../../downloads/MSFT-cloud-architecture-identity-device-protection-handout.pdf) \| [Scarica come PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT-cloud-architecture-identity-device-protection-handout.pdf)
+[![Immagine del pollice per l'identità e la protezione del dispositivo per Microsoft 365 volantino](../../media/microsoft-365-policies-configurations/MSFT-cloud-architecture-identity-device-protection-handout.png)](../../downloads/MSFT-cloud-architecture-identity-device-protection-handout.pdf) <br> [Visualizzazione in formato PDF](../../downloads/MSFT-cloud-architecture-identity-device-protection-handout.pdf) \| [Scarica come PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT-cloud-architecture-identity-device-protection-handout.pdf)
 
 Nella parte restante di questo articolo viene descritto come configurare questi criteri.
 
@@ -50,7 +50,7 @@ Nella parte restante di questo articolo viene descritto come configurare questi 
 
 Per ottenere il tempo necessario per eseguire queste attività, è consigliabile implementare i criteri di base nell'ordine indicato in questa tabella. Tuttavia, i criteri dell'AMF per i livelli di protezione sensibili e altamente regolamentati possono essere implementati in qualsiasi momento.
 
-|Livello di protezione|Criteri|Ulteriori informazioni|
+|Livello di protezione|Criteri|Altre informazioni|
 |---|---|---|
 |**Protezione di base**|[Richiedere l'AMF quando il rischio di accesso è *medio* o *elevato*](#require-mfa-based-on-sign-in-risk)||
 ||[Bloccare i client che non supportano l'autenticazione moderna](#block-clients-that-dont-support-modern-authentication)|I client che non utilizzano l'autenticazione moderna possono ignorare i criteri di accesso condizionale, pertanto è importante bloccarli.|
@@ -138,7 +138,7 @@ Nella sezione **Access Controls** :
 
 Scegliere **Seleziona** per salvare le impostazioni di **concessione** .
 
-Infine, selezionare **On** attiva per **abilitare i criteri** e quindi scegliere **Crea**.
+Infine, selezionare  attiva per **abilitare i criteri** e quindi scegliere **Crea**.
 
 È inoltre consigliabile utilizzare lo strumento [What If](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-whatif) per testare il criterio.
 
@@ -155,7 +155,7 @@ Nella sezione **assegnazioni** :
 |Utenti e gruppi|Includi|**Selezionare utenti e gruppi > utenti e gruppi**: selezionare gruppi specifici che contengono account utente di destinazione.|Iniziare con il gruppo che include gli account utente pilota.|
 ||Exclude|**Utenti e gruppi**: selezionare il gruppo di eccezioni di accesso condizionale; account di servizio (identità delle app).|L'appartenenza deve essere modificata su base temporanea, come necessario.|
 |App o azioni cloud|**Le app Cloud > includono**|**Selezionare app**: selezionare le app corrispondenti ai client che non supportano l'autenticazione moderna.||
-|Condizioni|**App client**|Scegliere **Sì** per **Configure** <br/> Deselezionare le **caselle di controllo per i** client e le **app per dispositivi mobili e desktop**||
+|Condizioni|**App client**|Scegliere **Sì** per **Configure** <p> Deselezionare le **caselle di controllo per i** client e le **app per dispositivi mobili e desktop**||
 |
 
 Nella sezione **Access Controls** :
@@ -168,7 +168,7 @@ Nella sezione **Access Controls** :
 
 Scegliere **Seleziona** per salvare le impostazioni di **concessione** .
 
-Infine, selezionare **On** attiva per **abilitare i criteri** e quindi scegliere **Crea**.
+Infine, selezionare  attiva per **abilitare i criteri** e quindi scegliere **Crea**.
 
 Provare a utilizzare lo strumento [What If](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-whatif) per testare il criterio.
 
@@ -192,7 +192,7 @@ Nella sezione seconda **assegnazioni** :
 
 |Tipo|Proprietà|Valori|Azione|
 |---|---|---|---|
-|Access|**Consenti accesso**||Selezionare|
+|Accesso|**Consenti accesso**||Selezionare|
 |||**Richiedi modifica password**|Assegno|
 |
 
@@ -218,7 +218,7 @@ Per visualizzare i suggerimenti specifici per ogni livello di configurazione e l
 
 Utilizzando i principi descritti nelle configurazioni di [identità e accesso ai dispositivi](microsoft-365-policies-configurations.md), i livelli di linea di base e di protezione sensibili mappano in stretta collaborazione con le impostazioni di protezione dei dati avanzate di livello 2. Il livello di protezione altamente regolamentato è strettamente associato alle impostazioni di protezione dei dati aziendali di livello 3.
 
-|Livello di protezione|Criteri di protezione delle app|Ulteriori informazioni|
+|Livello di protezione|Criteri di protezione delle app|Altre informazioni|
 |---|---|---|
 |Protezione di base|[Protezione avanzata dei dati di livello 2](https://docs.microsoft.com/mem/intune/apps/app-protection-framework#level-2-enterprise-enhanced-data-protection)|Le impostazioni dei criteri applicate nel livello 2 includono tutte le impostazioni dei criteri consigliate per il livello 1 e aggiungono o aggiornano solo le impostazioni dei criteri seguenti per implementare più controlli e una configurazione più sofisticata rispetto al livello 1.|
 |Dati sensibili|[Protezione avanzata dei dati di livello 2](https://docs.microsoft.com/mem/intune/apps/app-protection-framework#level-2-enterprise-enhanced-data-protection)|Le impostazioni dei criteri applicate nel livello 2 includono tutte le impostazioni dei criteri consigliate per il livello 1 e aggiungono o aggiornano solo le impostazioni dei criteri seguenti per implementare più controlli e una configurazione più sofisticata rispetto al livello 1.|
@@ -275,7 +275,7 @@ I criteri di conformità del dispositivo definiscono i requisiti che i dispositi
 - Windows 8,1 e versioni successive
 - Windows 10 e versioni successive
 
-Per creare criteri di conformità dei dispositivi, accedere all'interfaccia di [amministrazione di Microsoft Endpoint Manager](https://endpoint.microsoft.com) con le credenziali di amministratore, quindi passare ai criteri criteri di conformità per i **dispositivi**  >  **Compliance policies**  >  **Policies**. Selezionare **Crea criterio**.
+Per creare criteri di conformità dei dispositivi, accedere all'interfaccia di [amministrazione di Microsoft Endpoint Manager](https://endpoint.microsoft.com) con le credenziali di amministratore, quindi passare ai criteri criteri di conformità per i **dispositivi** \>  \> . Selezionare **Crea criterio**.
 
 Per distribuire i criteri di conformità dei dispositivi, è necessario assegnarli ai gruppi di utenti. Si assegna un criterio dopo aver creato e salvato. Nell'interfaccia di amministrazione, selezionare il criterio e quindi selezionare **assegnazioni**. Dopo aver selezionato i gruppi che si desidera ricevere, fare clic su **Salva** per salvare l'assegnazione del gruppo e distribuire il criterio.
 
@@ -306,21 +306,21 @@ Per la **sicurezza del sistema**, vedere questa tabella.
 ||Password semplici|Blocca|Selezionare|
 ||Tipo di password|Impostazione predefinita del dispositivo|Selezionare|
 ||Lunghezza minima password|6 |Tipo|
-||Numero massimo di minuti di inattività prima che sia necessaria la password|15 |Tipo <br/> Questa impostazione è supportata per le versioni Android 4,0 e successive o per KNOX 4,0 o versione precedente. Per i dispositivi iOS, è supportato per iOS 8,0 e superiori.|
+||Numero massimo di minuti di inattività prima che sia necessaria la password|15 |Tipo <p> Questa impostazione è supportata per le versioni Android 4,0 e successive o per KNOX 4,0 o versione precedente. Per i dispositivi iOS, è supportato per iOS 8,0 e superiori.|
 ||Scadenza password (giorni)|41|Tipo|
 ||Numero di password precedenti per impedire il riutilizzo|5 |Tipo|
 ||Richiedi password quando il dispositivo ritorna dallo stato di inattività (mobile e olografico)|Richiedono|Disponibile per Windows 10 e versioni successive|
 |Crittografia|Crittografia dell'archiviazione dei dati nel dispositivo|Richiedono|Selezionare|
 |Sicurezza del dispositivo|Firewall|Richiedono|Selezionare|
 ||Antivirus|Richiedono|Selezionare|
-||Antispyware|Richiedono|Selezionare <br/> Questa impostazione richiede una soluzione anti-spyware registrata con Centro sicurezza Windows.|
+||Antispyware|Richiedono|Selezionare <p> Questa impostazione richiede una soluzione anti-spyware registrata con Centro sicurezza Windows.|
 |Difensore|Antimalware di Microsoft Defender|Richiedono|Selezionare|
-||Versione minima di Microsoft Defender antimalware||Tipo <br/> Supportato solo per il desktop di Windows 10. Microsoft consiglia le versioni non superiori a cinque rispetto alla versione più recente.|
+||Versione minima di Microsoft Defender antimalware||Tipo <p> Supportato solo per il desktop di Windows 10. Microsoft consiglia le versioni non superiori a cinque rispetto alla versione più recente.|
 ||Firma antimalware di Microsoft Defender aggiornato|Richiedono|Selezionare|
-||Protezione in tempo reale|Richiedono|Selezionare <br/> Supportato solo per il desktop di Windows 10|
+||Protezione in tempo reale|Richiedono|Selezionare <p> Supportato solo per il desktop di Windows 10|
 |
 
-#### <a name="microsoft-defender-for-endpoint"></a>Microsoft Defender per endpoint
+#### <a name="microsoft-defender-for-endpoint"></a>Microsoft Defender ATP
 
 |Tipo|Proprietà|Valore|Azione|
 |---|---|---|---|

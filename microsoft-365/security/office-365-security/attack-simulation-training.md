@@ -11,12 +11,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 description: Informazioni su come simulare attacchi di phishing e addestrare gli utenti alla prevenzione del phishing con la formazione di simulazione di attacco in Microsoft Defender per Office 365.
-ms.openlocfilehash: b9b8a431fc28942f5e11bc7ce2e805ca082cf36b
-ms.sourcegitcommit: dab50e1cc5bba920720b80033c93457f5ca1c330
+ms.openlocfilehash: 8f5f457f60c81fe961282f33bb8c37f4d9e27aab
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "48944501"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49616105"
 ---
 # <a name="simulate-a-phishing-attack"></a>Simulare un attacco di phishing
 
@@ -58,8 +58,8 @@ I payload dispongono di una serie di punti dati che consentono di scegliere:
 - **Fare clic su rate** count quante persone hanno fatto clic su questo payload.
 - Il **tasso di compromesso previsto** prevede la percentuale di persone che verranno compromesse da questo payload in base ai dati cronologici per questo payload su Microsoft Defender per i clienti di Office 365.
 - **Simulazioni avviate** calcola il numero di volte in cui questo payload è stato utilizzato in altre simulazioni.
-- La **complessità** , disponibile tramite **filtri** , viene calcolata in base al numero di indicatori all'interno del payload a cui sono assegnati indizi su un attacco. Altri indicatori conducono a una complessità inferiore.
-- L' **origine** , disponibile tramite **filtri** , indica se il payload è stato creato nel tenant o è parte del catalogo di payload preesistente di Microsoft (globale).
+- La **complessità**, disponibile tramite **filtri**, viene calcolata in base al numero di indicatori all'interno del payload a cui sono assegnati indizi su un attacco. Altri indicatori conducono a una complessità inferiore.
+- L' **origine**, disponibile tramite **filtri**, indica se il payload è stato creato nel tenant o è parte del catalogo di payload preesistente di Microsoft (globale).
 
 ![Payload selezionato all'interno della formazione sulla simulazione di attacco in Microsoft 365 Security Center](../../media/attack-sim-preview-select-payload.png)
 
@@ -69,11 +69,11 @@ Se si desidera creare un payload personalizzato, leggere [creare un payload per 
 
 ## <a name="audience-targeting"></a>Gruppi di destinatari
 
-Ora è il momento di selezionare il gruppo di destinatari della simulazione. È possibile scegliere di **includere tutti gli utenti nell'organizzazione** o **includere solo utenti e gruppi specifici**. 
+Ora è il momento di selezionare il gruppo di destinatari della simulazione. È possibile scegliere di **includere tutti gli utenti nell'organizzazione** o **includere solo utenti e gruppi specifici**.
 
 Quando si sceglie di **includere solo utenti e gruppi specifici,** è possibile eseguire le operazioni seguenti:
 
-- **Aggiungere gli utenti** , che consentono di sfruttare la ricerca del tenant, nonché le funzionalità di ricerca e filtraggio avanzate, come il targeting degli utenti che non sono stati presi di mira da una simulazione negli ultimi 3 mesi.
+- **Aggiungere gli utenti**, che consentono di sfruttare la ricerca del tenant, nonché le funzionalità di ricerca e filtraggio avanzate, come il targeting degli utenti che non sono stati presi di mira da una simulazione negli ultimi 3 mesi.
   ![Filtro degli utenti in formazione sulla simulazione di attacco su Microsoft 365 Security Center](../../media/attack-sim-preview-user-targeting.png)
 - L' **importazione da CSV** consente di importare un insieme predefinito di utenti per questa simulazione.
 
@@ -94,7 +94,7 @@ Nei passaggi successivi è necessario **aggiungere corsi di formazione** se si �
 
 ## <a name="launch-details-and-review"></a>Dettagli di avvio e Revisione
 
-Ora che tutto è configurato, è possibile avviare questa simulazione immediatamente o pianificarla per una data successiva. Sarà inoltre necessario scegliere quando terminare la simulazione. L'interazione con questa simulazione verrà interrotta dopo l'intervallo di tempo selezionato. 
+Ora che tutto è configurato, è possibile avviare questa simulazione immediatamente o pianificarla per una data successiva. Sarà inoltre necessario scegliere quando terminare la simulazione. L'interazione con questa simulazione verrà interrotta dopo l'intervallo di tempo selezionato.
 
 **Abilitare il recapito di TimeZone** a livello di area per fornire messaggi di attacco simulati ai dipendenti durante le ore lavorative in base alla propria area geografica.
 

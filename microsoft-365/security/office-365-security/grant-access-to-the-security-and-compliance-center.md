@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 2cfce2c8-20c5-47f9-afc4-24b059c1bd76
 description: Gli utenti devono disporre delle autorizzazioni nel centro conformità di sicurezza & Microsoft 365 prima di poter gestire qualsiasi funzionalità di sicurezza o conformità.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 5d586684d44545f7aea94c30f5474b1fe5fa4651
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 1bf8da85a0e090a9d74934ea5084f547d6a8794f
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48202808"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49616609"
 ---
 # <a name="give-users-access-to-the-security--compliance-center"></a>Concedere agli utenti l'accesso al Centro sicurezza e conformità
 
@@ -51,9 +51,9 @@ Per ulteriori informazioni sulle diverse autorizzazioni che è possibile assegna
 
 2. Nell'elenco dei gruppi di ruoli, scegliere il gruppo di ruoli, quindi fare clic su **modifica** ![ icona modifica ](../../media/O365-MDM-CreatePolicy-EditIcon.gif) .
 
-3. Nella pagina delle proprietà del gruppo di ruoli in **membri**fare clic su **Aggiungi** ![ icona ](../../media/ITPro-EAC-AddIcon.gif) e selezionare il nome dell'utente (o degli utenti) che si desidera aggiungere.
+3. Nella pagina delle proprietà del gruppo di ruoli in **membri** fare clic su **Aggiungi** ![ icona ](../../media/ITPro-EAC-AddIcon.gif) e selezionare il nome dell'utente (o degli utenti) che si desidera aggiungere.
 
-4. Dopo aver selezionato tutti gli utenti che si desidera aggiungere al gruppo di ruoli, fare clic su **Aggiungi \> ** e quindi su **OK**.
+4. Dopo aver selezionato tutti gli utenti che si desidera aggiungere al gruppo di ruoli, fare clic su **Aggiungi \>** e quindi su **OK**.
 
 5. Al termine, scegliere **Salva**.
 
@@ -81,7 +81,7 @@ Per informazioni dettagliate sulla sintassi e sui parametri, vedere [Add-RoleGro
 
 Per verificare di aver correttamente concesso l'accesso al centro sicurezza & Compliance, eseguire una delle operazioni seguenti:
 
-- Nel centro sicurezza & conformità, accedere a **autorizzazioni** e selezionare il gruppo di ruoli. Nel riquadro a comparsa dettagli che si apre, verificare i membri del gruppo di ruoli. 
+- Nel centro sicurezza & conformità, accedere a **autorizzazioni** e selezionare il gruppo di ruoli. Nel riquadro a comparsa dettagli che si apre, verificare i membri del gruppo di ruoli.
 
 - In PowerShell Centro sicurezza & conformità, sostituire \<RoleGroupName\> con il nome del gruppo di ruolo ed eseguire il comando seguente:
 

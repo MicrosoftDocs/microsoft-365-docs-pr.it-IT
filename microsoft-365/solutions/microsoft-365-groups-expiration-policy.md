@@ -16,12 +16,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Informazioni sui criteri di scadenza dei gruppi di Microsoft 365.
-ms.openlocfilehash: 4b283bcc9f4e54462a71b9aee70d6312b9f127d6
-ms.sourcegitcommit: 5480982967a90ca3060a59676a6b29155f2de861
+ms.openlocfilehash: d55cc7fff939cb07ae2eba92de411e8f0d088885
+ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49350713"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49613655"
 ---
 # <a name="microsoft-365-group-expiration-policy"></a>Criteri di scadenza del gruppo Microsoft 365
 
@@ -55,7 +55,7 @@ I gruppi che sono attivamente in uso vengono rinnovati automaticamente. Una dell
 
 ## <a name="how-to-set-the-expiration-policy"></a>Informazioni su come impostare i criteri di scadenza
 
-Come indicato in alto, la scadenza è disattivata per impostazione predefinita. Un amministratore dovrà abilitare i criteri di scadenza e impostare le proprietà per rendere effettive le stesse. Per abilitarlo, passare a scadenza gruppi di **Azure Active Directory**  >  **Groups**  >  **Expiration**. In questa sezione è possibile impostare la durata predefinita del gruppo e specificare quanto in anticipo si desidera che la prima e la seconda notifica di scadenza vadano al proprietario del gruppo.
+Come indicato in alto, la scadenza è disattivata per impostazione predefinita. Un amministratore dovrà abilitare i criteri di scadenza e impostare le proprietà per rendere effettive le stesse. Per abilitarlo, passare a scadenza gruppi di **Azure Active Directory**  >    >  . In questa sezione è possibile impostare la durata predefinita del gruppo e specificare quanto in anticipo si desidera che la prima e la seconda notifica di scadenza vadano al proprietario del gruppo.
 
 La durata del gruppo è specificata in giorni e può essere impostata su 180, 365 o su un valore personalizzato specificato. Il valore personalizzato deve essere di almeno 30 giorni.
 
@@ -81,7 +81,11 @@ Se per qualche motivo nessuno dei proprietari o degli amministratori rinnova il 
 
 Se si dispone di un gruppo che non si intende più utilizzare, ma si desidera conservarne il contenuto, vedere [gruppi di archiviazione, teams e Yammer](end-life-cycle-groups-teams-sites-yammer.md) per informazioni su come esportare informazioni dai diversi servizi di gruppi.
 
-## <a name="related-articles"></a>Articoli correlati
+## <a name="related-topics"></a>Argomenti correlati
+
+[Pianificazione della governance della collaborazione](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
+
+[Creare il piano di governance di collaborazione](collaboration-governance-first.md)
 
 [Panoramica dei criteri di conservazione](https://support.office.com/article/5e377752-700d-4870-9b6d-12bfc12d2423)
 

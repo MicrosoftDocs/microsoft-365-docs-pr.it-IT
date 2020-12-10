@@ -15,12 +15,12 @@ ms.custom:
 - M365solutions
 f1.keywords: NOCSH
 description: Opzioni di Lean sulla governance del ciclo di vita per gli strumenti di collaborazione in Microsoft 365
-ms.openlocfilehash: 706f1aaecf22c4088d4539c208fef68320c5e710
-ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
+ms.openlocfilehash: 4d779701d241fc7178ab759063be1b8cdf2e960c
+ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48377188"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49613021"
 ---
 # <a name="plan-organization-and-lifecycle-governance-for-microsoft-365-groups-and-microsoft-teams"></a>Pianificare la governance dell'organizzazione e del ciclo di vita per gruppi Microsoft 365 e Microsoft Teams
 
@@ -74,3 +74,9 @@ Dopo aver impostato i gruppi in modo che scadano:
 - Qualsiasi gruppo eliminato può essere ripristinato entro 30 giorni dai proprietari del gruppo o dall'amministratore.
 
 I criteri di scadenza rappresentano un ottimo metodo per limitare l'espansione del gruppo, garantendo che i gruppi che non sono più in uso vengano eliminati. Se si desidera creare un criterio di scadenza del gruppo, vedere [criteri di scadenza del gruppo Microsoft 365](microsoft-365-groups-expiration-policy.md).
+
+## <a name="related-topics"></a>Argomenti correlati
+
+[Pianificazione della governance della collaborazione](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
+
+[Creare il piano di governance di collaborazione](collaboration-governance-first.md)

@@ -2,7 +2,7 @@
 title: Creare una Extranet B2B con guest gestiti.
 ms.author: mikeplum
 author: MikePlumleyMSFT
-manager: pamgreen
+manager: serdars
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -15,19 +15,19 @@ ms.collection:
 ms.custom: ''
 localization_priority: Normal
 f1.keywords: NOCSH
-description: Informazioni su come creare un sito Extranet o un team B2B con gli utenti Guest gestiti provenienti da un'organizzazione partner.
-ms.openlocfilehash: b052598f86072776f69e538c70a6bd56d79c3f81
-ms.sourcegitcommit: 8a726ed7ec19a8728c079780fa4d343a5f759fbb
+description: Informazioni su come creare un sito Extranet o un team B2B con clienti gestiti provenienti da un'organizzazione partner.
+ms.openlocfilehash: cfb7cc4310cb83f9ce7761c95f021724b7d75faf
+ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "49030054"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49613597"
 ---
 # <a name="create-a-b2b-extranet-with-managed-guests"></a>Creare una Extranet B2B con guest gestiti.
 
 È possibile utilizzare la [gestione dei diritti di Azure Active Directory](https://docs.microsoft.com/azure/active-directory/governance/entitlement-management-overview) per creare una rete Extranet B2B per collaborare con un'organizzazione partner che utilizza Azure Active Directory. Questo consente agli utenti di eseguire la registrazione automatica nel sito o nel team Extranet e di ricevere l'accesso tramite un flusso di lavoro di approvazione.
 
-Con questo metodo di condivisione delle risorse per la collaborazione, l'organizzazione partner può contribuire a mantenere e approvare gli utenti guest alla fine, riducendo l'onere per il reparto IT e consentendo a coloro che hanno familiarità con il contratto di collaborazione di gestire l'accesso degli utenti.
+Con questo metodo di condivisione delle risorse per la collaborazione, l'organizzazione partner può contribuire a mantenere e approvare gli ospiti alla fine, riducendo l'onere per il reparto IT e consentendo ai più familiari del contratto di collaborazione di gestire l'accesso degli utenti.
 
 In questo articolo vengono illustrati i passaggi per creare un pacchetto di risorse (in questo caso, un sito o un team) che è possibile condividere con un'organizzazione partner tramite un modello di registrazione di accesso self-service. 
 
@@ -57,7 +57,7 @@ Per aggiungere un'organizzazione connessa
 6. Fare clic su **Aggiungi directory + dominio**.
 7. Digitare il dominio per l'organizzazione che si desidera connettere e quindi fare clic su **Aggiungi**.
 8. Fare clic su **Connetti** e quindi su **Avanti: sponsor**.
-9. Aggiungere persone dall'organizzazione o dall'organizzazione a cui si sta effettuando la connessione a chi si desidera approvare l'accesso per gli utenti guest.
+9. Aggiungere persone dall'organizzazione o dall'organizzazione a cui si sta effettuando la connessione per gli utenti a cui si desidera approvare l'accesso.
 10. Fare clic su **Avanti: recensione + crea**.
 11. Esaminare le impostazioni selezionate e quindi fare clic su **Crea**.
 
@@ -88,19 +88,19 @@ Per aggiungere risorse a un catalogo
 Dopo aver definito le risorse che si desidera condividere, il passaggio successivo consiste nel creare un pacchetto di Access, che definisce il tipo di accesso che gli utenti partner sono concessi e il processo di approvazione per i nuovi utenti partner che richiedono l'accesso.
 
 Per creare un pacchetto di Access
-1. In Azure AD Identity governance, fare clic su **cataloghi** , quindi fare clic sul catalogo in cui si desidera creare un pacchetto di accesso.
+1. In Azure AD Identity governance, fare clic su **cataloghi**, quindi fare clic sul catalogo in cui si desidera creare un pacchetto di accesso.
 2. Fare clic su **Access** Packages, quindi fare clic su **nuovo pacchetto di accesso**.
 3. Digitare un nome e una descrizione per il pacchetto di accesso e quindi fare clic su **Avanti: ruoli risorse**.
 4. Scegliere le risorse del catalogo che si desidera utilizzare per l'Extranet.
-5. Per ogni risorsa, nella colonna **ruolo** scegliere il ruolo utente che si desidera concedere agli utenti guest che utilizzano la rete Extranet.
+5. Per ogni risorsa, nella colonna **ruolo** scegliere il ruolo utente che si desidera concedere agli utenti che utilizzano la rete Extranet.
 6. Fare clic su **Avanti: richieste**.
-7. In **utenti che possono richiedere l'accesso** , scegliere **per gli utenti non presenti nella directory**.
+7. In **utenti che possono richiedere l'accesso**, scegliere **per gli utenti non presenti nella directory**.
 8. Verificare che l'opzione **specifiche organizzazioni connesse** sia selezionata e quindi fare clic su **Aggiungi directory**.
 9. Scegliere l'organizzazione connessa aggiunta in precedenza e quindi fare clic su **Seleziona**
-10. In **approvazione** , scegliere **Sì** per **richiedere l'approvazione**.
+10. In **approvazione**, scegliere **Sì** per **richiedere l'approvazione**.
 11. In **primo responsabile approvazione** scegliere uno dei garanti aggiunti in precedenza o scegliere un utente specifico.
 12. Fare clic su **Aggiungi fallback** e selezionare un responsabile approvazione fallback.
-13. In **attiva** , scegliere **Sì**.
+13. In **attiva**, scegliere **Sì**.
 14. Fare clic su **Avanti: ciclo** di vita.
 15. Scegliere le impostazioni di scadenza e revisione di Access che si desidera utilizzare e quindi fare clic su **Avanti: recensione + crea**.
 16. Esaminare le impostazioni, quindi fare clic su **Crea**.
@@ -112,7 +112,7 @@ Se si è in partnership con un'organizzazione di grandi dimensioni, è possibile
 Per impostare un pacchetto di accesso su nascosto
 1. In Azure AD Identity governance, fare clic su **Access** Packages, quindi fare clic sul pacchetto di accesso.
 2. Nella pagina **Panoramica** fare clic su **modifica**.
-3. In **Proprietà** , scegliere **Sì** per **nascosto** , quindi fare clic su **Salva**.
+3. In **Proprietà**, scegliere **Sì** per **nascosto**, quindi fare clic su **Salva**.
 
    ![Schermata di una finestra di modifica delle proprietà di un pacchetto di Access](../media/identity-governance-access-package-hidden.png)
 

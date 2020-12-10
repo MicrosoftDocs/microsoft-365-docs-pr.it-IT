@@ -15,12 +15,12 @@ ms.custom:
 - M365solutions
 f1.keywords: NOCSH
 description: Interazioni dei servizi di gruppo
-ms.openlocfilehash: 235a897314a784ba3bb1ac50fe8bdfe9986a70d3
-ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
+ms.openlocfilehash: 6d5681b11cdbd837f784b6c8364cce23f964b167
+ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48377630"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49613227"
 ---
 # <a name="groups-services-interactions"></a>Interazioni dei servizi di gruppo
 
@@ -639,4 +639,10 @@ No, il gruppo Yammer può essere sempre associato al gruppo Microsoft 365 a cui 
 **Eliminazione del gruppo Yammer eliminare il gruppo Microsoft 365?**
 
 Sì, l'eliminazione del gruppo in Yammer eliminerà i contenuti e i servizi associati a un gruppo e il relativo contenuto.
+
+## <a name="related-topics"></a>Argomenti correlati
+
+[Pianificazione della governance della collaborazione](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
+
+[Creare il piano di governance di collaborazione](collaboration-governance-first.md)
 

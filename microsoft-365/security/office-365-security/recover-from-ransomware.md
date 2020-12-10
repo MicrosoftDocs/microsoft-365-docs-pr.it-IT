@@ -14,12 +14,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 description: Gli amministratori di Microsoft 365 possono ottenere informazioni su come eseguire il ripristino da un attacco ransomware.
-ms.openlocfilehash: a1369e64821902e3c2a3061acd1bbebeeb6c85ac
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.openlocfilehash: ad3f044e338abeb56046538bdda8df7b8510be0e
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49357098"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49615901"
 ---
 # <a name="recover-from-a-ransomware-attack-in-microsoft-365"></a>Eseguire il ripristino da un attacco ransomware in Microsoft 365
 
@@ -88,7 +88,7 @@ Il ripristino dei file in OneDrive for business consente di ripristinare l'inter
 
 ## <a name="step-6-recover-deleted-email"></a>Passaggio 6: recuperare il messaggio di posta elettronica eliminato
 
-Nel caso raro che il ransomware ha eliminato tutti i messaggi di posta elettronica, è probabile che gli elementi eliminati possano essere recuperati. Per ulteriori informazioni, vedere:
+Nel caso raro che il ransomware ha eliminato tutti i messaggi di posta elettronica, è probabile che gli elementi eliminati possano essere recuperati. Per altre informazioni, vedere:
 
 - [Recupero dei messaggi eliminati nella cassetta postale di un utente](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-user-mailboxes/recover-deleted-messages)
 

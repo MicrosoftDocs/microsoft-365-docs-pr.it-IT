@@ -14,12 +14,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.date: 02/25/2020
 description: Informazioni su come velocizzare il processo di rilevamento e indirizzamento degli account utente compromessi con le funzionalità di analisi e risposta automatizzate in Microsoft Defender per Office 365 piano 2.
-ms.openlocfilehash: 80e4529f864d83d2a1711007f0f095de39955e68
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.openlocfilehash: 19c9bad33263178f92c6fe523b44497cf38ebd53
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49357912"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49616738"
 ---
 # <a name="address-compromised-user-accounts-with-automated-investigation-and-response"></a>Indirizzare gli account utente compromessi con indagini e risposte automatiche
 
@@ -63,11 +63,11 @@ Quando un account utente viene compromesso, vengono attivati gli avvisi. In alcu
 
 ### <a name="view-and-investigate-restricted-users"></a>Visualizzazione e analisi degli utenti con restrizioni
 
-Sono disponibili alcune opzioni per l'esplorazione di un elenco di utenti con restrizioni. Ad esempio, nel centro sicurezza & conformità, è possibile accedere a utenti con restrizioni di verifica di **gestione delle minacce**  >  **Review**  >  **Restricted Users**. Nella procedura seguente viene descritta la struttura di spostamento tramite il dashboard **avvisi** , che consente di visualizzare diversi tipi di avvisi che potrebbero essere stati attivati.
+Sono disponibili alcune opzioni per l'esplorazione di un elenco di utenti con restrizioni. Ad esempio, nel centro sicurezza & conformità, è possibile accedere a utenti con restrizioni di verifica di **gestione delle minacce** \>  \> . Nella procedura seguente viene descritta la struttura di spostamento tramite il dashboard **avvisi** , che consente di visualizzare diversi tipi di avvisi che potrebbero essere stati attivati.
 
-1. Andare su [https://protection.office.com](https://protection.office.com) ed eseguire l'accesso.
+1. Andare su <https://protection.office.com> ed eseguire l'accesso.
 
-2. Nel riquadro di spostamento, scegliere **Alerts**  >  **Dashboard** avvisi.
+2. Nel riquadro di spostamento, scegliere  \> **Dashboard** avvisi.
 
 3. Nell' **altro widget avvisi** scegliere utenti con **restrizioni**.
 
@@ -81,7 +81,7 @@ Sono disponibili alcune opzioni per l'esplorazione di un elenco di utenti con re
 
 ### <a name="view-details-about-automated-investigations"></a>Visualizzare i dettagli sulle indagini automatizzate
 
-Dopo aver avviato un'indagine automatizzata, è possibile visualizzare i dettagli e i risultati nel centro sicurezza & conformità. Andare a indagini sulla **gestione delle minacce**  >  **Investigations** e quindi selezionare un'analisi per visualizzarne i dettagli.
+Dopo aver avviato un'indagine automatizzata, è possibile visualizzare i dettagli e i risultati nel centro sicurezza & conformità. Andare a indagini sulla **gestione delle minacce** \> e quindi selezionare un'analisi per visualizzarne i dettagli.
 
 Per ulteriori informazioni, vedere [visualizzare i dettagli di un'indagine](air-view-investigation-results.md).
 

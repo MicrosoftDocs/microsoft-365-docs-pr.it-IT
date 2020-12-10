@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Gli amministratori possono ottenere informazioni su come applicare le impostazioni dei criteri standard e rigorosi nelle caratteristiche di protezione di Exchange Online Protection (EOP) e Microsoft Defender per Office 365
-ms.openlocfilehash: e968f7ea768ac8a0b402c28f3830a52b44afa342
-ms.sourcegitcommit: d81c7cea85af6ad5fef81d3c930514a51464368c
+ms.openlocfilehash: fb613916ec375214b33b8b842c6817561920715d
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "49572778"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49616045"
 ---
 # <a name="preset-security-policies-in-eop-and-microsoft-defender-for-office-365"></a>Criteri di sicurezza preimpostati in EOP e Microsoft Defender per Office 365
 
@@ -62,7 +62,7 @@ Le condizioni e le eccezioni disponibili sono le seguenti:
 I criteri di sicurezza preimpostati utilizzano i criteri corrispondenti delle diverse funzionalità di protezione di EOP e Microsoft Defender per Office 365. Questi criteri sono stati creati _dopo aver_ assegnato gli utenti ai criteri di protezione **standard** o **rigorosi** di protezione preimpostati. Non è possibile modificare questi criteri.
 
 - **Criteri di Exchange Online Protection (EOP)**: sono incluse le organizzazioni Microsoft 365 con le cassette postali di Exchange Online e le organizzazioni EOP autonome senza cassette postali di Exchange Online:
-  
+
   - Criteri di protezione da [posta indesiderata](configure-your-spam-filter-policies.md) denominati criteri di **sicurezza predefiniti standard** e **criteri di sicurezza preimpostati**
   - Criteri [anti-malware](configure-anti-malware-policies.md) denominati **criteri di sicurezza predefiniti standard** e **criteri di sicurezza preimpostati rigorosi**.
   - Criteri di protezione [anti-phishing](set-up-anti-phishing-policies.md#spoof-settings) denominati criteri di **sicurezza predefiniti standard** e **criteri di sicurezza preimpostati** (impostazioni spoofing) di EOP.
@@ -100,7 +100,7 @@ In altre parole, le impostazioni dei criteri di **protezione rigorosi** sovrascr
 
 ### <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare
 
-- Aprire il Centro sicurezza e conformità in <https://protection.office.com/>. Per passare direttamente alla pagina **criteri di sicurezza preimpostati** , utilizzare <https://protection.office.com/presetSecurityPolicies> .
+- Aprire il Centro sicurezza e conformità in<https://protection.office.com/>. Per passare direttamente alla pagina **criteri di sicurezza preimpostati** , utilizzare <https://protection.office.com/presetSecurityPolicies> .
 
 - Per informazioni su come connettersi a PowerShell per Exchange Online, vedere [Connettersi a PowerShell per Exchange Online](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
 
@@ -112,7 +112,7 @@ In altre parole, le impostazioni dei criteri di **protezione rigorosi** sovrascr
 
 ### <a name="use-the-security--compliance-center-to-assign-preset-security-policies-to-users"></a>Utilizzare il Centro sicurezza & conformità per assegnare criteri di sicurezza preimpostati agli utenti
 
-1. Nel centro sicurezza & conformità, accedere a criteri **Threat management** di \> **Policy** \> **protezione preimpostati** per i criteri di gestione delle minacce.
+1. Nel centro sicurezza & conformità, accedere a criteri  di \>  \> **protezione preimpostati** per i criteri di gestione delle minacce.
 
 2. In **protezione standard** o **protezione rigorosa** fare clic su **modifica**.
 

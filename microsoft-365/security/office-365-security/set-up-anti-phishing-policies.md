@@ -16,12 +16,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Gli amministratori possono ottenere informazioni sui criteri di anti-phishing disponibili in Exchange Online Protection (EOP) e Microsoft Defender per Office 365.
-ms.openlocfilehash: 839d76c1e07b457f671f1f0eccd0a9160e4039a3
-ms.sourcegitcommit: 7e003ee0a06f61bfb9f80441c3479fa3148afafe
+ms.openlocfilehash: 9d3c8c0bf2b1c440892a1099d3d0812d95027156
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49568583"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49615769"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Criteri di anti-phishing in Microsoft 365
 
@@ -129,7 +129,6 @@ Per impedire l'aggiunta del punto interrogativo o tramite tag ai messaggi proven
 - Consentire al mittente di eseguire la falsificazione dei criteri di intelligence spoof. Questa azione impedirà che il tag via venga visualizzato nei messaggi provenienti dal mittente quando l'identificazione dei mittenti non autenticati è disabilitata. Per istruzioni, vedere [Configure Spoofing Intelligence in Microsoft 365](learn-about-spoof-intelligence.md).
 
 - [Configurare l'autenticazione della posta elettronica](email-validation-and-authentication.md#configure-email-authentication-for-domains-you-own) per il dominio del mittente.
-  
   - Per il punto interrogativo nella foto del mittente, SPF o DKIM sono i più importanti.
   - Per il tag via, confermare il dominio nella firma di DKIM o l'indirizzo di **posta elettronica da** corrispondenze (o è un sottodominio di) il dominio nell'indirizzo mittente.
 

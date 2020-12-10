@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 08c5307c-4a6b-4761-8410-a6c96725760f
 description: "Informazioni su come l'analisi dell'utilizzo si connette a un'API e fornisce un andamento mensile dell'utilizzo di vari servizi di Microsoft 365.  "
-ms.openlocfilehash: 9d13d979e64a68aaffb3582ad6b09ab901843cd4
-ms.sourcegitcommit: e56894917d2aae05705c3b9447388d10e2156183
+ms.openlocfilehash: d7b3e7e9467a57f913f069c48249e82b5958aabb
+ms.sourcegitcommit: 039205fdaaa2a233ff7e95cd91bace474b84b68c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48841376"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49611449"
 ---
 # <a name="microsoft-365-usage-analytics-data-model"></a>Modello di dati nell'analisi dell'utilizzo di Microsoft 365
 
@@ -153,7 +153,7 @@ In questa tabella sono disponibili i dati di adozione mensile in termini di abil
 |Product  <br/> |Nomi dei prodotti per cui vengono riepilogate le informazioni sull'utilizzo. Il valore Microsoft 365 nella colonna Product rappresenta l'attività in uno qualsiasi dei prodotti  <br/> |
 |Timeframe  <br/> |Valore del mese. Ci sarà una riga per ogni prodotto al mese per gli ultimi 12 mesi tra cui il mese corrente parziale.  <br/> |
 |EnabledUsers  <br/> |Il numero di utenti abilitati all'utilizzo del prodotto per il valore del periodo di tempo, se un utente è stato abilitato per la parte del mese, viene comunque conteggiato.  <br/> |
-|ActiveUsers  <br/> |Il numero di utenti che hanno eseguito un'attività intenzionale nel prodotto per il valore del periodo di tempo.  <br/> Un utente viene considerato attivo per un prodotto per un determinato mese se ha eseguito una delle attività principali nel prodotto. Le attività chiave sono disponibili nella tabella **Tenant Product Activity** .  <br/> |
+|ActiveUsers  <br/> |Il numero di utenti che hanno eseguito un'attività intenzionale nel prodotto per il valore del periodo di tempo.  <br/> Un utente viene considerato attivo per un prodotto per un determinato mese se ha eseguito una delle attività principali nel prodotto. Le attività chiave sono disponibili nella tabella **Tenant Product Activity**.  <br/> |
 |CumulativeActiveUsers  <br/> |Numero di utenti che sono abilitati a usare un prodotto e lo hanno usato fino al mese dell'intervallo di tempo almeno una volta dopo l'inizio della raccolta dei dati nel nuovo sistema di gestione.  <br/> |
 |MoMReturningUsers  <br/> |Numero di utenti che sono attivi nel mese dell'intervallo di tempo e lo erano anche nel mese precedente.  <br/> |
 |FirstTimeUsers  <br/> |Numero di utenti che sono attivi nel mese dell'intervallo di tempo e che lo erano anche nel mese precedente.  <br/> Un utente viene considerato come nuovo utente in un determinato mese, se la sua attività viene rilevata per la prima volta dall'inizio della raccolta dei dati in questo nuovo sistema di registrazione. Una volta contato come utente per la prima volta, anche se l'utente ha un divario di grandi dimensioni nella loro attività non verrà mai conteggiato di nuovo come utente per la prima volta.  <br/> |
@@ -215,8 +215,8 @@ Questa tabella contiene i dati di riepilogo mensili relativi all'utilizzo o alle
 |DocumentCount  <br/> |Numero totale di documenti presenti nel sito alla fine dell'intervallo di tempo.  <br/> |
 |Diplaned  <br/> |Somma dello spazio di archiviazione totale in tutti i siti alla fine dell'intervallo di tempo.  <br/> |
 |ActivityType  <br/> |Numero di siti che registrano i vari tipi di attività sui file (qualsiasi/file attivi/file condivisi esternamente/file condivisi internamente/file sincronizzati).  <br/> Rappresenta una qualsiasi attività di file eseguita.  <br/> |
-|SitesWithOwnerActivities  <br/> |Numero dei siti attivi, in cui il proprietario del sito ha eseguito una specifica attività sui file dei propri siti.  <br/> |
-|SitesWithNonOwnerActivities  <br/> |Somma dei siti attivi per il mese specificato, in cui gli utenti non proprietari del sito hanno eseguito una specifica attività sui file dei siti.  <br/> |
+|SitesWithOwnerActivities  <br/> |Numero dei siti attivi, in cui il proprietario del sito ha eseguito una specifica attività sui file dei propri siti. È possibile ottenere il proprietario del sito dal comando di PowerShell **Get-SPOSite**. Si tratta della persona responsabile del sito.   <br/> |
+|SitesWithNonOwnerActivities  <br/> |Somma dei siti attivi per il mese specificato, in cui gli utenti non proprietari del sito hanno eseguito una specifica attività sui file dei siti. È possibile ottenere il proprietario del sito dal comando di PowerShell **Get-SPOSite**. Si tratta della persona responsabile del sito. <br/> |
 |ActivityTotalSites  <br/> |Numero di siti che hanno registrato attività durante l'intervallo di tempo. Se un sito ha registrato attività all'inizio dell'intervallo di tempo ed è poi stato eliminato prima della sua fine, verrà comunque conteggiato nel totale dei siti attivi per tale intervallo di tempo.  <br/> |
 |Timeframe  <br/> |Questa colonna contiene il valore di data. Usato come relazione Molti-a-uno per la tabella Calendar.  <br/> |
 |Content Date  <br/> |Se l'intervallo di tempo mostra il mese corrente, questo valore rappresenterà l'ultima data del mese corrente per cui i dati sono disponibili.  <br/> Se l'intervallo di tempo mostra il mese precedente, questo valore rappresenterà l'ultima data del mese dell'intervallo di tempo.  <br/> |

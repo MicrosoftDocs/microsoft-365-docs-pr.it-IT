@@ -11,12 +11,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 description: Informazioni su come l'allenamento di simulazione degli attacchi in Microsoft 365 Security Center influisce sui dipendenti e acquisisce informazioni sui risultati di simulazione e formazione.
-ms.openlocfilehash: 6a8ee15f14475a1cebb169ab49bdb0f490c81345
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.openlocfilehash: 772815add47d2e0a61187f2d687ff047a4de9c31
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49357352"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49615181"
 ---
 # <a name="gain-insights-through-attack-simulation-training"></a>Acquisire informazioni approfondite attraverso la formazione del Simulatore di attacchi
 

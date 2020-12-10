@@ -15,12 +15,12 @@ ms.custom:
 - M365solutions
 f1.keywords: NOCSH
 description: Informazioni sulle opzioni di conformità per i gruppi di Microsoft 365, i team e la collaborazione di SharePoint.
-ms.openlocfilehash: 0383b0728d9b8ea12ce75de8bf0e250932d14ae5
-ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
+ms.openlocfilehash: e1ca6e638b2d44ae3b04e2a0f13222424e89714d
+ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48377534"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49613631"
 ---
 # <a name="compliance-options-for-microsoft-365-groups-teams-and-sharepoint-collaboration"></a>Opzioni di conformità per i gruppi di Microsoft 365, i team e la collaborazione di SharePoint
 
@@ -113,8 +113,10 @@ Con barriere informative, è possibile suddividere i dati e gli utenti per limit
 
 ## <a name="related-topics"></a>Argomenti correlati
 
+[Pianificazione della governance della collaborazione](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
+
+[Creare il piano di governance di collaborazione](collaboration-governance-first.md)
+
 [Sicurezza e conformità per Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/security-and-compliance)
 
 [Proteggere le informazioni](https://docs.microsoft.com/microsoft-365/compliance/protect-information)
-
-

@@ -2,7 +2,7 @@
 title: Proteggere la collaborazione con Microsoft 365
 ms.author: mikeplum
 author: MikePlumleyMSFT
-manager: pamgreen
+manager: serdars
 ms.audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -16,12 +16,12 @@ ms.custom:
 - seo-marvel-jun2020
 f1.keywords: NOCSH
 description: Informazioni su come configurare la collaborazione per il contenuto sicuro in teams per proteggere i dati in base alla sua sensibilità.
-ms.openlocfilehash: 4f2e157025f00660e77ba3377221368e37e45445
-ms.sourcegitcommit: 1beaf89d2faa32f11fe1613be2fa2b31c4bc4a91
+ms.openlocfilehash: f65657125fef8b8cf7e4e229d70d8fe211153392
+ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "49602074"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49613585"
 ---
 # <a name="set-up-secure-collaboration-with-microsoft-365"></a>Proteggere la collaborazione con Microsoft 365
 

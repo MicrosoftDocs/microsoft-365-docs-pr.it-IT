@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Gli amministratori possono imparare a visualizzare e gestire i messaggi in quarantena per tutti gli utenti in Exchange Online Protection (EOP). Gli amministratori nelle organizzazioni con Microsoft Defender per Office 365 possono anche gestire i file in quarantena in SharePoint Online, OneDrive for business e Microsoft teams.
-ms.openlocfilehash: fed05ee202e4352200a80516e0ec1b62c8421178
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.openlocfilehash: 8f4ca5caef9bf244315db2271011126ad4d7976e
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49357134"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49616777"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-admin-in-eop"></a>Gestire i messaggi e i file messi in quarantena come amministratore in EOP
 
@@ -99,11 +99,11 @@ Gli amministratori nelle organizzazioni con Microsoft Defender per Office 365 po
      - **Posta indesiderata**
      - **Phishing ad alta sicurezza**
 
-   - **Tipo di criteri**: filtrare i messaggi in base al tipo di criteri:
+   - **Tipo di criterio**: filtrare i messaggi in base al tipo di criterio:
      - **Criteri anti-malware**
      - **Criteri allegati sicuri**
      - **Criteri anti-phishing**
-     - **Criteri filtro contenuti ospitati** (criteri di protezione dalla posta indesiderata)
+     - **Criteri di filtro contenuto ospitati** (criteri di protezione da posta indesiderata)
      - **Regola di trasporto**
 
    - **Destinatario di posta elettronica**: tutti gli utenti o solo i messaggi inviati all'utente. Gli utenti finali possono gestire solo i messaggi in quarantena inviati.
@@ -118,12 +118,12 @@ Gli amministratori nelle organizzazioni con Microsoft Defender per Office 365 po
 
    - **Indirizzo di posta elettronica del mittente**: indirizzo di posta elettronica di un singolo mittente.
 
-   - **Nome dei criteri**: usare l'intero nome dei criteri del messaggio. Per la ricerca non viene fatta distinzione tra maiuscole e minuscole.
+   - **Nome criterio**: utilizzare l'intero nome dei criteri del messaggio. Per la ricerca non viene fatta distinzione tra maiuscole e minuscole.
 
    - **Indirizzo di posta elettronica del destinatario**: indirizzo di posta elettronica di un singolo destinatario.
 
    - **Oggetto**: utilizzare l'intero oggetto del messaggio. Per la ricerca non viene fatta distinzione tra maiuscole e minuscole.
-  
+
    - **Nome criterio**: il nome del criterio responsabile della messa in quarantena del messaggio.
 
    Dopo avere immesso i criteri di ricerca, fare clic sul ![pulsante Aggiorna](../../media/scc-quarantine-refresh.png) **Aggiorna** per filtrare i risultati.
@@ -165,7 +165,7 @@ Dopo aver selezionato un messaggio, sono disponibili diverse opzioni per le oper
   - Scegliere una delle opzioni seguenti:
     - **Rilasciare messaggi a tutti i destinatari**
     - **Rilasciare messaggi a destinatari specifici**
-    - **Rilasciare messaggi ad altre persone**: si noti che il rilascio di messaggi di malware a utenti diversi dai destinatari originali non è supportato. 
+    - **Rilasciare messaggi ad altre persone**: si noti che il rilascio di messaggi di malware a utenti diversi dai destinatari originali non è supportato.
 
   Al termine, fare clic su **Rilascia messaggio**.
 

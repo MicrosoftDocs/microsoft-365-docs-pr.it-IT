@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-m365-defender
 description: Gli amministratori possono visualizzare le domande frequenti e le risposte sui messaggi in quarantena in Exchange Online Protection (EOP).
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 0d21ae67295d0186546783fd56bb602742db0649
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: 9cf1281338de66f54a6c4546b047259d647cc3ea
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48430848"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49615997"
 ---
 # <a name="quarantined-messages-faq"></a>Domande frequenti sui messaggi in quarantena
 

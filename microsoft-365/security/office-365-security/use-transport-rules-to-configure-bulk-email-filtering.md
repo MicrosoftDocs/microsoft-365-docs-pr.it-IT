@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 description: Gli amministratori possono ottenere informazioni su come utilizzare le regole del flusso di posta (regole di trasporto) per identificare e filtrare la posta in blocco (Gray mail) in Exchange Online Protection (EOP).
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 82a93cdc7375468748f241e2d15d729811095330
-ms.sourcegitcommit: 153f413402f93b79be421741f3b9fed318d6d270
+ms.openlocfilehash: 1f88358973648846d650700bb5939c052851c789
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48600310"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49615637"
 ---
 # <a name="use-mail-flow-rules-to-filter-bulk-email-in-eop"></a>Usare le regole del flusso di posta per filtrare la posta inviata in blocco in Exchange Online Protection
 
@@ -39,7 +39,7 @@ In questo argomento viene illustrato come creare queste regole del flusso di pos
 - Prima di poter eseguire queste procedure, è necessario disporre delle autorizzazioni seguenti:
 
   - In Exchange Online, vedere la voce "flusso di posta" in [autorizzazioni funzionalità in Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/feature-permissions).
-  
+
   - In EOP autonomo, è necessario il ruolo regole di trasporto, assegnato ai ruoli OrganizationManagement, ComplianceManagement e RecordsManagement per impostazione predefinita. Per ulteriori informazioni, vedere [autorizzazioni in EOP autonomo](feature-permissions-in-eop.md) e [utilizzo dell'interfaccia di amministrazione di Exchange per modificare l'elenco dei membri nei gruppi di ruoli](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups).
 
 - Per aprire EAC in Exchange Online, vedere interfaccia [di amministrazione di Exchange in Exchange Online](https://docs.microsoft.com/Exchange/exchange-admin-center). Per aprire EAC in EOP autonomo, vedere interfaccia [di amministrazione di Exchange in EOP autonomo](exchange-admin-center-in-exchange-online-protection-eop.md).
@@ -149,7 +149,7 @@ Per informazioni dettagliate su sintassi e parametri, vedere [New-TransportRule]
 
 Per verificare di aver configurato le regole del flusso di posta per filtrare la posta elettronica in blocco, eseguire una delle operazioni seguenti:
 
-- Nell'interfaccia di amministrazione di Exchange, andare a regole del **flusso di posta** \> **Rules** \> selezionare la regola \> fare clic su **Modifica** ![ icona modifica ](../../media/ITPro-EAC-EditIcon.png) e verificare le impostazioni.
+- Nell'interfaccia di amministrazione di Exchange, andare a regole del **flusso di posta** \>  \> selezionare la regola \> fare clic su **Modifica** ![ icona modifica ](../../media/ITPro-EAC-EditIcon.png) e verificare le impostazioni.
 
 - In PowerShell, sostituire \<Rule Name\> con il nome della regola ed eseguire il comando riportato di seguito per verificare le impostazioni:
 

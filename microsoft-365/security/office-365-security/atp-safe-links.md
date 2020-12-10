@@ -26,12 +26,12 @@ search.appverid:
 - ZWD160
 ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: In questo articolo, gli amministratori possono ottenere informazioni sulla protezione dei collegamenti sicuri in Defender per Office 365 per proteggere la propria organizzazione dal phishing e da altri attacchi che utilizzano URL dannosi.
-ms.openlocfilehash: 869cb2f330b81481a2a0a013564853274654d0ef
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: f2a747b0776a16ac981158ab866f28699583a06b
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48846057"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49616321"
 ---
 # <a name="safe-links-in-microsoft-defender-for-office-365"></a>Collegamenti sicuri in Microsoft Defender per Office 365
 
@@ -44,7 +44,7 @@ Collegamenti sicuri è una funzionalità di [Defender per Office 365](office-365
 
 Protezione dei collegamenti sicuri è disponibile nei seguenti percorsi:
 
-- **Messaggi di posta elettronica** : la protezione dei collegamenti sicuri per i collegamenti nei messaggi di posta elettronica è controllata da criteri collegamenti sicuri. Non esiste alcun criterio di collegamenti sicuri predefinito, **in modo da ottenere la protezione dei collegamenti sicuri nei messaggi di posta elettronica, è necessario creare uno o più criteri collegamenti sicuri**. Per istruzioni, vedere [configurare i criteri per i collegamenti sicuri in Microsoft Defender per Office 365](set-up-atp-safe-links-policies.md).
+- **Messaggi di posta elettronica**: la protezione dei collegamenti sicuri per i collegamenti nei messaggi di posta elettronica è controllata da criteri collegamenti sicuri. Non esiste alcun criterio di collegamenti sicuri predefinito, **in modo da ottenere la protezione dei collegamenti sicuri nei messaggi di posta elettronica, è necessario creare uno o più criteri collegamenti sicuri**. Per istruzioni, vedere [configurare i criteri per i collegamenti sicuri in Microsoft Defender per Office 365](set-up-atp-safe-links-policies.md).
 
   Per ulteriori informazioni sulla protezione dei collegamenti sicuri per i messaggi di posta elettronica, vedere la sezione relativa alle [impostazioni dei collegamenti sicuri per i messaggi di posta elettronica](#safe-links-settings-for-email-messages) più avanti in questo articolo.
 
@@ -52,7 +52,7 @@ Protezione dei collegamenti sicuri è disponibile nei seguenti percorsi:
 
   Per ulteriori informazioni sulla protezione dei collegamenti sicuri nei team, vedere la sezione [impostazioni collegamenti sicuri per Microsoft teams](#safe-links-settings-for-microsoft-teams) più avanti in questo argomento.
 
-- **App di office 365** : la protezione dei collegamenti sicuri per le app di Office 365 è disponibile in APS desktop, mobili e Web supportati. È possibile **configurare** la protezione dei collegamenti sicuri per le app di Office 365 nell'impostazione globale **all'esterno** dei criteri collegamenti sicuri. Per istruzioni, vedere [configurare le impostazioni globali per le impostazioni dei collegamenti sicuri in Microsoft Defender per Office 365](configure-global-settings-for-safe-links.md).
+- **App di office 365**: la protezione dei collegamenti sicuri per le app di Office 365 è disponibile in APS desktop, mobili e Web supportati. È possibile **configurare** la protezione dei collegamenti sicuri per le app di Office 365 nell'impostazione globale **all'esterno** dei criteri collegamenti sicuri. Per istruzioni, vedere [configurare le impostazioni globali per le impostazioni dei collegamenti sicuri in Microsoft Defender per Office 365](configure-global-settings-for-safe-links.md).
 
   Tuttavia, la protezione dei collegamenti sicuri per le app di Office 365 viene **applicata** solo agli utenti inclusi nei criteri dei collegamenti sicuri attivi. Se un utente non è incluso in un criterio di collegamenti sicuri attivo, l'utente non riceve la protezione dei collegamenti sicuri nelle app di Office 365 supportate.
 
@@ -60,13 +60,13 @@ Protezione dei collegamenti sicuri è disponibile nei seguenti percorsi:
 
 In questo articolo sono incluse descrizioni dettagliate dei tipi di impostazioni dei collegamenti sicuri seguenti:
 
-- **Impostazioni nei criteri collegamenti sicuri** : queste impostazioni si applicano solo agli utenti inclusi nei criteri specifici e le impostazioni potrebbero essere diverse tra i criteri. Tali impostazioni includono:
+- **Impostazioni nei criteri collegamenti sicuri**: queste impostazioni si applicano solo agli utenti inclusi nei criteri specifici e le impostazioni potrebbero essere diverse tra i criteri. Tali impostazioni includono:
 
   - [Impostazioni dei collegamenti sicuri per i messaggi di posta elettronica](#safe-links-settings-for-email-messages)
   - [Impostazioni dei collegamenti sicuri per Microsoft Teams](#safe-links-settings-for-microsoft-teams)
   - ["Non riscrivere gli URL seguenti" nell'elenco dei criteri collegamenti sicuri](#do-not-rewrite-the-following-urls-lists-in-safe-links-policies)
 
-- **Impostazioni dei collegamenti sicuri globali** : queste impostazioni sono configurate globalmente e non nei criteri collegamenti sicuri. Tuttavia, le impostazioni si applicano solo agli utenti inclusi nei criteri dei collegamenti sicuri attivi. Tali impostazioni includono:
+- **Impostazioni dei collegamenti sicuri globali**: queste impostazioni sono configurate globalmente e non nei criteri collegamenti sicuri. Tuttavia, le impostazioni si applicano solo agli utenti inclusi nei criteri dei collegamenti sicuri attivi. Tali impostazioni includono:
 
   - [Impostazioni dei collegamenti sicuri per le app di Office 365](#safe-links-settings-for-office-365-apps)
   - ["Blocca l'elenco degli URL seguenti" per i collegamenti sicuri](#block-the-following-urls-list-for-safe-links)
@@ -77,9 +77,9 @@ Nella tabella seguente vengono descritti gli scenari per i collegamenti sicuri i
 
 |Scenario|Risultato|
 |---|---|
-|Jean è un membro del reparto marketing. La protezione dei collegamenti sicuri per le app di Office 365 è attivata nelle impostazioni globali per i collegamenti sicuri e viene applicato un criterio di collegamenti sicuri che si applica ai membri del reparto marketing. Jean apre una presentazione di PowerPoint in un messaggio di posta elettronica e quindi fa clic su un URL nella presentazione.|Jean è protetto da collegamenti sicuri. <br/><br/> Jean è incluso in un criterio per i collegamenti sicuri e la protezione dei collegamenti sicuri per le app di Office 365 è attivata. <br/><br/> Per ulteriori informazioni sui requisiti per la protezione dei collegamenti sicuri nelle app di Office 365, vedere la sezione relativa alle [impostazioni dei collegamenti sicuri per office 365 Apps](#safe-links-settings-for-office-365-apps) più avanti in questo articolo.|
-|L'organizzazione Microsoft 365 E5 di Chris non dispone di criteri collegamenti sicuri configurati. Chris riceve un messaggio di posta elettronica da un mittente esterno che contiene un URL di un sito Web dannoso che infine fa clic su.|Chris non è protetto da collegamenti sicuri. <br/><br/> Un amministratore deve creare almeno un criterio di collegamenti sicuri per tutti gli utenti per ottenere la protezione dei collegamenti sicuri nei messaggi di posta elettronica in ingresso. Chris deve essere incluso nelle condizioni di criteri per ottenere la protezione dei collegamenti sicuri.|
-|Nell'organizzazione di Pat, nessun amministratore ha creato alcun criterio per i collegamenti sicuri, ma la protezione dei collegamenti sicuri per le app di Office 365 è attivata. Pat apre un documento di Word e fa clic su un URL nel file.|Pat non è protetto da collegamenti sicuri. <br/><br/> Anche se la protezione dei collegamenti sicuri per le app di Office 365 è attivata globalmente, Pat non è incluso in tutti i criteri per i collegamenti sicuri attivi, pertanto non è possibile applicare la protezione.|
+|Jean è un membro del reparto marketing. La protezione dei collegamenti sicuri per le app di Office 365 è attivata nelle impostazioni globali per i collegamenti sicuri e viene applicato un criterio di collegamenti sicuri che si applica ai membri del reparto marketing. Jean apre una presentazione di PowerPoint in un messaggio di posta elettronica e quindi fa clic su un URL nella presentazione.|Jean è protetto da collegamenti sicuri. <p> Jean è incluso in un criterio per i collegamenti sicuri e la protezione dei collegamenti sicuri per le app di Office 365 è attivata. <p> Per ulteriori informazioni sui requisiti per la protezione dei collegamenti sicuri nelle app di Office 365, vedere la sezione relativa alle [impostazioni dei collegamenti sicuri per office 365 Apps](#safe-links-settings-for-office-365-apps) più avanti in questo articolo.|
+|L'organizzazione Microsoft 365 E5 di Chris non dispone di criteri collegamenti sicuri configurati. Chris riceve un messaggio di posta elettronica da un mittente esterno che contiene un URL di un sito Web dannoso che infine fa clic su.|Chris non è protetto da collegamenti sicuri. <p> Un amministratore deve creare almeno un criterio di collegamenti sicuri per tutti gli utenti per ottenere la protezione dei collegamenti sicuri nei messaggi di posta elettronica in ingresso. Chris deve essere incluso nelle condizioni di criteri per ottenere la protezione dei collegamenti sicuri.|
+|Nell'organizzazione di Pat, nessun amministratore ha creato alcun criterio per i collegamenti sicuri, ma la protezione dei collegamenti sicuri per le app di Office 365 è attivata. Pat apre un documento di Word e fa clic su un URL nel file.|Pat non è protetto da collegamenti sicuri. <p> Anche se la protezione dei collegamenti sicuri per le app di Office 365 è attivata globalmente, Pat non è incluso in tutti i criteri per i collegamenti sicuri attivi, pertanto non è possibile applicare la protezione.|
 |Nell'organizzazione di Lee, `https://tailspintoys.com` è configurato nell'elenco **blocca gli URL seguenti** nelle impostazioni globali per i collegamenti sicuri. Un criterio per i collegamenti sicuri che include Lee esiste già. Lee riceve un messaggio di posta elettronica che contiene l'URL `https://tailspintoys.com/aboutus/trythispage` . Lee fa clic sull'URL.|L'URL potrebbe essere bloccato automaticamente per Lee. dipende dalla voce URL nell'elenco e dal client di posta elettronica utilizzato Lee. Per ulteriori informazioni, vedere la sezione ["blocca gli URL seguenti" per i collegamenti sicuri](#block-the-following-urls-list-for-safe-links) più avanti in questo argomento.|
 |Jamie e Julia lavorano entrambi per contoso.com. Molto tempo fa, gli amministratori hanno configurato i criteri per i collegamenti sicuri che si applicano sia a Jamie che a Julia. Jamie Invia un messaggio di posta elettronica a Julia, non sapendo che l'indirizzo di posta elettronica contiene un URL dannoso.|Julia è protetta da collegamenti sicuri **se** il criterio collegamenti sicuri che si applica a lei è configurato per essere applicato ai messaggi tra i destinatari interni. Per ulteriori informazioni, vedere la sezione relativa alle [impostazioni dei collegamenti sicuri per i messaggi di posta elettronica](#safe-links-settings-for-email-messages) più avanti in questo argomento.|
 
@@ -91,41 +91,41 @@ Dopo che i collegamenti sicuri riscrivono un URL, l'URL rimane riscritto, anche 
 
 Le impostazioni dei criteri collegamenti sicuri che si applicano ai messaggi di posta elettronica sono descritte nel seguente elenco:
 
-- **Selezionare l'azione per gli URL potenzialmente dannosi sconosciuti nei messaggi** : attiva o disattiva l'analisi dei collegamenti sicuri nei messaggi di posta elettronica. Il valore consigliato è **on**. Se si attiva questa impostazione, vengono riportate le azioni seguenti.
+- **Selezionare l'azione per gli URL potenzialmente dannosi sconosciuti nei messaggi**: attiva o disattiva l'analisi dei collegamenti sicuri nei messaggi di posta elettronica. Il valore consigliato è **on**. Se si attiva questa impostazione, vengono riportate le azioni seguenti.
 
   - L'analisi dei collegamenti sicuri è abilitata in Outlook (C2R) in Windows.
   - Gli URL vengono riscritti e gli utenti vengono instradati attraverso la protezione dei collegamenti sicuri quando fanno clic su URL nei messaggi.
   - Quando si fa clic su, gli URL vengono controllati in base a un elenco di URL dannosi noti e all' [elenco "blocca gli URL seguenti"](#block-the-following-urls-list-for-safe-links).
   - Gli URL che non dispongono di una reputazione valida vengono detonati in modo asincrono in background.
 
-- **Applicare l'analisi degli URL in tempo reale per collegamenti e collegamenti sospetti che puntano a file** : consente l'analisi in tempo reale dei collegamenti, inclusi i collegamenti nei messaggi di posta elettronica che puntano al contenuto scaricabile. Il valore consigliato è abilitato.
+- **Applicare l'analisi degli URL in tempo reale per collegamenti e collegamenti sospetti che puntano a file**: consente l'analisi in tempo reale dei collegamenti, inclusi i collegamenti nei messaggi di posta elettronica che puntano al contenuto scaricabile. Il valore consigliato è abilitato.
 
-  - **Attendere il completamento dell'analisi degli URL prima di recapitare il messaggio** :
+  - **Attendere il completamento dell'analisi degli URL prima di recapitare il messaggio**:
 
     - Enabled: i messaggi che contengono URL vengono mantenuti finché l'analisi non è terminata. I messaggi vengono recapitati solo dopo che gli URL sono stati confermati come attendibili. Questo è il valore consigliato.
     - Disabled: se l'analisi dell'URL non può essere completata, recapitare il messaggio.
 
-- **Applicare collegamenti sicuri ai messaggi di posta elettronica inviati all'interno dell'organizzazione** : Abilita o Disabilita l'analisi dei collegamenti sicuri sui messaggi inviati tra i mittenti interni e i destinatari interni all'interno della stessa organizzazione di Exchange Online. Il valore consigliato è abilitato.
+- **Applicare collegamenti sicuri ai messaggi di posta elettronica inviati all'interno dell'organizzazione**: Abilita o Disabilita l'analisi dei collegamenti sicuri sui messaggi inviati tra i mittenti interni e i destinatari interni all'interno della stessa organizzazione di Exchange Online. Il valore consigliato è abilitato.
 
-- **Non tenere conto dei clic degli utenti** : Abilita o Disabilita l'archiviazione di collegamenti sicuri fare clic su dati per gli URL su cui si è fatto clic nei messaggi di posta elettronica. Il valore consigliato consiste nel lasciare deselezionata questa impostazione (per tenere presenti gli scatti degli utenti).
+- **Non tenere conto dei clic degli utenti**: Abilita o Disabilita l'archiviazione di collegamenti sicuri fare clic su dati per gli URL su cui si è fatto clic nei messaggi di posta elettronica. Il valore consigliato consiste nel lasciare deselezionata questa impostazione (per tenere presenti gli scatti degli utenti).
 
   URL fare clic su rilevamento per i collegamenti nei messaggi di posta elettronica inviati tra i mittenti interni e i destinatari interni non è attualmente supportato.
 
-- **Non consentire agli utenti di fare clic sull'URL originale** : consente o blocca gli utenti facendo clic sulla [pagina di avviso](#warning-pages-from-safe-links) nell'URL originale. Il valore recommend è abilitato.
+- **Non consentire agli utenti di fare clic sull'URL originale**: consente o blocca gli utenti facendo clic sulla [pagina di avviso](#warning-pages-from-safe-links) nell'URL originale. Il valore recommend è abilitato.
 
-- **Non riscrivere gli URL seguenti** : consente di lasciare gli URL così come sono. Mantiene un elenco personalizzato di URL sicuri che non devono essere analizzati. L'elenco è univoco per tutti i criteri collegamenti sicuri. Per ulteriori informazioni sull'elenco non **riscrivere gli URL seguenti** , vedere la sezione ["non riscrivere gli URL seguenti" negli elenchi dei criteri collegamenti sicuri](#do-not-rewrite-the-following-urls-lists-in-safe-links-policies) più avanti in questo articolo.
+- **Non riscrivere gli URL seguenti**: consente di lasciare gli URL così come sono. Mantiene un elenco personalizzato di URL sicuri che non devono essere analizzati. L'elenco è univoco per tutti i criteri collegamenti sicuri. Per ulteriori informazioni sull'elenco non **riscrivere gli URL seguenti** , vedere la sezione ["non riscrivere gli URL seguenti" negli elenchi dei criteri collegamenti sicuri](#do-not-rewrite-the-following-urls-lists-in-safe-links-policies) più avanti in questo articolo.
 
 Per ulteriori informazioni sui valori consigliati per le impostazioni dei criteri standard e rigorosi per i criteri collegamenti sicuri, vedere [impostazioni dei criteri collegamenti sicuri](recommended-settings-for-eop-and-office365-atp.md#safe-links-policy-settings).
 
-- **Filtri destinatario** : è necessario specificare le condizioni del destinatario e le eccezioni che determinano gli utenti a cui si applica il criterio. È possibile utilizzare queste proprietà per le condizioni e le eccezioni:
+- **Filtri destinatario**: è necessario specificare le condizioni del destinatario e le eccezioni che determinano gli utenti a cui si applica il criterio. È possibile utilizzare queste proprietà per le condizioni e le eccezioni:
 
   - **Il destinatario è**
   - **Il dominio del destinatario è**
   - **Il destinatario è un membro di**
 
-  È possibile utilizzare solo un'eccezione una volta, ma la condizione o l'eccezione può contenere più valori. Più valori della stessa condizione o eccezione utilizzano la logica OR (ad esempio, _\<recipient1\>_ o _\<recipient2\>_ ). Condizioni o eccezioni diverse utilizzano la logica AND (ad esempio, _\<recipient1\>_ e _\<member of group 1\>_ ).
+  È possibile utilizzare solo un'eccezione una volta, ma la condizione o l'eccezione può contenere più valori. Più valori della stessa condizione o eccezione utilizzano la logica OR (ad esempio, _\<recipient1\>_ o _\<recipient2\>_). Condizioni o eccezioni diverse utilizzano la logica AND (ad esempio, _\<recipient1\>_ e _\<member of group 1\>_).
 
-- **Priorità** : se si creano più criteri, è possibile specificare l'ordine in cui sono stati applicati. Nessun criterio può avere la stessa priorità e l'elaborazione dei criteri termina dopo l'applicazione del primo criterio.
+- **Priorità**: se si creano più criteri, è possibile specificare l'ordine in cui sono stati applicati. Nessun criterio può avere la stessa priorità e l'elaborazione dei criteri termina dopo l'applicazione del primo criterio.
 
   Per altre informazioni sull'ordine di precedenza e su come vengono valutati e applicati multipli criteri, vedere [Ordine e precedenza della protezione della posta elettronica](how-policies-and-protections-are-combined.md).
 
@@ -166,7 +166,7 @@ Dopo aver attivato la protezione dei collegamenti sicuri per Microsoft teams, gl
 
 - Se il collegamento è stato selezionato in una conversazione di Team, in una chat di gruppo o nei canali, la pagina di avviso come illustrato nella schermata seguente viene visualizzata nel Web browser predefinito.
 - Se il collegamento è stato selezionato da una scheda bloccata, la pagina di avviso viene visualizzata nell'interfaccia teams all'interno di tale scheda. L'opzione per aprire il collegamento in un Web browser è disabilitata per motivi di sicurezza.
-- A seconda del modo in cui non è possibile **consentire agli utenti di fare clic sull'impostazione di un URL originale** nel criterio, l'utente potrà o non sarà autorizzato a fare clic sull'URL originale ( **continuare comunque (non consigliato)** nello screenshot). È consigliabile abilitare l'impostazione non **consentire agli utenti di fare clic su all'URL originale** in modo che gli utenti non possano fare clic sull'URL originale.
+- A seconda del modo in cui non è possibile **consentire agli utenti di fare clic sull'impostazione di un URL originale** nel criterio, l'utente potrà o non sarà autorizzato a fare clic sull'URL originale (**continuare comunque (non consigliato)** nello screenshot). È consigliabile abilitare l'impostazione non **consentire agli utenti di fare clic su all'URL originale** in modo che gli utenti non possano fare clic sull'URL originale.
 
 Se l'utente che ha inviato il collegamento non è incluso in un criterio per i collegamenti sicuri in cui è abilitata la protezione dei team, l'utente è libero di fare clic sull'URL originale nel computer o nel dispositivo.
 
@@ -204,11 +204,11 @@ Protezione dei collegamenti sicuri per le app di Office 365 sono necessari i req
 
 Le seguenti impostazioni dei collegamenti sicuri sono disponibili per le app di Office 365:
 
-- **Applicazioni di office 365** : consente di abilitare o disabilitare l'analisi dei collegamenti sicuri nelle app di Office 365 supportate. Il valore predefinito e **consigliato è attivato**.
+- **Applicazioni di office 365**: consente di abilitare o disabilitare l'analisi dei collegamenti sicuri nelle app di Office 365 supportate. Il valore predefinito e **consigliato è attivato**.
 
-- **Non tenere conto di quando gli utenti fanno clic su collegamenti sicuri** : Abilita o Disabilita l'archiviazione dei collegamenti sicuri fare clic su dati per gli URL su cui si fa clic nelle versioni desktop Word, Excel, PowerPoint e Visio. Il valore consigliato è **disattivato** , il che significa che i clic dell'utente vengono registrati.
+- **Non tenere conto di quando gli utenti fanno clic su collegamenti sicuri**: Abilita o Disabilita l'archiviazione dei collegamenti sicuri fare clic su dati per gli URL su cui si fa clic nelle versioni desktop Word, Excel, PowerPoint e Visio. Il valore consigliato è **disattivato**, il che significa che i clic dell'utente vengono registrati.
 
-- **Non consentire agli utenti di fare clic su collegamenti sicuri con l'URL originale** : consente o blocca gli utenti di fare clic sulla [pagina di avviso](#warning-pages-from-safe-links) nell'URL originale nelle versioni desktop di Word, Excel, PowerPoint e Visio. Il valore predefinito e **consigliato è attivato**.
+- **Non consentire agli utenti di fare clic su collegamenti sicuri con l'URL originale**: consente o blocca gli utenti di fare clic sulla [pagina di avviso](#warning-pages-from-safe-links) nell'URL originale nelle versioni desktop di Word, Excel, PowerPoint e Visio. Il valore predefinito e **consigliato è attivato**.
 
 Per configurare le impostazioni dei collegamenti sicuri per le app di Office 365, vedere [Configure Safe Links Protection for office 365 Apps](configure-global-settings-for-safe-links.md#configure-safe-links-protection-for-office-365-apps-in-the-security--compliance-center).
 
@@ -228,7 +228,7 @@ A livello elevato, ecco come funziona la protezione dei collegamenti sicuri per 
 
    - Se l'URL punta a un sito Web che è stato determinato come dannoso, verrà aperta una pagina di avviso per il [sito Web dannoso](#malicious-website-warning) (o una pagina di avviso diversa).
 
-   - Se l'URL punta a un file scaricabile e il criterio collegamenti sicuri applicato all'utente è configurato per eseguire l'analisi dei collegamenti al contenuto scaricabile ( **applicare l'analisi degli URL in tempo reale per collegamenti sospetti e collegamenti che puntano ai file** ), viene controllato il file scaricabile.
+   - Se l'URL punta a un file scaricabile e il criterio collegamenti sicuri applicato all'utente è configurato per eseguire l'analisi dei collegamenti al contenuto scaricabile (**applicare l'analisi degli URL in tempo reale per collegamenti sospetti e collegamenti che puntano ai file**), viene controllato il file scaricabile.
 
    - Se l'URL è considerato sicuro, l'utente viene reindirizzato al sito Web.
 
@@ -249,7 +249,7 @@ Quando un utente di un criterio collegamenti sicuri attivo fa clic su un collega
 
 È possibile configurare l'elenco di URL nelle impostazioni globali per i collegamenti sicuri. Per istruzioni, vedere [Configure the "Block The seguente URLs" list](configure-global-settings-for-safe-links.md#configure-the-block-the-following-urls-list-in-the-security--compliance-center).
 
-**Note** :
+**Note**:
 
 - Per un elenco veramente universale di URL bloccati ovunque, vedere [gestire gli URL nell'elenco Consenti/blocca tenant](tenant-allow-block-list.md).
 
@@ -274,7 +274,7 @@ Gli esempi dei valori che è possibile immettere e i relativi risultati sono des
 
 |Valore|Risultato|
 |---|---|
-|`contoso.com` <br/> oppure <br/> `*contoso.com*`|Blocca il dominio, i sottodomini e i percorsi. Ad esempio, `https://www.contoso.com` `https://sub.contoso.com` e `https://contoso.com/abc` sono bloccati.|
+|`contoso.com` <p> oppure <p> `*contoso.com*`|Blocca il dominio, i sottodomini e i percorsi. Ad esempio, `https://www.contoso.com` `https://sub.contoso.com` e `https://contoso.com/abc` sono bloccati.|
 |`https://contoso.com/a`|Blocca `https://contoso.com/a` ma non altri sottopercorsi come `https://contoso.com/a/b` .|
 |`https://contoso.com/a*`|Blocchi `https://contoso.com/a` e sottopercorsi aggiuntivi come `https://contoso.com/a/b` .|
 |`https://toys.contoso.com*`|Blocca un sottodominio ( `toys` in questo esempio) ma consente di fare clic su altri URL di dominio (come `https://contoso.com` or `https://home.contoso.com` ).|
@@ -289,7 +289,7 @@ Tutti i criteri collegamenti sicuri contengono un non **riscrivere l'elenco URL 
 
 Per aggiungere voci all'elenco nei criteri dei collegamenti sicuri nuovi o esistenti, vedere [creare criteri](set-up-atp-safe-links-policies.md#use-the-security--compliance-center-to-create-safe-links-policies) collegamenti sicuri o [modificare i criteri collegamenti sicuri](set-up-atp-safe-links-policies.md#use-the-security--compliance-center-to-modify-safe-links-policies).
 
-**Note** :
+**Note**:
 
 - I client seguenti non riconoscono la non **riscrittura degli elenchi di URL seguenti** nei criteri collegamenti sicuri. Gli utenti inclusi nelle polizie possono essere bloccati dall'accesso agli URL in base ai risultati dell'analisi dei collegamenti sicuri nei client:
 
@@ -313,7 +313,7 @@ Gli esempi dei valori che è possibile immettere e i relativi risultati sono des
 |Valore|Risultato|
 |---|---|
 |`contoso.com`|Consente l'accesso `https://contoso.com` ma non ai sottodomini o ai percorsi.|
-|`*.contoso.com/*`|Consente l'accesso a un dominio, a sottodomini e a percorsi (ad esempio,,, `https://www.contoso.com` `https://www.contoso.com` `https://maps.contoso.com` o `https://www.contoso.com/a` ). <br/><br/> Questa voce è intrinsecamente migliore di `*contoso.com*` , perché non consente siti potenzialmente fraudolenti, come `https://www.falsecontoso.com` o `https://www.false.contoso.completelyfalse.com`|
+|`*.contoso.com/*`|Consente l'accesso a un dominio, a sottodomini e a percorsi (ad esempio,,, `https://www.contoso.com` `https://www.contoso.com` `https://maps.contoso.com` o `https://www.contoso.com/a` ). <p> Questa voce è intrinsecamente migliore di `*contoso.com*` , perché non consente siti potenzialmente fraudolenti, come `https://www.falsecontoso.com` o `https://www.false.contoso.completelyfalse.com`|
 |`https://contoso.com/a`|Consente di accedere `https://contoso.com/a` , ma non di sottopercorsi come `https://contoso.com/a/b`|
 |`https://contoso.com/a/*`|Consente l'accesso `https://contoso.com/a` e i sottopercorsi come `https://contoso.com/a/b`|
 |

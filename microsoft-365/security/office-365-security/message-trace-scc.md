@@ -13,12 +13,12 @@ ms.assetid: 3e64f99d-ac33-4aba-91c5-9cb4ca476803
 ms.custom:
 - seo-marvel-apr2020
 description: Gli amministratori possono utilizzare la traccia dei messaggi nel centro sicurezza & Compliance per scoprire cosa è successo ai messaggi.
-ms.openlocfilehash: 1e9f5e21655e55f711997defcb7ace0319ff4be6
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 46aa454ff709e9b17c3b18992757a9a4c3a51247
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48197538"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49616753"
 ---
 # <a name="message-trace-in-the-security--compliance-center"></a>Traccia messaggio nel Centro sicurezza e conformità
 
@@ -41,7 +41,7 @@ La traccia dei messaggi nel centro sicurezza & conformità migliora la traccia d
 
 1. Aprire il Centro sicurezza & Compliance all'indirizzo <https://protection.office.com> .
 
-2. Espande il **flusso di posta**e quindi seleziona **traccia messaggi**.
+2. Espande il **flusso di posta** e quindi seleziona **traccia messaggi**.
 
 ## <a name="message-trace-page"></a>Pagina di traccia dei messaggi
 
@@ -66,7 +66,10 @@ I valori predefiniti sono **tutti i mittenti** e **tutti i destinatari**, ma è 
 - **A queste persone**: fare clic in questo campo per selezionare uno o più destinatari nell'organizzazione.
 
 > [!NOTE]
-> È inoltre possibile digitare gli indirizzi di posta elettronica di mittenti e destinatari esterni. I caratteri jolly sono supportati, ad esempio, `*@contoso.com` ma non è possibile utilizzare più voci con caratteri jolly nello stesso campo contemporaneamente. <br/><br/> È possibile incollare più mittenti o elenchi di destinatari separati da punti e virgola ( `;` ). spazi ( `\s` ), ritorni a capo ( `\r` ) o righe successive ( `\n` ).
+>
+> - È inoltre possibile digitare gli indirizzi di posta elettronica di mittenti e destinatari esterni. I caratteri jolly sono supportati, ad esempio, `*@contoso.com` ma non è possibile utilizzare più voci con caratteri jolly nello stesso campo contemporaneamente.
+>
+> - È possibile incollare più mittenti o elenchi di destinatari separati da punti e virgola ( `;` ). spazi ( `\s` ), ritorni a capo ( `\r` ) o righe successive ( `\n` ).
 
 ### <a name="time-range"></a>Intervallo di tempo
 
@@ -108,7 +111,7 @@ Il valore predefinito è **2 giorni**, ma è possibile specificare intervalli di
 
 - **Ottenere lo stato:** Il messaggio è stato ricevuto di recente da Microsoft 365, ma non sono ancora disponibili altri dati sullo stato. Eseguire il controllo in pochi minuti.
 
-**Nota**: i valori **in sospeso, in** **quarantena**e **filtro come posta indesiderata** sono disponibili solo per le ricerche di meno di 10 giorni. È inoltre possibile che vi sia un ritardo di 5-10 minuti tra lo stato di recapito effettivo e quello riportato.
+**Nota**: i valori **in sospeso, in** **quarantena** e **filtro come posta indesiderata** sono disponibili solo per le ricerche di meno di 10 giorni. È inoltre possibile che vi sia un ritardo di 5-10 minuti tra lo stato di recapito effettivo e quello riportato.
 
 #### <a name="message-id"></a>ID messaggio
 
@@ -134,7 +137,7 @@ I tipi di report disponibili sono i seguenti:
 
 - **Riepilogo**: disponibile se l'intervallo di tempo è inferiore a 10 giorni e non richiede ulteriori opzioni di filtro. I risultati sono disponibili quasi immediatamente dopo aver fatto clic su **Cerca**. Il report restituisce fino a 20000 risultati.
 
-- **Riepilogo avanzato** o **esteso**: questi rapporti sono disponibili solo come file CSV scaricabili e richiedono una o più delle seguenti opzioni di filtro, indipendentemente dall'intervallo di tempo: **da queste persone**, **a queste persone**o all' **ID del messaggio**. È possibile utilizzare i caratteri jolly per i mittenti o i destinatari, ad esempio \* @contoso. com. Il rapporto riepilogativo avanzato restituisce fino a 50000 risultati. Il report esteso restituisce fino a 1000 risultati.
+- **Riepilogo avanzato** o **esteso**: questi rapporti sono disponibili solo come file CSV scaricabili e richiedono una o più delle seguenti opzioni di filtro, indipendentemente dall'intervallo di tempo: **da queste persone**, **a queste persone** o all' **ID del messaggio**. È possibile utilizzare i caratteri jolly per i mittenti o i destinatari, ad esempio \* @contoso. com. Il rapporto riepilogativo avanzato restituisce fino a 50000 risultati. Il report esteso restituisce fino a 1000 risultati.
 
 **Note**:
 
@@ -160,7 +163,7 @@ Il rapporto riepilogativo contiene le informazioni seguenti:
 
 - **Data**: la data e l'ora in cui il messaggio è stato ricevuto dal servizio, utilizzando il fuso orario UTC configurato.
 
-- **Sender**: l'indirizzo di posta elettronica del mittente*alias*( @ *dominio*alias).
+- **Sender**: l'indirizzo di posta elettronica del mittente( @ *dominio* alias).
 
 - **Destinatario**: l'indirizzo di posta elettronica del destinatario o dei destinatari. Per un messaggio inviato a più destinatari, è presente una riga per ogni destinatario. Se il destinatario è un gruppo di distribuzione, un gruppo di distribuzione dinamico o un gruppo di sicurezza abilitato alla posta elettronica, il gruppo sarà il primo destinatario e quindi ogni membro del gruppo si trova su una riga distinta.
 
@@ -174,7 +177,7 @@ Per impostazione predefinita, i primi risultati di 250 sono caricati e prontamen
 
 È possibile fare clic su **Filtra risultati** per filtrare i risultati in base a una o più colonne.
 
-È possibile esportare i risultati dopo aver selezionato una o più righe facendo clic su **Esporta risultati** e quindi selezionando **Esporta tutti**i risultati, **Esporta i risultati caricati**o **Esporta selezionati**.
+È possibile esportare i risultati dopo aver selezionato una o più righe facendo clic su **Esporta risultati** e quindi selezionando **Esporta tutti** i risultati, **Esporta i risultati caricati** o **Esporta selezionati**.
 
 #### <a name="find-related-records-for-this-message"></a>Individuare i record correlati per il messaggio
 
@@ -236,7 +239,7 @@ I report di riepilogo avanzati disponibili (completati) sono disponibili nella s
 
 - **origin_timestamp** <sup>*</sup> : la data e l'ora in cui il messaggio è stato ricevuto inizialmente dal servizio, utilizzando il fuso orario UTC configurato.
 
-- **sender_address**: l'indirizzo di posta elettronica del*alias*mittente ( @ *dominio*alias).
+- **sender_address**: l'indirizzo di posta elettronica delmittente ( @ *dominio* alias).
 
 - **Recipient_status**: lo stato del recapito del messaggio al destinatario. Se il messaggio è stato inviato a più destinatari, mostrerà tutti i destinatari e lo stato corrispondente per ognuno, nel formato: \<*email address*\> ## \<*status*\> . Ad esempio:
 
@@ -260,9 +263,9 @@ I report di riepilogo avanzati disponibili (completati) sono disponibili nella s
 
 - **connector_id**: il nome del connettore di origine o di destinazione. Per ulteriori informazioni sui connettori in Exchange Online, vedere [Configure Mail Flow using Connectors in Office 365](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow).
 
-- **delivery_priority** <sup>*</sup> : indica se il messaggio è stato inviato con priorità **alta**, **bassa**o **normale** .
+- **delivery_priority** <sup>*</sup> : indica se il messaggio è stato inviato con priorità **alta**, **bassa** o **normale** .
 
-<sup>*</sup>Queste proprietà sono disponibili solo in rapporti di riepilogo avanzati.
+<sup>*</sup> Queste proprietà sono disponibili solo in rapporti di riepilogo avanzati.
 
 ### <a name="extended-reports"></a>Rapporti estesi
 
@@ -401,7 +404,7 @@ Un valore **custom_data** che inizia con `S:TRA` è l'agente della regola di tra
 |`ETR|ruleId=<guid>`|L'ID regola corrispondente.|
 |`St=<datetime>`|Data e ora in formato UTC quando si è verificata la corrispondenza della regola.|
 |`Action=<ActionDefinition>`|L'azione che è stata applicata. Per un elenco delle azioni disponibili, vedere [Mail Flow Rule Actions in Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions).|
-|`Mode=<Mode>`|La modalità della regola. I valori validi sono:<ul><li>**Enforce**: tutte le azioni della regola verranno applicate.</li><li>**Test con suggerimenti per i criteri:**: tutte le azioni di suggerimento per i criteri verranno inviate, ma non verranno applicate altre azioni di applicazione.</li><li>**Test senza suggerimenti**per i criteri: le azioni verranno elencate in un file di registro, tuttavia i mittenti non riceveranno alcuna notifica e le azioni di applicazione non verranno applicate.</li></ul>|
+|`Mode=<Mode>`|La modalità della regola. I valori validi sono:<ul><li>**Enforce**: tutte le azioni della regola verranno applicate.</li><li>**Test con suggerimenti per i criteri:**: tutte le azioni di suggerimento per i criteri verranno inviate, ma non verranno applicate altre azioni di applicazione.</li><li>**Test senza suggerimenti** per i criteri: le azioni verranno elencate in un file di registro, tuttavia i mittenti non riceveranno alcuna notifica e le azioni di applicazione non verranno applicate.</li></ul>|
 |
 
 Un esempio di **custom_data** valore per i messaggi che soddisfano le condizioni di una regola del flusso di posta è simile al seguente:

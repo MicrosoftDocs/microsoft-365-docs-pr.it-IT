@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-m365-defender
 description: Gli amministratori possono acquisire informazioni sulla protezione dalle minacce in Microsoft 365 e configurare come utilizzarla per l'organizzazione.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 98a20c8805ff9eb735ca880cfc24a0acf9698b3e
-ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
+ms.openlocfilehash: 646fff4550de2e07342c0fef04952846db65a8eb
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49561208"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49615121"
 ---
 # <a name="protect-against-threats"></a>Protezione dalle minacce
 
@@ -56,7 +56,7 @@ Le funzionalità di protezione dalle minacce sono incluse in *tutte le* sottoscr
 |Spurgo automatico zero-hour (per la posta elettronica)|[EOP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)|
 |Protezione da URL e file dannosi nei messaggi di posta elettronica e nei documenti di Office (collegamenti sicuri e allegati sicuri)|[Microsoft Defender per Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)|
 |Attivazione dei carichi di lavoro ATP per SharePoint, OneDrive e Microsoft Teams|[Difensore per Office 365 ](atp-for-spo-odb-and-teams.md)|
-|Protezione anti-phishing avanzata|[Difensore per Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)|
+|Protezione anti-phishing avanzata|[Defender per Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)|
 
 ### <a name="roles-and-permissions"></a>Ruoli e autorizzazioni
 
@@ -68,7 +68,7 @@ Per configurare la protezione per i criteri di Office 365, è necessario essere 
 |---|---|
 |amministratore globale|[Informazioni sui ruoli di amministratore di Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)|
 |Amministratore della sicurezza|[Autorizzazioni del ruolo di amministratore in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)|
-|Gestione organizzazione di Exchange Online|[Autorizzazioni in Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo) <br>e<br> [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell)|
+|Gestione organizzazione di Exchange Online|[Autorizzazioni in Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo) <p> e <p> [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell)|
 |
 
 Per ulteriori informazioni, vedere [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
@@ -81,7 +81,7 @@ Avviare la registrazione di controllo in anticipo. **Per alcuni** passaggi succe
 
 La [protezione antimalware](anti-malware-protection.md) è disponibile in abbonamenti che includono [EOP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description).
 
-1. Nel [Centro sicurezza & conformità](https://protection.office.com)scegliere **Threat management**  >  **Policy**  >  **antimalware** per criteri di gestione delle minacce.
+1. Nel [Centro sicurezza & conformità](https://protection.office.com)scegliere  \>  \> **antimalware** per criteri di gestione delle minacce.
 
 2. Fare doppio clic sul criterio **predefinito** e quindi scegliere **Impostazioni**.
 
@@ -101,7 +101,7 @@ La [protezione anti-phishing](anti-phishing-protection.md) è disponibile in abb
 
 Nella procedura seguente viene descritto come configurare un criterio anti-phishing in Microsoft Defender per Office 365. I passaggi sono simili per la configurazione di un criterio anti-phishing in EOP.
 
-1. Nel [Centro sicurezza & conformità](https://protection.office.com), scegliere criteri di **gestione delle minacce**  >  **Policy**  >  **ATP anti-phishing**.
+1. Nel [Centro sicurezza & conformità](https://protection.office.com), scegliere criteri di **gestione delle minacce** \>  \> **ATP anti-phishing**.
 
 2. Fare clic su **criteri predefiniti**.
 
@@ -135,7 +135,7 @@ Per ulteriori informazioni sulle opzioni di criteri anti-phishing, vedere [Confi
 
 La [protezione da posta indesiderata](anti-spam-protection.md) è disponibile in abbonamenti che includono [EOP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description).
 
-1. Nel [Centro sicurezza & conformità](https://protection.office.com), scegliere protezione dalla **Threat management**  >  **Policy**  >  **posta indesiderata** dei criteri di gestione delle minacce.
+1. Nel [Centro sicurezza & conformità](https://protection.office.com), scegliere protezione dalla  \>  \> **posta indesiderata** dei criteri di gestione delle minacce.
 
 2. Nella scheda **personalizzato** , attiva impostazioni personalizzate.
 
@@ -157,7 +157,7 @@ La protezione del tempo di clic da URL e file dannosi è disponibile in abboname
 
 Per configurare gli [allegati sicuri](atp-safe-attachments.md), creare almeno un criterio di collegamenti sicuri.
 
-1. Nel [Centro sicurezza & conformità](https://protection.office.com) **, scegliere**  >  **Policy**  >  **allegati sicuri ATP** e quindi fare clic su **Crea**.
+1. Nel [Centro sicurezza & conformità](https://protection.office.com) **, scegliere** \>  \> **allegati sicuri ATP** e quindi fare clic su **Crea**.
 
 2. Nella procedura guidata **nuovo criterio allegati sicuri** che viene visualizzata, configurare le seguenti impostazioni:
 
@@ -177,7 +177,7 @@ Per configurare gli [allegati sicuri](atp-safe-attachments.md), creare almeno un
 
 Per configurare i [collegamenti sicuri](atp-safe-links.md), esaminare e modificare le impostazioni globali per i collegamenti sicuri e creare almeno un criterio di collegamenti sicuri.
 
-1. Nel [Centro sicurezza & conformità](https://protection.office.com)scegliere criteri di **gestione dei**  >  **Policy**  >  **collegamenti sicuri ATP** e quindi fare clic su **Impostazioni globali** e quindi configurare le impostazioni seguenti:
+1. Nel [Centro sicurezza & conformità](https://protection.office.com)scegliere criteri di **gestione dei** \>  \> **collegamenti sicuri ATP** e quindi fare clic su **Impostazioni globali** e quindi configurare le impostazioni seguenti:
 
    - Verificare l' **utilizzo di collegamenti sicuri in: le applicazioni di Office 365** sono attivate: ![ Attiva/disattiva ](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png) .
    - **Non monitorare quando gli utenti fanno clic su collegamenti sicuri**: disattivare questa impostazione per tener conto degli scatti degli utenti: ![ disattivazione ](../../media/scc-toggle-off.png) .
@@ -214,7 +214,7 @@ Carichi di lavoro come SharePoint, OneDrive e teams sono stati creati per la col
 > [!IMPORTANT]
 > **Prima di iniziare questa procedura, verificare che la registrazione di controllo sia già attiva per l'ambiente Microsoft 365**. Questa operazione viene in genere fatta da una persona a cui è stato assegnato il ruolo registri di controllo in Exchange Online. Per ulteriori informazioni, vedere [attivazione o disattivazione della ricerca nel registro di controllo](../../compliance/turn-audit-log-search-on-or-off.md).
 
-1. Nel [Centro sicurezza & conformità](https://protection.office.com) **, scegliere**  >  **Policy**  >  **allegati sicuri ATP** e quindi fare clic su **Impostazioni globali**.
+1. Nel [Centro sicurezza & conformità](https://protection.office.com) **, scegliere** \>  \> **allegati sicuri ATP** e quindi fare clic su **Impostazioni globali**.
 
 2. Verificare che il pulsante attiva **ATP per SharePoint, OneDrive e Microsoft teams** sia a destra: ![ attiva ](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png) o disattiva e quindi fare clic su **Salva**.
 
@@ -284,7 +284,7 @@ Dopo aver configurato le funzionalità di protezione dalle minacce, verificare l
 
 |Soluzione|Risorse per approfondire|
 |---|---|
-|Vedere come funzionano le funzionalità di protezione dalle minacce per l'organizzazione visualizzando i report|[Dashboard di sicurezza](security-dashboard.md)<br/>[Rapporti di sicurezza della posta elettronica](view-email-security-reports.md)<br/>[Report per Microsoft Defender per Office 365](view-reports-for-atp.md)<br/>[Esplora minacce](threat-explorer.md)|
-|Rivedere e rivedere periodicamente i criteri di protezione dalle minacce in base alle esigenze|[Secure Score](../mtp/microsoft-secure-score.md)<br/>[Smart report e informazioni dettagliate](reports-and-insights-in-security-and-compliance.md)<br/>[Microsoft 365 analisi delle minacce e funzionalità di risposta](keep-users-safe-with-office-365-ti.md)|
-|Controllare le nuove funzionalità e gli aggiornamenti dei servizi|[Opzioni standard e di rilascio mirato](https://docs.microsoft.com/microsoft-365/admin/manage/release-options-in-office-365)<br/>[Centro messaggi](https://docs.microsoft.com/microsoft-365/admin/manage/message-center)<br/>[Roadmap di Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=advanced%2Cthreat%2Cprotection)<br/>[Descrizioni dei servizi](https://docs.microsoft.com/office365/servicedescriptions/office-365-service-descriptions-technet-library)|
+|Vedere come funzionano le funzionalità di protezione dalle minacce per l'organizzazione visualizzando i report|[Dashboard di sicurezza](security-dashboard.md) <p> [Rapporti di sicurezza della posta elettronica](view-email-security-reports.md) <p> [Report per Microsoft Defender per Office 365](view-reports-for-atp.md) <p> [Esplora minacce](threat-explorer.md)|
+|Rivedere e rivedere periodicamente i criteri di protezione dalle minacce in base alle esigenze|[Secure Score](../mtp/microsoft-secure-score.md) <p> [Smart report e informazioni dettagliate](reports-and-insights-in-security-and-compliance.md) <p> [Microsoft 365 analisi delle minacce e funzionalità di risposta](keep-users-safe-with-office-365-ti.md)|
+|Controllare le nuove funzionalità e gli aggiornamenti dei servizi|[Opzioni standard e di rilascio mirato](https://docs.microsoft.com/microsoft-365/admin/manage/release-options-in-office-365) <p> [Centro messaggi](https://docs.microsoft.com/microsoft-365/admin/manage/message-center) <p> [Roadmap di Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=advanced%2Cthreat%2Cprotection) <p> [Descrizioni dei servizi](https://docs.microsoft.com/office365/servicedescriptions/office-365-service-descriptions-technet-library)|
 |Informazioni dettagliate sulle configurazioni di sicurezza standard e rigorose consigliate per EOP e Defender per Office 365|[Impostazioni consigliate per EOP e Microsoft Defender per la sicurezza di Office 365](recommended-settings-for-eop-and-office365-atp.md)|

@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Informazioni su come ottenere il report attività degli utenti di Microsoft teams e acquisire maggiori informazioni sull'attività dei team nell'organizzazione.
-ms.openlocfilehash: b85f073a2916b646a5a03e62913de44b410ca058
-ms.sourcegitcommit: 82d8be71c5861a501ac62a774b306a3fc1d4e627
+ms.openlocfilehash: 7e32ca6b665cab9da93dec9632ef25176db0e839
+ms.sourcegitcommit: 039205fdaaa2a233ff7e95cd91bace474b84b68c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48988471"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49611401"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-teams-user-activity"></a>Report di Microsoft 365 nell'interfaccia di amministrazione-attività utente di Microsoft Teams
 
@@ -44,7 +44,9 @@ Il Dashboard Microsoft 365 **Reports** illustra la panoramica delle attività tr
 
 Selezionare **Scegli colonne** per aggiungere o rimuovere colonne dal report.  <br/> ![Teams user activity report - choose columns](../../media/a1513028-cf09-4186-93a6-8a203cd22475.png)
 
-È inoltre possibile esportare i dati del report in un file CSV di Excel selezionando il collegamento **Esporta** . Vengono esportati i dati di tutti gli utenti, che possono poi essere ordinati e filtrati per ulteriore analisi. Se gli utenti sono meno di 2000, è possibile ordinarli e filtrarli direttamente nella tabella del report. Se invece gli utenti sono più di 2000, per ordinarli e filtrarli occorre esportare i dati. Il formato esportato per il tempo **audio** , **video** e tempo di **condivisione dello schermo** segue il formato di durata ISO8601.
+È inoltre possibile esportare i dati del report in un file CSV di Excel selezionando il collegamento **Esporta** . Vengono esportati i dati di tutti gli utenti, che possono poi essere ordinati e filtrati per ulteriore analisi. Se gli utenti sono meno di 2000, è possibile ordinarli e filtrarli direttamente nella tabella del report. Se invece gli utenti sono più di 2000, per ordinarli e filtrarli occorre esportare i dati. Il formato esportato per il tempo **audio**, **video** e tempo di **condivisione dello schermo** segue il formato di durata ISO8601.
+
+Per garantire la qualità dei dati, vengono eseguiti i controlli giornalieri di convalida dei dati per gli ultimi tre giorni e verranno rilevati tutti gli spazi vuoti individuati. Durante il processo, è possibile notare differenze nei dati cronologici.
 
 |Elemento|Descrizione|
 |:-----|:-----|

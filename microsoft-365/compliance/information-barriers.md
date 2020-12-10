@@ -1,5 +1,5 @@
 ---
-title: Informazioni sulle barriere informative
+title: Informazioni sulle barriere informative in Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -16,14 +16,14 @@ ms.collection:
 localization_priority: None
 description: Utilizzare le barriere informative per garantire la conformità della comunicazione tramite Microsoft teams all'interno dell'organizzazione.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 0630dc607d6993598f356a7090a6be5890028499
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 08ec3b01258220a71ac02e5333143fb11b66655f
+ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48636963"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49613098"
 ---
-# <a name="information-barriers"></a>Barriere informative
+# <a name="learn-about-information-barriers-in-microsoft-365"></a>Informazioni sulle barriere informative in Microsoft 365
 
 I servizi cloud Microsoft includono potenti funzionalità di comunicazione e collaborazione. Tuttavia, si supponga di voler limitare la comunicazione e la collaborazione tra due gruppi per evitare che si verifichi un conflitto di interessi nell'organizzazione. In alternativa, è possibile limitare la comunicazione e la collaborazione tra alcune persone all'interno dell'organizzazione per salvaguardare le informazioni interne. Microsoft 365 consente la comunicazione e la collaborazione tra gruppi e organizzazioni, quindi è possibile limitare la comunicazione e la collaborazione tra gruppi di utenti specifici, se necessario. Con barriere informative, è possibile! 
 
@@ -35,7 +35,7 @@ Barriere informative sono ora supportate in Microsoft teams, SharePoint Online e
 - Un team di ricerca deve chiamare o chattare online solo con un team di sviluppo del prodotto
 
 > [!IMPORTANT]
-> Barriere informative ***supporta solo**le restrizioni in due modi. Restrizioni a un modo, ad esempio il marketing può comunicare con i commercianti diurni, ma i trader diurni non sono in grado di comunicare con il marketing _ *_non è supportato_* *.
+> Barriere informative ***supporta solo** le restrizioni in due modi. Restrizioni a un modo, ad esempio il marketing può comunicare con i commercianti diurni, ma i trader diurni non sono in grado di comunicare con il marketing _ *_non è supportato_* *.
 
 Per tutti questi scenari di esempio e altro ancora, è possibile definire i criteri di barriera delle informazioni per impedire o consentire le comunicazioni in Microsoft teams. Tali criteri possono impedire agli utenti di effettuare chiamate o chattare con coloro che non devono o consentire agli utenti di comunicare solo con gruppi specifici in Microsoft teams. Con i criteri di protezione delle informazioni in vigore, quando gli utenti interessati da tali criteri tentano di comunicare con altri membri di Microsoft teams, vengono eseguiti i controlli per impedire (o consentire) la comunicazione (come definito dai criteri di barriera delle informazioni). Per ulteriori informazioni sull'esperienza utente con barriere informative, vedere [barriere informative in Microsoft teams](https://docs.microsoft.com/MicrosoftTeams/information-barriers-in-teams).
 

@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-office365
 description: Informazioni sull'utilizzo di Esplora risorse e sui rilevamenti in tempo reale nel centro sicurezza & Compliance per esaminare e rispondere alle minacce in modo efficace ed efficiente.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 021810a4d64dc3a8d9089a3b7174a1b5f536745a
-ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
+ms.openlocfilehash: 4328bfc52497f911c57256f8366b3742523b17b0
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49561400"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49615565"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>Esplora minacce e rilevamenti in tempo reale
 
@@ -67,7 +67,7 @@ La colonna tag visualizzata nella griglia di posta elettronica conterrebbe tutti
 
 Sono ora disponibili tag come filtro in modo che sia possibile cercare solo tra gli account prioritari o gli scenari specifici dei tag utente (e persino escludere i risultati con alcuni tag come parte di questa esperienza). Combinando queste informazioni con gli altri filtri che vengono forniti, è possibile limitare l'ambito delle indagini
 
-[![Tag ](../../media/tags-filter-normal.png) del filtro](../../media/tags-filter-normal.png#lightbox)
+[![Tag del filtro](../../media/tags-filter-normal.png)](../../media/tags-filter-normal.png#lightbox)
 
 > [!div class="mx-imgBorder"]
 > ![Non filtrare i tag](../../media/tags-filter-not.png)
@@ -149,7 +149,7 @@ Altre azioni sono costituite dalle azioni che sono state applicate dopo il recap
 > - Saranno disponibili nuovi campi e valori per le tecnologie di rilevamento e altre azioni, in particolare per gli scenari di ZAP. Valutare le query salvate esistenti e le query registrate per assicurarsi che funzionino con i nuovi valori.
 
 > [!div class="mx-imgBorder"]
-> ![Additional_Actions](../../media/Additional_Actions.png)
+> ![Altre azioni in Esplora risorse](../../media/Additional_Actions.png)
 
 ### <a name="system-overrides"></a>Sostituzioni del sistema
 
@@ -161,10 +161,10 @@ Le sostituzioni di sistema sono un metodo di esecuzione di eccezioni per il perc
 - Bloccato dai criteri org: quando i team di sicurezza dell'organizzazione hanno impostato i criteri o le regole del flusso di posta per bloccare mittenti, domini, lingue dei messaggi o IP di origine per gli utenti dell'organizzazione. Può anche essere utilizzato per un gruppo di utenti o per l'intera organizzazione.
 - Estensione di file bloccata da criteri org: questo è il momento in cui l'estensione di un tipo di file viene bloccata dai team di sicurezza di un'organizzazione tramite le impostazioni dei criteri antimalware. Questi valori verranno ora visualizzati nei dettagli della posta elettronica per facilitare le indagini. I team di secops possono inoltre filtrare le estensioni di file bloccate utilizzando la funzionalità di filtraggio RTF.
 
-[![System_Overrides ](../../media/System_Overrides.png)](../../media/System_Overrides.png#lightbox)
+[![Sostituzioni del sistema in Esplora risorse](../../media/System_Overrides.png)](../../media/System_Overrides.png#lightbox)
 
 > [!div class="mx-imgBorder"]
-> ![System_Overrides_Grid](../../media/System_Overrides_Grid.png)
+> ![La griglia viene sostituita dal sistema in Esplora risorse](../../media/System_Overrides_Grid.png)
 
 ### <a name="improvements-around-url-and-clicks-experience"></a>Miglioramenti relativi all'utilizzo di URL e clic
 
@@ -184,7 +184,7 @@ Il set di miglioramenti incentrati sui dati relativi ai clic su URL e URL includ
 
 Il livello di sicurezza di phishing consente di identificare il grado di attendibilità, con cui un messaggio di posta elettronica è stato categorizzato come phishing. I due valori possibili sono High e Normal. Nelle fasi iniziali, questo filtro sarà disponibile solo nella visualizzazione phishing di Esplora minacce.
 
-[![Phish_Confidence_Level ](../../media/Phish_Confidence_Level.png)](../../media/Phish_Confidence_Level.png#lightbox)
+[![Livello di confidenza phishing in Esplora risorse](../../media/Phish_Confidence_Level.png)](../../media/Phish_Confidence_Level.png#lightbox)
 
 ### <a name="zap-url-signal"></a>Segnale URL ZAP
 
@@ -354,14 +354,14 @@ Quando si fa clic su un URL nell'elenco, verrà visualizzato un nuovo pulsante E
 
 Si supponga di voler vedere malware rilevato nella posta elettronica, tramite la tecnologia Microsoft 365. A tale scopo, utilizzare la visualizzazione [posta elettronica > malware](threat-explorer-views.md#email--malware) di Esplora risorse (o rilevamenti in tempo reale).
 
-1. Nel centro sicurezza & conformità ( [https://protection.office.com](https://protection.office.com) ), scegliere **gestione minacce**  >  **Explorer** (o **rilevamenti in tempo reale**). In questo esempio viene utilizzato Esplora.
+1. Nel centro sicurezza & conformità ( <https://protection.office.com> ), scegliere **gestione minacce** \>  (o **rilevamenti in tempo reale**). In questo esempio viene utilizzato Esplora.
 
-2. Scegliere malware **tramite posta elettronica** dal menu **Visualizza**  >  **Malware**.
+2. Scegliere malware **tramite posta elettronica** dal menu **Visualizza** \> .
 
    > [!div class="mx-imgBorder"]
    > ![Menu Visualizza per Esplora risorse](../../media/ExplorerViewEmailMalwareMenu.png)
 
-3. Fare clic su **mittente** e quindi scegliere tecnologia di rilevamento di **base**  >  **Detection technology**.
+3. Fare clic su **mittente** e quindi scegliere tecnologia di rilevamento di **base** \> .
 
    Le tecnologie di rilevamento sono ora disponibili come filtri per il report.
 
@@ -381,14 +381,14 @@ Si supponga di voler visualizzare i tentativi di phishing tramite URL nella post
 
 Per esaminare gli URL di phishing nei messaggi e fare clic su URL nei messaggi di phishing, utilizzare la visualizzazione di [posta elettronica > phishing](threat-explorer-views.md#email--phish) di Esplora risorse (o rilevamenti in tempo reale).
 
-1. Nel centro sicurezza & conformità ( [https://protection.office.com](https://protection.office.com) ), scegliere **gestione minacce**  >  **Explorer** (o **rilevamenti in tempo reale**). In questo esempio viene utilizzato Esplora.
+1. Nel centro sicurezza & conformità ( <https://protection.office.com> ), scegliere **gestione minacce** \>  (o **rilevamenti in tempo reale**). In questo esempio viene utilizzato Esplora.
 
-2. Nel menu **Visualizza** scegliere **posta elettronica**  >  **phishing**.
+2. Nel menu **Visualizza** scegliere **posta elettronica** \> **phishing**.
 
    > [!div class="mx-imgBorder"]
    > ![Menu Visualizza per Esplora in contesto di phishing](../../media/ExplorerViewEmailPhishMenu.png)
 
-3. Fare clic su **sender** e quindi scegliere **urls**  >  **Click verdict**.
+3. Fare clic su **sender** e quindi scegliere **urls** \> .
 
 4. Selezionare una o più opzioni, ad esempio **bloccate** e **bloccate**, e quindi fare clic sul pulsante **Aggiorna** che si trova nella stessa riga delle opzioni per applicare il filtro. (Non aggiornare la finestra del browser.)
 
@@ -428,14 +428,14 @@ All'interno di comparsa di posta elettronica o URL, clic principali e all'intern
 
 Si supponga di voler visualizzare i messaggi di posta elettronica che gli utenti dell'organizzazione hanno segnalato come posta indesiderata, non indesiderata o phishing tramite il [componente aggiuntivo per Outlook e Outlook sul Web](enable-the-report-message-add-in.md). A tale scopo, utilizzare la visualizzazione [> invii di posta elettronica](threat-explorer-views.md#email--submissions) di Esplora risorse (o rilevamenti in tempo reale).
 
-1. Nel centro sicurezza & conformità ( [https://protection.office.com](https://protection.office.com) ), scegliere **gestione minacce**  >  **Explorer** (o **rilevamenti in tempo reale**). In questo esempio viene utilizzato Esplora.
+1. Nel centro sicurezza & conformità ( <https://protection.office.com> ), scegliere **gestione minacce** \>  (o **rilevamenti in tempo reale**). In questo esempio viene utilizzato Esplora.
 
-2. Scegliere **invii di posta elettronica** dal menu **Visualizza**  >  **Submissions**.
+2. Scegliere **invii di posta elettronica** dal menu **Visualizza** \> .
 
    > [!div class="mx-imgBorder"]
    > ![Menu Visualizza per Esplora risorse per i messaggi di posta elettronica](../../media/explorer-view-menu-email-user-reported.png)
 
-3. Fare clic su **mittente** e quindi scegliere tipo di report di **base**  >  **Report type**.
+3. Fare clic su **mittente** e quindi scegliere tipo di report di **base** \> .
 
 4. Selezionare un'opzione, ad esempio **phishing**, e quindi fare clic sul pulsante **Aggiorna** .
 
@@ -476,14 +476,14 @@ Per visualizzare e utilizzare esplorazioni o rilevamenti in tempo reale, è nece
 - Per il Centro sicurezza & conformità, è necessario che sia assegnato uno dei ruoli seguenti:
 
   - Gestione organizzazione
-  - Amministratore della sicurezza (è possibile assegnarlo nell'interfaccia di amministrazione di Azure Active Directory ( [https://aad.portal.azure.com](https://aad.portal.azure.com) ))
+  - Amministratore della sicurezza (è possibile assegnarlo nell'interfaccia di amministrazione di Azure Active Directory ( <https://aad.portal.azure.com> )
   - Ruolo con autorizzazioni di lettura per la sicurezza
 
-- Per Exchange Online, è necessario che sia assegnato uno dei ruoli seguenti nell'interfaccia di amministrazione di Exchange ( [https://outlook.office365.com/ecp](https://outlook.office365.com/ecp) ) o con i cmdlet di PowerShell (vedere [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell)):
+- Per Exchange Online, è necessario che sia assegnato uno dei ruoli seguenti nell'interfaccia di amministrazione di Exchange ( <https://admin.protection.outlook.com/ecp/> ) o in [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell):
 
   - Gestione organizzazione
-  - Gestione organizzazione in sola visualizzazione
-  - Ruolo Destinatari di sola lettura
+  - Gestione organizzazione sola visualizzazione
+  - Destinatari solo visualizzazione
   - Gestione della conformità
 
 Per ulteriori informazioni sui ruoli e sulle autorizzazioni, vedere le risorse seguenti:
@@ -494,7 +494,7 @@ Per ulteriori informazioni sui ruoli e sulle autorizzazioni, vedere le risorse s
 ## <a name="some-differences-between-threat-explorer-and-real-time-detections"></a>Alcune differenze tra Esplora minacce e rilevamenti in tempo reale
 
 - Il rapporto sui **rilevamenti in tempo reale** è disponibile in Defender per Office 365 piano 1, mentre **Esplora minacce** è disponibile in Defender per Office 365 piano 2.
-- Il rapporto sui **rilevamenti in tempo reale** consente di visualizzare i rilevamenti in tempo reale. **Threat Explorer** Anche questo consente di visualizzare ulteriori dettagli relativi a un determinato attacco.
+- Il rapporto sui **rilevamenti in tempo reale** consente di visualizzare i rilevamenti in tempo reale.  Anche questo consente di visualizzare ulteriori dettagli relativi a un determinato attacco.
 - La visualizzazione di **tutti i messaggi di posta elettronica** è disponibile in **Esplora minacce** (e non è presente nel rapporto **rilevamenti in tempo reale** ).
 - Altre funzionalità di filtro e le azioni disponibili sono incluse in **Esplora minacce**.
 

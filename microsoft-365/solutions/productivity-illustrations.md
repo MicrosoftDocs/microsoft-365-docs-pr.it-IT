@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 81e729d9b0ff145d1d10a385cdd3f0856287dd9f
-ms.sourcegitcommit: 490a65d32b6d656c661c36a2cc8dda03bf6cba77
+ms.openlocfilehash: 1a82fc414bfed2f7a054ae533700c52a8270ed6d
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "49588586"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49615289"
 ---
 # <a name="microsoft-365-productivity-illustrations"></a>Illustrazioni sulla produttività di Microsoft 365
 
@@ -146,7 +146,7 @@ Per ulteriori informazioni, vedere l'articolo relativo a questo poster: [Empower
 Con Microsoft 365, è possibile configurare un team privato in Microsoft teams e utilizzare le impostazioni di sicurezza del sito di SharePoint e un'etichetta di sensibilità univoca per crittografare i file in modo che solo i membri del team possano decrittografarli.
 
 [![Poster Microsoft Teams con l’isolamento di sicurezza](../media/secure-teams-security-isolation/team-security-isolation-poster.png)](../downloads/team-security-isolation-poster.pdf) <br/>
-[PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/team-security-isolation-poster.pdf) <br> Aggiornato il 2020 agosto
+[File PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/team-security-isolation-poster.pdf)  |  [PowerPoint](https://download.microsoft.com/download/8/0/5/8057fc16-c044-40b6-a652-7ed555ba2895/team-security-isolation-poster.pptx) <br> Aggiornato il 2020 agosto
 
 Per ulteriori informazioni, vedere l'articolo relativo a questo poster: [configurare un team con isolamento della sicurezza](secure-teams-security-isolation.md).
 

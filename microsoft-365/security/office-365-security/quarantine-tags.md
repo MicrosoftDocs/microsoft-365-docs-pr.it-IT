@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 ROBOTS: NOINDEX
 description: Gli amministratori possono imparare a usare i tag di quarantena per controllare quali utenti sono in grado di eseguire nei messaggi in quarantena.
-ms.openlocfilehash: 68f28e2dff3bdeada2685ef6806489f5e57f5daf
-ms.sourcegitcommit: d81c7cea85af6ad5fef81d3c930514a51464368c
+ms.openlocfilehash: 498a5f45fa62481f7f4f8dfe5ece8a51a038f99a
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "49572670"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49616009"
 ---
 # <a name="quarantine-tags"></a>Tag di quarantena
 
@@ -58,7 +58,7 @@ Se non si desiderano le autorizzazioni predefinite nei gruppi di autorizzazioni 
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare
 
-- Aprire il Centro sicurezza e conformità in <https://protection.office.com/>. Per passare direttamente alla pagina dei **tag di quarantena** , Apri <https://protection.office.com/quarantineTags> .
+- Aprire il Centro sicurezza e conformità in<https://protection.office.com/>. Per passare direttamente alla pagina dei **tag di quarantena** , Apri <https://protection.office.com/quarantineTags> .
 
 - Per informazioni su come connettersi a PowerShell per Exchange Online, vedere [Connettersi a PowerShell per Exchange Online](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell). Per connettersi a PowerShell di EOP autonomo, vedere [Connettersi a PowerShell per Exchange Online Protection](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
@@ -66,7 +66,7 @@ Se non si desiderano le autorizzazioni predefinite nei gruppi di autorizzazioni 
 
 ## <a name="step-1-create-quarantine-tags-in-the-security--compliance-center"></a>Passaggio 1: creare tag di quarantena nel centro sicurezza & Compliance
 
-1. Nel centro sicurezza & conformità, accedere a criteri di **gestione delle minacce** \> **Policy** e quindi selezionare i **tag di quarantena**.
+1. Nel centro sicurezza & conformità, accedere a criteri di **gestione delle minacce** \>  e quindi selezionare i **tag di quarantena**.
 
 2. Nella pagina dei **tag di quarantena** , selezionare **Aggiungi tag personalizzato**.
 
@@ -161,7 +161,9 @@ Per informazioni dettagliate sulla sintassi e sui parametri, vedere [New-Quarant
 Per creare un tag di quarantena utilizzando il parametro _EndUserQuarantinePermissionsValue_ , eseguire le operazioni seguenti:
 
 R. Archiviare un oggetto autorizzazioni per la quarantena in una variabile utilizzando il cmdlet **New-QuarantinePermissions** .
-<br/>
+
+<p>
+
 B. Utilizzare la variabile come valore _EndUserQuarantinePermissions_ nel comando **New-QuarantineTag** .
 
 ##### <a name="step-a-store-a-quarantine-permissions-object-in-a-variable"></a>Passaggio A: archiviare un oggetto autorizzazioni per la quarantena in una variabile
@@ -241,16 +243,16 @@ Se si è soddisfatti delle autorizzazioni dell'utente finale fornite dai tag di 
 
 Le istruzioni complete per la creazione e la modifica dei criteri di protezione da posta indesiderata sono descritte in [Configure anti-spam Policies in EOP](configure-your-spam-filter-policies.md).
 
-1. Nel centro sicurezza & conformità, accedere a criteri di **gestione delle minacce** \> **Policy** \> e quindi selezionare **protezione da posta indesiderata**. In alternativa, aprire <https://protection.office.com/antispam> .
+1. Nel centro sicurezza & conformità, accedere a criteri di **gestione delle minacce** \>  \> e quindi selezionare **protezione da posta indesiderata**. In alternativa, aprire <https://protection.office.com/antispam> .
 
 2. Individuare e selezionare un criterio di protezione da posta indesiderata esistente da modificare o creare un nuovo criterio di protezione dalla posta indesiderata.
 
 3. Nel riquadro a comparsa dettagli criteri espandere la sezione **posta indesiderata e azioni in blocco** .
-  
+
 4. Se è stato selezionato **messaggio in quarantena** per l'azione di un verdetto di filtraggio della posta indesiderata, è disponibile la casella di **tag Applica criterio di quarantena** che consente di selezionare il tag di quarantena per tale verdetto.
 
    **Nota**: quando si crea un nuovo criterio, un valore del tag di quarantena vuoto per un verdetto del filtro della posta indesiderata indica che viene utilizzato il tag di quarantena predefinito per il verdetto. Quando si modifica il criterio in un secondo momento, i valori vuoti vengono sostituiti dai nomi dei tag di quarantena predefiniti effettivi come descritto nella tabella precedente.
-  
+
    ![Selezioni dei tag di quarantena in un criterio di protezione da posta indesiderata](../../media/quarantine-tags-in-anti-spam-policies.png)
 
 5. Al termine, scegliere **Salva**.
@@ -302,7 +304,7 @@ Per informazioni dettagliate su sintassi e parametri, vedere [Set-HostedContentF
 
 Le impostazioni globali per i tag Quarantine consentono di personalizzare le notifiche di posta indesiderata dell'utente finale inviate ai destinatari dei messaggi in quarantena. Per ulteriori informazioni su queste notifiche, vedere [notifiche di posta indesiderata dell'utente finale](use-spam-notifications-to-release-and-report-quarantined-messages.md).
 
-1. Nel centro sicurezza & conformità, accedere a criteri di **gestione delle minacce** \> **Policy** e quindi selezionare i **tag di quarantena**.
+1. Nel centro sicurezza & conformità, accedere a criteri di **gestione delle minacce** \>  e quindi selezionare i **tag di quarantena**.
 
 2. Nella pagina **tag di quarantena** selezionare **Impostazioni globali**.
 
@@ -338,7 +340,7 @@ Le impostazioni globali per i tag Quarantine consentono di personalizzare le not
 
 ## <a name="view-quarantine-tags-in-the-security--compliance-center"></a>Visualizzare i tag per la quarantena nel centro sicurezza & Compliance
 
-1. Nel centro sicurezza & conformità, accedere a criteri di **gestione delle minacce** \> **Policy** e quindi selezionare i **tag di quarantena**.
+1. Nel centro sicurezza & conformità, accedere a criteri di **gestione delle minacce** \>  e quindi selezionare i **tag di quarantena**.
 
 - Per visualizzare le impostazioni dei tag di quarantena incorporati o personalizzati, selezionare il tag Quarantine nell'elenco (non selezionare la casella di controllo).
 
@@ -382,7 +384,7 @@ Per informazioni dettagliate su sintassi e parametri, vedere [Get-HostedContentF
 
   Se viene utilizzato il tag Quarantine, [sostituire il tag di quarantena assegnato prima di](#step-2-assign-a-quarantine-tag-to-supported-features) rimuoverlo.
 
-1. Nel centro sicurezza & conformità, accedere a criteri di **gestione delle minacce** \> **Policy** e quindi selezionare i **tag di quarantena**.
+1. Nel centro sicurezza & conformità, accedere a criteri di **gestione delle minacce** \>  e quindi selezionare i **tag di quarantena**.
 
 2. Nella pagina dei **tag di quarantena** selezionare il tag di quarantena personalizzato che si desidera rimuovere e il tag fare clic su **Elimina**.
 
@@ -516,7 +518,7 @@ L'autorizzazione **Consenti ai destinatari di rilasciare un messaggio dalla quar
 - **Dettagli del messaggio in quarantena**:
   - Autorizzazione abilitata: il pulsante **rilascia messaggio** è disponibile.
   - Autorizzazioni disabilitate: il pulsante **rilascia messaggio** non è disponibile.
-  
+
 - **Notifiche di posta indesiderata dell'utente finale**:
   - Autorizzazione abilitata: il pulsante **rilascia** è disponibile.
   - Autorizzazioni disabilitate: il pulsante **rilascia** non è disponibile.

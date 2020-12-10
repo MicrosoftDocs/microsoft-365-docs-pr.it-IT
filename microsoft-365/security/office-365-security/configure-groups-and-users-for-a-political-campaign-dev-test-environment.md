@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: 0e22bcf3-bad3-42a4-b44f-276e0cf4790f
 description: 'Riepilogo: creare sottoscrizioni di valutazione di Office 365 ed Enterprise Mobility + Security (EMS) con utenti e gruppi per un ambiente di sviluppo/test di una campagna politica.'
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 80454477bc55ab54ae7edf14ded5b4fa49fe1530
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 1fac15cc0b2a512745e0538ec689bd5f17555419
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48203360"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49614907"
 ---
 # <a name="configure-groups-and-users-for-a-political-campaign-devtest-environment"></a>Configurare gruppi e utenti per un ambiente di sviluppo/test per la campagna politica
 
@@ -68,7 +68,7 @@ In questa fase, vengono creati e configurati i gruppi di Azure AD per la campagn
 
 Innanzitutto, creare un set di gruppi per una campagna politica tipica con il portale di Azure.
 
-1. In una scheda separata nel browser, passare al portale di Azure all'indirizzo [https://portal.azure.com](https://portal.azure.com). Se necessario, accedere con le credenziali dell'account amministratore globale della sottoscrizione di valutazione di Office 365 E5.
+1. In una scheda separata nel browser, passare al portale di Azure all'indirizzo <https://portal.azure.com>. Se necessario, accedere con le credenziali dell'account amministratore globale della sottoscrizione di valutazione di Office 365 E5.
 
 2. Nel portale di Azure fare clic su **Azure Active Directory > Utenti e gruppi > Tutti i gruppi**.
 

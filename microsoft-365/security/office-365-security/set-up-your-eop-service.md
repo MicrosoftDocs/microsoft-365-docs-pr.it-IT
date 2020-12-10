@@ -14,12 +14,12 @@ ms.custom:
 localization_priority: Normal
 ms.assetid: d74c6ddf-11b0-43ee-b298-8bb0340895f0
 description: Gli amministratori possono ottenere informazioni su come configurare standalone Exchange Online Protection (EOP) per proteggere gli ambienti di posta elettronica locali.
-ms.openlocfilehash: 53386b700c2a2832cf16d47da0678dfb91c5b6d7
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: ab34d715bd8196bb2376926402f6a88018d1d7ae
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48197168"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49615673"
 ---
 # <a name="set-up-your-standalone-eop-service"></a>Configurare il servizio di EOP autonomo
 
@@ -29,7 +29,9 @@ ms.locfileid: "48197168"
 In questo argomento viene descritto come configurare standalone Exchange Online Protection (EOP). Se si è arrivati qui dalla configurazione guidata dei domini di Office 365, tornare alla configurazione guidata dei domini di Office 365 se non si desidera utilizzare Exchange Online Protection. Per ulteriori informazioni su come configurare i connettori, vedere [Configure mail flow using connectors in Office 365](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow).
 
 > [!NOTE]
-> In questo argomento si presuppone che siano presenti cassette postali locali e che si desideri proteggerle con EOP, noto come scenario autonomo. Se si desidera ospitare tutte le cassette postali nel cloud con Exchange Online, non è necessario completare tutti i passaggi descritti in questo argomento. Andare a [confrontare i piani di Exchange Online](https://products.office.com/exchange/compare-microsoft-exchange-online-plans) per iscriversi e acquistare le cassette postali cloud. Se si desidera ospitare alcune delle cassette postali in locale e alcune nel cloud, questo è conosciuto come uno scenario ibrido. Richiede impostazioni di flusso di posta più avanzate. Le [distribuzioni ibride di Exchange Server](https://docs.microsoft.com/exchange/exchange-hybrid) spiegano il flusso di posta ibrido e dispongono di collegamenti a risorse che illustrano come configurarlo.
+> In questo argomento si presuppone che siano presenti cassette postali locali e che si desideri proteggerle con EOP, noto come scenario autonomo. Se si desidera ospitare tutte le cassette postali nel cloud con Exchange Online, non è necessario completare tutti i passaggi descritti in questo argomento. Andare a [confrontare i piani di Exchange Online](https://products.office.com/exchange/compare-microsoft-exchange-online-plans) per iscriversi e acquistare le cassette postali cloud.
+>
+> Se si desidera ospitare alcune delle cassette postali in locale e alcune nel cloud, questo è conosciuto come uno scenario ibrido. Richiede impostazioni di flusso di posta più avanzate. Le [distribuzioni ibride di Exchange Server](https://docs.microsoft.com/exchange/exchange-hybrid) spiegano il flusso di posta ibrido e dispongono di collegamenti a risorse che illustrano come configurarlo.
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare
 
@@ -96,4 +98,6 @@ A questo punto, l'erogazione del servizio è stata verificata per un connettore 
 - Per eseguire un test della posta elettronica in uscita, è possibile inviare un messaggio di posta elettronica da un utente nell'organizzazione a un account di posta elettronica basato su Web e verificare che sia stato ricevuto.
 
 > [!TIP]
-> Al termine dell'installazione, non è necessario eseguire ulteriori operazioni perché EOP rimuova posta indesiderata e malware. EOP li rimuove automaticamente. Tuttavia, è possibile ottimizzare le impostazioni in base ai requisiti aziendali. Per ulteriori informazioni, vedere [protezione da posta indesiderata e anti-malware in Office 365](anti-spam-and-anti-malware-protection.md) e [configurare l'intelligence spoof](learn-about-spoof-intelligence.md). <br/><br/> Ora che il servizio è in esecuzione, si consiglia di leggere le procedure consigliate [per la configurazione di EOP](best-practices-for-configuring-eop.md), in cui vengono descritte le impostazioni e le considerazioni consigliate per l'installazione di EOP.
+> Al termine dell'installazione, non è necessario eseguire ulteriori operazioni perché EOP rimuova posta indesiderata e malware. EOP li rimuove automaticamente. Tuttavia, è possibile ottimizzare le impostazioni in base ai requisiti aziendali. Per ulteriori informazioni, vedere [protezione da posta indesiderata e anti-malware in Office 365](anti-spam-and-anti-malware-protection.md) e [configurare l'intelligence spoof](learn-about-spoof-intelligence.md).
+>
+> Ora che il servizio è in esecuzione, si consiglia di leggere le procedure consigliate [per la configurazione di EOP](best-practices-for-configuring-eop.md), in cui vengono descritte le impostazioni e le considerazioni consigliate per l'installazione di EOP.

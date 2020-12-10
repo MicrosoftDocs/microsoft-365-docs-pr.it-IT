@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: d1795031-beef-49ea-a6fc-5da5450d320d
 description: "Riepilogo: configurare un sito del team di SharePoint Online isolato dal resto dell'organizzazione nell'ambiente di sviluppo e di testing di Microsoft 365."
-ms.openlocfilehash: e21dccb9ef535bb997d6e62b70e5576bf531041c
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 6e056cd1d930d13e1ae20f8f8d0cdc9aa886f17e
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48199662"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49616489"
 ---
 # <a name="isolated-sharepoint-online-team-site-devtest-environment"></a>Sito del team SharePoint Online isolato nell'ambiente di sviluppo/test
 
@@ -35,9 +35,7 @@ I siti del team di SharePoint online in Microsoft 365 sono percorsi per la colla
 L'accesso ai siti del team di SharePoint Online e gli elementi che gli utenti possono eseguire sono controllati da gruppi e livelli di autorizzazione di SharePoint. Per impostazione predefinita, i siti di SharePoint Online hanno tre livelli di accesso:
 
 - **Membri**, che possono visualizzare, creare e modificare le risorse del sito.
-
 - **Proprietari**, che dispongono del controllo completo del sito, inclusa la possibilità di modificare le autorizzazioni.
-
 - **Visitatori**, che possono solo visualizzare le risorse sul sito.
 
 In questo articolo viene illustrata la configurazione di un sito del team di SharePoint Online isolato per un progetto di ricerca segreto denominato ProjectX. I requisiti di accesso sono:
@@ -139,11 +137,11 @@ Risultati
 
 - Il gruppo di accesso ProjectX-Admins contiene l'account di amministratore globale per la sottoscrizione di valutazione
 
-- Il gruppo di accesso ProjectX-Viewer contiene l'account utente Development VP
+- Il gruppo di accesso ProjectX-Viewers contiene l'account utente Development VP
 
 Nella figura 1 vengono visualizzati i gruppi di accesso e la relativa appartenenza.
 
-**Figura 1**
+**Figura 1**:
 
 ![Gruppi di Microsoft 365 e loro appartenenza a un sito di gruppo di SharePoint Online isolato](../../media/5b7373b9-2a80-4880-afe5-63ffb17237e6.png)
 
@@ -151,15 +149,15 @@ Nella figura 1 vengono visualizzati i gruppi di accesso e la relativa appartenen
 
 Per creare un sito del team di SharePoint Online per ProjectX, eseguire le operazioni seguenti:
 
-1. Utilizzando un browser sul computer locale (configurazione lightweight) o su CLIENT1 (configurazione Enterprise simulata), accedere all'interfaccia di amministrazione di Microsoft 365 ( [https://admin.microsoft.com](https://admin.microsoft.com) ) utilizzando l'account di amministratore globale.
+1. Utilizzando un browser sul computer locale (configurazione lightweight) o su CLIENT1 (configurazione Enterprise simulata), accedere all'interfaccia di amministrazione di Microsoft 365 ( <https://admin.microsoft.com> ) utilizzando l'account di amministratore globale.
 
 2. Nell'elenco dei riquadri fare clic su **SharePoint**.
 
 3. Nella nuova scheda SharePoint del browser fare clic su + **Crea sito**.
 
-4. In **nome sito del team**digitare **ProjectX**. In **impostazioni di privacy**, selezionare **membri solo privati possono accedere a questo sito**.
+4. In **nome sito del team** digitare **ProjectX**. In **impostazioni di privacy**, selezionare **membri solo privati possono accedere a questo sito**.
 
-5. In **Descrizione sito del team**, digitare **sito di SharePoint per ProjectX**e quindi fare clic su **Avanti**.
+5. In **Descrizione sito del team**, digitare **sito di SharePoint per ProjectX** e quindi fare clic su **Avanti**.
 
 6. Per **chi si desidera aggiungere**? riquadro, fare clic su **fine**.
 
@@ -199,11 +197,11 @@ Ecco i risultati della configurazione delle autorizzazioni:
 
 - Il gruppo di SharePoint membri di ProjectX contiene solo il gruppo di accesso ProjectX-Members (che contiene solo gli account utente lead designer e Lead Researcher) e il gruppo ProjectX (che contiene solo l'account utente di amministratore globale).
 
-- Il gruppo di SharePoint proprietari di ProjectX contiene solo il gruppo di accesso ProjectX-Admins (che contiene solo l'account utente dell'amministratore globale).
+- Il gruppo di SharePoint proprietari di ProjectX contiene solo il gruppo di accesso ProjectX-Admins (che contiene solo l'account utente di amministratore globale).
 
-- Il gruppo di SharePoint visitatori di ProjectX contiene solo il gruppo di accesso ProjectX-Viewer (che contiene solo l'account utente Development VP).
+- Il gruppo di SharePoint visitatori di ProjectX contiene solo il gruppo di accesso ProjectX-Viewers (che contiene solo l'account utente Development VP).
 
-- I membri non possono modificare le autorizzazioni a livello di sito, ma possono essere eseguite solo dai membri del gruppo ProjectX-Admins.
+- I membri non possono modificare le autorizzazioni a livello di sito (possono essere eseguite solo dai membri del gruppo ProjectX-Admins).
 
 - Gli altri account utente non possono accedere al sito o alle relative risorse né richiedere l'accesso al sito.
 
@@ -219,13 +217,13 @@ Ora dimostreremo l'accesso utilizzando l'account utente lead designer:
 
 2. Fare clic sul nome dell'amministratore globale, quindi fare clic su **Esci.**
 
-3. Accedere all'interfaccia di amministrazione di Microsoft 365 ( [https://admin.microsoft.com](https://admin.microsoft.com) ) utilizzando il nome dell'account del progettista principale e la relativa password.
+3. Accedere all'interfaccia di amministrazione di Microsoft 365 ( <https://admin.microsoft.com> ) utilizzando il nome dell'account del progettista principale e la relativa password.
 
 4. Nell'elenco dei riquadri fare clic su **SharePoint**.
 
 5. Nella nuova scheda **SharePoint** del browser, digitare **ProjectX** nella casella di ricerca, attivare la ricerca e quindi fare clic sul sito del team di **ProjectX** . Verrà visualizzata una nuova scheda del browser per il sito del team di ProjectX.
 
-6. Fare clic sull'icona impostazioni. Si noti che non è disponibile alcuna opzione per le autorizzazioni per il **sito**. Questo è corretto perché solo i membri del gruppo ProjectX-Admins possono modificare le autorizzazioni per il sito
+6. Fare clic sull'icona impostazioni. Si noti che non è disponibile alcuna opzione per le autorizzazioni per il **sito**. Questo è corretto perché solo i membri del gruppo di ProjectX-Admins possono modificare le autorizzazioni per il sito
 
 7. Aprire il blocco note o un editor di testo desiderato.
 
@@ -249,23 +247,23 @@ Ora dimostreremo l'accesso utilizzando l'account utente lead designer:
 
 Ora dimostreremo l'accesso utilizzando l'account utente Development VP:
 
-1. Accedere all'interfaccia di amministrazione di Microsoft 365 ( [https://admin.microsoft.com](https://admin.microsoft.com) ) utilizzando il nome dell'account Development VP e la relativa password.
+1. Accedere all'interfaccia di amministrazione di Microsoft 365 ( <https://admin.microsoft.com> ) utilizzando il nome dell'account Development VP e la relativa password.
 
 2. Nell'elenco dei riquadri fare clic su **SharePoint**.
 
 3. Nella nuova scheda **SharePoint** del browser, digitare **ProjectX** nella casella di ricerca, attivare la ricerca e quindi fare clic sul sito del team di **ProjectX** . Verrà visualizzata una nuova scheda del browser per il sito del team di ProjectX.
 
-4. Fare clic su **documenti**e quindi fare clic sul file **Document.docx** .
+4. Fare clic su **documenti** e quindi fare clic sul file **Document.docx** .
 
 5. Nella scheda **Document.docx** del browser, provare a modificare il testo. Verrà visualizzato un messaggio che indica che **il documento è di sola lettura.** Questo è previsto perché l'account utente Development VP dispone solo delle autorizzazioni di visualizzazione per il sito.
 
-6. Chiudere le schede **Document.docx**, **ProjectX-Documents**e **SharePoint** nel browser.
+6. Chiudere le schede **Document.docx**, **ProjectX-Documents** e **SharePoint** nel browser.
 
-7. Fare clic sulla scheda **Microsoft Office Home** , **fare clic sul**nome **dello sviluppo VP** e quindi fare clic su Esci.
+7. Fare clic sulla scheda **Microsoft Office Home** , **fare clic sul** nome **dello sviluppo VP** e quindi fare clic su Esci.
 
 Ora dimostreremo l'accesso con un account utente che non dispone di autorizzazioni:
 
-1. Accedere all'interfaccia di amministrazione di Microsoft 365 ( [https://admin.microsoft.com](https://admin.microsoft.com) ) utilizzando il nome dell'account utente 3 e la relativa password.
+1. Accedere all'interfaccia di amministrazione di Microsoft 365 ( <https://admin.microsoft.com> ) utilizzando il nome dell'account utente 3 e la relativa password.
 
 2. Nell'elenco dei riquadri fare clic su **SharePoint**.
 

@@ -15,12 +15,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Gli amministratori possono ottenere informazioni su come configurare le voci URL nell'elenco Consenti/blocca tenant nel centro sicurezza & Compliance.
-ms.openlocfilehash: 1aae54ffd6026a7fc131017a10f9676d96be9b69
-ms.sourcegitcommit: d81c7cea85af6ad5fef81d3c930514a51464368c
+ms.openlocfilehash: 0fdfa23ba22b240032e7a6888948de180aa0f6ae
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "49572641"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49614965"
 ---
 # <a name="manage-urls-in-the-tenant-allowblock-list"></a>Gestire URL nell'elenco di tenant consentiti/bloccati
 
@@ -38,7 +38,7 @@ In questo argomento viene descritto come configurare le voci nell'elenco Consent
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare
 
-- Aprire il Centro sicurezza e conformità in <https://protection.office.com/>. Per accedere direttamente alla pagina dell' **elenco Consenti/blocca tenant** , utilizzare <https://protection.office.com/tenantAllowBlockList> .
+- Aprire il Centro sicurezza e conformità in<https://protection.office.com/>. Per accedere direttamente alla pagina dell' **elenco Consenti/blocca tenant** , utilizzare <https://protection.office.com/tenantAllowBlockList> .
 
 - I valori degli URL disponibili sono descritti nella [sintassi degli URL per la sezione tenant Allow/Block List](#url-syntax-for-the-tenant-allowblock-list) più avanti in questo argomento.
 
@@ -60,14 +60,14 @@ In questo argomento viene descritto come configurare le voci nell'elenco Consent
 
   **Note**:
 
-  - L'aggiunta di utenti al ruolo di Azure Active Directory corrispondente nell'interfaccia di amministrazione di Microsoft 365 fornisce agli utenti le autorizzazioni necessarie per il Centro sicurezza & Compliance _e_ le autorizzazioni per altre funzionalità di Microsoft 365. Per altre informazioni, vedere [Informazioni sui ruoli di amministratore](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
-  - Il gruppo di ruoli di **gestione dell'organizzazione di sola visualizzazione** in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) fornisce anche l'accesso in sola lettura alla funzionalità.
+  - L'aggiunta di utenti al ruolo di Azure Active Directory corrispondente nell'interfaccia di amministrazione di Microsoft 365 fornisce agli utenti le autorizzazioni necessarie nel centro Sicurezza e conformità _e_ le autorizzazioni per altre funzionalità di Microsoft 365. Per altre informazioni, vedere [Informazioni sui ruoli di amministratore](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
+  - Anche il gruppo di ruoli di **Gestione organizzazione sola visualizzazione** in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) offre inoltre l'accesso di sola lettura a tale funzionalità.
 
 ## <a name="use-the-security--compliance-center-to-create-url-entries-in-the-tenant-allowblock-list"></a>Utilizzare il Centro sicurezza & conformità per creare le voci URL nell'elenco Consenti/blocca tenant
 
 Per informazioni dettagliate sulla sintassi per le voci URL, vedere la [sintassi degli URL per la sezione tenant Allow/Block List](#url-syntax-for-the-tenant-allowblock-list) più avanti in questo argomento.
 
-1. Nel centro sicurezza & conformità accedere a elenchi di criteri di **gestione delle minacce** \> **Policy** \> **tenant/Block**.
+1. Nel centro sicurezza & conformità accedere a elenchi di criteri di **gestione delle minacce** \>  \> **tenant/Block**.
 
 2. Nella pagina **elenco Consenti/blocca tenant** verificare che la scheda **URL** sia selezionata e quindi fare clic su **Aggiungi**
 
@@ -91,7 +91,7 @@ Per informazioni dettagliate sulla sintassi per le voci URL, vedere la [sintassi
 
 ## <a name="use-the-security--compliance-center-to-view-entries-in-the-tenant-allowblock-list"></a>Utilizzare il Centro sicurezza & conformità per visualizzare le voci nell'elenco Consenti/blocca tenant
 
-1. Nel centro sicurezza & conformità accedere a elenchi di criteri di **gestione delle minacce** \> **Policy** \> **tenant/Block**.
+1. Nel centro sicurezza & conformità accedere a elenchi di criteri di **gestione delle minacce** \>  \> **tenant/Block**.
 
 2. Selezionare la scheda **URL** .
 
@@ -125,7 +125,7 @@ Per cancellare i filtri esistenti, fare clic su **filtro** e, nel riquadro a com
 
 Non è possibile modificare il valore dell'URL stesso. Al contrario, è necessario eliminare la voce e ricrearla.
 
-1. Nel centro sicurezza & conformità accedere a elenchi di criteri di **gestione delle minacce** \> **Policy** \> **tenant/Block**.
+1. Nel centro sicurezza & conformità accedere a elenchi di criteri di **gestione delle minacce** \>  \> **tenant/Block**.
 
 2. Selezionare la scheda **URL** .
 
@@ -149,7 +149,7 @@ Non è possibile modificare il valore dell'URL stesso. Al contrario, è necessar
 
 ## <a name="use-the-security--compliance-center-to-remove-entries-from-the-tenant-allowblock-list"></a>Utilizzare il Centro sicurezza & conformità per rimuovere le voci dall'elenco Consenti/blocca tenant
 
-1. Nel centro sicurezza & conformità accedere a elenchi di criteri di **gestione delle minacce** \> **Policy** \> **tenant/Block**.
+1. Nel centro sicurezza & conformità accedere a elenchi di criteri di **gestione delle minacce** \>  \> **tenant/Block**.
 
 2. Selezionare la scheda **URL** .
 
@@ -296,7 +296,7 @@ Le voci URL valide e i relativi risultati sono descritte nelle sezioni seguenti.
   - test.com/q=contoso.com
   - www.contoso.com
   - www. contoso. com/q = a@contoso. com
-  
+
 - **Blocca corrispondenza**:
 
   - contoso.com
@@ -324,7 +324,7 @@ Le voci URL valide e i relativi risultati sono descritte nelle sezioni seguenti.
   - contoso.com
   - test.com/contoso.com
   - www.contoso.com/abc
-  
+
 #### <a name="scenario-right-wildcard-at-top-of-path"></a>Scenario: carattere jolly destro nella parte superiore del percorso
 
 **Voce**: `contoso.com/a/*`
@@ -341,7 +341,7 @@ Le voci URL valide e i relativi risultati sono descritte nelle sezioni seguenti.
   - contoso.com/a
   - www.contoso.com
   - www. contoso. com/q = a@contoso. com
-  
+
 #### <a name="scenario-left-tilde"></a>Scenario: tilde sinistra
 
 **Voce**: `~contoso.com`

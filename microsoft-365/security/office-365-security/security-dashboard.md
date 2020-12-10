@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Utilizzare il nuovo dashboard di sicurezza per esaminare lo stato di protezione dalle minacce di Office 365 e visualizzare e agire sugli avvisi di sicurezza.
-ms.openlocfilehash: b49422621e70d597251cd342559e59ffa0e128f6
-ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
+ms.openlocfilehash: 6a2669e3e36ee9238de99014a6c899df75204726
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48877326"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49615817"
 ---
 # <a name="security-dashboard"></a>Dashboard di sicurezza
 
@@ -55,7 +55,7 @@ Le informazioni visualizzate nel Riepilogo di gestione delle minacce dipendono d
 
 |Office 365 E3|Office 365 E5|
 |---|---|
-|Messaggi di malware bloccati<br/>Messaggi di phishing bloccati<br>Messaggi segnalati dagli utenti<br><br><br><br>|Messaggi di malware bloccati<br>Messaggi di phishing bloccati<br>Messaggi segnalati dagli utenti<br>Malware zero-day bloccato<br>Messaggi di phishing avanzati rilevati<br>URL dannosi bloccati|
+|Messaggi di malware bloccati<br>Messaggi di phishing bloccati<br>Messaggi segnalati dagli utenti<br><br><br><br>|Messaggi di malware bloccati<br>Messaggi di phishing bloccati<br>Messaggi segnalati dagli utenti<br>Malware zero-day bloccato<br>Messaggi di phishing avanzati rilevati<br>URL dannosi bloccati|
 
 Per visualizzare o accedere al widget di riepilogo di gestione delle minacce, è necessario disporre delle autorizzazioni per visualizzare i report di Defender per Office 365. Per ulteriori informazioni, vedere [quali autorizzazioni sono necessarie per visualizzare i report del difensore per Office 365?](view-reports-for-atp.md#what-permissions-are-needed-to-view-the-defender-for-office-365-reports).
 
@@ -69,8 +69,8 @@ I dettagli dipendono dal fatto che la sottoscrizione Microsoft 365 includa [Exch
 
 |Se l'abbonamento è incluso in...|Vedrai questi dettagli|
 |---|---|
-|EOP ma non Microsoft Defender per Office 365|Messaggi di posta elettronica dannosi che sono stati rilevati e bloccati da EOP.<br><br> Vedere [Threat Protection status report (EOP)](view-email-security-reports.md#threat-protection-status-report).|
-|Microsoft Defender per Office 365|Contenuto dannoso e messaggi di posta elettronica dannosi rilevati e bloccati da EOP e Defender per Office 365<br><br>Numero aggregato di messaggi di posta elettronica univoci con contenuti dannosi bloccati dal motore antimalware, [zero-hour auto Purge](zero-hour-auto-purge.md)e Defender for Office 365 features (inclusi [collegamenti sicuri](atp-safe-links.md), [allegati sicuri](atp-safe-attachments.md)e [anti-phishing in Defender per Office 365](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)).<br><br>Vedere [rapporto sullo stato della protezione dalle minacce](view-reports-for-atp.md#threat-protection-status-report).|
+|EOP ma non Microsoft Defender per Office 365|Messaggi di posta elettronica dannosi che sono stati rilevati e bloccati da EOP.<p> Vedere [Threat Protection status report (EOP)](view-email-security-reports.md#threat-protection-status-report).|
+|Microsoft Defender per Office 365|Contenuto dannoso e messaggi di posta elettronica dannosi rilevati e bloccati da EOP e Defender per Office 365 <p> Numero aggregato di messaggi di posta elettronica univoci con contenuti dannosi bloccati dal motore antimalware, [zero-hour auto Purge](zero-hour-auto-purge.md)e Defender for Office 365 features (inclusi [collegamenti sicuri](atp-safe-links.md), [allegati sicuri](atp-safe-attachments.md)e [anti-phishing in Defender per Office 365](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)). <p> Vedere [rapporto sullo stato della protezione dalle minacce](view-reports-for-atp.md#threat-protection-status-report).|
 
 Per visualizzare o accedere al widget dello stato di protezione dalle minacce, è necessario disporre delle autorizzazioni per visualizzare i report di Defender per Office 365. Per ulteriori informazioni, vedere [quali autorizzazioni sono necessarie per visualizzare i report del difensore per Office 365?](view-reports-for-atp.md#what-permissions-are-needed-to-view-the-defender-for-office-365-reports)
 

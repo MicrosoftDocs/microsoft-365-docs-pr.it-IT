@@ -16,12 +16,12 @@ ms.custom:
 - M365solutions
 f1.keywords: NOCSH
 description: Informazioni su come gestire le funzionalità correlate nei gruppi di Microsoft 365, teams, SharePoint e Yammer.
-ms.openlocfilehash: 2e4064ec64c52d4d3afe3d2e83f34079b3749f97
-ms.sourcegitcommit: 7e003ee0a06f61bfb9f80441c3479fa3148afafe
+ms.openlocfilehash: 2319a0f5b8c74925569d00eb781d247fe61a5a76
+ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49568405"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49613033"
 ---
 # <a name="what-is-collaboration-governance"></a>Che cos'è la governance di collaborazione?
 
@@ -141,7 +141,7 @@ Le funzionalità di governance per la collaborazione in Microsoft 365 includono 
 |Criteri di scadenza del gruppo|Impostare i gruppi inattivi e i team in modo che scadano e vengano eliminati dopo un determinato periodo di tempo.|Microsoft 365 E5 o E3 con licenze Premium di Azure AD|
 |Accesso guest per gruppo|Consentire o impedire la condivisione di team e gruppi con utenti esterni all'organizzazione in base ai singoli gruppi.|Microsoft 365 E5 o E3|
 
-## <a name="create-your-governance-plan"></a>Creare il piano di governance
+## <a name="collaboration-governance-planning-step-by-step"></a>Pianificazione della governance della collaborazione
 
 Seguire questi passaggi di base per creare il piano di governance:
 
@@ -208,12 +208,12 @@ L'architettura logica dei servizi di produttività in Microsoft 365, con Microso
 
 Microsoft 365 include una vasta gamma di funzionalità di protezione delle informazioni e conformità. Insieme agli strumenti di produttività di Microsoft, queste funzionalità sono progettate per consentire alle organizzazioni di collaborare in tempo reale, aderendo ai severi Framework di conformità normativi. 
 
-Questo set di illustrazioni utilizza uno dei settori più regolamentati, i servizi finanziari, per dimostrare in che modo queste funzionalità possono essere applicate per soddisfare i comuni requisiti normativi. È possibile adattare queste illustrazioni per il proprio utilizzo. 
+Questo set di illustrazioni utilizza uno dei settori più regolamentati, i servizi finanziari, per dimostrare in che modo queste funzionalità possono essere applicate per soddisfare i comuni requisiti normativi. Queste illustrazioni possono essere personalizzate. 
 
 
 | Elemento | Descrizione |
 |:-----|:-----|
-|[![Poster di modello: Microsoft 365 Information Protection and Compliance capabilities](../media/solutions-architecture-center/m365-compliance-illustrations-thumb.png)](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf) <br/> Italiano: [scaricare come](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf) \| [Download PDF come Visio](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.vsdx)   <br/> Giapponese: [scaricare come](https://download.microsoft.com/download/6/f/1/6f1a7d0e-dd8e-442e-b073-8e94327ae4f8/m365-compliance-illustrations.pdf) \| [Download PDF come Visio](https://download.microsoft.com/download/6/f/1/6f1a7d0e-dd8e-442e-b073-8e94327ae4f8/m365-compliance-illustrations.vsdx)   <br/> Aggiornato il 2020 novembre|Include <ul><li>  Microsoft Information Protection e prevenzione della perdita di dati</li><li>Criteri di conservazione ed etichette di conservazione. </li><li>Barriere informative</li><li>Conformità delle comunicazioni</li><li>Rischio Insider</li><li>Ingestione dei dati di terze parti</li>|
+|[![Modello poster: Capacità della Conformità e protezione delle informazioni di Microsoft 365](../media/solutions-architecture-center/m365-compliance-illustrations-thumb.png)](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf) <br/> Inglese: [Scarica come PDF](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf)  \| [Scarica come Visio](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.vsdx) <br/> Giapponese: [Scarica come PDF](https://download.microsoft.com/download/6/f/1/6f1a7d0e-dd8e-442e-b073-8e94327ae4f8/m365-compliance-illustrations.pdf)  \| [Scarica come Visio](https://download.microsoft.com/download/6/f/1/6f1a7d0e-dd8e-442e-b073-8e94327ae4f8/m365-compliance-illustrations.vsdx) <br/> Ultimo aggiornamento nel novembre 2020|Include <ul><li>  Protezione dell’informazione e prevenzione della perdita dei dati di Microsoft</li><li>Criteri di conservazione ed etichette di conservazione. </li><li>Barriere informative</li><li>Conformità delle comunicazioni</li><li>Rischio Insider</li><li>Gestione dei dati di terze parti</li>|
 
 ## <a name="conference-sessions"></a>Sessioni conferenza
 

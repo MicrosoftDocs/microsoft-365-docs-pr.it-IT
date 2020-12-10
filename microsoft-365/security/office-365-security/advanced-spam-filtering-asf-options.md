@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Gli amministratori possono ottenere informazioni sulle impostazioni del filtro di posta indesiderata (Advanced Spam Filter) disponibili nei criteri di protezione da posta indesiderata in Exchange Online Protection (EOP).
-ms.openlocfilehash: f9295de6fb524cff16394d305ca9247d9f7ce07b
-ms.sourcegitcommit: 9546708a5506fdbadbfe2500cbf1bd1aeaec6fcb
+ms.openlocfilehash: 3ac2b45cc03327f47bd73efe54e78312cbda4bb6
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "49020928"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49615253"
 ---
 # <a name="advanced-spam-filter-asf-settings-in-eop"></a>Impostazioni avanzate per il filtro della posta indesiderata in EOP
 
@@ -50,25 +50,25 @@ Nelle sezioni seguenti vengono descritte le impostazioni e le opzioni ASF dispon
 
 Per ogni impostazione ASF, sono disponibili le seguenti opzioni nei criteri di protezione da posta indesiderata:
 
-- **On** : ASF aggiunge il campo X-header corrispondente al messaggio e contrassegna il messaggio come **posta indesiderata** (SCL 5 o 6 per [aumentare le impostazioni del Punteggio di posta indesiderata](#increase-spam-score-settings)) o **posta indesiderata con elevata sicurezza** (SCL 9 per [Mark come impostazioni di posta indesiderata](#mark-as-spam-settings)).
+- **On**: ASF aggiunge il campo X-header corrispondente al messaggio e contrassegna il messaggio come **posta indesiderata** (SCL 5 o 6 per [aumentare le impostazioni del Punteggio di posta indesiderata](#increase-spam-score-settings)) o **posta indesiderata con elevata sicurezza** (SCL 9 per [Mark come impostazioni di posta indesiderata](#mark-as-spam-settings)).
 
-- **Disattivato** : l'impostazione ASF è disattivata. Questo è il valore predefinito e si consiglia di non modificarlo.
+- **Disattivato**: l'impostazione ASF è disattivata. Questo è il valore predefinito e si consiglia di non modificarlo.
 
-- **Test** : ASF aggiunge il campo X-header corrispondente al messaggio. Cosa succede al messaggio è determinato dal valore **Opzioni modalità di test** ( *TestModeAction* ):
+- **Test**: ASF aggiunge il campo X-header corrispondente al messaggio. Cosa succede al messaggio è determinato dal valore **Opzioni modalità di test** (*TestModeAction*):
 
-  - **None** : il recapito dei messaggi non è influenzato dal rilevamento ASF. Il messaggio è ancora soggetto ad altri tipi di filtro e regole in EOP.
+  - **None**: il recapito dei messaggi non è influenzato dal rilevamento ASF. Il messaggio è ancora soggetto ad altri tipi di filtro e regole in EOP.
 
-  - **Aggiungere il testo x-header predefinito ( *AddXHeader* )** : il valore di x-header `X-CustomSpam: This message was filtered by the custom spam filter option` viene aggiunto al messaggio. È possibile utilizzare questo valore nelle regole di posta in arrivo o nelle regole del flusso di posta (note anche come regole di trasporto) per influire sul recapito del messaggio.
+  - **Aggiungere il testo x-header predefinito (*AddXHeader*)**: il valore di x-header `X-CustomSpam: This message was filtered by the custom spam filter option` viene aggiunto al messaggio. È possibile utilizzare questo valore nelle regole di posta in arrivo o nelle regole del flusso di posta (note anche come regole di trasporto) per influire sul recapito del messaggio.
 
-  - **Send BCC Message ( *BccMessage* )** : gli indirizzi di posta elettronica specificati (il valore del parametro *TestModeBccToRecipients* in PowerShell) vengono aggiunti al campo Ccn del messaggio e il messaggio viene recapitato ai destinatari Ccn aggiuntivi. Nel centro sicurezza & conformità è possibile separare più indirizzi di posta elettronica con punti e virgola (;). In PowerShell, separare più indirizzi di posta elettronica in base alle virgole.
+  - **Send BCC Message (*BccMessage*)**: gli indirizzi di posta elettronica specificati (il valore del parametro *TestModeBccToRecipients* in PowerShell) vengono aggiunti al campo Ccn del messaggio e il messaggio viene recapitato ai destinatari Ccn aggiuntivi. Nel centro sicurezza & conformità è possibile separare più indirizzi di posta elettronica con punti e virgola (;). In PowerShell, separare più indirizzi di posta elettronica in base alle virgole.
 
-  **Note** :
+  **Note**:
 
   - La modalità di test non è disponibile per le seguenti impostazioni ASF:
 
-    - **Filtro ID mittente condizionale: errore** irreversibile ( *MarkAsSpamFromAddressAuthFail* )
-    - Backscatter del rapporto di **mancato recapito** ( *MarkAsSpamNdrBackscatter* )
-    - **Record SPF: errore** irreversibile ( *MarkAsSpamSpfRecordHardFail* )
+    - **Filtro ID mittente condizionale: errore** irreversibile (*MarkAsSpamFromAddressAuthFail*)
+    - Backscatter del rapporto di **mancato recapito**(*MarkAsSpamNdrBackscatter*)
+    - **Record SPF: errore** irreversibile (*MarkAsSpamSpfRecordHardFail*)
 
   - La stessa azione in modalità test viene applicata a *tutte* le impostazioni ASF che sono impostate su **test**. Non è possibile configurare diverse azioni in modalità test per diverse impostazioni ASF.
 
@@ -100,9 +100,9 @@ Le seguenti impostazioni ASF consentono di impostare su 9 il livello SCL dei mes
 |**Tag Object in HTML** <p> *MarkAsSpamObjectTagsInHtml*|I messaggi che contengono `<object>` tag HTML sono contrassegnati come posta indesiderata con elevata sicurezza. <p> Questo tag consente l'esecuzione di plug-in o applicazioni in una finestra HTML.|`X-CustomSpam: Object tag in html`|
 |**Tag Embed in HTML** <p> *MarkAsSpamEmbedTagsInHtml*|Il messaggio che contiene `<embed>` tag HTML è contrassegnato come posta indesiderata con elevata sicurezza. <p> Questo tag consente di incorporare diversi tipi di documenti in un documento HTML (ad esempio, suoni, video o immagini).|`X-CustomSpam: Embed tag in html`|
 |**Tag Form in HTML** <p> *MarkAsSpamFormTagsInHtml*|I messaggi che contengono `<form>` tag HTML sono contrassegnati come posta indesiderata con elevata sicurezza. <p> Questo tag viene utilizzato per creare moduli sito Web. I messaggi pubblicitari inviati tramite posta elettronica includono spesso questo tag per la richiesta di informazioni al destinatario.|`X-CustomSpam: Form tag in html`|
-|**Bug Web in HTML** <p> *MarkAsSpamWebBugsInHtml*|Un *bug Web* (noto anche come *Web Beacon* ) è un elemento grafico (spesso piccolo come un pixel di un pixel) utilizzato nei messaggi di posta elettronica per determinare se il messaggio è stato letto dal destinatario. <p> I messaggi che contengono bug Web sono contrassegnati come posta indesiderata con elevata attendibilità. <p> Le newsletter legittime possono utilizzare i bug Web, anche se molti considerano questa un'invasione della privacy. |`X-CustomSpam: Web bug`|
+|**Bug Web in HTML** <p> *MarkAsSpamWebBugsInHtml*|Un *bug Web* (noto anche come *Web Beacon*) è un elemento grafico (spesso piccolo come un pixel di un pixel) utilizzato nei messaggi di posta elettronica per determinare se il messaggio è stato letto dal destinatario. <p> I messaggi che contengono bug Web sono contrassegnati come posta indesiderata con elevata attendibilità. <p> Le newsletter legittime possono utilizzare i bug Web, anche se molti considerano questa un'invasione della privacy. |`X-CustomSpam: Web bug`|
 |**Applica elenco parole sensibili** <p> *MarkAsSpamSensitiveWordList*|Microsoft mantiene un elenco dinamico ma non modificabile di parole associate a messaggi potenzialmente offensivi. <p> I messaggi che contengono parole provenienti dall'elenco di Word sensibili nell'oggetto o nel corpo del messaggio vengono contrassegnati come posta indesiderata con elevata sicurezza.|`X-CustomSpam: Sensitive word in subject/body`|
 |**Record SPF: non riuscito** <p> *MarkAsSpamSpfRecordHardFail*|I messaggi inviati da un indirizzo IP che non è specificato nel record SPF (SPF Sender Policy Framework) in DNS per il dominio di posta elettronica di origine sono contrassegnati come posta indesiderata con elevata sicurezza. <p> La modalità di test non è disponibile per questa impostazione.|`X-CustomSpam: SPF Record Fail`|
 |**Filtro dell'ID mittente condizionale: non riuscito** <p> *MarkAsSpamFromAddressAuthFail*|Messaggi che non riescono a un controllo dell'ID mittente condizionale sono contrassegnati come posta indesiderata. <p> Questa impostazione consente di combinare un controllo SPF con un controllo dell'ID mittente per proteggere le intestazioni dei messaggi che contengono mittenti contraffatti. <p> La modalità di test non è disponibile per questa impostazione.|`X-CustomSpam: SPF From Record Fail`|
-|**Posta indesiderata costituita da falsi rapporti di mancato recapito di NDR** <p> *MarkAsSpamNdrBackscatter*|*Backscatter* è inutili rapporti di mancato recapito (noti anche come NDR o messaggi di rimbalzo) causati da mittenti contraffatti nei messaggi di posta elettronica. Per ulteriori informazioni, vedere [backscatter messages and EOP](backscatter-messages-and-eop.md). <p> Non è necessario configurare questa impostazione negli ambienti seguenti, in quanto i rapporti di mancato recapito vengono recapitati e la backscattering è contrassegnata come posta indesiderata: <ul><li>Microsoft 365 organizzazioni con cassette postali di Exchange Online.</li><li>Organizzazioni di posta elettronica locali in cui viene instradata la posta elettronica in *uscita* tramite EOP.</li></ul><br/> In ambienti EOP autonomi che proteggono la posta elettronica in arrivo nelle cassette postali locali, l'attivazione o la disattivazione di questa impostazione ha il seguente risultato: <ul><li> **On** : i rapporti di mancato recapito legittimi vengono recapitati e il backscatter è contrassegnato come posta</li><li>**Disattivato** : i rapporti di mancato recapito e backscattering legittimi passano attraverso il filtro normale. La maggior parte dei rapporti di mancato recapito legittimi verrà recapitata al mittente. Alcuni, ma non tutti, backscatter sono contrassegnati come posta indesiderata con elevata sicurezza. Per definizione, il backscatter può essere recapitato solo al mittente falsificato, non al mittente originale.</li></ul><br/> La modalità di test non è disponibile per questa impostazione.|`X-CustomSpam: Backscatter NDR`|
+|**Posta indesiderata costituita da falsi rapporti di mancato recapito di NDR** <p> *MarkAsSpamNdrBackscatter*|*Backscatter* è inutili rapporti di mancato recapito (noti anche come NDR o messaggi di rimbalzo) causati da mittenti contraffatti nei messaggi di posta elettronica. Per ulteriori informazioni, vedere [backscatter messages and EOP](backscatter-messages-and-eop.md). <p> Non è necessario configurare questa impostazione negli ambienti seguenti, in quanto i rapporti di mancato recapito vengono recapitati e la backscattering è contrassegnata come posta indesiderata: <ul><li>Microsoft 365 organizzazioni con cassette postali di Exchange Online.</li><li>Organizzazioni di posta elettronica locali in cui viene instradata la posta elettronica in *uscita* tramite EOP.</li></ul> <p> In ambienti EOP autonomi che proteggono la posta elettronica in arrivo nelle cassette postali locali, l'attivazione o la disattivazione di questa impostazione ha il seguente risultato: <ul><li> **On**: i rapporti di mancato recapito legittimi vengono recapitati e il backscatter è contrassegnato come posta</li><li>**Disattivato**: i rapporti di mancato recapito e backscattering legittimi passano attraverso il filtro normale. La maggior parte dei rapporti di mancato recapito legittimi verrà recapitata al mittente. Alcuni, ma non tutti, backscatter sono contrassegnati come posta indesiderata con elevata sicurezza. Per definizione, il backscatter può essere recapitato solo al mittente falsificato, non al mittente originale.</li></ul> <p> La modalità di test non è disponibile per questa impostazione.|`X-CustomSpam: Backscatter NDR`|
 |

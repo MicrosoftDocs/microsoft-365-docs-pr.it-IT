@@ -19,12 +19,12 @@ search.appverid:
 - GEA150
 ms.assetid: fc1cf1d0-cd84-43fd-adb7-a4c4dfa8112d
 description: Informazioni su come ottenere un report degli utenti attivi utilizzando il Dashboard Microsoft 365 Reports nell'interfaccia di amministrazione di Microsoft 365 e scoprire quante licenze di prodotto vengono utilizzate.
-ms.openlocfilehash: 162e818e96f6301cf0ec31580950be1ae19a0f35
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 0f5d113bf17d338c52f998db45a8626a6636a996
+ms.sourcegitcommit: 039205fdaaa2a233ff7e95cd91bace474b84b68c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48636996"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49611341"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---active-users"></a>Rapporti Microsoft 365 nell'interfaccia di amministrazione-utenti attivi
 
@@ -49,7 +49,7 @@ Ad esempio, è possibile usare il report **Utenti attivi** per sapere quante lic
 |1.  <br/> |Il report **Utenti attivi** può essere visualizzato per le tendenze degli ultimi 7, 30, 90 o 180 giorni. Tuttavia, se si visualizza un giorno specifico nel report, la tabella (7) visualizzerà i dati per un massimo di 28 giorni dalla data corrente (non la data in cui è stato generato il report).  <br/> |
 |2.  <br/> |In genere, i dati di ogni report coprono fino alle ultime 24-48 ore.  <br/> |
 |3.  <br/> |Il grafico **Utenti attivi** mostra gli utenti attivi giornalieri nel periodo della relazione separati per prodotto.  <br/> Il grafico **Servizi** mostra il numero di utenti per tipo di attività e servizio.  <br/> |
-|4.  <br/> | Nel grafico **Utenti attivi** l'asse x mostra il periodo della relazione selezionato, mentre l'asse y mostra gli utenti attivi giornalieri separati e codificati per colore in base al tipo di licenza.  <br/>  Nel grafico attività **Servizi**, l'asse X mostra i servizi individuali per cui sono abilitati gli utenti nel periodo di tempo specificato, mentre l'asse Y indica il numero di utenti codificati per colore in base allo stato di attività.  <br/> |
+|4.  <br/> | Nel grafico **utenti attivi** , l'asse x Mostra il periodo di tempo per la creazione di rapporti selezionati e l'asse y Visualizza gli utenti attivi giornalieri separati e con codice a colori per tipo di licenza.  <br/>  Nel grafico attività **Servizi**, l'asse X mostra i servizi individuali per cui sono abilitati gli utenti nel periodo di tempo specificato, mentre l'asse Y indica il numero di utenti codificati per colore in base allo stato di attività.  <br/> |
 |5.  <br/> |È possibile filtrare la serie visualizzata nel grafico selezionando un elemento nella legenda. La modifica di questa selezione non modifica le informazioni nella tabella della griglia.  <br/> |
 |6.  <br/> |È inoltre possibile esportare i dati del report in un file CSV di Excel selezionando il collegamento **Esporta** ![ Esporta i dati in un file di Excel ](../../media/816a224b-6ca7-4967-a135-4f6427f64dc8.JPG) . Vengono esportati i dati di tutti gli utenti, che possono poi essere ordinati e filtrati per ulteriore analisi. Se gli utenti sono meno di 2000, è possibile ordinarli e filtrarli direttamente nella tabella del report. Se invece gli utenti sono più di 2000, per ordinarli e filtrarli occorre esportare i dati.  <br/> |
 |7.  <br/> |È possibile cambiare le informazioni visualizzate nella tabella della griglia con i controlli colonna.  <br/> Se l'abbonamento è gestito da 21Vianet, non verrà visualizzato Yammer. <br/> <br/> |

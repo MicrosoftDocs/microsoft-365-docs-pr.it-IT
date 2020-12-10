@@ -20,12 +20,12 @@ ms.topic: conceptual
 ms.date: 10/09/2020
 ms.custom: seo-marvel-apr2020
 ms.reviewer: vippand
-ms.openlocfilehash: 01a5e374396b1f7ef79dff436cd9ecc4e0c4abf1
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.openlocfilehash: d219895767919c2a0658f8b83150fe6edde01b5b
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49357238"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49615553"
 ---
 # <a name="whats-new-in-microsoft-defender-for-office-365"></a>Novità di Microsoft Defender per Office 365
 
@@ -56,7 +56,7 @@ In questo articolo vengono elencate le nuove funzionalità nell'ultima versione 
 ## <a name="julyaugust-2020"></a>Luglio/agosto 2020
 
 - [Miglioramenti dell'esperienza di caccia](threat-explorer.md#experience-improvements-to-threat-explorer-and-real-time-detections) (Microsoft Defender per Office 365 piano 1 o piano 2)
-- [Applicare facilmente le impostazioni consigliate utilizzando i criteri di sicurezza predefiniti](preset-security-policies.md) 
+- [Applicare facilmente le impostazioni consigliate utilizzando i criteri di sicurezza predefiniti](preset-security-policies.md)
 
 ## <a name="marchapril-2020"></a>Marzo/aprile 2020
 
@@ -71,7 +71,7 @@ In questo articolo vengono elencate le nuove funzionalità nell'ultima versione 
   - Advanced NOT Filters (queste sono le opzioni di filtro avanzate che includono non contiene, non include, ecc.)
   - Filtri temporali granulari (giorno, ora, mezz'ora)
 
-- Il widget **eventi** non consentiti è ora il widget **Centro azioni** . Per visualizzare i widget di sicurezza, nel centro sicurezza & conformità, accedere a **gestione minacce**  >  **Revisione**.) (Microsoft Defender per Office 365 piano 2)
+- Il widget **eventi** non consentiti è ora il widget **Centro azioni** . Per visualizzare i widget di sicurezza, nel centro sicurezza & conformità, accedere a **gestione minacce** \> **Revisione**.) (Microsoft Defender per Office 365 piano 2)
 
 - [Documenti attendibili in Microsoft 365](safe-docs.md) **(anteprima)**
 
@@ -105,7 +105,7 @@ In questo articolo vengono elencate le nuove funzionalità nell'ultima versione 
 
 - [Visualizzare i dati relativi agli URL di phishing e fare clic su Verdet](threat-explorer.md#view-data-about-phishing-urls-and-click-verdict) (Microsoft Defender per Office 365 piano 1 o piano 2)
 
-## <a name="microsoft-defender-for-office-365-plan-1-and-plan-2"></a>Microsoft Defender per Office 365 Piano 1 e Piano 2
+## <a name="microsoft-defender-for-office-365-plan-1-and-plan-2"></a>Microsoft Defender per Office 365 piano 1 e piano 2
 
 Lo sapevate che Microsoft Defender per Office 365 è disponibile in due piani? Ulteriori [informazioni su ciò che include ogni piano](office-365-atp.md#microsoft-defender-for-office-365-plan-1-and-plan-2).
 

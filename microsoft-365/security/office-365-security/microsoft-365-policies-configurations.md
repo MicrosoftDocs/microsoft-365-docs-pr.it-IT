@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - m365solution-identitydevice
 - m365solution-overview
-ms.openlocfilehash: 0144e9478e74e252e0c4ccc0c902df376129c388
-ms.sourcegitcommit: c1dd5be42fe0c5dcc7c05817c941edd9076febf8
+ms.openlocfilehash: c5c6dae49943aba4288ef2a0dfe9662b02d3b054
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "49558287"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49616369"
 ---
 # <a name="identity-and-device-access-configurations"></a>Configurazioni di identità e accesso dei dispositivi
 
@@ -43,9 +43,8 @@ Queste funzionalità e i relativi suggerimenti:
 
 Se nell'organizzazione sono presenti requisiti o complessità univoci per l'ambiente, utilizzare questi suggerimenti come punto di partenza. Tuttavia, la maggior parte delle organizzazioni può implementare questi suggerimenti come prescritto.
 
->[!Note]
->Microsoft vende anche licenze Enterprise Mobility + Security (EMS) per le sottoscrizioni di Office 365. Le funzionalità EMS E3 e EMS E5 sono equivalenti a quelle di Microsoft 365 E3 e Microsoft 365 E5. Vedere i [piani di EMS](https://www.microsoft.com/en-us/microsoft-365/enterprise-mobility-security/compare-plans-and-pricing) per i dettagli.
->
+> [!NOTE]
+> Microsoft vende anche licenze Enterprise Mobility + Security (EMS) per le sottoscrizioni di Office 365. Le funzionalità EMS E3 e EMS E5 sono equivalenti a quelle di Microsoft 365 E3 e Microsoft 365 E5. Vedere i [piani di EMS](https://www.microsoft.com/microsoft-365/enterprise-mobility-security/compare-plans-and-pricing) per i dettagli.
 
 ## <a name="intended-audience"></a>Pubblico previsto
 
@@ -83,7 +82,7 @@ In questa guida viene illustrato come implementare la protezione per identità e
 
 Il modello **di architettura di Microsoft 365 per l'identità e la protezione dei dispositivi** indica quali funzionalità sono confrontabili.
 
-[![Immagine del pollice per l'identità e la protezione del dispositivo per il poster di Microsoft 365](../../media/microsoft-365-policies-configurations/O365_Identity_device_protection_thumb.png)](../../downloads/MSFT_cloud_architecture_identity&device_protection.pdf) <br/>  [Visualizzazione in formato PDF](../../downloads/MSFT_cloud_architecture_identity&device_protection.pdf) \| [Scarica come PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_identity&device_protection.pdf) \| [Scaricare come Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_identity&device_protection.vsdx)  
+[![Immagine del pollice per l'identità e la protezione del dispositivo per il poster di Microsoft 365](../../media/microsoft-365-policies-configurations/O365_Identity_device_protection_thumb.png)](../../downloads/MSFT_cloud_architecture_identity&device_protection.pdf) <br> [Visualizzazione in formato PDF](../../downloads/MSFT_cloud_architecture_identity&device_protection.pdf) \| [Scarica come PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_identity&device_protection.pdf) \| [Scaricare come Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_identity&device_protection.vsdx)  
 
 Vedere inoltre la soluzione [deploy Information Protection for data privacy Regulations](../../solutions/information-protection-deploy.md) per proteggere le informazioni archiviate in Microsoft 365.
 

@@ -11,14 +11,14 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 description: Informazioni su come creare un payload personalizzato per la formazione di simulazione di attacco in Microsoft Defender per Office 365.
-ms.openlocfilehash: ffb5397d9b39a35b4cb8bd0fdb3301cd156896e1
-ms.sourcegitcommit: dab50e1cc5bba920720b80033c93457f5ca1c330
+ms.openlocfilehash: a8366e6cbf703ef1e1a14e216ada71200668cd14
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "48944522"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49616273"
 ---
-# <a name="create-a-custom-payload-for-attack-simulation-training"></a>Creare un payload personalizzato per la formazione di simulazione di attacco
+# <a name="create-a-custom-payload-for-attack-simulation-training"></a>Creare un payload personalizzato per la formazione del Simulatore di attacchi
 
 Microsoft offre un robusto catalogo di payload per varie tecniche di social engineering per la combinazione con la formazione di simulazione di attacco. Tuttavia, potrebbe essere necessario creare payload personalizzati che funzioneranno meglio per la propria organizzazione. Di seguito viene descritto come creare un payload nell'addestramento di simulazione di attacco tramite Microsoft Defender per Office 365.
 
@@ -60,7 +60,7 @@ Aggiungere una descrizione personalizzata per descrivere l'indicatore e fare cli
 
 ## <a name="review-payload"></a>Verifica payload
 
-La creazione del payload è stata completata. Ora è il momento di esaminare i dettagli e visualizzare un'anteprima del payload. L'anteprima include tutti gli indicatori che sono stati creati. È possibile modificare ogni parte del payload da questo passaggio. Una volta soddisfatti, **inviare** il payload. 
+La creazione del payload è stata completata. Ora è il momento di esaminare i dettagli e visualizzare un'anteprima del payload. L'anteprima include tutti gli indicatori che sono stati creati. È possibile modificare ogni parte del payload da questo passaggio. Una volta soddisfatti, **inviare** il payload.
 
 > [!IMPORTANT]
 > I payload creati avranno il set di **tenant** come origine. Quando si seleziona payload, assicurarsi che il **tenant** non sia stato filtrato.

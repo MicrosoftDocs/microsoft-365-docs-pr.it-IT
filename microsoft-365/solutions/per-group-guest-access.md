@@ -1,5 +1,5 @@
 ---
-title: Impedire che gli utenti guest vengano aggiunti a un gruppo specifico
+title: Impedire agli utenti di essere aggiunti a un gruppo specifico
 ms.reviewer: arvaradh
 ms.author: mikeplum
 author: MikePlumleyMSFT
@@ -14,15 +14,15 @@ ms.collection:
 ms.custom:
 - M365solutions
 f1.keywords: NOCSH
-description: Informazioni su come impedire che gli utenti guest vengano aggiunti a un gruppo specifico
-ms.openlocfilehash: 91c7560186fb0b954075e9ff9c997b34121951cd
-ms.sourcegitcommit: cdf2b8dad7db9e16afd339abaaa5397faf11807c
+description: Informazioni su come impedire agli utenti di essere aggiunti a un gruppo specifico
+ms.openlocfilehash: 99e78932b29d25054922b56fcadb608a7dfca432
+ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48651351"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49613057"
 ---
-# <a name="prevent-guest-users-from-being-added-to-a-specific-microsoft-365-group-or-microsoft-teams-team"></a>Impedire che gli utenti guest vengano aggiunti a un gruppo Microsoft 365 o a un team di Microsoft Teams
+# <a name="prevent-guests-from-being-added-to-a-specific-microsoft-365-group-or-microsoft-teams-team"></a>Impedire agli utenti di essere aggiunti a un gruppo Microsoft 365 o a un team di Microsoft Teams
 
 Se si desidera consentire agli utenti di accedere alla maggior parte dei gruppi e ai team, ma si desidera impedire l'accesso guest, è possibile bloccare l'accesso guest per singoli gruppi e team. Bloccando l'accesso Guest a un team, è possibile bloccare l'accesso Guest al gruppo associato. In questo modo si impedisce l'aggiunta di nuovi ospiti, ma non vengono rimossi gli ospiti già presenti nel gruppo o nel team.
 
@@ -69,7 +69,7 @@ La verifica è simile alla seguente:
   
 ## <a name="allow-or-block-guest-access-based-on-their-domain"></a>Consenti o blocca l'accesso guest in base al dominio
 
-È possibile autorizzare o bloccare utenti guest che utilizzano uno specifico dominio. Ad esempio, se la propria azienda (contoso) ha una partnership con un'altra azienda (Fabrikam), è possibile aggiungere Fabrikam all'elenco Consenti in modo che gli utenti possano aggiungerli ai propri gruppi.
+È possibile consentire o bloccare gli utenti che utilizzano un dominio specifico. Ad esempio, se la propria azienda (contoso) ha una partnership con un'altra azienda (Fabrikam), è possibile aggiungere Fabrikam all'elenco Consenti in modo che gli utenti possano aggiungerli ai propri gruppi.
 
 Per ulteriori informazioni, vedere [Consenti o blocca gli inviti agli utenti B2B provenienti da organizzazioni specifiche](https://docs.microsoft.com/azure/active-directory/b2b/allow-deny-list).
 
@@ -77,7 +77,7 @@ Per ulteriori informazioni, vedere [Consenti o blocca gli inviti agli utenti B2B
 
 Per impostazione predefinita, gli utenti non sono visibili nell'elenco indirizzi globale di Exchange. Utilizzare la procedura riportata di seguito per rendere visibile un ospite nell'elenco indirizzi globale.
 
-Individuare l'ObjectID dell'utente Guest eseguendo:
+Individuare l'ObjectID dell'ospite eseguendo le operazioni seguenti:
 
 ```PowerShell
 Get-AzureADUser -Filter "userType eq 'Guest'"
@@ -89,7 +89,11 @@ Eseguire quindi il comando seguente utilizzando i valori corretti per ObjectID, 
 Set-AzureADUser -ObjectId cfcbd1a0-ed18-4210-9b9d-cf0ba93cf6b2 -ShowInAddressList $true -GivenName 'Megan' -Surname 'Bowen' -DisplayName 'Megan Bowen' -TelephoneNumber '555-555-5555'
 ```
 
-## <a name="related-articles"></a>Articoli correlati
+## <a name="related-topics"></a>Argomenti correlati
+
+[Pianificazione della governance della collaborazione](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
+
+[Creare il piano di governance di collaborazione](collaboration-governance-first.md)
 
 [Gestire l'appartenenza ai gruppi nell'interfaccia di amministrazione di Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/create-groups/add-or-remove-members-from-groups)
   

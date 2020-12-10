@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Informazioni su come gli utenti lavorano con etichette di riservatezza nelle app di Office per desktop, dispositivi mobili e Web e quali app supportano le etichette di riservatezza.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 685228823c87eff975fabd2dd398c1b67be8eeef
-ms.sourcegitcommit: e53234b1f64ebca00e121da1706c02b3337c35f0
+ms.openlocfilehash: 3a8d0181b7a17922f788605953fc9af3ca450d6d
+ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "49580739"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49613620"
 ---
 # <a name="use-sensitivity-labels-in-office-apps"></a>Usare le etichette di riservatezza nelle app di Office
 
@@ -254,12 +254,12 @@ Quando si configura un'etichetta di riservatezza per i contrassegni di contenuto
 
 | Variabile | Descrizione | Esempio di applicazione dell'etichetta |
 | -------- | ----------- | ------- |
-| `${Item.Label}` | Nome visualizzato dell'etichetta corrente | **Generale**|
-| `${Item.Name}` | Nome del file corrente o oggetto di posta elettronica | **Sales.docx** |
-| `${Item.Location}` | Percorso e nome di file correnti del documento o dell'oggetto di posta elettronica per un messaggio di posta elettronica | **\\\Sales\2020\Q3\Report.docx**|
-| `${User.Name}` | Nome visualizzato dell'utente corrente  | **Richard Simone** |
-| `${User.PrincipalName}` | Nome dell'entità utente (UPN) utente corrente di Azure AD | **rsimone \@ contoso.com** |
-| `${Event.DateTime}` | Data e ora correnti per il fuso orario locale | **8/10/2020 1:30 PM** |
+| `${Item.Label}` | Nome visualizzato dell'etichetta dell'etichetta applicata| **Generale**|
+| `${Item.Name}` | Nome file o oggetto di posta elettronica del contenuto etichettato | **Sales.docx** |
+| `${Item.Location}` | Percorso e nome di file del documento che viene etichettato o dell'oggetto di posta elettronica per un messaggio di posta elettronica di cui è stata eseguita l'etichetta | **\\\Sales\2020\Q3\Report.docx**|
+| `${User.Name}` | Nome visualizzato dell'utente che applica l'etichetta| **Richard Simone** |
+| `${User.PrincipalName}` | Nome dell'entità utente (UPN) di Azure AD dell'utente che applica l'etichetta | **rsimone \@ contoso.com** |
+| `${Event.DateTime}` | Data e ora in cui il contenuto è etichettato, nel fuso orario locale dell'utente che applica l'etichetta | **8/10/2020 1:30 PM** |
 
 > [!NOTE]
 > La sintassi di tali variabili è distinzione tra maiuscole e minuscole.
@@ -321,7 +321,7 @@ Esempi:
     `${If.App.WP}This content is ${If.End}Confidential`
 
     In Word e PowerPoint, l'etichetta applica il testo della filigrana "questo contenuto è riservato". In Excel, l'etichetta applica il testo della filigrana "confidenziale". In Outlook l'etichetta non applica alcun testo della filigrana perché le filigrane come segni visivi non sono supportate per Outlook.
->>>>>>> a51fef4b19dc23a23a161de3e8333dcd7527540b
+
 
 ## <a name="end-user-documentation"></a>Documentazione per gli utenti finali
 

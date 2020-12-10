@@ -21,12 +21,12 @@ ms.collection:
 ms.topic: conceptual
 ms.custom:
 - autoir
-ms.openlocfilehash: 27edc44145e7b61768d9caf00a3f308e8561d708
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.openlocfilehash: 0fe8891f5ea6af215791c5f4321a93667a9d58f0
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49357400"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49616177"
 ---
 # <a name="how-to-report-false-positivesnegatives-in-automated-investigation-and-response-capabilities"></a>Come segnalare falsi positivi/negativi nelle funzionalità di analisi e risposta automatizzate
 
@@ -79,9 +79,9 @@ Con Esplora minacce, il team delle operazioni di sicurezza può trovare un messa
 
 Nel centro azioni, è possibile visualizzare le azioni di correzione eseguite e potenzialmente annullare l'azione.
 
-1. Andare su [https://protection.office.com](https://protection.office.com) ed eseguire l'accesso. Questo porta al centro sicurezza & Compliance.
+1. Andare su <https://protection.office.com> ed eseguire l'accesso. Questo porta al centro sicurezza & Compliance.
 
-2. Andare a indagini sulla **gestione delle minacce**  >  **Investigations**.
+2. Andare a indagini sulla **gestione delle minacce** \> .
 
 3. Nell'elenco delle indagini selezionare l'icona **Apri in nuova finestra** accanto all'ID di un elemento.
 

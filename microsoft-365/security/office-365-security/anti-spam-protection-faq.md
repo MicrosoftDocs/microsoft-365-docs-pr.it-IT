@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Gli amministratori possono visualizzare le domande frequenti e le risposte sulla protezione dalla posta indesiderata in Exchange Online Protection (EOP).
-ms.openlocfilehash: d2505eea572e512b306cf26c7a57d1dc1b705c0b
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 21c70f1942703b8e5f3f4d96b136aff46afcc32b
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48844465"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49615433"
 ---
 # <a name="anti-spam-protection-faq"></a>Domande frequenti sulla protezione da posta indesiderata
 
@@ -105,9 +105,9 @@ Se più della metà della posta inviata da un utente tramite il servizio entro u
 
 Sì. Anche se è consigliabile puntare il record MX a Microsoft, ci si rende conto che esistono motivi aziendali legittimi per instradare la posta elettronica in un punto diverso da Microsoft First.
 
-- In **ingresso** : modificare i record MX in modo che puntino al provider di terze parti e quindi reindirizzare i messaggi a EOP per ulteriori elaborazioni. Per ulteriori informazioni, vedere [Enhanced Filtering for Connectors in Exchange Online](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).
+- In **ingresso**: modificare i record MX in modo che puntino al provider di terze parti e quindi reindirizzare i messaggi a EOP per ulteriori elaborazioni. Per ulteriori informazioni, vedere [Enhanced Filtering for Connectors in Exchange Online](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).
 
-- In **uscita** : configurare il routing di smart host da Microsoft 365 al provider di terze parti di destinazione.
+- In **uscita**: configurare il routing di smart host da Microsoft 365 al provider di terze parti di destinazione.
 
 ## <a name="does-microsoft-have-any-documentation-about-how-i-can-protect-myself-from-phishing-scams"></a>Microsoft dispone di documentazione su come è possibile proteggersi da tentativi di phishing?
 
@@ -124,7 +124,7 @@ Le linee guida presentate di seguito rappresentano le procedure ottimali per l'i
 - **Il dominio di posta elettronica di origine deve essere risolto in DNS.**
 
   Ad esempio, se il mittente è user@fabrikam, il dominio Fabrikam viene risolto nell'indirizzo IP 192.0.43.10.
-  
+
   Se un dominio di invio non ha record A e record MX in DNS, il servizio instrada il messaggio attraverso il pool di recapito ad altro rischio a prescindere che il contenuto del messaggio sia posta indesiderata o meno. Per ulteriori informazioni sul pool di recapito a rischio elevato, vedere [pool di recapito ad alto rischio per i messaggi in uscita](high-risk-delivery-pool-for-outbound-messages.md).
 
 - **La posta in uscita eServer deve avere una voce DNS (PTR) inversa.**
@@ -155,11 +155,11 @@ Le linee guida presentate di seguito rappresentano le procedure ottimali per l'i
 
   Il corpo del messaggio deve contenere una chiara indicazione dell'offerta, servizio o prodotto. Ad esempio, se un mittente sta inviando posta in blocco per la società Contoso, i campi Da e Oggetto devono essere simili ai seguenti:
 
-  > Da: marketing@contoso.com <br/> Oggetto: Nuovo catalogo per Natale!
+  > Da: marketing@contoso.com <br> Oggetto: Nuovo catalogo per Natale!
 
   Di seguito viene riportato un esempio di cosa non fare, perché non è descrittivo:
 
-  > Da: utente@hotmail.com <br/> Oggetto: Cataloghi
+  > Da: utente@hotmail.com <br> Oggetto: Cataloghi
 
 - **Se si invia posta in blocco a molti destinatari e il messaggio è in formato newsletter, nella parte finale del messaggio occorre fornire un modo per annullare la sottoscrizione.**
 

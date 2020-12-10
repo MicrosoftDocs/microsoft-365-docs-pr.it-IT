@@ -15,12 +15,12 @@ ms.custom:
 - M365solutions
 f1.keywords: NOCSH
 description: Informazioni sugli scenari di collaborazione per la governance della comunicazione.
-ms.openlocfilehash: 05644b5d86fc3ca83e7d140a73666a172937bd54
-ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
+ms.openlocfilehash: 4b60f0be3cde23330880d652bc62110cf4e55175
+ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48377522"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49613679"
 ---
 # <a name="communications-governance-for-collaboration-scenarios"></a>Governance delle comunicazioni per scenari di collaborazione
 
@@ -67,6 +67,10 @@ La conformità alla comunicazione in Microsoft 365 consente di esaminare le comu
 [Conformità della comunicazione in Microsoft 365](https://docs.microsoft.com/microsoft-365/compliance/communication-compliance)
 
 ## <a name="related-topics"></a>Argomenti correlati
+
+[Pianificazione della governance della collaborazione](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
+
+[Creare il piano di governance di collaborazione](collaboration-governance-first.md)
 
 [Gestire le impostazioni di Microsoft teams per l'organizzazione](https://docs.microsoft.com/microsoftteams/enable-features-office-365)
 

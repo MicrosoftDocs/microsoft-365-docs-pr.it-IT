@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-office365
 - seo-marvel-apr2020
 description: Gli amministratori possono conoscere la funzionalità allegati sicuri in Microsoft Defender per Office 365.
-ms.openlocfilehash: da3949a4520c52c7f5685efd109f8c976305ea06
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.openlocfilehash: d38f95991a1d310e8a894a32e06b5891ebb498a9
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49357214"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49616681"
 ---
 # <a name="safe-attachments-in-microsoft-defender-for-office-365"></a>Allegati sicuri in Microsoft Defender per Office 365
 

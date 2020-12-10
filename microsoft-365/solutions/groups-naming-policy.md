@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 6ceca4d3-cad1-4532-9f0f-d469dfbbb552
 description: Informazioni su come creare un criterio di denominazione per i gruppi di Microsoft 365.
-ms.openlocfilehash: 55faf5c61d577b35b34923efc7b65457fe46de29
-ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
+ms.openlocfilehash: 15fcbace737398c6edd2062e72622e8551ebd222
+ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48377606"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49613503"
 ---
 # <a name="microsoft-365-groups-naming-policy"></a>Criteri di denominazione dei gruppi Microsoft 365
 
@@ -45,7 +45,7 @@ L'utilizzo dei criteri di denominazione di Azure AD per i gruppi di Microsoft 36
 
 Questa operazione è necessaria anche per l'amministratore che crea i criteri di denominazione dei gruppi.
 
-## <a name="prefix-suffix-naming-policy"></a>Prefisso-suffisso Naming Policy
+## <a name="prefix-suffix-naming-policy"></a>Prefix-Suffix criteri di denominazione
 
 I prefissi e i suffissi possono essere stringhe fisse o attributi utente.
 
@@ -123,14 +123,18 @@ Alcuni amministratori sono esonerati da questi criteri, in tutti i carichi di la
 Per impostare i criteri di denominazione:
 
 1. In [Azure Active Directory](https://aad.portal.azure.com), in **gestione**, fare clic su **gruppi**.
-2. In **Impostazioni**fare clic su **criteri di denominazione**.
+2. In **Impostazioni** fare clic su **criteri di denominazione**.
 3. Scegliere la scheda **criteri di denominazione dei gruppi** .
-4. In **criterio corrente**scegliere se si desidera richiedere un prefisso o un suffisso o entrambi, quindi selezionare le caselle di controllo appropriate.
+4. In **criterio corrente** scegliere se si desidera richiedere un prefisso o un suffisso o entrambi, quindi selezionare le caselle di controllo appropriate.
 5. Scegliere tra l' **attributo** e la **stringa** per ogni riga e quindi specificare l'attributo o la stringa.
 6. Dopo aver aggiunto i prefissi e i suffissi necessari, fare clic su **Salva**.
 
 ![Schermata delle impostazioni dei criteri di denominazione del gruppo in Azure Active Directory](../media/groups-naming-policy-azure.png)
 
 ## <a name="related-topics"></a>Argomenti correlati
+
+[Pianificazione della governance della collaborazione](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
+
+[Creare il piano di governance di collaborazione](collaboration-governance-first.md)
 
 [Cmdlet di Azure Active Directory per la configurazione delle impostazioni di gruppo](https://go.microsoft.com/fwlink/?linkid=868341)

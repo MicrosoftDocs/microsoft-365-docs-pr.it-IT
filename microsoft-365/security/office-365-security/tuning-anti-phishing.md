@@ -15,12 +15,12 @@ ms.collection:
 - m365initiative-defender-office365
 - MET150
 description: Gli amministratori possono imparare a identificare i motivi per cui e come è stato ottenuto un messaggio di phishing in Microsoft 365 e cosa fare per evitare ulteriori messaggi di phishing in futuro.
-ms.openlocfilehash: c495be3f5a90ca96f9a7a05513df9438f88910ad
-ms.sourcegitcommit: ce46d1bd67091d4ed0e2b776dfed55e2d88cdbf4
+ms.openlocfilehash: 8a2c63d499317427b921d7786dd60b3ad4f18c42
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49131322"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49615385"
 ---
 # <a name="tune-anti-phishing-protection"></a>Ottimizzare la protezione anti-phishing
 
@@ -61,7 +61,7 @@ In particolare, è necessario controllare il campo di intestazione **X-Forefront
 
 - La posta contraffatta è contrassegnata come phishing in Defender per Office 365. A volte lo spoofing è benigno e a volte gli utenti non lo desiderano in quarantena. Per ridurre al minimo l'impatto degli utenti, esaminare periodicamente il [report di intelligence spoof](learn-about-spoof-intelligence.md). Dopo aver esaminato e apportato le modifiche necessarie, è possibile avere la certezza di [configurare l'intelligence spoof](set-up-anti-phishing-policies.md#spoof-settings) per la **quarantena** dei messaggi sospetti anziché recapitarli nella cartella posta indesiderata dell'utente.
 
-- È possibile ripetere il passaggio precedente per la rappresentazione (dominio o utente). Il rapporto di rappresentazione è disponibile in **Threat Management** \> **Dashboard** \> **Insights** dashboard di gestione delle minacce.
+- È possibile ripetere il passaggio precedente per la rappresentazione (dominio o utente). Il rapporto di rappresentazione è disponibile in  \>  \> **Insights** dashboard di gestione delle minacce.
 
 - Esaminare periodicamente il [rapporto sullo stato della protezione dalle minacce](view-reports-for-atp.md#threat-protection-status-report).
 

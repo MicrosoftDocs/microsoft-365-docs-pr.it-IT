@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: In questo articolo vengono fornite informazioni per la risoluzione dei problemi relativi all'invio di posta elettronica alle cassette postali in Microsoft 365 & procedure consigliate per la posta in blocco ai clienti di Microsoft 365.
-ms.openlocfilehash: 895f2651529cd46968d053fefac10cb22b6a5d86
-ms.sourcegitcommit: 7e003ee0a06f61bfb9f80441c3479fa3148afafe
+ms.openlocfilehash: 8b7c008f827a579e234d8a8feab008d36ecfe064
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49568555"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49615409"
 ---
 # <a name="troubleshooting-mail-sent-to-microsoft-365"></a>Risoluzione dei problemi della posta elettronica inviati a Microsoft 365
 
@@ -92,11 +92,11 @@ L'oggetto dovrebbe essere un breve riepilogo del messaggio e il corpo del messag
 
 Impostazione corretta:
 
-> Da: marketing@shoppershandbag.com <br/> Oggetto: aggiornamento del catalogo per la stagione natalizia.
+> Da: marketing@shoppershandbag.com <br> Oggetto: aggiornamento del catalogo per la stagione natalizia.
 
 Impostazione non corretta:
 
-> Da: someone@outlook.com <br/> Oggetto: Cataloghi
+> Da: someone@outlook.com <br> Oggetto: Cataloghi
 
 Più è facile per gli utenti sapere chi è e cosa si sta facendo, minore sarà la difficoltà con la maggior parte dei filtri per la posta indesiderata.
 

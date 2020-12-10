@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 description: Gli amministratori possono imparare a configurare una cassetta postale per raccogliere messaggi di posta indesiderata e di phishing segnalati dagli utenti.
-ms.openlocfilehash: 31249ab930c44d84f27efac95d8e57bd88d9742f
-ms.sourcegitcommit: ce46d1bd67091d4ed0e2b776dfed55e2d88cdbf4
+ms.openlocfilehash: 7064e2d26722c433d33fe2f983484a40fa33c1e6
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49130900"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49615625"
 ---
 # <a name="user-submissions-policy"></a>Criteri per gli invii degli utenti
 
@@ -61,9 +61,9 @@ Utilizzare gli articoli seguenti per configurare i prerequisiti richiesti in mod
 
 Dopo aver verificato che la cassetta postale soddisfi tutti i prerequisiti applicabili, [utilizzare il Centro sicurezza & Compliance per configurare la cassetta postale per gli invii degli utenti](#use-the-security--compliance-center-to-configure-the-user-submissions-mailbox) (in questo articolo).
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare?
+## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare
 
-- Aprire il Centro sicurezza e conformità in <https://protection.office.com/>. Per passare direttamente alla pagina degli **invii degli utenti** , utilizzare <https://protection.office.com/userSubmissionsReportMessage> .
+- Aprire il Centro sicurezza e conformità in<https://protection.office.com/>. Per passare direttamente alla pagina degli **invii degli utenti** , utilizzare <https://protection.office.com/userSubmissionsReportMessage> .
 
 - Per modificare la configurazione per gli invii degli utenti, è necessario essere membri di uno dei gruppi di ruoli seguenti:
 
@@ -72,7 +72,7 @@ Dopo aver verificato che la cassetta postale soddisfi tutti i prerequisiti appli
 
 ## <a name="use-the-security--compliance-center-to-configure-the-user-submissions-mailbox"></a>Utilizzare il Centro sicurezza & conformità per configurare la cassetta postale per gli invii degli utenti
 
-1. Nel centro sicurezza & conformità, accedere a invii di criteri di **gestione delle minacce** \> **Policy** \> **User submissions**.
+1. Nel centro sicurezza & conformità, accedere a invii di criteri di **gestione delle minacce** \>  \> .
 
 2. Nella pagina **invii utente** che viene visualizzata, selezionare una delle opzioni seguenti:
 
@@ -99,7 +99,7 @@ Dopo aver verificato che la cassetta postale soddisfi tutti i prerequisiti appli
         - **Cassetta postale personalizzata**: nella casella visualizzata, immettere l'indirizzo di posta elettronica di una cassetta postale di Exchange Online esistente. I gruppi di distribuzione non sono consentiti. Utilizzare questa opzione se si desidera che il messaggio venga utilizzato solo da un amministratore o il team delle operazioni di sicurezza per l'analisi. I messaggi non vengono inviati a Microsoft a meno che l'amministratore non lo inoltri direttamente.
 
         > [!NOTE]
-        > Le organizzazioni governative degli Stati Uniti (GCC, GCC-H e DoD) possono configurare solo la **cassetta postale personalizzata**. Le altre due opzioni sono disattivate. 
+        > Le organizzazioni governative degli Stati Uniti (GCC, GCC-H e DoD) possono configurare solo la **cassetta postale personalizzata**. Le altre due opzioni sono disattivate.
 
       Al termine, fare clic su **conferma**.
 

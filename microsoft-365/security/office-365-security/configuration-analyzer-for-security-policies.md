@@ -17,12 +17,12 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Gli amministratori possono ottenere informazioni su come utilizzare l'analizzatore di configurazione per individuare e correggere i criteri di sicurezza che si trovano al di sotto dei criteri di protezione standard e di protezione preimpostati.
-ms.openlocfilehash: 7d02a6f83ceb06eb56039b449890fd90712c76e5
-ms.sourcegitcommit: d81c7cea85af6ad5fef81d3c930514a51464368c
+ms.openlocfilehash: 5a57e16dcac6afee910ce546d3a40c2c9c669f2d
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "49572538"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49616153"
 ---
 # <a name="configuration-analyzer-for-protection-policies-in-eop-and-microsoft-defender-for-office-365"></a>Analizzatore di configurazione per i criteri di protezione in EOP e Microsoft Defender per Office 365
 
@@ -37,7 +37,7 @@ Analizzatore di configurazione nel centro sicurezza & conformità fornisce una p
 I seguenti tipi di criteri vengono analizzati dall'analizzatore della configurazione:
 
 - **Criteri di Exchange Online Protection (EOP)**: sono incluse le organizzazioni Microsoft 365 con le cassette postali di Exchange Online e le organizzazioni EOP autonome senza cassette postali di Exchange Online:
-  
+
   - [Criteri di protezione da posta indesiderata](configure-your-spam-filter-policies.md).
   - [Criteri anti-malware](configure-anti-malware-policies.md).
   - [Criteri di anti-phishing di EOP](set-up-anti-phishing-policies.md#spoof-settings).
@@ -58,7 +58,7 @@ I valori di impostazione dei criteri **standard** e **rigorosi** utilizzati come
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare
 
-- Aprire il Centro sicurezza e conformità in <https://protection.office.com/>. Per passare direttamente alla pagina dell' **analizzatore** dell'utilità di configurazione, utilizzare <https://protection.office.com/configurationAnalyzer> .
+- Aprire il Centro sicurezza e conformità in<https://protection.office.com/>. Per passare direttamente alla pagina dell' **analizzatore** dell'utilità di configurazione, utilizzare <https://protection.office.com/configurationAnalyzer> .
 
 - Per informazioni su come connettersi a PowerShell per Exchange Online, vedere [Connettersi a PowerShell per Exchange Online](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
 
@@ -70,12 +70,12 @@ I valori di impostazione dei criteri **standard** e **rigorosi** utilizzati come
 
   **Note**:
 
-  - L'aggiunta di utenti al ruolo di Azure Active Directory corrispondente nell'interfaccia di amministrazione di Microsoft 365 fornisce agli utenti le autorizzazioni necessarie per il Centro sicurezza & Compliance _e_ le autorizzazioni per altre funzionalità di Microsoft 365. Per altre informazioni, vedere [Informazioni sui ruoli di amministratore](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
-  - Il gruppo di ruoli di **gestione dell'organizzazione di sola visualizzazione** in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) fornisce anche l'accesso in sola lettura alla funzionalità.
+  - L'aggiunta di utenti al ruolo di Azure Active Directory corrispondente nell'interfaccia di amministrazione di Microsoft 365 fornisce agli utenti le autorizzazioni necessarie nel centro Sicurezza e conformità _e_ le autorizzazioni per altre funzionalità di Microsoft 365. Per altre informazioni, vedere [Informazioni sui ruoli di amministratore](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
+  - Anche il gruppo di ruoli di **Gestione organizzazione sola visualizzazione** in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) offre inoltre l'accesso di sola lettura a tale funzionalità.
 
 ## <a name="use-the-configuration-analyzer-in-the-security--compliance-center"></a>Utilizzare l'analizzatore di configurazione nel centro sicurezza & Compliance
 
-Nel centro sicurezza & conformità, accedere a **Threat management** \> **Policy** \> **analizzatore configurazione** criteri di gestione delle minacce.
+Nel centro sicurezza & conformità, accedere a  \>  \> **analizzatore configurazione** criteri di gestione delle minacce.
 
 ![Widget Configuration Analyzer nella pagina Criteri di gestione dei pericoli \>](../../media/configuration-analyzer-widget.png)
 

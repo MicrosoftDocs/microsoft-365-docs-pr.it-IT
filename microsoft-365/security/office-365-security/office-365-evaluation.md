@@ -17,19 +17,19 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 12b6499822f8ed97ace8468054f219361d925332
-ms.sourcegitcommit: a566ef236c85edfd566c8c3f859b80f9e5ce0473
+ms.openlocfilehash: b5b095a1d75ead0f963a71d816e7d879b7cd3697
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49562991"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49614799"
 ---
 # <a name="evaluate-microsoft-defender-for-office-365"></a>Valutare Microsoft Defender per Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
->[!IMPORTANT]
->Valutare Microsoft Defender per Office 365 sarà presto in anteprima pubblica questa versione di anteprima è disponibile senza un contratto di servizio. È possibile che alcune funzionalità non siano supportate o che possano disporre di funzionalità vincolate.
+> [!IMPORTANT]
+> Valutare Microsoft Defender per Office 365 sarà presto in anteprima pubblica. Questa versione di anteprima è disponibile senza un contratto di servizio. È possibile che alcune funzionalità non siano supportate o che possano disporre di funzionalità vincolate.
 
 L'esecuzione di una valutazione completa del prodotto di sicurezza può contribuire a prendere decisioni informate sugli aggiornamenti e gli acquisti. Consente di provare le funzionalità del prodotto per la sicurezza per valutare in che modo può aiutare il team delle operazioni di sicurezza nelle attività quotidiane.
 
@@ -73,7 +73,7 @@ Se non si dispone di una di queste licenze, sarà necessario ottenere una licenz
 
 Per ottenere una licenza di valutazione per Microsoft Defender per Office 365, è necessario avere il ruolo di **amministratore di fatturazione** o il **ruolo di amministratore globale**. Richiedere l'autorizzazione a un utente che ha il ruolo di amministratore globale. [Informazioni su abbonamenti e licenze](https://docs.microsoft.com/microsoft-365/commerce/licenses/subscriptions-and-licenses)
 
-Dopo aver ottenuto il ruolo appropriato, è consigliabile ottenere una licenza di valutazione per Microsoft Defender per Office 365 (piano 2) nell'interfaccia di amministrazione di Microsoft 365 accedendo a fatturazione > servizi di acquisto. La versione di valutazione include una versione di valutazione gratuita di 30 giorni per 25 licenze. [Ottenere una versione di valutazione di Microsoft Defender per Office 365 (piano 2)](https://admin.microsoft.com/AdminPortal/Home#/catalog/offer-details/microsoft-defender-for-office-365-plan-2-/223860DC-15D6-42D9-A861-AE05473069FA). 
+Dopo aver ottenuto il ruolo appropriato, è consigliabile ottenere una licenza di valutazione per Microsoft Defender per Office 365 (piano 2) nell'interfaccia di amministrazione di Microsoft 365 accedendo a fatturazione > servizi di acquisto. La versione di valutazione include una versione di valutazione gratuita di 30 giorni per 25 licenze. [Ottenere una versione di valutazione di Microsoft Defender per Office 365 (piano 2)](https://admin.microsoft.com/AdminPortal/Home#/catalog/offer-details/microsoft-defender-for-office-365-plan-2-/223860DC-15D6-42D9-A861-AE05473069FA).
 
 Verrà visualizzata una finestra di 30 giorni con la valutazione da monitorare e riferire su minacce avanzate. È inoltre possibile acquistare un abbonamento a pagamento se si desidera che il servizio di protezione completo per le funzionalità di Office 365.
 
@@ -81,13 +81,14 @@ Verrà visualizzata una finestra di 30 giorni con la valutazione da monitorare e
 
 I ruoli di Exchange Online sono necessari per configurare Defender per Office 365 in modalità di valutazione. Sono necessari i ruoli seguenti:
 
-|Attività | Ruolo |
-|-----| -----|
-| Ottenere una versione di valutazione gratuita o acquistare Microsoft Defender per Office 365 (piano 2)| Ruolo di amministratore di fatturazione o ruolo di amministratore globale|
-| Creare criteri di valutazione| Ruolo di domini accettati e remoti; Ruolo di amministratore della sicurezza|
-| Modifica criteri di valutazione | Ruolo di domini accettati e remoti; Ruolo di amministratore della sicurezza |
-| Eliminare i criteri di valutazione | Ruolo di domini accettati e remoti; Ruolo di amministratore della sicurezza |
-|Visualizzare il report di valutazione | Ruolo di amministratore della sicurezza o lettore di sicurezza|
+|Attività|Ruolo|
+|---|---|
+|Ottenere una versione di valutazione gratuita o acquistare Microsoft Defender per Office 365 (piano 2)|Ruolo di amministratore di fatturazione o ruolo di amministratore globale|
+|Creare criteri di valutazione|Ruolo di domini accettati e remoti; Ruolo di amministratore della sicurezza|
+|Modifica criteri di valutazione|Ruolo di domini accettati e remoti; Ruolo di amministratore della sicurezza|
+|Eliminare i criteri di valutazione|Ruolo di domini accettati e remoti; Ruolo di amministratore della sicurezza |
+|Visualizzare il report di valutazione|Ruolo di amministratore della sicurezza o lettore di sicurezza|
+|
 
 ### <a name="enhanced-filtering"></a>Filtro migliorato
 
@@ -107,7 +108,7 @@ I collegamenti URL nei corpi dei messaggi di posta elettronica non vengono adatt
 
 Gli scenari di routing della posta elettronica supportati includono:
 
-- **Partner di terze parti e/o provider di servizi locali**: il connettore in ingresso che si desidera valutare utilizza un provider di terze parti e/o utilizza una soluzione per la sicurezza della posta elettronica in locale.  
+- **Partner di terze parti e/o provider di servizi locali**: il connettore in ingresso che si desidera valutare utilizza un provider di terze parti e/o utilizza una soluzione per la sicurezza della posta elettronica in locale.
 - **Solo Microsoft Exchange Online Protection**: il tenant che si desidera valutare utilizza Office 365 per la sicurezza della posta elettronica e il record MX (mail Exchange) punta a Microsoft.
 
 ### <a name="email-security-gateway"></a>Gateway di sicurezza della posta elettronica
@@ -154,7 +155,7 @@ Se si dispone di un gateway esistente, potrebbe essere necessario ignorare il fi
 
 ## <a name="evaluate-capabilities"></a>Valutare le funzionalità
 
-Dopo aver generato il report di valutazione, vedere il numero di collegamenti a minacce avanzati, allegati a minacce avanzate e potenziali rappresentazioni sono stati identificati nelle aree di lavoro di posta elettronica e collaborazione nell'organizzazione.  
+Dopo aver generato il report di valutazione, vedere il numero di collegamenti a minacce avanzati, allegati a minacce avanzate e potenziali rappresentazioni sono stati identificati nelle aree di lavoro di posta elettronica e collaborazione nell'organizzazione.
 
 Una volta scaduta la versione di valutazione, è possibile continuare ad accedere al report per 90 giorni. Tuttavia, non raccoglierà altre informazioni. Se si desidera continuare a utilizzare Microsoft Defender per Office 365 dopo la scadenza del periodo di prova, assicurarsi di [acquistare un abbonamento a pagamento per Microsoft Defender per office 365 (piano 2)](https://admin.microsoft.com/AdminPortal/Home#/catalog/offer-details/microsoft-defender-for-office-365-plan-2-/223860DC-15D6-42D9-A861-AE05473069FA).
 

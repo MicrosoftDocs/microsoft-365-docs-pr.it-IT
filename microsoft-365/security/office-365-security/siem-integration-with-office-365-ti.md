@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Integrare il server SIEM dell'organizzazione con Microsoft Defender per Office 365 e gli eventi relativi alle minacce correlate nell'API di gestione delle attività di Office 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6253ed0133bf53bdbeca71bb595a850e25441311
-ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
+ms.openlocfilehash: 93ff1606130c60ceb46087d28bb26f9a6d27d330
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49561706"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49615661"
 ---
 # <a name="siem-integration-with-microsoft-defender-for-office-365"></a>Integrazione di SIEM con Microsoft Defender per Office 365
 
@@ -61,7 +61,9 @@ Nella tabella seguente sono riepilogati i valori di **AuditLogRecordType** rilev
 |
 
 > [!IMPORTANT]
-> È necessario essere un amministratore globale o disporre del ruolo di amministratore della sicurezza assegnato per il Centro sicurezza & Compliance per configurare l'integrazione di SIEM con Microsoft Defender per Office 365.<br/>La registrazione di controllo deve essere attivata per l'ambiente Microsoft 365. Per ottenere assistenza, vedere [attivazione o disattivazione della ricerca dei log di controllo](../../compliance/turn-audit-log-search-on-or-off.md).
+> È necessario essere un amministratore globale o disporre del ruolo di amministratore della sicurezza assegnato per il Centro sicurezza & Compliance per configurare l'integrazione di SIEM con Microsoft Defender per Office 365.
+>
+> La registrazione di controllo deve essere attivata per l'ambiente Microsoft 365. Per ottenere assistenza, vedere [attivazione o disattivazione della ricerca dei log di controllo](../../compliance/turn-audit-log-search-on-or-off.md).
 
 ## <a name="see-also"></a>Vedere anche
 

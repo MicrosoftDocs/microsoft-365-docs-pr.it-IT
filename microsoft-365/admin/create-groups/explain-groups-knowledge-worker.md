@@ -16,12 +16,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Informazioni su come spiegare i gruppi di Microsoft 365 ai propri utenti.
-ms.openlocfilehash: 179452800fb28c193622b47dce85dd6419ae5ac2
-ms.sourcegitcommit: 38d828ae8d4350ae774a939c8decf30cb36c3bea
+ms.openlocfilehash: 2f983d69f8b3138634739a82e35de9e62821d252
+ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "49554791"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49613009"
 ---
 # <a name="explaining-microsoft-365-groups-to-your-users"></a>Spiegare i gruppi di Microsoft 365 agli utenti
 
@@ -38,6 +38,8 @@ Poiché i gruppi possono essere creati in diversi modi, è consigliabile addestr
 [![immagine desc ](../../media/03.png)](../../media/03.png#lightbox)
 
 Se si preparano gli utenti a utilizzare sempre il metodo di creazione dei gruppi più allineati al loro modo di lavorare quando hanno bisogno di uno spazio per collaborare con gli altri, è possibile evitare confusione e duplicazione delle risorse. Man mano che gli utenti diventano più esperti, comprenderemo meglio la raccolta di servizi disponibili in un gruppo e che i diversi metodi di creazione conducono allo stesso risultato.
+
+È possibile utilizzare il [modello Microsoft 365 Groups for Business User-PowerPoint](https://www.microsoft.com/download/details.aspx?id=102396) come punto di partenza per la formazione di presentazioni per gli utenti.
 
 ## <a name="related-topics"></a>Argomenti correlati
 

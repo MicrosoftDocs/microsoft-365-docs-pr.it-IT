@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - m365solution-identitydevice
 - m365solution-scenario
-ms.openlocfilehash: 67835f4140179c69b5e0f2cd0287e656dd4c49ad
-ms.sourcegitcommit: c1dd5be42fe0c5dcc7c05817c941edd9076febf8
+ms.openlocfilehash: bd0b4efb1281d467a61e4aee792b507f0ca44181
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "49558551"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49616561"
 ---
 # <a name="prerequisite-work-for-implementing-identity-and-device-access-policies"></a>Lavoro prerequisito per l'implementazione dei criteri di identità e accesso ai dispositivi
 
@@ -38,7 +38,7 @@ Prima di implementare i criteri di identità e accesso ai dispositivi consigliat
 - Ibrido con autenticazione pass-through (PTA)
 - Federati
 
-Nella tabella seguente vengono illustrate le caratteristiche dei prerequisiti e la relativa configurazione che si applicano a tutti i modelli di identità, ad eccezione di quelli indicati. 
+Nella tabella seguente vengono illustrate le caratteristiche dei prerequisiti e la relativa configurazione che si applicano a tutti i modelli di identità, ad eccezione di quelli indicati.
 
 |Configurazione|Eccezioni|
 |---|:---:|
@@ -76,7 +76,7 @@ Si consiglia agli utenti di installare l'app [portale aziendale di Intune](https
 
 ### <a name="recommended-email-clients"></a>Client di posta elettronica consigliati
 
-I client di posta elettronica seguenti supportano l'autenticazione moderna e l'accesso condizionale. 
+I client di posta elettronica seguenti supportano l'autenticazione moderna e l'accesso condizionale.
 
 |Piattaforma|Client|Versione/Note|
 |---|---|---|
@@ -116,9 +116,9 @@ Per le edizioni di Microsoft 365 o Office 365 che non supportano l'accesso condi
 
 Di seguito sono riportati alcuni suggerimenti aggiuntivi:
 
-- Utilizzo di [Azure ad Privileged Identity Management](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-getting-started) per ridurre il numero di account amministrativi permanenti. 
-- [Utilizzare la gestione degli accessi con privilegi](../../compliance/privileged-access-management-overview.md) per proteggere l'organizzazione da violazioni che possono utilizzare account amministratore privilegiati esistenti con accesso permanente ai dati sensibili o accesso alle impostazioni di configurazione critiche. 
-- Creare e utilizzare account distinti a cui sono assegnati i [ruoli di amministratore di Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles) *solo per l'amministrazione*. Gli amministratori devono disporre di un account utente specifico per l'utilizzo regolare non amministrativo e utilizzare un account amministrativo solo quando necessario per completare un'attività associata al ruolo o alla funzione del processo. 
+- Utilizzo di [Azure ad Privileged Identity Management](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-getting-started) per ridurre il numero di account amministrativi permanenti.
+- [Utilizzare la gestione degli accessi con privilegi](../../compliance/privileged-access-management-overview.md) per proteggere l'organizzazione da violazioni che possono utilizzare account amministratore privilegiati esistenti con accesso permanente ai dati sensibili o accesso alle impostazioni di configurazione critiche.
+- Creare e utilizzare account distinti a cui sono assegnati i [ruoli di amministratore di Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles) *solo per l'amministrazione*. Gli amministratori devono disporre di un account utente specifico per l'utilizzo regolare non amministrativo e utilizzare un account amministrativo solo quando necessario per completare un'attività associata al ruolo o alla funzione del processo.
 - Seguire le [procedure consigliate](https://docs.microsoft.com/azure/active-directory/admin-roles-best-practices) per la protezione degli account con privilegi in Azure ad.
 
 ## <a name="next-step"></a>Passaggio successivo

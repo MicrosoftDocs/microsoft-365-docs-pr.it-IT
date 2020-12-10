@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 description: Informazioni su informatori di minacce, inclusi i nuovi informatori degni di nota, per consentire all'organizzazione di rimanere al di sopra dei problemi relativi alla sicurezza.
-ms.openlocfilehash: e173bb2b4ee6e7c54c7414c7f102d8c4d1d06641
-ms.sourcegitcommit: 7e003ee0a06f61bfb9f80441c3479fa3148afafe
+ms.openlocfilehash: 551f5704337ef8989fd1568854822bc1d9d4c14b
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49568457"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49615457"
 ---
 # <a name="threat-trackers---new-and-noteworthy"></a>Inseguimenti di minacce-nuovi e degni di nota
 
@@ -46,7 +46,7 @@ La maggior parte delle pagine del depistaggio include i numeri di tendenza che v
 
 Gli incaricati sono solo alcune delle numerose caratteristiche che si ottengono con [Microsoft Defender per Office 365 piano 2](office-365-ti.md). Gli inseguitori di minacce includono [inseguitori di Noteworth](#noteworthy-trackers), inseguitori di [tendenza](#trending-trackers), [query registrate](#tracked-queries)e [query salvate](#saved-queries).
 
-Per visualizzare e utilizzare i Tracker di minacce per la propria organizzazione, passare al centro sicurezza & Compliance ( [https://protection.office.com](https://protection.office.com) ) e scegliere Threat **Management** \> **Threat Tracker**.
+Per visualizzare e utilizzare i Tracker di minacce per la propria organizzazione, passare al centro sicurezza & Compliance ( <https://protection.office.com> ) e scegliere Threat **Management** \> **Threat Tracker**.
 
 > [!NOTE]
 > Per utilizzare i Tracker di minacce, è necessario essere un amministratore globale, un amministratore della sicurezza o un lettore di sicurezza. Vedere [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
@@ -103,6 +103,6 @@ Il nuovo filtro minacce notevole evidenzia gli elementi che sono stati rilevati 
 
 - Assicurarsi che il team di sicurezza disponga dei ruoli e delle autorizzazioni corretti assegnati. È necessario essere un amministratore globale o disporre dell'amministratore della sicurezza o del ruolo di ricerca e spurgo assegnato nel centro sicurezza & Compliance. Vedere [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
-- Tenere presente che i nuovi inpistatori vengono visualizzati nell'ambiente Microsoft 365. Se disponibile, è possibile trovare i propri [inseguitori.](https://protection.office.com/) Accedere a **Threat management** \> **inseguimenti di minacce** per la gestione delle minacce.
+- Tenere presente che i nuovi inpistatori vengono visualizzati nell'ambiente Microsoft 365. Se disponibile, è possibile trovare i propri [inseguitori.](https://protection.office.com/) Accedere a  \> **inseguimenti di minacce** per la gestione delle minacce.
 
 - Se non è stato ancora fatto, per ulteriori informazioni e per configurare [Microsoft Defender per Office 365](office-365-atp.md) per la propria organizzazione, inclusi i [collegamenti sicuri](atp-safe-links.md) e gli [allegati sicuri](atp-safe-attachments.md).

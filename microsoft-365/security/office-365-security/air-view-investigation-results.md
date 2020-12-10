@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-office365
 description: Durante e dopo un'analisi automatizzata in Microsoft 365, è possibile visualizzare i risultati e i risultati principali.
 ms.date: 11/05/2020
-ms.openlocfilehash: 4dc74987619c3f958c874927af6e4240b9d7e154
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.openlocfilehash: 2018f008e043f36cd41047185f305209fcb725d7
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49357286"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49615145"
 ---
 # <a name="details-and-results-of-an-automated-investigation-in-microsoft-365"></a>Dettagli e risultati di un'indagine automatizzata in Microsoft 365
 
@@ -53,13 +53,13 @@ Lo stato dell'indagine indica lo stato di avanzamento dell'analisi e delle azion
 
 ## <a name="view-details-of-an-investigation"></a>Visualizzare i dettagli di un'indagine
 
-1. Accedere al centro sicurezza & conformità ( [https://protection.office.com](https://protection.office.com) ) ed eseguire l'accesso.
+1. Accedere al centro sicurezza & conformità ( <https://protection.office.com> ) ed eseguire l'accesso.
 
 2. Eseguire una delle operazioni seguenti:
 
-    - Andare al dashboard di **gestione delle minacce** \> **Dashboard**. Questo porta al dashboard di [sicurezza](security-dashboard.md). I widget aria vengono visualizzati nella parte superiore del [dashboard di sicurezza](security-dashboard.md). Selezionare un widget, ad esempio **Riepilogo indagini**.
+    - Andare al dashboard di **gestione delle minacce** \> . Questo porta al dashboard di [sicurezza](security-dashboard.md). I widget aria vengono visualizzati nella parte superiore del [dashboard di sicurezza](security-dashboard.md). Selezionare un widget, ad esempio **Riepilogo indagini**.
 
-    - Andare a indagini sulla **gestione delle minacce** \> **Investigations**.
+    - Andare a indagini sulla **gestione delle minacce** \> .
 
     Entrambi i metodi consentono di eseguire l'elenco delle indagini.
 
@@ -77,9 +77,9 @@ Alcuni tipi di avvisi attivano l'analisi automatizzata in Microsoft 365. Per ult
 
 Utilizzare la procedura seguente per visualizzare i dettagli relativi a un avviso associato a un'indagine automatizzata.
 
-1. Accedere al centro sicurezza & conformità ( [https://protection.office.com](https://protection.office.com) ) ed eseguire l'accesso.
+1. Accedere al centro sicurezza & conformità ( <https://protection.office.com> ) ed eseguire l'accesso.
 
-2. Andare a indagini sulla **gestione delle minacce** \> **Investigations**.
+2. Andare a indagini sulla **gestione delle minacce** \> .
 
 3. Nell'elenco delle indagini selezionare un elemento nella colonna **ID** .
 

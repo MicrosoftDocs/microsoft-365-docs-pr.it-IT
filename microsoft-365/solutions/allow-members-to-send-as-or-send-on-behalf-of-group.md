@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 0ad41414-0cc6-4b97-90fb-06bec7bcf590
 description: Informazioni su come consentire ai membri di inviare messaggi di posta elettronica come gruppo di Microsoft 365 o di inviare messaggi di posta elettronica per conto di un gruppo di Microsoft 365.
-ms.openlocfilehash: 9ccaeff49914dd5b510beb80f40a3a3b790ce831
-ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
+ms.openlocfilehash: 2abf0668411ccd08db5bbd8408605dcd0aa2d832
+ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48377594"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49613573"
 ---
 # <a name="allow-members-to-send-as-or-send-on-behalf-of-a-group"></a>Consenti ai membri di inviare messaggi o Invia per conto di un gruppo
 
@@ -42,7 +42,7 @@ L'autorizzazione **Invia per conto** di consente a un utente di inviare messaggi
 
 In questa sezione viene descritto come consentire agli utenti di inviare messaggi di posta elettronica come gruppo nell'interfaccia di [amministrazione di Exchange](https://go.microsoft.com/fwlink/p/?linkid=2059104) (EAC) in Exchange Online.
   
-1. Nell'interfaccia di <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">amministrazione di Exchange</a>, accedere a gruppi di **destinatari** \> **Groups**.
+1. Nell'interfaccia di <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">amministrazione di Exchange</a>, accedere a gruppi di **destinatari** \> .
     
 2. Selezionare **modifica** ![ icona di modifica gruppo ](../media/0cfcb590-dc51-4b4f-9276-bb2ce300d87e.png) sul gruppo che si desidera consentire agli utenti di inviare.   
     
@@ -60,7 +60,7 @@ In questa sezione viene descritto come consentire agli utenti di inviare messagg
 
 In questa sezione viene descritto come consentire agli utenti di inviare messaggi di posta elettronica per conto di un gruppo nell'interfaccia di amministrazione di Exchange (EAC) in Exchange Online.
   
-1. Nell'interfaccia di <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">amministrazione di Exchange</a>, accedere a gruppi di **destinatari** \> **Groups**.
+1. Nell'interfaccia di <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">amministrazione di Exchange</a>, accedere a gruppi di **destinatari** \> .
     
 2. Selezionare **modifica** ![ icona di modifica gruppo ](../media/0cfcb590-dc51-4b4f-9276-bb2ce300d87e.png) sul gruppo che si desidera consentire agli utenti di inviare. 
     
@@ -75,6 +75,10 @@ In questa sezione viene descritto come consentire agli utenti di inviare messagg
     ![Digitare per cercare o selezionare un utente dall'elenco](../media/522919cf-664c-4a25-8076-c51c8c9fbe43.png)
 
 ## <a name="related-articles"></a>Articoli correlati
+
+[Pianificazione della governance della collaborazione](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
+
+[Creare il piano di governance di collaborazione](collaboration-governance-first.md)
 
 [Altre informazioni sui gruppi di Microsoft 365](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2)
 

@@ -1,12 +1,13 @@
 ---
-title: Gestione accessi con privilegi
-f1.keywords:
-- NOCSH
+title: Informazioni sulla gestione degli accessi con privilegi
+description: In questo articolo viene fornita una panoramica della gestione degli accessi con privilegi in Microsoft 365, incluse le risposte alle domande frequenti.
 ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: ITPro
 ms.topic: overview
+f1.keywords:
+- NOCSH
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
@@ -19,16 +20,14 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 - seo-marvel-apr2020
-ms.assetid: ''
-description: In questo articolo viene fornita una panoramica della gestione degli accessi con privilegi in Microsoft 365, incluse le risposte alle domande frequenti.
-ms.openlocfilehash: a1bcf1fbe767b4657be8a8ebcc8bf7b101c498d8
-ms.sourcegitcommit: 79a21583a52aedd06317bbcabd8be40663379dec
+ms.openlocfilehash: dc7c6807e8c89b4146784e5be7f57472777a4c84
+ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "48341234"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49613330"
 ---
-# <a name="privileged-access-management"></a>Gestione accessi con privilegi
+# <a name="learn-about-privileged-access-management"></a>Informazioni sulla gestione degli accessi con privilegi
 
 La gestione degli accessi con privilegi consente il controllo di accesso granulare sulle attività amministrative privilegiate in Office 365. Può aiutare a proteggere l'organizzazione da violazioni che utilizzano account amministratore privilegiati esistenti con accesso permanente ai dati sensibili o accesso alle impostazioni di configurazione critiche. La gestione degli accessi con privilegi richiede agli utenti di richiedere l'accesso just-in-time per completare le attività elevate e privilegiate tramite un flusso di lavoro di approvazione estremamente ambito e con limiti temporali. Questa configurazione consente agli utenti di accedere in modo sufficiente per eseguire l'attività a portata di mano, senza rischiare l'esposizione di dati sensibili o di impostazioni di configurazione critiche. L'abilitazione della gestione degli accessi con privilegi in Microsoft 365 consente all'organizzazione di operare con privilegi zero e di fornire un livello di difesa contro le vulnerabilità di accesso amministrativo permanenti.
 
@@ -100,6 +99,6 @@ L' [archivio protetto dei clienti](https://docs.microsoft.com/office365/admin/ma
 
 Avviare [la configurazione dell'organizzazione per la gestione degli accessi con privilegi](privileged-access-management-configuration.md).
 
-## <a name="learn-more"></a>Altre informazioni
+## <a name="learn-more"></a>Ulteriori informazioni
 
 [Guida interattiva: monitorare e controllare le attività dell'amministratore con la gestione degli accessi con privilegi](https://content.cloudguides.com/guides/Privileged%20Access%20Management)

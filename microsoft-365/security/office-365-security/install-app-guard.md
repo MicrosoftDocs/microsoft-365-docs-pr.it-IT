@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: Ottenere la versione più recente dell'isolamento basato sull'hardware. Impedire attacchi correnti ed emergenti come exploit o collegamenti dannosi dall'interrompere la produttività dei dipendenti e la sicurezza dell'organizzazione.
-ms.openlocfilehash: 075006bb8f000dbbda2fd564e0c7cf83c1a15129
-ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
+ms.openlocfilehash: a1d0fb857a80d5500036f6d9a95f930ec4df38a0
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49561436"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49616789"
 ---
 # <a name="application-guard-for-office-public-preview-for-admins"></a>Applicazione di protezione per Office (anteprima pubblica) per gli amministratori
 
@@ -76,9 +76,7 @@ Per informazioni dettagliate sui requisiti di sistema, vedere [requisiti di sist
 
    In alternativa, è possibile impostare il criterio CSP corrispondente:
 
-   OMA-URI: **./Device/vendor/MSFT/WindowsDefenderApplicationGuard/Settings/AllowWindowsDefenderApplicationGuard**<br/>
-   Tipo di dati: **intero**<br/>
-   Valore: **2**
+   > OMA-URI: **./Device/vendor/MSFT/WindowsDefenderApplicationGuard/Settings/AllowWindowsDefenderApplicationGuard** <br> Tipo di dati: **intero** <br> Valore: **2**
 
 4. Riavviare il sistema.
 

@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-defender-office365
 description: Informazioni su come utilizzare le funzionalità avvisi nel centro sicurezza & conformità di Office 365 per visualizzare e gestire gli avvisi, tra cui la gestione di avvisi avanzati.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a29da0a76ff1b681c87182ff55b787327a969607
-ms.sourcegitcommit: 89f56c3e0b619a4700a75a21927d9ffc90658632
+ms.openlocfilehash: a40e880315b49620c372cf09416457c1bcaa00e7
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48984889"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49615049"
 ---
 # <a name="alerts-in-the-security--compliance-center"></a>Avvisi nel centro sicurezza & conformità
 

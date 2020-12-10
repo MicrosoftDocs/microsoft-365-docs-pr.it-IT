@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 28c86a1c-e4dd-4aad-a2a6-c768a21cb352
 description: "Consigli principali del team di Cybersecurity di Microsoft per l'implementazione delle funzionalità di protezione per proteggere l'ambiente Microsoft 365. "
-ms.openlocfilehash: d62db9206a98078ae5adaad220a7c9b53ff116cd
-ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
+ms.openlocfilehash: 452ce2a303f02cadfcdcbe12310f2538d33a24e7
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49561700"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49615805"
 ---
 # <a name="security-roadmap---top-priorities-for-the-first-30-days-90-days-and-beyond"></a>Roadmap sulla sicurezza-priorità principali per i primi 30 giorni, 90 giorni e oltre
 
@@ -77,7 +77,7 @@ Queste attività richiedono una quantità di tempo leggermente superiore per la 
 
 |Area|Attività|
 |---|---|
-|Gestione della sicurezza|<ul><li>Controllare il Punteggio sicuro per le azioni consigliate per l'ambiente ( [https://securescore.office.com](https://securescore.office.com) ).</li><li>Continuare a esaminare periodicamente i dashboard e i report nel centro sicurezza Microsoft 365, nel cloud app Security e negli strumenti di SIEM.</li><li>Cercare e implementare gli aggiornamenti software.</li><li>Eseguire simulazioni di attacco per attacchi Spear-phishing, password-spray e per la forza bruta tramite [simulatore di attacco](attack-simulator.md) (incluso in [Office 365 Threat Intelligence](office-365-ti.md)).</li><li>Cercare il rischio di condivisione rivedendo i report incorporati in cloud app Security (nella scheda indagare).</li><li>Controllare [Compliance Manager](https://docs.microsoft.com/microsoft-365/compliance/compliance-manager) per esaminare lo stato delle regole che si applicano all'organizzazione, ad esempio GDPR, NIST 800-171.</li></ul>|
+|Gestione della sicurezza|<ul><li>Controllare il Punteggio sicuro per le azioni consigliate per l'ambiente ( <https://securescore.office.com> ).</li><li>Continuare a esaminare periodicamente i dashboard e i report nel centro sicurezza Microsoft 365, nel cloud app Security e negli strumenti di SIEM.</li><li>Cercare e implementare gli aggiornamenti software.</li><li>Eseguire simulazioni di attacco per attacchi Spear-phishing, password-spray e per la forza bruta tramite [simulatore di attacco](attack-simulator.md) (incluso in [Office 365 Threat Intelligence](office-365-ti.md)).</li><li>Cercare il rischio di condivisione rivedendo i report incorporati in cloud app Security (nella scheda indagare).</li><li>Controllare [Compliance Manager](https://docs.microsoft.com/microsoft-365/compliance/compliance-manager) per esaminare lo stato delle regole che si applicano all'organizzazione, ad esempio GDPR, NIST 800-171.</li></ul>|
 |Protezione dalle minacce|Implementare protezioni avanzate per gli account di amministrazione: <ul><li>Configurare le [postazioni di accesso privilegiate](https://docs.microsoft.com/windows-server/identity/securing-privileged-access/privileged-access-workstations) (PAWs) per l'attività di amministrazione.</li><li>Configurare [Azure ad Privileged Identity Management](https://docs.microsoft.com/azure/active-directory/active-directory-privileged-identity-management-configure).</li><li>Configurare uno strumento di gestione degli eventi e delle informazioni di sicurezza (SIEM) per raccogliere i dati di registrazione da Office 365, cloud app Security e altri servizi, AD esempio AD FS. Il registro di controllo archivia i dati per soli 90 giorni. L'acquisizione di questi dati in strumento di SIEM consente di archiviare i dati per un periodo di tempo più lungo.</li></ul>|
 |Gestione di identità e accesso|<ul><li>Abilitare e applicare Mae per tutti gli utenti.</li><li>Implementare un insieme di [criteri di accesso condizionale e correlati](microsoft-365-policies-configurations.md).</li></ul>|
 |Protezione delle informazioni| Adattare e implementare i criteri di protezione delle informazioni. Tali risorse includono esempi: <ul><li>[Information Protection di Office 365 per il GDPR](https://aka.ms/o365gdpr)</li><li>[Configurare Teams con tre livelli di protezione](../../solutions/configure-teams-three-tiers-protection.md)</li></ul> <p> Utilizzare i criteri di prevenzione della perdita di dati e gli strumenti di monitoraggio in Microsoft 365 per i dati archiviati in Microsoft 365 (invece di cloud app Security). <p> Utilizzare cloud app Security con Microsoft 365 per funzionalità di avviso avanzate (oltre alla prevenzione della perdita di dati).|
