@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Usare le etichette di riservatezza per proteggere il contenuto in siti di SharePoint e Microsoft Teams e in gruppi di Microsoft 365.
-ms.openlocfilehash: 927b85a5c2ef14313acd5c1637f561342d71ccc0
-ms.sourcegitcommit: 4cbb4ec26f022f5f9d9481f55a8a6ee8406968d2
+ms.openlocfilehash: c1232e8e839837fc5564909322c90f634f1c6fa9
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49527571"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49614930"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>Usare le etichette di riservatezza per proteggere il contenuto in Microsoft Teams, gruppi di Microsoft 365 e siti di SharePoint
 
@@ -79,7 +79,7 @@ L'abilitazione delle etichette di riservatezza per i contenitori indica che è p
     
     Quando solo questo ambito è selezionato per l'etichetta, l'etichetta non verrà visualizzata nelle app di Office che supportano le etichette di riservatezza e non può essere applicata a file e messaggi di posta elettronica. La separazione delle etichette può essere utile sia per gli utenti che per gli amministratori, ma può anche aumentare la complessità della distribuzione delle etichette.
     
-    Ad esempio, è necessario rivedere attentamente l'[ordine delle etichette](sensitivity-labels.md#label-priority-order-matters) poiché SharePoint rileva quando un documento etichettato viene caricato su un sito etichettato. In questo scenario, un evento di controllo e un messaggio di posta elettronica vengono generati automaticamente quando il documento ha un'etichetta di riservatezza di priorità più alta rispetto all'etichetta del sito. Per ulteriori informazioni, vedere la sezione [Attività di controllo dell'etichetta di riservatezza](#auditing-sensitivity-label-activities) in questa pagina. 
+    Ad esempio, è necessario rivedere attentamente l'[ordine delle etichette](sensitivity-labels.md#label-priority-order-matters) poiché SharePoint rileva quando un documento etichettato viene caricato su un sito etichettato. In questo scenario, vengono generati automaticamente un evento di controllo e un messaggio di posta elettronica quando il documento ha un'etichetta di riservatezza con priorità più elevata rispetto all'etichetta del sito. Per ulteriori informazioni, vedere la sezione [Attività di controllo dell'etichetta di riservatezza](#auditing-sensitivity-label-activities) in questa pagina. 
 
 2. Quindi, nella pagina **Definisci impostazioni di protezione per gruppi e siti**, selezionare una o entrambe le opzioni disponibili:
     
