@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: fb5ac074-e203-4e1f-9843-b9d1a3e03297
 description: "Informazioni su come un amministratore globale può modificare il nome visualizzato e l'indirizzo e-mail di un utente. "
-ms.openlocfilehash: 1672401e9a8e994b91804870130b659ad8724b5e
-ms.sourcegitcommit: 38d828ae8d4350ae774a939c8decf30cb36c3bea
+ms.openlocfilehash: 7f894af3778964dfa6c696c1f467bc0dd8313f32
+ms.sourcegitcommit: 98146c67a1d99db5510fa130340d3b7be8d81b21
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "49551509"
+ms.lasthandoff: 12/07/2020
+ms.locfileid: "49585295"
 ---
 # <a name="change-a-user-name-and-email-address"></a>Cambiare un nome utente e un indirizzo e-mail
 
@@ -77,11 +77,12 @@ Per eseguire questi passaggi, è necessario essere un [amministratore globale](a
 
 3. Nella prima casella digitare la prima parte del nuovo indirizzo di posta elettronica. Se si è aggiunto il proprio dominio a Microsoft 365, è possibile specificarlo per il nuovo alias usando l'elenco a discesa.
 
-4. Seleziona **Salva**.
+4. Selezionare **Salva**.
 
 ::: moniker-end
 
-**IMPORTANTE**: se si riceve un messaggio di errore, consultare [Risolvere messaggi di errore](#resolve-error-messages).
+> [!IMPORTANT]
+> Se si riceve un messaggio di errore, consultare [Risolvere messaggi di errore](#resolve-error-messages).
 
 ## <a name="set-the-primary-email-address"></a>Impostare l'indirizzo di posta elettronica principale
 
@@ -93,23 +94,24 @@ Per eseguire questi passaggi, è necessario essere un [amministratore globale](a
 
 3. Selezionare **Imposta come principale** per l'indirizzo di posta elettronica da impostare come indirizzo principale per la persona specificata. 
     
-    **IMPORTANTE**: l'opzione Imposta come principale non è visualizzata se Microsoft 365 è stato acquistato presso GoDaddy o un altro partner che fornisce una console di gestione. In questo caso, per impostare l'alias principale è necessario accedere alla console di gestione di GoDaddy o del partner. 
-    
-    Inoltre, questa opzione viene visualizzata solo se si è amministratori globali. Se l'opzione non è visualizzata, non si hanno le autorizzazioni per modificare il nome e l'indirizzo e-mail principale di un utente.
+   > [!IMPORTANT]
+   > L'opzione Imposta come principale non è visualizzata se Microsoft 365 è stato acquistato presso GoDaddy o un altro partner che fornisce una console di gestione. In questo caso, per impostare l'alias principale è necessario accedere alla console di gestione di GoDaddy o del partner. 
+   >  
+   > Inoltre, questa opzione viene visualizzata solo se si è amministratori globali. Se l'opzione non è visualizzata, non si hanno le autorizzazioni per modificare il nome e l'indirizzo e-mail principale di un utente.
   
 4. Viene visualizzato un grande simbolo di avvertenza giallo che segnala che si stanno per modificare le informazioni di accesso dell'utente. Selezionare **Salva**, quindi **Chiudi**.
     
 5. Comunicare le informazioni seguenti:
  
-  - Che il cambiamento potrebbe richiedere del tempo.
+   - Che il cambiamento potrebbe richiedere del tempo.
   
-  - Il nuovo nome utente, che sarà necessario per accedere a Microsoft 365.
+   - Il nuovo nome utente, che sarà necessario per accedere a Microsoft 365.
     
-  - Se l'utente usa Skype for Business online, informarlo che dovrà ripianificare le eventuali riunioni di Skype for Business online organizzate e avvisare i contatti esterni di aggiornare le proprie informazioni di contatto.
+   - Se l'utente usa Skype for Business online, informarlo che dovrà ripianificare le eventuali riunioni di Skype for Business online organizzate e avvisare i contatti esterni di aggiornare le proprie informazioni di contatto.
 
-  - Se l'utente usa OneDrive, informarlo che l'URL di questa posizione è cambiato. Se l'utente ha blocchi appunti di OneNote in OneDrive, potrebbe doverli chiudere e riaprire in OneNote. Se l'utente ha file condivisi da OneDrive, i collegamenti ai file potrebbero non funzionare e l'utente può ricondividere i file.    
+   - Se l'utente usa OneDrive, informarlo che l'URL di questa posizione è cambiato. Se l'utente ha blocchi appunti di OneNote in OneDrive, potrebbe doverli chiudere e riaprire in OneNote. Se l'utente ha file condivisi da OneDrive, i collegamenti ai file potrebbero non funzionare e l'utente può ricondividere i file.    
   
-  - Se è stata cambiata anche la password, informarlo che gli verrà chiesto di immettere la nuova password nel dispositivo mobile, altrimenti non verrà sincronizzato.
+   - Se è stata cambiata anche la password, informarlo che gli verrà chiesto di immettere la nuova password nel dispositivo mobile, altrimenti non verrà sincronizzato.
   
 ::: moniker-end
 
@@ -121,23 +123,24 @@ Per eseguire questi passaggi, è necessario essere un [amministratore globale](a
 
 3. Selezionare **Imposta come principale** per l'indirizzo di posta elettronica da impostare come indirizzo principale per la persona specificata. 
     
-    **IMPORTANTE**: l'opzione Imposta come principale non è visualizzata se Microsoft 365 è stato acquistato presso GoDaddy o un altro partner che fornisce una console di gestione. In questo caso, per impostare l'alias principale è necessario accedere alla console di gestione di GoDaddy o del partner. 
-    
-    Inoltre, questa opzione viene visualizzata solo se si è amministratori globali. Se l'opzione non è visualizzata, non si hanno le autorizzazioni per modificare il nome e l'indirizzo e-mail principale di un utente.
+   > [!IMPORTANT]
+   > L'opzione Imposta come principale non è visualizzata se Microsoft 365 è stato acquistato presso GoDaddy o un altro partner che fornisce una console di gestione. In questo caso, per impostare l'alias principale è necessario accedere alla console di gestione di GoDaddy o del partner. 
+   > 
+   > Inoltre, questa opzione viene visualizzata solo se si è amministratori globali. Se l'opzione non è visualizzata, non si hanno le autorizzazioni per modificare il nome e l'indirizzo e-mail principale di un utente.
   
 4. Viene visualizzato un grande simbolo di avvertenza giallo che segnala che si stanno per modificare le informazioni di accesso dell'utente. Selezionare **Salva**, quindi **Chiudi**.
     
 5. Comunicare le informazioni seguenti:
  
-  - L'applicazione di questa modifica può richiedere un po' di tempo.
+   - L'applicazione di questa modifica può richiedere un po' di tempo.
   
-  - Il nuovo nome utente, che sarà necessario per accedere a Microsoft 365.
+   - Il nuovo nome utente, che sarà necessario per accedere a Microsoft 365.
     
-  - Se l'utente usa Skype for Business online, informarlo che dovrà ripianificare le eventuali riunioni Skype for Business online organizzate e avvisare i contatti esterni di aggiornare le vecchie informazioni di contatto.
+   - Se l'utente usa Skype for Business online, informarlo che dovrà ripianificare le eventuali riunioni Skype for Business online organizzate e avvisare i contatti esterni di aggiornare le vecchie informazioni di contatto.
 
-  - Se l'utente usa OneDrive, informarlo che l'URL di questa posizione è stata modificata. Se l'utente dispone di blocchi appunti di OneNote in OneDrive, potrebbe doverli chiudere e riaprire in OneNote. Se l'utente dispone di file condivisi da OneDrive, i collegamenti ai file potrebbero non funzionare e l'utente può ricondividere i file.    
+   - Se l'utente usa OneDrive, informarlo che l'URL di questa posizione è stata modificata. Se l'utente dispone di blocchi appunti di OneNote in OneDrive, potrebbe doverli chiudere e riaprire in OneNote. Se l'utente dispone di file condivisi da OneDrive, i collegamenti ai file potrebbero non funzionare e l'utente può ricondividere i file.    
   
-  - Se è stata cambiata anche la password, informarlo che gli verrà chiesto di immettere la nuova password nel dispositivo mobile, altrimenti non verrà sincronizzato.
+   - Se è stata cambiata anche la password, informarlo che gli verrà chiesto di immettere la nuova password nel dispositivo mobile, altrimenti non verrà sincronizzato.
 
 ::: moniker-end
 
@@ -149,23 +152,24 @@ Per eseguire questi passaggi, è necessario essere un [amministratore globale](a
 
 3. Selezionare **Imposta come principale** per l'indirizzo di posta elettronica da impostare come indirizzo principale per la persona specificata. 
     
-    **IMPORTANTE**: l'opzione Imposta come principale non è visualizzata se Microsoft 365 è stato acquistato presso GoDaddy o un altro partner che fornisce una console di gestione. In questo caso, per impostare l'alias principale è necessario accedere alla console di gestione di GoDaddy o del partner. 
-    
-    Inoltre, questa opzione viene visualizzata solo se si è amministratori globali. Se l'opzione non è visualizzata, non si hanno le autorizzazioni per modificare il nome e l'indirizzo e-mail principale di un utente.
+   > [!IMPORTANT]
+   > L'opzione Imposta come principale non è visualizzata se Microsoft 365 è stato acquistato presso GoDaddy o un altro partner che fornisce una console di gestione. In questo caso, per impostare l'alias principale è necessario accedere alla console di gestione di GoDaddy o del partner. 
+   >  
+   > Inoltre, questa opzione viene visualizzata solo se si è amministratori globali. Se l'opzione non è visualizzata, non si hanno le autorizzazioni per modificare il nome e l'indirizzo e-mail principale di un utente.
   
 4. Viene visualizzato un grande simbolo di avvertenza giallo che segnala che si stanno per modificare le informazioni di accesso dell'utente. Selezionare **Salva**, quindi **Chiudi**.
     
 5. Comunicare le informazioni seguenti:
  
-  - L'applicazione di questa modifica può richiedere un po' di tempo.
+   - L'applicazione di questa modifica può richiedere un po' di tempo.
   
-  - Il nuovo nome utente, che sarà necessario per accedere a Microsoft 365.
+   - Il nuovo nome utente, che sarà necessario per accedere a Microsoft 365.
     
-  - Se l'utente usa Skype for Business online, informarlo che dovrà ripianificare le eventuali riunioni Skype for Business online organizzate e avvisare i contatti esterni di aggiornare le vecchie informazioni di contatto.
+   - Se l'utente usa Skype for Business online, informarlo che dovrà ripianificare le eventuali riunioni Skype for Business online organizzate e avvisare i contatti esterni di aggiornare le vecchie informazioni di contatto.
 
-  - Se l'utente usa OneDrive, informarlo che l'URL di questa posizione è stata modificata. Se l'utente dispone di blocchi appunti di OneNote in OneDrive, potrebbe doverli chiudere e riaprire in OneNote. Se l'utente dispone di file condivisi da OneDrive, i collegamenti ai file potrebbero non funzionare e l'utente può ricondividere i file.    
+   - Se l'utente usa OneDrive, informarlo che l'URL di questa posizione è stata modificata. Se l'utente dispone di blocchi appunti di OneNote in OneDrive, potrebbe doverli chiudere e riaprire in OneNote. Se l'utente dispone di file condivisi da OneDrive, i collegamenti ai file potrebbero non funzionare e l'utente può ricondividere i file.    
   
-  - Se è stata cambiata anche la password, informarlo che gli verrà chiesto di immettere la nuova password nel dispositivo mobile, altrimenti non verrà sincronizzato.
+   - Se è stata cambiata anche la password, informarlo che gli verrà chiesto di immettere la nuova password nel dispositivo mobile, altrimenti non verrà sincronizzato.
 
 ::: moniker-end
   
@@ -179,7 +183,7 @@ Per eseguire questi passaggi, è necessario essere un [amministratore globale](a
 
 3. Nella casella **Nome visualizzato**, digitare un nuovo nome per l'utente, quindi selezionare **Salva**.
 
-    Se viene visualizzato il messaggio di errore "**Non è stato possibile modificare l'utente. Controllare le informazioni sull'utente e riprovare**, consultare [Risolvere messaggi di errore](#resolve-error-messages).
+   Se viene visualizzato il messaggio di errore "**Non è stato possibile modificare l'utente. Controllare le informazioni sull'utente e riprovare**, consultare [Risolvere messaggi di errore](#resolve-error-messages).
 
 Potrebbero essere necessarie fino a 24 ore prima che la modifica diventi effettiva per tutti i servizi. Dopo l'applicazione della modifica, l'utente dovrà accedere a Outlook, Skype for Business e SharePoint con il nome utente aggiornato.
 
@@ -193,7 +197,7 @@ Potrebbero essere necessarie fino a 24 ore prima che la modifica diventi effetti
 
 3. Nella casella **Nome visualizzato**, digitare un nuovo nome per l'utente, quindi selezionare **Salva**.
 
-    Se viene visualizzato il messaggio di errore "**Non è stato possibile modificare l'utente. Controllare le informazioni sull'utente e riprovare**, consultare [Risolvere messaggi di errore](#resolve-error-messages).
+   Se viene visualizzato il messaggio di errore "**Non è stato possibile modificare l'utente. Controllare le informazioni sull'utente e riprovare**, consultare [Risolvere messaggi di errore](#resolve-error-messages).
 
 Potrebbero essere necessarie fino a 24 ore prima che la modifica diventi effettiva per tutti i servizi. Dopo l'applicazione della modifica, l'utente dovrà accedere a Outlook, Skype for Business e SharePoint con il nome utente aggiornato. Assicurarsi quindi di comunicare la modifica all'utente.
 
@@ -207,7 +211,7 @@ Potrebbero essere necessarie fino a 24 ore prima che la modifica diventi effetti
 
 3. Nella casella **Nome visualizzato**, digitare un nuovo nome per l'utente, quindi selezionare **Salva**.
 
-    Se viene visualizzato il messaggio di errore "**Non è stato possibile modificare l'utente. Controllare le informazioni sull'utente e riprovare**, consultare [Risolvere messaggi di errore](#resolve-error-messages).
+   Se viene visualizzato il messaggio di errore "**Non è stato possibile modificare l'utente. Controllare le informazioni sull'utente e riprovare**, consultare [Risolvere messaggi di errore](#resolve-error-messages).
 
 Potrebbero essere necessarie fino a 24 ore prima che la modifica diventi effettiva per tutti i servizi. Dopo l'applicazione della modifica, l'utente dovrà accedere a Outlook, Skype for Business e SharePoint con il nome utente aggiornato. Assicurarsi quindi di comunicare la modifica all'utente.
 

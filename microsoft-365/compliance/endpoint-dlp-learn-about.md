@@ -1,5 +1,5 @@
 ---
-title: Informazioni sulla prevenzione della perdita di dati degli endpoint di Microsoft 365
+title: Informazioni sulla Prevenzione della perdita di dati degli endpoint di Microsoft 365
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -18,23 +18,23 @@ ms.collection:
 - m365initiative-compliance
 search.appverid:
 - MET150
-description: 'La prevenzione della perdita di dati degli endpoint di Microsoft 365 estende il monitoraggio delle attività dei file e le azioni di protezione agli endpoint. I file sono visibili nelle soluzioni del Centro conformità Microsoft 365 '
-ms.openlocfilehash: e469872dac19db08f7b525c8a5ada725c75bfa10
-ms.sourcegitcommit: fcc1b40732f28f075d95faffc1655473e262dd95
+description: 'La Prevenzione della perdita di dati degli endpoint di Microsoft 365 estende il monitoraggio delle attività dei file e le azioni di protezione agli endpoint. I file vengono resi visibili nelle soluzioni di conformità di Microsoft 365 '
+ms.openlocfilehash: 457701a514159e54e932db3e4ad04a7428165fdc
+ms.sourcegitcommit: d859ea36152c227699c1786ef08cda5805ecf7db
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/14/2020
-ms.locfileid: "49072975"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49604316"
 ---
 # <a name="learn-about-microsoft-365-endpoint-data-loss-prevention"></a>Informazioni sulla prevenzione della perdita di dati degli endpoint di Microsoft 365
 
 È possibile usare la prevenzione della perdita dei dati (DLP) di Microsoft 365 per monitorare le azioni intraprese sugli elementi che si considerano sensibili e per evitare la condivisione involontaria di tali elementi. Per altre informazioni, vedere [Panoramica sulla prevenzione della perdita dei dati](data-loss-prevention-policies.md).
 
-La **prevenzione della perdita di dati degli endpoint** (Endpoint DLP) estende le funzionalità di monitoraggio e protezione delle attività di DLP agli elementi sensibili presenti nei dispositivi Windows 10. Dopo avere eseguito l’onboarding dei dispositivi nelle soluzioni del Centro conformità Microsoft 365, le informazioni sulle azioni che utenti stanno eseguendo sugli elementi sensibili sono rese visibili in [Esplora attività](data-classification-activity-explorer.md) ed è possibile applicare azioni di protezione su tali elementi tramite i [criteri DLP](create-test-tune-dlp-policy.md).
+La **prevenzione della perdita di dati degli endpoint** (Endpoint DLP) estende le funzionalità di monitoraggio e protezione delle attività di DLP agli elementi sensibili presenti nei dispositivi Windows 10. Dopo aver eseguito l'onboarding dei dispositivi nelle soluzioni del Centro conformità Microsoft 365, le informazioni sulle azioni che gli utenti stanno eseguendo sugli elementi sensibili sono rese visibili in [Esplora attività](data-classification-activity-explorer.md) ed è possibile applicare azioni di protezione su tali elementi tramite [criteri DLP](create-test-tune-dlp-policy.md).
 
 ## <a name="endpoint-activities-you-can-monitor-and-take-action-on"></a>Attività endpoint che è possibile monitorare e su cui si può intervenire
 
-Microsoft Endpoint prevenzione della perdita dei dati consente di controllare e gestire i tipi di attività seguenti, che gli utenti possono eseguire sugli elementi sensibili nei dispositivi che eseguono Windows 10. Questo include:
+Microsoft Endpoint DLP consente di controllare e gestire i tipi di attività seguenti, che gli utenti possono eseguire sugli elementi sensibili nei dispositivi che eseguono Windows 10. Questo include:
 
 
 |attività sull'elemento |controllabile/limitabile  |
@@ -53,7 +53,7 @@ Ci sono alcuni concetti aggiuntivi che è necessario conoscere prima di approfon
 
 ### <a name="enabling-device-management"></a>Abilitare la gestione dei dispositivi
 
-La gestione dei dispositivi è la funzionalità che consente la raccolta di dati di telemetria dai dispositivi e la introduce nelle soluzioni del Centro conformità di Microsoft 365, come Prevenzione della perdita di dati degli endpoint e [Gestione dei rischi Insider](insider-risk-management.md). È necessario eseguire l'onboarding di tutti i dispositivi che si vogliono usare come posizioni nei criteri di prevenzione della perdita dei dati.
+La gestione dei dispositivi è la funzionalità che consente la raccolta di dati di telemetria dai dispositivi e la introduce nelle soluzioni di conformità di Microsoft 365, come Endpoint DLP e [Gestione dei rischi Insider](insider-risk-management.md). È necessario eseguire l'onboarding di tutti i dispositivi che si vogliono usare come posizioni nei criteri DLP.
 
 > [!div class="mx-imgBorder"]
 > ![abilitare la gestione dei dispositivi](../media/endpoint-dlp-learn-about-1-enable-device-management.png)
@@ -69,18 +69,18 @@ Onboarding e offboarding vengono gestiti tramite script scaricati dal centro ges
 > [!div class="mx-imgBorder"]
 > ![pagina di onboarding dispositivi](../media/endpoint-dlp-learn-about-3-device-onboarding-page.png)
 
- Seguire le procedure in [Informazioni sulla prevenzione della perdita di dati degli endpoint di Microsoft 365](endpoint-dlp-getting-started.md) per l'onboarding dei dispositivi.
+ Seguire le procedure in [Introduzione a Microsoft 365 Endpoint DLP](endpoint-dlp-getting-started.md) per l'onboarding dei dispositivi.
 
 Se è stato eseguito l'onboarding di dispositivi tramite [Microsoft Defender per endpoint](https://docs.microsoft.com/windows/security/threat-protection/), questi dispositivi verranno visualizzati automaticamente nell'elenco dei dispositivi.
 
 > [!div class="mx-imgBorder"]
 > ![elenco dispositivi gestiti](../media/endpoint-dlp-learn-about-2-device-list.png)
 
-### <a name="viewing-endpoint-dlp-data"></a>Visualizzazione dei dati di prevenzione della perdita di dati degli endpoint
+### <a name="viewing-endpoint-dlp-data"></a>Visualizzazione dei dati di Endpoint DLP
 
- La prevenzione della perdita di dati degli endpoint monitora l'attività in base al tipo MIME, quindi le attività verranno acquisite anche se l'estensione del file viene modificata. Nell'anteprima pubblica viene controllato tutto:
+ La Prevenzione della perdita di dati degli endpoint monitora le attività in base al tipo MIME, in modo che le attività vengano acquisite anche se l'estensione del file viene cambiata. Al momento sono supportati i seguenti tipi di file:
 
-- file di Word
+- File di Word
 - File di PowerPoint
 - File di Excel
 - File PDF
@@ -93,7 +93,7 @@ Se è stato eseguito l'onboarding di dispositivi tramite [Microsoft Defender per
 - File CPP
 - File CS
 - File H
-- file Java
+- File Java
 
 > [!NOTE]
 > La prevenzione della perdita di dati degli endpoint valuta i file di tutti i tipi precedenti rispetto ai criteri DLP e applica le azioni di protezione di conseguenza. Tutti i file che corrispondono a un criterio DLP vengono controllati per tutte le azioni supportate, anche se non vengono bloccati. Inoltre, le attività sui file eseguite in qualsiasi file di Word, PowerPoint, Excel, PDF e CSV vengono controllate per impostazione predefinita, indipendentemente dal fatto che esista un criterio DLP o che corrisponda a questi file.
@@ -106,12 +106,12 @@ Se è stato eseguito l'onboarding di dispositivi tramite [Microsoft Defender per
 
 ![info sull'evento](../media/Event-info-1.png)
 
-Dopo l'onboarding di un dispositivo, le informazioni sulle attività controllate fluiscono in Esplora attività anche prima che vengano configurati e distribuiti criteri DLP che usano dispositivi come posizione.
+Dopo l'onboarding di un dispositivo, le informazioni sulle attività controllate fluiscono in Esplora attività anche prima che vengano configurati e distribuiti criteri di prevenzione della perdita dei dati che usano dispositivi come posizione.
 
 > [!div class="mx-imgBorder"]
 > ![eventi di prevenzione della perdita di dati degli endpoint in Esplora attività](../media/endpoint-dlp-learn-about-4-activity-explorer.png)
 
-La prevenzione della perdita di dati degli endpoint raccoglie informazioni complete sulle attività controllate.
+Endpoint DLP raccoglie informazioni complete sulle attività controllate.
 
 Ad esempio, se un file viene copiato in un supporto USB rimovibile, nei dettagli attività vengono visualizzati questi attributi:
 
@@ -145,7 +145,7 @@ Ad esempio, se un file viene copiato in un supporto USB rimovibile, nei dettagli
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-Dopo avere acquisito familiarità con la prevenzione della perdita di dati degli endpoint, è possibile proseguire con questi argomenti:
+Dopo avere acquisito familiarità con Endpoint DLP, è possibile proseguire con questi argomenti:
 
 1) [Introduzione alla prevenzione della perdita di dati degli endpoint Microsoft](endpoint-dlp-getting-started.md)
 2) [Uso della prevenzione della perdita di dati degli endpoint Microsoft](endpoint-dlp-using.md)

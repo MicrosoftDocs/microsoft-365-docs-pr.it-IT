@@ -19,12 +19,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Informazioni su come usare DomainKeys Identified Mail (DKIM) insieme a Microsoft 365 per garantire che i sistemi di posta elettronica di destinazione ritengano attendibili i messaggi inviati dal dominio personalizzato.
-ms.openlocfilehash: 66f352b6c3a5d3b3beff3043a3f0d1a435d1e5d1
-ms.sourcegitcommit: ff1f0a97e9d43bc786f04d2ea7e01695531b9f28
+ms.openlocfilehash: f8ae6334a078d635de069d2fe7af351ad42d8df3
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "49560885"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49615361"
 ---
 # <a name="use-dkim-to-validate-outbound-email-sent-from-your-custom-domain"></a>Usare DKIM per convalidare la posta elettronica in uscita inviata dal dominio personalizzato
 
@@ -90,7 +90,7 @@ Dal momento che sono supportate le chiavi di crittografia DKIM sia a 1024 che a 
    1. [Connettersi ai carichi di lavoro di Office 365 tramite PowerShell](https://docs.microsoft.com/microsoft-365/enterprise/connect-to-all-microsoft-365-services-in-a-single-windows-powershell-window). (Il cmdlet proviene da Exchange Online.)
    1. Eseguire il comando seguente:
 
-      ```powershell 
+      ```powershell
       Rotate-DkimSigningConfig -KeySize 2048 -Identity {Guid of the existing Signing Config}
       ```
 
@@ -131,7 +131,7 @@ Per configurare DKIM, eseguire la procedura seguente:
 Per ogni dominio al quale si intende aggiungere una firma DKIM in DNS è necessario pubblicare due record CNAME.
 
 > [!NOTE]
-> Se non si è letto l'articolo completo, probabilmente si sono perse le informazioni rapide sulla connessione di PowerShell: [Connettersi ai carichi di lavoro di Office 365 tramite PowerShell](https://docs.microsoft.com/microsoft-365/enterprise/connect-to-all-microsoft-365-services-in-a-single-windows-powershell-window). (Il cmdlet proviene da Exchange Online.) 
+> Se non si è letto l'articolo completo, probabilmente si sono perse le informazioni rapide sulla connessione di PowerShell: [Connettersi ai carichi di lavoro di Office 365 tramite PowerShell](https://docs.microsoft.com/microsoft-365/enterprise/connect-to-all-microsoft-365-services-in-a-single-windows-powershell-window). (Il cmdlet proviene da Exchange Online.)
 
 Per creare i record dei selettori eseguire i comandi riportati di seguito:
 
@@ -254,7 +254,7 @@ Attendere qualche minuto prima di effettuare i passaggi seguenti e confermare di
 
 Se in futuro si decide di aggiungere un altro dominio personalizzato e di abilitare DKIM, è necessario eseguire la procedura indicata in questo articolo per ogni dominio. In particolare, completare tutti i passaggi elencati in [Procedura necessaria per configurare manualmente DKIM](use-dkim-to-validate-outbound-email.md#SetUpDKIMO365).
 
-## <a name="disabling-the-dkim-signing-policy-for-a-custom-domain"></a>Disabilitazione del criterio di firma DKIM per un dominio personalizzato 
+## <a name="disabling-the-dkim-signing-policy-for-a-custom-domain"></a>Disabilitazione del criterio di firma DKIM per un dominio personalizzato
 <a name="DisableDKIMSigningPolicy"> </a>
 
 La disabilitazione del criterio di firma non disattiva completamente DKIM. Dopo un determinato periodo di tempo, Microsoft 365 applicherà automaticamente il criterio predefinito per il dominio. Per ulteriori informazioni, vedere [Comportamento predefinito per DKIM e Microsoft 365](use-dkim-to-validate-outbound-email.md#DefaultDKIMbehavior).
@@ -336,7 +336,7 @@ In questo esempio, per raggiungere il risultato:
    > sender@**contoso.com**
 
    > d=**contoso.com**
-   
+
 ## <a name="identify-domains-that-do-not-send-email"></a>Identificare i domini che non inviano messaggi di posta elettronica
 
 Le organizzazioni devono dichiarare esplicitamente se un dominio non invia messaggi di posta elettronica specificando `v=DKIM1; p=` nel record DKIM per tali domini. In questo caso, la ricezione dei server di posta elettronica non contiene chiavi pubbliche valide per il dominio e gli eventuali messaggi di posta elettronica che rivendicano il dominio devono essere rifiutati. Questa operazione deve essere eseguita per ogni dominio e sottodominio usando un carattere jolly DKIM.

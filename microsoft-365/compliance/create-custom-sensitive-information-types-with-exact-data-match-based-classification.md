@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: Informazioni su come creare un tipo di informazioni sensibili personalizzato con la classificazione basata su Exact Data Match.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 229eb733af85ea5f450969c6d70709cfadcb8f06
-ms.sourcegitcommit: 554755bc9ce40228ce6e34bde6fc6e226869b6a1
+ms.openlocfilehash: b120e2bffa4554fb435fe8de2e22d6de2f851544
+ms.sourcegitcommit: d859ea36152c227699c1786ef08cda5805ecf7db
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48681774"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49604338"
 ---
 # <a name="create-custom-sensitive-information-types-with-exact-data-match-based-classification"></a>Creare tipi di informazioni sensibili personalizzati con classificazione esatta basata su Exact Data Match
 
@@ -49,7 +49,7 @@ Ma cosa succede se si vuole un tipo di informazioni sensibili personalizzato che
 La classificazione basata su EDM consente di creare tipi di informazioni sensibili personalizzati che fanno riferimento a valori esatti in un database di informazioni sensibili. Il database può essere aggiornato giornalmente e può contenere un massimo di 100 milioni di righe di dati. I dipendenti, i pazienti o i clienti vanno e vengono e i record cambiano, i tipi di informazioni sensibili personalizzati rimangono aggiornati e disponibili. È anche possibile usare una classificazione basata su EDM con criteri, ad esempio i [criteri di prevenzione della perdita dei dati](data-loss-prevention-policies.md) (DLP) o i [criteri dei file di Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/data-protection-policies).
 
 > [!NOTE]
-> Microsoft 365 Information Protection supporta in anteprima set di caratteri a due byte nelle lingue seguenti:
+> Microsoft 365 Information Protection supporta in anteprima i set di caratteri a due byte per le lingue seguenti:
 > - Cinese (semplificato)
 > - Cinese (tradizionale)
 > - Coreano
@@ -102,18 +102,20 @@ L’impostazione e la configurazione di una classificazione basata su EDM implic
       - Fino a 32 colonne (campi) per origine dati
       - Fino a 5 colonne (campi) contrassegnate come ricercabile
 
-2. Strutturare i dati sensibili nel file .csv in modo che la prima riga includa i nomi dei campi usati per la classificazione basata su EDM. Nel file .csv potrebbero essere presenti nomi di campo, come "ssn", "birthdate", "firstname", "lastname". I nomi delle intestazioni di colonna non possono includere spazi o caratteri di sottolineatura. Ad esempio, il file .cvs di esempio usato in questo articolo è denominato*PatientRecords. csv*e le relative colonne includono*PatientID*,*MRN*,*LastName*,*FirstName*,*SSN*e così via.
+2. Strutturare i dati sensibili nel file .csv in modo che la prima riga includa i nomi dei campi usati per la classificazione basata su EDM. Nel file .csv potrebbero essere presenti nomi di campo, come "ssn", "birthdate", "firstname", "lastname". I nomi delle intestazioni di colonna non possono includere spazi o caratteri di sottolineatura. Ad esempio, il file .cvs di esempio usato in questo articolo è denominato *PatientRecords. csv* e le relative colonne includono *PatientID*, *MRN*, *LastName*, *FirstName*, *SSN* e così via.
+
+3. Prestare attenzione al formato dei campi di dati sensibili. In particolare, i campi che possono contenere virgole al loro interno (come un indirizzo che contenga il valore "Seattle,WA") sarebbero analizzati come due campi separati, quando l'analisi viene eseguita dallo strumento EDM.  Per evitare il problema, bisogna assicurare che tali campi siano racchiusi da virgolette singole o doppie nella tabella dei dati sensibili. Se i campi con virgole possono contenere anche spazi, è necessario creare un tipo di informazioni sensibili personalizzato abbinato al formato corrispondente (p. es. una stringa con più parole contenente virgole e spazi), per assicurare che la stringa sia abbinata correttamente quando il documento viene scansionato.
 
 #### <a name="define-the-schema-for-your-database-of-sensitive-information"></a>Definire lo schema per il database delle informazioni sensibili
 
-3. Definire lo schema per il database delle informazioni sensibili nel formato .xml (come riportato nell'esempio seguente). Assegnare al file dello schema il nome **edm.xml** e configurarlo in modo che per ogni colonna del database sia presente una riga che usi la sintassi: 
+1. Definire lo schema per il database delle informazioni sensibili nel formato .xml (come riportato nell'esempio seguente). Assegnare al file dello schema il nome **edm.xml** e configurarlo in modo che per ogni colonna del database sia presente una riga che usi la sintassi: 
 
       `\<Field name="" searchable=""/\>`.
 
       - Usare i nomi delle colonne per i valori dei *nomi dei campi*.
       - Usare *searchable="true"* per un massimo di 5 campi che si desidera cercare. Almeno un campo deve essere disponibile per la ricerca.
 
-      Ad esempio, il seguente file XML definisce lo schema per un database dei record dei pazienti, con cinque campi specificati come ricercabili: *IDPaziente*, *MRN*, *CF*, * Telefono* e *Data nasc.*.
+      Ad esempio, il seguente file XML definisce lo schema per un database dei record dei pazienti, con cinque campi specificati come ricercabili: *IDPaziente*, *MRN*, *CF*, *Telefono* e *Data nasc.*.
 
       (È possibile copiare, modificare e usare l'esempio.)
 
@@ -227,7 +229,7 @@ L’impostazione e la configurazione di una classificazione basata su EDM implic
 
 A questo punto è stata configurata la classificazione basata su EDM. Il passaggio successivo consiste nell'eseguire l’hashing dei i dati sensibili e poi di caricare gli hash per indicizzarli.
 
-Ricordarsi della procedura precedente in cui lo schema di PatientRecords definisce cinque campi come ricercabili: *PatientID *, *MRN*, *SSN*, *Telefono* e*DOB*. Il pacchetto di regole di esempio include questi campi e fa riferimento al file schema di database (**edm.xml**), con un unico elemento *ExactMatch* per ogni campo ricercabile. Considerare l'elemento ExactMatch seguente:
+Ricordarsi della procedura precedente in cui lo schema di PatientRecords definisce cinque campi come ricercabili: *PatientID*, *MRN*, *SSN*, *Telefono* e *DOB*. Il pacchetto di regole di esempio include questi campi e fa riferimento al file schema di database (**edm.xml**), con un unico elemento *ExactMatch* per ogni campo ricercabile. Considerare l'elemento ExactMatch seguente:
 
 ```xml
 <ExactMatch id = "E1CC861E-3FE9-4A58-82DF-4BD259EAB371" patternsProximity = "300" dataStore ="PatientRecords" recommendedConfidence = "65" >
@@ -397,7 +399,7 @@ Se non si vuole esporre file dati di testo sensibili non crittografati, è possi
 
 #### <a name="set-up-the-security-group-and-user-account"></a>Impostare il gruppo di sicurezza e l'account utente
 
-1. Come amministratore globale, passare all'interfaccia di amministrazione usando il [collegamento appropriato per l'abbonamento in uso](#portal-links-for-your-subscription) e[creare un gruppo di sicurezza](https://docs.microsoft.com/office365/admin/email/create-edit-or-delete-a-security-group?view=o365-worldwide) denominato **EDM\_ DataUploaders**.
+1. Come amministratore globale, passare all'interfaccia di amministrazione usando il [collegamento appropriato per l'abbonamento in uso](#portal-links-for-your-subscription) e [creare un gruppo di sicurezza](https://docs.microsoft.com/office365/admin/email/create-edit-or-delete-a-security-group?view=o365-worldwide) denominato **EDM\_ DataUploaders**.
 
 2. Aggiungere uno o più utenti al gruppo di sicurezza **EDM\_DataUploaders**. (Questi utenti gestiranno il database delle informazioni sensibili.)
 
@@ -631,7 +633,7 @@ I tipi di informazioni sensibili EDM per gli scenari seguenti sono in fase di sv
 15. Nella scheda **Esamina le impostazioni**, controlla il criterio. Apportare le modifiche necessarie. Al termine, scegliere **Crea**.
 
 > [!NOTE]
-> Il nuovo criterio di DLP sarà attivo nel centro dati dopo circa un’ora.
+> Il nuovo criterio DLP sarà attivo nel centro dati dopo circa un'ora.
 
 ## <a name="related-articles"></a>Articoli correlati
 
@@ -640,4 +642,3 @@ I tipi di informazioni sensibili EDM per gli scenari seguenti sono in fase di sv
 - [Panoramica sui criteri di DLP](data-loss-prevention-policies.md)
 - [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security)
 - [New-DlpEdmSchema](https://docs.microsoft.com/powershell/module/exchange/new-dlpedmschema)
-

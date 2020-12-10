@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 localization_priority: Priority
 description: Informazioni per amministratori sulle funzionalità anti-spoofing disponibili in Exchange Online Protection (EOP), che possono contribuire a ridurre gli attacchi di phishing da mittenti e domini contraffatti.
-ms.openlocfilehash: 57d6dc8d9c1935578db15abdbb3e17e72bb64257
-ms.sourcegitcommit: ce46d1bd67091d4ed0e2b776dfed55e2d88cdbf4
+ms.openlocfilehash: cae99cce070e6dc362dc678c153074fee53ca6a6
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49130830"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49616717"
 ---
 # <a name="anti-spoofing-protection-in-eop"></a>Protezione anti-spoofing in EOP
 
@@ -84,13 +84,13 @@ Microsoft distingue tra due diversi tipi di spoofing dei messaggi:
 - **Spoofing intra-organizzazione**: anche noto come spoofing _self-to-self_. Ad esempio:
 
   - Il mittente e il destinatario si trovano nello stesso dominio:
-    > Da: chris@contoso.com <br/> A: michelle@contoso.com
+    > Da: chris@contoso.com <br> A: michelle@contoso.com
 
   - Il mittente e il destinatario si trovano in sottodomini nello stesso dominio:
-    > Da: laura@marketing.fabrikam.com <br/> A: julia@engineering.fabrikam.com
+    > Da: laura@marketing.fabrikam.com <br> A: julia@engineering.fabrikam.com
 
   - Il mittente e il destinatario si trovano in domini diversi che appartengono alla stessa organizzazione, vale a dire che entrambi i domini sono configurati come [domini accettati](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) nella stessa organizzazione:
-    > Da: mittente @ microsoft.com <br/> A: destinatario @ bing.com
+    > Da: mittente @ microsoft.com <br> A: destinatario @ bing.com
 
     Negli indirizzi di posta elettronica vengono usati spazi per impedire la raccolta da parte di spambot.
 
@@ -105,7 +105,7 @@ Microsoft distingue tra due diversi tipi di spoofing dei messaggi:
   - SFTY è il livello di sicurezza del messaggio. 9 indica il phishing, .11 indica lo spoofing intra-organizzazione.
 
 - **Spoofing tra domini**: i domini del mittente e del destinatario sono diversi e non hanno relazioni gli uni con gli altri (si parla anche di domini esterni). Ad esempio:
-    > Da: chris@contoso.com <br/> A: michelle@tailspintoys.com
+    > Da: chris@contoso.com <br> A: michelle@tailspintoys.com
 
   I messaggi che non superano l'[autenticazione composita](email-validation-and-authentication.md#composite-authentication) a causa dello spoofing tra domini contengono i valori di intestazione seguenti:
 
@@ -133,11 +133,11 @@ Un' organizzazione con Microsoft Defender per Office 365 può usare Esplora mina
 
 Ad esempio, Gabriela Laureano (glaureano@contoso.com) è interessata al birdwatching, aderisce alla lista di distribuzione birdwatchers@fabrikam.com e invia il messaggio seguente alla lista:
 
-> **Da:** "Gabriela Laureano" \<glaureano@contoso.com\> <br/> **A:** Elenchi di Discussione dei Birdwatcher \<birdwatchers@fabrikam.com\> <br/> **Oggetto:** ottimo avvistamento dei Jays blu sula cima del Monte Rainier questa settimana <p> Qualche utente desidera vedere la visualizzazione di questa settimana dal monte Rainier?
+> **Da:** "Gabriela Laureano" \<glaureano@contoso.com\> <br> **A:** Elenchi di Discussione dei Birdwatcher \<birdwatchers@fabrikam.com\> <br> **Oggetto:** ottimo avvistamento dei Jays blu sula cima del Monte Rainier questa settimana <p> Qualche utente desidera vedere la visualizzazione di questa settimana dal monte Rainier?
 
 Il server della lista di distribuzione riceve il messaggio, ne modifica il contenuto e lo riproduce ai membri della lista. Il messaggio riprodotto ha lo stesso indirizzo del mittente (glaureano@contoso.com), ma è stato modificato aggiungendo un tag alla riga dell'oggetto e un piè di pagina in fondo. Questo tipo di modifica è comune nelle liste di distribuzione e può generare falsi positivi.
 
-> **Da:** "Gabriela Laureano" \<glaureano@contoso.com\> <br/> **A:** Elenchi di Discussione dei Birdwatcher \<birdwatchers@fabrikam.com\> <br/> **Oggetto:** [BIRDWATCHING] ottimo avvistamento dei Jays blu sula cima del Monte Rainier questa settimana <p> Qualche utente desidera vedere la visualizzazione di questa settimana dal monte Rainier? <p> Questo messaggio è stato inviato all'elenco di discussione degli amanti del birdwatching. È possibile annullare l’iscrizione in qualsiasi momento.
+> **Da:** "Gabriela Laureano" \<glaureano@contoso.com\> <br> **A:** Elenchi di Discussione dei Birdwatcher \<birdwatchers@fabrikam.com\> <br> **Oggetto:** [BIRDWATCHING] ottimo avvistamento dei Jays blu sula cima del Monte Rainier questa settimana <p> Qualche utente desidera vedere la visualizzazione di questa settimana dal monte Rainier? <p> Questo messaggio è stato inviato all'elenco di discussione degli amanti del birdwatching. È possibile annullare l’iscrizione in qualsiasi momento.
 
 Per consentire ai messaggi delle liste di distribuzione di superare i controlli anti-spoofing, eseguire le operazioni seguenti in base al fatto che si controlli o meno la lista di distribuzione:
 
@@ -165,7 +165,7 @@ Se il problema persiste, è possibile segnalare il messaggio come falso positivo
 
 ## <a name="considerations-for-anti-spoofing-protection"></a>Considerazioni per la protezione anti-spoofing
 
-Gli amministratori che attualmente inviano messaggi a Microsoft 365 devono verificare che i messaggi di posta elettronica siano autenticati correttamente. In caso contrario, potrebbero essere contrassegnati come posta indesiderata o phishing. Per altre informazioni, vedere [Soluzioni per i mittenti legittimi che inviano messaggi di posta elettronica non autenticati](email-validation-and-authentication.md#solutions-for-legitimate-senders-who-are-sending-unauthenticated-email).
+Gli amministratori che attualmente inviano messaggi a Microsoft 365 devono assicurarsi che la posta elettronica venga autenticata correttamente. In caso contrario, potrebbero essere contrassegnati come posta indesiderata o phishing. Per altre informazioni, vedere [Soluzioni per i mittenti legittimi che inviano messaggi di posta elettronica non autenticati](email-validation-and-authentication.md#solutions-for-legitimate-senders-who-are-sending-unauthenticated-email).
 
 I mittenti di un elenco di mittenti di un utente (o amministratore) specifico ignoreranno delle parti dello stack di filtraggio, inclusa la protezione contro lo spoofing. Per altre informazioni, vedere [Mittenti attendibili di Outlook](create-safe-sender-lists-in-office-365.md#use-outlook-safe-senders).
 

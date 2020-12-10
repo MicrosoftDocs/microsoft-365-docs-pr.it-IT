@@ -125,9 +125,6 @@
           items:
             - name: Report inventario dei dispositivi
               href: working-with-managed-desktop/device-inventory-report.md
-        - name: Usare i dati analitici
-          href: working-with-managed-desktop/insights.md
-          items:
             - name: Dati analitici sull'utilizzo
               href: working-with-managed-desktop/usage-insights.md
             - name: Dati analitici sull'affidabilità
