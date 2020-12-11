@@ -13,12 +13,12 @@ metadata:
   ms.author: robmazz
   ms.date: 11/08/2019
   localization_priority: Priority
-  ms.openlocfilehash: 6064ee5c086f99ff3d5bc4c04ed4d29b87429255
-  ms.sourcegitcommit: ca733da1ed919b286a93068b560608e82f8def05
+  ms.openlocfilehash: ef129fe2a7fc38ffb9cfaa8ae40322712faabbc8
+  ms.sourcegitcommit: 6fc6aaa2b7610e148f41018abd229e3c55b2f3d0
   ms.translationtype: HT
   ms.contentlocale: it-IT
-  ms.lasthandoff: 11/10/2020
-  ms.locfileid: "48990530"
+  ms.lasthandoff: 12/10/2020
+  ms.locfileid: "49620588"
 highlightedContent:
   items:
   - title: Supportare i lavoratori remoti
@@ -54,10 +54,10 @@ productDirectory:
     links:
     - url: /MicrosoftTeams/quick-start-meetings-live-events
       text: Riunioni ed eventi in tempo reale in Microsoft Teams
+    - url: solutions/deploy-voice.md
+      text: Pianificare e distribuire una soluzione vocale di Teams
     - url: /MicrosoftTeams/business-voice/whats-business-voice
       text: Microsoft 365 Business Voice
-    - url: /MicrosoftTeams/cloud-voice-landing-page
-      text: Cloud Voice in Microsoft Teams
     - url: /SkypeForBusiness/hybrid/msft-telephony-solutions
       text: Soluzioni di telefonia Microsoft
   - title: Collaborare con il team
@@ -90,14 +90,16 @@ productDirectory:
     - url: solutions/configure-teams-three-tiers-protection.md
       text: Configurare tre livelli di protezione con Microsoft Teams
     - url: /windows/security/threat-protection/microsoft-defender-atp/deployment-phases
-      text: Distribuire Microsoft Defender Advanced Threat Protection
+      text: Distribuire Microsoft Defender per endpoint
     - url: security/office-365-security/office-365-atp.md
-      text: Distribuire Office 365 Advanced Threat Protection
+      text: Distribuire Microsoft Defender per Office 365
     - url: security/office-365-security/microsoft-365-policies-configurations.md
       text: Configurare la protezione delle identità e dell'accesso ai dispositivi
   - title: Proteggere le informazioni e ottemperare alle normative
     imageSrc: https://docs.microsoft.com/office/media/icons/certificate-blue.svg
     links:
+    - url: compliance/insider-risk-solution-overview.md
+      text: Soluzioni per i rischi Insider in Microsoft 365
     - url: compliance/compliance-quick-tasks.md
       text: Attività rapide per iniziare a usare il Centro conformità Microsoft 365
     - url: compliance/information-protection.md
@@ -106,8 +108,6 @@ productDirectory:
       text: Gestire la governance delle informazioni
     - url: compliance/overview-data-investigations.md
       text: Gestire le indagini interne ed esterne
-    - url: compliance/insider-risk-management.md
-      text: Gestire i rischi Insider
   - title: Distribuire e gestire i desktop e i dispositivi
     imageSrc: https://docs.microsoft.com/office/media/icons/deploy-blue.svg
     links:
