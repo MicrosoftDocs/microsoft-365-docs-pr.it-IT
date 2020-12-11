@@ -15,31 +15,40 @@ search.appverid:
 - MOE150
 - MET150
 description: Usare la protezione dell'archiviazione con i criteri di conservazione e i criteri delle etichette di conservazione per soddisfare i requisiti normativi e proteggersi dagli amministratori non autorizzati.
-ms.openlocfilehash: 6f6cfc5bef9b93af08fcc9b703b29facb9a7c576
-ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
+ms.openlocfilehash: 9890c73495bd14ea7264f3314f6313254ef1bf6b
+ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48920720"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49612988"
 ---
 # <a name="use-preservation-lock-to-restrict-changes-to-retention-policies-and-retention-label-policies"></a>Usare la protezione dell'archiviazione per limitare le modifiche ai criteri di conservazione e ai criteri per le etichette di conservazione
 
 >*[Indicazioni per l'assegnazione di licenze di Microsoft 365 per sicurezza e conformità](https://aka.ms/ComplianceSD).*
 
-La protezione dell'archiviazione blocca i criteri di conservazione o i criteri per le etichette di conservazione in modo che nessuno, incluso l'amministratore, possa disattivarli, eliminarli o renderli meno restrittivi. Questa configurazione potrebbe essere necessaria per i requisiti normativi e può aiutare a proteggersi da amministratori non autorizzati.
+La protezione dell'archiviazione blocca i criteri di conservazione o i criteri per le etichette di conservazione in modo che nessuno, incluso l'amministratore, possa disattivarli, eliminarli o renderli meno restrittivi. Questa configurazione potrebbe essere necessaria per i requisiti normativi e consente di proteggersi da amministratori non autorizzati.
 
-Se i criteri di conservazione sono bloccati:
+Quando i criteri di conservazione sono bloccati:
 
-- Nessuno può disattivarli.
-- È possibile aggiungere percorsi, ma non rimuoverli
+- Nessuno può disabilitare i criteri o eliminarli
+- È possibile aggiungere le posizioni, ma non rimuoverle
 - È possibile estendere un periodo di conservazione, ma non ridurlo
 
-In sintesi, un criterio bloccato può essere aumentato o esteso, ma non ridotto, disabilitato o disattivato.
-  
+Quando i criteri per un’etichetta di conservazione sono bloccati:
+
+- Nessuno può disabilitare i criteri o eliminarli
+- È possibile aggiungere le posizioni, ma non rimuoverle
+- È possibile aggiungere le etichette, ma non rimuoverle
+
+In sintesi, i criteri bloccati possono essere aumentati o estesi, ma non ridotti, disabilitati o disattivati.
+
 > [!IMPORTANT]
 > Prima di bloccare un criterio di conservazione o un criterio dell'etichetta di conservazione, è essenziale comprendere l'impatto dell'operazione e verificare se sia necessario all'organizzazione. Ad esempio, potrebbe essere necessario per rispettare i requisiti normativi. Dopo l'applicazione del blocco di conservazione, gli amministratori non potranno disabilitare o eliminare il criterio.
 
 Configurare la protezione dell'archiviazione dopo aver creato i [criteri di conservazione](create-retention-policies.md) o i criteri per le etichette di conservazione da [pubblicare ](create-apply-retention-labels.md) o [applicare automaticamente](apply-retention-labels-automatically.md). 
+
+> [!NOTE]
+> Il blocco dei criteri dell’etichetta non impedisce a un amministratore di ridurre il periodo di conservazione in un'etichetta inclusa nei criteri bloccati. Questo requisito, insieme ad altre restrizioni, può essere soddisfatto quando si configura un'etichetta per contrassegnare gli elementi come [record normativi](records-management.md#records).
 
 ## <a name="how-to-lock-a-retention-policy-or-retention-label-policy"></a>Come bloccare i criteri di conservazione o i criteri per le etichette di conservazione
 
@@ -63,7 +72,7 @@ Tutti i criteri per la conservazione e con qualsiasi configurazione supportano l
     
     ![Parametro RestrictiveRetention in PowerShell](../media/retention-policy-preservation-lock-restrictiveretention.PNG)
     
-     Quando viene richiesto, leggere e accettare le restrizioni disponibili in questa configurazione immettendo **Y** :
+     Quando viene richiesto, leggere e accettare le restrizioni disponibili in questa configurazione immettendo **Y**:
     
    ![Richiesta di conferma del blocco dei criteri di conservazione in PowerShell](../media/retention-policy-preservation-lock-confirmation-prompt.PNG)
 
