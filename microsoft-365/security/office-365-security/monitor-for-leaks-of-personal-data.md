@@ -18,12 +18,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: Informazioni su tre strumenti che è possibile utilizzare per monitorare la perdita di dati personali.
-ms.openlocfilehash: 67cce80435aa0f01f496ec67d617f0a2dfff8ec8
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: a212067d75ab3d9e195e3d869e0a6ae7d1ed4d01
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48202700"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49616381"
 ---
 # <a name="monitor-for-leaks-of-personal-data"></a>Monitorare la perdita di dati personali
 
@@ -117,7 +117,6 @@ Il secondo criterio blocca i download di file a qualsiasi dispositivo non gestit
 Questi tipi di attributi saranno presto disponibili in Cloud App Security:
 
 - Tipi di informazioni sensibili
-
 - Etichette unificate in Microsoft 365 e Azure Information Protection
 
 ### <a name="cloud-app-security-dashboard"></a>Dashboard di Cloud App Security
@@ -142,69 +141,24 @@ Ulteriori informazioni:
 
 L'avviso relativo a un file contenente un numero di carta di credito viene condiviso da un'app cloud approvata.
 
-<table>
-<thead>
-<tr class="header">
-<th align="left"><strong>Controllo</strong></th>
-<th align="left"><strong>Impostazioni</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left">Tipo di criterio</td>
-<td align="left">Criteri file</td>
-</tr>
-<tr class="even">
-<td align="left">Modello di criteri</td>
-<td align="left">Nessun modello</td>
-</tr>
-<tr class="odd">
-<td align="left">Gravità del criterio</td>
-<td align="left">Alta</td>
-</tr>
-<tr class="even">
-<td align="left">Categoria</td>
-<td align="left">DLP</td>
-</tr>
-<tr class="odd">
-<td align="left">Impostazioni filtro</td>
-<td align="left"><p>Livello di accesso = Pubblico (Internet), Pubblico, Esterno</p>
-<p>App = &lt;selezionare app&gt; (utilizzare questa impostazione se si desidera limitare il monitoraggio ad app SaaS specifiche)</p></td>
-</tr>
-<tr class="even">
-<td align="left">Applica a</td>
-<td align="left">Tutti i file, tutti i proprietari</td>
-</tr>
-<tr class="odd">
-<td align="left">Ispezione del contenuto</td>
-<td align="left"><p>Include i file che corrispondono a un'espressione presente: Tutti i paesi - Finanza: numero di carta di credito</p>
-<p>Non richiedere il contesto rilevante: deselezionato (questo troverà una corrispondenza con parole chiave e regex)</p>
-<p>Include file con almeno 1 corrispondenza</p>
-<p>Annulla il mascheramento degli ultimi 4 caratteri della violazione: selezionato</p></td>
-</tr>
-<tr class="even">
-<td align="left">Avvisi</td>
-<td align="left"><p>Crea un avviso per ogni file corrispondente: selezionato</p>
-<p>Limite di avvisi giornaliero: 1.000</p>
-<p>Seleziona un avviso come e-mail: selezionato</p>
-<p>A: infosec@contoso.com</p></td>
-</tr>
-<tr class="odd">
-<td align="left">Governance</td>
-<td align="left"><p>Microsoft OneDrive for Business</p>
-<p>Rendi privato: selezionare Rimuovi gli utenti esterni</p>
-<p>Tutte le altre impostazioni: deselezionato</p>
-<p>Microsoft SharePoint Online</p>
-<p>Rendi privato: selezionare Rimuovi gli utenti esterni</p>
-<p>Tutte le altre impostazioni: deselezionato</p></td>
-</tr>
-</tbody>
-</table>
+****
+
+|Controllo|Impostazioni|
+|---|---|
+|Tipo di criterio|Criteri file|
+|Modello di criteri|Nessun modello|
+|Gravità del criterio|Alta|
+|Categoria|DLP|
+|Impostazioni filtro|Livello di accesso = Pubblico (Internet), Pubblico, Esterno <p> App = \<select apps\> (utilizzare questa impostazione se si desidera limitare il monitoraggio ad app SaaS specifiche)|
+|Applica a|Tutti i file, tutti i proprietari|
+|Ispezione del contenuto|Include i file che corrispondono a un'espressione presente: Tutti i paesi - Finanza: numero di carta di credito <p> Non richiedere il contesto rilevante: deselezionato (questo troverà una corrispondenza con parole chiave e regex) <p> Include file con almeno 1 corrispondenza <p> Annulla il mascheramento degli ultimi 4 caratteri della violazione: selezionato|
+|Avvisi|Crea un avviso per ogni file corrispondente: selezionato <p> Limite di avvisi giornaliero: 1.000 <p> Seleziona un avviso come e-mail: selezionato <p> A: infosec@contoso.com|
+|Governance|Microsoft OneDrive for Business <p> Rendi privato: selezionare Rimuovi gli utenti esterni <p> Tutte le altre impostazioni: deselezionato <p> Microsoft SharePoint Online <p> Rendi privato: selezionare Rimuovi gli utenti esterni <p> Tutte le altre impostazioni: deselezionato|
+|
 
 Criteri simili:
 
 - Individuare la condivisione di file contenenti informazioni personali - Indirizzo e-mail
-
 - Individuare la condivisione di file contenenti informazioni personali - Numero di passaporto
 
 ### <a name="detect-customer-or-hr-data-in-box-or-onedrive-for-business"></a>Rilevare cliente o dati sulle risorse umane in Box o OneDrive for Business
@@ -214,64 +168,23 @@ L'avviso relativo a un file etichettato come Dati della società o Dati sulle ri
 Note:
 
 - Il monitoraggio di Box richiede un connettore configurato con l'SDK API Connector.
-
 - Questo criterio richiede funzionalità al momento in anteprima privata.
 
-<table>
-<thead>
-<tr class="header">
-<th align="left"><strong>Controllo</strong></th>
-<th align="left"><strong>Impostazioni</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left">Tipo di criterio</td>
-<td align="left">Criteri attività</td>
-</tr>
-<tr class="even">
-<td align="left">Modello di criteri</td>
-<td align="left">Nessun modello</td>
-</tr>
-<tr class="odd">
-<td align="left">Gravità del criterio</td>
-<td align="left">Alta</td>
-</tr>
-<tr class="even">
-<td align="left">Categoria</td>
-<td align="left">Controllo della condivisione</td>
-</tr>
-<tr class="odd">
-<td align="left">Azione su</td>
-<td align="left">Singola attività</td>
-</tr>
-<tr class="even">
-<td align="left">Impostazioni filtro</td>
-<td align="left"><p>Tipo di attività = Carica file</p>
-<p>App = Microsoft OneDrive for Business e Box</p>
-<p>Etichetta di classificazione (al momento in anteprima privata): Azure Information Protection = Dati della società, Risorse umane - Dati sulle retribuzioni, Risorse umane - Dati sui dipendenti</p></td>
-</tr>
-<tr class="odd">
-<td align="left">Avvisi</td>
-<td align="left"><p>Crea un avviso: selezionato</p>
-<p>Limite di avvisi giornaliero: 1.000</p>
-<p>Seleziona un avviso come e-mail: selezionato</p>
-<p>A: infosec@contoso.com</p></td>
-</tr>
-<tr class="even">
-<td align="left">Governance</td>
-<td align="left"><p>Tutte le app</p>
-<p>Metti utente in quarantena: selezionato</p>
-<p>Tutte le altre impostazioni: deselezionato</p>
-<p>Office 365</p>
-<p>Metti utente in quarantena: selezionato</p>
-<p>Tutte le altre impostazioni: deselezionato</p></td>
-</tr>
-</tbody>
-</table>
+****
+
+|Controllo|Impostazioni|
+|---|---|
+|Tipo di criterio|Criteri attività|
+|Modello di criteri|Nessun modello|
+|Gravità del criterio|Alta|
+|Categoria|Controllo della condivisione|
+|Azione su|Singola attività|
+|Impostazioni filtro|Tipo di attività = Carica file <p> App = Microsoft OneDrive for Business e Box <p> Etichetta di classificazione (al momento in anteprima privata): Azure Information Protection = Dati della società, Risorse umane - Dati sulle retribuzioni, Risorse umane - Dati sui dipendenti|
+|Avvisi|Crea un avviso: selezionato <p> Limite di avvisi giornaliero: 1.000 <p> Seleziona un avviso come e-mail: selezionato <p> A: infosec@contoso.com|
+|Governance|Tutte le app <p> Metti utente in quarantena: selezionato <p> Tutte le altre impostazioni: deselezionato <p> Office 365 <p> Metti utente in quarantena: selezionato <p> Tutte le altre impostazioni: deselezionato|
+|
 
 Criteri simili:
 
 - Rilevare download di grandi dimensioni di Dati della società o Dati sulle risorse umane: avviso relativo al rilevamento del download di un gran numero di file contenenti dati sulla società o sulle risorse umane da parte di un singolo utente in un breve periodo di tempo.
-
 - Individuare la condivisione di dati sulla società e sulle risorse umane: avviso relativo alla condivisione di file contenenti dati sulla società o sulle risorse umane.
