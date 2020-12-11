@@ -14,12 +14,12 @@ search.appverid: MET150
 description: Correzione delle minacce
 appliesto:
 - Microsoft 365 Defender
-ms.openlocfilehash: 742f19c4051b2cab3311562f688da51975bd3c48
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.openlocfilehash: 67b27102ff9319e334b5ff1e006fe49f14d3f1ed
+ms.sourcegitcommit: 6fc6aaa2b7610e148f41018abd229e3c55b2f3d0
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 12/10/2020
-ms.locfileid: "49615889"
+ms.locfileid: "49620576"
 ---
 # <a name="remediate-malicious-email-delivered-in-office-365"></a>Rimediare la posta elettronica dannosa recapitata in Office 365
 
@@ -33,7 +33,7 @@ La correzione comporta l'esecuzione di un'azione prescritta nei confronti di una
 
 ## <a name="what-you-need-to-know-before-you-begin"></a>Cosa è necessario sapere prima di iniziare
 
-Gli amministratori possono intraprendere le azioni necessarie per i messaggi di posta elettronica, ma per ottenere queste operazioni approvate, è necessario che il ruolo di *ricerca e Purge* venga assegnato tramite le autorizzazioni del **Centro sicurezza & conformità** \> . Senza il ruolo "Search and Purge" aggiunto a uno dei gruppi di ruoli, non sarà in grado di eseguire l'azione.
+Gli amministratori possono intraprendere le azioni necessarie per i messaggi di posta elettronica, ma per ottenere queste operazioni approvate, è necessario che il ruolo di *ricerca e Purge* venga assegnato tramite le autorizzazioni del **Centro sicurezza & conformità** \> . Senza il ruolo "Search and Purge" aggiunto a uno dei gruppi di ruoli, non saranno in grado di eseguire l'azione.
 
 ## <a name="manual-and-automated-remediation"></a>Correzione automatica e manuale
 

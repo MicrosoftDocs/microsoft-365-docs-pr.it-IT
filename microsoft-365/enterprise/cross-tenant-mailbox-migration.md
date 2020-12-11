@@ -14,28 +14,28 @@ ms.custom:
 - it-pro
 ms.collection:
 - M365-subscription-management
-ms.openlocfilehash: 1e2624fea7a93013e4b4de2dd4ede4144000f075
-ms.sourcegitcommit: fcc1b40732f28f075d95faffc1655473e262dd95
+ms.openlocfilehash: 63eab8c44651bfc2865e9bf6c577c1ebe13381fc
+ms.sourcegitcommit: 21b0ea5715e20b4ab13719eb18c97fadb49b563d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/14/2020
-ms.locfileid: "49073084"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49624767"
 ---
 # <a name="cross-tenant-mailbox-migration-preview"></a>Migrazione delle cassette postali tra tenant (anteprima)
 
-In precedenza, quando un tenant di Exchange Online aveva bisogno di spostare le cassette postali in un altro tenant nello stesso servizio Exchange Online, avrebbe dovuto trasferisce completamente in locale e quindi Onboard a un nuovo tenant. Con la nuova funzionalità di migrazione delle cassette postali Cross-tenant, gli amministratori tenant in entrambi i tenant di origine e di destinazione possono spostare le cassette postali tra i tenant con dipendenze dell'infrastruttura minime nei rispettivi sistemi locali. In questo modo viene eliminata la necessità di trasferisce e delle cassette postali.
+In precedenza, quando un tenant di Exchange Online aveva bisogno di spostare le cassette postali in un altro tenant nello stesso servizio Exchange Online, avrebbe dovuto trasferisce completamente in locale e quindi Onboard a un nuovo tenant. Con la nuova funzionalità di migrazione delle cassette postali Cross-tenant, gli amministratori tenant in entrambi i tenant di origine e di destinazione possono spostare le cassette postali tra i tenant con dipendenze dell'infrastruttura minime nei rispettivi sistemi locali. In questo modo viene eliminata la necessità di disabilitare le cassette postali e di bordo.
 
 In genere, durante le fusioni o dismissioni, è necessaria la possibilità di spostare gli utenti e il contenuto in un nuovo tenant. Quando l'amministratore del tenant di destinazione esegue lo spostamento, viene chiamato spostamento di tipo pull, analogo a quello locale per le migrazioni di onboarding sul cloud.
 
 Gli spostamenti delle cassette postali di Exchange tra tenant sono completamente autogestiti dagli amministratori tenant, utilizzando interfacce ben note che possono essere inserite nello script nei flussi di lavoro di grandi dimensioni necessari per la transizione degli utenti alla nuova organizzazione. Gli amministratori possono utilizzare il `New-MigrationBatch` cmdlet, disponibile tramite il ruolo di gestione Sposta cassette postali, per eseguire gli spostamenti tra tenant. Il processo di spostamento include controlli di autorizzazione tenant durante la sincronizzazione e la finalizzazione delle cassette postali. 
  
-Gli utenti che eseguono la migrazione devono essere presenti nel sistema di Exchange Online tenant di destinazione come MailUsers, contrassegnati con attributi specifici per abilitare gli spostamenti tra tenant. Il sistema avrà esito negativo per gli utenti che non sono stati configurati correttamente nel tenant di destinazione. 
+Gli utenti che eseguono la migrazione devono essere presenti nel sistema di Exchange Online tenant di destinazione come MailUsers, contrassegnati con attributi specifici per abilitare gli spostamenti tra tenant. Il sistema avrà esito negativo per gli utenti che non sono stati configurati correttamente nel tenant di destinazione.  
 
 Al termine degli spostamenti, la cassetta postale del sistema di origine viene convertita in MailUser e l'oggetto targetAddress (visualizzato come ExternalEmailAddress in Exchange) viene contrassegnato con l'indirizzo di routing del tenant di destinazione. Questo processo lascia l'MailUser legacy nel tenant di origine e consente un periodo di coesistenza e instradamento della posta. Quando i processi aziendali lo consentono, il tenant di origine potrebbe rimuovere l'MailUser di origine oppure convertirlo in un contatto di posta elettronica. 
 
 Le migrazioni delle cassette postali di Exchange cross-tenant sono supportate per i tenant in modalità ibrida o solo cloud o per qualsiasi combinazione dei due.
 
-In questo articolo viene descritto il processo per gli spostamenti delle cassette postali Cross-tenant e vengono fornite indicazioni su come preparare i tenant di origine e di destinazione per lo spostamento di contenuto. 
+In questo articolo viene descritto il processo per gli spostamenti delle cassette postali Cross-tenant e vengono fornite indicazioni su come preparare i tenant di origine e di destinazione per lo spostamento di contenuto.  
 
 ## <a name="preparing-source-and-target-tenants"></a>Preparazione degli inquilini di origine e di destinazione
 
@@ -99,9 +99,9 @@ Preparare il tenant di origine:
 
     | Parametro | Valore | Obbligatorio o facoltativo
     |---------------------------------------------|-----------------|--------------|
-    | -ResourceTenantDomain                       | Dominio tenant di origine, ad esempio Fabrikam \. onmicrosoft.com. | Obbligatorio |
+    | -ResourceTenantDomain                       | Dominio tenant di origine, ad esempio fabrikam.onmicrosoft.com. | Obbligatorio |
     | -ResourceTenantAdminEmail                   | Indirizzo di posta elettronica dell'amministratore del tenant di origine. Si tratta dell'amministratore del tenant di origine che consentirà l'utilizzo dell'applicazione di migrazione delle cassette postali inviata dall'amministratore di destinazione. Questo è l'amministratore che riceverà l'invito di posta elettronica per l'applicazione. | Obbligatorio |
-    | -TargetTenantDomain                         | Dominio del tenant di destinazione, ad esempio contoso \. onmicrosoft.com. | Obbligatorio |
+    | -TargetTenantDomain                         | Dominio del tenant di destinazione, ad esempio contoso.onmicrosoft.com. | Obbligatorio |
     | -ResourceTenantId                           | ID dell'organizzazione tenant di origine (GUID). | Obbligatorio |
     | -SubscriptionId                             | La sottoscrizione di Azure da utilizzare per la creazione di risorse. | Obbligatorio |
     | -ResourceGroup                              | Nome del gruppo di risorse di Azure che contiene o conterrà il Vault chiave. | Obbligatorio |
@@ -115,10 +115,13 @@ Preparare il tenant di origine:
     | -KeyVaultAuditStorageResourceGroup          | Il gruppo di risorse che contiene l'account di archiviazione per l'archiviazione dei registri di controllo del Vault Key. | Facoltativo |
     ||||
 
+    >[!Note]
+    > Assicurarsi di aver installato il modulo di Azure AD PowerShell prima di eseguire gli script. Fare riferimento a ![ qui ](https://docs.microsoft.com/powershell/azure/install-az-ps?view=azps-5.1.0) per i passaggi di installazione
+
 6. Lo script interromperà e chiederà di accettare o acconsentire all'applicazione di migrazione delle cassette postali di Exchange che è stata creata durante questo processo. Ecco un esempio.
 
     ```powershell
-    PS C:\Users\Admin\scripts\T2TMovesV2> .\SetupCrossTenantRelationshipForTargetTenant.ps1 -ResourceTenantDomain contoso.onmicrosoft.com -ResourceTenantAdminEmail admin@contoso.onmicrosoft.com -TargetTenantDomain fabrikam.onmicrosoft.com -ResourceTenantId ksagjid39-ede2-4d2c-98ae-874709325b00 -SubscriptionId e4ssd05d-a327-49ss-849a-sd0932439023 -ResourceGroup "Cross-TenantMoves" -KeyVaultName "Cross-TenantMovesVault" -CertificateName "Contoso-Fabrikam-cert" -CertificateSubject "CN=Contoso_Fabrikam" -AzureAppPermissions Exchange, MSGraph -UseAppAndCertGeneratedForSendingInvitation -KeyVaultAuditStorageAccountName "t2tstorageaccount" -KeyVaultAuditStorageResourceGroup "Demo"
+    PS C:\PowerShell\> .\SetupCrossTenantRelationshipForTargetTenant.ps1 -ResourceTenantDomain contoso.onmicrosoft.com -ResourceTenantAdminEmail admin@contoso.onmicrosoft.com -TargetTenantDomain fabrikam.onmicrosoft.com -ResourceTenantId ksagjid39-ede2-4d2c-98ae-874709325b00 -SubscriptionId e4ssd05d-a327-49ss-849a-sd0932439023 -ResourceGroup "Cross-TenantMoves" -KeyVaultName "Cross-TenantMovesVault" -CertificateName "Contoso-Fabrikam-cert" -CertificateSubject "CN=Contoso_Fabrikam" -AzureAppPermissions Exchange, MSGraph -UseAppAndCertGeneratedForSendingInvitation -KeyVaultAuditStorageAccountName "t2tstorageaccount" -KeyVaultAuditStorageResourceGroup "Demo"
 
     cmdlet Get-Credential at command pipeline position 1
     Supply values for the following parameters:
@@ -137,14 +140,14 @@ Preparare il tenant di origine:
     https://login.microsoftonline.com/contoso.onmicrosoft.com/adminconsent?client_id=6fea6ssd-0753-404d-wer5-c71a154d675c&redirect_uri=https://office.com
     Application details to be registered in organization relationship: ApplicationId: [ 6fes8en4-sjo3-406d-ad35-sldkfjiew993 ]. KeyVault secret Id: [ https://cross-tenantmovesvault.vault.azure.net:443/certificates/Contoso-Fabrikam-cert/ksdfj843nt8476h84c288c5a3fb8ec5fdb08 ]. These values are available in variables $AppId and $CertificateId respectively
     Please consent to the application for fabrikam.onmicrosoft.com before sending invitation to admin@contoso.onmicrosoft.com:
-    ``` 
+    ```  
 
 7. Un URL verrà visualizzato nella sessione di PowerShell remota. Copiare il collegamento fornito per il consenso del tenant e incollarlo in un Web browser.
 
 8. Accedere con le credenziali di amministratore globale. Quando viene visualizzata la schermata seguente, selezionare **accetta**.
 
     :::image type="content" source="../media/tenant-to-tenant-mailbox-move/permissions-requested-dialog.png" alt-text="Finestra di dialogo accetta autorizzazioni.":::
-    
+
 9. Passare alla sessione remota di PowerShell e premere INVIO per continuare.
 
 10. Lo script configurerà gli oggetti di installazione rimanenti. Ecco un esempio.
@@ -173,7 +176,7 @@ La configurazione dell'amministratore di destinazione è ora completata.
 
 3. Nell'interfaccia di amministrazione di Microsoft 365 o in una sessione di PowerShell remota, creare uno o più gruppi di sicurezza abilitati alla posta elettronica per controllare l'elenco delle cassette postali consentite dal tenant di destinazione per il pull (spostamento) dal tenant di origine al tenant di destinazione. Non è necessario popolare questo gruppo in anticipo, ma è necessario fornire almeno un gruppo per eseguire la procedura di installazione (script). I gruppi di annidamento non sono supportati. 
 
-4. Scaricare lo script SetupCrossTenantRelationshipForTargetResource.ps1 per il programma di installazione tenant di origine dall' [Archivio GitHub](https://github.com/microsoft/cross-tenant/releases/tag/Preview). 
+4. Scaricare lo script SetupCrossTenantRelationshipForTargetResource.ps1 per il programma di installazione tenant di origine dall'archivio GitHub: [https://github.com/microsoft/cross-tenant/releases/tag/Preview](https://github.com/microsoft/cross-tenant/releases/tag/Preview) . 
 
 5. Creare una connessione remota di PowerShell al tenant di origine con le autorizzazioni di amministratore di Exchange. Le autorizzazioni di amministratore globale non sono necessarie per configurare il tenant di origine, solo il tenant di destinazione a causa del processo di creazione di applicazioni di Azure.
 
@@ -184,12 +187,12 @@ La configurazione dell'amministratore di destinazione è ora completata.
     | Parametro | Valore |
     |-----|------|
     | -SourceMailboxMovePublishedScopes | Gruppo di sicurezza abilitato alla posta elettronica creato dal tenant di origine per le identità/cassette postali che rientrano nell'ambito della migrazione. |
-    | -ResourceTenantDomain | Nome di dominio del tenant di origine, ad esempio Fabrikam \. onmicrosoft.com. |
-    | -TargetTenantDomain | Nome di dominio del tenant di destinazione, ad esempio contoso \. onmicrosoft.com. |
+    | -ResourceTenantDomain | Nome di dominio del tenant di origine, ad esempio fabrikam.onmicrosoft.com. |
+    | -TargetTenantDomain | Nome di dominio del tenant di destinazione, ad esempio contoso.onmicrosoft.com. |
     | -ApplicationId | ID applicazione di Azure (GUID) dell'applicazione utilizzata per la migrazione. ID applicazione disponibile tramite il portale di Azure (Azure AD, applicazioni Enterprise, nome app, ID applicazione) o incluso nel messaggio di posta elettronica di invito.  |
-    | -TargetTenantId | ID tenant del tenant di destinazione. Ad esempio, l'ID tenant Azure AD del \. tenant contoso onmicrosoft.com. |
+    | -TargetTenantId | ID tenant del tenant di destinazione. Ad esempio, l'ID tenant Azure AD del tenant di contoso.onmicrosoft.com. |
     |||
-    
+
     Ecco un esempio.
     ```powershell
     SetupCrossTenantRelationshipForResourceTenant.ps1 -SourceMailboxMovePublishedScopes "MigScope","MyGroup" -ResourceTenantDomain contoso.onmicrosoft.com -TargetTenantDomain fabrikam.onmicrosoft.com -ApplicationId sdf5e87sa-0753-dd88-ad35-c71a15cs8e44c -TargetTenantId 4sdkfo933-3904-sd93-bf9a-sdi39402834
@@ -215,7 +218,7 @@ Get-OrganizationRelationship <source tenant organization name> | fl name, Domain
 Ecco un esempio:
 
 ```powershell
-PS C:\Users\Admin\scripts\T2TMovesV2> Get-OrganizationRelationship fabrikam_contoso_1178 | fl name, DomainNames, MailboxMoveEnabled, MailboxMoveCapability
+PS C:\PowerShell\> Get-OrganizationRelationship fabrikam_contoso_1178 | fl name, DomainNames, MailboxMoveEnabled, MailboxMoveCapability
 
 Name                  : fabrikam_contoso_1123
 DomainNames           : {sd0933me9f-9304-s903-s093-s093mfi903m4}
@@ -235,7 +238,7 @@ Get-MigrationEndpoint "<fabrikam_contoso_1123> | fl Identity, RemoteTenant, Appl
 Ecco un esempio.
 
 ```powershell
-PS C:\Users\Admin\scripts\T2TMovesV2> Get-MigrationEndpoint fabrikam_contoso_1123 | fl Identity, RemoteTenant, ApplicationId, AppSecretKeyVaultUrl
+PS C:\PowerShell\> Get-MigrationEndpoint fabrikam_contoso_1123 | fl Identity, RemoteTenant, ApplicationId, AppSecretKeyVaultUrl
 
 
 Identity             : fabrikam_contoso_1123
@@ -254,10 +257,11 @@ Verificare che l'oggetto relazione organizzativa sia stato creato e configurato 
 ```powershell
 Get-OrganizationRelationship | fl name, MailboxMoveEnabled, MailboxMoveCapability, MailboxMovePublishedScopes, OAuthApplicationId
 ```
+
 Ecco un esempio.
 
 ```powershell
-PS C:\Users\Admin\scripts\T2TMovesV2> Get-OrganizationRelationship | fl name, MailboxMoveEnabled, MailboxMoveCapability, MailboxMovePublishedScopes, OAuthApplicationId
+PS C:\PowerShell\> Get-OrganizationRelationship | fl name, MailboxMoveEnabled, MailboxMoveCapability, MailboxMovePublishedScopes, OAuthApplicationId
 
 
 Name                       : fabrikam_contoso_001
@@ -296,16 +300,16 @@ Gli utenti che eseguono la migrazione devono essere presenti nel tenant di desti
     | Alias                 | LaraN                                                                                                                    |
     | RecipientType         | MailUser                                                                                                                 |
     | RecipientTypeDetails  | MailUser                                                                                                                 |
-    | UserPrincipalName     | LaraN@northwintraders \. onmicrosoft.com                                                                                    |
-    | PrimarySmtpAddress    | Lara \. Newton@northwind.com                                                                                                |
-    | ExternalEmailAddress  | SMTP: LaraN@contoso \. onmicrosoft.com                                                                                       |
+    | UserPrincipalName     | LaraN@northwintraders.onmicrosoft.com                                                                                    |
+    | PrimarySmtpAddress    | Lara.Newton@northwind.com                                                                                                |
+    | ExternalEmailAddress  | SMTP:LaraN@contoso.onmicrosoft.com                                                                                       |
     | ExchangeGuid          | 1ec059c7-8396-4d0b-af4e-d6bd4c12a8d8                                                                                     |
     | LegacyExchangeDN      | /o = First Organization/ou = gruppo amministrativo di Exchange                                                                   |
     |                       | (FYDIBOHF23SPDLT)/cn = Recipients/cn = 74e5385fce4b46d19006876949855035Lara                                                  |
     | EmailAddresses        | X500:/o = First Organization/ou = Exchange Administrative Group (FYDIBOHF23SPDLT)/cn = Recipients/cn = d11ec1a2cacd4f81858c8190  |
     |                       | 7273f1f9-Lara                                                                                                            |
-    |                       | SMTP: LaraN@northwindtraders \. onmicrosoft.com                                                                              |
-    |                       | SMTP: Lara \. Newton@northwind.com                                                                                           |
+    |                       | smtp:LaraN@northwindtraders.onmicrosoft.com                                                                              |
+    |                       | SMTP:Lara.Newton@northwind.com                                                                                           |
     |||
 
    Oggetto cassetta postale di **origine** di esempio:
@@ -315,13 +319,13 @@ Gli utenti che eseguono la migrazione devono essere presenti nel tenant di desti
    | Alias                 | LaraN                                                                    |
    | RecipientType         | UserMailbox                                                              |
    | RecipientTypeDetails  | UserMailbox                                                              |
-   | UserPrincipalName     | LaraN@contoso \. onmicrosoft.com                                            |
-   | PrimarySmtpAddress    | Lara \. Newton@contoso.com                                                  |
+   | UserPrincipalName     | LaraN@contoso.onmicrosoft.com                                            |
+   | PrimarySmtpAddress    | Lara.Newton@contoso.com                                                  |
    | ExchangeGuid          | 1ec059c7-8396-4d0b-af4e-d6bd4c12a8d8                                     |
    | LegacyExchangeDN      | /o = First Organization/ou = gruppo amministrativo di Exchange                   |
    |                       | (FYDIBOHF23SPDLT)/cn = Recipients/cn = d11ec1a2cacd4f81858c81907273f1f9Lara  |
-   | EmailAddresses        | SMTP: LaraN@contoso \. onmicrosoft.com 
-   |                       | SMTP: Lara \. Newton@contoso.com          |
+   | EmailAddresses        | smtp:LaraN@contoso.onmicrosoft.com 
+   |                       | SMTP:Lara.Newton@contoso.com          |
    |||
 
    - Gli attributi aggiuntivi possono essere già inclusi in Exchange Hybrid write back. In caso contrario, dovrebbero essere inclusi. 
@@ -338,6 +342,7 @@ Gli utenti che eseguono la migrazione devono essere presenti nel tenant di desti
     $ELCValue = 0 
     if ($source.LitigationHoldEnabled) {$ELCValue = $ELCValue + 8} if ($source.SingleItemRecoveryEnabled) {$ELCValue = $ELCValue + 16} if ($ELCValue -gt 0) {Set-ADUser -Server $domainController -Identity $destination.SamAccountName -Replace @{msExchELCMailboxFlags=$ELCValue}} 
     ```
+
 3. I tenant di destinazione non ibridi possono modificare la quota nella cartella elementi ripristinabili per MailUsers prima della migrazione eseguendo il comando seguente per abilitare il blocco per controversia legale sull'oggetto MailUser e aumentare la quota a 100 GB: `Set-MailUser -EnableLitigationHoldForMigration $TRUE` . Si noti che questo non funzionerà per i tenant in modalità ibrida.
 
 4. Gli utenti nell'organizzazione di destinazione devono essere concessi in licenza con le sottoscrizioni di Exchange Online appropriate applicabili per l'organizzazione. È possibile applicare una licenza in anticipo rispetto allo spostamento di una cassetta postale, ma solo dopo che l'utente di posta elettronica di destinazione è stato configurato correttamente con ExchangeGUID e gli indirizzi proxy. L'applicazione di una licenza prima dell'applicazione di ExchangeGUID comporterà la provisioning di una nuova cassetta postale nell'organizzazione di destinazione. 
@@ -345,40 +350,41 @@ Gli utenti che eseguono la migrazione devono essere presenti nel tenant di desti
     > [!Note]
     > Quando si applica una licenza su un oggetto Mailbox o MailUser, tutti i tipi di proxyAddresses di tipo SMTP vengono rimosse per garantire che solo i domini verificati siano inclusi nella matrice di indirizzi di posta elettronica di Exchange. 
 
-5. È necessario assicurarsi che l'oggetto MailUser di destinazione non disponga di ExchangeGuid precedenti che non corrisponda al ExchangeGuid di origine. Questo problema può verificarsi se l'utente di destinazione è stato precedentemente concesso in licenza per Exchange Online e ha eseguito il provisioning di una cassetta postale. Se l'utente di posta elettronica di destinazione è stato precedentemente concesso in licenza o aveva un ExchangeGuid che non corrisponde al ExchangeGuid di origine, è necessario eseguire una pulizia del cloud MEU. Per questi cloud MEUs, è possibile eseguire il `Set-User <identity> -PermanentlyClearPreviousMailboxInfo` comando. 
+5. È necessario assicurarsi che l'oggetto MailUser di destinazione non disponga di ExchangeGuid precedenti che non corrisponda al ExchangeGuid di origine. Questo problema può verificarsi se l'utente di destinazione è stato precedentemente concesso in licenza per Exchange Online e ha eseguito il provisioning di una cassetta postale. Se l'utente di posta elettronica di destinazione è stato precedentemente concesso in licenza o aveva un ExchangeGuid che non corrisponde al ExchangeGuid di origine, è necessario eseguire una pulizia del cloud MEU. Per questi cloud MEUs, è possibile eseguire il `Set-User <identity> -PermanentlyClearPreviousMailboxInfo` comando.  
 
     > [!Caution]
-    > Questo processo è irreversibile. Se l'oggetto dispone di una cassetta postale di softDeleted, non può essere ripristinato dopo questo punto. Una volta deselezionata, tuttavia, è possibile sincronizzare la ExchangeGuid corretta per l'oggetto di destinazione e MRS collegherà la cassetta postale di origine alla cassetta postale di destinazione appena creata. (Blog di riferimento EHLO sul nuovo parametro). 
- 
+    > Questo processo è irreversibile. Se l'oggetto dispone di una cassetta postale di softDeleted, non può essere ripristinato dopo questo punto. Una volta deselezionata, tuttavia, è possibile sincronizzare la ExchangeGuid corretta per l'oggetto di destinazione e MRS collegherà la cassetta postale di origine alla cassetta postale di destinazione appena creata. (Blog di riferimento EHLO sul nuovo parametro).  
+
     Individuare gli oggetti precedentemente presenti nelle cassette postali utilizzando questo comando.
 
     ```powershell
     Get-User <identity> | select Name, *recipient* | ft -a**.
     ```
+
     Ecco un esempio. 
 
     ```powershell
-    PS demo> get-user John@northwindtraders.com |select name, *recipient*| ft -AutoSize 
- 
-    Name        PreviousRecipientTypeDetails     RecipientType RecipientTypeDetails 
-    ----       ---------------------------- ------------- -------------------- 
-    John       UserMailbox                  MailUser      MailUser 
-    ```   
- 
+    PS demo> get-user John@northwindtraders.com |select name, *recipient*| ft -AutoSize  
+
+    Name        PreviousRecipientTypeDetails     RecipientType RecipientTypeDetails  
+    ----       ---------------------------- ------------- --------------------  
+    John       UserMailbox                  MailUser      MailUser  
+    ```  
+
     Cancellare la cassetta postale eliminata temporaneamente usando questo comando.
 
-    ````
+    ```powershell
     Set-User <identity> -PermanentlyClearPreviousMailboxInfo
-    ```` 
+    ```
 
     Ecco un esempio.
 
     ```powershell
     PS demo> Set-User John@northwindtraders.com -PermanentlyClearPreviousMailboxInfo Confirm 
     Are you sure you want to perform this action? 
-    Delete all existing information about user “John@northwindtraders.com"?. This operation will clear existing values from Previous home MDB and Previous Mailbox GUID of the user. After deletion, reconnecting to the previous mailbox that existed in the cloud will not be possible and any content it had will be unrecoverable PERMANENTLY. 
+    Delete all existing information about user “John@northwindtraders.com"?. This operation will clear existing values from Previous home MDB and Previous Mailbox GUID of the user. After deletion, reconnecting to the previous mailbox that existed in the cloud will not be possible and any content it had will be unrecoverable PERMANENTLY.  
     Do you want to continue? 
-    [Y] Yes  [A] Yes to All  [N] No  [L] No to All  [?] Help (default is "Y"): Y 
+    [Y] Yes  [A] Yes to All  [N] No  [L] No to All  [?] Help (default is "Y"): Y  
     ```
 
 ## <a name="perform-mailbox-migrations"></a>Eseguire le migrazioni delle cassette postali
@@ -402,29 +408,29 @@ T2Tbatch-testforignitedemo Syncing ExchangeRemoteMove 1
 > L'indirizzo di posta elettronica nel file CSV deve essere quello specificato nel tenant di destinazione, non il tenant di origine.
 
 L'invio in batch di migrazione è supportato anche dalla nuova interfaccia di amministrazione di Exchange quando si seleziona l'opzione Cross-tenant.
- 
+
 #### <a name="update-on-premises-mailusers"></a>Aggiornare MailUsers locale
 
-Dopo che la cassetta postale si sposta dall'origine alla destinazione, è necessario assicurarsi che gli utenti di posta elettronica locali, sia di origine che di destinazione, vengano aggiornati con il nuovo targetAddress. Negli esempi, la targetDeliveryDomain utilizzata nello spostamento è **contoso \. onmicrosoft.com**. Aggiornare gli utenti di posta elettronica con questo targetAddress.
- 
-## <a name="frequently-asked-questions"></a>Domande frequenti
- 
-**È necessario aggiornare RemoteMailboxes in source locale dopo lo spostamento?**
- 
-Sì, è necessario aggiornare il metodo targetAddress (RemoteRoutingAddress/ExternalEmailAddress) degli utenti locali di origine quando la cassetta postale di origine del tenant si sposta sul tenant di destinazione.  Mentre il routing della posta può seguire i riferimenti su più utenti di posta con diverse targetAddresses, le ricerche sulla disponibilità per gli utenti di posta devono essere indirizzate alla posizione dell'utente della cassetta postale. Le ricerche sulla disponibilità non inseguono più reindirizzamenti. 
- 
-**Il contenuto della cartella chat teams migra Cross-tenant?** 
+Dopo che la cassetta postale si sposta dall'origine alla destinazione, è necessario assicurarsi che gli utenti di posta elettronica locali, sia di origine che di destinazione, vengano aggiornati con il nuovo targetAddress. Negli esempi, la targetDeliveryDomain utilizzata nello spostamento è **contoso.onmicrosoft.com**. Aggiornare gli utenti di posta elettronica con questo targetAddress.
 
-No, il contenuto della cartella chat del team non esegue la migrazione tra tenant. 
- 
-**In che modo è possibile visualizzare solo gli spostamenti di tipo cross-tenant, non gli spostamenti di onboarding e Offboarding?**
+## <a name="frequently-asked-questions"></a>Domande frequenti
+
+**È necessario aggiornare RemoteMailboxes in source locale dopo lo spostamento?**
+
+Sì, è necessario aggiornare il metodo targetAddress (RemoteRoutingAddress/ExternalEmailAddress) degli utenti locali di origine quando la cassetta postale di origine del tenant si sposta sul tenant di destinazione.  Mentre il routing della posta può seguire i riferimenti su più utenti di posta con diverse targetAddresses, le ricerche sulla disponibilità per gli utenti di posta devono essere indirizzate alla posizione dell'utente della cassetta postale. Le ricerche sulla disponibilità non inseguono più reindirizzamenti. 
+
+**Il contenuto della cartella chat teams migra Cross-tenant?**  
+
+No, il contenuto della cartella chat del team non esegue la migrazione tra tenant.  
+
+**In che modo è possibile visualizzare solo gli spostamenti di tipo cross-tenant, non gli spostamenti di onboarding e off-boarding?**
 
 Utilizzare il `-flags` parametro. Ecco un esempio.
 
 ```powershell
-Get-MoveRequest -Flags "CrossTenant" 
+Get-MoveRequest -Flags "CrossTenant"  
 ```
- 
+
 **È possibile fornire script di esempio per la copia degli attributi utilizzati per il testing?**
 
 > [!Note]
@@ -509,7 +515,7 @@ Le autorizzazioni per le cassette postali includono inviare per conto di e acces
 Di seguito è riportato un esempio dell'output dell'autorizzazione cassetta postale prima di uno spostamento. 
 
 ```powershell
-PS C:\DEMO Get-SourceMailboxPermission testuser_7 |ft -AutoSize User, AccessRights, IsInherited, Deny
+PS C:\PowerShell\> Get-SourceMailboxPermission testuser_7 |ft -AutoSize User, AccessRights, IsInherited, Deny
 User                                             AccessRights                                                            IsInherited Deny
 ----                                             ------------                                                            ----------- ----
 NT AUTHORITY\SELF                                {FullAccess, ReadPermission}                                            False       False
@@ -518,7 +524,7 @@ TestUser_8@SourceCompany.onmicrosoft.com         {FullAccess}                   
 Di seguito è riportato un esempio dell'output dell'autorizzazione della cassetta postale dopo lo spostamento. 
 
 ```powershell
-C:\DEMO> Get-TargetMailboxPermission testuser_7 | ft -AutoSize User, AccessRights, IsInherited, Deny
+PS C:\PowerShell\> Get-TargetMailboxPermission testuser_7 | ft -AutoSize User, AccessRights, IsInherited, Deny
 User                                             AccessRights                                                            IsInherited Deny
 ----                                             ------------                                                            ----------- ----
 NT AUTHORITY\SELF                                {FullAccess, ReadPermission}                                            False       FalseTestUser_8@TargetCompany.onmicrosoft.com         {FullAccess}                                                            False       False
@@ -526,14 +532,48 @@ NT AUTHORITY\SELF                                {FullAccess, ReadPermission}   
  
 > [!Note]
 > Le autorizzazioni per le cassette postali e i calendari Cross-tenant non sono supportate. È necessario organizzare le entità e i delegati in batch di spostamento consolidati in modo che queste cassette postali connesse vengano passate contemporaneamente dal tenant di origine. 
- 
-## <a name="known-issues"></a>Problemi noti 
+
+**Quali proxy di X500 devono essere aggiunti agli indirizzi del proxy MailUser di destinazione per abilitare la migrazione?**  
+
+La migrazione delle cassette postali tra tenant richiede che il valore LegacyExchangeDN dell'oggetto cassetta postale di origine venga contrassegnato come indirizzo di posta elettronica di X500 nell'oggetto MailUser di destinazione.  
+
+Esempio:  
+```powershell
+LegacyExchangeDN value on source mailbox is:  
+/o=First Organization/ou=Exchange Administrative Group(FYDIBOHF23SPDLT)/cn=Recipients/cn=d11ec1a2cacd4f81858c81907273f1f9Lara  
+
+so the x500 email address to be added to target MailUser object would be:  
+x500:/o=First Organization/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=d11ec1a2cacd4f81858c81907273f1f9-Lara  
+```
+
+> [!Note]  
+> Oltre a questo proxy di X500, sarà necessario copiare tutti i proxy X500 dalla cassetta postale dell'origine alla cassetta postale nella destinazione.  
+
+**È necessario l'archiviazione delle chiavi di Azure e quando vengono eseguite le transazioni?**  
+
+Sì, è necessaria una sottoscrizione di Azure per utilizzare il Vault chiave per archiviare il certificato per autorizzare la migrazione. A differenza delle migrazioni onboarding che utilizzano username & password per l'autenticazione nell'origine, le migrazioni delle cassette postali tra tenant utilizzano OAuth e questo certificato come segreto/credenziale. L'accesso all'archivio delle chiavi deve essere mantenuto durante tutte le migrazioni delle cassette postali quando si accede una volta all'inizio e una volta terminata la migrazione, nonché una volta ogni 24 ore durante i tempi di sincronizzazione incrementale. È possibile esaminare i dettagli relativi ai costi di AKV [qui]( https://azure.microsoft.com/en-us/pricing/details/key-vault/).  
+
+**Sono disponibili suggerimenti per i batch?**  
+
+Non superare 2000 cassette postali per batch. Si consiglia vivamente di inviare i batch due settimane prima della data di fine del taglio, in quanto non vi sono effetti sugli utenti finali durante la sincronizzazione. Se si necessita di assistenza per le quantità di cassette postali superiori a 50.000, è possibile raggiungere la lista di distribuzione di feedback ingegneristico all'crosstenantmigrationpreview@service.microsoft.com.
+
+**Cosa succede se si utilizza la crittografia del servizio con la chiave del cliente?**
+
+La cassetta postale verrà decrittografata prima dello spostamento. Verificare che la chiave del cliente sia configurata nel tenant di destinazione, se ancora necessaria. Per ulteriori informazioni, vedere [qui](https://docs.microsoft.com/microsoft-365/compliance/customer-key-overview) .  
+
+**Qual è il tempo stimato per la migrazione?**
+
+Per semplificare la pianificazione della migrazione, nella tabella riportata di [seguito](https://docs.microsoft.com/exchange/mailbox-migration/office-365-migration-best-practices#estimated-migration-times) vengono riportate le linee guida relative al momento in cui si prevede di eseguire la migrazione delle cassette postali in blocco o le singole migrazioni. Queste stime si basano su un'analisi dei dati delle migrazioni di clienti precedenti. Poiché ogni ambiente è univoco, è possibile che la velocità di migrazione esatta sia diversa.  
+
+Tenere presente che questa funzionalità è attualmente in anteprima e che il contratto di servizio e gli eventuali livelli di servizi applicabili non si applicano a qualsiasi problema di prestazioni o disponibilità durante lo stato di anteprima di questa funzionalità.
+
+## <a name="known-issues"></a>Problemi noti  
 
 -  **Problema: non è possibile eseguire la migrazione degli archivi con espansione automatica.** La funzionalità di migrazione cross-tenant supporta le migrazioni della cassetta postale principale e della cassetta postale di archiviazione per un utente specifico. Se l'utente nell'origine ha un archivio automatico espanso, ovvero più di una cassetta postale di archiviazione, la funzionalità non è in grado di eseguire la migrazione degli archivi aggiuntivi.
 
 - **Problema: cloud MailUsers with non-owned SMTP proxyAddress Block MRS Moves background.** Quando si creano oggetti di MailUser tenant di destinazione, è necessario assicurarsi che tutti gli indirizzi proxy SMTP appartengano all'organizzazione tenant di destinazione. Se un proxyAddress SMTP esiste sull'utente di posta elettronica di destinazione che non appartiene al tenant locale, la conversione di MailUser in cassetta postale è impedita. Ciò è dovuto alla nostra certezza che gli oggetti cassetta postale possono solo inviare messaggi di posta elettronica da domini per i quali il tenant è autorevole (domini rivendicati dal tenant): 
-- 
-   - Quando si sincronizzano gli utenti da un ambiente locale con Azure AD Connect, è possibile eseguire il provisioning di oggetti MailUser locali con ExternalEmailAddress che punta al tenant di origine in cui esiste la cassetta postale (laran@contoso \. onmicrosoft.com) e si timbra PrimarySmtpAddress come un dominio che risiede nel tenant di destinazione (Lara.Newton@northwind \. com). Questi valori vengono sincronizzati con il tenant e viene eseguito il provisioning di un utente di posta elettronica appropriato e pronto per la migrazione. Di seguito è riportato un oggetto di esempio.
+
+   - Quando si sincronizzano gli utenti da un ambiente locale con Azure AD Connect, è possibile eseguire il provisioning degli oggetti MailUser locali con ExternalEmailAddress che punta al tenant di origine in cui si trova la cassetta postale (laran@contoso.onmicrosoft.com) e contrassegnare l'PrimarySMTPAddress come un dominio che risiede nel tenant di destinazione (Lara.Newton@northwind.com). Questi valori vengono sincronizzati con il tenant e viene eseguito il provisioning di un utente di posta elettronica appropriato e pronto per la migrazione. Di seguito è riportato un oggetto di esempio.
      ```powershell
      target/AADSynced user] PS C> Get-MailUser laran | select ExternalEmailAddress, EmailAddresses   
      ExternalEmailAddress               EmailAddresses 
@@ -542,13 +582,13 @@ NT AUTHORITY\SELF                                {FullAccess, ReadPermission}   
      ```
 
    > [!Note]
-   > L'indirizzo *contoso. onmicrosoft \. com* *non* è presente nella matrice EmailAddresses/proxyAddresses.
+   > L'indirizzo *contoso.onmicrosoft.com* *non* è presente nella matrice EmailAddresses/proxyAddresses.
 
 - **Problema: gli oggetti MailUser con indirizzi SMTP primari "esterni" vengono modificati/ripristinati nei domini rivendicati dall'azienda "interna"**
 
-   Gli oggetti MailUser sono puntatori a cassette postali non locali. Nel caso delle migrazioni tra tenant, è possibile utilizzare gli oggetti MailUser per rappresentare la cassetta postale di origine (dal punto di vista dell'organizzazione di destinazione) o la cassetta postale di destinazione (dal punto di vista dell'organizzazione di origine). MailUsers avrà un ExternalEmailAddress (targetAddress) che punta all'indirizzo SMTP della cassetta postale effettiva (ProxyTest \@ fabrikam \. onmicrosoft.com) e all'indirizzo primarySMTP che rappresenta l'indirizzo SMTP visualizzato dell'utente della cassetta postale nella directory. Alcune organizzazioni scelgono di visualizzare l'indirizzo SMTP primario come indirizzo SMTP esterno, non come indirizzo posseduto/verificato dal tenant locale (ad esempio fabrikam.com anziché come contoso.com).  Tuttavia, dopo l'applicazione di un oggetto piano di Exchange all'MailUser tramite le operazioni di gestione delle licenze, l'indirizzo SMTP primario viene modificato in modo che venga visualizzato come dominio verificato dall'organizzazione locale (contoso.com). Esistono due possibili motivi:
+   Gli oggetti MailUser sono puntatori a cassette postali non locali. Nel caso delle migrazioni tra tenant, è possibile utilizzare gli oggetti MailUser per rappresentare la cassetta postale di origine (dal punto di vista dell'organizzazione di destinazione) o la cassetta postale di destinazione (dal punto di vista dell'organizzazione di origine). MailUsers avrà un ExternalEmailAddress (targetAddress) che punta all'indirizzo SMTP della cassetta postale effettiva (ProxyTest@fabrikam.onmicrosoft.com) e all'indirizzo primarySMTP che rappresenta l'indirizzo SMTP visualizzato dell'utente della cassetta postale nella directory. Alcune organizzazioni scelgono di visualizzare l'indirizzo SMTP primario come indirizzo SMTP esterno, non come indirizzo posseduto/verificato dal tenant locale (ad esempio fabrikam.com anziché come contoso.com).  Tuttavia, dopo l'applicazione di un oggetto piano di Exchange all'MailUser tramite le operazioni di gestione delle licenze, l'indirizzo SMTP primario viene modificato in modo che venga visualizzato come dominio verificato dall'organizzazione locale (contoso.com). Esistono due possibili motivi:
    
-   - Quando un piano del servizio di Exchange viene applicato a un MailUser, il processo di Azure AD inizia a applicare il lavaggio dei proxy per garantire che l'organizzazione locale non sia in grado di inviare messaggi di posta elettronica, falsificazione o posta elettronica da un altro tenant. Tutti gli indirizzi SMTP su un oggetto destinatario con questi piani di servizio verranno rimossi se l'indirizzo non viene verificato dall'organizzazione locale. Come nel caso dell'esempio, il \. dominio com di FABIKAM non viene verificato dal tenant di contoso \. onmicrosoft.com, quindi il lavaggio rimuove il \. dominio com di Fabrikam. Se si desidera mantenere questo dominio esterno su MailUser, prima della migrazione o dopo la migrazione, è necessario modificare i processi di migrazione per eliminare le licenze dopo che lo spostamento è stato completato o prima dello spostamento per assicurarsi che gli utenti abbiano applicato il marchio esterno previsto. Sarà necessario assicurarsi che l'oggetto cassetta postale sia adeguatamente concesso in licenza per non influire sul servizio di posta.<br/><br/>Di seguito viene mostrato uno script di esempio per rimuovere i piani di servizio in un oggetto MailUser nel tenant di Contoso \. onmicrosoft.com.
+   - Quando un piano del servizio di Exchange viene applicato a un MailUser, il processo di Azure AD inizia a applicare il lavaggio dei proxy per garantire che l'organizzazione locale non sia in grado di inviare messaggi di posta elettronica, falsificazione o posta elettronica da un altro tenant. Tutti gli indirizzi SMTP su un oggetto destinatario con questi piani di servizio verranno rimossi se l'indirizzo non viene verificato dall'organizzazione locale. Come nel caso dell'esempio, il dominio Fabikam.com non viene verificato dal tenant contoso.onmicrosoft.com, in modo che il lavaggio rimuova quel dominio fabrikam.com. Se si desidera mantenere questo dominio esterno su MailUser, prima della migrazione o dopo la migrazione, è necessario modificare i processi di migrazione per eliminare le licenze dopo che lo spostamento è stato completato o prima dello spostamento per assicurarsi che gli utenti abbiano applicato il marchio esterno previsto. Sarà necessario assicurarsi che l'oggetto cassetta postale sia adeguatamente concesso in licenza per non influire sul servizio di posta.<br/><br/>Di seguito viene mostrato uno script di esempio per rimuovere i piani di servizio in un oggetto MailUser nel tenant di Contoso.onmicrosoft.com.
 
     ```powershell
     $LO = New-MsolLicenseOptions -AccountSkuId "contoso:ENTERPRISEPREMIUM" DisabledPlans 
