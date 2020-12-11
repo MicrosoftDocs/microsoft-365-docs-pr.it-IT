@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Gli amministratori possono configurare un connettore di telemessaggio per importare e archiviare i dati SMS dalla rete TELUS in Microsoft 365. In questo modo è possibile archiviare i dati provenienti da origini dati di terze parti in Microsoft 365 per poter utilizzare le funzionalità di conformità, come la conservazione legale, la ricerca di contenuto e i criteri di ritenzione per gestire i dati di terze parti dell'organizzazione.
-ms.openlocfilehash: 49178d50550df64df77f92dfa5725ec02432aab7
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 8df1d7d9787e118144cb9e0a55c66bdd1e766194
+ms.sourcegitcommit: 6fc6aaa2b7610e148f41018abd229e3c55b2f3d0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48196723"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49620272"
 ---
 # <a name="set-up-a-connector-to-archive-telus-network-data"></a>Configurare un connettore per l'archiviazione dei dati di rete di TELUS
 
@@ -41,7 +41,7 @@ Nella panoramica seguente viene illustrato il processo di utilizzo di un connett
 
    Oltre a eseguire il mapping automatico degli utenti utilizzando il valore della proprietà dell' *indirizzo di posta elettronica dell'utente* , è inoltre possibile implementare il mapping personalizzato caricando un file di mapping CSV. Questo file di mapping contiene il numero di cellulare e l'indirizzo di posta elettronica Microsoft 365 corrispondente per gli utenti dell'organizzazione. Se si abilitano sia il mapping degli utenti automatici che il mapping personalizzato, per ogni elemento TELUS il connettore analizza il file di mapping personalizzato. Se non trova un utente valido di Microsoft 365 che corrisponde al numero di cellulare di un utente, il connettore utilizzerà i valori della proprietà dell'indirizzo di posta elettronica dell'elemento che sta tentando di importare. Se il connettore non trova un utente valido di Microsoft 365 nel file di mapping personalizzato o nella proprietà dell'indirizzo di posta elettronica dell'elemento TELUS, l'elemento non verrà importato.
 
-## <a name="before-you-begin"></a>Prima di iniziare
+## <a name="before-you-begin"></a>Informazioni preliminari
 
 Alcuni dei passaggi di implementazione necessari per archiviare i dati di rete TELUS sono esterni a Microsoft 365 e devono essere completati prima di poter creare un connettore nel centro conformità.
 
@@ -53,15 +53,13 @@ Alcuni dei passaggi di implementazione necessari per archiviare i dati di rete T
 
 - I dipendenti devono disporre di telefoni cellulari aziendali e di proprietà aziendale su theTELUS Mobile Network. L'archiviazione dei messaggi in Microsoft 365 non è disponibile per i dispositivi di proprietà dei dipendenti o per portare i propri dispositivi (BYOD).
 
-- L'organizzazione deve autorizzare il servizio di importazione di Office 365 per accedere ai dati delle cassette postali nell'organizzazione. Sarà necessario fornire questo consenso quando si crea il connettore. Per acconsentire a questa richiesta, accedere a [Questa pagina](https://login.microsoftonline.com/common/oauth2/authorize?client_id=570d0bec-d001-4c4e-985e-3ab17fdc3073&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent), accedere con le credenziali di Microsoft 365 Global Admin e quindi accettare la richiesta. È necessario completare questo passaggio prima di poter creare correttamente il connettore di rete TELUS.
-
 - All'utente che crea un connettore di rete TELUS deve essere assegnato il ruolo di importazione/esportazione delle cassette postali in Exchange Online. Questa operazione è necessaria per aggiungere connettori nella pagina **connettori dati** del centro conformità di Microsoft 365. Per impostazione predefinita, questo ruolo non è assegnato ad alcun gruppo di ruoli in Exchange Online. È possibile aggiungere il ruolo import export delle cassette postali al gruppo di ruoli Gestione organizzazione in Exchange Online. In alternativa, è possibile creare un gruppo di ruoli, assegnare il ruolo di esportazione delle cassette postali e quindi aggiungere gli utenti corretti come membri. Per ulteriori informazioni, vedere la sezione creare gruppi di [ruoli](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#create-role-groups) o [modificare gruppi di ruoli](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups) nell'articolo "gestire i gruppi di ruoli in Exchange Online".
 
 ## <a name="create-a-telus-network-connector"></a>Creare un connettore di rete TELUS
 
 Dopo aver completato i prerequisiti descritti nella sezione precedente, è possibile creare il connettore di rete TELUS nel centro conformità di Microsoft 365. Il connettore utilizza le informazioni fornite per la connessione al sito di telemessaggio e il trasferimento dei messaggi SMS alle caselle di cassette postali dell'utente corrispondente in Microsoft 365.
 
-1. Andare a [https://compliance.microsoft.com](https://compliance.microsoft.com/) e quindi fare clic su **connettori dati**di  >  **rete Telus**.
+1. Andare a [https://compliance.microsoft.com](https://compliance.microsoft.com/) e quindi fare clic su **connettori dati** di  >  **rete Telus**.
 
 2. Nella pagina Descrizione prodotto di **rete Telus** fare clic su **Aggiungi connettore**
 
@@ -77,13 +75,9 @@ Dopo aver completato i prerequisiti descritti nella sezione precedente, è possi
 
 6. Nella pagina **mapping utenti** abilitare il mapping automatico degli utenti e fare clic su **Avanti**. Nel caso in cui sia necessario un mapping personalizzato caricare un file CSV e fare clic su **Avanti**.
 
-7. Fornire il consenso dell'amministratore e quindi fare clic su **Avanti**.
+7. Esaminare le impostazioni e quindi fare clic su **fine** per creare il connettore.
 
-   Per fornire il consenso dell'amministratore, è necessario essere connessi con le credenziali di un amministratore globale di Office 365 e quindi accettare la richiesta di consenso. Se non è stato eseguito l'accesso come amministratore globale, è possibile accedere a [Questa pagina](https://login.microsoftonline.com/common/oauth2/authorize?client_id=570d0bec-d001-4c4e-985e-3ab17fdc3073&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent) ed eseguire l'accesso con le credenziali di amministratore globale per accettare la richiesta.
-
-8. Esaminare le impostazioni e quindi fare clic su **fine** per creare il connettore.
-
-9. Passare alla scheda Connettori della pagina **connettori dati** per visualizzare lo stato di avanzamento del processo di importazione per il nuovo connettore.
+8. Passare alla scheda Connettori della pagina **connettori dati** per visualizzare lo stato di avanzamento del processo di importazione per il nuovo connettore.
 
 ## <a name="known-issues"></a>Problemi noti
 

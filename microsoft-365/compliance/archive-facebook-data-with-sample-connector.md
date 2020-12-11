@@ -15,18 +15,18 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: seo-marvel-apr2020
 description: Informazioni su come eseguire l'installazione & utilizzare un connettore nel centro conformità di Microsoft 365 per importare i dati di & archivio dalle pagine business di Facebook a Microsoft 365.
-ms.openlocfilehash: 747f98ff084eaa8536c10b2f4edefcc20d11d7f9
-ms.sourcegitcommit: 195172dd836e8a793e8e0c2db3323b7391bc51ac
+ms.openlocfilehash: db1d11f461125e7ea1d749fd273f8bc8622a8d77
+ms.sourcegitcommit: 6fc6aaa2b7610e148f41018abd229e3c55b2f3d0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "47255853"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49620433"
 ---
 # <a name="set-up-a-connector-to-archive-facebook-data-preview"></a>Configurare un connettore per archiviare i dati di Facebook (anteprima)
 
 Utilizzare un connettore nel centro conformità di Microsoft 365 per importare e archiviare i dati da pagine business di Facebook a Microsoft 365. Dopo aver configurato e configurato il connettore, si connette alla pagina business di Facebook (su base pianificata), converte il contenuto degli elementi di Facebook in un formato di messaggio di posta elettronica e quindi importa tali elementi in una cassetta postale in Microsoft 365.
 
-Dopo aver importato i dati di Facebook, è possibile applicare le funzionalità di conformità di Microsoft 365, ad esempio il blocco per controversia legale, la ricerca di contenuti, l'archiviazione sul posto, il controllo, la conformità alla comunicazione e i criteri di conservazione di Microsoft 365 ai dati di Facebook. Ad esempio, quando una cassetta postale viene inserita nella conservazione per controversia legale o assegnata a un criterio di mantenimento, vengono conservati i dati di Facebook. È possibile cercare i dati di terze parti utilizzando la ricerca contenuto o associare la cassetta postale in cui vengono archiviati i dati di Facebook con un custode in un caso avanzato di eDiscovery. L'utilizzo di un connettore per l'importazione e l'archiviazione dei dati di Facebook in Microsoft 365 può aiutare l'organizzazione a rimanere conforme ai criteri governativi e normativi.
+Dopo aver importato i dati di Facebook, è possibile applicare le funzionalità di conformità di Microsoft 365 come la conservazione per controversia legale, la ricerca di contenuti, la In-Place archiviazione, il controllo, la conformità alla comunicazione e i criteri di ritenzione di Microsoft 365 ai dati di Facebook. Ad esempio, quando una cassetta postale viene inserita nella conservazione per controversia legale o assegnata a un criterio di mantenimento, vengono conservati i dati di Facebook. È possibile cercare i dati di terze parti utilizzando la ricerca contenuto o associare la cassetta postale in cui vengono archiviati i dati di Facebook con un custode in un caso avanzato di eDiscovery. L'utilizzo di un connettore per l'importazione e l'archiviazione dei dati di Facebook in Microsoft 365 può aiutare l'organizzazione a rimanere conforme ai criteri governativi e normativi.
 
 ## <a name="prerequisites-for-setting-up-a-connector-for-facebook-business-pages"></a>Prerequisiti per la configurazione di un connettore per le pagine business di Facebook
 
@@ -42,8 +42,6 @@ Completare i prerequisiti seguenti prima di poter impostare e configurare un con
 
     > [!NOTE]
     > La [sottoscrizione gratuita di Azure Active Directory](use-your-free-azure-ad-subscription-in-office-365.md) inclusa nell'abbonamento a Microsoft 365 non supporta i connettori nel centro sicurezza & conformità.
-
-- L'organizzazione deve autorizzare il servizio di importazione di Office 365 per accedere ai dati delle cassette postali nell'organizzazione. Per acconsentire a questa richiesta, accedere a [Questa pagina](https://login.microsoftonline.com/common/oauth2/authorize?client_id=570d0bec-d001-4c4e-985e-3ab17fdc3073&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent), accedere con le credenziali di un amministratore globale e quindi accettare la richiesta.
 
 - All'utente che configura il connettore personalizzato nel centro conformità di Microsoft 365 (nel passaggio 5) deve essere assegnato il ruolo di esportazione delle cassette postali in Exchange Online. Per impostazione predefinita, questo ruolo non è assegnato ad alcun gruppo di ruoli in Exchange Online. È possibile aggiungere il ruolo import export delle cassette postali al gruppo di ruoli Gestione organizzazione in Exchange Online. In alternativa, è possibile creare un gruppo di ruoli, assegnare il ruolo di esportazione delle cassette postali e quindi aggiungere gli utenti corretti come membri. Per ulteriori informazioni, vedere la sezione creare gruppi di  [ruoli](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#create-role-groups) o [modificare gruppi di ruoli](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups) nell'articolo "gestire i gruppi di ruoli in Exchange Online".
 
@@ -109,7 +107,7 @@ Durante il completamento di questo passaggio (seguendo le istruzioni dettagliate
 
 ## <a name="step-5-set-up-a-facebook-business-pages-connector-in-the-microsoft-365-compliance-center"></a>Passaggio 5: configurare un connettore di pagine business di Facebook nel centro conformità di Microsoft 365
 
-Il passaggio finale consiste nel configurare il connettore nel centro conformità di Microsoft 365 che importerà i dati dalle pagine aziendali di Facebook a una cassetta postale specificata in Microsoft 365. Dopo aver completato questo passaggio, il servizio di importazione di Office 365 inizierà a importare i dati dalle pagine business di Facebook a Microsoft 365.
+Il passaggio finale consiste nel configurare il connettore nel centro conformità di Microsoft 365 che importerà i dati dalle pagine aziendali di Facebook a una cassetta postale specificata in Microsoft 365. Dopo aver completato questo passaggio, il servizio di importazione di Microsoft 365 inizierà a importare i dati dalle pagine business di Facebook a Microsoft 365.
 
 Per istruzioni dettagliate, vedere [passaggio 5: configurare un connettore Facebook nel centro conformità di Microsoft 365](deploy-facebook-connector.md#step-5-set-up-a-facebook-connector-in-the-microsoft-365-compliance-center). 
 

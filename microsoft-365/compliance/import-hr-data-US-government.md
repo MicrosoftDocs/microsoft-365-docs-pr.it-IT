@@ -15,20 +15,18 @@ search.appverid:
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: Gli amministratori del cloud governativo degli Stati Uniti possono configurare un connettore dati per importare i dati dei dipendenti dal sistema HR (Human Resources) dell'organizzazione a Microsoft 365. In questo modo è possibile utilizzare i dati HR nei criteri di gestione dei rischi Insider utili per rilevare l'attività da parte di utenti specifici che possono rappresentare un rischio interno per la propria organizzazione.
-ms.openlocfilehash: 28f4c77ec626e2035451ec6e7c9562c5bf20f101
-ms.sourcegitcommit: 3c39866865c8c61bce2169818d8551da65033cfe
+ms.openlocfilehash: 80998422eba32fe7f9118166f76a61d2d4bd8894
+ms.sourcegitcommit: 6fc6aaa2b7610e148f41018abd229e3c55b2f3d0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "48816841"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49619922"
 ---
 # <a name="set-up-a-connector-to-import-hr-data-in-us-government"></a>Configurare un connettore per l'importazione dei dati HR nel governo degli Stati Uniti
 
 È possibile configurare un connettore di dati nel centro conformità di Microsoft 365 per importare i dati delle risorse umane (HR) nell'organizzazione del governo degli Stati Uniti. I dati relativi alle risorse umane includono la data in cui un dipendente ha inviato le proprie dimissioni e la data dell'ultimo giorno del dipendente. Questo tipo di dati HR può quindi essere utilizzato dalle soluzioni Microsoft per la protezione delle informazioni, ad esempio la [soluzione di gestione dei rischi Insider](insider-risk-management.md), per proteggere l'organizzazione da attività dannose o furti di dati all'interno dell'organizzazione. La configurazione di un connettore HR consiste nella creazione di un'app in Azure Active Directory utilizzata per l'autenticazione tramite connettore, la creazione di un file di mapping CSV contenente i dati HR, la creazione di un connettore di dati nel centro conformità e l'esecuzione di uno script (su base pianificata) che consente di ingerire i dati HR nel file CSV nel cloud Microsoft. Il connettore dati viene quindi utilizzato dallo strumento di gestione dei rischi Insider per accedere ai dati HR che sono stati importati nell'organizzazione Microsoft 365 US Government.
 
-## <a name="before-you-begin"></a>Prima di iniziare
-
-- L'organizzazione deve acconsentire a consentire al servizio di importazione di Office 365 di accedere ai dati nell'organizzazione. Per acconsentire a questa richiesta, accedere a [Questa pagina](https://login.microsoftonline.com/common/oauth2/authorize?client_id=570d0bec-d001-4c4e-985e-3ab17fdc3073&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent), accedere con le credenziali di un amministratore globale di Microsoft 365 e quindi accettare la richiesta. È necessario completare questo passaggio prima di poter creare correttamente il connettore HR nel passaggio 3.
+## <a name="before-you-begin"></a>Informazioni preliminari
 
 - All'utente che crea il connettore HR nel passaggio 3 deve essere assegnato il ruolo di importazione/esportazione delle cassette postali in Exchange Online. Per impostazione predefinita, questo ruolo non è assegnato ad alcun gruppo di ruoli in Exchange Online. È possibile aggiungere il ruolo import export delle cassette postali al gruppo di ruoli Gestione organizzazione in Exchange Online. In alternativa, è possibile creare un nuovo gruppo di ruoli, assegnare il ruolo di esportazione delle cassette postali e quindi aggiungere gli utenti corretti come membri. Per ulteriori informazioni, vedere la sezione creare gruppi di [ruoli](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#create-role-groups) o [modificare gruppi di ruoli](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups) nell'articolo "gestire i gruppi di ruoli in Exchange Online".
 
@@ -40,11 +38,11 @@ ms.locfileid: "48816841"
 
 Il primo passaggio consiste nel creare e registrare una nuova app in Azure Active Directory (Azure AD). L'app corrisponderà al connettore HR creato nel passaggio 3. La creazione di questa app consentirà ad Azure AD di autenticare il connettore HR quando viene eseguito e tenta di accedere all'organizzazione. Questa app verrà utilizzata anche per autenticare lo script eseguito nel passaggio 4 per caricare i dati HR nel cloud Microsoft. Durante la creazione di questa applicazione Azure AD, assicurarsi di salvare le informazioni seguenti. Questi valori verranno utilizzati nei passaggi successivi.
 
-- ID applicazione Azure AD (denominato anche ID *app* o *ID client* )
+- ID applicazione Azure AD (denominato anche ID *app* o *ID client*)
 
-- Segreto dell'applicazione Azure AD (denominato anche *segreto client* )
+- Segreto dell'applicazione Azure AD (denominato anche *segreto client*)
 
-- ID tenant (denominato anche *ID directory* )
+- ID tenant (denominato anche *ID directory*)
 
 Per istruzioni dettagliate per la creazione di un'app in Azure AD, vedere registrazione di [un'applicazione con la piattaforma Microsoft Identity](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app).
 
@@ -77,17 +75,17 @@ Il passaggio successivo consiste nel creare un connettore HR nel centro conformi
 
 1. Andare a [https://compliance.microsoft.com](https://compliance.microsoft.com) e quindi fare clic su **connettori dati** nel NAV sinistro.
 
-2. Nella pagina **connettori dati** in **HR** fare clic su **Visualizza** .
+2. Nella pagina **connettori dati** in **HR** fare clic su **Visualizza**.
 
-3. Nella pagina **HR** fare clic su **Aggiungi connettore** .
+3. Nella pagina **HR** fare clic su **Aggiungi connettore**.
 
-4. Nella pagina **credenziali di autenticazione** eseguire le operazioni seguenti e quindi fare clic su **Avanti** :
+4. Nella pagina **credenziali di autenticazione** eseguire le operazioni seguenti e quindi fare clic su **Avanti**:
 
    1. Digitare o incollare l'ID dell'applicazione Azure AD per l'app Azure creata al passaggio 1.
 
    1. Digitare un nome per il connettore HR.
 
-5. Nella pagina **mapping file** Digitare i nomi delle tre intestazioni di colonna (denominate anche *parametri* ) dal file CSV creato nel passaggio 2 in ognuna delle caselle appropriate. I nomi non sono distinzione tra maiuscole e minuscole. Come spiegato in precedenza, i nomi digitati in queste caselle devono corrispondere ai nomi dei parametri nel file CSV. Ad esempio, nella schermata seguente vengono mostrati i nomi dei parametri dell'esempio in un file CSV di esempio illustrato nel passaggio 2.
+5. Nella pagina **mapping file** Digitare i nomi delle tre intestazioni di colonna (denominate anche *parametri*) dal file CSV creato nel passaggio 2 in ognuna delle caselle appropriate. I nomi non sono distinzione tra maiuscole e minuscole. Come spiegato in precedenza, i nomi digitati in queste caselle devono corrispondere ai nomi dei parametri nel file CSV. Ad esempio, nella schermata seguente vengono mostrati i nomi dei parametri dell'esempio in un file CSV di esempio illustrato nel passaggio 2.
 
    ![I nomi delle intestazioni di colonna corrispondono a quelli nel file CSV](../media/HRConnectorWizard3.png)
 
@@ -101,7 +99,7 @@ Il passaggio successivo consiste nel creare un connettore HR nel centro conformi
    
    1. **Collegamento a uno script di esempio.** Fare clic sul collegamento **qui** per passare al sito GitHub per accedere allo script di esempio (il collegamento apre una nuova finestra). Tenere aperta la finestra in modo che sia possibile copiare lo script nel passaggio 4. In alternativa, è possibile aggiungere un segnalibro alla destinazione o copiare l'URL in modo che sia possibile accedervi di nuovo nel passaggio 4. Questo collegamento è disponibile anche nella pagina del riquadro a comparsa del connettore.
 
-7. Fare clic su **Fatto** .
+7. Fare clic su **Fine**.
 
    Il nuovo connettore viene visualizzato nell'elenco della scheda **connettori** . 
 
@@ -109,7 +107,7 @@ Il passaggio successivo consiste nel creare un connettore HR nel centro conformi
 
    ![Pagina a comparsa per il nuovo connettore HR](../media/HRConnectorWizard7.png)
 
-   Se non è stato ancora fatto, è possibile copiare i valori per l'ID dell' **app di Azure** e il **processo di connettore** . Sarà necessario eseguire lo script nel passaggio successivo. È inoltre possibile scaricare lo script dalla pagina del riquadro a comparsa o scaricarlo utilizzando il collegamento nel passaggio successivo.
+   Se non è stato ancora fatto, è possibile copiare i valori per l'ID dell' **app di Azure** e il **processo di connettore**. Sarà necessario eseguire lo script nel passaggio successivo. È inoltre possibile scaricare lo script dalla pagina del riquadro a comparsa o scaricarlo utilizzando il collegamento nel passaggio successivo.
 
    È inoltre possibile fare clic su **modifica** per modificare l'ID dell'app di Azure o i nomi delle intestazioni di colonna definiti nella pagina **mapping dei file** .
 
@@ -173,7 +171,7 @@ Dopo aver creato il connettore HR ed eseguito lo script per caricare i dati HR, 
 
    Il `RecordsSaved` campo indica il numero di righe nel file CSV che è stato caricato. Ad esempio, se il file CSV contiene quattro righe, il valore dei `RecordsSaved` campi è 4, se lo script ha correttamente caricato tutte le righe nel file CSV.
 
-Se non è stato eseguito lo script nel passaggio 4, viene visualizzato un collegamento per scaricare lo script nell' **Ultima importazione** . È possibile scaricare lo script e quindi seguire i passaggi descritti nel passaggio 4 per eseguirlo.
+Se non è stato eseguito lo script nel passaggio 4, viene visualizzato un collegamento per scaricare lo script nell' **Ultima importazione**. È possibile scaricare lo script e quindi seguire i passaggi descritti nel passaggio 4 per eseguirlo.
 
 ## <a name="optional-step-6-schedule-the-script-to-run-automatically"></a>Optional Passaggio 6: pianificare l'esecuzione automatica dello script
 
@@ -181,13 +179,13 @@ Per assicurarsi che i dati HR più recenti dell'organizzazione siano disponibili
 
 È possibile utilizzare l'app utilità di pianificazione in Windows per eseguire automaticamente lo script ogni giorno.
 
-1. Nel computer locale, fare clic sul pulsante **Start** di Windows e quindi digitare **utilità di pianificazione** .
+1. Nel computer locale, fare clic sul pulsante **Start** di Windows e quindi digitare **utilità di pianificazione**.
 
 2. Fare clic sull'app **utilità di pianificazione** per aprirla.
 
-3. Nella sezione **azioni** fare clic su **Crea attività** .
+3. Nella sezione **azioni** fare clic su **Crea attività**.
 
-4. Nella scheda **generale** Digitare un nome descrittivo per l'attività pianificata. ad esempio, **lo script del connettore HR** . È inoltre possibile aggiungere una descrizione facoltativa.
+4. Nella scheda **generale** Digitare un nome descrittivo per l'attività pianificata. ad esempio, **lo script del connettore HR**. È inoltre possibile aggiungere una descrizione facoltativa.
 
 5. In **Opzioni di sicurezza** eseguire le operazioni seguenti:
 
@@ -197,11 +195,11 @@ Per assicurarsi che i dati HR più recenti dell'organizzazione siano disponibili
 
 6. Selezionare la scheda **trigger** , fare clic su **nuovo** e quindi eseguire le operazioni seguenti:
 
-   1. In **Impostazioni** , selezionare l'opzione **giornaliero** e quindi scegliere una data e un'ora per l'esecuzione dello script per la prima volta. Lo script viene applicato ogni giorno allo stesso tempo specificato.
+   1. In **Impostazioni**, selezionare l'opzione **giornaliero** e quindi scegliere una data e un'ora per l'esecuzione dello script per la prima volta. Lo script viene applicato ogni giorno allo stesso tempo specificato.
    
    1. In **Impostazioni avanzate** verificare che sia selezionata la casella di controllo **abilitata** .
    
-   1. Fare clic su **OK** .
+   1. Fare clic su **OK**.
 
 7. Selezionare la scheda **azioni** , fare clic su **nuovo** e quindi eseguire le operazioni seguenti:
 

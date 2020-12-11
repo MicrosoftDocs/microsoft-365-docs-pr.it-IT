@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: Gli amministratori possono configurare un connettore di dati per importare i dati dal sistema fisico di badging dell'organizzazione a Microsoft 365. In questo modo è possibile utilizzare questi dati nei criteri di gestione dei rischi Insider utili per rilevare l'accesso ai propri edifici fisici da parte di utenti specifici che potrebbero indicare una possibili minacce interne all'organizzazione.
-ms.openlocfilehash: 71f43d8e6abd53454b6c81d811d0dca2e8b08388
-ms.sourcegitcommit: 3c39866865c8c61bce2169818d8551da65033cfe
+ms.openlocfilehash: 7e745b42d0df79f5c39f9fa02cb1b63f164ec2a5
+ms.sourcegitcommit: 6fc6aaa2b7610e148f41018abd229e3c55b2f3d0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "48816649"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49620132"
 ---
 # <a name="set-up-a-connector-to-import-physical-badging-data-preview"></a>Configurare un connettore per l'importazione dei dati fisici di badging (anteprima)
 
@@ -39,8 +39,6 @@ L'impostazione di un connettore fisico di badging è costituita dalle attività 
 
 ## <a name="before-you-set-up-the-connector"></a>Prima di configurare il connettore
 
-- L'organizzazione deve acconsentire a consentire al servizio di importazione di Office 365 di accedere ai dati nell'organizzazione. Per acconsentire a questa richiesta, accedere a [Questa pagina](https://login.microsoftonline.com/common/oauth2/authorize?client_id=570d0bec-d001-4c4e-985e-3ab17fdc3073&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent), accedere con le credenziali di un amministratore globale di Microsoft 365 e quindi accettare la richiesta. È necessario completare questo passaggio prima che sia possibile creare correttamente il connettore fisico di badging nel passaggio 3.
-
 - All'utente che crea il connettore fisico di badging nel passaggio 3 deve essere assegnato il ruolo di importazione/esportazione delle cassette postali in Exchange Online. Per impostazione predefinita, questo ruolo non è assegnato ad alcun gruppo di ruoli in Exchange Online. È possibile aggiungere il ruolo import export delle cassette postali al gruppo di ruoli Gestione organizzazione in Exchange Online. In alternativa, è possibile creare un nuovo gruppo di ruoli, assegnare il ruolo di esportazione delle cassette postali e quindi aggiungere gli utenti corretti come membri. Per ulteriori informazioni, vedere la sezione creare gruppi di [ruoli](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#create-role-groups) o [modificare gruppi di ruoli](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups) nell'articolo "gestire i gruppi di ruoli in Exchange Online".
 
 - È necessario determinare come recuperare o esportare i dati dal sistema di badging fisico dell'organizzazione (su base giornaliera) e creare un file JSON descritto nel passaggio 2. Lo script eseguito nel passaggio 4 invierà i dati nel file JSON all'endpoint dell'API.
@@ -51,11 +49,11 @@ L'impostazione di un connettore fisico di badging è costituita dalle attività 
 
 Il primo passaggio consiste nel creare e registrare una nuova app in Azure Active Directory (Azure AD). L'app corrisponderà al connettore badging fisico creato nel passaggio 3. La creazione di questa app consentirà ad Azure ad di autenticare la richiesta push per il payload JSON contenente dati di badging fisici. Durante la creazione di questa applicazione Azure AD, assicurarsi di salvare le informazioni seguenti. Questi valori verranno utilizzati nei passaggi successivi.
 
-- ID applicazione Azure AD (denominato anche ID *app* o *ID client* )
+- ID applicazione Azure AD (denominato anche ID *app* o *ID client*)
 
-- Segreto dell'applicazione Azure AD (denominato anche *segreto client* )
+- Segreto dell'applicazione Azure AD (denominato anche *segreto client*)
 
-- ID tenant (denominato anche *ID directory* )
+- ID tenant (denominato anche *ID directory*)
 
 Per istruzioni dettagliate per la creazione di un'app in Azure AD, vedere registrazione di [un'applicazione con la piattaforma Microsoft Identity](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app).
 
@@ -137,11 +135,11 @@ Il passaggio successivo consiste nel creare un connettore fisico di badging nel 
 
 1. Andare a [https://compliance.microsoft.com](https://compliance.microsoft.com/) e quindi fare clic su **connettori dati** nel NAV sinistro.
 
-2. Nella pagina **connettori dati** in **badging fisica** fare clic su **Visualizza** .
+2. Nella pagina **connettori dati** in **badging fisica** fare clic su **Visualizza**.
 
-3. Nella pagina **badging fisica** fare clic su **Aggiungi connettore** .
+3. Nella pagina **badging fisica** fare clic su **Aggiungi connettore**.
 
-4. Nella pagina **credenziali di autenticazione** eseguire le operazioni seguenti e quindi fare clic su **Avanti** :
+4. Nella pagina **credenziali di autenticazione** eseguire le operazioni seguenti e quindi fare clic su **Avanti**:
   
    1. Digitare o incollare l'ID dell'applicazione Azure AD per l'app Azure creata al passaggio 1.
   
@@ -155,7 +153,7 @@ Il passaggio successivo consiste nel creare un connettore fisico di badging nel 
 
    La pagina stato contiene anche un collegamento allo script. Fare riferimento a questo script per comprendere come inviare il file JSON all'endpoint dell'API.
 
-7. Fare clic su **Fatto** .
+7. Fare clic su **Fine**.
 
    Il nuovo connettore viene visualizzato nell'elenco della scheda **connettori** .
 
@@ -228,7 +226,7 @@ Dopo aver creato il connettore fisico di badging e aver premuto i dati di badgin
 
    Il campo **RecordsSaved** indica il numero di righe nel file CSV che è stato caricato. Ad esempio, se il file CSV contiene quattro righe, il valore dei campi **RecordsSaved** è 4, se lo script ha correttamente caricato tutte le righe del file CSV.
 
-Se non è stato eseguito lo script nel passaggio 4, viene visualizzato un collegamento per scaricare lo script nell' **Ultima importazione** . È possibile scaricare lo script e quindi seguire i passaggi descritti nel passaggio 4 per eseguirlo.
+Se non è stato eseguito lo script nel passaggio 4, viene visualizzato un collegamento per scaricare lo script nell' **Ultima importazione**. È possibile scaricare lo script e quindi seguire i passaggi descritti nel passaggio 4 per eseguirlo.
 
 ## <a name="optional-step-6-schedule-the-script-to-run-automatically"></a>Optional Passaggio 6: pianificare l'esecuzione automatica dello script
 
@@ -236,13 +234,13 @@ Per assicurarsi che i dati di badging fisici più recenti dell'organizzazione si
 
 È possibile utilizzare l'app utilità di pianificazione in Windows per eseguire automaticamente lo script ogni giorno.
 
-1. Nel computer locale, fare clic sul pulsante **Start** di Windows e quindi digitare **utilità di pianificazione** .
+1. Nel computer locale, fare clic sul pulsante **Start** di Windows e quindi digitare **utilità di pianificazione**.
 
 2. Fare clic sull'app **utilità di pianificazione** per aprirla.
 
-3. Nella sezione **azioni** fare clic su **Crea attività** .
+3. Nella sezione **azioni** fare clic su **Crea attività**.
 
-4. Nella scheda **generale** Digitare un nome descrittivo per l'attività pianificata. ad esempio, **script del connettore badging fisico** . È inoltre possibile aggiungere una descrizione facoltativa.
+4. Nella scheda **generale** Digitare un nome descrittivo per l'attività pianificata. ad esempio, **script del connettore badging fisico**. È inoltre possibile aggiungere una descrizione facoltativa.
 
 5. In **Opzioni di sicurezza** eseguire le operazioni seguenti:
 
@@ -252,11 +250,11 @@ Per assicurarsi che i dati di badging fisici più recenti dell'organizzazione si
 
 6. Selezionare la scheda **trigger** , fare clic su **nuovo** e quindi eseguire le operazioni seguenti:
 
-   1. In **Impostazioni** , selezionare l'opzione **giornaliero** e quindi scegliere una data e un'ora per l'esecuzione dello script per la prima volta. Lo script viene applicato ogni giorno allo stesso tempo specificato.
+   1. In **Impostazioni**, selezionare l'opzione **giornaliero** e quindi scegliere una data e un'ora per l'esecuzione dello script per la prima volta. Lo script viene applicato ogni giorno allo stesso tempo specificato.
 
    2. In **Impostazioni avanzate** verificare che sia selezionata la casella di controllo **abilitata** .
 
-   3. Fare clic su **OK** .
+   3. Fare clic su **OK**.
 
 7. Selezionare la scheda **azioni** , fare clic su **nuovo** e quindi eseguire le operazioni seguenti:
 

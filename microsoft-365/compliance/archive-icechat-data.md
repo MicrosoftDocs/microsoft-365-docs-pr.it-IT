@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Gli amministratori possono configurare un connettore per importare e archiviare i dati dallo strumento ICE chat in Microsoft 365. In questo modo è possibile archiviare i dati provenienti da origini dati di terze parti in Microsoft 365 per poter utilizzare le funzionalità di conformità, come la conservazione legale, la ricerca di contenuto e i criteri di ritenzione per gestire i dati di terze parti dell'organizzazione.
-ms.openlocfilehash: cd56e98aadc2b7328b733939ecc8951413309ba5
-ms.sourcegitcommit: ae3aa7f29be16d08950cf23cad489bc069aa8617
+ms.openlocfilehash: 590f9b3b119ee261ec2ff6c4b5196bd9fea42697
+ms.sourcegitcommit: 6fc6aaa2b7610e148f41018abd229e3c55b2f3d0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48408766"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49620403"
 ---
 # <a name="set-up-a-connector-to-archive-ice-chat-data"></a>Configurare un connettore per archiviare i dati della chat di ghiaccio
 
@@ -41,11 +41,9 @@ Nella panoramica seguente viene illustrato il processo di utilizzo di un connett
 
    Oltre al mapping automatico degli utenti che utilizza i valori della proprietà *SenderEmail* e *RecipientEmail* (il che significa che il connettore importa un messaggio di chat nella cassetta postale del mittente e nelle cassette postali di ogni destinatario), è anche possibile definire il mapping degli utenti personalizzato caricando un file di mapping CSV. Questo file di mapping contiene la chat di *ImId* e l'indirizzo della cassetta postale di Microsoft 365 corrispondente per ogni utente dell'organizzazione. Se si Abilita il mapping automatico degli utenti e si fornisce un file di mapping personalizzato, per ogni elemento di chat il connettore osserverà prima il file di mapping personalizzato. Se non è in grado di trovare un account utente valido di Microsoft 365 che corrisponde a una chat di ImId di un utente, il connettore utilizzerà le proprietà *SenderEmail* e *RecipientEmail* dell'elemento chat per importare l'elemento nelle cassette postali dei partecipanti alla chat. Se il connettore non trova un utente valido di Microsoft 365 nel file di mapping personalizzato o nelle proprietà *SenderEmail* e *RecipientEmail* , l'elemento non verrà importato.
 
-## <a name="before-you-begin"></a>Prima di iniziare
+## <a name="before-you-begin"></a>Informazioni preliminari
 
 Alcuni dei passaggi di implementazione necessari per archiviare i dati della chat di ghiaccio sono esterni a Microsoft 365 e devono essere completati prima di poter creare il connettore nel centro conformità.
-
-- L'organizzazione deve autorizzare il servizio di importazione di Office 365 per accedere ai dati delle cassette postali nell'organizzazione. Per acconsentire a questa richiesta, accedere a [Questa pagina](https://login.microsoftonline.com/common/oauth2/authorize?client_id=570d0bec-d001-4c4e-985e-3ab17fdc3073&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent), accedere con le credenziali di un amministratore globale di Office 365 e quindi accettare la richiesta. È necessario completare questo passaggio prima di poter creare correttamente il connettore ICE chat nel passaggio 3.
 
 - ICE chat addebita ai propri clienti una tariffa per la conformità esterna. L'organizzazione deve contattare il gruppo Sales di ICE chat per discutere e firmare il contratto ICE chat Data Services, che è possibile ottenere in [https://www.theice.com/publicdocs/agreements/ICE\_Data\_Services\_Agreement.pdf](https://www.theice.com/publicdocs/agreements/ICE\_Data\_Services\_Agreement.pdf) . Questo contratto è compreso tra ICE chat e l'organizzazione e non coinvolge Microsoft. Dopo aver configurato un sito di ICE chat SFTP nel passaggio 2, ICE chat fornisce le credenziali FTP direttamente all'organizzazione. Si desidera quindi fornire tali credenziali a Microsoft quando si configura il connettore nel passaggio 3.
 
@@ -59,13 +57,13 @@ Il primo passaggio consiste nell'ottenere una copia delle chiavi pubbliche per S
 
 1. Andare a [https://compliance.microsoft.com](https://compliance.microsoft.com) e fare clic su **connettori dati** nel NAV sinistro.
 
-2. Nella pagina **connettori dati** in **Ice chat**fare clic su **Visualizza**.
+2. Nella pagina **connettori dati** in **Ice chat** fare clic su **Visualizza**.
 
 3. Nella pagina **chat di ghiaccio** fare clic su **Aggiungi connettore**.
 
 4. Nella pagina **condizioni del servizio** fare clic su **Accetto**.
 
-5. Nella pagina **Aggiungi credenziali per Ice chat SFTP del sito** al passaggio 1, fare clic **sulla chiave Scarica SSH**, **scaricare PGP Key**e scaricare i collegamenti agli **indirizzi IP** per salvare una copia di ogni file nel computer locale. Questi file contengono gli elementi seguenti che vengono utilizzati per configurare il sito di ICE chat SFTP nel passaggio 2:
+5. Nella pagina **Aggiungi credenziali per Ice chat SFTP del sito** al passaggio 1, fare clic **sulla chiave Scarica SSH**, **scaricare PGP Key** e scaricare i collegamenti agli **indirizzi IP** per salvare una copia di ogni file nel computer locale. Questi file contengono gli elementi seguenti che vengono utilizzati per configurare il sito di ICE chat SFTP nel passaggio 2:
 
    - Chiave pubblica SSH: questa chiave viene utilizzata per configurare Secure SSH per abilitare un account di accesso remoto sicuro quando il connettore si connette al sito ICE chat SFTP.
 
@@ -85,7 +83,7 @@ L'ultimo passaggio consiste nel creare un connettore di chat di ghiaccio nel cen
 
 1. Andare a [https://compliance.microsoft.com](https://compliance.microsoft.com) e fare clic su **connettori dati** nel NAV sinistro.
 
-2. Nella pagina **connettori dati** in **Ice chat**fare clic su **Visualizza**.
+2. Nella pagina **connettori dati** in **Ice chat** fare clic su **Visualizza**.
 
 3. Nella pagina **chat di ghiaccio** fare clic su **Aggiungi connettore**.
 

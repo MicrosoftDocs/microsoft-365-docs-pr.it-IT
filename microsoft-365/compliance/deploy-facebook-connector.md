@@ -15,12 +15,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: Gli amministratori possono configurare un connettore nativo per l'importazione e l'archiviazione di pagine business di Facebook su Microsoft 365. Dopo aver importato i dati in Microsoft 365, è possibile utilizzare le funzionalità di conformità, ad esempio il blocco legale, la ricerca di contenuto e i criteri di conservazione per gestire la governance dei dati di Facebook dell'organizzazione.
-ms.openlocfilehash: 065a5c6a1276c1ce37aa48137caf6627e76c8db0
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: b771c50eb5c2eb5f99269f1f399d27043ebee6bb
+ms.sourcegitcommit: 6fc6aaa2b7610e148f41018abd229e3c55b2f3d0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48200861"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49619952"
 ---
 # <a name="deploy-a-connector-to-archive-facebook-business-pages-data"></a>Distribuire un connettore per archiviare i dati di pagine business di Facebook
 
@@ -116,7 +116,7 @@ Questo articolo contiene il processo dettagliato per la distribuzione di un conn
 
    ![Completare la sezione Guida introduttiva](../media/FBCimage30.png)
 
-7. Nel riquadro di spostamento a sinistra in **login Facebook**, fare clic su **Impostazioni**e aggiungere l'URI di reindirizzamento OAuth nella casella **Valid URI di reindirizzamento OAuth** . Utilizzare il formato ** \<connectorserviceuri> /views/FacebookOAuth**, in cui il valore di CONNECTORSERVICEURI è l'URL del servizio app di Azure per l'organizzazione, ad esempio `https://fbconnector.azurewebsites.net` .
+7. Nel riquadro di spostamento a sinistra in **login Facebook**, fare clic su **Impostazioni** e aggiungere l'URI di reindirizzamento OAuth nella casella **Valid URI di reindirizzamento OAuth** . Utilizzare il formato **\<connectorserviceuri> /views/FacebookOAuth**, in cui il valore di CONNECTORSERVICEURI è l'URL del servizio app di Azure per l'organizzazione, ad esempio `https://fbconnector.azurewebsites.net` .
 
    ![Aggiungere l'URI di reindirizzamento OAuth alla casella degli URI di reindirizzamento OAuth validi](../media/FBCimage31.png)
 
@@ -124,7 +124,7 @@ Questo articolo contiene il processo dettagliato per la distribuzione di un conn
 
    ![Fare clic su Aggiungi prodotti e quindi su * * webhooks](../media/FBCimage32.png)
 
-9. Aggiungere l'URL di callback di Webhook e aggiungere un token di verifica. Il formato dell'URL di callback, utilizzare il formato ** <connectorserviceuri> /API/FbPageWebhook**, in cui il valore di CONNECTORSERVICEURI è l'URL del servizio app di Azure per l'organizzazione, ad esempio `https://fbconnector.azurewebsites.net` .
+9. Aggiungere l'URL di callback di Webhook e aggiungere un token di verifica. Il formato dell'URL di callback, utilizzare il formato **<connectorserviceuri> /API/FbPageWebhook**, in cui il valore di CONNECTORSERVICEURI è l'URL del servizio app di Azure per l'organizzazione, ad esempio `https://fbconnector.azurewebsites.net` .
 
    Il token di verifica dovrebbe essere simile a una password complessa. Copiare il token di verifica in un file di testo o in un altro percorso di archiviazione.
 
@@ -190,7 +190,7 @@ Questo articolo contiene il processo dettagliato per la distribuzione di un conn
 
 1. Andare a [https://compliance.microsoft.com](https://compliance.microsoft.com) e quindi fare clic su **connettori dati** nel NAV sinistro.
 
-2. Nella pagina **connettori dati** in **pagine business di Facebook**fare clic su **Visualizza**.
+2. Nella pagina **connettori dati** in **pagine business di Facebook** fare clic su **Visualizza**.
 
 3. Nella pagina **Facebook business Pages** fare clic su **Aggiungi connettore**.
 
@@ -226,8 +226,6 @@ Questo articolo contiene il processo dettagliato per la distribuzione di un conn
 
 12. Nella pagina **Scegli percorso di archiviazione** , digitare l'indirizzo di posta elettronica della cassetta postale di Microsoft 365 a cui verranno importati gli elementi di Facebook e quindi fare clic su **Avanti**.
 
-13. Sul **consenso amministratore**, fare clic su **Fornisci consenso** e quindi eseguire la procedura. È necessario essere un amministratore globale per fornire il consenso per il servizio di importazione di Office 365 per accedere ai dati nell'organizzazione.
+13. Fare clic su **Avanti** per esaminare le impostazioni del connettore e quindi fare clic su **fine** per completare la configurazione del connettore.
 
-14. Fare clic su **Avanti** per esaminare le impostazioni del connettore e quindi fare clic su **fine** per completare la configurazione del connettore.
-
-15. Nel centro conformità, andare alla pagina **connettori dati** e fare clic sulla scheda **connettori** per visualizzare lo stato di avanzamento del processo di importazione.
+14. Nel centro conformità, andare alla pagina **connettori dati** e fare clic sulla scheda **connettori** per visualizzare lo stato di avanzamento del processo di importazione.

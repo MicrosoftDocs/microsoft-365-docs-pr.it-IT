@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Gli amministratori possono configurare un connettore per l'importazione e l'archiviazione dei dati di Reuters Dealing from Globanet to Microsoft 365. Questo connettore consente di archiviare i dati provenienti da origini dati di terze parti in Microsoft 365. Dopo l'archiviazione dei dati, è possibile utilizzare le funzionalità di conformità, ad esempio la conservazione legale, la ricerca del contenuto e i criteri di ritenzione per gestire i dati di terze parti.
-ms.openlocfilehash: 6b1b1421944e139b0e5051e99dafb4fba9e126ba
-ms.sourcegitcommit: 95b85a1fdf43e3f0839483fa22e279262703f15f
+ms.openlocfilehash: 24ecbc8a6073835e45958191c87f95854fee8db1
+ms.sourcegitcommit: 6fc6aaa2b7610e148f41018abd229e3c55b2f3d0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "49407310"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49619972"
 ---
 # <a name="set-up-a-connector-to-archive-reuters-dealing-data"></a>Configurare un connettore per l'archiviazione dei dati relativi a Reuters Dealing
 
@@ -73,11 +73,7 @@ Per eseguire il mapping degli utenti e completare la configurazione del connetto
 
    Gli elementi che si occupano di Reuters includono una proprietà denominata *posta elettronica*, che contiene gli indirizzi di posta elettronica per gli utenti dell'organizzazione. Se il connettore può associare questo indirizzo a un utente di Microsoft 365, gli elementi vengono importati nella cassetta postale dell'utente.
 
-2. Nella pagina **consenso amministratore** fare clic sul pulsante **Fornisci consenso** . L'utente verrà reindirizzato al sito Microsoft. Fare clic su **accetta** per fornire il consenso.
-
-    L'organizzazione deve autorizzare il servizio di importazione di Office 365 per accedere ai dati delle cassette postali nell'organizzazione. Per fornire il consenso dell'amministratore, è necessario essere connessi con le credenziali di un amministratore globale di Microsoft 365 e quindi accettare la richiesta di consenso. Se non è stato eseguito l'accesso come amministratore globale, è possibile accedere a [Questa pagina](https://login.microsoftonline.com/common/oauth2/authorize?client_id=570d0bec-d001-4c4e-985e-3ab17fdc3073&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent) ed eseguire l'accesso con le credenziali di amministratore globale per accettare la richiesta.
-
-3. Fare clic su **Avanti**, rivedere le impostazioni e passare alla pagina **connettori dati** per visualizzare lo stato di avanzamento del processo di importazione per il nuovo connettore.
+2. Fare clic su **Avanti**, rivedere le impostazioni e passare alla pagina **connettori dati** per visualizzare lo stato di avanzamento del processo di importazione per il nuovo connettore.
 
 ## <a name="step-4-monitor-the-reuters-dealing-connector"></a>Passaggio 4: monitorare il connettore Reuters Dealing
 

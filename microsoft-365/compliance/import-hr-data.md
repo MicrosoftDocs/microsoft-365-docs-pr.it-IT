@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: Gli amministratori possono configurare un connettore di dati per importare i dati dei dipendenti dal sistema HR (Human Resources) dell'organizzazione a Microsoft 365. In questo modo è possibile utilizzare i dati HR nei criteri di gestione dei rischi Insider utili per rilevare l'attività da parte di utenti specifici che possono rappresentare un rischio interno per la propria organizzazione.
-ms.openlocfilehash: beebb4a6fba9baf2770bee7e3bd7a7b5a0fed0b1
-ms.sourcegitcommit: 3c39866865c8c61bce2169818d8551da65033cfe
+ms.openlocfilehash: 756851b848822fa801493b2832368ccb2a1a0b51
+ms.sourcegitcommit: 6fc6aaa2b7610e148f41018abd229e3c55b2f3d0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "48816669"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49620242"
 ---
 # <a name="set-up-a-connector-to-import-hr-data"></a>Configurare un connettore per importare i dati sulle risorse umane
 
@@ -27,13 +27,11 @@ ms.locfileid: "48816669"
 
 La configurazione di un connettore per i dati HR che i criteri di gestione dei rischi Insider possono utilizzare per generare indicatori di rischio consiste nella creazione di un file CSV che contiene i dati HR, la creazione di un'app in Azure Active Directory utilizzata per l'autenticazione, la creazione di un connettore di dati HR nel centro conformità di Microsoft 365 e l'esecuzione di uno script (su base pianificata) che consente di ingerire i dati HR nei file CSV nel cloud Microsoft in modo che sia disponibile per l'insider soluzione di gestione dei rischi.
 
-## <a name="before-you-begin"></a>Prima di iniziare
+## <a name="before-you-begin"></a>Informazioni preliminari
 
 - Determinare gli scenari e i dati HR da importare in Microsoft 365. In questo modo è possibile determinare il numero di file CSV e i connettori HR necessari per la creazione e la modalità di generazione e struttura dei file CSV. I dati HR che vengono importati sono determinati dai criteri di gestione dei rischi Insider che si desidera implementare. Per ulteriori informazioni, vedere passaggio 1.
 
 - Determinare il modo in cui recuperare o esportare i dati dal sistema HR dell'organizzazione (e su base regolare) e aggiungerli ai file CSV creati nel passaggio 1. Lo script eseguito nel passaggio 4 caricherà i dati HR nei file CSV nel cloud Microsoft.
-
-- L'organizzazione deve acconsentire a consentire al servizio di importazione di Office 365 di accedere ai dati nell'organizzazione. Per acconsentire a questa richiesta, accedere a [Questa pagina](https://login.microsoftonline.com/common/oauth2/authorize?client_id=570d0bec-d001-4c4e-985e-3ab17fdc3073&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent), accedere con le credenziali di un amministratore globale di Microsoft 365 e quindi accettare la richiesta. È necessario completare questo passaggio prima di poter creare correttamente il connettore HR nel passaggio 3.
 
 - All'utente che crea il connettore HR nel passaggio 3 deve essere assegnato il ruolo di importazione/esportazione delle cassette postali in Exchange Online. Per impostazione predefinita, questo ruolo non è assegnato ad alcun gruppo di ruoli in Exchange Online. È possibile aggiungere il ruolo import export delle cassette postali al gruppo di ruoli Gestione organizzazione in Exchange Online. In alternativa, è possibile creare un nuovo gruppo di ruoli, assegnare il ruolo di esportazione delle cassette postali e quindi aggiungere gli utenti corretti come membri. Per ulteriori informazioni, vedere la sezione creare gruppi di [ruoli](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#create-role-groups) o [modificare gruppi di ruoli](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups) nell'articolo "gestire i gruppi di ruoli in Exchange Online".
 
@@ -203,11 +201,11 @@ In base ai sistemi HR dell'organizzazione e alla modalità di esportazione dei d
 
 Il passaggio successivo consiste nel creare e registrare una nuova app in Azure Active Directory (Azure AD). L'app corrisponderà al connettore HR creato nel passaggio 3. La creazione di questa app consentirà ad Azure AD di autenticare il connettore HR quando viene eseguito e tenta di accedere all'organizzazione. Questa app verrà utilizzata anche per autenticare lo script eseguito nel passaggio 4 per caricare i dati HR nel cloud Microsoft. Durante la creazione di questa applicazione Azure AD, assicurarsi di salvare le informazioni seguenti. Questi valori verranno utilizzati nel passaggio 3 e nel passaggio 4.
 
-- ID applicazione Azure AD (denominato anche ID *app* o *ID client* )
+- ID applicazione Azure AD (denominato anche ID *app* o *ID client*)
 
-- Segreto dell'applicazione Azure AD (denominato anche *segreto client* )
+- Segreto dell'applicazione Azure AD (denominato anche *segreto client*)
 
-- ID tenant (denominato anche *ID directory* )
+- ID tenant (denominato anche *ID directory*)
 
 Per istruzioni dettagliate per la creazione di un'app in Azure AD, vedere registrazione di [un'applicazione con la piattaforma Microsoft Identity](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app).
 
@@ -219,29 +217,29 @@ Dopo aver completato questo passaggio, assicurarsi di copiare l'ID processo gene
 
 1. Andare a [https://compliance.microsoft.com](https://compliance.microsoft.com/) e quindi fare clic su **connettori dati** nel NAV sinistro.
 
-2. Nella pagina **connettori dati** in **HR** fare clic su **Visualizza** .
+2. Nella pagina **connettori dati** in **HR** fare clic su **Visualizza**.
 
-3. Nella pagina **personale HR** , fare clic su **Aggiungi connettore** .
+3. Nella pagina **personale HR** , fare clic su **Aggiungi connettore**.
 
-4. Nella pagina **installazione della connessione** eseguire le operazioni seguenti e quindi fare clic su **Avanti** :
+4. Nella pagina **installazione della connessione** eseguire le operazioni seguenti e quindi fare clic su **Avanti**:
 
    1. Digitare o incollare l'ID dell'applicazione Azure AD per l'app di Azure creata al passaggio 2.
 
    1. Digitare un nome per il connettore HR.
 
-5. Nella pagina scenari HR selezionare uno o più scenari HR di cui si desidera importare i dati e quindi fare clic su **Avanti** .
+5. Nella pagina scenari HR selezionare uno o più scenari HR di cui si desidera importare i dati e quindi fare clic su **Avanti**.
 
-6. Nella pagina Metodo di mapping dei file selezionare una delle opzioni seguenti e quindi fare clic su **Avanti** .
+6. Nella pagina Metodo di mapping dei file selezionare una delle opzioni seguenti e quindi fare clic su **Avanti**.
 
-   - **Caricare un file di esempio** . Se si seleziona questa opzione, fare clic su **Carica file di esempio** per caricare il file CSV preparato nel passaggio 1. Questa opzione consente di selezionare rapidamente i nomi di colonna nel file CSV da un elenco a discesa per mapparli ai tipi di dati per gli scenari HR precedentemente selezionati.
+   - **Caricare un file di esempio**. Se si seleziona questa opzione, fare clic su **Carica file di esempio** per caricare il file CSV preparato nel passaggio 1. Questa opzione consente di selezionare rapidamente i nomi di colonna nel file CSV da un elenco a discesa per mapparli ai tipi di dati per gli scenari HR precedentemente selezionati.
 
    OPPURE
 
-   - **Fornire manualmente i dettagli di mapping** . Se si seleziona questa opzione, è necessario digitare il nome delle colonne del file CSV per mapparle ai tipi di dati per gli scenari HR precedentemente selezionati.
+   - **Fornire manualmente i dettagli di mapping**. Se si seleziona questa opzione, è necessario digitare il nome delle colonne del file CSV per mapparle ai tipi di dati per gli scenari HR precedentemente selezionati.
 
 7. Nella pagina Dettagli mapping dei file eseguire una delle operazioni seguenti, a seconda che sia stato caricato un file CSV di esempio e che si stia configurando il connettore per un singolo scenario HR o per più scenari. Se è stato caricato un file di esempio, non è necessario digitare i nomi delle colonne. È possibile selezionarli da un elenco a discesa.
 
-    - Se nel passaggio precedente è stato selezionato un singolo scenario HR, digitare i nomi delle intestazioni di colonna (denominati anche *parametri* ) dal file CSV creato nel passaggio 1 in ognuna delle caselle appropriate. I nomi di colonna digitati non sono con distinzione tra maiuscole e minuscole, ma assicurarsi di includere spazi se i nomi delle colonne nel file CSV includono spazi. Come spiegato in precedenza, i nomi digitati in queste caselle devono corrispondere ai nomi dei parametri nel file CSV. Nella schermata seguente, ad esempio, vengono visualizzati i nomi dei parametri del file CSV di esempio per lo scenario di dimissioni HR del dipendente illustrato nel passaggio 1.
+    - Se nel passaggio precedente è stato selezionato un singolo scenario HR, digitare i nomi delle intestazioni di colonna (denominati anche *parametri*) dal file CSV creato nel passaggio 1 in ognuna delle caselle appropriate. I nomi di colonna digitati non sono con distinzione tra maiuscole e minuscole, ma assicurarsi di includere spazi se i nomi delle colonne nel file CSV includono spazi. Come spiegato in precedenza, i nomi digitati in queste caselle devono corrispondere ai nomi dei parametri nel file CSV. Nella schermata seguente, ad esempio, vengono visualizzati i nomi dei parametri del file CSV di esempio per lo scenario di dimissioni HR del dipendente illustrato nel passaggio 1.
 
     - Se nel passaggio precedente sono stati selezionati più tipi di dati, è necessario immettere il nome della colonna identificatore che identificherà il tipo di dati HR nel file CSV. Dopo aver immesso il nome della colonna identificatore, digitare il valore che identifica questo tipo di dati HR e digitare i nomi delle intestazioni di colonna per i tipi di dati selezionati dal file CSV creato nel passaggio 1 in ognuna delle caselle appropriate per ogni tipo di dati selezionato. Come spiegato in precedenza, i nomi digitati in queste caselle devono corrispondere ai nomi delle colonne del file CSV.
 
@@ -255,7 +253,7 @@ Dopo aver completato questo passaggio, assicurarsi di copiare l'ID processo gene
 
    1. **Collegamento a uno script di esempio.** Fare clic sul collegamento **qui** per passare al sito GitHub per accedere allo script di esempio (il collegamento apre una nuova finestra). Tenere aperta la finestra in modo che sia possibile copiare lo script nel passaggio 4. In alternativa, è possibile aggiungere un segnalibro alla destinazione o copiare l'URL in modo che sia possibile accedervi di nuovo quando si esegue lo script. Questo collegamento è disponibile anche nella pagina del riquadro a comparsa del connettore.
 
-9. Fare clic su **Fatto** .
+9. Fare clic su **Fine**.
 
    Il nuovo connettore viene visualizzato nell'elenco della scheda **connettori** .
 
@@ -263,7 +261,7 @@ Dopo aver completato questo passaggio, assicurarsi di copiare l'ID processo gene
 
    ![Pagina a comparsa per il nuovo connettore HR](../media/HRConnectorWizard7.png)
 
-Se non è stato ancora fatto, è possibile copiare i valori per l'ID dell' **app di Azure** e il **processo di connettore** . Sarà necessario eseguire lo script nel passaggio successivo. È inoltre possibile scaricare lo script dalla pagina del riquadro a comparsa o scaricarlo utilizzando il collegamento nel passaggio successivo.
+Se non è stato ancora fatto, è possibile copiare i valori per l'ID dell' **app di Azure** e il **processo di connettore**. Sarà necessario eseguire lo script nel passaggio successivo. È inoltre possibile scaricare lo script dalla pagina del riquadro a comparsa o scaricarlo utilizzando il collegamento nel passaggio successivo.
 
 È inoltre possibile fare clic su **modifica** per modificare l'ID dell'app di Azure o i nomi delle intestazioni di colonna definiti nella pagina **mapping dei file** .
 
@@ -327,7 +325,7 @@ Dopo aver creato il connettore HR ed eseguito lo script per caricare i dati HR, 
 
    Il `RecordsSaved` campo indica il numero di righe nel file CSV che è stato caricato. Ad esempio, se il file CSV contiene quattro righe, il valore dei `RecordsSaved` campi è 4, se lo script ha correttamente caricato tutte le righe nel file CSV.
 
-Se non è stato eseguito lo script nel passaggio 4, viene visualizzato un collegamento per scaricare lo script nell' **Ultima importazione** . È possibile scaricare lo script e quindi seguire la procedura per eseguire lo script.
+Se non è stato eseguito lo script nel passaggio 4, viene visualizzato un collegamento per scaricare lo script nell' **Ultima importazione**. È possibile scaricare lo script e quindi seguire la procedura per eseguire lo script.
 
 ## <a name="optional-step-6-schedule-the-script-to-run-automatically"></a>Optional Passaggio 6: pianificare l'esecuzione automatica dello script
 
@@ -335,13 +333,13 @@ Per assicurarsi che i dati HR più recenti dell'organizzazione siano disponibili
 
 È possibile utilizzare l'app utilità di pianificazione in Windows per eseguire automaticamente lo script ogni giorno.
 
-1. Nel computer locale, fare clic sul pulsante **Start** di Windows e quindi digitare **utilità di pianificazione** .
+1. Nel computer locale, fare clic sul pulsante **Start** di Windows e quindi digitare **utilità di pianificazione**.
 
 2. Fare clic sull'app **utilità di pianificazione** per aprirla.
 
-3. Nella sezione **azioni** fare clic su **Crea attività** .
+3. Nella sezione **azioni** fare clic su **Crea attività**.
 
-4. Nella scheda **generale** Digitare un nome descrittivo per l'attività pianificata. ad esempio, **lo script del connettore HR** . È inoltre possibile aggiungere una descrizione facoltativa.
+4. Nella scheda **generale** Digitare un nome descrittivo per l'attività pianificata. ad esempio, **lo script del connettore HR**. È inoltre possibile aggiungere una descrizione facoltativa.
 
 5. In **Opzioni di sicurezza** eseguire le operazioni seguenti:
 
@@ -351,11 +349,11 @@ Per assicurarsi che i dati HR più recenti dell'organizzazione siano disponibili
 
 6. Selezionare la scheda **trigger** , fare clic su **nuovo** e quindi eseguire le operazioni seguenti:
 
-   1. In **Impostazioni** , selezionare l'opzione **giornaliero** e quindi scegliere una data e un'ora per l'esecuzione dello script per la prima volta. Lo script viene applicato ogni giorno allo stesso tempo specificato.
+   1. In **Impostazioni**, selezionare l'opzione **giornaliero** e quindi scegliere una data e un'ora per l'esecuzione dello script per la prima volta. Lo script viene applicato ogni giorno allo stesso tempo specificato.
 
    1. In **Impostazioni avanzate** verificare che sia selezionata la casella di controllo **abilitata** .
 
-   1. Fare clic su **OK** .
+   1. Fare clic su **OK**.
 
 7. Selezionare la scheda **azioni** , fare clic su **nuovo** e quindi eseguire le operazioni seguenti:
 

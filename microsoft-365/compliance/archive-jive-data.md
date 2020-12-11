@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Gli amministratori possono configurare un connettore per l'importazione e l'archiviazione dei dati di Jive da Globanet in Microsoft 365. Questo connettore consente di archiviare i dati provenienti da origini dati di terze parti in Microsoft 365, in modo da poter utilizzare le funzionalità di conformità, come la conservazione legale, la ricerca di contenuto e i criteri di ritenzione per gestire i dati di terze parti dell'organizzazione.
-ms.openlocfilehash: 9017e6a7e26c823243abe188328cf62a22ea91c6
-ms.sourcegitcommit: 3c39866865c8c61bce2169818d8551da65033cfe
+ms.openlocfilehash: e89404362505dbe276e351e95ebd30a0c0bdf88c
+ms.sourcegitcommit: 6fc6aaa2b7610e148f41018abd229e3c55b2f3d0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "48816559"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49620393"
 ---
 # <a name="set-up-a-connector-to-archive-jive-data"></a>Configurare un connettore per archiviare i dati di Jive
 
@@ -39,7 +39,7 @@ Nella panoramica seguente viene illustrato il processo di utilizzo di un connett
 
 4. Il connettore importa gli elementi convertiti nelle cassette postali di utenti specifici utilizzando il valore della proprietà di *posta elettronica* del mapping automatico degli utenti, come descritto nel [passaggio 3](#step-3-map-users-and-complete-the-connector-setup). Viene creata una nuova sottocartella nella cartella posta in arrivo denominata **Jive** nelle cassette postali degli utenti e gli elementi vengono importati in tale cartella. Il connettore esegue questa operazione utilizzando il valore della proprietà di *posta elettronica* . Ogni elemento Jive contiene questa proprietà, che viene popolata con l'indirizzo di posta elettronica di tutti i partecipanti all'elemento.
 
-## <a name="before-you-begin"></a>Prima di iniziare
+## <a name="before-you-begin"></a>Informazioni preliminari
 
 - Creare un account Merge1 di Globanet per i connettori Microsoft. Per creare questo account, contattare il [supporto clienti di globanet](https://globanet.com/ms-connectors-contact/). Si eseguirà l'accesso a questo account quando si crea il connettore nel passaggio 1.
 
@@ -49,13 +49,13 @@ Nella panoramica seguente viene illustrato il processo di utilizzo di un connett
 
 Il primo passaggio consiste nell'accedere alla pagina **dei connettori dati** nel centro conformità di Microsoft 365 e creare un connettore per i dati di Jive.
 
-1. Andare a [https://compliance.microsoft.com](https://compliance.microsoft.com/) e quindi fare clic su **connettori di dati**  >  **Jive** .
+1. Andare a [https://compliance.microsoft.com](https://compliance.microsoft.com/) e quindi fare clic su **connettori di dati**  >  **Jive**.
 
-2. Nella pagina Descrizione prodotto **Jive** fare clic su **Aggiungi connettore** .
+2. Nella pagina Descrizione prodotto **Jive** fare clic su **Aggiungi connettore**.
 
-3. Nella pagina **condizioni del servizio** fare clic su **Accetto** .
+3. Nella pagina **condizioni del servizio** fare clic su **Accetto**.
 
-4. Immettere un nome univoco che identifichi il connettore e quindi fare clic su **Avanti** .
+4. Immettere un nome univoco che identifichi il connettore e quindi fare clic su **Avanti**.
 
 5. Accedere al proprio account di Merge1 per configurare il connettore.
 
@@ -63,19 +63,15 @@ Il primo passaggio consiste nell'accedere alla pagina **dei connettori dati** ne
 
 Il secondo passaggio consiste nel configurare il connettore Jive nel sito di Merge1. Per informazioni su come configurare il connettore di Jive, vedere [Merge1 di terze parti dei connettori utente](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20Jive%20User%20Guide.pdf).
 
-Dopo aver fatto clic su **salva & fine** , viene visualizzata la pagina di **mapping degli utenti** nella procedura guidata del connettore nel centro conformità di Microsoft 365.
+Dopo aver fatto clic su **salva & fine**, viene visualizzata la pagina di **mapping degli utenti** nella procedura guidata del connettore nel centro conformità di Microsoft 365.
 
 ## <a name="step-3-map-users-and-complete-the-connector-setup"></a>Passaggio 3: mappare gli utenti e completare la configurazione del connettore
 
 Per eseguire il mapping degli utenti e completare la configurazione del connettore nel centro conformità di Microsoft 365, attenersi alla procedura seguente:
 
-1. Nella pagina **Mappa utenti di Jive a Microsoft 365** , abilitare il mapping automatico degli utenti. Gli elementi di Jive includono una proprietà denominata *posta elettronica* , che contiene gli indirizzi di posta elettronica per gli utenti dell'organizzazione. Se il connettore può associare questo indirizzo a un utente di Microsoft 365, gli elementi vengono importati nella cassetta postale dell'utente.
+1. Nella pagina **Mappa utenti di Jive a Microsoft 365** , abilitare il mapping automatico degli utenti. Gli elementi di Jive includono una proprietà denominata *posta elettronica*, che contiene gli indirizzi di posta elettronica per gli utenti dell'organizzazione. Se il connettore può associare questo indirizzo a un utente di Microsoft 365, gli elementi vengono importati nella cassetta postale dell'utente.
 
-2. Nella pagina **consenso amministratore** fare clic su **Fornisci consenso** . L'utente verrà reindirizzato al sito Microsoft. Fare clic su **accetta** per fornire il consenso.
-
-   L'organizzazione deve autorizzare il servizio di importazione di Office 365 per accedere ai dati delle cassette postali nell'organizzazione. Per fornire il consenso dell'amministratore, è necessario essere connessi con le credenziali di un amministratore globale di Microsoft 365 e quindi accettare la richiesta di consenso. Se non è stato eseguito l'accesso come amministratore globale, è possibile accedere a [Questa pagina](https://login.microsoftonline.com/common/oauth2/authorize?client_id=570d0bec-d001-4c4e-985e-3ab17fdc3073&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent) ed eseguire l'accesso con le credenziali di amministratore globale per accettare la richiesta.
-
-3. Fare clic su **Avanti** , rivedere le impostazioni e passare alla pagina **connettori dati** per visualizzare lo stato di avanzamento del processo di importazione per il nuovo connettore.
+2. Fare clic su **Avanti**, rivedere le impostazioni e passare alla pagina **connettori dati** per visualizzare lo stato di avanzamento del processo di importazione per il nuovo connettore.
 
 ## <a name="step-4-monitor-the-jive-connector"></a>Passaggio 4: monitorare il connettore Jive
 

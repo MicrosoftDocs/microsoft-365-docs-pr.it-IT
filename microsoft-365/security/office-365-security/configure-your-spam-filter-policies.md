@@ -16,12 +16,12 @@ ms.assetid: 316544cb-db1d-4c25-a5b9-c73bbcf53047
 ms.collection:
 - M365-security-compliance
 description: Informazioni per amministratori su come visualizzare, creare, modificare ed eliminare criteri di protezione dalla posta indesiderata in Exchange Online Protection (EOP).
-ms.openlocfilehash: 2601e4b7b360ce45fbece3e66b5aa09cd512f68c
-ms.sourcegitcommit: d81c7cea85af6ad5fef81d3c930514a51464368c
+ms.openlocfilehash: 81c5e74ec45cc633b3a4ba46c7865d0a643af2cd
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "49572814"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49616693"
 ---
 # <a name="configure-anti-spam-policies-in-eop"></a>Configurare criteri di protezione dalla posta indesiderata in EOP
 
@@ -59,7 +59,7 @@ Per aumentare l'efficacia del filtro della posta indesiderata, è possibile crea
 
 - Aprire il Centro sicurezza e conformità in <https://protection.office.com/>. Per passare direttamente alla pagina **Impostazioni di filtro della posta indesiderata**, usare <https://protection.office.com/antispam>.
 
-- Per informazioni su come connettersi a PowerShell per Exchange Online, vedere [Connettersi a PowerShell per Exchange Online](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell). Per connettersi a PowerShell di EOP autonomo, vedere [Connettersi a PowerShell di Exchange Online Protection](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
+- Per informazioni su come connettersi a PowerShell per Exchange Online, vedere [Connettersi a PowerShell per Exchange Online](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell). Per connettersi a PowerShell di EOP autonomo, vedere [Connettersi a PowerShell per Exchange Online Protection](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
 - Per poter eseguire le procedure contenute in questo articolo è necessario disporre delle autorizzazioni appropriate nel Centro sicurezza e conformità:
   - Per aggiungere, modificare ed eliminare criteri di protezione dalla posta indesiderata, è necessario essere membri dei gruppi di ruoli **Gestione organizzazione** o **Amministratore della sicurezza**.
@@ -70,9 +70,9 @@ Per aumentare l'efficacia del filtro della posta indesiderata, è possibile crea
   **Note**:
 
   - L'aggiunta di utenti al ruolo di Azure Active Directory corrispondente nell'interfaccia di amministrazione di Microsoft 365 fornisce agli utenti le autorizzazioni necessarie nel centro Sicurezza e conformità _e_ le autorizzazioni per altre funzionalità di Microsoft 365. Per altre informazioni, vedere [Informazioni sui ruoli di amministratore](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
-  - Anche il gruppo di ruoli **Gestione organizzazione sola visualizzazione** in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) offre l'accesso di sola lettura alla funzionalità.
+  - Anche il gruppo di ruoli di **Gestione organizzazione sola visualizzazione** in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) offre inoltre l'accesso di sola lettura a tale funzionalità.
 
-- Per le impostazioni consigliate per i criteri contro la posta indesiderata, vedere [Impostazioni dei criteri di protezione da posta indesiderata di EOP](recommended-settings-for-eop-and-office365-atp.md#eop-anti-spam-policy-settings).
+- Per le impostazioni consigliate per i criteri contro la posta indesiderata, vedere [Impostazioni dei criteri di protezione dalla posta indesiderata di EOP](recommended-settings-for-eop-and-office365-atp.md#eop-anti-spam-policy-settings).
 
 ## <a name="use-the-security--compliance-center-to-create-anti-spam-policies"></a>Utilizzare il Centro sicurezza e conformità per creare criteri di protezione dalla posta indesiderata
 
@@ -107,7 +107,7 @@ La creazione di un criterio di protezione dalla posta indesiderata nel Centro si
 
      ****
 
-     |Azione|Posta indesiderata|Fortemente<br/>confidenziale<br/>posta indesiderata|Phishing<br/>e-mail|Fortemente<br/>confidenziale<br/>phishing<br/>e-mail|Invio in blocco<br/>e-mail|
+     |Azione|Posta indesiderata|Fortemente<br>confidenziale<br>posta indesiderata|Phishing<br>e-mail|Fortemente<br>confidenziale<br>phishing<br>e-mail|Invio in blocco<br>e-mail|
      |---|:---:|:---:|:---:|:---:|:---:|
      |**Spostare un messaggio nella cartella Posta indesiderata**: il messaggio viene recapitato nella cassetta postale e spostato nella cartella Posta indesiderata.<sup>1</sup>|![Segno di spunta](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Segno di spunta](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Segno di spunta](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Segno di spunta](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Segno di spunta](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
      |**Aggiungi X-Header**: aggiunge un X-Header all'intestazione del messaggio e recapita il messaggio nella cassetta postale. <p> Immettere il nome del campo X-Header (non il valore) successivamente nella casella **Aggiungi testo X-Header**. <p> Per i verdetti **Posta indesiderata** e **Posta indesiderata con alta confidenza**, il messaggio viene spostato nella cartella Posta indesiderata.<sup>1,2</sup>|![Segno di spunta](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Segno di spunta](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Segno di spunta](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||![Segno di spunta](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
@@ -124,7 +124,7 @@ La creazione di un criterio di protezione dalla posta indesiderata nel Centro si
      >
      > <sup>2</sup> È possibile usare questo valore come condizione nelle regole del flusso di posta per filtrare o instradare il messaggio.
 
-   - **Selezionare la soglia**: specifica il livello di reclamo in blocco di un messaggio che attiva l'azione specificata per il verdetto di filtro della posta indesiderata **Posta elettronica inviata in blocco** (maggiore del valore specificato, non maggiore di o uguale a). Un valore alto indica che il messaggio è meno opportuno (probabilmente un messaggio di posta indesiderata). Il valore predefinito è 7. Per altre informazioni, vedere [Livello di reclamo in blocco in EOP](bulk-complaint-level-values.md) e [Qual è la differenza tra posta indesiderata e posta inviata in massa?](what-s-the-difference-between-junk-email-and-bulk-email.md).
+   - **Selezionare la soglia**: specifica il livello di reclamo in blocco di un messaggio che attiva l'azione specificata per il verdetto filtro posta indesiderata **Posta elettronica inviata in massa** (maggiore del valore specificato, non maggiore di o uguale a). Un valore alto indica che il messaggio è meno opportuno (probabilmente un messaggio di posta indesiderata). Il valore predefinito è 7. Per altre informazioni, vedere [Livello di reclamo in blocco in EOP](bulk-complaint-level-values.md) e [Qual è la differenza tra posta indesiderata e posta inviata in massa?](what-s-the-difference-between-junk-email-and-bulk-email.md).
 
      Per impostazione predefinita, l'impostazione solo PowerShell _MarkAsSpamBulkMail_ è `On` nei criteri di protezione dalla posta indesiderata. Questa impostazione influisce molto sui risultati di un verdetto filtro **Posta elettronica inviata in massa**:
 
@@ -154,7 +154,7 @@ La creazione di un criterio di protezione dalla posta indesiderata nel Centro si
 
    Impostazioni **Zero-Hour Auto Purge**: ZAP rileva ed esegue operazioni sui messaggi già recapitati nelle cassette di posta di Exchange Online. Per altre informazioni su Zero-Hour Auto Purge vedere [Zero-Hour Auto Purge: protezione contro la posta indesiderata e il malware](zero-hour-auto-purge.md).
 
-   - **ZAP della posta indesiderata**: per impostazione predefinita, la funzionalità ZAP è abilitata per il rilevamento della posta indesiderata, tuttavia è possibile disabilitarla deselezionando la casella di controllo **Attivo**.
+   - **ZAP della posta indesiderata**: per impostazione predefinita, ZAP è abilitato per il rilevamento della posta indesiderata, ma è possibile disabilitarlo deselezionando la casella di controllo **Attivo**.
 
    - **ZAP del phishing**: per impostazione predefinita, ZAP è abilitata per il rilevamento del phishing, tuttavia è possibile disabilitarla deselezionando la casella di controllo **Attivo**.
 

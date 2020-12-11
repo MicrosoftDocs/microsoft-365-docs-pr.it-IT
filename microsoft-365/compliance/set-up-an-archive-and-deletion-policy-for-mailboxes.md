@@ -21,12 +21,12 @@ search.appverid:
 ms.assetid: ec3587e4-7b4a-40fb-8fb8-8aa05aeae2ce
 ms.custom: seo-marvel-apr2020
 description: Informazioni su come creare un criterio di archiviazione ed eliminazione in Microsoft 365 che sposta automaticamente gli elementi nella cassetta postale di archiviazione di un utente.
-ms.openlocfilehash: 7bbd4a2f4a5b9c35695b5e0630020a0f39224324
-ms.sourcegitcommit: f941495e9257a0013b4a6a099b66c649e24ce8a1
+ms.openlocfilehash: 5e8675c1cc6e1df4c22e55648e1655798bae5e5b
+ms.sourcegitcommit: 21b0ea5715e20b4ab13719eb18c97fadb49b563d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "48993366"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49624778"
 ---
 # <a name="set-up-an-archive-and-deletion-policy-for-mailboxes-in-your-organization"></a>Configurare criteri di archiviazione ed eliminazione per le cassette postali in un'organizzazione
 
@@ -67,7 +67,7 @@ Il primo passaggio consiste nell'abilitare la cassetta postale di archiviazione 
 
 2. Accedere utilizzando l'account di amministratore globale.
     
-3. Nel centro sicurezza & conformità, accedere a archivio **informazioni sulla governance** \> **Archive**.
+3. Nel centro sicurezza & conformità, accedere a archivio **informazioni sulla governance** \> .
 
     Viene visualizzato un elenco delle cassette postali nell'organizzazione e se la corrispondente cassetta postale di archiviazione è abilitata o disabilitata.
 
@@ -76,7 +76,7 @@ Il primo passaggio consiste nell'abilitare la cassetta postale di archiviazione 
     > [!TIP]
     > In questo passaggio si presuppone che non siano abilitate le cassette postali di archiviazione. Se si dispone di cassette postali con l'archivio abilitato, tenere premuto il tasto **CTRL** e fare clic su ogni cassetta postale che dispone di una cassetta postale di archiviazione disabilitata. In alternativa, è possibile fare clic sull'intestazione di colonna **cassetta postale di archiviazione** per ordinare le righe in base al fatto che la cassetta postale di archiviazione sia abilitata o disabilitata per semplificare la selezione delle cassette postali.
   
-5. Nel riquadro dei dettagli, in **modifica in blocco** , fare clic su **Abilita**.
+5. Nel riquadro dei dettagli, in **modifica in blocco**, fare clic su **Abilita**.
 
     Viene visualizzato un messaggio di avviso in cui viene indicato che gli elementi più vecchi di due anni verranno spostati nella nuova cassetta postale di archiviazione. Ciò è dovuto al fatto che i criteri di conservazione predefiniti a cui viene assegnata una nuova cassetta postale utente quando viene creata dispongono di un tag di criteri di archiviazione predefinito che ha un'età di conservazione di 2 anni. Il tag del criterio predefinito di archiviazione personalizzato che verrà creato nel passaggio 2 ha un'età di conservazione di 3 anni. Questo significa che gli elementi che hanno una età di 3 anni verranno spostati nella cassetta postale di archiviazione.
 
@@ -178,7 +178,7 @@ L'ultimo tag di conservazione creato è un tag del criterio di conservazione (RP
 
 Dopo aver creato i tag di conservazione personalizzati, il passaggio successivo consiste nel creare un nuovo criterio di conservazione e aggiungere i tag di conservazione. Verranno aggiunti i tre tag di conservazione personalizzati creati nel passaggio 2 e i tag incorporati che sono stati citati nella prima sezione. Nel passaggio 4, è possibile assegnare questo nuovo criterio di conservazione alle cassette postali degli utenti.
   
-1. Nell'interfaccia di amministrazione di Exchange, andare a criteri di conservazione di **Compliance Management**  >  **Retention policies**.
+1. Nell'interfaccia di amministrazione di Exchange, andare a criteri di conservazione di **Compliance Management**  >  .
 
 2. Nella pagina **criteri di conservazione** fare clic su **nuova** ![ icona nuova ](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) .
 
@@ -207,15 +207,15 @@ Dopo aver creato i tag di conservazione personalizzati, il passaggio successivo 
 
 Quando viene creata una nuova cassetta postale, per impostazione predefinita viene assegnato un criterio di conservazione denominato criterio di gestione record di messaggistica predefinito. In questo passaggio, si sostituirà questo criterio di conservazione, in quanto una cassetta postale può disporre di un solo criterio di conservazione assegnato, assegnando il nuovo criterio di conservazione creato nel passaggio 3 alle cassette postali utente nell'organizzazione. In questo passaggio si presuppone che il nuovo criterio venga assegnato a tutte le cassette postali dell'organizzazione.
   
-1. Nell'interfaccia di amministrazione di Exchange **Recipients** , accedere alle  >  **cassette postali** dei destinatari.
+1. Nell'interfaccia di amministrazione di Exchange , accedere alle  >  **cassette postali** dei destinatari.
 
     Viene visualizzato un elenco di tutte le cassette postali utente nell'organizzazione.
 
 2. Seleziona tutte le cassette postali facendo clic sul primo nell'elenco, tenendo premuto il tasto **MAIUSC** e facendo clic sull'ultimo nell'elenco. 
 
-3. Nel riquadro dei dettagli a destra dell'interfaccia di amministrazione di Exchange, in **modifica in blocco** , fare clic su **altre opzioni**.
+3. Nel riquadro dei dettagli a destra dell'interfaccia di amministrazione di Exchange, in **modifica in blocco**, fare clic su **altre opzioni**.
 
-4. In **Criterio di conservazione** , fare clic su **Aggiorna**.
+4. In **Criterio di conservazione**, fare clic su **Aggiorna**.
 
 5. Nell'elenco a discesa **selezionare** il criterio di conservazione della pagina **Assegna criteri** di conservazione in blocco selezionare i criteri di conservazione creati nel passaggio 3. ad esempio, i **criteri di conservazione e archiviazione delle case alpine**.
 
@@ -252,7 +252,7 @@ Di seguito sono riportati i passaggi per connettersi a Exchange Online PowerShel
 È tutto. È stato configurato un criterio di archiviazione e eliminazione per l'organizzazione della casa alpina.
 
 > [!NOTE]
-> Come indicato in precedenza, l'Assistente cartelle gestite elabora le cassette postali almeno una volta ogni 7 giorni. È quindi possibile che una cassetta postale possa essere elaborata in modo più frequente dall'Assistente cartelle gestite. Inoltre, gli amministratori non possono prevedere la prossima volta che una cassetta postale viene elaborata dall'Assistente cartelle gestite, che è uno dei motivi per cui potrebbe essere necessario eseguirla manualmente. Tuttavia, se si desidera impedire temporaneamente all'Assistente cartelle gestite di applicare le nuove impostazioni di conservazione a una cassetta postale, è possibile eseguire il `Set-Mailbox -ElcProcessingDisabled $true` comando per disabilitare temporaneamente l'Assistente cartelle gestite dall'elaborazione di una cassetta postale. Per abilitare di nuovo l'Assistente cartelle gestite per una cassetta postale, eseguire il `Set-Mailbox -ElcProcessingDisabled $false` comando.
+> Come indicato in precedenza, l'Assistente cartelle gestite elabora le cassette postali almeno una volta ogni 7 giorni. È quindi possibile che una cassetta postale possa essere elaborata in modo più frequente dall'Assistente cartelle gestite. Inoltre, gli amministratori non possono prevedere la prossima volta che una cassetta postale viene elaborata dall'Assistente cartelle gestite, che è uno dei motivi per cui potrebbe essere necessario eseguirla manualmente. Tuttavia, se si desidera impedire temporaneamente all'Assistente cartelle gestite di applicare le nuove impostazioni di conservazione a una cassetta postale, è possibile eseguire il `Set-Mailbox -ElcProcessingDisabled $true` comando per disabilitare temporaneamente l'Assistente cartelle gestite dall'elaborazione di una cassetta postale. Per abilitare di nuovo l'Assistente cartelle gestite per una cassetta postale, eseguire il `Set-Mailbox -ElcProcessingDisabled $false` comando. Infine, se un utente di cassette postali dispone di un account disattivato, non verrà elaborata l'azione Sposta elementi in archivio per tale cassetta postale.
   
 ## <a name="optional-step-6-make-the-new-retention-policy-the-default-for-your-organization"></a>Optional Passaggio 6: rendere il nuovo criterio di conservazione il valore predefinito per l'organizzazione
 
@@ -268,7 +268,7 @@ Nel passaggio 4, è necessario assegnare il nuovo criterio di conservazione alle
 
     Tenere presente il piano della cassetta postale impostato come predefinito.
 
-3. Eseguire il seguente comando per assegnare il nuovo criterio di conservazione creato nel passaggio 3, ad esempio il **criterio di conservazione e archiviazione delle case alpine** , nel piano della cassetta postale predefinito. In questo esempio si presuppone che il nome del piano della cassetta postale predefinito sia **ExchangeOnlineEnterprise**.
+3. Eseguire il seguente comando per assegnare il nuovo criterio di conservazione creato nel passaggio 3, ad esempio il **criterio di conservazione e archiviazione delle case alpine**, nel piano della cassetta postale predefinito. In questo esempio si presuppone che il nome del piano della cassetta postale predefinito sia **ExchangeOnlineEnterprise**.
 
     ```powershell
     Set-MailboxPlan "ExchangeOnlineEnterprise" -RetentionPolicy "Alpine House Archive and Retention Policy"
@@ -276,7 +276,7 @@ Nel passaggio 4, è necessario assegnare il nuovo criterio di conservazione alle
 
 4. È possibile rieseguire il comando riportato nel passaggio 2 per verificare che il criterio di conservazione assegnato al piano della cassetta postale predefinito sia stato modificato.
 
-## <a name="more-information"></a>Altre informazioni
+## <a name="more-information"></a>Ulteriori informazioni
 
 - Come viene calcolato il periodo di validità della conservazione? L'età di conservazione degli elementi della cassetta postale viene calcolata a partire dalla data di recapito o dalla data di creazione per gli elementi, ad esempio i messaggi Draft che non sono stati inviati ma che sono stati creati dall'utente. Quando Assistente cartelle gestite elabora gli elementi in una cassetta postale, applica una data di inizio e una data di scadenza a tutti gli elementi con tag di conservazione utilizzando l'azione di conservazione Elimina e consenti ripristino o Elimina definitivamente. Gli elementi con un tag di archiviazione vengono contrassegnati con una data di spostamento. 
 

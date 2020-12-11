@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Gli amministratori possono configurare un connettore di dati per importare e archiviare i dati dallo strumento di posta elettronica del messaggio Bloomberg in Microsoft 365. In questo modo è possibile archiviare i dati provenienti da origini dati di terze parti in Microsoft 365 per poter utilizzare le funzionalità di conformità, come la conservazione legale, la ricerca di contenuto e i criteri di ritenzione per gestire i dati di terze parti dell'organizzazione.
-ms.openlocfilehash: 8cb5575c4565153f2819e745fedc9608963299e4
-ms.sourcegitcommit: ae3aa7f29be16d08950cf23cad489bc069aa8617
+ms.openlocfilehash: 0f08c4ff43cd868b95b965673cfbdd3308ed801f
+ms.sourcegitcommit: 6fc6aaa2b7610e148f41018abd229e3c55b2f3d0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48408954"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49620062"
 ---
 # <a name="set-up-a-connector-to-archive-bloomberg-message-data"></a>Configurare un connettore per archiviare i dati dei messaggi di Bloomberg
 
@@ -41,11 +41,9 @@ Nella panoramica seguente viene illustrato il processo di utilizzo di un connett
 
    Il connettore esegue questa operazione utilizzando il valore della proprietà CorporateEmailAddress. Ogni messaggio di posta elettronica contiene questa proprietà, che viene popolata con l'indirizzo di posta elettronica di ogni partecipante del messaggio di posta elettronica. Oltre a eseguire il mapping automatico degli utenti utilizzando il valore della proprietà *CorporateEmailAddress* , è anche possibile definire un mapping personalizzato caricando un file di mapping CSV. Questo file di mapping contiene un UUID di Bloomberg e l'indirizzo della cassetta postale di Microsoft 365 corrispondente per ogni utente dell'organizzazione. Se si Abilita il mapping automatico degli utenti e si fornisce un mapping personalizzato, per ogni elemento di posta elettronica il connettore osserverà per la prima volta il file di mapping personalizzato. Se non trova un utente valido di Microsoft 365 che corrisponde all'UUID di Bloomberg di un utente, il connettore utilizza la proprietà *CorporateEmailAddress* dell'elemento di posta elettronica. Se il connettore non trova un utente valido di Microsoft 365 nel file di mapping personalizzato o nella proprietà *CorporateEmailAddress* dell'elemento di posta elettronica, l'elemento non verrà importato.
 
-## <a name="before-you-begin"></a>Prima di iniziare
+## <a name="before-you-begin"></a>Informazioni preliminari
 
 Alcuni dei passaggi di implementazione necessari per archiviare i dati dei messaggi di Bloomberg sono esterni a Microsoft 365 e devono essere completati prima di poter creare il connettore nel centro conformità.
-
-- L'organizzazione deve autorizzare il servizio di importazione di Office 365 per accedere ai dati delle cassette postali nell'organizzazione. Per acconsentire a questa richiesta, accedere a [Questa pagina](https://login.microsoftonline.com/common/oauth2/authorize?client_id=570d0bec-d001-4c4e-985e-3ab17fdc3073&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent), accedere con le credenziali di un amministratore globale di Office 365 e quindi accettare la richiesta. È necessario completare questo passaggio prima di poter creare correttamente il connettore del messaggio Bloomberg nel passaggio 3.
 
 - Eseguire la sottoscrizione a [Bloomberg Anywhere](https://www.bloomberg.com/professional/product/remote-access/?bbgsum-page=DG-WS-PROF-PROD-BBA). Questa operazione è necessaria per consentire l'accesso a Bloomberg Anywhere per accedere al sito Bloomberg SFTP che è necessario impostare e configurare.
 
@@ -79,13 +77,13 @@ Il primo passaggio consiste nell'ottenere una copia delle chiavi pubbliche per S
 
 1. Andare a [ https://compliance.microsoft.com\ ] ( https://compliance.microsoft.com) e fare clic su **connettori dati** nel NAV sinistro.
 
-2. Nella pagina **connettori dati** sotto **messaggio Bloomberg**fare clic su **Visualizza**.
+2. Nella pagina **connettori dati** sotto **messaggio Bloomberg** fare clic su **Visualizza**.
 
 3. Nella pagina Descrizione del prodotto del **messaggio Bloomberg** fare clic su **Aggiungi connettore**
 
 4. Nella pagina **condizioni del servizio** fare clic su **Accetto**.
 
-5. Nel **sito Add credentials for Bloomberg SFTP** al passaggio 1, fare clic sul pulsante **Scarica SSH Key**, **scaricare PGP Key**e scaricare i collegamenti agli **indirizzi IP** per salvare una copia di ogni file nel computer locale. Questi file contengono gli elementi seguenti che vengono utilizzati per configurare il sito Bloomberg SFTP nel passaggio 2:
+5. Nel **sito Add credentials for Bloomberg SFTP** al passaggio 1, fare clic sul pulsante **Scarica SSH Key**, **scaricare PGP Key** e scaricare i collegamenti agli **indirizzi IP** per salvare una copia di ogni file nel computer locale. Questi file contengono gli elementi seguenti che vengono utilizzati per configurare il sito Bloomberg SFTP nel passaggio 2:
 
    - Chiave pubblica SSH: questa chiave viene utilizzata per configurare Secure Shell (SSH) per abilitare un account di accesso remoto sicuro quando il connettore si connette al sito Bloomberg SFTP.
 
@@ -111,7 +109,7 @@ L'ultimo passaggio consiste nel creare un connettore di messaggi Bloomberg nel c
 
 1. Andare a [https://compliance.microsoft.com](https://compliance.microsoft.com) e fare clic su **connettori dati** nel NAV sinistro.
 
-2. Nella pagina **connettori dati** sotto **messaggio Bloomberg**fare clic su **Visualizza**.
+2. Nella pagina **connettori dati** sotto **messaggio Bloomberg** fare clic su **Visualizza**.
 
 3. Nella pagina Descrizione del prodotto del **messaggio Bloomberg** fare clic su **Aggiungi connettore**
 

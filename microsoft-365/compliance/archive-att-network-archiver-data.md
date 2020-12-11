@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Gli amministratori possono configurare un connettore di invio di messaggi per importare e archiviare i dati di SMS e MMS dalla rete su&T Mobile. In questo modo è possibile archiviare i dati provenienti da origini dati di terze parti in Microsoft 365 per poter utilizzare le funzionalità di conformità, come la conservazione legale, la ricerca di contenuto e i criteri di ritenzione per gestire i dati di terze parti dell'organizzazione.
-ms.openlocfilehash: 253acb23e9ac2cd5d97dfd2aaaedecec3d91a91f
-ms.sourcegitcommit: ae3aa7f29be16d08950cf23cad489bc069aa8617
+ms.openlocfilehash: ba728a690db4d4c31158ad68fc853c29218226cc
+ms.sourcegitcommit: 6fc6aaa2b7610e148f41018abd229e3c55b2f3d0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48408974"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49620122"
 ---
 # <a name="set-up-a-connector-to-archive-att-smsmms-data"></a>Configurare un connettore per l'archiviazione in&dati SMS/MMS di T
 
@@ -41,7 +41,7 @@ Nella panoramica seguente viene illustrato il processo di utilizzo di un connett
  
    Oltre a eseguire il mapping automatico degli utenti utilizzando il valore della proprietà dell' *indirizzo di posta elettronica dell'utente* , è anche possibile definire un mapping personalizzato caricando un file di mapping CSV. Questo file di mapping contiene il numero di cellulare e l'indirizzo di posta elettronica Microsoft 365 corrispondente per gli utenti dell'organizzazione. Se si abilitano sia il mapping degli utenti automatici che il mapping personalizzato, per ogni elemento di posta elettronica, il connettore cerca innanzitutto il file di mapping personalizzato. Se non è disponibile un utente valido di Microsoft 365 che corrisponde a un numero di telefono cellulare, il connettore utilizza i valori della proprietà dell'indirizzo di posta elettronica dell'elemento che sta tentando di importare. Se il connettore non trova un utente valido di Microsoft 365 nel file di mapping personalizzato o nella proprietà dell'indirizzo di posta elettronica dell'elemento di posta elettronica, l'elemento non verrà importato.
 
-## <a name="before-you-begin"></a>Prima di iniziare
+## <a name="before-you-begin"></a>Informazioni preliminari
 
 Alcuni dei passaggi di implementazione necessari per archiviare i dati di rete di&T sono esterni a Microsoft 365 e devono essere completati prima di poter creare il connettore nel centro conformità.
 
@@ -52,8 +52,6 @@ Alcuni dei passaggi di implementazione necessari per archiviare i dati di rete d
 - Registrare tutti gli utenti che richiedono&T SMS/MMS Network Archiving nell'account TeleMessage. Quando si registrano gli utenti, assicurarsi di utilizzare lo stesso indirizzo di posta elettronica utilizzato per il proprio account Microsoft 365.
 
 - I dipendenti devono disporre di telefoni cellulari di proprietà aziendale e responsabili della società sulla rete mobile di&T. L'archiviazione dei messaggi in Microsoft 365 non è disponibile per i dispositivi di proprietà dei dipendenti o "Bring Your Own Devices (BYOD).
-
-- L'organizzazione deve autorizzare il servizio di importazione di Office 365 per accedere ai dati delle cassette postali nell'organizzazione. Sarà necessario fornire questo consenso quando si crea il connettore. Per acconsentire a questa richiesta, accedere a [Questa pagina](https://login.microsoftonline.com/common/oauth2/authorize?client_id=570d0bec-d001-4c4e-985e-3ab17fdc3073&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent), accedere con le credenziali di Microsoft 365 Global Admin e quindi accettare la richiesta. È necessario completare questo passaggio prima di poter creare correttamente un connettore di rete di&T.
 
 - All'utente che crea un connettore di rete a&T deve essere assegnato il ruolo di importazione/esportazione delle cassette postali in Exchange Online. Questa operazione è necessaria per aggiungere connettori nella pagina **connettori dati** del centro conformità di Microsoft 365. Per impostazione predefinita, questo ruolo non è assegnato ad alcun gruppo di ruoli in Exchange Online. È possibile aggiungere il ruolo import export delle cassette postali al gruppo di ruoli Gestione organizzazione in Exchange Online. In alternativa, è possibile creare un gruppo di ruoli, assegnare il ruolo di esportazione delle cassette postali e quindi aggiungere gli utenti corretti come membri. Per ulteriori informazioni, vedere la sezione creare gruppi di [ruoli](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#create-role-groups) o [modificare gruppi di ruoli](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups) nell'articolo "gestire i gruppi di ruoli in Exchange Online".
 
@@ -77,13 +75,9 @@ Dopo aver completato i prerequisiti descritti nella sezione precedente, è possi
 
 6. Nella pagina **mapping utenti** abilitare il mapping automatico degli utenti. Per abilitare il mapping personalizzato, caricare un file CSV che contiene le informazioni di mapping degli utenti e quindi fare clic su **Avanti**.
 
-7. Fornire il consenso dell'amministratore e quindi fare clic su **Avanti**.
+7. Esaminare le impostazioni e quindi fare clic su **fine** per creare il connettore.
 
-   Per fornire il consenso dell'amministratore, è necessario essere connessi con le credenziali di un amministratore globale di Office 365 e quindi accettare la richiesta di consenso. Se non è stato eseguito l'accesso come amministratore globale, è possibile accedere a [Questa pagina](https://login.microsoftonline.com/common/oauth2/authorize?client_id=570d0bec-d001-4c4e-985e-3ab17fdc3073&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent) ed eseguire l'accesso con le credenziali di amministratore globale per accettare la richiesta. 
-
-8. Esaminare le impostazioni e quindi fare clic su **fine** per creare il connettore.
-
-9. Passare alla scheda **connettori** della pagina **connettori dati** del centro conformità per visualizzare lo stato di avanzamento del processo di importazione per il nuovo connettore.
+8. Passare alla scheda **connettori** della pagina **connettori dati** del centro conformità per visualizzare lo stato di avanzamento del processo di importazione per il nuovo connettore.
 
 ## <a name="known-issues"></a>Problemi noti
 

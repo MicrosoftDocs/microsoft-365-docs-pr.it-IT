@@ -15,12 +15,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: Gli amministratori possono configurare un connettore nativo per importare e archiviare i dati di Twitter in Microsoft 365. Dopo aver importato i dati in Microsoft 365, è possibile utilizzare le funzionalità di conformità, ad esempio il blocco legale, la ricerca di contenuto e i criteri di conservazione per gestire la governance dei dati di Twitter dell'organizzazione.
-ms.openlocfilehash: 01c4901544e47cd1c361a132e144440f00bd8504
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 0dd996802964b2a2fc58d26e23af57193c89ee8c
+ms.sourcegitcommit: 6fc6aaa2b7610e148f41018abd229e3c55b2f3d0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48200829"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49619912"
 ---
 # <a name="deploy-a-connector-to-archive-twitter-data"></a>Distribuire un connettore per archiviare i dati di Twitter
 
@@ -96,7 +96,7 @@ Questo articolo contiene il processo dettagliato per la distribuzione di un conn
    
    ![Vai alla pagina delle app per creare un'app](../media/TCimage26.png)
 
-3. In **Dettagli app**aggiungere informazioni sull'applicazione.
+3. In **Dettagli app** aggiungere informazioni sull'applicazione.
 
    ![Immettere informazioni sull'app](../media/TCimage27.png)
 
@@ -122,7 +122,7 @@ Questo articolo contiene il processo dettagliato per la distribuzione di un conn
 
    - Seleziona la casella di controllo per consentire all'app del connettore di accedere a Twitter.
    
-   - Aggiungere l'URI di reindirizzamento OAuth utilizzando il formato seguente: ** \<connectorserviceuri> /views/TwitterOAuth**, in cui il valore di *connectorserviceuri* è l'URL del servizio app di Azure per l'organizzazione, ad esempio https://twitterconnector.azurewebsites.net/Views/TwitterOAuth .
+   - Aggiungere l'URI di reindirizzamento OAuth utilizzando il formato seguente: **\<connectorserviceuri> /views/TwitterOAuth**, in cui il valore di *connectorserviceuri* è l'URL del servizio app di Azure per l'organizzazione, ad esempio https://twitterconnector.azurewebsites.net/Views/TwitterOAuth .
 
     ![Consenti all'app del connettore di accedere a Twitter e aggiungere l'URI di reindirizzamento OAuth](../media/TCimage32.png)
 
@@ -198,8 +198,6 @@ L'app per sviluppatori di Twitter è ora pronta per essere utilizzata.
 
 12. Nella pagina **Scegli percorso di archiviazione** Digitare l'indirizzo di posta elettronica della cassetta postale di Microsoft 365 in cui verranno importati gli elementi di Twitter e quindi fare clic su **Avanti**.
 
-13. Sul **consenso amministratore**, fare clic su **Fornisci consenso** e quindi eseguire la procedura. È necessario essere un amministratore globale per fornire il consenso per il servizio di importazione di Office 365 per accedere ai dati nell'organizzazione.
+13. Fare clic su **Avanti** per esaminare le impostazioni del connettore e quindi fare clic su **fine** per completare la configurazione del connettore.
 
-14. Fare clic su **Avanti** per esaminare le impostazioni del connettore e quindi fare clic su **fine** per completare la configurazione del connettore.
-
-15. Nel centro conformità, andare alla pagina **connettori dati** e fare clic sulla scheda **connettori** per visualizzare lo stato di avanzamento del processo di importazione.
+14. Nel centro conformità, andare alla pagina **connettori dati** e fare clic sulla scheda **connettori** per visualizzare lo stato di avanzamento del processo di importazione.
