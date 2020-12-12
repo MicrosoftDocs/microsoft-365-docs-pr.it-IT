@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Gli amministratori possono ottenere informazioni su come configurare il filtro connessioni in Exchange Online Protection (EOP) per consentire o bloccare i messaggi di posta elettronica dai server.
-ms.openlocfilehash: a2a755516f029f5d72016e9ea8fcb87a997d5065
-ms.sourcegitcommit: d81c7cea85af6ad5fef81d3c930514a51464368c
+ms.openlocfilehash: 844b1d8d17a99bbb0c441be511c64a009b8dafcb
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "49572826"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49659814"
 ---
 # <a name="configure-connection-filtering"></a>Configurare il filtro connessioni
 
@@ -32,7 +32,7 @@ ms.locfileid: "49572826"
 
 Se si è un cliente Microsoft 365 con cassette postali in Exchange Online o un cliente di Exchange Online Protection (EOP) autonomo senza cassette postali di Exchange Online, è possibile utilizzare il filtro connessioni in EOP (in particolare, il criterio del filtro di connessione predefinito) per identificare i server di posta elettronica di origine buoni o difettosi tramite gli indirizzi IP. I componenti principali del criterio di filtro di connessione predefinito sono:
 
-- **Elenco indirizzi IP consentiti**: ignorare il filtro della posta indesiderata per tutti i messaggi in arrivo dai server di posta elettronica di origine specificati in base all'indirizzo IP o all'intervallo. Per gli scenari in cui il filtro di posta indesiderata può ancora verificarsi nei messaggi provenienti da queste origini, vedere gli [scenari in cui i messaggi provenienti da origini nell'elenco indirizzi IP consentiti sono ancora filtrati](#scenarios-where-messages-from-sources-in-the-ip-allow-list-are-still-filtered) in questo argomento Per ulteriori informazioni sul modo in cui l'elenco indirizzi IP consentiti dovrebbe adattarsi alla strategia globale dei mittenti attendibili, vedere [creare elenchi di mittenti attendibili in EOP](create-safe-sender-lists-in-office-365.md).
+- **Elenco indirizzi IP consentiti**: ignorare il filtro della posta indesiderata per tutti i messaggi in arrivo dai server di posta elettronica di origine specificati in base all'indirizzo IP o all'intervallo. Per gli scenari in cui il filtro di posta indesiderata può ancora verificarsi nei messaggi provenienti da queste origini, vedere gli [scenari in cui i messaggi provenienti da origini nell'elenco indirizzi IP consentiti sono ancora filtrati](#scenarios-where-messages-from-sources-in-the-ip-allow-list-are-still-filtered) in questo articolo Per ulteriori informazioni sul modo in cui l'elenco indirizzi IP consentiti dovrebbe adattarsi alla strategia globale dei mittenti attendibili, vedere [creare elenchi di mittenti attendibili in EOP](create-safe-sender-lists-in-office-365.md).
 
 - **Elenco indirizzi IP bloccati**: bloccare tutti i messaggi in ingresso dai server di posta elettronica di origine specificati in base all'indirizzo IP o all'intervallo di indirizzo IP. I messaggi in arrivo vengono rifiutati, non vengono contrassegnati come posta indesiderata e non si verifica alcun filtro aggiuntivo. Per ulteriori informazioni sul modo in cui l'elenco indirizzi IP bloccati dovrebbe adattarsi alla strategia complessiva dei mittenti bloccati, vedere [create Block sender lists in EOP](create-block-sender-lists-in-office-365.md).
 
@@ -43,13 +43,13 @@ In questo argomento viene descritto come configurare i criteri di filtro delle c
 > [!NOTE]
 > L'elenco indirizzi IP consentiti, l'elenco sicuro e l'elenco indirizzi IP bloccati sono una parte della strategia complessiva per consentire o bloccare la posta elettronica all'interno dell'organizzazione. Per ulteriori informazioni, vedere [creare elenchi di mittenti attendibili](create-safe-sender-lists-in-office-365.md) e [creare elenchi di mittenti bloccati](create-block-sender-lists-in-office-365.md).
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare
+## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare?
 
 - Aprire il Centro sicurezza e conformità in <https://protection.office.com/>. Per passare direttamente alla pagina **Impostazioni di filtro della posta indesiderata**, usare <https://protection.office.com/antispam>.
 
 - Per informazioni su come connettersi a PowerShell per Exchange Online, vedere [Connettersi a PowerShell per Exchange Online](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell). Per connettersi a PowerShell di EOP autonomo, vedere [Connettersi a PowerShell per Exchange Online Protection](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
-- Prima di poter eseguire le procedure descritte in questo articolo, è necessario disporre delle autorizzazioni per il Centro sicurezza & Compliance:
+- Per poter eseguire le procedure contenute in questo articolo è necessario disporre delle autorizzazioni appropriate nel Centro sicurezza e conformità:
   - Per modificare i criteri di filtro delle connessioni predefiniti, è necessario essere membri dei gruppi di ruoli **Gestione organizzazione** o **amministratore sicurezza** .
   - Per l'accesso in sola lettura ai criteri di filtro delle connessioni predefiniti, è necessario essere membri dei gruppi di ruoli **lettore globale** o lettore di **sicurezza** .
 
@@ -57,8 +57,8 @@ In questo argomento viene descritto come configurare i criteri di filtro delle c
 
   **Note**:
 
-  - L'aggiunta di utenti al ruolo di Azure Active Directory corrispondente nell'interfaccia di amministrazione di Microsoft 365 fornisce agli utenti le autorizzazioni necessarie per il Centro sicurezza & Compliance _e_ le autorizzazioni per altre funzionalità di Microsoft 365. Per altre informazioni, vedere [Informazioni sui ruoli di amministratore](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
-  - Il gruppo di ruoli di **gestione dell'organizzazione di sola visualizzazione** in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) fornisce anche l'accesso in sola lettura alla funzionalità.
+  - L'aggiunta di utenti al ruolo di Azure Active Directory corrispondente nell'interfaccia di amministrazione di Microsoft 365 fornisce agli utenti le autorizzazioni necessarie nel centro Sicurezza e conformità _e_ le autorizzazioni per altre funzionalità di Microsoft 365. Per altre informazioni, vedere [Informazioni sui ruoli di amministratore](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
+  - Anche il gruppo di ruoli di **Gestione organizzazione sola visualizzazione** in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) offre inoltre l'accesso di sola lettura a tale funzionalità.
 
 - Per trovare gli indirizzi IP di origine dei server di posta elettronica che si desidera consentire o bloccare, è possibile controllare il campo di intestazione IP di connessione (**CIP**) nell'intestazione del messaggio. Per visualizzare l'intestazione di un messaggio in vari client di posta elettronica, vedere [visualizzare le intestazioni dei messaggi Internet in Outlook](https://support.microsoft.com/office/cd039382-dc6e-4264-ac74-c048563d212c).
 
@@ -68,7 +68,7 @@ In questo argomento viene descritto come configurare i criteri di filtro delle c
 
 ## <a name="use-the-security--compliance-center-to-modify-the-default-connection-filter-policy"></a>Utilizzare il Centro sicurezza & conformità per modificare il criterio del filtro connessioni predefinito
 
-1. Nel centro sicurezza & conformità e passare a criteri di **gestione** della protezione da \> **Policy** \> **posta indesiderata**.
+1. Nel centro sicurezza & conformità e passare a criteri di **gestione** della protezione da \>  \> **posta indesiderata**.
 
 2. Nella pagina impostazioni di protezione da **posta indesiderata** espandere **criterio filtro connessioni** facendo clic su ![ Espandi icona ](../../media/scc-expand-icon.png) e quindi su **modifica criterio**.
 
@@ -82,7 +82,7 @@ In questo argomento viene descritto come configurare i criteri di filtro delle c
 
      - Intervallo IP: ad esempio, 192.168.0.1-192.168.0.254.
 
-     - IP CIDR: ad esempio, 192.168.0.1/25. I valori validi per la maschera di rete sono/24 through/32. Per ignorare il filtro posta indesiderata per i valori della maschera IP CIDR/1 a/23, vedere il [filtro per ignorare la posta indesiderata per un IP CIDR all'esterno della sezione dell'intervallo disponibile](#skip-spam-filtering-for-a-cidr-ip-outside-of-the-available-range) più avanti in questo argomento.
+     - IP CIDR: ad esempio, 192.168.0.1/25. I valori validi per la maschera di rete sono/24 through/32. Per ignorare il filtro posta indesiderata per i valori della maschera IP CIDR/1 a/23, vedere il [filtro di protezione da posta indesiderata per un IP CIDR all'esterno della sezione dell'intervallo disponibile](#skip-spam-filtering-for-a-cidr-ip-outside-of-the-available-range) più avanti in questo articolo.
 
      Per aggiungere l'indirizzo IP o l'intervallo di indirizzi, fare clic su **Aggiungi** ![ icona ](../../media/ITPro-EAC-AddIcon.png) . Per rimuovere una voce, selezionare la voce in **indirizzo IP consentito** e quindi fare clic su **Rimuovi** ![ Rimuovi ](../../media/scc-remove-icon.png) . Al termine, scegliere **Salva**.
 
@@ -96,7 +96,7 @@ In questo argomento viene descritto come configurare i criteri di filtro delle c
 
 ## <a name="use-the-security--compliance-center-to-view-the-default-connection-filter-policy"></a>Utilizzare il Centro sicurezza & conformità per visualizzare i criteri di filtro delle connessioni predefiniti
 
-1. Nel centro sicurezza & conformità e passare a criteri di **gestione** della protezione da \> **Policy** \> **posta indesiderata**.
+1. Nel centro sicurezza & conformità e passare a criteri di **gestione** della protezione da \>  \> **posta indesiderata**.
 
 2. Nella pagina impostazioni di protezione da **posta indesiderata** fare clic sull'elenco a discesa accanto al criterio predefinito denominato **criterio filtro connessioni**.
 
@@ -144,7 +144,7 @@ Per informazioni dettagliate sulla sintassi e sui parametri, vedere [Set-HostedC
 
 Per verificare la corretta modifica del criterio del filtro di connessione predefinito, eseguire una delle operazioni seguenti:
 
-- Nel centro sicurezza & conformità, accedere a protezione **Threat management** dalla \> **Policy** \> **posta indesiderata** dei criteri di gestione delle minacce \> fare clic sul menu a discesa accanto a **criterio filtro connessioni (sempre** attivato) e verificare le impostazioni.
+- Nel centro sicurezza & conformità, accedere a protezione  dalla \>  \> **posta indesiderata** dei criteri di gestione delle minacce \> fare clic sul menu a discesa accanto a **criterio filtro connessioni (sempre** attivato) e verificare le impostazioni.
 
 - In Exchange Online PowerShell o standalone EOP PowerShell, eseguire il comando riportato di seguito e verificare le impostazioni:
 
@@ -160,13 +160,13 @@ Nelle sezioni seguenti vengono identificati gli elementi aggiuntivi che è neces
 
 ### <a name="skip-spam-filtering-for-a-cidr-ip-outside-of-the-available-range"></a>Ignorare il filtro posta indesiderata per un IP CIDR all'esterno dell'intervallo disponibile
 
-Come descritto in precedenza in questo argomento, è possibile utilizzare solo un IP CIDR con la maschera di rete/24 a/32 nell'elenco indirizzi IP consentiti. Per ignorare il filtro posta indesiderata nei messaggi dai server di posta elettronica di origine nell'intervallo/1 a/23, è necessario utilizzare le regole del flusso di posta di Exchange (note anche come regole di trasporto). Tuttavia, si consiglia di non eseguire questa operazione se possibile, in quanto i messaggi verranno bloccati se un indirizzo IP nell'intervallo IP CIDR/1 to/23 viene visualizzato in uno degli elenchi di blocco di proprietà o di terze parti di Microsoft.
+Come descritto in precedenza in questo articolo, è possibile utilizzare solo un IP CIDR con la maschera di rete/24 a/32 nell'elenco indirizzi IP consentiti. Per ignorare il filtro posta indesiderata nei messaggi dai server di posta elettronica di origine nell'intervallo/1 a/23, è necessario utilizzare le regole del flusso di posta di Exchange (note anche come regole di trasporto). Tuttavia, si consiglia di non eseguire questa operazione se possibile, in quanto i messaggi verranno bloccati se un indirizzo IP nell'intervallo IP CIDR/1 to/23 viene visualizzato in uno degli elenchi di blocco di proprietà o di terze parti di Microsoft.
 
 Ora che si è pienamente consapevoli dei potenziali problemi, è possibile creare una regola del flusso di posta con le seguenti impostazioni (almeno) per garantire che i messaggi provenienti da questi indirizzi IP ignorino il filtro per la posta indesiderata:
 
 - Condizione della regola: **applica questa regola se** \> **l'** \> **indirizzo IP del mittente si trova in uno di questi intervalli o corrisponde esattamente** a \> (immettere l'IP CIDR con una maschera di rete da/1 a/23).
 
-- Azione della regola: **modificare le proprietà del messaggio** \> impostare il filtro di protezione da posta indesiderata bypass **(SCL)** \> **Bypass spam filtering**.
+- Azione della regola: **modificare le proprietà del messaggio** \> impostare il filtro di protezione da posta indesiderata bypass **(SCL)** \> .
 
 È possibile controllare la regola, testare la regola, attivare la regola per un periodo di tempo specifico e altre selezioni. È consigliabile testare la regola per un periodo prima di applicarlo. Per ulteriori informazioni, vedere [gestire le regole del flusso di posta in Exchange Online](https://docs.microsoft.com/Exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules).
 
@@ -198,7 +198,7 @@ Se si verifica uno di questi scenari, è possibile creare una regola del flusso 
 
 - Condizione della regola: **applica questa regola se** \> **l'** \> **indirizzo IP del mittente si trova in uno di questi intervalli o corrisponde esattamente a** quello dell' \> indirizzo IP o degli indirizzi.
 
-- Azione della regola: **modificare le proprietà del messaggio** \> impostare il filtro di protezione da posta indesiderata bypass **(SCL)** \> **Bypass spam filtering**.
+- Azione della regola: **modificare le proprietà del messaggio** \> impostare il filtro di protezione da posta indesiderata bypass **(SCL)** \> .
 
 ## <a name="new-to-microsoft-365"></a>Novità di Microsoft 365?
 

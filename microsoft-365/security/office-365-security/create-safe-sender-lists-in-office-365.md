@@ -16,12 +16,12 @@ ms.assetid: 9721b46d-cbea-4121-be51-542395e6fd21
 ms.custom:
 - seo-marvel-apr2020
 description: Gli amministratori possono ottenere informazioni sulle opzioni disponibili e preferite per consentire i messaggi in ingresso in Exchange Online Protection (EOP).
-ms.openlocfilehash: 71c413cdf3f9a189420c33953d7bce41362ab6a9
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.openlocfilehash: 38f1ab2451191dd63d5738075dbf42f8201a34ca
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49616633"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49659905"
 ---
 # <a name="create-safe-sender-lists-in-eop"></a>Creare elenchi di mittenti attendibili in EOP
 
@@ -47,7 +47,7 @@ Le regole del flusso di posta consentono la massima flessibilità per garantire 
 >
 > - Per consentire a un dominio di inviare messaggi di posta elettronica non autenticati (bypass anti-spoofing) ma non di ignorare i controlli di protezione dalla posta indesiderata e antimalware, è possibile aggiungerlo all' [elenco dei mittenti attendibili di AllowedToSpoof](walkthrough-spoof-intelligence-insight.md)
 >
-> - EOP e Outlook ispezionano diverse proprietà dei messaggi per determinare il mittente del messaggio. Per ulteriori informazioni, vedere la sezione [considerazioni sulla posta elettronica in blocco](#considerations-for-bulk-email) più avanti in questo argomento.
+> - EOP e Outlook ispezionano diverse proprietà dei messaggi per determinare il mittente del messaggio. Per ulteriori informazioni, vedere la sezione [considerazioni sulla posta elettronica in blocco](#considerations-for-bulk-email) più avanti in questo articolo.
 
 Al contrario, sono inoltre disponibili diverse opzioni per bloccare la posta elettronica da origini specifiche tramite _elenchi di mittenti bloccati_. Per altre informazioni, vedere [Creare elenchi di mittenti bloccati in EOP](create-block-sender-lists-in-office-365.md).
 

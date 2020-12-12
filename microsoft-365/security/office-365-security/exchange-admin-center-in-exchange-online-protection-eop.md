@@ -16,12 +16,12 @@ ms.assetid: 97921f0e-832f-40c7-b56d-414faede5191
 ms.collection:
 - M365-security-compliance
 description: Informazioni sull'interfaccia di gestione Web in standalone Exchange Online Protection (EOP).
-ms.openlocfilehash: 732991befa9084b62c152295d10a2bbf94bc36ec
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: fc76ecd6dafcf9453a0c6de14917c96c950f8370
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48202952"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49659667"
 ---
 # <a name="exchange-admin-center-in-standalone-eop"></a>Interfaccia di amministrazione di Exchange Online Protection autonomo
 
@@ -54,7 +54,7 @@ I clienti EOP autonomi possono accedere all'interfaccia di amministrazione di Ex
 
 In questa sezione vengono illustrati gli elementi dell'interfaccia utente disponibili in EAC.
 
-![EOP-AdminCenter](../../media/EOP-AdminCenter.png)
+![Interfaccia di amministrazione di Exchange in Exchange Online Protection](../../media/EOP-AdminCenter.png)
 
 ### <a name="feature-pane"></a>Riquadro delle funzionalità
 
@@ -107,16 +107,12 @@ Quando si seleziona un oggetto dalla visualizzazione elenco, nel riquadro dei de
 
 ### <a name="me-tile-and-help"></a>Riquadro Io e Guida
 
-Il riquadro **Io** consente di disconnettersi da EAC e accedere come altro utente. Dal menu a discesa **Guida**![Icona Guida](../../media/ITPro-EAC-HelpIcon.gif), è possibile eseguire le seguenti operazioni:
+Il riquadro **Io** consente di disconnettersi da EAC e accedere come altro utente. Dal  ![ menu a discesa icona Guida ](../../media/ITPro-EAC-HelpIcon.gif) , è possibile eseguire le operazioni seguenti:
 
 - **Guida**: fare clic su ![ icona Guida ](../../media/ITPro-EAC-HelpIcon.gif) per visualizzare il contenuto della Guida in linea.
-
 - **Commenti e suggerimenti**: lasciare commenti e suggerimenti.
-
 - **Community**: inviare una domanda per trovare risposte nei forum della community.
-
 - **Disattiva la guida del fumetto**: la Guida di bubbling Visualizza la supporto contestuale per i campi quando si crea o si modifica un oggetto. È possibile disabilitare la finestra della Guida o riattivarla se era stata disabilitata.
-
 - **Mostra registrazione comandi**: viene visualizzata una nuova finestra in cui vengono visualizzati i comandi di PowerShell equivalenti in base alle impostazioni configurate in EAC.
 
 ## <a name="supported-browsers"></a>Browser supportati

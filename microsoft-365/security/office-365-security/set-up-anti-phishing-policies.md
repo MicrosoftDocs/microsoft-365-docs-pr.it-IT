@@ -16,12 +16,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Gli amministratori possono ottenere informazioni sui criteri di anti-phishing disponibili in Exchange Online Protection (EOP) e Microsoft Defender per Office 365.
-ms.openlocfilehash: 9d3c8c0bf2b1c440892a1099d3d0812d95027156
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.openlocfilehash: 34c66d8ab39af443462e8c5ac99009b4170be21e
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49615769"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49659857"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Criteri di anti-phishing in Microsoft 365
 
@@ -84,7 +84,7 @@ Le impostazioni dei criteri seguenti sono disponibili nei criteri di anti-phishi
     - **Il dominio del destinatario è**
 
   > [!NOTE]
-  > L'impostazione **applicato a** è obbligatoria nei criteri di anti-phishing personalizzati per identificare i **destinatari** del messaggio <u>a cui si applica il criterio</u>. I criteri di anti-phishing in Microsoft Defender per Office 365 dispongono anche di [impostazioni di rappresentazione](#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) in cui è possibile specificare i singoli indirizzi di posta elettronica del mittente o i domini mittente <u>che riceveranno la protezione della rappresentazione</u> come descritto più avanti in questo argomento.
+  > L'impostazione **applicato a** è obbligatoria nei criteri di anti-phishing personalizzati per identificare i **destinatari** del messaggio <u>a cui si applica il criterio</u>. I criteri di anti-phishing in Microsoft Defender per Office 365 dispongono anche di [impostazioni di rappresentazione](#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) in cui è possibile specificare i singoli indirizzi di posta elettronica del mittente o i domini mittente <u>che riceveranno la protezione della rappresentazione</u> come descritto più avanti in questo articolo.
 
 ## <a name="spoof-settings"></a>Impostazioni di spoofing
 

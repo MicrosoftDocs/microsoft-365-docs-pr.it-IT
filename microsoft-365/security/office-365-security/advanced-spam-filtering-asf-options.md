@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Gli amministratori possono ottenere informazioni sulle impostazioni del filtro di posta indesiderata (Advanced Spam Filter) disponibili nei criteri di protezione da posta indesiderata in Exchange Online Protection (EOP).
-ms.openlocfilehash: 3ac2b45cc03327f47bd73efe54e78312cbda4bb6
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.openlocfilehash: 92d5e58937b539bf2be8d6d2c541f985562b7007
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49615253"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49659619"
 ---
 # <a name="advanced-spam-filter-asf-settings-in-eop"></a>Impostazioni avanzate per il filtro della posta indesiderata in EOP
 
@@ -42,7 +42,7 @@ In tutte le organizzazioni Microsoft 365, le impostazioni dei filtri per la post
 >
 > - La presenza di messaggi filtrati in quarantena.
 >
-> - I `X-CustomSpam:` campi X-header specifici che vengono aggiunti ai messaggi come descritto in questo argomento.
+> - I `X-CustomSpam:` campi X-header specifici che vengono aggiunti ai messaggi come descritto in questo articolo.
 
 Nelle sezioni seguenti vengono descritte le impostazioni e le opzioni ASF disponibili nei criteri di protezione da posta indesiderata nel centro sicurezza & conformità e in Exchange Online PowerShell o standalone EOP PowerShell ([New-HostedContentFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/new-hostedcontentfilterpolicy) e [Set-HostedContentFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/set-hostedcontentfilterpolicy)). Per altre informazioni, vedere [Configurare i criteri di protezione dalla posta indesiderata in EOP](configure-your-spam-filter-policies.md).
 

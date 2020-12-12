@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 description: Informazioni su come creare regole del flusso di posta (regole di trasporto) per identificare i messaggi e impostare il livello di probabilità di posta indesiderata (SCL) dei messaggi in Exchange Online Protection.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 791e6747e1ffa92d54e7d4f4a6c257c3aad4c0d9
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 447333eb968ba7d91a1673c57b11afdb16b90469
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48195856"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49659838"
 ---
 # <a name="use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages-in-eop"></a>Utilizzare le regole del flusso di posta per impostare il livello di probabilità di posta indesiderata (SCL) nei messaggi in EOP
 
@@ -33,13 +33,21 @@ In Microsoft 365 organizzazioni con cassette postali in Exchange Online o standa
 
 Se si desidera contrassegnare messaggi specifici come posta indesiderata prima che vengano persino analizzati tramite il filtro posta indesiderata oppure contrassegnare i messaggi in modo che ignorino il filtro posta indesiderata, è possibile creare regole del flusso di posta (note anche come regole di trasporto) per identificare i messaggi e impostare il livello di probabilità di posta indesiderata. Per ulteriori informazioni sul livello SCL, vedere [Spam Confidence Level (SCL) in EOP](spam-confidence-levels.md).
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare
+## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare?
 
-- Prima di poter eseguire queste procedure, è necessario disporre delle autorizzazioni in Exchange Online. In particolare, è necessario che venga assegnato il ruolo **regole di trasporto** , assegnato ai ruoli Gestione **organizzazione**, **Gestione conformità**e **record** per impostazione predefinita. Per altre informazioni, vedere [Gestire i gruppi di ruoli in Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/role-groups).
+- Prima di poter eseguire le procedure descritte in questo articolo, è necessario disporre delle autorizzazioni in Exchange Online o Exchange Online Protection. In particolare, è necessario il ruolo **regole di trasporto** , assegnato ai gruppi di ruoli Gestione **organizzazione**, gestione **conformità** (amministratori globali) e **Records Management** per impostazione predefinita.
 
-- Per aprire EAC in Exchange Online, vedere interfaccia [di amministrazione di Exchange in Exchange Online](https://docs.microsoft.com/Exchange/exchange-admin-center).
+  Per ulteriori informazioni, vedere i seguenti argomenti:
 
-- Per ulteriori informazioni sulle regole del flusso di posta in Exchange Online, vedere [Mail Flow Rules (Transport Rules) in Exchange Online](https://docs.microsoft.com/Exchange/security-and-compliance/mail-flow-rules/mail-flow-rules)
+  - [Autorizzazioni in Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo)
+  - [Autorizzazioni in Exchange Online Protection autonomo](feature-permissions-in-eop.md)
+  - [Utilizzo dell'interfaccia di amministrazione di Exchange modificare l'elenco dei membri nei gruppi di ruoli](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups)
+
+- Per aprire EAC in Exchange Online, vedere interfaccia [di amministrazione di Exchange in Exchange Online](https://docs.microsoft.com/Exchange/exchange-admin-center). Per aprire EAC in EOP autonomo, vedere interfaccia [di amministrazione di Exchange in EOP autonomo](exchange-admin-center-in-exchange-online-protection-eop.md).
+
+- Per informazioni su come connettersi a PowerShell per Exchange Online, vedere [Connettersi a PowerShell per Exchange Online](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell). Per connettersi a PowerShell di EOP autonomo, vedere [Connettersi a PowerShell per Exchange Online Protection](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
+
+- Per ulteriori informazioni sulle regole del flusso di posta in Exchange Online e Exchange Online Protection, vedere [Mail Flow Rules (Transport Rules) in Exchange Online](https://docs.microsoft.com/Exchange/security-and-compliance/mail-flow-rules/mail-flow-rules)
 
 ## <a name="use-the-eac-to-create-a-mail-flow-rule-that-sets-the-scl-of-a-message"></a>Utilizzo dell'interfaccia di amministrazione di Exchange per creare una regola del flusso di posta che imposta il livello SCL di un messaggio
 
@@ -72,4 +80,4 @@ Se si desidera contrassegnare messaggi specifici come posta indesiderata prima c
 
 ## <a name="how-do-you-know-this-worked"></a>Come verificare se l'operazione ha avuto esito positivo
 
-Per verificare la corretta esecuzione di questa procedura, inviare un messaggio di posta elettronica a un utente all'interno dell'organizzazione e verificare che l'azione eseguita sul messaggio sia come previsto. Se ad esempio si **imposta il livello di probabilità di posta indesiderata (SCL)** per **ignorare il filtro posta indesiderata**, il messaggio dovrà essere inviato alla cartella posta in arrivo del destinatario specificato. Tuttavia, se si **imposta il livello di probabilità di posta indesiderata (SCL)** su **9**e l'azione di protezione da posta indesiderata **elevata** per i criteri di protezione da posta indesiderata applicabili è quella di spostare il messaggio nella cartella posta indesiderata, il messaggio deve essere inviato alla cartella posta indesiderata del destinatario specificato.
+Per verificare la corretta esecuzione di questa procedura, inviare un messaggio di posta elettronica a un utente all'interno dell'organizzazione e verificare che l'azione eseguita sul messaggio sia come previsto. Se ad esempio si **imposta il livello di probabilità di posta indesiderata (SCL)** per **ignorare il filtro posta indesiderata**, il messaggio dovrà essere inviato alla cartella posta in arrivo del destinatario specificato. Tuttavia, se si **imposta il livello di probabilità di posta indesiderata (SCL)** su **9** e l'azione di protezione da posta indesiderata **elevata** per i criteri di protezione da posta indesiderata applicabili è quella di spostare il messaggio nella cartella posta indesiderata, il messaggio deve essere inviato alla cartella posta indesiderata del destinatario specificato.

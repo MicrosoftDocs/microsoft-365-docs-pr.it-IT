@@ -18,23 +18,23 @@ ms.collection:
 - M365-security-compliance
 description: Gli amministratori possono ottenere informazioni sui tipi di indirizzi di posta elettronica accettati o rifiutati da Exchange Online Protection (EOP) e Outlook.com per evitare il phishing.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e0afd05c80bb4de665d23b17c7089631dad93c78
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 25fbca8fa5d264a212ac25e2035bffde0819383d
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48196060"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49659655"
 ---
 # <a name="how-eop-validates-the-from-address-to-prevent-phishing"></a>Come EOP convalida l'indirizzo del mittente per impedire il phishing
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-Gli attacchi di phishing rappresentano una minaccia costante per qualsiasi organizzazione di posta elettronica. Oltre a utilizzare [gli indirizzi di posta elettronica del mittente falsificati (falsificati)](anti-spoofing-protection.md), gli utenti malintenzionati utilizzano spesso valori nell'indirizzo from che violano gli standard di Internet. Per evitare questo tipo di phishing, Exchange Online Protection (EOP) e Outlook.com ora richiedono che i messaggi in ingresso includano un indirizzo conforme a RFC, come descritto in questo argomento. Questo Enforcement è stato abilitato nel novembre 2017.
+Gli attacchi di phishing rappresentano una minaccia costante per qualsiasi organizzazione di posta elettronica. Oltre a utilizzare [gli indirizzi di posta elettronica del mittente falsificati (falsificati)](anti-spoofing-protection.md), gli utenti malintenzionati utilizzano spesso valori nell'indirizzo from che violano gli standard di Internet. Per evitare questo tipo di phishing, Exchange Online Protection (EOP) e Outlook.com ora richiedono che i messaggi in ingresso includano un indirizzo conforme a RFC, come descritto in questo articolo. Questo Enforcement è stato abilitato nel novembre 2017.
 
 **Note**:
 
-- Se si ricevono regolarmente messaggi di posta elettronica provenienti da organizzazioni che hanno indirizzi non corretti come descritto in questo argomento, incoraggiare queste organizzazioni a aggiornare i propri server di posta elettronica in modo che siano conformi agli standard di sicurezza moderni.
+- Se si ricevono regolarmente messaggi di posta elettronica provenienti da organizzazioni con indirizzi non corretti, come descritto in questo articolo, incoraggiare queste organizzazioni a aggiornare i server di posta elettronica in modo che siano conformi agli standard di sicurezza moderni.
 
 - Il campo mittente correlato (utilizzato da Send per conto e mailing list) non è influenzato da questi requisiti. Per ulteriori informazioni, vedere il post di Blog seguente: [che cosa si intende quando si fa riferimento al ' mittente ' di un messaggio di posta elettronica?](https://blogs.msdn.microsoft.com/tzink/2017/06/22/what-do-we-mean-when-we-refer-to-the-sender-of-an-email/).
 
@@ -44,7 +44,7 @@ Un messaggio di posta elettronica SMTP standard è costituito da una *busta del 
 
 - L'indirizzo `5321.MailFrom` (noto anche come indirizzo di **posta elettronica** , mittente P1 o mittente busta) è l'indirizzo di posta elettronica utilizzato per la trasmissione SMTP del messaggio. Questo indirizzo di posta elettronica viene in genere registrato nel campo di intestazione **Return-Path** nell'intestazione del messaggio (sebbene sia possibile che il mittente designi un indirizzo di posta elettronica diverso per il **percorso restituito** ).
 
-- L'indirizzo di posta `5322.From` elettronica del mittente viene visualizzato nei client di posta elettronica (noto anche come indirizzo da o mittente P2) e è l'indirizzo di posta elettronica nel campo dell'intestazione **from** . L'indirizzo mittente è lo stato attivo dei requisiti di questo argomento.
+- L'indirizzo di posta `5322.From` elettronica del mittente viene visualizzato nei client di posta elettronica (noto anche come indirizzo da o mittente P2) e è l'indirizzo di posta elettronica nel campo dell'intestazione **from** . L'indirizzo mittente è lo stato attivo dei requisiti di questo articolo.
 
 L'indirizzo from è definito dettagliatamente in più RFC, ad esempio le sezioni di RFC 5322 3.2.3, 3,4 e 3.4.1 e [rfc 3696](https://tools.ietf.org/html/rfc3696). Sono presenti molte varianti sull'indirizzamento e su ciò che è considerato valido o non valido. Per semplificare le operazioni, è consigliabile utilizzare il formato e le definizioni seguenti:
 

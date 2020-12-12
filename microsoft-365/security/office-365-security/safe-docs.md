@@ -1,5 +1,5 @@
 ---
-title: Documenti attendibili in Microsoft Defender per Office 365
+title: Sicurezza documenti in Microsoft Defender per Office 365
 ms.author: chrisda
 author: chrisda
 manager: dansimp
@@ -15,12 +15,12 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Informazioni sui documenti attendibili in Microsoft 365 E5 o Microsoft 365 E5 Security.
-ms.openlocfilehash: 7fbee440298aea3609665b62a946ae3ce2857e37
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 0acb5d4ee0c80deebc4d0b040b046d63037037a7
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48845481"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49659874"
 ---
 # <a name="safe-documents-in-microsoft-365-e5"></a>Sicurezza documenti in Microsoft 365 E5
 
@@ -39,7 +39,16 @@ Documenti attendibili è una funzionalità di sicurezza di Microsoft 365 E5 o Mi
 
 - Per informazioni su come connettersi a PowerShell per Exchange Online, vedere [Connettersi a PowerShell per Exchange Online](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
 
-- Prima di poter eseguire le procedure descritte in questo argomento, è necessario disporre delle autorizzazioni assegnate. Per abilitare e configurare documenti attendibili, è necessario essere membri dei gruppi di ruoli **Gestione organizzazione** o **amministratore sicurezza** . Per altre informazioni sui gruppi di ruoli nel Centro sicurezza e conformità, vedere [Autorizzazioni nel Centro sicurezza e conformità](permissions-in-the-security-and-compliance-center.md).
+- Per poter eseguire le procedure contenute in questo articolo è necessario disporre delle autorizzazioni appropriate nel Centro sicurezza e conformità:
+  - Per configurare le impostazioni di documenti attendibili, è necessario essere membri dei gruppi di ruoli **Gestione organizzazione** o **amministratore sicurezza** .
+  - Per l'accesso in sola lettura alle impostazioni di documenti attendibili, è necessario essere membri dei gruppi di ruoli **lettore globale** o lettore di **sicurezza** .
+
+  Per altre informazioni, vedere [Autorizzazioni nel Centro sicurezza e conformità](permissions-in-the-security-and-compliance-center.md).
+
+  **Note**:
+
+  - L'aggiunta di utenti al ruolo di Azure Active Directory corrispondente nell'interfaccia di amministrazione di Microsoft 365 fornisce agli utenti le autorizzazioni necessarie nel centro Sicurezza e conformità _e_ le autorizzazioni per altre funzionalità di Microsoft 365. Per altre informazioni, vedere [Informazioni sui ruoli di amministratore](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
+  - Anche il gruppo di ruoli di **Gestione organizzazione sola visualizzazione** in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) offre inoltre l'accesso di sola lettura a tale funzionalità.
 
 ### <a name="how-does-microsoft-handle-your-data"></a>In che modo Microsoft gestisce i dati?
 
@@ -49,13 +58,13 @@ I file inviati dai documenti attendibili non vengono conservati in Defender oltr
 
 ## <a name="use-the-security--compliance-center-to-configure-safe-documents"></a>Utilizzare il Centro sicurezza & conformità per configurare i documenti attendibili
 
-1. Nel centro sicurezza & conformità, accedere a criteri di **gestione delle minacce** per gli \> **Policy** \> **allegati sicuri ATP** e quindi fare clic su **Impostazioni globali**.
+1. Nel centro sicurezza & conformità, accedere a criteri di **gestione delle minacce** per gli \>  \> **allegati sicuri ATP** e quindi fare clic su **Impostazioni globali**.
 
 2. Nelle **Impostazioni globali** volare che viene visualizzato, configurare le seguenti impostazioni:
 
-   - **Attivare documenti attendibili per i client di Office** : spostare l'interruttore verso destra per attivare la caratteristica: ![ Toggle on ](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png) .
+   - **Attivare documenti attendibili per i client di Office**: spostare l'interruttore verso destra per attivare la caratteristica: ![ Toggle on ](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png) .
 
-   - **Consenti agli utenti di fare clic su una visualizzazione protetta anche se i documenti sicuri identificano il file come dannoso** : si consiglia di lasciare questa opzione disattivata (lasciare l'interruttore a sinistra: disattivazione ![ ](../../media/scc-toggle-off.png) ).
+   - **Consenti agli utenti di fare clic su una visualizzazione protetta anche se i documenti sicuri identificano il file come dannoso**: si consiglia di lasciare questa opzione disattivata (lasciare l'interruttore a sinistra: disattivazione ![ ](../../media/scc-toggle-off.png) ).
 
    Al termine, scegliere **Salva**.
 
@@ -84,7 +93,7 @@ Per informazioni dettagliate sulla sintassi e sui parametri, vedere [set-AtpPoli
 
 Per verificare di aver abilitato e configurato documenti attendibili, eseguire una delle operazioni seguenti:
 
-- Nel centro sicurezza & conformità, accedere a criteri di **gestione delle minacce** per gli \> **Policy** \> **allegati sicuri ATP** , fare clic su **Impostazioni globali** e verificare l' **attivazione dei documenti attendibili per i client di Office** e **consentire agli utenti di fare clic su tramite visualizzazione protetta anche se i documenti sicuri identificano il file come impostazioni dannose** .
+- Nel centro sicurezza & conformità, accedere a criteri di **gestione delle minacce** per gli \>  \> **allegati sicuri ATP**, fare clic su **Impostazioni globali** e verificare l' **attivazione dei documenti attendibili per i client di Office** e **consentire agli utenti di fare clic su tramite visualizzazione protetta anche se i documenti sicuri identificano il file come impostazioni dannose** .
 
 - Eseguire il seguente comando in PowerShell di Exchange Online e verificare i valori delle proprietà:
 

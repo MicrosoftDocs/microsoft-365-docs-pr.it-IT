@@ -11,12 +11,12 @@ ms.service: exchange-online
 localization_priority: Normal
 ms.assetid: ''
 description: Gli amministratori possono scoprire come utilizzare i nuovi utenti per l'inoltro della posta elettronica nel centro sicurezza & Compliance per esaminare quando gli utenti dell'organizzazione stanno inoltrando i messaggi ai nuovi domini.
-ms.openlocfilehash: 22bbd762b221fae151a489aa1e9485dfc7baf06a
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.openlocfilehash: cf1852169279e19ac00e5e29dd1c26e155936039
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49357274"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49660018"
 ---
 # <a name="new-users-forwarding-email-insight-in-the-security--compliance-center"></a>Nuovi utenti che inoltrano informazioni sulla posta elettronica nel centro sicurezza & Compliance
 
@@ -31,11 +31,11 @@ Questa intuizione viene visualizzata solo quando il problema viene rilevato e vi
 
 ![Informazioni dettagliate sui messaggi di posta elettronica dei nuovi utenti inoltrati](../../media/mfi-new-users-forwarding-email.png)
 
-Quando si fa clic sul widget, viene visualizzato un riquadro a comparsa in cui è possibile trovare ulteriori dettagli sui messaggi inoltrati, incluso un collegamento al [rapporto modifiche di inoltro](#forwarding-modifications-report) come descritto più avanti in questo argomento.
+Quando si fa clic sul widget, viene visualizzato un riquadro a comparsa in cui è possibile trovare ulteriori dettagli sui messaggi inoltrati, incluso un collegamento al [rapporto modifiche di inoltro](#forwarding-modifications-report) come descritto più avanti in questo articolo.
 
 ![Riquadro a comparsa Dettagli visualizzato dopo aver fatto clic sul nuovo messaggio di posta elettronica di inoltro degli utenti](../../media/mfi-new-users-forwarding-email-details.png)
 
-È inoltre possibile accedere a questa pagina dei dettagli quando si seleziona l'Insight dopo aver fatto clic su **Visualizza tutti** nell'area **suggerimenti & consigliati** (dashboard dei **report** \> **Dashboard** o <https://protection.office.com/insightdashboard> ).
+È inoltre possibile accedere a questa pagina dei dettagli quando si seleziona l'Insight dopo aver fatto clic su **Visualizza tutti** nell'area **suggerimenti & consigliati** (dashboard dei **report** \>  o <https://protection.office.com/insightdashboard> ).
 
 È possibile fare clic sul collegamento **Visualizza rapporto associato a Insight** per passare al **rapporto modifiche di inoltro** come descritto nella sezione successiva.
 

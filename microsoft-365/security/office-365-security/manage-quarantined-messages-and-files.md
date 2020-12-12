@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Gli amministratori possono imparare a visualizzare e gestire i messaggi in quarantena per tutti gli utenti in Exchange Online Protection (EOP). Gli amministratori nelle organizzazioni con Microsoft Defender per Office 365 possono anche gestire i file in quarantena in SharePoint Online, OneDrive for business e Microsoft teams.
-ms.openlocfilehash: 8f4ca5caef9bf244315db2271011126ad4d7976e
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.openlocfilehash: 5f4d63576e57ac50abe1ec1eb378221c4d457280
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49616777"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49659987"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-admin-in-eop"></a>Gestire i messaggi e i file messi in quarantena come amministratore in EOP
 
@@ -44,14 +44,21 @@ Gli amministratori nelle organizzazioni con Microsoft Defender per Office 365 po
 
 - Per informazioni su come connettersi a PowerShell per Exchange Online, vedere [Connettersi a PowerShell per Exchange Online](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell). Per connettersi a PowerShell di EOP autonomo, vedere [Connettersi a PowerShell per Exchange Online Protection](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
-- È necessario disporre delle autorizzazioni prima di poter gestire la quarantena come amministratore. Le autorizzazioni sono controllate dal ruolo **Quarantine** nel centro sicurezza & conformità. Per impostazione predefinita, questo ruolo viene assegnato ai gruppi di ruoli **Gestione organizzazione** (amministratori globali), **amministratori della quarantena** e **amministratore della sicurezza** nel centro sicurezza & conformità. Per altre informazioni, vedere [Autorizzazioni nel Centro sicurezza e conformità](permissions-in-the-security-and-compliance-center.md).
+- Per poter eseguire le procedure contenute in questo articolo è necessario disporre delle autorizzazioni appropriate nel Centro sicurezza e conformità:
+  - Per eseguire un'azione sui messaggi in quarantena per tutti gli utenti, è necessario essere membri dei gruppi di ruoli **Gestione organizzazione**, **amministratore sicurezza** o **quarantena amministratore** <sup>\*</sup> .
+  - Per l'accesso in sola lettura ai messaggi in quarantena per tutti gli utenti, è necessario essere membri dei gruppi di ruoli **lettore globale** o **lettore di sicurezza** .
+
+  Per altre informazioni, vedere [Autorizzazioni nel Centro sicurezza e conformità](permissions-in-the-security-and-compliance-center.md).
+
+  **Note**:
+
+  - L'aggiunta di utenti al ruolo di Azure Active Directory corrispondente nell'interfaccia di amministrazione di Microsoft 365 fornisce agli utenti le autorizzazioni necessarie nel centro Sicurezza e conformità _e_ le autorizzazioni per altre funzionalità di Microsoft 365. Per altre informazioni, vedere [Informazioni sui ruoli di amministratore](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
+  - Anche il gruppo di ruoli di **Gestione organizzazione sola visualizzazione** in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) offre inoltre l'accesso di sola lettura a tale funzionalità.
+  - <sup>\*</sup> I membri del gruppo di ruoli **amministratore di quarantena** devono essere anche membri del gruppo di ruoli **Gestione igiene** in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) per eseguire le procedure di quarantena in Exchange Online PowerShell.
 
 - I messaggi in quarantena vengono mantenuti per un periodo di tempo predefinito prima di essere eliminati automaticamente:
-
   - 30 giorni per i messaggi messi in quarantena dai criteri di protezione dalla posta indesiderata (posta indesiderata, phishing e massa). Questo è il valore predefinito e massimo. Per configurare (abbassare) questo valore, vedere Configurare i criteri di protezione dalla [posta indesiderata](configure-your-spam-filter-policies.md).
-
   - 15 giorni per i messaggi che contengono malware.
-
   - 15 giorni per i file messi in quarantena da ATP per SharePoint, OneDrive e Microsoft teams in Defender per Office 365.
 
   Quando un messaggio scade dalla quarantena, non è possibile ripristinarlo.
@@ -99,11 +106,11 @@ Gli amministratori nelle organizzazioni con Microsoft Defender per Office 365 po
      - **Posta indesiderata**
      - **Phishing ad alta sicurezza**
 
-   - **Tipo di criterio**: filtrare i messaggi in base al tipo di criterio:
+   - **Tipo di criteri**: filtrare i messaggi in base al tipo di criteri:
      - **Criteri anti-malware**
      - **Criteri allegati sicuri**
      - **Criteri anti-phishing**
-     - **Criteri di filtro contenuto ospitati** (criteri di protezione da posta indesiderata)
+     - **Criteri filtro contenuti ospitati** (criteri di protezione dalla posta indesiderata)
      - **Regola di trasporto**
 
    - **Destinatario di posta elettronica**: tutti gli utenti o solo i messaggi inviati all'utente. Gli utenti finali possono gestire solo i messaggi in quarantena inviati.
@@ -118,7 +125,7 @@ Gli amministratori nelle organizzazioni con Microsoft Defender per Office 365 po
 
    - **Indirizzo di posta elettronica del mittente**: indirizzo di posta elettronica di un singolo mittente.
 
-   - **Nome criterio**: utilizzare l'intero nome dei criteri del messaggio. Per la ricerca non viene fatta distinzione tra maiuscole e minuscole.
+   - **Nome dei criteri**: usare l'intero nome dei criteri del messaggio. Per la ricerca non viene fatta distinzione tra maiuscole e minuscole.
 
    - **Indirizzo di posta elettronica del destinatario**: indirizzo di posta elettronica di un singolo destinatario.
 

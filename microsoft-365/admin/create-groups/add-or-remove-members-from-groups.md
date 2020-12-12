@@ -15,18 +15,15 @@ ms.collection:
 - Adm_TOC
 ms.custom: AdminSurgePortfolio
 search.appverid:
-- BCS160
 - MET150
-- MOE150
-- BSA160
 ms.assetid: e186d224-a324-4afa-8300-0e4fc0c3000a
 description: Informazioni su come aggiungere un membro a un gruppo, rimuovere un membro da un gruppo e gestire lo stato del proprietario di un gruppo nell'interfaccia di amministrazione di Microsoft 365.
-ms.openlocfilehash: a8739b6cd2005598acbfccbaff6131235ec480ee
-ms.sourcegitcommit: 3cdb670f10519f7af4015731e7910954ba9f70dc
+ms.openlocfilehash: 34c026bced5563e07a1ae0d13f4c691cfaf3f624
+ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "48753314"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "49663244"
 ---
 # <a name="add-or-remove-members-from-microsoft-365-groups-using-the-admin-center"></a>Aggiungere o rimuovere membri dai gruppi di Microsoft 365 utilizzando l'interfaccia di amministrazione
 
@@ -37,9 +34,9 @@ In Microsoft 365, i membri del gruppo in genere creano i propri gruppi, si aggiu
   
 ## <a name="add-a-member-to-a-group-in-the-admin-center"></a>Aggiungere un membro a un gruppo nell'interfaccia di amministrazione
 
-1. Nell'interfaccia di amministrazione, andare alla pagina **gruppi** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Groups</a> .  
+1. Nell'interfaccia di amministrazione, andare alla pagina [**gruppi attivi**](https://admin.microsoft.com/Adminportal/Home?#/groups) .  
 
-2. Selezionare un nome di gruppo.
+2. Fare clic su un nome di gruppo.
 
 3. Nel riquadro dei dettagli, nella scheda **membri** , selezionare **Visualizza tutti i membri e Gestisci**, quindi selezionare **Aggiungi membri**.
 
@@ -49,11 +46,11 @@ In Microsoft 365, i membri del gruppo in genere creano i propri gruppi, si aggiu
 
 ## <a name="add-a-group-to-a-member-in-the-admin-center"></a>Aggiungere un gruppo a un membro nell'interfaccia di amministrazione
 
-1. Nell'interfaccia di amministrazione passare alla pagina **Utenti** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utenti attivi</a>.  
+1. Nell'interfaccia di amministrazione, andare alla pagina [**utenti attivi**](https://admin.microsoft.com/Adminportal/Home?#/users) .  
 
-2. Selezionare un utente.
+2. Fare clic su un utente.
 
-3. Nel riquadro dei dettagli fare clic su **Gestisci gruppi**nella scheda **account** .
+3. Nel riquadro dei dettagli fare clic su **Gestisci gruppi** nella scheda **account** .
 
 4. Cercare o selezionare il nome del gruppo che si desidera aggiungere.
 
@@ -62,13 +59,13 @@ In Microsoft 365, i membri del gruppo in genere creano i propri gruppi, si aggiu
 ## <a name="remove-a-member-from-a-group-in-the-admin-center"></a>Rimuovere un membro da un gruppo nell'interfaccia di amministrazione
 
 > [!NOTE]
-> Quando si rimuove un membro da un gruppo privato, il blocco di questa persona dal gruppo richiederà 5 minuti, ovvero il tempo necessario per replicare completamente le modifiche di appartenenza nei controller di dominio.
+> Quando si rimuove un membro da un gruppo privato, sono necessari 5 minuti affinché la persona venga bloccata dal gruppo.
 
-1. Nell'interfaccia di amministrazione, andare alla pagina **gruppi** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Groups</a> .
+1. Nell'interfaccia di amministrazione, andare alla pagina [**gruppi attivi**](https://admin.microsoft.com/Adminportal/Home?#/groups) .  
 
-2. Selezionare un nome di gruppo.
+2. Fare clic su un nome di gruppo.
 
-3. Nel riquadro dei dettagli fare clic su **Visualizza tutti e Gestisci membri**nella scheda **membri** .
+3. Nel riquadro dei dettagli fare clic su **Visualizza tutti e Gestisci membri** nella scheda **membri** .
 
 4. Accanto al membro che si desidera rimuovere, selezionare la X.
 
@@ -80,23 +77,23 @@ Per impostazione predefinita, la persona che crea il gruppo ne è il proprietari
   
 ### <a name="promote-a-member-to-owner-status-in-the-admin-center"></a>Innalzare di livello un membro allo stato del proprietario nell'interfaccia di amministrazione
 
-1. Nell'interfaccia di amministrazione, andare alla pagina **gruppi** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Groups</a> .
+1. Nell'interfaccia di amministrazione, andare alla pagina [**gruppi attivi**](https://admin.microsoft.com/Adminportal/Home?#/groups) .  
 
-2. Selezionare un nome di gruppo.
+2. Fare clic su un nome di gruppo.
 
 3. Nel riquadro dei dettagli, nella scheda **membri** , selezionare **Visualizza tutti e Gestisci proprietari**.
 
-4. Cerca un membro o seleziona **Aggiungi proprietari**.
+4. Selezionare **Aggiungi proprietari**.
 
 5. Selezionare la casella di controllo accanto al nome del membro che si desidera aggiungere.
 
-6. Selezionare **Salva**e quindi **Chiudi**.
+6. Selezionare **Salva** e quindi **Chiudi**.
 
 ### <a name="remove-owner-status-in-the-admin-center"></a>Rimuovere lo stato del proprietario nell'interfaccia di amministrazione
 
-1. Nell'interfaccia di amministrazione, andare alla pagina **gruppi** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Groups</a> .
+1. Nell'interfaccia di amministrazione, andare alla pagina [**gruppi attivi**](https://admin.microsoft.com/Adminportal/Home?#/groups) .  
 
-2. Selezionare un nome di gruppo.
+2. Fare clic su un nome di gruppo.
 
 3. Nel riquadro dei dettagli, nella scheda **membri** , selezionare **Visualizza tutti e Gestisci proprietari**.
 
@@ -108,7 +105,7 @@ Per impostazione predefinita, la persona che crea il gruppo ne è il proprietari
 
 - [Gestire dinamicamente i gruppi in Azure Active Directory](https://go.microsoft.com/fwlink/?linkid=847632): vedere la sezione "Come si gestisce l'appartenenza a un gruppo dinamicamente?"
 
-- Per aggiungere centinaia o migliaia di utenti ai gruppi, utilizzare il [componente aggiuntivo UnifiedGroupLinks](https://go.microsoft.com/fwlink/p/?LinkId=616191).
+- Per aggiungere centinaia o migliaia di utenti ai gruppi, utilizzare il [componente aggiuntivo UnifiedGroupLinks](https://docs.microsoft.com/powershell/module/exchange/add-unifiedgrouplinks).
 
 - [Assegnare un nuovo proprietario a un gruppo orfano](https://support.microsoft.com/office/86bb3db6-8857-45d1-95c8-f6d540e45732)
 

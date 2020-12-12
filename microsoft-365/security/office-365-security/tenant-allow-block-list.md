@@ -15,12 +15,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Gli amministratori possono ottenere informazioni su come configurare le voci URL nell'elenco Consenti/blocca tenant nel centro sicurezza & Compliance.
-ms.openlocfilehash: 0fdfa23ba22b240032e7a6888948de180aa0f6ae
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.openlocfilehash: 4bf5e2e29a9f48c434be527a2447ca4bf98c4208
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49614965"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49659999"
 ---
 # <a name="manage-urls-in-the-tenant-allowblock-list"></a>Gestire URL nell'elenco di tenant consentiti/bloccati
 
@@ -28,7 +28,7 @@ ms.locfileid: "49614965"
 
 
 > [!NOTE]
-> Le funzionalità descritte in questo argomento sono in anteprima, sono soggette a modifiche e non sono disponibili in tutte le organizzazioni.
+> Le funzionalità descritte in questo articolo sono in anteprima, sono soggette a modifiche e non sono disponibili in tutte le organizzazioni.
 
 In Microsoft 365 organizzazioni con cassette postali in Exchange Online o standalone Exchange Online Protection (EOP) organizzazioni senza cassette postali di Exchange Online, potrebbe non essere d'accordo con il verdetto di filtraggio EOP. Ad esempio, un buon messaggio potrebbe essere contrassegnato come negativo (falso positivo) oppure potrebbe essere consentito un messaggio non valido tramite (un falso negativo).
 
@@ -36,11 +36,11 @@ L'elenco Consenti/blocca tenant nel centro sicurezza & conformità consente di i
 
 In questo argomento viene descritto come configurare le voci nell'elenco Consenti/blocca tenant nel centro sicurezza & Compliance o in PowerShell (Exchange Online PowerShell per le organizzazioni Microsoft 365 con le cassette postali in Exchange Online; standalone EOP PowerShell per organizzazioni senza cassette postali di Exchange Online).
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare
+## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare?
 
-- Aprire il Centro sicurezza e conformità in<https://protection.office.com/>. Per accedere direttamente alla pagina dell' **elenco Consenti/blocca tenant** , utilizzare <https://protection.office.com/tenantAllowBlockList> .
+- Aprire il Centro sicurezza e conformità in <https://protection.office.com/>. Per accedere direttamente alla pagina dell' **elenco Consenti/blocca tenant** , utilizzare <https://protection.office.com/tenantAllowBlockList> .
 
-- I valori degli URL disponibili sono descritti nella [sintassi degli URL per la sezione tenant Allow/Block List](#url-syntax-for-the-tenant-allowblock-list) più avanti in questo argomento.
+- I valori degli URL disponibili sono descritti nella [sintassi degli URL per la sezione tenant Consenti/blocca elenco](#url-syntax-for-the-tenant-allowblock-list) più avanti in questo articolo.
 
 - L'elenco Consenti/blocca tenant consente un massimo di 500 voci per gli URL.
 
@@ -52,7 +52,7 @@ In questo argomento viene descritto come configurare le voci nell'elenco Consent
 
 - Per informazioni su come connettersi a PowerShell per Exchange Online, vedere [Connettersi a PowerShell per Exchange Online](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell). Per connettersi a PowerShell di EOP autonomo, vedere [Connettersi a PowerShell per Exchange Online Protection](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
-- Prima di poter eseguire le procedure descritte in questo articolo, è necessario disporre delle autorizzazioni per il Centro sicurezza & Compliance:
+- Per poter eseguire le procedure contenute in questo articolo è necessario disporre delle autorizzazioni appropriate nel Centro sicurezza e conformità:
   - Per aggiungere e rimuovere valori dall'elenco Consenti/blocca tenant, è necessario essere membri dei gruppi di ruoli **Gestione organizzazione** o **amministratore sicurezza** .
   - Per l'accesso in sola lettura all'elenco Consenti/blocca tenant, è necessario essere membri dei gruppi di ruoli **lettore globale** o **lettore di sicurezza** .
 
@@ -65,7 +65,7 @@ In questo argomento viene descritto come configurare le voci nell'elenco Consent
 
 ## <a name="use-the-security--compliance-center-to-create-url-entries-in-the-tenant-allowblock-list"></a>Utilizzare il Centro sicurezza & conformità per creare le voci URL nell'elenco Consenti/blocca tenant
 
-Per informazioni dettagliate sulla sintassi per le voci URL, vedere la [sintassi degli URL per la sezione tenant Allow/Block List](#url-syntax-for-the-tenant-allowblock-list) più avanti in questo argomento.
+Per informazioni dettagliate sulla sintassi per le voci URL, vedere la [sintassi degli URL per la sezione tenant Allow/Block List](#url-syntax-for-the-tenant-allowblock-list) più avanti in questo articolo.
 
 1. Nel centro sicurezza & conformità accedere a elenchi di criteri di **gestione delle minacce** \>  \> **tenant/Block**.
 
