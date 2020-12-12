@@ -21,16 +21,16 @@ search.appverid:
 - MOE150
 ms.assetid: d4ba60f3-4e1c-4180-99bd-250b8955be2a
 description: 'Informazioni su come configurare il dominio personalizzato Microsoft con le soluzioni di rete se si desidera che Microsoft gestisca i record DNS. '
-ms.openlocfilehash: 1cb5cd3cc8628a629fb6d7044063914e37adfac2
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 04817ca24b13b4c138986df3875b6d397100fffd
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48646404"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49658429"
 ---
 # <a name="change-nameservers-to-set-up-microsoft-with-network-solutions"></a>Modificare i server dei nomi per configurare Microsoft con le soluzioni di rete
 
- Se non si trova ciò che si sta cercando, **[vedere le domande frequenti sui domini](../setup/domains-faq.md)**.
+ Se non si trova ciò che si sta cercando, **[vedere le domande frequenti sui domini](../setup/domains-faq.yml)**.
   
 Se si desidera gestire i record DNS per l'utente, seguire le istruzioni riportate di seguito. Se si preferisce, è possibile [gestire tutti i record Microsoft DNS in Network Solutions](create-dns-records-at-network-solutions.md).
   
@@ -120,7 +120,7 @@ Per completare la configurazione del dominio con Microsoft, è necessario modifi
 Pronto per modificare i record NS in modo che Microsoft possa configurare il dominio? Seguire le istruzioni riportate di seguito o [guardare il video (iniziare da 2:23)](https://support.microsoft.com/office/69b092e3-c026-4d19-a7d0-16cdb2d8b261).
   
 > [!IMPORTANT]
->  Dopo aver completato la procedura descritta in questa sezione, gli  *unici*  server dei nomi che devono essere elencati sono questi quattro: **NS1.BDM.microsoftonline.com**, **NS2.BDM.microsoftonline.com**, **NS3.BDM.microsoftonline.com**e **NS4.BDM.microsoftonline.com**. La seguente procedura illustra come eliminare eventuali altri server dei nomi indesiderati dall'elenco e come aggiungere i server dei nomi  *corretti*  se non sono presenti nell'elenco. 
+>  Dopo aver completato la procedura descritta in questa sezione, gli  *unici*  server dei nomi che devono essere elencati sono questi quattro: **NS1.BDM.microsoftonline.com**, **NS2.BDM.microsoftonline.com**, **NS3.BDM.microsoftonline.com** e **NS4.BDM.microsoftonline.com**. La seguente procedura illustra come eliminare eventuali altri server dei nomi indesiderati dall'elenco e come aggiungere i server dei nomi  *corretti*  se non sono presenti nell'elenco. 
   
 1. Per iniziare, passare alla propria pagina dei domini su Network Solutions usando [questo collegamento](https://www.networksolutions.com/manage-it). Verrà richiesto di eseguire l'accesso.
     

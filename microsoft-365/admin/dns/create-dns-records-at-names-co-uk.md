@@ -21,16 +21,16 @@ search.appverid:
 - MOE150
 ms.assetid: b6c15128-b456-49b4-8b5e-5b823c700f26
 description: Informazioni su come verificare il dominio e configurare i record DNS per la posta elettronica, Skype for business online e altri servizi in Names.co.uk per Microsoft.
-ms.openlocfilehash: d3a3e68558efc3857d343b3298c3c01f0e8d8802
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 51dc9b3271468d42e82f98a1b85de5104416b015
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48645864"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49657816"
 ---
 # <a name="create-dns-records-at-namescouk-for-microsoft"></a>Creare record DNS in Names.co.uk per Microsoft
 
- **Se non si trova ciò che si sta cercando, [vedere le domande frequenti sui domini](../setup/domains-faq.md)**. 
+ **Se non si trova ciò che si sta cercando, [vedere le domande frequenti sui domini](../setup/domains-faq.yml)**. 
   
 Se il provider di hosting DNS è Names.co.uk, seguire i passaggi di questo articolo per verificare il dominio e configurare i record DNS per posta elettronica, Skype for Business online e così via.
     

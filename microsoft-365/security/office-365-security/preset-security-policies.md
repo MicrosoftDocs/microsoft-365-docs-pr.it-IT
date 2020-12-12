@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Gli amministratori possono ottenere informazioni su come applicare le impostazioni dei criteri standard e rigorosi nelle caratteristiche di protezione di Exchange Online Protection (EOP) e Microsoft Defender per Office 365
-ms.openlocfilehash: fb613916ec375214b33b8b842c6817561920715d
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.openlocfilehash: a77201835652fb36822fbc603f5211c1f7a9521b
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49616045"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49659237"
 ---
 # <a name="preset-security-policies-in-eop-and-microsoft-defender-for-office-365"></a>Criteri di sicurezza preimpostati in EOP e Microsoft Defender per Office 365
 
@@ -98,17 +98,19 @@ In altre parole, le impostazioni dei criteri di **protezione rigorosi** sovrascr
 
 ## <a name="assign-preset-security-policies-to-users"></a>Assegnare criteri di sicurezza preimpostati agli utenti
 
-### <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare
+### <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare?
 
-- Aprire il Centro sicurezza e conformità in<https://protection.office.com/>. Per passare direttamente alla pagina **criteri di sicurezza preimpostati** , utilizzare <https://protection.office.com/presetSecurityPolicies> .
+- Aprire il Centro sicurezza e conformità in <https://protection.office.com/>. Per passare direttamente alla pagina **criteri di sicurezza preimpostati** , utilizzare <https://protection.office.com/presetSecurityPolicies> .
 
 - Per informazioni su come connettersi a PowerShell per Exchange Online, vedere [Connettersi a PowerShell per Exchange Online](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
 
-- Prima di poter eseguire le procedure descritte in questo articolo, è necessario disporre delle autorizzazioni seguenti:
+- Per poter eseguire le procedure contenute in questo articolo è necessario disporre delle autorizzazioni appropriate nel Centro sicurezza e conformità:
+  - Per configurare i criteri di sicurezza preimpostati, è necessario essere membri dei gruppi di ruoli **Gestione organizzazione** o **amministratore sicurezza** .
+  - Per l'accesso in sola lettura ai criteri di sicurezza preimpostati, è necessario essere membri del gruppo di ruoli **lettore globale** .
 
-  - Per configurare i criteri di sicurezza preimpostati, è necessario essere membri dei ruoli **Gestione organizzazione** o **amministratore sicurezza** nel [Centro sicurezza & conformità](permissions-in-the-security-and-compliance-center.md).
+  Per altre informazioni, vedere [Autorizzazioni nel Centro sicurezza e conformità](permissions-in-the-security-and-compliance-center.md).
 
-  - Per l'accesso in sola lettura ai criteri di sicurezza preimpostati, è necessario essere membri del gruppo di ruoli **lettore globale** nel [Centro sicurezza & conformità](permissions-in-the-security-and-compliance-center.md).
+  **Nota**: l'aggiunta di utenti al ruolo di Azure Active Directory corrispondente nell'interfaccia di amministrazione di Microsoft 365 fornisce agli utenti le autorizzazioni necessarie nel centro sicurezza & Compliance _e_ le autorizzazioni per altre caratteristiche in Microsoft 365. Per altre informazioni, vedere [Informazioni sui ruoli di amministratore](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
 
 ### <a name="use-the-security--compliance-center-to-assign-preset-security-policies-to-users"></a>Utilizzare il Centro sicurezza & conformità per assegnare criteri di sicurezza preimpostati agli utenti
 

@@ -25,16 +25,16 @@ search.appverid:
 - GEA150
 ms.assetid: a8b487a9-2a45-4581-9dc4-5d28a47010a2
 description: Informazioni su come aggiungere e configurare il dominio in Microsoft 365 in modo che i servizi come la posta elettronica e Skype for business online utilizzino il proprio nome di dominio.
-ms.openlocfilehash: f233cc9b2d37e3ee81e52178a7cc045cb3579e42
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: a4218b03e3f23ba8bc39c5eb84b42f87a71b9a65
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48645396"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49658600"
 ---
 # <a name="change-nameservers-to-set-up-microsoft-365-with-any-domain-registrar"></a>Modificare i server dei nomi per configurare Microsoft 365 con qualsiasi registrar
 
- Se non si trova ciò che si sta cercando, **[vedere le domande frequenti sui domini](../setup/domains-faq.md)**. 
+ Se non si trova ciò che si sta cercando, **[vedere le domande frequenti sui domini](../setup/domains-faq.yml)**. 
   
 Controllare [la configurazione del dominio (istruzioni specifiche per l'host)](../get-help-with-domains/set-up-your-domain-host-specific-instructions.md) per vedere se sono disponibili istruzioni per il registrar. 
   
@@ -80,7 +80,7 @@ Eseguire una delle operazioni seguenti in base al record da creare, ossia TXT o 
 ||||||
 |:-----|:-----|:-----|:-----|:-----|
 |**Tipo di record**|**Alias** o **nome host**|**Valore**|**Priorità**|**TTL**|
-|MX|Digitare **@** o il proprio nome di dominio. |MS=ms *XXXXXXXX* > [!NOTE]> Questo è un esempio. Usare il valore specifico di **Indirizzo di destinazione o puntamento** indicato nella tabella in Microsoft 365.           [Come trovarlo](../get-help-with-domains/information-for-dns-records.md)          |Per **Priorità** usare una priorità più bassa rispetto a quella di qualsiasi altro record MX esistente, per impedire un conflitto con il record MX mediante il quale viene instradata la posta elettronica. Per altre informazioni sulla priorità, vedere [Che cos'è la priorità MX](../setup/domains-faq.md#what-is-mx-priority). |Impostare questo valore su **1 ora** o sull'equivalente in minuti (**60**), secondi (**3600**) e così via. |
+|MX|Digitare **@** o il proprio nome di dominio. |MS=ms *XXXXXXXX* > [!NOTE]> Questo è un esempio. Usare il valore specifico di **Indirizzo di destinazione o puntamento** indicato nella tabella in Microsoft 365.           [Come trovarlo](../get-help-with-domains/information-for-dns-records.md)          |Per **Priorità** usare una priorità più bassa rispetto a quella di qualsiasi altro record MX esistente, per impedire un conflitto con il record MX mediante il quale viene instradata la posta elettronica. Per altre informazioni sulla priorità, vedere [Che cos'è la priorità MX](../setup/domains-faq.yml). |Impostare questo valore su **1 ora** o sull'equivalente in minuti (**60**), secondi (**3600**) e così via. |
    
 ### <a name="save-the-record"></a>Salvare il record
 
@@ -166,7 +166,7 @@ Ecco, ad esempio, alcune altre operazioni aggiuntive che potrebbero essere neces
 
 2. Nella pagina **Domains** selezionare il dominio e quindi scegliere **DNS Records**.
 
-3. In **impostazioni DNS**selezionare **record personalizzati**e quindi fare clic **su nuovo record personalizzato**.
+3. In **impostazioni DNS** selezionare **record personalizzati** e quindi fare clic **su nuovo record personalizzato**.
 
 4. Selezionare il tipo di record DNS che si desidera aggiungere e digitare le informazioni per il nuovo record.
 

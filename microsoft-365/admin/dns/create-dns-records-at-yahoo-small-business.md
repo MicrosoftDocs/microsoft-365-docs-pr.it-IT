@@ -21,16 +21,16 @@ search.appverid:
 - MOE150
 ms.assetid: 034bd7bc-b098-4c4d-8a93-4d74ff24532a
 description: Informazioni su come verificare il dominio e configurare i record DNS per la posta elettronica, Skype for business online e altri servizi su Yahoo! Small Business per Microsoft.
-ms.openlocfilehash: 3c6bc44baef4924133ea2308189662dd53399689
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 47b3b1f3a6e889d067d0166f872725aa3812a7b4
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48645600"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49656904"
 ---
 # <a name="create-dns-records-at-yahoo-small-business-for-microsoft"></a>Creare record DNS in Yahoo! Small Business per Microsoft
 
- **Se non si trova ciò che si sta cercando, [vedere le domande frequenti sui domini](../setup/domains-faq.md)**. 
+ **Se non si trova ciò che si sta cercando, [vedere le domande frequenti sui domini](../setup/domains-faq.yml)**. 
   
 Se il proprio provider di hosting DNS era Yahoo! Small Business, occorre sapere che il nuovo provider è ora Aabaco Small Business.
   
@@ -71,7 +71,7 @@ Seguire i passaggi in questo articolo per creare un account su Aabaco, in cui è
   
     ![The Choose your password page](../../media/cc592345-72d1-4a41-9410-a1f3345cfd1d.png)
   
-7. Selezionare Accetto **i termini e le condizioni**e quindi selezionare **Crea password**.
+7. Selezionare Accetto **i termini e le condizioni** e quindi selezionare **Crea password**.
     
     ![Selezionare Crea password](../../media/434aa6a3-076e-4abf-a9cf-31145786e819.png)
   

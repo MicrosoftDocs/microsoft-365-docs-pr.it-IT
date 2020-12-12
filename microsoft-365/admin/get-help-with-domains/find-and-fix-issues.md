@@ -22,21 +22,21 @@ search.appverid:
 - GEA150
 ms.assetid: 40398b0b-bdd0-4afd-ab5e-b5ae6b7990bf
 description: Informazioni su come individuare i problemi che si sono verificati durante la configurazione di un dominio personalizzato assicurandosi che i record DNS siano configurati correttamente.
-ms.openlocfilehash: ce5aa65601a4fac763616cb67c6a4c466083a4c0
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: d2935a7fcc134f7f6d2dd06a5b4e0e0a8761ad8a
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48645336"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49658520"
 ---
 # <a name="find-and-fix-issues-after-adding-your-domain-or-dns-records"></a>Individuare e correggere i problemi dopo l'aggiunta del dominio o dei record DNS
 
- Se non si trova ciò che si sta cercando, **[vedere le domande frequenti sui domini](../setup/domains-faq.md)**. 
+ Se non si trova ciò che si sta cercando, **[vedere le domande frequenti sui domini](../setup/domains-faq.yml)**. 
   
 Ottenere il dominio configurato per l'uso con Microsoft 365 può essere difficile. Il sistema DNS non è facile da usare e la configurazione del DNS per il dominio influisce su attività aziendali importanti, come la posta elettronica.
 
 > [!NOTE]
-> È possibile verificare se si verificano problemi con il dominio verificando il relativo stato. Accedere a **Setup**  >  **domini** di installazione e visualizzare le notifiche nella colonna **stato** . Se viene visualizzato un problema, selezionare altre azioni (tre punti) e quindi fare clic su **Controlla integrità**. Il riquadro che si apre descriverà tutti i problemi che si verificano con il dominio.
+> È possibile verificare se si verificano problemi con il dominio verificando il relativo stato. Accedere a   >  **domini** di installazione e visualizzare le notifiche nella colonna **stato** . Se viene visualizzato un problema, selezionare altre azioni (tre punti) e quindi fare clic su **Controlla integrità**. Il riquadro che si apre descriverà tutti i problemi che si verificano con il dominio.
   
 ## <a name="whats-going-on"></a>Per quale motivo?
 

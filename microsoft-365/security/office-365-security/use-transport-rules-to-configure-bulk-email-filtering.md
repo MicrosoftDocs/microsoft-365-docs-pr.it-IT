@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 description: Gli amministratori possono ottenere informazioni su come utilizzare le regole del flusso di posta (regole di trasporto) per identificare e filtrare la posta in blocco (Gray mail) in Exchange Online Protection (EOP).
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 1f88358973648846d650700bb5939c052851c789
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.openlocfilehash: b029e805147218551ba6ff80fb5abfda3fbfef7f
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49615637"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49658638"
 ---
 # <a name="use-mail-flow-rules-to-filter-bulk-email-in-eop"></a>Usare le regole del flusso di posta per filtrare la posta inviata in blocco in Exchange Online Protection
 
@@ -34,13 +34,15 @@ Se si desiderano ulteriori opzioni per filtrare la posta in blocco, è possibile
 
 In questo argomento viene illustrato come creare queste regole del flusso di posta elettronica nell'interfaccia di amministrazione di Exchange (EAC) e PowerShell (Exchange Online PowerShell per Microsoft 365 organizzazioni con cassette postali in Exchange Online; standalone EOP PowerShell per organizzazioni senza cassette postali di Exchange Online).
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare
+## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare?
 
-- Prima di poter eseguire queste procedure, è necessario disporre delle autorizzazioni seguenti:
+- Prima di poter eseguire le procedure descritte in questo articolo, è necessario disporre delle autorizzazioni in Exchange Online o Exchange Online Protection. In particolare, è necessario il ruolo **regole di trasporto** , assegnato ai gruppi di ruoli Gestione **organizzazione**, gestione **conformità** (amministratori globali) e **Records Management** per impostazione predefinita.
 
-  - In Exchange Online, vedere la voce "flusso di posta" in [autorizzazioni funzionalità in Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/feature-permissions).
+  Per ulteriori informazioni, vedere i seguenti argomenti:
 
-  - In EOP autonomo, è necessario il ruolo regole di trasporto, assegnato ai ruoli OrganizationManagement, ComplianceManagement e RecordsManagement per impostazione predefinita. Per ulteriori informazioni, vedere [autorizzazioni in EOP autonomo](feature-permissions-in-eop.md) e [utilizzo dell'interfaccia di amministrazione di Exchange per modificare l'elenco dei membri nei gruppi di ruoli](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups).
+  - [Autorizzazioni in Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo)
+  - [Autorizzazioni in Exchange Online Protection autonomo](feature-permissions-in-eop.md)
+  - [Utilizzo dell'interfaccia di amministrazione di Exchange modificare l'elenco dei membri nei gruppi di ruoli](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups)
 
 - Per aprire EAC in Exchange Online, vedere interfaccia [di amministrazione di Exchange in Exchange Online](https://docs.microsoft.com/Exchange/exchange-admin-center). Per aprire EAC in EOP autonomo, vedere interfaccia [di amministrazione di Exchange in EOP autonomo](exchange-admin-center-in-exchange-online-protection-eop.md).
 

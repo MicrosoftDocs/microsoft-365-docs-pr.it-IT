@@ -16,12 +16,12 @@ ms.assetid: 758822b5-0126-463a-9d08-7366bb2a807d
 ms.collection:
 - M365-security-compliance
 description: Gli amministratori possono ottenere informazioni sulle opzioni di creazione di report di posta indesiderata, non di posta indesiderata e di phishing in Outlook sul Web (Outlook Web App) in Exchange Online, nonché su come disabilitare tali opzioni di creazione dei rapporti per gli utenti.
-ms.openlocfilehash: ebf266f3bb825a5ef81a3cd2b5d2bceb270fc260
-ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
+ms.openlocfilehash: 0032e807961aed60128d6863899ae0de32d1a627
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48877374"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49659310"
 ---
 # <a name="report-junk-and-phishing-email-in-outlook-on-the-web-in-exchange-online"></a>Segnalare messaggi di posta indesiderata e di phishing in Outlook sul Web in Exchange Online
 
@@ -34,7 +34,7 @@ In Microsoft 365 organizzazioni con cassette postali in Exchange Online, è poss
 
 - Se si è un amministratore di un'organizzazione con cassette postali di Exchange Online, è consigliabile utilizzare il portale degli invii nel centro sicurezza & Compliance. Per ulteriori informazioni, vedere [utilizzare l'invio di amministratore per inviare messaggi di posta indesiderata, phishing, URL e file a Microsoft](admin-submission.md).
 
-- Gli amministratori possono disabilitare o abilitare la possibilità per gli utenti di segnalare i messaggi a Microsoft in Outlook sul Web. Per informazioni dettagliate, vedere la sezione [disabilitare o abilitare la creazione di report di posta indesiderata in Outlook sul Web](#disable-or-enable-junk-email-reporting-in-outlook-on-the-web) più avanti in questo argomento.
+- Gli amministratori possono disabilitare o abilitare la possibilità per gli utenti di segnalare i messaggi a Microsoft in Outlook sul Web. Per informazioni dettagliate, vedere la sezione [disabilitare o abilitare la creazione di report di posta indesiderata in Outlook sul Web](#disable-or-enable-junk-email-reporting-in-outlook-on-the-web) più avanti in questo articolo.
 
 - È possibile configurare i messaggi segnalati in modo che vengano copiati o reindirizzati a una cassetta postale specificata. Per ulteriori informazioni, vedere [criteri degli invii degli utenti](user-submission.md).
 
@@ -64,7 +64,7 @@ In Microsoft 365 organizzazioni con cassette postali in Exchange Online, è poss
 
    - Selezionare il messaggio, fare clic su **non indesiderato** sulla barra degli strumenti, quindi selezionare **non indesiderato** o **phishing**.
 
-     ![Segnalare messaggi di posta indesiderata o di phishing dalla barra multifunzione](../../media/owa-report-not-junk.png)
+     ![Segnalare un messaggio non indesiderato o non di phishing tramite la barra multifunzione](../../media/owa-report-not-junk.png)
 
    - Selezionare uno o più messaggi, fare clic con il pulsante destro del mouse, quindi selezionare **Segna come non indesiderato**.
 
@@ -84,11 +84,11 @@ Per impostazione predefinita, gli utenti possono segnalare messaggi di posta ind
 
 - Per informazioni su come connettersi a PowerShell per Exchange Online, vedere [Connettersi a PowerShell per Exchange Online](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
 
-- È necessario disporre delle autorizzazioni prima di poter eseguire queste procedure. In particolare, è necessario che i **criteri destinatario** o i **destinatari di posta elettronica** in Exchange Online, assegnati ai gruppi di ruoli Gestione **organizzazione** **e destinatari** per impostazione predefinita. Per ulteriori informazioni sui gruppi di ruoli in Exchange Online, vedere [Modify role groups in Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups).
+- Prima di poter eseguire le procedure descritte in questo articolo, è necessario disporre delle autorizzazioni in Exchange Online. In particolare **, sono necessari** i ruoli destinatari o **destinatari di posta elettronica** , assegnati ai gruppi di ruoli Gestione **organizzazione** e **Gestione destinatari** per impostazione predefinita. Per ulteriori informazioni sui gruppi di ruoli in Exchange Online, vedere [autorizzazioni in Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo) e [modificare i gruppi di ruoli in Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups).
 
 - Ogni organizzazione ha un criterio predefinito denominato OwaMailboxPolicy-Default, ma è possibile creare criteri personalizzati. I criteri personalizzati vengono applicati agli utenti con ambito prima del criterio predefinito. Per ulteriori informazioni sui criteri cassetta postale di Outlook sul Web, vedere [criteri cassetta postale di Outlook sul Web in Exchange Online](https://docs.microsoft.com/Exchange/clients-and-mobile-in-exchange-online/outlook-on-the-web/outlook-web-app-mailbox-policies).
 
-- La disattivazione della segnalazione della posta indesiderata non rimuove la possibilità di contrassegnare un messaggio come posta indesiderata o non indesiderata in Outlook sul Web. Selezionando un messaggio nella cartella posta indesiderata e facendo clic su **non** \> **indesiderata** , il messaggio viene spostato di nuovo nella posta in arrivo. Selezionando un messaggio in qualsiasi altra cartella di posta elettronica **e facendo clic su posta** indesiderata, \> **Junk** il messaggio viene spostato nella cartella posta indesiderata. Ciò che non è più disponibile è l'opzione per segnalare il messaggio a Microsoft.
+- La disattivazione della segnalazione della posta indesiderata non rimuove la possibilità di contrassegnare un messaggio come posta indesiderata o non indesiderata in Outlook sul Web. Selezionando un messaggio nella cartella posta indesiderata e facendo clic su **non** \> **indesiderata** , il messaggio viene spostato di nuovo nella posta in arrivo. Selezionando un messaggio in qualsiasi altra cartella di posta elettronica **e facendo clic su posta** indesiderata, \>  il messaggio viene spostato nella cartella posta indesiderata. Ciò che non è più disponibile è l'opzione per segnalare il messaggio a Microsoft.
 
 ### <a name="use-exchange-online-powershell-to-disable-or-enable-junk-email-reporting-in-outlook-on-the-web"></a>Utilizzo di PowerShell di Exchange Online per disabilitare o abilitare la segnalazione della posta indesiderata in Outlook sul Web
 
@@ -128,9 +128,9 @@ Per verificare la corretta abilitazione o disabilitazione della creazione di rep
   Get-OwaMailboxPolicy | Format-Table Name,ReportJunkEmailEnabled
   ```
 
-- Aprire una cassetta postale di un utente in questione in Outlook sul Web, selezionare un messaggio nella posta in arrivo **, fare clic** su posta indesiderata e verificare che la \> **Junk** richiesta di segnalazione del messaggio a Microsoft sia o non sia visualizzata. <sup>\*</sup>
+- Aprire una cassetta postale di un utente in questione in Outlook sul Web, selezionare un messaggio nella posta in arrivo **, fare clic** su posta indesiderata e verificare che la \>  richiesta di segnalazione del messaggio a Microsoft sia o non sia visualizzata.<sup>\*</sup>
 
-- Aprire una cassetta postale di un utente in questione in Outlook sul Web, selezionare un messaggio nella cartella posta indesiderata **, fare clic su posta** indesiderata \> **Junk** e verificare che la richiesta di segnalazione del messaggio a Microsoft sia o non sia visualizzata. <sup>\*</sup>
+- Aprire una cassetta postale di un utente in questione in Outlook sul Web, selezionare un messaggio nella cartella posta indesiderata **, fare clic su posta** indesiderata \>  e verificare che la richiesta di segnalazione del messaggio a Microsoft sia o non sia visualizzata.<sup>\*</sup>
 
 <sup>\*</sup> Gli utenti possono nascondere il prompt per segnalare il messaggio mentre segnalano il messaggio. Per controllare questa impostazione in Outlook sul Web:
 

@@ -22,16 +22,16 @@ search.appverid:
 - GEA150
 ms.assetid: b5b633ba-1e56-4a98-8ff5-2acaac63a5c8
 description: Informazioni su come trovare il registrar e il provider di hosting DNS usando la ricerca di InterNIC.
-ms.openlocfilehash: 8fa75800125179f046f3af76eea490d760b9f6cd
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 434e30709b112cf591159a1692540b8ef2b6bb65
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48645324"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49655543"
 ---
 # <a name="find-your-domain-registrar"></a>Trovare il registrar
 
- Se non si trova ciò che si sta cercando, **[vedere le domande frequenti sui domini](../setup/domains-faq.md)**. 
+ Se non si trova ciò che si sta cercando, **[vedere le domande frequenti sui domini](../setup/domains-faq.yml)**. 
   
 ## <a name="domain-registrar"></a>Registrar per i domini
   

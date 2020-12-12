@@ -21,16 +21,16 @@ search.appverid:
 - MOE150
 ms.assetid: 84acd4fc-6eec-4d00-8bed-568f036ae2af
 description: Informazioni su come verificare il dominio e configurare i record DNS per la posta elettronica, Skype for business online e altri servizi in CloudFlare per Microsoft.
-ms.openlocfilehash: 301ed156584d9a9a2b84b88db7d6969ade5b34a2
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 110bd96c0eecf40ae96efe7055d82a8d12dde607
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48646152"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49657961"
 ---
 # <a name="create-dns-records-at-cloudflare-for-microsoft"></a>Creare record DNS in CloudFlare per Microsoft
 
- Se non si trova ciò che si sta cercando, **[vedere le domande frequenti sui domini](../setup/domains-faq.md)**. 
+ Se non si trova ciò che si sta cercando, **[vedere le domande frequenti sui domini](../setup/domains-faq.yml)**. 
   
 Se il proprio provider di hosting DNS è CloudFlare, seguire i passaggi di questo articolo per verificare il dominio e configurare i record DNS per la posta elettronica, Skype for Business Online e così via.
   
@@ -84,7 +84,7 @@ Prima di usare il proprio dominio con Microsoft, è necessario dimostrare di ess
 3. Nella pagina **Panoramica** del dominio selezionare **DNS**.
 
   
-4. Nella pagina **gestione DNS** fare clic su **Aggiungi record**e quindi selezionare i valori della tabella seguente. 
+4. Nella pagina **gestione DNS** fare clic su **Aggiungi record** e quindi selezionare i valori della tabella seguente. 
     
     |**Tipo**|**Name**|**Automatic TTL**|**Content**|
     |:-----|:-----|:-----|:----|
@@ -128,7 +128,7 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
 3. Nella pagina **Panoramica** del dominio selezionare **DNS**.
 
   
-4. Nella pagina **gestione DNS** fare clic su **Aggiungi record**e quindi selezionare i valori della tabella seguente. 
+4. Nella pagina **gestione DNS** fare clic su **Aggiungi record** e quindi selezionare i valori della tabella seguente. 
     
     |**Tipo**|**Nome**|**Mail server**|**Priorità**|**TTL**|
     |:-----|:-----|:-----|:-----|:-----|
@@ -156,7 +156,7 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
   
 4. Aggiungere il primo dei cinque record CNAME.
     
-    Nella pagina **gestione DNS** fare clic su **Aggiungi record**e quindi selezionare i valori della tabella seguente.
+    Nella pagina **gestione DNS** fare clic su **Aggiungi record** e quindi selezionare i valori della tabella seguente.
     
     
     |**Tipo**|**Nome**|**Destinazione**|**TTL**|
@@ -190,7 +190,7 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
 3. Nella pagina **Panoramica** del dominio selezionare **DNS**.
 
   
-4. Nella pagina **gestione DNS** fare clic su **Aggiungi record**e quindi selezionare i valori della tabella seguente.  
+4. Nella pagina **gestione DNS** fare clic su **Aggiungi record** e quindi selezionare i valori della tabella seguente.  
     
     |**Tipo**|**Name**|**TTL**|**Content**|
     |:-----|:-----|:-----|:-----|
@@ -215,7 +215,7 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
   
 4. Aggiungere il primo dei due record SRV.
 
-    Nella pagina **gestione DNS** fare clic su **Aggiungi record**e quindi selezionare i valori della prima riga della tabella seguente.
+    Nella pagina **gestione DNS** fare clic su **Aggiungi record** e quindi selezionare i valori della prima riga della tabella seguente.
         
     |**Tipo**|**Service**|**Protocol**|**Name**|**TTL**|**Priorità**|**Peso**|**Porta**|**Target**|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|

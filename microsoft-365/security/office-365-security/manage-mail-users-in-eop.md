@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.assetid: 4bfaf2ab-e633-4227-8bde-effefb41a3db
 description: Informazioni su come gestire gli utenti di posta elettronica in Exchange Online Protection (EOP), tra cui l'utilizzo della sincronizzazione della directory, EAC e PowerShell per la gestione degli utenti.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 3c3e69def731a85c0dccffdcb5620560dcf00052
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.openlocfilehash: a8258a63fe0fbf4a6b5641fbdef213f25de2e4dd
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49356728"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49658834"
 ---
 # <a name="manage-mail-users-in-standalone-eop"></a>Gestire gli utenti di posta in Exchange Online Protection autonomo
 
@@ -30,9 +30,9 @@ Nelle organizzazioni standalone di Exchange Online Protection (EOP) prive di cas
 > [!NOTE]
 > Quando si crea un utente di posta elettronica, l'account utente corrispondente è disponibile nell'interfaccia di amministrazione di Microsoft 365. Quando si crea un account utente nell'interfaccia di amministrazione di Microsoft 365, non è possibile utilizzare tale account per creare un utente di posta elettronica.
 
-Il metodo consigliato per creare e gestire gli utenti di posta in EOP autonomo consiste nell'utilizzare la sincronizzazione della directory come descritto nella sezione [utilizzo della sincronizzazione della directory per la gestione degli utenti di posta elettronica](#use-directory-synchronization-to-manage-mail-users) più avanti in questo argomento.
+Il metodo consigliato per creare e gestire gli utenti di posta in EOP autonomo consiste nell'utilizzare la sincronizzazione della directory come descritto nella sezione [utilizzo della sincronizzazione della directory per la gestione degli utenti di posta elettronica](#use-directory-synchronization-to-manage-mail-users) più avanti in questo articolo.
 
-Per le organizzazioni di EOP autonome con un numero limitato di utenti, è possibile aggiungere e gestire gli utenti di posta elettronica nell'interfaccia di amministrazione di Exchange (EAC) o in EOP standalone PowerShell come descritto in questo argomento.
+Per le organizzazioni di EOP autonome con un numero limitato di utenti, è possibile aggiungere e gestire gli utenti di posta elettronica nell'interfaccia di amministrazione di Exchange (EAC) o in EOP standalone PowerShell come descritto in questo articolo.
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare?
 
@@ -42,9 +42,9 @@ Per le organizzazioni di EOP autonome con un numero limitato di utenti, è possi
 
 - Quando si creano utenti di posta elettronica in EOP PowerShell, è possibile che si verifichi la limitazione. Inoltre, i cmdlet di PowerShell di EOP utilizzano un metodo di elaborazione batch che genera un ritardo di propagazione di alcuni minuti prima che i risultati dei comandi siano visibili.
 
-- È necessario disporre delle autorizzazioni prima di poter eseguire queste procedure. In particolare, per impostazione predefinita, sono necessari i ruoli Creazione destinatario di posta elettronica (Crea) e destinatari della posta (modifica), assegnati ai gruppi di ruoli OrganizationManagement (Global Admins) e RecipientManagement. Per ulteriori informazioni, vedere [autorizzazioni in EOP autonomo](feature-permissions-in-eop.md) e [utilizzo dell'interfaccia di amministrazione di Exchange per modificare l'elenco dei membri nei gruppi di ruoli](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups).
+- Prima di poter eseguire le procedure descritte in questo articolo, è necessario disporre delle autorizzazioni in Exchange Online Protection. In particolare, sono necessari i ruoli per la creazione dei destinatari di **posta** (creazione) e i **destinatari di posta** (modifica), assegnati ai gruppi di ruoli Gestione **organizzazione** (amministratori globali) e **Gestione destinatari** per impostazione predefinita. Per ulteriori informazioni, vedere [autorizzazioni in EOP autonomo](feature-permissions-in-eop.md) e [utilizzo dell'interfaccia di amministrazione di Exchange per modificare l'elenco dei membri nei gruppi di ruoli](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups).
 
-- Per informazioni sui tasti di scelta rapida che possono essere applicati alle procedure descritte in questo argomento, vedere tasti [di scelta rapida per l'interfaccia di amministrazione di Exchange in Exchange Online](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center).
+- Per informazioni sui tasti di scelta rapida che possono essere applicati alle procedure descritte in questo articolo, vedere tasti [di scelta rapida per l'interfaccia di amministrazione di Exchange in Exchange Online](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center).
 
 > [!TIP]
 > Problemi? È possibile richiedere supporto nei forum di Exchange. Visitare il forum di [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351) .
@@ -53,7 +53,7 @@ Per le organizzazioni di EOP autonome con un numero limitato di utenti, è possi
 
 ### <a name="use-the-eac-to-create-mail-users"></a>Utilizzo dell'interfaccia di amministrazione di Exchange per creare utenti di posta
 
-1. Nell'interfaccia di amministrazione di Exchange **Recipients** , accedere a \> **contatti** destinatari
+1. Nell'interfaccia di amministrazione di Exchange  , accedere a \> **contatti** destinatari
 
 2. Fare clic su **nuova** ![ nuova icona ](../../media/ITPro-EAC-AddIcon.png) . Nella pagina **nuovo utente di posta elettronica** che viene visualizzata, configurare le impostazioni seguenti. Sono necessarie le impostazioni contrassegnate con un <sup>\*</sup> .
 

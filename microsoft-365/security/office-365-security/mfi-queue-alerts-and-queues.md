@@ -11,12 +11,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 37640c80-ce6f-47e2-afd1-bc1d3c50e637
 description: Gli amministratori possono imparare a usare il widget code nel dashboard del flusso di posta nel centro sicurezza & conformità per monitorare il flusso di posta non riuscito nelle loro organizzazioni locali o partner su connettori in uscita.
-ms.openlocfilehash: c582a7f459d89fa1515713c4f55dea14b619a6ec
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.openlocfilehash: a1563c61620ef9f1ae97739681f426fd0ea38bd8
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49616393"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49659257"
 ---
 # <a name="queues-insight-in-the-security--compliance-center"></a>Insight nelle code nel centro sicurezza & Compliance
 
@@ -32,7 +32,7 @@ Microsoft 365 continuerà a riprovare al recapito per 24 ore. Dopo 24 ore, i mes
 
 Se il volume della posta in coda supera la soglia predefinita (il valore predefinito è 200 messaggi), le informazioni sono disponibili nelle posizioni seguenti:
 
-- Le **Code** Insight nel dashboard del [flusso di posta elettronica](mail-flow-insights-v2.md) nel [Centro sicurezza & Compliance](https://protection.office.com). Per ulteriori informazioni, vedere l'articolo relativo alle [code nella sezione Dashboard del flusso di posta](#queues-insight-in-the-mail-flow-dashboard) di questo argomento.
+- Le **Code** Insight nel dashboard del [flusso di posta elettronica](mail-flow-insights-v2.md) nel [Centro sicurezza & Compliance](https://protection.office.com). Per ulteriori informazioni, vedere le [Code Insight nella sezione Dashboard del flusso di posta](#queues-insight-in-the-mail-flow-dashboard) in questo articolo.
 
 - Viene visualizzato un avviso in **avvisi recenti** il dashboard avvisi nel [Centro sicurezza & conformità](https://protection.office.com) (Dashboard **avvisi** \>  o <https://protection.office.com/alertsdashboard> ).
 

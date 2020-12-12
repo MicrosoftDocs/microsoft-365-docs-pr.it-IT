@@ -26,19 +26,19 @@ search.appverid:
 - ZWD160
 ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: In questo articolo, gli amministratori possono ottenere informazioni sulla protezione dei collegamenti sicuri in Defender per Office 365 per proteggere la propria organizzazione dal phishing e da altri attacchi che utilizzano URL dannosi.
-ms.openlocfilehash: f2a747b0776a16ac981158ab866f28699583a06b
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.openlocfilehash: 066732e2f1a886e303fea86730baeb78c8152990
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49616321"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49659490"
 ---
 # <a name="safe-links-in-microsoft-defender-for-office-365"></a>Collegamenti sicuri in Microsoft Defender per Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 > [!IMPORTANT]
-> Questo articolo è destinato ai clienti aziendali che dispongono di [Microsoft Defender per Office 365](office-365-atp.md). Se si sta utilizzando Outlook.com, Microsoft 365 Family o Microsoft 365 Personal e si cercano informazioni su Safelinks in Outlook, vedere [Advanced Outlook.com Security](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2).
+> Questo articolo è rivolto ai clienti aziendali di [Microsoft Defender per Office 365](office-365-atp.md). Se si sta utilizzando Outlook.com, Microsoft 365 Family o Microsoft 365 Personal e si cercano informazioni su Safelinks in Outlook, vedere [Advanced Outlook.com Security](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2).
 
 Collegamenti sicuri è una funzionalità di [Defender per Office 365](office-365-atp.md) che fornisce l'analisi e la riscrittura degli URL dei messaggi di posta elettronica in ingresso nel flusso di posta e la verifica del tempo di clic su URL e collegamenti nei messaggi di posta elettronica e in altre posizioni. L'analisi dei collegamenti sicuri si verifica in aggiunta alla normale [protezione da posta indesiderata e anti-malware](anti-spam-and-anti-malware-protection.md) nei messaggi di posta elettronica in ingresso in Exchange Online Protection (EOP). L'analisi dei collegamenti sicuri può aiutare a proteggere l'organizzazione da collegamenti dannosi che vengono utilizzati in tentativi di phishing e altri attacchi.
 
@@ -50,7 +50,7 @@ Protezione dei collegamenti sicuri è disponibile nei seguenti percorsi:
 
 - **Microsoft teams** (attualmente in tap Preview): la protezione dei collegamenti sicuri per i collegamenti nelle conversazioni dei team, nelle chat di gruppo o nei canali è controllata anche dai criteri collegamenti sicuri. Non esiste alcun criterio di collegamenti sicuri predefinito, **in modo da ottenere la protezione dei collegamenti sicuri nei team, è necessario creare uno o più criteri collegamenti sicuri**.
 
-  Per ulteriori informazioni sulla protezione dei collegamenti sicuri nei team, vedere la sezione [impostazioni collegamenti sicuri per Microsoft teams](#safe-links-settings-for-microsoft-teams) più avanti in questo argomento.
+  Per ulteriori informazioni sulla protezione dei collegamenti sicuri nei team, vedere la sezione [impostazioni collegamenti sicuri per Microsoft teams](#safe-links-settings-for-microsoft-teams) più avanti in questo articolo.
 
 - **App di office 365**: la protezione dei collegamenti sicuri per le app di Office 365 è disponibile in APS desktop, mobili e Web supportati. È possibile **configurare** la protezione dei collegamenti sicuri per le app di Office 365 nell'impostazione globale **all'esterno** dei criteri collegamenti sicuri. Per istruzioni, vedere [configurare le impostazioni globali per le impostazioni dei collegamenti sicuri in Microsoft Defender per Office 365](configure-global-settings-for-safe-links.md).
 
@@ -80,8 +80,8 @@ Nella tabella seguente vengono descritti gli scenari per i collegamenti sicuri i
 |Jean è un membro del reparto marketing. La protezione dei collegamenti sicuri per le app di Office 365 è attivata nelle impostazioni globali per i collegamenti sicuri e viene applicato un criterio di collegamenti sicuri che si applica ai membri del reparto marketing. Jean apre una presentazione di PowerPoint in un messaggio di posta elettronica e quindi fa clic su un URL nella presentazione.|Jean è protetto da collegamenti sicuri. <p> Jean è incluso in un criterio per i collegamenti sicuri e la protezione dei collegamenti sicuri per le app di Office 365 è attivata. <p> Per ulteriori informazioni sui requisiti per la protezione dei collegamenti sicuri nelle app di Office 365, vedere la sezione relativa alle [impostazioni dei collegamenti sicuri per office 365 Apps](#safe-links-settings-for-office-365-apps) più avanti in questo articolo.|
 |L'organizzazione Microsoft 365 E5 di Chris non dispone di criteri collegamenti sicuri configurati. Chris riceve un messaggio di posta elettronica da un mittente esterno che contiene un URL di un sito Web dannoso che infine fa clic su.|Chris non è protetto da collegamenti sicuri. <p> Un amministratore deve creare almeno un criterio di collegamenti sicuri per tutti gli utenti per ottenere la protezione dei collegamenti sicuri nei messaggi di posta elettronica in ingresso. Chris deve essere incluso nelle condizioni di criteri per ottenere la protezione dei collegamenti sicuri.|
 |Nell'organizzazione di Pat, nessun amministratore ha creato alcun criterio per i collegamenti sicuri, ma la protezione dei collegamenti sicuri per le app di Office 365 è attivata. Pat apre un documento di Word e fa clic su un URL nel file.|Pat non è protetto da collegamenti sicuri. <p> Anche se la protezione dei collegamenti sicuri per le app di Office 365 è attivata globalmente, Pat non è incluso in tutti i criteri per i collegamenti sicuri attivi, pertanto non è possibile applicare la protezione.|
-|Nell'organizzazione di Lee, `https://tailspintoys.com` è configurato nell'elenco **blocca gli URL seguenti** nelle impostazioni globali per i collegamenti sicuri. Un criterio per i collegamenti sicuri che include Lee esiste già. Lee riceve un messaggio di posta elettronica che contiene l'URL `https://tailspintoys.com/aboutus/trythispage` . Lee fa clic sull'URL.|L'URL potrebbe essere bloccato automaticamente per Lee. dipende dalla voce URL nell'elenco e dal client di posta elettronica utilizzato Lee. Per ulteriori informazioni, vedere la sezione ["blocca gli URL seguenti" per i collegamenti sicuri](#block-the-following-urls-list-for-safe-links) più avanti in questo argomento.|
-|Jamie e Julia lavorano entrambi per contoso.com. Molto tempo fa, gli amministratori hanno configurato i criteri per i collegamenti sicuri che si applicano sia a Jamie che a Julia. Jamie Invia un messaggio di posta elettronica a Julia, non sapendo che l'indirizzo di posta elettronica contiene un URL dannoso.|Julia è protetta da collegamenti sicuri **se** il criterio collegamenti sicuri che si applica a lei è configurato per essere applicato ai messaggi tra i destinatari interni. Per ulteriori informazioni, vedere la sezione relativa alle [impostazioni dei collegamenti sicuri per i messaggi di posta elettronica](#safe-links-settings-for-email-messages) più avanti in questo argomento.|
+|Nell'organizzazione di Lee, `https://tailspintoys.com` è configurato nell'elenco **blocca gli URL seguenti** nelle impostazioni globali per i collegamenti sicuri. Un criterio per i collegamenti sicuri che include Lee esiste già. Lee riceve un messaggio di posta elettronica che contiene l'URL `https://tailspintoys.com/aboutus/trythispage` . Lee fa clic sull'URL.|L'URL potrebbe essere bloccato automaticamente per Lee. dipende dalla voce URL nell'elenco e dal client di posta elettronica utilizzato Lee. Per ulteriori informazioni, vedere la sezione ["blocca gli URL seguenti" per i collegamenti sicuri](#block-the-following-urls-list-for-safe-links) più avanti in questo articolo.|
+|Jamie e Julia lavorano entrambi per contoso.com. Molto tempo fa, gli amministratori hanno configurato i criteri per i collegamenti sicuri che si applicano sia a Jamie che a Julia. Jamie Invia un messaggio di posta elettronica a Julia, non sapendo che l'indirizzo di posta elettronica contiene un URL dannoso.|Julia è protetta da collegamenti sicuri **se** il criterio collegamenti sicuri che si applica a lei è configurato per essere applicato ai messaggi tra i destinatari interni. Per ulteriori informazioni, vedere la sezione relativa alle [impostazioni dei collegamenti sicuri per i messaggi di posta elettronica](#safe-links-settings-for-email-messages) più avanti in questo articolo.|
 
 ## <a name="safe-links-settings-for-email-messages"></a>Impostazioni dei collegamenti sicuri per i messaggi di posta elettronica
 

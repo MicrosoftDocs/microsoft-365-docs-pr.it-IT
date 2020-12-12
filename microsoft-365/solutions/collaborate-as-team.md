@@ -17,12 +17,12 @@ ms.custom:
 localization_priority: Normal
 f1.keywords: NOCSH
 description: Informazioni sui passaggi di configurazione di Microsoft 365 necessari per configurare un team per l'attività, la conversazione e la documentazione per la collaborazione con i clienti del team.
-ms.openlocfilehash: 7f00acb7b7b58169d6a66bfa4cabdc5a3035f67f
-ms.sourcegitcommit: 8a726ed7ec19a8728c079780fa4d343a5f759fbb
+ms.openlocfilehash: cc962e22bde70220e07f805b0a7a83c111886369
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "49030030"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49659607"
 ---
 # <a name="collaborate-with-guests-in-a-team"></a>Collaborare con gli utenti guest in un team
 
@@ -36,15 +36,15 @@ In questo video vengono illustrati i passaggi di configurazione descritti in que
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE44NTr?autoplay=false]
 
-## <a name="azure-organizational-relationships-settings"></a>Impostazioni delle relazioni organizzative di Azure
+## <a name="azure-external-collaboration-settings"></a>Impostazioni di collaborazione esterna di Azure
 
-La condivisione in Microsoft 365 è regolata al livello più alto dalle [impostazioni delle relazioni organizzative in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/external-identities/delegate-invitations). Se la condivisione Guest è disabilitata o limitata in Azure AD, questa impostazione sostituisce tutte le impostazioni di condivisione configurate in Microsoft 365.
+La condivisione in Microsoft 365 è regolata al livello più alto dalle [impostazioni di collaborazione esterna B2B in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/external-identities/delegate-invitations). Se la condivisione Guest è disabilitata o limitata in Azure AD, questa impostazione sostituisce tutte le impostazioni di condivisione configurate in Microsoft 365.
 
-Controllare le impostazioni delle relazioni organizzative per garantire che la condivisione con gli ospiti non sia bloccata.
+Controllare le impostazioni di collaborazione esterna B2B per garantire che la condivisione con gli utenti non sia bloccata.
 
 ![Screenshot della pagina delle impostazioni delle relazioni aziendali di Azure Active Directory](../media/azure-ad-organizational-relationships-settings.png)
 
-Per impostare le impostazioni delle relazioni organizzative
+Per impostare le impostazioni di collaborazione esterna
 
 1. Accedere a Azure Active Directory all'indirizzo [https://aad.portal.azure.com](https://aad.portal.azure.com) .
 2. Nel riquadro di spostamento a sinistra, fare clic su **Azure Active Directory**.
@@ -55,7 +55,7 @@ Per impostare le impostazioni delle relazioni organizzative
 
 Prendere nota delle impostazioni nella sezione **vincoli di collaborazione** . Verificare che i domini degli utenti con cui si desidera collaborare non siano bloccati.
 
-Se si lavora con clienti provenienti da più organizzazioni, è possibile che si desideri limitare la possibilità di accedere ai dati della directory. Ciò impedirà loro di vedere chi altro è un ospite nella directory. Per eseguire questa operazione, in **restrizioni di accesso degli utenti Guest** , selezionare **Guest gli utenti hanno accesso limitato alle proprietà e l'appartenenza delle impostazioni degli oggetti directory** o **l'accesso degli utenti Guest è limitato alle proprietà e alle appartenenze dei propri oggetti directory**.
+Se si lavora con clienti provenienti da più organizzazioni, è possibile che si desideri limitare la possibilità di accedere ai dati della directory. Ciò impedirà loro di vedere chi altro è un ospite nella directory. Per eseguire questa operazione, in **restrizioni di accesso degli utenti Guest**, selezionare **Guest gli utenti hanno accesso limitato alle proprietà e l'appartenenza delle impostazioni degli oggetti directory** o **l'accesso degli utenti Guest è limitato alle proprietà e alle appartenenze dei propri oggetti directory**.
 
 ## <a name="teams-guest-access-settings"></a>Impostazioni di accesso Guest Teams
 
@@ -73,6 +73,8 @@ Per configurare le impostazioni di accesso guest di Teams
 4. Nell'interfaccia di amministrazione dei team, nel riquadro di spostamento a sinistra, espandere **impostazioni a livello di organizzazione** e fare clic su **accesso Guest**.
 5. Assicurarsi che l'opzione **Consenti accesso ospite in Teams** sia **** abilitata.
 6. Apportare le modifiche desiderate alle impostazioni guest aggiuntive e quindi fare clic su **Salva**.
+
+Dopo aver abilitato l'accesso Guest ai team, è possibile controllare l'accesso Guest ai singoli team e ai siti di SharePoint associati utilizzando le etichette di riservatezza. Per ulteriori informazioni, vedere [use Sensitivity labels to protect content in Microsoft teams, microsoft 365 Groups e SharePoint sites](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites).
 
 > [!NOTE]
 > Dopo averla attivata, potrebbero essere necessarie fino a ventiquattro ore per rendere attive le impostazioni Guest del team.
@@ -105,7 +107,7 @@ Se si desidera consentire la condivisione di file e cartelle con persone non aut
 
 Per impostare le impostazioni di condivisione a livello di organizzazione di SharePoint
 
-1. Nell'interfaccia di amministrazione di Microsoft 365, nel riquadro di spostamento a sinistra, in interfaccia di **Amministrazione** , fare clic su **SharePoint**.
+1. Nell'interfaccia di amministrazione di Microsoft 365, nel riquadro di spostamento a sinistra, in interfaccia di **Amministrazione**, fare clic su **SharePoint**.
 2. Nell'interfaccia di amministrazione di SharePoint, nel riquadro di spostamento a sinistra, espandere **criteri** e quindi fare clic su **condivisione**.
 3. Assicurarsi che la condivisione esterna per SharePoint sia impostata su **tutti gli utenti** o **gli ospiti nuovi e esistenti**.
 4. Se si apportano modifiche, fare clic su **Salva**.
@@ -148,10 +150,9 @@ Gli utenti verranno invitati in un secondo momento. Successivamente, è importan
 
 ## <a name="sharepoint-site-level-sharing-settings"></a>Impostazioni di condivisione a livello di sito di SharePoint
 
-Controllare le impostazioni di condivisione a livello di sito per assicurarsi che consentano il tipo di accesso desiderato per il team. Ad esempio, se si impostano le impostazioni a livello di organizzazione per tutti gli **utenti** , ma si desidera che tutti gli ospiti eseguano l'autenticazione per questo team, assicurarsi che le impostazioni di condivisione a livello di sito siano impostate su **Guest nuovi e esistenti**.
+Controllare le impostazioni di condivisione a livello di sito per assicurarsi che consentano il tipo di accesso desiderato per il team. Ad esempio, se si impostano le impostazioni a livello di organizzazione per tutti gli **utenti**, ma si desidera che tutti gli ospiti eseguano l'autenticazione per questo team, assicurarsi che le impostazioni di condivisione a livello di sito siano impostate su **Guest nuovi e esistenti**.
 
 ![Screenshot delle impostazioni di condivisione esterna dei siti di SharePoint](../media/sharepoint-site-external-sharing-settings.png)
-
 
 Per impostare le impostazioni di condivisione a livello di sito
 1. Nell'interfaccia di amministrazione di SharePoint, nel riquadro di spostamento a sinistra, espandere **siti** e fare clic su **siti attivi**.
@@ -167,14 +168,14 @@ Le impostazioni di condivisione Guest sono ora configurate, quindi è possibile 
 Per invitare gli utenti interni a un team
 1. Nel team, fare clic su **altre opzioni** ( **\*\*\*** ), quindi fare clic su **Aggiungi membro**.
 2. Digitare il nome della persona che si desidera invitare.
-3. Fare clic su **Aggiungi** , quindi fare clic su **Chiudi**.
+3. Fare clic su **Aggiungi**, quindi fare clic su **Chiudi**.
 
 Per invitare gli ospiti a un team
 1. Nel team, fare clic su **altre opzioni** ( **\*\*\*** ), quindi fare clic su **Aggiungi membro**.
 2. Digitare l'indirizzo di posta elettronica dell'ospite che si desidera invitare.
 3. Fare clic su **modifica informazioni Guest**.
 4. Digitare il nome completo dell'ospite e fare clic sul segno di spunta.
-5. Fare clic su **Aggiungi** , quindi fare clic su **Chiudi**.
+5. Fare clic su **Aggiungi**, quindi fare clic su **Chiudi**.
 
 ## <a name="see-also"></a>Vedere anche
 

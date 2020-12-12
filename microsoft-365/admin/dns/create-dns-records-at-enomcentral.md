@@ -21,16 +21,16 @@ search.appverid:
 - MOE150
 ms.assetid: a6626053-a9c8-445b-81ee-eeb6672fae77
 description: Informazioni su come verificare il dominio e configurare i record DNS per la posta elettronica, Skype for business online e altri servizi in eNomCentral per Microsoft.
-ms.openlocfilehash: c60c33f4be94e2f7719fdfc583500c6d1164991d
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: e6e05b987a893da582ea7fb062eafe421861b970
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48646164"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49658112"
 ---
 # <a name="create-dns-records-at-enomcentral-for-microsoft"></a>Creare record DNS in eNomCentral per Microsoft
 
- **Se non si trova ciò che si sta cercando, [vedere le domande frequenti sui domini](../setup/domains-faq.md)**.
+ **Se non si trova ciò che si sta cercando, [vedere le domande frequenti sui domini](../setup/domains-faq.yml)**.
 
 Se il proprio provider di hosting DNS è eNomCentral, seguire i passaggi di questo articolo per verificare il dominio e configurare i record DNS per posta elettronica, Skype for Business online e così via.
 
@@ -53,7 +53,7 @@ Seguire i passaggi indicati sotto oppure [guardare il video (iniziare da 0:46)](
 
    ![eNom-BP-Configure-1-1](../../media/6f754710-fd29-4a0a-b362-fa7a5c5ff74f.png)
 
-2. In **My Domains**selezionare il nome del dominio che si desidera modificare.
+2. In **My Domains** selezionare il nome del dominio che si desidera modificare.
 
    ![eNom-BP-Configure-1-2](../../media/09d53e84-371c-4704-a8ce-e429ce9e133a.png)
 
@@ -101,7 +101,7 @@ Seguire i passaggi indicati sotto oppure [guardare il video (iniziare da 3:40)](
 
    ![eNom-BP-Configure-1-1](../../media/6f754710-fd29-4a0a-b362-fa7a5c5ff74f.png)
 
-2. In **My Domains**selezionare il nome del dominio che si desidera modificare.
+2. In **My Domains** selezionare il nome del dominio che si desidera modificare.
 
    ![eNom-BP-Configure-1-2](../../media/09d53e84-371c-4704-a8ce-e429ce9e133a.png)
 
@@ -117,7 +117,7 @@ Seguire i passaggi indicati sotto oppure [guardare il video (iniziare da 3:40)](
 
    |Nome host|Indirizzo|Pref|
    |---|---|---|
-   |@| *\<domain-key\>*  . mail.protection.outlook.com.  <br/> **Questo valore DEVE terminare con un punto (.)** <br/> **Nota:** Ottenere il vostro  *\<domain-key\>*  dal vostro account Microsoft. [Come trovarlo](../get-help-with-domains/information-for-dns-records.md)|10    <br/> Per altre informazioni sulla priorità, vedere [Informazioni sulla priorità MX](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq).|
+   |@| *\<domain-key\>*  . mail.protection.outlook.com.  <br/> **Questo valore DEVE terminare con un punto (.)** <br/> **Nota:** Ottenere il vostro  *\<domain-key\>*  dal vostro account Microsoft. [Come trovarlo](../get-help-with-domains/information-for-dns-records.md)|10   <br/> Per altre informazioni sulla priorità, vedere [Informazioni sulla priorità MX](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq).|
 
    ![eNom-BP-Configure-2-1](../../media/c32e8954-8209-4f77-a3a8-4b7aeea325d5.png)
 
@@ -142,7 +142,7 @@ Seguire i passaggi indicati sotto oppure [guardare il video (iniziare da 4:24)](
 
    ![eNom-BP-Configure-1-1](../../media/6f754710-fd29-4a0a-b362-fa7a5c5ff74f.png)
 
-2. In **My Domains**selezionare il nome del dominio che si desidera modificare.
+2. In **My Domains** selezionare il nome del dominio che si desidera modificare.
 
    ![eNom-BP-Configure-1-2](../../media/09d53e84-371c-4704-a8ce-e429ce9e133a.png)
 
@@ -184,7 +184,7 @@ Seguire i passaggi indicati sotto oppure [guardare il video (iniziare da 5:12)](
 
    ![eNom-BP-Configure-1-1](../../media/6f754710-fd29-4a0a-b362-fa7a5c5ff74f.png)
 
-2. In **My Domains**selezionare il nome del dominio che si desidera modificare.
+2. In **My Domains** selezionare il nome del dominio che si desidera modificare.
 
    ![eNom-BP-Configure-1-2](../../media/09d53e84-371c-4704-a8ce-e429ce9e133a.png)
 
@@ -215,7 +215,7 @@ Seguire i passaggi indicati sotto oppure [guardare il video (iniziare da 5:50)](
 
    ![eNom-BP-Configure-1-1](../../media/6f754710-fd29-4a0a-b362-fa7a5c5ff74f.png)
 
-2. In **My Domains**selezionare il nome del dominio che si desidera modificare.
+2. In **My Domains** selezionare il nome del dominio che si desidera modificare.
 
    ![eNom-BP-Configure-1-2](../../media/09d53e84-371c-4704-a8ce-e429ce9e133a.png)
 

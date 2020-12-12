@@ -21,16 +21,16 @@ search.appverid:
 - MOE150
 ms.assetid: 9ddcc2fc-9433-4335-8192-6ffb1f541087
 description: Informazioni su come verificare il dominio e configurare i record DNS per la posta elettronica, Skype for business online e altri servizi in name.com per Microsoft.
-ms.openlocfilehash: ce465e06b3bc18c824d741ee4cba4b9f4f410d90
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 2330755412abfe262ac79c4acbfc12e33af76fe2
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48645888"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49657828"
 ---
 # <a name="create-dns-records-at-namecom-for-microsoft"></a>Creare record DNS in name.com per Microsoft
 
- **Se non si trova ciò che si sta cercando, [vedere le domande frequenti sui domini](../setup/domains-faq.md)**. 
+ **Se non si trova ciò che si sta cercando, [vedere le domande frequenti sui domini](../setup/domains-faq.yml)**. 
   
 Se il proprio provider di hosting DNS è name.com, seguire i passaggi di questo articolo per verificare il dominio e configurare i record DNS per posta elettronica, Skype for Business online e così via.
   
@@ -52,7 +52,7 @@ Prima di usare il proprio dominio con Microsoft, è necessario dimostrare di ess
     
     ![Name-BP-Configure-1-1](../../media/1869b416-1d3f-4fb1-99c6-62b74ca7a4c7.png)
   
-2. In **My Domains**selezionare il nome del dominio che si desidera modificare.
+2. In **My Domains** selezionare il nome del dominio che si desidera modificare.
     
     ![Name-BP-Configure-1-2](../../media/c8b96e1e-aa35-4fb1-8209-450f587fec4d.png)
   
@@ -105,7 +105,7 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
     
     ![Name-BP-Configure-1-1](../../media/1869b416-1d3f-4fb1-99c6-62b74ca7a4c7.png)
   
-2. In **My Domains**selezionare il nome del dominio che si desidera modificare.
+2. In **My Domains** selezionare il nome del dominio che si desidera modificare.
     
     ![Name-BP-Configure-1-2](../../media/c8b96e1e-aa35-4fb1-8209-450f587fec4d.png)
   
@@ -146,7 +146,7 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
     
     ![Name-BP-Configure-1-1](../../media/1869b416-1d3f-4fb1-99c6-62b74ca7a4c7.png)
   
-2. In **My Domains**selezionare il nome del dominio che si desidera modificare.
+2. In **My Domains** selezionare il nome del dominio che si desidera modificare.
     
     ![Name-BP-Configure-1-2](../../media/c8b96e1e-aa35-4fb1-8209-450f587fec4d.png)
   
@@ -190,7 +190,7 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
     
     ![Name-BP-Configure-1-1](../../media/1869b416-1d3f-4fb1-99c6-62b74ca7a4c7.png)
   
-2. In **My Domains**selezionare il nome del dominio che si desidera modificare.
+2. In **My Domains** selezionare il nome del dominio che si desidera modificare.
 
     ![Name-BP-Configure-1-2](../../media/c8b96e1e-aa35-4fb1-8209-450f587fec4d.png)
   
@@ -219,7 +219,7 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
     
     ![Name-BP-Configure-1-1](../../media/1869b416-1d3f-4fb1-99c6-62b74ca7a4c7.png)
   
-2. In **My Domains**selezionare il nome del dominio che si desidera modificare.
+2. In **My Domains** selezionare il nome del dominio che si desidera modificare.
     
     ![Name-BP-Configure-1-2](../../media/c8b96e1e-aa35-4fb1-8209-450f587fec4d.png)
   

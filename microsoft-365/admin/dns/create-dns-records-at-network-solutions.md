@@ -21,16 +21,16 @@ search.appverid:
 - MOE150
 ms.assetid: 1dc55f9f-5309-450f-acc3-b2b4119c8be3
 description: Informazioni su come verificare il dominio e configurare i record DNS per la posta elettronica, Skype for business online e altri servizi in Network Solutions per Microsoft.
-ms.openlocfilehash: f488ad3511c9901eae70691f616dcff52036c71d
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 9cb403bb8b469f2d7f4e6138ba5833120ea53585
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48645948"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49657792"
 ---
 # <a name="create-dns-records-at-network-solutions-for-microsoft"></a>Creare record DNS in Network Solutions per Microsoft
 
- **Se non si trova ciò che si sta cercando, [vedere le domande frequenti sui domini](../setup/domains-faq.md)**. 
+ **Se non si trova ciò che si sta cercando, [vedere le domande frequenti sui domini](../setup/domains-faq.yml)**. 
   
 Se il proprio provider di hosting DNS è Network Solutions, seguire i passaggi di questo articolo per verificare il dominio e configurare i record DNS per posta elettronica, Skype for Business online e così via.
   
@@ -159,9 +159,9 @@ Seguire i passaggi indicati sotto oppure [guardare il video (iniziare da 3:51)](
   
 6. Nelle caselle del nuovo record digitare oppure copiare e incollare i valori della tabella seguente.
     
-    |**Priorità **|**TTL**|**Mail Server**|
+    |**Priorità**|**TTL**|**Mail Server**|
     |:-----|:-----|:-----|
-    |10    <br/> Per altre informazioni sulla priorità, vedere [Informazioni sulla priorità MX](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq). <br/> |3600  <br/> | *\<domain-key\>*  . mail.protection.outlook.com.  <br/> **Questo valore DEVE terminare con un punto (.)** <br/> **Nota:** Ottenere il vostro  *\<domain-key\>*  dal vostro account Microsoft. [Come trovarlo](../get-help-with-domains/information-for-dns-records.md)          |
+    |10   <br/> Per altre informazioni sulla priorità, vedere [Informazioni sulla priorità MX](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq). <br/> |3600  <br/> | *\<domain-key\>*  . mail.protection.outlook.com.  <br/> **Questo valore DEVE terminare con un punto (.)** <br/> **Nota:** Ottenere il vostro  *\<domain-key\>*  dal vostro account Microsoft. [Come trovarlo](../get-help-with-domains/information-for-dns-records.md)          |
        
     ![Digitare o incollare i valori nelle caselle per il nuovo record](../../media/0bb96872-cc6e-4dfa-a649-fb7efbbf0012.png)
   

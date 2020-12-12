@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 003d7a74-3e16-4453-ae0c-9dbae51f66d1
 description: Gli amministratori possono ottenere informazioni su come visualizzare e cercare il log di controllo dell'amministratore in standalone Exchange Online Protection (EOP).
-ms.openlocfilehash: 9fe2c742083cde1ca36f6a04cd357a473a10aeac
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: c65c09efa0f90fc9b63d635dae598b24d93ea714
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48196544"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49659442"
 ---
 # <a name="view-the-admin-audit-log-in-standalone-eop"></a>Visualizzare un log di controllo dell'amministratore in Exchange Online Protection autonomo
 
@@ -32,26 +32,26 @@ Il registro di controllo dell'amministratore registra azioni specifiche, basate 
 >
 > - La registrazione di controllo dell'amministratore è abilitata per impostazione predefinita e non è possibile disabilitarla.
 >
-> - Il registro di controllo dell'amministratore non registra le azioni in base ai cmdlet che iniziano con i verbi **Get**, **Search**o **test**.
+> - Il registro di controllo dell'amministratore non registra le azioni in base ai cmdlet che iniziano con i verbi **Get**, **Search** o **test**.
 >
 > - Le voci del registro di controllo vengono conservate per 90 giorni. Quando una voce è più vecchia di 90 giorni, viene eliminata
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare
+## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare?
 
 - Per aprire l'interfaccia di amministrazione di Exchange, vedere interfaccia [di amministrazione di Exchange in EOP autonomo](exchange-admin-center-in-exchange-online-protection-eop.md).
 
 - Per connettersi a PowerShell di EOP autonomo, vedere [Connettersi a PowerShell per Exchange Online Protection](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
-- È necessario disporre delle autorizzazioni prima di poter eseguire queste procedure. In particolare, sono necessari i registri di controllo o il ruolo di controllo di sola visualizzazione, assegnati ai gruppi di ruoli ComplianceManagement, OrganizationManagement (Global Admins) e SecurityAdministrator per impostazione predefinita. Per ulteriori informazioni, vedere [autorizzazioni in EOP autonomo](feature-permissions-in-eop.md) e [utilizzo dell'interfaccia di amministrazione di Exchange per modificare l'elenco dei membri nei gruppi di ruoli](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups).
+- Prima di poter eseguire le procedure descritte in questo articolo, è necessario disporre delle autorizzazioni in Exchange Online Protection. In particolare, è necessario **il ruolo registri di controllo o** **solo visualizzazione log di controllo** , assegnati ai gruppi di ruoli **Gestione organizzazione**, **Gestione conformità** e **sicurezza amministratore** per impostazione predefinita. Per ulteriori informazioni, vedere [autorizzazioni in EOP autonomo](feature-permissions-in-eop.md) e [utilizzo dell'interfaccia di amministrazione di Exchange per modificare l'elenco dei membri nei gruppi di ruoli](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups).
 
-- Per informazioni sui tasti di scelta rapida che possono essere applicati alle procedure descritte in questo argomento, vedere tasti [di scelta rapida per l'interfaccia di amministrazione di Exchange in Exchange Online](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center).
+- Per informazioni sui tasti di scelta rapida che possono essere applicati alle procedure descritte in questo articolo, vedere tasti [di scelta rapida per l'interfaccia di amministrazione di Exchange in Exchange Online](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center).
 
 > [!TIP]
 > Problemi? Chiedere assistenza nel forum [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).
 
 ## <a name="use-the-eac-to-view-the-admin-audit-log"></a>Utilizzo dell'interfaccia di amministrazione di Exchange per visualizzare il registro di controllo dell'amministratore
 
-1. Nell'interfaccia di amministrazione di Exchange, andare a controllo **della gestione della conformità** \> **Auditing**, quindi scegliere **Esegui il rapporto del log di controllo dell'amministratore**.
+1. Nell'interfaccia di amministrazione di Exchange, andare a controllo **della gestione della conformità** \> , quindi scegliere **Esegui il rapporto del log di controllo dell'amministratore**.
 
 2. Nella pagina **Cerca le modifiche apportate ai gruppi di ruoli amministratore** che si apre, scegliere una data di **inizio** e una **Data di fine** (l'intervallo predefinito è le ultime due settimane) e quindi fare clic su **Cerca**. Tutte le modifiche apportate alla configurazione durante il periodo di tempo specificato vengono visualizzate e possono essere ordinate, utilizzando le informazioni seguenti:
 
@@ -112,7 +112,7 @@ Per informazioni dettagliate sulla sintassi e sui parametri, vedere [Search-Admi
 
 ### <a name="view-details-of-audit-log-entries"></a>Visualizzazione dei dettagli del log di controllo
 
-Il cmdlet **Search-AdminAuditLog** restituisce i campi descritti nella sezione [contenuto dei registri di controllo](#audit-log-contents) più avanti in questo argomento. Dei campi restituiti dal cmdlet, due campi, **CmdletParameters** e **ModifiedProperties**, contengono informazioni aggiuntive che non vengono restituite per impostazione predefinita.
+Il cmdlet **Search-AdminAuditLog** restituisce i campi descritti nella sezione [contenuto dei registri di controllo](#audit-log-contents) più avanti in questo articolo. Dei campi restituiti dal cmdlet, due campi, **CmdletParameters** e **ModifiedProperties**, contengono informazioni aggiuntive che non vengono restituite per impostazione predefinita.
 
 Per visualizzare il contenuto dei campi **CmdletParameters** e **ModifiedProperties**, attenersi alla procedura riportata di seguito.
 

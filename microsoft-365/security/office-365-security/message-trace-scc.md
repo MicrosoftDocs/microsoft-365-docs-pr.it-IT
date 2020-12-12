@@ -13,12 +13,12 @@ ms.assetid: 3e64f99d-ac33-4aba-91c5-9cb4ca476803
 ms.custom:
 - seo-marvel-apr2020
 description: Gli amministratori possono utilizzare la traccia dei messaggi nel centro sicurezza & Compliance per scoprire cosa è successo ai messaggi.
-ms.openlocfilehash: 46aa454ff709e9b17c3b18992757a9a4c3a51247
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.openlocfilehash: 455a1e22ff67ec47e1a6292c962d2a276ec54a64
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49616753"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49658989"
 ---
 # <a name="message-trace-in-the-security--compliance-center"></a>Traccia messaggio nel Centro sicurezza e conformità
 
@@ -85,7 +85,7 @@ Il valore predefinito è **2 giorni**, ma è possibile specificare intervalli di
 
   Per 10 o meno giorni, i risultati sono disponibili istantaneamente come report **riepilogativo** . Se si specifica un intervallo di tempo pari leggermente superiore a 10 giorni, i risultati verranno posticipati perché sono disponibili solo come file CSV scaricabile ( **Riepilogo avanzato** o rapporti **estesi** ).
 
-  Per ulteriori informazioni sui diversi tipi di report, vedere la sezione [scegliere il tipo di report](#choose-report-type) in questo argomento.
+  Per ulteriori informazioni sui diversi tipi di report, vedere la sezione [scegliere il tipo di report](#choose-report-type) in questo articolo.
 
   **Nota**: i report di riepilogo e Extended Enhanced vengono preparati utilizzando i dati di traccia dei messaggi archiviati e possono richiedere fino a diverse ore prima che il report sia disponibile per il download. A seconda del numero di altri amministratori che hanno inoltrato le richieste di rapporto nello stesso momento, è possibile che si verifichi un ritardo prima dell'inizio dell'elaborazione per la richiesta in coda.
 
@@ -185,7 +185,7 @@ I record dei messaggi correlati sono record che condividono lo stesso ID messagg
 
 Dopo aver selezionato la casella di controllo di una riga, è possibile trovare i record correlati per il messaggio facendo clic sul pulsante **trova correlato** visualizzato oppure selezionando **altre opzioni** ![ ulteriori ](../../media/1ea52bbf-9d00-48ce-9362-307f7f6fb7fe.png) \> **record correlati per il messaggio**.
 
-Per ulteriori informazioni sull'ID del messaggio, vedere la sezione relativa all'ID del messaggio descritta in precedenza in questo argomento.
+Per ulteriori informazioni sull'ID del messaggio, vedere la sezione ID messaggio più indietro in questo articolo.
 
 #### <a name="message-trace-details"></a>Dettagli di traccia dei messaggi
 
@@ -225,7 +225,7 @@ I dettagli della traccia dei messaggi contengono le informazioni aggiuntive segu
 
 - **Ulteriori informazioni**: questa sezione contiene i seguenti dettagli:
 
-  - **ID messaggio**: questo valore è descritto nella sezione [ID messaggio](#message-id) descritta in precedenza in questo argomento. Ad esempio, `<d9683b4c-127b-413a-ae2e-fa7dfb32c69d@DM3NAM06BG401.Eop-nam06.prod.protection.outlook.com>`.
+  - **ID messaggio**: questo valore è descritto nella sezione [ID messaggio](#message-id) descritta in precedenza in questo articolo. Ad esempio, `<d9683b4c-127b-413a-ae2e-fa7dfb32c69d@DM3NAM06BG401.Eop-nam06.prod.protection.outlook.com>`.
 
   - **Dimensione messaggio**
 
@@ -253,7 +253,7 @@ I report di riepilogo avanzati disponibili (completati) sono disponibili nella s
 
 - **total_bytes**: la dimensione del messaggio in byte, inclusi gli allegati.
 
-- **message_id**: questo valore è descritto nella sezione [ID messaggio](#message-id) descritta in precedenza in questo argomento. Ad esempio, `<d9683b4c-127b-413a-ae2e-fa7dfb32c69d@DM3NAM06BG401.Eop-nam06.prod.protection.outlook.com>`.
+- **message_id**: questo valore è descritto nella sezione [ID messaggio](#message-id) descritta in precedenza in questo articolo. Ad esempio, `<d9683b4c-127b-413a-ae2e-fa7dfb32c69d@DM3NAM06BG401.Eop-nam06.prod.protection.outlook.com>`.
 
 - **network_message_id**: un valore di ID messaggio univoco che persiste in tutte le copie del messaggio che potrebbe essere creato a causa della biforcazione o dell'espansione del gruppo di distribuzione. Un valore di esempio è `1341ac7b13fb42ab4d4408cf7f55890f` .
 

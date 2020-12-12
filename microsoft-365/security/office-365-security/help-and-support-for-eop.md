@@ -12,19 +12,19 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 64535a0a-1044-413f-8bc2-ed8e8a0bc54c
 description: Viene fornita da Microsoft l'assistenza per EOP attraverso una cospicua varietà di luoghi e metodi tra cui tra cui il supporto in autonomia e assistito.
-ms.openlocfilehash: 3d11abee08fa3fdd7dfb659bd90e29908f9e4bda
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.openlocfilehash: 7551a792c1d9c10cf5c655dade04bb5606b75f04
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49614859"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49658696"
 ---
 # <a name="help-and-support-for-eop"></a>Guida e supporto tecnico per Exchange Online Protection
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-In Microsoft 365 organizzazioni con cassette postali in Exchange Online o in organizzazioni di Exchange Online Protection (EOP) senza cassette postali di Exchange Online, le risorse di supporto tecnico elencate in questo argomento consentono di trovare le risposte se si riscontrano problemi con EOP. Viene fornita da Microsoft l'assistenza per EOP attraverso una cospicua varietà di luoghi e metodi tra cui tra cui il supporto in autonomia e assistito.
+In Microsoft 365 organizzazioni con cassette postali in Exchange Online o in organizzazioni di Exchange Online Protection (EOP) senza cassette postali di Exchange Online, le risorse di supporto tecnico elencate in questo articolo consentono di trovare le risposte se si riscontrano problemi con EOP. Viene fornita da Microsoft l'assistenza per EOP attraverso una cospicua varietà di luoghi e metodi tra cui tra cui il supporto in autonomia e assistito.
 
 ## <a name="self-support-options"></a>Opzioni di supporto in autonomia
 

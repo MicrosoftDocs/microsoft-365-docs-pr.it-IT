@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-overview
 - m365solution-pilotmtpproject
 ms.topic: conceptual
-ms.openlocfilehash: 50f334a055a5bd974f9ea1f39c8fa38d44be9c26
-ms.sourcegitcommit: ce46d1bd67091d4ed0e2b776dfed55e2d88cdbf4
+ms.openlocfilehash: f01e918d35ce77d9239c200355c7b4c48c9e2b84
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49131289"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49659322"
 ---
 # <a name="run-your-pilot-microsoft-365-defender-project"></a>Eseguire il progetto pilota Microsoft 365 Defender 
 
@@ -35,7 +35,13 @@ ms.locfileid: "49131289"
 **Si applica a:**
 - Microsoft 365 Defender
 
-Per determinare in modo efficace il vantaggio e l'adozione di Microsoft 365 Defender, è possibile eseguire un progetto pilota. Prima di abilitare Microsoft 365 Defender nell'ambiente di produzione e iniziare i casi di utilizzo, è preferibile pianificare la determinazione delle attività da eseguire per il progetto pilota e impostare i criteri di esito positivo. 
+
+In questa guida viene illustrato come eseguire un progetto pilota fornendo puntatori per garantire che si disponga di un piano ben strutturato, che consenta di utilizzare la funzionalità di simulazione degli attacchi e infine di concludere il pilota con i principali take-away per riflettere e documentare i risultati.
+
+![Fasi di esecuzione di un pilota Microsoft 365 Defender](../../media/pilotphases.png)
+
+
+L'esecuzione di un progetto pilota consente di determinare efficacemente il vantaggio di adoptiing Microsoft 365 Defender. Prima di abilitare Microsoft 365 Defender nell'ambiente di produzione e iniziare i casi di utilizzo, è preferibile pianificare la determinazione delle attività da eseguire per il progetto pilota e impostare i criteri di esito positivo. 
 
 
 ## <a name="how-to-use-this-pilot-playbook"></a>Come usare questo pilota PlayBook
@@ -52,7 +58,7 @@ Microsoft 365 Defender è una famiglia di prodotti di difesa aziendale unificata
 
 Con la soluzione Microsoft 365 Defender integrata, i professionisti della sicurezza possono unire i segnali di minaccia che Microsoft Defender per endpoint, Microsoft Defender per Office 365, Microsoft Defender per Identity e Microsoft cloud app Security ricevono e determinare l'ambito e l'impatto completo della minaccia, il modo in cui è entrata nell'ambiente, le conseguenze e la modalità di impatto dell'organizzazione. Microsoft 365 Defender esegue un'azione automatica per impedire o arrestare le cassette postali, gli endpoint e le identità degli utenti coinvolti. Per informazioni dettagliate, vedere [Microsoft 365 Defender Overview](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-threat-protection) .
 
-![Fasi di esecuzione di un pilota Microsoft 365 Defender](../../media/pilotphases.png)
+
 
 La sequenza temporale di esempio seguente varia a seconda dell'utilizzo delle risorse corrette nell'ambiente in uso. Alcuni rilevamenti e flussi di lavoro potrebbero richiedere più tempo di apprendimento rispetto agli altri.
 

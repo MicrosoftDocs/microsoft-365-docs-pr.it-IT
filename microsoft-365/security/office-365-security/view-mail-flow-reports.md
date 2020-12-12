@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Gli amministratori possono ottenere informazioni sui rapporti sul flusso di posta disponibili nel dashboard report nel centro sicurezza & Compliance.
 ms.custom: ''
-ms.openlocfilehash: 701735374e03f2afb91323ceb4b3fbf30988bdcd
-ms.sourcegitcommit: d81c7cea85af6ad5fef81d3c930514a51464368c
+ms.openlocfilehash: 1ededf2d0d693c537c159c52d00deb03f278b4b2
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "49572802"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49659466"
 ---
 # <a name="view-mail-flow-reports-in-the-reports-dashboard-in-security--compliance-center"></a>Visualizzare i report sul flusso di posta nel dashboard report nel centro sicurezza & Compliance
 
@@ -32,7 +32,7 @@ ms.locfileid: "49572802"
 
 Oltre ai rapporti sul flusso di posta disponibili nel [Dashboard del flusso](mail-flow-insights-v2.md) di posta elettronica nel centro sicurezza & Compliance, nel dashboard report sono disponibili numerosi rapporti di flusso di posta aggiuntivi che consentono di monitorare l'organizzazione Microsoft 365.
 
-Se si dispone delle [autorizzazioni necessarie](#what-permissions-are-needed-to-view-these-reports), è possibile visualizzare i report nel [Centro sicurezza & Compliance](https://office.protection.com) accedendo al **Reports** \> **Dashboard** report. Per accedere direttamente al dashboard dei report, aprire <https://protection.office.com/insightdashboard> .
+Se si dispone delle [autorizzazioni necessarie](#what-permissions-are-needed-to-view-these-reports), è possibile visualizzare i report nel [Centro sicurezza & Compliance](https://office.protection.com) accedendo al  \> **Dashboard** report. Per accedere direttamente al dashboard dei report, aprire <https://protection.office.com/insightdashboard> .
 
 ![Dashboard dei report nel centro sicurezza & Compliance](../../media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
 
@@ -40,7 +40,7 @@ Se si dispone delle [autorizzazioni necessarie](#what-permissions-are-needed-to-
 
 Il **rapporto connettore** consente di visualizzare l'attività del flusso di posta sui [connettori in ingresso e in uscita](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow) configurati per l'organizzazione.
 
-Per visualizzare il report, aprire il [Centro sicurezza & conformità](https://protection.office.com), accedere al **Reports** \> **Dashboard** dei report e selezionare il **report del connettore**. Per passare direttamente al report, aprire <https://protection.office.com/reportv2?id=ConnectorReport> .
+Per visualizzare il report, aprire il [Centro sicurezza & conformità](https://protection.office.com), accedere al  \> **Dashboard** dei report e selezionare il **report del connettore**. Per passare direttamente al report, aprire <https://protection.office.com/reportv2?id=ConnectorReport> .
 
 ![Widget del rapporto del connettore nel dashboard dei report](../../media/connector-report-widget.png)
 
@@ -94,7 +94,7 @@ Per tornare alla visualizzazione report, fare clic su **Visualizza report**.
 
 Il **rapporto della regola di trasporto di Exchange** indica l'effetto delle regole del flusso di posta (note anche come regole di trasporto) sui messaggi in arrivo e in uscita nell'organizzazione.
 
-Per visualizzare il report, aprire il [Centro sicurezza & conformità](https://protection.office.com), accedere al **Reports** \> **Dashboard** dei report e selezionare **regola di trasporto di Exchange**. Per passare direttamente al report, aprire <https://protection.office.com/reportv2?id=ETRRuleReport> .
+Per visualizzare il report, aprire il [Centro sicurezza & conformità](https://protection.office.com), accedere al  \> **Dashboard** dei report e selezionare **regola di trasporto di Exchange**. Per passare direttamente al report, aprire <https://protection.office.com/reportv2?id=ETRRuleReport> .
 
 ![Widget delle regole di trasporto di Exchange nel dashboard dei report](../../media/transport-rule-report-widget.png)
 
@@ -163,7 +163,7 @@ Per tornare alla visualizzazione report, fare clic su **Visualizza report**.
 
 Il **rapporto di inoltro** Visualizza i messaggi di inoltro automatico dell'organizzazione ai domini esterni dalle cassette postali di Exchange Online. I messaggi inoltrati possono rappresentare un rischio per la sicurezza o la conformità e potrebbero indicare un account compromesso.
 
-Per visualizzare il report, aprire il [Centro sicurezza & conformità](https://protection.office.com), accedere al **Reports** \> **Dashboard** dei report e selezionare **Inoltra rapporto**. Per passare direttamente al report, aprire <https://protection.office.com/reportv2?id=MailFlowForwarding> .
+Per visualizzare il report, aprire il [Centro sicurezza & conformità](https://protection.office.com), accedere al  \> **Dashboard** dei report e selezionare **Inoltra rapporto**. Per passare direttamente al report, aprire <https://protection.office.com/reportv2?id=MailFlowForwarding> .
 
 ![Widget del report di inoltro nel dashboard dei report](../../media/forwarding-report-widget.png)
 
@@ -210,7 +210,7 @@ Per tornare alla visualizzazione report, fare clic su **Visualizza report**.
 ## <a name="mailflow-status-report"></a>Rapporto sullo stato del flusso di posta
 
 La **relazione sullo stato del flusso** di posta è simile a quella [inviata e ricevuta](#sent-and-received-email-report), con ulteriori informazioni sulla posta elettronica consentita o bloccata sul server perimetrale. Questo è l'unico report che contiene informazioni sulla protezione dei dati perimetrali e visualizza la quantità di posta elettronica bloccata prima di essere consentita nel servizio per la valutazione da parte di Exchange Online Protection (EOP). È importante comprendere che se un messaggio viene inviato a cinque destinatari, è necessario contarlo come cinque messaggi diversi e non con un solo messaggio.
-Per visualizzare il report, aprire il [Centro sicurezza & conformità](https://protection.office.com), accedere al **Reports** \> **Dashboard** dei report e selezionare **rapporto stato del flusso** di posta. Per passare direttamente alla **relazione sullo stato del flusso di posta**, aprire <https://protection.office.com/mailflowStatusReport> .
+Per visualizzare il report, aprire il [Centro sicurezza & conformità](https://protection.office.com), accedere al  \> **Dashboard** dei report e selezionare **rapporto stato del flusso** di posta. Per passare direttamente alla **relazione sullo stato del flusso di posta**, aprire <https://protection.office.com/mailflowStatusReport> .
 
 ![Widget del rapporto sullo stato del flusso di posta nel dashboard report](../../media/mail-flow-status-report-widget.png)
 
@@ -420,7 +420,7 @@ Il rapporto **messaggi di posta elettronica inviati e ricevuti** è un report Sm
 
 La visualizzazione aggregazione e la visualizzazione dettagli del rapporto consentono 90 giorni di filtraggio.
 
-Per visualizzare il report, aprire il [Centro sicurezza & conformità](https://protection.office.com), accedere al **Reports** \> **Dashboard** dei report e selezionare **invio e ricezione della posta elettronica**. Per passare direttamente al report, aprire <https://protection.office.com/reportv2?id=SentAndReceivedMailATP> .
+Per visualizzare il report, aprire il [Centro sicurezza & conformità](https://protection.office.com), accedere al  \> **Dashboard** dei report e selezionare **invio e ricezione della posta elettronica**. Per passare direttamente al report, aprire <https://protection.office.com/reportv2?id=SentAndReceivedMailATP> .
 
 ![Widget messaggi di posta elettronica inviati e ricevuti nel dashboard report](../../media/sent-and-received-email-report-widget.png)
 
@@ -478,7 +478,7 @@ Per tornare alla visualizzazione report, fare clic su **Visualizza report**.
 
 Il report **mittenti e destinatari principali** è un grafico a torta che mostra i mittenti e i destinatari di posta elettronica principali.
 
-Per visualizzare il report, aprire il [Centro sicurezza & conformità](https://protection.office.com), accedere al **Reports** \> **Dashboard** dei report e selezionare i **mittenti e i destinatari principali**. Per passare direttamente al report, aprire <https://protection.office.com/reportv2?id=TopSenderRecipientsATP> .
+Per visualizzare il report, aprire il [Centro sicurezza & conformità](https://protection.office.com), accedere al  \> **Dashboard** dei report e selezionare i **mittenti e i destinatari principali**. Per passare direttamente al report, aprire <https://protection.office.com/reportv2?id=TopSenderRecipientsATP> .
 
 ![Widget Top Senders and Recipients nel dashboard report](../../media/top-senders-and-recipients-widget.png)
 
@@ -535,12 +535,12 @@ Per tornare alla visualizzazione report, fare clic su **Visualizza report**.
 
 ## <a name="what-permissions-are-needed-to-view-these-reports"></a>Quali autorizzazioni sono necessarie per visualizzare i rapporti?
 
-Per visualizzare e utilizzare i report descritti in questo argomento, è necessario essere membri di uno dei gruppi di ruoli seguenti nel centro sicurezza & Compliance:
+Per visualizzare e utilizzare i report descritti in questo articolo, è necessario essere membri di uno dei gruppi di ruoli seguenti nel centro sicurezza & Compliance:
 
 - **Gestione organizzazione**
 - **Amministratore della sicurezza**
 - **Lettore di sicurezza**
-- **Ruolo con autorizzazioni di lettura globali**
+- **Lettore globale**
 
 Per altre informazioni, vedere [Autorizzazioni nel Centro sicurezza e conformità](permissions-in-the-security-and-compliance-center.md).
 

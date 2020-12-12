@@ -21,16 +21,16 @@ search.appverid:
 - MOE150
 ms.assetid: 84acd4fc-6eec-4d00-8bed-568f036ae2af
 description: Informazioni su come verificare il dominio e configurare i record DNS per la posta elettronica, Skype for business online e altri servizi in web.com per Microsoft.
-ms.openlocfilehash: 25df88e05e96e2394628bf89c8cc07af2d0eac1e
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 943070f3790f532a0cc686270e0ecdea08f802fd
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48645756"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49656892"
 ---
 # <a name="create-dns-records-at-webcom-for-microsoft"></a>Creare record DNS in web.com per Microsoft
 
- Se non si trova ciò che si sta cercando, **[vedere le domande frequenti sui domini](../setup/domains-faq.md)**. 
+ Se non si trova ciò che si sta cercando, **[vedere le domande frequenti sui domini](../setup/domains-faq.yml)**. 
   
 Se web.com è il provider di hosting DNS, seguire la procedura descritta in questo articolo per verificare il dominio e configurare i record DNS per la posta elettronica, Skype for business online e così via.
   
@@ -127,7 +127,7 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
   
 3. In * * Manage * My Domain * * * selezionare **Edit Advanced DNS Records**.
 
-4. In **server di posta elettronica (record MX)** fare clic su **Modifica record MX**e quindi selezionare i valori della tabella seguente. 
+4. In **server di posta elettronica (record MX)** fare clic su **Modifica record MX** e quindi selezionare i valori della tabella seguente. 
     
     |**Priorità**|**TTL**|**Mail server**|
     |:-----|:-----|:-----|
@@ -136,7 +136,7 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
 
 5. Selezionare **Salva**.
   
-6. Se nella sezione **MX Records** sono presenti altri record MX, selezionare la casella di controllo accanto al record in **Delete**e quindi fare clic su **Salva**. 
+6. Se nella sezione **MX Records** sono presenti altri record MX, selezionare la casella di controllo accanto al record in **Delete** e quindi fare clic su **Salva**. 
   
 7. Nella schermata di conferma fare clic su **Salva modifiche**. 
 
@@ -152,7 +152,7 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
 
 4. Aggiungere il primo dei sei record CNAME.
     
-    In **alias host (record CNAME)** fare clic su **Modifica record CNAME**e quindi selezionare i valori della tabella seguente.
+    In **alias host (record CNAME)** fare clic su **Modifica record CNAME** e quindi selezionare i valori della tabella seguente.
     
     
     |**Alias**|**TTL**|**Refers to Host Name**|**Altro host**|
@@ -211,7 +211,7 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
   
 4. Aggiungere il primo dei due record SRV.
 
-    In **servizio (record SRV)** fare clic su **Modifica record SRV**e quindi selezionare i valori della tabella seguente. 
+    In **servizio (record SRV)** fare clic su **Modifica record SRV** e quindi selezionare i valori della tabella seguente. 
         
     |**Servizio**|**Protocol**|**TTL**|**Priorità**|**Peso**|**Porta**|**Target**|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|

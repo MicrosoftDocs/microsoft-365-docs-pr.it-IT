@@ -11,12 +11,12 @@ ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 4b2c53ee8535c2e99acb83060a2ee04d8f5033db
-ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
+ms.openlocfilehash: 57b49e49a20ee9e088301e90590c19cfabf89a2b
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "48754517"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49658942"
 ---
 # <a name="microsoft-managed-desktop-archived-devices"></a>Dispositivi archiviati da Microsoft Managed Desktop
 
@@ -60,8 +60,9 @@ Per essere registrato in Microsoft Managed Desktop, un dispositivo deve essere u
 |Surface Book 2| 256 GB/Intel i5/8 GB di RAM | Nessuno | **Nov 16, 2022** |
 |Superficie andare| 128 GB/Intel 4415Y/8GB di RAM | Nessuno | **Aug 2, 2023** |
 |Laptop Surface| 256 GB/Intel i5/8 GB di RAM | Nessuno | **20 maggio 2022** |
+|Laptop Surface 2| 128 GB/Intel i5/8 GB di RAM | Nessuno | **Ott 16, 2023** |
 |Surface Pro| 256 GB/Intel i5/8 GB di RAM | Nessuno | **15 giugno 2022** |
-
+|Surface Pro 6| 128 GB/Intel i5/8 GB di RAM | Nessuno | **Ott 16, 2023** |
 
 Inoltre, il dispositivo deve:
 

@@ -21,16 +21,16 @@ search.appverid:
 - MOE150
 ms.assetid: 9eec911d-5773-422c-9593-40e1147ffbde
 description: Informazioni su come verificare il dominio e configurare i record DNS per la posta elettronica, Skype for business online e altri servizi nel DNS basato su Windows per Microsoft.
-ms.openlocfilehash: 471aa0323bd59b09c672431ef39bb33f5c89b555
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 8202ffe10b4a0ff9c94d863d92fc55c47ebb38d3
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48645576"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49656844"
 ---
 # <a name="create-dns-records-for-microsoft-using-windows-based-dns"></a>Creare record DNS per Microsoft tramite DNS basato su Windows
 
- Se non si trova ciò che si sta cercando, **[vedere le domande frequenti sui domini](../setup/domains-faq.md)**. 
+ Se non si trova ciò che si sta cercando, **[vedere le domande frequenti sui domini](../setup/domains-faq.yml)**. 
    
 Se si ospitano i record DNS con il DNS basato su Windows, seguire i passaggi descritti in questo articolo per configurare i record per la posta elettronica, Skype for Business online e così via.
   
@@ -39,7 +39,7 @@ Per iniziare, è necessario [trovare i record DNS nel DNS basato su Windows in](
 Problemi relativi al flusso di posta o ad altri problemi dopo l'aggiunta di record DNS, vedere [risolvere i problemi dopo la modifica del nome di dominio o dei record DNS](../get-help-with-domains/find-and-fix-issues.md). 
   
 ## <a name="find-your-dns-records-in-windows-based-dns"></a>Trovare i record DNS in un server DNS basato su Windows
-<a name="BKMK_find_your_dns_1"> </a> Passare alla pagina contenente i record DNS per il dominio. Se si sta utilizzando Windows Server 2008, andare a **Start**  >  **Run**. Se si utilizza Windows Server 2012, premere il tasto Windows e **r**. Digitare **dnsmgmnt. msc**e quindi fare clic su **OK**. In gestione DNS espandere ** \<DNS server name\> \> zone di ricerca diretta  **. Selezionare il dominio. A questo punto è possibile creare i record DNS.
+<a name="BKMK_find_your_dns_1"></a> Passare alla pagina contenente i record DNS per il dominio. Se si sta utilizzando Windows Server 2008, andare a **Start**  >  **Run**. Se si utilizza Windows Server 2012, premere il tasto Windows e **r**. Digitare **dnsmgmnt. msc** e quindi fare clic su **OK**. In gestione DNS espandere **\<DNS server name\> \> zone di ricerca diretta**. Selezionare il dominio. A questo punto è possibile creare i record DNS.
    
 ## <a name="add-mx-record"></a>Aggiungere il record MX
 <a name="BKMK_add_MX"> </a>
@@ -68,7 +68,7 @@ Aggiungere i record CNAME necessari per Microsoft. Se sono elencati altri record
     - Nome host: individuazione automatica
     - Tipo 
     - Cnameindirizzo: autodiscover.outlook.com
-- Selezionare **O**K.
+- Selezionare **O** K.
 
 Aggiungere il record CNAME SIP. 
 - Nella pagina Gestore DNS per il dominio passare a **azione** \> **CNAME (CNAME)**. 
@@ -184,14 +184,14 @@ Aggiungere un record TXT.
 - Nome host: @
 - Digitare: TXT
 - Indirizzo: incollare il valore di destinazione o punta a indirizzo appena copiato da Microsoft qui.  
-- Fare clic su **OK**  >  **Done**.
+- Fare clic su **OK**  >  .
 
 Verificare il dominio in Microsoft.  
 > [!IMPORTANT]
 > Attendere circa 15 minuti prima di eseguire questa operazione, in modo che il record appena creato possa essere aggiornato su Internet.       
 
 - Tornare a Microsoft e seguire i passaggi riportati di seguito per richiedere un controllo di verifica. Il processo di verifica cerca il record TXT aggiunto al passaggio precedente. Se trova il record TXT corretto, il dominio è verificato.  
-1. Nell'interfaccia di amministrazione, andare alla pagina dei domini di **installazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains</a> .
+1. Nell'interfaccia di amministrazione, andare alla pagina dei domini di **installazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank"></a> .
 2. Nella pagina **domini** , nella colonna **azione** per il dominio che si sta verificando, selezionare **Avvia installazione**. 
 3. Nella casella di controllo **conferma la propria** pagina di dominio, selezionare fine **, verifica ora**, quindi nella finestra di dialogo di conferma selezionare **termina**. 
    

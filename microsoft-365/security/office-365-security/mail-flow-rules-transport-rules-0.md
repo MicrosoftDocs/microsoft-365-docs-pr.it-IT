@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 9c2cf227-eff7-48ef-87fb-487186e47363
 description: È possibile utilizzare le regole del flusso di posta (regole di trasporto) per identificare ed eseguire azioni sui messaggi che transitano nell'organizzazione.
-ms.openlocfilehash: 11bf2af56c6e85c868e2e0726736f624e196805c
-ms.sourcegitcommit: 9546708a5506fdbadbfe2500cbf1bd1aeaec6fcb
+ms.openlocfilehash: 6bbf50b1a99b6691e959f6dcd4cfce33686a0014
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "49021050"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49659200"
 ---
 # <a name="mail-flow-rules-transport-rules-in-standalone-eop"></a>Regole del flusso di posta (regole di trasporto) in Exchange Online Protection autonomo
 
@@ -56,19 +56,19 @@ Nel video seguente viene fornita una dimostrazione dell'impostazione delle regol
 
 Una regola del flusso di posta è composta da condizioni, eccezioni, azioni e proprietà:
 
-- **Condizioni** : identificare i messaggi a cui si desidera applicare le azioni. Alcune condizioni esaminano i campi d'intestazione dei messaggi (ad esempio, i campi A, Da, o Cc). Altre condizioni esaminano le proprietà del messaggio (ad esempio, l'oggetto, il corpo, gli allegati, la dimensione o la classificazione). Per la maggior parte delle condizioni l'utente deve specificare un operatore di confronto (ad esempio, uguale a, diverso da o contiene) e un valore da utilizzare per la corrispondenza. Se non sono presenti condizioni o eccezioni, la regola viene applicata a tutti i messaggi.
+- **Condizioni**: identificare i messaggi a cui si desidera applicare le azioni. Alcune condizioni esaminano i campi d'intestazione dei messaggi (ad esempio, i campi A, Da, o Cc). Altre condizioni esaminano le proprietà del messaggio (ad esempio, l'oggetto, il corpo, gli allegati, la dimensione o la classificazione). Per la maggior parte delle condizioni l'utente deve specificare un operatore di confronto (ad esempio, uguale a, diverso da o contiene) e un valore da utilizzare per la corrispondenza. Se non sono presenti condizioni o eccezioni, la regola viene applicata a tutti i messaggi.
 
 Per ulteriori informazioni sulle condizioni delle regole del flusso di posta in EOP autonomo, vedere [Mail Flow Rule conditions and Exceptions (Predicates) in Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/conditions-and-exceptions).
 
-- **Eccezioni** : facoltativamente, identificare i messaggi a cui le azioni non devono essere applicate. Nelle eccezioni sono presenti gli stessi identificatori dei messaggi disponibili nelle condizioni. Le eccezioni sostituiscono le condizioni e impediscono l'esecuzione delle azioni della regola su un messaggio, anche nel caso in cui il messaggio soddisfi tutte le condizioni configurate.
+- **Eccezioni**: facoltativamente, identificare i messaggi a cui le azioni non devono essere applicate. Nelle eccezioni sono presenti gli stessi identificatori dei messaggi disponibili nelle condizioni. Le eccezioni sostituiscono le condizioni e impediscono l'esecuzione delle azioni della regola su un messaggio, anche nel caso in cui il messaggio soddisfi tutte le condizioni configurate.
 
-- **Azioni** : specificare le operazioni da eseguire per i messaggi che soddisfano le condizioni della regola e non corrispondono ad alcuna eccezione. Sono disponibili molte azioni, ad esempio il rifiuto, l'eliminazione o il reindirizzamento dei messaggi, l'aggiunta di altri destinatari, l'aggiunta di prefissi all'oggetto del messaggio o l'inserimento di dichiarazioni di non responsabilità nel corpo del messaggio.
+- **Azioni**: specificare le operazioni da eseguire per i messaggi che soddisfano le condizioni della regola e non corrispondono ad alcuna eccezione. Sono disponibili molte azioni, ad esempio il rifiuto, l'eliminazione o il reindirizzamento dei messaggi, l'aggiunta di altri destinatari, l'aggiunta di prefissi all'oggetto del messaggio o l'inserimento di dichiarazioni di non responsabilità nel corpo del messaggio.
 
 Per ulteriori informazioni sulle azioni delle regole del flusso di posta disponibili in EOP autonomo, vedere [Mail Flow Rule Actions in Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions).
 
-- **Proprietà** : specificare altre impostazioni delle regole che non sono condizioni, eccezioni o azioni. Ad esempio, quando è necessario applicare la regola oppure se applicare o verificare la regola, il periodo in cui la regola è attiva.
+- **Proprietà**: specificare altre impostazioni delle regole che non sono condizioni, eccezioni o azioni. Ad esempio, quando è necessario applicare la regola oppure se applicare o verificare la regola, il periodo in cui la regola è attiva.
 
-  Per ulteriori informazioni, vedere la sezione in questo argomento [Proprietà delle regole del flusso di posta](#mail-flow-rule-properties).
+  Per ulteriori informazioni, vedere la sezione relativa alle [proprietà della regola del flusso di posta](#mail-flow-rule-properties) in questo articolo.
 
 ### <a name="multiple-conditions-exceptions-and-actions"></a>Più condizioni, eccezioni e azioni
 
@@ -81,7 +81,7 @@ Nella tabella seguente è illustrato come in una regola vengono gestite più con
 |Più condizioni|E|Un messaggio deve corrispondere a tutte le condizioni della regola. Se occorre una condizione di corrispondenza o un'altra, è possibile utilizzare regole distinte per ogni condizione. Ad esempio, per aggiungere la stessa dichiarazione di non responsabilità nei messaggi con allegati e nei messaggi con testo specifico, è possibile creare una regola per ogni condizione. Nell'interfaccia di amministrazione di Exchange, è possibile copiare facilmente una regola.|
 |Una condizione con più valori|OPPURE|Le stesse condizioni consentono di specificare più valori. Il messaggio deve corrispondere a uno qualsiasi (non tutti) dei valori specificati. Ad esempio, se in un messaggio di posta elettronica l'oggetto è Informazioni sul prezzo delle azioni e la condizione **L'oggetto include una o più parole seguenti** è configurata per la corrispondenza alle parole Contoso o azioni, la condizione è soddisfatta perché l'oggetto contiene almeno uno dei valori specificati.  |
 |Più eccezioni|OPPURE|Se un messaggio corrisponde a una qualsiasi delle eccezioni, le azioni non vengono applicate al messaggio. Quest'ultimo non deve necessariamente corrispondere a tutte le eccezioni.|
-|Più azioni|E|I messaggi che corrispondono alle condizioni di una regola prendono tutte le azioni che sono specificate dalla regola. Ad esempio, se vengono selezionate le azioni **Anteponi all'oggetto del messaggio** e **Aggiungi destinatari alla casella Ccn** , verranno applicate entrambe al messaggio.<p> Tenere presente che alcune azioni come **Elimina il messaggio senza inviare alcuna notifica** impediscono l'applicazione a un messaggio delle regole successive. Altre azioni quali **Inoltra il messaggio** non consentono azioni aggiuntive.<p> È inoltre possibile impostare un'azione su una regola in modo che quando quella regola viene applicata, le regole successive non vengono applicate al messaggio.|
+|Più azioni|E|I messaggi che corrispondono alle condizioni di una regola prendono tutte le azioni che sono specificate dalla regola. Ad esempio, se vengono selezionate le azioni **Anteponi all'oggetto del messaggio** e **Aggiungi destinatari alla casella Ccn**, verranno applicate entrambe al messaggio.<p> Tenere presente che alcune azioni come **Elimina il messaggio senza inviare alcuna notifica** impediscono l'applicazione a un messaggio delle regole successive. Altre azioni quali **Inoltra il messaggio** non consentono azioni aggiuntive.<p> È inoltre possibile impostare un'azione su una regola in modo che quando quella regola viene applicata, le regole successive non vengono applicate al messaggio.|
 |
 
 ### <a name="mail-flow-rule-properties"></a>Proprietà regola flusso di posta
@@ -104,7 +104,7 @@ Nella tabella seguente vengono descritte le proprietà della regola che sono dis
 
 ## <a name="how-mail-flow-rules-are-applied-to-messages"></a>Modalità di applicazione delle regole del flusso di posta ai messaggi
 
-Tutti i messaggi che transitano nell'organizzazione vengono valutati rispetto alle regole di trasporto abilitate per l'organizzazione. Le regole vengono elaborate nell'ordine elencato nella **Mail flow** \> pagina **regole** del flusso di posta in EAC o in base al valore del parametro _Priority_ corrispondente in PowerShell.
+Tutti i messaggi che transitano nell'organizzazione vengono valutati rispetto alle regole di trasporto abilitate per l'organizzazione. Le regole vengono elaborate nell'ordine elencato nella  \> pagina **regole** del flusso di posta in EAC o in base al valore del parametro _Priority_ corrispondente in PowerShell.
 
 Ogni regola offre inoltre l'opzione di arrestare l'elaborazione di più regole in caso di corrispondenza della regola. Questa impostazione è importante per i messaggi che corrispondono alle condizioni di più regole del flusso di posta. Quale regola si desidera applicare al messaggio? Tutte? Solo una?
 
@@ -116,14 +116,14 @@ Esistono diversi tipi di messaggi che passano attraverso un'organizzazione. Nell
 
 |Tipo di messaggio|È possibile applicare una regola?|
 |---|---|
-|**Messaggi regolari** : messaggi che contengono un solo corpo RTF (Rich Text Format), HTML o testo normale o un set di corpi dei messaggi costituito da più parti o alternativa.|Sì|
-|**Crittografia messaggi di office 365** : messaggi crittografati tramite crittografia dei messaggi di Office 365 in Office 365. Per ulteriori informazioni, vedere [Crittografia in Office 365](https://docs.microsoft.com/microsoft-365/compliance/encryption).|Le regole possono sempre accedere alle intestazioni delle buste ed elaborare i messaggi in base alle condizioni che esaminano quelle intestazioni. <p> Affinché una regola possa esaminare o modificare i contenuti di un messaggio crittografato, è necessario verificare che la crittografia di trasporto sia abilitata (Obbligatoria o Facoltativa; l'impostazione predefinita è Facoltativa). Per ulteriori informazioni, vedere [definire le regole per crittografare o decrittografare i messaggi di posta elettronica in Office 365](https://docs.microsoft.com/microsoft-365/compliance/define-mail-flow-rules-to-encrypt-email).|
+|**Messaggi regolari**: messaggi che contengono un solo corpo RTF (Rich Text Format), HTML o testo normale o un set di corpi dei messaggi costituito da più parti o alternativa.|Sì|
+|**Crittografia messaggi di office 365**: messaggi crittografati tramite crittografia dei messaggi di Office 365 in Office 365. Per ulteriori informazioni, vedere [Crittografia in Office 365](https://docs.microsoft.com/microsoft-365/compliance/encryption).|Le regole possono sempre accedere alle intestazioni delle buste ed elaborare i messaggi in base alle condizioni che esaminano quelle intestazioni. <p> Affinché una regola possa esaminare o modificare i contenuti di un messaggio crittografato, è necessario verificare che la crittografia di trasporto sia abilitata (Obbligatoria o Facoltativa; l'impostazione predefinita è Facoltativa). Per ulteriori informazioni, vedere [definire le regole per crittografare o decrittografare i messaggi di posta elettronica in Office 365](https://docs.microsoft.com/microsoft-365/compliance/define-mail-flow-rules-to-encrypt-email).|
 |**Messaggi crittografati (S/MIME)**|Le regole possono accedere solo alle intestazioni delle buste ed elaborare i messaggi in base alle condizioni che esaminano quelle intestazioni. <p> Le regole con le condizioni che richiedono l'analisi del contenuto del messaggio oppure le azioni che modificano i contenuti del messaggio non possono essere elaborate.|
-|**Messaggi protetti da RMS** : messaggi in cui è stato applicato un criterio Active Directory Rights Management Services (ad RMS) o Azure Rights Management (RMS).|Le regole possono sempre accedere alle intestazioni delle buste ed elaborare i messaggi in base alle condizioni che esaminano quelle intestazioni. <p> Affinché una regola possa esaminare o modificare i contenuti di un messaggio protetto da RMS, è necessario verificare che la crittografia di trasporto sia abilitata (Obbligatoria o Facoltativa; l'impostazione predefinita è Facoltativa).|
-|**Messaggi con firma pulita** : messaggi firmati ma non crittografati.|Sì|
-|**Messaggi di messaggistica unificata** : messaggi creati o elaborati dal servizio di messaggistica unificata, ad esempio segreteria telefonica, fax, notifiche di chiamata senza risposta e messaggi creati o inoltrati tramite Microsoft Outlook Voice Access.|Sì|
-|**Messaggi anonimi** : messaggi inviati da mittenti anonimi.|Sì|
-|**Rapporti di lettura** : rapporti generati in risposta alle richieste di conferma di lettura da parte dei mittenti. I report di lettura dispongono di una classe messaggio `IPM.Note*.MdnRead` o `IPM.Note*.MdnNotRead` .|Sì|
+|**Messaggi protetti da RMS**: messaggi in cui è stato applicato un criterio Active Directory Rights Management Services (ad RMS) o Azure Rights Management (RMS).|Le regole possono sempre accedere alle intestazioni delle buste ed elaborare i messaggi in base alle condizioni che esaminano quelle intestazioni. <p> Affinché una regola possa esaminare o modificare i contenuti di un messaggio protetto da RMS, è necessario verificare che la crittografia di trasporto sia abilitata (Obbligatoria o Facoltativa; l'impostazione predefinita è Facoltativa).|
+|**Messaggi con firma pulita**: messaggi firmati ma non crittografati.|Sì|
+|**Messaggi di messaggistica unificata**: messaggi creati o elaborati dal servizio di messaggistica unificata, ad esempio segreteria telefonica, fax, notifiche di chiamata senza risposta e messaggi creati o inoltrati tramite Microsoft Outlook Voice Access.|Sì|
+|**Messaggi anonimi**: messaggi inviati da mittenti anonimi.|Sì|
+|**Rapporti di lettura**: rapporti generati in risposta alle richieste di conferma di lettura da parte dei mittenti. I report di lettura dispongono di una classe messaggio `IPM.Note*.MdnRead` o `IPM.Note*.MdnNotRead` .|Sì|
 |
 
 ## <a name="what-else-should-i-know"></a>Informazioni aggiuntive

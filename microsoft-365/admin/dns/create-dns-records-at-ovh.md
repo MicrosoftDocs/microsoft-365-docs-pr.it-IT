@@ -21,16 +21,16 @@ search.appverid:
 - MOE150
 ms.assetid: 5176feef-36dc-4d84-842f-1f2b5a21ba96
 description: Informazioni su come verificare il dominio e configurare i record DNS per la posta elettronica, Skype for business online e altri servizi in OVH per Microsoft.
-ms.openlocfilehash: 87a2a731a253fdc0593a1aae8020e615dca63c4a
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 14c3796ff6686ae0d98ec32ec6ddf6afc004a3c3
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48645816"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49657780"
 ---
 # <a name="create-dns-records-at-ovh-for-microsoft"></a>Creare record DNS in OVH per Microsoft
 
-Se non si trovano le informazioni desiderate, [vedere le domande frequenti sui domini](../setup/domains-faq.md). 
+Se non si trovano le informazioni desiderate, [vedere le domande frequenti sui domini](../setup/domains-faq.yml). 
   
 Se OVH è il provider di hosting DNS in uso, eseguire i passaggi descritti in questo articolo per verificare il dominio e configurare i record DNS per posta elettronica, Skype for Business Online e così via.
   
@@ -64,7 +64,7 @@ Prima di usare il proprio dominio con Microsoft, è necessario dimostrare di ess
     
     ![OVH login](../../media/1424cc15-720d-49d1-b99b-8ba63b216238.png)
   
-2. In **domini**selezionare il nome del dominio che si desidera modificare.
+2. In **domini** selezionare il nome del dominio che si desidera modificare.
     
     ![OVH Select the domain](../../media/fe407909-4ea6-4b92-a3bd-dec4022b1d8d.png)
   
@@ -120,7 +120,7 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
     
     ![OVH login](../../media/1424cc15-720d-49d1-b99b-8ba63b216238.png)
   
-2. In **domini**selezionare il nome del dominio che si desidera modificare.
+2. In **domini** selezionare il nome del dominio che si desidera modificare.
     
     ![OVH Select the domain](../../media/fe407909-4ea6-4b92-a3bd-dec4022b1d8d.png)
   
@@ -143,7 +143,7 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
   
     |**Tipo di record**|**Sottodominio**|**TTL**|**Priorità**|**Destinazione**|
     |:-----|:-----|:-----|:-----|:-----|
-    |MX  <br/> |(lasciare vuoto)  <br/> |3600 (secondi)  <br/> |10    <br/> Per altre informazioni sulla priorità, vedere [Informazioni sulla priorità MX](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq). <br/> |\<domain-key\>. mail.protection.outlook.com.  <br/> **Nota:** Ottenere il vostro  *\<domain-key\>*  dal vostro account Microsoft.  [Come trovarlo](../get-help-with-domains/information-for-dns-records.md)  |
+    |MX  <br/> |(lasciare vuoto)  <br/> |3600 (secondi)  <br/> |10   <br/> Per altre informazioni sulla priorità, vedere [Informazioni sulla priorità MX](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq). <br/> |\<domain-key\>. mail.protection.outlook.com.  <br/> **Nota:** Ottenere il vostro  *\<domain-key\>*  dal vostro account Microsoft.  [Come trovarlo](../get-help-with-domains/information-for-dns-records.md)  |
    
     ![Record MX OVH per la posta elettronica](../../media/6e2f5655-93e2-4620-8f19-c452e7edf8f0.png)
   
@@ -168,7 +168,7 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
     
     ![OVH login](../../media/1424cc15-720d-49d1-b99b-8ba63b216238.png)
   
-2. In **domini**selezionare il nome del dominio che si desidera modificare.
+2. In **domini** selezionare il nome del dominio che si desidera modificare.
     
     ![OVH Select the domain](../../media/fe407909-4ea6-4b92-a3bd-dec4022b1d8d.png)
   
@@ -218,7 +218,7 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
     
     ![OVH login](../../media/1424cc15-720d-49d1-b99b-8ba63b216238.png)
   
-2. In **domini**selezionare il nome del dominio che si desidera modificare.
+2. In **domini** selezionare il nome del dominio che si desidera modificare.
     
     ![OVH Select the domain](../../media/fe407909-4ea6-4b92-a3bd-dec4022b1d8d.png)
   
@@ -255,7 +255,7 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
     
     ![OVH login](../../media/1424cc15-720d-49d1-b99b-8ba63b216238.png)
   
-2. In **domini**selezionare il nome del dominio che si desidera modificare.
+2. In **domini** selezionare il nome del dominio che si desidera modificare.
     
     ![OVH Select the domain](../../media/fe407909-4ea6-4b92-a3bd-dec4022b1d8d.png)
   

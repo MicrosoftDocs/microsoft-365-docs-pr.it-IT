@@ -21,16 +21,16 @@ search.appverid:
 - MOE150
 ms.assetid: 31efc571-c8b9-46fb-b42d-203c2fb25289
 description: Informazioni su come è possibile configurare Office 365 gestito da 21Vianet per gestire i record DNS, quando 1&1 Internet è il provider di hosting DNS.
-ms.openlocfilehash: 8a783be20d2f8dbdb26e9826018f911289b35235
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: b363718c7d1d1845117f44317ae9e6b24e9a2e28
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48646560"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49658033"
 ---
 # <a name="change-nameservers-to-set-up-microsoft-365-with-11-ionos"></a>Modificare i server dei nomi per configurare Microsoft 365 con 1&1 IONOS
 
- Se non si trova ciò che si sta cercando, **[vedere le domande frequenti sui domini](../setup/domains-faq.md)**. 
+ Se non si trova ciò che si sta cercando, **[vedere le domande frequenti sui domini](../setup/domains-faq.yml)**. 
   
 Seguire le istruzioni riportate di seguito se si desidera che Microsoft 365 gestisca i record DNS di Microsoft 365. Se si preferisce, è possibile [gestire tutti i record DNS di Microsoft 365 a 1&1 IONOS](create-dns-records-at-1-1-internet.md). 
   
@@ -48,7 +48,7 @@ Seguire i passaggi indicati sotto oppure [guardare il video (iniziare da 0:42)](
   
 1. Per iniziare, passare alla propria pagina dei domini su 1&1 IONOS tramite [questo collegamento](https://account.1and1.com/?redirect_url=https%3A%2F%2Fmy.1and1.com%2F). You'll be prompted to log in. 
     
-2. In **My Domains**selezionare **Manage Domains**.
+2. In **My Domains** selezionare **Manage Domains**.
     
 3. Nella pagina **centro Domain** individuare il dominio che si desidera aggiornare. Selezionare quindi il controllo **Panel** ( **v**) per il dominio.
     
@@ -66,7 +66,7 @@ Seguire i passaggi indicati sotto oppure [guardare il video (iniziare da 0:42)](
 |TXT  <br/> |(Leave this field empty.)  <br/> |MS=ms *XXXXXXXX* <br/> **Nota**: questo è un esempio. Usare il valore specifico di **Indirizzo di destinazione o puntamento** indicato nella tabella in Microsoft 365. [Come trovarlo](../get-help-with-domains/information-for-dns-records.md) <br/> |
 
    
-7. Fare clic su **Salva**e quindi su **Salva** di nuovo. 
+7. Fare clic su **Salva** e quindi su **Salva** di nuovo. 
     
 8. Nella finestra di dialogo **Modifica impostazioni DNS** selezionare **Sì**.
     
@@ -101,7 +101,7 @@ Per completare la configurazione del dominio con Microsoft 365, è necessario mo
   
 1. Per iniziare, passare alla propria pagina dei domini su 1&1 IONOS usando [questo collegamento](https://account.1and1.com/?redirect_url=https%3A%2F%2Fmy.1and1.com%2F). You'll be prompted to log in. 
     
-2. In **My Domains**selezionare **Manage Domains**.
+2. In **My Domains** selezionare **Manage Domains**.
     
 3. Nella pagina **centro Domain** individuare il dominio che si desidera aggiornare e quindi selezionare il controllo **Panel** ( **v**) per il dominio.
     

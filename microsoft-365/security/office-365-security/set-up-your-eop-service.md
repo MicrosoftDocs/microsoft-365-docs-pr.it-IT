@@ -14,12 +14,12 @@ ms.custom:
 localization_priority: Normal
 ms.assetid: d74c6ddf-11b0-43ee-b298-8bb0340895f0
 description: Gli amministratori possono ottenere informazioni su come configurare standalone Exchange Online Protection (EOP) per proteggere gli ambienti di posta elettronica locali.
-ms.openlocfilehash: ab34d715bd8196bb2376926402f6a88018d1d7ae
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.openlocfilehash: 2d63057e77e6965616e19452de824a94ba0ccda8
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49615673"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49659418"
 ---
 # <a name="set-up-your-standalone-eop-service"></a>Configurare il servizio di EOP autonomo
 
@@ -29,7 +29,7 @@ ms.locfileid: "49615673"
 In questo argomento viene descritto come configurare standalone Exchange Online Protection (EOP). Se si è arrivati qui dalla configurazione guidata dei domini di Office 365, tornare alla configurazione guidata dei domini di Office 365 se non si desidera utilizzare Exchange Online Protection. Per ulteriori informazioni su come configurare i connettori, vedere [Configure mail flow using connectors in Office 365](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow).
 
 > [!NOTE]
-> In questo argomento si presuppone che siano presenti cassette postali locali e che si desideri proteggerle con EOP, noto come scenario autonomo. Se si desidera ospitare tutte le cassette postali nel cloud con Exchange Online, non è necessario completare tutti i passaggi descritti in questo argomento. Andare a [confrontare i piani di Exchange Online](https://products.office.com/exchange/compare-microsoft-exchange-online-plans) per iscriversi e acquistare le cassette postali cloud.
+> In questo argomento si presuppone che siano presenti cassette postali locali e che si desideri proteggerle con EOP, noto come scenario autonomo. Se si desidera ospitare tutte le cassette postali nel cloud con Exchange Online, non è necessario completare tutti i passaggi descritti in questo articolo. Andare a [confrontare i piani di Exchange Online](https://products.office.com/exchange/compare-microsoft-exchange-online-plans) per iscriversi e acquistare le cassette postali cloud.
 >
 > Se si desidera ospitare alcune delle cassette postali in locale e alcune nel cloud, questo è conosciuto come uno scenario ibrido. Richiede impostazioni di flusso di posta più avanzate. Le [distribuzioni ibride di Exchange Server](https://docs.microsoft.com/exchange/exchange-hybrid) spiegano il flusso di posta ibrido e dispongono di collegamenti a risorse che illustrano come configurarlo.
 
@@ -37,11 +37,11 @@ In questo argomento viene descritto come configurare standalone Exchange Online 
 
 - Tempo stimato per il completamento di questa attività: 1 ora
 
-- È necessario disporre delle autorizzazioni prima di poter eseguire queste procedure. In particolare, è necessario il ruolo dei domini remoti e accettati, assegnato ai gruppi di ruoli MailFlowAdministrator e OrganizationManagement (Global Admins) per impostazione predefinita. Per ulteriori informazioni, vedere [autorizzazioni in EOP autonomo](feature-permissions-in-eop.md) e [utilizzo dell'interfaccia di amministrazione di Exchange per modificare l'elenco dei membri nei gruppi di ruoli](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups).
+- Prima di poter eseguire le procedure descritte in questo articolo, è necessario disporre delle autorizzazioni in Exchange Online Protection. In particolare, è necessario il ruolo dei **domini remoti e accettati** , assegnato ai gruppi di ruoli amministratore **Gestione organizzazione** (amministratori globali) e **flusso di posta** per impostazione predefinita. Per ulteriori informazioni, vedere [autorizzazioni in EOP autonomo](feature-permissions-in-eop.md) e [utilizzo dell'interfaccia di amministrazione di Exchange per modificare l'elenco dei membri nei gruppi di ruoli](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups).
 
 - Se non si è iscritti a EOP, visitare [Exchange Online Protection](https://products.office.com/exchange/exchange-email-security-spam-protection) e scegliere di acquistare o provare il servizio.
 
-- Per informazioni sui tasti di scelta rapida che possono essere applicati alle procedure descritte in questo argomento, vedere tasti [di scelta rapida per l'interfaccia di amministrazione di Exchange in Exchange Online](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center).
+- Per informazioni sui tasti di scelta rapida che possono essere applicati alle procedure descritte in questo articolo, vedere tasti [di scelta rapida per l'interfaccia di amministrazione di Exchange in Exchange Online](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center).
 
 > [!TIP]
 > Problemi? Chiedere assistenza nel forum [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).

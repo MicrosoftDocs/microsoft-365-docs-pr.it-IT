@@ -26,12 +26,12 @@ search.appverid:
 - MOE150
 ms.assetid: 6383f56d-3d09-4dcb-9b41-b5f5a5efd611
 description: Aggiungere il dominio a Microsoft 365 nell'interfaccia di amministrazione di Microsoft 365 aggiungendo un record DNS all'host DNS. La procedura guidata di installazione illustra i passaggi del processo.
-ms.openlocfilehash: 3a4cd31a37eb01570f58e9cdb83940640768a273
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 3e7463bd4cf6b7836a9770421e0b8ce597524a67
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48644616"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49658052"
 ---
 # <a name="add-a-domain-to-microsoft-365"></a>Aggiungere un dominio a Microsoft 365
 
@@ -42,7 +42,7 @@ ms.locfileid: "48644616"
 
 ::: moniker-end
 
- Se non si trova ciò che si sta cercando, **[vedere le domande frequenti sui domini](domains-faq.md)**. 
+ Se non si trova ciò che si sta cercando, **[vedere le domande frequenti sui domini](domains-faq.yml)**. 
   
  *Per aggiungere, modificare o rimuovere i domini, è **necessario** essere un **amministratore globale** di un [piano aziendale o aziendale](https://products.office.com/business/office). Queste modifiche hanno effetto sull'intero tenant, gli *amministratori personalizzati* o *gli utenti normali* non saranno in grado di apportare queste modifiche.*  
 
@@ -100,7 +100,7 @@ ms.locfileid: "48644616"
     
     Per identificare il provider di hosting DNS o il registrar per il dominio, vedere [Trovare il registrar o il provider di hosting DNS](../get-help-with-domains/find-your-domain-registrar.md).
     
-    Se si desidera attendere in un secondo momento, deselezionare tutti i servizi e fare clic su **continua**oppure nel passaggio precedente di connessione del dominio scegliere **altre opzioni** e selezionare **Ignora questa opzione per il momento**.
+    Se si desidera attendere in un secondo momento, deselezionare tutti i servizi e fare clic su **continua** oppure nel passaggio precedente di connessione del dominio scegliere **altre opzioni** e selezionare **Ignora questa opzione per il momento**.
     
 8. Seleziona **fine** -hai finito!
 
@@ -114,7 +114,7 @@ Attenersi alla procedura riportata di seguito per aggiungere un record personali
 
 3. Nella pagina **Domini** selezionare un dominio. 
     
-4. In **impostazioni DNS**selezionare **record personalizzati**; quindi selezionare **nuovo record personalizzato**.
+4. In **impostazioni DNS** selezionare **record personalizzati**; quindi selezionare **nuovo record personalizzato**.
 
 5. Selezionare il tipo di record DNS che si desidera aggiungere e digitare le informazioni per il nuovo record.
     
@@ -151,7 +151,7 @@ Se si ha un sito Web che si usa con l'organizzazione, continuerà a funzionare d
 
 ## <a name="related-articles"></a>Articoli correlati
 
-[Domande frequenti sui domini](domains-faq.md)
+[Domande frequenti sui domini](domains-faq.yml)
 
 [Che cosa è un dominio?](../get-help-with-domains/what-is-a-domain.md)
 

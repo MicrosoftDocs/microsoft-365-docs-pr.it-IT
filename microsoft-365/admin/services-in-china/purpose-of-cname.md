@@ -20,16 +20,16 @@ search.appverid:
 ROBOTS: NOINDEX
 description: Per ulteriori informazioni, vedere il record CNAME ' MSOID ' in Office 365 che consente di indirizzare il server migliore ai processi di autenticazione, in modo da ottenere una risposta più rapida.
 monikerRange: o365-21vianet
-ms.openlocfilehash: ac9ad3ad9f860722760d59c54570a453146a3a93
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: aea04391768993c40978d94b50817244cd77405c
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48644640"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49655485"
 ---
 # <a name="whats-the-purpose-of-the-office-365-cname-record-for-msoid"></a>Qual è lo scopo del record aggiuntivo CNAME di Office 365 per MSOID?
 
- Se non si trova ciò che si sta cercando, **[vedere le domande frequenti sui domini](../setup/domains-faq.md)**. 
+ Se non si trova ciò che si sta cercando, **[vedere le domande frequenti sui domini](../setup/domains-faq.yml)**. 
 > [!NOTE]
 > La seguente procedura si applica solo a * * Office 365 gestito da 21Vianet.
   

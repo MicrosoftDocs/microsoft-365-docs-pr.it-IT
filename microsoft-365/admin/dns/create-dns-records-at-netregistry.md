@@ -22,16 +22,16 @@ search.appverid:
 - BEA160
 ms.assetid: 48e09394-2287-4b3c-9853-21eadf61277e
 description: Informazioni su come verificare il dominio e configurare i record DNS per la posta elettronica, Skype for business online e altri servizi in Netregistry per Microsoft.
-ms.openlocfilehash: 016df6c61fd6934c1bc46b55c7e110d8442cf1d5
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 857645c685cce946b39a7c3dcadb0a45b43686cf
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48645972"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49657804"
 ---
 # <a name="create-dns-records-at-netregistry-for-microsoft"></a>Creare record DNS in Netregistry per Microsoft
 
-Se non si trovano le informazioni desiderate, [vedere le domande frequenti sui domini](../setup/domains-faq.md). 
+Se non si trovano le informazioni desiderate, [vedere le domande frequenti sui domini](../setup/domains-faq.yml). 
   
 Se Netregistry è il provider di hosting DNS, seguire la procedura descritta in questo articolo per verificare il dominio e configurare i record DNS per la posta elettronica, Skype for business online e così via.
   
@@ -73,7 +73,7 @@ Prima di usare il proprio dominio con Microsoft, è necessario dimostrare di ess
     
     ![Netregistry_selectZoneManager](../../media/e18c32f9-c1e7-4aa2-9aa6-8dc9c5ea44af.png)
   
-4. In **Aggiungi un record di area**scegliere **txt record** nell'elenco e quindi selezionare **Crea nuovo record**.
+4. In **Aggiungi un record di area** scegliere **txt record** nell'elenco e quindi selezionare **Crea nuovo record**.
     
     ![Netregistry_TXT_select](../../media/eb1761e6-9deb-4631-8deb-bc5d09926722.png)
   
@@ -126,11 +126,11 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
     
     ![Netregistry_selectZoneManager](../../media/914021f6-dff3-4640-84d6-b83cf8f61cf1.png)
   
-4. In **current zone Records**rimuovere i record MX predefiniti selezionando **Rimuovi** accanto a ogni record MX nell'elenco. 
+4. In **current zone Records** rimuovere i record MX predefiniti selezionando **Rimuovi** accanto a ogni record MX nell'elenco. 
     
     ![Netregistry_MX_remove](../../media/494670a9-8b8d-46e5-8136-05e82212a115.png)
   
-5. In **aggiungere un record di area**scegliere **record MX** dall'elenco e quindi selezionare **Crea nuovo record**.
+5. In **aggiungere un record di area** scegliere **record MX** dall'elenco e quindi selezionare **Crea nuovo record**.
     
     ![Netregistry_MX_select](../../media/29b60eb9-6c40-490f-9669-e65b65962f37.png)
   
@@ -138,7 +138,7 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
     
     |**Nome**|**TTL (SEC)**|**Exchange (punta all'indirizzo o al valore)**|**L'host è completo?**|**Preferenza (priorità)**|
     |:-----|:-----|:-----|:-----|:-----|
-    |(lasciare vuoto)  <br/> |3600 (secondi)  <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/> **Nota:** Ottenere il vostro  *\<domain-key\>*  dal vostro account Microsoft.  [Come trovarlo](../get-help-with-domains/information-for-dns-records.md)      |(Seleziona la casella di controllo)  <br/> |10    <br/> For more information about priority, see What is MX priority?  <br/> |
+    |(lasciare vuoto)  <br/> |3600 (secondi)  <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/> **Nota:** Ottenere il vostro  *\<domain-key\>*  dal vostro account Microsoft.  [Come trovarlo](../get-help-with-domains/information-for-dns-records.md)      |(Seleziona la casella di controllo)  <br/> |10   <br/> For more information about priority, see What is MX priority?  <br/> |
        
     ![Netregistry_MX_values](../../media/518b3da6-4055-4e2d-b5ce-44a0fee25419.png)
   
@@ -161,7 +161,7 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
     
     ![Netregistry_selectZoneManager](../../media/58384add-0a9d-472b-a5d0-51ec8155fd41.png)
   
-4. In  **Aggiungi un record di area**scegliere **CNAME record** nell'elenco, quindi selezionare **Crea nuovo record**.
+4. In  **Aggiungi un record di area** scegliere **CNAME record** nell'elenco, quindi selezionare **Crea nuovo record**.
     
     ![Netregistry_CNAME_CreateNewRecord](../../media/7b4f133f-45da-48da-93c0-62f57c786165.png)
   
@@ -203,7 +203,7 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
     
     ![Netregistry_selectZoneManager](../../media/372e5918-b6dc-4268-8f9a-0aa71d65deef.png)
   
-4. In **Aggiungi un record di area**scegliere **txt record** nell'elenco e quindi selezionare **Crea nuovo record**.
+4. In **Aggiungi un record di area** scegliere **txt record** nell'elenco e quindi selezionare **Crea nuovo record**.
     
     ![Netregistry_TXT_select](../../media/a2930d03-853a-4f1e-9205-d00f25bed35f.png)
   
@@ -237,7 +237,7 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
     
     ![Netregistry_selectZoneManager](../../media/f122888b-3cc5-40ec-adac-0ede04799d9a.png)
   
-4. In  **aggiungere un record di area**scegliere **SRV record** nell'elenco e quindi selezionare **Crea nuovo record**.
+4. In  **aggiungere un record di area** scegliere **SRV record** nell'elenco e quindi selezionare **Crea nuovo record**.
     
     ![Netregistry_SRV_select](../../media/e5dab850-acd1-48b8-8b4a-e3b9777cf508.png)
   

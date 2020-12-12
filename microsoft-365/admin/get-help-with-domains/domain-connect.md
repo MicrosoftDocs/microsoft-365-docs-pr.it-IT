@@ -22,16 +22,16 @@ search.appverid:
 - MOE150
 ms.assetid: ec6f4bd8-5996-4505-ba68-afaf8a141fb9
 description: Informazioni su come utilizzare i registrar abilitati per la connessione al dominio e aggiungere il proprio dominio a Microsoft 365.
-ms.openlocfilehash: e907317ec5b606c2fe73232a73c9abdfce26feea
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 109255d82100e636e3472242866a519ff64a9e54
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48645348"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49655613"
 ---
 # <a name="using-domain-connect"></a>Utilizzo di Domain Connect
 
- Se non si trova ciò che si sta cercando, **[vedere le domande frequenti sui domini](../setup/domains-faq.md)**.
+ Se non si trova ciò che si sta cercando, **[vedere le domande frequenti sui domini](../setup/domains-faq.yml)**.
   
 I registrar abilitati alla [connessione di dominio](https://www.domainconnect.org/) consentono di aggiungere il dominio a Microsoft 365 in un processo in tre passaggi che richiede minuti. 
   

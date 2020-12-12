@@ -18,19 +18,19 @@ ms.collection:
 - M365-security-compliance
 description: Informazioni su come trovare e utilizzare i report sulla sicurezza della posta elettronica per l'organizzazione. I report sulla sicurezza della posta elettronica sono disponibili nel centro sicurezza & conformità.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 1ab78f17cd5689f9110227762c149d3691433179
-ms.sourcegitcommit: d81c7cea85af6ad5fef81d3c930514a51464368c
+ms.openlocfilehash: e98e59d39744d67427a272f456a03fc123034aa7
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "49572562"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49659478"
 ---
 # <a name="view-email-security-reports-in-the-security--compliance-center"></a>Visualizzare i report sulla sicurezza della posta elettronica nel Centro sicurezza e conformità
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-Nel [Centro sicurezza & conformità](https://protection.office.com) è disponibile un'ampia gamma di report che consentono di visualizzare in che modo le funzionalità di sicurezza della posta elettronica, ad esempio la protezione da posta indesiderata, l'antimalware e la crittografia in Microsoft 365, proteggono l'organizzazione. Se si dispone delle [autorizzazioni necessarie](#what-permissions-are-needed-to-view-these-reports), è possibile visualizzare i report nel centro sicurezza & Compliance accedendo al **Reports** \> **Dashboard** report. Per accedere direttamente al dashboard dei report, aprire <https://protection.office.com/insightdashboard> .
+Nel [Centro sicurezza & conformità](https://protection.office.com) è disponibile un'ampia gamma di report che consentono di visualizzare in che modo le funzionalità di sicurezza della posta elettronica, ad esempio la protezione da posta indesiderata, l'antimalware e la crittografia in Microsoft 365, proteggono l'organizzazione. Se si dispone delle [autorizzazioni necessarie](#what-permissions-are-needed-to-view-these-reports), è possibile visualizzare i report nel centro sicurezza & Compliance accedendo al  \> **Dashboard** report. Per accedere direttamente al dashboard dei report, aprire <https://protection.office.com/insightdashboard> .
 
 ![Dashboard dei report nel centro sicurezza & Compliance](../../media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
 
@@ -45,7 +45,7 @@ Nel rapporto **utenti compromessi** viene mostrato il numero di account utente c
 
 La visualizzazione aggregazione Mostra i dati per gli ultimi 90 giorni e la visualizzazione dettagli Mostra i dati per gli ultimi 30 giorni.
 
-Per visualizzare il report, aprire il [Centro sicurezza & conformità](https://protection.office.com), accedere al **Reports** \> **Dashboard** dei report e selezionare **utenti compromessi**. Per passare direttamente al report, aprire <https://protection.office.com/reportv2?id=CompromisedUsers> .
+Per visualizzare il report, aprire il [Centro sicurezza & conformità](https://protection.office.com), accedere al  \> **Dashboard** dei report e selezionare **utenti compromessi**. Per passare direttamente al report, aprire <https://protection.office.com/reportv2?id=CompromisedUsers> .
 
 È possibile filtrare sia il grafico che la tabella Details facendo clic su **filtri** e selezionando uno o più dei seguenti valori:
 
@@ -75,7 +75,7 @@ Il **rapporto di crittografia** è disponibile in EOP (abbonamenti con cassette 
 
 La visualizzazione aggregazione consente il filtro per gli ultimi 90 giorni, mentre la visualizzazione dettagli consente il filtraggio per 10 giorni.
 
-Per visualizzare il report, aprire il [Centro sicurezza & conformità](https://protection.office.com), accedere al **Reports** \> **Dashboard** dei report e selezionare **rapporto di crittografia**. Per passare direttamente al report, aprire <https://protection.office.com/reportv2?id=EncryptionReport> .
+Per visualizzare il report, aprire il [Centro sicurezza & conformità](https://protection.office.com), accedere al  \> **Dashboard** dei report e selezionare **rapporto di crittografia**. Per passare direttamente al report, aprire <https://protection.office.com/reportv2?id=EncryptionReport> .
 
 Per ulteriori informazioni sulla crittografia, vedere la [crittografia della posta elettronica in Microsoft 365](../../compliance/email-encryption.md).
 
@@ -148,7 +148,7 @@ I rilevamenti di **malware nel rapporto di posta elettronica** mostrano informaz
 
  Il filtro visualizzazione aggregazione consente 90 giorni, mentre il filtro tabella Dettagli consente solo 10 giorni.
 
-Per visualizzare il report, aprire il [Centro sicurezza & conformità](https://protection.office.com), accedere al **Reports** \> **Dashboard** dei report e selezionare **rilevamenti di malware nel messaggio di posta elettronica**. Per passare direttamente al report, aprire <https://protection.office.com/reportv2?id=MalwareDetections> .
+Per visualizzare il report, aprire il [Centro sicurezza & conformità](https://protection.office.com), accedere al  \> **Dashboard** dei report e selezionare **rilevamenti di malware nel messaggio di posta elettronica**. Per passare direttamente al report, aprire <https://protection.office.com/reportv2?id=MalwareDetections> .
 
 ![Rilevamenti di malware nel widget di posta elettronica nel dashboard report](../../media/malware-detections-widget.png)
 
@@ -186,7 +186,7 @@ Il rapporto sui **rilevamenti di posta indesiderata** Visualizza messaggi di pos
 
 La visualizzazione aggregazione consente il filtraggio di 90 giorni, mentre la tabella Details consente il filtraggio di 10 giorni.
 
-Per visualizzare il report, aprire il [Centro sicurezza & conformità](https://protection.office.com), accedere al **Reports** \> **Dashboard** dei report e selezionare **rilevamenti di posta indesiderata**. Per passare direttamente al report, aprire <https://protection.office.com/reportv2?id=SpamDetections> .
+Per visualizzare il report, aprire il [Centro sicurezza & conformità](https://protection.office.com), accedere al  \> **Dashboard** dei report e selezionare **rilevamenti di posta indesiderata**. Per passare direttamente al report, aprire <https://protection.office.com/reportv2?id=SpamDetections> .
 
 ![Widget per i rilevamenti di posta indesiderata nel dashboard report](../../media/spam-detections-report-widget.png)
 
@@ -245,7 +245,7 @@ Il rapporto sui rilevamenti **spoof** indica il numero di messaggi di posta elet
 
 La visualizzazione aggregazione del report consente 90 giorni di filtraggio, mentre la visualizzazione dettagli consente solo dieci giorni di filtraggio.
 
-Per visualizzare il report, aprire il [Centro sicurezza & conformità](https://protection.office.com), accedere al **Reports** \> **Dashboard** dei report e selezionare **rilevamenti spoof**. Per passare direttamente al report, aprire <https://protection.office.com/reportv2?id=SpoofMailReport> .
+Per visualizzare il report, aprire il [Centro sicurezza & conformità](https://protection.office.com), accedere al  \> **Dashboard** dei report e selezionare **rilevamenti spoof**. Per passare direttamente al report, aprire <https://protection.office.com/reportv2?id=SpoofMailReport> .
 
 ![Widget spoofing detections nel dashboard report](../../media/spoof-detections-widget.png)
 
@@ -280,7 +280,7 @@ Il rapporto fornisce il numero di messaggi di posta elettronica con contenuti da
 
 **Nota**: è importante comprendere che se un messaggio viene inviato a cinque destinatari, è necessario contarlo come cinque messaggi diversi e non con un solo messaggio.
 
-Per visualizzare il report, aprire il [Centro sicurezza & conformità](https://protection.office.com), accedere al **Reports** \> **Dashboard** dei report e selezionare **lo stato di protezione dalle minacce**. Per passare direttamente al report, aprire uno degli URL seguenti:
+Per visualizzare il report, aprire il [Centro sicurezza & conformità](https://protection.office.com), accedere al  \> **Dashboard** dei report e selezionare **lo stato di protezione dalle minacce**. Per passare direttamente al report, aprire uno degli URL seguenti:
 
 - Microsoft Defender per Office 365: <https://protection.office.com/reportv2?id=TPSAggregateReportATP>
 - EOP <https://protection.office.com/reportv2?id=TPSAggregateReport>
@@ -458,7 +458,7 @@ Se si fa clic su **Visualizza tabella dettagli**, le informazioni visualizzate d
 
 Il rapporto **malware principale** illustra i diversi tipi di malware rilevati dalla [protezione antimalware in EOP](anti-malware-protection.md).
 
-Per visualizzare il report, aprire il [Centro sicurezza & conformità](https://protection.office.com), accedere al **Reports** \> **Dashboard** dei report e selezionare **malware principale**. Per passare direttamente al report, aprire <https://protection.office.com/reportv2?id=TopMalware> .
+Per visualizzare il report, aprire il [Centro sicurezza & conformità](https://protection.office.com), accedere al  \> **Dashboard** dei report e selezionare **malware principale**. Per passare direttamente al report, aprire <https://protection.office.com/reportv2?id=TopMalware> .
 
 ![Widget malware principale nel dashboard report](../../media/top-malware-report-widget.png)
 
@@ -487,7 +487,7 @@ I dettagli sono disponibili per ogni messaggio, incluso il motivo del recapito, 
 
 Per visualizzare il report, nel [Centro sicurezza & Compliance](https://protection.office.com)eseguire una delle operazioni seguenti:
 
-- Accedere a **Threat management** \> **Dashboard** \> **messaggi segnalati dall'utente** del dashboard di gestione delle minacce.
+- Accedere a  \>  \> **messaggi segnalati dall'utente** del dashboard di gestione delle minacce.
 
 - Passare a **gestione minacce** \> **esaminare** \> **i messaggi segnalati dall'utente**.
 
@@ -498,12 +498,12 @@ Per visualizzare il report, nel [Centro sicurezza & Compliance](https://protecti
 
 ## <a name="what-permissions-are-needed-to-view-these-reports"></a>Quali autorizzazioni sono necessarie per visualizzare i rapporti?
 
-Per visualizzare e utilizzare i report descritti in questo argomento, è necessario essere membri di uno dei gruppi di ruoli seguenti nel centro sicurezza & Compliance:
+Per visualizzare e utilizzare i report descritti in questo articolo, è necessario essere membri di uno dei gruppi di ruoli seguenti nel centro sicurezza & Compliance:
 
 - **Gestione organizzazione**
 - **Amministratore della sicurezza**
 - **Lettore di sicurezza**
-- **Ruolo con autorizzazioni di lettura globali**
+- **Lettore globale**
 
 Per altre informazioni, vedere [Autorizzazioni nel Centro sicurezza e conformità](permissions-in-the-security-and-compliance-center.md).
 

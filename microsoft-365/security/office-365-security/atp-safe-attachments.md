@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-office365
 - seo-marvel-apr2020
 description: Gli amministratori possono conoscere la funzionalità allegati sicuri in Microsoft Defender per Office 365.
-ms.openlocfilehash: d38f95991a1d310e8a894a32e06b5891ebb498a9
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.openlocfilehash: 07e44885a3813ce625c6a853f4070d644a392ded
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49616681"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49659199"
 ---
 # <a name="safe-attachments-in-microsoft-defender-for-office-365"></a>Allegati sicuri in Microsoft Defender per Office 365
 
@@ -65,11 +65,11 @@ In questa sezione vengono descritte le impostazioni dei criteri allegati sicuri:
 
   |Opzione|Effetto|Utilizzare se si desidera eseguire le operazioni seguenti:|
   |---|---|---|
-  |**Disattivare**|Gli allegati non vengono analizzati per gli allegati sicuri da malware. I messaggi vengono ancora analizzati per la [protezione antimalware in EOP](anti-malware-protection.md).|Disattiva l'analisi per i destinatari selezionati. <p> Impedire inutili ritardi nella distribuzione della posta interna. <p> **Questa opzione non è consigliata per la maggior parte degli utenti. È consigliabile utilizzare questa opzione solo per disattivare l'analisi degli allegati sicuri per i destinatari che ricevono solo messaggi provenienti da mittenti attendibili.**|
+  |**Off**|Gli allegati non vengono analizzati per gli allegati sicuri da malware. I messaggi vengono ancora analizzati per la [protezione antimalware in EOP](anti-malware-protection.md).|Disattiva l'analisi per i destinatari selezionati. <p> Impedire inutili ritardi nella distribuzione della posta interna. <p> **Questa opzione non è consigliata per la maggior parte degli utenti. È consigliabile utilizzare questa opzione solo per disattivare l'analisi degli allegati sicuri per i destinatari che ricevono solo messaggi provenienti da mittenti attendibili.**|
   |**Monitor**|Recapita messaggi con allegati e quindi tiene traccia di cosa accade con malware rilevato. <p> Il recapito dei messaggi sicuri potrebbe essere ritardato a causa dell'analisi degli allegati sicuri.|Vedere dove il malware rilevato entra nell'organizzazione.|
   |**Blocca**|Impedisce la recapito dei messaggi con allegati malware rilevati. <p> I messaggi vengono [messi in quarantena](manage-quarantined-messages-and-files.md) se solo gli amministratori (non gli utenti finali) possono esaminare, rilasciare o eliminare i messaggi. <p> Blocca automaticamente le istanze future dei messaggi e degli allegati. <p> Il recapito dei messaggi sicuri potrebbe essere ritardato a causa dell'analisi degli allegati sicuri.|Protegge l'organizzazione da attacchi ripetuti con gli stessi allegati di malware. <p> Questo è il valore predefinito e il valore consigliato nei [criteri di sicurezza preimpostati](preset-security-policies.md)standard e rigorosi.|
   |**Sostituisce**|Rimuove gli allegati di malware rilevati. <p> Notifica ai destinatari che gli allegati sono stati rimossi. <p>  I messaggi vengono [messi in quarantena](manage-quarantined-messages-and-files.md) se solo gli amministratori (non gli utenti finali) possono esaminare, rilasciare o eliminare i messaggi. <p> Il recapito dei messaggi sicuri potrebbe essere ritardato a causa dell'analisi degli allegati sicuri.|Aumentare la visibilità ai destinatari che gli allegati sono stati rimossi a causa del malware rilevato.|
-  |**Recapito dinamico**|Recapita immediatamente i messaggi, ma sostituisce gli allegati con i segnaposto fino al completamento dell'analisi degli allegati sicuri. <p> Per informazioni dettagliate, vedere la sezione criteri per il [recapito dinamico in allegati sicuri](#dynamic-delivery-in-safe-attachments-policies) più avanti in questo argomento.|Evitare ritardi nei messaggi durante la protezione dei destinatari da file dannosi. <p> Consente ai destinatari di visualizzare in anteprima gli allegati in modalità provvisoria durante l'analisi.|
+  |**Recapito dinamico**|Recapita immediatamente i messaggi, ma sostituisce gli allegati con i segnaposto fino al completamento dell'analisi degli allegati sicuri. <p> Per informazioni dettagliate, vedere la sezione criteri per il [recapito dinamico in allegati sicuri](#dynamic-delivery-in-safe-attachments-policies) più avanti in questo articolo.|Evitare ritardi nei messaggi durante la protezione dei destinatari da file dannosi. <p> Consente ai destinatari di visualizzare in anteprima gli allegati in modalità provvisoria durante l'analisi.|
   |
 
 - **Redirect Attachment on Detection: Enable redirect** and **Send the attachment to the indirizzo di posta elettronica seguente**: per le azioni **blocca**, **monitora** o **Sostituisci** , invia messaggi che contengono allegati di malware all'indirizzo di posta elettronica interno o esterno specificato per l'analisi e l'indagine.

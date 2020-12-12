@@ -23,16 +23,16 @@ search.appverid:
 - MOE150
 ms.assetid: f40a9185-b6d5-4a80-bb31-aa3bb0cab48a
 description: Informazioni su come verificare il dominio e configurare i record DNS per la posta elettronica, Skype for business online e altri servizi su GoDaddy per Microsoft.
-ms.openlocfilehash: 995e579e21a185084d9ee64a7ee462930d845844
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: fdd8688f848e676411e736a5be10a2d01dcce50b
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48646128"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49658477"
 ---
 # <a name="create-dns-records-at-godaddy-for-microsoft"></a>Creare record DNS su GoDaddy per Microsoft
 
- **Se non si trova ciò che si sta cercando, [vedere le domande frequenti sui domini](../setup/domains-faq.md)**.
+ **Se non si trova ciò che si sta cercando, [vedere le domande frequenti sui domini](../setup/domains-faq.yml)**.
 
 Se il proprio provider di hosting DNS è GoDaddy, seguire i passaggi di questo articolo per verificare il dominio e configurare i record DNS per posta elettronica, Skype for Business online e così via.
 
@@ -55,7 +55,7 @@ Effettuare le operazioni seguenti.
 
     ![GoDaddy-BP-Configure-1-1](../../media/d6833ec7-9904-43fd-a877-7c663e5f5c25.png)
 
-2. In **domini**selezionare DNS nel dominio che si desidera modificare.
+2. In **domini** selezionare DNS nel dominio che si desidera modificare.
 
     ![GoDaddy-BP-Configure-1-2](../../media/dns/56528038-94b6ac00-651c-11e9-8874-12db60cc7ea6.png)
 
@@ -106,7 +106,7 @@ Effettuare le operazioni seguenti.
 
     ![GoDaddy-BP-Configure-1-1](../../media/d6833ec7-9904-43fd-a877-7c663e5f5c25.png)
 
-2. In **domini**selezionare DNS nel dominio che si desidera modificare.
+2. In **domini** selezionare DNS nel dominio che si desidera modificare.
 
     ![GoDaddy-BP-Configure-1-2](../../media/dns/56528038-94b6ac00-651c-11e9-8874-12db60cc7ea6.png)
 
@@ -124,7 +124,7 @@ Effettuare le operazioni seguenti.
 
     |**Tipo di record**|**Host**|**Punta a**|**Priorità**|**TTL**|
     |:-----|:-----|:-----|:-----|:-----|
-    |MX (Mail Exchanger)  <br/> |@  <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/> **Nota:** Ottenere il vostro  *\<domain-key\>*  dal vostro account Microsoft.           [Come trovarlo](../get-help-with-domains/information-for-dns-records.md)          |10    <br/> Per altre informazioni sulla priorità, vedere [Informazioni sulla priorità MX](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq). <br/> |1 ora  <br/> |
+    |MX (Mail Exchanger)  <br/> |@  <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/> **Nota:** Ottenere il vostro  *\<domain-key\>*  dal vostro account Microsoft.           [Come trovarlo](../get-help-with-domains/information-for-dns-records.md)          |10   <br/> Per altre informazioni sulla priorità, vedere [Informazioni sulla priorità MX](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq). <br/> |1 ora  <br/> |
 
 6. Selezionare **Salva**.
 
@@ -137,7 +137,7 @@ Effettuare le operazioni seguenti.
 
     ![GoDaddy-BP-Configure-1-1](../../media/d6833ec7-9904-43fd-a877-7c663e5f5c25.png)
 
-2. In **domini**selezionare DNS nel dominio che si desidera modificare.
+2. In **domini** selezionare DNS nel dominio che si desidera modificare.
 
     ![GoDaddy-BP-Configure-1-2](../../media/dns/56528038-94b6ac00-651c-11e9-8874-12db60cc7ea6.png)
 
@@ -180,7 +180,7 @@ Effettuare le operazioni seguenti.
 
     ![GoDaddy-BP-Configure-1-1](../../media/d6833ec7-9904-43fd-a877-7c663e5f5c25.png)
 
-2. In **domini**selezionare DNS nel dominio che si desidera modificare.
+2. In **domini** selezionare DNS nel dominio che si desidera modificare.
 
     ![GoDaddy-BP-Configure-1-2](../../media/dns/56528038-94b6ac00-651c-11e9-8874-12db60cc7ea6.png)
 
@@ -214,7 +214,7 @@ Effettuare le operazioni seguenti.
 
     ![GoDaddy-BP-Configure-1-1](../../media/d6833ec7-9904-43fd-a877-7c663e5f5c25.png)
 
-2. In **domini**selezionare DNS nel dominio che si desidera modificare.
+2. In **domini** selezionare DNS nel dominio che si desidera modificare.
 
     ![GoDaddy-BP-Configure-1-2](../../media/dns/56528038-94b6ac00-651c-11e9-8874-12db60cc7ea6.png)
 

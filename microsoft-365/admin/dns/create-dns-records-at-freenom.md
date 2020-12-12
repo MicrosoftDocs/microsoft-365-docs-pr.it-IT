@@ -21,16 +21,16 @@ search.appverid:
 - MOE150
 ms.assetid: d8ff45a2-19e3-413d-aa64-a9982bd6633c
 description: Informazioni su come verificare il dominio e configurare i record DNS per la posta elettronica, Skype for business online e altri servizi in Freenom per Microsoft.
-ms.openlocfilehash: 2fc2407193d41d6e0526aacad0b2b558f1b21bdb
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: b958a69d1dad9a0b56cf954d12cd42e40d6d4fea
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48646188"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49657876"
 ---
 # <a name="create-dns-records-at-freenom-for-microsoft"></a>Creare record DNS in Freenom per Microsoft
 
-Se non si trovano le informazioni desiderate, vedere le [domande frequenti sui domini](../setup/domains-faq.md). 
+Se non si trovano le informazioni desiderate, vedere le [domande frequenti sui domini](../setup/domains-faq.yml). 
   
 > [!CAUTION]
 > Il sito Web Freenom non supporta i record SRV, quindi diverse funzionalità di Skype for Business Online e Outlook Web App non funzioneranno. Indipendentemente dal piano Microsoft utilizzato, sono presenti limitazioni rilevanti del servizio e potrebbe essere opportuno passare a un provider di hosting DNS diverso. 
@@ -120,7 +120,7 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
     
     ![Freenom select Manage Domain](../../media/67737b71-8b1b-42a6-abaf-62d776d3eb87.png)
   
-4. Impostare il nome utilizzato per il dominio sui server dei nomi predefiniti di Freenom. Selezionare **strumenti di gestione**e quindi fare clic su **Server dei nomi**.
+4. Impostare il nome utilizzato per il dominio sui server dei nomi predefiniti di Freenom. Selezionare **strumenti di gestione** e quindi fare clic su **Server dei nomi**.
     
     ![Freenom Nameservers setting](../../media/a6ae877a-c248-42b9-bae9-210a80cd01e7.png)
   
@@ -140,7 +140,7 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
     
     |**Nome**|**Type**|**TTL**|**Destinazione**|**Priorità**|
     |:-----|:-----|:-----|:-----|:-----|
-    |(lasciare vuoto)  <br/> |MX (Mail Exchanger)  <br/> |3600 (secondi)  <br/> |\<domain-key\>. mail.protection.outlook.com  <br/> **Nota:** Ottenere il vostro  *\<domain-key\>*  dal vostro account Microsoft.   [Come trovarlo](../get-help-with-domains/information-for-dns-records.md)          |10    <br/> Per altre informazioni sulla priorità, vedere [What is MX priority?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq). <br/> |
+    |(lasciare vuoto)  <br/> |MX (Mail Exchanger)  <br/> |3600 (secondi)  <br/> |\<domain-key\>. mail.protection.outlook.com  <br/> **Nota:** Ottenere il vostro  *\<domain-key\>*  dal vostro account Microsoft.   [Come trovarlo](../get-help-with-domains/information-for-dns-records.md)          |10   <br/> Per altre informazioni sulla priorità, vedere [What is MX priority?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq). <br/> |
    
    ![Freenom MX record](../../media/8896c4a9-b3dd-45ed-9916-f7da2715ba8c.png)
   

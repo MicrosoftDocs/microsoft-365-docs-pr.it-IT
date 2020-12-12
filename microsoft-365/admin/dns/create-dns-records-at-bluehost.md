@@ -21,16 +21,16 @@ search.appverid:
 - MOE150
 ms.assetid: 657934ff-d9d2-4563-9ccf-ef4832a03a99
 description: Informazioni su come verificare il dominio e configurare i record DNS per la posta elettronica, Skype for business online e altri servizi di Bluehost per Microsoft.
-ms.openlocfilehash: c0ba1b876c939632bc6c43a6e0004fbbe23a7723
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: a9de709b0981c3e74eec1a3ea0e0452d068c5ad4
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48646236"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49658148"
 ---
 # <a name="create-dns-records-at-bluehost-for-microsoft"></a>Creare record DNS su Bluehost per Microsoft
 
- **Se non si trova ciò che si sta cercando, [vedere le domande frequenti sui domini](../setup/domains-faq.md)**. 
+ **Se non si trova ciò che si sta cercando, [vedere le domande frequenti sui domini](../setup/domains-faq.yml)**. 
   
 Se il proprio provider di hosting DNS è Bluehost, seguire i passaggi di questo articolo per verificare il dominio e configurare i record DNS per la posta elettronica, Skype for Business online e così via.
   
@@ -53,7 +53,7 @@ Prima di usare il proprio dominio con Microsoft, è necessario dimostrare di ess
     
     Può essere necessario scorrere la pagina.
     
-3. Nell'area ** _Domain_name_*_ fare clic su*** **Gestisci record DNS**nella riga _ DNS zone editor.
+3. Nell'area **_Domain_name_*_ fare clic su*** **Gestisci record DNS** nella riga _ DNS zone editor.
     
 4. On the **DNS Zone Editor** page, in the **Add DNS Record** area, in the boxes for the new record, type or copy and paste the values from the following table. 
     
@@ -93,7 +93,7 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
     
     Può essere necessario scorrere la pagina.
     
-3. Nell'area ** _Domain_name_*_ fare clic su*** **Gestisci record DNS**nella riga _ DNS zone editor.
+3. Nell'area **_Domain_name_*_ fare clic su*** **Gestisci record DNS** nella riga _ DNS zone editor.
     
 4. On the **DNS Zone Editor** page, in the **Add DNS Record** area, in the boxes for the new record, type or copy and paste the values from the following table. 
     
@@ -130,7 +130,7 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
     
     Può essere necessario scorrere la pagina.
     
-3. Nell'area ** _Domain_name_*_ fare clic su*** **Gestisci record DNS**nella riga _ DNS zone editor.
+3. Nell'area **_Domain_name_*_ fare clic su*** **Gestisci record DNS** nella riga _ DNS zone editor.
     
 4. Nella sezione **a (host)** Records individuare la riga del record di **individuazione automatica** e quindi fare clic su **Elimina** per tale riga. 
     
@@ -173,7 +173,7 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
-> Non può essere presente più di un record TXT per SPF per un dominio. Se il dominio ha più record SPF, si verificheranno errori nella gestione della posta elettronica, oltre a problemi di recapito e di classificazione della posta indesiderata. Se si dispone già di un record SPF per il dominio, non crearne uno nuovo per Microsoft. Al contrario, aggiungere i valori Microsoft necessari al record corrente in modo da disporre di un  *singolo*  record SPF che includa entrambi i set di valori. Servono esempi? Consultare [Record Domain Name System (DNS) esterni per Microsoft](https://docs.microsoft.com/microsoft-365/enterprise/external-domain-name-system-records). Per convalidare il record SPF, è possibile utilizzare uno di questi[strumenti di convalida SPF](../setup/domains-faq.md). 
+> Non può essere presente più di un record TXT per SPF per un dominio. Se il dominio ha più record SPF, si verificheranno errori nella gestione della posta elettronica, oltre a problemi di recapito e di classificazione della posta indesiderata. Se si dispone già di un record SPF per il dominio, non crearne uno nuovo per Microsoft. Al contrario, aggiungere i valori Microsoft necessari al record corrente in modo da disporre di un  *singolo*  record SPF che includa entrambi i set di valori. Servono esempi? Consultare [Record Domain Name System (DNS) esterni per Microsoft](https://docs.microsoft.com/microsoft-365/enterprise/external-domain-name-system-records). Per convalidare il record SPF, è possibile utilizzare uno di questi[strumenti di convalida SPF](../setup/domains-faq.yml). 
   
 1. Per iniziare, passare alla propria pagina dei domini su Bluehost usando [questo collegamento](https://my.bluehost.com/cgi/dm). Verrà richiesto di eseguire l'accesso.
     
@@ -181,7 +181,7 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
     
     Può essere necessario scorrere la pagina.
     
-3. Nell'area ** _Domain_name_*_ fare clic su*** **Gestisci record DNS**nella riga _ DNS zone editor.
+3. Nell'area **_Domain_name_*_ fare clic su*** **Gestisci record DNS** nella riga _ DNS zone editor.
     
 4. On the **DNS Zone Editor** page, in the **Add DNS Record** area, in the boxes for the new record, type or copy and paste the values from the following table. 
     
@@ -206,7 +206,7 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
     
     Può essere necessario scorrere la pagina.
     
-3. Nell'area ** _Domain_name_*_ fare clic su*** **Gestisci record DNS**nella riga _ DNS zone editor.
+3. Nell'area **_Domain_name_*_ fare clic su*** **Gestisci record DNS** nella riga _ DNS zone editor.
     
 4. Creare il primo dei due record SRV.
     

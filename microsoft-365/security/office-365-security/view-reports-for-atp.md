@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-office365
 description: Trovare e utilizzare i report per Microsoft Defender per Office 365 nel centro sicurezza & Compliance.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 2818362eea4071430bb2c784ceb0ce0eeb970a79
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.openlocfilehash: 82c003478538274be1dd1d2e04816de80d1eae6d
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49615577"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49659454"
 ---
 # <a name="view-defender-for-office-365-reports-in-the-reports-dashboard-in-the-security--compliance-center"></a>Visualizzare i report di Defender per Office 365 nel dashboard dei report nel centro sicurezza & Compliance
 
@@ -35,7 +35,7 @@ Microsoft Defender per le organizzazioni di Office 365 (ad esempio, abbonamenti 
 
 ![Dashboard dei report nel centro sicurezza & Compliance](../../media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
 
-## <a name="defender-for-office-365-file-types-report"></a>Report sui tipi di file di Defender per Office 365
+## <a name="defender-for-office-365-file-types-report"></a>Report tipi di file per Defender per Office 365
 
 Il report del **rapporto tipi di file di Defender per Office 365** Visualizza il tipo di file rilevati come dannosi per gli [allegati sicuri](atp-safe-attachments.md).
 
@@ -119,7 +119,7 @@ Se si fa clic su **Visualizza tabella dettagli**, il rapporto fornisce una visua
 
 Per tornare alla visualizzazione report, fare clic su **Visualizza report**.
 
-## <a name="defender-for-office-365-message-disposition-report"></a>Protezione per il rapporto disposizione messaggi di Office 365
+## <a name="defender-for-office-365-message-disposition-report"></a>Report disposizione messaggi di Defender per Office 365
 
 Il rapporto di **disposizione dei messaggi ATP** indica le azioni eseguite per i messaggi di posta elettronica rilevati come contenuti dannosi.
 
@@ -322,7 +322,7 @@ Per tornare alla visualizzazione report, fare clic su **Visualizza report**.
 
 ## <a name="additional-reports-to-view"></a>Report aggiuntivi da visualizzare
 
-Oltre ai rapporti descritti in questo argomento, sono disponibili diversi altri report, come descritto nella tabella seguente:
+Oltre ai rapporti descritti in questo articolo, sono disponibili diversi altri report, come descritto nella tabella seguente:
 
 ****
 
@@ -338,12 +338,12 @@ Oltre ai rapporti descritti in questo argomento, sono disponibili diversi altri 
 
 ## <a name="what-permissions-are-needed-to-view-the-defender-for-office-365-reports"></a>Quali autorizzazioni sono necessarie per visualizzare i report del difensore per Office 365?
 
-Per visualizzare e utilizzare i report descritti in questo argomento, è necessario essere membri di uno dei gruppi di ruoli seguenti nel centro sicurezza & Compliance:
+Per visualizzare e utilizzare i report descritti in questo articolo, è necessario essere membri di uno dei gruppi di ruoli seguenti nel centro sicurezza & Compliance:
 
 - **Gestione organizzazione**
 - **Amministratore della sicurezza**
 - **Lettore di sicurezza**
-- **Ruolo con autorizzazioni di lettura globali**
+- **Lettore globale**
 
 Per altre informazioni, vedere [Autorizzazioni nel Centro sicurezza e conformità](permissions-in-the-security-and-compliance-center.md).
 

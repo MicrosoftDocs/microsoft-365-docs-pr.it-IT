@@ -22,16 +22,16 @@ search.appverid:
 ms.assetid: 854b6b2b-0255-4089-8019-b765cff70377
 ROBOTS: NOINDEX
 description: Informazioni sui domini e sui record DNS associati per gestire più facilmente i propri domini.
-ms.openlocfilehash: 3f913a96395424e86d0d88dbb29bcb58a076ebb8
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 1f5d49eb588a7c4245751360fa3309bf20496512
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48645360"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49658532"
 ---
 # <a name="dns-basics"></a>Informazioni di base sul DNS
 
- Se non si trova ciò che si sta cercando, **[vedere le domande frequenti sui domini](../setup/domains-faq.md)**. 
+ Se non si trova ciò che si sta cercando, **[vedere le domande frequenti sui domini](../setup/domains-faq.yml)**. 
   
 ::: moniker range="o365-worldwide"
 

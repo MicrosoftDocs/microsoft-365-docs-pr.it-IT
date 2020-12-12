@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: c29f75e5-c16e-409e-a123-430691e38276
 description: Gli amministratori possono ottenere informazioni sui codici di errore associati al recapito dei messaggi utilizzando i connettori (noti anche come Intelligence del flusso di posta).
-ms.openlocfilehash: 461d9bfa91d88b8bbec52d5aad6ec7a2e534bc96
-ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
+ms.openlocfilehash: 5339bf2117a87cd940c4b96b3d00b7b8ba78a1da
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48877802"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49658858"
 ---
 # <a name="mail-flow-intelligence-in-eop"></a>Intelligence del flusso di posta in Exchange Online Protection
 
@@ -27,7 +27,7 @@ ms.locfileid: "48877802"
 
 In Microsoft 365 organizzazioni con cassette postali in Exchange Online o standalone Exchange Online Protection (EOP) organizzazioni senza cassette postali di Exchange Online, si utilizza in genere un connettore per instradare i messaggi di posta elettronica da EOP all'ambiente di posta elettronica locale. È inoltre possibile utilizzare un connettore per instradare i messaggi da Microsoft 365 a un'organizzazione partner. Quando Microsoft 365 non è in grado di recapitare questi messaggi tramite il connettore, vengono accodati in Microsoft 365. Microsoft 365 continuerà a riprovare il recapito per ogni messaggio per 24 ore. Dopo 24 ore, il messaggio in coda scadrà e il messaggio verrà restituito al mittente originale in un rapporto di mancato recapito (noto anche come NDR o messaggio di rimbalzo).
 
-Microsoft 365 genera un errore quando un messaggio non può essere recapitato utilizzando un connettore. In questo argomento sono descritti gli errori più comuni e le relative soluzioni. Gli errori di Accodamento e di notifica per i messaggi non recapitabili inviati tramite connettori sono noti come _Intelligence del flusso di posta_.
+Microsoft 365 genera un errore quando un messaggio non può essere recapitato utilizzando un connettore. Gli errori più comuni e le relative soluzioni sono descritti in questo articolo. Gli errori di Accodamento e di notifica per i messaggi non recapitabili inviati tramite connettori sono noti come _Intelligence del flusso di posta_.
 
 ## <a name="error-code-450-44312-dns-query-failed"></a>Codice errore: 450 4.4.312 Query DNS non riuscita
 
@@ -71,9 +71,9 @@ In genere, questo errore indica che Microsoft 365 ha riscontrato un errore di co
 
   - Nell'interfaccia di [amministrazione di Exchange (EAC)](https://docs.microsoft.com/Exchange/exchange-admin-center), disabilitare o eliminare il connettore che invia messaggi di posta elettronica da Microsoft 365 all'ambiente di posta elettronica locale:
 
-    1. Nell'interfaccia di amministrazione di Exchange, andare a connettori del **flusso di posta** \> **Connectors**.
+    1. Nell'interfaccia di amministrazione di Exchange, andare a connettori del **flusso di posta** \> .
 
-    2. Selezionare il connettore con il **From** valore da **Office 365** e il valore **per** il **server di posta elettronica dell'organizzazione** ed eseguire una delle operazioni seguenti:
+    2. Selezionare il connettore con il  valore da **Office 365** e il valore **per** il **server di posta elettronica dell'organizzazione** ed eseguire una delle operazioni seguenti:
 
        - Eliminare il connettore facendo clic su **Elimina** ![ icona Rimuovi](../../media/adf01106-cc79-475c-8673-065371c1897b.gif)
 
@@ -81,7 +81,7 @@ In genere, questo errore indica che Microsoft 365 ha riscontrato un errore di co
 
   - Modificare il dominio accettato in Microsoft 365 associato all'ambiente di posta elettronica locale dall' **inoltro interno** a **autorevole**. Per istruzioni, vedere [Manage Accepted Domains in Exchange Online](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains).
 
-  **Nota** : in genere, queste modifiche impiegano tra 30 minuti e un'ora per rendere effettive le operazioni. Dopo un'ora, verificare che l'errore non sia più stato ricevuto.
+  **Nota**: in genere, queste modifiche impiegano tra 30 minuti e un'ora per rendere effettive le operazioni. Dopo un'ora, verificare che l'errore non sia più stato ricevuto.
 
 - Se l'errore è generato nell'organizzazione del partner (ad esempio, il provider di servizi cloud di terze parti), è necessario contattarlo e chiedere la risoluzione del problema.
 

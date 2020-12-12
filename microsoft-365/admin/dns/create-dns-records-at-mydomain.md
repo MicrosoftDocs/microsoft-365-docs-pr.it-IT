@@ -21,18 +21,18 @@ search.appverid:
 - MOE150
 ms.assetid: 9982191d-ed79-46a9-b2e7-317d1a3a9867
 description: Informazioni su come verificare il dominio e configurare record DNS per la posta elettronica, Skype for Business Online e altri servizi su MyDomain per Microsoft.
-ms.openlocfilehash: 13660b4f3fd899d4d055a2c18aaff90cb3ba19c3
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 13fa707f28fcc6de24c3fdf58e56174d7a271776
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48645960"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49657852"
 ---
 # <a name="create-dns-records-at-mydomain-for-microsoft"></a>Creare record DNS su MyDomain per Microsoft
 
 
   
- Se non si trova ciò che si sta cercando, **[vedere le domande frequenti sui domini](../setup/domains-faq.md)**. 
+ Se non si trova ciò che si sta cercando, **[vedere le domande frequenti sui domini](../setup/domains-faq.yml)**. 
   
 > [!CAUTION]
 > Il sito Web MyDomain non supporta i record SRV, quindi diverse funzionalità di Skype for Business Online e Outlook Web App non funzioneranno. Indipendentemente dal piano di Microsoft in uso, se si gestiscono i record DNS su MyDomain ci saranno [significative limitazioni del servizio](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq), quindi è consigliabile passare a un provider di hosting DNS diverso. 
@@ -107,7 +107,7 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
   
 6. Nelle caselle del nuovo record digitare oppure copiare e incollare i valori della tabella seguente.
     
-    |**Priorità **|**Host**|**Points To:**|
+    |**Priorità**|**Host**|**Points To:**|
     |:-----|:-----|:-----|
     |0  <br/> Per altre informazioni sulla priorità, vedere [Che cos'è la priorità MX](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq). <br/> |@  <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/> **Nota:** ottenere il valore \<*domain-key*\> dal proprio account Microsoft. > [Come trovarlo?](../get-help-with-domains/information-for-dns-records.md)          |
    
@@ -168,7 +168,7 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
-> Non può essere presente più di un record TXT per SPF per un dominio. Se il dominio ha più record SPF, si verificheranno errori nella gestione della posta elettronica, oltre a problemi di recapito e di classificazione della posta indesiderata. Se si dispone già di un record SPF per il dominio, non crearne uno nuovo per Microsoft. Al contrario, aggiungere i valori di Microsoft necessari al record corrente in modo da ottenere un unico record SPF che include entrambi i set di valori. Servono esempi? Consultare [Record Domain Name System (DNS) esterni per Microsoft](https://docs.microsoft.com/microsoft-365/enterprise/external-domain-name-system-records#bkmk_spfrecords). To validate your SPF record, you can use one of these [SPF validation tools](../setup/domains-faq.md). 
+> Non può essere presente più di un record TXT per SPF per un dominio. Se il dominio ha più record SPF, si verificheranno errori nella gestione della posta elettronica, oltre a problemi di recapito e di classificazione della posta indesiderata. Se si dispone già di un record SPF per il dominio, non crearne uno nuovo per Microsoft. Al contrario, aggiungere i valori di Microsoft necessari al record corrente in modo da ottenere un unico record SPF che include entrambi i set di valori. Servono esempi? Consultare [Record Domain Name System (DNS) esterni per Microsoft](https://docs.microsoft.com/microsoft-365/enterprise/external-domain-name-system-records#bkmk_spfrecords). To validate your SPF record, you can use one of these [SPF validation tools](../setup/domains-faq.yml). 
   
 1. Per iniziare, passare alla propria pagina dei domini su MyDomain usando [questo collegamento](https://www.mydomain.com/controlpanel). Verrà richiesto di eseguire l'accesso.
     

@@ -22,16 +22,16 @@ description: Comprendere cosa è un dominio e come è possibile acquistare un do
 ms.custom:
 - okr_smb
 - AdminSurgePortfolio
-ms.openlocfilehash: 0c59fb6bc5f9a7796c84a0370c771bf90102dec0
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 9afc38aeda32870a248212f7b67f2fb4af8fd960
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48645120"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49658076"
 ---
 # <a name="what-is-a-domain"></a>Cos'è un dominio?
 
- Se non si trova ciò che si sta cercando, **[vedere le domande frequenti sui domini](../setup/domains-faq.md)**. 
+ Se non si trova ciò che si sta cercando, **[vedere le domande frequenti sui domini](../setup/domains-faq.yml)**. 
   
 Un dominio è un nome univoco che segue il segno **@** negli indirizzi di posta elettronica e **www.** negli indirizzi Web. In genere assume la forma del nome dell'organizzazione e di un suffisso Internet standard, ad esempio *yourbusiness. <span> com* o *stateuniversity. <span> edu*. 
   

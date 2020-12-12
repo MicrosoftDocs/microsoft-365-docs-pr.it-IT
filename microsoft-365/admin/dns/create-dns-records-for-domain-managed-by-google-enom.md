@@ -21,16 +21,16 @@ search.appverid:
 - MOE150
 ms.assetid: 3c490fbf-7833-4e43-be34-ed0dc3cce5e3
 description: Informazioni su come accedere a eNom e creare DNS tramite la pagina domini di Google.
-ms.openlocfilehash: 37fa8836b7511d51ef2dcb137f36d62eebc36443
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 3294be667653c568fbbd1a911bcfab9b6ea7788b
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48645612"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49656856"
 ---
 # <a name="create-dns-records-when-your-domain-is-managed-by-google-enom"></a>Creare record DNS quando il dominio è gestito da Google (eNom)
 
- Se non si trova ciò che si sta cercando, **[vedere le domande frequenti sui domini](../setup/domains-faq.md)**. 
+ Se non si trova ciò che si sta cercando, **[vedere le domande frequenti sui domini](../setup/domains-faq.yml)**. 
   
 Per eseguire la migrazione degli account di posta elettronica a Microsoft, è necessario creare un record DNS presso il registrar.
   

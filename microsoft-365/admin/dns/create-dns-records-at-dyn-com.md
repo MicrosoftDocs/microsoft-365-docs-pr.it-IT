@@ -21,16 +21,16 @@ search.appverid:
 - MOE150
 ms.assetid: 34e57a00-2a7d-469c-beec-089423f18369
 description: Informazioni su come verificare il dominio e configurare i record DNS per la posta elettronica, Skype for business online e altri servizi in Dyn.com per Microsoft.
-ms.openlocfilehash: 91dbd3fbde8417764a01eb285b267f3981b2f139
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: d1b77d6b4f38dd3e0979f448a77b293564841f45
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48646140"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49657937"
 ---
 # <a name="create-dns-records-at-dyncom-for-microsoft"></a>Creare record DNS in Dyn.com per Microsoft
 
- **Se non si trova ciò che si sta cercando, vedere le [domande frequenti sui domini](../setup/domains-faq.md)**. 
+ **Se non si trova ciò che si sta cercando, vedere le [domande frequenti sui domini](../setup/domains-faq.yml)**. 
   
 Se il proprio provider di hosting DNS è Dyn.com, seguire i passaggi di questo articolo per verificare il dominio e configurare i record DNS per posta elettronica, Skype for Business online e così via.
  

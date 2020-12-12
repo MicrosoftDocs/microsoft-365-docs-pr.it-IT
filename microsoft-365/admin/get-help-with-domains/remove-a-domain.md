@@ -22,12 +22,12 @@ search.appverid:
 - GEA150
 ms.assetid: f09696b2-8c29-4588-a08b-b333da19810c
 description: Informazioni su come rimuovere un vecchio dominio da Microsoft 365 e spostare gli utenti e i gruppi in un altro dominio.
-ms.openlocfilehash: 4eb44914daf500ac48f140bd999a2cf783a9bf83
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: cddbb0ef9cf48147e33b93a4a8def15576edfab5
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48645288"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49655531"
 ---
 # <a name="remove-a-domain"></a>Rimuovere un dominio
 
@@ -38,7 +38,7 @@ ms.locfileid: "48645288"
 
 ::: moniker-end
   
- Se non si trova ciò che si sta cercando, **[vedere le domande frequenti sui domini](../setup/domains-faq.md)**. 
+ Se non si trova ciò che si sta cercando, **[vedere le domande frequenti sui domini](../setup/domains-faq.yml)**. 
   
 Si sta rimuovendo il dominio perché si desidera aggiungerlo a un piano di sottoscrizione di Microsoft 365 diverso? Oppure si desidera semplicemente annullare l'abbonamento? È possibile [modificare il piano o la sottoscrizione](../../commerce/subscriptions/switch-to-a-different-plan.md) oppure [annullare l'abbonamento](../../commerce/subscriptions/cancel-your-subscription.md).
   
@@ -100,9 +100,9 @@ Si sta rimuovendo il dominio perché si desidera aggiungerlo a un piano di sotto
 
 1. Passare all'<a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">interfaccia di amministrazione</a>.
 
-2. Passare a **utenti** \> **attivi**e selezionare l'account dall'elenco.
+2. Passare a **utenti** \> **attivi** e selezionare l'account dall'elenco.
 
-3. Nella scheda **account** selezionare **Gestisci nome utente**e quindi scegliere un dominio diverso.
+3. Nella scheda **account** selezionare **Gestisci nome utente** e quindi scegliere un dominio diverso.
   
 4. Nella parte superiore, seleziona il nome dell'account, quindi seleziona **Esci**.
 
@@ -114,9 +114,9 @@ Si sta rimuovendo il dominio perché si desidera aggiungerlo a un piano di sotto
 
 ::: moniker range="o365-germany"
 
-1. Vai a **utenti** \> **attivi**e seleziona il tuo nome nell'elenco.
+1. Vai a **utenti** \> **attivi** e seleziona il tuo nome nell'elenco.
 
-2. Nella sezione **nome utente/indirizzo di posta elettronica** selezionare **modifica**e quindi scegliere un dominio diverso.
+2. Nella sezione **nome utente/indirizzo di posta elettronica** selezionare **modifica** e quindi scegliere un dominio diverso.
 
 3. Selezionare **Imposta come Primary** > **Save** > **Close**.
   
@@ -130,9 +130,9 @@ Si sta rimuovendo il dominio perché si desidera aggiungerlo a un piano di sotto
 
 ::: moniker range="o365-21vianet"
 
-1. Vai a **utenti** \> **attivi**e seleziona il tuo nome nell'elenco.
+1. Vai a **utenti** \> **attivi** e seleziona il tuo nome nell'elenco.
 
-2. Nella sezione **nome utente/indirizzo di posta elettronica** selezionare **modifica**e quindi scegliere un dominio diverso.
+2. Nella sezione **nome utente/indirizzo di posta elettronica** selezionare **modifica** e quindi scegliere un dominio diverso.
 
 3. Selezionare **Imposta come Primary** > **Save** > **Close**.
   
@@ -148,7 +148,7 @@ Si sta rimuovendo il dominio perché si desidera aggiungerlo a un piano di sotto
 
 ::: moniker range="o365-worldwide"
 
-1. Nell'interfaccia di amministrazione, andare alla pagina **gruppi** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Groups</a> .
+1. Nell'interfaccia di amministrazione, andare alla pagina **gruppi** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank"></a> .
   
 2. Selezionare il nome del gruppo, quindi nella scheda **generale** sotto **indirizzo di posta elettronica, primario**, selezionare **modifica**.
 
@@ -160,7 +160,7 @@ Si sta rimuovendo il dominio perché si desidera aggiungerlo a un piano di sotto
 
 ::: moniker range="o365-germany"
 
-1. Nell'interfaccia di <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">Amministrazione</a>, andare alla pagina **gruppi** > **Groups** .
+1. Nell'interfaccia di <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">Amministrazione</a>, andare alla pagina **gruppi** >  .
 
 2. Selezionare il nome del gruppo e quindi fare clic su **modifica** accanto a **nome**.
 
@@ -172,7 +172,7 @@ Si sta rimuovendo il dominio perché si desidera aggiungerlo a un piano di sotto
 
 ::: moniker range="o365-21vianet"
 
-1. Nell'interfaccia di <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">Amministrazione</a>, andare alla pagina **gruppi** > **Groups** .
+1. Nell'interfaccia di <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">Amministrazione</a>, andare alla pagina **gruppi** >  .
 
 2. Selezionare il nome del gruppo e quindi fare clic su **modifica** accanto a **nome**.
 
@@ -192,13 +192,13 @@ Si sta rimuovendo il dominio perché si desidera aggiungerlo a un piano di sotto
 
 ::: moniker range="o365-germany"
 
-1. Nell'interfaccia di amministrazione, andare alla pagina dei domini di **installazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">Domains</a> .
+1. Nell'interfaccia di amministrazione, andare alla pagina dei domini di **installazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank"></a> .
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. Nell'interfaccia di amministrazione, andare alla pagina dei domini di **installazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">Domains</a> .
+1. Nell'interfaccia di amministrazione, andare alla pagina dei domini di **installazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank"></a> .
 
 ::: moniker-end
   
@@ -227,7 +227,7 @@ Il problema persiste? Potrebbe essere necessario rimuovere manualmente il domini
 
 ## <a name="related-articles"></a>Articoli correlati
 
-[Domande frequenti sui domini](../setup/domains-faq.md)
+[Domande frequenti sui domini](../setup/domains-faq.yml)
 
 [Passare a un piano di Microsoft 365 per le aziende diverso](../../commerce/subscriptions/switch-to-a-different-plan.md)
 

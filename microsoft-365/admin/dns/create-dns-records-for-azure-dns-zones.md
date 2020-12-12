@@ -21,16 +21,16 @@ search.appverid:
 - MOE150
 ms.assetid: fbcef2d7-ebaf-40d0-ba1f-cdaeff9f50ef
 description: Informazioni su come verificare il dominio e configurare i record DNS per la posta elettronica, Skype for business online e altri servizi nelle aree DNS di Azure per Microsoft.
-ms.openlocfilehash: 40fadb81ebd0ae5385bbbdad727b1c579142b227
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: c276570ec1d5ff079348bd8202ea597ef61e88f6
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48645672"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49656868"
 ---
 # <a name="create-dns-records-for-azure-dns-zones"></a>Creare record DNS per le aree DNS di Azure
 
- Se non si trova ciò che si sta cercando, **[vedere le domande frequenti sui domini](../setup/domains-faq.md)**. 
+ Se non si trova ciò che si sta cercando, **[vedere le domande frequenti sui domini](../setup/domains-faq.yml)**. 
   
 Se Azure è il provider di hosting DNS, seguire la procedura descritta in questo articolo per verificare il dominio e configurare i record DNS per la posta elettronica, Skype for business online e così via.
   
@@ -160,7 +160,7 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
     
     |**Nome**|**Type**|**TTL**|**Unità TTL**|**Preference**|**Exchange Mail**|
     |:-----|:-----|:-----|:-----|:-----|:-----|
-    |@  <br/> |MX  <br/> |1   <br/> |Ore  <br/> |10    <br/> Per altre informazioni sulla priorità, vedere [Che cos'è la priorità MX](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq). <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/> **Nota:** Ottenere il vostro  *\<domain-key\>*  dal vostro account Microsoft.   [Come trovarlo](../get-help-with-domains/information-for-dns-records.md)  
+    |@  <br/> |MX  <br/> |1   <br/> |Ore  <br/> |10   <br/> Per altre informazioni sulla priorità, vedere [Che cos'è la priorità MX](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq). <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/> **Nota:** Ottenere il vostro  *\<domain-key\>*  dal vostro account Microsoft.   [Come trovarlo](../get-help-with-domains/information-for-dns-records.md)  
    
     ![Azure-BP-Configure-2-1](../../media/712c23ae-9d38-4af2-94e0-0704e70744fe.png)
   

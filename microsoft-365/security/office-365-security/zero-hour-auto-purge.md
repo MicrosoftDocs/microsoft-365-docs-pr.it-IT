@@ -21,12 +21,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Gli amministratori possono sapere in che modo lo ZAP (zero-hour auto Purge) può spostare con effetto retroattivo i messaggi recapitati in una cassetta postale di Exchange Online nella cartella posta indesiderata o in quarantena che sono stati rilevati con effetto retroattivo come spam o phishing.
-ms.openlocfilehash: fd5186bc40d2d80097e6292d86ea113a41e0dd52
-ms.sourcegitcommit: ce46d1bd67091d4ed0e2b776dfed55e2d88cdbf4
+ms.openlocfilehash: 7b43fb46adacfe1e9f1e7e622122df90e747ff44
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49131147"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49659430"
 ---
 # <a name="zero-hour-auto-purge-zap-in-exchange-online"></a>Zero-hour auto Purge (ZAP) in Exchange Online
 
@@ -97,7 +97,7 @@ Per determinare se il messaggio è stato spostato da ZAP, è possibile utilizzar
 
 ### <a name="what-if-i-use-the-quarantine-folder-instead-of-the-junk-mail-folder"></a>Che cosa fare se si utilizza la cartella Quarantine anziché la cartella posta indesiderata?
 
-ZAP eseguirà un'azione su un messaggio in base alla configurazione dei criteri di protezione da posta indesiderata, come descritto in precedenza in questo argomento.
+ZAP eseguirà un'azione su un messaggio in base alla configurazione dei criteri di protezione da posta indesiderata come descritto in precedenza in questo articolo.
 
 ### <a name="what-if-im-using-safe-senders-mail-flow-rules-or-allowedblocked-sender-lists"></a>Cosa succede se si utilizzano mittenti attendibili, regole del flusso di posta o elenchi di mittenti consentiti o bloccati?
 
