@@ -18,12 +18,12 @@ ms.collection:
 - M365initiative-coredeploy
 ms.custom: seo-marvel-jun2020
 description: Assicurarsi di aver abilitato tutte le caratteristiche di Microsoft 365 per massimizzare la produttività dei lavoratori remoti e mantenere l'accesso sicuro ai server, ai dati e al cloud.
-ms.openlocfilehash: 833f0351c3eb78afb7218ea1c1c51151d70bb608
-ms.sourcegitcommit: bdf65d48b20f0f428162c39ee997accfa84f4e5d
+ms.openlocfilehash: c6f17f2a80fa37abe43ceabc7a06c86c80eeadbd
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "49371503"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49616357"
 ---
 # <a name="empower-remote-workers-with-microsoft-365"></a>Aumentare la produttività dei lavoratori remoti con Microsoft 365
 
@@ -99,9 +99,19 @@ Per i criteri di sicurezza e conformità, vedere [Distribuire sicurezza e confor
 
 [![Poster Supportare i lavoratori remoti](../media/empower-people-to-work-remotely/empower-remote-workers-poster.png)](../downloads/empower-remote-workers.pdf)
 
-È anche possibile scaricare il poster in formato [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/empower-remote-workers.pdf) e stamparlo in formato lettera, legale o tabloid (27,9 x 43,2 cm).
+È anche possibile scaricare il poster in formato [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/empower-remote-workers.pdf) o [PowerPoint](https://download.microsoft.com/download/5/1/1/511b77a9-a34c-4ea7-af2a-32b07f20b780/empower-remote-workers.pptx) e stamparlo in formato lettera, legale o tabloid (27,9 x 43,2 cm).
 
-Utilizzare la procedura seguente per proteggere e ottimizzare l'accesso ai server e ai servizi cloud dell'organizzazione e massimizzare la produttività dei lavoratori remoti.
+## <a name="provide-remote-working-for-all-of-your-workers"></a>Consentire ai dipendenti di lavorare da remoto.
+
+Con i dispositivi seguenti i dipendenti possono rimanere produttivi ovunque:
+
+- I dispositivi moderni, come Surface Laptop e Windows 10, che dispongono di funzionalità, sicurezza e prestazioni per accedere alle app e ai servizi cloud di Microsoft 365 direttamente sul Web.
+
+- Tutti i dispositivi, tra cui dispositivi e desktop meno recenti usati da casa, che possono accedere alle app e ai servizi cloud di Microsoft 365 indirettamente tramite una distribuzione veloce di un [desktop virtuale basato su Windows 10](empower-people-to-work-remotely-remote-access.md#deploy-windows-virtual-desktop-to-provide-remote-access-for-remote-workers-using-personal-devices). Questa opzione offre prestazioni elevate, piena sicurezza e gestione IT semplificata.
+
+## <a name="next-steps"></a>Passaggi successivi
+
+Utilizzare la procedura seguente per proteggere e ottimizzare l'accesso ai server e ai servizi cloud dell'organizzazione e massimizzare la produttività dei dipendenti remoti.
 
 1. [Aumentare la sicurezza dell'accesso con la MFA](empower-people-to-work-remotely-secure-sign-in.md)
 2. [Fornire l'accesso remoto alle app e ai servizi locali](empower-people-to-work-remotely-remote-access.md)
