@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Informazioni su come aggiornare un record DNS (Domain Name Service) per usare un Sender Policy Framework (SPF) con il dominio personalizzato in Office 365.
-ms.openlocfilehash: ce8a982b875632ad58b34ae240c02b507c4656fe
-ms.sourcegitcommit: 9546708a5506fdbadbfe2500cbf1bd1aeaec6fcb
+ms.openlocfilehash: 137937b106be9ce0cf782a84b988913e2c6dac4b
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "49021062"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49615721"
 ---
 # <a name="set-up-spf-to-help-prevent-spoofing"></a>Configurazione di SPF per evitare lo spoofing
 
@@ -69,11 +69,11 @@ Raccogliere le seguenti informazioni:
    |---|---|---|---|
    |1|Qualsiasi sistema di posta elettronica (obbligatorio)|Comune. Tutti i record TXT SPF devono iniziare con questo valore|`v=spf1`|
    |2|Exchange Online|Comune|`include:spf.protection.outlook.com`|
-   |3|Solo per Exchange Online|Non comune|`ip4:23.103.224.0/19 ip4:206.191.224.0/19 ip4:40.103.0.0/16 include:spf.protection.outlook.com`|
+   |3|Solo per Exchange Online|Non comune|`ip4:23.103.224.0/19` <br> `ip4:206.191.224.0/19` <br> `ip4:40.103.0.0/16` <br> `include:spf.protection.outlook.com`|
    |4|Office 365 Germania, solo Microsoft Cloud Germania|Non comune|`include:spf.protection.outlook.de`|
-   |5|Un sistema di posta elettronica di terze parti|Non comune|`include:<domain_name>`  <br/> Dove \<domain_name\> è il dominio del sistema di posta elettronica di terze parti.|
-   |6|Sistema di posta locale. Ad esempio, di Exchange Online Protection insieme a un altro sistema di posta elettronica|Non comune|Utilizzarne uno per ogni sistema di posta elettronica aggiuntivo: <br> `ip4:<IP_address>` <br/> `ip6:<IP_address>` <br/> `include:<domain_name>` <br/> Dove \<IP_address\> e \<domain_name\> sono l'indirizzo IP e il dominio dell'altro sistema di posta che invia i messaggi per conto del dominio.|
-   |7|Qualsiasi sistema di posta elettronica (obbligatorio)|Comune. Tutti i record TXT SPF finiscono con questo valore|`<enforcement rule>` <br/> Può trattarsi di uno dei vari valori. Consigliamo il valore ``-all`.|
+   |5|Un sistema di posta elettronica di terze parti|Non comune|`include:<domain_name>` <p> \<domain_name\> è il dominio del sistema di posta elettronica di terze parti.|
+   |6|Sistema di posta locale. Ad esempio, di Exchange Online Protection insieme a un altro sistema di posta elettronica|Non comune|Utilizzarne uno per ogni sistema di posta elettronica aggiuntivo: <p> `ip4:<IP_address>` <br> `ip6:<IP_address>` <br> `include:<domain_name>` <p> \<IP_address\> e \<domain_name\> sono l'indirizzo IP e il dominio dell'altro sistema di posta che invia i messaggi per conto del dominio.|
+   |7|Qualsiasi sistema di posta elettronica (obbligatorio)|Comune. Tutti i record TXT SPF finiscono con questo valore|`<enforcement rule>` <p> Può trattarsi di uno dei vari valori. Consigliamo il valore `-all`.|
    |
 
 2. Se non è già stato fatto, costituire il record TXT SPF utilizzando la sintassi della tabella.

@@ -3,7 +3,7 @@ title: Configurare un team con l'isolamento di sicurezza
 f1.keywords: NOCSH
 ms.author: mikeplum
 author: MikePlumleyMSFT
-manager: pamgreen
+manager: serdars
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 localization_priority: Priority
@@ -15,12 +15,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: Informazioni su come creare un team con un'etichetta di riservatezza univoca per la sicurezza.
-ms.openlocfilehash: 46bc63bab52bf75dc7c215510d49b4d985ff07c3
-ms.sourcegitcommit: 53ff1fe6d6143b0bf011031eea9b85dc01ae4f74
+ms.openlocfilehash: c7230f23a21804530863f125003e4db0eaeeeb60
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48487483"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49616297"
 ---
 # <a name="configure-a-team-with-security-isolation"></a>Configurare un team con l'isolamento di sicurezza
 
@@ -50,7 +50,7 @@ Guardare il video per una panoramica del processo di distribuzione.
 
 [![Poster Microsoft Teams con l’isolamento di sicurezza](../media/secure-teams-security-isolation/team-security-isolation-poster.png)](../downloads/team-security-isolation-poster.pdf)
 
-È anche possibile scaricare il poster in formato [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/team-security-isolation-poster.pdf) e stamparlo in formato lettera, legale o tabloid (27,9 x 43,2 cm).
+È anche possibile scaricare il poster in formato [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/team-security-isolation-poster.pdf) o [PowerPoint](https://download.microsoft.com/download/8/0/5/8057fc16-c044-40b6-a652-7ed555ba2895/team-security-isolation-poster.pptx) e stamparlo in formato lettera, legale o tabloid (27,9 x 43,2 cm).
 
 ## <a name="initial-protections"></a>Protezioni iniziali
 
@@ -170,7 +170,7 @@ L'impostazione di condivisione guest che si sceglie durante la creazione dell'et
 
 |Impostazione etichetta|Impostazione del sito di SharePoint|
 |:------------|:----------------------|
-|**Consentire ai proprietari del gruppo Office 365 di aggiungere al gruppo persone esterne all'organizzazione** selezionata|**Guest nuovi ed esistenti ** (impostazione predefinita per i nuovi team)|
+|**Consentire ai proprietari del gruppo Office 365 di aggiungere al gruppo persone esterne all'organizzazione** selezionata|**Guest nuovi ed esistenti** (impostazione predefinita per i nuovi team)|
 |**Consentire ai proprietari del gruppo Office 365 di aggiungere al gruppo persone esterne all'organizzazione** non selezionata|**Solo persone nell'organizzazione**|
 
 Verrà aggiornato anche il tipo di collegamento di condivisione predefinito per ridurre il rischio di condivisione accidentale di file e cartelle con un gruppo di destinatari più ampio del previsto.
@@ -221,7 +221,7 @@ Per invitare utenti al sito
 
 In Microsoft 365 sono disponibili altri metodi per proteggere i contenuti. Valutare se le opzioni seguenti possono migliorare la sicurezza per l'organizzazione.
 
-- Fare in modo che gli utenti guest accettino le [condizioni per l'utilizzo](https://docs.microsoft.com/azure/active-directory/conditional-access/terms-of-use).
+- Chiedere agli utenti guest di accettare le [condizioni per l'utilizzo](https://docs.microsoft.com/azure/active-directory/conditional-access/terms-of-use).
 - Configurare un [criterio di timeout della sessione](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-session-lifetime) per gli utenti guest.
 - Creare [tipi di informazioni sensibili](https://docs.microsoft.com/microsoft-365/compliance/custom-sensitive-info-types) e usare la [prevenzione della perdita dei dati](https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies) per impostare criteri per l'accesso alle informazioni riservate.
 - Usare le [verifiche di accesso di Azure Active Directory](https://docs.microsoft.com/azure/active-directory/governance/access-reviews-overview) per verificare periodicamente l'accesso e l'appartenenza al team.
