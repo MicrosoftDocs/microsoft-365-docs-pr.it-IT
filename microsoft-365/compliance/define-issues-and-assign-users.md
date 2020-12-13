@@ -2,8 +2,8 @@
 title: Definire i problemi e assegnare gli utenti in Advanced eDiscovery
 f1.keywords:
 - NOCSH
-ms.author: chrfox
-author: chrfox
+ms.author: markjjo
+author: markjjo
 manager: laurawi
 titleSuffix: Office 365
 audience: Admin
@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 48d37ee7-05bd-4cb8-9723-a8959ad23fbe
 description: Informazioni su come aggiungere o modificare un problema, ad esempio per l'assegnazione di utenti o per eliminare un problema per un caso di eDiscovery in Advanced eDiscovery.
-ms.openlocfilehash: 3e1366962393b6e1bb3605472b4f635fbcf6e4bd
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 1bdcb6f6562b0a431f1645d4006b3392d90a9f87
+ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43630659"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "49663071"
 ---
 # <a name="define-issues-and-assign-users-in-advanced-ediscovery-classic"></a>Definire i problemi e assegnare gli utenti in Advanced eDiscovery (Classic)
 
@@ -31,7 +31,7 @@ In Advanced eDiscovery, è possibile definire uno o più problemi all'interno di
   
 ## <a name="adding-or-editing-an-issue-and-assigning-users"></a>Aggiunta o modifica di un problema e assegnazione degli utenti
 
-1. Nella scheda \> configurazione pertinenza pertinenza selezionare **problemi**. ** \> **
+1. Nella scheda **\> configurazione** pertinenza pertinenza \> selezionare **problemi**.
     
     ![Problemi relativi alla configurazione di pertinenza](../media/dfd8f9ef-b167-4ed9-980e-00ae98a97169.png)
   
@@ -41,9 +41,9 @@ In Advanced eDiscovery, è possibile definire uno o più problemi all'interno di
   
     Per modificare un problema, fare clic sull'icona **modifica** . 
     
-3. In **nome del problema**Digitare un nome descrittivo e significativo per il caso. 
+3. In **nome del problema** Digitare un nome descrittivo e significativo per il caso. 
     
-4. In **Descrizione**digitare informazioni sul problema.
+4. In **Descrizione** digitare informazioni sul problema.
     
 5. Selezionare la casella di controllo **Abilita allenamento simultaneo** per abilitare l'opzione. Questa impostazione consente a più revisori di lavorare contemporaneamente sullo stesso problema (in campioni separati). 
     
@@ -66,7 +66,7 @@ In Advanced eDiscovery, è possibile definire uno o più problemi all'interno di
 
 È possibile che i problemi vengano eliminati (ovvero rimossi dal database) solo immediatamente dopo la loro definizione e che non sia stato eseguito alcun lavoro effettivo per questo problema. 
   
-1. Nella scheda configurazione pertinenza pertinenza selezionare **problemi**. ** \> **
+1. Nella scheda **\> configurazione** pertinenza pertinenza selezionare **problemi**.
     
 2. Selezionare il problema da eliminare dal database, quindi fare clic su **Elimina**.
     

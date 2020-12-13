@@ -2,8 +2,8 @@
 title: Eseguire il modulo di processo in Advanced eDiscovery
 f1.keywords:
 - NOCSH
-ms.author: chrfox
-author: chrfox
+ms.author: markjjo
+author: markjjo
 manager: laurawi
 titleSuffix: Office 365
 ms.date: 9/14/2017
@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: dbc1e251-0596-443b-ac9b-f398ba955b73
 description: Informazioni sulle linee guida per la preparazione dei file di dati per l'analisi con Advanced eDiscovery.
-ms.openlocfilehash: 5130bea7da8922fd7e98d07696ffde3930d2ce41
-ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
+ms.openlocfilehash: 3773833d9d0af993b4ccb35bcd18276800c4081f
+ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "44936199"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "49662811"
 ---
 # <a name="run-the-process-module-in-advanced-ediscovery-classic"></a>Eseguire il modulo di processo in Advanced eDiscovery (Classic)
 
@@ -50,7 +50,7 @@ I file dei casi vengono caricati in Advanced eDiscovery durante la **preparazion
     
 - **Percorso file**: Advanced eDiscovery è in grado di caricare file con lunghezze di percorso fino a 400 caratteri.
     
-- **Estrazione**del testo: quando si estrae del testo da file nativi, oltre al testo normale, vengono estratti anche i seguenti elementi: testo nascosto (Excel e. doc), colonne nascoste (Excel), rilevamento delle modifiche (file con estensione doc), note degli altoparlanti (con estensione ppt), oggetti incorporati (ad esempio, oggetti di Excel in a. ppt). Questi possono essere visualizzati nell'editor di testo.
+- **Estrazione** del testo: quando si estrae del testo da file nativi, oltre al testo normale, vengono estratti anche i seguenti elementi: testo nascosto (Excel e. doc), colonne nascoste (Excel), rilevamento delle modifiche (file con estensione doc), note degli altoparlanti (con estensione ppt), oggetti incorporati (ad esempio, oggetti di Excel in a. ppt). Questi possono essere visualizzati nell'editor di testo.
     
 - **Ignora testo**: questa funzionalità facoltativa è definita dopo l'esecuzione del processo e prima dell'analisi. Ignorare il testo deve essere utilizzato con cautela perché il relativo utilizzo può ridurre le prestazioni dell'analisi dei file.
     

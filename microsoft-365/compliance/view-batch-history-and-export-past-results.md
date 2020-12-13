@@ -2,8 +2,8 @@
 title: Visualizzare la cronologia dei batch ed esportare i risultati precedenti in Advanced eDiscovery
 f1.keywords:
 - NOCSH
-ms.author: chrfox
-author: chrfox
+ms.author: markjjo
+author: markjjo
 manager: laurawi
 titleSuffix: Office 365
 ms.date: 9/14/2017
@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: 35d52b41-75ab-4144-9edf-31e11453bd5d
 description: Scopri come visualizzare informazioni dettagliate per le sessioni batch di esportazione selezionate e come annullare l'ultima sessione di esportazione in Advanced eDiscovery.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b142c5d582b9a7bb84dd518325369e4b1adccf69
-ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
+ms.openlocfilehash: 054fa4a88d8c61751b4064b3535de66881655631
+ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "44936189"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "49663275"
 ---
 # <a name="view-batch-history-and-export-past-results-in-advanced-ediscovery-classic"></a>Visualizzare la cronologia dei batch ed esportare i risultati precedenti in Advanced eDiscovery (Classic)
 
@@ -35,7 +35,7 @@ Nella sezione seguente vengono descritte le opzioni aggiuntive per la visualizza
 
 La finestra di dialogo Esporta cronologia fornisce informazioni dettagliate sulle sessioni batch di esportazione selezionate e fornisce anche la possibilità di annullare l'ultima sessione.
   
-1. Nel ** \> programma di installazione di esportazione**Selezionare il nome del batch dall'elenco a discesa batch di **esportazione** . 
+1. Nel **\> programma di installazione di esportazione** Selezionare il nome del batch dall'elenco a discesa batch di **esportazione** . 
     
 2. A destra del nome del batch di esportazione, selezionare l'icona **cronologia batch** : 
     
@@ -47,7 +47,7 @@ La finestra di dialogo Esporta cronologia fornisce informazioni dettagliate sull
   
 3. Se è necessario eseguire il rollback di una sessione precedente, fare clic su **Annulla ultima sessione**. Il rollback può essere eseguito più volte, che annulla l'ultima sessione.
     
-4. Se si desidera scaricare i dati in qualsiasi momento da una sessione di esportazione batch eseguita in precedenza, **Download** fare clic sull' ![ icona Download cronologia di esportazione batch per il download accanto al ](../media/de69b920-a6ac-4ddb-b93e-e1cc5888e6c4.gif) batch di esportazione desiderato da esportare. 
+4. Se si desidera scaricare i dati in qualsiasi momento da una sessione di esportazione batch eseguita in precedenza,  fare clic sull' ![ icona Download cronologia di esportazione batch per il download accanto al ](../media/de69b920-a6ac-4ddb-b93e-e1cc5888e6c4.gif) batch di esportazione desiderato da esportare. 
     
 5. Quando viene visualizzata la finestra di dialogo **firma di accesso condiviso** , fare clic su **copia negli Appunti** per copiare i dati della sessione di esportazione nel computer locale e quindi fare clic su **Chiudi**. &amp;Viene visualizzata la finestra di dialogo **strumento di esportazione di eDiscovery** per il Centro sicurezza. 
     
@@ -65,7 +65,7 @@ La finestra di dialogo Esporta cronologia fornisce informazioni dettagliate sull
 
 [Advanced eDiscovery (classico)](office-365-advanced-ediscovery.md)
   
-[Esportazione dei risultati](export-results-in-advanced-ediscovery.md)
+[Esportazione dei risultati ](export-results-in-advanced-ediscovery.md)
 
 [Esportare i campi del report](export-report-fields-in-advanced-ediscovery.md)
 

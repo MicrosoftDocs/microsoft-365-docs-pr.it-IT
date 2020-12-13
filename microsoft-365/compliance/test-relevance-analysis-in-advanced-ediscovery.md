@@ -2,8 +2,8 @@
 title: Analisi della pertinenza del test in Advanced eDiscovery
 f1.keywords:
 - NOCSH
-ms.author: chrfox
-author: chrfox
+ms.author: markjjo
+author: markjjo
 manager: laurawi
 titleSuffix: Office 365
 ms.date: 09/14/2017
@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 1b092f7c-ea55-44f5-b419-63f3458fd7e0
 description: Informazioni su come utilizzare la scheda test dopo il calcolo batch in Advanced eDiscovery per testare, confrontare e convalidare la qualità complessiva dell'elaborazione.
-ms.openlocfilehash: c5a885b3483b9ce319fffefa55037c0c2c8f3c85
-ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
+ms.openlocfilehash: e408d79aac8015da210f983b7b388ace84fc383a
+ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "44936209"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "49663419"
 ---
 # <a name="test-relevance-analysis-in-advanced-ediscovery-classic"></a>Analisi della pertinenza del test in Advanced eDiscovery (Classic)
 
@@ -42,13 +42,13 @@ Questo test fornisce statistiche e un confronto tra il set di revisione e il tes
     
 - Confronto tabulare dei parametri di popolazione del set di revisione e del resto, ad esempio, il numero di file, il numero stimato di file rilevanti, la ricchezza stimata e il costo medio per la ricerca di un altro file pertinente. Le impostazioni dei parametri di costo possono essere impostate dall'amministratore.
     
-1. Aprire la scheda ** \> test pertinenza** . 
+1. Aprire la scheda **\> test pertinenza** . 
     
 2. Nella scheda **test** fare clic su **nuovo test**. Viene visualizzata la finestra di dialogo **Crea test** , come illustrato nell'esempio seguente. 
     
     ![Risultati del test sull'inattività di pertinenza](../media/46e6898a-f929-4fd0-88d9-6f91d04b6ce2.png)
   
-3. In **nome test**e **Descrizione**digitare il nome e la descrizione.
+3. In **nome test** e **Descrizione** digitare il nome e la descrizione.
     
 4. Nell'elenco **tipo di test** , selezionare **test the rest**
     
@@ -58,11 +58,11 @@ Questo test fornisce statistiche e un confronto tra il set di revisione e il tes
     
 7. In **lettura%**, accettare il valore predefinito o selezionare un valore per il Punteggio di pertinenza del cutoff. 
     
-8. In **Dimensioni set**oppure accettare il valore predefinito. Si noti che le icone di ripristino ripristineranno i valori predefiniti.
+8. In **Dimensioni set** oppure accettare il valore predefinito. Si noti che le icone di ripristino ripristineranno i valori predefiniti.
     
 9. Fare clic su **Avvia tagging**. Viene generato un esempio di test.
     
-10. Esaminare e contrassegnare ognuno dei file nella scheda ** \> tag pertinenza** e, al termine, fare clic su **Calcola**.
+10. Esaminare e contrassegnare ognuno dei file nella scheda **\> tag pertinenza** e, al termine, fare clic su **Calcola**.
     
 11. Nella scheda test è possibile fare clic su **Visualizza risultati** per visualizzare i risultati dei test. Un esempio è illustrato nella figura seguente. 
     
@@ -86,11 +86,11 @@ La sezione relativa ai **parametri di popolamento** della tabella contiene i ris
 
 Il test "test Slice" esegue test analogo al test "test the rest", ma a un segmento del set di file specificato dalla pertinenza lettura%.
   
-1. Aprire la scheda ** \> test pertinenza** . 
+1. Aprire la scheda **\> test pertinenza** . 
     
 2. Nella scheda **test** fare clic su **nuovo test**. Viene visualizzata la finestra di dialogo **Crea test** . 
     
-3. In **nome** e **Descrizione**del test, digitare le informazioni.
+3. In **nome** e **Descrizione** del test, digitare le informazioni.
     
 4. Nell'elenco **tipo di test** selezionare **Verifica la sezione**.
     
@@ -100,13 +100,13 @@ Il test "test Slice" esegue test analogo al test "test the rest", ma a un segmen
     
 7. In **lettura% tra**, accettare i valori predefiniti di intervallo basso e alto o selezionare i valori per i punteggi di rilevanza del cutoff. 
     
-8. In **Dimensioni set**selezionare un valore o accettare il valore predefinito.
+8. In **Dimensioni set** selezionare un valore o accettare il valore predefinito.
     
     Le icone di ripristino ripristineranno il valore predefinito.
     
 9. Fare clic su **Avvia tagging**. Viene generato un esempio di test.
     
-10. Esaminare e contrassegnare ognuno dei file nella scheda ** \> tag pertinenza** e, al termine, fare clic su **Calcola**. 
+10. Esaminare e contrassegnare ognuno dei file nella scheda **\> tag pertinenza** e, al termine, fare clic su **Calcola**. 
     
 11. Nella scheda test è possibile fare clic su **Visualizza risultati** per visualizzare i risultati dei test. 
     

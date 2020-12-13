@@ -2,8 +2,8 @@
 title: Impostare Analyze Advanced Settings in Advanced eDiscovery
 f1.keywords:
 - NOCSH
-ms.author: chrfox
-author: chrfox
+ms.author: markjjo
+author: markjjo
 manager: laurawi
 titleSuffix: Office 365
 ms.date: 9/14/2017
@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: a797682f-ad85-4c08-a354-3850ba2237ee
 description: Informazioni su come configurare le impostazioni avanzate, tra cui quasi duplicati, thread di posta elettronica e temi, per il processo di analisi in Advanced eDiscovery.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 39d99609cfff92dcd6e6d2f4483076b8bfe808be
-ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
+ms.openlocfilehash: ac1300eb26338691722d9ccd15269ccf7f964f58
+ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "44936753"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "49663491"
 ---
 # <a name="set-analyze-advanced-settings-in-advanced-ediscovery"></a>Impostare Analyze Advanced Settings in Advanced eDiscovery
 
@@ -41,9 +41,9 @@ Advanced eDiscovery fornisce parametri avanzati predefiniti per l'analisi delle 
     
   - **Numero massimo di parole**: numero massimo di parole, al di sopra del quale un file non viene inviato per l'analisi quasi duplicata.
     
-  - **Somiglianza**tra messaggi di posta elettronica: livello minimo di somiglianza per due messaggi di posta elettronica da considerare simili. Il valore è sempre uguale o superiore alla somiglianza del documento. Il valore predefinito è 90%.
+  - **Somiglianza** tra messaggi di posta elettronica: livello minimo di somiglianza per due messaggi di posta elettronica da considerare simili. Il valore è sempre uguale o superiore alla somiglianza del documento. Il valore predefinito è 90%.
     
-3. In **parametri temi**selezionare la casella di controllo **Includi numeri nell'analisi del tema** per includere i numeri nell'elaborazione dei temi durante la fase di analisi. 
+3. In **parametri temi** selezionare la casella di controllo **Includi numeri nell'analisi del tema** per includere i numeri nell'elaborazione dei temi durante la fase di analisi. 
     
 4. Fare clic su **Salva**. 
     

@@ -2,8 +2,8 @@
 title: Configurazione rapida di Advanced eDiscovery
 f1.keywords:
 - NOCSH
-ms.author: chrfox
-author: chrfox
+ms.author: markjjo
+author: markjjo
 manager: laurawi
 titleSuffix: Office 365
 ms.date: 9/14/2017
@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: d7ccd944-9698-41c7-a21b-677dc62973c4
 description: Informazioni su come accedere ad Advanced eDiscovery dal Centro sicurezza e conformità di &amp; e sul flusso di lavoro tipico per usare Advanced eDiscovery.
-ms.openlocfilehash: 5bd183f0f5f1c2f091fb374aab1e54f191665ce6
-ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
+ms.openlocfilehash: 9aca86d59b3f6b5f77ea5b6eb4c5d0bbe156beb1
+ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "44936259"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "49662851"
 ---
 # <a name="quick-setup-advanced-ediscovery-classic"></a>Configurazione rapida di Advanced eDiscovery (classico)
 

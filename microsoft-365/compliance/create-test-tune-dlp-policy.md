@@ -19,28 +19,26 @@ ms.custom:
 - seo-marvel-mar2020
 ms.assetid: 59414438-99f5-488b-975c-5023f2254369
 description: In questo articolo vengono fornite informazioni su come creare, testare e ottimizzare un criterio DLP in base alle esigenze dell'organizzazione.
-ms.openlocfilehash: ef88da90d8e009d3ea634c9142d7d917fbfd288a
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: 9b43899969ab0fdc5d67b051db36c0b245f7811e
+ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47546936"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "49663193"
 ---
 # <a name="create-test-and-tune-a-dlp-policy"></a>Creare, testare e ottimizzare i criteri di prevenzione della perdita dei dati
 
-La prevenzione della perdita di dati (DLP) è una funzionalità di conformità progettata per aiutare l'organizzazione a impedire l'esposizione accidentale o involontaria di informazioni riservate a parti indesiderate. DLP ha le sue radici in Exchange Server ed Exchange Online ed è applicabile anche in SharePoint Online e OneDrive for business.
+La prevenzione della perdita di dati (DLP) consente di impedire la condivisione accidentale o involontaria di informazioni riservate.
 
-DLP utilizza un motore di analisi del contenuto per esaminare il contenuto dei messaggi di posta elettronica e i file, in cerca di informazioni riservate, come i numeri di carta di credito e le informazioni di identificazione personale (PII). Le informazioni riservate in genere non devono essere inviate tramite posta elettronica o incluse nei documenti, senza eseguire passaggi aggiuntivi quali la crittografia del messaggio di posta elettronica o dei file. Usando DLP è possibile rilevare informazioni riservate e intraprendere azioni quali:
+DLP esamina i messaggi di posta elettronica e i file per informazioni riservate, come un numero di carta di credito. Usando DLP è possibile rilevare informazioni riservate e intraprendere azioni quali:
 
 - Registrare l'evento ai fini del controllo
 - Visualizza un messaggio di avviso per l'utente finale che invia il messaggio di posta elettronica o la condivisione del file
 - Blocca attivamente il messaggio di posta elettronica o la condivisione di file in corso
 
-A volte i clienti respingono DLP perché non si considerano di avere il tipo di dati che devono essere protetti. Si presuppone che i dati sensibili, ad esempio i record medici o le informazioni finanziarie, esistano solo per le industrie come l'assistenza sanitaria o per le aziende che eseguono negozi online. Tuttavia, qualsiasi azienda può gestire periodicamente le informazioni riservate, anche se non lo sanno. Un foglio di calcolo per i nomi dei dipendenti e le date di nascita è altrettanto sensibile come un foglio di calcolo dei nomi di clienti e i dettagli delle carte di credito. E questo tipo di informazioni tende a fluttuare più di quanto si potrebbe immaginare, in quanto i dipendenti passano tranquillamente le loro attività quotidiane, non pensando di esportare un file CSV da un sistema e di inviarlo tramite posta elettronica a un utente. Si potrebbe anche essere sorpresi di quanto spesso i dipendenti inviano messaggi di posta elettronica contenenti informazioni sulla carta di credito o bancarie senza considerare le conseguenze.
-
 ## <a name="permissions"></a>Autorizzazioni
 
-I membri del team conformità addetti alla creazione dei criteri di prevenzione della perdita dei dati necessitano delle autorizzazioni per accedere al Centro sicurezza e conformità. Per impostazione predefinita, l'amministratore del tenant avrà accesso a questa posizione e potrà fornire ai responsabili della conformità e ad altre persone l'accesso al Centro sicurezza e conformità, senza concedere tutte le autorizzazioni di un amministratore del tenant. Per farlo, è consigliabile:
+I membri del team conformità addetti alla creazione dei criteri DLP necessitano delle autorizzazioni per accedere al Centro conformità. Per impostazione predefinita, l'amministratore del tenant avrà accesso può fornire ai responsabili della conformità e agli altri utenti l'accesso. Procedere come segue:
   
 1. Creare un gruppo in Microsoft 365 e aggiungervi i responsabili della conformità.
     
@@ -50,34 +48,34 @@ I membri del team conformità addetti alla creazione dei criteri di prevenzione 
     
 4. Usare la sezione **Scegli membri** per aggiungere il gruppo di Microsoft 365 creato in precedenza al gruppo di ruoli.
 
-È anche possibile creare un gruppo di ruoli con privilegi di sola visualizzazione per i report e i criteri DLP concedendo il ruolo di **solo visualizzazione per la gestione della conformità DLP**.
+Utilizzare il ruolo di **gestione della conformità DLP di sola visualizzazione** per creare un gruppo di ruoli con privilegi di sola visualizzazione per i criteri DLP e i report DLP.
 
 Per altre informazioni, vedere [Concedere agli utenti l'accesso al Centro conformità di Office 365](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
   
-Queste autorizzazioni sono necessarie solo per creare e applicare criteri di prevenzione della perdita dei dati. L'applicazione dei criteri non richiede l'accesso al contenuto.
+Queste autorizzazioni sono necessarie per creare e applicare un criterio DLP per non applicare i criteri.
 
 ## <a name="how-sensitive-information-is-detected-by-dlp"></a>Come vengono rilevate informazioni riservate da DLP
 
-Le informazioni riservate vengono identificate mediante un criterio di espressione regolare (RegEx), in combinazione con altri indicatori come la prossimità di determinate parole chiave agli schemi di corrispondenza. Un esempio è costituito da numeri di carta di credito. Un numero di carta di credito VISA ha 16 cifre. Tuttavia, tali cifre possono essere scritte in modi diversi, ad esempio 1111-1111-1111-1111, 1111 1111 1111 1111 o 1111111111111111.
+DLP rileva le informazioni riservate in base alla corrispondenza dei modelli di espressioni regolari (RegEx), in combinazione con altri indicatori come la prossimità di determinate parole chiave agli schemi di corrispondenza. Ad esempio, un numero di carta di credito VISA ha 16 cifre. Tuttavia, tali cifre possono essere scritte in modi diversi, ad esempio 1111-1111-1111-1111, 1111 1111 1111 1111 o 1111111111111111.
 
 Qualsiasi stringa di 16 cifre non è necessariamente un numero di carta di credito, può essere un numero di biglietto da un sistema di supporto tecnico o un numero di serie di un componente hardware. Per indicare la differenza tra un numero di carta di credito e una stringa di 16 cifre innocua, viene eseguito un calcolo (checksum) per confermare che i numeri corrispondono a un modello noto dei vari marchi di carte di credito.
 
-Inoltre, la prossimità di parole chiave quali "VISA" o "AMEX", insieme alla vicinanza ai valori di data che potrebbero essere la data di scadenza della carta di credito, è anche considerata come una decisione sul fatto che i dati siano o meno un numero di carta di credito.
+Se DLP trova parole chiave quali "VISA" o "AMEX", valori di data e ora vicini che potrebbero essere la data di scadenza della carta di credito, DLP utilizza anche tali dati per aiutarlo a decidere se la stringa è un numero di carta di credito o meno.
 
-In altre parole, DLP è in genere abbastanza intelligente da riconoscere la differenza tra questi due testi in un messaggio di posta elettronica:
+In altre parole, DLP è abbastanza intelligente da riconoscere la differenza tra queste due stringhe di testo in un messaggio di posta elettronica:
 
 - "Puoi ordinarmi un nuovo laptop. Utilizzare il numero di VISA 1111-1111-1111-1111, la scadenza 11/22 e inviare la data di consegna stimata quando si ha. "
 - "Il numero di serie del laptop è 2222-2222-2222-2222 ed è stato acquistato il 11/2010. A proposito, il mio visto di viaggio è già approvato? "
 
-Un buon riferimento per mantenere i segnalibri è il [tipo di informazioni riservate definizioni entità](sensitive-information-type-entity-definitions.md) che spiega come ogni tipo di informazione viene rilevata.
+Vedere [informazioni sensibili tipo definizioni entità](sensitive-information-type-entity-definitions.md) che spiega come vengono rilevati tutti i tipi di informazioni.
 
 ## <a name="where-to-start-with-data-loss-prevention"></a>Da dove iniziare con la prevenzione della perdita di dati
 
 Quando i rischi di perdita di dati non sono del tutto evidenti, è difficile capire esattamente dove iniziare con l'implementazione di DLP. Fortunatamente, i criteri DLP possono essere eseguiti in "modalità test", consentendo di valutare l'efficacia e l'accuratezza prima di attivarli.
 
-I criteri DLP per Exchange Online possono essere gestiti tramite l'interfaccia di amministrazione di Exchange. Tuttavia, è possibile configurare i criteri DLP per tutti i carichi di lavoro tramite il Centro sicurezza & Compliance, quindi questo è ciò che verrà utilizzato per le dimostrazioni in questo articolo. Nel centro sicurezza & conformità sono disponibili i criteri DLP in criteri di **prevenzione della perdita di dati**  >  **Policy**. Fare clic su **Crea un criterio** per iniziare.
+I criteri DLP per Exchange Online possono essere gestiti tramite l'interfaccia di amministrazione di Exchange. Tuttavia, è possibile configurare i criteri DLP per tutti i carichi di lavoro tramite il Centro sicurezza & Compliance, quindi questo è ciò che verrà utilizzato per le dimostrazioni in questo articolo. Nel centro sicurezza & conformità, i criteri DLP sono disponibili in criteri di **prevenzione della perdita di dati**  >  . Scegliere **Crea un criterio per l'** avvio.
 
-Microsoft 365 fornisce una serie di [modelli di criteri DLP](what-the-dlp-policy-templates-include.md) che è possibile utilizzare per creare i criteri DLP. Si supponga che si tratta di un'azienda australiana. È possibile filtrare i modelli di criteri per visualizzare solo quelli rilevanti per l'Australia, che rientrano nelle categorie generali finanziarie, mediche e sanitarie e di privacy.
+Microsoft 365 fornisce una serie di [modelli di criteri DLP](what-the-dlp-policy-templates-include.md) che è possibile utilizzare per creare criteri. Si supponga che si tratta di un'azienda australiana. È possibile filtrare i modelli in Australia e scegliere finanziari, medici e di integrità e privacy.
 
 ![Opzione per scegliere il paese o l'area geografica](../media/DLP-create-test-tune-choose-country.png)
 
@@ -93,11 +91,11 @@ Scegliere i percorsi a cui si applica il criterio. I criteri DLP possono essere 
 
 ![Opzione per scegliere tutte le posizioni](../media/DLP-create-test-tune-choose-locations.png)
 
-Al primo passaggio **delle impostazioni dei criteri** è sufficiente accettare i valori predefiniti per il momento. È possibile eseguire una notevole quantità di personalizzazioni nei criteri DLP, ma le impostazioni predefinite sono un ottimo punto di partenza.
+Al primo passaggio **delle impostazioni dei criteri** , è sufficiente accettare i valori predefiniti per il momento. È possibile personalizzare i criteri DLP, ma le impostazioni predefinite sono un ottimo punto di partenza.
 
 ![Opzioni per personalizzare il tipo di contenuto da proteggere](../media/DLP-create-test-tune-default-customization-settings.png)
 
-Dopo aver fatto clic su **Avanti** , verrà visualizzata una pagina di **impostazioni di criteri** aggiuntive con altre opzioni di personalizzazione. Per un criterio che si sta solo testando, ecco dove è possibile iniziare a effettuare alcune modifiche.
+Dopo aver fatto clic su Avanti, * * verrà visualizzata una pagina di **impostazioni di criteri** aggiuntive con altre opzioni di personalizzazione. Per un criterio che si sta solo testando, ecco dove è possibile iniziare a effettuare alcune modifiche.
 
 - Sono stati disattivati i suggerimenti per il criterio, che è un passaggio ragionevole da eseguire se si verificano solo le operazioni e non si desidera visualizzare ancora nulla per gli utenti. Suggerimenti per i criteri consente di visualizzare gli avvisi per gli utenti che stanno per violare un criterio DLP. Un utente di Outlook, ad esempio, visualizzerà un messaggio di avviso che indica che il file allegato contiene numeri di carta di credito e che il loro messaggio di posta elettronica verrà rifiutato. L'obiettivo dei suggerimenti per i criteri consiste nell'arrestare il comportamento non conforme prima che accada.
 - Ho anche diminuito il numero di istanze da 10 a 1, in modo che questo criterio rilevi qualsiasi condivisione dei dati di informazioni personali australiani, non solo la condivisione in blocco dei dati.
@@ -210,7 +208,7 @@ Un'altra opzione consiste nel semplicemente aumentare il numero di istanze, in m
 
 Oltre a modificare il numero di istanze, è anche possibile regolare l'accuratezza della corrispondenza (o il livello di confidenza). Se il tipo di informazioni riservate dispone di più modelli, è possibile regolare l'accuratezza della corrispondenza nella regola, in modo che la regola corrisponda solo a modelli specifici. Ad esempio, per ridurre i falsi positivi, è possibile impostare l'accuratezza della corrispondenza della regola in modo che corrisponda solo al modello con il livello di probabilità più alto. Capire come viene calcolato il livello di sicurezza è un po' complicato (oltre all'ambito di questo post), ma ecco una buona spiegazione su [come usare il livello di sicurezza per ottimizzare le regole](data-loss-prevention-policies.md#match-accuracy).
 
-Infine, se si vuole ottenere anche un po' più avanzato, è possibile personalizzare qualsiasi tipo di informazioni riservate-ad esempio, è possibile rimuovere "Sydney NSW" dall'elenco di parole chiave per il [numero di patente di guida Australia](sensitive-information-type-entity-definitions.md#australia-drivers-license-number), per eliminare il falso positivo attivato sopra. Per informazioni su come eseguire questa operazione tramite XML e PowerShell, vedere questo argomento relativo alla [personalizzazione di un tipo di informazione riservata incorporato](customize-a-built-in-sensitive-information-type.md).
+Infine, se si vuole ottenere anche un po' più avanzato, è possibile personalizzare qualsiasi tipo di informazioni riservate-ad esempio, è possibile rimuovere "Sydney NSW" dall'elenco di parole chiave per il [numero di patente di guida Australia](sensitive-information-type-entity-definitions.md#australia-drivers-license-number), per eliminare il falso positivo attivato sopra. Per informazioni su come eseguire questa operazione tramite XML e PowerShell, vedere [personalizzazione di un tipo di informazione riservata incorporato](customize-a-built-in-sensitive-information-type.md).
 
 ## <a name="turn-on-a-dlp-policy"></a>Attivazione di un criterio DLP
 

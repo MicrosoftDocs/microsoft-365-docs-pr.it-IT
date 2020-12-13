@@ -2,8 +2,8 @@
 title: Definire le impostazioni del case e del tenant in Advanced eDiscovery
 f1.keywords:
 - NOCSH
-ms.author: chrfox
-author: chrfox
+ms.author: markjjo
+author: markjjo
 manager: laurawi
 titleSuffix: Office 365
 audience: Admin
@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 383809de-7f5e-4a1d-9098-c525f67b7a9a
 description: Informazioni sulle impostazioni delle etichette, del modulo incrociato e del tenant che è possibile definire a livello di caso in Advanced eDiscovery.
-ms.openlocfilehash: 6b0030e30e5e3a4f4c77fbcb5fcbd75bf63c1ea8
-ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
+ms.openlocfilehash: e2f46a9339e2c134be505138aac6886cb1a2dd9a
+ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "44936423"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "49663051"
 ---
 # <a name="define-case-and-tenant-settings-in-advanced-ediscovery-classic"></a>Definire le impostazioni del case e del tenant in Advanced eDiscovery (Classic)
 
@@ -44,7 +44,7 @@ Le seguenti impostazioni del modulo incrociato sono opzioni di caso applicabili 
     
 - Nome visualizzato file: identificatore di file che verrà visualizzato in tutto il eDiscovery avanzato per identificare il file, in alternativa al nome visualizzato avanzato di eDiscovery del titolo/percorso del file o dell'oggetto di posta elettronica.
     
-1. Aprire **le impostazioni e le utilità** facendo clic sull'icona **cremagliera** . Aprire il modulo **delle impostazioni e delle impostazioni del \> caso di utilità** \> **Cross module**. 
+1. Aprire **le impostazioni e le utilità** facendo clic sull'icona **cremagliera** . Aprire il modulo **delle impostazioni e delle impostazioni del \> caso di utilità** \> . 
     
 2. Selezionare dalla **pagina predefinita dopo** le opzioni di accesso: 
     
@@ -68,7 +68,7 @@ Il registro eventi fornisce metadati relativi all'elaborazione avanzata di eDisc
   
 1. Aprire **le impostazioni e le utilità** facendo clic sull'icona **cremagliera** . 
     
-2. Nella scheda Impostazioni ** \> tenant impostazioni e utilità** selezionare **registro eventi**. Vengono visualizzati i dati del registro eventi.
+2. Nella scheda Impostazioni **\> tenant impostazioni e utilità** selezionare **registro eventi**. Vengono visualizzati i dati del registro eventi.
     
   - Per filtrare l'output dei log in base a un caso, selezionarlo dall'elenco **casi** . 
     
@@ -84,7 +84,7 @@ Nella scheda Impostazioni tenant sono visualizzate le informazioni avanzate del 
   
 1. Aprire **le impostazioni e le utilità** facendo clic sull'icona **cremagliera** . 
     
-2. Nella scheda Impostazioni ** \> tenant impostazioni e utilità** Selezionare **System Information**. Vengono visualizzate le informazioni sulla versione.
+2. Nella scheda Impostazioni **\> tenant impostazioni e utilità** Selezionare **System Information**. Vengono visualizzate le informazioni sulla versione.
     
 La visualizzazione può essere aggiornata facendo clic sull'icona **Aggiorna** sotto le informazioni del tenant. 
   

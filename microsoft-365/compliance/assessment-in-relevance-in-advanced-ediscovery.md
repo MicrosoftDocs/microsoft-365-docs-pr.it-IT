@@ -2,8 +2,8 @@
 title: Comprendere la valutazione in rilevanza in Advanced eDiscovery
 f1.keywords:
 - NOCSH
-ms.author: chrfox
-author: chrfox
+ms.author: markjjo
+author: markjjo
 manager: laurawi
 titleSuffix: Office 365
 ms.date: 09/14/2017
@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: 1d33d4fb-91ed-41c0-b72e-5a26eca3a2a7
 description: Ottenere una panoramica della fase di valutazione e del relativo ruolo per determinare la ricchezza dei problemi durante la formazione di pertinenza in Microsoft 365 Advanced eDiscovery.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: afd4f1f549d52652ac02cfa410efc507ece58910
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 28bbe15a6e3f5611041cf446bd053f59de395d54
+ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44818415"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "49663081"
 ---
 # <a name="understand-assessment-in-relevance-in-advanced-ediscovery-classic"></a>Comprendere la valutazione in rilevanza in Advanced eDiscovery (Classic)
 
@@ -52,7 +52,7 @@ Ogni problema ha la propria ricchezza, il margine di errore corrente e, di conse
 È possibile accettare le indicazioni relative alla pertinenza o regolare il margine di errore corrente in base alle proprie esigenze. Il margine di errore corrente predefinito è determinato per il richiamo pari o superiori a 75%.
   
 > [!NOTE]
-> La fase di valutazione può essere ignorata, nella scheda ** \> Tracking pertinenza** della visualizzazione espansa per un problema, deselezionando la casella di controllo **valutazione** per problema e quindi per "tutti i problemi". Tuttavia, di conseguenza, non saranno disponibili statistiche per questo problema. > deselezionando la casella di controllo **valutazione** può essere eseguita solo prima di eseguire la valutazione. Se in un caso esistono più problemi, la valutazione viene ignorata solo se la casella di controllo è deselezionata per ogni problema. 
+> La fase di valutazione può essere ignorata, nella scheda **\> Tracking pertinenza** della visualizzazione espansa per un problema, deselezionando la casella di controllo **valutazione** per problema e quindi per "tutti i problemi". Tuttavia, di conseguenza, non saranno disponibili statistiche per questo problema. > deselezionando la casella di controllo **valutazione** può essere eseguita solo prima di eseguire la valutazione. Se in un caso esistono più problemi, la valutazione viene ignorata solo se la casella di controllo è deselezionata per ogni problema. 
   
 ## <a name="related-topics"></a>Argomenti correlati
 

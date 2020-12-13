@@ -4,7 +4,7 @@ description: Domande frequenti sulla crittografia a chiave doppia per Microsoft 
 author: kccross
 ms.author: krowley
 manager: laurawi
-ms.date: 09/22/2020
+ms.date: 12/11/2020
 ms.topic: conceptual
 ms.service: information-protection
 audience: Admin
@@ -12,12 +12,12 @@ ms.reviewer: esaggese
 localization_priority: Normal
 ms.collection:
 - M365-security-compliance
-ms.openlocfilehash: 98c61e66155e21624e8ecba460ebc3041e72ada5
-ms.sourcegitcommit: 1423e08a02d30f0a2b993fb99325c3f499c31787
+ms.openlocfilehash: 32686e76018d8b6a361ea99e6b00271b9547ed95
+ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "48277655"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "49663061"
 ---
 # <a name="double-key-encryption-frequently-asked-questions"></a>Domande frequenti sulla crittografia a chiave doppia
 
@@ -33,7 +33,7 @@ DKE consente di soddisfare i requisiti normativi tra diverse normative e standar
 
 ## <a name="can-i-use-double-key-encryption-with-microsoft-office-built-in-sensitivity-labeling"></a>È possibile utilizzare la crittografia a chiave doppia con l'etichetta di riservatezza integrata di Microsoft Office?
 
-È necessario utilizzare il client Azure Information Protection Unified Labeling per proteggere i documenti con crittografia a chiave doppia. Attualmente, non è possibile utilizzare l'etichetta di riservatezza incorporata di Microsoft Office. 
+È necessario utilizzare il client Azure Information Protection Unified Labeling per proteggere i documenti con crittografia a chiave doppia. Attualmente, non è possibile utilizzare l'etichetta di riservatezza incorporata di Microsoft Office.
 
 ## <a name="what-microsoft-365-apps-can-i-use-with-dke"></a>Quali app di Microsoft 365 è possibile utilizzare con DKE?
 

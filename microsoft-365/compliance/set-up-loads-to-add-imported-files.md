@@ -2,8 +2,8 @@
 title: Impostare i carichi per aggiungere i file importati in Advanced eDiscovery
 f1.keywords:
 - NOCSH
-ms.author: chrfox
-author: chrfox
+ms.author: markjjo
+author: markjjo
 manager: laurawi
 titleSuffix: Office 365
 ms.date: 9/14/2017
@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 0e0a9d04-294f-4f54-8bf1-b32d81345126
 description: Esaminare i passaggi per aggiungere i file importati all'ultimo carico definito, o batch, di file prima di eseguire la formazione di pertinenza in Advanced eDiscovery.
-ms.openlocfilehash: fc05111d9193a935158b4b00a14717877ae148a7
-ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
+ms.openlocfilehash: 7cd244ba1ba516c2b7376b71e809b4c01ff5df8b
+ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "44936817"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "49663481"
 ---
 # <a name="set-up-loads-to-add-imported-files-in-advanced-ediscovery-classic"></a>Impostare i carichi per aggiungere i file importati in Advanced eDiscovery (Classic)
 
@@ -40,7 +40,7 @@ Si considerino gli scenari seguenti:
 
 Tutti i file importati devono essere aggiunti a un carico da elaborare in Advanced eDiscovery. I file importati vengono aggiunti all'ultimo carico definito. Se si importano ulteriori file in un secondo momento, è necessario aggiungerli anche al carico.
   
-1. Nella scheda ** \> configurazione** pertinenza pertinenza selezionare **carica**.
+1. Nella scheda **\> configurazione** pertinenza pertinenza selezionare **carica**.
     
     ![Scheda dei caricamenti per la configurazione di pertinenza](../media/278aac7f-655f-462f-852a-6baa5d818768.png)
   
@@ -49,7 +49,7 @@ Tutti i file importati devono essere aggiunti a un carico da elaborare in Advanc
     > [!TIP]
     > Caricare tutti i file abbattuti disponibili in pertinenza. Se si prevede di caricare solo un sottoinsieme dei file disponibili, consultare prima di tutto il supporto, in quanto i sottoinsiemi di caricamento possono influire negativamente sulla formazione per pertinenza. 
   
-3. In **gestione carichi**selezionare un carico.
+3. In **gestione carichi** selezionare un carico.
     
 4. Fare clic su **Aggiungi file**. I file vengono aggiunti al carico e viene visualizzato un messaggio di conferma. 
     
@@ -61,7 +61,7 @@ I file possono ora essere elaborati in una pertinenza eDiscovery avanzata per la
 
 Se si modifica il nome del carico, è consigliabile utilizzare un nome significativo per il caso.
   
-1. Nella scheda ** \> configurazione** pertinenza pertinenza selezionare **carica**.
+1. Nella scheda **\> configurazione** pertinenza pertinenza selezionare **carica**.
     
 2. Nell'elenco **gestione carichi** selezionare un carico e fare clic sull'icona **modifica** . Viene visualizzata la finestra modifica caricamento. 
     
@@ -95,9 +95,9 @@ I carichi di rotolamento e la funzionalità di catch-up variano come indicato di
   
 ## <a name="adding-a-new-file-load-using-catch-up-and-rolling-loads"></a>Aggiunta di un nuovo caricamento dei file con i carichi di catch-up e Rolling
 
-1. Nella scheda ** \> configurazione** pertinenza pertinenza selezionare **carica**.
+1. Nella scheda **\> configurazione** pertinenza pertinenza selezionare **carica**.
     
-2. In **gestione carichi**fare clic sull' **+** icona per aggiungere un carico. Viene visualizzato un messaggio di conferma. 
+2. In **gestione carichi** fare clic sull' **+** icona per aggiungere un carico. Viene visualizzato un messaggio di conferma. 
     
 3. Fare clic su **Sì** per continuare. Viene visualizzata la finestra di dialogo **Aggiungi nuovo caricamento** . 
     
@@ -116,7 +116,7 @@ I carichi di rotolamento e la funzionalità di catch-up variano come indicato di
     
     È quindi possibile contrassegnare i file ed eseguire un'operazione di calcolo. Il tagging attiva la pertinenza per determinare se i carichi sono simili o distinti e consente di continuare a lavorare sul nuovo set di file.
     
-7. Dopo la revisione del set di catch-up, visualizzare la verifica della **pertinenza \> ** per i risultati di catch-up. 
+7. Dopo la revisione del set di catch-up, visualizzare la verifica della **pertinenza \>** per i risultati di catch-up. 
     
 1. Se il nuovo caricamento file è stato aggiunto durante la formazione di pertinenza (ovvero, il problema non è stato ancora superato tramite calcolo batch), **continuare l'allenamento** è il passaggio successivo, indipendentemente dai risultati di catch-up. 
     

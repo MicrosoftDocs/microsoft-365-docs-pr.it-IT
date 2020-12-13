@@ -1,5 +1,5 @@
 ---
-title: Crittografia a chiave doppia (DKE)
+title: Crittografia a chiave doppia
 description: DKE consente di proteggere i dati altamente riservati mantenendo il controllo completo della chiave.
 author: kccross
 ms.author: krowley
@@ -12,12 +12,12 @@ ms.reviewer: esaggese
 localization_priority: Normal
 ms.collection:
 - M365-security-compliance
-ms.openlocfilehash: 39d7933014f1dc71f8c94e467954d36ede4fb451
-ms.sourcegitcommit: 1423e08a02d30f0a2b993fb99325c3f499c31787
+ms.openlocfilehash: 9607b095ba073229edae43c1d2f0e893db07c634
+ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "48277533"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "49663091"
 ---
 # <a name="double-key-encryption-for-microsoft-365"></a>Crittografia a chiave doppia per Microsoft 365
 
@@ -57,7 +57,7 @@ Se le organizzazioni hanno uno dei requisiti seguenti, è possibile utilizzare D
 
 ## <a name="system-and-licensing-requirements-for-dke"></a>Requisiti di sistema e licenze per DKE
 
-**La crittografia a chiave doppia per microsoft 365** è disponibile con Microsoft 365 E5 e Office 365 E5. Se non si dispone di una licenza Microsoft 365 E5, è possibile iscriversi per una [versione di valutazione](https://aka.ms/M365E5ComplianceTrial). Per ulteriori informazioni su queste licenze, vedere [Microsoft 365 Licensing Guidance for security & Compliance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
+**La crittografia a chiave doppia per microsoft 365** viene fornita con Microsoft 365 E5. Se non si dispone di una licenza Microsoft 365 E5, è possibile iscriversi per una [versione di valutazione](https://aka.ms/M365E5ComplianceTrial). Per ulteriori informazioni su queste licenze, vedere [Microsoft 365 Licensing Guidance for security & Compliance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
 
 **Azure Information Protection**. DKE funziona con le etichette di riservatezza e richiede la protezione delle informazioni di Azure.
 
@@ -246,7 +246,7 @@ Le impostazioni del tenant e delle chiavi di DKE si trovano nel **appsettings.js
 Individuare il `JwtAudience` . Sostituire `<yourhostname>` con il nome host del computer in cui verrà eseguito il servizio DKE. Ad esempio:
 
   > [!IMPORTANT]
-  > Il valore per `JwtAudience` deve corrispondere *esattamente*al nome dell'host. È possibile utilizzare **localhost: 5001** durante il debug. Tuttavia, al termine del debug, aggiornare questo valore al nome host del server.
+  > Il valore per `JwtAudience` deve corrispondere *esattamente* al nome dell'host. È possibile utilizzare **localhost: 5001** durante il debug. Tuttavia, al termine del debug, aggiornare questo valore al nome host del server.
 
 - `TestKeys:Name`. Immettere un nome per la chiave. Ad esempio: `TestKey1`
 - `TestKeys:Id`. Creare un GUID e immetterlo come `TestKeys:ID` valore. Ad esempio, `DCE1CC21-FF9B-4424-8FF4-9914BD19A1BE`. È possibile utilizzare un sito come [Generatore di GUID online](https://guidgenerator.com/) per generare casualmente un GUID.
@@ -378,13 +378,13 @@ Per pubblicare l'archivio delle chiavi, è possibile creare un'istanza del servi
 
     - Immettere il nome host del computer in cui si desidera installare il servizio DKE. Verificare che sia lo stesso nome di quello definito per l'impostazione JwtAudience nel [**appsettings.jssu**](#tenant-and-key-settings) file. Il valore specificato per il nome è anche WebAppInstanceName.
 
-    - Per la **pubblicazione**, selezionare **codice**e per **stack di Runtime**, selezionare **.NET Core 3,1**.
+    - Per la **pubblicazione**, selezionare **codice** e per **stack di Runtime**, selezionare **.NET Core 3,1**.
 
     Ad esempio:
 
    ![Aggiungere il servizio app](../media/dke-azure-add-app-service.png)
 
-3. Nella parte inferiore della pagina, selezionare **revisione + crea**e quindi fare clic su **Aggiungi**.
+3. Nella parte inferiore della pagina, selezionare **revisione + crea** e quindi fare clic su **Aggiungi**.
 
 4. Per pubblicare le chiavi generate, eseguire una delle operazioni seguenti:
 
@@ -416,7 +416,7 @@ DKE è distribuito ed è possibile passare alle chiavi di test create. Continuar
 
 1. Connettersi al servizio app creato [precedentemente](#deploy-the-dke-service-and-publish-the-key-store).
 
-    Nel browser passare a: **Azure portal**  >  **App Service**  >  **Deployment Center**  >  **Manual Deployment**  >  **FTP**  >  **Dashboard**FTP Deployment Center di distribuzione manuale di Azure Portal app.
+    Nel browser passare a:   >    >    >    >    >  **Dashboard** FTP Deployment Center di distribuzione manuale di Azure Portal app.
 
 2. Copiare le stringhe di connessione visualizzate in un file locale. Queste stringhe verranno utilizzate per la connessione al servizio Web App e per il caricamento dei file tramite FTP.
 
@@ -460,9 +460,9 @@ La procedura seguente consente di registrare il servizio DKE. La registrazione d
 
 Per registrare il servizio DKE:
 
-1. Nel browser aprire il portale di [Microsoft Azure](https://ms.portal.azure.com/)e passare a **tutte le** \> **Identity** \> **registrazioni delle app**di identità dei servizi.
+1. Nel browser aprire il portale di [Microsoft Azure](https://ms.portal.azure.com/)e passare a **tutte le** \>  \> **registrazioni delle app** di identità dei servizi.
 
-2. Selezionare **nuova registrazione**e immettere un nome significativo.
+2. Selezionare **nuova registrazione** e immettere un nome significativo.
 
 3. Selezionare un tipo di account dalle opzioni visualizzate.
 
@@ -474,7 +474,7 @@ Per registrare il servizio DKE:
 
 4. Nella parte inferiore della pagina, selezionare **registra** per creare la nuova registrazione app.
 
-5. Nella nuova registrazione dell'app, nel riquadro sinistro, in **Gestisci**selezionare **autenticazione**.
+5. Nella nuova registrazione dell'app, nel riquadro sinistro, in **Gestisci** selezionare **autenticazione**.
 
 6. Selezionare **Aggiungi una piattaforma**.
 
@@ -490,7 +490,7 @@ Per registrare il servizio DKE:
 
     Verificare che il nome host corrisponda esattamente al nome host del servizio app. Potrebbe essere stato modificato per `localhost` risolvere i problemi relativi alla generazione. In **appsettings.js**, questo valore è il nome host impostato per `JwtAudience` .
 
-9. In **concessione implicita**selezionare la casella di controllo **token ID** .
+9. In **concessione implicita** selezionare la casella di controllo **token ID** .
 
 10. Selezionare **Salva** per salvare le modifiche.
 
@@ -514,7 +514,7 @@ Per registrare il servizio DKE:
 
     1. Definire l'ID client come **d3590ed6-52B3-4102-Aeff-aad2292ab01c**. Questo valore è l'ID client di Microsoft Office e consente a Office di ottenere un token di accesso per l'archivio delle chiavi.
 
-    2. In **ambiti autorizzati**selezionare l'ambito **user_impersonation** .
+    2. In **ambiti autorizzati** selezionare l'ambito **user_impersonation** .
 
     3. Selezionare **Aggiungi applicazione**.
 

@@ -2,8 +2,8 @@
 title: Impostare le opzioni di analisi in Advanced eDiscovery
 f1.keywords:
 - NOCSH
-ms.author: chrfox
-author: chrfox
+ms.author: markjjo
+author: markjjo
 manager: laurawi
 titleSuffix: Office 365
 ms.date: 9/14/2017
@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: f6cd6588-f6b6-424a-a9ab-3782b842faee
 description: Esaminare i passaggi per configurare le opzioni per il processo di analisi in Advanced eDiscovery, inclusi i quasi duplicati, i thread di posta elettronica e i temi.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d622e06cdfe9a46f470be46d1a5b9df98347cc0a
-ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
+ms.openlocfilehash: 1ff51402cd79f2966730677a982fa5173b7e9b98
+ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "44936883"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "49663501"
 ---
 # <a name="set-analyze-options-in-advanced-ediscovery-classic"></a>Impostare le opzioni di ANALYZE in Advanced eDiscovery (Classic)
 
@@ -58,7 +58,7 @@ Aprire **prepara \> analisi** di \> **installazione**. Viene visualizzata la fin
     
 2. Nel riquadro **temi consigliati** fare clic sull'icona **Aggiungi** ![ icona ](../media/c2dd8b3a-5a22-412c-a7fa-143f5b2b5612.png) per aggiungere un tema. Nel riquadro **Aggiungi tema suggerito** aggiungere le parole separate da virgole. 
     
-3. In **numero di temi**selezionare un valore per determinare il numero di temi avanzati che eDiscovery tenterà di generare per queste parole (l'impostazione predefinita è 1 tema).
+3. In **numero di temi** selezionare un valore per determinare il numero di temi avanzati che eDiscovery tenterà di generare per queste parole (l'impostazione predefinita è 1 tema).
     
 4. Fare clic su **Salva** e quindi chiudere la finestra di dialogo. 
     
@@ -83,7 +83,7 @@ Dopo aver impostato queste opzioni, fare clic su **analizza** per l'esecuzione. 
   
 [Informazioni sulla somiglianza del documento](understand-document-similarity-in-advanced-ediscovery.md)
   
-[Imposta Ignora testo](set-ignore-text-in-advanced-ediscovery.md)
+[Imposta Ignora testo ](set-ignore-text-in-advanced-ediscovery.md)
   
 [Impostazioni avanzate per l'analisi](set-analyze-advanced-settings-in-advanced-ediscovery.md)
   

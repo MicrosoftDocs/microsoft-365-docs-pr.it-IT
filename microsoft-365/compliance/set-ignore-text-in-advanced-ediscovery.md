@@ -2,8 +2,8 @@
 title: Impostare l'opzione Ignora testo per ANALYZE in Advanced eDiscovery
 f1.keywords:
 - NOCSH
-ms.author: chrfox
-author: chrfox
+ms.author: markjjo
+author: markjjo
 manager: laurawi
 titleSuffix: Office 365
 ms.date: 9/14/2017
@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 44055727-56e8-42d7-9dc3-fb942f3901cc
 description: Informazioni su come definire la regola per ignorare testo specifico quando si utilizzano i moduli Analyze and process in Advanced eDiscovery.
-ms.openlocfilehash: e167cc2877ca6e1ecb2b4ac896e2000b0441be59
-ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
+ms.openlocfilehash: f61724e3964ff4ba7f099dbfb4411e19db258adc
+ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48285852"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "49663471"
 ---
 # <a name="set-ignore-text-option-for-analyze-in-advanced-ediscovery-classic"></a>Opzione set Ignora testo per ANALYZE in Advanced eDiscovery (Classic)
 

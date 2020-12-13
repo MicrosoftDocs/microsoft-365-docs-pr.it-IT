@@ -2,8 +2,8 @@
 title: Esecuzione di report in Advanced eDiscovery
 f1.keywords:
 - NOCSH
-ms.author: chrfox
-author: chrfox
+ms.author: markjjo
+author: markjjo
 manager: laurawi
 titleSuffix: Office 365
 ms.date: 9/14/2017
@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: b270243e-99a0-4c34-9b21-acb1512d56c6
 description: Informazioni su come eseguire un report per il processo selezionato e quindi scaricare il relativo file. csv in Advanced eDiscovery.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 9672f8567cdebba357649833187664c2fa8402ab
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: c9681b4766c5f33b992f50cf646e6c3612287abf
+ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44818916"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "49662836"
 ---
 # <a name="run-reports-in-advanced-ediscovery-classic"></a>Esecuzione di report in Advanced eDiscovery (Classic)
 

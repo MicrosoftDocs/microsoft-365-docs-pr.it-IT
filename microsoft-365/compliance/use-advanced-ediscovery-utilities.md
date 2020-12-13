@@ -2,8 +2,8 @@
 title: Usare le utilità di Advanced eDiscovery
 f1.keywords:
 - NOCSH
-ms.author: chrfox
-author: chrfox
+ms.author: markjjo
+author: markjjo
 manager: laurawi
 titleSuffix: Office 365
 ms.date: 9/14/2017
@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 66ca9993-75f4-4724-aea2-5a0719b660c1
 description: Informazioni sulle utilità in Advanced eDiscovery, tra cui log del caso, dati di cancellazione, errori di processo, modifica della pertinenza e analisi della trasparenza.
-ms.openlocfilehash: 4283bc7bea509c8a01fb45c433964230a5256f8a
-ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
+ms.openlocfilehash: 745b81609d73ec88525c3348cc4d582c7d5d7b30
+ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "44936619"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "49663295"
 ---
 # <a name="use-advanced-ediscovery-classic-utilities"></a>Usare le utilità di Advanced eDiscovery (classico)
 
@@ -38,7 +38,7 @@ Il file di registro può essere scaricato anche nel computer del client. L'opzio
   
 1. Sulla barra dei menu, fare clic sull'icona **cremagliera** . 
     
-2. Nella scheda ** \> utilità di impostazioni e utilità** Selezionare ** \> installazione log dei casi**.
+2. Nella scheda **\> utilità di impostazioni e utilità** Selezionare **\> installazione log dei casi**.
     
 3. Selezionare il **livello di registrazione** come indicato di seguito: 
     
@@ -57,7 +57,7 @@ Se è necessario eliminare o reinizializzare i dati del caso, è necessario iniz
   
 1. Sulla barra dei menu, fare clic sull'icona **cremagliera** . 
     
-2. Nella scheda ** \> utilità di impostazioni e utilità** selezionare **Annulla \> installazione dati**.
+2. Nella scheda **\> utilità di impostazioni e utilità** selezionare **Annulla \> installazione dati**.
     
 3. Selezionare un'opzione per l'inizializzazione delle informazioni:
     
@@ -77,7 +77,7 @@ In questa sezione viene descritto come ignorare o eseguire il rollback di un ese
   
 1. Sulla barra dei menu, fare clic sull'icona **cremagliera** . 
     
-2. Nella scheda ** \> utilità di impostazioni e utilità** Selezionare **modifica pertinenza**.
+2. Nella scheda **\> utilità di impostazioni e utilità** Selezionare **modifica pertinenza**.
     
 3. Selezionare una delle opzioni seguenti: 
     
@@ -99,7 +99,7 @@ In uno scenario con più problemi, è possibile generare un report di analisi de
   
 1. Sulla barra dei menu, fare clic sull'icona **cremagliera** . 
     
-2. Nella scheda ** \> Utilità impostazioni e utilità** Selezionare ** \> installazione analisi trasparenza**.
+2. Nella scheda **\> Utilità impostazioni e utilità** Selezionare **\> installazione analisi trasparenza**.
     
 3. In * * file ID * *, immettere l'ID file del file da elaborare.
     

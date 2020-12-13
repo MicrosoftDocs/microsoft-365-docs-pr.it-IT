@@ -2,8 +2,8 @@
 title: Eseguire il modulo di processo e caricare i dati in Advanced eDiscovery
 f1.keywords:
 - NOCSH
-ms.author: chrfox
-author: chrfox
+ms.author: markjjo
+author: markjjo
 manager: laurawi
 titleSuffix: Office 365
 ms.date: 9/14/2017
@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: c87bb0e5-301c-4d1d-958e-aabeb7990f44
 description: Informazioni su come utilizzare il &amp; Centro sicurezza e conformità per accedere a Advanced eDiscovery ed eseguire il modulo di processo per un caso.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 011a8448c36ac9f4726f13471c548b7bb2427000
-ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
+ms.openlocfilehash: 64172c0198418dbb0ba4d01a5adbd5aaef4c3a3b
+ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "44936159"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "49662839"
 ---
 # <a name="run-the-process-module-and-load-data-in-advanced-ediscovery-classic"></a>Eseguire il modulo di processo e caricare i dati in Advanced eDiscovery (Classic)
 
@@ -48,7 +48,7 @@ Eseguire la procedura seguente per eseguire il processo.
     
 3. In Advanced eDiscovery selezionare il caso appropriato nella pagina **casi** visualizzati e fare clic su **Vai a maiuscole/minuscole**.
     
-4. In **preparare** \> **Process** \> l' **installazione**del processo selezionare un contenitore dall'elenco dei contenitori disponibili.
+4. In **preparare** \>  \> l' **installazione** del processo selezionare un contenitore dall'elenco dei contenitori disponibili.
     
     ![Fare clic su processo per aggiungere i risultati della ricerca al caso](../media/50bdc55c-d378-4881-b302-31ef785fa359.png)
   
@@ -78,7 +78,7 @@ Eseguire la procedura seguente per eseguire il processo.
     
 6. Per iniziare, fare clic su **elabora**. Al termine, vengono visualizzati i risultati del processo.
     
-7. Optional Se è necessario assegnare origini dati a un determinato custode, è possibile aggiungere e modificare i nomi dei depositari nei **depositari** che \> **gestiscono** e assegnano i depositari nei **depositari** \> **Assign**. 
+7. Optional Se è necessario assegnare origini dati a un determinato custode, è possibile aggiungere e modificare i nomi dei depositari nei **depositari** che \> **gestiscono** e assegnano i depositari nei **depositari** \> . 
     
 Se si aggiunge il caso, è possibile procedere di nuovo.
   

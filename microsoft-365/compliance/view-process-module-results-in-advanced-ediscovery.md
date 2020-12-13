@@ -2,8 +2,8 @@
 title: Visualizza i risultati del modulo di processo in Advanced eDiscovery
 f1.keywords:
 - NOCSH
-ms.author: chrfox
-author: chrfox
+ms.author: markjjo
+author: markjjo
 manager: laurawi
 titleSuffix: Office 365
 ms.date: 9/14/2017
@@ -16,23 +16,23 @@ search.appverid:
 - MET150
 ms.assetid: c6f016cb-409f-4ae9-911c-1395cf0c86ea
 description: Informazioni su come trovare i risultati di un modulo di processo eseguito in Advanced eDiscovery, incluso lo stato delle attività e il riepilogo dei processi.
-ms.openlocfilehash: 26ef87c762fc5c77f2374978bf4a425940dd5f37
-ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
+ms.openlocfilehash: 73699d77e305055f6c2dc444fff00fb714b458cd
+ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "44936169"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "49663265"
 ---
 # <a name="view-process-module-results-in-advanced-ediscovery-classic"></a>Visualizza i risultati del modulo di processo in Advanced eDiscovery (Classic)
 
-Dopo l'avvio del processo di **preparazione** \> **Process** , è possibile visualizzare lo stato e i risultati. 
+Dopo l'avvio del processo di **preparazione** \>  , è possibile visualizzare lo stato e i risultati. 
   
 > [!NOTE]
 > Per usare Advanced eDiscovery è necessario avere Office 365 E3 con il componente aggiuntivo Advanced Compliance o un abbonamento E5 dell'organizzazione. Se non si ha questo piano e si desidera provare Advanced eDiscovery, è possibile [richiedere una valutazione di Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
 ## <a name="process-task-status"></a>Stato attività processo
 
-Nei risultati del processo di **preparazione** \> **Process** \> **Results**la pagina mostra lo stato corrente (se il processo è in esecuzione) oppure lo stato dell'ultimo processo di elaborazione, come illustrato nell'esempio seguente.
+Nei risultati del processo di **preparazione** \>  \> la pagina mostra lo stato corrente (se il processo è in esecuzione) oppure lo stato dell'ultimo processo di elaborazione, come illustrato nell'esempio seguente.
   
 ![Stato delle attività del modulo processo](../media/9430f9e7-a4dd-47c7-ac2e-2c6a60fc948b.png)
   
@@ -68,7 +68,7 @@ In preparare \> \> \> il riepilogo del processo dei risultati del processo, vien
   
 I riquadri presentano una visualizzazione grafica delle statistiche dei file importati, come indicato di seguito:
   
-- **Riepilogo processi accumulare**d: tutti i file nel caso.
+- **Riepilogo processi accumulare** d: tutti i file nel caso.
     
 - **Riepilogo del processo ultimo**: file caricati dall'ultima sessione o dall'azione. 
     
@@ -100,7 +100,7 @@ La barra destra, elaborata, include:
     
   - **Non testuale**: file di testo vuoti, file di testo nativo vuoti, file non di testo nativi. 
     
-  - **Duplicate**s: file duplicati con testo.
+  - **Duplicate** s: file duplicati con testo.
     
 ## <a name="last-process-errors"></a>Ultimi errori del processo
 

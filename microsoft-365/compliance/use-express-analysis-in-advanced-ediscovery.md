@@ -2,8 +2,8 @@
 title: Utilizzare l'analisi Express in Advanced eDiscovery
 f1.keywords:
 - NOCSH
-ms.author: chrfox
-author: chrfox
+ms.author: markjjo
+author: markjjo
 manager: laurawi
 titleSuffix: Office 365
 ms.date: 9/14/2017
@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: 50580099-3dc0-44a1-a9b6-5ca6d396316b
 description: Informazioni su come eseguire la modalità di analisi Express di Advanced eDiscovery e quindi esportare i risultati.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ccc81ccf4446af3d6e5584924883a1c8049ed962
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: de637df426d38da2863a65eea67c65a3f66953a7
+ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034308"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "49663325"
 ---
 # <a name="use-express-analysis-in-advanced-ediscovery-classic"></a>Utilizzare l'analisi Express in Advanced eDiscovery (Classic) 
 
@@ -59,7 +59,7 @@ ms.locfileid: "44034308"
     > [!NOTE]
     > Attualmente il token SAS scade dopo un mese. Se si tenta di eseguire il download dopo più di un mese, è necessario annullare l'ultima sessione e quindi riesportarla. 
   
-4. Per avviare l'analisi Express con le impostazioni predefinite, scegliere **analisi espressa**e la pagina **stato attività** verrà visualizzata 
+4. Per avviare l'analisi Express con le impostazioni predefinite, scegliere **analisi espressa** e la pagina **stato attività** verrà visualizzata 
     
     Nella pagina **stato attività** è possibile espandere le schede **Process**, **Analyze** and **Export** per visualizzare i dettagli relativi all'esecuzione espressa. 
     
@@ -105,22 +105,22 @@ Facoltativamente, è possibile impostare **Impostazioni avanzate** per modificar
     
   - Per esportare i risultati per i nuovi file aggiunti a un caso esistente, continuare con il batch corrente. Per creare una sessione nel batch, selezionare lo stesso numero di batch e fare clic su **Crea sessione di esportazione** è possibile utilizzare questa opzione per esportare gli stessi parametri del batch precedente, in modo incrementale. 
     
-  - Per esportare in un nuovo batch, fare **Add** ![clic su Aggiungi](../media/c2dd8b3a-5a22-412c-a7fa-143f5b2b5612.png) icona e immettere un nuovo nome in **batch Name** (o accettare il valore predefinito) e una descrizione in **batch Description**. Fare clic su **OK**.
+  - Per esportare in un nuovo batch, fare clic su **Aggiungi** ![ icona ](../media/c2dd8b3a-5a22-412c-a7fa-143f5b2b5612.png) e immettere un nuovo nome in **batch Name** (o accettare il valore predefinito) e una descrizione in **batch Description**. Fare clic su **OK**.
     
-  - Per modificare un nome o una descrizione in batch, selezionare il nome in **batch di esportazione**, fare](../media/3d613660-7602-4df2-bdb9-14e9ca2f9cf2.png)clic su **modifica** ![icona modifica e quindi modificare i campi.
+  - Per modificare un nome o una descrizione in batch, selezionare il nome in **batch di esportazione**, fare clic su **modifica** ![ icona modifica ](../media/3d613660-7602-4df2-bdb9-14e9ca2f9cf2.png) e quindi modificare i campi.
     
     > [!NOTE]
     > Dopo aver eseguito le sessioni per un batch di esportazione, non è possibile eliminarle. Inoltre, solo alcuni parametri possono essere modificati dopo l'esecuzione della prima sessione. 
   
-  - Per creare un batch di esportazione duplicato, scegliere **Duplica esportazione batch** ![creare un'icona](../media/3f6d5f59-e842-4946-a493-473528af0119.jpg) del batch di esportazione duplicata e immettere un nome e una descrizione per il batch duplicato nel pannello. 
+  - Per creare un batch di esportazione duplicato, scegliere **Duplica esportazione batch** ![ creare un'icona del batch di esportazione duplicata ](../media/3f6d5f59-e842-4946-a493-473528af0119.jpg) e immettere un nome e una descrizione per il batch duplicato nel pannello. 
     
-  - Per eliminare un batch di esportazione, scegliere **Delete** ![Delete an export batch](../media/92a9f8e0-d469-48da-addb-69365e7ffb6f.jpg)Icon.
+  - Per eliminare un batch di esportazione, scegliere **Delete** ![ Delete an export batch Icon ](../media/92a9f8e0-d469-48da-addb-69365e7ffb6f.jpg) .
     
-  - Per visualizzare la cronologia di un batch, fare clic su cronologia **batch** ![Visualizza](../media/a80cc320-d96c-4d91-8884-75fe2cb147e2.jpg)cronologia.
+  - Per visualizzare la cronologia di un batch, fare clic su cronologia **batch** ![ Visualizza cronologia ](../media/a80cc320-d96c-4d91-8884-75fe2cb147e2.jpg) .
     
-2. In define p **opulation:** selezionare **Includi solo i file sopra il Punteggio di rilevanza** e/o il **batch di esportazione** se si desidera ottimizzare le impostazioni per il batch di esportazione. Se si seleziona **Includi solo i file sopra il Punteggio di rilevanza**, il **problema** è abilitato e se il Punteggio di pertinenza del file è superiore al Punteggio di taglio del problema selezionato, il file viene esportato. Il file verrà esportato a meno che non sia stato escluso dal filtro **per la revisione** . Se si seleziona **affina esportazione batch**, i pulsanti di opzione **deduplica** e **Filtra in base a' per la revisione '** sono abilitati. Se si sceglie **deduplicazione**, i file duplicati verranno filtrati in base al criterio definito: [livello case (impostazione predefinita): da ogni set di file duplicati nell'intero caso, tutti tranne un file verranno deselezionati. Livello di custode: da ogni serie di file duplicati dello stesso custode, tutti tranne un file verranno deduplicati. Un record di tutti i file duplicati è disponibile nell'output di esportazione. Se si sceglie **Filtra per campo ' per la revisione '** , selezionare **modifica in metadati** per immettere le impostazioni del campo **' per la revisione '**. Selezionare **Includi file di input**per includere i file di origine nel contenuto del pacchetto. È possibile cancellare questa opzione per velocizzare il processo di esportazione. Si noti che i file nativi verranno esportati in tutti i casi.
+2. In define p **opulation:** selezionare **Includi solo i file sopra il Punteggio di rilevanza** e/o il **batch di esportazione** se si desidera ottimizzare le impostazioni per il batch di esportazione. Se si seleziona **Includi solo i file sopra il Punteggio di rilevanza**, il **problema** è abilitato e se il Punteggio di pertinenza del file è superiore al Punteggio di taglio del problema selezionato, il file viene esportato. Il file verrà esportato a meno che non sia stato escluso dal filtro **per la revisione** . Se si seleziona **affina esportazione batch**, i pulsanti di opzione **deduplica** e **Filtra in base a' per la revisione '** sono abilitati. Se si sceglie **deduplicazione**, i file duplicati verranno filtrati in base al criterio definito: [livello case (impostazione predefinita): da ogni set di file duplicati nell'intero caso, tutti tranne un file verranno deselezionati. Livello di custode: da ogni serie di file duplicati dello stesso custode, tutti tranne un file verranno deduplicati. Un record di tutti i file duplicati è disponibile nell'output di esportazione. Se si sceglie **Filtra per campo ' per la revisione '** , selezionare **modifica in metadati** per immettere le impostazioni del campo **' per la revisione '**. Selezionare **Includi file di input** per includere i file di origine nel contenuto del pacchetto. È possibile cancellare questa opzione per velocizzare il processo di esportazione. Si noti che i file nativi verranno esportati in tutti i casi.
     
-3. In **Definisci metadati**selezionare una delle opzioni seguenti nell'elenco **modello di esportazione** (una volta per sessione). 
+3. In **Definisci metadati** selezionare una delle opzioni seguenti nell'elenco **modello di esportazione** (una volta per sessione). 
     
   - **Standard**: set di elementi di dati, metadati e proprietà di base. Utilizzare questa opzione quando i dati di importazione sono già stati elaborati in Advanced eDiscovery e i dati di esportazione vengono caricati in un sistema che già contiene i file. Per impostazione predefinita, le colonne dei modelli di esportazione vengono create e riempite.
     
@@ -128,7 +128,7 @@ Facoltativamente, è possibile impostare **Impostazioni avanzate** per modificar
     
   - **Problemi**: selezionare **tutti i problemi** o selezionare un particolare problema creato. 
     
-Scegliere **OK**per salvare le impostazioni avanzate, **ripristinare** i valori predefiniti per l'utilizzo del valore predefinito oppure **Annulla** per annullare l'impostazione delle impostazioni avanzate. 
+Scegliere **OK** per salvare le impostazioni avanzate, **ripristinare** i valori predefiniti per l'utilizzo del valore predefinito oppure **Annulla** per annullare l'impostazione delle impostazioni avanzate. 
   
 ## <a name="see-also"></a>Vedere anche
 <a name="BK_AdvancedSettings"> </a>

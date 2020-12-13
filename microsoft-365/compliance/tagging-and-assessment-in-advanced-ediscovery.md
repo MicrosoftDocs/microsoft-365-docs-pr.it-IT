@@ -2,8 +2,8 @@
 title: Tagging e valutazione in Advanced eDiscovery
 f1.keywords:
 - NOCSH
-ms.author: chrfox
-author: chrfox
+ms.author: markjjo
+author: markjjo
 manager: laurawi
 titleSuffix: Office 365
 ms.date: 09/14/2017
@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: b5c82de7-ed2f-4cc6-becd-db403faf4d18
 description: Esaminare i passaggi necessari per eseguire la formazione di valutazione, compresi i file di tagging, e la revisione dei risultati della valutazione in Advanced eDiscovery.
-ms.openlocfilehash: 57e4e8da0dbeec5e1dba384ae0e62ffb6b3bb03a
-ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
+ms.openlocfilehash: c8c6f82e7cfb3e2eddcc482039582ea27a702494
+ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "44936693"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "49663461"
 ---
 # <a name="tagging-and-assessment-in-advanced-ediscovery-classic"></a>Tagging e valutazione in Advanced eDiscovery (Classic)
 
@@ -32,7 +32,7 @@ In questa sezione viene descritta la procedura per il modulo di valutazione dell
   
 ## <a name="performing-assessment-training-and-analysis"></a>Formazione e analisi per l'esecuzione di valutazioni
 
-1. Nella scheda ** \> rilevamento pertinenza** fare clic su **valutazione** per avviare la valutazione dei casi. 
+1. Nella scheda **\> rilevamento pertinenza** fare clic su **valutazione** per avviare la valutazione dei casi. 
     
     Ad esempio, in questa procedura viene creato un set di valutazione di esempio di 500 file e viene visualizzata la scheda **tag** , che contiene il pannello di tagging, il contenuto del file visualizzato e altre opzioni di tagging. 
     
@@ -50,7 +50,7 @@ In questa sezione viene descritta la procedura per il modulo di valutazione dell
     ![Traccia di pertinenza: valutazione](../media/da911ba5-8678-40d6-9ad5-fd0b058355c1.png)
   
     > [!TIP]
-    > Per impostazione predefinita, si consiglia di procedere con il passaggio successivo predefinito quando l'indicatore di stato di valutazione del problema è stato completato, indicando che il campione di valutazione è stato esaminato e che sono stati contrassegnati i file rilevanti sufficienti. > altrimenti, se si desidera visualizzare i risultati della scheda **pista** e controllare il margine di errore e il passaggio successivo, fare clic su **modifica** adiacente al **passaggio successivo**, selezionare **continua valutazione**e quindi fare clic su **OK**. 
+    > Per impostazione predefinita, si consiglia di procedere con il passaggio successivo predefinito quando l'indicatore di stato di valutazione del problema è stato completato, indicando che il campione di valutazione è stato esaminato e che sono stati contrassegnati i file rilevanti sufficienti. > altrimenti, se si desidera visualizzare i risultati della scheda **pista** e controllare il margine di errore e il passaggio successivo, fare clic su **modifica** adiacente al **passaggio successivo**, selezionare **continua valutazione** e quindi fare clic su **OK**. 
   
 1. Fare clic su **modifica** a destra della casella di controllo **valutazione** per visualizzare e specificare i parametri di valutazione per ogni problema. Viene visualizzata una finestra di dialogo a **livello di valutazione** per ogni problema, come illustrato nell'esempio seguente: 
     
@@ -80,7 +80,7 @@ In questa sezione viene descritta la procedura per il modulo di valutazione dell
     
     **Livello di confidenza**: per impostazione predefinita, il margine di errore consigliato per la sicurezza è 95%. Se si desidera modificare questo parametro, fare clic su **modifica** . 
     
-    **Margine errore previsto**per la ricchezza: in base ai valori aggiornati, si tratta del margine di errore previsto per la ricchezza, dopo la revisione di tutti i file di valutazione aggiuntivi.
+    **Margine errore previsto** per la ricchezza: in base ai valori aggiornati, si tratta del margine di errore previsto per la ricchezza, dopo la revisione di tutti i file di valutazione aggiuntivi.
     
     **File di valutazione aggiuntivi necessari**: dati i valori aggiornati, il numero di file di valutazione aggiuntivi che devono essere esaminati per raggiungere l'obiettivo.
     
@@ -121,7 +121,7 @@ Quando la ricchezza è molto bassa, il numero di file di valutazione aggiuntivi 
 In assenza di stabilizzazione basata statisticamente, vi saranno risultati con un livello di precisione e confidenza inferiore. Tuttavia, questi risultati possono essere utilizzati per trovare i file rilevanti quando non è necessario conoscere la percentuale di file rilevanti trovati. Analogamente, questo stato può essere utilizzato per formare problemi con una ricchezza bassa, in cui i punteggi rilevati possono accelerare l'accesso ai file rilevanti per un problema specifico.
   
 > [!TIP]
-> Nella scheda ** \> Tracking pertinenza** , espansione visualizzazione problema, sono disponibili le seguenti opzioni di visualizzazione: > il passaggio successivo consigliato, ad esempio il **passaggio successivo: il tagging** può essere ignorato (per problema) facendo clic sul pulsante **modifica** a destra e quindi selezionando un passaggio diverso nel **passaggio successivo**. Quando l'indicatore di stato di valutazione non è stato completato, la valutazione sarà la successiva opzione consigliata per contrassegnare i file di valutazione e aumentare l'accuratezza delle statistiche. > è possibile modificare il margine di errore e valutarne l'impatto, facendo clic su **modifica**e nella **finestra di dialogo livello di valutazione**, modificando il **margine di errore di destinazione per le stime di richiamo**e facendo clic su **Aggiorna valori**. Inoltre, in questa finestra di dialogo, è possibile visualizzare le opzioni avanzate facendo clic su **Avanzate**. > è possibile visualizzare le statistiche aggiuntive a livello di valutazione e il relativo impatto facendo clic su **Visualizza**. Nella finestra di dialogo Risultati dettagli visualizzati, le statistiche sono disponibili per ogni problema, quando sono presenti almeno 500 file di valutazione contrassegnati e almeno 18 file sono contrassegnati come rilevanti per il problema. 
+> Nella scheda **\> Tracking pertinenza** , espansione visualizzazione problema, sono disponibili le seguenti opzioni di visualizzazione: > il passaggio successivo consigliato, ad esempio il **passaggio successivo: il tagging** può essere ignorato (per problema) facendo clic sul pulsante **modifica** a destra e quindi selezionando un passaggio diverso nel **passaggio successivo**. Quando l'indicatore di stato di valutazione non è stato completato, la valutazione sarà la successiva opzione consigliata per contrassegnare i file di valutazione e aumentare l'accuratezza delle statistiche. > è possibile modificare il margine di errore e valutarne l'impatto, facendo clic su **modifica** e nella **finestra di dialogo livello di valutazione**, modificando il **margine di errore di destinazione per le stime di richiamo** e facendo clic su **Aggiorna valori**. Inoltre, in questa finestra di dialogo, è possibile visualizzare le opzioni avanzate facendo clic su **Avanzate**. > è possibile visualizzare le statistiche aggiuntive a livello di valutazione e il relativo impatto facendo clic su **Visualizza**. Nella finestra di dialogo Risultati dettagli visualizzati, le statistiche sono disponibili per ogni problema, quando sono presenti almeno 500 file di valutazione contrassegnati e almeno 18 file sono contrassegnati come rilevanti per il problema. 
   
 ## <a name="see-also"></a>Vedere anche
 

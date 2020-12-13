@@ -2,8 +2,8 @@
 title: Formazione di tagging e pertinenza in Advanced eDiscovery
 f1.keywords:
 - NOCSH
-ms.author: chrfox
-author: chrfox
+ms.author: markjjo
+author: markjjo
 manager: laurawi
 titleSuffix: Office 365
 ms.date: 09/14/2017
@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 8576cc86-d51b-4285-b54b-67184714cc62
 description: Informazioni sui passaggi da contrassegnare e quindi utilizzare un campione di formazione di 40 file durante la fase di formazione per la pertinenza di Advanced eDiscovery.
-ms.openlocfilehash: 56ce30754e04d4a2adcf854093e603f93be5ae36
-ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
+ms.openlocfilehash: d576b0a907a4c12eabe4f3cba9846de670b0ee12
+ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "44936672"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "49663451"
 ---
 # <a name="tagging-and-relevance-training-in-advanced-ediscovery-classic"></a>Formazione di tagging e pertinenza in Advanced eDiscovery (Classic)
 
@@ -34,7 +34,7 @@ Dopo aver completato la valutazione in Advanced eDiscovery e immettendo la fase 
   
 ## <a name="performing-relevance-training"></a>Esecuzione della formazione sulla pertinenza
 
-1. Nella scheda ** \> tag pertinenza** , il riquadro di tagging viene visualizzato per impostazione predefinita nel riquadro sinistro e vengono visualizzati i file di esempio, uno alla volta per il tagging. 
+1. Nella scheda **\> tag pertinenza** , il riquadro di tagging viene visualizzato per impostazione predefinita nel riquadro sinistro e vengono visualizzati i file di esempio, uno alla volta per il tagging. 
     
     ![Pannello Tag di pertinenza](../media/0cf19ab4-b427-4a7f-8749-0f4ed9afaf58.png)
   
@@ -76,9 +76,9 @@ Dopo aver completato la valutazione in Advanced eDiscovery e immettendo la fase 
     
 ## <a name="working-with-the-sample-files-list"></a>Utilizzo dell'elenco dei file di esempio
 
-L'elenco file di esempio consente di visualizzare un elenco dei file in un campione di formazione ed eseguire varie operazioni in uno o più file. Nella scheda **tag pertinenza** \> **Tag** , nel riquadro a sinistra dei **file di esempio** viene visualizzato un elenco di file di esempio per l'elaborazione con processi di valutazione, formazione, catch-up e incoerenze. 
+L'elenco file di esempio consente di visualizzare un elenco dei file in un campione di formazione ed eseguire varie operazioni in uno o più file. Nella scheda **tag pertinenza** \>  , nel riquadro a sinistra dei **file di esempio** viene visualizzato un elenco di file di esempio per l'elaborazione con processi di valutazione, formazione, catch-up e incoerenze. 
   
-1. Nella scheda ** \> tag pertinenza** Selezionare i file di esempio nell'elenco a discesa riquadro sinistro. I file di esempio sono elencati nel riquadro sinistro. 
+1. Nella scheda **\> tag pertinenza** Selezionare i file di esempio nell'elenco a discesa riquadro sinistro. I file di esempio sono elencati nel riquadro sinistro. 
     
     ![Elenco di file campione per Tag di pertinenza](../media/fd058bdd-645a-4af1-a1eb-bff08581cb18.png)
   
@@ -90,13 +90,13 @@ L'elenco file di esempio consente di visualizzare un elenco dei file in un campi
     
   - Passare da un file all'altra nell'esempio corrente utilizzando le opzioni della barra dei menu inferiore. Inoltre, sono disponibili tasti di scelta rapida per l'esplorazione:
     
-    Per passare al primo file dell'esempio: MAIUSC + CTRL +\<
+    Per passare al primo file dell'esempio: MAIUSC + CTRL + \<
     
-    Per passare al file precedente nell'esempio: MAIUSC +\<
+    Per passare al file precedente nell'esempio: MAIUSC + \<
     
-    Per passare al file successivo nell'esempio: MAIUSC +\>
+    Per passare al file successivo nell'esempio: MAIUSC + \>
     
-    Per passare all'ultimo file dell'esempio: MAIUSC + CTRL +\>
+    Per passare all'ultimo file dell'esempio: MAIUSC + CTRL + \>
     
 ## <a name="see-also"></a>Vedere anche
 

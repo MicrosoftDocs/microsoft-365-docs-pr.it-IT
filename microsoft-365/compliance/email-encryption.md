@@ -18,17 +18,17 @@ ms.collection:
 - M365-security-compliance
 - m365solution-mip
 - m365initiative-compliance
-description: Confronto delle opzioni di crittografia di Microsoft 365, tra cui la crittografia dei messaggi di Office (OME), S/MIME, Information Rights Management (IRM) e presentazione di Transport Layer Security (TLS).
-ms.openlocfilehash: 4b18110664c602b5b09e60cbd791559069297be4
-ms.sourcegitcommit: e53234b1f64ebca00e121da1706c02b3337c35f0
+description: Confronto delle opzioni di crittografia di Microsoft 365, tra cui la crittografia dei messaggi di Office 365 (OME), S/MIME, Information Rights Management (IRM) e presentazione di Transport Layer Security (TLS).
+ms.openlocfilehash: 25568d4e39c2fe7ca2dea214276be5d7f6986518
+ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "49580709"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "49663021"
 ---
 # <a name="email-encryption"></a>Crittografia della posta elettronica
 
-Questo articolo confronta le opzioni di crittografia in Microsoft 365, tra cui Office 365 Message Encryption (OME), Information Rights Management S/MIME (IRM) e introduce Transport Layer Security (TLS).
+Questo articolo confronta le opzioni di crittografia in Microsoft 365, tra cui la crittografia dei messaggi di Office (OME), S/MIME, Information Rights Management (IRM) e introduce Transport Layer Security (TLS).
   
 Microsoft 365 offre più opzioni di crittografia per soddisfare le esigenze aziendali per la sicurezza della posta elettronica. Questo articolo presenta tre modi in cui crittografare la posta elettronica in Office 365. Per altre informazioni su tutte le caratteristiche di sicurezza di Office 365, visitare il [Centro protezione di Office 365](https://go.microsoft.com/fwlink/p/?LinkID=282470). Questo articolo presenta i tre tipi di crittografia disponibili per gli amministratori di Microsoft 365 per la protezione della posta elettronica in Office 365:
   
@@ -38,7 +38,7 @@ Microsoft 365 offre più opzioni di crittografia per soddisfare le esigenze azie
 
 - Information Rights Management (IRM).
 
-## <a name="email-encryption-and-how-microsoft-365-uses-it"></a>Che cos'è la crittografia della posta elettronica e come viene usata in Microsoft 365
+## <a name="what-is-email-encryption-and-how-does-microsoft-365-use-it"></a>Che cos'è la crittografia della posta elettronica e come viene usata in Microsoft 365?
 
 La crittografia è il processo con cui le informazioni vengono codificate in modo che solo un destinatario autorizzato sia in grado di decodificarle e utilizzarle. Microsoft 365 usa la crittografia in due modi: nel servizio e come controllo cliente. Nel servizio, la crittografia viene usata per impostazione predefinita in Microsoft 365. Non è necessario configurare alcunché. Ad esempio, Microsoft 365 usa Transport Layer Security (TLS) per crittografare la connessione, o la sessione, tra due server. 
   
@@ -68,16 +68,11 @@ Questo video offre un'introduzione alla [crittografia in Office 365](https://www
 |Consigli e scenari di esempio|È consigliabile utilizzare OME quando si desidera inviare informazioni aziendali riservate a persone esterne all'organizzazione, ovvero utenti o altre aziende. Ad esempio:  <br/>  Un dipendente di banca invia comunicazioni sulla carta di credito ai clienti  <br/>  Un medico che invia cartelle cliniche a un paziente  <br/>  Un avvocato invia informazioni legali riservate a un altro avvocato|Si consiglia di utilizzare IRM per applicare limitazioni di utilizzo e la crittografia. Esempio:  <br/>  Un responsabile che invia informazioni riservate al team su un nuovo prodotto applicando l'opzione "Non inoltrare".  <br/>  Un dirigente che deve condividere una proposta di offerta con un'altra società, che include un allegato inviato da un partner che utilizza Office 365 e richiede che la posta elettronica e l'allegato siano entrambi protetti.|Si consiglia di utilizzare S/MIME quando la propria organizzazione o quella del destinatario richiede una reale crittografia peer-to-peer.  <br/>  S/MIME viene utilizzato più comunemente nei seguenti scenari:  <br/>  Comunicazione tra enti pubblici e altri enti governativi  <br/>  Comunicazioni tra un'azienda e un ente governativo|
 ||
 
-Se si usano sia [Azure Information Protection](https://docs.microsoft.com/microsoft-365/compliance/protect-information) che la crittografia della posta elettronica per proteggere i dati, considerare quanto segue:
-- È possibile usare le etichette di riservatezza con la crittografia IRM e OME. Per maggiori dettagli, vedere [Limitare l'accesso al contenuto utilizzando la crittografia nelle etichette di riservatezza](https://docs.microsoft.com/microsoft-365/compliance/encryption-sensitivity-labels?view=o365-worldwide#what-happens-to-existing-encryption-when-a-labels-applied).
-- È possibile applicare etichette di riservatezza ai messaggi di posta elettronica con firma digitale usando S/MIME.
-- Non è possibile applicare etichette di riservatezza ai messaggi di posta elettronica crittografati con S/MIME, perché i messaggi protetti dalla crittografia end-to-end non vengono elaborati dai criteri.
-
-## <a name="encryption-options-available-for-my-microsoft-365-subscription"></a>Opzioni di crittografia disponibili per il proprio abbonamento a Microsoft 365
+## <a name="what-encryption-options-are-available-for-my-microsoft-365-subscription"></a>Quali sono le opzioni di crittografia disponibili per il mio abbonamento a Microsoft 365?
 
 Per informazioni sulle opzioni di crittografia disponibili per l'abbonamento a Microsoft 365, vedere la [descrizione del servizio Exchange Online](https://technet.microsoft.com/library/exchange-online-service-description.aspx). Qui è possibile trovare informazioni sulle seguenti funzionalità di crittografia:
-
-- Azure RMS, incluse le funzionalità IRM e le nuove funzionalità OME
+  
+- Azure RMS, OME e le funzionalità IRM
 
 - S/MIME
 

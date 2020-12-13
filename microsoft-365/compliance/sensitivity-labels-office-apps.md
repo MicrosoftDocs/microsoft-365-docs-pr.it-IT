@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Informazioni su come gli utenti lavorano con etichette di riservatezza nelle app di Office per desktop, dispositivi mobili e Web e quali app supportano le etichette di riservatezza.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 3a8d0181b7a17922f788605953fc9af3ca450d6d
-ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
+ms.openlocfilehash: 36e00158c56eb83f8d2c2272295defb12363e314
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49613620"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49655428"
 ---
 # <a name="use-sensitivity-labels-in-office-apps"></a>Usare le etichette di riservatezza nelle app di Office
 
@@ -63,7 +63,7 @@ Per iOS e Android: se si dispone di una versione minima elencata, la funzionalit
 |[Assegnare le autorizzazioni adesso](encryption-sensitivity-labels.md#assign-permissions-now)                                 | 1910+          | 16.21 +     | 2.21+ | 16.0.11231+ | [Sì-opt-in](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[Consentire agli utenti di assegnare le autorizzazioni](encryption-sensitivity-labels.md#let-users-assign-permissions)                     |2004 + | 16.35 +   | In Revisione   | In Revisione         | In Revisione                                                        |
 |[Visualizzazione dell'utilizzo delle etichette con label Analytics](label-analytics.md) e invio dei dati per gli amministratori                      | In Revisione            | In Revisione        | In Revisione   | In Revisione         | Sì <sup>\*</sup>                                                        |
-|[Richiedere agli utenti di applicare un'etichetta ai propri messaggi di posta elettronica e documenti](sensitivity-labels.md#what-label-policies-can-do)   | Anteprima: [canale Beta](https://office.com/insider)             | Anteprima: [canale Beta](https://office.com/insider)         | In Revisione   | In Revisione         | In Revisione                                            
+|[Richiedere agli utenti di applicare un'etichetta ai propri messaggi di posta elettronica e documenti](sensitivity-labels.md#what-label-policies-can-do)   | Anteprima: [canale Beta](https://office.com/insider)             | Anteprima: [canale Beta](https://office.com/insider)         | Anteprima: [canale Beta](https://office.com/insider)   | In Revisione         | In Revisione                                            
 |[Applicare automaticamente un'etichetta di riservatezza al contenuto](apply-sensitivity-label-automatically.md)                    | 2009 +                                  | Anteprima di Word e PowerPoint: implementazione del [canale corrente (anteprima)](https://office.com/insider) | In Revisione | In Revisione | [Sì-opt-in](sensitivity-labels-sharepoint-onedrive-files.md) |
 |Supporto per il [salvataggio automatico](https://support.office.com/article/6d6bd723-ebfd-4e40-b5f6-ae6e8088f7a5) e la [CoAuthoring](https://support.office.com/article/ee1509b4-1f6e-401e-b04a-782d26f564a4) sui documenti etichettati e protetti | In Revisione | In Revisione | In Revisione | In Revisione | [Sì-opt-in](sensitivity-labels-sharepoint-onedrive-files.md) |
 |

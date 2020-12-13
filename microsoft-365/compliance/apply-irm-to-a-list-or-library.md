@@ -21,12 +21,12 @@ ms.collection:
 - SPO_Content
 description: È possibile utilizzare Information Rights Management (IRM) per controllare e proteggere i file scaricati da elenchi o raccolte.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: de0105bf61b4abbddd938a4ec7286c1919bf3985
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: 0c61b7c6f13208b6c017b5ed65c667203abade42
+ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47948484"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "49663101"
 ---
 # <a name="apply-information-rights-management-irm-to-a-list-or-library"></a>Applicazione di Information Rights Management (IRM) a un elenco o a una raccolta
 
@@ -35,15 +35,15 @@ ms.locfileid: "47948484"
 ## <a name="administrator-preparations-before-applying-irm"></a>Preparazione dell'amministratore prima di applicare IRM
 
 - Il servizio Azure Rights Management (Azure RMS) di Azure Information Protection e l'equivalente locale, Active Directory Rights Management Services (AD RMS), supportano Information Rights Management per i siti. Non sono necessarie installazioni separate o aggiuntive.
-    
-- Prima di applicare IRM a un elenco o a una raccolta, è innanzitutto necessario abilitarlo da un amministratore del sito.
-    
+
+- Prima di applicare IRM a un elenco o a una raccolta, è necessario abilitare IRM per il sito. Per abilitare IRM, è necessario disporre delle autorizzazioni di amministratore.
+
 - Per applicare IRM a un elenco o a una raccolta, è necessario disporre delle autorizzazioni di amministratore per l'elenco o la raccolta.
-    
-- Se si utilizza SharePoint Online, è possibile che gli utenti verifichino timeout durante il download di file protetti con IRM di grandi dimensioni. In questo caso, applicare la protezione IRM tramite le applicazioni di Office e archiviare i file più grandi in una raccolta di SharePoint che non utilizza IRM.
-    
+
+- Se si utilizza SharePoint Online, è possibile che gli utenti verifichino timeout durante il download di file protetti con IRM di grandi dimensioni. Per evitare timeout, utilizzare le applicazioni di Office per applicare la protezione IRM e archiviare file di grandi dimensioni in una raccolta di SharePoint che non utilizza IRM.
+
 > [!NOTE]
-> Se si utilizza SharePoint Server 2013, è necessario che un amministratore del server installi protettori su tutti i server Web front-end per ogni tipo di file che gli utenti dell'organizzazione desiderano proteggere tramite IRM. 
+> Se si utilizza SharePoint Server 2013, è necessario che un amministratore del server installi protettori su tutti i server Web front-end per ogni tipo di file che gli utenti dell'organizzazione desiderano proteggere tramite IRM.
   
 ## <a name="apply-irm-to-a-list-or-library"></a>Applicazione di IRM a un elenco o a una raccolta
 <a name="__toc256598179"> </a>
@@ -51,32 +51,32 @@ ms.locfileid: "47948484"
 ![Impostazioni di Information Rights Management](../media/1b708102-9c90-42b0-b255-ef0e72d0be88.png)
   
 1. Passare all'elenco o alla raccolta per cui si desidera configurare IRM.
-    
-2. Sulla barra multifunzione fare clic sulla scheda **raccolta** e quindi su **Impostazioni raccolta**. Se si utilizza un elenco, fare clic sulla scheda **elenco** e quindi su **Impostazioni elenco**.
+
+2. Sulla barra multifunzione selezionare la scheda **raccolta** e quindi selezionare **Impostazioni raccolta**. Se si utilizza un elenco, selezionare la scheda **elenco** e quindi selezionare **Impostazioni elenco**.
     
     ![Pulsanti delle impostazioni della raccolta di SharePoint sulla barra multifunzione](../media/cdf718fa-d792-40fc-8026-00c3b80b9e05.png)
   
-3. In **autorizzazioni e gestione**fare clic su **Information Rights Management**. Se non viene visualizzato il collegamento Information Rights Management, IRM potrebbe non essere abilitato per il sito. Contattare l'amministratore del server per verificare se è possibile abilitare IRM per il sito. Il collegamento Information Rights Management non è visualizzato per le raccolte immagini.
-    
-4. Nella pagina **impostazioni di Information Rights Management** selezionare la casella di controllo **limitare l'autorizzazione per i documenti in questa raccolta** per applicare le autorizzazioni limitate ai documenti scaricati dall'elenco o dalla raccolta. 
-    
-5. Nella casella **Crea un titolo** per i criteri di autorizzazione digitare un nome descrittivo per il criterio che è possibile utilizzare in un secondo momento per differenziare questo criterio da altri criteri. Ad esempio, è possibile digitare **Confidential Company** se si sta applicando un'autorizzazione limitata a un elenco o a una raccolta che conterrà documenti aziendali riservati. 
-    
+3. In **autorizzazioni e gestione** selezionare **Information Rights Management**. Se non viene visualizzato il collegamento Information Rights Management, IRM potrebbe non essere abilitato per il sito. Contattare l'amministratore del server per verificare se è possibile abilitare IRM per il sito. Il collegamento **Information Rights Management** non viene visualizzato per le raccolte immagini.
+
+4. Nella pagina **impostazioni di Information Rights Management** selezionare la casella di controllo **limitare l'autorizzazione per i documenti in questa raccolta** per applicare l'autorizzazione limitata ai documenti che gli utenti scaricano da questo elenco o raccolta.
+
+5. Nella casella **creare un titolo** per i criteri di autorizzazione, immettere un nome descrittivo per il criterio. Utilizzare un nome che consenta di identificare questo criterio da altri criteri. Ad esempio, utilizzare la **società riservata** per applicare autorizzazioni limitate a un elenco o a una raccolta contenente documenti aziendali riservati.
+
 6. Nella casella di testo **Aggiungi una** descrizione per i criteri di autorizzazione digitare una descrizione che verrà visualizzata agli utenti che utilizzano l'elenco o la raccolta che spiega come gestire i documenti in questo elenco o nella raccolta. Ad esempio, è possibile digitare **Discuti il contenuto del documento solo con altri dipendenti** se si desidera limitare l'accesso alle informazioni contenute in questi documenti ai dipendenti interni. 
-    
-7. Per applicare ulteriori restrizioni ai documenti presenti in questo elenco o raccolta, fare clic su **Mostra opzioni**e quindi eseguire una delle operazioni seguenti:
-    
+
+7. Per applicare restrizioni aggiuntive ai documenti di questo elenco o raccolta, selezionare **Mostra opzioni** e quindi eseguire una delle operazioni seguenti:
+
 |**Per eseguire questa operazione:**|**Procedere come segue:**|
 |:-----|:-----|
-|Consenti agli utenti di stampare documenti da questo elenco o dalla raccolta  <br/> |Selezionare la casella **di controllo Consenti stampa visualizzatori** .  <br/> |
-|Consentire alle persone con almeno l'autorizzazione Visualizza elementi di eseguire codice incorporato o macro in un documento.  <br/> |Selezionare la casella di controllo **Consenti agli utenti di eseguire lo script e il lettore schermo per funzionare nei documenti scaricati** .  <br/> Se si seleziona questa opzione, gli utenti potrebbero eseguire codice per estrarre il contenuto di un documento.           |
-|Selezionare questa opzione se si desidera limitare l'accesso al contenuto a un determinato periodo di tempo. Se si seleziona questa opzione, le licenze di pubblicazione degli utenti per accedere al contenuto scadranno dopo il numero di giorni specificato e gli utenti saranno tenuti a tornare al server per verificare le credenziali e scaricare una nuova copia.  <br/> |Selezionare la casella di controllo **dopo il download, i diritti di accesso ai documenti scadono dopo il numero di giorni (1-365)** e quindi specificare il numero di giorni in cui si desidera visualizzare il documento.  <br/> |
-| Impedire agli utenti di caricare documenti che non supportano IRM nell'elenco o nella raccolta.  <br/>  Se si seleziona questa opzione, gli utenti non saranno in grado di caricare uno dei tipi di file seguenti:  <br/>  I tipi di file che non dispongono di protettori IRM corrispondenti sono installati in tutti i server Web front-end.  <br/>  Tipi di file che SharePoint Server 2010 non è in grado di decrittografare.  <br/>  Tipi di file che sono protetti da IRM in un altro programma  <br/> |Selezionare la casella di controllo non **consentire agli utenti di caricare i documenti che non supportano IRM** .  <br/> |
-|Rimuovere le autorizzazioni limitate dall'elenco o dalla raccolta in base a una data specifica.  <br/> |Selezionare la casella di controllo **Interrompi la limitazione dell'accesso alla raccolta** e quindi selezionare la data desiderata.  <br/> |
-|Controllare l'intervallo di memorizzazione nella cache delle credenziali per il programma concesso in licenza per l'apertura del documento.  <br/> |Selezionare la casella di controllo **intervallo (giorni) per gli utenti devono verificare le credenziali** , quindi immettere l'intervallo per le credenziali di memorizzazione nella cache in numero di giorni.  <br/> |
-|Consenti protezione di gruppo in modo che gli utenti possano condividerli con i membri dello stesso gruppo.  <br/> |Selezionare **Consenti protezione gruppo**e immettere il nome del gruppo per la condivisione.  <br/> |
-   
-8. Dopo aver selezionato le opzioni desiderate, fare clic su **OK**.
+|Consenti agli utenti di stampare documenti da questo elenco o dalla raccolta|Selezionare la casella **di controllo Consenti stampa visualizzatori** .|
+|Consentire alle persone con almeno l'autorizzazione Visualizza elementi di eseguire codice incorporato o macro in un documento.|Selezionare la casella di controllo **Consenti agli utenti di eseguire lo script e il lettore schermo per funzionare nei documenti scaricati** . Se si seleziona questa opzione, gli utenti potrebbero eseguire codice per estrarre il contenuto di un documento.           |
+|Selezionare questa opzione se si desidera limitare l'accesso al contenuto a un determinato periodo di tempo. Se si seleziona questa opzione, le licenze di pubblicazione degli utenti per accedere al contenuto scadranno dopo il numero di giorni specificato e gli utenti saranno tenuti a tornare al server per verificare le credenziali e scaricare una nuova copia.|Selezionare la casella di controllo **dopo il download, i diritti di accesso ai documenti scadono dopo il numero di giorni (1-365)** e quindi specificare il numero di giorni in cui si desidera visualizzare il documento.|
+| Impedire agli utenti di caricare documenti che non supportano IRM nell'elenco o nella raccolta. Se si seleziona questa opzione, gli utenti non saranno in grado di caricare uno dei tipi di file seguenti: tipi di file che non dispongono di protettori IRM corrispondenti installati in tutti i server Web front-end. Tipi di file che SharePoint Server 2010 non è in grado di decrittografare. Tipi di file che sono protetti da IRM in un altro programma.|Selezionare la casella di controllo non **consentire agli utenti di caricare i documenti che non supportano IRM** .|
+|Rimuovere le autorizzazioni limitate dall'elenco o dalla raccolta in base a una data specifica.|Selezionare la casella di controllo **Interrompi la limitazione dell'accesso alla raccolta** e quindi selezionare la data desiderata.|
+|Controllare l'intervallo di memorizzazione nella cache delle credenziali per il programma concesso in licenza per l'apertura del documento.|Selezionare la casella di controllo **intervallo (giorni) per gli utenti devono verificare le credenziali** , quindi immettere l'intervallo per le credenziali di memorizzazione nella cache in numero di giorni.|
+|Consenti protezione di gruppo in modo che gli utenti possano condividerli con i membri dello stesso gruppo.|Selezionare **Consenti protezione gruppo** e immettere il nome del gruppo per la condivisione.|
+
+8. Una volta terminata la selezione delle opzioni desiderate, selezionare **OK**.
   
 ## <a name="what-is-information-rights-management"></a>Che cos'è Information Rights Management?
 <a name="__toc256598175"> </a>
@@ -135,10 +135,10 @@ I tipi di restrizioni applicati a un file quando vengono scaricati da un elenco 
   
 |**Autorizzazioni**|**Autorizzazioni IRM**|
 |:-----|:-----|
-|Gestione delle autorizzazioni, gestione sito Web  <br/> |**Controllo completo** (come definito dal programma client): questa autorizzazione consente in genere a un utente di leggere, modificare, copiare, salvare e modificare le autorizzazioni per il contenuto protetto.  <br/> |
-|Modifica elementi, gestione elenchi, aggiunta e personalizzazione pagine  <br/> |**Modifica**, **copia**e **Salva**: un utente può stampare un file solo se la casella **di controllo Consenti agli utenti di stampare i documenti** è selezionata nella pagina impostazioni di Information Rights Management per l'elenco o la raccolta.  <br/> |
-|Visualizzazione elementi  <br/> |**Lettura**: un utente può leggere il documento, ma non è in grado di copiarlo o modificarne il contenuto. Un utente può stampare solo se la casella **di controllo Consenti agli utenti di stampare i documenti** è selezionata nella pagina delle impostazioni di Information Rights Management per l'elenco o la raccolta.  <br/> |
-|Altro  <br/> |Nessun'altra autorizzazione corrisponde direttamente alle autorizzazioni IRM.  <br/> |
+|Gestione delle autorizzazioni, gestione sito Web|**Controllo completo** (come definito dal programma client): questa autorizzazione consente in genere a un utente di leggere, modificare, copiare, salvare e modificare le autorizzazioni per il contenuto protetto.|
+|Modifica elementi, gestione elenchi, aggiunta e personalizzazione pagine|**Modifica**, **copia** e **Salva**: un utente può stampare un file solo se la casella **di controllo Consenti agli utenti di stampare i documenti** è selezionata nella pagina impostazioni di Information Rights Management per l'elenco o la raccolta.|
+|Visualizzazione elementi|**Lettura**: un utente può leggere il documento, ma non è in grado di copiarlo o modificarne il contenuto. Un utente può stampare solo se la casella **di controllo Consenti agli utenti di stampare i documenti** è selezionata nella pagina delle impostazioni di Information Rights Management per l'elenco o la raccolta.|
+|Altro|Nessun'altra autorizzazione corrisponde direttamente alle autorizzazioni IRM.|
    
 Quando si abilita IRM per un elenco o una raccolta in SharePoint Server 2013, è possibile proteggere solo i tipi di file nell'elenco o nella raccolta di cui è installato un Protector su tutti i server Web front-end. Un Protector è un programma che controlla la crittografia e la decrittografia dei file con diritti gestiti di un formato di file specifico. SharePoint include protettori per i seguenti tipi di file:
   

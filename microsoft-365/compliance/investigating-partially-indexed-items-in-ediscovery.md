@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 1/26/2018
+ms.date: ''
 audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
@@ -17,13 +17,13 @@ search.appverid:
 ms.assetid: 4e8ff113-6361-41e2-915a-6338a7e2a1ed
 ms.custom:
 - seo-marvel-apr2020
-description: Informazioni su come gestire gli elementi parzialmente indicizzati (o non indicizzati) da Exchange, SharePoint e OneDrive for business all'interno dell'organizzazione.
-ms.openlocfilehash: 94dc568aa889e76241ef7bd48e3dedaba9b92f2f
-ms.sourcegitcommit: 1beaf89d2faa32f11fe1613be2fa2b31c4bc4a91
+description: Informazioni su come gestire gli elementi parzialmente indicizzati (denominati anche elementi non indicizzati) da Exchange, SharePoint e OneDrive for business all'interno dell'organizzazione.
+ms.openlocfilehash: 6a2a1d042c52a445538903fd7db9fc54305e6c13
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "49602063"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49655450"
 ---
 # <a name="investigating-partially-indexed-items-in-ediscovery"></a>Analisi degli elementi parzialmente indicizzati in eDiscovery
 
@@ -45,7 +45,7 @@ Dopo aver eseguito una ricerca eDiscovery, il numero totale e la dimensione degl
   
 - Se un elemento è parzialmente indicizzato e corrisponde alla query di ricerca, è incluso sia nel conteggio (sia nelle dimensioni) degli elementi dei risultati di ricerca e degli elementi parzialmente indicizzati. Tuttavia, quando vengono esportati i risultati della stessa ricerca, l'elemento viene incluso solo con un set di risultati di ricerca. non è incluso come elemento parzialmente indicizzato.
 
-- Se si specifica un intervallo di date per una query di ricerca, inclusa nella query di parole chiave o tramite una condizione, qualsiasi elemento parzialmente indicizzato che non corrisponde all'intervallo di date non è incluso nel numero di elementi parzialmente indicizzati. Solo gli elementi parzialmente indicizzati che rientrano nell'intervallo di date sono inclusi nel numero di elementi indicizzati.
+- Se si specifica un intervallo di date per una query di ricerca, inclusa nella query di parole chiave o tramite una condizione, qualsiasi elemento parzialmente indicizzato che non corrisponde all'intervallo di date non è incluso nel numero di elementi parzialmente indicizzati. Gli elementi parzialmente indicizzati che rientrano nell'intervallo di date sono inclusi nel numero di elementi indicizzati.
 
   > [!NOTE]
   > Gli elementi parzialmente indicizzati che si trovano in siti di SharePoint e OneDrive *non sono* inclusi nella stima degli elementi parzialmente indicizzati visualizzati nelle statistiche dettagliate per la ricerca. Tuttavia, gli elementi parzialmente indicizzati possono essere esportati quando si esportano i risultati di una ricerca di eDiscovery. Ad esempio, se si cercano solo i siti, il numero stimato di elementi parzialmente indicizzati sarà zero.

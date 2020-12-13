@@ -2,8 +2,8 @@
 title: Esportare i risultati in Advanced eDiscovery
 f1.keywords:
 - NOCSH
-ms.author: chrfox
-author: chrfox
+ms.author: markjjo
+author: markjjo
 manager: laurawi
 titleSuffix: Office 365
 audience: Admin
@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: a9951a07-10b3-48cb-b37a-0ffaa24931ad
 description: "Informazioni su come definire le opzioni per l'esportazione dei risultati da Advanced eDiscovery, inclusa la procedura per specificare i parametri per un batch di esportazione. "
-ms.openlocfilehash: 252a4a52cc505914b379ea2c0fbfd832ca18deeb
-ms.sourcegitcommit: 8ad481ed61cb6dabf8afb0fb04296666fa166450
+ms.openlocfilehash: 2929b183c7c0f3f132cc40738c18e2b4859a49a6
+ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "49422885"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "49662911"
 ---
 # <a name="export-results-in-advanced-ediscovery-classic"></a>Esportare i risultati in Advanced eDiscovery (Classic)
 

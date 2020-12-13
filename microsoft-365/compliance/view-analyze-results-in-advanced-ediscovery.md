@@ -2,8 +2,8 @@
 title: Visualizzare i risultati dell'analisi in Advanced eDiscovery
 f1.keywords:
 - NOCSH
-ms.author: chrfox
-author: chrfox
+ms.author: markjjo
+author: markjjo
 manager: laurawi
 titleSuffix: Office 365
 ms.date: 9/14/2017
@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 5974f3c2-89fe-4c5f-ac7b-57f214437f7e
 description: Informazioni sul percorso in cui visualizzare i risultati del processo di analisi in Advanced eDiscovery, incluse le definizioni delle opzioni di attività visualizzate.
-ms.openlocfilehash: 24a4b0685ec5dc82aff0b1f0de81080a62e49776
-ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
+ms.openlocfilehash: 64c91cb5929a7a74e53d653faff98d5792d3f131
+ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "44936949"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "49663260"
 ---
 # <a name="view-analyze-results-in-advanced-ediscovery-classic"></a>Visualizzazione analisi dei risultati in Advanced eDiscovery (Classic)
 
@@ -48,7 +48,7 @@ Le attività visualizzate possono variare a seconda delle opzioni selezionate.
     
 - **ND/et: aggiornamento dei metadati**: finalizza i nuovi dati raccolti nei file del database.
     
-- **Temi: calcolo**dei temi: esecuzione dell'analisi dei temi. (Visualizzato solo se selezionato).
+- **Temi: calcolo** dei temi: esecuzione dell'analisi dei temi. (Visualizzato solo se selezionato).
     
 - **Stato attività**: questa riga viene visualizzata dopo il completamento dell'attività. Mentre le attività sono in esecuzione, viene visualizzata la durata di esecuzione.
     
