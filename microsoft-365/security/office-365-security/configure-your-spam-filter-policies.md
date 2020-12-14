@@ -16,12 +16,12 @@ ms.assetid: 316544cb-db1d-4c25-a5b9-c73bbcf53047
 ms.collection:
 - M365-security-compliance
 description: Informazioni per amministratori su come visualizzare, creare, modificare ed eliminare criteri di protezione dalla posta indesiderata in Exchange Online Protection (EOP).
-ms.openlocfilehash: 81c5e74ec45cc633b3a4ba46c7865d0a643af2cd
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.openlocfilehash: d83c41b52db5c0533a9a5d52ab20ace9b612e1e6
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49616693"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49658650"
 ---
 # <a name="configure-anti-spam-policies-in-eop"></a>Configurare criteri di protezione dalla posta indesiderata in EOP
 
@@ -45,7 +45,7 @@ La differenza tra questi due elementi non è ovvia quando si gestiscono criteri 
 - Quando si modifica un criterio di protezione dalla posta indesiderata, le impostazioni relative a nome, priorità, attivazione o disattivazione e filtri destinatari modificano la regola di filtro della posta indesiderata. Tutte le altre impostazioni modificano il criterio di filtro della posta indesiderata associato.
 - Quando si rimuovono il criterio di protezione dalla posta indesiderata, la regola di filtro della posta indesiderata e il criterio di filtro della posta indesiderata vengono rimossi.
 
-In PowerShell di Exchange Online o in EOP PowerShell autonomo i criteri e la regola vengono gestiti separatamente. Per maggiori informazioni, vedere [Usare PowerShell di Exchange Online o EOP di PowerShell autonomo per configurare i criteri di posta indesiderata](#use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-anti-spam-policies) nella sezione successiva in questo argomento.
+In PowerShell di Exchange Online o in EOP PowerShell autonomo i criteri e la regola vengono gestiti separatamente. Per altre informazioni, vedere [Usare PowerShell di Exchange Online o EOP di PowerShell autonomo per configurare i criteri di posta indesiderata](#use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-anti-spam-policies) nella sezione successiva in questo articolo.
 
 Ogni organizzazione ha un criterio incorporato per la posta indesiderata, denominato Predefinito, aventi le seguenti proprietà:
 
@@ -86,7 +86,7 @@ La creazione di un criterio di protezione dalla posta indesiderata nel Centro si
 
    - **Nome**: immettere un nome univoco descrittivo per il criterio. Non usare i caratteri seguenti: `\ % & * + / = ? { } | < > ( ) ; : , [ ] "`.
 
-      Se nell'interfaccia di amministrazione di Exchange in precedenza sono stati creati criteri di protezione dalla posta indesiderata contenenti questi caratteri, è consigliabile rinominare tali criteri in PowerShell. Per le istruzioni, vedere la sezione [Utilizzo di PowerShell per modificare regole di filtro della posta indesiderata](#use-powershell-to-modify-spam-filter-rules) più avanti in questo argomento.
+      Se nell'interfaccia di amministrazione di Exchange in precedenza sono stati creati criteri di protezione dalla posta indesiderata contenenti questi caratteri, è consigliabile rinominare tali criteri in PowerShell. Per le istruzioni, vedere la sezione [Utilizzo di PowerShell per modificare regole di filtro della posta indesiderata](#use-powershell-to-modify-spam-filter-rules) più avanti in questo articolo.
 
    - **Descrizione**: immettere una descrizione opzionale per il criterio.
 
@@ -382,7 +382,7 @@ In PowerShell per Exchange Online o PowerShell di EOP autonomo è evidente la di
 
 Le impostazioni dei criteri contro la posta indesiderata seguenti sono disponibili solo in PowerShell:
 
-- Il parametro _MarkAsSpamBulkMail_ è `On` per impostazione predefinita. Gli effetti di questa impostazione sono illustrati nella sezione precedente [Utilizzare il Centro sicurezza e conformità per creare criteri di protezione dalla posta indesiderata](#use-the-security--compliance-center-to-create-anti-spam-policies) in questo argomento.
+- Il parametro _MarkAsSpamBulkMail_ è `On` per impostazione predefinita. Gli effetti di questa impostazione sono stati illustrati nella sezione precedente [Utilizzare il Centro sicurezza e conformità per creare criteri di protezione dalla posta indesiderata](#use-the-security--compliance-center-to-create-anti-spam-policies) in questo articolo.
 
 - Le impostazioni seguenti per le notifiche di quarantena della posta indesiderata dell'utente finale:
 
@@ -513,7 +513,7 @@ Per informazioni dettagliate su sintassi e parametri, vedere [Get-HostedContentF
 
 ### <a name="use-powershell-to-modify-spam-filter-policies"></a>Utilizzo di PowerShell per modificare criteri di filtro della posta indesiderata
 
-Oltre agli elementi seguenti, le stesse impostazioni sono disponibili quando si modificano i criteri di filtro della posta indesiderata in PowerShell e quando si creano i criteri come descritto nella sezione precedente [Passaggio 1 - Utilizzo di PowerShell per creare criteri di filtro della posta indesiderata](#step-1-use-powershell-to-create-a-spam-filter-policy) in questo argomento.
+Oltre agli elementi seguenti, le stesse impostazioni sono disponibili quando si modificano i criteri di filtro della posta indesiderata in PowerShell e quando si creano i criteri come descritto nella sezione precedente [Passaggio 1 - Utilizzo di PowerShell per creare criteri di filtro della posta indesiderata](#step-1-use-powershell-to-create-a-spam-filter-policy) in questo articolo.
 
 - Il parametro _MakeDefault_ che trasforma il criterio specificato nel criterio predefinito (si applica a tutti gli utenti, sempre priorità **Lowest** e non è possibile eliminarlo) è disponibile solo quando si modifica un criterio di filtro della posta indesiderata in PowerShell.
 
@@ -531,7 +531,7 @@ Per informazioni dettagliate su sintassi e parametri, vedere [Set-HostedContentF
 
 L'unica impostazione non disponibile quando si modifica una regola di filtro della posta indesiderata in PowerShell è il parametro _Enabled_, che consente di creare una regola disabilitata. Per abilitare o disabilitare le regole di filtro della posta indesiderata esistenti, vedere la sezione successiva.
 
-In caso contrario, non saranno disponibili altre impostazioni quando si modifica una regola di filtro della posta indesiderata in PowerShell. Le stesse impostazioni sono disponibili quando si crea una regola come descritto nella sezione precedente [Passaggio 2 - Utilizzo di PowerShell per creare una regola di filtro della posta indesiderata](#step-2-use-powershell-to-create-a-spam-filter-rule) in questo argomento.
+In caso contrario, non saranno disponibili altre impostazioni quando si modifica una regola di filtro della posta indesiderata in PowerShell. Le stesse impostazioni sono disponibili quando si crea una regola come descritto nella sezione precedente [Passaggio 2 - Utilizzo di PowerShell per creare una regola di filtro della posta indesiderata](#step-2-use-powershell-to-create-a-spam-filter-rule) in questo articolo.
 
 Per modificare una regola di filtro della posta indesiderata, utilizzare questa sintassi:
 

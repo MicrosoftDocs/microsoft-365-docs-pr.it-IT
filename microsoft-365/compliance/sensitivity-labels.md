@@ -22,12 +22,12 @@ description: Usare le etichette di riservatezza di Microsoft Information Protect
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: c012b422e5c1452bf6ccd58e0743509a2cf07f32
-ms.sourcegitcommit: 21b0ea5715e20b4ab13719eb18c97fadb49b563d
+ms.openlocfilehash: 61bb7afedbbafb1272c3dfdbbecd0ede9777effe
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 12/11/2020
-ms.locfileid: "49624788"
+ms.locfileid: "49655578"
 ---
 # <a name="learn-about-sensitivity-labels"></a>Informazioni sulle etichette di riservatezza
 
@@ -109,11 +109,11 @@ Quando si applica un'etichetta di riservatezza a un messaggio di posta elettroni
     
     Non è possibile configurare le impostazioni di protezione per i gruppi e i siti finché non si abilita questa funzionalità. La configurazione dell’etichetta non comporta l’applicazione automatica delle etichette a documenti o messaggi di posta elettronica, ma le impostazioni dell’etichetta proteggono il contenuto tramite il controllo dell'accesso al contenitore in cui si archivia tale contenuto. Queste impostazioni includono le impostazioni di privacy, l'accesso utente esterno, la condivisione esterna e l’accesso da dispositivi non gestiti.
 
-- **Applicare l'etichetta automaticamente nelle app di Office o consigliare un'etichetta.** È possibile scegliere i tipi di informazioni riservate che si desidera etichettare e l'etichetta può essere applicata automaticamente oppure richiedere agli utenti di applicare l'etichetta consigliata. Se si consiglia un'etichetta, viene visualizzato il messaggio che si sceglie. Ad esempio:
+- **Applicare l'etichetta automaticamente ai file e ai messaggi di posta elettronica o consigliare un'etichetta.** Scegliere come identificare i tipi di informazioni sensibili che si desidera etichettare e l'etichetta può essere applicata automaticamente oppure richiedere agli utenti di applicare l'etichetta consigliata. Se si consiglia un'etichetta, viene visualizzato il messaggio che si sceglie. Ad esempio:
     
     ![Messaggio in cui si richiede di assegnare un'etichetta obbligatoria](../media/Sensitivity-label-Prompt-for-required-label.png)
     
-    Per altre informazioni sull'**applicazione automatica di etichette per le app di Office**, vedere [Applicare automaticamente un'etichetta di riservatezza al contenuto](apply-sensitivity-label-automatically.md).
+    Per altre informazioni sulle impostazioni di **applicazione automatica di etichette ai file e ai messaggi di posta elettronica** quando si crea o modifica un’etichetta di riservatezza, vedere [Applicare automaticamente un'etichetta di riservatezza al contenuto](apply-sensitivity-label-automatically.md) per le app Office e [Etichettare automaticamente i file in Azure Purview](https://docs.microsoft.com/azure/purview/create-sensitivity-label).
 
 ### <a name="label-scopes"></a>Ambiti di etichetta
 
@@ -274,4 +274,3 @@ Sono anche disponibili informazioni sulle [soluzioni dei partner integrate con M
 ## <a name="deployment-guidance"></a>Guida alla distribuzione
 
 Per la pianificazione della distribuzione e linee guida che includono informazioni sulla licenza, autorizzazioni, strategia di distribuzione, un elenco di scenari supportati e la documentazione per l'utente finale, vedere [Introduzione alle etichette di riservatezza](get-started-with-sensitivity-labels.md).
-

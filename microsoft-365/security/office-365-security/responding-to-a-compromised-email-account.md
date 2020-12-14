@@ -19,12 +19,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: Informazioni su come riconoscere e rispondere a un account di posta elettronica compromesso usando gli strumenti disponibili in Microsoft 365.
-ms.openlocfilehash: 2830fd10b633e094c92fd98fe61ce678a4da842b
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 5d5e5360e9851aee8eab27fc7c39e266e0332411
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48200121"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49659886"
 ---
 # <a name="responding-to-a-compromised-email-account"></a>Rispondere a un account di posta elettronica compromesso
 
@@ -46,7 +46,7 @@ Gli utenti potrebbero notare e segnalare attività insolite nelle proprie casset
 
 - Altri utenti potrebbero ricevere messaggi di posta elettronica dall'account compromesso senza che sia presente il messaggio di posta elettronica corrispondente nella cartella **Posta inviata** del mittente.
 
-- La presenza di regole posta in arrivo che non sono state create dal proprietario o dall'amministratore. Queste regole possono inoltrare messaggi di posta elettronica a indirizzi sconosciuti o spostarli automaticamente nelle cartelle di**Note**, **Posta indesiderata**, o **Sottoscrizioni RSS**.
+- La presenza di regole posta in arrivo che non sono state create dal proprietario o dall'amministratore. Queste regole possono inoltrare messaggi di posta elettronica a indirizzi sconosciuti o spostarli automaticamente nelle cartelle di **Note**, **Posta indesiderata**, o **Sottoscrizioni RSS**.
 
 - Il nome visualizzato dell'utente può essere modificato nell'elenco indirizzi globale.
 
@@ -142,7 +142,7 @@ Per sbloccare l’invio di posta elettronica da una cassetta postale, seguire le
 
 5. Individua e seleziona l'utente. Nel riquadro dei dettagli eseguire le operazioni seguenti:
 
-   - Nella sezione**Funzionalità telefoniche e vocali**, effettua le seguenti operazioni:
+   - Nella sezione **Funzionalità telefoniche e vocali**, effettua le seguenti operazioni:
 
      - Seleziona **Disabilita Exchange ActiveSync**, fai clic su **Sì** nell'avviso visualizzato.
      - Seleziona **OWA per dispositivi**, fai clic su **Sì** nell'avviso visualizzato.
@@ -168,7 +168,7 @@ Per sbloccare l’invio di posta elettronica da una cassetta postale, seguire le
 
    a. Fai clic su **modifica** accanto a **membri**.
    b. Nel riquadro a comparsa **modifica selezionare membri** visualizzato e fai clic su **modifica**.
-   c. Nel riquadro a comparsa visualizzato **Scegli membri**, seleziona l'account utente, e fai clic su **Rimuovi**. Al termine, faI clic su **Completato**, **Salva**e **Chiudi**.
+   c. Nel riquadro a comparsa visualizzato **Scegli membri**, seleziona l'account utente, e fai clic su **Rimuovi**. Al termine, faI clic su **Completato**, **Salva** e **Chiudi**.
 
 4. Nell’interfaccia di amministrazione di Exchange in <admin.protection.outlook.com/ecp/>, esegui i passaggi seguenti:
 
