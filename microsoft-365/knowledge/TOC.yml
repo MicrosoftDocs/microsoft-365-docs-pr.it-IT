@@ -8,9 +8,19 @@
       href: work-with-topics.md
     - name: Assegnare agli utenti le autorizzazioni per il centro argomenti
       href: give-user-permissions-to-the-topic-center.md
-- name: Introduzione all'installazione
+- name: Installazione e amministrazione
   items:
-    - name: Configurare la gestione delle informazioni
+    - name: Sicurezza degli argomenti
+      href: topic-experiences-security-privacy.md
+    - name: Pianificare le esperienze sugli argomenti
+      href: plan-topic-experiences.md
+    - name: Configurare le esperienze degli argomenti
       href: set-up-topic-experiences.md
-    - name: Gestire la rete di gestione delle informazioni
+    - name: Gestione dell'individuazione degli argomenti
       href: topic-experiences-discovery.md
+    - name: Gestione della visibilità degli argomenti
+      href: topic-experiences-knowledge-rules.md
+    - name: Gestire le autorizzazioni per gli argomenti
+      href: topic-experiences-user-permissions.md
+    - name: Modificare l'argomento nome centro
+      href: topic-experiences-administration.md
