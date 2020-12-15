@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Informazioni su come configurare i criteri di prevenzione della perdita dei dati (DLP) per usare le posizioni di Prevenzione della perdita di dati degli endpoint di Microsoft 365.
-ms.openlocfilehash: 0a6883bd785141af6f198f0cd871c11794618e27
-ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
+ms.openlocfilehash: 531fd5506aeb255e261c3cce35473f1ddad2aa42
+ms.sourcegitcommit: 1a9f0f878c045e1ddd59088ca2a94397605a242a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49561683"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "49667811"
 ---
 # <a name="using-endpoint-data-loss-prevention"></a>Uso della prevenzione della perdita di dati degli endpoint
 
@@ -86,15 +86,8 @@ Se la modalità elenco è impostata su **Consenti**, gli utenti possono caricare
 
 È possibile aggiungere browser, identificati dai nomi eseguibili, a cui verrà impedito di accedere ai file che corrispondono alle condizioni di un criterio DLP applicato in cui la restrizione relativa al caricamento nei servizi cloud è impostata su Blocca o Blocca con override. Quando a tali browser viene impedito di accedere a un file, gli utenti finali visualizzeranno un avviso popup con la richiesta di aprire il file con Microsoft Edge Chromium.
 
-### <a name="always-audit-file-activity-from-onboarded-devices"></a>Controllare sempre l'attività dei file di controllo dai dispositivi di cui è stato eseguito l’onboarding
 
-Controllare se l'attività di prevenzione della perdita dei dati per i file Office, PDF e CSV è verificata automaticamente e disponibile per la revisione nella telemetria di controllo e in Esplora attività dai dispositivi di cui è stato eseguito l’onboarding. 
-
-Se tale impostazione è attivata (impostazione predefinita), le attività dei file sono sempre verificate per i dispositivi di cui è stato eseguito l’onboarding, indipendentemente dal fatto che siano o meno inclusi in un criterio di prevenzione della perdita dei dati.
-Se l’impostazione è disattivata, le attività dei file sono verificate per i dispositivi di cui è stato eseguito l’onboarding solo quando sono inclusi in un criterio attivo di prevenzione della perdita dei dati. 
-
-
-## <a name="tying-dlp-settings-together"></a>Collegamento delle impostazioni DLP
+## <a name="tying-dlp-settings-together"></a>Unione di impostazioni DLP
 
 Con Endpoint DLP e il Web browser Microsoft Edge Chromium, è possibile limitare la condivisione involontaria di elementi sensibili con app e i servizi cloud non consentiti. Microsoft Edge Chromium riconosce quando un elemento è limitato da un criterio di Endpoint DLP e impone restrizioni di accesso.
 
