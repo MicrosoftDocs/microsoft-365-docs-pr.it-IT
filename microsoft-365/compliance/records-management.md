@@ -44,9 +44,9 @@ Usa le funzionalità seguenti per supportare la soluzione di gestione dei record
 
 - **Avviare periodi di conservazione diversi quando si verifica un evento** con la [conservazione basata su eventi](event-driven-retention.md).
 
-- **Rivedere e convalidare l'eliminazione** con la [revisione per l'eliminazione](disposition.md#disposition-reviews) e la prova dell' [eliminazione dei record](disposition.md#disposition-of-records).
+- **Rivedere e convalidare l'eliminazione** con la [revisione per l'eliminazione](disposition.md#disposition-reviews) e la prova dell'[eliminazione dei record](disposition.md#disposition-of-records).
 
-- **Esportare le informazioni riguardanti tutti gli elementi eliminati** con l' [opzione di esportazione](disposition.md#filter-and-export-the-views).
+- **Esportare le informazioni riguardanti tutti gli elementi eliminati** con l'[opzione di esportazione](disposition.md#filter-and-export-the-views).
 
 - **Impostare autorizzazioni specifiche** per le funzioni di gestione dei record nell'organizzazione per [avere l’accesso corretto](../security/office-365-security/permissions-in-the-security-and-compliance-center.md).
 

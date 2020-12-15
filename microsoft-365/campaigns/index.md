@@ -60,7 +60,7 @@ La raccolta include i seguenti elementi:
 
 Per altre informazioni sul contenuto incluso, vedere [Microsoft 365 Business Premium](https://www.microsoft.com/microsoft-365/business).
 
-<a name="get-started"></a>Informazioni di base
+<a name="get-started"></a>Per iniziare
 --------------------------
 
 Seguire questi passaggi per iniziare:
@@ -82,10 +82,10 @@ Dopo aver configurato l'ambiente Microsoft 365, è possibile usare le soluzioni 
 | Crittografare o etichettare le comunicazioni di posta elettronica sensibili | Creare un sito di comunicazione |
 | ------------- | ------------- |
 | ![Messaggi crittografati e con etichetta](../media/sm-m365-campaign-email-encrypt.png) | ![un sito di comunicazione di SharePoint](../media/sm-m365-democracy-comms-site.png) |
-| Usare le etichette di crittografia e riservatezza per proteggere i messaggi che contengono informazioni riservate o sensibili. [Inviare messaggi di posta elettronica crittografati](send-encrypted-email.md) | Condividere eventi, messaggi, immagini e altro con il team in un sito di comunicazione interno creato con SharePoint. [Creare il sito](create-communications-site.md) |
+| Usare le etichette di crittografia e riservatezza per proteggere i messaggi che contengono informazioni riservate o sensibili. [Inviare messaggi di posta elettronica crittografati](send-encrypted-email.md) | Condividere eventi, messaggi, immagini e altro con il team in un sito di comunicazioni interno creato con SharePoint. [Creare il sito](create-communications-site.md) |
 
 | Condividere file e video |
 | ------------- |
 | ![condivisione di un file in Microsoft Teams](../media/m365-democracy-teams-sharefiles.png) |
-| È possibile salvare i file e i video nel cloud, in modo che siano disponibili a tutte <br><br>le persone autorizzate. [Inizia a condividere](share-files-and-videos.md) |
+| È possibile salvare i file e i video nel cloud, in modo che siano disponibili a tutte <br><br>le persone autorizzate. [Iniziare a condividere](share-files-and-videos.md) |
 
