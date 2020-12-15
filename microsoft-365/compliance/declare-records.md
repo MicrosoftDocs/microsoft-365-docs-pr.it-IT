@@ -37,7 +37,7 @@ In seguito è possibile pubblicare tali etichetta in un criterio per le etichett
 ## <a name="how-to-display-the-option-to-mark-content-as-a-regulatory-record"></a>Come visualizzare l'opzione per contrassegnare i contenuti come record normativi
 
 >[!NOTE] 
-> Questa procedura è un'azione controllabile, che registra l' **Opzione dei record normativi abilitata per le etichette di conservazione** nella sezione [Criteri di conservazione e attività delle etichette di conservazione](search-the-audit-log-in-security-and-compliance.md#retention-policy-and-retention-label-activities) del log di controllo.
+> Questa procedura è un'azione controllabile, che registra l'**Opzione dei record normativi abilitata per le etichette di conservazione** nella sezione [Criteri di conservazione e attività delle etichette di conservazione](search-the-audit-log-in-security-and-compliance.md#retention-policy-and-retention-label-activities) del log di controllo.
 
 Per impostazione predefinita, l'opzione dell'etichetta di conservazione per contrassegnare i contenuti come record normativi non è mostrata nella procedura guidata dell'etichetta di conservazione. Per visualizzare questa opzione, è prima necessario eseguire un comando di PowerShell:
 
@@ -50,7 +50,7 @@ Per impostazione predefinita, l'opzione dell'etichetta di conservazione per cont
     ````
     Non viene richiesta la conferma, e l'impostazione ha effetto immediato.
 
-Se si cambia idea in merito alla configurazione di questa opzione nella procedura di creazione dell'etichetta di conservazione, la si può nascondere eseguendo lo stesso cmdlet con il valore **false** : `Set-RegulatoryComplianceUI -Enabled $false` 
+Se si cambia idea in merito alla configurazione di questa opzione nella procedura di creazione dell'etichetta di conservazione, la si può nascondere eseguendo lo stesso cmdlet con il valore **false**: `Set-RegulatoryComplianceUI -Enabled $false` 
 
 ## <a name="configuring-retention-labels-to-declare-records"></a>Configurare le etichette di conservazione per dichiarare i record
 

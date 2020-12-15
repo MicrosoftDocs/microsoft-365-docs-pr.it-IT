@@ -117,11 +117,11 @@ Questo non è il caso delle etichette di conservazione se il contenuto non è so
 
 ## <a name="when-a-user-leaves-the-organization"></a>Quando un utente abbandona l’organizzazione
 
-**SharePoint** :
+**SharePoint**:
 
 Se un utente abbandona l'organizzazione, tutti i contenuti creati da quest'ultimo non subiranno alcuna modifica in quanto SharePoint è considerato un ambiente di collaborazione, al contrario di una cassetta postale o di un account OneDrive dell'utente.
 
-**OneDrive** :
+**OneDrive**:
 
 Se un utente abbandona l'organizzazione, i file soggetti a un criterio di conservazione o con etichette di conservazione verranno mantenuti per l'intera durata dell'etichetta o del criterio. Durante questo periodo di tempo, tutti gli accessi di condivisione continueranno a funzionare. Quando il periodo di conservazione scade, il contenuto viene spostato nel Cestino della raccolta siti e solo gli amministratori possono accedervi. Se un documento viene contrassegnato come record da un’etichetta di conservazione, il documento viene mantenuto fino allo scadere del periodo di conservazione, al termine del quale il contenuto verrà eliminato definitivamente.
 
