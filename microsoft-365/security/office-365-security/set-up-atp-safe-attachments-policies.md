@@ -17,19 +17,19 @@ ms.collection:
 - M365-security-compliance
 description: Informazioni su come definire i criteri per gli allegati sicuri per proteggere l'organizzazione da file dannosi tramite posta elettronica.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a14f5a22795fc08b76165466d8e44ee38d8a2d81
-ms.sourcegitcommit: d81c7cea85af6ad5fef81d3c930514a51464368c
+ms.openlocfilehash: 9105e7ed9e9bc376b3d86cd846d8c1d6eae8deea
+ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "49572640"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "49682914"
 ---
 # <a name="set-up-safe-attachments-policies-in-microsoft-defender-for-office-365"></a>Configurare i criteri per gli allegati sicuri in Microsoft Defender per Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 > [!IMPORTANT]
-> Questo articolo è destinato ai clienti aziendali che dispongono di [Microsoft Defender per Office 365](office-365-atp.md). Se si è un utente di casa che cerca informazioni sull'analisi degli allegati in Outlook, vedere [Advanced Outlook.com Security](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2).
+> Questo articolo è rivolto ai clienti aziendali di [Microsoft Defender per Office 365](office-365-atp.md). Se si è un utente di casa che cerca informazioni sull'analisi degli allegati in Outlook, vedere [Advanced Outlook.com Security](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2).
 
 Allegati sicuri è una funzionalità di [Microsoft Defender per Office 365](office-365-atp.md) che utilizza un ambiente virtuale per controllare gli allegati nei messaggi di posta elettronica in ingresso dopo che sono stati analizzati dalla [protezione antimalware in Exchange Online Protection (EOP)](anti-malware-protection.md), ma prima del recapito ai destinatari. Per ulteriori informazioni, vedere [allegati sicuri in Microsoft Defender per Office 365](atp-safe-attachments.md).
 
@@ -53,13 +53,13 @@ In PowerShell di Exchange Online o in EOP PowerShell autonomo i criteri e la reg
 > [!NOTE]
 > Nell'area impostazioni globali delle impostazioni degli allegati sicuri, è possibile configurare le funzionalità che non dipendono dai criteri degli allegati sicuri. Per le istruzioni [, vedere Abilitare ATP per SharePoint, OneDrive e Microsoft teams](turn-on-atp-for-spo-odb-and-teams.md) e [documenti attendibili in Microsoft 365 E5](safe-docs.md).
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare
+## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare?
 
 - Aprire il Centro sicurezza e conformità in <https://protection.office.com/>. Per passare direttamente alla pagina **allegati sicuri** , utilizzare <https://protection.office.com/safeattachmentv2> .
 
 - Per informazioni su come connettersi a PowerShell per Exchange Online, vedere [Connettersi a PowerShell per Exchange Online](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell). Per connettersi a PowerShell di EOP autonomo, vedere [Connettersi a PowerShell per Exchange Online Protection](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
-- Prima di poter eseguire le procedure descritte in questo articolo, è necessario disporre delle autorizzazioni per il Centro sicurezza & Compliance:
+- Per poter eseguire le procedure contenute in questo articolo è necessario disporre delle autorizzazioni appropriate nel Centro sicurezza e conformità:
   - Per creare, modificare ed eliminare i criteri per gli allegati sicuri, è necessario essere membri dei gruppi di ruoli **Gestione organizzazione** o **amministratore sicurezza** .
   - Per l'accesso in sola lettura ai criteri allegati sicuri, è necessario essere membri dei gruppi di ruoli **lettore globale** o lettore di **sicurezza** .
 
@@ -67,8 +67,8 @@ In PowerShell di Exchange Online o in EOP PowerShell autonomo i criteri e la reg
 
   **Note**:
 
-  - L'aggiunta di utenti al ruolo di Azure Active Directory corrispondente nell'interfaccia di amministrazione di Microsoft 365 fornisce agli utenti le autorizzazioni necessarie per il Centro sicurezza & Compliance _e_ le autorizzazioni per altre funzionalità di Microsoft 365. Per altre informazioni, vedere [Informazioni sui ruoli di amministratore](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
-  - Il gruppo di ruoli di **gestione dell'organizzazione di sola visualizzazione** in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) fornisce anche l'accesso in sola lettura alla funzionalità.
+  - L'aggiunta di utenti al ruolo di Azure Active Directory corrispondente nell'interfaccia di amministrazione di Microsoft 365 fornisce agli utenti le autorizzazioni necessarie nel centro Sicurezza e conformità _e_ le autorizzazioni per altre funzionalità di Microsoft 365. Per altre informazioni, vedere [Informazioni sui ruoli di amministratore](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
+  - Anche il gruppo di ruoli di **Gestione organizzazione sola visualizzazione** in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) offre inoltre l'accesso di sola lettura a tale funzionalità.
 
 - Per le impostazioni consigliate per i criteri per gli allegati sicuri, vedere [Safe Attachments Settings](recommended-settings-for-eop-and-office365-atp.md#safe-attachments-settings).
 
@@ -78,7 +78,7 @@ In PowerShell di Exchange Online o in EOP PowerShell autonomo i criteri e la reg
 
 La creazione di un criterio di allegati sicuri personalizzato nel centro sicurezza & conformità crea la regola per gli allegati sicuri e il criterio degli allegati sicuri associato contemporaneamente utilizzando lo stesso nome per entrambi.
 
-1. Nel centro sicurezza & conformità, accedere a criteri di **gestione delle minacce** per gli \> **Policy** \> **allegati sicuri ATP**.
+1. Nel centro sicurezza & conformità, accedere a criteri di **gestione delle minacce** per gli \>  \> **allegati sicuri ATP**.
 
 2. Nella pagina **allegati sicuri** fare clic su **Crea**.
 
@@ -140,7 +140,7 @@ La creazione di un criterio di allegati sicuri personalizzato nel centro sicurez
 
 ## <a name="use-the-security--compliance-center-to-view-safe-attachments-policies"></a>Utilizzare il Centro sicurezza & conformità per visualizzare i criteri degli allegati sicuri
 
-1. Nel centro sicurezza & conformità, accedere a criteri di **gestione delle minacce** per gli \> **Policy** \> **allegati sicuri ATP**.
+1. Nel centro sicurezza & conformità, accedere a criteri di **gestione delle minacce** per gli \>  \> **allegati sicuri ATP**.
 
 2. Nella pagina **allegati sicuri** selezionare un criterio dall'elenco e fare clic su di esso (non selezionare la casella di controllo).
 
@@ -148,7 +148,7 @@ La creazione di un criterio di allegati sicuri personalizzato nel centro sicurez
 
 ## <a name="use-the-security--compliance-center-to-modify-safe-attachments-policies"></a>Utilizzare il Centro sicurezza & conformità per modificare i criteri degli allegati sicuri
 
-1. Nel centro sicurezza & conformità, accedere a criteri di **gestione delle minacce** per gli \> **Policy** \> **allegati sicuri ATP**.
+1. Nel centro sicurezza & conformità, accedere a criteri di **gestione delle minacce** per gli \>  \> **allegati sicuri ATP**.
 
 2. Nella pagina **allegati sicuri** selezionare un criterio dall'elenco e fare clic su di esso (non selezionare la casella di controllo).
 
@@ -160,13 +160,13 @@ Per abilitare o disabilitare un criterio o impostare l'ordine di priorità dei c
 
 ### <a name="enable-or-disable-safe-attachments-policies"></a>Abilitare o disabilitare i criteri per gli allegati sicuri
 
-1. Nel centro sicurezza & conformità, accedere a criteri di **gestione delle minacce** per gli \> **Policy** \> **allegati sicuri ATP**.
+1. Nel centro sicurezza & conformità, accedere a criteri di **gestione delle minacce** per gli \>  \> **allegati sicuri ATP**.
 
 2. Si noti il valore nella colonna **stato** :
 
    - Sposta l'interruttore verso sinistra ![Disattiva criterio](../../media/scc-toggle-off.png) per disabilitare il criterio.
 
-   - Spostare l'interruttore verso destra ![Attiva il criterio](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png) per abilitare il criterio.
+   - Spostare l'interruttore verso destra ![Attiva il criterio](../../media/scc-toggle-on.png) per abilitare il criterio.
 
 ### <a name="set-the-priority-of-safe-attachments-policies"></a>Impostare la priorità dei criteri per gli allegati sicuri
 
@@ -180,7 +180,7 @@ I criteri allegati sicuri vengono visualizzati nell'ordine in cui sono stati ela
 
 Per modificare la priorità di un criterio, spostare il criterio più in alto o più in basso nell'elenco (non è possibile modificare direttamente il numero **Priority** nel Centro sicurezza e conformità).
 
-1. Nel centro sicurezza & conformità, accedere a criteri di **gestione delle minacce** per gli \> **Policy** \> **allegati sicuri ATP**.
+1. Nel centro sicurezza & conformità, accedere a criteri di **gestione delle minacce** per gli \>  \> **allegati sicuri ATP**.
 
 2. Nella pagina **allegati sicuri** selezionare un criterio dall'elenco e fare clic su di esso (non selezionare la casella di controllo).
 
@@ -198,7 +198,7 @@ Per modificare la priorità di un criterio, spostare il criterio più in alto o 
 
 ## <a name="use-the-security--compliance-center-to-remove-safe-attachments-policies"></a>Utilizzare il Centro sicurezza & conformità per rimuovere i criteri allegati sicuri
 
-1. Nel centro sicurezza & conformità, accedere a criteri di **gestione delle minacce** per gli \> **Policy** \> **allegati sicuri ATP**.
+1. Nel centro sicurezza & conformità, accedere a criteri di **gestione delle minacce** per gli \>  \> **allegati sicuri ATP**.
 
 2. Nella pagina **allegati sicuri** selezionare un criterio dall'elenco e fare clic su di esso (non selezionare la casella di controllo).
 
@@ -438,7 +438,7 @@ Per informazioni dettagliate sulla sintassi e sui parametri, vedere [Remove-Safe
 
 Per verificare che i criteri allegati sicuri siano stati creati, modificati o rimossi correttamente, eseguire una delle operazioni seguenti:
 
-- Nel centro sicurezza & conformità, accedere a criteri di **gestione delle minacce** per gli \> **Policy** \> **allegati sicuri ATP**. Verificare l'elenco dei criteri, i relativi valori di **stato** e i relativi valori di **priorità** . Per visualizzare ulteriori dettagli, selezionare il criterio dall'elenco e visualizzare i dettagli all'interno del volo.
+- Nel centro sicurezza & conformità, accedere a criteri di **gestione delle minacce** per gli \>  \> **allegati sicuri ATP**. Verificare l'elenco dei criteri, i relativi valori di **stato** e i relativi valori di **priorità** . Per visualizzare ulteriori dettagli, selezionare il criterio dall'elenco e visualizzare i dettagli all'interno del volo.
 
 - In Exchange Online PowerShell o Exchange Online Protection PowerShell, sostituire \<Name\> con il nome del criterio o della regola, eseguire il comando riportato di seguito e verificare le impostazioni:
 

@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: 5b9a067b-9d2e-4aa5-bb33-99d8c0d0b5d7
 description: Assegnare le autorizzazioni necessarie per eseguire le attività relative a eDiscovery utilizzando il Centro sicurezza & Compliance.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f81ac5a87fad99689f7cfa36c044d3de765f4520
-ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
+ms.openlocfilehash: f4271d7cc7a9c9239aadb8ca2357e000f4f45e80
+ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48920310"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "49682607"
 ---
 # <a name="assign-ediscovery-permissions-in-the-security--compliance-center"></a>Assegnare le autorizzazioni di eDiscovery nel centro sicurezza & Compliance
 
@@ -58,13 +58,13 @@ Il gruppo di ruoli principale di eDiscovery nel centro sicurezza & conformità �
   
 2. Accedere usando l'account di lavoro o della scuola.
   
-3. Nel riquadro sinistro del Centro sicurezza e conformità, selezionare **autorizzazioni** , quindi selezionare la casella di controllo accanto a **eDiscovery Manager**.
+3. Nel riquadro sinistro del Centro sicurezza e conformità, selezionare **autorizzazioni**, quindi selezionare la casella di controllo accanto a **eDiscovery Manager**.
   
 4. Nella pagina riquadro a comparsa di **eDiscovery Manager** , eseguire una delle operazioni seguenti in base alle autorizzazioni di eDiscovery che si desidera assegnare.
   
-    **Per rendere un utente un responsabile di eDiscovery:** Accanto a **eDiscovery Manager** , selezionare **modifica**. Nella sezione **Choose eDiscovery Manager** selezionare il collegamento ipertestuale **eDiscovery Manager** e quindi fare clic su Aggiungi ![ icona ](../media/ITPro-EAC-AddIcon.gif) **Aggiungi**. Selezionare l'utente (o gli utenti) che si desidera aggiungere come Manager di eDiscovery e quindi fare clic su **Aggiungi**. Dopo aver aggiunto gli utenti, fare clic su **fine**. Quindi, nella pagina **modifica scegliere** il riquadro a comparsa di eDiscovery Manager selezionare **Salva** per salvare le modifiche apportate all'appartenenza di eDiscovery Manager.
+    **Per rendere un utente un responsabile di eDiscovery:** Accanto a **eDiscovery Manager**, selezionare **modifica**. Nella sezione **Choose eDiscovery Manager** selezionare il collegamento ipertestuale **eDiscovery Manager** e quindi fare clic su Aggiungi ![ icona ](../media/ITPro-EAC-AddIcon.gif) **Aggiungi**. Selezionare l'utente (o gli utenti) che si desidera aggiungere come Manager di eDiscovery e quindi fare clic su **Aggiungi**. Dopo aver aggiunto gli utenti, fare clic su **fine**. Quindi, nella pagina **modifica scegliere** il riquadro a comparsa di eDiscovery Manager selezionare **Salva** per salvare le modifiche apportate all'appartenenza di eDiscovery Manager.
   
-    **Per rendere un utente un amministratore di eDiscovery:** Accanto a **eDiscovery Manager** , selezionare **modifica**. Nella sezione **selezione amministratore di eDiscovery** , in **eDiscovery Administrators** , selezionare **Choose eDiscovery Administrator** , Select **Edit** e quindi ![ Add Icon ](../media/ITPro-EAC-AddIcon.gif) **Add**. Selezionare l'utente (o gli utenti) che si desidera aggiungere come **amministratore di eDiscovery** e quindi  **aggiungere**. Dopo aver aggiunto gli utenti, fare clic su **fine**. Quindi, nella pagina **modifica scegliere** il riquadro a comparsa di amministratore di eDiscovery, selezionare **Salva** per salvare le modifiche apportate all'appartenenza all'amministratore di eDiscovery.
+    **Per rendere un utente un amministratore di eDiscovery:** Accanto a **eDiscovery Manager**, selezionare **modifica**. Nella sezione **selezione amministratore di eDiscovery** , in **eDiscovery Administrators**, selezionare **Choose eDiscovery Administrator**, Select **Edit** e quindi ![ Add Icon ](../media/ITPro-EAC-AddIcon.gif) **Add**. Selezionare l'utente (o gli utenti) che si desidera aggiungere come **amministratore di eDiscovery** e quindi  **aggiungere**. Dopo aver aggiunto gli utenti, fare clic su **fine**. Quindi, nella pagina **modifica scegliere** il riquadro a comparsa di amministratore di eDiscovery, selezionare **Salva** per salvare le modifiche apportate all'appartenenza all'amministratore di eDiscovery.
   
 > [!NOTE]
 > È inoltre possibile utilizzare il cmdlet **Add-eDiscoveryCaseAdmin** per rendere un utente un amministratore di eDiscovery. Tuttavia, all'utente deve essere assegnato il ruolo di gestione dei casi prima che sia possibile utilizzare questo cmdlet per renderli un amministratore di eDiscovery. Per ulteriori informazioni, vedere [Add-eDiscoveryCaseAdmin](https://go.microsoft.com/fwlink/p/?LinkID=798217). 
@@ -77,16 +77,16 @@ Nella tabella seguente sono elencati i ruoli RBAC relativi a eDiscovery nel cent
   
 |**Ruolo**|**Amministratore di conformità**|**Amministratore & di eDiscovery Manager**|**Gestione organizzazione**|**Reviewer**|
 |:-----|:-----:|:-----:|:-----:|:-----:|
-|Gestione dei casi <br/> |![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> |
-|Comunicazione <br/> | <br/> |![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> | <br/> |
-|Ricerca di conformità <br/> |![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> |
-|Custode <br/> | <br/> |![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> | <br/> |
-|Esporta <br/> | <br/> |![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> | <br/> |
-|Hold <br/>  |![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> |
-|Anteprima <br/>  | <br/> |![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> | <br/> |
-|Revisione <br/>  | <br/> |![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> |![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |
-|Decrittografia RMS <br/>  ||![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |||
-|Ricerca ed eliminazione <br/> | <br/> | <br/> |![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> | <br/> |
+|Gestione dei casi <br/> |![Segno di spunta](../media/checkmark.png) <br/> |![Segno di spunta](../media/checkmark.png) <br/> |![Segno di spunta](../media/checkmark.png) <br/> | <br/> |
+|Comunicazione <br/> | <br/> |![Segno di spunta](../media/checkmark.png) <br/> | <br/> | <br/> |
+|Ricerca di conformità <br/> |![Segno di spunta](../media/checkmark.png) <br/> |![Segno di spunta](../media/checkmark.png) <br/> |![Segno di spunta](../media/checkmark.png) <br/> | <br/> |
+|Custode <br/> | <br/> |![Segno di spunta](../media/checkmark.png) <br/> | <br/> | <br/> |
+|Esportazione <br/> | <br/> |![Segno di spunta](../media/checkmark.png) <br/> | <br/> | <br/> |
+|Hold <br/>  |![Segno di spunta](../media/checkmark.png) <br/> |![Segno di spunta](../media/checkmark.png) <br/> |![Segno di spunta](../media/checkmark.png) <br/> | <br/> |
+|Anteprima <br/>  | <br/> |![Segno di spunta](../media/checkmark.png) <br/> | <br/> | <br/> |
+|Revisione <br/>  | <br/> |![Segno di spunta](../media/checkmark.png) <br/> | <br/> |![Segno di spunta](../media/checkmark.png) <br/> |
+|Decrittografia RMS <br/>  ||![Segno di spunta](../media/checkmark.png) <br/> |||
+|Ricerca ed eliminazione <br/> | <br/> | <br/> |![Segno di spunta](../media/checkmark.png)           <br/> | <br/> |
 ||||
   
 Nelle sezioni seguenti vengono descritti i ruoli RBAC relativi a eDiscovery elencati nella tabella precedente.
@@ -95,7 +95,7 @@ Nelle sezioni seguenti vengono descritti i ruoli RBAC relativi a eDiscovery elen
 
 Questo ruolo consente agli utenti di creare, modificare, eliminare e controllare l'accesso a eDiscovery di base e i casi avanzati di eDiscovery nel centro sicurezza & conformità. Come spiegato in precedenza, è necessario assegnare a un utente il ruolo di gestione dei casi prima di poter utilizzare il cmdlet **Add-eDiscoveryCaseAdmin** per renderli un amministratore di eDiscovery.
 
-Per altre informazioni, vedere:
+Per ulteriori informazioni, vedere:
 
 - [Introduzione a Core eDiscovery](get-started-core-ediscovery.md)
 
@@ -123,7 +123,7 @@ Questo ruolo consente agli utenti di identificare e gestire i depositari per i c
 
 Per ulteriori informazioni, vedere [lavorare con i depositari in Advanced eDiscovery](managing-custodians.md).
 
-### <a name="export"></a>Esporta
+### <a name="export"></a>Esportazione
 
 Il ruolo consente agli utenti di esportare i risultati di una ricerca di contenuto in un computer locale. Consente inoltre di preparare i risultati della ricerca per l'analisi in Advanced eDiscovery.
 
@@ -145,10 +145,10 @@ Questo ruolo consente agli utenti di visualizzare un elenco di elementi restitui
 
 ### <a name="review"></a>Revisione
 
-Questo ruolo consente agli utenti di accedere ai dati del caso in [Advanced eDiscovery (Classic)](office-365-advanced-ediscovery.md) (noto anche come *Advanced eDiscovery V1* ). Lo scopo principale di questo ruolo è offrire agli utenti l'accesso a Advanced eDiscovery (Classic). Gli utenti a cui è assegnato questo ruolo possono visualizzare e aprire l'elenco dei casi nella pagina **eDiscovery** nel centro sicurezza & Compliance di cui sono membri. Dopo che l'utente ha eseguito l'accesso a un caso nel centro sicurezza & Compliance, è possibile selezionare **passa a Advanced eDiscovery** per accedere ai dati del caso in Advanced eDiscovery (Classic) e analizzarli. Questo ruolo non consente all'utente di visualizzare in anteprima i risultati di una ricerca di contenuto associata al caso o di eseguire altre attività di ricerca contenuto o di gestione dei casi.
+Questo ruolo consente agli utenti di accedere ai dati del caso in [Advanced eDiscovery (Classic)](office-365-advanced-ediscovery.md) (noto anche come *Advanced eDiscovery V1*). Lo scopo principale di questo ruolo è offrire agli utenti l'accesso a Advanced eDiscovery (Classic). Gli utenti a cui è assegnato questo ruolo possono visualizzare e aprire l'elenco dei casi nella pagina **eDiscovery** nel centro sicurezza & Compliance di cui sono membri. Dopo che l'utente ha eseguito l'accesso a un caso nel centro sicurezza & Compliance, è possibile selezionare **passa a Advanced eDiscovery** per accedere ai dati del caso in Advanced eDiscovery (Classic) e analizzarli. Questo ruolo non consente all'utente di visualizzare in anteprima i risultati di una ricerca di contenuto associata al caso o di eseguire altre attività di ricerca contenuto o di gestione dei casi.
 
 > [!NOTE]
-> A questo punto, gli utenti a cui è stato assegnato il ruolo di revisione (o sono membri del gruppo di ruolo Reviewer) non possono accedere ai dati in [Advanced eDiscovery in Microsoft 365](overview-ediscovery-20.md) (noto anche come *Advanced eDiscovery v 2.0* ). Per aggiungere membri a un caso in Advanced eDiscovery v 2.0 in modo che possano esaminare i dati dei casi, un utente deve essere membro del gruppo di ruoli Gestione eDiscovery.
+> A questo punto, gli utenti a cui è stato assegnato il ruolo di revisione (o sono membri del gruppo di ruolo Reviewer) non possono accedere ai dati in [Advanced eDiscovery in Microsoft 365](overview-ediscovery-20.md) (noto anche come *Advanced eDiscovery v 2.0*). Per aggiungere membri a un caso in Advanced eDiscovery v 2.0 in modo che possano esaminare i dati dei casi, un utente deve essere membro del gruppo di ruoli Gestione eDiscovery.
 
 ### <a name="rms-decrypt"></a>Decrittografia RMS
 

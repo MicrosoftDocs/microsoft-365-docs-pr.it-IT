@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 02c79edaa05e7903a8797cdf83c18a4ce69716dc
-ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
+ms.openlocfilehash: 8ebfe5746a69cc0161c38f0467954fabb3839240
+ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48920537"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "49683344"
 ---
 # <a name="assess-your-security-posture-with-microsoft-secure-score"></a>Valutare la propria posizione di sicurezza con Microsoft Secure Score
 
@@ -36,10 +36,8 @@ Microsoft Secure Score è una misura della posizione di sicurezza di un'organizz
 Per facilitare le informazioni necessarie più rapidamente, le azioni di miglioramento di Microsoft sono organizzate in gruppi:
 
 * Identity (Azure Active Directory accounts & Roles)
-* Data (nessuna azione di miglioramento per il momento)
 * Dispositivo (Microsoft Defender per endpoint, noto come [Microsoft Secure Score for Devices](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/tvm-microsoft-secure-score-devices))
 * App (applicazioni di posta elettronica e cloud, tra cui Office 365 e Microsoft cloud app Security)
-* Infrastructure (nessuna azione di miglioramento per il momento)
 
 >[!NOTE]
 >Nella versione recente di Microsoft Secure Score è stato rilasciato un modello di Punteggio migliorato che rendeva Microsoft Secure Score incompatibile temporaneamente con identità Secure score e l'API del grafico. [Visualizza dettagli](microsoft-secure-score-whats-new.md)
@@ -56,9 +54,9 @@ Inoltre, se si seleziona il pulsante **Includi** accanto alla partitura, è poss
 
 Di seguito sono riportati i punteggi che è possibile aggiungere alla visualizzazione del punteggio complessivo per fornire un'immagine più completa del Punteggio globale:
 
-- **Punteggio pianificato** : Mostra il Punteggio proiettato quando vengono completate le azioni pianificate
-- **Punteggio della licenza corrente** : Mostra il punteggio che può essere ottenuto con la licenza Microsoft corrente
-- **Punteggio ottenibile** : Mostra il punteggio che è possibile ottenere con le licenze Microsoft e l'accettazione del rischio corrente
+- **Punteggio pianificato**: Mostra il Punteggio proiettato quando vengono completate le azioni pianificate
+- **Punteggio della licenza corrente**: Mostra il punteggio che può essere ottenuto con la licenza Microsoft corrente
+- **Punteggio ottenibile**: Mostra il punteggio che è possibile ottenere con le licenze Microsoft e l'accettazione del rischio corrente
 
 Questa visualizzazione è l'aspetto che avrà se sono state incluse tutte le visualizzazioni possibili del Punteggio:
 
@@ -114,7 +112,7 @@ La sezione **implementazione** Visualizza eventuali prerequisiti, passaggi succe
 
 I prerequisiti includono tutte le licenze che devono essere ottenute o le azioni che devono essere completate prima che venga affrontata l'azione di miglioramento. Assicurarsi di disporre di un numero sufficiente di posti nella licenza per completare l'azione di miglioramento e che tali licenze vengano applicate agli utenti necessari.  
 
-## <a name="we-want-to-hear-from-you"></a>Si vuole sapere da voi
+## <a name="we-want-to-hear-from-you"></a>L'opinione degli utenti è importante
 
 In caso di problemi, inviaci informazioni scrivendo nella community [sicurezza, Privacy & conformità](https://techcommunity.microsoft.com/t5/Security-Privacy-Compliance/bd-p/security_privacy) . Si sta monitorando la community e viene fornita assistenza.
 

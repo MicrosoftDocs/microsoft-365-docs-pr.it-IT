@@ -19,12 +19,12 @@ ms.collection:
 - SPO_Content
 description: Informazioni su come abilitare ATP per SharePoint, OneDrive e teams, inclusa la procedura per impostare gli avvisi per i file rilevati.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 69cb7ffcfb06d5ccda915004a512e7eefc6eb56e
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 44d487810156d5de5ae152e08040e8dccd2a4ee0
+ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48844273"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "49682589"
 ---
 # <a name="turn-on-atp-for-sharepoint-onedrive-and-microsoft-teams"></a>Attivare ATP per SharePoint, OneDrive e Microsoft Teams
 
@@ -48,9 +48,9 @@ In questo articolo sono riportati i passaggi per l'abilitazione e la configurazi
 
 ## <a name="step-1-use-the-security--compliance-center-to-turn-on-atp-for-sharepoint-onedrive-and-microsoft-teams"></a>Passaggio 1: utilizzare il Centro sicurezza & conformità per abilitare ATP per SharePoint, OneDrive e Microsoft Teams
 
-1. Nel centro sicurezza & conformità, accedere a criteri di **gestione delle minacce** per gli \> **Policy** \> **allegati sicuri ATP** e fare clic su **Impostazioni globali**.
+1. Nel centro sicurezza & conformità, accedere a criteri di **gestione delle minacce** per gli \>  \> **allegati sicuri ATP** e fare clic su **Impostazioni globali**.
 
-2. Nelle **Impostazioni globali** volare che viene visualizzato, passare all'impostazione **attiva ATP per SharePoint, OneDrive e Microsoft teams** . Spostare l'interruttore verso destra per ![ ](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png) attivare ATP per SharePoint, OneDrive e Microsoft teams.
+2. Nelle **Impostazioni globali** volare che viene visualizzato, passare all'impostazione **attiva ATP per SharePoint, OneDrive e Microsoft teams** . Spostare l'interruttore verso destra per ![ ](../../media/scc-toggle-on.png) attivare ATP per SharePoint, OneDrive e Microsoft teams.
 
    Al termine, scegliere **Salva**.
 
@@ -74,7 +74,7 @@ Per impedire agli utenti di scaricare file dannosi, [connettersi a PowerShell di
 Set-SPOTenant -DisallowInfectedFileDownload $true
 ```
 
-**Note** :
+**Note**:
 
 - Questa impostazione interessa sia gli utenti che gli amministratori.
 - Gli utenti possono comunque eliminare i file dannosi.
@@ -85,30 +85,30 @@ Per informazioni dettagliate sulla sintassi e sui parametri, vedere [set-SPOTena
 
 È possibile creare un criterio di avviso che informa l'utente e gli altri amministratori quando ATP per SharePoint, OneDrive e Microsoft teams rileva un file dannoso. Per ulteriori informazioni sugli avvisi, vedere [creare avvisi di attività nel centro sicurezza & Compliance](../../compliance/create-activity-alerts.md).
 
-1. Nel [Centro sicurezza & conformità](https://protection.office.com), accedere a criteri **Alerts** di \> **avviso** avvisi o Apri <https://protection.office.com/alertpolicies> .
+1. Nel [Centro sicurezza & conformità](https://protection.office.com), accedere a criteri  di \> **avviso** avvisi o Apri <https://protection.office.com/alertpolicies> .
 
 2. Nella pagina **criteri di avviso** fare clic su **nuovi criteri di avviso**.
 
 3. La procedura guidata **nuovo criterio di avviso** viene aperta in un volo. Nella pagina **nome messaggio di avviso** , configurare le seguenti impostazioni:
 
-   - **Nome** : digitare un nome univoco e descrittivo. Ad esempio, i file dannosi nelle raccolte.
-   - **Descrizione** : digitare una descrizione facoltativa. Ad esempio, avvisa gli amministratori quando vengono rilevati file dannosi in SharePoint Online, OneDrive o Microsoft teams.
-   - **Severity** : lasciare il valore predefinito **basso** selezionato oppure selezionare **medio** o **elevato**.
-   - **Selezionare una categoria** : selezionare **gestione minacce**.
+   - **Nome**: digitare un nome univoco e descrittivo. Ad esempio, i file dannosi nelle raccolte.
+   - **Descrizione**: digitare una descrizione facoltativa. Ad esempio, avvisa gli amministratori quando vengono rilevati file dannosi in SharePoint Online, OneDrive o Microsoft teams.
+   - **Severity**: lasciare il valore predefinito **basso** selezionato oppure selezionare **medio** o **elevato**.
+   - **Selezionare una categoria**: selezionare **gestione minacce**.
 
    Al termine dell'operazione, fare clic su **Avanti**.
 
 4. Nella pagina **Crea impostazioni di avviso** configurare le seguenti impostazioni:
 
-   - **Che cosa si desidera avvisare?: attività è** : selezionare **rilevato malware nel file**.
-   - **Come si desidera che venga attivato l'avviso?** : lasciare il valore predefinito **ogni volta che un'attività corrisponde alla regola** selezionata.
+   - **Che cosa si desidera avvisare?: attività è**: selezionare **rilevato malware nel file**.
+   - **Come si desidera che venga attivato l'avviso?**: lasciare il valore predefinito **ogni volta che un'attività corrisponde alla regola** selezionata.
 
    Al termine dell'operazione, fare clic su **Avanti**.
 
 5. Nella pagina **imposta i destinatari** , configurare le seguenti impostazioni:
 
-   - **Invia notifiche tramite posta elettronica** : verificare che questa impostazione sia selezionata. Nella casella **destinatari di posta elettronica** selezionare uno o più amministratori globali, amministratori della sicurezza o lettori di sicurezza che dovrebbero ricevere una notifica quando viene rilevato un file dannoso.
-   - **Limite di notifica giornaliero** : lasciare il valore predefinito **Nessun limite** selezionato.
+   - **Invia notifiche tramite posta elettronica**: verificare che questa impostazione sia selezionata. Nella casella **destinatari di posta elettronica** selezionare uno o più amministratori globali, amministratori della sicurezza o lettori di sicurezza che dovrebbero ricevere una notifica quando viene rilevato un file dannoso.
+   - **Limite di notifica giornaliero**: lasciare il valore predefinito **Nessun limite** selezionato.
 
    Al termine dell'operazione, fare clic su **Avanti**.
 
@@ -126,7 +126,7 @@ Se si preferisce utilizzare PowerShell per creare gli stessi criteri di avviso d
 New-ActivityAlert -Name "Malicious Files in Libraries" -Description "Notifies admins when malicious files are detected in SharePoint Online, OneDrive, or Microsoft Teams" -Category ThreatManagement -Operation FileMalwareDetected -NotifyUser "admin1@contoso.com","admin2@contoso.com"
 ```
 
-**Nota** : il valore di _gravità_ predefinito è basso. Per specificare medio o alto, includere il parametro _Severity_ e il valore nel comando.
+**Nota**: il valore di _gravità_ predefinito è basso. Per specificare medio o alto, includere il parametro _Severity_ e il valore nel comando.
 
 Per informazioni dettagliate sulla sintassi e sui parametri, vedere [New-ActivityAlert](https://docs.microsoft.com/powershell/module/exchange/new-activityalert).
 
@@ -134,7 +134,7 @@ Per informazioni dettagliate sulla sintassi e sui parametri, vedere [New-Activit
 
 - Per verificare di aver correttamente attivato ATP per SharePoint, OneDrive e Microsoft teams, eseguire una delle operazioni seguenti:
 
-  - Nel [Centro sicurezza & conformità](https://protection.office.com), accedere a criteri di **gestione delle minacce** per gli \> **Policy** \> **allegati sicuri ATP** , selezionare **Impostazioni globali** e verificare il valore dell'impostazione **attiva ATP per SharePoint, OneDrive e Microsoft teams** .
+  - Nel [Centro sicurezza & conformità](https://protection.office.com), accedere a criteri di **gestione delle minacce** per gli \>  \> **allegati sicuri ATP**, selezionare **Impostazioni globali** e verificare il valore dell'impostazione **attiva ATP per SharePoint, OneDrive e Microsoft teams** .
 
   - In Exchange Online PowerShell, eseguire il comando riportato di seguito per verificare l'impostazione della proprietà:
 
@@ -154,7 +154,7 @@ Per informazioni dettagliate sulla sintassi e sui parametri, vedere [New-Activit
 
 - Per verificare la corretta configurazione di un criterio di avviso per i file rilevati, eseguire una delle operazioni seguenti:
 
-  - Nel centro sicurezza & conformità, accedere a **Alerts** \> **criteri di avviso** avvisi \> selezionare il criterio di avviso e verificare le impostazioni.
+  - Nel centro sicurezza & conformità, accedere a  \> **criteri di avviso** avvisi \> selezionare il criterio di avviso e verificare le impostazioni.
 
   - In PowerShell Centro sicurezza & conformità, sostituire \<AlertPolicyName\> con il nome del criterio di avviso, eseguire il comando riportato di seguito e verificare i valori delle proprietà:
 

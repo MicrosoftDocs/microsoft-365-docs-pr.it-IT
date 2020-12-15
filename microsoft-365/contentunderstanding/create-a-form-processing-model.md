@@ -37,7 +37,7 @@ La creazione di un modello di elaborazione dei moduli prevede i passaggi seguent
 
 ## <a name="requirements"></a>Requisiti
 
-È possibile unicamente creare un modello di elaborazione modulo nelle raccolte documenti di SharePoint per cui è abilitato. Se l'elaborazione modulo è abilitata, è possibile vedere l'**AI Builder** **"Creare un modello di elaborazione modulo"** nel menu **Automatizza** della raccolta documenti. Se desideri abilitare l'elaborazione sulla raccolta documenti, è necessario contattare l'amministratore di SharePoint.
+È possibile creare un modello di elaborazione dei moduli solo nelle raccolte documenti di SharePoint per le quali è abilitata. Se l'elaborazione dei moduli è abilitata, sarà presente l'opzione **AI Builder** **Crea un modello di elaborazione dei moduli** nel menu **Automatizza** nella raccolta documenti.  Se è necessario abilitare l'elaborazione nella raccolta documenti, contattare l'amministratore di SharePoint.
 
  ![Creare un modello di AI Builder](../media/content-understanding/create-ai-builder-model.png)</br>
 
@@ -53,26 +53,26 @@ Per creare un modello di elaborazione dei moduli, occorre prima di tutto assegna
 
     ![Nuovo modello di elaborazione dei moduli](../media/content-understanding/new-form-model.png)</br> 
 
-3. Quando si crea un modello di elaborazione modulo, viene creato un nuovo tipo di contenuto di SharePoint. Un tipo di contenuto di SharePoint rappresenta una categoria di documenti che vantano caratteristiche comuni e condividono una raccolta di colonne o proprietà dei metadati per quel contenuto specifico. I tipi di contenuto di SharePoint vengono gestiti tramite la [galleria dei tipi di contenuto]().
+3. Quando si crea un modello di elaborazione dei moduli, si crea un nuovo tipo di contenuto di SharePoint. Un tipo di contenuto di SharePoint rappresenta una categoria di documenti che hanno caratteristiche comuni e condividono una raccolta di colonne o proprietà dei metadati per quel particolare contenuto. I tipi di contenuto di SharePoint vengono gestiti tramite la [Raccolta tipi di contenuto]().
 
-    Selezionare **Impostazioni avanzate** se si desidera associare questo modello a un tipo di contenuto esistente nella Raccolta tipi di contenuto di SharePoint per usarne lo schema. 
+    Selezionare **Impostazioni avanzate** se si vuole associare questo modello a un tipo di contenuto esistente nella Raccolta tipi di contenuto di SharePoint per usarne lo schema. 
 
-4. Il modello crea una nuova visualizzazione nella raccolta documenti per i dati estratti. Se non si desidera impostarla come visualizzazione predefinita, deselezionare **Imposta visualizzazione come predefinita**.
+4. Il modello crea una nuova visualizzazione nella raccolta documenti per i dati estratti. Se non si vuole impostarla come visualizzazione predefinita, deselezionare **Imposta la visualizzazione come predefinita**.
 
 5. Selezionare **Crea**.
 
 ## <a name="step-2-add-and-analyze-documents"></a>Passaggio 2: aggiungere e analizzare documenti
 
-Dopo aver creato il nuovo modello di elaborazione modulo, il browser apre una nuova pagina del modello di elaborazione moduli di PowerApps AI Builder. In questa pagina è possibile aggiungere e analizzare i documenti di esempio. </br>
+Dopo aver creato il nuovo modello di elaborazione dei moduli, nel browser viene aperta una nuova pagina del modello di elaborazione dei moduli di PowerApps AI Builder. In questa pagina è possibile aggiungere e analizzare i documenti di esempio. </br>
 
 > [!NOTE]
 > Quando si cercano file di esempio da usare, vedere i [requisiti dei documenti di input per il modello di elaborazione moduli e suggerimenti per l'ottimizzazione](https://docs.microsoft.com/ai-builder/form-processing-model-requirements). 
 
    ![Power Apps AI Builder](../media/content-understanding/powerapps.png)</br> 
  
-1. Selezionare **Aggiungi documenti** per iniziare ad aggiungere documenti di esempio analizzati per determinare le coppie di valori denominate che possono essere estratte. È quindi possibile scegliere o **Carica da risorsa di archiviazione locale**, **SharePoint** o **Risorsa di archiviazione Azure Blob**. È necessario usare almeno cinque file per il training.
+1. Selezionare **Aggiungi documenti** per iniziare ad aggiungere documenti di esempio analizzati per determinare le coppie di valori denominate che è possibile estrarre. È quindi possibile scegliere **Carica dalla risorsa di archiviazione locale**, **SharePoint** o **Archiviazione BLOB di Azure**. È necessario usare almeno cinque file per il training.
 
-2. Dopo aver aggiunto i file, selezionare **Analizza** per verificare le informazioni comuni in tutti i file. Il completamento potrebbe richiedere alcuni minuti.</br> 
+2. Dopo aver aggiunto i file, selezionare **Analizza** per verificare se esistono informazioni comuni a tutti i file. Questo processo potrebbe richiedere alcuni minuti.</br> 
  
     ![Analizzare i file](../media/content-understanding/analyze.png)</br> 
 
@@ -82,47 +82,47 @@ Dopo aver creato il nuovo modello di elaborazione modulo, il browser apre una nu
 
 ## <a name="step-3-select-your-form-fields"></a>Passaggio 3: selezionare i campi del modulo
 
-Dopo aver analizzato i documenti per i campi, è possibile visualizzare i campi trovati e identificare quelli che si desidera salvare. I campi salvati vengono visualizzati come colonne nella visualizzazione della raccolta documenti dei modello e mostrano i valori estratti da ogni documento.
+Una volta analizzati i documenti per individuare i campi, è possibile vedere i campi rilevati e identificare quelli da salvare. I campi salvati vengono visualizzati come colonne nella visualizzazione della raccolta documenti del modello e mostrano i valori estratti da ogni documento.
 
 1. Nella pagina successiva viene visualizzato uno dei file di esempio e vengono evidenziati tutti i campi comuni che sono stati rilevati automaticamente dal sistema. </br>
 
     ![Pagina Seleziona campi](../media/content-understanding/select-fields-page.png)</br> 
 
-2. Selezionare i campi che si desidera salvare, quindi la casella di controllo per confermare la selezione. Ad esempio, nel modello dell'Ordine di acquisto, scegliere di selezionare *Data*, *PO* e *Campi* totali. Si noti che è possibile decidere di rinominare un campo, se del caso.</br>
+2. Selezionare i campi a salvare e selezionare la casella di controllo per confermare la selezione. Ad esempio, nel modello di ordine di acquisto selezionare i campi *Data*, *Ordine d'acquisto* e *Totale*.  Se si vuole, è possibile anche decidere di rinominare un campo. </br>
 
     ![Selezionare il numero dell'ordine d'acquisto](../media/content-understanding/po.png)</br> 
 
-3. Qualora un campo non venisse rilevato dall'analisi, sarà ancora possibile aggiungerlo. Evidenziare l'informazione che si desidera estrarre e, nel riquadro relativo al nome digitare il nome desiderato. Quindi selezionare la casella di controllo. Si noti che è necessario confermare i campi non rilevati nei file di esempio rimanenti.
+3. Se un campo non è stato rilevato dall'analisi, è comunque possibile scegliere di aggiungerlo. Evidenziare le informazioni da estrarre, quindi immettere il nome desiderato nella casella relativa al nome. Selezionare quindi la casella di controllo. Tenere presente che è necessario confermare i campi non rilevati nei file di esempio rimanenti.
 
 4. Dopo aver selezionato i campi da salvare, fare clic su **Conferma campi**. </br>
  
     ![Conferma campi dopo aver selezionato i campi](../media/content-understanding/confirm-fields.png)</br> 
  
-5. Nella pagina **Selezionare i campi del modulo che si desidera salvare**, mostrerà il numero di campi selezionati. Selezionare **Fatto**.
+5. Nella pagina **Selezionare i campi del modulo da salvare** viene visualizzato il numero di campi selezionati. Scegliere **Fatto**.
 
 ## <a name="step-4-train-and-test-your-model"></a>Passaggio 4: eseguire il training e il test del modello
 
 Dopo aver selezionato i campi da salvare, nella pagina **Riepilogo modelli** è possibile eseguire il training e il test del modello.
 
-1. Nella pagina **Riepilogo modello**, i campi salvati verranno visualizzati nella sezione **Campi selezionati**. Selezionare **Eseguire il training** per iniziare il training sui file di esempio. Si noti che il completamento potrebbe richiedere alcuni minuti.</br>
+1. Nella pagina **Riepilogo modelli** i campi salvati vengono visualizzati nella sezione **Campi selezionati**. Selezionare **Avvia training** per avviare il training sul file di esempio. Tenere presente che questo processo potrebbe richiedere alcuni minuti.</br>
 
      ![Training dei file selezionati](../media/content-understanding/select-fields-train.png)</br> 
 
 2. Quando viene indicato che il training è terminato, selezionare **Vai alla pagina Dettagli**. 
 
-3. Nella pagina **Dettagli modello** è possibile scegliere di testare il funzionamento del modello selezionando **Test rapido**. Questa operazione consentirà di trascinare i file nella pagina e vedere se vengono rilevati i campi.
+3. Nella pagina **Dettagli modello** si può decidere di testare il funzionamento del modello selezionando **Test rapido**. Questo consente di trascinare i file nella pagina e verificare se i campi vengono rilevati.
 
     ![Confermare i campi](../media/content-understanding/select-fields-train.png)</br> 
 
 2. Quando viene indicato che il training è terminato, selezionare **Vai alla pagina Dettagli**. 
 
-3. Nella pagina **Dettagli modello** scegliere di testare il funzionamento del modello selezionando **Test rapido**. Questa operazione consentirà di trascinare i file nella pagina e vedere se vengono rilevati i campi.
+3. Nella pagina **Dettagli modello**, scegliere di testare il funzionamento del modello selezionando **Test rapido**. Questo consente di trascinare i file nella pagina e verificare se i campi vengono rilevati.
 
 ## <a name="step-5-publish-your-model"></a>Passaggio 5: pubblicare il modello
 
 1. Se i risultati del modello sono soddisfacenti, selezionare **Pubblica** per metterlo a disposizione.
 
-2. Una volta pubblicato il modello, selezionare **Usa modello**. Questa operazione crea un flusso PowerAutomate che può essere eseguito nella raccolta documenti di SharePoint ed estrae i campi che sono stati identificati nel modello, quindi selezionare **Crea flusso**.
+2. Dopo avere pubblicato il modello, selezionare **Usa modello**. In questo modo viene creato un flusso di PowerAutomate che può essere eseguito nella raccolta documenti di SharePoint ed estrae i campi identificati nel modello, quindi selezionare **Crea flusso**.
   
 3. Al termine, viene visualizzato il messaggio **Il flusso è stato creato**.
  
@@ -140,7 +140,7 @@ Dopo aver pubblicato il modello e avere creato il relativo flusso di PowerAutoma
 
     ![Pulsante Informazioni](../media/content-understanding/info-button.png)</br>  
 
-4. Caricare i file nella raccolta documenti. Qualsiasi file identificato dal modello come corrispondente al suo tipo di contenuto elenca i file nella visualizzazione e mostra i dati estratti nelle colonne.</br>
+4. Caricare i file nella raccolta documenti. Qualsiasi file che il modello identifica come corrispondente al suo tipo di contenuto elenca i file nella visualizzazione e mostra i dati estratti nelle colonne.</br>
 
     ![Fatto](../media/content-understanding/doc-lib-done.png)</br>  
 

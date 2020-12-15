@@ -16,12 +16,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Gli amministratori possono ottenere informazioni sui criteri di anti-phishing disponibili in Exchange Online Protection (EOP) e Microsoft Defender per Office 365.
-ms.openlocfilehash: 34c66d8ab39af443462e8c5ac99009b4170be21e
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+ms.openlocfilehash: 43736fbd42949a084804825ec7f12d19b7fd1818
+ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49659857"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "49683050"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Criteri di anti-phishing in Microsoft 365
 
@@ -43,12 +43,12 @@ Le differenze di alto livello tra i criteri di anti-phishing nei criteri di EOP 
 
 |Funzionalità|Criteri di anti-phishing in EOP|Criteri di anti-phishing in Microsoft Defender per Office 365|
 |---|:---:|:---:|
-|Criterio predefinito creato automaticamente|![Segno di spunta](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Segno di spunta](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|Creare criteri personalizzati|![Segno di spunta](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Segno di spunta](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|Impostazioni di criteri<sup>\*</sup>|![Segno di spunta](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Segno di spunta](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|Impostazioni di rappresentazione||![Segno di spunta](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|Impostazioni di spoofing|![Segno di spunta](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Segno di spunta](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|Soglie di phishing avanzate||![Segno di spunta](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+|Criterio predefinito creato automaticamente|![Segno di spunta](../../media/checkmark.png)|![Segno di spunta](../../media/checkmark.png)|
+|Creare criteri personalizzati|![Segno di spunta](../../media/checkmark.png)|![Segno di spunta](../../media/checkmark.png)|
+|Impostazioni di criteri<sup>\*</sup>|![Segno di spunta](../../media/checkmark.png)|![Segno di spunta](../../media/checkmark.png)|
+|Impostazioni di rappresentazione||![Segno di spunta](../../media/checkmark.png)|
+|Impostazioni di spoofing|![Segno di spunta](../../media/checkmark.png)|![Segno di spunta](../../media/checkmark.png)|
+|Soglie di phishing avanzate||![Segno di spunta](../../media/checkmark.png)|
 |
 
 <sup>\*</sup> Nel criterio predefinito, il nome e la descrizione del criterio sono di sola lettura (la descrizione è vuota) e non è possibile specificare gli utenti a cui si applica il criterio (il criterio predefinito è applicabile a tutti i destinatari).

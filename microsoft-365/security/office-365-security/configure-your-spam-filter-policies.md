@@ -16,12 +16,12 @@ ms.assetid: 316544cb-db1d-4c25-a5b9-c73bbcf53047
 ms.collection:
 - M365-security-compliance
 description: Informazioni per amministratori su come visualizzare, creare, modificare ed eliminare criteri di protezione dalla posta indesiderata in Exchange Online Protection (EOP).
-ms.openlocfilehash: d83c41b52db5c0533a9a5d52ab20ace9b612e1e6
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+ms.openlocfilehash: f5cc652bcc16cec28dd411ad30ce0896334733f4
+ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49658650"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "49683380"
 ---
 # <a name="configure-anti-spam-policies-in-eop"></a>Configurare criteri di protezione dalla posta indesiderata in EOP
 
@@ -102,20 +102,20 @@ La creazione di un criterio di protezione dalla posta indesiderata nel Centro si
 
      Le azioni disponibili per i verdetti filtro posta indesiderata sono descritte nella tabella seguente.
 
-     - Un segno di spunta ( ![Segno di spunta](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)) indica che l'azione è disponibile (non tutte le azioni sono disponibili per tutti i verdetti filtro posta indesiderata).
+     - Un segno di spunta ( ![Segno di spunta](../../media/checkmark.png)) indica che l'azione è disponibile (non tutte le azioni sono disponibili per tutti i verdetti filtro posta indesiderata).
      - Un asterisco (<sup>\*</sup>) dopo il segno di spunta indica l'azione predefinita per il verdetto filtro posta indesiderata.
 
      ****
 
      |Azione|Posta indesiderata|Fortemente<br>confidenziale<br>posta indesiderata|Phishing<br>e-mail|Fortemente<br>confidenziale<br>phishing<br>e-mail|Invio in blocco<br>e-mail|
      |---|:---:|:---:|:---:|:---:|:---:|
-     |**Spostare un messaggio nella cartella Posta indesiderata**: il messaggio viene recapitato nella cassetta postale e spostato nella cartella Posta indesiderata.<sup>1</sup>|![Segno di spunta](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Segno di spunta](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Segno di spunta](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Segno di spunta](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Segno di spunta](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
-     |**Aggiungi X-Header**: aggiunge un X-Header all'intestazione del messaggio e recapita il messaggio nella cassetta postale. <p> Immettere il nome del campo X-Header (non il valore) successivamente nella casella **Aggiungi testo X-Header**. <p> Per i verdetti **Posta indesiderata** e **Posta indesiderata con alta confidenza**, il messaggio viene spostato nella cartella Posta indesiderata.<sup>1,2</sup>|![Segno di spunta](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Segno di spunta](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Segno di spunta](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||![Segno di spunta](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
-     |**Anteponi testo alla riga dell'oggetto**: aggiunge testo all'inizio della riga dell'oggetto del messaggio. Il messaggio viene recapitato nella cassetta postale e spostato nella cartella Posta indesiderata.<sup>1,2</sup> <p> Immettere il testo successivamente nella casella **Riga dell'oggetto del prefisso con il testo**.|![Segno di spunta](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Segno di spunta](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Segno di spunta](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||![Segno di spunta](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-     |**Reindirizza messaggio a indirizzo di posta elettronica:** invece di inviare il messaggio ai destinatari designati, lo invia ad altri destinatari. <p> Specificare i destinatari successivamente nella casella **Reindirizza a questo indirizzo di posta elettronica**.|![Segno di spunta](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Segno di spunta](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Segno di spunta](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Segno di spunta](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Segno di spunta](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-     |**Elimina messaggio:** elimina automaticamente l'intero messaggio, inclusi gli allegati.|![Segno di spunta](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Segno di spunta](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Segno di spunta](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||![Segno di spunta](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-     |**Messaggio di quarantena:** il messaggio non viene inviato ai destinatari, ma viene messo in quarantena. <p> Specificare per quanto tempo mantenere il messaggio in quarantena più avanti nella casella **Quarantena**.|![Segno di spunta](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Segno di spunta](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Segno di spunta](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Segno di spunta](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Segno di spunta](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-     |**Nessuna azione**|||||![Segno di spunta](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+     |**Spostare un messaggio nella cartella Posta indesiderata**: il messaggio viene recapitato nella cassetta postale e spostato nella cartella Posta indesiderata.<sup>1</sup>|![Segno di spunta](../../media/checkmark.png)<sup>\*</sup>|![Segno di spunta](../../media/checkmark.png)<sup>\*</sup>|![Segno di spunta](../../media/checkmark.png)|![Segno di spunta](../../media/checkmark.png)|![Segno di spunta](../../media/checkmark.png)<sup>\*</sup>|
+     |**Aggiungi X-Header**: aggiunge un X-Header all'intestazione del messaggio e recapita il messaggio nella cassetta postale. <p> Immettere il nome del campo X-Header (non il valore) successivamente nella casella **Aggiungi testo X-Header**. <p> Per i verdetti **Posta indesiderata** e **Posta indesiderata con alta confidenza**, il messaggio viene spostato nella cartella Posta indesiderata.<sup>1,2</sup>|![Segno di spunta](../../media/checkmark.png)|![Segno di spunta](../../media/checkmark.png)|![Segno di spunta](../../media/checkmark.png)||![Segno di spunta](../../media/checkmark.png)<sup>\*</sup>|
+     |**Anteponi testo alla riga dell'oggetto**: aggiunge testo all'inizio della riga dell'oggetto del messaggio. Il messaggio viene recapitato nella cassetta postale e spostato nella cartella Posta indesiderata.<sup>1,2</sup> <p> Immettere il testo successivamente nella casella **Riga dell'oggetto del prefisso con il testo**.|![Segno di spunta](../../media/checkmark.png)|![Segno di spunta](../../media/checkmark.png)|![Segno di spunta](../../media/checkmark.png)||![Segno di spunta](../../media/checkmark.png)|
+     |**Reindirizza messaggio a indirizzo di posta elettronica:** invece di inviare il messaggio ai destinatari designati, lo invia ad altri destinatari. <p> Specificare i destinatari successivamente nella casella **Reindirizza a questo indirizzo di posta elettronica**.|![Segno di spunta](../../media/checkmark.png)|![Segno di spunta](../../media/checkmark.png)|![Segno di spunta](../../media/checkmark.png)|![Segno di spunta](../../media/checkmark.png)|![Segno di spunta](../../media/checkmark.png)|
+     |**Elimina messaggio:** elimina automaticamente l'intero messaggio, inclusi gli allegati.|![Segno di spunta](../../media/checkmark.png)|![Segno di spunta](../../media/checkmark.png)|![Segno di spunta](../../media/checkmark.png)||![Segno di spunta](../../media/checkmark.png)|
+     |**Messaggio di quarantena:** il messaggio non viene inviato ai destinatari, ma viene messo in quarantena. <p> Specificare per quanto tempo mantenere il messaggio in quarantena più avanti nella casella **Quarantena**.|![Segno di spunta](../../media/checkmark.png)|![Segno di spunta](../../media/checkmark.png)|![Segno di spunta](../../media/checkmark.png)<sup>\*</sup>|![Segno di spunta](../../media/checkmark.png)|![Segno di spunta](../../media/checkmark.png)|
+     |**Nessuna azione**|||||![Segno di spunta](../../media/checkmark.png)|
      |
 
      > <sup>1</sup> In Exchange Online, il messaggio viene spostato nella cartella Posta indesiderata se la regola per la posta indesiderata è abilitata per la cassetta postale (abilitata per impostazione predefinita). Per altre informazioni, vedere [Configurare le impostazioni della posta indesiderata nelle cassette postali di Exchange Online](configure-junk-email-settings-on-exo-mailboxes.md).
@@ -301,7 +301,7 @@ Per abilitare o disabilitare un criterio, impostare l'ordine di priorità dei cr
 
    Spostare l'interruttore a sinistra per disabilitare il criterio: ![Disattiva](../../media/scc-toggle-off.png)
 
-   Spostare l'interruttore a destra per abilitare il criterio: ![Attiva](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png)
+   Spostare l'interruttore a destra per abilitare il criterio: ![Attiva](../../media/scc-toggle-on.png)
 
 Non è possibile disabilitare il criterio di protezione dalla posta indesiderata predefinito.
 

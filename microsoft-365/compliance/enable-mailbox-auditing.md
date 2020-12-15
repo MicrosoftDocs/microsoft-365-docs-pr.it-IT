@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: aaca8987-5b62-458b-9882-c28476a66918
 ms.custom: seo-marvel-apr2020
 description: La registrazione di controllo delle cassette postali è attivata per impostazione predefinita in Microsoft 365 (denominato anche controllo delle cassette postali predefinito o controllo delle cassette postali per impostazione predefinita). Ciò significa che alcune azioni eseguite da proprietari, delegati e amministratori delle cassette postali vengono automaticamente registrate in un registro di controllo delle cassette postali, in cui è possibile cercare le attività eseguite sulla cassetta postale.
-ms.openlocfilehash: 8d91936f82070848dc65d1b160d4df0165875213
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 8b199f2fe63f0304e705f32bab8191a966e63fce
+ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48649625"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "49682549"
 ---
 # <a name="manage-mailbox-auditing"></a>Gestire il controllo delle cassette postali
 
@@ -64,11 +64,11 @@ Nella tabella seguente vengono illustrati i tipi di cassette postali attualmente
 
 |**Tipo di cassetta postale**|**Supportato**|**Non supportato**|
 |:---------|:---------:|:---------:|
-|Cassette postali utente|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
-|Cassette postali condivise|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
-|Cassette postali del gruppo Microsoft 365|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
-|Cassette postali per la risorsa||![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|Cassette postali delle cartelle pubbliche||![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+|Cassette postali utente|![Segno di spunta](../media/checkmark.png)||
+|Cassette postali condivise|![Segno di spunta](../media/checkmark.png)||
+|Cassette postali del gruppo Microsoft 365|![Segno di spunta](../media/checkmark.png)||
+|Cassette postali per la risorsa||![Segno di spunta](../media/checkmark.png)|
+|Cassette postali delle cartelle pubbliche||![Segno di spunta](../media/checkmark.png)|
 
 ## <a name="logon-types-and-mailbox-actions"></a>Tipi di accesso e azioni delle cassette postali
 
@@ -98,7 +98,7 @@ I tipi di accesso classificano l'utente che ha eseguito le azioni sottoposte a c
 
 Nella tabella seguente vengono descritte le azioni della cassetta postale disponibili nella registrazione di controllo delle cassette postali per gli utenti e le cassette postali condivise.
 
-- Un segno di spunta ( ![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)) indica che l'azione della cassetta postale può essere registrata per il tipo di accesso (non tutte le azioni sono disponibili per tutti i tipi di accesso).
+- Un segno di spunta ( ![Segno di spunta](../media/checkmark.png)) indica che l'azione della cassetta postale può essere registrata per il tipo di accesso (non tutte le azioni sono disponibili per tutti i tipi di accesso).
 
 - Un asterisco ( <sup>\*</sup> ) dopo che il segno di spunta indica che l'azione della cassetta postale è registrata per impostazione predefinita per il tipo di accesso.
 
@@ -107,28 +107,28 @@ Nella tabella seguente vengono descritte le azioni della cassetta postale dispon
 |**Azione della cassetta postale**|**Descrizione**|**Admin**|**Delegato**|**Proprietario**|
 |:---------|:---------|:---------:|:---------:|:---------:|
 |**AddFolderPermissions**|**Nota**: Sebbene questo valore venga accettato come azione della cassetta postale, è già incluso nell'azione **UpdateFolderPermissions** e non è controllato separatamente. In altre parole, non utilizzare questo valore.||||
-|**ApplyRecord**|Un elemento è etichettato come record.|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|**Copia**|Messaggio copiato in un'altra cartella.|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|||
-|**Creare**|Un elemento è stato creato nella cartella calendario, contatti, note o attività nella cassetta postale (ad esempio, viene creata una nuova convocazione di riunione). La creazione, l'invio o la ricezione di un messaggio non viene controllata, così come la creazione di una cartella della cassetta postale.|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|**Predefinita**||![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|**FolderBind**|Accesso effettuato a una cartella della cassetta postale. Tale azione viene registrata anche quando l'amministratore o un delegato apre la cassetta postale.<br/><br/> **Nota**: i record di controllo per le operazioni di associazione delle cartelle eseguite dai delegati vengono consolidati Viene generato un record di controllo per l'accesso a una singola cartella entro 24 ore.|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
-|**HardDelete**|Messaggio eliminato dalla cartella Elementi ripristinabili.|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
-|**MailItemsAccessed**|I dati di posta elettronica sono accessibili tramite protocolli e client di posta elettronica. Questo valore è disponibile solo per gli utenti della sottoscrizione del componente aggiuntivo di conformità E5 o E5. Per informazioni dettagliate, vedere [accesso a eventi cruciali per le indagini](advanced-audit.md#access-to-crucial-events-for-investigations).|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
-|**MailboxLogin**|L'utente ha eseguito l'accesso alla propria cassetta postale. |||![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|**MessageBind**|Un messaggio è stato visualizzato nel riquadro di anteprima o è stato aperto da un amministratore. **Nota**: Sebbene questo valore venga accettato come azione della cassetta postale, queste azioni non vengono più registrate.|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|||
+|**ApplyRecord**|Un elemento è etichettato come record.|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|
+|**Copia**|Messaggio copiato in un'altra cartella.|![Segno di spunta](../media/checkmark.png)|||
+|**Creare**|Un elemento è stato creato nella cartella calendario, contatti, note o attività nella cassetta postale (ad esempio, viene creata una nuova convocazione di riunione). La creazione, l'invio o la ricezione di un messaggio non viene controllata, così come la creazione di una cartella della cassetta postale.|![Segno di spunta](../media/checkmark.png)<sup>\*</sup>|![Segno di spunta](../media/checkmark.png)<sup>\*</sup>|![Segno di spunta](../media/checkmark.png)|
+|**Predefinita**||![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|
+|**FolderBind**|Accesso effettuato a una cartella della cassetta postale. Tale azione viene registrata anche quando l'amministratore o un delegato apre la cassetta postale.<br/><br/> **Nota**: i record di controllo per le operazioni di associazione delle cartelle eseguite dai delegati vengono consolidati Viene generato un record di controllo per l'accesso a una singola cartella entro 24 ore.|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)||
+|**HardDelete**|Messaggio eliminato dalla cartella Elementi ripristinabili.|![Segno di spunta](../media/checkmark.png)<sup>\*</sup>|![Segno di spunta](../media/checkmark.png)<sup>\*</sup>|![Segno di spunta](../media/checkmark.png)<sup>\*</sup>|
+|**MailItemsAccessed**|I dati di posta elettronica sono accessibili tramite protocolli e client di posta elettronica. Questo valore è disponibile solo per gli utenti della sottoscrizione del componente aggiuntivo di conformità E5 o E5. Per informazioni dettagliate, vedere [accesso a eventi cruciali per le indagini](advanced-audit.md#access-to-crucial-events-for-investigations).|![Segno di spunta](../media/checkmark.png)<sup>\*</sup>|![Segno di spunta](../media/checkmark.png)<sup>\*</sup>|![Segno di spunta](../media/checkmark.png)<sup>\*</sup>|
+|**MailboxLogin**|L'utente ha eseguito l'accesso alla propria cassetta postale. |||![Segno di spunta](../media/checkmark.png)|
+|**MessageBind**|Un messaggio è stato visualizzato nel riquadro di anteprima o è stato aperto da un amministratore. **Nota**: Sebbene questo valore venga accettato come azione della cassetta postale, queste azioni non vengono più registrate.|![Segno di spunta](../media/checkmark.png)|||
 |**ModifyFolderPermissions**|**Nota**: Sebbene questo valore venga accettato come azione della cassetta postale, è già incluso nell'azione **UpdateFolderPermissions** e non è controllato separatamente. In altre parole, non utilizzare questo valore.||||
-|**Move**|Messaggio spostato in un'altra cartella.|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|**MoveToDeletedItems**|Messaggio eliminato e spostato nella cartella Posta eliminata.|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
-|**RecordDelete**|Un elemento etichettato come record è stato eliminato temporaneamente (spostato nella cartella elementi ripristinabili). Gli elementi contrassegnati come record non possono essere eliminati definitivamente (eliminati dalla cartella elementi ripristinabili).|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+|**Move**|Messaggio spostato in un'altra cartella.|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|
+|**MoveToDeletedItems**|Messaggio eliminato e spostato nella cartella Posta eliminata.|![Segno di spunta](../media/checkmark.png)<sup>\*</sup>|![Segno di spunta](../media/checkmark.png)<sup>\*</sup>|![Segno di spunta](../media/checkmark.png)<sup>\*</sup>|
+|**RecordDelete**|Un elemento etichettato come record è stato eliminato temporaneamente (spostato nella cartella elementi ripristinabili). Gli elementi contrassegnati come record non possono essere eliminati definitivamente (eliminati dalla cartella elementi ripristinabili).|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|
 |**RemoveFolderPermissions**|**Nota**: Sebbene questo valore venga accettato come azione della cassetta postale, è già incluso nell'azione **UpdateFolderPermissions** e non è controllato separatamente. In altre parole, non utilizzare questo valore.||||
-|**SendAs**|Messaggio inviato utilizzando l'autorizzazione SendAs. Ciò significa che un altro utente ha inviato il messaggio come se provenisse dal proprietario della cassetta postale.|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>||
-|**SendOnBehalf**|Messaggio inviato utilizzando l'autorizzazione SendOnBehalf. Ciò significa che un altro utente ha inviato il messaggio per conto del proprietario della cassetta postale. Il messaggio indica al destinatario la persona per conto della quale è stato inviato il messaggio e l’utente che ha effettivamente inviato il messaggio.|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>||
-|**SoftDelete**|Messaggio eliminato in modo definitivo dalla cartella Posta eliminata. Gli elementi eliminati temporaneamente vengono spostati nella cartella Elementi ripristinabili.|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
-|**Aggiorna**|Modifiche apportate a un messaggio o alle relative proprietà.|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
-|**UpdateCalendarDelegation**|Una delega del calendario è stata assegnata a una cassetta postale. La delega del calendario assegna a un altro utente nella stessa organizzazione le autorizzazioni per la gestione del calendario del proprietario della cassetta postale.|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>||![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
-|**UpdateComplianceTag**|Viene applicata un'etichetta di conservazione diversa a un elemento di posta elettronica, a cui è assegnata solo un'etichetta di conservazione.|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|**UpdateFolderPermissions**|Un'autorizzazione per una cartella è stata cambiata. Le autorizzazioni per le cartelle determinano quali utenti dell'organizzazione possono accedere alle cartelle di una cassetta postale e ai messaggi che contengono.|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
-|**UpdateInboxRules**|È stata aggiunta, rimossa o modificata una regola di posta in arrivo. Le regole di posta in arrivo vengono utilizzate per elaborare i messaggi nella posta in arrivo dell'utente in base alle condizioni specificate e intraprendere azioni quando vengono soddisfatte le condizioni di una regola, ad esempio lo spostamento di un messaggio in una cartella specificata o l'eliminazione di un messaggio.|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
+|**SendAs**|Messaggio inviato utilizzando l'autorizzazione SendAs. Ciò significa che un altro utente ha inviato il messaggio come se provenisse dal proprietario della cassetta postale.|![Segno di spunta](../media/checkmark.png)<sup>\*</sup>|![Segno di spunta](../media/checkmark.png)<sup>\*</sup>||
+|**SendOnBehalf**|Messaggio inviato utilizzando l'autorizzazione SendOnBehalf. Ciò significa che un altro utente ha inviato il messaggio per conto del proprietario della cassetta postale. Il messaggio indica al destinatario la persona per conto della quale è stato inviato il messaggio e l’utente che ha effettivamente inviato il messaggio.|![Segno di spunta](../media/checkmark.png)<sup>\*</sup>|![Segno di spunta](../media/checkmark.png)<sup>\*</sup>||
+|**SoftDelete**|Messaggio eliminato in modo definitivo dalla cartella Posta eliminata. Gli elementi eliminati temporaneamente vengono spostati nella cartella Elementi ripristinabili.|![Segno di spunta](../media/checkmark.png)<sup>\*</sup>|![Segno di spunta](../media/checkmark.png)<sup>\*</sup>|![Segno di spunta](../media/checkmark.png)<sup>\*</sup>|
+|**Aggiornamento**|Modifiche apportate a un messaggio o alle relative proprietà.|![Segno di spunta](../media/checkmark.png)<sup>\*</sup>|![Segno di spunta](../media/checkmark.png)<sup>\*</sup>|![Segno di spunta](../media/checkmark.png)<sup>\*</sup>|
+|**UpdateCalendarDelegation**|Una delega del calendario è stata assegnata a una cassetta postale. La delega del calendario assegna a un altro utente nella stessa organizzazione le autorizzazioni per la gestione del calendario del proprietario della cassetta postale.|![Segno di spunta](../media/checkmark.png)<sup>\*</sup>||![Segno di spunta](../media/checkmark.png)<sup>\*</sup>|
+|**UpdateComplianceTag**|Viene applicata un'etichetta di conservazione diversa a un elemento di posta elettronica, a cui è assegnata solo un'etichetta di conservazione.|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|
+|**UpdateFolderPermissions**|Un'autorizzazione per una cartella è stata cambiata. Le autorizzazioni per le cartelle determinano quali utenti dell'organizzazione possono accedere alle cartelle di una cassetta postale e ai messaggi che contengono.|![Segno di spunta](../media/checkmark.png)<sup>\*</sup>|![Segno di spunta](../media/checkmark.png)<sup>\*</sup>|![Segno di spunta](../media/checkmark.png)<sup>\*</sup>|
+|**UpdateInboxRules**|È stata aggiunta, rimossa o modificata una regola di posta in arrivo. Le regole di posta in arrivo vengono utilizzate per elaborare i messaggi nella posta in arrivo dell'utente in base alle condizioni specificate e intraprendere azioni quando vengono soddisfatte le condizioni di una regola, ad esempio lo spostamento di un messaggio in una cartella specificata o l'eliminazione di un messaggio.|![Segno di spunta](../media/checkmark.png)<sup>\*</sup>|![Segno di spunta](../media/checkmark.png)<sup>\*</sup>|![Segno di spunta](../media/checkmark.png)<sup>\*</sup>|
 
 > [!IMPORTANT]
 > Se nella propria organizzazione sono state abilitate le azioni delle cassette postali da controllare per qualsiasi tipo di accesso *prima* che il controllo delle cassette postali per impostazione predefinita fosse abilitato, le impostazioni personalizzate vengono mantenute nella cassetta postale e non vengono sovrascritte dalle azioni predefinite della cassetta postale come descritto in questa sezione. Per ripristinare i valori predefiniti delle azioni delle cassette postali di controllo (operazione che è possibile eseguire in qualsiasi momento), vedere la sezione [ripristinare le azioni delle cassette postali predefinite](#restore-the-default-mailbox-actions) più avanti in questo argomento.
@@ -143,13 +143,13 @@ Tenere presente che un amministratore con autorizzazione di accesso completo a u
 
 |**Azione della cassetta postale**|**Descrizione**|**Admin**|**Delegato**|**Proprietario**|
 |:---------|:---------|:---------:|:---------:|:---------:|
-|**Creare**|Creazione di un elemento del calendario. La creazione, l'invio o la ricezione di un messaggio non viene controllata,|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>||
-|**HardDelete**|Messaggio eliminato dalla cartella Elementi ripristinabili.|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
-|**MoveToDeletedItems**|Messaggio eliminato e spostato nella cartella Posta eliminata.|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
-|**SendAs**|Un messaggio è stato inviato con l'autorizzazione SendAs,|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>||
-|**SendOnBehalf**|Un messaggio è stato inviato con l'autorizzazione SendOnBehalf, |![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>||
-|**SoftDelete**|Messaggio eliminato in modo definitivo dalla cartella Posta eliminata. Gli elementi eliminati temporaneamente vengono spostati nella cartella Elementi ripristinabili.|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
-|**Aggiorna**|Modifiche apportate a un messaggio o alle relative proprietà.|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
+|**Creare**|Creazione di un elemento del calendario. La creazione, l'invio o la ricezione di un messaggio non viene controllata,|![Segno di spunta](../media/checkmark.png)<sup>\*</sup>|![Segno di spunta](../media/checkmark.png)<sup>\*</sup>||
+|**HardDelete**|Messaggio eliminato dalla cartella Elementi ripristinabili.|![Segno di spunta](../media/checkmark.png)<sup>\*</sup>|![Segno di spunta](../media/checkmark.png)<sup>\*</sup>|![Segno di spunta](../media/checkmark.png)<sup>\*</sup>|
+|**MoveToDeletedItems**|Messaggio eliminato e spostato nella cartella Posta eliminata.|![Segno di spunta](../media/checkmark.png)<sup>\*</sup>|![Segno di spunta](../media/checkmark.png)<sup>\*</sup>|![Segno di spunta](../media/checkmark.png)<sup>\*</sup>|
+|**SendAs**|Un messaggio è stato inviato con l'autorizzazione SendAs,|![Segno di spunta](../media/checkmark.png)<sup>\*</sup>|![Segno di spunta](../media/checkmark.png)<sup>\*</sup>||
+|**SendOnBehalf**|Un messaggio è stato inviato con l'autorizzazione SendOnBehalf, |![Segno di spunta](../media/checkmark.png)<sup>\*</sup>|![Segno di spunta](../media/checkmark.png)<sup>\*</sup>||
+|**SoftDelete**|Messaggio eliminato in modo definitivo dalla cartella Posta eliminata. Gli elementi eliminati temporaneamente vengono spostati nella cartella Elementi ripristinabili.|![Segno di spunta](../media/checkmark.png)<sup>\*</sup>|![Segno di spunta](../media/checkmark.png)<sup>\*</sup>|![Segno di spunta](../media/checkmark.png)<sup>\*</sup>|
+|**Aggiornamento**|Modifiche apportate a un messaggio o alle relative proprietà.|![Segno di spunta](../media/checkmark.png)<sup>\*</sup>|![Segno di spunta](../media/checkmark.png)<sup>\*</sup>|![Segno di spunta](../media/checkmark.png)<sup>\*</sup>|
 
 ### <a name="verify-that-default-mailbox-actions-are-being-logged-for-each-logon-type"></a>Verificare che le azioni delle cassette postali predefinite vengano registrate per ogni tipo di accesso
 
@@ -173,7 +173,7 @@ Il valore `Admin, Delegate, Owner` indica:
 
 - Un amministratore *non ha* modificato le azioni delle cassette postali controllate per qualsiasi tipo di accesso in una cassetta postale utente o in una cassetta postale condivisa. Nota Questo è lo stato predefinito dopo che il controllo delle cassette postali per impostazione predefinita viene inizialmente attivato all'interno dell'organizzazione.
 
-Se un amministratore ha mai modificato le azioni della cassetta postale controllate per un tipo di accesso (utilizzando i parametri *AuditAdmin*, *AuditDelegate*o *AuditOwner* sul cmdlet **Set-Mailbox** ), il valore della proprietà sarà diverso.
+Se un amministratore ha mai modificato le azioni della cassetta postale controllate per un tipo di accesso (utilizzando i parametri *AuditAdmin*, *AuditDelegate* o *AuditOwner* sul cmdlet **Set-Mailbox** ), il valore della proprietà sarà diverso.
 
 Ad esempio, il valore della `Owner` proprietà *DefaultAuditSet* in una cassetta postale utente o in una cassetta postale condivisa indica quanto segue:
 
@@ -221,7 +221,7 @@ Tuttavia, è possibile che l'organizzazione debba controllare un diverso insieme
 
 ### <a name="change-the-mailbox-actions-to-audit"></a>Modificare le azioni delle cassette postali da controllare
 
-È possibile utilizzare i parametri *AuditAdmin*, *AuditDelegate*o *AuditOwner* sul cmdlet **Set-Mailbox** per modificare le azioni delle cassette postali controllate per le cassette postali degli utenti e le cassette postali condivise (le azioni controllate per le cassette postali del gruppo Microsoft 365 non possono essere personalizzate).
+È possibile utilizzare i parametri *AuditAdmin*, *AuditDelegate* o *AuditOwner* sul cmdlet **Set-Mailbox** per modificare le azioni delle cassette postali controllate per le cassette postali degli utenti e le cassette postali condivise (le azioni controllate per le cassette postali del gruppo Microsoft 365 non possono essere personalizzate).
 
 È possibile utilizzare due metodi diversi per specificare le azioni delle cassette postali:
 
@@ -339,7 +339,7 @@ Get-MailboxAuditBypassAssociation -Identity <MailboxIdentity> | Format-List Audi
 
 Il valore **true** indica che la registrazione di controllo delle cassette postali viene ignorata per l'utente.
 
-## <a name="more-information"></a>Ulteriori informazioni
+## <a name="more-information"></a>Altre informazioni
 
 - Anche se la registrazione di controllo delle cassette postali è attivata per impostazione predefinita per tutte le organizzazioni, solo gli utenti con licenze E5 restituiranno gli eventi del registro di controllo delle cassette postali nelle [ricerche del registro di controllo nel centro sicurezza & conformità](search-the-audit-log-in-security-and-compliance.md) o tramite l' [API di gestione di Office 365](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference) **per impostazione predefinita**
 

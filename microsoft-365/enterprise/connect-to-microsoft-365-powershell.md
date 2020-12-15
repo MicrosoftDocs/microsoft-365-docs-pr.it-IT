@@ -1,5 +1,5 @@
 ---
-title: Connettersi a Microsoft 365 con PowerShell
+title: Collegare Microsoft 365 con PowerShell
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -24,9 +24,9 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 11/12/2020
 ms.locfileid: "49002406"
 ---
-# <a name="connect-to-microsoft-365-with-powershell"></a>Connettersi a Microsoft 365 con PowerShell
+# <a name="connect-to-microsoft-365-with-powershell"></a>Collegare Microsoft 365 con PowerShell
 
-*Questo articolo può essere applicato sia a Microsoft 365 Enterprise che a Office 365 Enterprise.*
+*Questo articolo si applica sia a Microsoft 365 Enterprise che a Office 365 Enterprise*.
 
 PowerShell per Microsoft 365 consente di gestire le impostazioni di Microsoft 365 dalla riga di comando. Per connettersi PowerShell basta installare il software richiesto e quindi connettersi alla propria organizzazione di Microsoft 365.
 
@@ -37,7 +37,7 @@ Sono disponibili due versioni del modulo PowerShell che è possibile usare per c
 
 Attualmente il modulo di Azure Active Directory PowerShell per Graph non sostituisce completamente le funzionalità del Modulo di Microsoft Azure Active Directory per Windows PowerShell per l'amministrazione di utenti, gruppi e licenze. In alcuni casi, è necessario usare entrambe le versioni. È possibile installare tranquillamente entrambe le versioni nello stesso computer.
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare?
+## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare
 
 
 **Sistema operativo**
@@ -98,7 +98,7 @@ Per connettersi ad Azure Active Directory (Azure AD) per l'abbonamento a Microso
 | U.S. Government DoD di Office 365 e U.S. Government GCC High di Office 365 | `Connect-AzureAD -AzureEnvironmentName AzureUSGovernment` |
 |||
 
-Nella finestra di dialogo per **accedere all'account** , digitare nome utente e password dell'account aziendale o dell'istituto di istruzione di Microsoft 365, quindi fare clic su **OK**.
+Nella finestra di dialogo per **accedere all'account**, digitare nome utente e password dell'account aziendale o dell'istituto di istruzione di Microsoft 365, quindi fare clic su **OK**.
 
 Se si utilizza l'autenticazione a più fattori, seguire le istruzioni per fornire ulteriori informazioni di autenticazione, ad esempio un codice di verifica.
 
@@ -138,7 +138,7 @@ Per connettersi ad Azure AD per l'abbonamento a Microsoft 365 con un nome accoun
 | U.S. Government DoD di Office 365 e U.S. Government GCC High di Office 365 | `Connect-MsolService -AzureEnvironment USGovernment` |
 |||
 
-Nella finestra di dialogo per **accedere all'account** , digitare nome utente e password dell'account aziendale o dell'istituto di istruzione di Microsoft 365, quindi fare clic su **OK**.
+Nella finestra di dialogo per **accedere all'account**, digitare nome utente e password dell'account aziendale o dell'istituto di istruzione di Microsoft 365, quindi fare clic su **OK**.
 
 Se si utilizza l'autenticazione a più fattori, seguire le istruzioni per fornire ulteriori informazioni di autenticazione, ad esempio un codice di verifica.
 
@@ -165,9 +165,9 @@ Se viene visualizzato un messaggio di errore, controllare i problemi seguenti:
   (Get-Item C:\Windows\System32\WindowsPowerShell\v1.0\Modules\MSOnline\Microsoft.Online.Administration.Automation.PSModule.dll).VersionInfo.FileVersion
   ```
 
-    Se il numero di versione restituito è inferiore a *1.0.8070.2* , disinstallare il Modulo di Microsoft Azure Active Directory per Windows PowerShell e ripetere l'installazione dal [Passaggio 1](#step-1-install-the-required-software).
+    Se il numero di versione restituito è inferiore a *1.0.8070.2*, disinstallare il Modulo di Microsoft Azure Active Directory per Windows PowerShell e ripetere l'installazione dal [Passaggio 1](#step-1-install-the-required-software).
 
-- **Se viene visualizzato un errore di connessione** , vedere [Errore "Connect-MsolService: si è verificata un'eccezione di tipo"](https://go.microsoft.com/fwlink/p/?LinkId=532377).
+- **Se viene visualizzato un errore di connessione**, vedere [Errore "Connect-MsolService: si è verificata un'eccezione di tipo"](https://go.microsoft.com/fwlink/p/?LinkId=532377).
     
 - **Se viene visualizzato un messaggio di errore "Get-Item: impossibile trovare il percorso", eseguire questo comando:**
 

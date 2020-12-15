@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 ROBOTS: NOINDEX
 description: Gli amministratori possono imparare a usare i tag di quarantena per controllare quali utenti sono in grado di eseguire nei messaggi in quarantena.
-ms.openlocfilehash: 498a5f45fa62481f7f4f8dfe5ece8a51a038f99a
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.openlocfilehash: 167f147d7c74b78b1a1661b5444625fbf1cf3d41
+ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49616009"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "49683068"
 ---
 # <a name="quarantine-tags"></a>Tag di quarantena
 
@@ -44,21 +44,21 @@ Nella tabella seguente sono descritte le autorizzazioni individuali disponibili 
 
 |Autorizzazione|Nessun diritto di accesso|Accesso limitato|Accesso completo|
 |---|:---:|:---:|:---:|
-|**Consenti mittente** (_PermissionToAllowSender_)|||![Segno di spunta](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|**Blocca mittente** (_PermissionToBlockSender_)||![Segno di spunta](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Segno di spunta](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|**Delete** (_PermissionToDelete_)||![Segno di spunta](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Segno di spunta](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|**Anteprima** (_PermissionToPreview_)||![Segno di spunta](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Segno di spunta](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|**Consenti ai destinatari di rilasciare un messaggio dalla quarantena** (_PermissionToRelease_)|||![Segno di spunta](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|**Consenti ai destinatari di richiedere il rilascio di un messaggio dalla quarantena** (_PermissionToRequestRelease_)||![Segno di spunta](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+|**Consenti mittente** (_PermissionToAllowSender_)|||![Segno di spunta](../../media/checkmark.png)|
+|**Blocca mittente** (_PermissionToBlockSender_)||![Segno di spunta](../../media/checkmark.png)|![Segno di spunta](../../media/checkmark.png)|
+|**Delete** (_PermissionToDelete_)||![Segno di spunta](../../media/checkmark.png)|![Segno di spunta](../../media/checkmark.png)|
+|**Anteprima** (_PermissionToPreview_)||![Segno di spunta](../../media/checkmark.png)|![Segno di spunta](../../media/checkmark.png)|
+|**Consenti ai destinatari di rilasciare un messaggio dalla quarantena** (_PermissionToRelease_)|||![Segno di spunta](../../media/checkmark.png)|
+|**Consenti ai destinatari di richiedere il rilascio di un messaggio dalla quarantena** (_PermissionToRequestRelease_)||![Segno di spunta](../../media/checkmark.png)||
 |
 
 Se non si desiderano le autorizzazioni predefinite nei gruppi di autorizzazioni preimpostati, è possibile utilizzare le autorizzazioni personalizzate quando si creano o si modificano i tag di quarantena personalizzati. Per ulteriori informazioni sulle operazioni eseguite da ogni autorizzazione, vedere la sezione relativa alle autorizzazioni per i [tag di quarantena](#quarantine-tag-permission-details) più avanti in questo articolo.
 
 È possibile creare e assegnare tag di quarantena nel centro sicurezza & Compliance o in PowerShell (Exchange Online PowerShell per Microsoft 365 organizzazioni con cassette postali di Exchange Online; standalone EOP PowerShell nelle organizzazioni di EOP senza cassette postali di Exchange Online).
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare
+## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare?
 
-- Aprire il Centro sicurezza e conformità in<https://protection.office.com/>. Per passare direttamente alla pagina dei **tag di quarantena** , Apri <https://protection.office.com/quarantineTags> .
+- Aprire il Centro sicurezza e conformità in <https://protection.office.com/>. Per passare direttamente alla pagina dei **tag di quarantena** , Apri <https://protection.office.com/quarantineTags> .
 
 - Per informazioni su come connettersi a PowerShell per Exchange Online, vedere [Connettersi a PowerShell per Exchange Online](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell). Per connettersi a PowerShell di EOP autonomo, vedere [Connettersi a PowerShell per Exchange Online Protection](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
 

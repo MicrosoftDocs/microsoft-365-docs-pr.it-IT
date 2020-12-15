@@ -17,12 +17,12 @@ ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
 ms.collection:
 - M365-security-compliance
 description: Gli amministratori possono ottenere informazioni su come visualizzare, creare, modificare ed eliminare i criteri per i collegamenti sicuri e le impostazioni dei collegamenti sicuri globali in Microsoft Defender per Office 365.
-ms.openlocfilehash: 8a6d8a7ad567b658f04cb0b28800d4edbc33ec67
-ms.sourcegitcommit: f81ca61f74f11a7436a6172538c3bda81b484d62
+ms.openlocfilehash: 7a00b73855302f5046afa0605fd7188007394ed7
+ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 12/15/2020
-ms.locfileid: "49675242"
+ms.locfileid: "49683164"
 ---
 # <a name="set-up-safe-links-policies-in-microsoft-defender-for-office-365"></a>Configurare i criteri per i collegamenti sicuri in Microsoft Defender per Office 365
 
@@ -178,7 +178,7 @@ Per abilitare o disabilitare un criterio o impostare l'ordine di priorità dei c
 
    - Spostare l'interruttore a sinistra per disabilitare il criterio: ![Disattiva criterio](../../media/scc-toggle-off.png).
 
-   - Spostare l'interruttore a destra per abilitare il criterio: ![Attiva il criterio](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png).
+   - Spostare l'interruttore a destra per abilitare il criterio: ![Attiva il criterio](../../media/scc-toggle-on.png).
 
 ### <a name="set-the-priority-of-safe-links-policies"></a>Impostare la priorità dei criteri collegamenti sicuri
 

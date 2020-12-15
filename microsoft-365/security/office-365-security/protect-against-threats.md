@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-m365-defender
 description: Gli amministratori possono acquisire informazioni sulla protezione dalle minacce in Microsoft 365 e configurare come utilizzarla per l'organizzazione.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 646fff4550de2e07342c0fef04952846db65a8eb
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.openlocfilehash: 3eec37f01bb39dda9f767ad32be96bbff43a2ee0
+ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49615121"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "49683248"
 ---
 # <a name="protect-against-threats"></a>Protezione dalle minacce
 
@@ -179,9 +179,9 @@ Per configurare i [collegamenti sicuri](atp-safe-links.md), esaminare e modifica
 
 1. Nel [Centro sicurezza & conformità](https://protection.office.com)scegliere criteri di **gestione dei** \>  \> **collegamenti sicuri ATP** e quindi fare clic su **Impostazioni globali** e quindi configurare le impostazioni seguenti:
 
-   - Verificare l' **utilizzo di collegamenti sicuri in: le applicazioni di Office 365** sono attivate: ![ Attiva/disattiva ](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png) .
+   - Verificare l' **utilizzo di collegamenti sicuri in: le applicazioni di Office 365** sono attivate: ![ Attiva/disattiva ](../../media/scc-toggle-on.png) .
    - **Non monitorare quando gli utenti fanno clic su collegamenti sicuri**: disattivare questa impostazione per tener conto degli scatti degli utenti: ![ disattivazione ](../../media/scc-toggle-off.png) .
-   - **Non consentire agli utenti di fare clic su collegamenti sicuri con l'URL originale**: verificare che questa impostazione sia attivata: ![ Attiva/disattiva ](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png) .
+   - **Non consentire agli utenti di fare clic su collegamenti sicuri con l'URL originale**: verificare che questa impostazione sia attivata: ![ Attiva/disattiva ](../../media/scc-toggle-on.png) .
 
    Al termine, scegliere **Salva**.
 
@@ -216,7 +216,7 @@ Carichi di lavoro come SharePoint, OneDrive e teams sono stati creati per la col
 
 1. Nel [Centro sicurezza & conformità](https://protection.office.com) **, scegliere** \>  \> **allegati sicuri ATP** e quindi fare clic su **Impostazioni globali**.
 
-2. Verificare che il pulsante attiva **ATP per SharePoint, OneDrive e Microsoft teams** sia a destra: ![ attiva ](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png) o disattiva e quindi fare clic su **Salva**.
+2. Verificare che il pulsante attiva **ATP per SharePoint, OneDrive e Microsoft teams** sia a destra: ![ attiva ](../../media/scc-toggle-on.png) o disattiva e quindi fare clic su **Salva**.
 
 3. Rivedere (e, a seconda dei casi, modificare) i [criteri per gli allegati sicuri](set-up-atp-safe-attachments-policies.md) dell'organizzazione e i [criteri collegamenti sicuri](set-up-atp-safe-links-policies.md).
 

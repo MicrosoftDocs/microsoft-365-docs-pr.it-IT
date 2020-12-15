@@ -17,12 +17,12 @@ ms.custom:
 localization_priority: Priority
 f1.keywords: NOCSH
 description: Informazioni sulle opzioni disponibili per creare un ambiente di condivisione guest sicuro in Microsoft 365, fornendo l'accesso guest per una migliore collaborazione.
-ms.openlocfilehash: 4e2045113a6c98e2b3839a3a2cdd83105be94023
-ms.sourcegitcommit: c1dd5be42fe0c5dcc7c05817c941edd9076febf8
+ms.openlocfilehash: c52feeb8e5c85d38dfa1623ecdd7c2ee2a381fbd
+ms.sourcegitcommit: 1a9f0f878c045e1ddd59088ca2a94397605a242a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "49558189"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "49667706"
 ---
 # <a name="create-a-secure-guest-sharing-environment"></a>Creare un ambiente di condivisione guest sicuro
 
@@ -162,7 +162,7 @@ Richiedendo agli utenti guest di accedere ai team, ai siti e ai file solo tramit
 
 Per i gruppi di Microsoft 365 e Teams, si usano i criteri di accesso condizionale di Azure AD. Per SharePoint, la configurazione si esegue nell'interfaccia di amministrazione di SharePoint. È anche possibile [usare le etichette di riservatezza per limitare gli utenti guest all'accesso solo Web](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites).
 
-Per limitare i guest al solo accesso Web per gruppi e team
+Per limitare agli utenti guest l’accesso solo Web per gruppi e team:
 
 1. Passare a [Criteri di accesso condizionale di Azure](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ConditionalAccessBlade).
 2. Nel pannello **Accesso condizionale - Criteri** selezionare **Nuovi criteri**.

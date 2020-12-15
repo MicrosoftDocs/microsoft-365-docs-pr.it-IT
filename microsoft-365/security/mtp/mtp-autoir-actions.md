@@ -20,13 +20,13 @@ ms.collection:
 ms.topic: conceptual
 ms.custom: autoir
 ms.reviewer: evaldm, isco
-ms.date: 09/16/2020
-ms.openlocfilehash: ed0b9afa576f65d33cd9a49dfacd96ffaf173d28
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.date: 12/09/2020
+ms.openlocfilehash: b34f4a532571d6215500ab2bec022489fd462d0f
+ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48846533"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "49683368"
 ---
 # <a name="approve-or-reject-pending-actions-following-an-automated-investigation"></a>Approvare o rifiutare le azioni in sospeso dopo un'analisi automatizzata
 
@@ -44,7 +44,7 @@ Quando viene eseguita un’indagine automatizzata, può dare come risultato una 
 Le azioni in sospeso possono essere esaminate e approvate tramite il [Centro azioni](#review-a-pending-action-in-the-action-center) o la [visualizzazione dettagli analisi](#review-a-pending-action-in-the-investigation-details-view).
 
 > [!NOTE]
-> È necessario avere [autorizzazioni appropriate](mtp-action-center.md#required-permissions-for-action-center-tasks) per approvare o rifiutare azioni correttive.
+> È necessario avere [autorizzazioni appropriate](mtp-action-center.md#required-permissions-for-action-center-tasks) per approvare o rifiutare azioni correttive. Per ulteriori informazioni, vedere [prerequisiti per l'analisi e la risposta automatizzati in Microsoft 365 Defender](mtp-configure-auto-investigation-response.md#prerequisites-for-automated-investigation-and-response-in-microsoft-365-defender).
 
 ## <a name="review-a-pending-action-in-the-action-center"></a>Rivedere un'azione in sospeso nel centro notifiche
 
@@ -52,9 +52,9 @@ Le azioni in sospeso possono essere esaminate e approvate tramite il [Centro azi
 
 2. Nel riquadro di spostamento fare clic su **Centro notifiche**. 
 
-3. Nel centro notifiche, nella scheda **In sospeso** , selezionare un elemento dall’elenco. 
+3. Nel centro notifiche, nella scheda **In sospeso**, selezionare un elemento dall’elenco. 
 
-    - Se si seleziona un elemento nella colonna **Numero indagine** , verrà visualizzata la pagina con i dettagli sulle indagini. In questa pagina è possibile visualizzare i risultati dell'indagine e quindi approvare o rifiutare l'azione consigliata.
+    - Se si seleziona un elemento nella colonna **Numero indagine**, verrà visualizzata la pagina con i dettagli sulle indagini. In questa pagina è possibile visualizzare i risultati dell'indagine e quindi approvare o rifiutare l'azione consigliata.
  
     - Se si seleziona una riga nell'elenco, verrà visualizzato un riquadro a comparsa, in cui sarà possibile vedere le informazioni su quell'elemento. <br/>![Approvare o rifiutare un’azione](../../media/air-actioncenter-itemselected.png)<br/>Utilizzare i collegamenti per visualizzare un avviso associato o un’indagine e approvare o rifiutare l’azione.
 
@@ -62,7 +62,7 @@ Le azioni in sospeso possono essere esaminate e approvate tramite il [Centro azi
 
 ![Dettagli indagine](../../media/mtp-air-investdetails.png)
 
-1. In una pagina di [investigazione dettagli](mtp-autoir-results.md), selezionare la scheda **azioni in sospeso** (o **Azioni** ). Gli elementi in attesa di approvazione sono elencati in questa scheda.
+1. In una pagina di [investigazione dettagli](mtp-autoir-results.md), selezionare la scheda **azioni in sospeso** (o **Azioni**). Gli elementi in attesa di approvazione sono elencati in questa scheda.
 
 2. Selezionare un elemento nella lista, quindi scegliere **Approva** o **Rifiuta**.
 

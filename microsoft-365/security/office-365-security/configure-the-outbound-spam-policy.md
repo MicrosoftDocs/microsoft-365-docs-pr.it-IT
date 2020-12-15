@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Gli amministratori possono ottenere informazioni su come visualizzare, creare, modificare ed eliminare i criteri di posta indesiderata in uscita in Exchange Online Protection (EOP).
-ms.openlocfilehash: 0deafe2817c3e10371b02349aca2612af090af65
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+ms.openlocfilehash: 1e25d687ea22c70ba36f7c183b1fd8e578f7fa13
+ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49659703"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "49683332"
 ---
 # <a name="configure-outbound-spam-filtering-in-eop"></a>Configurare il filtro della posta indesiderata in uscita in EOP
 
@@ -230,7 +230,7 @@ Per abilitare o disabilitare un criterio, impostare l'ordine di priorità dei cr
 
    Spostare l'interruttore a sinistra per disabilitare il criterio: ![Disattiva](../../media/scc-toggle-off.png)
 
-   Spostare l'interruttore a destra per abilitare il criterio: ![Attiva](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png)
+   Spostare l'interruttore a destra per abilitare il criterio: ![Attiva](../../media/scc-toggle-on.png)
 
 Non è possibile disabilitare il criterio di posta indesiderata in uscita predefinito.
 

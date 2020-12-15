@@ -15,12 +15,12 @@ ms.collection:
 ms.custom: autoir
 ms.reviewer: evaldm, isco
 f1.keywords: CSH
-ms.openlocfilehash: 3c8477ce16249cb4d21c736da60d619774175041
-ms.sourcegitcommit: 2d3e85173c65a9e0ce92624a80ed7a9839f5b8bd
+ms.openlocfilehash: 12f71011e28d5c8c8287146670282a86a77781ff
+ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49123608"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "49682982"
 ---
 # <a name="configure-automated-investigation-and-response-capabilities-in-microsoft-365-defender"></a>Configurare le funzionalità di analisi e risposta automatizzate in Microsoft 365 Defender
 
@@ -55,12 +55,11 @@ Se le indagini automatizzate vengono eseguite e se le azioni di correzione sono 
 
 1. Accedere a Microsoft Defender Security Center ( [https://securitycenter.windows.com](https://securitycenter.windows.com) ) ed eseguire l'accesso.
 
-2. Accedere a gruppi di dispositivi per **le**  >  **autorizzazioni** di impostazioni  >  **Device groups**. 
+2. Accedere a gruppi di dispositivi per **le**  >  **autorizzazioni** di impostazioni  >  . 
 
 3. Esaminare i criteri di gruppo di dispositivi. In particolare, esaminare la colonna **livello di correzione** . È consigliabile utilizzare **automaticamente le minacce complete**.  Potrebbe essere necessario creare o modificare i gruppi di dispositivi per ottenere il livello di automazione desiderato. Per ottenere assistenza per questa attività, vedere gli articoli seguenti:
 
    - [Come vengono corretti i rischi](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations#how-threats-are-remediated)
-   
    - [Creare e gestire gruppi di dispositivi](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/machine-groups) 
 
 ## <a name="review-your-security-and-alert-policies-in-office-365"></a>Esaminare i criteri di sicurezza e di avviso in Office 365
@@ -105,6 +104,6 @@ Le impostazioni di sicurezza di Office 365 consentono di proteggere la posta ele
 
 ## <a name="review-pending-and-completed-actions-in-the-action-center"></a>Esaminare le azioni in sospeso e completate nell'Action Center
 
-Dopo aver configurato l'analisi e la risposta automatizzata in Microsoft 365 Defender, il passaggio successivo consiste nel visitare il centro azioni ( [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) ). In questa pagina è possibile esaminare e approvare le azioni in sospeso e visualizzare le azioni di correzione eseguite automaticamente. 
+Dopo aver configurato l'analisi e la risposta automatizzata in Microsoft 365 Defender, il passaggio successivo consiste nel visitare il centro azioni ( [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) ). In questa pagina è possibile esaminare e approvare le azioni in sospeso e vedere operazioni di correzione eseguite automaticamente o manualmente. 
 
 [Visitare il centro azioni](mtp-action-center.md).

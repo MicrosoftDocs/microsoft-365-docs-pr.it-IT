@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 ms.custom: seo-marvel-apr2020
 description: Informazioni su come aggiungere un suggerimento per i criteri per un criterio di prevenzione della perdita di dati (DLP) per notificare a un utente che si sta utilizzando il contenuto che è in conflitto con un criterio DLP.
-ms.openlocfilehash: a36d1de9a24136943b41f12fe7f12a44d9df59f1
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 4f8855e3dce2adaf457b9a2453ca9dd827de5bcd
+ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44819306"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "49682949"
 ---
 # <a name="send-email-notifications-and-show-policy-tips-for-dlp-policies"></a>Inviare notifiche di posta elettronica e visualizzare i suggerimenti per i criteri di prevenzione della perdita dei dati
 
@@ -47,7 +47,7 @@ Nel centro sicurezza &amp; e conformità, quando si crea un criterio DLP, è pos
     
   - Per i documenti in un account OneDrive for business o in un sito di SharePoint Online, il suggerimento per i criteri è indicato da un'icona di avviso che viene visualizzata sull'elemento. Per visualizzare altre informazioni, è possibile selezionare un elemento e quindi fare clic su icona del riquadro informazioni **informazioni** ![ ](../media/50b6d51b-92b4-4c5f-bb4b-4ca2d4aa3d04.png) nell'angolo in alto a destra della pagina per aprire il riquadro dei dettagli. 
     
-  - Per i documenti di Excel, PowerPoint e Word archiviati in un sito di OneDrive for business o in un sito di SharePoint Online incluso nei criteri DLP, il suggerimento per i criteri viene visualizzato sulla barra dei messaggi e sulla visualizzazione Backstage (informazioni sul menu **file** \> **Info**).
+  - Per i documenti di Excel, PowerPoint e Word archiviati in un sito di OneDrive for business o in un sito di SharePoint Online incluso nei criteri DLP, il suggerimento per i criteri viene visualizzato sulla barra dei messaggi e sulla visualizzazione Backstage (informazioni sul menu **file** \> ).
     
 ## <a name="add-user-notifications-to-a-dlp-policy"></a>Aggiungere notifiche utente a un criterio DLP
 
@@ -57,7 +57,7 @@ Quando si crea un criterio DLP, è possibile abilitare le **notifiche degli uten
     
 2. Accedere usando l'account di lavoro o della scuola. Si è ora nel centro sicurezza e &amp; conformità.
     
-3. Nel centro sicurezza e &amp; conformità \> Left Navigation \> policy di **prevenzione della perdita dei dati** \> **Policy** \> **+ creare un criterio**.
+3. Nel centro sicurezza e &amp; conformità \> Left Navigation \> policy di **prevenzione della perdita dei dati** \>  \> **+ creare un criterio**.
     
     ![Pulsante Crea un criterio](../media/b1e48a08-92e2-47ca-abdc-4341694ddc7c.png)
   
@@ -79,7 +79,7 @@ Quando si crea un criterio DLP, è possibile abilitare le **notifiche degli uten
     
 7. Scegliere **Usa impostazioni avanzate** \> **successive**.
     
-8. Scegliere **+ nuova regola**.
+8. Scegliere **+ Nuova regola**.
     
 9. Nell'editor delle regole, in **notifiche utente**, impostare lo stato su.
     
@@ -169,7 +169,7 @@ Quando un documento in un sito di OneDrive for business o in un sito di SharePoi
     
    ![Icone del suggerimento per i criteri nei documenti in un account di OneDrive](../media/d3e9f772-03f9-4d28-82f8-3064784332a2.png)
   
-Per eseguire un'azione su un documento, è possibile selezionare l' \> icona **Seleziona informazioni** ![ riquadro delle informazioni ](../media/50b6d51b-92b4-4c5f-bb4b-4ca2d4aa3d04.png) nell'angolo in alto a destra della pagina per aprire il suggerimento per i \> **criteri di visualizzazione**del riquadro dei dettagli.
+Per eseguire un'azione su un documento, è possibile selezionare l' \> icona **Seleziona informazioni** ![ riquadro delle informazioni ](../media/50b6d51b-92b4-4c5f-bb4b-4ca2d4aa3d04.png) nell'angolo in alto a destra della pagina per aprire il suggerimento per i \> **criteri di visualizzazione** del riquadro dei dettagli.
   
 Il suggerimento per i criteri elenca i problemi con il contenuto e, se i suggerimenti per i criteri sono configurati con queste opzioni, è possibile selezionare **Risolvi** e quindi **ignorare** il suggerimento per i criteri oppure **segnalare** un falso positivo. 
   
@@ -203,7 +203,7 @@ I suggerimenti per i criteri funzionano se le informazioni riservate vengono vis
   
 ![Suggerimento per i criteri che indica che un allegato è in conflitto con un criterio DLP](../media/59ae6655-215f-47d9-ad1d-39c0d1e61740.png)
   
-Se i suggerimenti per i criteri sono configurati in modo da consentire la sostituzione, è possibile scegliere **Mostra dettagli** \> **sostituzione** \> immettere una giustificazione aziendale o segnalare un falso positivo \> **Override**.
+Se i suggerimenti per i criteri sono configurati in modo da consentire la sostituzione, è possibile scegliere **Mostra dettagli** \> **sostituzione** \> immettere una giustificazione aziendale o segnalare un falso positivo \> .
   
 ![Suggerimento per i criteri nel messaggio espanso per visualizzare l'opzione Sostituisci](../media/28bfb997-48a6-41f0-8682-d5e62488458a.png)
   
@@ -247,6 +247,9 @@ Quando le persone lavorano con contenuti sensibili nelle versioni desktop di Exc
 - Il sito è incluso in un criterio DLP configurato per l'utilizzo di suggerimenti per i criteri.
     
 I programmi desktop di Office sincronizzano automaticamente i criteri DLP direttamente da Office 365 e quindi eseguono la scansione dei documenti per assicurarsi che non siano in conflitto con i criteri DLP e che vengano visualizzati suggerimenti per i criteri in tempo reale.
+
+> [!NOTE]
+> Le app desktop di Office analizzano personalmente i documenti per determinare se i suggerimenti per i criteri DLP devono essere visualizzati. non vengono visualizzati suggerimenti per i criteri per i siti di SharePoint Online o OneDrive for business che sono già stati determinati in un file. Di conseguenza, potrebbe non essere sempre visualizzato un suggerimento per i criteri DLP nelle app desktop visualizzate nei siti di SharePoint Online o OneDrive for business. Al contrario, le applicazioni di Office sul Web mostrano solo i suggerimenti per i criteri DLP che i siti di SharePoint Online o i siti di OneDrive for business sono già stati determinati.
   
 A seconda della modalità di configurazione dei suggerimenti per i criteri nel criterio DLP, gli utenti possono scegliere se ignorare semplicemente il suggerimento per i criteri, ignorare il criterio con o senza una motivazione aziendale oppure segnalare un falso positivo.
   

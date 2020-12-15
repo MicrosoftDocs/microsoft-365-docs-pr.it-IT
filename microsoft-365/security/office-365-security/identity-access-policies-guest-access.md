@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 - m365solution-identitydevice
 - m365solution-scenario
-ms.openlocfilehash: 55a84fa8ba31cfd4f981f2820811b541ae340a27
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.openlocfilehash: c2c01278831433c02e5c869dba83f223eea57d27
+ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49357624"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "49683236"
 ---
 # <a name="policies-for-allowing-guest-and-external-b2b-access"></a>Criteri per consentire l'accesso all'ospite e all'esterno B2B
 
@@ -42,7 +42,7 @@ Per proteggere l'accesso guest e esterno con gli account di Azure AD B2B, nel di
 
 Nella tabella seguente sono elencati i criteri necessari per la creazione e l'aggiornamento. I criteri comuni collegano le istruzioni di configurazione associate nell'articolo [Common Identity and Device Access Policies](identity-access-policies.md) .
 
-|Livello di protezione|Criteri|Ulteriori informazioni|
+|Livello di protezione|Criteri|Altre informazioni|
 |---|---|---|
 |**Protezione di base**|[Richiedi sempre un master per utenti esterni e Guest](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Creare il nuovo criterio e configurare: <ul><li> Per le **assegnazioni > gli utenti e i gruppi > includono**, scegliere **Seleziona utenti e gruppi**, quindi selezionare **tutti gli utenti guest ed esterni**. </li><li> Per le **assegnazioni > condizioni > l'accesso**, lasciare deselezionate tutte le opzioni per applicare sempre l'autenticazione a più fattori (AMF).</li>|
 ||[Richiedere l'AMF quando il rischio di accesso è *medio* o *elevato*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Modificare questo criterio per escludere gli utenti esterni e Guest.|
@@ -52,7 +52,7 @@ Per includere o escludere gli utenti guest ed esterni nei criteri di accesso con
 
 ![acquisizione dello schermo dei controlli per l'esclusione di utenti esterni e Guest](../../media/microsoft-365-policies-configurations/identity-access-exclude-guests-ui.png)
 
-## <a name="more-information"></a>Ulteriori informazioni
+## <a name="more-information"></a>Altre informazioni
 
 ### <a name="guest-and-external-access-with-microsoft-teams"></a>Guest e accesso esterno con Microsoft Teams
 
@@ -63,8 +63,6 @@ Microsoft teams definisce quanto segue:
 - **L'accesso esterno** è per un utente esterno che non dispone di un account B2B. L'accesso esterno può includere gli inviti e la partecipazione a chiamate, chat e riunioni, ma non include l'appartenenza al team e l'accesso alle risorse del team.
 
 Per ulteriori informazioni, vedere il [confronto tra Guest e accesso esterno per i team](https://docs.microsoft.com/microsoftteams/communicate-with-users-from-other-organizations#compare-external-and-guest-access).
-
-I criteri di accesso condizionale si applicano solo all'accesso guest nei team perché è presente un account di Azure AD B2B corrispondente.
 
 Per ulteriori informazioni sulla protezione dei criteri di identità e accesso ai dispositivi per i team [, vedere consigli sui criteri per la protezione delle chat, dei gruppi e dei file del team](teams-access-policies.md) .
 

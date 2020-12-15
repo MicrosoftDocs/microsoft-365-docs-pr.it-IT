@@ -15,12 +15,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Gli amministratori possono ottenere informazioni su come configurare le voci URL nell'elenco Consenti/blocca tenant nel centro sicurezza & Compliance.
-ms.openlocfilehash: 4bf5e2e29a9f48c434be527a2447ca4bf98c4208
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+ms.openlocfilehash: f60e2f29bf9b880e9d2247fa59554300ae348a03
+ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49659999"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "49683212"
 ---
 # <a name="manage-urls-in-the-tenant-allowblock-list"></a>Gestire URL nell'elenco di tenant consentiti/bloccati
 
@@ -83,7 +83,7 @@ Per informazioni dettagliate sulla sintassi per le voci URL, vedere la [sintassi
 
      oppure
 
-     - Spostare l'interruttore verso destra per configurare le voci in modo che non scadano mai: ![Attiva](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png).
+     - Spostare l'interruttore verso destra per configurare le voci in modo che non scadano mai: ![Attiva](../../media/scc-toggle-on.png).
 
    - **Nota facoltativa**: immettere il testo descrittivo per le voci.
 
@@ -111,7 +111,7 @@ Fare clic su **filtro**. Nel riquadro a comparsa del **filtro** visualizzato, co
 
 - **Azione**: selezionare **Consenti**, **blocca** o entrambi.
 
-- **Non scade mai**: selezionare disattivata (disattivazione ![ ](../../media/scc-toggle-off.png) ) o attivata ( ![ attiva o disattiva ](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png) ).
+- **Non scade mai**: selezionare disattivata: attiva ![ ](../../media/scc-toggle-off.png) o disattiva: attiva o disattiva l'opzione ![ ](../../media/scc-toggle-on.png) .
 
 - **Ultimo aggiornamento**: selezionare una data di inizio (**da**), una data di fine (**a**) o entrambe.
 
@@ -141,7 +141,7 @@ Non è possibile modificare il valore dell'URL stesso. Al contrario, è necessar
 
      oppure
 
-     - Spostare l'interruttore verso destra per configurare la voce in modo che non scada mai: ![Attiva](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png).
+     - Spostare l'interruttore verso destra per configurare la voce in modo che non scada mai: ![Attiva](../../media/scc-toggle-on.png).
 
    - **Nota facoltativa**: immettere il testo descrittivo per la voce.
 

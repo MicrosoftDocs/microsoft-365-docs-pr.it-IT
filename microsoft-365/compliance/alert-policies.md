@@ -19,12 +19,12 @@ ms.assetid: 8927b8b9-c5bc-45a8-a9f9-96c732e58264
 ms.custom:
 - seo-marvel-apr2020
 description: Creare criteri di avviso nel centro sicurezza e conformità di Office 365 e Microsoft 365 per monitorare le potenziali minacce, la perdita di dati e i problemi relativi alle autorizzazioni.
-ms.openlocfilehash: b6a1689ab475b9518c290bf3db03d2144610bf8b
-ms.sourcegitcommit: 001e64f89f9c3cd6bbd4a25459f5bee3b966820c
+ms.openlocfilehash: 5749b38ca9b72c859e9c553ccbb4fe6a44be9754
+ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "49367179"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "49682959"
 ---
 # <a name="alert-policies-in-the-security-and-compliance-center"></a>Criteri di avviso nel Centro sicurezza e conformità
 
@@ -217,33 +217,33 @@ Per visualizzare la categoria a cui è assegnato un criterio di avviso predefini
 |:---------|:---------:|:---------:|:---------:|:---------:|:---------:|:---------:|
 |Registri di controllo|||||||
 |Gestione dei casi|||||||
-|Amministratore di conformità|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+|Amministratore di conformità|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)||![Segno di spunta](../media/checkmark.png)||![Segno di spunta](../media/checkmark.png)|
 |Ricerca di conformità|||||||
 |Gestione dei dispositivi|||||||
 |Gestione della disposizione|||||||
-|Gestione della conformità DLP||![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|||||
-|Esporta|||||||
+|Gestione della conformità DLP||![Segno di spunta](../media/checkmark.png)|||||
+|Esportazione|||||||
 |Hold|||||||
-|Gestione avvisi||||||![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|Configurazione dell'organizzazione||||||![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+|Gestione avvisi||||||![Segno di spunta](../media/checkmark.png)|
+|Configurazione dell'organizzazione||||||![Segno di spunta](../media/checkmark.png)|
 |Anteprima|||||||
-|Gestione dei record|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||||||
-|Gestione della conservazione|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||||||
+|Gestione dei record|![Segno di spunta](../media/checkmark.png)||||||
+|Gestione della conservazione|![Segno di spunta](../media/checkmark.png)||||||
 |Revisione|||||||
 |Decrittografia RMS|||||||
-|Gestione dei ruoli||||![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|||
+|Gestione dei ruoli||||![Segno di spunta](../media/checkmark.png)|||
 |Ricerca ed eliminazione|||||||
-|Amministratore della sicurezza||![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|Ruolo con autorizzazioni di lettura per la sicurezza||![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)
+|Amministratore della sicurezza||![Segno di spunta](../media/checkmark.png)||![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|
+|Ruolo con autorizzazioni di lettura per la sicurezza||![Segno di spunta](../media/checkmark.png)||![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)
 |Visualizzazione garanzia del servizio|||||||
 |Amministratore revisione di supervisione|||||||
 |View-Only registri di controllo|||||||
 |Gestione dei dispositivi View-Only|||||||
-|View-Only la gestione della conformità DLP||![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|||||
-|View-Only gestire gli avvisi||||||![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|Destinatari solo visualizzazione|||  ![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||||
-|Gestione dei record View-Only|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||||||
-|Gestione della conservazione View-Only|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||||||
+|View-Only la gestione della conformità DLP||![Segno di spunta](../media/checkmark.png)|||||
+|View-Only gestire gli avvisi||||||![Segno di spunta](../media/checkmark.png)|
+|Destinatari solo visualizzazione|||![Segno di spunta](../media/checkmark.png)||||
+|Gestione dei record View-Only|![Segno di spunta](../media/checkmark.png)||||||
+|Gestione della conservazione View-Only|![Segno di spunta](../media/checkmark.png)||||||
 |||||||
 
 > [!TIP]

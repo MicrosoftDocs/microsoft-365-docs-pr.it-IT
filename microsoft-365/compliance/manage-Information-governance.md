@@ -29,7 +29,7 @@ Usare le funzionalità di Governance delle informazioni Microsoft, a volte abbre
 
 ![Gestire i dati: governance delle informazioni e gestione dei record](../media/information-governance-records-management.png)
 
-Vuoi proteggere i dati? Vedere [Microsoft Information Protection in Microsoft 365](information-protection.md).
+Si vuole proteggere i propri dati? Vedere [Microsoft Information Protection in Microsoft 365](information-protection.md).
 
 ## <a name="information-governance"></a>Governance delle informazioni
 
