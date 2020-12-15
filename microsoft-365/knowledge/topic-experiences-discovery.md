@@ -1,143 +1,97 @@
 ---
-title: 'Gestire la rete di gestione delle informazioni (anteprima) '
-description: Come configurare la gestione delle informazioni.
+title: Gestire l'individuazione degli argomenti in Microsoft 365
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
-ms.date: 08/01/2020
+ms.reviewer: nkokoye
 audience: admin
 ms.topic: article
 ms.service: o365-administration
-search.appverid: ''
+search.appverid: MET150
+localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
-localization_priority: None
-ms.openlocfilehash: 265816a8d3d04b8d10b529f1ea1a0b658aa2931d
-ms.sourcegitcommit: 82d8be71c5861a501ac62a774b306a3fc1d4e627
+description: Informazioni su come amministrare l'individuazione degli argomenti in Microsoft 365.
+ms.openlocfilehash: 035fb74f1989dc7ef5b7fcf8e9c6d59b63cf2b42
+ms.sourcegitcommit: 1a9f0f878c045e1ddd59088ca2a94397605a242a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48989009"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "49667871"
 ---
-# <a name="manage-your-knowledge-management-network-preview"></a>Gestire la rete di gestione delle informazioni (anteprima)
+# <a name="manage-topic-discovery-in-microsoft-365"></a>Gestire l'individuazione degli argomenti in Microsoft 365
 
-> [!Note] 
-> Il contenuto di questo articolo è relativo all'anteprima privata di Project Cortex. [Altre informazioni su Project Cortex](https://aka.ms/projectcortex).
+È possibile gestire le impostazioni di individuazione degli argomenti nell'interfaccia di [amministrazione di Microsoft 365](https://admin.microsoft.com). Per eseguire queste attività, è necessario essere un amministratore globale o un amministratore di SharePoint.
 
+## <a name="to-access-topics-management-settings"></a>Per accedere alle impostazioni di gestione degli argomenti:
 
-Dopo aver [configurato la gestione della conoscenza](set-up-topic-experiences.md), in qualsiasi momento, un amministratore può apportare le modifiche alle impostazioni di configurazione tramite l'interfaccia di amministrazione di Microsoft 365.
+1. Nell'interfaccia di amministrazione di Microsoft 365 fare clic su **Impostazioni** e quindi su **Impostazioni org**.
+2. Nella scheda **Servizi** , fare clic su **Knowledge Network**.
 
-Ad esempio, potrebbe essere necessario modificare le impostazioni per una delle seguenti operazioni:
-- Aggiungere nuove origini di SharePoint ai miei argomenti.
-- Modificare gli utenti che avranno accesso agli argomenti.
-- Modificare gli utenti che dispongono delle autorizzazioni per eseguire attività nel centro argomenti.
-- Modificare il nome del centro argomenti
+    ![Connettere le persone alla conoscenza](../media/admin-org-knowledge-options-completed.png) 
 
+3. Selezionare la scheda **individuazione degli argomenti** . Per informazioni su ogni impostazione, vedere le sezioni seguenti.
 
-## <a name="requirements"></a>Requisiti 
-È necessario disporre delle autorizzazioni di amministratore globale o di amministratore di SharePoint per poter accedere all'interfaccia di amministrazione di Microsoft 365 e gestire le attività relative alla conoscenza organizzativa.
+    ![Knowledge-Network-Settings](../media/knowledge-network-settings-topic-discovery.png) 
 
+## <a name="select-sharepoint-topic-sources"></a>Selezionare origini degli argomenti di SharePoint
 
-## <a name="to-access-knowledge-management-settings"></a>Per accedere alle impostazioni di gestione delle informazioni:
+È possibile modificare i siti di SharePoint nell'organizzazione che verranno sottoposti a ricerca per indicizzazione per gli argomenti.
 
-1. Nell'interfaccia di amministrazione di Microsoft 365, selezionare **Setup** e quindi visualizzare la sezione relativa alle **informazioni sull'organizzazione** .
-2. Nella sezione **informazioni organizzative** fare clic su **Connetti persone alla conoscenza**.<br/>
+Se si desidera includere o escludere un elenco specifico di siti, è possibile utilizzare il modello CSV seguente:
 
-    ![Connettere le persone alla conoscenza](../media/content-understanding/admin-org-knowledge-options.png) </br>
+``` csv
+Site name,URL
+```
 
-3. Nella pagina **Connect people to Knowledge** selezionare **Manage** to open the **Knowledge Network Settings** pane.<br/>
+Se si aggiungono siti utilizzando lo strumento di selezione siti, questi vengono aggiunti all'elenco esistente di siti da includere o escludere. Se si carica un file. csv, sovrascrive qualsiasi elenco esistente. Se in precedenza sono stati inclusi o esclusi siti specifici, è possibile scaricare l'elenco come file. csv, apportare modifiche e caricare il nuovo elenco.
 
-    ![Knowledge-Network-Settings](../media/content-understanding/knowledge-network-settings.png) </br>
+Per scegliere i siti per l'individuazione degli argomenti
 
-## <a name="change-how-the-knowledge-network-can-find-topics"></a>Modificare il modo in cui la rete di informazioni può trovare argomenti
+1. Nella scheda **individuazione argomento** , in **selezionare origini argomento di SharePoint**, selezionare **modifica**.
+2. Nella pagina **Seleziona origini argomenti di SharePoint** selezionare i siti di SharePoint che verranno sottoposti a ricerca per indicizzazione come origini per gli argomenti durante l'individuazione. Questo include:
+    - **Tutti i siti**: tutti i siti di SharePoint nel tenant. Questo acquisisce i siti correnti e futuri.
+    - **All, eccetto siti selezionati**: digitare i nomi dei siti che si desidera escludere.  È inoltre possibile caricare un elenco di siti che si desidera escludere dall'individuazione. I siti creati in futuro verranno inclusi come origini per l'individuazione degli argomenti. 
+    - **Solo siti selezionati**: digitare i nomi dei siti che si desidera includere. È inoltre possibile caricare un elenco di siti. I siti creati in futuro non verranno inclusi come origini per l'individuazione degli argomenti.
+    - **Nessun sito**: gli argomenti non verranno generati o aggiornati automaticamente con il contenuto di SharePoint. Gli argomenti esistenti rimangono nell'argomento centro.
 
-Se si desidera aggiornare le opzioni per le origini degli argomenti di SharePoint, selezionare la scheda **individuazione argomenti** . Questa impostazione consente di selezionare i siti di SharePoint nel tenant che verranno sottoposti a ricerca per indicizzazione e estratti per gli argomenti.
-
-1. Nella scheda **individuazione argomento** , in **selezionare origini argomento di SharePoint** , selezionare **modifica**.
-2. Nella pagina **Seleziona origini argomenti di SharePoint** selezionare i siti di SharePoint che verranno sottoposti a ricerca per indicizzazione come origini per gli argomenti durante l'individuazione. Questo include:</br>
-    a. **Tutti i siti** : tutti i siti di SharePoint nel tenant. Questo acquisisce i siti correnti e futuri.</br>
-    b. **All, eccetto siti selezionati** : digitare i nomi dei siti che si desidera escludere.  È inoltre possibile caricare un elenco di siti che si desidera escludere dall'individuazione. I siti creati in futuro verranno inclusi come origini per l'individuazione degli argomenti. </br>
-    c. **Solo siti selezionati** : digitare i nomi dei siti che si desidera includere. È inoltre possibile caricare un elenco di siti. I siti creati in futuro non verranno inclusi come origini per l'individuazione degli argomenti. </br>
-
-    ![Scegliere come trovare gli argomenti](../media/content-understanding/k-manage-select-topic-source.png) </br>
+    ![Schermata dell'interfaccia utente di origini degli argomenti di SharePoint](../media/k-manage-select-topic-source.png)
    
-    Se si dispone di un numero di siti che si desidera escludere (se si seleziona **tutto, tranne i siti selezionati** ) o si include (se sono stati selezionati **solo i siti selezionati** ), è possibile scegliere di caricare un file CSV con i nomi e gli URL del sito. È possibile selezionare **Scarica modello di sito. csv** se si desidera utilizzare il file modello CSV.
+3. Fare clic su **Salva**.
 
-3. Selezionare **Salva**.
+## <a name="exclude-topics-by-name"></a>Escludi argomenti per nome
 
-##  <a name="change-who-can-see-topics-in-your-organization"></a>Modificare gli utenti che possono visualizzare gli argomenti nell'organizzazione
+È possibile escludere gli argomenti dall'individuazione caricando un elenco utilizzando un file. csv. Se sono stati precedentemente esclusi gli argomenti, è possibile scaricare il file. csv, apportare modifiche e caricarlo di nuovo.
 
-Selezionare la scheda **individuazione argomento** se si desidera aggiornare gli argomenti individuati nei risultati della ricerca e quando gli argomenti vengono evidenziati nel contenuto come le pagine di SharePoint.
+1. Nella scheda **individuazione argomento** , in **argomenti Escludi**, selezionare **modifica**.
+2. Fare clic su **Escludi argomenti per nome**.
+3. Se è necessario creare un elenco, scaricare il modello. csv e aggiungere gli argomenti che si desidera escludere (vedere *utilizzo del modello. CSV di* seguito). Quando il file è pronto, fare clic su **Sfoglia** e caricare il file. Se è presente un elenco esistente, è possibile scaricare il file con estensione CSV contenente l'elenco.
+4. Fare clic su **Salva**.
 
-1. Nella scheda **individuazione argomento** , in **utenti autorizzati a visualizzare gli argomenti della rete della Knowledge** base, selezionare **modifica**.
-2. Gli **utenti che possono visualizzare gli argomenti della pagina della rete della Knowledge** base consentono di scegliere gli utenti che avranno accesso ai dettagli sull'argomento, ad esempio argomenti evidenziati, schede argomento, risposte agli argomenti nelle pagine di ricerca e nell'argomento. È possibile selezionare:</br>
-    a. **Tutti gli utenti dell'organizzazione**</br>
-    b. **Solo persone o gruppi di sicurezza selezionati**</br>
-    c. **Nessuno**</br>
+    ![Schermata dell'interfaccia utente argomenti di esclusione](../media/km-manage-exclude-topics.png)
 
-    ![Utenti autorizzati a visualizzare gli argomenti](../media/content-understanding/k-manage-who-can-see-topics.png) </br> 
-3. Selezionare **Salva**.  
- 
-> [!Note] 
-> Anche se questa impostazione consente di selezionare qualsiasi utente dell'organizzazione, solo gli utenti che dispongono di licenze di gestione delle informazioni assegnate potranno visualizzare gli argomenti.
+### <a name="working-with-the-csv-template"></a>Utilizzo del modello. csv
 
-## <a name="change-who-has-permissions-to-do-tasks-on-the-topic-center"></a>Modificare gli utenti che dispongono delle autorizzazioni per eseguire attività nel centro argomenti
+È possibile copiare il modello CSV seguente:
 
-Selezionare la scheda autorizzazioni per l' **argomento** se si desidera aggiornare gli utenti che dispongono delle autorizzazioni per eseguire le operazioni seguenti nella pagina Centro argomenti:
+``` csv
+Name (required),Expansion,MatchType- Exact/Partial (required)
+```
 
-- Quali utenti possono creare e modificare gli argomenti: creare nuovi argomenti che non sono stati rilevati durante l'individuazione o modificare i dettagli della pagina di argomento esistente.
-- Quali utenti possono gestire gli argomenti: confermare o rifiutare gli argomenti individuati.
+Nel modello CSV, immettere le informazioni seguenti sugli argomenti che si desidera escludere:
 
-Per aggiornare gli utenti che dispongono delle autorizzazioni per la creazione e la modifica degli argomenti:
+- **Nome**: digitare il nome dell'argomento che si desidera escludere. Questa operazione può essere eseguita in due modi:
+    - Corrispondenza esatta: è possibile includere il nome o l'acronimo esatto (ad esempio, *Contoso* o *ATL*).
+    - Corrispondenza parziale: è possibile escludere tutti gli argomenti in cui è presente una parola specifica.  Ad esempio, *Arc* escluderà tutti gli argomenti con l' *arco* di parola in esso, ad esempio *cerchio arco*, *saldatura ad arco al plasma* o *arco di training*. Tenere presente che non verranno esclusi gli argomenti in cui il testo viene incluso come parte di una parola, ad esempio l' *architettura*.
+- Acronimo **di (facoltativo)**: se si desidera escludere un acronimo, digitare le parole in cui si trova l'acronimo.
+- **MatchType-exact/partial**: digitare se il nome immesso è un tipo di corrispondenza *esatta* o *parziale* .
 
-1. Nella scheda **autorizzazioni dell'argomento** , in **utenti autorizzati a creare e modificare gli argomenti** , selezionare **modifica**.</br>
-2. Nella pagina **utenti autorizzati a creare e modificare gli argomenti** è possibile selezionare:</br>
-    a. **Tutti gli utenti dell'organizzazione**</br>
-    b. **Solo persone o gruppi di sicurezza selezionati**</br>
-
-    ![Creare e modificare gli argomenti](../media/content-understanding/k-manage-who-can-create-and-edit.png) </br> 
-
-3. Selezionare **Salva**.</br>
-
-Per aggiornare gli utenti che dispongono delle autorizzazioni per gestire gli argomenti:
-
-1. Nella scheda **autorizzazioni dell'argomento** , in **utenti autorizzati a gestire gli argomenti** , selezionare **modifica**.</br>
-2. Nella pagina **chi** è in grado di gestire gli argomenti, è possibile selezionare:</br>
-    a. **Tutti gli utenti dell'organizzazione**</br>
-    b. **Utenti o gruppi di sicurezza selezionati**</br>
-
-    ![Gestire gli argomenti](../media/content-understanding/k-manage-who-can-manage-topics.png) </br> 
-
-3. Selezionare **Salva**.</br>
-
-
-##  <a name="update-your-topic-center-name"></a>Aggiornare il nome del centro dell'argomento
-
-Selezionare la scheda **centro argomenti** se si desidera aggiornare il nome del centro argomenti. 
-
-1. Nella scheda **centro argomenti** , in **nome centro argomenti** , selezionare **modifica**.
-2. Nella casella **nome centro** argomenti della pagina **modifica nome centro argomenti** Digitare il nuovo nome del centro argomenti.
-3. Selezionare **Salva**
-
-    ![Modifica nome centro argomenti](../media/content-understanding/manage-topic-center-name.png) </br> 
-
-
-
-
-
-
-
-
-
-
+    ![Escludi argomenti nel modello CSV](../media/exclude-topics-csv.png) 
 
 ## <a name="see-also"></a>Vedere anche
 
+[Gestire la visibilità degli argomenti in Microsoft 365](topic-experiences-knowledge-rules.md)
 
+[Gestire le autorizzazioni per l'argomento in Microsoft 365](topic-experiences-user-permissions.md)
 
-  
-
-
-
-
-
+[Modificare il nome del centro argomenti in Microsoft 365](topic-experiences-administration.md)
 

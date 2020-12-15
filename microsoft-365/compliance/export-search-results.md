@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: ed48d448-3714-4c42-85f5-10f75f6a4278
 description: Esportare i risultati della ricerca da una ricerca di contenuto nel centro conformità di Microsoft 365 a un computer locale. I risultati della posta elettronica vengono esportati come file PST. I contenuti dei siti di SharePoint e OneDrive for business vengono esportati come documenti di Office nativi.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a697f5cf81022bf8d8122d0dd57c07ba8a578f0a
-ms.sourcegitcommit: 1beaf89d2faa32f11fe1613be2fa2b31c4bc4a91
+ms.openlocfilehash: 3250690d6699e5d39f7fa5ae01a2733595340ca1
+ms.sourcegitcommit: 1a9f0f878c045e1ddd59088ca2a94397605a242a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "49602053"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "49667789"
 ---
 # <a name="export-content-search-results"></a>Esportare i risultati di Ricerca contenuto
 
@@ -90,7 +90,7 @@ Il primo passaggio consiste nel preparare i risultati della ricerca per l'esport
   
 2. Accedere usando l'account di lavoro o della scuola.
   
-3. Nel riquadro sinistro del Centro sicurezza & conformità fare clic su ricerca **Search** \> **contenuto** ricerca.
+3. Nel riquadro sinistro del Centro sicurezza & conformità fare clic su ricerca  \> **contenuto** ricerca.
   
 4. Nella pagina **Ricerca contenuto** selezionare una ricerca. 
   
@@ -165,7 +165,7 @@ Il passaggio successivo consiste nel scaricare i risultati della ricerca dal per
   
     Lo **Strumento di esportazione eDiscovery** consente di visualizzare informazioni sullo stato delle informazioni relative al processo di esportazione, incluso il numero stimato (e le dimensioni) degli elementi rimanenti da scaricare. Al termine del processo di esportazione, è possibile accedere ai file nel percorso in cui sono stati scaricati.
 
-## <a name="more-information"></a>Altre informazioni
+## <a name="more-information"></a>Ulteriori informazioni
 
 Di seguito sono riportate altre informazioni sull'esportazione dei risultati della ricerca.
   
@@ -191,7 +191,7 @@ Di seguito sono riportate altre informazioni sull'esportazione dei risultati del
 
   - È possibile esportare un massimo di 2 TB di dati da una singola ricerca di contenuto. Se i risultati della ricerca sono superiori a 2 TB, prendere in considerazione l'utilizzo di intervalli di date o di altri tipi di filtri per ridurre le dimensioni totali dei risultati della ricerca.
   
-  - L'organizzazione può esportare un massimo di 2 TB di dati in un solo giorno.
+  - L'organizzazione può esportare un massimo di 2 TB di dati in un solo giorno. La quota verrà reimpostata giornalmente alle 12.00 UTC.
   
   - È possibile eseguire un massimo di 10 esportazioni contemporaneamente all'interno dell'organizzazione.
 

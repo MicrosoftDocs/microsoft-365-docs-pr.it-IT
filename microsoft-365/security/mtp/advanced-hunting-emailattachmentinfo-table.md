@@ -19,12 +19,12 @@ mms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 87ebf4ca0ff773dd5622097385173f538d990afc
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 6d88303b34f78abc857e9aec749bf2f58090f43a
+ms.sourcegitcommit: 1a9f0f878c045e1ddd59088ca2a94397605a242a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48847477"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "49667650"
 ---
 # <a name="emailattachmentinfo"></a>EmailAttachmentInfo
 
@@ -52,6 +52,10 @@ Per informazioni su altre tabelle nello schema per Ricerca avanzata, [vedere il 
 | `SHA256` | stringa | SHA-256 del file a cui è stata applicata l'azione registrata. (questo campo in genere non viene popolato: usare la colonna SHA1, se disponibile). |
 | `MalwareFilterVerdict` | stringa | Verdetto del gruppo di filtri della posta elettronica che indica se il messaggio contiene Malware: Malware, No malware |
 | `MalwareDetectionMethod` | stringa | Metodo utilizzato per rilevare la presenza di malware nel messaggio di posta elettronica: motore antimalware, reputazione dei file, allegati sicuri |
+| `SenderDisplayName` | stringa | Nome del mittente visualizzato nella rubrica, in genere una combinazione di un nome o di un cognome, di un iniziale medio e di un ultimo cognome o nome. |
+| `SenderObjectId` | stringa | Identificatore univoco per l'account del mittente in Azure AD |
+| `ThreatTypes` | stringa | Verdetto dallo stack del filtro della posta elettronica sul fatto che il messaggio di posta elettronica contenga malware, phishing o altre minacce |
+| `ThreatNames` | stringa | Nome del rilevamento di malware o altre minacce trovate |
 
 ## <a name="related-topics"></a>Argomenti correlati
 - [Panoramica della ricerca avanzata](advanced-hunting-overview.md)

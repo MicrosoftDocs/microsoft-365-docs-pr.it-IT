@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 description: Informazioni su come aggiungere utenti e assegnare licenze a Microsoft 365 nello stesso momento.
 ms.date: 07/01/2020
-ms.openlocfilehash: 95f84ead009b7510699e467bf5f12bf32d8097d8
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: 5df0db1cb782cc55bcf3e2b599430a98ea88750c
+ms.sourcegitcommit: 8252377f63de188d32ed1ccd37540d92cba3cb65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47948797"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "49670996"
 ---
 # <a name="add-users-and-assign-licenses-at-the-same-time"></a>Aggiungere utenti e assegnare licenze contemporaneamente
 
@@ -39,7 +39,7 @@ ms.locfileid: "47948797"
 
 Gli utenti del team hanno a disposizione un account utente prima di poter accedere e accede a [Microsoft 365 for business](https://www.microsoft.com/microsoft-365/business). Il modo più semplice per aggiungere account utente consiste nell'aggiungerli uno alla volta nell'interfaccia di amministrazione di Microsoft 365. Dopo aver eseguito questo passaggio, gli utenti dispongono di licenze Microsoft 365, credenziali di accesso e cassette postali di Microsoft 365.
 
-## <a name="before-you-begin"></a>Prima di iniziare
+## <a name="before-you-begin"></a>Informazioni preliminari
 
 Per aggiungere utenti e assegnare licenze, è necessario essere un amministratore globale, una licenza o un utente. Per altre informazioni, vedere [Informazioni sui ruoli di amministratore](../../admin/add-users/about-admin-roles.md).
 
@@ -55,7 +55,7 @@ Per aggiungere utenti e assegnare licenze, è necessario essere un amministrator
 ::: moniker range="o365-worldwide"
 
 1. Passare all'interfaccia di amministrazione all'indirizzo <https://admin.microsoft.com>.
-2. Passare a **utenti** > **attivi**e selezionare **Aggiungi un utente**.
+2. Passare a **utenti** > **attivi** e selezionare **Aggiungi un utente**.
 3. Nel riquadro **Configura le nozioni** di base, immettere le informazioni sull'utente e quindi fare clic su **Avanti**.
     - **Nome** Compilare il nome e il cognome, il nome visualizzato e il nome utente.
     - **Dominio** Scegliere il dominio per l'account dell'utente. Ad esempio, se il nome utente è Jakob e il dominio è contoso.com, accederà tramite jakob@contoso.com.
@@ -71,7 +71,7 @@ Per aggiungere utenti e assegnare licenze, è necessario essere un amministrator
 ::: moniker range="o365-germany"
 
 1. Passare all'interfaccia di amministrazione all'indirizzo <https://portal.office.de/adminportal>.
-2. Passare a **utenti** > **attivi**e selezionare **Aggiungi un utente**.
+2. Passare a **utenti** > **attivi** e selezionare **Aggiungi un utente**.
 3. Nel riquadro **nuovo utente** , immettere le informazioni seguenti. Al termine, fare clic su **Aggiungi**.
     - **Nome** Inserire il nome, il cognome, il nome visualizzato e il nome utente.
     - **Dominio** Ad esempio, se il nome utente è Jakob e il dominio è contoso.com, verranno registrati digitando jakob@contoso.com.
@@ -85,7 +85,7 @@ Per aggiungere utenti e assegnare licenze, è necessario essere un amministrator
 ::: moniker range="o365-21vianet"
 
 1. Passare all'interfaccia di amministrazione all'indirizzo <https://portal.partner.microsoftonline.cn>.
-2. Passare a **utenti** > **attivi**e selezionare **Aggiungi un utente**.
+2. Passare a **utenti** > **attivi** e selezionare **Aggiungi un utente**.
 3. Nel riquadro **nuovo utente** , immettere le informazioni seguenti. Al termine, fare clic su **Aggiungi**.
     - **Nome** Inserire il nome, il cognome, il nome visualizzato e il nome utente.
     - **Dominio** Ad esempio, se il nome utente è Jakob e il dominio è contoso.com, verranno registrati digitando jakob@contoso.com.

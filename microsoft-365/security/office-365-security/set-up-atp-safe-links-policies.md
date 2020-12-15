@@ -17,23 +17,26 @@ ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
 ms.collection:
 - M365-security-compliance
 description: Gli amministratori possono ottenere informazioni su come visualizzare, creare, modificare ed eliminare i criteri per i collegamenti sicuri e le impostazioni dei collegamenti sicuri globali in Microsoft Defender per Office 365.
-ms.openlocfilehash: 550be48d5f1cae490c53c8f4a9fcedb0b9f21f73
-ms.sourcegitcommit: d81c7cea85af6ad5fef81d3c930514a51464368c
+ms.openlocfilehash: 8a6d8a7ad567b658f04cb0b28800d4edbc33ec67
+ms.sourcegitcommit: f81ca61f74f11a7436a6172538c3bda81b484d62
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "49572718"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "49675242"
 ---
 # <a name="set-up-safe-links-policies-in-microsoft-defender-for-office-365"></a>Configurare i criteri per i collegamenti sicuri in Microsoft Defender per Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 > [!IMPORTANT]
-> Questo articolo è destinato ai clienti aziendali che dispongono di [Microsoft Defender per Office 365](office-365-atp.md). Se si è un utente di casa che cerca informazioni su Safelinks in Outlook, vedere [Advanced Outlook.com Security](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2).
+> Questo articolo è rivolto ai clienti aziendali di [Microsoft Defender per Office 365](office-365-atp.md). Se si è un utente di casa che cerca informazioni su Safelinks in Outlook, vedere [Advanced Outlook.com Security](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2).
 
 Collegamenti attendibili è una funzionalità di [Microsoft Defender per Office 365](office-365-atp.md) che fornisce l'analisi degli URL dei messaggi di posta elettronica in ingresso nel flusso di posta e l'ora in cui si fa clic su verifica degli URL e dei collegamenti nei messaggi di posta elettronica e in altre posizioni. Per ulteriori informazioni, vedere [collegamenti sicuri in Microsoft Defender per Office 365](atp-safe-links.md).
 
 Non esiste alcun criterio di collegamenti sicuri incorporato o predefinito. Per ottenere l'analisi dei collegamenti sicuri degli URL, è necessario creare uno o più criteri per i collegamenti sicuri, come descritto in questo articolo.
+
+> [!NOTE]
+> È possibile configurare le impostazioni globali per la protezione di collegamenti sicuri **all'esterno** dei criteri collegamenti sicuri. Per istruzioni, vedere [configurare le impostazioni globali per i collegamenti sicuri in Microsoft Defender per Office 365](configure-global-settings-for-safe-links.md).
 
 È possibile configurare i criteri per i collegamenti sicuri nel centro sicurezza & conformità o in PowerShell (Exchange Online PowerShell per organizzazioni Microsoft 365 idonee con cassette postali in Exchange Online; standalone EOP PowerShell per organizzazioni senza cassette postali di Exchange Online, ma con gli abbonamenti del componente aggiuntivo Microsoft Defender per Office 365).
 
@@ -50,16 +53,13 @@ La differenza tra questi due elementi non è ovvia quando si gestiscono le polit
 
 In PowerShell di Exchange Online o in EOP PowerShell autonomo i criteri e la regola vengono gestiti separatamente. Per ulteriori informazioni, vedere la sezione [use Exchange Online PowerShell or standalone EOP PowerShell per configurare i criteri dei collegamenti sicuri](#use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-safe-links-policies) più avanti in questo articolo.
 
-> [!NOTE]
-> È possibile configurare le impostazioni globali per la protezione di collegamenti sicuri **all'esterno** dei criteri collegamenti sicuri. Per istruzioni, vedere [configurare le impostazioni globali per i collegamenti sicuri in Microsoft Defender per Office 365](configure-global-settings-for-safe-links.md).
-
-## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare
+## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare?
 
 - Aprire il Centro sicurezza e conformità in <https://protection.office.com/>. Per passare direttamente alla pagina **collegamenti sicuri** , utilizzare <https://protection.office.com/safelinksv2> .
 
 - Per informazioni su come connettersi a PowerShell per Exchange Online, vedere [Connettersi a PowerShell per Exchange Online](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell). Per connettersi a PowerShell di EOP autonomo, vedere [Connettersi a PowerShell per Exchange Online Protection](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
-- Prima di poter eseguire le procedure descritte in questo articolo, è necessario disporre delle autorizzazioni per il Centro sicurezza & Compliance:
+- Per poter eseguire le procedure contenute in questo articolo è necessario disporre delle autorizzazioni appropriate nel Centro sicurezza e conformità:
   - Per creare, modificare ed eliminare i criteri per i collegamenti sicuri, è necessario essere membri dei gruppi di ruoli **Gestione organizzazione** o **amministratore sicurezza** .
   - Per l'accesso in sola lettura ai criteri per i collegamenti sicuri, è necessario essere membri dei gruppi di ruoli **lettore globale** o lettore di **sicurezza** .
 
@@ -67,8 +67,8 @@ In PowerShell di Exchange Online o in EOP PowerShell autonomo i criteri e la reg
 
   **Note**:
 
-  - L'aggiunta di utenti al ruolo di Azure Active Directory corrispondente nell'interfaccia di amministrazione di Microsoft 365 fornisce agli utenti le autorizzazioni necessarie per il Centro sicurezza & Compliance _e_ le autorizzazioni per altre funzionalità di Microsoft 365. Per altre informazioni, vedere [Informazioni sui ruoli di amministratore](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
-  - Il gruppo di ruoli di **gestione dell'organizzazione di sola visualizzazione** in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) fornisce anche l'accesso in sola lettura alla funzionalità.
+  - L'aggiunta di utenti al ruolo di Azure Active Directory corrispondente nell'interfaccia di amministrazione di Microsoft 365 fornisce agli utenti le autorizzazioni necessarie nel centro Sicurezza e conformità _e_ le autorizzazioni per altre funzionalità di Microsoft 365. Per altre informazioni, vedere [Informazioni sui ruoli di amministratore](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
+  - Anche il gruppo di ruoli di **Gestione organizzazione sola visualizzazione** in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) offre inoltre l'accesso di sola lettura a tale funzionalità.
 
 - Per le impostazioni consigliate per i criteri collegamenti sicuri, vedere [impostazioni dei criteri collegamenti sicuri](recommended-settings-for-eop-and-office365-atp.md#safe-links-policy-settings).
 
@@ -80,7 +80,7 @@ In PowerShell di Exchange Online o in EOP PowerShell autonomo i criteri e la reg
 
 La creazione di un criterio collegamenti sicuri personalizzato nel centro sicurezza & conformità crea la regola dei collegamenti sicuri e il criterio collegamenti sicuri associati contemporaneamente utilizzando lo stesso nome per entrambi.
 
-1. Nel centro sicurezza & conformità, accedere a **Threat management** \> **Policy** \> **collegamenti sicuri ATP** per i criteri di gestione delle minacce.
+1. Nel centro sicurezza & conformità, accedere a  \>  \> **collegamenti sicuri ATP** per i criteri di gestione delle minacce.
 
 2. Nella pagina **collegamenti sicuri** fare clic su **Crea**.
 
@@ -152,7 +152,7 @@ La creazione di un criterio collegamenti sicuri personalizzato nel centro sicure
 
 ## <a name="use-the-security--compliance-center-to-view-safe-links-policies"></a>Utilizzare il Centro sicurezza & conformità per visualizzare i criteri collegamenti sicuri
 
-1. Nel centro sicurezza & conformità, accedere a **Threat management** \> **Policy** \> **collegamenti sicuri ATP** per i criteri di gestione delle minacce.
+1. Nel centro sicurezza & conformità, accedere a  \>  \> **collegamenti sicuri ATP** per i criteri di gestione delle minacce.
 
 2. Nella pagina **collegamenti attendibili** , selezionare un criterio dall'elenco e fare clic su di esso (non selezionare la casella di controllo).
 
@@ -160,7 +160,7 @@ La creazione di un criterio collegamenti sicuri personalizzato nel centro sicure
 
 ## <a name="use-the-security--compliance-center-to-modify-safe-links-policies"></a>Utilizzare il Centro sicurezza & conformità per modificare i criteri per i collegamenti sicuri
 
-1. Nel centro sicurezza & conformità, accedere a **Threat management** \> **Policy** \> **collegamenti sicuri ATP** per i criteri di gestione delle minacce.
+1. Nel centro sicurezza & conformità, accedere a  \>  \> **collegamenti sicuri ATP** per i criteri di gestione delle minacce.
 
 2. Nella pagina **collegamenti attendibili** , selezionare un criterio dall'elenco e fare clic su di esso (non selezionare la casella di controllo).
 
@@ -172,7 +172,7 @@ Per abilitare o disabilitare un criterio o impostare l'ordine di priorità dei c
 
 ### <a name="enable-or-disable-safe-links-policies"></a>Abilitare o disabilitare i criteri per i collegamenti sicuri
 
-1. Nel centro sicurezza & conformità, accedere a **Threat management** \> **Policy** \> **collegamenti sicuri ATP** per i criteri di gestione delle minacce.
+1. Nel centro sicurezza & conformità, accedere a  \>  \> **collegamenti sicuri ATP** per i criteri di gestione delle minacce.
 
 2. Si noti il valore nella colonna **stato** :
 
@@ -192,7 +192,7 @@ I criteri collegamenti sicuri vengono visualizzati nell'ordine in cui sono stati
 
 Per modificare la priorità di un criterio, spostare il criterio più in alto o più in basso nell'elenco (non è possibile modificare direttamente il numero **Priority** nel Centro sicurezza e conformità).
 
-1. Nel centro sicurezza & conformità, accedere a **Threat management** \> **Policy** \> **collegamenti sicuri ATP** per i criteri di gestione delle minacce.
+1. Nel centro sicurezza & conformità, accedere a  \>  \> **collegamenti sicuri ATP** per i criteri di gestione delle minacce.
 
 2. Nella pagina **collegamenti attendibili** , selezionare un criterio dall'elenco e fare clic su di esso (non selezionare la casella di controllo).
 
@@ -210,7 +210,7 @@ Per modificare la priorità di un criterio, spostare il criterio più in alto o 
 
 ## <a name="use-the-security--compliance-center-to-remove-safe-links-policies"></a>Utilizzare il Centro sicurezza & conformità per rimuovere i criteri per i collegamenti sicuri
 
-1. Nel centro sicurezza & conformità, accedere a **Threat management** \> **Policy** \> **collegamenti sicuri ATP** per i criteri di gestione delle minacce.
+1. Nel centro sicurezza & conformità, accedere a  \>  \> **collegamenti sicuri ATP** per i criteri di gestione delle minacce.
 
 2. Nella pagina **collegamenti attendibili** , selezionare un criterio dall'elenco e fare clic su di esso (non selezionare la casella di controllo).
 
@@ -468,7 +468,7 @@ Per verificare che i collegamenti sicuri siano in grado di analizzare i messaggi
 
 Per verificare che i criteri collegamenti sicuri siano stati creati, modificati o rimossi correttamente, eseguire una delle operazioni seguenti:
 
-- Nel centro sicurezza & conformità, accedere a **Threat management** \> **Policy** \> **collegamenti sicuri ATP** per i criteri di gestione delle minacce. Verificare l'elenco dei criteri, i relativi valori di **stato** e i relativi valori di **priorità** . Per visualizzare ulteriori dettagli, selezionare il criterio dall'elenco e visualizzare i dettagli all'interno del volo.
+- Nel centro sicurezza & conformità, accedere a  \>  \> **collegamenti sicuri ATP** per i criteri di gestione delle minacce. Verificare l'elenco dei criteri, i relativi valori di **stato** e i relativi valori di **priorità** . Per visualizzare ulteriori dettagli, selezionare il criterio dall'elenco e visualizzare i dettagli all'interno del volo.
 
 - In Exchange Online PowerShell o Exchange Online Protection PowerShell, sostituire \<Name\> con il nome del criterio o della regola, eseguire il comando riportato di seguito e verificare le impostazioni:
 

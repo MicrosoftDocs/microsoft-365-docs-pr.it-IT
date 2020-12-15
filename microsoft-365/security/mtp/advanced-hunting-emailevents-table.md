@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 86cc32cf395f2216eb3e167e372d1225734c4c28
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 00fcc6514679868066ef88b0c9bc4a485d032528
+ms.sourcegitcommit: 1a9f0f878c045e1ddd59088ca2a94397605a242a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48842633"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "49667638"
 ---
 # <a name="emailevents"></a>EmailEvents
 
@@ -71,6 +71,17 @@ Per informazioni su altre tabelle nello schema per Ricerca avanzata, [vedere il 
 | `AttachmentCount` | int | Numero degli allegati nel messaggio di posta elettronica |
 | `UrlCount` | int | Numero di URL incorporati nel messaggio di posta elettronica |
 | `EmailLanguage` | stringa | Lingua del contenuto del messaggio di posta elettronica rilevata |
+| `OrgLevelAction` | stringa | Azione intrapresa sul messaggio di posta elettronica in risposta alle corrispondenze a un criterio definito a livello di organizzazione |
+| `OrgLevelPolicy` | stringa | Politica organizzativa che ha attivato l'azione intrapresa sul messaggio di posta elettronica |
+| `UserLevelAction` | stringa | Azione intrapresa sul messaggio di posta elettronica in risposta alle corrispondenze a un criterio cassetta postale definito dal destinatario |
+| `UserLevelPolicy` | stringa | Criterio cassetta postale dell'utente finale che ha attivato l'azione intrapresa sul messaggio di posta elettronica |
+| `Connectors` | stringa | Istruzioni personalizzate per la definizione del flusso di posta organizzativa e del modo in cui il messaggio è stato instradato |
+| `SenderDisplayName` | stringa | Nome del mittente visualizzato nella rubrica, in genere una combinazione di un nome o di un cognome, di un iniziale medio e di un ultimo cognome o nome. |
+| `SenderObjectId` | stringa |Identificatore univoco per l'account del mittente in Azure AD |
+| `ThreatTypes` | stringa | Verdetto dallo stack del filtro della posta elettronica sul fatto che il messaggio di posta elettronica contenga malware, phishing o altre minacce |
+| `ThreatNames` | stringa |Nome del rilevamento di malware o altre minacce trovate |
+| `DetectionMethods` | stringa | Metodi utilizzati per rilevare malware, tentativi di phishing o altre minacce rilevate nel messaggio di posta elettronica |
+
 
 ## <a name="related-topics"></a>Argomenti correlati
 - [Panoramica della ricerca avanzata](advanced-hunting-overview.md)

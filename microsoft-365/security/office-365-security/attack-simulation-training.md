@@ -1,7 +1,7 @@
 ---
-title: Simulare un attacco di phishing con Microsoft Defender per
-ms.author: daniha
-author: danihalfin
+title: Simulare un attacco di phishing con Microsoft Defender per Office 365
+ms.author: chrisda
+author: chrisda
 manager: dansimp
 audience: ITPro
 ms.topic: how-to
@@ -10,44 +10,44 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
-description: Informazioni su come simulare attacchi di phishing e addestrare gli utenti alla prevenzione del phishing con la formazione di simulazione di attacco in Microsoft Defender per Office 365.
-ms.openlocfilehash: 8f5f457f60c81fe961282f33bb8c37f4d9e27aab
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+description: Gli amministratori possono imparare a simulare gli attacchi di phishing e a formare gli utenti sulla prevenzione del phishing usando la formazione sulla simulazione di attacco in Microsoft Defender per Office 365.
+ms.openlocfilehash: 3707041067fd76ee9535d0dccf5cdfcb9d74fbd7
+ms.sourcegitcommit: 1a9f0f878c045e1ddd59088ca2a94397605a242a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49616105"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "49667554"
 ---
 # <a name="simulate-a-phishing-attack"></a>Simulare un attacco di phishing
 
-La formazione di simulatori di attacco tramite Microsoft Defender per Office 365 consente di eseguire simulazioni di attacchi cibernetici benigni nell'organizzazione per testare i criteri e le procedure di sicurezza, nonché di formare i dipendenti dell'organizzazione per aumentare la loro consapevolezza e diminuirne la suscettibilità agli attacchi. Di seguito vengono illustrati i tentativi di simulazione di un attacco di phishing tramite l'addestramento di Attack Simulator.
+La formazione di simulatori di attacco in Microsoft Defender per Office 365 consente di eseguire simulazioni di cyberattack benigne nell'organizzazione per testare i criteri e le procedure di sicurezza, nonché formare i dipendenti per aumentare la loro consapevolezza e ridurre la suscettibilità agli attacchi. In questo articolo viene illustrata la creazione di un attacco di phishing simulato utilizzando l'addestramento di Attack Simulator.
 
 [!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
-Per avviare un attacco di phishing simulato, passare al [Centro sicurezza Microsoft 365](https://security.microsoft.com/). In **collaborazione & di posta elettronica** fare clic su **attacco simulatore** e passare alla scheda [**simulazioni**](https://security.microsoft.com/attacksimulator?viewid=simulations) .
+Per avviare un attacco di phishing simulato, aprire [Microsoft 365 Security Center](https://security.microsoft.com/), passare a **email &** \> **simulatore** di collaborazione e passare alla scheda [**simulazioni**](https://security.microsoft.com/attacksimulator?viewid=simulations) .
 
-In **simulazioni** selezionare **+ Avvia una simulazione**.
+In **simulazioni**, selezionare **+ Avvia una simulazione**.
 
 ![Avviare un pulsante di simulazione in Microsoft 365 Security Center](../../media/attack-sim-preview-launch.png)
 
 > [!NOTE]
-> In qualsiasi momento durante la creazione di una simulazione è possibile salvare e chiudere per continuare a configurare la simulazione in un secondo tempo.
+> Durante la creazione di una simulazione, è possibile salvare e chiudere per continuare a configurare la simulazione in un secondo momento.
 
 ## <a name="selecting-a-social-engineering-technique"></a>Selezione di una tecnica di social engineering
 
-Scegliere tra 4 diverse tecniche, a cura del [&CK® Framework](https://attack.mitre.org/techniques/enterprise/). Sono disponibili diversi payload per tecniche diverse.
+Scegliere tra 4 diverse tecniche, a cura del [&CK® Framework](https://attack.mitre.org/techniques/enterprise/). Sono disponibili diversi payload per tecniche diverse:
 
-- I tentativi di **raccolta** delle credenziali per raccogliere le credenziali dai dipendenti, portandole a un sito Web di ricerca noto con caselle di input per inviare un nome utente e una password.
-- L' **allegato di malware** aggiunge un allegato dannoso a un messaggio. All'apertura di questo allegato verrà eseguito un codice arbitrario che consentirà all'utente malintenzionato di compromettere il dispositivo di destinazione.
+- **Raccolta** di credenziali tentativi di raccolta delle credenziali tramite l'accesso degli utenti a un sito Web di ricerca noto con caselle di input per inviare un nome utente e una password.
+- L' **allegato di malware** aggiunge un allegato dannoso a un messaggio. Quando l'utente apre l'allegato, viene eseguito codice arbitrario che consentirà all'aggressore di compromettere il dispositivo di destinazione.
 - **Link in Attachment** è un tipo di raccolta di credenziali ibrido. Un utente malintenzionato inserisce un URL in un allegato di posta elettronica. L'URL all'interno dell'allegato segue la stessa tecnica del raccolto di credenziali.
-- Il **collegamento a malware** eseguirà un codice arbitrario proveniente da un file ospitato in un sito di condivisione file ben noto. Un collegamento a questo file dannoso viene aggiunto al messaggio inviato al destinatario e facendo clic su di esso verrà eseguito il file e la guida dell'utente malintenzionato compromette il dispositivo di destinazione.
+- Il **collegamento a malware** eseguirà un codice arbitrario proveniente da un file ospitato in un servizio di condivisione file conosciuto. Il messaggio inviato all'utente conterrà un collegamento a questo file dannoso. Aprire il file e aiutare l'aggressore a compromettere il dispositivo di destinazione.
 
 > [!TIP]
-> Se si fa clic su **Visualizza dettagli** all'interno della descrizione di ogni tecnica, vengono visualizzate ulteriori informazioni sulla tecnica e sui passaggi di simulazione per tale tecnica.
+> Se si fa clic su **Visualizza dettagli** all'interno della descrizione di ogni tecnica, vengono visualizzate ulteriori informazioni e i passaggi di simulazione per la tecnica.
 >
 > ![Passaggi di simulazione per la raccolta delle credenziali all'interno della formazione sulla simulazione di attacco in Microsoft 365 Security Center](../../media/attack-sim-preview-sim-steps.png)
 
-Dopo aver selezionato la tecnica e fare clic su **Avanti** , assegnare un nome alla simulazione e facoltativamente una descrizione.
+Dopo aver selezionato la tecnica e fare clic su **Avanti**, assegnare un nome alla simulazione e, facoltativamente, una descrizione.
 
 ## <a name="selecting-a-payload"></a>Selezione di un payload
 
@@ -56,7 +56,7 @@ Successivamente, è necessario selezionare un payload dal catalogo payload prees
 I payload dispongono di una serie di punti dati che consentono di scegliere:
 
 - **Fare clic su rate** count quante persone hanno fatto clic su questo payload.
-- Il **tasso di compromesso previsto** prevede la percentuale di persone che verranno compromesse da questo payload in base ai dati cronologici per questo payload su Microsoft Defender per i clienti di Office 365.
+- Il **tasso di compromesso previsto** prevede la percentuale di persone che verranno compromesse da questo payload in base ai dati cronologici per il payload tra Microsoft Defender per i clienti di Office 365.
 - **Simulazioni avviate** calcola il numero di volte in cui questo payload è stato utilizzato in altre simulazioni.
 - La **complessità**, disponibile tramite **filtri**, viene calcolata in base al numero di indicatori all'interno del payload a cui sono assegnati indizi su un attacco. Altri indicatori conducono a una complessità inferiore.
 - L' **origine**, disponibile tramite **filtri**, indica se il payload è stato creato nel tenant o è parte del catalogo di payload preesistente di Microsoft (globale).
