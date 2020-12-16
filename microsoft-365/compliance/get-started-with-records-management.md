@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Se è necessaria una soluzione di gestione dei record per Microsoft 365 che gestisca i contenuti di valore per obblighi legali, aziendali o normativi, di seguito vengono riportate alcune indicazioni utili per iniziare.
-ms.openlocfilehash: 679300f581dd9177c00f367f4452d12142f49ee4
-ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
+ms.openlocfilehash: 0dc0258ed53aa07df778f5d0883b02b7635f50d8
+ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48919854"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "49682723"
 ---
 # <a name="get-started-with-records-management"></a>Introduzione alla gestione dei record
 
@@ -49,9 +49,9 @@ Per visualizzare le opzioni di licenza da assegnare agli utenti per trarre vanta
 
 ## <a name="permissions-required-for-records-management"></a>Autorizzazioni necessarie per la gestione dei record
 
-Ai membri del team di conformità responsabili della gestione dei record è necessario assegnare autorizzazioni per il [Centro conformità Microsoft 365](https://compliance.microsoft.com/). Per impostazione predefinita, l'amministratore del tenant (amministratore globale) ha accesso a questa posizione e può fornire l'accesso ai responsabili della conformità e ad altre persone senza concedere loro tutte le autorizzazioni di un amministratore del tenant. Per concedere le autorizzazioni per questa amministrazione limitata, è consigliabile aggiungere gli utenti al gruppo di ruoli di amministratore **Gestione dei record** , che concede il ruolo **RecordManagement**.
+Ai membri del team di conformità responsabili della gestione dei record è necessario assegnare autorizzazioni per il [Centro conformità Microsoft 365](https://compliance.microsoft.com/). Per impostazione predefinita, l'amministratore del tenant (amministratore globale) ha accesso a questa posizione e può fornire l'accesso ai responsabili della conformità e ad altre persone senza concedere loro tutte le autorizzazioni di un amministratore del tenant. Per concedere le autorizzazioni per questa amministrazione limitata, è consigliabile aggiungere gli utenti al gruppo di ruoli di amministratore **Gestione dei record**, che concede le autorizzazioni a tutte le funzionalità relative alla gestione record, tra cui [la revisione e verifica per l’eliminazione](disposition.md). 
 
-Le autorizzazioni incluse in questo gruppo di ruoli non comprendono le autorizzazioni necessarie per la [revisione e verifica per l'eliminazione](disposition.md), e anche un amministratore globale non ha questa autorizzazione per impostazione predefinita. Per gestire l'eliminazione, usare il ruolo **Gestione eliminazione** , creando un gruppo di ruoli personalizzato o usando un gruppo di ruoli predefinito che includa questo ruolo; ad esempio **Compliance Administrator**.
+Per un ruolo di sola lettura, è possibile creare un nuovo gruppo di ruoli e aggiungere a questo gruppo il ruolo **Gestione dei record View-Only**. 
 
 Per altre informazioni su questi gruppi di ruoli e ruoli, vedere [Autorizzazioni nel Centro sicurezza e conformità](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center#roles-in-the-security--compliance-center).
 

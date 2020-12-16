@@ -366,7 +366,7 @@
           items:
             - name: Exchange Online Protection
               items:
-                - name: Configurare i criteri anti-phishing predefiniti in Exchange Online Protection
+                - name: Configurare i criteri anti-phishing in Exchange Online Protection
                   href: ./office-365-security/configure-anti-phishing-policies-eop.md
                 - name: Configurare Exchange Online Protection autonomo per recapitare la posta indesiderata nella cartella Posta indesiderata
                   href: ./office-365-security/ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md
