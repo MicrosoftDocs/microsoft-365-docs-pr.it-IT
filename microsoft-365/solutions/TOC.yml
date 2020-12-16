@@ -1,5 +1,5 @@
 - name: Microsoft 365 Solution and Architecture Center
-  href: solution-architecture-center.md
+  href: index.yml
   displayName: Home
 - name: Illustrazioni della soluzione e dell'architettura
   items:
@@ -7,10 +7,10 @@
       href: productivity-illustrations.md
     - name: Modelli di architettura cloud Microsoft
       href: cloud-architecture-models.md
+    - name: Icone e modelli architettura
+      href: architecture-icons-templates.md
 - name: Soluzioni di Microsoft 365 Foundation
   items:
-    - name: Panoramica
-      href: foundation-solutions-overview.md
     - name: Aumentare la produttività dei lavoratori remoti con Microsoft 365
       items:
         - name: Panoramica
@@ -93,8 +93,6 @@
           href: information-protection-deploy-monitor-respond.md
 - name: Scenari e soluzioni di carichi di lavoro
   items:
-    - name: Panoramica
-      href: workload-solutions-scenarios-overview.md
     - name: Lavoro in team e collaborazione
       items:
         - name: Poster sull'architettura di Teams
@@ -211,8 +209,6 @@
           href: team-security-isolation-dev-test.md
 - name: Guida specifica del settore
   items:
-    - name: Panoramica
-      href: industry-specific-guidance-overview.md
     - name: Finanze
       items:
         - name: Sicurezza e conformità dei servizi finanziari
