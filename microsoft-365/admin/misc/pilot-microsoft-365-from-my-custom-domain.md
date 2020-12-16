@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Per informazioni su come eseguire il pilota della funzionalità di posta elettronica dal dominio personalizzato a una cassetta postale di Microsoft 365 usando solo due account di test.
-ms.openlocfilehash: 8bb04edc9a7879edc2094f1fed667d5956174ea3
-ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
+ms.openlocfilehash: 6cc5b1163f666af4bd13047ab3b1fda7fd747b5f
+ms.sourcegitcommit: 849b365bd3eaa9f3c3a9ef9f5973ef81af9156fa
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "48295035"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49688218"
 ---
 # <a name="pilot-microsoft-365-from-my-custom-domain"></a>Eseguire il pilota Microsoft 365 dal dominio personalizzato
 
@@ -40,6 +40,8 @@ ms.locfileid: "48295035"
 
 - Gli utenti potrebbero non essere in grado di usare il filtro della posta indesiderata di Microsoft 365.
 
+- Si consiglia per un numero molto limitato di utenti e si applica unicamente all'utilizzo della posta elettronica per un progetto pilota.
+
 ## <a name="set-up-a-microsoft-365-pilot"></a>Configurare un progetto pilota di Microsoft 365
 
 Seguire i passaggi seguenti per configurare un progetto pilota di Microsoft 365:
@@ -54,7 +56,7 @@ Seguire i passaggi seguenti per configurare un progetto pilota di Microsoft 365:
 
 1. Nella pagina **Domini**, selezionare **Aggiungere un dominio**.
 
-2. Digitare il nome di dominio nella casella, selezionare **Usare questo dominio**e quindi selezionare **Continuare**.
+2. Digitare il nome di dominio nella casella, selezionare **Usare questo dominio** e quindi selezionare **Continuare**.
 
 3. Selezionare i servizi che si desidera testare con il dominio, ad esempio la posta elettronica e la messaggistica istantanea.
 
@@ -91,11 +93,11 @@ Microsoft 365 usa Exchange Online Protection (EOP) per la protezione dalla posta
 
 2. Creare due account di test aggiungendo due utenti esistenti.
 
-    Per ciascun account, selezionare **+ Aggiungi un utente**e compilare le informazioni richieste, includendo il metodo di password che si desidera verificare.
+    Per ciascun account, selezionare **+ Aggiungi un utente** e compilare le informazioni richieste, includendo il metodo di password che si desidera verificare.
 
     Per assicurarsi che la posta elettronica di un utente rimanga invariata, il campo **nome utente** deve corrispondere all'indirizzo di posta elettronica corrente dell'utente.
 
-3. Scegliere la licenza appropriata, fare clic su **Avanti**e quindi fare clic su **Completa l'aggiunta**. 
+3. Scegliere la licenza appropriata, fare clic su **Avanti** e quindi fare clic su **Completa l'aggiunta**. 
 
 4. Accanto a **Nome utente** selezionare il nome di dominio personalizzato nell'elenco a discesa. 
 
@@ -138,7 +140,7 @@ Configurare i connettori usando la procedura guidata.
 
 Per avviare la procedura guidata, fare clic sul simbolo più **+**. Nella prima schermata, scegliere **da** Office 365 e **per** il server di posta elettronica dell'organizzazione.
 
-Fare clic su **Successivo** e seguire le istruzioni della procedura guidata. Fare clic sui collegamenti **Guida** o **Ulteriori informazioni ** se si necessita di maggiori delucidazioni. La procedura guidata mostrerà le operazioni da eseguire per la configurazione. Al termine, verificare che il connettore venga convalidato. Se il connettore non viene convalidato, fare doppio clic sul messaggio visualizzato per ottenere ulteriori informazioni e vedere [Convalidare i connettori](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/validate-connectors) per ricevere assistenza per la risoluzione dei problemi.
+Fare clic su **Successivo** e seguire le istruzioni della procedura guidata. Fare clic sui collegamenti **Guida** o **Ulteriori informazioni** se si necessita di maggiori delucidazioni. La procedura guidata mostrerà le operazioni da eseguire per la configurazione. Al termine, verificare che il connettore venga convalidato. Se il connettore non viene convalidato, fare doppio clic sul messaggio visualizzato per ottenere ulteriori informazioni e vedere [Convalidare i connettori](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/validate-connectors) per ricevere assistenza per la risoluzione dei problemi.
 
 
 
@@ -189,4 +191,3 @@ Dal momento che si stanno spostando solo due utenti di test e gli utenti A e B u
 
 Dopo l'importazione nelle posizioni appropriate nella cassetta postale di Microsoft 365, è possibile accedere agli elementi ovunque e da qualsiasi dispositivo.
 
-Se sono coinvolte più cassette postali o se i dipendenti non usano Outlook, è possibile usare gli strumenti di migrazione disponibili nell'interfaccia di amministrazione di Exchange. Per iniziare, passare all'Interfaccia di amministrazione di Exchange e seguire le istruzioni in [Eseguire la migrazione della posta elettronica da un server IMAP a cassette postali di Exchange Online](https://docs.microsoft.com/exchange/mailbox-migration/migrating-imap-mailboxes/migrating-imap-mailboxes).
