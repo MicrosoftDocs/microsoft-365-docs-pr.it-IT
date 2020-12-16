@@ -25,12 +25,12 @@ search.appverid:
 - GEA150
 ms.assetid: a8b487a9-2a45-4581-9dc4-5d28a47010a2
 description: Informazioni su come aggiungere e configurare il dominio in Microsoft 365 in modo che i servizi come la posta elettronica e Skype for business online utilizzino il proprio nome di dominio.
-ms.openlocfilehash: a4218b03e3f23ba8bc39c5eb84b42f87a71b9a65
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+ms.openlocfilehash: 492bc5d2a5f3fd9810f045e7effda1ea20fa15ed
+ms.sourcegitcommit: 849b365bd3eaa9f3c3a9ef9f5973ef81af9156fa
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49658600"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49688250"
 ---
 # <a name="change-nameservers-to-set-up-microsoft-365-with-any-domain-registrar"></a>Modificare i server dei nomi per configurare Microsoft 365 con qualsiasi registrar
 
@@ -166,7 +166,7 @@ Ecco, ad esempio, alcune altre operazioni aggiuntive che potrebbero essere neces
 
 2. Nella pagina **Domains** selezionare il dominio e quindi scegliere **DNS Records**.
 
-3. In **impostazioni DNS** selezionare **record personalizzati** e quindi fare clic **su nuovo record personalizzato**.
+3. In **Manage DNS**, selezionare **record personalizzati**, quindi scegliere **nuovo record personalizzato**.
 
 4. Selezionare il tipo di record DNS che si desidera aggiungere e digitare le informazioni per il nuovo record.
 

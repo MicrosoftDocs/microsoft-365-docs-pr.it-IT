@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 4b25f701aca24563dc4f1a15f78a80e1e2064367
-ms.sourcegitcommit: d859ea36152c227699c1786ef08cda5805ecf7db
+ms.openlocfilehash: 253e85da7bb85a0722831851f00051a50a96153e
+ms.sourcegitcommit: 849b365bd3eaa9f3c3a9ef9f5973ef81af9156fa
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49604384"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49688412"
 ---
 # <a name="whats-new-in-microsoft-secure-score"></a>Novità di Microsoft Secure Score
 
@@ -35,7 +35,18 @@ Per rendere Microsoft Secure Score un migliore rappresentante della posizione di
 
 Microsoft Secure Score può essere trovato https://security.microsoft.com/securescore nel [Centro sicurezza Microsoft 365](overview-security-center.md).
 
-## <a name="november-2020"></a>2020 novembre
+## <a name="december-2020"></a>Dicembre 2020
+
+### <a name="added-6-accounts-related-improvement-actions-for-microsoft-defender-for-endpoint-previously-microsoft-defender-atp"></a>Sono state aggiunte 6 azioni di miglioramento correlate agli account per Microsoft Defender per endpoint (in precedenza Microsoft Defender ATP):
+
+- Impostare ' lunghezza minima password ' su '14 o più caratteri '
+- Impostare ' applica cronologia password ' a '24 o più password '
+- Impostare ' validità massima password ' su '60 o meno giorni, ma non 0'
+- Impostare ' validità minima password ' su' 1 o più giorni '
+- Disabilitare l'account di amministratore predefinito
+- Disabilitare l'account Guest incorporato
+
+## <a name="november-2020"></a>Novembre 2020
 
 ### <a name="removed-the-ability-to-create-servicenow-tickets-through-secure-score"></a>Rimossa la possibilità di creare i ticket di ServiceNow tramite il Punteggio sicuro 
 
@@ -47,7 +58,7 @@ La possibilità di creare i ticket di ServiceNow tramite il Punteggio sicuro acc
 - Modificare il percorso eseguibile del servizio in una posizione protetta comune
 - Cambiare l'account del servizio per evitare la password memorizzata nella cache nel registro di sistema
 
-## <a name="october-2020"></a>2020 ottobre
+## <a name="october-2020"></a>Ottobre 2020
 
 ### <a name="remove-improvement-action-related-to-microsoft-defender-for-endpoint"></a>Rimuovere l'azione di miglioramento relativa a Microsoft Defender per endpoint
 

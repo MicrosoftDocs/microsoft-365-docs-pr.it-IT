@@ -1,9 +1,9 @@
 ---
-title: L'esperienza cliente durante la migrazione ai servizi di Office 365 nelle nuove aree data center tedesche
+title: Modifiche apportate alla migrazione ai servizi di Office 365 nelle nuove aree del datacenter tedesco
 ms.author: andyber
 author: andybergen
 manager: laurawi
-ms.date: 12/01/2020
+ms.date: 12/11/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -18,15 +18,15 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
-description: "Riepilogo: informazioni sull'esperienza di spostamento da Microsoft Cloud Germany (Microsoft Cloud Deutschland) a servizi di Office 365 nella nuova area datacenter tedesca."
-ms.openlocfilehash: a44fbe504a9a710856deeb3baf258feb124ce7ae
-ms.sourcegitcommit: 38d828ae8d4350ae774a939c8decf30cb36c3bea
+description: 'Riepilogo: informazioni sulle modifiche apportate allo spostamento da Microsoft Cloud Germany (Microsoft Cloud Deutschland) ai servizi di Office 365 nella nuova area datacenter tedesco.'
+ms.openlocfilehash: 0415f7b95cb9a9f2625798311946dac0f1f7c2c0
+ms.sourcegitcommit: 849b365bd3eaa9f3c3a9ef9f5973ef81af9156fa
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "49551696"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49688623"
 ---
-# <a name="customer-experience-during-the-migration-to-office-365-services-in-the-new-german-datacenter-regions"></a>L'esperienza cliente durante la migrazione ai servizi di Office 365 nelle nuove aree data center tedesche
+# <a name="what-has-changed-for-the-migration-to-office-365-services-in-the-new-german-datacenter-regions"></a>Modifiche apportate alla migrazione ai servizi di Office 365 nelle nuove aree del datacenter tedesco
 
 Le migrazioni tenant sono progettate in modo da avere un effetto minimo sugli amministratori e sugli utenti. Esistono tuttavia alcune considerazioni su ciascun carico di lavoro. Leggere le sezioni seguenti per una migliore comprensione dell'esperienza di migrazione per i carichi di lavoro.
 
@@ -107,9 +107,9 @@ Guida introduttiva:
 
 Spostamento attraverso la transizione:
 
-- [Operazioni e impatto delle fasi di migrazione](ms-cloud-germany-transition-phases.md)
+- [Azioni ed impatti sulle fasi della migrazione](ms-cloud-germany-transition-phases.md)
 - [Ulteriore prelavoro](ms-cloud-germany-transition-add-pre-work.md)
-- Informazioni aggiuntive su [Servizi](ms-cloud-germany-transition-add-general.md), [dispositivi](ms-cloud-germany-transition-add-devices.md), [esperienze](ms-cloud-germany-transition-add-experience.md)e [ad FS](ms-cloud-germany-transition-add-adfs.md).
+- Ulteriori informazioni su [Azure ad](ms-cloud-germany-transition-azure-ad.md), [dispositivi](ms-cloud-germany-transition-add-devices.md), [esperienze](ms-cloud-germany-transition-add-experience.md)e [ad FS](ms-cloud-germany-transition-add-adfs.md).
 
 App Cloud:
 

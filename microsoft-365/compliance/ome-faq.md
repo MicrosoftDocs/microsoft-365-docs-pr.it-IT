@@ -15,12 +15,12 @@ search.appverid:
 ms.assetid: 0432dce9-d9b6-4e73-8a13-4a932eb0081e
 description: Si ha una domanda su come funzionano le nuove funzionalità di protezione dei messaggi? Controllare la risposta qui.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: efccbdf2be33fb771e7e68ba5a0b3dafa82d9ce8
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: a83e8b05f59ff05d22422431683e26b11bb8a780
+ms.sourcegitcommit: 849b365bd3eaa9f3c3a9ef9f5973ef81af9156fa
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47546060"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49688616"
 ---
 # <a name="message-encryption-faq"></a>Domande frequenti sulla crittografia dei messaggi
 
@@ -56,7 +56,7 @@ Per utilizzare le nuove funzionalità OME, è necessario uno dei seguenti piani:
 
 ## <a name="can-i-use-exchange-online-with-bring-your-own-key-byok-in-azure-information-protection"></a>È possibile utilizzare Exchange Online con Bring your own key (BYOK) in Azure Information Protection?
 
-Sì! Microsoft consiglia di completare la procedura di configurazione di BYOK prima di configurare OME.
+Sì. Microsoft consiglia di completare la procedura di configurazione di BYOK prima di configurare OME.
   
 Per ulteriori informazioni su BYOK, vedere [Planning and implementing your Azure Information Protection tenant Key](https://docs.microsoft.com/information-protection/plan-design/plan-implement-tenant-key).
   
@@ -96,15 +96,19 @@ Gli utenti locali possono inviare messaggi crittografati tramite le regole del f
   
 ## <a name="what-email-client-do-i-need-to-use-in-order-to-create-an-ome-encrypted-message-what-applications-are-supported-for-sending-protected-messages"></a>Quale client di posta elettronica è necessario utilizzare per creare un messaggio crittografato OME? Quali applicazioni sono supportate per l'invio di messaggi protetti?
 
-È possibile creare messaggi protetti da Outlook 2016 e Outlook 2013 per Windows e Mac e da Outlook sul Web.
+È possibile creare messaggi protetti da Outlook 2016, Outlook 2013 per Windows e Mac e da Outlook sul Web. Per ulteriori informazioni sull'invio di messaggi crittografati, vedere [Send, View, and reply to encrypted messages in Outlook for PC](https://support.microsoft.com/office/send-view-and-reply-to-encrypted-messages-in-outlook-for-pc-eaa43495-9bbb-4fca-922a-df90dee51980?ui=en-us&rs=en-us&ad=us).
   
 ## <a name="what-email-clients-are-supported-to-read-and-reply-to-protected-emails"></a>Quali client di posta elettronica sono supportati per la lettura e la risposta ai messaggi di posta elettronica protetti?
 
 Gli utenti di Microsoft 365 possono leggere e rispondere da Outlook per Windows e Mac (2013 e 2016), Outlook sul Web e Outlook Mobile (Android e iOS). È inoltre possibile utilizzare il client di posta elettronica nativo iOS se l'organizzazione lo consente. Se non si è un utente di Microsoft 365, è possibile leggere e rispondere a messaggi crittografati sul Web tramite il Web browser.
-  
+
+## <a name="what-email-clients-support-the-encrypt-only-protected-emails"></a>Quali client di posta elettronica supportano le e-mail protette solo per la crittografia?
+
+Gli utenti di Microsoft 365 possono utilizzare Outlook per PC versioni 2019 e Microsoft 365 per creare la posta protetta con il criterio di sola crittografia.  Questo significa che i messaggi a cui è applicato il nuovo criterio di crittografia solo possono essere letti direttamente in Outlook sul Web, in Outlook per iOS e Android e ora Outlook per PC versioni 2019 e Microsoft 365.
+
 ## <a name="is-there-a-size-limit-for-messages-you-can-send-with-ome"></a>Esiste un limite di dimensione per i messaggi che è possibile inviare con OME?
 
-Sì. La dimensione massima dei messaggi che è possibile inviare con OME, inclusi gli allegati, è 30 MB.
+Sì. La dimensione massima dei messaggi che è possibile inviare con OME, inclusi gli allegati, è di 25 MB. Per ulteriori informazioni, vedere [limiti dei messaggi](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#message-limits-1).
 
 ## <a name="what-file-types-are-supported-as-attachments-in-protected-emails-do-attachments-inherit-the-protection-policies-associated-with-protected-emails"></a>Quali tipi di file sono supportati come allegati nei messaggi di posta elettronica protetti? Gli allegati ereditano i criteri di protezione associati ai messaggi di posta elettronica protetti?
 
@@ -139,6 +143,11 @@ Not yet. Gli allegati di OneDrive for business non sono supportati e gli utenti 
 
 Quando gli allegati sono protetti da un messaggio protetto, i client di Outlook offrono la possibilità di visualizzare in anteprima il documento direttamente. Outlook supporta l'anteprima dei documenti di Office (docx, xlsx, pptx, doc, xls, PPT). Outlook sul Web supporta l'anteprima dei documenti di Office (docx, xlsx, pptx) e PDF.  
 
+## <a name="what-email-clients-support-revocation-of-protected-emails"></a>Quali client di posta elettronica supportano la revoca dei messaggi di posta elettronica protetti?
+
+Outlook sul Web supporta la revoca della posta protetta.  Vedere [come revocare un messaggio crittografato inviato](https://docs.microsoft.com/microsoft-365/compliance/revoke-ome-encrypted-mail?view=o365-worldwide#how-to-revoke-an-encrypted-message-that-you-sent) per i dettagli.
+
+
 ## <a name="can-i-automatically-encrypt-messages-by-setting-up-policies"></a>È possibile crittografare automaticamente i messaggi impostando i criteri?
 
 Sì. Utilizzare le regole del flusso di posta in Exchange Online per crittografare automaticamente un messaggio in base a determinate condizioni. Ad esempio, è possibile creare criteri basati sull'ID destinatario, sul dominio del destinatario o sul contenuto del corpo o dell'oggetto del messaggio. Vedere [definire le regole del flusso di posta per crittografare i messaggi di posta elettronica in Office 365](define-mail-flow-rules-to-encrypt-email.md).
@@ -149,11 +158,11 @@ Gli amministratori possono impostare una regola del flusso di posta per rimuover
 
 ## <a name="can-i-automatically-encrypt-messages-by-setting-up-policies-in-data-loss-prevention-dlp-through-the-security-amp-compliance-center"></a>È possibile crittografare automaticamente i messaggi mediante l'impostazione di criteri di prevenzione della perdita di dati (DLP) tramite il Centro sicurezza e &amp; conformità?
 
-Sì! È possibile configurare le regole del flusso di posta in Exchange Online o utilizzando DLP nel centro sicurezza e &amp; conformità.
+Sì. È possibile configurare le regole del flusso di posta in Exchange Online o utilizzando DLP nel centro sicurezza e &amp; conformità.
   
 ## <a name="can-i-customize-encrypted-messages-with-my-company-branding"></a>È possibile personalizzare i messaggi crittografati con il marchio dell'azienda?
 
-Sì! Per informazioni sulla personalizzazione dei messaggi di posta elettronica e del portale OME, vedere Aggiungere il marchio dell'organizzazione ai messaggi crittografati. Vedere [aggiungere il marchio dell'organizzazione ai messaggi crittografati](add-your-organization-brand-to-encrypted-messages.md).
+Sì. Per informazioni sulla personalizzazione dei messaggi di posta elettronica e del portale OME, vedere Aggiungere il marchio dell'organizzazione ai messaggi crittografati. Vedere [aggiungere il marchio dell'organizzazione ai messaggi crittografati](add-your-organization-brand-to-encrypted-messages.md).
   
 ## <a name="are-there-any-reporting-capabilities-or-insights-for-encrypted-emails"></a>Esistono funzionalità di creazione di report o Insight per i messaggi di posta elettronica crittografati?
 
@@ -173,7 +182,7 @@ Non in questo momento.
 
 ## <a name="can-i-open-encrypted-messages-sent-to-a-shared-mailbox"></a>È possibile aprire i messaggi crittografati inviati a una cassetta postale condivisa?
 
-Sì! I messaggi crittografati sono supportati per una cassetta postale condivisa.
+Sì. I messaggi crittografati sono supportati per una cassetta postale condivisa.
 
 - Gli utenti possono aprire mail protette in una cassetta postale condivisa in cui la cassetta postale condivisa ha ricevuto un messaggio di posta elettronica protetto come parte di un gruppo di distribuzione.
 

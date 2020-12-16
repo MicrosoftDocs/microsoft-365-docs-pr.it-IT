@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.assetid: b0f4d010-9fd1-44d0-9d20-fabad2cdbab5
 description: Informazioni su come accedere a risorse locali, come le app line-of-business, le condivisioni file e le stampanti, da un dispositivo Windows 10 aggiunto ad Azure Active Directory.
-ms.openlocfilehash: 2144268f5cbab67c39d5902622c61c0c35e6481c
-ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
+ms.openlocfilehash: 22edf0c23d6318e1f70bcb21b2cd697ea0a75da4
+ms.sourcegitcommit: 849b365bd3eaa9f3c3a9ef9f5973ef81af9156fa
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "48295311"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49688234"
 ---
 # <a name="access-on-premises-resources-from-an-azure-ad-joined-device-in-microsoft-365-business-premium"></a>Accedere alle risorse locali da un dispositivo di Azure AD-join in Microsoft 365 Business Premium
 
@@ -63,4 +63,4 @@ Se il dispositivo Windows aggiunto ad Azure AD è già stato associato al domini
 
 - Gli utenti non saranno in grado di eseguire l'autenticazione delle applicazioni che dipendono dall'autenticazione di Active Directory. Valutare l'applicazione legacy e prendere in considerazione l'aggiornamento a un'applicazione che utilizzi l'autenticazione moderna, se possibile.
 
-- L'individuazione della stampante Active Directory non funziona. È possibile fornire percorsi di stampa diretta per tutti gli utenti o utilizzare [Stampa cloud ibrida](https://docs.microsoft.com/windows-server/administration/hybrid-cloud-print/hybrid-cloud-print-deploy).
+- L'individuazione della stampante Active Directory non funziona. È possibile fornire percorsi Direct Printer per tutti gli utenti o utilizzare la [stampa universale](https://aka.ms/UPDocs).

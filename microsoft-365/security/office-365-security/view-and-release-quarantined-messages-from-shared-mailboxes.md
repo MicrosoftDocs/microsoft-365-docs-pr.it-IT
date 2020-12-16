@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 ROBOTS: NOINDEX
 description: Gli utenti possono imparare a visualizzare e ad agire sui messaggi in quarantena inviati alle cassette postali condivise a cui hanno le autorizzazioni.
-ms.openlocfilehash: 0c165395edc3a3032ece603cb8d9aac875443d7d
-ms.sourcegitcommit: 26c2f01d6f88f6c288b04f9f08062d68dd1e67e1
+ms.openlocfilehash: 34a401d3bff66926acd3e04d7144ce465dfa3dbb
+ms.sourcegitcommit: 849b365bd3eaa9f3c3a9ef9f5973ef81af9156fa
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "49570962"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49688030"
 ---
 # <a name="view-and-release-quarantined-messages-from-shared-mailboxes"></a>Visualizzare e rilasciare i messaggi in quarantena dalle cassette postali condivise
 
@@ -47,16 +47,6 @@ Indipendentemente dal metodo, gli utenti possono evitare confusione includendo l
 ## <a name="things-to-keep-in-mind"></a>Considerazioni importanti
 
 - Il primo utente che agisce sul messaggio in quarantena decide il destino del messaggio per tutti gli utenti che utilizzano la cassetta postale condivisa. Ad esempio, se si accede a una cassetta postale condivisa da 10 utenti e un utente decide di eliminare il messaggio di quarantena, il messaggio viene eliminato per tutti e 10 gli utenti. Analogamente, se un utente decide di rilasciare il messaggio, viene rilasciato alla cassetta postale condivisa ed è accessibile da tutti gli altri utenti della cassetta postale condivisa.
-
-- Attualmente, se un utente seleziona più messaggi in quarantena inviati alla cassetta postale condivisa, quando l'utente fa clic su **rilascia i** messaggi o **Elimina i messaggi** nel riquadro a comparsa azioni in **blocco** , vengono restituiti i seguenti errori di errore.
-
-  > Non si dispone dell'autorizzazione per rilasciare tutti i messaggi in quarantena selezionati.
-  >
-  > Non si dispone dell'autorizzazione necessaria per eliminare tutti i messaggi in quarantena selezionati.
-
-  Indipendentemente dall'errore, l'azione viene eseguita sui messaggi e l'errore può essere ignorato.
-
-  ![Errore false quando si rilascia o si eliminano i messaggi in quarantena inviati a una cassetta postale condivisa.](../../media/quarantine-bulk-action-error.png)
 
 - Attualmente, il pulsante **Blocca mittente** non è disponibile nel riquadro a comparsa **Dettagli** per i messaggi in quarantena che sono stati inviati alla cassetta postale condivisa.
 

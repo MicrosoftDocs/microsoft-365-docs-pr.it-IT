@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 description: Gli amministratori possono scoprire come rimuovere gli utenti dal portale Utenti con restrizioni in Office 365. Gli utenti vengono aggiunti al portale Utenti con restrizioni se hanno inviato posta indesiderata in uscita, in genere in seguito a una compromissione dell'account.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f464a2c02ae6b6290e79cc9aff7d3a37bc08a6ff
-ms.sourcegitcommit: d81c7cea85af6ad5fef81d3c930514a51464368c
+ms.openlocfilehash: bca9366fdb8cacdc58c12757e870c8ead8f1fa7a
+ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "49572442"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "49683056"
 ---
 # <a name="remove-blocked-users-from-the-restricted-users-portal-in-office-365"></a>Rimuovere utenti bloccati dal portale Utenti con restrizioni in Office 365
 
@@ -86,7 +86,7 @@ Il criterio di avviso predefinito denominato **Utente al quale è stato impedito
 
 3. Nel riquadro a comparsa visualizzato verificare o configurare le impostazioni seguenti:
 
-   - **Stato**: verificare che l'avviso sia attivato ![Attiva](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png).
+   - **Stato**: verificare che l'avviso sia attivato ![Attiva](../../media/scc-toggle-on.png).
 
    - **Destinatari di posta elettronica**: fare clic su **Modifica** e verificare o configurare le impostazioni seguenti nel riquadro a comparsa **Modifica destinatari** visualizzato:
 

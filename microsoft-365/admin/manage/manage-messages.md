@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 97af2932-0868-4ccf-8f6b-21a94946c58a
 description: Informazioni su come gestire i messaggi del centro messaggi per facilitare la gestione delle modifiche.
-ms.openlocfilehash: c415120a86b0c095df8ba9cbb4130abda1f6596b
-ms.sourcegitcommit: 634abe8a237e27dfe82376e6ef32280aab5d4a27
+ms.openlocfilehash: 9f64be8396900db3377505fea3e144fffbb3b096
+ms.sourcegitcommit: 849b365bd3eaa9f3c3a9ef9f5973ef81af9156fa
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "45005823"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49688279"
 ---
 # <a name="manage-messages-in-message-center"></a>Gestire i messaggi nel Centro messaggi
 
@@ -33,7 +33,7 @@ I post del Centro messaggi sono annunci importanti sulle caratteristiche nuove e
   
 ## <a name="read-a-message"></a>Leggere un messaggio
 
-Per accedere al centro messaggi, accedere all'interfaccia di [Amministrazione](https://go.microsoft.com/fwlink/p/?linkid=2024339)e selezionare **Health**  >  **centro messaggi**di integrità. 
+Per accedere al centro messaggi, accedere all'interfaccia di [Amministrazione](https://go.microsoft.com/fwlink/p/?linkid=2024339)e selezionare   >  **centro messaggi** di integrità. 
 
 Selezionare un titolo del messaggio per aprirlo nel riquadro di lettura. Ogni messaggio contiene un riepilogo della modifica, una dichiarazione del modo in cui la modifica può influire sull'utente, informazioni su come preparare la propria organizzazione per la modifica e, nella maggior parte dei casi, un collegamento di informazioni aggiuntive in cui è possibile ottenere ulteriori dettagli. Le informazioni aggiuntive continuano a essere disponibili anche dopo la scadenza di un messaggio.
 
@@ -171,7 +171,7 @@ Se viene visualizzato un messaggio che non appartiene all'utente o che si è gi�
   
 1. Selezionare la scheda **Archivia messaggi** nella parte superiore del centro messaggi. Viene visualizzato un elenco di messaggi archiviati. 
 
-2. Selezionare il messaggio, selezionare **Ripristina**e il messaggio viene ripristinato in messaggi attivi.
+2. Selezionare il messaggio, selezionare **Ripristina** e il messaggio viene ripristinato in messaggi attivi.
 
 ::: moniker-end
 
@@ -206,6 +206,11 @@ Se viene visualizzato un messaggio che non appartiene all'utente o che si è gi�
 2. Selezionare **Ripristina** a destra dell'ID del messaggio e il messaggio viene ripristinato in messaggi attivi.
 
 ::: moniker-end
+
+## <a name="track-your-message-center-tasks-in-planner"></a>Tenere traccia delle attività del Centro messaggi in Planner
+
+Nel Centro messaggi di Microsoft 365 arrivano molte informazioni utili riguardanti le modifiche ai servizi di Microsoft 365. Può essere difficile tenere conto di quali modifiche richiedono operazioni da eseguire, quando e da chi e per tenere conto di ogni attività da completare. Potrebbe anche risultare utile aggiungere note riguardanti un elemento e contrassegnarle per controllarle in un secondo momento. È possibile fare tutto questo e molto altro ancora quando si sincronizzano i messaggi dall'interfaccia di amministrazione di Microsoft 365 a Microsoft Planner. Per ulteriori informazioni, vedere [Track Your Message Center Tasks in Planner](https://docs.microsoft.comoffice365/planner/track-message-center-tasks-planner).
+
 
 Per una panoramica del centro messaggi, vedere [Message Center in Microsoft 365](message-center.md). In alternativa, per informazioni su come impostare le preferenze della lingua per abilitare la traduzione automatica per i post del centro messaggi, vedere [Language Translation per i post del centro messaggi](language-translation-for-message-center-posts.md). Se si desidera programmare un modo alternativo per ottenere informazioni sull'integrità del servizio in tempo reale e comunicazioni del centro messaggi, fare riferimento a [Microsoft 365 Service Communications API Overview](https://go.microsoft.com/fwlink/p/?linkid=848507).
   

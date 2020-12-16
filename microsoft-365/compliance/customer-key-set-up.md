@@ -13,12 +13,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Informazioni su come configurare la chiave del cliente per Microsoft 365 per Exchange Online, Skype for business, SharePoint Online, OneDrive for business e i file teams.
-ms.openlocfilehash: 69e12d46ae4106a399a8eeff49ebbe0f2a3055e2
-ms.sourcegitcommit: e56894917d2aae05705c3b9447388d10e2156183
+ms.openlocfilehash: fed181649696c7f5a92850943e1dd980b42aa819
+ms.sourcegitcommit: 849b365bd3eaa9f3c3a9ef9f5973ef81af9156fa
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48841287"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49688423"
 ---
 # <a name="set-up-customer-key"></a>Configurare la chiave del cliente
 
@@ -31,9 +31,9 @@ Con il codice "Customer Key", è possibile controllare le chiavi di crittografia
   
 ## <a name="before-you-set-up-customer-key"></a>Prima di configurare la chiave del cliente
 
-Prima di iniziare, verificare di disporre delle licenze appropriate per l'organizzazione. A partire dal 1 ° aprile 2020, la chiave del cliente in Office 365 è disponibile in Office 365 E5, M365 E5, M365 E5 compliance e M365 E5 Information Protection & SKU. Microsoft Office 365 Advanced Compliance SKU non è più disponibile per l'ottenimento di nuove licenze. Le licenze di conformità avanzate di Office 365 continueranno a essere supportate.
+Prima di iniziare, verificare di disporre delle licenze appropriate per l'organizzazione. Utilizzare una sottoscrizione a pagamento e fatturata di Azure utilizzando un contratto Enterprise o un provider di servizi cloud. Gli abbonamenti di Azure acquistati con pay as you go plans o con una carta di credito non sono supportati per la chiave del cliente. A partire dal 1 ° aprile 2020, la chiave del cliente in Office 365 è disponibile in Office 365 E5, M365 E5, M365 E5 compliance e M365 E5 Information Protection & SKU. Microsoft Office 365 Advanced Compliance SKU non è più disponibile per l'ottenimento di nuove licenze. Le licenze di conformità avanzate di Office 365 continueranno a essere supportate.
 
-Prima di iniziare, verificare di disporre delle licenze appropriate per l'organizzazione e che l'account sia stato fatturato e non pagato con una carta di credito. Per informazioni sui concetti e le procedure illustrate in questo argomento, vedere la documentazione di [Azure Key Vault](https://docs.microsoft.com/azure/key-vault/) . Inoltre, acquisire familiarità con i termini utilizzati in Azure, ad esempio, il [tenant di Azure ad](https://docs.microsoft.com/previous-versions/azure/azure-services/jj573650(v=azure.100)#what-is-an-azure-ad-tenant).
+Per informazioni sui concetti e le procedure illustrate in questo argomento, vedere la documentazione di [Azure Key Vault](https://docs.microsoft.com/azure/key-vault/) . Inoltre, acquisire familiarità con i termini utilizzati in Azure, ad esempio, il [tenant di Azure ad](https://docs.microsoft.com/previous-versions/azure/azure-services/jj573650(v=azure.100)#what-is-an-azure-ad-tenant).
 
 FastTrack viene utilizzato solo per raccogliere le informazioni necessarie per la configurazione del tenant e del servizio utilizzate per la registrazione per la chiave del cliente. Le offerte chiave del cliente sono pubblicate tramite FastTrack in modo che sia opportuno che i partner inviino le informazioni richieste utilizzando lo stesso metodo. FastTrack consente inoltre di archiviare facilmente i dati forniti nell'offerta.
   
@@ -141,9 +141,9 @@ Prima di contattare il team di Microsoft 365, è necessario eseguire i passaggi 
 
 3. Contattare Microsoft per eseguire il processo di completamento. Per il team di SharePoint e OneDrive for business, contattare [Spock@microsoft.com](mailto:spock@microsoft.com). Per Exchange Online e Skype for business, contattare [exock@microsoft.com](mailto:exock@microsoft.com). Includere quanto segue nel messaggio di posta elettronica:
 
-   **Oggetto** : chiave del cliente per \<*Your tenant's fully-qualified domain name*\>
+   **Oggetto**: chiave del cliente per \<*Your tenant's fully-qualified domain name*\>
 
-   **Corpo** : ID di sottoscrizione per i quali si desidera che il periodo di conservazione obbligatorio sia stato completato.
+   **Corpo**: ID di sottoscrizione per i quali si desidera che il periodo di conservazione obbligatorio sia stato completato.
    L'output di Get-AzProviderFeature per ogni sottoscrizione.
 
    Il contratto di servizio per il completamento di questo processo è di cinque giorni lavorativi una volta che Microsoft è stato informato (e verificato) di aver registrato gli abbonamenti per l'utilizzo di un periodo di conservazione obbligatorio.
@@ -254,7 +254,7 @@ Per abilitare l'eliminazione temporanea nei Vault delle chiavi, eseguire la proc
    Set-AzResource -ResourceId $r.ResourceId -Properties $r.Properties
    ```
 
-3. Confirm soft delete è configurato per il Vault Key tramite l'esecuzione del cmdlet **Get-AzKeyVault** . Se l'eliminazione morbida è configurata correttamente per il Vault chiave, la proprietà _soft delete Enabled_ restituisce il valore **true** :
+3. Confirm soft delete è configurato per il Vault Key tramite l'esecuzione del cmdlet **Get-AzKeyVault** . Se l'eliminazione morbida è configurata correttamente per il Vault chiave, la proprietà _soft delete Enabled_ restituisce il valore **true**:
 
    ```powershell
    Get-AzKeyVault -VaultName <vault name> | fl
@@ -307,7 +307,7 @@ Per controllare il livello di ripristino di una chiave, in Azure PowerShell, ese
 (Get-AzKeyVaultKey -VaultName <vault name> -Name <key name>).Attributes
 ```
 
-Se la proprietà del _livello di recupero_ restituisce un valore diverso da quello di **+ ProtectedSubscription** , sarà necessario esaminare questo argomento e assicurarsi di aver seguito tutti i passaggi necessari per inserire la sottoscrizione nell'elenco non annullare e di aver attivato l'eliminazione temporanea su ognuna delle volte chiave.
+Se la proprietà del _livello di recupero_ restituisce un valore diverso da quello di **+ ProtectedSubscription**, sarà necessario esaminare questo argomento e assicurarsi di aver seguito tutti i passaggi necessari per inserire la sottoscrizione nell'elenco non annullare e di aver attivato l'eliminazione temporanea su ognuna delle volte chiave.
   
 ### <a name="back-up-azure-key-vault"></a>Backup del Vault delle chiavi di Azure
 
@@ -501,7 +501,7 @@ Register-SPODataEncryptionPolicy -PrimaryKeyVaultName 'stageRG3vault' -PrimaryKe
 
 ## <a name="related-articles"></a>Articoli correlati
 
-- [Crittografia del servizio con la chiave del cliente](customer-key-overview.md)
+- [Crittografia del servizio con Customer Key](customer-key-overview.md)
 
 - [Gestione della chiave del cliente](customer-key-manage.md)
 
