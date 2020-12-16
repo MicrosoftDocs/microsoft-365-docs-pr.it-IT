@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 'La Prevenzione della perdita di dati degli endpoint di Microsoft 365 estende il monitoraggio delle attività dei file e le azioni di protezione agli endpoint. I file vengono resi visibili nelle soluzioni di conformità di Microsoft 365 '
-ms.openlocfilehash: 457701a514159e54e932db3e4ad04a7428165fdc
-ms.sourcegitcommit: d859ea36152c227699c1786ef08cda5805ecf7db
+ms.openlocfilehash: 1dac32505144c3966ad2219cc69a33ba29f194dc
+ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49604316"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "49682627"
 ---
 # <a name="learn-about-microsoft-365-endpoint-data-loss-prevention"></a>Informazioni sulla prevenzione della perdita di dati degli endpoint di Microsoft 365
 
@@ -34,18 +34,19 @@ La **prevenzione della perdita di dati degli endpoint** (Endpoint DLP) estende l
 
 ## <a name="endpoint-activities-you-can-monitor-and-take-action-on"></a>Attività endpoint che è possibile monitorare e su cui si può intervenire
 
-Microsoft Endpoint DLP consente di controllare e gestire i tipi di attività seguenti, che gli utenti possono eseguire sugli elementi sensibili nei dispositivi che eseguono Windows 10. Questo include:
+Microsoft Endpoint DLP consente di controllare e gestire i tipi di attività seguenti, che gli utenti possono eseguire sugli elementi sensibili nei dispositivi che eseguono Windows 10.
 
 
-|attività sull'elemento |controllabile/limitabile  |
-|---------|---------|
-|creazione    | controllabile      |
-|ridenominazione    |  controllabile       |
-|copia o creazione su supporti rimovibili     |     controllabile e limitabile|
-|copia in condivisione di rete, ad esempio \\mio-server\fileshare   |     controllabile e limitabile    |
-|stampa |    controllabile e limitabile       |
-|copia nel cloud tramite Microsoft Edge Chromium    |   controllabile e limitabile        |
-|accesso da app e browser non consentiti    |  controllabile e limitabile       |
+|attività |descrizione  | controllabile/limitabile|
+|---------|---------|---------|
+|caricare su servizio cloud o accedere con browser non consentiti    | Rileva quando un utente tenta di caricare un elemento in un dominio di servizio riservato o di accedere a un elemento attraverso un browser.  Se si utilizza un browser che è elencato in DLP come browser non consentito, l'attività di upload verrà bloccata e l'utente verrà reindirizzato all'utilizzo di Edge Chromium. Edge Chromium permetterà o bloccherà il caricamento o l'accesso in base alla configurazione dei criteri DLP         |controllabile e limitabile|
+|copiare su altra app    |Rileva quando un utente tenta di copiare le informazioni da un elemento protetto e poi le incolla in un'altra applicazione, processo o elemento. Il processo di copiare e incollare informazioni all'interno della stessa applicazione, processo o elemento non viene rilevato da questa attività.         | controllabile e limitabile|
+|copiare su supporto rimovibile USB |Rileva quando un utente tenta di copiare un elemento o un'informazione su un supporto rimovibile o un dispositivo USB.         | controllabile e limitabile|
+|copiare su condivisione di rete    |Rileva quando un utente tenta di copiare un elemento in una condivisione di rete o in un'unità di rete mappata         |controllabile e limitabile|
+|stampare un documento    |Rileva quando un utente tenta di stampare un elemento protetto su una stampante locale o di rete.| controllabile e limitabile         |
+|creare un elemento.|Rileva quando un utente crea un elemento| controllabile|
+|rinominare un elemento|Rileva quando un utente rinomina un elemento| controllabile|
+
 
 ## <a name="whats-different-in-endpoint-dlp"></a>Cosa distingue Endpoint DLP
 

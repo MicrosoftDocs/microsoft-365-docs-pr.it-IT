@@ -119,7 +119,7 @@
                   href: mtp/mtp-autoir.md
                 - name: Configura le funzionalità di analisi e risposta alle minacce automatizzate
                   href: mtp/mtp-configure-auto-investigation-response.md
-                - name: Azioni correttive in seguito alle indagini automatizzate
+                - name: Azioni correttive
                   href: mtp/mtp-remediation-actions.md
                 - name: Visita il Centro notifiche
                   href: mtp/mtp-action-center.md

@@ -17,12 +17,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 950daef315ef27fe5d6bc40528eb0104974c8c00
-ms.sourcegitcommit: d859ea36152c227699c1786ef08cda5805ecf7db
+ms.openlocfilehash: d668aa8f0588ecc5ca24086d060cda32cdf1dbc6
+ms.sourcegitcommit: 849b365bd3eaa9f3c3a9ef9f5973ef81af9156fa
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49604396"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49688042"
 ---
 # <a name="whats-coming-to-microsoft-secure-score"></a>Cosa viene a Microsoft Secure Score
 
@@ -34,16 +34,7 @@ Microsoft Secure Score può essere trovato https://security.microsoft.com/secure
 
 Sono state apportate alcune modifiche nel prossimo futuro per rendere [Microsoft Secure Score](microsoft-secure-score.md) un migliore rappresentante della propria posizione di sicurezza e migliorare l'usabilità. Il Punteggio e il punteggio massimo possibile possono variare.
 
-### <a name="december-2020"></a>2020 dicembre
-
-Aggiunta di 6 azioni di miglioramento correlate agli account per Microsoft Defender per endpoint (in precedenza Microsoft Defender ATP):
-
-- Impostare ' lunghezza minima password ' su '14 o più caratteri '
-- Impostare ' applica cronologia password ' a '24 o più password '
-- Impostare ' validità massima password ' su '60 o meno giorni, ma non 0'
-- Impostare ' validità minima password ' su' 1 o più giorni '
-- Disabilitare l'account di amministratore predefinito
-- Disabilitare l'account Guest incorporato
+### <a name="no-planned-changes"></a>Nessuna modifica pianificata
 
 ## <a name="related-resources"></a>Risorse correlate
 

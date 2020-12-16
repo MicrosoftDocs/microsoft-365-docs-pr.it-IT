@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Pronti per iniziare a implementare i criteri e le etichette di riservatezza per gestire i dati della tua organizzazione, ma in dubbio su come iniziare? Leggere alcune indicazioni utili per iniziare.
-ms.openlocfilehash: b4dcbe15e2a2d9e3d056555a9212125b60133826
-ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
+ms.openlocfilehash: 26568d2a603e447156aead751178555fa400db5e
+ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48919864"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "49682531"
 ---
 # <a name="get-started-with-retention-policies-and-retention-labels"></a>Informazioni sui criteri e sulle etichette di conservazione
 
@@ -38,7 +38,7 @@ Pronti per iniziare a gestire i dati della tua organizzazione, conservando il co
     
     Nell'ambito di questo processo di valutazione, determinare se si userà [Gestione dei record](records-management.md).
 
-3. **Creare criteri di conservazione e etichette di conservazione** , in base alle impostazioni e azioni di conservazione identificate.
+3. **Creare criteri di conservazione e etichette di conservazione**, in base alle impostazioni e azioni di conservazione identificate.
     
     Per le etichette di conservazione, potrebbe risultare utile usare un [piano di archiviazione](file-plan-manager.md) per definire e perfezionare le etichette di conservazione in un foglio di calcolo. Successivamente, importare il foglio di calcolo per creare le etichette.
     
@@ -52,7 +52,13 @@ Per visualizzare le opzioni di licenza da assegnare agli utenti per trarre vanta
 
 ## <a name="permissions-required-to-create-and-manage-retention-policies-and-retention-labels"></a>Autorizzazioni necessarie per la creazione e gestione dei criteri ed etichette di conservazione
 
-Ai membri del team di conformità che creeranno e gestiranno i criteri e le etichette di conservazione è necessario assegnare autorizzazioni per il [Centro conformità Microsoft 365](https://compliance.microsoft.com/). Per impostazione predefinita, l'amministratore del tenant (amministratore globale) ha accesso a questa posizione e può fornire l'accesso ai responsabili della conformità e ad altre persone senza concedere loro tutte le autorizzazioni di un amministratore del tenant. Per concedere le autorizzazioni per questa amministrazione limitata, è consigliabile aggiungere gli utenti al gruppo di ruoli di amministratore **Amministratore di conformità**. Per le istruzioni, vedere [Fornire agli utenti l'accesso al Centro sicurezza e conformità](https://docs.microsoft.com/microsoft-365/security/office-365-security/grant-access-to-the-security-and-compliance-center).
+Ai membri del team di conformità che creeranno e gestiranno i criteri e le etichette di conservazione è necessario assegnare autorizzazioni per il [Centro conformità Microsoft 365](https://compliance.microsoft.com/). Per impostazione predefinita, l'amministratore del tenant (amministratore globale) ha accesso a questa posizione e può fornire l'accesso ai responsabili della conformità e ad altre persone senza concedere loro tutte le autorizzazioni di un amministratore del tenant. Per concedere le autorizzazioni per questa amministrazione limitata, è consigliabile aggiungere gli utenti al gruppo di ruoli di amministratore **Amministratore di conformità**.
+
+In alternativa all'utilizzo di questo ruolo predefinito, è possibile creare un nuovo gruppo di ruoli e aggiungere a questo gruppo il ruolo **Gestione conservazione**. Per sola lettura, usare **Gestione conservazione solo visualizzazione**. 
+
+Per altre informazioni su gruppi di ruoli e ruoli, vedere [Autorizzazioni nel Centro sicurezza e conformità](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center#roles-in-the-security--compliance-center).
+
+Per istruzioni su come aggiungere utenti a gruppi di ruoli e assegnare i ruoli, vedere [Concedere agli utenti l'accesso al Centro sicurezza e conformità](https://docs.microsoft.com/microsoft-365/security/office-365-security/grant-access-to-the-security-and-compliance-center).
 
 Queste autorizzazioni sono necessarie solo per creare, configurare e applicare criteri di conservazione ed etichette di conservazione. La persona che configura tali criteri ed etichette non ha bisogno di accedere al contenuto.
 

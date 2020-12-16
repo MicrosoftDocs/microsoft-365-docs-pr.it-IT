@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Monitorare e gestire lo smaltimento del contenuto, sia che si utilizzi una revisione per l'eliminazione o che il contenuto venga eliminato automaticamente in base alle impostazioni configurate.
-ms.openlocfilehash: 9900bbc58818a98ad41f4f796184ccf21041bbfe
-ms.sourcegitcommit: a9486f9dc51f0908393000ec3c211e3430c26abd
+ms.openlocfilehash: 9c2e9055d0468270df4e46fe39115708762052f3
+ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "49409213"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "49682669"
 ---
 # <a name="disposition-of-content"></a>Eliminazione del contenuto
 
@@ -35,16 +35,16 @@ Per gestire le revisioni per l’eliminazione e verificare che i record siano st
 
 ### <a name="permissions-for-disposition"></a>Autorizzazioni per l'eliminazione
 
-Per accedere correttamente alla scheda **eliminazione** nel Centro conformità Microsoft 365, è necessario che gli utenti abbiano il ruolo di amministratore per la **gestione dell’eliminazione**. Questo ruolo è incluso nei gruppi di ruoli amministratore predefiniti, **amministratore di conformità** e **amministratore dati di conformità**.
-
-Per attribuire agli utenti il necessario ruolo di gestione dell’eliminazione, aggiungere gli utenti a uno di questi gruppi di ruoli predefiniti oppure creare un gruppo di ruoli personalizzato (denominato ad esempio "revisori per l’eliminazione") e attribuire al gruppo il ruolo di gestione dell’eliminazione.  
+Per accedere correttamente alla scheda **eliminazione** nel Centro conformità Microsoft 365, è necessario che gli utenti abbiano il ruolo di amministratore per la **gestione dell’eliminazione**. Da dicembre 2020, questo ruolo è incluso nel gruppo dei ruoli di amministratore predefiniti di **Gestione record**.
 
 > [!NOTE]
-> Anche un amministratore globale deve avere il ruolo di **gestione dell'eliminazione**. 
+> Per impostazione predefinita, un amministratore globale non può avere il ruolo di **gestione dell'eliminazione**. 
+
+Per concedere agli utenti solo le autorizzazioni necessarie per le revisioni per l'eliminazione senza concedere loro l’autorizzazione a visualizzare e configurare altre funzionalità per la conservazione e la gestione dei record, creare un gruppo di ruoli personalizzato (ad esempio, denominato "Revisori per l’eliminazione") e concedere a questo gruppo il ruolo di Gestione delle eliminazioni.
 
 Inoltre, per visualizzare il contenuto degli elementi durante il processo di eliminazione, aggiungere utenti ai due gruppi di ruoli seguenti: **Visualizzatore contenuto di Esplora contenuto** e **Visualizzatore elenco di Esplora contenuto**. Se gli utenti non hanno le autorizzazioni di questi gruppi di ruoli, possono comunque selezionare un'azione di revisione per l'eliminazione per completare l'operazione, ma devono farlo senza poter vedere il contenuto dell'elemento nel centro conformità.
 
-Per le istruzioni, vedere [Fornire agli utenti l'accesso al Centro sicurezza e conformità di Office 365](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
+Per le istruzioni per configurare queste autorizzazioni, vedere [Fornire agli utenti l'accesso al Centro sicurezza e conformità di Office 365](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
 
 ### <a name="enable-auditing"></a>Abilitazione del controllo
 
