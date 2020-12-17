@@ -3,15 +3,15 @@
   items:
     - name: Configurazione
       items:
-        - name: Ottenere l'accesso alle prenotazioni
+        - name: Ottenere l'accesso a Microsoft Bookings
           href: get-access.md
         - name: Immettere le informazioni aziendali
           href: enter-business-information.md
         - name: Definire le offerte di servizi
           href: define-service-offerings.md
-        - name: Aggiungere personale alle prenotazioni
+        - name: Aggiungere personale a Bookings
           href: add-staff.md
-        - name: Pianificare chiusure aziendali e timeout
+        - name: Pianificare chiusure aziendali e permessi
           href: schedule-closures-time-off-vacation.md
         - name: Impostare i criteri di pianificazione
           href: set-scheduling-policies.md
@@ -19,29 +19,29 @@
           href: customize-booking-page.md
         - name: Creare una prenotazione manuale
           href: create-a-manual-booking.md
-        - name: Pianificare chiusure aziendali e timeout
+        - name: Pianificare chiusure aziendali e permessi
           href: schedule-closures-time-off-vacation.md
-        - name: Orari dei dipendenti
+        - name: Ore dipendenti
           href: employee-hours.md
-        - name: Aggiungere domande personalizzate e richieste alla pagina di prenotazione
+        - name: Aggiungere domande personalizzate e obbligatorie alla pagina delle prenotazioni
           href: add-questions.md
-        - name: Impostare il tempo di buffer
+        - name: Configurare il tempo di buffer
           href: set-buffer-time.md
         - name: Metriche e monitoraggio attività
           href: metrics-and-activity-tracking.md
-        - name: Impostare la lingua e il fuso orario
+        - name: Impostare lingua e fuso orario
           href: set-language-time-zones.md
-    - name: Ottenere l'app prenotazioni
+    - name: Ottenere l'app Microsoft Bookings
       href: get-bookings-app.md
-    - name: Prenotazione delle app e delle visite virtuali in Microsoft Teams
+    - name: App Bookings e visite virtuali in Microsoft Teams
       href: 'https://docs.microsoft.com/microsoftteams/bookings-app-admin?toc=/microsoft-365/bookings/toc.json&bc=/microsoft-365/bookings/breadcrumb/toc.json'
-    - name: Grafico di confronto-app Web App versus Teams
+    - name: 'Grafico di confronto: app Web contro app Teams'
       href: comparison-chart.md
-    - name: Eliminare un calendario di prenotazione
+    - name: Eliminare un calendario delle prenotazioni
       href: delete-calendar.md
-    - name: Attivazione o disattivazione delle prenotazioni Microsoft
+    - name: Attivare o disattivare Microsoft Bookings
       href: turn-bookings-on-or-off.md
-    - name: Informazioni per la creazione di report per Microsoft bookings
+    - name: Riportare informazioni per Microsoft Bookings
       href: reporting-info.md
-    - name: Domande frequenti su Microsoft bookings (FAQ)
+    - name: Domande frequenti su Microsoft Bookings
       href: bookings-faq.md

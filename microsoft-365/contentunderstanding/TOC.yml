@@ -8,9 +8,9 @@
       href: form-processing-overview.md
     - name: Differenza tra i modelli di analisi dei documenti e dell’elaborazione dei moduli
       href: difference-between-document-understanding-and-form-processing-model.md
-- name: Introduzione ai modelli
+- name: Iniziare a usare i modelli
   items:
-    - name: Informazioni sui modelli tramite il modello di esempio
+    - name: Informazioni sui modelli tramite un modello di esempio
       href: learn-about-document-understanding-models-through-the-sample-model.md
     - name: Creare un centro contenuti
       href: create-a-content-center.md
@@ -24,9 +24,9 @@
       href: apply-a-model.md
     - name: Creare un modello di elaborazione dei moduli
       href: create-a-form-processing-model.md
-    - name: Applicazione di un'etichetta di conservazione
+    - name: Applicare un'etichetta di conservazione
       href: apply-a-retention-label-to-a-model.md
-    - name: Informazioni sull'analisi dati di utilizzo
+    - name: Analisi di utilizzo del modello
       href: model-usage-analytics.md
     - name: Sfruttare la tassonomia dell'archivio termini durante la creazione di un estrattore
       href: leverage-term-store-taxonomy.md
@@ -34,17 +34,17 @@
   items:
     - name: Introduzione all'adozione
       href: adoption-getstarted.md
-- name: Installazione e amministrazione
+- name: Configurazione e amministrazione
   items:
-    - name: Configurare la comprensione dei contenuti.
+    - name: Configurare la comprensione dei contenuti
       href: set-up-content-understanding.md
 - name: Servizi per contenuti
   items:
-    - name: Importazione tramite SKOS
+    - name: Importare tramite SKOS
       href: import-term-set-skos.md
-    - name: Riferimento alla formattazione di SKOS
+    - name: Riferimento formattazione SKOS
       href: skos-format-reference.md
-    - name: Inserire il tipo di contenuto in hub
+    - name: Spostare i tipi di contenuto in un hub
       href: push-content-type-to-hub.md
     - name: Report archivio termini
       href: term-store-analytics.md

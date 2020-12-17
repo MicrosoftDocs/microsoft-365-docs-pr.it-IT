@@ -1,32 +1,44 @@
-- name: Informazioni introduttive sulla gestione della conoscenza
+- name: Iniziare a usare le esperienze dell'argomento
   items:
-    - name: Panoramica della gestione delle informazioni
-      href: knowledge-management-overview.md
-    - name: Panoramica del centro argomenti
-      href: topic-center-overview.md
-    - name: Utilizzo degli argomenti nell'argomento centro
-      href: work-with-topics.md
-    - name: Assegnare agli utenti le autorizzazioni per il centro argomenti
-      href: give-user-permissions-to-the-topic-center.md
+    - name: Introduzione alle esperienze dell'argomento
+      href: index.md
+    - name: Panoramica delle esperienze dell'argomento
+      href: topic-experiences-overview.md
+    - name: Scoperta e conservazione delle esperienze dell'argomento
+      href: topic-experiences-discovery-curation.md
+    - name: Ruoli delle esperienze dell'argomento
+      href: topic-experiences-roles.md
     - name: Preparare l'ambiente
       href: topic-experiences-get-ready.md
-- name: Installazione e amministrazione
+- name: Configurazione e amministrazione
   items:
-    - name: Sicurezza degli argomenti
+    - name: Sicurezza dell'argomento
       href: topic-experiences-security-privacy.md
-    - name: Pianificare le esperienze sugli argomenti
+    - name: Pianificare le esperienze dell'argomento
       href: plan-topic-experiences.md
-    - name: Configurare le esperienze degli argomenti
+    - name: Configurare le esperienze dell'argomento
       href: set-up-topic-experiences.md
-    - name: Gestione dell'individuazione degli argomenti
+    - name: Gestire la scoperta dell'argomento
       href: topic-experiences-discovery.md
-    - name: Gestione della visibilità degli argomenti
+    - name: Gestire la visibilità dell'argomento
       href: topic-experiences-knowledge-rules.md
-    - name: Gestire le autorizzazioni per gli argomenti
+    - name: Gestire le autorizzazioni dell'argomento
       href: topic-experiences-user-permissions.md
-    - name: Modificare l'argomento nome centro
+    - name: Modificare il nome del centro argomenti
       href: topic-experiences-administration.md
+- name: Lavorare con gli argomenti
+  items:
+    - name: Panoramica sul centro argomenti
+      href: topic-center-overview.md
+    - name: Gestire gli argomenti nel centro argomenti
+      href: manage-topics.md
+    - name: Creare un nuovo argomento
+      href: create-a-topic.md
+    - name: Modificare un argomento
+      href: edit-a-topic.md
+    - name: Limitazione della sicurezza
+      href: topic-experiences-security-trimming.md
 - name: Adozione
   items:
-    - name: Introduzione alla guida di adozione
+    - name: Iniziare a favorire l'innovazione
       href: topics-adoption-getstarted.md
