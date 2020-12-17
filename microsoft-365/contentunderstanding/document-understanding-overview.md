@@ -10,12 +10,12 @@ search.appverid: ''
 ms.collection: enabler-strategic
 localization_priority: Priority
 description: Ottenere una panoramica dell'analisi dei documenti in Microsoft SharePoint Syntex.
-ms.openlocfilehash: b26ed9a9ed9b8d1f332ccf14377660e634349b3d
-ms.sourcegitcommit: e7bf23df4852b78912229d1d38ec475223597f34
+ms.openlocfilehash: 5dd44a119dff6f5d194861c381fa28f76a6f0da7
+ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49087368"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "49701108"
 ---
 # <a name="document-understanding-overview"></a>Panoramica sull'analisi dei documenti
 
@@ -33,6 +33,9 @@ L’analisi dei documenti utilizza modelli di intelligenza artificiale (AI) per 
 
 I modelli di analisi dei documenti vengono creati e gestiti in un tipo di sito di SharePoint denominato *centro contenuti*. Se applicato a una raccolta documenti di SharePoint, il modello è associato a un tipo di contenuto con colonne in cui archiviare le informazioni estratte. Il tipo di contenuto creato è archiviato nella raccolta tipi di contenuto di SharePoint. È anche possibile scegliere di usare i tipi di contenuto esistenti per usare il loro schema.
 
+> [!NOTE]
+> I tipi di contenuto in sola lettura o bloccati non possono essere aggiornati, quindi non possono essere usati in un modello.
+
 Aggiungere *classificatori* ed *estrattori* ai modelli di analisi dei documento per eseguire le seguenti operazioni: 
 
 - I classificatori vengono usati per identificare e classificare i documenti caricati nella raccolta documenti. Ad esempio, un classificatore può essere "addestrato" per identificare tutto i documenti di *rinnovo del contratto* caricati nella raccolta. Il tipo di contenuto per il rinnovo del contratto viene definito dall'utente quando si crea il classificatore.
@@ -41,9 +44,10 @@ Aggiungere *classificatori* ed *estrattori* ai modelli di analisi dei documento 
 
 È possibile usare i file di esempio per formare e testare i classificatori e gli estrattori nel modello. I file di esempio forniscono esempi di modelli su cosa cercare quando si prova a identificare ed estrarre dati da file. Ad esempio, è necessario formare i classificatori e gli estrattori del rinnovo del contratto con esempi di documenti di rinnovo del contratto con cui lavora l’azienda. È anche possibile usare i file di esempio per testare l'efficacia del modello.
 
+> [!NOTE]
+> Se si usa la tecnologia di riconoscimento ottico dei caratteri (OCR) per digitalizzare i documenti, Syntex ha un limite di 15 pagine per il training del modello.
+
 Dopo aver pubblicato il modello, usare il centro contenuto per applicarlo a qualsiasi raccolta documenti di SharePoint a cui si ha accesso.  
-
-
 
 ## <a name="see-also"></a>Vedere anche
 [Creare un classificatore](create-a-classifier.md)

@@ -10,12 +10,12 @@ search.appverid: ''
 ms.collection: enabler-strategic
 localization_priority: Priority
 description: Sfruttare la tassonomia dell'archivio termini durante la creazione di un estrattore nel modello di analisi dei documenti in Microsoft SharePoint Syntex.
-ms.openlocfilehash: 0008dd02ef46401e9f0c9414b8363cff034c18eb
-ms.sourcegitcommit: e7bf23df4852b78912229d1d38ec475223597f34
+ms.openlocfilehash: a8078e6ff2d2ecd0f98c22b602a54675f7d62816
+ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49087322"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "49701096"
 ---
 # <a name="leverage-term-store-taxonomy-when-creating-an-extractor"></a>Sfruttare la tassonomia dell'archivio termini durante la creazione di un estrattore
 
@@ -25,19 +25,20 @@ ms.locfileid: "49087322"
 
 </br>
 
-
-Quando si crea un estrattore nel modello dianalisi dei documenti in SharePoint Syntex, è possibile sfruttare la tassonomia dell'archivio termini dei [Servizi di Metadati](https://docs.microsoft.com/sharepoint/managed-metadata#terms) gestiti per visualizzare i termini preferiti per i dati estratti.  
+Quando si crea un estrattore nel modello di analisi dei documenti in SharePoint Syntex, è possibile sfruttare la tassonomia dell'archivio termini dei [Servizi di Metadati gestiti](https://docs.microsoft.com/sharepoint/managed-metadata#terms) per visualizzare i termini preferiti per i dati estratti.  
 
 Ad esempio, il modello identifica e classifica tutti i documenti del **Contratto** caricati nella raccolta documenti.  Inoltre, il modello estrae anche un valore del **Servizio del contratto** da ogni contratto e lo visualizzerà in una colonna nella visualizzazione della libreria. Tra i vari valori dei Servizi del contratto nei contratti sono disponibili diversi valori meno recenti che non vengono più usati dall'azienda e sono stati rinominati. Ad esempio, tutti i riferimenti ai termini servizi del contratto come *Progettazione*, *Grafica* o *Topografia* saranno chiamati *Creativo*. Ogni volta che il modello estrae uno dei termini obsoleti da un documento contrattuale, si vuole che venga visualizzato il termine corrente - Creativo - nella visualizzazione della raccolta. Nell'esempio seguente, durante la formazione del modello, è possibile notare che un documento di esempio contiene il termine obsoleto *Progettazione*.
 
    ![Archivio termini](../media/content-understanding/design.png)</br>
-
 
 ## <a name="use-a-managed-metadata-column-in-your-extractor"></a>Usare una colonna metadati gestiti nell'estrattore
 
 I set di termini vengono configurati nell'archivio termini dei servizi metadati gestiti nell'interfaccia di amministrazione di SharePoint. Nell'esempio seguente, il *set di termini* per i [Servizi di contratto](https://docs.microsoft.com/sharepoint/managed-metadata#term-set) è configurato per includere una serie di termini, tra cui *Creativo*.  I dettagli mostrano che il termine ha tre sinonimi (*Progettazione*, *Grafica* e *Topografia*) e i sinonimi devono essere tradotti in *Creativo*. 
 
    ![Set di termini](../media/content-understanding/term-store.png)</br>
+
+> [!NOTE]
+>  I set di termini vengono configurati come globali nel campo servizi metadati gestiti del centro contenuti.
 
 Ci sono diversi motivi per cui è consigliabile usare un sinonimo nel set di termini. Ad esempio, potrebbero esserci termini obsoleti, termini rinominati o variazioni tra i reparti dell'organizzazione per quanto riguarda la denominazione.
 
