@@ -12,10 +12,10 @@ ms.collection: Strat_SP_gtc
 localization_priority: Normal
 f1.keywords:
 - NOCSH
-description: In questo articolo vengono fornite informazioni su come espandere la presenza di Microsoft 365 a più aree geografiche con Microsoft 365 multi-Geo.
+description: In questo articolo, impara ad espandere la tua presenza Microsoft 365 a più paesi/aree geografiche con Microsoft 365 Multi-Geo.
 ms.openlocfilehash: cf5f655e2b205001c6c16ed05abc33d68324ff15
 ms.sourcegitcommit: e53234b1f64ebca00e121da1706c02b3337c35f0
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 12/05/2020
 ms.locfileid: "49580698"
@@ -26,9 +26,9 @@ Con Microsoft 365 Multi-Geo l'organizzazione può espandere la presenza di Micro
   
 Con Microsoft 365 Multi-Geo, è possibile effettuare il provisioning e archiviare i dati inattivi nelle posizioni geografiche scelte per soddisfare i requisiti di residenza dei dati e allo stesso tempo sbloccare lo sviluppo globale delle esperienze di produttività moderna per i dipendenti.
 
-Per un video introduttivo a Microsoft 365 multi-Geo, vedere [SharePoint Online e OneDrive multi-Geo per controllare dove si trovano i dati](https://www.youtube.com/watch?v=Do9U3JuROhk).
+Per una video introduzione a Microsoft 365 Multi-Geo, vedere [SharePoint Online e OneDrive Multi-Geo per controllare dove risiedono i propri dati](https://www.youtube.com/watch?v=Do9U3JuROhk).
 
-## <a name="multi-geo-architecture"></a>Architettura multi-Geo
+## <a name="multi-geo-architecture"></a>Architettura Multi-Geo
 
 In un ambiente multi-geografico, il tenant di Microsoft 365 è costituito da una posizione centrale (in cui è stato originariamente effettuato il provisioning dell'abbonamento a Microsoft 365) e una o più posizioni satellite. In un tenant Multi-Geo, le informazioni su località geografiche, gruppi e le informazioni utente, vengono acquisite in Azure Active Directory (Azure AD). Poiché le informazioni del tenant sono acquisite in modo centralizzato e sincronizzate in ogni località geografica, la condivisione e le esperienze coinvolgono tutti gli utenti della società.
 
@@ -52,8 +52,8 @@ Ecco i termini chiave usati nella descrizione di Microsoft 365 Multi-Geo:
 
 Microsoft 365 multi-Geo è disponibile come componente aggiuntivo per i seguenti piani di abbonamento Microsoft 365 per i clienti EA con un minimo di 250 postazioni Microsoft 365 nel loro tenant, di cui almeno il 5% deve utilizzare multi-Geo. Per informazioni dettagliate, contattare il team del proprio account Microsoft.
 
-- Microsoft 365 F1, F3, E3 o E5
-- Office 365 F3, E1, E3 o E5
+- Microsoft 365 F1, F3, E3, or E5
+- Office 365 F3, E1, E3, or E5
 - Piano 1 o Piano 2 di Exchange Online
 - Piano 1 o Piano 2 di OneDrive for Business
 - Piano 1 o Piano 2 di SharePoint Online
@@ -70,7 +70,7 @@ Seguire questi semplici passaggi per iniziare con Multi-Geo:
 
 1. Collaborare con il team responsabile dell'account per aggiungere il piano di servizio _Multi-Geo Capabilities in Microsoft 365_. Verranno fornite le procedure per aggiungere il numero di licenze necessarie. La funzionalità Multi-Geo Capabilities è disponibile per i clienti EA con un minimo di 250 abbonamenti a Microsoft 365.
 
-   Prima di iniziare a usare Microsoft 365 Multi-Geo, Microsoft deve configurare il tenant di Exchange Online per il supporto Multi-Geo. La procedura di configurazione, da effettuare una sola volta, viene attivata dopo aver ordinato il piano di servizio *Multi-Geo Capabilities in Microsoft 365* e le licenze saranno visualizzate nel tenant. Le notifiche specifiche del carico di lavoro vengono ricevute nel [centro messaggi di microsoft 365](https://support.office.com/article/38FB3333-BFCC-4340-A37B-DEDA509C2093) dopo che il tenant ha completato il processo di configurazione per ogni carico di lavoro e quindi è possibile iniziare a configurare e utilizzare le funzionalità multi-geo di Microsoft 365. Il tempo necessario per configurare un tenant per il supporto multi-Geo varia da tenant a tenant, ma la maggior parte dei tenant termina entro un mese dalla ricezione delle licenze per le caratteristiche. I tenant più grandi o più complessi possono richiedere più tempo per completare il processo di configurazione. Contattare il team dell'account per informazioni dettagliate sul tenant specifico se necessario.
+   Prima di iniziare a usare Microsoft 365 Multi-Geo, Microsoft deve configurare il tenant di Exchange Online per il supporto Multi-Geo. La procedura di configurazione, da effettuare una sola volta, viene attivata dopo aver ordinato il piano di servizio *Multi-Geo Capabilities in Microsoft 365* e le licenze saranno visualizzate nel tenant. Riceverai le notifiche specifiche del carico di lavoro nel [centro messaggi di Microsoft 365 ](https://support.office.com/article/38FB3333-BFCC-4340-A37B-DEDA509C2093) una volta che il tenant avrà completato il processo di configurazione per ogni carico di lavoro, potrete iniziare a configurare e utilizzare Microsoft 365 Multi-Geo Capabilities. Il tempo necessario per configurare un tenant per il supporto Multi-Geo varia a seconda del tenant, ma la maggior parte dei tenant termina entro un mese dal ricevimento delle licenze di funzionalità. I tenant più grandi o più complessi possono richiedere più tempo per completare il processo di configurazione. Contattare il team degli account per i dettagli su uno specifico tenant, qualora ne abbiate bisogno.
 
 2. Leggere [Pianificare l'ambiente Multi-Geo](plan-for-multi-geo.md).
 
