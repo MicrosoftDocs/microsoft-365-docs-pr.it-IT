@@ -10,12 +10,12 @@ search.appverid: ''
 ms.collection: enabler-strategic
 localization_priority: Priority
 description: Informazioni su come applicare un modello pubblicato a una raccolta documenti di SharePoint
-ms.openlocfilehash: 0ca58e863d42d41b634978f53f55201a10a5ed93
-ms.sourcegitcommit: e7bf23df4852b78912229d1d38ec475223597f34
+ms.openlocfilehash: 9c99ede49633b5ae70cbb67c30d83c111084df95
+ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49087488"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "49701142"
 ---
 # <a name="apply-a-document-understanding-model-in-microsoft-sharepoint-syntex"></a>Applicare un modello di analisi dei documenti in Microsoft SharePoint Syntex.
 
@@ -77,6 +77,9 @@ Anche se un modello applicato elabora tutti i file caricati nella raccolta docum
 3. I file selezionati verranno aggiunti alla coda per essere elaborati.
 
       ![Classificare ed estrarre](../media/content-understanding/extract-classify.png)</br> 
+
+> [!NOTE]
+> È possibile copiare file singoli in una raccolta e applicarli a un modello, ma non è possibile eseguire la stessa operazione con le cartelle.
 
 ## <a name="see-also"></a>Vedere anche
 [Creare un classificatore](create-a-classifier.md)

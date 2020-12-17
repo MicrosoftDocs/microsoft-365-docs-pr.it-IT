@@ -11,16 +11,16 @@ search.appverid: MET150
 localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
 description: Informazioni su come configurare le esperienze degli argomenti in Microsoft 365
-ms.openlocfilehash: cc157463c8c85f25ba232c344294ef3e0fabba23
-ms.sourcegitcommit: 1a9f0f878c045e1ddd59088ca2a94397605a242a
+ms.openlocfilehash: e11f0b75556a4a8ac0ffa40269d7166258128daf
+ms.sourcegitcommit: 884ac262443c50362d0c3ded961d36d6b15d8b73
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "49667968"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49698556"
 ---
 # <a name="set-up-topic-experiences-in-microsoft-365"></a>Configurare le esperienze degli argomenti in Microsoft 365
 
-È possibile utilizzare l'interfaccia di amministrazione di Microsoft 365 per impostare e configurare le [esperienze degli argomenti](knowledge-management-overview.md). 
+È possibile utilizzare l'interfaccia di amministrazione di Microsoft 365 per impostare e configurare le [esperienze degli argomenti](topic-experiences-overview.md). 
 
 È importante pianificare il modo migliore per impostare e configurare gli argomenti nell'ambiente in uso. Prima di iniziare le procedure descritte in questo articolo, leggere l' [argomento piano Experience](plan-topic-experiences.md) .
 
@@ -37,7 +37,7 @@ Per impostare le esperienze degli argomenti in Microsoft 365
 
 3. Nella pagina **Connect people to Knowledge** fare clic su Guida **introduttiva** per eseguire il processo di installazione.
 
-    ![Per iniziare](../media/k-get-started.png) 
+    ![Informazioni di base](../media/k-get-started.png) 
 
 4. Nella pagina **scegliere il modo in cui la rete di informazioni può trovare gli argomenti** , verrà configurata l'individuazione dell'argomento. Nella sezione **selezione origini argomenti di SharePoint** selezionare i siti di SharePoint che verranno sottoposti a ricerca per indicizzazione come origini per gli argomenti durante l'individuazione. Scegliere da:
     - **Tutti i siti**: tutti i siti di SharePoint nell'organizzazione. Sono inclusi i siti correnti e futuri.
@@ -112,7 +112,7 @@ Selezionare **Avanti**.
 
     ![Impostazioni applicate](../media/ksetup7.png)    
 
-## <a name="assign-licenses"></a>Assegnazione delle licenze
+## <a name="assign-licenses"></a>Assegnare le licenze
 
 Dopo aver configurato l'argomento esperienze, è necessario assegnare le licenze per gli utenti che utilizzeranno le esperienze degli argomenti. Solo gli utenti con una licenza possono visualizzare informazioni su argomenti quali evidenziazione, schede argomento, pagine argomento e centro argomenti. 
 
@@ -144,4 +144,4 @@ Dopo aver impostato le esperienze sugli argomenti, è possibile modificare le im
 
 ## <a name="see-also"></a>Vedere anche
 
-[Panoramica della gestione delle informazioni](knowledge-management-overview.md)
+[Panoramica delle esperienze degli argomenti](topic-experiences-overview.md)

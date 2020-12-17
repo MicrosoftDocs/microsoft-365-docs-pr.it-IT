@@ -17,12 +17,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 54acf9d21e3dd935f8b87c6ee4a13ab30e7bc59e
-ms.sourcegitcommit: 1a9f0f878c045e1ddd59088ca2a94397605a242a
+ms.openlocfilehash: abb33b85717e63cb78a2b1edfd86584fd165a71f
+ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "49668074"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "49701016"
 ---
 # <a name="evaluate-microsoft-defender-for-office-365"></a>Valutare Microsoft Defender per Office 365
 
@@ -41,13 +41,13 @@ Se non si dispone già di una licenza che supporta Microsoft Defender per Office
 
 Difensore per Office 365 in modalità di valutazione crea Defender per i criteri di posta elettronica di Office 365 che registrano verdetti, ad esempio malware, ma non agiscono sui messaggi. Non è necessario modificare la configurazione del record MX.
 
-Con la modalità di valutazione, gli [allegati sicuri](atp-safe-attachments.md), i [collegamenti sicuri](atp-safe-links.md)e i [criteri di rappresentazione anti-phishing](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) sono impostati per conto dell'utente. Tutti i criteri di protezione per Office 365 vengono creati in modalità di non applicazione in background e non sono visibili all'utente.
+Con la modalità di valutazione, gli [allegati sicuri](atp-safe-attachments.md), i [collegamenti sicuri](atp-safe-links.md)e i [criteri di rappresentazione anti-phishing](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) sono configurati per conto dell'utente. Tutti i criteri di protezione per Office 365 vengono creati in modalità di non applicazione in background e non sono visibili all'utente.
 
-Come parte del programma di installazione, la modalità di valutazione configura anche il [filtro avanzato per i connettori](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors). Migliora l'accuratezza del filtro conservando le informazioni sull'indirizzo IP e sul mittente, che sono altrimenti perse quando la posta passa attraverso un gateway di sicurezza della posta elettronica (ESG) davanti a Defender per Office 365. Ciò migliora anche l'accuratezza del filtro per i criteri di protezione da posta indesiderata e anti-phishing di Exchange Online Protection (EOP).
+Come parte del programma di installazione, la modalità di valutazione configura anche il [filtro avanzato per i connettori](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors). Migliora l'accuratezza del filtro conservando le informazioni sull'indirizzo IP e sul mittente, che sono altrimenti perse quando la posta passa attraverso un gateway di sicurezza della posta elettronica (ESG) davanti a Defender per Office 365. Il filtro migliorato migliora inoltre l'accuratezza del filtro per i criteri di protezione da posta indesiderata e anti-phishing di Exchange Online Protection (EOP).
 
 Per ridurre al minimo l'impatto della produzione su alcuni scenari non supportati, è possibile ignorare tutti i filtri di EOP creando una regola di trasporto per impostare il livello di probabilità di posta indesiderata su-1. Per informazioni dettagliate, vedere Utilizzo dell'interfaccia di amministrazione [di Exchange per creare una regola del flusso di posta che imposta il livello SCL di un messaggio](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md#use-the-eac-to-create-a-mail-flow-rule-that-sets-the-scl-of-a-message)   .
 
-Quando la modalità di valutazione è configurata, si avrà un rapporto aggiornato giornalmente con un massimo di 90 giorni di dati quantificando i messaggi che sarebbero stati bloccati se i criteri fossero stati apportati e implementati (ad esempio, DELETE, Send to Junk, Quarantine). I report vengono generati per tutti i rilevamenti di protezione per Office 365 e EOP. Sono aggregati per la tecnologia di rilevamento (ad esempio, rappresentazione) e possono essere filtrati in base all'intervallo di tempo. Inoltre, i report dei messaggi possono essere creati su richiesta per creare pivot personalizzati o per i messaggi di Deep Dive tramite Esplora minacce.
+Quando la modalità di valutazione è configurata, si avrà un rapporto aggiornato giornalmente con un massimo di 90 giorni di dati quantificando i messaggi che sarebbero stati bloccati se i criteri fossero stati implementati (ad esempio, DELETE, Send to Junk, Quarantine). I report vengono generati per tutti i rilevamenti di protezione per Office 365 e EOP. Sono aggregati per la tecnologia di rilevamento (ad esempio, rappresentazione) e possono essere filtrati in base all'intervallo di tempo. Inoltre, i report dei messaggi possono essere creati su richiesta per creare pivot personalizzati o per i messaggi di Deep Dive tramite Esplora minacce.
 
 Con l'utilizzo di set-up semplificato, è possibile concentrarsi su:
 
@@ -56,7 +56,7 @@ Con l'utilizzo di set-up semplificato, è possibile concentrarsi su:
 - Analisi del report per l'azione
 - Presentazione del risultato della valutazione
 
-## <a name="before-you-begin"></a>Informazioni preliminari
+## <a name="before-you-begin"></a>Prima di iniziare
 
 ### <a name="licensing"></a>Licenze
 
@@ -79,7 +79,12 @@ Verrà visualizzata una finestra di 30 giorni con la valutazione da monitorare e
 
 ### <a name="roles"></a>Ruoli
 
-I ruoli di Exchange Online sono necessari per configurare Defender per Office 365 in modalità di valutazione. Sono necessari i ruoli seguenti:
+I ruoli di Exchange Online sono necessari per configurare Defender per Office 365 in modalità di valutazione.
+
+- [Informazioni sulle autorizzazioni in Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo)
+- [Informazioni sull'assegnazione dei ruoli di amministratore](https://docs.microsoft.com/microsoft-365/admin/add-users/assign-admin-roles)
+
+Sono necessari i ruoli seguenti:
 
 |Attività|Ruolo|
 |---|---|
@@ -90,9 +95,10 @@ I ruoli di Exchange Online sono necessari per configurare Defender per Office 36
 |Visualizzare il report di valutazione|Ruolo di amministratore della sicurezza o lettore di sicurezza|
 |
 
+
 ### <a name="enhanced-filtering"></a>Filtro migliorato
 
-I criteri di protezione di Exchange Online, ad esempio la massa e la protezione dalla posta indesiderata, rimarranno invariati. Anche il recapito dei messaggi rimarrà invariato. Tuttavia, la valutazione attiva il filtro avanzato per i connettori, che avrà un impatto sui criteri di flusso di posta e di protezione di Exchange Online, a meno che non vengano ignorati.
+I criteri di protezione di Exchange Online, ad esempio la massa e la protezione dalla posta indesiderata, rimarranno invariati. Anche il recapito dei messaggi rimarrà invariato. Tuttavia, la valutazione attiva il filtro avanzato per i connettori, che avrà un impatto sul flusso di posta e sui criteri di protezione di Exchange Online, a meno che non vengano ignorati.
 
 Il filtro avanzato per i connettori consentirà ai tenant di usare la protezione anti-spoofing. L'anti-spoofing non è supportato se si utilizza un gateway di sicurezza della posta elettronica (ESG) senza che sia stato attivato il filtro avanzato per i connettori.
 
@@ -104,7 +110,7 @@ I collegamenti URL nei corpi dei messaggi di posta elettronica non vengono adatt
 
 ### <a name="email-routing"></a>Routing della posta elettronica
 
-È necessario preparare i dettagli corrispondenti che saranno necessari per configurare la modalità di instradamento della posta elettronica, incluso il nome del connettore in ingresso che instrada la posta. Se si utilizza solo Exchange Online Protection, non si avrà un connettore. Informazioni  [sul flusso di posta e il routing della posta elettronica](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/mail-flow)
+Preparare i dettagli corrispondenti che saranno necessari per configurare la modalità di instradamento della posta elettronica, incluso il nome del connettore in ingresso che instrada la posta. Se si utilizza solo Exchange Online Protection, non si avrà un connettore. Informazioni  [sul flusso di posta e il routing della posta elettronica](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/mail-flow)
 
 Gli scenari di routing della posta elettronica supportati includono:
 

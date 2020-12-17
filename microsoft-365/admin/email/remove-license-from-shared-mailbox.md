@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: bb229ee9-e7be-4990-b3eb-354e75740496
 description: 'Rimuovere la licenza da una cassetta postale condivisa per assegnarla a un altro utente. '
-ms.openlocfilehash: 43d32744afe42a8f244160ace20c1d989f501b28
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: 11d5185cc3f79899a737ddccc0a93160acb380bc
+ms.sourcegitcommit: 884ac262443c50362d0c3ded961d36d6b15d8b73
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48445496"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49698304"
 ---
 # <a name="remove-a-license-from-a-shared-mailbox"></a>Rimuovere una licenza da una cassetta postale condivisa
 
@@ -45,6 +45,7 @@ Le cassette postali condivise in genere non richiedono una licenza. Seguire le i
 > 1. La cassetta postale condivisa ha più di 50 GB di spazio di archiviazione in uso.
 > 2. La cassetta postale condivisa utilizza l'archiviazione sul posto.
 > 3. La cassetta postale condivisa viene messa in blocco per controversia legale.
+> 4. La cassetta postale condivisa ha una licenza Microsoft Defender assegnata.
 
   
 ## <a name="remove-the-license"></a>Rimuovere la licenza
@@ -79,7 +80,7 @@ Le cassette postali condivise in genere non richiedono una licenza. Seguire le i
 
 3. Una pagina **licenze di prodotto** , impostare l'interruttore su **disattivato** per la licenza che si desidera rimuovere.
 
-4. Seleziona **Salva**.
+4. Selezionare **Salva**.
 
 5. Quando si torna alla pagina **utenti attivi** , lo stato della cassetta postale condivisa non verrà **concesso in licenza**.
 
@@ -98,13 +99,15 @@ Le cassette postali condivise in genere non richiedono una licenza. Seguire le i
 
 3. Una pagina **licenze di prodotto** , impostare l'interruttore su **disattivato** per la licenza che si desidera rimuovere.
 
-4. Seleziona **Salva**.
+4. Selezionare **Salva**.
 
 5. Quando si torna alla pagina **utenti attivi** , lo stato della cassetta postale condivisa non verrà **concesso in licenza**.
 
 6. Si sta ancora pagando la licenza. Per interrompere il pagamento, [rimuovere la licenza dall'abbonamento](../../commerce/licenses/remove-licenses-from-subscription.md).
 
 ::: moniker-end 
+
+ 
 
 ## <a name="related-articles"></a>Articoli correlati
 

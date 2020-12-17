@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 2e122487-e1f5-4f26-ba41-5689249d93ba
 description: 'Informazioni su come convertire una cassetta postale privata in una cassetta postale condivisa a cui è possibile accedere da più utenti. '
-ms.openlocfilehash: bc867c9b43656e40149eb7cd7a7e5ce186c10798
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: fa8e37b5e924f1b38755a953f40d8b70011213d0
+ms.sourcegitcommit: 884ac262443c50362d0c3ded961d36d6b15d8b73
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48445688"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49698280"
 ---
 # <a name="convert-a-user-mailbox-to-a-shared-mailbox"></a>Convertire una cassetta postale utente in una cassetta postale condivisa
 
@@ -45,7 +45,7 @@ Quando si converte la cassetta postale di un utente in cassetta condivisa, vengo
  
 1. Accedere all'<a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">interfaccia di amministrazione di Exchange</a>.
 
-2. Selezionare **Recipients** le \> **cassette postali**destinatari.
+2. Selezionare  le \> **cassette postali** destinatari.
 
 3. Selezionare la cassetta postale utente. In **Converti in cassetta postale condivisa**, selezionare **Converti**.
 
@@ -85,7 +85,7 @@ Si supponga di aver eliminato un account utente e di volerne convertire la vecch
    
 2. Selezionare i **destinatari** \> **condivisi**.
 
-3. Selezionare la cassetta postale condivisa. In **Converti in cassetta postale normale**selezionare **Converti**.
+3. Selezionare la cassetta postale condivisa. In **Converti in cassetta postale normale** selezionare **Converti**.
 
 4. Tornare all'interfaccia di amministrazione. In **Utenti** scegliere l'account utente associato alla vecchia cassetta postale utente. Assegnare una licenza all'account e reimpostare la password.
 
@@ -93,13 +93,17 @@ Si supponga di aver eliminato un account utente e di volerne convertire la vecch
 
 ## <a name="convert-a-users-mailbox-in-a-hybrid-environment"></a>Convertire la cassetta postale di un utente in un ambiente ibrido
 
-Se questa cassetta postale condivisa si trova in un ambiente ibrido, è **consigliabile** (è quasi necessario) riportare la cassetta postale dell'utente in locale, convertire la cassetta postale utente in una cassetta postale condivisa e quindi riportare la cassetta postale condivisa nel cloud. 
+> [!NOTE] 
+> A partire dall'11 ottobre 2018, la distribuzione ibrida di Exchange supporta la creazione di cassette postali condivise remote a partire dall'aggiornamento cumulativo 21 per Exchange Server 2013 e l'aggiornamento cumulativo 10 per Exchange Server 2016 in un ambiente Exchange Server locale. È possibile creare o modificare direttamente una cassetta postale condivisa remota utilizzando il parametro New _-Shared_ . Per ulteriori informazioni, vedere [cmdlet per creare o modificare una cassetta postale condivisa remota in un ambiente Exchange locale](https://support.microsoft.com/help/4133605/cmdlets-to-create-modify-remote-shared-mailbox-in-on-premises-exchange).
+
+Se questa cassetta postale condivisa si trova in un ambiente ibrido e non rientra nello scenario di cui sopra, è **consigliabile** (è quasi necessario) riportare la cassetta postale dell'utente in locale, convertire la cassetta postale utente in una cassetta postale condivisa e quindi riportare la cassetta postale condivisa nel cloud. 
 
 Ecco perché: se si converte la cassetta postale nel cloud, è possibile convertirla, ma la cassetta postale è ancora in uso, in quanto la nuova realtà non viene sincronizzata di nuovo in locale.
 
 In genere, non si tratta di un problema, ma ci sono alcuni scenari in cui gli attributi locali (che pensano che la cassetta postale è la cassetta postale dell'utente) possono sovrascrivere le nuove versioni cloud di tali attributi e, di conseguenza, la cassetta postale potrebbe riconvertirsi. Questo è un problema perché le cassette postali degli utenti richiedono licenze **o sono eliminate temporaneamente dopo 30 giorni**.
 
 Sono state affrontate la maggior parte dei motivi per cui questo accade ma può comunque verificarsi, anche se raramente. È consigliabile essere sicuri e riportare la cassetta postale in locale, convertirla e quindi spostare di nuovo la cassetta postale condivisa nel cloud. La soluzione consigliata non è in violazione del contratto di licenza per gli ambienti ibridi perché l'esistenza della cassetta postale dell'utente locale è solo temporanea. Si potrebbe essere in violazione della licenza se si è mantenuto la cassetta postale dell'utente o la cassetta postale condivisa nell'organizzazione locale e non è stata spostata di nuovo nel cloud.
+
 
 > [!NOTE]
 > Se si è membri del gruppo di ruoli Gestione organizzazione o Gestione destinatari, è possibile utilizzare Exchange Management Shell per modificare una cassetta postale utente in una cassetta postale condivisa locale. Ad esempio, `Set-Mailbox -Identity mailbox1@contoso.onmicrosoft.com -Type Shared`.

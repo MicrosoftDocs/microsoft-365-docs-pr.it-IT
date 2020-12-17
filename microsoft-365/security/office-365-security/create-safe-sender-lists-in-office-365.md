@@ -16,12 +16,12 @@ ms.assetid: 9721b46d-cbea-4121-be51-542395e6fd21
 ms.custom:
 - seo-marvel-apr2020
 description: Gli amministratori possono ottenere informazioni sulle opzioni disponibili e preferite per consentire i messaggi in ingresso in Exchange Online Protection (EOP).
-ms.openlocfilehash: 38f1ab2451191dd63d5738075dbf42f8201a34ca
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+ms.openlocfilehash: 6e33d2b75429453602615bf98b8269ab160c7749
+ms.sourcegitcommit: 884ac262443c50362d0c3ded961d36d6b15d8b73
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49659905"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49698700"
 ---
 # <a name="create-safe-sender-lists-in-eop"></a>Creare elenchi di mittenti attendibili in EOP
 
@@ -97,6 +97,9 @@ Nell'esempio seguente si presuppone che sia necessario inviare posta elettronica
 
 ## <a name="use-outlook-safe-senders"></a>Utilizzo di mittenti attendibili di Outlook
 
+> [!CAUTION]
+> Questo metodo crea un rischio elevato che gli aggressori recapitano messaggi di posta elettronica alla posta in arrivo che altrimenti verrebbero filtrati; Tuttavia, i mittenti attendibili dell'utente o gli elenchi di domini attendibili non impediscono la filtrazione di malware o messaggi di phishing con elevata sicurezza.
+
 Invece di un'impostazione organizzativa, gli utenti o gli amministratori possono aggiungere gli indirizzi di posta elettronica del mittente all'elenco Mittenti attendibili nella cassetta postale. Per istruzioni, vedere [configurare le impostazioni della posta indesiderata nelle cassette postali di Exchange online in Office 365](configure-junk-email-settings-on-exo-mailboxes.md). Non è consigliabile nella maggior parte delle situazioni poiché i mittenti ignoreranno le parti dello stack di filtro. Anche se si considera attendibile il mittente, il mittente può comunque essere compromesso e inviare contenuti dannosi. È preferibile che i filtri siano in grado di eseguire le operazioni necessarie per controllare tutti i messaggi e quindi [segnalare il falso positivo/negativo a Microsoft](report-junk-email-messages-to-microsoft.md) se i filtri sono stati errati. Ignorare lo stack di filtro interferisce anche con [zap](zero-hour-auto-purge.md).
 
 Quando i messaggi ignorano il filtro posta indesiderata a causa dell'elenco Mittenti attendibili di un utente, il campo di intestazione **X-Forefront-antispam-report** conterrà il valore `SFV:SFE` , che indica che il filtro per la posta indesiderata, la falsificazione e il phishing sono stati ignorati.
@@ -114,7 +117,7 @@ Se non è possibile utilizzare le regole del flusso di posta come descritto in p
 - Esaminare periodicamente le voci nell'elenco indirizzi IP consentiti e rimuovere le voci che non sono più necessarie.
 
 > [!CAUTION]
-> Senza ulteriori verifiche, come le regole del flusso di posta, la posta elettronica proveniente da origini nell'elenco indirizzi IP consentiti ignora il filtro posta indesiderata e l'autenticazione mittente (SPF, DKIM, DMARC). Questo crea un rischio elevato che gli aggressori recapitano messaggi di posta elettronica alla posta in arrivo altrimenti filtrati.
+> Senza ulteriori verifiche, come le regole del flusso di posta, la posta elettronica proveniente da origini nell'elenco indirizzi IP consentiti ignora il filtro posta indesiderata e l'autenticazione mittente (SPF, DKIM, DMARC). Questo crea un elevato rischio che gli aggressori inviino la posta elettronica alla posta in arrivo che altrimenti verrebbe filtrata; Tuttavia, l'elenco indirizzi IP consentiti non impedisce la filtrazione di malware o messaggi di phishing con elevata confidenza.
 
 ## <a name="use-allowed-sender-lists-or-allowed-domain-lists"></a>Utilizzare elenchi di mittenti consentiti o elenchi di domini consentiti
 
@@ -124,7 +127,7 @@ Il limite massimo per questi elenchi è approssimativamente pari a 1000 voci; an
 
 > [!CAUTION]
 >
-> - Questo metodo crea un rischio elevato che gli aggressori recapitano correttamente la posta elettronica alla posta in arrivo che altrimenti verrebbe filtrata.
+> - Questo metodo crea un rischio elevato che gli aggressori recapitano messaggi di posta elettronica alla posta in arrivo che altrimenti verrebbero filtrati; Tuttavia, i mittenti consentiti o gli elenchi dei domini consentiti non impediscono la filtrazione di malware o messsages di phishing con elevata confidenza.
 >
 > - Non utilizzare domini proprietari (noti anche come domini accettati) o domini più diffusi (ad esempio, microsoft.com) negli elenchi di domini consentiti.
 

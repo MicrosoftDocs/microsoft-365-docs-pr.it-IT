@@ -11,12 +11,12 @@ search.appverid: MET150
 localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
 description: Informazioni su come pianificare la sicurezza e la privacy di un argomento in Microsoft 365
-ms.openlocfilehash: 7b88e5bbc8158ebd7dea65b2ecbf77085651b439
-ms.sourcegitcommit: 1a9f0f878c045e1ddd59088ca2a94397605a242a
+ms.openlocfilehash: b3c33a49b8273c5f7830f08de17af9757a858413
+ms.sourcegitcommit: 884ac262443c50362d0c3ded961d36d6b15d8b73
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "49668248"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49698498"
 ---
 # <a name="topic-experiences-security-and-privacy"></a>Argomenti sicurezza e privacy
 
@@ -26,7 +26,7 @@ Se si configura la rete della Knowledge base, non vengono modificati i controlli
 
 In questo articolo viene illustrato il funzionamento delle esperienze di argomento da un punto di vista della sicurezza e le opzioni che gli amministratori della conoscenza e i Knowledge Manager devono controllare la visibilità degli argomenti. Leggere questo articolo come parte della [pianificazione per le esperienze di argomento](plan-topic-experiences.md).
 
-Prima di leggere questo articolo, è consigliabile avere familiarità con le [esperienze](knowledge-management-overview.md)sugli argomenti, il [centro](topic-center-overview.md)argomenti e le modalità di [utilizzo dei temi nell'argomento centro](work-with-topics.md) .
+Prima di leggere questo articolo, è consigliabile avere familiarità con le [esperienze](topic-experiences-overview.md)sugli argomenti, il [centro](topic-center-overview.md)argomenti e le modalità di [utilizzo dei temi nell'argomento centro](manage-topics.md) .
 
 ## <a name="what-users-can-see-in-topics"></a>Elementi che gli utenti possono visualizzare negli argomenti
 

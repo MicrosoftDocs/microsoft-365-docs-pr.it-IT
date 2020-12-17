@@ -14,18 +14,18 @@ search.appverid:
 - MOE150
 - MET150
 description: Utilizzare la Guida introduttiva di Compliance Manager per facilitare il percorso di comprensione, ottenere la configurazione e l'utilizzo di Compliance Manager.
-ms.openlocfilehash: 9f24a0495b7d453b70a28ad54d76ccf835000ed6
-ms.sourcegitcommit: d333d82fd5e4f3265e8b9372094e85875bee6fe5
+ms.openlocfilehash: c5159e1e6faa293ba3bd49d82bb06898ec9e0bdd
+ms.sourcegitcommit: 884ac262443c50362d0c3ded961d36d6b15d8b73
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "49071971"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49698429"
 ---
 # <a name="compliance-manager-quickstart"></a>Guida rapida a Compliance Manager
 
 **In questo articolo:** Utilizzare questa Guida introduttiva per facilitare il viaggio nell'utilizzo di Microsoft Compliance Manager per gestire la conformità dell'organizzazione alle normative, ai criteri e agli standard.
 
-Compliance Manager fornisce dati intelligenti e fattibili alla prima visita. Compliance Manager ha anche funzionalità avanzate per la scalabilità della conformità quando si è pronti. Tutti i clienti possono utilizzare la valutazione della linea di base per la [protezione dei dati](compliance-manager-assessments.md#data-protection-baseline-default-assessment) per garantire la protezione dei dati critici. Con Microsoft 365 E5, è possibile utilizzare oltre 150 valutazioni predefinite per soddisfare le normative in tutto il settore e l'area geografica e utilizzare valutazioni personalizzate per estendere Compliance Manager in tutte le risorse.
+Compliance Manager fornisce dati intelligenti e fattibili alla prima visita. Compliance Manager ha anche funzionalità avanzate per la scalabilità della conformità quando si è pronti. Le valutazioni disponibili dipendono dal contratto di licenza; Per ulteriori [informazioni](https://go.microsoft.com/fwlink/?linkid=2132371), vedere.
 
 Sia che si venga a Compliance Manager per la prima volta o che si è pronti per l'utilizzo di alcune delle funzionalità avanzate, questa guida può essere di supporto durante il viaggio.
 

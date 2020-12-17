@@ -11,12 +11,12 @@ search.appverid: MET150
 localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
 description: Informazioni su come amministrare l'individuazione degli argomenti in Microsoft 365.
-ms.openlocfilehash: 035fb74f1989dc7ef5b7fcf8e9c6d59b63cf2b42
-ms.sourcegitcommit: 1a9f0f878c045e1ddd59088ca2a94397605a242a
+ms.openlocfilehash: dec8aeef9dda390fb19f5067638c2ebea6b6a2fe
+ms.sourcegitcommit: 884ac262443c50362d0c3ded961d36d6b15d8b73
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "49667871"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49698544"
 ---
 # <a name="manage-topic-discovery-in-microsoft-365"></a>Gestire l'individuazione degli argomenti in Microsoft 365
 
@@ -94,4 +94,3 @@ Nel modello CSV, immettere le informazioni seguenti sugli argomenti che si desid
 [Gestire le autorizzazioni per l'argomento in Microsoft 365](topic-experiences-user-permissions.md)
 
 [Modificare il nome del centro argomenti in Microsoft 365](topic-experiences-administration.md)
-

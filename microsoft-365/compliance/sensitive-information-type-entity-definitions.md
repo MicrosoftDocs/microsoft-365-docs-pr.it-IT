@@ -18,12 +18,12 @@ ms.collection:
 hideEdit: true
 feedback_system: None
 description: La prevenzione della perdita di dati (DLP) nel &amp; Centro sicurezza e conformità include 80 tipi di informazioni riservate pronte per l'uso nei criteri DLP. In questo argomento vengono elencati tutti questi tipi di informazioni riservate e illustrata la ricerca eseguita dal criterio DLP quando rileva ciascun tipo di informazioni.
-ms.openlocfilehash: 498ff1482bd0109903968d1c8fe250311e37a51f
-ms.sourcegitcommit: 2810d1347e5016412074b2dd18e654aee7e593de
+ms.openlocfilehash: cb45d613da95c977f56b82e64ad3332434e08cd8
+ms.sourcegitcommit: 884ac262443c50362d0c3ded961d36d6b15d8b73
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2020
-ms.locfileid: "48819116"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49698509"
 ---
 # <a name="sensitive-information-type-entity-definitions"></a>Definizioni delle entità tipo di informazioni sensibili
 
@@ -656,7 +656,6 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%,
 - TFN
 
 ## <a name="austria-drivers-license-number"></a>Austria-numero della patente di guida
-Questa entità di tipo di informazioni riservate è disponibile solo nel tipo di informazioni riservate del conducente dell'Unione europea.
 
 ### <a name="format"></a>Formato
 
@@ -1602,7 +1601,6 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%,
 </Entity>
 ```
 ## <a name="belgium-drivers-license-number"></a>Numero della patente di guida belga
-Questa entità di tipo di informazioni riservate è disponibile solo nel tipo di informazioni riservate del conducente dell'Unione europea.
 
 ### <a name="format"></a>Formato
 
@@ -1783,7 +1781,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 ### <a name="pattern"></a>Modello
 
 11 cifre più delimitatori:
-- sei cifre e due periodi facoltativi nel formato AA. MM. DD per data di nascita 
+- sei cifre e due periodi facoltativi nel formato AA. MM.DD per data di nascita 
 - Delimitatore facoltativo da dot, Dash, Space 
 - tre cifre sequenziali (dispari per i maschi, anche per le femmine) 
 - Delimitatore facoltativo da dot, Dash, Space 
@@ -2272,7 +2270,6 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 
 
 ## <a name="bulgaria-drivers-license-number"></a>Bulgaria-numero della patente di guida
-Questa entità di tipo di informazioni riservate è disponibile solo nel tipo di informazioni riservate del conducente dell'Unione europea.
 
 ### <a name="format"></a>Formato
 
@@ -3594,7 +3591,6 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 65%,
 
 
 ## <a name="croatia-drivers-license-number"></a>Numero della patente di guida croata
-Questa entità di tipo di informazioni riservate è disponibile solo nel tipo di informazioni riservate del conducente dell'Unione europea.
 
 ### <a name="format"></a>Formato
 
@@ -4013,7 +4009,6 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 
    
 ## <a name="cyprus-drivers-license-number"></a>Numero della patente di guida cipriota
-Questa entità di tipo di informazioni riservate è disponibile solo nel tipo di informazioni riservate del conducente dell'Unione europea.
 
 ### <a name="format"></a>Formato
 
@@ -4365,7 +4360,6 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 
 
 ## <a name="czech-drivers-license-number"></a>Numero della patente di guida ceco
-Questa entità di tipo di informazioni riservate è disponibile solo nel tipo di informazioni riservate del conducente dell'Unione europea.
 
 ### <a name="format"></a>Formato
 
@@ -4755,7 +4749,6 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 
 
 ## <a name="denmark-drivers-license-number"></a>Danimarca-numero della patente di guida
-Questa entità di tipo di informazioni riservate è disponibile solo nel tipo di informazioni riservate del conducente dell'Unione europea.
 
 ### <a name="format"></a>Formato
 
@@ -5207,7 +5200,6 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 
 
 ## <a name="estonia-drivers-license-number"></a>Numero della patente di guida estone
-Questa entità di tipo di informazioni riservate è disponibile solo nel tipo di informazioni riservate del conducente dell'Unione europea.
 
 ### <a name="format"></a>Formato
 
@@ -6019,7 +6011,6 @@ Tali entità sono incluse nel tipo di informazioni riservate del numero di ident
 
 
 ## <a name="finland-drivers-license-number"></a>Finlandia-numero della patente di guida
-Questa entità di tipo di informazioni riservate è disponibile solo nel tipo di informazioni riservate del conducente dell'Unione europea.
 
 ### <a name="format"></a>Formato
 
@@ -6479,7 +6470,6 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 
 
 ## <a name="france-drivers-license-number"></a>Francia-numero della patente di guida
-Questa entità di tipo di informazioni riservate è disponibile nel tipo di informazioni riservate del conducente dell'Unione europea ed è disponibile come entità di tipo di informazioni riservate stand-alone.
 
 ### <a name="format"></a>Formato
 
@@ -7015,7 +7005,6 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 
 
 ## <a name="germany-drivers-license-number"></a>Germania-numero della patente di guida
-Questa entità di tipo di informazioni riservate è inclusa nel tipo di informazioni riservate del conducente dell'Unione europea ed è disponibile come entità di tipo di informazioni riservate stand-alone.
 
 ### <a name="format"></a>Formato
 
@@ -7456,7 +7445,6 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 
 
 ## <a name="greece-drivers-license-number"></a>Grecia-Numero della patente di guida
-Questa entità di tipo di informazioni riservate è inclusa nel tipo di informazioni riservate del conducente dell'Unione europea ed è disponibile come entità di tipo di informazioni riservate stand-alone.
 
 ### <a name="format"></a>Formato
 
@@ -7890,8 +7878,6 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 65%,
 
    
 ## <a name="hungary-drivers-license-number"></a>Numero della patente di guida ungherese
-
-Questa entità di tipo di informazioni riservate è disponibile solo nel tipo di informazioni riservate del conducente dell'Unione europea.
 
 ### <a name="format"></a>Formato
 
@@ -8732,8 +8718,6 @@ Nel caso di IPv6, un criterio DLP rileva questo tipo di informazioni con una pro
 
 ## <a name="ireland-drivers-license-number"></a>Numero di patente d'Irlanda
 
-Questa entità di tipo di informazioni riservate è disponibile solo nel tipo di informazioni riservate del conducente dell'Unione europea.
-
 ### <a name="format"></a>Formato
 
 Sei cifre seguite da quattro lettere
@@ -9164,7 +9148,6 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 
    
 ## <a name="italy-drivers-license-number"></a>Italiano numero di patente di guida
-Questa entità di tipo di informazioni riservate è inclusa nel tipo di informazioni riservate del conducente dell'Unione europea ed è disponibile come entità di tipo di informazioni riservate stand-alone.
 
 ### <a name="format"></a>Formato
 
@@ -9923,7 +9906,6 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 
 
 ## <a name="latvia-drivers-license-number"></a>Numero della patente di guida in Lettonia
-Questa entità di tipo di informazioni riservate è disponibile solo nel tipo di informazioni riservate del conducente dell'Unione europea.
 
 ### <a name="format"></a>Formato
 
@@ -10282,7 +10264,6 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - n ° du Passeport
 
 ## <a name="lithuania-drivers-license-number"></a>Lituania-numero della patente di guida
-Questa entità di tipo di informazioni riservate è disponibile solo nel tipo di informazioni riservate del conducente dell'Unione europea.
 
 ### <a name="format"></a>Formato
 
@@ -10589,7 +10570,6 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - Paso Nr
 
 ## <a name="luxemburg-drivers-license-number"></a>Numero della patente di guida del Lussemburgo
-Questa entità di tipo di informazioni riservate è disponibile solo nel tipo di informazioni riservate del conducente dell'Unione europea.
 
 ### <a name="format"></a>Formato
 
@@ -11025,7 +11005,6 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%,
 - scheda di identificazione personale
 
 ## <a name="malta-drivers-license-number"></a>Numero della patente di guida di Malta
-Questa entità di tipo di informazioni riservate è disponibile solo nel tipo di informazioni riservate del conducente dell'Unione europea.
 
 ### <a name="format"></a>Formato
 
@@ -11466,7 +11445,6 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%,
 - uniqueidentityno #
 
 ## <a name="netherlands-drivers-license-number"></a>Numero della patente di guida (Paesi Bassi)
-Questa entità di tipo di informazioni riservate è disponibile solo nel tipo di informazioni riservate del conducente dell'Unione europea.
 
 ### <a name="format"></a>Formato
 
@@ -12273,7 +12251,6 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - Pinag-isang Multi-Layunin ID
 
 ## <a name="poland-drivers-license-number"></a>Numero della patente di guida (Polonia)
-Questa entità di tipo di informazioni riservate è disponibile solo nel tipo di informazioni riservate del conducente dell'Unione europea.
 
 ### <a name="format"></a>Formato
 
@@ -12771,7 +12748,6 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%,
 
 
 ## <a name="portugal-drivers-license-number"></a>Portogallo-numero della patente di guida
-Questa entità di tipo di informazioni riservate è disponibile solo nel tipo di informazioni riservate del conducente dell'Unione europea.
 
 ### <a name="format"></a>Formato
 
@@ -13088,7 +13064,6 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 65%,
 
 
 ## <a name="romania-drivers-license-number"></a>Numero della patente di guida Romania
-Questa entità di tipo di informazioni riservate è disponibile solo nel tipo di informazioni riservate del conducente dell'Unione europea.
 
 ### <a name="format"></a>Formato
 
@@ -13626,7 +13601,6 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - 身份證 
 
 ## <a name="slovakia-drivers-license-number"></a>Slovacchia-numero della patente di guida
-Questa entità di tipo di informazioni riservate è disponibile solo nel tipo di informazioni riservate del conducente dell'Unione europea.
 
 ### <a name="format"></a>Formato
 
@@ -13946,7 +13920,6 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - n ° Passeport
 
 ## <a name="slovenia-drivers-license-number"></a>Numero della patente di guida sloveno
-Questa entità di tipo di informazioni riservate è disponibile solo nel tipo di informazioni riservate del conducente dell'Unione europea.
 
 ### <a name="format"></a>Formato
 
@@ -14420,7 +14393,6 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - 주민등록번호
 
 ## <a name="spain-drivers-license-number"></a>Spagna-numero della patente di guida
-Questa entità di tipo di informazioni riservate è disponibile solo nel tipo di informazioni riservate del conducente dell'Unione europea.
 
 ### <a name="format"></a>Formato
 
@@ -14986,7 +14958,6 @@ Si noti che tecnicamente questo tipo di informazioni riservate identifica queste
 - s-int.<!--no-hyperlink-->NET
 
 ## <a name="sweden-drivers-license-number"></a>Svezia-numero della patente di guida
-Questa entità di tipo di informazioni riservate è disponibile solo nel tipo di informazioni riservate del conducente dell'Unione europea.
 
 ### <a name="format"></a>Formato
 

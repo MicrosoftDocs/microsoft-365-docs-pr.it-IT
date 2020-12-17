@@ -16,12 +16,12 @@ ms.collection:
 localization_priority: None
 description: Utilizzare le barriere informative per garantire la conformità della comunicazione tramite Microsoft teams all'interno dell'organizzazione.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 08ec3b01258220a71ac02e5333143fb11b66655f
-ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
+ms.openlocfilehash: 73a76e67fdb96f89dbd11daf4b2ef12f6590f92a
+ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49613098"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "49701005"
 ---
 # <a name="learn-about-information-barriers-in-microsoft-365"></a>Informazioni sulle barriere informative in Microsoft 365
 
@@ -72,7 +72,7 @@ Gli ostacoli alle informazioni stanno per essere implementati e sono inclusi neg
 - Conformità E5/A5 di Microsoft 365
 - Microsoft 365 gestione dei rischi Insider
 
-Per ulteriori informazioni, vedere [Compliance Solutions](https://products.office.com/business/security-and-compliance/compliance-solutions).
+Per ulteriori informazioni, vedere [Microsoft 365 Licensing Guidance for security & Compliance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection).
 
 Per [definire o modificare criteri di barriera delle informazioni](information-barriers-policies.md), è necessario essere assegnati a uno dei ruoli seguenti:
 
@@ -81,7 +81,7 @@ Per [definire o modificare criteri di barriera delle informazioni](information-b
 - Amministratore di conformità
 - IB Compliance Management (questo è un nuovo ruolo)
 
-Per ulteriori informazioni sui ruoli e le autorizzazioni, vedere [Permissions in the Office 365 Security & Compliance Center](../security/office-365-security/protect-against-threats.md).
+Per ulteriori informazioni sui ruoli e le autorizzazioni, vedere [Permissions in the Office 365 Security & Compliance Center](../security/office-365-security/permissions-in-the-security-and-compliance-center.md).
 
 È necessario avere familiarità con i cmdlet di PowerShell per definire, convalidare o modificare i criteri di barriera delle informazioni. Anche se vengono forniti diversi esempi di cmdlet di PowerShell nell' [articolo How-to](information-barriers-policies.md), è necessario conoscere ulteriori dettagli, ad esempio i parametri, per l'organizzazione.
 

@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: Ottenere assistenza per aumentare il livello di protezione in Microsoft 365
-ms.openlocfilehash: 99b9bfac7867d6f6b29571940f717667fd05a697
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 2078f9b40f6f556b2aacee28d6ff3c25be90fcc4
+ms.sourcegitcommit: 884ac262443c50362d0c3ded961d36d6b15d8b73
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48843257"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49698452"
 ---
 # <a name="increase-threat-protection-for-microsoft-365-subscription"></a>Aumentare la protezione dalle minacce per l'abbonamento a Microsoft 365
 
@@ -44,13 +44,13 @@ L'ambiente Office 365 o Microsoft 365 include la protezione da malware, ma è po
 
 1. Accedere a <https://protection.office.com> e accedere con le credenziali dell'account di amministratore.
 
-2. Nel riquadro di spostamento a sinistra del Centro sicurezza & conformità fare clic su **criteri** antimalware in **gestione minacce** \> **Anti-Malware**.
+2. Nel riquadro di spostamento a sinistra del Centro sicurezza & conformità fare clic su **criteri** antimalware in **gestione minacce** \> .
 
 3. Fare doppio clic sul criterio predefinito per modificare il criterio a livello di società.
 
 4. Fare clic su **Impostazioni**.
 
-5. In **filtro tipi di allegati comuni** selezionare **On** attivato. I tipi di file bloccati sono elencati nella finestra direttamente sotto questo controllo. Assicurarsi di aggiungere i tipi di FileType seguenti:
+5. In **filtro tipi di allegati comuni** selezionare attivato. I tipi di file bloccati sono elencati nella finestra direttamente sotto questo controllo. Assicurarsi di aggiungere i tipi di FileType seguenti:
 
    `ade, adp, ani, bas, bat, chm, cmd, com, cpl, crt, hlp, ht, hta, inf, ins, isp, job, js, jse, lnk, mda, mdb, mde, mdz, msc, msi, msp, mst, pcd, reg, scr, sct, shs, url, vb, vbe, vbs, wsc, wsf, wsh, exe, pif`
 
@@ -90,7 +90,7 @@ Per creare una regola di trasporto della posta:
 |Eseguire le operazioni seguenti. . .|Invia una notifica al destinatario tramite messaggio|
 |Fornire il testo del messaggio|Non aprire questi tipi di file da utenti che non si conoscono perché potrebbero contenere macro con codice dannoso.|
 
-Per altre informazioni, vedere:
+Per ulteriori informazioni, vedere:
 
 - [Ransomware: come ridurre i rischi](https://www.microsoft.com/security/blog/2020/04/28/ransomware-groups-continue-to-target-healthcare-critical-services-heres-how-to-reduce-risk/)
 
@@ -140,7 +140,7 @@ Per creare un criterio anti-phishing in Defender per Office 365, guardare [quest
 
 5. Specificare il nome, la descrizione e le impostazioni del criterio come consigliato nel grafico riportato di seguito. Per ulteriori informazioni, vedere informazioni [sui criteri di anti-phishing in Microsoft Defender per le opzioni di Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-anti-phishing-policies).
 
-6. Dopo aver esaminato le impostazioni, fare clic su **crea questo criterio** o su **Salva** , a seconda dei casi.
+6. Dopo aver esaminato le impostazioni, fare clic su **crea questo criterio** o su **Salva**, a seconda dei casi.
 
 |Impostazione o opzione|Impostazione consigliata|
 |---|---|
@@ -151,7 +151,7 @@ Per creare un criterio anti-phishing in Defender per Office 365, guardare [quest
 |Scegli azioni|Se la posta elettronica viene inviata da un utente rappresentato: scegliere **reindirizza messaggio a un altro indirizzo di posta elettronica** e quindi digitare l'indirizzo di posta elettronica dell'amministratore della sicurezza. ad esempio, *Alice <span> <span> @contoso. com*. <br/> Se i messaggi di posta elettronica vengono inviati da un dominio imitato: scegliere di mettere il **messaggio in quarantena**.|
 |Intelligence della cassetta postale|Per impostazione predefinita, la funzione di intelligence della cassetta postale è selezionata quando si creano nuovi criteri anti-phishing. Per ottenere risultati ottimali, lasciare l’opzione **attiva**.|
 |Aggiungere mittenti e domini attendibili|Qui è possibile aggiungere il proprio dominio o altri domini attendibili.|
-|Applicato a|Selezionare **Il dominio del destinatario è**. In **Uno dei seguenti** , selezionare **Scegli**. Selezionare **+ Aggiungi**. Selezionare la casella di controllo accanto al nome del dominio, ad esempio *contoso. <span> <span> com* , nell'elenco, quindi selezionare **Aggiungi**. Scegliere **Fatto**.|
+|Applicato a|Selezionare **Il dominio del destinatario è**. In **Uno dei seguenti**, selezionare **Scegli**. Selezionare **+ Aggiungi**. Selezionare la casella di controllo accanto al nome del dominio, ad esempio *contoso. <span> <span> com*, nell'elenco, quindi selezionare **Aggiungi**. Scegliere **Fatto**.|
 
 Per ulteriori informazioni, vedere [configurare i criteri anti-phishing in Defender per Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-anti-phishing-policies).
 
@@ -171,9 +171,9 @@ Se la pagina di **installazione** non è ancora visualizzata con le schede del t
    ![Scegliere View per aumentare la protezione dalle minacce avanzate.](../media/startatp.png)
 
 3. Nella pagina **aumenta protezione dalle minacce avanzate** scegliere **inizia**.
-4. Nel riquadro che si apre, selezionare le caselle di controllo accanto a **collegamenti e allegati di posta elettronica** , **analizzare i file in SharePoint, OneDrive e teams** e **analizzare i collegamenti in Office Desktop e Office Online Apps** in **analisi elementi per contenuti dannosi**.
+4. Nel riquadro che si apre, selezionare le caselle di controllo accanto a **collegamenti e allegati di posta elettronica**, **analizzare i file in SharePoint, OneDrive e teams** e **analizzare i collegamenti in Office Desktop e Office Online Apps** in **analisi elementi per contenuti dannosi**.
 
-   In **collegamenti e allegati di posta elettronica** , digitare tutti gli utenti o gli utenti specifici di cui si desidera analizzare la posta elettronica.
+   In **collegamenti e allegati di posta elettronica**, digitare tutti gli utenti o gli utenti specifici di cui si desidera analizzare la posta elettronica.
 
    ![Selezionare tutte le caselle di controllo in aumenta protezione dalle minacce avanzate.](../media/setatp.png)
 
@@ -197,7 +197,7 @@ Per creare un criterio di allegato sicuro, guardare [questo breve video](https:/
 
 6. Applicare le impostazioni nella tabella seguente.
 
-7. Dopo aver esaminato le impostazioni, fare clic su **crea questo criterio** o su **Salva** , a seconda dei casi.
+7. Dopo aver esaminato le impostazioni, fare clic su **crea questo criterio** o su **Salva**, a seconda dei casi.
 
 |Impostazione o opzione|Impostazione consigliata|
 |---|---|
@@ -229,15 +229,15 @@ Per configurare i collegamenti sicuri, guardare [questo breve video di formazion
 
 Per modificare il criterio predefinito:
 
-1. Nella pagina collegamenti sicuri, in **criteri che si applicano all'intera organizzazione** , selezionare il criterio **predefinito** .
+1. Nella pagina collegamenti sicuri, in **criteri che si applicano all'intera organizzazione**, selezionare il criterio **predefinito** .
 
-2. In **impostazioni che si applicano al contenuto tranne che alla posta elettronica** , selezionare **Microsoft 365 Apps for Enterprise, Office per iOS e Android**.
+2. In **impostazioni che si applicano al contenuto tranne che alla posta elettronica**, selezionare **Microsoft 365 Apps for Enterprise, Office per iOS e Android**.
 
 3. Fare clic su **Salva**.
 
 Per creare un nuovo criterio mirato a tutti i destinatari nel dominio:
 
-1. Nella pagina collegamenti sicuri, in **criteri che si applicano all'intera organizzazione** , fare clic **+** per creare un nuovo criterio.
+1. Nella pagina collegamenti sicuri, in **criteri che si applicano all'intera organizzazione**, fare clic **+** per creare un nuovo criterio.
 
 2. Applicare le impostazioni elencate nella tabella seguente.
 
@@ -258,8 +258,8 @@ Dopo aver attivato la ricerca nel registro di controllo nel centro sicurezza & C
 
 È necessario essere assegnati al ruolo registri di controllo in Exchange Online per abilitare o disabilitare la ricerca del registro di controllo nell'abbonamento a Microsoft 365. Per impostazione predefinita, questo ruolo viene assegnato ai gruppi di ruoli Gestione conformità e gestione organizzazione nella pagina autorizzazioni nell'interfaccia di amministrazione di Exchange. Gli amministratori globali di Microsoft 365 sono membri di questo gruppo per impostazione predefinita.
 
-1. Per abilitare la ricerca nel registro di controllo, accedere all'interfaccia di amministrazione <https://admin.microsoft.com> e scegliere **Compliance** in **admin Centers** nella barra di navigazione sinistra.
-2. Nella pagina **Microsoft 365 Compliance** scegliere **altre risorse** e quindi **Apri** nella scheda **centro & di sicurezza di Office 365** .
+1. Per abilitare la ricerca nel registro di controllo, accedere all'interfaccia di amministrazione <https://admin.microsoft.com> e quindi scegliere **sicurezza** in interfaccia di **Amministrazione** nel NAV sinistro.
+2. Nella pagina **Microsoft 365 Security** scegliere **altre risorse** e quindi **apri** nella scheda **Centro protezione & conformità di Office 365** .
 
     ![Scegliere Apri sulla sicurezza & vetture di conformità.](../media/gotosecandcomp.png)
 3. Nella pagina sicurezza e conformità scegliere **Search** e quindi **controllo Log Search**.
@@ -272,8 +272,8 @@ Dopo che la funzionalità è stata attivata, è possibile cercare file, cartelle
 (impostare la scadenza del collegamento anonimo predefinito su 14 giorni, modificare il tipo di condivisione predefinito in "persone specifiche") Per modificare le impostazioni di condivisione per OneDrive e SharePoint:
 
 1. Accedere all'interfaccia di amministrazione <https://admin.microsoft.com> e quindi scegliere **SharePoint** in interfaccia di **Amministrazione** nel NAV sinistro.
-2. Nell'interfaccia di amministrazione di SharePoint, andare alla condivisione dei **criteri** \> **Sharing**.
-3. Nella pagina **condivisione** , in **collegamenti a file e cartelle** , selezionare **persone specifiche** e in **Impostazioni avanzate per i collegamenti "chiunque"** , selezionare **questi collegamenti devono scadere entro questo** numero di giorni e digitare 14 (o un altro numero di giorni in cui si desidera limitare la durata del collegamento).
+2. Nell'interfaccia di amministrazione di SharePoint, andare alla condivisione dei **criteri** \> .
+3. Nella pagina **condivisione** , in **collegamenti a file e cartelle**, selezionare **persone specifiche** e in **Impostazioni avanzate per i collegamenti "chiunque"**, selezionare **questi collegamenti devono scadere entro questo** numero di giorni e digitare 14 (o un altro numero di giorni in cui si desidera limitare la durata del collegamento).
 
    ![Scegliere persone specifiche e impostare la scadenza del collegamento su 14 giorni.](../media/anyonelinks.png)
 
@@ -289,8 +289,8 @@ Nella figura seguente vengono illustrati i criteri predefiniti inclusi in Micros
 
 È possibile impedire agli utenti dell'organizzazione di condividere i propri calendari oppure è possibile gestire anche ciò che può essere condiviso. Ad esempio, è possibile limitare la condivisione solo ai tempi di disponibilità.
 
-1. Accedere all'interfaccia di amministrazione <https://admin.microsoft.com> e scegliere servizi di **Impostazioni** \> **& i componenti** aggiuntivi.
-2. Nella pagina **servizi & componenti** aggiuntivi scegliere **Calendario** e scegliere se gli utenti dell'organizzazione possono condividere i propri calendari con utenti esterni che dispongono di Office 365 o Exchange o con chiunque.
+1. Accedere all'interfaccia di amministrazione <https://admin.microsoft.com> e scegliere impostazioni  \> **org** impostazioni.
+2. Nella pagina **Servizi** scegliere **Calendario** e scegliere se gli utenti dell'organizzazione possono condividere i propri calendari con utenti esterni che dispongono di Office 365 o Exchange o con chiunque.
 
    Se si sceglie l'opzione Condividi con tutti gli utenti, è possibile decidere di condividere solo le informazioni sulla disponibilità.
 

@@ -6,7 +6,7 @@ f1.keywords:
 ms.author: tracyp
 author: msfttracyp
 manager: dansimp
-ms.date: 07/09/2020
+ms.date: 12/16/2020
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 description: Informazioni su come utilizzare le funzionalità di analisi e risposta alle minacce per individuare e studiare messaggi di posta elettronica dannosi.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f3fd2e5c0f75de9a1b942e8f0baa8e9d44843de4
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.openlocfilehash: 8a068f4502a286b8782e03a9a6f61e61fa96ed72
+ms.sourcegitcommit: 884ac262443c50362d0c3ded961d36d6b15d8b73
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49616525"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49698580"
 ---
 # <a name="investigate-malicious-email-that-was-delivered-in-office-365"></a>Esaminare la posta elettronica dannosa che è stata recapitata in Office 365
 
@@ -58,18 +58,21 @@ Per eseguire determinate azioni, ad esempio la visualizzazione delle intestazion
 |---|---|---|
 |Utilizzo di Esplora minacce (e rilevamenti in tempo reale) per l'analisi delle minacce |Amministratore globale <p> Amministratore della sicurezza <p> Ruolo con autorizzazioni di lettura per la sicurezza|No|
 |Utilizzare Esplora minacce (e rilevamenti in tempo reale) per visualizzare le intestazioni dei messaggi di posta elettronica così come l'anteprima e il download dei messaggi di posta elettronica in quarantena|Amministratore globale <p> Amministratore della sicurezza <p> Ruolo con autorizzazioni di lettura per la sicurezza|No|
-|Utilizzare Esplora minacce per visualizzare le intestazioni e scaricare i messaggi di posta elettronica recapitati alle cassette postali|Amministratore globale <p> Amministratore della sicurezza <p> Ruolo con autorizzazioni di lettura per la sicurezza <p> Anteprima|Sì|
+|Utilizzare Esplora minacce per visualizzare le intestazioni, l'anteprima della posta elettronica (solo nella pagina entità di posta elettronica) e scaricare messaggi di posta elettronica recapitati alle cassette postali|Amministratore globale <p> Amministratore della sicurezza <p> Ruolo con autorizzazioni di lettura per la sicurezza <p> Anteprima|Sì|
 |
 
 > [!NOTE]
-> L' *Anteprima* è un ruolo e non un gruppo di ruoli. il ruolo di anteprima deve essere aggiunto a un gruppo di ruoli esistente per Office 365. Al ruolo di amministratore globale viene assegnato l'interfaccia di amministrazione di Microsoft 365 ( <https://admin.microsoft.com> ) e i ruoli amministratore sicurezza e lettore di sicurezza sono assegnati nel centro sicurezza & Compliance ( <https://protection.office.com> ). Per ulteriori informazioni sui ruoli e sulle autorizzazioni, vedere [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
+> L' *Anteprima* è un ruolo e non un gruppo di ruoli. il ruolo di anteprima deve essere aggiunto a un gruppo di ruoli esistente per Office 365 (at [https://protection.office.com](https://protection.office.com) ). Andare a **autorizzazioni** e quindi modificare un gruppo di ruoli esistente o aggiungere un nuovo gruppo di ruoli con il ruolo di **Anteprima** assegnato.
+> Al ruolo di amministratore globale viene assegnato l'interfaccia di amministrazione di Microsoft 365 ( <https://admin.microsoft.com> ) e i ruoli amministratore sicurezza e lettore di sicurezza sono assegnati nel centro sicurezza & Compliance ( <https://protection.office.com> ). Per ulteriori informazioni sui ruoli e sulle autorizzazioni, vedere [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
+
+Si capisce che la visualizzazione in anteprima e il download di posta elettronica sono attività sensibili e quindi è abilitato il controllo. Dopo che un amministratore ha eseguito queste attività nei messaggi di posta elettronica, i registri di controllo vengono generati per lo stesso e possono essere visualizzati nel centro sicurezza & conformità di Office 365 [https://protection.office.com](https://protection.office.com) . Andare alla ricerca e al filtro del registro di controllo di **ricerca**  >   nel nome dell'amministratore nella sezione ricerca. I risultati filtrati mostreranno le attività **AdminMailAccess**. Selezionare una riga per visualizzare i dettagli nella sezione **altre informazioni** sul messaggio di posta elettronica visualizzato in anteprima o scaricato.
 
 ## <a name="find-suspicious-email-that-was-delivered"></a>Trovare messaggi di posta elettronica sospetti recapitati
 
 Threat Explorer è un potente report che può servire a molteplici scopi, ad esempio la ricerca e l'eliminazione dei messaggi, l'identificazione dell'indirizzo IP di un mittente di posta elettronica dannoso o l'avvio di un incidente per ulteriori indagini. La procedura seguente si concentra sull'utilizzo di Esplora risorse per individuare ed eliminare messaggi di posta elettronica dannosi dalle cassette postali del destinatario.
 
 > [!NOTE]
-> Le ricerche predefinite in Esplora risorse non includono attualmente gli elementi zapping.  Questo vale per tutte le visualizzazioni, ad esempio le visualizzazioni di malware o phishing. Per includere gli elementi zapped, è necessario aggiungere un'azione di recapito ' impostato su Includi ' rimosso da ZAP '. Se si includono tutte le opzioni, verranno visualizzati tutti i risultati dell'azione di recapito, compresi gli elementi zapped.
+> Le ricerche predefinite in Esplora risorse non includono attualmente gli elementi zapping.  Questo vale per tutte le visualizzazioni, ad esempio le visualizzazioni di malware o phishing. Per includere gli elementi zapped, è necessario aggiungere un set di **operazioni di recapito** per includere **rimossi da zap**. Se si includono tutte le opzioni, verranno visualizzati tutti i risultati dell'azione di recapito, compresi gli elementi zapped.
 
 1. **Passare a Esplora minacce**: accedere a <https://protection.office.com> e accedere con l'account aziendale o dell'Istituto di istruzione per Office 365. Questo porta al centro sicurezza & Compliance.
 

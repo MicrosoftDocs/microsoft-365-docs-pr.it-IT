@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Informazioni su come gli utenti lavorano con etichette di riservatezza nelle app di Office per desktop, dispositivi mobili e Web e quali app supportano le etichette di riservatezza.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 36e00158c56eb83f8d2c2272295defb12363e314
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+ms.openlocfilehash: 2f2e28bc9321f8a9f3de8cb622eff3317be572b9
+ms.sourcegitcommit: 884ac262443c50362d0c3ded961d36d6b15d8b73
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49655428"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49698419"
 ---
 # <a name="use-sensitivity-labels-in-office-apps"></a>Usare le etichette di riservatezza nelle app di Office
 
@@ -39,20 +39,22 @@ Per utilizzare le etichette di riservatezza con queste edizioni autonome di Offi
 
 ## <a name="support-for-sensitivity-label-capabilities-in-apps"></a>Supporto per le funzionalità delle etichette di riservatezza nelle app
 
-Per ogni funzionalità, nelle tabelle seguenti sono elencate le versioni di Office minime necessarie per l'app per il supporto delle etichette di riservatezza tramite l'etichettatura incorporata. In alternativa, se la funzionalità etichetta è in anteprima pubblica o in revisione per una versione futura. Per informazioni dettagliate sulle versioni future, utilizzare la Guida di [orientamento di Microsoft 365](https://aka.ms/MIPC/Roadmap) .
+Per ogni funzionalità, nelle tabelle seguenti sono elencate le versioni di Office minime necessarie per supportare le etichette di riservatezza tramite l'etichettatura incorporata. In alternativa, se la funzionalità etichetta è in anteprima pubblica o in revisione per una versione futura. Per informazioni dettagliate sulle versioni future, utilizzare la Guida di [orientamento di Microsoft 365](https://aka.ms/MIPC/Roadmap) .
 
 Le nuove versioni delle app di Office vengono rese disponibili in tempi diversi per i diversi canali di aggiornamento. Per ulteriori informazioni, tra cui la configurazione del canale di aggiornamento in modo che sia possibile testare una nuova funzionalità di etichettatura interessata, vedere [Overview of Update channels for Microsoft 365 Apps](https://docs.microsoft.com/DeployOffice/overview-update-channels). Le nuove funzionalità che si trovano nell'anteprima privata non sono incluse nella tabella, ma è possibile partecipare a queste anteprime nominando l'organizzazione per il [programma Microsoft Information Protection private preview](https://aka.ms/mip-preview).
 
 > [!NOTE]
 > Sono stati modificati di recente i nomi dei canali di aggiornamento per le app di Office. Ad esempio, il canale mensile è ora canale corrente e Office Insider è ora il canale beta. Per ulteriori informazioni, vedere [changes to Update channels for Microsoft 365 Apps](https://docs.microsoft.com/deployoffice/update-channels-changes).
 
+Office per iOS e Office per Android: le etichette di riservatezza sono integrate nell' [app di Office](https://www.microsoft.com/en-us/microsoft-365/blog/2020/02/19/new-office-app-android-ios-available/).
+
 Altre funzionalità sono disponibili quando si installa il client di etichettatura unificata di Azure Information Protection, che viene eseguito solo nei computer Windows. Per questi dettagli, vedere [confrontare i client di etichettatura per i computer Windows](https://docs.microsoft.com/azure/information-protection/rms-client/use-client#compare-the-labeling-clients-for-windows-computers).
 
 ### <a name="sensitivity-label-capabilities-in-word-excel-and-powerpoint"></a>Funzionalità delle etichette di riservatezza in Word, Excel e PowerPoint
 
-Per iOS e Android: se si dispone di una versione minima elencata, la funzionalità etichetta di riservatezza è supportata anche con l' [app di Office](https://www.microsoft.com/en-us/microsoft-365/blog/2020/02/19/new-office-app-android-ios-available/).
+I numeri elencati sono la versione minima dell'applicazione di Office necessaria per ogni funzionalità.
 
-|Funzionalità                                                                                                        |Desktop di Windows |Desktop Mac |iOS    |Android      |Web                                                         |
+|Funzionalità                                                                                                        |Windows |Mac |iOS    |Android      |Web                                                         |
 |------------------------------------------------------------------------------------------------------------------|----------------|------------|-------|-------------|------------------------------------------------------------|
 |[Applica, modifica o Rimuovi manualmente l'etichetta](https://support.microsoft.com/en-us/office/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)| 1910+          | 16.21 +     | 2.21+ | 16.0.11231+ | [Sì-opt-in](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[Applicare un'etichetta predefinita](sensitivity-labels.md#what-label-policies-can-do)                                         | 1910+          | 16.21 +     | 2.21+ | 16.0.11231+ | [Sì-opt-in](sensitivity-labels-sharepoint-onedrive-files.md)                                                        |
@@ -74,7 +76,9 @@ Per iOS e Android: se si dispone di una versione minima elencata, la funzionalit
 
 ### <a name="sensitivity-label-capabilities-in-outlook"></a>Funzionalità delle etichette di riservatezza in Outlook
 
-|Funzionalità                                                                                                        |Desktop di Outlook su Windows |Desktop di Outlook su Mac  |Outlook su iOS |Outlook su Android |Outlook sul Web |
+I numeri elencati sono la versione minima dell'applicazione di Office necessaria per ogni funzionalità.
+
+|Funzionalità                                                                                                        | Outlook per Windows |Outlook per Mac |Outlook su iOS |Outlook su Android |Outlook sul Web |
 |------------------------------------------------------------------------------------------------------------------|---------------------------|------------------------|---------------|-------------------|-------------------|
 |[Applica, modifica o Rimuovi manualmente l'etichetta](https://support.microsoft.com/en-us/office/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)| 1910+                     | 16.21 +                 | 4.7.1 +         | 4.0.39 +           | Sì               |
 |[Applicare un'etichetta predefinita](sensitivity-labels.md#what-label-policies-can-do)                                         | 1910+                     | 16.21 +                 | 4.7.1 +         | 4.0.39 +           | Sì               |
@@ -159,8 +163,9 @@ Per un'esperienza di etichetta più coerente con relazioni significative, fornir
     - **Riservata \ tutti i dipendenti**
     - **Riservata \ chiunque (nessuna crittografia)**
 
-> [!NOTE]
-> Se gli utenti rimuovono manualmente la crittografia da un documento etichettato archiviato in SharePoint o OneDrive e sono state [abilitate le etichette di riservatezza per i file di Office in SharePoint e OneDrive](sensitivity-labels-sharepoint-onedrive-files.md), la crittografia dell'etichetta verrà ripristinata automaticamente al successivo accesso o download del documento. 
+  > [!NOTE]
+  > Se gli utenti rimuovono manualmente la crittografia da un documento etichettato archiviato in SharePoint o OneDrive e sono state [abilitate le etichette di riservatezza per i file di Office in SharePoint e OneDrive](sensitivity-labels-sharepoint-onedrive-files.md), la crittografia dell'etichetta verrà ripristinata automaticamente al successivo accesso o download del documento. 
+
 
 ## <a name="apply-sensitivity-labels-to-files-emails-and-attachments"></a>Applicare etichette di riservatezza a file, messaggi di posta elettronica e allegati
 
