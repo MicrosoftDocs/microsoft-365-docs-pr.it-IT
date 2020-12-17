@@ -1,0 +1,47 @@
+---
+title: Esaminare i report sull'utilizzo
+f1.keywords:
+- NOCSH
+ms.author: sirkkuw
+author: Sirkkuw
+manager: scotv
+audience: Admin
+ms.topic: article
+ms.service: o365-administration
+localization_priority: Normal
+ROBOTS: NOINDEX, NOFOLLOW
+ms.collection:
+- M365-subscription-management
+- Adm_O365
+ms.custom:
+- AdminSurgePortfolio
+- adminvideo
+monikerRange: o365-worldwide
+search.appverid:
+- BCS160
+- MET150
+- MOE150
+description: Informazioni su come utilizzare i report sui dati di utilizzo.
+ms.openlocfilehash: 898f72f3c89981cc7ea8112cd157239d42b08d20
+ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "49702174"
+---
+# <a name="review-usage-reports-in-microsoft-365"></a><span data-ttu-id="c1562-103">Esaminare i report sull'utilizzo in Microsoft 365</span><span class="sxs-lookup"><span data-stu-id="c1562-103">Review usage reports in Microsoft 365</span></span>
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1SOFC?autoplay=false]
+
+<span data-ttu-id="c1562-104">Scoprire in che modo i dipendenti utilizzano servizi Microsoft 365 come la posta elettronica o OneDrive e intervenire.</span><span class="sxs-lookup"><span data-stu-id="c1562-104">Find out how employees are using Microsoft 365 services such as email or OneDrive, and take action.</span></span>
+
+<span data-ttu-id="c1562-105">Nell'interfaccia di [Amministrazione](https://admin.microsoft.com), è possibile visualizzare tutti i report disponibili.</span><span class="sxs-lookup"><span data-stu-id="c1562-105">In the [admin center](https://admin.microsoft.com), you can see all the reports available.</span></span>
+
+## <a name="try-it"></a><span data-ttu-id="c1562-106">Perché non provarlo?</span><span class="sxs-lookup"><span data-stu-id="c1562-106">Try it!</span></span>
+
+1. <span data-ttu-id="c1562-107">Passare a **report** e quindi **utilizzo**.</span><span class="sxs-lookup"><span data-stu-id="c1562-107">Go to **Reports**, and then **Usage**.</span></span> <span data-ttu-id="c1562-108">Trovare i dettagli per qualsiasi rapporto selezionando uno.</span><span class="sxs-lookup"><span data-stu-id="c1562-108">Find details for any report by selecting one.</span></span> <span data-ttu-id="c1562-109">Il report utenti attivi indica quali servizi vengono utilizzati maggiormente dalle persone dell'azienda.</span><span class="sxs-lookup"><span data-stu-id="c1562-109">The Active users report shows which services are used most by the people in your business.</span></span>
+1. <span data-ttu-id="c1562-110">Ad esempio, è possibile esaminare il report di OneDrive.</span><span class="sxs-lookup"><span data-stu-id="c1562-110">As an example, let's go ahead and look at the OneDrive report.</span></span> <span data-ttu-id="c1562-111">Qui è possibile vedere quante persone hanno un account, è anche possibile visualizzare il numero di file totali e attivi, nonché lo spazio di archiviazione utilizzato.</span><span class="sxs-lookup"><span data-stu-id="c1562-111">Here we can see how many people have an account, you can also view the number of total and active files, as well as storage used.</span></span> <span data-ttu-id="c1562-112">Per visualizzare tutti gli altri report, passare al menu a discesa.</span><span class="sxs-lookup"><span data-stu-id="c1562-112">To see all the other reports, go to the drop down menu.</span></span>
+1. <span data-ttu-id="c1562-113">In questo articolo è possibile esaminare il report sull'utilizzo delle app di posta elettronica e vedere quali metodi i dipendenti utilizzano di più per accedere al proprio indirizzo di posta elettronica.</span><span class="sxs-lookup"><span data-stu-id="c1562-113">Here we can take a look at the email app usage report and see which methods your employees use the most to access their email.</span></span> <span data-ttu-id="c1562-114">È inoltre possibile visualizzare le informazioni specifiche di un singolo utente, ma i dettagli sono nascosti per impostazione predefinita.</span><span class="sxs-lookup"><span data-stu-id="c1562-114">You can also view information specific to an individual, but the details are hidden by default.</span></span> <span data-ttu-id="c1562-115">Per visualizzare i singoli dettagli utente, passare a **Impostazioni**, quindi **Servizi & i componenti** aggiuntivi.</span><span class="sxs-lookup"><span data-stu-id="c1562-115">To show the individual user details, go over to **Settings**, and then **Services & add-ins**.</span></span>
+1. <span data-ttu-id="c1562-116">Nel riquadro dei report, è possibile abilitare l'identificatore anonimo.</span><span class="sxs-lookup"><span data-stu-id="c1562-116">In the report panel, we can turn the anonymous identifier on.</span></span> <span data-ttu-id="c1562-117">A questo punto, chiudere il pannello e tornare a **report**, **utilizzo** e attività di **posta elettronica**.</span><span class="sxs-lookup"><span data-stu-id="c1562-117">Now let's close the panel and come back over to **Reports**, **Usage**, and **Email activity**.</span></span> <span data-ttu-id="c1562-118">Qui è possibile visualizzare le informazioni specifiche di un singolo utente.</span><span class="sxs-lookup"><span data-stu-id="c1562-118">Here we can see information specific to an individual.</span></span>
+
+    <span data-ttu-id="c1562-119">Tenere presente che, se si rimane bloccati, è sempre possibile eseguire il backup in modo da fornire informazioni sul report specifico che si sta visualizzando.</span><span class="sxs-lookup"><span data-stu-id="c1562-119">Remember, if you ever get stuck, you can always go back up to Help which gives you information about the specific report you are viewing.</span></span>

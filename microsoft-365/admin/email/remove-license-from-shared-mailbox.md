@@ -22,98 +22,101 @@ search.appverid:
 - MOE150
 ms.assetid: bb229ee9-e7be-4990-b3eb-354e75740496
 description: 'Rimuovere la licenza da una cassetta postale condivisa per assegnarla a un altro utente. '
-ms.openlocfilehash: 43d32744afe42a8f244160ace20c1d989f501b28
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: 11d5185cc3f79899a737ddccc0a93160acb380bc
+ms.sourcegitcommit: 884ac262443c50362d0c3ded961d36d6b15d8b73
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48445496"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49698304"
 ---
-# <a name="remove-a-license-from-a-shared-mailbox"></a><span data-ttu-id="c60f3-103">Rimuovere una licenza da una cassetta postale condivisa</span><span class="sxs-lookup"><span data-stu-id="c60f3-103">Remove a license from a shared mailbox</span></span>
+# <a name="remove-a-license-from-a-shared-mailbox"></a><span data-ttu-id="aab69-103">Rimuovere una licenza da una cassetta postale condivisa</span><span class="sxs-lookup"><span data-stu-id="aab69-103">Remove a license from a shared mailbox</span></span>
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> <span data-ttu-id="c60f3-104">L'interfaccia di amministrazione sta cambiando.</span><span class="sxs-lookup"><span data-stu-id="c60f3-104">The admin center is changing.</span></span> <span data-ttu-id="c60f3-105">Se alcuni dettagli non corrispondono a quelli presentati qui, vedere [Informazioni sulla nuova interfaccia di amministrazione di Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true).</span><span class="sxs-lookup"><span data-stu-id="c60f3-105">If your experience doesn't match the details presented here, see [About the new Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true).</span></span>
+> <span data-ttu-id="aab69-104">L'interfaccia di amministrazione sta cambiando.</span><span class="sxs-lookup"><span data-stu-id="aab69-104">The admin center is changing.</span></span> <span data-ttu-id="aab69-105">Se alcuni dettagli non corrispondono a quelli presentati qui, vedere [Informazioni sulla nuova interfaccia di amministrazione di Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true).</span><span class="sxs-lookup"><span data-stu-id="aab69-105">If your experience doesn't match the details presented here, see [About the new Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true).</span></span>
 
 ::: moniker-end
 
-<span data-ttu-id="c60f3-106">Le cassette postali condivise in genere non richiedono una licenza.</span><span class="sxs-lookup"><span data-stu-id="c60f3-106">Shared mailboxes usually don't require a license.</span></span> <span data-ttu-id="c60f3-107">Seguire le istruzioni riportate di seguito per rimuovere una licenza da una cassetta postale condivisa in modo che sia possibile assegnarla a un utente oppure restituire la licenza in modo che non si paghi una licenza di cui non si ha bisogno.</span><span class="sxs-lookup"><span data-stu-id="c60f3-107">Follow these instructions to remove a license from a shared mailbox so that you can either assign it to a user or return the license so that you aren't paying for a license you don't need.</span></span>
+<span data-ttu-id="aab69-106">Le cassette postali condivise in genere non richiedono una licenza.</span><span class="sxs-lookup"><span data-stu-id="aab69-106">Shared mailboxes usually don't require a license.</span></span> <span data-ttu-id="aab69-107">Seguire le istruzioni riportate di seguito per rimuovere una licenza da una cassetta postale condivisa in modo che sia possibile assegnarla a un utente oppure restituire la licenza in modo che non si paghi una licenza di cui non si ha bisogno.</span><span class="sxs-lookup"><span data-stu-id="aab69-107">Follow these instructions to remove a license from a shared mailbox so that you can either assign it to a user or return the license so that you aren't paying for a license you don't need.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="c60f3-108">È necessaria una licenza negli scenari seguenti:</span><span class="sxs-lookup"><span data-stu-id="c60f3-108">A license is required in the following scenarios:</span></span>
-> 1. <span data-ttu-id="c60f3-109">La cassetta postale condivisa ha più di 50 GB di spazio di archiviazione in uso.</span><span class="sxs-lookup"><span data-stu-id="c60f3-109">The shared mailbox has more than 50 GB of storage in use.</span></span>
-> 2. <span data-ttu-id="c60f3-110">La cassetta postale condivisa utilizza l'archiviazione sul posto.</span><span class="sxs-lookup"><span data-stu-id="c60f3-110">The shared mailbox uses in-place archiving.</span></span>
-> 3. <span data-ttu-id="c60f3-111">La cassetta postale condivisa viene messa in blocco per controversia legale.</span><span class="sxs-lookup"><span data-stu-id="c60f3-111">The shared mailbox is placed in litigation hold.</span></span>
+> <span data-ttu-id="aab69-108">È necessaria una licenza negli scenari seguenti:</span><span class="sxs-lookup"><span data-stu-id="aab69-108">A license is required in the following scenarios:</span></span>
+> 1. <span data-ttu-id="aab69-109">La cassetta postale condivisa ha più di 50 GB di spazio di archiviazione in uso.</span><span class="sxs-lookup"><span data-stu-id="aab69-109">The shared mailbox has more than 50 GB of storage in use.</span></span>
+> 2. <span data-ttu-id="aab69-110">La cassetta postale condivisa utilizza l'archiviazione sul posto.</span><span class="sxs-lookup"><span data-stu-id="aab69-110">The shared mailbox uses in-place archiving.</span></span>
+> 3. <span data-ttu-id="aab69-111">La cassetta postale condivisa viene messa in blocco per controversia legale.</span><span class="sxs-lookup"><span data-stu-id="aab69-111">The shared mailbox is placed in litigation hold.</span></span>
+> 4. <span data-ttu-id="aab69-112">La cassetta postale condivisa ha una licenza Microsoft Defender assegnata.</span><span class="sxs-lookup"><span data-stu-id="aab69-112">The shared mailbox has a Microsoft Defender license assigned.</span></span>
 
   
-## <a name="remove-the-license"></a><span data-ttu-id="c60f3-112">Rimuovere la licenza</span><span class="sxs-lookup"><span data-stu-id="c60f3-112">Remove the license</span></span>
+## <a name="remove-the-license"></a><span data-ttu-id="aab69-113">Rimuovere la licenza</span><span class="sxs-lookup"><span data-stu-id="aab69-113">Remove the license</span></span>
 
 ::: moniker range="o365-worldwide"
 
-1. <span data-ttu-id="c60f3-113">Nell'interfaccia di amministrazione passare alla pagina **Utenti** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utenti attivi</a>.</span><span class="sxs-lookup"><span data-stu-id="c60f3-113">In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Active users</a> page.</span></span>
+1. <span data-ttu-id="aab69-114">Nell'interfaccia di amministrazione passare alla pagina **Utenti** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utenti attivi</a>.</span><span class="sxs-lookup"><span data-stu-id="aab69-114">In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Active users</a> page.</span></span>
 
    > [!NOTE]
-   > <span data-ttu-id="c60f3-114">È necessario rimuovere la licenza dalla pagina utenti attivi.</span><span class="sxs-lookup"><span data-stu-id="c60f3-114">You need to remove the license from the Active users page.</span></span> <span data-ttu-id="c60f3-115">Non è possibile rimuovere la licenza dalla pagina della cassetta postale condivisa perché le licenze sono impostazioni utente.</span><span class="sxs-lookup"><span data-stu-id="c60f3-115">You can't remove the license from the Shared mailbox page because licenses are user settings.</span></span> 
+   > <span data-ttu-id="aab69-115">È necessario rimuovere la licenza dalla pagina utenti attivi.</span><span class="sxs-lookup"><span data-stu-id="aab69-115">You need to remove the license from the Active users page.</span></span> <span data-ttu-id="aab69-116">Non è possibile rimuovere la licenza dalla pagina della cassetta postale condivisa perché le licenze sono impostazioni utente.</span><span class="sxs-lookup"><span data-stu-id="aab69-116">You can't remove the license from the Shared mailbox page because licenses are user settings.</span></span> 
   
-2. <span data-ttu-id="c60f3-116">Selezionare la cassetta postale condivisa.</span><span class="sxs-lookup"><span data-stu-id="c60f3-116">Select the shared mailbox.</span></span>
+2. <span data-ttu-id="aab69-117">Selezionare la cassetta postale condivisa.</span><span class="sxs-lookup"><span data-stu-id="aab69-117">Select the shared mailbox.</span></span>
 
-3. <span data-ttu-id="c60f3-117">Una scheda **licenze e app** , espandere **licenze** e deselezionare la casella per la licenza che si desidera rimuovere.</span><span class="sxs-lookup"><span data-stu-id="c60f3-117">One the **Licenses and Apps** tab, expand **Licenses** and uncheck the box for the license you want to remove.</span></span>
+3. <span data-ttu-id="aab69-118">Una scheda **licenze e app** , espandere **licenze** e deselezionare la casella per la licenza che si desidera rimuovere.</span><span class="sxs-lookup"><span data-stu-id="aab69-118">One the **Licenses and Apps** tab, expand **Licenses** and uncheck the box for the license you want to remove.</span></span>
 
-4. <span data-ttu-id="c60f3-118">Selezionare **Salva modifiche**.</span><span class="sxs-lookup"><span data-stu-id="c60f3-118">Select **Save changes**.</span></span>
+4. <span data-ttu-id="aab69-119">Selezionare **Salva modifiche**.</span><span class="sxs-lookup"><span data-stu-id="aab69-119">Select **Save changes**.</span></span>
 
-5. <span data-ttu-id="c60f3-119">Quando si torna alla pagina **utenti attivi** , lo stato della cassetta postale condivisa non verrà **concesso in licenza**.</span><span class="sxs-lookup"><span data-stu-id="c60f3-119">When you return to the **Active users** page, the status of the shared mailbox will be **Unlicensed**.</span></span>
+5. <span data-ttu-id="aab69-120">Quando si torna alla pagina **utenti attivi** , lo stato della cassetta postale condivisa non verrà **concesso in licenza**.</span><span class="sxs-lookup"><span data-stu-id="aab69-120">When you return to the **Active users** page, the status of the shared mailbox will be **Unlicensed**.</span></span>
 
-6. <span data-ttu-id="c60f3-120">Si sta ancora pagando la licenza.</span><span class="sxs-lookup"><span data-stu-id="c60f3-120">You're still paying for the license.</span></span> <span data-ttu-id="c60f3-121">Per interrompere il pagamento, [rimuovere la licenza dall'abbonamento](../../commerce/licenses/remove-licenses-from-subscription.md).</span><span class="sxs-lookup"><span data-stu-id="c60f3-121">To stop paying for it, [remove the license from your subscription](../../commerce/licenses/remove-licenses-from-subscription.md).</span></span>
+6. <span data-ttu-id="aab69-121">Si sta ancora pagando la licenza.</span><span class="sxs-lookup"><span data-stu-id="aab69-121">You're still paying for the license.</span></span> <span data-ttu-id="aab69-122">Per interrompere il pagamento, [rimuovere la licenza dall'abbonamento](../../commerce/licenses/remove-licenses-from-subscription.md).</span><span class="sxs-lookup"><span data-stu-id="aab69-122">To stop paying for it, [remove the license from your subscription](../../commerce/licenses/remove-licenses-from-subscription.md).</span></span>
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
- 1. <span data-ttu-id="c60f3-122">Nell'interfaccia di amministrazione passare alla pagina **Utenti** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Utenti attivi</a>.</span><span class="sxs-lookup"><span data-stu-id="c60f3-122">In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Active users</a> page.</span></span>
+ 1. <span data-ttu-id="aab69-123">Nell'interfaccia di amministrazione passare alla pagina **Utenti** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Utenti attivi</a>.</span><span class="sxs-lookup"><span data-stu-id="aab69-123">In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Active users</a> page.</span></span>
 
     > [!NOTE]
-    > <span data-ttu-id="c60f3-123">È necessario rimuovere la licenza dalla pagina utenti attivi.</span><span class="sxs-lookup"><span data-stu-id="c60f3-123">You need to remove the license from the Active users page.</span></span> <span data-ttu-id="c60f3-124">Non è possibile rimuovere la licenza dalla pagina della cassetta postale condivisa perché le licenze sono impostazioni utente.</span><span class="sxs-lookup"><span data-stu-id="c60f3-124">You can't remove the license from the Shared mailbox page because licenses are user settings.</span></span>
+    > <span data-ttu-id="aab69-124">È necessario rimuovere la licenza dalla pagina utenti attivi.</span><span class="sxs-lookup"><span data-stu-id="aab69-124">You need to remove the license from the Active users page.</span></span> <span data-ttu-id="aab69-125">Non è possibile rimuovere la licenza dalla pagina della cassetta postale condivisa perché le licenze sono impostazioni utente.</span><span class="sxs-lookup"><span data-stu-id="aab69-125">You can't remove the license from the Shared mailbox page because licenses are user settings.</span></span>
 
-2. <span data-ttu-id="c60f3-125">Selezionare la cassetta postale condivisa e quindi fare clic su **modifica** accanto a **licenze di prodotto**.</span><span class="sxs-lookup"><span data-stu-id="c60f3-125">Select the shared mailbox, and then select **Edit** next to **Product licenses**.</span></span>
+2. <span data-ttu-id="aab69-126">Selezionare la cassetta postale condivisa e quindi fare clic su **modifica** accanto a **licenze di prodotto**.</span><span class="sxs-lookup"><span data-stu-id="aab69-126">Select the shared mailbox, and then select **Edit** next to **Product licenses**.</span></span>
 
-3. <span data-ttu-id="c60f3-126">Una pagina **licenze di prodotto** , impostare l'interruttore su **disattivato** per la licenza che si desidera rimuovere.</span><span class="sxs-lookup"><span data-stu-id="c60f3-126">One the **Product licenses** page, set the toggle to **Off** for the license you want to remove.</span></span>
+3. <span data-ttu-id="aab69-127">Una pagina **licenze di prodotto** , impostare l'interruttore su **disattivato** per la licenza che si desidera rimuovere.</span><span class="sxs-lookup"><span data-stu-id="aab69-127">One the **Product licenses** page, set the toggle to **Off** for the license you want to remove.</span></span>
 
-4. <span data-ttu-id="c60f3-127">Seleziona **Salva**.</span><span class="sxs-lookup"><span data-stu-id="c60f3-127">Select **Save**.</span></span>
+4. <span data-ttu-id="aab69-128">Selezionare **Salva**.</span><span class="sxs-lookup"><span data-stu-id="aab69-128">Select **Save**.</span></span>
 
-5. <span data-ttu-id="c60f3-128">Quando si torna alla pagina **utenti attivi** , lo stato della cassetta postale condivisa non verrà **concesso in licenza**.</span><span class="sxs-lookup"><span data-stu-id="c60f3-128">When you return to the **Active users** page, the status of the shared mailbox will be **Unlicensed**.</span></span>
+5. <span data-ttu-id="aab69-129">Quando si torna alla pagina **utenti attivi** , lo stato della cassetta postale condivisa non verrà **concesso in licenza**.</span><span class="sxs-lookup"><span data-stu-id="aab69-129">When you return to the **Active users** page, the status of the shared mailbox will be **Unlicensed**.</span></span>
 
-6. <span data-ttu-id="c60f3-129">Si sta ancora pagando la licenza.</span><span class="sxs-lookup"><span data-stu-id="c60f3-129">You're still paying for the license.</span></span> <span data-ttu-id="c60f3-130">Per interrompere il pagamento, [rimuovere la licenza dall'abbonamento](../../commerce/licenses/remove-licenses-from-subscription.md).</span><span class="sxs-lookup"><span data-stu-id="c60f3-130">To stop paying for it, [remove the license from your subscription](../../commerce/licenses/remove-licenses-from-subscription.md).</span></span>
+6. <span data-ttu-id="aab69-130">Si sta ancora pagando la licenza.</span><span class="sxs-lookup"><span data-stu-id="aab69-130">You're still paying for the license.</span></span> <span data-ttu-id="aab69-131">Per interrompere il pagamento, [rimuovere la licenza dall'abbonamento](../../commerce/licenses/remove-licenses-from-subscription.md).</span><span class="sxs-lookup"><span data-stu-id="aab69-131">To stop paying for it, [remove the license from your subscription](../../commerce/licenses/remove-licenses-from-subscription.md).</span></span>
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
- 1. <span data-ttu-id="c60f3-131">Nell'interfaccia di amministrazione passare alla pagina **Utenti** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Utenti attivi</a>.</span><span class="sxs-lookup"><span data-stu-id="c60f3-131">In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Active users</a> page.</span></span>
+ 1. <span data-ttu-id="aab69-132">Nell'interfaccia di amministrazione passare alla pagina **Utenti** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Utenti attivi</a>.</span><span class="sxs-lookup"><span data-stu-id="aab69-132">In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Active users</a> page.</span></span>
 
     > [!NOTE]
-    > <span data-ttu-id="c60f3-132">È necessario rimuovere la licenza dalla pagina utenti attivi.</span><span class="sxs-lookup"><span data-stu-id="c60f3-132">You need to remove the license from the Active users page.</span></span> <span data-ttu-id="c60f3-133">Non è possibile rimuovere la licenza dalla pagina della cassetta postale condivisa perché le licenze sono impostazioni utente.</span><span class="sxs-lookup"><span data-stu-id="c60f3-133">You can't remove the license from the Shared mailbox page because licenses are user settings.</span></span>
+    > <span data-ttu-id="aab69-133">È necessario rimuovere la licenza dalla pagina utenti attivi.</span><span class="sxs-lookup"><span data-stu-id="aab69-133">You need to remove the license from the Active users page.</span></span> <span data-ttu-id="aab69-134">Non è possibile rimuovere la licenza dalla pagina della cassetta postale condivisa perché le licenze sono impostazioni utente.</span><span class="sxs-lookup"><span data-stu-id="aab69-134">You can't remove the license from the Shared mailbox page because licenses are user settings.</span></span>
 
-2. <span data-ttu-id="c60f3-134">Selezionare la cassetta postale condivisa e quindi fare clic su **modifica** accanto a **licenze di prodotto**.</span><span class="sxs-lookup"><span data-stu-id="c60f3-134">Select the shared mailbox, and then select **Edit** next to **Product licenses**.</span></span>
+2. <span data-ttu-id="aab69-135">Selezionare la cassetta postale condivisa e quindi fare clic su **modifica** accanto a **licenze di prodotto**.</span><span class="sxs-lookup"><span data-stu-id="aab69-135">Select the shared mailbox, and then select **Edit** next to **Product licenses**.</span></span>
 
-3. <span data-ttu-id="c60f3-135">Una pagina **licenze di prodotto** , impostare l'interruttore su **disattivato** per la licenza che si desidera rimuovere.</span><span class="sxs-lookup"><span data-stu-id="c60f3-135">One the **Product licenses** page, set the toggle to **Off** for the license you want to remove.</span></span>
+3. <span data-ttu-id="aab69-136">Una pagina **licenze di prodotto** , impostare l'interruttore su **disattivato** per la licenza che si desidera rimuovere.</span><span class="sxs-lookup"><span data-stu-id="aab69-136">One the **Product licenses** page, set the toggle to **Off** for the license you want to remove.</span></span>
 
-4. <span data-ttu-id="c60f3-136">Seleziona **Salva**.</span><span class="sxs-lookup"><span data-stu-id="c60f3-136">Select **Save**.</span></span>
+4. <span data-ttu-id="aab69-137">Selezionare **Salva**.</span><span class="sxs-lookup"><span data-stu-id="aab69-137">Select **Save**.</span></span>
 
-5. <span data-ttu-id="c60f3-137">Quando si torna alla pagina **utenti attivi** , lo stato della cassetta postale condivisa non verrà **concesso in licenza**.</span><span class="sxs-lookup"><span data-stu-id="c60f3-137">When you return to the **Active users** page, the status of the shared mailbox will be **Unlicensed**.</span></span>
+5. <span data-ttu-id="aab69-138">Quando si torna alla pagina **utenti attivi** , lo stato della cassetta postale condivisa non verrà **concesso in licenza**.</span><span class="sxs-lookup"><span data-stu-id="aab69-138">When you return to the **Active users** page, the status of the shared mailbox will be **Unlicensed**.</span></span>
 
-6. <span data-ttu-id="c60f3-138">Si sta ancora pagando la licenza.</span><span class="sxs-lookup"><span data-stu-id="c60f3-138">You're still paying for the license.</span></span> <span data-ttu-id="c60f3-139">Per interrompere il pagamento, [rimuovere la licenza dall'abbonamento](../../commerce/licenses/remove-licenses-from-subscription.md).</span><span class="sxs-lookup"><span data-stu-id="c60f3-139">To stop paying for it, [remove the license from your subscription](../../commerce/licenses/remove-licenses-from-subscription.md).</span></span>
+6. <span data-ttu-id="aab69-139">Si sta ancora pagando la licenza.</span><span class="sxs-lookup"><span data-stu-id="aab69-139">You're still paying for the license.</span></span> <span data-ttu-id="aab69-140">Per interrompere il pagamento, [rimuovere la licenza dall'abbonamento](../../commerce/licenses/remove-licenses-from-subscription.md).</span><span class="sxs-lookup"><span data-stu-id="aab69-140">To stop paying for it, [remove the license from your subscription](../../commerce/licenses/remove-licenses-from-subscription.md).</span></span>
 
 ::: moniker-end 
 
-## <a name="related-articles"></a><span data-ttu-id="c60f3-140">Articoli correlati</span><span class="sxs-lookup"><span data-stu-id="c60f3-140">Related articles</span></span>
+ 
 
-[<span data-ttu-id="c60f3-141">Informazioni sulle cassette postali condivise</span><span class="sxs-lookup"><span data-stu-id="c60f3-141">About shared mailboxes</span></span>](about-shared-mailboxes.md)
+## <a name="related-articles"></a><span data-ttu-id="aab69-141">Articoli correlati</span><span class="sxs-lookup"><span data-stu-id="aab69-141">Related articles</span></span>
 
-[<span data-ttu-id="c60f3-142">Creare una cassetta postale condivisa</span><span class="sxs-lookup"><span data-stu-id="c60f3-142">Create a shared mailbox</span></span>](create-a-shared-mailbox.md)
+[<span data-ttu-id="aab69-142">Informazioni sulle cassette postali condivise</span><span class="sxs-lookup"><span data-stu-id="aab69-142">About shared mailboxes</span></span>](about-shared-mailboxes.md)
 
-[<span data-ttu-id="c60f3-143">Configurare una cassetta postale condivisa</span><span class="sxs-lookup"><span data-stu-id="c60f3-143">Configure a shared mailbox</span></span>](configure-a-shared-mailbox.md)
+[<span data-ttu-id="aab69-143">Creare una cassetta postale condivisa</span><span class="sxs-lookup"><span data-stu-id="aab69-143">Create a shared mailbox</span></span>](create-a-shared-mailbox.md)
 
-[<span data-ttu-id="c60f3-144">Convertire una cassetta postale utente in una cassetta postale condivisa</span><span class="sxs-lookup"><span data-stu-id="c60f3-144">Convert a user mailbox to a shared mailbox</span></span>](convert-user-mailbox-to-shared-mailbox.md)
+[<span data-ttu-id="aab69-144">Configurare una cassetta postale condivisa</span><span class="sxs-lookup"><span data-stu-id="aab69-144">Configure a shared mailbox</span></span>](configure-a-shared-mailbox.md)
 
-[<span data-ttu-id="c60f3-145">Risolvere i problemi relativi alle cassette postali condivise</span><span class="sxs-lookup"><span data-stu-id="c60f3-145">Resolve issues with shared mailboxes</span></span>](resolve-issues-with-shared-mailboxes.md)
+[<span data-ttu-id="aab69-145">Convertire una cassetta postale utente in una cassetta postale condivisa</span><span class="sxs-lookup"><span data-stu-id="aab69-145">Convert a user mailbox to a shared mailbox</span></span>](convert-user-mailbox-to-shared-mailbox.md)
+
+[<span data-ttu-id="aab69-146">Risolvere i problemi relativi alle cassette postali condivise</span><span class="sxs-lookup"><span data-stu-id="aab69-146">Resolve issues with shared mailboxes</span></span>](resolve-issues-with-shared-mailboxes.md)

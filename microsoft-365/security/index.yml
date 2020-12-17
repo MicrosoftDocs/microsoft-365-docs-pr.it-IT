@@ -3,7 +3,7 @@ title: Documentazione sulla sicurezza di Microsoft 365
 summary: Scopri le soluzioni e i servizi di sicurezza efficaci di Microsoft 365 Security che ti consentono di proteggere meglio la tua azienda dalle superfici di attacco.
 metadata:
   title: Documentazione sulla sicurezza di Microsoft 365
-  description: Informazioni sugli efficaci servizi e soluzioni di sicurezza offerti da Sicurezza Microsoft 365, per una protezione migliore di tutte le superfici di attacco dell'azienda.
+  description: Scopri le soluzioni e i servizi di sicurezza efficienti di Microsoft 365 Security, che ti consentono di proteggere meglio la tua azienda dalle superfici di attacco
   services: office-365-security-compliance
   ms.service: O365-seccomp
   ms.subservice: subservice
@@ -42,7 +42,7 @@ landingContent:
     links:
     - text: Proteggere il personale remoto
       url: https://docs.microsoft.com/enterprise-mobility-security/remote-work/
-- title: Microsoft Defender per identità
+- title: Che cosa è Microsoft Defender per identità?
   linkLists:
   - linkListType: overview
     links:
