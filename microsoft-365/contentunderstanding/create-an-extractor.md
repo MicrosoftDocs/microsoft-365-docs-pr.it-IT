@@ -10,12 +10,12 @@ search.appverid: ''
 ms.collection: enabler-strategic
 localization_priority: Priority
 description: Informazioni su come creare un estrattore in Microsoft SharePoint Syntex.
-ms.openlocfilehash: 99d2a4602c03d8a7207736ea17ed500626ce43ac
-ms.sourcegitcommit: e7bf23df4852b78912229d1d38ec475223597f34
+ms.openlocfilehash: b957d905f3807f6007ebeb742d9b56d81ea38ac2
+ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49087464"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "49701130"
 ---
 # <a name="create-an-extractor-in-microsoft-sharepoint-syntex"></a>Creare un estrattore in Microsoft SharePoint Syntex.
 
@@ -37,7 +37,9 @@ Prima o dopo aver creato un modello di classificazione per automatizzare l'ident
 
 1. Nella sezione **Creare ed eseguire il training di estrattori** della home page del modello fare clic su **Eseguire il training dell'estrattore**.
 2. Nella schermata **Nuovo estrattore di entità** digitare il nome dell'estrattore nel campo **Nome del nuovo estrattore**. Ad esempio, assegnare il nome **Data di avvio del servizio** per estrarre la data di avvio del servizio da ogni documento Rinnovo del contratto. Si può anche decidere di riutilizzare una colonna creata in precedenza, ad esempio una colonna di metadati gestiti.
-3. Fare clic su **Crea**.
+> [!NOTE]
+> Se si crea un nuovo estrattore, selezionare **Nuovo tipo colonna** e scegliere **Riga di testo singola**, il limite massimo di caratteri è 255. Qualsiasi carattere in eccesso rispetto al limite verrà troncato. 
+3. Al termine, fare clic su **Crea**.
 
 ## <a name="add-a-label"></a>Aggiungere un'etichetta
 

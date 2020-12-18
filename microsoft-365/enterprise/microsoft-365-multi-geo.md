@@ -13,12 +13,12 @@ localization_priority: Normal
 f1.keywords:
 - NOCSH
 description: In questo articolo, impara ad espandere la tua presenza Microsoft 365 a più paesi/aree geografiche con Microsoft 365 Multi-Geo.
-ms.openlocfilehash: cf5f655e2b205001c6c16ed05abc33d68324ff15
-ms.sourcegitcommit: e53234b1f64ebca00e121da1706c02b3337c35f0
-ms.translationtype: HT
+ms.openlocfilehash: 6d16d222a97f309eafdd79a2b107978ce7b4f242
+ms.sourcegitcommit: 0867495cb02d0b38b439b16bdce97e6eda483ba9
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "49580698"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "49712498"
 ---
 # <a name="microsoft-365-multi-geo"></a>Microsoft 365 Multi-Geo
 
@@ -50,7 +50,7 @@ Ecco i termini chiave usati nella descrizione di Microsoft 365 Multi-Geo:
 
 ## <a name="licensing"></a>Licenze
 
-Microsoft 365 multi-Geo è disponibile come componente aggiuntivo per i seguenti piani di abbonamento Microsoft 365 per i clienti EA con un minimo di 250 postazioni Microsoft 365 nel loro tenant, di cui almeno il 5% deve utilizzare multi-Geo. Per informazioni dettagliate, contattare il team del proprio account Microsoft.
+Microsoft 365 multi-Geo è disponibile come componente aggiuntivo per i seguenti piani di sottoscrizione di Microsoft 365 per i clienti del contratto Enterprise con un minimo di 250 sedi Microsoft 365 nel tenant e almeno il 5% di tali seggi usando multi-Geo. Le licenze di sottoscrizione degli utenti devono trovarsi nello stesso contratto aziendale delle licenze per i servizi multi-Geo. Per informazioni dettagliate, contattare il team del proprio account Microsoft.
 
 - Microsoft 365 F1, F3, E3, or E5
 - Office 365 F3, E1, E3, or E5
@@ -70,7 +70,7 @@ Seguire questi semplici passaggi per iniziare con Multi-Geo:
 
 1. Collaborare con il team responsabile dell'account per aggiungere il piano di servizio _Multi-Geo Capabilities in Microsoft 365_. Verranno fornite le procedure per aggiungere il numero di licenze necessarie. La funzionalità Multi-Geo Capabilities è disponibile per i clienti EA con un minimo di 250 abbonamenti a Microsoft 365.
 
-   Prima di iniziare a usare Microsoft 365 Multi-Geo, Microsoft deve configurare il tenant di Exchange Online per il supporto Multi-Geo. La procedura di configurazione, da effettuare una sola volta, viene attivata dopo aver ordinato il piano di servizio *Multi-Geo Capabilities in Microsoft 365* e le licenze saranno visualizzate nel tenant. Riceverai le notifiche specifiche del carico di lavoro nel [centro messaggi di Microsoft 365 ](https://support.office.com/article/38FB3333-BFCC-4340-A37B-DEDA509C2093) una volta che il tenant avrà completato il processo di configurazione per ogni carico di lavoro, potrete iniziare a configurare e utilizzare Microsoft 365 Multi-Geo Capabilities. Il tempo necessario per configurare un tenant per il supporto Multi-Geo varia a seconda del tenant, ma la maggior parte dei tenant termina entro un mese dal ricevimento delle licenze di funzionalità. I tenant più grandi o più complessi possono richiedere più tempo per completare il processo di configurazione. Contattare il team degli account per i dettagli su uno specifico tenant, qualora ne abbiate bisogno.
+   Prima di iniziare a usare Microsoft 365 Multi-Geo, Microsoft deve configurare il tenant di Exchange Online per il supporto Multi-Geo. La procedura di configurazione, da effettuare una sola volta, viene attivata dopo aver ordinato il piano di servizio *Multi-Geo Capabilities in Microsoft 365* e le licenze saranno visualizzate nel tenant. Le notifiche specifiche del carico di lavoro vengono ricevute nel [centro messaggi di microsoft 365](https://support.office.com/article/38FB3333-BFCC-4340-A37B-DEDA509C2093) dopo che il tenant ha completato il processo di configurazione per ogni carico di lavoro e quindi è possibile iniziare a configurare e utilizzare le funzionalità multi-geo di Microsoft 365. Il tempo necessario per configurare un tenant per il supporto Multi-Geo varia a seconda del tenant, ma la maggior parte dei tenant termina entro un mese dal ricevimento delle licenze di funzionalità. I tenant più grandi o più complessi possono richiedere più tempo per completare il processo di configurazione. Contattare il team degli account per i dettagli su uno specifico tenant, qualora ne abbiate bisogno.
 
 2. Leggere [Pianificare l'ambiente Multi-Geo](plan-for-multi-geo.md).
 

@@ -19,16 +19,31 @@ search.appverid:
 - MET150
 - MOE150
 description: Informazioni dettagliate su mobilità-persone sperimentano il Punteggio di produttività.
-ms.openlocfilehash: 04651cfee4ac2e67c4099c47bfe6d8c07b41ba83
-ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
+ms.openlocfilehash: e632bb4960ef36acf2c81373f34947ababc8b903
+ms.sourcegitcommit: 0867495cb02d0b38b439b16bdce97e6eda483ba9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49561578"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "49712568"
 ---
 # <a name="mobility--people-experiences"></a>Mobilità – esperienze degli utenti
 
 Produttività Score fornisce informazioni dettagliate sul percorso di trasformazione digitale dell'organizzazione tramite l'utilizzo di Microsoft 365 e le esperienze tecnologiche che lo supportano. Il Punteggio dell'organizzazione riflette le misure relative a utenti e tecnologie e può essere paragonato ai benchmark di organizzazioni simili ai propri. La categoria mobilità fa parte delle misure people experiences. Per ulteriori informazioni, vedere la [Panoramica del Punteggio di produttività](productivity-score.md) e leggere l' [informativa sulla privacy di Microsoft](https://privacy.microsoft.com/privacystatement).
+
+## <a name="prerequisites"></a>Prerequisiti
+
+Per iniziare a utilizzare informazioni sulla mobilità, le persone nell'organizzazione devono essere concessi in licenza per:
+
+- Microsoft Teams
+- Exchange Online
+- Word
+- Excel
+- PowerPoint
+- OneNote
+
+Per ulteriori informazioni, vedere [assegnare licenze agli utenti](../manage/assign-licenses-to-users.md).
+
+Dopo che le persone sono state attive nei prodotti di cui sopra almeno una volta negli ultimi 28 giorni, si inizierà a vedere le intuizioni.
 
 ## <a name="why-your-organization39s-mobility-score-matters"></a>Perché l'organizzazione&#39;s mobile Score Matters
 

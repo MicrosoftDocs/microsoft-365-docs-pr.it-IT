@@ -16,12 +16,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Gli amministratori possono ottenere informazioni sui criteri di anti-phishing disponibili in Exchange Online Protection (EOP) e Microsoft Defender per Office 365.
-ms.openlocfilehash: 43736fbd42949a084804825ec7f12d19b7fd1818
-ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
+ms.openlocfilehash: 7660516e60c77a7f31f711f78b6fd28d3ad179fd
+ms.sourcegitcommit: c0495e224f12c448bfc162ef2e4b33b82f064ac8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "49683050"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "49709705"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Criteri di anti-phishing in Microsoft 365
 
@@ -55,7 +55,7 @@ Le differenze di alto livello tra i criteri di anti-phishing nei criteri di EOP 
 
 Per configurare i criteri di anti-phishing, vedere gli articoli seguenti:
 
-- [Configurazione dei criteri di anti-phishing in EOP](configure-anti-phishing-policies-eop.md)
+- [Configurare i criteri anti-phishing in Exchange Online Protection](configure-anti-phishing-policies-eop.md)
 
 - [Configurazione dei criteri anti-phishing in Microsoft Defender per Office 365](configure-atp-anti-phishing-policies.md)
 
@@ -99,6 +99,8 @@ Le seguenti impostazioni di spoofing sono disponibili nei criteri di anti-phishi
   > - La protezione anti-spoofing è abilitata per impostazione predefinita nei criteri anti-phishing predefiniti e in tutti i nuovi criteri di anti-phishing personalizzati creati.
   >
   > - Non è necessario disabilitare la protezione anti-spoofing se il record MX non punta a Microsoft 365; è invece possibile abilitare il filtro avanzato per i connettori. Per istruzioni, vedere [Enhanced Filtering for Connectors in Exchange Online](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).
+  >
+  > - La disattivazione della protezione anti-spoofing disattiva solo la protezione da spoofing implicita dai controlli di [autenticazione composita](email-validation-and-authentication.md#composite-authentication) . Se il mittente ha esito negativo esplicito [DMARC](use-dmarc-to-validate-email.md) controlli in cui il criterio è impostato su Quarantine o Reject, il messaggio viene ancora messo in quarantena o rifiutato.
 
   Per i messaggi provenienti da mittenti bloccati, è inoltre possibile specificare l'azione da eseguire sui messaggi:
 

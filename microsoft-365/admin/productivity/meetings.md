@@ -19,16 +19,26 @@ search.appverid:
 - MET150
 - MOE150
 description: Dettagli degli incontri-persone che hanno un punteggio di produttività.
-ms.openlocfilehash: b9dfd59643d38531d1eb4ff9fdc24fdc2a54f382
-ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
+ms.openlocfilehash: 09b0682593c0e5a623e9b17712754c4bea2a6672
+ms.sourcegitcommit: 0867495cb02d0b38b439b16bdce97e6eda483ba9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49561648"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "49712544"
 ---
 # <a name="meetings--people-experiences"></a>Riunioni – esperienze degli utenti
 
 Produttività Score fornisce informazioni dettagliate sul percorso di trasformazione digitale dell'organizzazione tramite l'utilizzo di Microsoft 365 e le esperienze tecnologiche che lo supportano. Il Punteggio dell'organizzazione riflette le misure relative a utenti e tecnologie e può essere paragonato ai benchmark di organizzazioni simili ai propri. La categoria riunioni fa parte delle misure people experiences. Per ulteriori informazioni, vedere la [Panoramica del Punteggio di produttività](productivity-score.md) e leggere l' [informativa sulla privacy di Microsoft](https://privacy.microsoft.com/privacystatement).
+
+## <a name="prerequisites"></a>Prerequisiti
+
+Per iniziare a utilizzare le informazioni di riunioni, è necessario che nella propria organizzazione siano concessi in licenza:
+
+- Microsoft Teams
+
+Per ulteriori informazioni, vedere [assegnare licenze agli utenti](../manage/assign-licenses-to-users.md).
+
+Dopo che gli utenti sono stati attivi in team almeno una volta negli ultimi 28 giorni, si inizierà a visualizzare le informazioni dettagliate.
 
 ## <a name="why-your-organizations-meetings-score-matters"></a>Perché il Punteggio degli incontri dell'organizzazione è importante
 

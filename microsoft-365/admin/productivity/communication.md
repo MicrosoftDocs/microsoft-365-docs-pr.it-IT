@@ -19,16 +19,28 @@ search.appverid:
 - MET150
 - MOE150
 description: Informazioni dettagliate sul punteggio di produttività per la comunicazione-persone.
-ms.openlocfilehash: de73957ffad27ddac9b5e18cd6da7becd2239a59
-ms.sourcegitcommit: 98146c67a1d99db5510fa130340d3b7be8d81b21
+ms.openlocfilehash: b688063c10749d15fc5b00b629ee18afedba927e
+ms.sourcegitcommit: 0867495cb02d0b38b439b16bdce97e6eda483ba9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/07/2020
-ms.locfileid: "49585317"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "49712580"
 ---
 # <a name="communication--people-experiences"></a>Comunicazione – esperienze degli utenti
 
 La produttività Score supporta il viaggio verso la trasformazione digitale con approfondimenti su come l'organizzazione usa Microsoft 365 e le esperienze tecnologiche che la supportano. Il punteggio dell'organizzazione misura le esperienze con la tecnologia e delle persone e può essere confrontato ai benchmark di organizzazioni simili per dimensione. La categoria comunicazione fa parte delle misure people experiences. Per ulteriori informazioni, vedere la [Panoramica del Punteggio di produttività](productivity-score.md) e leggere l' [informativa sulla privacy di Microsoft](https://privacy.microsoft.com/privacystatement).
+
+## <a name="prerequisites"></a>Prerequisiti
+
+Per iniziare a utilizzare le informazioni di comunicazione, le persone nell'organizzazione devono essere concessi in licenza per:
+
+- Microsoft Teams
+- Yammer
+- Exchange Online
+
+Per ulteriori informazioni, vedere [assegnare licenze agli utenti](../manage/assign-licenses-to-users.md).
+
+Dopo che le persone sono state attive nei prodotti di cui sopra almeno una volta negli ultimi 28 giorni, si inizierà a vedere le intuizioni.
 
 ## <a name="why-your-organizations-communication-score-matters"></a>Perché il Punteggio di comunicazione dell'organizzazione è importante 
 

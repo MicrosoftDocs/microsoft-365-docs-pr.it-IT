@@ -19,12 +19,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 'Riepilogo: Informazioni sulla migrazione da Microsoft Cloud Germania (Microsoft Cloud Deutschland) ai servizi di Office 365 nella nuova area data center tedesca.'
-ms.openlocfilehash: 16e57eff5556d31d2d13ab6ce0d284719d63c44c
-ms.sourcegitcommit: 849b365bd3eaa9f3c3a9ef9f5973ef81af9156fa
+ms.openlocfilehash: 3587979c61434b77c38758e70903ee7028d70b9e
+ms.sourcegitcommit: c0495e224f12c448bfc162ef2e4b33b82f064ac8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49688642"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "49709693"
 ---
 # <a name="migration-from-microsoft-cloud-deutschland-to-office-365-services-in-the-new-german-datacenter-regions"></a>Migrazione da Microsoft Cloud Deutschland a Office 365 Services nelle nuove aree del datacenter tedesco
 
@@ -35,7 +35,7 @@ Nell'agosto 2018, Microsoft ha annunciato la nostra intenzione di fornire l'inte
 
 Le nuove aree geografiche sono progettate per rispondere alle esigenze evolutive dei clienti tedeschi con una maggiore flessibilità, i più recenti servizi cloud intelligenti e la connettività completa alla rete cloud di Microsoft 365 Services, nonché la residenza dei dati del cliente in Germania.
 
-## <a name="how-to-migrate-to-the-new-german-regions"></a>Come eseguire la migrazione alle nuove aree geografiche tedesche
+## <a name="how-to-migrate-to-the-new-german-datacenter-regions"></a>Come eseguire la migrazione alle nuove aree del datacenter tedesco
 
 I clienti esistenti di Microsoft Cloud Deutschland possono ora iniziare a eseguire la migrazione dei clienti di Office 365, Dynamics 365 e Power Platform. Il primo passaggio consiste nel [consenso esplicito alla migrazione gestita da Microsoft](https://aka.ms/office365germanymoveoptin) nelle nuove aree data center tedesche.
 
@@ -78,9 +78,9 @@ Una settimana prima dell'inizio della migrazione del tenant, si riceverà un avv
 
 La migrazione sposterà il tenant di Azure AD dal servizio di Azure ad di Sovereign Germany all'istanza di servizi di Office 365 di Azure AD nell'area dell'Unione europea.
 
-La fase successiva è la migrazione delle sottoscrizioni del tenant&#39;s e delle licenze utente provenienti da prodotti specifici per la Germania.
+La fase successiva è la migrazione delle sottoscrizioni del tenant&#39;s e delle licenze utente da prodotti specifici per la Germania ai prodotti globali.
 
-Dopo aver completato tutti i passaggi, inclusa la migrazione di Azure dei clienti, il tenant è stato finalizzato nel servizio servizi di Office 365 e la migrazione è contrassegnata come completata. A questo punto, viene fornito l'aggiornamento finale al centro messaggi. Il tenant non è ora un'organizzazione di Office 365 completamente globale.
+Dopo aver completato tutti i passaggi, inclusa la migrazione di Azure dei clienti, il tenant è stato finalizzato nel servizio servizi di Office 365 e la migrazione è contrassegnata come completata. A questo punto, viene fornito l'aggiornamento finale al centro messaggi. Il tenant è ora un'organizzazione di Office 365 completamente globale.
 
 Viene notificato lo stato di avanzamento della migrazione con i post del centro messaggi. I post si verificheranno in tappe specifiche e forniranno indicazioni relative allo stato di avanzamento di un passaggio, nonché informazioni importanti per i clienti affinché agiscano in base ai requisiti del processo. Le notifiche del centro messaggi vengono fornite nelle tappe seguenti:
 
@@ -94,11 +94,11 @@ Viene notificato lo stato di avanzamento della migrazione con i post del centro 
 - Power BI completo
 - La completa finale dei servizi è stata completata
 
-## <a name="moving-to-the-new-german-regions"></a>Spostamento nelle nuove aree tedesche
+## <a name="moving-to-the-new-german-datacenter-regions"></a>Spostamento verso le nuove aree del datacenter tedesco
 
-I clienti di Microsoft Cloud Germany (Microsoft Cloud Deutschland) esistenti possono ora iniziare a eseguire la migrazione dei clienti di Office 365, Dynamics 365 e Power Platform. Il primo passaggio consiste nel [consenso esplicito alla migrazione gestita da Microsoft](https://aka.ms/office365germanymoveoptin) nelle nuove aree data center tedesche. Quando si rinnova l'abbonamento, si opta automaticamente per una migrazione assistita da Microsoft. Microsoft notificherà agli amministratori tenant del cliente la posta elettronica e nel centro messaggi dell'interfaccia di amministrazione di Microsoft 365 quando questo è avvenuto. Tuttavia, se si preferisce avviare il processo ora, è possibile effettuare l' [opt-in](https://aka.ms/office365germanymoveoptin) direttamente nell'interfaccia di amministrazione di Microsoft 365 oggi. Le migrazioni dovrebbero iniziare all'inizio del 2021 e verranno completate entro il 29 ottobre 2021. 
+I clienti esistenti di Microsoft Cloud Deutschland possono ora iniziare a eseguire la migrazione dei servizi di Office 365, Dynamics 365 e Power Platform. Il primo passaggio consiste nel [consenso esplicito alla migrazione gestita da Microsoft](https://aka.ms/office365germanymoveoptin) nelle nuove aree data center tedesche. Quando si rinnova l'abbonamento, si opta automaticamente per una migrazione assistita da Microsoft. Microsoft notificherà agli amministratori tenant del cliente la posta elettronica e nel centro messaggi dell'interfaccia di amministrazione di Microsoft 365 quando questo è avvenuto. Tuttavia, se si preferisce avviare il processo ora, è possibile effettuare l' [opt-in](https://aka.ms/office365germanymoveoptin) direttamente nell'interfaccia di amministrazione di Microsoft 365 oggi. Le migrazioni dovrebbero iniziare all'inizio del 2021 e verranno completate entro il 29 ottobre 2021. 
 
-A seguito della migrazione, gli abbonamenti e i dati principali dei clienti verranno spostati nelle nuove aree geografiche tedesche.
+A causa della migrazione, i dati del cliente di base e le sottoscrizioni vengono spostati nelle nuove aree del datacenter tedesco.
 
 ## <a name="how-to-prepare-for-migration-to-office-365-services-in-the-new-german-datacenter-regions"></a>Come prepararsi per la migrazione ai servizi di Office 365 nelle nuove aree data center tedesche
 
@@ -149,7 +149,7 @@ I seguenti 15 servizi sono disponibili nell'offerta cloud di cloud Deutschland M
 14. Office 365 Pro Plus
 15. Outlook Mobile
 
-Attualmente sono disponibili 29 servizi nell'ambito dell'offerta di Office 365 nelle nuove aree data center tedesche. I nuovi servizi e funzionalità saranno disponibili regolarmente con i servizi globali di Office 365.
+Attualmente sono disponibili 39 servizi come parte di Office 365 Services nelle nuove aree del datacenter tedesco. I nuovi servizi e funzionalità saranno disponibili regolarmente con i servizi globali di Office 365.
 
 1. Exchange Online
 2. Archivio protetto dei clienti per Exchange Online
@@ -161,7 +161,7 @@ Attualmente sono disponibili 29 servizi nell'ambito dell'offerta di Office 365 n
 8. Defender per Office 365
 9. Advanced eDiscovery
 10. Advanced Security Management
-11. Information Rights Management
+11. Information Protection per Office 365 
 12. Advanced Data Governance
 13. SharePoint Online
 14. Archivio protetto dei clienti per SharePoint Online
@@ -173,13 +173,23 @@ Attualmente sono disponibili 29 servizi nell'ambito dell'offerta di Office 365 n
 20. Chiamate PSTN
 21. Microsoft Teams
 22. Report degli amministratori/report sull'uso
-23. Word Online, Excel Online, PowerPoint, OneNote e Visio Online
+23. Office per il web
 24. Planner
 25. Sway
 26. Microsoft 365 Apps
 27. Outlook Mobile
 28. Enterprise Mobility + Security (EMS) E3 (Azure AD Premium P1, Intune e Rights Management Service)
-29. Yammer Online
+29. Yammer Enterprise
+30. Microsoft Forms
+31. Automatizzare l'alimentazione per Office 365
+32. Agenti virtuali di alimentazione per Office 365
+33. PowerApps per Office 365
+34. Microsoft Bookings
+35. To-Do
+36. Whiteboard
+37. Microsoft StuffHub
+38. Microsoft Kaizala Pro
+39. Elenchi
 
 ### <a name="when-will-migration-happen"></a>Quando viene eseguita la migrazione?
 
@@ -278,7 +288,7 @@ In caso di domande, è possibile contattarci o contattare il partner:
 
 [Acconsentire esplicitamente a eseguire la migrazione](ms-cloud-germany-migration-opt-in.md)
 
-## <a name="more-information"></a>Altre informazioni
+## <a name="more-information"></a>Ulteriori informazioni
 
 Guida introduttiva:
 

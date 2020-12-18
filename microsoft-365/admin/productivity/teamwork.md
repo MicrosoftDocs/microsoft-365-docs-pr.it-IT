@@ -19,16 +19,28 @@ search.appverid:
 - MET150
 - MOE150
 description: Dettagli del lavoro di squadra-persone che sperimentano il Punteggio di produttività.
-ms.openlocfilehash: 2be98b904131e8ac7cd5f6215faf41fd69ee1837
-ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
+ms.openlocfilehash: f64f60a6c9717d3d55ee2ac5cc6f507d4927fe18
+ms.sourcegitcommit: 0867495cb02d0b38b439b16bdce97e6eda483ba9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49561544"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "49712556"
 ---
 # <a name="teamwork--people-experiences"></a>Teamwork – esperienze degli utenti
 
 Produttività Score fornisce informazioni dettagliate sul percorso di trasformazione digitale dell'organizzazione tramite l'utilizzo di Microsoft 365 e le esperienze tecnologiche che lo supportano. Il Punteggio dell'organizzazione riflette le misure relative a utenti e tecnologie e può essere paragonato ai benchmark di organizzazioni simili ai propri. La categoria teamwork è parte integrante delle misurazioni che rientrano nelle esperienze degli utenti. Per ulteriori informazioni, vedere la [Panoramica del Punteggio di produttività](productivity-score.md) e leggere l' [informativa sulla privacy di Microsoft](https://privacy.microsoft.com/privacystatement).
+
+## <a name="prerequisites"></a>Prerequisiti
+
+Per iniziare a utilizzare il team Insights, le persone nell'organizzazione devono essere concessi in licenza per:
+
+- Microsoft Teams
+- SharePoint
+- Exchange Online
+
+Per ulteriori informazioni, vedere [assegnare licenze agli utenti](../manage/assign-licenses-to-users.md).
+
+Dopo che le persone sono state attive nei prodotti di cui sopra almeno una volta negli ultimi 28 giorni, si inizierà a vedere le intuizioni.
 
 ## <a name="why-your-orgs-teamwork-score-matters"></a>Perché il Punteggio di Team org è importante
 
