@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-mip
 - m365initiative-compliance
 description: Implementare Microsoft Information Protection (MIP) per proteggere le informazioni sensibili ovunque ci si trovi.
-ms.openlocfilehash: 59f57c920f2b753994f2335a6f2ed9ac5b7b77d1
-ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
+ms.openlocfilehash: 2a1ec47ce888dc6d31868d65f9c4c113fa9b968c
+ms.sourcegitcommit: c0495e224f12c448bfc162ef2e4b33b82f064ac8
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49613088"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "49709508"
 ---
 # <a name="microsoft-information-protection-in-microsoft-365"></a>Microsoft Information Protection in Microsoft 365.
 
@@ -59,7 +59,7 @@ Applicare azioni di protezione flessibili che includono crittografia, restrizion
 
 |Funzionalità|Che problemi risolve?|Per iniziare|
 |:------|:------------|---------------------|:----------------------------|
-|[Etichette di riservatezza](sensitivity-labels.md)| Una singola soluzione tra app, servizi e dispositivi per etichettare e proteggere i dati mentre viaggiano all'interno e all'esterno dell'organizzazione <br /><br />Scenario esemplificativo: [Applicare e visualizzare le etichette di riservatezza in Power BI e proteggere i dati durante l'esportazione](https://docs.microsoft.com/power-bi/admin/service-security-apply-data-sensitivity-labels)|[Iniziare a usare le etichette di riservatezza](get-started-with-sensitivity-labels.md) |
+|[Etichette di riservatezza](sensitivity-labels.md)| Una singola soluzione tra app, servizi e dispositivi per etichettare e proteggere i dati mentre viaggiano all'interno e all'esterno dell'organizzazione <br /><br />Scenario di esempio: [applicare e visualizzare le etichette in Power BI e proteggere i dati quando vengono salvati all'esterno del servizio](https://docs.microsoft.com/power-bi/admin/service-security-apply-data-sensitivity-labels)|[Iniziare a usare le etichette di riservatezza](get-started-with-sensitivity-labels.md) |
 |[Client di etichettatura unificata di Azure Information Protection ](https://docs.microsoft.com/azure/information-protection/rms-client/aip-clientv2)| Per i computer Windows, estende le etichette di riservatezza per altre caratteristiche e funzionalità che includono l'etichettatura e la protezione di tutti i tipi di file da Esplora file e PowerShell<br /><br /> Esempio di funzionalità supplementari: [Configurazioni personalizzate per il client di etichettatura unificato di Azure Information Protection](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide-customizations)| [Guida dell’amministratore client per l’etichettatura unificata di Azure Information Protection](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide)|
 |[Crittografia a chiave doppia](double-key-encryption.md)| In tutti i casi, solo l’utente autorizzato può decrittografare il contenuto protetto o, in base a i requisiti normativi, l’utente deve essere in possesso di chiave di crittografia in base a un confine geografico. | [Crittografia a chiave doppia](double-key-encryption.md#deploy-dke)|
 |[Office 365 Message Encryption (OME)](ome.md)| Consente di crittografare i messaggi di posta elettronica e i documenti allegati inviati a qualsiasi utente da qualsiasi dispositivo, in modo che solo i destinatari autorizzati possano leggere le informazioni di posta elettronica  <br /><br />Scenario esemplificativo: [Revocare un'e-mail crittografata da Advanced Message Encryption](revoke-ome-encrypted-mail.md) | [Configurare le nuove funzionalità di Message Encryption](set-up-new-message-encryption-capabilities.md)|

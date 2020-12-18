@@ -1,5 +1,5 @@
 ---
-title: Comprendere la fattura o la fattura per Microsoft 365 for business
+title: Comprendi l’estratto conto o la fattura per Microsoft 365 per le aziende
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -24,17 +24,17 @@ search.appverid:
 - MOE150
 - BEA160
 ms.assetid: 0724b428-fb59-4962-8c37-6674166d7507
-description: Informazioni su come interpretare gli addebiti, la fatturazione e i dati di pagamento sulla bolletta o fattura di Microsoft 365 for business e su come modificare il numero dell'ordine di acquisto.
+description: Come interpretare i dati su addebiti, fatturazione e pagamenti nell’estratto conto o fattura di Microsoft 365 per le aziende e come cambiare il numero di ordine d'acquisto.
 ms.openlocfilehash: 3d71bab82be3fd9e4c633885dccaf357ccabb551
 ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 10/21/2020
 ms.locfileid: "48638400"
 ---
-# <a name="understand-your-bill-or-invoice-for-microsoft-365-for-business"></a>Comprendere la fattura o la fattura per Microsoft 365 for business
+# <a name="understand-your-bill-or-invoice-for-microsoft-365-for-business"></a>Comprendi l’estratto conto o la fattura per Microsoft 365 per le aziende
 
-Mensilmente o annualmente (a seconda dell'opzione selezionata al momento dell'acquisto dell'abbonamento), si riceverà un messaggio di posta elettronica che informa che la nuova dichiarazione di fatturazione è disponibile nell'interfaccia di amministrazione. [Informazioni su come trovare e visualizzare la fattura](view-your-bill-or-invoice.md).
+Ogni mese o ogni anno (a seconda dell'opzione che scegli quando acquisti l'abbonamento), riceverai un'email che ti informa che il tuo nuovo estratto conto è disponibile nell’interfaccia di amministrazione. [Informazioni su come trovare e visualizzare la fattura](view-your-bill-or-invoice.md).
   
 La fattura è composta da due pagine. La pagina 1 contiene il riepilogo e informazioni generali su fattura, ordine, importo dovuto e modalità di pagamento, oltre a indicazioni su come contattare il supporto.
   
@@ -52,11 +52,11 @@ Prima di visualizzare la fattura, è utile comprendere alcuni concetti chiave.
   
 ### <a name="invoice-balance-vs-order-balance"></a>Saldo della fattura e saldo dell'ordine
 
- Il **saldo della fattura** è l'importo indicato nella fattura e fa riferimento solo a quanto dovuto per uno specifico periodo di fatturazione. Il **saldo dell'ordine** totale è la somma di tutte le fatture non saldate. È possibile visualizzare il saldo dell'ordine nella sezione **fatturazione** dell'interfaccia di amministrazione.
+ Il **saldo della fattura** è l'importo indicato nella fattura e fa riferimento solo a quanto dovuto per uno specifico periodo di fatturazione. Il **saldo dell'ordine** totale è la somma di tutte le fatture non saldate. È possibile visualizzare il saldo dell'ordine nella sezione **Fatturazione** dell'Interfaccia di amministrazione.
   
 ### <a name="billing-frequency-vs-invoice-frequency"></a>Frequenza di emissione e di ricezione delle fatture
 
- **Frequenza di emissione** indica la cadenza con cui vengono emesse le fatture. Gli abbonamenti vengono fatturati mensilmente o annualmente, a seconda dell'opzione scelta durante l'acquisto della sottoscrizione. **Frequenza di ricezione** indica la cadenza con cui si ricevono le fatture. Se si sceglie la fatturazione annuale, si riceve una sola fattura all'anno, a meno che l'attività relativa all'abbonamento non richieda un addebito o un accredito.
+ **Frequenza di emissione** indica la cadenza con cui vengono emesse le fatture. Le fatture per gli abbonamenti vengono emesse mensilmente o annualmente, a seconda dell'opzione selezionata al momento dell'acquisto. **Frequenza di ricezione** indica la cadenza con cui si ricevono le fatture. Se si sceglie la fatturazione annuale, si riceve una sola fattura all'anno, a meno che l'attività relativa all'abbonamento non richieda un addebito o un accredito.
   
 Se si hanno più ordini, si riceverà una fattura per ognuno.
   
@@ -69,28 +69,28 @@ La tabella seguente descrive i campi che potrebbero essere riportati nella fattu
   
 |**Nome**|**Descrizione**|
 |:-----|:-----|
-|Prezzo annuale|Le fatture per gli abbonamenti vengono emesse mensilmente o annualmente. Se si sceglie la fatturazione annuale durante l'acquisto dell'abbonamento, il prezzo annuale della licenza viene riflesso sulla fattura. Se si vuole cambiare la frequenza di emissione della fattura, è necessario annullare l'abbonamento e acquistarne un altro con una nuova frequenza.|
+|Prezzo annuale|Le fatture per gli abbonamenti vengono emesse mensilmente o annualmente. Se si seleziona la fatturazione annuale al momento dell'acquisto dell'abbonamento, nella fattura è indicato il prezzo annuale della licenza. Se si vuole cambiare la frequenza di emissione della fattura, è necessario annullare l'abbonamento e acquistarne un altro con una nuova frequenza.|
 |Periodo di fatturazione|Il periodo di fatturazione è il periodo di tempo che inizia dalla data dell'ultima fattura. Il periodo di servizio è il periodo di tempo durante il quale viene addebitato l'uso del servizio.|
-|Indirizzo di fatturazione|L'indirizzo del reparto fatturazione, che in genere corrisponde all'indirizzo indicato in Venduto a. Per aggiornare l'indirizzo di fatturazione, vedere [cambiare gli indirizzi di fatturazione](change-your-billing-addresses.md).|
+|Indirizzo di fatturazione|L'indirizzo del reparto fatturazione, che in genere corrisponde all'indirizzo indicato in Venduto a. Per aggiornare l'indirizzo di fatturazione, vedere [Cambiare gli indirizzi di fatturazione](change-your-billing-addresses.md).|
 |Addebiti|Nella pagina 1 della fattura sono riepilogati tutti gli addebiti riferiti al periodo di fatturazione. La pagina 2 contiene gli addebiti dettagliati per ogni abbonamento.|
 |Assegno|Se si sceglie il pagamento tramite fattura ed è possibile saldarlo con assegno nel proprio paese, alla fine della pagina 1 sono incluse informazioni su dove inviare il pagamento. Includere nell'assegno il numero di fattura.|
 |Crediti|Nella pagina 1 della fattura sono riepilogati tutti i crediti riferiti al periodo di fatturazione. La pagina 2 contiene i crediti dettagliati per ogni abbonamento.|
-|Numero ordine d'acquisto cliente|Il numero dell'ordine d'acquisto. Se il numero dell'ordine d'acquisto viene aggiornato, verrà incluso nelle future fatture. [Cambiare il numero dell'ordine d'acquisto](#change-your-purchase-order-number).  <br/> **Note** Non è possibile aggiungere un numero di PO a una fattura esistente.           |
+|Numero ordine d'acquisto cliente|Il numero dell'ordine d'acquisto. Se il numero dell'ordine d'acquisto viene aggiornato, verrà incluso nelle future fatture. [Cambiare il numero dell'ordine d'acquisto](#change-your-purchase-order-number).  <br/> **NOTA** Non è invece possibile aggiungere un numero di PO a una fattura esistente.           |
 |Giorni|Ogni transazione di fatturazione è associata a un periodo di servizio. La colonna Giorni indica il numero di giorni di tale periodo.|
 |Sconti|Nella pagina 1 della fattura sono riepilogati tutti gli sconti riferiti al periodo di fatturazione. La pagina 2 contiene gli sconti dettagliati per ogni abbonamento.|
-|Scadenza|La data in cui è dovuto il pagamento della fattura. Se l'abbonamento viene pagato con carta di credito o conto corrente bancario, l'importo verrà addebitato il giorno dopo la data della fattura.<br/> **Note** Il pagamento tramite conto corrente bancario non è disponibile in alcuni paesi o aree geografiche.           |
-|Bonifico bancario|Se si sceglie "fattura" come metodo di pagamento per l'abbonamento, la pagina 1 contiene le informazioni sul conto corrente bancario Microsoft per i pagamenti elettronici (Wire, ACH, SEPA e così via). In genere la banca avrà un campo di riferimento da completare quando si invia il pagamento. Inserire come riferimento il numero di fattura indicato in questo campo.|
+|Scadenza|La data in cui è dovuto il pagamento della fattura. Se l'abbonamento viene pagato con carta di credito o conto corrente bancario, l'importo verrà addebitato il giorno dopo la data della fattura.<br/> **NOTA** Il pagamento tramite conto corrente bancario non è disponibile in alcuni paesi o aree geografiche.           |
+|Bonifico bancario|Se è stata scelta la fattura come modalità di pagamento, la pagina 1 contiene le informazioni sul conto corrente bancario Microsoft per i pagamenti elettronici (bonifico, ACH, SEPA e così via). In genere la banca avrà un campo di riferimento da completare quando si invia il pagamento. Inserire come riferimento il numero di fattura indicato in questo campo.|
 |Totale complessivo|Questa riga include i totali di tutte le colonne relative ad addebiti, sconti, subtotale, imposte e totale per tutti gli abbonamenti inclusi nella fattura.|
 |Data fattura|La data in cui è stata creata la fattura, ossia il giorno dopo il termine del periodo di fatturazione. Se ad esempio il periodo di fatturazione è compreso tra il 15 gennaio e il 14 febbraio, la data della fattura sarà 15 febbraio.|
 |N. fattura|Il numero univoco assegnato alla fattura. Fare riferimento a questo numero con il pagamento.|
-|Prezzo mensile|Le fatture per gli abbonamenti vengono emesse mensilmente o annualmente. Se si sceglie la fatturazione mensile durante l'acquisto dell'abbonamento, il prezzo mensile della licenza viene riflesso sulla fattura. Se si vuole cambiare la frequenza di emissione della fattura, è necessario annullare l'abbonamento e acquistarne un altro con una nuova frequenza.|
+|Prezzo mensile|Le fatture per gli abbonamenti vengono emesse mensilmente o annualmente. Se si seleziona la fatturazione mensile al momento dell'acquisto dell'abbonamento, nella fattura è indicato il prezzo mensile della licenza. Se si vuole cambiare la frequenza di emissione della fattura, è necessario annullare l'abbonamento e acquistarne un altro con una nuova frequenza.|
 |Numero d'ordine|Ogni volta che si acquista un nuovo abbonamento viene creato un ordine. Ogni mese si riceverà una fattura per ogni ordine.|
 |Istruzioni per il pagamento|Se si sceglie il pagamento con carta di credito, verrà riportato il messaggio "NON PAGARE - addebito su carta di credito registrato". Se si sceglie il pagamento tramite fattura, verranno indicate le istruzioni per eseguire il bonifico e quelle per l'assegno (se applicabile).|
 |Condizioni di pagamento|Il numero di giorni a partire dalla data della fattura in cui è dovuto il pagamento. Lo standard è 30 giorni.|
 |Prodotto|Nella pagina 1 della fattura, "Servizi online" è il termine generico usato per descrivere gli abbonamenti. Nella pagina 2 si trovano i nomi dei singoli abbonamenti.|
 |Qtà|Il numero di licenze acquistate durante il periodo di servizio.|
 |Periodo servizio|Il periodo di servizio è il periodo di tempo durante il quale viene addebitato l'uso del servizio. Il periodo di fatturazione è il periodo di tempo che inizia dalla data dell'ultima fattura.|
-|Indirizzo di utilizzo del servizio|L'indirizzo in cui viene usato il servizio, che in genere corrisponde all'indirizzo specificato in Venduto a. Per aggiornare l'indirizzo di utilizzo del servizio, vedere [cambiare gli indirizzi di fatturazione](change-your-billing-addresses.md).|
+|Indirizzo di utilizzo del servizio|L'indirizzo in cui viene usato il servizio, che in genere corrisponde all'indirizzo specificato in Venduto a. Per aggiornare l'indirizzo di utilizzo dei servizi, vedere [Cambiare gli indirizzi di fatturazione](change-your-billing-addresses.md).|
 |Venduto a|Il nome e l'indirizzo della propria società. Per aggiornare questa informazione, vedere [Cambiare l'indirizzo dell'organizzazione, l'indirizzo di posta elettronica del contatto tecnico e altre informazioni](../../admin/manage/change-address-contact-and-more.md).  |
 |Subtotale|Ogni abbonamento riportato nella fattura prevede una riga Subtotale separata per tutte le colonne di addebiti, sconti, crediti, subtotale, imposta e totale.|
 |Imposta|Nella pagina 1 della fattura è indicata l'imposta totale. La pagina 2 mostra l'aliquota di imposta applicata e l'importo totale dell'imposta per ogni riga. Se la fattura contiene imposte ma la società è esente, [contattare il supporto](../../admin/contact-support-for-business-products.md).  |
@@ -107,13 +107,13 @@ Se si è scelto il pagamento tramite fattura, è possibile aggiungere o cambiare
 
 1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">I tuoi prodotti</a>.
 
-2. Se si è in visualizzazione **tabella** , selezionare **schede** per cambiare le visualizzazioni.
+2. Se si è in Visualizzazione **Tabella**, selezionare **Schede** per cambiare visualizzazione.
 
-3. Individuare l'abbonamento che si desidera modificare.
+3. Trovare l'abbonamento da riattivare.
 
-4. Nella sezione **fatturazione** fare clic su **modifica**accanto a **fattura**.
+4. Nella sezione **Fatturazione**, accanto a **fattura**, selezionare **Modificare**.
 
-5. Nella parte inferiore del riquadro **Modifica dettagli pagamento** , immettere il numero di ordine di acquisto e quindi fare clic su **Salva**.
+5. Nella parte inferiore del riquadro **Modifica dettagli pagamento** immettere il numero di PO e quindi selezionare **Salva**.
 
 ::: moniker-end
 
@@ -121,9 +121,9 @@ Se si è scelto il pagamento tramite fattura, è possibile aggiungere o cambiare
 
 1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Abbonamenti</a>.
 
-2. Selezionare l'abbonamento che si desidera modificare, quindi nella sezione **metodo di pagamento** selezionare **Modifica dettagli pagamento**.
+2. Selezionare l'abbonamento da cambiare e nella sezione **Modalità di pagamento** selezionare **Cambia dettagli pagamento**.
 
-3. Nella parte inferiore del riquadro **Modifica dettagli pagamento** , immettere il numero di ordine di acquisto, quindi selezionare **Invia**.
+3. Nella parte inferiore del riquadro **Modifica dettagli pagamento** immettere il numero di PO e quindi selezionare **Invia**.
 
 ::: moniker-end
 
@@ -131,9 +131,9 @@ Se si è scelto il pagamento tramite fattura, è possibile aggiungere o cambiare
 
 1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Abbonamenti</a>.
 
-2. Selezionare l'abbonamento che si desidera modificare, quindi nella sezione **metodo di pagamento** selezionare **Modifica dettagli pagamento**.
+2. Selezionare l'abbonamento da cambiare e nella sezione **Modalità di pagamento** selezionare **Cambia dettagli pagamento**.
 
-3. Nella parte inferiore del riquadro **Modifica dettagli pagamento** , immettere il numero di ordine di acquisto, quindi selezionare **Invia**.
+3. Nella parte inferiore del riquadro **Modifica dettagli pagamento** immettere il numero di PO e quindi selezionare **Invia**.
 
 ::: moniker-end
 

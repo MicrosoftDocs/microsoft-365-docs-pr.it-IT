@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-mip
 - m365initiative-compliance
 description: Con Office 365, il contenuto viene crittografato a riposo e in transito con la crittografia, i protocolli e le tecnologie più forti disponibili. Ottenere una panoramica della crittografia in Office 365.
-ms.openlocfilehash: 0cd440549cd038ec9b5f69233e7faa18d9bcee1e
-ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
+ms.openlocfilehash: 1aee9d401891e807f572c1eed2bc22a54f39e534
+ms.sourcegitcommit: c0495e224f12c448bfc162ef2e4b33b82f064ac8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "49663011"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "49709569"
 ---
 # <a name="encryption"></a>Crittografia
 
@@ -89,6 +89,6 @@ Per altre informazioni, vedere le risorse seguenti:
 
 [Pianificare le funzionalità di sicurezza e protezione delle informazioni di Microsoft 365](plan-for-security-and-compliance.md)
 
-[Top 10 modi per proteggere i piani Microsoft 365 for business](https://docs.microsoft.com/office365/admin/security-and-compliance/secure-your-business-data?view=o365-worldwide)
+[Top 10 modi per proteggere i piani Microsoft 365 for business](https://docs.microsoft.com/office365/admin/security-and-compliance/secure-your-business-data)
 
 [Crittografia e flusso di riproduzione dei livelli video di Microsoft Stream](https://docs.microsoft.com/stream/network-overview#video-level-encryption-and-playback-flow)

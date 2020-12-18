@@ -1,5 +1,5 @@
 ---
-title: Crittografia del servizio con la chiave del cliente
+title: Crittografia del servizio con Customer Key
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -16,20 +16,20 @@ ms.collection:
 - m365initiative-compliance
 ms.custom: seo-marvel-apr2020
 description: In questo articolo vengono fornite informazioni sulla modalità di funzionamento della crittografia del servizio con la chiave del cliente in Microsoft 365.
-ms.openlocfilehash: fd00b910a9a33fb792c41c7f64f9721e2b5bd20f
-ms.sourcegitcommit: ae3aa7f29be16d08950cf23cad489bc069aa8617
+ms.openlocfilehash: 0008d145db81d5d6c4eb9ab89ca194b7e426d2e4
+ms.sourcegitcommit: c0495e224f12c448bfc162ef2e4b33b82f064ac8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48408984"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "49709528"
 ---
-# <a name="service-encryption-with-customer-key"></a>Crittografia del servizio con la chiave del cliente
+# <a name="service-encryption-with-customer-key"></a>Crittografia del servizio con Customer Key
 
 Microsoft 365 fornisce la crittografia di base, a livello di volume abilitata tramite BitLocker e Distributed Key Manager (DKM). Microsoft 365 offre un ulteriore livello di crittografia a livello di applicazione per il contenuto. Questo contenuto include i dati di Exchange Online, Skype for business, SharePoint Online, OneDrive for business e i file dei team. Questo livello aggiunto di crittografia è denominato crittografia del servizio.
 
 ## <a name="how-service-encryption-bitlocker-and-customer-key-work-together"></a>Come funzionano i servizi di crittografia, BitLocker e Customer Key insieme
 
-La crittografia dei servizi garantisce che il contenuto a riposo sia crittografato a livello di applicazione. I **dati sono sempre crittografati nel servizio Microsoft 365 con BitLocker e DKM**. Per ulteriori informazioni, vedere "informazioni sulla sicurezza, la privacy e la conformità" e su [come Exchange Online protegge i segreti della posta elettronica](exchange-online-secures-email-secrets.md). La chiave del cliente fornisce ulteriore protezione contro la visualizzazione dei dati da parte di sistemi o personale non autorizzato e complementa la crittografia del disco BitLocker nei datacenter Microsoft. La crittografia del servizio non è destinata a impedire ai dipendenti di Microsoft di accedere ai dati dei clienti. Lo scopo principale è quello di assistere i clienti nell'adempimento degli obblighi normativi o di conformità per il controllo delle chiavi principali. I clienti autorizzano esplicitamente i servizi di O365 a utilizzare le chiavi di crittografia per fornire servizi cloud a valore aggiunto, ad esempio eDiscovery, anti-malware, protezione dalla posta indesiderata, indicizzazione della ricerca e così via.
+La crittografia dei servizi garantisce che il contenuto a riposo sia crittografato a livello di servizio. I **dati sono sempre crittografati nel servizio Microsoft 365 con BitLocker e DKM**. Per ulteriori informazioni, vedere "informazioni sulla sicurezza, la privacy e la conformità" e su [come Exchange Online protegge i segreti della posta elettronica](exchange-online-secures-email-secrets.md). La chiave del cliente fornisce ulteriore protezione contro la visualizzazione dei dati da parte di sistemi o personale non autorizzato e complementa la crittografia del disco BitLocker nei datacenter Microsoft. La crittografia del servizio non è destinata a impedire ai dipendenti di Microsoft di accedere ai dati dei clienti. Lo scopo principale è quello di assistere i clienti nell'adempimento degli obblighi normativi o di conformità per il controllo delle chiavi principali. I clienti autorizzano esplicitamente i servizi di O365 a utilizzare le chiavi di crittografia per fornire servizi cloud a valore aggiunto, ad esempio eDiscovery, anti-malware, protezione dalla posta indesiderata, indicizzazione della ricerca e così via.
 
 La chiave del cliente è basata sulla crittografia del servizio e consente di fornire e controllare le chiavi di crittografia. Microsoft 365 utilizza quindi queste chiavi per crittografare i dati a riposo, come descritto nelle [condizioni dei servizi online (OST)](https://www.microsoft.com/licensing/product-licensing/products.aspx). La chiave Customer consente di soddisfare gli obblighi di conformità perché si controllano le chiavi di crittografia utilizzate da Microsoft 365 per crittografare e decrittografare i dati.
   

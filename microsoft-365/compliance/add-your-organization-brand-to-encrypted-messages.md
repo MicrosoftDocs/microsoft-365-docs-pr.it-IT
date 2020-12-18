@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 description: Informazioni su come gli amministratori globali di Office 365 possono applicare il marchio dell'organizzazione ai messaggi di posta elettronica crittografati & contenuto del portale di crittografia.
-ms.openlocfilehash: 77fd5e08afa1a4d8ae5f6386fa65b88b6ea2be4d
-ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
+ms.openlocfilehash: 56b948fc941da4fb221d929ecd59c5300b135e39
+ms.sourcegitcommit: c0495e224f12c448bfc162ef2e4b33b82f064ac8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "49663233"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "49709498"
 ---
 # <a name="add-your-organizations-brand-to-your-microsoft-365-for-business-message-encryption-encrypted-messages"></a>Aggiungere il marchio dell'organizzazione ai messaggi crittografati per la crittografia dei messaggi di Microsoft 365 per le aziende
 
@@ -192,9 +192,8 @@ I nomi di colore che è possibile utilizzare per il colore di sfondo sono limita
 
 Nella tabella seguente sono descritti i nomi dei colori di sfondo disponibili e i valori del codice esadecimale corrispondenti.
 
-|||
-|---|---|
 |**Nome colore**|**Codice colore**|
+|---|---|
 |`aliceblue`|#f0f8ff|
 |`antiquewhite`|#faebd7|
 |`aqua`|#00ffff|

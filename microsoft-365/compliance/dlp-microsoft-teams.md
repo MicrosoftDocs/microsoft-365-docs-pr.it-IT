@@ -15,12 +15,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: È ora possibile applicare i criteri DLP alle chat e ai canali di Microsoft teams. Leggere questo articolo per ulteriori informazioni su come funziona.
-ms.openlocfilehash: 4903056a9a7e7ae74a8ada52bd491f2b8efe771e
-ms.sourcegitcommit: d859ea36152c227699c1786ef08cda5805ecf7db
+ms.openlocfilehash: 3d55c447b2e808af2ac35f04b67a002304e3e9eb
+ms.sourcegitcommit: c0495e224f12c448bfc162ef2e4b33b82f064ac8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49604360"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "49709538"
 ---
 # <a name="data-loss-prevention-and-microsoft-teams"></a>Prevenzione della perdita di dati e Microsoft Teams
 
@@ -28,6 +28,9 @@ ms.locfileid: "49604360"
 > Le funzionalità di prevenzione della perdita di dati sono state aggiunte di recente a Microsoft teams chat e ai messaggi di canale per gli utenti con licenza per Office 365 E5/A5, Microsoft 365 E5/A5, Microsoft 365 Information Protection and Governance o Office 365 Advanced Compliance. Office 365 e Microsoft 365 E3 includono la protezione DLP per SharePoint Online, OneDrive ed Exchange Online. Questo include anche i file condivisi tramite team perché i team utilizzano SharePoint Online e OneDrive per condividere file.
 Il supporto per la protezione DLP in teams chat richiede E5.
 Per altre informazioni sui requisiti di licenza, vedere [Linee guida per le licenze dei servizi a livello di tenant di Microsoft 365](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance).
+
+> [!IMPORTANT]
+> DLP per i team è supportato solo quando l'utente dispone di una cassetta postale in Exchange Online
 
 ## <a name="overview-of-dlp-for-microsoft-teams"></a>Panoramica di DLP per Microsoft Teams
 
@@ -67,7 +70,7 @@ Per eseguire questa attività, è necessario essere assegnati a un ruolo che dis
 
 1. Accedere al centro sicurezza & conformità ( [https://protection.office.com](https://protection.office.com) ) ed eseguire l'accesso.
 
-2. Scegliere **i criteri di prevenzione della perdita di dati**  >  **Policy**.
+2. Scegliere **i criteri di prevenzione della perdita di dati**  >  .
 
 3. Selezionare un criterio e fare clic su **modifica** accanto a **impostazioni criterio**.
 
@@ -87,7 +90,7 @@ Per eseguire questa attività, è necessario essere assegnati a un ruolo che dis
 
 1. Accedere al centro sicurezza & conformità ( [https://protection.office.com](https://protection.office.com) ) ed eseguire l'accesso.
 
-2. Scegliere **i criteri di prevenzione della perdita di dati**  >  **Policy**.
+2. Scegliere **i criteri di prevenzione della perdita di dati**  >  .
 
 3. Selezionare un criterio e esaminare i valori in **percorsi**. Se si visualizzano **i messaggi chat e canali del team**, è tutto pronto. In caso contrario, fare clic su **modifica**.<br/>![Posizioni per i criteri esistenti](../media/dlp-teams-editexistingpolicy.png)<br/>
 
@@ -105,7 +108,7 @@ Per eseguire questa attività, è necessario essere assegnati a un ruolo che dis
 
 1. Accedere al centro sicurezza & conformità ( [https://protection.office.com](https://protection.office.com) ) ed eseguire l'accesso.
 
-2. Scegliere criteri di **prevenzione della perdita**  >  **Policy**  >  **di dati + creare un criterio**.
+2. Scegliere criteri di **prevenzione della perdita**  >    >  **di dati + creare un criterio**.
 
 3. Scegliere un [modello](data-loss-prevention-policies.md#dlp-policy-templates)e quindi fare clic su **Avanti**.<br/>In questo esempio, è stato scelto il modello di dati di identificazione personale degli Stati Uniti.<br/>![Modello di privacy per i criteri DLP](../media/dlp-teams-createnewpolicy-template.png)<br/>
 

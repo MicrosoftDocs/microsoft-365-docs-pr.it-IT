@@ -19,12 +19,12 @@ ms.assetid: f87cb016-7876-4317-ae3c-9169b311ff8a
 ms.custom:
 - seo-marvel-apr2020
 description: Informazioni su come inviare e ricevere messaggi di posta elettronica crittografati tra utenti all'interno e all'esterno dell'organizzazione.
-ms.openlocfilehash: 542b540bb06998c1b90ef74485a4096ebc9ee0dc
-ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
+ms.openlocfilehash: f601618c3ad44361794720852b391949901122f2
+ms.sourcegitcommit: c0495e224f12c448bfc162ef2e4b33b82f064ac8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45429932"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "49709622"
 ---
 # <a name="message-encryption"></a>Crittografia dei messaggi
 
@@ -82,11 +82,10 @@ Con la crittografia dei messaggi di Office 365, gli utenti possono inviare messa
 
 I destinatari dei messaggi crittografati che si trovano nelle organizzazioni potranno leggere tali messaggi senza problemi in qualsiasi versione di Outlook, ad esempio Outlook per PC, Outlook per Mac, Outlook sul Web, Outlook per iOS e Outlook per Android. Gli utenti che ricevono messaggi crittografati in altri client di posta elettronica possono visualizzare i messaggi nel portale OME.
 
-Per istruzioni dettagliate su come inviare e visualizzare i messaggi crittografati, vedere gli articoli seguenti:
+Per istruzioni dettagliate su come inviare e visualizzare i messaggi crittografati, vedere questi articoli.
 
-|||
-|:-----|:-----|
 |Leggere questo articolo...|Se si è...|
+|:-----|:-----|
 |[Informazioni sui messaggi protetti in Office 365](https://support.office.com/article/2baf3ac7-12db-40a4-8af7-1852204b4b67.aspx)|Un utente finale che desidera ottenere ulteriori informazioni sul funzionamento dei messaggi crittografati e sulle opzioni disponibili.|
 |[Come aprire un messaggio protetto](https://support.office.com/article/1157a286-8ecc-4b1e-ac43-2a608fbf3098.aspx)|Un utente finale che vuole leggere un messaggio protetto che è stato inviato. In questo articolo sono incluse informazioni sulla lettura di messaggi in diverse versioni di Outlook e su account di posta elettronica diversi, compresi gli account esterni a Microsoft 365, ad esempio Gmail e Yahoo! account.|
 |[Inviare, visualizzare e rispondere a messaggi crittografati in Outlook](https://support.microsoft.com/office/send-view-and-reply-to-encrypted-messages-in-outlook-for-pc-eaa43495-9bbb-4fca-922a-df90dee51980)|Un utente finale che desidera inviare, visualizzare o rispondere a un messaggio crittografato da Outlook. Anche se non si è membri di un'organizzazione, viene comunque ricevuta la notifica dei messaggi crittografati inviati all'utente in Outlook. Utilizzare questo articolo per istruzioni su come visualizzare e rispondere a messaggi crittografati inviati da Office 365.|
