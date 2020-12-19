@@ -12,12 +12,12 @@ ms.custom: Adopt
 search.appverid: ''
 localization_priority: Normal
 ROBOTS: NOINDEX
-ms.openlocfilehash: 9709bec9b6e59ef05903f9c04909c796eb4127f4
-ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
+ms.openlocfilehash: 45469e17870a58966a42a13116b6ba645071722c
+ms.sourcegitcommit: 884ac262443c50362d0c3ded961d36d6b15d8b73
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "49683434"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49698532"
 ---
 # <a name="get-started-driving-adoption-of-topic-experiences-preview"></a>Guida introduttiva all'adozione di esperienze di argomento (anteprima)
 
@@ -33,7 +33,7 @@ Prima di iniziare a utilizzare l'adozione, è necessario comprendere i concetti 
 - **Identificazione**: con Microsoft Graph and Intelligent Intelligence (ai) le conoscenze e le persone (argomenti, competenze e così via) vengono identificate e organizzate automaticamente in argomenti correlati. Il contenuto di SharePoint è indicizzato con contenuto di sicurezza.
 - **Extension**: con i connettori del contenuto di Microsoft Graph (prossimamente), è possibile ingerire la conoscenza da servizi esterni e archivi di dati.
 
-Per ulteriori informazioni, è possibile esaminare la [Panoramica](knowledge-management-overview.md) di un'introduzione.
+Per ulteriori informazioni, è possibile esaminare la [Panoramica](topic-experiences-overview.md) di un'introduzione.
 
 Tenere presente che:
 
