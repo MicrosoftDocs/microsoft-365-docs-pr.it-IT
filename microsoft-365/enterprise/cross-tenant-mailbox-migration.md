@@ -14,12 +14,12 @@ ms.custom:
 - it-pro
 ms.collection:
 - M365-subscription-management
-ms.openlocfilehash: 63eab8c44651bfc2865e9bf6c577c1ebe13381fc
-ms.sourcegitcommit: 21b0ea5715e20b4ab13719eb18c97fadb49b563d
+ms.openlocfilehash: f151f02af695eb54eaf8f4f97936f4985fc7f8c0
+ms.sourcegitcommit: d6b1da2e12d55f69e4353289e90f5ae2f60066d0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49624767"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "49719203"
 ---
 # <a name="cross-tenant-mailbox-migration-preview"></a>Migrazione delle cassette postali tra tenant (anteprima)
 
@@ -99,9 +99,9 @@ Preparare il tenant di origine:
 
     | Parametro | Valore | Obbligatorio o facoltativo
     |---------------------------------------------|-----------------|--------------|
-    | -ResourceTenantDomain                       | Dominio tenant di origine, ad esempio fabrikam.onmicrosoft.com. | Obbligatorio |
+    | -TargetTenantDomain                         | Dominio del tenant di destinazione, ad esempio contoso \. onmicrosoft.com. | Obbligatorio |
+    | -ResourceTenantDomain                       | Dominio tenant di origine, ad esempio Fabrikam \. onmicrosoft.com. | Obbligatorio |
     | -ResourceTenantAdminEmail                   | Indirizzo di posta elettronica dell'amministratore del tenant di origine. Si tratta dell'amministratore del tenant di origine che consentirà l'utilizzo dell'applicazione di migrazione delle cassette postali inviata dall'amministratore di destinazione. Questo è l'amministratore che riceverà l'invito di posta elettronica per l'applicazione. | Obbligatorio |
-    | -TargetTenantDomain                         | Dominio del tenant di destinazione, ad esempio contoso.onmicrosoft.com. | Obbligatorio |
     | -ResourceTenantId                           | ID dell'organizzazione tenant di origine (GUID). | Obbligatorio |
     | -SubscriptionId                             | La sottoscrizione di Azure da utilizzare per la creazione di risorse. | Obbligatorio |
     | -ResourceGroup                              | Nome del gruppo di risorse di Azure che contiene o conterrà il Vault chiave. | Obbligatorio |
@@ -187,10 +187,10 @@ La configurazione dell'amministratore di destinazione è ora completata.
     | Parametro | Valore |
     |-----|------|
     | -SourceMailboxMovePublishedScopes | Gruppo di sicurezza abilitato alla posta elettronica creato dal tenant di origine per le identità/cassette postali che rientrano nell'ambito della migrazione. |
-    | -ResourceTenantDomain | Nome di dominio del tenant di origine, ad esempio fabrikam.onmicrosoft.com. |
-    | -TargetTenantDomain | Nome di dominio del tenant di destinazione, ad esempio contoso.onmicrosoft.com. |
+    | -ResourceTenantDomain | Nome di dominio del tenant di origine, ad esempio Fabrikam \. onmicrosoft.com. |
     | -ApplicationId | ID applicazione di Azure (GUID) dell'applicazione utilizzata per la migrazione. ID applicazione disponibile tramite il portale di Azure (Azure AD, applicazioni Enterprise, nome app, ID applicazione) o incluso nel messaggio di posta elettronica di invito.  |
-    | -TargetTenantId | ID tenant del tenant di destinazione. Ad esempio, l'ID tenant Azure AD del tenant di contoso.onmicrosoft.com. |
+    | -TargetTenantDomain | Nome di dominio del tenant di destinazione, ad esempio contoso \. onmicrosoft.com. |
+    | -TargetTenantId | ID tenant del tenant di destinazione. Ad esempio, l'ID tenant Azure AD del \. tenant contoso onmicrosoft.com. |
     |||
 
     Ecco un esempio.
@@ -284,6 +284,7 @@ Gli utenti che eseguono la migrazione devono essere presenti nel tenant di desti
 È necessario verificare che nell'organizzazione di destinazione siano impostati gli oggetti e gli attributi riportati di seguito.  
 
 1. Per qualsiasi cassetta postale che si sposta da un'organizzazione di origine, è necessario eseguire il provisioning di un oggetto MailUser nell'organizzazione di destinazione: 
+
    - L'utente di posta elettronica di destinazione deve disporre di questi attributi dalla cassetta postale di origine o assegnato al nuovo oggetto User:
       - ExchangeGUID (flusso diretto dall'origine alla destinazione) – il GUID della cassetta postale deve corrispondere. Il processo di spostamento non proseguirà se non è presente nell'oggetto di destinazione. 
       - Proprietà ArchiveGuid (flusso diretto dall'origine alla destinazione) – il GUID dell'archivio deve corrispondere. Il processo di spostamento non proseguirà se non è presente nell'oggetto di destinazione. (È necessario solo se la cassetta postale di origine è abilitata per l'archiviazione). 
@@ -293,40 +294,40 @@ Gli utenti che eseguono la migrazione devono essere presenti nel tenant di desti
       - TargetAddress/ExternalEmailAddress – MailUser farà riferimento alla cassetta postale corrente dell'utente ospitata nel tenant di origine (ad esempio user@contoso.onmicrosoft.com). Quando si assegna questo valore, verificare che sia stata assegnata o che sia PrimarySMTPAddress o che questo valore imposti la PrimarySMTPAddress che provocherà errori di spostamento. 
       - Non è possibile aggiungere indirizzi proxy SMTP legacy dalla cassetta postale di origine alla destinazione MailUser. Ad esempio, non è possibile mantenere contoso.com sul MEU negli oggetti tenant fabrikam.onmicrosoft.com. I domini sono associati a un solo tenant Azure AD o Exchange Online.
  
-    Oggetto MailUser di **destinazione** di esempio:
+     Oggetto MailUser di **destinazione** di esempio:
  
-    | Attributo             | Valore                                                                                                                    |
-    |-----------------------|--------------------------------------------------------------------------------------------------------------------------|
-    | Alias                 | LaraN                                                                                                                    |
-    | RecipientType         | MailUser                                                                                                                 |
-    | RecipientTypeDetails  | MailUser                                                                                                                 |
-    | UserPrincipalName     | LaraN@northwintraders.onmicrosoft.com                                                                                    |
-    | PrimarySmtpAddress    | Lara.Newton@northwind.com                                                                                                |
-    | ExternalEmailAddress  | SMTP:LaraN@contoso.onmicrosoft.com                                                                                       |
-    | ExchangeGuid          | 1ec059c7-8396-4d0b-af4e-d6bd4c12a8d8                                                                                     |
-    | LegacyExchangeDN      | /o = First Organization/ou = gruppo amministrativo di Exchange                                                                   |
-    |                       | (FYDIBOHF23SPDLT)/cn = Recipients/cn = 74e5385fce4b46d19006876949855035Lara                                                  |
-    | EmailAddresses        | X500:/o = First Organization/ou = Exchange Administrative Group (FYDIBOHF23SPDLT)/cn = Recipients/cn = d11ec1a2cacd4f81858c8190  |
-    |                       | 7273f1f9-Lara                                                                                                            |
-    |                       | smtp:LaraN@northwindtraders.onmicrosoft.com                                                                              |
-    |                       | SMTP:Lara.Newton@northwind.com                                                                                           |
-    |||
+     | Attributo             | Valore                                                                                                                    |
+     |-----------------------|--------------------------------------------------------------------------------------------------------------------------|
+     | Alias                 | LaraN                                                                                                                    |
+     | RecipientType         | MailUser                                                                                                                 |
+     | RecipientTypeDetails  | MailUser                                                                                                                 |
+     | UserPrincipalName     | LaraN@northwintraders.onmicrosoft.com                                                                                    |
+     | PrimarySmtpAddress    | Lara.Newton@northwind.com                                                                                                |
+     | ExternalEmailAddress  | SMTP:LaraN@contoso.onmicrosoft.com                                                                                       |
+     | ExchangeGuid          | 1ec059c7-8396-4d0b-af4e-d6bd4c12a8d8                                                                                     |
+     | LegacyExchangeDN      | /o = First Organization/ou = gruppo amministrativo di Exchange                                                                   |
+     |                       | (FYDIBOHF23SPDLT)/cn = Recipients/cn = 74e5385fce4b46d19006876949855035Lara                                                  |
+     | EmailAddresses        | X500:/o = First Organization/ou = Exchange Administrative Group (FYDIBOHF23SPDLT)/cn = Recipients/cn = d11ec1a2cacd4f81858c8190  |
+     |                       | 7273f1f9-Lara                                                                                                            |
+     |                       | smtp:LaraN@northwindtraders.onmicrosoft.com                                                                              |
+     |                       | SMTP:Lara.Newton@northwind.com                                                                                           |
+     |||
 
-   Oggetto cassetta postale di **origine** di esempio:
+     Oggetto cassetta postale di **origine** di esempio:
 
-   | Attributo             | Valore                                                                    |
-   |-----------------------|--------------------------------------------------------------------------|
-   | Alias                 | LaraN                                                                    |
-   | RecipientType         | UserMailbox                                                              |
-   | RecipientTypeDetails  | UserMailbox                                                              |
-   | UserPrincipalName     | LaraN@contoso.onmicrosoft.com                                            |
-   | PrimarySmtpAddress    | Lara.Newton@contoso.com                                                  |
-   | ExchangeGuid          | 1ec059c7-8396-4d0b-af4e-d6bd4c12a8d8                                     |
-   | LegacyExchangeDN      | /o = First Organization/ou = gruppo amministrativo di Exchange                   |
-   |                       | (FYDIBOHF23SPDLT)/cn = Recipients/cn = d11ec1a2cacd4f81858c81907273f1f9Lara  |
-   | EmailAddresses        | smtp:LaraN@contoso.onmicrosoft.com 
-   |                       | SMTP:Lara.Newton@contoso.com          |
-   |||
+     | Attributo             | Valore                                                                    |
+     |-----------------------|--------------------------------------------------------------------------|
+     | Alias                 | LaraN                                                                    |
+     | RecipientType         | UserMailbox                                                              |
+     | RecipientTypeDetails  | UserMailbox                                                              |
+     | UserPrincipalName     | LaraN@contoso.onmicrosoft.com                                            |
+     | PrimarySmtpAddress    | Lara.Newton@contoso.com                                                  |
+     | ExchangeGuid          | 1ec059c7-8396-4d0b-af4e-d6bd4c12a8d8                                     |
+     | LegacyExchangeDN      | /o = First Organization/ou = gruppo amministrativo di Exchange                   |
+     |                       | (FYDIBOHF23SPDLT)/cn = Recipients/cn = d11ec1a2cacd4f81858c81907273f1f9Lara  |
+     | EmailAddresses        | smtp:LaraN@contoso.onmicrosoft.com 
+     |                       | SMTP:Lara.Newton@contoso.com          |
+     |||
 
    - Gli attributi aggiuntivi possono essere già inclusi in Exchange Hybrid write back. In caso contrario, dovrebbero essere inclusi. 
    - msExchBlockedSendersHash – scrive di nuovo i dati dei mittenti online sicuri e bloccati dai client in Active Directory locale.
@@ -350,7 +351,7 @@ Gli utenti che eseguono la migrazione devono essere presenti nel tenant di desti
     > [!Note]
     > Quando si applica una licenza su un oggetto Mailbox o MailUser, tutti i tipi di proxyAddresses di tipo SMTP vengono rimosse per garantire che solo i domini verificati siano inclusi nella matrice di indirizzi di posta elettronica di Exchange. 
 
-5. È necessario assicurarsi che l'oggetto MailUser di destinazione non disponga di ExchangeGuid precedenti che non corrisponda al ExchangeGuid di origine. Questo problema può verificarsi se l'utente di destinazione è stato precedentemente concesso in licenza per Exchange Online e ha eseguito il provisioning di una cassetta postale. Se l'utente di posta elettronica di destinazione è stato precedentemente concesso in licenza o aveva un ExchangeGuid che non corrisponde al ExchangeGuid di origine, è necessario eseguire una pulizia del cloud MEU. Per questi cloud MEUs, è possibile eseguire il `Set-User <identity> -PermanentlyClearPreviousMailboxInfo` comando.  
+5. È necessario assicurarsi che l'oggetto MailUser di destinazione non disponga di ExchangeGuid precedenti che non corrisponda al ExchangeGuid di origine. Questo problema può verificarsi se l'utente di destinazione è stato precedentemente concesso in licenza per Exchange Online e ha eseguito il provisioning di una cassetta postale. Se l'utente di posta elettronica di destinazione è stato precedentemente concesso in licenza o aveva un ExchangeGuid che non corrisponde al ExchangeGuid di origine, è necessario eseguire una pulizia del cloud MEU. Per questi cloud MEUs, è possibile eseguire `Set-User <identity> -PermanentlyClearPreviousMailboxInfo` .  
 
     > [!Caution]
     > Questo processo è irreversibile. Se l'oggetto dispone di una cassetta postale di softDeleted, non può essere ripristinato dopo questo punto. Una volta deselezionata, tuttavia, è possibile sincronizzare la ExchangeGuid corretta per l'oggetto di destinazione e MRS collegherà la cassetta postale di origine alla cassetta postale di destinazione appena creata. (Blog di riferimento EHLO sul nuovo parametro).  
@@ -508,7 +509,7 @@ Lo spostamento delle cassette postali di Exchange viene utilizzato dall'onorevol
 
 Le autorizzazioni per le cassette postali includono inviare per conto di e accesso alla cassetta postale: 
 
-- Invia per conto di (AD: publicDelegates) archivia il DN dei destinatari con accesso alla cassetta postale di un utente come delegati. Questo valore viene archiviato in Active Directory e attualmente non viene spostato come parte della transizione delle cassette postali. Se la cassetta postale di origine è impostata su publicDelegates, sarà necessario ristampare la publicDelegates sulla cassetta postale di destinazione dopo aver completato la conversione di MEU alla cassetta postale nell'ambiente di destinazione utilizzando il `Set-Mailbox <principle> -GrantSendOnBehalfTo <delegate>` comando. 
+- Invia per conto di (AD: publicDelegates) archivia il DN dei destinatari con accesso alla cassetta postale di un utente come delegati. Questo valore viene archiviato in Active Directory e attualmente non viene spostato come parte della transizione delle cassette postali. Se la cassetta postale di origine è impostata su publicDelegates, sarà necessario ristampare la publicDelegates sulla cassetta postale di destinazione dopo che la conversione di MEU alla cassetta postale è stata completata nell'ambiente di destinazione eseguendo `Set-Mailbox <principle> -GrantSendOnBehalfTo <delegate>` . 
  
 - Le autorizzazioni per le cassette postali archiviate nella cassetta postale verranno spostate con la cassetta postale quando sia l'entità che il delegato vengono spostati nel sistema di destinazione. Ad esempio, all'utente TestUser_7 viene concessa FullAccess alla TestUser_8 della cassetta postale nel tenant SourceCompany.onmicrosoft.com. Dopo che lo spostamento della cassetta postale è stato completato in TargetCompany.onmicrosoft.com, le stesse autorizzazioni sono configurate nella directory di destinazione. Di seguito sono riportati alcuni esempi che utilizzano *Get-MailboxPermission* per TestUser_7 in entrambi i tenant di origine e di destinazione. I cmdlet di Exchange sono preceduti con l'origine e la destinazione di conseguenza. 
  

@@ -3,7 +3,7 @@ title: Prelavoro per la migrazione da Microsoft Cloud Deutschland
 ms.author: andyber
 author: andybergen
 manager: laurawi
-ms.date: 12/11/2020
+ms.date: 12/18/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 'Riepilogo: prelavorazione quando si passa da Microsoft Cloud Germany (Microsoft Cloud Deutschland) ai servizi di Office 365 nella nuova area datacenter tedesca.'
-ms.openlocfilehash: 1bb6a1b80da462da2218f32fbbc2899ae651a3ec
-ms.sourcegitcommit: 849b365bd3eaa9f3c3a9ef9f5973ef81af9156fa
+ms.openlocfilehash: 107447226b9b75f371e23f8dd06ec29860571c63
+ms.sourcegitcommit: 86f75cf77a7a446a79226ca530bd7b5eb39189cb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49688456"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "49717032"
 ---
 # <a name="pre-work-for-the-migration-from-microsoft-cloud-deutschland"></a>Prelavoro per la migrazione da Microsoft Cloud Deutschland
 
@@ -115,10 +115,11 @@ Se si utilizza un servizio di terze parti o le app line-of-business (LOB) integr
 
 | Passaggi | Descrizione | Si applica a | Impatto |
 |:-------|:-----|:-------|:-------|
+| Aggiungere un identificatore per Single Sign-on (SSO) a un'attendibilità del componente esistente e disabilitare gli aggiornamenti automatici dei metadati di AD FS. | È necessario aggiungere un ID all'attendibilità del componente AD FS prima di iniziare la migrazione. Per evitare la rimozione accidentale dell'identificatore del componente, disabilitare l'aggiornamento automatico per gli aggiornamenti dei metadati. <br><br> Eseguire questo comando nel server AD FS: <br> `Set-AdfsRelyingPartyTrust -TargetIdentifier urn:federation:microsoftonline.de -Identifier @('urn:federation:microsoftonline.de','https://login.microsoftonline.de/extSTS.srf','https://login.microsoftonline.de') -AutoUpdate $False` | Organizzazioni di autenticazione federata | Azione obbligatoria. L'inazione provocherà un impatto del servizio durante la migrazione.  |
 | Generare l'attendibilità del componente per gli endpoint di Azure AD globali. | I clienti devono creare manualmente una relazione di trust relying party (RPT) agli endpoint [globali](https://nexus.microsoftonline-p.com/federationmetadata/2007-06/federationmetadata.xml) . Per ottenere questo risultato, è necessario aggiungere un nuovo RPT tramite GUI facendo leva sull'URL dei metadati della federazione globale e quindi utilizzando le [regole attestazione di Azure ad](https://adfshelp.microsoft.com/AadTrustClaims/ClaimsGenerator#:~:text=%20Azure%20AD%20RPT%20Claim%20Rules%20%201,Azure%20AD.%20This%20will%20be%20what...%20More%20) (nella Guida di ADFS) per generare le regole di attestazione e importarle in RPT. | Organizzazioni di autenticazione federata | Azione obbligatoria. L'inazione provocherà un impatto del servizio durante la migrazione. |
 |||||
 
-## <a name="more-information"></a>Altre informazioni
+## <a name="more-information"></a>Ulteriori informazioni
 
 Guida introduttiva:
 

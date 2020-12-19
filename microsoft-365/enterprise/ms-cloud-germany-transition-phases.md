@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 'Riepilogo: informazioni sulle fasi di migrazione azioni e impatto del passaggio da Microsoft Cloud Germany (Microsoft Cloud Deutschland) a Office 365 Services nella nuova area del datacenter tedesco.'
-ms.openlocfilehash: 4a032ab88704cfb46b3f451d939a784d222cbb40
-ms.sourcegitcommit: 849b365bd3eaa9f3c3a9ef9f5973ef81af9156fa
+ms.openlocfilehash: 4a54fed8a109c3d03b735a5db3cb48060f5c438f
+ms.sourcegitcommit: d6b1da2e12d55f69e4353289e90f5ae2f60066d0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49688630"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "49719393"
 ---
 # <a name="migration-phases-actions-and-impacts-for-the-migration-from-microsoft-cloud-deutschland-general"></a>Fasi di migrazione azioni e impatti per la migrazione da Microsoft Cloud Deutschland (generale)
 
@@ -83,7 +83,7 @@ Considerazioni aggiuntive:
 
 | Passaggi | Descrizione | Si applica a | Impatto |
 |:-------|:-----|:-------|:-------|
-| Migrazione di Skype for business a teams. | I clienti Skype for business esistenti vengono migrati nei servizi di Office 365 in Europa e quindi trasferiti a Microsoft teams nell'area Germania dei servizi di Office 365. | Clienti Skype for business | -Gli utenti non saranno in grado di accedere a Skype for business nella data di migrazione. Dieci giorni prima della migrazione, notificheremo gli utenti finali tramite il client Skype for business in banda, che verranno aggiornati ai team. Dopo 10 giorni verrà eseguita anche l'interfaccia di amministrazione. <br><br> -Viene eseguita la migrazione della configurazione del criterio. <br><br> -Gli utenti saranno migrati a squadre e non avranno più Skype for business dopo la migrazione. <br><br> -Gli utenti devono avere installato il client desktop teams. L'installazione avverrà nei 10 giorni tramite Policy sull'infrastruttura Skype for business, ma, in caso di esito negativo, gli utenti dovranno comunque scaricare il client o connettersi con un browser supportato. <br><br> -I contatti e le riunioni verranno migrati a squadre. <br><br> -Gli utenti non saranno in grado di accedere a Skype for business tra le transizioni di servizio di tempo e i servizi di Office 365 e non finché non verranno completate le voci DNS del cliente. <br><br> -I contatti e le riunioni esistenti continueranno a funzionare come riunioni di Skype for business. |
+| Migrazione di Skype for business a teams. | I clienti Skype for business esistenti vengono migrati nei servizi di Office 365 in Europa e quindi trasferiti a Microsoft teams nell'area Germania dei servizi di Office 365. | Clienti Skype for business | -Gli utenti non saranno in grado di accedere a Skype for business nella data di migrazione. Dieci giorni prima della migrazione, verrà visualizzato un messaggio nell'interfaccia di amministrazione per sapere quando verrà eseguita la migrazione e di nuovo quando si inizierà la migrazione. <br><br> -Viene eseguita la migrazione della configurazione del criterio. <br><br> -Gli utenti saranno migrati a squadre e non avranno più Skype for business dopo la migrazione. <br><br> -Gli utenti devono avere installato il client desktop teams. L'installazione avverrà nei 10 giorni tramite Policy sull'infrastruttura Skype for business, ma, in caso di esito negativo, gli utenti dovranno comunque scaricare il client o connettersi con un browser supportato. <br><br> -I contatti e le riunioni verranno migrati a squadre. <br><br> -Gli utenti non saranno in grado di accedere a Skype for business tra le transizioni di servizio di tempo e i servizi di Office 365 e non finché non verranno completate le voci DNS del cliente. <br><br> -I contatti e le riunioni esistenti continueranno a funzionare come riunioni di Skype for business. |
 |||||
 
 ## <a name="office-services"></a>Servizi di Office
@@ -102,7 +102,7 @@ Il servizio utilizzato più di recente (MRU) in Office è un completa dal serviz
 
 [Eseguire ulteriori operazioni di prelavoro](ms-cloud-germany-transition-add-pre-work.md)
 
-## <a name="more-information"></a>Altre informazioni
+## <a name="more-information"></a>Ulteriori informazioni
 
 Guida introduttiva:
 

@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: aaca8987-5b62-458b-9882-c28476a66918
 ms.custom: seo-marvel-apr2020
 description: La registrazione di controllo delle cassette postali è attivata per impostazione predefinita in Microsoft 365 (denominato anche controllo delle cassette postali predefinito o controllo delle cassette postali per impostazione predefinita). Ciò significa che alcune azioni eseguite da proprietari, delegati e amministratori delle cassette postali vengono automaticamente registrate in un registro di controllo delle cassette postali, in cui è possibile cercare le attività eseguite sulla cassetta postale.
-ms.openlocfilehash: 8b199f2fe63f0304e705f32bab8191a966e63fce
-ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
+ms.openlocfilehash: 3a65fcb3f7a908b8c63b3ba494d5ea74ffab4e5a
+ms.sourcegitcommit: 5cbce99cfdbba4b72267a144b2e03a6c52473464
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "49682549"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "49718509"
 ---
 # <a name="manage-mailbox-auditing"></a>Gestire il controllo delle cassette postali
 
@@ -121,10 +121,11 @@ Nella tabella seguente vengono descritte le azioni della cassetta postale dispon
 |**MoveToDeletedItems**|Messaggio eliminato e spostato nella cartella Posta eliminata.|![Segno di spunta](../media/checkmark.png)<sup>\*</sup>|![Segno di spunta](../media/checkmark.png)<sup>\*</sup>|![Segno di spunta](../media/checkmark.png)<sup>\*</sup>|
 |**RecordDelete**|Un elemento etichettato come record è stato eliminato temporaneamente (spostato nella cartella elementi ripristinabili). Gli elementi contrassegnati come record non possono essere eliminati definitivamente (eliminati dalla cartella elementi ripristinabili).|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|
 |**RemoveFolderPermissions**|**Nota**: Sebbene questo valore venga accettato come azione della cassetta postale, è già incluso nell'azione **UpdateFolderPermissions** e non è controllato separatamente. In altre parole, non utilizzare questo valore.||||
+|**Send**|L'utente invia un messaggio di posta elettronica, risponde a un messaggio di posta elettronica o inoltra un messaggio di posta elettronica. Questo valore è disponibile solo per gli utenti della sottoscrizione del componente aggiuntivo di conformità E5 o E5. Per informazioni dettagliate, vedere [accesso a eventi cruciali per le indagini](advanced-audit.md#access-to-crucial-events-for-investigations).|![Segno di spunta](../media/checkmark.png)<sup>\*</sup>|![Segno di spunta](../media/checkmark.png)<sup>\*</sup>|![Segno di spunta](../media/checkmark.png)<sup>\*</sup>|
 |**SendAs**|Messaggio inviato utilizzando l'autorizzazione SendAs. Ciò significa che un altro utente ha inviato il messaggio come se provenisse dal proprietario della cassetta postale.|![Segno di spunta](../media/checkmark.png)<sup>\*</sup>|![Segno di spunta](../media/checkmark.png)<sup>\*</sup>||
 |**SendOnBehalf**|Messaggio inviato utilizzando l'autorizzazione SendOnBehalf. Ciò significa che un altro utente ha inviato il messaggio per conto del proprietario della cassetta postale. Il messaggio indica al destinatario la persona per conto della quale è stato inviato il messaggio e l’utente che ha effettivamente inviato il messaggio.|![Segno di spunta](../media/checkmark.png)<sup>\*</sup>|![Segno di spunta](../media/checkmark.png)<sup>\*</sup>||
 |**SoftDelete**|Messaggio eliminato in modo definitivo dalla cartella Posta eliminata. Gli elementi eliminati temporaneamente vengono spostati nella cartella Elementi ripristinabili.|![Segno di spunta](../media/checkmark.png)<sup>\*</sup>|![Segno di spunta](../media/checkmark.png)<sup>\*</sup>|![Segno di spunta](../media/checkmark.png)<sup>\*</sup>|
-|**Aggiornamento**|Modifiche apportate a un messaggio o alle relative proprietà.|![Segno di spunta](../media/checkmark.png)<sup>\*</sup>|![Segno di spunta](../media/checkmark.png)<sup>\*</sup>|![Segno di spunta](../media/checkmark.png)<sup>\*</sup>|
+|**Aggiorna**|Modifiche apportate a un messaggio o alle relative proprietà.|![Segno di spunta](../media/checkmark.png)<sup>\*</sup>|![Segno di spunta](../media/checkmark.png)<sup>\*</sup>|![Segno di spunta](../media/checkmark.png)<sup>\*</sup>|
 |**UpdateCalendarDelegation**|Una delega del calendario è stata assegnata a una cassetta postale. La delega del calendario assegna a un altro utente nella stessa organizzazione le autorizzazioni per la gestione del calendario del proprietario della cassetta postale.|![Segno di spunta](../media/checkmark.png)<sup>\*</sup>||![Segno di spunta](../media/checkmark.png)<sup>\*</sup>|
 |**UpdateComplianceTag**|Viene applicata un'etichetta di conservazione diversa a un elemento di posta elettronica, a cui è assegnata solo un'etichetta di conservazione.|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|
 |**UpdateFolderPermissions**|Un'autorizzazione per una cartella è stata cambiata. Le autorizzazioni per le cartelle determinano quali utenti dell'organizzazione possono accedere alle cartelle di una cassetta postale e ai messaggi che contengono.|![Segno di spunta](../media/checkmark.png)<sup>\*</sup>|![Segno di spunta](../media/checkmark.png)<sup>\*</sup>|![Segno di spunta](../media/checkmark.png)<sup>\*</sup>|
@@ -139,7 +140,7 @@ Il controllo delle cassette postali per impostazione predefinita porta la regist
 
 Nella tabella seguente vengono descritte le azioni delle cassette postali registrate per impostazione predefinita nelle cassette postali del gruppo Microsoft 365 per ogni tipo di accesso.
 
-Tenere presente che un amministratore con autorizzazione di accesso completo a una cassetta postale di un gruppo di Microsoft 365 è considerato un delegato.
+Tenere presente che un amministratore con autorizzazione di accesso completo a una cassetta postale del gruppo di Microsoft 365 è considerato un delegato.
 
 |**Azione della cassetta postale**|**Descrizione**|**Admin**|**Delegato**|**Proprietario**|
 |:---------|:---------|:---------:|:---------:|:---------:|
@@ -149,7 +150,7 @@ Tenere presente che un amministratore con autorizzazione di accesso completo a u
 |**SendAs**|Un messaggio è stato inviato con l'autorizzazione SendAs,|![Segno di spunta](../media/checkmark.png)<sup>\*</sup>|![Segno di spunta](../media/checkmark.png)<sup>\*</sup>||
 |**SendOnBehalf**|Un messaggio è stato inviato con l'autorizzazione SendOnBehalf, |![Segno di spunta](../media/checkmark.png)<sup>\*</sup>|![Segno di spunta](../media/checkmark.png)<sup>\*</sup>||
 |**SoftDelete**|Messaggio eliminato in modo definitivo dalla cartella Posta eliminata. Gli elementi eliminati temporaneamente vengono spostati nella cartella Elementi ripristinabili.|![Segno di spunta](../media/checkmark.png)<sup>\*</sup>|![Segno di spunta](../media/checkmark.png)<sup>\*</sup>|![Segno di spunta](../media/checkmark.png)<sup>\*</sup>|
-|**Aggiornamento**|Modifiche apportate a un messaggio o alle relative proprietà.|![Segno di spunta](../media/checkmark.png)<sup>\*</sup>|![Segno di spunta](../media/checkmark.png)<sup>\*</sup>|![Segno di spunta](../media/checkmark.png)<sup>\*</sup>|
+|**Aggiorna**|Modifiche apportate a un messaggio o alle relative proprietà.|![Segno di spunta](../media/checkmark.png)<sup>\*</sup>|![Segno di spunta](../media/checkmark.png)<sup>\*</sup>|![Segno di spunta](../media/checkmark.png)<sup>\*</sup>|
 
 ### <a name="verify-that-default-mailbox-actions-are-being-logged-for-each-logon-type"></a>Verificare che le azioni delle cassette postali predefinite vengano registrate per ogni tipo di accesso
 
@@ -339,7 +340,7 @@ Get-MailboxAuditBypassAssociation -Identity <MailboxIdentity> | Format-List Audi
 
 Il valore **true** indica che la registrazione di controllo delle cassette postali viene ignorata per l'utente.
 
-## <a name="more-information"></a>Altre informazioni
+## <a name="more-information"></a>Ulteriori informazioni
 
 - Anche se la registrazione di controllo delle cassette postali è attivata per impostazione predefinita per tutte le organizzazioni, solo gli utenti con licenze E5 restituiranno gli eventi del registro di controllo delle cassette postali nelle [ricerche del registro di controllo nel centro sicurezza & conformità](search-the-audit-log-in-security-and-compliance.md) o tramite l' [API di gestione di Office 365](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference) **per impostazione predefinita**
 

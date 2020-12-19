@@ -19,65 +19,49 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: aceb376662f2b27397aa2332f8929a57d5a3ee03
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 0df741efb7555d587a6033acc23716e93f542d5e
+ms.sourcegitcommit: d6b1da2e12d55f69e4353289e90f5ae2f60066d0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48846009"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "49719215"
 ---
 # <a name="common-microsoft-365-defender-rest-api-error-codes"></a>Codici di errore dell'API REST comuni di Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-
 **Si applica a:**
-- Microsoft 365 Defender
 
->[!IMPORTANT] 
->Alcune informazioni si riferiscono al prodotto prerilasciato che può essere modificato in modo sostanziale prima che venga rilasciato commercialmente. Microsoft makes no warranties, express or implied, with respect to the information provided here.
+- Microsoft Threat Protection
 
-I codici di errore elencati nella tabella riportata di seguito possono essere restituiti da un'operazione in una qualsiasi delle API di Microsoft 365 Defender.
+> [!IMPORTANT]
+> Alcune informazioni si riferiscono al prodotto prerilasciato che può essere modificato in modo sostanziale prima che venga rilasciato commercialmente. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
-Ogni risposta di errore contiene un messaggio di errore che può contribuire alla risoluzione del problema.
+È possibile che i codici di errore vengano restituiti da un'operazione in una qualsiasi delle API di Microsoft 365 Defender. Ogni risposta di errore conterrà un messaggio di errore che può contribuire a risolvere il problema. Nella colonna messaggio di errore della sezione tabella sono disponibili alcuni messaggi di esempio. Il contenuto dei messaggi effettivi varia in base ai fattori che hanno attivato la risposta. Il contenuto variabile viene indicato nella tabella in base all'angolo tra parentesi quadre.
 
-Il messaggio è un testo gratuito che può essere modificato.
+## <a name="error-codes"></a>Codici di errore
 
-Nella parte inferiore della pagina, è possibile trovare gli esempi di risposta.
-
-Codice errore |Codice di stato HTTP |Messaggio 
-:---|:---|:---
+Codice errore | Codice di stato HTTP | Messaggio
+-|-|-
 BadRequest | BadRequest (400) | Messaggio di errore generale di richiesta non valida.
-ODataError | BadRequest (400) | Query URI OData non valida (è specificato l'errore specifico).
-InvalidInput | BadRequest (400) | Input non valido {l'input non valido}.
+ODataError | BadRequest (400) | Query URI OData non valida \<the specific error is specified\> .
+InvalidInput | BadRequest (400) | Input non valido \<the invalid input\> .
 InvalidRequestBody | BadRequest (400) | Corpo richiesta non valida.
-InvalidHashValue | BadRequest (400) | Valore hash {l'hash non valido} non è valido.
-InvalidDomainName | BadRequest (400) | Nome di dominio {il dominio non valido} non è valido.
-InvalidIpAddress | BadRequest (400) | Indirizzo IP {l'IP non valido} non è valido.
-InvalidUrl | BadRequest (400) | URL {l'URL non valido} non è valido.
-MaximumBatchSizeExceeded | BadRequest (400) | Dimensioni massime del batch superate. Received: {dimensioni batch ricevute}, consentito: {dimensioni batch consentite}.
-MissingRequiredParameter | BadRequest (400) | Parametro {il parametro mancante} è mancante.
-OsPlatformNotSupported | BadRequest (400) | Piattaforma OS {la piattaforma del sistema operativo client} non è supportata per questa azione.
-ClientVersionNotSupported | BadRequest (400) | {L'azione richiesta} è supportata nella versione client {versione client supportata} e versioni successive.
-Non autorizzato | Non autorizzato (401) | Non autorizzato (di solito non valido o scaduto l'intestazione di autorizzazione).
-Proibito | Forbidden (403) | Forbidden (token valido ma autorizzazione insufficiente per l'azione).
+InvalidHashValue | BadRequest (400) | Il valore hash \<the invalid hash\> non è valido.
+InvalidDomainName | BadRequest (400) | Il nome di dominio \<the invalid domain\> non è valido.
+InvalidIpAddress | BadRequest (400) | L'indirizzo IP \<the invalid IP\> non è valido.
+InvalidUrl | BadRequest (400) | L'URL \<the invalid URL\> non è valido.
+MaximumBatchSizeExceeded | BadRequest (400) | Dimensioni massime del batch superate. Ricevuto: \<batch size received\> , consentito: {dimensioni batch consentite}.
+MissingRequiredParameter | BadRequest (400) | Il parametro \<the missing parameter\> è mancante.
+OsPlatformNotSupported | BadRequest (400) | La piattaforma OS \<the client OS Platform\> non è supportata per questa azione.
+ClientVersionNotSupported | BadRequest (400) | \<The requested action\> è supportato sulla versione client \<supported client version\> e versioni successive.
+Non autorizzato | Non autorizzato (401) | Non autorizzato <br /><br />*Nota: generalmente causata da un'intestazione di autorizzazione non valida o scaduta.*
+Proibito | Forbidden (403) | Proibito <br /><br />*Nota: token valido ma autorizzazione insufficiente per l'azione*.
 DisabledFeature | Forbidden (403) | La caratteristica tenant non è abilitata.
-DisallowedOperation | Forbidden (403) | {l'operazione non consentita e il motivo}.
+DisallowedOperation | Forbidden (403) | \<the disallowed operation and the reason\>.
 NotFound | Non trovato (404) | Messaggio di errore generale non trovato.
-ResourceNotFound | Non trovato (404) | Risorsa {la risorsa richiesta} non è stata trovata.
-InternalServerError | Errore interno del server (500) | (Nessun messaggio di errore, riprova l'operazione o contattaci se non viene risolto)
-
-## <a name="body-parameters-are-case-sensitive"></a>I parametri corpo sono con distinzione tra maiuscole e minuscole
-
-I parametri del corpo inviati sono attualmente con distinzione tra maiuscole e minuscole.
-<br>Se si verifica un errore di **InvalidRequestBody** o **MissingRequiredParameter** , potrebbe essere causato da un valore maiuscolo o minuscolo di un parametro errato.
-<br>È consigliabile esaminare la pagina relativa alla documentazione dell'API e verificare che i parametri inviati corrispondano all'esempio pertinente.
-
-## <a name="correlation-request-id"></a>ID richiesta di correlazione
-
-Ogni risposta di errore contiene un parametro ID univoco per la verifica.
-<br>Il nome della proprietà di questo parametro è "target".
-<br>Quando ci si mette in contatto con informazioni su un errore, l'associazione di questo ID consentirà di individuare la causa principale del problema.
+ResourceNotFound | Non trovato (404) | La risorsa \<the requested resource\> non è stata trovata.
+InternalServerError | Errore interno del server (500) | *Nota: nessun messaggio di errore, riprovare l'operazione o contattare Microsoft se non viene risolto*
 
 ## <a name="examples"></a>Esempi
 
@@ -91,7 +75,6 @@ Ogni risposta di errore contiene un parametro ID univoco per la verifica.
 }
 ```
 
-
 ```json
 {
     "error": {
@@ -102,3 +85,20 @@ Ogni risposta di errore contiene un parametro ID univoco per la verifica.
 }
 ```
 
+## <a name="body-parameters"></a>Parametri corpo
+
+> [!IMPORTANT]
+> I parametri corpo sono distinzione tra maiuscole e minuscole.
+
+Se si verifica un errore di *InvalidRequestBody* o *MissingRequiredParameter* , potrebbe essere causato da una typo. Esaminare la documentazione relativa all'API e verificare che i parametri inviati corrispondano all'esempio pertinente.
+
+## <a name="tracking-id"></a>ID di rilevamento
+
+Ogni risposta di errore contiene un parametro ID univoco per la verifica. Il nome della proprietà di questo parametro è *target*. Quando ci si mette in contatto con informazioni su un errore, l'associazione di questo ID ci aiuterà a trovare la causa principale del problema.
+
+## <a name="related-articles"></a>Articoli correlati
+
+- [Panoramica delle API di Microsoft 365 Defender](api-overview.md)
+- [API supportate di Microsoft 365 Defender](api-supported.md)
+- [Accedere alle API di Microsoft 365 Defender](api-access.md)
+- [Informazioni sui limiti delle API e sulle licenze](api-terms.md)
