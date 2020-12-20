@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Audit avanzato in Microsoft 365 fornisce nuove funzionalità di audit per aiutare l'organizzazione nelle indagini forensi e di conformità.
-ms.openlocfilehash: bd7b4f78d37feddd7c66322460a6532a77045ba2
-ms.sourcegitcommit: 82d8be71c5861a501ac62a774b306a3fc1d4e627
+ms.openlocfilehash: b05901ad8d42f481020178479df5d422fa68eb1a
+ms.sourcegitcommit: 5cbce99cfdbba4b72267a144b2e03a6c52473464
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48988668"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "49718499"
 ---
 # <a name="advanced-audit-in-microsoft-365"></a>Audit avanzato in Microsoft 365
 
@@ -32,7 +32,7 @@ La [funzionalità di audit unificato](search-the-audit-log-in-security-and-compl
 > [!NOTE]
 > Audit avanzato è disponibile per le organizzazioni con un abbonamento a Office 365 E5/G5 o Microsoft 365 Enterprise E5/G5. Inoltre, è possibile assegnare agli utenti una licenza per il componente aggiuntivo Microsoft 365 E5 Compliance o per E5 Discovery and Audit Compliance nei casi in cui sia necessaria una licenza a utente per le funzionalità Audit avanzato, come nel caso di conservazione a lungo termine dei log di controllo e di accesso agli eventi cruciali per le indagini. Per altre informazioni sulle licenze, vedere [Indicazioni sulla gestione delle licenze di Microsoft 365 per la sicurezza e la conformità](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#advanced-audit).
 
-Questo articolo offre una panoramica delle funzionalità di Audit avanzato.
+Questo articolo fornisce una panoramica delle funzionalità di Audit avanzato e mostra come configurare gli utenti per l'Audit avanzato.
 
 ## <a name="long-term-retention-of-audit-logs"></a>Conservazione a lungo termine dei log di controllo
 
@@ -140,6 +140,26 @@ Con il rilascio di Audit avanzato, si passa da un limite a livello di publisher 
 A tutte le organizzazioni viene inizialmente assegnata una baseline di 2.000 richieste al minuto. Questo limite verrà incrementato in modo dinamico in base al numero di postazioni di un'organizzazione e all'abbonamento di licenza. Le organizzazioni E5 otterranno circa il doppio della larghezza di banda delle organizzazioni non E5. Sarà anche previsto un tetto per la larghezza di banda massima per proteggere l'integrità del servizio.
 
 Per altre informazioni, vedere la sezione dedicata alla limitazione dell'API nell'argomento di [riferimento all'API Office 365 Management Activity](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference#api-throttling).
+
+## <a name="set-up-advanced-audit-for-users"></a>Configurare Audit avanzato per gli utenti
+
+Le funzionalità di Audit avanzato, come la possibilità di registrare eventi cruciali come MailItemsAccessed e Send, richiedono una licenza E5 appropriata assegnata agli utenti. Inoltre, è necessario che per tali utenti siano abilitati l'app Controllo avanzato e/o il piano di servizio. Per verificare che l'app Controllo avanzato sia assegnata agli utenti, eseguire la procedura seguente per ogni utente:
+
+1. Nell'[interfaccia di amministrazione di Microsoft 365](https://admin.microsoft.com/Adminportal) passare a **Utenti** > **Utenti attivi** e selezionare un utente.
+
+2. Nel riquadro a comparsa delle proprietà utente fare clic su **Licenze e app**.
+
+3. Nella sezione **Licenze** verificare che all'utente sia assegnata una licenza E5.
+
+4. Espandere la sezione **App** e verificare che la casella di controllo **Controllo avanzato Microsoft 365** sia selezionata.
+
+5. Se la casella di controllo non è selezionata, selezionarla e quindi fare clic su **Salva modifiche.**
+
+   La registrazione dei record di controllo per MailItemsAccessed, Send e altri eventi cruciali per l'utente inizierà entro 24 ore.
+
+Per le organizzazioni che assegnano licenze ai gruppi di utenti usando le licenze basate su gruppi, è necessario disabilitare l'assegnazione delle licenze per il controllo avanzato di Microsoft 365 per il gruppo. Dopo aver salvato le modifiche, verificare che il controllo avanzato di Microsoft 365 sia disabilitato per il gruppo. Quindi, riabilitare l'assegnazione delle licenze per il gruppo. Per istruzioni sulle licenze basate su gruppi, vedere [Assegnare licenze agli utenti in base all'appartenenza ai gruppi in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/licensing-groups-assign).
+
+Inoltre, se sono state personalizzate le azioni della cassetta postale registrate nelle cassette postali degli utenti o nelle cassette postali condivise, le nuove azioni predefinite della cassetta postale, come MailItemsAccessed, non verranno controllate automaticamente in tali cassette postali. Per informazioni sulla modifica delle azioni della cassetta postale controllate per ogni tipo di accesso, vedere la sezione "Modificare o ripristinare le azioni della cassetta postale registrate per impostazione predefinita" in [Gestire il controllo delle cassette postali](enable-mailbox-auditing.md#change-or-restore-mailbox-actions-logged-by-default).
 
 ## <a name="faqs-for-advanced-audit"></a>Domande frequenti su Audit avanzato
 
