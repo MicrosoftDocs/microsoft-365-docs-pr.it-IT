@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Informazioni sui criteri di conservazione e sulle etichette di conservazione, utili per conservare tutto che serve ed eliminare ciò che non serve.
-ms.openlocfilehash: e2833d966fb8a1fcc15cbeb02b781d9c0325b9c1
-ms.sourcegitcommit: d3ca8021f7da00a474ac14aac5f1358204a848f2
+ms.openlocfilehash: 767e63c22d085696b53d74e3a4d6955bedec22dd
+ms.sourcegitcommit: c0495e224f12c448bfc162ef2e4b33b82f064ac8
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49519377"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "49709673"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>Informazioni sui criteri e sulle etichette di conservazione
 
@@ -178,7 +178,7 @@ Quando si pubblicano etichette di conservazione, vengono incluse in un criterio 
 
 - Una singola posizione può anche essere inclusa in molti criteri di etichetta di conservazione.
 
-Oltre ai criteri per le etichette di conservazione, è anche possibile creare uno o più criteri di applicazione automatica, ognuno con una singola etichetta di conservazione. Con questo criterio, quando vengono soddisfatte le condizioni specificate viene applicata automaticamente un'etichetta di conservazione. 
+Oltre ai criteri per le etichette di conservazione, è anche possibile creare uno o più criteri di applicazione automatica, ognuno con una singola etichetta di conservazione. Con questo criterio, quando vengono soddisfatte le condizioni specificate viene applicata automaticamente un'etichetta di conservazione.
 
 #### <a name="retention-label-policies-and-locations"></a>Criteri per le etichette di conservazione e posizioni
 
@@ -249,7 +249,7 @@ Usare la tabella seguente per stabilire se usare criteri di conservazione o etic
 |Impostazioni per conservare e poi eliminare, solo conservare oppure solo eliminare |Sì |Sì |
 |Carichi di lavoro supportati: <br />- Exchange <br />- SharePoint <br />- OneDrive <br />- Gruppi di Microsoft 365 <br />- Skype for Business <br />- Teams<br />- Yammer|<br /> Sì <br /> Sì <br /> Sì <br /> Sì <br /> Sì <br /> Sì <br /> Sì | <br /> Sì, tranne le cartelle pubbliche <br /> Sì <br /> Sì <br /> Sì <br /> No <br /> No <br /> No |
 |Conservazione applicata automaticamente | Sì | Sì |
-|Conservazione applicata in base alle condizioni <br /> - tipi di informazioni sensibili, query KQL, classificatori sottoponibili a training| No | Sì |
+|Conservazione applicata in base alle condizioni <br /> - tipi di informazioni sensibili, quesiti e parole chiave KQL, classificatori sottoponibili a training| No | Sì |
 |Conservazione applicata manualmente | No | Sì |
 |Presenza nell'interfaccia utente per gli utenti finali | No | Sì |
 |Persiste se il contenuto viene spostato | No | Sì, nel tenant di Microsoft 365 |
@@ -270,28 +270,86 @@ Per altre informazioni sul funzionamento congiunto di criteri di conservazione e
 
 ## <a name="the-principles-of-retention-or-what-takes-precedence"></a>Precedenza nei principi di conservazione
 
-È possibile, o addirittura probabile, che al contenuto siano applicati più criteri di conservazione ed etichette di conservazione, con azioni (conservare, eliminare oppure conservare e quindi eliminare) e periodi di conservazione diversi. Cosa ha la precedenza? 
+Diversamente dalle etichette di conservazione dei dati, è possibile applicare più di un criterio di conservazione allo stesso contenuto. Ogni criterio di conservazione dei dati può risolversi in un’azione di conservazione o di cancellazione. In aggiunta, l’elemento potrebbe essere anche soggetto a queste azioni da parte di un’etichetta di conservazione.
 
-A livello generale, la conservazione ha sempre la precedenza rispetto all'eliminazione e prevale il periodo di conservazione più lungo. 
+In questo scenario, quando gli elementi possono essere soggetti a multiple impostazioni per la conservazione dei dati che possono entrare in conflitto le une con le alte, quale ha la precedenza per determinare il risultato?
 
-Tuttavia, ci sono anche altri fattori da considerare. Il flusso seguente aiuta a comprendere il risultato. Il conflitto viene risolto a ogni livello, procedendo dall'alto verso il basso: se il risultato è determinato dal primo livello, non è necessario procedere al livello successivo e così via. Il flusso passa al livello successivo per determinare il risultato solo se le regole del livello precedente non lo consentono.
+Il risultato non è dettato da quale singolo criterio o etichetta di conservazione vince, ma da quanto a lungo un elemento è conservato (se applicabile) e da quando un elemento viene cancellato (se applicabile). Queste due azioni sono calcolate in maniera indipendente l’una dall’altra, da parte di tutte le impostazioni di conservazione applicate ad un elemento.
+
+Per esempio, un elemento potrebbe essere soggetto ad un criterio di conservazione che è configurato per un’azione di sola cancellazione e ad un altro criterio che è configurato per conservare e successivamente  cancellare. Per determinare il risultato, questo elemento possiede solo un’azione di conservazione e due di cancellazione. Conservazione e cancellazione possono essere in conflitto l’una con l’altra e le due azioni di cancellazione potrebbero avere una data configgente.
+
+A livello generale, la conservazione ha sempre la precedenza rispetto all'eliminazione e prevale il periodo di conservazione più lungo. Queste due semplici regole decidono sempre quanto a lungo gli elementi verranno conservati.
+
+Esistono un paio di ulteriori fattori che determinano quando un elemento debba essere eliminato, questi includono che l’azione di cancellazione da parte di un’etichetta di conservazione ha sempre la precedenza su quella eseguibile da parte di un criterio di conservazione.
+
+Usa il seguente flusso per comprendere i risultati della conservazione e della cancellazione di un singolo elemento, dove ogni elemento agisce come un tie-breaker dall’alto verso il basso.
+
+> [!IMPORTANT]
+> Se si stanno utilizzando etichette di conservazione dei dati: Prima di usare questo flusso per determinare il risultato delle impostazioni di conservazione multiple sullo stesso elemento, assicurarsi di conoscere [quale etichetta di conservazione è applicata](#only-one-retention-label-at-a-time).
 
 ![Diagramma dei principi di conservazione](../media/1693d6ec-b340-4805-9da3-89aa41bc6afb.png)
   
 Spiegazione per i quattro diversi livelli:
   
-1. **La conservazione prevale sull'eliminazione.** Si supponga di avere un criterio di conservazione configurato per eliminare la posta elettronica di Exchange dopo tre anni e un altro criterio di conservazione configurato per conservare la posta elettronica di Exchange per cinque anni e quindi eliminarla. Il contenuto che supera i tre anni verrà eliminato e nascosto agli utenti, ma comunque conservato nella cartella Elementi ripristinabili fino a raggiungere i cinque anni, quando verrà eliminato definitivamente. 
+1. **La conservazione prevale sull'eliminazione.** Un contenuto non può essere cancellato in maniera permanente quando possiede anche le impostazioni di conservazione.  
+    
+    Esempio: Un messaggio email è soggetto al criterio di conservazione per Exchange che è configurato per cancellare gli elementi dopo tre anni e possiede anche un'etichetta di conservazione applicata che è configurata per conservare gli elementi per cinque anni.
+    
+    Il messaggio email verrà conservato per cinque anni perché questa azione conservativa ha la precedenza sulla cancellazione. Il messaggio email viene cancellato alla fine dei cinque anni a causa dell’azione di cancellazione rinviata.
+
 2. **Prevale il periodo di conservazione più lungo.** Se un contenuto è soggetto a più impostazioni di conservazione che prevedono periodi di conservazione diversi, verrà mantenuto fino al termine del periodo di conservazione più lungo.
     
-3. **L'inclusione esplicita prevale sull'inclusione implicita.** Questo significa che: 
+    Esempio: I documenti nel sito Marketing SharePoint sono soggetti a due criteri di conservazione dei dati. Il primo criterio di conservazione dei dati è configurato per tutti i siti SharePoint al fine di conservare gli elementi per cinque anni. Il secondo criterio di conservazione dei dati è configurato per siti specifici di SharePoint al fine di conservare gli elementi per dieci anni.
     
-    1. Se un utente assegna manualmente un'etichetta di conservazione con impostazioni di conservazione a un elemento, ad esempio un messaggio di posta elettronica di Exchange o un documento di OneDrive, l'etichetta di conservazione ha la precedenza sui criteri di conservazione assegnati a livello di sito o di cassetta postale e su un'etichetta di conservazione predefinita assegnata alla raccolta documenti. Ad esempio, se l'etichetta di conservazione esplicita è configurata per conservare il contenuto per dieci anni, ma un criterio di conservazione assegnato al sito indica di conservare il contenuto solo per cinque anni, l'etichetta di conservazione ha la precedenza.
-    
-    2. Se un criterio di conservazione include una posizione specifica, ad esempio la cassetta postale o l'account di OneDrive di un particolare utente, il criterio di conservazione ha la precedenza su un altro criterio di conservazione applicato alle cassette postali o agli account di OneDrive di tutti gli utenti, ma che non include specificamente la cassetta postale di quell'utente.
-    
-4. **Prevale il periodo di eliminazione più breve.** Analogamente, se un contenuto è soggetto a più impostazioni di conservazione che eliminano il contenuto senza un periodo di conservazione, verrà eliminato alla fine del periodo di conservazione più breve. 
+    I documenti in questo sito Marketing SharePoint sono conservati per dieci anni perché è il periodo più lungo di conservazione.
 
-Infine, un criterio di conservazione o un'etichetta di conservazione non può eliminare definitivamente qualsiasi contenuto che si trovi in stato di blocco per eDiscovery. Quando il blocco viene rilasciato, il contenuto torna idoneo per il processo di pulizia nelle posizioni protette per il carico di lavoro.
+3. **L'esplicito prevale sull'implicito.** Applicabile per determinare quando gli elementi saranno cancellati: 
+    
+    1. Un’etichetta di conservazione (comunque sia applicata) fornisce una conservazione esplicita se comparata ai criteri di conservazione, perché le impostazioni di conservazione sono applicate ad un singolo elemento piuttosto che assegnate implicitamente da un contenitore. Questo significa che un’azione di cancellazione da un’etichetta di conservazione ha sempre la precedenza rispetto ad un’azione di cancellazione proveniente da un criterio di conservazione.
+        
+        Esempio: Un documento è soggetto a due criteri di conservazione dei dati che prevedono un’azione di cancellazione rispettivamente di cinque e dieci anni e prevedono anche un’etichetta di conservazione con un’azione di cancellazione a sette anni.
+        
+        Il documento è cancellato dopo sette anni perché l’azione di cancellazione dell’etichetta di conservazione ha la precedenza.
+    
+    2. Quando si hanno solo criteri di conservazione dei dati: Se un criterio di conservazione per una località è visibile al fine di utilizzare una configurazione inclusa (come utenti specifici per email Exchange) quel criterio ha la precedenza sui criteri di conservazione invisibili della medesima località.
+        
+        Un criterio di conservazione non visibile è dove una località è selezionata senza specifiche istanze. Per esempio, **Email Exchange** e le impostazioni predefinite di **Tutti i destinatari** è un criterio di conservazione dei dati non visibile. Oppure, **siti SharePoint** e l’impostazione predefinita di **Tutti i siti**. Quando i criteri di conservazione dei dati sono visibili, hanno uguale precedenza a questo livello.
+        
+        Esempio 1: Un messaggio email è soggetto a due criteri di conservazione dei dati. Il primo criterio di conservazione dei dati non è visibile e cancella gli elementi dopo dieci anni. Il secondo criterio di conservazione dei dati è visibile a specifiche caselle di posta elettronica e cancella gli elementi dopo cinque anni.
+        
+        Il messaggio email verrà cancellato dopo cinque anni perché l’azione di cancellazione che viene da un criterio di conservazione dei dati visibile ha la precedenza rispetto ad un criterio di conservazione invisibile.
+        
+        Esempio 2: Un documento su un account One Drive dell’utente è soggetto a due criteri di conservazione dei dati. Il primo criterio di conservazione dei dati è visibile per includere questo account OneDrive dell’utente e prevede un’azione di cancellazione dopo 10 anni. Il secondo criterio di conservazione dei dati è visibile per includere questo account OneDrive dell’utente e prevede un’azione di cancellazione dopo sette anni.
+        
+        Non è possibile determinare a questo livello quando sarà cancellato questo documento perché entrambi i criteri di conservazione dei dati sono visibili.
+
+4. **Prevale il periodo di eliminazione più breve.** Applicabile per determinare quando gli elementi saranno cancellati da criteri di conservazione dei dati ed il risultato non può essere determinato al livello precedente: Il contenuto è cancellato alla fine del periodo di conservazione più breve.
+    
+    Esempio: Un documento su un account One Drive dell’utente è soggetto a due criteri di conservazione dei dati. Il primo criterio di conservazione dei dati è visibile per includere questo account OneDrive dell’utente e prevede un’azione di cancellazione dopo 10 anni. Il secondo criterio di conservazione dei dati è visibile per includere questo account OneDrive dell’utente e prevede un’azione di cancellazione dopo sette anni.
+    
+    Questo documento verrà cancellato dopo sette anni perché è questo il periodo di conservazione più breve per questi due criteri di conservazione dei dati visibili.
+
+Nota che gli elementi soggetti al blocco eDiscovery possono ricadere sotto il primo principio della conservazione dei dati; questi non possono essere cancellati da nessun criterio o etichetta di conservazione. Quando il blocco è rilasciato, i principi di conservazione dei dati continuano ad essere applicarti. Per esempio, potrebbero essere soggetti ad un periodo di conservazione dei dati ancora valido o ad un’azione di cancellazione rinviata.
+
+Esempi più complessi che combinano azioni di conservazione e cancellazione dei dati:
+
+1. Un elemento ha applicate le seguenti impostazioni di conservazione dei dati:
+    
+    - Un criterio di conservazione dei dati di sola cancellazione dopo cinque anni.
+    - Un criterio di conservazione di tre anni con successiva cancellazione.
+    - Un’etichetta di conservazione con un’azione solo conservativa di sette anni
+    
+    **Risultato**: L’elemento è conservato sette anni perché la conservazione ha la precedenza sulla cancellazione e sette anni è il periodo più lungo di conservazione. Alla fine di questo periodo di conservazione, l’elemento viene cancellato a causa dell’azione di cancellazione frutto dei criteri di conservazione dei dati rinviata mentre l’elemento era conservato.
+    
+    Anche se questi due criteri di conservazione dei dati hanno momenti differenti per le azioni di cancellazione, l’elemento verrà cancellato al più presto alla fine del periodo di conservazione più lungo, in modo che non vi sia alcun conflitto da risolvere.
+
+2.  Un elemento ha applicate le seguenti impostazioni di conservazione dei dati:
+    
+    - Un criterio di conservazione dei dati non visibile con sola cancellazione dopo dieci anni
+    - Un criterio di conservazione dei dati visibile con conservazione di cinque anni e successiva cancellazione.
+    - Un criterio di conservazione dei dati di tre anni con successiva cancellazione.
+    
+    **Risultato**: L’elemento è conservato per cinque anni perché è il periodo di conservazione più lungo. Alla fine di questo periodo di conservazione, l’elemento viene cancellato a causa dell’azione di cancellazione di tre anni dell’etichetta di conservazione dei dati rinviata mentre l’elemento era conservato. L’eliminazione che viene dalle etichette di conservazione ha la precedenza sulla cancellazione che viene da tutti i criteri di conservazione dei dati.
 
 ## <a name="use-preservation-lock-to-restrict-changes-to-policies"></a>Usare la protezione dell'archiviazione per limitare le modifiche ai criteri
 
