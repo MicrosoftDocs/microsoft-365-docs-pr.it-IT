@@ -172,6 +172,8 @@
           href: office-365-service-encryption.md
         - name: Customer Key
           items:
+            - name: Customer Key per Microsoft 365 a livello di tenant (anteprima pubblica)
+              href: customer-key-tenant-level.md
             - name: Crittografia del servizio con Customer Key in Office 365
               href: customer-key-overview.md
             - name: Configurare Customer Key per Office 365
