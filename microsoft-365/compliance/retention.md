@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Informazioni sui criteri di conservazione e sulle etichette di conservazione, utili per conservare tutto che serve ed eliminare ciò che non serve.
-ms.openlocfilehash: 767e63c22d085696b53d74e3a4d6955bedec22dd
-ms.sourcegitcommit: c0495e224f12c448bfc162ef2e4b33b82f064ac8
+ms.openlocfilehash: c405f2bf8d9700c9a0874ba9d921a290ae63de16
+ms.sourcegitcommit: d6b1da2e12d55f69e4353289e90f5ae2f60066d0
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49709673"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "49719346"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>Informazioni sui criteri e sulle etichette di conservazione
 
@@ -276,7 +276,7 @@ In questo scenario, quando gli elementi possono essere soggetti a multiple impos
 
 Il risultato non è dettato da quale singolo criterio o etichetta di conservazione vince, ma da quanto a lungo un elemento è conservato (se applicabile) e da quando un elemento viene cancellato (se applicabile). Queste due azioni sono calcolate in maniera indipendente l’una dall’altra, da parte di tutte le impostazioni di conservazione applicate ad un elemento.
 
-Per esempio, un elemento potrebbe essere soggetto ad un criterio di conservazione che è configurato per un’azione di sola cancellazione e ad un altro criterio che è configurato per conservare e successivamente  cancellare. Per determinare il risultato, questo elemento possiede solo un’azione di conservazione e due di cancellazione. Conservazione e cancellazione possono essere in conflitto l’una con l’altra e le due azioni di cancellazione potrebbero avere una data configgente.
+Per esempio, un elemento potrebbe essere soggetto ad un criterio di conservazione che è configurato per un’azione di sola cancellazione e ad un altro criterio che è configurato per conservare e successivamente cancellare. Di conseguenza, questo elemento possiede solo un’azione di conservazione e due di cancellazione. Le azioni di conservazione e cancellazione possono essere in conflitto l’una con l’altra e le due azioni di cancellazione potrebbero avere una data configgente. Per elaborare il risultato, è necessario applicare i criteri di conservazione.
 
 A livello generale, la conservazione ha sempre la precedenza rispetto all'eliminazione e prevale il periodo di conservazione più lungo. Queste due semplici regole decidono sempre quanto a lungo gli elementi verranno conservati.
 
