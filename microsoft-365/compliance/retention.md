@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Informazioni sui criteri di conservazione e sulle etichette di conservazione, utili per conservare tutto che serve ed eliminare ciò che non serve.
-ms.openlocfilehash: c405f2bf8d9700c9a0874ba9d921a290ae63de16
-ms.sourcegitcommit: d6b1da2e12d55f69e4353289e90f5ae2f60066d0
+ms.openlocfilehash: 9745a93139f591185e7457f5ba5c0b9b2fd56348
+ms.sourcegitcommit: 16e018f8b6eef5dad48eabf179691ead3cebe533
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "49719346"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "49725177"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>Informazioni sui criteri e sulle etichette di conservazione
 
@@ -282,7 +282,7 @@ A livello generale, la conservazione ha sempre la precedenza rispetto all'elimin
 
 Esistono un paio di ulteriori fattori che determinano quando un elemento debba essere eliminato, questi includono che l’azione di cancellazione da parte di un’etichetta di conservazione ha sempre la precedenza su quella eseguibile da parte di un criterio di conservazione.
 
-Usa il seguente flusso per comprendere i risultati della conservazione e della cancellazione di un singolo elemento, dove ogni elemento agisce come un tie-breaker dall’alto verso il basso.
+Usare il seguente flusso per comprendere i risultati della conservazione e della cancellazione di un singolo elemento, dove ogni livello agisce come un tie-breaker per i conflitti dall’alto verso il basso. Se il risultato è determinato dal primo livello perché non sono presenti ulteriori conflitti, non è necessario passare al livello successivo e così via.
 
 > [!IMPORTANT]
 > Se si stanno utilizzando etichette di conservazione dei dati: Prima di usare questo flusso per determinare il risultato delle impostazioni di conservazione multiple sullo stesso elemento, assicurarsi di conoscere [quale etichetta di conservazione è applicata](#only-one-retention-label-at-a-time).
@@ -341,7 +341,7 @@ Esempi più complessi che combinano azioni di conservazione e cancellazione dei 
     
     **Risultato**: L’elemento è conservato sette anni perché la conservazione ha la precedenza sulla cancellazione e sette anni è il periodo più lungo di conservazione. Alla fine di questo periodo di conservazione, l’elemento viene cancellato a causa dell’azione di cancellazione frutto dei criteri di conservazione dei dati rinviata mentre l’elemento era conservato.
     
-    Anche se questi due criteri di conservazione dei dati hanno momenti differenti per le azioni di cancellazione, l’elemento verrà cancellato al più presto alla fine del periodo di conservazione più lungo, in modo che non vi sia alcun conflitto da risolvere.
+    Anche se questi due criteri di conservazione dispongono di date diverse per le azioni di cancellazione, l’elemento verrà cancellato al più presto alla fine del periodo di conservazione più lungo, che sarà più lungo di entrambe le date di cancellazione. In questo esempio, non è presente un conflitto da risolvere per le date di cancellazione, quindi tutti i conflitti vengono risolti dal secondo livello.
 
 2.  Un elemento ha applicate le seguenti impostazioni di conservazione dei dati:
     
@@ -349,7 +349,7 @@ Esempi più complessi che combinano azioni di conservazione e cancellazione dei 
     - Un criterio di conservazione dei dati visibile con conservazione di cinque anni e successiva cancellazione.
     - Un criterio di conservazione dei dati di tre anni con successiva cancellazione.
     
-    **Risultato**: L’elemento è conservato per cinque anni perché è il periodo di conservazione più lungo. Alla fine di questo periodo di conservazione, l’elemento viene cancellato a causa dell’azione di cancellazione di tre anni dell’etichetta di conservazione dei dati rinviata mentre l’elemento era conservato. L’eliminazione che viene dalle etichette di conservazione ha la precedenza sulla cancellazione che viene da tutti i criteri di conservazione dei dati.
+    **Risultato**: l’elemento viene conservato per cinque anni perché è il periodo di conservazione più lungo. Alla fine di questo periodo di conservazione, l’elemento viene cancellato a causa dell’azione di cancellazione di tre anni dell’etichetta di conservazione dei dati rinviata mentre l’elemento era conservato. L’eliminazione derivante dalle etichette di conservazione ha la precedenza sulla cancellazione derivante da tutti i criteri di conservazione dei dati. In questo esempio, tutti i conflitti vengono risolti dal terzo livello.
 
 ## <a name="use-preservation-lock-to-restrict-changes-to-policies"></a>Usare la protezione dell'archiviazione per limitare le modifiche ai criteri
 

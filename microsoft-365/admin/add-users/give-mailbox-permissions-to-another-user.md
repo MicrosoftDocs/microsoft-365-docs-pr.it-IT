@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 1dbcf12f-a9de-4d1d-b0b3-a227f8a736d8
 description: "Informazioni su come assegnare a un utente il diritto di accedere alla cassetta postale di un altro utente. In questo modo l'utente potrà leggere i messaggi di posta elettronica e inviare messaggi dalla cassetta postale dell'altro utente. "
-ms.openlocfilehash: 0b6977efbd6041a11c67ed66c9b7ecc72a38bde4
-ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
+ms.openlocfilehash: af12cfe3acad9e12ca3983c9fa13f52b72f0a467
+ms.sourcegitcommit: 16e018f8b6eef5dad48eabf179691ead3cebe533
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "46560376"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "49725154"
 ---
 # <a name="give-mailbox-permissions-to-another-user---admin-help"></a>Assegnare le autorizzazioni della cassetta postale a un altro utente - Guida per l'amministratore
 
@@ -121,6 +121,10 @@ Dopo la concessione dell'accesso, è possibile accedere a una cassetta postale i
 5. Selezionare **Aggiungi autorizzazioni** e quindi scegliere il nome dell'utente o degli utenti a cui si vuole consentire la lettura dei messaggi di posta elettronica da questa cassetta postale.
 
 6. Selezionare **Salva**.
+
+
+> [!NOTE]
+> Le autorizzazioni di **Lettura** e **Gestione** sono chiamate autorizzazioni di **Accesso completo** quando concesse nell'Interfaccia di amministrazione di Exchange. Le autorizzazioni di Accesso completo non comportano anche le autorizzazioni **Invia come** o **Invia per conto di**.
 
 ::: moniker-end
 
