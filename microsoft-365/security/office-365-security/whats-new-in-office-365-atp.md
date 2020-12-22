@@ -20,12 +20,12 @@ ms.topic: conceptual
 ms.date: 10/09/2020
 ms.custom: seo-marvel-apr2020
 ms.reviewer: vippand
-ms.openlocfilehash: d219895767919c2a0658f8b83150fe6edde01b5b
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.openlocfilehash: fb588320461ab44d1ce0f10c0776bcc9ee61b551
+ms.sourcegitcommit: 0ecac0387be6b49025b79ce8eb949a8cf62481e2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49615553"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "49724403"
 ---
 # <a name="whats-new-in-microsoft-defender-for-office-365"></a>Novità di Microsoft Defender per Office 365
 
@@ -41,7 +41,7 @@ In questo articolo vengono elencate le nuove funzionalità nell'ultima versione 
 > [!TIP]
 > Non si dispone ancora di Microsoft Defender per Office 365? [Contattare Sales per avviare una versione di valutazione](https://go.microsoft.com/fwlink/p/?LinkId=518644).
 
-## <a name="november-2020"></a>2020 novembre
+## <a name="november-2020"></a>Novembre 2020
 
 - Limiti di esportazione aggiornati in Review > Action Center > correzione dall'invio di posta e dal log azione (Defender per Office 365 piano 2)
 
@@ -51,11 +51,11 @@ In questo articolo vengono elencate le nuove funzionalità nell'ultima versione 
 - [Sostituisci manualmente i verdetti del filtro utilizzando l'elenco Consenti/blocca tenant](tenant-allow-block-list.md)
 - [Funzionalità estese in Esplora minacce, tra cui utenti di destinazione principali, regole di trasporto e connettori](threat-explorer.md#new-features-in-threat-explorer-and-real-time-detections) (Defender per Office 365 informazioni in [Threat Explorer](threat-explorer.md) (la posta elettronica è stata consentita/bloccata da criteri tenant/utente) (Defender per Office 365 piano 2)
 - Minacce all'URL di emersione in [Esplora minacce](threat-explorer.md#threats-in-urls) (malware, phishing, posta indesiderata o nessuno) (Defender per Office 365 piano 2)
-- [Miglioramenti alla funzionalità di ricerca di Esplora minacce](threat-explorer.md#improvements-to-threat-hunting-experience-upcoming) con aggiornamenti su minacce, azioni aggiuntive, posizioni di recapito e visualizzazione della sequenza temporale aggiornata (Defender per Office 365 piano 2)
+- [Miglioramenti alla funzionalità di ricerca di Esplora minacce](threat-explorer.md#improvements-to-the-threat-hunting-experience-upcoming) con aggiornamenti su minacce, azioni aggiuntive, posizioni di recapito e visualizzazione della sequenza temporale aggiornata (Defender per Office 365 piano 2)
 
 ## <a name="julyaugust-2020"></a>Luglio/agosto 2020
 
-- [Miglioramenti dell'esperienza di caccia](threat-explorer.md#experience-improvements-to-threat-explorer-and-real-time-detections) (Microsoft Defender per Office 365 piano 1 o piano 2)
+- [Miglioramenti dell'esperienza di caccia](threat-explorer.md#improvements-to-threat-explorer-and-real-time-detections) (Microsoft Defender per Office 365 piano 1 o piano 2)
 - [Applicare facilmente le impostazioni consigliate utilizzando i criteri di sicurezza predefiniti](preset-security-policies.md)
 
 ## <a name="marchapril-2020"></a>Marzo/aprile 2020
@@ -103,9 +103,9 @@ In questo articolo vengono elencate le nuove funzionalità nell'ultima versione 
 
 ## <a name="june-2019"></a>Giugno 2019
 
-- [Visualizzare i dati relativi agli URL di phishing e fare clic su Verdet](threat-explorer.md#view-data-about-phishing-urls-and-click-verdict) (Microsoft Defender per Office 365 piano 1 o piano 2)
+- [Visualizzare gli URL di phishing e fare clic su dati di verdetto](threat-explorer.md#view-phishing-url-and-click-verdict-data) (Microsoft Defender per Office 365 piano 1 o piano 2)
 
-## <a name="microsoft-defender-for-office-365-plan-1-and-plan-2"></a>Microsoft Defender per Office 365 piano 1 e piano 2
+## <a name="microsoft-defender-for-office-365-plan-1-and-plan-2"></a>Microsoft Defender per Office 365 Piano 1 e Piano 2
 
 Lo sapevate che Microsoft Defender per Office 365 è disponibile in due piani? Ulteriori [informazioni su ciò che include ogni piano](office-365-atp.md#microsoft-defender-for-office-365-plan-1-and-plan-2).
 
