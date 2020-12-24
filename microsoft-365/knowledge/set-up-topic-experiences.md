@@ -11,14 +11,20 @@ search.appverid: MET150
 localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
 description: Informazioni su come configurare le esperienze degli argomenti in Microsoft 365
-ms.openlocfilehash: e11f0b75556a4a8ac0ffa40269d7166258128daf
-ms.sourcegitcommit: 884ac262443c50362d0c3ded961d36d6b15d8b73
+ms.openlocfilehash: df4dccead4b627a215ec7ebd11932aa0f2b6ac08
+ms.sourcegitcommit: 18f95c4b7f74881b4a6ce71ad2ffa78a6ead5584
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49698556"
+ms.lasthandoff: 12/24/2020
+ms.locfileid: "49731368"
 ---
 # <a name="set-up-topic-experiences-in-microsoft-365"></a>Configurare le esperienze degli argomenti in Microsoft 365
+
+</br>
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4LBp7]  
+
+</br>
 
 È possibile utilizzare l'interfaccia di amministrazione di Microsoft 365 per impostare e configurare le [esperienze degli argomenti](topic-experiences-overview.md). 
 
@@ -26,7 +32,7 @@ ms.locfileid: "49698556"
 
 È necessario essere un amministratore globale o un amministratore di SharePoint per accedere all'interfaccia di amministrazione di Microsoft 365 e impostare le esperienze degli argomenti.
 
-## <a name="set-up-topic-experiences"></a>Configurare le esperienze degli argomenti
+## <a name="set-up-topic-experiences"></a>Configurare le esperienze dell'argomento
 
 Per impostare le esperienze degli argomenti in Microsoft 365
 
@@ -37,7 +43,7 @@ Per impostare le esperienze degli argomenti in Microsoft 365
 
 3. Nella pagina **Connect people to Knowledge** fare clic su Guida **introduttiva** per eseguire il processo di installazione.
 
-    ![Informazioni di base](../media/k-get-started.png) 
+    ![Per iniziare](../media/k-get-started.png) 
 
 4. Nella pagina **scegliere il modo in cui la rete di informazioni può trovare gli argomenti** , verrà configurata l'individuazione dell'argomento. Nella sezione **selezione origini argomenti di SharePoint** selezionare i siti di SharePoint che verranno sottoposti a ricerca per indicizzazione come origini per gli argomenti durante l'individuazione. Scegliere da:
     - **Tutti i siti**: tutti i siti di SharePoint nell'organizzazione. Sono inclusi i siti correnti e futuri.

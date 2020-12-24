@@ -12,12 +12,12 @@ ms.collection: enabler-strategic
 localization_priority: None
 ROBOTS: NOINDEX, NOFOLLOW
 description: Panoramica delle esperienze degli argomenti.
-ms.openlocfilehash: 9321f349056c1c4df36b6bd725214f3c6758cf6a
-ms.sourcegitcommit: 884ac262443c50362d0c3ded961d36d6b15d8b73
+ms.openlocfilehash: 8b06dd016295c8b0712a7c18c2296a318cd826ba
+ms.sourcegitcommit: 18f95c4b7f74881b4a6ce71ad2ffa78a6ead5584
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49698927"
+ms.lasthandoff: 12/24/2020
+ms.locfileid: "49731324"
 ---
 # <a name="topic-experiences-overview-preview"></a>Panoramica delle esperienze degli argomenti (anteprima)
 
@@ -26,7 +26,11 @@ ms.locfileid: "49698927"
 
 L'argomento Experiences utilizza la tecnologia Microsoft AI, Microsoft 365, approfondire, Microsoft Graph, Search e altri componenti e servizi per creare una rete di conoscenze nell'ambiente Microsoft 365. 
 
-   ![Flusso di gestione delle informazioni](../media/knowledge-management/knowledge-management-flowchart.png) </br> 
+</br>
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4LhZP]  
+
+</br>
 
 L'obiettivo è quello di convertire le informazioni in conoscenza e recapitarle agli utenti nelle app che utilizzano tutti i giorni, ad esempio le pagine di SharePoint moderne e Microsoft Search.
 

@@ -12,23 +12,30 @@ ms.collection: enabler-strategic
 ROBOTS: NOINDEX, NOFOLLOW
 localization_priority: None
 description: Informazioni su come trovare risorse per le esperienze degli argomenti.
-ms.openlocfilehash: bc38e0a7310dd9c1d3787dbe6cabe646009d2bff
-ms.sourcegitcommit: 884ac262443c50362d0c3ded961d36d6b15d8b73
+ms.openlocfilehash: 9141f6b445932234ebfa5a3d77833f64110ceeb4
+ms.sourcegitcommit: 18f95c4b7f74881b4a6ce71ad2ffa78a6ead5584
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49698958"
+ms.lasthandoff: 12/24/2020
+ms.locfileid: "49731344"
 ---
 # <a name="introduction-to-topic-experiences-preview"></a>Introduzione alle esperienze sull'argomento (anteprima)
 
 > [!Note] 
 > Il contenuto di questo articolo è relativo all'anteprima privata di Project Cortex. [Altre informazioni su Project Cortex](https://aka.ms/projectcortex).
 
+</br>
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4LhZP]  
+
+</br>
+
+
 L'argomento experiences è un servizio di Office 365 che consente alle organizzazioni di trasformare le informazioni nella conoscenza.
 
 Le risorse presenti in questa pagina sono state progettate per iniziare a conoscere e utilizzare le esperienze di argomento nell'organizzazione.
 
-## <a name="get-started"></a>Informazioni di base
+## <a name="get-started"></a>Per iniziare
 
 Le risorse in questa sezione consentono di ottenere ulteriori informazioni sulle esperienze degli argomenti e su come può essere utile.
 
@@ -54,17 +61,17 @@ Le risorse di questa sezione aiutano l'amministratore dell'organizzazione a conf
 | Se sono necessarie queste informazioni: | Passare a questa risorsa: |
 |:-----|:-----|
 |Informazioni su come impostare e configurare le esperienze degli argomenti|[Configurare le esperienze degli argomenti](set-up-topic-experiences.md)|
-|Informazioni su come configurare le autorizzazioni utente|[Gestire le autorizzazioni per gli argomenti](topic-experiences-user-permissions.md)|
-|Informazioni su come gestire gli utenti in grado di visualizzare gli argomenti|[Gestione della visibilità degli argomenti](topic-experiences-knowledge-rules.md)|
-|Informazioni su come gestire le impostazioni di individuazione degli argomenti|[Gestione dell'individuazione degli argomenti](topic-experiences-discovery.md)|
+|Informazioni su come configurare le autorizzazioni utente|[Gestire le autorizzazioni dell'argomento](topic-experiences-user-permissions.md)|
+|Informazioni su come gestire gli utenti in grado di visualizzare gli argomenti|[Gestire la visibilità dell'argomento](topic-experiences-knowledge-rules.md)|
+|Informazioni su come gestire le impostazioni di individuazione degli argomenti|[Gestire la scoperta dell'argomento](topic-experiences-discovery.md)|
 
-## <a name="work-with-topics"></a>Utilizzo degli argomenti
+## <a name="work-with-topics"></a>Lavorare con gli argomenti
 
 Le risorse in questa sezione aiutano gli utenti a imparare a usare e gestire gli argomenti.
 
 | Se sono necessarie queste informazioni: | Passare a questa risorsa: |
 |:-----|:-----|
-|Informazioni su come utilizzare gli argomenti|[Panoramica del centro argomenti](topic-center-overview.md)<br><br>[Gestire gli argomenti](manage-topics.md)<br><br>[Creare un nuovo argomento](create-a-topic.md)<br><br>[Modificare un argomento esistente](edit-a-topic.md)<br><br>|
+|Informazioni su come utilizzare gli argomenti|[Panoramica sul centro argomenti](topic-center-overview.md)<br><br>[Gestire gli argomenti](manage-topics.md)<br><br>[Creare un nuovo argomento](create-a-topic.md)<br><br>[Modificare un argomento esistente](edit-a-topic.md)<br><br>|
 |Comprendere i ruoli utente|[Ruoli esperienza di argomento](topic-experiences-roles.md)|
 |Comprendere il motivo per cui gli argomenti possono variare a seconda degli utenti|[Tema ritaglio di sicurezza](topic-experiences-security-trimming.md)|
 |Informazioni su come impedire l'identificazione e la visualizzazione di argomenti specifici|[Limitare l'accesso agli argomenti](restrict-access-to-topics.md)|
