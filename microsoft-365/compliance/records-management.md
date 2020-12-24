@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 description: Con la gestione dei record di Microsoft 365, è possibile applicare le pianificazioni di conservazione in un piano di archiviazione che gestisce la conservazione, la dichiarazione dei record e l’eliminazione.
-ms.openlocfilehash: 6648a3a671e40dd5218eba1a1e8bafe42120f0de
-ms.sourcegitcommit: 9d1351ea6d9942550b52132817f9f9693ddef2fd
+ms.openlocfilehash: 883fd65e3fba716018a1ed35cc457c2eb8f06c52
+ms.sourcegitcommit: 5756896ad87e28fac20f7981eaaeacfb0c098254
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/02/2020
-ms.locfileid: "48830527"
+ms.lasthandoff: 12/23/2020
+ms.locfileid: "49730167"
 ---
 # <a name="learn-about-records-management-in-microsoft-365"></a>Informazioni sulla gestione dei record in Microsoft 365
 
@@ -109,7 +109,7 @@ Messaggio che un utente vede se tenta di eliminare un documento con etichetta in
 > 
 > A causa di queste azioni irreversibili, assicurarsi che sia effettivamente necessario usare i record normativi prima di selezionare questa opzione per le etichette di conservazione. Per evitare la configurazione accidentale, questa opzione non è disponibile per impostazione predefinita, ma deve prima essere abilitata con PowerShell. Le istruzioni sono incluse in [Dichiarare i record usando le etichette di conservazione](declare-records.md).
 
-## <a name="next-steps"></a>Passaggi successivi
+## <a name="configuration-guidance"></a>Linee guida per la configurazione
 
 Vedere [Introduzione alla gestione dei record](get-started-with-records-management.md).
 

@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Informazioni sui criteri di conservazione e sulle etichette di conservazione, utili per conservare tutto che serve ed eliminare ciò che non serve.
-ms.openlocfilehash: 9745a93139f591185e7457f5ba5c0b9b2fd56348
-ms.sourcegitcommit: 16e018f8b6eef5dad48eabf179691ead3cebe533
+ms.openlocfilehash: 8d50e03827026100689d9b380570fa59c93e6d08
+ms.sourcegitcommit: 5756896ad87e28fac20f7981eaaeacfb0c098254
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "49725177"
+ms.lasthandoff: 12/23/2020
+ms.locfileid: "49730177"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>Informazioni sui criteri e sulle etichette di conservazione
 
@@ -465,7 +465,7 @@ Se si sono configurati i siti di SharePoint per criteri tipo di contenuto o crit
 - [Limiti e specifiche per Microsoft Teams](https://docs.microsoft.com/microsoftteams/limits-specifications-teams) 
 - [Risorse che consentono di soddisfare i requisiti normativi per la governance delle informazioni e la gestione dei record](retention-regulatory-requirements.md)
 
-## <a name="next-steps"></a>Passaggi successivi
+## <a name="configuration-guidance"></a>Linee guida per la configurazione
 
 Se si è pronti per creare criteri di conservazione, vedere [Creare e configurare criteri di conservazione](create-retention-policies.md).
 
