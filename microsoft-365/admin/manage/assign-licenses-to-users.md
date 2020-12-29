@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 description: Informazioni su come assegnare licenze agli utenti.
 ms.date: 08/14/2020
-ms.openlocfilehash: ec2f9ae2e580987266c636343a66d7c21138e4c3
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: fc5f9112a22d56abb9c11d61f4108586487b4986
+ms.sourcegitcommit: 806536f859ac864228797f1f2f23b8f41040a6b4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48645132"
+ms.lasthandoff: 12/28/2020
+ms.locfileid: "49735799"
 ---
 # <a name="assign-licenses-to-users"></a>Assegnare licenze agli utenti
 
@@ -103,7 +103,7 @@ Nella pagina **Utenti attivi** si assegnano licenze utente ai prodotti.
 1. Nell'interfaccia di amministrazione passare alla pagina **Utenti** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Utenti attivi</a>.
 2. Selezionare le caselle accanto ai nomi degli utenti a cui si vogliono assegnare le licenze.
 3. Nel riquadro **Azioni in blocco** selezionare **Modifica licenze di prodotto**.
-4. Nel riquadro**Assegna prodotti** selezionare **Aggiungi ad assegnazioni licenze prodotto esistenti** \> **Avanti**.
+4. Nel riquadro **Assegna prodotti** selezionare **Aggiungi ad assegnazioni licenze prodotto esistenti** \> **Avanti**.
 5. Impostare sulla posizione **Attivata** l'interruttore relativo alle licenze che si vogliono assegnare agli utenti selezionati.\
     Per impostazione predefinita, tutti i servizi associati a tali licenze vengono automaticamente assegnati agli utenti. È possibile porre limiti ai servizi disponibili agli utenti. Impostare sulla posizione **Disattivata** gli interruttori relativi ai servizi che non si desidera assegnare agli utenti.
 6. Nella parte inferiore del riquadro **Aggiungi a prodotti esistenti** selezionare **Aggiungi** \> **Chiudi** \> **Chiudi**.
@@ -117,7 +117,7 @@ Nella pagina **Utenti attivi** si assegnano licenze utente ai prodotti.
 1. Nell'interfaccia di amministrazione passare alla pagina **Utenti** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Utenti attivi</a>.
 2. Selezionare le caselle accanto ai nomi degli utenti a cui si vogliono assegnare le licenze.
 3. Nel riquadro **Azioni in blocco** selezionare **Modifica licenze di prodotto**.
-4. Nel riquadro**Assegna prodotti** selezionare **Aggiungi ad assegnazioni licenze prodotto esistenti** \> **Avanti**.
+4. Nel riquadro **Assegna prodotti** selezionare **Aggiungi ad assegnazioni licenze prodotto esistenti** \> **Avanti**.
 5. Impostare sulla posizione **Attivata** l'interruttore relativo alle licenze che si vogliono assegnare agli utenti selezionati.\
     Per impostazione predefinita, tutti i servizi associati a tali licenze vengono automaticamente assegnati agli utenti. È possibile porre limiti ai servizi disponibili agli utenti. Impostare sulla posizione **Disattivata** gli interruttori relativi ai servizi che non si desidera assegnare agli utenti.
 6. Nella parte inferiore del riquadro **Aggiungi a prodotti esistenti** selezionare **Aggiungi** \> **Chiudi** \> **Chiudi**.
@@ -163,7 +163,7 @@ Nella pagina **Utenti attivi** si assegnano licenze utente ai prodotti.
 
 ## <a name="assign-a-license-to-a-guest-user"></a>Assegnare una licenza a un utente guest
 
-È possibile invitare gli utenti guest a collaborare con l'organizzazione nell'interfaccia di amministrazione di Azure Active Directory. Per informazioni sui guest user, vedere [Cos'è l'accesso degli utenti guest in Azure Active Directory B2B?](https://docs.microsoft.com/azure/active-directory/external-identities/what-is-b2b) Se vi sono utenti guest, vedere [Guida introduttiva: aggiungere utenti guest alla directory nel portale di Azure](https://docs.microsoft.com/azure/active-directory/external-identities/b2b-quickstart-add-guest-users-portal).
+È possibile invitare gli utenti guest a collaborare con l'organizzazione nell'interfaccia di amministrazione di Azure Active Directory. Per informazioni sugli utenti guest, vedere [Cos'è l'accesso degli utenti guest in Azure Active Directory B2B?](https://docs.microsoft.com/azure/active-directory/external-identities/what-is-b2b) Se vi sono utenti guest, vedere [Guida introduttiva: aggiungere utenti guest alla directory nel portale di Azure](https://docs.microsoft.com/azure/active-directory/external-identities/b2b-quickstart-add-guest-users-portal).
 
 > [!IMPORTANT]
 > Per eseguire questi passaggi, è necessario essere un amministratore globale.
