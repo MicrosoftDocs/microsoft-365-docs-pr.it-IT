@@ -17,12 +17,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: d668aa8f0588ecc5ca24086d060cda32cdf1dbc6
-ms.sourcegitcommit: 849b365bd3eaa9f3c3a9ef9f5973ef81af9156fa
+ms.openlocfilehash: 0693e70cdd5636ce655a400a48aac65197327291
+ms.sourcegitcommit: a8f3c633714e934f9ad026c3bc72157ed535dcfc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49688042"
+ms.lasthandoff: 12/29/2020
+ms.locfileid: "49737954"
 ---
 # <a name="whats-coming-to-microsoft-secure-score"></a>Cosa viene a Microsoft Secure Score
 
@@ -35,6 +35,8 @@ Microsoft Secure Score può essere trovato https://security.microsoft.com/secure
 Sono state apportate alcune modifiche nel prossimo futuro per rendere [Microsoft Secure Score](microsoft-secure-score.md) un migliore rappresentante della propria posizione di sicurezza e migliorare l'usabilità. Il Punteggio e il punteggio massimo possibile possono variare.
 
 ### <a name="no-planned-changes"></a>Nessuna modifica pianificata
+
+Non vi sono modifiche pianificate in questo momento.
 
 ## <a name="related-resources"></a>Risorse correlate
 

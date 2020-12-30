@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 8ebfe5746a69cc0161c38f0467954fabb3839240
-ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
+ms.openlocfilehash: c463e375594b3581486cb8d4bdd380412e195b2e
+ms.sourcegitcommit: a8f3c633714e934f9ad026c3bc72157ed535dcfc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "49683344"
+ms.lasthandoff: 12/29/2020
+ms.locfileid: "49738012"
 ---
 # <a name="assess-your-security-posture-with-microsoft-secure-score"></a>Valutare la propria posizione di sicurezza con Microsoft Secure Score
 
@@ -48,7 +48,7 @@ Nella pagina Panoramica dei punteggi di Microsoft Secure, vedere come vengono di
 
 ## <a name="check-your-current-score"></a>Controllare il punteggio corrente
 
-Per controllare il punteggio corrente, passare alla pagina Panoramica di Microsoft Secure score e cercare il riquadro che indica il **Punteggio sicuro**. Il Punteggio verrà visualizzato come percentuale, insieme al numero di punti ottenuti per un totale di punti possibili.
+Per controllare il punteggio corrente, passare alla pagina Panoramica di Microsoft Secure score e cercare il riquadro che indica il **Punteggio sicuro**. Il Punteggio verrà visualizzato come percentuale, insieme al numero di punti ottenuti al di fuori dei punti totali possibili.
 
 Inoltre, se si seleziona il pulsante **Includi** accanto alla partitura, è possibile scegliere diverse visualizzazioni del punteggio. Queste visualizzazioni di Punteggio diverse verranno visualizzate nel grafico sul riquadro dei punteggi e nel grafico di scomposizione dei punti.
 
@@ -74,14 +74,15 @@ La classificazione si basa sul numero di punti da raggiungere, la difficoltà di
 
 Quando si seleziona un'azione di miglioramento specifica, viene visualizzato un riquadro a comparsa a pagina intera.  
 
-![Esempio di riquadro a comparsa Azione miglioramento ](../../media/secure-score/secure-score-improvement-action-details.png)
- *Figura 2: esempio del riquadro a comparsa Azione miglioramento*
+![Esempio di riquadro a comparsa Azione miglioramento](../../media/secure-score/secure-score-improvement-action-details.png)
 
 Per completare l'azione, sono disponibili alcune opzioni:
 
-* Selezionare **Gestisci** per passare alla schermata di configurazione e apportare le modifiche. Sarà quindi possibile ottenere i punti che l'azione vale, visibili nel volo. I punti generalmente richiedono circa 24 ore per l'aggiornamento.
+- Selezionare **Gestisci** per passare alla schermata di configurazione e apportare le modifiche. Sarà quindi possibile ottenere i punti che l'azione vale, visibili nel volo. I punti generalmente richiedono circa 24 ore per l'aggiornamento.
 
-* Selezionare **Condividi** per copiare il collegamento diretto all'azione di miglioramento. È inoltre possibile scegliere la piattaforma per la condivisione del collegamento, ad esempio la posta elettronica, Microsoft teams, Microsoft Planner o ServiceNow. La selezione di ServiceNow consente di creare un ticket di modifica che sarà visibile in ServiceNow e nella Home page del Centro sicurezza Microsoft 365. Per ulteriori informazioni, vedere [Microsoft 365 Security Center e ServiceNow Integration](tickets-security-center.md).
+- Selezionare **Condividi** per copiare il collegamento diretto all'azione di miglioramento. È inoltre possibile scegliere la piattaforma per la condivisione del collegamento, ad esempio la posta elettronica, Microsoft teams, Microsoft Planner o ServiceNow. La selezione di ServiceNow consente di creare un ticket di modifica che sarà visibile in ServiceNow e nella Home page del Centro sicurezza Microsoft 365. Per ulteriori informazioni, vedere [Microsoft 365 Security Center e ServiceNow Integration](tickets-security-center.md).
+
+Aggiungere **Note** per tenere sotto controllo i progressi o qualsiasi altra operazione che si desidera sottoporre a commento. Se si aggiungono i propri **tag** all'azione di miglioramento, è possibile filtrare in base a tali tag.
 
 ### <a name="choose-an-improvement-action-status"></a>Scegliere uno stato di azione di miglioramento
 
@@ -94,23 +95,23 @@ Scegliere eventuali stati e note di record specifiche per l'azione di migliorame
 
 #### <a name="threat--vulnerability-management-improvement-actions"></a>Azioni di miglioramento della gestione della vulnerabilità & di minacce
 
-Per le azioni di miglioramento nella categoria "dispositivo", non sarà possibile scegliere status. Al contrario, si verrà indirizzati alla minaccia associata di sicurezza per la [gestione della vulnerabilità & (TVM)](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/tvm-security-recommendation) in [Microsoft Defender Security Center](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/use) per eseguire l'azione. L'eccezione scelta e la giustificazione scritta saranno specifiche per il portale. Non sarà presente nel portale Microsoft Secure score.
+Per le azioni di miglioramento nella categoria "dispositivo", non è possibile scegliere stato. Al contrario, si verrà indirizzati ai consigli di sicurezza associati per la [gestione della vulnerabilità e delle minacce](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/tvm-security-recommendation) nel [Centro sicurezza Microsoft Defender](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/use) per eseguire l'azione. L'eccezione scelta e la giustificazione scritta saranno specifiche per il portale. Non sarà presente nel portale Microsoft Secure score.
 
 #### <a name="completed-improvement-actions"></a>Azioni di miglioramento completate
 
-Le azioni di miglioramento hanno uno stato "completato" una volta che sono stati raggiunti tutti i punti possibili per l'azione di miglioramento. Le azioni di miglioramento completate sono state confermate se i dati di Microsoft e non sarà possibile modificare lo stato.
+Le azioni di miglioramento hanno uno stato "completato" una volta che sono stati raggiunti tutti i punti possibili per l'azione di miglioramento. Le azioni di miglioramento completate sono state confermate anche se Microsoft Data e non è possibile modificare lo stato.
 
 ### <a name="assess-information-and-review-user-impact"></a>Valutare le informazioni e esaminare l'impatto dell'utente
 
 La sezione chiamata **a colpo d'occhio** vi dirà la categoria, gli attacchi che può proteggere e il prodotto.
 
-L' **impatto dell'utente** indica ciò che gli utenti sperimenteranno se l'azione di miglioramento è stata emanata e **gli utenti interessati** visualizzano chi lo sperimenteranno.
+L' **impatto dell'utente** è quello che gli utenti sperimenteranno se l'azione di miglioramento è stata adottata e **gli utenti interessati** sono quelli che avranno un impatto.
 
 ### <a name="implement-the-improvement-action"></a>Implementazione dell'azione di miglioramento
 
 La sezione **implementazione** Visualizza eventuali prerequisiti, passaggi successivi per completare l'azione di miglioramento, lo stato di implementazione corrente dell'azione di miglioramento e qualsiasi altro collegamento per ulteriori informazioni.
 
-I prerequisiti includono tutte le licenze che devono essere ottenute o le azioni che devono essere completate prima che venga affrontata l'azione di miglioramento. Assicurarsi di disporre di un numero sufficiente di posti nella licenza per completare l'azione di miglioramento e che tali licenze vengano applicate agli utenti necessari.  
+I prerequisiti includono tutte le licenze necessarie o le azioni che devono essere completate prima che venga affrontata l'azione di miglioramento. Assicurarsi di disporre di un numero sufficiente di posti nella licenza per completare l'azione di miglioramento e che tali licenze vengano applicate agli utenti necessari.  
 
 ## <a name="we-want-to-hear-from-you"></a>L'opinione degli utenti è importante
 

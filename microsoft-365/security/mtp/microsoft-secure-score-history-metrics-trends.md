@@ -20,17 +20,16 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 4dfe1c9595db869a59474a030a5dd8673cf7db24
-ms.sourcegitcommit: 6647055154002c7d3b8f7ce25ad53c9636bc8066
+ms.openlocfilehash: ed937c90bbc6875ee3d72f710d5ac11d4069cbb6
+ms.sourcegitcommit: a8f3c633714e934f9ad026c3bc72157ed535dcfc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "48769245"
+ms.lasthandoff: 12/29/2020
+ms.locfileid: "49738044"
 ---
 # <a name="track-your-microsoft-secure-score-history-and-meet-goals"></a>Monitorare la cronologia dei punteggi di Microsoft Secure e raggiungere gli obiettivi
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
-
 
 [Microsoft Secure Score](microsoft-secure-score.md) è una misura della posizione di sicurezza di un'organizzazione, con un numero superiore che indica altre azioni di miglioramento eseguite. Può essere trovato https://security.microsoft.com/securescore nel [Centro sicurezza Microsoft 365](overview-security-center.md).
 
@@ -56,7 +55,7 @@ Nella scheda **tendenze & metriche** sono disponibili diversi grafici e grafici 
 * **Tendenza di regressione** : una sequenza temporale di punti che sono stati regressi a causa di modifiche alla configurazione, all'utente o al dispositivo.  
 * **Trend di confronto** : in che modo il Punteggio sicuro dell'organizzazione viene confrontato con gli altri nel corso del tempo. Questa visualizzazione può includere linee che rappresentano la media del Punteggio di organizzazioni con conteggio dei sedili analogo e una visualizzazione di confronto personalizzata che è possibile impostare.
 * **Trend di accettazione dei rischi** -cronologia delle azioni di miglioramento contrassegnate come "rischio accettato".
-* **Modifiche al Punteggio** : il numero di punti ottenuti, i punti di regressione, insieme alla variazione del punteggio successivo, nell'intervallo di date specificato.
+* **Modifiche al Punteggio** : il numero di punti ottenuti, i punti di regressione e le modifiche apportate al punteggio nell'intervallo di date specificato.
 
 ### <a name="compare-your-score-to-organizations-like-yours"></a>Confronta il tuo punteggio con organizzazioni come le tue
 
@@ -64,18 +63,18 @@ Sono disponibili due posizioni per vedere come il punteggio viene confrontato co
 
 #### <a name="comparison-bar-chart"></a>Grafico a barre di confronto
 
-Il grafico a barre di confronto è la scheda **Panoramica** . Posizionare il puntatore del mouse sul grafico per visualizzare la possibilità di punteggio e punteggio. I dati di confronto sono anonimi in modo che non si conoscano esattamente quali altri tenant sono presenti nel mix.
+Il grafico a barre di confronto è la scheda **Panoramica** . Posizionare il puntatore del mouse sul grafico per visualizzare la possibilità di punteggio e punteggio. I dati di confronto sono anonimi in modo che non si conoscano esattamente quali altri tenant sono presenti nella combinazione.
 
 ![Grafico a barre dei punteggi dell'organizzazione simili](../../media/secure-score/secure-score-comparison-bar.png)
 
-- **Organizzazioni come la vostra** : vi daremo un punteggio medio di altri tenant (purché siano presenti almeno 5 o più tenant da confrontare) che si qualificano con i seguenti criteri:
+- **Organizzazioni come la tua**: un punteggio medio di altri tenant (purché siano presenti almeno cinque o più tenant da confrontare) che si qualificano con i seguenti criteri:
     1. Stesso settore
     2. Stesse dimensioni dell'organizzazione
     3. Tutte le aree
     4. I prodotti Microsoft utilizzati sono 80% simili
     5. Opportunità (Punteggio massimo che può essere ottenuto dalla licenza corrente) all'interno di un intervallo del 20% dal tenant
 
-- **Confronto personalizzato** : deve essere configurato per primo selezionando **Gestisci confronto** (solo se sono presenti 5 o più tenant) in base ai criteri seguenti:
+- **Confronto personalizzato**: deve essere configurato selezionando **Gestisci confronto** in base ai criteri seguenti:
     1. Settore o settori selezionati
     2. Dimensioni dell'organizzazione selezionate
     3. Aree selezionate
@@ -83,7 +82,7 @@ Il grafico a barre di confronto è la scheda **Panoramica** . Posizionare il pun
     5. I prodotti Microsoft utilizzati sono 80% simili
     6. Opportunità (Punteggio massimo che può essere ottenuto dalla licenza corrente) all'interno di un intervallo del 20% dal tenant
 
-Se non è stata effettuata una selezione per la selezione personalizzata del risultato della selezione per ottenere meno di 5 altri tenant di cui è possibile eseguire il confronto, si vedrà "non disponibile a causa di dati limitati".
+Se è stata effettuata una selezione personalizzata, ma i risultati hanno meno di cinque altri tenant che è possibile confrontare, si vedrà "non disponibile a causa di dati limitati".
 
 #### <a name="comparison-trend"></a>Trend di confronto
 
@@ -91,7 +90,7 @@ Nella scheda **tendenze & metriche** , visualizzare la modalità di confronto tr
 
 ![Grafico a linee dei punteggi dell'organizzazione simili nel corso del tempo](../../media/secure-score/secure-score-comparison-trend.png)
 
-## <a name="we-want-to-hear-from-you"></a>Si vuole sapere da voi
+## <a name="we-want-to-hear-from-you"></a>L'opinione degli utenti è importante
 
 In caso di problemi, inviaci informazioni scrivendo nella community [sicurezza, Privacy & conformità](https://techcommunity.microsoft.com/t5/Security-Privacy-Compliance/bd-p/security_privacy) . Si sta monitorando la community e viene fornita assistenza.
 

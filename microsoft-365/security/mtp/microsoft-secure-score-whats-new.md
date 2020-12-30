@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 253e85da7bb85a0722831851f00051a50a96153e
-ms.sourcegitcommit: 849b365bd3eaa9f3c3a9ef9f5973ef81af9156fa
+ms.openlocfilehash: 61ac8c627dd701ac354a5d60d4774a6443b4d41e
+ms.sourcegitcommit: a8f3c633714e934f9ad026c3bc72157ed535dcfc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49688412"
+ms.lasthandoff: 12/29/2020
+ms.locfileid: "49737988"
 ---
 # <a name="whats-new-in-microsoft-secure-score"></a>Novità di Microsoft Secure Score
 
@@ -37,7 +37,7 @@ Microsoft Secure Score può essere trovato https://security.microsoft.com/secure
 
 ## <a name="december-2020"></a>Dicembre 2020
 
-### <a name="added-6-accounts-related-improvement-actions-for-microsoft-defender-for-endpoint-previously-microsoft-defender-atp"></a>Sono state aggiunte 6 azioni di miglioramento correlate agli account per Microsoft Defender per endpoint (in precedenza Microsoft Defender ATP):
+### <a name="added-six-accounts-related-improvement-actions-for-microsoft-defender-for-endpoint-previously-microsoft-defender-atp"></a>Sono state aggiunte sei azioni di miglioramento relative agli account per Microsoft Defender per endpoint (in precedenza Microsoft Defender ATP):
 
 - Impostare ' lunghezza minima password ' su '14 o più caratteri '
 - Impostare ' applica cronologia password ' a '24 o più password '
@@ -52,7 +52,7 @@ Microsoft Secure Score può essere trovato https://security.microsoft.com/secure
 
 La possibilità di creare i ticket di ServiceNow tramite il Punteggio sicuro accedendo alla **condivisione > ServiceNow** non è più disponibile. La ringrazio per i commenti e il supporto continuo, mentre si determinano i passaggi successivi.
 
-### <a name="added-3-services-related-improvement-actions-for-microsoft-defender-for-endpoint-previously-microsoft-defender-atp"></a>Sono state aggiunte 3 azioni di miglioramento correlate ai servizi per Microsoft Defender per endpoint (in precedenza Microsoft Defender ATP):
+### <a name="added-three-services-related-improvement-actions-for-microsoft-defender-for-endpoint-previously-microsoft-defender-atp"></a>Sono state aggiunte tre azioni di miglioramento correlate ai servizi per Microsoft Defender per endpoint (in precedenza Microsoft Defender ATP):
 
 - Risolvere il percorso del servizio non quotato per i servizi Windows
 - Modificare il percorso eseguibile del servizio in una posizione protetta comune

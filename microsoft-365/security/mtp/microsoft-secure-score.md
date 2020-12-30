@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 7fe5be065ee45700a1f08a39c8050757c3843f7b
-ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
+ms.openlocfilehash: 6e9dd214e53e3fdd601fe51e5522a3a24a7fd3d0
+ms.sourcegitcommit: a8f3c633714e934f9ad026c3bc72157ed535dcfc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "49682572"
+ms.lasthandoff: 12/29/2020
+ms.locfileid: "49738000"
 ---
 # <a name="microsoft-secure-score"></a>Microsoft Secure Score
 
@@ -50,7 +50,7 @@ Le organizzazioni accedono alla visualizzazione robusta delle metriche e delle t
 Sono stati assegnati punti per le azioni seguenti:
 
 - Configurazione delle funzionalità di sicurezza consigliate
-- Esecuzione di attività correlate alla sicurezza
+- Operazioni relative alla sicurezza
 - Risoluzione delle operazioni di miglioramento con un'applicazione o un software di terze parti o una attenuazione alternativa
 
 Alcune azioni di miglioramento offrono solo punti quando sono state completate. Alcuni forniscono punti parziali se sono stati completati per alcuni dispositivi o utenti. Se non è possibile o non si desidera applicare una delle azioni di miglioramento, è possibile scegliere di accettare il rischio o il rischio rimanente.
@@ -65,7 +65,6 @@ Il Punteggio viene aggiornato in tempo reale per riflettere le informazioni pres
 - [Confronta il tuo punteggio con organizzazioni come le tue](microsoft-secure-score-history-metrics-trends.md#compare-your-score-to-organizations-like-yours)
 - [Visualizzare le azioni di miglioramento e decidere un piano d'azione](microsoft-secure-score-improvement-actions.md#take-action-to-improve-your-score)
 - [Avviare i flussi di lavoro per l'analisi o l'implementazione](microsoft-secure-score-improvement-actions.md#view-improvement-action-details)
-    - [Centro sicurezza e integrazione di Microsoft 365 ServiceNow](tickets-security-center.md)
 
 ### <a name="how-improvement-actions-are-scored"></a>Come vengono segnate le azioni di miglioramento
 
@@ -75,7 +74,15 @@ Ad esempio, un'azione di miglioramento dichiara di ottenere 10 punti proteggendo
 
 ### <a name="products-included-in-secure-score"></a>Prodotti inclusi nel punteggio sicuro
 
-Sono attualmente disponibili suggerimenti per Microsoft 365 (incluso Exchange Online), Azure Active Directory, Microsoft Defender per endpoint, Microsoft Defender per Identity e cloud app Security. Sono disponibili suggerimenti per gli altri prodotti di sicurezza. I suggerimenti non riguarderanno tutte le superfici di attacco associate a ciascun prodotto, ma sono una buona linea di base. È inoltre possibile contrassegnare le azioni di miglioramento riportate da terze parti o da una attenuazione alternativa.
+Al momento sono disponibili suggerimenti per i prodotti seguenti:
+
+- Microsoft 365 (incluso Exchange Online)
+- Azure Active Directory
+- Microsoft Defender per endpoint
+- Che cosa è Microsoft Defender per identità?
+- Cloud App Security
+
+Sono disponibili suggerimenti per gli altri prodotti di sicurezza. I suggerimenti non riguarderanno tutte le superfici di attacco associate a ciascun prodotto, ma sono una buona linea di base. È inoltre possibile contrassegnare le azioni di miglioramento riportate da terze parti o da una attenuazione alternativa.
 
 ### <a name="security-defaults"></a>Impostazioni predefinite per la sicurezza
 
@@ -117,7 +124,7 @@ Con l'accesso in sola lettura, non è possibile modificare lo stato o le note pe
 
 ## <a name="risk-awareness"></a>Sensibilizzazione ai rischi
 
-Microsoft Secure Score è un riepilogo numerico della postura di sicurezza in base alle configurazioni di sistema, al comportamento degli utenti e ad altre misure relative alla sicurezza. Non si tratta di una misura assoluta del modo in cui il sistema o i dati verranno violati. Piuttosto, rappresenta la misura in cui sono stati adottati controlli di sicurezza nell'ambiente Microsoft che possono contribuire a compensare il rischio di essere violati. Nessun servizio online è completamente immune dalle violazioni della sicurezza e il Punteggio sicuro non deve essere interpretato come garanzia contro la violazione della sicurezza in alcun modo.
+Microsoft Secure Score è un riepilogo numerico della postura di sicurezza in base alle configurazioni di sistema, al comportamento degli utenti e ad altre misure relative alla sicurezza. Non si tratta di una misura assoluta del modo in cui il sistema o i dati verranno violati. Piuttosto, rappresenta la misura in cui sono stati adottati controlli di sicurezza nell'ambiente Microsoft che possono contribuire a compensare il rischio di essere violati. Nessun servizio online è immune dalle violazioni della sicurezza e il Punteggio sicuro non deve essere interpretato come una garanzia contro la violazione della sicurezza in alcun modo.
 
 ## <a name="we-want-to-hear-from-you"></a>L'opinione degli utenti è importante
 

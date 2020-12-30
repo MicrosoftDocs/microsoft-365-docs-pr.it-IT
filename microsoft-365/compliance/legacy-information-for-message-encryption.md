@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Informazioni su come eseguire la transizione dei file legacy alla crittografia messaggi (OME) di Office 365 per l'organizzazione.
-ms.openlocfilehash: 23f287fd01949d710c5cc5c65f0c36c6055d3a57
-ms.sourcegitcommit: 849b365bd3eaa9f3c3a9ef9f5973ef81af9156fa
+ms.openlocfilehash: bf64d7991a843d2fd3d4f5f927eaa5c4bfef921c
+ms.sourcegitcommit: a8f3c633714e934f9ad026c3bc72157ed535dcfc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49688433"
+ms.lasthandoff: 12/29/2020
+ms.locfileid: "49738033"
 ---
 # <a name="legacy-information-for-office-365-message-encryption"></a>Informazioni legacy per Office 365 Message Encryption
 
@@ -46,10 +46,6 @@ Ecco alcuni esempi:
 ## <a name="how-office-365-message-encryption-works-without-the-new-capabilities"></a>Funzionamento della crittografia dei messaggi di Office 365 senza le nuove funzionalità
 
 La crittografia dei messaggi di Office 365 è un servizio online basato su Microsoft Azure Rights Management (Azure RMS). Con Azure RMS, gli amministratori possono definire le regole del flusso di posta per determinare le condizioni per la crittografia. Ad esempio, una regola può richiedere la crittografia di tutti i messaggi indirizzati a un destinatario specifico.
-  
-Guardare questo breve video per vedere come funziona la crittografia dei messaggi di Office 365 senza le nuove funzionalità.
-  
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/c55540e7-f7f0-42f5-b254-4b2d2fbb1d63?autoplay=false]
   
 Quando un utente invia un messaggio di posta elettronica in Exchange Online che corrisponde a una regola di crittografia, il messaggio viene inviato con un allegato HTML. Il destinatario apre l'allegato HTML e segue le istruzioni per visualizzare il messaggio crittografato sul portale di crittografia dei messaggi di Office 365. Il destinatario può scegliere di visualizzare il messaggio accedendo con un account Microsoft o un lavoro o una scuola associati a Office 365 oppure utilizzando un codice Pass una tantum. Tali opzioni garantiscono che solo il destinatario specificato sia in grado di visualizzare il messaggio crittografato. Questo processo è molto diverso per le nuove funzionalità OME.
   
@@ -183,8 +179,9 @@ In qualità di amministratore di Exchange Online e Exchange Online Protection, �
 È anche possibile ripristinare l'aspetto predefinito in qualsiasi momento.
   
 Nel seguente esempio viene illustrato un logo personalizzato per ContosoPharma nell'allegato di posta elettronica:
-  
-![Esempio di visualizzazione della pagina del messaggio crittografato](../media/TA-OME-3attachment2.jpg)
+
+> [!div class="mx-imgBorder"]
+> ![Esempio di visualizzazione della pagina del messaggio crittografato](../media/TA-OME-3attachment2.jpg)
   
 **Per personalizzare i messaggi di posta elettronica di crittografia e il portale di crittografia con il marchio dell'organizzazione**
   
@@ -194,12 +191,12 @@ Nel seguente esempio viene illustrato un logo personalizzato per ContosoPharma n
 
    **Opzioni di personalizzazione della crittografia**
 
-**Per personalizzare questa funzionalità dell'esperienza di crittografia**|**Utilizzare questi comandi di Windows PowerShell**|
-|:-----|:-----|
-|Testo predefinito che accompagna i messaggi di posta elettronica crittografati  <br/> Il testo predefinito viene visualizzato sopra le istruzioni per la visualizzazione di messaggi crittografati  <br/> | `Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -EmailText "<string of up to 1024 characters>"` <br/> **Esempio:** `Set-OMEConfiguration -Identity "OME Configuration" -EmailText "Encrypted message from ContosoPharma secure messaging system"` <br/> |
-|dichiarazione di non responsabilità nella posta elettronica che contiene il messaggio crittografato  <br/> | `Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> DisclaimerText "<your disclaimer statement, string of up to 1024 characters>"` <br/> **Esempio:** `Set-OMEConfiguration -Identity "OME Configuration" -DisclaimerText "This message is confidential for the use of the addressee only"` <br/> |
-|testo visualizzato nella parte superiore del portale di visualizzazione del messaggio crittografato  <br/> | `Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -PortalText "<text for your portal, string of up to 128 characters>"` <br/> **Esempio:** `Set-OMEConfiguration -Identity "OME Configuration" -PortalText "ContosoPharma secure email portal"` <br/> |
-|Logo  <br/> | `Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -Image <Byte[]>` <br/> **Esempio:** `Set-OMEConfiguration -Identity "OME configuration" -Image (Get-Content "C:\Temp\contosologo.png" -Encoding byte)` <br/> Formati di file supportati: png, jpg, bmp o tiff  <br/> Dimensione ottimale relativa al file del logo: inferiore a 40 KB  <br/> Dimensioni ottimali relative all'immagine del logo: 170x70 pixel  <br/> |
+   | Per personalizzare questa funzionalità dell'esperienza di crittografia | Utilizzare questi comandi di Windows PowerShell |
+   |:-----|:-----|
+   |Testo predefinito che accompagna i messaggi di posta elettronica crittografati  <br/> Il testo predefinito viene visualizzato sopra le istruzioni per la visualizzazione di messaggi crittografati  <br/> | `Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -EmailText "<string of up to 1024 characters>"` <br/> **Esempio:**`Set-OMEConfiguration -Identity "OME Configuration" -EmailText "Encrypted message from ContosoPharma secure messaging system"` <br/> |
+   |dichiarazione di non responsabilità nella posta elettronica che contiene il messaggio crittografato  <br/> | `Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> DisclaimerText "<your disclaimer statement, string of up to 1024 characters>"` <br/> **Esempio:**`Set-OMEConfiguration -Identity "OME Configuration" -DisclaimerText "This message is confidential for the use of the addressee only"` <br/> |
+   |testo visualizzato nella parte superiore del portale di visualizzazione del messaggio crittografato  <br/> | `Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -PortalText "<text for your portal, string of up to 128 characters>"` <br/> **Esempio:**`Set-OMEConfiguration -Identity "OME Configuration" -PortalText "ContosoPharma secure email portal"` <br/> |
+   |Logo  <br/> | `Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -Image <Byte[]>` <br/> **Esempio:**`Set-OMEConfiguration -Identity "OME configuration" -Image (Get-Content "C:\Temp\contosologo.png" -Encoding byte)` <br/> Formati di file supportati: png, jpg, bmp o tiff  <br/> Dimensione ottimale relativa al file del logo: inferiore a 40 KB  <br/> Dimensioni ottimali relative all'immagine del logo: 170x70 pixel  <br/> |
 
 **Per rimuovere le personalizzazioni di marca dai messaggi di posta elettronica di crittografia e il portale di crittografia**
   
@@ -209,19 +206,19 @@ Nel seguente esempio viene illustrato un logo personalizzato per ContosoPharma n
 
    **Opzioni di personalizzazione della crittografia**
 
-|**Per ripristinare il testo e l'immagine predefiniti per questa funzionalità dell'esperienza di crittografia**|**Utilizzare questi comandi di Windows PowerShell**|
-|:-----|:-----|
-|Testo predefinito che accompagna i messaggi di posta elettronica crittografati  <br/> Il testo predefinito viene visualizzato sopra le istruzioni per la visualizzazione di messaggi crittografati  <br/> | `Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -EmailText "<empty string>"` <br/> **Esempio:** `Set-OMEConfiguration -Identity "OME Configuration" -EmailText ""` <br/> |
-|dichiarazione di non responsabilità nella posta elettronica che contiene il messaggio crittografato  <br/> | `Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> DisclaimerText "<empty string>"` <br/> **Esempio:** `Set-OMEConfiguration -Identity "OME Configuration" -DisclaimerText ""` <br/> |
-|testo visualizzato nella parte superiore del portale di visualizzazione del messaggio crittografato  <br/> | `Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -PortalText "<empty string>"` <br/> **Esempio ripristinando il valore predefinito:**`Set-OMEConfiguration -Identity "OME Configuration" -PortalText ""` <br/> |
-|Logo  <br/> | `Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -Image <"$null">` <br/> **Esempio ripristinando il valore predefinito:**`Set-OMEConfiguration -Identity "OME configuration" -Image $null` <br/> |
+   | Per ripristinare il testo e l'immagine predefiniti per questa funzionalità dell'esperienza di crittografia | Utilizzare questi comandi di Windows PowerShell |
+   |:-----|:-----|
+   |Testo predefinito che accompagna i messaggi di posta elettronica crittografati  <br/> Il testo predefinito viene visualizzato sopra le istruzioni per la visualizzazione di messaggi crittografati  <br/> | `Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -EmailText "<empty string>"` <br/> **Esempio:**`Set-OMEConfiguration -Identity "OME Configuration" -EmailText ""` <br/> |
+   |dichiarazione di non responsabilità nella posta elettronica che contiene il messaggio crittografato  <br/> | `Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> DisclaimerText "<empty string>"` <br/> **Esempio:**`Set-OMEConfiguration -Identity "OME Configuration" -DisclaimerText ""` <br/> |
+   |testo visualizzato nella parte superiore del portale di visualizzazione del messaggio crittografato  <br/> | `Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -PortalText "<empty string>"` <br/> **Esempio ripristinando il valore predefinito:**`Set-OMEConfiguration -Identity "OME Configuration" -PortalText ""` <br/> |
+   |Logo  <br/> | `Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -Image <"$null">` <br/> **Esempio ripristinando il valore predefinito:**`Set-OMEConfiguration -Identity "OME configuration" -Image $null` <br/> |
 
 ## <a name="service-information-for-legacy-office-365-message-encryption-prior-to-the-release-of-the-new-ome-capabilities"></a>Informazioni sul servizio per la crittografia dei messaggi di Office 365 legacy prima del rilascio delle nuove funzionalità OME
 <a name="LegacyServiceInfo"> </a>
 
 La tabella seguente fornisce informazioni tecniche per il servizio di crittografia dei messaggi di Office 365 prima del rilascio delle nuove funzionalità OME.
   
-|**Dettagli servizio**|**Descrizione**|
+| Dettagli servizio | Descrizione |
 |:-----|:-----|
 |Requisiti dei dispositivi client  <br/> |I messaggi crittografati possono essere visualizzati su tutti i dispositivi client, purché l'allegato HTML possa essere aperto in un browser moderno che supporta Post per i moduli.  <br/> |
 |Algoritmo di crittografia e conformità FIPS (Federal Information Processing Standards)  <br/> |La crittografia dei messaggi di Office 365 utilizza le stesse chiavi di crittografia di Windows Azure Information Rights Management (IRM) e supporta Modalità crittografia 2 (chiave a 2 K per RSA e chiave a 256 bit per sistemi SHA-1). Per ulteriori informazioni sulle modalità di crittografia IRM sottostanti, vedere [modalità di crittografia ad RMS](https://technet.microsoft.com/library/hh867439%28WS.10%29.aspx).  <br/> |
