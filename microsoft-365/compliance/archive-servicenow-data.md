@@ -12,14 +12,14 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Gli amministratori possono configurare un connettore per l'importazione e l'archiviazione dei dati di ServiceNow da Globanet a Microsoft 365. Questo connettore consente di archiviare i dati provenienti da origini dati di terze parti in Microsoft 365. Dopo l'archiviazione dei dati, è possibile utilizzare le funzionalità di conformità, ad esempio la conservazione legale, la ricerca del contenuto e i criteri di ritenzione per gestire i dati di terze parti.
-ms.openlocfilehash: 4139e66cc1554b7a7306c6076fd8475fe47f5cf5
-ms.sourcegitcommit: a3215cc22faa47e935d22300c481e47ab2680b44
+ms.openlocfilehash: 99b1f64bdb1d977816d4881fa633d77acd60952c
+ms.sourcegitcommit: 36d12e02f6fda199ae7f2fb72fe52d7e2b5b4efd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "49722951"
+ms.lasthandoff: 12/31/2020
+ms.locfileid: "49740333"
 ---
-# <a name="set-up-a-connector-to-archive-servicenow-data-preview"></a>Configurare un connettore per l'archiviazione dei dati di ServiceNow (anteprima)
+# <a name="set-up-a-connector-to-archive-servicenow-data"></a>Configurare un connettore per l'archiviazione dei dati di ServiceNow
 
 Utilizzare un connettore di Globanet nel centro conformità di Microsoft 365 per importare e archiviare i dati dalla piattaforma ServiceNow alle cassette postali degli utenti nell'organizzazione Microsoft 365. Globanet fornisce un connettore [ServiceNow](https://globanet.com/servicenow/) che consente di acquisire elementi dall'origine dati di terze parti e di importare tali elementi in Microsoft 365. Il connettore converte il contenuto, ad esempio messaggi dinamici, allegati e post da ServiceNow a un formato di messaggio di posta elettronica e quindi importa tali elementi nelle cassette postali degli utenti in Microsoft 365.
 

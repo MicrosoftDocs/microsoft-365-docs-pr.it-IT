@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Informazioni su come visualizzare i dettagli, modificare e modificare in blocco l'elenco dei depositari in un caso di eDiscovery avanzato.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 95b7a7dbec5656a1ac0692ed465eb5a99d7ca11a
-ms.sourcegitcommit: 51a9f34796535309b8ca8b52da92da0a3621327b
+ms.openlocfilehash: a1e9e9d481073c8bb2827d5d65537dbf2b63ef1f
+ms.sourcegitcommit: 555b200b618085706dabf8648d27fb6d6427cfce
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "45024806"
+ms.lasthandoff: 12/30/2020
+ms.locfileid: "49739869"
 ---
 # <a name="manage-custodians-in-an-advanced-ediscovery-case"></a>Gestire i depositari in un caso avanzato di eDiscovery
 
@@ -60,7 +60,7 @@ Per visualizzare i dettagli relativi a un custode, fare clic sul custode dall'el
 
   - **Stato blocco** -indica se il custode è stato messo in attesa. 
 
-  - **Stato della comunicazione**: indica se il custode ha emesso un avviso di esenzione. Se al custode è stato emesso un avviso, viene **pubblicato**questo valore di questa proprietà. Se al custode non è stato emesso alcun avviso, lo stato non viene **pubblicato**. 
+  - **Stato della comunicazione**: indica se il custode ha emesso un avviso di esenzione. Se al custode è stato emesso un avviso, viene **pubblicato** questo valore di questa proprietà. Se al custode non è stato emesso alcun avviso, lo stato non viene **pubblicato**. 
 
   - **Status** : lo stato del custode all'interno del caso. Lo stato **attivo** indica che il custode è parte del caso. Se un custode viene rilasciato da un caso, lo stato viene modificato in **rilasciato**. 
 
@@ -77,7 +77,7 @@ Man mano che il caso progredisce, è possibile rilevare che potrebbero essere pr
 
 Per aggiornare le origini dati associate a un custode:
 
-1. Accedere a **eDiscovery > Advanced eDiscovery** e aprire il caso.
+1. Accedere a  **eDiscovery > Advanced eDiscovery** e aprire il caso.
   
 2. Fare clic sulla scheda **origini** .
   
@@ -89,7 +89,7 @@ Per aggiornare le origini dati associate a un custode:
   
 5. Fare clic sulla scheda **Seleziona origini dati aggiuntive** per aggiungere o rimuovere team, SharePoint o cassette postali di Exchange associati al custode. 
 
-    Per ulteriori informazioni sulle origini dati associate a un custode, vedere "passaggio 3: associare altre origini dati a un custode" in [Aggiungi depositari a un caso](add-custodians-to-case.md#step-3-associate-additional-data-sources-to-a-custodian). 
+    Per ulteriori informazioni sulle origini dati associate a un custode, vedere [aggiungere i depositari a un caso](add-custodians-to-case.md). 
   
 6. Fare clic su **Place detentive** holds per abilitare o disabilitare il blocco per il custode.
 
@@ -101,7 +101,7 @@ Quando un custode viene aggiunto a un caso, i dati che si trovano nelle origini 
 
 Per attivare il processo di reindicizzazione per risolvere gli elementi parzialmente indicizzati:
 
-1. Accedere a **eDiscovery > Advanced eDiscovery** e aprire il caso.
+1. Accedere a  **eDiscovery > Advanced eDiscovery** e aprire il caso.
 
 2. Fare clic sulla scheda **origini** .
 
@@ -113,7 +113,7 @@ Per attivare il processo di reindicizzazione per risolvere gli elementi parzialm
 
 La reindicizzazione dei dati del custode è un processo a esecuzione prolungata. il processo corrispondente creato è denominato **reindicizzazione dei dati del custode**. È possibile monitorare lo stato di avanzamento nella scheda **processi** o nella scheda **depositari** monitorando lo stato nella colonna **stato processo di indicizzazione** .
 
-Per ulteriori informazioni, vedere:
+Per altre informazioni, vedere:
 
 - [Gestire gli errori di elaborazione](processing-data-for-case.md)
 
@@ -127,7 +127,7 @@ Se si rilascia un custode dopo la pubblicazione di un avviso di esenzione, verr�
 
 Per rilasciare un custode: 
 
-1. Accedere a **eDiscovery > Advanced eDiscovery** e aprire il caso.
+1. Accedere a  **eDiscovery > Advanced eDiscovery** e aprire il caso.
 
 2. Fare clic sulla scheda **origini** .
 

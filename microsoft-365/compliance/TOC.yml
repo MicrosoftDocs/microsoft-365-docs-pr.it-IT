@@ -589,7 +589,7 @@
           items:
             - name: Aggiungere responsabili a un caso
               href: add-custodians-to-case.md
-            - name: Aggiungere in blocco responsabili a un caso
+            - name: Importare più responsabili in un caso
               href: bulk-add-custodians.md
             - name: Gestire i responsabili
               href: manage-new-custodians.md

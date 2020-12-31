@@ -12,14 +12,14 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Gli amministratori possono configurare un connettore per l'importazione e l'archiviazione dei dati di Redtail Speak da Globanet a Microsoft 365. Questo connettore consente di archiviare i dati provenienti da origini dati di terze parti in Microsoft 365. Dopo l'archiviazione dei dati, è possibile utilizzare le funzionalità di conformità, ad esempio la conservazione legale, la ricerca del contenuto e i criteri di ritenzione per gestire i dati di terze parti.
-ms.openlocfilehash: 546298288e69746856a1250cc4b87643dd479c91
-ms.sourcegitcommit: a3215cc22faa47e935d22300c481e47ab2680b44
+ms.openlocfilehash: ee1e5c63d8990d5847241dc0ab4a88ed19e3215f
+ms.sourcegitcommit: 36d12e02f6fda199ae7f2fb72fe52d7e2b5b4efd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "49723009"
+ms.lasthandoff: 12/31/2020
+ms.locfileid: "49740293"
 ---
-# <a name="set-up-a-connector-to-archive-redtail-speak-data-preview"></a>Configurare un connettore per l'archiviazione dei dati di Redtail Speak (anteprima)
+# <a name="set-up-a-connector-to-archive-redtail-speak-data"></a>Configurare un connettore per l'archiviazione dei dati di Redtail
 
 Utilizzare un connettore di Globanet nel centro conformità di Microsoft 365 per importare e archiviare i dati da Redtail parlare con le cassette postali degli utenti nell'organizzazione Microsoft 365. Globanet fornisce un connettore [Redtail Speak](https://globanet.com/redtail/) configurato per acquisire elementi dal server SFTP dell'organizzazione in cui gli elementi vengono ricevuti da Redtail. Il connettore converte il contenuto da Redtail parlare con un formato di messaggio di posta elettronica e quindi importa tali elementi nella cassetta postale dell'utente in Microsoft 365.
 
@@ -31,7 +31,7 @@ Nella panoramica seguente viene illustrato il processo di utilizzo di un connett
 
 ![Flusso di lavoro di archiviazione per Redtail Speak data](../media/RedtailSpeakConnectorWorkflow.png)
 
-1. L'organizzazione collabora con Redtail parlare per impostare e configurare un gateway SMTP in cui i messaggi giornalieri vengono inoltrati da Redtail parlare con il server SFTP organizzazioni.
+1. L'organizzazione collabora con Redtail parlare per impostare e configurare un gateway SMTP in cui i messaggi vengono inoltrati da Redtail parlare giornalmente con il server SFTP dell'organizzazione.
 
 2. Una volta ogni 24 ore, gli elementi di Redtail Speak vengono copiati nel sito Globanet Merge1. Il connettore converte anche gli elementi speak di Redtail in un formato di messaggio di posta elettronica.
 
@@ -43,7 +43,7 @@ Nella panoramica seguente viene illustrato il processo di utilizzo di un connett
 
 - Creare un account Merge1 di Globanet per i connettori Microsoft. Per creare un account, contattare il [supporto clienti di Globanet](https://globanet.com/contact-us/). È necessario accedere a questo account quando si crea il connettore nel passaggio 1.
 
-- In STEP you, è necessario specificare il server SFTP dell'organizzazione. Ciò è necessario affinché Globanet Merge1 possa contattarlo per raccogliere i dati di Redtail Speak tramite SFTP.
+- Nel passaggio 2, è necessario specificare il server SFTP dell'organizzazione. Ciò è necessario affinché Globanet Merge1 possa contattarlo per raccogliere i dati di Redtail Speak tramite SFTP.
 
 - L'utente che crea il connettore dell'utilità di importazione di Redtail Speak nel passaggio 1 (e lo completa nel passaggio 3) deve essere assegnato al ruolo di esportazione delle cassette postali in Exchange Online. Questo ruolo è necessario per aggiungere connettori nella pagina dei connettori dati nel centro conformità di Microsoft 365. Per impostazione predefinita, questo ruolo non è assegnato a nessun gruppo di ruoli in Exchange Online. È possibile aggiungere il ruolo import export delle cassette postali al gruppo di ruoli Gestione organizzazione in Exchange Online. In alternativa, è possibile creare un gruppo di ruoli, assegnare il ruolo di esportazione delle cassette postali e quindi aggiungere gli utenti corretti come membri. Per ulteriori informazioni, vedere la sezione creare gruppi di [ruoli](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#create-role-groups) o [modificare gruppi di ruoli](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups) nell'articolo "gestire i gruppi di ruoli in Exchange Online".
 

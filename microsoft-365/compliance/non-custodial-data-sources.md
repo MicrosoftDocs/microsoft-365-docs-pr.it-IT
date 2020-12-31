@@ -14,17 +14,17 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-description: È possibile aggiungere origini dati non detentive a un caso di eDiscovery avanzato e inserire un'esenzione nell'origine dati. Le origini dati non detentive vengono reindicizzate, pertanto qualsiasi contenuto ritenuto parzialmente indicizzato viene rielaborato per renderlo completamente e rapidamente ricercabile.
-ms.openlocfilehash: 2009a8cc82dc9407e9871409e85cdcd321ea9bb0
-ms.sourcegitcommit: 51a9f34796535309b8ca8b52da92da0a3621327b
+description: È possibile aggiungere origini dati non detentive a un caso di eDiscovery avanzato e inserire un'esenzione nell'origine dati. Le origini dati non detentive vengono reindicizzate, in modo che tutti i contenuti contrassegnati come parzialmente indicizzati vengano rielaborati per renderli completamente e rapidamente disponibili per la ricerca.
+ms.openlocfilehash: 467f0e1167bfebe21bd3f2bbd52acd81529b8685
+ms.sourcegitcommit: 36d12e02f6fda199ae7f2fb72fe52d7e2b5b4efd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "45024746"
+ms.lasthandoff: 12/31/2020
+ms.locfileid: "49740353"
 ---
 # <a name="add-non-custodial-data-sources-to-an-advanced-ediscovery-case"></a>Aggiungere origini dati non detentive a un caso avanzato di eDiscovery
 
-In Advanced eDiscovery casi, non sempre soddisfare le proprie esigenze per associare un'origine dati Microsoft 365 con un custode nel caso. Tuttavia, potrebbe essere necessario associare tali dati a un caso in modo che sia possibile cercarlo, aggiungerlo al set di revisione e rivederlo. La nuova funzionalità denominata *origini dati non detentive* consente di aggiungere dati a un caso senza dover associare i dati a un custode. Applica inoltre la stessa funzionalità avanzata di eDiscovery ai dati non detentivi disponibili per i dati associati al custode. Due delle funzionalità più utili che è possibile applicare ai dati non detentivi sono l'inserimento e l'elaborazione in attesa tramite l' [indicizzazione avanzata](indexing-custodian-data.md).
+In Advanced eDiscovery casi, non sempre soddisfare le proprie esigenze per associare un'origine dati Microsoft 365 con un custode nel caso. Tuttavia, potrebbe essere comunque necessario associare tali dati a un caso in modo che sia possibile cercarlo, aggiungerlo a un set di revisione e analizzarlo e rivederlo. La caratteristica in Advanced eDiscovery è denominata *origini dati non detentive* e consente di aggiungere dati a un caso senza che sia necessario associarlo a un custode. Applica inoltre la stessa funzionalità avanzata di eDiscovery ai dati non detentivi disponibili per i dati associati al custode. Due delle cose più utili che è possibile applicare ai dati non detentivi sono l'inserimento e l'elaborazione in attesa tramite l' [indicizzazione avanzata](indexing-custodian-data.md).
 
 ## <a name="add-a-non-custodial-data-source"></a>Aggiunta di un'origine dati non priva di detenzione
 
@@ -32,34 +32,43 @@ Eseguire la procedura seguente per aggiungere e gestire origini dati non detenti
 
 1. Nella Home page di **Advanced eDiscovery** fare clic sul caso per il quale si desidera aggiungere i dati.
 
-2. Nella pagina **origini** fare clic sulla scheda **percorsi dati** e quindi fare clic su **Aggiungi percorso dati**.
+2. Fare clic sulla scheda **origini dati** , quindi fare clic su **Aggiungi**  >  **percorsi** dati.
 
-3. Fare clic su **Aggiungi percorso dati** e scegliere le origini dati che si desidera aggiungere al caso. È possibile aggiungere più cassette postali e siti.
+3. Nella pagina nuovo riquadro a comparsa **posizioni non detentive** scegliere le origini dati che si desidera aggiungere al caso. È possibile aggiungere più cassette postali e siti espandendo le sezioni di **SharePoint** o di **Exchange** e quindi facendo clic su **modifica**.
 
-4. Nella pagina **scegliere i percorsi** della procedura guidata, aggiungere le cassette postali o i siti (o entrambi) come origini dati non detentive al caso.
+   ![Aggiungere i siti di SharePoint e le cassette postali di Exchange come origini dati non detentive](../media/NonCustodialDataSources1.png)
 
-5. Dopo aver aggiunto le origini dati, fare clic su **Avanti**.
+   - **SharePoint** -fare clic su **modifica** per aggiungere siti. Selezionare un sito nell'elenco oppure è possibile cercare un sito digitando l'URL del sito nella barra di ricerca. Selezionare i siti che si desidera aggiungere come origini dati non depositarie e fare clic su **Aggiungi**.
 
-6. Nella pagina **Place** holds scegliere le origini dati che si desidera inserire in attesa selezionando o deselezionando la casella di controllo associata.
+   - **Exchange** -fare clic su **modifica** per aggiungere le cassette postali. Digitare un nome o un alias (almeno tre caratteri) nella casella di ricerca per cassette postali o gruppi di distribuzione. Selezionare le cassette postali che si desidera aggiungere come origini dati non depositarie e fare clic su **Aggiungi**.
 
-7. Verificare le selezioni di blocco e quindi fare clic su **Invia**.
+   > [!NOTE]
+   > È possibile utilizzare le sezioni di **SharePoint** ed **Exchange** per aggiungere siti e cassette postali associati a un gruppo di team o Yammer come origini dati non detentive. È necessario aggiungere separatamente la cassetta postale e il sito associati a un gruppo di team o Yammer.
 
-   Ogni origine dati non priva di detenzione aggiunta è elencata nella pagina **origini dati** .
+4. Dopo aver aggiunto origini dati non detentive, è possibile disporre di tali posizioni in attesa o meno. Selezionare o deselezionare la casella di controllo **blocca** accanto all'origine dati per metterla in attesa.
 
-   Inoltre, un processo denominato *reindicizzazione dei dati non detentivi* viene creato e visualizzato nella scheda **processi** del caso. Una volta creato, il processo di indicizzazione avanzato è stato avviato e le origini dati vengono reindicizzate.
+5. Fare clic su **Aggiungi** nella parte inferiore della pagina nuovo riquadro a comparsa **posizioni dati non detentive** per aggiungere le origini dati al caso.
 
-## <a name="managing-the-hold-on-non-custodial-data-sources"></a>Gestione del blocco su origini dati non detentive
+   Ogni origine dati non priva di detenzione aggiunta è elencata nella pagina **origini dati** . Le origini dati non detentive sono identificate dal valore **percorso dati** nella colonna **tipo di origine** .
 
-Dopo aver posizionato un'esenzione su un'origine dati non di detenzione, viene creato automaticamente un criterio di conservazione che contiene tutte le origini dati non detentive del caso. Quando si impostano altre origini dati non detentive, queste vengono aggiunte ai criteri di blocco.
+   ![Origini dati non detentive nella scheda origini dati](../media/NonCustodialDataSources2.png)
 
-1. Nella **Home** page del caso, fare clic sulla scheda **esenzioni** .
+Dopo aver aggiunto le origini dati non detentive al caso, viene creato e visualizzato nella scheda **processi** del caso un processo denominato *reindicizzazione dei dati non detentivi* . Una volta creato, il processo di indicizzazione avanzato è stato avviato e le origini dati vengono reindicizzate.
 
-2. Nella pagina **esenzioni** e fare clic su **NCDSHold \<GUID\> -**, in cui il valore GUID è univoco per il caso.
+## <a name="manage-the-hold-for-non-custodial-data-sources"></a>Gestire il blocco per le origini dati non detentive
 
-3. Nella pagina a comparsa fare clic su **Modifica blocco** per visualizzare tutte le origini dati non detentive che sono state inserite in attesa.
+Dopo aver posizionato un'esenzione su un'origine dati non di detenzione, viene creato automaticamente un criterio di conservazione contenente le origini dati non detentive del caso. Quando si impostano altre origini dati non detentive, queste vengono aggiunte ai criteri di blocco.
 
-È possibile eseguire le seguenti attività di gestione su origini dati non detentive:
+1. Aprire il caso Advanced eDiscovery e selezionare la scheda **blocca** .
 
-- È possibile modificare il blocco per creare un blocco basato su query applicato a tutte le origini dati non detentive nel caso.
+2. Fare clic su **NCDSHold- \<GUID\>**, in cui il valore GUID è univoco per il caso.
 
-- È possibile rilasciare un'origine dati non detentiva dall'esenzione. Il rilascio di un'origine dati non rimuove l'origine dati non affidatario dal caso. Rimuove solo il blocco che è stato inserito nell'origine dati.
+   La pagina del riquadro a comparsa Visualizza informazioni e statistiche sulle origini dati non detentive in attesa.
+
+   ![La pagina del riquadro a comparsa per le origini dati non detentive contiene le statistiche di visualizzazione](../media/NonCustodialDataSourcesHoldFlyout.png)
+
+3. Fare clic su **Modifica blocco** per visualizzare le origini dati non detentive inserite in attesa ed eseguire le attività di gestione seguenti:
+
+   - Nella pagina **percorsi** è possibile rilasciare un'origine dati non priva di detenzione rimuoverla dall'esenzione. Il rilascio di un'origine dati non rimuove l'origine dati non affidatario dal caso. Rimuove solo il blocco che è stato inserito nell'origine dati.
+
+   - Nella pagina **query** è possibile modificare il blocco per creare un blocco basato su query applicato a tutte le origini dati non detentive del caso.

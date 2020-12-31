@@ -12,14 +12,14 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Gli amministratori possono configurare un connettore per l'importazione e l'archiviazione dei dati Chatter di Salesforce da Globanet a Microsoft 365. Questo connettore consente di archiviare i dati provenienti da origini dati di terze parti in Microsoft 365. Dopo l'archiviazione dei dati, è possibile utilizzare le funzionalità di conformità, ad esempio la conservazione legale, la ricerca del contenuto e i criteri di ritenzione per gestire i dati di terze parti.
-ms.openlocfilehash: 60d86cd01ef8da3a02839d4a3f815be02dc1ee01
-ms.sourcegitcommit: a3215cc22faa47e935d22300c481e47ab2680b44
+ms.openlocfilehash: 518eb38756d86812a8b3d41e4bc2cd46d5a23386
+ms.sourcegitcommit: 36d12e02f6fda199ae7f2fb72fe52d7e2b5b4efd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "49723026"
+ms.lasthandoff: 12/31/2020
+ms.locfileid: "49740313"
 ---
-# <a name="set-up-a-connector-to-archive-salesforce-chatter-data-preview"></a>Configurare un connettore per archiviare i dati delle chiacchiere Salesforce (anteprima)
+# <a name="set-up-a-connector-to-archive-salesforce-chatter-data"></a>Configurare un connettore per l'archiviazione dei dati relativi alle chiacchiere Salesforce
 
 Utilizzare un connettore di Globanet nel centro conformità di Microsoft 365 per importare e archiviare i dati dalla piattaforma di Salesforce Chatter alle cassette postali degli utenti nell'organizzazione Microsoft 365. Globanet fornisce un connettore di [Salesforce Chatter](http://globanet.com/chatter/) che consente di acquisire elementi dall'origine dati di terze parti e di importare tali elementi in Microsoft 365. Il connettore converte il contenuto, ad esempio chat, allegati e messaggi da Salesforce Chatter, in un formato di messaggio di posta elettronica e quindi importa tali elementi nella cassetta postale dell'utente in Microsoft 365.
 
