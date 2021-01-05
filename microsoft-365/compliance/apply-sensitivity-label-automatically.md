@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Quando si crea un'etichetta di riservatezza, è possibile assegnare automaticamente un'etichetta a file e messaggi di posta elettronica oppure chiedere agli utenti di selezionare l'etichetta consigliata.
-ms.openlocfilehash: dafb31f823dc8c63fa19ad8dba0624ee2037b859
-ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
+ms.openlocfilehash: 3f789396c3ee6746277e01f8b5c6a772bcd528ac
+ms.sourcegitcommit: 98b889e674ad1d5fa37d4b6c5fc3eda60a1d67f3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "49682831"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49751428"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Applicare automaticamente un'etichetta di riservatezza al contenuto
 
@@ -128,11 +128,13 @@ Quando si seleziona l'opzione **Tipi di informazioni sensibili**, viene visualiz
 
 ![Tipi di informazioni sensibili per l'assegnazione automatica di etichette nelle app Office](../media/sensitivity-labels-sensitive-info-types.png)
 
-Dopo aver selezionato i tipi di informazioni sensibili, è possibile definire la condizione modificando il numero di istanze o l'accuratezza della corrispondenza. Per altre informazioni su queste opzioni, vedere [Ottimizzazione delle regole affinché siano più facili o difficili da soddisfare](data-loss-prevention-policies.md#tuning-rules-to-make-them-easier-or-harder-to-match).
+Analogamente a quando si configurano i criteri sulla prevenzione della perdita dei dati, è possibile perfezionare la condizione cambiando il conteggio delle istanze e l’accuratezza della corrispondenza. Ad esempio:
 
-Inoltre, è possibile scegliere se una condizione deve rilevare tutti i tipi di informazioni riservate o solo uno. Per rendere le condizioni più flessibili o complesse, è possibile aggiungere gruppi e usare operatori logici tra i gruppi. Per altre informazioni, vedere [Raggruppamento e operatori logici](data-loss-prevention-policies.md#grouping-and-logical-operators).
+![Opzioni per l'accuratezza della corrispondenza e numero di istanze](../media/sensitivity-labels-instance-count-match-accuracy.png)
 
-![Opzioni per il numero di istanze e l'accuratezza della corrispondenza](../media/Sensitivity-labels-instance-count-match-accuracy.png)
+Per altre informazioni su queste opzioni di configurazione, vedere la documentazione sulla prevenzione della perdita dei dati: [Modificare le regole per rendere più facili o difficili le corrispondenze](data-loss-prevention-policies.md#tuning-rules-to-make-them-easier-or-harder-to-match).
+
+Inoltre, analogamente alla configurazione dei criteri di prevenzione della perdita dei dati, è possibile scegliere se una condizione deve rilevare tutti i tipi di informazioni sensibili o solo una di esse. Per rendere le condizioni più flessibili o complesse, è possibile aggiungere [gruppi e usare operatori logici tra i gruppi](data-loss-prevention-policies.md#grouping-and-logical-operators).
 
 ### <a name="configuring-trainable-classifiers-for-a-label"></a>Configurazione di classificatori sottoponibili a training per un'etichetta
 

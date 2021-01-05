@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Creare etichette di conservazione e criteri di etichettatura automatica in modo da poter applicare automaticamente etichette per conservare ciò che serve ed eliminare ciò che non serve
-ms.openlocfilehash: b4e1afbc520b7ec046b4af399e7c1c0cd094e8f9
-ms.sourcegitcommit: 5756896ad87e28fac20f7981eaaeacfb0c098254
+ms.openlocfilehash: a79e7a96cc02957b0bac4dba31b24c5727f0483b
+ms.sourcegitcommit: 98b889e674ad1d5fa37d4b6c5fc3eda60a1d67f3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/23/2020
-ms.locfileid: "49730157"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49751181"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>Applicare automaticamente un'etichetta di conservazione per conservare o eliminare il contenuto
 
@@ -129,7 +129,7 @@ Dopo aver applicato l’etichetta al contenuto tramite un criterio di applicazio
 
 #### <a name="auto-apply-labels-to-content-with-specific-types-of-sensitive-information"></a>Applicare automaticamente etichette al contenuto con tipi specifici di informazioni sensibili
 
-Quando si creano criteri di conservazione ad applicazione automatica per le informazioni riservate, viene visualizzato lo stesso elenco di modelli di criteri mostrato quando si creano criteri di prevenzione della perdita dei dati (DLP). Ogni modello è preconfigurato in modo da cercare specifici tipi di informazioni riservate. Ad esempio, il modello mostrato qui cerca i numeri ITIN, SSN e di passaporto nella categoria **Privacy**, e nel **Modello dati personali (PII) Stati Uniti**:
+Quando si creano criteri di conservazione ad applicazione automatica per le informazioni riservate, viene visualizzato lo stesso elenco di modelli di criteri mostrato quando si creano criteri di prevenzione della perdita dei dati (DLP). Ogni modello è preconfigurato in modo da cercare specifici tipi di informazioni riservate. Ad esempio, il modello mostrato di seguito cerca i numeri ITIN, SSN e di passaporto nella categoria **Privacy**, e nel modello **Dati personali (PII) degli Stati Uniti**:
 
 ![Modelli di criteri con le tipologie di informazioni sensibili](../media/dafd87d4-c7bb-439a-ac7b-193c018f98a5.png)
 
