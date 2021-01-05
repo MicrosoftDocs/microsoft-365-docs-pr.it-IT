@@ -1,5 +1,5 @@
 ---
-title: Introduzione ai classificatori sottoponibili a training (anteprima)
+title: Per iniziare con i classificatori sottoponibili a training
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -18,20 +18,20 @@ search.appverid:
 - MOE150
 - MET150
 description: Un classificatore Microsoft 365 è uno strumento che è possibile addestrare per riconoscere vari tipi di contenuto fornendo esempi da esaminare. In questo articolo viene illustrato come creare e formare un classificatore personalizzato e come riqualificarli per aumentare l'accuratezza.
-ms.openlocfilehash: 9fe50f7faada77492fd93a86d0c3549cc8e1d361
-ms.sourcegitcommit: fcc1b40732f28f075d95faffc1655473e262dd95
+ms.openlocfilehash: bca1de5edc3efd38f943b02091c3f47d832e6a19
+ms.sourcegitcommit: 54d1a2f363b2d5b63aae258c3cec0573a08f2866
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/14/2020
-ms.locfileid: "49072965"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49752660"
 ---
-# <a name="get-started-with-trainable-classifiers-preview"></a>Introduzione ai classificatori sottoponibili a training (anteprima)
+# <a name="get-started-with-trainable-classifiers"></a>Per iniziare con i classificatori sottoponibili a training
 
 Un classificatore addestrabile di Microsoft 365 è uno strumento che è possibile addestrare per riconoscere vari tipi di contenuto fornendo esempi da esaminare. Una volta addestrato, è possibile utilizzarlo per identificare gli elementi per l'applicazione delle etichette di sensibilità di Office, i criteri di conformità delle comunicazioni e i criteri etichette di conservazione.
 
 La creazione di un classificatore addestrabile personalizzato comporta innanzitutto l'assegnazione di campioni che sono scelti dall'uomo e corrispondono positivamente alla categoria. Successivamente, dopo averli elaborati, è possibile testare la capacità dei classificatori di predire assegnando un insieme di esempi positivi e negativi. In questo articolo viene illustrato come creare e formare un classificatore personalizzato e come migliorare le prestazioni di classificatori addestrabili personalizzati e classificatori preformati nel corso della loro durata tramite la riqualificazione.
 
-Per ulteriori informazioni sui diversi tipi di classificatori, vedere [informazioni sui classificatori addestrabili (Preview)](classifier-learn-about.md).
+Per ulteriori informazioni sui diversi tipi di classificatori, vedere [informazioni sui classificatori addestrabili](classifier-learn-about.md).
 
 ## <a name="prerequisites"></a>Prerequisiti
 
@@ -44,7 +44,7 @@ I classificatori sono una funzionalità di conformità di Microsoft 365 E5 o E5.
 Per accedere ai classificatori nell'interfaccia utente: 
 
 - l'amministratore globale deve optare per il tenant per creare classificatori personalizzati.
-- L'amministratore della conformità o il ruolo di analisi dei dati è necessario per formare un classificatore.
+- Il ruolo di amministratore conformità è necessario per formare un classificatore.
 
 Sono necessari account con queste autorizzazioni per l'utilizzo dei classificatori in questi scenari:
 

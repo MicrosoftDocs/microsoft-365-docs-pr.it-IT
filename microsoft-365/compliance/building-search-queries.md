@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.custom: seo-marvel-mar2020
 description: Utilizzare parole chiave e condizioni per limitare l'ambito della ricerca durante la ricerca di dati con Advanced eDiscovery in Microsoft 365.
-ms.openlocfilehash: 38322963f04ad67d8675247bdd754ffb1d2f13e8
-ms.sourcegitcommit: 490a65d32b6d656c661c36a2cc8dda03bf6cba77
+ms.openlocfilehash: 8ec1e099625bb081f8a915f08ac818fddcc2b60d
+ms.sourcegitcommit: 98b889e674ad1d5fa37d4b6c5fc3eda60a1d67f3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "49588553"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49751113"
 ---
 # <a name="build-search-collection-queries-in-advanced-ediscovery"></a>Generare query insieme di ricerca in Advanced eDiscovery
 
@@ -39,7 +39,7 @@ In alternativa, è possibile selezionare la casella di controllo **Mostra elenco
 
 ![Utilizzare l'elenco di parole chiave per ottenere statistiche su ogni parola chiave nella query](../media/KeywordListSearch.png)
 
-Perché usare l'elenco di parole chiave? È possibile ottenere statistiche che mostrano quanti elementi corrispondono a ciascuna parola chiave nell'elenco delle parole chiave. In questo modo è possibile identificare rapidamente le parole chiave più (e meno) effettive. È inoltre possibile utilizzare una frase parola chiave (racchiusa tra parentesi) in una riga dell'elenco parole chiave. Per ulteriori informazioni sulle statistiche di ricerca, vedere [Search Statistics](search-statistics.md).
+Perché usare l'elenco di parole chiave? È possibile ottenere statistiche che mostrano quanti elementi corrispondono a ciascuna parola chiave nell'elenco delle parole chiave. In questo modo è possibile identificare rapidamente le parole chiave più (e meno) effettive. È inoltre possibile utilizzare una frase parola chiave (racchiusa tra parentesi) in una riga dell'elenco parole chiave. Per ulteriori informazioni sulle statistiche di ricerca, vedere [Search Statistics](search-statistics-in-advanced-ediscovery.md).
 
 ## <a name="conditions"></a>Condizioni
 

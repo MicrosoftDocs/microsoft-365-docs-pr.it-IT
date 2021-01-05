@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: In questo articolo viene descritto come iniziare a utilizzare Advanced eDiscovery in Microsoft 365. Dopo aver completato alcuni passaggi rapidi, lo strumento Advanced eDiscovery è pronto per l'uso. Il primo passaggio consiste nel creare un caso e quindi iniziare a utilizzare le funzionalità e le caratteristiche avanzate di eDiscovery.
-ms.openlocfilehash: dd3ddb3e5ef3a46fc0b7b4925b639975167c15d2
-ms.sourcegitcommit: 5480982967a90ca3060a59676a6b29155f2de861
+ms.openlocfilehash: 45443620f294489c3afb4392376c9fe999fa098b
+ms.sourcegitcommit: 98b889e674ad1d5fa37d4b6c5fc3eda60a1d67f3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49350724"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49751093"
 ---
 # <a name="get-started-with-advanced-ediscovery"></a>Introduzione ad Advanced eDiscovery
 
@@ -153,7 +153,7 @@ Per iniziare a utilizzare Advanced eDiscovery, ecco un semplice flusso di lavoro
 
 2. **[Ricercare le origini dati detentive per i dati rilevanti per il caso](collecting-data-for-ediscovery.md)**. Dopo aver aggiunto i depositari a un caso, utilizzare lo strumento di ricerca incorporato per eseguire ricerche nei percorsi dei dati del custode per i dati che possono essere rilevanti per il caso. È possibile utilizzare parole chiave, proprietà e condizioni per [creare query di ricerca](building-search-queries.md) che restituiscono i risultati della ricerca con i dati più probabili rilevanti per il caso. È inoltre possibile:
 
-   - Visualizzare le [statistiche di ricerca](search-statistics.md) che consentono di affinare una query di ricerca per restringere i risultati.
+   - Visualizzare le [statistiche di ricerca](search-statistics-in-advanced-ediscovery.md) che consentono di affinare una query di ricerca per restringere i risultati.
 
    - Visualizzare in anteprima i risultati della ricerca per verificare rapidamente se i dati rilevanti sono stati trovati.
 

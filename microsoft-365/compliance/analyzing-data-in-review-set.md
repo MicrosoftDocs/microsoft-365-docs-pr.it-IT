@@ -17,26 +17,26 @@ search.appverid:
 ms.assetid: ''
 description: Informazioni sugli strumenti disponibili per organizzare i set di documenti durante l'analisi di un caso di eDiscovery avanzato.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 87788e444a5ef671586567510448dab8b9deddcd
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 7c63e7eca2e032bfa11c4d4e6f961bb7a7700a4e
+ms.sourcegitcommit: 98b889e674ad1d5fa37d4b6c5fc3eda60a1d67f3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44033820"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49751371"
 ---
 # <a name="analyze-data-in-a-review-set-in-advanced-ediscovery"></a>Analizzare i dati in un set di revisione in Advanced eDiscovery
 
 Quando il numero di documenti raccolti è di grandi dimensioni, può essere difficile rivederli tutti. Advanced eDiscovery fornisce una serie di strumenti per analizzare i documenti in modo da ridurre il volume dei documenti da rivedere senza perdite di informazioni e per facilitare l'organizzazione dei documenti in maniera coerente. Per ulteriori informazioni su queste funzionalità, vedere:
 
-- [Rilevamento dei documenti simili](near-duplicates.md)
+- [Rilevamento dei documenti simili](near-duplicate-detection-in-advanced-ediscovery.md)
 
-- [Threading posta elettronica](email-threading.md)
+- [Threading posta elettronica](email-threading-in-advanced-ediscovery.md)
 
-- [Temi](themes.md)
+- [Temi](themes-in-advanced-ediscovery.md)
 
 Per analizzare i dati in un set di Revisione:
 
-1. Configurare le impostazioni di analisi per il caso. Per ulteriori informazioni, vedere [configurare le impostazioni di ricerca e analisi](configure-search-analytics-settings.md).
+1. Configurare le impostazioni di analisi per il caso. Per ulteriori informazioni, vedere [configurare le impostazioni di ricerca e analisi](configure-search-and-analytics-settings-in-advanced-ediscovery.md).
 
 2. Aprire il set di revisione che si desidera analizzare.
 

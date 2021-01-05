@@ -1,5 +1,5 @@
 ---
-title: Come riqualificare un classificatore nella conformità delle comunicazioni (anteprima)
+title: Come ripetere il training di un classificatore in Conformità alle comunicazioni
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -15,20 +15,20 @@ search.appverid:
 - MOE150
 - MET150
 description: Informazioni su come fornire commenti e suggerimenti a un classificatore addestrabile nella conformità alle comunicazioni.
-ms.openlocfilehash: 1466c211e3a4958f58a7c1f1a6a5a77bed881d60
-ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
+ms.openlocfilehash: cdb8787715c3e022dfa0aa17cd83cc405aeef955
+ms.sourcegitcommit: 54d1a2f363b2d5b63aae258c3cec0573a08f2866
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48132325"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49752650"
 ---
-# <a name="how-to-retrain-a-classifier-in-communications-compliance-preview"></a>Come riqualificare un classificatore nella conformità delle comunicazioni (anteprima)
+# <a name="how-to-retrain-a-classifier-in-communications-compliance"></a>Come ripetere il training di un classificatore in Conformità alle comunicazioni
 
 Un classificatore addestrabile di Microsoft 365 è uno strumento che è possibile addestrare per riconoscere vari tipi di contenuto fornendo esempi da esaminare. Una volta addestrato, è possibile utilizzarlo per identificare gli elementi per l'applicazione delle etichette di sensibilità di Office, i criteri di conformità delle comunicazioni e i criteri etichette di conservazione.
 
 In questo articolo viene illustrato come migliorare le prestazioni dei classificatori addestrabili personalizzati e di alcuni classificatori preformati fornendo loro commenti e suggerimenti aggiuntivi.
 
-Per ulteriori informazioni sui diversi tipi di classificatori, vedere [informazioni sui classificatori addestrabili (Preview)](classifier-learn-about.md).
+Per ulteriori informazioni sui diversi tipi di classificatori, vedere [informazioni sui classificatori addestrabili](classifier-learn-about.md).
 
 ## <a name="permissions"></a>Autorizzazioni
 
@@ -52,7 +52,7 @@ Per ulteriori informazioni sul flusso di lavoro globale di riqualificazione di u
 > [!NOTE]
 > Un classificatore deve essere già pubblicato e in uso prima che possa essere riaddestrato.
 
-## <a name="how-to-retrain-a-classifier-in-communication-compliance-policies-preview"></a>Come riqualificare un classificatore nei criteri di conformità della comunicazione (anteprima)
+## <a name="how-to-retrain-a-classifier-in-communication-compliance-policies"></a>Come riqualificare un classificatore nei criteri di conformità della comunicazione
 
 1. Aprire il criterio di conformità della comunicazione che utilizza un classificatore come condizione e scegliere uno degli elementi identificati dall'elenco **in sospeso** .
 2. Scegliere i puntini di sospensione e **migliorare la classificazione**.
@@ -68,7 +68,7 @@ Per ulteriori informazioni sul flusso di lavoro globale di riqualificazione di u
 > Queste informazioni passano al classificatore del tenant, **ma non tornano a Microsoft**.
 
 6.  Aprire la pagina di **classificazione dei dati** nel **centro conformità di Microsoft 365**.
-7. Aprire **classificatori addestrabili (anteprima)**.
+7. Aprire **classificatori addestrabili**.
 8. Il classificatore che è stato utilizzato nei criteri di conformità delle comunicazioni verrà visualizzato nell'intestazione **riqualificazione** .
 
 ![classificatore nello stato di riqualificazione](../media/classifier-retraining.png)
@@ -94,5 +94,5 @@ Vengono confrontati i numeri di prestazioni su entrambi i set di elementi per il
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Informazioni sui classificatori addestrabili (anteprima)](classifier-learn-about.md)
+- [Informazioni sui classificatori sottoponibili a training](classifier-learn-about.md)
 - [Estensioni dei nomi di file sottoposti a ricerca per indicizzazione e tipi di file analizzati predefiniti in SharePoint Server](https://docs.microsoft.com/sharepoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types)

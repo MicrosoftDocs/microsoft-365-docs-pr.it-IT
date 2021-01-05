@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Informazioni su come identificare un set di documenti per la revisione in un'indagine tramite lo strumento di ricerca in Advanced eDiscovery.
 ms.custom: seo-marvel-2020
-ms.openlocfilehash: 725c289324a8e4d5bd4d7a7b9ddd9e091b6d6241
-ms.sourcegitcommit: a3c2c737995088c1bad3b12ab401a7ef242b0272
+ms.openlocfilehash: b69127f1a372a9b843b9c7dac1b2909dd80b2988
+ms.sourcegitcommit: 98b889e674ad1d5fa37d4b6c5fc3eda60a1d67f3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47956199"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49751269"
 ---
 # <a name="collect-data-for-a-case-in-advanced-ediscovery"></a>Raccogliere i dati per un caso in Advanced eDiscovery
 
@@ -46,7 +46,7 @@ Una volta completata la stima della ricerca, selezionare la ricerca per visualiz
 - Posizioni principali
 - Query
 
-Per ulteriori informazioni sulle statistiche di ricerca, vedere [Search Statistics](search-statistics.md).
+Per ulteriori informazioni sulle statistiche di ricerca, vedere [Search Statistics](search-statistics-in-advanced-ediscovery.md).
 
 Dopo aver completato l'anteprima, il pulsante **Anteprima** sarà attivo. Selezionarla per visualizzare in anteprima un sottoinsieme di campionamento dei risultati.
 

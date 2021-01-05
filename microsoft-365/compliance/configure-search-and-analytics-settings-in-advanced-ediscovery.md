@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 ms.custom: seo-marvel-mar2020
 description: Configurare le impostazioni avanzate di eDiscovery che si applicano a tutti i set di revisione in un caso. Sono incluse le impostazioni per l'analisi e il riconoscimento ottico dei caratteri.
-ms.openlocfilehash: dfacab79f635a817b127614f524d00b0297981fb
-ms.sourcegitcommit: 1423e08a02d30f0a2b993fb99325c3f499c31787
+ms.openlocfilehash: 11932d2172d797ae1913cf28e713d57805ace122
+ms.sourcegitcommit: 98b889e674ad1d5fa37d4b6c5fc3eda60a1d67f3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "48277086"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49751303"
 ---
 # <a name="configure-search-and-analytics-settings-in-advanced-ediscovery"></a>Configurare le impostazioni di ricerca e analisi in Advanced eDiscovery
 
@@ -50,7 +50,7 @@ Per configurare le impostazioni di ricerca e analisi per un caso:
 
 ## <a name="near-duplicates-and-email-threading"></a>Quasi duplicati e threading della posta elettronica
 
-In questa sezione, è possibile impostare parametri per il rilevamento duplicati, vicino al rilevamento duplicati e al threading tramite posta elettronica. Per ulteriori informazioni, vedere [near duplicate detection](near-duplicates.md) and [email Threading](email-threading.md).
+In questa sezione, è possibile impostare parametri per il rilevamento duplicati, vicino al rilevamento duplicati e al threading tramite posta elettronica. Per ulteriori informazioni, vedere [near duplicate detection](near-duplicate-detection-in-advanced-ediscovery.md) and [email Threading](email-threading-in-advanced-ediscovery.md).
 
 - **Quasi duplicati/threading della posta elettronica:** Quando si esegue l'analisi dei dati in un set di revisione, quando si attiva il rilevamento duplicati, vicino al rilevamento duplicati e al threading della posta elettronica, vengono inclusi come parte del flusso di lavoro.
 

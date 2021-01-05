@@ -1,5 +1,5 @@
 ---
-title: Informazioni sui classificatori sottoponibili a training (anteprima)
+title: Informazioni sui classificatori sottoponibili a training
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -18,14 +18,14 @@ search.appverid:
 - MOE150
 - MET150
 description: Un classificatore addestrabile di Microsoft 365 è uno strumento che è possibile addestrare per riconoscere vari tipi di contenuto, fornendo campioni positivi e negativi da esaminare. Una volta che il classificatore è stato addestrato, conferma che i risultati sono accurati. È quindi possibile utilizzarla per eseguire una ricerca nel contenuto dell'organizzazione e classificarla in modo da applicare etichette di conservazione o di sensibilità o includerla nella prevenzione della perdita di dati (DLP) o nei criteri di conservazione.
-ms.openlocfilehash: 77ebefe338f393a916f0a6844b42b16e3d011d49
-ms.sourcegitcommit: 6fc6aaa2b7610e148f41018abd229e3c55b2f3d0
+ms.openlocfilehash: d5e7eb891e4cff2fc220d1e9264839d05ed11bd2
+ms.sourcegitcommit: 54d1a2f363b2d5b63aae258c3cec0573a08f2866
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49620162"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49752640"
 ---
-# <a name="learn-about-classifiers-preview"></a>Informazioni sui classificatori (anteprima)
+# <a name="learn-about-classifiers"></a>Informazioni sui classificatori
 
 Classificare ed etichettare il contenuto in modo che possa essere protetto e gestito correttamente è il punto di partenza per la disciplina di protezione delle informazioni. Microsoft 365 ha tre modi per classificare il contenuto.
 
@@ -103,7 +103,7 @@ Microsoft 365 viene fornito con cinque classificatori prequalificati:
 - **Parolacce**: rileva una categoria specifica di elementi di testo di lingua offensiva che contengono espressioni che imbarazzano la maggior parte delle persone
 - **Threat**: rileva una categoria specifica di elementi di testo offensivi relativi alle minacce per commettere violenze o arrecare danni fisici a una persona o a una proprietà
 
-Questi vengono visualizzati nella visualizzazione classificazione dei classificati di **Microsoft 365 Compliance Center**  >  **Data Classification (Preview)**  >   con lo stato di `Ready to use` .
+Questi vengono visualizzati nella   >  visualizzazione **classificazione** dei  >  **classificatori addestrabili** del centro conformità Microsoft 365 con lo stato di `Ready to use` .
 
 ![classificatori-preformati-classificatori](../media/classifiers-ready-to-use-classifiers.png)
 

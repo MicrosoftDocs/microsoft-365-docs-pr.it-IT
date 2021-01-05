@@ -11,12 +11,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 description: Informazioni sul catalogo delle soluzioni Microsoft 365, incluse le informazioni in esso contenute, su come ottenerlo e sui passaggi successivi.
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 1cb707c47594b59bcb762aac5c25eaa03b33dbf1
-ms.sourcegitcommit: 82d8be71c5861a501ac62a774b306a3fc1d4e627
+ms.openlocfilehash: 7d1d52356bd3b165c24f10a20a57373a6171b8b3
+ms.sourcegitcommit: 98b889e674ad1d5fa37d4b6c5fc3eda60a1d67f3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48988576"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49751471"
 ---
 # <a name="microsoft-365-solution-catalog"></a>Catalogo delle soluzioni Microsoft 365
 
@@ -69,7 +69,6 @@ La sezione **Discovery & Response** nella Home page Visualizza a colpo d'occhio 
 Di seguito vengono visualizzate le schede per le soluzioni seguenti:
 
 - [Audit](search-the-audit-log-in-security-and-compliance.md): consente di registrare l'attività dell'utente e dell'amministratore dell'organizzazione in modo che sia possibile eseguire una ricerca nel registro di controllo e esaminare un elenco completo delle attività in tutti i percorsi e servizi.
-- [Indagini sui dati](overview-data-investigations.md): consente di eseguire ricerche nei percorsi di contenuto per identificare i dati sensibili, dannosi o fuori luogo tra i percorsi di Microsoft 365, in modo da poter esaminare e correggere eventuali incidenti, ad esempio la fuoriuscita di dati.
 - [Richieste del soggetto dei dati](manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md): consente di individuare ed esportare i dati personali di un utente per rispondere alle richieste del soggetto dei dati per GDPR.
 - [eDiscovery](manage-legal-investigations.md)
     - [EDiscovery Core](ediscovery-cases.md): esegue la ricerca tra percorsi di contenuto per identificare, conservare ed esportare i dati in risposta a richieste di individuazione legale e casi di eDiscovery.
@@ -93,13 +92,13 @@ Se si sta cercando una soluzione di conformità esistente e non è ancora dispon
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-- **Visitare Microsoft Compliance Manager** , che consente di comprendere lo stato di conformità dell'organizzazione agli standard e alle normative fondamentali. Vengono fornite le azioni consigliate che è possibile eseguire per rafforzare la posizione di conformità globale e fornisce funzionalità di flusso di lavoro che consentono di eseguire efficacemente tali azioni. Per ulteriori informazioni, vedere [Compliance Manager](compliance-manager.md).
+- **Visitare Microsoft Compliance Manager**, che consente di comprendere lo stato di conformità dell'organizzazione agli standard e alle normative fondamentali. Vengono fornite le azioni consigliate che è possibile eseguire per rafforzare la posizione di conformità globale e fornisce funzionalità di flusso di lavoro che consentono di eseguire efficacemente tali azioni. Per ulteriori informazioni, vedere [Compliance Manager](compliance-manager.md).
 
 - **Configurare i criteri di gestione dei rischi Insider** per ridurre al minimo i rischi interni e consentire all'utente di rilevare, indagare e intraprendere azioni per attività rischiose nell'organizzazione. Vedere [gestione dei rischi Insider](insider-risk-management.md).
 
 - Informazioni **su e creare criteri di conformità della comunicazione** per identificare e correggere rapidamente le violazioni dei criteri del codice aziendale. Vedere [Communication Compliance](communication-compliance.md).
 
-- **Microsoft Information Protection** , informazioni su come le soluzioni Microsoft 365 consentono di individuare, classificare e proteggere le informazioni riservate ovunque si trovino o viaggiano.
+- **Microsoft Information Protection**, informazioni su come le soluzioni Microsoft 365 consentono di individuare, classificare e proteggere le informazioni riservate ovunque si trovino o viaggiano.
     - **Familiarizzare e configurare Microsoft cloud app Security**. Vedere [Guida introduttiva: Introduzione a Microsoft cloud app Security](https://docs.microsoft.com/cloud-app-security/getting-started-with-cloud-app-security).
     - Iniziare **a utilizzare i classificatori**. Classificare il contenuto e quindi etichettarlo in modo che possa essere protetto e gestito correttamente è il punto di partenza per la disciplina di protezione delle informazioni. Vedere informazioni [sui classificatori addestrabili (Preview)](classifier-learn-about.md).
 

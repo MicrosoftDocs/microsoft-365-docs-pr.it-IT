@@ -1,5 +1,5 @@
 ---
-title: Come riqualificare un classificatore in Esplora contenuto (anteprima)
+title: Come ripetere il training di un classificatore in Esplora contenuto
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -15,20 +15,20 @@ search.appverid:
 - MOE150
 - MET150
 description: Informazioni su come fornire commenti e suggerimenti a un classificatore addestrabile in Esplora contenuto.
-ms.openlocfilehash: 0fbce595894cbbf2a017fc1bf657b14a5b812e29
-ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
+ms.openlocfilehash: 786ebb682e9cdd96c0c6503294bd4f316f777f68
+ms.sourcegitcommit: 54d1a2f363b2d5b63aae258c3cec0573a08f2866
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48132326"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49752624"
 ---
-# <a name="how-to-retrain-a-classifier-in-content-explorer-preview"></a>Come riqualificare un classificatore in Esplora contenuto (anteprima)
+# <a name="how-to-retrain-a-classifier-in-content-explorer"></a>Come ripetere il training di un classificatore in Esplora contenuto
 
 Un classificatore addestrabile di Microsoft 365 è uno strumento che è possibile addestrare per riconoscere vari tipi di contenuto fornendo esempi da esaminare. Una volta addestrato, è possibile utilizzarlo per identificare gli elementi per l'applicazione delle etichette di sensibilità di Office, i criteri di conformità delle comunicazioni e i criteri etichette di conservazione.
 
 In questo articolo viene illustrato come migliorare le prestazioni dei classificatori addestrabili personalizzati e di alcuni classificatori preformati fornendo loro commenti e suggerimenti aggiuntivi.
 
-Per ulteriori informazioni sui diversi tipi di classificatori, vedere [informazioni sui classificatori addestrabili (Preview)](classifier-learn-about.md).
+Per ulteriori informazioni sui diversi tipi di classificatori, vedere [informazioni sui classificatori addestrabili](classifier-learn-about.md).
 
 ## <a name="permissions"></a>Autorizzazioni
 
@@ -52,7 +52,7 @@ Per ulteriori informazioni sul flusso di lavoro globale di riqualificazione di u
 > [!NOTE]
 > Un classificatore deve essere già pubblicato e in uso prima che possa essere riaddestrato.
 
-## <a name="how-to-retrain-a-classifier-in-content-explorer-preview"></a>Come riqualificare un classificatore in Esplora contenuto (anteprima)
+## <a name="how-to-retrain-a-classifier-in-content-explorer"></a>Come ripetere il training di un classificatore in Esplora contenuto
 
 1. Accedere al centro conformità Microsoft 365 con l'accesso al ruolo amministratore di sicurezza o di amministratore della protezione e aprire **Microsoft 365 Compliance Center**  >  **Data classificazione**  >  **Content Explorer**. 
 2. Nell'elenco **filtro su etichette, tipi di informazioni o categorie** , espandere **classificatori addestrabili**.
@@ -78,7 +78,7 @@ Per ulteriori informazioni sul flusso di lavoro globale di riqualificazione di u
 > [!IMPORTANT]
 > Queste informazioni passano al classificatore del tenant, **ma non tornano a Microsoft**.
 
-9. Aprire **classificatori addestrabili (anteprima)**.
+9. Aprire **classificatori addestrabili**.
 10. Il classificatore che è stato utilizzato nei criteri di conformità delle comunicazioni verrà visualizzato nell'intestazione **riqualificazione** .
 
 ![classificatore nello stato di riqualificazione](../media/classifier-retraining.png)
@@ -104,5 +104,5 @@ Vengono confrontati i numeri di prestazioni su entrambi i set di elementi per il
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Informazioni sui classificatori addestrabili (anteprima)](classifier-learn-about.md)
+- [Informazioni sui classificatori sottoponibili a training](classifier-learn-about.md)
 - [Estensioni dei nomi di file sottoposti a ricerca per indicizzazione e tipi di file analizzati predefiniti in SharePoint Server](https://docs.microsoft.com/sharepoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types)

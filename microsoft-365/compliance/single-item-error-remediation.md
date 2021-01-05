@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: È possibile correggere un errore di elaborazione in un documento in un set di revisione in Advanced eDiscovery senza dover seguire il processo di correzione degli errori in blocco.
-ms.openlocfilehash: c318148900d891304ebcb9b4a88abfe52f43c05e
-ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
+ms.openlocfilehash: 8e5d8d00f507dc5792a1beda018d4c76632b82f7
+ms.sourcegitcommit: 98b889e674ad1d5fa37d4b6c5fc3eda60a1d67f3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48285842"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49751583"
 ---
 # <a name="single-item-error-remediation-in-advanced-ediscovery"></a>Correzione degli errori di un singolo elemento in Advanced eDiscovery
 
@@ -76,7 +76,7 @@ Per correggere un singolo documento, attenersi alla procedura seguente:
 
     ![È possibile visualizzare il file di correzione nel formato nativo nel set di Revisione](../media/SIERimage9.png)
 
-Per ulteriori informazioni sugli elementi che si verificano quando un documento viene correttivo, vedere [cosa succede quando i file vengono corretti](error-remediation.md#what-happens-when-files-are-remediated).
+Per ulteriori informazioni sugli elementi che si verificano quando un documento viene correttivo, vedere [cosa succede quando i file vengono corretti](error-remediation-when-processing-data-in-advanced-ediscovery.md#what-happens-when-files-are-remediated).
 
 ## <a name="search-for-remediated-documents"></a>Ricerca di documenti corretti
 

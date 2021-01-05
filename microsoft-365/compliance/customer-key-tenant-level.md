@@ -1,5 +1,5 @@
 ---
-title: Chiave del cliente per Microsoft 365 a livello di tenant (anteprima pubblica)
+title: Customer Key per Microsoft 365 a livello di tenant (anteprima pubblica)
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -15,12 +15,12 @@ ms.collection:
 - m365solution-mip
 - m365initiative-compliance
 description: Informazioni su come configurare la chiave del cliente per tutti i dati all'interno del tenant di Microsoft 365.
-ms.openlocfilehash: eedf0e8c9d56131016bc798af8ae471df3005bdc
-ms.sourcegitcommit: 0867495cb02d0b38b439b16bdce97e6eda483ba9
+ms.openlocfilehash: f14bbc0cb6dd29883efa4c8d294d8d65cae98641
+ms.sourcegitcommit: 98b889e674ad1d5fa37d4b6c5fc3eda60a1d67f3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "49712527"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49751268"
 ---
 # <a name="overview-of-customer-key-for-microsoft-365-at-the-tenant-level-public-preview"></a>Panoramica della chiave del cliente per Microsoft 365 a livello di tenant (anteprima pubblica)
 
@@ -59,7 +59,7 @@ La maggior parte di queste attività verrà completata tramite la connessione re
 Prima di iniziare, verificare quanto segue:
 
 - È necessario utilizzare un account aziendale o dell'Istituto di istruzione che disponga del ruolo di amministratore della conformità per impostare la chiave del cliente a livello di tenant.
-- Verificare di disporre delle licenze appropriate per l'organizzazione. Utilizzare una sottoscrizione a pagamento e fatturata di Azure utilizzando un contratto Enterprise o un provider di servizi cloud. Gli abbonamenti di Azure acquistati con pay as you go plans o con una carta di credito non sono supportati per la chiave del cliente. A partire dal 1 ° aprile 2020, la chiave del cliente in Office 365 è disponibile in Office 365 E5, M365 E5, M365 E5 compliance e M365 E5 Information Protection & SKU. Microsoft Office 365 Advanced Compliance SKU non è più disponibile per l'ottenimento di nuove licenze. Le licenze di conformità avanzate di Office 365 continueranno a essere supportate. Anche se il servizio può essere abilitato con un minimo di una licenza sotto il tenant avente la licenza appropriata, è comunque necessario verificare che tutti gli utenti che usufruiscono del servizio dispongano di licenze appropriate. È necessaria una delle licenze seguenti:
+- Verificare di disporre delle licenze appropriate per l'organizzazione. Utilizzare una sottoscrizione a pagamento e fatturata di Azure utilizzando un contratto Enterprise o un provider di servizi cloud. Gli abbonamenti di Azure acquistati con pay as you go plans o con una carta di credito non sono supportati per la chiave del cliente. A partire dal 1 ° aprile 2020, la chiave del cliente in Office 365 è disponibile in Office 365 E5, M365 E5, M365 E5 compliance e M365 E5 Information Protection & SKU. Microsoft Office 365 Advanced Compliance SKU non è più disponibile per l'ottenimento di nuove licenze. Le licenze di conformità avanzate di Office 365 continueranno a essere supportate. Anche se il servizio può essere abilitato con un minimo di una licenza sotto il tenant avente la licenza appropriata, è comunque necessario verificare che tutti gli utenti che usufruiscono del servizio dispongano di licenze appropriate.
 
 ### <a name="create-two-new-azure-subscriptions"></a>Creare due nuove sottoscrizioni di Azure
 

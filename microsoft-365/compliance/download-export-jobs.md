@@ -17,12 +17,12 @@ search.appverid:
 ROBOTS: NOINDEX, NOFOLLOW
 ms.custom: seo-marvel-mar2020
 description: Installare e utilizzare Esplora archivi di Azure per scaricare i documenti esportati da un set di revisione in Advanced eDiscovery.
-ms.openlocfilehash: 4b09521b4a72fc8fda68f5892c899fe76a066809
-ms.sourcegitcommit: 37ce0658336bea7b27bf8d6aa759deadc97e7365
+ms.openlocfilehash: 094dcb4ecc8b1ca73a7ec0238ed20b27d4c16e72
+ms.sourcegitcommit: 98b889e674ad1d5fa37d4b6c5fc3eda60a1d67f3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/04/2020
-ms.locfileid: "47399163"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49751293"
 ---
 # <a name="download-export-jobs-in-an-advanced-ediscovery-case"></a>Scaricare i processi di esportazione in un caso avanzato di eDiscovery
 
@@ -88,7 +88,7 @@ Il passaggio finale consiste nell'utilizzare l'esploratore di archiviazione di A
 
    La cartella dei processi di esportazione contiene gli elementi seguenti. Gli elementi effettivi nella cartella Export sono determinati dalle opzioni di esportazione configurate al momento della creazione del processo di esportazione. Per ulteriori informazioni, vedere [esportare documenti da un set di revisione](export-documents-from-review-set.md).
 
-    - Export_load_file.csv: questo file CSV è un report di esportazione dettagliata che contiene informazioni su ogni documento esportato. Il file è costituito da una colonna per ogni proprietà dei metadati di un documento. Per un elenco e una descrizione dei metadati inclusi in questo report, vedere la colonna **nome campo esportato** nella tabella nei [campi dei metadati del documento in Advanced eDiscovery](document-metadata-fields.md).
+    - Export_load_file.csv: questo file CSV è un report di esportazione dettagliata che contiene informazioni su ogni documento esportato. Il file è costituito da una colonna per ogni proprietà dei metadati di un documento. Per un elenco e una descrizione dei metadati inclusi in questo report, vedere la colonna **nome campo esportato** nella tabella nei [campi dei metadati del documento in Advanced eDiscovery](document-metadata-fields-in-advanced-ediscovery.md).
     
     - Summary.txt: un file di testo che contiene un riepilogo dell'esportazione, tra cui le statistiche di esportazione.
     

@@ -15,12 +15,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: Informazioni su come creare un team con un'etichetta di riservatezza univoca per la sicurezza.
-ms.openlocfilehash: c7230f23a21804530863f125003e4db0eaeeeb60
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.openlocfilehash: 03252cad8449ee83cd757fac3ae74db6df68bcfe
+ms.sourcegitcommit: 98b889e674ad1d5fa37d4b6c5fc3eda60a1d67f3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49616297"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49751144"
 ---
 # <a name="configure-a-team-with-security-isolation"></a>Configurare un team con l'isolamento di sicurezza
 
@@ -101,33 +101,36 @@ Per configurare un team per l'isolamento di sicurezza, verrà usata un'etichetta
 
 Se un partner interno o un gruppo di stakeholder deve poter visualizzare i documenti crittografati ma non modificarli, è possibile aggiungerlo all'etichetta con le autorizzazioni di sola visualizzazione. In seguito è possibile aggiungere queste persone al sito di SharePoint del team con autorizzazioni di lettura, affinché possano accedere in sola lettura al sito in cui sono conservati i documenti, ma non al team stesso.
 
+
 Per creare un'etichetta di riservatezza
 1. Aprire il [Centro conformità Microsoft 365](https://compliance.microsoft.com).
 2. In **Soluzioni** fare clic su **Protezione delle informazioni**.
 3. Fare clic su **Crea un'etichetta**.
-4. Assegnare all'etichetta un nome analogo al nome del team. Ad esempio, **Altamente sensibile - Progetto Saturno**.
-5. Aggiungere una descrizione comando e quindi fare clic su **Avanti**.
-6. Nella pagina **Crittografia** scegliere **Applica** nell'elenco a discesa **Crittografia**.
-7. Per aggiungere le autorizzazioni del team:<br>
-  a. Fare clic su **Assegna autorizzazioni**.<br>
-  b. Fare clic su **Aggiungi utenti o gruppi**, selezionare il team creato e quindi fare clic su **Aggiungi**.<br>
-  c. Fare clic su **Seleziona autorizzazioni**.<br>
-  d. Scegliere **Coautore** nell'elenco a discesa, quindi fare clic su **Salva**.<br>
-8. Se si vogliono includere utenti o gruppi con accesso in sola lettura ai file con l'etichetta:<br>
-  a. Fare clic su **Assegna autorizzazioni**.<br>
-  b. Fare clic su **Aggiungi utenti o gruppi**, selezionare gli utenti o i gruppi da aggiungere e quindi fare clic su **Aggiungi**.<br>
-  c. Fare clic su **Seleziona autorizzazioni**.<br>
-  d. Scegliere **Visualizzatore** nell'elenco a discesa, quindi fare clic su **Salva**.<br>
-  e. Fare clic su **Salva**.
-9. Fare clic su **Avanti**.
-10. Nella pagina **Contrassegno contenuti** attivare l'indicazione del contenuto se si vuole aggiungere automaticamente un'intestazione, un piè di pagina o una filigrana ai file classificati con l'etichetta.
-11. Nella pagina **Impostazioni sito e gruppo** impostare **Impostazioni sito e gruppo** su **Sì**.
-12. Nell'elenco a discesa **Privacy dei siti dei team collegati ai gruppi di Office 365** scegliere **Privato: solo i membri possono accedere al sito**.
-13. Se si vuole consentire l'accesso guest, selezionare la casella di controllo **Consentire ai proprietari del gruppo Office 365 di aggiungere al gruppo persone esterne all'organizzazione**. 
-14. In **Dispositivi non gestiti** scegliere **Blocca l'accesso**.
-15. Fare clic su **Avanti**.
-16. Nella pagina **Applicazione automatica di etichette per le app di Office** fare clic su **Avanti**.
-17. Fare clic su **Invia**, quindi su **Fine**.
+4. Assegnare un nome all'etichetta. Si consiglia di usare **Dati sensibili**, ma è possibile scegliere un nome diverso se è già in uso.
+5. Aggiungere un nome visualizzato e una descrizione, quindi fare clic su **Avanti**.
+6. Nella **pagina Definire l'ambito di questa etichetta**, selezionare **File ed e-mail** e **Gruppi e siti**, quindi fare clic su **Avanti**.
+7. Nella pagina **Scegliere le impostazioni di protezione per file ed e-mail**, selezionare **Crittografare file ed e-mail**, quindi fare clic su **Avanti**.
+8. Nella pagina **Crittografia**, scegliere **Configurare le impostazioni di crittografia**.
+9. Fare clic su **Aggiungi utenti o gruppi**, selezionare il team creato e quindi fare clic su **Aggiungi**.
+10. Fare clic su **Seleziona autorizzazioni**.
+11. Scegliere **Coautore** nell'elenco a discesa, quindi fare clic su **Salva**.
+12. Se si vogliono includere utenti o gruppi con accesso in sola lettura ai file con l'etichetta:
+    1. Fare clic su **Assegna autorizzazioni**.
+    1. Fare clic su **Aggiungi utenti o gruppi**, selezionare gli utenti o i gruppi da aggiungere e quindi fare clic su **Aggiungi**.
+    1. Fare clic su **Seleziona autorizzazioni**.
+    1. Scegliere **Visualizzatore** nell'elenco a discesa, quindi fare clic su **Salva**.
+13.  Fare clic su **Salva**, quindi fare clic su **Avanti**.
+14. Nella pagina *Etichettatura automatica di file ed e-mail**, fare clic su **Avanti**.
+15. Nella pagina **Definire le impostazioni di protezione per gruppi e siti**, selezionare **Impostazioni di privacy e accesso utenti esterni** e **Impostazioni di accesso del dispositivo e condivisione esterna**, quindi fare clic su **Avanti**.
+16. Nella pagina **Definire le impostazioni di privacy e accesso utenti esterni**, in **Privacy**, selezionare l'opzione **Privato**.
+17. Se si desidera consentire l'accesso a utenti guest, in **Accesso utenti esterni**, selezionare **Consentire ai proprietari di gruppi di Microsoft 365 di aggiungere persone esterne all'organizzazione ai gruppi come ospiti**.
+18. Fare clic su **Avanti**.
+19. Nella pagina **Definire le impostazioni di condivisione esterna e di accesso del dispositivo**, selezionare **Controllare la condivisione esterna da siti SharePoint con etichetta**.
+20. In **Il contenuto può essere condiviso con**, scegliere **Utenti ospiti nuovi ed esistenti** se si sta consentendo l'accesso a utenti guest o **Solo persone nell'organizzazione** in caso contrario.
+21. In **Accesso da dispositivi non gestiti** scegliere **Blocca accesso**.
+22. Fare clic su **Avanti**.
+23. Nella pagina **Applicazione automatica di etichette per le colonne del database**, fare clic su **Avanti**.
+24. Fare clic su **Crea etichetta**, quindi su **Fine**.
 
 Dopo avere creato l'etichetta, è necessario pubblicarla per gli utenti che lo useranno. In questo caso, l'etichetta verrà resa disponibile solo alle persone nel team.
 

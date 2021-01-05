@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Quando un custode viene aggiunto a un caso di eDiscovery avanzato, tutti i contenuti considerati come indicizzati parzialmente vengono rielaborati in modo da renderli completamente disponibili per la ricerca.
-ms.openlocfilehash: 95e087884b65628565e596dc8ae9f33aadc4cd9f
-ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
+ms.openlocfilehash: 908d01cacc103639e1f9efe965240c33a5296ba9
+ms.sourcegitcommit: 98b889e674ad1d5fa37d4b6c5fc3eda60a1d67f3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46527556"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49750757"
 ---
 # <a name="advanced-indexing-of-custodian-data"></a>Indicizzazione avanzata dei dati dei responsabili
 
@@ -43,7 +43,7 @@ Una volta completato il processo di indicizzazione avanzato, è possibile ottene
 
 Questa visualizzazione include anche il numero di elementi che richiedono la correzione e un altro grafico degli errori in base al tipo di file. Per altre informazioni, vedere:
 
-- [Correzione degli errori durante l'elaborazione dei dati](error-remediation.md)
+- [Correzione degli errori durante l'elaborazione dei dati](error-remediation-when-processing-data-in-advanced-ediscovery.md)
 
 - [Correzione degli errori dei singoli elementi](single-item-error-remediation.md)
 
