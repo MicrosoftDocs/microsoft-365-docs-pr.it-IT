@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: bookings
 localization_priority: Normal
 description: Domande frequenti su Microsoft bookings.
-ms.openlocfilehash: 47bb71476c3fd0b32f9be3e71b188bef6efe2498
-ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
+ms.openlocfilehash: 35e1b71fb7d87d40aa9a3a60d2e3cf108f36c2bf
+ms.sourcegitcommit: 98b889e674ad1d5fa37d4b6c5fc3eda60a1d67f3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49561556"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49751382"
 ---
 # <a name="microsoft-bookings-frequently-asked-questions"></a>Domande frequenti su Microsoft bookings
 
@@ -34,6 +34,10 @@ La prenotazione è disponibile e attiva per impostazione predefinita per i clien
 ### <a name="will-my-customers-see-my-personal-or-business-calendar"></a>I clienti visualizzeranno il calendario personale o aziendale?
 
 I clienti vedranno solo il calendario delle prenotazioni che pubblichi online per i servizi, i tempi e il personale che scegli di registrare.
+
+### <a name="how-do-i-change-a-bookable-attribute-under-manage-staff"></a>Come modificare un attributo prenotabile in Manage staff?
+
+Quando i membri del personale sono stati aggiunti, avrebbero ricevuto un messaggio di posta elettronica per accettare o rifiutare la richiesta. Gli utenti possono aprire lo stesso messaggio di posta elettronica e selezionare "rifiuta" per renderli non prenotabili. Al momento non esiste un modo per passare dall'interno dell'app.
 
 ### <a name="how-do-end-users-access-the-bookings-app"></a>In che modo gli utenti finali accedono all'app bookings?
 
@@ -324,7 +328,7 @@ Affinché le prenotazioni siano sincronizzate correttamente con i calendari dei 
 
 Se un dipendente ha lasciato la propria azienda e li ha rimossi dall'organizzazione Microsoft 365 o Office 365, è comunque necessario rimuovere quell'utente dalle prenotazioni in modo che non vengano visualizzati nel calendario e impediscono ai clienti di prenotare appuntamenti con tali utenti.
 
-1. Accedere a Microsoft 365 e quindi passare a personale di **prenotazione** \> **Staff**.
+1. Accedere a Microsoft 365 e quindi passare a personale di **prenotazione** \> .
 
 1. Posizionare il cursore del mouse sul nome del membro del pentagramma. La **modifica** e l' **eliminazione** delle icone vengono visualizzate a destra della colonna **Phone** .
 
@@ -354,11 +358,11 @@ Se si continua a visualizzare questo errore dopo un periodo di tempo prolungato 
 
   - [Iniziare a utilizzare Microsoft bookings](get-access.md)
 
-  - [Attivazione o disattivazione delle prenotazioni Microsoft](turn-bookings-on-or-off.md)
+  - [Attivare o disattivare Microsoft Bookings](turn-bookings-on-or-off.md)
 
   - [Aggiungere utenti singolarmente o in blocco](https://docs.microsoft.com/microsoft-365/admin/add-users/add-users?view=o365-worldwide.)
 
-  - [Aggiungere personale alle prenotazioni](add-staff.md)
+  - [Aggiungere personale a Bookings](add-staff.md)
 
   - [Componenti API per automatizzare dopo la definizione del modello](https://docs.microsoft.com/graph/api/bookingbusiness-post-bookingbusinesses)
 

@@ -122,13 +122,13 @@
           href: what-the-dlp-functions-look-for.md
     - name: Classificatori sottoponibili a training
       items:
-        - name: Informazioni sui classificatori sottoponibili a training (anteprima)
+        - name: Informazioni sui classificatori sottoponibili a training
           href: classifier-learn-about.md
-        - name: Introduzione ai classificatori sottoponibili a training (anteprima)
+        - name: Per iniziare con i classificatori sottoponibili a training
           href: classifier-get-started-with.md
-        - name: Come ripetere il training di un classificatore in conformità alle comunicazioni (anteprima)
+        - name: Come ripetere il training di un classificatore in Conformità alle comunicazioni
           href: classifier-how-to-retrain-comms-compliance.md
-        - name: Come ripetere il training di un classificatore in Esplora contenuto (anteprima)
+        - name: Come ripetere il training di un classificatore in Esplora contenuto
           href: classifier-how-to-retrain-content-explorer.md
     - name: Classificazione dei dati
       items:
@@ -629,7 +629,7 @@
             - name: Query con parole chiave e condizioni di ricerca
               href: keyword-queries-and-search-conditions.md
             - name: Statistiche della ricerca
-              href: search-statistics.md
+              href: search-statistics-in-advanced-ediscovery.md
             - name: Aggiungere i risultati della ricerca a un insieme da rivedere
               href: add-data-to-review-set.md
         - name: Gestire gli insiemi da rivedere
@@ -792,83 +792,6 @@
               href: run-reports-in-advanced-ediscovery.md
     - name: Ritiro degli strumenti legacy di eDiscovery
       href: legacy-ediscovery-retirement.md
-- name: Gestire le indagini sui dati
-  items:
-    - name: Panoramica delle indagini sui dati
-      href: overview-data-investigations.md
-    - name: Gestire un'incidente relativo a una fuga di dati
-      href: manage-data-spillage-incidents.md
-    - name: Assegnare autorizzazioni per le indagini sui dati
-      href: data-investigations-permissions.md
-    - name: Creare una nuova indagine
-      href: create-new-investigation.md
-    - name: Cercare i dati in un'indagine
-      href: search-for-data.md
-      items:
-        - name: Creare query di ricerca
-          href: build-search-queries.md
-        - name: Statistiche della ricerca
-          href: search-statistics.md
-    - name: Esaminare i dati nelle prove
-      href: review-data-in-evidence.md
-      items:
-        - name: Eseguire una query sui dati
-          href: evidence-query.md
-        - name: Contrassegnare documenti
-          href: tag-documents.md
-        - name: Aggiungere annotazioni e redigere documenti
-          href: annotate-and-redact-documents.md
-        - name: Caricare dati non Office 365
-          href: load-non-office365-data.md
-        - name: Correzione degli errori durante l'elaborazione dei dati
-          href: error-remediation.md
-        - name: Eliminare elementi dalla posizione originale
-          href: delete-items-from-original-locations.md
-    - name: Eseguire analisi per velocizzare le indagini
-      href: run-analytics-to-investigate-faster.md
-      items:
-        - name: Threading posta elettronica
-          href: email-threading.md
-        - name: Rilevamento di documenti simili
-          href: near-duplicates.md
-        - name: Temi
-          href: themes.md
-        - name: Usare il modulo Rilevanza
-          href: use-relevance-module.md
-    - name: Gestire le persone oggetto di indagine in un'indagine
-      href: manage-people-of-interest.md
-      items:
-        - name: Indicizzare i dati delle persone in un'indagine
-          href: index-data-people-of-interest.md
-        - name: Visualizzare le attività di controllo delle persone in un'indagine
-          href: view-people-of-interest-activity.md
-    - name: Esportare dati da un'indagine
-      href: export-data.md
-      items:
-        - name: Esportare documenti dalle prove
-          href: export-documents-from-incident.md
-        - name: Scaricare processi di esportazione
-          href: download-export-jobs-from-a-data-investigation.md
-    - name: Configurare le impostazioni di indagine
-      items:
-        - name: Aggiungere o rimuovere membri da un'indagine
-          href: add-remove-members.md
-        - name: Configurare le impostazioni di ricerca e analisi
-          href: configure-search-analytics-settings.md
-        - name: Chiudere o eliminare un'indagine
-          href: close-or-delete-investigation.md
-    - name: Informazioni di riferimento per le indagini sui dati
-      items:
-        - name: Note sulla versione
-          href: data-investigations-release-notes.md
-        - name: Limiti nelle indagini sui dati
-          href: limits-datainvestigations.md
-        - name: Tipi di file supportati
-          href: supported-filetypes-datainvestigations.md
-        - name: Campi dei metadati del documento
-          href: document-metadata-fields.md
-        - name: Gestire processi
-          href: manage-jobs.md
 - name: Gestire i blocchi
   items:
     - name: Come identificare il tipo di blocco applicato a una cassetta postale

@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: Come distribuire team con la protezione dei dati sensibili.
-ms.openlocfilehash: ad1cf437bdbe3bd7b25347bb49698314097462ab
-ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
+ms.openlocfilehash: 16c4ceedcafee02ca5d168cc70fc61bb8d01fc72
+ms.sourcegitcommit: 98b889e674ad1d5fa37d4b6c5fc3eda60a1d67f3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49612953"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49750788"
 ---
 # <a name="configure-teams-with-protection-for-sensitive-data"></a>Configurare team con la protezione dei dati sensibili
 
@@ -59,16 +59,20 @@ Per creare un'etichetta di riservatezza
 2. In **Soluzioni** fare clic su **Protezione delle informazioni**.
 3. Fare clic su **Crea un'etichetta**.
 4. Assegnare un nome all'etichetta. Si consiglia di usare **Dati sensibili**, ma è possibile scegliere un nome diverso se è già in uso.
-5. Aggiungere una descrizione comando e quindi fare clic su **Avanti**.
-6. Nella pagina **Crittografia** fare clic su **Avanti**.
-7. Nella pagina **Contrassegno contenuti** attivare l'indicazione del contenuto se si vuole aggiungere automaticamente un'intestazione, un piè di pagina o una filigrana ai file classificati con l'etichetta.
-8. Nella pagina **Impostazioni sito e gruppo** impostare **Impostazioni sito e gruppo** su **Sì**.
-9. Nell'elenco a discesa **Privacy dei siti dei team collegati ai gruppi di Office 365** scegliere **Privato: solo i membri possono accedere al sito**.
-10. Se si vuole consentire l'accesso guest, selezionare la casella di controllo **Consentire ai proprietari del gruppo Office 365 di aggiungere al gruppo persone esterne all'organizzazione**. 
-11. In **Dispositivi non gestiti** scegliere **Consenti l'accesso limitato, solo sul Web**.
+5. Aggiungere un nome visualizzato e una descrizione, quindi fare clic su **Avanti**.
+6. Nella **pagina Definire l'ambito di questa etichetta**, selezionare **File ed e-mail** e **Gruppi e siti**, quindi fare clic su **Avanti**.
+7. Nella pagina **Scegliere le impostazioni di protezione per file ed e-mail**, fare clic su **Avanti**.
+8. Nella pagina *Etichettatura automatica di file ed e-mail**, fare clic su **Avanti**.
+9. Nella pagina **Definire le impostazioni di protezione per gruppi e siti**, selezionare **Impostazioni di privacy e accesso utenti esterni** e **Impostazioni di accesso del dispositivo e condivisione esterna**, quindi fare clic su **Avanti**.
+10. Nella pagina **Definire le impostazioni di privacy e accesso utenti esterni**, in **Privacy**, selezionare l'opzione **Privato**.
+11. Se si desidera consentire l'accesso a utenti guest, in **Accesso utenti esterni**, selezionare **Consentire ai proprietari di gruppi di Microsoft 365 di aggiungere persone esterne all'organizzazione ai gruppi come ospiti**.
 12. Fare clic su **Avanti**.
-13. Nella pagina **Applicazione automatica di etichette per le app di Office** fare clic su **Avanti**.
-14. Fare clic su **Invia**, quindi su **Fine**.
+13. Nella pagina **Definire le impostazioni di condivisione esterna e di accesso del dispositivo**, selezionare **Controllare la condivisione esterna da siti SharePoint con etichetta**.
+14. In **Il contenuto può essere condiviso con**, scegliere **Utenti ospiti nuovi ed esistenti** se si sta consentendo l'accesso a utenti guest o **Solo persone nell'organizzazione** in caso contrario.
+15. In **Accesso da dispositivi non gestiti**, scegliere **Consentire accesso limitato, solo sul Web**.
+16. Fare clic su **Avanti**.
+17. Nella pagina **Applicazione automatica di etichette per le colonne del database**, fare clic su **Avanti**.
+18. Fare clic su **Crea etichetta**, quindi su **Fine**.
 
 Dopo avere creato l'etichetta, è necessario pubblicarla per gli utenti che la useranno. Per la protezione dei dati sensibili, l'etichetta sarà resa disponibile per tutti gli utenti. È possibile pubblicare l'etichetta nel Centro conformità Microsoft 365, nella scheda **Criteri delle etichette** della pagina **Protezione delle informazioni**. Se si ha un criterio esistente applicato a tutti gli utenti, aggiungere questa etichetta a tale criterio. Se è necessario creare un nuovo criterio, vedere [Pubblicare etichette di riservatezza creando un criterio di etichetta](https://docs.microsoft.com/microsoft-365/compliance/create-sensitivity-labels#publish-sensitivity-labels-by-creating-a-label-policy).
 

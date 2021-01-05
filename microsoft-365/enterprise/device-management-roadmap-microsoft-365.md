@@ -15,12 +15,12 @@ ms.assetid: fb4182e6-5e78-45d0-9641-d791c4519441
 audience: ITPro
 ms.custom: microsoft-intune
 description: La roadmap per configurare la gestione dei dispositivi per Microsoft 365.
-ms.openlocfilehash: d359cae62fbd1bf2468ad753670ff8e385d6f25b
-ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
+ms.openlocfilehash: 79be47d6bc83c124f2203866986e06181a1f7f3d
+ms.sourcegitcommit: ae646779d84e993cf80b1207e76b856a21be5790
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48398962"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "49749540"
 ---
 # <a name="device-management-roadmap-for-microsoft-365"></a>Roadmap per la gestione dei dispositivi per Microsoft 365
 
@@ -29,7 +29,7 @@ Microsoft 365 per Enterprise include funzionalità che consentono di gestire i d
 Sono disponibili due opzioni per la gestione dei dispositivi:
 
 - [Microsoft Intune](#microsoft-intune)
-- [Mobilità e sicurezza di base](#basic-mobility-and-security)
+- [Basic Mobility + Security](#basic-mobility-and-security)
 
 ## <a name="microsoft-intune"></a>Microsoft Intune
 
@@ -39,7 +39,7 @@ Gli utenti che dispongono di dispositivi personali potrebbero non voler registra
 
 È inoltre possibile determinare come gestire i dispositivi personali e i dispositivi di proprietà dell'organizzazione. Potrebbe essere opportuno trattare i dispositivi in modo diverso, a seconda dell'utilizzo.
 
-## <a name="basic-mobility-and-security"></a>Mobilità e sicurezza di base
+## <a name="basic-mobility-and-security"></a>Basic Mobility + Security
 
 Questa funzionalità è integrata in Microsoft 365 e consente di proteggere e gestire i dispositivi mobili degli utenti, ad esempio iPhone, iPad, Android e Windows Phone. È possibile creare e gestire criteri di sicurezza, cancellare tutti i dati in remoto e visualizzare report dettagliati sui dispositivi.
 
@@ -49,8 +49,8 @@ Per una migliore valutazione dell'opzione di gestione dei dispositivi, vedere [s
 
 In base alla valutazione, iniziare a gestire i dispositivi con:
 
-- [Intune](https://docs.microsoft.com/mem/intune/fundamentals/planning-guide).
-- [Mobilità e sicurezza di base](https://support.microsoft.com/office/set-up-basic-mobility-and-security-dd892318-bc44-4eb1-af00-9db5430be3cd).
+- [Intune](https://docs.microsoft.com/mem/intune/fundamentals/planning-guide)
+- [Basic Mobility + Security](https://support.microsoft.com/office/set-up-basic-mobility-and-security-dd892318-bc44-4eb1-af00-9db5430be3cd)
  
 ## <a name="identity-and-device-access-recommendations"></a>Consigli sull’identità e sull’accesso dei dispositivi
 

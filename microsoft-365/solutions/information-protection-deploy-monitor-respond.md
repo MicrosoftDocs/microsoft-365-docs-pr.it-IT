@@ -5,7 +5,7 @@ author: brendacarter
 f1.keywords:
 - NOCSH
 manager: laurawi
-ms.date: 06/09/2020
+ms.date: 01/04/2021
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Utilizzare i criteri di controllo e di avviso e le richieste del soggetto dei dati per monitorare e rispondere agli incidenti dei dati personali.
-ms.openlocfilehash: 296220ac8b34d9ce10c783194b78ca344e746b84
-ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
+ms.openlocfilehash: 3ae0f2a6528f6188500c7cee7732c6447013eaa6
+ms.sourcegitcommit: ae646779d84e993cf80b1207e76b856a21be5790
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48377200"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "49749588"
 ---
 # <a name="monitor-and-respond-to-data-privacy-incidents-in-your-organization"></a>Monitorare e rispondere agli incidenti sulla privacy dei dati nell'organizzazione
 
@@ -78,9 +78,6 @@ Per informazioni su come rispondere a un DSR in Microsoft 365, vedere [richieste
 
 Per Microsoft Stream, quando un utente viene eliminato da Azure Active Directory (Azure AD), se il relativo nome è stato associato a un video del flusso postato prima di quel momento, l'indirizzo di posta elettronica rimane associato al video. Per rimuoverlo, vedere [gestire gli utenti eliminati da Microsoft Stream](https://docs.microsoft.com/stream/managing-deleted-users) .
 
-## <a name="additional-investigative-tools"></a>Strumenti di analisi aggiuntivi
+## <a name="insider-risk-management-as-an-investigative-tool"></a>Gestione dei rischi insider come strumento investigativo
 
-Di seguito sono disponibili due strumenti aggiuntivi che possono essere utili per il monitoraggio, l'analisi e la correzione degli incidenti relativi alla privacy dei dati nell'organizzazione:
-
-- [Gestione dei rischi insider in microsoft 365](../compliance/insider-risk-management.md), una funzionalità dell'interfaccia di amministrazione di conformità Microsoft per ridurre al minimo i rischi interni, consentendo di rilevare, indagare ed eseguire azioni sulle attività a rischio nell'organizzazione.
-- [Indagini sui dati in microsoft 365](../compliance/overview-data-investigations.md), una funzionalità dell'interfaccia di amministrazione di conformità di Microsoft per la ricerca di dati sensibili, dannosi o fuori luogo in Microsoft 365, quindi esaminare cosa è successo per eseguire le azioni appropriate per correggere l'incidente.
+La [gestione dei rischi insider in microsoft 365](../compliance/insider-risk-management.md) è una funzionalità dell'interfaccia di amministrazione della conformità Microsoft che consente di ridurre al minimo i rischi interni, consentendo di rilevare, indagare ed eseguire azioni sulle attività a rischio nell'organizzazione.
