@@ -15,13 +15,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 3ab1e2c3-28cf-4bf5-b0a8-c0222f32bdf5
+ROBOTS: NOINDEX, NOFOLLOW
 description: Informazioni su come visualizzare e interpretare lo stato e i risultati della formazione sulla pertinenza per i problemi di caso in Advanced eDiscovery.
-ms.openlocfilehash: bf1fe2fc6c0f3ff80fd7e53d55149a61009e2b32
-ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
+ms.openlocfilehash: 889153b2d6587daee4212ab8f2b5ccb941e848a4
+ms.sourcegitcommit: 222fb7fe2b26dde3d8591b61cc02113d6135012c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "44936219"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "49760344"
 ---
 # <a name="track-relevance-analysis-in-advanced-ediscovery-classic"></a>Monitorare l'analisi della pertinenza in Advanced eDiscovery (Classic)
 
@@ -53,7 +54,7 @@ In Advanced eDiscovery, la scheda della pista di pertinenza Visualizza la validi
   
     Quando la valutazione non viene completata con il primo set di file di esempio, la valutazione potrebbe essere il passaggio successivo per la codifica di altri file. 
     
-    In **pista pertinenza** \> **Track**, l'indicatore di avanzamento della formazione e il suggerimento per gli strumenti indicano il numero stimato di esempi aggiuntivi necessari per raggiungere la stabilità. Questa stima fornisce una guida di riferimento per l'addestramento supplementare necessario.
+    In **pista pertinenza** \> , l'indicatore di avanzamento della formazione e il suggerimento per gli strumenti indicano il numero stimato di esempi aggiuntivi necessari per raggiungere la stabilità. Questa stima fornisce una guida di riferimento per l'addestramento supplementare necessario.
     
     ![Corso di formazione sulla traccia di pertinenza](../media/98dbc3f5-5238-4d73-9f88-1aa4d77ea729.png)
   
@@ -84,9 +85,9 @@ Se si desidera importare nuovi file dopo il calcolo del batch, l'amministratore 
 Se sono presenti incoerenze nel tagging dei file, può influire sull'analisi. Il processo di coerenza tagging avanzato di eDiscovery può essere utilizzato quando i risultati non sono ottimali o la coerenza è in dubbio. Viene restituito un elenco dei possibili file contrassegnati con incoerenza, che possono essere esaminati e contrassegnati nuovamente, se necessario.
   
 > [!NOTE]
-> Dopo sette o più turni di allenamento dopo la valutazione, la coerenza di tagging può essere visualizzata in caso di **rilevanza** \> **Track** \> **Issue** \> **dei risultati dettagliati** \> **avanzamento della formazione**. Questa revisione viene fatta per un problema alla volta. 
+> Dopo sette o più turni di allenamento dopo la valutazione, la coerenza di tagging può essere visualizzata in caso di **rilevanza** \>  \>  \> **dei risultati dettagliati** \> **avanzamento della formazione**. Questa revisione viene fatta per un problema alla volta. 
   
-1. Nella ** \> colonna pertinenza**espandere la riga di un problema.
+1. Nella **\> colonna pertinenza** espandere la riga di un problema.
     
 2. A destra del **passaggio successivo**, fare clic su **modifica**.
     
@@ -98,7 +99,7 @@ Se sono presenti incoerenze nel tagging dei file, può influire sull'analisi. Il
     
 ## <a name="viewing-and-using-relevance-results"></a>Visualizzazione e utilizzo dei risultati di pertinenza
 
-Nella scheda ** \> rilevamento pertinenza** espandere la riga di un problema e, accanto a **risultati dettagliati**, fare clic su **Visualizza**. Vengono visualizzati i riquadri dei risultati dettagliati, come illustrato di seguito.
+Nella scheda **\> rilevamento pertinenza** espandere la riga di un problema e, accanto a **risultati dettagliati**, fare clic su **Visualizza**. Vengono visualizzati i riquadri dei risultati dettagliati, come illustrato di seguito.
   
 ![Risultati dettagliati della formazione sulla pertinenza](../media/495c04a9-ed1e-4355-8cab-c14270ca2bbb.png)
   
@@ -133,13 +134,13 @@ Nel riquadro **avanzamento formazione** è incluso un grafico dello stato di ava
  **Grafico Progress Training**: indica il grado di stabilità della formazione di pertinenza dopo un certo numero di cicli di formazione rilevanza rispetto al valore della misura F. Quando si passa da sinistra a destra all'interno del grafico, l'intervallo di confidenza si restringe e viene utilizzato, insieme alla misura F, dalla pertinenza avanzata di eDiscovery per determinare la stabilità quando i risultati della formazione sulla pertinenza sono ottimizzati.
   
 > [!NOTE]
-> La pertinenza utilizza F2, una metrica di misura F in cui il richiamo riceve il doppio del peso di precisione. Per i casi con elevata ricchezza (oltre il 25%), la pertinenza utilizza la F1 (rapporto 1:1). Il rapporto di misura F può essere configurato in impostazioni avanzate per l' **installazione di pertinenza** \> **Advanced settings**. 
+> La pertinenza utilizza F2, una metrica di misura F in cui il richiamo riceve il doppio del peso di precisione. Per i casi con elevata ricchezza (oltre il 25%), la pertinenza utilizza la F1 (rapporto 1:1). Il rapporto di misura F può essere configurato in impostazioni avanzate per l' **installazione di pertinenza** \> . 
   
 ### <a name="batch-calculation-results"></a>Risultati del calcolo batch
 
 Nel riquadro dei **risultati del calcolo batch** è incluso il numero di file che sono stati segnati per pertinenza, come indicato di seguito: 
   
-- **Esito positivo**
+- **Successo**
     
 - **Empty**: non contiene testo, ad esempio solo spazi/tabulazioni
     
@@ -169,18 +170,3 @@ Questa visualizzazione Mostra gli elementi seguenti:
 - **Richiamo**: percentuale dei file rilevanti nel set di revisione. 
     
 - **Distribuzione per Punteggio di pertinenza**: i file nel display grigio scuro a sinistra sono al di sotto del Punteggio di taglio. Un suggerimento per gli strumenti Visualizza il Punteggio di pertinenza e la percentuale relativa di file nel set di file di revisione in relazione ai file totali.
-    
-## <a name="see-also"></a>Vedere anche
-
-[Advanced eDiscovery (classico)](office-365-advanced-ediscovery.md)
-  
-[Informazioni sulla valutazione in rilevanza](assessment-in-relevance-in-advanced-ediscovery.md)
-  
-[Esecuzione e revisione della valutazione](tagging-and-assessment-in-advanced-ediscovery.md)
-  
-[Esecuzione della formazione sulla pertinenza](tagging-and-relevance-training-in-advanced-ediscovery.md)
-  
-[Prendere decisioni in base ai risultati](decision-based-on-the-results-in-advanced-ediscovery.md)
-  
-[Verifica dell'analisi della pertinenza](test-relevance-analysis-in-advanced-ediscovery.md)
-

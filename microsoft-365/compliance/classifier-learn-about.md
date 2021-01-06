@@ -18,14 +18,14 @@ search.appverid:
 - MOE150
 - MET150
 description: Un classificatore addestrabile di Microsoft 365 è uno strumento che è possibile addestrare per riconoscere vari tipi di contenuto, fornendo campioni positivi e negativi da esaminare. Una volta che il classificatore è stato addestrato, conferma che i risultati sono accurati. È quindi possibile utilizzarla per eseguire una ricerca nel contenuto dell'organizzazione e classificarla in modo da applicare etichette di conservazione o di sensibilità o includerla nella prevenzione della perdita di dati (DLP) o nei criteri di conservazione.
-ms.openlocfilehash: d5e7eb891e4cff2fc220d1e9264839d05ed11bd2
-ms.sourcegitcommit: 54d1a2f363b2d5b63aae258c3cec0573a08f2866
+ms.openlocfilehash: 0e5f712b76af2fba3d456997a47352773d92d766
+ms.sourcegitcommit: 222fb7fe2b26dde3d8591b61cc02113d6135012c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "49752640"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "49759900"
 ---
-# <a name="learn-about-classifiers"></a>Informazioni sui classificatori
+# <a name="learn-about-trainable-classifiers"></a>Informazioni sui classificatori sottoponibili a training
 
 Classificare ed etichettare il contenuto in modo che possa essere protetto e gestito correttamente è il punto di partenza per la disciplina di protezione delle informazioni. Microsoft 365 ha tre modi per classificare il contenuto.
 

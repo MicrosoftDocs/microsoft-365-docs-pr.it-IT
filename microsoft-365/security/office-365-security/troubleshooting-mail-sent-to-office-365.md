@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: In questo articolo vengono fornite informazioni per la risoluzione dei problemi relativi all'invio di posta elettronica alle cassette postali in Microsoft 365 & procedure consigliate per la posta in blocco ai clienti di Microsoft 365.
-ms.openlocfilehash: 8b7c008f827a579e234d8a8feab008d36ecfe064
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.openlocfilehash: 3504d7518073826f3979c3c837c58d4406886b41
+ms.sourcegitcommit: 222fb7fe2b26dde3d8591b61cc02113d6135012c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49615409"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "49760483"
 ---
 # <a name="troubleshooting-mail-sent-to-microsoft-365"></a>Risoluzione dei problemi della posta elettronica inviati a Microsoft 365
 
@@ -128,7 +128,7 @@ Altrettanto importante del modo in cui vengono inviati i messaggi di posta elett
 
 - I reindirizzamenti inclusi nel corpo del messaggio devono essere simili e coerenti e non multipli e diversificati. Un reindirizzamento in questo contesto è qualsiasi elemento che punti al di fuori del messaggio, ad esempio collegamenti e documenti. Se si dispone di numerosi collegamenti pubblicitari o di annullamento della sottoscrizione oppure si aggiornano i collegamenti dei profili, tutti gli utenti devono puntare allo stesso dominio. Ad esempio:
 
-  Impostazione corretta:
+  Correct (tutti i domini sono uguali):
 
   `unsubscribe.bulkmailer.com`
 
@@ -136,7 +136,7 @@ Altrettanto importante del modo in cui vengono inviati i messaggi di posta elett
 
   `options.bulkmailer.com`
 
-  Impostazione non corretta:
+  Non corretto (tutti i domini sono diversi):
 
   `unsubscribe.bulkmailer.com`
 

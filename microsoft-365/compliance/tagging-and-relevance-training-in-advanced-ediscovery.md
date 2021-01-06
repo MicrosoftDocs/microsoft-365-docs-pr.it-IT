@@ -15,13 +15,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 8576cc86-d51b-4285-b54b-67184714cc62
+ROBOTS: NOINDEX, NOFOLLOW
 description: Informazioni sui passaggi da contrassegnare e quindi utilizzare un campione di formazione di 40 file durante la fase di formazione per la pertinenza di Advanced eDiscovery.
-ms.openlocfilehash: d576b0a907a4c12eabe4f3cba9846de670b0ee12
-ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
+ms.openlocfilehash: cedac19ee04053e19b5dac1537b57d576e2e0354
+ms.sourcegitcommit: 222fb7fe2b26dde3d8591b61cc02113d6135012c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "49663451"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "49760366"
 ---
 # <a name="tagging-and-relevance-training-in-advanced-ediscovery-classic"></a>Formazione di tagging e pertinenza in Advanced eDiscovery (Classic)
 
@@ -98,17 +99,3 @@ L'elenco file di esempio consente di visualizzare un elenco dei file in un campi
     
     Per passare all'ultimo file dell'esempio: MAIUSC + CTRL + \>
     
-## <a name="see-also"></a>Vedere anche
-
-[Advanced eDiscovery (classico)](office-365-advanced-ediscovery.md)
-  
-[Informazioni sulla valutazione in rilevanza](assessment-in-relevance-in-advanced-ediscovery.md)
-  
-[Tagging e valutazione](tagging-and-assessment-in-advanced-ediscovery.md)
-  
-[Verifica dell'analisi della pertinenza](track-relevance-analysis-in-advanced-ediscovery.md)
-  
-[Decidere in base ai risultati](decision-based-on-the-results-in-advanced-ediscovery.md)
-  
-[Verifica dell'analisi della pertinenza](test-relevance-analysis-in-advanced-ediscovery.md)
-

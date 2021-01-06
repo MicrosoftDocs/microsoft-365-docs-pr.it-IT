@@ -9,16 +9,20 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 76a73372cc7517c3241390e58c28b0b02bffd664
-ms.sourcegitcommit: 4cbb4ec26f022f5f9d9481f55a8a6ee8406968d2
+ms.openlocfilehash: d7fe410f114d43d4f6c983aaf23d949298635318
+ms.sourcegitcommit: 222fb7fe2b26dde3d8591b61cc02113d6135012c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49527698"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "49760104"
 ---
 # <a name="adjust-settings-after-enrollment"></a>Modificare le impostazioni dopo la registrazione
 
 Dopo aver completato la registrazione in Microsoft Managed Desktop, è necessario modificare determinate impostazioni di Microsoft Intune e Azure Active Directory (Azure AD) per consentire la gestione e mantenere la sicurezza. Impostare le impostazioni seguenti per escludere i gruppi di Azure AD che contengono i dispositivi e gli utenti di Microsoft Managed Desktop. Per i passaggi da escludere i gruppi, vedere [Conditional Access: Users and groups](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-users-groups#exclude-users).
+
+> [!NOTE]
+> Se si apportano modifiche dopo la registrazione ai criteri in Microsoft Intune, Azure Active Directory o Microsoft 365, è possibile che Microsoft Managed Desktop smetta di funzionare correttamente. Per evitare problemi con le operazioni di Microsoft Managed Desktop, controllare le impostazioni specifiche descritte in [correggere i problemi trovati dallo strumento di valutazione della conformità](../get-ready/readiness-assessment-fix.md) prima di modificare i criteri.
+
 
 ## <a name="microsoft-intune-settings"></a>Impostazioni di Microsoft Intune
 

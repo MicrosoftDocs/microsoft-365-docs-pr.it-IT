@@ -17,18 +17,18 @@ search.appverid:
 - MET150
 ms.assetid: 6ceca4d3-cad1-4532-9f0f-d469dfbbb552
 description: Informazioni su come creare un criterio di denominazione per i gruppi di Microsoft 365.
-ms.openlocfilehash: 9bc0a4c7e1ae6ad532c97b442a2bc50880a942fc
-ms.sourcegitcommit: 884ac262443c50362d0c3ded961d36d6b15d8b73
+ms.openlocfilehash: acf660375508760bd2e9874a07454709849929b0
+ms.sourcegitcommit: 222fb7fe2b26dde3d8591b61cc02113d6135012c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49698676"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "49759825"
 ---
 # <a name="microsoft-365-groups-naming-policy"></a>Criteri di denominazione dei gruppi Microsoft 365
 
 È possibile utilizzare un criterio di denominazione del gruppo per applicare una strategia di denominazione coerente per i gruppi creati dagli utenti dell'organizzazione. I criteri di denominazione consentono all'utente e agli utenti di identificare la funzione del gruppo, dell'appartenenza, dell'area geografica o di chi ha creato il gruppo. Il criterio di denominazione può anche contribuire alla categorizzazione dei gruppi nella rubrica. È possibile utilizzare il criterio per bloccare le parole specifiche che vengono utilizzate nei nomi e negli alias di gruppo.
 
-I criteri di denominazione vengono applicati ai gruppi creati in tutti i carichi di lavoro dei gruppi (come Outlook, Microsoft teams, SharePoint, planner, Yammer e così via). Viene applicato sia al nome del gruppo sia all'alias di gruppo. Viene applicato quando un utente crea un gruppo e quando viene modificato il nome o l'alias del gruppo per un gruppo esistente.
+I criteri di denominazione vengono applicati ai gruppi creati in tutti i carichi di lavoro dei gruppi (come Outlook, Microsoft teams, SharePoint, planner, Yammer e così via). Viene applicato sia al nome del gruppo sia all'alias di gruppo. Viene inoltre applicato quando un utente crea un gruppo e quando viene modificato il nome, l'alias, la descrizione o l'avatar del gruppo per un gruppo esistente.
 
 > [!TIP]
 > I criteri di denominazione di un gruppo di Microsoft 365 si applicano solo ai gruppi di Microsoft 365. Non si applica ai gruppi di distribuzione creati in Exchange Online. Per creare un criterio di denominazione per i gruppi di distribuzione, vedere [Create a Distribution Group Naming Policy](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-distribution-groups/create-group-naming-policy).

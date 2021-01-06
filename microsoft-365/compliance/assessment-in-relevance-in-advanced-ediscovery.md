@@ -16,13 +16,14 @@ search.appverid:
 - MET150
 ms.assetid: 1d33d4fb-91ed-41c0-b72e-5a26eca3a2a7
 description: Ottenere una panoramica della fase di valutazione e del relativo ruolo per determinare la ricchezza dei problemi durante la formazione di pertinenza in Microsoft 365 Advanced eDiscovery.
+ROBOTS: NOINDEX, NOFOLLOW
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 28bbe15a6e3f5611041cf446bd053f59de395d54
-ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
+ms.openlocfilehash: d9ce400af87af36dfc9e0d51caba90b952edec9c
+ms.sourcegitcommit: 222fb7fe2b26dde3d8591b61cc02113d6135012c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "49663081"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "49759922"
 ---
 # <a name="understand-assessment-in-relevance-in-advanced-ediscovery-classic"></a>Comprendere la valutazione in rilevanza in Advanced eDiscovery (Classic)
 
@@ -52,19 +53,4 @@ Ogni problema ha la propria ricchezza, il margine di errore corrente e, di conse
 È possibile accettare le indicazioni relative alla pertinenza o regolare il margine di errore corrente in base alle proprie esigenze. Il margine di errore corrente predefinito è determinato per il richiamo pari o superiori a 75%.
   
 > [!NOTE]
-> La fase di valutazione può essere ignorata, nella scheda **\> Tracking pertinenza** della visualizzazione espansa per un problema, deselezionando la casella di controllo **valutazione** per problema e quindi per "tutti i problemi". Tuttavia, di conseguenza, non saranno disponibili statistiche per questo problema. > deselezionando la casella di controllo **valutazione** può essere eseguita solo prima di eseguire la valutazione. Se in un caso esistono più problemi, la valutazione viene ignorata solo se la casella di controllo è deselezionata per ogni problema. 
-  
-## <a name="related-topics"></a>Argomenti correlati
-
-[Advanced eDiscovery (classico)](office-365-advanced-ediscovery.md)
-  
-[Tagging e valutazione](tagging-and-assessment-in-advanced-ediscovery.md)
-  
-[Formazione di tagging e pertinenza](tagging-and-relevance-training-in-advanced-ediscovery.md)
-  
-[Verifica dell'analisi della pertinenza](track-relevance-analysis-in-advanced-ediscovery.md)
-  
-[Decidere in base ai risultati](decision-based-on-the-results-in-advanced-ediscovery.md)
-  
-[Verifica dell'analisi della pertinenza](test-relevance-analysis-in-advanced-ediscovery.md)
-
+> La fase di valutazione può essere ignorata, nella scheda **\> Tracking pertinenza** della visualizzazione espansa per un problema, deselezionando la casella di controllo **valutazione** per problema e quindi per "tutti i problemi". Tuttavia, di conseguenza, non saranno disponibili statistiche per questo problema. > deselezionando la casella di controllo **valutazione** può essere eseguita solo prima di eseguire la valutazione. Se in un caso sono presenti più problemi, la valutazione viene ignorata solo se la casella di controllo è deselezionata per ogni problema.

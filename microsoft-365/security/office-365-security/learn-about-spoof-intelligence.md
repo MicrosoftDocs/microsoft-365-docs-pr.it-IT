@@ -19,12 +19,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Gli amministratori possono ottenere informazioni su spoofing Intelligence in Exchange Online Protection (EOP), in cui è possibile consentire o bloccare specifici mittenti contraffatti.
-ms.openlocfilehash: bc8ae2664acf96ea6cd4c20c2f9195db9b75b3da
-ms.sourcegitcommit: 1beaf89d2faa32f11fe1613be2fa2b31c4bc4a91
+ms.openlocfilehash: 603aeb35241f9808561593afa69b3b9ce7193fb0
+ms.sourcegitcommit: 222fb7fe2b26dde3d8591b61cc02113d6135012c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "49602122"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "49760531"
 ---
 # <a name="configure-spoof-intelligence-in-eop"></a>Configurare l'intelligence spoof in EOP
 
@@ -57,7 +57,7 @@ L'intelligenza contraffatta e, in particolare, il criterio di intelligence spoof
 
 - Per informazioni su come connettersi a PowerShell per Exchange Online, vedere [Connettersi a PowerShell per Exchange Online](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell). Per connettersi a PowerShell di EOP autonomo, vedere [Connettersi a PowerShell per Exchange Online Protection](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
-- Prima di poter eseguire le procedure descritte in questo articolo, è necessario disporre delle autorizzazioni per il Centro sicurezza & Compliance:
+- Per poter eseguire le procedure contenute in questo articolo è necessario disporre delle autorizzazioni appropriate nel Centro sicurezza e conformità:
   - Per modificare il criterio di intelligence di spoofing o abilitare o disabilitare l'intelligence di spoofing, è necessario essere membri dei gruppi di ruoli **Gestione organizzazione** o **amministratore sicurezza** .
   - Per l'accesso in sola lettura ai criteri di intelligence spoof, è necessario essere membri dei gruppi di ruoli **lettore globale** o lettore di **sicurezza** .
 
@@ -182,7 +182,7 @@ Le opzioni di configurazione per l'intelligence spoof sono descritte in [Imposta
 
 Per verificare di aver configurato l'intelligence spoof con i mittenti autorizzati e non autorizzati allo spoofing e di aver configurato le impostazioni di intelligence di spoofing, utilizzare una delle seguenti operazioni:
 
-- Nel centro sicurezza & conformità, accedere a criteri di **gestione delle minacce** protezione da \> **Policy** \> **posta indesiderata** \> Espandi criteri di **Intelligence spoof** \> selezionare **Mostra me mittenti già Recensito** \> selezionare la scheda **domini** o **domini esterni** e verificare il valore **consentito per la falsificazione** del mittente.
+- Nel centro sicurezza & conformità, accedere a criteri di **gestione delle minacce** protezione da \>  \> **posta indesiderata** \> Espandi criteri di **Intelligence spoof** \> selezionare **Mostra me mittenti già Recensito** \> selezionare la scheda **domini** o **domini esterni** e verificare il valore **consentito per la falsificazione** del mittente.
 
 - In PowerShell, eseguire i seguenti comandi per visualizzare i mittenti consentiti e non consentiti per la falsificazione:
 
@@ -199,7 +199,7 @@ Per verificare di aver configurato l'intelligence spoof con i mittenti autorizza
    Get-PhishFilterPolicy -Detailed | Export-CSV "C:\My Documents\Spoofed Senders.csv"
    ```
 
-- Nel centro sicurezza & conformità, accedere a criteri di **gestione delle minacce** \> **Policy** \> **anti-phishing** o **ATP anti-phishing**, quindi eseguire una delle operazioni seguenti:  
+- Nel centro sicurezza & conformità, accedere a criteri di **gestione delle minacce** \>  \> **anti-phishing** o **ATP anti-phishing**, quindi eseguire una delle operazioni seguenti:  
 
   - Selezionare un criterio dall'elenco. Nel riquadro a comparsa visualizzato, verificare i valori nella sezione **spoofing** .
   - Fare clic su **criteri predefiniti**. Nel riquadro a comparsa visualizzato, verificare i valori nella sezione **spoofing** .
@@ -207,7 +207,7 @@ Per verificare di aver configurato l'intelligence spoof con i mittenti autorizza
 - In Exchange Online PowerShell, sostituire \<Name\> con Office365 antiphishing default o il nome di un criterio personalizzato ed eseguire il seguente comando per verificare le impostazioni:
 
   ```PowerShell
-  Get-AntiPhishPolicy -Identity "<Name>" | Format-List EnableAntiSpoofEnforcement,EnableUnauthenticatedSender,AuthenticationFailAction
+  Get-AntiPhishPolicy -Identity "<Name>" | Format-List EnableSpoofIntelligence,EnableUnauthenticatedSender,AuthenticationFailAction
   ```
 
 ## <a name="other-ways-to-manage-spoofing-and-phishing"></a>Altre modalità di gestione dello spoofing e del phishing

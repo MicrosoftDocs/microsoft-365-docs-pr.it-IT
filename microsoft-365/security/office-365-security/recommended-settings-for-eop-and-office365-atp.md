@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 description: Quali sono le procedure consigliate per le impostazioni di sicurezza di Exchange Online Protection (EOP) e Defender per Office 365? Quali sono le raccomandazioni aggiornate per la protezione standard? Che cosa dovrebbe essere utilizzato se si desidera essere più severi? Quali sono gli extra che si ottengono se si utilizza Defender anche per Office 365?
-ms.openlocfilehash: d731b75e05dcecc513c72b390b106491f7601c71
-ms.sourcegitcommit: 884ac262443c50362d0c3ded961d36d6b15d8b73
+ms.openlocfilehash: c9a9774e0866b009965eeb574384095c26fa780e
+ms.sourcegitcommit: 222fb7fe2b26dde3d8591b61cc02113d6135012c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49698688"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "49760231"
 ---
 # <a name="recommended-settings-for-eop-and-microsoft-defender-for-office-365-security"></a>Impostazioni consigliate per EOP e Microsoft Defender per la sicurezza di Office 365
 
@@ -138,7 +138,7 @@ Per ulteriori informazioni su queste impostazioni, vedere [spoofing Settings](se
 
 |Nome della funzionalità di sicurezza|Predefiniti|Standard|Rigorosa|Commento|
 |---|:---:|:---:|:---:|---|
-|**Abilitare la protezione anti-spoofing** <p> _EnableAntispoofEnforcement_|Attivato <p> `$true`|Attivato <p> `$true`|Attivato <p> `$true`||
+|**Abilitare la protezione anti-spoofing** <p> _EnableSpoofIntelligence_|Attivato <p> `$true`|Attivato <p> `$true`|Attivato <p> `$true`||
 |**Abilitazione del mittente non autenticato** <p> _EnableUnauthenticatedSender_|Attivato <p> `$true`|Attivato <p> `$true`|Attivato <p> `$true`|Aggiunge un punto interrogativo (?) alla foto del mittente in Outlook per i mittenti non identificati falsificati. Per ulteriori informazioni, vedere [spoofing Settings in anti-phishing Policies](set-up-anti-phishing-policies.md).|
 |**Se il messaggio di posta elettronica viene inviato da un utente che non ha il diritto di falsificare il dominio** <p> _AuthenticationFailAction_|**Spostare il messaggio nelle cartelle di posta indesiderata dei destinatari** <p> `MoveToJmf`|**Spostare il messaggio nelle cartelle di posta indesiderata dei destinatari** <p> `MoveToJmf`|**Mettere in quarantena il messaggio** <p> `Quarantine`|Questa impostazione si applica ai mittenti bloccati in [Intelligence contraffatta](learn-about-spoof-intelligence.md).|
 |
@@ -192,7 +192,7 @@ Si noti che si tratta delle stesse impostazioni disponibili nelle impostazioni d
 
 |Nome della funzionalità di sicurezza|Predefiniti|Standard|Rigorosa|Commento|
 |---|---|---|---|---|
-|**Abilitare la protezione anti-spoofing** <p> _EnableAntispoofEnforcement_|Attivato <p> `$true`|Attivato <p> `$true`|Attivato <p> `$true`||
+|**Abilitare la protezione anti-spoofing** <p> _EnableSpoofIntelligence_|Attivato <p> `$true`|Attivato <p> `$true`|Attivato <p> `$true`||
 |**Abilitazione del mittente non autenticato** <p> _EnableUnauthenticatedSender_|Attivato <p> `$true`|Attivato <p> `$true`|Attivato <p> `$true`|Aggiunge un punto interrogativo (?) alla foto del mittente in Outlook per i mittenti non identificati falsificati. Per ulteriori informazioni, vedere [spoofing Settings in anti-phishing Policies](set-up-anti-phishing-policies.md).|
 |**Se il messaggio di posta elettronica viene inviato da un utente che non ha il diritto di falsificare il dominio** <p> _AuthenticationFailAction_|**Spostare il messaggio nelle cartelle di posta indesiderata dei destinatari** <p> `MoveToJmf`|**Spostare il messaggio nelle cartelle di posta indesiderata dei destinatari** <p> `MoveToJmf`|**Mettere in quarantena il messaggio** <p> `Quarantine`|Questa impostazione si applica ai mittenti bloccati in [Intelligence contraffatta](learn-about-spoof-intelligence.md).|
 |

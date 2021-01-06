@@ -14,12 +14,12 @@ ms.assetid: 81b75194-3b04-48da-8b81-951afbabedde
 ms.custom:
 - seo-marvel-apr2020
 description: In questo articolo vengono fornite informazioni su come passare a Exchange Online Protection (EOP) da un dispositivo di igiene della posta elettronica locale o da un servizio di protezione basato sul cloud.
-ms.openlocfilehash: 25669982c06127331369fdb595c6614733681047
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: a007bb94c35f7712b69ad5eef4152455c114ca24
+ms.sourcegitcommit: 222fb7fe2b26dde3d8591b61cc02113d6135012c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48202126"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "49760387"
 ---
 # <a name="switch-to-eop-from-google-postini-the-barracuda-spam-and-virus-firewall-or-cisco-ironport"></a>Passaggio a Exchange Online Protection da Google Postini, Barracuda Spam e Virus Firewall o Cisco IronPort
 
@@ -44,7 +44,7 @@ Se attualmente le cassette postali sono ospitate in locale e si utilizza un'appl
 
 ## <a name="switch-to-exchange-online"></a>Passaggio a Exchange Online
 
-È possibile che le cassette postali locali siano protette da un dispositivo locale e che si desideri passare alle cassette postali ospitate sul cloud di Exchange Online e alla protezione di EOP per usufruire delle funzionalità di messaggistica e protezione di Microsoft 365 cloud. Per iniziare, è possibile iscriversi a Microsoft 365 e aggiungere il proprio dominio. Questo scenario non richiede di impostare connettori, poiché non esistono routing alle cassette postali locali. Iniziare a [ottenere le funzionalità avanzate più recenti con Microsoft 365](https://www.microsoft.com/microsoft-365/business/compare-more-office-365-for-business-plans) per iscriversi e familiarizzare con le sue caratteristiche.
+È possibile che le cassette postali locali siano protette da un dispositivo locale e che si desideri passare alle cassette postali ospitate sul cloud di Exchange Online e alla protezione di EOP per usufruire delle funzionalità di messaggistica e protezione di Microsoft 365 cloud. Per iniziare, è possibile iscriversi a Microsoft 365 e aggiungere il proprio dominio. In questo scenario non è necessario configurare i connettori, perché non esiste alcun routing per le cassette postali locali. Iniziare a [ottenere le funzionalità avanzate più recenti con Microsoft 365](https://www.microsoft.com/microsoft-365/business/compare-more-office-365-for-business-plans) per iscriversi e familiarizzare con le sue caratteristiche.
 
 Durante il processo di installazione di Microsoft 365, verranno creati gli utenti delle cassette postali basate sul cloud.
 

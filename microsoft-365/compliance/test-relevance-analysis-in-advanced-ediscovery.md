@@ -15,13 +15,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 1b092f7c-ea55-44f5-b419-63f3458fd7e0
+ROBOTS: NOINDEX, NOFOLLOW
 description: Informazioni su come utilizzare la scheda test dopo il calcolo batch in Advanced eDiscovery per testare, confrontare e convalidare la qualità complessiva dell'elaborazione.
-ms.openlocfilehash: e408d79aac8015da210f983b7b388ace84fc383a
-ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
+ms.openlocfilehash: 52198dc5218c49598403c3f1ece201fc4f00dd47
+ms.sourcegitcommit: 222fb7fe2b26dde3d8591b61cc02113d6135012c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "49663419"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "49760322"
 ---
 # <a name="test-relevance-analysis-in-advanced-ediscovery-classic"></a>Analisi della pertinenza del test in Advanced eDiscovery (Classic)
 
@@ -109,18 +110,3 @@ Il test "test Slice" esegue test analogo al test "test the rest", ma a un segmen
 10. Esaminare e contrassegnare ognuno dei file nella scheda **\> tag pertinenza** e, al termine, fare clic su **Calcola**. 
     
 11. Nella scheda test è possibile fare clic su **Visualizza risultati** per visualizzare i risultati dei test. 
-    
-## <a name="see-also"></a>Vedere anche
-
-[Advanced eDiscovery (classico)](office-365-advanced-ediscovery.md)
-  
-[Informazioni sulla valutazione in rilevanza](assessment-in-relevance-in-advanced-ediscovery.md)
-  
-[Tagging e valutazione](tagging-and-assessment-in-advanced-ediscovery.md)
-  
-[Formazione di tagging e pertinenza](tagging-and-relevance-training-in-advanced-ediscovery.md)
-  
-[Verifica dell'analisi della pertinenza](track-relevance-analysis-in-advanced-ediscovery.md)
-  
-[Decidere in base ai risultati](decision-based-on-the-results-in-advanced-ediscovery.md)
-

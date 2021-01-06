@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: 5b9a067b-9d2e-4aa5-bb33-99d8c0d0b5d7
 description: Assegnare le autorizzazioni necessarie per eseguire le attività relative a eDiscovery utilizzando il Centro sicurezza & Compliance.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 4b95d81114e60c9d805b90b007d40d4c1a2e62b1
-ms.sourcegitcommit: 555b200b618085706dabf8648d27fb6d6427cfce
+ms.openlocfilehash: 4d4be264791c4f3d37d7a88cb3d12d1023b3c347
+ms.sourcegitcommit: 222fb7fe2b26dde3d8591b61cc02113d6135012c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/30/2020
-ms.locfileid: "49739789"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "49759890"
 ---
 # <a name="assign-ediscovery-permissions-in-the-security--compliance-center"></a>Assegnare le autorizzazioni di eDiscovery nel centro sicurezza & Compliance
 
@@ -145,10 +145,7 @@ Questo ruolo consente agli utenti di visualizzare un elenco di elementi restitui
 
 ### <a name="review"></a>Revisione
 
-Questo ruolo consente agli utenti di accedere ai dati del caso in [Advanced eDiscovery (Classic)](office-365-advanced-ediscovery.md) (noto anche come *Advanced eDiscovery V1*). Lo scopo principale di questo ruolo è offrire agli utenti l'accesso a Advanced eDiscovery (Classic). Gli utenti a cui è assegnato questo ruolo possono visualizzare e aprire l'elenco dei casi nella pagina **eDiscovery** nel centro sicurezza & Compliance di cui sono membri. Dopo che l'utente ha eseguito l'accesso a un caso nel centro sicurezza & Compliance, è possibile selezionare **passa a Advanced eDiscovery** per accedere ai dati del caso in Advanced eDiscovery (Classic) e analizzarli. Questo ruolo non consente all'utente di visualizzare in anteprima i risultati di una ricerca di contenuto associata al caso o di eseguire altre attività di ricerca contenuto o di gestione dei casi.
-
-> [!NOTE]
-> A questo punto, gli utenti a cui è stato assegnato il ruolo di revisione (o sono membri del gruppo di ruolo Reviewer) non possono accedere ai dati in [Advanced eDiscovery in Microsoft 365](overview-ediscovery-20.md) (noto anche come *Advanced eDiscovery v 2.0*). Per aggiungere membri a un caso in Advanced eDiscovery v 2.0 in modo che possano esaminare i dati dei casi, un utente deve essere membro del gruppo di ruoli Gestione eDiscovery.
+Questo ruolo consente agli utenti di accedere ai set di revisione in [Advanced eDiscovery](overview-ediscovery-20.md). Gli utenti a cui è assegnato questo ruolo possono visualizzare e aprire l'elenco dei casi nella pagina **eDiscovery > Advanced** nel centro conformità di Microsoft 365 di cui sono membri. Dopo che l'utente ha eseguito l'accesso a un caso di eDiscovery avanzato, è possibile selezionare i **set di revisione** per accedere ai dati del caso. Questo ruolo non consente all'utente di visualizzare in anteprima i risultati di una ricerca di raccolta associata al caso o di eseguire altre attività di ricerca o di gestione dei casi. Gli utenti che dispongono di questo ruolo possono accedere ai dati solo in un set di revisione.
 
 ### <a name="rms-decrypt"></a>Decrittografia RMS
 

@@ -17,16 +17,16 @@ search.appverid:
 - MOE150
 - MET150
 description: In questo articolo viene descritto come esportare e scaricare contenuto da un caso di eDiscovery di base.
-ms.openlocfilehash: e0d4315c48a0d0878b8052265ff8663cd1987169
-ms.sourcegitcommit: bd51f626f0c7788c2a3cf89deee25264659aebd5
+ms.openlocfilehash: 30fc30943bd570cf4d79ce88b5bef5836b3dfe14
+ms.sourcegitcommit: 222fb7fe2b26dde3d8591b61cc02113d6135012c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "43551421"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "49760300"
 ---
 # <a name="export-content-from-a-core-ediscovery-case"></a>Esportare il contenuto da un caso di eDiscovery di base
 
-Dopo aver eseguito correttamente una ricerca, è possibile esportare i risultati della ricerca. Quando si esportano i risultati della ricerca, gli elementi della cassetta postale vengono scaricati nei file PST o come singoli messaggi. Quando si esporta contenuto da siti di SharePoint e OneDrive for business, vengono esportate copie dei documenti di Office native e di altri documenti. Un file results. csv che contiene informazioni su tutti gli elementi esportati e un file manifesto (in formato XML) che contiene informazioni su tutti i risultati di ricerca viene esportato.
+Dopo aver eseguito correttamente una ricerca, è possibile esportare i risultati della ricerca. Quando si esportano i risultati della ricerca, gli elementi della cassetta postale vengono scaricati nei file PST o come singoli messaggi. Quando si esporta contenuto da siti di SharePoint e OneDrive for business, vengono esportate copie dei documenti di Office native e di altri documenti. Viene esportato anche un file di Results.csv contenente informazioni su tutti gli elementi esportati e un file manifesto (in formato XML) che contiene informazioni su tutti i risultati di ricerca.
   
 È possibile esportare i risultati di una [singola ricerca associata a un caso](#export-the-results-of-a-single-search) oppure esportare i risultati di [più ricerche associate a un caso](#export-the-results-of-multiple-searches).
   
@@ -34,7 +34,7 @@ Dopo aver eseguito correttamente una ricerca, è possibile esportare i risultati
 
 1. Passare a [https://compliance.microsoft.com](https://compliance.microsoft.com) e accedere con le credenziali per l'account utente a cui sono state assegnate le autorizzazioni di eDiscovery appropriate.
 
-2. Nel riquadro di spostamento a sinistra del centro conformità di Microsoft 365 fare clic su **Mostra tutto**e quindi su **eDiscovery > Core**.
+2. Nel riquadro di spostamento a sinistra del centro conformità di Microsoft 365 fare clic su **Mostra tutto** e quindi su **eDiscovery > Core**.
 
 3. Nella pagina **Core eDiscovery** selezionare il caso in cui si desidera esportare i risultati della ricerca e quindi fare clic su **Apri caso**.
 
@@ -70,7 +70,7 @@ Come alternativa all'esportazione dei risultati di una singola ricerca associata
 
 1. Passare a [https://compliance.microsoft.com](https://compliance.microsoft.com) e accedere con le credenziali per l'account utente a cui sono state assegnate le autorizzazioni di eDiscovery appropriate.
 
-2. Nel riquadro di spostamento a sinistra del centro conformità di Microsoft 365 fare clic su **Mostra tutto**e quindi su **eDiscovery > Core**.
+2. Nel riquadro di spostamento a sinistra del centro conformità di Microsoft 365 fare clic su **Mostra tutto** e quindi su **eDiscovery > Core**.
 
 3. Nella pagina **Core eDiscovery** selezionare il caso in cui si desidera esportare i risultati della ricerca e quindi fare clic su **Apri caso**.
 
@@ -105,5 +105,3 @@ Come alternativa all'esportazione dei risultati di una singola ricerca associata
 - Se si riavvia l'esportazione, le eventuali modifiche apportate alle query delle ricerche che compongono il processo di esportazione non influiscono sui risultati della ricerca recuperati. Quando si riavvia un'esportazione, viene eseguito di nuovo lo stesso processo di query di ricerca combinato eseguito al momento della creazione del processo di esportazione.
 
 - Inoltre, se si riavvia un'esportazione, i risultati della ricerca copiati nel percorso di archiviazione di Azure sovrascrivono i risultati precedenti. I risultati precedenti che sono stati copiati non saranno disponibili per il download.
-
-- La preparazione dei risultati di più ricerche per l'analisi in Advanced eDiscovery (Classic) non è disponibile. È possibile preparare solo i risultati di una singola ricerca per l'analisi in Advanced eDiscovery (Classic).

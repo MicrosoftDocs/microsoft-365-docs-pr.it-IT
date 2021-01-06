@@ -16,12 +16,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Gli amministratori possono ottenere informazioni sull'ordine di protezione delle applicazioni in Exchange Online Protection (EOP) e sul modo in cui il valore di priorità nei criteri di protezione determina il criterio applicato.
-ms.openlocfilehash: c6a89e35f1cce0532f206b5ac5dbfd4a1aedda9d
-ms.sourcegitcommit: 1db81b85d327fe423695ce675ad325e538417211
+ms.openlocfilehash: a18234344e1100f3b6a03c10e970c8195e53e7df
+ms.sourcegitcommit: 222fb7fe2b26dde3d8591b61cc02113d6135012c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49349269"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "49760567"
 ---
 # <a name="order-and-precedence-of-email-protection"></a>Ordine e precedenza della protezione della posta elettronica
 
@@ -42,7 +42,7 @@ Esistono due fattori principali che determinano il criterio applicato a un messa
   |---|---|---|---|
   |1 |Malware|CAT: MALW|[Configurazione dei criteri anti-malware in EOP](configure-anti-malware-policies.md)|
   |2 |Phishing|CAT: PHSH|[Configurare criteri di protezione dalla posta indesiderata in EOP](configure-your-spam-filter-policies.md)|
-  |3|Alta probabilità di posta indesiderata|CAT: HSPM|[Configurare criteri di protezione dalla posta indesiderata in EOP](configure-your-spam-filter-policies.md)|
+  |3 |Alta probabilità di posta indesiderata|CAT: HSPM|[Configurare criteri di protezione dalla posta indesiderata in EOP](configure-your-spam-filter-policies.md)|
   |4 |Spoofing|CAT: SPOOFING|[Configurare l'intelligence spoof in EOP](learn-about-spoof-intelligence.md)|
   |5<sup>\*</sup>|Rappresentazione utente (utenti protetti)|UIMP|[Configurazione dei criteri anti-phishing in Microsoft Defender per Office 365](configure-atp-anti-phishing-policies.md)|
   |6<sup>\*</sup>|Rappresentazione del dominio (domini protetti)|DIMP|[Configurazione dei criteri anti-phishing in Microsoft Defender per Office 365](configure-atp-anti-phishing-policies.md)|
@@ -66,7 +66,7 @@ Si consideri, ad esempio, i seguenti criteri di anti-phishing in Microsoft Defen
   |Criterio B|2 |Disattivato|Attivato|
   |
 
-1. Il messaggio viene contrassegnato e trattato come spoofing, in quanto lo spoofing ha una priorità più alta (4) rispetto alla rappresentazione utente (8).
+1. Il messaggio viene contrassegnato e trattato come spoofing, in quanto lo spoofing ha una priorità più alta (4) rispetto alla rappresentazione utente (5).
 2. Il criterio A viene applicato agli utenti perché ha una priorità più alta rispetto al criterio B.
 3. In base alle impostazioni nel criterio A, non viene intrapresa alcuna azione sul messaggio, in quanto l'antispoofing è disattivata nei criteri.
 4. L'elaborazione dei criteri si interrompe, quindi il criterio B non viene mai applicato agli utenti.

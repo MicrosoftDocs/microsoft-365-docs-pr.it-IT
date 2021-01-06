@@ -15,13 +15,14 @@ search.appverid:
 - MET150
 ms.assetid: aed65bcd-0a4f-43e9-b5e5-b98cc376bdf8
 description: Informazioni su come la scheda decidere in Advanced eDiscovery fornisce dati che consentono di determinare le dimensioni corrette del set di revisione dei file di caso.
+ROBOTS: NOINDEX, NOFOLLOW
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 60213226bef1c04767d4be17a09b58d6940ac223
-ms.sourcegitcommit: a566ef236c85edfd566c8c3f859b80f9e5ce0473
+ms.openlocfilehash: 0423a21520375f1d9de8e2eaeca142b979ff1883
+ms.sourcegitcommit: 222fb7fe2b26dde3d8591b61cc02113d6135012c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49562967"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "49759868"
 ---
 # <a name="decision-based-on-the-results-in-advanced-ediscovery-classic"></a>Decisione basata sui risultati in Advanced eDiscovery (Classic)
 
@@ -54,17 +55,3 @@ In questa scheda sono inclusi i componenti seguenti:
     
 Nel riquadro dettagli espansi vengono visualizzati ulteriori dettagli. I file nelle figure delle raccolte non includono file vuoti o nebulosi. Le figure dei file di famiglia rappresentano i file che non sono caricati in rilevanza, ma vengono comunque conteggiati come parte della famiglia.
   
-## <a name="related-topics"></a>Argomenti correlati
-
-[Advanced eDiscovery (classico)](office-365-advanced-ediscovery.md)
-  
-[Informazioni sulla valutazione in rilevanza](assessment-in-relevance-in-advanced-ediscovery.md)
-  
-[Tagging e valutazione](tagging-and-relevance-training-in-advanced-ediscovery.md)
-  
-[Esecuzione della formazione sulla pertinenza](tagging-and-assessment-in-advanced-ediscovery.md)
-  
-[Verifica dell'analisi della pertinenza](track-relevance-analysis-in-advanced-ediscovery.md)
-  
-[Verifica dell'analisi della pertinenza](test-relevance-analysis-in-advanced-ediscovery.md)
-

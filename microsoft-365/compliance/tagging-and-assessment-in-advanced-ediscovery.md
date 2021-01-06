@@ -15,13 +15,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: b5c82de7-ed2f-4cc6-becd-db403faf4d18
+ROBOTS: NOINDEX, NOFOLLOW
 description: Esaminare i passaggi necessari per eseguire la formazione di valutazione, compresi i file di tagging, e la revisione dei risultati della valutazione in Advanced eDiscovery.
-ms.openlocfilehash: c8c6f82e7cfb3e2eddcc482039582ea27a702494
-ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
+ms.openlocfilehash: 9f826c836337ecf7a8479e7d824ff8ad9e737e97
+ms.sourcegitcommit: 222fb7fe2b26dde3d8591b61cc02113d6135012c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "49663461"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "49760376"
 ---
 # <a name="tagging-and-assessment-in-advanced-ediscovery-classic"></a>Tagging e valutazione in Advanced eDiscovery (Classic)
 
@@ -123,17 +124,3 @@ In assenza di stabilizzazione basata statisticamente, vi saranno risultati con u
 > [!TIP]
 > Nella scheda **\> Tracking pertinenza** , espansione visualizzazione problema, sono disponibili le seguenti opzioni di visualizzazione: > il passaggio successivo consigliato, ad esempio il **passaggio successivo: il tagging** può essere ignorato (per problema) facendo clic sul pulsante **modifica** a destra e quindi selezionando un passaggio diverso nel **passaggio successivo**. Quando l'indicatore di stato di valutazione non è stato completato, la valutazione sarà la successiva opzione consigliata per contrassegnare i file di valutazione e aumentare l'accuratezza delle statistiche. > è possibile modificare il margine di errore e valutarne l'impatto, facendo clic su **modifica** e nella **finestra di dialogo livello di valutazione**, modificando il **margine di errore di destinazione per le stime di richiamo** e facendo clic su **Aggiorna valori**. Inoltre, in questa finestra di dialogo, è possibile visualizzare le opzioni avanzate facendo clic su **Avanzate**. > è possibile visualizzare le statistiche aggiuntive a livello di valutazione e il relativo impatto facendo clic su **Visualizza**. Nella finestra di dialogo Risultati dettagli visualizzati, le statistiche sono disponibili per ogni problema, quando sono presenti almeno 500 file di valutazione contrassegnati e almeno 18 file sono contrassegnati come rilevanti per il problema. 
   
-## <a name="see-also"></a>Vedere anche
-
-[Advanced eDiscovery (classico)](office-365-advanced-ediscovery.md)
-  
-[Informazioni sulla valutazione in rilevanza](assessment-in-relevance-in-advanced-ediscovery.md)
-  
-[Formazione di tagging e pertinenza](tagging-and-relevance-training-in-advanced-ediscovery.md)
-  
-[Verifica dell'analisi della pertinenza](track-relevance-analysis-in-advanced-ediscovery.md)
-  
-[Decidere in base ai risultati](decision-based-on-the-results-in-advanced-ediscovery.md)
-  
-[Verifica dell'analisi della pertinenza](test-relevance-analysis-in-advanced-ediscovery.md)
-

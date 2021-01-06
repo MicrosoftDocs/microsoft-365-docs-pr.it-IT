@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 143b3ab8-8cb0-4036-a5fc-6536d837bfce
 description: Microsoft 365 offre diversi strumenti di eDiscovery che è possibile utilizzare per la ricerca e la conservazione dei contenuti presenti in posizioni diverse, ad esempio le cassette postali di Exchange, i siti di SharePoint e OneDrive for business, i gruppi di Microsoft 365 e le conversazioni di Skype for business.
-ms.openlocfilehash: 2f18d3a9559293e071b7060f0e4a01a7352097c1
-ms.sourcegitcommit: 94f2f8e3e6bc3946d8b3cf798b3eb77a49ffd12a
+ms.openlocfilehash: a6708bdf012d2cfbb182d624c8c889de5fb51c7f
+ms.sourcegitcommit: 222fb7fe2b26dde3d8591b61cc02113d6135012c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/16/2020
-ms.locfileid: "45148126"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "49760220"
 ---
 # <a name="ediscovery-in-microsoft-365"></a>eDiscovery in Microsoft 365
 
@@ -34,9 +34,6 @@ Microsoft 365 fornisce gli strumenti di eDiscovery seguenti:
 - [Core eDiscovery](#core-ediscovery)
 
 - [Advanced eDiscovery](#advanced-ediscovery)
-
-> [!NOTE]
-> Advanced eDiscovery (Classic) (denominato anche *Advanced eDiscovery v 1.0*), che è la versione avanzata di eDiscovery disponibile in un caso di eDiscovery principale facendo clic **su passa a eDiscovery avanzato**, viene ritirato. La sua funzionalità è stata sostituita dalla soluzione avanzata di eDiscovery in Microsoft 365. Per ulteriori informazioni sul pensionamento di Advanced eDiscovery v 1.0, vedere [pensionamento degli strumenti di eDiscovery legacy](legacy-ediscovery-retirement.md#advanced-ediscovery-v10).
 
 ## <a name="content-search"></a>Ricerca contenuto
 
@@ -52,7 +49,7 @@ Nella tabella seguente sono riportati i collegamenti agli argomenti che consento
 |[Esportare il rapporto della Ricerca contenuto](export-a-content-search-report.md) <br/> |Informazioni su come scaricare il report di esportazione senza dover esportare i risultati di ricerca effettivi.  <br/> |
 |[Limiti relativi alla ricerca contenuto](limits-for-content-search.md) <br/> |Informazioni sui limiti dello strumento di ricerca del contenuto, ad esempio il numero massimo di ricerche che è possibile eseguire contemporaneamente.  <br/> |
 |[Elementi non indicizzati nella ricerca contenuto](partially-indexed-items-in-content-search.md) <br/> |Informazioni sugli elementi non indicizzati in Exchange e SharePoint che è possibile includere nelle statistiche dei risultati di ricerca stimate quando si esegue una ricerca. È inoltre possibile includere gli elementi non indicizzati quando si esportano i risultati della ricerca.  <br/> |
-|[Cercare ed eliminare i messaggi di posta elettronica](search-for-and-delete-messages-in-your-organization.md) <br/> |Informazioni su come utilizzare la ricerca contenuto per cercare ed eliminare un messaggio di posta elettronica da *tutte le* cassette postali dell'organizzazione. In questo modo è possibile trovare e rimuovere messaggi di posta elettronica potenzialmente dannosi o ad alto rischio.  <br/> |
+|[Cercare ed eliminare i messaggi di posta elettronica](search-for-and-delete-messages-in-your-organization.md) <br/> |Informazioni su come utilizzare la ricerca contenuto per cercare ed eliminare un messaggio di posta elettronica da  *tutte le*  cassette postali dell'organizzazione. In questo modo è possibile trovare e rimuovere messaggi di posta elettronica potenzialmente dannosi o ad alto rischio.  <br/> |
 |[Utilizzare la ricerca contenuto per cercare gli account della cassetta postale e di OneDrive per un elenco di utenti](search-the-mailbox-and-onedrive-for-business-for-a-list-of-users.md) <br/> |Informazioni su come utilizzare uno script per eseguire ricerche nella cassetta postale e un sito di unità per le aziende per un gruppo di utenti. Vedere [creare un elenco di tutte le posizioni di OneDrive](https://docs.microsoft.com/onedrive/list-onedrive-urls) per i passaggi su come generare rapidamente un elenco di indirizzi di posta elettronica che è possibile utilizzare per i percorsi di contenuto di origine quando si creano ed eseguono ricerche di contenuto.  <br/> |
 |[Usare la Ricerca contenuto per le raccolte di destinazione](use-content-search-for-targeted-collections.md) <br/> |Informazioni su come utilizzare lo script di Windows PowerShell in questo articolo per eseguire raccolte di destinazione utilizzando la ricerca di contenuto. Una raccolta mirata significa che si desidera cercare una cartella specifica perché si è certi che gli elementi sensibili a un caso (o a elementi privilegiati) si trovino in tale cartella. Utilizzare lo script in questo articolo per ottenere l'ID o il percorso della cartella specifica della cassetta postale o delle cartelle del sito che si desidera ricercare.  <br/> |
 |||

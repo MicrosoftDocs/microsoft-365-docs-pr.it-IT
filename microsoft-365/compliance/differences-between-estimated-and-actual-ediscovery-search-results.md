@@ -19,22 +19,21 @@ search.appverid:
 - MET150
 ms.assetid: 8f20ca4f-a908-46ec-99e6-9890d269ecf2
 description: Comprendere il motivo per cui i risultati di ricerca stimati ed effettivi possono variare nelle ricerche eseguite con gli strumenti di eDiscovery in Office 365.
-ms.openlocfilehash: 2c127077552b831d5bd890e03772b137338e1674
-ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
+ms.openlocfilehash: a5a66e070bf41cf6b3263dbae1e6ac5d136d9465
+ms.sourcegitcommit: 222fb7fe2b26dde3d8591b61cc02113d6135012c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47357646"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "49760254"
 ---
 # <a name="differences-between-estimated-and-actual-ediscovery-search-results"></a>Differenze tra i risultati di ricerca di eDiscovery stimati ed effettivi
 
-Questo argomento si applica alle ricerche che è possibile eseguire utilizzando uno dei seguenti strumenti di Microsoft eDiscovery: 
+Questo argomento si applica alle ricerche che è possibile eseguire utilizzando uno dei seguenti strumenti di eDiscovery di Microsoft 365: 
 
-- Ricerca contenuto nel centro sicurezza & conformità  <br/>  
-- EDiscovery sul posto nell'interfaccia di amministrazione di Exchange (EAC)  <br/>  
-- Centro eDiscovery in SharePoint Online  <br/> 
+- Ricerca contenuto
+- Core eDiscovery 
    
-Quando si esegue una ricerca eDiscovery, lo strumento che si sta utilizzando restituirà una stima del numero di elementi (e delle relative dimensioni totali) che soddisfano i criteri di ricerca. Ad esempio, quando si esegue una ricerca nel centro sicurezza & conformità, i risultati della ricerca stimati vengono visualizzati nel riquadro dei dettagli per la ricerca selezionata.
+Quando si esegue una ricerca eDiscovery, lo strumento che si sta utilizzando restituirà una stima del numero di elementi (e delle relative dimensioni totali) che soddisfano i criteri di ricerca. Ad esempio, quando si esegue una ricerca nel centro conformità di Microsoft 365, i risultati della ricerca stimati vengono visualizzati nella pagina a comparsa per la ricerca selezionata.
   
 ![Stima dei risultati visualizzati nel riquadro dei dettagli della ricerca selezionata](../media/74e4ce83-40be-41a9-b60f-5ad447e79fe4.png)
   
@@ -60,9 +59,9 @@ Di seguito sono riportate alcune ragioni per queste differenze:
 
    Sebbene sia raro, anche nel caso in cui venga applicato un blocco, la manutenzione degli elementi del calendario incorporati (che non sono modificabili dall'utente, ma che sono inclusi in molti risultati della ricerca) può essere rimossa di tanto in tanto. La rimozione periodica degli elementi del calendario provocherà un numero inferiore di elementi esportati.
 
-- **Elementi non indicizzati**. Gli elementi non indicizzati per la ricerca possono causare differenze tra i risultati di ricerca stimati ed effettivi. Ad esempio, eDiscovery sul posto in Exchange e il centro eDiscovery in SharePoint non includono gli elementi non indicizzati (che non soddisfano i criteri di ricerca) quando si esegue una ricerca per stimare i risultati della ricerca. Tuttavia, è possibile includere gli elementi non indicizzati quando si esportano i risultati della ricerca. Se si includono gli elementi non indicizzati quando si esportano i risultati della ricerca, potrebbero essere presenti più elementi esportati. Ciò causerà una differenza tra i risultati di ricerca stimati ed esportati.
+- **Elementi non indicizzati**. Gli elementi non indicizzati per la ricerca possono causare differenze tra i risultati di ricerca stimati ed effettivi. È possibile includere gli elementi non indicizzati quando si esportano i risultati della ricerca. Se si includono gli elementi non indicizzati quando si esportano i risultati della ricerca, potrebbero essere presenti più elementi esportati. Ciò causerà una differenza tra i risultati di ricerca stimati ed esportati.
 
-    Quando si utilizza lo strumento di ricerca contenuto nel centro sicurezza & Compliance, è possibile includere gli elementi non indicizzati nella stima della ricerca. Il numero di elementi non indicizzati restituiti dalla ricerca è elencato nel riquadro dei dettagli insieme agli altri risultati della ricerca stimati. Tutti gli elementi non indicizzati verrebbero inclusi anche nella dimensione totale dei risultati della ricerca stimati. Quando si esportano i risultati della ricerca, si ha la possibilità di includere o meno gli elementi non indicizzati. Il modo in cui vengono configurate queste opzioni potrebbe causare differenze tra i risultati di ricerca stimati e quelli effettivamente scaricati.
+    Quando si utilizza lo strumento di ricerca del contenuto, è possibile includere gli elementi non indicizzati nella stima della ricerca. Il numero di elementi non indicizzati restituiti dalla ricerca è elencato nella pagina a comparsa insieme agli altri risultati della ricerca stimati. Tutti gli elementi non indicizzati verrebbero inclusi anche nella dimensione totale dei risultati della ricerca stimati. Quando si esportano i risultati della ricerca, si ha la possibilità di includere o meno gli elementi non indicizzati. Il modo in cui vengono configurate queste opzioni potrebbe causare differenze tra i risultati di ricerca stimati e quelli effettivamente scaricati.
 
 - **Esportazione dei risultati di una ricerca di contenuto che include tutti i percorsi di contenuto**. Se la ricerca da cui si stanno esportando i risultati è stata una ricerca di tutti i percorsi di contenuto dell'organizzazione, verranno esportati solo gli elementi non indicizzati provenienti da percorsi di contenuto che contengono elementi che corrispondono ai criteri di ricerca. In other words, if no search results are found in a mailbox or site, then any unindexed items in that mailbox or site won't be exported. Tuttavia, gli elementi non indicizzati provenienti da tutti i percorsi di contenuto (anche quelli che non contengono elementi che corrispondono alla query di ricerca) saranno inclusi nei risultati della ricerca stimati.
 
@@ -77,12 +76,6 @@ Di seguito sono riportate alcune ragioni per queste differenze:
 - **Deduplicazione**. Per gli elementi di Exchange, la deduplicazione riduce il numero di elementi che vengono esportati. Si ha la possibilità di deduplicare i risultati della ricerca quando vengono esportati. Per i messaggi di Exchange, ciò significa che viene esportata una sola istanza di un messaggio, anche se tale messaggio può essere trovato in più cassette postali. I risultati della ricerca stimati includono tutte le istanze di un messaggio. Pertanto, se si sceglie l'opzione di deduplicazione quando si esportano i risultati della ricerca, il numero effettivo di elementi che vengono esportati potrebbe essere notevolmente inferiore al numero stimato di elementi.
 
     Un'altra cosa da tenere presente se si sceglie l'opzione di deduplicazione è che tutti gli elementi di Exchange vengono esportati in un singolo file PST e la struttura delle cartelle dalle cassette postali di origine non viene conservata. Il file PST esportato contiene solo gli elementi di posta elettronica. Tuttavia, un rapporto sui risultati di ricerca contiene una voce per ogni messaggio esportato che identifica la cassetta postale di origine in cui si trova il messaggio. In questo modo è possibile identificare tutte le cassette postali che contengono un messaggio duplicato. Se invece non si attiva la deduplicazione, viene esportato un file PST separato per ciascuna cassetta postale inclusa nella ricerca. 
-
-## <a name="exporting-unindexed-items-from-the-ediscovery-center-in-sharepoint-online"></a>Esportazione di elementi non indicizzati dal centro eDiscovery in SharePoint Online
-
-Nel centro eDiscovery in SharePoint Online, è possibile includere contenuto non indicizzato (da Exchange e SharePoint) quando si esportano i risultati di una ricerca di eDiscovery. A tale scopo, selezionare l'opzione **Includi elementi crittografati o che dispongono di un formato non riconosciuto** . Gli elementi non indicizzati (denominati anche non sottoposti a ricerca per indicizzazione in SharePoint) sono elementi in Exchange e SharePoint che per qualche motivo non sono stati indicizzati per la ricerca. Gli elementi di Exchange non indicizzati sono elencati nel rapporto **errori indice di Exchange** incluso quando si esportano i risultati della ricerca. Analogamente, gli elementi di SharePoint non indicizzati sono elencati nel rapporto **errori indice di SharePoint** . Quando si esportano gli elementi non indicizzati, vengono scaricati in una cartella denominata non sottoposta a **ricerca per indicizzazione**. Gli elementi di Exchange non indicizzati sono inclusi in un file PST. viene scaricato anche ogni documento non indicizzato da SharePoint. Il numero di elementi non indicizzati (se presenti) è elencato in ogni rapporto errori di indice. Il numero di elementi non indicizzati nei report deve corrispondere al numero di elementi non indicizzati scaricati.
-  
- **Quali sono i motivi per cui il numero di elementi non indicizzati esportati non corrisponde al numero di elementi nella relazione di errore di indice?** Come spiegato in precedenza, è possibile che gli elementi siano stati eliminati da Microsoft 365 tra il momento in cui è stata eseguita la stima di ricerca e l'ora in cui sono stati esportati i risultati della ricerca. Per gli elementi non indicizzati può verificarsi una discrepanza analoga. Ad esempio, l'indice di ricerca potrebbe essere obsoleto quando vengono esportati i risultati della ricerca. Ciò significa che un elemento non indicizzato esportato con i risultati della ricerca potrebbe non essere elencato nel rapporto errori di indice perché l'elemento non è stato indicizzato al momento in cui sono stati esportati i risultati della ricerca. Ciò comporterebbe l'esportazione di elementi più non indicizzati rispetto a quelli elencati nella relazione di errore di indice. Analogamente, un elemento non indicizzato elencato nel rapporto di errore dell'indice potrebbe essere stato eliminato da Microsoft 365 prima dell'aggiornamento dell'indice di ricerca. Questo comporta un minor numero di elementi non indicizzati esportati rispetto a quelli elencati nel rapporto errori di indice.
-  
+ 
 > [!NOTE]
 > Se non si selezionano gli **elementi Includi crittografati o che dispongono di un formato non riconosciuto** quando si esportano i risultati della ricerca o si scaricano solo i report, vengono scaricati i report di errore di indice, ma non sono presenti voci. Questo non significa che non vi siano errori di indicizzazione. Significa solo che gli elementi non indicizzati non sono stati inclusi nell'esportazione. 
