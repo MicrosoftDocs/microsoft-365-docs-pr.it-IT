@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Creare etichette di conservazione e criteri di etichettatura automatica in modo da poter applicare automaticamente etichette per conservare ciò che serve ed eliminare ciò che non serve
-ms.openlocfilehash: a79e7a96cc02957b0bac4dba31b24c5727f0483b
-ms.sourcegitcommit: 98b889e674ad1d5fa37d4b6c5fc3eda60a1d67f3
+ms.openlocfilehash: 2b06188a5990c7de81fca0afd21f05ef346807ba
+ms.sourcegitcommit: 222fb7fe2b26dde3d8591b61cc02113d6135012c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "49751181"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "49759966"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>Applicare automaticamente un'etichetta di conservazione per conservare o eliminare il contenuto
 
@@ -247,10 +247,10 @@ Se si sceglie l'opzione del classificatore sottoponibile a training, è possibil
 
 Per applicare automaticamente un'etichetta utilizzando questa opzione, i siti e le cassette postali di SharePoint devono avere almeno 10 MB di dati.
 
-Per altre informazioni sui classificatori sottoponibili a training, vedere [Informazioni sui classificatori sottoponibili a training (anteprima)](classifier-learn-about.md).
+Per altre informazioni sui classificatori sottoponibili a training, vedere [Informazioni sui classificatori sottoponibili a training](classifier-learn-about.md).
 
 > [!TIP]
-> Se si usano classificatori sottoponibili a training per Exchange, vedere il recente articolo [Come ripetere il training in Esplora contenuto (anteprima)](classifier-how-to-retrain-content-explorer.md).
+> Se si usano classificatori sottoponibili a training per Exchange, vedere [Come ripetere il training in Esplora contenuto](classifier-how-to-retrain-content-explorer.md).
 
 Per considerare quando si usano tipi di classificatori sottoposti a training per applicare automaticamente etichette di conservazione:
 

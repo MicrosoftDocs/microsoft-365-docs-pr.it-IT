@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Quando si crea un'etichetta di riservatezza, è possibile assegnare automaticamente un'etichetta a file e messaggi di posta elettronica oppure chiedere agli utenti di selezionare l'etichetta consigliata.
-ms.openlocfilehash: 3f789396c3ee6746277e01f8b5c6a772bcd528ac
-ms.sourcegitcommit: 98b889e674ad1d5fa37d4b6c5fc3eda60a1d67f3
+ms.openlocfilehash: aa6b3ce2da8166cc2b33ae2b6056b54d76a0c634
+ms.sourcegitcommit: 222fb7fe2b26dde3d8591b61cc02113d6135012c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "49751428"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "49759956"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Applicare automaticamente un'etichetta di riservatezza al contenuto
 
@@ -147,7 +147,7 @@ Quando si seleziona l'opzione **Classificatori sottoponibili a training**, scegl
 > [!CAUTION]
 > Il classificatore predefinito **Linguaggio offensivo** è stato deprecato perché generava un numero elevato di falsi positivi. Non usare questo classificatore predefinito e, se è in uso, è consigliabile spostare i processi aziendali da esso. Usare invece i classificatori predefiniti per **molestie**, **volgarità** e **minacce**.
 
-Per altre informazioni su questi classificatori, vedere [Informazioni sui classificatori sottoponibili a training (anteprima)](classifier-learn-about.md).
+Per altre informazioni su questi classificatori, vedere [Informazioni sui classificatori sottoponibili a training](classifier-learn-about.md).
 
 Durante il periodo di anteprima dell'opzione, le app seguenti supportano i classificatori sottoponibili a training per le etichette di riservatezza:
 

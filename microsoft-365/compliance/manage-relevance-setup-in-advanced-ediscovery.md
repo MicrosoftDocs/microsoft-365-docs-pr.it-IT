@@ -14,13 +14,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: fd6be6d3-2e8d-449d-9851-03ab7546e6aa
+ROBOTS: NOINDEX, NOFOLLOW
 description: Alcuni consigli per configurare il training della rilevanza in Advanced eDiscovery per classificare i file in base alla rilevanza e generare risultati analitici.
-ms.openlocfilehash: a6bec149e11fa80fb57cb811120218fa7f2cc45b
-ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
+ms.openlocfilehash: 8ba09babc91f233514cd0195c3e1da08b07ccb3c
+ms.sourcegitcommit: 222fb7fe2b26dde3d8591b61cc02113d6135012c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "49662871"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "49760210"
 ---
 # <a name="manage-relevance-setup-in-advanced-ediscovery-classic"></a>Gestire la configurazione della pertinenza in Advanced eDiscovery (classico)
 
@@ -69,15 +70,4 @@ I parametri descritti in questa sezione sono disponibili nella tecnologia di ril
 
 - Definire e organizzare con attenzione i problemi, poiché i risultati del training della rilevanza possono esserne influenzati.
 
-Dopo aver impostato i parametri, il revisore/lo specialista può avviare il training dei file nella scheda **Rilevanza**. 
-  
-## <a name="see-also"></a>Vedere anche
-
-[Advanced eDiscovery (classico)](office-365-advanced-ediscovery.md)
-  
-[Definire i problemi e assegnare gli utenti](define-issues-and-assign-users.md)
-  
-[Configurare carichi per aggiungere file importati](set-up-loads-to-add-imported-files.md)
-  
-[Definire parole chiave evidenziate e opzioni avanzate](define-highlighted-keywords-and-advanced-options.md)
-
+Dopo aver impostato i parametri, il revisore/lo specialista può avviare il training dei file nella scheda **Rilevanza**.
