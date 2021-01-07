@@ -1,25 +1,25 @@
-- name: Formazione di Microsoft 365 Small Business
+- name: Formazione su Microsoft 365 Small Business
   href: index.yml
   items:
-    - name: Informazioni di base
+    - name: Per iniziare
       items:
-        - name: Che cos'è Microsoft 365
+        - name: Cos'è Microsoft 365
           href: what-is-microsoft-365.md
         - name: Panoramica dell'installazione
           href: setup-overview.md
         - name: Scegliere un abbonamento
           href: Choose-subscription.md
-    - name: Configurazione del cloud
+    - name: Configurazione cloud
       items:
-        - name: Iscriversi a un abbonamento
+        - name: Iscrizione a un abbonamento
           href: sign-up.md
         - name: Configurare il servizio
           href: set-up.md
-        - name: Proteggere i PC Windows 10
+        - name: Proteggere i PC con Windows 10
           href: secure-win10-pcs.md
-        - name: Creare un sito Web GoDaddy
+        - name: Creare un sito Web di GoDaddy
           href: create-web-site.md
-    - name: Configurazione dispositivo
+    - name: Configurazione dei dispositivi
       items:
         - name: Eseguire l'aggiornamento a Windows 10 Pro
           href: upgrade.md
@@ -33,29 +33,29 @@
           href: import-email.md
         - name: Spostare i file in OneDrive
           href: files-to-onedrive.md
-        - name: Spostare i file di società in SharePoint
+        - name: Spostare file aziendali in SharePoint
           href: files-to-sharepoint.md
-    - name: Mobile
+    - name: Dispositivi mobili
       items:
-        - name: Funzioni da qualsiasi luogo
+        - name: Lavorare ovunque
           href: work-from-anywhere.md
         - name: Installare le app di Office su Android
           href: install-apps-android.md
         - name: Installare le app di Office su iOS
           href: install-apps-ios.md
-        - name: Ottenere l'app di amministrazione per dispositivi mobili
+        - name: Ottenere l'app Admin per dispositivi mobili
           href: admin-mobile.md
     - name: Collaborare
       items:
-        - name: Utilizzo di Outlook e teams
+        - name: Usare Outlook e Teams
           href: collab-outlook-teams.md
         - name: Creare un indirizzo di posta elettronica di gruppo
           href: group-email.md
         - name: Creare un calendario condiviso
           href: shared-calendar.md
-        - name: Creare un team org-Wide
+        - name: Creare un team di tutta l'organizzazione
           href: org-wide-team.md
-        - name: Creare un team con gli utenti
+        - name: Creare un team con utenti Guest
           href: team-with-guests.md
         - name: Partecipare a un team come Guest
           href: join-team-guest.md
@@ -63,45 +63,47 @@
           href: start-and-pin-chats.md
         - name: Panoramica delle riunioni online
           href: overview-online-meetings.md
-        - name: Pianificare una riunione con gli ospiti
+        - name: Pianificare una riunione con utenti guest
           href: schedule-guest-meeting.md
-        - name: Partecipare a una riunione con gli ospiti
+        - name: Partecipare a una riunione con utenti guest
           href: join-guest-meeting.md
     - name: Archiviazione cloud
       items:
-        - name: Panoramica della condivisione
+        - name: Panoramica sulla condivisione
           href: overview-file-sharing.md
         - name: Dove archiviare i file
           href: store-files.md
-        - name: Condivisione sicura dei file esternamente
+        - name: Condividere i file esternamente in modo sicuro
           href: securely-share-files-externally.md
-        - name: Condividere facilmente i file esternamente
+        - name: Condividere i file esternamente in modo semplice
           href: share-files-externally.md
-    - name: VoIP aziendale
+    - name: Business Voice
       items:
         - name: Panoramica di Business Voice
           href: business-voice.md
-        - name: Acquistare il componente aggiuntivo Voice business
+        - name: Acquistare il componente aggiuntivo Business Voice
           href: buy-business-voice.md
-    - name: App per la produttività
+    - name: App di produttività
       items:
-        - name: Panoramica delle prenotazioni
+        - name: Panoramica di Bookings
           href: overview-bookings.md
         - name: Pianificare un evento
           href: plan-event.md
     - name: Gestire i servizi
       items:
-        - name: Che cos'è un amministratore
+        - name: Cos'è un amministratore
           href: what-is-admin.md
         - name: Panoramica dell'interfaccia di amministrazione
           href: admin-center-overview.md
-        - name: 'Visualizzare, scaricare o stampare la bolletta'
+        - name: 'Visualizzare, scaricare o stampare una fattura'
           href: view-bill.md
+        - name: Acquistare nuove licenze
+          href: buy-licenses.md
         - name: Aggiornare il metodo di pagamento
           href: update-payment.md
         - name: Reimposta password utente
           href: reset-user-passwords.md
-        - name: Configurare la reimpostazione della password in modalità self-service
+        - name: Configurare la reimpostazione self-service della password
           href: set-up-self-serve-password-reset.md
         - name: Aggiungere un utente
           href: add-user.md
@@ -109,13 +111,13 @@
           href: delete-user.md
         - name: Aggiungere un altro amministratore
           href: add-admin.md
-        - name: Modifica di un nome utente o di un messaggio di posta elettronica
+        - name: Cambiare un nome utente o un indirizzo di posta elettronica
           href: change-user-name-email.md
         - name: Trasferire gli utenti a un abbonamento diverso
           href: change-subscription.md
-        - name: Creare una firma a livello di società
+        - name: Creare una firma a livello aziendale
           href: company-wide-signature.md
-        - name: Rapporto su utilizzo
+        - name: Gestire un report sull'utilizzo
           href: act-on-report.md
         - name: Aggiungere un altro dominio
           href: add-domain.md
@@ -123,27 +125,27 @@
       items:
         - name: Proteggere i dispositivi Windows 10 Pro
           href: secure-win-10-pro-devices.md
-        - name: Proteggere le app di Office su iOS
+        - name: Proteggere le app di Office in iOS
           href: secure-office-on-ios.md
-    - name: Conformità & di sicurezza
+    - name: Sicurezza e conformità
       items:
         - name: Panoramica della sicurezza di Microsoft 365 Business Premium
           href: overview-m365-security.md
-        - name: Proteggere gli account dei dipendenti con AMF
+        - name: Proteggere gli account dei dipendenti con l'autenticazione a più fattori
           href: turn-on-mfa.md
-        - name: Configurare l'accesso a due fattori sul telefono
+        - name: Configurare l'accesso a due fattori nel telefono
           href: set-up-mfa.md
-        - name: Attivazione del rilevamento di malware
+        - name: Attivare il rilevamento di malware
           href: anti-malware.md
-        - name: Creare regole di posta elettronica per ransomware
+        - name: Creare regole di posta elettronica per i ransomware
           href: prevent-ransom-in-email.md
-        - name: Interrompere l'inoltro automatico di messaggi di posta elettronica
+        - name: Interrompere l'inoltro automatico dei messaggi di posta elettronica
           href: stop-email-auto-forward.md
-        - name: Configurare il sistema anti-phishing
+        - name: Configurare l'anti-phishing
           href: setup-anti-phishing.md
-        - name: Gestire gli allegati sicuri
+        - name: Gestire allegati sicuri
           href: safe-attachments.md
-        - name: Gestire i collegamenti sicuri
+        - name: Gestire collegamenti sicuri
           href: safe-links.md
         - name: Prevenire la perdita di dati
           href: set-up-dlp.md
@@ -151,9 +153,9 @@
           href: create-sensitivity-labels.md
     - name: Supporto
       items:
-        - name: Trovare le risposte e la guida
+        - name: Trovare risposte e la guida
           href: find-help-answers.md
         - name: Ottenere assistenza o supporto tecnico
           href: get-help-support.md
-        - name: Configurazione rapida dei dipendenti
+        - name: Configurazione rapida per i dipendenti
           href: employee-quick-setup.md
