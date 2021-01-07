@@ -18,12 +18,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: Informazioni su tre strumenti che è possibile utilizzare per monitorare la perdita di dati personali.
-ms.openlocfilehash: a212067d75ab3d9e195e3d869e0a6ae7d1ed4d01
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.openlocfilehash: 2a00d639be3b43fb56e26dca2725f2c3dac54b39
+ms.sourcegitcommit: 222fb7fe2b26dde3d8591b61cc02113d6135012c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49616381"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "49760543"
 ---
 # <a name="monitor-for-leaks-of-personal-data"></a>Monitorare la perdita di dati personali
 
@@ -38,9 +38,9 @@ Nella figura:
 
 - Iniziare con i report sulla prevenzione della perdita dei dati di Microsoft 365 per il monitoraggio dei dati personali in SharePoint Online, OneDrive for Business e della posta elettronica in transito. Tali report forniscono il massimo livello di informazioni dettagliate per il monitoraggio dei dati personali. Tuttavia, non includono tutti i servizi in Office 365.
 
-- Successivamente, usare i criteri di avviso e i log di controllo per monitorare l'attività nei servizi. Configurare il monitoraggio continuo o cercare nel log di controllo per analizzare un evento. Il log di controllo è supportato da vari servizi: Sway, PowerBI, eDiscovery, Dynamics 365, Microsoft Flow, Microsoft Teams, Attività amministrative, OneDrive for Business, SharePoint Online, posta in transito e cassette postali inattive. Le conversazioni di Skype sono incluse nelle cassette postali inattive.
+- Successivamente, usare i criteri di avviso e i log di controllo per monitorare l'attività nei servizi. Configurare il monitoraggio continuo o cercare nel log di controllo per analizzare un incidente. Il log di controllo è supportato da vari servizi: Sway, PowerBI, eDiscovery, Dynamics 365, Microsoft Flow, Microsoft Teams, Attività amministrative, OneDrive for Business, SharePoint Online, posta in transito e cassette postali inattive. Le conversazioni di Skype sono incluse nelle cassette postali inattive.
 
-- Infine, usare Microsoft Cloud App Security per monitorare i file con dati sensibili in altri provider SaaS. Presto sarà possibile usare i tipi di informazioni sensibili di e le etichette unificate in Azure Information Protection e Office con Cloud App Security. È possibile configurare criteri applicabili a tutte le app SaaS o ad app specifiche (ad esempio, Box). Cloud App Security non rileva i file in Exchange Online, compresi quelli allegati ai messaggi di posta elettronica.
+- Infine, usare Microsoft Cloud App Security per monitorare i file con dati sensibili in altri provider SaaS. Presto sarà possibile usare i tipi di informazioni sensibili e le etichette unificate in Azure Information Protection e Office con Cloud App Security. È possibile configurare criteri applicabili a tutte le app SaaS o ad app specifiche (ad esempio, Box). Cloud App Security non rileva i file in Exchange Online, compresi quelli allegati ai messaggi di posta elettronica.
 
 ## <a name="data-loss-prevention-reports"></a>Report sulla prevenzione della perdita di dati
 
@@ -82,7 +82,7 @@ I team di conformità e sicurezza delle informazioni possono usare questi strume
 
 I team di sicurezza delle informazioni possono anche cercare nel log di controllo per analizzare sospette violazioni dei dati e determinarne l'eventuale causa e gravità. Questa funzionalità integrata agevola la conformità agli articoli 33 e 34 dell'RGPD, secondo i quali le notifiche devono essere fornite all'autorità di supervisione dell'RGPD e ai soggetti dei dati interessati da una violazione dei dati entro uno specifico periodo di tempo. Le voci del log di controllo vengono conservate solo per 90 giorni nel servizio (spesso è consigliabile e molte organizzazioni hanno richiesto un periodo di conservazione di tali log anche maggiore).
 
-Sono disponibili soluzioni che consentono di sottoscrivere i log di controllo unificati tramite l'API Office 365 Management Activity, di archiviare voci di log secondo necessità e che forniscono dashboard e avvisi avanzati. Un esempio è [Microsoft Operations Management Suite (OMS)](https://docs.microsoft.com/azure/operations-management-suite/oms-solution-office-365).
+Sono disponibili soluzioni che consentono di sottoscrivere i log di controllo unificati tramite l'API Microsoft Management Activity, di archiviare voci di log secondo necessità e che forniscono dashboard e avvisi avanzati. Un esempio è [Microsoft Operations Management Suite (OMS)](https://docs.microsoft.com/azure/operations-management-suite/oms-solution-office-365).
 
 Ulteriori informazioni sui criteri di avviso e sulla ricerca nel log di controllo:
 
@@ -151,7 +151,7 @@ L'avviso relativo a un file contenente un numero di carta di credito viene condi
 |Categoria|DLP|
 |Impostazioni filtro|Livello di accesso = Pubblico (Internet), Pubblico, Esterno <p> App = \<select apps\> (utilizzare questa impostazione se si desidera limitare il monitoraggio ad app SaaS specifiche)|
 |Applica a|Tutti i file, tutti i proprietari|
-|Ispezione del contenuto|Include i file che corrispondono a un'espressione presente: Tutti i paesi - Finanza: numero di carta di credito <p> Non richiedere il contesto rilevante: deselezionato (questo troverà una corrispondenza con parole chiave e regex) <p> Include file con almeno 1 corrispondenza <p> Annulla il mascheramento degli ultimi 4 caratteri della violazione: selezionato|
+|Ispezione del contenuto|Include i file che corrispondono a un'espressione presente: Tutti i paesi - Finanza: numero di carta di credito <p> Non richiedere il contesto rilevante: deselezionato (questa impostazione troverà una corrispondenza con parole chiave e regex) <p> Include file con almeno 1 corrispondenza <p> Annulla il mascheramento degli ultimi 4 caratteri della violazione: selezionato|
 |Avvisi|Crea un avviso per ogni file corrispondente: selezionato <p> Limite di avvisi giornaliero: 1.000 <p> Seleziona un avviso come e-mail: selezionato <p> A: infosec@contoso.com|
 |Governance|Microsoft OneDrive for Business <p> Rendi privato: selezionare Rimuovi gli utenti esterni <p> Tutte le altre impostazioni: deselezionato <p> Microsoft SharePoint Online <p> Rendi privato: selezionare Rimuovi gli utenti esterni <p> Tutte le altre impostazioni: deselezionato|
 |
@@ -186,5 +186,5 @@ Note:
 
 Criteri simili:
 
-- Rilevare download di grandi dimensioni di Dati della società o Dati sulle risorse umane: avviso relativo al rilevamento del download di un gran numero di file contenenti dati sulla società o sulle risorse umane da parte di un singolo utente in un breve periodo di tempo.
-- Individuare la condivisione di dati sulla società e sulle risorse umane: avviso relativo alla condivisione di file contenenti dati sulla società o sulle risorse umane.
+- Rilevare download di grandi dimensioni di dati dei clienti o dati delle risorse umane: avviso relativo al rilevamento del download di un gran numero di file contenenti dati dei clienti o sulle risorse umane da parte di un singolo utente in un breve periodo di tempo.
+- Individuare la condivisione di dati dei clienti e delle risorse umane: avviso relativo alla condivisione di file contenenti dati sulla società o sulle risorse umane.

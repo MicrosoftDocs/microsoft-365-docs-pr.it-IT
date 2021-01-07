@@ -18,12 +18,12 @@ ms.collection:
 ms.custom: TopSMBIssues
 localization_priority: Priority
 description: Informazioni per amministratori sul modo in cui EOP usa l'autenticazione della posta elettronica (SPF, DKIM e DMARC) per prevenire lo spoofing, il phishing e la posta indesiderata.
-ms.openlocfilehash: 7c196b68d88187da2890cc886f646c5416ef9a11
-ms.sourcegitcommit: ce46d1bd67091d4ed0e2b776dfed55e2d88cdbf4
+ms.openlocfilehash: 6a0bf6fd7958f44a9cfbe7ae0600aeb064170437
+ms.sourcegitcommit: 222fb7fe2b26dde3d8591b61cc02113d6135012c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49131074"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "49760519"
 ---
 # <a name="email-authentication-in-eop"></a>Autenticazione e-mail in EOP
 
@@ -145,7 +145,7 @@ Si può usare questo metodo per risolvere lo spoofing intra-organizzazione e lo 
 
 - [Valutare la possibilità di configurare record DMARC](use-dmarc-to-validate-email.md) per il dominio per determinare chi sono i mittenti legittimi.
 
-Microsoft non fornisce istruzioni dettagliate per l'implementazione dei record SPF, DKIM e DMARC. Online, tuttavia, sono disponibili numerose informazioni. Esistono anche società terze che si occupano di aiutare le organizzazioni a configurare i record di autenticazione della posta elettronica.
+Microsoft non fornisce istruzioni dettagliate per l'implementazione dei record SPF, DKIM e DMARC. Online, tuttavia, sono disponibili numerose informazioni. Esistono anche società terze parti che si occupano di aiutare le organizzazioni a configurare i record di autenticazione della posta elettronica.
 
 #### <a name="you-dont-know-all-sources-for-your-email"></a>Non si conoscono tutte le origini dei propri messaggi di posta elettronica
 
