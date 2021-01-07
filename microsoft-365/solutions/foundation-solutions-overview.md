@@ -1,6 +1,6 @@
 ---
 title: Panoramica delle soluzioni di Microsoft 365 Foundation
-description: Descrizione.
+description: Leggere queste guide della soluzione di base per comprendere i concetti e le funzionalità e semplificare le scelte che determinano un risultato finale funzionante, dalla pianificazione all'implementazione, all'adozione.
 ms.author: samanro
 author: samanro
 manager: bcarter
@@ -13,12 +13,12 @@ ms.collection:
 ms.custom: ''
 f1.keywords: NOCSH
 ROBOTS: NOINDEX
-ms.openlocfilehash: 666ff0b9a3abb82af1eba12d5d17d025cfc9bff5
-ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
+ms.openlocfilehash: 28e68d7fe1a814ec82aba95aae59e5ae85244fe6
+ms.sourcegitcommit: ddfb4f3e34deb733e8625e845e4dfd1fcc066ceb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49613609"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "49771920"
 ---
 # <a name="microsoft-365-foundation-solutions-overview"></a>Panoramica delle soluzioni di Microsoft 365 Foundation
 

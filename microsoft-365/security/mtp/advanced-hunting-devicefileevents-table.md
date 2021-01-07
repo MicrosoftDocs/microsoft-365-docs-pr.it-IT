@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: f63328992af95562688e644f68b8151eb09b9e0f
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 9b48321693f883e40a100e29e5e1ec3c5203caa2
+ms.sourcegitcommit: ddfb4f3e34deb733e8625e845e4dfd1fcc066ceb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48846149"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "49771860"
 ---
 # <a name="devicefileevents"></a>DeviceFileEvents
 
@@ -83,6 +83,9 @@ Per informazioni su altre tabelle nello schema per Ricerca avanzata, [vedere il 
 | `SensitivityLabel` | stringa | Etichetta applicata a un messaggio di posta elettronica, un file o un altro contenuto per classificarlo per la protezione delle informazioni |
 | `SensitivitySubLabel` | stringa | Sottoetichetta applicata a un messaggio di posta elettronica, un file o un altro contenuto per classificarlo per la protezione delle informazioni; le sottoetichette di sensitivity sono raggruppate in etichette di riservatezza, ma vengono trattate in modo indipendente |
 | `IsAzureInfoProtectionApplied` | boolean | Indica se il file è crittografato con Azure Information Protection |
+
+>[!NOTE]
+> Le informazioni sull'hash del file vengono sempre visualizzate quando è disponibile. Tuttavia, esistono diversi possibili motivi per cui non è possibile calcolare un SHA1, SHA256 o MD5. Ad esempio, il file potrebbe trovarsi in uno spazio di archiviazione remoto, bloccato da un altro processo, compresso o contrassegnato come virtuale. In questi scenari, le informazioni sull'hash dei file vengono visualizzate come vuote.
 
 ## <a name="related-topics"></a>Argomenti correlati
 - [Panoramica della ricerca avanzata](advanced-hunting-overview.md)

@@ -12,12 +12,12 @@ ms.collection: enabler-strategic
 ms.custom: Adopt
 search.appverid: ''
 localization_priority: Normal
-ms.openlocfilehash: 95e1ad15a62762c8b28203e178d4d4ae7906e38a
-ms.sourcegitcommit: 222fb7fe2b26dde3d8591b61cc02113d6135012c
+ms.openlocfilehash: 441f28e36ced25b2e5af3f71235995c8b021f779
+ms.sourcegitcommit: ddfb4f3e34deb733e8625e845e4dfd1fcc066ceb
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 01/06/2021
-ms.locfileid: "49760243"
+ms.locfileid: "49771872"
 ---
 # <a name="microsoft-sharepoint-syntex-adoption-get-started"></a>Adozione di Microsoft SharePoint Syntex: introduzione
 
@@ -27,13 +27,16 @@ Si pensi ai servizi contenuti intelligenti disponibili in SharePoint Syntex come
 - **Elaborazione del contenuto:** Automatizzare l'acquisizione, l'ingestione e la categorizzazione del contenuto e semplificare i processi incentrati sul contenuto utilizzando Power automatizzate. Per ulteriori informazioni, vedere [elaborazione del contenuto](form-processing-overview.md).
 - **Conformità del contenuto:** Controllare e gestire il contenuto per migliorare la sicurezza e la governance con l'integrazione di Microsoft Information Protection.
 
-Con i nuovi servizi e le funzionalità AI, è possibile creare le applicazioni di classificazione e comprensione del contenuto direttamente nel flusso di gestione del contenuto tramite SharePoint Syntex:
+Con i nuovi servizi e le funzionalità AI, è possibile creare le applicazioni di classificazione e comprensione del contenuto direttamente nel flusso di gestione del contenuto tramite SharePoint Syntex. Esistono due modi diversi per comprendere il contenuto. Il tipo di modello utilizzato è basato sul formato di file e sul caso di utilizzo:
 
-|Immissione manuale| Elaborazione dei moduli | Informazioni sul documento |
-|:-------|:--------|:--------|
-| Immissione di dati e utilizzo intensivo su qualsiasi contenuto. | Identificare i file ed estrarre dati da documenti strutturati o semi-strutturati, ad esempio moduli o fatture. |  Identificare ed estrarre dati da documenti non strutturati, ad esempio lettere o contratti, in cui le entità di testo che si desidera estrarre risiedono in frasi o aree specifiche del documento. |
-| Interattiva.   |  Personalizzato, assistito.  | Precompilata, automatizzata. |
-| Persone che lavorano. | Insegnate dagli esperti del soggetto (PMI). | Le PMI sono meno implicate. |
+| Elaborazione dei moduli | Informazioni sul documento |
+|:-------|:-------|
+| Creato dalla raccolta documenti. | Creato in Content Center, parte di SharePoint Syntex. |
+| Modello creato in AI Builder. | Modello creato nell'interfaccia nativa. |
+| Utilizzato per i formati di file semistrutturati. | Utilizzato per i formati di file non strutturati. |
+| Classificatore impostabile. | Classificatore addestrabile con estrattori opzionali. |
+| Limitata a una singola raccolta. | Può essere applicato a più raccolte. |
+| Treno su formato PDF, JPG, PNG, totale 50 MB/500 PP. | Treno su 5-10 file PDF, Office o di posta elettronica, inclusi gli esempi negativi. |
 
 Nella tabella seguente viene illustrata la disponibilità e la gestione delle licenze per SharePoint Syntex:
 
@@ -44,17 +47,6 @@ Nella tabella seguente viene illustrata la disponibilità e la gestione delle li
 | Provisioning rispetto all'ambiente predefinito del servizio dati comune. | Non dispone di restrizioni relative alla capacità. |
 
 Per ulteriori informazioni sui crediti e sulle unità di AI Builder, vedere [licenze di ai Builder](https://docs.microsoft.com/ai-builder/administer-licensing).
-
-Esistono due modi diversi per comprendere il contenuto. Il tipo di modello utilizzato è basato sul formato di file e sul caso di utilizzo:
-
-| Elaborazione dei moduli | Informazioni sul documento |
-|:-------|:-------|
-| Creato dalla raccolta documenti. | Creato in Content Center, parte di SharePoint Syntex. |
-| Modello creato in AI Builder. | Modello creato nell'interfaccia nativa. |
-| Utilizzato per i formati di file semistrutturati. | Utilizzato per i formati di file non strutturati. |
-| Classificatore impostabile. | Classificatore addestrabile con estrattori opzionali. |
-| Limitata a una singola raccolta. | Può essere applicato a più raccolte. |
-| Treno su formato PDF, JPG, PNG, totale 50 MB/500 PP. | Treno su 5-10 file PDF, Office o di posta elettronica, inclusi gli esempi negativi. |
 
 SharePoint Syntex si integra con le funzionalità di conformità di Microsoft 365 come:
 

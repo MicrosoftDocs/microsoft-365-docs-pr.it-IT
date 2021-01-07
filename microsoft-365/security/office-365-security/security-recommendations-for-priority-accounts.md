@@ -17,12 +17,12 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Gli amministratori possono ottenere informazioni su come elevare le impostazioni di sicurezza e utilizzare i report, gli avvisi e le indagini per gli account prioritari nelle organizzazioni Microsoft 365.
-ms.openlocfilehash: aee238d2fb58d2772881d8d77f98959906943290
-ms.sourcegitcommit: 1a9f0f878c045e1ddd59088ca2a94397605a242a
+ms.openlocfilehash: 9788131ea881a1cb3c36a60dfaac01ed5daf0901
+ms.sourcegitcommit: 5ba0015c1554048f817fdfdc85359eee1368da64
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "49668225"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "49769246"
 ---
 # <a name="security-recommendations-for-priority-accounts-in-microsoft-365"></a>Suggerimenti per la sicurezza per gli account prioritari in Microsoft 365
 
@@ -31,6 +31,8 @@ Che cosa fare se si riceve un messaggio urgente da un dirigente dell'organizzazi
 Per gli aggressori, gli attacchi di phishing comuni che eseguono il cast di una rete casuale per ottenere le credenziali di utenti casuali o sconosciuti sono inefficienti. D'altra parte, attacchi di _phishing_ o _caccia alle balene_ che puntano gli utenti in posizioni di potere o autorità sono molto più gratificanti per gli aggressori. Se questi account di priorità sono compromessi, l'utente malintenzionato potrebbe accedere agli account con le funzionalità di amministratore, finanziarie, di prodotto o persino di accesso fisico all'interno dell'organizzazione.
 
 Microsoft 365 e Microsoft Defender per Office 365 contengono diverse funzionalità che consentono di fornire ulteriori livelli di sicurezza per gli account prioritari. Le funzionalità disponibili e come utilizzarle sono descritte in questo articolo.
+
+![Riepilogo dei suggerimenti per la sicurezza in formato icona](../../media/security-recommendations-for-priority-users.png)
 
 ## <a name="increase-sign-in-security-for-priority-accounts"></a>Aumentare la sicurezza dell'accesso per gli account prioritari
 
@@ -60,7 +62,7 @@ I criteri di sicurezza preimpostati rappresentano una posizione comoda e central
 
 Per informazioni dettagliate sul modo in cui le impostazioni dei criteri rigorose differiscono dalle impostazioni dei criteri predefiniti e standard, vedere [Recommended Settings for EOP e Microsoft Defender for Office 365 Security](recommended-settings-for-eop-and-office365-atp.md).
 
-## <a name="user-tags"></a>Tag utente
+## <a name="apply-user-tags-to-priority-accounts"></a>Applicazione di tag utente agli account prioritari
 
 I tag utente in Microsoft Defender per Office 365 piano 2 (come parte di Microsoft 365 E5 o un abbonamento a un componente aggiuntivo) sono un modo per identificare e classificare rapidamente utenti o gruppi di utenti specifici nei report e nelle indagini sugli incidenti.
 
@@ -68,7 +70,11 @@ Gli **account prioritari** sono un tipo di tag utente incorporato (noto come _Ta
 
 È inoltre possibile creare tag personalizzati per identificare e classificare ulteriormente gli account prioritari. Per ulteriori informazioni, vedere [tag utente](user-tags.md). Tenere presente che è possibile gestire gli **account prioritari** (tag di sistema) nella stessa interfaccia dei tag utente personalizzati.
 
-## <a name="priority-accounts-in-reports-and-investigations-in-microsoft-365"></a>Account prioritari nei report e nelle indagini in Microsoft 365
+## <a name="monitor-priority-accounts-in-alerts-reports-and-detections"></a>Monitorare gli account prioritari in avvisi, rapporti e rilevamenti
+
+Dopo aver protetto e taggato gli utenti prioritari, è possibile utilizzare i report, gli avvisi e le indagini disponibili in EOP e Defender per Office 365 per identificare rapidamente gli incidenti o i rilevamenti che coinvolgono gli account prioritari. Le funzionalità che supportano i tag utente sono descritte nella tabella seguente.
+
+<br>
 
 ****
 
