@@ -24,12 +24,12 @@ search.appverid:
 ms.assetid: ''
 description: 'Riepilogo: il nuovo servizio Web endpoint non include un numero limitato di endpoint per scenari specifici.'
 hideEdit: true
-ms.openlocfilehash: 8e1d464a4bb24594ae783a8e1e272050b6c038bb
-ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
+ms.openlocfilehash: d5c97fa2399392b03e00644f270e8726570aefb5
+ms.sourcegitcommit: ec293978e951b09903b79e6642aa587824935e0c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "49682854"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "49780581"
 ---
 # <a name="additional-endpoints-not-included-in-the-office-365-ip-address-and-url-web-service"></a>Altri endpoint non inclusi nel servizio Web per URL e indirizzo IP di Office 365
 
@@ -80,6 +80,12 @@ Escluso il DNS, sono tutti facoltativi per la maggior parte dei clienti, a meno 
   
 [Reti per la distribuzione di contenuti](https://support.office.com/article/content-delivery-networks-0140f704-6614-49bb-aa6c-89b75dcd7f1f)
   
-[Intervalli IP del data center di Microsoft Azure](https://www.microsoft.com/download/details.aspx?id=41653)
+[Intervalli IP di Azure e tag di servizio – cloud pubblico](https://www.microsoft.com/download/details.aspx?id=56519)
+
+[Intervalli IP di Azure e tag di servizio – cloud del governo degli Stati Uniti](https://www.microsoft.com/download/details.aspx?id=57063)
+
+[Intervalli IP di Azure e tag di servizio – cloud in Germania](https://www.microsoft.com/download/details.aspx?id=57064)
+
+[Intervalli IP di Azure e tag di servizio – Cina cloud](https://www.microsoft.com/download/details.aspx?id=57062)
   
 [Spazio IP pubblico di Microsoft](https://www.microsoft.com/download/details.aspx?id=53602)

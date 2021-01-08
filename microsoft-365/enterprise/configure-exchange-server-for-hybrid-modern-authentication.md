@@ -17,16 +17,16 @@ f1.keywords:
 - NOCSH
 description: Informazioni su come configurare un server di Exchange in locale per l'utilizzo dell'autenticazione moderna ibrida (HMA), offrendo un'autenticazione e un'autorizzazione utente più sicure.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 8db74c04335e0846666991d74980648cedb4d9d7
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: 3841f429399500cfc24ebadc89c74d478d2290d9
+ms.sourcegitcommit: ec293978e951b09903b79e6642aa587824935e0c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47547131"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "49780285"
 ---
 # <a name="how-to-configure-exchange-server-on-premises-to-use-hybrid-modern-authentication"></a>Come configurare Exchange Server locale per utilizzare l'autenticazione moderna ibrida
 
-*Questo articolo può essere applicato sia a Microsoft 365 Enterprise che a Office 365 Enterprise.*
+*Questo articolo si applica sia a Microsoft 365 Enterprise che a Office 365 Enterprise*.
 
 L'autenticazione moderna ibrida (HMA) è un metodo di gestione delle identità che offre un'autenticazione e un'autorizzazione utente più sicure ed è disponibile per le distribuzioni ibride di Exchange Server locale.
 
@@ -40,11 +40,11 @@ Prima di iniziare, chiamo:
 
 - ESO di Exchange Online \>
 
-Inoltre, *se un elemento grafico di questo articolo contiene un oggetto che è' grigio ' o ' oscurato ' che indica che il componente visualizzato in grigio non è incluso nella configurazione specifica di HMA* .
+Inoltre, *se un elemento grafico di questo articolo contiene un oggetto che è' grigio ' o ' oscurato ' che indica che il componente visualizzato in grigio non è incluso nella configurazione specifica di HMA*.
 
 ## <a name="enabling-hybrid-modern-authentication"></a>Abilitazione dell'autenticazione moderna ibrida
 
-Se si attiva HMA, significa:
+L'attivazione di HMA significa:
 
 1. Assicurarsi di conoscere le prerequisiti prima di iniziare.
 
@@ -85,15 +85,15 @@ Verificare che i client URL a cui possono connettersi siano elencati come nomi d
 
    **Note** È necessario utilizzare l'opzione _Connect-MsolService_ di questa pagina per poter utilizzare il comando riportato di seguito.
 
-2. Per gli URL correlati a Exchange, digitare il comando seguente:
+2. Per gli URL relativi a Exchange, digitare il comando seguente:
 
    ```powershell
    Get-MsolServicePrincipal -AppPrincipalId 00000002-0000-0ff1-ce00-000000000000 | select -ExpandProperty ServicePrincipalNames
    ```
 
-   Prendere nota di (e screenshot per il confronto successivo) l'output di questo comando, che dovrebbe includere un URL di *mail.yourdomain.com* di https:// *autodiscover.yourdomain.com* e https://, ma principalmente costituito da nomi SPN che iniziano con 00000002-0000-0FF1-CE00-000000000000/. Se sono presenti URL di https://da quelli locali mancanti, sarà necessario aggiungere tali record specifici a questo elenco.
+   Prendere nota di (e screenshot per il confronto successivo) l'output di questo comando, che dovrebbe includere un URL di *mail.yourdomain.com* di https:// *autodiscover.yourdomain.com* e https://, ma principalmente costituito da nomi SPN che iniziano con 00000002-0000-0FF1-CE00-000000000000/. Se sono presenti URL di https://da quelli locali mancanti, sarà necessario aggiungerli a questo elenco.
 
-3. Se non si visualizzano i record MAPI/HTTP, EWS, ActiveSync, OAB e autodiscover interni ed esterni in questo elenco, è necessario aggiungerli utilizzando il comando riportato di seguito (gli URL di esempio sono ' `mail.corp.contoso.com` ' è `owa.contoso.com` ', ma si **sostituiscono gli URL di esempio con il proprio** ):
+3. Se non vengono visualizzati i record di MAPI/HTTP, EWS, ActiveSync, Rubrica offline e di individuazione automatica interni ed esterni in questo elenco, è necessario aggiungerli utilizzando il comando riportato di seguito (gli URL di esempio sono ' `mail.corp.contoso.com` ' è `owa.contoso.com` ', ma si **sostituiscono gli URL di esempio con i propri**):
 
    ```powershell
    $x= Get-MsolServicePrincipal -AppPrincipalId 00000002-0000-0ff1-ce00-000000000000
@@ -102,7 +102,7 @@ Verificare che i client URL a cui possono connettersi siano elencati come nomi d
    Set-MSOLServicePrincipal -AppPrincipalId 00000002-0000-0ff1-ce00-000000000000 -ServicePrincipalNames $x.ServicePrincipalNames
    ```
 
-4. Verificare che i nuovi record siano stati aggiunti eseguendo di nuovo il comando Get-MsolServicePrincipal viene del passaggio 2 e analizzando l'output. Confrontare l'elenco/screenshot da prima al nuovo elenco di nomi SPN (è anche possibile schermare il nuovo elenco per i record). In caso di esito positivo, verranno visualizzati i due nuovi URL presenti nell'elenco. In questo esempio, l'elenco dei nomi SPN includerà ora gli URL specifici  `https://mail.corp.contoso.com`  e  `https://owa.contoso.com` .
+4. Verificare che i nuovi record siano stati aggiunti eseguendo di nuovo il comando Get-MsolServicePrincipal dal passaggio 2 e analizzando l'output. Confrontare l'elenco/screenshot da prima al nuovo elenco di nomi SPN. Si potrebbe anche prendere una schermata del nuovo elenco per i record. In caso di esito positivo, verranno visualizzati i due nuovi URL presenti nell'elenco. In questo esempio, l'elenco dei nomi SPN includerà ora gli URL specifici  `https://mail.corp.contoso.com`  e  `https://owa.contoso.com` .
 
 ## <a name="verify-virtual-directories-are-properly-configured"></a>Verificare che le directory virtuali siano configurate correttamente
 
@@ -153,7 +153,7 @@ Set-OrganizationConfig -OAuth2ClientProfileEnabled $true
 
 ## <a name="verify"></a>Verificare
 
-Dopo aver abilitato HMA, l'account di accesso successivo di un client utilizzerà il nuovo flusso di autenticazione. Si noti che l'attivazione di HMA non attiverà una nuova autenticazione per un client. I client eseguono di nuovo l'autenticazione in base alla durata dei token di autenticazione e/o ai cert che dispongono.
+Dopo aver abilitato HMA, l'account di accesso successivo di un client utilizzerà il nuovo flusso di autenticazione. Si noti che l'attivazione di HMA non attiverà una riautenticazione per qualsiasi client. I client vengono riautenticati in base alla durata dei token di autenticazione e/o ai cert che dispongono.
 
 È inoltre necessario tenere premuto il tasto CTRL contemporaneamente facendo clic con il pulsante destro del mouse sull'icona per il client di Outlook (anche nel vassoio notifiche di Windows) e facendo clic su' stato connessione '. Cercare l'indirizzo SMTP del client rispetto a un tipo ' AuthN ' di ' latore \* ', che rappresenta il token del portatore utilizzato in OAuth.
 
@@ -161,7 +161,7 @@ Dopo aver abilitato HMA, l'account di accesso successivo di un client utilizzer�
 
 ## <a name="using-hybrid-modern-authentication-with-outlook-for-ios-and-android"></a>Utilizzo dell'autenticazione moderna ibrida con Outlook per iOS e Android
 
-Se si è un cliente locale che utilizza Exchange Server su TCP 443, è necessario selezionare gli intervalli IP seguenti:
+Se si è un cliente locale che utilizza Exchange Server su TCP 443, ignorare l'elaborazione del traffico per gli intervalli IP seguenti:
 
 ```text
 52.125.128.0/20

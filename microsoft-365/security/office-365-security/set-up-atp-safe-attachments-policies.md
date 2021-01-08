@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 description: Informazioni su come definire i criteri per gli allegati sicuri per proteggere l'organizzazione da file dannosi tramite posta elettronica.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 9105e7ed9e9bc376b3d86cd846d8c1d6eae8deea
-ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
+ms.openlocfilehash: 8dfdcc0779fb8b8438ee7a63d2f0e180cbb12ac9
+ms.sourcegitcommit: ec293978e951b09903b79e6642aa587824935e0c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "49682914"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "49780509"
 ---
 # <a name="set-up-safe-attachments-policies-in-microsoft-defender-for-office-365"></a>Configurare i criteri per gli allegati sicuri in Microsoft Defender per Office 365
 
@@ -53,17 +53,17 @@ In PowerShell di Exchange Online o in EOP PowerShell autonomo i criteri e la reg
 > [!NOTE]
 > Nell'area impostazioni globali delle impostazioni degli allegati sicuri, è possibile configurare le funzionalità che non dipendono dai criteri degli allegati sicuri. Per le istruzioni [, vedere Abilitare ATP per SharePoint, OneDrive e Microsoft teams](turn-on-atp-for-spo-odb-and-teams.md) e [documenti attendibili in Microsoft 365 E5](safe-docs.md).
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare?
+## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare
 
-- Aprire il Centro sicurezza e conformità in <https://protection.office.com/>. Per passare direttamente alla pagina **allegati sicuri** , utilizzare <https://protection.office.com/safeattachmentv2> .
+- Aprire il Centro sicurezza e conformità in<https://protection.office.com/>. Per passare direttamente alla pagina **allegati sicuri** , utilizzare <https://protection.office.com/safeattachmentv2> .
 
 - Per informazioni su come connettersi a PowerShell per Exchange Online, vedere [Connettersi a PowerShell per Exchange Online](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell). Per connettersi a PowerShell di EOP autonomo, vedere [Connettersi a PowerShell per Exchange Online Protection](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
-- Per poter eseguire le procedure contenute in questo articolo è necessario disporre delle autorizzazioni appropriate nel Centro sicurezza e conformità:
-  - Per creare, modificare ed eliminare i criteri per gli allegati sicuri, è necessario essere membri dei gruppi di ruoli **Gestione organizzazione** o **amministratore sicurezza** .
-  - Per l'accesso in sola lettura ai criteri allegati sicuri, è necessario essere membri dei gruppi di ruoli **lettore globale** o lettore di **sicurezza** .
+- Prima di poter eseguire le procedure descritte in questo articolo, è necessario disporre delle autorizzazioni seguenti:
+  - Per creare, modificare ed eliminare i criteri per i collegamenti sicuri, è necessario essere membri dei gruppi di ruoli **Gestione organizzazione** o **amministratore sicurezza** nel centro sicurezza & Compliance **e** membro del gruppo di ruoli **Gestione organizzazione** in Exchange Online.
+  - Per l'accesso in sola lettura ai criteri per i collegamenti sicuri, è necessario essere membri dei gruppi di ruoli **lettore globale** o **lettore di sicurezza** nel centro sicurezza & conformità.
 
-  Per altre informazioni, vedere [Autorizzazioni nel Centro sicurezza e conformità](permissions-in-the-security-and-compliance-center.md).
+  Per ulteriori informazioni, vedere [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md) and [Permissions in Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo).
 
   **Note**:
 

@@ -11,12 +11,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 description: Gli amministratori possono imparare a creare payload personalizzati per la formazione di simulazione di attacco in Microsoft Defender per Office 365.
-ms.openlocfilehash: c42090634f6fa9500ae4c3e781b49b607ee928f5
-ms.sourcegitcommit: 1a9f0f878c045e1ddd59088ca2a94397605a242a
+ms.openlocfilehash: c48e6001e6d51c5621d54b3d4149d90b71724fad
+ms.sourcegitcommit: ec293978e951b09903b79e6642aa587824935e0c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "49667505"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "49780249"
 ---
 # <a name="create-a-custom-payload-for-attack-simulation-training"></a>Creare un payload personalizzato per la formazione del Simulatore di attacchi
 
@@ -50,7 +50,7 @@ Dopo aver completato la creazione del payload a proprio piacimento, fare clic su
 
 ## <a name="adding-indicators"></a>Aggiunta di indicatori
 
-Gli indicatori consentiranno ai dipendenti di passare attraverso la simulazione di attacco capire indizio che possono cercare negli attacchi futuri. Per iniziare, fare clic su **Aggiungi indicatore**.
+Gli indicatori consentiranno ai dipendenti che passano attraverso la simulazione di attacco di comprendere l'indizio che possono cercare negli attacchi futuri. Per iniziare, fare clic su **Aggiungi indicatore**.
 
 Selezionare un indicatore che si desidera utilizzare nell'elenco a discesa. Questo elenco è curato per contenere gli indizi più comuni che compaiono nei messaggi di posta elettronica di phishing. Dopo aver selezionato, verificare che la posizione dell'indicatore sia impostata sul **corpo del messaggio di posta elettronica** e fare clic su **Seleziona testo**. Evidenziare la parte del payload in cui viene visualizzato l'indicatore e fare clic su **Seleziona**.
 

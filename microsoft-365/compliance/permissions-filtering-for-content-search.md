@@ -20,12 +20,12 @@ search.appverid:
 ms.assetid: 1adffc35-38e5-4f7d-8495-8e0e8721f377
 description: Utilizzare il filtro delle autorizzazioni per la ricerca del contenuto per consentire a un responsabile di eDiscovery di cercare solo un sottoinsieme di cassette postali e siti nell'organizzazione.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 5abf50988f40a3de833583543beb3b1c49e4e520
-ms.sourcegitcommit: 3bf4f1c0d3a8515cca651b2a520217195f89457f
+ms.openlocfilehash: 8ac09b35a4487ad836b48ba0cf7fee765e758ec4
+ms.sourcegitcommit: ec293978e951b09903b79e6642aa587824935e0c
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 01/07/2021
-ms.locfileid: "49777089"
+ms.locfileid: "49780474"
 ---
 # <a name="configure-permissions-filtering-for-content-search"></a>Configurare il filtro delle autorizzazioni per Ricerca contenuto
 
@@ -66,7 +66,7 @@ Prima di poter eseguire correttamente lo script in questa sezione, è necessario
     ```powershell
     Import-Module ExchangeOnlineManagement
     $UserCredential = Get-Credential
-    Connect-ExchangeOnline -Credential $UserCredential
+    Connect-ExchangeOnline -Credential $UserCredential -ShowBanner:$false
     Connect-IPPSSession -Credential $UserCredential
     $Host.UI.RawUI.WindowTitle = $UserCredential.UserName + " (Exchange Online + Compliance Center)"
     ```

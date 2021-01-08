@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 description: Gli amministratori possono ottenere informazioni sulle autorizzazioni disponibili nel centro sicurezza & conformità in Microsoft 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 27e1a9451f4a51872599f18e65c29a2ec15c539d
-ms.sourcegitcommit: 5ba0015c1554048f817fdfdc85359eee1368da64
+ms.openlocfilehash: 28f3ca7fb1efa7924cc69c9ecf1deb2123282dfa
+ms.sourcegitcommit: 4482c174e0e68e0fbbc7ad9ef6b0e78dc34ac85a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "49769232"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "49784322"
 ---
 # <a name="permissions-in-the-security--compliance-center"></a>Autorizzazioni nel Centro sicurezza e conformità
 
@@ -53,6 +53,11 @@ Nella tabella seguente sono elencati i gruppi di ruoli predefiniti disponibili n
 La gestione delle autorizzazioni nel centro sicurezza & conformità fornisce solo agli utenti l'accesso alle funzionalità di conformità disponibili all'interno del Centro sicurezza & conformità stesso. Se si desidera concedere le autorizzazioni ad altre funzionalità di conformità che non sono nel centro sicurezza & conformità, ad esempio le regole del flusso di posta di Exchange (note anche come regole di trasporto), è necessario utilizzare l'interfaccia di amministrazione di Exchange.
 
 Per informazioni su come concedere l'accesso al centro sicurezza & conformità, vedere [concedere agli utenti l'accesso a Microsoft 365 Compliance Admin Center](grant-access-to-the-security-and-compliance-center.md).
+
+> [!NOTE]
+> Per visualizzare la scheda **autorizzazioni** nel centro sicurezza & conformità, è necessario essere un amministratore. In particolare, è necessario assegnare il ruolo di **gestione dei ruoli** e questo ruolo è assegnato solo al gruppo di ruoli **Gestione organizzazione** nel centro sicurezza & conformità per impostazione predefinita. Inoltre, il ruolo di **gestione dei ruoli** consente agli utenti di visualizzare, creare e modificare i gruppi di ruoli.
+
+<br><br>
 
 ****
 
@@ -141,6 +146,8 @@ Tenere presente che per impostazione predefinita i ruoli seguenti non sono asseg
 - Revisione
 - Decrittografia RMS
 - Amministratore revisione di supervisione
+
+<br><br>
 
 ****
 

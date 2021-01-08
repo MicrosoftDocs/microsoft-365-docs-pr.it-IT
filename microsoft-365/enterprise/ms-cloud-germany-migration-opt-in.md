@@ -19,12 +19,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 'Riepilogo: '
-ms.openlocfilehash: 35d11825148af883299aed1bcb2346d26d52408c
-ms.sourcegitcommit: 849b365bd3eaa9f3c3a9ef9f5973ef81af9156fa
+ms.openlocfilehash: bcec542ad285dcabaf71af1ea8efc28f3f7d6b5a
+ms.sourcegitcommit: ec293978e951b09903b79e6642aa587824935e0c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49688678"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "49780321"
 ---
 # <a name="how-to-opt-in-for-migration-from-microsoft-cloud-germany-microsoft-cloud-deutschland-to-office-365-services-in-the-new-german-datacenter-regions"></a>Come acconsentire esplicitamente alla migrazione da Microsoft Cloud Germania (Microsoft Cloud Deutschland) ai servizi di Office 365 nelle nuove aree data center tedesche
 
@@ -34,40 +34,41 @@ ms.locfileid: "49688678"
 
 ## <a name="how-to-request-migration"></a>Come richiedere la migrazione
 
-I clienti idonei con servizi di cui è stato effettuato il provisioning in Microsoft Cloud Germany (Microsoft Cloud Deutschland) vedranno una pagina nell'interfaccia di amministrazione di Microsoft 365 che consentirà a un amministratore tenant del cliente di scegliere l'opzione per la migrazione.
+Se si è un cliente idoneo con il servizio di cui è stato effettuato il provisioning in Microsoft Cloud Germany (Microsoft Cloud Deutschland) ed è stato eseguito l'accesso come amministratore del tenant (globale), una pagina nell'interfaccia di amministrazione di Microsoft 365 consente di effettuare l'opt-in per la migrazione.
 
-Per accedere alla pagina nell'interfaccia di amministrazione di Microsoft 365, espandere **Impostazioni** nel riquadro di spostamento sinistro e quindi fare clic su **Profilo organizzazione**.
+Per accedere alla pagina, espandere **Impostazioni** nel riquadro di spostamento a sinistra e quindi fare clic su **profilo organizzazione**.
 
 Nella pagina **Profilo organizzazione**, scorrere verso il basso fino alla sezione **Migrazione da Microsoft Cloud Germany (Microsoft Cloud Deutschland) ai servizi di Office 365 nelle nuove aree data center tedesche**.
 
-Se l'organizzazione desidera eseguire la migrazione del servizio da Microsoft Cloud Germany (Microsoft Cloud Deutschland) ai servizi di Office 365 nelle nuove aree data center tedesche, fare clic su **Acconsenti esplicitamente**.
+Se si desidera eseguire la migrazione del servizio da Microsoft Cloud Germany (Microsoft Cloud Deutschland) a Office 365 Services nelle nuove aree del datacenter tedesco, fare clic su **opt-in**.
  
 ![Introduzione al consenso esplicito](../media/ms-cloud-germany-migration-opt-in/tenant-migration.png)
 
-Una nuova sezione apparirà sul lato destro dello schermo per accettare la conferma. Impostare l'interruttore su **Sì** e quindi fare clic su **Salva**.
+Nella parte destra dello schermo viene visualizzata una nuova sezione per accettare la conferma. Selezionare **Sì**, quindi fare clic su **Salva**.
  
 ![Accettazione consenso esplicito](../media/ms-cloud-germany-migration-opt-in/tenant-migration-new-regions.png)
 
-Dopo che l'amministratore avrà acconsentito esplicitamente per conto del tenant, tutti gli amministratori visualizzeranno la conferma nella sezione **Migrazione da Microsoft Cloud Germania (Microsoft Cloud Deutschland) ai servizi di Office 365 nelle nuove aree data center tedesche**, inclusa la data del consenso esplicito. Inoltre, gli amministratori riceveranno una conferma nel Centro messaggi dell'interfaccia di amministrazione di Microsoft 365. 
+Dopo aver effettuato l'opt-in per conto del tenant, tutti gli amministratori vedranno la conferma nella **migrazione da Microsoft Cloud Germany (Microsoft Cloud Deutschland) a Office 365 Services nella sezione New German datacenter Regions** , inclusa la data di accettazione. Gli amministratori riceveranno anche una conferma nel centro messaggi dell'interfaccia di amministrazione di Microsoft 365. 
  
 ![Conferma del consenso esplicito](../media/ms-cloud-germany-migration-opt-in/tenant-migration2.png)
 
-## <a name="what-happens-after-opting-in-for-migration"></a>Cosa succede dopo aver acconsentito esplicitamente alla migrazione?
+## <a name="what-happens-after-opting-in-for-migration"></a>Cosa succede dopo l'opt-in per la migrazione?
 
-Le migrazioni avranno inizio all'inizio del 2021 per le organizzazioni che aderiscono all'approccio basato su Microsoft e verranno completate prima della data di pensionamento di Microsoft Cloud Germany (Microsoft Cloud Deutschland) del 29 ottobre 2021.  A seguito della migrazione, gli abbonamenti e i dati principali dei clienti verranno spostati nelle nuove aree geografiche tedesche.  Microsoft invierà aggiornamenti nel Centro messaggi per l'intera durata del processo di migrazione.  Per ulteriori informazioni, vedere gli articoli di riferimento riportati di seguito.
+Le migrazioni avranno inizio all'inizio del 2021 per le organizzazioni che aderiscono all'approccio basato su Microsoft e verranno completate prima della data di pensionamento di Microsoft Cloud Germany (Microsoft Cloud Deutschland) del 29 ottobre 2021.  A seguito della migrazione, gli abbonamenti e i dati principali dei clienti verranno spostati nelle nuove aree geografiche tedesche.  Microsoft invierà gli aggiornamenti per tutto il processo di migrazione nel centro messaggi. Per ulteriori informazioni, vedere [questi articoli](#more-information) .
 
-## <a name="what-happens-if-the-customer-tenant-administrator-does-not-opt-in-for-migration-in-admin-center"></a>Cosa succede se l'amministratore del tenant del cliente non opta per la migrazione nell'interfaccia di amministrazione?
+## <a name="what-happens-if-you-do-not-opt-in-for-migration-in-admin-center"></a>Cosa succede se non si opta per la migrazione nell'interfaccia di amministrazione?
 
-I termini dei servizi online sono cambiati in modo da includere termini che consentiranno a Microsoft di migrare i dati e le sottoscrizioni di Microsoft 365, Dynamics 365 e Power BI da Microsoft Cloud Deutschland a un nuovo Data Center. Questi termini hanno effetto su qualsiasi sottoscrizione di Microsoft Cloud Germany (Microsoft Cloud Deutschland) rinnovata a partire dal 1 ° maggio 2020.  L'amministratore del tenant del cliente riceverà un avviso in posta elettronica e centro messaggi che consiglierà che l'opt-in per la migrazione avverrà automaticamente per una migrazione assistita da Microsoft. La notifica verrà inviata almeno 30 giorni prima dell'opt-in automatico.  Dopo la migrazione opt-in tutte le comunicazioni e gli aggiornamenti di stato vengono inviati agli amministratori tenant del cliente nel centro messaggi.
+I termini dei servizi online sono cambiati in modo da includere termini che consentiranno a Microsoft di migrare i dati e le sottoscrizioni di Microsoft 365, Dynamics 365 e Power BI da Microsoft Cloud Deutschland a un nuovo Data Center. Questi termini hanno effetto su qualsiasi sottoscrizione di Microsoft Cloud Germany (Microsoft Cloud Deutschland) rinnovata a partire dal 1 ° maggio 2020. 
 
-Gli amministratori dei tenant del cliente e del partner sono invitati a partecipare all'opt-in per la migrazione nell'interfaccia di amministrazione in modo che il processo di migrazione possa iniziare il prima possibile.
+L'amministratore del tenant del cliente riceverà una notifica tramite posta elettronica e il centro messaggi che consiglierà che l'opt-in alla migrazione avverrà automaticamente per una migrazione assistita da Microsoft. La notifica verrà inviata almeno 30 giorni prima dell'opt-in automatico. Dopo l'opt-in della migrazione, tutte le comunicazioni e gli aggiornamenti di stato vengono inviati agli amministratori tenant del cliente nel centro messaggi.
 
+Gli amministratori dei tenant del cliente e del partner sono invitati a partecipare all'opt-in per la migrazione nell'interfaccia di amministrazione di Microsoft 365 in modo che il processo di migrazione possa iniziare appena possibile.
 
 ## <a name="next-step"></a>Passaggio successivo
 
 [Comprendere l'esperienza del cliente durante la migrazione](ms-cloud-germany-transition-experience.md)
 
-## <a name="more-information"></a>Altre informazioni
+## <a name="more-information"></a>Ulteriori informazioni
 
 Guida introduttiva:
 

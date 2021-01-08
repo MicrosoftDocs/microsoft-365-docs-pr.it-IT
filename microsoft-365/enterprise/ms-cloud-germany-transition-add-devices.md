@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 'Riepilogo: informazioni aggiuntive sui servizi per il passaggio da Microsoft Cloud Germany (Microsoft Cloud Deutschland) a servizi di Office 365 nella nuova area datacenter tedesca.'
-ms.openlocfilehash: 1bbb4bf39db61a93844c21cd6062a70699b5d6d7
-ms.sourcegitcommit: 849b365bd3eaa9f3c3a9ef9f5973ef81af9156fa
+ms.openlocfilehash: 151fcac882dc91d96df3ece000c28d1a7abe1d1f
+ms.sourcegitcommit: ec293978e951b09903b79e6642aa587824935e0c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49688655"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "49780297"
 ---
 # <a name="additional-device-information-for-the-migration-from-microsoft-cloud-deutschland"></a>Informazioni aggiuntive sul dispositivo per la migrazione da Microsoft Cloud Deutschland
 
@@ -61,7 +61,7 @@ La registrazione del dispositivo viene disattivata dopo la migrazione del tenant
 Get-AzureADServicePrincipal -All:$true |Where-object -Property AppId -eq "0000000a-0000-0000-c000-000000000000" | Set-AzureADServicePrincipal -AccountEnabled:$false
 ```
 
-## <a name="windows-hybrid-azure-ad-join"></a>Join di Windows Hybrid Azure AD
+## <a name="hybrid-azure-ad-join"></a>Aggiunta ad Azure AD ibrido
 
 ### <a name="windows-down-level"></a>Giù-livello di Windows
 
@@ -135,7 +135,7 @@ Il comando precedente deve essere eseguito una sola volta in un contesto amminis
 Il dispositivo viene automaticamente aggiunto ad Azure AD senza l'intervento di un utente o di un amministratore purché il dispositivo disponga di connettività di rete per gli endpoint di Azure AD globali. 
 
 
-## <a name="windows-azure-ad-join"></a>Join di Windows Azure AD
+## <a name="azure-ad-join"></a>Join di Azure AD
 
 **Importante:** L'entità servizio di Intune verrà abilitata dopo la migrazione del commercio, che implica l'attivazione della registrazione dei dispositivi di Azure AD. Se la registrazione del dispositivo Azure AD è stata bloccata prima della migrazione, è necessario disabilitare l'entità servizio di Intune con PowerShell per disabilitare di nuovo la registrazione del dispositivo Azure AD con il portale di Azure AD. È possibile disabilitare l'entità servizio di Intune con questo comando nel modulo di Azure Active Directory PowerShell per Graph.
 
@@ -180,7 +180,7 @@ Il comando precedente deve essere eseguito una sola volta in un contesto amminis
 L'utente può aggiungere il dispositivo ad Azure AD dalle impostazioni di Windows: **impostazioni > account > accedere al lavoro o all'Istituto di istruzione > Connect**.
  
 
-## <a name="windows-azure-ad-registered-company-owned"></a>Windows Azure AD registrato (società di proprietà)
+## <a name="azure-ad-registered-company-owned"></a>Azure AD registrata (società di proprietà)
 
 Per determinare se il dispositivo Windows 10 è Azure AD – registrato, eseguire il comando riportato di seguito nel dispositivo:
 
@@ -270,7 +270,7 @@ Nei dispositivi iOS, un utente dovrà rimuovere manualmente qualsiasi account me
 
 Gli utenti possono accedere a singole app come Outlook, teams e OneDrive e rimuovere gli account da tali app.
 
-## <a name="more-information"></a>Altre informazioni
+## <a name="more-information"></a>Ulteriori informazioni
 
 Guida introduttiva:
 

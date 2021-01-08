@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: conceptual
-ms.openlocfilehash: 573f30dc3d8a43a337a4333dbaf05baf916857fa
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.openlocfilehash: 1884f0dae87bf068d134430ada78e44d713fd4d9
+ms.sourcegitcommit: ec293978e951b09903b79e6642aa587824935e0c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49357901"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "49780521"
 ---
 # <a name="microsoft-365-defender"></a>Microsoft 365 Defender
 
@@ -51,9 +51,12 @@ Con la soluzione integrata Microsoft 365 Defender, i professionisti della sicure
 </table>
 <br>
 
+## <a name="microsoft-365-defender-interactive-guide"></a>Guida interattiva Microsoft 365 Defender
 
->[!TIP]
->Consultare la [Guida interattiva di Microsoft 365 Defender](https://aka.ms/MTP-Interactive-Guide).
+In questa guida interattiva, vengono fornite informazioni su come proteggere l'organizzazione con Microsoft 365 Defender. Vedrai come Microsoft 365 Defender può aiutare a rilevare i rischi per la sicurezza, indagare sugli attacchi alla propria organizzazione e prevenire automaticamente le attività dannose.
+
+> [!VIDEO https://aka.ms/M365Defender-InteractiveGuide]
+
 
 
 Microsoft 365 Defender Suite protegge: 
@@ -91,4 +94,4 @@ Le funzionalità di Microsoft 365 Defender sono:
 ## <a name="get-started"></a>Per iniziare
 I requisiti di licenza di Microsoft 365 Defender devono essere soddisfatti prima di poter abilitare il servizio nel centro sicurezza di Microsoft 365 all' [Security.Microsoft.com](https://security.microsoft.com). Per ulteriori informazioni, vedere:
 - [Requisiti relativi alle licenze](prerequisites.md#licensing-requirements)
-- [Attivare Microsoft 365 Defender](mtp-enable.md)
+- [Attiva Microsoft 365 Defender](mtp-enable.md)

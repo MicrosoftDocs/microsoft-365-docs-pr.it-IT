@@ -17,12 +17,12 @@ ms.custom:
 localization_priority: Normal
 f1.keywords: NOCSH
 description: Informazioni sui passaggi di configurazione di Microsoft 365 necessari per configurare un team per l'attività, la conversazione e la documentazione per la collaborazione con i clienti del team.
-ms.openlocfilehash: cc962e22bde70220e07f805b0a7a83c111886369
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+ms.openlocfilehash: 34b7d5d47d7fb0c9196beda70184fa6510b6cc33
+ms.sourcegitcommit: ec293978e951b09903b79e6642aa587824935e0c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49659607"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "49780545"
 ---
 # <a name="collaborate-with-guests-in-a-team"></a>Collaborare con gli utenti guest in un team
 
@@ -74,7 +74,7 @@ Per configurare le impostazioni di accesso guest di Teams
 5. Assicurarsi che l'opzione **Consenti accesso ospite in Teams** sia **** abilitata.
 6. Apportare le modifiche desiderate alle impostazioni guest aggiuntive e quindi fare clic su **Salva**.
 
-Dopo aver abilitato l'accesso Guest ai team, è possibile controllare l'accesso Guest ai singoli team e ai siti di SharePoint associati utilizzando le etichette di riservatezza. Per ulteriori informazioni, vedere [use Sensitivity labels to protect content in Microsoft teams, microsoft 365 Groups e SharePoint sites](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites).
+Dopo aver abilitato l'accesso Guest ai team, è possibile controllare l'accesso Guest ai singoli team e ai siti di SharePoint associati utilizzando le etichette di riservatezza. Per altre informazioni, vedere [Usare le etichette di riservatezza per proteggere i contenuti in Microsoft Teams, gruppi di Microsoft 365 e siti di SharePoint](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites).
 
 > [!NOTE]
 > Dopo averla attivata, potrebbero essere necessarie fino a ventiquattro ore per rendere attive le impostazioni Guest del team.
@@ -188,3 +188,5 @@ Per invitare gli ospiti a un team
 [Creare una Extranet B2B con guest gestiti](b2b-extranet.md).
 
 [Integrazione di SharePoint e OneDrive con Azure AD B2B](https://docs.microsoft.com/sharepoint/sharepoint-azureb2b-integration-preview)
+
+[Le opzioni di condivisione sono ingrigiate quando si condivide da SharePoint o OneDrive](https://docs.microsoft.com/sharepoint/troubleshoot/administration/sharing-options-grayed-out-when-sharing-from-sharepoint-online-or-onedrive)

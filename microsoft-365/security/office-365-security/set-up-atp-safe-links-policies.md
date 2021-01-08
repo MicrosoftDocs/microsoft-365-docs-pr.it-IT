@@ -17,12 +17,12 @@ ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
 ms.collection:
 - M365-security-compliance
 description: Gli amministratori possono ottenere informazioni su come visualizzare, creare, modificare ed eliminare i criteri per i collegamenti sicuri e le impostazioni dei collegamenti sicuri globali in Microsoft Defender per Office 365.
-ms.openlocfilehash: 7a00b73855302f5046afa0605fd7188007394ed7
-ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
+ms.openlocfilehash: ef83d0dba1de03aa2b36384474791783e926059f
+ms.sourcegitcommit: ec293978e951b09903b79e6642aa587824935e0c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "49683164"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "49780533"
 ---
 # <a name="set-up-safe-links-policies-in-microsoft-defender-for-office-365"></a>Configurare i criteri per i collegamenti sicuri in Microsoft Defender per Office 365
 
@@ -53,17 +53,17 @@ La differenza tra questi due elementi non è ovvia quando si gestiscono le polit
 
 In PowerShell di Exchange Online o in EOP PowerShell autonomo i criteri e la regola vengono gestiti separatamente. Per ulteriori informazioni, vedere la sezione [use Exchange Online PowerShell or standalone EOP PowerShell per configurare i criteri dei collegamenti sicuri](#use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-safe-links-policies) più avanti in questo articolo.
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare?
+## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare
 
-- Aprire il Centro sicurezza e conformità in <https://protection.office.com/>. Per passare direttamente alla pagina **collegamenti sicuri** , utilizzare <https://protection.office.com/safelinksv2> .
+- Aprire il Centro sicurezza e conformità in<https://protection.office.com/>. Per passare direttamente alla pagina **collegamenti sicuri** , utilizzare <https://protection.office.com/safelinksv2> .
 
 - Per informazioni su come connettersi a PowerShell per Exchange Online, vedere [Connettersi a PowerShell per Exchange Online](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell). Per connettersi a PowerShell di EOP autonomo, vedere [Connettersi a PowerShell per Exchange Online Protection](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
-- Per poter eseguire le procedure contenute in questo articolo è necessario disporre delle autorizzazioni appropriate nel Centro sicurezza e conformità:
-  - Per creare, modificare ed eliminare i criteri per i collegamenti sicuri, è necessario essere membri dei gruppi di ruoli **Gestione organizzazione** o **amministratore sicurezza** .
+- Prima di poter eseguire le procedure descritte in questo articolo, è necessario disporre delle autorizzazioni seguenti:
+  - Per creare, modificare ed eliminare i criteri per i collegamenti sicuri, è necessario essere membri dei gruppi di ruoli **Gestione organizzazione** o **amministratore sicurezza** nel centro sicurezza & Compliance **e** membro del gruppo di ruoli **Gestione organizzazione** in Exchange Online.
   - Per l'accesso in sola lettura ai criteri per i collegamenti sicuri, è necessario essere membri dei gruppi di ruoli **lettore globale** o lettore di **sicurezza** .
 
-  Per altre informazioni, vedere [Autorizzazioni nel Centro sicurezza e conformità](permissions-in-the-security-and-compliance-center.md).
+  Per ulteriori informazioni, vedere [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md) and [Permissions in Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo).
 
   **Note**:
 

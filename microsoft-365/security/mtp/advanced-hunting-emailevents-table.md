@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 00fcc6514679868066ef88b0c9bc4a485d032528
-ms.sourcegitcommit: 1a9f0f878c045e1ddd59088ca2a94397605a242a
+ms.openlocfilehash: 6dbd7473074212c6bc257e683288040056426048
+ms.sourcegitcommit: ec293978e951b09903b79e6642aa587824935e0c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "49667638"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "49780273"
 ---
 # <a name="emailevents"></a>EmailEvents
 
@@ -65,9 +65,9 @@ Per informazioni su altre tabelle nello schema per Ricerca avanzata, [vedere il 
 | `PhishDetectionMethod` | stringa | Metodo utilizzato per rilevare il messaggio di posta elettronica come phishing: reputazione URL dannosi, detonazione URL collegamenti sicuri, filtro phishing avanzato, filtro phishing generale, anti-spoofing: intra-org, anti-spoofing: dominio esterno, rappresentazione del dominio, rappresentazione utente, rappresentazione del marchio |
 | `MalwareFilterVerdict` | stringa | Verdetto del gruppo di filtri della posta elettronica che indica se il messaggio contiene Malware: Malware, No malware |
 | `MalwareDetectionMethod` | stringa | Metodo utilizzato per rilevare la presenza di malware nel messaggio di posta elettronica: motore antimalware, reputazione dei file, allegati sicuri |
-| `FinalEmailAction` | stringa | Azione finale intrapresa sul messaggio di posta elettronica basata su verdetto del filtro, criteri e azioni dell'utente: spostare il messaggio nella cartella posta indesiderata, aggiungere X-Header, modificare l'oggetto, reindirizzare il messaggio, eliminare il messaggio, inviare in quarantena, non eseguire nessuna azione, messaggio in Ccn |
-| `FinalEmailActionPolicy` | stringa | Criteri di azione che hanno avuto effetto: filtro posta indesiderata con alta confidenza, filtro posta indesiderata, filtro posta indesiderata per la posta inviata in blocco, filtro posta indesiderata per il phishing, imitazione dominio anti-phishing, imitazione utente anti-phishing, spoofing anti-phishing, imitazione grafico anti-phishing, anti-malware, allegati sicuri, regole del flusso di posta (ETR) |
-| `FinalEmailActionPolicyGuid` | stringa | Identificatore univoco dei criteri che hanno determinato l'azione finale per la posta |
+| `EmailAction` | stringa | Azione finale intrapresa sul messaggio di posta elettronica basata su verdetto del filtro, criteri e azioni dell'utente: spostare il messaggio nella cartella posta indesiderata, aggiungere X-Header, modificare l'oggetto, reindirizzare il messaggio, eliminare il messaggio, inviare in quarantena, non eseguire nessuna azione, messaggio in Ccn |
+| `EmailActionPolicy` | stringa | Criteri di azione che hanno avuto effetto: filtro posta indesiderata con alta confidenza, filtro posta indesiderata, filtro posta indesiderata per la posta inviata in blocco, filtro posta indesiderata per il phishing, imitazione dominio anti-phishing, imitazione utente anti-phishing, spoofing anti-phishing, imitazione grafico anti-phishing, anti-malware, allegati sicuri, regole del flusso di posta (ETR) |
+| `EmailActionPolicyGuid` | stringa | Identificatore univoco dei criteri che hanno determinato l'azione finale per la posta |
 | `AttachmentCount` | int | Numero degli allegati nel messaggio di posta elettronica |
 | `UrlCount` | int | Numero di URL incorporati nel messaggio di posta elettronica |
 | `EmailLanguage` | stringa | Lingua del contenuto del messaggio di posta elettronica rilevata |

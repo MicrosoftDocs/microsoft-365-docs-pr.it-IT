@@ -21,36 +21,37 @@ search.appverid:
 - MED150
 - BCS160
 ms.assetid: e7968303-c234-46c4-b8b0-b5c93c6d57a7
-description: Informazioni su cosa fare se si dispone di un dominio non routale associato agli utenti locali prima di eseguire la sincronizzazione con Microsoft 365.
-ms.openlocfilehash: f38f6143b6e26b2849c174f74c94d009ddea73cd
-ms.sourcegitcommit: 4cbb4ec26f022f5f9d9481f55a8a6ee8406968d2
+description: Informazioni su cosa fare se si dispone di un dominio non instradabile associato agli account utente locali prima di sincronizzarlo con il tenant Microsoft 365.
+ms.openlocfilehash: dcd941bbae159afeb0cf6ef4f5acbaf409966295
+ms.sourcegitcommit: ec293978e951b09903b79e6642aa587824935e0c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49527722"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "49780333"
 ---
 # <a name="prepare-a-non-routable-domain-for-directory-synchronization"></a>Preparare un dominio non instradabile per la sincronizzazione della directory
-Quando si sincronizza la directory locale con Microsoft 365, è necessario disporre di un dominio verificato in Azure Active Directory (Azure AD). Vengono sincronizzati solo i nomi dell'entità utente (UPN, User Principal Name) associati al dominio locale. Tuttavia, qualsiasi UPN che contiene un dominio non instradabile, ad esempio Local (come billa@contoso. local), verrà sincronizzato con un dominio. onmicrosoft.com (come billa@contoso.onmicrosoft.com). 
 
-Se attualmente si utilizza un dominio. local per gli account utente in servizi di dominio Active Directory, si consiglia di modificarli in modo da utilizzare un dominio verificato (come billa@contoso.com) per sincronizzarlo correttamente con il dominio Microsoft 365.
-  
-## <a name="what-if-i-only-have-a-local-on-premises-domain"></a>Cosa succede se si dispone di un solo dominio locale?
+Quando si sincronizza la directory locale con Microsoft 365, è necessario disporre di un dominio verificato in Azure Active Directory (Azure AD). Solo i nomi dell'entità utente (UPN) associati al dominio di servizi di dominio Active Directory locale (AD DS) sono sincronizzati. Tuttavia, tutti gli UPN che contengono un dominio non instradabile, ad esempio ". local" (example: billa@contoso. local), verranno sincronizzati con un dominio. onmicrosoft.com (ad esempio: billa@contoso.onmicrosoft.com). 
 
-Lo strumento più recente che è possibile utilizzare per la sincronizzazione di servizi di dominio Active Directory ad Azure AD è denominato Azure AD Connect. Per ulteriori informazioni, vedere [integrazione delle identità locali con Azure ad](https://docs.microsoft.com/azure/architecture/reference-architectures/identity/azure-ad).
+Se attualmente si utilizza un dominio ". local" per gli account utente in servizi di dominio Active Directory, si consiglia di modificarli in modo da utilizzare un domini verificati, ad esempio billa@contoso.com, per sincronizzarlo correttamente con il dominio Microsoft 365.
   
-Azure AD Connect sincronizza l'UPN e la password degli utenti in modo che gli utenti possano accedere con le stesse credenziali che utilizzano in locale. Tuttavia, Azure AD Connect sincronizza solo gli utenti nei domini che sono stati verificati da Microsoft 365. Questo significa che il dominio è stato verificato anche da Azure AD, in quanto le identità di Microsoft 365 sono gestite da Azure AD. In altre parole, il dominio deve essere un dominio Internet valido (ad esempio,. com,. org, .NET,. US, ecc.). Se in servizi di dominio Active Directory interno viene utilizzato solo un domini non instradabile (ad esempio,. local), questo non può corrispondere al dominio verificato in Microsoft 365. È possibile risolvere il problema modificando il dominio principale nell'ambiente di servizio locale di AD DS oppure aggiungendo uno o più suffissi UPN.
+## <a name="what-if-i-only-have-a-local-on-premises-domain"></a>Che cosa succede se si dispone solo di un dominio locale ". local"?
+
+Si utilizza Azure AD Connect per sincronizzare i servizi di dominio Active Directory con il tenant di Azure AD del tenant Microsoft 365. Per ulteriori informazioni, vedere [integrazione delle identità locali con Azure ad](https://docs.microsoft.com/azure/architecture/reference-architectures/identity/azure-ad).
   
-### <a name="change-your-primary-domain"></a>**Modificare il dominio principale**
+Azure AD Connect sincronizza l'UPN e la password degli utenti in modo che gli utenti possano accedere con le stesse credenziali che utilizzano in locale. Tuttavia, Azure AD Connect sincronizza solo gli utenti nei domini che sono stati verificati da Microsoft 365. Questo significa che il dominio è stato verificato anche da Azure AD, in quanto le identità di Microsoft 365 sono gestite da Azure AD. In altre parole, il dominio deve essere un dominio Internet valido (ad esempio,. com,. org, .NET,. US). Se il dominio Active Directory interno di AD DS utilizza solo un campo non instradabile (ad esempio, ". local"), questo non può corrispondere al dominio verificato che si ha per il tenant di Microsoft 365. È possibile risolvere il problema modificando il dominio principale in un servizio Active Directory locale oppure aggiungendo uno o più suffissi UPN.
+  
+### <a name="change-your-primary-domain"></a>Modificare il dominio principale
 
 Modificare il dominio principale in un dominio verificato in Microsoft 365, ad esempio contoso.com. Ogni utente con il dominio contoso. local viene quindi aggiornato a contoso.com. Si tratta di un processo molto coinvolto, tuttavia, e una soluzione più semplice è descritta nella sezione seguente.
   
-### <a name="add-upn-suffixes-and-update-your-users-to-them"></a>**Aggiungere suffissi UPN e aggiornare gli utenti**
+### <a name="add-upn-suffixes-and-update-your-users-to-them"></a>Aggiungere suffissi UPN e aggiornare gli utenti
 
-È possibile risolvere il problema. local registrando nuovi suffissi UPN o suffissi in servizi di dominio Active Directory in modo che corrispondano a quelli che sono stati verificati in Microsoft 365. Dopo aver registrato il nuovo suffisso, è possibile aggiornare l'utente UPN per sostituire il file. local con il nuovo nome di dominio, ad esempio in modo che un account utente sia simile a billa@contoso.com.
+È possibile risolvere il problema ". local" registrando nuovi suffissi UPN o suffissi in servizi di dominio Active Directory in modo che corrispondano a quelli che sono stati verificati in Microsoft 365. Dopo aver registrato il nuovo suffisso, aggiornare l'utente UPN per sostituire ". local" con il nuovo nome di dominio, ad esempio, in modo che un account utente sia simile a billa@contoso.com.
   
 Dopo aver aggiornato l'UPN per l'utilizzo del dominio verificato, si è pronti per sincronizzare AD DS locale con Microsoft 365.
   
- **Passaggio 1: aggiungere il nuovo suffisso UPN**
+#### <a name="step-1-add-the-new-upn-suffix"></a>Passaggio 1: aggiungere il nuovo suffisso UPN * *
   
 1. Nel controller di dominio ad DS, in Server Manager scegliere **gli strumenti** \> **domini e trust di Active Directory**.
     
@@ -70,7 +71,7 @@ Dopo aver aggiornato l'UPN per l'utilizzo del dominio verificato, si è pronti p
   
     Scegliere **OK** al termine dell'aggiunta di suffissi. 
     
- **Passaggio 2: modificare il suffisso UPN per gli utenti esistenti**
+ #### <a name="step-2-change-the-upn-suffix-for-existing-users"></a>Passaggio 2: modificare il suffisso UPN per gli utenti esistenti
   
 1. Nel controller di dominio ad DS, in Server Manager scegliere **strumenti** \> **e utenti di Active Directory**.
     
@@ -87,11 +88,11 @@ Dopo aver aggiornato l'UPN per l'utilizzo del dominio verificato, si è pronti p
 4. Completare questa procedura per ogni utente.
     
    
-### <a name="you-can-also-use-windows-powershell-to-change-the-upn-suffix-for-all-users"></a>**È inoltre possibile utilizzare Windows PowerShell per modificare il suffisso UPN per tutti gli utenti**
+### <a name="use-powershell-to-change-the-upn-suffix-for-all-of-your-users"></a>Utilizzo di PowerShell per modificare il suffisso UPN per tutti gli utenti
 
-Se si dispone di molti utenti da aggiornare, è più facile usare Windows PowerShell. Nell'esempio seguente vengono utilizzati i cmdlet [Get-ADUser](https://go.microsoft.com/fwlink/p/?LinkId=624312) e [set-aduser](https://go.microsoft.com/fwlink/p/?LinkId=624313) per modificare tutti i suffissi contoso. local in contoso.com. 
+Se si dispone di un sacco di account utente da aggiornare, è più facile usare PowerShell. Nell'esempio seguente vengono utilizzati i cmdlet [Get-ADUser](https://go.microsoft.com/fwlink/p/?LinkId=624312) e [set-aduser](https://go.microsoft.com/fwlink/p/?LinkId=624313) per modificare tutti i suffissi contoso. local in contoso.com in servizi di dominio Active Directory. 
 
-Ad esempio, è possibile eseguire i seguenti comandi di Windows PowerShell per aggiornare tutti i suffissi contoso. local a contoso.com:
+Ad esempio, è possibile eseguire i seguenti comandi di PowerShell per aggiornare tutti i suffissi contoso. local a contoso.com:
     
   ```powershell
   $LocalUsers = Get-ADUser -Filter "UserPrincipalName -like '*contoso.local'" -Properties userPrincipalName -ResultSetSize $null

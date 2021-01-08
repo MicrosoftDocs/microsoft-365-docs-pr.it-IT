@@ -22,18 +22,18 @@ search.appverid:
 - MET150
 - MOE150
 description: Informazioni su come acquistare nuove licenze Microsoft 365 per le aziende.
-ms.openlocfilehash: 2f881881bc55659d5ba4cd7280111a15bf0f9ff3
-ms.sourcegitcommit: ddfb4f3e34deb733e8625e845e4dfd1fcc066ceb
+ms.openlocfilehash: a4bc66188b064227821ddc66cc764c83caad5f64
+ms.sourcegitcommit: 4482c174e0e68e0fbbc7ad9ef6b0e78dc34ac85a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "49771959"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "49784242"
 ---
 # <a name="buy-microsoft-365-licenses"></a>Acquistare licenze Microsoft 365
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4KWvE?autoplay=false]
 
-Quando si aggiungono nuovi utenti, sarà necessario acquistare altre licenze per tali utenti.
+Quando si aggiungono nuovi utenti, sarà necessario acquistare altre licenze Microsoft 365 per tali utenti.
 
 ## <a name="try-it"></a>Perché non provarlo?
 
