@@ -20,12 +20,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Microsoft Defender per Office 365 include allegati e collegamenti sicuri, strumenti avanzati anti-phishing, strumenti di report e funzionalità Threat Intelligence.
-ms.openlocfilehash: 86e738fa9390cc40b06c10a27f3198715bb991fd
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.openlocfilehash: 34011780241ae3a669fe32aa5fad00f9836d5570
+ms.sourcegitcommit: ec293978e951b09903b79e6642aa587824935e0c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49614811"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "49780309"
 ---
 # <a name="microsoft-defender-for-office-365"></a>Microsoft Defender per Office 365
 
@@ -44,6 +44,11 @@ Microsoft Defender per Office 365 protegge l'organizzazione dalle minacce dannos
 - **[Funzionalità di analisi e risposta alle minacce](#use-threat-investigation-and-response-capabilities)**: consente di utilizzare strumenti all'avanguardia per analizzare, comprendere, simulare e prevenire minacce.
 
 - **[Funzionalità di analisi e risposta automatizzate](office-365-air.md)**: consente di risparmiare tempo e fatica nell'analisi e nell'attenuazione delle minacce.
+
+## <a name="interactive-guide-to-microsoft-defender-for-office-365"></a>Guida interattiva di Defender per Office 365
+In questa guida interattiva imparerai a proteggere la tua organizzazione con Microsoft Defender per Office 365. Vedrai come Defender per Office 365 può aiutarti a definire criteri di protezione, analizzare le minacce per la tua organizzazione e rispondere agli attacchi.
+
+> [!VIDEO https://aka.ms/MSDO-IG]
 
 ## <a name="getting-started"></a>Introduzione
 
