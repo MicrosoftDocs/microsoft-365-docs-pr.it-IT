@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Informazioni sul funzionamento della conservazione per SharePoint e OneDrive.
-ms.openlocfilehash: 84191cf7df1c8382b336ecce47c50ca24bc2aede
-ms.sourcegitcommit: 9bf6a4f77f9af5fd988f6795bad3b240213a51fc
+ms.openlocfilehash: 995f657778d3326a4d58d46f760539639f1fe7fe
+ms.sourcegitcommit: 3bf4f1c0d3a8515cca651b2a520217195f89457f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48951109"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "49777069"
 ---
 # <a name="learn-about-retention-for-sharepoint-and-onedrive"></a>Informazioni sulla conservazione per SharePoint e OneDrive
 
@@ -49,7 +49,9 @@ Per altri carichi di lavoro, vedere:
 > [!TIP]
 > Se si usa una [query con un criterio di applicazione automatica per un'etichetta di conservazione](apply-retention-labels-automatically.md#auto-apply-labels-to-content-with-keywords-or-searchable-properties), è possibile escludere raccolte documenti usando la voce seguente: `NOT(DocumentLink:"<URL to document library>")`
 
-Le impostazioni di conservazione non si applicano alle strutture di organizzazione che includono raccolte, elenchi e cartelle. In alternativa, agli elementi negli elenchi di sistema, che sono elenchi nascosti utilizzati da SharePoint per gestire il sistema e includono il catalogo della pagina master, il catalogo della soluzione e le origini dati.
+Le voci di elenco non sono supportate dai criteri di conservazione ma dalle etichette di conservazione, ad eccezione delle voci presenti negli elenchi di sistema. Si tratta di elenchi nascosti utilizzati da SharePoint per la gestione del sistema e includono il catalogo della pagina master, il catalogo delle soluzioni e le origini dati.
+
+Le impostazioni di conservazione sia dei criteri che delle etichette di conservazione non sono validi per le strutture di organizzazione che includono raccolte, elenchi e cartelle.
 
 Per i criteri di conservazione e i criteri di etichetta applicati automaticamente: i siti di SharePoint devono essere indicizzati per applicare le impostazioni di conservazione. Se gli elementi nelle raccolte documenti di SharePoint sono configurati per non essere visualizzati nei risultati di ricerca, tale configurazione non esclude i file dalle impostazioni di conservazione.
 
