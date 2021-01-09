@@ -14,12 +14,12 @@ ms.custom: AdminSurgePortfolio
 search.appverid: MET150
 ROBOTS: NOINDEX, NOFOLLOW
 description: Individuare, testare e distribuire le app Microsoft e Microsoft partner per gli utenti e i gruppi dell'organizzazione dal portale delle app integrate nell'interfaccia di amministrazione di Microsoft 365.
-ms.openlocfilehash: 787c1670cff865e1f207a1554f3fa6a0b1a28f1d
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: b0dc6277461ff03e8aae2e820543f8e5d9e2303c
+ms.sourcegitcommit: 7d4aa58ae9fc893825b6e648fa3f072c3ac59628
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399519"
+ms.lasthandoff: 01/09/2021
+ms.locfileid: "49790191"
 ---
 # <a name="test-and-deploy-microsoft-365-apps-in-the-microsoft-365-admin-center"></a>Testare e distribuire le app Microsoft 365 nell'interfaccia di amministrazione di Microsoft 365
 
@@ -31,7 +31,7 @@ Per ulteriori informazioni sull'acquisto e la gestione delle licenze delle app d
 
 Scegliendo app integrate nell'interfaccia di amministrazione di Microsoft 365, è possibile gestire i test e la distribuzione delle app Microsoft e Microsoft partner acquistate e concessi in licenza. 
 
-1. Nell'interfaccia di amministrazione, nella barra di spostamento a sinistra, scegliere **Impostazioni**e quindi fare clic su **app integrate**. 
+1. Nell'interfaccia di amministrazione, nella barra di spostamento a sinistra, scegliere **Impostazioni** e quindi fare clic su **app integrate**. 
 
 2. Scegliere un'app con **lo stato** di **Altre app disponibili**.
 
@@ -45,7 +45,7 @@ Scegliendo app integrate nell'interfaccia di amministrazione di Microsoft 365, �
 
     È anche possibile scegliere la **distribuzione dei test** se si preferisce attendere la distribuzione dell'app all'intera organizzazione.
 
-    b. Selezionare **Aggiorna**, **fare**e ora è possibile selezionare **Distribuisci** nella scheda **Panoramica** .  
+    b. Selezionare **Aggiorna**, **fare** e ora è possibile selezionare **Distribuisci** nella scheda **Panoramica** .  
 
 4. Rivedere le informazioni sull'app, quindi selezionare **Distribuisci**. 
 
@@ -53,11 +53,11 @@ Scegliendo app integrate nell'interfaccia di amministrazione di Microsoft 365, �
 
     Esaminare i dettagli della distribuzione di test o completa nella scheda **Panoramica** .
 
-## <a name="find-published-apps-for-test-and-full-deployment"></a>Trovare le app pubblicate per il test e la distribuzione completa 
+## <a name="find-published-apps-for-testing-and-full-deployment"></a>Trovare le app pubblicate per il testing e la distribuzione completa 
 
 È possibile trovare, testare e distribuire completamente le app pubblicate che non sono già presenti nell'elenco nella pagina Apps integrata. Con l'acquisto e la gestione delle licenze delle app dall'interfaccia di amministrazione, è possibile aggiungere le app partner Microsoft e Microsoft all'elenco da un'unica posizione.
 
-1. Nell'interfaccia di amministrazione, nella barra di spostamento a sinistra, scegliere **Impostazioni**e quindi fare clic su **app integrate**. 
+1. Nell'interfaccia di amministrazione, nella barra di spostamento a sinistra, scegliere **Impostazioni** e quindi fare clic su **app integrate**. 
 
 2. Seleziona **ottenere le app** sopra l'elenco delle app.
 
@@ -75,7 +75,7 @@ Scegliendo app integrate nell'interfaccia di amministrazione di Microsoft 365, �
 
     È anche possibile scegliere la **distribuzione dei test** se si preferisce attendere la distribuzione dell'app all'intera organizzazione.
 
-    b. Selezionare **Aggiorna**, **completato**e ora è possibile selezionare **Distribuisci** nella scheda **Panoramica** .  
+    b. Selezionare **Aggiorna**, **completato** e ora è possibile selezionare **Distribuisci** nella scheda **Panoramica** .  
 
 6. Rivedere le informazioni sull'app, quindi selezionare **Distribuisci**. 
 
@@ -83,8 +83,16 @@ Scegliendo app integrate nell'interfaccia di amministrazione di Microsoft 365, �
 
     Esaminare i dettagli della distribuzione di test o completa nella scheda **Panoramica** .
 
-Nell'interfaccia di amministrazione di Microsoft 365, ogni **stato** dell'app distribuito è **OK** con un **tipo** di distribuzione di distribuzione dei **test**, una **distribuzione completa**o **personalizzata**e la data in cui è stata distribuita l'app.
+Nell'interfaccia di amministrazione di Microsoft 365, ogni **stato** dell'app distribuito è **OK** con un **tipo** di distribuzione di distribuzione dei **test**, una **distribuzione completa** o **personalizzata** e la data in cui è stata distribuita l'app.
 
 > [!NOTE]
 > Se un'app è stata distribuita in precedenza da una posizione diversa da quella integrata, il **tipo di distribuzione** è **Custom.**
+
+## <a name="unsupported-scenarios"></a>Scenari non supportati
+
+Gli scenari seguenti non sono attualmente supportati per la distribuzione dal portale delle app integrate:
+
+- L'app o il componente aggiuntivo è collegato a più di un software come offerta di servizi (SaaS).
+- L'app SaaS è collegata alle app e ai componenti aggiuntivi, ma non ha un AADid associato.
+- Due app SaaS condividono lo stesso AADid e sono entrambe collegate a app o componenti aggiuntivi.
   

@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 description: Informazioni sulle visualizzazioni della campagna in Microsoft Defender per Office 365.
-ms.openlocfilehash: 82dbccabe4917b8b90f67456fbac1c673bad3286
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.openlocfilehash: 8e5c49c9a45d1578da1eea33a560da611fb74155
+ms.sourcegitcommit: a76de3d1604d755b29053e7bf557c0008be6ad23
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49357660"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "49788016"
 ---
 # <a name="campaign-views-in-microsoft-defender-for-office-365"></a>Visualizzazioni della campagna in Microsoft Defender per Office 365
 
@@ -53,7 +53,7 @@ Una campagna potrebbe essere di breve durata, o potrebbe interferire tra diversi
 
 ## <a name="campaign-views-in-the-security--compliance-center"></a>Visualizzazioni della campagna nel centro sicurezza & conformità
 
-Le visualizzazioni della campagna sono disponibili nel [Centro sicurezza & conformità](https://protection.office.com) nelle campagne di **gestione delle minacce** \> **Campaigns** o direttamente su <https://protection.office.com/campaigns> .
+Le visualizzazioni della campagna sono disponibili nel [Centro sicurezza & conformità](https://protection.office.com) nelle campagne di **gestione delle minacce** \> o direttamente su <https://protection.office.com/campaigns> .
 
 ![Panoramica della campagna nel Centro sicurezza e conformità](../../media/campaigns-overview.png)
 
@@ -123,7 +123,7 @@ Le proprietà della campagna filtrabili disponibili nel pulsante **tipo di campa
   - **Sottotipo di campagna**
   - **Mittente**
   - **Destinatari**
-  - **Dominio mittente**
+  - **Dominio del mittente**
   - **Oggetto**
   - **Nome file allegato**
   - **Famiglia di malware**
@@ -165,7 +165,7 @@ Dopo aver creato un filtro di base o avanzato, è possibile salvarlo tramite **S
 
 Per esportare il grafico o l'elenco delle campagne, fare clic su **Esporta** e selezionare **Esporta dati grafico** o **Esporta campagna**.
 
-Se si dispone di un abbonamento a Microsoft Defender per endpoint, è possibile fare clic su **WDATP** per connettere o disconnettere le informazioni sulle campagne con Microsoft Defender per endpoint. Per ulteriori informazioni, vedere [integrare Microsoft Defender per Office 365 con Microsoft Defender per endpoint](integrate-office-365-ti-with-wdatp.md).
+Se si dispone di una sottoscrizione di Microsoft Defender per endpoint, è possibile fare clic su **Impostazioni MDE** per connettere o disconnettere le informazioni sulle campagne con Microsoft Defender per endpoint. Per ulteriori informazioni, vedere [integrare Microsoft Defender per Office 365 con Microsoft Defender per endpoint](integrate-office-365-ti-with-wdatp.md).
 
 ## <a name="campaign-details"></a>Dettagli campagna
 

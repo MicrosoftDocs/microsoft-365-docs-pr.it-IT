@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Informazioni su come utilizzare lo switcher tenant e sulle visualizzazioni multi-tenant.
-ms.openlocfilehash: 2c96a80a0095e909eff19c9172eb0709ecece942
-ms.sourcegitcommit: 705915f8bf9b7c082d12a009523d8aa0670a74a1
+ms.openlocfilehash: 0b73665159fbc6ce2d1aa99ba1518dc257d88ec8
+ms.sourcegitcommit: 7d4aa58ae9fc893825b6e648fa3f072c3ac59628
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48495880"
+ms.lasthandoff: 01/09/2021
+ms.locfileid: "49790139"
 ---
 # <a name="multi-tenant-management"></a>Gestione multi-tenant
 
@@ -41,9 +41,9 @@ La gestione multi-tenant offre una forma di gestione unificata che consente agli
 
     :::image type="content" source="../../media/macorgswitcher.png" alt-text="Switcher multi-tenant.":::
 
-- Dallo **Switcher tenant** è possibile spostarsi rapidamente tra i tenant gestiti.
+- Dallo **Switcher tenant**, è possibile spostarsi rapidamente tra i tenant gestiti.
 
-    :::image type="content" source="../../media/yourtenantslist.png" alt-text="Switcher multi-tenant.":::
+    :::image type="content" source="../../media/yourtenantslist.png" alt-text="Elenco tenant con funzionalità di ricerca.":::
 
 ## <a name="view-all-tenants-page"></a>Pagina Visualizza tutti i tenant
 
@@ -62,14 +62,22 @@ Se il tenant è stato contrassegnato come preferito, viene automaticamente espan
 La visualizzazione integrità del servizio Mostra se eventuali incidenti o avvisi interessano i tenant. Verrà anche illustrato il numero di tenant gestiti coinvolti.
 
 1. Nell'interfaccia di amministrazione di Microsoft 365, nella visualizzazione multi-tenant, selezionare **integrità del servizio**.
-2. Nella pagina **integrità del servizio** è possibile esaminare i problemi in **tutti i servizi** o in **tutte le** schede dei problemi.
-3. Selezionare un evento imprevisto nella scheda **tutti i servizi** o **tutti i problemi** per ottenere ulteriori informazioni su qualsiasi evento imprevisto nella scheda **Panoramica** . Selezionare la scheda degli **inquilini coinvolti** per ottenere un elenco dei tenant coinvolti.
+2. Nella visualizzazione aggregata della pagina **integrità del servizio** è inoltre possibile visualizzare il numero totale di operazioni non consentite, il numero totale di avvisi che interessano uno dei tenant gestiti e il numero di servizi con incidenti attivi. È anche possibile vedere quanti dei tuoi inquilini sono coinvolti da incidenti e avvisi.
+    
+    - È possibile utilizzare l'opzione filtro per visualizzare i problemi per tipo di problema o per servizio
 
-    :::image type="content" source="../../media/tenantsaffected.png" alt-text="Switcher multi-tenant.":::
+    - È possibile esaminare i problemi in **tutti i servizi** o in **tutte le** schede dei problemi.
+
+    :::image type="content" source="../../media/multitenant-servicehealth.png" alt-text="Pagina integrità del servizio multi-tenant.":::
+1. Selezionare un evento imprevisto nella scheda **tutti i servizi** o **tutti i problemi** per ottenere ulteriori informazioni su qualsiasi evento imprevisto nella scheda **Panoramica** . Selezionare la scheda degli **inquilini coinvolti** per ottenere un elenco dei tenant coinvolti.
+
+    :::image type="content" source="../../media/tenantsaffected.png" alt-text="Elenco dei tenant coinvolti in un problema di integrità del servizio.":::
+
+L'elenco dei tenant coinvolti può essere esportato in formato CSV in modo che gli amministratori possano condividerlo con i team di supporto.
 
 ## <a name="view-a-single-tenant-in-the-microsoft-365-admin-center"></a>Visualizzazione di un singolo tenant nell'interfaccia di amministrazione di Microsoft 365
 
 È possibile tornare all'interfaccia di amministrazione di Microsoft 365 per uno qualsiasi dei tenant dalla pagina **tutti i tenant** .
 
-1. Nella pagina **tutti i tenant** fare clic sul nome del tenant per il quale si desidera visualizzare l'interfaccia di amministrazione.
+1. Nella pagina **tutti i tenant** selezionare il nome del tenant per il quale si desidera visualizzare l'interfaccia di amministrazione.
 2. Si viene indirizzati all'interfaccia di amministrazione per il tenant.

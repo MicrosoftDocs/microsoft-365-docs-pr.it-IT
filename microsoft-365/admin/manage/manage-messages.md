@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 97af2932-0868-4ccf-8f6b-21a94946c58a
 description: Informazioni su come gestire i messaggi del centro messaggi per facilitare la gestione delle modifiche.
-ms.openlocfilehash: 9f64be8396900db3377505fea3e144fffbb3b096
-ms.sourcegitcommit: 849b365bd3eaa9f3c3a9ef9f5973ef81af9156fa
+ms.openlocfilehash: 42dc00a1347f5455f2d607da9f2677c58ace34e9
+ms.sourcegitcommit: a76de3d1604d755b29053e7bf557c0008be6ad23
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49688279"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "49787764"
 ---
 # <a name="manage-messages-in-message-center"></a>Gestire i messaggi nel Centro messaggi
 
@@ -209,7 +209,7 @@ Se viene visualizzato un messaggio che non appartiene all'utente o che si è gi�
 
 ## <a name="track-your-message-center-tasks-in-planner"></a>Tenere traccia delle attività del Centro messaggi in Planner
 
-Nel Centro messaggi di Microsoft 365 arrivano molte informazioni utili riguardanti le modifiche ai servizi di Microsoft 365. Può essere difficile tenere conto di quali modifiche richiedono operazioni da eseguire, quando e da chi e per tenere conto di ogni attività da completare. Potrebbe anche risultare utile aggiungere note riguardanti un elemento e contrassegnarle per controllarle in un secondo momento. È possibile fare tutto questo e molto altro ancora quando si sincronizzano i messaggi dall'interfaccia di amministrazione di Microsoft 365 a Microsoft Planner. Per ulteriori informazioni, vedere [Track Your Message Center Tasks in Planner](https://docs.microsoft.comoffice365/planner/track-message-center-tasks-planner).
+Nel Centro messaggi di Microsoft 365 arrivano molte informazioni utili riguardanti le modifiche ai servizi di Microsoft 365. Può essere difficile tenere conto di quali modifiche richiedono operazioni da eseguire, quando e da chi e per tenere conto di ogni attività da completare. Potrebbe anche risultare utile aggiungere note riguardanti un elemento e contrassegnarle per controllarle in un secondo momento. È possibile fare tutto questo e molto altro ancora quando si sincronizzano i messaggi dall'interfaccia di amministrazione di Microsoft 365 a Microsoft Planner. Per ulteriori informazioni, vedere [Track Your Message Center Tasks in Planner](https://docs.microsoft.com/office365/planner/track-message-center-tasks-planner).
 
 
 Per una panoramica del centro messaggi, vedere [Message Center in Microsoft 365](message-center.md). In alternativa, per informazioni su come impostare le preferenze della lingua per abilitare la traduzione automatica per i post del centro messaggi, vedere [Language Translation per i post del centro messaggi](language-translation-for-message-center-posts.md). Se si desidera programmare un modo alternativo per ottenere informazioni sull'integrità del servizio in tempo reale e comunicazioni del centro messaggi, fare riferimento a [Microsoft 365 Service Communications API Overview](https://go.microsoft.com/fwlink/p/?linkid=848507).

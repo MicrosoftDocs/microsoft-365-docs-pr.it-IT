@@ -21,12 +21,12 @@ description: Interfaccia di amministrazione di Microsoft 365-informazioni sulle 
 ms.custom:
 - MACDashWhatsNew
 - AdminSurgePortfolio
-ms.openlocfilehash: 90805568d77cf55cbd0e77fb3085435df09824ab
-ms.sourcegitcommit: 1a9f0f878c045e1ddd59088ca2a94397605a242a
+ms.openlocfilehash: 12b7dfd39a9cf8ac73e8f1c7f2297721c2d629bf
+ms.sourcegitcommit: a76de3d1604d755b29053e7bf557c0008be6ad23
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "49668050"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "49787880"
 ---
 # <a name="whats-new-in-the-microsoft-365-admin-center"></a>Novità dell'interfaccia di amministrazione di Microsoft 365
 
@@ -57,7 +57,7 @@ Benvenuto in Microsoft Ignite-la prima accensione solo online. Si spera di veder
 
 ### <a name="multi-tenant-management"></a>Gestione multi-tenant
 
-Sono state sviluppate una serie di funzionalità per gli amministratori multi-tenant come te per ottenere il lavoro più rapido ed efficiente.
+Sono state sviluppate una serie di funzionalità per gli amministratori multi-tenant come te per ottenere il lavoro più rapido ed efficiente. Per ulteriori informazioni, vedere [gestire più tenant](multi-tenant/manage.md).
 
 - **I tenant**: passano rapidamente tra i tenant gestiti.
 - **Tutti i tenant**: una nuova pagina in cui è possibile visualizzare rapidamente l'integrità di tutti i servizi dei tenant, le richieste di servizi aperti, i prodotti e la fatturazione, le attività di installazione consigliate e il numero di utenti nel tenant.
@@ -293,8 +293,8 @@ Sono disponibili due aggiornamenti per i gruppi di questo mese:
 
 - [Pianificare una riunione](https://support.microsoft.com/office/c61b4f61-ee62-4a06-8bf7-0a1cd302700a)
 - [Partecipare a una riunione di Teams](https://support.microsoft.com/office/078e9868-f1aa-4414-8bb9-ee88e9236ee4)
-- [Creare un team org-Wide](https://support.microsoft.com/office/037bb27a-bcc9-48fe-8d72-44d9482420a3)
-- [Creare un team con guest](https://support.microsoft.com/office/11fbb083-52ee-434d-8c6e-63711fdafac7)
+- [Creare un team di tutta l'organizzazione](https://support.microsoft.com/office/037bb27a-bcc9-48fe-8d72-44d9482420a3)
+- [Creare un team con gli utenti](https://support.microsoft.com/office/11fbb083-52ee-434d-8c6e-63711fdafac7)
 - [Partecipare a una squadra come ospite](https://support.microsoft.com/office/928d1eef-61e2-49ec-b754-c2fe86b34824)
 - [Creare un indirizzo di posta elettronica di gruppo](https://support.microsoft.com/office/ded875f9-a9de-437f-b559-2ae4f235bb2b)
 
@@ -415,7 +415,7 @@ L'elenco delle cassette postali per le risorse è stato aggiornato al nuovo stil
 Consultare la formazione di amministratore di Small Business che è stata rilasciata a gennaio:
 
 - [Creare il sito Web aziendale](https://support.microsoft.com/office/3325d50e-d131-403c-a278-7f3296fe33a9)
-- [Trovare le risposte e la guida](https://support.microsoft.com/office/7f681212-c649-4a3e-a43b-32b1d1e58988)
+- [Trovare risposte e la guida](https://support.microsoft.com/office/7f681212-c649-4a3e-a43b-32b1d1e58988)
 - [Ottenere assistenza o supporto tecnico](https://support.microsoft.com/office/18948a4c-3eb1-4b30-b1bc-a4cc29eb7655)
 - [Eliminare un utente](https://support.microsoft.com/office/6bcdad7b-732a-4260-997a-8c176bc3d9d6)
 - [Scegliere un abbonamento Microsoft](https://support.microsoft.com/office/b9f7c78e-430f-4117-89ec-2eeb1dced2ca)

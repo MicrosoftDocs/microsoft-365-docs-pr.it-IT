@@ -1,9 +1,8 @@
 ---
-title: Endpoint Microsoft 365
-ms.author: josephd
-author: JoeDavies-MSFT
+title: Endpoint di Microsoft 365
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
-ms.date: 11/07/2018
 audience: ITPro
 ms.topic: hub-page
 ms.service: o365-solutions
@@ -20,16 +19,16 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: ''
 description: Per gli indirizzi IP e gli URL di destinazione per il traffico Microsoft 365, utilizzare questo elenco di articoli per gli endpoint Internet dei diversi cloud di Microsoft 365.
-ms.openlocfilehash: b0d8468eaa1b56d1151e54d8e05e6ada51845118
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 159c8e7dea6fe241ab44b283b1193397c3ad70e3
+ms.sourcegitcommit: a76de3d1604d755b29053e7bf557c0008be6ad23
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46691296"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "49787904"
 ---
-# <a name="microsoft-365-endpoints"></a>Endpoint Microsoft 365
+# <a name="microsoft-365-endpoints"></a>Endpoint di Microsoft 365
 
-*Questo articolo può essere applicato sia a Microsoft 365 Enterprise che a Office 365 Enterprise.*
+*Questo articolo si applica sia a Microsoft 365 Enterprise che a Office 365 Enterprise*.
 
 Gli endpoint sono il set di indirizzi IP di destinazione, i nomi di dominio DNS e gli URL per il traffico Microsoft 365 su Internet. 
 

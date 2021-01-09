@@ -16,23 +16,35 @@ search.appverid:
 ms.assetid: ''
 ms.collection:
 - M365-security-compliance
+- m365solution-overview
+- m365solution-protecthve
 description: Gli amministratori possono ottenere informazioni su come elevare le impostazioni di sicurezza e utilizzare i report, gli avvisi e le indagini per gli account prioritari nelle organizzazioni Microsoft 365.
-ms.openlocfilehash: 9788131ea881a1cb3c36a60dfaac01ed5daf0901
-ms.sourcegitcommit: 5ba0015c1554048f817fdfdc85359eee1368da64
+ms.openlocfilehash: acd2eba0acd533d0cd8223f2c433cc023fc23287
+ms.sourcegitcommit: 7d4aa58ae9fc893825b6e648fa3f072c3ac59628
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "49769246"
+ms.lasthandoff: 01/09/2021
+ms.locfileid: "49790127"
 ---
 # <a name="security-recommendations-for-priority-accounts-in-microsoft-365"></a>Suggerimenti per la sicurezza per gli account prioritari in Microsoft 365
 
-Che cosa fare se si riceve un messaggio urgente da un dirigente dell'organizzazione che ha chiesto di fare qualcosa? Lo faresti? La maggior parte delle persone si conformerà alla richiesta.
+Non tutti gli account utente hanno accesso alle stesse informazioni della società. Alcuni account hanno accesso a informazioni riservate, ad esempio dati finanziari, informazioni sullo sviluppo di prodotti, accesso dei partner ai sistemi di compilazione critici e altro ancora. Gli account che dispongono dell'accesso a informazioni estremamente riservate rappresentano una minaccia grave se sono compromessi. Questi tipi di account di _priorità_ sono denominati. Gli account prioritari includono CEO, CISOs, CFOs, account di amministrazione dell'infrastruttura, account di sistema di compilazione e altro ancora.
 
-Per gli aggressori, gli attacchi di phishing comuni che eseguono il cast di una rete casuale per ottenere le credenziali di utenti casuali o sconosciuti sono inefficienti. D'altra parte, attacchi di _phishing_ o _caccia alle balene_ che puntano gli utenti in posizioni di potere o autorità sono molto più gratificanti per gli aggressori. Se questi account di priorità sono compromessi, l'utente malintenzionato potrebbe accedere agli account con le funzionalità di amministratore, finanziarie, di prodotto o persino di accesso fisico all'interno dell'organizzazione.
+Per gli utenti malintenzionati, gli attacchi di phishing comuni che eseguono il cast di una rete casuale per i clienti comuni o sconosciuti sono inefficienti. D'altra parte, gli attacchi di _phishing_ o di _caccia alle balene_ che hanno come obiettivo gli account prioritari sono molto gratificanti per gli aggressori. Pertanto, gli account prioritari richiedono maggiore protezione ordinaria per evitare il compromesso dell'account.
 
-Microsoft 365 e Microsoft Defender per Office 365 contengono diverse funzionalità che consentono di fornire ulteriori livelli di sicurezza per gli account prioritari. Le funzionalità disponibili e come utilizzarle sono descritte in questo articolo.
+Microsoft 365 e Microsoft Defender per Office 365 contengono diverse funzionalità chiave che forniscono ulteriori livelli di sicurezza per gli account prioritari. In questo articolo vengono descritte queste funzionalità e come utilizzarle.
 
 ![Riepilogo dei suggerimenti per la sicurezza in formato icona](../../media/security-recommendations-for-priority-users.png)
+
+****
+
+|Attività|Tutti i piani di Office 365 Enterprise|Microsoft 365 E3|Microsoft 365 E5|
+|---|:---:|:---:|:---:|
+|[Aumentare la sicurezza dell'accesso per gli account prioritari](#increase-sign-in-security-for-priority-accounts)|![Incluso](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Incluso](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Incluso](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|[Utilizzo di criteri di sicurezza preimpostati rigorosi per gli account prioritari](#use-strict-preset-security-policies-for-priority-accounts)|![Incluso](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Incluso](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Incluso](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|[Applicazione di tag utente agli account prioritari](#apply-user-tags-to-priority-accounts)|||![Incluso](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|[Monitorare gli account prioritari in avvisi, rapporti e rilevamenti](#monitor-priority-accounts-in-alerts-reports-and-detections)|||![Incluso](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|
 
 ## <a name="increase-sign-in-security-for-priority-accounts"></a>Aumentare la sicurezza dell'accesso per gli account prioritari
 
@@ -40,15 +52,15 @@ Gli account prioritari richiedono una maggiore sicurezza per l'accesso. È possi
 
 Per istruzioni, vedere [passaggio 1. Aumentare la sicurezza dell'accesso per i dipendenti remoti con AMF](https://docs.microsoft.com/microsoft-365/solutions/empower-people-to-work-remotely-secure-sign-in). Anche se in questo articolo si parla di Worker remoti, gli stessi concetti si applicano agli utenti prioritari.
 
-**Note**:
+**Nota**: è consigliabile disabilitare globalmente i protocolli di autenticazione legacy per tutti gli utenti prioritari, come descritto nell'articolo precedente. Se i requisiti aziendali impediscono di eseguire questa operazione, Exchange Online offre i seguenti controlli per limitare l'ambito dei protocolli di autenticazione legacy:
 
-- L'autenticazione di base è in fase di divenire obsoleta in Exchange Online per i servizi Web Exchange (EWS), Exchange ActiveSync, POP3, IMAP4 e Remote PowerShell. Per informazioni dettagliate, vedere questo [post di Blog](https://developer.microsoft.com/office/blogs/deferred-end-of-support-date-for-basic-authentication-in-exchange-online/).
-
-- È possibile utilizzare i [criteri di autenticazione](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/disable-basic-authentication-in-exchange-online) e [le regole di accesso client](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/client-access-rules/client-access-rules) in Exchange Online per bloccare l'autenticazione di base e i protocolli di autenticazione legacy come POP3, IMAP4 e SMTP autenticato.
+- È possibile utilizzare i [criteri di autenticazione](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/disable-basic-authentication-in-exchange-online) e [le regole di accesso client](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/client-access-rules/client-access-rules) in Exchange Online per bloccare o consentire l'autenticazione di base e i protocolli di autenticazione legacy come POP3, IMAP4 e SMTP autenticato per utenti specifici.
 
 - È possibile disabilitare l'accesso POP3 e IMAP4 alle singole cassette postali. È possibile disabilitare l'autenticazione SMTP a livello di organizzazione e abilitarla su cassette postali specifiche che lo richiedono. Per istruzioni, vedere gli argomenti seguenti:
   - [Abilitazione o disabilitazione dell'accesso POP3 o IMAP4 per un utente](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/pop3-and-imap4/enable-or-disable-pop3-or-imap4-access)
   - [Abilitazione o disabilitazione dell'invio SMTP del client autenticato (AUTH SMTP)](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/authenticated-client-smtp-submission)
+
+Vale anche la pena notare che l'autenticazione di base è in fase di divenire obsoleta in Exchange Online per i servizi Web Exchange (EWS), Exchange ActiveSync, POP3, IMAP4 e Remote PowerShell. Per informazioni dettagliate, vedere questo [post di Blog](https://developer.microsoft.com/office/blogs/deferred-end-of-support-date-for-basic-authentication-in-exchange-online/).
 
 ## <a name="use-strict-preset-security-policies-for-priority-accounts"></a>Utilizzo di criteri di sicurezza preimpostati rigorosi per gli account prioritari
 

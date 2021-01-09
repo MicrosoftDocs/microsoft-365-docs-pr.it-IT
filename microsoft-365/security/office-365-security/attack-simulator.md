@@ -19,17 +19,16 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Gli amministratori possono imparare a usare Attack Simulator per eseguire attacchi simulati di phishing e password nelle organizzazioni di Microsoft 365 E5 o Microsoft Defender per Office 365 piano 2.
-ms.openlocfilehash: b1c2ad265c4812f67aee66f0f59664480b4db229
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.openlocfilehash: a53ffee29ce928910b8c4add245c002ae6eb03da
+ms.sourcegitcommit: a76de3d1604d755b29053e7bf557c0008be6ad23
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49615205"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "49788112"
 ---
 # <a name="attack-simulator-in-microsoft-defender-for-office-365"></a>Simulatore di attacco in Microsoft Defender per Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
-
 
 Se l'organizzazione dispone di Microsoft Defender per Office 365 piano 2, in cui sono incluse le [funzionalità di ricerca e di risposta alle minacce](office-365-ti.md), è possibile utilizzare Attack Simulator nel centro sicurezza & conformità per eseguire scenari di attacco realistici nell'organizzazione. Questi attacchi simulati consentono di identificare e individuare gli utenti vulnerabili prima che un attacco reale impatti la linea di base. Leggere questo articolo per ulteriori informazioni.
 
@@ -119,9 +118,7 @@ Se si intende utilizzare uno dei modelli incorporati o creare il messaggio di po
 
      > [!NOTE]
      >
-     > - Tutti gli URL sono intenzionalmente http, non HTTPS.
-     >
-     > - Un servizio di reputazione URL potrebbe identificare uno o più di questi URL come non sicuri. Controllare la disponibilità dell'URL nei Web browser supportati prima di utilizzare l'URL in una campagna di phishing.
+     > Un servizio di reputazione URL potrebbe identificare uno o più di questi URL come non sicuri. Controllare la disponibilità dell'URL nei Web browser supportati prima di utilizzare l'URL in una campagna di phishing.
 
    - **URL della pagina di destinazione personalizzata**: immettere una pagina di destinazione facoltativa in cui gli utenti vengono eseguiti se fanno clic sul collegamento di phishing e immettono le proprie credenziali. Questo collegamento sostituisce la pagina di destinazione predefinita. Ad esempio, se si dispone di un training di sensibilizzazione interno, è possibile specificare l'URL qui.
 
