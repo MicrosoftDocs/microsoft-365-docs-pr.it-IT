@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: e2a789f2-9962-4960-9fd4-a00aa063559e
 description: "Per gli amministratori: informazioni su come abilitare l'archiviazione con espansione automatica, che consente agli utenti di disporre di spazio di archiviazione illimitato per le cassette postali di Exchange Online. È possibile abilitare l'archiviazione in espansione automatica per l'intera organizzazione o solo per utenti specifici."
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 69b01488af2a933a0f9af0ba75f98defb844ad6d
-ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
+ms.openlocfilehash: 237e3032b21f6fe0d3a97d2ae41c527e500fb2e0
+ms.sourcegitcommit: 7d4aa58ae9fc893825b6e648fa3f072c3ac59628
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45430254"
+ms.lasthandoff: 01/09/2021
+ms.locfileid: "49790084"
 ---
 # <a name="enable-unlimited-archiving---admin-help"></a>Abilitare l'archiviazione illimitata-guida per gli amministratori
 
@@ -64,7 +64,7 @@ Quando si Abilita l'archiviazione in espansione automatica per un utente specifi
 
 - La quota di archiviazione per la cartella elementi ripristinabili nella cassetta postale principale dell'utente è aumentata di 10 GB (anche da 100 GB a 110 GB). La quota di avviso per gli elementi ripristinabili è aumentata anche di 10 GB (da 90 GB a 100 GB). Tali modifiche sono applicabili solo se la cassetta postale è in attesa o assegnata a un criterio di conservazione.
 
-Questo spazio aggiuntivo viene aggiunto per evitare eventuali problemi di archiviazione che possono verificarsi prima del provisioning dell'archivio con espansione automatica. Lo spazio di archiviazione aggiuntivo *non viene* aggiunto quando si attiva l'archiviazione con espansione automatica per l'intera organizzazione, come descritto nella sezione precedente.
+Questo spazio aggiuntivo viene aggiunto per evitare eventuali problemi di archiviazione che possono verificarsi prima del provisioning dell'archivio con espansione automatica. Lo spazio di archiviazione aggiuntivo  *non viene*  aggiunto quando si attiva l'archiviazione con espansione automatica per l'intera organizzazione, come descritto nella sezione precedente.
   
 1. [Connettersi a PowerShell per Exchange Online](https://go.microsoft.com/fwlink/p/?linkid=396554)
 
@@ -97,9 +97,9 @@ Get-Mailbox <user mailbox> | FL AutoExpandingArchiveEnabled
   
 Dopo aver abilitato l'archiviazione automatica, tenere presenti le considerazioni seguenti:
   
-- Se si esegue il comando **Set-OrganizationConfig-AutoExpandingArchive** per abilitare l'archiviazione con espansione automatica per la propria organizzazione, non è necessario eseguire **Enable-Mailbox-AutoExpandingArchive** su singole cassette postali. L'esecuzione del cmdlet **Set-OrganizationConfig** per abilitare l'archiviazione in espansione automatica per l'organizzazione non comporta la modifica della proprietà *AutoExpandingArchiveEnabled* nelle cassette postali degli utenti `True` .
+- Se si esegue il comando **Set-OrganizationConfig-AutoExpandingArchive** per abilitare l'archiviazione con espansione automatica per la propria organizzazione, non è necessario eseguire **Enable-Mailbox-AutoExpandingArchive** su singole cassette postali. L'esecuzione del cmdlet **Set-OrganizationConfig** per abilitare l'archiviazione in espansione automatica per l'organizzazione non comporta la modifica della proprietà  *AutoExpandingArchiveEnabled*  nelle cassette postali degli utenti `True` .
 
-- Analogamente, i valori per le proprietà delle cassette postali di *ArchiveQuota* e *ArchiveWarningQuota* non vengono modificati quando si Abilita l'archiviazione in espansione automatica. Infatti, quando si Abilita l'archiviazione automatica per una cassetta postale utente e la proprietà *AutoExpandingArchiveEnabled* è impostata su `True` , le proprietà *ArchiveQuota* e *ArchiveWarningQuota* vengono ignorate. Di seguito è riportato un esempio di queste proprietà della cassetta postale dopo che l'archiviazione in espansione automatica è abilitata per la cassetta postale di un utente. 
+- Analogamente, i valori per le proprietà delle cassette postali di  *ArchiveQuota*  e  *ArchiveWarningQuota*  non vengono modificati quando si Abilita l'archiviazione in espansione automatica. Infatti, quando si Abilita l'archiviazione automatica per una cassetta postale utente e la proprietà  *AutoExpandingArchiveEnabled*  è impostata su  `True` , le proprietà  *ArchiveQuota*  e  *ArchiveWarningQuota*  vengono ignorate. Di seguito è riportato un esempio di queste proprietà della cassetta postale dopo che l'archiviazione in espansione automatica è abilitata per la cassetta postale di un utente. 
 
     ![Le proprietà ArchiveQuota e ArchiveWarningQuota vengono ignorate dopo l'abilitazione dell'archiviazione con espansione automatica](../media/6a1c1b69-5c4c-4267-aac8-53577667f03e.png)
 
@@ -115,7 +115,7 @@ Dopo aver abilitato l'archiviazione automatica, tenere presenti le considerazion
 
 - Dopo aver attivato l'archiviazione automatica, non è possibile disattivarla.
 
-- L'archiviazione in espansione automatica è supportata per le cassette postali di archiviazione basate sul cloud in una distribuzione ibrida di Exchange per gli utenti che dispongono di una cassetta postale principale locale. Tuttavia, dopo che l'archiviazione in espansione automatica è abilitata per una cassetta postale di archiviazione basata sul cloud, non è possibile disattivare la cassetta postale di archiviazione nell'organizzazione di Exchange locale. L'archiviazione in espansione automatica non è supportata per le cassette postali locali in Exchange Server 2010.
+- L'archiviazione in espansione automatica è supportata per le cassette postali di archiviazione basate sul cloud in una distribuzione ibrida di Exchange per gli utenti che dispongono di una cassetta postale principale locale. Tuttavia, dopo che l'archiviazione in espansione automatica è abilitata per una cassetta postale di archiviazione basata sul cloud, non è possibile disattivare la cassetta postale di archiviazione nell'organizzazione di Exchange locale. L'archiviazione in espansione automatica non è supportata per le cassette postali locali in qualsiasi versione di Exchange Server.
 
 - Per un elenco di client di Outlook che gli utenti possono utilizzare per accedere agli elementi nell'area di archiviazione aggiuntiva nella propria cassetta postale di archiviazione, vedere la sezione "requisiti di Outlook per l'accesso agli elementi in un archivio con espansione automatica" in [Overview of Unlimited Archiving](unlimited-archiving.md#outlook-requirements-for-accessing-items-in-an-auto-expanded-archive).
 

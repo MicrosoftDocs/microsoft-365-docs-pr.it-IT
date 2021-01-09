@@ -15,12 +15,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: seo-marvel-apr2020
 description: Informazioni su come gli amministratori possono configurare e usare un connettore nativo per importare i dati di Twitter in Microsoft 365.
-ms.openlocfilehash: b4eadc58393df651505287f9238f43a1db0563a8
-ms.sourcegitcommit: 6fc6aaa2b7610e148f41018abd229e3c55b2f3d0
+ms.openlocfilehash: 5b35259985664ac47b9d1f6265c8ca4282a4cd31
+ms.sourcegitcommit: 7d4aa58ae9fc893825b6e648fa3f072c3ac59628
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49620262"
+ms.lasthandoff: 01/09/2021
+ms.locfileid: "49790064"
 ---
 # <a name="set-up-a-connector-to-archive-twitter-data-preview"></a>Configurare un connettore per archiviare i dati di Twitter (anteprima)
 
@@ -30,7 +30,7 @@ Dopo aver importato i dati di Twitter, è possibile applicare le funzionalità d
 
 Dopo aver importato i dati di Twitter, è possibile applicare le funzionalità di conformità di Microsoft 365 come la conservazione per controversia legale, la ricerca di contenuti, la In-Place archiviazione, il controllo, la conformità alla comunicazione e i criteri di ritenzione di Microsoft 365 ai dati archiviati nella cassetta postale. Ad esempio, è possibile cercare i dati di Twitter utilizzando la ricerca contenuto o associare la cassetta postale in cui vengono archiviati i dati con un custode in un caso di eDiscovery avanzato. L'utilizzo di un connettore per l'importazione e l'archiviazione dei dati di Twitter in Microsoft 365 può aiutare l'organizzazione a rimanere conforme ai criteri governativi e normativi.
 
-## <a name="prerequisites-for-setting-up-a-connector-for-twitter"></a>Prerequisiti per la configurazione di un connettore per Twitter
+## <a name="before-you-set-up-a-connector"></a>Prima di configurare un connettore
 
 Completare i prerequisiti seguenti prima di poter impostare e configurare un connettore nel centro conformità di Microsoft 365 per importare e archiviare i dati dall'account Twitter dell'organizzazione.
 
@@ -44,6 +44,8 @@ Completare i prerequisiti seguenti prima di poter impostare e configurare un con
 
     > [!NOTE]
     > La [sottoscrizione gratuita di Azure Active Directory](use-your-free-azure-ad-subscription-in-office-365.md) inclusa nell'abbonamento a Microsoft 365 non supporta i connettori nel centro sicurezza & conformità.
+
+- Il connettore Twitter è in grado di importare un totale di 200.000 elementi in un solo giorno. Se sono presenti più di 200.000 elementi di Twitter in un giorno, nessuno di questi elementi verrà importato in Microsoft 365.
 
 - Gli utenti che configurano il connettore Twitter nel centro conformità di Microsoft 365 (al passaggio 5) devono essere assegnati al ruolo import export delle cassette postali in Exchange Online. Per impostazione predefinita, questo ruolo non è assegnato ad alcun gruppo di ruoli in Exchange Online. È possibile aggiungere il ruolo import export delle cassette postali al gruppo di ruoli Gestione organizzazione in Exchange Online. In alternativa, è possibile creare un gruppo di ruoli, assegnare il ruolo di esportazione delle cassette postali e quindi aggiungere gli utenti corretti come membri. Per ulteriori informazioni, vedere la sezione creare gruppi di  [ruoli](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#create-role-groups) o [modificare gruppi di ruoli](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups) nell'articolo "gestire i gruppi di ruoli in Exchange Online".
 
@@ -63,7 +65,7 @@ Durante il completamento di questo passaggio (seguendo le istruzioni dettagliate
 
 ## <a name="step-2-deploy-connector-web-service-from-github-repository-to-your-azure-account"></a>Passaggio 2: distribuire il servizio Web del connettore dall'archivio GitHub all'account di Azure
 
-Il passaggio successivo consiste nel distribuire il codice sorgente per l'app del connettore Twitter che utilizzerà l'API di Twitter per connettersi al proprio account Twitter ed estrarre i dati in modo da poterli importare in Microsoft 365. Il connettore Twitter distribuito per l'organizzazione caricherà gli elementi dall'account Twitter dell'organizzazione nel percorso di archiviazione di Azure creato in questo passaggio. Dopo aver creato un connettore Twitter nel centro conformità di Microsoft 365 (al passaggio 5), il servizio di importazione di Microsoft 365 copierà i dati di Twitter dal percorso di archiviazione di Azure a una cassetta postale in Microsoft 365. Come illustrato in precedenza nella sezione [Prerequisites](#prerequisites-for-setting-up-a-connector-for-twitter) , è necessario disporre di una sottoscrizione di Azure valida per creare un account di archiviazione di Azure.
+Il passaggio successivo consiste nel distribuire il codice sorgente per l'app del connettore Twitter che utilizzerà l'API di Twitter per connettersi al proprio account Twitter ed estrarre i dati in modo da poterli importare in Microsoft 365. Il connettore Twitter distribuito per l'organizzazione caricherà gli elementi dall'account Twitter dell'organizzazione nel percorso di archiviazione di Azure creato in questo passaggio. Dopo aver creato un connettore Twitter nel centro conformità di Microsoft 365 (al passaggio 5), il servizio di importazione di Microsoft 365 copierà i dati di Twitter dal percorso di archiviazione di Azure a una cassetta postale in Microsoft 365. Come spiegato in precedenza nella [prima di configurare una](#before-you-set-up-a-connector) sezione del connettore, è necessario disporre di una sottoscrizione di Azure valida per creare un account di archiviazione di Azure.
 
 Per distribuire il codice sorgente per l'app del connettore Twitter:
 

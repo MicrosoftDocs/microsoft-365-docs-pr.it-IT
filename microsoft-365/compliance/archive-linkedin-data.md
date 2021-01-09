@@ -15,12 +15,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: seo-marvel-apr2020
 description: Informazioni su come gli amministratori possono eseguire l'installazione & utilizzare un connettore nativo per importare i dati da una pagina società di LinkedIn a Microsoft 365.
-ms.openlocfilehash: 42183be3663fbf4b55eadde2173b492feeae5373
-ms.sourcegitcommit: 6fc6aaa2b7610e148f41018abd229e3c55b2f3d0
+ms.openlocfilehash: 9f6cb2c6d5c47559f1fda13b6d03bfed3afe6fa2
+ms.sourcegitcommit: 7d4aa58ae9fc893825b6e648fa3f072c3ac59628
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49619982"
+ms.lasthandoff: 01/09/2021
+ms.locfileid: "49790180"
 ---
 # <a name="set-up-a-connector-to-archive-linkedin-data"></a>Configurare un connettore per archiviare i dati di LinkedIn
 
@@ -28,11 +28,13 @@ Utilizzare un connettore nel centro conformità di Microsoft 365 per importare e
 
 Dopo che i dati della pagina della società LinkedIn sono archiviati in una cassetta postale, è possibile applicare le funzionalità di conformità di Microsoft 365 come il blocco per controversia legale, la ricerca di contenuto, la In-Place archiviazione, il controllo e i criteri di conservazione di Microsoft 365 ai dati di LinkedIn. Ad esempio, è possibile cercare questi elementi utilizzando la ricerca contenuto o associare la cassetta postale di archiviazione a un custode in un caso di eDiscovery avanzato. La creazione di un connettore per l'importazione e l'archiviazione dei dati di LinkedIn in Microsoft 365 può aiutare l'organizzazione a rimanere conforme ai criteri governativi e normativi.
 
-## <a name="assign-roles-and-verify-credentials"></a>Assegnare ruoli e verificare le credenziali
+## <a name="before-you-set-up-a-connector"></a>Prima di configurare un connettore
 
 - All'utente che crea un connettore di pagina di LinkedIn Company deve essere assegnato il ruolo di importazione/esportazione delle cassette postali in Exchange Online. Questa operazione è necessaria per aggiungere connettori nella pagina **connettori dati** del centro conformità di Microsoft 365. Per impostazione predefinita, questo ruolo non è assegnato ad alcun gruppo di ruoli in Exchange Online. È possibile aggiungere il ruolo import export delle cassette postali al gruppo di ruoli Gestione organizzazione in Exchange Online. In alternativa, è possibile creare un gruppo di ruoli, assegnare il ruolo di esportazione delle cassette postali e quindi aggiungere gli utenti corretti come membri. Per ulteriori informazioni, vedere la sezione creare gruppi di [ruoli](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#create-role-groups) o [modificare gruppi di ruoli](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups) nell'articolo "gestire i gruppi di ruoli in Exchange Online".
 
 - È necessario disporre delle credenziali di accesso (indirizzo di posta elettronica o numero di telefono e password) di un account utente di LinkedIn che è un amministratore della pagina della società LinkedIn che si desidera archiviare. Queste credenziali vengono utilizzate per accedere a LinkedIn quando si configura il connettore.
+
+- Il connettore LinkedIn è in grado di importare un totale di 200.000 elementi in un solo giorno. Se sono presenti più di 200.000 elementi di LinkedIn in un giorno, nessuno di questi elementi verrà importato in Microsoft 365.
 
 ## <a name="create-a-linkedin-connector"></a>Creare un connettore LinkedIn
 

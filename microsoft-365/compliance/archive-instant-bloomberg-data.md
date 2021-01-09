@@ -15,12 +15,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: seo-marvel-apr2020
 description: Informazioni su come gli amministratori possono configurare e utilizzare un connettore di dati per importare e archiviare i dati dallo strumento Instant Bloomberg chat in Microsoft 365.
-ms.openlocfilehash: c2a56feb80f6772462fae47eb2a020e951f246e6
-ms.sourcegitcommit: 849b365bd3eaa9f3c3a9ef9f5973ef81af9156fa
+ms.openlocfilehash: b7cd35e0613d9c278e8f36efc194de9dc9b5a5f2
+ms.sourcegitcommit: 7d4aa58ae9fc893825b6e648fa3f072c3ac59628
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49688491"
+ms.lasthandoff: 01/09/2021
+ms.locfileid: "49790094"
 ---
 # <a name="set-up-a-connector-to-archive-instant-bloomberg-data"></a>Configurare un connettore per archiviare i dati di Instant Bloomberg
 
@@ -42,7 +42,7 @@ Nella panoramica seguente viene illustrato il processo di utilizzo di un connett
 
 4. Il connettore importa gli elementi del messaggio di chat nella cassetta postale di un utente specifico. Viene creata una nuova cartella denominata InstantBloomberg nella cassetta postale dell'utente specifico e gli elementi verranno importati. Il connettore esegue questa operazione utilizzando il valore della proprietà *CorporateEmailAddress* . Ogni messaggio di chat contiene questa proprietà, che viene popolata con l'indirizzo di posta elettronica di ogni partecipante del messaggio di chat. Oltre a eseguire il mapping automatico degli utenti utilizzando il valore della proprietà *CorporateEmailAddress* , è anche possibile definire un mapping personalizzato caricando un file di mapping CSV. Questo file di mapping deve contenere un UUID di Bloomberg e l'indirizzo della cassetta postale di Microsoft 365 corrispondente per ogni utente. Se si Abilita il mapping automatico degli utenti e si fornisce un mapping personalizzato, per ogni elemento di chat il connettore osserverà per prima cosa il file di mapping personalizzato. Se non trova un utente valido di Microsoft 365 che corrisponde all'UUID di Bloomberg di un utente, il connettore utilizzerà la proprietà *CorporateEmailAddress* dell'elemento chat. Se il connettore non trova un utente valido di Microsoft 365 nel file di mapping personalizzato o nella proprietà *CorporateEmailAddress* dell'elemento chat, l'elemento non verrà importato.
 
-## <a name="before-you-begin"></a>Informazioni preliminari
+## <a name="before-you-begin"></a>Prima di iniziare
 
 Alcuni dei passaggi di implementazione necessari per archiviare i dati di Bloomberg istantanei sono esterni a Microsoft 365 e devono essere completati prima di poter creare il connettore nel centro conformità.
 
@@ -66,7 +66,7 @@ Alcuni dei passaggi di implementazione necessari per archiviare i dati di Bloomb
 
   - Numero di porta per il sito Bloomberg SFTP
 
-- Il connettore Bloomberg istantaneo è in grado di importare un totale di 200.000 elementi in un solo giorno. Se nel sito SFTP sono presenti più di 200.000 elementi in un giorno, nessuno di questi itmes verrà importato in Microsoft 365.
+- Il connettore Bloomberg istantaneo è in grado di importare un totale di 200.000 elementi in un solo giorno. Se nel sito SFTP sono presenti più di 200.000 elementi, nessuno di questi elementi verrà importato in Microsoft 365.
 
 - L'utente che crea un connettore Bloomberg istantaneo nel passaggio 3 (e che Scarica le chiavi pubbliche e l'indirizzo IP nel passaggio 1) deve essere assegnato al ruolo di importazione/esportazione delle cassette postali in Exchange Online. Questa operazione è necessaria per aggiungere connettori nella pagina **connettori dati** del centro conformità di Microsoft 365. Per impostazione predefinita, questo ruolo non è assegnato ad alcun gruppo di ruoli in Exchange Online. È possibile aggiungere il ruolo import export delle cassette postali al gruppo di ruoli Gestione organizzazione in Exchange Online. In alternativa, è possibile creare un gruppo di ruoli, assegnare il ruolo di esportazione delle cassette postali e quindi aggiungere gli utenti corretti come membri. Per ulteriori informazioni, vedere la sezione creare gruppi di [ruoli](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#create-role-groups) o [modificare gruppi di ruoli](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups) nell'articolo "gestire i gruppi di ruoli in Exchange Online".
 

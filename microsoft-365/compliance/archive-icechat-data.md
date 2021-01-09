@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Gli amministratori possono configurare un connettore per importare e archiviare i dati dallo strumento ICE chat in Microsoft 365. In questo modo è possibile archiviare i dati provenienti da origini dati di terze parti in Microsoft 365 per poter utilizzare le funzionalità di conformità, come la conservazione legale, la ricerca di contenuto e i criteri di ritenzione per gestire i dati di terze parti dell'organizzazione.
-ms.openlocfilehash: 590f9b3b119ee261ec2ff6c4b5196bd9fea42697
-ms.sourcegitcommit: 6fc6aaa2b7610e148f41018abd229e3c55b2f3d0
+ms.openlocfilehash: 79a18017ce7aa3c646fa6c7230bde4b001ddc4c8
+ms.sourcegitcommit: 7d4aa58ae9fc893825b6e648fa3f072c3ac59628
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49620403"
+ms.lasthandoff: 01/09/2021
+ms.locfileid: "49790170"
 ---
 # <a name="set-up-a-connector-to-archive-ice-chat-data"></a>Configurare un connettore per archiviare i dati della chat di ghiaccio
 
@@ -41,13 +41,15 @@ Nella panoramica seguente viene illustrato il processo di utilizzo di un connett
 
    Oltre al mapping automatico degli utenti che utilizza i valori della proprietà *SenderEmail* e *RecipientEmail* (il che significa che il connettore importa un messaggio di chat nella cassetta postale del mittente e nelle cassette postali di ogni destinatario), è anche possibile definire il mapping degli utenti personalizzato caricando un file di mapping CSV. Questo file di mapping contiene la chat di *ImId* e l'indirizzo della cassetta postale di Microsoft 365 corrispondente per ogni utente dell'organizzazione. Se si Abilita il mapping automatico degli utenti e si fornisce un file di mapping personalizzato, per ogni elemento di chat il connettore osserverà prima il file di mapping personalizzato. Se non è in grado di trovare un account utente valido di Microsoft 365 che corrisponde a una chat di ImId di un utente, il connettore utilizzerà le proprietà *SenderEmail* e *RecipientEmail* dell'elemento chat per importare l'elemento nelle cassette postali dei partecipanti alla chat. Se il connettore non trova un utente valido di Microsoft 365 nel file di mapping personalizzato o nelle proprietà *SenderEmail* e *RecipientEmail* , l'elemento non verrà importato.
 
-## <a name="before-you-begin"></a>Informazioni preliminari
+## <a name="before-you-begin"></a>Prima di iniziare
 
 Alcuni dei passaggi di implementazione necessari per archiviare i dati della chat di ghiaccio sono esterni a Microsoft 365 e devono essere completati prima di poter creare il connettore nel centro conformità.
 
 - ICE chat addebita ai propri clienti una tariffa per la conformità esterna. L'organizzazione deve contattare il gruppo Sales di ICE chat per discutere e firmare il contratto ICE chat Data Services, che è possibile ottenere in [https://www.theice.com/publicdocs/agreements/ICE\_Data\_Services\_Agreement.pdf](https://www.theice.com/publicdocs/agreements/ICE\_Data\_Services\_Agreement.pdf) . Questo contratto è compreso tra ICE chat e l'organizzazione e non coinvolge Microsoft. Dopo aver configurato un sito di ICE chat SFTP nel passaggio 2, ICE chat fornisce le credenziali FTP direttamente all'organizzazione. Si desidera quindi fornire tali credenziali a Microsoft quando si configura il connettore nel passaggio 3.
 
 - È necessario configurare un sito di ICE chat SFTP prima di creare il connettore nel passaggio 3. Dopo aver lavorato con ICE chat per configurare il sito SFTP, i dati provenienti da ICE chat vengono caricati nel sito SFTP ogni giorno. Il connettore creato nel passaggio 3 si connette a questo sito SFTP e trasferisce i dati della chat alle cassette postali di Microsoft 365. SFTP crittografa anche i dati della chat di ghiaccio inviati alle cassette postali durante il processo di trasferimento.
+
+- Il connettore ICE chat è in grado di importare un totale di 200.000 elementi in un solo giorno. Se nel sito SFTP sono presenti più di 200.000 elementi, nessuno di questi elementi verrà importato in Microsoft 365.
 
 - L'amministratore che crea il connettore ICE chat nel passaggio 3 (e che Scarica le chiavi pubbliche e l'indirizzo IP nel passaggio 1) deve essere assegnato il ruolo di importazione/esportazione delle cassette postali in Exchange Online. Questo ruolo è necessario per aggiungere connettori nella pagina **dei connettori dati** nel centro conformità di Microsoft 365. Per impostazione predefinita, questo ruolo non è assegnato ad alcun gruppo di ruoli in Exchange Online. È possibile aggiungere il ruolo import export delle cassette postali al gruppo di ruoli Gestione organizzazione in Exchange Online. In alternativa, è possibile creare un gruppo di ruoli, assegnare il ruolo di esportazione delle cassette postali e quindi aggiungere gli utenti corretti come membri. Per ulteriori informazioni, vedere la sezione creare gruppi di [ruoli](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#create-role-groups) o [modificare gruppi di ruoli](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups) nell'articolo "gestire i gruppi di ruoli in Exchange Online".
 

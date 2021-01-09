@@ -14,13 +14,13 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 ms.custom: seo-marvel-apr2020
-description: Informazioni su come eseguire l'installazione & utilizzare un connettore nel centro conformità di Microsoft 365 per importare i dati di & archivio dalle pagine business di Facebook a Microsoft 365.
-ms.openlocfilehash: db1d11f461125e7ea1d749fd273f8bc8622a8d77
-ms.sourcegitcommit: 6fc6aaa2b7610e148f41018abd229e3c55b2f3d0
+description: Informazioni su come configurare & utilizzare un connettore nel centro conformità Microsoft 365 per importare i dati di & archivio dalle pagine business di Facebook a Microsoft 365.
+ms.openlocfilehash: df86897defa92788399f704c53c00ebb9e4f4269
+ms.sourcegitcommit: 7d4aa58ae9fc893825b6e648fa3f072c3ac59628
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49620433"
+ms.lasthandoff: 01/09/2021
+ms.locfileid: "49790150"
 ---
 # <a name="set-up-a-connector-to-archive-facebook-data-preview"></a>Configurare un connettore per archiviare i dati di Facebook (anteprima)
 
@@ -36,12 +36,14 @@ Completare i prerequisiti seguenti prima di poter impostare e configurare un con
 
 - L'organizzazione deve disporre di una sottoscrizione di Azure valida. Se non si dispone di una sottoscrizione di Azure esistente, è possibile iscriversi a una di queste opzioni:
 
-    - [Iscriversi per un abbonamento gratuito a un anno di Azure](https://azure.microsoft.com/free) 
+    - [Iscriversi per un abbonamento gratuito a un anno di Azure](https://azure.microsoft.com/free)
 
     - [Iscriversi a una sottoscrizione di Azure pay-as-you-go](https://azure.microsoft.com/pricing/purchase-options/pay-as-you-go/)
 
     > [!NOTE]
     > La [sottoscrizione gratuita di Azure Active Directory](use-your-free-azure-ad-subscription-in-office-365.md) inclusa nell'abbonamento a Microsoft 365 non supporta i connettori nel centro sicurezza & conformità.
+
+- Le pagine business del connettore per Facebook possono importare un totale di 200.000 elementi in un solo giorno. Se sono presenti più di 200.000 elementi aziendali di Facebook in un giorno, nessuno di questi elementi verrà importato in Microsoft 365.
 
 - All'utente che configura il connettore personalizzato nel centro conformità di Microsoft 365 (nel passaggio 5) deve essere assegnato il ruolo di esportazione delle cassette postali in Exchange Online. Per impostazione predefinita, questo ruolo non è assegnato ad alcun gruppo di ruoli in Exchange Online. È possibile aggiungere il ruolo import export delle cassette postali al gruppo di ruoli Gestione organizzazione in Exchange Online. In alternativa, è possibile creare un gruppo di ruoli, assegnare il ruolo di esportazione delle cassette postali e quindi aggiungere gli utenti corretti come membri. Per ulteriori informazioni, vedere la sezione creare gruppi di  [ruoli](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#create-role-groups) o [modificare gruppi di ruoli](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups) nell'articolo "gestire i gruppi di ruoli in Exchange Online".
 

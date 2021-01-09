@@ -15,12 +15,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: È ora possibile applicare i criteri DLP alle chat e ai canali di Microsoft teams. Leggere questo articolo per ulteriori informazioni su come funziona.
-ms.openlocfilehash: 3d55c447b2e808af2ac35f04b67a002304e3e9eb
-ms.sourcegitcommit: c0495e224f12c448bfc162ef2e4b33b82f064ac8
+ms.openlocfilehash: 25ba5850f496c188c2a38d6cc5b68960a85e5e5f
+ms.sourcegitcommit: 7d4aa58ae9fc893825b6e648fa3f072c3ac59628
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49709538"
+ms.lasthandoff: 01/09/2021
+ms.locfileid: "49790160"
 ---
 # <a name="data-loss-prevention-and-microsoft-teams"></a>Prevenzione della perdita di dati e Microsoft Teams
 
@@ -84,6 +84,7 @@ Per eseguire questa attività, è necessario essere assegnati a un ruolo che dis
 
 Consentire circa un'ora affinché le modifiche vengano elaborate tramite il Data Center e sincronizzate con gli account utente.
  <!-- why are these syncing to user accounts? -->
+
 ## <a name="add-microsoft-teams-as-a-location-to-existing-dlp-policies"></a>Aggiungere Microsoft teams come percorso ai criteri DLP esistenti
 
 Per eseguire questa attività, è necessario essere assegnati a un ruolo che disponga delle autorizzazioni per la modifica dei criteri DLP. Per ulteriori informazioni, vedere [Permissions](data-loss-prevention-policies.md#permissions).
@@ -96,12 +97,13 @@ Per eseguire questa attività, è necessario essere assegnati a un ruolo che dis
 
 4. Nella colonna **stato** , attiva il criterio per i **messaggi di chat e di canale dei team**.<br/>![DLP per le chat e i canali di Teams](../media/dlp-teams-addteamschatschannels.png)<br/>
 
-5. Mantenere le impostazioni predefinite di tutti gli account oppure specificare gli account da includere o escludere.
+5. Nella scheda **Scegli percorsi** mantenere l'impostazione predefinita di tutti gli account oppure selezionare **Consenti percorsi specifici** e specificare quali account, liste di distribuzione o gruppi di sicurezza per l'inclusione e l'esclusione. Quindi scegliere **Avanti**.
 
 6. Fare clic su **Salva**.
 
 Consentire circa un'ora affinché le modifiche vengano elaborate tramite il Data Center e sincronizzate con gli account utente.
 <!-- again, why user accounts? -->
+
 ## <a name="define-a-new-dlp-policy-for-microsoft-teams"></a>Definire un nuovo criterio DLP per Microsoft Teams
 
 Per eseguire questa attività, è necessario essere assegnati a un ruolo che disponga delle autorizzazioni per la modifica dei criteri DLP. Per ulteriori informazioni, vedere [Permissions](data-loss-prevention-policies.md#permissions).
@@ -114,11 +116,13 @@ Per eseguire questa attività, è necessario essere assegnati a un ruolo che dis
 
 4. Nella scheda **denominare i criteri** specificare un nome e una descrizione per il criterio e quindi fare clic su **Avanti**.
 
-5. Nella scheda **Scegli percorsi** mantenere l'impostazione predefinita di tutti i percorsi oppure selezionare **Consenti percorsi specifici** e quindi scegliere **Avanti**.<br/>Se sono stati scelti percorsi specifici, selezionarli per il criterio DLP e quindi scegliere **Avanti**.<br/>![Posizioni dei criteri DLP](../media/dlp-teams-selectlocationsnewpolicy.png)<br/>
-    > [!NOTE]
-    > Se si desidera verificare che i documenti che contengono informazioni riservate non siano condivisi in modo improprio nei team, verificare che i **siti di SharePoint** e gli **account di OneDrive** siano attivati, insieme ai **messaggi di chat e di canale dei team**.
+5. Nella scheda **Scegli percorsi** mantenere l'impostazione predefinita di tutti gli account oppure selezionare **Consenti percorsi specifici** e specificare quali account, liste di distribuzione o gruppi di sicurezza per l'inclusione e l'esclusione. Quindi scegliere **Avanti**.
 
-<br/>
+![Posizioni dei criteri DLP](../media/dlp-teams-selectlocationsnewpolicy.png)
+
+> [!NOTE]
+> Se si desidera verificare che i documenti che contengono informazioni riservate non siano condivisi in modo improprio nei team, verificare che i **siti di SharePoint** e gli **account di OneDrive** siano attivati, insieme ai **messaggi di chat e di canale dei team**.
+
 
 6. Nella scheda **impostazioni dei criteri** , in **Personalizza il tipo di contenuto che si desidera proteggere**, mantenere le impostazioni predefinite semplici oppure scegliere **Usa impostazioni avanzate** e quindi scegliere **Avanti**. Se si scelgono le impostazioni avanzate, è possibile creare o modificare regole per i criteri. Per ottenere assistenza, vedere [Simple Settings vs Advanced Settings](data-loss-prevention-policies.md#simple-settings-vs-advanced-settings).
 
