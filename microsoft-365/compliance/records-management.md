@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 description: Con la gestione dei record di Microsoft 365, è possibile applicare le pianificazioni di conservazione in un piano di archiviazione che gestisce la conservazione, la dichiarazione dei record e l’eliminazione.
-ms.openlocfilehash: 883fd65e3fba716018a1ed35cc457c2eb8f06c52
-ms.sourcegitcommit: 5756896ad87e28fac20f7981eaaeacfb0c098254
+ms.openlocfilehash: 0057be98c79ec07018d86f3130d7e03d68c74446
+ms.sourcegitcommit: 7d4aa58ae9fc893825b6e648fa3f072c3ac59628
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/23/2020
-ms.locfileid: "49730167"
+ms.lasthandoff: 01/09/2021
+ms.locfileid: "49790202"
 ---
 # <a name="learn-about-records-management-in-microsoft-365"></a>Informazioni sulla gestione dei record in Microsoft 365
 
@@ -103,11 +103,13 @@ Messaggio che un utente vede se tenta di eliminare un documento con etichetta in
 >[!IMPORTANT] 
 > La differenza più importante di un record normativo è che, dopo che è stato applicato al contenuto, nessuno, nemmeno un amministratore globale, può rimuovere l'etichetta. 
 >
-> Inoltre, le etichette di conservazione configurate per i record normativi hanno le seguenti restrizioni amministrative:
+> Le etichette di conservazione configurate per i record normativi hanno le seguenti restrizioni amministrative:
 > - Il periodo di conservazione non può essere abbreviato dopo il salvataggio dell'etichetta, ma solo esteso.
 > - Queste etichette non sono supportate dai criteri di etichettatura automatica, e devono essere applicate usando i [criteri delle etichette di conservazione](create-apply-retention-labels.md). 
+>
+> Inoltre, non è possibile applicare un'etichetta normativa a un documento estratto da SharePoint.
 > 
-> A causa di queste azioni irreversibili, assicurarsi che sia effettivamente necessario usare i record normativi prima di selezionare questa opzione per le etichette di conservazione. Per evitare la configurazione accidentale, questa opzione non è disponibile per impostazione predefinita, ma deve prima essere abilitata con PowerShell. Le istruzioni sono incluse in [Dichiarare i record usando le etichette di conservazione](declare-records.md).
+> A causa delle restrizioni e delle azioni irreversibili, verificare che sia effettivamente necessario usare i record normativi prima di selezionare questa opzione per le etichette di conservazione. Per evitare la configurazione accidentale, questa opzione non è disponibile per impostazione predefinita, ma deve prima essere abilitata con PowerShell. Le istruzioni sono incluse in [Dichiarare i record usando le etichette di conservazione](declare-records.md).
 
 ## <a name="configuration-guidance"></a>Linee guida per la configurazione
 

@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Informazioni sui criteri di conservazione e sulle etichette di conservazione, utili per conservare tutto che serve ed eliminare ciò che non serve.
-ms.openlocfilehash: 8d50e03827026100689d9b380570fa59c93e6d08
-ms.sourcegitcommit: 5756896ad87e28fac20f7981eaaeacfb0c098254
+ms.openlocfilehash: 307687a277ade03f3ba40852eff15378928465e6
+ms.sourcegitcommit: a76de3d1604d755b29053e7bf557c0008be6ad23
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/23/2020
-ms.locfileid: "49730177"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "49788004"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>Informazioni sui criteri e sulle etichette di conservazione
 
@@ -166,19 +166,15 @@ Per altre informazioni, vedere [Uso di un'etichetta di conservazione come condiz
 
 #### <a name="retention-labels-and-policies-that-apply-them"></a>Etichette di conservazione e criteri per applicarle
 
-Le etichette di conservazione sono blocchi predefiniti indipendenti e riutilizzabili. Lo scopo principale di un criterio di etichetta di conservazione è raggruppare un set di tali etichette e specificare le posizioni in cui si vuole che vengano visualizzate. Quindi, gli amministratori e gli utenti possono applicare le etichette al contenuto in tali posizioni.
-  
-![Diagramma di etichette, criteri per le etichette e posizioni](../media/eee42516-adf0-4664-b5ab-76727a9a3511.png)
-  
-Quando si pubblicano etichette di conservazione, vengono incluse in un criterio di etichetta di conservazione che le rende disponibili per la selezione da parte di amministratori e utenti:
+Quando si pubblicano etichette di conservazione, vengono incluse in un **criterio di etichetta di conservazione** che le rende disponibili per l’applicazione ai contenuti da parte di amministratori e utenti. Come illustrato nel diagramma seguente:
 
-- Una singola etichetta di conservazione può essere inclusa in molti criteri di etichetta di conservazione.
+1. Una singola etichetta di conservazione può essere inclusa in più criteri di etichetta di conservazione.
 
-- I criteri di etichetta di conservazione specificano le posizioni di pubblicazione delle etichette di conservazione.
+2. I criteri per le etichette di conservazione specificano le posizioni di pubblicazione delle etichette di conservazione. La stessa posizione può essere inclusa in più criteri di etichetta di conservazione.
 
-- Una singola posizione può anche essere inclusa in molti criteri di etichetta di conservazione.
+![Come aggiungere etichette di conservazione ai criteri di etichetta che specificano posizioni](../media/retention-labels-and-policies.png)
 
-Oltre ai criteri per le etichette di conservazione, è anche possibile creare uno o più criteri di applicazione automatica, ognuno con una singola etichetta di conservazione. Con questo criterio, quando vengono soddisfatte le condizioni specificate viene applicata automaticamente un'etichetta di conservazione.
+È anche possibile creare uno o più **criteri per le etichette di conservazione applicate automaticamente**, ognuno con una singola etichetta di conservazione. Con questo criterio, quando vengono soddisfatte le condizioni specificate viene applicata automaticamente un'etichetta di conservazione.
 
 #### <a name="retention-label-policies-and-locations"></a>Criteri per le etichette di conservazione e posizioni
 
@@ -190,7 +186,7 @@ Oltre ai criteri per le etichette di conservazione, è anche possibile creare un
 |Applicata automaticamente in base a tipi di informazioni sensibili o classificatori sottoponibili a training  <br/> |Exchange (solo a tutte le cassette postali), SharePoint, OneDrive  <br/> |
 |Applicata automaticamente in base a una query  <br/> |Exchange, SharePoint, OneDrive, gruppi di Microsoft 365  <br/> |
    
-In Exchange, le etichette di conservazione applicate automaticamente vengono applicate solo ai nuovi messaggi inviati (dati in transito), non a tutti gli elementi attualmente presenti nella cassetta postale (dati archiviati). Inoltre, le etichette di conservazione applicate automaticamente per i tipi di informazioni sensibili e i classificatori sottoponibili a training possono essere applicate solo a tutte le cassette postali, non a cassette postali specifiche.
+In Exchange, le etichette di conservazione applicate automaticamente vengono applicate solo ai nuovi messaggi inviati (dati in movimento), non a tutti gli elementi attualmente presenti nella cassetta postale (dati archiviati). Inoltre, le etichette di conservazione applicate automaticamente per i tipi di informazioni sensibili e i classificatori sottoponibili a training possono essere applicate solo a tutte le cassette postali, non a cassette postali specifiche.
   
 Le cartelle pubbliche di Exchange, Skype e i messaggi di Teams e Yammer non supportano le etichette di conservazione. Per conservare ed eliminare contenuto in queste posizioni, usare i criteri di conservazione.
 
@@ -287,7 +283,7 @@ Usare il seguente flusso per comprendere i risultati della conservazione e della
 > [!IMPORTANT]
 > Se si stanno utilizzando etichette di conservazione dei dati: Prima di usare questo flusso per determinare il risultato delle impostazioni di conservazione multiple sullo stesso elemento, assicurarsi di conoscere [quale etichetta di conservazione è applicata](#only-one-retention-label-at-a-time).
 
-![Diagramma dei principi di conservazione](../media/1693d6ec-b340-4805-9da3-89aa41bc6afb.png)
+![Diagramma dei principi di conservazione](../media/principles-of-retention.png)
   
 Spiegazione per i quattro diversi livelli:
   
