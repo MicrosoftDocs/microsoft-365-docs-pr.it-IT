@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: Ottenere la versione più recente dell'isolamento basato sull'hardware. Impedire attacchi correnti ed emergenti come exploit o collegamenti dannosi dall'interrompere la produttività dei dipendenti e la sicurezza dell'organizzazione.
-ms.openlocfilehash: a1d0fb857a80d5500036f6d9a95f930ec4df38a0
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.openlocfilehash: f5a5feb14db75c5baccecf0c6afafe0c42517224
+ms.sourcegitcommit: 9833f95ab6ab95aea20d68a277246dca2223f93d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49616789"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "49794509"
 ---
 # <a name="application-guard-for-office-public-preview-for-admins"></a>Applicazione di protezione per Office (anteprima pubblica) per gli amministratori
 
@@ -150,7 +150,7 @@ Se si verificano problemi durante l'avvio dell'applicazione di protezione per Of
 
 1. Aprire l' **app dell'hub dei commenti** e accedi.
 
-2. Se si riceve una finestra di dialogo di errore durante l'avvio dell'applicazione, selezionare **segnala a Microsoft** nella finestra di dialogo di errore per avviare un nuovo invio di commenti e suggerimenti. In caso contrario, passare a <https://aka.ms/wdagoffice-fb> per selezionare la categoria corretta per la protezione dell'applicazione, quindi selezionare **+ Aggiungi nuovo feedback** vicino all'angolo superiore destro.
+2. Se si riceve una finestra di dialogo di errore durante l'avvio dell'applicazione, selezionare **segnala a Microsoft** nella finestra di dialogo di errore per avviare un nuovo invio di commenti e suggerimenti. In caso contrario, passare a <https://aka.ms/mdagoffice-fb> per selezionare la categoria corretta per la protezione dell'applicazione, quindi selezionare **+ Aggiungi nuovo feedback** vicino all'angolo superiore destro.
 
 3. Inserire la casella di **Riepilogo dei commenti e suggerimenti** se non è già stata compilata per l'utente.
 

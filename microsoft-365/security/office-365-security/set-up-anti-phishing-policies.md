@@ -16,12 +16,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Gli amministratori possono ottenere informazioni sui criteri di anti-phishing disponibili in Exchange Online Protection (EOP) e Microsoft Defender per Office 365.
-ms.openlocfilehash: 7660516e60c77a7f31f711f78b6fd28d3ad179fd
-ms.sourcegitcommit: c0495e224f12c448bfc162ef2e4b33b82f064ac8
+ms.openlocfilehash: dadb41e1f0ff9e18681b13ad3d265f3f436c2052
+ms.sourcegitcommit: f40378013757d560d5566a11ad4e6f527c018cc4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49709705"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49796195"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Criteri di anti-phishing in Microsoft 365
 
@@ -122,7 +122,7 @@ L'impostazione del **mittente non autenticato** consente di abilitare o disabili
 
 - Un punto interrogativo (?) viene aggiunto alla foto del mittente se il messaggio non supera i controlli SPF o DKIM **e** il messaggio non supera l'autenticazione DMARC o [composita](email-validation-and-authentication.md#composite-authentication). La disattivazione dell'identificazione dei mittenti non autenticati impedisce l'aggiunta del punto interrogativo alla foto del mittente.
 
-- Il tag via (chris@contoso.com <u>tramite</u> Michelle@fabrikam.com) viene aggiunto se il dominio nell'indirizzo from (il mittente del messaggio visualizzato nei client di posta elettronica) è diverso dal dominio nella firma di DKIM o nell'indirizzo **di posta elettronica** . Per ulteriori informazioni su questi indirizzi, vedere [una panoramica degli standard dei messaggi di posta elettronica](how-office-365-validates-the-from-address.md#an-overview-of-email-message-standards).
+- Il tag via (chris@contoso.com <u>tramite</u> fabrikam.com) viene aggiunto se il dominio nell'indirizzo from (il mittente del messaggio visualizzato nei client di posta elettronica) è diverso dal dominio nella firma di DKIM o nell'indirizzo **di posta elettronica** . Per ulteriori informazioni su questi indirizzi, vedere [una panoramica degli standard dei messaggi di posta elettronica](how-office-365-validates-the-from-address.md#an-overview-of-email-message-standards).
 
   La disattivazione dell'identificazione dei mittenti non autenticati non impedisce l'aggiunta del tag via se il dominio nell'indirizzo from è diverso dal dominio nella firma di DKIM o nell'indirizzo di posta elettronica.
 

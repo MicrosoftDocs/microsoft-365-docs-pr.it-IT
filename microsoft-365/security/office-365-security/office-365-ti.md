@@ -16,16 +16,16 @@ search.appverid:
 ms.assetid: 32405da5-bee1-4a4b-82e5-8399df94c512
 ms.collection:
 - M365-security-compliance
-- m365initiative-m365-defender
+- m365initiative-defender-office365
 ms.custom:
 - seo-marvel-apr2020
 description: Informazioni sulle funzionalità di ricerca e risposta alle minacce in Microsoft Defender per Office 365 piano.
-ms.openlocfilehash: cbda50dacd6b892c976ce55632c8fc35813839b7
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.openlocfilehash: dc6a3dec096b6834d024cc4ff74a5b7600c33d45
+ms.sourcegitcommit: 9833f95ab6ab95aea20d68a277246dca2223f93d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49614775"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "49794233"
 ---
 # <a name="threat-investigation-and-response"></a>Analisi e risposta alle minacce
 

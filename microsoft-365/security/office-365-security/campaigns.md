@@ -16,14 +16,14 @@ search.appverid:
 ms.assetid: ''
 ms.collection:
 - M365-security-compliance
-- m365initiative-m365-defender
+- m365initiative-defender-office365
 description: Informazioni sulle visualizzazioni della campagna in Microsoft Defender per Office 365.
-ms.openlocfilehash: 8e5c49c9a45d1578da1eea33a560da611fb74155
-ms.sourcegitcommit: a76de3d1604d755b29053e7bf557c0008be6ad23
+ms.openlocfilehash: 20cb50a4b304e148df24e54fac3a05c484cfa4f0
+ms.sourcegitcommit: 9833f95ab6ab95aea20d68a277246dca2223f93d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "49788016"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "49794365"
 ---
 # <a name="campaign-views-in-microsoft-defender-for-office-365"></a>Visualizzazioni della campagna in Microsoft Defender per Office 365
 

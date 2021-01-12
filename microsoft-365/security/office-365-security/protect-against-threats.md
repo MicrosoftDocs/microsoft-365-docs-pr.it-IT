@@ -16,15 +16,15 @@ search.appverid:
 ms.assetid: b10023f6-f30f-45d3-b3ad-b71aa4aa0d58
 ms.collection:
 - M365-security-compliance
-- m365initiative-m365-defender
+- m365initiative-defender-office365
 description: Gli amministratori possono acquisire informazioni sulla protezione dalle minacce in Microsoft 365 e configurare come utilizzarla per l'organizzazione.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 3eec37f01bb39dda9f767ad32be96bbff43a2ee0
-ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
+ms.openlocfilehash: 2951d5725237d572d357ac3fc6cff0ac4df7e8f0
+ms.sourcegitcommit: 9833f95ab6ab95aea20d68a277246dca2223f93d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "49683248"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "49794437"
 ---
 # <a name="protect-against-threats"></a>Protezione dalle minacce
 

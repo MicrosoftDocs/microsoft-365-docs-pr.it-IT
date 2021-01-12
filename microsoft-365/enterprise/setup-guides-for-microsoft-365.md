@@ -21,12 +21,12 @@ search.appverid:
 - BCS160
 ms.assetid: 165f46e8-3533-4d76-be57-97f81ebd40f2
 description: Velocizzare la pianificazione e la configurazione di Microsoft 365 o Office 365 con le guide all'installazione.
-ms.openlocfilehash: 7024494de231e5adcce4bb91414b5f7bb3349f88
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 9bddf24e4133dfac32a0175b754709ba0c840760
+ms.sourcegitcommit: 9833f95ab6ab95aea20d68a277246dca2223f93d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48844093"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "49794425"
 ---
 # <a name="setup-guides-for-microsoft-365-and-office-365-services"></a>Guide alla configurazione per i servizi di Office 365 e Microsoft 365
 
@@ -67,7 +67,7 @@ La guida alla [preparazione dell'ambiente](https://aka.ms/prepareyourenvironment
 
 La procedura [guidata di configurazione della posta elettronica](https://aka.ms/office365setup) fornisce le istruzioni dettagliate necessarie per la configurazione di Exchange Online per l'organizzazione. Questo include la configurazione di nuovi account di posta elettronica, la migrazione della posta elettronica e la configurazione della protezione della posta elettronica Per creare un messaggio di posta elettronica con esito positivo, utilizzare questo consulente e ricevere il metodo di migrazione consigliato in base al sistema di posta corrente dell'organizzazione, al numero di cassette postali di cui è stata eseguita la migrazione e alla modalità di gestione degli utenti e del relativo accesso.
 
-### <a name="gmail-contacts-and-calendar-advisor"></a>Contatti di Gmail e Advisor del calendario
+### <a name="migrate-gmail-contacts-and-calendar-items"></a>Migrare i contatti di Gmail e gli elementi del calendario
 
 Quando si esegue la migrazione della cassetta postale di un utente di Gmail a Microsoft 365, viene eseguita la migrazione dei messaggi di posta elettronica, ma non sono presenti contatti e elementi del calendario. I [contatti di Gmail e il consulente del calendario](https://aka.ms/gmailcontactscalendar) forniscono i passaggi per importare i contatti di Google e gli elementi del calendario Google in Microsoft 365 utilizzando i metodi di importazione ed esportazione con Outlook.com, il client di Outlook o PowerShell.
 
@@ -90,12 +90,17 @@ Windows Virtual Desktop è un servizio di virtualizzazione completo di desktop e
 
 La [Guida all'installazione di Windows Virtual Desktop](https://aka.ms/wvdsetupguide) fornisce agli amministratori le risorse di pianificazione e i prerequisiti per la distribuzione, le indicazioni di installazione e le risorse aggiuntive. 
 
-### <a name="microsoft-edge-deployment-advisor"></a>Consulente per la distribuzione di Microsoft Edge
+### <a name="microsoft-edge-setup-guide"></a>Guida all'installazione di Microsoft Edge
 
 Microsoft Edge è stato ricostruito da zero per garantire la compatibilità e le prestazioni di livello mondiale, la sicurezza e la privacy che si meritano e nuove funzionalità progettate per offrire il meglio del Web.
 
-[Microsoft Edge Deployment Advisor](https://aka.ms/edgeadvisor) consentirà di configurare l'individuazione dei siti dell'organizzazione per vedere quali luoghi a cui si accede nell'organizzazione potrebbe essere necessario utilizzare la modalità IE, esaminare e configurare importanti caratteristiche di sicurezza, configurare i criteri di privacy e altri criteri per soddisfare i requisiti dell'organizzazione e gestire l'accesso Web sui propri dispositivi. È possibile scaricare Microsoft Edge in singoli dispositivi oppure verrà illustrato come eseguire la distribuzione a più utenti nell'organizzazione organizzativa con Configuration Manager o Microsoft Intune.
-Windows Virtual Desktop è un servizio di virtualizzazione completo di desktop e app in esecuzione nel cloud. È l'unica infrastruttura desktop virtuale (VDI) che offre una gestione semplificata, Windows 10 a più sessioni, ottimizzazioni per le app Microsoft 365 e il supporto per ambienti RDS (Remote Desktop Services). Distribuire e scalare i desktop e le app di Windows in Azure in pochi minuti e ottenere funzionalità di sicurezza e conformità incorporate. 
+La [Guida all'installazione di Microsoft Edge](https://aka.ms/edgeadvisor) consentirà di configurare l'individuazione dei siti dell'organizzazione per vedere quali luoghi accessibili nell'organizzazione potrebbe essere necessario utilizzare la modalità IE, esaminare e configurare importanti caratteristiche di sicurezza, configurare i criteri di privacy e altri criteri per soddisfare i requisiti dell'organizzazione e gestire l'accesso Web sui propri dispositivi. È possibile scaricare Microsoft Edge in singoli dispositivi oppure verrà illustrato come eseguire la distribuzione a più utenti nell'organizzazione organizzativa con Configuration Manager o Microsoft Intune. 
+
+### <a name="microsoft-search-setup-guide"></a>Guida all'installazione di Microsoft Search
+
+Microsoft Search aiuta l'organizzazione a individuare gli elementi necessari per completare le attività. Sia che si tratti di ricerca di persone, file, organigrammi, siti o risposte a domande comuni, l'organizzazione può utilizzare Microsoft Search per tutta la giornata lavorativa per ottenere risposte.
+
+La [Guida all'installazione di Microsoft Search](https://aka.ms/MicrosoftSearchSetup) consente di configurare Microsoft Search se si desidera pilotarlo a un gruppo di utenti o eseguirne il rollforward a tutti i clienti nell'organizzazione. È possibile assegnare gli amministratori di ricerca e gli editor di ricerca e quindi personalizzare l'esperienza di ricerca per gli utenti con risposte e opzioni aggiuntive, ad esempio l'aggiunta dell'estensione Bing a Chrome o l'impostazione di Bing come motore di ricerca predefinito.
 
 ### <a name="intune-configuration-manager-co-management-setup-guide"></a>Guida alla configurazione di gestione configurazione di Intune
 
@@ -135,6 +140,12 @@ La [distribuzione](https://aka.ms/adfsguidance) di ADFS fornisce istruzioni dett
 
 ## <a name="guides-for-security-and-compliance"></a>Guide per la sicurezza e la conformità
 
+### <a name="microsoft-intune-setup-guide"></a>Guida all'installazione di Microsoft Intune 
+
+Configurare Microsoft Intune per la gestione dei dispositivi nell'organizzazione. Per il controllo completo dei dispositivi aziendali, è possibile utilizzare le caratteristiche di gestione dei dispositivi mobili (MDM) di Intune. Per gestire i dati dell'organizzazione su dispositivi condivisi e personali, è possibile utilizzare le funzionalità di gestione delle applicazioni mobili di Intune. 
+
+Con la [Guida all'installazione di Microsoft Intune](https://aka.ms/intunesetupguide), è possibile configurare i criteri di conformità di dispositivi e app, assegnare criteri di protezione delle app e monitorare lo stato del dispositivo e della protezione delle app. 
+
 ### <a name="microsoft-defender-for-endpoint-advisor"></a>Microsoft Defender per endpoint Advisor
 
 [Microsoft Defender per endpoint Advisor](https://aka.ms/mdatpsetup) fornisce istruzioni che consentiranno alla rete aziendale di prevenire, rilevare, indagare e rispondere alle minacce avanzate. Effettuare una valutazione informata della vulnerabilità dell'organizzazione e decidere quali pacchetti di distribuzione e metodi di configurazione sono i migliori. 
@@ -154,7 +165,7 @@ Utilizzare la [Guida all'installazione di Exchange Online Protection](https://ak
 
 ### <a name="microsoft-information-protection-setup-guide"></a>Guida all'installazione di Microsoft Information Protection
 
-Ottenere una panoramica delle funzionalità che è possibile applicare alla propria strategia di protezione delle informazioni in modo da poter essere certi che le informazioni riservate siano protette. Utilizzare un approccio di ciclo di vita in quattro fasi in cui individuare, classificare, proteggere e monitorare le informazioni riservate. La [Guida all'installazione di Microsoft Information Protection](https://aka.ms/mipsetupguide) fornisce indicazioni per il completamento di ciascuna di queste fasi.
+Ottenere una panoramica delle funzionalità che è possibile applicare alla propria strategia di protezione delle informazioni in modo da poter essere certi che le informazioni riservate siano protette. È possibile usare un approccio basato su un ciclo di vita in quattro fasi per individuare, classificare, proteggere e monitorare le informazioni sensibili. La [Guida all'installazione di Microsoft Information Protection](https://aka.ms/mipsetupguide) fornisce indicazioni per il completamento di ciascuna di queste fasi.
 
 ### <a name="microsoft-information-governance-setup-guide"></a>Guida all'installazione di Microsoft Information Governance
 
@@ -166,13 +177,13 @@ La [Guida all'installazione di Microsoft Information Governance](https://aka.ms/
 
 [Microsoft 365 Apps Deployment Advisor](https://aka.ms/OPPquickstartguide) consente di ottenere i dispositivi degli utenti che eseguono la versione più recente di prodotti Office come Word, Excel, PowerPoint e OneNote. Vengono fornite indicazioni sui diversi metodi di distribuzione che includono semplici opzioni di installazione automatica per le distribuzioni aziendali con gli strumenti di gestione. Le istruzioni consentono di valutare l'ambiente, di individuare i requisiti specifici per la distribuzione e di implementare gli strumenti di supporto necessari per garantire una corretta installazione. 
 
-### <a name="office-mobile-apps-setup-assistant"></a>Assistente per l'installazione delle app di Office Mobile
+### <a name="mobile-apps-setup-guide"></a>Guida alla configurazione delle app per dispositivi mobili
 
-[Office Mobile Apps Setup Assistant](https://aka.ms/officeappguidance) fornisce le istruzioni per il download e l'installazione delle app di Office nei dispositivi mobili Windows, iOS e Android. In questa guida vengono fornite informazioni dettagliate per il download e l'installazione delle app Microsoft 365 e Office 365 sul telefono e sui dispositivi tablet.
+La [Guida all'installazione delle app](https://aka.ms/officeappguidance) per dispositivi mobili fornisce le istruzioni per il download e l'installazione delle app di Office nei dispositivi mobili Windows, iOS e Android. In questa guida vengono fornite informazioni dettagliate per il download e l'installazione delle app Microsoft 365 e Office 365 sul telefono e sui dispositivi tablet.
 
 ### <a name="microsoft-teams-setup-guide"></a>Guida all'installazione di Microsoft Teams
 
-La [Guida all'installazione di Microsoft teams](https://aka.ms/teamsguidance) fornisce alla propria organizzazione una guida per configurare le aree di lavoro del team che ospitano conversazioni in tempo reale tramite messaggi, chiamate e riunioni audio o video per le comunicazioni di team e private. Verranno ricevute le istruzioni per determinare i requisiti di rete dell'organizzazione utilizzando lo strumento Network Planner e il team Advisor all'interno dell'interfaccia di amministrazione dei team. Dopo aver completato la distribuzione, la guida include risorse utili per iniziare a usare i team.
+La [Guida all'installazione di Microsoft teams](https://aka.ms/teamsguidance) fornisce alla propria organizzazione una guida per configurare le aree di lavoro del team che ospitano conversazioni in tempo reale tramite messaggi, chiamate e riunioni audio o video per le comunicazioni di team e private. Verranno ricevute le istruzioni per determinare i requisiti di rete dell'organizzazione utilizzando lo strumento Network Planner e il team Advisor all'interno dell'interfaccia di amministrazione dei team. Una volta completata l'implementazione, la guida includerà risorse utili per iniziare a usare Teams.
 
 ### <a name="sharepoint-setup-guide"></a>Guida alla configurazione di SharePoint
 

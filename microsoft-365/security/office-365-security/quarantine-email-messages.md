@@ -17,16 +17,16 @@ search.appverid:
 ms.assetid: 4c234874-015e-4768-8495-98fcccfc639b
 ms.collection:
 - M365-security-compliance
-- m365initiative-m365-defender
+- m365initiative-defender-office365
 ms.custom:
 - seo-marvel-apr2020
 description: Gli amministratori possono ottenere informazioni sulla quarantena in Exchange Online Protection (EOP) che contiene messaggi potenzialmente pericolosi o indesiderati.
-ms.openlocfilehash: f4e3f668ac94abfea6dc19f6f256141b2a7b9915
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.openlocfilehash: 8a978ece029de06bcb7b434de730b0baea33a5e1
+ms.sourcegitcommit: 9833f95ab6ab95aea20d68a277246dca2223f93d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49616033"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "49794329"
 ---
 # <a name="quarantined-email-messages-in-eop"></a>Messaggi di posta elettronica in quarantena in EOP
 

@@ -1,9 +1,9 @@
 ### YamlMime:Hub
-title: Formazione di Microsoft 365 Small Business
+title: Formazione su Microsoft 365 Small Business
 summary: Informazioni su come configurare e gestire Microsoft 365 per la propria azienda.
 brand: m365
 metadata:
-  title: Formazione di Microsoft 365 Small Business
+  title: Formazione su Microsoft 365 Small Business
   description: Configurare e gestire Microsoft 365 nell'interfaccia di amministrazione di Microsoft 365.
   ms.service: O365-administration
   ms.prod: microsoft-365-business
@@ -13,15 +13,15 @@ metadata:
   ms.date: 12/16/2020
   localization_priority: Priority
   ms.custom: AdminSurgePortfolio
-  ms.openlocfilehash: d66e3a5c56fbc6676a21ec9729d44fac64e3abe3
-  ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
+  ms.openlocfilehash: 2a874179c9a3da778ff0757d9a883af44a462141
+  ms.sourcegitcommit: 9833f95ab6ab95aea20d68a277246dca2223f93d
   ms.translationtype: MT
   ms.contentlocale: it-IT
-  ms.lasthandoff: 12/17/2020
-  ms.locfileid: "49701961"
+  ms.lasthandoff: 01/11/2021
+  ms.locfileid: "49794161"
 productDirectory:
   items:
-  - title: Informazioni di base
+  - title: Per iniziare
     imageSrc: https://docs.microsoft.com/office/media/icons/get-started-blue.svg
     summary: Pianificare lo spostamento in Microsoft 365 for business.
     url: what-is-microsoft-365.md
@@ -71,14 +71,14 @@ productDirectory:
     url: find-help-answers.md
 additionalContent:
   sections:
-  - title: Ulteriori informazioni
+  - title: Altre informazioni
     items:
     - title: Informazioni su Office
       summary: Informazioni su come usare Word, Excel, PowerPoint e altre app di Office.
       url: https://support.microsoft.com/training
     - title: Passare da Google Workspace
       summary: Informazioni su come passare a Microsoft 365 for business.
-      url: https://support.microsoft.com/office/cff9f9fb-956e-4cb9-8b64-d7ebc1911123
+      url: moveto-microsoft-365/move-from-google-workspace-overview.md
     - title: Trovare altre risorse di amministratore
       summary: Accedere al sito della Guida dell'interfaccia di amministrazione di Microsoft 365.
       url: ../admin/index.yml

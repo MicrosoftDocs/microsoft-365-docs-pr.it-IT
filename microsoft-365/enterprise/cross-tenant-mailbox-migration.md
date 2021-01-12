@@ -14,12 +14,12 @@ ms.custom:
 - it-pro
 ms.collection:
 - M365-subscription-management
-ms.openlocfilehash: f151f02af695eb54eaf8f4f97936f4985fc7f8c0
-ms.sourcegitcommit: d6b1da2e12d55f69e4353289e90f5ae2f60066d0
+ms.openlocfilehash: aecb1230ac9a9b2868c519c9b8920e312ff5a282
+ms.sourcegitcommit: 9833f95ab6ab95aea20d68a277246dca2223f93d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "49719203"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "49794045"
 ---
 # <a name="cross-tenant-mailbox-migration-preview"></a>Migrazione delle cassette postali tra tenant (anteprima)
 
@@ -359,7 +359,7 @@ Gli utenti che eseguono la migrazione devono essere presenti nel tenant di desti
     Individuare gli oggetti precedentemente presenti nelle cassette postali utilizzando questo comando.
 
     ```powershell
-    Get-User <identity> | select Name, *recipient* | ft -a**.
+    Get-User <identity> | select Name, *recipient* | ft -AutoSize
     ```
 
     Ecco un esempio. 

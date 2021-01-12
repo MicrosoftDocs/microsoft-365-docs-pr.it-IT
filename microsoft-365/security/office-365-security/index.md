@@ -13,14 +13,14 @@ search.appverid:
 - MOE150
 ms.collection:
 - M365-security-compliance
-- m365initiative-m365-defender
+- m365initiative-defender-office365
 description: Sicurezza in Office 365, da EOP a Defender per Office 365 piani 1 e 2, configurazioni di sicurezza standard e rigorose e altro ancora. Informazioni su ciò che si ha e su come proteggere le proprietà.
-ms.openlocfilehash: 84d7dcfc68ce78bfde92f3d7096cd4104355ce94
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.openlocfilehash: a24f71286a524c4057fd1354804b067497479493
+ms.sourcegitcommit: 9833f95ab6ab95aea20d68a277246dca2223f93d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49616249"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "49794521"
 ---
 # <a name="office-365-security-overview"></a>Panoramica della sicurezza di Office 365
 
@@ -129,11 +129,11 @@ Questo rapido riferimento consentirà di comprendere quali funzionalità vengono
 
 - Microsoft Defender per Office 365 piano 2 è incluso in Office 365 E5, Office 365 a5 e Microsoft 365 E5.
 
-- Microsoft Defender per Office 365 piano 1 è incluso in Microsoft 365 Business Premium.
+- Microsoft Defender per Office 365 Piano 1 è incluso in Microsoft 365 Business Premium.
 
 - Microsoft Defender per Office 365 piano 1 e Defender per Office 365 piano 2 sono disponibili come componente aggiuntivo per alcuni abbonamenti. Per ulteriori informazioni, vedere la disponibilità di un'altra funzionalità di collegamento [tra Microsoft Defender per Office 365 piani](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans).
 
-- La funzionalità [documenti attendibili](safe-docs.md) è disponibile solo per gli utenti che dispongono delle licenze di sicurezza Microsoft 365 E5 o Microsoft 365 E5 (non incluse nei piani Microsoft Defender per Office 365).
+- La caratteristica [Documenti sicuri](safe-docs.md) è disponibile solo per gli utenti che dispongono di licenze Microsoft 365 E5 o Microsoft 365 E5 Security (non incluse nei piani di Microsoft Defender per Office 365).
 
 - Se l'abbonamento corrente non include Microsoft Defender per Office 365 e lo si desidera, [contattare Sales per avviare una versione di valutazione](https://go.microsoft.com/fwlink/p/?LinkId=518644)e scoprire in che modo Microsoft Defender per Office 365 può funzionare nell'organizzazione.
 

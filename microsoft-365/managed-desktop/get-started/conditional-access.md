@@ -9,33 +9,47 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: e78f0123c909c90ff90be913e8775cc1e5b30313
-ms.sourcegitcommit: 3bf4f1c0d3a8515cca651b2a520217195f89457f
+ms.openlocfilehash: 88a832f6c4e17756bfb25ef5cb7c4c5ecedaf2c0
+ms.sourcegitcommit: 9833f95ab6ab95aea20d68a277246dca2223f93d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "49777100"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "49794389"
 ---
 # <a name="adjust-settings-after-enrollment"></a>Modificare le impostazioni dopo la registrazione
 
-Dopo aver completato la registrazione in Microsoft Managed Desktop, è necessario modificare le impostazioni di Microsoft Intune e Azure Active Directory (Azure AD) specificate in questo articolo per consentire la gestione e mantenere la sicurezza. Impostare le impostazioni seguenti per escludere gruppi di Azure AD specifici che contengono utenti e dispositivi desktop Microsoft gestiti. Per i passaggi da escludere i gruppi, vedere [Conditional Access: Users and groups](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-users-groups#exclude-users).
+Dopo aver completato la registrazione in Microsoft Managed Desktop, potrebbe essere necessario modificare alcune impostazioni di gestione. Per controllare e regolare se necessario, eseguire la procedura seguente:
+
+1. Esaminare le impostazioni di Microsoft Intune e Azure Active Directory descritte nella sezione successiva.
+2. Se gli elementi sono validi per l'ambiente in uso, apportare le modifiche descritte.
+3. Se si desidera verificare che tutte le impostazioni siano corrette, è possibile rieseguire lo [strumento di valutazione della conformità](https://aka.ms/mmdart) per verificare che non vi siano conflitti con Microsoft Managed Desktop.
 
 > [!NOTE]
-> Se si apportano modifiche dopo la registrazione ai criteri in Microsoft Intune, Azure Active Directory o Microsoft 365, è possibile che Microsoft Managed Desktop smetta di funzionare correttamente. Per evitare problemi con le operazioni di Microsoft Managed Desktop, controllare le impostazioni specifiche descritte in [correggere i problemi trovati dallo strumento di valutazione della conformità](../get-ready/readiness-assessment-fix.md) prima di modificare i criteri.
+> Quando le operazioni continuano nei mesi seguenti, se si apportano modifiche dopo la registrazione ai criteri in Microsoft Intune, Azure Active Directory o Microsoft 365 che influiscono su Microsoft Managed Desktop, è possibile che Microsoft Managed Desktop possa smettere di funzionare correttamente. Per evitare problemi con il servizio, verificare le impostazioni specifiche descritte in [risolvere i problemi rilevati dallo strumento di valutazione della conformità](../get-ready/readiness-assessment-fix.md) prima di modificare i criteri elencati. È inoltre possibile rieseguire lo strumento di valutazione della conformità in qualsiasi momento.
 
 
 ## <a name="microsoft-intune-settings"></a>Impostazioni di Microsoft Intune
 
-- Profilo di distribuzione Autopilot: per i profili Autopilot creati dagli amministratori dell'azienda, escludere i **dispositivi di lavoro moderni-tutti** i gruppi di Azure ad. Per i passaggi, vedere [registrazione dei dispositivi Windows in Intune tramite Windows Autopilot](https://docs.microsoft.com/mem/autopilot/enrollment-autopilot). Non escludere i **dispositivi di lavoro moderni: tutti** i gruppi di Azure ad provenienti da qualsiasi criterio di distribuzione creato da Microsoft Managed Desktop con il nome "ambiente di lavoro moderno" (ad esempio, **profilo Autopilot del posto di lavoro** moderno). 
-- Criteri di accesso condizionale: per i criteri di accesso condizionale creati dagli amministratori dell'azienda, escludere il gruppo di Azure AD degli **account di servizio sul posto di lavoro moderno** . Per i passaggi, vedere [Conditional Access: Users and groups](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-users-groups). Non escludere i **dispositivi di lavoro moderni-tutti** i gruppi di Azure ad da tutti i criteri creati da Microsoft Managed Desktop con il nome "ambiente di lavoro moderno" (ad esempio, la **workstation sicura sul posto di lavoro moderna**).
-- Autenticazione a più fattori: verificare che tutti i criteri di accesso condizionale creati dagli amministratori dell'azienda che richiedono l'autenticazione a più fattori escludano il gruppo di Azure AD degli **account di servizio sul posto di lavoro moderno** . Per ulteriori informazioni, vedere [criteri di accesso condizionale](../get-ready/readiness-assessment-fix.md#conditional-access-policies) e [accesso condizionale: require Mae per tutti gli utenti](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa).
-- Baseline di sicurezza: per i criteri di base di sicurezza creati dagli amministratori della società, escludere i **dispositivi di lavoro moderni-tutti**  i gruppi di Azure ad. Per i passaggi, vedere [utilizzare le linee di base di sicurezza per configurare i dispositivi Windows 10 in Intune](https://docs.microsoft.com/mem/intune/protect/security-baselines). Non escludere i **dispositivi di lavoro moderni: tutti** i gruppi di Azure ad provenienti da qualsiasi criterio creato da Microsoft Managed Desktop con "ambiente di lavoro moderno" nel nome (ad esempio, **linea di sicurezza sul posto di lavoro moderna**).
-- Windows 10 Update Ring: per i criteri ring di aggiornamento di Windows 10 creati dagli amministratori nella propria azienda, escludere i **dispositivi di lavoro moderni-tutti i**  gruppi di Azure ad. Per i passaggi, vedere [gestire gli aggiornamenti software di Windows 10 in Intune](https://docs.microsoft.com/mem/intune/protect/windows-update-for-business-configure). Non escludere i **dispositivi di lavoro moderni-tutti** i gruppi di Azure ad da tutti i criteri creati da Microsoft Managed Desktop con "ambiente di lavoro moderno" nel nome (ad esempio, i criteri di **aggiornamento dei luoghi di lavoro moderni** ).
+- Profilo di distribuzione Autopilot: se si utilizzano i criteri Autopilot, aggiornare ognuno per escludere i **dispositivi di lavoro moderni-tutti i** gruppi di Azure ad. Per aggiornarli, nella sezione **gruppi esclusi** in **assegnazioni** Selezionare i **dispositivi di lavoro moderni: tutti** i gruppi di Azure ad creati durante la registrazione di Microsoft Managed Desktop. Microsoft Managed Desktop avrà creato anche un profilo Autopilot, che avrà il nome "ambiente di lavoro moderno" (il **profilo Autopilot del posto di lavoro moderno**). Quando si aggiornano i profili Autopilot personali, assicurarsi di *non* escludere i **dispositivi di lavoro moderni: tutti** i gruppi di Azure ad del **profilo Autopilot del posto di lavoro moderno** creato da Microsoft Managed Desktop.
+
+- Criteri di accesso condizionale: per i criteri di accesso condizionale creati, escludere il gruppo di Azure AD degli **account di servizio sul posto di lavoro moderno** . Per i passaggi, vedere [Conditional Access: Users and groups](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-users-groups). Microsoft Managed Desktop inoltre avrà creato alcuni criteri di accesso condizionale, ognuno dei quali avrà "luogo di lavoro moderno" nel nome (ad esempio, la **workstation sicura sul posto di lavoro moderna**). Quando si aggiornano i criteri di accesso condizionale, assicurarsi di *non* escludere i **dispositivi di lavoro moderni: tutti** i gruppi di Azure ad da tutti i criteri creati da Microsoft Managed Desktop.
+
+- Autenticazione a più fattori: verificare che tutti i criteri di accesso condizionale che richiedono l'autenticazione a più fattori escludano il gruppo di Azure AD degli **account di servizio sul posto di lavoro moderno** . Per ulteriori informazioni, vedere [criteri di accesso condizionale](../get-ready/readiness-assessment-fix.md#conditional-access-policies) e [accesso condizionale: require Mae per tutti gli utenti](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa).
+
+- Windows 10 Update Ring: per tutti i criteri dell'anello di aggiornamento di Windows 10 creati, escludere i **dispositivi di lavoro moderni-tutti i** gruppi di Azure ad per ogni criterio. Per i passaggi, vedere [creare e assegnare gli anelli di aggiornamento](https://docs.microsoft.com/mem/intune/protect/windows-10-update-rings#create-and-assign-update-rings). Microsoft Managed Desktop avrà inoltre creato alcuni criteri per l'aggiornamento delle suonerie, ognuno dei quali avrà "luogo di lavoro moderno" nel nome (ad esempio, i criteri di aggiornamento dei luoghi di lavoro moderni [ **generali**], i criteri di aggiornamento sul posto di lavoro moderni [ **Fast]**, i criteri di aggiornamento sul posto di lavoro moderni [ **First]** e i **criteri di aggiornamento sul posto di lavoro** Quando si aggiornano i criteri personali, assicurarsi di *non* escludere i **dispositivi di lavoro moderni-tutti** i gruppi di Azure ad da quelli creati da desktop Microsoft.
 
 
 ## <a name="azure-active-directory-settings"></a>Impostazioni di Azure Active Directory
 
-Reimpostazione della password in modalità self-service: scegliere l'impostazione **selezionata** , quindi selezionare **dispositivi di lavoro moderni-tutti i gruppi di** Azure ad. Per ulteriori informazioni, vedere [esercitazione: consentire agli utenti di sbloccare l'account o reimpostare le password tramite la reimpostazione della password self-service di Azure Active Directory](https://docs.microsoft.com/azure/active-directory/authentication/tutorial-enable-sspr).
+Reimpostazione della password self-service: se si utilizza la reimpostazione della password in modalità self-service per tutti gli utenti, modificare l'assegnazione per escludere gli account di servizio Microsoft Managed Desktop. Per modificare questa assegnazione, creare un gruppo dinamico di Azure AD per tutti gli utenti, *ad eccezione* degli account di servizio di Microsoft Managed Desktop, e quindi utilizzare tale gruppo per l'assegnazione invece di "tutti gli utenti".
+
+Per facilitare l'individuazione e l'esclusione degli account di servizio, ecco un esempio di una query dinamica che è possibile utilizzare:
+
+```Console
+(user.objectID -ne null) and (user.userPrincipalName -ne "MSADMIN@TENANT.onmicrosoft.com") and (user.userPrincipalName -ne "MSADMININT@TENANT.onmicrosoft.com") and (user.userPrincipalName -ne "MWAAS_SOC_RO@TENANT.onmicrosoft.com") and (user.userPrincipalName -ne "MWAAS_WDGSOC@TENANT.onmicrosoft.com") and (user.userPrincipalName -ne "MSTEST@TENANT.onmicrosoft.com")
+```
+
+In questa query sostituire @TENANT con il nome di dominio del tenant.
 
 
 
