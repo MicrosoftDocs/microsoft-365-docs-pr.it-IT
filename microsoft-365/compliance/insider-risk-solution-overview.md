@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: 9f2f6667066a1704ceb98179b677e7de7895cef2
-ms.sourcegitcommit: 5ba0015c1554048f817fdfdc85359eee1368da64
+ms.openlocfilehash: 684b4d724915478d8198d53d9e95cc1e9b3f092e
+ms.sourcegitcommit: 9833f95ab6ab95aea20d68a277246dca2223f93d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "49769267"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "49794138"
 ---
 # <a name="insider-risk-solutions-in-microsoft-365"></a>Soluzioni per i rischi Insider in Microsoft 365
 
@@ -49,12 +49,66 @@ Le funzionalità di prevenzione dei rischi di Microsoft 365 sono progettate e in
 
 Per proteggere l'organizzazione da rischi Insider, utilizzare le funzionalità e le funzionalità di Microsoft 365.
 
-| Soluzione/funzionalità | Descrizione | Licenze |
-| :------------------------ | :-------------- | :------------ |
-| Conformità delle comunicazioni | La conformità alla comunicazione consente di ridurre al minimo i rischi di comunicazione contribuendo a rilevare, acquisire e agire su messaggi inopportuni nell'organizzazione. | Sottoscrizione Microsoft 365 E5 (a pagamento o versione di valutazione) <br><br> Sottoscrizione Microsoft 365 E3 + il componente aggiuntivo Microsoft 365 E5 Compliance <br><br> Sottoscrizione Microsoft 365 E3 + componente aggiuntivo Microsoft 365 E5 Insider Risk Management <br><br> Sottoscrizione Microsoft 365 a5 (a pagamento o versione di valutazione) <br><br> Sottoscrizione Microsoft 365 a3 + componente aggiuntivo Microsoft 365 a5 Compliance <br><br> Sottoscrizione Microsoft 365 a3 + componente aggiuntivo Microsoft 365 a5 Insider Risk Management <br><br> Sottoscrizione Microsoft 365 G5 (a pagamento o versione di valutazione) <br><br> Sottoscrizione Microsoft 365 G5 + componente aggiuntivo Microsoft 365 G5 Compliance <br> Microsoft 365 G5 Subscription + Microsoft 365 G5 Insider Risk Management componente aggiuntivo <br><br> Abbonamento a Office 365 Enterprise E5 (a pagamento o versione di valutazione) <br><br> Abbonamento a Office 365 a5 (versione a pagamento o di valutazione) <br><br> Abbonamento a Office 365 Enterprise E3 + il componente aggiuntivo Office 365 Advanced Compliance (non più disponibile per le nuove sottoscrizioni) |
-| Gestione dei rischi Insider | La gestione dei rischi insider consente di ridurre al minimo i rischi interni, consentendo di rilevare, indagare e agire su attività dannose e involontarie nell'organizzazione. | Sottoscrizione Microsoft 365 E5 (a pagamento o versione di valutazione) <br><br> Sottoscrizione Microsoft 365 E3 + il componente aggiuntivo Microsoft 365 E5 Compliance <br><br> Sottoscrizione Microsoft 365 E3 + componente aggiuntivo Microsoft 365 E5 Insider Risk Management <br><br> Sottoscrizione Microsoft 365 a5 (a pagamento o versione di valutazione) <br><br> Sottoscrizione Microsoft 365 a3 + componente aggiuntivo Microsoft 365 a5 Compliance <br><br> Sottoscrizione Microsoft 365 a3 + componente aggiuntivo Microsoft 365 a5 Insider Risk Management |
-| Barriere informative | Gli ostacoli alle informazioni consentono di limitare la comunicazione e la collaborazione tra due gruppi interni per evitare che si verifichi un conflitto di interessi nell'organizzazione.  | Microsoft 365 E5/A5 <br><br> Office 365 E5/A5 <br><br> Office 365 Advanced Compliance <br><br> Conformità E5/A5 di Microsoft 365 <br><br> Microsoft 365 gestione dei rischi Insider |
-| Gestione accessi con privilegi | La gestione degli accessi con privilegi consente il controllo di accesso granulare sulle attività amministrative di Exchange Online privilegiate in Office 365. Può aiutare a proteggere l'organizzazione da violazioni che utilizzano account amministratore privilegiati esistenti con accesso permanente ai dati sensibili o accesso alle impostazioni di configurazione critiche. | Microsoft 365 E5/A5 <br><br> Office 365 E5/A5 <br><br> Conformità di Microsoft 365 E5/A5 <br><br> Microsoft 365 E5/A5 Information Protection and Governance |
+### <a name="communication-compliance"></a>Conformità delle comunicazioni
+
+La conformità alla comunicazione consente di ridurre al minimo i rischi di comunicazione contribuendo a rilevare, acquisire e agire su messaggi inopportuni nell'organizzazione. La conformità alla comunicazione è disponibile nelle sottoscrizioni seguenti:
+
+- Sottoscrizione Microsoft 365 E5 (a pagamento o versione di valutazione)
+- Sottoscrizione Microsoft 365 E3 + il componente aggiuntivo Microsoft 365 E5 Compliance
+- Sottoscrizione Microsoft 365 E3 + componente aggiuntivo Microsoft 365 E5 Insider Risk Management
+- Sottoscrizione Microsoft 365 a5 (a pagamento o versione di valutazione)
+- Sottoscrizione Microsoft 365 a3 + componente aggiuntivo Microsoft 365 a5 Compliance
+- Sottoscrizione Microsoft 365 a3 + componente aggiuntivo Microsoft 365 a5 Insider Risk Management
+- Sottoscrizione Microsoft 365 G5 (a pagamento o versione di valutazione)
+- Sottoscrizione Microsoft 365 G5 + componente aggiuntivo Microsoft 365 G5 Compliance
+- Microsoft 365 G5 Subscription + Microsoft 365 G5 Insider Risk Management componente aggiuntivo
+- Abbonamento a Office 365 Enterprise E5 (a pagamento o versione di valutazione)
+- Abbonamento a Office 365 a5 (versione a pagamento o di valutazione)
+- Abbonamento a Office 365 Enterprise E3 + il componente aggiuntivo Office 365 Advanced Compliance (non più disponibile per le nuove sottoscrizioni)
+
+### <a name="insider-risk-management"></a>Gestione dei rischi Insider
+
+La gestione dei rischi insider consente di ridurre al minimo i rischi interni, consentendo di rilevare, indagare e agire su attività dannose e involontarie nell'organizzazione.
+
+La gestione dei rischi Insider è disponibile nelle sottoscrizioni seguenti:
+
+- Sottoscrizione Microsoft 365 E5 (a pagamento o versione di valutazione)
+- Sottoscrizione Microsoft 365 E3 + il componente aggiuntivo Microsoft 365 E5 Compliance
+- Sottoscrizione Microsoft 365 E3 + componente aggiuntivo Microsoft 365 E5 Insider Risk Management
+- Sottoscrizione Microsoft 365 a5 (a pagamento o versione di valutazione)
+- Sottoscrizione Microsoft 365 a3 + componente aggiuntivo Microsoft 365 a5 Compliance
+- Sottoscrizione Microsoft 365 a3 + componente aggiuntivo Microsoft 365 a5 Insider Risk Management
+
+### <a name="information-barriers"></a>Barriere informative
+
+Gli ostacoli alle informazioni consentono di limitare la comunicazione e la collaborazione tra due gruppi interni per evitare che si verifichi un conflitto di interessi nell'organizzazione.
+
+Le barriere informative sono disponibili nelle sottoscrizioni seguenti:
+
+- Sottoscrizione Microsoft 365 E5 (a pagamento o versione di valutazione)
+- Sottoscrizione Microsoft 365 a5 (a pagamento o versione di valutazione)
+- Abbonamento a Office 365 Enterprise E5 (a pagamento o versione di valutazione)
+- Abbonamento a Office 365 a5 (versione a pagamento o di valutazione)
+- Componente aggiuntivo di conformità avanzato di Office 365 (non più disponibile per le nuove sottoscrizioni)
+- Sottoscrizione Microsoft 365 E3 + il componente aggiuntivo Microsoft 365 E5 Compliance
+- Sottoscrizione Microsoft 365 E3 + componente aggiuntivo Microsoft 365 E5 Insider Risk Management
+- Sottoscrizione Microsoft 365 a3 + componente aggiuntivo Microsoft 365 a5 Compliance
+- Sottoscrizione Microsoft 365 a3 + componente aggiuntivo Microsoft 365 a5 Insider Risk Management
+
+### <a name="privileged-access-management"></a>Gestione accessi con privilegi
+
+La gestione degli accessi con privilegi consente il controllo di accesso granulare sulle attività amministrative di Exchange Online privilegiate in Office 365. Può aiutare a proteggere l'organizzazione da violazioni che utilizzano account amministratore privilegiati esistenti con accesso permanente ai dati sensibili o accesso alle impostazioni di configurazione critiche.
+
+La gestione degli accessi con privilegi è disponibile nelle sottoscrizioni seguenti:
+
+- Sottoscrizione Microsoft 365 E5 (a pagamento o versione di valutazione)
+- Sottoscrizione Microsoft 365 a5 (a pagamento o versione di valutazione)
+- Abbonamento a Office 365 Enterprise E5 (a pagamento o versione di valutazione)
+- Abbonamento a Office 365 a5 (versione a pagamento o di valutazione)
+- Sottoscrizione Microsoft 365 E3 + il componente aggiuntivo Microsoft 365 E5 Compliance
+- Sottoscrizione Microsoft 365 E3 + componente aggiuntivo Microsoft 365 E5 per la protezione delle informazioni e la governance
+- Sottoscrizione Microsoft 365 a3 + componente aggiuntivo Microsoft 365 a5 Compliance
+- Sottoscrizione Microsoft 365 a3 + componente aggiuntivo Microsoft 365 a5 per la protezione delle informazioni e la governance
 
 ## <a name="deploy-microsoft-365-insider-risk-solutions"></a>Distribuire le soluzioni di rischio di Microsoft 365 Insider
 
