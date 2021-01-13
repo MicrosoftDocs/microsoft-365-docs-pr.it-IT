@@ -796,9 +796,9 @@
       items:
         - name: Configurare IRM per l'uso di un server AD RMS locale
           href: configure-irm-to-use-an-on-premises-ad-rms-server.md
-- name: Office 365 Enterprise
-  href: 'https://docs.microsoft.com/Office365/Enterprise'
-- name: App Microsoft 365 per le aziende
-  href: 'https://docs.microsoft.com/office365/admin/admin-home'
+- name: Microsoft 365 Enterprise
+  href: 'https://docs.microsoft.com/microsoft-365/enterprise/'
 - name: Sicurezza di Microsoft 365
   href: 'https://docs.microsoft.com/microsoft-365/security/'
+- name: Microsoft 365 Apps for business
+  href: 'https://docs.microsoft.com/office365/admin/admin-home'

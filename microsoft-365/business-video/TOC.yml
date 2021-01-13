@@ -159,3 +159,5 @@
           href: get-help-support.md
         - name: Configurazione rapida per i dipendenti
           href: employee-quick-setup.md
+    - name: Passare da Google Workspace
+      href: moveto-microsoft-365/move-from-google-workspace-overview.md
