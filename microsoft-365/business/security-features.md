@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 ms.assetid: c123694a-1efb-459e-a8d5-2187975373dc
 description: Informazioni sulle funzionalità di sicurezza disponibili in Microsoft 365 Business Premium per garantire la protezione dei dati su PC, telefoni e tablet.
-ms.openlocfilehash: 587d80c27f867a387c901d23f4ec05f3c5905bf6
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: b7fdd3d7fa25c23ee49ae82aa037588d8fba61a1
+ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48843489"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49840390"
 ---
 # <a name="microsoft-365-business-premium-security-and-compliance-features"></a>Funzionalità di sicurezza e conformità di Microsoft 365 Business Premium
 
@@ -59,9 +59,9 @@ Microsoft 365 Business Premium offre funzionalità di sicurezza semplificate per
     
     È possibile reimpostare tutti i dispositivi Windows 10 a cui sono state applicate le impostazioni di protezione dei dispositivi.
     
-## <a name="additional-security-features"></a>Altre funzionalità di sicurezza 
+## <a name="additional-security-features"></a>Ulteriori funzionalità relative alla sicurezza 
 
-Le funzionalità avanzate di Microsoft 365 Business Premium sono disponibili per aiutare a proteggere la propria azienda dalle minacce informatiche e a salvaguardare le informazioni riservate.
+Le funzionalità avanzate di Microsoft 365 Business Premium sono disponibili per aiutarti a proteggere la tua azienda dalle minacce informatiche e salvaguardare le informazioni sensibili.
   
 - **[Microsoft Defender per Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)**
     
@@ -86,7 +86,7 @@ Le funzionalità avanzate di Microsoft 365 Business Premium sono disponibili per
     - [Accesso basato sul percorso](https://docs.microsoft.com/azure/active-directory/authentication/howto-registration-mfa-sspr-combined#conditional-access-policies-for-combined-registration);  Consenti l'accesso solo da intervalli IP attendibili o da paesi specifici 
     - Richiedi accesso a Mae
     - Blocca l'accesso alle app che utilizzano [l'autenticazione legacy](https://docs.microsoft.com/azure/active-directory/conditional-access/block-legacy-authentication)
-    - Richiedi Apps TP utilizza la [protezione delle app di Intune](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access)
+    - Richiedere alle app di utilizzare la [protezione delle app di Intune](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access)
     - Autenticazione personalizzata come l'AMF con provider di terze parti, ad esempio DUO.
    
     Altre caratteristiche:

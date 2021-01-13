@@ -1,6 +1,6 @@
 ---
 title: Operazioni di sicurezza in Microsoft Managed Desktop
-description: ''
+description: Servizi e processi forniti dal centro operazioni di sicurezza
 keywords: Microsoft Managed Desktop, Microsoft 365, servizi, documentazione
 ms.service: m365-md
 author: jaimeo
@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 5698e2a88adf3d2bae84a82e0e001132293e36be
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 4464c9c491af11831a3511dab60a472f1584d7f6
+ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48847717"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49840343"
 ---
 # <a name="security-operations-in-microsoft-managed-desktop"></a>Operazioni di sicurezza in Microsoft Managed Desktop
 
@@ -40,5 +40,5 @@ Il SOC fornisce questi servizi:
     - Eradicazione
     - Ripristino
     - Attività post-evento
-- I clienti Microsoft Managed Desktop sono idonei ad iscriversi al servizio Microsoft Threat Experts. Il SOC mantiene con questo servizio per comprendere meglio le complesse minacce che interessano la propria organizzazione, tra cui le richieste di avviso, i dispositivi potenzialmente compromessi, la causa principale di una connessione di rete sospetta e altre informazioni aggiuntive sulle minacce per le campagne di minacce permanenti avanzate. Per ulteriori informazioni, vedere [Microsoft Threat Experts](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-threat-experts).
+- I clienti Microsoft Managed Desktop sono idonei ad iscriversi al servizio Microsoft Threat Experts. Il SOC mantiene con questo servizio per comprendere meglio le complesse minacce che interessano la propria organizzazione, tra cui le richieste di avviso, i dispositivi potenzialmente compromessi, la causa principale di una connessione di rete sospetta e altre informazioni sulle minacce per le continue campagne di minacce permanenti avanzate. Per ulteriori informazioni, vedere [Microsoft Threat Experts](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-threat-experts).
 - Il processo di gestione della vulnerabilità e delle minacce di SOC utilizza alcuni dei servizi di Microsoft per informare i consigli dell'organizzazione sulla protezione dalle minacce. Il SOC utilizza i dati del Centro sicurezza di Microsoft Defender per endpoint e da fonti di dati di vulnerabilità rilevanti all'interno e all'esterno di Microsoft per individuare vulnerabilità e configurazioni errate e fornire relazioni di azione.

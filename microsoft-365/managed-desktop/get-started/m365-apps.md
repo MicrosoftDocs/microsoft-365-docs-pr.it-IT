@@ -10,12 +10,12 @@ f1.keywords:
 ms.author: jaimeo
 ms.topic: article
 ms.localizationpriority: normal
-ms.openlocfilehash: 767489ba9f9ac63bc1a2d8b4999b6634335b1aef
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: 98995084fb7de9ecb434b70b5d38793a20675f19
+ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47547747"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49840350"
 ---
 # <a name="microsoft-365-apps-for-enterprise"></a>Microsoft 365 Apps for enterprise
 
@@ -27,12 +27,12 @@ Microsoft Managed Desktop garantisce che Microsoft 365 Apps for Enterprise (64 b
 - Excel
 - PowerPoint
 - Outlook
-- Autore
-- Accesso
+- Publisher
+- Access
 - Skype for Business
 - OneNote
 
-Questo approccio consente di ridurre al minimo l'impatto della rete e garantisce che gli utenti possano essere produttivi non appena ricevono il dispositivo. I criteri aggiuntivi vengono quindi distribuiti ai dispositivi gestiti per configurare le applicazioni per l'utilizzo.
+Questo approccio consente di ridurre al minimo l'impatto della rete e garantisce che gli utenti possano essere produttivi non appena ricevono il dispositivo. Successivamente, vengono distribuiti più criteri ai dispositivi gestiti per configurare le applicazioni per l'utilizzo.
 
 > [!NOTE]
 > Microsoft teams è distribuito separatamente da Microsoft 365 Apps for Enterprise e non è incluso nell'immagine di base. 
@@ -51,8 +51,8 @@ Le app Microsoft 365 sono impostate per l'aggiornamento nel [canale mensile dell
 
 Microsoft Managed Desktop scagliona ogni versione per identificare eventuali problemi nell'ambiente in uso. Completare l'implementazione 28 giorni dopo il rilascio del gruppo di prodotti Microsoft 365 app. Le pianificazioni di aggiornamento di Microsoft Managed Desktop vengono rilasciate a gruppi diversi per consentire la convalida e il testing come indicato di seguito: 
 
-- Test: 0 giorni
-- Primo: 0 giorni
+- Test: zero giorni
+- Primo: zero giorni
 - Veloce: 7 giorni
 - Vasta: 21 giorni
 
@@ -66,7 +66,7 @@ Durante una versione, Microsoft Managed Desktop monitora la percentuale di error
 
 ### <a name="delivery-optimization"></a>Ottimizzazione del recapito
 
-L'ottimizzazione del recapito è una tecnologia di distribuzione peer-to-peer disponibile in Windows 10. Consente ai dispositivi di condividere il contenuto, ad esempio gli aggiornamenti, che i dispositivi sono stati scaricati da Microsoft tramite Internet. In questo modo è possibile ridurre la larghezza di banda della rete perché un dispositivo può ottenere parti dell'aggiornamento da un altro dispositivo nella propria rete locale anziché scaricare completamente l'aggiornamento da Microsoft.
+L'ottimizzazione del recapito è una tecnologia di distribuzione peer-to-peer disponibile in Windows 10. Consente ai dispositivi di condividere il contenuto, ad esempio gli aggiornamenti, che i dispositivi sono stati scaricati da Microsoft tramite Internet. L'utilizzo di questo strumento può contribuire a ridurre la larghezza di banda della rete perché un dispositivo può ottenere parti dell'aggiornamento da un altro dispositivo nella propria rete locale invece di scaricare completamente l'aggiornamento da Microsoft.
 
 L' [ottimizzazione del recapito](https://docs.microsoft.com/deployoffice/delivery-optimization) è abilitata per impostazione predefinita nei dispositivi che eseguono Windows 10 Enterprise o Windows 10 Education Edition. 
 
@@ -94,8 +94,8 @@ Il criterio **UpdateDeadline** viene utilizzato per configurare il periodo di to
 
 Questi criteri sono configurati in modo diverso per ogni gruppo di dispositivi di gestione degli aggiornamenti ed è necessario che Microsoft Managed Desktop soddisfi i propri obiettivi di aggiornamento:  
 
-- Test: 0 giorni
-- Primo: 0 giorni
+- Test: zero giorni
+- Primo: zero giorni
 - Veloce 7 giorni
 - Vasta: 21 giorni
 
@@ -150,7 +150,7 @@ Alcune organizzazioni sono preoccupate per gli utenti che hanno accesso ai file 
 
 ## <a name="settings-you-manage"></a>Impostazioni gestite
 
-Esistono molti altri criteri che Microsoft Managed Desktop non è ancora stato impostato come parte del servizio. È possibile configurarli tramite Microsoft Intune, che utilizza il servizio [criteri cloud di Office](https://docs.microsoft.com/DeployOffice/overview-office-cloud-policy-service#how-the-policy-configuration-is-applied) . A tal fine, attenersi alla seguente procedura:
+Esistono molti altri criteri che Microsoft Managed Desktop non è ancora stato impostato come parte del servizio. Questi criteri possono essere configurati utilizzando Microsoft Intune, che utilizza il servizio [criteri cloud di Office](https://docs.microsoft.com/DeployOffice/overview-office-cloud-policy-service#how-the-policy-configuration-is-applied) . Per impostare questi criteri, attenersi alla seguente procedura:
 
 1.  Accedere all'interfaccia di amministrazione di Microsoft Endpoint Manager.
 2.  Selezionare le **app > i criteri per le app di Office > creare**

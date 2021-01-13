@@ -1,18 +1,18 @@
 ---
 title: Configurare i dispositivi per Microsoft Managed Desktop
-description: ''
-keywords: Microsoft Managed Desktop, Microsoft 365, servizio, documentazione
+description: Come ottenere nuovi dispositivi o riutilizzare quelli esistenti che si qualificano
+keywords: Microsoft Managed Desktop, Microsoft 365, servizi, documentazione
 ms.service: m365-md
 author: jaimeo
 ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 5efda6fe73dd5454c8b527b6ba63c9ae81951dd2
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: 65c7c0c938b376a1b53910e7ca783b7bfe8a7ea8
+ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47950509"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49840504"
 ---
 # <a name="set-up-microsoft-managed-desktop-devices"></a>Configurare dispositivi Microsoft Managed Desktop
 
@@ -29,9 +29,9 @@ Si consiglia di collaborare con uno dei partner del dispositivo approvati. Per u
     - Collaborare con un partner per la registrazione dei dispositivi
 4. Preparare [gli utenti](get-started-devices.md) a utilizzare i dispositivi Microsoft Managed Desktop
 
-## <a name="to-re-use-existing-devices"></a>Per riutilizzare i dispositivi esistenti
+## <a name="to-reuse-existing-devices"></a>Per riutilizzare i dispositivi esistenti
 
-1. Esaminare l'elenco dei [dispositivi attualmente approvati](../service-description/device-list.md) per identificare quali dispositivi sono stati approvati per l'utilizzo con Microsoft Managed Desktop. Se si riutilizza un dispositivo esistente, sarà necessario ricrearlo.
+1. Esaminare l'elenco dei [dispositivi attualmente approvati](../service-description/device-list.md) per identificare quali dispositivi sono stati approvati per l'utilizzo con Microsoft Managed Desktop. Se si riutilizza un dispositivo esistente, sarà necessario rivisualizzarlo.
 2. Eseguire una delle operazioni seguenti:
     - [Registrare manualmente i dispositivi già presenti](register-reused-devices-self.md)
     - Collaborare con un partner per la registrazione dei dispositivi
@@ -44,6 +44,6 @@ Si consiglia di collaborare con uno dei partner del dispositivo approvati. Per u
 3. [Assegnare licenze](assign-licenses.md)
 4. [Distribuire il Portale aziendale Intune](company-portal.md)
 5. [Abilitare Enterprise State Roaming](enterprise-state-roaming.md)
-6. Configurare i dispositivi (questo argomento)
+6. Configurare i dispositivi (questo articolo)
 7. [Preparare gli utenti a usare i dispositivi](get-started-devices.md)
 8. [Distribuire le app](deploy-apps.md)

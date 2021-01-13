@@ -7,16 +7,16 @@ f1.keywords:
 - NOCSH
 ms.author: jaimeo
 ms.localizationpriority: medium
-ms.openlocfilehash: 48c69a71a98e381123a8f87acc20a34eb6e99806
-ms.sourcegitcommit: 34ebec8e2bd54ba3d4ccfd9724797665c965c17f
+ms.openlocfilehash: df6013f2f7fec32e79557a82f9b56fe4ad487786
+ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "49071490"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49840682"
 ---
 # <a name="register-new-devices-yourself"></a>Registrare manualmente i nuovi dispositivi
 
-Microsoft Managed Desktop è in grado di lavorare con dispositivi nuovi di zecca oppure è possibile riutilizzare i dispositivi che potrebbero essere già presenti (il che richiede che vengano ristampati). È possibile registrare i dispositivi con Microsoft Managed Desktop nel portale di Microsoft Endpoint Manager.
+Microsoft Managed Desktop è in grado di lavorare con dispositivi nuovi di zecca oppure è possibile riutilizzare i dispositivi già presenti (che richiedono di rivisualizzarli). È possibile registrare i dispositivi con Microsoft Managed Desktop nel portale di Microsoft Endpoint Manager.
 
 > [!NOTE]
 > Utilizzo di un partner per ottenere i dispositivi In caso affermativo, non è necessario preoccuparsi di ottenere gli hash hardware; si occuperà di questo per voi. Assicurarsi che il partner stabilisca una relazione con l'utente al [centro partner](https://partner.microsoft.com/dashboard). Il partner può ottenere ulteriori informazioni nella [Guida di partner Center](https://docs.microsoft.com/partner-center/request-a-relationship-with-a-customer). Una volta che questa relazione è stata stabilita, il partner registrerà semplicemente i dispositivi per conto dell'utente: nessuna ulteriore azione necessaria. Se si desidera visualizzare i dettagli o il proprio partner ha domande, vedere la [procedura per i partner per la registrazione dei dispositivi](register-devices-partner.md). Dopo la registrazione dei dispositivi, è possibile procedere con la [Verifica dell'immagine](#check-the-image) e [la distribuzione dei dispositivi](#deliver-the-device) agli utenti.
@@ -68,14 +68,14 @@ Microsoft Managed Desktop identifica ogni dispositivo in modo univoco facendo ri
 
 ### <a name="merge-hash-data"></a>Unire i dati hash
 
-Per completare la registrazione, è necessario che i dati dei file CSV siano combinati in un unico file. Di seguito è indicato uno script di PowerShell di esempio per semplificare le operazioni seguenti:
+Per completare la registrazione, è necessario che i dati dei file CSV siano combinati in un unico file. Di seguito è indicato uno script PowerShell di esempio per agevolare le operazioni seguenti:
 
 `Import-CSV -Path (Get-ChildItem -Filter *.csv) | ConvertTo-Csv -NoTypeInformation | % {$_.Replace('"', '')} | Out-File .\aggregatedDevices.csv`
 
 
 #### <a name="register-devices-by-using-the-admin-portal"></a>Registrare i dispositivi tramite il portale di amministrazione
 
-In [Microsoft Endpoint Manager](https://endpoint.microsoft.com/)selezionare **dispositivi** nel riquadro di spostamento a sinistra. Cercare la sezione Microsoft Managed Desktop del menu e selezionare **dispositivi**. Nell'area di lavoro Microsoft Managed Desktop Devices selezionare **+ Register Devices** che apre un Fly-in per registrare i nuovi dispositivi.
+In [Microsoft Endpoint Manager](https://endpoint.microsoft.com/)selezionare **dispositivi** nel riquadro di spostamento a sinistra. Cercare la sezione Microsoft Managed Desktop del menu e selezionare **dispositivi**. Nell'area di lavoro Microsoft Managed Desktop Devices selezionare **+ Register Devices**, che consente di aprire un Fly-in per registrare i nuovi dispositivi.
 
 <!-- [![Fly-in after selecting Register devices, listing devices with columns for assigned users, serial number, status, last-seen date, and age](../../media/new-registration-ui.png)](../../media/new-registration-ui.png) -->
 
@@ -85,8 +85,8 @@ In [Microsoft Endpoint Manager](https://endpoint.microsoft.com/)selezionare **di
 
 attenersi alla seguente procedura:
 
-1. In **caricamento file** , specificare un percorso per il file CSV creato in precedenza.
-3. Selezionare **registra dispositivi**. Il sistema aggiungerà i dispositivi all'elenco di dispositivi sul Blade dei **dispositivi** , contrassegnati come **registrazione in sospeso**. La registrazione richiede in genere meno di 10 minuti e, in caso di esito positivo, il dispositivo verrà visualizzato come **pronto per il significato dell'utente** è pronto e in attesa che un utente inizi a utilizzare.
+1. In **caricamento file**, specificare un percorso per il file CSV creato in precedenza.
+3. Selezionare **registra dispositivi**. Il sistema aggiungerà i dispositivi all'elenco dei dispositivi sui **dispositivi**, contrassegnati come **registrazione in sospeso**. La registrazione richiede in genere meno di 10 minuti e, in caso di esito positivo, il dispositivo verrà visualizzato come **pronto per il significato dell'utente** è pronto e in attesa che un utente inizi a utilizzare.
 
 
 È possibile monitorare lo stato di avanzamento della registrazione dei dispositivi nella pagina principale. Gli stati possibili segnalati includono:
@@ -96,7 +96,7 @@ attenersi alla seguente procedura:
 | Registrazione in sospeso | La registrazione non è ancora stata completata. Controllare in un secondo momento. |
 | Registrazione non riuscita | La registrazione non è stata completata. Per ulteriori informazioni, vedere [risoluzione dei problemi relativi alla registrazione del dispositivo](#troubleshooting-device-registration) . |
 | Pronto per l'utente | La registrazione ha avuto esito positivo e il dispositivo è ora pronto per essere recapitato all'utente. Microsoft Managed Desktop li guiderà per la prima volta, quindi non è necessario eseguire ulteriori preparativi. |
-| Attivazione | Il dispositivo è stato recapitato all'utente ed è stato registrato con il tenant. Questo indica anche che stanno usando regolarmente il dispositivo. |
+| Attivazione | Il dispositivo è stato recapitato all'utente ed è stato registrato con il tenant. Questo stato indica anche che stanno usando regolarmente il dispositivo. |
 | Inattivo | Il dispositivo è stato recapitato all'utente ed è stato registrato con il tenant. Tuttavia, non hanno utilizzato il dispositivo di recente (negli ultimi 7 giorni).  | 
 
 #### <a name="troubleshooting-device-registration"></a>Risoluzione dei problemi relativi alla registrazione del dispositivo

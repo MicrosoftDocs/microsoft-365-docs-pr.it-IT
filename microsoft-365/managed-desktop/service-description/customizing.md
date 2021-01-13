@@ -1,7 +1,7 @@
 ---
 title: Eccezioni al piano di servizio
-description: ''
-keywords: Microsoft Managed Desktop, Microsoft 365, servizio, documentazione
+description: Come richiedere eccezioni al piano di servizio standard
+keywords: Microsoft Managed Desktop, Microsoft 365, servizi, documentazione
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 0785d7ac12c7b027322338d9949a10ea30168b3b
-ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
+ms.openlocfilehash: 97fe3fe1734908c46dcfff4acd76ce9ae5b8b1a5
+ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "47289062"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49841268"
 ---
 # <a name="exceptions-to-the-service-plan"></a>Eccezioni al piano di servizio
 
@@ -71,10 +71,10 @@ Dopo l'approvazione e la distribuzione di un'eccezione richiesta, è possibile c
  
 In tal caso, verrà notificato tramite il portale di amministrazione di Microsoft Managed Desktop. Dal primo momento in cui viene effettuata la notifica, sono disponibili 90 giorni per rimuovere l'eccezione prima che i dispositivi con l'eccezione non siano più associati ai contratti di servizio Microsoft Managed Desktop. Verranno inviate diverse notifiche in base a una sequenza temporale rigorosa, tuttavia, un grave incidente o una minaccia potrebbe richiedere di modificare la sequenza temporale o le decisioni relative a un'eccezione. Non verrà *rimossa* un'eccezione senza il consenso, ma qualsiasi dispositivo con un'eccezione revocata non sarà più associato al contratto di servizio. Ecco la cronologia delle notifiche che verranno inviate:
 
-- **Primo avviso:** Viene fornita la prima notifica della decisione di revocare l'approvazione, incluse le informazioni sul motivo per cui è stata revocata, le azioni che si consiglia di eseguire, la data di scadenza per tali azioni e i passaggi da seguire se si vuole fare appello alla decisione. Questo è di 90 giorni prima che l'eccezione debba essere rimossa da tutti i dispositivi. 
+- **Primo avviso:** Viene fornita la prima notifica della decisione di revocare l'approvazione, incluse le informazioni sul motivo per cui è stata revocata, le azioni che si consiglia di eseguire, la data di scadenza per tali azioni e i passaggi da seguire se si vuole fare appello alla decisione. Questo avviso si verifica 90 giorni prima che l'eccezione debba essere rimossa da tutti i dispositivi. 
 - **Secondo avviso (30 giorni dopo):** Viene fornita una seconda notifica, incluse le stesse informazioni fornite nel primo avviso. 
 - **Terza notifica (60 giorni dopo il primo avviso):** Viene fornita una terza notifica, incluse le stesse informazioni fornite nel primo avviso. 
-- **Avviso finale (1 settimana prima della scadenza di 90 giorni):** Viene fornito un quarto avviso, incluse le stesse informazioni fornite nel primo avviso.
+- **Avviso finale (una settimana prima della scadenza di 90 giorni):** Viene fornito un quarto avviso, incluse le stesse informazioni fornite nel primo avviso.
 - **90 giorni dopo il primo avviso:** I contratti di servizio Microsoft Managed Desktop Level non si applicano più ai dispositivi con l'eccezione revocata. In qualsiasi momento, è possibile contestare la decisione e fornire ulteriori informazioni per considerazione, tra cui l'aggiornamento, le modifiche alla configurazione o la modifica del software. 
 
 

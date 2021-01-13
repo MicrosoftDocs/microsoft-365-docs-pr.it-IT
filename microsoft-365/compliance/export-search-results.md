@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: ed48d448-3714-4c42-85f5-10f75f6a4278
 description: Esportare i risultati della ricerca da una ricerca di contenuto nel centro conformità di Microsoft 365 a un computer locale. I risultati della posta elettronica vengono esportati come file PST. I contenuti dei siti di SharePoint e OneDrive for business vengono esportati come documenti di Office nativi.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 09f3ed5684338616ef20036e4fded400bd106c44
-ms.sourcegitcommit: f40378013757d560d5566a11ad4e6f527c018cc4
+ms.openlocfilehash: 12c8755d4ca8b5ff97582b879c07fe103c996ecf
+ms.sourcegitcommit: 495b66b77d6dbe6d69e5b06b304089e4e476e568
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 01/12/2021
-ms.locfileid: "49796184"
+ms.locfileid: "49799703"
 ---
 # <a name="export-content-search-results"></a>Esportare i risultati di Ricerca contenuto
 
@@ -187,20 +187,7 @@ Di seguito sono riportate altre informazioni sull'esportazione dei risultati del
   
 ### <a name="export-limits"></a>Limiti di esportazione
 
-Questi limiti si applicano anche quando si esportano i risultati della ricerca in un caso di eDiscovery core.
-
-|Descrizione del limite|Limite|
-|:-----|:-----|
-|Quantità massima di dati esportabili da una singola ricerca di contenuto  <br/><br/> **Nota:** Se i risultati della ricerca sono superiori a 2 TB, prendere in considerazione l'utilizzo di intervalli di date o di altri tipi di filtri per ridurre le dimensioni totali dei risultati della ricerca. <br/>  |2 TB  <br/> | 
-|Numero massimo di un'organizzazione che può esportare in un solo giorno <br/><br/> **Nota:** Questo limite viene reimpostato giornalmente alle 12.00 UTC <br/> |2 TB <br/> |
-|Massime esportazioni simultanee che è possibile eseguire nello stesso momento all'interno dell'organizzazione <br/><br/> **Nota:** Esecuzione di un **report solo** l'esportazione conta rispetto alle esportazioni simultanee totali per l'organizzazione. Se tre utenti eseguono 3 esportazioni ciascuna, è possibile eseguire solo un'altra esportazione. Se si sta esportando un report o i risultati della ricerca, non è possibile eseguire altre esportazioni finché non si è completata.   <br/> |10  <br/> |
-|Massime esportazioni un singolo utente può essere eseguito <br/> |3  <br/> |
-|Numero massimo di cassette postali i risultati di ricerca possono essere scaricati utilizzando lo strumento di esportazione di eDiscovery nel centro conformità di Microsoft 365  <br/><br/> **Nota:** Per scaricare i risultati della ricerca da più di 100.000 cassette postali, è necessario utilizzare la sicurezza & Compliance Center PowerShell. Per istruzioni, vedere [esportazione dei risultati da più di 100.000 cassette postali](#exporting-results-from-more-than-100000-mailboxes). <br/> | 100.000 <br/>|
-|Dimensioni massime dei file PST che possono essere esportati <br/><br/> **Nota:** Se i risultati della ricerca della cassetta postale di un utente sono superiori a 10 GB, i risultati della ricerca della cassetta postale verranno esportati in due (o più) file PST separati. Se si sceglie di esportare tutti i risultati della ricerca in un singolo file PST, il file PST verrà suddiviso in file PST aggiuntivi se la dimensione complessiva dei risultati della ricerca è superiore a 10 GB. Se si desidera modificare queste dimensioni predefinite, è possibile modificare il registro di sistema di Windows nel computer utilizzato per esportare i risultati della ricerca. Vedere [modificare le dimensioni dei file PST quando si esportano i risultati della ricerca di eDiscovery](change-the-size-of-pst-files-when-exporting-results.md). I risultati della ricerca di una cassetta postale specifica non verranno suddivisi tra più file PST, a meno che il contenuto di una singola cassetta postale sia superiore a 10 GB. Se si è scelto di esportare i risultati della ricerca in un file PST per che contiene tutti i messaggi in una singola cartella e i risultati della ricerca sono superiori a 10 GB, gli elementi sono ancora organizzati in ordine cronologico, in modo che vengano suddivisi in file PST aggiuntivi in base alla data di invio.<br/> | 10 GB <br/> |
-|Frequenza con cui i risultati della ricerca provenienti da cassette postali e siti vengono caricati in una posizione di archiviazione di Azure fornita da Microsoft. |Massimo 2 GB all'ora|
-|||
-
-Per informazioni su altri limiti, vedere [limits for content search](limits-for-content-search.md). 
+Per informazioni sui limiti quando si esportano i risultati della ricerca del contenuto, vedere la sezione "limiti di esportazione" in [limits for content search](limits-for-content-search.md#export-limits).
 
 ### <a name="export-reports"></a>Esporta rapporti
   

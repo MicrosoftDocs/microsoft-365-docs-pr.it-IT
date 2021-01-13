@@ -17,16 +17,16 @@ search.appverid:
 ms.assetid: ''
 description: Utilizzare lo strumento di comunicazione in un caso avanzato di eDiscovery per inviare, raccogliere e tenere presenti le notifiche di archiviazione legale.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 730b60c4d57f8fecb0e66f460942e9e890732c2c
-ms.sourcegitcommit: e17fd18b01d70e6428263c20cbce4b92e2a97765
+ms.openlocfilehash: df1b2d962e83110c62ccac871f669bbc0d3bfe02
+ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48626179"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49840561"
 ---
 # <a name="create-a-legal-hold-notice"></a>Creare un avviso per la conservazione legale
 
-Utilizzando le comunicazioni del custode di eDiscovery avanzate, le organizzazioni possono gestire il flusso di lavoro attorno alla comunicazione con i depositari. Tramite lo strumento di comunicazione, i team legali possono inviare, raccogliere e tenere presenti sistematicamente le notifiche per la conservazione legale. Il processo di creazione flessibile consente inoltre ai team di personalizzare il flusso di lavoro di notifica di archiviazione e il contenuto nelle notifiche inviate ai depositari. 
+Utilizzando le comunicazioni del custode di eDiscovery avanzate, le organizzazioni possono gestire il flusso di lavoro attorno alla comunicazione con i depositari. Tramite lo strumento di comunicazione, i team legali possono inviare, raccogliere e tenere presenti sistematicamente le notifiche per la conservazione legale. Il processo di creazione flessibile consente inoltre ai team di personalizzare il flusso di lavoro di notifica di archiviazione e il contenuto nelle notifiche inviate ai depositari.
 
 ![Pagina comunicazioni](../media/CommunicationPage.PNG)
 
@@ -46,7 +46,7 @@ Il primo passaggio consiste nel specificare i dettagli adeguati per le notifiche
 
     - **Nome**: questo è il nome della comunicazione.
 
-    - **Responsabile del rilascio**: nell'elenco a discesa viene visualizzato un elenco di membri del caso. Per ulteriori informazioni su come aggiungere nuovi membri a un caso, vedere [creare un caso avanzato di eDiscovery](get-started-with-advanced-ediscovery.md#step-4-create-an-advanced-ediscovery-case). Ogni avviso inviato ai depositari verrà inviato per conto del responsabile del rilascio specificato.
+    - **Responsabile del rilascio**: nell'elenco a discesa viene visualizzato un elenco di membri del caso. Per ulteriori informazioni su come aggiungere nuovi membri a un caso, vedere [creare un caso avanzato di eDiscovery](create-and-manage-advanced-ediscoveryv2-case.md#create-a-case). Ogni avviso inviato ai depositari verrà inviato per conto del responsabile del rilascio specificato.
 
 > [!NOTE]
 > Il responsabile del rilascio deve disporre di una **cassetta postale attiva** da visualizzare nell'elenco a discesa dell'ufficiale emittente

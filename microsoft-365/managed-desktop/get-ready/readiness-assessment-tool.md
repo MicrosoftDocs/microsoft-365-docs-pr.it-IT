@@ -9,20 +9,20 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 491422126f7d159689e7995b69bef0f395491dcb
-ms.sourcegitcommit: 4cbb4ec26f022f5f9d9481f55a8a6ee8406968d2
+ms.openlocfilehash: 9c19a037ec280320d0800fe2c65f595e4b1010dd
+ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49527710"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49840362"
 ---
 # <a name="readiness-assessment-tool"></a>Strumento di valutazione della conformità
 
-Per una migliore esperienza possibile quando si effettua la registrazione in Microsoft Managed Desktop, sono disponibili diverse impostazioni e altri parametri che è necessario impostare in anticipo. È possibile utilizzare questo strumento per controllare queste impostazioni e ricevere i passaggi dettagliati per la risoluzione di eventuali problemi non corretti.
+Per una migliore esperienza possibile quando si effettua la registrazione in Microsoft Managed Desktop, sono presenti impostazioni importanti e altri parametri che è necessario impostare in anticipo. È possibile utilizzare questo strumento per controllare queste impostazioni e ricevere i passaggi dettagliati per la risoluzione di eventuali problemi non corretti.
 
 Lo strumento verifica le impostazioni in Microsoft Endpoint Manager (in particolare, Microsoft Intune), Azure Active Directory (Azure AD) e Microsoft 365 per assicurarsi che funzionino con Microsoft Managed Desktop. Microsoft Managed Desktop conserva i dati associati a questi controlli per 12 mesi dopo l'ultima volta che si esegue un controllo nell'organizzazione di Azure AD (tenant). Dopo 12 mesi, viene mantenuto in forma deidentificata.  È possibile scegliere di eliminare i dati da raccogliere.
 
-Tutti gli utenti che dispongono almeno del ruolo di amministratore di Intune saranno in grado di eseguire questo strumento, ma due dei controlli ([criteri di accesso condizionale](readiness-assessment-fix.md#conditional-access-policies) e autenticazione a più [fattori](readiness-assessment-fix.md#multifactor-authentication) richiedono autorizzazioni aggiuntive.
+Tutti gli utenti che dispongono almeno del ruolo di amministratore di Intune saranno in grado di eseguire questo strumento, ma due dei controlli ([criteri di accesso condizionale](readiness-assessment-fix.md#conditional-access-policies) e autenticazione a più [fattori](readiness-assessment-fix.md#multifactor-authentication) richiedono altre autorizzazioni.
  
 Lo strumento di valutazione verifica gli elementi seguenti:
 

@@ -11,12 +11,12 @@ ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: bccfe9a6a6a0550f96ab33d5fd5142e4eaae7b51
-ms.sourcegitcommit: b06a4f21da247edb03fdf6a01eafb7d4fb387b33
+ms.openlocfilehash: cf31778d773a271ead6a1745197f04eca127ab5d
+ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48333525"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49841096"
 ---
 # <a name="prepare-certificates-and-network-profiles-for-microsoft-managed-desktop"></a>Preparare certificati e profili di rete per Microsoft Managed Desktop  
  
@@ -28,7 +28,7 @@ Poiché i dispositivi Microsoft Managed Desktop vengono aggiunti a Azure Active 
  
 I certificati radice sono necessari per distribuire i certificati tramite un'infrastruttura SCEP o PKCS. Altre applicazioni e servizi nell'organizzazione potrebbero richiedere la distribuzione dei certificati radice nei dispositivi Microsoft Managed Desktop.    
  
-Prima di distribuire i certificati di SCEP o PKCS in Microsoft Managed Desktop, è necessario raccogliere i requisiti per ogni servizio che richiede un utente o un certificato di dispositivo nell'organizzazione. Per semplificare la procedura, è possibile utilizzare uno dei modelli di pianificazione seguenti:  
+Prima di distribuire i certificati di SCEP o PKCS in Microsoft Managed Desktop, è necessario raccogliere i requisiti per ogni servizio che richiede un utente o un certificato di dispositivo nell'organizzazione. Per semplificare l'attività, è possibile utilizzare uno dei modelli di pianificazione seguenti:  
  
 - [Modello di certificato PKCS](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-ready/downloads/PKCS-certificate-template.xlsx) 
 - [Modello di certificato di SCEP](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-ready/downloads/SCEP-certificate-template.xlsx)
@@ -38,7 +38,7 @@ Prima di distribuire i certificati di SCEP o PKCS in Microsoft Managed Desktop, 
 
 Per consentire a un dispositivo di essere fornito automaticamente con la configurazione Wi-Fi necessaria per la rete aziendale, potrebbe essere necessario un profilo di configurazione Wi-Fi. È possibile configurare Microsoft Managed Desktop per distribuire questi profili nei propri dispositivi. Se la sicurezza della rete richiede che i dispositivi facciano parte del dominio locale, potrebbe essere necessario valutare l'infrastruttura di rete Wi-Fi per assicurarsi che sia compatibile con i dispositivi Microsoft Managed Desktop (i dispositivi Microsoft Managed Desktop sono solo di Azure AD-join). 
  
-Prima di distribuire una configurazione Wi-Fi ai dispositivi Microsoft Managed Desktop, sarà necessario raccogliere i requisiti dell'organizzazione per ogni rete Wi-Fi. Per semplificare questa operazione, è possibile utilizzare questo [modello di profilo Wi-Fi](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-ready/downloads/WiFi-profile-template.xlsx).
+Prima di distribuire una configurazione di Wi-Fi ai dispositivi Microsoft Managed Desktop, sarà necessario raccogliere i requisiti dell'organizzazione per ogni rete di Wi-Fi. Per semplificare l'attività, è possibile utilizzare questo [modello di profilo WiFi](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-ready/downloads/WiFi-profile-template.xlsx).
  
  
 ## <a name="wired-connectivity-requirements-and-8021x-authentication"></a>Requisiti di connettività cablata e autenticazione 802.1 x 
@@ -57,7 +57,7 @@ Prima di distribuire un profilo di configurazione di rete cablata ai dispositivi
  
 ## <a name="deploy-certificate-infrastructure"></a>Distribuire l'infrastruttura di certificati  
  
-Se si dispone già di un'infrastruttura SCEP o PKCS esistente con Intune e questo soddisfa i requisiti, è possibile utilizzarla anche per Microsoft Managed Desktop. Se non esiste già un'infrastruttura SCEP o PKCS, è necessario prepararne una.  
+Se si dispone già di un'infrastruttura SCEP o PKCS esistente con Intune e questo approccio soddisfa i requisiti, è possibile utilizzarlo anche per Microsoft Managed Desktop. Se non esiste già un'infrastruttura SCEP o PKCS, è necessario prepararne una.  
  
 Per ulteriori informazioni, vedere [Configure a certificate profile for your devices in Microsoft Intune](https://docs.microsoft.com/intune/certificates-configure). 
  
@@ -67,8 +67,8 @@ Per ulteriori informazioni, vedere [Configure a certificate profile for your dev
  
 Dopo aver esportato il profilo LAN, è possibile preparare i criteri per Microsoft Managed Desktop attenendosi alla procedura seguente:   
  
-1. Creare un profilo personalizzato in Microsoft Intune per il profilo LAN utilizzando le impostazioni seguenti (vedere [Use Custom Settings for Windows 10 Devices in Intune](https://docs.microsoft.com/intune/custom-settings-windows-10)). In **impostazioni di URI OMA personalizzate**selezionare **Aggiungi**e quindi immettere i valori seguenti: 
-    - Nome: *ambiente di lavoro moderno-profilo LAN di Windows 10* 
+1. Creare un profilo personalizzato in Microsoft Intune per il profilo LAN utilizzando le impostazioni seguenti (vedere [Use Custom Settings for Windows 10 Devices in Intune](https://docs.microsoft.com/intune/custom-settings-windows-10)). In **impostazioni di URI OMA personalizzate** selezionare **Aggiungi** e quindi immettere i valori seguenti: 
+    - Nome: *Modern Workplace-Windows 10 LAN profile* 
     - Descrizione: immettere una descrizione che fornisce una panoramica dell'impostazione e qualsiasi altro dettaglio importante. 
     - OMA-URI (distinzione tra maiuscole e minuscole): Enter *./Device/vendor/MSFT/WiredNetwork/LanXML*
     - Tipo di dati: selezionare **stringa (file XML)**. 

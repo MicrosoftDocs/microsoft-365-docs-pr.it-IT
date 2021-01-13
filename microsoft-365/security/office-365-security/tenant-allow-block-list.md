@@ -1,5 +1,5 @@
 ---
-title: Gestire gli URL consentiti e bloccati nell'elenco Consenti/blocca tenant
+title: Gestire le consentite e i blocchi nell'elenco Consenti/blocca tenant
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -14,15 +14,15 @@ search.appverid:
 - MET150
 ms.collection:
 - M365-security-compliance
-description: Gli amministratori possono ottenere informazioni su come configurare le voci URL nell'elenco Consenti/blocca tenant nel centro sicurezza & Compliance.
-ms.openlocfilehash: f60e2f29bf9b880e9d2247fa59554300ae348a03
-ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
+description: Gli amministratori possono ottenere informazioni su come configurare le consentite e i blocchi nell'elenco Consenti/blocca tenant nel portale di sicurezza.
+ms.openlocfilehash: c789b09224d00f5bb41ae29d6d2a6efa64d23a8d
+ms.sourcegitcommit: 495b66b77d6dbe6d69e5b06b304089e4e476e568
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "49683212"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49799714"
 ---
-# <a name="manage-urls-in-the-tenant-allowblock-list"></a>Gestire URL nell'elenco di tenant consentiti/bloccati
+# <a name="managing-allows-and-blocks-in-the-tenant-allowblock-list"></a>Gestione di consentiti e blocchi nell'elenco tenant Allow/Block
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -36,9 +36,9 @@ L'elenco Consenti/blocca tenant nel centro sicurezza & conformità consente di i
 
 In questo argomento viene descritto come configurare le voci nell'elenco Consenti/blocca tenant nel centro sicurezza & Compliance o in PowerShell (Exchange Online PowerShell per le organizzazioni Microsoft 365 con le cassette postali in Exchange Online; standalone EOP PowerShell per organizzazioni senza cassette postali di Exchange Online).
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare?
+## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare
 
-- Aprire il Centro sicurezza e conformità in <https://protection.office.com/>. Per accedere direttamente alla pagina dell' **elenco Consenti/blocca tenant** , utilizzare <https://protection.office.com/tenantAllowBlockList> .
+- Aprire il Centro sicurezza e conformità in<https://protection.office.com/>. Per accedere direttamente alla pagina dell' **elenco Consenti/blocca tenant** , utilizzare <https://protection.office.com/tenantAllowBlockList> .
 
 - I valori degli URL disponibili sono descritti nella [sintassi degli URL per la sezione tenant Consenti/blocca elenco](#url-syntax-for-the-tenant-allowblock-list) più avanti in questo articolo.
 
@@ -81,7 +81,7 @@ Per informazioni dettagliate sulla sintassi per le voci URL, vedere la [sintassi
 
      - Verificare che l'impostazione sia disattivata ( ![ disattivazione disattivata ](../../media/scc-toggle-off.png) ) e che venga utilizzata la casella **scadenza** per specificare la data di scadenza per le voci.
 
-     oppure
+     o
 
      - Spostare l'interruttore verso destra per configurare le voci in modo che non scadano mai: ![Attiva](../../media/scc-toggle-on.png).
 
@@ -139,7 +139,7 @@ Non è possibile modificare il valore dell'URL stesso. Al contrario, è necessar
 
      - Verificare che l'impostazione sia disattivata ( ![ disattivazione disattivata ](../../media/scc-toggle-off.png) ) e che venga utilizzata la casella **scadenza** per specificare la data di scadenza per la voce.
 
-     oppure
+     o
 
      - Spostare l'interruttore verso destra per configurare la voce in modo che non scada mai: ![Attiva](../../media/scc-toggle-on.png).
 

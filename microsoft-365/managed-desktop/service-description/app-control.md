@@ -1,7 +1,7 @@
 ---
 title: Controllo app
-description: ''
-keywords: Microsoft Managed Desktop, Microsoft 365, servizio, documentazione
+description: Come utilizzare il controllo delle app e la relazione di trust con le applicazioni
+keywords: Microsoft Managed Desktop, Microsoft 365, servizi, documentazione
 ms.service: m365-md
 author: jaimeo
 ms.author: jaimeo
@@ -10,18 +10,18 @@ audience: ITpro
 ms.topic: article
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 32ed3f95ebb4299796c5ad3eb71802c949701b65
-ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
+ms.openlocfilehash: 6f5cc923b5a18b1f45dd186e88228db8c3a891cc
+ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "47289128"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49841304"
 ---
 # <a name="app-control"></a>Controllo app
 
 App Control è una procedura di sicurezza facoltativa in Microsoft Managed Desktop che limita l'esecuzione del codice sui dispositivi client. Questo controllo consente di ridurre il rischio di malware o script dannosi richiedendo che sia possibile eseguire solo il codice firmato da un elenco di editori approvati dal cliente. Esistono numerosi vantaggi per la sicurezza di questo controllo, ma si tratta principalmente di proteggere i dati e l'identità da exploit basati su client.
 
-Microsoft Managed Desktop semplifica la gestione dei criteri di controllo delle app creando un criterio di base che consente di creare scenari di produttività core. È possibile estendere la relazione di trust ai firmatari aggiuntivi specifici per le app e gli script nell'ambiente in uso. 
+Microsoft Managed Desktop semplifica la gestione dei criteri di controllo delle app creando un criterio di base che consente di creare scenari di produttività core. È possibile estendere la relazione di trust ad altri firmatari specifici delle app e degli script nell'ambiente in uso. 
 
 
 Qualsiasi tecnologia di sicurezza richiede un equilibrio tra esperienza utente, sicurezza e costo. Il controllo app riduce la minaccia del software dannoso nell'ambiente, ma ci sono conseguenze per l'utente e altre azioni per l'amministratore IT.
@@ -61,7 +61,7 @@ Se un utente diverso da un amministratore può aver aggiunto un'app o uno script
 
 ### <a name="signer-requests"></a>Richieste del firmatario
 
-Informazioni su quali app sono fornite dai fornitori di software di cui si ha fiducia archiviando una *richiesta di firmatario*. In questo modo, si aggiungono le informazioni di attendibilità nel criterio di controllo dell'applicazione di base e si consente a qualsiasi software firmato con il certificato di tale editore di essere eseguito sui dispositivi.
+Informazioni su quali app sono fornite dai publisher di software di cui si ha fiducia archiviando una *richiesta di firmatario*. In questo modo, si aggiungono le informazioni di attendibilità nel criterio di controllo dell'applicazione di base e si consente a qualsiasi software firmato con il certificato di tale editore di essere eseguito sui dispositivi.
 
 ## <a name="audit-and-enforced-policies"></a>Criteri di controllo e applicati
 

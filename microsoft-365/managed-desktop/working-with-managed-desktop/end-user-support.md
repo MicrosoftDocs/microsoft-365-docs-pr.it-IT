@@ -1,6 +1,6 @@
 ---
-title: Ottenere supporto per Microsoft Managed Desktop
-description: ''
+title: Ottenere il supporto utente per Microsoft Managed Desktop
+description: In che modo gli utenti possono ottenere assistenza con il servizio e i dispositivi
 keywords: Microsoft Managed Desktop, Microsoft 365, servizi, documentazione
 ms.service: m365-md
 author: jaimeo
@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 5b09b59efa6862782b04b7aa58d7c1fdc0383bb0
-ms.sourcegitcommit: 21c3e44862854c74e4008cfb661840f069c6b709
+ms.openlocfilehash: abd1b681f3d5900f846fde7922f2f4a2ca5821ef
+ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "48787535"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49841364"
 ---
 # <a name="getting-help-for-users"></a>Ottenere assistenza per gli utenti
 
@@ -25,13 +25,13 @@ Esistono due modi in cui gli utenti dell'organizzazione possono ottenere assiste
 
 ## <a name="get-help-app"></a>Ottenere l'app della Guida
 
-Il metodo preferito per fornire supporto agli utenti è **ottenere assistenza** , un'interfaccia di facile utilizzo integrata nel dispositivo utente.  
+Il metodo preferito per fornire supporto agli utenti è **ottenere assistenza**, un'interfaccia di facile utilizzo integrata nel dispositivo utente.  
 
 ![Icona della Guida per l'app](../../media/get-help.png)
 
-Si tratta di un'applicazione installata su tutti i dispositivi Microsoft Managed Desktop ed è bloccata alla barra delle applicazioni. 
+Get Help è un'applicazione installata su tutti i dispositivi Microsoft Managed Desktop ed è bloccata alla barra delle applicazioni. 
 
-- Gli utenti possono richiedere di nuovo una chiamata a un numero di telefono fornito o chattare online con una rappresentante del servizio.
+- Gli utenti possono richiedere una chiamata a un numero di telefono fornito o chattare online con una rappresentante del servizio.
 - Le richieste che non rientrano nell'ambito di supporto di Microsoft Managed Desktop vengono reindirizzate all'helpdesk IT locale tramite telefonata.
 
 > [!NOTE]
@@ -42,7 +42,7 @@ Affinché gli utenti siano in grado di ottenere assistenza tramite l'app, verifi
 
 - Il dispositivo deve essere registrato con Microsoft Managed Desktop utilizzando uno dei metodi disponibili in [set up Microsoft Managed Desktop Devices](../get-started/set-up-devices.md), ad esempio, [registrare i nuovi dispositivi manualmente](../get-started/register-devices-self.md).
 - La lingua di visualizzazione per il dispositivo deve essere impostata su una qualsiasi delle impostazioni locali in lingua inglese: en-US, en-GB, en-au, en-NZ o en-ca.
-- L'app Get Help dovrebbe essere aggiornata. Per confermare questa operazione, verificare la disponibilità di aggiornamenti delle app in Microsoft Store.
+- L'app Get Help dovrebbe essere aggiornata. Per confermarne lo stato, verificare la disponibilità di aggiornamenti delle app in Microsoft Store.
 - Alcuni [endpoint](../get-ready/network.md#endpoints-allowed-that-are-necessary-for-microsoft-managed-desktop) devono essere accessibili dal dispositivo.
 
 > [!NOTE]
@@ -52,7 +52,7 @@ Se i prerequisiti sono stati verificati e l'app Ottieni aiuto continua a non fun
 
 ## <a name="phone-support"></a>Supporto telefonico
 
-Gli utenti con dispositivi desktop Microsoft gestiti hanno anche accesso ai numeri di telefono gratuiti che possono chiamare. Questa operazione è destinata a essere utilizzata quando la guida non è disponibile. Ad esempio, se non sono in grado di accedere al dispositivo o se il dispositivo è stato interrotto. Di seguito sono richiamati i numeri di telefono per il supporto telefonico:
+Gli utenti con dispositivi desktop Microsoft gestiti hanno anche accesso ai numeri di telefono gratuiti che possono chiamare. I numeri sono pensati per essere usati quando la guida non è disponibile. Ad esempio, se non sono in grado di accedere al dispositivo o se il dispositivo è stato interrotto. Di seguito sono richiamati i numeri di telefono per il supporto telefonico:
 
 - Stati Uniti: + 1 855 425 0216
 - Canada (escluso Québec): + 1 855 425 0216
@@ -71,7 +71,7 @@ Gli utenti con dispositivi desktop Microsoft gestiti hanno anche accesso ai nume
 >[!NOTE]
 >È necessario che l'indirizzo di posta elettronica dell'organizzazione sia pronto quando si chiama per verificare l'identità. 
 
-## <a name="additional-resources"></a>Risorse aggiuntive
+## <a name="more-resources"></a>Altre risorse
 - [Supporto di amministrazione per Microsoft Managed Desktop](admin-support.md). 
 - [Supporto per Microsoft Managed Desktop](../service-description/support.md).
 - Se è già stato sottoscritto Microsoft Managed Desktop, è possibile trovare procedure dettagliate, flussi di processo, istruzioni di lavoro e domande frequenti sulla guida di amministrazione di Microsoft Managed Desktop nelle **risorse online** sotto la sezione Microsoft Managed Desktop del menu **Amministrazione tenant** in [Microsoft Endpoint Manager](https://endpoint.microsoft.com/).

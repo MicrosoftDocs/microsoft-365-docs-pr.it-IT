@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: e790dfa986e6132295279e64321bda71a736a4b2
-ms.sourcegitcommit: 3c39866865c8c61bce2169818d8551da65033cfe
+ms.openlocfilehash: 84b17b70aa9b95727036e8f1febd4d0adec740a9
+ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "48816851"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49841223"
 ---
 # <a name="insider-risk-management-cases"></a>Casi di gestione dei rischi Insider
 
@@ -34,19 +34,19 @@ Dopo aver esaminato i dettagli di un caso, è possibile eseguire le operazioni s
 
 Il dashboard Insider Risk Management **Cases** consente di visualizzare e agire sui casi. Ogni widget del report nel dashboard Visualizza le informazioni per gli ultimi 30 giorni.
 
-- **Casi attivi** : numero totale di casi attivi in esame.
-- **Casi negli ultimi 30 giorni** : il numero totale di casi creati, ordinati in base allo stato *attivo* e *chiuso* .
-- **Statistiche** : tempo medio dei casi attivi, elencati in ore, giorni o mesi.
+- **Casi attivi**: numero totale di casi attivi in esame.
+- **Casi negli ultimi 30 giorni**: il numero totale di casi creati, ordinati in base allo stato *attivo* e *chiuso* .
+- **Statistiche**: tempo medio dei casi attivi, elencati in ore, giorni o mesi.
 
 La coda case elenca tutti i casi attivi e chiusi per l'organizzazione, oltre allo stato corrente dei seguenti attributi di caso:
 
-- **Nome del caso** : il nome del caso, definito quando viene confermato un avviso e viene creato il caso.  
-- **Stato** : lo stato del caso, *attivo* o *chiuso* .
-- **Utente** : l'utente per il caso. Se Anonymization per i nomi utente è abilitato, vengono visualizzate le informazioni di anonimi.
-- **Caso di tempo aperto** : il tempo trascorso dopo l'apertura del caso.
-- **Totale avvisi sui criteri** : il numero di corrispondenze di criteri incluse nel caso. Questo numero potrebbe aumentare se sono stati aggiunti nuovi avvisi al caso.
-- **Ultimo aggiornamento** : il tempo trascorso dal momento in cui è stata aggiunta una nota del caso o una modifica nello stato del caso.
-- **Ultimo aggiornamento** : il nome dell'analista di gestione dei rischi insider o del ricercatore che ha aggiornato l'ultima volta il caso.
+- **Nome del caso**: il nome del caso, definito quando viene confermato un avviso e viene creato il caso.  
+- **Stato**: lo stato del caso, *attivo* o *chiuso*.
+- **Utente**: l'utente per il caso. Se Anonymization per i nomi utente è abilitato, vengono visualizzate le informazioni di anonimi.
+- **Caso di tempo aperto**: il tempo trascorso dopo l'apertura del caso.
+- **Totale avvisi sui criteri**: il numero di corrispondenze di criteri incluse nel caso. Questo numero potrebbe aumentare se sono stati aggiunti nuovi avvisi al caso.
+- **Ultimo aggiornamento**: il tempo trascorso dal momento in cui è stata aggiunta una nota del caso o una modifica nello stato del caso.
+- **Ultimo aggiornamento**: il nome dell'analista di gestione dei rischi insider o del ricercatore che ha aggiornato l'ultima volta il caso.
 
 ![Dashboard dei casi di gestione del rischio Insider](../media/insider-risk-cases-dashboard.png)
 
@@ -58,11 +58,11 @@ Utilizzare il controllo di **ricerca** per cercare i nomi dei casi per testo spe
 
 ## <a name="filter-cases"></a>Casi di filtro
 
-A seconda del numero e del tipo di criteri di gestione dei rischi Insider attivi nell'organizzazione, la revisione di una coda di casi di grandi dimensioni può essere difficile. L'utilizzo di filtri case può aiutare gli analisti e gli investigatori a ordinare i casi in base a diversi attributi. Per filtrare gli avvisi nel **dashboard dei casi** , selezionare il controllo **filtro** . È possibile filtrare i casi in base a uno o più attributi:
+A seconda del numero e del tipo di criteri di gestione dei rischi Insider attivi nell'organizzazione, la revisione di una coda di casi di grandi dimensioni può essere difficile. L'utilizzo di filtri case può aiutare gli analisti e gli investigatori a ordinare i casi in base a diversi attributi. Per filtrare gli avvisi nel **dashboard dei casi**, selezionare il controllo **filtro** . È possibile filtrare i casi in base a uno o più attributi:
 
-- **Stato** : selezionare uno o più valori di stato per filtrare l'elenco dei casi. Le opzioni sono *attive* e *chiuse* .
-- **Caso di tempo aperto** : selezionare le date di inizio e di fine per il caso in cui è stato aperto.
-- **Ultimo aggiornamento** : selezionare le date di inizio e di fine per il caso in cui è stato aggiornato.
+- **Stato**: selezionare uno o più valori di stato per filtrare l'elenco dei casi. Le opzioni sono *attive* e *chiuse*.
+- **Caso di tempo aperto**: selezionare le date di inizio e di fine per il caso in cui è stato aperto.
+- **Ultimo aggiornamento**: selezionare le date di inizio e di fine per il caso in cui è stato aggiornato.
 
 ## <a name="investigate-a-case"></a>Esaminare un caso
 
@@ -80,11 +80,11 @@ La scheda **Panoramica del caso** riepiloga la cronologia delle attività di avv
 
 Il riquadro dei **Dettagli del case** è disponibile in tutte le schede di gestione dei casi e riepiloga i dettagli del caso per analisti e ricercatori di rischio. Include le aree seguenti:
 
-- **Nome del caso** : il nome del caso, preceduto da un numero di sequenza di caso generato automaticamente e il nome del rischio associato al modello di criteri per il quale il primo avviso ha confermato la corrispondenza. 
-- **Stato del caso** : lo stato corrente del caso, *attivo* o *chiuso* .
-- **Punteggio di rischio dell'utente** : il livello di rischio calcolato corrente dell'utente per il caso. Questo punteggio viene calcolato ogni 24 ore e utilizza i punteggi dei rischi di avviso provenienti da tutti gli avvisi attivi associati all'utente.
-- **Avvisi confermati** : elenco degli avvisi per l'utente confermati per il caso.
-- **Contenuto correlato** : elenco di contenuti, ordinati in base a origini di contenuto e tipi. Ad esempio, nel caso di contenuto di avviso in SharePoint Online, è possibile che vengano visualizzati i nomi delle cartelle o dei file elencati associati all'attività di rischio per gli avvisi nel caso.
+- **Nome del caso**: il nome del caso, preceduto da un numero di sequenza di caso generato automaticamente e il nome del rischio associato al modello di criteri per il quale il primo avviso ha confermato la corrispondenza. 
+- **Stato del caso**: lo stato corrente del caso, *attivo* o *chiuso*.
+- **Punteggio di rischio dell'utente**: il livello di rischio calcolato corrente dell'utente per il caso. Questo punteggio viene calcolato ogni 24 ore e utilizza i punteggi dei rischi di avviso provenienti da tutti gli avvisi attivi associati all'utente.
+- **Avvisi confermati**: elenco degli avvisi per l'utente confermati per il caso.
+- **Contenuto correlato**: elenco di contenuti, ordinati in base a origini di contenuto e tipi. Ad esempio, nel caso di contenuto di avviso in SharePoint Online, è possibile che vengano visualizzati i nomi delle cartelle o dei file elencati associati all'attività di rischio per gli avvisi nel caso.
 
 ![Dettagli sul caso di gestione dei rischi Insider](../media/insider-risk-case-details.png)
 
@@ -106,10 +106,10 @@ Utilizzare il controllo di ricerca per cercare i nomi degli avvisi per il testo 
 
 Utilizzare il controllo Filter per filtrare gli avvisi in base a diversi attributi, tra cui:
 
-- **Stato** : selezionare uno o più valori di stato per filtrare l'elenco degli avvisi. Le opzioni vengono *confermate* , *ignorate* , *devono essere riesaminate* e *risolte* .
-- **Severity** : selezionare uno o più livelli di gravità dei rischi di avviso per filtrare l'elenco degli avvisi. Le opzioni sono *High* , *medium* e *low* .
-- **Tempo rilevato** : selezionare le date di inizio e di fine per il momento in cui è stato creato l'avviso.
-- **Criterio** : selezionare uno o più criteri per filtrare gli avvisi generati dai criteri selezionati.
+- **Stato**: selezionare uno o più valori di stato per filtrare l'elenco degli avvisi. Le opzioni vengono *confermate*, *ignorate*, *devono essere riesaminate* e *risolte*.
+- **Severity**: selezionare uno o più livelli di gravità dei rischi di avviso per filtrare l'elenco degli avvisi. Le opzioni sono *High*, *medium* e *low*.
+- **Tempo rilevato**: selezionare le date di inizio e di fine per il momento in cui è stato creato l'avviso.
+- **Criterio**: selezionare uno o più criteri per filtrare gli avvisi generati dai criteri selezionati.
 
 ### <a name="user-activity"></a>Attività dell'utente
 
@@ -117,22 +117,22 @@ La scheda **attività utente** è uno degli strumenti più potenti per l'analisi
 
 ![Attività utente Gestione rischi Insider](../media/insider-risk-user-activities.png)
 
-1. **Filtri temporali data e finestra** : per impostazione predefinita, gli ultimi sei mesi di avvisi confermati nel caso vengono visualizzati nel grafico attività utente. È possibile filtrare facilmente la visualizzazione del grafico con i controlli Slider a entrambe le estremità della finestra del grafico oppure definendo date di inizio e fine specifiche nel controllo filtro grafico.
-2. **Attività e dettagli dell'avviso di rischio** : le attività a rischio sono visualizzate visivamente come bolle colorate nel grafico attività utente. Le bolle vengono create per diverse categorie di rischi e le dimensioni delle bolle sono proporzionali al numero di attività di rischio per la categoria. Selezionare una bolla per visualizzare i dettagli di ogni attività di rischio. I dettagli includono:
+1. **Filtri temporali data e finestra**: per impostazione predefinita, gli ultimi sei mesi di avvisi confermati nel caso vengono visualizzati nel grafico attività utente. È possibile filtrare facilmente la visualizzazione del grafico con i controlli Slider a entrambe le estremità della finestra del grafico oppure definendo date di inizio e fine specifiche nel controllo filtro grafico.
+2. **Attività e dettagli dell'avviso di rischio**: le attività a rischio sono visualizzate visivamente come bolle colorate nel grafico attività utente. Le bolle vengono create per diverse categorie di rischi e le dimensioni delle bolle sono proporzionali al numero di attività di rischio per la categoria. Selezionare una bolla per visualizzare i dettagli di ogni attività di rischio. I dettagli includono:
     - **Data** dell'attività di rischio.
-    - La **Categoria attività di rischio** . Ad esempio, *i messaggi di posta elettronica con allegati inviati al di fuori dell'organizzazione* o dei *file scaricati da SharePoint Online* .
+    - La **Categoria attività di rischio**. Ad esempio, *i messaggi di posta elettronica con allegati inviati al di fuori dell'organizzazione* o dei *file scaricati da SharePoint Online*.
     - **Punteggio di rischio** per l'avviso. Questo punteggio è il punteggio numerico per il livello di gravità dei rischi di avviso.
     - Numero di eventi associati all'avviso. Sono inoltre disponibili collegamenti a ogni file o indirizzo di posta elettronica associato all'attività di rischio.
-3. **Legenda attività rischio** : nella parte inferiore del grafico attività utente, una legenda con codice a colori consente di determinare rapidamente la categoria dei rischi per ogni avviso.
-4. **Cronologia attività di rischio** : sono elencate le cronologie complete di tutti gli avvisi di rischio associati al caso, inclusi tutti i dettagli disponibili nel corrispondente bolla di avviso.
-5. **Azioni del caso** : le opzioni per la risoluzione del caso si trovano nella barra degli strumenti azione caso. È possibile risolvere un caso, inviare un messaggio di posta elettronica all'utente oppure inoltrare il caso per una ricerca di dati o di utenti.
+3. **Legenda attività rischio**: nella parte inferiore del grafico attività utente, una legenda con codice a colori consente di determinare rapidamente la categoria dei rischi per ogni avviso.
+4. **Cronologia attività di rischio**: sono elencate le cronologie complete di tutti gli avvisi di rischio associati al caso, inclusi tutti i dettagli disponibili nel corrispondente bolla di avviso.
+5. **Azioni del caso**: le opzioni per la risoluzione del caso si trovano nella barra degli strumenti azione caso. È possibile risolvere un caso, inviare un messaggio di posta elettronica all'utente oppure inoltrare il caso per una ricerca di dati o di utenti.
 
 ### <a name="activity-explorer-preview"></a>Esplora attività (anteprima)
 
 >[!IMPORTANT]
 >La scheda Esplora attività è disponibile nell'area di gestione dei casi per gli utenti con eventi di attivazione dopo che questa funzionalità è disponibile nell'organizzazione.
 
-La scheda **Esplora attività** consente agli analisti e ai ricercatori dei rischi di esaminare i dettagli relativi alle attività associati agli avvisi di rischio. Ad esempio, come parte delle azioni di gestione dei casi, gli investigatori e gli analisti potrebbero dover rivedere tutte le attività a rischio associate al caso per ulteriori dettagli. Con **Esplora attività** , i revisori possono esaminare rapidamente una sequenza temporale di attività di rischio rilevata e identificare e filtrare tutte le attività di rischio associate agli avvisi.
+La scheda **Esplora attività** consente agli analisti e ai ricercatori dei rischi di esaminare i dettagli relativi alle attività associati agli avvisi di rischio. Ad esempio, come parte delle azioni di gestione dei casi, gli investigatori e gli analisti potrebbero dover rivedere tutte le attività a rischio associate al caso per ulteriori dettagli. Con **Esplora attività**, i revisori possono esaminare rapidamente una sequenza temporale di attività di rischio rilevata e identificare e filtrare tutte le attività di rischio associate agli avvisi.
 
 Per ulteriori informazioni sull'attività Esplora risorse, vedere l'articolo [Insider Risk Management Alerts](insider-risk-management-alerts.md#activity-explorer-preview) .
 
@@ -154,7 +154,7 @@ Per aggiungere una nota a un caso:
 
 1. Nel [centro conformità di Microsoft 365](https://compliance.microsoft.com)accedere a **gestione dei rischi Insider** e selezionare la scheda **case** .
 2. Selezionare un caso, quindi selezionare la scheda **note case** .
-3. Selezionare **Add case note** .
+3. Selezionare **Add case note**.
 4. Nella finestra di dialogo **Aggiungi nota caso** Digitare la nota per il caso. Fare clic su **Salva** per aggiungere la nota al caso oppure selezionare **Annulla** Chiudi senza salvare la nota nel caso.
 
 ### <a name="contributors"></a>Contributori
@@ -163,8 +163,8 @@ La scheda **Contributors** nel caso in cui gli analisti e gli investigatori del 
 
 Tutti i casi di gestione dei rischi Insider devono essere gestiti con i controlli di accesso adeguati per mantenere la riservatezza e l'integrità dell'indagine. Per garantire il controllo dell'accesso dei casi, agli utenti viene assegnato uno dei due tipi di accesso ai casi:
 
-- **Accesso permanente** : l'accesso permanente viene concesso automaticamente agli utenti con gli **analisti di gestione dei rischi Insider** e i ruoli **investigatori di gestione dei rischi Insider** quando il caso viene creato da un avviso. L'accesso permanente garantisce il controllo completo del caso per tutta la durata del caso e garantisce la possibilità di aggiungere altri collaboratori del caso.
-- **Accesso temporaneo** : l'accesso temporaneo è concesso solo agli utenti da collaboratori che hanno accesso permanente per il caso. In genere, questo livello di accesso viene concesso all'utente che deve aggiungere note a un caso. I collaboratori con accesso temporaneo dispongono di tutti i controlli di gestione dei casi, tranne:
+- **Accesso permanente**: l'accesso permanente viene concesso automaticamente agli utenti con gli **analisti di gestione dei rischi Insider** e i ruoli **investigatori di gestione dei rischi Insider** quando il caso viene creato da un avviso. L'accesso permanente garantisce il controllo completo del caso per tutta la durata del caso e garantisce la possibilità di aggiungere altri collaboratori del caso.
+- **Accesso temporaneo**: l'accesso temporaneo è concesso solo agli utenti da collaboratori che hanno accesso permanente per il caso. In genere, questo livello di accesso viene concesso all'utente che deve aggiungere note a un caso. I collaboratori con accesso temporaneo dispongono di tutti i controlli di gestione dei casi, tranne:
     - Autorizzazione per confermare o ignorare gli avvisi
     - Autorizzazione per la modifica dei collaboratori per i casi
     - Autorizzazione per la visualizzazione di file e messaggi nell'Esplora contenuto
@@ -173,9 +173,9 @@ Per aggiungere un collaboratore a un caso:
 
 1. Nel [centro conformità di Microsoft 365](https://compliance.microsoft.com)accedere a **gestione dei rischi Insider** e selezionare la scheda **case** .
 2. Selezionare un caso, quindi selezionare la scheda **Contributors** .
-3. Selezionare **Aggiungi collaboratore** .
+3. Selezionare **Aggiungi collaboratore**.
 4. Nella finestra di dialogo **Aggiungi collaboratore** , iniziare a digitare il nome dell'utente che si desidera aggiungere, quindi selezionare l'utente dall'elenco degli utenti consigliato. Questo elenco viene generato da Azure Active Directory della sottoscrizione tenant.
-5. Nella finestra di dialogo **Aggiungi collaboratore** selezionare il livello di accesso per il collaboratore. È possibile selezionare **permanente** o **temporanea** .
+5. Nella finestra di dialogo **Aggiungi collaboratore** selezionare il livello di accesso per il collaboratore. È possibile selezionare **permanente** o **temporanea**.
 6. Selezionare **Aggiungi** per aggiungere l'utente come collaboratore o selezionare **Annulla** Chiudi la finestra di dialogo senza aggiungere l'utente come collaboratore.
 
 ## <a name="case-actions"></a>Azioni del caso
@@ -184,7 +184,7 @@ Gli analisti di rischio e gli investigatori possono intervenire su un caso in un
 
 ### <a name="send-email-notice"></a>Invio di notifiche di posta elettronica
 
-Nella maggior parte dei casi, le azioni degli utenti che creano avvisi di rischio Insider sono accidentali o casuali L'invio di un avviso di sollecito all'utente tramite posta elettronica è un metodo efficace per documentare la revisione dei casi e l'azione, nonché un metodo per ricordare agli utenti i criteri aziendali o per indirizzarli all'aggiornamento. Gli avvisi vengono generati da [modelli di avviso creati](insider-risk-management-notices.md) per l'infrastruttura di gestione dei rischi Insider.
+Nella maggior parte dei casi, le azioni degli utenti che creano avvisi di rischio Insider sono accidentali o casuali L'invio di un avviso di sollecito all'utente tramite posta elettronica è un metodo efficace per documentare la revisione dei casi e l'azione ed è un metodo che consente di ricordare agli utenti i criteri aziendali o di indirizzarli all'aggiornamento. Gli avvisi vengono generati da [modelli di avviso creati](insider-risk-management-notices.md) per l'infrastruttura di gestione dei rischi Insider.
 
 È importante tenere presente che l'invio di una notifica di posta elettronica a un utente * non *_consente_* di risolvere il caso come _Closed *. In alcuni casi, è possibile che si desideri lasciare un caso aperto dopo aver inviato un avviso a un utente per cercare altre attività a rischio senza aprire un nuovo caso. Se si desidera risolvere un caso dopo l'invio di un avviso, è necessario selezionare il **caso di risoluzione** come passaggio di follow-on dopo l'invio di un avviso.
 
@@ -204,11 +204,11 @@ Per inoltrare un caso a un'indagine dell'utente:
 
 1. Nel [centro conformità di Microsoft 365](https://compliance.microsoft.com)accedere a **gestione dei rischi Insider** e selezionare la scheda **case** .
 2. Selezionare un caso, quindi selezionare il pulsante **escalation for investigation** sulla barra degli strumenti azione case.
-3. Nella finestra **di dialogo escalation for investigation** immettere un nome per la nuova indagine utente. Se necessario, immettere le note relative al caso e selezionare **escalation** .
+3. Nella finestra **di dialogo escalation for investigation** immettere un nome per la nuova indagine utente. Se necessario, immettere le note relative al caso e selezionare **escalation**.
 4. Esaminare i campi avvisi e aggiornarli in base alle esigenze. I valori immessi qui sostituiranno i valori del modello.
 5. Selezionare **conferma** per creare il caso di indagine dell'utente oppure fare clic su **Annulla** per chiudere la finestra di dialogo senza creare un nuovo caso di indagine utente.
 
-Dopo che il caso di gestione dei rischi Insider è stato inoltrato a un nuovo caso di indagine dell'utente, è possibile esaminare il nuovo caso nell'area avanzata di **eDiscovery**  >  **Advanced** nel centro conformità di Microsoft 365.
+Dopo che il caso di gestione dei rischi Insider è stato inoltrato a un nuovo caso di indagine dell'utente, è possibile esaminare il nuovo caso nell'area avanzata di **eDiscovery**  >   nel centro conformità di Microsoft 365.
 
 ### <a name="run-automated-tasks-with-power-automate-flows-for-the-case"></a>Eseguire attività automatizzate con flussi automatici di alimentazione per il caso
 
@@ -217,12 +217,13 @@ Utilizzando i flussi automatici di alimentazione automatizzati consigliati, gli 
 - Richiedere informazioni da HR o business su un utente in un caso di rischio Insider
 - Gestione notifiche quando un utente dispone di un avviso di rischio Insider
 - Aggiungere un promemoria calendario per il follow-up di un caso di rischio Insider
+- Creare un record per un caso di gestione dei rischi insider in ServiceNow
 
 Per eseguire, gestire o creare flussi automatici di alimentazione per un caso di gestione dei rischi Insider:
 
 1. Selezionare **automatizza** sulla barra degli strumenti azione case. 
-2. Scegliere il flusso Power automatizzate per l'esecuzione, quindi selezionare **Esegui flusso** . 
-3. Dopo il completamento del flusso, selezionare **fine** .
+2. Scegliere il flusso Power automatizzate per l'esecuzione, quindi selezionare **Esegui flusso**. 
+3. Dopo il completamento del flusso, selezionare **fine**.
 
 Per ulteriori informazioni sui flussi automatici di alimentazione per la gestione dei rischi Insider, vedere [Introduzione alle impostazioni di gestione dei rischi Insider](insider-risk-management-settings.md#power-automate-flows-preview).
 
@@ -245,29 +246,29 @@ La condivisione di un caso di gestione dei rischi insider consente a ricercatori
 
 Sono disponibili le opzioni di condivisione seguenti:
 
-- **ServiceNow** : dopo aver configurato il connettore Microsoft 365 ServiceNow per l'organizzazione Microsoft 365, è possibile condividere facilmente un collegamento al caso, aprire un evento imprevisto o richiedere una modifica all'organizzazione di ServiceNow. Per condividere il caso con ServiceNow, selezionare **Condividi**  >  **ServiceNow** dall'azione maiuscole/minuscole. L'integrazione di ServiceNow con i supporti di gestione dei rischi Insider include le seguenti operazioni e informazioni sul caso:
-    - **Nome attività** : il nome della nuova attività di ServiceNow.
-    - **Descrizione attività** : descrizione per la nuova attività ServiceNow. Questo campo Descrizione modificabile include automaticamente un collegamento al caso di gestione dei rischi Insider.
+- **ServiceNow**: dopo aver configurato il connettore Microsoft 365 ServiceNow per l'organizzazione Microsoft 365, è possibile condividere facilmente un collegamento al caso, aprire un evento imprevisto o richiedere una modifica all'organizzazione di ServiceNow. Per condividere il caso con ServiceNow, selezionare **Condividi**  >  **ServiceNow** dall'azione maiuscole/minuscole. L'integrazione di ServiceNow con i supporti di gestione dei rischi Insider include le seguenti operazioni e informazioni sul caso:
+    - **Nome attività**: il nome della nuova attività di ServiceNow.
+    - **Descrizione attività**: descrizione per la nuova attività ServiceNow. Questo campo Descrizione modificabile include automaticamente un collegamento al caso di gestione dei rischi Insider.
     - **Tipo** di attività: il tipo di attività per la nuova attività di ServiceNow, ovvero la *richiesta di modifica* o di *incidente* .
-    - **Priorità** : la priorità per la nuova attività di ServiceNow, ovvero *pianificazione* , *bassa* , *moderata* , *elevata* o *critica* .
+    - **Priorità**: la priorità per la nuova attività di ServiceNow, ovvero *pianificazione*, *bassa*, *moderata*, *elevata* o *critica*.
     - **Data** scadenza: la data richiesta per il completamento dell'attività di ServiceNow.
 
 ![Condivisione di gestione dei rischi Insider con ServiceNow](../media/insider-risk-share-servicenow.png)
 
-- **Posta elettronica** : condivide un collegamento al caso di gestione dei rischi insider in un messaggio di posta elettronica. È possibile scegliere qualsiasi client di posta elettronica configurato localmente con questa opzione di condivisione. Per condividere il collegamento del caso con la posta elettronica, selezionare **Condividi** la  >  **posta elettronica** dalla barra degli strumenti azione caso.
-- **Copia collegamento** : copia un collegamento al caso di gestione dei rischi Insider negli Appunti. Per copiare il collegamento al caso negli Appunti, selezionare **Condividi**  >  **copia collegamento** dalla barra degli strumenti azione case.
+- **Posta elettronica**: condivide un collegamento al caso di gestione dei rischi insider in un messaggio di posta elettronica. È possibile scegliere qualsiasi client di posta elettronica configurato localmente con questa opzione di condivisione. Per condividere il collegamento del caso con la posta elettronica, selezionare **Condividi** la  >  **posta elettronica** dalla barra degli strumenti azione caso.
+- **Copia collegamento**: copia un collegamento al caso di gestione dei rischi Insider negli Appunti. Per copiare il collegamento al caso negli Appunti, selezionare **Condividi**  >  **copia collegamento** dalla barra degli strumenti azione case.
 
 ### <a name="resolve-the-case"></a>Risolvere il caso
 
 Dopo che gli analisti e gli investigatori di rischio hanno completato la revisione e le indagini, è possibile risolvere un caso in cui agiscono tutti gli avvisi attualmente inclusi nel caso. La risoluzione di un caso aggiunge una classificazione di soluzione, modifica lo stato del caso in *Closed* e i motivi di azione di risoluzione vengono aggiunti automaticamente alla coda di note del caso nel dashboard di **Notes del caso** . I casi vengono risolti in base a quanto segue:
 
-- **Benigno** : la classificazione dei casi in cui gli avvisi corrispondono ai criteri sono valutati come a basso rischio, non grave o falso positivo.
-- **Violazione dei criteri confermata** : la classificazione dei casi in cui gli avvisi corrispondono ai criteri sono considerati rischiosi, gravi o il risultato di intenti dolosi.
+- **Benigno**: la classificazione dei casi in cui gli avvisi corrispondono ai criteri sono valutati come a basso rischio, non grave o falso positivo.
+- **Violazione dei criteri confermata**: la classificazione dei casi in cui gli avvisi corrispondono ai criteri sono considerati rischiosi, gravi o il risultato di intenti dolosi.
 
 Per risolvere un caso:
 
 1. Nel [centro conformità di Microsoft 365](https://compliance.microsoft.com)accedere a **gestione dei rischi Insider** e selezionare la scheda **case** .
 2. Selezionare un caso, quindi selezionare il pulsante **Risolvi caso** sulla barra degli strumenti azione caso.
-3. Nella finestra di dialogo **Risolvi il caso** , selezionare il controllo **Risolvi come** a discesa per selezionare la classificazione della risoluzione per il caso. Le opzioni sono violazioni dei criteri **benigne** o **confermate** .
+3. Nella finestra di dialogo **Risolvi il caso** , selezionare il controllo **Risolvi come** a discesa per selezionare la classificazione della risoluzione per il caso. Le opzioni sono violazioni dei criteri **benigne** o **confermate**.
 4. Nella finestra di dialogo **Risolvi il caso** , immettere i motivi della classificazione della risoluzione nel campo di testo **azione** .
 5. Selezionare **Risolvi** per chiudere il caso o selezionare **Annulla** Chiudi la finestra di dialogo senza risolvere il caso.

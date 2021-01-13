@@ -1,7 +1,7 @@
 ---
 title: App in Microsoft Managed Desktop
-description: ''
-keywords: Microsoft Managed Desktop, Microsoft 365, servizio, documentazione
+description: Viene illustrato il modo in cui vengono gestite le app, inclusa la modalità di creazione di pacchetti, distribuzione e supporto.
+keywords: Microsoft Managed Desktop, Microsoft 365, servizi, documentazione
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: da5798b3412cb69580e5d9adc582f0ca4add1e3e
-ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
+ms.openlocfilehash: 20d68ec007ccda82816ad2288428016019f6d4b2
+ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "47289592"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49840694"
 ---
 # <a name="apps-in-microsoft-managed-desktop"></a>App in Microsoft Managed Desktop
 
@@ -47,7 +47,7 @@ Sono ancora necessarie alcune operazioni da eseguire con queste app:
 
 ## <a name="apps-you-provide"></a>App fornite
 
-Naturalmente, è probabile che si disponga di una serie di altre app necessarie per le operazioni aziendali. Questi possono essere distribuiti solo ai dispositivi Microsoft Managed Desktop mediante la pipeline di distribuzione di Microsoft Intune. Se l'applicazione ne ha bisogno, è possibile farli impacchettare da un fornitore (che potrebbe essere un fornitore non Microsoft o Microsoft Consulting Services (MCS)) oppure se si dispone dei mezzi necessari, è possibile imballarli personalmente. Successivamente, aggiungere questi pacchetti al portale Microsoft Managed Desktop e assegnarli ai gruppi di Azure Active Directory per attivare la distribuzione. 
+È probabile che siano presenti altre applicazioni necessarie per le operazioni aziendali. Queste app possono essere distribuite solo nei dispositivi Microsoft Managed Desktop mediante la pipeline di distribuzione di Microsoft Intune. Se l'applicazione ne ha bisogno, è possibile farli impacchettare da un fornitore (che potrebbe essere un fornitore non Microsoft o Microsoft Consulting Services (MCS)) oppure se si dispone dei mezzi necessari, è possibile imballarli personalmente. Successivamente, aggiungere questi pacchetti al portale Microsoft Managed Desktop e assegnarli ai gruppi di Azure Active Directory per attivare la distribuzione. 
 
 Se le app vengono attualmente distribuite tramite Microsoft endpoint Configuration Manager, Microsoft Managed Desktop può fornire una query per valutare le app e individuare quelle pronte per la migrazione a Microsoft Intune e quali potrebbero essere necessarie per la rettifica.
 
@@ -56,12 +56,12 @@ Se le app vengono attualmente distribuite tramite Microsoft endpoint Configurati
 Esaminare le app, verificando:
 
 - Nessuna delle app è vietata o ha un comportamento limitato, come descritto in [Microsoft Managed Desktop App requirements](https://aka.ms/app-req).
-- Le app devono essere pronte per la gestione da Microsoft Intune. Per ulteriori informazioni, vedere [distribuzione di app di Windows 10 con Microsoft Intune](https://docs.microsoft.com/intune/apps-windows-10-app-deploy) e [aggiungere app a Microsoft Intune](https://docs.microsoft.com/intune/apps-add).
+- Le app devono essere pronte per la gestione da Microsoft Intune. Per ulteriori informazioni su questo argomento, vedere [Windows 10 App Deployment Using Microsoft Intune](https://docs.microsoft.com/intune/apps-windows-10-app-deploy) and [Add Apps to Microsoft Intune](https://docs.microsoft.com/intune/apps-add).
 - Altri requisiti di preconfezionamento, ad esempio la fornitura di codici di licenza, il contratto con le condizioni di licenza e la preimpostazione delle connessioni server.
 
 ### <a name="decide-how-to-package-apps"></a>Decidere come eseguire il pacchetto di app
 
-Alcuni fornitori di software indipendenti potrebbero richiedere che le app siano inserite in un pacchetto prima di essere distribuite in modo centralizzato. "Packaging" indica che il programma di installazione dell'app è configurato con impostazioni come le chiavi di licenza, le posizioni dei server remoti o i collegamenti desktop in modo che sia possibile installare l'app in background.
+Alcuni editori di software indipendenti potrebbero richiedere che le app siano inserite in un pacchetto prima di essere distribuite in modo centralizzato. "Packaging" indica che il programma di installazione dell'app è configurato con impostazioni come le chiavi di licenza, le posizioni dei server remoti o i collegamenti desktop in modo che sia possibile installare l'app in background.
 
 Sono disponibili tre opzioni per ottenere i pacchetti delle app: 
 
@@ -69,10 +69,6 @@ Sono disponibili tre opzioni per ottenere i pacchetti delle app:
 - È possibile creare pacchetti per le app
 - È possibile collaborare con un fornitore non Microsoft
 - È possibile coinvolgere MCS per il pacchetto delle app. Collaborare con il proprio rappresentante dell'account Microsoft. Per ulteriori informazioni, vedere [Working with Microsoft Consulting Services](apps-MCS.md).
-
-
-
-
 
 
 

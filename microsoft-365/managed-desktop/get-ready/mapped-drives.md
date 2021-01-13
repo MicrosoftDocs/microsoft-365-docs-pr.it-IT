@@ -1,7 +1,7 @@
 ---
 title: Preparare unità mappate per Microsoft Managed Desktop
 description: Passaggi importanti per assicurarsi che
-keywords: Microsoft Managed Desktop, Microsoft 365, servizio, documentazione
+keywords: Microsoft Managed Desktop, Microsoft 365, servizi, documentazione
 ms.service: m365-md
 author: jaimeo
 ms.author: jaimeo
@@ -9,12 +9,12 @@ ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: fc216adadea8dd774901d42a754fb288412318a1
-ms.sourcegitcommit: adaedd1418a3bd6e4875b77fd9e008b47e0b2a51
+ms.openlocfilehash: 34b2186ea3f9129ae7bb602aee879d7d23424136
+ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48104595"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49841065"
 ---
 #  <a name="prepare-mapped-drives-for-microsoft-managed-desktop"></a>Preparare unità mappate per Microsoft Managed Desktop
 
@@ -48,7 +48,7 @@ Ad esempio:
  
 Verificare che le unità mappate non possano essere evitate e che siano stati esaminati accuratamente i requisiti prima di inviare qualsiasi richiesta di servizio. Eseguire quindi la procedura seguente:
 
-1. Passare a [Microsoft Endpoint Manager](https://endpoint.microsoft.com/) e selezionare "risoluzione dei problemi + supporto", quindi cercare "richieste di servizio" nella sezione Microsoft Managed deskop.  
+1. Passare a [Microsoft Endpoint Manager](https://endpoint.microsoft.com/) e selezionare "risoluzione dei problemi + supporto", quindi cercare "richieste di servizio" nella sezione Microsoft Managed Desktop.  
 2. Inviare una richiesta di supporto intitolata "distribuzione di unità mappate" e fornire tutti i dettagli di condivisione file necessari.  
 3. Operazioni IT di Microsoft Managed Desktop consiglierà, utilizzando gli aggiornamenti delle richieste di supporto, quando la richiesta è stata completata. Inizialmente questa configurazione verrà distribuita solo ai dispositivi del gruppo di distribuzione di test.  
 4. È necessario verificare e verificare se la configurazione distribuita dalle operazioni IT di Microsoft Managed Desktop funziona come previsto. Rispondere utilizzando la scheda discussione nei dettagli della stessa richiesta di supporto per inviare una notifica alle operazioni IT di Microsoft Managed Desktop dopo aver completato il testing.  

@@ -7,21 +7,21 @@ f1.keywords:
 - NOCSH
 ms.author: jaimeo
 ms.localizationpriority: medium
-ms.openlocfilehash: 1ad83dbf323e431e1694b408e09e581ff5b76348
-ms.sourcegitcommit: e9f32675061cd1cf4a3e2dada393e10d7c552efe
+ms.openlocfilehash: c2ba687b38f1de4d2ed09b0bd690e02b43f15f8d
+ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "48279553"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49840516"
 ---
 # <a name="register-existing-devices-yourself"></a>Registrare manualmente i dispositivi già presenti
 
 >[!NOTE]
->In questo argomento vengono illustrati i passaggi da eseguire per riutilizzare i dispositivi già presenti e registrarli in Microsoft Managed Desktop. Se si utilizzano dispositivi nuovi di zecca, eseguire i passaggi descritti in [registrare i nuovi dispositivi in Microsoft Managed Desktop](register-devices-self.md) .
+>In questo argomento vengono descritti i passaggi necessari per riutilizzare i dispositivi già presenti e registrarli in Microsoft Managed Desktop. Se si utilizzano dispositivi nuovi di zecca, eseguire i passaggi descritti in [registrare i nuovi dispositivi in Microsoft Managed Desktop](register-devices-self.md) .
 
 Il processo per i partner è documentato nei [passaggi per i partner per la registrazione dei dispositivi](register-devices-partner.md).
 
-Microsoft Managed Desktop è in grado di lavorare con dispositivi nuovi di zecca oppure è possibile riutilizzare i dispositivi che potrebbero essere già presenti (il che richiede che vengano ristampati). È possibile registrare i dispositivi con Microsoft Managed Desktop nel portale di Microsoft Endpoint Manager.
+Microsoft Managed Desktop è in grado di lavorare con dispositivi nuovi di zecca oppure è possibile riutilizzare i dispositivi già presenti (che richiedono di rivisualizzarli). È possibile registrare i dispositivi con Microsoft Managed Desktop nel portale di Microsoft Endpoint Manager.
 
 ## <a name="prepare-to-register-existing-devices"></a>Preparare la registrazione di dispositivi esistenti
 
@@ -53,10 +53,10 @@ Microsoft Managed Desktop identifica ogni dispositivo in modo univoco facendo ri
 Se sono stati soddisfatti tutti questi prerequisiti, è possibile raccogliere le informazioni attenendosi alla procedura seguente:
 
 1. Nella console di Configuration Manager, selezionare **monitoraggio**. 
-2. Nell'area di lavoro Monitoraggio espandere il nodo **report** , espandere **report**e selezionare il nodo **hardware-generale** . 
-3. Eseguire il report, le **informazioni sul dispositivo Autopilot di Windows**e visualizzare i risultati.
+2. Nell'area di lavoro Monitoraggio espandere il nodo **report** , espandere **report** e selezionare il nodo **hardware-generale** . 
+3. Eseguire il report, le **informazioni sul dispositivo Autopilot di Windows** e visualizzare i risultati.
 4. Nel Visualizzatore di report selezionare l'icona **Esporta** e scegliere l'opzione **CSV (delimitato da virgole)** .
-5. Dopo aver salvato il file, è necessario filtrare i risultati in base ai soli dispositivi che si intende registrare con Microsoft Managed Desktop e caricare i dati in Microsoft Managed Desktop. Aprire Microsoft Endpoint Manager e passare al menu **dispositivi** , quindi cercare la sezione Microsoft Managed Desktop e selezionare **dispositivi**. Selezionare **+ registra i dispositivi** che aprono un Fly-in per registrare i nuovi dispositivi.
+5. Dopo aver salvato il file, è necessario filtrare i risultati in base ai soli dispositivi che si intende registrare con Microsoft Managed Desktop e caricare i dati in Microsoft Managed Desktop. Aprire Microsoft Endpoint Manager e passare al menu **dispositivi** , quindi cercare la sezione Microsoft Managed Desktop e selezionare **dispositivi**. Selezionare **+ registra dispositivi**, che consente di aprire un Fly-in per registrare i nuovi dispositivi.
 
 
 Per ulteriori informazioni, vedere [registrazione dei dispositivi tramite il portale di amministrazione](#register-devices-by-using-the-admin-portal) .
@@ -64,7 +64,7 @@ Per ulteriori informazioni, vedere [registrazione dei dispositivi tramite il por
 
 #### <a name="active-directory-powershell-script-method"></a>Metodo script di PowerShell di Active Directory
 
-In un ambiente Active Directory, è possibile utilizzare il `Get-WindowsAutoPilotInfo` cmdlet di PowerShell per raccogliere in remoto le informazioni dai dispositivi nei gruppi di Active Directory tramite WinRM. È inoltre possibile utilizzare il `Get-AD Computer` cmdlet e ottenere i risultati filtrati per uno specifico nome di modello hardware incluso nel catalogo. A tale scopo, prima di tutto confermare questi prerequisiti e quindi procedere come segue:
+In un ambiente Active Directory, è possibile utilizzare il `Get-WindowsAutoPilotInfo` cmdlet di PowerShell per raccogliere in remoto le informazioni dai dispositivi nei gruppi di Active Directory tramite WinRM. È inoltre possibile utilizzare il `Get-AD Computer` cmdlet e ottenere i risultati filtrati per uno specifico nome di modello hardware incluso nel catalogo. Prima di procedere, confermare i prerequisiti e quindi procedere come segue:
 
 - Gestione remota Windows è abilitata.
 - I dispositivi che si desidera registrare sono attivi sulla rete (ovvero non sono disconnessi o disattivati).
@@ -73,7 +73,7 @@ In un ambiente Active Directory, è possibile utilizzare il `Get-WindowsAutoPilo
 
     1. Aprire il pannello di controllo di **Windows Defender Firewall** e selezionare **Consenti un'app o una funzionalità tramite il firewall di Windows Defender**.
     
-    2. Individuare **Windows Management Instrumentation (WMI)** nell'elenco, abilitare sia per il **privato che**per il pubblico, quindi selezionare **OK**.
+    2. Individuare **Windows Management Instrumentation (WMI)** nell'elenco, abilitare sia per il **privato che** per il pubblico, quindi selezionare **OK**.
 
 1.  Aprire un prompt di PowerShell con diritti amministrativi.
 
@@ -90,9 +90,9 @@ In un ambiente Active Directory, è possibile utilizzare il `Get-WindowsAutoPilo
     Set-ExecutionPolicy powershell -ExecutionPolicy Unrestricted Get-WindowsAutoPilotInfo.ps1 -credential Domainname\<accountname> -Name Machine1,Machine2,Machine3
     ```
 
-3. Accedere a tutte le directory in cui possono essere presenti voci per i dispositivi. Rimuovere le voci per ogni dispositivo da *tutte le* directory, inclusi i servizi di dominio di Windows Server Active Directory e Azure Active Directory. Tenere presente che questa rimozione potrebbe richiedere alcune ore per elaborarla completamente.
+3. Accedere a tutte le directory in cui possono essere presenti voci per i dispositivi. Rimuovere le voci per ogni dispositivo da *tutte le* directory, inclusi i servizi di dominio di Windows Server Active Directory e Azure Active Directory. Tenere presente che la rimozione potrebbe richiedere alcune ore per elaborarla completamente.
 
-4. Servizi di gestione accessi in cui possono essere presenti voci per i dispositivi. Rimuovere le voci per ogni dispositivo da *tutti i* servizi di gestione, tra cui Microsoft endpoint Configuration Manager, Microsoft Intune e Windows Autopilot. Tenere presente che questa rimozione potrebbe richiedere alcune ore per elaborarla completamente.
+4. Servizi di gestione accessi in cui possono essere presenti voci per i dispositivi. Rimuovere le voci per ogni dispositivo da *tutti i* servizi di gestione, tra cui Microsoft endpoint Configuration Manager, Microsoft Intune e Windows Autopilot. Tenere presente che la rimozione potrebbe richiedere alcune ore per elaborarla completamente.
 
 A questo punto è possibile procedere alla [registrazione di dispositivi](#register-devices-by-using-the-admin-portal).
 
@@ -123,7 +123,7 @@ A questo punto è possibile procedere alla [registrazione di dispositivi](#regis
 
 ### <a name="merge-hash-data"></a>Unire i dati hash
 
-Se i dati dell'hash hardware sono stati raccolti tramite i metodi di PowerShell manuale o di unità flash, è necessario che i dati dei file CSV siano combinati in un unico file per completare la registrazione. Di seguito è indicato uno script di PowerShell di esempio per semplificare le operazioni seguenti:
+Se i dati dell'hash hardware sono stati raccolti tramite i metodi di PowerShell manuale o di unità flash, è necessario che i dati dei file CSV siano combinati in un unico file per completare la registrazione. Di seguito è indicato uno script PowerShell di esempio per agevolare le operazioni seguenti:
 
 ```powershell
 Import-CSV -Path (Get-ChildItem -Filter *.csv) | ConvertTo-Csv -NoTypeInformation | % {$_.Replace('"', '')} | Out-File .\aggregatedDevices.csv
@@ -134,7 +134,7 @@ Con i dati hash Uniti in un unico file CSV, è ora possibile procedere alla [reg
 
 #### <a name="register-devices-by-using-the-admin-portal"></a>Registrare i dispositivi tramite il portale di amministrazione
 
-In [Microsoft Endpoint Manager](https://endpoint.microsoft.com/)selezionare **dispositivi** nel riquadro di spostamento a sinistra. Cercare la sezione Microsoft Managed Desktop del menu e selezionare **dispositivi**. Nell'area di lavoro Microsoft Managed Desktop Devices selezionare **+ Register Devices** che apre un Fly-in per registrare i nuovi dispositivi.
+In [Microsoft Endpoint Manager](https://endpoint.microsoft.com/)selezionare **dispositivi** nel riquadro di spostamento a sinistra. Cercare la sezione Microsoft Managed Desktop del menu e selezionare **dispositivi**. Nell'area di lavoro Microsoft Managed Desktop Devices selezionare **+ Register Devices**, che consente di aprire un Fly-in per registrare i nuovi dispositivi.
 
 <!-- Update with new picture [![Fly-in after selecting Register devices, listing devices with columns for assigned users, serial number, status, last-seen date, and age](../../media/new-registration-ui.png)](../../media/new-registration-ui.png) -->
 
@@ -142,7 +142,7 @@ In [Microsoft Endpoint Manager](https://endpoint.microsoft.com/)selezionare **di
 <!--Registering any existing devices with Managed Desktop will completely re-image them; make sure you've backed up any important data prior to starting the registration process.-->
 
 
-Procedere come segue:
+attenersi alla seguente procedura:
 
 1. In **caricamento file**, specificare un percorso per il file CSV creato in precedenza.
 

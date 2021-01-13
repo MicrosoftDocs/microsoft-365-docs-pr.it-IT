@@ -1,6 +1,6 @@
 ---
 title: Monitoraggio e operazioni di Microsoft Managed Desktop
-description: ''
+description: Chi fa cosa per vari processi di modifica
 keywords: Microsoft Managed Desktop, Microsoft 365, servizi, documentazione
 ms.service: m365-md
 author: jaimeo
@@ -11,12 +11,12 @@ ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 1ddac923849abfa2c912244c5ff987ec885f3d45
-ms.sourcegitcommit: 4cbb4ec26f022f5f9d9481f55a8a6ee8406968d2
+ms.openlocfilehash: 5d7c6a7b836d0044ba9cde188170dd51f117dd2b
+ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49527594"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49840374"
 ---
 # <a name="microsoft-managed-desktop-operations-and-monitoring"></a>Monitoraggio e operazioni di Microsoft Managed Desktop
 
@@ -25,13 +25,13 @@ ms.locfileid: "49527594"
 
 ## <a name="change-management"></a>Gestione delle modifiche
 
-In un'offerta di servizi, l'equilibrio di responsabilità per operazioni quali la manutenzione dell'hardware e gli aggiornamenti della sicurezza si spostano al provider del servizio (Microsoft) anziché al cliente (amministratore). Tuttavia, è comunque necessario assicurarsi che il software di terze parti e personalizzato continui a funzionare come previsto quando vengono implementati gli aggiornamenti.
+In un'offerta di servizi, l'equilibrio di responsabilità per operazioni quali la manutenzione dell'hardware e gli aggiornamenti della sicurezza si spostano al provider del servizio (Microsoft) anziché al cliente (amministratore). Tuttavia, è comunque necessario assicurarsi che il software non Microsoft e Custom continuerà a funzionare come previsto quando gli aggiornamenti vengono esportati.
 
 Per i prodotti locali, l'organizzazione assume tutte le responsabilità per la gestione delle modifiche.
 
 ### <a name="balance-of-responsibility"></a>Equilibrio di responsabilità
 
-Responsabilità | Servizio Microsoft Managed Desktop | Software client Microsoft 365 | Client e server locali | terze parti e software personalizzato
+Responsabilità | Servizio Microsoft Managed Desktop | Software client Microsoft 365 | Client e server locali | software non Microsoft e personalizzato
 ----- | ----- | ----- | ----- | -----
 Fornire nuove funzionalità | Microsoft | Microsoft | Sia | Cliente
 Testare nuove funzionalità per controllo qualità |  Microsoft | Microsoft | Sia | Cliente
@@ -44,7 +44,7 @@ Pacchetto per la distribuzione | Microsoft | Microsoft | Cliente | Cliente
 
 ### <a name="change-process-overview"></a>Panoramica del processo di modifica
 
-Di seguito viene illustrato un riepilogo del modo in cui il processo di modifica viene condiviso tra Microsoft e i clienti. 
+Di seguito viene illustrato un riepilogo del modo in cui il processo di modifica viene condiviso tra Microsoft e i clienti: 
 
 
 
@@ -60,14 +60,14 @@ Di seguito viene illustrato un riepilogo del modo in cui il processo di modifica
 
 ### <a name="change-types"></a>Tipi di modifica
 
-Esistono diversi tipi di modifiche apportate al servizio su base regolare. Il canale di comunicazione per tali modifiche e le azioni che i clienti sono responsabili variano.
+Esistono diversi tipi di modifiche apportate al servizio regolarmente. Il canale di comunicazione per tali modifiche e le azioni che sono responsabili variano.
 
 Non tutte le modifiche hanno lo stesso impatto sugli utenti oppure richiedono un intervento. Alcuni sono pianificati e alcuni non pianificati dalla propria natura (gli aggiornamenti di sicurezza e gli aggiornamenti della protezione non sono in genere pianificati). A seconda del tipo di modifica, il canale di comunicazione può variare. Nella tabella seguente sono elencati i tipi di modifiche che è possibile prevedere per il servizio Microsoft Managed Desktop.
 
-|   | Funzionalità |   Aggiornamenti non della sicurezza |  Sicurezza
+|   | Funzionalità |   Aggiornamenti non relativi alla sicurezza |  Sicurezza
 --- | --- | --- | ---
-**Tipo di modifica** | -Aggiornamenti delle funzionalità<br>-Nuove funzionalità o applicazioni<br>-Funzionalità deprecate | Aggiornamenti rapidi del client per problemi | Patch di sicurezza
-**Notifiche anticipate** | avviso di 5 giorni per le modifiche che richiedono un'azione |    No, queste sono incluse nella versione mensile   | No, queste sono incluse nella versione mensile 
+**Tipo di modifica** | -Aggiornamenti delle funzionalità<br>-Nuove funzionalità o applicazioni<br>-Funzionalità deprecate | Aggiornamenti rapidi del client per problemi | Aggiornamenti della sicurezza
+**Notifiche anticipate** | Avviso di cinque giorni per le modifiche che richiedono un'azione | No, tali modifiche sono incluse nella versione mensile    | No, le modifiche sono incluse nella versione mensile 
 **Canale di comunicazione** | -Centro messaggi<br>-Avviso di posta elettronica | -Centro messaggi<br>-Avviso di posta elettronica | -Centro messaggi<br>-Avviso di posta elettronica
 **Richiede un'azione di amministratore globale** | A volte |  Raramente |    Raramente 
 **Tipo di azione** | Modificare le impostazioni | Comunicare le modifiche agli utenti | Modificare le impostazioni di amministrazione     
@@ -96,7 +96,7 @@ Certificati | | -Creare una richiesta di supporto 60 giorni prima della scadenza
 
 ## <a name="device-wipe-with-factory-reset"></a>Wipe del dispositivo con reset di fabbrica
 
-Il team di Microsoft Managed Desktop Operations è in grado di eseguire un ripristino di fabbrica dei dispositivi registrati nel servizio, se necessario. Questa operazione è utile se è necessario assegnare un dispositivo a un dipendente diverso o se un dipendente lascia la propria azienda. 
+Il team di Microsoft Managed Desktop Operations è in grado di eseguire un ripristino di fabbrica dei dispositivi registrati nel servizio, se necessario. La reimpostazione è utile se è necessario assegnare un dispositivo a un dipendente diverso o se un dipendente lascia la propria azienda. 
 
 Sono disponibili alcuni requisiti:
 

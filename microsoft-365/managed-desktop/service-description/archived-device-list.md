@@ -11,16 +11,16 @@ ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 57b49e49a20ee9e088301e90590c19cfabf89a2b
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+ms.openlocfilehash: 5d386000fab8894dd60790d3514ae93feaa03a22
+ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49658942"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49841280"
 ---
 # <a name="microsoft-managed-desktop-archived-devices"></a>Dispositivi archiviati da Microsoft Managed Desktop
 
-Per garantire la migliore esperienza utente, Microsoft Managed Desktop ritirerà il supporto per i dispositivi a un certo punto. In questo argomento vengono elencati i dispositivi che si stanno avvicinando alla pensione nei prossimi anni, che chiamiamo "archiviati". Se si sta iniziando con Microsoft Managed Desktop usando i dispositivi già presenti, è necessario controllare attentamente questo elenco.
+Per garantire la migliore esperienza utente, Microsoft Managed Desktop ritirerà il supporto per i dispositivi a un certo punto. In questo articolo vengono elencati i dispositivi che si stanno avvicinando alla pensione nei prossimi anni, che chiamiamo "archiviati". Se si sta iniziando con Microsoft Managed Desktop usando i dispositivi già presenti, è necessario controllare attentamente questo elenco.
 
 >[!IMPORTANT]
 >È comunque possibile registrare questi dispositivi oggi, ma avranno una durata di servizio più breve con Microsoft Managed Desktop. Se si stanno acquistando nuovi dispositivi, è necessario utilizzare i modelli nell' [elenco dei dispositivi attivi](./device-list.md).
@@ -70,7 +70,7 @@ Inoltre, il dispositivo deve:
 - Non è stata completata l'esperienza di Windows per la prima esecuzione.
 - Essere registrato con Microsoft Managed Desktop utilizzando la funzionalità di [registrazione dei dispositivi](https://aka.ms/mmddrhelp)
 
-#### <a name="additional-help"></a>Ulteriori informazioni
+#### <a name="more-help"></a>Altre informazioni
 
 Tali risorse consentono di rispondere alle domande che potrebbero essere disponibili su dispositivi specifici:
 

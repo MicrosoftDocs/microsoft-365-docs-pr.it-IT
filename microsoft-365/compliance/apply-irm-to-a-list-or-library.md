@@ -21,12 +21,12 @@ ms.collection:
 - SPO_Content
 description: È possibile utilizzare Information Rights Management (IRM) per controllare e proteggere i file scaricati da elenchi o raccolte.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 0c61b7c6f13208b6c017b5ed65c667203abade42
-ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
+ms.openlocfilehash: 5b0b541619e7bd969072755eacf103d53da6fc6a
+ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "49663101"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49840527"
 ---
 # <a name="apply-information-rights-management-irm-to-a-list-or-library"></a>Applicazione di Information Rights Management (IRM) a un elenco o a una raccolta
 
@@ -73,7 +73,7 @@ ms.locfileid: "49663101"
 |Selezionare questa opzione se si desidera limitare l'accesso al contenuto a un determinato periodo di tempo. Se si seleziona questa opzione, le licenze di pubblicazione degli utenti per accedere al contenuto scadranno dopo il numero di giorni specificato e gli utenti saranno tenuti a tornare al server per verificare le credenziali e scaricare una nuova copia.|Selezionare la casella di controllo **dopo il download, i diritti di accesso ai documenti scadono dopo il numero di giorni (1-365)** e quindi specificare il numero di giorni in cui si desidera visualizzare il documento.|
 | Impedire agli utenti di caricare documenti che non supportano IRM nell'elenco o nella raccolta. Se si seleziona questa opzione, gli utenti non saranno in grado di caricare uno dei tipi di file seguenti: tipi di file che non dispongono di protettori IRM corrispondenti installati in tutti i server Web front-end. Tipi di file che SharePoint Server 2010 non è in grado di decrittografare. Tipi di file che sono protetti da IRM in un altro programma.|Selezionare la casella di controllo non **consentire agli utenti di caricare i documenti che non supportano IRM** .|
 |Rimuovere le autorizzazioni limitate dall'elenco o dalla raccolta in base a una data specifica.|Selezionare la casella di controllo **Interrompi la limitazione dell'accesso alla raccolta** e quindi selezionare la data desiderata.|
-|Controllare l'intervallo di memorizzazione nella cache delle credenziali per il programma concesso in licenza per l'apertura del documento.|Selezionare la casella di controllo **intervallo (giorni) per gli utenti devono verificare le credenziali** , quindi immettere l'intervallo per le credenziali di memorizzazione nella cache in numero di giorni.|
+|Controllare l'intervallo di memorizzazione nella cache delle credenziali per il programma concesso in licenza per l'apertura del documento. Questa impostazione è supportata solo nel cloud globale di Microsoft. L'impostazione non è disponibile nelle distribuzioni di cloud nazionali.|Selezionare la casella di controllo **intervallo (giorni) per gli utenti devono verificare le credenziali** , quindi immettere l'intervallo per le credenziali di memorizzazione nella cache in numero di giorni.|
 |Consenti protezione di gruppo in modo che gli utenti possano condividerli con i membri dello stesso gruppo.|Selezionare **Consenti protezione gruppo** e immettere il nome del gruppo per la condivisione.|
 
 8. Una volta terminata la selezione delle opzioni desiderate, selezionare **OK**.
@@ -121,8 +121,6 @@ IRM non è in grado di proteggere il contenuto limitato dai seguenti elementi:
 - Copia tramite l'utilizzo di programmi di acquisizione schermo di terze parti
     
 - Copia dei metadati del contenuto (valori di colonna) tramite l'utilizzo di programmi di acquisizione schermo di terze parti o di un'azione copia e incolla
-    
-[Applicare Information Rights Management a un elenco o a una raccolta](https://support.office.com/article/6714cfe3-ef39-43b0-bb65-a887726bb63c)
   
 ## <a name="how-irm-works-for-lists-and-libraries"></a>Funzionamento di IRM per elenchi e raccolte
 <a name="__toc256598178"> </a>

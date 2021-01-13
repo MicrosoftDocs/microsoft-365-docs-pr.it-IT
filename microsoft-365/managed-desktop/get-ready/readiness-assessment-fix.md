@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 3c3c0d21ca93c0d93d17cefbc6ce630d00a16d09
-ms.sourcegitcommit: 222fb7fe2b26dde3d8591b61cc02113d6135012c
+ms.openlocfilehash: ada6bb8ef66e3414a375a151b45d4871e306e825
+ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "49760125"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49841072"
 ---
 # <a name="fix-issues-found-by-the-readiness-assessment-tool"></a>Risolvere problemi trovati dallo strumento di valutazione dell'idoneità
 
@@ -291,7 +291,7 @@ Si dispone di almeno un nome di account che sarà in conflitto con quelli creati
 
 ### <a name="security-administrator-roles"></a>Ruoli di amministratore della sicurezza
 
-Gli utenti con determinati ruoli di sicurezza devono avere quelli assegnati in Microsoft Defender per endpoint.
+Gli utenti con determinati ruoli di sicurezza devono avere i ruoli assegnati in Microsoft Defender per endpoint.
 
 **Consulenza**
 

@@ -10,12 +10,12 @@ audience: ITpro
 ms.topic: article
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 60ffdcddcd069330d3cde2f9cc6b2635cf205a90
-ms.sourcegitcommit: 89b2ad0793c68415f178b8792a9757b9448345a6
+ms.openlocfilehash: 42ff665e8ba9c369e29eeeafd27affff04b40966
+ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/28/2020
-ms.locfileid: "47294675"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49841340"
 ---
 # <a name="new-microsoft-edge-app"></a>Nuova app Microsoft Edge
 
@@ -29,7 +29,7 @@ Il [canale Beta](https://docs.microsoft.com/deployedge/microsoft-edge-channels#b
 
 ## <a name="updates-to-microsoft-edge"></a>Aggiornamenti a Microsoft Edge
 
-Microsoft Managed Desktop distribuisce il [canale stabile](https://docs.microsoft.com/deployedge/microsoft-edge-channels#stable-channel) di Microsoft Edge che viene aggiornato automaticamente circa ogni sei settimane. Gli aggiornamenti sul canale stabile vengono distribuiti [progressivamente](https://docs.microsoft.com/deployedge/microsoft-edge-update-progressive-rollout) dal gruppo di prodotti Microsoft Edge per garantire la migliore esperienza per i clienti. 
+Microsoft Managed Desktop distribuisce il [canale stabile](https://docs.microsoft.com/deployedge/microsoft-edge-channels#stable-channel) di Microsoft Edge, che viene aggiornato automaticamente circa ogni sei settimane. Gli aggiornamenti sul canale stabile vengono distribuiti [progressivamente](https://docs.microsoft.com/deployedge/microsoft-edge-update-progressive-rollout) dal gruppo di prodotti Microsoft Edge per garantire la migliore esperienza per i clienti. 
 
 Il [canale Beta](https://docs.microsoft.com/deployedge/microsoft-edge-channels#beta-channel) viene distribuito ai dispositivi sia nel test che nei primi gruppi per la convalida rappresentativa all'interno dell'organizzazione. Questo canale è completamente supportato e viene aggiornato automaticamente con nuove funzionalità ogni sei settimane.
 
@@ -54,21 +54,21 @@ Microsoft Managed Desktop imposta questo criterio per impedire l'installazione d
 
 **Valore predefinito:** Disabili
 
-Disabilitando questo criterio, Microsoft Edge utilizzerà solo host di messaggistica native installati a livello di sistema. Gli host di messaggistica native fanno parte di estensioni di Chrome che consentono al browser di interagire con altre parti dell'endpoint dell'utente, creando una serie di problemi di sicurezza.  
+Disabilitando questo criterio, Microsoft Edge utilizzerà solo host di messaggistica native installati a livello di sistema. Gli host di messaggistica nativa fanno parte delle estensioni di Chrome, che consentono al browser di interagire con le altre parti dell'endpoint dell'utente, creando una serie di problemi di sicurezza.  
 
-### <a name="secure-sockets-layer-ssl"></a> SSL (Secure Sockets Layer) 
+### <a name="secure-sockets-layer-tlsssl"></a>Secure Sockets Layer (TLS/SSL)
 
-#### <a name="minimum-ssl-version"></a>Versione SSL minima
+#### <a name="minimum-tls-version"></a>Versione TLS minima
 
 **Valore predefinito:** Minimo TLS 1,2 supportato
 
-Se si desidera utilizzare il TLS 1,1 meno sicuro, è possibile richiederlo.
+Se si desidera utilizzare il TLS 1,1 meno sicuro, è possibile presentare una richiesta.
 
 #### <a name="allows-users-to-proceed-from-the-ssl-warning-page"></a>Consente agli utenti di procedere dalla pagina di avviso SSL
 
 **Valore predefinito:** Disabili
 
-Non è consigliabile abilitare questa impostazione poiché consente agli utenti di visitare i siti con errori SSL.
+Non è consigliabile abilitare questa impostazione poiché consente agli utenti di visitare i siti con errori di TSL.
 
 ### <a name="microsoft-defender-smartscreen"></a>Microsoft Defender SmartScreen
 
@@ -96,7 +96,7 @@ Non è consigliabile disabilitare questa impostazione in quanto consente agli ut
 
 **Valore predefinito:** Disabili
 
-Non è consigliabile utilizzare Flash a causa di rischi per la sicurezza associati. Se si hanno ancora processi che dipendono da Flash, impostare i criteri di **[PluginsAllowedForUrls](https://docs.microsoft.com/deployedge/microsoft-edge-policies#pluginsallowedforurls)** per abilitare il flash per i siti che ne hanno bisogno. Se non è possibile mantenere un elenco di siti consentiti per l'utilizzo di Flash, presentare una richiesta di modifica per modificare il valore da **fare clic su per riprodurre**, che consente agli utenti di scegliere quando è opportuno eseguire Flash.
+Non è consigliabile utilizzare Flash a causa di rischi per la sicurezza associati. Se si hanno ancora processi che dipendono da Flash, impostare i criteri di **[PluginsAllowedForUrls](https://docs.microsoft.com/deployedge/microsoft-edge-policies#pluginsallowedforurls)** per abilitare flash per i siti che ne hanno bisogno. Se non è possibile mantenere un elenco di siti consentiti per l'utilizzo di Flash, presentare una richiesta di modifica per modificare il valore da **fare clic su per riprodurre**, che consente agli utenti di scegliere quando è opportuno eseguire Flash.
 
 ### <a name="password-manager"></a>Gestione password
 
@@ -114,7 +114,7 @@ Microsoft Managed Desktop attiva la modalità Internet Explorer per i propri dis
 #### <a name="internet-explorer-mode-integration"></a>Integrazione della modalità Internet Explorer
 **Valore predefinito:** Modalità Internet Explorer
 
-Per impostazione predefinita, i dispositivi sono impostati per l'utilizzo della modalità Internet Explorer, ma è possibile impostarli in modo da aprire i siti in una finestra autonoma di Internet Explorer 11. Per modificare questa operazione, è necessario presentare una richiesta di supporto.
+Per impostazione predefinita, i dispositivi sono impostati per l'utilizzo della modalità Internet Explorer, ma è possibile impostarli in modo da aprire i siti in una finestra autonoma di Internet Explorer 11. Per modificare questo comportamento, è necessario presentare una richiesta di supporto.
 
 #### <a name="add-sites-to-the-enterprise-mode-site-list"></a>Aggiungere siti all'elenco del sito in modalità Enterprise
 Affinché i siti vengano aperti in modalità Internet Explorer, è necessario includerli nell' [elenco siti organizzazione](https://docs.microsoft.com/DeployEdge/edge-ie-mode-sitelist). La gestione e la distribuzione dell'elenco siti organizzazione è una responsabilità. Per informazioni dettagliate, vedere [Configure using the Configure Enterprise Site List Policy](https://docs.microsoft.com/DeployEdge/edge-ie-mode-policies#configure-using-the-configure-the-enterprise-mode-site-list-policy) .
@@ -142,7 +142,7 @@ Con questo criterio applicato, la prima operazione di esecuzione ignorerà la se
 
 ## <a name="settings-you-manage"></a>Impostazioni gestite
 
-È possibile distribuire le impostazioni di Microsoft Edge non descritte in precedenza utilizzando il profilo dei modelli amministrativi in Microsoft Intune. Per ulteriori informazioni, vedere [configurare le impostazioni dei criteri Microsoft Edge con Microsoft Intune](https://docs.microsoft.com/deployedge/configure-edge-with-intune). Se si desidera valutare un criterio che non è attualmente incluso nei modelli amministrativi Microsoft Edge in Intune, è possibile utilizzare le impostazioni personalizzate per i dispositivi Windows 10 in Intune.
+È possibile distribuire le impostazioni di Microsoft Edge non descritte in precedenza utilizzando il profilo dei modelli amministrativi in Microsoft Intune. Per ulteriori informazioni, vedere [configurare le impostazioni dei criteri Microsoft Edge con Microsoft Intune](https://docs.microsoft.com/deployedge/configure-edge-with-intune). Se si desidera valutare un criterio che non è attualmente incluso nei modelli amministrativi di Microsoft Edge in Intune, è possibile utilizzare le impostazioni personalizzate per i dispositivi Windows 10 in Intune.
 
 ### <a name="enabling-specific-chrome-extensions"></a>Abilitazione di estensioni Chrome specifiche
 
@@ -157,7 +157,7 @@ Per assicurarsi che Microsoft Edge venga aggiornato correttamente, non modificar
 
 ### <a name="other-common-enterprise-policies"></a>Altri criteri dell'organizzazione comuni
 
-Microsoft Edge offre numerosi criteri aggiuntivi. Questi sono alcuni tra quelli più comuni:
+Microsoft Edge offre numerosi altri criteri. Questi sono alcuni tra quelli più comuni:
  
 - [Configurare i siti nell'elenco e la modalità IE del sito dell'organizzazione](https://docs.microsoft.com/deployedge/edge-ie-mode-sitelist)
 - [Configurare le impostazioni di avvio, Home page e nuova scheda pagina](https://docs.microsoft.com/deployedge/microsoft-edge-policies#startup-home-page-and-new-tab-page)

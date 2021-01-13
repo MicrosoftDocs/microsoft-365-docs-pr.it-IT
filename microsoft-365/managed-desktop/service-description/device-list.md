@@ -1,6 +1,6 @@
 ---
 title: Dispositivi Microsoft Managed Desktop
-description: In questo argomento sono elencate le specifiche per i dispositivi approvati per Microsoft Managed Desktop.
+description: In questo articolo vengono elencate le specifiche per i dispositivi approvati per Microsoft Managed Desktop.
 keywords: Microsoft Managed Desktop, Microsoft 365, servizi, documentazione
 ms.service: m365-md
 author: jaimeo
@@ -8,12 +8,12 @@ ms.localizationpriority: normal
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: e858ae1fc564fdcacbe181930ae1489d131965e7
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+ms.openlocfilehash: fff44098e3da17c68e4347fb14690945154edfdb
+ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49659679"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49841188"
 ---
 # <a name="microsoft-managed-desktop-devices"></a>Dispositivi Microsoft Managed Desktop 
 
@@ -66,15 +66,15 @@ I collegamenti ai dispositivi sono disponibili solo per il riferimento. Se si de
 
 | Modello    | Specifiche minime  | Requisiti aggiuntivi    | Data archivio   | Data di pensionamento   |
 |----------|----------------|---------------------------|----------------|--------------------|
-| [Surface Book 3](https://www.microsoft.com/p/surface-book-3-for-business/93h0mb2gqd5b?activetab=pivot%3aoverviewtab) | 256 GB/RAM Intel i5/8GB | Nessuno | 21 maggio 2022 | 21 maggio 2027 |
-| [Superficie Go 2](https://www.microsoft.com/p/surface-go-2-for-business/8wzd6dhzj7kv?activetab=pivot%3aoverviewtab) | 128 GB/RAM Intel Core M3/8GB | Nessuno | 21 maggio 2022 | 21 maggio 2027 |
+| [Surface Book 3](https://www.microsoft.com/p/surface-book-3-for-business/93h0mb2gqd5b?activetab=pivot%3aoverviewtab) | 256 GB/Intel i5/8 GB di RAM | Nessuno | 21 maggio 2022 | 21 maggio 2027 |
+| [Superficie Go 2](https://www.microsoft.com/p/surface-go-2-for-business/8wzd6dhzj7kv?activetab=pivot%3aoverviewtab) | 128 GB/Intel Core m3/8 GB di RAM | Nessuno | 21 maggio 2022 | 21 maggio 2027 |
 | [Surface laptop go](https://www.microsoft.com/surface/business/surface-laptop-go) | 128 GB/Intel i5/8 GB di RAM | Nessuno | 2022 ottobre 12 | 2025 ottobre 12 |
 | [Laptop Surface 3](https://www.microsoft.com/surface/business/surface-laptop-3) | 128 GB/Intel i5/8 GB di RAM | Nessuno | 22 ottobre 2021 | 22 ottobre 2024 |
 | [Surface Pro 7](https://www.microsoft.com/surface/business/surface-pro-7) | 128 GB/Intel i5/8 GB di RAM | Nessuno | 22 ottobre 2021 | 22 ottobre 2024 |
 
 Inoltre, il dispositivo deve soddisfare anche questi criteri:     
 
-- Se uno specifico SKU è elencato nei requisiti del dispositivo, accertarsi di utilizzarlo quando si ordina. Questo garantisce che i dispositivi siano conformi ai requisiti software Microsoft Managed Desktop. 
+- Se uno specifico SKU è elencato nei requisiti del dispositivo, accertarsi di utilizzarlo quando si ordina. In questo modo si garantisce che i dispositivi siano conformi ai requisiti software Microsoft Managed Desktop. 
 - Non è stata completata l'esperienza di Windows per la prima esecuzione.
 - Essere registrato con Microsoft Managed Desktop utilizzando la funzionalità di [registrazione dei dispositivi](https://aka.ms/mmddrhelp)
 
@@ -84,7 +84,7 @@ Inoltre, il dispositivo deve soddisfare anche questi criteri:
 >-  Utilizzo di un dispositivo per diversi carichi di lavoro.
 >- Utilizzo di più monitor.
 
-**Ulteriori informazioni**
+**Altre informazioni**
 
 Tali risorse consentono di rispondere alle domande che potrebbero essere disponibili su dispositivi specifici:
 

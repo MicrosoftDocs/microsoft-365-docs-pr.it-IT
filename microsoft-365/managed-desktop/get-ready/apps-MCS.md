@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: d2a6c09e1bcb84885e607d133c14e26e08e3c621
-ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
+ms.openlocfilehash: f8c4e427c536577ea2fc768d4930b9d4db6ac697
+ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46530164"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49841424"
 ---
 # <a name="working-with-microsoft-consulting-services"></a>Lavorare con Microsoft Consulting Services
 
@@ -40,7 +40,7 @@ Avviare il processo di creazione del pacchetto caricando le informazioni sull'ap
 
 ![calendario che mostra l'afflusso di app su un Giovedi (il 21 in questo esempio), la convalida dei contenuti multimediali il giorno successivo, la confezione del lunedì seguente (il venticinquesimo) e il recapito delle app il venerdì successivo (29)](../../media/MCS-cal.png)
 
-Una volta che l'app è stata recapitata, verrà inviata una notifica. A questo punto, sono necessari 21 giorni per eseguire il test di accettazione e disconnettersi sul lavoro nel portale Microsoft Managed Desktop. Se si scopre qualche problema con l'app durante il test di accettazione, rifiutare l'applicazione nel portale Microsoft Managed Desktop e si sarà connessi tramite posta elettronica con un Packager MCS per comprendere e risolvere il problema.
+Una volta che l'app è stata recapitata, verrà inviata una notifica. A questo punto, sono necessari 21 giorni per eseguire il test di accettazione e approvare il lavoro nel portale Microsoft Managed Desktop. Se si scopre qualche problema con l'app durante il test di accettazione, rifiutare l'applicazione nel portale Microsoft Managed Desktop e si sarà connessi tramite posta elettronica con un Packager MCS per comprendere e risolvere il problema.
 
 ## <a name="testing-accounts-and-environment"></a>Verifica degli account e dell'ambiente
 

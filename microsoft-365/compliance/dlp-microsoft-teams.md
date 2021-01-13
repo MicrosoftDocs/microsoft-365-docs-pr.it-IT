@@ -15,12 +15,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: È ora possibile applicare i criteri DLP alle chat e ai canali di Microsoft teams. Leggere questo articolo per ulteriori informazioni su come funziona.
-ms.openlocfilehash: 25ba5850f496c188c2a38d6cc5b68960a85e5e5f
-ms.sourcegitcommit: 7d4aa58ae9fc893825b6e648fa3f072c3ac59628
+ms.openlocfilehash: a34a094a3c0440933a3d44e0125939a02b4ae202
+ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/09/2021
-ms.locfileid: "49790160"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49840583"
 ---
 # <a name="data-loss-prevention-and-microsoft-teams"></a>Prevenzione della perdita di dati e Microsoft Teams
 
@@ -97,7 +97,7 @@ Per eseguire questa attività, è necessario essere assegnati a un ruolo che dis
 
 4. Nella colonna **stato** , attiva il criterio per i **messaggi di chat e di canale dei team**.<br/>![DLP per le chat e i canali di Teams](../media/dlp-teams-addteamschatschannels.png)<br/>
 
-5. Nella scheda **Scegli percorsi** mantenere l'impostazione predefinita di tutti gli account oppure selezionare **Consenti percorsi specifici** e specificare quali account, liste di distribuzione o gruppi di sicurezza per l'inclusione e l'esclusione. Quindi scegliere **Avanti**.
+5. Nella scheda **Scegli percorsi** mantenere l'impostazione predefinita di tutti gli account oppure selezionare **Consenti percorsi specifici** e specificare gli account da includere o escludere. Quindi scegliere **Avanti**.
 
 6. Fare clic su **Salva**.
 
@@ -116,7 +116,7 @@ Per eseguire questa attività, è necessario essere assegnati a un ruolo che dis
 
 4. Nella scheda **denominare i criteri** specificare un nome e una descrizione per il criterio e quindi fare clic su **Avanti**.
 
-5. Nella scheda **Scegli percorsi** mantenere l'impostazione predefinita di tutti gli account oppure selezionare **Consenti percorsi specifici** e specificare quali account, liste di distribuzione o gruppi di sicurezza per l'inclusione e l'esclusione. Quindi scegliere **Avanti**.
+5. Nella scheda **Scegli percorsi** mantenere l'impostazione predefinita di tutti gli account oppure selezionare **Consenti percorsi specifici** e specificare gli account da includere o escludere. Quindi scegliere **Avanti**.
 
 ![Posizioni dei criteri DLP](../media/dlp-teams-selectlocationsnewpolicy.png)
 

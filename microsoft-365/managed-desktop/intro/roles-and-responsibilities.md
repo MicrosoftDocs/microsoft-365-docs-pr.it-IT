@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: de0bc092c35c7f48c562da8d4218f7a638abe1d5
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 94389fbb9a13b9a880b0c4dcaf67d8adcaff0f98
+ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48847781"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49841316"
 ---
 # <a name="microsoft-managed-desktop-roles-and-responsibilities"></a>Ruoli e responsabilità Microsoft Managed Desktop
 
@@ -39,7 +39,7 @@ Raggruppamento di utenti e dispositivi | Il team di Microsoft Managed Desktop Op
 
 ## <a name="your-roles-and-responsibilities"></a>Ruoli e responsabilità
 
-Questo ulteriore set di ruoli e responsabilità comuni è necessario per la distribuzione, ma non viene fornito da Microsoft. Non è esaustivo, ma è applicabile per la maggior parte delle organizzazioni. Ci sono alcuni elementi che si condividono con la responsabilità di Microsoft. 
+Questo gruppo di ruoli e responsabilità comuni è necessario per la distribuzione, ma non viene fornito da Microsoft. Non è esaustivo, ma è applicabile per la maggior parte delle organizzazioni. Ci sono alcuni elementi che si condividono con la responsabilità di Microsoft. 
 
 Ruolo o responsabilità | Descrizione
 --- | ---
@@ -49,7 +49,7 @@ Microsoft 365 Apps per la configurazione e la gestione dell'organizzazione | Mic
 Supporto agli utenti | È necessario fornire il supporto utente per: <br>-Infrastruttura sul posto: tutta la connettività di rete e Internet, l'infrastruttura VPN e la configurazione dei client, apparecchiature sala conferenze locali, stampanti, server proxy e configurazione e firewall.<br><br>-Risorse cloud a livello di azienda: posta elettronica, SharePoint, servizi di collaborazione e altre infrastrutture cloud che si riferiscono all'impronta tecnologica a livello aziendale.<br><br>-Line of business e qualsiasi altra applicazione specifica della società.
 App | I ruoli e le responsabilità variano un po' per le app fornite come parte di Microsoft Managed Desktop rispetto alle app che fornisci. <br><br>Per le app fornite da Microsoft (Microsoft 365 Apps for Enterprise composto da Word, Excel, PowerPoint, Outlook, Publisher, Access, Skype for business, teams e OneNote), **Microsoft** fornirà servizi completi per la distribuzione, l'aggiornamento e il supporto. **È** necessario ottenere e assegnare licenze per queste app, aggiungere utenti ai gruppi di sicurezza e gestire la fine della vita e distribuire i componenti aggiuntivi necessari.<br><br>Per le app che fornisci (ad esempio le app line-of-business), sia che si tratti di un pacchetto da soli o che coinvolga un fornitore non Microsoft, **è** responsabile di queste azioni: <br><br>-Identificare le applicazioni necessarie per i gruppi di utenti di destinazione<br>-Creazione e gestione dei gruppi di Azure AD per la distribuzione di app<br>-Pacchetti di app per rispondere agli standard di distribuzione di Microsoft Intune<br>-Caricamento delle app in Microsoft Intune<br>-Testare le app nell'ambiente desktop Microsoft gestito<br>-Testare le app con gli utenti<br>-Gestione e assegnazione degli utenti alle applicazioni<br>-Identificare e distribuire gli aggiornamenti delle applicazioni tramite Microsoft Intune<br>-Disinstallazione e rimozione di applicazioni quando sono stati ritirati<br>-Procurare e assegnare licenze<br>-Fornire supporto agli utenti per le app line-of-business<br>-Gestione delle impostazioni delle app in remoto<br><br>**Microsoft** fornirà gli strumenti di distribuzione di Microsoft Intune per distribuire le applicazioni ai client remoti.<br><br>Per ulteriori informazioni, vedere [app](../get-ready/apps.md).
 Monitoraggio sicurezza e risposta | Si è responsabili dell'analisi e della risoluzione degli incidenti per i dispositivi che non sono dispositivi Microsoft Managed Desktop e che il team Microsoft Managed Desktop Operations è informato di eventuali problemi che potrebbero influire sul servizio.
-Supporto per le operazioni | È necessario fornire un elenco dei contatti preferiti e degli esperti dell'organizzazione. In caso di incidenti operativi non correlati a Microsoft Managed Desktop, è necessario. <br><br>Si è anche responsabili dell'analisi e della risoluzione degli incidenti per i dispositivi e i servizi che non sono in Microsoft Managed Desktop e per garantire che il team delle operazioni di Microsoft Managed Desktop sia sempre informato.
+Supporto per le operazioni | È necessario fornire un elenco dei contatti preferiti e degli esperti dell'organizzazione. Questi contatti sono necessari se esiste un incidente operativo non correlato a Microsoft Managed Desktop. <br><br>Si è anche responsabili dell'analisi e della risoluzione degli incidenti per i dispositivi e i servizi che non sono in Microsoft Managed Desktop e per garantire che il team delle operazioni di Microsoft Managed Desktop sia sempre informato.
 Infrastruttura di rete, inclusa la VPN | Si è responsabili dell'installazione, della configurazione e della gestione (tra cui la risoluzione dei problemi e il debug) di tutti i servizi e infrastruttura connessi alla rete, tra cui la connettività Internet, i controlli di rete, la configurazione del proxy e l'infrastruttura di connettività remota.<br><br>Se un proxy è configurato (in hardware o software), è presente un insieme di URL che devono essere consentiti dal proxy. Si è responsabili della risoluzione di eventuali conflitti o incompatibilità a causa di più proxy. È possibile aggiungere proxy di rete specifici per l'organizzazione utilizzando impostazioni configurabili. Per ulteriori informazioni, vedere [impostazioni configurabili](../working-with-managed-desktop/config-setting-ref.md#proxy).<br><br>Per ulteriori informazioni, vedere [configurazione del proxy](../get-ready/network.md).
 Stampa | L'utente è responsabile dell'installazione, la manutenzione e l'amministrazione di stampanti e code di stampa. La stampa cloud è una soluzione consigliata, ma non è necessaria. 
 

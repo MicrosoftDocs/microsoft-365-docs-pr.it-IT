@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: a575e57cccce778016f046a2050dca20e5660673
-ms.sourcegitcommit: 2d3e85173c65a9e0ce92624a80ed7a9839f5b8bd
+ms.openlocfilehash: dd72ded935b9108e4b2699f5ddb6d320f5c32e69
+ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49123501"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49841257"
 ---
 # <a name="get-started-with-insider-risk-management-settings"></a>Informazioni introduttive sulle impostazioni di gestione dei rischi Insider
 
@@ -61,13 +61,13 @@ Gli indicatori dei criteri sono segmentati nelle aree seguenti. È possibile sce
 - **Indicatori di Office**: includono indicatori dei criteri per i siti di SharePoint, i team e la messaggistica di posta elettronica.
 - **Indicatori del dispositivo**: includono indicatori dei criteri per attività quali la condivisione di file sulla rete o con i dispositivi. Gli indicatori includono attività relative ai file di Microsoft Office. File CSV e. File PDF. Se si selezionano gli **indicatori di dispositivo**, l'attività viene elaborata solo per i dispositivi con Windows 10 Build 1809 o versione successiva. Per ulteriori informazioni sulla configurazione dei dispositivi per l'integrazione con rischio Insider, vedere la sezione [abilitare gli indicatori di dispositivo e i dispositivi di bordo](insider-risk-management-settings.md#OnboardDevices) .
 - **Indicatore di violazione dei criteri di sicurezza**: sono inclusi gli indicatori di Microsoft Defender per endpoint relativi all'installazione di software non approvato o dannoso o al bypassing dei controlli di sicurezza. Per ricevere avvisi in gestione dei rischi Insider, è necessario avere un difensore attivo per la licenza endpoint e l'integrazione dei rischi Insider abilitata. Per ulteriori informazioni sulla configurazione di Defender per endpoint per l'integrazione di gestione dei rischi Insider, vedere [configure advanced features in Microsoft Defender for endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-features\#share-endpoint-alerts-with-microsoft-compliance-center).
-- **Booster del Punteggio di rischio**: tra cui l'aumento del Punteggio di rischio per attività inusuali o precedenti violazioni dei criteri. Abilitazione del Punteggio di rischio i Booster aumentano i punteggi dei rischi e la probabilità di avvisi per questi tipi di attività. I booster del Punteggio di rischio possono essere selezionati solo se sono stati selezionati uno o più indicatori sopra riportati.
+- **Booster del Punteggio di rischio**: tra cui l'aumento del Punteggio di rischio per attività inusuali o precedenti violazioni dei criteri. Abilitazione del Punteggio di rischio i Booster aumentano i punteggi dei rischi e la probabilità di avvisi per questi tipi di attività. I booster del Punteggio di rischio possono essere selezionati solo se sono stati selezionati uno o più indicatori.
 
 ![Impostazioni degli indicatori di gestione dei rischi Insider](../media/insider-risk-settings-indicators.png)
 
 In alcuni casi, è possibile che si desideri limitare gli indicatori dei criteri di rischio Insider applicati ai criteri di insider Risk nell'organizzazione. È possibile disattivare gli indicatori dei criteri per aree specifiche disattivando tutti i criteri di rischio Insider. Non è possibile modificare gli eventi di attivazione per i modelli di criteri di rischio Insider.
 
-Per definire gli indicatori dei criteri di rischio Insider abilitati in tutti i criteri di rischio Insider, passare a indicatori **delle impostazioni dei rischi Insider**  >  **Indicators** e selezionare uno o più indicatori di criteri. Gli indicatori selezionati nella pagina Impostazioni indicatori non possono essere configurati singolarmente quando si crea o si modifica un criterio di rischio Insider nella procedura guidata dei criteri.
+Per definire gli indicatori dei criteri di rischio Insider abilitati in tutti i criteri di rischio Insider, passare a indicatori **delle impostazioni dei rischi Insider**  >   e selezionare uno o più indicatori di criteri. Gli indicatori selezionati nella pagina Impostazioni indicatori non possono essere configurati singolarmente quando si crea o si modifica un criterio di rischio Insider nella procedura guidata dei criteri.
 
 >[!NOTE]
 >Potrebbe essere necessario diverse ore prima che i nuovi utenti aggiunti manualmente vengano visualizzati nel **dashboard degli utenti**. Le attività per i 90 giorni precedenti per questi utenti possono richiedere fino a 24 ore per la visualizzazione. Per visualizzare le attività per gli utenti aggiunti manualmente, selezionare l'utente nel **Dashboard utenti** e aprire la scheda **attività utente** nel riquadro dei dettagli.
@@ -102,10 +102,10 @@ In questo scenario di distribuzione, i dispositivi di bordo che non sono stati a
    > [!NOTE]
    > Anche se in genere sono necessari circa 60 secondi perché l'onboarding dei dispositivi sia abilitato, attendere fino a 30 minuti prima di contattare il supporto tecnico Microsoft.
 
-3. Scegliere **Gestione dispositivi** per aprire l'elenco dei **Dispositivi**. L'elenco sarà vuoto fino all'onboarding dei dispositivi.
+3. Scegliere **Gestione dispositivi** per aprire l'elenco **Dispositivi**. L'elenco sarà vuoto finché non si caricano dispositivi.
 4. Scegliere **Onboarding** per avviare il processo di onboarding.
-5. Scegliere il modo in cui si vogliono distribuire questi altri dispositivi dall'elenco **Metodo di distribuzione** e quindi **scaricare il pacchetto**.
-6. Seguire le procedure appropriate in [Strumenti per l'onboarding e metodi per i computer Windows 10](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints). Questo collegamento porta alla pagina di destinazione in cui è possibile accedere alle procedure di Microsoft Defender ATP che corrispondono al pacchetto di distribuzione selezionato al passaggio 5:
+5. Scegliere il modo in cui si desidera eseguire la distribuzione in questi altri dispositivi dall'elenco dei **metodi di distribuzione** e quindi **scaricare il pacchetto**.
+6. Seguire le procedure appropriate in [Strumenti e metodi di onboarding per i dispositivi Windows 10](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints). Questo collegamento porta a una pagina di destinazione in cui è possibile accedere a Microsoft Defender per le procedure endpoint che corrispondono al pacchetto di distribuzione selezionato nel passaggio 5:
     - Onboarding di dispositivi Windows 10 con Criteri di gruppo
     - Onboarding di dispositivi Windows 10 con Microsoft Endpoint Configuration Manager
     - Onboarding di dispositivi Windows 10 con gli strumenti di Gestione dispositivi mobili
@@ -124,10 +124,10 @@ Se Microsoft Defender per endpoint è già stato distribuito e vi sono report di
 
 1. Aprire il [Centro conformità Microsoft](https://compliance.microsoft.com).
 2. Aprire la pagina delle impostazioni del Centro conformità e scegliere **Abilita monitoraggio dispositivi**.
-3. Scegliere **Gestione dispositivi** per aprire l'elenco dei **Dispositivi**. Dovrebbe essere visualizzato l'elenco dei dispositivi che inviano già report a Microsoft Defender ATP.
-4. Scegliere **Onboarding** se è necessario aggiungere altri dispositivi.
-5. Scegliere il modo in cui si vogliono distribuire questi altri dispositivi dall'elenco **Metodo di distribuzione** e quindi **Scarica pacchetto**.
-6. Seguire le procedure appropriate in [Strumenti per l'onboarding e metodi per i computer Windows 10](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints). Questo collegamento porta alla pagina di destinazione in cui è possibile accedere alle procedure di Microsoft Defender ATP che corrispondono al pacchetto di distribuzione selezionato al passaggio 5:
+3. Scegliere **Gestione dispositivi** per aprire l'elenco **Dispositivi**. Dovrebbe essere visualizzato l'elenco dei dispositivi che già inviano report a Microsoft Defender per endpoint.
+4. Scegliere **onboarding** se è necessario onboarding più dispositivi.
+5. Scegliere il modo in cui si desidera eseguire la distribuzione in questi altri dispositivi dall'elenco dei **metodi di distribuzione** e quindi **scaricare il pacchetto**.
+6. Seguire le procedure appropriate in [Strumenti e metodi di onboarding per i dispositivi Windows 10](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints). Questo collegamento porta a una pagina di destinazione in cui è possibile accedere a Microsoft Defender per le procedure endpoint che corrispondono al pacchetto di distribuzione selezionato nel passaggio 5:
     - Onboarding di dispositivi Windows 10 con Criteri di gruppo
     - Onboarding di dispositivi Windows 10 con Microsoft Endpoint Configuration Manager
     - Onboarding di dispositivi Windows 10 con gli strumenti di Gestione dispositivi mobili
@@ -229,7 +229,7 @@ Informazioni sugli avvisi di gestione dei rischi Insider sono esportabili in ser
 
 Per utilizzare le API per esaminare le informazioni sugli avvisi dei rischi Insider:
 
-1. Abilitare il supporto API di gestione delle attività di Office 365 nell'esportazione delle impostazioni di **gestione rischi Insider**  >  **Settings**  >  **Export**. Per impostazione predefinita, questa impostazione è disabilitata per l'organizzazione Microsoft 365.
+1. Abilitare il supporto API di gestione delle attività di Office 365 nell'esportazione delle impostazioni di **gestione rischi Insider**  >    >  . Per impostazione predefinita, questa impostazione è disabilitata per l'organizzazione Microsoft 365.
 2. Filtrare le attività di controllo comuni di Office 365 da *SecurityComplianceAlerts*.
 3. Filtrare *SecurityComplianceAlerts* dalla categoria *InsiderRiskManagement* .
 
@@ -339,8 +339,8 @@ Completare la procedura seguente per configurare le risorse fisiche prioritarie:
     >[!IMPORTANT]
     >Per i criteri di gestione dei rischi Insider per l'utilizzo e la correlazione dei dati del segnale relativi agli utenti che partono e terminano con i dati degli eventi dalle piattaforme di controllo e accesso fisico, è necessario configurare anche il connettore Microsoft 365 HR. Se si Abilita il connettore fisico di badging senza abilitare il connettore Microsoft 365 HR, i criteri di gestione dei rischi Insider elaborerà solo gli eventi per le attività di accesso fisico per gli utenti dell'organizzazione.
 
-2. Nel [centro conformità Microsoft 365](https://compliance.microsoft.com), accedere a **gestione dei rischi Insider** e selezionare risorse fisiche prioritarie priorità **delle impostazioni di rischio Insider**  >  **Priority physical assets**.
-3. Nella pagina **risorse fisiche prioritarie** è possibile aggiungere manualmente gli ID di risorsa fisica che si desidera monitorare per gli eventi patrimoniali importati dal connettore badging fisico o importare un. File CSV di tutti gli ID risorse fisiche importati dal connettore badging fisico: a) per aggiungere manualmente gli ID risorse fisiche, scegliere **Aggiungi risorse fisiche prioritarie**, immettere un ID risorsa fisica e quindi fare clic su **Aggiungi**. Immettere ulteriori ID asset fisici e quindi selezionare **Aggiungi risorse fisiche prioritarie** per salvare tutti gli asset immessi.
+2. Nel [centro conformità Microsoft 365](https://compliance.microsoft.com), accedere a **gestione dei rischi Insider** e selezionare risorse fisiche prioritarie priorità **delle impostazioni di rischio Insider**  >  .
+3. Nella pagina **risorse fisiche prioritarie** è possibile aggiungere manualmente gli ID di risorsa fisica che si desidera monitorare per gli eventi patrimoniali importati dal connettore badging fisico o importare un. File CSV di tutti gli ID risorse fisiche importati dal connettore badging fisico: a) per aggiungere manualmente gli ID risorse fisiche, scegliere **Aggiungi risorse fisiche prioritarie**, immettere un ID risorsa fisica e quindi fare clic su **Aggiungi**. Immettere altri ID asset fisici e quindi selezionare **Aggiungi risorse fisiche prioritarie** per salvare tutti gli asset immessi.
     b) per aggiungere un elenco di ID asset fisici da a. File CSV, scegliere **Importa risorse fisiche prioritarie**. Nella finestra di dialogo Esplora file selezionare il. File CSV che si desidera importare, quindi selezionare **Apri**. Gli ID delle risorse fisiche del. I file CSV vengono aggiunti all'elenco.
 4. Passare alla scheda **indicatori dei criteri** in impostazioni.
 5. Nella pagina **indicatori di criteri** , passare alla sezione **indicatori di accesso fisico** e selezionare la casella di controllo per l' **accesso fisico dopo la terminazione o l'accesso non riuscito a Asset riservati**.
@@ -355,7 +355,7 @@ Per eliminare una risorsa fisica prioritaria esistente, è possibile utilizzare 
 
 Completare la procedura seguente per eliminare una risorsa fisica prioritaria:
 
-1. Nel [centro conformità Microsoft 365](https://compliance.microsoft.com), accedere a **gestione dei rischi Insider** e selezionare risorse fisiche prioritarie priorità **delle impostazioni di rischio Insider**  >  **Priority physical assets**.
+1. Nel [centro conformità Microsoft 365](https://compliance.microsoft.com), accedere a **gestione dei rischi Insider** e selezionare risorse fisiche prioritarie priorità **delle impostazioni di rischio Insider**  >  .
 2. Nella pagina **risorse fisiche prioritarie** selezionare il bene che si desidera eliminare.
 3. Scegliere **Elimina** dal menu azione per eliminare il bene.
 
@@ -363,13 +363,13 @@ Completare la procedura seguente per eliminare una risorsa fisica prioritaria:
 
 [Microsoft Power automatizzate](https://docs.microsoft.com/power-automate/getting-started) è un servizio di flusso di lavoro che automatizza le azioni tra le applicazioni e i servizi. Utilizzando flussi provenienti da modelli o creati manualmente, è possibile automatizzare le attività comuni associate a queste applicazioni e servizi. Quando si abilitano i flussi automatici di alimentazione per la gestione dei rischi Insider, è possibile automatizzare le attività importanti per i casi e gli utenti. È possibile configurare i flussi automatici di alimentazione per recuperare informazioni sugli utenti, gli avvisi e i casi e condividere queste informazioni con le parti interessate e altre applicazioni, nonché automatizzare le azioni in gestione dei rischi Insider, ad esempio la pubblicazione di note di caso. I flussi automatici di alimentazione sono applicabili per i casi e per qualsiasi utente nell'ambito di un criterio.
 
-I clienti con abbonamenti Microsoft 365 che includono la gestione dei rischi insider non necessitano di ulteriori licenze di automatizzazione dell'alimentazione per utilizzare i modelli di automatizzazione di Power Management dei rischi consigliati. Questi modelli possono essere personalizzati per supportare l'organizzazione e coprire gli scenari di gestione dei rischi Insider core. Se si sceglie di utilizzare le funzionalità di automatizzazione di Power Premium in questi modelli, creare un modello personalizzato utilizzando il connettore di conformità di Microsoft 365 o utilizzare i modelli Power Automate per altre aree di conformità in Microsoft 365, potrebbe essere necessario disporre di licenze aggiuntive per automatizzare la potenza.
+I clienti con abbonamenti Microsoft 365 che includono la gestione dei rischi insider non necessitano di ulteriori licenze di automatizzazione dell'alimentazione per utilizzare i modelli di automatizzazione di Power Management dei rischi consigliati. Questi modelli possono essere personalizzati per supportare l'organizzazione e coprire gli scenari di gestione dei rischi Insider core. Se si sceglie di utilizzare le funzionalità di automatizzazione di Power Premium in questi modelli, creare un modello personalizzato utilizzando il connettore di conformità Microsoft 365 o utilizzare i modelli Power Automate per altre aree di conformità in Microsoft 365, potrebbe essere necessario disporre di più licenze automatizzate.
 
 I seguenti modelli di automatizzazione dei poteri vengono forniti ai clienti per supportare l'automazione dei processi per gli utenti e i casi di gestione del rischio Insider:
 
 - **Informare gli utenti quando vengono aggiunti a un criterio di rischio Insider**: questo modello è per le organizzazioni che dispongono di criteri interni, privacy o requisiti normativi che gli utenti devono ricevere una notifica quando sono soggetti a criteri di gestione dei rischi Insider. Quando questo flusso è configurato e selezionato per un utente nella pagina utenti, gli utenti e i loro manager ricevono un messaggio di posta elettronica quando l'utente viene aggiunto a un criterio di gestione dei rischi Insider. Questo modello supporta anche l'aggiornamento di un elenco di SharePoint ospitato in un sito di SharePoint per consentire di tenere presenti i dettagli dei messaggi di notifica come data/ora e il destinatario del messaggio. Se si è scelto di anonimizzare gli utenti in **impostazioni di privacy**, i flussi creati da questo modello non funzioneranno come previsto in modo che la privacy degli utenti venga mantenuta. I flussi automatici di alimentazione con questo modello sono disponibili nel **dashboard degli utenti**.
 - **Richiedere informazioni da HR o business su un utente in un caso di rischio Insider**: quando si agisce su un caso, gli analisti e gli investigatori del rischio Insider possono dover consultare HR o altre parti interessate per comprendere il contesto delle attività del caso. Quando questo flusso è configurato e selezionato per un caso, gli analisti e gli investigatori inviano un messaggio di posta elettronica alle parti interessate HR e business configurate per questo flusso. Ogni destinatario viene inviato un messaggio con opzioni di risposta preconfigurate o personalizzabili. Quando i destinatari selezionano un'opzione di risposta, la risposta viene registrata come nota del caso e include informazioni su destinatario e data/ora. Se si è scelto di anonimizzare gli utenti in **impostazioni di privacy**, i flussi creati da questo modello non funzioneranno come previsto in modo che la privacy degli utenti venga mantenuta. I flussi automatici di alimentazione con questo modello sono disponibili nel **dashboard dei casi**.
-- **Gestione notifiche quando un utente dispone di un avviso di rischio Insider**: alcune organizzazioni potrebbero dover avere una notifica di gestione immediata quando un utente dispone di un avviso di gestione dei rischi Insider. Quando questo flusso è configurato e selezionato, il responsabile dell'utente del caso viene inviato un messaggio di posta elettronica con le seguenti informazioni su tutti gli avvisi di caso: 
+- **Gestione notifiche quando un utente dispone di un avviso di rischio Insider**: alcune organizzazioni potrebbero dover avere una notifica di gestione immediata quando un utente dispone di un avviso di gestione dei rischi Insider. Quando questo flusso è configurato e selezionato, il responsabile dell'utente del caso viene inviato un messaggio di posta elettronica con le seguenti informazioni su tutti gli avvisi di caso:
     - Criterio applicabile per l'avviso
     - Data/ora dell'avviso
     - Livello di gravità dell'avviso
@@ -377,6 +377,7 @@ I seguenti modelli di automatizzazione dei poteri vengono forniti ai clienti per
     Il flusso aggiorna automaticamente le note del caso in cui il messaggio è stato inviato e che il flusso è stato attivato. Se si è scelto di anonimizzare gli utenti in **impostazioni di privacy**, i flussi creati da questo modello non funzioneranno come previsto in modo che la privacy degli utenti venga mantenuta. I flussi automatici di alimentazione con questo modello sono disponibili nel **dashboard dei casi**.
 
 - **Aggiungere un promemoria del calendario per il follow-up di un caso di rischio Insider**: questo modello consente agli investigatori e agli analisti del rischio di aggiungere promemoria del calendario per i casi al calendario di Office 365 Outlook. Questo flusso Elimina la necessità per gli utenti di uscire o di disattivare il flusso di lavoro di gestione dei rischi Insider quando si elaborano i casi e gli avvisi di Triaging. Quando questo flusso è configurato e selezionato, viene aggiunto un promemoria al calendario di Outlook di Office 365 per l'utente che esegue il flusso. I flussi automatici di alimentazione con questo modello sono disponibili nel **dashboard dei casi**.
+- **Creare un record per il caso di rischio insider in ServiceNow**: questo modello è per le organizzazioni che desiderano utilizzare la propria soluzione ServiceNow per registrare i casi di gestione dei rischi Insider.  Quando in un caso, gli analisti e gli investigatori del rischio Insider possono creare un record per il caso in ServiceNow. È possibile personalizzare questo modello per popolare i campi selezionati in ServiceNow in base ai requisiti dell'organizzazione. I flussi automatici di alimentazione con questo modello sono disponibili nel **dashboard dei casi**. Per ulteriori informazioni sui campi di ServiceNow disponibili, vedere l'articolo di [riferimento del connettore di ServiceNow](/connectors/service-now/) .
 
 ### <a name="create-a-power-automate-flow-from-insider-risk-management-template"></a>Creare un flusso automatico di alimentazione automatizzato dal modello di gestione dei rischi Insider
 
@@ -390,7 +391,7 @@ Completare la procedura seguente per creare un flusso di automatizzazione Power 
 2. Sulla pagina **flussi automatici di alimentazione** selezionare un modello consigliato dai **modelli di gestione dei rischi insider come** sezione della pagina.
 3. Il flusso elenca le connessioni incorporate necessarie per il flusso e noterà se lo stato della connessione è disponibile. Se necessario, aggiornare tutte le connessioni che non vengono visualizzate come disponibili. Selezionare **continua**.
 4. Per impostazione predefinita, i flussi consigliati sono preconfigurati con i campi dati del servizio di gestione dei rischi Insider consigliati e Microsoft 365 necessari per completare l'attività assegnata per il flusso. Se necessario, personalizzare i componenti del flusso utilizzando il controllo **Mostra opzioni avanzate** e configurando le proprietà disponibili per il componente di flusso.
-5. Se necessario, aggiungere eventuali passaggi aggiuntivi al flusso selezionando il pulsante **nuovo passaggio** . Nella maggior parte dei casi, non dovrebbe essere necessario per i modelli predefiniti consigliati.
+5. Se necessario, aggiungere altri passaggi al flusso selezionando il pulsante **nuovo passaggio** . Nella maggior parte dei casi, non dovrebbe essere necessario per i modelli predefiniti consigliati.
 6. Selezionare **Save Draft** per salvare il flusso per ulteriori configurazioni oppure selezionare **Salva** per completare la configurazione del flusso.
 7. Selezionare **Chiudi** per tornare alla pagina del **flusso Power automatizzate** . Il nuovo modello verrà elencato come flusso nelle schede **My Flows** ed è automaticamente disponibile dal controllo DropDown **automatizzato** quando si utilizzano i casi di gestione dei rischi Insider per l'utente che crea il flusso.
 
@@ -440,7 +441,7 @@ Completare la procedura seguente per modificare un flusso Power automatizzate:
 
 1. Nel [centro conformità di Microsoft 365](htttps://compliance.microsoft.com), accedere a **gestione dei rischi Insider** e selezionare **Impostazioni rischi Insider**  >  **Powers automatizzare i flussi**. È inoltre possibile accedere alle pagine dashboard dei **casi** o **degli utenti** scegliendo **automatizza**  >  **Gestione flussi automatici di alimentazione**.
 2. Sulla pagina **flussi automatici di alimentazione** selezionare un flusso da modificare e scegliere **modifica** dal menu controllo flusso.
-3. Selezionare le impostazioni dei **puntini**  >  **Settings** di sospensione per modificare un'impostazione del componente di flusso o l'eliminazione con **puntini**  >  **Delete** per eliminare un componente di flusso
+3. Selezionare le impostazioni dei **puntini**  >   di sospensione per modificare un'impostazione del componente di flusso o l'eliminazione con **puntini**  >   per eliminare un componente di flusso
 4. Selezionare **Salva** e quindi **Chiudi** per completare la modifica del flusso.
 
 ### <a name="delete-a-power-automate-flow"></a>Eliminare un flusso Power automatizzate
@@ -469,7 +470,7 @@ Per ulteriori informazioni sull'utilizzo di team e canali in Microsoft teams, ve
 
 L'abilitazione del supporto di Microsoft teams per i casi è semplice e veloce da configurare. Per abilitare Microsoft teams per la gestione dei rischi Insider, eseguire i passaggi seguenti:
 
-1. Nel [centro conformità di Microsoft 365](htttps://compliance.microsoft.com), passare a impostazioni di rischio Insider Management Risk **Manager** Insider  >  **Insider risk settings**.
+1. Nel [centro conformità di Microsoft 365](htttps://compliance.microsoft.com), passare a impostazioni di rischio Insider Management Risk **Manager** Insider  >  .
 2. Selezionare la scheda **Microsoft teams** .
 3. Abilitare l'integrazione di Microsoft teams per la gestione dei rischi Insider.
 4. Selezionare **Salva** per configurare ed uscire.
@@ -482,7 +483,7 @@ Gli utenti devono disporre dell'autorizzazione per creare i gruppi di Microsoft 
 
 Per creare un team per un caso, è possibile utilizzare il controllo Crea Microsoft Team quando si lavora direttamente in un caso esistente. Completare la procedura seguente per creare un nuovo team:
 
-1. Nel [centro conformità di Microsoft 365](htttps://compliance.microsoft.com), passare a casi di **gestione dei rischi Insider**  >  **Cases** e selezionare un caso esistente.
+1. Nel [centro conformità di Microsoft 365](htttps://compliance.microsoft.com), passare a casi di **gestione dei rischi Insider**  >   e selezionare un caso esistente.
 2. Scegliere **Crea Microsoft Team** dal menu azione caso.
 3. Nel campo **nome Team** , immettere un nome per il nuovo team di Microsoft teams.
 4. Selezionare **Crea Microsoft Team** e quindi **Chiudi**.

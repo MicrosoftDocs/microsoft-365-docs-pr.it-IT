@@ -1,6 +1,6 @@
 ---
 title: Tecnologie di sicurezza in Microsoft Managed Desktop
-description: ''
+description: Tecnologie utilizzate per la sicurezza dei dispositivi, la gestione delle identità e degli accessi, la sicurezza della rete e la sicurezza delle informazioni
 keywords: Microsoft Managed Desktop, Microsoft 365, servizi, documentazione
 ms.service: m365-md
 author: jaimeo
@@ -8,18 +8,18 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: e69656e13cd9a300cd56bdd5db7703f2387d23d4
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 5076ddca6053adc7cebb9599c8d82a42c7ab5a63
+ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48846205"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49840914"
 ---
 # <a name="security-technologies-in-microsoft-managed-desktop"></a>Tecnologie di sicurezza in Microsoft Managed Desktop
 
 <!--Security, also Onboarding doc: data handling/store, privileged account access -->
 
-Microsoft Managed Desktop utilizza diverse tecnologie Microsoft per proteggere i dati e i dispositivi gestiti. Inoltre, Microsoft Managed Desktop Security Operations Center utilizza una serie di [processi](security-operations.md) in combinazione con queste tecnologie.
+Microsoft Managed Desktop utilizza diverse tecnologie Microsoft per proteggere i dati e i dispositivi gestiti. Inoltre, Microsoft Managed Desktop Security Operations Center utilizza vari [processi](security-operations.md) in combinazione con queste tecnologie.
 
 In particolare: 
 
@@ -28,7 +28,7 @@ In particolare:
 - [Sicurezza di rete](#network-security) – informazioni VPN e soluzioni e impostazioni consigliate per Microsoft Managed Desktop
 - [Sicurezza delle informazioni](#information-security) : Servizi facoltativi disponibili per proteggere ulteriormente le informazioni riservate 
 
-Per informazioni sull'archiviazione dei dati, l'utilizzo e le procedure di sicurezza utilizzate da Microsoft Managed Desktop, vedere il white paper at [https://aka.ms/mmd-data](https://aka.ms/mmd-data) .
+Per informazioni sull'archiviazione dei dati, l'utilizzo e le procedure di sicurezza utilizzate da Microsoft Managed Desktop, vedere il white paper all'indirizzo [https://aka.ms/mmd-data](https://aka.ms/mmd-data) .
 
 
 ## <a name="device-security"></a>Sicurezza del dispositivo
@@ -45,24 +45,24 @@ Configurazione sicura del dispositivo |   Microsoft Managed Desktop implementa l
 
 
 
-## <a name="identity-and-access-management"></a>Gestione di identità e accesso
+## <a name="identity-and-access-management"></a>Gestione delle identità e degli accessi
 
 La gestione delle identità e degli accessi protegge le risorse aziendali e i dati aziendali. Microsoft Managed Desktop configura i dispositivi per garantire l'utilizzo sicuro delle identità gestite di Azure Active Directory (Azure AD). È responsabilità del cliente mantenere informazioni accurate nel tenant di Azure AD. 
 
 Servizio | Descrizione
 --- | ---
 Autenticazione biometrica |  Windows Hello consente agli utenti di accedere utilizzando la propria faccia o un PIN, rendendo le password più difficili da dimenticare o rubare. I clienti sono responsabili dell'implementazione dei prerequisiti necessari per la loro Active Directory locale per l'utilizzo di questo servizio in una configurazione ibrida. Per ulteriori informazioni, vedere [Windows Hello.](https://docs.microsoft.com/windows-hardware/design/device-experiences/windows-hello) 
-Autorizzazione utente standard |  Per proteggere il sistema e renderlo più sicuro, all'utente verranno assegnate le autorizzazioni utente standard. Questo viene assegnato come parte dell'esperienza di Windows Autopilot out-of-box.
+Autorizzazione utente standard |  Per proteggere il sistema e renderlo più sicuro, all'utente verranno assegnate le autorizzazioni utente standard. Questa autorizzazione viene assegnata come parte dell'esperienza di Windows Autopilot out-of-box.
 
 
 
-## <a name="network-security"></a>Protezione di rete
+## <a name="network-security"></a>Sicurezza di rete
 
 I clienti sono responsabili della sicurezza della rete. 
 
 Servizio | Descrizione
 --- | ---
-VPN | I clienti possiedono l'infrastruttura VPN per garantire che le risorse aziendali limitate possano essere esposte all'esterno della rete Intranet.<br><br>Requisiti minimi: Microsoft Managed Desktop richiede una soluzione VPN compatibile con Windows 10 e supportata. Se l'organizzazione ha bisogno di una soluzione VPN, deve supportare Windows 10 e essere imballata e distribuita tramite Intune. Per ulteriori informazioni, contattare l'editore del software.<br><br>Elemento consigliato<br>-Microsoft consiglia una soluzione VPN moderna che potrebbe essere distribuita facilmente tramite Intune per spingere i profili VPN. In questo modo è possibile accedere a una rete aziendale sempre attiva, senza problemi, affidabile e sicura. Per ulteriori informazioni, vedere [[VPN settings in Intune]](https://docs.microsoft.com/intune/vpn-settings-configure).<br>-I client VPN spessi o i client VPN legacy non sono consigliati da Microsoft durante l'utilizzo di Microsoft Managed Desktop poiché possono influire sull'ambiente utente.<br>-Microsoft consiglia che il traffico Web in uscita vada direttamente a Internet senza passare attraverso la VPN per evitare problemi di prestazioni.<br>-Idealmente, Microsoft consiglia di utilizzare il proxy dell'applicazione di Azure Active Directory invece di una VPN.
+VPN | I clienti possiedono l'infrastruttura VPN per garantire che le risorse aziendali limitate possano essere esposte all'esterno della rete Intranet.<br><br>Requisiti minimi: Microsoft Managed Desktop richiede una soluzione VPN compatibile con Windows 10 e supportata. Se l'organizzazione ha bisogno di una soluzione VPN, deve supportare Windows 10 e essere imballata e distribuita tramite Intune. Per ulteriori informazioni, contattare l'editore del software.<br><br>Elemento consigliato<br>-Microsoft consiglia una soluzione VPN moderna che potrebbe essere distribuita facilmente tramite Intune per spingere i profili VPN. Questo approccio fornisce un metodo sempre acceso, senza problemi, affidabile e sicuro per accedere alla rete aziendale. Per ulteriori informazioni, vedere [[VPN settings in Intune]](https://docs.microsoft.com/intune/vpn-settings-configure).<br>-I client VPN di spessore o i client VPN meno recenti non sono consigliati da Microsoft durante l'utilizzo di Microsoft Managed Desktop poiché possono influire sull'ambiente utente.<br>-Microsoft consiglia che il traffico Web in uscita vada direttamente a Internet senza passare attraverso la VPN per evitare problemi di prestazioni.<br>-Idealmente, Microsoft consiglia di utilizzare il proxy dell'applicazione di Azure Active Directory invece di una VPN.
 
 
 ## <a name="information-security"></a>Sicurezza delle informazioni

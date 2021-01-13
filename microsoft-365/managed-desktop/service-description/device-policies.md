@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 5533284d4a3f55a51b3017a64e4c353b4ec71352
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 7086774c046ac28ffa467168e3b5b1affb508ec8
+ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48846229"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49840332"
 ---
 # <a name="device-configuration"></a>Configurazione delle periferiche
 
@@ -23,7 +23,7 @@ ms.locfileid: "48846229"
 
 <!-- Device configuration and Security Addendum-->
 
-Quando viene configurato un nuovo dispositivo Microsoft Managed Desktop, è necessario garantire la corretta configurazione per Microsoft Managed Desktop. Questo include un insieme di criteri predefiniti che vengono impostati come parte del processo di onboarding. Questi criteri vengono recapitati utilizzando la gestione dei dispositivi mobili (MDM) quando possibile. Per ulteriori informazioni, vedere [gestione dei dispositivi mobili](https://docs.microsoft.com/windows/client-management/mdm/). 
+Quando viene configurato un nuovo dispositivo Microsoft Managed Desktop, è necessario garantire la corretta configurazione per Microsoft Managed Desktop. Tale configurazione include un insieme di criteri predefiniti che vengono impostati come parte del processo di onboarding. Questi criteri vengono recapitati utilizzando la gestione dei dispositivi mobili (MDM) quando possibile. Per ulteriori informazioni, vedere [gestione dei dispositivi mobili](https://docs.microsoft.com/windows/client-management/mdm/). 
 
 >[!NOTE]
 >Per evitare conflitti, non modificare questi criteri.
@@ -53,5 +53,5 @@ Connessioni con tassametro | Per impostazione predefinita, gli aggiornamenti su 
  ### <a name="additional-security-policies"></a>Criteri di sicurezza aggiuntivi
 
  Questi criteri vengono aggiunti per aumentare la sicurezza per le industrie altamente regolamentate. 
- - **Monitoraggio della sicurezza** : Microsoft controllerà i dispositivi tramite [Microsoft Defender per endpoint](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection). Se viene rilevata una minaccia, Microsoft invierà una notifica al cliente, isolerà il dispositivo e rettificherà il problema in remoto. 
- - **Disabilitare PowerShell V2** : Microsoft ha rimosso PowerShell v2 nell'agosto 2017. Questa funzionalità è stata disattivata su tutti i dispositivi Microsoft Managed Desktop. Per ulteriori informazioni su questa modifica, vedere [Deprecation di Windows PowerShell 2,0](https://devblogs.microsoft.com/powershell/windows-powershell-2-0-deprecation/).
+ - **Monitoraggio della sicurezza**: Microsoft controllerà i dispositivi tramite [Microsoft Defender per endpoint](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection). Se viene rilevata una minaccia, Microsoft invierà una notifica al cliente, isolerà il dispositivo e rettificherà il problema in remoto. 
+ - **Disabilitare PowerShell V2**: Microsoft ha rimosso PowerShell v2 nell'agosto 2017. Questa funzionalità è stata disattivata su tutti i dispositivi Microsoft Managed Desktop. Per ulteriori informazioni su questa modifica, vedere [Deprecation di Windows PowerShell 2,0](https://devblogs.microsoft.com/powershell/windows-powershell-2-0-deprecation/).

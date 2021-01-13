@@ -10,12 +10,12 @@ f1.keywords:
 ms.author: jaimeo
 ms.topic: article
 ms.localizationpriority: normal
-ms.openlocfilehash: 8412c10416a4a131129eebd20d1b4f01228afaf3
-ms.sourcegitcommit: 280200281aec862517876319a3fe4ce170674047
+ms.openlocfilehash: 7005e09d5a3df158569e132d2954f3b9a0ebf371
+ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/07/2020
-ms.locfileid: "49586686"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49840482"
 ---
 # <a name="privacy-and-personal-data"></a>Privacy e dati personali
 
@@ -30,7 +30,7 @@ Quando gli utenti iscrivono i dispositivi aziendali in Microsoft Managed Desktop
 Microsoft Managed Desktop non raccoglie i dati da solo per fornire il proprio servizio (ad eccezione delle [informazioni di contatto dell'amministratore it](#it-admin-contact-information). Invece, Microsoft Managed Desktop riutilizza i dati che sono già stati raccolti da altre origini, come Windows e Microsoft Intune. Microsoft Managed Desktop utilizza i dati che questi servizi raccolgono dai dispositivi registrati:
 
 - I dati di diagnostica di Windows provenienti da dispositivi gestiti da Microsoft Managed Desktop vengono inviati agli archivi dati di diagnostica di Microsoft Windows.
-- Microsoft Managed Desktop utilizza la [gestione moderna](https://docs.microsoft.com/learn/modules/introduction-to-modern-management-in-microsoft-365/) per la gestione dei dispositivi registrati. Come parte di questo, i dispositivi devono essere registrati nell'Azure Active Directory del tenant.
+- Microsoft Managed Desktop utilizza la [gestione moderna](https://docs.microsoft.com/learn/modules/introduction-to-modern-management-in-microsoft-365/) per la gestione dei dispositivi registrati. Come parte di "gestione moderna", i dispositivi devono essere registrati nell'Azure Active Directory del tenant.
 - Per la distribuzione di una configurazione altamente ottimizzata e sicura per i dispositivi registrati, Microsoft Managed Desktop utilizza Microsoft Intune.
 - Microsoft Managed Desktop utilizza i dati di sicurezza di Microsoft Defender Advanced thread Protection per i clienti che utilizzano tale servizio.
 
@@ -60,8 +60,8 @@ Microsoft Managed Desktop utilizza i dati seguenti:
 |---------|---------|
 |Dati di Azure Active Directory     | Utilizzato nei report creati per gli amministratori tenant, che sono disponibili nel portale di amministrazione di Microsoft Managed Desktop.        |
 |Dati di Intune     | Utilizzato nei report creati per gli amministratori tenant, che sono disponibili nel portale di amministrazione di Microsoft Managed Desktop.        |
-|Microsoft Defender ATP     |  Utilizzato per l'indirizzamento di minacce alla sicurezza rilevate su dispositivi registrati da Microsoft Managed Desktop ' s Security Operations Center (SOC).  |
-|Dati di diagnostica di Windows     |Utilizzato per determinare lo stato di aggiornamento dei dispositivi gestiti, nonché per fornire e migliorare l'offerta IT-as-a-Service (ITaaS) di Microsoft Managed Desktop.         |
+|Microsoft Defender per endpoint     |  Utilizzato per l'indirizzamento di minacce alla sicurezza rilevate su dispositivi registrati da Microsoft Managed Desktop ' s Security Operations Center (SOC).  |
+|Dati di diagnostica di Windows     |Utilizzato per determinare lo stato di aggiornamento dei dispositivi gestiti e per fornire e migliorare l'offerta IT-as-a-Service (ITaaS) di Microsoft Managed Desktop.         |
 |Dati dei contatti amministrativi     | Utilizzato da Microsoft Managed Desktop per comunicare con gli amministratori dei tenant.        |
 
 
@@ -91,7 +91,7 @@ Per ulteriori informazioni sulle aree utilizzate da Azure per l'archiviazione de
 
 I dati di Intune possono essere archiviati in alcune aree geografiche diverse, ad esempio Europa Nord (Irlanda) e Europe West (Paesi Bassi). L'amministratore IT crea un account tenant e sceglie il paese in cui verranno archiviati i dati quando si iscrivono inizialmente ai servizi di Intune. Per un elenco delle posizioni dei datacenter utilizzati da Intune, vedere [Microsoft Intune-dove sono i dati dei clienti?](http://intunedatacentermap.azurewebsites.net/). Per ulteriori informazioni sull'archiviazione dei dati e sull'utilizzo da parte di Intune, vedere [raccolta di dati in Intune](https://docs.microsoft.com/intune/privacy-data-collect).
 
-### <a name="microsoft-defender-for-endpoint"></a>Microsoft Defender ATP
+### <a name="microsoft-defender-for-endpoint"></a>Microsoft Defender per endpoint
 
 Microsoft Defender per i dati dell'endpoint può essere memorizzato in poche aree geografiche diverse. Per questo motivo, Defender for endpoint opera nei data center di Microsoft Azure nell'Unione europea, nel Regno Unito e negli Stati Uniti, come indicato in [Microsoft Defender for endpoint, ovvero nelle posizioni di archiviazione dei dati](http://intunedatacentermap.azurewebsites.net/). Per ulteriori informazioni sull'archiviazione dei dati e sull'utilizzo da parte di Defender per endpoint, vedere [quali dati contiene Microsoft Defender per endpoint Collect?](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy#what-data-does-microsoft-defender-atp-collect)
 
