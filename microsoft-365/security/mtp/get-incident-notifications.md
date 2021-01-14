@@ -21,19 +21,17 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 3af1dcfec165c88a18cbc0d8cbf6866bb6398adc
-ms.sourcegitcommit: 1a9f0f878c045e1ddd59088ca2a94397605a242a
+ms.openlocfilehash: f25be4de3f25db869957474c3cb32b20e9f7aa53
+ms.sourcegitcommit: 88d358d778804b26d5e41c53b4f725d01a78112b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "49668323"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49848892"
 ---
 # <a name="get-incident-notifications-by-email"></a>Ottenere notifiche sugli incidenti tramite posta elettronica
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
->[!IMPORTANT]
-> La funzionalità notifiche di posta elettronica per gli incidenti è attualmente in anteprima pubblica. Alcune informazioni su questa funzionalità possono variare prima della disponibilità commerciale. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 **Si applica a:**
 - Microsoft 365 Defender

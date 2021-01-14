@@ -1,6 +1,6 @@
 ---
 title: Lavoro prerequisito per l'implementazione dei criteri di identità e accesso ai dispositivi-Microsoft 365 per Enterprise | Documenti Microsoft
-description: Vengono descritti i prerequisiti precedenti all'implementazione di criteri e configurazioni di identità e accesso ai dispositivi.
+description: In questo articolo vengono descritti i prerequisiti che devono essere soddisfatti per utilizzare i criteri e le configurazioni di identità e accesso ai dispositivi.
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: Laurawi
@@ -18,20 +18,20 @@ ms.collection:
 - M365-security-compliance
 - m365solution-identitydevice
 - m365solution-scenario
-ms.openlocfilehash: bd0b4efb1281d467a61e4aee792b507f0ca44181
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.openlocfilehash: eb07fe45c169d81559e4676f86abde5c6600a185
+ms.sourcegitcommit: 89097fb648987567b9493b9d94c85c5990562874
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49616561"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49845085"
 ---
 # <a name="prerequisite-work-for-implementing-identity-and-device-access-policies"></a>Lavoro prerequisito per l'implementazione dei criteri di identità e accesso ai dispositivi
 
-In questo articolo vengono descritti i prerequisiti che devono essere implementati prima di poter distribuire i criteri di identità e accesso ai dispositivi consigliati. In questo articolo vengono inoltre illustrate le configurazioni dei client predefiniti della piattaforma consigliate per fornire la migliore esperienza Single Sign-on (SSO) agli utenti, nonché i prerequisiti tecnici per l'accesso condizionale.
+In questo articolo vengono descritti i prerequisiti che gli amministratori devono soddisfare per utilizzare i criteri di identità e accesso ai dispositivi consigliati e per utilizzare l'accesso condizionale. Vengono inoltre illustrate le impostazioni predefinite consigliate per la configurazione delle piattaforme client per la migliore esperienza Single Sign-on (SSO).
 
 ## <a name="prerequisites"></a>Prerequisiti
 
-Prima di implementare i criteri di identità e accesso ai dispositivi consigliati, esistono numerosi prerequisiti che l'organizzazione deve soddisfare per questi modelli di identità e autenticazione per Microsoft 365 e Office 365:
+Prima di utilizzare i criteri di identità e accesso ai dispositivi consigliati, è necessario che l'organizzazione soddisfi i prerequisiti. I requisiti sono diversi per i diversi modelli di identità e autenticazione elencati di seguito:
 
 - Solo cloud
 - Autenticazione di sincronizzazione hash con password (pH) ibrida

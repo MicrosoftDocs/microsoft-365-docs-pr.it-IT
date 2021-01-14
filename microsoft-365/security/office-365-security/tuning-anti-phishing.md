@@ -15,12 +15,12 @@ ms.collection:
 - m365initiative-defender-office365
 - MET150
 description: Gli amministratori possono imparare a identificare i motivi per cui e come è stato ottenuto un messaggio di phishing in Microsoft 365 e cosa fare per evitare ulteriori messaggi di phishing in futuro.
-ms.openlocfilehash: 8a2c63d499317427b921d7786dd60b3ad4f18c42
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.openlocfilehash: 758945c64966763991bfdfba0d70a60ca1c2ddca
+ms.sourcegitcommit: cc354fd54400be0ff0401f60bbe68ed975b69cda
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49615385"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "49865045"
 ---
 # <a name="tune-anti-phishing-protection"></a>Ottimizzare la protezione anti-phishing
 
@@ -83,7 +83,7 @@ In particolare, è necessario controllare il campo di intestazione **X-Forefront
 
 - Quando possibile, è consigliabile recapitare la posta elettronica per il dominio direttamente a Microsoft 365. In altre parole, puntare il record MX del dominio Microsoft 365 a Microsoft 365. Exchange Online Protection (EOP) è in grado di fornire la migliore protezione per gli utenti del cloud quando la posta viene recapitata direttamente a Microsoft 365. Se è necessario utilizzare un sistema di igiene della posta elettronica di terze parti di fronte a EOP, utilizzare il filtro avanzato per i connettori. Per istruzioni, vedere [Enhanced Filtering for Connectors in Exchange Online](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).
 
-- Gli utenti devono [segnalare i messaggi](enable-the-report-message-add-in.md) a Microsoft, che possono formare il sistema. Gli amministratori dovrebbero anche avvalersi delle funzionalità di [invio di amministratore](admin-submission.md) .
+- Gli utenti devono utilizzare il componente aggiuntivo per i messaggi di [report](enable-the-report-message-add-in.md) o il [componente aggiuntivo di phishing](enable-the-report-phish-add-in.md) dei report per segnalare i messaggi a Microsoft, che possono formare il sistema. Gli amministratori dovrebbero anche avvalersi delle funzionalità di [invio di amministratore](admin-submission.md) .
 
 - L'autenticazione a più fattori è un buon modo per impedire gli account compromessi. È consigliabile prendere in considerazione l'abilitazione dell'AMF per tutti gli utenti. Per un approccio graduale, iniziare abilitando l'AMF per gli utenti più sensibili (amministratori, dirigenti e così via) prima di abilitare l'AMF per tutti. Per istruzioni, vedere [configurare l'autenticazione](../../admin/security-and-compliance/set-up-multi-factor-authentication.md)a più fattori.
 

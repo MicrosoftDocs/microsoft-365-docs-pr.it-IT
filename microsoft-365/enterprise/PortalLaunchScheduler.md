@@ -17,12 +17,12 @@ search.appverid:
 - SPO160
 - MET150
 description: In questo articolo viene descritto come avviare il portale utilizzando l'utilità di pianificazione di avvio del portale
-ms.openlocfilehash: 7e488caba5e4df47bb3f51f195e093891565d95c
-ms.sourcegitcommit: 001e64f89f9c3cd6bbd4a25459f5bee3b966820c
+ms.openlocfilehash: 66912f5730c580bd75282a64124fefcdf262d738
+ms.sourcegitcommit: cc354fd54400be0ff0401f60bbe68ed975b69cda
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "49367202"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "49864877"
 ---
 # <a name="launch-your-portal-using-the-portal-launch-scheduler"></a>Avviare il portale utilizzando l'utilità di pianificazione del lancio del portale
 
@@ -34,7 +34,7 @@ Sono disponibili due tipi di reindirizzamento:
 - bidirezionale: avviare un nuovo portale di SharePoint Online moderno per sostituire un portale esistente di SharePoint classico o moderno 
 - Reindirizzamento della pagina temporanea: avviare un nuovo portale di SharePoint Online moderno con nessun portale di SharePoint esistente
 
-L'utilità di pianificazione di avvio portale è disponibile solo per il lancio dei portali di SharePoint Online moderni, ad esempio i siti di comunicazione e i siti del team moderni. I lanci devono essere pianificati con almeno 7 giorni di anticipo. Il numero di ondate richieste è determinato dal numero previsto di utenti. Prima di pianificare l'avvio di un portale, è necessario eseguire lo [strumento page Diagnostics for SharePoint](https://aka.ms/perftool) per verificare che la Home page del portale sia integra. Al termine del lancio del portale, tutti gli utenti con autorizzazioni per il sito potranno accedere al nuovo sito. 
+L'utilità di pianificazione di avvio portale è disponibile solo per il lancio dei portali di SharePoint Online moderni (ad esempio, siti di comunicazione). I lanci devono essere pianificati con almeno 7 giorni di anticipo. Il numero di ondate richieste è determinato dal numero previsto di utenti. Prima di pianificare l'avvio di un portale, è necessario eseguire lo [strumento page Diagnostics for SharePoint](https://aka.ms/perftool) per verificare che la Home page del portale sia integra. Al termine del lancio del portale, tutti gli utenti con autorizzazioni per il sito potranno accedere al nuovo sito. 
 
 Per ulteriori informazioni sull'avvio di un portale con esito positivo, seguire i principi di base, le procedure e le raccomandazioni dettagliate per la [creazione, l'avvio e la gestione di un portale integro](https://docs.microsoft.com/sharepoint/portal-health). 
 
@@ -70,7 +70,7 @@ Il numero di ondate richieste dipende dalle dimensioni previste per il lancio.
 
 Il reindirizzamento bidirezionale implica l'avvio di un nuovo portale di SharePoint Online moderno per la sostituzione di un portale SharePoint classico o moderno esistente. Gli utenti in ondate attive verranno reindirizzati al nuovo sito indipendentemente dal fatto che vengano spostati nel sito precedente o nuovo. Gli utenti in un'ondata non avviata che tentano di accedere al nuovo sito verranno reindirizzati al vecchio sito fino a quando non verrà avviata l'ondata. 
 
-È supportato solo il reindirizzamento tra la Home page predefinita nel sito precedente e la Home page predefinita nel nuovo sito. Se si dispone di amministratori o proprietari che devono accedere ai siti precedenti e nuovi senza essere reindirizzati, verificare che siano elencati utilizzando il `WaveOverrideUsers` parametro. Se si dispone di amministratori o proprietari che devono accedere ai siti precedenti e nuovi senza essere reindirizzati, verificare che siano elencati utilizzando il `WaveOverrideUsers` parametro. È supportato solo il reindirizzamento tra la Home page predefinita nel sito precedente e la Home page predefinita nel nuovo sito.
+È supportato solo il reindirizzamento tra la Home page predefinita nel sito precedente e la Home page predefinita nel nuovo sito. Se si dispone di amministratori o proprietari che devono accedere ai siti precedenti e nuovi senza essere reindirizzati, verificare che siano elencati utilizzando il `WaveOverrideUsers` parametro.
 
 Per eseguire la migrazione di utenti da un sito di SharePoint esistente a un nuovo sito di SharePoint in modo graduale:
 
@@ -109,7 +109,6 @@ Esempio:
    ```
 
 2. Completamento della convalida. Per completare la configurazione del servizio, il reindirizzamento può richiedere 5-10 minuti. 
-   - `New-SPOPortalLaunchWaves  -LaunchSiteUrl "https://*.sharepoint.com/sites/newsite" -RedirectionType Bidirectional -RedirectUrl "https://*.sharepoint.com/sites/oldsite" -ExpectedNumberOfUsers LessThan10kUsers -WaveOverrideUsers "*@microsoft.com" -Waves ' [{Name:"Wave 1", Groups:["Viewers SG1"], LaunchDateUtc:"2020/10/14"}, {Name:"Wave 2", Groups:["Viewers SG2"], LaunchDateUtc:"2020/10/15"}]' -IsTesting $true`
 
 ## <a name="pause-or-restart-a-portal-launch-on-the-site"></a>Sospendere o riavviare un avvio portale nel sito
 
@@ -129,16 +128,14 @@ Esempio:
 4. Verificare che il reindirizzamento venga ripristinato. 
 
 ## <a name="delete-a-portal-launch-on-the-site"></a>Eliminare un avvio portale nel sito
-1. Creare un'onda di avvio portale.
-  - `New-SPOPortalLaunchWaves  -LaunchSiteUrl "https://*.sharepoint.com/sites/NewSite" -RedirectionType ToTemporaryPage -RedirectUrl "https://*.sharepoint.com/sites/OldSite" -ExpectedNumberOfUsers From10kTo30kUsers -WaveOverrideUsers *@microsoft.com -Waves [{Name:"Wave 1", Groups:["Viewers SG1"], LaunchDateUtc:"2020/10/14"}, {Name:"Wave 2", Groups:["Viewers SG2"], LaunchDateUtc:"2020/10/15"}]' -IsTesting $true`
 
-2. Eseguire il seguente comando per eliminare un avvio del portale pianificato o in corso per un sito.
+1. Eseguire il seguente comando per eliminare un avvio del portale pianificato o in corso per un sito.
 
    ```PowerShell
    Remove-SPOPortalLaunchWaves -LaunchSiteUrl <object>
    ```
 
-3. Verificare che non venga eseguito alcun reindirizzamento per tutti gli utenti.
+2. Verificare che non venga eseguito alcun reindirizzamento per tutti gli utenti.
 
-## <a name="learn-more"></a>Ulteriori informazioni
+## <a name="learn-more"></a>Altre informazioni
 [Pianificazione del piano di avvio del portale per il lancio in SharePoint Online](https://docs.microsoft.com/microsoft-365/Enterprise/Planportallaunchroll-out)

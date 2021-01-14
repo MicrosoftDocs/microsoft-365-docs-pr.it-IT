@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Informazioni su come trovare e utilizzare i report sulla sicurezza della posta elettronica per l'organizzazione. I report sulla sicurezza della posta elettronica sono disponibili nel centro sicurezza & conformità.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e98e59d39744d67427a272f456a03fc123034aa7
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+ms.openlocfilehash: 568144c449d2f1a70082130cc847d48c3486d9da
+ms.sourcegitcommit: cc354fd54400be0ff0401f60bbe68ed975b69cda
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49659478"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "49865105"
 ---
 # <a name="view-email-security-reports-in-the-security--compliance-center"></a>Visualizzare i report sulla sicurezza della posta elettronica nel Centro sicurezza e conformità
 
@@ -99,7 +99,7 @@ Nel grafico è possibile utilizzare i seguenti filtri:
   - **Non inoltrare**
   - **Solo crittografia**
   - **OME precedente**
-  - **Personalizzata**
+  - **Personalizzato**
 
   Se si fa clic su **filtri**, è possibile modificare il grafico con i filtri seguenti:
 
@@ -479,7 +479,7 @@ Il **rapporto sulla protezione delle minacce URL** è disponibile in Microsoft D
 
 ## <a name="user-reported-messages-report"></a>Report dei messaggi segnalati dall'utente
 
-Il rapporto **messaggi segnalati dall'utente** Visualizza informazioni sui messaggi di posta elettronica segnalati dagli utenti come posta indesiderata, tentativi di phishing o una buona corrispondenza tramite il [componente aggiuntivo segnala messaggio](enable-the-report-message-add-in.md).
+Il rapporto **messaggi segnalati dall'utente** Visualizza informazioni sui messaggi di posta elettronica che gli utenti hanno segnalato come posta indesiderata, tentativi di phishing o una buona corrispondenza tramite il componente aggiuntivo del [messaggio di report](enable-the-report-message-add-in.md) o il componente aggiuntivo di [phishing del report](enable-the-report-phish-add-in.md).
 
 I dettagli sono disponibili per ogni messaggio, incluso il motivo del recapito, una regola di protezione da posta indesiderata o un flusso di posta configurata per l'organizzazione. Per visualizzare i dettagli, selezionare un elemento nell'elenco User-Reports e quindi visualizzare le informazioni nelle schede **Riepilogo** e **Dettagli** .
 
@@ -503,7 +503,7 @@ Per visualizzare e utilizzare i report descritti in questo articolo, è necessar
 - **Gestione organizzazione**
 - **Amministratore della sicurezza**
 - **Lettore di sicurezza**
-- **Lettore globale**
+- **Ruolo con autorizzazioni di lettura globali**
 
 Per altre informazioni, vedere [Autorizzazioni nel Centro sicurezza e conformità](permissions-in-the-security-and-compliance-center.md).
 

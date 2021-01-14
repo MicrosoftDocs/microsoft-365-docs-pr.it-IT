@@ -11,12 +11,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: faf1efd1-3b0c-411a-804d-17f37292eac0
 description: Seguire queste procedure consigliate per l'uso autonomo di Exchange Online Protection (EOP) per essere configurati per l'esito positivo ed evitare errori comuni di configurazione.
-ms.openlocfilehash: abf68e361293b2a55cd0a382cc376cbfe21236e7
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: a229f8a269037296fa2b97ff7211343549b33685
+ms.sourcegitcommit: cc354fd54400be0ff0401f60bbe68ed975b69cda
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48845949"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "49864889"
 ---
 # <a name="best-practices-for-configuring-standalone-eop"></a>Procedure consigliate per la configurazione di EOP autonomo
 
@@ -48,7 +48,7 @@ Queste impostazioni riguardano una serie di funzionalità esterne ai criteri di 
 |[Configurazione di SPF per evitare lo spoofing](set-up-spf-in-office-365-to-help-prevent-spoofing.md)|Sì|Sì||
 |[Utilizzare DKIM per convalidare la posta elettronica in uscita inviata dal dominio personalizzato in Office 365](use-dkim-to-validate-outbound-email.md)|Sì|Sì||
 |[Utilizzare DMARC per convalidare la posta elettronica in Office 365](use-dmarc-to-validate-email.md)|Sì|Sì|Utilizzare `action=quarantine` per standard e `action=reject` per strict.|
-|Distribuire il [componente aggiuntivo](enable-the-report-message-add-in.md) per i messaggi di report per migliorare la segnalazione degli utenti finali di messaggi di posta elettronica sospetti|Sì|Sì||
+|Distribuire il [componente](enable-the-report-message-add-in.md) aggiuntivo per i messaggi di report o il [componente aggiuntivo](enable-the-report-phish-add-in.md) per il phishing dei report per migliorare la segnalazione degli utenti finali di messaggi di posta elettronica sospetti|Sì|Sì||
 |Pianificare i report di malware e posta indesiderata|Sì|Sì||
 |L'inoltro automatico ai domini esterni deve essere non consentito o monitorato|Sì|Sì||
 |Il controllo unificato dovrebbe essere abilitato|Sì|Sì||

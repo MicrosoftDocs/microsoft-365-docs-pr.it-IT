@@ -21,12 +21,12 @@ description: Iniziare a utilizzare le funzionalità di analisi e risposta automa
 ms.custom:
 - air
 - seo-marvel-mar2020
-ms.openlocfilehash: 6ccefb5c435f08fcef4dcc872af676fba70668ee
-ms.sourcegitcommit: 9833f95ab6ab95aea20d68a277246dca2223f93d
+ms.openlocfilehash: 570fb3c9d180d3167cfc5a4e3c3825102875b74f
+ms.sourcegitcommit: cc354fd54400be0ff0401f60bbe68ed975b69cda
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "49794545"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "49865009"
 ---
 # <a name="automated-investigation-and-response-air-in-microsoft-defender-for-office-365"></a>Indagine automatizzata e risposta (AIR) in Microsoft Defender per Office 365
 
@@ -107,7 +107,7 @@ Microsoft 365 offre numerosi criteri di avviso incorporati che consentono di ide
 |Avviso|Gravità|Come viene generato l'avviso|
 |---|---|---|
 |È stato rilevato un clic URL potenzialmente dannoso|**High**|Questo avviso viene generato quando si verifica una delle operazioni seguenti: <ul><li>Un utente protetto da [collegamenti sicuri](atp-safe-links.md) nell'organizzazione fa clic su un collegamento dannoso</li><li>Le modifiche al verdetto per gli URL sono identificate da Microsoft Defender per Office 365</li><li>Gli utenti eseguono l'override delle pagine di avviso dei collegamenti sicuri (in base ai [criteri dei collegamenti sicuri](set-up-atp-safe-links-policies.md)dell'organizzazione).</li></ul> <p> Per ulteriori informazioni sugli eventi che attivano questo avviso, vedere Configurare i criteri per i [collegamenti sicuri](set-up-atp-safe-links-policies.md).|
-|Un messaggio di posta elettronica viene segnalato da un utente come malware o phishing|**Informativo**|Questo avviso viene generato quando gli utenti dell'organizzazione segnalano i messaggi come messaggio di posta elettronica di phishing tramite il [componente aggiuntivo dei messaggi di report](enable-the-report-message-add-in.md).|
+|Un messaggio di posta elettronica viene segnalato da un utente come malware o phishing|**Informativo**|Questo avviso viene generato quando gli utenti dell'organizzazione segnalano i messaggi come messaggio di posta elettronica di phishing tramite il componente aggiuntivo dei [messaggi di report](enable-the-report-message-add-in.md) o il [componente aggiuntivo di phishing del report](enable-the-report-phish-add-in.md).|
 |I messaggi di posta elettronica contenenti malware vengono rimossi dopo il recapito|**Informativo**|Questo avviso viene generato quando tutti i messaggi di posta elettronica contenenti malware vengono recapitati alle cassette postali dell'organizzazione. Se si verifica questo evento, Microsoft rimuove i messaggi infetti dalle cassette postali di Exchange Online utilizzando l' [eliminazione automatica zero-hour](zero-hour-auto-purge.md).|
 |I messaggi di posta elettronica contenenti URL di phishing vengono rimossi dopo il recapito|**Informativo**|Questo avviso viene generato quando tutti i messaggi contenenti phishing vengono recapitati alle cassette postali dell'organizzazione. Se si verifica questo evento, Microsoft rimuove i messaggi infetti dalle cassette postali di Exchange Online utilizzando l' [eliminazione automatica zero-hour](zero-hour-auto-purge.md).|
 |Vengono rilevati modelli di invio sospetti di posta elettronica|**Medium**|Questo avviso viene generato quando un utente dell'organizzazione ha inviato messaggi di posta elettronica sospetti ed è a rischio di essere limitato dall'invio di messaggi di posta elettronica. Si tratta di un avviso iniziale per il comportamento che potrebbe indicare che l'account è stato compromesso, ma non abbastanza grave da limitare l'utente. <p> Anche se è raro, un avviso generato da questo criterio potrebbe essere un'anomalia. Tuttavia, è consigliabile [verificare se l'account utente è stato compromesso](responding-to-a-compromised-email-account.md).|

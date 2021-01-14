@@ -16,12 +16,12 @@ ms.assetid: 4250c4bc-6102-420b-9e0a-a95064837676
 ms.collection:
 - M365-security-compliance
 description: Informazioni su come abilitare il componente aggiuntivo per i messaggi di report per Outlook e Outlook sul Web, per singoli utenti o per l'intera organizzazione.
-ms.openlocfilehash: baed46e500e58702b7031db5aa5ff376a4eafcb5
-ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
+ms.openlocfilehash: 13721317c33cf207f27cd8b98fb6d32864651847
+ms.sourcegitcommit: cc354fd54400be0ff0401f60bbe68ed975b69cda
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48877754"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "49864997"
 ---
 # <a name="enable-the-report-message-add-in"></a>Abilitare il componente aggiuntivo Segnala messaggio
 
@@ -31,19 +31,19 @@ ms.locfileid: "48877754"
 > [!NOTE]
 > Se si è un amministratore in un'organizzazione di Microsoft 365 con cassette postali di Exchange Online, è consigliabile utilizzare il portale invii nel centro sicurezza & Compliance. Per ulteriori informazioni, vedere [utilizzare l'invio di amministratore per inviare messaggi di posta indesiderata, phishing, URL e file a Microsoft](admin-submission.md).
 
-Il componente aggiuntivo segnala messaggio per Outlook e Outlook sul Web (in precedenza noto come Outlook Web App) consente agli utenti di segnalare facilmente falsi positivi (buona posta elettronica contrassegnata come difettosa) o falsi negativi (messaggi di posta elettronica non consentiti) a Microsoft e ai suoi affiliati per l'analisi. Microsoft utilizza questi invii per migliorare l'efficacia delle tecnologie di protezione della posta elettronica.
+Il messaggio di report e i componenti aggiuntivi di phishing dei report per Outlook e Outlook sul Web (in precedenza noto come Outlook Web App) consentono agli utenti di segnalare facilmente falsi positivi (buona posta elettronica contrassegnata come difettosa) o falsi negativi (messaggi di posta elettronica non consentiti) a Microsoft e ai suoi affiliati per l'analisi.
 
-Si supponga, ad esempio, che le persone riferiscono un gran quantità di messaggi come phishing. Queste informazioni si riferiscono al [dashboard di sicurezza](security-dashboard.md) e ad altri report. Il team di sicurezza dell'organizzazione può utilizzare queste informazioni per indicare che potrebbe essere necessario aggiornare i criteri di protezione anti-phishing. In alternativa, se la gente segnala un gran quantità di messaggi che sono stati contrassegnati come posta indesiderata come non indesiderata utilizzando il componente aggiuntivo segnala messaggio, il team di sicurezza dell'organizzazione potrebbe dover adeguare i criteri di protezione da [posta indesiderata](configure-your-spam-filter-policies.md).
+Microsoft utilizza questi invii per migliorare l'efficacia delle tecnologie di protezione della posta elettronica. Ad esempio, se gli utenti segnalano numerosi messaggi che sono stati contrassegnati come posta indesiderata come non indesiderata utilizzando il componente aggiuntivo segnala messaggio, il team di sicurezza dell'organizzazione potrebbe dover regolare i criteri di protezione da [posta indesiderata](configure-your-spam-filter-policies.md).
 
-Inoltre, se l'organizzazione utilizza [Microsoft Defender per Office 365 piano 1](office-365-atp.md) o [piano 2](office-365-ti.md), il componente aggiuntivo segnala messaggio fornisce al team di sicurezza dell'organizzazione informazioni utili che è possibile utilizzare per esaminare e aggiornare i criteri di sicurezza.
+È possibile installare il messaggio di report o il componente aggiuntivo di phishing del report. Se si desidera che gli utenti riportino solo i messaggi di phishing, distribuire il componente aggiuntivo per il phishing dei report nell'organizzazione. Per ulteriori informazioni, vedere [Enable the report phishing Add-in](enable-the-report-phish-add-in.md).
 
-Gli amministratori possono abilitare il componente aggiuntivo per i messaggi di report per l'organizzazione e i singoli utenti possono installarli personalmente.
+Il componente aggiuntivo segnala messaggio fornisce la possibilità di segnalare sia messaggi di posta indesiderata che di phishing. Gli amministratori possono abilitare il componente aggiuntivo per i messaggi di report per l'organizzazione e i singoli utenti possono installarli personalmente.
 
 Se si è un singolo utente, è possibile [abilitare il componente aggiuntivo per i messaggi di report](#get-the-report-message-add-in-for-yourself).
 
 Se si è un amministratore globale o un amministratore di Exchange Online ed Exchange è configurato per l'utilizzo dell'autenticazione OAuth, è possibile [abilitare il componente aggiuntivo per i messaggi di report per l'organizzazione](#get-and-enable-the-report-message-add-in-for-your-organization). La Add-In del messaggio di report è ora disponibile tramite la [distribuzione centralizzata](https://docs.microsoft.com/microsoft-365/admin/manage/centralized-deployment-of-add-ins).
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare?
+## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare
 
 - Il componente aggiuntivo segnala messaggio è compatibile con la maggior parte delle sottoscrizioni Microsoft 365 e i prodotti seguenti:
 
@@ -101,7 +101,7 @@ Per informazioni su come utilizzare il componente aggiuntivo, vedere [use the re
 
    ![Distribuire una nuova pagina del componente aggiuntivo](../../media/NewAddInScreen2.png)
 
-4. Nella pagina **Seleziona componente aggiuntivo** visualizzata, fare clic nella casella di **ricerca** , immettere il **messaggio di rapporto** e quindi fare clic su icona ricerca ricerca **Search** ![ ](../../media/search-icon.png) . Nell'elenco dei risultati, trovare il **messaggio di rapporto** , quindi fare clic su **Aggiungi**.
+4. Nella pagina **Seleziona componente aggiuntivo** visualizzata, fare clic nella casella di **ricerca** , immettere il **messaggio di rapporto** e quindi fare clic su icona ricerca ricerca  ![ ](../../media/search-icon.png) . Nell'elenco dei risultati, trovare il **messaggio di rapporto** , quindi fare clic su **Aggiungi**.
 
    ![Selezionare i risultati di ricerca del componente aggiuntivo](../../media/NewAddInScreen3.png)
 
@@ -109,17 +109,17 @@ Per informazioni su come utilizzare il componente aggiuntivo, vedere [use the re
 
 6. Nella pagina **Configura componente aggiuntivo** che viene visualizzata, configurare le seguenti impostazioni:
 
-   - **Utenti assegnati** : selezionare uno dei valori seguenti:
+   - **Utenti assegnati**: selezionare uno dei valori seguenti:
 
      - **Tutti** (impostazione predefinita)
      - **Utenti/gruppi specifici**
      - **Solo io**
 
-   - **Metodo di distribuzione** : selezionare uno dei valori seguenti:
+   - **Metodo di distribuzione**: selezionare uno dei valori seguenti:
 
-     - **Fixed (impostazione predefinita)** : il componente aggiuntivo viene distribuito automaticamente agli utenti specificati e non è possibile rimuoverlo.
-     - **Disponibile** : gli utenti possono installare il componente aggiuntivo in **casa** per \> **ottenere i componenti** aggiuntivi gestiti dall' \> **amministratore**.
-     - **Facoltativo** : il componente aggiuntivo viene distribuito automaticamente agli utenti specificati, ma è possibile sceglierlo per rimuoverlo.
+     - **Fixed (impostazione predefinita)**: il componente aggiuntivo viene distribuito automaticamente agli utenti specificati e non è possibile rimuoverlo.
+     - **Disponibile**: gli utenti possono installare il componente aggiuntivo in **casa** per \> **ottenere i componenti** aggiuntivi gestiti dall' \> **amministratore**.
+     - **Facoltativo**: il componente aggiuntivo viene distribuito automaticamente agli utenti specificati, ma è possibile sceglierlo per rimuoverlo.
 
    ![Configurare la pagina del componente aggiuntivo](../../media/configure-add-in.png)
 

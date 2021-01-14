@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-office365
 description: Utilizzare Esplora risorse e rilevamenti in tempo reale nel &amp; Centro sicurezza e conformità per esaminare e rispondere alle minacce in modo efficiente.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 8bca8e39029fe041c0bab59e92d8a653647746ef
-ms.sourcegitcommit: 0ecac0387be6b49025b79ce8eb949a8cf62481e2
+ms.openlocfilehash: 5ecc90602573de0de08336c3bca41aed701d8329
+ms.sourcegitcommit: cc354fd54400be0ff0401f60bbe68ed975b69cda
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "49724415"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "49865033"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>Esplora minacce e rilevamenti in tempo reale
 
@@ -422,7 +422,7 @@ All'interno di comparsa di posta elettronica o URL, clic principali e all'intern
 
 ## <a name="review-email-messages-reported-by-users"></a>Esaminare i messaggi di posta elettronica segnalati dagli utenti
 
-Si supponga di voler visualizzare i messaggi di posta elettronica che gli utenti dell'organizzazione hanno *segnalato come posta indesiderata*, *non indesiderata* o *phishing* tramite il [componente aggiuntivo del messaggio di report per Outlook e Outlook sul Web](enable-the-report-message-add-in.md). Per visualizzarli, utilizzare la visualizzazione [ **invii di posta elettronica**  > ](threat-explorer-views.md#email--submissions) di Esplora risorse (o rilevamenti in tempo reale).
+Si supponga di voler visualizzare i messaggi di posta elettronica che gli utenti dell'organizzazione *hanno segnalato come posta indesiderata*, *non indesiderata* o *phishing* tramite il componente aggiuntivo per i [messaggi di report](enable-the-report-message-add-in.md) o il [componente aggiuntivo di phishing del report](enable-the-report-phish-add-in.md). Per visualizzarli, utilizzare la visualizzazione [ **invii di posta elettronica**  > ](threat-explorer-views.md#email--submissions) di Esplora risorse (o rilevamenti in tempo reale).
 
 1. Nel centro sicurezza & conformità ( <https://protection.office.com> ), scegliere **gestione minacce** \>  (o **rilevamenti in tempo reale**). In questo esempio viene utilizzato Esplora.
 
