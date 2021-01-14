@@ -1,6 +1,6 @@
 ---
 title: Microsoft Managed Desktop è la scelta giusta per te
-description: ''
+description: Orientamento su cosa sia il servizio e scorciatoie per articoli per pubblici diversi
 keywords: Microsoft Managed Desktop, Microsoft 365, servizi, documentazione
 ms.service: m365-md
 author: jaimeo
@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: b877a35133be13cd6783659f1e5d981633338be8
-ms.sourcegitcommit: 96b4593becc9450af136c528844e858c6e88b5a9
+ms.openlocfilehash: 8e95eb0fd0e03dc718affa7e7cf044beb654bb56
+ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "48269374"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49840936"
 ---
 # <a name="what-is-microsoft-managed-desktop"></a>Cos'è Microsoft Managed Desktop?
 
@@ -73,7 +73,7 @@ Per altre informazioni sul valore di Microsoft Managed Desktop, incluse le stori
 
 Se Microsoft Managed Desktop risulta più appropriato per la tua azienda, puoi approfondire la documentazione aggiuntiva che descrive il servizio in dettagli, in particolar modo su come preparare la tua azienda alla registrazione, come iniziare a usare il servizio e le operazioni in seguito, includendo l’assistenza per te e gli utenti, se necessario. Se sei già pronto a iniziare, contatta il [team degli account locali](https://pages.email.office.com/contactmmd/).
 
-**Altre informazioni generali** Soprattutto per coloro che prendono decisioni a livello tecnico e aziendale, questi argomenti illustrano in dettaglio la divisione dei ruoli e le responsabilità tra l'azienda e Microsoft, altre informazioni sulle tecnologie usate in Microsoft Managed Desktop e su come il servizio si adatta a una strategia più ampia nell'ambito del framework ITIL.
+**Altre informazioni generali** Soprattutto per coloro che prendono decisioni a livello tecnico e aziendale, questi articoli illustrano in dettaglio la divisione dei ruoli e le responsabilità tra l'azienda e Microsoft, altre informazioni sulle tecnologie usate in Microsoft Managed Desktop e su come il servizio si adatta a una strategia più ampia nell'ambito del framework ITIL.
 
 - [Ruoli e responsabilità Microsoft Managed Desktop](roles-and-responsibilities.md)
 - [Tecnologie Microsoft Managed Desktop](technologies.md)
@@ -101,7 +101,7 @@ Se Microsoft Managed Desktop risulta più appropriato per la tua azienda, puoi a
 - [Preparare gli utenti a usare i dispositivi](../get-started/get-started-devices.md)
 - [Distribuire le app sui dispositivi](../get-started/deploy-apps.md)
 
-**Utilizzo di Microsoft Managed Desktop**Questa sezione include informazioni sulla vita quotidiana con il servizio. Ad esempio il modo in cui gli amministratori IT possono ottenere supporto se necessario, come ottenere supporto per gli utenti, come gestire le app una volta distribuite e come personalizzare le impostazioni sui dispositivi.
+**Utilizzo di Microsoft Managed Desktop** Questa sezione include informazioni sulla vita quotidiana con il servizio. Ad esempio il modo in cui gli amministratori IT possono ottenere supporto se necessario, come ottenere supporto per gli utenti, come gestire le app una volta distribuite e come personalizzare le impostazioni sui dispositivi.
 
 - [Supporto amministratore per Microsoft Managed Desktop](../working-with-managed-desktop/admin-support.md)
 - [Ottenere assistenza per gli utenti](../working-with-managed-desktop/end-user-support.md)

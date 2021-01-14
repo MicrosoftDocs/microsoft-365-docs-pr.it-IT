@@ -8,12 +8,12 @@ ms.localizationpriority: normal
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 0e1189634857921d9c0e3df0683bd6e7758cd058
-ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
+ms.openlocfilehash: b5c5757c5e07e6edd546c0553028ccf56eb1b4f8
+ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "47289472"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49840314"
 ---
 # <a name="microsoft-managed-desktop-service-description"></a>Descrizione del servizio Microsoft Managed Desktop
 
@@ -29,13 +29,13 @@ Microsoft Managed Desktop è un servizio che offre agli utenti un'esperienza mod
 - Supporto IT per utenti
 - Supporto operativo per professionisti IT
 
-Per dettagli sui servizi specifici inclusi con Microsoft Managed Desktop, vedere gli altri argomenti in questa sezione. Se è stato già deciso di usare Microsoft Managed Desktop, gli argomenti in [Prepararsi per la registrazione in Microsoft Managed Desktop](https://docs.microsoft.com/microsoft-365/managed-desktop/get-ready/) forniscono la procedura per partecipare al servizio.
+Per dettagli sui servizi specifici inclusi con Microsoft Managed Desktop, vedere gli altri articoli in questa sezione. Se è stato già deciso di usare Microsoft Managed Desktop, gli articoli in [Prepararsi per la registrazione in Microsoft Managed Desktop](https://docs.microsoft.com/microsoft-365/managed-desktop/get-ready/) forniscono la procedura per partecipare al servizio.
 
 - [Le aree geografiche e le lingue supportate da Microsoft Managed Desktop ](regions-languages.md) spiega quali aree geografiche e lingue sono supportate con il servizio.
 - Per garantire la migliore esperienza agli utenti, solo alcuni dispositivi sono supportati da Microsoft Managed Desktop. [Programmare dispositivi](device-list.md) specifica i modelli e le configurazioni esatti del dispositivo che è possibile utilizzare con il servizio, indipendentemente dal fatto che vengano forniti o che si lavori con un partner.
 - [Servizi per dispositivi](device-services.md) specifica i servizi relativi al dispositivo che Microsoft fornirà agli abbonati.
 - [Configurazione dei dispositivi](device-policies.md) chiarisce i criteri di gestione dei dispositivi mobili predefiniti e relativi alla sicurezza che il servizio applicherà ai dispositivi registrati.
-- [Sicurezza](security.md) specifica i dati raccolti dai dispositivi registrati, nonché le funzionalità e i criteri relativi alla sicurezza dei dispositivi, alla gestione delle identità e degli accessi, alla sicurezza della rete e alla sicurezza delle informazioni.
+- [Sicurezza](security.md) specifica i dati raccolti dai dispositivi registrati, le funzionalità e i criteri relativi alla sicurezza dei dispositivi, alla gestione delle identità e degli accessi, alla sicurezza della rete e alla sicurezza delle informazioni.
 - [Aggiornamenti](updates.md) descrive i vari gruppi di aggiornamento che Microsoft Managed Desktop utilizza per distribuire gli aggiornamenti ai dispositivi.
 - [Supporto](support.md) chiarisce il supporto fornito da Microsoft per l'organizzazione e gli utenti.
 - [Operazioni e il monitoraggio](operations-and-monitoring.md) spiega come funziona la gestione delle modifiche con Microsoft Managed Desktop, comprese le procedure standard per la richiesta e la preparazione delle modifiche nella distribuzione.
