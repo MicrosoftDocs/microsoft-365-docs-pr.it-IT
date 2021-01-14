@@ -521,6 +521,8 @@
               href: ./office-365-security/reports-and-insights-in-security-and-compliance.md
             - name: Abilitare il componente aggiuntivo Segnala messaggio
               href: ./office-365-security/enable-the-report-message-add-in.md
+            - name: Abilitare il componente aggiuntivo Segnala phishing
+              href: ./office-365-security/enable-the-report-phish-add-in.md
             - name: Installazione e uso del componente aggiuntivo per la segnalazione della posta indesiderata
               href: ./office-365-security/junk-email-reporting-add-in-for-microsoft-outlook.md
             - name: Regole del flusso di posta (regole di trasporto) in Exchange Online Protection autonomo

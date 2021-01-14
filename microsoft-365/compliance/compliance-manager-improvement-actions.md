@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Informazioni su come eseguire l'implementazione e il testing sui controlli in Microsoft Compliance Manager. Assegnare lavoro, archiviare la documentazione ed esportare i report.
-ms.openlocfilehash: 4b7ece89752a2c3e54a0a69bade2f489feacd0c3
-ms.sourcegitcommit: 20d1158c54a5058093eb8aac23d7e4dc68054688
+ms.openlocfilehash: c465a574ed9c1a8ad8ef9e2bfc7f864545ae28d9
+ms.sourcegitcommit: 00d231bf0100e843a5a93161695e87ceff9e1349
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "49376527"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49849599"
 ---
 # <a name="assign-and-complete-improvement-actions-in-compliance-manager"></a>Assegnare e completare azioni di miglioramento in Compliance Manager
 
@@ -59,6 +59,17 @@ Dopo aver identificato l'assegnatario appropriato, accertarsi che dispongano di 
 3. Selezionare **Salva e Chiudi**. L'utente assegnato riceverà un messaggio di posta elettronica in cui viene spiegato che è stata assegnata l'azione di miglioramento, con un collegamento diretto all'azione di miglioramento. (Nota: i clienti di US Government community (GCC) High non riceveranno un messaggio di posta elettronica quando le azioni vengono assegnate a tali utenti.
 
 L'utente assegnato può quindi eseguire le azioni consigliate.
+
+#### <a name="assign-multiple-improvement-actions-to-a-single-user"></a>Assegnare più azioni di miglioramento a un singolo utente
+
+È possibile assegnare più azioni di miglioramento a un utente attenendosi alla procedura seguente:
+
+1. Passare alla pagina azioni di miglioramento.
+2. Selezionare l'area a sinistra del nome dell'azione di miglioramento. Verrà visualizzata un'icona di controllo rotondo che indica che è stata selezionata l'azione. Controllare tutte le azioni che si desidera assegnare.
+3. Selezionare il collegamento **assegna a utente** nella parte superiore della tabella azioni di miglioramento.
+4. Verrà visualizzata una finestra popup. Nel campo **assegna a** , iniziare a digitare il nome della persona a cui si desidera assegnare le azioni. È inoltre possibile selezionare dall'elenco di utenti suggeriti.
+5. Dopo aver popolato il campo **assegna a** con il nome dell'assegnatario, selezionare **assegna**.
+6. Verrà visualizzata la pagina azioni di miglioramento con il nuovo assegnatario elencato per le azioni appena assegnate.
 
 ## <a name="perform-work-and-store-documentation"></a>Eseguire la documentazione relativa al lavoro e all'archiviazione
 
@@ -149,6 +160,12 @@ L'accettazione degli aggiornamenti consente di ottenere le informazioni più agg
 **Perché potrebbe essere opportuno rinviare un aggiornamento**
 
 Se si sta eseguendo una valutazione che include l'azione di miglioramento, potrebbe essere necessario verificare di aver completato il lavoro prima di accettare l'aggiornamento. È possibile posticipare l'aggiornamento per un secondo momento selezionando **Annulla** nel riquadro del pannello a comparsa revisione aggiornamento.
+
+#### <a name="accept-all-updates-at-once"></a>Accetta tutti gli aggiornamenti contemporaneamente
+
+Se si dispone di più aggiornamenti e si desidera accettarli contemporaneamente, selezionare il collegamento **accetta tutti gli aggiornamenti** nella parte superiore della tabella azioni di miglioramento. Verrà visualizzato un riquadro a comparsa che elenca il numero di azioni da aggiornare. Selezionare il pulsante **accetta aggiornamenti** per applicare tutti gli aggiornamenti.
+
+Si noti che quando si torna alla pagina azioni di miglioramento, è possibile che venga visualizzato un messaggio nella parte superiore della pagina in cui viene chiesto di aggiornare la pagina per il completamento degli aggiornamenti.
 
 ## <a name="export-a-report"></a>Esportare un report
 
