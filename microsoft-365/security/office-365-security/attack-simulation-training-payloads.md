@@ -11,12 +11,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 description: Gli amministratori possono imparare a creare payload personalizzati per la formazione di simulazione di attacco in Microsoft Defender per Office 365.
-ms.openlocfilehash: fbab4825625c33d027ceaa9aa9272c06e286ed61
-ms.sourcegitcommit: 9833f95ab6ab95aea20d68a277246dca2223f93d
+ms.openlocfilehash: e3285b99d5b64255b9fdbda8c76b6f133aa013b2
+ms.sourcegitcommit: df58fd8ebe14ca98fc1be84dbfb9c29ef7ab1d62
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "49794221"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49870864"
 ---
 # <a name="create-a-custom-payload-for-attack-simulation-training"></a>Creare un payload personalizzato per la formazione del Simulatore di attacchi
 
@@ -64,3 +64,11 @@ La creazione del payload è stata completata. Ora è il momento di esaminare i d
 
 > [!IMPORTANT]
 > I payload creati avranno **tenant** come origine. Quando si seleziona payload, assicurarsi di non escludere il **tenant**.
+
+## <a name="related-links"></a>Collegamenti correlati
+
+[Iniziare a usare la formazione di simulazione di attacco](attack-simulation-training-get-started.md)
+
+[Creare una simulazione di attacco di phishing](attack-simulation-training.md)
+
+[Acquisire informazioni approfondite attraverso la formazione del Simulatore di attacchi](attack-simulation-training-insights.md)

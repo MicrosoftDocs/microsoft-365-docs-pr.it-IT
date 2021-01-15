@@ -19,21 +19,18 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Gli amministratori possono imparare a usare Attack Simulator per eseguire attacchi simulati di phishing e password nelle organizzazioni di Microsoft 365 E5 o Microsoft Defender per Office 365 piano 2.
-ms.openlocfilehash: 2ffec891f7b1021f3c6c51b003c78aacb0ec0d6a
-ms.sourcegitcommit: 9833f95ab6ab95aea20d68a277246dca2223f93d
+ms.openlocfilehash: f07cbbdac5d9b988301e9dfc3cb4446f7b44fca6
+ms.sourcegitcommit: df58fd8ebe14ca98fc1be84dbfb9c29ef7ab1d62
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "49794533"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49871098"
 ---
 # <a name="attack-simulator-in-microsoft-defender-for-office-365"></a>Simulatore di attacco in Microsoft Defender per Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 Se l'organizzazione dispone di Microsoft Defender per Office 365 piano 2, in cui sono incluse le [funzionalità di ricerca e di risposta alle minacce](office-365-ti.md), è possibile utilizzare Attack Simulator nel centro sicurezza & conformità per eseguire scenari di attacco realistici nell'organizzazione. Questi attacchi simulati consentono di identificare e individuare gli utenti vulnerabili prima che un attacco reale impatti la linea di base. Leggere questo articolo per ulteriori informazioni.
-
-> [!NOTE]
-> I dati relativi alla simulazione e all'addestramento degli attacchi vengono archiviati con altri dati dei clienti per i servizi Microsoft 365. Per ulteriori informazioni, vedere [Microsoft 365 data locations](/microsoft-365/enterprise/o365-data-locations).
 
 > [!TIP]
 > La formazione sulla simulazione degli attacchi è disponibile per l'anteprima pubblica nel centro sicurezza Microsoft 365. Per ulteriori informazioni, vedere [simulare un attacco di phishing con Microsoft Defender per Office 365](attack-simulation-training.md) .
@@ -49,6 +46,8 @@ Se l'organizzazione dispone di Microsoft Defender per Office 365 piano 2, in cui
 - L'account deve essere configurato per l'autenticazione a più fattori (AMF) per creare e gestire le campagne in Attack Simulator. Per istruzioni, vedere [configurare l'autenticazione](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/set-up-multi-factor-authentication)a più fattori.
 
 - Le campagne di phishing raccolgono ed elaborano gli eventi per 30 giorni. I dati della campagna cronologica saranno disponibili fino a 90 giorni dopo l'avvio della campagna.
+
+- I dati relativi alla simulazione e all'addestramento degli attacchi vengono archiviati con altri dati dei clienti per i servizi Microsoft 365. Per ulteriori informazioni, vedere [Microsoft 365 data locations](/microsoft-365/enterprise/o365-data-locations).
 
 - Non sono disponibili i cmdlet di PowerShell corrispondenti per il simulatore di attacco.
 

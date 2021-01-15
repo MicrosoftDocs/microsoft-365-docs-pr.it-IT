@@ -1,5 +1,5 @@
 ---
-title: Minacce rilevate da Microsoft Defender Antivirus
+title: Minacce rilevate da Antivirus Microsoft Defender
 f1.keywords: CSH
 ms.author: sharik
 author: SKjerland
@@ -15,14 +15,14 @@ ms.collection:
 ms.custom: AdminSurgePortfolio
 search.appverid: MET150
 description: Informazioni su come Microsoft Defender Antivirus protegge i dispositivi Windows dalle minacce software, ad esempio virus, malware e spyware.
-ms.openlocfilehash: e3c8a1071625bba41af5f3cccd50f8484acac18d
-ms.sourcegitcommit: 20d1158c54a5058093eb8aac23d7e4dc68054688
+ms.openlocfilehash: 1653aef6967cdf76e6e19acda158fb29758280a8
+ms.sourcegitcommit: df58fd8ebe14ca98fc1be84dbfb9c29ef7ab1d62
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "49376712"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49870900"
 ---
-# <a name="threats-detected-by-microsoft-defender-antivirus"></a>Minacce rilevate da Microsoft Defender Antivirus
+# <a name="threats-detected-by-microsoft-defender-antivirus"></a>Minacce rilevate da Antivirus Microsoft Defender
 
 Microsoft Defender Antivirus protegge i dispositivi Windows dalle minacce software, ad esempio virus, malware e spyware.
 
@@ -64,9 +64,12 @@ Quando vengono rilevate minacce da Microsoft Defender Antivirus, vengono eseguit
 
 - Gli utenti ricevono [notifiche in Windows](https://support.microsoft.com/windows/8942c744-6198-fe56-4639-34320cf9444e). 
 - I rilevamenti sono elencati nell'app di protezione di [Windows](/windows/security/threat-protection/windows-defender-security-center/windows-defender-security-center) nella pagina **cronologia protezione** .  
-- Se [i dispositivi Windows 10](secure-win-10-pcs.md) sono stati protetti e [registrati in Intune](/mem/intune/enrollment/windows-enrollment-methods), verranno visualizzati i rilevamenti di minacce e gli Insight nell'interfaccia di <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">amministrazione di Microsoft 365</a> nella pagina **minacce attive** , a cui è possibile accedere dalla scheda **Microsoft Defender Antivirus** nella **Home** Page (o dal riquadro di spostamento selezionando minacce per l' **integrità**  >  **& antivirus**).
+- Se [i dispositivi Windows 10](secure-win-10-pcs.md) sono stati protetti e [registrati in Intune](/mem/intune/enrollment/windows-enrollment-methods), l'organizzazione dispone di 800 o meno dispositivi registrati, in cui vengono visualizzati i rilevamenti di minacce e gli approfondimenti nell'interfaccia di <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">amministrazione di Microsoft 365</a> sulla pagina **minacce e antivirus** , a cui è possibile accedere dalla scheda **Microsoft Defender Antivirus** nella **Home** Page (o dal riquadro di spostamento selezionando minacce per l' **integrità**  >  **& antivirus**).
+
+    Se nell'organizzazione sono presenti più di 800 dispositivi registrati in Intune, verrà richiesto di visualizzare i rilevamenti di minacce e gli Insight da [Microsoft Endpoint Manager](/mem/endpoint-manager-overview) anziché dalla pagina **minacce e antivirus** .
+ 
     > [!NOTE]
-    > La pagina **Microsoft Defender Antivirus** e le **minacce attive** vengono distribuite in fasi, pertanto non è possibile accedervi immediatamente.
+    > La pagina **Microsoft Defender Antivirus** e le **minacce e** la pagina Antivirus vengono distribuite in fasi, pertanto non è possibile accedervi immediatamente.
 
 Nella maggior parte dei casi, gli utenti non devono eseguire altre operazioni. Non appena viene rilevato un file o un programma dannoso su un dispositivo, Microsoft Defender antivirus lo blocca e ne impedisce l'esecuzione. Inoltre, le minacce appena rilevate vengono aggiunte al motore antivirus e antimalware in modo che anche altri dispositivi e utenti siano protetti.  
 

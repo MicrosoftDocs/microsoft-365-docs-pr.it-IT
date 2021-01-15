@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 88a832f6c4e17756bfb25ef5cb7c4c5ecedaf2c0
-ms.sourcegitcommit: 9833f95ab6ab95aea20d68a277246dca2223f93d
+ms.openlocfilehash: ca919798480698f92bba094c3755b3eccce30888
+ms.sourcegitcommit: c1f9a1b2a34146c51c9e33c4119a388b249ce7a9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "49794389"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "49867971"
 ---
 # <a name="adjust-settings-after-enrollment"></a>Modificare le impostazioni dopo la registrazione
 
@@ -32,9 +32,9 @@ Dopo aver completato la registrazione in Microsoft Managed Desktop, potrebbe ess
 
 - Profilo di distribuzione Autopilot: se si utilizzano i criteri Autopilot, aggiornare ognuno per escludere i **dispositivi di lavoro moderni-tutti i** gruppi di Azure ad. Per aggiornarli, nella sezione **gruppi esclusi** in **assegnazioni** Selezionare i **dispositivi di lavoro moderni: tutti** i gruppi di Azure ad creati durante la registrazione di Microsoft Managed Desktop. Microsoft Managed Desktop avrà creato anche un profilo Autopilot, che avrà il nome "ambiente di lavoro moderno" (il **profilo Autopilot del posto di lavoro moderno**). Quando si aggiornano i profili Autopilot personali, assicurarsi di *non* escludere i **dispositivi di lavoro moderni: tutti** i gruppi di Azure ad del **profilo Autopilot del posto di lavoro moderno** creato da Microsoft Managed Desktop.
 
-- Criteri di accesso condizionale: per i criteri di accesso condizionale creati, escludere il gruppo di Azure AD degli **account di servizio sul posto di lavoro moderno** . Per i passaggi, vedere [Conditional Access: Users and groups](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-users-groups). Microsoft Managed Desktop inoltre avrà creato alcuni criteri di accesso condizionale, ognuno dei quali avrà "luogo di lavoro moderno" nel nome (ad esempio, la **workstation sicura sul posto di lavoro moderna**). Quando si aggiornano i criteri di accesso condizionale, assicurarsi di *non* escludere i **dispositivi di lavoro moderni: tutti** i gruppi di Azure ad da tutti i criteri creati da Microsoft Managed Desktop.
+- Criteri di accesso condizionale: se si creano nuovi criteri di accesso condizionale relativi ad Azure AD, Microsoft Intune o Microsoft Defender per endpoint dopo la registrazione di Microsoft Managed Desktop, escludere il gruppo di Azure AD degli **account del servizio di lavoro moderno** . Per i passaggi, vedere [Conditional Access: Users and groups](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-users-groups). Microsoft Managed Desktop gestisce criteri di accesso condizionale separati per limitare l'accesso a tali account. Per esaminare il criterio di accesso condizionale di Microsoft Managed Desktop (**ambiente di lavoro moderno – Secure Workstation**), andare a Microsoft Endpoint Manager e passare a **accesso condizionale** in **Endpoint Security**. Non modificare tutti i criteri di accesso condizionale di Azure AD creati da Microsoft Managed Desktop con il nome "ambiente di lavoro moderno".
 
-- Autenticazione a più fattori: verificare che tutti i criteri di accesso condizionale che richiedono l'autenticazione a più fattori escludano il gruppo di Azure AD degli **account di servizio sul posto di lavoro moderno** . Per ulteriori informazioni, vedere [criteri di accesso condizionale](../get-ready/readiness-assessment-fix.md#conditional-access-policies) e [accesso condizionale: require Mae per tutti gli utenti](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa).
+- Autenticazione a più fattori: se si creano nuovi requisiti di autenticazione a più fattori nei criteri di accesso condizionale relativi ad Azure AD, Intune o Microsoft Defender per endpoint dopo la registrazione di Microsoft Managed Desktop, escludere il gruppo di Azure AD degli **account del servizio di lavoro moderno** . Per i passaggi, vedere [Conditional Access: Users and groups](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-users-groups). Microsoft Managed Desktop gestisce criteri di accesso condizionale separati per limitare l'accesso ai membri di questo gruppo. Per esaminare il criterio di accesso condizionale di Microsoft Managed Desktop (**ambiente di lavoro moderno**), passare a Microsoft Endpoint Manager e passare a **accesso condizionale** in **Endpoint Security**. 
 
 - Windows 10 Update Ring: per tutti i criteri dell'anello di aggiornamento di Windows 10 creati, escludere i **dispositivi di lavoro moderni-tutti i** gruppi di Azure ad per ogni criterio. Per i passaggi, vedere [creare e assegnare gli anelli di aggiornamento](https://docs.microsoft.com/mem/intune/protect/windows-10-update-rings#create-and-assign-update-rings). Microsoft Managed Desktop avrà inoltre creato alcuni criteri per l'aggiornamento delle suonerie, ognuno dei quali avrà "luogo di lavoro moderno" nel nome (ad esempio, i criteri di aggiornamento dei luoghi di lavoro moderni [ **generali**], i criteri di aggiornamento sul posto di lavoro moderni [ **Fast]**, i criteri di aggiornamento sul posto di lavoro moderni [ **First]** e i **criteri di aggiornamento sul posto di lavoro** Quando si aggiornano i criteri personali, assicurarsi di *non* escludere i **dispositivi di lavoro moderni-tutti** i gruppi di Azure ad da quelli creati da desktop Microsoft.
 

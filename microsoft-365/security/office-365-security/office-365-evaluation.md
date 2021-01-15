@@ -17,19 +17,19 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: abb33b85717e63cb78a2b1edfd86584fd165a71f
-ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
+ms.openlocfilehash: f8f105215b23ec49318c133714e758e2a2a9c1df
+ms.sourcegitcommit: df58fd8ebe14ca98fc1be84dbfb9c29ef7ab1d62
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49701016"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49870922"
 ---
 # <a name="evaluate-microsoft-defender-for-office-365"></a>Valutare Microsoft Defender per Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 > [!IMPORTANT]
-> Valutare Microsoft Defender per Office 365 sarà presto in anteprima pubblica. Questa versione di anteprima è disponibile senza un contratto di servizio. È possibile che alcune funzionalità non siano supportate o che possano disporre di funzionalità vincolate.
+> Microsoft Defender per Office 365 Evaluation è in anteprima pubblica. Questa versione di anteprima è disponibile senza un contratto di servizio. È possibile che alcune funzionalità non siano supportate o che possano disporre di funzionalità vincolate.
 
 L'esecuzione di una valutazione completa del prodotto di sicurezza può contribuire a prendere decisioni informate sugli aggiornamenti e gli acquisti. Consente di provare le funzionalità del prodotto per la sicurezza per valutare in che modo può aiutare il team delle operazioni di sicurezza nelle attività quotidiane.
 

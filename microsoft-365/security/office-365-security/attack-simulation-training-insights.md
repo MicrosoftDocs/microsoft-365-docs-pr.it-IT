@@ -11,12 +11,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 description: Gli amministratori possono scoprire come la formazione di simulazione di attacco nel centro sicurezza di Microsoft 365 influisce sui dipendenti e può ottenere informazioni dettagliate sulla simulazione e sulla formazione dei risultati.
-ms.openlocfilehash: 54855a4ce8e64f4d58b9ff2697395ed684be2773
-ms.sourcegitcommit: 9833f95ab6ab95aea20d68a277246dca2223f93d
+ms.openlocfilehash: c283819550872691d8dd23d3921c22cb23637633
+ms.sourcegitcommit: df58fd8ebe14ca98fc1be84dbfb9c29ef7ab1d62
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "49794557"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49870956"
 ---
 # <a name="gain-insights-through-attack-simulation-training"></a>Acquisire informazioni approfondite attraverso la formazione del Simulatore di attacchi
 
@@ -53,4 +53,8 @@ La sezione azioni consigliate descrive in dettaglio i suggerimenti disponibili i
 
 ## <a name="related-links"></a>Collegamenti correlati
 
-**Attacco simulatore** [creare una simulazione di attacco di phishing](attack-simulation-training.md) e [creare un payload per la formazione degli utenti](attack-simulation-training-payloads.md)
+[Iniziare a usare la formazione di simulazione di attacco](attack-simulation-training-get-started.md)
+
+[Creare una simulazione di attacco di phishing](attack-simulation-training.md)
+
+[creare un payload per la formazione degli utenti](attack-simulation-training-payloads.md)
