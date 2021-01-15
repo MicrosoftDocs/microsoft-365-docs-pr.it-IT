@@ -15,12 +15,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: Informazioni su come creare un team con un'etichetta di riservatezza univoca per la sicurezza.
-ms.openlocfilehash: 03252cad8449ee83cd757fac3ae74db6df68bcfe
-ms.sourcegitcommit: 98b889e674ad1d5fa37d4b6c5fc3eda60a1d67f3
+ms.openlocfilehash: d5cfe33d4f254832ccf26552d8ca392cf1dc440c
+ms.sourcegitcommit: df58fd8ebe14ca98fc1be84dbfb9c29ef7ab1d62
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "49751144"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49870980"
 ---
 # <a name="configure-a-team-with-security-isolation"></a>Configurare un team con l'isolamento di sicurezza
 
@@ -106,7 +106,7 @@ Per creare un'etichetta di riservatezza
 1. Aprire il [Centro conformità Microsoft 365](https://compliance.microsoft.com).
 2. In **Soluzioni** fare clic su **Protezione delle informazioni**.
 3. Fare clic su **Crea un'etichetta**.
-4. Assegnare un nome all'etichetta. Si consiglia di usare **Dati sensibili**, ma è possibile scegliere un nome diverso se è già in uso.
+4. Assegnare un nome all'etichetta. Si consiglia di assegnargli il nome del team con cui verrà usato.
 5. Aggiungere un nome visualizzato e una descrizione, quindi fare clic su **Avanti**.
 6. Nella **pagina Definire l'ambito di questa etichetta**, selezionare **File ed e-mail** e **Gruppi e siti**, quindi fare clic su **Avanti**.
 7. Nella pagina **Scegliere le impostazioni di protezione per file ed e-mail**, selezionare **Crittografare file ed e-mail**, quindi fare clic su **Avanti**.

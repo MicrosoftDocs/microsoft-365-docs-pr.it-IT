@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: Come distribuire team con la protezione dei dati altamente sensibili.
-ms.openlocfilehash: 6354de5a37547d14b16a4d6a0857ddc390d531e6
-ms.sourcegitcommit: 98b889e674ad1d5fa37d4b6c5fc3eda60a1d67f3
+ms.openlocfilehash: 045f1b1d1ebf03eb70554dc5964acb0a12e0060f
+ms.sourcegitcommit: df58fd8ebe14ca98fc1be84dbfb9c29ef7ab1d62
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "49750810"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49870852"
 ---
 # <a name="configure-teams-with-protection-for-highly-sensitive-data"></a>Configurare team con la protezione dei dati altamente sensibili
 
@@ -33,7 +33,7 @@ Per questo livello di protezione si crea un'etichetta di riservatezza che può e
 
 Il livello dei dati altamente sensibili offre le seguenti protezioni aggiuntive rispetto al livello di base:
 
-- Un'etichetta di riservatezza per il team che consente di attivare o disattivare la condivisione guest e limitare l'accesso al contenuto di SharePoint al solo Web per i dispositivi non gestiti. Questa etichetta può essere usata anche per classificare e crittografare i file.
+- Un'etichetta di riservatezza per il team che consente di attivare o disattivare la condivisione con gli ospiti e limitare l'accesso ai contenuti di SharePoint per i dispositivi non gestiti. Questa etichetta può essere usata anche per classificare e crittografare i file.
 - Tipo di collegamento di condivisione predefinito più restrittivo
 - Solo i proprietari del team possono creare canali privati.
 - Le richieste di accesso per il sito di SharePoint associato sono disattivate.
@@ -63,7 +63,7 @@ Per creare un'etichetta di riservatezza
 1. Aprire il [Centro conformità Microsoft 365](https://compliance.microsoft.com).
 2. In **Soluzioni** fare clic su **Protezione delle informazioni**.
 3. Fare clic su **Crea un'etichetta**.
-4. Assegnare un nome all'etichetta. Si consiglia di usare **Dati sensibili**, ma è possibile scegliere un nome diverso se è già in uso.
+4. Assegnare un nome all'etichetta. Si consiglia di usare **Dati altamente sensibili**, ma è possibile scegliere un nome diverso se è già in uso.
 5. Aggiungere un nome visualizzato e una descrizione, quindi fare clic su **Avanti**.
 6. Nella **pagina Definire l'ambito di questa etichetta**, selezionare **File ed e-mail** e **Gruppi e siti**, quindi fare clic su **Avanti**.
 7. Nella pagina **Scegliere le impostazioni di protezione per file ed e-mail**, selezionare **Crittografare file ed e-mail**, quindi fare clic su **Avanti**.
