@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Impostare le autorizzazioni e i ruoli utente di Microsoft Compliance Manager e configurare il testing automatizzato delle azioni. Gestire la cronologia degli utenti e filtrare la visualizzazione del dashboard.
-ms.openlocfilehash: 9a09e12457d39e2f4aab99d3bec68b77c1a3a975
-ms.sourcegitcommit: d81c7cea85af6ad5fef81d3c930514a51464368c
+ms.openlocfilehash: e130fc3438fc8b4674b752e25fc473ee0dd55ae4
+ms.sourcegitcommit: df58fd8ebe14ca98fc1be84dbfb9c29ef7ab1d62
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "49572395"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49870911"
 ---
 # <a name="get-started-with-compliance-manager"></a>Introduzione a Compliance Manager
 
@@ -49,28 +49,26 @@ Compliance Manager utilizza un modello di autorizzazione di controllo di accesso
 
 ### <a name="where-to-set-permissions"></a>Dove impostare le autorizzazioni
 
-La persona che detiene il ruolo di amministratore globale per l'organizzazione può impostare le autorizzazioni utente nel centro conformità di Microsoft 365, nonché in Azure Active Directory (Azure AD).
+La persona che detiene il ruolo di amministratore globale per l'organizzazione può impostare le autorizzazioni utente per Compliance Manager. Le autorizzazioni possono essere impostate nel centro sicurezza & conformità di Office 365 e in Azure Active Directory (Azure AD).
 
 > [!NOTE]
 > I clienti negli ambienti high di US Government community (GCC) possono impostare solo le autorizzazioni e i ruoli degli utenti per Compliance Manager in Azure AD. Vedere di seguito le istruzioni di Azure AD e le definizioni dei tipi di ruolo.
 
-Per impostare le autorizzazioni e assegnare i ruoli dall'interno del centro conformità di Microsoft 365, attenersi alla procedura seguente:
+Per impostare le autorizzazioni e assegnare i ruoli nel centro sicurezza & conformità di Office 365, attenersi alla procedura seguente:
 
-1. Selezionare **autorizzazioni** sulla barra di spostamento sinistra da qualsiasi punto del [centro conformità di Microsoft 365](https://compliance.microsoft.com/).
+1. Accedere al [Centro sicurezza e conformità di Office 365 &](https://protection.office.com/) e selezionare **autorizzazioni** sulla barra di spostamento sinistra.
 
-2. Nella parte superiore, selezionare il collegamento **"per visualizzare e gestire i ruoli in Office 365, andare qui".** Una nuova scheda verrà aperta al centro sicurezza & conformità di Office 365 ([informazioni sul motivo per cui è stato reindirizzato](microsoft-365-compliance-center.md#frequently-asked-questions)).
+2. Individuare il gruppo di ruoli a cui si desidera aggiungere uno o più utenti e selezionare la casella a sinistra del nome del gruppo. Vedere l' [elenco dei ruoli e delle funzioni correlate seguenti](#role-types). I nomi dei gruppi di ruoli simulano il nome del ruolo.
 
-3. Individuare il gruppo di ruoli a cui si desidera aggiungere uno o più utenti e selezionare la casella a sinistra del nome del gruppo. Vedere l' [elenco dei ruoli e delle funzioni correlate seguenti](#role-types). I nomi dei gruppi di ruoli simulano il nome del ruolo.
+3. Nel riquadro a comparsa del gruppo, selezionare **modifica** sotto l'intestazione **membri** .
 
-4. Nel riquadro a comparsa del gruppo, selezionare **modifica** sotto l'intestazione **membri** .
+4. Selezionare **Scegli membri**. Verrà visualizzata un'altra finestra a comparsa.
 
-5. Selezionare **Scegli membri**. Verrà visualizzata un'altra finestra a comparsa.
+5. Selezionare **+ Aggiungi** per scegliere uno o più utenti da aggiungere al gruppo.
 
-6. Selezionare **+ Aggiungi** per scegliere uno o più utenti da aggiungere al gruppo.
+6. Selezionare la casella di controllo accanto ai nomi che si desidera aggiungere, quindi selezionare il pulsante **Aggiungi** nella parte inferiore.
 
-7. Selezionare la casella di controllo accanto ai nomi che si desidera aggiungere, quindi selezionare il pulsante **Aggiungi** nella parte inferiore.
-
-8. Al termine dell'assegnazione degli utenti, selezionare fine, quindi **fare** clic su **Salva** e quindi su **Chiudi**.
+7. Al termine dell'assegnazione degli utenti, selezionare fine, quindi **fare** clic su **Salva** e quindi su **Chiudi**.
 
 ##### <a name="more-about-the-office-365-security--compliance-center"></a>Ulteriori informazioni sul centro sicurezza & conformità di Office 365
 
@@ -91,7 +89,7 @@ Nella tabella seguente vengono illustrate le funzioni consentite da ogni ruolo i
 
 | L'utente può: | Ruolo di Compliance Manager | Ruolo di Azure AD | 
 | :------------- | :-------------: | :------------: |
-| **Leggere ma non modificare i dati**| Compliance Manager - Lettore  | Lettore globale di Azure AD, lettore di sicurezza | 
+| **Leggere ma non modificare i dati**| Lettore di Compliance Manager  | Lettore globale di Azure AD, lettore di sicurezza | 
 | **Modificare i dati**| Contributo di Compliance Manager | Amministratore di conformità | 
 | **Modificare i risultati dei test**| Valutazione di Compliance Manager | Amministratore di conformità | 
 | **Gestire le valutazioni e i dati del modello e del tenant**| Amministrazione di Compliance Manager | Amministratore della conformità, amministratore dei dati di conformità, amministratore della sicurezza  | 
