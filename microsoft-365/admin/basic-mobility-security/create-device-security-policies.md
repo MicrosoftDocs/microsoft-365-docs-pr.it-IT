@@ -18,12 +18,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: Utilizzare la sicurezza e la mobilità di base per creare criteri per i dispositivi che proteggono le informazioni dell'organizzazione.
-ms.openlocfilehash: 322bca862c852f83406ca4622a63384b2e2275e5
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: 077f1e7e0d763aaecfc38fd4b57d9e8912900a3c
+ms.sourcegitcommit: 8849dd6f80217c29f427c7f008d918f30c792240
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47545885"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49877069"
 ---
 # <a name="create-device-security-policies-in-basic-mobility-and-security"></a>Creare criteri di sicurezza per i dispositivi in mobilità e sicurezza di base
 
@@ -39,8 +39,8 @@ ms.locfileid: "47545885"
 - Per creare e distribuire criteri di sicurezza e mobilità di base in Microsoft 365, è necessario essere un amministratore globale di Microsoft 365. Per altre informazioni, vedere [Permissions in the Security & Compliance Center](https://support.microsoft.com/office/d10608af-7934-490a-818e-e68f17d0e9c1).
 - Prima di distribuire i criteri, informare l'organizzazione sull'impatto potenziale di registrazione di un dispositivo in mobilità e sicurezza di base. A seconda di come si configurano i criteri, i dispositivi non conformi possono essere bloccati dall'accesso a Microsoft 365 e ai dati, incluse le applicazioni installate, le foto e le informazioni personali su un dispositivo registrato e i dati possono essere eliminati.
 
-> [!NOTE]
-> I criteri e le regole di accesso creati in MDM per Microsoft 365 business standard eseguono l'override dei criteri cassetta postale di dispositivo mobile di Exchange ActiveSync e delle regole di accesso ai dispositivi creati nell'interfaccia di amministrazione di Exchange. Dopo che un dispositivo è stato registrato in MDM per Microsoft 365 business standard, qualsiasi criterio cassetta postale per il dispositivo mobile di Exchange ActiveSync o la regola di accesso ai dispositivi applicata al dispositivo viene ignorata. Per ulteriori informazioni su Exchange ActiveSync, vedere [Exchange ActiveSync in Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=524380).
+>[!NOTE]
+>I criteri e le regole di accesso creati in Basic Mobility and Security for Microsoft 365 business standard eseguono l'override dei criteri cassetta postale per il dispositivo mobile di Exchange ActiveSync e le regole di accesso ai dispositivi creati nell'interfaccia di amministrazione di Exchange Dopo che un dispositivo è stato registrato in mobilità e sicurezza di base per Microsoft 365 business standard, tutti i criteri cassetta postale per il dispositivo mobile di Exchange ActiveSync o la regola di accesso ai dispositivi applicati al dispositivo vengono ignorati. Per ulteriori informazioni su Exchange ActiveSync, vedere [Exchange ActiveSync in Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=524380).
 
 ## <a name="step-1-create-a-device-policy-and-deploy-to-a-test-group"></a>Passaggio 1: creare un criterio di dispositivo e distribuirlo a un gruppo di test
 
@@ -91,7 +91,7 @@ Per proteggere le informazioni dell'organizzazione, è necessario bloccare l'acc
 
 1. Dal browser, digitare [https://protection.office.com/devicev2](https://protection.office.com/devicev2) .
 2. Selezionare **Gestisci impostazioni di accesso ai dispositivi a livello di organizzazione**.
-3. Per bloccare i dispositivi non supportati, scegliere **blocca** in **se un dispositivo non è supportato da MDM per Microsoft 365**e quindi fare clic su **Salva**.
+3. Per bloccare i dispositivi non supportati, scegliere **blocca** in **se un dispositivo non è supportato da mobilità e sicurezza di base per Microsoft 365**, quindi selezionare **Salva**.
 
    :::image type="content" source="../../media/basic-mobility-security/bms-5-block-access.png" alt-text="Opzione di base per mobilità e blocco di sicurezza":::
 
@@ -150,6 +150,6 @@ Il criterio viene rimosso dal dispositivo mobile per ogni utente a cui si applic
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-[Panoramica della sicurezza e della mobilità di base](overview.md)
+[Panoramica Basic Mobility + Security](overview.md)
 
-[Funzionalità di mobilità e sicurezza di base](capabilities.md)
+[Funzionalità Basic Mobility + Security](capabilities.md)

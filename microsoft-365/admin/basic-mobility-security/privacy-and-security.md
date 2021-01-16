@@ -14,15 +14,15 @@ ms.collection:
 - Adm_TOC
 ms.custom: AdminSurgePortfolio
 description: Dopo aver attivato la sicurezza e la mobilità di base, è possibile creare criteri di gestione dei dispositivi mobili.
-ms.openlocfilehash: 31966f81833d6c90c48cdc4c40eee2f94d785fd8
-ms.sourcegitcommit: aeb94601a81db3ead8610c2f36cff30eb9fe10e7
+ms.openlocfilehash: a5e813219407b105f9196a4532914326a94f429a
+ms.sourcegitcommit: 8849dd6f80217c29f427c7f008d918f30c792240
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "47430199"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49876913"
 ---
 # <a name="privacy-and-security-in-basic-mobility-and-security"></a>Privacy e sicurezza in mobilità e sicurezza di base
 
-La mobilità e la sicurezza di base è un servizio basato su cloud alimentato da Microsoft Intune che consente di gestire e proteggere i dispositivi mobili utilizzati nell'organizzazione. Dopo aver attivato la sicurezza e la mobilità di base, è possibile creare criteri di gestione dei dispositivi mobili. Questi criteri possono quindi essere distribuiti su dispositivi mobili che sono stati registrati dagli utenti di Microsoft 365 con licenza nell'organizzazione.
+La mobilità e la sicurezza di base è un servizio basato su cloud alimentato da Microsoft Intune che consente di gestire e proteggere i dispositivi mobili nell'organizzazione. Dopo aver attivato la sicurezza e la mobilità di base, è possibile creare criteri di gestione dei dispositivi mobili. Questi criteri possono quindi essere distribuiti su dispositivi mobili che sono stati registrati dagli utenti di Microsoft 365 con licenza nell'organizzazione.
 
 Microsoft Intune invia informazioni a Microsoft 365 circa lo stato di conformità di ogni dispositivo gestito e quindi è possibile generare rapporti che dimostrano se i dispositivi gestiti nell'organizzazione sono conformi in base ai criteri che sono stati impostati. Per ulteriori informazioni sull'impegno di Microsoft per la privacy e la sicurezza, vedere il [Centro protezione Microsoft](https://www.microsoft.com/trust-center).

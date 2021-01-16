@@ -18,12 +18,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: La sicurezza e la mobilità di base consentono di proteggere e gestire i dispositivi mobili.
-ms.openlocfilehash: e07ff0704afcb5bca1db4e2a5c2aff9c7d6008fd
-ms.sourcegitcommit: aeb94601a81db3ead8610c2f36cff30eb9fe10e7
+ms.openlocfilehash: 4954da0ff44276d9bd46cabc78bc52c7879e5e26
+ms.sourcegitcommit: 8849dd6f80217c29f427c7f008d918f30c792240
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "47430197"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49876961"
 ---
 # <a name="manage-devices-enrolled-in-mobile-device-management-in-microsoft-365"></a>Gestire i dispositivi registrati nella gestione dei dispositivi mobili in Microsoft 365
 
@@ -36,15 +36,15 @@ Dopo averla configurata, gli utenti dell'organizzazione devono registrare i prop
 Per accedere al pannello di gestione dei dispositivi, eseguire la procedura seguente:
 
 1. Accedere all'interfaccia di [amministrazione di Microsoft 365](https://support.microsoft.com/office/758befc4-0888-4009-9f14-0d147402fd23).
-    
+
 2. Digitare gestione dei dispositivi mobili nel campo di ricerca e selezionare **Gestione dispositivi mobili**   dall'elenco dei risultati.
 
     :::image type="content" source="../../media/basic-mobility-security/bms-6-mobile-device-management-option.png" alt-text="Opzione di gestione dei dispositivi mobili":::
 
-3. Selezionare  **Gestisci dispositivi**.
+3. Selezionare  **Let ' s Get Started**.
 
 ## <a name="manage-mobile-devices"></a>Gestire i dispositivi mobili
-    
+
 Dopo aver configurato la sicurezza e la mobilità di base, ecco alcuni modi per gestire i dispositivi mobili nell'organizzazione.
 
 |**Per eseguire questa operazione**|**Eseguire l'operazione seguente**|
@@ -53,7 +53,7 @@ Dopo aver configurato la sicurezza e la mobilità di base, ecco alcuni modi per 
 |Bloccare l'accesso dei dispositivi non supportati alla posta elettronica di Exchange tramite Exchange ActiveSync |Nel pannello Gestione dispositivi selezionare  **blocca**. |
 |Impostare i criteri per i dispositivi come i requisiti di password e le impostazioni di sicurezza |Nel pannello Gestione dispositivi selezionare criteri di **sicurezza del dispositivo**   >  **Aggiungi +**. Per altre informazioni, vedere [creare criteri di sicurezza dei dispositivi in mobilità e sicurezza di base](create-device-security-policies.md).|
 |Visualizzare l'elenco dei dispositivi bloccati  |Nel riquadro Gestione dispositivi, in  **Seleziona una visualizzazione**   selezionare  **bloccato**. |
-|Sbloccare un dispositivo non conforme o non supportato per un utente o un gruppo di utenti  |Per sbloccare i dispositivi, scegliere una delle opzioni seguenti:<br/>-Rimuovere l'utente o gli utenti dal gruppo di sicurezza a cui è stato applicato il criterio. Andare a Microsoft 365 Admin Center > **gruppi**, quindi selezionare nome gruppo. Selezionare **Modifica membri e amministratori**.<br/>-Rimuovere il gruppo di sicurezza a cui fanno parte gli utenti dal criterio dispositivo. Accedere a Security & Compliance Center  **>criteri**di protezione del dispositivo criteri di sicurezza   >  **Device security policies**. Selezionare il nome del criterio di dispositivo, quindi selezionare **modifica**  >  **distribuzione**.<br/>-Sbloccare tutti i dispositivi non conformi per un criterio di dispositivo. Accedere a Security & Compliance Center  **>criteri**di protezione del dispositivo criteri di sicurezza   >  **Device security policies**. Selezionare il nome del criterio di dispositivo e quindi selezionare **modifica**  >  **requisiti di accesso**. Selezionare  **Consenti accesso e segnala violazione**.<br/>-Per sbloccare un dispositivo non conforme o non supportato per un utente o un gruppo di utenti, visitare il Centro sicurezza & conformità > **criteri di sicurezza**   >  **gestione dei**dispositivi per   >  **gestire le impostazioni di accesso al dispositivo**. Aggiungere un gruppo di sicurezza con i membri che si desidera escludere dall'accesso bloccato a Microsoft 365. Per altre informazioni, vedere [creare, modificare o eliminare un gruppo di sicurezza nell'interfaccia di amministrazione di Microsoft 365](https://support.microsoft.com/office/55c96b32-e086-4c9e-948b-a018b44510cb).|
+|Sbloccare un dispositivo non conforme o non supportato per un utente o un gruppo di utenti  |Per sbloccare i dispositivi, scegliere una delle opzioni seguenti:<br/>-Rimuovere l'utente o gli utenti dal gruppo di sicurezza a cui è stato applicato il criterio. Andare a Microsoft 365 Admin Center > **gruppi**, quindi selezionare nome gruppo. Selezionare **Modifica membri e amministratori**.<br/>-Rimuovere il gruppo di sicurezza a cui fanno parte gli utenti dal criterio dispositivo. Accedere a Security & Compliance Center  **>criteri** di protezione del dispositivo criteri di sicurezza   >  ****. Selezionare il nome del criterio di dispositivo, quindi selezionare **modifica**  >  **distribuzione**.<br/>-Sbloccare tutti i dispositivi non conformi per un criterio di dispositivo. Accedere a Security & Compliance Center  **>criteri** di protezione del dispositivo criteri di sicurezza   >  ****. Selezionare il nome del criterio di dispositivo e quindi selezionare **modifica**  >  **requisiti di accesso**. Selezionare  **Consenti accesso e segnala violazione**.<br/>-Per sbloccare un dispositivo non conforme o non supportato per un utente o un gruppo di utenti, visitare il Centro sicurezza & conformità > **criteri di sicurezza**   >  **gestione dei** dispositivi per   >  **gestire le impostazioni di accesso al dispositivo**. Aggiungere un gruppo di sicurezza con i membri che si desidera escludere dall'accesso bloccato a Microsoft 365. Per altre informazioni, vedere [creare, modificare o eliminare un gruppo di sicurezza nell'interfaccia di amministrazione di Microsoft 365](https://support.microsoft.com/office/55c96b32-e086-4c9e-948b-a018b44510cb).|
 |Rimuovere gli utenti in modo che i dispositivi non siano più gestiti da mobilità e sicurezza di base |Per rimuovere l'utente, modificare il gruppo di sicurezza che include i criteri di gestione dei dispositivi per la sicurezza e la mobilità di base. Per altre informazioni, vedere  [creare, modificare o eliminare un gruppo di sicurezza nell'interfaccia di amministrazione di Microsoft 365](https://support.microsoft.com/office/55c96b32-e086-4c9e-948b-a018b44510cb).<br/>Per rimuovere la sicurezza e la mobilità di base da tutti gli utenti di Microsoft 365, vedere [disattivare mobilità e sicurezza di base](turn-off.md).|
 
 Live (V14)

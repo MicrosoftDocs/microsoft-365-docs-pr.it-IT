@@ -18,12 +18,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: Configurare la sicurezza e la mobilità di base per proteggere e gestire i dispositivi mobili degli utenti.
-ms.openlocfilehash: 079593381d6395c18cd80f3eeab2e16837a2d27a
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: 38f122141b370468bc591df49b3e1891a8a66a43
+ms.sourcegitcommit: 8849dd6f80217c29f427c7f008d918f30c792240
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47545809"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49876865"
 ---
 # <a name="set-up-basic-mobility-and-security"></a>Impostare Basic Mobility + Security
 
@@ -31,7 +31,7 @@ La sicurezza e mobilità di base integrata per Microsoft 365 consente di protegg
 
 Sono richieste informazioni? Per informazioni sulle domande frequenti su questioni comuni, vedere [domande frequenti su mobilità e sicurezza di base](frequently-asked-questions.md). Tenere presente che non è possibile utilizzare un account amministratore delegato per gestire la mobilità e la sicurezza di base. Per altre informazioni, vedere [Partners: offer Delegated Administration](https://support.microsoft.com/office/partners-offer-delegated-administration-26530dc0-ebba-415b-86b1-b55bc06b073e). 
 
-La gestione dei dispositivi è parte integrante del Centro sicurezza & Compliance, quindi è necessario andare lì per avviare l'installazione di MDM.
+La gestione dei dispositivi è parte integrante del Centro sicurezza & Compliance, quindi è necessario andare lì per avviare la configurazione della sicurezza e della mobilità di base.
 
 ## <a name="activate-the-basic-mobility-and-security-service"></a>Attivare il servizio di sicurezza e mobilità di base
 
@@ -45,7 +45,7 @@ La gestione dei dispositivi è parte integrante del Centro sicurezza & Complianc
 
 Quando il servizio è pronto, completare i passaggi seguenti per completare l'installazione.
 
-### <a name="step-1-required-configure-domains-for-mdm"></a>Passaggio 1: (obbligatorio) configurare i domini per MDM
+### <a name="step-1-required-configure-domains-for-basic-mobility-and-security"></a>Passaggio 1: (obbligatorio) configurare i domini per la sicurezza e la mobilità di base
 
 Se non si dispone di un dominio personalizzato associato a Microsoft 365 o se non si è in grado di gestire i dispositivi Windows, è possibile ignorare questa sezione. In caso contrario, è necessario aggiungere i record DNS per il dominio nell'host DNS. Se i record sono già stati aggiunti, come parte della configurazione del dominio con Microsoft 365, è tutto pronto. Dopo aver aggiunto i record, gli utenti di Microsoft 365 nell'organizzazione che effettuano l'accesso al dispositivo Windows con un indirizzo di posta elettronica che utilizza il dominio personalizzato vengono reindirizzati per la registrazione alla sicurezza e alla mobilità di base.
 
@@ -61,7 +61,7 @@ Per gestire i dispositivi iOS come iPad e iPhone, è necessario creare un certif
 
 2. Nel tipo di browser:  [https://protection.office.com](https://protection.office.com/) .
 
-3. Selezionare Gestione dei dispositivi per la prevenzione della perdita di **dati**   >  **Device management**e scegliere **APNs certificate for iOS Devices**.
+3. Selezionare Gestione dei dispositivi per la prevenzione della perdita di  **dati**   >  **** e scegliere **APNs certificate for iOS Devices**.
 
 4. Nella pagina impostazioni del certificato di notifica push di Apple scegliere **Avanti**.
 
@@ -94,7 +94,7 @@ Mae aiuta a garantire l'accesso a Microsoft 365 per la registrazione dei disposi
 
 Per informazioni su come abilitare l'utilizzo dell'AMF nel portale di Azure AD, vedere [configurare l'autenticazione](https://go.microsoft.com/fwlink/p/?LinkId=519255)a più fattori.
 
-Dopo aver configurato l'AMF, tornare al centro sicurezza & compliance e passare a **Data loss prevention**   >  **Device management**   >  **Criteri dispositivo**di prevenzione della perdita   di dati per completare il passaggio successivo.
+Dopo aver configurato l'AMF, tornare al centro sicurezza & compliance e passare a ****   >     >  **Criteri dispositivo** di prevenzione della perdita   di dati per completare il passaggio successivo.
 
 ### <a name="step-4-recommended-manage-device-security-policies"></a>Passaggio 4: (scelta consigliata) gestire i criteri di sicurezza del dispositivo
 
@@ -129,5 +129,5 @@ Gli utenti con dispositivi Android o iOS sono tenuti a installare l'app portale 
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-[Funzionalità di mobilità e sicurezza di base](capabilities.md)<br/>
+[Funzionalità Basic Mobility + Security](capabilities.md)<br/>
 [Creare criteri di sicurezza per i dispositivi in mobilità e sicurezza di base](create-device-security-policies.md)

@@ -11,18 +11,16 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 description: Gli amministratori possono imparare a creare payload personalizzati per la formazione di simulazione di attacco in Microsoft Defender per Office 365.
-ms.openlocfilehash: e3285b99d5b64255b9fdbda8c76b6f133aa013b2
-ms.sourcegitcommit: df58fd8ebe14ca98fc1be84dbfb9c29ef7ab1d62
+ms.openlocfilehash: 45311ad4c4eb09c8238d278475248680fbc66287
+ms.sourcegitcommit: 8849dd6f80217c29f427c7f008d918f30c792240
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 01/15/2021
-ms.locfileid: "49870864"
+ms.locfileid: "49877129"
 ---
 # <a name="create-a-custom-payload-for-attack-simulation-training"></a>Creare un payload personalizzato per la formazione del Simulatore di attacchi
 
 Microsoft offre un robusto catalogo di payload per varie tecniche di social engineering per la combinazione con la formazione di simulazione di attacco. Tuttavia, potrebbe essere necessario creare payload personalizzati che funzioneranno meglio per la propria organizzazione. In questo articolo viene descritto come creare un payload nell'esercitazione sulla simulazione di attacco in Microsoft Defender per Office 365.
-
-[!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
 È possibile creare un payload facendo clic su **Crea un payload** nella [scheda **payload** dedicati](https://security.microsoft.com/attacksimulator?viewid=payload) o nella [procedura guidata](attack-simulation-training.md#selecting-a-payload)per la creazione di una simulazione.
 

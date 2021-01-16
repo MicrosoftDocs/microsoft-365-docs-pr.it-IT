@@ -18,12 +18,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: Prima di poter utilizzare i servizi Microsoft 365 con il dispositivo, potrebbe essere necessario prima iscriverlo in Basic Mobility and Security per Microsoft 365.
-ms.openlocfilehash: e31054621ba44a4d5f08de9b366fa0978b738cd9
-ms.sourcegitcommit: aeb94601a81db3ead8610c2f36cff30eb9fe10e7
+ms.openlocfilehash: dc5a43b12fce50c9146200a4559fe9b7e6824b18
+ms.sourcegitcommit: 8849dd6f80217c29f427c7f008d918f30c792240
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "47430213"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49877057"
 ---
 # <a name="enroll-your-mobile-device-using-basic-mobility-and-security"></a>Registrazione del dispositivo mobile tramite la sicurezza e la mobilità di base
 
@@ -39,15 +39,15 @@ Le organizzazioni scelgono la mobilità e la sicurezza di base, in modo che i di
 La sicurezza e la mobilità di base per Microsoft 365 ospitate dal servizio di Intune funzionano con la maggior parte dei dispositivi mobili, ma non di tutti. Di seguito sono supportate le funzionalità di base per dispositivi mobili e sicurezza:
 
 - iOS 10,0 o versioni successive
-    
+
 - Android 4,4 o versioni successive
-    
+
 - Windows 8,1 e Windows 10 (telefono e PC)
-    
+
 Se il dispositivo non è elencato sopra ed è necessario utilizzarlo con la sicurezza e la mobilità di base, contattare l'amministratore del lavoro o dell'Istituto di istruzione.
 
->[!TIP] 
->In caso di problemi di registrazione del dispositivo, vedere risolvere i [problemi relativi a mobilità e sicurezza di base](troubleshoot.md).
+>[!TIP]
+>In caso di problemi di registrazione del dispositivo, vedere risolvere i [problemi relativi a mobilità e sicurezza di base](/basic-mobility-security/troubleshoot.md).
 
 ## <a name="set-up-your-mobile-device-with-intune-and-basic-mobility-and-security"></a>Configurare il dispositivo mobile con Intune e la mobilità e la sicurezza di base
 

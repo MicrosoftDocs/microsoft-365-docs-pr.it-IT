@@ -13,16 +13,50 @@ f1.keywords:
 ms.author: jaimeo
 ms.article: article
 ms.localizationpriority: normal
-ms.openlocfilehash: 9dec293a26cbc3d239a597e46815d60d79b9ac20
-ms.sourcegitcommit: 33afa334328cc4e3f2474abd611c1411adabd39f
+ms.openlocfilehash: 8f6826865f38dad6040f65ac083be76450127299
+ms.sourcegitcommit: 8849dd6f80217c29f427c7f008d918f30c792240
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48370413"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49877201"
 ---
 # <a name="change-history-for-microsoft-managed-desktop-documentation"></a>Cronologia modifiche per la documentazione di Microsoft Managed Desktop
 
-In questo articolo vengono elencati gli articoli nuovi e aggiornati della [documentazione di Microsoft Managed Desktop](index.yml). Gli articoli "aggiornati" sono quelli che hanno avuto aggiunte o correzioni materiali: correzioni secondarie come la correzione di errori di battitura, stile o formattazione non sono presenti nell'elenco. È sempre possibile visualizzare la cronologia dei commit specifici (inclusi i dettagli di eventuali modifiche) visitando il [repo su GitHub](https://github.com/MicrosoftDocs/microsoft-365-docs/tree/public/microsoft-365/managed-desktop).
+In questo articolo vengono elencati gli articoli nuovi e aggiornati della [documentazione di Microsoft Managed Desktop](index.yml). Gli articoli "aggiornati" hanno avuto aggiunte o correzioni materiali: correzioni secondarie come la correzione degli errori di battitura, dello stile o della formattazione non sono presenti nell'elenco. È sempre possibile visualizzare la cronologia dei commit specifici (inclusi i dettagli di eventuali modifiche) visitando il [repo su GitHub](https://github.com/MicrosoftDocs/microsoft-365-docs/tree/public/microsoft-365/managed-desktop).
+
+
+## <a name="december-2020"></a>Dicembre 2020
+Articolo nuovo o modificato | Descrizione
+--- | ---
+[Cos'è Microsoft Managed Desktop?](https://docs.microsoft.com/microsoft-365/managed-desktop/intro/index) | Articolo aggiornato
+[Usare i report](working-with-managed-desktop/reports.md) | Articolo aggiornato
+[Privacy e dati personali](service-description/privacy-personal-data.md) | Articolo aggiornato
+[Conformità](intro/compliance.md) | Articolo aggiornato
+[Prerequisiti](get-ready/prerequisites.md) | Articolo aggiornato
+[Configurazione di rete](get-ready/network.md) | Articolo aggiornato
+
+
+## <a name="november-2020"></a>Novembre 2020
+Articolo nuovo o modificato | Descrizione
+--- | ---
+[Risolvere problemi trovati dallo strumento di valutazione dell'idoneità](get-ready/readiness-assessment-fix.md) | Articolo aggiornato
+[Strumento di valutazione della conformità](get-ready/readiness-assessment-tool.md) | Nuovo articolo
+[Risolvere problemi trovati dallo strumento di valutazione dell'idoneità](get-ready/readiness-assessment-fix.md) | Nuovo articolo
+[Registrare manualmente i nuovi dispositivi](get-started/register-devices-self.md) | Articolo aggiornato
+[Procedura per i partner per la registrazione dei dispositivi](get-started/register-devices-partner.md) | Articolo aggiornato
+[Prerequisiti per gli account Guest](get-ready/guest-accounts.md) | Nuovo articolo
+[Accedere al portale di amministrazione](get-started/access-admin-portal.md) | Articolo aggiornato
+
+
+## <a name="october-2020"></a>Ottobre 2020
+Articolo nuovo o modificato | Descrizione
+--- | ---
+[Prerequisiti](get-ready/prerequisites.md) | Articolo aggiornato
+[Usare i dati analitici](working-with-managed-desktop/insights.md) | Articolo aggiornato
+[Procedura per i partner per la registrazione dei dispositivi](get-started/register-devices-partner.md) | Articolo aggiornato
+[Accedere al portale di amministrazione](get-started/access-admin-portal.md) | Articolo aggiornato
+[Distribuire le app sui dispositivi](get-started/deploy-apps.md) | Articolo aggiornato
+[Ottenere assistenza per gli utenti](working-with-managed-desktop/end-user-support.md) | Articolo aggiornato
 
 
 ## <a name="september-2020"></a>Settembre 2020

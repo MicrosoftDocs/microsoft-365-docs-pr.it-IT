@@ -19,16 +19,16 @@ ms.collection:
 - m365solution-overview
 - m365solution-protecthve
 description: Gli amministratori possono ottenere informazioni su come elevare le impostazioni di sicurezza e utilizzare i report, gli avvisi e le indagini per gli account prioritari nelle organizzazioni Microsoft 365.
-ms.openlocfilehash: acd2eba0acd533d0cd8223f2c433cc023fc23287
-ms.sourcegitcommit: 7d4aa58ae9fc893825b6e648fa3f072c3ac59628
+ms.openlocfilehash: 8a1d92ef12070a722a1b618bf51ab6d8130f49c0
+ms.sourcegitcommit: 31be333178b934c519f419656f4c3a53e1beffdc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/09/2021
-ms.locfileid: "49790127"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "49881800"
 ---
 # <a name="security-recommendations-for-priority-accounts-in-microsoft-365"></a>Suggerimenti per la sicurezza per gli account prioritari in Microsoft 365
 
-Non tutti gli account utente hanno accesso alle stesse informazioni della società. Alcuni account hanno accesso a informazioni riservate, ad esempio dati finanziari, informazioni sullo sviluppo di prodotti, accesso dei partner ai sistemi di compilazione critici e altro ancora. Gli account che dispongono dell'accesso a informazioni estremamente riservate rappresentano una minaccia grave se sono compromessi. Questi tipi di account di _priorità_ sono denominati. Gli account prioritari includono CEO, CISOs, CFOs, account di amministrazione dell'infrastruttura, account di sistema di compilazione e altro ancora.
+Non tutti gli account utente hanno accesso alle stesse informazioni della società. Alcuni account hanno accesso a informazioni riservate, ad esempio dati finanziari, informazioni sullo sviluppo di prodotti, accesso dei partner ai sistemi di compilazione critici e altro ancora. In caso di compromesso, gli account che hanno accesso a informazioni estremamente riservate rappresentano una minaccia grave. Questi tipi di account di _priorità_ sono denominati. Gli account prioritari includono (ma non sono limitati a) gli amministratori delegati, CISOs, CFOs, gli account di amministrazione dell'infrastruttura, gli account di sistema di compilazione e altro.
 
 Per gli utenti malintenzionati, gli attacchi di phishing comuni che eseguono il cast di una rete casuale per i clienti comuni o sconosciuti sono inefficienti. D'altra parte, gli attacchi di _phishing_ o di _caccia alle balene_ che hanno come obiettivo gli account prioritari sono molto gratificanti per gli aggressori. Pertanto, gli account prioritari richiedono maggiore protezione ordinaria per evitare il compromesso dell'account.
 
@@ -44,6 +44,7 @@ Microsoft 365 e Microsoft Defender per Office 365 contengono diverse funzionalit
 |[Utilizzo di criteri di sicurezza preimpostati rigorosi per gli account prioritari](#use-strict-preset-security-policies-for-priority-accounts)|![Incluso](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Incluso](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Incluso](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |[Applicazione di tag utente agli account prioritari](#apply-user-tags-to-priority-accounts)|||![Incluso](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |[Monitorare gli account prioritari in avvisi, rapporti e rilevamenti](#monitor-priority-accounts-in-alerts-reports-and-detections)|||![Incluso](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|[Formare gli utenti](#train-users)|![Incluso](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Incluso](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Incluso](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |
 
 ## <a name="increase-sign-in-security-for-priority-accounts"></a>Aumentare la sicurezza dell'accesso per gli account prioritari
@@ -98,6 +99,31 @@ Dopo aver protetto e taggato gli utenti prioritari, è possibile utilizzare i re
 |Report dello stato di protezione dalle minacce|In quasi tutte le visualizzazioni e le tabelle dei dettagli nel **rapporto sullo stato di protezione di minacce** è possibile filtrare i risultati in base agli **account prioritari**. Per ulteriori informazioni, vedere [rapporto sullo stato della protezione dalle minacce](view-email-security-reports.md#threat-protection-status-report).|
 |Problemi di posta elettronica per il report account prioritari|I **problemi di posta elettronica per il rapporto account prioritari** nell'interfaccia di amministrazione di Exchange (EAC) contengono informazioni sui messaggi non recapitati e ritardati per gli **account prioritari**. Per ulteriori informazioni, vedere [problemi relativi alla posta elettronica per il rapporto account prioritari](https://docs.microsoft.com/exchange/monitoring/mail-flow-reports/mfr-email-issues-for-priority-accounts-report).|
 |
+
+## <a name="train-users"></a>Formare gli utenti
+
+La formazione degli utenti con account prioritari può contribuire a salvare gli utenti e il team delle operazioni di sicurezza molto tempo e frustrazione. Gli utenti esperti hanno meno probabilità di aprire allegati o fare clic su collegamenti nei messaggi di posta elettronica discutibili e hanno maggiori probabilità di evitare siti Web sospetti.
+
+Il [manuale della campagna Cybersecurity](https://www.belfercenter.org/CyberPlaybook) della Harvard Kennedy School fornisce una guida eccellente per stabilire una forte cultura della consapevolezza della sicurezza all'interno dell'organizzazione, tra cui la formazione degli utenti per identificare gli attacchi di phishing.
+
+Microsoft 365 fornisce le risorse seguenti per informare gli utenti nell'organizzazione:
+
+<br>
+
+****
+
+|Concetti|Risorse|Descrizione|
+|---|---|---|
+|Microsoft 365|[Percorsi di apprendimento personalizzabili](https://docs.microsoft.com/office365/customlearning/)|Tali risorse consentono di creare una formazione per gli utenti dell'organizzazione.|
+|Sicurezza Microsoft 365|[Modulo di apprendimento: proteggere l'organizzazione con sicurezza integrata e intelligente da Microsoft 365](https://docs.microsoft.com/learn/modules/security-with-microsoft-365)|Questo modulo consente di descrivere in che modo le funzionalità di sicurezza di Microsoft 365 interagiscono e di articolare i vantaggi di queste funzionalità di sicurezza.|
+|Autenticazione a più fattori|[Verifica in due passaggi: che cos'è la pagina di verifica aggiuntiva?](https://docs.microsoft.com/azure/active-directory/user-help/multi-factor-authentication-end-user-first-time)|Questo articolo aiuta gli utenti finali a capire cosa sia l'autenticazione a più fattori e il motivo per cui viene utilizzato all'interno dell'organizzazione.|
+|Formazione sulla simulazione di attacco|[Iniziare a usare la formazione di simulazione di attacco](attack-simulation-training-get-started.md)|Formazione sulla simulazione di attacco in Microsoft Defender per Office 365 piano 2 consente all'amministratore di configurare, avviare e monitorare gli attacchi di phishing simulati a gruppi di utenti specifici.|
+
+Microsoft consiglia inoltre agli utenti di eseguire le azioni descritte in questo articolo: [proteggere l'account e i dispositivi da hacker e malware](https://support.microsoft.com/office/066d6216-a56b-4f90-9af3-b3a1e9a327d6). Queste azioni includono:
+
+- Utilizzo di password complesse
+- Protezione di dispositivi
+- Abilitazione delle funzionalità di sicurezza nei PC Windows 10 e Mac (per i dispositivi non gestiti)
 
 ## <a name="see-also"></a>Vedere anche
 

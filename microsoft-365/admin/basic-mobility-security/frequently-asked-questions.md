@@ -18,12 +18,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: Domande frequenti su mobilità e sicurezza di base.
-ms.openlocfilehash: e05815392510ad54bb530457d7f0f6490ece4a95
-ms.sourcegitcommit: aeb94601a81db3ead8610c2f36cff30eb9fe10e7
+ms.openlocfilehash: 5651b9f9742c45f1229e55b298cf78532c835c9a
+ms.sourcegitcommit: 8849dd6f80217c29f427c7f008d918f30c792240
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "47430212"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49876877"
 ---
 # <a name="basic-mobility-and-security-frequently-asked-questions-faq"></a>Domande frequenti su mobilità e sicurezza di base (FAQ)
 
@@ -31,19 +31,19 @@ In questo articolo sono riportate le domande frequenti su mobilità e sicurezza 
 
 ## <a name="how-can-i-get-basic-mobility-and-security-i-dont-see-it-in-the-microsoft-365-admin-center"></a>Come è possibile ottenere mobilità e sicurezza di base? Non viene visualizzato nell'interfaccia di amministrazione di Microsoft 365
 
-1.  Attivare la sicurezza e la mobilità di base accedendo alla pagina [Office 365 security & Compliance](https://protection.office.com/) .   
+1.  Attivare la sicurezza e la mobilità di base accedendo alla pagina [Office 365 security & Compliance](https://protection.office.com/) .
 
-2.  Passare alla prevenzione della perdita di dati > gestione dei dispositivi.   
+2.  Passare alla prevenzione della perdita di dati > gestione dei dispositivi.
 
 ## <a name="how-can-i-get-started-with-device-management-in-basic-mobility-and-security"></a>Come è possibile iniziare a utilizzare la gestione dei dispositivi per la sicurezza e la mobilità di base?
 
 Sono disponibili quattro passaggi per iniziare a usare la sicurezza e la mobilità di base: 
 
 1. Attivare la sicurezza e la mobilità di base accedendo alla [& di sicurezza di Office 365 Compliance](https://protection.office.com/).
-    
+
 2. Passare a prevenzione della perdita di dati > i criteri di gestione dei dispositivi >.
     
-3. Creare criteri di gestione dei dispositivi e applicarli ai gruppi di utenti configurati in gruppi di sicurezza. Si consiglia di iniziare distribuendo i criteri a un gruppo di testing di piccole dimensioni. Per altre informazioni, vedere [creare criteri di sicurezza dei dispositivi in mobilità e sicurezza di base](create-device-security-policies.md).      
+3. Creare criteri di gestione dei dispositivi e applicarli ai gruppi di utenti configurati in gruppi di sicurezza. Si consiglia di iniziare distribuendo i criteri a un gruppo di testing di piccole dimensioni. Per altre informazioni, vedere [creare criteri di sicurezza dei dispositivi in mobilità e sicurezza di base](create-device-security-policies.md).
 
 4. Gli utenti a cui è stato applicato un criterio vengono invitati a registrare i propri dispositivi quando tentano di accedere ai dati di Microsoft 365. Per altre informazioni, vedere [registrazione del dispositivo mobile utilizzando la sicurezza e la mobilità di base](enroll-your-mobile-device.md).
 
@@ -51,18 +51,18 @@ Per ulteriori informazioni, vedere [configurare la sicurezza e la mobilità di b
 
 ## <a name="im-trying-to-set-up-basic-mobility-and-security-but-it-seems-stuck-the-microsoft-365-service-health-has-been-showing-provisioning-for-a-while-what-can-i-do"></a>Sto cercando di configurare la mobilità e la sicurezza di base, ma sembra bloccata. L'integrità del servizio Microsoft 365 ha visualizzato "provisioning" per un po' di tempo. per correggere il problema?
 
-Potrebbe essere necessario un po' di tempo per preparare il servizio. Al termine del provisioning, verrà visualizzata la pagina Gestione dispositivi mobili per Microsoft 365. Se hai aspettato 24 ore e lo stato è ancora in provisioning, contatta il supporto tecnico e ti aiuteremo a capire qual è il problema. Per le opzioni di supporto, vedere [ancora bisogno di assistenza?](https://support.microsoft.com/office/frequently-asked-questions-about-basic-mobility-and-security-3871f99c-c9db-4a23-86f9-902c1b02f58d#bkmk_needhelp) 
+Potrebbe essere necessario un po' di tempo per preparare il servizio. Al termine del provisioning, verrà visualizzata la pagina di base per dispositivi mobili e sicurezza. Se hai aspettato 24 ore e lo stato è ancora in provisioning, contatta il supporto tecnico e ti aiuteremo a capire qual è il problema. Per le opzioni di supporto, vedere [ancora bisogno di assistenza?](https://support.microsoft.com/office/frequently-asked-questions-about-basic-mobility-and-security-3871f99c-c9db-4a23-86f9-902c1b02f58d#bkmk_needhelp).
 
 ## <a name="what-can-i-do-if-device-enrollment-fails"></a>Cosa è possibile fare se la registrazione del dispositivo ha esito negativo?
 
 Se si verificano problemi durante la registrazione di un dispositivo, verificare innanzitutto quanto segue:
 
 - Verificare che il dispositivo non sia già registrato con un altro provider di gestione dei dispositivi mobili, ad esempio Intune.
-    
+
 - Verificare che il dispositivo sia impostato sulla data e l'ora corrette.
-    
+
 - Passare a una rete Wi-Fi o cellulare diversa nel dispositivo.
-    
+
 - Per i dispositivi Android o iOS, disinstallare e reinstallare l'app portale aziendale di Intune nel dispositivo.
     
 Se non è ancora in esecuzione la registrazione, vedere [Troubleshoot Basic Mobility and Security](troubleshoot.md).
@@ -90,4 +90,3 @@ Dopo che un dispositivo è stato registrato in mobilità e sicurezza di base, tu
 ## <a name="i--set-up-basic-mobility-and-security-but-now-i-want-to-remove-it-what-are-the-steps"></a>Ho configurato la sicurezza e la mobilità di base, ma ora lo si desidera rimuovere. Quali sono i passaggi?
 
 Purtroppo, non è possibile semplicemente "annullare la provisioning" della mobilità e della sicurezza di base dopo averla configurata. Tuttavia, è possibile rimuoverla per gruppi di utenti rimuovendo i gruppi di sicurezza degli utenti dai criteri di dispositivo creati. In alternativa, è possibile disattivarlo per tutti rimuovendo i criteri del dispositivo in modo che non siano sul posto e non vengano applicati. Per altre informazioni, vedere [disattivare mobilità e sicurezza di base](turn-off.md).
-

@@ -18,12 +18,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: La sicurezza e la mobilità di base fanno parte dei piani di Microsoft 365.
-ms.openlocfilehash: 75fef5bd70d7b8926d31b80f16952aa996bc625c
-ms.sourcegitcommit: e53234b1f64ebca00e121da1706c02b3337c35f0
+ms.openlocfilehash: cfd1a68c313d1a1335490e2b8d6938de192fe3f3
+ms.sourcegitcommit: 8849dd6f80217c29f427c7f008d918f30c792240
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "49580662"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49877093"
 ---
 # <a name="choose-between-basic-mobility-and-security-or-intune"></a>Scegliere tra mobilità e sicurezza di base o Intune
 
@@ -33,7 +33,7 @@ ms.locfileid: "49580662"
  
 Sia la mobilità che la sicurezza di base e Intune sono inclusi in una serie di piani, descritti nella tabella seguente.
 
-| Piano | Mobilità e sicurezza di base | Microsoft Intune |
+| Piano | Basic Mobility + Security | Microsoft Intune |
 |:-----|:-----|:-----|
 |Microsoft 365 Apps|Sì|No|
 |Microsoft 365 Business Basic|Sì|No|
@@ -64,17 +64,18 @@ Microsoft Intune e la sicurezza e la mobilità di base incorporati offrono la po
 >[!NOTE]
 >È possibile gestire gli utenti e i propri dispositivi mobili utilizzando Intune e la mobilità di base e la sicurezza nella stessa organizzazione di Microsoft 365 business standard impostando *prima la mobilità e la sicurezza di base e quindi aggiungendo Microsoft Intune*. In questo modo è possibile scegliere mobilità e sicurezza di base o la soluzione più ricca di funzionalità di Intune. Assegnare una licenza di Intune per abilitare le funzionalità di Intune.
 
-| Area funzionale | Caratteristiche principali | Mobilità e sicurezza di base | Microsoft Intune |
+| Area funzionale | Caratteristiche principali | Basic Mobility + Security | Microsoft Intune |
 |:-----|:-----|:-----|:-----|
 |Tipi di dispositivi|Gestione di diverse piattaforme del sistema operativo e varianti di modalità di gestione principali. |Windows<br/>iOS<br/>Android<br/>Android Samsung KNOX<br/>|Windows<br/>iOS<br/>Android<br/>Android Samsung KNOX<br/>Mac OS, sistema operativo iPad|
 |Conformità dispositivo|Impostare e gestire i criteri di sicurezza, ad esempio il blocco PIN a livello di dispositivo e il rilevamento jailbreak. |Limitazioni su dispositivi Android 9 e versioni successive. Vedere [Details](capabilities.md). |Sì|
 |Accesso condizionale basato sulla conformità del dispositivo |Impedire ai dispositivi non conformi di accedere alla posta elettronica aziendale e ai dati dal cloud. |Non supportato in Windows 10.<br/>Limitato a controllare l'accesso a Exchange Online, SharePoint Online e Outlook. |Sì |
-|Configurazione delle periferiche  |Configurare le impostazioni dei dispositivi (ad esempio, disabilitando la videocamera)|Set limitato di impostazioni.|Sì|Conformità dispositivo|Impostare e gestire i criteri di sicurezza, ad esempio il blocco PIN a livello di dispositivo e il rilevamento jailbreak. |Limitazioni su dispositivi Android 9 e versioni successive. Vedere [Details](capabilities.md). |Sì|
+|Configurazione delle periferiche  |Configurare le impostazioni dei dispositivi (ad esempio, disabilitando la videocamera)|Set limitato di impostazioni.|Sì|
+|Conformità dispositivo  |Impostare e gestire i criteri di sicurezza, ad esempio il blocco PIN a livello di dispositivo e il rilevamento jailbreak. |Limitazioni su dispositivi Android 9 e versioni successive. Vedere [Details](capabilities.md). |Sì|
 |Profili di posta elettronica  |Eseguire il provisioning di un profilo di posta elettronica nativo nel dispositivo. |Sì|Sì|
 |Profili WiFi |Provisioning di un profilo Wi-Fi nativo sul dispositivo. |No|Sì|
 |Profili VPN |Provisioning di un profilo VPN nativo nel dispositivo. |No|Sì|
-|Gestione delle applicazioni MDM |Distribuire le app line-of-business interne e gli archivi delle app con gli utenti. |No|Sì|
-|MAM |Assicurarsi che gli utenti possano accedere in modo sicuro alle informazioni aziendali utilizzando le app di Office Mobile e line-of-business, contribuendo a limitare azioni come la copia, il taglio, l'incollaggio e il salvataggio come, solo per le applicazioni approvate per i dati aziendali. |No|Sì|
+|Gestione delle applicazioni di sicurezza e mobilità di base  |Distribuire le app line-of-business interne e gli archivi delle app con gli utenti. |No|Sì|
+|Protezione delle applicazioni per dispositivi mobili  |Consente agli utenti di accedere in modo sicuro alle informazioni aziendali utilizzando le app di Office Mobile e line-of-business che conoscono, garantendo la sicurezza dei dati contribuendo a limitare azioni come la copia, il taglio, la incolla e il salvataggio come, solo per le app gestite approvate per i dati aziendali. Funziona anche se i dispositivi non sono registrati alla sicurezza e alla mobilità di base. Vedere proteggere i dati delle app utilizzando i criteri MAM. |No|Sì|
 |Browser gestito  |Abilitare la navigazione web più sicura utilizzando l'app Edge. |No|Sì|
 |Programma automatico di registrazione di zero touch |Registrare un numero elevato di dispositivi di proprietà aziendale, semplificando la configurazione dell'utente. |No|Sì|
 |||
