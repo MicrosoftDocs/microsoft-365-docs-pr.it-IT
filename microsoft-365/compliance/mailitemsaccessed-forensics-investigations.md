@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Usare l'azione di controllo delle cassette postali MailItemsAccessed per eseguire indagini forensi sugli account utente compromessi.
-ms.openlocfilehash: 908c2a22b05d7daef8d55c7e0aac61f25489692a
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: 15379a5c24ee222cf097e94d46dc46de0e385820
+ms.sourcegitcommit: c1f9a1b2a34146c51c9e33c4119a388b249ce7a9
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47546292"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "49868004"
 ---
 # <a name="use-advanced-audit-to-investigate-compromised-accounts"></a>Usare Audit avanzato per le indagini sugli account compromessi
 
@@ -178,8 +178,8 @@ I record di controllo duplicati per le stesse operazioni di binding che si verif
 
 |Record di controllo 1  |Record di controllo 2  |Record di controllo 3|
 |---------|---------|---------|
-|ClientIPAddress**1**<br/>SessionId**2**|ClientIPAddress**2**<br/>SessionId**2**|ClientIPAddress**1**<br/>SessionId**3**|
-|InternetMessageId**A**<br/>InternetMessageId**D**<br/>InternetMessageId**E**<br/>InternetMessageId**F**<br/>|InternetMessageId**A**<br/>InternetMessageId**C**|InternetMessageId**B** |
+|ClientIPAddress **1**<br/>SessionId **2**|ClientIPAddress **2**<br/>SessionId **2**|ClientIPAddress **1**<br/>SessionId **3**|
+|InternetMessageId **A**<br/>InternetMessageId **D**<br/>InternetMessageId **E**<br/>InternetMessageId **F**<br/>|InternetMessageId **A**<br/>InternetMessageId **C**|InternetMessageId **B** |
 ||||
 
 Se una o più delle proprietà elencate nella tabella della [sezione precedente](#filtering-of-duplicate-audit-records) è diversa, viene generato un record di controllo separato per tenere traccia del nuovo contesto. Gli accessi verranno ordinati nei record di controllo separati in base al contesto in cui si è verificata l'attività.
@@ -187,3 +187,9 @@ Se una o più delle proprietà elencate nella tabella della [sezione precedente]
 Ad esempio, nei record di controllo visualizzati nello screenshot seguente, anche se accediamo alla posta elettronica da EWSEditor e OWA contemporaneamente, l'attività di accesso viene raccolta in record di controllo diversi in base al contesto in cui si è verificato l'accesso. In questo caso, il contesto è definito da valori diversi per la proprietà ClientInfoString.
 
 ![Record di controllo diversi in base al contesto](../media/MailItemsAccessed4.png)
+
+Questa è la sintassi del comando visualizzato nello screenshot precedente:
+
+```powershell
+Search-MailboxAuditLog -Identity admin -ShowDetails -Operations MailItemsAccessed -ResultSize 2000 | Select LastAccessed,Operation,AuditOperationsCountInAggregatedRecord,ClientInfoString
+``` 

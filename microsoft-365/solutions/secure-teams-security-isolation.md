@@ -15,12 +15,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: Informazioni su come creare un team con un'etichetta di riservatezza univoca per la sicurezza.
-ms.openlocfilehash: d5cfe33d4f254832ccf26552d8ca392cf1dc440c
-ms.sourcegitcommit: df58fd8ebe14ca98fc1be84dbfb9c29ef7ab1d62
+ms.openlocfilehash: 439dee40d1501801fc09d570614a591259c6f09c
+ms.sourcegitcommit: 31be333178b934c519f419656f4c3a53e1beffdc
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49870980"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "49881706"
 ---
 # <a name="configure-a-team-with-security-isolation"></a>Configurare un team con l'isolamento di sicurezza
 
@@ -46,7 +46,7 @@ Guardare il video per una panoramica del processo di distribuzione.
 <br>
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4mGHf]
 
-<a name="poster"></a> Per un riepilogo di 2 pagine di questo scenario, vedere il [poster Microsoft Teams con l’isolamento di sicurezza](../downloads/team-security-isolation-poster.pdf).
+<a name="poster"></a> Per un riepilogo di 1 pagina di questo scenario, vedere il [poster Microsoft Teams con isolamento della sicurezza](../downloads/team-security-isolation-poster.pdf).
 
 [![Poster Microsoft Teams con l’isolamento di sicurezza](../media/secure-teams-security-isolation/team-security-isolation-poster.png)](../downloads/team-security-isolation-poster.pdf)
 

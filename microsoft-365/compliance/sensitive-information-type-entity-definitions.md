@@ -18,12 +18,12 @@ ms.collection:
 hideEdit: true
 feedback_system: None
 description: La prevenzione della perdita di dati (DLP) nel &amp; Centro sicurezza e conformità include 80 tipi di informazioni riservate pronte per l'uso nei criteri DLP. In questo argomento vengono elencati tutti questi tipi di informazioni riservate e illustrata la ricerca eseguita dal criterio DLP quando rileva ciascun tipo di informazioni.
-ms.openlocfilehash: 10f45403703130c191f4cbb26d1c0cba168b05ae
-ms.sourcegitcommit: 98b889e674ad1d5fa37d4b6c5fc3eda60a1d67f3
+ms.openlocfilehash: 584e2fe2353c1f80545a3742a44163cb26ee2c29
+ms.sourcegitcommit: 31be333178b934c519f419656f4c3a53e1beffdc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "49751283"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "49881785"
 ---
 # <a name="sensitive-information-type-entity-definitions"></a>Definizioni delle entità tipo di informazioni sensibili
 
@@ -12216,7 +12216,8 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - ID dell'indice di integrità nazionale
 - Indice di integrità nazionale #
 
-## <a name="new-zealand-social-wlefare-number"></a>Numero di social wlefare della Nuova Zelanda
+## <a name="new-zealand-social-welfare-number"></a>Numero di welfare sociale neozelandese
+
 Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
 - criteri di prevenzione della perdita di dati
 - criteri di conformità della comunicazione
