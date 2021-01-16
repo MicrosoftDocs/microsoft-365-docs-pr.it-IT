@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: 3f7dde1a-a8ea-4366-86da-8ee6777f357c
 description: Usare lo strumento Ricerca contenuto nel Centro sicurezza e conformità per cercare ed esportare i dati delle chat di Microsoft Teams degli utenti locali in una distribuzione ibrida di Exchange.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 60bb207463c360d98623caed4024bb87deb5fdfc
-ms.sourcegitcommit: 1423e08a02d30f0a2b993fb99325c3f499c31787
+ms.openlocfilehash: 9620c48056545e6d6cf053040849acfe0a1bc68e
+ms.sourcegitcommit: c1f9a1b2a34146c51c9e33c4119a388b249ce7a9
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "48277091"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "49868014"
 ---
 # <a name="search-for-teams-chat-data-for-on-premises-users"></a>Cercare i dati delle chat di Teams degli utenti locali
 
@@ -142,13 +142,13 @@ Per altre informazioni sull'uso di questi cmdlet, vedere:
 
 ## <a name="frequently-asked-questions"></a>Domande frequenti
 
- **Dove si trova la risorsa di archiviazione basata sul cloud per gli utenti locali?**
+**Dove si trova la risorsa di archiviazione basata sul cloud per gli utenti locali?**
   
-Il provisioning della risorsa di archiviazione basata sul cloud viene effettuato nello stesso data center dell’organizzazione.
+I dati delle chat di Teams vengono archiviati nel file PDL (Preferred Data Location) per un utente locale. Il file PDL viene rispettato negli ambienti a singola geo e multi geo. Per ulteriori informazioni, vedere [Microsoft 365 Multi-Geo](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-multi-geo).
   
  **Sono previsti altri requisiti oltre all'invio di una richiesta di supporto?**
   
- Come descritto in precedenza, occorre sincronizzare le identità degli utenti con cassette postali locali con l'organizzazione basata sul cloud, in modo che venga creato un account di posta elettronica corrispondente per ogni account utente locale in Office 365. L'organizzazione deve avere anche un abbonamento a Office 365 Enterprise, ad esempio un abbonamento a Office 365 Enterprise E1, E3 o E5.
+Come descritto in precedenza, occorre sincronizzare le identità degli utenti con cassette postali locali con l'organizzazione basata sul cloud, in modo che venga creato un account di posta elettronica corrispondente per ogni account utente locale in Office 365. L'organizzazione deve avere anche un abbonamento a Office 365 Enterprise, ad esempio un abbonamento a Office 365 Enterprise E1, E3 o E5.
   
  **Esiste il rischio di perdere i dati di chat di Teams se si esegue la migrazione della cassetta postale locale dell'utente nel cloud?**
   
