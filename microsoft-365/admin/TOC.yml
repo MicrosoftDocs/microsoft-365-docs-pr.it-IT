@@ -24,6 +24,8 @@
           href: setup/o365-setup-wizard-and-setup-page.md
         - name: Proteggere i computer Windows 10
           href: ../business/secure-win-10-pcs.md
+        - name: Scaricare software e codici prodotto
+          href: setup/download-software-licenses-csp.md
         - name: Installare app di Office
           href: setup/install-applications.md
         - name: Configurare i dispositivi Windows
@@ -360,12 +362,32 @@
               href: basic-mobility-security/overview.md
             - name: Confrontare Basic Mobility + Security e Intune
               href: basic-mobility-security/choose-between-basic-mobility-and-security-and-intune.md
-            - name: Domande frequenti su Basic Mobility + Security
-              href: basic-mobility-security/frequently-asked-questions.md
             - name: Funzionalità Basic Mobility + Security
               href: basic-mobility-security/capabilities.md
-            - name: Confrontare Basic Mobility + Security e Intune
-              href: basic-mobility-security/choose-between-basic-mobility-and-security-and-intune.md
+            - name: Impostare Basic Mobility + Security
+              href: basic-mobility-security/set-up.md
+            - name: Creare criteri di sicurezza per i dispositivi
+              href: basic-mobility-security/create-device-security-policies.md
+            - name: Creare un certificato APNs per i dispositivi iOS
+              href: basic-mobility-security/create-an-apns-certificate-for-ios-devices.md
+            - name: Gestire le impostazioni di accesso del dispositivo
+              href: basic-mobility-security/manage-device-access-settings.md
+            - name: Ottenere informazioni sui dispositivi gestiti
+              href: basic-mobility-security/get-details-about-managed-devices.md
+            - name: Gestire i dispositivi registrati
+              href: basic-mobility-security/manage-enrolled-devices.md
+            - name: Registrare un dispositivo mobile
+              href: basic-mobility-security/enroll-your-mobile-device.md
+            - name: Privacy e sicurezza
+              href: basic-mobility-security/privacy-and-security.md
+            - name: Domande frequenti
+              href: basic-mobility-security/frequently-asked-questions.md
+            - name: Rimuovere i dati dei dispositivi mobili
+              href: basic-mobility-security/wipe-mobile-device.md
+            - name: Disabilitare Basic Mobility + Security
+              href: basic-mobility-security/turn-off.md
+            - name: Risoluzione dei problemi
+              href: basic-mobility-security/troubleshoot.md
     - name: Lavorare con i clienti
       href: work-with-customers/index.yml
       items:
