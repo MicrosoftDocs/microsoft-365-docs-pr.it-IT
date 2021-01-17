@@ -24,12 +24,12 @@ search.appverid:
 ms.assetid: 8548a211-3fe7-47cb-abb1-355ea5aa88a2
 description: 'Riepilogo: Office 365 richiede la connessione a Internet. Gli endpoint riportati di seguito dovrebbero essere raggiungibili per i clienti che usano i piani di Office 365, compreso Government Community Cloud (GCC).'
 hideEdit: true
-ms.openlocfilehash: 9b705c6cad0387efb16f3fc5494b1ba2fe337732
-ms.sourcegitcommit: 9833f95ab6ab95aea20d68a277246dca2223f93d
+ms.openlocfilehash: 386c92d0856b3faa88fb8a05f8ddff58a81e3c4f
+ms.sourcegitcommit: a92b150da1e11d4a204c556ab98a4776727dbc22
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "49794401"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "49883337"
 ---
 # <a name="office-365-urls-and-ip-address-ranges"></a>Intervalli di indirizzi IP e URL di Office 365
 
@@ -62,7 +62,7 @@ Le colonne di dati visualizzate sono le seguenti:
 [!INCLUDE [Office 365 worldwide endpoints](../includes/office-365-worldwide-endpoints.md)]
 
 >[!Note]
->Per suggerimenti sugli URL e indirizzi IP di Yammer, vedere [Questo post di blog](https://techcommunity.microsoft.com/t5/Yammer-Blog/Using-hard-coded-IP-addresses-for-Yammer-is-not-recommended/ba-p/276592).
+>Per consigli sugli indirizzi IP e URL di Yammer, vedere il post del blog di Yammer [L'uso di indirizzi IP statici per Yammer non è consigliato](https://techcommunity.microsoft.com/t5/Yammer-Blog/Using-hard-coded-IP-addresses-for-Yammer-is-not-recommended/ba-p/276592).
 >
 
 ## <a name="related-topics"></a>Argomenti correlati
@@ -71,7 +71,7 @@ Le colonne di dati visualizzate sono le seguenti:
 
 [Endpoint generali di Microsoft Stream](https://docs.microsoft.com/stream/network-overview#general-microsoft-stream-endpoints)
   
-[Monitorare la connettività di Microsoft 365](https://docs.microsoft.com/microsoft-365/enterprise/monitor-connectivity?view=o365-worldwide)
+[Monitorare la connettività di Microsoft 365](https://docs.microsoft.com/microsoft-365/enterprise/monitor-connectivity)
 
 [CA radice e il bundle CA intermedio nel sistema di applicazioni di terze parti](../compliance/encryption-office-365-certificate-chains.md)
   
@@ -88,3 +88,5 @@ Le colonne di dati visualizzate sono le seguenti:
 [Intervalli IP di Microsoft Azure e tag di servizio - Cloud Cina](https://www.microsoft.com/download/details.aspx?id=57062)
   
 [Spazio IP pubblico di Microsoft](https://www.microsoft.com/download/details.aspx?id=53602)
+
+[Registro del nome del servizio e numero di porta del protocollo di trasporto](https://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.xhtml)
