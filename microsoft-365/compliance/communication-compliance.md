@@ -20,12 +20,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 837f4b82e016159d8887b6501b7458e879321443
-ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
+ms.openlocfilehash: 89904e6d1439b17f0c9725aa59d6884e832a10d9
+ms.sourcegitcommit: 27cb4591e08f62ba0a08d6dcf224bf2039034fe5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49613108"
+ms.lasthandoff: 01/17/2021
+ms.locfileid: "49883655"
 ---
 # <a name="learn-about-communication-compliance-in-microsoft-365"></a>Informazioni sulla conformità della comunicazione in Microsoft 365
 
@@ -51,13 +51,13 @@ I criteri di conformità della comunicazione possono fornire assistenza per la r
 
 - **Gestione dei rischi**
 
-    Le organizzazioni sono responsabili di tutte le comunicazioni distribuite nell'infrastruttura e nei sistemi di rete aziendale. L'utilizzo di criteri di conformità della comunicazione per identificare e gestire potenziali esposizione e rischi legali può contribuire a ridurre al minimo i rischi prima che possano danneggiare le operazioni aziendali. Ad esempio, è possibile analizzare i messaggi nell'organizzazione per comunicazioni non autorizzate su progetti riservati, come acquisizioni imminenti, fusioni, divulgazioni di guadagni, riorganizzazioni o modifiche del team di leadership.
+    Le organizzazioni sono responsabili di tutte le comunicazioni distribuite nell'infrastruttura e nei sistemi di rete aziendale. L'utilizzo di criteri di conformità della comunicazione per identificare e gestire potenziali esposizione e rischi legali può contribuire a ridurre al minimo i rischi prima che possano danneggiare le operazioni aziendali. Ad esempio, è possibile analizzare i messaggi nell'organizzazione per comunicazioni non autorizzate e conlficts di interesse per i progetti riservati, quali acquisizioni imminenti, fusioni, divulgazioni di guadagni, riorganizzazioni o modifiche del team di leadership.
 
 - **Conformità alle normative**
 
     La maggior parte delle organizzazioni deve soddisfare alcuni tipi di standard di conformità normativi nell'ambito delle normali procedure operative. Queste normative richiedono spesso che le organizzazioni implementino un qualche tipo di processo di supervisione o sorveglianza per la messaggistica appropriata per il proprio settore. La regola FINRA (Financial Industry Regulatory Authority) 3110 è un buon esempio di un requisito che consente alle organizzazioni di disporre di procedure di supervisione per l'analisi delle comunicazioni degli utenti e dei tipi di attività in cui si impegna. Un altro esempio potrebbe essere la necessità di esaminare le comunicazioni del broker-dealer nell'organizzazione per salvaguardare le attività relative a possibili operazioni di riciclaggio, insider trading, collusioni o tangenti. I criteri di conformità della comunicazione consentono all'organizzazione di soddisfare questi requisiti fornendo una procedura per l'analisi e il report sulle comunicazioni aziendali. Per ulteriori informazioni sul supporto per le organizzazioni finanziarie, vedere [Key Compliance and Security Considerations for US Banking and Capital Markets](../solutions/financial-services-secure-collaboration.md).
 
-## <a name="new-enhancements"></a>Nuovi miglioramenti
+## <a name="key-feature-areas"></a>Aree principali delle funzionalità
 
 La conformità alla comunicazione in Microsoft 365 offre diverse funzionalità importanti che consentono di risolvere i problemi di conformità nelle piattaforme di messaggistica:
 
@@ -71,7 +71,7 @@ La conformità alla comunicazione in Microsoft 365 offre diverse funzionalità i
 
 I modelli personalizzabili intelligenti in conformità alla comunicazione consentono di applicare l'apprendimento automatico per rilevare in modo intelligente le violazioni della comunicazione nell'organizzazione.
 
-- **Modelli preconfigurati personalizzabili**: i nuovi modelli di criteri consentono di risolvere i rischi di comunicazione più comuni. La creazione di criteri iniziali e l'aggiornamento di follow-up sono ora più rapidi con i modelli predefiniti di Antimolestie e offensive, informazioni riservate e conformità alle normative.
+- **Modelli preconfigurati personalizzabili**: i nuovi modelli di criteri consentono di risolvere i rischi di comunicazione più comuni. La creazione di criteri iniziali e l'aggiornamento di follow-up sono ora più rapidi con la protezione antimolestia e il linguaggio offensivo, le informazioni riservate, i conflitti di interesse e i modelli di conformità normativi.
 - **Nuovo supporto per l'apprendimento automatico**: minacce incorporate, molestie, parolacce e [classificatori](classifier-get-started-with.md) di immagini consentono di ridurre i falsi positivi nei messaggi analizzati, salvando il tempo dei revisori durante il processo di analisi e correzione.
 - **Generatore di condizioni migliorato**: la configurazione delle condizioni dei criteri è ora snella in una singola esperienza integrata nella procedura guidata per i criteri, riducendo la confusione nel modo in cui vengono applicate le condizioni per i criteri.
 
@@ -126,8 +126,9 @@ In questo passaggio del flusso di lavoro vengono identificati i requisiti di con
 È possibile scegliere tra i seguenti modelli di criteri nel centro conformità di Microsoft 365:
 
 - **Lingua offensiva o minacciosa**: utilizzare questo modello per creare rapidamente un criterio che utilizza classificatori incorporati per rilevare automaticamente il contenuto che può essere considerato abusivo o offensivo.
-- **Informazioni riservate**: utilizzare questo modello per creare un criterio per l'analisi delle comunicazioni contenenti tipi di informazioni riservate definite o parole chiave per garantire che i dati importanti non siano condivisi con utenti che non devono avere accesso.
-- **Conformità alle normative**: utilizzare questo modello per creare un criterio per l'analisi delle comunicazioni per i riferimenti ai termini finanziari standard associati agli standard normativi.
+- **Informazioni riservate**: utilizzare questo modello per creare rapidamente un criterio per l'analisi delle comunicazioni contenenti tipi di informazioni riservate definite o parole chiave per garantire che i dati importanti non siano condivisi con utenti che non devono avere accesso.
+- **Conformità alle normative**: utilizzare questo modello per creare rapidamente un criterio per l'analisi delle comunicazioni per i riferimenti ai termini finanziari standard associati agli standard normativi.
+- **Conflitto di interessi**: utilizzare questo modello per creare rapidamente un criterio per monitorare le comunicazioni tra due gruppi o due utenti per evitare conflitti di interesse.
 - **Criteri personalizzati**: utilizzare questo modello per configurare i canali di comunicazione specifici, le condizioni di rilevamento individuali e la quantità di contenuto da monitorare e rivedere nell'organizzazione.
 
 ### <a name="investigate"></a>Investigare

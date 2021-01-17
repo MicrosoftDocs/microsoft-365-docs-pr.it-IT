@@ -20,12 +20,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: e88b26fcfbcc9cbb0c2c53ed8fdb6b875ef4adc9
-ms.sourcegitcommit: 98146c67a1d99db5510fa130340d3b7be8d81b21
+ms.openlocfilehash: f958a2f6854ca34b0d24a527e2517c848885ad1c
+ms.sourcegitcommit: 27cb4591e08f62ba0a08d6dcf224bf2039034fe5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/07/2020
-ms.locfileid: "49585306"
+ms.lasthandoff: 01/17/2021
+ms.locfileid: "49883685"
 ---
 # <a name="get-started-with-communication-compliance"></a>Introduzione alla conformità delle comunicazioni
 
@@ -60,7 +60,7 @@ Se non si dispone di un piano Office 365 Enterprise E5 esistente e si desidera p
 >[!Important]
 >Per impostazione predefinita, gli amministratori globali non possono accedere alle funzionalità di conformità della comunicazione. I ruoli assegnati a questo passaggio sono necessari prima che vengano accessibili tutte le funzionalità di conformità della comunicazione. Dopo aver configurato i gruppi di ruoli, potrebbero essere necessari fino a 30 minuti affinché le autorizzazioni del gruppo di ruoli siano valide per gli utenti assegnati all'interno dell'organizzazione.
 
-Sono disponibili cinque gruppi di ruoli che consentono di configurare le autorizzazioni per la gestione delle funzionalità di conformità della comunicazione. Per rendere la **conformità di comunicazione** disponibile come opzione di menu nel centro conformità di Microsoft 365 e continuare con questi passaggi di configurazione, è necessario essere assegnati ai gruppi di ruoli amministratore conformità comunicazione o *conformità comunicazione* . *Communication Compliance* Per accedere e gestire le funzionalità di conformità della comunicazione dopo la configurazione iniziale, è necessario che gli utenti siano membri di almeno un gruppo di ruolo conformità comunicazione.
+Sono disponibili cinque gruppi di ruoli che consentono di configurare le autorizzazioni per la gestione delle funzionalità di conformità della comunicazione. Per rendere la **conformità di comunicazione** disponibile come opzione di menu nel centro conformità di Microsoft 365 e continuare con questi passaggi di configurazione, è necessario essere assegnati ai gruppi di ruoli amministratore conformità comunicazione o *conformità comunicazione* .  Per accedere e gestire le funzionalità di conformità della comunicazione dopo la configurazione iniziale, è necessario che gli utenti siano membri di almeno un gruppo di ruolo conformità comunicazione.
 
 A seconda del modo in cui si desidera gestire i criteri di comunicazione e gli avvisi, è necessario assegnare gli utenti a specifici gruppi di ruoli. È possibile assegnare agli utenti le responsabilità di conformità diverse ai gruppi di ruoli specifici per gestire diverse aree di funzionalità di conformità della comunicazione. In alternativa, è possibile decidere di assegnare tutti gli account utente per gli amministratori, gli analisti, gli investigatori e i visualizzatori designati al gruppo di ruolo *conformità comunicazione* . Utilizzare un singolo gruppo di ruoli o più gruppi di ruoli per soddisfare al meglio i requisiti di gestione della conformità.
 
@@ -68,7 +68,7 @@ Scegliere tra queste opzioni del gruppo di ruoli quando si configura la conformi
 
 | Ruolo | Autorizzazioni di ruolo |
 |:-----|:-----|
-| **Conformità delle comunicazioni** | Utilizzare questo gruppo di ruoli per gestire la conformità di comunicazione per l'organizzazione in un singolo gruppo. Aggiungendo tutti gli account utente per gli amministratori, gli analisti, gli investigatori e i visualizzatori designati, è possibile configurare le autorizzazioni di conformità per le comunicazioni in un singolo gruppo. Questo gruppo di ruoli contiene tutti i ruoli di autorizzazione di conformità di comunicazione. Questa configurazione è il modo più semplice per iniziare rapidamente con la conformità alla comunicazione ed è adatta per le organizzazioni che non necessitano di autorizzazioni separate definite per gruppi di utenti separati. |
+| **Conformità alla comunicazione** | Utilizzare questo gruppo di ruoli per gestire la conformità di comunicazione per l'organizzazione in un singolo gruppo. Aggiungendo tutti gli account utente per gli amministratori, gli analisti, gli investigatori e i visualizzatori designati, è possibile configurare le autorizzazioni di conformità per le comunicazioni in un singolo gruppo. Questo gruppo di ruoli contiene tutti i ruoli di autorizzazione di conformità di comunicazione. Questa configurazione è il modo più semplice per iniziare rapidamente con la conformità alla comunicazione ed è adatta per le organizzazioni che non necessitano di autorizzazioni separate definite per gruppi di utenti separati. |
 | **Amministratore della conformità alla comunicazione** | Utilizzare questo gruppo di ruoli per configurare inizialmente la conformità della comunicazione e successivamente per separare gli amministratori della conformità di comunicazione in un gruppo definito. Gli utenti assegnati a questo gruppo di ruoli possono creare, leggere, aggiornare ed eliminare i criteri di conformità della comunicazione, le impostazioni globali e le assegnazioni dei gruppi di ruoli. Gli utenti assegnati a questo gruppo di ruoli non possono visualizzare gli avvisi dei messaggi. |
 | **Analista conformità comunicazione** | Utilizzare questo gruppo per assegnare le autorizzazioni agli utenti che fungeranno da analisti di conformità della comunicazione. Gli utenti assegnati a questo gruppo di ruoli possono visualizzare i criteri in cui vengono assegnati come revisori, visualizzare i metadati dei messaggi (non il contenuto del messaggio), inoltrare a revisori aggiuntivi o inviare notifiche agli utenti. Gli analisti non sono in grado di risolvere gli avvisi in sospeso. |
 | **Ricercatore conformità comunicazione** | Utilizzare questo gruppo per assegnare le autorizzazioni agli utenti che agiranno come ricercatori per la conformità della comunicazione. Gli utenti assegnati a questo gruppo di ruoli possono visualizzare i metadati e il contenuto del messaggio, inoltrare ai revisori aggiuntivi, inoltrare a un caso avanzato di eDiscovery, inviare notifiche agli utenti e risolvere l'avviso. |
@@ -198,7 +198,7 @@ Per ulteriori informazioni sulla configurazione di Yammer in modalità nativa, v
 
     - Confermare o aggiornare il nome del criterio. Non è possibile modificare i nomi dei criteri dopo la creazione del criterio.
     
-    - Scegliere gli utenti o i gruppi da controllare, inclusa la scelta degli utenti o dei gruppi che si desidera escludere.
+    - Scegliere gli utenti o i gruppi da controllare, inclusa la scelta degli utenti o dei gruppi che si desidera escludere. Quando si utilizza il modello di conflitto di interessi, è possibile selezionare due gruppi o due utenti da monitorare per le comunicazioni interne.
     
     - Scegliere i revisori per il criterio. I revisori sono utenti singoli e tutti i revisori devono disporre di cassette postali ospitate in Exchange Online. Revisori aggiunti qui sono i revisori che è possibile scegliere quando si effettua l'escalation di un avviso nel flusso di lavoro di analisi e correzione. Quando i revisori vengono aggiunti a un criterio, ricevono automaticamente un messaggio di posta elettronica che informa gli utenti dell'assegnazione ai criteri e fornisce collegamenti alle informazioni sul processo di revisione.
     
@@ -247,7 +247,7 @@ Se si desidera avere la possibilità di rispondere a un avviso di criteri invian
 
 4. Per abilitare Anonymization, selezionare **Mostra le versioni di anonimi dei nomi utente**.
 
-5. Seleziona **Salva**.
+5. Selezionare **Salva**.
 
 6. Passare alla scheda **modelli di avviso** e quindi selezionare **Crea modello di avviso**.
 
@@ -274,7 +274,7 @@ Eseguire la procedura seguente per testare i criteri di conformità della comuni
     > [!NOTE]
     > I messaggi di posta elettronica possono richiedere fino a 24 ore per elaborarli completamente in un criterio. Le comunicazioni in Microsoft teams, Yammer e le piattaforme di terze parti possono richiedere fino a 48 ore per il processo completo in un criterio.
 
-3. Accedere a Microsoft 365 come un revisore designato nei criteri di conformità della comunicazione. Passare a **avvisi conformità comunicazione**  >  **Alerts** per visualizzare gli avvisi per i criteri.
+3. Accedere a Microsoft 365 come un revisore designato nei criteri di conformità della comunicazione. Passare a **avvisi conformità comunicazione**  >   per visualizzare gli avvisi per i criteri.
 
 4. Correggere l'avviso utilizzando i controlli di correzione e verificare che l'avviso sia stato risolto correttamente.
 

@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 009ed10cb9d005757a786d3a3b2c0bba2c8e6d44
-ms.sourcegitcommit: 4cbb4ec26f022f5f9d9481f55a8a6ee8406968d2
+ms.openlocfilehash: f8c7f2d4ef21ddb2358ab4368d81af0144a4ec11
+ms.sourcegitcommit: 27cb4591e08f62ba0a08d6dcf224bf2039034fe5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49527639"
+ms.lasthandoff: 01/17/2021
+ms.locfileid: "49883695"
 ---
 # <a name="communication-compliance-feature-reference"></a>Informazioni di riferimento sulle caratteristiche di conformità comunicazione
 
@@ -46,13 +46,14 @@ I modelli di criteri sono impostazioni predefinite che è possibile utilizzare p
 | **Lingua offensiva e anti-molestia** | Monitorare le comunicazioni per la lingua offensiva | -Locations: Exchange Online, Microsoft teams, Yammer, Skype for business <br> -Direction: in ingresso, in uscita, interno <br> -Percentuale di verifica: 100% <br> -Conditions: classificatore di lingua offensivo |
 | **Informazioni sensibili** | Monitorare le comunicazioni per informazioni riservate | -Locations: Exchange Online, Microsoft teams, Yammer, Skype for business <br> -Direction: in ingresso, in uscita, interno <br> -Percentuale di verifica: 10% <br> -Conditions: informazioni riservate, modelli di contenuto esterno alla casella e tipi, opzione dizionario personalizzato, allegati superiori a 1 MB |
 | **Conformità alle normative** | Monitorare le comunicazioni per informazioni relative alla conformità alle normative finanziarie | -Locations: Exchange Online, Microsoft teams, Yammer, Skype for business <br> -Direction: in ingresso, in uscita <br> -Percentuale di verifica: 10% <br> -Conditions: opzione dizionario personalizzato, allegati di dimensioni superiori a 1 MB |
+| **Conflitto di interessi** | Monitorare le comunicazioni tra due gruppi o due utenti per evitare conflitti di interesse | -Locations: Exchange Online, Microsoft teams, Yammer, Skype for business <br> -Direction: Internal <br> -Percentuale di verifica: 100% <br> -Conditions: None |
 
-## <a name="permissions-preview"></a>Autorizzazioni (anteprima)
+## <a name="permissions"></a>Autorizzazioni
 
 >[!Important]
 >Per impostazione predefinita, gli amministratori globali non possono accedere alle funzionalità di conformità della comunicazione. I ruoli assegnati a questo passaggio sono necessari prima che vengano accessibili tutte le funzionalità di conformità della comunicazione.
 
-Sono disponibili cinque gruppi di ruoli che consentono di configurare le autorizzazioni per la gestione delle funzionalità di conformità della comunicazione. Per rendere la **conformità di comunicazione** disponibile come opzione di menu nel centro conformità di Microsoft 365 e continuare con questi passaggi di configurazione, è necessario essere assegnati ai gruppi di ruoli amministratore conformità comunicazione o *conformità comunicazione* . *Communication Compliance* Per accedere e gestire le funzionalità di conformità della comunicazione dopo la configurazione iniziale, è necessario che gli utenti siano membri di almeno un gruppo di ruolo conformità comunicazione.
+Sono disponibili cinque gruppi di ruoli che consentono di configurare le autorizzazioni per la gestione delle funzionalità di conformità della comunicazione. Per rendere la **conformità di comunicazione** disponibile come opzione di menu nel centro conformità di Microsoft 365 e continuare con questi passaggi di configurazione, è necessario essere assegnati ai gruppi di ruoli amministratore conformità comunicazione o *conformità comunicazione* .  Per accedere e gestire le funzionalità di conformità della comunicazione dopo la configurazione iniziale, è necessario che gli utenti siano membri di almeno un gruppo di ruolo conformità comunicazione.
 
 A seconda del modo in cui si desidera gestire i criteri di comunicazione e gli avvisi, è necessario assegnare gli utenti a specifici gruppi di ruoli. È possibile assegnare agli utenti le responsabilità di conformità diverse ai gruppi di ruoli specifici per gestire diverse aree di funzionalità di conformità della comunicazione. In alternativa, è possibile decidere di assegnare tutti gli account utente per gli amministratori, gli analisti, gli investigatori e i visualizzatori designati al gruppo di ruolo *conformità comunicazione* . Utilizzare un singolo gruppo di ruoli o più gruppi di ruoli per soddisfare al meglio i requisiti di gestione della conformità.
 
@@ -235,7 +236,7 @@ Se si immettono più condizioni, Microsoft 365 utilizza tutte le condizioni insi
 
 Se si desidera ridurre la quantità di contenuto da rivedere, è possibile specificare una percentuale di tutte le comunicazioni regolate da un criterio di conformità della comunicazione. Viene selezionato un campione casuale di contenuto in tempo reale rispetto alla percentuale totale di contenuto che corrisponde alle condizioni dei criteri scelte. Se si desidera che i revisori rivedano tutti gli elementi, è possibile configurare il **100%** in un criterio di conformità della comunicazione.
 
-## <a name="privacy-preview"></a>Privacy (anteprima)
+## <a name="privacy"></a>Privacy
 
 La protezione della privacy degli utenti che dispongono di corrispondenze di criteri è importante e può contribuire a promuovere l'oggettività nelle analisi dei dati e nelle recensioni degli avvisi per la conformità alla comunicazione. Questa impostazione si applica solo ai nomi utente visualizzati nella soluzione di conformità della comunicazione. Non influisce sulla modalità di visualizzazione dei nomi in altre soluzioni di conformità o nell'interfaccia di amministrazione.
 
@@ -291,7 +292,7 @@ I filtri di conformità di comunicazione consentono di filtrare e ordinare i mes
 | **Domini destinatario** | Il dominio in cui è stato inviato il messaggio. Questo dominio è in genere il dominio di sottoscrizione Microsoft 365 per impostazione predefinita. |
 | **Destinatario** | L'utente a cui è stato inviato il messaggio. |
 | **Mittente** | La persona che ha inviato il messaggio. |
-| **Dominio mittente** | Il dominio che ha inviato il messaggio. |
+| **Dominio del mittente** | Il dominio che ha inviato il messaggio. |
 | **Dimensioni** | Le dimensioni del messaggio in KB. |
 | **Subject/title** | L'oggetto del messaggio o il titolo della chat. |
 | **Tag** | Tag assegnati a un messaggio, che può essere *discutibile*, *conforme* o *non conforme*. |
@@ -333,7 +334,7 @@ Se si desidera modificare il livello di gravità assegnato in un criterio di avv
 
 7. Selezionare **Chiudi** per uscire dalla pagina dei dettagli del criterio di avviso.
 
-## <a name="power-automate-flows-preview"></a>Flussi automatizzati di alimentazione (anteprima)
+## <a name="power-automate-flows"></a>Flussi automatici di alimentazione
 
 [Microsoft Power automatizzate](https://docs.microsoft.com/power-automate/getting-started) è un servizio di flusso di lavoro che automatizza le azioni tra le applicazioni e i servizi. Utilizzando flussi provenienti da modelli o creati manualmente, è possibile automatizzare le attività comuni associate a queste applicazioni e servizi. Quando si abilitano i flussi automatici di alimentazione per la conformità della comunicazione, è possibile automatizzare le attività importanti per gli avvisi e gli utenti. È possibile configurare i flussi automatici di alimentazione per inviare notifiche ai responsabili quando gli utenti hanno avvisi di conformità della comunicazione e altre applicazioni.
 
@@ -357,7 +358,7 @@ Per creare un flusso di automatizzazione di potenza da un modello predefinito co
 
 Completare la procedura seguente per creare un flusso automatico di alimentazione automatizzato da un modello predefinito:
 
-1. Nel centro conformità di Microsoft 365, passare a criteri di **conformità della comunicazione**  >  **Policies** e selezionare il criterio con l'avviso che si desidera esaminare.
+1. Nel centro conformità di Microsoft 365, passare a criteri di **conformità della comunicazione**  >   e selezionare il criterio con l'avviso che si desidera esaminare.
 2. Dal criterio selezionare la scheda **in sospeso** e selezionare un avviso in sospeso.
 3. Selezionare **Power automatizza** dal menu azione avviso.
 4. Nella pagina **Power automatizzate** selezionare un modello predefinito nei **modelli di conformità di comunicazione che è possibile come** sezione della pagina.
@@ -374,7 +375,7 @@ Per impostazione predefinita, i flussi automatici di potenza creati da un utente
 Per condividere un flusso di automazione dell'alimentazione, è necessario essere membri di almeno un gruppo di ruoli di conformità della comunicazione.
 Completare la procedura seguente per condividere un flusso Power automatizzate:
 
-1. Nel centro conformità di Microsoft 365, passare a criteri di **conformità della comunicazione**  >  **Policies** e selezionare il criterio con l'avviso che si desidera esaminare.
+1. Nel centro conformità di Microsoft 365, passare a criteri di **conformità della comunicazione**  >   e selezionare il criterio con l'avviso che si desidera esaminare.
 2. Dal criterio selezionare la scheda **in sospeso** e selezionare un avviso in sospeso.
 3. Selezionare **Power automatizza** dal menu azione avviso.
 4. Sulla pagina **flussi automatici di alimentazione** selezionare la scheda **flussi personali** o **flussi di Team** .
@@ -388,11 +389,11 @@ Se è necessario modificare un flusso, è possibile utilizzare il controllo **Po
 
 Completare la procedura seguente per modificare un flusso Power automatizzate:
 
-1. Nel centro conformità di Microsoft 365, passare a criteri di **conformità della comunicazione**  >  **Policies** e selezionare il criterio con l'avviso che si desidera esaminare.
+1. Nel centro conformità di Microsoft 365, passare a criteri di **conformità della comunicazione**  >   e selezionare il criterio con l'avviso che si desidera esaminare.
 2. Dal criterio selezionare la scheda **in sospeso** e selezionare un avviso in sospeso.
 3. Selezionare **Power automatizza** dal menu azione avviso.
 4. Sulla pagina **flussi automatici di alimentazione** selezionare flusso da modificare. Scegliere **modifica** dal menu controllo flusso.
-5. Selezionare le impostazioni dei **puntini**  >  **Settings** di sospensione per modificare un'impostazione del componente di flusso o l'eliminazione con **puntini**  >  **Delete** per eliminare un componente di flusso
+5. Selezionare le impostazioni dei **puntini**  >   di sospensione per modificare un'impostazione del componente di flusso o l'eliminazione con **puntini**  >   per eliminare un componente di flusso
 6. Selezionare **Salva** e quindi **Chiudi** per completare la modifica del flusso.
 
 ### <a name="delete-a-power-automate-flow"></a>Eliminare un flusso Power automatizzate
@@ -401,7 +402,7 @@ Se è necessario eliminare un flusso, si utilizzerà il controllo **Power automa
 
 Completare la procedura seguente per eliminare un flusso Power automatizzate:
 
-1. Nel centro conformità di Microsoft 365, passare a criteri di **conformità della comunicazione**  >  **Policies** e selezionare il criterio con l'avviso che si desidera esaminare.
+1. Nel centro conformità di Microsoft 365, passare a criteri di **conformità della comunicazione**  >   e selezionare il criterio con l'avviso che si desidera esaminare.
 2. Dal criterio selezionare la scheda **in sospeso** e selezionare un avviso in sospeso.
 3. Selezionare **Power automatizza** dal menu azione avviso.
 4. Sulla pagina **flussi automatici di alimentazione** selezionare flusso da eliminare. Scegliere **Elimina** dal menu controllo flusso.

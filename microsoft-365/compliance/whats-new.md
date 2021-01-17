@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: L'aggiunta di nuove nuove soluzioni al centro conformità, l'aggiornamento delle funzionalità esistenti in base ai commenti o la documentazione aggiornata e rinnovata, Microsoft 365 consente di rimanere al di sopra del panorama di conformità in continua evoluzione. Scoprire cosa è stato fino a questo mese.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 3688ee7390b7cadf701e8dbefd8b12c82cf6d89c
-ms.sourcegitcommit: 98b889e674ad1d5fa37d4b6c5fc3eda60a1d67f3
+ms.openlocfilehash: 8723171820bb1c089d34b81f5adb6663ecc9b8af
+ms.sourcegitcommit: 27cb4591e08f62ba0a08d6dcf224bf2039034fe5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "49751593"
+ms.lasthandoff: 01/17/2021
+ms.locfileid: "49883715"
 ---
 # <a name="whats-new-in-microsoft-365-compliance"></a>Novità sulla conformità Microsoft 365
 
@@ -100,7 +100,7 @@ Guarda il video seguente per informazioni su come Compliance Manager può aiutar
 
 - [Gruppi di ruoli aggiornati](communication-compliance-configure.md#step-1-required-enable-permissions-for-communication-compliance). I gruppi di ruoli Compliance Communication ora corrispondono alla struttura del gruppo di ruoli disponibile per la soluzione di gestione dei rischi Insider.
 - [Dashboard report](communication-compliance-feature-reference.md#reports-preview). La posizione centrale per la visualizzazione di tutti i report di conformità della comunicazione. I widget dei report offrono una rapida visualizzazione delle informazioni più comuni necessarie per una valutazione complessiva dello stato delle attività di conformità alla comunicazione.
-- [Flussi automatici di alimentazione automatizzati](communication-compliance-feature-reference.md#power-automate-flows-preview). Impostare i flussi per automatizzare le attività per gli avvisi e gli utenti, informare i responsabili quando gli utenti attivano gli avvisi e altro ancora.
+- [Flussi automatici di alimentazione automatizzati](communication-compliance-feature-reference.md#power-automate-flows). Impostare i flussi per automatizzare le attività per gli avvisi e gli utenti, informare i responsabili quando gli utenti attivano gli avvisi e altro ancora.
 - [Azione di correzione ' migliorare la classificazione '](communication-compliance-investigate-remediate.md#step-3-decide-on-a-remediation-action). Gli avvisi contenenti elementi che soddisfano i classificatori addestrati potrebbero trarre vantaggio da commenti e suggerimenti utili per ridurre al minimo i falsi positivi nell'organizzazione. L'opzione **migliora classificazione** consente di fornire commenti e suggerimenti se gli elementi rilevati corrispondono al classificatore configurato nei criteri di conformità della comunicazione correlati. È anche possibile suggerire ad altri classificatori di associarsi all'elemento per migliorare l'accuratezza della corrispondenza per gli avvisi futuri.
 
 ### <a name="data-connectors"></a>Connettori dati
@@ -170,7 +170,7 @@ Numerose funzionalità nuove e migliorate hanno colpito l'anteprima pubblica di 
 
 - Quando si [esaminano i messaggi in un avviso](communication-compliance-investigate-remediate.md#step-3-decide-on-a-remediation-action), è ora possibile rimuovere i messaggi inadeguati nei canali Microsoft teams, 1:1 e Group Chat. I messaggi e il contenuto rimossi vengono sostituiti con un suggerimento per i criteri che spiega che è stato rimosso a causa di contenuti sensibili.
 - Nuovi [ruoli di comunicazione](communication-compliance-configure.md#step-1-required-enable-permissions-for-communication-compliance) (saranno inclusi anche nei nuovi gruppi di ruoli di conformità di comunicazione che rilasciano a settembre).
-- Nuova esperienza delle impostazioni di conformità di comunicazione che include le impostazioni per la [privacy](communication-compliance-feature-reference.md#privacy-preview) e i [modelli di avviso](communication-compliance-feature-reference.md#notice-templates).
+- Nuova esperienza delle impostazioni di conformità di comunicazione che include le impostazioni per la [privacy](communication-compliance-feature-reference.md#privacy) e i [modelli di avviso](communication-compliance-feature-reference.md#notice-templates).
 - Nuovi [classificatori](communication-compliance-feature-reference.md#classifiers) che consentono di rilevare immagini adulte, audace e cruente.
 - La nuova notifica ' pattern detected ' che viene visualizzata quando si [esaminano i messaggi in un avviso](communication-compliance-investigate-remediate.md#step-2-examine-the-message-details) consente di conoscere le istanze ricorrenti dello stesso comportamento da parte di un utente.
 
