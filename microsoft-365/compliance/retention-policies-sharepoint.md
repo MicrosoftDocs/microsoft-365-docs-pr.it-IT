@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Informazioni sul funzionamento della conservazione per SharePoint e OneDrive.
-ms.openlocfilehash: 995f657778d3326a4d58d46f760539639f1fe7fe
-ms.sourcegitcommit: 3bf4f1c0d3a8515cca651b2a520217195f89457f
+ms.openlocfilehash: 0ce3a95754bcffd118d78b7919eb6773d3f14b54
+ms.sourcegitcommit: 9e4b3df05eff94fe1be4ef8618a7ce6f2fca3658
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "49777069"
+ms.lasthandoff: 01/19/2021
+ms.locfileid: "49903991"
 ---
 # <a name="learn-about-retention-for-sharepoint-and-onedrive"></a>Informazioni sulla conservazione per SharePoint e OneDrive
 
@@ -59,7 +59,7 @@ Per i criteri di conservazione e i criteri di etichetta applicati automaticament
 
 Per supportare la conservazione, SharePoint e OneDrive creano una raccolta di archiviazione se una non è già esistente. È possibile visualizzare questa raccolta nella pagina **Contenuto del sito** nel sito principale della raccolta siti. La maggior parte degli utenti non può visualizzare la raccolta di archiviazione poiché è visibile soltanto agli amministratori della raccolta siti.
   
-Se si tenta di modificare o eliminare un documento soggetto a impostazioni di conservazione, viene eseguita una verifica del contenuto per stabilire se è stato modificato dopo l'applicazione delle impostazioni di conservazione. Nel caso della prima modifica dell’applicazione delle impostazioni di conservazione, il contenuto viene copiato nella raccolta di archiviazione che permette all'utente di modificare o eliminare i contenuti originali. Il contenuto di una raccolta siti può essere copiato nella raccolta di archiviazione, indipendentemente dalle impostazioni di conservazione.
+Se si tenta di modificare o eliminare un documento soggetto alla conservazione di contenuti, viene eseguita una verifica del contenuto per stabilire se è stato modificato dopo l'applicazione delle impostazioni di conservazione. Nel caso della prima modifica dell’applicazione delle impostazioni di conservazione, il contenuto viene copiato nella raccolta di archiviazione che permette all'utente di modificare o eliminare i contenuti originali. Il contenuto di una raccolta siti può essere copiato nella raccolta di archiviazione, indipendentemente dalle impostazioni di conservazione.
   
 Un processo timer pulisce periodicamente la raccolta di archiviazione. Questo processo confronta tutti i contenuti della raccolta di archiviazione con tutte le query usate dalle impostazioni di conservazione per tali contenuti. Il contenuto precedente al periodo di conservazione configurato viene eliminato dalla raccolta di archiviazione e dalla posizione originale, se è ancora lì. Questo processo timer viene eseguito ogni 7 giorni, quindi può essere necessario attendere fino a 7 giorni prima che il contenuto venga eliminato.
   
@@ -73,7 +73,7 @@ Se l'impostazione di conservazione è Conserva ed elimina:
 
 ![Diagramma del ciclo di vita dei contenuti in SharePoint e OneDrive](../media/Retention_Diagram_of_retention_flow_in_sites.png)
   
-1. **Se il contenuto viene modificato o eliminato** durante il periodo di conservazione, una copia del contenuto originale al momento dell'assegnazione dei criteri di conservazione viene creata nella raccolta di archiviazione. Nella raccolta, un processo timer identifica gli elementi il cui periodo di conservazione è scaduto. Questi elementi vengono poi spostati nel cestino di secondo livello, dove vengono eliminati definitivamente dopo 93 giorni. Il Cestino di secondo livello non è visibile agli utenti finali come il Cestino di primo livello, tuttavia gli amministratori della raccolta siti possono visualizzare e ripristinare il contenuto da tale posizione.
+1. **Se il contenuto viene modificato o eliminato** durante il periodo di conservazione, viene creata una copia del contenuto originale uguale a quello esistente durante l’assegnazione delle impostazioni di conservazione della raccolta di archiviazione. Nella raccolta, un processo timer identifica gli elementi il cui periodo di conservazione è scaduto. Questi elementi vengono poi spostati nel cestino di secondo livello, dove vengono eliminati definitivamente dopo 93 giorni. Il Cestino di secondo livello non è visibile agli utenti finali come il Cestino di primo livello, tuttavia gli amministratori della raccolta siti possono visualizzare e ripristinare il contenuto da tale posizione.
 
     > [!NOTE]
     > Per evitare perdite accidentali di dati, non eliminiamo più definitivamente il contenuto dalla raccolta di archiviazione. Eliminiamo invece definitivamente il contenuto solo dal Cestino in modo che tutto il contenuto della raccolta di archiviazione passi al Cestino di secondo livello.
