@@ -16,12 +16,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Gli amministratori possono ottenere informazioni sui criteri di anti-phishing disponibili in Exchange Online Protection (EOP) e Microsoft Defender per Office 365.
-ms.openlocfilehash: dadb41e1f0ff9e18681b13ad3d265f3f436c2052
-ms.sourcegitcommit: f40378013757d560d5566a11ad4e6f527c018cc4
+ms.openlocfilehash: f1ffebbca2d3a77d1a0c10d14205e52108614043
+ms.sourcegitcommit: 99a7354e6a6b4d9d5202674ef57852d52a43fef6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49796195"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "49908354"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Criteri di anti-phishing in Microsoft 365
 
@@ -160,7 +160,7 @@ Le seguenti impostazioni di rappresentazione sono disponibili solo nei criteri d
 
   > [!NOTE]
   >
-  > - In ogni criterio anti-phishing, è possibile specificare un massimo di 60 utenti protetti (indirizzi di posta elettronica del mittente). Non è possibile specificare lo stesso utente protetto in più criteri.
+  > - In ogni criterio anti-phishing, è possibile specificare un massimo di 60 utenti protetti (indirizzi di posta elettronica del mittente). Non è possibile specificare lo stesso utente protetto in più criteri. Pertanto, indipendentemente dal numero di criteri da applicare a un destinatario, la quantità massima di utenti protetti (indirizzi di posta elettronica del mittente) per ogni singolo destinatario è 60. Per ulteriori informazioni sulla priorità dei criteri e sul modo in cui l'elaborazione dei criteri si interrompe dopo l'applicazione del primo criterio, vedere [ordine e precedenza della protezione della posta elettronica](how-policies-and-protections-are-combined.md).
   >
   > - La protezione della rappresentazione utente non funziona se il mittente e il destinatario hanno precedentemente comunicato tramite posta elettronica. Se il mittente e il destinatario non hanno mai comunicato tramite posta elettronica, il messaggio verrà identificato come tentativo di rappresentazione.
 

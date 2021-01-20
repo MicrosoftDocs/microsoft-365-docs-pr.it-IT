@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Informazioni su come gli utenti lavorano con etichette di riservatezza nelle app di Office per desktop, dispositivi mobili e Web e quali app supportano le etichette di riservatezza.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ebf4626a6106a9bebc62c8bca1be825c645d60fd
-ms.sourcegitcommit: 3bf4f1c0d3a8515cca651b2a520217195f89457f
+ms.openlocfilehash: 17ded34d5e386c4de3c2241d0465b63381a11906
+ms.sourcegitcommit: 64262f6f42dcce6a4608b2e3c7ca6190b7009093
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "49777079"
+ms.lasthandoff: 01/19/2021
+ms.locfileid: "49905275"
 ---
 # <a name="use-sensitivity-labels-in-office-apps"></a>Usare le etichette di riservatezza nelle app di Office
 
@@ -66,7 +66,7 @@ I numeri elencati sono la versione minima dell'applicazione di Office necessaria
 |[Consentire agli utenti di assegnare le autorizzazioni](encryption-sensitivity-labels.md#let-users-assign-permissions)                     |2004 + | 16.35 +   | In Revisione   | In Revisione         | In Revisione                                                        |
 |[Visualizzazione dell'utilizzo delle etichette con label Analytics](label-analytics.md) e invio dei dati per gli amministratori                      | Anteprima: [canale corrente (anteprima)](https://office.com/insider)            | Anteprima: [canale corrente (anteprima)](https://office.com/insider)        | In Revisione   | In Revisione         | Sì <sup>\*</sup>                                                        |
 |[Richiedere agli utenti di applicare un'etichetta ai propri messaggi di posta elettronica e documenti](sensitivity-labels.md#what-label-policies-can-do)   | Anteprima: implementazione del [canale corrente (anteprima)](https://office.com/insider)             | Anteprima: implementazione del [canale corrente (anteprima)](https://office.com/insider)         | In Revisione   | Anteprima: [canale Beta](https://office.com/insider)         | In Revisione                                            
-|[Applicare automaticamente un'etichetta di riservatezza al contenuto](apply-sensitivity-label-automatically.md)                    | 2009 +                                  | Anteprima di Word e PowerPoint: implementazione del [canale corrente (anteprima)](https://office.com/insider) | In Revisione | In Revisione | [Sì-opt-in](sensitivity-labels-sharepoint-onedrive-files.md) |
+|[Applicare automaticamente un'etichetta di riservatezza al contenuto](apply-sensitivity-label-automatically.md)                    | 2009 +                                  | Implementazione: 16.44 + | In Revisione | In Revisione | [Sì-opt-in](sensitivity-labels-sharepoint-onedrive-files.md) |
 |Supporta il [salvataggio automatico](https://support.office.com/article/6d6bd723-ebfd-4e40-b5f6-ae6e8088f7a5) e la [CoAuthoring](https://support.office.com/article/ee1509b4-1f6e-401e-b04a-782d26f564a4) sui documenti etichettati e crittografati | In Revisione | In Revisione | In Revisione | In Revisione | [Sì-opt-in](sensitivity-labels-sharepoint-onedrive-files.md) |
 |
 
@@ -90,7 +90,7 @@ I numeri elencati sono la versione minima dell'applicazione di Office necessaria
 |[Consentire agli utenti di assegnare le autorizzazioni](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | 1910+                     | 16.21 +                 | 4.7.1 +         | 4.0.39 +           | Sì               |
 |[Richiedere agli utenti di applicare un'etichetta ai propri messaggi di posta elettronica e documenti](#require-users-to-apply-a-label-to-their-email-and-documents)   | Anteprima: [canale corrente (anteprima)](https://office.com/insider))                        | 16.43 +                     | 4.57.0 +            | 4.2037.4 +                | Sì                |
 |[Visualizzazione dell'utilizzo delle etichette con label Analytics](label-analytics.md) e invio dei dati per gli amministratori                      | Anteprima: [canale corrente (anteprima)](https://office.com/insider)                       | Anteprima: [canale corrente (anteprima)](https://office.com/insider)                    | In Revisione           | In Revisione               | Sì               |
-|[Applicare automaticamente un'etichetta di riservatezza al contenuto](apply-sensitivity-label-automatically.md)                    | 2009 +                      | In Revisione                    | In Revisione           | In Revisione               | Sì |
+|[Applicare automaticamente un'etichetta di riservatezza al contenuto](apply-sensitivity-label-automatically.md)                    | 2009 +                      | 16.44 +                    | In Revisione           | In Revisione               | Sì |
 |
 
 
@@ -163,8 +163,8 @@ Per un'esperienza di etichetta più coerente con relazioni significative, fornir
     - **Riservata \ tutti i dipendenti**
     - **Riservata \ chiunque (nessuna crittografia)**
 
-  > [!NOTE]
-  > Se gli utenti rimuovono manualmente la crittografia da un documento etichettato archiviato in SharePoint o OneDrive e sono state [abilitate le etichette di riservatezza per i file di Office in SharePoint e OneDrive](sensitivity-labels-sharepoint-onedrive-files.md), la crittografia dell'etichetta verrà ripristinata automaticamente al successivo accesso o download del documento. 
+> [!NOTE]
+> Se gli utenti rimuovono manualmente la crittografia da un documento etichettato archiviato in SharePoint o OneDrive e sono state [abilitate le etichette di riservatezza per i file di Office in SharePoint e OneDrive](sensitivity-labels-sharepoint-onedrive-files.md), la crittografia dell'etichetta verrà ripristinata automaticamente al successivo accesso o download del documento. 
 
 
 ## <a name="apply-sensitivity-labels-to-files-emails-and-attachments"></a>Applicare etichette di riservatezza a file, messaggi di posta elettronica e allegati
@@ -207,7 +207,15 @@ Questo significa che se si condividono documenti con un'altra organizzazione che
 
 Oltre a limitare l'accesso agli utenti nella propria organizzazione, è possibile estendere l'accesso a qualsiasi altro utente che dispone di un account in Azure Active Directory. Tutte le app di Office e altre [applicazioni con RMS](https://docs.microsoft.com/azure/information-protection/requirements-applications#rms-enlightened-applications) sono in grado di aprire i documenti crittografati dopo che l'utente ha eseguito l'autenticazione.
 
-Se gli utenti esterni non dispongono di un account in Azure Active Directory, è possibile creare un account Guest per il proprio tenant. Per l'indirizzo di posta elettronica, è possibile specificare qualsiasi indirizzo di posta elettronica che già utilizza. Ad esempio, l'indirizzo Gmail. Questo account Guest può anche essere utilizzato per accedere a un documento condiviso in SharePoint o OneDrive quando sono state [abilitate le etichette di riservatezza per i file di Office in SharePoint e OneDrive](sensitivity-labels-sharepoint-onedrive-files.md).
+Se gli utenti esterni non dispongono di un account in Azure Active Directory, è possibile eseguire l'autenticazione utilizzando gli account Guest nel tenant. Questi account Guest possono anche essere utilizzati per accedere ai documenti condivisi in SharePoint o OneDrive quando sono state [abilitate le etichette di riservatezza per i file di Office in SharePoint e OneDrive](sensitivity-labels-sharepoint-onedrive-files.md):
+
+- Un'opzione consiste nel creare personalmente gli account Guest. È possibile specificare qualsiasi indirizzo di posta elettronica già utilizzato da tali utenti. Ad esempio, l'indirizzo Gmail.
+    
+    Il vantaggio di questa opzione è che è possibile limitare l'accesso e i diritti a utenti specifici specificando il proprio indirizzo di posta elettronica nelle impostazioni di crittografia. Il rovescio della medaglia è il sovraccarico di amministrazione per la creazione e la coordinazione dell'account con la configurazione dell'etichetta.
+
+- Un'altra opzione consiste nell'utilizzare l' [integrazione di SharePoint e OneDrive con Azure ad B2B (Preview)](https://docs.microsoft.com/sharepoint/sharepoint-azureb2b-integration-preview) , in modo che gli account Guest vengano creati automaticamente quando gli utenti condividono i collegamenti.
+    
+    Il vantaggio di questa opzione è il sovraccarico amministrativo minimo perché gli account vengono creati automaticamente e la configurazione dell'etichetta più semplice. Per questo scenario, è necessario selezionare l'opzione di crittografia [aggiungere qualsiasi utente autenticato](encryption-sensitivity-labels.md#requirements-and-limitations-for-add-any-authenticated-users) , perché non si conoscono gli indirizzi di posta elettronica in anticipo. Il rovescio della medaglia è che questa impostazione non consente di limitare l'accesso e i diritti di utilizzo per utenti specifici.
 
 Gli utenti esterni possono anche utilizzare un account Microsoft per i documenti crittografati quando utilizzano le app Microsoft 365 (in[precedenza Office 365 Apps](https://docs.microsoft.com/deployoffice/name-change)) su Windows e sono state di recente supportate su MacOS (versione 16.42 +), Android (versione 16.0.13029 +) e iOS (versione 2.42 +). Ad esempio, qualcuno condivide un documento crittografato con loro e le impostazioni di crittografia specificano l'indirizzo di posta elettronica di Gmail. Questo utente può creare un proprio account Microsoft che usa il proprio indirizzo di posta elettronica di Gmail. Successivamente, dopo aver eseguito l'accesso con questo account, è possibile aprire il documento e modificarlo in base alle restrizioni di utilizzo specificate per tale utente. Per un esempio di procedura dettagliata di questo scenario, vedere [Opening and editing the protected Document](https://docs.microsoft.com/azure/information-protection/secure-collaboration-documents#opening-and-editing-the-protected-document).
 
@@ -216,10 +224,10 @@ Gli utenti esterni possono anche utilizzare un account Microsoft per i documenti
 
 Quando un utente con un account Microsoft apre un documento crittografato in questo modo, crea automaticamente un account Guest per il tenant se non esiste già un account Guest con lo stesso nome. Quando l'account Guest esiste, può essere utilizzato per aprire i documenti in SharePoint e OneDrive utilizzando un browser (Office sul Web), oltre ad aprire i documenti crittografati dall'app desktop di Windows. 
 
-Tuttavia, l'account Guest automatico non viene creato immediatamente a causa della latenza di replica. Se si specificano gli indirizzi di posta elettronica personali come parte delle impostazioni di crittografia dell'etichetta, è consigliabile creare gli account Guest corrispondenti in Azure Active Directory. Fare in modo che gli utenti sappiano che devono utilizzare questo account per aprire un documento crittografato dall'organizzazione.
+Tuttavia, l'account Guest automatico non viene creato immediatamente in questo scenario, a causa della latenza di replica. Se si specificano gli indirizzi di posta elettronica personali come parte delle impostazioni di crittografia dell'etichetta, è consigliabile creare gli account Guest corrispondenti in Azure Active Directory. Fare in modo che gli utenti sappiano che devono utilizzare questo account per aprire un documento crittografato dall'organizzazione.
 
 > [!TIP]
-> Poiché non è possibile essere certi che gli utenti esterni utilizzeranno un'app client di Office supportata, la condivisione dei collegamenti da SharePoint e OneDrive dopo la creazione degli account Guest è un metodo più affidabile per supportare la collaborazione sicura con gli utenti esterni.
+> Poiché non è possibile essere certi che gli utenti esterni utilizzeranno un'app client di Office supportata, la condivisione dei collegamenti da SharePoint e OneDrive dopo aver creato gli account Guest (per utenti specifici) o quando si utilizza l' [integrazione di SharePoint e OneDrive con Azure ad B2B](https://docs.microsoft.com/sharepoint/sharepoint-azureb2b-integration-preview) (per qualsiasi utente autenticato) è un metodo più affidabile per supportare la collaborazione sicura con gli utenti esterni.
 
 ## <a name="when-office-apps-apply-content-marking-and-encryption"></a>Quando le app di Office applicano il contrassegno e la crittografia del contenuto
 
@@ -269,29 +277,6 @@ Quando si configura un'etichetta di riservatezza per i contrassegni di contenuto
 > [!NOTE]
 > La sintassi di tali variabili è distinzione tra maiuscole e minuscole.
 
-## <a name="require-users-to-apply-a-label-to-their-email-and-documents"></a>Richiedere agli utenti di applicare un'etichetta ai propri messaggi di posta elettronica e documenti
-
-> [!IMPORTANT]
-> Nota anche come etichetta obbligatoria, non tutte le app in tutte le piattaforme supportano attualmente l'impostazione dei criteri **per richiedere agli utenti di applicare un'etichetta ai propri messaggi di posta elettronica e documenti**.
-> 
-> Il [client Azure Information Protection Unified Labeling](https://docs.microsoft.com/azure/information-protection/rms-client/install-unifiedlabelingclient-app) supporta l'etichettatura obbligatoria e per l'etichettatura integrata nelle app di Office, vedere le tabelle nella sezione [capabilities](#support-for-sensitivity-label-capabilities-in-apps) in questa pagina.
-
-Quando questa impostazione di criterio è selezionata, gli utenti assegnati al criterio devono selezionare e applicare un'etichetta di riservatezza negli scenari seguenti:
-
-- Per il client di etichettatura unificata di Azure Information Protection:
-    - Per i documenti (Word, Excel, PowerPoint): quando viene salvato un documento privo di etichetta o la chiusura del documento da parte degli utenti.
-    - Per i messaggi di posta elettronica (Outlook): al momento in cui gli utenti inviano un messaggio senza etichetta.
-
-- Per l'etichettatura integrata nelle app di Office:
-    - Per i documenti ((Word, Excel, PowerPoint): quando si apre o si salva un documento privo di etichetta.
-    - Per i messaggi di posta elettronica (Outlook): al momento in cui gli utenti inviano un messaggio e-mail senza etichetta.
-
-Ulteriori informazioni per l'etichettatura incorporata:
-
-- Quando agli utenti viene richiesto di aggiungere un'etichetta di riservatezza perché aprono un documento privo di etichetta, è possibile aggiungere un'etichetta oppure scegliere di aprire il documento in modalità di sola lettura.
-
-- Quando l'etichettatura obbligatoria è attiva, gli utenti non possono rimuovere le etichette di riservatezza dai documenti, ma possono modificare un'etichetta esistente.
-
 #### <a name="setting-different-visual-markings-for-word-excel-powerpoint-and-outlook"></a>Impostazione di segni visivi diversi per Word, Excel, PowerPoint e Outlook
 
 Come variabile aggiuntiva, è possibile configurare i contrassegni visivi per tipo di applicazione di Office utilizzando un'istruzione variabile "If. app" nella stringa di testo e identificare il tipo di applicazione utilizzando i valori **Word**, **Excel**, **PowerPoint** o **Outlook**. È inoltre possibile abbreviare questi valori, che è necessario se si desidera specificare più di uno nello stesso istruzione if. app.
@@ -327,6 +312,28 @@ Esempi:
 
     In Word e PowerPoint, l'etichetta applica il testo della filigrana "questo contenuto è riservato". In Excel, l'etichetta applica il testo della filigrana "confidenziale". In Outlook l'etichetta non applica alcun testo della filigrana perché le filigrane come segni visivi non sono supportate per Outlook.
 
+## <a name="require-users-to-apply-a-label-to-their-email-and-documents"></a>Richiedere agli utenti di applicare un'etichetta ai propri messaggi di posta elettronica e documenti
+
+> [!IMPORTANT]
+> Nota anche come etichetta obbligatoria, non tutte le app in tutte le piattaforme supportano attualmente l'impostazione dei criteri **per richiedere agli utenti di applicare un'etichetta ai propri messaggi di posta elettronica e documenti**.
+> 
+> Il [client Azure Information Protection Unified Labeling](https://docs.microsoft.com/azure/information-protection/rms-client/install-unifiedlabelingclient-app) supporta l'etichettatura obbligatoria e per l'etichettatura integrata nelle app di Office, vedere le tabelle nella sezione [capabilities](#support-for-sensitivity-label-capabilities-in-apps) in questa pagina.
+
+Quando questa impostazione di criterio è selezionata, gli utenti assegnati al criterio devono selezionare e applicare un'etichetta di riservatezza negli scenari seguenti:
+
+- Per il client di etichettatura unificata di Azure Information Protection:
+    - Per i documenti (Word, Excel, PowerPoint): quando viene salvato un documento privo di etichetta o la chiusura del documento da parte degli utenti.
+    - Per i messaggi di posta elettronica (Outlook): al momento in cui gli utenti inviano un messaggio senza etichetta.
+
+- Per l'etichettatura integrata nelle app di Office:
+    - Per i documenti ((Word, Excel, PowerPoint): quando si apre o si salva un documento privo di etichetta.
+    - Per i messaggi di posta elettronica (Outlook): al momento in cui gli utenti inviano un messaggio e-mail senza etichetta.
+
+Ulteriori informazioni per l'etichettatura incorporata:
+
+- Quando agli utenti viene richiesto di aggiungere un'etichetta di riservatezza perché aprono un documento privo di etichetta, è possibile aggiungere un'etichetta oppure scegliere di aprire il documento in modalità di sola lettura.
+
+- Quando l'etichettatura obbligatoria è attiva, gli utenti non possono rimuovere le etichette di riservatezza dai documenti, ma possono modificare un'etichetta esistente.
 
 ## <a name="end-user-documentation"></a>Documentazione per gli utenti finali
 

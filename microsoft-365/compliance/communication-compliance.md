@@ -20,12 +20,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 89904e6d1439b17f0c9725aa59d6884e832a10d9
-ms.sourcegitcommit: 27cb4591e08f62ba0a08d6dcf224bf2039034fe5
+ms.openlocfilehash: a4d1fc1f136322c85c8c46563c448451501ac462
+ms.sourcegitcommit: 9e4b3df05eff94fe1be4ef8618a7ce6f2fca3658
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/17/2021
-ms.locfileid: "49883655"
+ms.lasthandoff: 01/19/2021
+ms.locfileid: "49904021"
 ---
 # <a name="learn-about-communication-compliance-in-microsoft-365"></a>Informazioni sulla conformità della comunicazione in Microsoft 365
 
@@ -51,7 +51,7 @@ I criteri di conformità della comunicazione possono fornire assistenza per la r
 
 - **Gestione dei rischi**
 
-    Le organizzazioni sono responsabili di tutte le comunicazioni distribuite nell'infrastruttura e nei sistemi di rete aziendale. L'utilizzo di criteri di conformità della comunicazione per identificare e gestire potenziali esposizione e rischi legali può contribuire a ridurre al minimo i rischi prima che possano danneggiare le operazioni aziendali. Ad esempio, è possibile analizzare i messaggi nell'organizzazione per comunicazioni non autorizzate e conlficts di interesse per i progetti riservati, quali acquisizioni imminenti, fusioni, divulgazioni di guadagni, riorganizzazioni o modifiche del team di leadership.
+    Le organizzazioni sono responsabili di tutte le comunicazioni distribuite nell'infrastruttura e nei sistemi di rete aziendale. L'utilizzo di criteri di conformità della comunicazione per identificare e gestire potenziali esposizione e rischi legali può contribuire a ridurre al minimo i rischi prima che possano danneggiare le operazioni aziendali. Ad esempio, è possibile analizzare i messaggi nell'organizzazione per le comunicazioni non autorizzate e i conflitti di interesse per i progetti riservati, quali acquisizioni imminenti, fusioni, divulgazioni di guadagni, riorganizzazioni o modifiche del team di leadership.
 
 - **Conformità alle normative**
 

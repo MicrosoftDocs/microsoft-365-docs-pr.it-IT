@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Gli amministratori possono abilitare il supporto delle etichette di riservatezza per i file Word, Excel e PowerPoint in SharePoint e OneDrive.
-ms.openlocfilehash: f930c31eef35282a5be6487e981d65275add4d5b
-ms.sourcegitcommit: 6fc6aaa2b7610e148f41018abd229e3c55b2f3d0
+ms.openlocfilehash: 376e0ed2eb6d7fd719cbafcd5bfbf66aaffd93cb
+ms.sourcegitcommit: 9e4b3df05eff94fe1be4ef8618a7ce6f2fca3658
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49620599"
+ms.lasthandoff: 01/19/2021
+ms.locfileid: "49904011"
 ---
 # <a name="enable-sensitivity-labels-for-office-files-in-sharepoint-and-onedrive"></a>Abilitare le etichette di riservatezza per i file di Office in SharePoint e OneDrive
 
@@ -256,3 +256,5 @@ Se si dispone di Microsoft 365 multi-Geo, è necessario eseguire questo comando 
 ## <a name="next-steps"></a>Passaggi successivi
 
 Dopo aver abilitato le etichette di riservatezza per i file di Office in SharePoint e OneDrive, considerare l'etichettatura automatica dei file utilizzando i criteri di etichettatura automatica. Per ulteriori informazioni, vedere [applicare automaticamente un'etichetta di riservatezza al contenuto](apply-sensitivity-label-automatically.md).
+
+È necessario condividere i documenti etichettati e crittografati con persone esterne all'organizzazione?  Vedere [condivisione di documenti crittografati con utenti esterni](sensitivity-labels-office-apps.md#sharing-encrypted-documents-with-external-users).

@@ -11,12 +11,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 description: Gli amministratori possono imparare a creare payload personalizzati per la formazione di simulazione di attacco in Microsoft Defender per Office 365.
-ms.openlocfilehash: 45311ad4c4eb09c8238d278475248680fbc66287
-ms.sourcegitcommit: 8849dd6f80217c29f427c7f008d918f30c792240
+ms.openlocfilehash: 86a962dc3117708ac71195b9efc336fa30c573dd
+ms.sourcegitcommit: 99a7354e6a6b4d9d5202674ef57852d52a43fef6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49877129"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "49908342"
 ---
 # <a name="create-a-custom-payload-for-attack-simulation-training"></a>Creare un payload personalizzato per la formazione del Simulatore di attacchi
 
@@ -58,14 +58,14 @@ Aggiungere una descrizione personalizzata per descrivere l'indicatore e fare cli
 
 ## <a name="review-payload"></a>Verifica payload
 
-La creazione del payload è stata completata. Ora è il momento di esaminare i dettagli e visualizzare un'anteprima del payload. L'anteprima includerà tutti gli indicatori che sono stati creati. È possibile modificare ogni parte del payload da questo passaggio. Una volta soddisfatti, **inviare** il payload.
+La creazione del payload è stata completata. Ora è il momento di esaminare i dettagli e visualizzare un'anteprima del payload. L'anteprima includerà tutti gli indicatori che sono stati creati. È possibile modificare ogni parte del payload da questo passaggio. Una volta soddisfatti, è possibile **inviare** il payload.
 
 > [!IMPORTANT]
 > I payload creati avranno **tenant** come origine. Quando si seleziona payload, assicurarsi di non escludere il **tenant**.
 
 ## <a name="related-links"></a>Collegamenti correlati
 
-[Iniziare a usare la formazione di simulazione di attacco](attack-simulation-training-get-started.md)
+[Introduzione alla formazione sull’uso di Simulatore di attacchi](attack-simulation-training-get-started.md)
 
 [Creare una simulazione di attacco di phishing](attack-simulation-training.md)
 
