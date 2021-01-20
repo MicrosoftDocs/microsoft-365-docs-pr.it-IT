@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 description: Con la gestione dei record di Microsoft 365, è possibile applicare le pianificazioni di conservazione in un piano di archiviazione che gestisce la conservazione, la dichiarazione dei record e l’eliminazione.
-ms.openlocfilehash: 0057be98c79ec07018d86f3130d7e03d68c74446
-ms.sourcegitcommit: 7d4aa58ae9fc893825b6e648fa3f072c3ac59628
+ms.openlocfilehash: 1f6ab392abbf55851e1f084507d3f1658c3cf264
+ms.sourcegitcommit: 64262f6f42dcce6a4608b2e3c7ca6190b7009093
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/09/2021
-ms.locfileid: "49790202"
+ms.lasthandoff: 01/19/2021
+ms.locfileid: "49905235"
 ---
 # <a name="learn-about-records-management-in-microsoft-365"></a>Informazioni sulla gestione dei record in Microsoft 365
 
@@ -85,7 +85,7 @@ Un'etichetta di conservazione standard include le impostazioni di conservazione 
 |Elimina|Consentito <sup>1</sup> |**Bloccato** |**Bloccato**| **Bloccato**|
 |Copia|Consentito |Consentito | Consentito| Consentito|
 |Sposta all'interno del container <sup>2</sup>|Consentito |Consentito | Consentito| Consentito|
-|Sposta tra container <sup>2</sup>|Consentito |Consentito se mai sbloccato | Consentito| **Bloccato**|
+|Sposta tra container <sup>2</sup>|Consentito |Consentito se mai sbloccato | **Bloccato** | **Bloccato**|
 |Apri/leggi|Consentito |Consentito | Consentito| Consentito|
 |Cambia etichetta|Consentito |Consentito: solo amministratori container | Consentito: solo amministratori container| **Bloccato**
 |Rimuovi etichetta|Consentito |Consentito: solo amministratori container | Consentito: solo amministratori container| **Bloccato**
