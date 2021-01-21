@@ -93,6 +93,22 @@
           href: information-protection-deploy-monitor-respond.md
 - name: Scenari e soluzioni di carichi di lavoro
   items:
+    - name: Panoramica
+      href: workload-solutions-scenarios-overview.md
+    - name: Gestione dei tenant
+      items:
+        - name: Panoramica
+          href: tenant-management-overview.md
+        - name: Passaggio 1. Tenant
+          href: tenant-management-tenants.md
+        - name: Passaggio 2. Rete ottimale
+          href: tenant-management-networking.md
+        - name: Passaggio 3. Identità
+          href: tenant-management-identity.md
+        - name: Passaggio 4. Migrazione
+          href: tenant-management-migration.md
+        - name: Passaggio 5. Gestione di dispositivi e app
+          href: tenant-management-device-management.md
     - name: Lavoro in team e collaborazione
       items:
         - name: Poster sull'architettura di Teams
