@@ -16,44 +16,45 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Informazioni su come spostare gli utenti in un abbonamento diverso.
-ms.openlocfilehash: 7da8db17e0cb29f50cd2320293d8b0f1c7f22d5a
-ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
+ms.openlocfilehash: b3b82dcf029395dbbe49d0e0ea87f87f4494b4f0
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49703063"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49927419"
 ---
-# <a name="move-users-to-different-subscriptions"></a><span data-ttu-id="f40c8-103">Spostare gli utenti in sottoscrizioni diverse</span><span class="sxs-lookup"><span data-stu-id="f40c8-103">Move users to different subscriptions</span></span>
+# <a name="move-users-to-different-subscriptions"></a><span data-ttu-id="50f99-103">Spostare gli utenti in sottoscrizioni diverse</span><span class="sxs-lookup"><span data-stu-id="50f99-103">Move users to different subscriptions</span></span>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1SBE2?autoplay=false]
 
-<span data-ttu-id="f40c8-104">Gli utenti possono modificare i ruoli, potrebbe essere necessario disporre di funzionalità che non sono disponibili nell'abbonamento a Microsoft 365 Business Premium corrente.</span><span class="sxs-lookup"><span data-stu-id="f40c8-104">As your users change roles, they may need features that aren't available in their current Microsoft 365 Business Premium subscription.</span></span> <span data-ttu-id="f40c8-105">In questo caso, è possibile aggiungere una nuova sottoscrizione che includa tali funzionalità e assegnare licenze agli utenti che ne hanno bisogno.</span><span class="sxs-lookup"><span data-stu-id="f40c8-105">When this happens, you can add a new subscription that includes those features, and assign licenses to the people who need them.</span></span>
+<span data-ttu-id="50f99-104">Quando gli utenti cambiano ruolo, potrebbero aver bisogno di funzionalità non disponibili nell'abbonamento a Microsoft 365 Business Premium corrente.</span><span class="sxs-lookup"><span data-stu-id="50f99-104">As your users change roles, they may need features that aren't available in their current Microsoft 365 Business Premium subscription.</span></span> <span data-ttu-id="50f99-105">In questo caso, è possibile aggiungere un nuovo abbonamento che includa tali funzionalità e assegnare licenze alle persone che ne hanno bisogno.</span><span class="sxs-lookup"><span data-stu-id="50f99-105">When this happens, you can add a new subscription that includes those features, and assign licenses to the people who need them.</span></span>
 
-## <a name="try-it"></a><span data-ttu-id="f40c8-106">Perché non provarlo?</span><span class="sxs-lookup"><span data-stu-id="f40c8-106">Try it!</span></span>
+## <a name="try-it"></a><span data-ttu-id="50f99-106">Perché non provarlo?</span><span class="sxs-lookup"><span data-stu-id="50f99-106">Try it!</span></span>
 
-### <a name="add-a-new-subscription"></a><span data-ttu-id="f40c8-107">Aggiungere un nuovo abbonamento</span><span class="sxs-lookup"><span data-stu-id="f40c8-107">Add a new subscription</span></span>
+### <a name="add-a-new-subscription"></a><span data-ttu-id="50f99-107">Aggiungere una nuova sottoscrizione</span><span class="sxs-lookup"><span data-stu-id="50f99-107">Add a new subscription</span></span>
 
-1. <span data-ttu-id="f40c8-108">Nell'interfaccia di amministrazione di Microsoft 365, nel riquadro di spostamento a sinistra, selezionare **fatturazione** e quindi **acquisto servizi**.</span><span class="sxs-lookup"><span data-stu-id="f40c8-108">In the Microsoft 365 admin center, in the left navigation pane, select **Billing**, and then **Purchase services**.</span></span>
-1. <span data-ttu-id="f40c8-109">Scegliere l'abbonamento che si desidera aggiungere e quindi fare clic su **Acquista**.</span><span class="sxs-lookup"><span data-stu-id="f40c8-109">Choose the subscription you would like to add, and then select **Buy**.</span></span>
-1. <span data-ttu-id="f40c8-110">Scegliere la modalità di pagamento e il numero di licenze necessarie e quindi fare clic **su Estrai**.</span><span class="sxs-lookup"><span data-stu-id="f40c8-110">Choose how you want to pay and the number of licenses you need, and then select **Check out now**.</span></span>
-1. <span data-ttu-id="f40c8-111">Esaminare l'ordine e quindi fare clic su **Avanti**.</span><span class="sxs-lookup"><span data-stu-id="f40c8-111">Review your order, and then choose **Next**.</span></span>
-1. <span data-ttu-id="f40c8-112">Confermare il totale e selezionare **Ordina ordine**.</span><span class="sxs-lookup"><span data-stu-id="f40c8-112">Confirm your total, and select **Place order**.</span></span>
+1. <span data-ttu-id="50f99-108">Nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Microsoft 365 selezionare **Fatturazione** e **quindi Acquistare servizi.**</span><span class="sxs-lookup"><span data-stu-id="50f99-108">In the Microsoft 365 admin center, in the left navigation pane, select **Billing**, and then **Purchase services**.</span></span>
+1. <span data-ttu-id="50f99-109">Scegliere l'abbonamento che si desidera aggiungere e quindi selezionare **Acquista.**</span><span class="sxs-lookup"><span data-stu-id="50f99-109">Choose the subscription you would like to add, and then select **Buy**.</span></span>
+1. <span data-ttu-id="50f99-110">Scegli la modalità di pagamento e il numero di licenze necessarie, quindi seleziona **Estrai ora.**</span><span class="sxs-lookup"><span data-stu-id="50f99-110">Choose how you want to pay and the number of licenses you need, and then select **Check out now**.</span></span>
+1. <span data-ttu-id="50f99-111">Rivedere l'ordine e quindi scegliere **Avanti.**</span><span class="sxs-lookup"><span data-stu-id="50f99-111">Review your order, and then choose **Next**.</span></span>
+1. <span data-ttu-id="50f99-112">Confermare il totale e selezionare **Place order.**</span><span class="sxs-lookup"><span data-stu-id="50f99-112">Confirm your total, and select **Place order**.</span></span>
 
-### <a name="change-the-license-assigned-to-a-user"></a><span data-ttu-id="f40c8-113">Modificare la licenza assegnata a un utente</span><span class="sxs-lookup"><span data-stu-id="f40c8-113">Change the license assigned to a user</span></span>
+### <a name="change-the-license-assigned-to-a-user"></a><span data-ttu-id="50f99-113">Modificare la licenza assegnata a un utente</span><span class="sxs-lookup"><span data-stu-id="50f99-113">Change the license assigned to a user</span></span>
 
-1. <span data-ttu-id="f40c8-114">Nell'interfaccia di amministrazione di Microsoft 365, nel riquadro di spostamento a sinistra, selezionare **utenti** e quindi **utenti attivi**.</span><span class="sxs-lookup"><span data-stu-id="f40c8-114">In the Microsoft 365 admin center, in the left navigation pane, select **Users**, and then **Active users**.</span></span>
-1. <span data-ttu-id="f40c8-115">Selezionare il nome dell'utente e quindi selezionare **licenze e app** s.</span><span class="sxs-lookup"><span data-stu-id="f40c8-115">Select the name of the user, and then select **Licenses and app** s.</span></span>
-1. <span data-ttu-id="f40c8-116">In **licenze** verrà visualizzato il nuovo abbonamento.</span><span class="sxs-lookup"><span data-stu-id="f40c8-116">Under **Licenses**, you'll see your new subscription.</span></span> <span data-ttu-id="f40c8-117">Selezionare la casella di controllo accanto alla nuova sottoscrizione e deselezionare la casella di controllo accanto alla vecchia sottoscrizione.</span><span class="sxs-lookup"><span data-stu-id="f40c8-117">Select the check box next to the new subscription, and clear the check box next to the old subscription.</span></span>
-1. <span data-ttu-id="f40c8-118">Selezionare **Salva modifiche**.</span><span class="sxs-lookup"><span data-stu-id="f40c8-118">Select **Save changes**.</span></span> <span data-ttu-id="f40c8-119">La licenza per la nuova sottoscrizione è ora assegnata all'utente.</span><span class="sxs-lookup"><span data-stu-id="f40c8-119">The license for the new subscription is now assigned to this user.</span></span>
+1. <span data-ttu-id="50f99-114">Nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Microsoft 365 selezionare **Utenti** e quindi **Utenti attivi.**</span><span class="sxs-lookup"><span data-stu-id="50f99-114">In the Microsoft 365 admin center, in the left navigation pane, select **Users**, and then **Active users**.</span></span>
+1. <span data-ttu-id="50f99-115">Selezionare il nome dell'utente e quindi selezionare **Licenze e app.**</span><span class="sxs-lookup"><span data-stu-id="50f99-115">Select the name of the user, and then select **Licenses and app** s.</span></span>
+1. <span data-ttu-id="50f99-116">In **Licenze** verrà visualizzato il nuovo abbonamento.</span><span class="sxs-lookup"><span data-stu-id="50f99-116">Under **Licenses**, you'll see your new subscription.</span></span> <span data-ttu-id="50f99-117">Selezionare la casella di controllo accanto al nuovo abbonamento e deselezionare la casella di controllo accanto alla sottoscrizione precedente.</span><span class="sxs-lookup"><span data-stu-id="50f99-117">Select the check box next to the new subscription, and clear the check box next to the old subscription.</span></span>
+1. <span data-ttu-id="50f99-118">Selezionare **Salva modifiche**.</span><span class="sxs-lookup"><span data-stu-id="50f99-118">Select **Save changes**.</span></span> <span data-ttu-id="50f99-119">La licenza per la nuova sottoscrizione è ora assegnata a questo utente.</span><span class="sxs-lookup"><span data-stu-id="50f99-119">The license for the new subscription is now assigned to this user.</span></span>
 
-### <a name="remove-an-unused-license"></a><span data-ttu-id="f40c8-120">Rimuovere una licenza inutilizzata</span><span class="sxs-lookup"><span data-stu-id="f40c8-120">Remove an unused license</span></span>
+### <a name="remove-an-unused-license"></a><span data-ttu-id="50f99-120">Rimuovere una licenza inutilizzata</span><span class="sxs-lookup"><span data-stu-id="50f99-120">Remove an unused license</span></span>
 
-1. <span data-ttu-id="f40c8-121">Nell'interfaccia di amministrazione di Microsoft 365 selezionare **fatturazione** e quindi **prodotti & Servizi**.</span><span class="sxs-lookup"><span data-stu-id="f40c8-121">In the Microsoft 365 admin center, select **Billing**, and then **Products & services**.</span></span>
-1. <span data-ttu-id="f40c8-122">Selezionare l'abbonamento che si desidera modificare, quindi selezionare **Aggiungi/Rimuovi licenze**.</span><span class="sxs-lookup"><span data-stu-id="f40c8-122">Select the subscription you want to change, and then select **Add/remove licenses**.</span></span>
-1. <span data-ttu-id="f40c8-123">Utilizzare la freccia verso il basso per ridurre il numero di licenze per la sottoscrizione e quindi selezionare **Invia modifica**.</span><span class="sxs-lookup"><span data-stu-id="f40c8-123">Use the down arrow to reduce the number of licenses for this subscription, and then select **Submit change**.</span></span> <span data-ttu-id="f40c8-124">È ora disponibile il numero corretto di licenze per gli utenti.</span><span class="sxs-lookup"><span data-stu-id="f40c8-124">You now have the right number of licenses for your users.</span></span>
+1. <span data-ttu-id="50f99-121">Nell'interfaccia di amministrazione di Microsoft 365 selezionare **Fatturazione** e quindi Prodotti **& servizi.**</span><span class="sxs-lookup"><span data-stu-id="50f99-121">In the Microsoft 365 admin center, select **Billing**, and then **Products & services**.</span></span>
+1. <span data-ttu-id="50f99-122">Selezionare l'abbonamento che si desidera modificare e quindi **selezionare Aggiungi/rimuovi licenze.**</span><span class="sxs-lookup"><span data-stu-id="50f99-122">Select the subscription you want to change, and then select **Add/remove licenses**.</span></span>
+1. <span data-ttu-id="50f99-123">Usare la freccia in giù per ridurre il numero di licenze per l'abbonamento e quindi selezionare **Invia modifica.**</span><span class="sxs-lookup"><span data-stu-id="50f99-123">Use the down arrow to reduce the number of licenses for this subscription, and then select **Submit change**.</span></span> <span data-ttu-id="50f99-124">A questo punto si dispone del numero di licenze per gli utenti.</span><span class="sxs-lookup"><span data-stu-id="50f99-124">You now have the right number of licenses for your users.</span></span>

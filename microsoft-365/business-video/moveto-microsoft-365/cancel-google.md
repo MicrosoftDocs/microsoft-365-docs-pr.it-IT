@@ -1,5 +1,5 @@
 ---
-title: Annullare l'area di lavoro di Google (e mantenere il dominio)
+title: Annullare Google Workspace (e mantenere il dominio)
 f1.keywords:
 - NOCSH
 ms.author: twerner
@@ -15,27 +15,28 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Informazioni su come annullare la sottoscrizione di Google Workspace ma mantenere il dominio.
-ms.openlocfilehash: f4cbb09907da399ab3fed07e7826c0a217b494f0
-ms.sourcegitcommit: 9833f95ab6ab95aea20d68a277246dca2223f93d
+description: Informazioni su come annullare l'abbonamento a Google Workspace ma mantenere il dominio.
+ms.openlocfilehash: 1ad7e4ae3583063281ac5b5e9510be539b1378dd
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "49794627"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49928259"
 ---
-# <a name="cancel-google-workspace-subscription"></a><span data-ttu-id="5d9e0-103">Annulla sottoscrizione di Google Workspace</span><span class="sxs-lookup"><span data-stu-id="5d9e0-103">Cancel Google Workspace subscription</span></span>
+# <a name="cancel-google-workspace-subscription"></a><span data-ttu-id="44aef-103">Annullare l'abbonamento a Google Workspace</span><span class="sxs-lookup"><span data-stu-id="44aef-103">Cancel Google Workspace subscription</span></span>
 
-1. <span data-ttu-id="5d9e0-104">Accedere a [Google admin](https://admin.google.com/) e passare a **fatturazione**.</span><span class="sxs-lookup"><span data-stu-id="5d9e0-104">Sign in to [Google Admin](https://admin.google.com/) and go to **Billing**.</span></span>
-1. <span data-ttu-id="5d9e0-105">Nell'elenco **abbonamenti** selezionare l'abbonamento a G Suite, **annullare l'abbonamento** e quindi scegliere **continua**.</span><span class="sxs-lookup"><span data-stu-id="5d9e0-105">In the **Subscriptions** list,choose your G Suite subscription, **Cancel subscription**, and then choose **Continue**.</span></span>
+1. <span data-ttu-id="44aef-104">Accedi a [Google Admin e](https://admin.google.com/) passa a **Fatturazione.**</span><span class="sxs-lookup"><span data-stu-id="44aef-104">Sign in to [Google Admin](https://admin.google.com/) and go to **Billing**.</span></span>
+1. <span data-ttu-id="44aef-105">**Nell'elenco Sottoscrizioni** scegliere l'abbonamento a G Suite, **Annulla abbonamento** e quindi **scegliere Continua.**</span><span class="sxs-lookup"><span data-stu-id="44aef-105">In the **Subscriptions** list,choose your G Suite subscription, **Cancel subscription**, and then choose **Continue**.</span></span>
 
     > [!IMPORTANT]
-    > <span data-ttu-id="5d9e0-106">l'abbonamento verrà annullato immediatamente e non sarà possibile annullare questa azione.</span><span class="sxs-lookup"><span data-stu-id="5d9e0-106">your subscription will be cancelled immediately and you cannot undo this action.</span></span>
+    > <span data-ttu-id="44aef-106">l'abbonamento verrà annullato immediatamente e non sarà possibile annullare l'azione.</span><span class="sxs-lookup"><span data-stu-id="44aef-106">your subscription will be cancelled immediately and you cannot undo this action.</span></span>
 
-    :::image type="content" source="../../media/cancelgoogleworspace.png" alt-text="Schermata della pagina di fatturazione di Google admin.":::
+    :::image type="content" source="../../media/cancelgoogleworspace.png" alt-text="Screenshot della pagina Fatturazione dell'amministratore di Google.":::
 
-<span data-ttu-id="5d9e0-108">Si noti che è possibile che la registrazione del dominio non venga visualizzata nell'elenco abbonamenti se il provider host DNS non è Google Domains.</span><span class="sxs-lookup"><span data-stu-id="5d9e0-108">Note that you might not see Domain Registration in your Subscriptions list if your DNS host provider isn't Google domains.</span></span>
+<span data-ttu-id="44aef-108">Si noti che se il provider host DNS non è google, è possibile che la registrazione del dominio non sia presente nell'elenco delle sottoscrizioni.</span><span class="sxs-lookup"><span data-stu-id="44aef-108">Note that you might not see Domain Registration in your Subscriptions list if your DNS host provider isn't Google domains.</span></span>
