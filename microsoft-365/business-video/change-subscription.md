@@ -16,44 +16,45 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Informazioni su come spostare gli utenti in un abbonamento diverso.
-ms.openlocfilehash: 7da8db17e0cb29f50cd2320293d8b0f1c7f22d5a
-ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
+ms.openlocfilehash: b3b82dcf029395dbbe49d0e0ea87f87f4494b4f0
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49703063"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49927419"
 ---
 # <a name="move-users-to-different-subscriptions"></a>Spostare gli utenti in sottoscrizioni diverse
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1SBE2?autoplay=false]
 
-Gli utenti possono modificare i ruoli, potrebbe essere necessario disporre di funzionalità che non sono disponibili nell'abbonamento a Microsoft 365 Business Premium corrente. In questo caso, è possibile aggiungere una nuova sottoscrizione che includa tali funzionalità e assegnare licenze agli utenti che ne hanno bisogno.
+Quando gli utenti cambiano ruolo, potrebbero aver bisogno di funzionalità non disponibili nell'abbonamento a Microsoft 365 Business Premium corrente. In questo caso, è possibile aggiungere un nuovo abbonamento che includa tali funzionalità e assegnare licenze alle persone che ne hanno bisogno.
 
 ## <a name="try-it"></a>Perché non provarlo?
 
-### <a name="add-a-new-subscription"></a>Aggiungere un nuovo abbonamento
+### <a name="add-a-new-subscription"></a>Aggiungere una nuova sottoscrizione
 
-1. Nell'interfaccia di amministrazione di Microsoft 365, nel riquadro di spostamento a sinistra, selezionare **fatturazione** e quindi **acquisto servizi**.
-1. Scegliere l'abbonamento che si desidera aggiungere e quindi fare clic su **Acquista**.
-1. Scegliere la modalità di pagamento e il numero di licenze necessarie e quindi fare clic **su Estrai**.
-1. Esaminare l'ordine e quindi fare clic su **Avanti**.
-1. Confermare il totale e selezionare **Ordina ordine**.
+1. Nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Microsoft 365 selezionare **Fatturazione** e **quindi Acquistare servizi.**
+1. Scegliere l'abbonamento che si desidera aggiungere e quindi selezionare **Acquista.**
+1. Scegli la modalità di pagamento e il numero di licenze necessarie, quindi seleziona **Estrai ora.**
+1. Rivedere l'ordine e quindi scegliere **Avanti.**
+1. Confermare il totale e selezionare **Place order.**
 
 ### <a name="change-the-license-assigned-to-a-user"></a>Modificare la licenza assegnata a un utente
 
-1. Nell'interfaccia di amministrazione di Microsoft 365, nel riquadro di spostamento a sinistra, selezionare **utenti** e quindi **utenti attivi**.
-1. Selezionare il nome dell'utente e quindi selezionare **licenze e app** s.
-1. In **licenze** verrà visualizzato il nuovo abbonamento. Selezionare la casella di controllo accanto alla nuova sottoscrizione e deselezionare la casella di controllo accanto alla vecchia sottoscrizione.
-1. Selezionare **Salva modifiche**. La licenza per la nuova sottoscrizione è ora assegnata all'utente.
+1. Nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Microsoft 365 selezionare **Utenti** e quindi **Utenti attivi.**
+1. Selezionare il nome dell'utente e quindi selezionare **Licenze e app.**
+1. In **Licenze** verrà visualizzato il nuovo abbonamento. Selezionare la casella di controllo accanto al nuovo abbonamento e deselezionare la casella di controllo accanto alla sottoscrizione precedente.
+1. Selezionare **Salva modifiche**. La licenza per la nuova sottoscrizione è ora assegnata a questo utente.
 
 ### <a name="remove-an-unused-license"></a>Rimuovere una licenza inutilizzata
 
-1. Nell'interfaccia di amministrazione di Microsoft 365 selezionare **fatturazione** e quindi **prodotti & Servizi**.
-1. Selezionare l'abbonamento che si desidera modificare, quindi selezionare **Aggiungi/Rimuovi licenze**.
-1. Utilizzare la freccia verso il basso per ridurre il numero di licenze per la sottoscrizione e quindi selezionare **Invia modifica**. È ora disponibile il numero corretto di licenze per gli utenti.
+1. Nell'interfaccia di amministrazione di Microsoft 365 selezionare **Fatturazione** e quindi Prodotti **& servizi.**
+1. Selezionare l'abbonamento che si desidera modificare e quindi **selezionare Aggiungi/rimuovi licenze.**
+1. Usare la freccia in giù per ridurre il numero di licenze per l'abbonamento e quindi selezionare **Invia modifica.** A questo punto si dispone del numero di licenze per gli utenti.

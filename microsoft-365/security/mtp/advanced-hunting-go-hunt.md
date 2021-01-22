@@ -1,10 +1,10 @@
 ---
-title: Ottenere informazioni rilevanti su un'entità con Go Hunt
-description: Informazioni su come utilizzare lo strumento "Vai a caccia" su per eseguire una query rapida per ottenere notizie rilevanti su un'entità o su un evento utilizzando la ricerca avanzata.
-keywords: Advanced Hunting, Incident, pivot, Entity, Go Hunt, eventi rilevanti, Threat Hunting, Cyber Threat Hunting, Search, query, telemetria, Microsoft 365, Microsoft Threat Protection
+title: Ottenere informazioni pertinenti su un'entità con risposta
+description: Informazioni su come usare lo strumento di ricerca avanzata per eseguire rapidamente query per informazioni pertinenti su un'entità o un evento tramite la ricerca avanzata.
+keywords: ricerca avanzata, incidente, pivot, entità, andare a cercare, eventi rilevanti, ricerca delle minacce, ricerca delle minacce informatiche, ricerca, query, telemetria, Microsoft 365, Microsoft Threat Protection
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,14 +19,15 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 9ddad74d179ac16a25640e2bdf4ed4906f920102
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.technology: m365d
+ms.openlocfilehash: 9e707fe8b3dff40d0698630cd0592b297042e5fb
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48846881"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49929506"
 ---
-# <a name="quickly-hunt-for-entity-or-event-information-with-go-hunt"></a>Cercare rapidamente informazioni su entità o eventi con Go Hunt
+# <a name="quickly-hunt-for-entity-or-event-information-with-go-hunt"></a>Ricerca rapida di informazioni su entità o eventi con risposta
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -34,29 +35,29 @@ ms.locfileid: "48846881"
 **Si applica a:**
 - Microsoft 365 Defender
 
-Con l'azione *Go Hunt* , è possibile esaminare rapidamente gli eventi e i vari tipi di entità utilizzando potenti funzionalità di [caccia avanzate](advanced-hunting-overview.md) basate su query. Questa azione esegue automaticamente una query di ricerca avanzata per trovare informazioni rilevanti sull'evento o l'entità selezionata.
+Con *l'azione di ricerca* in viaggio, è possibile analizzare rapidamente eventi e vari tipi di entità utilizzando potenti funzionalità di ricerca avanzata basate [su](advanced-hunting-overview.md) query. Questa azione esegue automaticamente una query di ricerca avanzata per trovare informazioni rilevanti sull'evento o sull'entità selezionata.
 
-L'azione *Go Hunt* è disponibile in diverse sezioni del Centro sicurezza ogni volta che vengono visualizzati i dettagli dell'evento o dell'entità. Ad esempio, è possibile utilizzare *Go Hunt* dalle sezioni seguenti:
+*L'azione di risposta* go è disponibile in varie sezioni del Centro sicurezza ogni volta che vengono visualizzati i dettagli dell'evento o dell'entità. Ad esempio, è possibile utilizzare *la risposta di andare* dalle sezioni seguenti:
 
-- Nella [pagina Incident](investigate-incidents.md#incident-overview)è possibile esaminare i dettagli relativi a utenti, dispositivi e molte altre entità associate a un evento Incident. Quando si seleziona un'entità, vengono fornite informazioni aggiuntive e diverse azioni che è possibile intraprendere su tale entitity. Nell'esempio seguente viene selezionata una cassetta postale, in cui vengono visualizzati i dettagli relativi alla cassetta postale e l'opzione di ricerca per ulteriori informazioni sulla cassetta postale.
+- Nella pagina [dell'evento](investigate-incidents.md#incident-overview)imprevisto è possibile esaminare i dettagli relativi a utenti, dispositivi e molte altre entità associate a un evento imprevisto. Quando si seleziona un'entità, si ottengono informazioni aggiuntive e varie azioni che è possibile eseguire su tale entità. Nell'esempio seguente viene selezionata una cassetta postale, che mostra i dettagli della cassetta postale e l'opzione per cercare ulteriori informazioni sulla cassetta postale.
 
-    ![Immagine che mostra i dettagli delle cassette postali con l'opzione Go Hunt](../../media/mtp-ah/go-hunt-email.png)
+    ![Immagine che mostra i dettagli della cassetta postale con l'opzione di risposta go](../../media/mtp-ah/go-hunt-email.png)
 
-- Nella pagina Incident è inoltre possibile accedere a un elenco di entità nella scheda Evidence. Se si seleziona una di queste entità, viene fornita un'opzione per cercare rapidamente informazioni su tale entità.
+- Nella pagina dell'evento imprevisto puoi anche accedere a un elenco di entità nella scheda delle prove. La selezione di una di queste entità offre un'opzione per cercare rapidamente informazioni su tale entità.
 
-    ![Immagine che mostra il file selezionato con l'opzione Go Hunt nella scheda Evidence](../../media/mtp-ah/go-hunt-evidence-file.png)
+    ![Immagine che mostra il file selezionato con l'opzione vai a risposta nella scheda Prova](../../media/mtp-ah/go-hunt-evidence-file.png)
 
 
-- Quando si visualizza la sequenza temporale per un dispositivo, è possibile selezionare un evento nella sequenza temporale per visualizzare ulteriori informazioni su quell'evento. Dopo aver selezionato un evento, si ottiene la possibilità di cercare altri eventi rilevanti nella ricerca avanzata.
+- Quando visualizzi la sequenza temporale per un dispositivo, puoi selezionare un evento nella sequenza temporale per visualizzare informazioni aggiuntive su tale evento. Dopo aver selezionato un evento, puoi scegliere di cercare altri eventi pertinenti nella ricerca avanzata.
 
-    ![Immagine che mostra i dettagli degli eventi con l'opzione Go Hunt](../../media/mtp-ah/go-hunt-event.png)
+    ![Immagine che mostra i dettagli dell'evento con l'opzione vai a risposta](../../media/mtp-ah/go-hunt-event.png)
 
-Se si seleziona Vai o Cerca **per eventi correlati** , **vengono** passate diverse query, a seconda che sia stata selezionata un'entità o un evento.
+Se **si seleziona Vai a ricerca** o Cerca eventi **correlati,** vengono passate query diverse, a seconda che sia stata selezionata un'entità o un evento.
 
 ## <a name="query-for-entity-information"></a>Query per informazioni sulle entità
-Quando si utilizza *Go Hunt* per eseguire una query per informazioni su un utente, un dispositivo o qualsiasi altro tipo di entità, la query verifica tutte le tabelle dello schema rilevanti per tutti gli eventi che interessano tale entità. Per garantire la gestione dei risultati, la query ha un ambito pari a circa lo stesso periodo di tempo della prima attività negli ultimi 30 giorni che coinvolge l'entità ed è associata all'evento Incident.
+Quando si utilizza *la* ricerca per ricercare informazioni su un utente, un dispositivo o qualsiasi altro tipo di entità, la query controlla in tutte le tabelle dello schema rilevanti gli eventi che coinvolgono tale entità. Per mantenere gestibili i risultati, l'ambito della query è intorno allo stesso periodo di tempo della prima attività degli ultimi 30 giorni che coinvolge l'entità ed è associata all'evento imprevisto.
 
-Di seguito è riportato un esempio della query Go Hunt per un dispositivo:
+Ecco un esempio della query di risposta go per un dispositivo:
 
 ```kusto
 let selectedTimestamp = datetime(2020-06-02T02:06:47.1167157Z);
@@ -69,8 +70,8 @@ and DeviceName == deviceName
 // or DeviceId == deviceId
 | take 100
 ```
-### <a name="supported-entity-types"></a>Tipi di entità supportate
-È possibile utilizzare *Go Hunt* dopo aver selezionato uno qualsiasi di questi tipi di entità:
+### <a name="supported-entity-types"></a>Tipi di entità supportati
+È possibile usare *la risposta dopo* aver selezionato uno di questi tipi di entità:
 
 - File
 - Messaggi di posta elettronica
@@ -81,8 +82,8 @@ and DeviceName == deviceName
 - Indirizzi IP
 - URL
 
-## <a name="query-for-event-information"></a>Query per informazioni sugli eventi
-Quando si utilizza *Go Hunt* per eseguire una query per informazioni su un evento Timeline, la query verifica tutte le tabelle dello schema rilevanti per gli altri eventi che interessano il periodo dell'evento selezionato. Ad esempio, la query seguente elenca gli eventi in diverse tabelle dello schema che si sono verificati nello stesso periodo di tempo nello stesso dispositivo:
+## <a name="query-for-event-information"></a>Query per informazioni sull'evento
+Quando si *utilizza la risposta di* risposta per eseguire una query per ottenere informazioni su un evento della sequenza temporale, la query verifica la presenza di altri eventi in tutte le tabelle di schema rilevanti nel periodo di tempo dell'evento selezionato. Ad esempio, la query seguente elenca gli eventi in varie tabelle dello schema che si sono verificati nello stesso periodo di tempo nello stesso dispositivo:
 
 ```kusto
 // List relevant events 30 minutes before and after selected LogonAttempted event
@@ -96,13 +97,13 @@ search in (DeviceFileEvents, DeviceProcessEvents, DeviceEvents, DeviceRegistryEv
 ```
 
 ## <a name="adjust-the-query"></a>Modificare la query
-Con una certa conoscenza del [linguaggio di query](advanced-hunting-query-language.md), è possibile modificare la query in base alle proprie preferenze. Ad esempio, è possibile modificare questa linea, che determina le dimensioni della finestra temporale:
+Con una certa conoscenza del [linguaggio di query,](advanced-hunting-query-language.md)è possibile modificare la query in base alle proprie preferenze. Ad esempio, è possibile modificare questa riga, che determina le dimensioni dell'intervallo di tempo:
 
 ```kusto
 Timestamp between ((selectedTimestamp - 1h) .. (selectedTimestamp + 1h))
 ```
 
-Oltre a modificare la query per ottenere risultati più rilevanti, è anche possibile:
+Oltre a modificare la query per ottenere risultati più pertinenti, è anche possibile:
 - [Visualizzare i risultati come grafici](advanced-hunting-query-results.md#view-query-results-as-a-table-or-chart)
 - [Creare una regola di rilevamento personalizzata](custom-detection-rules.md)
 

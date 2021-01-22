@@ -1,5 +1,5 @@
 ---
-title: Che cos'è un amministratore in Microsoft 365 for business
+title: Che cos'è un amministratore in Microsoft 365 per le aziende
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -16,25 +16,26 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Informazioni sui ruoli di amministratore in Microsoft 365 for business.
-ms.openlocfilehash: 417a8af4c367e8abbef2c15da86fd07e0d8fd72c
-ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
+description: Informazioni sui ruoli di amministratore in Microsoft 365 per le aziende.
+ms.openlocfilehash: 3f532080dfa8b492700e258ab109a04962820557
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49702206"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49927743"
 ---
 # <a name="what-is-a-microsoft-365-admin"></a>Che cos'è un amministratore di Microsoft 365?
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1SRc0?autoplay=false]
 
-In tutti gli abbonamenti a Microsoft 365 business deve essere presente almeno un account di amministratore. L'amministratore gestisce il servizio, gli account utente e i dispositivi. Se si è l'utente che ha effettuato l'iscrizione per l'abbonamento, l'amministratore globale per l'abbonamento. È anche possibile diventare un amministratore se un altro amministratore ne fa uno.
+In ogni abbonamento a Microsoft 365 Business deve essere presente almeno un account amministratore. L'amministratore gestisce il servizio, gli account utente e i dispositivi. Se sei l'utente che ha effettuato l'iscrizione per l'abbonamento, sei l'amministratore globale dell'abbonamento. Puoi anche diventare un amministratore se un altro amministratore ne fa una.
 
-Anche se è sempre necessario almeno un ruolo di amministratore per l'abbonamento, può essere un rischio per la sicurezza se l'account di amministratore è compromesso da una parte esterna. Si consiglia di assegnare il ruolo di amministratore solo a coloro che ne hanno realmente bisogno e di assegnare il ruolo utente alla maggior parte delle persone.
+Anche se è sempre necessario almeno un ruolo di amministratore per l'abbonamento, può essere un rischio per la sicurezza se l'account amministratore viene compromesso da una parte esterna. È consigliabile assegnare il ruolo di amministratore solo a coloro che ne hanno realmente bisogno e assegnare il ruolo utente alla maggior parte degli utenti.
 
 ## <a name="try-it"></a>Perché non provarlo?
 
@@ -42,25 +43,25 @@ Anche se è sempre necessario almeno un ruolo di amministratore per l'abbonament
 
 Ecco come modificare un ruolo utente in un ruolo di amministratore:
 
-1. Dopo aver eseguito l'accesso a Microsoft 365, selezionare l'icona di avvio delle app. Se viene visualizzato il pulsante di amministrazione, allora sei un amministratore.
-1. Selezionare **amministratore** per accedere all'interfaccia di amministrazione di Microsoft 365.
-1. Nel riquadro di spostamento a sinistra, selezionare **utenti** e quindi **utenti attivi**.
-1. Selezionare la persona che si desidera creare un amministratore. I dettagli dell'utente vengono visualizzati nella finestra di dialogo a destra.
-1. Scegliere **Manage Roles**.
-1. Deselezionare la casella di controllo **utente (nessun accesso amministratore)** e quindi selezionare uno dei ruoli di amministratore. Per ulteriori informazioni su un ruolo, posizionare il puntatore del mouse sul punto esclamativo (!) e leggere la descrizione comandi. Per concedere agli utenti lo stesso ruolo del proprio utente, selezionare **amministratore globale**.
+1. Dopo l'accesso a Microsoft 365, selezionare l'icona di avvio delle app. Se viene visualizzato il pulsante Amministratore, sei un amministratore.
+1. Selezionare **Amministratore** per passare all'interfaccia di amministrazione di Microsoft 365.
+1. Nel riquadro di spostamento sinistro selezionare **Utenti** e **quindi Utenti attivi.**
+1. Selezionare la persona che si desidera impostare come amministratore. I dettagli dell'utente vengono visualizzati nella finestra di dialogo a destra.
+1. Scegliere **Gestisci ruoli.**
+1. Deselezionare la casella di controllo **Utente (nessun** accesso amministratore) e quindi selezionare uno dei ruoli di amministratore. Per ulteriori informazioni su un ruolo, posizionare il puntatore del mouse sul punto esclamativo (!) e leggere la descrizione comando. Per assegnare all'utente lo stesso ruolo del proprio, selezionare **Amministratore globale.**
 1. Selezionare **Salva modifiche**.
 
-### <a name="create-an-admin-account"></a>Creare un account di amministratore 
+### <a name="create-an-admin-account"></a>Creare un account amministratore 
 
-È inoltre possibile creare un account di amministratore dedicato per una persona o un servizio IT:
+È inoltre possibile creare un account amministratore dedicato per una persona o un servizio IT:
 
-1. Dopo aver eseguito l'accesso a Microsoft 365, selezionare l'icona di avvio delle app.
-1. Selezionare **amministratore** per accedere all'interfaccia di amministrazione di Microsoft 365.
-1. Nel riquadro di spostamento a sinistra, selezionare **utenti** e quindi **utenti attivi**.
-1. Selezionare **Aggiungi un utente**.
-1. Immettere il **nome e il** cognome dell' **utente, il** **nome visualizzato** e il **nome utente, quindi** selezionare **Avanti**.
-1. Scegliere **Crea utente senza licenza** per il prodotto. Questo aggiunge un nuovo utente, ma non è necessario pagare un abbonamento mensile. Selezionare **Avanti**.
-1. Aprire i **ruoli**.
+1. Dopo l'accesso a Microsoft 365, selezionare l'icona di avvio delle app.
+1. Selezionare **Amministratore** per passare all'interfaccia di amministrazione di Microsoft 365.
+1. Nel riquadro di spostamento sinistro selezionare **Utenti** e **quindi Utenti attivi.**
+1. Selezionare **Aggiungi utente.**
+1. Immettere il nome e **il** cognome dell'utente, il nome **visualizzato** e il nome **utente,** quindi selezionare **Avanti.**
+1. Scegliere **Crea utente senza licenza del prodotto.** In questo modo viene aggiunto un nuovo utente, ma non è necessario pagare un abbonamento mensile. Selezionare **Avanti**.
+1. Apri **ruoli**.
 1. Deselezionare la casella di controllo e quindi selezionare uno dei ruoli di amministratore. Selezionare **Avanti**.
-1. Rivedere le informazioni e quindi selezionare **termina aggiunta**.
+1. Esaminare le informazioni e quindi selezionare **Fine** aggiunta.
 1. Selezionare **Chiudi**.

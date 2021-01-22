@@ -1,9 +1,9 @@
 ---
-title: Codici di errore dell'API REST comuni di Microsoft 365 Defender
-description: Informazioni sui codici di errore dell'API REST di Microsoft 365 Defender comuni
-keywords: API, errore, codici, errori comuni, MTP, codici di errore dell'API
+title: Codici di errore comuni dell'API REST di Microsoft 365 Defender
+description: Informazioni sui codici di errore comuni dell'API REST di Microsoft 365 Defender
+keywords: api, error, codes, common errors, mtp, api error codes
 search.product: eADQiWindows 10XVcnh
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,14 +19,15 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 0df741efb7555d587a6033acc23716e93f542d5e
-ms.sourcegitcommit: d6b1da2e12d55f69e4353289e90f5ae2f60066d0
+ms.technology: m365d
+ms.openlocfilehash: 15eabc8ff28e7cc0313e2a1cb701403de0eab120
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "49719215"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49928391"
 ---
-# <a name="common-microsoft-365-defender-rest-api-error-codes"></a>Codici di errore dell'API REST comuni di Microsoft 365 Defender
+# <a name="common-microsoft-365-defender-rest-api-error-codes"></a>Codici di errore comuni dell'API REST di Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -35,33 +36,33 @@ ms.locfileid: "49719215"
 - Microsoft Threat Protection
 
 > [!IMPORTANT]
-> Alcune informazioni si riferiscono al prodotto prerilasciato che può essere modificato in modo sostanziale prima che venga rilasciato commercialmente. Microsoft makes no warranties, express or implied, with respect to the information provided here.
+> Alcune informazioni riguardano prodotti non rilasciati in precedenza che potrebbero essere sostanzialmente modificati prima del rilascio sul mercato. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
-È possibile che i codici di errore vengano restituiti da un'operazione in una qualsiasi delle API di Microsoft 365 Defender. Ogni risposta di errore conterrà un messaggio di errore che può contribuire a risolvere il problema. Nella colonna messaggio di errore della sezione tabella sono disponibili alcuni messaggi di esempio. Il contenuto dei messaggi effettivi varia in base ai fattori che hanno attivato la risposta. Il contenuto variabile viene indicato nella tabella in base all'angolo tra parentesi quadre.
+I codici di errore possono essere restituiti da un'operazione su una qualsiasi delle API di Microsoft 365 Defender. Ogni risposta di errore conterrà un messaggio di errore che può aiutare a risolvere il problema. Nella colonna dei messaggi di errore nella sezione della tabella sono disponibili alcuni messaggi di esempio. Il contenuto dei messaggi effettivi varia in base ai fattori che hanno attivato la risposta. Il contenuto delle variabili è indicato nella tabella da parentesi angolari.
 
 ## <a name="error-codes"></a>Codici di errore
 
-Codice errore | Codice di stato HTTP | Messaggio
+Codice di errore | Codice di stato HTTP | Messaggio
 -|-|-
-BadRequest | BadRequest (400) | Messaggio di errore generale di richiesta non valida.
-ODataError | BadRequest (400) | Query URI OData non valida \<the specific error is specified\> .
-InvalidInput | BadRequest (400) | Input non valido \<the invalid input\> .
-InvalidRequestBody | BadRequest (400) | Corpo richiesta non valida.
-InvalidHashValue | BadRequest (400) | Il valore hash \<the invalid hash\> non è valido.
-InvalidDomainName | BadRequest (400) | Il nome di dominio \<the invalid domain\> non è valido.
-InvalidIpAddress | BadRequest (400) | L'indirizzo IP \<the invalid IP\> non è valido.
-InvalidUrl | BadRequest (400) | L'URL \<the invalid URL\> non è valido.
-MaximumBatchSizeExceeded | BadRequest (400) | Dimensioni massime del batch superate. Ricevuto: \<batch size received\> , consentito: {dimensioni batch consentite}.
-MissingRequiredParameter | BadRequest (400) | Il parametro \<the missing parameter\> è mancante.
-OsPlatformNotSupported | BadRequest (400) | La piattaforma OS \<the client OS Platform\> non è supportata per questa azione.
-ClientVersionNotSupported | BadRequest (400) | \<The requested action\> è supportato sulla versione client \<supported client version\> e versioni successive.
-Non autorizzato | Non autorizzato (401) | Non autorizzato <br /><br />*Nota: generalmente causata da un'intestazione di autorizzazione non valida o scaduta.*
-Proibito | Forbidden (403) | Proibito <br /><br />*Nota: token valido ma autorizzazione insufficiente per l'azione*.
-DisabledFeature | Forbidden (403) | La caratteristica tenant non è abilitata.
-DisallowedOperation | Forbidden (403) | \<the disallowed operation and the reason\>.
-NotFound | Non trovato (404) | Messaggio di errore generale non trovato.
-ResourceNotFound | Non trovato (404) | La risorsa \<the requested resource\> non è stata trovata.
-InternalServerError | Errore interno del server (500) | *Nota: nessun messaggio di errore, riprovare l'operazione o contattare Microsoft se non viene risolto*
+BadRequest | BadRequest (400) | Messaggio di errore Generale richiesta non valida.
+ODataError | BadRequest (400) | Query URI OData non \<the specific error is specified\> valida.
+InvalidInput | BadRequest (400) | Input non \<the invalid input\> valido.
+InvalidRequestBody | BadRequest (400) | Corpo della richiesta non valido.
+InvalidHashValue | BadRequest (400) | Valore hash \<the invalid hash\> non valido.
+InvalidDomainName | BadRequest (400) | Nome di dominio \<the invalid domain\> non valido.
+InvalidIpAddress | BadRequest (400) | Indirizzo IP \<the invalid IP\> non valido.
+InvalidUrl | BadRequest (400) | URL \<the invalid URL\> non valido.
+MaximumBatchSizeExceeded | BadRequest (400) | Dimensione massima batch superata. Ricevuto: \<batch size received\> , consentito: {dimensione batch consentita}.
+MissingRequiredParameter | BadRequest (400) | Parametro \<the missing parameter\> mancante.
+OsPlatformNotSupported | BadRequest (400) | Piattaforma del sistema \<the client OS Platform\> operativo non supportata per questa azione.
+ClientVersionNotSupported | BadRequest (400) | \<The requested action\> è supportato nella versione client \<supported client version\> e versioni successive.
+Non autorizzato | Non autorizzato (401) | Non autorizzato <br /><br />*Nota: in genere causata da un'intestazione di autorizzazione non valida o scaduta.*
+Accesso negato | Accesso negato (403) | Accesso negato <br /><br />*Nota: token valido ma autorizzazioni insufficienti per l'azione.*
+DisabledFeature | Accesso negato (403) | La funzionalità tenant non è abilitata.
+DisallowedOperation | Accesso negato (403) | \<the disallowed operation and the reason\>.
+NotFound | Non trovato (404) | Messaggio di errore Generale non trovato.
+ResourceNotFound | Non trovato (404) | Risorsa \<the requested resource\> non trovata.
+InternalServerError | Errore interno del server (500) | *Nota: nessun messaggio di errore, ritenta l'operazione o contatta Microsoft se non viene risolto*
 
 ## <a name="examples"></a>Esempi
 
@@ -85,16 +86,16 @@ InternalServerError | Errore interno del server (500) | *Nota: nessun messaggio 
 }
 ```
 
-## <a name="body-parameters"></a>Parametri corpo
+## <a name="body-parameters"></a>Parametri del corpo
 
 > [!IMPORTANT]
-> I parametri corpo sono distinzione tra maiuscole e minuscole.
+> Per i parametri del corpo viene fatto distinzione tra maiuscole e minuscole.
 
-Se si verifica un errore di *InvalidRequestBody* o *MissingRequiredParameter* , potrebbe essere causato da una typo. Esaminare la documentazione relativa all'API e verificare che i parametri inviati corrispondano all'esempio pertinente.
+Se si verifica un *errore InvalidRequestBody* o *MissingRequiredParameter,* potrebbe essere causato da un errore di digitazione. Esaminare la documentazione dell'API e verificare che i parametri inviati corrispondano all'esempio pertinente.
 
-## <a name="tracking-id"></a>ID di rilevamento
+## <a name="tracking-id"></a>ID tracciabilità
 
-Ogni risposta di errore contiene un parametro ID univoco per la verifica. Il nome della proprietà di questo parametro è *target*. Quando ci si mette in contatto con informazioni su un errore, l'associazione di questo ID ci aiuterà a trovare la causa principale del problema.
+Ogni risposta di errore contiene un parametro ID univoco per la verifica. Il nome della proprietà di questo parametro è *target.* Quando ci viene contattato per un errore, l'associazione di questo ID ci consente di individuare la causa principale del problema.
 
 ## <a name="related-articles"></a>Articoli correlati
 

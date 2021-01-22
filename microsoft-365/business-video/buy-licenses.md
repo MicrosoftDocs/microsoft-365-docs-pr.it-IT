@@ -16,35 +16,36 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Informazioni su come acquistare nuove licenze Microsoft 365 per le aziende.
-ms.openlocfilehash: a4bc66188b064227821ddc66cc764c83caad5f64
-ms.sourcegitcommit: 4482c174e0e68e0fbbc7ad9ef6b0e78dc34ac85a
+description: Informazioni su come acquistare nuove licenze di Microsoft 365 per le aziende.
+ms.openlocfilehash: 7cec05256cb67c82caf367c10ac10546cb63b369
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "49784242"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49927455"
 ---
-# <a name="buy-microsoft-365-licenses"></a>Acquistare licenze Microsoft 365
+# <a name="buy-microsoft-365-licenses"></a>Acquistare licenze di Microsoft 365
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4KWvE?autoplay=false]
 
-Quando si aggiungono nuovi utenti, sarà necessario acquistare altre licenze Microsoft 365 per tali utenti.
+Quando si aggiungono nuovi utenti, sarà necessario acquistare altre licenze di Microsoft 365 per tali utenti.
 
 ## <a name="try-it"></a>Perché non provarlo?
 
-1. Nell'interfaccia di amministrazione di Microsoft 365, scegliere **fatturazione**, **i prodotti**, quindi selezionare l'abbonamento.
-1. Scegliere **Acquista licenze**.
+1. Nell'interfaccia di amministrazione di Microsoft 365 scegliere **Fatturazione**, **Prodotti** e quindi selezionare l'abbonamento.
+1. Scegliere **Acquista licenze.**
 1. Immettere il numero di licenze che si desidera acquistare.
-1. Selezionare **Salva**.
+1. Seleziona **Salva**.
 1. Chiudere quindi la finestra.
 1. Le nuove licenze vengono aggiunte all'abbonamento.
-1. Per assegnare le nuove licenze, selezionare **assegna licenze**.
-1. Assegnare quindi di nuovo le **licenze** .
+1. Per assegnare le nuove licenze, selezionare **Assegna licenze.**
+1. Assegnare **di nuovo le** licenze.
 1. Digitare il nome dell'utente a cui si desidera assegnare la licenza, quindi selezionare il nome.
-1. Decidere quali app o servizi si desidera che l'utente abbia, quindi selezionare **assegna**.
+1. Scegli le app o i servizi che vuoi assegnare all'utente, quindi seleziona **Assegna.**
 1. La licenza è ora assegnata all'utente.

@@ -1,10 +1,10 @@
 ---
-title: Pianificazione del progetto pilota Microsoft 365 Defender
-description: Pianificare il progetto pilota Microsoft 365 Defender con le parti interessate per gestire le aspettative e garantire esito positivo.
-keywords: Pilota di Microsoft Threat Protection, pianificare il progetto pilota di Microsoft Threat Protection, valutare Microsoft Threat Protection in produzione, Microsoft Threat Protection Project pilota, sicurezza cibernetica, Advanced Persistent Threat, sicurezza aziendale, dispositivi, dispositivo, identità, utenti, dati, applicazioni, incidenti, analisi automatizzata e correzione, ricerca avanzata
+title: Pianificazione del progetto pilota di Microsoft 365 Defender
+description: Pianificare il progetto pilota di Microsoft 365 Defender con gli stakeholder per gestire le aspettative e garantire un esito positivo.
+keywords: Progetto pilota di Microsoft Threat Protection, pianificare un progetto pilota di Microsoft Threat Protection, valutare Microsoft Threat Protection in produzione, progetto pilota di Microsoft Threat Protection, cyber security, minacce persistenti avanzate, sicurezza aziendale, dispositivi, dispositivo, identità, utenti, dati, applicazioni, eventi imprevisti, analisi e correzione automatizzate, ricerca avanzata
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -20,14 +20,15 @@ ms.collection:
 - m365solution-scenario
 - m365solution-pilotmtpproject
 ms.topic: conceptual
-ms.openlocfilehash: 649f3e777a330e1b60faf4f3513a470b51e56a80
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.technology: m365d
+ms.openlocfilehash: 8037b71fc41fb7fb0bdbfc829bad2ece1de6849b
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49356980"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49930175"
 ---
-# <a name="planning-your-pilot-microsoft-365-defender-project"></a>Pianificazione del progetto pilota Microsoft 365 Defender 
+# <a name="planning-your-pilot-microsoft-365-defender-project"></a>Pianificazione del progetto pilota di Microsoft 365 Defender 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -39,60 +40,60 @@ ms.locfileid: "49356980"
 |--|--|--|--|
 |*Sei qui!*| | | |
 
-Si è attualmente in fase di pianificazione.
+Al momento è in corso la fase di pianificazione.
 
-Per assicurarsi che il progetto pilota sia un successo, è essenziale pianificare con attenzione e ottenere le approvazioni dalle parti interessate all'inizio. Gli elementi di pianificazione includono l'ambito di identificazione, i casi di utilizzo, i requisiti e i criteri di successo.
+Per garantire che il progetto pilota sia un successo, è essenziale pianificare in modo accurato e ottenere le approvazioni dai cointeressati all'inizio. Gli elementi della pianificazione includono l'identificazione dell'ambito, dei casi di utilizzo, dei requisiti e dei criteri di successo.
 
-In questa guida viene illustrato come pianificare il progetto pilota. 
+Questa guida illustra come pianificare il progetto pilota. 
 
 >[!IMPORTANT]
->Per ottenere risultati ottimali, seguire le istruzioni pilota il più fedelmente possibile.
+>Per ottenere risultati ottimali, seguire le istruzioni pilota il più attentamente possibile.
 
 
-## <a name="scope"></a>Scope
+## <a name="scope"></a>Ambito
 
-L'ambito del progetto pilota determinerà il livello di ampiezza del test, in base all'ambiente e ai metodi di testing accettabili. Di seguito sono riportate alcune considerazioni di esempio:
-- Ambiente di sviluppo o di testing che include endpoint, server, controller di dominio.
-- Ambiente di produzione con Microsoft 365, Azure, servizi, endpoint e server di Active Directory
+L'ambito del progetto pilota determinerà la portata del test, in base all'ambiente e ai metodi di test accettabili. Ecco alcuni ambiti di esempio da considerare:
+- Ambiente di sviluppo o test che include endpoint, server, controller di dominio.
+- Ambiente di produzione con Microsoft 365, Azure, servizi Active Directory, endpoint e server
 
 >[!NOTE]
->[! Nota] se non si dispone ancora delle licenze complete, è possibile ottenere licenze di prova per [valutare Microsoft 365 Defender](https://aka.ms/mtp-trial-lab) – pianificare, preparare, installare, configurare ed eseguire il progetto pilota. Le parti interessate giocheranno un ruolo importante nell'agevolare il processo dall'inizio alla fine.
+>Se non si hanno ancora le licenze complete, è possibile ottenere licenze di valutazione per [valutare Microsoft 365 Defender:](https://aka.ms/mtp-trial-lab) pianificare, preparare, configurare, configurare ed eseguire il progetto pilota. Le parti interessate avranno un ruolo importante nell'agevolare il processo dall'inizio alla fine.
 
-I tipi di sistemi operativi da valutare devono essere anche definiti in base al trucco dell'organizzazione. Questo può includere gli [endpoint Mac](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-atp-mac#system-requirements), i [server Linux](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-atp-linux#system-requirements), gli [endpoint di windows 10](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/minimum-requirements#supported-windows-versions), [Windows Server 2016](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/minimum-requirements#supported-windows-versions).
+Anche i tipi di sistemi operativi da valutare devono essere definiti in base alla struttura organizzativa. Ciò può includere: [endpoint Mac,](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-atp-mac#system-requirements) [server Linux,](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-atp-linux#system-requirements) [endpoint di Windows 10,](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/minimum-requirements#supported-windows-versions) [Windows Server 2016.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/minimum-requirements#supported-windows-versions)
 
-## <a name="use-cases"></a>Casi di utilizzo
+## <a name="use-cases"></a>Casi d'uso
 
-I casi di utilizzo rappresentano istruzioni sul modo in cui lo strumento da testare deve essere utilizzato dagli utenti previsti. Tali informazioni possono essere formulate come storie utente dal punto di vista di una persona specifica, ad esempio un analista SOC. Ad esempio:
-- Come analista SOC, è necessario visualizzare, correlare, valutare e gestire avvisi ed eventi tra i dispositivi, gli utenti e le cassette postali della rete. [Gestione degli incidenti]
-- Come analista SOC, è necessario disporre dello strumento e del processo per analizzare e rispondere automaticamente agli eventi dannosi nella rete. [IR automatico]
-- Come analista SOC, è necessario eseguire la ricerca dei dati dal proprio ambiente per individuare minacce note e potenziali e attività sospette. [Caccia avanzata]
+I casi d'uso rappresentano le istruzioni su come lo strumento da testare deve essere utilizzato dagli utenti che lo desiderano. Possono essere formulate come storie utente dal punto di vista di un particolare utente, ad esempio un analista SOC. Ad esempio:
+- Come analista SOC, devo visualizzare, correlare, valutare e gestire avvisi ed eventi tra dispositivi, utenti e cassette postali nella rete. [Gestione degli eventi imprevisti]
+- Come analista SOC, devo avere lo strumento e il processo per analizzare e rispondere automaticamente a eventi dannosi nella mia rete. [IR automatico]
+- Come analista SOC, devo cercare i dati del mio ambiente per trovare minacce note e potenziali e attività sospette. [Ricerca avanzata]
 
-Tenere presente che questi casi di utilizzo devono essere creati all'interno dei parametri dell'ambito definito. Se, ad esempio, l'ambito del testing non include una valutazione di strumenti quali Microsoft cloud app Security, utilizzare i casi che si basano su questa operazione come origine dati non deve essere creato.
+Tenere presente che questi casi d'uso devono essere creati all'interno dei parametri dell'ambito definito. Se, ad esempio, l'ambito dei test non include una valutazione di strumenti come Microsoft Cloud App Security, non è consigliabile creare casi che si basano su questa soluzione come origine dati.
 
 ## <a name="requirements"></a>Requisiti
 
-Nell'elenco dei casi di utilizzo è possibile iniziare a creare i requisiti. Requisiti: funzionalità è necessario uno strumento per soddisfare i casi di utilizzo. Questi requisiti possono essere suddivisi in categorie quali la configurazione e la manutenzione, il supporto per le integrazioni e i requisiti specifici per le funzionalità come la capacità di caccia e la possibilità di creare avvisi personalizzati.
+Dall'elenco dei casi d'uso puoi iniziare a creare i requisiti. I requisiti includono le funzionalità che uno strumento deve avere per soddisfare i casi d'uso. Questi requisiti possono essere suddivisi in categorie quali la configurazione e la manutenzione, il supporto per le integrazioni e i requisiti specifici delle funzionalità, ad esempio la possibilità di cercare e la possibilità di creare avvisi personalizzati.
 
 ## <a name="test-plan"></a>Piano di testing
 
-A seconda dei requisiti, è possibile che i diversi metodi di test siano adatti. Ad esempio, se l'esigenza è quella di valutare l'efficacia della correzione automatica, il piano di test deve includere dei passaggi per generare i comportamenti che avrebbero attivato un'azione di correzione automatica all'interno di Microsoft 365 Defender. Se il requisito consiste nel rilevare un comportamento o un attacco specifico, il test può comportare più passaggi. Il punto è che è necessario disporre di un piano per testare accuratamente le proprie esigenze.
+A seconda dei requisiti, possono essere appropriati diversi metodi di test. Ad esempio, se il requisito è quello di valutare l'efficacia della correzione automatica, il piano di test deve includere passaggi per generare i comportamenti che attiverebbero un'azione di correzione automatica in Microsoft 365 Defender. Se il requisito è quello di rilevare un particolare comportamento o attacco, il test potrebbe richiedere più passaggi. Il punto è disporre di un piano da testare in modo accurato in base alle proprie esigenze.
 
-## <a name="success-criteria"></a>Criteri di esito positivo
+## <a name="success-criteria"></a>Criteri di successo
 
-I criteri di esito positivo sono infine il set di barre su misura rispetto a ciò che si sta testando. Se si sta testando Microsoft 365 Defender (o qualsiasi altra tecnologia per questo motivo) rispetto ad altri strumenti o da solo, devono essere disponibili alcuni criteri quantificabili per determinare il valore fornito dallo strumento. In base all'ambito, ai requisiti e al piano di testing, i criteri di esito positivo determineranno la modalità di valutazione del test. Questo valore deve essere inferiore a un passaggio o a un errore e più di un punteggio ponderato in base alle proprie esigenze. Ad esempio, per avere esito positivo, potrebbe essere necessario uno strumento per ottenere un punteggio maggiore di 80% in determinate aree critiche identificate.
+I criteri di successo sono in definitiva l'insieme di barre da misurare rispetto a ciò che si sta testando. Se si sta testando Microsoft 365 Defender (o qualsiasi altra tecnologia in questo caso) rispetto ad altri strumenti o da solo, devono essere presenti alcuni criteri quantificabili per determinare il valore fornito dallo strumento. In base all'ambito, ai requisiti e al piano di testing, i criteri di esito positivo determineranno come segnare il test. Questo valore deve essere inferiore a un passaggio o a un errore e più di un punteggio ponderato in base alle tue esigenze. Ad esempio, per avere esito positivo, uno strumento potrebbe dover segnare un punteggio superiore all'80% in alcune aree critiche identificate.
 
 ## <a name="scorecard"></a>Scorecard
 
-Un modo per portare insieme tutti gli elementi del piano può essere quello di creare una scorecard. Vedere una scorecard di esempio in basso:
+Un modo per riunire tutti gli elementi del piano può essere la creazione di una scorecard. Di seguito è riportata una scorecard di esempio:
 
-| Use case | Requisiti | Requisiti di configurazione | Piano di testing | Risultato previsto | Stato del test | Punteggio | Note |
+| Use case | Requisiti | Requisiti di configurazione | Piano di testing | Risultato previsto | Stato test | Punteggio | Note |
 |:-------|:-------|:-------|:-------|:-------|:-------|:-------|:-------|
-|Gestione degli incidenti|-Microsoft 365 Defender  </br></br>-Microsoft Defender per l'identità </br></br>-Microsoft Defender per endpoint </br></br>-Protezione delle app di Microsoft Cloud (facoltativa)|Per informazioni dettagliate, vedere i [prerequisiti](https://aka.ms/mtp-trial-lab) per la preparazione, l'installazione e la configurazione. |[Simula attacco](mtp-pilot-simulate.md) <br></br>[Esaminare l'evento Incident](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-simulate#investigate-an-incident) |Gli investigatori possono comprendere l'ambito e l'impatto dell'incidente e gestire l'evento imprevisto||||
-|AutoIR|-Microsoft 365 Defender </br></br>-Microsoft Defender per l'identità </br></br>-Microsoft Defender per endpoint |Per informazioni dettagliate, vedere i [prerequisiti](https://aka.ms/mtp-trial-lab) per la preparazione, l'installazione e la configurazione. <br>Abilitare AutoIR  |[Simula attacco](mtp-pilot-simulate.md) <br></br>[Analisi automatizzata](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-simulate#automated-investigation-and-remediation) |Gli avvisi e gli eventi non consentiti vengono automaticamente corretti da Microsoft 365 Defender||||
-|Ricerca avanzata|-Microsoft 365 Defender </br></br>-Microsoft Defender per endpoint </br></br>-Microsoft Defender per Office 365 |Per informazioni dettagliate, vedere i [prerequisiti](https://aka.ms/mtp-trial-lab) per la preparazione, l'installazione e la configurazione.|[Scenario di caccia avanzato](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-simulate#advanced-hunting-scenario) |Gli investigatori possono trovare dati tramite la ricerca avanzata, pivoting alle entità interessate e creando rilevamenti personalizzati||||
+|Gestione degli incidenti|- Microsoft 365 Defender  </br></br>- Microsoft Defender for Identity </br></br>- Microsoft Defender per endpoint </br></br>- Microsoft Cloud App Security (facoltativo)|Per informazioni [dettagliate,](https://aka.ms/mtp-trial-lab) vedere i prerequisiti per la preparazione, la configurazione e la configurazione |[Simula attacco](mtp-pilot-simulate.md) <br></br>[Analizzare l'evento imprevisto](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-simulate#investigate-an-incident) |Gli investigatori possono comprendere l'ambito e l'impatto dell'incidente e gestire l'incidente||||
+|AutoIR|- Microsoft 365 Defender </br></br>- Microsoft Defender for Identity </br></br>- Microsoft Defender per endpoint |Per informazioni [dettagliate,](https://aka.ms/mtp-trial-lab) vedere i prerequisiti per la preparazione, la configurazione e la configurazione <br>Abilitare AutoIR  |[Simula attacco](mtp-pilot-simulate.md) <br></br>[Indagine automatizzata](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-simulate#automated-investigation-and-remediation) |Gli avvisi e gli eventi imprevisti vengono corretti automaticamente da Microsoft 365 Defender||||
+|Ricerca avanzata|- Microsoft 365 Defender </br></br>- Microsoft Defender per endpoint </br></br>-Microsoft Defender per Office 365 |Per informazioni [dettagliate,](https://aka.ms/mtp-trial-lab) vedere i prerequisiti per la preparazione, la configurazione e la configurazione|[Scenario di ricerca avanzata](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-simulate#advanced-hunting-scenario) |Gli investigatori possono trovare i dati tramite la ricerca avanzata, la ricerca pivot per le entità influenzate e la creazione di rilevamenti personalizzati||||
 
 
 
 ## <a name="next-step"></a>Passaggio successivo
-|![Fase di preparazione](../../media/mtp/prep.png) <br>[Fase di preparazione](prepare-mtpeval.md) | Preparare l'ambiente pilota Microsoft 365 Defender
+|![Fase di preparazione](../../media/mtp/prep.png) <br>[Fase di preparazione](prepare-mtpeval.md) | Preparare l'ambiente pilota di Microsoft 365 Defender
 |:-------|:-----|

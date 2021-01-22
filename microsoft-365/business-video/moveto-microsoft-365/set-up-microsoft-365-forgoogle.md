@@ -1,5 +1,5 @@
 ---
-title: Configurare Microsoft 365 per la migrazione di Google Workspace
+title: Configurare la migrazione di Microsoft 365 per Google Workspace
 f1.keywords:
 - NOCSH
 ms.author: twerner
@@ -15,36 +15,37 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Informazioni su come configurare Microsoft 365 in modo che sia pronto per la migrazione da Google Workspace.
-ms.openlocfilehash: ec8813f62febbd1c4ee2afa6877e4be505a75a81
-ms.sourcegitcommit: 9833f95ab6ab95aea20d68a277246dca2223f93d
+ms.openlocfilehash: 42b8cd86ec03c4d4b43a4d32a1cee56e94bb7147
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "49794635"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49928187"
 ---
-# <a name="set-up-microsoft-365-for-google-workspace-migration"></a>Configurare Microsoft 365 per la migrazione di Google Workspace
+# <a name="set-up-microsoft-365-for-google-workspace-migration"></a>Configurare la migrazione di Microsoft 365 per Google Workspace
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4JD2Y?autoplay=false]
 
-Per eseguire la migrazione della posta elettronica, del calendario e dei contatti da Google Workspace, è necessario configurare Microsoft 365 Business Premium con un dominio temporaneo finché il dominio aziendale non è pronto per essere utilizzato con l'abbonamento.
+Per eseguire la migrazione di posta elettronica, calendario e contatti da Google Workspace, è necessario configurare Microsoft 365 Business Premium con un dominio temporaneo fino a quando il dominio aziendale non sarà pronto per l'uso con l'abbonamento.
 
 ## <a name="try-it"></a>Perché non provarlo? 
 
-1. Accedere a [Office.com](https://office.com)e scegliere **amministratore**.
-1. Nell'interfaccia di amministrazione di Microsoft 365 scegliere **Vai a installazione guidata**. 
-1. Facoltativamente, installare le app di Office e quindi fare clic su **continua**. 
-1. Dal momento che si esegue la migrazione da Google Workspace, scegliere il dominio predefinito e selezionare **Usa questo dominio**. 
-1. Immettere il nome dell'utente e i nomi utente desiderati, verificare l'indirizzo di posta elettronica in modo che sia possibile ricevere le password dell'utente, quindi selezionare **Aggiungi utenti e assegna licenze**. 
-1. Immettere gli indirizzi di posta elettronica in cui gli utenti riceveranno le nuove credenziali, selezionare **Invia messaggio di posta elettronica e continua**.
-1. **Continuare** quindi di nuovo per connettere il dominio temporaneo. 
-1. Facoltativamente, scegliere di informare gli utenti dell'organizzazione sui team, quindi selezionare **continua**.
-1. Espandi e controlla le **impostazioni di Android e iOS**, quindi seleziona **Crea criteri di gestione delle app per dispositivi mobili**.
-1. Fornire commenti e suggerimenti, se lo si desidera, e scegliere **Vai a interfaccia di amministrazione**.
+1. Sign in to [office.com](https://office.com), and choose **Admin.**
+1. Nell'interfaccia di amministrazione di Microsoft 365 scegliere **Vai alla configurazione guidata.** 
+1. Facoltativamente, installare le app di Office, quindi selezionare **Continua.** 
+1. Poiché si esegue la migrazione da Google Workspace, scegliere il dominio predefinito e selezionare **Usa questo dominio.** 
+1. Immettere i nomi degli utenti e i nomi utente desiderati, verificare l'indirizzo di posta elettronica in modo da poter ricevere le password dell'utente, quindi selezionare Aggiungi utenti e **assegnare licenze.** 
+1. Immettere gli indirizzi di posta elettronica in cui gli utenti riceveranno le nuove credenziali, selezionare **Invia messaggio di posta elettronica e continuare.**
+1. Continuare **quindi** di nuovo per connettere il dominio temporaneo. 
+1. Facoltativamente, scegliere di informare gli utenti dell'organizzazione di Teams, quindi selezionare **Continua.**
+1. Espandi ed esamina le impostazioni **di Android e iOS,** quindi seleziona **Crea criteri di gestione delle app per dispositivi mobili.**
+1. Inviare commenti e suggerimenti, se lo si desidera, e scegliere **Vai all'interfaccia di amministrazione.**
 
-Il passaggio successivo del processo consisterà nell'impostare le protezioni per l'organizzazione.
+Il passaggio successivo del processo consiste nel configurare le protezioni per l'organizzazione.

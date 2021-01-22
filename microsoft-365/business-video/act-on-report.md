@@ -16,32 +16,33 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Informazioni su come utilizzare i report sui dati di utilizzo.
-ms.openlocfilehash: 898f72f3c89981cc7ea8112cd157239d42b08d20
-ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
+description: Informazioni su come usare le informazioni dei report di utilizzo.
+ms.openlocfilehash: e69362a9190eda71cd7ab42fb404b6e715a5c48e
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49702174"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49927683"
 ---
 # <a name="review-usage-reports-in-microsoft-365"></a>Esaminare i report sull'utilizzo in Microsoft 365
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1SOFC?autoplay=false]
 
-Scoprire in che modo i dipendenti utilizzano servizi Microsoft 365 come la posta elettronica o OneDrive e intervenire.
+Scoprire in che modo i dipendenti usano i servizi di Microsoft 365, ad esempio la posta elettronica o OneDrive, ed eseguire un'azione.
 
-Nell'interfaccia di [Amministrazione](https://admin.microsoft.com), è possibile visualizzare tutti i report disponibili.
+[Nell'interfaccia di amministrazione](https://admin.microsoft.com)è possibile visualizzare tutti i report disponibili.
 
 ## <a name="try-it"></a>Perché non provarlo?
 
-1. Passare a **report** e quindi **utilizzo**. Trovare i dettagli per qualsiasi rapporto selezionando uno. Il report utenti attivi indica quali servizi vengono utilizzati maggiormente dalle persone dell'azienda.
-1. Ad esempio, è possibile esaminare il report di OneDrive. Qui è possibile vedere quante persone hanno un account, è anche possibile visualizzare il numero di file totali e attivi, nonché lo spazio di archiviazione utilizzato. Per visualizzare tutti gli altri report, passare al menu a discesa.
-1. In questo articolo è possibile esaminare il report sull'utilizzo delle app di posta elettronica e vedere quali metodi i dipendenti utilizzano di più per accedere al proprio indirizzo di posta elettronica. È inoltre possibile visualizzare le informazioni specifiche di un singolo utente, ma i dettagli sono nascosti per impostazione predefinita. Per visualizzare i singoli dettagli utente, passare a **Impostazioni**, quindi **Servizi & i componenti** aggiuntivi.
-1. Nel riquadro dei report, è possibile abilitare l'identificatore anonimo. A questo punto, chiudere il pannello e tornare a **report**, **utilizzo** e attività di **posta elettronica**. Qui è possibile visualizzare le informazioni specifiche di un singolo utente.
+1. Passare a **Report** e quindi a **Utilizzo.** Per trovare i dettagli di qualsiasi report, selezionarne uno. Il report Utenti attivi mostra quali servizi vengono utilizzati maggiormente dagli utenti dell'azienda.
+1. Ad esempio, è possibile procedere e osservare il report di OneDrive. Qui possiamo vedere quante persone hanno un account, puoi anche visualizzare il numero totale e i file attivi, nonché lo spazio di archiviazione usato. Per visualizzare tutti gli altri report, passare al menu a discesa.
+1. Qui è possibile esaminare il report sull'utilizzo dell'app di posta elettronica e vedere i metodi più utilizzati dai dipendenti per accedere alla posta elettronica. È inoltre possibile visualizzare le informazioni specifiche di un singolo utente, ma i dettagli sono nascosti per impostazione predefinita. Per visualizzare i dettagli dei singoli utenti, passare **a** Impostazioni e quindi & **componenti aggiuntivi.**
+1. Nel riquadro del report, è possibile attivare l'identificatore anonimo. A questo punto chiudiamo il pannello e torniamo a **Report,** **Utilizzo** e **Attività di posta elettronica.** Qui è possibile visualizzare le informazioni specifiche di un singolo utente.
 
-    Tenere presente che, se si rimane bloccati, è sempre possibile eseguire il backup in modo da fornire informazioni sul report specifico che si sta visualizzando.
+    Tenere presente che, in caso di problemi, è sempre possibile tornare alla Guida che fornisce informazioni sul report specifico visualizzato.

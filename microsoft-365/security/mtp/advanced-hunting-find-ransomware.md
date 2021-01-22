@@ -1,10 +1,10 @@
 ---
-title: Trovare ransomware con caccia avanzata
-description: Utilizzare la ricerca avanzata per individuare i dispositivi potenzialmente danneggiati da ransomware.
-keywords: caccia avanzata, ransomware, caccia alle minacce, Cyber-caccia alle minacce, ricerca, query, telemetria, Microsoft 365, Microsoft Threat Protection, Microsoft 365 Defender
+title: Trovare ransomware con ricerca avanzata
+description: Usare la ricerca avanzata per individuare i dispositivi potenzialmente interessati dal ransomware.
+keywords: ricerca avanzata, ransomware, ricerca delle minacce, ricerca delle minacce informatiche, ricerca, query, telemetria, Microsoft 365, Microsoft Threat Protection, Microsoft 365 Defender
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,44 +19,45 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: aaee2af4b3df849b57b8e1c18ab330603042fe96
-ms.sourcegitcommit: 8ad481ed61cb6dabf8afb0fb04296666fa166450
+ms.technology: m365d
+ms.openlocfilehash: f44a649035ef7f5993015142fb65fa29aaf5099f
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "49422905"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49929512"
 ---
-# <a name="hunt-for-ransomware"></a>Cerca per ransomware
+# <a name="hunt-for-ransomware"></a>Ricerca ransomware
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 **Si applica a:**
 - Microsoft 365 Defender
 
-Il ransomware si è evoluto rapidamente dall'essere un semplice malware che influisce sui singoli utenti di computer a una minaccia aziendale che ha un impatto grave sulle industrie e sulle istituzioni governative. Anche se [Microsoft 365 Defender](microsoft-threat-protection.md) fornisce numerose funzionalità che consentono di rilevare e bloccare ransomware e le attività di intrusione associate, l'esecuzione di controlli proattivi per i segni di compromesso può contribuire a garantire la protezione della rete.
+Il ransomware si è evoluto rapidamente dall'essere un semplice malware di commodity che interessa singoli utenti di computer a una minaccia aziendale che ha un forte impatto sui settori e sulle istituzioni governative. Anche [se Microsoft 365 Defender](microsoft-threat-protection.md) offre molte funzionalità che rilevano e bloccano ransomware e le attività di intrusione associate, l'esecuzione di controlli proattivi per individuare segni di compromissione può aiutare a proteggere la rete.
 
-> [Informazioni sul ransomware gestito dall'uomo](https://www.microsoft.com/security/blog/2020/03/05/human-operated-ransomware-attacks-a-preventable-disaster/)
+> [Informazioni sul ransomware gestito dall'utente](https://www.microsoft.com/security/blog/2020/03/05/human-operated-ransomware-attacks-a-preventable-disaster/)
 
-Con la [ricerca avanzata](advanced-hunting-overview.md) in Microsoft 365 Defender, è possibile creare query che consentono di individuare singoli elementi associati all'attività ransomware. È inoltre possibile eseguire query più sofisticate in grado di cercare i segni di attività e valutare tali segni per individuare i dispositivi che richiedono attenzione immediata.
+Con [la ricerca avanzata](advanced-hunting-overview.md) in Microsoft 365 Defender, è possibile creare query che individuano singoli artefatti associati all'attività ransomware. Puoi anche eseguire query più sofisticate in grado di cercare segni di attività e valutare tali segnali per trovare i dispositivi che richiedono un'attenzione immediata.
 
-## <a name="signs-of-ransomware-activity"></a>Segni dell'attività ransomware
-Microsoft Security ricercatori hanno osservato vari manufatti comuni ma sottili in molte campagne ransomware lanciate da intrusi sofisticati. Questi segni prevedono principalmente l'utilizzo di strumenti di sistema per preparare la crittografia, impedire il rilevamento e cancellare le evidenze forensi.
+## <a name="signs-of-ransomware-activity"></a>Segni di attività ransomware
+I ricercatori di sicurezza Microsoft hanno osservato vari artefatti comuni ma sottili in molte campagne ransomware avviate da intrusi sofisticati. Questi segni implicano principalmente l'uso di strumenti di sistema per preparare la crittografia, impedire il rilevamento e ottenere prove forensi chiare.
 
-| Attività ransomware | Strumenti comuni | Intento |
+| Attività ransomware | Strumenti comuni | Intent |
 |--|--|--|
-| Interrompi processi | _taskkill.exe_, _net stop_ | Verificare che i file destinati alla crittografia non siano bloccati da diverse applicazioni. |
-| Disattiva servizi | _sc.exe_ | -Verificare che i file destinati alla crittografia non siano bloccati da diverse applicazioni.<br>-Impedire al software di sicurezza di interrompere la crittografia e altre attività ransomware.<br>-Arrestare il software di backup dalla creazione di copie recuperabili.  |
-| Eliminare i registri e i file | _cipher.exe_, _wevtutil_, _fsutil.exe_ | Rimuovere le evidenze forensi. |
-| Eliminare le copie shadow  | _vsadmin.exe_, _wmic.exe_ | Rimuovere le copie shadow dell'unità che possono essere utilizzate per recuperare i file crittografati. |
-| Eliminare e arrestare i backup | _wbadmin.exe_ | Eliminare i backup esistenti e arrestare le attività di backup pianificate, impedendo il ripristino dopo la crittografia. |
-| Modificare le impostazioni di avvio | _bcdedit.exe_ | Disattivare gli avvisi e le correzioni automatiche dopo gli errori di avvio che possono essere causati dal processo di crittografia. |
-| Disattiva gli strumenti di ripristino | _schtasks.exe_, _regedit.exe_, | Disattivare Ripristino configurazione di sistema e altre opzioni di ripristino del sistema. |
+| Arrestare i processi | _taskkill.exe_, _net stop_ | Assicurarsi che i file destinati alla crittografia non siano bloccati da diverse applicazioni. |
+| Disattivare i servizi | _sc.exe_ | - Assicurarsi che i file destinati alla crittografia non siano bloccati da diverse applicazioni.<br>- Impedire al software di sicurezza di interrompere la crittografia e altre attività ransomware.<br>- Arrestare la creazione di copie ripristinabili da parte del software di backup.  |
+| Eliminare registri e file | _cipher.exe_, _wevtutil_, _fsutil.exe_ | Rimuovere le prove forensi. |
+| Eliminare copie shadow  | _vsadmin.exe_, _wmic.exe_ | Rimuovere le copie shadow dell'unità che possono essere utilizzate per recuperare i file crittografati. |
+| Eliminare e arrestare i backup | _wbadmin.exe_ | Eliminare i backup esistenti e interrompere le attività di backup pianificate, impedendo il ripristino dopo la crittografia. |
+| Modificare le impostazioni di avvio | _bcdedit.exe_ | Disattiva gli avvisi e le riparazioni automatiche dopo gli errori di avvio che possono essere causati dal processo di crittografia. |
+| Disattivare gli strumenti di ripristino | _schtasks.exe_, _regedit.exe_, | Disattivare Ripristino configurazione di sistema e altre opzioni di ripristino del sistema. |
 
-## <a name="check-for-individual-signs-of-ransomware-activity"></a>Controllare i singoli segni dell'attività ransomware
-Molte attività che costituiscono il comportamento di ransomware, incluse le attività descritte nella sezione precedente, possono essere benigne. Quando si utilizzano le query seguenti per individuare ransomware, eseguire più di una query per verificare se gli stessi dispositivi presentano vari segni di possibili attività ransomware.
+## <a name="check-for-individual-signs-of-ransomware-activity"></a>Verificare la presenza di segni individuali di attività ransomware
+Molte attività che costituiscono il comportamento ransomware, incluse le attività descritte nella sezione precedente, possono essere innocue. When using the following queries to locate ransomware, run more than one query to check whether the same devices are exhibiting various signs of possible ransomware activity.
 
 ### <a name="stopping-multiple-processes-using-_taskkillexe_"></a>Arresto di più processi tramite _taskkill.exe_
-Questa query consente di verificare che i tentativi di arrestare almeno 10 processi distinti utilizzino l'utilità _taskkill.exe_ . [Esegui query](https://security.microsoft.com/hunting?query=H4sIAAAAAAAEAI2RS2vCUBCFz7rgfwiuIkit3eumVSgtpYvuS9SLDTY2eLUvxN_eb8YHKlFkyNzJzDkn505aailRX7mmGlFlmhNBhUrOSGeuT3L0s6QqNaMagolEcMyCbApjx2e8TYhcH8Q1mB-emq50z_lF39gvBzo9-gEF-6Yhlyh9653ejCfRK6zCsaZfuJOu-x2jkqqN-0Yls-8-gp6dZ52OVuT6Sad1plulyN0KIkMt15_zt7zHDe8OBwv3btoJToa7Tnp0T8Ou9WzfT761gPOm3_FQ16Zxp2qcCdg33_rlyokG-iXv7_4BRNMnhkortmvTW6rqnZ7bgP2Vtm70D3d9wcFaAgAA&runQuery=true&timeRangeId=week)
+Questa query verifica la presenza di tentativi di  arrestare almeno 10 processi separati utilizzando ltaskkill.exeutilitura. [Esegui query](https://security.microsoft.com/hunting?query=H4sIAAAAAAAEAI2RS2vCUBCFz7rgfwiuIkit3eumVSgtpYvuS9SLDTY2eLUvxN_eb8YHKlFkyNzJzDkn505aailRX7mmGlFlmhNBhUrOSGeuT3L0s6QqNaMagolEcMyCbApjx2e8TYhcH8Q1mB-emq50z_lF39gvBzo9-gEF-6Yhlyh9653ejCfRK6zCsaZfuJOu-x2jkqqN-0Yls-8-gp6dZ52OVuT6Sad1plulyN0KIkMt15_zt7zHDe8OBwv3btoJToa7Tnp0T8Ou9WzfT761gPOm3_FQ16Zxp2qcCdg33_rlyokG-iXv7_4BRNMnhkortmvTW6rqnZ7bgP2Vtm70D3d9wcFaAgAA&runQuery=true&timeRangeId=week)
 
 ```kusto
 // Find attempts to stop processes using taskkill.exe
@@ -67,8 +68,8 @@ DeviceProcessEvents
 | where taskKillCount > 10
 ```
   
-### <a name="stopping-processes-using-_net-stop_"></a>Interruzione dei processi tramite _net stop_
-Questa query consente di verificare che i tentativi di arrestare almeno 10 processi distinti utilizzino il comando _net stop_ . [Esegui query](https://security.microsoft.com/hunting?query=H4sIAAAAAAAEAI2RQUvDUBCE5yz0P4ScUijWereXVkGQIti7aA1pqakhL7VVxN_ebzc1NBChPLJv2Z2ZN5sdaqhId1ppozeyF1WcVLkK7kCl0gcx-F2QFSrJFmACJ3XMlmgKGfmGWnXC6OlCU2qfIIz12OLfUk_h2FuG_IG505JayRdpDit3bIW33B2M3WeGSqIRrvudTJvpnWzmPKvc6JcYHx1eEvd8savV07e9TchzTt198AlNZ0kluNLfjHHjIPAvak4J_tvx9XtPR6ypbn1icxShvGgqyVkO-hrAm7VUrRcaTWOs6T_7hs7XjfSqL-Lpvu5BDLxjqKRjI9a9Juvew__T2x5HutIB3T1qt4QCAAA&runQuery=true&timeRangeId=week)
+### <a name="stopping-processes-using-_net-stop_"></a>Arresto dei processi tramite _net stop_
+Questa query verifica la presenza di tentativi di arrestare almeno 10 processi separati utilizzando il _comando net stop._ [Esegui query](https://security.microsoft.com/hunting?query=H4sIAAAAAAAEAI2RQUvDUBCE5yz0P4ScUijWereXVkGQIti7aA1pqakhL7VVxN_ebzc1NBChPLJv2Z2ZN5sdaqhId1ppozeyF1WcVLkK7kCl0gcx-F2QFSrJFmACJ3XMlmgKGfmGWnXC6OlCU2qfIIz12OLfUk_h2FuG_IG505JayRdpDit3bIW33B2M3WeGSqIRrvudTJvpnWzmPKvc6JcYHx1eEvd8savV07e9TchzTt198AlNZ0kluNLfjHHjIPAvak4J_tvx9XtPR6ypbn1icxShvGgqyVkO-hrAm7VUrRcaTWOs6T_7hs7XjfSqL-Lpvu5BDLxjqKRjI9a9Juvew__T2x5HutIB3T1qt4QCAAA&runQuery=true&timeRangeId=week)
 
 ```kusto
 // Find attempts to stop processes using net stop
@@ -78,8 +79,8 @@ DeviceProcessEvents
 | summarize netStopCount = dcount(ProcessCommandLine), NetStopList = make_set(ProcessCommandLine) by DeviceId, bin(Timestamp, 2m)
 | where netStopCount > 10
 ```
-### <a name="deletion-of-data-on-multiple-drives-using-_cipherexe_"></a>Eliminazione dei dati su più unità tramite _cipher.exe_
-Questa query consente di controllare i tentativi di eliminazione dei dati su più unità tramite _cipher.exe_. Questa attività è in genere fatta da ransomware per impedire il ripristino dei dati dopo la crittografia. [Esegui query](https://security.microsoft.com/hunting?query=H4sIAAAAAAAEAI1SXUvDQBCcZ8H_cOQpgWLoD7AvVUEo4oPvElO1pblUcmn9QPztzk6TEuEsIdzdZndndm73cuRwWGDLb0PrhWfDs8Qab1jhmX8X3D-4HJbcK66W0Rqv8hT8K4RsiPW0PHbMasVQdbiGf3vaAec4wxWtPT0lz3vhSsUCrpVVE33I_Cb6vdNhTA9EeeVaVc8KDjOugmq2SDFlrSyKvCHS1NwJZ55L_HBPondNGDGWXP2JdyMnv927UnXHWwf6l4MunupXTOPfXszVT8_smriFOCxrRU-QclOQDLgCNRwQ1u8vZc8H2o1xp-7a7U1NefSko6pnmKjakNVi4chpiA39j-rGeF6HJ3xyH76NW2ZMFLGsNDJ9i05pZSPmVdDfq-jncfqtOuU5zSuQz6Zq92w7Hfbm-9cUm-d_vZ9J9S81O2KIfAMAAA&runQuery=true&timeRangeId=week)
+### <a name="deletion-of-data-on-multiple-drives-using-_cipherexe_"></a>Eliminazione dei dati in più unità _tramitecipher.exe_
+Questa query verifica la presenza di tentativi di eliminazione dei dati in più unità _utilizzandocipher.exe_. Questa attività viene in genere eseguita da ransomware per impedire il ripristino dei dati dopo la crittografia. [Esegui query](https://security.microsoft.com/hunting?query=H4sIAAAAAAAEAI1SXUvDQBCcZ8H_cOQpgWLoD7AvVUEo4oPvElO1pblUcmn9QPztzk6TEuEsIdzdZndndm73cuRwWGDLb0PrhWfDs8Qab1jhmX8X3D-4HJbcK66W0Rqv8hT8K4RsiPW0PHbMasVQdbiGf3vaAec4wxWtPT0lz3vhSsUCrpVVE33I_Cb6vdNhTA9EeeVaVc8KDjOugmq2SDFlrSyKvCHS1NwJZ55L_HBPondNGDGWXP2JdyMnv927UnXHWwf6l4MunupXTOPfXszVT8_smriFOCxrRU-QclOQDLgCNRwQ1u8vZc8H2o1xp-7a7U1NefSko6pnmKjakNVi4chpiA39j-rGeF6HJ3xyH76NW2ZMFLGsNDJ9i05pZSPmVdDfq-jncfqtOuU5zSuQz6Zq92w7Hfbm-9cUm-d_vZ9J9S81O2KIfAMAAA&runQuery=true&timeRangeId=week)
 
 ```kusto
 // Look for cipher.exe deleting data from multiple drives
@@ -94,8 +95,8 @@ CipherList = make_set(ProcessCommandLine) by DeviceId, bin(Timestamp, 1m)
 | where CipherCount > 1
 ```
 
-### <a name="clearing-of-forensic-evidence-from-event-logs-using-_wevtutil_"></a>Eliminazione delle evidenze forensi dai registri eventi mediante _wevtutil_
-In questa query vengono verificati i tentativi di cancellare almeno 10 voci di log dai registri eventi mediante _wevtutil_. [Esegui query](https://security.microsoft.com/hunting?query=H4sIAAAAAAAEAJWRTU_CQBCG37OJ_2HDqSQkwMGjXgoHEg4cUI-m2hUaqGu6BaPxx_vsEFCTxmA225nOvB_tzFBDOc0VOBuyZ2JD3CnKEwMVpzfyPbVWlba8t9Sdnsi9CsPXdLfWf7Wq4xm0QuVSF5oYv4LhtQAfLIucKXWvF5gH5Ke5rak1prKEVRu2xalG3emGW6AdlGmsUv1O5m-fnLzmFHiV_G9FTKg1lUjs6Z5vucPvljsD0TOXhP6_Vm7841dFZnPAN2A_DDu36eSnCSbNnc3B6Zpb4nasZGf59zWA963orZdcEiKelBNvQ_fBNny-utOj3nn-3OUMxMA6CZV1bCt1r8i6d_TXFNKWxxrpC48hm8miAgAA&runQuery=true&timeRangeId=week)
+### <a name="clearing-of-forensic-evidence-from-event-logs-using-_wevtutil_"></a>Cancellazione delle prove forensi dai registri eventi tramite _wevtutil_
+Questa query verifica la presenza di tentativi di cancellare almeno 10 voci di registro dai registri eventi tramite _wevtutil._ [Esegui query](https://security.microsoft.com/hunting?query=H4sIAAAAAAAEAJWRTU_CQBCG37OJ_2HDqSQkwMGjXgoHEg4cUI-m2hUaqGu6BaPxx_vsEFCTxmA225nOvB_tzFBDOc0VOBuyZ2JD3CnKEwMVpzfyPbVWlba8t9Sdnsi9CsPXdLfWf7Wq4xm0QuVSF5oYv4LhtQAfLIucKXWvF5gH5Ke5rak1prKEVRu2xalG3emGW6AdlGmsUv1O5m-fnLzmFHiV_G9FTKg1lUjs6Z5vucPvljsD0TOXhP6_Vm7841dFZnPAN2A_DDu36eSnCSbNnc3B6Zpb4nasZGf59zWA963orZdcEiKelBNvQ_fBNny-utOj3nn-3OUMxMA6CZV1bCt1r8i6d_TXFNKWxxrpC48hm8miAgAA&runQuery=true&timeRangeId=week)
 
 ```kusto
 // Look for use of wevtutil to clear multiple logs
@@ -107,7 +108,7 @@ DeviceProcessEvents
 ```
 
 ### <a name="turning-off-services-using-_scexe_"></a>Disattivazione dei servizi tramite _sc.exe_
-Questa query verifica se i tentativi di disattivazione di almeno 10 servizi esistenti vengono eseguiti utilizzando _sc.exe_. [Esegui query](https://security.microsoft.com/hunting?query=H4sIAAAAAAAEAKWST2vCQBDF31nodwg5RZCqhx7bi3ooeCjovaQxraIxxfU_fvj-ZoiiEIqlhM3Ozrz3ZnZm22or0lAl3xzrk33FHpTpUbn2rEgTzfCk-tACa6kvR-Qgt5wzrKAHNdTHOnveiJZVLGiAP4e5rpAnFHaauoZlGMMqHLsmT6FvfC-slFylEnWpoVnLvM3Twy74UnJNuJdVa6gpnsAe-81iVzbE3_kZiCV9mlHZf3Sue5pzii-3C9pU3BWYo_NGKPdvGJZh4x2N9Owzyi6e5K5qmmrVKg_9dNY11hzvu0_8fu0ItQP_6zfxCqLlEUMlNVO36BNW_ax_74K9l646-gFts39I1AIAAA&runQuery=true&timeRangeId=week)
+Questa query verifica la presenza di tentativi di disattivare almeno 10 servizi esistenti _utilizzando_ sc.exe. [Esegui query](https://security.microsoft.com/hunting?query=H4sIAAAAAAAEAKWST2vCQBDF31nodwg5RZCqhx7bi3ooeCjovaQxraIxxfU_fvj-ZoiiEIqlhM3Ozrz3ZnZm22or0lAl3xzrk33FHpTpUbn2rEgTzfCk-tACa6kvR-Qgt5wzrKAHNdTHOnveiJZVLGiAP4e5rpAnFHaauoZlGMMqHLsmT6FvfC-slFylEnWpoVnLvM3Twy74UnJNuJdVa6gpnsAe-81iVzbE3_kZiCV9mlHZf3Sue5pzii-3C9pU3BWYo_NGKPdvGJZh4x2N9Owzyi6e5K5qmmrVKg_9dNY11hzvu0_8fu0ItQP_6zfxCqLlEUMlNVO36BNW_ax_74K9l646-gFts39I1AIAAA&runQuery=true&timeRangeId=week)
 
 ```kusto
 // Look for sc.exe disabling services
@@ -118,8 +119,8 @@ DeviceProcessEvents
 | where ScDisableCount > 10
 ```
 
-### <a name="turning-off-system-restore"></a>Disattivazione del ripristino di sistema
-Questa query identifica i tentativi di arrestare il ripristino del sistema e impedire al sistema di creare punti di ripristino, che possono essere utilizzati per recuperare i dati crittografati da ransomware. [Esegui query](https://security.microsoft.com/hunting?query=H4sIAAAAAAAEAK2S3UrDQBCFz7XgO6y9id4o6HWvrIVCkaJPENOYFNumZGO1ID673w4xJA1isbJMZnZ-zpzM7EiptlooQc9UqjDLc-7wp1qrwj7Via44MzK35FTotTI5PXMr0aVe8cy15NzoGo-zqg_0m3KQSsRpQtbC6uMGpdt3jHeJfU_GymqG-uQb9XpcEn1HIuvmGpZT0Aq99Dim4G3ousNO8K04sSE6EEN22kL6jvzO-LaDNW2QzqxLmGBsPo9vUMt_oA8Na3DQv3vwcmPiifpmds48jkhut8T2FLikxm_T4bI_m_6uQt-wrXO28lPPSBcdziOqPFlP9RYy47tDKtuZM07hVtSvaJ_HYRPL63-NyMgtmtWv5684jy2WDx2O0ZEM562ZBLQvURxur6gDAAA&runQuery=true&timeRangeId=week)
+### <a name="turning-off-system-restore"></a>Disattivazione di Ripristino configurazione di sistema
+Questa query identifica i tentativi di arrestare Ripristino configurazione di sistema e impedire al sistema di creare punti di ripristino, che possono essere utilizzati per recuperare i dati crittografati da ransomware. [Esegui query](https://security.microsoft.com/hunting?query=H4sIAAAAAAAEAK2S3UrDQBCFz7XgO6y9id4o6HWvrIVCkaJPENOYFNumZGO1ID673w4xJA1isbJMZnZ-zpzM7EiptlooQc9UqjDLc-7wp1qrwj7Via44MzK35FTotTI5PXMr0aVe8cy15NzoGo-zqg_0m3KQSsRpQtbC6uMGpdt3jHeJfU_GymqG-uQb9XpcEn1HIuvmGpZT0Aq99Dim4G3ousNO8K04sSE6EEN22kL6jvzO-LaDNW2QzqxLmGBsPo9vUMt_oA8Na3DQv3vwcmPiifpmds48jkhut8T2FLikxm_T4bI_m_6uQt-wrXO28lPPSBcdziOqPFlP9RYy47tDKtuZM07hVtSvaJ_HYRPL63-NyMgtmtWv5684jy2WDx2O0ZEM562ZBLQvURxur6gDAAA&runQuery=true&timeRangeId=week)
 
 ```kusto
 DeviceProcessEvents
@@ -134,8 +135,8 @@ and ProcessCommandLine has 'Change' and ProcessCommandLine has 'SystemRestore'
 and ProcessCommandLine has 'disable'
 ```
 
-### <a name="backup-deletion"></a>Eliminazione dei backup
-Questa query identifica l'utilizzo di _wmic.exe_ per eliminare gli snapshot della copia shadow prima della crittografia. [Esegui query](https://security.microsoft.com/hunting?query=H4sIAAAAAAAEAJWS2wqCQBCG_-ugd5CupTfoqgMIEV70AqFLGp5QyYLo2fsavEjxwlhWZ7-df2Z2dndyuitVxD9UrdKshrGHOxVqsZda6CVPnRJYzfR0QJVhnXRRbmSjN98VXrlFXEMfzNWkfphti50zLmSMdURfmFcCaSxqY3aMX4eqVKUn1OsV_8eLWX_rbwcVVhblBovY8bT76U-AxoedWeeWp7WzV0YDMqSQFNZavuuopnHH_Iku-lbJnLPMyxnYDTp4bZ5P9M5uNpsZIWSn7l_CuNoPSggb4z4CAAA&runQuery=true&timeRangeId=week)
+### <a name="backup-deletion"></a>Eliminazione backup
+Questa query identifica l'utilizzo _wmic.exe_ per eliminare snapshot della copia shadow prima della crittografia. [Esegui query](https://security.microsoft.com/hunting?query=H4sIAAAAAAAEAJWS2wqCQBCG_-ugd5CupTfoqgMIEV70AqFLGp5QyYLo2fsavEjxwlhWZ7-df2Z2dndyuitVxD9UrdKshrGHOxVqsZda6CVPnRJYzfR0QJVhnXRRbmSjN98VXrlFXEMfzNWkfphti50zLmSMdURfmFcCaSxqY3aMX4eqVKUn1OsV_8eLWX_rbwcVVhblBovY8bT76U-AxoedWeeWp7WzV0YDMqSQFNZavuuopnHH_Iku-lbJnLPMyxnYDTp4bZ5P9M5uNpsZIWSn7l_CuNoPSggb4z4CAAA&runQuery=true&timeRangeId=week)
 
 ```kusto
 DeviceProcessEvents
@@ -145,13 +146,13 @@ DeviceProcessEvents
 ProcessCommandLine, InitiatingProcessIntegrityLevel, InitiatingProcessParentFileName
 ```
 
-## <a name="check-for-multiple-signs-of-ransomware-activity"></a>Controllare se sono presenti più segni di attività ransomware
-Invece di eseguire diverse query separatamente, è anche possibile utilizzare una query completa che consente di verificare la possibilità di individuare più segni di attività ransomware per identificare i dispositivi coinvolti. La query consolidata seguente:
-- Cerca entrambi i segni relativamente concreti e sottili dell'attività ransomware
-- Pesa la presenza di questi segni
-- Identifica i dispositivi con una maggiore probabilità di essere bersagli di ransomware 
+## <a name="check-for-multiple-signs-of-ransomware-activity"></a>Verificare la presenza di più segni di attività ransomware
+Invece di eseguire diverse query separatamente, puoi anche usare una query completa che controlla la presenza di più segni di attività ransomware per identificare i dispositivi interessati. La query consolidata seguente:
+- Cerca segni relativamente concreti e discreti dell'attività ransomware
+- Valuta la presenza di questi segni
+- Identifica i dispositivi con una maggiore probabilità di essere obiettivi di ransomware 
 
-Quando viene eseguito, questa query consolidata restituisce un elenco di dispositivi che presentano più segni di attacco. Viene inoltre visualizzato il numero di ogni tipo di attività ransomware. Per eseguire questa query consolidata, copiarla direttamente nell' [editor di query di ricerca avanzata](https://security.microsoft.com/advanced-hunting). 
+Quando viene eseguita, questa query consolidata restituisce un elenco di dispositivi con più segni di attacco. Viene visualizzato anche il conteggio di ogni tipo di attività ransomware. Per eseguire questa query consolidata, copiarla direttamente nell'editor di [query di ricerca avanzata.](https://security.microsoft.com/advanced-hunting) 
 
 ```kusto
 // Find attempts to stop processes using taskkill.exe
@@ -225,20 +226,20 @@ ScDisable = iff(make_set(ScDisableUse) contains "1", 1, 0), TotalEvidenceCount =
 | extend UniqueEvidenceCount = BcdEdit + NetStop10PlusCommands + Wevtutil10PlusLogsCleared + CipherMultipleDrives + Wbadmin + Fsutil + TaskKill10PlusCommand + VssAdminShadow + ScDisable + ShadowCopyDelete
 | where UniqueEvidenceCount > 2
 ```
-### <a name="understand-and-tweak-the-query-results"></a>Comprendere e ottimizzare i risultati della query
+### <a name="understand-and-tweak-the-query-results"></a>Comprendere e modificare i risultati della query
 La query consolidata restituisce i risultati seguenti:
 
-- **DeviceID**— identifica il dispositivo coinvolto 
-- **Timestamp**-prima volta che è stato osservato un segno di attività ransomware nel dispositivo
-- **Segni di attività specifici**, ovvero il numero di ogni segno visualizzato in più colonne, ad esempio _BcdEdit_ o _FsUtil_
-- **TotalEvidenceCount**-numero di segni osservati
-- **UniqueEvidenceCount**-numero di tipi di segni osservati
+- **DeviceId:** identifica il dispositivo interessato 
+- **TimeStamp:** prima volta che è stato rilevato un segnale di attività ransomware nel dispositivo
+- **Segni di attività specifici:** il conteggio di ogni segno visualizzato in più colonne, ad esempio _BcdEdit_ o _FsUtil_
+- **TotalEvidenceCount**- Numero di segni osservati
+- **UniqueEvidenceCount**: numero di tipi di segni osservati
 
-![Immagine dei risultati delle query per l'attività ransomware](../../media/advanced-hunting-ransomware-query.png)
+![Immagine dei risultati della query per l'attività ransomware](../../media/advanced-hunting-ransomware-query.png)
 
-*Risultati delle query che mostrano i dispositivi coinvolti e i conteggi di vari segni dell'attività ransomware*
+*Risultati delle query che mostrano i dispositivi interessati e i conteggi di vari segni di attività ransomware*
 
-Per impostazione predefinita, il risultato della query elenca solo i dispositivi con più di due tipi di attività ransomware. Per visualizzare tutti i dispositivi con qualsiasi segno di attività ransomware, modificare l' `where` operatore seguente e impostare il numero su zero (0). Per visualizzare meno dispositivi, impostare un numero più alto. 
+Per impostazione predefinita, i risultati della query elencano solo i dispositivi con più di due tipi di attività ransomware. Per visualizzare tutti i dispositivi con qualsiasi segno di attività ransomware, modificare `where` l'operatore seguente e impostare il numero su zero (0). Per visualizzare un numero inferiore di dispositivi, imposta un numero superiore. 
 
 ```kusto
 | where UniqueEvidenceCount > 2

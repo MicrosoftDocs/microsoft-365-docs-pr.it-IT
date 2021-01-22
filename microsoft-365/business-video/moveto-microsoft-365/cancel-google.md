@@ -1,5 +1,5 @@
 ---
-title: Annullare l'area di lavoro di Google (e mantenere il dominio)
+title: Annullare Google Workspace (e mantenere il dominio)
 f1.keywords:
 - NOCSH
 ms.author: twerner
@@ -15,27 +15,28 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Informazioni su come annullare la sottoscrizione di Google Workspace ma mantenere il dominio.
-ms.openlocfilehash: f4cbb09907da399ab3fed07e7826c0a217b494f0
-ms.sourcegitcommit: 9833f95ab6ab95aea20d68a277246dca2223f93d
+description: Informazioni su come annullare l'abbonamento a Google Workspace ma mantenere il dominio.
+ms.openlocfilehash: 1ad7e4ae3583063281ac5b5e9510be539b1378dd
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "49794627"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49928259"
 ---
-# <a name="cancel-google-workspace-subscription"></a>Annulla sottoscrizione di Google Workspace
+# <a name="cancel-google-workspace-subscription"></a>Annullare l'abbonamento a Google Workspace
 
-1. Accedere a [Google admin](https://admin.google.com/) e passare a **fatturazione**.
-1. Nell'elenco **abbonamenti** selezionare l'abbonamento a G Suite, **annullare l'abbonamento** e quindi scegliere **continua**.
+1. Accedi a [Google Admin e](https://admin.google.com/) passa a **Fatturazione.**
+1. **Nell'elenco Sottoscrizioni** scegliere l'abbonamento a G Suite, **Annulla abbonamento** e quindi **scegliere Continua.**
 
     > [!IMPORTANT]
-    > l'abbonamento verrà annullato immediatamente e non sarà possibile annullare questa azione.
+    > l'abbonamento verrà annullato immediatamente e non sarà possibile annullare l'azione.
 
-    :::image type="content" source="../../media/cancelgoogleworspace.png" alt-text="Schermata della pagina di fatturazione di Google admin.":::
+    :::image type="content" source="../../media/cancelgoogleworspace.png" alt-text="Screenshot della pagina Fatturazione dell'amministratore di Google.":::
 
-Si noti che è possibile che la registrazione del dominio non venga visualizzata nell'elenco abbonamenti se il provider host DNS non è Google Domains.
+Si noti che se il provider host DNS non è google, è possibile che la registrazione del dominio non sia presente nell'elenco delle sottoscrizioni.

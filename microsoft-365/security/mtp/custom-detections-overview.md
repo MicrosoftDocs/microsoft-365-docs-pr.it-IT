@@ -1,10 +1,10 @@
 ---
 title: Panoramica dei rilevamenti personalizzati in Microsoft 365 Defender
-description: Comprendere come è possibile utilizzare la ricerca avanzata per creare rilevamenti personalizzati e generare avvisi
-keywords: caccia avanzata, caccia alle minacce, Cyber Threat Hunting, Microsoft Threat Protection, Microsoft 365, MTP, M365, Search, query, telemetria, rilevamenti personalizzati, schema, kusto, Microsoft 365, Microsoft Threat Protection
+description: Informazioni su come usare la ricerca avanzata per creare rilevamenti personalizzati e generare avvisi
+keywords: ricerca avanzata, ricerca delle minacce, ricerca delle minacce informatiche, protezione dalle minacce Microsoft, Microsoft 365, mtp, m365, ricerca, query, telemetria, rilevamenti personalizzati, schema, kusto, Microsoft 365, Microsoft Threat Protection
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -17,12 +17,13 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: fe2b9f1b52fa2c8d9031bb58597992f3dda91520
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.technology: m365d
+ms.openlocfilehash: ae9617a55fd5efb40a3aba07202ebfb1494d4db6
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48843913"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49928809"
 ---
 # <a name="custom-detections-overview"></a>Panoramica dei rilevamenti personalizzati
 
@@ -32,14 +33,14 @@ ms.locfileid: "48843913"
 **Si applica a:**
 - Microsoft 365 Defender
 
-Con i rilevamenti personalizzati, è possibile monitorare e rispondere in modo proattivo ai vari eventi e Stati del sistema, tra cui l'attività di violazione sospetta e gli endpoint non configurati correttamente. Ciò è reso possibile dalle regole di rilevamento personalizzabili che attivano automaticamente gli avvisi e le azioni di risposta.
+Con i rilevamenti personalizzati, è possibile monitorare e rispondere in modo proattivo a vari eventi e stati di sistema, tra cui attività di violazione sospetta e endpoint non configurati correttamente. Ciò è reso possibile da regole di rilevamento personalizzabili che attivano automaticamente avvisi e azioni di risposta.
 
-I rilevamenti personalizzati funzionano con la [ricerca avanzata](advanced-hunting-overview.md), che fornisce un linguaggio di query potente e flessibile che copre un ampio insieme di informazioni di sistema e eventi dalla rete. È possibile impostare gli avvisi e le azioni di risposta ogni volta che si verificano delle corrispondenze.
+I rilevamenti personalizzati funzionano con [la](advanced-hunting-overview.md)ricerca avanzata, che offre un linguaggio di query potente e flessibile che copre un'ampia gamma di informazioni sugli eventi e sul sistema dalla rete. Puoi impostarli per l'esecuzione a intervalli regolari, generando avvisi ed eseguire azioni di risposta ogni volta che sono presenti corrispondenze.
 
-I rilevamenti personalizzati offrono:
-- Avvisi per i rilevamenti basati su regole creati da query di ricerca avanzate
+I rilevamenti personalizzati forniscono:
+- Avvisi per i rilevamenti basati su regole creati da query di ricerca avanzata
 - Azioni di risposta automatica
 
 ## <a name="related-topic"></a>Argomento correlato
-- [Creare e gestire le regole di rilevamento personalizzate](custom-detection-rules.md)
+- [Creare e gestire regole di rilevamento personalizzate](custom-detection-rules.md)
 - [Panoramica della ricerca avanzata](advanced-hunting-overview.md)

@@ -1,5 +1,5 @@
 ---
-title: Microsoft bookings-informazioni generali
+title: Microsoft Bookings - panoramica
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -16,39 +16,40 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Informazioni su Microsoft bookings.
-ms.openlocfilehash: a325dbb12d7442317ef5c3657ba4ab249d10ffe1
-ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
+description: Informazioni su Microsoft Bookings.
+ms.openlocfilehash: 67ed948793b4d43f92b376d7e299564f5d734550
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49702101"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49928127"
 ---
-# <a name="overview-of-microsoft-bookings"></a>Informazioni generali su Microsoft bookings
+# <a name="overview-of-microsoft-bookings"></a>Panoramica di Microsoft Bookings
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE26B1q?autoplay=false]
 
-Microsoft Bookings è un'app online e per dispositivi mobili per le piccole aziende che forniscono servizi ai clienti su base di appuntamenti. Tra gli esempi di business vi sono saloni per parrucchieri, uffici odontoiatrici, ZPS, studi legali, provider di servizi finanziari, consulenti e negozi automatici.
+Microsoft Bookings è un'app online e mobile per piccole imprese che fornisce servizi ai clienti su appuntamento. Esempi di aziende sono parrucchieri, studi dentisti, centri termali, studi legali, provider di servizi finanziari, consulenti e auto negozio.
 
-## <a name="get-started-with-bookings"></a>Introduzione alle prenotazioni
+## <a name="get-started-with-bookings"></a>Introduzione a Bookings
 
-1. Per iniziare, accedere a Microsoft 365 e selezionare **prenotazioni** dall'icona di avvio delle app.
-1. Scegliere **Get it now** nella pagina **bookings** .
-1. Aggiungere le informazioni aziendali e si è pronti per iniziare a utilizzare le prenotazioni.
+1. Per iniziare ad accedere a Microsoft 365 e selezionare **Prenotazioni dall'icona** di avvio delle app.
+1. Choose **Get it now** on the **Bookings** page.
+1. Aggiungi le informazioni aziendali e sei pronto per iniziare a usare Bookings.
 
-    Per gestire le prenotazioni sul dispositivo mobile, scaricare le prenotazioni dall'App Store.
+    Per gestire le prenotazioni sul dispositivo mobile, scarica Bookings dal tuo App Store.
 
-## <a name="use-bookings"></a>Utilizzo delle prenotazioni
+## <a name="use-bookings"></a>Usare Bookings
 
-- Nel dashboard **bookings** , esaminare l'indirizzo aziendale, le ore e altre informazioni aziendali e aggiornare, se necessario.
-- Nella pagina del **Calendario** , è possibile aggiungere o aggiornare gli appuntamenti dei clienti. È possibile visualizzare il calendario in base al giorno, alla settimana o al mese.
-- Nella pagina **clienti** , i nuovi clienti possono essere aggiunti o importati da altri account come Gmail o da un dispositivo.
-- La pagina del **personale** consente di aggiungere e gestire il personale. È importante aggiungere gli indirizzi di posta elettronica in modo che possano ricevere notifiche immediate dei nuovi appuntamenti.
-- La pagina **Servizi** consente di aggiungere o gestire i servizi scelti dai clienti al momento della prenotazione di un appuntamento.
-- Infine, nella pagina **bookings** sono disponibili molte impostazioni, ad esempio i criteri di pianificazione, le notifiche tramite posta elettronica, le impostazioni dei fusi orari e altro ancora.
+- Nel dashboard **di Bookings** esamina l'indirizzo dell'azienda, l'orario e altre informazioni aziendali e aggiorna, se necessario.
+- Nella pagina **Calendario,** l'utente e il personale possono aggiungere o aggiornare gli appuntamenti dei clienti. È possibile visualizzare il calendario per giorno, settimana o mese.
+- Nella pagina **Clienti,** i nuovi clienti possono essere aggiunti o importati da altri account come Gmail o un dispositivo.
+- La **pagina** Personale consente di aggiungere e gestire il personale. È importante aggiungere i propri indirizzi di posta elettronica in modo che possano ricevere notifiche immediate di nuovi appuntamenti.
+- La **pagina Servizi** consente di aggiungere o gestire i servizi che i clienti scelgono quando prenotano un appuntamento.
+- Infine, nella pagina **Prenotazioni** sono disponibili molte impostazioni come i criteri di pianificazione, le notifiche tramite posta elettronica, le impostazioni del fuso orario e altro ancora.
 
-Dopo aver salvato e pubblicato il calendario delle prenotazioni, è possibile incorporarlo nel sito Web o nella pagina di Facebook dell'azienda.
+Dopo aver salvato e pubblicato il calendario di Bookings, è possibile incorporarlo nel sito Web o nella pagina Facebook dell'azienda.

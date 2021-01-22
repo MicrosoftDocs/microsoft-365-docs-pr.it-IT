@@ -16,41 +16,42 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Informazioni su come gestire i criteri di prevenzione della perdita dei dati.
-ms.openlocfilehash: 93c06af0203a5eb590d22d86e597d7485d7af238
-ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
+description: Informazioni su come gestire la configurazione dei criteri di prevenzione della perdita dei dati.
+ms.openlocfilehash: e963cf85fee887b6e91c6e54b00aaa9e5174e3b6
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49702907"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49927959"
 ---
 # <a name="prevent-data-loss-with-dlp"></a>Prevenire la perdita di dati con DLP
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3TGvL?autoplay=false]
 
-I criteri di prevenzione della perdita di dati consentono di identificare e proteggere le informazioni riservate dell'azienda, come i numeri di previdenza sociale o i record medici. 
+I criteri di prevenzione della perdita dei dati consentono di identificare e proteggere le informazioni riservate dell'azienda, ad esempio i numeri di previdenza sociale o le cartelle cliniche. 
 
 ## <a name="try-it"></a>Perché non provarlo?
 
-1. Per iniziare, passare all'interfaccia di [Amministrazione](https://admin.microsoft.com)e selezionare **Setup**.
-1. Scorrere verso il basso per **impostare la prevenzione della perdita di dati**, quindi selezionare **Visualizza** e quindi **Gestisci**.
-1. Per modificare un criterio, selezionarlo, scegliere **modifica criterio** e quindi selezionare le modifiche desiderate. Ad esempio, selezionare **percorsi** per modificare ciò che viene analizzato.
-1. Per abilitare l'analisi del contenuto in Microsoft teams, impostare l'interruttore toggle **sulla posizione attivata** e quindi selezionare **Salva**.
-1. Per modificare le impostazioni del criterio, selezionare **modifica**.
-1. Sarà necessario impostare regole distinte che si applicano a piccole e grandi quantità di contenuto sensibile rilevate. Espandi la regola del volume basso. Scegliere **Modifica regola**.
-1. Rivedere le impostazioni e modificarle in base alle esigenze. Ad esempio, è possibile scegliere di **personalizzare il testo del messaggio di posta elettronica** e **personalizzare il testo del suggerimento per i criteri**. Selezionare **Salva**.
-1. Ripetere la regola per il volume alto. Selezionare **Salva** e quindi **Chiudi**.
-1. Per creare un nuovo criterio, selezionare **Crea un criterio**.
-1. È possibile creare un criterio personalizzato o iniziare con un modello. Ad esempio, per creare un criterio HIPAA, selezionare il modello di **integrità e medicale** , quindi selezionare **U.S. Health Insurance Act (HIPAA)**. Selezionare **Avanti**.
-1. Immettere un nome e una descrizione per i criteri. Selezionare **Avanti**.
-1. Scegliere le posizioni da analizzare. Selezionare **Avanti**.
+1. To get started, go to the [admin center](https://admin.microsoft.com), and select **Setup.**
+1. Scorrere verso il basso **fino a Configurare la prevenzione della** perdita dei dati, quindi selezionare **Visualizza** e **quindi Gestisci.**
+1. Per modificare un criterio, selezionarlo, scegliere **Modifica criterio,** quindi selezionare gli elementi da modificare. Ad esempio, selezionare **Posizioni per** modificare gli elementi analizzati.
+1. Per abilitare l'analisi del contenuto in Microsoft  Teams, attivare l'interruttore Attiva e quindi selezionare **Salva.**
+1. Per modificare le impostazioni dei criteri, selezionare **Modifica.**
+1. Dovrai impostare regole separate che si applicano a piccole e grandi quantità di contenuti sensibili rilevati. Espandere la regola con volume ridotto. Scegliere **Modifica regola.**
+1. Rivedere le impostazioni e regolarle in base alle esigenze. Ad esempio, è possibile scegliere di personalizzare il **testo del messaggio di posta elettronica** e il testo del **suggerimento per il criterio.** Seleziona **Salva**.
+1. Ripetere l'operazione per la regola di volume elevato. Selezionare **Salva** e quindi **Chiudi.**
+1. Per creare un nuovo criterio, selezionare **Crea un criterio.**
+1. È possibile creare un criterio personalizzato o iniziare con un modello. Ad esempio, per creare un criterio HIPAA, selezionare il modello Medical **and health** e quindi selezionare **U.S. Health Insurance Act (HIPAA)**. Selezionare **Avanti**.
+1. Immettere un nome e una descrizione per il criterio. Selezionare **Avanti**.
+1. Scegliere i percorsi da analizzare. Selezionare **Avanti**.
 1. Scegliere il tipo di contenuto che si desidera proteggere. Selezionare **Avanti**.
-1. Scegliere ciò che si desidera verificare se vengono rilevate informazioni riservate. Selezionare **Avanti**.
-1. Personalizzare le autorizzazioni di accesso e di sostituzione. Selezionare **Avanti**.
-1. Scegliere quando si desidera che il criterio abbia effetto. Selezionare **Avanti**.
-1. Rivedere le impostazioni e selezionare **Crea**. Dopo che il criterio è stato applicato, la posta elettronica contenente le informazioni riservate descritte verrà bloccata e il mittente che ha tentato di inviare tali informazioni visualizzerà un messaggio di avviso.
+1. Scegli cosa vuoi che accada se vengono rilevate informazioni riservate. Selezionare **Avanti**.
+1. Personalizzare le autorizzazioni di accesso ed eseguire l'override. Selezionare **Avanti**.
+1. Scegliere quando si desidera che il criterio sia attivo. Selezionare **Avanti**.
+1. Rivedere le impostazioni e selezionare **Crea.** Dopo l'applicazione dei criteri, i messaggi di posta elettronica che contengono le informazioni riservate descritte verranno bloccati e il mittente che ha tentato di inviare queste informazioni verrà visualizzato un messaggio di avviso.

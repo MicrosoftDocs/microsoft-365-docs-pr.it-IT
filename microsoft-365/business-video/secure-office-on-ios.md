@@ -1,5 +1,5 @@
 ---
-title: Proteggere le app di Office su iOS
+title: Proteggere le app di Office in iOS
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -16,37 +16,38 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Informazioni su come proteggere le app di Office su iOS con Microsoft 365 Business Premium.
-ms.openlocfilehash: 1703faa7cd7731f0779bacc3d2fa3ad3e4556910
-ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
+description: Informazioni su come proteggere le app di Office in iOS con Microsoft 365 Business Premium.
+ms.openlocfilehash: fd7fdd32500f9a2362ac29059abe9424d045c206
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49702061"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49928031"
 ---
-# <a name="secure-office-apps-on-ios"></a>Proteggere le app di Office su iOS
+# <a name="secure-office-apps-on-ios"></a>Proteggere le app di Office in iOS
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FLvZ?autoplay=false]
 
-È possibile configurare un criterio di accesso utente che richiede agli utenti di dispositivi mobili di immettere un PIN o un'impronta digitale per accedere e crittografare i file di lavoro archiviati nei propri dispositivi.
+Puoi configurare un criterio di accesso utente che richiede agli utenti mobili di immettere un PIN o un'impronta digitale per l'accesso e crittografa anche i file di lavoro archiviati nei dispositivi.
 
 ## <a name="try-it"></a>Perché non provarlo?
 
 1. Accedere all'interfaccia di amministrazione di Microsoft 365.
-1. In **criteri** scegliere **Aggiungi criterio**.
-1. Nel riquadro **Aggiungi criterio** , immettere un nome in **Nome criterio** e scegliere il tipo di criteri desiderato in **tipo** di criterio.
-1. Attiva **gestire la modalità di accesso degli utenti ai file di Office nei dispositivi mobili** e quindi verificare che siano attivate le tre impostazioni seguenti:
+1. In **Criteri** scegliere **Aggiungi criterio.**
+1. Nel riquadro **Aggiungi criterio** immettere un nome **in** Nome criterio e scegliere il tipo di criterio desiderato in Tipo **di criterio.**
+1. Attivare Gestisci **la modalità di accesso degli** utenti ai file di Office nei dispositivi mobili e quindi verificare che le tre impostazioni seguenti siano attivate:
     - **Richiedi un PIN o l'impronta digitale per accedere alle app di Office**
-    - **Proteggere i file di lavoro quando i dispositivi vengono persi o rubati**
+    - **Proteggere i file di lavoro quando i dispositivi vengono smarriti o rubati**
     - **Crittografare i file di lavoro**
 
-1. In **file in queste applicazioni verrà protetto**, selezionare le app di Office che si desidera proteggere nei dispositivi mobili.
-1. In **chi otterrà queste impostazioni?**, tutti gli utenti sono selezionati per impostazione predefinita, ma è possibile scegliere **Cambia** per selezionare i gruppi di sicurezza creati.
-1. Per completare la creazione del criterio, scegliere **Aggiungi**.
-1. Nella pagina **Aggiungi criterio** scegliere **Chiudi**.
-1. Nella Home page dell'interfaccia di amministrazione, verificare che il nuovo criterio sia stato aggiunto scegliendo **criteri** e rivedendo i criteri nella pagina **criteri** .
+1. In **File in queste app verranno protetti** selezionare le app di Office che si desidera proteggere nei dispositivi mobili.
+1. In **Chi otterrà queste impostazioni,** tutti gli utenti sono  selezionati per impostazione predefinita, ma è possibile scegliere Cambia per selezionare i gruppi di sicurezza creati.
+1. Per completare la creazione del criterio, scegliere **Aggiungi.**
+1. Nella pagina **Aggiungi criterio** scegliere **Chiudi.**
+1. Nella home page dell'interfaccia di amministrazione verificare  che il nuovo criterio sia stato aggiunto scegliendo Criteri ed esaminando il criterio nella **pagina** Criteri.

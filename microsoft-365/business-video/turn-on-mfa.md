@@ -1,5 +1,5 @@
 ---
-title: Abilitare l'autenticazione a più fattori
+title: Attivare l'autenticazione a più fattori
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -16,33 +16,34 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Informazioni su come abilitare l'autenticazione a più fattori.
-ms.openlocfilehash: 4f7cd51a8a6a412b8aed2e0855727eeb48fc522b
-ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
+description: Scopri come attivare l'autenticazione a più fattori.
+ms.openlocfilehash: 1485875d1d40d93dab7a04d4e3d81016ac1536f3
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49703111"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49927767"
 ---
-# <a name="turn-on-multi-factor-authentication"></a>Abilitare l'autenticazione a più fattori
+# <a name="turn-on-multi-factor-authentication"></a>Attivare l'autenticazione a più fattori
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2MuO3?autoplay=false]
 
-L'autenticazione a più fattori implica che l'utente e i dipendenti devono fornire più di un modo per accedere a Microsoft 365 è uno dei modi più semplici per proteggere la propria azienda.
+L'autenticazione a più fattori significa che l'utente e i dipendenti devono fornire più di un modo per accedere a Microsoft 365 è uno dei modi più semplici per proteggere l'azienda.
 
 ## <a name="try-it"></a>Perché non provarlo?
 
 1. Passare all'interfaccia di amministrazione all'indirizzo [https://admin.microsoft.com](https://admin.microsoft.com).
-1. Selezionare  **Mostra tutto**, quindi fare clic sull'interfaccia di **amministrazione di Azure Active Directory**.
-1. Selezionare **Azure Active Directory**, **Proprietà**, **gestire le impostazioni predefinite** per la sicurezza.
-1. In **Attiva impostazioni predefinite sicurezza** selezionare **Sì** e quindi **Salva**.
+1. Selezionare **Mostra tutto,** quindi scegliere l'interfaccia **di amministrazione di Azure Active Directory.**
+1. Selezionare **Azure Active Directory,** **Proprietà**, Gestisci impostazioni **predefinite sicurezza.**
+1. In **Abilita impostazioni predefinite protezione** selezionare **Sì** e quindi **Salva.**
 
 > [!NOTE]
-> Per le nuove sottoscrizioni, vengono attivate automaticamente le impostazioni predefinite sicure.
+> Per le nuove sottoscrizioni, le impostazioni predefinite protette vengono attivate automaticamente.
 
-La volta successiva che i dipendenti selezionati accedono, verrà chiesto di configurare l'app Microsoft Authenticator nei propri telefoni per una seconda forma di autenticazione.
+Al successivo accesso dei dipendenti selezionati, verrà chiesto loro di configurare l'app Microsoft Authenticator nei loro telefoni per una seconda forma di autenticazione.

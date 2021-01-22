@@ -1,10 +1,10 @@
 ---
-title: Riepilogo dei risultati del progetto pilota Microsoft 365 Defender
-description: Concludere il progetto pilota Microsoft 365 Defender completando la scorecard, analizzando i risultati del report e decidendo come procedere.
-keywords: Pilota di Microsoft Threat Protection, decidere cosa fare dopo il progetto pilota Microsoft Threat Protection, cosa fare dopo aver valutato Microsoft Threat Protection in produzione, transizione da Microsoft Threat Protection Pilot to Deployment, Cyber Security, Advanced Persistent Threat, Enterprise Security, Devices, Device, Identity, Users, data, Applications, Incidents, Automatic Investigation and remediation, Advanced Hunting
+title: Riepilogo dei risultati del progetto pilota di Microsoft 365 Defender
+description: Concludere il progetto pilota di Microsoft 365 Defender completando la scorecard, analizzando i risultati dei report e decidendo come procedere.
+keywords: Progetto pilota di Microsoft Threat Protection, decidere cosa fare dopo il progetto pilota di Microsoft Threat Protection, cosa fare dopo aver valutato Microsoft Threat Protection in produzione, transizione dal progetto pilota di Microsoft Threat Protection alla distribuzione, sicurezza informatica, minaccia persistente avanzata, sicurezza aziendale, dispositivi, dispositivo, identità, utenti, dati, applicazioni, incidenti, analisi e correzione automatizzate, ricerca avanzata
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -20,14 +20,15 @@ ms.collection:
 - m365solution-scenario
 - m365solution-pilotmtpproject
 ms.topic: conceptual
-ms.openlocfilehash: 3fe5bfdec566b0988d9f565595624fc8dd597788
-ms.sourcegitcommit: ce46d1bd67091d4ed0e2b776dfed55e2d88cdbf4
+ms.technology: m365d
+ms.openlocfilehash: c8608568301f11a20c940a5ff9f1c205ce6e48f1
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49130944"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49930163"
 ---
-# <a name="closing-and-summarizing-your-microsoft-365-defender-pilot"></a>Chiusura e ricapitolazione del pilota Microsoft 365 Defender  
+# <a name="closing-and-summarizing-your-microsoft-365-defender-pilot"></a>Chiusura e riepilogo del progetto pilota di Microsoft 365 Defender  
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -42,25 +43,25 @@ ms.locfileid: "49130944"
 || | |*Sei qui!*|
 
 
-Si è attualmente in fase di chiusura e di riepilogo.
+È in corso la fase di chiusura e riepilogo.
 
-È stata appena eseguita una simulazione di attacco di solo memoria avanzata che ha eseguito il codice in remoto in un controller di dominio. Si è visto come Microsoft Defender per endpoint e Microsoft Defender per il rilevamento delle identità e la creazione di avvisi su attività malevole fraudolente. Si è visto anche come gli avvisi provenienti da origini diverse vengono recapitati insieme ad altre informazioni contestuali in un singolo incidente nel portale del Centro sicurezza Microsoft 365. L'esperienza di tale integrazione consente agli analisti SOC di analizzare e intraprendere le azioni necessarie. Inoltre, è stata creata una query di ricerca avanzata che consente di identificare i messaggi di posta elettronica in ingresso in cui l'utente ha aperto o salvato l'allegato e ha creato il rilevamento in base a tale query.
+È stata appena eseguita una simulazione avanzata di attacco solo memoria che ha eseguito codice in modalità remota in un controller di dominio. Hai visto in che modo Microsoft Defender per Endpoint e Microsoft Defender for Identity rilevano e creano avvisi su attività dannose dannose. È stato anche visto come gli avvisi provenienti da origini diverse vengono recapitati insieme ad altre informazioni contestuali in un singolo evento imprevisto nel portale del Centro sicurezza Microsoft 365. L'esperienza di tale integrazione consente agli analisti SOC di analizzare e intraprendere le azioni necessarie. È stata creata anche una query di ricerca avanzata che identificherà i messaggi di posta elettronica in ingresso in cui l'utente ha aperto o salvato l'allegato e ha creato il rilevamento in base a tale query.
 
-Dopo aver concluso tutti i test, è stata raggiunta la fine del processo.
+È stata raggiunta la fine del processo al termine di tutti i test.
 
 L'output finale deve essere:
 
-- Una scorecard completata
-- Un rapporto dettagliato dei risultati del progetto pilota
+- Scorecard completata
+- Un report dettagliato dei risultati del progetto pilota
 - Una decisione su come procedere
 
-Presentare i rapporti dall'output finale alle parti interessate interne (identificate durante la fase di [preparazione](https://docs.microsoft.com/microsoft-365/security/mtp/prepare-mtpeval) ) e ai contatti Microsoft. Questo sforzo garantisce che eventuali commenti e suggerimenti possano essere utilizzati per migliorare i prodotti e la documentazione.
+Presentare i report dell'output finale alle parti interessate interne (identificate durante la fase [di](https://docs.microsoft.com/microsoft-365/security/mtp/prepare-mtpeval) preparazione) e ai contatti Microsoft. Tale impegno garantisce che qualsiasi feedback possa essere usato per migliorare i prodotti e la documentazione.
 
-Si spera che questa simulazione sia stata molto apprezzata. Per ottenere il massimo dalla soluzione di sicurezza integrata, iniziare a implementare le operazioni apprese in scala maggiore nell'organizzazione.
+Ci auguriamo che questa simulazione sia stata apprezzata. Iniziare a implementare ciò che è stato appreso su larga scala nell'organizzazione per ottenere il massimo dalla soluzione di sicurezza integrata.
 
 ## <a name="next-step"></a>Passaggio successivo
-Per ulteriori informazioni, vedere i pilastri di Microsoft 365 Defender tramite le seguenti guide interattive:
-- [Salvaguardare l'organizzazione con Microsoft Defender per Office 365](https://aka.ms/O365ATP-Interactive-Guide)
-- [Individuare attività sospette e potenziali attacchi con Microsoft Defender per identità](https://aka.ms/AATP-Interactive-Guide)
-- [Individuare le minacce e gestire gli avvisi con Microsoft cloud app Security](https://aka.ms/DetectThreatsAndAlertsMCAS-InteractiveGuide)
-- [Esaminare e correggere le minacce con Microsoft Defender per endpoint](https://aka.ms/MDATP-IR-Interactive-Guide)
+Altre informazioni sui pilastri di Microsoft 365 Defender sono disponibili nelle seguenti guide interattive:
+- [Proteggere l'organizzazione con Microsoft Defender per Office 365](https://aka.ms/O365ATP-Interactive-Guide)
+- [Rilevare attività sospette e potenziali attacchi con Microsoft Defender for Identity](https://aka.ms/AATP-Interactive-Guide)
+- [Rilevare le minacce e gestire gli avvisi con Microsoft Cloud App Security](https://aka.ms/DetectThreatsAndAlertsMCAS-InteractiveGuide)
+- [Analizzare e correggere le minacce con Microsoft Defender for Endpoint](https://aka.ms/MDATP-IR-Interactive-Guide)

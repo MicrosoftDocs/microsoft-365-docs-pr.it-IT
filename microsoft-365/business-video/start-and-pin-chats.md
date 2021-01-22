@@ -1,5 +1,5 @@
 ---
-title: Avviare e bloccare le chat in Microsoft Teams
+title: Avviare e aggiungere chat in Microsoft Teams
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -16,33 +16,34 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Informazioni su come avviare e bloccare le chat in Microsoft teams.
-ms.openlocfilehash: 9cc3c3b3cc287955a733a20047a0dd8973ef644a
-ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
+description: Informazioni su come avviare e aggiungere chat in Microsoft Teams.
+ms.openlocfilehash: 22a24a533f4d3627ac66ab8e0472071ff88eb516
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49703123"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49927815"
 ---
 # <a name="chat-with-employees-and-customers"></a>Chattare con dipendenti e clienti
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWedV6?autoplay=false]
 
-È possibile chattare internamente con i colleghi o chattare con un utente ospite, ad esempio un cliente o un partner. Se [l'accesso Guest è attivato](https://docs.microsoft.com/microsoftteams/set-up-guests) per la propria azienda, è possibile digitare un indirizzo di posta elettronica per aggiungere un ospite a una chat.
+È possibile chattare internamente con i colleghi o chattare con un utente guest, ad esempio un cliente o un partner. Se [l'accesso guest è attivato](https://docs.microsoft.com/microsoftteams/set-up-guests) per l'azienda, è sufficiente digitare un indirizzo di posta elettronica per aggiungere un guest a una chat.
 
 ## <a name="try-it"></a>Perché non provarlo?
 
-Avviare 1:1 o raggruppare le chat per collaborare con un gruppo più piccolo o per dialogare in privato e aggiungere chat per accedere rapidamente.
+Avviare chat di gruppo o 1:1 per collaborare con un gruppo più piccolo o per parlare in privato e aggiungere chat per un accesso rapido.
 
-1. Nelle  **chat** , è possibile avere 1:1 o chat di gruppo con gli utenti.
-2. Selezionare **nuova chat** :::image type="icon" source="../media/new-chat-icon.png" border="false"::: .  
+1. Nelle  **chat,** è possibile avere chat di gruppo o 1:1 con persone.
+2. Selezionare **Nuova chat.** :::image type="icon" source="../media/new-chat-icon.png" border="false":::  
 3. Digitare il nome della persona o delle persone che si desidera contattare.
 4. Selezionare la freccia in giù per aggiungere un nome al gruppo di chat.
 
 Per effettuare una chiamata video o audio da una chat
 
-- Selezionare chiamata  **video** :::image type="icon" source="../media/video-call-icon.png" border="false"::: o **chiamata audio** :::image type="icon" source="../media/audio-call-icon.png" border="false"::: per chiamare qualcuno direttamente da una chat.
+- Selezionare  **Videochiamata** :::image type="icon" source="../media/video-call-icon.png" border="false"::: o Chiamata **audio** per chiamare qualcuno direttamente da :::image type="icon" source="../media/audio-call-icon.png" border="false"::: una chat.

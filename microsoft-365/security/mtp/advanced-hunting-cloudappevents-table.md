@@ -1,10 +1,10 @@
 ---
-title: Tabella CloudAppEvents nello schema di caccia avanzato
-description: Informazioni sugli eventi delle app e dei servizi cloud nella tabella CloudAppEvents dello schema di caccia avanzato
-keywords: caccia avanzata, caccia alle minacce, Cyber-caccia alle minacce, Microsoft Threat Protection, Microsoft 365, MTP, M365, ricerca, query, telemetria, riferimento allo schema, kusto, tabella, colonna, tipo di dati, descrizione, CloudAppEvents, cloud app Security, MCAS
+title: Tabella CloudAppEvents nello schema di ricerca avanzata
+description: Informazioni sugli eventi dalle app e dai servizi cloud nella tabella CloudAppEvents dello schema di ricerca avanzata
+keywords: ricerca avanzata, ricerca delle minacce, ricerca delle minacce informatiche, microsoft threat protection, microsoft 365, mtp, m365, ricerca, query, telemetria, riferimento allo schema, kusto, tabella, colonna, tipo di dati, descrizione, CloudAppEvents, Cloud App Security, MCAS
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,12 +19,13 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 3cb4498e5db6a7752e99b8c677bc8936d2c975ef
-ms.sourcegitcommit: e7bf23df4852b78912229d1d38ec475223597f34
+ms.technology: m365d
+ms.openlocfilehash: 021a8210bbe5886021e980b33ade0b9e2ded7b5b
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49087767"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49928454"
 ---
 # <a name="cloudappevents"></a>CloudAppEvents
 
@@ -36,9 +37,9 @@ ms.locfileid: "49087767"
 
 [!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
-Attualmente disponibile in anteprima, la `CloudAppEvents` tabella nello schema di [caccia avanzato](advanced-hunting-overview.md) contiene informazioni sulle attività in diverse app e servizi cloud, in particolare Microsoft teams ed Exchange Online. Usare questo riferimento per creare query che restituiscono informazioni dalla tabella.
+Attualmente disponibile in anteprima, la tabella nello schema di ricerca avanzata contiene informazioni sulle attività in varie app e servizi cloud, in particolare `CloudAppEvents` Microsoft Teams ed Exchange Online. [](advanced-hunting-overview.md) Usare questo riferimento per creare query che restituiscono informazioni dalla tabella.
 
-La tabella verrà espansa per includere più attività monitorate da Microsoft cloud app Security. Alla fine, questa tabella includerà l'attività dei file attualmente archiviati nella tabella [AppFileEvents](advanced-hunting-appfileevents-table.md) . Microsoft fornirà indicazioni aggiuntive per spostare i dati in questa tabella.
+Questa tabella verrà espansa per includere più attività monitorate da Microsoft Cloud App Security. In seguito, questa tabella includerà l'attività di file attualmente archiviata nella [tabella AppFileEvents.](advanced-hunting-appfileevents-table.md) Microsoft fornirà indicazioni aggiuntive man quando si spostano più dati in questa tabella.
 
 Per informazioni su altre tabelle nello schema per Ricerca avanzata, [vedere il riferimento sulla Ricerca avanzata](advanced-hunting-schema-tables.md).
 
@@ -46,26 +47,26 @@ Per informazioni su altre tabelle nello schema per Ricerca avanzata, [vedere il 
 |-------------|-----------|-------------|
 | `Timestamp` | datetime | Data e ora di registrazione dell'evento |
 | `ActionType` | stringa | Tipo di attività che ha attivato l'evento |
-| `Application` | stringa | Applicazione in cui è stata eseguita l'azione registrata |
-| `ApplicationId` | stringa | Identificatore univoco per l'applicazione |
+| `Application` | stringa | Applicazione che ha eseguito l'azione registrata |
+| `ApplicationId` | stringa | Identificatore univoco dell'applicazione |
 | `AccountObjectId` | stringa | Identificatore univoco per l'account in Azure Active Directory |
-| `AccountDisplayName` | stringa | Nome dell'account utente visualizzato nella rubrica. In genere una combinazione di un nome o di un cognome, di un'iniziazione centrale e di un ultimo nome. |
+| `AccountDisplayName` | stringa | Nome dell'utente dell'account visualizzato nella rubrica. In genere una combinazione di un nome o di un dato nome, un'iniziazione intermedia e un cognome o un cognome. |
 | `IsAdminOperation` | stringa | Indica se l'attività è stata eseguita da un amministratore |
-| `DeviceType` | stringa | Tipo di dispositivo basato su scopo e funzionalità, ad esempio "Network Device", "workstation", "Server", "mobile", "Gaming Console" o "Printer" | 
-| `OSPlatform` | stringa | Piattaforma del sistema operativo in esecuzione nel dispositivo. In questa colonna sono indicati sistemi operativi specifici, tra cui le varianti all'interno della stessa famiglia, ad esempio Windows 10 e Windows 7. |
+| `DeviceType` | stringa | Tipo di dispositivo basato su scopo e funzionalità, ad esempio "Dispositivo di rete", "Workstation", "Server", "Mobile", "Console di gioco" o "Stampante" | 
+| `OSPlatform` | stringa | Piattaforma del sistema operativo in esecuzione nel dispositivo. Questa colonna indica sistemi operativi specifici, incluse le varianti all'interno della stessa famiglia, ad esempio Windows 10 e Windows 7. |
 | `IPAddress` | stringa | Indirizzo IP assegnato all'endpoint e utilizzato durante le comunicazioni di rete correlate |
-| `IsAnonymousProxy` | stringa | Indica se l'indirizzo IP appartiene a un proxy anonimo conosciuto |
-| `CountryCode` | stringa | Codice di due lettere che indica il paese in cui l'indirizzo IP del client è Geolocated |
-| `City` | stringa | Città in cui l'indirizzo IP del client è Geolocated |
+| `IsAnonymousProxy` | stringa | Indica se l'indirizzo IP appartiene a un proxy anonimo noto |
+| `CountryCode` | stringa | Codice di due lettere che indica il paese in cui l'indirizzo IP del client è geolocato |
+| `City` | stringa | Città in cui l'indirizzo IP del client è geolocato |
 | `Isp` | stringa | Provider di servizi Internet (ISP) associato all'indirizzo IP |
 | `UserAgent` | stringa | Informazioni sull'agente utente dal Web browser o da un'altra applicazione client |
 | `ActivityType` | stringa | Tipo di attività che ha attivato l'evento |
-| `ActivityObjects` | stringa | Elenco di oggetti, ad esempio file o cartelle, che sono stati coinvolti nell'attività registrata |
+| `ActivityObjects` | stringa | Elenco di oggetti, ad esempio file o cartelle, coinvolti nell'attività registrata |
 | `ObjectName` | stringa | Nome dell'oggetto a cui è stata applicata l'azione registrata |
 | `ObjectType` | stringa | Tipo di oggetto, ad esempio un file o una cartella, a cui è stata applicata l'azione registrata |
 | `ObjectId` | stringa | Identificatore univoco dell'oggetto a cui è stata applicata l'azione registrata |
-| `ReportId` | stringa | Identificatore univoco per l'evento |
-| `RawEventData` | stringa | Informazioni sugli eventi RAW dall'applicazione o dal servizio di origine in formato JSON |
+| `ReportId` | stringa | Identificatore univoco dell'evento |
+| `RawEventData` | stringa | Informazioni sugli eventi non elaborati dall'applicazione o dal servizio di origine in formato JSON |
 | `AdditionalFields` | stringa | Ulteriori informazioni sull'entità o sull'evento |
 
 ## <a name="related-topics"></a>Argomenti correlati

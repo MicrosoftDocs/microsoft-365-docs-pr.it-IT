@@ -16,54 +16,55 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Informazioni sulle funzionalità di sicurezza incluse in Microsoft 365 for business.
-ms.openlocfilehash: b32c99946db0257490283b493d104d0d11c9ec8e
-ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
+description: Informazioni sulle funzionalità di sicurezza incluse in Microsoft 365 per le aziende.
+ms.openlocfilehash: 72ed57d0f6392d7475f11aebb9da700e6aef78ae
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49702094"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49928139"
 ---
 # <a name="overview-of-security"></a>Panoramica della sicurezza
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4mzxI?autoplay=false]
 
-Microsoft 365 Business Premium offre funzionalità di protezione dalle minacce, protezione dei dati e gestione di dispositivi che consentono di proteggere la propria azienda da pericoli online e accesso non autorizzato, nonché di proteggere e gestire i dati aziendali su telefoni, tablet e computer.
+Microsoft 365 Business Premium offre funzionalità di protezione dalle minacce, protezione dei dati e gestione dei dispositivi che consentono di proteggere l'azienda da minacce online e accessi non autorizzati, oltre a proteggere e gestire i dati aziendali su telefoni, tablet e computer.
 
 |![Protezione dalle minacce](../media/m365-business-security-threat-protection.png)<br/>[Protezione dalle minacce](#threat-protection)|![Collaborare con un client](../media/m365-business-security-data-protection.png) <br/>[Protezione dei dati](#data-protection) | ![Gestione dei dispositivi](../media/m365-business-security-device-management.png) <br/>[Gestione dei dispositivi](#device-management) |
 |--|--|--|
 
 ## <a name="threat-protection"></a>Protezione dalle minacce
 
-Microsoft 365 Business Premium include Office 365 Advanced Threat Protection (ATP), un servizio di filtraggio della posta elettronica basato sul cloud che protegge da malware, ransomware, collegamenti nocivi e altro ancora. I collegamenti sicuri di ATP proteggono gli URL dannosi nei documenti di posta elettronica o di Office. Gli allegati sicuri di ATP proteggono da malware e virus allegati a messaggi o documenti.
+Microsoft 365 Business Premium include Office 365 Advanced Threat Protection (ATP), un servizio di filtro della posta elettronica basato su cloud che protegge da malware, ransomware, collegamenti dannosi e altro ancora. I collegamenti sicuri di ATP proteggono l'utente da URL dannosi nei messaggi di posta elettronica o nei documenti di Office. Gli allegati sicuri di ATP proteggono l'utente da malware e virus allegati a messaggi o documenti.
 
-L'autenticazione a più fattori o la verifica in due passaggi richiede la presenza di una seconda forma di autenticazione, ad esempio un codice di verifica, per confermare la propria identità prima di poter accedere alle risorse.  
+L'autenticazione a più fattori (MFA) o la verifica in due passaggi richiede la presentazione di una seconda forma di autenticazione, ad esempio un codice di verifica, per confermare l'identità prima di poter accedere alle risorse.  
 
-Windows Defender fornisce una protezione completa per il sistema, i file e le attività online da virus, malware, spyware e altre minacce.
+Windows Defender offre una protezione completa per il sistema, i file e le attività online da virus, malware, spyware e altre minacce.
 
 ## <a name="data-protection"></a>Protezione dei dati
 
-Le funzionalità di protezione dei dati in Microsoft 365 Business Premium aiutano a garantire che i dati importanti rimangano sicuri e che solo le persone autorizzate abbiano accesso.
+Le funzionalità di protezione dei dati in Microsoft 365 Business Premium assicurano che i dati importanti rimangano sicuri e che solo le persone autorizzate vi hanno accesso.
 
-È possibile utilizzare i criteri di prevenzione della perdita di dati (DLP) per identificare e gestire informazioni riservate, quali la sicurezza sociale o i numeri di carta di credito, in modo da non essere condivisi per caso. 
+È possibile utilizzare i criteri di prevenzione della perdita dei dati (DLP) per identificare e gestire le informazioni riservate, ad esempio i numeri di previdenza sociale o di carta di credito, in modo che non vengono condivise in modo errato. 
 
-La crittografia dei messaggi di Office 365 unisce le funzionalità di crittografia e accesso ai diritti per garantire che solo i destinatari previsti possano visualizzare il contenuto del messaggio. La crittografia dei messaggi di Office 365 è compatibile con Outlook.com, Yahoo! e Gmail e altri servizi di posta elettronica.
+La crittografia dei messaggi di Office 365 combina le funzionalità di crittografia e diritti di accesso per garantire che solo i destinatari previsti possano visualizzare il contenuto dei messaggi. La crittografia dei messaggi di Office 365 funziona con Outlook.com, Yahoo!, Gmail e altri servizi di posta elettronica.
 
-Archiviazione Exchange Online è una soluzione di archiviazione basata sul cloud che funziona con Microsoft Exchange o Exchange Online per fornire funzionalità di archiviazione avanzate, tra cui le esenzioni e la ridondanza dei dati. È possibile utilizzare i criteri di conservazione per aiutare l'organizzazione a ridurre le passività associate alla posta elettronica e ad altre comunicazioni. Se l'azienda è tenuta a mantenere le comunicazioni relative alla controversia legale, è possibile utilizzare In-Place esenzioni e controversia legale per conservare la posta elettronica correlata.
+Archiviazione Exchange Online è una soluzione di archiviazione basata su cloud che funziona con Microsoft Exchange o Exchange Online per fornire funzionalità di archiviazione avanzate, tra cui blocchi e ridondanza dei dati. È possibile utilizzare i criteri di conservazione per aiutare l'organizzazione a ridurre le responsabilità associate alla posta elettronica e ad altre comunicazioni. Se l'azienda deve conservare le comunicazioni relative a controversie legali, è possibile utilizzare le In-Place esenzioni per controversia legale per conservare la posta elettronica correlata.
 
 ## <a name="device-management"></a>Gestione dei dispositivi
 
-Le funzionalità di gestione dei dispositivi avanzati di Microsoft 365 Business Premium consentono di monitorare e controllare gli utenti che possono eseguire i dispositivi registrati. Queste funzionalità includono l'accesso condizionale, la gestione dei dispositivi mobili (MDM), BitLocker e gli aggiornamenti automatici.
+Le funzionalità avanzate di gestione dei dispositivi di Microsoft 365 Business Premium consentono di monitorare e controllare le attività che gli utenti possono eseguire con i dispositivi registrati. Queste funzionalità includono l'accesso condizionale, Gestione di dispositivi mobili (MDM), BitLocker e gli aggiornamenti automatici.
 
-È possibile utilizzare i criteri di accesso condizionale per richiedere ulteriori misure di sicurezza per alcuni utenti e attività. Ad esempio, è possibile richiedere l'autenticazione a più fattori o bloccare i client che non supportano l'accesso condizionale.
+È possibile utilizzare i criteri di accesso condizionale per richiedere misure di sicurezza aggiuntive per determinati utenti e attività. Ad esempio, è possibile richiedere l'autenticazione a più fattori (MFA) o bloccare i client che non supportano l'accesso condizionale.
 
-Con MDM, è possibile proteggere e gestire i dispositivi mobili degli utenti come iPhone, iPad, Android e Windows Phone. È possibile creare e gestire i criteri di sicurezza dei dispositivi, cancellare in remoto un dispositivo per rimuovere tutti i dati della società, reimpostare un dispositivo per le impostazioni di fabbrica e visualizzare i report dettagliati sui dispositivi. 
+Con MDM puoi proteggere e gestire i dispositivi mobili degli utenti come iPhone, iPad, Android e Windows Phone. Puoi creare e gestire i criteri di sicurezza dei dispositivi, cancellare in remoto un dispositivo per rimuovere tutti i dati aziendali, ripristinare le impostazioni di fabbrica di un dispositivo e visualizzare report dettagliati sul dispositivo. 
 
-È possibile abilitare la crittografia BitLocker per proteggere i dati in caso di perdita o di furto di un dispositivo e consentire a Windows exploit Guard di fornire una protezione avanzata contro ransomware.
+Puoi abilitare la crittografia BitLocker per proteggere i dati in caso di perdita o furto di un dispositivo e abilitare Windows Exploit Guard per fornire protezione avanzata dal ransomware.
 
-È possibile configurare gli aggiornamenti automatici in modo che le funzionalità di sicurezza e gli aggiornamenti più recenti siano applicati a tutti i dispositivi utente. 
+È possibile configurare gli aggiornamenti automatici in modo che le funzionalità di sicurezza e gli aggiornamenti più recenti siano applicati a tutti i dispositivi degli utenti. 

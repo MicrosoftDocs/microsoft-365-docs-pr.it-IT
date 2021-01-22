@@ -16,53 +16,54 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Informazioni su come pianificare un evento con Microsoft Planner.
-ms.openlocfilehash: f5ee4e63579c2c5f6493e16d27b7102d3b99b6d1
-ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
+ms.openlocfilehash: d978232dffaede882e81a491b4d927183781aa0f
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49702078"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49928097"
 ---
-# <a name="use-microsoft-planner-to-plan-an-event"></a>Utilizzo di Microsoft Planner per pianificare un evento
+# <a name="use-microsoft-planner-to-plan-an-event"></a>Usare Microsoft Planner per pianificare un evento
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/c8a41e1a-c30d-4adb-ab32-6eac922d0ec0?autoplay=false]
 
 ## <a name="try-it"></a>Perché non provarlo?
 
-Utilizzare Microsoft Planner per pianificare un evento, ad esempio il monitoraggio del lancio di un prodotto.
+Usare Microsoft Planner per pianificare un evento, ad esempio tenere traccia dell'avvio di un prodotto.
 
-### <a name="work-with-buckets"></a>Utilizzo dei bucket
+### <a name="work-with-buckets"></a>Usare i bucket
 
-Utilizzo dei bucket per ordinare le attività in base al tipo, ad esempio pianificazione eventi, marketing e garanzie di Active Directory e PR.
+Usa i bucket per ordinare le attività in base al tipo, ad esempio pianificazione di eventi, marketing e materiale pubblicitario e pr.
 
-1. Selezionare  **Aggiungi nuovo bucket**  e digitare una nuova categoria di attività.
-2. Selezionare questa operazione per  **+**  aggiungere attività a un bucket e digitare un nome.
-3. Selezionare  **Aggiungi attività**.
+1. Selezionare  **Aggiungi nuovo contenitore**  e digitare una nuova categoria di attività.
+2. Selezionare  **+**  questa opzione per aggiungere attività a un contenitore e digitare un nome.
+3. Selezionare **Aggiungi attività.**
 
 ### <a name="work-with-labels"></a>Utilizzare le etichette
 
-Utilizzare le etichette per visualizzare le attività che richiedono attenzione.
+Usa le etichette per vedere quali attività necessitano della tua attenzione.
 
-1. Digitare i nomi delle etichette.
+1. Digitare i nomi per le etichette.
 2. Selezionare una casella colorata per rimuovere o aggiungere un'etichetta a un'attività.
 
 ## <a name="add-a-comment"></a>Aggiungere un commento
 
-Inviare un commento per discutere di un'attività con gli utenti a cui è assegnata.
+Pubblicare un commento per discutere di un'attività con le persone a cui è assegnata.
 
-1. Digitare un messaggio nella casella  **Commenti**  .
-2. Selezionare  **Invia**.
+1. Digitare un messaggio nella  **casella**  Commenti.
+2. Selezionare **Invia.**
 
-### <a name="keep-track-of-tasks"></a>Tenere conto delle attività
+### <a name="keep-track-of-tasks"></a>Tenere traccia delle attività
 
-Utilizzare  **grafici**  e visualizzazione  **scheda**  per monitorare lo stato di avanzamento di ogni membro del team e del progetto globale o per ordinare e organizzare le attività.
+Utilizzare  **la visualizzazione**  Grafici  **e**  bacheca per monitorare lo stato di avanzamento di ogni membro del team e del progetto complessivo oppure per ordinare e organizzare le attività.
 
-- Selezionare  **grafici**, quindi **raggruppa** per e infine **Data di scadenza**  per visualizzare l'attività successiva.
-- Selezionare  **scheda**, quindi **raggruppamento** e infine **avanzamento**  per ordinare le attività in base allo stato.
+- Selezionare  **Grafici,** quindi **Raggruppa per** e infine Data **scadenza**  per visualizzare l'attività successiva in scadenza.
+- Seleziona  **Bacheca,** quindi **Raggruppa per** e infine **Avanzamento**  per ordinare le attività in base all'avanzamento.
 
-**Nota:**  Le attività vengono organizzate  **non avviate**,  **in corso** e  **completate**  in modo da sapere quando si è pronti per avviare il prodotto.
+**Nota:**  Le attività sono organizzate per Non  **avviato,** **In** corso e Completato, in modo da sapere quando si è pronti per avviare il prodotto.
