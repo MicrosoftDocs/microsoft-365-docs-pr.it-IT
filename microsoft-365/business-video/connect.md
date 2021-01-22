@@ -16,47 +16,48 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Informazioni su come connettere il PC a Microsoft 365 business.
-ms.openlocfilehash: 715f20ecd8f10d3d21fbdfac2953369504f02dec
-ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
+description: Informazioni su come connettere il PC a Microsoft 365 Business.
+ms.openlocfilehash: 61adae68541233ffb7b7087174c4633995b28fdd
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49703026"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49927311"
 ---
 # <a name="connect-your-pc-to-microsoft-365-business-premium"></a>Connettere il PC a Microsoft 365 Business Premium
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3yXh3?autoplay=false]
 
 ## <a name="try-it"></a>Perché non provarlo?
-Dopo aver configurato Microsoft 365 Business Premium (in precedenza noto come Microsoft 365 business), è necessario completare alcuni passaggi per sfruttare al meglio le caratteristiche di sicurezza e gestione. Ecco come&#39;s.
+Dopo aver configurato Microsoft 365 Business Premium (in precedenza noto come Microsoft 365 Business), è necessario completare alcuni passaggi per sfruttare al meglio le funzionalità di sicurezza e gestione. Ecco&#39;come.
 
-Verificare innanzitutto che sia installato Windows 10 Pro:
+Prima di tutto, verifica di avere installato Windows 10 Pro:
 
-1. Fare clic su  **Start** , cercare il  **Pannello di controllo** e selezionarlo.
-2. Scegliere sistema e sistema di **sicurezza**   >    e confermare l'edizione di Windows.
+1. Scegliere  **Start,** cercare  **Pannello di controllo** e selezionarlo.
+2. Scegliere **Sistema e sicurezza**   >   **e** confermare l'edizione di Windows.
 
-Successivamente, connettersi a Microsoft 365 business:
+Successivamente, connettersi a Microsoft 365 Business:
 
-1. Fare clic su  **Start** , quindi selezionare l'icona  **Impostazioni** .
-2. Selezionare **account**  >   **Access Work o School**   >   **Connect**.
-3. Selezionare  **Unisci questo dispositivo ad Azure Active Directory**.
-4. Immettere l'indirizzo di posta elettronica per l'account Microsoft 365, quindi selezionare  **Avanti**.
-5. Immettere la password, selezionare  **Accedi** e quindi verificare di essere entrati nell'organizzazione corretta.
-6. Selezionare  **join** e quindi fare clic su  **fine**.
+1. Selezionare  **Start** e quindi selezionare  **l'icona** Impostazioni.
+2. Selezionare **Account Per accedere**  >   **all'istituto di istruzione o all'istituto di** istruzione   >   **Connect.**
+3. Selezionare **Aggiungi il dispositivo ad Azure Active Directory.**
+4. Immettere l'indirizzo di posta elettronica per l'account di Microsoft 365 e selezionare **Avanti.**
+5. Immettere la password, selezionare  **Accedi** e quindi verificare che si sta accedendo all'organizzazione corretta.
+6. Selezionare **Join** e quindi Fare **clic su Fine.**
 
-A seconda del modo in cui la società ha configurato Microsoft 365 business, è possibile che venga visualizzata una notifica per crittografare il PC. Per crittografare il PC:
+A seconda di come l'azienda ha configurato Microsoft 365 Business, potrebbe essere visualizzata una notifica per crittografare il PC. Per crittografare il PC:
 
-1. Selezionare il messaggio di  **crittografia necessario**  .
-2. Selezionare  **i don&#39;t sono installati altri software di crittografia del disco, crittografare tutti i dischi** e quindi selezionare  **Sì**. Verrà visualizzata una finestra di  **BitLocker iniziale**  con una barra di avanzamento.
-3. Nella finestra  **scegliere la modalità di sblocco dell'unità all'avvio**  , selezionare **immettere un pin (scelta consigliata)**.
-4. Immettere il proprio PIN, quindi immetterlo di nuovo per verificarlo. Selezionare  **Imposta PIN**.
-5. Scegliere un metodo per salvare una chiave di ripristino della crittografia e quindi fare clic su  **Avanti**.
-6. Scegliere la quantità di unità da crittografare, quindi fare clic su  **Avanti**.
-7. Scegliere una modalità di crittografia, quindi fare clic su  **Avanti** e quindi su  **continua**. L'unità sarà ora crittografata. È possibile continuare a lavorare durante il processo di crittografia.
+1. Selezionare il  **messaggio di crittografia**  necessario.
+2. Select  **I don don&#39;have any other disk encryption software installed, encrypt all my disks** , and then select  **Yes**. Verrà visualizzata una finestra  **di Avvio di BitLocker**  con una barra di stato.
+3. Nella finestra **Scegliere come sbloccare l'unità** all'avvio selezionare **Immetti un PIN (scelta consigliata).**
+4. Immetti il PIN e quindi immettilo di nuovo per verificarlo. Selezionare **Imposta PIN.**
+5. Scegliere un metodo per salvare una chiave di ripristino della crittografia e quindi selezionare **Avanti.**
+6. Scegliere la quantità di unità da crittografare, quindi selezionare **Avanti.**
+7. Scegliere una modalità di crittografia, selezionare **Avanti** e quindi **Continua.** L'unità verrà crittografata. È possibile continuare a lavorare durante il processo di crittografia.
 
-Il PC è ora protetto e gestito da Microsoft 365 business.
+Il PC è ora protetto e gestito da Microsoft 365 Business.

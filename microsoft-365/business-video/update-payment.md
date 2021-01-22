@@ -16,35 +16,36 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Informazioni su come aggiornare il metodo di pagamento per Microsoft 365 for business.
-ms.openlocfilehash: a7424b4d104b83921f46024a1493444c9de547d1
-ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
+description: Informazioni su come aggiornare la modalità di pagamento per Microsoft 365 per le aziende.
+ms.openlocfilehash: b29aea838e2682035ac56ef31291a5628854df79
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49702010"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49925863"
 ---
-# <a name="update-yor-payment-method-for-your-subscription"></a>Aggiornare il metodo di pagamento yor per l'abbonamento
+# <a name="update-yor-payment-method-for-your-subscription"></a>Aggiornare la modalità di pagamento per l'abbonamento
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3AVxy?autoplay=false]
 
-È possibile aggiornare facilmente il metodo di pagamento per l'abbonamento a Microsoft 365 business. È possibile modificare i dettagli, ad esempio la carta di credito utilizzata, il nome o l'indirizzo.
+È possibile aggiornare facilmente la modalità di pagamento per l'abbonamento a Microsoft 365 Business. È possibile modificare i dettagli, ad esempio la carta di credito utilizzata, il nome o l'indirizzo.
 
 ## <a name="try-it"></a>Perché non provarlo?
 
 1. Accedere all'[interfaccia di amministrazione di Microsoft 365](https://admin.microsoft.com).
-1. Selezionare **fatturazione**, quindi **metodi di pagamento**. Vedrai tutte le carte di credito presenti nel file.
+1. Selezionare **Fatturazione**, quindi **Modalità di pagamento.** You'll see any credit cards that you have on file.
 1. Per modificare una scheda esistente:
-    1. Selezionare i tre punti accanto alla scheda e selezionare **modifica metodo di pagamento**.
-    1. Immetti il codice di sicurezza per la tua scheda.
-    1. È possibile modificare la data di scadenza, il nome sulla scheda e altre informazioni.
-    1. Dopo aver completato le modifiche, selezionare **Salva**.
+    1. Seleziona i tre puntini accanto alla carta e seleziona **Modifica metodo di pagamento.**
+    1. Immetti il codice di sicurezza per la carta.
+    1. Puoi modificare la data di scadenza, il nome nella scheda e altri dettagli.
+    1. Al termine delle modifiche, selezionare **Salva.**
 1. Per aggiungere una nuova scheda:
     1. Selezionare **Aggiungere una modalità di pagamento**.
-    1. Scegliere il metodo di pagamento che si desidera utilizzare nell'elenco **a discesa selezionare un metodo di pagamento** .
-    1. Immettere i dettagli della scheda e selezionare **Aggiungi**.
+    1. Scegliere la modalità di pagamento che si desidera utilizzare **nell'elenco a** discesa Selezionare una modalità di pagamento.
+    1. Immetti i dettagli della scheda e seleziona **Aggiungi.**

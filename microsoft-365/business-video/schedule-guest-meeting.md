@@ -16,34 +16,35 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Informazioni su come programmare una riunione di teams con gli ospiti.
-ms.openlocfilehash: 3efe87e93bc70adba4c99be3f2791e464cbfbc83
-ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
+description: Informazioni su come pianificare una riunione di Teams con utenti guest.
+ms.openlocfilehash: 2da05fdd4bc10bb1cc0dea5cd769c4630787820c
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49701931"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49926091"
 ---
 # <a name="schedule-a-teams-meeting-with-guests"></a>Pianificare una riunione di Teams con utenti guest
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOhP?autoplay=false]
 
-È possibile invitare persone provenienti dall'esterno dell'organizzazione a una riunione senza dover aggiungerle a Microsoft teams. Ecco come funziona per i clienti o i partner quando [partecipano a una riunione senza un account teams](https://support.microsoft.com/office/c6efc38f-4e03-4e79-b28f-e65a4c039508).
+È possibile invitare persone esterne all'organizzazione a una riunione senza doverle aggiungere a Microsoft Teams. Ecco come funziona per i clienti o i partner quando aderiscono [a una riunione senza un account teams.](https://support.microsoft.com/office/c6efc38f-4e03-4e79-b28f-e65a4c039508)
 
 ## <a name="try-it"></a>Perché non provarlo?
 
-Con Microsoft teams, è possibile creare nuovi team quando si avviano nuovi progetti o si aggiungono clienti.
+Con Microsoft Teams, è possibile creare nuovi team quando si avviano nuovi progetti o si aggiungono clienti.
 
-1. Nella scheda  **Teams** selezionare **Unisci o crea un team**, **Crea team**, creazione **di un team da zero** e quindi **privato**.
-2. Immettere un nome per il team, una descrizione e quindi fare clic su  **Crea**.
-3. Nella pagina  **Aggiungi membri**  , aggiungere membri interni eseguendo una ricerca e selezionarli e aggiungere membri Guest immettendo il proprio indirizzo di posta elettronica, quindi selezionare  **Aggiungi**.
+1. Nella scheda **Teams** selezionare Partecipa o crea **un team,** Crea **team,** **Crea un team da zero** e quindi **Privato.**
+2. Immettere un nome per il team, una descrizione e quindi selezionare **Crea.**
+3. Nella pagina **Aggiungi membri** aggiungere membri interni cercandoli e selezionandoli, quindi aggiungere membri guest immettendo il proprio indirizzo di posta elettronica e quindi selezionare **Aggiungi.**
 
-    Se si vede che non sono state  **trovate corrispondenze** , è necessario abilitare la condivisione Guest. Accedere all'interfaccia di amministrazione di Microsoft 365, scegliere l'interfaccia di amministrazione di teams, scegliere le  **impostazioni a livello di organizzazione**,  **accesso Guest** e attivare  **Consenti accesso guest in teams**. Questa modifica può richiedere fino a 24 ore.
+    Se non  **sono presenti corrispondenze,** è necessario abilitare la condivisione guest. Passare all'interfaccia di amministrazione di Microsoft 365, scegliere l'interfaccia di amministrazione di Teams, scegliere Impostazioni a livello di **organizzazione,** Accesso **guest** e attivare Consenti accesso **guest in Teams.** Questa modifica può richiedere fino a 24 ore.
 
-1. Selezionare  **Chiudi**. Gli ospiti e i membri riceveranno inviti al team.
-2. Nel canale generale, immettere un messaggio di saluto per tutti e selezionare  **Invia**.
-3. Nella scheda  **file** aggiungere i documenti che si desidera utilizzare insieme. È possibile crearli qui o trascinare e rilasciare i file dal computer.
+1. Selezionare **Chiudi.** Gli utenti guest e i membri riceveranno inviti al team.
+2. Nel canale Generale, immettere un messaggio di saluto per tutti e selezionare **Invia.**
+3. Nella scheda  **File** aggiungere i documenti su cui si desidera lavorare insieme. Puoi crearli qui o trascinare i file dal computer.

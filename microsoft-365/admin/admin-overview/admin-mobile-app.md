@@ -1,5 +1,5 @@
 ---
-title: Informazioni sull'app Microsoft 365 admin per dispositivi mobili
+title: Informazioni sull'app Microsoft 365 Admin per dispositivi mobili
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -17,48 +17,49 @@ ms.custom:
 - TRN_M365B
 - OKR_SMB_Videos
 - AdminSurgePortfolio
+- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: e16f6421-2a1a-4142-bf9d-9846600a060a
-description: Ottenere l'app di amministrazione di Microsoft 365 e imparare a gestire l'organizzazione online dal telefono o dal tablet.
-ms.openlocfilehash: 55aaf26d0da922c8d9bfb7c64f16278eb4a705a5
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+description: Ottenere l'app Amministratore di Microsoft 365 e imparare a gestire l'organizzazione online dal telefono o dal tablet.
+ms.openlocfilehash: aa5d7f688e2304f703f14f3a581eec73e67111a4
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48646644"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49925567"
 ---
-# <a name="about-the-microsoft-365-admin-mobile-app"></a>Informazioni sull'app Microsoft 365 admin per dispositivi mobili
+# <a name="about-the-microsoft-365-admin-mobile-app"></a>Informazioni sull'app per dispositivi mobili per amministratori di Microsoft 365
 
-Si è un amministratore di solito in viaggio? Quindi, vedere l' [app Microsoft 365 admin](https://go.microsoft.com/fwlink/?LinkID=627216). È possibile utilizzare l'app per gestire l'organizzazione online dal telefono o dal tablet. È possibile ottenere l'app dall'Apple Store e da Google Play. <br> 
+Sei un amministratore che di solito è in viaggio? Vedere quindi [l'app Amministratore di Microsoft 365.](https://go.microsoft.com/fwlink/?LinkID=627216) Puoi usare l'app per gestire l'organizzazione online dal tuo telefono o tablet. Puoi ottenere l'app dall'Apple Store e da Google Play. <br> 
 
-![Acquisizione dello schermo della Home page dell'app di amministrazione per dispositivi mobili, visualizzazione di ricerca, messaggi, integrità e collegamenti rapidi.](../../media/admin-mobile-app-darkbg.png)
+![Screen capture of the admin mobile app's home page, displaying search, messages, health, and quick links.](../../media/admin-mobile-app-darkbg.png)
 
-L'app di amministrazione è un'app ricca di funzionalità con oltre 80 funzionalità che consentono di gestire l'organizzazione quando non è possibile accedere a un computer. Ecco un elenco di solo alcune delle attività che è possibile eseguire dall'app:
+L'app amministratore è un'app ricca di funzionalità con oltre 80 funzionalità che consentono di gestire l'organizzazione quando non è possibile accedere a un computer. Ecco un elenco di alcune delle attività che puoi eseguire dall'app:
 
 - Ottenere l'integrità del servizio e le notifiche di modifica
 - Creare una richiesta di servizio
 - Reimpostare la password di un utente
-- Assegnazione delle licenze
-- Aggiungere o rimuovere le appartenenze ai gruppi
+- Assegnare le licenze
+- Aggiungere o rimuovere appartenenze a gruppi
 - Aggiungere gli utenti 
 
-Se si è responsabili di più organizzazioni online, è possibile accedere a più org e passare rapidamente da un utente all'altro. 
+Inoltre, se si è responsabili di più organizzazioni online, si accede a più organizzazioni e si passa rapidamente da un'organizzazione all'altra. 
   
 > [!IMPORTANT]
-> Se si verificano problemi con l'app di amministrazione per dispositivi mobili su iOS o Android, inviaci una e-mail a [feedback365@microsoft.com](mailto:feedback365@microsoft.com) per informarci. 
+> In caso di problemi durante l'uso dell'app Admin per dispositivi mobili in iOS o Android, inviaci un'e-mail [all'indirizzo feedback365@microsoft.com](mailto:feedback365@microsoft.com) per contattarci. 
   
 ## <a name="download-the-admin-mobile-app"></a>Scaricare l'app Admin per dispositivi mobili
 
-[App Microsoft 365 admin per dispositivi mobili](https://go.microsoft.com/fwlink/?LinkID=627216).
+[App Microsoft 365 Admin per dispositivi mobili.](https://go.microsoft.com/fwlink/?LinkID=627216)
   
-Guardare un breve video sull'installazione dell'app di amministrazione per dispositivi mobili.<br><br>
+Guardare un breve video sull'installazione dell'app admin per dispositivi mobili.<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/05c1d439-9ec2-415f-9178-250f64dec64c] 
 
-Se il video è stato utile, consultare la [serie di formazione completa per piccole imprese e nuovi utenti di Microsoft 365](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
+Se il video è stato utile, consultare la [serie dei corsi di formazione completa per piccole imprese e nuovi utenti di Microsoft 365](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
 
  
 ## <a name="frequently-asked-questions"></a>Domande frequenti
@@ -67,19 +68,19 @@ Ecco le risposte ad alcune domande frequenti sull'app.
   
 ### <a name="what-do-i-need-to-do-to-be-able-to-use-the-app"></a>Che cosa serve per usare l'app?
 
-È necessario disporre di un abbonamento valido Microsoft 365 Apps for business o Microsoft 365 Business Premium con privilegi di amministratore per accedere e usare l'app. L'app di amministrazione per dispositivi mobili non è un client di posta elettronica. Si tratta di un'applicazione amministrativa ricca con oltre 80 funzionalità che consente di supportare la propria organizzazione mentre è in viaggio.
+È necessario disporre di un abbonamento valido a Microsoft 365 Apps for business o Microsoft 365 Business Premium con privilegi di amministratore per accedere e usare l'app. L'app Admin per dispositivi mobili non è un client di posta elettronica. Si tratta di un'app amministrativa ricca con oltre 80 funzionalità che ti aiutano a supportare l'organizzazione mentre sei in viaggio.
   
-### <a name="can-i-use-the-app-with-my-microsoft-365-family-subscription"></a>È possibile utilizzare l'app con l'abbonamento alla famiglia Microsoft 365?
+### <a name="can-i-use-the-app-with-my-microsoft-365-family-subscription"></a>Posso usare l'app con l'abbonamento a Microsoft 365 Family?
 
 No, l'app funziona solo con gli abbonamenti Microsoft 365 Apps for business e Microsoft 365 Business Premium. 
   
 ### <a name="will-the-app-work-if-my-organization-has-directory-synchronization-enabled"></a>L'app funziona se nell'organizzazione è abilitata la sincronizzazione della directory?
 
-Sì, ma con funzionalità ridotte. È possibile accedere e visualizzare le informazioni del servizio, ma la maggior parte delle funzioni di gestione utente sarà di sola lettura. Non sarà possibile aggiungere, modificare o eliminare gli utenti. Tuttavia, sarà possibile assegnare licenze agli utenti dell'organizzazione e ricevere notifiche.
+Sì, ma con funzionalità ridotte. Potrai accedere e visualizzare le informazioni sul servizio, ma la maggior parte delle funzioni di gestione degli utenti sarà di sola lettura. Non sarà possibile aggiungere, modificare o eliminare utenti. Tuttavia, sarà possibile assegnare licenze agli utenti dell'organizzazione e ricevere notifiche.
   
 ### <a name="what-languages-are-supported-by-the-app"></a>Quali lingue sono supportate dall'app?
 
-L'app supporta tutte le lingue 39 supportate dall'interfaccia di amministrazione di Microsoft 365 basata sul Web. 
+L'app supporta tutte e 39 le lingue supportate dall'interfaccia di amministrazione di Microsoft 365 basata sul Web. Per cambiare la lingua, seleziona l'icona di avvio dell'app nella barra superiore e scegli **Impostazioni**  >  **lingua.**
   
 ### <a name="why-does-the-messages-tile-on-the-home-screen-show-numbers-even-after-ive-read-the-new-messages"></a>Perché il riquadro dei messaggi nella schermata iniziale indica dei numeri anche dopo che i nuovi messaggi sono stati letti?
 
@@ -87,9 +88,9 @@ I numeri indicano i messaggi totali dell'ultima settimana, non i messaggi non le
   
 ### <a name="how-can-i-share-the-service-incidents-and-messages-with-the-rest-of-my-organization"></a>Come è possibile condividere gli eventi imprevisti relativi ai servizi e i messaggi con il resto dell'organizzazione?
 
-Se si seleziona un determinato problema o un messaggio, l'opzione Condividi sarà nell'angolo in alto a destra. Attualmente è supportata la condivisione della posta elettronica.
+Se si seleziona un evento imprevisto di servizio specifico o un messaggio, l'opzione di condivisione verrà visualizzata nell'angolo in alto a destra. Attualmente è supportata la condivisione della posta elettronica.
   
-### <a name="can-i-use-this-app-with-multiple-accounts-or-tenants"></a>È possibile utilizzare questa app con più account o tenant?
+### <a name="can-i-use-this-app-with-multiple-accounts-or-tenants"></a>Posso usare questa app con più account o tenant?
 
 Sì, è possibile configurare più account o tenant.
   
@@ -101,11 +102,11 @@ Provare alcune procedure comuni per la risoluzione dei problemi delle app per di
     
 2. Disinstallare e reinstallare l'app.
 
-3. In caso contrario, è possibile contattarci tramite posta elettronica all' [feedback365@microsoft.com](mailto:feedback365@microsoft.com) per informarci.
+3. Se non funziona, è possibile inviare un'e-mail [all'feedback365@microsoft.com](mailto:feedback365@microsoft.com) per contattarci.
     
 ### <a name="what-do-i-do-if-my-question-isnt-answered"></a>Cosa si può fare se non è presente alcuna risposta alla propria domanda?
 
-[Feedback365@microsoft.com](mailto:feedback365@microsoft.com) di posta elettronica per segnalare un problema con l'app. In alternativa, è possibile inviare commenti e suggerimenti nella parte inferiore di questo articolo. 
+Invia [un feedback365@microsoft.com](mailto:feedback365@microsoft.com) e-mail per segnalare un problema con l'app. Oppure puoi inviare commenti e suggerimenti nella parte inferiore di questo articolo. 
   
 ## <a name="see-also"></a>Vedere anche
 

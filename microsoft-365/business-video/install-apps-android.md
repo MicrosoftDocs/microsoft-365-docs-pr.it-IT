@@ -16,32 +16,33 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Informazioni su come installare Outlook e altre app di Office su dispositivi Android.
-ms.openlocfilehash: ba9e37a3012dd8d9e7000bf2af61c014df58023a
-ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
+description: Informazioni su come installare Outlook e altre app di Office nei dispositivi Android.
+ms.openlocfilehash: 3b449d98a9e19e8f4ce8a3cc84dbbdce058dc310
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49702118"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49925123"
 ---
-# <a name="install-outlook-and-office-apps-on-android-devices"></a>Installare Outlook e le app di Office nei dispositivi Android
+# <a name="install-outlook-and-office-apps-on-android-devices"></a>Installare le app di Outlook e Office nei dispositivi Android
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWfquk?autoplay=false]
 
-Se il dispositivo Android è gestito da Microsoft 365 Business Premium, è possibile che venga richiesto di impostare la sicurezza aggiuntiva al primo avvio di un'app di Office. 
+Se il dispositivo Android è gestito da Microsoft 365 Business Premium, potrebbe essere richiesto di configurare una maggiore sicurezza la prima volta che si installa un'app di Office. 
 
 ## <a name="try-it"></a>Perché non provarlo?
 
-1. Nel dispositivo, scegli Google Play Store.
-2. Cercare l'app di Office che si desidera installare. In questo esempio viene utilizzato il&#39;utilizzo di Outlook.
-3. Nella schermata di benvenuto di  **Outlook scegliere inizia**.
-4. Nella pagina  **Aggiungi account**  immettere l'indirizzo di posta elettronica Microsoft 365 e quindi fare clic su  **continua**.
-5. In  **immettere la password** , digitare la password e quindi fare clic  **su Accedi**.
-6. Nella pagina successiva, scegliere  **continua**  se si desidera aggiungere un altro account. In caso contrario, scegliere  **Ignora**.
-7. Quando viene richiesto di aggiungere l'app portale aziendale di Intune, scegliere  **Vai a archivia**.
-8. Installare e aprire l'app portale aziendale di Intune, quindi fare clic su  **OK**  quando viene visualizzato il messaggio che l'organizzazione protegge i dati in questa app.
-9. Se viene richiesto un PIN, immettere un PIN di 4 cifre che&#39;utilizzerà per sbloccare il telefono, scegliere  **Invia** , confermare il PIN e quindi scegliere  **Invia**  di nuovo.
+1. Nel dispositivo scegliere Google Play Store.
+2. Cercare l'app di Office che si desidera installare. Per questo&#39;verrà utilizzato Outlook.
+3. Nella schermata iniziale di Outlook scegliere **Introduzione.**
+4. Nella pagina **Aggiungi account** immettere l'indirizzo di posta elettronica di Microsoft 365 e quindi scegliere **Continua.**
+5. In **Immettere la password** digitare la password e quindi scegliere **Accedi.**
+6. Nella pagina successiva scegliere  **Continua**  se si desidera aggiungere un altro account. In caso contrario, scegliere **Ignora.**
+7. Quando viene richiesto di aggiungere l'app Portale aziendale Intune, scegliere **Vai a store.**
+8. Installare e aprire l'app portale aziendale intune e quindi scegliere  **OK**  quando viene visualizzato il messaggio che indica che l'organizzazione protegge i dati in questa app.
+9. Se viene richiesto un PIN, immettere un PIN di 4 cifre che verrà utilizzato&#39;per sbloccare  il telefono, scegliere **Invia,** confermare il PIN e quindi scegliere di nuovo Invia.

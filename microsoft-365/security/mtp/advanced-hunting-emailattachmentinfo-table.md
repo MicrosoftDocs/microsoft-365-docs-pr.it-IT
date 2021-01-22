@@ -1,10 +1,10 @@
 ---
 title: Tabella EmailAttachmentInfo nello schema per Ricerca avanzata
 description: Informazioni sugli allegati di posta elettronica nella tabella EmailAttachmentInfo dello schema per Ricerca avanzata
-keywords: caccia avanzata, caccia alle minacce, Cyber-caccia alle minacce, Microsoft Threat Protection, Microsoft 365, MTP, M365, ricerca, query, telemetria, riferimento dello schema, kusto, tabella, colonna, tipo di dati, descrizione, EmailAttachmentInfo, ID messaggio di rete, mittente, destinatario, ID allegato, nome allegato, verdetto di malware
+keywords: ricerca avanzata, ricerca delle minacce, ricerca delle minacce informatiche, microsoft threat protection, Microsoft 365, mtp, m365, ricerca, query, telemetria, riferimento allo schema, kusto, tabella, colonna, tipo di dati, descrizione, EmailAttachmentInfo, ID messaggio di rete, mittente, destinatario, ID allegato, nome allegato, verdetto malware
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,12 +19,13 @@ mms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 6d88303b34f78abc857e9aec749bf2f58090f43a
-ms.sourcegitcommit: 1a9f0f878c045e1ddd59088ca2a94397605a242a
+ms.technology: m365d
+ms.openlocfilehash: c6cab4d813eba79e298d0082072888e3ef1ad1cd
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "49667650"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49927003"
 ---
 # <a name="emailattachmentinfo"></a>EmailAttachmentInfo
 
@@ -36,7 +37,7 @@ ms.locfileid: "49667650"
 
 
 
-La `EmailAttachmentInfo` tabella nello schema di [ricerca avanzata](advanced-hunting-overview.md) contiene informazioni sugli allegati nei messaggi di posta elettronica elaborati da Microsoft Defender per Office 365. Usare questo riferimento per creare query che restituiscono informazioni dalla tabella.
+La tabella nello schema di ricerca avanzata contiene informazioni sugli allegati nei messaggi di posta elettronica `EmailAttachmentInfo` elaborati da Microsoft Defender per Office 365. [](advanced-hunting-overview.md) Usare questo riferimento per creare query che restituiscono informazioni dalla tabella.
 
 Per informazioni su altre tabelle nello schema per Ricerca avanzata, [vedere il riferimento sulla Ricerca avanzata](advanced-hunting-schema-tables.md).
 
@@ -44,18 +45,18 @@ Per informazioni su altre tabelle nello schema per Ricerca avanzata, [vedere il 
 |-------------|-----------|-------------|
 | `Timestamp` | datetime | Data e ora di registrazione dell'evento |
 | `AttachmentId` | stringa | Identificatore univoco dell'allegato di posta elettronica |
-| `NetworkMessageId` | stringa | Identificatore univoco per il messaggio di posta elettronica, generato da Microsoft 365 |
+| `NetworkMessageId` | stringa | Identificatore univoco del messaggio di posta elettronica, generato da Microsoft 365 |
 | `SenderFromAddress` | stringa | Indirizzo di posta elettronica del mittente nell'intestazione DA, visibile ai destinatari del messaggio sui propri client di posta elettronica |
 | `RecipientEmailAddress` | stringa | Indirizzo di posta elettronica del destinatario o indirizzo di posta elettronica del destinatario dopo l'espansione della lista di distribuzione |
 | `FileName` | stringa | Nome del file a cui è stata applicata l'azione registrata |
 | `FileType` | stringa | Tipo di estensione del file |
 | `SHA256` | stringa | SHA-256 del file a cui è stata applicata l'azione registrata. (questo campo in genere non viene popolato: usare la colonna SHA1, se disponibile). |
 | `MalwareFilterVerdict` | stringa | Verdetto del gruppo di filtri della posta elettronica che indica se il messaggio contiene Malware: Malware, No malware |
-| `MalwareDetectionMethod` | stringa | Metodo utilizzato per rilevare la presenza di malware nel messaggio di posta elettronica: motore antimalware, reputazione dei file, allegati sicuri |
-| `SenderDisplayName` | stringa | Nome del mittente visualizzato nella rubrica, in genere una combinazione di un nome o di un cognome, di un iniziale medio e di un ultimo cognome o nome. |
-| `SenderObjectId` | stringa | Identificatore univoco per l'account del mittente in Azure AD |
-| `ThreatTypes` | stringa | Verdetto dallo stack del filtro della posta elettronica sul fatto che il messaggio di posta elettronica contenga malware, phishing o altre minacce |
-| `ThreatNames` | stringa | Nome del rilevamento di malware o altre minacce trovate |
+| `MalwareDetectionMethod` | stringa | Metodo usato per rilevare malware nella posta elettronica: motore antimalware, reputazione file, allegati sicuri |
+| `SenderDisplayName` | stringa | Nome del mittente visualizzato nella rubrica, in genere una combinazione di nome o nome, secondo nome e cognome o cognome |
+| `SenderObjectId` | stringa | Identificatore univoco dell'account del mittente in Azure AD |
+| `ThreatTypes` | stringa | Verdetto dello stack di filtro della posta elettronica che indica se il messaggio di posta elettronica contiene malware, phishing o altre minacce |
+| `ThreatNames` | stringa | Nome di rilevamento per malware o altre minacce rilevate |
 
 ## <a name="related-topics"></a>Argomenti correlati
 - [Panoramica della ricerca avanzata](advanced-hunting-overview.md)

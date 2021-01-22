@@ -1,5 +1,5 @@
 ---
-title: Creare un sito Web per la propria azienda
+title: Creare un sito Web per l'azienda
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -16,17 +16,18 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Informazioni su come creare un sito Web GoDaddy per la propria azienda.
-ms.openlocfilehash: db3a3133626577f9dc2665a61053cb587e9b7b3a
-ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
+description: Scopri come creare un sito Web GoDaddy per la tua azienda.
+ms.openlocfilehash: 44f1a82706ff2dc025fc9dcc6f74a71dc0a987e5
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49702004"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49927335"
 ---
 # <a name="create-a-website"></a>Creare un sito Web
 
@@ -34,11 +35,11 @@ ms.locfileid: "49702004"
 
 ## <a name="try-it"></a>Perché non provarlo?
 
-Microsoft 365 non include un sito Web pubblico per la propria azienda. Per impostarne uno, è consigliabile utilizzare una società di hosting Web come GoDaddy, WiX o WordPress.
+Microsoft 365 non include un sito Web pubblico per l'azienda. Per configurarne una, valuta la possibilità di usare una società di hosting Web come GoDaddy, Wix o WordPress.
 
-1. Ricerca di un provider di hosting Web in cui è possibile creare il sito Web.
+1. Cercare un provider di hosting Web in cui è possibile creare il sito Web.
 
-     È possibile che sia più facile scegliere il sito Web Builder nella stessa società in cui è registrato il nome di dominio.
-1. Creare il sito Web aziendale, assicurandosi di includere il logo aziendale, lo scopo aziendale, il testo, le immagini e i collegamenti.
-1. Per integrare il sito Web con Microsoft 365, è possibile aggiungere il proprio indirizzo di posta elettronica aziendale al sito Web e un collegamento a Microsoft teams, SharePoint o altro strumento di collaborazione.
-1. Assicurarsi di connettere il proprio sito Web al proprio nome di dominio, che si&#39;utilizzando anche per la posta elettronica su Microsoft 365.
+     Potrebbe risultare più semplice scegliere il generatore di siti Web nella stessa società in cui è registrato il nome di dominio.
+1. Progetta il tuo sito Web aziendale, assicurandoti di includere il logo aziendale, lo scopo aziendale, il testo, le immagini e i collegamenti.
+1. Per integrare il sito Web con Microsoft 365, è possibile aggiungere la posta elettronica aziendale al sito Web e un collegamento a Microsoft Teams, SharePoint o altri strumenti di collaborazione.
+1. Assicurarsi di connettere il sito Web al nome di dominio, che&#39;usare anche per la posta elettronica in Microsoft 365.

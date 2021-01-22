@@ -1,5 +1,5 @@
 ---
-title: Visualizzare, scaricare o stampare la bolletta
+title: Visualizzare, scaricare o stampare una fattura
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -16,28 +16,29 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Informazioni su come visualizzare, scaricare o stampare la bolletta.
-ms.openlocfilehash: 30069930282113afc4ccc5d6bbed5555bb608e08
-ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
+description: Informazioni su come visualizzare, scaricare o stampare la fattura.
+ms.openlocfilehash: e814878dce99dcda665f98afa2e147dc3249375f
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49702016"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49925767"
 ---
 # <a name="view-download-or-print-your-bill-for-microsoft-365"></a>Visualizzare, scaricare o stampare la fattura per Microsoft 365
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FGmo?autoplay=false]
 
-In Microsoft 365 business, è possibile esaminare la fattura di sottoscrizione mensile, quindi scaricarla e salvarla oppure stamparla.
+In Microsoft 365 Business, è possibile esaminare la fattura dell'abbonamento mensile e scaricarla e salvarla o stamparla.
 
 ## <a name="try-it"></a>Perché non provarlo?
 
-1. Nell'interfaccia di amministrazione di Microsoft 365 selezionare **fatturazione** nel riquadro di spostamento a sinistra e quindi selezionare **fatture & pagamenti**.
-1. Selezionare una fattura per visualizzarla. Se non si vede una fattura, selezionare **filtro in base a: ultimi 6 mesi** dall'elenco a discesa.
-1. Per visualizzare i dettagli delle fatture, selezionare **Download PDF** nell'angolo in alto a destra della fattura.
-1. Dopo aver esaminato il file PDF, è possibile scaricarlo e salvarlo o stamparlo. Selezionare l'icona Scarica o l'icona stampa nell'angolo in alto a destra dello schermo.
+1. Nell'interfaccia di amministrazione di Microsoft  365, selezionare Fatturazione nel riquadro di spostamento sinistro e quindi selezionare Fatture & **Pagamenti.**
+1. Selezionare una fattura per visualizzarla. Se non viene visualizzata una fattura, selezionare **Filtra per: Ultimi 6 mesi** dall'elenco a discesa.
+1. Per visualizzare i dettagli della fattura, selezionare **Scarica PDF** nell'angolo in alto a destra della fattura.
+1. Dopo aver esaminato il PDF, è possibile scaricarlo e salvarlo o stamparlo. Seleziona l'icona di download o l'icona di stampa nell'angolo in alto a destra dello schermo.

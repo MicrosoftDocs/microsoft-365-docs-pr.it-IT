@@ -1,5 +1,5 @@
 ---
-title: Aggiungere il marchio dell'azienda alla pagina di accesso
+title: Aggiungere il marchio aziendale alla pagina di accesso
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -13,27 +13,29 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
-ms.custom: AdminSurgePortfolio
+ms.custom:
+- AdminSurgePortfolio
+- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: a1229cdb-ce19-4da5-90c7-2b9b146aef0a
-description: Personalizzare la pagina di accesso di Microsoft 365 utilizzando Azure Active Directory. È possibile aggiungere una figura, un logo e un testo alla pagina di accesso.
-ms.openlocfilehash: 2f6df71a46e7510413601fe7dc00143280b4e6aa
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+description: Personalizzare la pagina di accesso di Microsoft 365 usando Azure Active Directory. Puoi aggiungere un'illustrazione, un logo e testo alla pagina di accesso.
+ms.openlocfilehash: 9a4e18aeb050fe128ded1ea83756256a386a0fb4
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44398943"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49926907"
 ---
-# <a name="add-your-company-branding-to-the-sign-in-page"></a>Aggiungere il marchio dell'azienda alla pagina di accesso
+# <a name="add-your-company-branding-to-the-sign-in-page"></a>Aggiungere il marchio aziendale alla pagina di accesso
 
- È ora possibile utilizzare la sottoscrizione di Azure Active Directory (AD) inclusa nell'abbonamento a Microsoft 365 per personalizzare la pagina di accesso visualizzata dagli utenti. 
+ È ora possibile usare l'abbonamento ad Azure Active Directory (AD) incluso nell'abbonamento a Microsoft 365 per personalizzare la pagina di accesso visualizzata dagli utenti. 
   
 ## <a name="add-company-branding-to-your-sign-in-page-and-access-panel-pages"></a>Aggiungere il marchio dell'azienda alla pagina di accesso e alle pagine del riquadro di accesso
 
-Se si dispone di un abbonamento a pagamento a Microsoft 365 for business, Microsoft Dynamics CRM Online, Enterprise Mobility Suite o altri servizi Microsoft, è disponibile una sottoscrizione gratuita ad Azure Active Directory. È possibile usare Azure Active Directory per creare e gestire account utente e di gruppo e aggiungere il marchio dell'azienda alle pagine. Per attivare questa sottoscrizione e accedere al portale di gestione di Microsoft Azure, è necessario completare un processo di registrazione una tantum. In seguito, sarà possibile accedere a Azure Active Directory dal servizio Microsoft che lo usa. Per istruzioni su come registrare la sottoscrizione Microsoft 365, vedere [registrare la sottoscrizione gratuita di Azure Active Directory](https://go.microsoft.com/fwlink/p/?LinkID=527966)e vedere [gestire la directory per la sottoscrizione Microsoft 365 in Azure](https://go.microsoft.com/fwlink/p/?LinkId=620076) per istruzioni generali sulla gestione. 
+Se si dispone di un abbonamento a pagamento a Microsoft 365 per le aziende, Microsoft Dynamics CRM Online, Enterprise Mobility Suite o altri servizi Microsoft, si dispone di una sottoscrizione gratuita ad Azure Active Directory. È possibile usare Azure Active Directory per creare e gestire account utente e di gruppo e aggiungere il marchio dell'azienda alle pagine. Per attivare questa sottoscrizione e accedere al portale di gestione di Microsoft Azure, è necessario completare un processo di registrazione una tantum. In seguito, sarà possibile accedere a Azure Active Directory dal servizio Microsoft che lo usa. Per istruzioni su come registrare l'abbonamento a Microsoft 365, vedere Registrare l'abbonamento gratuito ad [Azure Active Directory](https://go.microsoft.com/fwlink/p/?LinkID=527966)e vedere Gestire la directory per l'abbonamento a Microsoft [365 in Azure](https://go.microsoft.com/fwlink/p/?LinkId=620076) per istruzioni generali sulla gestione. 
   
 La figura seguente illustra le parti della pagina di accesso che possono essere modificate in Azure.
   

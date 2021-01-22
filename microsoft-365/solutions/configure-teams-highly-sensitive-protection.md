@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: Come distribuire team con la protezione dei dati altamente sensibili.
-ms.openlocfilehash: 045f1b1d1ebf03eb70554dc5964acb0a12e0060f
-ms.sourcegitcommit: df58fd8ebe14ca98fc1be84dbfb9c29ef7ab1d62
+ms.openlocfilehash: 2679a8a0bd8cf5cc3d35d517e8a44921fc4fdbc1
+ms.sourcegitcommit: 7ecd10b302b3b3dfa4ba3be3a6986dd3c189fbff
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49870852"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "49921135"
 ---
 # <a name="configure-teams-with-protection-for-highly-sensitive-data"></a>Configurare team con la protezione dei dati altamente sensibili
 
@@ -153,7 +153,7 @@ Per fare in modo che solo i proprietari possano condividere il sito
 2. Nella barra degli strumenti per il team fare clic su **File**.
 3. Fare clic sui puntini di sospensione, quindi selezionare **Apri in SharePoint**.
 4. Nella barra degli strumenti del sito di SharePoint sottostante fare clic sull'icona delle impostazioni, quindi su **Autorizzazioni sito**.
-5. Nel riquadro Autorizzazioni sito fare clic su **Modifica impostazioni di condivisione** in **Impostazioni di condivisione**.
+5. Nel riquadro **Autorizzazioni sito**, in **Condivisione sito**, fare clic su **Modifica il metodo di condivisione dei membri**.
 6. In **Impostazioni di condivisione** scegliere **Solo i proprietari del sito possono condividere file, cartelle e il sito**.
 7. **Disattivare** **Consenti richieste di accesso** e quindi fare clic su **Salva**.
 

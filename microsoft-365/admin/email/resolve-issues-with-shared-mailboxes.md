@@ -16,38 +16,39 @@ ms.collection:
 ms.custom:
 - MSStore_Link
 - AdminSurgePortfolio
+- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Provare queste soluzioni se si verificano problemi con le cassette postali condivise.
-ms.openlocfilehash: c889d3aa2fab8c2dce4cc2a8a00ef49a905363a1
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: ba62db76edff6e4ab3d738ed0af8db2a40c18394
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48445508"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49926487"
 ---
 # <a name="resolve-issues-with-shared-mailboxes"></a>Risolvere i problemi relativi alle cassette postali condivise
 
-Se viene visualizzato un messaggio di errore durante la creazione o l'utilizzo di una cassetta postale condivisa, provare queste possibili soluzioni. 
+Se vengono visualizzati messaggi di errore durante la creazione o l'utilizzo di una cassetta postale condivisa, provare queste possibili soluzioni. 
 
 ## <a name="error-when-creating-shared-mailboxes"></a>Errore durante la creazione di cassette postali condivise
 <a name="bkmk_Fix"> </a>
 
-Se viene visualizzato il messaggio di errore, **l'indirizzo proxy "SMTP: <nome della cassetta postale condivisa \> " è già utilizzato dagli indirizzi proxy o legacyExchangeDN di " \<name> ". Scegliere un altro indirizzo proxy**, significa che si sta tentando di assegnare alla cassetta postale condivisa un nome già in uso. Ad esempio, supponiamo di voler assegnare a due cassette postali condivise i nomi info@dominio1 e info@dominio2. Questa operazione può essere eseguita in due modi:
+Se viene visualizzato il messaggio di errore, l'indirizzo proxy "smtp:<shared mailbox name " è già utilizzato dagli indirizzi proxy o **\> LegacyExchangeDN di " \<name> ". Scegliere un altro indirizzo proxy,** significa che si sta tentando di assegnare alla cassetta postale condivisa un nome già in uso. Ad esempio, supponiamo di voler assegnare a due cassette postali condivise i nomi info@dominio1 e info@dominio2. Questa operazione può essere eseguita in due modi:
 
-  - Usare Windows PowerShell. Per istruzioni, vedere questo post di Blog: [creare cassette postali condivise con lo stesso alias in domini diversi](https://www.cogmotive.com/blog/office-365-tips/create-shared-mailboxes-with-same-alias-at-different-domains-in-office-365)
+  - Usare Windows PowerShell. Vedere questo post di blog per istruzioni: [Creare cassette postali condivise con lo stesso alias in domini diversi](https://www.cogmotive.com/blog/office-365-tips/create-shared-mailboxes-with-same-alias-at-different-domains-in-office-365)
     
-  - Denominare la seconda cassetta postale condivisa qualcosa di diverso dall'inizio per aggirare l'errore. Quindi, nell'interfaccia di amministrazione, rinominare la cassetta postale condivisa in quello che si vuole che sia.
+  - Assegnare alla seconda cassetta postale condivisa un nome diverso dall'inizio per aggirare l'errore. Quindi, nell'interfaccia di amministrazione, rinominare la cassetta postale condivisa in quello che si desidera.
 
-## <a name="error-about-not-having-send-permissions-when-using-a-shared-mailbox"></a>Errore relativo all'utilizzo di autorizzazioni di invio quando si utilizza una cassetta postale condivisa
+## <a name="error-about-not-having-send-permissions-when-using-a-shared-mailbox"></a>Errore di non disporre delle autorizzazioni di invio quando si utilizza una cassetta postale condivisa
 
-Se è stata creata una cassetta postale condivisa e quindi si tenta di inviare un messaggio, è possibile che venga visualizzato quanto segue:
+Se è stata creata una cassetta postale condivisa e quindi si tenta di inviare un messaggio da essa, è possibile che venga visualizzato questo messaggio:
 
-**Non è stato possibile inviare il messaggio. Non si dispone dell'autorizzazione per l'invio del messaggio per conto dell'utente specificato.**
+**Impossibile inviare il messaggio. Non si dispone dell'autorizzazione per inviare il messaggio per conto dell'utente specificato.**
 
-Questo messaggio viene visualizzato quando si verifica un problema di latenza della replica in Microsoft 365. Se le informazioni sulla nuova cassetta postale condivisa (o aggiunta di un utente) vengono replicate in tutti i Data Center, il testo dovrebbe scomparire tra un'ora. Attendere un'ora e quindi riprovare per inviare un messaggio.
+Questo messaggio viene visualizzato quando si verifica un problema di latenza di replica in Microsoft 365. Dovrebbe andare via tra circa un'ora, quando le informazioni sulla nuova cassetta postale condivisa (o sull'utente aggiunto) vengono replicate in tutti i data center. Attendere un'ora e quindi riprovare a inviare un messaggio.
 
 ## <a name="related-articles"></a>Articoli correlati
 

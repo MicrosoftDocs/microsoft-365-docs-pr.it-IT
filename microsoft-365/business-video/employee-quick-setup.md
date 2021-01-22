@@ -1,5 +1,5 @@
 ---
-title: Guida per l'installazione rapida dei dipendenti
+title: Guida rapida alla configurazione dei dipendenti
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -16,63 +16,64 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Aiuto ai dipendenti informazioni su come configurare le app di Office che ricevono con Microsoft 365 Business Premium.
-ms.openlocfilehash: 9a610b9de2ddb64aeaf7447721d8fa500dbdf0c9
-ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
+description: Aiutare i dipendenti a configurare le app di Office che ottengono con Microsoft 365 Business Premium.
+ms.openlocfilehash: 1715562a648af42bff07ab9a3e62647e386125cb
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49702954"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49927251"
 ---
-# <a name="employee-quick-setup"></a>Configurazione rapida dei dipendenti
+# <a name="employee-quick-setup"></a>Configurazione rapida per i dipendenti
 
-Si è nuovi a Microsoft 365 for business? :::image type="icon" source="../media/video-call-icon.png" border="false":::[Guardare questo video](https://support.microsoft.com/office/d6466f0d-5d13-464a-adcb-00906ae87029) per informazioni su di esso. Eseguire quindi la procedura seguente.
+Sei nuovo di Microsoft 365 per le aziende? :::image type="icon" source="../media/video-call-icon.png" border="false":::[Guardare questo video](https://support.microsoft.com/office/d6466f0d-5d13-464a-adcb-00906ae87029) per informazioni. Eseguire quindi questa procedura.
 
-:::image type="content" source="../media/m365-employee-quick-setup.png" alt-text="Immagine che mostra i passaggi di configurazione rapidi dei dipendenti.":::
+:::image type="content" source="../media/m365-employee-quick-setup.png" alt-text="Immagine che mostra i passaggi rapidi di configurazione dei dipendenti.":::
 
-## <a name="1-sign-in-to-office"></a>1. accedere a Office
+## <a name="1-sign-in-to-office"></a>1. Accedere a Office
 
 1. Passare a [Office.com](https://office.com) e scegliere **Accedi**.
-1. Digitare il messaggio di posta elettronica e la password di Microsoft 365, quindi eseguire l' **accesso**.
+1. Digitare la password e la posta elettronica di Microsoft 365, quindi **accedere.**
 
-## <a name="2-download-and-install-office-apps"></a>2. scaricare e installare le app di Office
+## <a name="2-download-and-install-office-apps"></a>2. Scaricare e installare le app di Office
 
-1. Scegliere **installa Office** in alto a destra.
+1. Scegliere **Installa Office** in alto a destra.
     - In Chrome, passare al download nella parte inferiore della pagina e scegliere **Apri**.
     - In Microsoft Edge/Internet Explorer scegliere **Salva**, quindi **Esegui**.
     
         Se viene chiesto se consentire all'app di apportare modifiche, scegliere **Sì**. L'installazione di Office si avvia.
-    - Su un Mac, aprire Microsoft **Office_2016_Installer. pkg**
+    - In un Mac, aprire Microsoft **Office_2016_Installer.pkg**
 
-## <a name="3-open-outlook-and-add-your-account"></a>3. Aprire Outlook e aggiungere il proprio account
+## <a name="3-open-outlook-and-add-your-account"></a>3. Aprire Outlook e aggiungere l'account
 
 1. Aprire **Outlook** nel computer. Nel campo Aiutami digitare **account** e quindi **Aggiungi account**.
 
-    :::image type="content" source="../media/add-outlook-account.png" alt-text="Figura che illustra come aggiungere un account a Outlook.":::
+    :::image type="content" source="../media/add-outlook-account.png" alt-text="Figura che mostra come aggiungere un account a Outlook.":::
 
 1. Digitare nome, indirizzo di posta elettronica e password, quindi scegliere **Avanti**.
 
 > [!TIP]
 > Per importare i vecchi messaggi di posta elettronica, esportarli in un file PST e quindi importarlo in questo modo.
 
-## <a name="4-save-or-copy-files-to-onedrive"></a>4. salvare o copiare i file in OneDrive
+## <a name="4-save-or-copy-files-to-onedrive"></a>4. Salvare o copiare file in OneDrive
 
 - Salvare i documenti in **OneDrive** dal menu **Salva con nome** nelle app di Office.
-    :::image type="content" source="../media/save-onedrive.png" alt-text="Imge che è il modo in cui salvare le informazioni su OneDrive.":::
+    :::image type="content" source="../media/save-onedrive.png" alt-text="Capire chi è il modo in cui salvare con nome in OneDrive.":::
 
 - Oppure copiare i file dal desktop o da Documenti in **OneDrive**.
 
-    :::image type="content" source="../media/save-to-onedrive-from-docs.png" alt-text="Immagine che Mostra come salvare in OneDrive dalla cartella dei documenti.":::
+    :::image type="content" source="../media/save-to-onedrive-from-docs.png" alt-text="Immagine che mostra come salvare in OneDrive dalla cartella Documenti.":::
 
     > [!TIP]
-    > È inoltre possibile archiviare i file nei [siti](https://support.microsoft.com/office/d18d21a0-1f9f-4f6c-ac45-d52afa0a4a2e) di Microsoft 365.
+    > È inoltre possibile archiviare file [nei siti](https://support.microsoft.com/office/d18d21a0-1f9f-4f6c-ac45-d52afa0a4a2e) in Microsoft 365.
 
-## <a name="5-share-documents"></a>5. condividere documenti
+## <a name="5-share-documents"></a>5. Condividere documenti
 
 1. Per condividere documenti con altri utenti, scegliere **Condividi**.
 
@@ -81,10 +82,10 @@ Si è nuovi a Microsoft 365 for business? :::image type="icon" source="../media/
 1. Digitare l'indirizzo di posta elettronica, concedere autorizzazioni di lettura o modifica, includere un messaggio e scegliere **Condividi**.
 1. In alternativa, scegliere **Recupera un collegamento di condivisione** nella parte inferiore dello schermo.
 
-## <a name="6-get-outlook-on-your-phone"></a>6. ottenere Outlook sul telefono
+## <a name="6-get-outlook-on-your-phone"></a>6. Ottenere Outlook sul telefono
 
-- Ottenere **Outlook** sul telefono dall'App Store o da Google Play Store. Aprirlo e scegliere **inizia** e aggiungere la posta elettronica e la password.
+- Ottenere **Outlook** sul telefono dall'App Store o da Google Play Store. Aprirlo e scegliere **Introduzione e** aggiungere la posta elettronica e la password.
 - In alternativa, aprire Outlook in un dispositivo iOS o Android e passare a **Impostazioni**.
 
     Scegliere **Aggiungi Account**, **Aggiungi account e-mail**, quindi digitare indirizzo di posta elettronica e password.
-- In un **Windows Phone**, scegliere **Impostazioni**, **posta elettronica + account**, **aggiungere un account** e quindi **Exchange**.
+- In un **Windows Phone,** scegliere **Impostazioni,** **Posta elettronica + account,** **Aggiungere un account** e quindi **Exchange.**

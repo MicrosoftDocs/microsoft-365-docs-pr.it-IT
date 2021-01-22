@@ -1,5 +1,5 @@
 ---
-title: Configurare la sottoscrizione Microsoft 365 Business Premium
+title: Configurare l'abbonamento a Microsoft 365 Business Premium
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -16,17 +16,18 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Informazioni su come configurare Microsoft 365 Business Premium.
-ms.openlocfilehash: 79f089e38979990c29156ea07201c8d902a51e80
-ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
+ms.openlocfilehash: bda1326ebd905dece382c1513296739a39887976
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49703146"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49925947"
 ---
 # <a name="set-up-microsoft-365-business-premium"></a>Configurare Microsoft 365 Business Premium
 
@@ -34,18 +35,18 @@ ms.locfileid: "49703146"
 
 ## <a name="try-it"></a>Perché non provarlo?
 
-1. Accedere all'interfaccia di amministrazione di Microsoft 365 e selezionare  **Vai a installazione**. Verrà avviata l'installazione guidata.
-2.  Nella pagina  **installa le app di Office**  , è possibile scegliere di installare le app di Office nel computer in uso oppure selezionare  **continua**.
-3.  Nel dominio è la pagina dell'  **identità aziendale**  , immettere il nome di dominio per la propria azienda e quindi selezionare  **Usa questo dominio**. Se si utilizza un registrar comune come WordPress o GoDaddy, i record verranno aggiunti automaticamente in questa pagina.
-4. Nella pagina  **verifica il dominio**  selezionare  **Verifica** per verificare la proprietà del dominio e quindi accedere all'account di registrazione del dominio. Per consentire a Microsoft di aggiungere un record TXT per la verifica dell'account, selezionare  **conferma**.
-5. Nella pagina  **Aggiungi utenti e assegna licenze**  , immettere i nomi utente, cognomi e nomi utente. Selezionare quindi  **Aggiungi utenti e assegna licenze**.
-6. Nella pagina  **Condividi informazioni di accesso**  , immettere indirizzi di posta elettronica alternativi per gli utenti, quindi selezionare  **Invia messaggio di posta elettronica e continua**.
-7.  Nella pagina  **attiva record**  fare clic su  **continua**.
-8.  Nella pagina  **Aggiungi record DNS**  è consigliabile lasciare attivati i servizi per la posta elettronica, i team e la sicurezza dei dispositivi mobili. Selezionare  **Configure** , quindi selezionare  **Connetti** per confermare le modifiche con il registrar.
-9.  Nella pagina **aumentare la protezione da minacce informatiche avanzate** , lasciare **Office Advanced Threat Protection** on, esaminare gli elementi analizzati e quindi selezionare Crea **criteri** di **protezione avanzata per minacce**.   
-10.  Se lo si desidera, è possibile installare Outlook sui dispositivi mobili. Selezionare  **continua**.
-11. Nella pagina  **help people use Microsoft teams**  scegliere se si desidera che gli utenti della propria organizzazione vengano inviati tramite posta elettronica e selezionare  **continua**.
-12. Nella pagina  **Proteggi dati in Office per dispositivi**  mobili, lascia la gestione delle app per dispositivi mobili, Espandi le impostazioni e rivedile e quindi seleziona  **Crea criteri di gestione delle app per dispositivi mobili**.
-13. Al termine della configurazione, tornare all'interfaccia di amministrazione di Microsoft. Nell'interfaccia di amministrazione è possibile continuare a configurare le funzionalità come i criteri di Windows 10, DLP e così via nella pagina di  **installazione**  .
+1. Accedere all'interfaccia di amministrazione di Microsoft 365 e selezionare **Vai alla configurazione.** Verrà avviata l'installazione guidata.
+2.  Nella pagina **Installa le app di Office** è possibile scegliere di installare le app di Office nel computer oppure selezionare **Continua.**
+3.  Nella pagina **Il dominio è l'identità aziendale,** immettere il nome di dominio dell'azienda e quindi selezionare **Usa questo dominio.** Se si utilizza un registrar comune come WordPress o GoDaddy, i record verranno aggiunti automaticamente in questa pagina.
+4. Nella pagina  **Verifica dominio**  selezionare Verifica per  **verificare** la proprietà del dominio e quindi accedere all'account del registrar. Per consentire a Microsoft di aggiungere un record TXT per la verifica dell'account, selezionare **Conferma.**
+5. Nella pagina  **Aggiungi utenti e assegnare licenze**  immettere nomi utente, cognome e nomi utente. Selezionare quindi **Aggiungi utenti e assegnare le licenze.**
+6. Nella pagina **Condividi informazioni di accesso** immettere indirizzi di posta elettronica alternativi per gli utenti e selezionare Invia messaggio di posta elettronica e **continuare.**
+7.  Nella pagina **Attiva record** fare clic su **Continua.**
+8.  Nella pagina  **Aggiungi record DNS**  è consigliabile lasciare attivati i servizi per la posta elettronica, Teams e la sicurezza dei dispositivi mobili. Selezionare  **Configura** e quindi Connetti  **per** confermare le modifiche con il registrar.
+9.  Nella pagina Aumenta la protezione dalle minacce **informatiche** avanzate, lasciare **su Office Advanced Threat Protection,** esaminare gli elementi che verranno analizzati e quindi selezionare **Crea criteri di Advanced Threat Protection.**   
+10.  If you like, you can optionally install Outlook on your mobile devices. Selezionare **Continua.**
+11. Nella pagina **Aiuta gli utenti a usare Microsoft Teams** scegliere se si desidera inviare un messaggio di posta elettronica agli utenti dell'organizzazione su Teams e selezionare **Continua.**
+12. Nella pagina **Proteggi i dati in Office** per dispositivi mobili lasciare selezionata la gestione delle app per dispositivi mobili, espandere le impostazioni ed esaminarle e quindi selezionare Crea criteri di gestione delle app per dispositivi **mobili.**
+13. Al termine dell'installazione, tornare all'interfaccia di amministrazione di Microsoft. Nell'interfaccia di amministrazione è possibile continuare a configurare funzionalità come i criteri di Windows 10, DLP e così via nella **pagina Configurazione.**
 
 La configurazione è stata completata.

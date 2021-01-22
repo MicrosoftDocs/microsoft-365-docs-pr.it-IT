@@ -18,33 +18,34 @@ ms.custom:
 - OKR_SMB_Videos
 - seo-marvel-may2020
 - AdminSurgePortfolio
+- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 2d75860f-c527-4352-a7f6-73eba54c0c72
-description: Informazioni su come gestire le firme di posta elettronica, incluse le dichiarazioni di non responsabilità legali o di divulgazione per tutti i messaggi di posta elettronica che entrano o lasciano l'organizzazione.
-ms.openlocfilehash: 9e438b42eb95dced4c3b99d21c66011365b180c9
-ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
+description: Informazioni su come gestire le firme di posta elettronica, incluse dichiarazioni di non responsabilità legali o dichiarazioni di divulgazione per tutti i messaggi di posta elettronica che entrano o escono dall'organizzazione.
+ms.openlocfilehash: c8d63a11a75b9b53de9cabdf1f4baabc61cc3e42
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "48906502"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49926919"
 ---
 # <a name="create-organization-wide-signatures-and-disclaimers"></a>Creare firme e dichiarazioni di non responsabilità a livello di organizzazione
 
- È possibile gestire le firme di posta elettronica aggiungendo una firma di posta elettronica, una dichiarazione di non responsabilità legale o un'istruzione di divulgazione ai messaggi di posta elettronica che entrano o lasciano l'organizzazione. È possibile configurarlo per essere applicato a tutti i messaggi in entrata e in uscita, come illustrato di seguito. In alternativa, è possibile applicarla a determinati messaggi, come quelli che contengono parole o modelli di testo specifici.
+ È possibile gestire le firme di posta elettronica aggiungendo una firma di posta elettronica, una dichiarazione di non responsabilità legale o una dichiarazione di divulgazione ai messaggi di posta elettronica che entrano o lasciano l'organizzazione. È possibile configurarlo per l'applicazione a tutti i messaggi in arrivo e in uscita, come illustrato di seguito. Oppure è possibile applicarlo a determinati messaggi, ad esempio quelli contenenti parole o modelli di testo specifici.
 
  Guardare un breve video sulla creazione di una firma di posta elettronica a livello aziendale. <br><br>
   
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1IEWf] 
 
-Se il video è stato utile, consultare la [serie di formazione completa per piccole imprese e nuovi utenti di Microsoft 365](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
+Se il video è stato utile, consultare la [serie dei corsi di formazione completa per piccole imprese e nuovi utenti di Microsoft 365](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
 
 ## <a name="create-a-signature-that-applies-to-all-messages"></a>Creare una firma da applicare a tutti i messaggi
 
 > [!TIP]
-> Le firme a livello dell'organizzazione sono denominate "dichiarazioni di non responsabilità", indipendentemente da ciò che includono. Ad esempio, possono essere solo una firma o includere anche l'indirizzo, la dichiarazione di non responsabilità legale o altre informazioni desiderate.
+> Le firme a livello di organizzazione sono denominate "dichiarazioni di non responsabilità", indipendentemente da ciò che includono. Ad esempio, possono essere solo una firma o anche includere l'indirizzo, la dichiarazione di non responsabilità legale o altre informazioni desiderate.
     
 ::: moniker range="o365-worldwide"
 
@@ -64,33 +65,33 @@ Passare all'interfaccia di amministrazione all'indirizzo <a href="https://go.mic
 
 ::: moniker-end
 
-1. Seleziona l'icona di avvio ![ delle app ](../../media/7502f4ec-3c9a-435d-a7b4-b9cda85189a7.png) e quindi seleziona **amministratore**.
+1. Seleziona l'icona di avvio delle app L'icona di avvio ![ delle app e quindi seleziona ](../../media/7502f4ec-3c9a-435d-a7b4-b9cda85189a7.png) **Amministratore.**
    
-    Non riesci a trovare l'app che stai cercando? Dall'icona di avvio delle app, seleziona **tutte le app** per visualizzare un elenco alfabetico delle app disponibili. Tramite la lista è possibile cercare un'applicazione specifica. 
+    Non riesci a trovare l'app che stai cercando? Nell'icona di avvio delle app seleziona Tutte le **app** per visualizzare un elenco alfabetico delle app disponibili. Tramite la lista è possibile cercare un'applicazione specifica. 
     
-2. Selezionare interfaccia di **Amministrazione** , quindi fare clic su **Exchange**.
+2. Selezionare **Le centri di amministrazione** e quindi scegliere **Exchange.**
     
-3. In flusso di posta, selezionare **regole**.
+3. In Flusso di posta selezionare **Regole.**
     
-4. Selezionare l' **+** icona (Aggiungi) e scegliere **applica dichiarazioni** di non responsabilità.
+4. Selezionare **+** l'icona (Aggiungi) e scegliere **Applica dichiarazioni di non responsabilità.**
     
 5. Assegnare un nome alla regola.
     
-6. In **applica questa regola** selezionare **[applica a tutti i messaggi]**.
+6. In **Applica questa regola** selezionare **[Applica a tutti i messaggi]**.
     
     > [!TIP]
-    > [Altre informazioni](https://docs.microsoft.com/Exchange/policy-and-compliance/mail-flow-rules/signatures#Scoping) su come applicare condizioni se non si vuole che la dichiarazione di non responsabilità venga applicata a tutti i messaggi. (Questo articolo di ambito è per Exchange Server, ma si applica anche a Microsoft 365). 
+    > [Altre informazioni](https://docs.microsoft.com/Exchange/policy-and-compliance/mail-flow-rules/signatures#Scoping) su come applicare condizioni se non si vuole che la dichiarazione di non responsabilità venga applicata a tutti i messaggi. Questo articolo sull'ambito è Exchange Server, ma si applica anche a Microsoft 365. 
   
 7. In Effettua le operazioni seguenti lasciare selezionata l'opzione **Aggiungi una dichiarazione di non responsabilità**. 
     
 8.  Selezionare **Immetti testo** e digitare la dichiarazione di non responsabilità. 
     
     > [!TIP]
-    > [Altre informazioni](https://docs.microsoft.com/Exchange/policy-and-compliance/mail-flow-rules/signatures#FormatDisclaimer) sulla formattazione di dichiarazioni di non responsabilità. (Questo articolo di formattazione è per Exchange Server, ma si applica anche a Microsoft 365). 
+    > [Altre informazioni](https://docs.microsoft.com/Exchange/policy-and-compliance/mail-flow-rules/signatures#FormatDisclaimer) sulla formattazione di dichiarazioni di non responsabilità. Questo articolo sulla formattazione è Exchange Server, ma si applica anche a Microsoft 365. 
 
-9. Selezionare **selezionarne una** e scegliere **Wrap** come opzione di fallback. Quindi scegliere **OK**. Con questa opzione, se la dichiarazione di non responsabilità non può essere aggiunta a causa di un'impostazione della posta, come la crittografia, verrà incorporata nella busta del messaggio.
+9. Selezionare **Seleziona uno** e scegliere Ritorno a **capo** come opzione di fallback. Quindi scegliere **OK**. Con questa opzione, se la dichiarazione di non responsabilità non può essere aggiunta a causa di un'impostazione della posta, come la crittografia, verrà incorporata nella busta del messaggio.
     
-10. Lasciare selezionata l'opzione **Controlla questa regola con livello di gravità**. Quindi scegliere **Basso** , **Medio** o **Alto** come livello da usare nel log dei messaggi. 
+10. Lasciare selezionata l'opzione **Controlla questa regola con livello di gravità**. Quindi scegliere **Basso**, **Medio** o **Alto** come livello da usare nel log dei messaggi. 
     
 11. Scegliere **Applica** per attivare immediatamente la dichiarazione di non responsabilità, a meno che non si voglia prima testarla. 
     
@@ -98,20 +99,20 @@ Passare all'interfaccia di amministrazione all'indirizzo <a href="https://go.mic
     
 13. Al termine scegliere **Salva**. 
     
-## <a name="limitations-of-organization-wide-signatures"></a>Limitazioni delle firme estese dell'organizzazione
+## <a name="limitations-of-organization-wide-signatures"></a>Limitazioni delle firme a livello di organizzazione
 
-Quando si gestiscono le firme di posta elettronica in Microsoft 365, non è possibile eseguire le operazioni seguenti:
+Non è possibile eseguire le operazioni seguenti quando si gestiscono le firme di posta elettronica in Microsoft 365:
   
-- Inserire la firma direttamente sotto la risposta di posta elettronica più recente o inoltrare
+- Inserire la firma direttamente sotto l'ultima risposta o inoltro di posta elettronica
     
-- Visualizzare le firme dei messaggi di posta elettronica sul server nelle cartelle degli elementi inviati degli utenti
+- Visualizzare firme di posta elettronica sul lato server nelle cartelle Posta inviata degli utenti
     
 - Incorporare immagini nelle firme di posta elettronica
     
-- Consente di ignorare le righe che contengono variabili che non possono essere aggiornate (ad esempio, poiché il valore non è stato fornito per un utente)
+- Ignorare le righe che contengono variabili che non è stato possibile aggiornare (ad esempio, perché il valore non è stato fornito per un utente)
     
-Per ottenere queste e altre funzionalità per la gestione delle firme di posta elettronica, utilizzare uno strumento di terze parti. Eseguire una ricerca su Internet per il **software di firma della posta elettronica**. Alcuni di questi provider sono Microsoft Gold Partners e il relativo software fornisce queste funzionalità. 
+Per ottenere queste e altre funzionalità per gestire le firme di posta elettronica, utilizzare uno strumento di terze parti. Eseguire una ricerca su Internet per il **software per la firma della posta elettronica.** Alcuni di questi provider sono Partner Microsoft Gold e il loro software fornisce queste funzionalità. 
   
 ## <a name="more-resources"></a>Altre risorse
 
-- Per informazioni sull'utilizzo di PowerShell, vedere dichiarazioni, piè di pagina [o intestazioni dei messaggi a livello di organizzazione in Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/disclaimers-signatures-footers-or-headers) .
+- Per informazioni sull'utilizzo di PowerShell, vedere Dichiarazioni di non [responsabilità, firme,](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/disclaimers-signatures-footers-or-headers) piè di pagina o intestazioni dei messaggi a livello di organizzazione in Exchange Online.

@@ -16,17 +16,18 @@ ms.collection:
 ms.custom:
 - MSStore_Link
 - AdminSurgePortfolio
+- okr_smb
 search.appverid:
 - MET150
 description: Ottenere supporto tecnico e per la fatturazione usando i numeri di telefono indicati per il proprio paese o area geografica o inviando una richiesta di assistenza online.
 feedback_system: None
 ms.date: 7/28/2020
-ms.openlocfilehash: f508607bb19a15fa089cf13eecfd7047f2e6f7bf
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: 06f78d50901f279bf27f55f1b8f7ad867682d784
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47307362"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49925579"
 ---
 # <a name="ways-to-contact-support-for-business-products---admin-help"></a>Modi di contattare il supporto tecnico per i prodotti per le aziende - Guida per l'amministratore
 
@@ -157,7 +158,7 @@ Gravità B/c: dalle 09:00 alle 00:00 (ora di Pechino) al giorno, 365 giorni.
 
 ### <a name="open-an-online-request"></a>Aprire una richiesta online
 
-Per risparmiare tempo, avviare la richiesta di assistenza online. Nell'interfaccia di amministrazione di Microsoft 365 scegliere **Supporto**\>** Nuova richiesta di servizio**.
+Per risparmiare tempo, avviare la richiesta di assistenza online. Nell'interfaccia di amministrazione di Microsoft 365 scegliere **Supporto**\>**Nuova richiesta di servizio**.
 
 ### <a name="call-support"></a>Chiamare il supporto
 
@@ -238,7 +239,7 @@ Le opzioni di supporto assistito sono riservate agli amministratori delle organi
 
 - **Aprire una richiesta online.** Per risparmiare tempo, avviare la richiesta di assistenza online. Nell'interfaccia di amministrazione scegliere **Supporto** \> **Nuova richiesta di assistenza.** Microsoft aiuterà a trovare una soluzione o metterà l'utente in contatto con un esperto tramite posta elettronica o telefono.
 
-- **Contattare il supporto. ** Siamo qui per parlare con gli utenti. Quando si chiama il supporto locale, gli amministratori devono avere a portata di mano i dettagli del loro account.
+- **Contattare il supporto.** Siamo qui per parlare con gli utenti. Quando si chiama il supporto locale, gli amministratori devono avere a portata di mano i dettagli del loro account.
 
 | Area geografica | Numero di telefono | Ore |
 |-----------------------------------------------------|--------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

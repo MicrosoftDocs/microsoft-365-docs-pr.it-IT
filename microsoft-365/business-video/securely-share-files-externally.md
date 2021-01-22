@@ -1,5 +1,5 @@
 ---
-title: Condivisione sicura dei file all'esterno dell'azienda
+title: Condividere in modo sicuro i file all'esterno dell'azienda
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -16,31 +16,32 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Informazioni su come condividere in modo sicuro i file aziendali esternamente.
-ms.openlocfilehash: 2ffb9067b73daad8591f6563640ca95ac4c8724b
-ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
+ms.openlocfilehash: c2e611d6a6fc6fb239302d2b9d4960471cd5f707
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49703183"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49925983"
 ---
-# <a name="securely-share-files-externally"></a>Condivisione sicura dei file esternamente
+# <a name="securely-share-files-externally"></a>Condividere i file esternamente in modo sicuro
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE22Yf0?autoplay=false]
 
-In Microsoft 365 for business, è facile condividere file con utenti dell'organizzazione, ma talvolta è anche necessario condividerli con utenti esterni all'organizzazione. Per condividere i file in modo sicuro con i clienti, è possibile inviare un collegamento sicuro.
+In Microsoft 365 per le aziende, è facile condividere file con persone dell'organizzazione, ma a volte è anche necessario condividere con persone esterne all'organizzazione. Per condividere i file in modo sicuro con i clienti, è possibile inviare un collegamento sicuro.
 
 ## <a name="try-it"></a>Perché non provarlo?
 
-1. Nella parte superiore della raccolta documenti del sito di SharePoint fare clic su **nuovo** e quindi selezionare **cartella**.
-1. Assegnare un nome alla cartella e quindi fare clic su **Crea**.
-1. Caricare i file che si desidera condividere con la nuova raccolta oppure scegliere **nuovo** per creare nuovi documenti direttamente nella raccolta.
-1. Selezionare la nuova cartella nella raccolta documenti e quindi fare clic sul pulsante **Condividi** .
-1. Nella finestra **collegamento di invio** , fare clic sull'elenco nella parte superiore, **scegliere persone specifiche**, selezionare **Consenti modifica**, quindi scegliere **applica**.
-1. Nella finestra **collegamento di invio** , immettere l'indirizzo di posta elettronica del cliente, digitare un messaggio e scegliere **Invia**.
+1. Nella parte superiore della raccolta documenti nel sito di SharePoint fare clic su **Nuovo** e quindi selezionare **Cartella.**
+1. Assegnare un nome alla cartella e quindi fare clic su **Crea.**
+1. Caricare i file che si desidera condividere  nella nuova raccolta oppure scegliere Nuovo per creare nuovi documenti direttamente nella raccolta.
+1. Selezionare la nuova cartella nella raccolta Documenti e quindi fare clic sul **pulsante** Condividi.
+1. Nella finestra **Invia collegamento** fare clic sull'elenco nella parte superiore, scegliere Persone **specifiche,** selezionare Consenti **modifica** e quindi scegliere **Applica.**
+1. Nella finestra **Invia collegamento** immettere l'indirizzo di posta elettronica del cliente, digitare un messaggio e scegliere **Invia.**
 
-    Il cliente riceverà un messaggio di posta elettronica con un codice di verifica, che dovrà inviare a se stesso per accedere alla cartella. Se non riescono a trovare il messaggio di posta elettronica, dovrebbero controllare la cartella posta indesiderata.
+    Il cliente riceverà un messaggio di posta elettronica con un codice di verifica, che dovrà inviare a se stesso per accedere alla cartella. Se non trovano il messaggio di posta elettronica, devono controllare la cartella Posta indesiderata.

@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Panoramica del punteggio della produttività Microsoft.
-ms.openlocfilehash: e052d1189379bb00a05b574e6568e9e718285d50
-ms.sourcegitcommit: 849b365bd3eaa9f3c3a9ef9f5973ef81af9156fa
+ms.openlocfilehash: 8ba1ceb57cd322a67e7b154700a8ac90c62f5ef0
+ms.sourcegitcommit: 7ecd10b302b3b3dfa4ba3be3a6986dd3c189fbff
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49688332"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "49921243"
 ---
 # <a name="microsoft-productivity-score"></a>Punteggio della produttività Microsoft 
 
@@ -87,6 +87,9 @@ Il punteggio della produttività è disponibile solo nell'interfaccia di amminis
 - Amministratore di Teams 
 - Lettore globale 
 - Amministratore che legge i report 
+
+> [!NOTE]
+> Solo un professionista IT con un ruolo di amministratore globale può registrarsi o acconsentire esplicitamente in un tenant per il punteggio della produttività.
 
 Si noti che queste informazioni vengono utilizzate unicamente per incoraggiare la trasformazione digitale tramite Microsoft 365 e dovrebbero pertanto essere condivise con discrezione. 
 

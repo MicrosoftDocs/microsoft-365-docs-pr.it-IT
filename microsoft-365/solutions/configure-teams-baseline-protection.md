@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: Come distribuire team con un livello di protezione di base.
-ms.openlocfilehash: 16f37175c3aa7b420745e6126de1aa96368d618a
-ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
+ms.openlocfilehash: 11554dbd7e33a77c9f6397ae9c5e91669f537081
+ms.sourcegitcommit: 7ecd10b302b3b3dfa4ba3be3a6986dd3c189fbff
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49613443"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "49921871"
 ---
 # <a name="configure-teams-with-baseline-protection"></a>Configurare team con la protezione di base
 
@@ -87,7 +87,7 @@ Per aggiornare le impostazioni di condivisione del sito
 1. Nella barra degli strumenti per il team fare clic su **File**.
 2. Fare clic su **Apri in SharePoint**.
 3. Nella barra degli strumenti del sito di SharePoint fare clic sull'icona delle impostazioni, poi su **Autorizzazioni sito**.
-4. Nel riquadro **Autorizzazioni sito** fare clic su **Modifica impostazioni di condivisione** in **Impostazioni di condivisione**.
+4. Nel riquadro **Autorizzazioni sito**, in **Condivisione sito**, fare clic su **Modifica il metodo di condivisione dei membri**.
 5. In **Autorizzazioni di condivisione** selezionare **I proprietari e i membri del sito e gli utenti con autorizzazioni di modifica possono condividere file e cartelle, ma solo i proprietari del sito possono condividere il sito**, quindi fare clic su **Salva**.
 
 ## <a name="additional-protections"></a>Protezioni aggiuntive

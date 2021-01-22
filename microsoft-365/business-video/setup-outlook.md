@@ -16,31 +16,32 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Informazioni su come configurare Outlook per il messaggio di posta elettronica Microsoft 365.
-ms.openlocfilehash: 4c49b658be254f81cd8231a71837afc4d848fd92
-ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
+description: Informazioni su come configurare Outlook per la posta elettronica di Microsoft 365.
+ms.openlocfilehash: 9ccb654daf8e7cf9748de4213b9a07ecdff9edbb
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49702883"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49925923"
 ---
-# <a name="set-up-outlook-for-microsoft-365-for-business-email"></a>Configurare la posta elettronica di Outlook per Microsoft 365 per le aziende 
+# <a name="set-up-outlook-for-microsoft-365-for-business-email"></a>Configurare Outlook per la posta elettronica di Microsoft 365 per le aziende 
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/9fe86884-8a83-42cc-bca9-61a12e6dad31?autoplay=false]
 
 ## <a name="try-it"></a>Perché non provarlo?
 
-Dopo l'installazione delle app di Office, è&#39;necessario configurare Outlook per iniziare a utilizzare la posta elettronica, il calendario e i contatti. Ecco come&#39;s.
+Dopo aver installato le app di Office, è&#39;configurare Outlook per iniziare a usare posta elettronica, calendario e contatti. Ecco&#39;come.
 
-1. Aprire il menu Start. Cercare Outlook e sceglierlo.
-2. Immettere l'indirizzo di posta elettronica Microsoft 365 e selezionare  **Connetti**.
-3. Immettere gli eventuali indirizzi di posta elettronica che si desidera utilizzare, ad esempio l'indirizzo di posta elettronica precedente o personale. Selezionare  **Avanti**.
-4. Se richiesto, immettere una password e quindi fare clic  **su Accedi**.
-5. Dopo aver aggiunto tutti gli account, scegliere se si desidera configurare Outlook Mobile o attendere in un secondo momento.
-6. Selezionare  **fine**. Per scaricare la posta elettronica e altri dati, potrebbe essere necessario qualche minuto per Outlook.
+1. Apri il menu Start. Cercare Outlook e sceglierlo.
+2. Immettere l'indirizzo di posta elettronica di Microsoft 365 e selezionare **Connetti.**
+3. Immettere eventuali indirizzi di posta elettronica aggiuntivi che si desidera utilizzare, ad esempio l'indirizzo di posta elettronica precedente o personale. Selezionare **Avanti.**
+4. Se richiesto, immettere una password e quindi selezionare **Accedi.**
+5. Dopo aver aggiunto tutti gli account, scegliere se configurare Outlook mobile o attendere fino a un secondo momento.
+6. Selezionare **Fine.** Il download della posta elettronica e di altri dati da parte di Outlook potrebbe richiedere alcuni minuti.
 
-A questo punto, è possibile visualizzare la posta elettronica per gli account aggiunti. È inoltre possibile visualizzare il calendario, i contatti e le attività.
+Ora è possibile visualizzare la posta elettronica per gli account aggiunti. È inoltre possibile visualizzare il calendario, i contatti e le attività.

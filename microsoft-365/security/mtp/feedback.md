@@ -1,9 +1,9 @@
 ---
-title: Fornire commenti e suggerimenti su Microsoft 365 Defender
-description: Fornire commenti e suggerimenti sul prodotto su Microsoft 365 Defender
-keywords: Commenti e suggerimenti, sicurezza M365, sicurezza, 365, funzionalità
+title: Inviare commenti e suggerimenti su Microsoft 365 Defender
+description: Inviare commenti e suggerimenti sul prodotto su Microsoft 365 Defender
+keywords: feedback, sicurezza m365, sicurezza, 365, funzionalità
 search.product: eADQiWindows 10XVcnh
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,14 +19,15 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 56f8bd0ff303ff38f8b3a577f6bc7aa58f21a745
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.technology: m365d
+ms.openlocfilehash: a06f7254a892b8fd9942940946699ecb23707387
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48846731"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49926739"
 ---
-# <a name="provide-feedback-on-microsoft-365-defender"></a>Fornire commenti e suggerimenti su Microsoft 365 Defender
+# <a name="provide-feedback-on-microsoft-365-defender"></a>Inviare commenti e suggerimenti su Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -34,12 +35,12 @@ ms.locfileid: "48846731"
 **Si applica a:**
 - Microsoft 365 Defender
 
-I commenti e suggerimenti ci aiutano a migliorare la protezione dell'ambiente da attacchi avanzati. Condividere le proprie esperienze, impressioni e richieste fornendo commenti e suggerimenti.
+Il feedback degli utenti ci aiuta a migliorare la protezione dell'ambiente da attacchi avanzati. Condividi l'esperienza, le impression e le richieste fornendo feedback.
 
-1. Da qualsiasi parte del portale, selezionare **Invia commenti e suggerimenti**. 
+1. Da qualsiasi parte del portale, selezionare **Invia feedback.** 
 
-    ![Immagine del pulsante Commenti e suggerimenti](../../media/feedback.png)
+    ![Immagine del pulsante feedback](../../media/feedback.png)
 
-2. Valutare la propria esperienza e fornire informazioni dettagliate su ciò che è piaciuto o in cui è possibile apportare miglioramenti. È inoltre possibile scegliere di essere contattato per i commenti e suggerimenti. 
+2. Valuta la tua esperienza e fornisci dettagli su cosa ti è piaciuta o dove è possibile migliorare. Puoi anche scegliere di essere contattato per il feedback. 
 
 3. Selezionare **Invia**.
