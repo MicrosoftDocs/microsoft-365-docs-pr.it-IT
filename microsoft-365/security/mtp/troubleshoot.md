@@ -1,9 +1,9 @@
 ---
-title: Risoluzione dei problemi relativi al servizio Microsoft 365 Defender
-description: Individuare soluzioni e risolvere i problemi noti di Microsoft 365 Defender
-keywords: risoluzione dei problemi relativi alla protezione dalle minacce Microsoft, risoluzione dei problemi, Azure ATP, problemi, componente aggiuntivo, pagina impostazioni
+title: Risolvere i problemi del servizio Microsoft 365 Defender
+description: Trovare soluzioni e soluzioni per problemi noti di Microsoft 365 Defender
+keywords: risoluzione dei problemi di Microsoft Threat Protection, risoluzione dei problemi, Azure ATP, problemi, componente aggiuntivo, pagina delle impostazioni
 search.product: eADQiWindows 10XVcnh
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,35 +19,36 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: b7b6ea55d084c114b79dfee0e061b09c8ede8632
-ms.sourcegitcommit: 222fb7fe2b26dde3d8591b61cc02113d6135012c
+ms.technology: m365d
+ms.openlocfilehash: 414743fa5ba25b9d2714c1dd08dd38e34ec94372
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "49760459"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49925719"
 ---
-# <a name="troubleshoot-microsoft-365-defender-service-issues"></a><span data-ttu-id="0dda2-104">Risoluzione dei problemi relativi al servizio Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="0dda2-104">Troubleshoot Microsoft 365 Defender service issues</span></span>
+# <a name="troubleshoot-microsoft-365-defender-service-issues"></a><span data-ttu-id="369a1-104">Risolvere i problemi del servizio Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="369a1-104">Troubleshoot Microsoft 365 Defender service issues</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
-<span data-ttu-id="0dda2-105">**Si applica a:**</span><span class="sxs-lookup"><span data-stu-id="0dda2-105">**Applies to:**</span></span>
-- <span data-ttu-id="0dda2-106">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="0dda2-106">Microsoft 365 Defender</span></span>
+<span data-ttu-id="369a1-105">**Si applica a:**</span><span class="sxs-lookup"><span data-stu-id="369a1-105">**Applies to:**</span></span>
+- <span data-ttu-id="369a1-106">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="369a1-106">Microsoft 365 Defender</span></span>
 
-<span data-ttu-id="0dda2-107">In questa sezione vengono affrontati i problemi che potrebbero verificarsi durante l'utilizzo del servizio Microsoft 365 Defender.</span><span class="sxs-lookup"><span data-stu-id="0dda2-107">This section addresses issues that might arise as you use the Microsoft 365 Defender service.</span></span>
+<span data-ttu-id="369a1-107">In questa sezione vengono risolti i problemi che possono verificarsi quando si utilizza il servizio Microsoft 365 Defender.</span><span class="sxs-lookup"><span data-stu-id="369a1-107">This section addresses issues that might arise as you use the Microsoft 365 Defender service.</span></span>
 
-## <a name="i-dont-see-microsoft-365-defender-content"></a><span data-ttu-id="0dda2-108">Non viene visualizzato il contenuto Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="0dda2-108">I don't see Microsoft 365 Defender content</span></span>
+## <a name="i-dont-see-microsoft-365-defender-content"></a><span data-ttu-id="369a1-108">I don't see Microsoft 365 Defender content</span><span class="sxs-lookup"><span data-stu-id="369a1-108">I don't see Microsoft 365 Defender content</span></span>
 
-<span data-ttu-id="0dda2-109">Se non si visualizzano le funzionalità nel riquadro di spostamento, ad esempio gli eventi non consentiti, il centro azioni o la ricerca nel portale, è necessario verificare che il tenant disponga delle licenze appropriate.</span><span class="sxs-lookup"><span data-stu-id="0dda2-109">If you don't see capabilities on the navigation pane such as the Incidents, Action Center, or Hunting in your portal, you'll need to verify that your tenant has the appropriate licenses.</span></span>
+<span data-ttu-id="369a1-109">Se nel riquadro di spostamento non sono disponibili funzionalità come Eventi imprevisti, Centro notifiche o Ricerca nel portale, è necessario verificare che il tenant abbia le licenze appropriate.</span><span class="sxs-lookup"><span data-stu-id="369a1-109">If you don't see capabilities on the navigation pane such as the Incidents, Action Center, or Hunting in your portal, you'll need to verify that your tenant has the appropriate licenses.</span></span>
 
-<span data-ttu-id="0dda2-110">Per altre informazioni, vedere [Prerequisiti](prerequisites.md).</span><span class="sxs-lookup"><span data-stu-id="0dda2-110">For more information, see [Prerequisites](prerequisites.md).</span></span>
+<span data-ttu-id="369a1-110">Per altre informazioni, vedere [Prerequisiti](prerequisites.md).</span><span class="sxs-lookup"><span data-stu-id="369a1-110">For more information, see [Prerequisites](prerequisites.md).</span></span>
 
-## <a name="microsoft-defender-for-identity-alerts-are-not-showing-up-in-the-microsoft-365-defender-incidents"></a><span data-ttu-id="0dda2-111">Microsoft Defender per gli avvisi di identità non viene visualizzato negli incidenti Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="0dda2-111">Microsoft Defender for Identity alerts are not showing up in the Microsoft 365 Defender incidents</span></span>
+## <a name="microsoft-defender-for-identity-alerts-are-not-showing-up-in-the-microsoft-365-defender-incidents"></a><span data-ttu-id="369a1-111">Gli avvisi di Microsoft Defender per l'identità non vengono visualizzati negli eventi imprevisti di Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="369a1-111">Microsoft Defender for Identity alerts are not showing up in the Microsoft 365 Defender incidents</span></span>
 
-<span data-ttu-id="0dda2-112">Se si dispone di Microsoft Defender per Identity distribuito nell'ambiente, ma non si vedono i difensori per gli avvisi di identità come parte degli incidenti Microsoft 365 Defender, è necessario verificare che Microsoft cloud app Security and Defender for Identity Integration sia abilitato.</span><span class="sxs-lookup"><span data-stu-id="0dda2-112">If you have Microsoft Defender for Identity deployed in your environment but you're not seeing Defender for Identity alerts as part of Microsoft 365 Defender incidents, you'll need to ensure that the Microsoft Cloud App Security and Defender for Identity integration is enabled.</span></span>
+<span data-ttu-id="369a1-112">Se nell'ambiente è distribuito Microsoft Defender for Identity, ma gli avvisi di Defender for Identity non vengono visualizzati come parte degli incidenti di Microsoft 365 Defender, è necessario verificare che l'integrazione di Microsoft Cloud App Security e Defender for Identity sia abilitata.</span><span class="sxs-lookup"><span data-stu-id="369a1-112">If you have Microsoft Defender for Identity deployed in your environment but you're not seeing Defender for Identity alerts as part of Microsoft 365 Defender incidents, you'll need to ensure that the Microsoft Cloud App Security and Defender for Identity integration is enabled.</span></span>
 
-<span data-ttu-id="0dda2-113">Per ulteriori informazioni, vedere [Microsoft Defender for Identity Integration](https://docs.microsoft.com/cloud-app-security/mdi-integration).</span><span class="sxs-lookup"><span data-stu-id="0dda2-113">For more information, see [Microsoft Defender for Identity integration](https://docs.microsoft.com/cloud-app-security/mdi-integration).</span></span>
+<span data-ttu-id="369a1-113">Per altre informazioni, vedere [Integrazione di Microsoft Defender per l'identità.](https://docs.microsoft.com/cloud-app-security/mdi-integration)</span><span class="sxs-lookup"><span data-stu-id="369a1-113">For more information, see [Microsoft Defender for Identity integration](https://docs.microsoft.com/cloud-app-security/mdi-integration).</span></span>
 
-## <a name="where-is-the-settings-page-for-turning-the-service-on"></a><span data-ttu-id="0dda2-114">Dove si trova la pagina impostazioni per l'attivazione del servizio?</span><span class="sxs-lookup"><span data-stu-id="0dda2-114">Where is the settings page for turning the service on?</span></span>
+## <a name="where-is-the-settings-page-for-turning-the-service-on"></a><span data-ttu-id="369a1-114">Dove si trova la pagina delle impostazioni per l'attivazione del servizio?</span><span class="sxs-lookup"><span data-stu-id="369a1-114">Where is the settings page for turning the service on?</span></span>
 
-<span data-ttu-id="0dda2-115">Per abilitare Microsoft 365 Defender, accedere alle **Impostazioni** dal riquadro di spostamento nel centro sicurezza di Microsoft 365.</span><span class="sxs-lookup"><span data-stu-id="0dda2-115">To turn on Microsoft 365 Defender, access **Settings** from the navigation pane in the Microsoft 365 security center.</span></span> <span data-ttu-id="0dda2-116">Questo elemento di spostamento è visibile solo se si dispone delle [autorizzazioni e delle licenze prerequisite](mtp-enable.md#check-license-eligibility-and-required-permissions).</span><span class="sxs-lookup"><span data-stu-id="0dda2-116">This navigation item is visible only if you have the [prerequisite permissions and licenses](mtp-enable.md#check-license-eligibility-and-required-permissions).</span></span>
+<span data-ttu-id="369a1-115">Per attivare Microsoft 365 Defender, accedere a **Impostazioni** dal riquadro di spostamento nel Centro sicurezza Microsoft 365.</span><span class="sxs-lookup"><span data-stu-id="369a1-115">To turn on Microsoft 365 Defender, access **Settings** from the navigation pane in the Microsoft 365 security center.</span></span> <span data-ttu-id="369a1-116">Questo elemento di spostamento è visibile solo se si dispone delle autorizzazioni [e delle licenze](mtp-enable.md#check-license-eligibility-and-required-permissions)prerequisiti.</span><span class="sxs-lookup"><span data-stu-id="369a1-116">This navigation item is visible only if you have the [prerequisite permissions and licenses](mtp-enable.md#check-license-eligibility-and-required-permissions).</span></span>

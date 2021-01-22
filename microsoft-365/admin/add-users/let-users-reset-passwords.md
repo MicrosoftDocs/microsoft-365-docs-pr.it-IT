@@ -18,79 +18,80 @@ ms.custom:
 - TRN_M365B
 - OKR_SMB_Videos
 - AdminSurgePortfolio
+- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 5bc3f460-13cc-48c0-abd6-b80bae72d04a
-description: Informazioni su come è possibile reimpostare le password utilizzando lo strumento di reimpostazione della password self-service.
-ms.openlocfilehash: bbde517858186d844412aca21f231620ed76496a
-ms.sourcegitcommit: 38d828ae8d4350ae774a939c8decf30cb36c3bea
+description: Scopri come reimpostare le password usando lo strumento di reimpostazione delle password in modalità self-service.
+ms.openlocfilehash: c777b9d840e0e9e467c1283fff94eca9a061ee73
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "49551921"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49925555"
 ---
-# <a name="let-users-reset-their-own-passwords"></a><span data-ttu-id="28c79-103">Consentire agli utenti di reimpostare le loro password</span><span class="sxs-lookup"><span data-stu-id="28c79-103">Let users reset their own passwords</span></span>
+# <a name="let-users-reset-their-own-passwords"></a><span data-ttu-id="6e0e3-103">Consentire agli utenti di reimpostare le loro password</span><span class="sxs-lookup"><span data-stu-id="6e0e3-103">Let users reset their own passwords</span></span>
 
-<span data-ttu-id="28c79-104">Come amministratore di Microsoft 365, è possibile consentire agli utenti di utilizzare lo [strumento di reimpostazione della password in modalità self-service](https://go.microsoft.com/fwlink/p/?LinkId=522677) in modo che non sia necessario reimpostare le password.</span><span class="sxs-lookup"><span data-stu-id="28c79-104">As the Microsoft 365 admin, you can let people use the [self-service password reset tool](https://go.microsoft.com/fwlink/p/?LinkId=522677) so you don't have to reset passwords for them.</span></span> <span data-ttu-id="28c79-105">Un gran risparmio di tempo!</span><span class="sxs-lookup"><span data-stu-id="28c79-105">Less work for you!</span></span>
+<span data-ttu-id="6e0e3-104">L'amministratore di Microsoft 365 può consentire agli utenti di usare lo strumento di reimpostazione della password in modalità [self-service,](https://go.microsoft.com/fwlink/p/?LinkId=522677) in modo da non doverle reimpostare.</span><span class="sxs-lookup"><span data-stu-id="6e0e3-104">As the Microsoft 365 admin, you can let people use the [self-service password reset tool](https://go.microsoft.com/fwlink/p/?LinkId=522677) so you don't have to reset passwords for them.</span></span> <span data-ttu-id="6e0e3-105">Un gran risparmio di tempo!</span><span class="sxs-lookup"><span data-stu-id="6e0e3-105">Less work for you!</span></span>
   
-## <a name="before-you-begin"></a><span data-ttu-id="28c79-106">Prima di iniziare</span><span class="sxs-lookup"><span data-stu-id="28c79-106">Before you begin</span></span>
+## <a name="before-you-begin"></a><span data-ttu-id="6e0e3-106">Prima di iniziare</span><span class="sxs-lookup"><span data-stu-id="6e0e3-106">Before you begin</span></span>
   
-- <span data-ttu-id="28c79-107">Si ottiene la reimpostazione della password in modalità self-service per gli utenti Cloud **gratis** con qualsiasi piano di Microsoft 365 business, Education o no profit paid.</span><span class="sxs-lookup"><span data-stu-id="28c79-107">You get self-service password reset for cloud users **free** with any Microsoft 365 business, education, or nonprofit paid plan.</span></span> <span data-ttu-id="28c79-108">Non funziona con Microsoft 365 Trial.</span><span class="sxs-lookup"><span data-stu-id="28c79-108">It doesn't work with Microsoft 365 trial.</span></span>
+- <span data-ttu-id="6e0e3-107">Si ottiene gratuitamente la reimpostazione  della password self-service per gli utenti cloud con qualsiasi piano a pagamento di Microsoft 365 business, education o no profit.</span><span class="sxs-lookup"><span data-stu-id="6e0e3-107">You get self-service password reset for cloud users **free** with any Microsoft 365 business, education, or nonprofit paid plan.</span></span> <span data-ttu-id="6e0e3-108">Non funziona con la versione di valutazione di Microsoft 365.</span><span class="sxs-lookup"><span data-stu-id="6e0e3-108">It doesn't work with Microsoft 365 trial.</span></span>
 
-- <span data-ttu-id="28c79-p103">Si basa su Azure. Questa funzionalità verrà scaricata automaticamente e **gratuitamente** in Azure quando si esegue questa procedura. L'attivazione della reimpostazione della password in modalità self-service non costa nulla se non si usano altre funzionalità di Azure.</span><span class="sxs-lookup"><span data-stu-id="28c79-p103">It uses Azure. You'll automatically get this feature in Azure for **free** when you do these steps. It won't cost you anything to turn on self-service password reset if you don't use other Azure features.</span></span>
+- <span data-ttu-id="6e0e3-p103">Si basa su Azure. Questa funzionalità verrà scaricata automaticamente e **gratuitamente** in Azure quando si esegue questa procedura. L'attivazione della reimpostazione della password in modalità self-service non costa nulla se non si usano altre funzionalità di Azure.</span><span class="sxs-lookup"><span data-stu-id="6e0e3-p103">It uses Azure. You'll automatically get this feature in Azure for **free** when you do these steps. It won't cost you anything to turn on self-service password reset if you don't use other Azure features.</span></span>
 
-- <span data-ttu-id="28c79-112">**Se si utilizza Active Directory locale**, non si applicano i due punti sopra riportati.</span><span class="sxs-lookup"><span data-stu-id="28c79-112">**If you're using an on-premises Active Directory**, the above two points don't apply.</span></span> <span data-ttu-id="28c79-113">Piuttosto, è possibile configurare questa impostazione, ma **richiede un abbonamento a pagamento ad Azure ad Premium**.</span><span class="sxs-lookup"><span data-stu-id="28c79-113">Rather, you can set this up but **it requires a paid subscription to Azure AD Premium**.</span></span>
+- <span data-ttu-id="6e0e3-112">**Se si usa Active Directory** locale, i due punti precedenti non sono applicabili.</span><span class="sxs-lookup"><span data-stu-id="6e0e3-112">**If you're using an on-premises Active Directory**, the above two points don't apply.</span></span> <span data-ttu-id="6e0e3-113">È invece possibile configurare questa funzionalità, ma **richiede una sottoscrizione a pagamento ad Azure AD Premium.**</span><span class="sxs-lookup"><span data-stu-id="6e0e3-113">Rather, you can set this up but **it requires a paid subscription to Azure AD Premium**.</span></span>
 
-<span data-ttu-id="28c79-114">Questo articolo è per le persone che impostano criteri di scadenza delle password in un'azienda, un istituto di istruzione o un'organizzazione no profit.</span><span class="sxs-lookup"><span data-stu-id="28c79-114">This article is for people who set password expiration policy for a business, school, or nonprofit.</span></span> <span data-ttu-id="28c79-115">Per completare questa procedura, è necessario accedere con l'account amministratore di Microsoft 365.</span><span class="sxs-lookup"><span data-stu-id="28c79-115">To complete these steps, you need to sign in with your Microsoft 365 admin account.</span></span> [<span data-ttu-id="28c79-116">Che cos'è un account di amministratore?</span><span class="sxs-lookup"><span data-stu-id="28c79-116">What's an admin account?</span></span>](../admin-overview/admin-overview.md)
+<span data-ttu-id="6e0e3-114">Questo articolo è per le persone che impostano criteri di scadenza delle password in un'azienda, un istituto di istruzione o un'organizzazione no profit.</span><span class="sxs-lookup"><span data-stu-id="6e0e3-114">This article is for people who set password expiration policy for a business, school, or nonprofit.</span></span> <span data-ttu-id="6e0e3-115">Per completare questa procedura, è necessario accedere con l'account amministratore di Microsoft 365.</span><span class="sxs-lookup"><span data-stu-id="6e0e3-115">To complete these steps, you need to sign in with your Microsoft 365 admin account.</span></span> [<span data-ttu-id="6e0e3-116">Che cos'è un account amministratore?</span><span class="sxs-lookup"><span data-stu-id="6e0e3-116">What's an admin account?</span></span>](../admin-overview/admin-overview.md)
 
-<span data-ttu-id="28c79-117">Per eseguire questa procedura è necessario essere un [amministratore globale o una password](about-admin-roles.md) .</span><span class="sxs-lookup"><span data-stu-id="28c79-117">You must be an [global admin or password administrator](about-admin-roles.md) to perform these steps.</span></span>
+<span data-ttu-id="6e0e3-117">Per eseguire questa [procedura, è](about-admin-roles.md) necessario essere un amministratore globale o un amministratore delle password.</span><span class="sxs-lookup"><span data-stu-id="6e0e3-117">You must be an [global admin or password administrator](about-admin-roles.md) to perform these steps.</span></span>
 
-## <a name="watch-let-users-reset-their-own-passwords"></a><span data-ttu-id="28c79-118">Watch: Consenti agli utenti di reimpostare le proprie password</span><span class="sxs-lookup"><span data-stu-id="28c79-118">Watch: Let users reset their own passwords</span></span>
+## <a name="watch-let-users-reset-their-own-passwords"></a><span data-ttu-id="6e0e3-118">Guardare: Consentire agli utenti di reimpostare le proprie password</span><span class="sxs-lookup"><span data-stu-id="6e0e3-118">Watch: Let users reset their own passwords</span></span>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3AY8S]
 
-<span data-ttu-id="28c79-119">Se il video è stato utile, consultare la [serie di formazione completa per piccole imprese e nuovi utenti di Microsoft 365](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).</span><span class="sxs-lookup"><span data-stu-id="28c79-119">If you found this video helpful, check out the [complete training series for small businesses and those new to Microsoft 365](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).</span></span>
+<span data-ttu-id="6e0e3-119">Se il video è stato utile, consultare la [serie dei corsi di formazione completa per piccole imprese e nuovi utenti di Microsoft 365](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).</span><span class="sxs-lookup"><span data-stu-id="6e0e3-119">If you found this video helpful, check out the [complete training series for small businesses and those new to Microsoft 365](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).</span></span>
 
-## <a name="steps-let-people-reset-their-own-passwords"></a><span data-ttu-id="28c79-120">Passaggi: consentire alle persone di reimpostare le proprie password</span><span class="sxs-lookup"><span data-stu-id="28c79-120">Steps: Let people reset their own passwords</span></span>
+## <a name="steps-let-people-reset-their-own-passwords"></a><span data-ttu-id="6e0e3-120">Passaggi: consentire agli utenti di reimpostare le proprie password</span><span class="sxs-lookup"><span data-stu-id="6e0e3-120">Steps: Let people reset their own passwords</span></span>
 
-<span data-ttu-id="28c79-121">Con questi passaggi si attiva la reimpostazione della password in modalità self-service per tutti gli utenti dell'azienda.</span><span class="sxs-lookup"><span data-stu-id="28c79-121">These steps turn on self-service password reset for everyone in your business.</span></span>
+<span data-ttu-id="6e0e3-121">Con questi passaggi si attiva la reimpostazione della password in modalità self-service per tutti gli utenti dell'azienda.</span><span class="sxs-lookup"><span data-stu-id="6e0e3-121">These steps turn on self-service password reset for everyone in your business.</span></span>
   
 ::: moniker range="o365-worldwide"
 
-1. <span data-ttu-id="28c79-122">Nell'interfaccia di <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Amministrazione</a>, passare alla pagina **Impostazioni** > **org** Settings.</span><span class="sxs-lookup"><span data-stu-id="28c79-122">In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin center</a>, go to the **Settings** > **Org settings** page.</span></span>
+1. <span data-ttu-id="6e0e3-122"><a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Nell'interfaccia di amministrazione</a>passare alla pagina **Impostazioni** > **organizzazione.**</span><span class="sxs-lookup"><span data-stu-id="6e0e3-122">In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin center</a>, go to the **Settings** > **Org settings** page.</span></span>
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. <span data-ttu-id="28c79-123">Nell'interfaccia di <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">Amministrazione</a>passare alla pagina **Impostazioni** \> **&amp; privacy sicurezza** .</span><span class="sxs-lookup"><span data-stu-id="28c79-123">In the <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">admin center</a>, go to the **Settings** \> **Security &amp; privacy** page.</span></span>
+1. <span data-ttu-id="6e0e3-123"><a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">Nell'interfaccia di amministrazione</a>passare alla pagina **Impostazioni** \> **sicurezza &amp; privacy.**</span><span class="sxs-lookup"><span data-stu-id="6e0e3-123">In the <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">admin center</a>, go to the **Settings** \> **Security &amp; privacy** page.</span></span>
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. <span data-ttu-id="28c79-124">Nell'interfaccia di <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">Amministrazione</a>passare alla pagina impostazioni di sicurezza **per la** \> **Settings** \> **&amp; privacy** delle impostazioni.</span><span class="sxs-lookup"><span data-stu-id="28c79-124">In the <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">admin center</a>, go to the **Settings** \>**Settings** \> **Security &amp; privacy** page.</span></span>
+1. <span data-ttu-id="6e0e3-124"><a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">Nell'interfaccia di amministrazione</a>passare alla pagina **Impostazioni** \>  \> **&amp; protezione privacy.**</span><span class="sxs-lookup"><span data-stu-id="6e0e3-124">In the <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">admin center</a>, go to the **Settings** \>**Settings** \> **Security &amp; privacy** page.</span></span>
 
 ::: moniker-end
 
-2. <span data-ttu-id="28c79-125">Nella parte superiore della pagina **Impostazioni organizzazione** selezionare la scheda **protezione & privacy** .</span><span class="sxs-lookup"><span data-stu-id="28c79-125">At the top of the **Org settings** page, select the **Security & Privacy** tab.</span></span>
+2. <span data-ttu-id="6e0e3-125">Nella parte superiore della pagina **Impostazioni organizzazione** selezionare la scheda Sicurezza **& Privacy.**</span><span class="sxs-lookup"><span data-stu-id="6e0e3-125">At the top of the **Org settings** page, select the **Security & Privacy** tab.</span></span>
   
-3. <span data-ttu-id="28c79-126">Selezionare **reimpostazione della password in modalità self-service**.</span><span class="sxs-lookup"><span data-stu-id="28c79-126">Select **Self-service Password Reset**.</span></span>
+3. <span data-ttu-id="6e0e3-126">Selezionare **Reimpostazione password self-service.**</span><span class="sxs-lookup"><span data-stu-id="6e0e3-126">Select **Self-service Password Reset**.</span></span>
 
-4. <span data-ttu-id="28c79-127">In **reimpostazione della password self-service** selezionare **Vai al portale di Azure per abilitare la reimpostazione della password in modalità self-service**.</span><span class="sxs-lookup"><span data-stu-id="28c79-127">Under **Self-service password reset**, select **Go to the Azure portal to turn on self-service password reset**.</span></span>
+4. <span data-ttu-id="6e0e3-127">In **Reimpostazione password self-service** selezionare Vai al portale di Azure per attivare **la reimpostazione della password in self-service.**</span><span class="sxs-lookup"><span data-stu-id="6e0e3-127">Under **Self-service password reset**, select **Go to the Azure portal to turn on self-service password reset**.</span></span>
 
-5. <span data-ttu-id="28c79-128">Nel riquadro di spostamento a sinistra, selezionare **utenti** e quindi fare clic su **utenti | Pagina tutti gli utenti** , selezionare **Reimposta password**.</span><span class="sxs-lookup"><span data-stu-id="28c79-128">In the left navigation pane, select **Users**, and then, on the **Users | All users** page, select **Password reset**.</span></span>
+5. <span data-ttu-id="6e0e3-128">Nel riquadro di spostamento sinistro selezionare **Utenti** e quindi nella pagina **Utenti | Pagina Tutti gli** utenti, selezionare **Reimpostazione password.**</span><span class="sxs-lookup"><span data-stu-id="6e0e3-128">In the left navigation pane, select **Users**, and then, on the **Users | All users** page, select **Password reset**.</span></span>
   
-6. <span data-ttu-id="28c79-129">Nella pagina delle **Proprietà** , selezionare **tutto** per attivarlo per tutti gli utenti dell'azienda, quindi selezionare **Salva**.</span><span class="sxs-lookup"><span data-stu-id="28c79-129">On the **Properties** page, select **All** to enable it for everyone in your business, and then select **Save**.</span></span>
+6. <span data-ttu-id="6e0e3-129">Nella pagina **Proprietà** selezionare **Tutto per** abilitarlo per tutti gli utenti dell'azienda e quindi selezionare **Salva.**</span><span class="sxs-lookup"><span data-stu-id="6e0e3-129">On the **Properties** page, select **All** to enable it for everyone in your business, and then select **Save**.</span></span>
   
-7. <span data-ttu-id="28c79-130">Quando gli utenti accedono, verrà richiesto di immettere ulteriori informazioni di contatto che consentiranno di reimpostare la password in futuro.</span><span class="sxs-lookup"><span data-stu-id="28c79-130">When your users sign in, they will be prompted to enter additional contact information that will help them reset their password in the future.</span></span>
+7. <span data-ttu-id="6e0e3-130">Quando gli utenti emettono l'accesso, gli verrà richiesto di immettere ulteriori informazioni di contatto che li aiuteranno a reimpostare la password in futuro.</span><span class="sxs-lookup"><span data-stu-id="6e0e3-130">When your users sign in, they will be prompted to enter additional contact information that will help them reset their password in the future.</span></span>
 
-## <a name="related-content"></a><span data-ttu-id="28c79-131">Contenuti correlati</span><span class="sxs-lookup"><span data-stu-id="28c79-131">Related content</span></span>
+## <a name="related-content"></a><span data-ttu-id="6e0e3-131">Contenuti correlati</span><span class="sxs-lookup"><span data-stu-id="6e0e3-131">Related content</span></span>
 
-[<span data-ttu-id="28c79-132">Impostare i criteri di scadenza delle password per l'organizzazione</span><span class="sxs-lookup"><span data-stu-id="28c79-132">Set the password expiration policy for your organization</span></span>](../manage/set-password-expiration-policy.md)
+[<span data-ttu-id="6e0e3-132">Impostare i criteri di scadenza delle password per l'organizzazione</span><span class="sxs-lookup"><span data-stu-id="6e0e3-132">Set the password expiration policy for your organization</span></span>](../manage/set-password-expiration-policy.md)
 
-[<span data-ttu-id="28c79-133">Impostare la password di un singolo utente in modo che non scada mai</span><span class="sxs-lookup"><span data-stu-id="28c79-133">Set an individual user's password to never expire</span></span>](set-password-to-never-expire.md)
+[<span data-ttu-id="6e0e3-133">Impostare la password di un singolo utente in modo che non scada mai</span><span class="sxs-lookup"><span data-stu-id="6e0e3-133">Set an individual user's password to never expire</span></span>](set-password-to-never-expire.md)
 
-[<span data-ttu-id="28c79-134">Video per la formazione di Microsoft 365 Business</span><span class="sxs-lookup"><span data-stu-id="28c79-134">Microsoft 365 Business training videos</span></span>](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[<span data-ttu-id="6e0e3-134">Video per la formazione di Microsoft 365 Business</span><span class="sxs-lookup"><span data-stu-id="6e0e3-134">Microsoft 365 Business training videos</span></span>](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

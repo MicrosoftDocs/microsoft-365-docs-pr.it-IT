@@ -1,5 +1,5 @@
 ---
-title: Interrompere l'inoltro automatico di messaggi di posta elettronica
+title: Interrompere l'inoltro automatico dei messaggi di posta elettronica
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -16,35 +16,36 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Informazioni su come interrompere l'inoltro automatico di messaggi di posta elettronica.
-ms.openlocfilehash: 0683e133f6c261dc19cc098b13be298cd8086001
-ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
+description: Informazioni su come interrompere l'inoltro automatico dei messaggi di posta elettronica.
+ms.openlocfilehash: ebbe37ab5c4a60c6ac4b6ebf8877247199460fa1
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49702021"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49925887"
 ---
-# <a name="stop-email-auto-forward"></a><span data-ttu-id="b7333-103">Interrompere l'inoltro automatico della posta elettronica</span><span class="sxs-lookup"><span data-stu-id="b7333-103">Stop email auto-forward</span></span>
+# <a name="stop-email-auto-forward"></a><span data-ttu-id="b0bf7-103">Arrestare l'inoltro automatico della posta elettronica</span><span class="sxs-lookup"><span data-stu-id="b0bf7-103">Stop email auto-forward</span></span>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2W6kS?autoplay=false]
 
-<span data-ttu-id="b7333-104">Se un pirata informatico accede alla cassetta postale di un utente, può inoltrare automaticamente la posta elettronica dell'utente a un indirizzo esterno e rubare informazioni proprietarie.</span><span class="sxs-lookup"><span data-stu-id="b7333-104">If a hacker gains access to a user's mailbox, they can auto-forward the user's email to an outside address and steal proprietary information.</span></span> <span data-ttu-id="b7333-105">Questa operazione può essere interrotta creando una regola del flusso di posta.</span><span class="sxs-lookup"><span data-stu-id="b7333-105">You can stop this by creating a mail flow rule.</span></span>
+<span data-ttu-id="b0bf7-104">Se un pirata informatico ottiene l'accesso alla cassetta postale di un utente, può inoltrare automaticamente la posta elettronica dell'utente a un indirizzo esterno e rubare informazioni proprietarie.</span><span class="sxs-lookup"><span data-stu-id="b0bf7-104">If a hacker gains access to a user's mailbox, they can auto-forward the user's email to an outside address and steal proprietary information.</span></span> <span data-ttu-id="b0bf7-105">È possibile interrompere questa operazione creando una regola del flusso di posta.</span><span class="sxs-lookup"><span data-stu-id="b0bf7-105">You can stop this by creating a mail flow rule.</span></span>
 
-## <a name="try-it"></a><span data-ttu-id="b7333-106">Perché non provarlo?</span><span class="sxs-lookup"><span data-stu-id="b7333-106">Try it!</span></span>
+## <a name="try-it"></a><span data-ttu-id="b0bf7-106">Perché non provarlo?</span><span class="sxs-lookup"><span data-stu-id="b0bf7-106">Try it!</span></span>
 
-1. <span data-ttu-id="b7333-107">Nell'interfaccia di amministrazione di Microsoft 365 selezionare **Exchange**, **flusso di posta** e nella scheda **regole** selezionare il segno più e scegliere **Crea nuova regola**.</span><span class="sxs-lookup"><span data-stu-id="b7333-107">From the Microsoft 365 admin center, select **Exchange**, **mail flow**, and on the **rules** tab, select the plus sign and choose **create a new rule**.</span></span>
-1. <span data-ttu-id="b7333-108">Selezionare **altre opzioni**.</span><span class="sxs-lookup"><span data-stu-id="b7333-108">Select **More options**.</span></span> <span data-ttu-id="b7333-109">Assegnare un nome alla nuova regola.</span><span class="sxs-lookup"><span data-stu-id="b7333-109">Name your new rule.</span></span>
-1. <span data-ttu-id="b7333-110">Aprire quindi il menu a discesa per **applicare la regola se**, selezionare **il mittente** e quindi **interno esterno**.</span><span class="sxs-lookup"><span data-stu-id="b7333-110">Then open the drop-down for **apply this rule if**, select **the sender**, and then **is external internal**.</span></span>
-1. <span data-ttu-id="b7333-111">Selezionare **all'interno dell'organizzazione** e quindi fare clic su **OK**.</span><span class="sxs-lookup"><span data-stu-id="b7333-111">Select **Inside the organization**, and then **OK**.</span></span>
-1. <span data-ttu-id="b7333-112">Scegliere **Aggiungi condizione**, aprire l'elenco a discesa, selezionare **le proprietà del messaggio** e quindi **includere il tipo di messaggio**.</span><span class="sxs-lookup"><span data-stu-id="b7333-112">Choose **add condition**, open the drop-down, select **The message properties**, then **include the message type**.</span></span>
-1. <span data-ttu-id="b7333-113">Aprire l'elenco a discesa **Seleziona tipo di messaggio** , scegliere **inoltro automatico** e quindi **OK**.</span><span class="sxs-lookup"><span data-stu-id="b7333-113">Open the **select message type** drop-down, choose **Auto-forward**, then **OK**.</span></span>
-1. <span data-ttu-id="b7333-114">Aprire l'elenco a discesa **procedere come segue** , selezionare **blocca il messaggio**, quindi **rifiutare il messaggio e includere una spiegazione**.</span><span class="sxs-lookup"><span data-stu-id="b7333-114">Open the **Do the following** drop-down, select **Block the message**, then **reject the message and include an explanation**.</span></span>
-1. <span data-ttu-id="b7333-115">Immettere il testo del messaggio per la spiegazione, quindi fare clic su **OK**.</span><span class="sxs-lookup"><span data-stu-id="b7333-115">Enter the message text for your explanation, then select **OK**.</span></span>
-1. <span data-ttu-id="b7333-116">Scorrere fino alla fine e selezionare **Salva**.</span><span class="sxs-lookup"><span data-stu-id="b7333-116">Scroll to the bottom and select **Save**.</span></span>
+1. <span data-ttu-id="b0bf7-107">Nell'interfaccia di amministrazione di Microsoft 365 selezionare  **Exchange,** flusso di posta e, nella scheda delle regole, selezionare il segno più e scegliere **crea una nuova regola.** </span><span class="sxs-lookup"><span data-stu-id="b0bf7-107">From the Microsoft 365 admin center, select **Exchange**, **mail flow**, and on the **rules** tab, select the plus sign and choose **create a new rule**.</span></span>
+1. <span data-ttu-id="b0bf7-108">Selezionare **Altre opzioni.**</span><span class="sxs-lookup"><span data-stu-id="b0bf7-108">Select **More options**.</span></span> <span data-ttu-id="b0bf7-109">Assegnare un nome alla nuova regola.</span><span class="sxs-lookup"><span data-stu-id="b0bf7-109">Name your new rule.</span></span>
+1. <span data-ttu-id="b0bf7-110">Aprire quindi l'elenco a discesa per **applicare questa regola se**, selezionare **il** mittente e quindi è **interno esterno.**</span><span class="sxs-lookup"><span data-stu-id="b0bf7-110">Then open the drop-down for **apply this rule if**, select **the sender**, and then **is external internal**.</span></span>
+1. <span data-ttu-id="b0bf7-111">Selezionare **Interno all'organizzazione** e quindi **OK.**</span><span class="sxs-lookup"><span data-stu-id="b0bf7-111">Select **Inside the organization**, and then **OK**.</span></span>
+1. <span data-ttu-id="b0bf7-112">Scegliere **aggiungi condizione,** aprire l'elenco a discesa, selezionare **Le proprietà del** messaggio, quindi includere il tipo di **messaggio.**</span><span class="sxs-lookup"><span data-stu-id="b0bf7-112">Choose **add condition**, open the drop-down, select **The message properties**, then **include the message type**.</span></span>
+1. <span data-ttu-id="b0bf7-113">Aprire **l'elenco a** discesa Seleziona tipo di messaggio, scegliere **Inoltro automatico,** quindi **OK.**</span><span class="sxs-lookup"><span data-stu-id="b0bf7-113">Open the **select message type** drop-down, choose **Auto-forward**, then **OK**.</span></span>
+1. <span data-ttu-id="b0bf7-114">Aprire **l'elenco** a discesa Fare quanto segue, selezionare **Blocca il messaggio,** quindi **rifiutare il messaggio e includere una spiegazione.**</span><span class="sxs-lookup"><span data-stu-id="b0bf7-114">Open the **Do the following** drop-down, select **Block the message**, then **reject the message and include an explanation**.</span></span>
+1. <span data-ttu-id="b0bf7-115">Immettere il testo del messaggio per la spiegazione, quindi selezionare **OK.**</span><span class="sxs-lookup"><span data-stu-id="b0bf7-115">Enter the message text for your explanation, then select **OK**.</span></span>
+1. <span data-ttu-id="b0bf7-116">Scorrere verso il basso e selezionare **Salva.**</span><span class="sxs-lookup"><span data-stu-id="b0bf7-116">Scroll to the bottom and select **Save**.</span></span>
 
-    <span data-ttu-id="b7333-117">La regola è stata creata e gli hacker non saranno più in grado di inoltrare automaticamente i messaggi.</span><span class="sxs-lookup"><span data-stu-id="b7333-117">Your rule has been created, and hackers will no longer be able to auto-forward messages.</span></span>
+    <span data-ttu-id="b0bf7-117">La regola è stata creata e i pirati informatici non saranno più in grado di inoltrare automaticamente i messaggi.</span><span class="sxs-lookup"><span data-stu-id="b0bf7-117">Your rule has been created, and hackers will no longer be able to auto-forward messages.</span></span>
