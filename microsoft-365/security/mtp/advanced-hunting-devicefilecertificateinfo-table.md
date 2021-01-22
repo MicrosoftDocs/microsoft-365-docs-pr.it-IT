@@ -1,10 +1,10 @@
 ---
-title: Tabella DeviceFileCertificateInfo nello schema di caccia avanzato
-description: Informazioni sulla firma dei file nella tabella DeviceFileCertificateInfo dello schema di caccia avanzato
-keywords: caccia avanzata, caccia alle minacce, Cyber-caccia alle minacce, Microsoft Threat Protection, Microsoft 365, MTP, M365, ricerca, query, telemetria, riferimento dello schema, kusto, tabella, colonna, tipo di dati, firma digitale, certificato, firma dei file, DeviceFileCertificateInfo
+title: Tabella DeviceFileCertificateInfo nello schema di ricerca avanzata
+description: Informazioni sulle informazioni sulla firma dei file nella tabella DeviceFileCertificateInfo dello schema di ricerca avanzata
+keywords: ricerca avanzata, ricerca delle minacce, ricerca delle minacce informatiche, microsoft threat protection, Microsoft 365, mtp, m365, ricerca, query, telemetria, riferimento allo schema, kusto, tabella, colonna, tipo di dati, firma digitale, certificato, firma file, DeviceFileCertificateInfo
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,12 +19,13 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 9291d9f113fdc1c082b38d92399c1dee646b523d
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.technology: m365d
+ms.openlocfilehash: e35e8e86f6814a5f90a7921f71ccab7247fcc1bc
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48846171"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49931315"
 ---
 # <a name="devicefilecertificateinfo"></a>DeviceFileCertificateInfo
 
@@ -34,7 +35,7 @@ ms.locfileid: "48846171"
 **Si applica a:**
 - Microsoft 365 Defender
 
-La `DeviceFileCertificateInfo` tabella nello schema di [ricerca avanzata](advanced-hunting-overview.md) contiene informazioni sui certificati di firma dei file. In questa tabella vengono utilizzati i dati ottenuti dalle attività di verifica dei certificati eseguite regolarmente sui file negli endpoint.
+La `DeviceFileCertificateInfo` tabella nello schema di ricerca [avanzata](advanced-hunting-overview.md) contiene informazioni sui certificati di firma dei file. Questa tabella usa i dati ottenuti dalle attività di verifica dei certificati eseguite regolarmente sui file sugli endpoint.
 
 Per informazioni su altre tabelle nello schema per Ricerca avanzata, [vedere il riferimento sulla Ricerca avanzata](advanced-hunting-schema-tables.md).
 
@@ -45,19 +46,19 @@ Per informazioni su altre tabelle nello schema per Ricerca avanzata, [vedere il 
 | `DeviceName` | stringa | Nome di dominio completo (FQDN) del computer |
 | `SHA1` | stringa | SHA-1 del file a cui è stata applicata l'azione registrata |
 | `IsSigned` | boolean | Indica se il file è firmato |
-| `SignatureType` | stringa | Indica se le informazioni sulla firma sono state lette come contenuto incorporato nel file stesso o lette da un file di catalogo esterno. |
+| `SignatureType` | stringa | Indica se le informazioni sulla firma sono stata lette come contenuto incorporato nel file stesso o da un file di catalogo esterno. |
 | `Signer` | stringa | Informazioni sul firmatario del file |
 | `SignerHash` | stringa | Valore hash univoco che identifica il firmatario |
-| `Issuer` | stringa | Informazioni sull'autorità di certificazione (CA) di emissione |
-| `IssuerHash` | stringa | Valore hash univoco che identifica l'autorità di certificazione (CA) di emissione |
-| `CertificateSerialNumber` | stringa | Identificatore del certificato univoco per l'autorità di certificazione (CA) di emissione |
-| `CrlDistributionPointUrls` | stringa |  Array JSON che elenca gli URL delle condivisioni di rete che contengono certificati e elenchi di revoche di certificati (CRL) |
-| `CertificateCreationTime` | datetime | Data e ora in cui è stato creato il certificato |
-| `CertificateExpirationTime` | datetime | Data e ora in cui il certificato è impostato per scadere |
+| `Issuer` | stringa | Informazioni sull'autorità di certificazione (CA) emittente |
+| `IssuerHash` | stringa | Valore hash univoco che identifica l'autorità di certificazione (CA) emittente |
+| `CertificateSerialNumber` | stringa | Identificatore del certificato univoco dell'autorità di certificazione emittente |
+| `CrlDistributionPointUrls` | stringa |  Array JSON che elenca gli URL delle condivisioni di rete che contengono certificati ed elenchi di revoche di certificati (CRL) |
+| `CertificateCreationTime` | datetime | Data e ora di creazione del certificato |
+| `CertificateExpirationTime` | datetime | Data e ora di scadenza del certificato |
 | `CertificateCountersignatureTime` | datetime | Data e ora in cui il certificato è stato controfirmato |
-| `IsTrusted` | boolean | Indica se il file è attendibile in base ai risultati della funzione WinVerifyTrust, che consente di verificare la presenza di informazioni sul certificato radice sconosciute, firme non valide, certificati revocati e altri attributi discutibili. |
+| `IsTrusted` | boolean | Indica se il file è attendibile in base ai risultati della funzione WinVerifyTrust, che verifica la presenza di informazioni sconosciute sul certificato radice, firme non valide, certificati revocati e altri attributi discutibili |
 | `IsRootSignerMicrosoft` | boolean | Indica se il firmatario del certificato radice è Microsoft |
-| `ReportId` | long | Identificatore di evento basato su un contatore ripetuto. Per identificare gli eventi univoci, è necessario utilizzare questa colonna insieme alle colonne DeviceName e timestamp. | 
+| `ReportId` | long | Identificatore di evento basato su un contatore ripetuto. Per identificare eventi univoci, questa colonna deve essere usata insieme alle colonne DeviceName e Timestamp. | 
 
 ## <a name="related-topics"></a>Argomenti correlati
 - [Panoramica della ricerca avanzata](advanced-hunting-overview.md)

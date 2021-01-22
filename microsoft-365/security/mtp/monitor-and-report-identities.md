@@ -1,8 +1,8 @@
 ---
-title: Monitoraggio e reporting delle identità-Centro sicurezza
-description: Descrive in che modo è possibile monitorare gli utenti dell'organizzazione e tenere conto dei comportamenti sospetti o rischiosi.
-keywords: sicurezza, malware, Microsoft 365, M365, Centro sicurezza, monitoraggio, report, identità, utenti
-ms.prod: microsoft-365-enterprise
+title: Monitoraggio e creazione di report delle identità - Centro sicurezza
+description: Descrive come monitorare gli utenti dell'organizzazione e tenere traccia di comportamenti sospetti o rischiosi.
+keywords: sicurezza, malware, Microsoft 365, M365, centro sicurezza, monitorare, report, identità, utenti
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 f1.keywords:
@@ -17,26 +17,27 @@ ms.collection:
 ms.topic: article
 search.appverid: met150
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 2f938fba565d52658776d4a7573592026695f9ee
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.technology: m365d
+ms.openlocfilehash: 31c000871fe644f614da597912698792c5dc72ca
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48429372"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49930535"
 ---
-# <a name="identity-monitoring-and-reporting-in-the-microsoft-365-security-center"></a>Monitoraggio dell'identità e creazione di report nel centro sicurezza Microsoft 365
+# <a name="identity-monitoring-and-reporting-in-the-microsoft-365-security-center"></a>Monitoraggio e creazione di report delle identità nel Centro sicurezza Microsoft 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
-Monitorare le identità nell'organizzazione e tenere conto dei comportamenti sospetti o rischiosi. Nella categoria **identità** dei **report**è possibile monitorare le operazioni seguenti:
+Monitorare le identità dell'organizzazione e tenere traccia di comportamenti sospetti o rischiosi. Nella categoria **Identità** di **Report** è possibile tenere traccia di:
 
 * Utenti con il maggior numero di anomalie rilevate
 * Quanti utenti sono segnalati a rischio dai criteri di accesso condizionale
 * Il numero di amministratori globali nell'organizzazione
 
-![Pagina identità categoria di report](../../media/identities.png)
+![Pagina Categorie di identità dei report](../../media/identities.png)
 
-Per gli utenti con specifici rilevamenti, è possibile esplorare l'avviso specifico ed esaminare il Centro sicurezza di Microsoft Defender. I rilevamenti includono anomalie quali gli utenti che effettuano l'accesso da posizioni sconosciute.
+Per gli utenti con rilevamenti specifici, puoi esplorare l'avviso specifico e analizzare Microsoft Defender Security Center. I rilevamenti includono anomalie, ad esempio gli utenti che affondono da posizioni sconosciute.
 
-Per un set completo di eventi di rischio, vedere [eventi di rischio di Azure Active Directory](https://docs.microsoft.com/azure/active-directory/reports-monitoring/concept-risk-events).
+Per un set completo di eventi di rischio, vedere Eventi di rischio [di Azure Active Directory.](https://docs.microsoft.com/azure/active-directory/reports-monitoring/concept-risk-events)

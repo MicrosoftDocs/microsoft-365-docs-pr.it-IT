@@ -1,10 +1,10 @@
 ---
-title: Tabella DeviceInfo nello schema di caccia avanzato
-description: Informazioni sul sistema operativo, sul nome del computer e su altri computer nella tabella DeviceInfo dello schema di caccia avanzato
-keywords: caccia avanzata, caccia alle minacce, Cyber-caccia alle minacce, Microsoft Threat Protection, Microsoft 365, MTP, M365, ricerca, query, telemetria, riferimento allo schema, kusto, tabella, colonna, tipo di dati, descrizione, machineinfo, DeviceInfo, Device, Machine, OS, Platform, Users
+title: Tabella DeviceInfo nello schema di ricerca avanzata
+description: Informazioni su sistema operativo, nome computer e altre informazioni sul computer nella tabella DeviceInfo dello schema di ricerca avanzata
+keywords: ricerca avanzata, ricerca delle minacce, ricerca delle minacce informatiche, microsoft threat protection, Microsoft 365, mtp, m365, ricerca, query, telemetria, riferimento allo schema, kusto, tabella, colonna, tipo di dati, descrizione, machineinfo, DeviceInfo, dispositivo, computer, sistema operativo, piattaforma, utenti
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,12 +19,13 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 1bb48b4332bc9d60de15bb513f04a503d6a6913b
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.technology: m365d
+ms.openlocfilehash: e445902ee83b734f84d02607905413a14c016b8f
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48842715"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49931279"
 ---
 # <a name="deviceinfo"></a>DeviceInfo
 
@@ -36,7 +37,7 @@ ms.locfileid: "48842715"
 
 
 
-La `DeviceInfo` tabella nello schema di [ricerca avanzata](advanced-hunting-overview.md) contiene informazioni sui computer nell'organizzazione, tra cui la versione del sistema operativo, gli utenti attivi e il nome del computer. Usare questo riferimento per creare query che restituiscono informazioni dalla tabella.
+La tabella nello schema di ricerca avanzata contiene informazioni sui computer dell'organizzazione, tra cui la versione del sistema operativo, gli utenti `DeviceInfo` attivi e il nome del computer. [](advanced-hunting-overview.md) Usare questo riferimento per creare query che restituiscono informazioni dalla tabella.
 
 Per informazioni su altre tabelle nello schema per Ricerca avanzata, [vedere il riferimento sulla Ricerca avanzata](advanced-hunting-schema-tables.md).
 
@@ -46,16 +47,16 @@ Per informazioni su altre tabelle nello schema per Ricerca avanzata, [vedere il 
 | `DeviceId` | stringa | Identificatore univoco per il computer nel servizio |
 | `DeviceName` | stringa | Nome di dominio completo (FQDN) del computer |
 | `ClientVersion` | stringa | Versione dell'agente endpoint o del sensore in esecuzione nel computer |
-| `PublicIP` | stringa | Indirizzo IP pubblico utilizzato dal computer onboarded per la connessione al servizio Microsoft Defender per endpoint. Questo potrebbe essere l'indirizzo IP del computer stesso, un dispositivo NAT o un proxy |
+| `PublicIP` | stringa | Indirizzo IP pubblico usato dal computer onboarded per connettersi al servizio Microsoft Defender for Endpoint. Può trattarsi dell'indirizzo IP del computer stesso, di un dispositivo NAT o di un proxy |
 | `OSArchitecture` | stringa | Architettura del sistema operativo in esecuzione sul computer |
-| `OSPlatform` | stringa | Piattaforma del sistema operativo in esecuzione sul computer. Questo indica sistemi operativi specifici, tra cui le varianti all'interno della stessa famiglia, ad esempio Windows 10 e Windows 7 |
-| `OSBuild` | stringa | Versione di compilazione del sistema operativo in esecuzione nel computer |
-| `IsAzureADJoined` | boolean | Indicatore booleano del fatto che il computer sia aggiunto a Azure Active Directory |
-| `LoggedOnUsers` | stringa | Elenco di tutti gli utenti che hanno effettuato l'accesso al computer al momento dell'evento in formato matrice JSON |
-| `RegistryDeviceTag` | stringa | Tag del computer aggiunto tramite il registro di sistema |
-| `ReportId` | long | Identificatore di evento basato su un contatore ripetuto. Per identificare gli eventi univoci, è necessario utilizzare questa colonna insieme alle colonne DeviceName e timestamp. |
+| `OSPlatform` | stringa | Piattaforma del sistema operativo in esecuzione sul computer. Indica sistemi operativi specifici, incluse le varianti all'interno della stessa famiglia, ad esempio Windows 10 e Windows 7 |
+| `OSBuild` | stringa | Versione build del sistema operativo in esecuzione nel computer |
+| `IsAzureADJoined` | boolean | Indicatore booleano che indica se il computer è aggiunto ad Azure Active Directory |
+| `LoggedOnUsers` | stringa | Elenco di tutti gli utenti registrati nel computer al momento dell'evento in formato matrice JSON |
+| `RegistryDeviceTag` | stringa | Tag del computer aggiunto tramite il Registro di sistema |
+| `ReportId` | long | Identificatore di evento basato su un contatore ripetuto. Per identificare eventi univoci, questa colonna deve essere usata insieme alle colonne DeviceName e Timestamp |
 | `OSVersion` | stringa | Versione del sistema operativo in esecuzione sul computer |
-| `MachineGroup` | stringa | Gruppo di macchine del computer. Questo gruppo viene utilizzato dal controllo di accesso basato sui ruoli per determinare l'accesso al computer |
+| `MachineGroup` | stringa | Gruppo di computer del computer. Questo gruppo viene utilizzato dal controllo dell'accesso basato sui ruoli per determinare l'accesso al computer |
 
 ## <a name="related-topics"></a>Argomenti correlati
 - [Panoramica della ricerca avanzata](advanced-hunting-overview.md)

@@ -1,10 +1,10 @@
 ---
 title: Tabella DeviceTvmSecureConfigurationAssessment nello schema di Ricerca avanzata
-description: Informazioni sugli eventi di valutazione della sicurezza nella tabella DeviceTvmSecureConfigurationAssessment dello schema di caccia avanzato. Tali rischi & eventi di gestione della vulnerabilità forniscono informazioni sui dispositivi, oltre a dettagli sulla configurazione della sicurezza, informazioni sull'impatto e sulla conformità.
-keywords: caccia avanzata, caccia alle minacce, Cyber Threat Hunting, Microsoft Threat Protection, Microsoft 365, MTP, M365, Search, query, telemetria, riferimento allo schema, kusto, tabella, colonna, tipo di dati, descrizione, Threat & vulnerabilità di gestione, TVM, gestione dei dispositivi, configurazione della sicurezza, DeviceTvmSecureConfigurationAssessment
+description: Informazioni sugli eventi di valutazione della sicurezza nella tabella DeviceTvmSecureConfigurationAssessment dello schema di ricerca avanzata. Questi eventi di & di gestione delle vulnerabilità forniscono informazioni sul dispositivo, nonché dettagli sulla configurazione della sicurezza, impatto e informazioni sulla conformità.
+keywords: ricerca avanzata, ricerca delle minacce, ricerca delle minacce informatiche, protezione dalle minacce Microsoft, Microsoft 365, mtp, m365, ricerca, query, telemetria, riferimento allo schema, kusto, tabella, colonna, tipo di dati, descrizione, gestione delle vulnerabilità del & delle minacce, TVM, gestione dei dispositivi, configurazione della sicurezza, DeviceTvmSecureConfigurationAssessment
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,12 +19,13 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: bfe63397d194567a7d71de703363083d2fd4fe75
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.technology: m365d
+ms.openlocfilehash: 6924bbc7a88a4f32d97534c72a180a1f1c4f7db6
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48847609"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49931099"
 ---
 # <a name="devicetvmsecureconfigurationassessment"></a>DeviceTvmSecureConfigurationAssessment
 
@@ -42,7 +43,7 @@ Per informazioni su altre tabelle nello schema di Ricerca avanzata vedere [le in
 
 | Nome colonna | Tipo di dati | Descrizione |
 |-------------|-----------|-------------|
-| `DeviceId` | stringa | Identificatore univoco per il dispositivo nel servizio |
+| `DeviceId` | stringa | Identificatore univoco del dispositivo nel servizio |
 | `DeviceName` | stringa | Nome di dominio completo (FQDN) del dispositivo |
 | `OSPlatform` | stringa | Piattaforma del sistema operativo in esecuzione nel dispositivo. Ciò indica specifici sistemi operativi, incluse variazioni all'interno della stessa famiglia di prodotti, come Windows 10 e Windows 7.|
 | `Timestamp` | datetime | Data e ora in cui è stato generato il record |
@@ -52,8 +53,8 @@ Per informazioni su altre tabelle nello schema di Ricerca avanzata vedere [le in
 | `ConfigurationImpact` | stringa | Impatto nominale della configurazione sul punteggio di configurazione complessivo (1-10) |
 | `IsCompliant` | booleano | Indica se la configurazione o i criteri sono configurati correttamente |
 | `IsApplicable` | boolean | Indica se la configurazione o il criterio si applica al dispositivo |
-| `Context` | stringa | Ulteriori informazioni contestuali sulla configurazione o sui criteri |
-| `IsExpectedUserImpactCompliant` | boolean | Indica se l'impatto dell'utente verrà applicato se la configurazione o il criterio vengono applicati |
+| `Context` | stringa | Informazioni contestuali aggiuntive sulla configurazione o sui criteri |
+| `IsExpectedUserImpactCompliant` | boolean | Indica se l'applicazione della configurazione o del criterio avrà un impatto sull'utente |
 
 ## <a name="related-topics"></a>Argomenti correlati
 

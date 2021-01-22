@@ -1,10 +1,10 @@
 ---
-title: Tabella AlertEvidence nello schema di caccia avanzato
-description: Informazioni sui dati associati agli avvisi nella tabella AlertEvidence dello schema di caccia avanzato
-keywords: caccia avanzata, caccia alle minacce, Cyber-caccia alle minacce, Microsoft Threat Protection, Microsoft 365, MTP, M365, ricerca, query, telemetria, riferimento allo schema, kusto, tabella, colonna, tipo di dati, descrizione, AlertInfo, avviso, entità, evidenza, file, indirizzo IP, dispositivo, computer, utente, account
+title: Tabella AlertEvidence nello schema di ricerca avanzata
+description: Informazioni sulle informazioni associate agli avvisi nella tabella AlertEvidence dello schema di ricerca avanzata
+keywords: ricerca avanzata, ricerca delle minacce, ricerca delle minacce informatiche, microsoft threat protection, Microsoft 365, mtp, m365, ricerca, query, telemetria, riferimento allo schema, kusto, tabella, colonna, tipo di dati, descrizione, AlertInfo, avviso, entità, prova, file, indirizzo IP, dispositivo, computer, utente, account
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,12 +19,13 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 549eed005e06a7d52ce2f881820ae9fdeffdfea7
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.technology: m365d
+ms.openlocfilehash: c01b0aae1eff3d9b4add632aff0f13cb56941a30
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48847681"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49932305"
 ---
 # <a name="alertevidence"></a>AlertEvidence
 
@@ -34,7 +35,7 @@ ms.locfileid: "48847681"
 **Si applica a:**
 - Microsoft 365 Defender
 
-La `AlertEvidence` tabella nello schema di [ricerca avanzata](advanced-hunting-overview.md) contiene informazioni su diverse entità, ovvero file, indirizzi IP, URL, utenti o dispositivi, associati agli avvisi di Microsoft Defender per endpoint, Microsoft defender per Office 365, Microsoft cloud app Security e Microsoft Defender per Identity. Usare questo riferimento per creare query che restituiscono informazioni dalla tabella.
+La tabella nello schema di ricerca avanzata contiene informazioni su varie entità( file, indirizzi IP, URL, utenti o dispositivi) associate agli avvisi di `AlertEvidence` Microsoft Defender per Endpoint, Microsoft Defender per Office 365, Microsoft Cloud App Security e Microsoft Defender for Identity. [](advanced-hunting-overview.md) Usare questo riferimento per creare query che restituiscono informazioni dalla tabella.
 
 Per informazioni su altre tabelle nello schema per Ricerca avanzata, [vedere il riferimento sulla Ricerca avanzata](advanced-hunting-schema-tables.md).
 
@@ -42,31 +43,31 @@ Per informazioni su altre tabelle nello schema per Ricerca avanzata, [vedere il 
 |-------------|-----------|-------------|
 | `Timestamp` | datetime | Data e ora di registrazione dell'evento |
 | `AlertId` | stringa | Identificatore univoco dell'avviso |
-| `ServiceSource` | stringa | Prodotto o servizio che ha fornito le informazioni sugli avvisi |
+| `ServiceSource` | stringa | Prodotto o servizio che ha fornito le informazioni sull'avviso |
 | `EntityType` | stringa | Tipo di oggetto, ad esempio un file, un processo, un dispositivo o un utente |
-| `EvidenceRole` | stringa | In che modo l'entità è coinvolta in un avviso, che indica se ha un impatto o è semplicemente correlato |
+| `EvidenceRole` | stringa | In che modo l'entità è coinvolta in un avviso, che indica se è influenzata o è semplicemente correlata |
 | `EvidenceDirection` | stringa | Indica se l'entità è l'origine o la destinazione di una connessione di rete |
 | `FileName` | stringa | Nome del file a cui è stata applicata l'azione registrata |
 | `FolderPath` | stringa | Cartella contenente il file a cui è stata applicata l'azione registrata |
 | `SHA1` | stringa | SHA-1 del file a cui è stata applicata l'azione registrata |
-| `SHA256` | stringa | SHA-256 del file a cui è stata applicata l'azione registrata. Questo campo in genere non viene popolato, se disponibile, utilizzare la colonna SHA1. |
-| `FileSize` | int | Dimensione del file in byte |
-| `ThreatFamily` | stringa | Famiglia di malware che il processo o il file sospetto o dannoso sono stati classificati in |
+| `SHA256` | stringa | SHA-256 del file a cui è stata applicata l'azione registrata. Questo campo in genere non viene popolato: usa la colonna SHA1 quando disponibile. |
+| `FileSize` | int | Dimensioni del file in byte |
+| `ThreatFamily` | stringa | Famiglia di malware in cui è stato classificato il file o il processo sospetto o dannoso |
 | `RemoteIP` | stringa | Indirizzo IP connesso a |
 | `RemoteUrl` | stringa | URL o nome di dominio completo (FQDN) connesso a |
 | `AccountName` | stringa | Nome utente dell'account |
 | `AccountDomain` | stringa | Dominio dell'account |
-| `AccountSid` | stringa | ID di sicurezza (SID) dell'account |
+| `AccountSid` | stringa | Identificatore di sicurezza (SID) dell'account |
 | `AccountObjectId` | stringa | Identificatore univoco per l'account in Azure Active Directory |
-| `DeviceId` | stringa | Identificatore univoco per il dispositivo nel servizio |
+| `DeviceId` | stringa | Identificatore univoco del dispositivo nel servizio |
 | `DeviceName` | stringa | Nome di dominio completo (FQDN) del computer |
 | `LocalIP` | stringa | Indirizzo IP assegnato al dispositivo locale utilizzato durante la comunicazione |
 | `NetworkMessageId` | stringa | Identificatore univoco per la posta elettronica, generato da Office 365 |
 | `EmailSubject` | stringa | Oggetto del messaggio di posta elettronica |
-| `ApplicationId` | stringa | Identificatore univoco per l'applicazione |
-| `Application` | stringa | Applicazione in cui è stata eseguita l'azione registrata |
+| `ApplicationId` | stringa | Identificatore univoco dell'applicazione |
+| `Application` | stringa | Applicazione che ha eseguito l'azione registrata |
 | `ProcessCommandLine` | stringa | Riga di comando utilizzata per creare il nuovo processo |
-| `AdditionalFields` | stringa | Ulteriori informazioni sull'evento nel formato di matrice JSON |
+| `AdditionalFields` | stringa | Ulteriori informazioni sull'evento in formato matrice JSON |
 
 ## <a name="related-topics"></a>Argomenti correlati
 - [Panoramica della ricerca avanzata](advanced-hunting-overview.md)

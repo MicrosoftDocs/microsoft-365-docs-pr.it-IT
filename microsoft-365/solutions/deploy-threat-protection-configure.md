@@ -1,12 +1,13 @@
 ---
-title: Procedura per configurare le funzionalità di protezione dalle minacce in Microsoft 365
-description: Informazioni su come distribuire i servizi e le funzionalità di protezione dalle minacce in Microsoft 365 E5.
+title: Passaggi per configurare le funzionalità di protezione dalle minacce in Microsoft 365
+description: Informazioni su come distribuire servizi e funzionalità di protezione dalle minacce in Microsoft 365 E5.
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
 ms.audience: ITPro
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
+ms.technology: m365d
 localization_priority: Normal
 ms.collection:
 - M365-security-compliance
@@ -14,185 +15,185 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: f3fa5c82efad0a51adf5e798bd89860e78256e15
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 492db78c9aea881ae05dbc66f5e84ad98629b923
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48845313"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49931987"
 ---
 # <a name="configure-threat-protection-capabilities-across-microsoft-365"></a>Configurare le funzionalità di protezione dalle minacce in Microsoft 365
 
-Seguire questa procedura per configurare la protezione delle minacce in Microsoft 365.
+Seguire questa procedura per configurare la protezione dalle minacce in Microsoft 365.
 
 
-## <a name="step-1-set-up-multi-factor-authentication-and-conditional-access-policies"></a>Passaggio 1: configurare l'autenticazione a più fattori e i criteri di accesso condizionale
+## <a name="step-1-set-up-multi-factor-authentication-and-conditional-access-policies"></a>Passaggio 1: Configurare l'autenticazione a più fattori e i criteri di accesso condizionale
 
-[L'autenticazione](https://docs.microsoft.com/azure/active-directory/authentication/concept-mfa-howitworks) a più fattori richiede agli utenti di verificare la propria identità con una chiamata telefonica o l'app Authenticator. I [criteri di accesso condizionale](https://docs.microsoft.com/azure/active-directory/conditional-access/overview) definiscono alcuni requisiti che devono essere soddisfatti per consentire agli utenti di accedere alle app e ai dati in Microsoft 365. I criteri di accesso condizionale e di Mae interagiscono per proteggere l'organizzazione. Ad esempio, se un utente tenta di eseguire l'accesso da un dispositivo mobile utilizzando un account non abilitato per l'AMF e un criterio di accesso condizionale richiede che l'AMF sia attiva, non sarà possibile eseguire l'accesso.  
+[L'autenticazione a più](https://docs.microsoft.com/azure/active-directory/authentication/concept-mfa-howitworks) fattori (MFA) richiede agli utenti di verificare la propria identità con una chiamata telefonica o un'app di autenticazione. [I criteri di accesso](https://docs.microsoft.com/azure/active-directory/conditional-access/overview) condizionale definiscono determinati requisiti che devono essere soddisfatti per consentire agli utenti di accedere alle app e ai dati in Microsoft 365. L'autenticazione a più fattori e i criteri di accesso condizionale funzionano insieme per proteggere l'organizzazione. Ad esempio, se un utente tenta di accedere da un dispositivo mobile usando un account non abilitato per la MFA e i criteri di accesso condizionale richiedono l'applicazione dell'autenticazione a più fattori, all'utente verrà impedito di eseguire l'accesso.  
 
-Microsoft ha testato e raccomandato una serie specifica di criteri di accesso condizionale e relativi per la protezione dell'accesso a tutte le applicazioni SaaS, in particolare Microsoft 365. I criteri sono consigliati per la protezione di base, sensibile e altamente regolamentata. Iniziare implementando i criteri per la protezione di base. 
+Microsoft ha testato e consigliato un set specifico di accesso condizionale e criteri correlati per proteggere l'accesso a tutte le applicazioni SaaS, in particolare Microsoft 365. I criteri sono consigliati per la protezione di base, sensibile ed estremamente regolamentata. Iniziare implementando i criteri per la protezione di base. 
 
 
-[ ![ Criteri comuni per la configurazione dell'identità e dell'accesso ai dispositivi](../media/microsoft-365-policies-configurations/Identity_device_access_policies_byplan.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/Identity_device_access_policies_byplan.png) 
- [vedere una versione più grande di questa immagine](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/Identity_device_access_policies_byplan.png)
+[ ![ Criteri comuni per la configurazione dell'identità e dell'accesso ai dispositivi](../media/microsoft-365-policies-configurations/Identity_device_access_policies_byplan.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/Identity_device_access_policies_byplan.png)Vedere una versione più grande di questa 
+ [immagine](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/Identity_device_access_policies_byplan.png)
 
 ### <a name="to-implement-baseline-protection-for-microsoft-365"></a>Per implementare la protezione di base per Microsoft 365
 
 ![Processo di distribuzione della protezione di base](../media/solutions-architecture-center/deploy-threat-protection-identity-access-steps.png) 
 
-1. [Configurare i prerequisiti, inclusa la protezione delle identità di Azure](../security/office-365-security/identity-access-prerequisites.md).
-2. [Configurazione dei criteri comuni di identità e accesso ai dispositivi](../security/office-365-security/identity-access-policies.md) per la protezione della linea di base.
-3. Configurare i criteri per [gli utenti Guest](../security/office-365-security/identity-access-policies-guest-access.md), [Microsoft teams](../security/office-365-security/teams-access-policies.md), [Exchange Online](../security/office-365-security/secure-email-recommended-policies.md)e [SharePoint Online e OneDrive](../security/office-365-security/sharepoint-file-access-policies.md).
+1. [Configurare i prerequisiti, incluso Azure Identity Protection.](../security/office-365-security/identity-access-prerequisites.md)
+2. [Configurare i criteri comuni di identità e accesso ai dispositivi per](../security/office-365-security/identity-access-policies.md) la protezione di base.
+3. Configurare i criteri [per gli utenti guest,](../security/office-365-security/identity-access-policies-guest-access.md) [Microsoft Teams,](../security/office-365-security/teams-access-policies.md) [Exchange Online,](../security/office-365-security/secure-email-recommended-policies.md) [SharePoint Online e OneDrive.](../security/office-365-security/sharepoint-file-access-policies.md)
 
 ### <a name="more-information-about-protecting-identities"></a>Ulteriori informazioni sulla protezione delle identità
 
 - [Configurazioni di identità e accesso dei dispositivi](../security/office-365-security/microsoft-365-policies-configurations.md)
-- [Linee guida per la sicurezza per Azure Mae](https://docs.microsoft.com/azure/active-directory/authentication/multi-factor-authentication-security-best-practices)
+- [Indicazioni sulla sicurezza per Azure MFA](https://docs.microsoft.com/azure/active-directory/authentication/multi-factor-authentication-security-best-practices)
 
-## <a name="step-2-configure-microsoft-defender-for-identity"></a>Passaggio 2: configurare Microsoft Defender per l'identità
+## <a name="step-2-configure-microsoft-defender-for-identity"></a>Passaggio 2: Configurare Microsoft Defender per l'identità
 
-[Microsoft Defender for Identity](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp) è una soluzione di sicurezza basata sul cloud che funziona con i segnali di [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis) locali per identificare, rilevare ed esaminare le minacce avanzate, le identità compromesse e le azioni Insider dannose indirizzate alla propria organizzazione.
+[Microsoft Defender for Identity](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp) è una soluzione di sicurezza basata sul cloud che funziona con i segnali di [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis) locale per identificare, rilevare e analizzare minacce avanzate, identità compromesse e azioni Insider dannose indirizzate all'organizzazione.
 
-Microsoft Defender for Identity consente alle operazioni di sicurezza (secops) di analisti e professionisti della sicurezza che lottano per rilevare attacchi avanzati in ambienti ibridi per:
+Microsoft Defender for Identity consente agli analisti e ai professionisti della sicurezza (SecOps) di rilevare attacchi avanzati in ambienti ibridi per:
 - Monitorare gli utenti, il comportamento delle entità e le attività con l'analisi basata sull'apprendimento.
 - Proteggere le identità utente e le credenziali archiviate in Active Directory.
 - Identificare e analizzare le attività utente sospette e gli attacchi avanzati per tutta la kill chain.
 - Fornire informazioni chiare sull'incidente in una sequenza temporale semplice per la valutazione veloce.
 
-### <a name="to-set-up-microsoft-defender-for-identity"></a>Per configurare Microsoft Defender per Identity
+### <a name="to-set-up-microsoft-defender-for-identity"></a>Per configurare Microsoft Defender per l'identità
 
-![Processo per la distribuzione di Microsoft Defender per Identity](../media/solutions-architecture-center/deploy-azure-atp-steps.png) 
+![Processo per la distribuzione di Microsoft Defender for Identity](../media/solutions-architecture-center/deploy-azure-atp-steps.png) 
 
-1. [Configurare Microsoft Defender per Identity](https://docs.microsoft.com/azure-advanced-threat-protection/install-atp-step1) per proteggere gli ambienti primari.
-2. Proteggere tutti i [controller di dominio](https://docs.microsoft.com/azure-advanced-threat-protection/atp-sensor-monitoring) e le [foreste](https://docs.microsoft.com/azure-advanced-threat-protection/atp-multi-forest).
-3. Integrare [Microsoft Defender per gli avvisi di identità](https://docs.microsoft.com/azure-advanced-threat-protection/suspicious-activity-guide?tabs=external) nel flusso di lavoro operazioni di sicurezza (secops).
+1. [Configurare Microsoft Defender for Identity per](https://docs.microsoft.com/azure-advanced-threat-protection/install-atp-step1) proteggere gli ambienti principali.
+2. Proteggere tutti i [controller di dominio e](https://docs.microsoft.com/azure-advanced-threat-protection/atp-sensor-monitoring) le [foreste.](https://docs.microsoft.com/azure-advanced-threat-protection/atp-multi-forest)
+3. Integrare [gli avvisi di Microsoft Defender for Identity](https://docs.microsoft.com/azure-advanced-threat-protection/suspicious-activity-guide?tabs=external) nel flusso di lavoro delle operazioni di sicurezza (SecOps).
 
 ### <a name="more-information-about-microsoft-defender-for-identity"></a>Ulteriori informazioni su Microsoft Defender for Identity
 
-- [Che cos'è Microsoft Defender for Identity?](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp)
-- [Video: Introduzione a Microsoft Defender per Identity](https://www.youtube.com/watch?reload=9&v=EGY2m8yU_KE)
-- [Microsoft Defender per la distribuzione delle identità](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp#whats-next)
+- [Che cosa è Microsoft Defender per identità?](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp)
+- [Video: Introduzione a Microsoft Defender per l'identità](https://www.youtube.com/watch?reload=9&v=EGY2m8yU_KE)
+- [Distribuzione di Microsoft Defender for Identity](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp#whats-next)
 
-## <a name="step-3-turn-on-microsoft-365-defender"></a>Passaggio 3: attiva Microsoft 365 Defender
+## <a name="step-3-turn-on-microsoft-365-defender"></a>Passaggio 3: attivare Microsoft 365 Defender
 
-[Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-threat-protection) combina segnali e orchestra le funzionalità in una singola soluzione. Con la soluzione integrata Microsoft 365 Defender, i professionisti della sicurezza possono unire i segnali di minaccia che ognuno di questi prodotti riceve e determina l'intero ambito e l'impatto della minaccia; come è entrata nell'ambiente, cosa ne è interessata e come sta attualmente influenzando l'organizzazione. Microsoft 365 Defender esegue un'azione automatica per impedire o arrestare le cassette postali, gli endpoint e le identità degli utenti coinvolti.
+[Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-threat-protection) combina i segnali e orchestra le funzionalità in un'unica soluzione. Con la soluzione integrata Microsoft 365 Defender, i professionisti della sicurezza possono unire i segnali di minaccia che ognuno di questi prodotti riceve e determinare l'ambito completo e l'impatto della minaccia; come è entrato nell'ambiente, cosa ne è interessato e in che modo influisce attualmente sull'organizzazione. Microsoft 365 Defender adotta un'azione automatica per impedire o arrestare l'attacco e auto-sanare le cassette postali, gli endpoint e le identità degli utenti interessati.
 
-Microsoft 365 Defender unifica gli avvisi, gli incidenti, l'analisi e la risposta automatizzata e la ricerca avanzata tra i carichi di lavoro (Microsoft Defender for Identity, Microsoft Defender per Office 365, Microsoft Defender for endpoint e Microsoft cloud app Security) in un unico riquadro di Glass Experience. Dopo aver configurato uno o più dei servizi di protezione per Office 365, attiva Microsoft 365 Defender. Le nuove funzionalità vengono aggiunte continuamente a Microsoft 365 Defender; prendere in considerazione la possibilità di ricevere funzionalità di anteprima.
+Microsoft 365 Defender unifica avvisi, eventi imprevisti, analisi e risposta automatizzate e ricerca avanzata tra i carichi di lavoro (Microsoft Defender for Identity, Microsoft Defender per Office 365, Microsoft Defender for Endpoint e Microsoft Cloud App Security) in un unico riquadro di esperienza di visualizzazione. Dopo aver configurato uno o più servizi di Defender per Office 365, attivare Microsoft 365 Defender. Le nuove funzionalità vengono aggiunte continuamente a Microsoft 365 Defender; Prendi in considerazione la possibilità di acconsentire esplicitamente alla ricezione delle funzionalità di anteprima.
 
 ### <a name="to-set-up-microsoft-365-defender"></a>Per configurare Microsoft 365 Defender
 
 ![Processo per la distribuzione di Microsoft 365 Defender](../media/solutions-architecture-center/deploy-mtp-steps.png) 
 
-1. [Esaminare i prerequisiti](https://docs.microsoft.com/microsoft-365/security/mtp/prerequisites).
-2. [Attiva Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-enable).
-3. [Opt-in per le funzionalità di anteprima](https://docs.microsoft.com/microsoft-365/security/mtp/preview).
+1. [Esaminare i prerequisiti.](https://docs.microsoft.com/microsoft-365/security/mtp/prerequisites)
+2. [Attivare Microsoft 365 Defender.](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-enable)
+3. [Acconsentire esplicitamente alle funzionalità di anteprima.](https://docs.microsoft.com/microsoft-365/security/mtp/preview)
 
 ### <a name="more-information-about-microsoft-365-defender"></a>Ulteriori informazioni su Microsoft 365 Defender
 
 - [Che cos'è Microsoft 365 Defender?](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-threat-protection)
 - [Novità di Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/mtp/whats-new)
 
-## <a name="step-4-configure-microsoft-defender-for-office-365"></a>Passaggio 4: configurare Microsoft Defender per Office 365
+## <a name="step-4-configure-microsoft-defender-for-office-365"></a>Passaggio 4: Configurare Microsoft Defender per Office 365
 
-[Microsoft Defender per office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp) salvaguarda la propria organizzazione dalle minacce dannose nei messaggi di posta elettronica (allegati e URL), nei documenti di Office e negli strumenti di collaborazione. Nella tabella seguente sono elencate le funzionalità e le funzionalità di Microsoft Defender per Office 365 incluse in Microsoft 365 E5:
+[Microsoft Defender per Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp) protegge l'organizzazione dalle minacce dannose nei messaggi di posta elettronica (allegati e URL), nei documenti di Office e negli strumenti di collaborazione. Nella tabella seguente sono elencate le funzionalità e le funzionalità di Microsoft Defender per Office 365 incluse in Microsoft 365 E5:
 
-|Funzionalità di configurazione, protezione e rilevamento|Funzionalità di automazione, analisi, correzione e formazione|
+|Funzionalità di configurazione, protezione e rilevamento|Funzionalità di automazione, analisi, correzione ed istruzione|
 |---|---|
 |[Allegati sicuri](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-safe-attachments)<br/>[Collegamenti sicuri](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-safe-links)<br/>[Sicurezza documenti](https://docs.microsoft.com/microsoft-365/security/office-365-security/safe-docs)<br/>[ATP per SharePoint, OneDrive e Microsoft Teams](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-for-spo-odb-and-teams)<br/>[Anti-phishing in Defender per la protezione di Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-anti-phishing-policies#exclusive-settings-in-atp-anti-phishing-policies)|[Tracker delle minacce](https://docs.microsoft.com/microsoft-365/security/office-365-security/threat-trackers)<br/>[Esplora minacce](https://docs.microsoft.com/microsoft-365/security/office-365-security/threat-explorer)<br/>[Analisi e risposta automatizzate](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air)<br/>[Simulatore di attacchi](https://docs.microsoft.com/microsoft-365/security/office-365-security/attack-simulator)|
 |
 
-Con Microsoft Defender per Office 365, le persone all'interno dell'organizzazione possono comunicare e collaborare in modo più sicuro, con protezione dalle minacce per il contenuto della posta elettronica e i documenti di Office.
+Con Microsoft Defender per Office 365, le persone all'interno dell'organizzazione possono comunicare e collaborare in modo più sicuro, con la protezione dalle minacce per il contenuto della posta elettronica e i documenti di Office.
 
 ### <a name="to-set-up-microsoft-defender-for-office-365"></a>Per configurare Microsoft Defender per Office 365
 
-![Processo per la distribuzione di Microsoft Defender per Office 365](../media/solutions-architecture-center/deploy-office365-atp-steps.png) 
+![Processo di distribuzione di Microsoft Defender per Office 365](../media/solutions-architecture-center/deploy-office365-atp-steps.png) 
 
-1. [Impostare e configurare i criteri di Microsoft Defender per Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats).
-2. [Visualizzare e usare i report di Microsoft Defender per Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/view-reports-for-atp).
-3. [Utilizzare le funzionalità di analisi e risposta alle minacce](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-ti).
+1. [Configurare i criteri di Microsoft Defender per Office 365.](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats)
+2. [Visualizzare e usare i report di Microsoft Defender per Office 365.](https://docs.microsoft.com/microsoft-365/security/office-365-security/view-reports-for-atp)
+3. [Usare le funzionalità di analisi e risposta alle minacce.](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-ti)
 
 ### <a name="more-information-about-microsoft-defender-for-office-365"></a>Ulteriori informazioni su Microsoft Defender per Office 365
 
 - [Panoramica di Microsoft Defender per Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)
 - [Novità di Microsoft Defender per Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/whats-new-in-office-365-atp)
 
-## <a name="step-5-configure-microsoft-defender-for-endpoint"></a>Passaggio 5: configurare Microsoft Defender per endpoint
+## <a name="step-5-configure-microsoft-defender-for-endpoint"></a>Passaggio 5: Configurare Microsoft Defender per l'endpoint
 
-[Microsoft Defender per endpoint](https://docs.microsoft.com/windows/security/threat-protection) protegge i dispositivi delle organizzazioni (definiti anche endpoint) da Cyberthreats, attacchi avanzati e violazioni dei dati. I team di sicurezza possono essere più efficienti nella gestione della sicurezza degli endpoint. Gli strumenti robusti aiutano le organizzazioni a tenere il passo con i sistemi non inviati usando il rilevamento delle vulnerabilità con la [gestione di minacce e vulnerabilità](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt). Le funzionalità di rilevamento e correzione automatizzate, ad esempio la [riduzione della superficie di attacco](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/overview-attack-surface-reduction), la protezione di [prossima generazione](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10), il [rilevamento e la risposta degli endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/overview-endpoint-detection-response)e l' [analisi e la correzione automatizzate](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations) consentono di mantenere i dispositivi sicuri da malware. Oltre a queste funzionalità, i clienti possono ottenere notifiche proattive e consultarsi con gli esperti di Microsoft Threat su richiesta, come parte del servizio di caccia gestito con consenso esplicito. 
+[Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection) protegge i dispositivi delle organizzazioni (denominati anche endpoint) da minacce informatiche, attacchi avanzati e violazioni dei dati. I team di sicurezza possono essere più efficienti nella gestione della sicurezza degli endpoint. Strumenti affidabili consentono alle organizzazioni di tenere il passo con i sistemi senza problemi che usano il rilevamento delle vulnerabilità con la gestione delle minacce [e delle vulnerabilità.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt) Le funzionalità di rilevamento e correzione automatizzate, come la riduzione della superficie [](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations) di [attacco,](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/overview-attack-surface-reduction)la protezione di nuova [generazione,](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10)il rilevamento e la risposta degli [endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/overview-endpoint-detection-response)e l'analisi e la correzione automatizzate consentono di proteggere i dispositivi dal malware. Oltre a queste funzionalità, i clienti possono ricevere notifiche proattive e consultarsi con Microsoft Threat Experts su richiesta, come parte del servizio di ricerca gestita con consenso esplicito. 
 
 
-### <a name="set-up-microsoft-defender-for-endpoint"></a>Configurare Microsoft Defender per endpoint
+### <a name="set-up-microsoft-defender-for-endpoint"></a>Configurare Microsoft Defender per Endpoint
 
-![Processo per la distribuzione di Microsoft Defender per endpoint](../media/solutions-architecture-center/deploy-mdatp-steps.png) 
+![Processo per la distribuzione di Microsoft Defender per Endpoint](../media/solutions-architecture-center/deploy-mdatp-steps.png) 
 
-1. [Preparare la distribuzione di Microsoft Defender per endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/deployment-phases).
-2. [Configurare la distribuzione di Microsoft Defender per endpoint](https://docs.microsoft.com/windows/security/threat-protection/micros.oft-defender-atp/production-deployment)
-3. [Onboard to the Microsoft Defender for endpoint Service](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/onboarding).
-4. [Completare le attività amministrative di sicurezza principali](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/tvm-security-recommendation).
+1. [Preparare la distribuzione di Microsoft Defender per endpoint.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/deployment-phases)
+2. [Configurare la distribuzione di Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/micros.oft-defender-atp/production-deployment)
+3. [Eseguire l'onboard nel servizio Microsoft Defender for Endpoint.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/onboarding)
+4. [Completare le principali attività amministrative relative alla sicurezza.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/tvm-security-recommendation)
 
-### <a name="more-information-about-microsoft-defender-for-endpoint"></a>Ulteriori informazioni su Microsoft Defender per endpoint
+### <a name="more-information-about-microsoft-defender-for-endpoint"></a>Altre informazioni su Microsoft Defender per Endpoint
 
-- [Per ulteriori informazioni, vedere Microsoft Defender for endpoint](https://docs.microsoft.com/windows/security/threat-protection).
-- [Provare Microsoft Defender per endpoint Evaluation Lab](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/evaluation-lab).
+- [Altre informazioni su Microsoft Defender per Endpoint.](https://docs.microsoft.com/windows/security/threat-protection)
+- [Prova il lab di valutazione di Microsoft Defender for Endpoint.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/evaluation-lab)
 
-## <a name="step-6-configure-microsoft-cloud-app-security"></a>Passaggio 6: configurare Microsoft cloud app Security
+## <a name="step-6-configure-microsoft-cloud-app-security"></a>Passaggio 6: Configurare Microsoft Cloud App Security
 
-[Microsoft cloud app Security](https://docs.microsoft.com/cloud-app-security) è un broker di sicurezza per l'accesso cloud che supporta la raccolta di log, i connettori API e il proxy inverso. Microsoft cloud app Security offre una vasta visibilità, il controllo dei dati di viaggio e analisi sofisticate per identificare e combattere Cyberthreats in tutti i servizi cloud. Con Microsoft cloud app Security, le operazioni di sicurezza in grado di proteggere le informazioni riservate dell'organizzazione, proteggersi da Cyberthreats e anomalie, individuare e monitorare le app che accedono ai dati dell'organizzazione e contribuire a garantire che le app cloud dell'organizzazione soddisfino i requisiti di conformità.
+[Microsoft Cloud App Security è](https://docs.microsoft.com/cloud-app-security) un Cloud Access Security Broker che supporta la raccolta di log, i connettori API e il proxy inverso. Microsoft Cloud App Security offre visibilità avanzata, controllo sui viaggi dei dati e analisi sofisticate per identificare e contrastare le minacce informatiche in tutti i servizi cloud. Con Microsoft Cloud App Security, le operazioni di sicurezza possono proteggere le informazioni riservate dell'organizzazione, proteggersi da minacce informatiche e anomalie, individuare e monitorare le app che accedono ai dati dell'organizzazione e garantire che le app cloud dell'organizzazione soddisfino i requisiti di conformità.
 
-### <a name="set-up-microsoft-cloud-app-security"></a>Configurare Microsoft cloud app Security
+### <a name="set-up-microsoft-cloud-app-security"></a>Configurare Microsoft Cloud App Security
 
-![Processo per la distribuzione di Microsoft cloud app Security](../media/solutions-architecture-center/deploy-mcas-steps.png) 
+![Processo di distribuzione di Microsoft Cloud App Security](../media/solutions-architecture-center/deploy-mcas-steps.png) 
 
-1. [Configurare il portale e altri requisiti di base](https://docs.microsoft.com/cloud-app-security/general-setup).
-2. [Configurare le app Cloud Discovery](https://docs.microsoft.com/cloud-app-security/set-up-cloud-discovery) e [Connect](https://docs.microsoft.com/cloud-app-security/enable-instant-visibility-protection-and-governance-actions-for-your-apps).
-3. [Distribuire il controllo delle app con accesso condizionale per le app in primo piano](https://docs.microsoft.com/cloud-app-security/proxy-deployment-aad).
-4. [Utilizzare gli strumenti di analisi e i dashboard](https://docs.microsoft.com/cloud-app-security/investigate).
+1. [Configurare il portale e altri requisiti di base.](https://docs.microsoft.com/cloud-app-security/general-setup)
+2. [Configurare l'individuazione cloud](https://docs.microsoft.com/cloud-app-security/set-up-cloud-discovery) e [connettere le app.](https://docs.microsoft.com/cloud-app-security/enable-instant-visibility-protection-and-governance-actions-for-your-apps)
+3. [Distribuire il controllo dell'app con accesso condizionale per le app in primo piano.](https://docs.microsoft.com/cloud-app-security/proxy-deployment-aad)
+4. [Utilizzare gli strumenti di analisi e i dashboard.](https://docs.microsoft.com/cloud-app-security/investigate)
 
 ### <a name="more-information-about-microsoft-cloud-app-security"></a>Ulteriori informazioni su Microsoft Cloud App Security
 
-- [Esaminare nuove caratteristiche e funzionalità](https://docs.microsoft.com/cloud-app-security/release-notes).
-- [Per ulteriori informazioni, vedere Microsoft cloud app Security](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security).
+- [Esaminare le nuove caratteristiche e le nuove funzionalità.](https://docs.microsoft.com/cloud-app-security/release-notes)
+- [Altre informazioni su Microsoft Cloud App Security.](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security)
 
-## <a name="step-7-monitor-status-and-take-actions"></a>Passaggio 7: monitorare lo stato e intraprendere le azioni
+## <a name="step-7-monitor-status-and-take-actions"></a>Passaggio 7: monitorare lo stato ed eseguire azioni
 
-Dopo aver configurato e distribuito i servizi e le funzionalità di protezione dalle minacce, il passaggio successivo consiste nel monitorare i rilevamenti delle minacce e nel prendere le azioni appropriate. Il punto di partenza migliore è Microsoft 365 Security Center ( [https://security.microsoft.com](https://security.microsoft.com) ), in cui è possibile monitorare e gestire la sicurezza tra le identità, i dati, i dispositivi, le app e l'infrastruttura di Microsoft. 
+Dopo aver configurato e distribuito i servizi e le funzionalità di protezione dalle minacce, il passaggio successivo consiste nel monitorare i rilevamenti delle minacce ed eseguire le azioni appropriate. Il punto di partenza migliore è il Centro sicurezza Microsoft 365 ( ), in cui è possibile monitorare e gestire la sicurezza tra [https://security.microsoft.com](https://security.microsoft.com) identità, dati, dispositivi, app e infrastruttura Microsoft. 
 
 ![Centro sicurezza Microsoft 365](../media/solutions-architecture-center/m365-security-center.png)
 
-Microsoft 365 Security Center è stato appositamente progettato per gli amministratori della sicurezza e i team delle operazioni di sicurezza. Nel centro sicurezza Microsoft 365 è possibile:
-- Visualizzazione dell'integrità generale della sicurezza dell'organizzazione con [Punteggio sicuro](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-secure-score).
-- [Monitorare e visualizzare i report](https://docs.microsoft.com/microsoft-365/security/mtp/monitoring-and-reporting) sullo stato delle identità, dei dati, degli strumenti, delle app e dell'infrastruttura.
-- Connettere i punti su avvisi tramite [incidenti](https://docs.microsoft.com/microsoft-365/security/mtp/incident-queue).
-- Utilizzare l' [analisi automatizzata e la correzione](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-autoir) per risolvere le minacce.
-- [Cercare in modo proattivo le minacce](https://docs.microsoft.com/microsoft-365/security/mtp/advanced-hunting-overview), ad esempio i tentativi di intrusioni o le attività di violazione che interessano la posta elettronica, i dati, i dispositivi e le identità.
-- [Comprendere le campagne e le tecniche di attacco più recenti](https://docs.microsoft.com/microsoft-365/security/mtp/latest-attack-campaigns) con Threat Analytics.
+Il Centro sicurezza Microsoft 365 è destinato specificamente agli amministratori della sicurezza e ai team delle operazioni di sicurezza. Nel Centro sicurezza Microsoft 365 è possibile:
+- Visualizzare l'integrità della sicurezza complessiva dell'organizzazione [con Secure Score.](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-secure-score)
+- [Monitorare e visualizzare report](https://docs.microsoft.com/microsoft-365/security/mtp/monitoring-and-reporting) sullo stato di identità, dati, dispositivi, app e infrastruttura.
+- Connettere i punti sugli avvisi tramite [eventi imprevisti.](https://docs.microsoft.com/microsoft-365/security/mtp/incident-queue)
+- Usare [l'analisi e la correzione automatizzate per](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-autoir) affrontare le minacce.
+- [Ricerca proattiva di minacce,](https://docs.microsoft.com/microsoft-365/security/mtp/advanced-hunting-overview)ad esempio tentativi di intrusione o attività di violazione che interessano la posta elettronica, i dati, i dispositivi e le identità.
+- [Comprendere le più recenti campagne di attacco e](https://docs.microsoft.com/microsoft-365/security/mtp/latest-attack-campaigns) le tecniche con l'analisi delle minacce.
 - ... e altro ancora!
 
-### <a name="more-information-about-the-microsoft-365-security-center"></a>Ulteriori informazioni sul centro sicurezza di Microsoft 365
+### <a name="more-information-about-the-microsoft-365-security-center"></a>Ulteriori informazioni sul Centro sicurezza Microsoft 365
 
-- Iniziare [a usare il Centro sicurezza di Microsoft 365](https://docs.microsoft.com/microsoft-365/security/mtp/overview-security-center).
-- [Monitorare e visualizzare i report](https://docs.microsoft.com/microsoft-365/security/mtp/monitoring-and-reporting).
-- [Vedere i portali di sicurezza in Microsoft 365](https://docs.microsoft.com/microsoft-365/security/mtp/portals).
+- [Introduzione al Centro sicurezza Microsoft 365.](https://docs.microsoft.com/microsoft-365/security/mtp/overview-security-center)
+- [Monitorare e visualizzare i report.](https://docs.microsoft.com/microsoft-365/security/mtp/monitoring-and-reporting)
+- [Vedere i portali di sicurezza in Microsoft 365.](https://docs.microsoft.com/microsoft-365/security/mtp/portals)
 
-## <a name="step-8-train-users"></a>Passaggio 8: formazione degli utenti
+## <a name="step-8-train-users"></a>Passaggio 8: formare gli utenti
 
-Formazione gli utenti possono salvare gli utenti e le operazioni di sicurezza del team molto tempo e frustrazione. Gli utenti esperti hanno meno probabilità di aprire allegati o fare clic su collegamenti nei messaggi di posta elettronica discutibili e hanno maggiori probabilità di evitare siti Web sospetti. 
+La formazione degli utenti può consentire agli utenti e al team delle operazioni di sicurezza di risparmiare molto tempo e frustrazione. Gli utenti esperti sono meno propensi ad aprire allegati o a fare clic sui collegamenti in messaggi di posta elettronica discutibili ed è più probabile che evitino siti Web sospetti. 
 
-Il [manuale della campagna](https://go.microsoft.com/fwlink/?linkid=2015598&amp;clcid=0x409) di Harvard Kennedy School Cybersecurity fornisce indicazioni eccellenti sulla creazione di una forte cultura della consapevolezza della sicurezza all'interno dell'organizzazione, tra cui la formazione degli utenti per identificare gli attacchi di phishing. 
+Il manuale della campagna per la [cybersecurity](https://go.microsoft.com/fwlink/?linkid=2015598&amp;clcid=0x409) della scuola Disaffezione Disaffezione offre una guida eccellente per stabilire una forte cultura della sicurezza all'interno dell'organizzazione, inclusa la formazione degli utenti per identificare gli attacchi di phishing. 
 
-Microsoft 365 fornisce le risorse seguenti per informare gli utenti nell'organizzazione:
+Microsoft 365 fornisce le risorse seguenti per informare gli utenti dell'organizzazione:
 
 |Concetti  |Risorse  |
 |---------|---------|
-|Microsoft 365     |[Percorsi di apprendimento personalizzabili](https://docs.microsoft.com/office365/customlearning/) <p>Tali risorse consentono di creare una formazione per gli utenti finali nell'organizzazione        |
-|Sicurezza di Microsoft 365 |[Modulo di apprendimento: proteggere l'organizzazione con sicurezza integrata e intelligente da Microsoft 365](https://docs.microsoft.com/learn/modules/security-with-microsoft-365) <p>Questo modulo consente di descrivere in che modo le funzionalità di sicurezza di Microsoft 365 interagiscono e di articolare i vantaggi di queste funzionalità di sicurezza. |
-|Autenticazione a più fattori     | [Verifica in due passaggi: che cos'è la pagina di verifica aggiuntiva?](https://docs.microsoft.com/azure/active-directory/user-help/multi-factor-authentication-end-user-first-time) <p>Questo articolo aiuta gli utenti finali a capire cosa sia l'autenticazione a più fattori e il motivo per cui viene utilizzato all'interno dell'organizzazione.    |
+|Microsoft 365     |[Percorsi di apprendimento personalizzabili](https://docs.microsoft.com/office365/customlearning/) <p>Queste risorse possono aiutare a mettere insieme la formazione per gli utenti finali nell'organizzazione        |
+|Centro sicurezza Microsoft 365 |[Modulo di apprendimento: Proteggere l'organizzazione con sicurezza intelligente integrata di Microsoft 365](https://docs.microsoft.com/learn/modules/security-with-microsoft-365) <p>Questo modulo consente di descrivere il modo in cui le funzionalità di sicurezza di Microsoft 365 funzionano insieme e di illustrare i vantaggi di queste funzionalità di sicurezza. |
+|Autenticazione a più fattori     | [Verifica in due passaggi: che cos'è la pagina di verifica aggiuntiva?](https://docs.microsoft.com/azure/active-directory/user-help/multi-factor-authentication-end-user-first-time) <p>Questo articolo consente agli utenti finali di comprendere cos'è l'autenticazione a più fattori e perché viene utilizzata nell'organizzazione.    |
 
-Oltre a queste linee guida, Microsoft consiglia agli utenti di eseguire le azioni descritte in questo articolo: [proteggere l'account e i dispositivi da hacker e malware](https://support.office.com/article/066d6216-a56b-4f90-9af3-b3a1e9a327d6.aspx). Queste azioni includono:
-- Utilizzo di password complesse
-- Protezione di dispositivi 
-- Abilitazione delle funzionalità di sicurezza nei PC Windows 10 e Mac (per i dispositivi non gestiti)
+Oltre a queste indicazioni, Microsoft consiglia agli utenti di eseguire le azioni descritte in questo articolo: Proteggere [l'account](https://support.office.com/article/066d6216-a56b-4f90-9af3-b3a1e9a327d6.aspx)e i dispositivi da hacker e malware. Queste azioni includono:
+- Uso di password complesse
+- Protezione dei dispositivi 
+- Abilitazione delle funzionalità di sicurezza nei PC Windows 10 e Mac (per dispositivi non gestiti)
     
-Microsoft consiglia inoltre agli utenti di proteggere gli account di posta elettronica personali adottando le azioni consigliate negli articoli seguenti:
-- [Proteggi il tuo account di posta elettronica di Outlook.com](https://support.microsoft.com/office/help-protect-your-outlook-com-email-account-a4f20fc5-4307-4ece-8231-6d4d4bd8a9ba)
-- [Proteggi l'account di Gmail con la verifica in due passaggi](https://go.microsoft.com/fwlink/?linkid=2015688&amp;clcid=0x409)
+Microsoft consiglia inoltre agli utenti di proteggere i propri account di posta elettronica personali seguendo le azioni consigliate negli articoli seguenti:
+- [Proteggere l'account Outlook.com di posta elettronica](https://support.microsoft.com/office/help-protect-your-outlook-com-email-account-a4f20fc5-4307-4ece-8231-6d4d4bd8a9ba)
+- [Proteggere l'account Gmail con la verifica in due passaggi](https://go.microsoft.com/fwlink/?linkid=2015688&amp;clcid=0x409)

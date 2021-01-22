@@ -1,9 +1,9 @@
 ---
-title: Approvare o rifiutare le azioni in sospeso dopo un'analisi automatizzata
+title: Approvare o rifiutare le azioni in sospeso in seguito a un'indagine automatizzata
 description: Utilizzare il centro notifiche per gestire le azioni relative all’analisi e alla risposta automatizzate
 keywords: azione, centro, autoair, automatizzato, indagine, risposta, correzione
 search.appverid: met150
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -21,14 +21,15 @@ ms.topic: conceptual
 ms.custom: autoir
 ms.reviewer: evaldm, isco
 ms.date: 12/09/2020
-ms.openlocfilehash: b34f4a532571d6215500ab2bec022489fd462d0f
-ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
+ms.technology: m365d
+ms.openlocfilehash: 3776dea4a5a24f4695a5c617325af14f1f03494f
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "49683368"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49930379"
 ---
-# <a name="approve-or-reject-pending-actions-following-an-automated-investigation"></a>Approvare o rifiutare le azioni in sospeso dopo un'analisi automatizzata
+# <a name="approve-or-reject-pending-actions-following-an-automated-investigation"></a>Approvare o rifiutare le azioni in sospeso in seguito a un'indagine automatizzata
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -39,12 +40,12 @@ ms.locfileid: "49683368"
 Quando viene eseguita un’indagine automatizzata, può dare come risultato una o più [azioni di correzione](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-remediation-actions) che richiedono l’approvazione prima di procedere. Ad esempio, potrebbe essere necessario eliminare un gruppo di email o potrebbe essere necessario eliminare un file in quarantena. È importante approvare (o rifiutare) le azioni in sospeso il prima possibile in modo che l’indagine automatizzata possa essere completata nel tempo previsto. 
 
 > [!TIP]
-> Se si pensa che qualcosa è stato perso o erroneamente rilevato dalle funzionalità di analisi e risposta automatizzate in Microsoft 365 Defender, fatecelo sapere! Vedere [How to report false positives/negatives in Automatic Investigation and Response (Air) capabilities in Microsoft 365 Defender](mtp-autoir-report-false-positives-negatives.md).
+> Se ritieni che qualcosa sia stato perso o rilevato in modo errato dalle funzionalità di analisi e risposta automatizzate in Microsoft 365 Defender, contattaci. Vedere Come segnalare falsi positivi/negativi nelle funzionalità di analisi e risposta [automatizzate (AIR) in Microsoft 365 Defender.](mtp-autoir-report-false-positives-negatives.md)
 
-Le azioni in sospeso possono essere esaminate e approvate tramite il [Centro azioni](#review-a-pending-action-in-the-action-center) o la [visualizzazione dettagli analisi](#review-a-pending-action-in-the-investigation-details-view).
+Le azioni in sospeso possono essere esaminate e approvate utilizzando il centro [notifiche](#review-a-pending-action-in-the-action-center) o la [visualizzazione dei dettagli dell'indagine.](#review-a-pending-action-in-the-investigation-details-view)
 
 > [!NOTE]
-> È necessario avere [autorizzazioni appropriate](mtp-action-center.md#required-permissions-for-action-center-tasks) per approvare o rifiutare azioni correttive. Per ulteriori informazioni, vedere [prerequisiti per l'analisi e la risposta automatizzati in Microsoft 365 Defender](mtp-configure-auto-investigation-response.md#prerequisites-for-automated-investigation-and-response-in-microsoft-365-defender).
+> È necessario avere [autorizzazioni appropriate](mtp-action-center.md#required-permissions-for-action-center-tasks) per approvare o rifiutare azioni correttive. Per ulteriori informazioni, vedere [Prerequisiti per l'analisi e la risposta automatizzate in Microsoft 365 Defender.](mtp-configure-auto-investigation-response.md#prerequisites-for-automated-investigation-and-response-in-microsoft-365-defender)
 
 ## <a name="review-a-pending-action-in-the-action-center"></a>Rivedere un'azione in sospeso nel centro notifiche
 
@@ -66,7 +67,31 @@ Le azioni in sospeso possono essere esaminate e approvate tramite il [Centro azi
 
 2. Selezionare un elemento nella lista, quindi scegliere **Approva** o **Rifiuta**.
 
+## <a name="undo-completed-actions"></a>Annullamento delle azioni completate
+
+Se hai determinato che un dispositivo o un file non è una minaccia, puoi annullare le azioni di correzione eseguite, indipendentemente dal fatto che siano state eseguite automaticamente o manualmente. Nella scheda Cronologia del  centro notifiche è possibile annullare una delle azioni seguenti:  
+
+| Origine azione | Azioni supportate |
+|:---|:---|
+| - Indagine automatizzata <br/>- Microsoft Defender Antivirus <br/>- Azioni di risposta manuali | - Isolare il dispositivo <br/>- Limitare l'esecuzione del codice <br/>- Mettere in quarantena un file <br/>- Rimuovere una chiave del Registro di sistema <br/>- Arrestare un servizio <br/>- Disabilitare un driver <br/>- Rimuovere un'attività pianificata |
+
+### <a name="to-undo-a-remediation-action"></a>Per annullare un'azione correttiva
+
+1. Accedere al centro notifiche ( [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) ) e accedere.
+
+2. Nella scheda **Cronologia** selezionare un'azione che si desidera annullare.
+
+3. Nel riquadro sul lato destro dello schermo selezionare **Annulla.**
+
+### <a name="to-remove-a-file-from-quarantine-across-multiple-devices"></a>Per rimuovere un file dalla quarantena su più dispositivi 
+
+1. Accedere al centro notifiche ( [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) ) e accedere.
+
+2. Nella scheda **Cronologia** selezionare un file con il tipo di azione **File quarantena.**
+
+3. Nel riquadro sul lato destro dello schermo, selezionare Applica a X altre istanze del **file,** quindi scegliere **Annulla.**
+
 ## <a name="next-steps"></a>Passaggi successivi
 
 - [Visualizzare i dettagli e i risultati di un'indagine automatizzata](mtp-autoir-results.md)
-- [Gestire i falsi positivi/negativi nelle funzionalità di analisi e risposta automatizzate](mtp-autoir-report-false-positives-negatives.md)
+- [Gestire falsi positivi/negativi nelle funzionalità di analisi e risposta automatizzate](mtp-autoir-report-false-positives-negatives.md)

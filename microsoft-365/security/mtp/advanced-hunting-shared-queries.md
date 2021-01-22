@@ -1,10 +1,10 @@
 ---
-title: Utilizzare le query condivise in Microsoft 365 Defender Advanced Hunting
+title: Usare query condivise nella ricerca avanzata di Microsoft 365 Defender
 description: Avviare subito la ricerca delle minacce con query predefinite e condivise. Condividere le query con il pubblico o la propria organizzazione.
-keywords: caccia avanzata, caccia alle minacce, Cyber Threat Hunting, Microsoft Threat Protection, Microsoft 365, MTP, M365, Search, query, telemetria, rilevamenti personalizzati, schema, kusto, GitHub repo, My Querys, Shared queries
+keywords: ricerca avanzata, ricerca delle minacce, ricerca delle minacce informatiche, protezione dalle minacce Microsoft, Microsoft 365, mtp, m365, ricerca, query, telemetria, rilevamenti personalizzati, schema, kusto, repository github, query, query condivise
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,12 +19,13 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 48da1a3a64926f44582e7872f0b0ee03240409ca
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.technology: m365d
+ms.openlocfilehash: 7dcf446b5e1014d411fc8af08dd15506a2b04e49
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48844081"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49932191"
 ---
 # <a name="use-shared-queries-in-advanced-hunting"></a>Usare le query condivise nella ricerca avanzata
 
@@ -52,8 +53,8 @@ ms.locfileid: "48844081"
    ![Immagine del salvataggio di una query](../../media/advanced-hunting-save-query.png)
 
 4. Selezionare la cartella in cui si vuole salvare la query.
-    - **Query condivise** : query condivise con tutti gli utenti dell'organizzazione
-    - **Query personali** : query accessibili solo all'utente
+    - **Query condivise**: query condivise con tutti gli utenti dell'organizzazione
+    - **Query personali**: query accessibili solo all'utente
     
 5. Selezionare **Salva**. 
 
@@ -65,7 +66,7 @@ ms.locfileid: "48844081"
 2. Selezionare **Elimina** per confermare l'eliminazione. In alternativa, selezionare **Rinomina** e immettere un nuovo nome per la query.
 
 ## <a name="create-a-direct-link-to-a-query"></a>Creare un collegamento diretto a una query
-Per generare un collegamento che apra la query direttamente nell'editor di query di ricerca avanzata, finalizzare la query e selezionare **Condividi collegamento**.
+Per generare un collegamento che apre la query direttamente nell'editor di query di ricerca avanzata, finalizzare la query e selezionare **Condividi collegamento.**
 
 ## <a name="access-queries-in-the-github-repository"></a>Accedere alle query nel repository GitHub  
 I ricercatori della sicurezza Microsoft condividono regolarmente query di ricerca avanzata in un [repository pubblico designato in GitHub](https://aka.ms/hunting-queries). È possibile collaborare a questo repository. Per collaborare, [iscriversi a GitHub gratuitamente](https://github.com/).

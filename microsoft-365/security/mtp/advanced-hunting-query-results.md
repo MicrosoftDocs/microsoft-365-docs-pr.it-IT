@@ -1,10 +1,10 @@
 ---
-title: Utilizzare i risultati della query di ricerca avanzata in Microsoft 365 Defender
-description: Ottenere la maggior parte dei risultati della query restituiti dalla ricerca avanzata in Microsoft 365 Defender
-keywords: caccia avanzata, caccia alle minacce, Cyber Threat Hunting, Microsoft Threat Protection, Microsoft 365, MTP, M365, Search, query, telemetria, rilevamenti personalizzati, schema, kusto, Microsoft 365, Microsoft Threat Protection, visualizzazione, grafico, filtri, drill-down
+title: Utilizzare i risultati delle query di ricerca avanzata in Microsoft 365 Defender
+description: Utilizzare al meglio i risultati delle query restituiti dalla ricerca avanzata in Microsoft 365 Defender
+keywords: ricerca avanzata, ricerca delle minacce, ricerca delle minacce informatiche, microsoft threat protection, Microsoft 365, mtp, m365, ricerca, query, telemetria, rilevamenti personalizzati, schema, kusto, Microsoft 365, Microsoft Threat Protection, visualizzazione, grafico, filtri, drill-down
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,14 +19,15 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: de26989b9092b783a45d27ad2a529720d21169f8
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.technology: m365d
+ms.openlocfilehash: 462ba35f584b45bbfeb0d8a3de3b118ba1c9e17c
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48844129"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49932323"
 ---
-# <a name="work-with-advanced-hunting-query-results"></a>Utilizzare i risultati della query di ricerca avanzata
+# <a name="work-with-advanced-hunting-query-results"></a>Utilizzare i risultati delle query di ricerca avanzata
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -36,46 +37,46 @@ ms.locfileid: "48844129"
 
 [!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
-Anche se è possibile creare query di [ricerca avanzate](advanced-hunting-overview.md) per restituire informazioni molto precise, è inoltre possibile collaborare con i risultati della query per acquisire ulteriore intuizione e studiare specifiche attività e indicatori. Nei risultati delle query è possibile eseguire le operazioni seguenti:
+Anche se è [](advanced-hunting-overview.md) possibile creare query di ricerca avanzata per restituire informazioni molto precise, è anche possibile utilizzare i risultati delle query per ottenere ulteriori informazioni e analizzare attività e indicatori specifici. È possibile eseguire le azioni seguenti sui risultati della query:
 
 - Visualizzare i risultati come tabella o grafico
 - Esportare tabelle e grafici
-- Eseguire il drill-down per informazioni dettagliate sull'entità
+- Eseguire il drill-down per ottenere informazioni dettagliate sulle entità
 - Modificare le query direttamente dai risultati o applicare filtri
 
-## <a name="view-query-results-as-a-table-or-chart"></a>Visualizzare i risultati delle query come tabella o grafico
-Per impostazione predefinita, la ricerca avanzata Visualizza i risultati delle query come dati tabulari. È inoltre possibile visualizzare gli stessi dati di un grafico. Advanced Hunting supporta le visualizzazioni seguenti:
+## <a name="view-query-results-as-a-table-or-chart"></a>Visualizzare i risultati della query come tabella o grafico
+Per impostazione predefinita, la ricerca avanzata visualizza i risultati delle query come dati tabulari. È inoltre possibile visualizzare gli stessi dati di un grafico. Ricerca avanzata supporta le visualizzazioni seguenti:
 
 | Tipo visualizzazione | Descrizione |
 | -- | -- |
 | **tavolo** | Visualizza i risultati della query in formato tabulare |
-| **Istogramma** | Esegue il rendering di una serie di elementi univoci sull'asse x come barre verticali le cui altezze rappresentano valori numerici da un altro campo |
-| **Istogramma in pila** | Esegue il rendering di una serie di elementi univoci sull'asse x come barre verticali sovrapposte, le cui altezze rappresentano valori numerici da uno o più altri campi |
-| **Grafico a torta** | Esegue il rendering di torte sezionali che rappresentano elementi univoci. La dimensione di ogni torta rappresenta valori numerici da un altro campo. |
-| **Grafico ciambella** | Esegue il rendering di archi sezionali che rappresentano elementi univoci. La lunghezza di ogni arco rappresenta valori numerici da un altro campo. |
-| **Grafico a linee** | Traccia i valori numerici per una serie di elementi univoci e connette i valori tracciati |
-| **Grafico a dispersione** | Stampa valori numerici per una serie di elementi univoci |
-| **Grafico ad area** | Traccia i valori numerici per una serie di elementi univoci e riempie le sezioni al di sotto dei valori tracciati. |
+| **Istogramma** | Esegue il rendering di una serie di elementi univoci sull'asse x come barre verticali le cui altezze rappresentano valori numerici di un altro campo |
+| **Istogramma in pila** | Esegue il rendering di una serie di elementi univoci sull'asse x come barre verticali in pila le cui altezze rappresentano valori numerici di uno o più campi |
+| **Grafico a torta** | Esegue il rendering delle torta di sezione che rappresentano elementi univoci. Le dimensioni di ogni torta rappresentano valori numerici di un altro campo. |
+| **Grafico ad anello** | Esegue il rendering degli archi di sezione che rappresentano elementi univoci. La lunghezza di ogni arco rappresenta valori numerici di un altro campo. |
+| **Grafico a linee** | Traccia valori numerici per una serie di elementi univoci e connette i valori tracciati |
+| **Grafico a dispersione** | Traccia valori numerici per una serie di elementi univoci |
+| **Grafico ad area** | Traccia valori numerici per una serie di elementi univoci e riempie le sezioni sotto i valori tracciati |
 
-### <a name="construct-queries-for-effective-charts"></a>Creare query per i grafici effettivi
-Quando si esegue il rendering dei grafici, la ricerca avanzata identifica automaticamente le colonne di interesse e i valori numerici da aggregare. Per ottenere grafici significativi, creare le query per restituire i valori specifici che si desidera visualizzare. Di seguito sono riportate alcune query di esempio e i grafici risultanti.
+### <a name="construct-queries-for-effective-charts"></a>Creare query per grafici efficaci
+Durante il rendering dei grafici, la ricerca avanzata identifica automaticamente le colonne di interesse e i valori numerici da aggregare. Per ottenere grafici significativi, creare le query in modo da restituire i valori specifici che si desidera visualizzare. Ecco alcune query di esempio e i grafici risultanti.
 
-#### <a name="alerts-by-severity"></a>Avvisi per gravità
-Utilizzare l' `summarize` operatore per ottenere un conteggio numerico dei valori che si desidera tracciare. La query seguente utilizza l' `summarize` operatore per ottenere il numero di avvisi per gravità.
+#### <a name="alerts-by-severity"></a>Avvisi in base alla gravità
+Utilizzare `summarize` l'operatore per ottenere un conteggio numerico dei valori che si desidera utilizzare come grafico. La query seguente usa `summarize` l'operatore per ottenere il numero di avvisi in base alla gravità.
 
 ```kusto
 AlertInfo
 | summarize Total = count() by Severity
 ```
-Quando si esegue il rendering dei risultati, in un istogramma viene visualizzato ogni valore di gravità come colonna separata:
+Quando si esegue il rendering dei risultati, un istogramma visualizza ogni valore di gravità come colonna separata:
 
-![Immagine dei risultati della query di ricerca avanzata visualizzati come risultati di query di un grafico a colonne ](../../media/advanced-hunting-column-chart.jpg)
- *per gli avvisi in base alla gravità visualizzati come* istogramma
+![Immagine dei risultati delle query di ricerca avanzata visualizzati come istogramma Risultati della query per gli avvisi in base alla gravità visualizzati ](../../media/advanced-hunting-column-chart.jpg)
+ *come istogramma*
 
-#### <a name="alert-severity-by-operating-system"></a>Severità degli avvisi in base al sistema operativo
-È inoltre possibile utilizzare l' `summarize` operatore per preparare i risultati per la creazione di grafici di valori da più campi. Ad esempio, si potrebbe voler capire in che modo gli avvisi vengono distribuiti tra i sistemi operativi (OS). 
+#### <a name="alert-severity-by-operating-system"></a>Gravità dell'avviso in base al sistema operativo
+È inoltre possibile utilizzare `summarize` l'operatore per preparare i risultati per la creazione di grafici di valori da più campi. Ad esempio, potrebbe essere necessario comprendere in che modo le gravità degli avvisi vengono distribuite nei sistemi operativi. 
 
-La query seguente utilizza un `join` operatore per inserire le informazioni sul sistema operativo dalla `DeviceInfo` tabella e quindi utilizza `summarize` per conteggiare i valori sia nelle `OSPlatform` colonne che in quelle seguenti `Severity` :
+La query seguente utilizza un operatore per estrarre le informazioni sul sistema operativo dalla tabella e quindi utilizza per contare i valori `join` sia nelle colonne che nelle `DeviceInfo` `summarize` `OSPlatform` `Severity` colonne:
 
 ```kusto
 AlertInfo
@@ -83,13 +84,13 @@ AlertInfo
 | join DeviceInfo on DeviceId
 | summarize Count = count() by OSPlatform, Severity 
 ```
-Questi risultati vengono visualizzati in modo ottimale utilizzando un istogramma in pila:
+Questi risultati sono visualizzati meglio usando un istogramma in pila:
 
-![Immagine dei risultati della query di ricerca avanzata visualizzati come risultati di query di un grafico in pila ](../../media/advanced-hunting-stacked-chart.jpg)
- *per gli avvisi del sistema operativo e la gravità visualizzati come un grafico in pila*
+![Immagine dei risultati delle query di ricerca avanzata visualizzati come grafico in pila Risultati della query per gli avvisi in base al sistema operativo e la gravità visualizzati ](../../media/advanced-hunting-stacked-chart.jpg)
+ *come grafico in pila*
 
-#### <a name="phishing-emails-across-top-ten-sender-domains"></a>Messaggi di posta elettronica di phishing tra i primi dieci domini mittente
-Se si ha a che fare con un elenco di valori non finiti, è possibile utilizzare l' `Top` operatore per tracciare solo i valori con la maggior parte delle istanze. Ad esempio, per ottenere i primi dieci domini mittente con la maggior parte dei messaggi di posta elettronica di phishing, utilizzare la query seguente:
+#### <a name="phishing-emails-across-top-ten-sender-domains"></a>Messaggi di posta elettronica di phishing nei primi dieci domini del mittente
+Se hai a che fare con un elenco di valori non finiti, puoi usare l'operatore per creare un grafico solo dei valori con la maggior `Top` parte delle istanze. Ad esempio, per ottenere i primi dieci domini di mittente con il maggior numero di messaggi di posta elettronica di phishing, utilizzare la query seguente:
 
 ```kusto
 EmailEvents
@@ -97,13 +98,13 @@ EmailEvents
 | summarize Count = count() by SenderFromDomain
 | top 10 by Count
 ```
-Utilizzare la visualizzazione grafico a torta per visualizzare in modo efficace la distribuzione nei domini principali:
+Usa la visualizzazione grafico a torta per mostrare in modo efficace la distribuzione nei domini principali:
 
-![Immagine dei risultati della query di ricerca avanzata visualizzati come grafico a torta grafico a torta che ](../../media/advanced-hunting-pie-chart.jpg)
- *Mostra la distribuzione dei messaggi di posta elettronica di phishing nei domini principali del mittente*
+![Immagine dei risultati delle query di ricerca avanzata visualizzati come grafico a torta a torta che mostra la distribuzione dei messaggi di posta elettronica ](../../media/advanced-hunting-pie-chart.jpg)
+ *di phishing nei domini dei mittenti principali*
 
-#### <a name="file-activities-over-time"></a>Attività del file nel tempo
-`summarize`Se si utilizza l'operatore con la `bin()` funzione, è possibile verificare la possibilità di controllare gli eventi che coinvolgono un determinato indicatore nel tempo. La query che segue conta gli eventi che coinvolgono il file `invoice.doc` a intervalli di 30 minuti per visualizzare i picchi nelle attività relative a tale file:
+#### <a name="file-activities-over-time"></a>Attività sui file nel tempo
+Utilizzando `summarize` l'operatore con `bin()` la funzione, è possibile verificare la presenza di eventi che coinvolgono un determinato indicatore nel tempo. La query seguente conta gli eventi che coinvolgono il file a intervalli di 30 minuti per mostrare picchi di attività `invoice.doc` correlati a tale file:
 
 ```kusto
 AppFileEvents
@@ -111,28 +112,28 @@ AppFileEvents
 | where FileName == "invoice.doc"
 | summarize FileCount = count() by bin(Timestamp, 30m)
 ```
-Il grafico a linee sotto evidenzia chiaramente i periodi di tempo con più attività che coinvolgono `invoice.doc` : 
+Il grafico a linee seguente evidenzia chiaramente i periodi di tempo con più attività che `invoice.doc` coinvolgono: 
 
-![Immagine dei risultati della query di ricerca avanzata visualizzati come un grafico a linee del grafico a linee ](../../media/advanced-hunting-line-chart.jpg)
- *che mostra il numero di eventi che coinvolgono un file nel tempo*
+![Immagine dei risultati delle query di ricerca avanzata visualizzati come grafico a linee grafico a linee che mostra il numero di eventi che coinvolgono ](../../media/advanced-hunting-line-chart.jpg)
+ *un file nel tempo*
 
 
 ## <a name="export-tables-and-charts"></a>Esportare tabelle e grafici
-Dopo aver eseguito una query, selezionare **Esporta** per salvare i risultati nel file locale. La visualizzazione scelta determina il modo in cui i risultati vengono esportati:
+Dopo aver eseguito una query, selezionare **Esporta** per salvare i risultati nel file locale. La visualizzazione scelta determina la modalità di esportazione dei risultati:
 
-- **Visualizzazione tabella** : i risultati della query vengono esportati in formato tabulare come cartella di lavoro di Microsoft Excel
-- **Qualsiasi grafico** : i risultati della query vengono esportati come immagine JPEG del grafico di cui è stato eseguito il rendering
+- **Visualizzazione tabella:** i risultati della query vengono esportati in formato tabulare come cartella di lavoro di Microsoft Excel
+- **Qualsiasi grafico:** i risultati della query vengono esportati come immagine JPEG del grafico sottoposto a rendering
 
-## <a name="drill-down-from-query-results"></a>Eseguire il drill-down dai risultati delle query
-Per esaminare rapidamente un record nei risultati della query, selezionare la riga corrispondente per aprire il riquadro **ispeziona record** . Nel riquadro sono disponibili le informazioni seguenti in base al record selezionato:
+## <a name="drill-down-from-query-results"></a>Eseguire il drill-down dai risultati della query
+Per esaminare rapidamente un record nei risultati della query, selezionare la riga corrispondente per aprire il **pannello Inspect record.** Il pannello fornisce le informazioni seguenti in base al record selezionato:
 
-- **Asset** : visualizzazione riepilogata delle risorse principali (cassette postali, dispositivi e utenti) rilevate nel record, arricchite con informazioni disponibili, ad esempio i livelli di rischio e di esposizione
-- **Albero dei processi** : generato per i record con informazioni sul processo e arricchito utilizzando informazioni contestuali disponibili; in generale, le query che restituiscono più colonne possono generare strutture di elaborazione più ricche.
-- **Tutti i dettagli** : tutti i valori delle colonne del record  
+- **Asset:** visualizzazione riepilogata delle risorse principali (cassette postali, dispositivi e utenti) presenti nel record, arricchita con le informazioni disponibili, ad esempio i livelli di rischio e esposizione
+- **Albero dei processi,** generato per i record con informazioni sui processi e arricchito con le informazioni contestuali disponibili; in generale, le query che restituiscono più colonne possono comportare alberi di processo più ricchi.
+- **Tutti i** dettagli, ovvero tutti i valori delle colonne del record  
 
-![Immagine del record selezionato con pannello per l'ispezione del record](../../media/mtp-ah/inspect-record.png)
+![Immagine del record selezionato con un pannello per esaminare il record](../../media/mtp-ah/inspect-record.png)
 
-Per visualizzare ulteriori informazioni su un'entità specifica nei risultati della query, ad esempio un computer, un file, un utente, un indirizzo IP o un URL, selezionare l'identificatore di entità per aprire una pagina del profilo dettagliata per tale entità.
+Per visualizzare ulteriori informazioni su un'entità specifica nei risultati della query, ad esempio un computer, un file, un utente, un indirizzo IP o un URL, selezionare l'identificatore dell'entità per aprire una pagina del profilo dettagliata per tale entità.
 
 ## <a name="tweak-your-queries-from-the-results"></a>Perfezionare le query dai risultati
 Fare clic con il pulsante destro del mouse su un valore nel set di risultati per migliorare rapidamente la query. È possibile usare le opzioni per:
@@ -141,12 +142,12 @@ Fare clic con il pulsante destro del mouse su un valore nel set di risultati per
 - Escludere il valore selezionato dalla query (`!=`)
 - Per aggiungere il valore alla query, è possibile usare gli operatori più avanzati, come `contains`, `starts with` e `ends with` 
 
-![Immagine del set di risultati di ricerca avanzata](../../media/advanced-hunting-results-filter.png)
+![Immagine del set di risultati per la ricerca avanzata](../../media/advanced-hunting-results-filter.png)
 
 ## <a name="filter-the-query-results"></a>Filtrare i risultati della query
 I filtri visualizzati a destra forniscono un riepilogo del set di risultati. Ogni colonna ha una propria sezione in cui sono elencati i valori distinti individuati per quella colonna e il numero di istanze.
 
-Affinare la query selezionando i `+` `-` pulsanti o nei valori che si desidera includere o escludere e quindi selezionando **Esegui query**.
+Perfezionare la query selezionando i pulsanti o i pulsanti sui valori che si desidera includere o escludere e quindi `+` `-` selezionando Esegui **query.**
 
 ![Immagine del filtro di ricerca avanzata](../../media/advanced-hunting-filter.png)
 

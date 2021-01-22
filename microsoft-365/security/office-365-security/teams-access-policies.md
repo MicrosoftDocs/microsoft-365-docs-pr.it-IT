@@ -1,9 +1,9 @@
 ---
-title: Criteri dei team consigliati-Microsoft 365 per Enterprise | Documenti Microsoft
-description: Vengono descritti i criteri per i suggerimenti Microsoft su come proteggere le comunicazioni dei team e l'accesso ai file.
+title: Criteri di Teams consigliati - Microsoft 365 per le aziende | Microsoft Docs
+description: Descrive i criteri per i suggerimenti di Microsoft su come proteggere le comunicazioni di Teams e l'accesso ai file.
 author: MicrosoftHeidi
 manager: serdars
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -18,133 +18,134 @@ ms.collection:
 - M365-security-compliance
 - m365solution-identitydevice
 - m365solution-scenario
-ms.openlocfilehash: fa22d445b0e4517bedd1c04378271e561ecb6703
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.technology: mdo
+ms.openlocfilehash: 7724ef76d905cdbaf48f3122d0df7ef28d0b8385
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49357504"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49931627"
 ---
-# <a name="policy-recommendations-for-securing-teams-chats-groups-and-files"></a>Suggerimenti sui criteri per la protezione di chat, gruppi e file di Team
+# <a name="policy-recommendations-for-securing-teams-chats-groups-and-files"></a>Suggerimenti sui criteri per la protezione di chat, gruppi e file di Teams
 
-In questo articolo viene descritto come implementare i criteri di identità e accesso ai dispositivi consigliati per proteggere le chat, i gruppi e i contenuti di Microsoft teams, ad esempio file e calendari. Queste linee guida si basano sui [criteri comuni di accesso a identità e dispositivi](identity-access-policies.md), con informazioni aggiuntive specifiche per le squadre. Poiché i team si integrano con gli altri prodotti, vedere anche [consigli sui criteri per la protezione di siti e file di SharePoint](sharepoint-file-access-policies.md) e [Suggerimenti per i criteri per la protezione della posta elettronica](secure-email-recommended-policies.md).
+In questo articolo viene descritto come implementare i criteri di identità e accesso ai dispositivi consigliati per proteggere chat, gruppi e contenuti di Microsoft Teams, ad esempio file e calendari. Queste indicazioni si basano sui [criteri comuni di identità](identity-access-policies.md)e accesso ai dispositivi, con informazioni aggiuntive specifiche di Teams. Poiché Teams si integra con gli altri prodotti, vedere anche i suggerimenti per i criteri per proteggere i siti e i file di [SharePoint](sharepoint-file-access-policies.md) e i suggerimenti per i criteri per [la protezione della posta elettronica.](secure-email-recommended-policies.md)
 
-Tali raccomandazioni si basano su tre diversi livelli di sicurezza e protezione per i team che possono essere applicati in base alla granularità delle proprie esigenze: linea di base, sensibile e altamente regolamentata. Per ulteriori informazioni su questi livelli di sicurezza e sui criteri consigliati, fare riferimento a questi suggerimenti nelle [configurazioni di identità e accesso ai dispositivi](microsoft-365-policies-configurations.md).
+Questi consigli si basano su tre diversi livelli di sicurezza e protezione per Teams che possono essere applicati in base alla granularità delle proprie esigenze: di base, sensibili e altamente regolamentati. Ulteriori informazioni su questi livelli di sicurezza e sui criteri consigliati a cui fanno riferimento questi suggerimenti sono disponibili nelle configurazioni di identità [e accesso ai dispositivi.](microsoft-365-policies-configurations.md)
 
-Ulteriori suggerimenti specifici per la distribuzione dei team sono inclusi in questo articolo per coprire specifiche condizioni di autenticazione, ad esempio per gli utenti esterni all'organizzazione. Sarà necessario seguire queste linee guida per un'esperienza di sicurezza completa.
+Ulteriori suggerimenti specifici per la distribuzione di Teams sono inclusi in questo articolo per coprire specifiche circostanze di autenticazione, anche per gli utenti esterni all'organizzazione. Dovrai seguire queste indicazioni per un'esperienza di sicurezza completa.
 
-## <a name="getting-started-with-teams-before-other-dependent-services"></a>Guida introduttiva ai team prima di altri servizi dipendenti
+## <a name="getting-started-with-teams-before-other-dependent-services"></a>Introduzione a Teams prima di altri servizi dipendenti
 
-Non è necessario abilitare i servizi dipendenti per iniziare a utilizzare Microsoft teams. Questi saranno tutti "solo lavoro". Tuttavia, è necessario essere pronti a gestire quanto segue:
+Non è necessario abilitare i servizi dipendenti per iniziare a usare Microsoft Teams. Queste operazioni "funzionano solo". Tuttavia, è necessario essere pronti a gestire quanto segue:
 
 - Gruppi di Microsoft 365
 - Siti del team di SharePoint
 - OneDrive for Business
 - Cassette postali di Exchange
-- Flussi video e piani di pianificazione (se questi servizi sono abilitati)
+- Video in streaming e piani di Planner (se questi servizi sono abilitati)
 
-## <a name="updating-common-policies-to-include-teams"></a>Aggiornamento di criteri comuni per l'inclusione di Team
+## <a name="updating-common-policies-to-include-teams"></a>Aggiornamento dei criteri comuni per includere Teams
 
-Per proteggere la chat, i gruppi e il contenuto nei team, nel diagramma seguente vengono illustrati i criteri da aggiornare dai criteri di identità e accesso ai dispositivi comuni. Affinché ogni criterio venga aggiornato, assicurarsi che i team e i servizi dipendenti siano inclusi nell'assegnazione delle app cloud.
+Per proteggere chat, gruppi e contenuto in Teams, nel diagramma seguente vengono illustrati i criteri da aggiornare dai criteri comuni di identità e accesso ai dispositivi. Per ogni criterio da aggiornare, assicurarsi che Teams e i servizi dipendenti siano inclusi nell'assegnazione delle app cloud.
 
-[![Riepilogo degli aggiornamenti dei criteri per la protezione dell'accesso ai team e ai servizi dipendenti](../../media/microsoft-365-policies-configurations/identity-access-ruleset-teams.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/identity-access-ruleset-teams.png)
+[![Riepilogo degli aggiornamenti dei criteri per la protezione dell'accesso a Teams e ai relativi servizi dipendenti](../../media/microsoft-365-policies-configurations/identity-access-ruleset-teams.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/identity-access-ruleset-teams.png)
 
-[Visualizzazione di una versione più grande di questa immagine](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/identity-access-ruleset-teams.png)
+[Vedere una versione più grande di questa immagine](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/identity-access-ruleset-teams.png)
 
-Questi sono i servizi dipendenti da includere nell'assegnazione delle app cloud per i team:
+Questi sono i servizi dipendenti da includere nell'assegnazione di app cloud per Teams:
 
 - Microsoft Teams
 - SharePoint e OneDrive for Business
 - Exchange Online
 - Skype for Business Online
-- Microsoft Stream (registrazioni di riunioni)
-- Microsoft Planner (attività di pianificazione e pianificazione dei dati)
+- Microsoft Stream (registrazioni delle riunioni)
+- Microsoft Planner (attività di Planner e dati del piano)
 
-In questa tabella sono elencati i criteri che è necessario rivisitare e i collegamenti a ogni criterio nei [criteri di identità e accesso ai dispositivi comuni](identity-access-policies.md), che include il set di criteri più ampio per tutte le applicazioni di Office.
+In questa tabella sono elencati i criteri che devono essere rivisti e i collegamenti a ogni criterio nei criteri comuni di identità e accesso ai [dispositivi,](identity-access-policies.md)che hanno il criterio più ampio impostato per tutte le applicazioni di Office.
 
 |Livello di protezione|Criteri|Ulteriori informazioni per l'implementazione di Teams|
 |---|---|---|
-|**Protezione di base**|[Richiedere l'AMF quando il rischio di accesso è *medio* o *elevato*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Assicurarsi che i team e i servizi dipendenti siano inclusi nell'elenco delle app. I team dispongono di regole di accesso guest e di accesso esterno da prendere in considerazione, per ulteriori informazioni, vedere più avanti in questo articolo.|
-||[Bloccare i client che non supportano l'autenticazione moderna](identity-access-policies.md#block-clients-that-dont-support-modern-authentication)|Includere team e servizi dipendenti nell'assegnazione delle app cloud.|
-||[Gli utenti a rischio elevato devono modificare la password](identity-access-policies.md#high-risk-users-must-change-password)|Costringe gli utenti dei team a modificare la propria password quando si effettua l'accesso se viene rilevata un'attività ad alto rischio per il proprio account. Assicurarsi che i team e i servizi dipendenti siano inclusi nell'elenco delle app.|
-||[Applicare i criteri di protezione dei dati dell'APP](identity-access-policies.md#apply-app-data-protection-policies)|Assicurarsi che i team e i servizi dipendenti siano inclusi nell'elenco delle app. Aggiornare i criteri per ogni piattaforma (iOS, Android, Windows).|
-||[Definire i criteri di conformità del dispositivo](identity-access-policies.md#define-device-compliance-policies)|Includere team e servizi dipendenti in questo criterio.|
-||[Richiedere computer conformi](identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets)|Includere team e servizi dipendenti in questo criterio.|
-|**Sensibili**|[Richiedere l'AMF quando il rischio di accesso è *basso*, *medio* o *alto*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|I team dispongono di regole di accesso guest e di accesso esterno da prendere in considerazione, per ulteriori informazioni, vedere più avanti in questo articolo. Includere team e servizi dipendenti in questo criterio.|
-||[Richiedere PC conformi *e* dispositivi mobili](identity-access-policies.md#require-compliant-pcs-and-mobile-devices)|Includere team e servizi dipendenti in questo criterio.|
-|**Riservatezza elevata**|[Richiede *sempre* l'autenticazione Master](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Indipendentemente dall'identità dell'utente, l'AMF verrà utilizzata dall'organizzazione. Includere team e servizi dipendenti in questo criterio. |
+|**Protezione di base**|[Richiedere l'autenticazione a più fattori quando il rischio di accesso *è medio* o *alto*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Assicurarsi che Teams e i servizi dipendenti siano inclusi nell'elenco delle app. Teams ha anche regole di accesso guest e di accesso esterno da prendere in considerazione. Ulteriori informazioni su queste informazioni saranno più avanti in questo articolo.|
+||[Bloccare i client che non supportano l'autenticazione moderna](identity-access-policies.md#block-clients-that-dont-support-modern-authentication)|Includere Teams e i servizi dipendenti nell'assegnazione delle app cloud.|
+||[Gli utenti a rischio elevato devono modificare la password](identity-access-policies.md#high-risk-users-must-change-password)|Forza gli utenti di Teams a cambiare la password quando a loro volta vengono rilevate attività ad alto rischio per il proprio account. Assicurarsi che Teams e i servizi dipendenti siano inclusi nell'elenco delle app.|
+||[Applicare i criteri di protezione dei dati app](identity-access-policies.md#apply-app-data-protection-policies)|Assicurarsi che Teams e i servizi dipendenti siano inclusi nell'elenco delle app. Aggiorna i criteri per ogni piattaforma (iOS, Android, Windows).|
+||[Definire i criteri di conformità dei dispositivi](identity-access-policies.md#define-device-compliance-policies)|Includere Teams e i servizi dipendenti in questo criterio.|
+||[Richiedere computer conformi](identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets)|Includere Teams e i servizi dipendenti in questo criterio.|
+|**Sensibili**|[Richiedere l'autenticazione a più fattori quando il rischio di accesso è *basso,* *medio* o *alto*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Teams ha anche regole di accesso guest e di accesso esterno da prendere in considerazione. Ulteriori informazioni su queste informazioni saranno più avanti in questo articolo. Includere Teams e i servizi dipendenti in questo criterio.|
+||[Richiedere PC e *dispositivi* mobili conformi](identity-access-policies.md#require-compliant-pcs-and-mobile-devices)|Includere Teams e i servizi dipendenti in questo criterio.|
+|**Riservatezza elevata**|[*Richiedi sempre* L'autenticazione a più fattori](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Indipendentemente dall'identità dell'utente, l'autenticazione a più fattori verrà utilizzata dall'organizzazione. Includere Teams e i servizi dipendenti in questo criterio. |
 |
 
-## <a name="teams-dependent-services-architecture"></a>Architettura dei servizi dipendenti dai team
+## <a name="teams-dependent-services-architecture"></a>Architettura dei servizi dipendenti da Teams
 
-Per informazioni di riferimento, nel diagramma seguente vengono illustrati i team di servizi su cui si basa. Per ulteriori informazioni e altre illustrazioni, vedere [Microsoft Teams and related Productivity Services in microsoft 365 for it Architects](../../solutions/productivity-illustrations.md).
+Per riferimento, il diagramma seguente illustra i servizi su cui si basa Teams. Per altre informazioni e altre illustrazioni, vedere Microsoft Teams e i servizi di produttività [correlati in Microsoft 365 per architetti IT.](../../solutions/productivity-illustrations.md)
 
-[![Diagramma che mostra le dipendenze dei team in SharePoint, OneDrive for business ed Exchange](../../media/microsoft-365-policies-configurations/identity-access-logical-architecture-teams.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/identity-access-logical-architecture-teams.png)
+[![Diagramma che mostra le dipendenze di Teams in SharePoint, OneDrive for Business ed Exchange](../../media/microsoft-365-policies-configurations/identity-access-logical-architecture-teams.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/identity-access-logical-architecture-teams.png)
 
-[Visualizzazione di una versione più grande di questa immagine](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/identity-access-logical-architecture-teams.png)
+[Vedere una versione più grande di questa immagine](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/identity-access-logical-architecture-teams.png)
 
-## <a name="guest-and-external-access-for-teams"></a>Guest e accesso esterno per i team
+## <a name="guest-and-external-access-for-teams"></a>Accesso guest ed esterno per Teams
 
-Microsoft teams definisce quanto segue:
+Microsoft Teams definisce quanto segue:
 
-- **L'accesso Guest** utilizza un account di Azure ad B2B per un ospite o un utente esterno che può essere aggiunto come membro di un team e dispone di tutti gli accessi autorizzati alla comunicazione e alle risorse del team.
+- **L'accesso** guest usa un account B2B di Azure AD per un utente guest o esterno che può essere aggiunto come membro di un team e avere tutte le autorizzazioni di accesso alle comunicazioni e alle risorse del team.
 
-- **L'accesso esterno** è per un utente esterno che non dispone di un account di Azure ad B2B. L'accesso esterno può includere gli inviti e la partecipazione a chiamate, chat e riunioni, ma non include l'appartenenza al team e l'accesso alle risorse del team.
+- **L'accesso** esterno è per un utente esterno che non dispone di un account B2B di Azure AD. L'accesso esterno può includere inviti e partecipazione a chiamate, chat e riunioni, ma non include l'appartenenza al team e l'accesso alle risorse del team.
 
-I criteri di accesso condizionale si applicano solo all'accesso guest nei team perché è presente un account di Azure AD B2B corrispondente.
+I criteri di accesso condizionale si applicano solo all'accesso guest in Teams perché esiste un account B2B di Azure AD corrispondente.
 
 <!--
 In Azure AD, guest and external users are the same. The user type for both of these is Guest. Guest users are B2B users. Microsoft Teams differentiates between guest users and external users in the app. While it's important to understand how each of these are treated in Teams, both types of users are B2B users in Azure AD and the recommended policies for B2B users apply to both.
 
 -->
 
-Per i criteri consigliati per consentire l'accesso per gli utenti guest e esterni con un account di Azure AD B2B, vedere [criteri per consentire l'accesso all'account Guest ed esterno B2B](identity-access-policies-guest-access.md).
+Per i criteri consigliati per consentire l'accesso per utenti guest ed esterni con un account B2B di Azure AD, vedere Criteri per consentire l'accesso [all'account B2B guest ed esterno.](identity-access-policies-guest-access.md)
 
 ### <a name="guest-access-in-teams"></a>Accesso guest in Teams
 
-Oltre ai criteri per gli utenti interni all'azienda o all'organizzazione, gli amministratori possono abilitare l'accesso guest per consentire, a livello di utente, le persone esterne alla propria azienda o all'organizzazione per accedere alle risorse dei team e interagire con gli utenti interni per operazioni quali conversazioni di gruppo, chat e riunioni.
+Oltre ai criteri per gli utenti interni all'azienda o all'organizzazione, gli amministratori possono consentire l'accesso guest per consentire agli utenti esterni all'azienda o all'organizzazione di accedere alle risorse di Teams e interagire con persone interne per attività quali conversazioni di gruppo, chat e riunioni.
 
-Per ulteriori informazioni sull'accesso guest e su come implementarlo, vedere  [Teams Guest Access](https://docs.microsoft.com/microsoftteams/guest-access).
+Per ulteriori informazioni sull'accesso guest e su come implementarlo, vedere Accesso [guest di Teams.](https://docs.microsoft.com/microsoftteams/guest-access)
 
-### <a name="external-access-in-teams"></a>Accesso esterno in teams
+### <a name="external-access-in-teams"></a>Accesso esterno in Teams
 
-L'accesso esterno a volte è confuso con l'accesso guest, quindi è importante essere chiaro che questi due meccanismi di accesso non interno sono in realtà molto diversi.
+L'accesso esterno a volte è confuso con l'accesso guest, quindi è importante essere chiari che questi due meccanismi di accesso non interni sono effettivamente molto diversi.
 
-L'accesso esterno è un modo per gli utenti di teams provenienti da un intero dominio esterno di trovare, chiamare, chattare e impostare riunioni con gli utenti nei team. Gli amministratori dei team configurano l'accesso esterno a livello di organizzazione. Per ulteriori informazioni, vedere [gestire l'accesso esterno in Microsoft teams](https://docs.microsoft.com/microsoftteams/manage-external-access).
+L'accesso esterno consente agli utenti di Teams di un intero dominio esterno di trovare, chiamare, chattare e configurare riunioni con gli utenti in Teams. Gli amministratori di Teams configurano l'accesso esterno a livello di organizzazione. Per ulteriori informazioni, vedere [Gestire l'accesso esterno in Microsoft Teams.](https://docs.microsoft.com/microsoftteams/manage-external-access)
 
-Gli utenti di accessi esterni hanno meno accesso e funzionalità di un utente aggiunto tramite accesso guest. Ad esempio, gli utenti di Access esterni possono chattare con gli utenti interni con i team, ma non possono accedere ai canali, ai file o ad altre risorse del team.
+Gli utenti con accesso esterno hanno meno accesso e funzionalità rispetto a un utente aggiunto tramite accesso guest. Ad esempio, gli utenti con accesso esterno possono chattare con gli utenti interni con Teams, ma non possono accedere a canali, file o altre risorse del team.
 
-L'accesso esterno non utilizza gli account utente di Azure AD B2B e pertanto non utilizza i criteri di accesso condizionale.
+L'accesso esterno non usa gli account utente B2B di Azure AD e pertanto non usa i criteri di accesso condizionale.
 
-## <a name="teams-policies"></a>Criteri per i team
+## <a name="teams-policies"></a>Criteri di Teams
 
-Al di fuori dei criteri comuni sopra elencati, esistono criteri specifici per le squadre che possono e devono essere configurati per gestire diverse funzionalità dei team.
+Al di fuori dei criteri comuni elencati in precedenza, esistono criteri specifici di Teams che possono e devono essere configurati per gestire varie funzionalità di Teams.
 
-### <a name="teams-and-channels-policies"></a>Criteri per team e canali
+### <a name="teams-and-channels-policies"></a>Criteri di Teams e canali
 
-I team e i canali sono due elementi comunemente utilizzati in Microsoft teams e esistono criteri che è possibile applicare per controllare quali utenti possono o non possono eseguire quando si utilizzano Team e canali. Anche se è possibile creare un team globale, se l'organizzazione dispone di 5000 utenti o meno, è probabile che sia utile disporre di team e canali di dimensioni ridotte per scopi specifici, in linea con le proprie esigenze organizzative.
+Teams e canali sono due elementi di uso comune in Microsoft Teams e sono disponibili criteri che è possibile mettere in atto per controllare cosa gli utenti possono o non possono fare quando usano team e canali. Anche se è possibile creare un team globale, se l'organizzazione dispone di 5.000 utenti o meno, è probabile che sia utile avere team e canali più piccoli per scopi specifici, in linea con le esigenze dell'organizzazione.
 
-Se si desidera modificare il criterio predefinito o creare criteri personalizzati, è possibile ottenere ulteriori informazioni sulla gestione dei criteri in questo collegamento: [gestire i criteri per i team in Microsoft teams](https://docs.microsoft.com/microsoftteams/teams-policies).
+È consigliabile modificare i criteri predefiniti o creare criteri personalizzati. Per altre informazioni sulla gestione dei criteri, vedere questo collegamento: Gestire i criteri dei team [in Microsoft Teams.](https://docs.microsoft.com/microsoftteams/teams-policies)
 
 ### <a name="messaging-policies"></a>Criteri di messaggistica
 
-La messaggistica o la chat può anche essere gestita tramite il criterio globale predefinito oppure tramite criteri personalizzati e questo può consentire agli utenti di comunicare tra loro in un modo appropriato per la propria organizzazione. Tali informazioni possono essere esaminate in [Managing Messaging policys in teams](https://docs.microsoft.com/microsoftteams/messaging-policies-in-teams).
+La messaggistica, o chat, può essere gestita anche tramite i criteri globali predefiniti o personalizzati e ciò può aiutare gli utenti a comunicare tra loro in modo appropriato per l'organizzazione. Queste informazioni possono essere esaminate in [Gestione dei criteri di messaggistica in Teams.](https://docs.microsoft.com/microsoftteams/messaging-policies-in-teams)
 
 ### <a name="meeting-policies"></a>Criteri di riunione
 
-Nessuna discussione sui team verrebbe completata senza pianificare e implementare i criteri per le riunioni dei team. Le riunioni sono un componente essenziale dei team, che consente alle persone di soddisfare e presentare formalmente a numerosi utenti contemporaneamente, nonché di condividere contenuti rilevanti per la riunione. L'impostazione dei criteri corretti per l'organizzazione attorno alle riunioni è essenziale.
+Nessuna discussione su Teams sarebbe completa senza la pianificazione e l'implementazione di criteri per le riunioni di Teams. Le riunioni sono un componente essenziale di Teams, che consente alle persone di incontrarsi e presentare formalmente a molti utenti contemporaneamente, nonché di condividere contenuti rilevanti per la riunione. L'impostazione dei criteri per l'organizzazione in base alle riunioni è essenziale.
 
-Per ulteriori informazioni, vedere [Manage meeting Policies in teams](https://docs.microsoft.com/microsoftteams/meeting-policies-in-teams) .
+Per altre [informazioni, vedere Gestire](https://docs.microsoft.com/microsoftteams/meeting-policies-in-teams) i criteri di riunione in Teams.
 
 ### <a name="app-permission-policies"></a>Criteri di autorizzazione delle app
 
-I team consentono inoltre di utilizzare le app in vari punti, ad esempio i canali o le chat personali. Disporre di criteri per l'aggiunta e l'utilizzo delle app e in cui è essenziale mantenere un ambiente ricco di contenuti che sia anche sicuro.
+Teams consente inoltre di usare le app in varie posizioni, ad esempio canali o chat personali. Disporre di criteri per le app che possono essere aggiunte e usate e dove è essenziale per mantenere un ambiente ricco di contenuti, anche sicuro.
 
-Per ulteriori informazioni sui criteri di autorizzazione delle app, vedere [gestire i criteri di autorizzazione delle app in Microsoft teams](https://docs.microsoft.com/microsoftteams/teams-app-permission-policies).
+Per altre informazioni sui criteri di autorizzazione delle app, vedere Gestire i criteri di [autorizzazione delle app in Microsoft Teams.](https://docs.microsoft.com/microsoftteams/teams-app-permission-policies)
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-![Passaggio 4: criteri per le app cloud di Microsoft 365](../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png)
+![Passaggio 4: Criteri per le app cloud di Microsoft 365](../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png)
 
 Configurare i criteri di accesso condizionale per:
 

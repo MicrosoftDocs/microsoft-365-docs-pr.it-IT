@@ -3,7 +3,7 @@ title: Dettagli e risultati di un'indagine automatizzata
 description: Durante e dopo un'indagine automatizzata, è possibile visualizzare i risultati principali
 keywords: automatizzata, indagine, risultati, analizzare, dettagli, correzione, autoair
 search.appverid: met150
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -21,12 +21,13 @@ ms.topic: conceptual
 ms.custom: autoir
 ms.reviewer: evaldm, isco
 ms.date: 09/16/2020
-ms.openlocfilehash: 39f6be70ad7a611f9919bb0529e8c8ed7f9dc339
-ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
+ms.technology: m365d
+ms.openlocfilehash: c050683bb3ed052ae4752ffdee66fe51fb99b88b
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "49683361"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49930367"
 ---
 # <a name="details-and-results-of-an-automated-investigation"></a>Dettagli e risultati di un'indagine automatizzata
 
@@ -36,7 +37,7 @@ ms.locfileid: "49683361"
 **Si applica a:**
 - Microsoft 365 Defender
 
-Quando si verifica un'indagine automatizzata in Microsoft 365 Defender, i dettagli relativi a tali indagini sono disponibili durante e dopo il processo di analisi automatizzato. Se di dispone delle [autorizzazioni necessarie](mtp-action-center.md#required-permissions-for-action-center-tasks), è possibile visualizzare i dettagli in una visualizzazione dei dettagli dell'indagine. La vista dei dettagli dell'indagine consente di avere uno stato aggiornato e la possibilità di approvare eventuali azioni in sospeso. 
+Quando si verifica un'indagine automatizzata in Microsoft 365 Defender, i dettagli su tale indagine sono disponibili durante e dopo il processo di indagine automatizzata. Se di dispone delle [autorizzazioni necessarie](mtp-action-center.md#required-permissions-for-action-center-tasks), è possibile visualizzare i dettagli in una visualizzazione dei dettagli dell'indagine. La vista dei dettagli dell'indagine consente di avere uno stato aggiornato e la possibilità di approvare eventuali azioni in sospeso. 
 
 ![Dettagli indagine](../../media/mtp-air-investdetails.png)
 
@@ -79,7 +80,7 @@ Nella visualizzazione dei dettagli dell'indagine, è possibile vedere le informa
 | Scheda | Descrizione |
 |--------|--------|
 | **Grafico dell'indagine**   | Fornisce una rappresentazione visiva dell'indagine. Descrive le entità ed elenca le minacce rilevate, insieme agli avvisi e alle eventuali azioni ancora in fase di approvazione.<br/>È possibile fare clic su un elemento del grafico per visualizzare ulteriori dettagli. Ad esempio, facendo clic sull'icona **Minacce rilevate** si verrà indirizzati alla scheda **Risultati principali**. |
-| **Avvisi**    | Elenca gli avvisi associati all'indagine. Gli avvisi possono provenire dalle funzionalità di protezione dalle minacce sul computer di un utente, nelle app di Office, nella protezione delle applicazioni cloud e in altre funzionalità di Microsoft 365 Defender.|
+| **Avvisi**    | Elenca gli avvisi associati all'indagine. Gli avvisi possono derivare dalle funzionalità di protezione dalle minacce nel computer di un utente, nelle app di Office, in Cloud App Security e in altre funzionalità di Microsoft 365 Defender.|
 | **Dispositivi** | Elenca i computer inclusi nell'indagine insieme al livello di correzione.|
 | **Risultati principali**  | Elenca i risultati dell'indagine, insieme allo stato e alle azioni eseguite o in sospeso. In questa scheda è possibile approvare le azioni in sospeso per dispositivi e identità.|
 | **Entità**  | Elenca le attività dell'utente, i file, i processi, i servizi, i driver, gli indirizzi IP e i metodi di persistenza associati all'indagine, insieme allo stato e alle azioni eseguite.|
@@ -89,4 +90,4 @@ Nella visualizzazione dei dettagli dell'indagine, è possibile vedere le informa
 ## <a name="next-steps"></a>Passaggi successivi
 
 - [Approvare o rifiutare le azioni relative all'indagine e reazione automatizzate](mtp-autoir-actions.md)
-- [Esaminare le azioni di correzione](mtp-remediation-actions.md)
+- [Esaminare le azioni correttive](mtp-remediation-actions.md)
