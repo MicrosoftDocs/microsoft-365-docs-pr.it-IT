@@ -17,16 +17,16 @@ search.appverid:
 - MET150
 description: Informazioni su come creare un tipo di informazioni sensibili personalizzato con la classificazione basata su Exact Data Match.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 68546f7ad9f4b97f43611d49054200db4fdd4bbd
-ms.sourcegitcommit: 884ac262443c50362d0c3ded961d36d6b15d8b73
+ms.openlocfilehash: f9b905e73fe471cc034eae42726a5a86d91a359a
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49698397"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49928820"
 ---
 # <a name="create-custom-sensitive-information-types-with-exact-data-match-based-classification"></a>Creare tipi di informazioni sensibili personalizzati con classificazione esatta basata su Exact Data Match
 
-I [ tipi di informazioni sensibili personalizzati](custom-sensitive-info-types.md) sono usati per identificare gli elementi sensibili e impedire che vengano condivisi inavvertitamente o in modo inappropriato. È possibile definire un tipo di informazioni sensibile personalizzato basato su:
+I[ tipi di informazioni riservate personalizzati](sensitive-information-type-learn-about.md)vengono usate per identificare gli elementi sensibili in modo che sia possibile impedire la condivisione inavvertita o inappropriata. È possibile definire un tipo di informazioni sensibile personalizzato basato su:
 
 - criteri
 - evidenza di parole chiave, ad esempio *dipendente*,*badge*, o *ID*
@@ -649,7 +649,7 @@ I tipi di informazioni sensibili EDM per gli scenari seguenti sono in fase di sv
 ## <a name="related-articles"></a>Articoli correlati
 
 - [Definizioni delle entità tipo di informazioni riservate](sensitive-information-type-entity-definitions.md)
-- [Tipi di informazioni sensibili personalizzati](custom-sensitive-info-types.md)
+- [Ulteriori informazioni sui tipi di informazioni riservate](sensitive-information-type-learn-about.md)
 - [Panoramica sui criteri di DLP](data-loss-prevention-policies.md)
 - [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security)
 - [New-DlpEdmSchema](https://docs.microsoft.com/powershell/module/exchange/new-dlpedmschema)
