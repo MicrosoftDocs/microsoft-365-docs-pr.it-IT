@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 84acd4fc-6eec-4d00-8bed-568f036ae2af
 description: Informazioni su come verificare il dominio e configurare i record DNS per la posta elettronica, Skype for business online e altri servizi in CloudFlare per Microsoft.
-ms.openlocfilehash: 110bd96c0eecf40ae96efe7055d82a8d12dde607
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+ms.openlocfilehash: 8d5dd7779f07fd42dd230ee33c40849da3519d26
+ms.sourcegitcommit: ba830e85899f247e5a1e117d63e09e4d5b8a8020
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49657961"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49939273"
 ---
 # <a name="create-dns-records-at-cloudflare-for-microsoft"></a>Creare record DNS in CloudFlare per Microsoft
 
@@ -86,12 +86,12 @@ Prima di usare il proprio dominio con Microsoft, è necessario dimostrare di ess
   
 4. Nella pagina **gestione DNS** fare clic su **Aggiungi record** e quindi selezionare i valori della tabella seguente. 
     
-    |**Tipo**|**Name**|**Automatic TTL**|**Content**|
+    | Tipo | Nome | Automatic TTL | Contenuto |
     |:-----|:-----|:-----|:----|
     |TXT  <br/> |@  <br/> |30 minutes  <br/> |MS=ms *XXXXXXXX*  <br/> **Note:** questo è un esempio. Usare il valore specifico di **Indirizzo di destinazione o puntamento** indicato nella tabella.           [Come trovarlo](../get-help-with-domains/information-for-dns-records.md)    |
   
     
-5. Selezionare **Salva**.
+5. Seleziona **Salva**.
   
   
 9. Attendere alcuni minuti prima di continuare, in modo che il record appena creato venga aggiornato in Internet.
@@ -130,13 +130,13 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
   
 4. Nella pagina **gestione DNS** fare clic su **Aggiungi record** e quindi selezionare i valori della tabella seguente. 
     
-    |**Tipo**|**Nome**|**Mail server**|**Priorità**|**TTL**|
+    | Tipo | Nome | Server di posta elettronica | Priority | TTL |
     |:-----|:-----|:-----|:-----|:-----|
     |MX  <br/> |@  <br/> |*\<domain-key\>*  .mail.protection.outlook.com  <br/> **Nota:** Ottenere il proprio  *\<domain-key\>*  account Microsoft 365.   [Come trovarla](../get-help-with-domains/information-for-dns-records.md) |1   <br/> Per altre informazioni sulla priorità, vedere [Informazioni sulla priorità MX](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq). <br/>|30 minuti  <br/> |
    
 
   
-5. Selezionare **Salva**.
+5. Seleziona **Salva**.
   
 9. Se sono presenti altri record MX nella sezione **MX Records**, eliminarli selezionando l'icona **Elimina (X)**. 
   
@@ -159,7 +159,7 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
     Nella pagina **gestione DNS** fare clic su **Aggiungi record** e quindi selezionare i valori della tabella seguente.
     
     
-    |**Tipo**|**Nome**|**Destinazione**|**TTL**|
+    | Tipo | Nome | Destinazione | TTL |
     |:-----|:-----|:-----|:-----|
     |CNAME  <br/> |individuazione automatica  <br/> |autodiscover.outlook.com  <br/> |30 minutes  <br/> |
     |CNAME  <br/> |sip  <br/> |sipdir.online.lync.com  <br/> |30 minutes  <br/> |
@@ -169,9 +169,9 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
     |CNAME  <br/> |msoid  <br/> |clientconfig.microsoftonline-p.net  <br/> |30 minutes  <br/> |
     
   
-5. Selezionare l'icona del **traffico DNS** (cloud arancione) per ignorare i server CloudFlare.
+5. Selezionare l'icona del **traffico DNS** (Change Orange cloud to Grey) per ignorare i server CloudFlare.
   
-6. Selezionare **Salva**.
+6. Seleziona **Salva**.
   
 7. Aggiungere gli altri cinque record CNAME.
 
@@ -192,12 +192,12 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
   
 4. Nella pagina **gestione DNS** fare clic su **Aggiungi record** e quindi selezionare i valori della tabella seguente.  
     
-    |**Tipo**|**Name**|**TTL**|**Content**|
+    | Tipo | Nome | TTL | Contenuto |
     |:-----|:-----|:-----|:-----|
     |TXT  <br/> |@  <br/> |30 minutes  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/> **Nota:** è consigliabile copiare e incollare questa voce, in modo che tutti i caratteri di spaziatura siano corretti.   |
 
  
-5. Selezionare **Salva**.
+5. Seleziona **Salva**.
     
 
   
@@ -217,13 +217,13 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
 
     Nella pagina **gestione DNS** fare clic su **Aggiungi record** e quindi selezionare i valori della prima riga della tabella seguente.
         
-    |**Tipo**|**Service**|**Protocol**|**Name**|**TTL**|**Priorità**|**Peso**|**Porta**|**Target**|
+    | Tipo | Servizio | Protocollo | Nome | TTL | Priority | Peso | Porta | Destinazione |
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
     |SRV|_sip |TLS |Utilizzare il *Domain_name*; ad esempio, contoso.com  |30 minuti | 100|1  |443 |sipfed.online.lync.com  |
     |SRV|_sipfederationtls | TCP|Utilizzare il *Domain_name*; ad esempio, contoso.com   |30 minuti |100 |1  |5061 | sipfed.online.lync.com |
 
   
-5. Selezionare **Salva**.
+5. Seleziona **Salva**.
 
   
 6. Aggiungere l'altro record SRV scegliendo i valori della seconda riga della tabella. 

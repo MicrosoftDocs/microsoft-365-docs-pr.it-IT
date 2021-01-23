@@ -6,10 +6,9 @@ keywords: integrazione, Microsoft Defender, ATP
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
-ms.date: 09/29/2020
+ms.date: 01/21/2021
 audience: ITPro
 ms.topic: article
-ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -18,12 +17,14 @@ ms.collection:
 - M365-security-compliance
 description: Utilizzare Microsoft Defender per Office 365 insieme a Microsoft Defender per endpoint per ottenere informazioni più dettagliate sulle minacce nei confronti dei dispositivi e del contenuto della posta elettronica.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 8cc78e7d674facb371ea98125b6857502031d26e
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 24b81bb4c445c44d7c0228fa1c4440faff642816
+ms.sourcegitcommit: ba830e85899f247e5a1e117d63e09e4d5b8a8020
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49616513"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49939333"
 ---
 # <a name="use-microsoft-defender-for-office-365-together-with-microsoft-defender-for-endpoint"></a>Utilizzare Microsoft Defender per Office 365 insieme a Microsoft Defender per endpoint
 
@@ -61,7 +62,7 @@ L'integrazione di Microsoft Defender per Office 365 con Microsoft Defender per e
 
    ![Explorer nel menu Gestione minacce](../../media/ThreatMgmt-Explorer-nav.png)
 
-3. Nell'angolo in alto a destra dello schermo, scegliere **Defender per le impostazioni dell'endpoint**.
+3. Nell'angolo in alto a destra dello schermo, scegliere **Defender per le impostazioni dell'endpoint (impostazioni MDE)**.
 
 4. Nella finestra di dialogo Microsoft Defender per la connessione all'endpoint, abilitare la **connessione a Microsoft Defender per endpoint**.
 

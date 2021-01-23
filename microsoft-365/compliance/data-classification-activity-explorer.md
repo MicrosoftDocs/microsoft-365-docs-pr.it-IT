@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Esplora attività estende la funzionalità di classificazione dei dati consentendo di visualizzare e filtrare le azioni intraprese dagli utenti sul contenuto etichettato.
-ms.openlocfilehash: 0175f41ca3fbcfc685acf933cc0cd97af6aa61ad
-ms.sourcegitcommit: 5e40c760c1af2a4cc6d85cb782b17f5c979677c5
+ms.openlocfilehash: 6825c00373617011db28fa484f272086f887ea40
+ms.sourcegitcommit: 7ecd10b302b3b3dfa4ba3be3a6986dd3c189fbff
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48379200"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "49921634"
 ---
 # <a name="get-started-with-activity-explorer"></a>Introduzione a Esplora attività
 
@@ -51,6 +51,8 @@ A ogni account che accede e usa la classificazione dei dati deve essere assegnat
 - Office 365 (E5)
 - Componente aggiuntivo Advanced Compliance (E5)
 - Componente aggiuntivo Advanced Threat Intelligence (E5)
+- Protezione delle informazioni e governance di Microsoft 365 E5/A5
+- Conformità di Microsoft 365 E5/A5
 
 ### <a name="permissions"></a>Autorizzazioni
 

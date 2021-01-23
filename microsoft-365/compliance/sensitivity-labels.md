@@ -22,12 +22,12 @@ description: Usare le etichette di riservatezza di Microsoft Information Protect
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 61bb7afedbbafb1272c3dfdbbecd0ede9777effe
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+ms.openlocfilehash: 2a4b66de9996ec0ea7047ca44ae3750a917c4cc2
+ms.sourcegitcommit: 7ecd10b302b3b3dfa4ba3be3a6986dd3c189fbff
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49655578"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "49921680"
 ---
 # <a name="learn-about-sensitivity-labels"></a>Informazioni sulle etichette di riservatezza
 
@@ -42,11 +42,6 @@ Esempio che mostra le etichette di riservatezza disponibili in Excel dalla sched
 ![Etichetta di riservatezza nella barra multifunzione e nella barra di stato di Excel](../media/Sensitivity-label-in-Excel.png)
 
 Per applicare le etichette di riservatezza, gli utenti devono aver eseguito l'accesso con l'account aziendale o dell'istituto di istruzione di Microsoft 365.
-
-> [!NOTE]
-> Per i tenant degli enti pubblici degli Stati Uniti (GCC, GCC-HC e DoD), le etichette di riservatezza sono attualmente supportate solo per lo scanner e il client di etichettatura unificata di Azure Information Protection. 
-> 
-> Per altre informazioni, vedere [Descrizione del servizio Azure Information Protection Premium per gli enti pubblici](https://docs.microsoft.com/enterprise-mobility-security/solutions/ems-aip-premium-govt-service-description).
 
 È possibile usare le etichette di riservatezza per:
   

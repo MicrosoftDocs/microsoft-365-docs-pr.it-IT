@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: d457c4b96e47485eee041b72a1cf24e96a13bf18
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: bddf46e451408e4f17e58cc62186b7cd6cefb382
+ms.sourcegitcommit: ba830e85899f247e5a1e117d63e09e4d5b8a8020
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48430188"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49939285"
 ---
 # <a name="install-intune-company-portal-on-devices"></a>Installare il portale aziendale di Intune nei dispositivi
 
@@ -38,9 +38,7 @@ In questo argomento vengono fornite informazioni su come eseguire le operazioni 
 - Verificare la sincronizzazione attiva tra Intune e Microsoft Store for business 
 
 ## <a name="step-2---assign-company-portal-to-your-users"></a>Passaggio 2: assegnare il portale aziendale agli utenti
-Inviare una richiesta di supporto per le operazioni di Microsoft Managed Desktop tramite il portale di amministrazione di Microsoft Managed Desktop. Nella richiesta di supporto, richiedere che il portale aziendale sia assegnato agli utenti. Microsoft Managed Desktop distribuirà il portale aziendale nel tenant e installerà l'applicazione sui dispositivi Microsoft Managed Desktop nell'organizzazione.
-
-Per ulteriori informazioni su come inviare richieste di supporto con Microsoft Managed Desktop, vedere [supporto di amministrazione per Microsoft Managed Desktop](../working-with-managed-desktop/admin-support.md).
+Dopo la registrazione in Microsoft Managed Desktop, le operazioni di Microsoft Managed Desktop distribuiranno automaticamente il portale aziendale al tenant e installeranno l'applicazione sui dispositivi Microsoft Managed Desktop nell'organizzazione.
 
 ## <a name="step-3---communicate-change-to-your-users"></a>Passaggio 3: comunicare le modifiche agli utenti
 Come amministratore IT per l'organizzazione, è importante consentire agli utenti di sapere come usare il portale aziendale nell'organizzazione. Microsoft Managed Desktop consiglia di:

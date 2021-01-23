@@ -7,7 +7,6 @@ author: chrisda
 manager: dansimp
 audience: ITPro
 ms.topic: how-to
-ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -19,12 +18,14 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Gli amministratori possono imparare a usare Attack Simulator per eseguire attacchi simulati di phishing e password nelle organizzazioni di Microsoft 365 E5 o Microsoft Defender per Office 365 piano 2.
-ms.openlocfilehash: f07cbbdac5d9b988301e9dfc3cb4446f7b44fca6
-ms.sourcegitcommit: df58fd8ebe14ca98fc1be84dbfb9c29ef7ab1d62
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: a9abca803c21baa7fcb5f0ab7b3d4c497c4473b8
+ms.sourcegitcommit: ba830e85899f247e5a1e117d63e09e4d5b8a8020
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49871098"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49939321"
 ---
 # <a name="attack-simulator-in-microsoft-defender-for-office-365"></a>Simulatore di attacco in Microsoft Defender per Office 365
 
@@ -155,7 +156,8 @@ Se si intende utilizzare uno dei modelli incorporati o creare il messaggio di po
 
    - Fare clic su **Usa modello** e selezionare un modello di posta elettronica incorporato o personalizzato. Dopo aver selezionato il modello, la casella **nome** viene riempita automaticamente in base al modello, ma è possibile modificarne il nome.
 
-   ![Pagina iniziale di phishing](../../media/5e93b3cc-5981-462f-8b45-bdf85d97f1b8.jpg)
+   > [!div class="mx-imgBorder"]
+   > ![Pagina iniziale di phishing](../../media/5e93b3cc-5981-462f-8b45-bdf85d97f1b8.jpg)
 
    Al termine dell'operazione, fare clic su **Avanti**.
 
@@ -218,7 +220,8 @@ Se si intende utilizzare uno dei modelli incorporati o creare il messaggio di po
 
    Per le campagne di **phishing (allegato)** , è necessario rimuovere il collegamento dal corpo del messaggio (in caso contrario, il messaggio conterrà sia un collegamento **che** un allegato e i collegamenti non vengono registrati in una campagna di allegato).
 
-   ![Comporre il corpo della posta elettronica](../../media/9bd65af4-1f9d-45c1-8c06-796d7ccfd425.jpg)
+   > [!div class="mx-imgBorder"]
+   > ![Comporre il corpo della posta elettronica](../../media/9bd65af4-1f9d-45c1-8c06-796d7ccfd425.jpg)
 
    Al termine dell'operazione, fare clic su **Avanti**.
 
