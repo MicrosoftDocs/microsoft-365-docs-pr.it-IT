@@ -19,10 +19,10 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 97af2932-0868-4ccf-8f6b-21a94946c58a
-description: Informazioni su come gestire i messaggi del centro messaggi per facilitare la gestione delle modifiche.
+description: Informazioni su come gestire i messaggi del Centro messaggi per agevolare la gestione delle modifiche.
 ms.openlocfilehash: 42dc00a1347f5455f2d607da9f2677c58ace34e9
 ms.sourcegitcommit: a76de3d1604d755b29053e7bf557c0008be6ad23
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 01/08/2021
 ms.locfileid: "49787764"
@@ -33,71 +33,71 @@ I post del Centro messaggi sono annunci importanti sulle caratteristiche nuove e
   
 ## <a name="read-a-message"></a>Leggere un messaggio
 
-Per accedere al centro messaggi, accedere all'interfaccia di [Amministrazione](https://go.microsoft.com/fwlink/p/?linkid=2024339)e selezionare   >  **centro messaggi** di integrità. 
+Per passare al Centro messaggi, accedere all'[interfaccia di amministrazione](https://go.microsoft.com/fwlink/p/?linkid=2024339) e selezionare **Integrità** > **Centro messaggi**. 
 
-Selezionare un titolo del messaggio per aprirlo nel riquadro di lettura. Ogni messaggio contiene un riepilogo della modifica, una dichiarazione del modo in cui la modifica può influire sull'utente, informazioni su come preparare la propria organizzazione per la modifica e, nella maggior parte dei casi, un collegamento di informazioni aggiuntive in cui è possibile ottenere ulteriori dettagli. Le informazioni aggiuntive continuano a essere disponibili anche dopo la scadenza di un messaggio.
+Selezionare il titolo di un messaggio per aprirlo nel riquadro di lettura. Ogni messaggio contiene un riepilogo della modifica, la descrizione del possibile impatto, informazioni su come preparare l'organizzazione per la modifica e, nella maggior parte dei casi, un collegamento a informazioni aggiuntive. Le informazioni aggiuntive continuano a essere disponibili anche dopo la scadenza di un messaggio.
 
 ## <a name="filter-and-sort"></a>Filtrare e ordinare
 
 ::: moniker range="o365-worldwide"
 
-Utilizzare il menu a discesa **filtro** per selezionare una visualizzazione filtrata dei messaggi.
+Usare il menu a discesa **Filtro** per selezionare una visualizzazione filtrata dei messaggi.
 
-È possibile selezionare qualsiasi intestazione di colonna per ordinare i messaggi in ordine crescente o decrescente. Ad esempio, in questa immagine i messaggi sono ordinati in base alla data **Intervento entro**.
+È possibile selezionare qualsiasi intestazione di colonna per ordinare i messaggi in ordine crescente o decrescente. Ad esempio, in questa immagine i messaggi sono ordinati in base alla data di **Intervento entro**.
 
-![Visualizzazione del centro messaggi ordinata in base alla data di Act by](../../media/message-center-filter-act-by.png)
+![Centro messaggi ordinato in base alla colonna Intervento entro](../../media/message-center-filter-act-by.png)
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-Utilizzare il menu a discesa **visualizzazioni** per selezionare una visualizzazione filtrata dei messaggi. 
+Usare il menu a discesa **Visualizzazioni** per selezionare una visualizzazione filtrata dei messaggi. 
  
-È possibile selezionare qualsiasi intestazione di colonna per ordinare i messaggi in ordine crescente o decrescente. Ad esempio, in questa figura i messaggi sono ordinati in base alla data **di Act by** .
+È possibile selezionare qualsiasi intestazione di colonna per ordinare i messaggi in ordine crescente o decrescente. Ad esempio, in questa illustrazione i messaggi sono ordinati in base alla data di **Intervento entro**.
 
-![Visualizzazione del centro messaggi ordinata in base alla data di Act by](../../media/message-center-old-admin-center1.png)
+![Centro messaggi ordinato in base alla colonna Intervento entro](../../media/message-center-old-admin-center1.png)
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-Utilizzare il menu a discesa **visualizzazioni** per selezionare una visualizzazione filtrata dei messaggi. 
+Usare il menu a discesa **Visualizzazioni** per selezionare una visualizzazione filtrata dei messaggi. 
  
-È possibile selezionare qualsiasi intestazione di colonna per ordinare i messaggi in ordine crescente o decrescente. Ad esempio, in questa figura i messaggi sono ordinati in base alla data **di Act by** .
+È possibile selezionare qualsiasi intestazione di colonna per ordinare i messaggi in ordine crescente o decrescente. Ad esempio, in questa illustrazione i messaggi sono ordinati in base alla data di **Intervento entro**.
 
-![Visualizzazione del centro messaggi ordinata in base alla data di Act by](../../media/message-center-old-admin-center1.png)
+![Centro messaggi ordinato in base alla colonna Intervento entro](../../media/message-center-old-admin-center1.png)
 
 ::: moniker-end
 
-## <a name="give-feedback-on-a-post"></a>Fornire commenti e suggerimenti su un post
+## <a name="give-feedback-on-a-post"></a>Inviare feedback su un post
 
-Nel centro messaggi, è possibile selezionare un messaggio per visualizzare i dettagli.
+Nel Centro messaggi è possibile selezionare un messaggio per visualizzarne i dettagli.
 
-Se si desidera fornire commenti e suggerimenti sul messaggio, selezionare l'icona **like** o **antipatia** e fornire commenti e suggerimenti nella casella di testo visualizzata. Non fornire alcuna informazione personale. Facoltativamente, è possibile selezionare **l'opzione OK per contattare i commenti** e quindi selezionare **Invia**.
+Per fornire feedback sul messaggio, selezionare l'icona **Mi piace** o **Non mi piace** e digitare un commento nella casella di testo visualizzata. Non specificare informazioni personali. Se si vuole, è possibile selezionare **Autorizzo a contattarmi in relazione a questo feedback** e quindi **Invia**.
 
 ## <a name="share-a-message"></a>Condividere un messaggio
 
 Se è presente un messaggio su cui deve agire un altro utente. è possibile condividerne il contenuto con qualsiasi utente tramite posta elettronica:
   
-1. Selezionare il messaggio per aprirlo, quindi selezionare **Condividi**.
+1. Selezionare il messaggio per aprirlo e quindi selezionare **Condividi**.
   
-2. Per condividere il messaggio, immettere fino a due indirizzi di posta elettronica separati da un punto e virgola. È possibile inviare a singoli e raggruppare gli indirizzi di posta elettronica. Facoltativamente, è possibile scegliere di ricevere una copia del messaggio nella posta elettronica (il messaggio passerà all'indirizzo di posta elettronica principale) oppure aggiungere un messaggio personale per fornire ai destinatari un contesto maggiore.
+2. Per condividere il messaggio, immettere fino a due indirizzi di posta elettronica delimitati da due punti. È possibile inviare messaggi a indirizzi di posta elettronica di singoli o di gruppo. Se si vuole, è possibile scegliere di ricevere una copia del messaggio di posta elettronica (il messaggio verrà inviato all'indirizzo di posta elettronica principale) oppure aggiungere un messaggio personale per fornire ulteriore contesto ai destinatari.
   
 3. Selezionare **Condividi** per inviare il messaggio di posta elettronica.
     
-## <a name="get-a-link"></a>URL di collegamento
+## <a name="get-a-link"></a>Ottenere un collegamento
 
-È necessario eseguire il follow-up con un altro amministratore per assicurarsi che siano a conoscenza di una modifica e dell'esecuzione di un'azione? È possibile generare un collegamento da condividere tramite posta elettronica o messaggistica istantanea, ad esempio, che collegherà l'utente direttamente al messaggio. La persona con cui si condivide il collegamento deve essere un amministratore in Microsoft 365 per l'organizzazione o non avrà accesso al messaggio collegato.
+Se è necessario contattare un altro amministratore per verificare che sia informato della modifica e intervenga di conseguenza, è possibile generare un collegamento da condividere ad esempio tramite posta elettronica o messaggistica istantanea, che consentirà all'utente di connettersi direttamente al messaggio. La persona con cui si condivide il collegamento deve essere un amministratore in Microsoft 365 per l'organizzazione; diversamente non avrà accesso al messaggio collegato.
 
 ::: moniker range="o365-worldwide"
 
 1. Selezionare il messaggio per aprirlo.
 
-2. Selezionare l'icona **copia collegamento all'appunti** (collegamento).
+2. Selezionare l'icona (collegamento) **Copia collegamento negli Appunti**.
 
 3. Consentire alla pagina Web di accedere agli Appunti. Un collegamento diretto viene copiato negli Appunti.
 
-4. Utilizzare CTRL + V oppure fare clic con il pulsante destro del mouse e selezionare **Incolla** per inserire il collegamento.
+4. Premere CTRL+V oppure fare clic con il pulsante destro del mouse e scegliere **Incolla** per inserire il collegamento.
 
 ::: moniker-end
 
@@ -105,11 +105,11 @@ Se è presente un messaggio su cui deve agire un altro utente. è possibile cond
 
 1. Selezionare il messaggio per aprirlo.
 
-2. Scegliere **altro** \> per **ottenere un collegamento** dalla barra delle azioni.
+2. Scegliere **Altro** \> **Ottieni un collegamento** nella barra delle azioni.
 
 3. Consentire alla pagina Web di accedere agli Appunti. Un collegamento diretto viene copiato negli Appunti.
 
-4. Utilizzare CTRL + V oppure fare clic con il pulsante destro del mouse e selezionare **Incolla** per inserire il collegamento.
+4. Premere CTRL+V oppure fare clic con il pulsante destro del mouse e scegliere **Incolla** per inserire il collegamento.
 
 ::: moniker-end
 
@@ -117,23 +117,23 @@ Se è presente un messaggio su cui deve agire un altro utente. è possibile cond
 
 1. Selezionare il messaggio per aprirlo.
 
-2. Scegliere **altro** \> per **ottenere un collegamento** dalla barra delle azioni.
+2. Scegliere **Altro** \> **Ottieni un collegamento** nella barra delle azioni.
 
 3. Consentire alla pagina Web di accedere agli Appunti. Un collegamento diretto viene copiato negli Appunti.
 
-4. Utilizzare CTRL + V oppure fare clic con il pulsante destro del mouse e selezionare **Incolla** per inserire il collegamento.
+4. Premere CTRL+V oppure fare clic con il pulsante destro del mouse e scegliere **Incolla** per inserire il collegamento.
 
 ::: moniker-end
 
 ## <a name="read-and-unread-states"></a>Stati Letto e Da leggere
 
-I messaggi non letti nel Centro messaggi verranno visualizzati in grassetto. Aprendo un messaggio, verrà contrassegnato come letto. È possibile contrassegnare un messaggio come non letto.
+I messaggi non letti nel Centro messaggi verranno visualizzati in grassetto. Aprendo un messaggio, verrà contrassegnato come letto. È possibile contrassegnare un messaggio come da leggere.
 
 ::: moniker range="o365-worldwide"
 
-1. Nella pagina principale del centro messaggi selezionare un messaggio.
+1. Nella pagina principale del Centro messaggi selezionare un messaggio.
 
-2. Selezionare l'icona **Contrassegna come non letto** (busta) nella parte superiore del messaggio.
+2. Selezionare l'icona della busta **Contrassegna come da leggere** nella parte superiore del messaggio.
   
 ::: moniker-end
 
@@ -157,60 +157,60 @@ I messaggi non letti nel Centro messaggi verranno visualizzati in grassetto. Apr
 
 ::: moniker-end
 
-## <a name="archive-and-restore"></a>Archiviazione e ripristino
+## <a name="archive-and-restore"></a>Archiviare e ripristinare
 
-Se viene visualizzato un messaggio che non appartiene all'utente o che si è già agito, è possibile archiviarlo per rimuoverlo dalla visualizzazione centro messaggi. La visualizzazione visualizzata nel centro messaggi è specifica per l'account utente, quindi l'archiviazione dalla visualizzazione non influisce sugli altri amministratori.
+Se viene visualizzato un messaggio che non è di propria competenza o su cui si è già intervenuti, è possibile archiviarlo per escluderlo dalla visualizzazione del Centro messaggi. La visualizzazione mostrata nel Centro messaggi è specifica per l'account utente, di conseguenza l'archiviazione di un messaggio non ha alcun effetto sugli altri amministratori.
 
 ::: moniker range="o365-worldwide"
 
-- Nella pagina principale del centro messaggi selezionare un messaggio e quindi fare clic su **Archivia** sopra l'elenco dei messaggi.
+- Nella pagina principale del Centro messaggi selezionare un messaggio e quindi selezionare **Archivia** sopra l'elenco dei messaggi.
 
-- Aprire il messaggio e quindi fare clic su **Archivia** nella parte inferiore del messaggio.
+- Aprire il messaggio e quindi selezionare **Archivia** nella parte inferiore del messaggio.
 
-È necessario recuperare un messaggio archiviato? Nessun problema.
+È necessario possibile visualizzare nuovamente un messaggio archiviato? Nessun problema.
   
-1. Selezionare la scheda **Archivia messaggi** nella parte superiore del centro messaggi. Viene visualizzato un elenco di messaggi archiviati. 
+1. Selezionare la scheda **Messaggi archiviati** nella parte superiore del Centro messaggi. Viene visualizzato un elenco dei messaggi archiviati. 
 
-2. Selezionare il messaggio, selezionare **Ripristina** e il messaggio viene ripristinato in messaggi attivi.
+2. Selezionare il messaggio e quindi **Ripristina** per visualizzare di nuovo il messaggio tra i messaggi attivi.
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-È possibile archiviare un messaggio in due modi.
+Per archiviare un messaggio, si può procedere in due modi.
   
-- Selezionare la X che viene visualizzata a destra dell'ID del messaggio. Il messaggio viene rimosso dall'elenco. Oppure
+- Selezionare la X a destra dell'ID del messaggio. Il messaggio viene rimosso dall'elenco. Oppure
 
-- Aprire il messaggio e quindi fare clic su **Archivia** nella parte superiore del messaggio.
+- Aprire il messaggio e quindi selezionare **Archivia** in alto nel messaggio.
 
-È necessario recuperare un messaggio respinto? Nessun problema.
+È necessario visualizzare di nuovo un messaggio ignorato? Nessun problema.
   
-1. Selezionare il filtro **Archivia messaggi** dal menu a discesa **visualizzazioni** . Viene visualizzato un elenco di messaggi archiviati.
+1. Selezionare il filtro **Messaggi archiviati** nel menu a discesa **Visualizzazioni**. Viene visualizzato un elenco dei messaggi archiviati.
 
-2. Selezionare **Ripristina** a destra dell'ID del messaggio e il messaggio viene ripristinato in messaggi attivi.
+2. Selezionare **Ripristina** a destra dell'ID del messaggio per visualizzare di nuovo il messaggio nei messaggi attivi.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-È possibile archiviare un messaggio in due modi.
+Per archiviare un messaggio, si può procedere in due modi.
   
-- Selezionare la X che viene visualizzata a destra dell'ID del messaggio. Il messaggio viene rimosso dall'elenco. Oppure
+- Selezionare la X a destra dell'ID del messaggio. Il messaggio viene rimosso dall'elenco. Oppure
 
-- Aprire il messaggio e quindi fare clic su **Archivia** nella parte superiore del messaggio.
+- Aprire il messaggio e quindi selezionare **Archivia** in alto nel messaggio.
 
-È necessario recuperare un messaggio archiviato? Nessun problema.
+È necessario possibile visualizzare nuovamente un messaggio archiviato? Nessun problema.
   
-1. Selezionare il filtro **Archivia messaggi** dal menu a discesa **visualizzazioni** . Viene visualizzato un elenco di messaggi archiviati.
+1. Selezionare il filtro **Messaggi archiviati** nel menu a discesa **Visualizzazioni**. Viene visualizzato un elenco dei messaggi archiviati.
 
-2. Selezionare **Ripristina** a destra dell'ID del messaggio e il messaggio viene ripristinato in messaggi attivi.
+2. Selezionare **Ripristina** a destra dell'ID del messaggio per visualizzare di nuovo il messaggio nei messaggi attivi.
 
 ::: moniker-end
 
 ## <a name="track-your-message-center-tasks-in-planner"></a>Tenere traccia delle attività del Centro messaggi in Planner
 
-Nel Centro messaggi di Microsoft 365 arrivano molte informazioni utili riguardanti le modifiche ai servizi di Microsoft 365. Può essere difficile tenere conto di quali modifiche richiedono operazioni da eseguire, quando e da chi e per tenere conto di ogni attività da completare. Potrebbe anche risultare utile aggiungere note riguardanti un elemento e contrassegnarle per controllarle in un secondo momento. È possibile fare tutto questo e molto altro ancora quando si sincronizzano i messaggi dall'interfaccia di amministrazione di Microsoft 365 a Microsoft Planner. Per ulteriori informazioni, vedere [Track Your Message Center Tasks in Planner](https://docs.microsoft.com/office365/planner/track-message-center-tasks-planner).
+Nel Centro messaggi di Microsoft 365 arrivano molte informazioni utili riguardanti le modifiche ai servizi di Microsoft 365. Può risultare difficile tenere traccia di quali modifiche richiedono di portare a termine le attività, della data di scadenza e dell'autore e monitorarle fino al completamento. Potrebbe anche risultare utile aggiungere note riguardanti un elemento e contrassegnarle per controllarle in un secondo momento. È possibile effettuare tutte queste operazioni e molto altro durante la sincronizzazione dei messaggi dall'interfaccia di amministrazione di Microsoft 365 a Microsoft Planner. Per altre informazioni, vedere [Tenere traccia delle attività del Centro messaggi in Planner](https://docs.microsoft.com/office365/planner/track-message-center-tasks-planner).
 
 
-Per una panoramica del centro messaggi, vedere [Message Center in Microsoft 365](message-center.md). In alternativa, per informazioni su come impostare le preferenze della lingua per abilitare la traduzione automatica per i post del centro messaggi, vedere [Language Translation per i post del centro messaggi](language-translation-for-message-center-posts.md). Se si desidera programmare un modo alternativo per ottenere informazioni sull'integrità del servizio in tempo reale e comunicazioni del centro messaggi, fare riferimento a [Microsoft 365 Service Communications API Overview](https://go.microsoft.com/fwlink/p/?linkid=848507).
+Per una panoramica del Centro messaggi, vedere [Centro messaggi in Microsoft 365](message-center.md). Per informazioni su come impostare le preferenze per la lingua per abilitare la traduzione automatica dei post del Centro messaggi, vedere [Traduzione dei post del Centro messaggi](language-translation-for-message-center-posts.md). Se si cerca un modo alternativo per ottenere informazioni in tempo reale sull'integrità dei servizi e comunicazioni del Centro messaggi, vedere [Panoramica sull'API per le comunicazioni di servizio di Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=848507).
   
