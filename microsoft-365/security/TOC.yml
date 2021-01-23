@@ -241,18 +241,6 @@
                       href: mtp/custom-detections-overview.md
                     - name: Creare e gestire regole di rilevamento
                       href: mtp/custom-detection-rules.md
-            - name: Report
-              items:
-                - name: Monitorare e visualizzare i report
-                  href: mtp/monitoring-and-reporting.md
-                - name: Monitoraggio e creazione di report relativi alle identità
-                  href: mtp/monitor-and-report-identities.md
-                - name: Monitoraggio e creazione di report relativi ai dati
-                  href: mtp/monitor-data.md
-                - name: Monitoraggio e creazione di report relativi ai dispositivi
-                  href: mtp/monitor-devices.md
-                - name: Monitoraggio e creazione di report relativi alle app
-                  href: mtp/monitor-apps.md
         - name: Riferimenti
           items:
             - name: Autorizzazioni e impostazioni
