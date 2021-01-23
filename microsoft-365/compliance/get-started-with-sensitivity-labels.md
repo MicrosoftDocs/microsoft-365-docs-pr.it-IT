@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Pronti per iniziare a implementare le etichette di riservatezza per proteggere i dati dell'organizzazione, ma in dubbio su come iniziare? Leggere alcune guide pratiche utili per iniziare il percorso di implementazione dell'etichettatura.
-ms.openlocfilehash: 36cd6a82363c330688de071d1e09ce8f0bfdd16c
-ms.sourcegitcommit: c0495e224f12c448bfc162ef2e4b33b82f064ac8
+ms.openlocfilehash: 4568fd59734153d2f0fc3cffde21ad8319ddc04b
+ms.sourcegitcommit: 7ecd10b302b3b3dfa4ba3be3a6986dd3c189fbff
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49709560"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "49921612"
 ---
 # <a name="get-started-with-sensitivity-labels"></a>Iniziare a usare le etichette di riservatezza
 
@@ -54,7 +54,7 @@ Procedura di base per la distribuzione e l'applicazione di etichette di riservat
 
 Numerosi abbonamenti diversi supportano le etichette di riservatezza e i requisiti di licenza per gli utenti dipendono dalle funzionalità utilizzate.
 
-Per visualizzare le opzioni di licenza da assegnare agli utenti per trarre vantaggio dalle funzionalità di conformità di Microsoft 365 a partire dal 1° aprile 2020, vedere [Indicazioni per l'assegnazione di licenze di Microsoft 365 per sicurezza e conformità](https://aka.ms/ComplianceSD). Per le etichette di riservatezza, vedere la sezione [Information Protection](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection) e il download del relativo PDF o Excel.
+Per visualizzare le opzioni di licenza da assegnare agli utenti per trarre vantaggio dalle funzionalità di conformità di Microsoft 365, vedere [Indicazioni per l'assegnazione di licenze di Microsoft 365 per sicurezza e conformità](https://aka.ms/ComplianceSD). Per le etichette di riservatezza, vedere la sezione [Information Protection](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection) e il download del relativo PDF o Excel.
 
 ## <a name="permissions-required-to-create-and-manage-sensitivity-labels"></a>Autorizzazioni necessarie per creare e gestire etichette di riservatezza
 
@@ -73,7 +73,7 @@ Una strategia efficace per distribuire etichette di riservatezza per un'organizz
 
 Se si utilizza la tabella presente nella sezione seguente, è consigliabile identificare uno o due scenari principali che corrispondano ai propri requisiti aziendali più rilevanti. Dopo la distribuzione di questi scenari, tornare all'elenco per identificare una o due priorità successive per la distribuzione.
 
-Ulteriori indicazioni generali per la distribuzione sono disponibili nella guida scaricabile di Microsoft 365 sull'accelerazione della distribuzione di Information Protection e della Conformità. Per maggiori informazioni, vedere il post del blog [Guida all'accelerazione della distribuzione di Microsoft Information Protection e della Conformità](https://techcommunity.microsoft.com/t5/microsoft-security-and/microsoft-information-protection-and-compliance-deployment/ba-p/1403493).
+È possibile trovare altre indicazioni generali sulla distribuzione nella guida scaricabile sull'accelerazione della distribuzione della prevenzione della perdita di dei dati e Microsoft Information Protection. Per maggiori informazioni, vedere il post del blog [Guida all'accelerazione della distribuzione di Microsoft 365 Information Protection e della conformità](https://techcommunity.microsoft.com/t5/microsoft-security-and/microsoft-365-information-protection-and-compliance-deployment/ba-p/2076404).
 
 ## <a name="common-scenarios-for-sensitivity-labels"></a>Scenari comuni per le etichette di riservatezza
 
