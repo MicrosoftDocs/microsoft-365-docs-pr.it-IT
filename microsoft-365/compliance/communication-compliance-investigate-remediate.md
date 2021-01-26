@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 61f92b5873497a75fd516900a7b7cd67a5d63b41
-ms.sourcegitcommit: 27cb4591e08f62ba0a08d6dcf224bf2039034fe5
+ms.openlocfilehash: ea96780846507e7fc3edccb28e04055ce79261fa
+ms.sourcegitcommit: c10eb675da725830e9776d2a0566ba3622eb361c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/17/2021
-ms.locfileid: "49883675"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "49980099"
 ---
 # <a name="investigate-and-remediate-communication-compliance-alerts"></a>Esaminare e correggere gli avvisi di conformità delle comunicazioni
 
@@ -33,7 +33,7 @@ Dopo aver configurato i criteri di conformità della comunicazione, si inizierà
 
 Il primo passaggio per esaminare i problemi rilevati dai criteri consiste nell'esaminare gli avvisi di conformità della comunicazione nel centro conformità di Microsoft 365. Sono presenti diverse aree nell'area della soluzione per la conformità delle comunicazioni che consentono di esaminare rapidamente gli avvisi, a seconda del modo in cui si preferisce visualizzare il raggruppamento degli avvisi:
 
-- **Pagina Criteri di conformità della comunicazione**: quando si accede all' [https://compliance.microsoft.com](https://compliance.microsoft.com) utilizzo delle credenziali per un account di amministratore nell'organizzazione Microsoft 365, selezionare **conformità comunicazione** per visualizzare la pagina **criteri** di conformità comunicazione. In questa pagina vengono visualizzati i criteri di conformità della comunicazione configurati per l'organizzazione Microsoft 365 e i collegamenti ai modelli di criteri consigliati. Ogni criterio elencato include il numero di avvisi che devono essere esaminati, i numeri di elementi decrescenti e risolti e lo stato corrente del criterio. Se si seleziona un criterio, vengono visualizzati tutti gli avvisi in sospeso per le corrispondenze al criterio, selezionare un avviso specifico per avviare la pagina dei dettagli del criterio e avviare le azioni di correzione.
+- **Pagina Criteri di conformità della comunicazione**: quando si accede all' [https://compliance.microsoft.com](https://compliance.microsoft.com) utilizzo delle credenziali per un account di amministratore nell'organizzazione Microsoft 365, selezionare **conformità comunicazione** per visualizzare la pagina **criteri** di conformità comunicazione. In questa pagina vengono visualizzati i criteri di conformità della comunicazione configurati per l'organizzazione Microsoft 365 e i collegamenti ai modelli di criteri consigliati. Ogni criterio elencato include il numero di avvisi che devono essere esaminati, i numeri di elementi risolti e decrescenti, lo stato del criterio e la data e l'ora dell'ultima analisi dei criteri. Se si seleziona un criterio, vengono visualizzati tutti gli avvisi in sospeso per le corrispondenze al criterio, selezionare un avviso specifico per avviare la pagina dei dettagli del criterio e avviare le azioni di correzione.
 - **Avvisi**: passare a avvisi di **conformità della comunicazione**  >   per visualizzare gli ultimi 30 giorni di avvisi raggruppati in base alle corrispondenze di criteri. Questa visualizzazione consente di visualizzare rapidamente quali criteri di conformità della comunicazione stanno generando la maggior parte degli avvisi ordinati per gravità. Per avviare le azioni di correzione, selezionare il criterio associato all'avviso per avviare la pagina dei **Dettagli del criterio** . Dalla pagina **dei dettagli del criterio** , è possibile esaminare un riepilogo delle attività nella pagina **Panoramica** , esaminare e agire sui messaggi di avviso nella pagina **in sospeso** oppure esaminare la cronologia degli avvisi chiusi nella pagina **risolta** .
 - **Report**: passare ai   >  **report** di conformità della comunicazione per visualizzare i widget report di conformità comunicazione. Ogni widget fornisce una panoramica delle attività e degli Stati di conformità della comunicazione, tra cui l'accesso a informazioni più approfondite sulle corrispondenze di criteri e le azioni di correzione.
 

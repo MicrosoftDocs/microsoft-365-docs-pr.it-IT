@@ -8,15 +8,17 @@ audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 search.appverid: ''
-ms.collection: enabler-strategic
+ms.collection:
+- enabler-strategic
+- m365initiative-topics
 ROBOTS: NOINDEX, NOFOLLOW
 localization_priority: None
-ms.openlocfilehash: 3e6a0e8e6917b62c1789ebcd689ba7dc1e64e9e0
-ms.sourcegitcommit: 18f95c4b7f74881b4a6ce71ad2ffa78a6ead5584
+ms.openlocfilehash: 03ecae794a0aee3297e305771452a6e5ce70015d
+ms.sourcegitcommit: 162c01dfaa2fdb3225ce4c24964c1065ce22ed5d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/24/2020
-ms.locfileid: "49731380"
+ms.lasthandoff: 01/25/2021
+ms.locfileid: "49975968"
 ---
 # <a name="topic-center-overview-preview"></a>Panoramica del centro argomenti (anteprima)
 

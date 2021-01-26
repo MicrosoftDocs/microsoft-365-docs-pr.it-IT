@@ -8,7 +8,6 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: how-to
-ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -18,12 +17,14 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Gli amministratori possono imparare a usare il portale per gli invii nel centro sicurezza & Compliance per inviare messaggi di posta elettronica sospetti, sospette mail di phishing, posta indesiderata e altre informazioni potenzialmente nocive, URL e file a Microsoft per l'analisi.
-ms.openlocfilehash: 432a245530d7906ae8babbc54176480d36315351
-ms.sourcegitcommit: cc354fd54400be0ff0401f60bbe68ed975b69cda
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 879a13e7c059495e653b79c424b227fe9f35a498
+ms.sourcegitcommit: 162c01dfaa2fdb3225ce4c24964c1065ce22ed5d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "49864949"
+ms.lasthandoff: 01/25/2021
+ms.locfileid: "49976604"
 ---
 # <a name="use-admin-submission-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>Usare l'Invio dell'amministratore per inviare posta indesiderata sospetta, phishing, URL e file a Microsoft
 
@@ -32,7 +33,15 @@ ms.locfileid: "49864949"
 
 In Microsoft 365 organizzazioni con cassette postali in Exchange Online, gli amministratori possono utilizzare il portale degli invii nel centro sicurezza & Compliance per inviare messaggi di posta elettronica, URL e allegati a Microsoft per l'analisi.
 
-Quando si invia un messaggio di posta elettronica, si ottengono informazioni su tutti i criteri che possono aver consentito la posta elettronica in arrivo nel tenant, nonché l'esame degli URL e degli allegati della posta. I criteri che possono aver consentito a un messaggio di posta elettronica includono l'elenco dei mittenti attendibili di un singolo utente e i criteri di livello tenant, ad esempio le regole del flusso di posta di Exchange (note anche come regole di trasporto)
+Quando si invia un messaggio di posta elettronica, si otterrà quanto segue:
+
+1. **Verifica dell'autenticazione della posta elettronica**: informazioni sull'autenticazione del messaggio di posta elettronica superato o meno quando è stato recapitato.
+2. **Hit dei criteri**: informazioni su tutti i criteri che possono aver consentito o bloccato la posta elettronica in arrivo nel tenant, sovrascrivendo i verdetti del filtro di servizio.
+3. **Reputazione payload/detonazione**: esame degli URL e degli allegati del messaggio.
+4. **Analisi del Grader**: recensione condotta dai selezionatori umani per confermare se i messaggi sono dannosi o meno.
+
+> [!IMPORTANT]
+> La reputazione payload/la detonazione e l'analisi del selezionatore non vengono eseguite in tutti i tenant. Le informazioni vengono bloccate all'esterno dell'organizzazione quando i dati non dovrebbero lasciare il limite del tenant ai fini della conformità.
 
 Per altri modi per inviare messaggi di posta elettronica, URL e allegati a Microsoft, vedere [segnalare i messaggi e i file a Microsoft](report-junk-email-messages-to-microsoft.md).
 
@@ -77,7 +86,7 @@ Per altri modi per inviare messaggi di posta elettronica, URL e allegati a Micro
 
 4. Al termine, fare clic sul pulsante **Invia** .
 
-![Esempio di invio di URL](../../media/submission-flyout-email.PNG)
+   ![Esempio di invio di URL](../../media/submission-flyout-email.PNG)
 
 ### <a name="send-a-suspect-url-to-microsoft"></a>Inviare un URL sospetto a Microsoft
 
@@ -91,7 +100,7 @@ Per altri modi per inviare messaggi di posta elettronica, URL e allegati a Micro
 
 3. Al termine, fare clic sul pulsante **Invia** .
 
-![Esempio di invio tramite posta elettronica](../../media/submission-url-flyout.png)
+   ![Esempio di invio tramite posta elettronica](../../media/submission-url-flyout.png)
 
 ### <a name="submit-a-suspected-file-to-microsoft"></a>Inviare un file sospetto a Microsoft
 
@@ -107,7 +116,7 @@ Per altri modi per inviare messaggi di posta elettronica, URL e allegati a Micro
 
 4. Al termine, fare clic sul pulsante **Invia** .
 
-![Esempio di invio degli allegati](../../media/submission-file-flyout.PNG)
+   ![Esempio di invio degli allegati](../../media/submission-file-flyout.PNG)
 
 ## <a name="view-admin-submissions"></a>Visualizzazione di invii di amministratore
 

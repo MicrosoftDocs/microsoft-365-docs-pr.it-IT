@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 84b17b70aa9b95727036e8f1febd4d0adec740a9
-ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
+ms.openlocfilehash: feabf3083b0ff1d182884c66fc2b2fd890275a0a
+ms.sourcegitcommit: 162c01dfaa2fdb3225ce4c24964c1065ce22ed5d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49841223"
+ms.lasthandoff: 01/25/2021
+ms.locfileid: "49976213"
 ---
 # <a name="insider-risk-management-cases"></a>Casi di gestione dei rischi Insider
 
@@ -175,8 +175,7 @@ Per aggiungere un collaboratore a un caso:
 2. Selezionare un caso, quindi selezionare la scheda **Contributors** .
 3. Selezionare **Aggiungi collaboratore**.
 4. Nella finestra di dialogo **Aggiungi collaboratore** , iniziare a digitare il nome dell'utente che si desidera aggiungere, quindi selezionare l'utente dall'elenco degli utenti consigliato. Questo elenco viene generato da Azure Active Directory della sottoscrizione tenant.
-5. Nella finestra di dialogo **Aggiungi collaboratore** selezionare il livello di accesso per il collaboratore. È possibile selezionare **permanente** o **temporanea**.
-6. Selezionare **Aggiungi** per aggiungere l'utente come collaboratore o selezionare **Annulla** Chiudi la finestra di dialogo senza aggiungere l'utente come collaboratore.
+5. Selezionare **Aggiungi** per aggiungere l'utente come collaboratore o selezionare **Annulla** Chiudi la finestra di dialogo senza aggiungere l'utente come collaboratore.
 
 ## <a name="case-actions"></a>Azioni del caso
 

@@ -8,16 +8,18 @@ ms.topic: article
 ms.service: ''
 ms.prod: microsoft-365-enterprise
 search.appverid: ''
-ms.collection: enabler-strategic
+ms.collection:
+- enabler-strategic
+- m365initiative-topics
 localization_priority: None
 ROBOTS: NOINDEX, NOFOLLOW
 description: Informazioni sui ruoli degli utenti nelle esperienze degli argomenti.
-ms.openlocfilehash: ed4d40aa7bb91a85e28aba7ace99edf580c427a5
-ms.sourcegitcommit: 884ac262443c50362d0c3ded961d36d6b15d8b73
+ms.openlocfilehash: b649ea81d8e5b036e9332e9c87b67a951b5905a7
+ms.sourcegitcommit: 162c01dfaa2fdb3225ce4c24964c1065ce22ed5d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49698903"
+ms.lasthandoff: 01/25/2021
+ms.locfileid: "49975694"
 ---
 # <a name="topic-experiences-roles-preview"></a>Ruoli esperienza di argomento (anteprima)
 

@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Gli amministratori possono abilitare il supporto delle etichette di riservatezza per i file Word, Excel e PowerPoint in SharePoint e OneDrive.
-ms.openlocfilehash: 376e0ed2eb6d7fd719cbafcd5bfbf66aaffd93cb
-ms.sourcegitcommit: 9e4b3df05eff94fe1be4ef8618a7ce6f2fca3658
+ms.openlocfilehash: 0b5f17286456a364c6a8b4c5bdb397c5b0263b73
+ms.sourcegitcommit: 162c01dfaa2fdb3225ce4c24964c1065ce22ed5d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/19/2021
-ms.locfileid: "49904011"
+ms.lasthandoff: 01/25/2021
+ms.locfileid: "49975899"
 ---
 # <a name="enable-sensitivity-labels-for-office-files-in-sharepoint-and-onedrive"></a>Abilitare le etichette di riservatezza per i file di Office in SharePoint e OneDrive
 
@@ -101,6 +101,8 @@ Usare l'app OneDrive Sync 19.002.0121.0008 o versione successiva su Windows e la
     - Crittografia che utilizza una chiave locale ("mantenere la propria chiave" o HYOK)
     - Crittografia applicata tramite la crittografia a [chiave doppia](double-key-encryption.md)
     - Crittografia applicata indipendentemente da un'etichetta, ad esempio applicando direttamente un modello di protezione di Rights Management.
+
+- Le etichette configurate per le [altre lingue](create-sensitivity-labels.md#additional-label-settings-with-security--compliance-center-powershell) non sono supportate e visualizzano solo la lingua originale.
 
 - Se si elimina un'etichetta applicata a un documento in SharePoint o OneDrive, anziché rimuovere l'etichetta dal criterio di etichetta applicabile, il documento al momento del download non verrà etichettato o crittografato. Se il documento etichettato è archiviato all'esterno di SharePoint o OneDrive, il documento resta crittografato se l'etichetta viene eliminata. Si noti che, sebbene sia possibile eliminare le etichette durante la fase di testing, è molto raro eliminare un'etichetta in un ambiente di produzione.
 
@@ -257,4 +259,4 @@ Se si dispone di Microsoft 365 multi-Geo, è necessario eseguire questo comando 
 
 Dopo aver abilitato le etichette di riservatezza per i file di Office in SharePoint e OneDrive, considerare l'etichettatura automatica dei file utilizzando i criteri di etichettatura automatica. Per ulteriori informazioni, vedere [applicare automaticamente un'etichetta di riservatezza al contenuto](apply-sensitivity-label-automatically.md).
 
-È necessario condividere i documenti etichettati e crittografati con persone esterne all'organizzazione?  Vedere [condivisione di documenti crittografati con utenti esterni](sensitivity-labels-office-apps.md#sharing-encrypted-documents-with-external-users).
+È necessario condividere i propri documenti etichettati e crittografati con persone esterne all’organizzazione?  Vedere [Condivisione di documenti crittografati con utenti esterni](sensitivity-labels-office-apps.md#sharing-encrypted-documents-with-external-users).

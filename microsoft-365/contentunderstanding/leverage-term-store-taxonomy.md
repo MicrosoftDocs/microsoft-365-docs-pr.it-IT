@@ -7,15 +7,17 @@ audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 search.appverid: ''
-ms.collection: enabler-strategic
+ms.collection:
+- enabler-strategic
+- m365initiative-syntex
 localization_priority: Priority
-description: Sfruttare la tassonomia dell'archivio termini durante la creazione di un estrattore nel modello di analisi dei documenti in Microsoft SharePoint Syntex.
-ms.openlocfilehash: cf396d14a497981389cc336c5efd121f36392181
-ms.sourcegitcommit: c0495e224f12c448bfc162ef2e4b33b82f064ac8
+description: Usare la tassonomia dell'archivio termini durante la creazione di un estrattore nel modello di analisi dei documenti in Microsoft SharePoint Syntex.
+ms.openlocfilehash: aff2df6a96fdfee7380651f68e647019e9485658
+ms.sourcegitcommit: 162c01dfaa2fdb3225ce4c24964c1065ce22ed5d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49709549"
+ms.lasthandoff: 01/25/2021
+ms.locfileid: "49975740"
 ---
 # <a name="leverage-term-store-taxonomy-when-creating-an-extractor"></a>Sfruttare la tassonomia dell'archivio termini durante la creazione di un estrattore
 
@@ -33,13 +35,13 @@ Ad esempio, il modello identifica e classifica tutti i documenti del **Contratto
 
 ## <a name="use-a-managed-metadata-column-in-your-extractor"></a>Usare una colonna metadati gestiti nell'estrattore
 
-I set di termini vengono configurati nell'archivio termini dei servizi metadati gestiti nell'interfaccia di amministrazione di SharePoint. Nell'esempio seguente, il *set di termini* per i [Servizi di contratto](https://docs.microsoft.com/sharepoint/managed-metadata#term-set) è configurato per includere una serie di termini, tra cui *Creativo*.  I dettagli mostrano che il termine ha tre sinonimi (*Progettazione*, *Grafica* e *Topografia*) e i sinonimi devono essere tradotti in *Creativo*. 
+I set di termini vengono configurati nell'archivio termini dei servizi metadati gestiti nell'interfaccia di amministrazione di SharePoint. Nell'esempio seguente, il *set di termini* per i [Servizi di contratto](https://docs.microsoft.com/sharepoint/managed-metadata#term-set) è configurato per includere alcuni termini, tra cui *Creativo*.  I dettagli mostrano che il termine ha tre sinonimi (*Progettazione*, *Grafica* e *Topografia*) e i sinonimi devono essere tradotti in *Creativo*. 
 
    ![Set di termini](../media/content-understanding/term-store.png)</br>
 
 Ci sono diversi motivi per cui è consigliabile usare un sinonimo nel set di termini. Ad esempio, potrebbero esserci termini obsoleti, termini rinominati o variazioni tra i reparti dell'organizzazione per quanto riguarda la denominazione.
 
-Per fare in modo che il campo metadati gestiti sia disponibile quando si crea l'estrazione nel modello, è necessario [aggiungerlo come colonna del sito metadati gestiti](https://support.microsoft.com/office/8fad9e35-a618-4400-b3c7-46f02785d27f). Dopo aver aggiunto la colonna del sito, sarà disponibile per la selezione quando si crea l'estrattore per il modello.
+Per fare in modo che il campo metadati gestiti sia disponibile quando si crea l'estrazione nel modello, è necessario [aggiungerlo come colonna del sito metadati gestiti](https://support.microsoft.com/office/8fad9e35-a618-4400-b3c7-46f02785d27f). Dopo aver aggiunto la colonna del sito, sarà possibile selezionarla quando si crea l'estrattore per il modello.
 
    ![Servizio di contratto](../media/content-understanding/contract-services.png)</br>
 

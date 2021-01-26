@@ -8,15 +8,17 @@ audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 search.appverid: ''
-ms.collection: enabler-strategic
+ms.collection:
+- enabler-strategic
+- m365initiative-topics
 ROBOTS: NOINDEX, NOFOLLOW
 localization_priority: None
-ms.openlocfilehash: b23d01585d9282132d9e55c74bb22bcdc6ca314a
-ms.sourcegitcommit: 884ac262443c50362d0c3ded961d36d6b15d8b73
+ms.openlocfilehash: f7e8406ee7090387d4500f69955330466f28c6c0
+ms.sourcegitcommit: 162c01dfaa2fdb3225ce4c24964c1065ce22ed5d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49698961"
+ms.lasthandoff: 01/25/2021
+ms.locfileid: "49976146"
 ---
 # <a name="restrict-access-to-topics-in-topic-experiences"></a>Limitare l'accesso agli argomenti nelle esperienze di argomento
 

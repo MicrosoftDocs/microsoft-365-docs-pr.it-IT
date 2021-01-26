@@ -1,31 +1,31 @@
 ---
 title: Attributi per i criteri delle barriere informative
-f1.keywords:
-- NOCSH
-ms.author: chrfox
-author: chrfox
+description: Questo articolo è un riferimento per gli attributi degli account utente di Azure Active Directory che è possibile utilizzare per definire i segmenti di barriera delle informazioni.
+ms.author: robmazz
+author: robmazz
 manager: laurawi
-ms.date: 07/08/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 ms.collection:
 - M365-security-compliance
 localization_priority: None
-description: Questo è un articolo di riferimento sugli attributi degli account utente di Azure Active Directory utilizzati per definire i segmenti di barriera delle informazioni.
+f1.keywords:
+- NOCSH
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6b6fb9cbbe5840888114ba99a604d16117ec795d
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: 5e7815dbcfc6129685322a250351276476f8a9e3
+ms.sourcegitcommit: c10eb675da725830e9776d2a0566ba3622eb361c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47307995"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "49980049"
 ---
 # <a name="attributes-for-information-barrier-policies"></a>Attributi per i criteri delle barriere informative
 
-Alcuni attributi in Azure Active Directory possono essere utilizzati per segmentare gli utenti. Una volta definiti i segmenti, tali segmenti possono essere utilizzati come filtri per i criteri di barriera delle informazioni. Ad esempio, è possibile utilizzare **Department** per definire segmenti di utenti per reparto all'interno dell'organizzazione (presupponendo che nessun singolo dipendente funzioni contemporaneamente per due reparti). 
+Alcuni attributi in Azure Active Directory possono essere utilizzati per segmentare gli utenti. Una volta definiti i segmenti, tali segmenti possono essere utilizzati come filtri per i criteri di barriera delle informazioni. Ad esempio, è possibile utilizzare **Department** per definire segmenti di utenti per reparto all'interno dell'organizzazione (presupponendo che nessun singolo dipendente funzioni contemporaneamente per due reparti).
 
 In questo articolo viene descritto come utilizzare gli attributi con barriere informative e viene fornito un elenco degli attributi che è possibile utilizzare. Per ulteriori informazioni sulle barriere informative, vedere le risorse seguenti:
+
 - [Barriere informative](information-barriers.md)
 - [Definire i criteri per le barriere informative in Microsoft Teams](information-barriers-policies.md)
 - [Modificare (o rimuovere) i criteri di barriera delle informazioni](information-barriers-edit-segments-policies.md)
@@ -44,63 +44,58 @@ Gli attributi elencati in questo articolo possono essere utilizzati per definire
 
 3. [Definire i segmenti tramite PowerShell](information-barriers-policies.md#define-segments-using-powershell), analogamente agli esempi seguenti:
 
-    |Esempio  |Cmdlet  |
-    |---------|---------|
-    |Definire un segmento denominato segment1 con l'attributo Department     | `New-OrganizationSegment -Name "Segment1" -UserGroupFilter "Department -eq 'Department1'"`        |
-    |Definire un segmento denominato Segmenta utilizzando l'attributo member (si supponga che questo attributo contenga nomi di gruppo, ad esempio "BlueGroup").     | `New-OrganizationSegment -Name "SegmentA" -UserGroupFilter "MemberOf -eq 'BlueGroup'"`        |
-    |Definire un segmento denominato DayTraders tramite ExtensionAttribute1 (si supponga che questo attributo contenga titoli di lavoro, ad esempio "DayTrader").|`New-OrganizationSegment -Name "DayTraders" -UserGroupFilter "ExtensionAttribute1 -eq 'DayTrader'"` |
+    |**Esempio**|**Cmdlet**|
+    |:----------|:---------|
+    | Definire un segmento denominato segment1 con l'attributo Department | `New-OrganizationSegment -Name "Segment1" -UserGroupFilter "Department -eq 'Department1'"` |
+    | Definire un segmento denominato Segmenta utilizzando l'attributo member (si supponga che questo attributo contenga nomi di gruppo, ad esempio "BlueGroup"). | `New-OrganizationSegment -Name "SegmentA" -UserGroupFilter "MemberOf -eq 'BlueGroup'"` |
+    | Definire un segmento denominato DayTraders tramite ExtensionAttribute1 (si supponga che questo attributo contenga titoli di lavoro, ad esempio "DayTrader"). | `New-OrganizationSegment -Name "DayTraders" -UserGroupFilter "ExtensionAttribute1 -eq 'DayTrader'"` |
 
     > [!TIP]
-    > Quando si definiscono i segmenti, utilizzare lo stesso attributo per tutti i segmenti. Ad esempio, se si definiscono alcuni segmenti utilizzando *Department*, definire tutti i segmenti che utilizzano *Department*. Non definire alcuni segmenti con *Department* e altri utenti che utilizzano *member*. Verificare che i segmenti non siano sovrapposti. ogni utente deve essere assegnato a un solo segmento. 
+    > Quando si definiscono i segmenti, utilizzare lo stesso attributo per tutti i segmenti. Ad esempio, se si definiscono alcuni segmenti utilizzando *Department*, definire tutti i segmenti che utilizzano *Department*. Non definire alcuni segmenti con *Department* e altri utenti che utilizzano *member*. Verificare che i segmenti non siano sovrapposti. ogni utente deve essere assegnato a un solo segmento.
 
 ## <a name="reference"></a>Riferimenti
 
 Nella tabella seguente sono elencati gli attributi che è possibile utilizzare con le barriere informative.
 
-|Nome della proprietà di Azure Active Directory<br/>(Nome visualizzato LDAP)  |Nome della proprietà di Exchange  |
-|---------|---------|
-|Co       | Co        |
-|Company     |Company         |
-|Reparto     |Reparto         |
-|ExtensionAttribute1 |CustomAttribute1  |
-|ExtensionAttribute2 |CustomAttribute2  |
-|ExtensionAttribute3 |CustomAttribute3  |
-|ExtensionAttribute4 |CustomAttribute4  |
-|ExtensionAttribute5 |CustomAttribute5  |
-|ExtensionAttribute6 |CustomAttribute6  |
-|ExtensionAttribute7 |CustomAttribute7  |
-|ExtensionAttribute8 |CustomAttribute8  |
-|ExtensionAttribute9 |CustomAttribute9  |
-|ExtensionAttribute10 |CustomAttribute10  |
-|ExtensionAttribute11 |CustomAttribute11  |
-|ExtensionAttribute12 |CustomAttribute12  |
-|ExtensionAttribute13 |CustomAttribute13  |
-|ExtensionAttribute14 |CustomAttribute14  |
-|ExtensionAttribute15 |CustomAttribute15  |
-|MSExchExtensionCustomAttribute1 |ExtensionCustomAttribute1 |
-|MSExchExtensionCustomAttribute2 |ExtensionCustomAttribute2 |
-|MSExchExtensionCustomAttribute3 |ExtensionCustomAttribute3 |
-|MSExchExtensionCustomAttribute4 |ExtensionCustomAttribute4 |
-|MSExchExtensionCustomAttribute5 |ExtensionCustomAttribute5 |
-|MailNickname |Alias |
-|PhysicalDeliveryOfficeName |Ufficio |
-|PostalCode |PostalCode |
-|ProxyAddresses |EmailAddresses |
-|StreetAddress |StreetAddress |
-|TargetAddress |ExternalEmailAddress |
-|UsageLocation |UsageLocation |
-|UserPrincipalName    |UserPrincipalName    |
-|Posta    |WindowsEmailAddress    |
-|Descrizione    |Descrizione    |
-|MemberOf    |MemberOfGroup    |
+|**Nome della proprietà di Azure Active Directory <br/> (nome visualizzato LDAP)**|**Nome della proprietà di Exchange**|
+|:---------------------------------------------------------------|:-------------------------|
+| Co | Co |
+| Company | Company |
+| Reparto | Reparto |
+| ExtensionAttribute1 | CustomAttribute1 |
+| ExtensionAttribute2 | CustomAttribute2 |
+| ExtensionAttribute3 | CustomAttribute3 |
+| ExtensionAttribute4 | CustomAttribute4 |
+| ExtensionAttribute5 | CustomAttribute5 |
+| ExtensionAttribute6 | CustomAttribute6 |
+| ExtensionAttribute7 | CustomAttribute7 |
+| ExtensionAttribute8 | CustomAttribute8 |
+| ExtensionAttribute9 | CustomAttribute9 |
+| ExtensionAttribute10 | CustomAttribute10 |
+| ExtensionAttribute11 | CustomAttribute11 |
+| ExtensionAttribute12 | CustomAttribute12 |
+| ExtensionAttribute13 | CustomAttribute13 |
+| ExtensionAttribute14 | CustomAttribute14 |
+| ExtensionAttribute15 | CustomAttribute15 |
+| MSExchExtensionCustomAttribute1 | ExtensionCustomAttribute1 |
+| MSExchExtensionCustomAttribute2 | ExtensionCustomAttribute2 |
+| MSExchExtensionCustomAttribute3 | ExtensionCustomAttribute3 |
+| MSExchExtensionCustomAttribute4 | ExtensionCustomAttribute4 |
+| MSExchExtensionCustomAttribute5 | ExtensionCustomAttribute5 |
+| MailNickname | Alias |
+| PhysicalDeliveryOfficeName | Ufficio |
+| PostalCode | PostalCode |
+| ProxyAddresses | EmailAddresses |
+| StreetAddress | StreetAddress |
+| TargetAddress | ExternalEmailAddress |
+| UsageLocation | UsageLocation |
+| UserPrincipalName | UserPrincipalName |
+| Posta | WindowsEmailAddress |
+| Descrizione | Descrizione |
+| MemberOf | MemberOfGroup |
 
-## <a name="related-topics"></a>Argomenti correlati
+## <a name="resources"></a>Risorse
 
-[Definire i criteri per le barriere informative in Microsoft Teams](information-barriers-policies.md)
-
-[Risoluzione dei problemi relativi alle barriere informative](information-barriers-troubleshooting.md)
-
-[Barriere informative](information-barriers.md)
-
-
-
+- [Definire i criteri per le barriere informative in Microsoft Teams](information-barriers-policies.md)
+- [Risoluzione dei problemi relativi alle barriere informative](information-barriers-troubleshooting.md)
+- [Barriere informative](information-barriers.md)

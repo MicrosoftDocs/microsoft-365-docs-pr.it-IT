@@ -8,16 +8,18 @@ ms.topic: article
 ms.service: ''
 ms.prod: microsoft-365-enterprise
 search.appverid: ''
-ms.collection: enabler-strategic
+ms.collection:
+- enabler-strategic
+- m365initiative-topics
 localization_priority: None
 ROBOTS: NOINDEX, NOFOLLOW
 description: Panoramica delle esperienze degli argomenti.
-ms.openlocfilehash: 8b06dd016295c8b0712a7c18c2296a318cd826ba
-ms.sourcegitcommit: 18f95c4b7f74881b4a6ce71ad2ffa78a6ead5584
+ms.openlocfilehash: decc1a3aa5535b4d8bc97dc7d6b010eedd395741
+ms.sourcegitcommit: 162c01dfaa2fdb3225ce4c24964c1065ce22ed5d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/24/2020
-ms.locfileid: "49731324"
+ms.lasthandoff: 01/25/2021
+ms.locfileid: "49976592"
 ---
 # <a name="topic-experiences-overview-preview"></a>Panoramica delle esperienze degli argomenti (anteprima)
 

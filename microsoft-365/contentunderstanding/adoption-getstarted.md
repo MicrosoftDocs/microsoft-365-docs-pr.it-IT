@@ -8,16 +8,18 @@ ms.date: 7/20/2020
 audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
-ms.collection: enabler-strategic
+ms.collection:
+- enabler-strategic
+- m365initiative-syntex
 ms.custom: Adopt
 search.appverid: ''
 localization_priority: Normal
-ms.openlocfilehash: 441f28e36ced25b2e5af3f71235995c8b021f779
-ms.sourcegitcommit: ddfb4f3e34deb733e8625e845e4dfd1fcc066ceb
+ms.openlocfilehash: 7a0bd04121d7400cced22e43a539bd21c45a7fc3
+ms.sourcegitcommit: 162c01dfaa2fdb3225ce4c24964c1065ce22ed5d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "49771872"
+ms.lasthandoff: 01/25/2021
+ms.locfileid: "49976574"
 ---
 # <a name="microsoft-sharepoint-syntex-adoption-get-started"></a>Adozione di Microsoft SharePoint Syntex: introduzione
 
@@ -180,7 +182,7 @@ Per prepararsi per l'implementazione di Syntex di SharePoint, è necessario eseg
     - Comprendere l'architettura delle informazioni esistente e l'utilizzo delle funzionalità di gestione del contenuto.
     - I tipi di contenuto esistenti sono validi per i modelli?
     - Quali processi esistenti verrebbero migliorati dai metadati?
-3. Design
+3. Struttura
     - Progettare l'approccio all'architettura delle informazioni, ai metadati gestiti e ai tipi di contenuto
     - Progettare il processo per la definizione, la creazione e la gestione.
 
