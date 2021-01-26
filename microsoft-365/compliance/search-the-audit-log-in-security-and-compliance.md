@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: Usare il Centro sicurezza e conformità di Office 365 o il Centro conformità Microsoft 365 per eseguire una ricerca nel log di controllo unificato e vedere le attività di utenti e amministratori nell'organizzazione.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 4028d5ff59625d2008afb4a384bc290a5df1b2a3
-ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
+ms.openlocfilehash: 2e95c2f3627a6bb0c28b736437012a92107b3533
+ms.sourcegitcommit: 162c01dfaa2fdb3225ce4c24964c1065ce22ed5d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "49682647"
+ms.lasthandoff: 01/25/2021
+ms.locfileid: "49976247"
 ---
 # <a name="search-the-audit-log-in-the-compliance-center"></a>Eseguire una ricerca nel log di controllo nel Centro conformità
 
@@ -66,10 +66,12 @@ Se è necessario verificare se un utente ha visualizzato un documento specifico 
 
 Prima di iniziare la ricerca nel log di controllo, tenere presente quanto segue.
 
-- È necessario che l'amministratore corrente (o un altro amministratore) abiliti la registrazione di controllo prima di iniziare a eseguire ricerche nel log di controllo. Per attivare la registrazione, fare clic su **Attiva il controllo** nella pagina **Ricerca log di controllo** del Centro sicurezza e conformità. Se questo collegamento non è visibile, il controllo è stato già attivato per la propria organizzazione. Dopo l'attivazione, verrà visualizzato un messaggio che indica che è in corso la preparazione del log di controllo e che sarà possibile eseguire una ricerca in un paio d'ore, dopo il completamento della preparazione. Questa procedura deve essere eseguita una sola volta. Per altre informazioni, vedere [Attivare o disattivare la ricerca nel log di controllo](turn-audit-log-search-on-or-off.md).
+- La ricerca nel registro di controllo è attivata per impostazione predefinita per le organizzazioni aziendali di Microsoft 365 e Office 365. Ciò include le organizzazioni con abbonamenti E3 / G3 o E5 / G5. Per verificare che la ricerca nel registro di controllo sia attivata, è possibile eseguire il comando seguente in Exchange Online PowerShell:
 
-  > [!NOTE]
-  > Microsoft sta per impostare come predefinita l'attivazione del controllo. Nel frattempo, è possibile attivarlo come descritto in precedenza.
+  ```powershell
+  Get-AdminAuditLogConfig | FL UnifiedAuditLogIngestionEnabled
+  ```
+  Il valore `True` per la proprietà *UnifiedAuditLogIngestionEnabled* indica che la ricerca nel log di controllo è attivata. Per altre informazioni, vedere [Attivare o disattivare la ricerca nel log di controllo](turn-audit-log-search-on-or-off.md).
 
 - È necessario avere il ruolo relativo ai log di controllo di sola lettura o ai log di controllo in Exchange Online per poter eseguire ricerche nel log di controllo. Per impostazione predefinita, questi ruoli sono assegnati ai gruppi di ruoli Gestione conformità e Gestione organizzazione nella pagina **Autorizzazioni** nell'Interfaccia di amministrazione di Exchange. Gli amministratori globali di Office 365 e Microsoft 365 vengono aggiunti automaticamente come membri del gruppo di ruoli Gestione organizzazione in Exchange Online. Per consentire a un utente di eseguire ricerche nel log di controllo con il livello minimo di privilegi, è possibile creare un gruppo di ruoli personalizzato in Exchange Online, aggiungere il ruolo relativo ai log di controllo di sola lettura o ai log di controllo e quindi aggiungere l'utente come membro del nuovo gruppo di ruoli. Per altre informazioni, vedere [Gestire i gruppi di ruoli in Exchange Online](https://go.microsoft.com/fwlink/p/?LinkID=730688).
 
