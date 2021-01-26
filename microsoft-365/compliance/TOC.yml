@@ -106,7 +106,6 @@
           href: customize-a-built-in-sensitive-information-type.md
         - name: Creare un tipo di informazione sensibile personalizzato con corrispondenza dei dati esatta
           href: create-custom-sensitive-information-types-with-exact-data-match-based-classification.md
-        - name: Introduzione ai tipi di informazioni sensibili personalizzati
         - name: Usare lo schema Exact Data Match e la procedura guidata per il tipo di informazioni sensibili
           href: sit-edm-wizard.md
         - name: Modificare lo schema Exact Data Match per usare la corrispondenza configurabile
