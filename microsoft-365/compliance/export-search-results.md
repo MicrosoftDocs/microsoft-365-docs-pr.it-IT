@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: ed48d448-3714-4c42-85f5-10f75f6a4278
 description: Esportare i risultati della ricerca da una ricerca di contenuto nel centro conformità di Microsoft 365 a un computer locale. I risultati della posta elettronica vengono esportati come file PST. I contenuti dei siti di SharePoint e OneDrive for business vengono esportati come documenti di Office nativi.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 12c8755d4ca8b5ff97582b879c07fe103c996ecf
-ms.sourcegitcommit: 495b66b77d6dbe6d69e5b06b304089e4e476e568
+ms.openlocfilehash: 7027593768238b3d9a465eaa6038d92234c32f82
+ms.sourcegitcommit: ddbc6f8ebadf2f8149dff910b743535cbc3fa3c8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49799703"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "49992512"
 ---
 # <a name="export-content-search-results"></a>Esportare i risultati di Ricerca contenuto
 
@@ -158,9 +158,12 @@ Il passaggio successivo consiste nel scaricare i risultati della ricerca dal per
   
    2. Fare clic su **Sfoglia** per specificare il percorso in cui si desidera scaricare i file dei risultati della ricerca.
   
-      > [!NOTE]
-      > A causa dell'elevato numero di attività del disco (letture e scritture), è necessario scaricare i risultati della ricerca in un'unità disco locale. non scaricarli in un'unità di rete mappata o in un altro percorso di rete. 
-  
+      > [!IMPORTANT]
+      >  A causa di attività di rete elevate durante il download, è consigliabile scaricare i risultati della ricerca solo in un percorso su un'unità interna del computer locale. Per una migliore esperienza di download, seguire queste linee guida: <br/>
+      >- Non scaricare i risultati della ricerca in un percorso UNC, in un'unità di rete mappata, in un'unità USB esterna o in un account OneDrive for business sincronizzato.<br/>
+      >- Disabilitare l'analisi antivirus per la cartella in cui è stato scaricato il risultato della ricerca.<br/>
+      >- Scaricare i risultati della ricerca in cartelle diverse per i processi di download simultanei.
+
 6. Fare clic su **Avvia** per scaricare i risultati della ricerca nel computer.
   
     Lo **Strumento di esportazione eDiscovery** consente di visualizzare informazioni sullo stato delle informazioni relative al processo di esportazione, incluso il numero stimato (e le dimensioni) degli elementi rimanenti da scaricare. Al termine del processo di esportazione, è possibile accedere ai file nel percorso in cui sono stati scaricati.

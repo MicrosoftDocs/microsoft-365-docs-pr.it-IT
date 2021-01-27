@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: È possibile creare un'esenzione associata a un caso di eDiscovery di base per conservare il contenuto che potrebbe essere pertinente per un'indagine.
-ms.openlocfilehash: 85cabfd4877892613386dca88834464a223398ac
-ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
+ms.openlocfilehash: 76ea455af0a7600cd901bdcdaeb0e4b15ef9bc43
+ms.sourcegitcommit: cbe8724bd71d1c002395d98f1451c5f578c824f9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "49682789"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "49988150"
 ---
 # <a name="create-an-ediscovery-hold"></a>Creare un blocco di eDiscovery
 
@@ -111,7 +111,7 @@ Tenere presenti le considerazioni seguenti sulle statistiche di eDiscovery Hold:
 
 Quando si esegue una [ricerca di contenuto](search-for-content-in-core-ediscovery.md) in un caso di eDiscovery di base, è possibile configurare rapidamente la ricerca in modo da cercare solo i percorsi di contenuto che sono stati inseriti in un'esenzione associata al caso.
 
-![Posizioni, posizioni in attesa](../media/d56398aa-0b20-4500-8e26-494eab92a99f.png)
+![Posizioni in attesa](../media/d56398aa-0b20-4500-8e26-494eab92a99f.png)
 
 Selezionare l'opzione **posizioni in attesa** per eseguire la ricerca in tutti i percorsi di contenuto che sono stati inseriti in attesa. Se il caso contiene più eDiscovery, verranno cercate le posizioni di contenuto di tutte le esenzioni quando si seleziona questa opzione. Inoltre, se il percorso del contenuto è stato posizionato in un blocco basato su query, quando si esegue la ricerca verranno ricercati solo gli elementi che corrispondono alla query di archiviazione. In altre parole, viene restituito solo il contenuto che corrisponde ai criteri di blocco e ai criteri di ricerca. Ad esempio, se un utente è stato inserito nel caso di archiviazione basata su query che conserva gli elementi inviati o creati prima di una data specifica, verranno ricercati solo gli elementi. Questa operazione viene eseguita collegando la query di blocco del caso e la query di ricerca da un operatore **and** .
 
@@ -131,13 +131,25 @@ Le conversazioni che fanno parte di un canale Microsoft teams vengono memorizzat
 
 In alternativa, le conversazioni che fanno parte dell'elenco chat in teams (denominate *1:1 chat* o *1: N Group Chat*) sono archiviate nelle cassette postali degli utenti che partecipano alla chat. E i file che gli utenti condividono nelle conversazioni chat sono archiviati nell'account OneDrive dell'utente che condivide il file. Pertanto, è necessario aggiungere le singole cassette postali degli utenti e gli account di OneDrive a un blocco eDiscovery per conservare le conversazioni e i file nell'elenco chat. È consigliabile applicare un blocco alle cassette postali dei membri di un team Microsoft oltre a mettere in attesa la cassetta postale e il sito del team.
 
-A partire dal febbraio 2020, è stata attivata la possibilità di conservare il contenuto nei canali privati. Poiché le chat del canale privato sono memorizzate nelle cassette postali dei partecipanti alla chat, l'inserimento di una cassetta postale utente su eDiscovery Hold conserverà le chat del canale privato. Inoltre, se una cassetta postale utente è stata inserita in un blocco di eDiscovery prima del 2020 febbraio, il blocco verrà applicato automaticamente ai messaggi del canale privato archiviati nella cassetta postale. È supportata anche la conservazione dei file condivisi nei canali privati.
-
-Per ulteriori informazioni sulla conservazione dei contenuti del team, vedere [collocare un utente o un team di Microsoft teams in blocco legale](https://docs.microsoft.com/MicrosoftTeams/legal-hold).
-    
 > [!IMPORTANT]
 > In un'organizzazione basata sul cloud, gli utenti che partecipano a conversazioni che fanno parte dell'elenco chat nei team devono disporre di una cassetta postale di Exchange Online per mantenere le conversazioni chat quando la cassetta postale viene inserita in un blocco eDiscovery. Questo perché le conversazioni che fanno parte dell'elenco chat sono memorizzate nelle cassette postali basate sul cloud dei partecipanti alla chat. Se un partecipante alla chat non dispone di una cassetta postale di Exchange Online, non sarà possibile preservare tali conversazioni. Ad esempio, in una distribuzione ibrida di Exchange, gli utenti che dispongono di una cassetta postale locale potrebbero essere in grado di partecipare a conversazioni che fanno parte dell'elenco chat in teams. In questo caso, tuttavia, non è possibile preservare il contenuto di queste conversazioni perché questi utenti non dispongono di una cassetta postale basata sul cloud che può essere bloccata.
-  
+
+Per ulteriori informazioni sulla conservazione dei contenuti del team, vedere [collocare un utente o un team di Microsoft teams in blocco legale](https://docs.microsoft.com/MicrosoftTeams/legal-hold).
+
+### <a name="preserve-card-content"></a>Preservare il contenuto della scheda
+
+Analogamente, il contenuto della scheda generato dalle app nei canali dei team, nelle chat di 1:1 e nelle chat di gruppo di 1: N viene memorizzato nelle cassette postali e viene mantenuto quando una cassetta postale viene inserita in un blocco eDiscovery. Una *scheda* è un contenitore dell'interfaccia utente per brevi frammenti di contenuto. Le schede possono disporre di più proprietà e allegati e possono includere pulsanti che attivano le azioni delle schede. Per ulteriori informazioni, vedere [Cards](https://docs.microsoft.com/microsoftteams/platform/task-modules-and-cards/what-are-cards). Come il contenuto di altri team, in cui è archiviato il contenuto della scheda si basa sul percorso in cui è stata utilizzata la scheda. Il contenuto delle schede utilizzate in un canale teams è archiviato nella cassetta postale del gruppo teams. I contenuti delle schede per le chat di 1:1 e 1xN sono archiviati nelle cassette postali dei partecipanti alla chat.
+
+### <a name="preserve-meeting-and-call-information"></a>Preservare le informazioni sulle riunioni e le chiamate
+
+Le informazioni di riepilogo per le riunioni e le chiamate in un canale di team vengono memorizzate anche nelle cassette postali degli utenti che hanno effettuato la chiamata alla riunione. Questo contenuto viene conservato anche quando un blocco di eDiscovery viene inserito nelle cassette postali degli utenti.
+
+### <a name="preserve-content-in-private-channels"></a>Preservare il contenuto nei canali privati
+
+A partire dal febbraio 2020, è stata attivata anche la possibilità di conservare il contenuto nei canali privati. Poiché le chat del canale privato sono memorizzate nelle cassette postali dei partecipanti alla chat, l'inserimento di una cassetta postale utente su eDiscovery Hold conserverà le chat del canale privato. Inoltre, se una cassetta postale utente è stata inserita in un blocco di eDiscovery prima del 2020 febbraio, il blocco verrà applicato automaticamente ai messaggi del canale privato archiviati nella cassetta postale. È supportata anche la conservazione dei file condivisi nei canali privati.
+
+### <a name="preserve-wiki-content"></a>Preservare il contenuto wiki
+
 Ogni canale team o team contiene anche un wiki per la collaborazione e l'adozione di note. Il contenuto Wiki viene salvato automaticamente in un file con formato MHT. Il file è archiviato nella raccolta documenti di dati Wiki di Teams nel sito di SharePoint del team. È possibile preservare il contenuto del wiki aggiungendo il sito di SharePoint del team a un'esenzione di eDiscovery.
 
 > [!NOTE]
@@ -176,7 +188,7 @@ Tenere presente quanto segue quando si inseriscono i gruppi di team e di Office 
     > [!NOTE]
     > Per eseguire il cmdlet **Get-UnifiedGroupLinks**, è necessario avere il ruolo Destinatari di sola lettura in Exchange Online o essere membri di un gruppo di ruoli assegnato al ruolo Destinatari di sola lettura.
 
-## <a name="onedrive-accounts"></a>Account di OneDrive
+## <a name="preserve-content-in-onedrive-accounts"></a>Preservare il contenuto negli account di OneDrive
 
 Per raccogliere un elenco degli URL per i siti di OneDrive for business nell'organizzazione, in modo da poterli aggiungere a un'esenzione o a una ricerca associata a un caso di eDiscovery, vedere [creare un elenco di tutte le posizioni di OneDrive nell'organizzazione](https://docs.microsoft.com/onedrive/list-onedrive-urls). Lo script in questo articolo consente di creare un file di testo contenente un elenco di tutti i siti di OneDrive nell'organizzazione. Per eseguire questo script, è necessario installare e usare SharePoint Online Management Shell. Assicurarsi di aggiungere l'URL del dominio MySite dell'organizzazione a ogni sito OneDrive che si desidera includere nella ricerca. Si tratta del dominio che contiene tutti i siti di OneDrive, ad esempio, `https://contoso-my.sharepoint.com`. Di seguito viene riportato un esempio di sito OneDrive di un utente: `https://contoso-my.sharepoint.com/personal/sarad_contoso_onmicrosoft.com`.
 

@@ -19,12 +19,12 @@ ms.assetid: ''
 description: Informazioni sui passaggi di base per la risoluzione dei problemi che è possibile eseguire per risolvere i problemi comuni in Office 365 eDiscovery.
 siblings_only: true
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 4f1bad23705729c15976959a3902501f05da7600
-ms.sourcegitcommit: 1beaf89d2faa32f11fe1613be2fa2b31c4bc4a91
+ms.openlocfilehash: e1fbda23b730956db42d8e7a92218fb9837868b8
+ms.sourcegitcommit: cbe8724bd71d1c002395d98f1451c5f578c824f9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "49602037"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "49988140"
 ---
 # <a name="investigate-troubleshoot-and-resolve-common-ediscovery-issues"></a>Esaminare, risolvere i problemi e risolvere i problemi comuni relativi a eDiscovery
 
@@ -202,6 +202,22 @@ Quando si scaricano i risultati della ricerca utilizzando lo strumento di esport
 
 Per risolvere il problema, riprovare a [scaricare i risultati della ricerca](export-search-results.md#step-2-download-the-search-results), che riavvierà lo strumento di esportazione di eDiscovery.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="errorissue-downloaded-export-shows-no-results"></a>Errore/problema: l'esportazione scaricata non Visualizza risultati
 
-- [Suggerimenti per evitare errori di posizione del contenuto](retry-failed-content-search.md#tips-to-avoid-content-location-errors)
+Dopo un'esportazione completata, il download completato tramite lo strumento Esporta Visualizza zero file nei risultati.
+
+### <a name="resolution"></a>Risoluzione
+
+Si tratta di un problema sul fronte client e per rimediare, provare a eseguire la procedura seguente:
+
+1. Provare a utilizzare un altro client/computer per il download.
+
+2. Assicurarsi di scaricare in un'unità locale.
+
+3. Assicurarsi che lo scanner antivirus non sia in esecuzione.
+
+4. Assicurarsi che nessun'altra esportazione venga scaricata nella stessa cartella o in qualsiasi cartella padre.
+
+5. Se i passaggi precedenti non funzionano, disabilitare la compressione e la deduplicazione.
+
+6. In questo caso, il problema è dovuto a un virus o a un problema del disco.

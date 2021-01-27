@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: feabf3083b0ff1d182884c66fc2b2fd890275a0a
-ms.sourcegitcommit: 162c01dfaa2fdb3225ce4c24964c1065ce22ed5d
+ms.openlocfilehash: c128f9e0c5754305e8b4d785c6a88931bc3ea976
+ms.sourcegitcommit: cbe8724bd71d1c002395d98f1451c5f578c824f9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2021
-ms.locfileid: "49976213"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "49988172"
 ---
 # <a name="insider-risk-management-cases"></a>Casi di gestione dei rischi Insider
 
@@ -159,15 +159,13 @@ Per aggiungere una nota a un caso:
 
 ### <a name="contributors"></a>Contributori
 
-La scheda **Contributors** nel caso in cui gli analisti e gli investigatori del rischio possono aggiungere altri revisori al caso. Per impostazione predefinita, tutti gli utenti assegnati agli **analisti di gestione dei rischi Insider** e ai ruoli **investigatori di gestione dei rischi** sono elencati come collaboratori per ogni caso attivo e chiuso.
+La scheda **Contributors** nel caso in cui gli analisti e gli investigatori del rischio possono aggiungere altri revisori al caso. Per impostazione predefinita, tutti gli utenti assegnati agli **analisti di gestione dei rischi Insider** e ai ruoli **investigatori di gestione dei rischi** sono elencati come collaboratori per ogni caso attivo e chiuso. Solo gli utenti assegnati al ruolo **investigatori di gestione dei rischi Insider** dispongono dell'autorizzazione per la visualizzazione di file e messaggi nell'Esplora contenuto.
 
-Tutti i casi di gestione dei rischi Insider devono essere gestiti con i controlli di accesso adeguati per mantenere la riservatezza e l'integrità dell'indagine. Per garantire il controllo dell'accesso dei casi, agli utenti viene assegnato uno dei due tipi di accesso ai casi:
+L'accesso temporaneo a un caso può essere concesso aggiungendo un utente come collaboratore. I collaboratori dispongono di tutti i controlli di gestione dei casi nel caso specifico, tranne:
 
-- **Accesso permanente**: l'accesso permanente viene concesso automaticamente agli utenti con gli **analisti di gestione dei rischi Insider** e i ruoli **investigatori di gestione dei rischi Insider** quando il caso viene creato da un avviso. L'accesso permanente garantisce il controllo completo del caso per tutta la durata del caso e garantisce la possibilità di aggiungere altri collaboratori del caso.
-- **Accesso temporaneo**: l'accesso temporaneo è concesso solo agli utenti da collaboratori che hanno accesso permanente per il caso. In genere, questo livello di accesso viene concesso all'utente che deve aggiungere note a un caso. I collaboratori con accesso temporaneo dispongono di tutti i controlli di gestione dei casi, tranne:
-    - Autorizzazione per confermare o ignorare gli avvisi
-    - Autorizzazione per la modifica dei collaboratori per i casi
-    - Autorizzazione per la visualizzazione di file e messaggi nell'Esplora contenuto
+- Autorizzazione per confermare o ignorare gli avvisi
+- Autorizzazione per la modifica dei collaboratori per i casi
+- Autorizzazione per la visualizzazione di file e messaggi nell'Esplora contenuto
 
 Per aggiungere un collaboratore a un caso:
 
