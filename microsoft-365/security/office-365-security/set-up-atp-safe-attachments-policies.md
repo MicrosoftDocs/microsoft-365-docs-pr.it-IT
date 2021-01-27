@@ -7,7 +7,6 @@ author: chrisda
 manager: dansimp
 audience: Admin
 ms.topic: how-to
-ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -17,12 +16,14 @@ ms.collection:
 - M365-security-compliance
 description: Informazioni su come definire i criteri per gli allegati sicuri per proteggere l'organizzazione da file dannosi tramite posta elettronica.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 8dfdcc0779fb8b8438ee7a63d2f0e180cbb12ac9
-ms.sourcegitcommit: ec293978e951b09903b79e6642aa587824935e0c
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 5a26d214fe99d0053bf178d7d85a0b526d64f887
+ms.sourcegitcommit: cbe8724bd71d1c002395d98f1451c5f578c824f9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "49780509"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "49988081"
 ---
 # <a name="set-up-safe-attachments-policies-in-microsoft-defender-for-office-365"></a>Configurare i criteri per gli allegati sicuri in Microsoft Defender per Office 365
 
@@ -51,7 +52,7 @@ La differenza tra questi due elementi non è ovvia quando si gestiscono i criter
 In PowerShell di Exchange Online o in EOP PowerShell autonomo i criteri e la regola vengono gestiti separatamente. Per ulteriori informazioni, vedere la sezione [utilizzare Exchange Online PowerShell o standalone EOP PowerShell per configurare i criteri degli allegati sicuri](#use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-safe-attachments-policies) più avanti in questo articolo.
 
 > [!NOTE]
-> Nell'area impostazioni globali delle impostazioni degli allegati sicuri, è possibile configurare le funzionalità che non dipendono dai criteri degli allegati sicuri. Per le istruzioni [, vedere Abilitare ATP per SharePoint, OneDrive e Microsoft teams](turn-on-atp-for-spo-odb-and-teams.md) e [documenti attendibili in Microsoft 365 E5](safe-docs.md).
+> Nell'area impostazioni globali delle impostazioni degli allegati sicuri, è possibile configurare le funzionalità che non dipendono dai criteri degli allegati sicuri. Per le istruzioni [, vedere attivazione degli allegati sicuri per SharePoint, OneDrive e Microsoft teams](turn-on-atp-for-spo-odb-and-teams.md) e [documenti attendibili in Microsoft 365 E5](safe-docs.md).
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare
 
@@ -106,7 +107,7 @@ La creazione di un criterio di allegati sicuri personalizzato nel centro sicurez
 
      La raccomandazione per le impostazioni dei criteri standard e rigorosa consiste nell'abilitare il reindirizzamento. Per ulteriori informazioni, vedere [impostazioni degli allegati sicuri](recommended-settings-for-eop-and-office365-atp.md#safe-attachments-settings).
 
-   - **Applicare la selezione precedente se la ricerca di malware per gli allegati** non è stata eseguita o si verifica un errore: l'azione specificata dalla **risposta malware Unknown Attachments** è presa sui messaggi anche quando l'analisi degli allegati sicuri non può essere completata. Selezionare sempre questa opzione se si seleziona **reindirizza abilitato**. In caso contrario, è possibile che i messaggi vengano persi.
+   - **Applicare la selezione precedente se la ricerca di malware per gli allegati** non è stata eseguita o si verifica un errore: l'azione specificata dalla **risposta malware Unknown Attachments** è presa sui messaggi anche quando l'analisi degli allegati sicuri non può essere completata. Se è stata selezionata questa opzione, selezionare sempre il **Reindirizzamento abilitato**. In caso contrario, è possibile che i messaggi vengano persi.
 
    Al termine dell'operazione, fare clic su **Avanti**.
 

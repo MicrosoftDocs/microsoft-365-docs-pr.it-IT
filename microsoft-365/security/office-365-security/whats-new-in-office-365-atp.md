@@ -3,7 +3,6 @@ title: Novità di Microsoft Defender per Office 365
 description: Informazioni sulle nuove caratteristiche e funzionalità disponibili nella versione più recente di Microsoft Defender per Office 365.
 keywords: Novità di Office 365 ATP, GA, generalmente disponibili, funzionalità, disponibili, nuovo
 search.appverid: met150
-ms.service: O365-seccomp
 ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
@@ -17,15 +16,17 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 ms.topic: conceptual
-ms.date: 10/09/2020
+ms.date: 01/12/2021
 ms.custom: seo-marvel-apr2020
 ms.reviewer: vippand
-ms.openlocfilehash: fb588320461ab44d1ce0f10c0776bcc9ee61b551
-ms.sourcegitcommit: 0ecac0387be6b49025b79ce8eb949a8cf62481e2
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 3544f1ccb760c461b7ab72c6dc037fd653136db9
+ms.sourcegitcommit: cbe8724bd71d1c002395d98f1451c5f578c824f9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "49724403"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "49988161"
 ---
 # <a name="whats-new-in-microsoft-defender-for-office-365"></a>Novità di Microsoft Defender per Office 365
 
@@ -41,6 +42,10 @@ In questo articolo vengono elencate le nuove funzionalità nell'ultima versione 
 > [!TIP]
 > Non si dispone ancora di Microsoft Defender per Office 365? [Contattare Sales per avviare una versione di valutazione](https://go.microsoft.com/fwlink/p/?LinkId=518644).
 
+## <a name="december-2020"></a>Dicembre 2020
+
+- [Protezione per impostazione predefinita in Office 365](secure-by-default.md)
+
 ## <a name="november-2020"></a>Novembre 2020
 
 - Limiti di esportazione aggiornati in Review > Action Center > correzione dall'invio di posta e dal log azione (Defender per Office 365 piano 2)
@@ -48,7 +53,6 @@ In questo articolo vengono elencate le nuove funzionalità nell'ultima versione 
 ## <a name="septemberoctober-2020"></a>Settembre/ottobre 2020
 
 - [Controllare i criteri utilizzando l'analizzatore di configurazione](configuration-analyzer-for-security-policies.md)
-- [Sostituisci manualmente i verdetti del filtro utilizzando l'elenco Consenti/blocca tenant](tenant-allow-block-list.md)
 - [Funzionalità estese in Esplora minacce, tra cui utenti di destinazione principali, regole di trasporto e connettori](threat-explorer.md#new-features-in-threat-explorer-and-real-time-detections) (Defender per Office 365 informazioni in [Threat Explorer](threat-explorer.md) (la posta elettronica è stata consentita/bloccata da criteri tenant/utente) (Defender per Office 365 piano 2)
 - Minacce all'URL di emersione in [Esplora minacce](threat-explorer.md#threats-in-urls) (malware, phishing, posta indesiderata o nessuno) (Defender per Office 365 piano 2)
 - [Miglioramenti alla funzionalità di ricerca di Esplora minacce](threat-explorer.md#improvements-to-the-threat-hunting-experience-upcoming) con aggiornamenti su minacce, azioni aggiuntive, posizioni di recapito e visualizzazione della sequenza temporale aggiornata (Defender per Office 365 piano 2)

@@ -8,7 +8,6 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: how-to
-ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -16,12 +15,14 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 description: Gli amministratori possono imparare a configurare una cassetta postale per raccogliere messaggi di posta indesiderata e di phishing segnalati dagli utenti.
-ms.openlocfilehash: 8f9da620643d46bf21a18eccc2047ad4361832cc
-ms.sourcegitcommit: cc354fd54400be0ff0401f60bbe68ed975b69cda
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 9759bbae1dc49b80859198e11e6f85383cdf2f66
+ms.sourcegitcommit: cbe8724bd71d1c002395d98f1451c5f578c824f9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "49865064"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "49988129"
 ---
 # <a name="user-submissions-policy"></a>Criteri per gli invii degli utenti
 
@@ -71,6 +72,15 @@ Dopo aver verificato che la cassetta postale soddisfi tutti i prerequisiti appli
 
   - **Gestione organizzazione** o **Amministratore sicurezza** nel [Centro sicurezza e conformità](permissions-in-the-security-and-compliance-center.md).
   - **Gestione dell'organizzazione** in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
+
+- È necessario accedere a PowerShell di Exchange Online. Se l'account che si sta tentando di utilizzare non è in grado di accedere a PowerShell di Exchange Online, verrà visualizzato un messaggio di errore simile al seguente quando si specifica la cassetta postale invii:
+
+  > Specificare un indirizzo di posta elettronica nel dominio
+
+  Per ulteriori informazioni sull'abilitazione o la disabilitazione dell'accesso a PowerShell di Exchange Online, vedere i seguenti argomenti:
+
+  - [Abilitazione o disabilitazione dell'accesso a PowerShell di Exchange Online](https://docs.microsoft.com/powershell/exchange/disable-access-to-exchange-online-powershell) 
+  - [Regole di accesso client in Exchange Online](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/client-access-rules/client-access-rules)
 
 ## <a name="use-the-security--compliance-center-to-configure-the-user-submissions-mailbox"></a>Utilizzare il Centro sicurezza & conformità per configurare la cassetta postale per gli invii degli utenti
 
