@@ -12,12 +12,12 @@ metadata:
   author: samanro
   ms.author: samanro
   ms.date: 10/01/2019
-  ms.openlocfilehash: 7242da8ec406df383a12b984ae7585c0e5c1a91d
-  ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+  ms.openlocfilehash: ed25671989668d09f7ad3fcc233a6cf8e1e0f1fc
+  ms.sourcegitcommit: cbe8724bd71d1c002395d98f1451c5f578c824f9
   ms.translationtype: HT
   ms.contentlocale: it-IT
-  ms.lasthandoff: 12/11/2020
-  ms.locfileid: "49658465"
+  ms.lasthandoff: 01/26/2021
+  ms.locfileid: "49988057"
 productDirectory:
   title: Proteggere il lavoro remoto con Microsoft 365 Business Premium
   items:
@@ -33,10 +33,10 @@ productDirectory:
     imageSrc: https://docs.microsoft.com/office/media/icons/get-started-blue.svg
     summary: Azure AD Premium P1 è ora incluso in Microsoft 365 Business Premium.
     url: https://aka.ms/aadp1smbblog
-  - title: Guardare il webinar del partner
+  - title: Partecipare alla serie di webinar del partner
     imageSrc: https://docs.microsoft.com/office/media/icons/education-tutorial-blue.svg
-    summary: Il profitto e la riduzione dei rischi nel mondo del lavoro remoto.
-    url: https://aka.ms/GrowwithMicrosoft365
+    summary: I servizi gestiti inclusi in Microsoft 365 Business Premium consentono di accelerare la crescita aziendale.
+    url: https://aka.ms/acceleratewithm365bp
 conceptualContent:
   items:
   - title: Che cos'è Microsoft 365 Business Premium?
