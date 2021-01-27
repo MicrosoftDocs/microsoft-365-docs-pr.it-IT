@@ -10,7 +10,6 @@ audience: ITPro
 ms.topic: how-to
 f1_keywords:
 - ms.exch.eac.ActionCenter.Restricted.Users.RestrictedUsers
-ms.service: O365-seccomp
 localization_priority: Priority
 search.appverid:
 - MET150
@@ -19,12 +18,14 @@ ms.collection:
 - M365-security-compliance
 description: Gli amministratori possono scoprire come rimuovere gli utenti dal portale Utenti con restrizioni in Office 365. Gli utenti vengono aggiunti al portale Utenti con restrizioni se hanno inviato posta indesiderata in uscita, in genere in seguito a una compromissione dell'account.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: bca9366fdb8cacdc58c12757e870c8ead8f1fa7a
-ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 779e769b76299edf9b6d205f64bed4738f2f2499
+ms.sourcegitcommit: cbe8724bd71d1c002395d98f1451c5f578c824f9
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "49683056"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "49988193"
 ---
 # <a name="remove-blocked-users-from-the-restricted-users-portal-in-office-365"></a>Rimuovere utenti bloccati dal portale Utenti con restrizioni in Office 365
 
@@ -71,7 +72,7 @@ Gli amministratori possono rimuovere gli utenti dal portale Utenti con restrizio
 5. Fare clic su **Sì** per confermare la modifica.
 
    > [!NOTE]
-   > La rimozione delle restrizioni potrebbe richiedere almeno 30 minuti.
+   > La rimozione di tutte le restrizioni utente può richiedere fino a 24 ore.
 
 ## <a name="verify-the-alert-settings-for-restricted-users"></a>Verificare le impostazioni di avviso per gli utenti con restrizioni
 
@@ -82,7 +83,7 @@ Il criterio di avviso predefinito denominato **Utente al quale è stato impedito
 
 1. Nel Centro sicurezza e conformità, passare a **Avvisi** \> **Criteri di avviso**.
 
-2. Individuare e selezionare l’avviso **relativo agli utenti ai quali è stato impedito di inviare posta elettronica**.
+2. Individuare e selezionare l'avviso relativo agli **utenti ai quali è stato impedito di inviare posta elettronica**.
 
 3. Nel riquadro a comparsa visualizzato verificare o configurare le impostazioni seguenti:
 

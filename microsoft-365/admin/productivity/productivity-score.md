@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Panoramica del punteggio della produttività Microsoft.
-ms.openlocfilehash: 8ba1ceb57cd322a67e7b154700a8ac90c62f5ef0
-ms.sourcegitcommit: 7ecd10b302b3b3dfa4ba3be3a6986dd3c189fbff
+ms.openlocfilehash: 9f3e24d4af6858f106cde937940d5f0be1a4f85f
+ms.sourcegitcommit: cbe8724bd71d1c002395d98f1451c5f578c824f9
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "49921243"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "49988069"
 ---
 # <a name="microsoft-productivity-score"></a>Punteggio della produttività Microsoft 
 
@@ -80,13 +80,14 @@ I dati sulle esperienze degli utente richiedono un abbonamento a Microsoft 365 f
 
 Il punteggio della produttività è disponibile solo nell'interfaccia di amministrazione di Microsoft 365 e solo i professionisti IT he dispongono dei ruoli seguenti vi possono accedere:  
 
-- Amministratore globale 
+- Amministratore globale
 - Amministratori di Exchange
-- Amministratore di SharePoint 
-- Amministratore di Skype for Business 
-- Amministratore di Teams 
-- Lettore globale 
-- Amministratore che legge i report 
+- Amministratore di SharePoint
+- Amministratore di Skype for Business
+- Amministratore di Teams
+- Lettore globale
+- Amministratore che legge i report
+- Amministratore che legge i report Riepilogo utilizzo
 
 > [!NOTE]
 > Solo un professionista IT con un ruolo di amministratore globale può registrarsi o acconsentire esplicitamente in un tenant per il punteggio della produttività.

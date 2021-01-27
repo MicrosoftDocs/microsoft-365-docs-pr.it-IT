@@ -7,16 +7,18 @@ manager: serdars
 audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
-ms.collection: enabler-strategic
+ms.collection:
+- enabler-strategic
+- m365initiative-syntex
 search.appverid: MET150
 localization_priority: Priority
 description: Configurazione della comprensione dei contenuti in Project Cortex
-ms.openlocfilehash: 1abcc71200642de3f74a92e83299e079ffffb038
-ms.sourcegitcommit: d859ea36152c227699c1786ef08cda5805ecf7db
+ms.openlocfilehash: a9713f1d28cf863ab827d2975e84042026105b3f
+ms.sourcegitcommit: 162c01dfaa2fdb3225ce4c24964c1065ce22ed5d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49604269"
+ms.lasthandoff: 01/25/2021
+ms.locfileid: "49976389"
 ---
 # <a name="set-up-sharepoint-syntex"></a>Configurazione di SharePoint Syntex
 
@@ -24,15 +26,15 @@ Gli amministratori possono usare l'interfaccia di amministrazione di Microsoft 3
 
 Prima di iniziare, prendere in considerazione quanto segue:
 
-- Quali siti di SharePoint verranno abilitati all’elaborazione moduli? Tutti, alcuni o determinati siti?
-- Quale sarà il nome del centro contenuti predefinito?
+- In quali siti di SharePoint verrà abilitata l'elaborazione dei moduli? Tutti, alcuni o determinati siti?
+- Quale sarà il nome assegnato al centro contenuti predefinito?
 
 È possibile cambiare le impostazioni dopo la configurazione iniziale nell'interfaccia di amministrazione di Microsoft 365.
 
-Prima di procedere, assicurarsi di pianificare in modo ottimale la configurazione della comprensione dei contenuti nel proprio ambiente. Ad esempio, è necessario prendere in considerazione i nomi delle seguenti entità:
+Prima di procedere, assicurarsi di pianificare in modo ottimale la configurazione della comprensione dei contenuti nel proprio ambiente. Ad esempio, è necessario prendere le decisioni seguenti:
 
-- I siti di SharePoint in cui si vuole abilitare l'elaborazione moduli: tutti, alcuni o determinati siti.
-- Il centro contenuti e il nome dell'amministratore del sito principale
+- I siti di SharePoint in cui si vuole abilitare l'elaborazione dei moduli: tutti, alcuni o determinati siti.
+- Il nome e gli amministratori del centro contenuti
 
 ## <a name="requirements"></a>Requisiti 
 
@@ -55,8 +57,8 @@ Gli amministratori possono anche modificare le impostazioni selezionate in quals
 4. Nella pagina **Configurare l’elaborazione moduli**, è possibile scegliere se si vuole consentire agli utenti di creare modelli di elaborazione moduli in raccolte documenti di SharePoint specifiche. Nella barra multifunzione della raccolta documenti sarà disponibile un'opzione del menu che consente di **Creare un modello di elaborazione moduli** nelle raccolte documenti di SharePoint in cui è abilitato.
  
      In **Quale raccolta di SharePoint deve mostrare l'opzione di creazione del modello di elaborazione moduli**, è possibile selezionare:</br>
-      - **Tutte le raccolte di SharePoint** per renderla disponibile per tutte le raccolte di SharePoint nell'organizzazione.</br>
-      - **Solo le raccolte dei siti selezionati** e quindi selezionare i siti in cui si vuole rendere l’opzione disponibile o caricare un elenco di massimo 50 siti.</br>
+      - **Librerie in tutti i siti di SharePoint** per renderla disponibile per tutte le raccolte di SharePoint nell'organizzazione.</br>
+      - **Librerie in siti di SharePoint selezionati** e quindi selezionare i siti in cui si vuole rendere disponibile l'opzione oppure caricare un elenco di massimo 50 siti.</br>
       - **Nessuna raccolta di SharePoint** se non si vuole rendere l’opzione disponibile in alcun sito. È possibile modificare questa impostazione dopo la configurazione.
 
    > [!div class="mx-imgBorder"]
@@ -114,4 +116,3 @@ Passare all'[interfaccia di amministrazione di Power Platform](https://admin.pow
 [Panoramica del modello di elaborazione moduli](https://docs.microsoft.com/ai-builder/form-processing-model-overview)
 
 [Istruzioni dettagliate per la creazione di un modello di analisi dei documenti (video)](https://www.youtube.com/watch?v=DymSHObD-bg)
-

@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Informazioni sul funzionamento della conservazione per SharePoint e OneDrive.
-ms.openlocfilehash: 0ce3a95754bcffd118d78b7919eb6773d3f14b54
-ms.sourcegitcommit: 9e4b3df05eff94fe1be4ef8618a7ce6f2fca3658
+ms.openlocfilehash: 253b4f2c09468b45b8e6102f585a8e4b7bbe4e4e
+ms.sourcegitcommit: ddbc6f8ebadf2f8149dff910b743535cbc3fa3c8
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/19/2021
-ms.locfileid: "49903991"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "49992502"
 ---
 # <a name="learn-about-retention-for-sharepoint-and-onedrive"></a>Informazioni sulla conservazione per SharePoint e OneDrive
 
@@ -57,15 +57,23 @@ Per i criteri di conservazione e i criteri di etichetta applicati automaticament
 
 ## <a name="how-retention-works-for-sharepoint-and-onedrive"></a>Funzionamento della conservazione per SharePoint e OneDrive
 
-Per supportare la conservazione, SharePoint e OneDrive creano una raccolta di archiviazione se una non è già esistente. È possibile visualizzare questa raccolta nella pagina **Contenuto del sito** nel sito principale della raccolta siti. La maggior parte degli utenti non può visualizzare la raccolta di archiviazione poiché è visibile soltanto agli amministratori della raccolta siti.
-  
-Se si tenta di modificare o eliminare un documento soggetto alla conservazione di contenuti, viene eseguita una verifica del contenuto per stabilire se è stato modificato dopo l'applicazione delle impostazioni di conservazione. Nel caso della prima modifica dell’applicazione delle impostazioni di conservazione, il contenuto viene copiato nella raccolta di archiviazione che permette all'utente di modificare o eliminare i contenuti originali. Il contenuto di una raccolta siti può essere copiato nella raccolta di archiviazione, indipendentemente dalle impostazioni di conservazione.
+Per archiviare contenuti da conservare, SharePoint e OneDrive creano una raccolta di archiviazione se non ne esiste già una. È possibile visualizzare questa raccolta nella pagina **Contenuto del sito** nel sito principale della raccolta siti. La maggior parte degli utenti non può visualizzare la raccolta di archiviazione poiché è visibile soltanto agli amministratori della raccolta siti.
+
+Non è necessario che gli elementi di SharePoint con un’etichetta di conservazione standard (che non dichiara l'elemento come record) siano presenti nella Raccolta di archiviazione in quanto rimangono nella loro posizione originale. SharePoint impedisce agli utenti di eliminare un elemento quando l’etichetta di conservazione applicata è configurata per conservare il contenuto. Inoltre, il controllo delle versioni di SharePoint conserva le versioni precedenti quando gli elementi vengono modificati. In altri scenari, tuttavia, la Raccolta di archiviazione viene usata quando è necessario conservare gli elementi:
+- Elementi di OneDrive con etichette di conservazione standard
+- Elementi di SharePoint o OneDrive con etichette di conservazione che li dichiarano come record, se l'elemento è sbloccato per la modifica
+- Elementi soggetti ai criteri di conservazione
+
+Per conservare tali contenuti quando un utente tenta di modificarli o eliminarli, viene eseguita una verifica del contenuto per stabilire se è stato modificato dopo l'applicazione delle impostazioni di conservazione. Nel caso della prima modifica dell’applicazione delle impostazioni di conservazione, il contenuto viene copiato nella raccolta di archiviazione che permette all'utente di modificare o eliminare i contenuti originali. Il contenuto di una raccolta siti può essere copiato nella raccolta di archiviazione, indipendentemente dalle impostazioni di conservazione.
   
 Un processo timer pulisce periodicamente la raccolta di archiviazione. Questo processo confronta tutti i contenuti della raccolta di archiviazione con tutte le query usate dalle impostazioni di conservazione per tali contenuti. Il contenuto precedente al periodo di conservazione configurato viene eliminato dalla raccolta di archiviazione e dalla posizione originale, se è ancora lì. Questo processo timer viene eseguito ogni 7 giorni, quindi può essere necessario attendere fino a 7 giorni prima che il contenuto venga eliminato.
   
 Questo comportamento si applica ai contenuti che esistono al momento dell'applicazione delle impostazioni di conservazione. Inoltre, per i criteri di conservazione, i nuovi contenuti creati o aggiunti alla raccolta siti in seguito all'inclusione nei criteri conservazione, verranno conservati dopo l'eliminazione. Tuttavia, i nuovi contenuti non vengono copiati nella raccolta di archiviazione al momento della prima modifica, ma solo quando viene eliminato. Per conservare tutte le versioni di un file, è necessario attivare il [controllo delle versioni](#how-retention-works-with-document-versions).
   
-Se si prova a eliminare una raccolta, un elenco, una cartella o un sito soggetti a u criteri di conservazione, viene visualizzato un messaggio di errore. Un utente può eliminare una cartella se prima di tutto sposta o elimina gli eventuali file nella cartella soggetta a criteri. Inoltre, la raccolta di archiviazione viene creata in questa fase e non quando si creano i criteri di conservazione o si applica un’etichetta di conservazione. Questo vuol dire che, per testare la conservazione, è necessario prima di tutto modificare o eliminare un documento in un sito soggetto ai criteri di conservazione o con un’etichetta di conservazione applicata, e quindi passare alla raccolta di archiviazione per visualizzare la copia conservata.
+Se si prova a eliminare una raccolta, un elenco, una cartella o un sito soggetti a conservazione, viene visualizzato un messaggio di errore. È possibile eliminare una cartella se prima di tutto si spostano o si eliminano eventuali file soggetti a conservazione presenti nella cartella.
+
+> [!NOTE]
+> Poiché la Raccolta di archiviazione viene creata solo quando è necessaria e non quando si applicano criteri di conservazione o un’etichetta di conservazione, per consentire questa operazione è necessario innanzitutto modificare o eliminare un elemento soggetto a conservazione. Quindi, passare alla Raccolta di archiviazione per visualizzare la copia conservata.
   
 Dopo che le impostazioni di conservazione vengono assegnate ai contenuti di OneDrive o a un sito di SharePoint, i percorsi del contenuto variano in base al fatto che le impostazioni di conservazione siano Conserva ed elimina, Conserva solo o Elimina solo.
 

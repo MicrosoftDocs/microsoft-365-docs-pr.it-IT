@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Informazioni sui criteri di conservazione applicabili a Microsoft Teams.
-ms.openlocfilehash: e3cd36fe6a7f075516d7778094ff5dd29480bfd9
-ms.sourcegitcommit: 9833f95ab6ab95aea20d68a277246dca2223f93d
+ms.openlocfilehash: ec5085b2d0a828300cb90fb260cb293eda4b9433
+ms.sourcegitcommit: cbe8724bd71d1c002395d98f1451c5f578c824f9
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "49794128"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "49988182"
 ---
 # <a name="learn-about-retention-for-microsoft-teams"></a>Informazioni sulla conservazione per Microsoft Teams
 
@@ -38,7 +38,10 @@ Per altri carichi di lavoro, vedere:
 
 ## <a name="whats-included-for-retention-and-deletion"></a>Cosa è incluso per la conservazione e l'eliminazione
 
-Usando i criteri di conservazione per Teams è possibile conservare ed eliminare gli elementi di Teams seguenti: messaggi di chat e canali, inclusi immagini incorporate, tabelle, collegamenti ipertestuali e collegamenti ad altri messaggi e file di Teams. Nei messaggi di chat sono inclusi tutti i nomi degli utenti presenti in chat e nei messaggi dei canali sono inclusi il nome del team e il titolo del messaggio (se disponibile). 
+Usando i criteri di conservazione per Teams è possibile conservare ed eliminare gli elementi di Teams seguenti: messaggi di chat e canali, inclusi immagini incorporate, tabelle, collegamenti ipertestuali e collegamenti ad altri messaggi e file di Teams, nonché il [contenuto della scheda](https://docs.microsoft.com/microsoftteams/platform/task-modules-and-cards/what-are-cards). Nei messaggi di chat sono inclusi tutti i nomi degli utenti presenti in chat e nei messaggi dei canali sono inclusi il nome del team e il titolo del messaggio (se disponibile). 
+
+> [!NOTE]
+> L'inclusione del contenuto della scheda è un'aggiunta recente ed è attualmente in fase di distribuzione ai tenant. Per altre informazioni vedere [Funzionalità di conformità di Microsoft 365 ora disponibili per il contenuto delle schede adattive tramite le app in Teams](https://techcommunity.microsoft.com/t5/microsoft-teams-blog/microsoft-365-compliance-capabilities-for-adaptive-card-content/ba-p/2095869).
 
 Non sono inclusi i messaggi di Teams nei canali privati, né le reazioni degli altri utenti sotto forma di emoticon.
 
