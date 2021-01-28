@@ -12,12 +12,12 @@ ms.custom: seo-marvel-jun2020
 localization_priority: Priority
 description: Come le istituzioni dei servizi finanziari possono mantenere conformità e sicurezza finanziarie e collaborare efficacemente con Microsoft 365 e Teams.
 f1.keywords: NOCSH
-ms.openlocfilehash: ff4ce29e42ea3a8a5619f514373041c1e8c3e138
-ms.sourcegitcommit: c1dd5be42fe0c5dcc7c05817c941edd9076febf8
+ms.openlocfilehash: 1d1c3886a38636e7e72774f8b2bb5ce574d1c7a6
+ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "49558479"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "50029955"
 ---
 # <a name="key-compliance-and-security-considerations-for-us-banking-and-capital-markets"></a>Considerazioni chiave su conformità e sicurezza per i mercati bancario e finanziario degli Stati Uniti
 
@@ -319,7 +319,7 @@ Microsoft 365 ha di recente lanciato una soluzione di gestione dei rischi Inside
 
 Ad esempio, la gestione dei rischi Insider in Microsoft 365 può correlare segnali provenienti dal desktop Windows 10 di un utente, ad esempio la copia di file in un'unità USB o l'invio di e-mail a un account personale, con attività provenienti da servizi online quali la posta di Office 365, SharePoint Online, Microsoft Teams o OneDrive for Business, per identificare modelli di esfiltrazione dei dati. Può anche correlare queste attività con i dipendenti che lasciano l'organizzazione, una situazione tipica di esfiltrazione dei dati. Può monitorare più attività e il comportamento nel tempo. Se emergono schemi comuni, può generare avvisi e aiutare gli investigatori a concentrarsi su attività chiave per identificare un'eventuale violazione dei criteri con un grado elevato di attendibilità. La gestione dei rischi Insider consente la pseudo-anonimizzazione dei dati provenienti dagli investigatori, per rispettare le normative sulla privacy dei dati portando comunque alla luce attività chiave utili per svolgere le indagini in modo efficiente. Consente agli investigatori di inserire in pacchetti e inviare in modo sicuro i dati sulle attività chiave all'ufficio legale e al reparto Risorse Umane, seguendo i flussi di lavoro di escalation comuni per la raccolta di casi e l'applicazione di misure correttive.
 
-La gestione dei rischi Insider in Microsoft 365 aumenta significativamente la capacità delle organizzazioni di monitorare e analizzare i rischi Insider, consentendo allo stesso tempo di rispettare le normative sulla privacy dei dati e seguire percorsi di escalation nei casi in cui occorre un'azione di livello superiore.
+La gestione dei rischi Insider in Microsoft 365 aumenta significativamente la capacità delle organizzazioni di monitorare e analizzare i rischi Insider, consentendo allo stesso tempo di rispettare le normative sulla privacy dei dati e seguire percorsi di escalation nei casi in cui occorre un'azione di livello superiore. Per altre informazioni sulla gestione dei rischi Insider in Microsoft 365, vedere l'argomento sui [punti critici di rischio e sul flusso di lavoro nella gestione dei rischi Insider in Microsoft 365](https://docs.microsoft.com/microsoft-365/compliance/insider-risk-management?view=o365-worldwide).
 
 ![Operatore di call center in un cubicolo che digita osservando uno schermo.](../media/clo17-call-center-006.jpg)
  

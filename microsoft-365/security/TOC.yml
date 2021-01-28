@@ -432,31 +432,12 @@
               href: ./office-365-security/use-dmarc-to-validate-email.md
             - name: Aggiungere il supporto per i messaggi di posta elettronica in ingresso anonimi su IPv6
               href: ./office-365-security/support-for-anonymous-inbound-email-messages-over-ipv6.md
+            - name: Installare Application Guard per Office
+              href: ./office-365-security/install-app-guard.md
             - name: Configurare gruppi e utenti per un ambiente di sviluppo/test per la campagna politica
               href: ./office-365-security/configure-groups-and-users-for-a-political-campaign-dev-test-environment.md
             - name: Creare siti del team in un ambiente di sviluppo/testinging per la campagna politica
               href: ./office-365-security/create-team-sites-in-a-political-campaign-dev-test-environment.md
-            - name: S/MIME
-              href: ./office-365-security/s-mime-for-message-signing-and-encryption.md
-              items:
-                - name: S/MIME per la crittografia e la firma dei messaggi
-                  href: ./office-365-security/s-mime-for-message-signing-and-encryption.md
-                - name: Configurare le impostazioni S/MIME per Outlook sul web
-                  href: ./office-365-security/configure-s-mime-settings-for-outlook-web-app.md
-                - name: Inviare e ricevere messaggi crittografati e firmati tramite S/MIME
-                  href: ./office-365-security/send-and-receive-s-mime-signed-and-encrypted-email.md
-                - name: Sincronizzare i certificati utente con Microsoft 365 per S/MIME
-                  href: ./office-365-security/sync-user-certificates-to-office-365-for-s-mime.md
-                - name: Configurazione della raccolta di certificati virtuali per convalidare S/MIME
-                  href: ./office-365-security/set-up-virtual-certificate-collection-to-validate-s-mime.md
-                - name: Configurare gruppi e utenti per un ambiente di sviluppo/test per la campagna politica
-                  href: ./office-365-security/configure-groups-and-users-for-a-political-campaign-dev-test-environment.md
-                - name: Creare siti del team in un ambiente di sviluppo/testinging per la campagna politica
-                  href: ./office-365-security/create-team-sites-in-a-political-campaign-dev-test-environment.md
-                - name: Spostare i domini e le impostazioni da un'organizzazione di Exchange Online Protection a un'altra
-                  href: ./office-365-security/move-domains-and-settings-from-one-eop-organization-to-another-eop-organization.md
-                - name: Gestire i gruppi di ruoli in Exchange Online Protection autonomo
-                  href: ./office-365-security/manage-admin-role-group-permissions-in-eop.md
         - name: Migrazione
           items:
             - name: 'Passaggio a Exchange Online Protection da Google Postini, Barracuda Spam e Virus Firewall o Cisco IronPort'
@@ -669,6 +650,27 @@
               href: ./office-365-security/virus-detection-in-spo.md
             - name: Differenza tra posta elettronica indesiderata e posta elettronica inviata in blocco
               href: ./office-365-security/what-s-the-difference-between-junk-email-and-bulk-email.md
+            - name: S/MIME
+              href: ./office-365-security/s-mime-for-message-signing-and-encryption.md
+              items:
+                - name: S/MIME per la crittografia e la firma dei messaggi
+                  href: ./office-365-security/s-mime-for-message-signing-and-encryption.md
+                - name: Configurare le impostazioni S/MIME per Outlook sul web
+                  href: ./office-365-security/configure-s-mime-settings-for-outlook-web-app.md
+                - name: Inviare e ricevere messaggi crittografati e firmati tramite S/MIME
+                  href: ./office-365-security/send-and-receive-s-mime-signed-and-encrypted-email.md
+                - name: Sincronizzare i certificati utente con Microsoft 365 per S/MIME
+                  href: ./office-365-security/sync-user-certificates-to-office-365-for-s-mime.md
+                - name: Configurazione della raccolta di certificati virtuali per convalidare S/MIME
+                  href: ./office-365-security/set-up-virtual-certificate-collection-to-validate-s-mime.md
+                - name: Configurare gruppi e utenti per un ambiente di sviluppo/test per la campagna politica
+                  href: ./office-365-security/configure-groups-and-users-for-a-political-campaign-dev-test-environment.md
+                - name: Creare siti del team in un ambiente di sviluppo/testinging per la campagna politica
+                  href: ./office-365-security/create-team-sites-in-a-political-campaign-dev-test-environment.md
+                - name: Spostare i domini e le impostazioni da un'organizzazione di Exchange Online Protection a un'altra
+                  href: ./office-365-security/move-domains-and-settings-from-one-eop-organization-to-another-eop-organization.md
+                - name: Gestire i gruppi di ruoli in Exchange Online Protection autonomo
+                  href: ./office-365-security/manage-admin-role-group-permissions-in-eop.md
     - name: Microsoft 365 for Enterprise
       href: 'https://docs.microsoft.com/microsoft-365/enterprise'
     - name: Microsoft 365 for Business
