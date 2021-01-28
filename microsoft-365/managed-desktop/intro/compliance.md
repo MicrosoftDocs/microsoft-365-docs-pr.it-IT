@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: d47757e8e9b36baf060c86436bd7840ded7c324d
-ms.sourcegitcommit: 280200281aec862517876319a3fe4ce170674047
+ms.openlocfilehash: f2fae1e41562d1ae743ecd964b42082b3d6486e8
+ms.sourcegitcommit: 05657b39eaafc0503b01c6adcc5d8a5e615dc02c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/07/2020
-ms.locfileid: "49586674"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "50031352"
 ---
 # <a name="compliance"></a>Conformità
 
@@ -36,7 +36,7 @@ Microsoft Managed Desktop ha ottenuto le seguenti certificazioni:
 - [Controlli dell'organizzazione del servizio (SOC) 1, 2, 3](https://docs.microsoft.com/compliance/regulatory/offering-SOC)
 - [Payment Card Industry (PCI) Data Security Standard (DSS)](https://docs.microsoft.com/compliance/regulatory/offering-PCI-DSS)
 - [La portabilità e la responsabilità dell'assicurazione malattia (HIPAA)](https://docs.microsoft.com/compliance/regulatory/offering-hipaa-hitech)
-- [Programma del valutatore registrato per la sicurezza delle informazioni del governo australiano (IRAP)](https://docs.microsoft.com/compliance/regulatory/offering-ccsl-irap-australia)
+- [Programma di valutazione della sicurezza delle informazioni registrato (IRAP)](https://docs.microsoft.com/compliance/regulatory/offering-ccsl-irap-australia)
 
 
 ## <a name="auditor-reports-and-compliance-certificates"></a>Rapporti dei revisori e certificati di conformità
@@ -48,4 +48,4 @@ Microsoft Managed Desktop ha ottenuto le seguenti certificazioni:
 
 ## <a name="shared-responsibility"></a>Responsabilità condivisa
 
-La conformità per i servizi cloud è una responsabilità condivisa tra i provider di servizi cloud e i relativi clienti. Per ulteriori informazioni, vedere [Shared responsibilities for cloud computing](https://docs.microsoft.com/azure/security/fundamentals/shared-responsibility).
+La conformità per i servizi cloud è una responsabilità condivisa tra i provider di servizi cloud e i relativi clienti. Per ulteriori informazioni, vedere [Shared Responsibility in the cloud](https://docs.microsoft.com/azure/security/fundamentals/shared-responsibility).
