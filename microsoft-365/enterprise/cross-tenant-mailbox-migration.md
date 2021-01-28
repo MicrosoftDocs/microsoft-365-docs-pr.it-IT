@@ -14,12 +14,12 @@ ms.custom:
 - it-pro
 ms.collection:
 - M365-subscription-management
-ms.openlocfilehash: aecb1230ac9a9b2868c519c9b8920e312ff5a282
-ms.sourcegitcommit: 9833f95ab6ab95aea20d68a277246dca2223f93d
+ms.openlocfilehash: 4296879b36e26f11f945105ccebea351ad88314d
+ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "49794045"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "50029527"
 ---
 # <a name="cross-tenant-mailbox-migration-preview"></a>Migrazione delle cassette postali tra tenant (anteprima)
 
@@ -176,7 +176,7 @@ La configurazione dell'amministratore di destinazione è ora completata.
 
 3. Nell'interfaccia di amministrazione di Microsoft 365 o in una sessione di PowerShell remota, creare uno o più gruppi di sicurezza abilitati alla posta elettronica per controllare l'elenco delle cassette postali consentite dal tenant di destinazione per il pull (spostamento) dal tenant di origine al tenant di destinazione. Non è necessario popolare questo gruppo in anticipo, ma è necessario fornire almeno un gruppo per eseguire la procedura di installazione (script). I gruppi di annidamento non sono supportati. 
 
-4. Scaricare lo script SetupCrossTenantRelationshipForTargetResource.ps1 per il programma di installazione tenant di origine dall'archivio GitHub: [https://github.com/microsoft/cross-tenant/releases/tag/Preview](https://github.com/microsoft/cross-tenant/releases/tag/Preview) . 
+4. Scaricare lo script SetupCrossTenantRelationshipForResourceTenant.ps1 per il programma di installazione tenant di origine dall'archivio GitHub: [https://github.com/microsoft/cross-tenant/releases/tag/Preview](https://github.com/microsoft/cross-tenant/releases/tag/Preview) . 
 
 5. Creare una connessione remota di PowerShell al tenant di origine con le autorizzazioni di amministratore di Exchange. Le autorizzazioni di amministratore globale non sono necessarie per configurare il tenant di origine, solo il tenant di destinazione a causa del processo di creazione di applicazioni di Azure.
 

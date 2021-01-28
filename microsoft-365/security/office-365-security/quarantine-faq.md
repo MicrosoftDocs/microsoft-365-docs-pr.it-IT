@@ -8,7 +8,6 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: troubleshooting
-ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -18,12 +17,14 @@ ms.collection:
 - m365initiative-defender-office365
 description: Gli amministratori possono visualizzare le domande frequenti e le risposte sui messaggi in quarantena in Exchange Online Protection (EOP).
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 58ddb5847706aef3d2c3b8ea8cd9a96fd65a9b3d
-ms.sourcegitcommit: 9833f95ab6ab95aea20d68a277246dca2223f93d
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: abd2304e83d2814cab55d13312535bd94308d8be
+ms.sourcegitcommit: b3bb5bf5efa197ef8b16a33401b0b4f5663d3aa0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "49794413"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "50032602"
 ---
 # <a name="quarantined-messages-faq"></a>Domande frequenti sui messaggi in quarantena
 
@@ -72,16 +73,39 @@ Gli amministratori possono utilizzare i cmdlet [Get-QuarantineMessage](https://d
 
 I caratteri jolly non sono supportati nel centro sicurezza & conformità. Ad esempio, quando si esegue la ricerca di un mittente, è necessario specificare l'indirizzo di posta elettronica completo. Tuttavia, è possibile utilizzare i caratteri jolly in PowerShell di Exchange Online o in EOP PowerShell autonomo.
 
-Ad esempio, utilizzare il seguente comando per trovare messaggi di posta indesiderata in quarantena da tutti i mittenti nel dominio contoso.com:
+Ad esempio, copiare il codice PowerShell seguente nel blocco note e salvare il file con estensione ps1 in una posizione facile da trovare, ad esempio C:\Data\QuarantineRelease.ps1.
+
+Dopo aver eseguito la connessione a PowerShell di [Exchange Online](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell) o [Exchange Online Protection](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell), eseguire il comando riportato di seguito per eseguire lo script:
 
 ```powershell
-$CQ = Get-QuarantineMessage -Type Spam | where {$_.SenderAddress -like "*@contoso.com"}
+& C:\Data\QuarantineRelease.ps1
 ```
 
-Successivamente, eseguire il seguente comando per rilasciare tali messaggi a tutti i destinatari originali:
+Lo script esegue le operazioni seguenti:
+
+- Individuare i messaggi non rilasciati che sono stati messi in quarantena come posta indesiderata da tutti i mittenti nel dominio fabrikam. Il numero massimo di risultati è 50.000 (50 pagine di 1000 risultati).
+- Salvare i risultati in un file CSV.
+- Rilasciare i messaggi in quarantena corrispondenti a tutti i destinatari originali.
 
 ```powershell
-$CQ | foreach {Release-QuarantineMessage -Identity $_.Identity -ReleaseToAll}
+$Page = 1
+$List = $null
+
+Do
+{
+Write-Host "Getting Page " $Page
+
+$List = (Get-QuarantineMessage -Type Spam -PageSize 1000 -Page $Page | where {$_.Released -like "False" -and $_.SenderAddress -like "*fabrikam.com"})
+Write-Host "                     " $List.count " rows in this page match"
+Write-Host "                                                             Exporting list to appended CSV for logging"
+$List | Export-Csv -Path "C:\Data\Quarantined Message Matches.csv" -Append -NoTypeInformation
+
+Write-Host "Releasing page " $Page
+$List | foreach {Release-QuarantineMessage -Identity $_.Identity -ReleaseToAll}
+
+$Page = $Page + 1
+
+} Until ($Page -eq 50)
 ```
 
 Dopo aver rilasciato un messaggio, non è possibile rilasciarlo.

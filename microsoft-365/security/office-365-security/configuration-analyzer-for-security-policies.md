@@ -9,7 +9,6 @@ ms.reviewer: ''
 ms.date: ''
 audience: ITPro
 ms.topic: how-to
-ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -17,20 +16,19 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Gli amministratori possono ottenere informazioni su come utilizzare l'analizzatore di configurazione per individuare e correggere i criteri di sicurezza che si trovano al di sotto dei criteri di protezione standard e di protezione preimpostati.
-ms.openlocfilehash: af7cf269151c7e947a0a2f653ce8638d46ccd905
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 04027e78a2683c6c33954bb548c502497c5e8323
+ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49658662"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "50029479"
 ---
 # <a name="configuration-analyzer-for-protection-policies-in-eop-and-microsoft-defender-for-office-365"></a>Analizzatore di configurazione per i criteri di protezione in EOP e Microsoft Defender per Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
-
-> [!NOTE]
-> Le funzionalità descritte in questo articolo sono in anteprima, non sono disponibili in tutte le organizzazioni e sono soggette a modifiche. Per informazioni sulla pianificazione dei rilasci, vedere la Guida di [orientamento di Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=config%2Canalyzer).
 
 Analizzatore di configurazione nel centro sicurezza & conformità fornisce una posizione centrale per individuare e correggere i criteri di sicurezza in cui le impostazioni sono al di sotto delle impostazioni di protezione standard e del profilo di protezione rigido nei [criteri di sicurezza preimpostati](preset-security-policies.md).
 
@@ -56,22 +54,23 @@ I seguenti tipi di criteri vengono analizzati dall'analizzatore della configuraz
 
 I valori di impostazione dei criteri **standard** e **rigorosi** utilizzati come linee di base sono descritti in [impostazioni consigliate per EOP e Microsoft Defender per la sicurezza di Office 365](recommended-settings-for-eop-and-office365-atp.md).
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare?
+## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare
 
-- Aprire il Centro sicurezza e conformità in <https://protection.office.com/>. Per passare direttamente alla pagina dell' **analizzatore** dell'utilità di configurazione, utilizzare <https://protection.office.com/configurationAnalyzer> .
+- Aprire il Centro sicurezza e conformità in<https://protection.office.com/>. Per passare direttamente alla pagina dell' **analizzatore** dell'utilità di configurazione, utilizzare <https://protection.office.com/configurationAnalyzer> .
 
 - Per informazioni su come connettersi a PowerShell per Exchange Online, vedere [Connettersi a PowerShell per Exchange Online](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
 
-- Per poter eseguire le procedure contenute in questo articolo è necessario disporre delle autorizzazioni appropriate nel Centro sicurezza e conformità:
+- È necessario disporre delle autorizzazioni nel Centro sicurezza e conformità per poter eseguire le procedure contenute in questo articolo:
   - Per utilizzare l'analizzatore di configurazione **e** aggiornare i criteri di sicurezza, è necessario essere membri dei gruppi di ruoli **Gestione organizzazione** o **amministratore sicurezza** .
   - Per l'accesso in sola lettura all'analizzatore di configurazione, è necessario essere membri dei gruppi di ruoli **lettore globale** o lettore di **sicurezza** .
 
   Per altre informazioni, vedere [Autorizzazioni nel Centro sicurezza e conformità](permissions-in-the-security-and-compliance-center.md).
 
-  **Note**:
-
-  - L'aggiunta di utenti al ruolo di Azure Active Directory corrispondente nell'interfaccia di amministrazione di Microsoft 365 fornisce agli utenti le autorizzazioni necessarie nel centro Sicurezza e conformità _e_ le autorizzazioni per altre funzionalità di Microsoft 365. Per altre informazioni, vedere [Informazioni sui ruoli di amministratore](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
-  - Anche il gruppo di ruoli di **Gestione organizzazione sola visualizzazione** in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) offre inoltre l'accesso di sola lettura a tale funzionalità.
+  > [!NOTE]
+  >  
+  > - L'aggiunta di utenti al ruolo di Azure Active Directory corrispondente nell'interfaccia di amministrazione di Microsoft 365 fornisce agli utenti le autorizzazioni necessarie nel centro Sicurezza e conformità _e_ le autorizzazioni per altre funzionalità di Microsoft 365. Per altre informazioni, vedere [Informazioni sui ruoli di amministratore](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
+  > 
+  > - Anche il gruppo di ruoli di **Gestione organizzazione sola visualizzazione** in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) offre inoltre l'accesso di sola lettura a tale funzionalità.
 
 ## <a name="use-the-configuration-analyzer-in-the-security--compliance-center"></a>Utilizzare l'analizzatore di configurazione nel centro sicurezza & Compliance
 

@@ -9,12 +9,12 @@ f1.keywords:
 ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 53a21c4126e59861200df405ffe365b2ccef08f8
-ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
+ms.openlocfilehash: 4d8de363cc9111fade719fdf5384519d1236f431
+ms.sourcegitcommit: 05657b39eaafc0503b01c6adcc5d8a5e615dc02c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49840290"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "50031340"
 ---
 # <a name="how-updates-are-handled-in-microsoft-managed-desktop"></a>Come vengono gestiti gli aggiornamenti in Microsoft Managed Desktop
 
@@ -37,19 +37,26 @@ Microsoft Managed Desktop utilizza quattro gruppi di Azure ad per la gestione de
 - **Fast**: priorità della velocità rispetto alla stabilità. Utile per rilevare i problemi di qualità prima che vengano offerti al gruppo generale. Questo gruppo funge da livello successivo di convalida, ma in genere è più stabile rispetto al test e ai primi gruppi. 
 - **Broad**: ultimo gruppo in cui sono disponibili aggiornamenti di funzionalità e qualità. Questo gruppo contiene la maggior parte degli utenti nel tenant e quindi favorisce la stabilità sulla velocità della distribuzione. Il testing delle app dovrebbe essere effettuato qui perché l'ambiente è più stabile. 
 
+### <a name="moving-devices-between-update-groups"></a>Spostamento di dispositivi tra gruppi di aggiornamento
+Potrebbe essere necessario che alcuni dispositivi ricevano gli aggiornamenti per ultimi e altri che si desidera vengano eseguiti per primi. Per spostare questi dispositivi nel gruppo di aggiornamento appropriato, [inviare una richiesta di supporto](https://docs.microsoft.com/microsoft-365/managed-desktop/working-with-managed-desktop/admin-support?view=o365-worldwide) per l'amministratore e verranno spostati i dispositivi. 
+
 > [!NOTE]
-> Se è necessario spostare un utente in un gruppo di aggiornamento diverso, inviare una richiesta di supporto. Per ulteriori informazioni sull'invio delle richieste di supporto, vedere [supporto per Microsoft Managed Desktop](support.md) . Se si sposta un utente manualmente, lo spostamento verrà ripristinato.
+> Se è necessario spostare un utente in un gruppo di aggiornamento diverso, inviare una richiesta di supporto. Non spostare manualmente i dispositivi tra i gruppi di aggiornamento. Se un dispositivo viene spostato in modo non corretto, si verificano gravi conseguenze. Il dispositivo potrebbe essere aggiornato in modo imprevisto e i criteri potrebbero essere in conflitto, cambiando la configurazione del dispositivo.
 
-Per ulteriori informazioni sui ruoli e le responsabilità di questi gruppi di distribuzione, vedere [ruoli e responsabilità di Microsoft Managed Desktop](../intro/roles-and-responsibilities.md)
+Per ulteriori informazioni sui ruoli e sulle responsabilità all'interno di questi gruppi di distribuzione, vedere [ruoli e responsabilità di Microsoft Managed Desktop](../intro/roles-and-responsibilities.md)
 
-Funzionamento della distribuzione degli aggiornamenti:
-- Microsoft Managed Desktop distribuisce una nuova funzionalità o un aggiornamento di qualità in base alla pianificazione specificata nella tabella.
-- Durante la distribuzione, Microsoft Managed Desktop monitora i segni di errori o interruzioni (in base ai dati di diagnostica e al sistema di supporto utente). Se vengono rilevati, la distribuzione a tutti i gruppi correnti e futuri viene sospesa immediatamente.
+### <a name="using-microsoft-managed-desktop-update-groups"></a>Utilizzo dei gruppi di aggiornamento di Microsoft Managed Desktop 
+Vi sono parti del servizio gestite, come la distribuzione di applicazioni, in cui potrebbe essere necessario indirizzare tutti i dispositivi gestiti. In questi casi, è opportuno utilizzare i gruppi di aggiornamento per raggiungere gli utenti con la consapevolezza che non è possibile aggiungere, rimuovere o modificare l'appartenenza di tali gruppi. 
+
+## <a name="how-update-deployment-works"></a>Funzionamento della distribuzione degli aggiornamenti:
+1. Microsoft Managed Desktop distribuisce una nuova funzionalità o un aggiornamento di qualità in base alla pianificazione specificata nella tabella seguente.
+2. Durante la distribuzione, Microsoft Managed Desktop monitora i segni di errori o interruzioni in base ai dati di diagnostica e al sistema di supporto dell'utente. Se vengono rilevati, la distribuzione viene immediatamente sospesa in tutti i gruppi correnti e futuri.
     - Esempio: se viene rilevato un problema durante la distribuzione di un aggiornamento di qualità al primo gruppo, le distribuzioni di aggiornamento a First, Fast e Broad verranno sospese finché il problema non viene risolto.
-    - I problemi di compatibilità possono essere segnalati archiviando un ticket nel portale di amministrazione di Microsoft Managed Desktop.
-- Gli aggiornamenti di funzionalità e qualità sono sospesi in modo indipendente. La pausa è attiva per 35 giorni per impostazione predefinita, ma può essere ridotta o estesa a seconda che il problema venga rimediato.
-- Dopo che i gruppi sono stati sospesi, la distribuzione riprende in base alla pianificazione della tabella.
-- Questo processo di distribuzione si applica a tutti gli aggiornamenti di funzionalità e qualità, anche se la sequenza temporale varia per ogni.
+    - È possibile segnalare i problemi di compatibilità archiviando un ticket nel portale di amministrazione di Microsoft Managed Desktop.
+    - Gli aggiornamenti di funzionalità e qualità sono sospesi in modo indipendente. La pausa è attiva per 35 giorni per impostazione predefinita, ma può essere ridotta o estesa a seconda che il problema venga rimediato.
+3. Dopo che i gruppi sono stati sospesi, la distribuzione riprende in base alla pianificazione della tabella.
+
+Questo processo di distribuzione si applica a tutti gli aggiornamenti di funzionalità e qualità, anche se la sequenza temporale varia per ogni.
 
 
 
@@ -63,6 +70,7 @@ Funzionamento della distribuzione degli aggiornamenti:
     <tr><td>Definizione di antivirus</td><td colspan="4">Aggiornato con ogni analisi</td></tr>
     <tr><td>Microsoft 365 Apps for enterprise</td><td colspan="4"><a href="https://docs.microsoft.com/microsoft-365/managed-desktop/get-started/m365-apps#updates-to-microsoft-365-apps">Altre informazioni</a></td></tr>
     <tr><td>Microsoft Edge</td><td colspan="4"><a href="https://docs.microsoft.com/microsoft-365/managed-desktop/get-started/edge-browser-app#updates-to-microsoft-edge">Altre informazioni</a></td></tr>
+    <tr><td>Microsoft Teams</td><td colspan="4"><a href="https://docs.microsoft.com/microsoft-365/managed-desktop/get-started/teams#updates">Altre informazioni</a></td></tr>
 </table>
 
 >[!NOTE]
@@ -78,6 +86,5 @@ Tutti i dispositivi trovati con Windows Insider Builds potrebbero essere inserit
 
 ## <a name="bandwidth-management"></a>Gestione della larghezza di banda
 
-Viene utilizzata l' [ottimizzazione della distribuzione](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization) per tutti gli aggiornamenti del sistema operativo e dei driver. Questa funzionalità consente di ridurre al minimo le dimensioni del download dal servizio Windows Update, cercando gli aggiornamenti dei peer all'interno della rete aziendale.
-
+Viene utilizzata l' [ottimizzazione della distribuzione](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization) per tutti gli aggiornamenti del sistema operativo e dei driver. Questo riduce al minimo le dimensioni di download dal servizio Windows Update, cercando gli aggiornamenti dei peer all'interno della rete aziendale.
 

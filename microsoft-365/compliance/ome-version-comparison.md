@@ -17,22 +17,43 @@ search.appverid:
 - MET150
 description: In questo articolo vengono illustrate le differenze tra le diverse versioni della crittografia dei messaggi di Office 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f8052272cfa4951cae132f0f66b0d9f84e05b168
-ms.sourcegitcommit: c0495e224f12c448bfc162ef2e4b33b82f064ac8
+ms.openlocfilehash: 30344a9cbe8629804f5026fc809577923965b7bc
+ms.sourcegitcommit: b3bb5bf5efa197ef8b16a33401b0b4f5663d3aa0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49709663"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "50032623"
 ---
 # <a name="compare-versions-of-ome"></a>Confrontare le versioni di OME
 
-In questo articolo viene confrontato legacy Office 365 Message Encryption (OME) alla nuova funzionalità OME e alla crittografia avanzata dei messaggi di Office 365. Le nuove funzionalità sono una fusione e una versione più recente di OME e Information Rights Management (IRM). Sono delineate anche le caratteristiche uniche di distribuzione in GCC High. I due possono coesistere nell'organizzazione. Per informazioni su come funzionano le nuove funzionalità, vedere [Office 365 Message Encryption (OME)](ome.md).
+> [!IMPORTANT]
+> Il 28 febbraio 2021, Microsoft diventerà obsoleto il supporto per AD RMS in Exchange Online. Se è stato distribuito un ambiente ibrido in cui le cassette postali di Exchange sono online e si sta utilizzando IRM con Active Directory RMS locale, è necessario eseguire la migrazione a Azure. Anche le organizzazioni che sono state distribuite nell'ambiente GCC moderato sono intaccate. Vedere "Overview of AD RMS Deprecation in Exchange Online" in questo articolo per informazioni.
+
+Il resto di questo articolo confronta la crittografia dei messaggi di Office 365 (OME) legacy alla nuova funzionalità OME e la crittografia avanzata dei messaggi di Office 365. Le nuove funzionalità sono una fusione e una versione più recente di OME e Information Rights Management (IRM). Sono delineate anche le caratteristiche uniche di distribuzione in GCC High. I due possono coesistere nell'organizzazione. Per informazioni su come funzionano le nuove funzionalità, vedere [Office 365 Message Encryption (OME)](ome.md).
 
 Questo articolo fa parte di una serie più ampia di articoli sulla crittografia dei messaggi di Office 365. Questo articolo è destinato agli amministratori e professionisti IT. Se si cercano solo informazioni sull'invio o la ricezione di un messaggio crittografato, vedere l'elenco degli articoli in [Office 365 Message Encryption (OME)](ome.md) e individuare l'articolo che meglio si adatta alle proprie esigenze.
 
+## <a name="overview-of-ad-rms-deprecation-in-exchange-online"></a>Panoramica della deprecazione di AD RMS in Exchange Online
+
+Exchange Online include le funzionalità di Information Rights Management (IRM) che forniscono la protezione online e offline dei messaggi di posta elettronica e degli allegati. Per impostazione predefinita, in Exchange Online viene utilizzata la protezione delle informazioni di Azure Azure. Tuttavia, è possibile che l'organizzazione abbia configurato Exchange Online IRM per l'utilizzo di Active Directory Rights Management Service (AD RMS) locale. Il supporto di AD RMS in Exchange Online è in pensione. La protezione delle informazioni di Azure, invece, sostituirà completamente AD RMS.
+
+Prima di iniziare, esaminare e valutare l'impatto dell'organizzazione. Se nell'organizzazione è già in uso Azure Information Protection per crittografare la posta elettronica in Exchange Online, non è necessario eseguire alcuna operazione. Se si crittografa la posta elettronica utilizzando le regole del flusso di posta di Exchange, ad esempio utilizzando la crittografia dei messaggi di Office 365, non è necessario modificare il messaggio di posta elettronica sicuro. In caso contrario, è necessario prepararsi per la deprecazione di AD RMS passando a Azure Information Protection.
+
+### <a name="prepare-for-ad-rms-deprecation"></a>Preparare la deprecazione di AD RMS
+
+Se è già stata configurata la protezione delle informazioni di Azure ma non la si utilizza, abilitare il servizio tramite PowerShell di Exchange Online. Nel computer locale, utilizzando un account aziendale o dell'Istituto di istruzione con autorizzazioni di amministratore globale nell'organizzazione, [connettersi a PowerShell di Exchange Online](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell) in una finestra di Windows PowerShell.
+
+Per abilitare Azure Information Protection, utilizzare il cmdlet Set-IrmConfiguration digitando il comando seguente.
+
+```powershell
+Set-IrmConfiguration -AzureRMSLicensingEnabled $true
+```
+
+Se nell'organizzazione non è ancora stata configurata la protezione delle informazioni di Azure, è necessario eseguire la migrazione da AD RMS a Azure Information Protection. Per istruzioni, vedere [migrazione da ad RMS a Azure Information Protection](https://docs.microsoft.com/azure/information-protection/migrate-from-ad-rms-to-azure-rms).
+
 ## <a name="side-by-side-comparison-of-features-and-capabilities"></a>Confronto affiancato di caratteristiche e funzionalità
 
-|           **Situazione**           | **OME legacy**    | **IRM**           | **Nuove funzionalità OME** |
+|           **Situazione**           | **OME legacy**    | **IRM in AD RMS**        | **Nuove funzionalità OME** |
 |-----------------------------------|-------------------|-------------------|--------------------------|
 |*Invio di un messaggio crittografato*        |Tramite le regole del flusso di posta di Exchange|L'utente finale è stato avviato da Outlook desktop o Outlook sul Web. o tramite le regole del flusso di posta di Exchange|L'utente finale è stato avviato dal desktop di Outlook, Outlook per Mac o Outlook sul Web. tramite le regole del flusso di posta di Exchange (note anche come regole di trasporto) e prevenzione della perdita di dati (DLP)|
 |*Modello Rights Management*       |   N/D      |Non inoltrare l'opzione e i modelli personalizzati|Non inoltrare l'opzione, l'opzione Encrypt-Only e i modelli personalizzati|

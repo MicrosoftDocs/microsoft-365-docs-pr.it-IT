@@ -8,7 +8,6 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: how-to
-ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -18,12 +17,14 @@ ms.collection:
 - M365-security-compliance
 description: Gli amministratori possono ottenere informazioni sui rapporti sul flusso di posta disponibili nel dashboard report nel centro sicurezza & Compliance.
 ms.custom: ''
-ms.openlocfilehash: 1ededf2d0d693c537c159c52d00deb03f278b4b2
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: e69085d1fad845ab519f2590b0527316463373a7
+ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49659466"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "50029799"
 ---
 # <a name="view-mail-flow-reports-in-the-reports-dashboard-in-security--compliance-center"></a>Visualizzare i report sul flusso di posta nel dashboard report nel centro sicurezza & Compliance
 
@@ -32,7 +33,7 @@ ms.locfileid: "49659466"
 
 Oltre ai rapporti sul flusso di posta disponibili nel [Dashboard del flusso](mail-flow-insights-v2.md) di posta elettronica nel centro sicurezza & Compliance, nel dashboard report sono disponibili numerosi rapporti di flusso di posta aggiuntivi che consentono di monitorare l'organizzazione Microsoft 365.
 
-Se si dispone delle [autorizzazioni necessarie](#what-permissions-are-needed-to-view-these-reports), è possibile visualizzare i report nel [Centro sicurezza & Compliance](https://office.protection.com) accedendo al  \> **Dashboard** report. Per accedere direttamente al dashboard dei report, aprire <https://protection.office.com/insightdashboard> .
+Se si dispone delle [autorizzazioni necessarie](#what-permissions-are-needed-to-view-these-reports), è possibile visualizzare i report nel [Centro sicurezza & Compliance](https://protection.office.com) accedendo al  \> **Dashboard** report. Per accedere direttamente al dashboard dei report, aprire <https://protection.office.com/insightdashboard> .
 
 ![Dashboard dei report nel centro sicurezza & Compliance](../../media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
 
@@ -544,7 +545,8 @@ Per visualizzare e utilizzare i report descritti in questo articolo, è necessar
 
 Per altre informazioni, vedere [Autorizzazioni nel Centro sicurezza e conformità](permissions-in-the-security-and-compliance-center.md).
 
-**Nota**: l'aggiunta di utenti al ruolo di Azure Active Directory corrispondente nell'interfaccia di amministrazione di Microsoft 365 fornisce agli utenti le autorizzazioni necessarie nel centro sicurezza & Compliance _e_ le autorizzazioni per altre caratteristiche in Microsoft 365. Per altre informazioni, vedere [Informazioni sui ruoli di amministratore](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
+> [!NOTE]
+> L'aggiunta di utenti al ruolo di Azure Active Directory corrispondente nell'interfaccia di amministrazione di Microsoft 365 fornisce agli utenti le autorizzazioni necessarie nel centro Sicurezza e conformità _e_ le autorizzazioni per altre funzionalità di Microsoft 365. Per altre informazioni, vedere [Informazioni sui ruoli di amministratore](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
 
 ## <a name="related-topics"></a>Argomenti correlati
 

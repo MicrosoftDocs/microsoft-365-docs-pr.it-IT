@@ -3,20 +3,21 @@ title: Informazioni dettagliate sui messaggi di posta elettronica dei nuovi domi
 f1.keywords:
 - NOCSH
 ms.author: siosulli
-author: chrisda
+author: siosulli
 manager: dansimp
 audience: ITPro
 ms.topic: conceptual
-ms.service: exchange-online
 localization_priority: Normal
 ms.assetid: ''
 description: Gli amministratori possono scoprire come utilizzare i nuovi domini che vengono inoltrati tramite la posta elettronica Insight nel dashboard del flusso di posta elettronica nel centro sicurezza & Compliance per esaminare quando gli utenti inoltrano i messaggi ai domini esterni che non sono mai stati inoltrati.
-ms.openlocfilehash: a72ffd001ea22972d9dc6c00af8a4dd7881386b7
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: eb44f5d577d18fc38333cca5e8d2d862f288a2e0
+ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49356944"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "50029859"
 ---
 # <a name="new-domains-being-forwarded-email-insight-in-the-security--compliance-center"></a>Nuovi domini che vengono inoltrati Insight di posta elettronica nel centro sicurezza & Compliance
 
@@ -37,7 +38,7 @@ Quando si fa clic sul widget, viene visualizzato un riquadro a comparsa in cui �
 
 ![Riquadro a comparsa dettagli che viene visualizzato dopo aver fatto clic sui nuovi domini che vengono inoltrati Insight della posta elettronica](../../media/mfi-new-domains-being-forwarded-details.png)
 
-È inoltre possibile accedere a questa pagina dei dettagli quando si seleziona l'Insight dopo aver fatto clic su **Visualizza tutti** nell'area **suggerimenti & consigliati** (dashboard dei **report** \> **Dashboard** o <https://protection.office.com/insightdashboard> ).
+È inoltre possibile accedere a questa pagina dei dettagli quando si seleziona l'Insight dopo aver fatto clic su **Visualizza tutti** nell'area **suggerimenti & consigliati** (dashboard dei **report** \>  o <https://protection.office.com/insightdashboard> ).
 
 Per impedire l'inoltro automatico dei messaggi ai domini esterni, configurare un dominio remoto per alcuni o per tutti i domini esterni. Per ulteriori informazioni, vedere [Manage Remote Domains in Exchange Online](https://docs.microsoft.com/Exchange/mail-flow-best-practices/remote-domains/manage-remote-domains).
 

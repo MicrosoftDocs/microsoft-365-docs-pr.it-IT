@@ -3,22 +3,23 @@ title: Correggere possibili informazioni dettagliate sul ciclo di posta
 f1.keywords:
 - NOCSH
 ms.author: siosulli
-author: chrisda
+author: siosulli
 manager: dansimp
 audience: ITPro
 ms.topic: conceptual
-ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: cb801985-3c89-4979-9c18-17829a4cb563
 ms.custom:
 - seo-marvel-apr2020
 description: Gli amministratori possono ottenere informazioni su come utilizzare l'Insight del ciclo di posta elettronica Fix possible nel dashboard del flusso di posta elettronica nel centro sicurezza & Compliance per identificare e correggere i loop di posta nell'organizzazione.
-ms.openlocfilehash: 1d49fd93b2ea068986e003b36077672215a2dd57
-ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: f08c27c761cdfe4acbbd8cf80e8ab6da8012b55f
+ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48920567"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "50029895"
 ---
 # <a name="fix-possible-mail-loop-insight-in-the-security--compliance-center"></a>FIX possible Insight del loop di posta elettronica nel centro sicurezza & Compliance
 
@@ -40,10 +41,10 @@ Questa intuizione viene visualizzata solo dopo che è stata rilevata la condizio
 Quando si fa clic su **Visualizza dettagli** nel widget, viene visualizzato un riquadro a comparsa con ulteriori informazioni:
 
 - **Dominio**
-- **Numero di messaggi** : è possibile fare clic su **Visualizza messaggi di esempio** per visualizzare i risultati di [traccia](message-trace-scc.md) dei messaggi per un esempio di messaggi che sono stati interessati dal ciclo.
-- **Tipo di dominio** "ad esempio, autorevole o non autorevole.
-- **Record MX** : host ( **mail server** ) e valori di **priorità** del record MX per il dominio.
-- **Motivo ciclo** e **correzione** : verranno identificati gli scenari più comuni del ciclo di posta elettronica e vengono fornite azioni consigliate per correggere il ciclo.
+- **Numero di messaggi**: è possibile fare clic su **Visualizza messaggi di esempio** per visualizzare i risultati di [traccia](message-trace-scc.md) dei messaggi per un esempio di messaggi che sono stati interessati dal ciclo.
+- **Tipo di dominio**"ad esempio, autorevole o non autorevole.
+- **Record MX**: host (**mail server**) e valori di **priorità** del record MX per il dominio.
+- **Motivo ciclo** e **correzione**: verranno identificati gli scenari più comuni del ciclo di posta elettronica e vengono fornite azioni consigliate per correggere il ciclo.
 
 ![Riquadro a comparsa dettagli che viene visualizzato dopo aver fatto clic su Visualizza dettagli sull'Insight del ciclo di posta di Fix possible](../../media/mfi-fix-possible-mail-loop-details.png)
 

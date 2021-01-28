@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-topics
 ROBOTS: NOINDEX, NOFOLLOW
 localization_priority: None
-ms.openlocfilehash: ea0bbc1f7d34ff01fcf446bfa4bbd0b95f310c4c
-ms.sourcegitcommit: 162c01dfaa2fdb3225ce4c24964c1065ce22ed5d
+ms.openlocfilehash: 08860b32b6809f489a9c108dcfaed3f61fb2e306
+ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2021
-ms.locfileid: "49976168"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "50029639"
 ---
 # <a name="topic-experiences-discovery-and-curation-preview"></a>Argomento Experience Discovery and curation (Preview)
 
@@ -29,13 +29,13 @@ L'argomento experiences converte le informazioni sulla conoscenza nell'ambiente 
 
 Quali esperienze di argomento è possibile utilizzare Microsoft Graph e AI per identificare gli **argomenti** nell'organizzazione.  Un argomento è una frase o un termine che ha un significato specifico per un'organizzazione, in cui gli utenti potrebbero trarre vantaggio dall'essere in grado di visualizzare una pagina wiki su di esso. AI Cerca persone e contenuti connessi all'argomento e, se lo si è già scoperto, diventa un argomento suggerito.
 
-Le informazioni sull'argomento generato AI AI sono state aggiunte a una **pagina di argomento**, che può contenere:
+L'argomento AI suggerito informazioni viene aggiunto a una **pagina di argomento**, che può contenere:
 - Breve descrizione dell'argomento.
 - Nomi alternativi per l'argomento.
 - Utenti che potrebbero sapere di più sull'argomento.
 - Siti, file e pagine che potrebbero essere correlate all'argomento.
 
-L'argomento experiences garantisce quindi che ogni istanza di un argomento sia evidenziata in tutte le pagine del sito di SharePoint moderne del tenant. Quando un utente è curioso di saperne di più su un argomento, è possibile selezionare l'argomento evidenziato per visualizzare una scheda di **Riepilogo degli argomenti** che fornisce una breve descrizione. Se si desiderano ulteriori informazioni, è possibile selezionare un collegamento **Dettagli argomento** nel riepilogo per aprire la pagina dell'argomento dettagliato.
+Esperienze degli argomenti quindi, quando il contesto è appropriato, è opportuno evidenziarli in tutte le pagine del sito di SharePoint moderne del tenant. Quando un utente è curioso di saperne di più su un argomento, è possibile selezionare l'argomento evidenziato per visualizzare una scheda di **Riepilogo degli argomenti** che fornisce una breve descrizione. Se si desiderano ulteriori informazioni, è possibile selezionare un collegamento **Dettagli argomento** nel riepilogo per aprire la pagina dell'argomento dettagliato.
 
 ![Highlights dell'argomento](../media/knowledge-management/saturn.png) </br>
 
@@ -44,40 +44,16 @@ Inoltre, gli utenti saranno anche in grado di trovare argomenti tramite Microsof
 
 ## <a name="topic-curation"></a>Tema curation
 
-L'argomento experiences plaude alla "curation" umana per migliorare la qualità degli argomenti. Mentre AI inizialmente identifica e suggerisce gli argomenti, gli aggiornamenti eseguiti manualmente sul contenuto dei collaboratori, la conferma da parte degli utenti per i contenuti generati AI e i commenti e suggerimenti sull'utilità degli argomenti sono tutti elementi essenziali.
+Esperienze di argomento si compiace del contributo umano per migliorare la qualità degli argomenti. Sebbene AI inizialmente identifichi e suggerisca argomenti, le modifiche apportate manualmente ai contenuti dei collaboratori, la conferma da parte degli utenti per i contenuti generati AI e i commenti e suggerimenti sull'utilità degli argomenti sono tutti elementi essenziali.
 
 - Gli argomenti generati da AI ("argomenti suggeriti") possono essere esaminati dai **responsabili della conoscenza** nell'organizzazione. Nella pagina Gestisci argomenti del centro argomenti possono scegliere se confermarli come validi oppure rifiutarli per impedire che vengano visualizzati.
 
 - È possibile assegnare le autorizzazioni *Crea e modifica argomenti* a uno qualsiasi degli utenti con licenza in modo che possano apportare modifiche agli argomenti esistenti o creare nuovi argomenti se necessario. 
 
-- Anche gli utenti che hanno solo accesso in lettura all'argomento (argomenti visualizzatori) verranno invitati a verificare l'utilità di argomenti specifici.
+- Anche gli utenti che hanno solo accesso in lettura all'argomento (argomenti visualizzatori) verranno invitati a verificare l'utilità di argomenti specifici. I commenti e suggerimenti vengono inoltre eseguiti per confermare o rifiutare un argomento suggerito.
 
-Anche con la cura umana, AI continuerà a cercare ulteriori informazioni sugli argomenti e verificherà la verifica umana. Ad esempio, se al pensa di essere una persona che dovrebbe essere bloccata come esperto su un argomento, verrà chiesto di confermarla. 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Anche con modifiche umane, AI continuerà a cercare ulteriori informazioni sugli argomenti e verificherà la verifica umana. Ad esempio, se al pensa di essere una persona che deve essere elencata come esperta in un argomento, verrà chiesto di confermarla. 
 
 
 
 ## <a name="see-also"></a>Vedere anche
-
-
-
-  
-
-
-
-
-
-

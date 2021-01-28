@@ -15,12 +15,12 @@ ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 description: Informazioni sugli account di fatturazione e su come gestirli.
-ms.openlocfilehash: 3c99f3f22fb0eb13c4f9cab06a4037fe057b6fb4
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 2382396c348fab0b24a269e9678193041ac2c19e
+ms.sourcegitcommit: b3bb5bf5efa197ef8b16a33401b0b4f5663d3aa0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48638208"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "50032634"
 ---
 # <a name="manage-billing-accounts"></a>Gestire account di fatturazione
 
@@ -42,21 +42,20 @@ Nella tabella seguente sono elencati i termini importanti che vengono visualizza
 
 | Nome del campo | Descrizione |
 |------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Indirizzo venduto a | La persona giuridica responsabile del pagamento e identificata sulla fattura. L'indirizzo fornito in questo articolo viene utilizzato per determinare l'aliquota fiscale, a meno che non si decida di fornire un indirizzo di spedizione alternativo durante l'acquisto. Per ulteriori informazioni, vedere [Tax Information](billing-and-payments/tax-information.md). |
+| Indirizzo venduto a | La persona giuridica responsabile del pagamento e identificata sulla fattura. L'indirizzo fornito qui viene utilizzato per determinare la tua aliquota a meno che tu non scelga di fornire un indirizzo di spedizione alternativo durante l'acquisto. Per altre informazioni, vedere [Informazioni fiscali](billing-and-payments/tax-information.md). |
 | Segmento | Campo di sola lettura che identifica il segmento aziendale dell'organizzazione (commerciale, scolastico, governativo o no profit). |
 | Stato account | Campo di sola lettura che specifica lo stato dell'account commerciale con Microsoft. |
-| ID fiscale | Se si è al di fuori degli Stati Uniti, è necessario specificare un IVA o un equivalente locale. Per ulteriori informazioni, vedere [Tax Information](billing-and-payments/tax-information.md). |
+| ID fiscale | Se si è al di fuori degli Stati Uniti, è necessario specificare un IVA o un equivalente locale. Per altre informazioni, vedere [Informazioni fiscali](billing-and-payments/tax-information.md). |
 | Contratto | Quando viene creato un account di fatturazione, tramite un acquisto diretto o un contratto multilicenza, un firmatario dell'organizzazione accetta o firma un accordo che delinea i termini & condizioni dell'account. Se applicabile, questa visualizzazione elenca la cronologia di un contratto. Se si ha la necessità di accettare termini aggiornati, viene visualizzato un collegamento per l' **approvazione del contratto** . |
 | Profili di fatturazione | Un profilo di fatturazione definisce le proprietà della fattura, ad esempio l'utente che riceve la fattura, il modo in cui viene recapitata la fattura, i termini di pagamento e il numero di ordine. Per distribuire la fatturazione all'interno dell'organizzazione, è possibile creare più profili di fatturazione e identificare il profilo di fatturazione appropriato al momento dell'acquisto. Per ulteriori informazioni sui profili di fatturazione e su come utilizzarli per creare opzioni di fatturazione più flessibili per la propria organizzazione, [gestire i profili di fatturazione](billing-and-payments/manage-billing-profiles.md). |
 
 > [!NOTE]
-> Se si desidera modificare il nome o l'indirizzo **venduto a** , ma non viene visualizzato un collegamento di **modifica** , è necessario  [contattare il supporto tecnico](https://docs.microsoft.com/office365/admin/contact-support-for-business-products) per modificarlo. Le richieste di una modifica del nome **venduto** richiedono una verifica del credito. Quando si contatta il supporto tecnico, è possibile utilizzare uno dei documenti seguenti:
+> Se si desidera modificare il nome o l'indirizzo **venduto a** , ma non viene visualizzato un collegamento di **modifica** , è necessario  [contattare il supporto tecnico](https://docs.microsoft.com/office365/admin/contact-support-for-business-products) per modificarlo. Le richieste di una modifica del nome **venduto** richiedono una verifica del credito. Essere pronti a condividere uno dei seguenti documenti con Microsoft quando si contatta il supporto tecnico: 
 >
-> - Documento di annuncio esterno che indica le modifiche apportate al nome o alla struttura aziendale dell'azienda
 > - Documento emesso dal governo o lettera di registrazione
 > - Stampa del registro di sistema della società locale
 >
-> Il supporto tecnico consente di modificare il nome e l'indirizzo in cui viene modificato solo il nome del cliente, ma l'entità rimane invariata. La documentazione fornita deve indicare chiaramente che è stato modificato solo il nome dell'entità. Se la modifica è correlata a qualsiasi transazione, ad esempio una vendita di attività o una cessione o "spin-off" di un affiliato del cliente, contattare il proprio rivenditore Microsoft.
+> Il supporto tecnico consente di modificare il nome e l'indirizzo in cui viene modificato solo il nome del cliente, ma l'entità rimane invariata. La documentazione fornita deve indicare chiaramente che è stato modificato solo il nome dell'entità. Se la modifica è il risultato di una transazione, tra cui la vendita di attività, la modifica dei controlli o la cessione o la "scissione" di un affiliato del cliente, contattare il proprio rivenditore Microsoft.
 
 ## <a name="shipping-addresses"></a>Indirizzi di spedizione
 

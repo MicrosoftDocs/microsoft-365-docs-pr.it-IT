@@ -14,19 +14,19 @@ ms.collection:
 localization_priority: None
 ROBOTS: NOINDEX, NOFOLLOW
 description: Panoramica delle esperienze degli argomenti.
-ms.openlocfilehash: decc1a3aa5535b4d8bc97dc7d6b010eedd395741
-ms.sourcegitcommit: 162c01dfaa2fdb3225ce4c24964c1065ce22ed5d
+ms.openlocfilehash: f01b28b8ca5b0352f05fecac810c3e651c663947
+ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2021
-ms.locfileid: "49976592"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "50029645"
 ---
 # <a name="topic-experiences-overview-preview"></a>Panoramica delle esperienze degli argomenti (anteprima)
 
 > [!Note] 
 > Il contenuto di questo articolo è relativo all'anteprima privata di Project Cortex. [Altre informazioni su Project Cortex](https://aka.ms/projectcortex).
 
-L'argomento Experiences utilizza la tecnologia Microsoft AI, Microsoft 365, approfondire, Microsoft Graph, Search e altri componenti e servizi per creare una rete di conoscenze nell'ambiente Microsoft 365. 
+L'argomento Experiences utilizza la tecnologia Microsoft AI, Microsoft 365, Microsoft Graph, Search e altri componenti e servizi per creare una rete di conoscenze nell'ambiente Microsoft 365. 
 
 </br>
 
@@ -38,7 +38,7 @@ L'obiettivo è quello di convertire le informazioni in conoscenza e recapitarle 
 
 L'argomento experiences contribuisce a risolvere un problema aziendale importante in molte società, fornendo le informazioni agli utenti quando necessario. Ad esempio, i nuovi dipendenti devono imparare rapidamente molte nuove informazioni e incontrare termini di cui non sanno nulla durante la lettura tramite le informazioni della società. Per ulteriori informazioni, è possibile che l'utente debba allontanarsi da quello che sta facendo e spendere tempo prezioso per la ricerca di dettagli, ad esempio per sapere quali sono i termini, per i quali l'organizzazione è un esperto in materia e, in alcuni casi, per i siti e i documenti correlati al termine.
 
-L'argomento Experiences utilizza Ia per cercare e identificare automaticamente gli **argomenti** nell'organizzazione. Vengono compilate informazioni su di esse, ad esempio una descrizione breve, gli esperti dell'argomento e i siti, i file e le pagine correlate. Un responsabile della conoscenza o un collaboratore può scegliere di aggiornare le informazioni sull'argomento in base alle esigenze. Gli argomenti sono disponibili per gli utenti, il che significa che per ogni istanza dell'argomento visualizzato in un sito di SharePoint moderno in notizie e pagine, il testo verrà evidenziato. Gli utenti possono scegliere di selezionare l'argomento per ulteriori informazioni su di esso tramite l'argomento dettagli. Gli argomenti possono essere trovati anche nella ricerca di SharePoint.
+L'argomento Experiences utilizza Ia per cercare e identificare automaticamente gli **argomenti** nell'organizzazione. Vengono compilate informazioni su di esse, ad esempio una descrizione breve, persone che lavorano sull'argomento e siti, file e pagine correlate. Un responsabile della conoscenza o un collaboratore può scegliere di aggiornare le informazioni sull'argomento in base alle esigenze. Gli argomenti sono disponibili per gli utenti, il che significa che per ogni istanza dell'argomento visualizzato in un sito di SharePoint moderno in notizie e pagine, il testo verrà evidenziato. Gli utenti possono scegliere di selezionare l'argomento per ulteriori informazioni su di esso tramite l'argomento dettagli. Gli argomenti possono essere trovati anche nella ricerca di SharePoint.
 
 
 ## <a name="how-topics-are-displayed-to-users"></a>Modalità di visualizzazione degli argomenti per gli utenti
@@ -65,13 +65,13 @@ Gli amministratori della Knowledge base possono scegliere di eseguire la ricerca
 
 ## <a name="roles"></a>Ruoli
 
-Quando si utilizzano le esperienze degli argomenti nell'ambiente Microsoft 365, gli utenti avranno i ruoli seguenti:
+Quando si utilizza l'argomento experiences nell'ambiente Microsoft 365, gli utenti avranno i ruoli seguenti:
 
 - Visualizzatore argomenti: utenti che saranno in grado di visualizzare gli argomenti evidenziati nei siti moderni di SharePoint a cui hanno almeno accesso in *lettura* e in Microsoft Search. Saranno in grado di selezionare l'argomento Highlights per visualizzare i dettagli dell'argomento nelle pagine degli argomenti. Gli utenti visualizzatori potranno fornire commenti e suggerimenti sull'utilità di un argomento.
 
-- Collaboratori: utenti che dispongono di diritti per modificare gli argomenti esistenti o crearne di nuovi. Gli amministratori delle informazioni assegnano le autorizzazioni per i collaboratori agli utenti tramite l'argomento experiences Settings nell'interfaccia di amministrazione di Microsoft 365. Tenere presente che è inoltre possibile scegliere di assegnare a tutti gli utenti l'autorizzazione per la modifica e la creazione di argomenti in modo che possano contribuire anche agli argomenti visualizzati.
+- Collaboratori: utenti che dispongono di diritti per modificare gli argomenti esistenti o crearne di nuovi. Gli amministratori delle informazioni assegnano le autorizzazioni per i collaboratori agli utenti tramite l'argomento experiences Settings nell'interfaccia di amministrazione di Microsoft 365. Tenere presente che è inoltre possibile scegliere di assegnare a tutti gli utenti l'autorizzazione per la modifica e la creazione di argomenti in modo che tutti possano contribuire agli argomenti visualizzati.
 
-- Knowledge Manager: utenti che guidano gli argomenti tramite il ciclo di vita dell'argomento. Knowledge Manager utilizzare la pagina **Gestisci argomenti** del centro argomenti per confermare o rimuovere gli argomenti consigliati ai, nonché modificare gli argomenti esistenti o crearne di nuovi e sono gli unici utenti che possono accedervi. Gli amministratori delle informazioni assegnano le autorizzazioni di Knowledge Manager agli utenti tramite l'argomento experiences admin Settings nell'interfaccia di amministrazione di Microsoft 365. 
+- Knowledge Manager: utenti che guidano gli argomenti tramite il ciclo di vita dell'argomento. Knowledge Manager utilizzare la pagina **Gestisci argomenti** del centro argomenti per confermare gli argomenti suggeriti da ai, rimuovere gli argomenti non più rilevanti, nonché modificare gli argomenti esistenti o crearne di nuovi e sono gli unici utenti che possono accedervi. Gli amministratori delle informazioni assegnano le autorizzazioni di Knowledge Manager agli utenti tramite l'argomento experiences admin Settings nell'interfaccia di amministrazione di Microsoft 365. 
 
 - Knowledge Admins: gli amministratori delle informazioni configurano e gestiscono l'argomento tramite i controlli di amministratore nell'interfaccia di amministrazione di Microsoft 365. Attualmente, un amministratore di Microsoft 365 Global o SharePoint può fungere da amministratore della conoscenza.
 
@@ -85,7 +85,7 @@ Anche se tutti gli utenti con licenza saranno in grado di visualizzare gli argom
 
 I Knowledge Manager saranno in grado di:
 
-- Confermare o rifiutare gli argomenti individuati nel tenant.
+- Confermare o rimuovere gli argomenti individuati nel tenant.
 - Creare manualmente nuovi argomenti in base alle esigenze (ad esempio, se non sono state fornite informazioni sufficienti per essere scoperte tramite AI).
 - Modificare le pagine degli argomenti esistenti.</br>
 
@@ -109,7 +109,7 @@ Per ulteriori informazioni sui controlli di amministratore, vedere [assegnare au
 
 L'AI continuerà a funzionare continuamente per fornire suggerimenti per migliorare gli argomenti in base alle modifiche apportate all'ambiente. 
 
-Gli utenti a cui è consentito l'accesso per visualizzare gli argomenti nel lavoro giornaliero potrebbero essere richiesti se l'argomento è stato utile. AI Guarda queste risposte e le usa per determinare cosa viene mostrato nei riassunti degli argomenti e nei dettagli sull'argomento.
+Gli utenti a cui è consentito l'accesso per visualizzare gli argomenti nel lavoro giornaliero potrebbero essere richiesti se l'argomento è stato utile. Il sistema analizza queste risposte e le utilizza per determinare cosa viene mostrato nei riassunti degli argomenti e nei dettagli sull'argomento.
 
 Gli utenti che dispongono di autorizzazioni di modifica o creazione di argomenti possono rendere gli aggiornamenti alle pagine dell'argomento direttamente se desiderano apportare correzioni o aggiungere altre informazioni. 
 

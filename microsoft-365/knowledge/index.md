@@ -14,12 +14,12 @@ ms.collection:
 ROBOTS: NOINDEX, NOFOLLOW
 localization_priority: None
 description: Informazioni su come trovare risorse per le esperienze degli argomenti.
-ms.openlocfilehash: a9069b8723cb23a406fcce3b96a53b3de2a07568
-ms.sourcegitcommit: 162c01dfaa2fdb3225ce4c24964c1065ce22ed5d
+ms.openlocfilehash: afba6930c30ad59dc95abb255eadab501b01f189
+ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2021
-ms.locfileid: "49976180"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "50029609"
 ---
 # <a name="introduction-to-topic-experiences-preview"></a>Introduzione alle esperienze sull'argomento (anteprima)
 
@@ -37,14 +37,14 @@ L'argomento experiences è un servizio di Office 365 che consente alle organizza
 
 Le risorse presenti in questa pagina sono state progettate per iniziare a conoscere e utilizzare le esperienze di argomento nell'organizzazione.
 
-## <a name="get-started"></a>Informazioni di base
+## <a name="get-started"></a>Per iniziare
 
 Le risorse in questa sezione consentono di ottenere ulteriori informazioni sulle esperienze degli argomenti e su come può essere utile.
 
 | Se sono necessarie queste informazioni: | Passare a questa risorsa: |
 |:-----|:-----|
-|Altre informazioni sulle analisi dei documenti|[Panoramica delle esperienze degli argomenti](topic-experiences-overview.md)|
-|Informazioni su come vengono scoperti e creati argomenti da AI|[Individuazione dell'argomento experiences](topic-experiences-discovery.md)|
+|Per ulteriori informazioni, vedere esperienze sugli argomenti|[Panoramica delle esperienze degli argomenti](topic-experiences-overview.md)|
+|Informazioni su come vengono individuati e suggeriti gli argomenti di AI|[Individuazione dell'argomento experiences](topic-experiences-discovery.md)|
 |Informazioni sulla sicurezza degli argomenti|[Argomenti sicurezza e privacy](topic-experiences-security-privacy.md)|
 
 

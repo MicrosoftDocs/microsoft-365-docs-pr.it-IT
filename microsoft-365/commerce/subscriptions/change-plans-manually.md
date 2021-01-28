@@ -22,12 +22,12 @@ search.appverid:
 - BEA160
 ROBOTS: NOINDEX
 description: Modificare manualmente le sottoscrizioni acquistando un nuovo abbonamento e assicurando che entrambe le sottoscrizioni siano elencate e attive.
-ms.openlocfilehash: 09557b3556db1e6f17d7a4cd54a88ba34d0f0bd7
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 1127a48ff23c528e3218bae4ccfd063df5e3c26d
+ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48647820"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "50029387"
 ---
 # <a name="change-plans-manually"></a>Modificare i piani manualmente
 
@@ -88,7 +88,7 @@ Le licenze per l'abbonamento corrente verranno rimosse successivamente e da quel
 
 2. Nella pagina **utenti attivi** selezionare l'utente a cui si desidera assegnare una licenza.
 
-3. Nella scheda **licenze e app** di te, espandere **licenze**, selezionare le caselle per le licenze che si desidera assegnare, quindi selezionare **Salva modifiche**.
+3. Nella scheda **licenze e app** espandere **licenze**, selezionare le caselle per le licenze che si desidera assegnare, quindi selezionare **Salva modifiche**.
 
 ### <a name="reassign-licenses-for-multiple-users-at-once"></a>Riassegnare licenze a più utenti contemporaneamente
 

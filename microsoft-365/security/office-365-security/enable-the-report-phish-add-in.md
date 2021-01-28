@@ -3,7 +3,7 @@ title: Abilitare il componente aggiuntivo phishing report
 f1.keywords:
 - NOCSH
 ms.author: siosulli
-author: chrisda
+author: siosulli
 manager: dansimp
 audience: Admin
 ms.topic: how-to
@@ -16,14 +16,14 @@ ms.assetid: 4250c4bc-6102-420b-9e0a-a95064837676
 ms.collection:
 - M365-security-compliance
 description: Informazioni su come abilitare il componente aggiuntivo per il phishing dei report per Outlook e Outlook sul Web, per singoli utenti o per l'intera organizzazione.
-ms.openlocfilehash: 2ea6a9bf9b00fc844aede6daeb9fc11f23c81e4a
-ms.sourcegitcommit: cc354fd54400be0ff0401f60bbe68ed975b69cda
+ms.openlocfilehash: 6d86fdc710539bc3c74eb94f8931ca48a0c992c1
+ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "49865271"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "50029139"
 ---
-# <a name="enable-the-report-phishing-add-in"></a>Abilitare il componente aggiuntivo per il phishing dei report
+# <a name="enable-the-report-phishing-add-in"></a>Abilitare il componente aggiuntivo Segnala phishing
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -87,21 +87,23 @@ Dopo aver installato e abilitato il componente aggiuntivo, vengono visualizzate 
 > [!NOTE]
 > La visualizzazione del componente aggiuntivo nell'organizzazione potrebbe richiedere fino a 12 ore.
 
-1. Nell'interfaccia di amministrazione di Microsoft 365 passare alla pagina **Impostazioni, applicazioni integrate & componenti** aggiuntivi <https://admin.microsoft.com/AdminPortal/Home#/Settings/AddIns> e quindi fare clic su **Distribuisci componente aggiuntivo**.
+1. Nell'interfaccia di amministrazione di Microsoft 365 passare alla pagina Vai alla pagina dei componenti aggiuntivi per le **Impostazioni** , \>  <https://admin.microsoft.com/AdminPortal/Home#/Settings/AddIns> se la pagina del **componente aggiuntivo** non è visualizzata, passare al collegamento **Impostazioni** \> componenti aggiuntivi delle **app integrate** \>  nella parte superiore della pagina delle **app integrate** .
+
+2. Selezionare **Distribuisci componente aggiuntivo nella** parte superiore della pagina e quindi fare clic su **Avanti**.
 
    ![Pagina Servizi e componenti aggiuntivi nell'interfaccia di amministrazione di Microsoft 365](../../media/ServicesAddInsPageNewM365AdminCenter.png)
 
-2. Nel riquadro a comparsa **Distribuisci un nuovo componente aggiuntivo** che viene visualizzato, esaminare le informazioni e quindi fare clic su **Avanti**.
+3. Nel riquadro a comparsa **Distribuisci un nuovo componente aggiuntivo** che viene visualizzato, esaminare le informazioni e quindi fare clic su **Avanti**.
 
-3. Nella pagina successiva fare clic su **Scegli nell'archivio**.
+4. Nella pagina successiva fare clic su **Scegli nell'archivio**.
 
    ![Distribuire una nuova pagina del componente aggiuntivo](../../media/NewAddInScreen2.png)
 
-4. Nella pagina **Seleziona componente aggiuntivo** visualizzata, fare clic nella casella di **ricerca** , immettere il **rapporto di phishing** e quindi fare clic su icona ricerca ricerca  ![ ](../../media/search-icon.png) . Nell'elenco dei risultati, trovare il **rapporto di phishing** e quindi fare clic su **Aggiungi**.
+5. Nella pagina **Seleziona componente aggiuntivo** visualizzata, fare clic nella casella di **ricerca** , immettere il **rapporto di phishing** e quindi fare clic su icona ricerca ricerca  ![ ](../../media/search-icon.png) . Nell'elenco dei risultati, trovare il **rapporto di phishing** e quindi fare clic su **Aggiungi**.
 
-5. Nella finestra di dialogo che viene visualizzata, esaminare la gestione delle licenze e le informazioni sulla privacy, quindi fare clic su **continua**.
+6. Nella finestra di dialogo che viene visualizzata, esaminare la gestione delle licenze e le informazioni sulla privacy, quindi fare clic su **continua**.
 
-6. Nella pagina **Configura componente aggiuntivo** che viene visualizzata, configurare le seguenti impostazioni:
+7. Nella pagina **Configura componente aggiuntivo** che viene visualizzata, configurare le seguenti impostazioni:
 
    - **Utenti assegnati**: selezionare uno dei valori seguenti:
 
@@ -117,9 +119,9 @@ Dopo aver installato e abilitato il componente aggiuntivo, vengono visualizzate 
 
    Al termine, fare clic su **Distribuisci**.
 
-7. Nella pagina **Distribuisci rapporto di phishing** che viene visualizzata, verrà visualizzato un rapporto sullo stato seguito da una conferma che il componente aggiuntivo è stato distribuito. Dopo aver letto le informazioni, fare clic su **Avanti**.
+8. Nella pagina **Distribuisci rapporto di phishing** che viene visualizzata, verrà visualizzato un rapporto sullo stato seguito da una conferma che il componente aggiuntivo è stato distribuito. Dopo aver letto le informazioni, fare clic su **Avanti**.
 
-8. Nella pagina del **componente aggiuntivo annunciare** che viene visualizzata, esaminare le informazioni e quindi fare clic su **Chiudi**.
+9. Nella pagina del **componente aggiuntivo annunciare** che viene visualizzata, esaminare le informazioni e quindi fare clic su **Chiudi**.
 
 ## <a name="learn-how-to-use-the-report-phishing-add-in"></a>Informazioni su come utilizzare il componente aggiuntivo per il phishing dei report
 
@@ -135,7 +137,7 @@ Gli utenti a cui è assegnato il componente aggiuntivo vedranno le icone seguent
 
 ## <a name="review-or-edit-settings-for-the-report-phishing-add-in"></a>Esaminare o modificare le impostazioni per il componente aggiuntivo di phishing dei report
 
-1. Nell'interfaccia di amministrazione di Microsoft 365, accedere alla pagina **servizi & componenti** aggiuntivi in <https://admin.microsoft.com/AdminPortal/Home#/Settings/ServicesAndAddIns> .
+1. Nell'interfaccia di amministrazione di Microsoft 365 passare alla pagina Vai alla pagina dei componenti aggiuntivi per le **Impostazioni** , \>  <https://admin.microsoft.com/AdminPortal/Home#/Settings/AddIns> se la pagina del **componente aggiuntivo** non è visualizzata, passare al collegamento **Impostazioni** \> componenti aggiuntivi delle **app integrate** \>  nella parte superiore della pagina delle **app integrate** .
 
 2. Individuare e selezionare il componente aggiuntivo per il **phishing dei report** .
 

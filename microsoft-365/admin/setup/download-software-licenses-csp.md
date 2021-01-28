@@ -1,5 +1,5 @@
 ---
-title: Scaricare il software perpetuo e i codici di licenza del prodotto
+title: Scaricare il software perpetuo e i codici di licenza del prodotto acquistati tramite il programma Cloud Solution Provider (CSP)
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -18,18 +18,18 @@ search.appverid:
 ms.custom:
 - AdminSurgePortfolio
 description: Informazioni su come scaricare i codici di licenza del software e del prodotto per il software perpetuo acquistato tramite il programma Cloud Solution Provider (CSP).
-ms.openlocfilehash: bd9584e6a160f713cdfbfbcdac876b2e18b94110
-ms.sourcegitcommit: 8849dd6f80217c29f427c7f008d918f30c792240
+ms.openlocfilehash: 9e55161111ae1796e8254a60ecdc693592988386
+ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49877228"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "50029399"
 ---
 # <a name="download-perpetual-software-and-product-license-keys"></a>Scaricare il software perpetuo e i codici di licenza del prodotto
 
 In questo articolo viene illustrato come scaricare i codici di licenza del software e del prodotto per il software perpetuo acquistato tramite il programma Cloud Solution Provider (CSP).
 
-## <a name="before-you-begin"></a>Prima di iniziare
+## <a name="before-you-begin"></a>Informazioni preliminari
 
 Per eseguire la procedura descritta in questo articolo, è necessario essere un amministratore globale. Per altre informazioni, vedere [Informazioni sui ruoli di amministratore](../add-users/about-admin-roles.md).
 

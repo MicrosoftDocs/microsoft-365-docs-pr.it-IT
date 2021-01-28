@@ -3,7 +3,7 @@ title: Invii di amministratore
 f1.keywords:
 - NOCSH
 ms.author: siosulli
-author: chrisda
+author: siosulli
 manager: dansimp
 ms.date: ''
 audience: ITPro
@@ -19,12 +19,12 @@ ms.custom:
 description: Gli amministratori possono imparare a usare il portale per gli invii nel centro sicurezza & Compliance per inviare messaggi di posta elettronica sospetti, sospette mail di phishing, posta indesiderata e altre informazioni potenzialmente nocive, URL e file a Microsoft per l'analisi.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 879a13e7c059495e653b79c424b227fe9f35a498
-ms.sourcegitcommit: 162c01dfaa2fdb3225ce4c24964c1065ce22ed5d
+ms.openlocfilehash: ed417db93bc2f3efa6b85b0ef97c10b5941cd8eb
+ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2021
-ms.locfileid: "49976604"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "50029515"
 ---
 # <a name="use-admin-submission-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>Usare l'Invio dell'amministratore per inviare posta indesiderata sospetta, phishing, URL e file a Microsoft
 

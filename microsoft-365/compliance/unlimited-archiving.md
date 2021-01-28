@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 37cdbb02-a24a-4093-8bdb-2a7f0b3a19ee
 description: Informazioni sull'archiviazione in espansione automatica, che fornisce un archivio di archiviazione illimitato per le cassette postali di Exchange Online.
-ms.openlocfilehash: 5481fd14f281c132475613228c835c72592d2f59
-ms.sourcegitcommit: 33afa334328cc4e3f2474abd611c1411adabd39f
+ms.openlocfilehash: 9692ba27c64f41ac584bb4008a8b860daab031f5
+ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48370424"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "50029432"
 ---
 # <a name="overview-of-unlimited-archiving"></a>Panoramica dell'archiviazione illimitata
 
@@ -57,7 +57,7 @@ Ecco una breve panoramica del processo.
 
 ## <a name="what-gets-moved-to-the-additional-archive-storage-space"></a>Cosa viene spostato nello spazio di archiviazione aggiuntivo dell'archivio?
 
-Per utilizzare in modo efficiente l'archiviazione di un archivio automatico, è possibile che le cartelle vengano spostate. Microsoft 365 determina quali cartelle vengono spostate quando viene aggiunta un'ulteriore archiviazione all'archivio. A volte, quando viene spostata una cartella, vengono create automaticamente una o più sottocartelle e gli elementi della cartella originale vengono distribuiti a queste cartelle per semplificare il processo di spostamento. Quando si visualizza la parte di archiviazione dell'elenco delle cartelle in Outlook, queste sottocartelle vengono visualizzate nella cartella originale.  La convenzione di denominazione utilizzata da Microsoft 365 per denominare queste sottocartelle è ** \<folder name\> _Yyyy (creata in mmm gg, yyyy h_mm)**, dove:
+Per utilizzare in modo efficiente l'archiviazione di un archivio automatico, è possibile che le cartelle vengano spostate. Microsoft 365 determina quali cartelle vengono spostate quando viene aggiunta un'ulteriore archiviazione all'archivio. A volte, quando viene spostata una cartella, vengono create automaticamente una o più sottocartelle e gli elementi della cartella originale vengono distribuiti a queste cartelle per semplificare il processo di spostamento. Quando si visualizza la parte di archiviazione dell'elenco delle cartelle in Outlook, queste sottocartelle vengono visualizzate nella cartella originale.  La convenzione di denominazione utilizzata da Microsoft 365 per denominare queste sottocartelle è **\<folder name\> _Yyyy (creata in mmm gg, yyyy h_mm)**, dove:
 
 - **yyyy** è l'anno in cui sono stati ricevuti i messaggi nella cartella.
 
@@ -90,7 +90,8 @@ Di seguito sono riportate alcune considerazioni da prendere in considerazione qu
 
 - È possibile accedere a qualsiasi cartella nella cassetta postale di archiviazione, incluse quelle che sono state spostate nell'area di archiviazione espansa automaticamente.
 
-- La ricerca di archiviazione espansa automaticamente è disponibile solo in Outlook desktop come di Insiders Build 16.0.12716.10000. La ricerca è disponibile in Outlook per il Web. Analogamente all'archivio online, è possibile cercare gli elementi che sono stati spostati in un'area di archiviazione aggiuntiva solo eseguendo una ricerca nella cartella stessa. Questo significa che è necessario selezionare la cartella di archiviazione nell'elenco delle cartelle per selezionare l'opzione **cartella corrente** come ambito di ricerca. Analogamente, se una cartella in un'area di archiviazione espansa automaticamente contiene sottocartelle, è necessario eseguire la ricerca separatamente in ogni sottocartella.
+- La ricerca di archiviazione espansa automaticamente è disponibile in Outlook per il Web. Analogamente all'archivio online, è possibile cercare gli elementi che sono stati spostati in un'area di archiviazione aggiuntiva solo eseguendo una ricerca nella cartella corrente. Questo significa che è necessario selezionare la cartella di archiviazione nell'elenco delle cartelle e quindi selezionare una singola cartella come ambito di ricerca. Analogamente, se una cartella in un'area di archiviazione espansa automaticamente contiene sottocartelle, è necessario eseguire la ricerca separatamente in ogni sottocartella.
+- La ricerca di archiviazione espansa automaticamente è disponibile in Outlook desktop nel canale corrente (anteprima). All'interno di questa anteprima, è disponibile l'ambito della cassetta postale corrente, che consente di cercare l'archivio espanso automaticamente. Per ulteriori informazioni su questa e altre funzionalità di supporto per la ricerca Microsoft, vedere [come Outlook per Windows connesso a Exchange Online utilizza Microsoft Search](https://techcommunity.microsoft.com/t5/outlook-global-customer-service/how-outlook-for-windows-connected-to-exchange-online-utilizes/ba-p/1715045). 
 
 - I conteggi degli elementi in Outlook e i conteggi di lettura/non lettura (in Outlook e Outlook sul Web) in un archivio con espansione automatica potrebbero non essere accurati.
 
@@ -102,7 +103,7 @@ Di seguito sono riportate alcune considerazioni da prendere in considerazione qu
 
 In questa sezione viene illustrata la funzionalità tra l'archiviazione in espansione automatica e altre funzionalità di conformità e governance dei dati.
 
-- **eDiscovery:** Quando si utilizza uno strumento di eDiscovery, ad esempio la ricerca di contenuto o eDiscovery sul posto, vengono cercate anche le aree di archiviazione aggiuntive in un archivio con espansione automatica.
+- **eDiscovery:** Quando si utilizza uno strumento di eDiscovery, ad esempio la ricerca di contenuto o In-Place eDiscovery, vengono ricercate anche le aree di archiviazione aggiuntive in un archivio con espansione automatica.
 
 - **Conservazione:** Quando si inserisce una cassetta postale in attesa utilizzando strumenti come il blocco per controversia legale in Exchange Online o eDiscovery e i criteri di conservazione nel centro sicurezza e conformità, anche il contenuto di un archivio espanso automatico viene messo in attesa.
 
@@ -110,6 +111,6 @@ In questa sezione viene illustrata la funzionalità tra l'archiviazione in espan
 
 - **Servizio di importazione:** È possibile utilizzare il servizio di importazione di Office 365 per importare i file PST nell'archivio automatico espanso di un utente. È possibile importare fino a 100 GB di dati da file PST nella cassetta postale di archiviazione dell'utente.
 
-## <a name="more-information"></a>Altre informazioni
+## <a name="more-information"></a>Ulteriori informazioni
 
 Per ulteriori informazioni tecniche sull'archiviazione in espansione automatica, vedere [Microsoft 365: auto-Expanding Archives FAQ](https://techcommunity.microsoft.com/t5/exchange-team-blog/office-365-auto-expanding-archives-faq/ba-p/607784).

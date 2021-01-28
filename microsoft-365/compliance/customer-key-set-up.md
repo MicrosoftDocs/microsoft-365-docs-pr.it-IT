@@ -13,31 +13,31 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Informazioni su come configurare la chiave del cliente per Microsoft 365 per Exchange Online, Skype for business, SharePoint Online, OneDrive for business e i file teams.
-ms.openlocfilehash: a89b5cb4144de3b548c7ac328f0be775b4262cdc
-ms.sourcegitcommit: 8a6540df9d63db1ffb69711381dc44fc2fdaf547
+ms.openlocfilehash: 94702cecb37686c3996c5ed70b1810a825bb2ff6
+ms.sourcegitcommit: b3bb5bf5efa197ef8b16a33401b0b4f5663d3aa0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/29/2020
-ms.locfileid: "49736065"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "50032613"
 ---
 # <a name="set-up-customer-key-at-the-application-level"></a>Configurare il codice "Customer Key" a livello di applicazione
 
 Con il codice "Customer Key", è possibile controllare le chiavi di crittografia dell'organizzazione e quindi configurare Microsoft 365 per utilizzarle per crittografare i dati a riposo nei data center di Microsoft. In altre parole, la chiave del cliente consente ai clienti di aggiungere un livello di crittografia che appartiene a loro, con le chiavi. Data at rest include i dati di Exchange Online e Skype for business archiviati nelle cassette postali e nei file archiviati in SharePoint Online e OneDrive for business.
 
-È necessario configurare Azure prima di poter utilizzare la chiave del cliente per Office 365. In questo argomento vengono descritti i passaggi da seguire per creare e configurare le risorse di Azure necessarie, quindi vengono illustrati i passaggi per la configurazione della chiave del cliente in Office 365. Dopo aver completato l'installazione di Azure, è possibile stabilire quali criteri e quindi quali chiavi, per assegnare alle cassette postali e ai file nell'organizzazione. Le cassette postali e i file per cui non si assegna un criterio utilizzeranno i criteri di crittografia controllati e gestiti da Microsoft. Per ulteriori informazioni sulla chiave del cliente o per una panoramica generale, vedere [Service Encryption with Customer Key in Office 365](customer-key-overview.md).
+È necessario configurare Azure prima di poter utilizzare la chiave del cliente per Office 365. In questo articolo vengono illustrati i passaggi da seguire per creare e configurare le risorse di Azure necessarie, quindi vengono illustrati i passaggi per la configurazione della chiave del cliente in Office 365. Dopo aver completato l'installazione di Azure, è possibile stabilire quali criteri e quindi quali chiavi, per assegnare alle cassette postali e ai file nell'organizzazione. Le cassette postali e i file per cui non si assegna un criterio utilizzeranno i criteri di crittografia controllati e gestiti da Microsoft. Per ulteriori informazioni sulla chiave del cliente o per una panoramica generale, vedere [Service Encryption with Customer Key in Office 365](customer-key-overview.md).
   
 > [!IMPORTANT]
-> È consigliabile attenersi alle procedure consigliate riportate in questo argomento. Questi sono denominati **Suggerimento** e **importante**. La chiave Customer consente di controllare le chiavi di crittografia radice il cui ambito può essere grande come l'intera organizzazione. Questo significa che gli errori commessi con queste chiavi possono avere un impatto generale e possono causare interruzioni del servizio o perdita irrevocabile dei dati.
+> È consigliabile attenersi alle procedure consigliate riportate in questo articolo. Questi sono denominati **Suggerimento** e **importante**. La chiave Customer consente di controllare le chiavi di crittografia radice il cui ambito può essere grande come l'intera organizzazione. Questo significa che gli errori commessi con queste chiavi possono avere un impatto generale e possono causare interruzioni del servizio o perdita irrevocabile dei dati.
   
 ## <a name="before-you-set-up-customer-key"></a>Prima di configurare la chiave del cliente
 
 Prima di iniziare, verificare di disporre delle licenze appropriate per l'organizzazione. Utilizzare una sottoscrizione a pagamento e fatturata di Azure utilizzando un contratto Enterprise o un provider di servizi cloud. Gli abbonamenti di Azure acquistati con pay as you go plans o con una carta di credito non sono supportati per la chiave del cliente. A partire dal 1 ° aprile 2020, la chiave del cliente in Office 365 è disponibile in Office 365 E5, M365 E5, M365 E5 compliance e M365 E5 Information Protection & SKU. Microsoft Office 365 Advanced Compliance SKU non è più disponibile per l'ottenimento di nuove licenze. Le licenze di conformità avanzate di Office 365 continueranno a essere supportate.
 
-Per informazioni sui concetti e le procedure illustrate in questo argomento, vedere la documentazione di [Azure Key Vault](https://docs.microsoft.com/azure/key-vault/) . Inoltre, acquisire familiarità con i termini utilizzati in Azure, ad esempio, il [tenant di Azure ad](https://docs.microsoft.com/previous-versions/azure/azure-services/jj573650(v=azure.100)#what-is-an-azure-ad-tenant).
+Per informazioni sui concetti e le procedure illustrate in questo articolo, vedere la documentazione di [Azure Key Vault](https://docs.microsoft.com/azure/key-vault/) . Inoltre, acquisire familiarità con i termini utilizzati in Azure, ad esempio, il [tenant di Azure ad](https://docs.microsoft.com/previous-versions/azure/azure-services/jj573650(v=azure.100)#what-is-an-azure-ad-tenant).
 
 FastTrack viene utilizzato solo per raccogliere le informazioni necessarie per la configurazione del tenant e del servizio utilizzate per la registrazione per la chiave del cliente. Le offerte chiave del cliente sono pubblicate tramite FastTrack in modo che sia opportuno che i partner inviino le informazioni richieste utilizzando lo stesso metodo. FastTrack consente inoltre di archiviare facilmente i dati forniti nell'offerta.
   
-Se è necessario ulteriore supporto oltre la documentazione, contattare Microsoft Consulting Services (MCS), Premier Field Engineering (PFE) o un partner Microsoft per assistenza. Per fornire commenti e suggerimenti sulla chiave del cliente, inclusa la documentazione, inviare le proprie idee, consigli e prospettive a customerkeyfeedback@microsoft.com.
+Se si necessita di maggiore supporto oltre la documentazione, contattare Microsoft Consulting Services (MCS), Premier Field Engineering (PFE) o un partner Microsoft per assistenza. Per fornire commenti e suggerimenti sulla chiave del cliente, inclusa la documentazione, inviare le proprie idee, consigli e prospettive a customerkeyfeedback@microsoft.com.
   
 ## <a name="overview-of-steps-to-set-up-customer-key"></a>Panoramica della procedura per configurare la chiave del cliente
 
@@ -105,11 +105,11 @@ Non esiste alcun limite pratico per il numero di sottoscrizioni di Azure che è 
   
 ### <a name="submit-a-request-to-activate-customer-key-for-office-365"></a>Inviare una richiesta per attivare la chiave del cliente per Office 365
 
-Dopo aver completato i passaggi di Azure, è necessario inviare una richiesta di offerta nel [portale Microsoft FastTrack](https://fasttrack.microsoft.com/). Dopo aver inoltrato una richiesta tramite il portale Web di FastTrack, Microsoft verifica i dati di configurazione del Vault Key di Azure e le informazioni di contatto fornite. Le selezioni che vengono apportate nel modulo di offerta per quanto riguarda i funzionari autorizzati dell'organizzazione sono critiche e necessarie per il completamento della registrazione a chiave del cliente. Gli agenti dell'organizzazione selezionati nel modulo saranno utilizzati per garantire l'autenticità di qualsiasi richiesta di revocare e distruggere tutte le chiavi utilizzate con un criterio di crittografia dei dati chiave del cliente. È necessario eseguire questo passaggio una volta per attivare il codice "Customer Key" per Exchange Online e Skype for business e una seconda volta per attivare la chiave del cliente per SharePoint Online e OneDrive for business.
+Dopo aver completato i passaggi di Azure, è necessario inviare una richiesta di offerta nel [portale Microsoft FastTrack](https://fasttrack.microsoft.com/). Dopo aver inoltrato una richiesta tramite il portale Web di FastTrack, Microsoft verifica i dati di configurazione del Vault Key di Azure e le informazioni di contatto fornite. Le selezioni che vengono apportate nel modulo di offerta sui responsabili autorizzati dell'organizzazione sono critiche e necessarie per il completamento della registrazione a chiave del cliente. I responsabili dell'organizzazione assicurano l'autenticità di qualsiasi richiesta di revocare e distruggere tutte le chiavi utilizzate con un criterio di crittografia dei dati chiave del cliente. È necessario eseguire questo passaggio una volta per attivare il codice "Customer Key" per Exchange Online e Skype for business e una seconda volta per attivare la chiave del cliente per SharePoint Online e OneDrive for business.
   
 Per inviare un'offerta per attivare il codice "Customer Key", eseguire la procedura seguente:
   
-1. Utilizzando un account aziendale o dell'Istituto di istruzione con autorizzazioni di amministratore globale nell'organizzazione, eseguire l'accesso al [portale di Microsoft FastTrack](https://fasttrack.microsoft.com/).
+1. Utilizzando un account aziendale o dell'Istituto di istruzione con autorizzazioni di amministratore globale nell'organizzazione, accedere al [portale di Microsoft FastTrack](https://fasttrack.microsoft.com/).
 
 2. Dopo aver effettuato l'accesso, passare al **Dashboard**.
 
@@ -127,36 +127,35 @@ Per inviare un'offerta per attivare il codice "Customer Key", eseguire la proced
 
 ### <a name="register-azure-subscriptions-to-use-a-mandatory-retention-period"></a>Registrare le sottoscrizioni di Azure per l'utilizzo di un periodo di conservazione obbligatorio
 
-La perdita temporanea o permanente delle chiavi di crittografia radice può essere molto dirompente o addirittura catastrofica per l'utilizzo del servizio e può causare una perdita di dati. Per questo motivo, le risorse utilizzate con la chiave del cliente richiedono una protezione sicura. Tutte le risorse di Azure utilizzate con la chiave del cliente offrono meccanismi di protezione oltre la configurazione predefinita. Le sottoscrizioni di Azure possono essere contrassegnate o registrate in un modo che impedirà l'annullamento immediato e irrevocabile. Si tratta della registrazione di un periodo di conservazione obbligatorio. I passaggi necessari per registrare le sottoscrizioni di Azure per un periodo di conservazione obbligatorio richiedono la collaborazione con il team di Microsoft 365. Questo processo può richiedere da uno a cinque giorni lavorativi. In precedenza, questo è stato talvolta definito come "non annullare".
+La perdita temporanea o permanente delle chiavi di crittografia radice può essere un'operazione di disturbo o addirittura catastrofica per il servizio e può provocare la perdita di dati. Per questo motivo, le risorse utilizzate con la chiave del cliente richiedono una protezione sicura. Tutte le risorse di Azure utilizzate con la chiave del cliente offrono meccanismi di protezione oltre la configurazione predefinita. È possibile contrassegnare o registrare le sottoscrizioni di Azure per un *periodo di conservazione obbligatorio*. Un periodo di conservazione obbligatorio impedisce la cancellazione immediata e irrevocabile della sottoscrizione di Azure. I passaggi necessari per registrare le sottoscrizioni di Azure per un periodo di conservazione obbligatorio richiedono la collaborazione con il team di Microsoft 365. Questo processo può richiedere da uno a cinque giorni lavorativi. In precedenza, il periodo di conservazione obbligatorio è stato talvolta denominato "non annullare".
   
-Prima di contattare il team di Microsoft 365, è necessario eseguire i passaggi seguenti per ogni sottoscrizione di Azure utilizzata con la chiave del cliente. Prima di iniziare, assicurarsi di avere installato il modulo di [Azure PowerShell AZ](https://docs.microsoft.com/powershell/azure/new-azureps-module-az) .
+Prima di contattare il team di Microsoft 365, è necessario eseguire le operazioni seguenti per ogni sottoscrizione di Azure utilizzata con la chiave del cliente. Prima di iniziare, assicurarsi di avere installato il modulo di [Azure PowerShell AZ](https://docs.microsoft.com/powershell/azure/new-azureps-module-az) .
   
 1. Accedere con PowerShell di Azure. Per istruzioni, vedere [accedere con Azure PowerShell](https://docs.microsoft.com/powershell/azure/authenticate-azureps).
 
-2. Eseguire il cmdlet Register-AzProviderFeature per registrare gli abbonamenti per l'utilizzo di un periodo di conservazione obbligatorio. Eseguire questa azione per ogni sottoscrizione.
+2. Eseguire il cmdlet Register-AzProviderFeature per registrare gli abbonamenti per l'utilizzo di un periodo di conservazione obbligatorio. Completare questa azione per ogni sottoscrizione.
 
    ```powershell
    Set-AzContext -SubscriptionId <SubscriptionId>
    Register-AzProviderFeature -FeatureName mandatoryRetentionPeriodEnabled -ProviderNamespace Microsoft.Resources
    ```
 
-3. Contattare Microsoft per eseguire il processo di completamento. Per il team di SharePoint e OneDrive for business, contattare [Spock@microsoft.com](mailto:spock@microsoft.com). Per Exchange Online e Skype for business, contattare [exock@microsoft.com](mailto:exock@microsoft.com). Includere quanto segue nel messaggio di posta elettronica:
+3. Contattare Microsoft per completare il processo. Per il team di SharePoint e OneDrive for business, contattare [Spock@microsoft.com](mailto:spock@microsoft.com). Per Exchange Online e Skype for business, contattare [exock@microsoft.com](mailto:exock@microsoft.com). Includere le seguenti informazioni nel messaggio di posta elettronica:
 
-   **Oggetto**: chiave del cliente per \<*Your tenant's fully-qualified domain name*\>
+   **Oggetto**: chiave del cliente per \<*Your tenant's fully qualified domain name*\>
 
-   **Corpo**: ID di sottoscrizione per i quali si desidera che il periodo di conservazione obbligatorio sia stato completato.
-   L'output di Get-AzProviderFeature per ogni sottoscrizione.
+   **Corpo**: includere gli ID di sottoscrizione per i quali si desidera completare il periodo di conservazione obbligatorio e l'output di Get-AzProviderFeature per ogni sottoscrizione.
 
    Il contratto di servizio per il completamento di questo processo è di cinque giorni lavorativi una volta che Microsoft è stato informato (e verificato) di aver registrato gli abbonamenti per l'utilizzo di un periodo di conservazione obbligatorio.
 
-4. Dopo aver ricevuto la notifica da parte di Microsoft che la registrazione è stata completata, verificare lo stato della registrazione eseguendo il comando Get-AzProviderFeature come indicato di seguito. Se verificato, il comando Get-AzProviderFeature restituisce il valore **registrato** per la proprietà **state di registrazione** . Eseguire questa azione per ogni sottoscrizione.
+4. Dopo aver ricevuto la notifica da parte di Microsoft che la registrazione è stata completata, verificare lo stato della registrazione eseguendo il comando Get-AzProviderFeature come indicato di seguito. Se verificato, il comando Get-AzProviderFeature restituisce il valore **registrato** per la proprietà **state di registrazione** . Completare questo passaggio per ogni sottoscrizione.
 
    ```powershell
    Set-AzContext -SubscriptionId <SubscriptionId>
    Get-AzProviderFeature -ProviderNamespace Microsoft.Resources -FeatureName mandatoryRetentionPeriodEnabled
    ```
 
-5. Per completare il processo, eseguire il comando Register-AzResourceProvider. Eseguire questa azione per ogni sottoscrizione.
+5. Per completare il processo, eseguire il comando Register-AzResourceProvider. Completare questo passaggio per ogni sottoscrizione.
 
    ```powershell
    Set-AzContext -SubscriptionId <SubscriptionId>
@@ -167,18 +166,18 @@ Prima di contattare il team di Microsoft 365, è necessario eseguire i passaggi 
 
 La procedura per creare un Vault chiave è documentata per [iniziare con Azure Key Vault](https://azure.microsoft.com/documentation/articles/key-vault-get-started/), che illustra l'installazione e l'avvio di Azure PowerShell, la connessione all'abbonamento di Azure, la creazione di un gruppo di risorse e la creazione di un Vault Key in tale gruppo di risorse.
   
-Quando si crea un Vault chiave, è necessario scegliere un SKU: standard o Premium. La SKU standard consente di proteggere i tasti del Vault Key di Azure con il software: non vi è alcuna protezione della chiave HSM (hardware Security Module) e la SKU Premium consente l'utilizzo di HSM per la protezione delle chiavi del Vault Key. La chiave Customer accetta i Vault chiave che utilizzano SKU, anche se Microsoft consiglia vivamente di utilizzare solo la SKU Premium. Il costo delle operazioni con chiavi di entrambi i tipi è lo stesso, quindi l'unica differenza di costo è il costo al mese per ogni chiave protetta da HSM. Per informazioni dettagliate, vedere [Key Vault pricing](https://azure.microsoft.com/pricing/details/key-vault/) .
+Quando si crea un Vault chiave, è necessario scegliere un SKU: standard o Premium. La SKU standard consente di proteggere i tasti del Vault Key di Azure con il software: non c'è nessuna protezione chiave del modulo di sicurezza hardware (HSM) e la SKU Premium consente l'utilizzo di HSM per la protezione delle chiavi del Vault Key. La chiave Customer accetta i Vault chiave che utilizzano SKU, anche se Microsoft consiglia vivamente di utilizzare solo la SKU Premium. Il costo delle operazioni con chiavi di entrambi i tipi è lo stesso, quindi l'unica differenza di costo è il costo al mese per ogni chiave protetta da HSM. Per informazioni dettagliate, vedere [Key Vault pricing](https://azure.microsoft.com/pricing/details/key-vault/) .
   
 > [!IMPORTANT]
 > Utilizzare i Vault chiave SKU Premium e le chiavi con protezione HSM per i dati di produzione e utilizzare solo i Vault e le chiavi standard SKU per il testing e la convalida.
   
-Per ogni servizio Microsoft 365 con cui si utilizzerà la chiave del cliente, creare un Vault Key in ognuna delle due sottoscrizioni di Azure create. Ad esempio, per Exchange Online e Skype for business solo o SharePoint Online e OneDrive for business, si creerà solo una coppia di volte. Per abilitare la chiave del cliente per Exchange Online e SharePoint Online, è possibile creare due coppie di volte chiave.
+Per ogni servizio Microsoft 365 con cui si utilizzerà la chiave del cliente, creare un Vault Key in ognuna delle due sottoscrizioni di Azure create. Ad esempio, per Exchange Online e Skype for business solo o SharePoint Online e OneDrive for business, è possibile creare solo una coppia di volte. Per abilitare la chiave del cliente per Exchange Online e SharePoint Online, è possibile creare due coppie di volte chiave.
   
-Utilizzare una convenzione di denominazione per i Vault chiave che riflette l'utilizzo previsto dei criteri di crittografia dei dati con cui verranno associati i Vault. Vedere la sezione procedure consigliate di seguito per la denominazione dei consigli convenzioni.
+Utilizzare una convenzione di denominazione per i Vault chiave che riflette l'utilizzo previsto della funzionalità di protezione dei nomi con cui verranno associati i Vault. Vedere la sezione procedure consigliate di seguito per la denominazione dei consigli convenzioni.
   
-Creare un set di volte separato e abbinato per ogni criterio di crittografia dei dati. Per Exchange Online, l'ambito di un criterio di crittografia dei dati viene scelto dall'utente quando si assegna il criterio alla cassetta postale. Una cassetta postale può avere un solo criterio assegnato ed è possibile creare fino a 50 criteri. Per SharePoint Online l'ambito di un criterio è costituito da tutti i dati all'interno di un'organizzazione in una posizione geografica o _Geo_.
+Creare un set di volte separato e abbinato per ogni criterio di crittografia dei dati. Per Exchange Online, l'ambito di un criterio di crittografia dei dati viene scelto dall'utente quando si assegna il criterio alla cassetta postale. Una cassetta postale può avere un solo criterio assegnato ed è possibile creare fino a 50 criteri. L'ambito di un criterio di SharePoint Online include tutti i dati all'interno di un'organizzazione in una posizione geografica o _Geo_.
 
-La creazione di Vault chiave richiede anche la creazione di gruppi di risorse di Azure, poiché è necessario che la capacità di archiviazione (anche se molto piccola) e la registrazione Key Vault, se abilitata, generano anche dati archiviati. Come procedura consigliata, Microsoft consiglia di utilizzare amministratori distinti per gestire ogni gruppo di risorse, con l'amministrazione allineata al set di amministratori che gestirà tutte le risorse chiave dei clienti correlate.
+La creazione di Vault chiave richiede anche la creazione di gruppi di risorse di Azure, poiché è necessario che la capacità di archiviazione (anche se di piccole dimensioni) e la registrazione Key Vault, se abilitata, generano anche dati archiviati. Come procedura consigliata, Microsoft consiglia di utilizzare amministratori distinti per gestire ogni gruppo di risorse, con l'amministrazione allineata al set di amministratori che gestirà tutte le risorse chiave dei clienti correlate.
   
 > [!IMPORTANT]
 > Per massimizzare la disponibilità, i Vault delle chiavi devono trovarsi nelle aree geografiche vicino al servizio Microsoft 365. Ad esempio, se l'organizzazione di Exchange Online è in Nord America, inserire i Vault chiave in Nord America. Se l'organizzazione di Exchange Online è in Europa, inserire i Vault chiave in Europa.
@@ -189,14 +188,14 @@ La creazione di Vault chiave richiede anche la creazione di gruppi di risorse di
   
 ### <a name="assign-permissions-to-each-key-vault"></a>Assegnare le autorizzazioni per ogni Vault chiave
 
-Per ogni Vault chiave, sarà necessario definire tre Set distinti di autorizzazioni per la chiave del cliente, a seconda dell'implementazione. Ad esempio, sarà necessario definire un set di autorizzazioni per ognuno dei seguenti elementi:
+È necessario definire tre set di autorizzazioni distinti per ogni Vault chiave, a seconda dell'implementazione. Ad esempio, sarà necessario definire un set di autorizzazioni per ognuno dei seguenti elementi:
   
-- **Amministratori chiave del Vault** che eseguono la gestione quotidiana del Vault Key per l'organizzazione. Tali attività includono backup, creazione, recupero, importazione, elenco e ripristino.
+- Gli **amministratori delle Key Vault** che eseguono quotidianamente la gestione del Vault Key per l'organizzazione. Tali attività includono backup, creazione, recupero, importazione, elenco e ripristino.
 
   > [!IMPORTANT]
   > Il set di autorizzazioni assegnate agli amministratori delle chiavi del Vault non include l'autorizzazione per l'eliminazione delle chiavi. Si tratta di una prassi intenzionale e importante. L'eliminazione delle chiavi di crittografia non è in genere completata, poiché tale operazione distrugge definitivamente i dati. Come procedura consigliata, non concedere questa autorizzazione agli amministratori delle chiavi del Vault per impostazione predefinita. Al contrario, è necessario riservare questo elemento ai collaboratori del Vault Key e assegnarlo solo a un amministratore a breve termine dopo aver compreso la comprensione delle conseguenze.
   
-  Per assegnare queste autorizzazioni a un utente dell'organizzazione, eseguire l'accesso alla sottoscrizione di Azure con Azure PowerShell. Per istruzioni, vedere [accedere con Azure PowerShell](https://docs.microsoft.com/powershell/azure/authenticate-azureps).
+  Per assegnare le autorizzazioni a un utente dell'organizzazione, eseguire l'accesso alla sottoscrizione di Azure con Azure PowerShell. Per istruzioni, vedere [accedere con Azure PowerShell](https://docs.microsoft.com/powershell/azure/authenticate-azureps).
 
 - Eseguire il cmdlet Set-AzKeyVaultAccessPolicy per assegnare le autorizzazioni necessarie.
 
@@ -210,9 +209,9 @@ Per ogni Vault chiave, sarà necessario definire tre Set distinti di autorizzazi
    Set-AzKeyVaultAccessPolicy -VaultName Contoso-O365EX-NA-VaultA1 -UserPrincipalName alice@contoso.com -PermissionsToKeys create,import,list,get,backup,restore
    ```
 
-- **Key Vault Contributors** che possono modificare le autorizzazioni per il Vault Key di Azure stesso. È necessario modificare queste autorizzazioni quando i dipendenti lasciano o entrano in un team o in una situazione estremamente rara in cui gli amministratori delle Key Vault devono legittimamente disporre dell'autorizzazione per eliminare o ripristinare una chiave. Questo set di collaboratori chiave del Vault deve essere concesso al ruolo **collaboratore** nel Vault Key. È possibile assegnare questo ruolo tramite Gestione risorse di Azure. Per la procedura dettagliata, vedere [utilizzare Role-Based controllo di accesso per gestire l'accesso alle risorse di sottoscrizione di Azure](https://docs.microsoft.com/azure/active-directory/role-based-access-control-configure). L'amministratore che crea una sottoscrizione ha questo accesso in modo implicito, nonché la possibilità di assegnare altri amministratori al ruolo Collaboratore.
+- **Key Vault Contributors** che possono modificare le autorizzazioni per il Vault Key di Azure stesso. È necessario modificare queste autorizzazioni quando i dipendenti lasciano o si uniscono al team. Nella rara situazione in cui gli amministratori delle Key Vault devono legittimamente disporre dell'autorizzazione per eliminare o ripristinare una chiave, è necessario modificare anche le autorizzazioni. Questo set di collaboratori chiave del Vault deve essere concesso al ruolo **collaboratore** nel Vault Key. È possibile assegnare questo ruolo tramite Gestione risorse di Azure. Per la procedura dettagliata, vedere [utilizzare Role-Based controllo di accesso per gestire l'accesso alle risorse di sottoscrizione di Azure](https://docs.microsoft.com/azure/active-directory/role-based-access-control-configure). L'amministratore che crea una sottoscrizione ha questo accesso in modo implicito e la possibilità di assegnare altri amministratori al ruolo Collaboratore.
 
-- Se si intende utilizzare la chiave del cliente con Exchange Online e Skype for business, è necessario concedere l'autorizzazione a Microsoft 365 per utilizzare il Vault Key per conto di Exchange Online e Skype for business. Analogamente, se si intende utilizzare Customer Key con SharePoint Online e OneDrive for business, è necessario aggiungere le autorizzazioni per Microsoft 365 per utilizzare il Vault Key per conto di SharePoint Online e OneDrive for business. Per concedere l'autorizzazione a Microsoft 365, eseguire il cmdlet **set-AzKeyVaultAccessPolicy** utilizzando la sintassi seguente: 
+- Se si intende utilizzare la chiave del cliente con Exchange Online e Skype for business, è necessario concedere l'autorizzazione a Microsoft 365 per utilizzare il Vault Key per conto di Exchange Online e Skype for business. Analogamente, se si intende utilizzare Customer Key con SharePoint Online e OneDrive for business, è necessario aggiungere le autorizzazioni per Microsoft 365 per utilizzare il Vault Key per conto di SharePoint Online e OneDrive for business. Per concedere l'autorizzazione a Microsoft 365, eseguire il cmdlet **set-AzKeyVaultAccessPolicy** utilizzando la sintassi seguente:
 
    ```powershell
    Set-AzKeyVaultAccessPolicy -VaultName <vault name> -PermissionsToKeys wrapKey,unwrapKey,get -ServicePrincipalName <Office 365 appID>
@@ -263,7 +262,7 @@ Per abilitare l'eliminazione temporanea nei Vault delle chiavi, eseguire la proc
 
 ### <a name="add-a-key-to-each-key-vault-either-by-creating-or-importing-a-key"></a>Aggiungere una chiave a ogni Vault chiave creando o importando una chiave
 
-Esistono due modi per aggiungere chiavi a un Vault Key di Azure; è possibile creare una chiave direttamente in Key Vault oppure è possibile importare una chiave. La creazione di una chiave direttamente in Key Vault è il metodo meno complicato, mentre l'importazione di una chiave fornisce il controllo totale sul modo in cui viene generata la chiave. È necessario utilizzare i tasti RSA. Il Vault Key di Azure non supporta il wrapping e lo scartamento con i tasti della curva ellittica.
+Esistono due modi per aggiungere chiavi a un Vault Key di Azure; è possibile creare una chiave direttamente in Key Vault oppure è possibile importare una chiave. La creazione di una chiave direttamente in Key Vault è il metodo meno complicato, mentre l'importazione di una chiave fornisce il controllo totale sul modo in cui viene generata la chiave. Utilizzare le chiavi RSA. Il Vault Key di Azure non supporta il wrapping e lo scartamento con i tasti della curva ellittica.
   
 Per creare una chiave direttamente nel Vault chiave, eseguire il cmdlet [Add-AzKeyVaultKey](https://docs.microsoft.com/powershell/module/az.keyvault/add-azkeyvaultkey) nel modo seguente:
   
@@ -290,7 +289,7 @@ Add-AzKeyVaultKey -VaultName Contoso-O365EX-NA-VaultA1 -Name Contoso-O365EX-NA-V
 
 Per importare una chiave direttamente nel Vault chiave, è necessario disporre di un modulo di sicurezza hardware di nCipher nShield.
   
-Alcune organizzazioni preferiscono questo approccio per stabilire la provenienza delle chiavi e quindi questo metodo fornisce anche gli elementi seguenti:
+Alcune organizzazioni preferiscono questo approccio per stabilire la provenienza delle chiavi e quindi questo metodo fornisce anche le attestazioni seguenti:
   
 - Il set di strumenti utilizzato per l'importazione include l'attestazione di nCipher che la chiave Key Exchange (KEK) utilizzata per crittografare la chiave che si genera non è esportabile e che viene generata all'interno di un HSM genuino prodotto da nCipher.
 
@@ -300,7 +299,7 @@ Verificare con il gruppo di sicurezza se sono necessarie le attestazioni sopra r
   
 ### <a name="check-the-recovery-level-of-your-keys"></a>Controllare il livello di ripristino delle chiavi
 
-Microsoft 365 richiede che la sottoscrizione di Azure Key Vault sia impostata su non Annulla e che le chiavi utilizzate dal codice "Customer Key" siano abilitate per l'eliminazione temporanea. È possibile confermarlo esaminando il livello di ripristino delle chiavi.
+Microsoft 365 richiede che la sottoscrizione di Azure Key Vault sia impostata su non Annulla e che le chiavi utilizzate dal codice "Customer Key" siano abilitate per l'eliminazione temporanea. È possibile confermare le impostazioni della sottoscrizione esaminando il livello di ripristino delle chiavi.
   
 Per controllare il livello di ripristino di una chiave, in Azure PowerShell, eseguire il cmdlet Get-AzKeyVaultKey come indicato di seguito:
   
@@ -308,11 +307,11 @@ Per controllare il livello di ripristino di una chiave, in Azure PowerShell, ese
 (Get-AzKeyVaultKey -VaultName <vault name> -Name <key name>).Attributes
 ```
 
-Se la proprietà del _livello di recupero_ restituisce un valore diverso da quello di **+ ProtectedSubscription**, sarà necessario esaminare questo articolo e assicurarsi di aver seguito tutti i passaggi necessari per inserire la sottoscrizione nell'elenco non annullare e di aver attivato l'eliminazione temporanea su ognuna delle volte chiave.
+Se la proprietà del _livello di recupero_ restituisce un valore diverso da quello di **+ ProtectedSubscription**, assicurarsi di aver inserito la sottoscrizione nell'elenco non annullare e di avere attivato l'eliminazione temporanea su ognuna delle volte chiave.
   
 ### <a name="back-up-azure-key-vault"></a>Backup del Vault delle chiavi di Azure
 
-Subito dopo la creazione o qualsiasi modifica apportata a una chiave, eseguire un backup e archiviare copie del backup, sia online che offline. Le copie offline non devono essere connesse a nessuna rete, ad esempio in una struttura di archiviazione sicura o commerciale fisica. Almeno una copia del backup deve essere archiviata in un percorso che sarà accessibile in caso di emergenza. Gli oggetti BLOB di backup sono gli unici strumenti per ripristinare il materiale chiave se una chiave del Vault Key deve essere definitivamente distrutta o altrimenti resa inutilizzabile. Le chiavi esterne all'archivio delle chiavi di Azure e sono state importate in Azure Key Vault non sono qualificate come backup poiché i metadati necessari per la chiave del cliente per l'utilizzo della chiave non sono presenti con la chiave esterna. È possibile utilizzare solo un backup da Vault Key di Azure per le operazioni di ripristino con il codice "Customer Key". Pertanto, è essenziale che un backup del Vault Key di Azure venga eseguito dopo il caricamento o la creazione di una chiave.
+Subito dopo la creazione o qualsiasi modifica apportata a una chiave, eseguire un backup e archiviare copie del backup, sia online che offline. Le copie offline non devono essere connesse a nessuna rete, ad esempio in una struttura di archiviazione sicura o commerciale fisica. Almeno una copia del backup deve essere archiviata in un percorso che sarà accessibile in caso di emergenza. Gli oggetti BLOB di backup sono gli unici strumenti per ripristinare il materiale chiave se una chiave del Vault Key deve essere definitivamente distrutta o altrimenti resa inutilizzabile. Le chiavi esterne all'archivio delle chiavi di Azure e sono state importate in Azure Key Vault non sono qualificate come backup poiché i metadati necessari per la chiave del cliente per l'utilizzo della chiave non sono presenti con la chiave esterna. È possibile utilizzare solo un backup da Vault Key di Azure per le operazioni di ripristino con il codice "Customer Key". Pertanto, è necessario creare una copia di backup del Vault Key di Azure dopo aver caricato o creato una chiave.
   
 Per creare un backup di una chiave del Vault Key di Azure, eseguire il cmdlet [backup-AzKeyVaultKey](https://docs.microsoft.com/powershell/module/az.keyvault/backup-azkeyvaultkey) come indicato di seguito:
 
@@ -336,9 +335,9 @@ Backup-AzKeyVaultKey -VaultName Contoso-O365EX-NA-VaultA1 -Name Contoso-O365EX-N
 
 ### <a name="validate-azure-key-vault-configuration-settings"></a>Convalidare le impostazioni di configurazione di Azure Key Vault
 
-L'esecuzione della convalida prima di utilizzare le chiavi in una funzionalità DEP è facoltativa, ma è consigliabile. In particolare, se si utilizzano i passaggi necessari per configurare le chiavi e le volte diverse da quelle descritte in questo argomento, è consigliabile convalidare l'integrità delle risorse del Vault Key di Azure prima di configurare la chiave del cliente.
+La convalida prima di utilizzare le chiavi in una funzionalità DEP è facoltativa, ma è consigliabile. Se si utilizzano i passaggi per configurare le chiavi e le volte diverse da quelle descritte in questo articolo, convalidare l'integrità delle risorse del Vault Key di Azure prima di configurare la chiave del cliente.
   
-Per verificare che le chiavi dispongano delle operazioni get, wrapKey e unwrapKey attivate:
+Per verificare che le chiavi siano `get` `wrapKey` e `unwrapKey` le operazioni siano abilitate:
   
 Eseguire il cmdlet [Get-AzKeyVault](https://docs.microsoft.com/powershell/module/az.keyvault/get-azkeyvault) nel modo seguente:
   
@@ -374,7 +373,7 @@ Per verificare che non sia impostata una data di scadenza per le chiavi, eseguir
 Get-AzKeyVaultKey -VaultName <vault name>
 ```
 
-Non è possibile utilizzare una chiave scaduta dalla chiave del cliente e le operazioni tentate con una chiave scaduta avranno esito negativo e, eventualmente, si verificherà un'interruzione del servizio. È consigliabile che i tasti utilizzati con la chiave del cliente non abbiano una data di scadenza. La data di scadenza, una volta impostata, non può essere rimossa, ma può essere modificata in una data diversa. Se è necessario utilizzare una chiave con un set di date di scadenza, impostare il valore di scadenza su 12/31/9999. Le chiavi con una data di scadenza impostata su una data diversa da 12/31/9999 non superano la convalida di Microsoft 365.
+La chiave del cliente non è in grado di utilizzare una chiave scaduta. Le operazioni tentate con una chiave scaduta avranno esito negativo e potranno eventualmente provocare un'interruzione del servizio. È consigliabile che i tasti utilizzati con la chiave del cliente non abbiano una data di scadenza. La data di scadenza, una volta impostata, non può essere rimossa, ma può essere modificata in una data diversa. Se è necessario utilizzare una chiave con un set di date di scadenza, impostare il valore di scadenza su 12/31/9999. Le chiavi con una data di scadenza impostata su una data diversa da 12/31/9999 non superano la convalida di Microsoft 365.
   
 Per modificare una data di scadenza impostata su un valore diverso da 12/31/9999, eseguire il cmdlet [Update-AzKeyVaultKey](https://docs.microsoft.com/powershell/module/az.keyvault/update-azkeyvaultkey) come indicato di seguito:
   
@@ -387,7 +386,7 @@ Update-AzKeyVaultKey -VaultName <vault name> -Name <key name> -Expires (Get-Date
   
 ### <a name="obtain-the-uri-for-each-azure-key-vault-key"></a>Ottenere l'URI per ogni chiave del Vault Key di Azure
 
-Dopo aver completato tutti i passaggi in Azure per configurare i Vault chiave e aver aggiunto le chiavi, eseguire il seguente comando per ottenere l'URI per la chiave in ogni Vault Key. Sarà necessario utilizzare questi URI quando si crea e si assegna ogni DEP in un secondo momento, quindi salvare queste informazioni in una posizione sicura. Ricordarsi di eseguire questo comando una volta per ogni Vault Key.
+Dopo aver configurato i Vault e aver aggiunto le chiavi, eseguire il comando riportato di seguito per ottenere l'URI per la chiave in ogni Vault Key. È necessario utilizzare questi URI quando si crea e si assegna ogni DEP in un secondo momento, quindi salvare queste informazioni in una posizione sicura. Eseguire questo comando una volta per ogni Vault chiave.
   
 In Azure PowerShell:
   
@@ -405,7 +404,7 @@ Per impostare la chiave del cliente per Exchange Online e Skype for business, è
 
 Un DEP è associato a un set di chiavi archiviate in Azure Key Vault. È possibile assegnare una DEP a una cassetta postale in Microsoft 365. Microsoft 365 utilizzerà quindi le chiavi identificate nel criterio per crittografare la cassetta postale. Per creare la funzionalità di protezione esecuzione programmi, è necessario disporre degli URI del Vault Key ottenuti in precedenza. Per istruzioni, vedere [ottenere l'URI per ogni chiave del Vault Key di Azure](#obtain-the-uri-for-each-azure-key-vault-key) .
   
-Ricordo! Quando si crea una funzionalità di protezione esecuzione programmi, si specificano due chiavi che si trovano in due diversi Vault chiave di Azure. Verificare che queste chiavi si trovino in due aree di Azure separate per garantire la ridondanza geografica.
+Ricordo! Quando si crea una funzionalità di protezione esecuzione programmi, si specificano due chiavi in due diverse volte chiave di Azure. Creare queste chiavi in due aree di Azure separate per garantire la ridondanza geografica.
   
 Per creare la funzionalità di protezione esecuzione programmi, eseguire la procedura seguente:
   
@@ -421,7 +420,7 @@ Per creare la funzionalità di protezione esecuzione programmi, eseguire la proc
 
    - *PolicyName* è il nome che si desidera utilizzare per il criterio. I nomi non possono contenere spazi. Ad esempio, USA_mailboxes.
 
-   - *Descrizione dei criteri* è una descrizione facile da usare per i criteri che consentiranno di ricordare a cosa serve il criterio. È possibile includere spazi nella descrizione. Ad esempio, "chiave radice per le cassette postali negli Stati Uniti e nei suoi territori".
+   - La *Descrizione dei criteri* è una descrizione facile da usare per i criteri che consentiranno di ricordare a cosa serve il criterio. È possibile includere spazi nella descrizione. Ad esempio, "chiave radice per le cassette postali negli Stati Uniti e nei suoi territori".
 
    - *KeyVaultURI1* è l'URI per la prima chiave del criterio. Ad esempio, <https://contoso_EastUSvault01.vault.azure.net/keys/USA_key_01>.
 
@@ -437,15 +436,15 @@ Per informazioni dettagliate sulla sintassi e sui parametri, vedere [New-DataEnc
 
 ### <a name="assign-a-dep-to-a-mailbox"></a>Assegnare una DEP a una cassetta postale
 
-Assegnare la funzionalità Protezione esecuzione programmi a una cassetta postale utilizzando il cmdlet Set-Mailbox. Dopo aver assegnato il criterio, Microsoft 365 è in grado di crittografare la cassetta postale con la chiave indicata nella DEP.
+Assegnare la funzionalità Protezione esecuzione programmi a una cassetta postale utilizzando il cmdlet Set-Mailbox. Dopo aver assegnato il criterio, Microsoft 365 è in grado di crittografare la cassetta postale con la chiave identificata nella funzionalità DEP.
   
 ```powershell
 Set-Mailbox -Identity <MailboxIdParameter> -DataEncryptionPolicy <PolicyName>
 ```
 
-Dove *MailboxIdParameter* specifica una cassetta postale. Per ulteriori informazioni sul cmdlet Set-Mailbox, vedere [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/set-mailbox).
+Dove *MailboxIdParameter* specifica una cassetta postale utente. Per ulteriori informazioni sul cmdlet Set-Mailbox, vedere [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/set-mailbox).
 
-Per le [cassette postali locali che usano Outlook per iOS e Android con l'autenticazione moderna ibrida](https://docs.microsoft.com/exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth), i dati delle cassette postali locali sincronizzati nel tenant di Exchange Online possono essere assegnati tramite il cmdlet Set-MailUser.
+Negli ambienti ibridi, è possibile assegnare un DEP ai dati delle cassette postali locali sincronizzati nel tenant di Exchange Online. Per assegnare un DEP ai dati della cassetta postale sincronizzati, è possibile utilizzare il cmdlet Set-MailUser. Per ulteriori informazioni sui dati delle cassette postali nell'ambiente ibrido, vedere [cassette postali locali che usano Outlook per iOS e Android con l'autenticazione moderna ibrida](https://docs.microsoft.com/exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth).
 
 ```powershell
 Set-MailUser -Identity <MailUserIdParameter> -DataEncryptionPolicy <PolicyName>
@@ -455,7 +454,7 @@ Dove *MailUserIdParameter* specifica un utente di posta elettronica (noto anche 
   
 ### <a name="validate-mailbox-encryption"></a>Convalidare la crittografia della cassetta postale
 
-La crittografia di una cassetta postale può richiedere del tempo. Per l'assegnazione dei criteri per la prima volta, la cassetta postale deve anche passare completamente da un database all'altro prima che il servizio possa crittografare la cassetta postale. È consigliabile attendere 72 ore prima di tentare di convalidare la crittografia dopo aver modificato una DEP o la prima volta che si assegna una DEP a una cassetta postale.
+La crittografia di una cassetta postale può richiedere del tempo. Per l'assegnazione dei criteri per la prima volta, la cassetta postale deve anche passare completamente da un database a un altro prima che il servizio possa crittografare la cassetta postale. È consigliabile attendere 72 ore prima di tentare di convalidare la crittografia dopo aver modificato una DEP o la prima volta che si assegna una DEP a una cassetta postale.
   
 Utilizzare il cmdlet Get-MailboxStatistics per determinare se una cassetta postale è crittografata.
   
@@ -463,9 +462,7 @@ Utilizzare il cmdlet Get-MailboxStatistics per determinare se una cassetta posta
 Get-MailboxStatistics -Identity <GeneralMailboxOrMailUserIdParameter> | fl IsEncrypted
 ```
 
-La proprietà IsEncrypted restituisce il valore **true** se la cassetta postale è crittografata e il valore **false** se la cassetta postale non è crittografata.
-
-Il tempo necessario per completare gli spostamenti delle cassette postali dipende dal numero di cassette postali a cui viene assegnata una DEP per la prima volta, oltre che dalle dimensioni delle cassette postali. Se le cassette postali non sono state crittografate dopo una settimana dal momento in cui è stata assegnata la funzionalità DEP, contattare Microsoft.
+La proprietà IsEncrypted restituisce il valore **true** se la cassetta postale è crittografata e il valore **false** se la cassetta postale non è crittografata. Il tempo necessario per completare gli spostamenti delle cassette postali dipende dal numero di cassette postali a cui viene assegnata una DEP per la prima volta e dalle dimensioni delle cassette postali. Se le cassette postali non sono state crittografate dopo una settimana dal momento in cui è stata assegnata la funzionalità DEP, contattare Microsoft.
 
 ## <a name="office-365-setting-up-customer-key-for-sharepoint-online-onedrive-for-business-and-teams-files"></a>Office 365: impostazione della chiave del cliente per i file di SharePoint Online, OneDrive for business e teams
 
@@ -477,7 +474,7 @@ Per impostare la chiave del cliente per i file di SharePoint Online, OneDrive fo
 
 È possibile associare una funzionalità DEP a un set di chiavi archiviate in Azure Key Vault. È possibile applicare una DEP a tutti i dati in una posizione geografica, denominata anche geo. Se si utilizza la caratteristica multi-geo di Office 365, è possibile creare una DEP per Geo con la possibilità di utilizzare chiavi diverse per Geo. Se non si utilizza multi-Geo, è possibile creare una DEP nell'organizzazione per l'utilizzo con i file di SharePoint Online, OneDrive for business e teams. Microsoft 365 utilizza le chiavi identificate nella funzionalità DEP per crittografare i dati in tale Geo. Per creare la funzionalità di protezione esecuzione programmi, è necessario disporre degli URI del Vault Key ottenuti in precedenza. Per istruzioni, vedere [ottenere l'URI per ogni chiave del Vault Key di Azure](#obtain-the-uri-for-each-azure-key-vault-key) .
   
-Ricordo! Quando si crea una funzionalità di protezione esecuzione programmi, si specificano due chiavi che si trovano in due diversi Vault chiave di Azure. Verificare che queste chiavi si trovino in due aree di Azure separate per garantire la ridondanza geografica.
+Ricordo! Quando si crea una funzionalità di protezione esecuzione programmi, si specificano due chiavi in due diverse volte chiave di Azure. Creare queste chiavi in due aree di Azure separate per garantire la ridondanza geografica.
   
 Per creare una funzionalità di protezione esecuzione programmi, è necessario connettersi in remoto a SharePoint Online tramite Windows PowerShell.
   
@@ -495,7 +492,7 @@ Per creare una funzionalità di protezione esecuzione programmi, è necessario c
    Register-SPODataEncryptionPolicy -Identity https://contoso.sharepoint.com -PrimaryKeyVaultName 'stageRG3vault' -PrimaryKeyName 'SPKey3' -PrimaryKeyVersion 'f635a23bd4a44b9996ff6aadd88d42ba' -SecondaryKeyVaultName 'stageRG5vault' -SecondaryKeyName 'SPKey5' -SecondaryKeyVersion '2b3e8f1d754f438dacdec1f0945f251a’
    ```
 
-   Quando si registra la funzionalità DEP, la crittografia inizia sui dati del geografico. Questo può richiedere un certo tempo. Per ulteriori informazioni sull'utilizzo di questo parametro, vedere [Register-SPODataEncryptionPolicy](https://docs.microsoft.com/powershell/module/sharepoint-online/register-spodataencryptionpolicy?view=sharepoint-ps&preserve-view=true).
+   Quando si registra la funzionalità DEP, la crittografia inizia sui dati del geografico. La crittografia può richiedere del tempo. Per ulteriori informazioni sull'utilizzo di questo parametro, vedere [Register-SPODataEncryptionPolicy](https://docs.microsoft.com/powershell/module/sharepoint-online/register-spodataencryptionpolicy?view=sharepoint-ps&preserve-view=true).
 
 ### <a name="validate-file-encryption"></a>Convalidare la crittografia dei file
 

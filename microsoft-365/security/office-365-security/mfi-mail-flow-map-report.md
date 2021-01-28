@@ -3,22 +3,23 @@ title: Mappa del flusso di posta
 f1.keywords:
 - NOCSH
 ms.author: siosulli
-author: chrisda
+author: siosulli
 manager: dansimp
 audience: ITPro
 ms.topic: conceptual
-ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: Gli amministratori possono imparare a usare la mappa del flusso di posta nel dashboard del flusso di posta elettronica nel centro sicurezza & conformità per visualizzare e monitorare la modalità di flusso di posta da e verso la propria organizzazione su connettori e senza l'utilizzo di connettori.
-ms.openlocfilehash: fc03f05db77c40dbf726692e6fb6069d587a5ffc
-ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: c07730f3abcec8905285cdfdf1579ffb71573ec1
+ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48877766"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "50029919"
 ---
 # <a name="mail-flow-map-in-the-security--compliance-center"></a>Mappa del flusso di posta elettronica nel centro sicurezza & Compliance
 
@@ -37,11 +38,11 @@ Se si fa clic sul widget **mappa del flusso di posta elettronica** , verrà eseg
 
 Nella visualizzazione report sono disponibili i grafici seguenti:
 
-- Mostra **dati per: Panoramica** : è fondamentalmente una visualizzazione ingrandita del widget. Se si posiziona il puntatore del mouse su un colore specifico, il numero di messaggi viene visualizzato per il tipo di connettore.
+- Mostra **dati per: Panoramica**: è fondamentalmente una visualizzazione ingrandita del widget. Se si posiziona il puntatore del mouse su un colore specifico, il numero di messaggi viene visualizzato per il tipo di connettore.
 
   ![Visualizzazione panoramica nel rapporto Mappa del flusso di posta](../../media/mfi-mail-flow-map-report-overview.png)
 
-- Mostra **dati per: dettaglio** : questa visualizzazione contiene informazioni dettagliate sui connettori e sui domini di destinazione. I domini principale del mittente e del destinatario sono elencati e gli altri vengono inseriti in **altri**. Se si posiziona il puntatore del mouse su un colore e una sezione specifici, viene visualizzato il numero di messaggi.
+- Mostra **dati per: dettaglio**: questa visualizzazione contiene informazioni dettagliate sui connettori e sui domini di destinazione. I domini principale del mittente e del destinatario sono elencati e gli altri vengono inseriti in **altri**. Se si posiziona il puntatore del mouse su un colore e una sezione specifici, viene visualizzato il numero di messaggi.
 
   ![Visualizzazione dettagli nel rapporto Mappa flusso di posta](../../media/mfi-mail-flow-map-report-detail.png)
 

@@ -3,21 +3,22 @@ title: Insight sul flusso di posta in uscita e in ingresso nel dashboard del flu
 f1.keywords:
 - NOCSH
 ms.author: siosulli
-author: chrisda
+author: siosulli
 manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: conceptual
-ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: f2738dec-41b0-43c4-b814-84c0a4e45c6d
 description: Gli amministratori possono ottenere informazioni sull'Insight del flusso di posta in uscita e in ingresso nel dashboard del flusso di posta elettronica nel centro sicurezza & Compliance.
-ms.openlocfilehash: cff7c3a14b62475903729f4528652f192c2da09f
-ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: e46a0ebf0c14e31462d1e86d8a8d8c08486337af
+ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48877670"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "50029823"
 ---
 # <a name="outbound-and-inbound-mail-flow-insight-in-the-security--compliance-center"></a>Insight sul flusso di posta in uscita e in ingresso nel centro sicurezza & Compliance
 
@@ -33,7 +34,7 @@ Il widget Visualizza la crittografia TLS utilizzata per la connessione quando i 
 Le informazioni contenute nel widget sono correlate ai connettori e alla protezione dei messaggi TLS in Microsoft 365. Per ulteriori informazioni, vedere gli argomenti riportati di seguito:
 
 - [Configurare il flusso di posta utilizzando i connettori](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow)
-- [Come Exchange Online USA TLS per proteggere le connessioni di posta elettronica](https://docs.microsoft.com/microsoft-365/compliance/exchange-online-uses-tls-to-secure-email-connections)
+- [Modalità d'uso di TLS in Exchange Online per proteggere le connessioni di posta elettronica](https://docs.microsoft.com/microsoft-365/compliance/exchange-online-uses-tls-to-secure-email-connections)
 - [Informazioni di riferimento tecnico sulla crittografia in Microsoft 365](https://docs.microsoft.com/microsoft-365/compliance/technical-reference-details-about-encryption)
 
 ## <a name="message-protected-in-transit-by-tls"></a>Protezione dei messaggi in transito (tramite TLS)
