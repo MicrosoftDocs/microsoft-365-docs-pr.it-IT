@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Risorse che consentono di soddisfare i requisiti normativi per la governance delle informazioni e la gestione dei record.
-ms.openlocfilehash: f8641af2ec839c9ed3f4d029b4f6de52fe7033e3
-ms.sourcegitcommit: 36795a6735cd3fc678c7d5db71ddc97fac3f6f8a
+ms.openlocfilehash: 891dd3f37e70ae94dbae96baaa7c38b71456305b
+ms.sourcegitcommit: b3bb5bf5efa197ef8b16a33401b0b4f5663d3aa0
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "48941421"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "50032567"
 ---
 # <a name="regulatory-requirements-for-information-governance-and-records-management"></a>Requisiti normativi per la governance delle informazioni e la gestione dei record
 
@@ -28,7 +28,19 @@ ms.locfileid: "48941421"
 
 Usare le risorse illustrate in questa pagina per soddisfare i requisiti normativi specifici per la governance delle informazioni e la gestione dei record in Microsoft 365. Ogni sezione di questo documento si concentra su una o più normative correlate e include indicazioni o valutazioni di terze parti su come configurare Microsoft 365 per facilitare la conformità ai requisiti descritti.
 
-Queste risorse sono disponibili per il download dalla pagina [Domande frequenti e white paper sulle risorse per la protezione dei dati](https://servicetrust.microsoft.com/ViewPage/TrustDocuments) in Service Trust Portal.
+Queste risorse sono disponibili per il download dalla pagina [Domande frequenti e white paper sulle risorse per la protezione dei dati](https://servicetrust.microsoft.com/ViewPage/TrustDocuments) nel Service Trust Portal.
+
+## <a name="new-zealand-public-records-act"></a>Public Records Act della Nuova Zelanda
+
+**Supporto degli obblighi di conformità al Public Records Act della Nuova Zelanda con Microsoft 365** - [Scaricare valutazione](https://aka.ms/NZPRA)
+
+Carichi di lavoro applicabili: SharePoint, OneDrive, Teams, Exchange e Skype for Business
+
+Pubblicato nel mese di gennaio 2021, il report è stato creato in collaborazione con Microsoft Nuova Zelanda per valutare le funzionalità dei servizi Microsoft 365 per la registrazione, l’archiviazione e la gestione dei requisiti per i record elettronici, come specificato da: 
+
+- il Public Records Act 2005 della Nuova Zelanda, che stabilisce le linee guida per la conservazione degli archivi pubblici e degli archivi delle autorità locali in Nuova Zelanda.
+
+Questo report aiuta a comprendere come gli aspetti di sistema del Public Records Act 2005 (PRA) della Nuova Zelanda siano realizzabili quando si usa Microsoft 365.
 
 ## <a name="sec-17a-4f-finra-4511c-and-cftc-131c-d"></a>SEC 17a-4 (f), FINRA 4511 (c) e CFTC 1.31 (c)-(d)
 

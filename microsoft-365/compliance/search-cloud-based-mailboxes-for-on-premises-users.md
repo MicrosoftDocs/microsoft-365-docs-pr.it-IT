@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: 3f7dde1a-a8ea-4366-86da-8ee6777f357c
 description: Usare lo strumento Ricerca contenuto nel Centro sicurezza e conformità per cercare ed esportare i dati delle chat di Microsoft Teams degli utenti locali in una distribuzione ibrida di Exchange.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 23f8ea08de3d7fdbbc36274374d315ef0cb66a84
-ms.sourcegitcommit: 162c01dfaa2fdb3225ce4c24964c1065ce22ed5d
+ms.openlocfilehash: 7bdcba3a14b2ee6d14210d3525e20ec507166a5d
+ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2021
-ms.locfileid: "49976203"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "50029716"
 ---
 # <a name="search-for-teams-chat-data-for-on-premises-users"></a>Cercare i dati delle chat di Teams degli utenti locali
 
@@ -39,10 +39,8 @@ Di seguito sono elencati i requisiti e le limitazioni per l’abilitazione della
 
 - Solo i dati delle chat di Teams associati all’utente locale sono archiviati nella risorsa di archiviazione basata sul cloud. L’utente locale non può accedere alla risorsa di archiviazione in alcun modo.
 
-- Per abilitare l'organizzazione alla ricerca dei dati delle chat di Teams degli utenti locali, è necessario inviare una richiesta al Supporto tecnico Microsoft. Vedere [Presentare la richiesta di abilitare questa funzionalità al Supporto tecnico Microsoft](#filing-a-request-with-microsoft-support-to-enable-this-feature) in questo articolo.
-
 > [!NOTE]
-> Le conversazioni che si svolgono nei canali di Teams vengono sempre archiviate nella cassetta postale basata sul cloud associata al team. Ciò significa che è possibile usare Ricerca contenuto per cercare conversazioni dei canali senza dover inviare una richiesta di supporto. Per altre informazioni sulla ricerca di conversazioni dei canali di Teams, vedere [Eseguire una ricerca nei Gruppi di Microsoft 365 e Microsoft Teams](content-search.md#searching-microsoft-teams-and-microsoft-365-groups).
+> Le conversazioni che si svolgono nei canali di Teams vengono sempre archiviate nella cassetta postale basata sul cloud associata al team, il che significa che è possibile cercare le conversazioni del canale. Per altre informazioni sulla ricerca di conversazioni dei canali di Teams, vedere [Eseguire una ricerca nei Gruppi di Microsoft 365 e Microsoft Teams](content-search.md#searching-microsoft-teams-and-microsoft-365-groups).
   
 ## <a name="how-it-works"></a>Funzionamento
 
@@ -54,20 +52,7 @@ L'immagine seguente mostra il flusso di lavoro che consente di cercare, visualiz
   
 Oltre a questa nuova funzionalità, si può continuare a usare Ricerca contenuto per cercare, visualizzare in anteprima ed esportare il contenuto di Teams nel sito di SharePoint basato sul cloud e nella cassetta postale di Exchange associata a ogni team di Microsoft Teams e dati delle chat 1xN di Teams in una cassetta postale di Exchange Online per gli utenti basati sul cloud.
 
-## <a name="filing-a-request-with-microsoft-support-to-enable-this-feature"></a>Presentare la richiesta di abilitare questa funzionalità al Supporto tecnico Microsoft
 
-Per cercare i dati delle chat di Teams degli utenti locali, è necessario presentare al Supporto tecnico Microsoft la richiesta di abilitare l'organizzazione all'uso dell'interfaccia utente grafica nel Centro sicurezza e conformità. Questa funzionalità è disponibile in PowerShell per Centro sicurezza e conformità. Non è necessario inviare una richiesta di supporto per usare PowerShell per cercare dati delle chat di Teams degli utenti locali.
-  
-Includere le informazioni seguenti quando si invia la richiesta al Supporto tecnico Microsoft:
-  
-- Nome di dominio predefinito dell'organizzazione.
-
-- Nome e ID del tenant dell'organizzazione. Queste informazioni sono disponibili nel portale di Azure Active Directory (in **Gestione** \> **Proprietà**). Vedere [Trovare l'ID tenant di Microsoft 365](https://docs.microsoft.com/onedrive/find-your-office-365-tenant-id).
-
-- Il titolo seguente o la descrizione dello scopo della richiesta di supporto: "Abilitare la ricerca di contenuto dell'applicazione per gli utenti locali". Questo consentirà di instradare la richiesta al team di progettazione di eDiscovery che implementerà la richiesta.
-
-Una volta apportata la modifica, il Supporto tecnico Microsoft invierà una data di distribuzione stimata. Il processo di distribuzione in genere richiede 2-3 settimane dopo l'invio della richiesta di supporto.
-  
 ### <a name="what-happens-after-this-feature-is-enabled"></a>Cosa succede dopo l'abilitazione della funzionalità?
 
 Dopo la distribuzione di questa funzionalità nell'organizzazione, vengono apportate le modifiche seguenti in Ricerca contenuto e nelle ricerche associate a un caso di eDiscovery nel Centro sicurezza e conformità:
