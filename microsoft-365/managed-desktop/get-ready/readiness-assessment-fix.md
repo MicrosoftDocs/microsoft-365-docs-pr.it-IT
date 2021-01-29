@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: f1af39a9b2a09908ecf5f5ff15b9fd6d764459d6
-ms.sourcegitcommit: 7ecd10b302b3b3dfa4ba3be3a6986dd3c189fbff
+ms.openlocfilehash: 360cd50556b77f141d1585f42ac08ee5990b4851
+ms.sourcegitcommit: f3059a0065496623e36e5a084cd2291e6b844597
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "49921859"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "50040521"
 ---
 # <a name="fix-issues-found-by-the-readiness-assessment-tool"></a>Risolvere problemi trovati dallo strumento di valutazione dell'idoneità
 
@@ -26,7 +26,7 @@ Per ogni controllo, lo strumento segnala uno dei quattro possibili risultati:
 |Pronto     | Non è richiesta alcuna azione prima di completare la registrazione.        |
 |Avviso    | Seguire i passaggi nello strumento o in questo articolo per un'esperienza ottimale con la registrazione e per gli utenti. È *possibile* completare la registrazione, ma è necessario risolvere questi problemi prima di distribuire il primo dispositivo.        |
 |Non pronto | *La registrazione avrà esito negativo se questi problemi non vengono risolti.* Seguire i passaggi descritti nello strumento o in questo articolo per risolverli.        |
-|Error | Il ruolo Azure Active Director (AD) in uso non dispone di autorizzazioni sufficienti per eseguire questo controllo. |
+|Error | Il ruolo di Azure Active Directory (AD) in uso non dispone di autorizzazioni sufficienti per eseguire questo controllo. |
 
 > [!NOTE]
 > I risultati riportati da questo strumento riflettono lo stato delle impostazioni solo nel momento in cui è stato eseguito. Se successivamente si apportano modifiche ai criteri in Microsoft Intune, Azure Active Directory o Microsoft 365, gli elementi "Pronto" possono diventare "Non pronti". Per evitare problemi con le operazioni di Microsoft Managed Desktop, controllare le impostazioni specifiche descritte in questo articolo prima di modificare i criteri.
@@ -41,7 +41,7 @@ Non dovresti avere profili Autopilot esistenti per gruppi assegnati o dinamici c
 
 **Non pronto**
 
-Hai un profilo Autopilot assegnato a tutti i dispositivi. Per la procedura, vedi [Registrare i dispositivi Windows in Intune usando Windows Autopilot.](https://docs.microsoft.com/mem/autopilot/enrollment-autopilot) Dopo la registrazione di Microsoft Managed Desktop, imposta il criterio Autopilot in modo da escludere il gruppo **Dispositivi aziendali moderni -All** Azure AD.
+Hai un profilo Autopilot assegnato a tutti i dispositivi. Per la procedura, vedi [Registrare i dispositivi Windows in Intune usando Windows Autopilot.](https://docs.microsoft.com/mem/autopilot/enrollment-autopilot) Dopo la registrazione di Microsoft Managed Desktop, imposta i criteri di Autopilot per escludere il gruppo **Modern Workplace Devices -All** Azure AD.
 
 **Avviso**
 
@@ -68,15 +68,15 @@ Si dispone di almeno un connettore di certificati e non vengono segnalati errori
 
 ### <a name="conditional-access-policies"></a>Criteri di accesso condizionale
 
-I criteri di accesso condizionale nell'organizzazione di Azure AD non devono essere mirati ad alcun account del servizio Microsoft Manage Desktop.
+I criteri di accesso condizionale non devono impedire a Microsoft Managed Desktop di gestire l'organizzazione di Azure AD (tenant) in Intune e Azure AD.
 
 **Non pronto**
 
-Si dispone di almeno un criterio di accesso condizionale destinato a tutti gli utenti. Modificare i criteri in modo che siano mirati a un gruppo di Azure AD specifico che non include il gruppo di Azure AD di account del servizio Microsoft Managed Desktop che verranno creati durante la registrazione. Per la procedura, vedere [Accesso condizionale: Utenti e gruppi.](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-users-groups)
+Si dispone di almeno un criterio di accesso condizionale destinato a tutti gli utenti. Durante la registrazione, verranno esclusi gli account del servizio Microsoft Managed Desktop dai criteri di accesso condizionale pertinenti e verranno applicati nuovi criteri di accesso condizionale per limitare l'accesso a questi account. Dopo la registrazione, puoi esaminare i criteri di accesso condizionale di Microsoft Managed Desktop in Microsoft Endpoint Manager. Per ulteriori informazioni su questi account di servizio, vedere [Procedure operative standard.](../service-description/operations-and-monitoring.md#standard-operating-procedures)
 
 **Avviso**
 
-Assicurarsi che tutti i criteri di accesso condizionale di cui si dispone escludono il gruppo Azure AD account del servizio **di lavoro** moderno. Per la procedura, vedere [Regolare l'accesso condizionale.](https://docs.microsoft.com/microsoft-365/managed-desktop/get-started/conditional-access) Il **gruppo Azure** AD degli account del servizio di lavoro moderno è un gruppo dinamico creato per il servizio al momento della registrazione. Dovrai tornare per escludere questo gruppo dopo la registrazione. Per ulteriori informazioni su questi account di servizio, vedere [Procedure operative standard.](../service-description/operations-and-monitoring.md#standard-operating-procedures)
+Si dispone di criteri di accesso condizionale che potrebbero impedire a Microsoft Managed Desktop di gestire il servizio Microsoft Managed Desktop. Durante la registrazione, verranno esclusi gli account del servizio Microsoft Managed Desktop dai criteri di accesso condizionale pertinenti e verranno applicati nuovi criteri di accesso condizionale per limitare l'accesso a questi account. Per ulteriori informazioni su questi account di servizio, vedere [Procedure operative standard.](../service-description/operations-and-monitoring.md#standard-operating-procedures)
 
 **Errore**
 
@@ -85,7 +85,7 @@ Il ruolo amministratore di Intune non dispone di autorizzazioni sufficienti per 
 - Ruolo con autorizzazioni di lettura per la sicurezza
 - Amministratore della sicurezza
 - Amministratore accesso condizionale
-- Ruolo con autorizzazioni di lettura globali
+- Lettore globale
 - Amministratore dei dispositivi
 
 
@@ -109,7 +109,7 @@ I profili di configurazione dei dispositivi Intune nell'organizzazione di Azure 
 
 **Non pronto**
 
-Si dispone di almeno un profilo di configurazione destinato a tutti gli utenti, tutti i dispositivi o entrambi. Reimpostare il profilo in modo che sia di destinazione di un gruppo di Azure AD specifico che non include alcun dispositivo Microsoft Managed Desktop. Per la procedura, vedere [Creare un profilo con impostazioni personalizzate in Microsoft Intune.](https://docs.microsoft.com/mem/intune/configuration/custom-settings-configure)
+Si dispone di almeno un profilo di configurazione destinato a tutti gli utenti, a tutti i dispositivi o a entrambi. Reimpostare il profilo in modo che sia di destinazione di un gruppo di Azure AD specifico che non include alcun dispositivo Microsoft Managed Desktop. Per la procedura, vedere [Creare un profilo con impostazioni personalizzate in Microsoft Intune.](https://docs.microsoft.com/mem/intune/configuration/custom-settings-configure)
 
 **Avviso**
 
@@ -123,7 +123,7 @@ I dispositivi Microsoft Managed Desktop devono essere autorizzati a registrarsi 
 
 **Non pronto**
 
-Al momento hai almeno un criterio di restrizione di registrazione configurato per impedire la registrazione dei dispositivi Windows in Intune. Segui i passaggi descritti in [Impostare](https://docs.microsoft.com/mem/intune/enrollment/enrollment-restrictions-set) le restrizioni di registrazione per ogni criterio di restrizione di registrazione destinato agli utenti di Microsoft Managed Desktop e modifica l'impostazione di **Windows (MDM)** su **Consenti.** Tuttavia, puoi impostare qualsiasi **dispositivo** **Windows (MDM)** di proprietà dell'utente su **Blocca.** 
+Attualmente hai almeno un criterio di restrizione della registrazione configurato per impedire la registrazione dei dispositivi Windows in Intune. Segui i passaggi descritti in [Impostare](https://docs.microsoft.com/mem/intune/enrollment/enrollment-restrictions-set) le restrizioni di registrazione per ogni criterio di restrizione di registrazione destinato agli utenti di Microsoft Managed Desktop e modifica l'impostazione di **Windows (MDM)** su **Consenti.** Tuttavia, puoi impostare qualsiasi **dispositivo** Windows di proprietà personale **(MDM)** su **Blocca.** 
 
 
 ### <a name="enrollment-status-page"></a>Pagina Stato registrazione
@@ -132,7 +132,7 @@ Al momento la pagina di stato della registrazione (ESP) è abilitata. Se si inte
 
 **Non pronto**
 
-Il profilo predefinito ESP è impostato su Mostra **stato di configurazione dell'app e del profilo.** Disabilitare questa impostazione o assicurarsi che le assegnazioni a qualsiasi gruppo di Azure AD non includano i dispositivi Microsoft Managed Desktop seguendo i passaggi descritti in [Configurare la pagina stato registrazione.](https://docs.microsoft.com/mem/intune/enrollment/windows-enrollment-status)
+Il profilo predefinito ESP è impostato su Mostra **stato di configurazione dell'app e del profilo.** Disabilita questa impostazione o assicurati che le assegnazioni a qualsiasi gruppo di Azure AD non includano i dispositivi Microsoft Managed Desktop seguendo i passaggi descritti in [Configurare la pagina stato registrazione.](https://docs.microsoft.com/mem/intune/enrollment/windows-enrollment-status)
 
 **Avviso**
 
@@ -144,20 +144,20 @@ Microsoft Store per le aziende viene utilizzato e viene distribuita l'app Portal
 
 **Non pronto**
 
-Microsoft Store per le aziende non è abilitato o non è sincronizzato con Intune. Per altre informazioni, vedi Come gestire le app acquistate in volumi diversi da Microsoft Store per le [aziende con Microsoft Intune](https://docs.microsoft.com/mem/intune/apps/windows-store-for-business) e Installare il portale aziendale di Intune nei [dispositivi.](../get-started/company-portal.md)
+Microsoft Store per le aziende non è abilitato o non è sincronizzato con Intune. Per altre informazioni, vedi Come gestire le app acquistate in volumi diversi da [Microsoft Store per](https://docs.microsoft.com/mem/intune/apps/windows-store-for-business) le aziende con Microsoft Intune e Installare il portale aziendale di Intune nei [dispositivi.](../get-started/company-portal.md)
 
 ### <a name="multifactor-authentication"></a>Autenticazione a più fattori
 
-L'autenticazione a più fattori non deve essere applicata agli account del servizio Microsoft Managed Desktop.
+L'autenticazione a più fattori non deve impedire a Microsoft Managed Desktop di gestire l'organizzazione Azure AD (tenant) in Intune e Azure AD.
 
 
 **Non pronto**
 
-Alcuni criteri di autenticazione a più fattori sono impostati come **necessario** per i criteri di accesso condizionale assegnati a tutti gli utenti. Modificare i criteri per usare un'assegnazione destinata a un gruppo di Azure AD specifico che non include alcun account del servizio Microsoft Managed Desktop. Per ulteriori informazioni, vedere [Criteri di accesso condizionale](#conditional-access-policies) e Accesso [condizionale: Richiedere l'autenticazione](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa)a più fattori per tutti gli utenti.
+Alcuni criteri di autenticazione a più fattori sono impostati come **necessario** per i criteri di accesso condizionale assegnati a tutti gli utenti. Durante la registrazione, verranno esclusi gli account del servizio Microsoft Managed Desktop dai criteri di accesso condizionale pertinenti e verranno applicati nuovi criteri di accesso condizionale per limitare l'accesso a questi account. Per ulteriori informazioni su questi account di servizio, vedere [Procedure operative standard.](../service-description/operations-and-monitoring.md#standard-operating-procedures)
 
 **Avviso**
 
-Assicurati che tutti i criteri di accesso condizionale che richiedono l'autenticazione a più fattori escludono il **gruppo Modern Workplace -All** Azure AD. Per ulteriori informazioni, vedere [Criteri di accesso condizionale](#conditional-access-policies) e Accesso [condizionale: Richiedere l'autenticazione](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa)a più fattori per tutti gli utenti. **The Modern Workplace -All** Azure AD group is a dynamic group that we create when you enroll in Microsoft Managed Desktop, so you'll have to come back to exclude this group after enrollment.
+L'autenticazione a più fattori è necessaria nei criteri di accesso condizionale che potrebbero impedire a Microsoft Managed Desktop di gestire il servizio Microsoft Managed Desktop. Durante la registrazione, verranno esclusi gli account del servizio Microsoft Managed Desktop dai criteri di accesso condizionale pertinenti e verranno applicati nuovi criteri di accesso condizionale per limitare l'accesso a questi account. Per ulteriori informazioni su questi account di servizio, vedere [Procedure operative standard.](../service-description/operations-and-monitoring.md#standard-operating-procedures)
 
 **Errore**
 
@@ -166,7 +166,7 @@ Il ruolo amministratore di Intune non dispone di autorizzazioni sufficienti per 
 - Ruolo con autorizzazioni di lettura per la sicurezza
 - Amministratore della sicurezza
 - Amministratore accesso condizionale
-- Ruolo con autorizzazioni di lettura globali
+- Lettore globale
 - Amministratore dei dispositivi
 
 
@@ -313,7 +313,7 @@ Le impostazioni predefinite di sicurezza sono attivate. Disattiva le impostazion
 
 ### <a name="self-service-password-reset"></a>Reimpostazione password self-service
 
-La reimpostazione della password self-service (SSPR) può essere abilitata per tutti gli utenti di Microsoft Managed Desktop esclusi gli account del servizio Microsoft Managed Desktop. Per altre informazioni, vedere Esercitazione: Consentire agli utenti di sbloccare il proprio account o reimpostare le [password usando la reimpostazione della password self-service di Azure Active Directory.](https://docs.microsoft.com/azure/active-directory/authentication/tutorial-enable-sspr)
+La reimpostazione della password self-service (SSPR) può essere abilitata per tutti gli utenti di Microsoft Managed Desktop esclusi gli account del servizio Microsoft Managed Desktop. Per altre informazioni, vedere Esercitazione: Consentire agli utenti di sbloccare il proprio account o reimpostare le [password usando la reimpostazione della password in modalità self-service di Azure Active Directory.](https://docs.microsoft.com/azure/active-directory/authentication/tutorial-enable-sspr)
 
 **Avviso**
 
@@ -336,5 +336,4 @@ Dopo la registrazione, gli utenti di Microsoft Managed Desktop non avranno privi
 
 **Avviso**
 
-Si usa l'impostazione Consenti **sincronizzazione solo su PC aggiunti a domini** specifici. Questa impostazione non funziona con Microsoft Managed Desktop. Disabilitare questa impostazione e configurare Invece OneDrive per l'uso di un criterio di accesso condizionale. Per [informazioni, vedere Pianificare una distribuzione di accesso](https://docs.microsoft.com/azure/active-directory/conditional-access/plan-conditional-access) condizionale.
-
+Si usa l'impostazione **Consenti sincronizzazione solo su PC aggiunti a domini** specifici. Questa impostazione non funziona con Microsoft Managed Desktop. Disabilitare questa impostazione e configurare Invece OneDrive per l'uso di un criterio di accesso condizionale. Per [informazioni, vedere Pianificare una distribuzione di accesso](https://docs.microsoft.com/azure/active-directory/conditional-access/plan-conditional-access) condizionale.

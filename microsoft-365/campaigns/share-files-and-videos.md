@@ -24,49 +24,48 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Condividere file e video all'interno della propria campagna con Microsoft teams e SharePoint.
-ms.openlocfilehash: d8f9df1befe720dbcd2affc56ff02f29c037216b
-ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
+description: Condividere file e video all'interno della campagna con Microsoft Teams e SharePoint.
+ms.openlocfilehash: d6d168c196a8571cab86a1be57f5b26782bc4d3f
+ms.sourcegitcommit: 1b30ac6e05906c8a014b1fed33fc71e1821f6ad2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48132013"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "50044181"
 ---
 # <a name="share-files-and-videos"></a>Condividere file e video
 
-Quando è necessario controllare chi può visualizzare e chi può modificare i file, è necessario archiviare i file in una posizione sicura, in cui è possibile verificare che le autorizzazioni vengano applicate in modo appropriato. È possibile utilizzare Microsoft teams per archiviare i file e quindi condividere i file all'interno o all'esterno della propria campagna tramite Microsoft teams o inviando collegamenti di SharePoint. L'invio di un collegamento piuttosto che di un allegato di posta elettronica significa che è possibile sapere chi è la visualizzazione e la modifica dei file e non possono essere visualizzati o modificati senza la propria autorizzazione. 
+Quando è necessario controllare chi può visualizzare e chi può modificare i file, è necessario archiviare i file in un percorso sicuro, in cui verificare che le autorizzazioni siano applicate in modo appropriato. È possibile usare Microsoft Teams per archiviare i file e quindi condividerli all'interno o all'esterno dell'azienda, della pratica o della campagna tramite Microsoft Teams o inviando collegamenti di SharePoint. L'invio di un collegamento anziché di un allegato di posta elettronica significa che si conosce chi sta visualizzando e modificando i file e che non possono essere visualizzati o modificati senza l'autorizzazione dell'utente.
 
-![Diagramma di una finestra di Microsoft teams, visualizzazione delle schede dei file e collegamento Get nel menu](../media/m365-democracy-teams-sharefiles.png)
+![Diagramma di una finestra di Microsoft Teams con la scheda File e il collegamento Ottieni nel menu](../media/m365-democracy-teams-sharefiles.png)
 
-Con i file in Microsoft teams e SharePoint, è anche possibile lavorare sui file insieme ed esaminare le modifiche apportate. Utilizzare Microsoft teams per condividere i file all'interno di una campagna politica. Se è necessario condividere l'esterno con utenti esterni alla campagna, è possibile aggiungerli come ospiti a un team o inviargli un collegamento di SharePoint sicuro.
+Con i file in Microsoft Teams e SharePoint, è anche possibile lavorare sui file insieme e rivedere reciprocamente le modifiche. Usare Microsoft Teams per condividere file all'interno di una società, una pratica o una campagna. Se è necessario condividere esternamente con persone esterne all'organizzazione, è possibile aggiungerle come utenti guest a un team o inviare loro un collegamento sicuro di SharePoint.
 
-È inoltre possibile utilizzare Microsoft Stream per archiviare e condividere video per la propria campagna. Questi video non sono visualizzabili per il pubblico in modo che siano ideali per la messaggistica della campagna interna.
+Puoi anche usare Microsoft Stream per archiviare e condividere video internamente. Questi video non sono visualizzabili al pubblico, quindi sono ideali per la messaggistica della campagna interna.
 
 ## <a name="best-practices"></a>Procedure consigliate
 
-Utilizzare questi metodi per condividere file e video in modo sicuro:
+Usa questi metodi per condividere file e video in modo sicuro:
 
-1. Archiviare i file in Microsoft teams o SharePoint e verificare che siano presenti solo gli utenti che hanno bisogno di accedere a tali file. 
-2. Quando si desidera condividere, non allegare i file a un messaggio di posta elettronica. In alternativa, scegliere **Get link** da Microsoft teams o SharePoint e inviare il collegamento tramite posta elettronica.
-3. Per condividere un file esternamente, aggiungere l'utente come Guest al team o utilizzare SharePoint per ottenere un collegamento sicuro per condividere solo quel file.
-4. Utilizzare Microsoft Stream per ospitare i video che si desidera vengano visualizzati dalla campagna. 
-5. Utilizzare Microsoft teams o SharePoint per archiviare i file video necessari per la collaborazione o la condivisione del team.
+1. Archiviare i file in Microsoft Teams o SharePoint e assicurarsi che siano presenti solo le persone che hanno bisogno di accedere a tali file.
+2. Quando si vuole condividere, non allegare file a un messaggio di posta elettronica. Scegliere invece Ottieni **collegamento da** Microsoft Teams o SharePoint e inviare il collegamento tramite posta elettronica.
+3. Per condividere un file esternamente, aggiungere l'utente come guest al team oppure usare SharePoint per ottenere un collegamento sicuro per condividere solo tale file.
+4. Usa Microsoft Stream per ospitare i video che vuoi visualizzare nella campagna.
+5. Usare Microsoft Teams o SharePoint per archiviare i file video su cui il team deve collaborare o condividere.
 
- 
 ## <a name="set-up"></a>Configurazione
 
-Per creare un team e aggiungere agli utenti, ad esempio inserzionisti o partner finanziari, attenersi alla seguente procedura.
+Per creare un team e aggiungere utenti guest, ad esempio inserzionisti o partner commerciali, seguire questa procedura.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FQMp]
 
-Per condividere un collegamento sicuro con un ospite, senza utilizzare Microsoft teams, eseguire la procedura seguente.
+Per condividere un collegamento sicuro con un guest, senza usare Microsoft Teams, seguire questa procedura.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE22Yf0]
 
-Per creare e condividere video, attenersi alla seguente procedura.
+Per creare e condividere video, segui questi passaggi.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWrv0F]
 
-Scaricare un'infografica in [formato PDF](https://go.microsoft.com/fwlink/?linkid=2079435) o [PowerPoint](https://go.microsoft.com/fwlink/?linkid=2079438) per ottenere una breve panoramica dei modi per condividere i file.
+Scarica un'infografica in [PDF](https://go.microsoft.com/fwlink/?linkid=2079435) o [PowerPoint](https://go.microsoft.com/fwlink/?linkid=2079438) per ottenere una rapida panoramica dei modi per condividere i file.
 
 [![Illustrazione della condivisione di file con utenti diversi](../media/ShareYourfiles-thumb-358x201.png)](https://go.microsoft.com/fwlink/?linkid=2079435)

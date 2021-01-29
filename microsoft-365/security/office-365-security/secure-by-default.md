@@ -1,5 +1,5 @@
 ---
-title: Protezione per impostazione predefinita in Office 365
+title: Proteggere per impostazione predefinita in Office 365
 f1.keywords:
 - NOCSH
 ms.author: dansimp
@@ -8,22 +8,23 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: conceptual
-ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 - MOE150
 ms.collection:
 - M365-security-compliance
-description: Per ulteriori informazioni sull'impostazione sicura per impostazione predefinita in Exchange Online Protection (EOP)
-ms.openlocfilehash: 8db8e7af569114e5829d24d65b8eee89c9dce8c3
-ms.sourcegitcommit: a76de3d1604d755b29053e7bf557c0008be6ad23
+description: Ulteriori informazioni sull'impostazione di protezione per impostazione predefinita in Exchange Online Protection (EOP)
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: c8af609b8ed50b0bfacb7d9f5397fab4c4726927
+ms.sourcegitcommit: f3059a0065496623e36e5a084cd2291e6b844597
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "49787974"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "50040545"
 ---
-# <a name="secure-by-default-in-office-365"></a>Protezione per impostazione predefinita in Office 365
+# <a name="secure-by-default-in-office-365"></a>Proteggere per impostazione predefinita in Office 365
 
 [!INCLUDE [Prerelease information](../includes/prerelease.md)]
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
@@ -32,40 +33,47 @@ ms.locfileid: "49787974"
 
 Tuttavia, la sicurezza deve essere bilanciata con la produttività. Ciò può includere il bilanciamento tra:
 
-- Usabilità: le impostazioni non devono essere **inutilizzate** per la produttività degli utenti.
-- **Rischio**: la sicurezza potrebbe bloccare attività importanti.
-- **Impostazioni legacy**: potrebbe essere necessario mantenere le configurazioni per i prodotti e le funzionalità meno recenti, anche se sono state migliorate nuove impostazioni moderne.
+- **Usabilità:** le impostazioni non devono intasarsi della produttività degli utenti.
+- **Rischio:** la sicurezza potrebbe bloccare le attività importanti.
+- **Impostazioni legacy:** potrebbe essere necessario mantenere alcune configurazioni per prodotti e funzionalità meno recenti per motivi aziendali, anche se vengono migliorate nuove impostazioni moderne.
 
-Microsoft 365 le organizzazioni con cassette postali in Exchange Online sono protette da Exchange Online Protection (EOP). Questa protezione include:
+Le organizzazioni di Microsoft 365 con cassette postali in Exchange Online sono protette da Exchange Online Protection (EOP). Questa protezione include:
 
-- La posta elettronica con sospetto di malware verrà automaticamente messa in quarantena e i destinatari verranno informati. Vedere [Configure anti-malware Policies in EOP](configure-anti-malware-policies.md).
-- La posta elettronica identificata come phishing con elevata sicurezza verrà gestita in base all'azione relativa ai criteri di protezione da posta indesiderata. Vedere [configurare i criteri di protezione dalla posta indesiderata in EOP](configure-your-spam-filter-policies.md).
+- I messaggi di posta elettronica con malware sospetto verranno automaticamente messi in quarantena e i destinatari riceveranno una notifica. Vedere [Configurare i criteri antimalware in EOP.](configure-anti-malware-policies.md)
+- La posta elettronica identificata come phishing ad alta probabilità verrà gestita in base all'azione del criterio di protezione da posta indesiderata. Vedere [Configurare i criteri di protezione dalla posta indesiderata in EOP.](configure-your-spam-filter-policies.md)
 
-Per ulteriori informazioni su EOP, vedere [Exchange Online Protection Overview](exchange-online-protection-overview.md).
+Per ulteriori informazioni su EOP, vedere [Panoramica di Exchange Online Protection.](exchange-online-protection-overview.md)
 
-Poiché Microsoft desidera mantenere i clienti sicuri per impostazione predefinita, alcune sostituzioni dei tenant non vengono applicate per il phishing con malware o con elevato livello di sicurezza. Tali sostituzioni includono:
+Poiché Microsoft vuole proteggere i clienti per impostazione predefinita, alcune sostituzioni dei tenant non vengono applicate per malware o phishing ad alta probabilità. Queste sostituzioni includono:
 
-- Elenchi mittenti consentiti o elenchi di domini consentiti (criteri di protezione dalla posta indesiderata
+- Elenchi di mittenti consentiti o elenchi di domini consentiti (criteri di protezione da posta indesiderata)
 - Mittenti attendibili di Outlook
 - Elenco indirizzi IP consentiti (filtro connessioni)
 
-Per ulteriori informazioni su tali sostituzioni, vedere [creare elenchi di mittenti attendibili](create-safe-sender-lists-in-office-365.md).
+Per ulteriori informazioni su queste sostituzioni, vedere [Creare elenchi di mittenti attendibili.](create-safe-sender-lists-in-office-365.md)
 
-Secure per impostazione predefinita non è un'impostazione che può essere attivata o disattivata, ma è il modo in cui il filtro funziona fuori dalla casella per mantenere i messaggi potenzialmente pericolosi o indesiderati fuori dalle cassette postali. I messaggi di phishing con elevata sicurezza e malware devono essere messi in quarantena. Solo gli amministratori possono gestire i messaggi che vengono messi in quarantena come malware o phishing con elevato livello di sicurezza e possono anche segnalare falsi positivi a Microsoft da qui. Per ulteriori informazioni, vedere [gestire i messaggi e i file in quarantena come amministratore in EOP](manage-quarantined-messages-and-files.md)
+> [!NOTE]
+> We're in the process of deprecating the **Move message to Junk Email folder** action for a High confidence phishing **email** verdict in EOP anti-spam policies. I criteri di protezione dalla posta indesiderata che utilizzano questa azione per i messaggi di phishing ad alta probabilità verranno convertiti in **messaggi in quarantena.** **L'azione Reindirizza messaggio all'indirizzo di** posta elettronica per i messaggi di phishing ad alta probabilità non è influenzata.
 
-## <a name="more-on-why-were-doing-this"></a>Altre informazioni sul motivo per cui si sta eseguendo questa operazione
+La protezione per impostazione predefinita non è un'impostazione che può essere attivata o disattivata, ma è il modo in cui il filtro funziona per mantenere i messaggi potenzialmente pericolosi o indesiderati fuori dalle cassette postali. I messaggi di phishing con probabilità elevata e malware devono essere messi in quarantena. Solo gli amministratori possono gestire i messaggi messi in quarantena come malware o phishing ad alta probabilità e possono anche segnalare falsi positivi a Microsoft da qui. Per ulteriori informazioni, vedere Gestire i messaggi e i file in quarantena [come amministratore in EOP](manage-quarantined-messages-and-files.md)
 
-Lo spirito di sicurezza per impostazione predefinita è: è possibile eseguire la stessa operazione sul messaggio che si desidera utilizzare se si conosce il messaggio dannoso, anche se si è verificato un Consenti sul posto. Questo è lo stesso approccio utilizzato per il malware e ora si sta estendendo lo stesso comportamento ai messaggi di phishing con elevata sicurezza. I dati indicano che il tasso di falsi positivi per i messaggi di phishing con elevata sicurezza è molto basso e gli amministratori possono risolvere eventuali falsi positivi con invii di amministratore. I dati indicano inoltre che gli elenchi di mittenti consentiti e gli elenchi di domini consentiti nei criteri di protezione da posta indesiderata e nei mittenti attendibili in Outlook erano troppo vasti e causavano più danni che buoni.
+## <a name="more-on-why-were-doing-this"></a>Ulteriori informazioni sul motivo per cui si sta eseguendo questa operazione
 
-Per inserirlo in un altro modo: come servizio di sicurezza, stiamo agendo per conto dell'utente per evitare che gli utenti vengano compromessi. Inoltre, Secure per impostazione predefinita non è un rilevamento completo delle opzioni disponibili per i messaggi di phishing con sicurezza elevata nei criteri di protezione da posta indesiderata. Anche se si consiglia la quarantena, le altre azioni che sono sempre disponibili sono ancora disponibili (passare alla cartella posta indesiderata o reindirizzare a un indirizzo di posta elettronica).
+Il punto di essere sicuri per impostazione predefinita è che stiamo facendo la stessa azione sul messaggio che verrebbe eseguita se si conoscesse il messaggio come dannoso, anche quando un'eccezione configurata consentirebbe altrimenti il recapito del messaggio. Questo è lo stesso approccio che abbiamo sempre usato per il malware e ora stiamo estendendo questo stesso comportamento ai messaggi di phishing ad alta probabilità.
+
+I dati indicano che un utente ha 30 volte più probabilità di fare clic su un collegamento dannoso nei messaggi nella cartella Posta indesiderata rispetto alla quarantena. I dati indicano anche che il tasso di falsi positivi (messaggi validi contrassegnati come non validi) per i messaggi di phishing con alta probabilità è molto basso e gli amministratori possono risolvere eventuali falsi positivi con invii di amministratori.
+
+È stato inoltre stabilito che gli elenchi di mittenti ed elenchi di domini consentiti nei criteri di protezione da posta indesiderata e Mittenti attendibili in Outlook erano troppo ampi e causavano più danni che buone.
+
+Per dirla in altro modo: come servizio di sicurezza, microsoft agisce per conto dell'utente per impedire che gli utenti vengano compromessi. 
 
 ## <a name="exceptions"></a>Eccezioni
 
-L'unica sostituzione che consente ai messaggi di phishing con elevata sicurezza di ignorare il filtro è la regola del flusso di posta di Exchange (nota anche come regole di trasporto). Per utilizzare le regole del flusso di posta per ignorare il filtro, vedere [Use Mail Flow Rules to set the SCL in messages](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md).
+L'unico override che consente ai messaggi di phishing ad alta probabilità di ignorare il filtro sono le regole del flusso di posta di Exchange (note anche come regole di trasporto). Per utilizzare le regole del flusso di posta per ignorare il filtro, vedere Utilizzare le regole del flusso di posta [per impostare il valore SCL nei messaggi.](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md)
 
-È consigliabile utilizzare solo le sostituzioni negli scenari seguenti:
+È consigliabile utilizzare le sostituzioni solo negli scenari seguenti:
 
-- Simulazioni di phishing: gli attacchi simulati consentono di identificare gli utenti vulnerabili prima che un attacco reale influenzi l'organizzazione.
-- Cassette postali di sicurezza/secops: cassette postali dedicate utilizzate dai team di sicurezza per ottenere messaggi non filtrati (sia buoni che cattivi). I team possono quindi verificare se contengono contenuto dannoso.
-- Filtri di terze parti: Secure per impostazione predefinita non è applicabile quando il record MX del dominio non punta a Office 365.
-- Falsi positivi: è possibile che si desideri consentire temporaneamente alcuni messaggi che vengono ancora analizzati da Microsoft [tramite invii di amministratore](admin-submission.md). Come per tutte le sostituzioni, è consigliabile che siano temporanei.
+- Simulazioni di phishing: gli attacchi simulati consentono di identificare gli utenti vulnerabili prima che un attacco reale influisca sull'organizzazione.
+- Cassette postali di sicurezza/SecOps: cassette postali dedicate utilizzate dai team di sicurezza per ottenere messaggi non filtrati (sia buona che negativa). Teams può quindi esaminare se contengono contenuti dannosi.
+- Filtri di terze parti: la protezione per impostazione predefinita non si applica quando il record MX del dominio non punta a Office 365.
+- Falsi positivi: è possibile consentire temporaneamente determinati messaggi ancora in fase di analisi da Microsoft tramite invii [da parte dell'amministratore.](admin-submission.md) Come per tutte le sostituzioni, è consigliabile che siano temporanee.

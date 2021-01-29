@@ -1,5 +1,5 @@
 ---
-title: Proteggere gli account di amministratore
+title: Proteggere gli account amministratore
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -21,66 +21,67 @@ ms.custom:
 search.appverid:
 - BCS160
 - MET150
-description: Informazioni su come configurare e proteggere gli account di amministratore.
-ms.openlocfilehash: dc5f72cda0255641d7d2407d266a6ae584560733
-ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
+description: Informazioni su come configurare e proteggere gli account amministratore.
+ms.openlocfilehash: 73e4b69571b1e1d0a4d1585224fe256ff135c40a
+ms.sourcegitcommit: 1b30ac6e05906c8a014b1fed33fc71e1821f6ad2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46527187"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "50044489"
 ---
-# <a name="protect-your-administrator-accounts"></a>Proteggere gli account di amministratore
+# <a name="protect-your-administrator-accounts"></a>Proteggere gli account amministratore
 
-Poiché gli account di amministrazione sono dotati di privilegi elevati, sono obiettivi di valore per gli hacker e i criminali informatici. In questo articolo viene descritto:
+Poiché gli account amministratore dispongono di privilegi elevati, sono obiettivi importanti per hacker e cyber-criminali. In questo articolo viene descritto:
 
-- Informazioni su come configurare un account di amministratore aggiuntivo per le emergenze.
-- Come proteggere tali account.
- 
-Quando ti iscrivi a Microsoft 365 e immetti le tue informazioni, diventi automaticamente l'amministratore globale. Un amministratore globale ha il controllo definitivo degli account utente e di tutte le altre impostazioni nell'interfaccia di amministrazione di Microsoft, ma esistono diversi tipi di account di amministrazione con vari gradi di accesso. Vedere [About admin Roles](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles) per informazioni sui diversi livelli di accesso per ogni tipo di ruolo di amministratore.
+- Come configurare un account amministratore aggiuntivo per le emergenze.
+- Come proteggere questi account.
 
+Quando si effettua l'iscrizione a Microsoft 365 e si immettono le informazioni, si diventa automaticamente l'amministratore globale. Un amministratore globale ha il controllo finale degli account utente e di tutte le altre impostazioni nell'interfaccia di amministrazione di Microsoft, ma esistono molti tipi diversi di account amministratore con diversi gradi di accesso. Per [informazioni sui diversi](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles) livelli di accesso per ogni tipo di ruolo di amministratore, vedere i ruoli di amministratore.
 
-## <a name="create-additional-admin-accounts"></a>Creare account di amministratore aggiuntivi
+## <a name="create-additional-admin-accounts"></a>Creare account amministratore aggiuntivi
 
-Utilizzare gli account di amministrazione solo per l'amministrazione. Gli amministratori devono disporre di un account utente separato per l'utilizzo regolare delle app di Office e utilizzare il proprio account amministrativo solo quando necessario per gestire gli account e i dispositivi e durante la lavorazione di altre funzioni di amministratore. È inoltre consigliabile rimuovere la licenza Microsoft 365 dagli account di amministrazione in modo che non sia necessario pagarli.
+Usa gli account amministratore solo per l'amministrazione. Gli amministratori devono disporre di un account utente separato per l'uso regolare delle app di Office e utilizzare il proprio account amministrativo solo se necessario per gestire account e dispositivi e durante l'utilizzo di altre funzioni di amministratore. È anche una buona idea rimuovere la licenza di Microsoft 365 dagli account di amministratore in modo da non doverli pagare.
 
-Sarà necessario configurare almeno un account di amministratore globale aggiuntivo per concedere l'accesso all'amministratore a un altro dipendente attendibile. È inoltre possibile creare account amministratore distinti per la gestione degli utenti (questo ruolo è denominato **amministratore Gestione utenti**). Per ulteriori informazioni, vedere [informazioni sui ruoli di amministratore](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles).
+È necessario configurare almeno un account amministratore globale aggiuntivo per concedere l'accesso di amministratore a un altro dipendente attendibile. È inoltre possibile creare account amministratore separati per la gestione degli utenti (questo ruolo è denominato **Amministratore gestione utenti).** Per ulteriori informazioni, vedere [sui ruoli di amministratore.](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)
 
-Per creare account di amministratore aggiuntivi:
+Per creare altri account amministratore:
 
- 1. Passare all'interfaccia di <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">Amministrazione</a> e quindi scegliere **utenti** \> **attivi utenti** nel NAV sinistro.
+ 1. Passare <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">all'interfaccia di amministrazione</a> e quindi scegliere **Utenti** \> **attivi nel** riquadro di spostamento sinistro.
 
-    ![Scegliere utenti e quindi utenti attivi nel NAV sinistro](../media/Activeusers.png)
+    ![Choose Users and then Active users in the left nav](../media/Activeusers.png)
 
-2. Nella pagina **utenti attivi** selezionare **Aggiungi un utente** nella parte superiore della pagina e nel **nuovo pannello utente** immettere il nome e altre informazioni.
-3. Espandere la sezione **ruoli** e scegliere **amministratore globale** per concedere all'utente l'accesso all'amministratore globale. È inoltre possibile scegliere **amministratore personalizzato** e scegliere uno qualsiasi dei ruoli visualizzati.
+ 2. Nella pagina **Utenti attivi** selezionare Aggiungi utente nella parte superiore  della pagina e nel riquadro Nuovo utente immettere il nome e altre informazioni. 
+ 3. Espandere la **sezione Ruoli** e scegliere Amministratore **globale per** concedere all'utente l'accesso come amministratore globale. È inoltre possibile scegliere **Amministratore personalizzato** e scegliere uno dei ruoli visualizzati.
 
-    Immettere un messaggio di posta elettronica alternativo nella casella di testo **indirizzo di posta elettronica alternativo** . È possibile utilizzare questo indirizzo per recuperare le informazioni sulla password se si viene bloccati. Per gli amministratori globali, verrà inviata anche un'istruzione di fatturazione a questo indirizzo.
+    Immettere un messaggio di posta elettronica alternativo nella **casella di testo Indirizzo di posta** elettronica alternativo. È possibile utilizzare questo indirizzo per recuperare le informazioni sulla password in caso di blocco. Per gli amministratori globali, a questo indirizzo verrà inviato anche un estratto conto.
 
     ![Scegliere il ruolo di amministratore](../media/adminroles.png)
-    
-4. Nella sezione **licenze di prodotto** spostare il selettore di **Microsoft 365 business** su **disattivato** e la **licenza Crea utente senza prodotto** **su**attivato.
+
+ 4. Nella sezione **Licenze di prodotto** spostare il selettore per Microsoft **365 Business** su **Disattivato** e l'opzione Crea utente senza licenza **del** prodotto su **On.**
 
     ![Scegliere la licenza del prodotto](../media/productlicense.png)
 
-## <a name="create-an-emergency-admin-account"></a>Creare un account di amministratore di emergenza
+## <a name="create-an-emergency-admin-account"></a>Creare un account amministratore per gli interventi di emergenza
 
-È inoltre necessario creare un account di backup non configurato con l'autenticazione a più fattori (AMF), in modo da non bloccarsi accidentalmente (ad esempio, se si perde il telefono che si sta utilizzando come seconda forma di verifica). Verificare che la password per l'account sia una frase o almeno 16 caratteri. Questo è spesso definito come un "account break-Glass".
+Devi anche creare un account di backup non configurato con l'autenticazione a più fattori (MFA) in modo da non bloccarti accidentalmente (ad esempio, se perdi il telefono che stai usando come seconda forma di verifica). Verificare che la password per questo account sia una frase o una lunghezza di almeno 16 caratteri. Questo account viene spesso definito "account break-glass".
 
-## <a name="create-a-user-account-for-yourself"></a>Creare un account utente autonomo
+## <a name="create-a-user-account-for-yourself"></a>Creare un account utente per se stessi
 
-Utilizzare l'account utente per partecipare alla collaborazione con l'organizzazione, inclusa la verifica della posta. Questo significa che le credenziali di amministratore potrebbero essere simili a *Alice. Chavez <span></span> @Contoso. org* e l'account utente normale potrebbe essere simile a *Alice <span></span> @Contoso. com*.
+Utilizzare l'account utente per partecipare alla collaborazione con l'organizzazione, inclusa la verifica della posta. Ciò significa che le credenziali di amministratore potrebbero essere simili ad *Alice.Chavez <span></span> @Contoso.org* e il normale account utente potrebbe essere simile ad *Alice <span></span> @Contoso.com.*
 
 Per creare un nuovo account utente:
-1. Passare all'interfaccia di <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">Amministrazione</a> e quindi scegliere **utenti** \> **attivi utenti** nel NAV sinistro.
-2. Nella pagina **utenti attivi** selezionare **Aggiungi un utente** nella parte superiore della pagina e nel **nuovo pannello utente** immettere il nome e altre informazioni.
-3. Espandere la sezione **ruoli** e scegliere **utente (senza accesso amministrativo)**.
-1. Nella sezione **licenze di prodotto** spostare il selettore di **Microsoft 365 business** **su**attivato. 
+
+1. Passare <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">all'interfaccia di amministrazione</a> e quindi scegliere **Utenti** \> **attivi nel** riquadro di spostamento sinistro.
+2. Nella pagina **Utenti attivi** selezionare Aggiungi utente nella parte superiore  della pagina e nel riquadro Nuovo utente immettere il nome e altre informazioni. 
+3. Espandere la **sezione Ruoli** e scegliere **Utente (nessun accesso amministrativo)**.
+4. Nella sezione **Licenze di prodotto** spostare il selettore per Microsoft **365 Business** su **On.**
 
 ## <a name="register-each-of-these-accounts-for-multi-factor-authentication"></a>Registrare ognuno di questi account per l'autenticazione a più fattori
 
+Verificare che questi account utilizzino [l'autenticazione a più fattori.](m365-campaigns-multifactor-authenication.md)
 
-## <a name="additional-recommendations"></a>Suggerimenti aggiuntivi
+## <a name="additional-recommendations"></a>Consigli aggiuntivi
 
-- Assicurarsi che anche gli account di amministrazione siano configurati per l'autenticazione a più fattori. Verrà illustrato come eseguire questa operazione in configurare i [criteri di accesso condizionale](m365-campaigns-conditional-access.md).
-- Prima di utilizzare gli account di amministrazione, chiudere tutte le app e le sessioni del browser non correlate, compresi gli account di posta elettronica personali. È inoltre possibile utilizzare le finestre del browser private o in incognito.
-- Dopo aver completato le attività amministrative, accertarsi di disconnettersi dalla sessione del browser.
+- Assicurarsi che gli account amministratore siano impostati anche per l'autenticazione a più fattori. Verrà illustrato come eseguire questa operazione in Configurare [i criteri di accesso condizionale.](m365-campaigns-conditional-access.md)
+- Prima di usare gli account amministratore, chiudi tutte le sessioni e le app del browser non correlate, inclusi gli account di posta elettronica personali. Puoi anche usare le finestre del browser private o in incognito.
+- Dopo aver completato le attività di amministrazione, assicurarsi di disconnettersi dalla sessione del browser.

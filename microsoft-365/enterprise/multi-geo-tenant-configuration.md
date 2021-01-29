@@ -15,12 +15,12 @@ f1.keywords:
 ms.custom: seo-marvel-apr2020
 localization_priority: Normal
 description: Questo articolo illustra come aggiungere posizioni satellitari e configurare il tenant per Microsoft 365 Multi-Geo.
-ms.openlocfilehash: 4276d8ff70fed99e74f2cbab29386c81da06d17b
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: fb907c02a4714c5a2d8e47245321252e7186a8a7
+ms.sourcegitcommit: f3059a0065496623e36e5a084cd2291e6b844597
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46691114"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "50040569"
 ---
 # <a name="microsoft-365-multi-geo-tenant-configuration"></a>Configurazione del tenant di Microsoft 365 Multi-Geo
 
@@ -110,7 +110,10 @@ La procedura contenuta in questa sezione richiede il [modulo di Microsoft Azure 
 
 ## <a name="onedrive-provisioning-and-the-effect-of-pdl"></a>Provisioning di OneDrive e l'effetto della posizione dati preferita
 
-Se l'utente ha già un sito OneDrive creato nel tenant, impostare il PDL non sposterà automaticamente il OneDrive esistente. Per spostare il OneDrive di un utente, vedere [OneDrive for Business Geo Move](move-onedrive-between-geo-locations.md), e seguire le istruzioni come spostare OneDrive tra due località geografiche. (Si noti che la cassetta postale di Exchange dell'utente non si sposta automaticamente quando si imposta la posizione dati preferita dell'utente.)
+Se l'utente ha già un sito OneDrive creato nel tenant, impostare il PDL non sposterà automaticamente il OneDrive esistente. Per spostare OneDrive di un utente, vedere Spostamento geografico di [OneDrive for Business.](move-onedrive-between-geo-locations.md)
+
+> [!NOTE]
+> Exchange Online sposta automaticamente la cassetta postale dell'utente se il PLD cambia e MailboxRegion non corrisponde più al codice di posizione geografica del database delle cassette postali. Per ulteriori informazioni, vedere [Amministrazione delle cassette postali di Exchange Online in un ambiente multi-geografico.](https://docs.microsoft.com/microsoft-365/enterprise/administering-exchange-online-multi-geo)
 
 Se l'utente non dispone di un sito di OneDrive all'interno del tenant, il provisioning di OneDrive verrà eseguito in base al valore della posizione dati preferita, presupponendo che la posizione dati preferita dell'utente corrisponda a una delle posizioni satellite della società.
 

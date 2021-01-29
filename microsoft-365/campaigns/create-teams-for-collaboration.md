@@ -22,68 +22,74 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Creare uno spazio di collaborazione per il team con Microsoft teams.
-ms.openlocfilehash: 7a07b7b90f5c89f6b1c6a6dd17145ca11af5dfa6
-ms.sourcegitcommit: 1522a6471e0c5254a6d0f592e1f4dfacd1dd473a
+description: Creare uno spazio di collaborazione per il team con Microsoft Teams.
+ms.openlocfilehash: b30bf495dfbf6d510eab9a7d783d343d6b9476a6
+ms.sourcegitcommit: 1b30ac6e05906c8a014b1fed33fc71e1821f6ad2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "48245846"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "50044685"
 ---
 # <a name="create-teams-for-collaboration-in-microsoft-teams"></a>Creare team per la collaborazione in Microsoft Teams
 
-Microsoft teams è un'app di collaborazione che aiuta il personale a rimanere organizzato e a dialogare da qualsiasi dispositivo. È possibile utilizzare Microsoft teams per avere conversazioni istantanee con i membri del personale o gli ospiti esterni all'organizzazione. È inoltre possibile effettuare chiamate telefoniche, riunioni host e condivisione di file.
+Microsoft Teams è un'app di collaborazione che consente al personale di organizzare e organizzare conversazioni da qualsiasi dispositivo. È possibile usare Microsoft Teams per conversazioni istantanee con membri del personale o utenti guest esterni all'organizzazione. È inoltre possibile effettuare chiamate telefoniche, ospitare riunioni e condividere file.
 
 ## <a name="best-practices"></a>Procedure consigliate
 
-Ad esempio, le campagne possono creare i seguenti team per comunicare e collaborare in modo sicuro:
+1. Creare team privati per informazioni riservate.
+1. Creare un team a livello di organizzazione per le comunicazioni con tutti gli utenti dell'organizzazione.
+1. Creare team per progetti specifici e applicare la giusta protezione in base a chi deve essere incluso.
+1. Creare team specifici per la comunicazione con i partner esterni per mantenerli separati da qualsiasi elemento sensibile per l'azienda.
 
-1. **Una campagna conduce il team:** Configurarlo come team privato in modo che solo i membri della campagna chiave possano accedervi e discutere di problemi potenzialmente sensibili.
-2. **Un team della campagna generale:** Questo è il modo in cui tutti devono essere utilizzati per le comunicazioni quotidiane e per il lavoro. Gli utenti, i gruppi o i comitati possono configurare i canali in questo team per svolgere il proprio lavoro. Ad esempio, le persone che pianificano eventi possono configurare un canale per la chat e coordinare la logistica per gli eventi della campagna.
-3. **Un team di partner:** Si tratta di un team in cui è possibile coordinarsi con i fornitori, i partner o i volontari senza che questi possano essere sensibili.
+Ad esempio, un'azienda, una società legale o una pratica sanitaria potrebbe creare i team seguenti:
 
-È inoltre possibile creare team per progetti specifici e applicare la giusta quantità di protezione in base a chi deve essere incluso. 
+1. **Un team aziendale, aziendale** o pratico: Questo è per tutti gli utenti da usare per le comunicazioni quotidiane e il lavoro in tutta l'azienda. È possibile utilizzare questo team per pubblicare annunci o condividere informazioni di interesse per l'intera azienda o pratica.
+1. **Team individuali:** Configurare i team per i gruppi più piccoli per collaborare sul loro lavoro quotidiano.
+1. **Uno o più team di comunicazione esterni:** Coordinarsi con i fornitori, i partner o i clienti senza consentire loro di entrare in qualcosa di sensibile. Configurare canali diversi per gruppi specifici.
 
-![Diagramma di una finestra di Microsoft teams con tre team distinti per consentire la comunicazione e la collaborazione sicure](../media/m365-democracy-teams-collab.png)
+![Diagramma di una finestra di Microsoft Teams con tre team separati per consentire comunicazioni e collaborazione sicure all'interno di un'azienda](../media/m365-democracy-teams-business-collab.png)
 
-Quando si crea un team, ecco cos'altro viene creato:
+E le campagne potrebbero creare i team seguenti per comunicare e collaborare in modo sicuro:
+
+1. **Un team di lead della campagna:** Configura questa impostazione come team privato in modo che solo i membri chiave della campagna possano accedervi e discutere di problemi potenzialmente sensibili.
+2. **Un team della campagna generale:** Questo è per tutti gli utenti da usare per le comunicazioni quotidiane e il lavoro. Gli utenti, i gruppi o i gruppi possono configurare canali in questo team per eseguire il proprio lavoro. Ad esempio, gli utenti che pianificano l'evento possono configurare un canale per chattare e coordinare la logistica per gli eventi della campagna.
+3. **Un team partner:** Coordinarsi con i fornitori, i partner o i volontari senza consentire loro di entrare in qualcosa di sensibile.
+
+![Diagramma di una finestra di Microsoft Teams con tre team separati per consentire comunicazioni e collaborazione sicure all'interno di una campagna](../media/m365-democracy-teams-collab.png)
+
+Quando si crea un team, ecco cosa viene creato:
 
 - Un nuovo [gruppo di Microsoft 365](https://docs.microsoft.com/MicrosoftTeams/office-365-groups)
 - Un sito e una raccolta documenti di [SharePoint Online](https://docs.microsoft.com/MicrosoftTeams/sharepoint-onedrive-interact) per archiviare i file del team
-- Una cassetta postale condivisa e un calendario di [Exchange Online](https://docs.microsoft.com/MicrosoftTeams/exchange-teams-interact)
+- Una [cassetta postale e un](https://docs.microsoft.com/MicrosoftTeams/exchange-teams-interact) calendario condivisi di Exchange Online
 - Un blocco appunti di OneNote
-- Collegamenti ad altre app di Office 365 come Planner e Power BI
+- Ties into other Office 365 apps such as Planner and Power BI
 
-All'interno di Microsoft teams, è possibile trovare:
-1. **Teams:** Individuare i canali a cui appartengono o crearne di propri. Canali all'interno è possibile tenere riunioni sul posto, avere conversazioni e condividere file.
+All'interno di Microsoft Teams, è possibile trovare:
 
-2. **Riunioni:** Vedere tutto quello che è stato allineato per il giorno o la settimana. In alternativa, pianificare una riunione. Questo calendario è sincronizzato con il calendario di Outlook.
- 
-3. **Chiamate:** In alcuni casi, se l'organizzazione è stata configurata, è possibile chiamare chiunque da Microsoft teams, anche se non si utilizza Microsoft teams.
+1. **Teams:** Trovare i canali a cui appartenere o crearne di propri. All'interno dei canali è possibile tenere riunioni sul posto, avere conversazioni e condividere file.
+2. **Riunioni:** Vedere tutto ciò che hai allineato per il giorno o la settimana. In caso contrario, pianificare una riunione. Questo calendario viene sincronizzato con il calendario di Outlook.
+3. **Chiamate:** In alcuni casi, se l'organizzazione lo ha configurato, è possibile chiamare chiunque da Microsoft Teams, anche se non usa Microsoft Teams.
+4. **Attività:** Recuperare tutti i messaggi non letti, le @mentions, le risposte e altro ancora.
 
-4. **Attività:** Recuperare il ritardo su tutti i messaggi non letti, @mentions, risposte e altro ancora. 
-
-Nella parte superiore della finestra di comando, utilizzare la casella di controllo per cercare elementi o utenti specifici, eseguire azioni rapide e avviare app.
-
+Usa la casella di comando nella parte superiore per cercare elementi o persone specifici, eseguire azioni rapide e avviare app.
 
 ## <a name="set-it-up"></a>Configurazione
 
-
-Creare un team privato solo per il responsabile della campagna e il candidato come questo. 
+Creare un team privato solo per il titolare dell'azienda, i responsabili, il manager della campagna e il candidato in questo modo.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWeqWA]
 
-Creare un team a livello di organizzazione che tutti gli utenti della campagna possano utilizzare per la comunicazione e la condivisione dei file.
+Creare un team a livello di organizzazione che tutti gli utenti dell'azienda o della campagna possono usare per comunicare e condividere file.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2GCG9]
 
-Creare un team condiviso con gli utenti esterni alla campagna, ad esempio la pubblicità del finanziamento.
+Creare un team da condividere con utenti guest esterni all'organizzazione, ad esempio per la pubblicità o le finanze.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FQMp]
 
-Per ulteriori informazioni su Microsoft teams, vedere [documentazione tecnica su Microsoft teams](https://docs.microsoft.com/microsoftteams/microsoft-teams)
+Ulteriori informazioni su Microsoft Teams nella [documentazione tecnica di Microsoft Teams](https://docs.microsoft.com/microsoftteams/microsoft-teams)
 
-## <a name="admin-settings"></a>Impostazioni di amministratore
+## <a name="admin-settings"></a>Impostazioni amministratore
 
-È necessario essere un amministratore per creare un team a livello di organizzazione. Per ulteriori informazioni, vedere [che cos'è un amministratore in Microsoft 365?](https://support.office.com/article/what-is-an-admin-e123627e-4892-4461-b9aa-1b6d57a5cfa4?ui=en-US&rs=en-US&ad=US).
-  
+È necessario essere un amministratore per creare un team a livello di organizzazione. Per altre informazioni, vedere [Che cos'è un amministratore in Microsoft 365?](https://support.office.com/article/what-is-an-admin-e123627e-4892-4461-b9aa-1b6d57a5cfa4?ui=en-US&rs=en-US&ad=US).

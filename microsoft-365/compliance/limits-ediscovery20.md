@@ -15,30 +15,30 @@ search.appverid:
 - MET150
 ms.custom:
 - seo-marvel-apr2020
-description: Informazioni sui limiti del caso, sui limiti di indicizzazione e sui limiti di ricerca in vigore per la soluzione avanzata di eDiscovery in Microsoft 365.
-ms.openlocfilehash: 8238a86df2d4e6b487571a3c0f9a380d90607729
-ms.sourcegitcommit: 495b66b77d6dbe6d69e5b06b304089e4e476e568
+description: Informazioni sui limiti dei casi, i limiti di indicizzazione e i limiti di ricerca in vigore per la soluzione Advanced eDiscovery in Microsoft 365.
+ms.openlocfilehash: 6994a3511b97e9209491fa61a8c6f9bc147b6b87
+ms.sourcegitcommit: 1b30ac6e05906c8a014b1fed33fc71e1821f6ad2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49799683"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "50044631"
 ---
 # <a name="limits-in-advanced-ediscovery"></a>Limiti di Advanced eDiscovery
 
-In questo articolo vengono descritti i limiti della soluzione avanzata di eDiscovery in Microsoft 365.
+In questo articolo vengono descritti i limiti della soluzione Advanced eDiscovery in Microsoft 365.
 
-## <a name="case-and-review-set-limits"></a>Limiti del caso e del set di Revisione
+## <a name="case-and-review-set-limits"></a>Limiti impostati per casi e revisioni
 
-Nella tabella seguente sono elencati i limiti relativi ai casi e ai set di revisione in Advanced eDiscovery.
+Nella tabella seguente sono elencati i limiti per i casi e i set di revisioni in Advanced eDiscovery.
 
 | Descrizione del limite | Limite |
 |:-----|:-----|
-|Numero totale di documenti che è possibile aggiungere a un caso (per tutti i set di revisione in un caso).  <br/> |3 milioni <br/> |
-|Dimensione totale dei file per set di carico. Questo include il caricamento di non Office 365 in un set di revisione.  <br/> |300 GB <br/> |
-|Quantità totale di dati caricati in tutti i set di revisione nell'organizzazione al giorno.<br/> |2 TB <br/> |
+|Numero totale di documenti che è possibile aggiungere a un caso (per tutti i set di revisioni in un caso).  <br/> |3 milioni <br/> |
+|Dimensioni totali dei file per set di caricamento. Ciò include il caricamento di non Office 365 in un insieme da rivedere.  <br/> |300 GB <br/> |
+|Quantità totale di dati caricati in tutti i set di recensioni nell'organizzazione al giorno.<br/> |2 TB <br/> |
 |Numero massimo di set di carichi per caso.  <br/> |200 <br/> |
-|Numero massimo di insiemi di revisione per ogni caso.  <br/> |20 <br/> |
-|Numero massimo di gruppi di tag per ogni caso.  <br/> |1000 <br/> |
+|Numero massimo di insiemi di recensioni per caso.  <br/> |20 <br/> |
+|Numero massimo di gruppi di tag per caso.  <br/> |1000 <br/> |
 |Numero massimo di tag per caso.  <br/> |1000 <br/> |
 |||
 
@@ -52,69 +52,69 @@ Nella tabella seguente sono elencati i limiti di indicizzazione in Advanced eDis
   |Dimensione massima di un singolo file.   <br/> |100 MB<sup>1</sup> <br/> |
   |Profondità massima degli elementi incorporati in un documento.  <br/> |25<sup>1</sup> <br/> |
   |Dimensioni massime dei file elaborati dal riconoscimento ottico dei caratteri (OCR).  <br/> |24 MB<sup>1</sup> <br/> 
-  |Numero massimo di processi di indicizzazione per ogni organizzazione al giorno. <br/> |10<sup>6</sup> <br/>|  
+  |Numero massimo di processi di indicizzazione per organizzazione al giorno. <br/> |10<sup>6</sup> <br/>|  
 |||
 
 ## <a name="search-limits"></a>Limiti relativi alla ricerca
 
-I limiti descritti in questa sezione sono correlati all'utilizzo dello strumento di ricerca nella scheda **ricerche** per raccogliere i dati per un caso. Per ulteriori informazioni, vedere [raccolta di dati per un caso in Advanced eDiscovery](collecting-data-for-ediscovery.md).
+I limiti descritti in questa sezione sono correlati all'utilizzo dello strumento di ricerca nella scheda **Ricerche** per raccogliere dati per un caso. Per ulteriori informazioni, vedere [Raccogliere dati per un caso in Advanced eDiscovery.](collecting-data-for-ediscovery.md)
 
 | Descrizione del limite | Limite |
 |:-----|:-----|
-|Numero massimo di cassette postali o siti che possono essere ricercati in una singola ricerca.  <br/> |Nessun limite  <br/> |
-|Numero massimo di ricerche che possono essere eseguite contemporaneamente.  <br/> |Nessun limite  <br/> | 
-|Numero massimo di ricerche che un singolo utente può avviare contemporaneamente.  <br/> |10   <br/> | 
-|Numero massimo di caratteri per una query di ricerca (inclusi operatori e condizioni).  <br/> |**Cassette postali**: 10.000<br/>**Siti**: 4.000 quando si effettua la ricerca in tutti i siti o 2.000 quando si effettua la ricerca fino a 20 siti <sup>2</sup> <br/> |
-|Numero minimo di caratteri alfanumerici per i caratteri jolly del prefisso; ad esempio, **1 \** _ o _*set \**_. <br/> |3   <br/> |  
-|Numero massimo di varianti restituite quando si utilizza il carattere jolly prefisso per cercare una frase esatta o quando si utilizza un carattere jolly prefisso e l'operatore _ *near** Boolean.  <br/> |10.000 <sup>3</sup> <br/> |
-|Numero massimo di elementi per ogni cassetta postale utente che vengono visualizzati nella pagina di anteprima per le ricerche. Vengono visualizzati gli elementi più recenti.   <br/> |100  <br/> |
-|Numero massimo di elementi di tutte le cassette postali visualizzate nella pagina di anteprima per le ricerche.  <br/> |1,000  <br/> |
-|Numero massimo di cassette postali che è possibile visualizzare in anteprima per i risultati della ricerca.  Se sono presenti più di 1000 cassette postali che contengono elementi che corrispondono alla query di ricerca, sono disponibili per l'anteprima solo le cassette postali di 1.000 con la maggior parte dei risultati.<br/> |1,000  <br/> |
-|Numero massimo di elementi di siti di SharePoint e OneDrive for business visualizzati nella pagina di anteprima per le ricerche. Vengono visualizzati gli elementi più recenti.  <br/> |200  <br/> |
-|Numero massimo di siti di SharePoint e OneDrive for business che è possibile visualizzare in anteprima per i risultati della ricerca. Se sono presenti più di 200 siti che contengono elementi che corrispondono alla query di ricerca, solo i primi 200 siti con la maggior parte dei risultati sono disponibili per l'anteprima.  <br/> |200  <br/> |
-|Numero massimo di elementi per ogni cassetta postale di cartelle pubbliche visualizzata nella pagina di anteprima per le ricerche.  <br/> |100  <br/> |
-|Numero massimo di elementi presenti in tutti gli elementi della cassetta postale delle cartelle pubbliche visualizzati nella pagina di anteprima per le ricerche.  <br/> |200  <br/> |
-|Numero massimo di cassette postali delle cartelle pubbliche che è possibile visualizzare in anteprima per i risultati della ricerca. Se sono presenti più di 500 cassette postali delle cartelle pubbliche che contengono elementi che corrispondono alla query di ricerca, solo le cassette postali di 500 con la maggior parte dei risultati sono disponibili per l'anteprima.  <br/> |500  <br/> |
+|Numero massimo di cassette postali o siti in cui è possibile eseguire ricerche in una singola ricerca. |Nessun limite|
+|Numero massimo di ricerche che è possibile eseguire contemporaneamente. |Nessun limite |
+|Numero massimo di ricerche che un singolo utente può avviare contemporaneamente. |10  | 
+|Numero massimo di caratteri per una query di ricerca (inclusi operatori e condizioni). |10.000 &nbsp; <sup>2</sup>|
+|Numero minimo di caratteri alfa per i caratteri jolly del prefisso; ad esempio **one \** _ o _*set \**_.|3 |  
+|Numero massimo di varianti restituite quando si utilizza il carattere jolly del prefisso per cercare una frase esatta o quando si utilizza un carattere jolly del prefisso e l'operatore booleano _ *NEAR**. |10.000 &nbsp; <sup>3</sup>|
+|Numero massimo di elementi per cassetta postale utente visualizzati nella pagina di anteprima per le ricerche. Vengono visualizzati gli elementi più recenti. |100|
+|Numero massimo di elementi da tutte le cassette postali visualizzate nella pagina di anteprima per le ricerche.|1.000|
+|Numero massimo di cassette postali che è possibile visualizzare in anteprima per i risultati della ricerca.  Se sono presenti più di 1000 cassette postali che contengono elementi che corrispondono alla query di ricerca, solo le prime 1.000 cassette postali con il maggior numero di risultati sono disponibili per l'anteprima.|1.000|
+|Numero massimo di elementi dai siti di SharePoint e OneDrive for Business visualizzati nella pagina di anteprima per le ricerche. Vengono visualizzati gli elementi più recenti. |200|
+|Numero massimo di siti di SharePoint e OneDrive for Business visualizzabili in anteprima per i risultati della ricerca. Se sono presenti più di 200 siti che contengono elementi che corrispondono alla query di ricerca, solo i primi 200 siti con il maggior numero di risultati sono disponibili per l'anteprima.|200|
+|Numero massimo di elementi per cassetta postale di cartelle pubbliche visualizzato nella pagina di anteprima per le ricerche. |100|
+|Numero massimo di elementi trovati in tutti gli elementi della cassetta postale delle cartelle pubbliche visualizzati nella pagina di anteprima per le ricerche. |200|
+|Numero massimo di cassette postali di cartelle pubbliche che possono essere visualizzate in anteprima per i risultati della ricerca. Se sono presenti più di 500 cassette postali di cartelle pubbliche che contengono elementi che corrispondono alla query di ricerca, solo le prime 500 cassette postali con il maggior numero di risultati sono disponibili per l'anteprima.|500|
 |||
 
-## <a name="viewer-limits"></a>Limiti del Visualizzatore
+## <a name="viewer-limits"></a>Limiti relativi ai visualizzatore
 
 | Descrizione del limite | Limite |
 |:-----|:-----|
-|Dimensione massima del file di Excel che è possibile visualizzare nel Visualizzatore nativo.  <br/> |4 MB  <br/> |
+|Dimensioni massime dei file di Excel visualizzabili nel visualizzatore nativo.  <br/> |4 MB  <br/> |
 |||
 
 ## <a name="export-limits"></a>Limiti di esportazione
 
 | Descrizione del limite | Limite |
 |:-----|:-----|
-|Dimensione massima di una singola esportazione.|3 milioni documenti o 100 GB, a seconda di quanto è più piccolo|
-|Quantità massima di dati in un solo giorno. | 2 TB |
-|Massime esportazioni simultanee nell'organizzazione. | 10 <sup>4</sup> |
-|Massime esportazioni simultanee per utente. | 3  |
+|Dimensione massima di una singola esportazione.|3 milioni di documenti o 100 GB, a seconda di quale sia più piccolo|
+|Quantità massima di dati in un singolo giorno. | 2 TB |
+|Numero massimo di esportazioni simultanee nell'organizzazione. | 10 <sup>4</sup> |
+|Numero massimo di esportazioni simultanee per utente. | 3 |
 |Dimensione massima di un singolo file PST. | 10 GB |
-|Massime esportazioni simultanee per ogni set di revisione. | 1  |
+|Numero massimo di esportazioni simultanee per revisione impostata. | 1  |
 |||
 
-## <a name="review-set-download-limits"></a>Revisione dei limiti di download dei set
+## <a name="review-set-download-limits"></a>Esaminare i limiti di download impostati
 
 | Descrizione del limite | Limite |
 |:-----|:-----|
-|Totale dimensioni dei file o numero massimo di documenti scaricati da un set di revisione.  <br/> |3 MB o 50 documenti <sup>5</sup>|
+|Dimensioni totali dei file o numero massimo di documenti scaricati da un insieme da rivedere.  <br/> |3 MB o 50 documenti <sup>5</sup>|
 |||
 
 <br/>
 <br/>
 
 > [!NOTE]
-> <sup>1</sup> qualsiasi elemento che supera il limite di un singolo file verrà visualizzato come un errore di elaborazione.
+> <sup>1</sup> Qualsiasi elemento che supera un singolo limite di file verrà visualizzato come errore di elaborazione.
 >
-> <sup>2</sup> quando si eseguono ricerche nei percorsi di SharePoint e OneDrive for business, i caratteri negli URL dei siti di cui è stata eseguita la ricerca vengono conteggiati rispetto a questo limite.
+> <sup>2</sup> Quando si esegue una ricerca nelle posizioni di SharePoint e OneDrive for Business, i caratteri negli URL dei siti in cui viene eseguita la ricerca vengono conteggiati rispetto a questo limite.
 >
-> <sup>3</sup> per le query non basate su frasi (un valore di parola chiave che non utilizza virgolette doppie) viene utilizzato un indice di prefisso speciale. Questo indica che si verifica una parola in un documento, ma non in cui si trova nel documento. Per eseguire una query di frase (un valore di parola chiave con virgolette doppie), è necessario confrontare la posizione all'interno del documento per le parole della frase. Questo significa che non è possibile utilizzare l'indice di prefisso per le query di frase. In questo caso, la query viene espansa internamente con tutte le parole possibili che il prefisso espande; ad esempio, **time \* *_ può espandersi su _*"Time OR timer OR Times OR Timex or timeboxed or..."**. Il limite di 10.000 è il numero massimo di varianti a cui la parola può espandersi, non il numero di documenti che corrispondono alla query. Non esiste un limite superiore per i termini non frase.
+> <sup>3</sup> Per le query non di frase (un valore di parola chiave che non utilizza virgolette doppie) viene utilizzato un indice di prefisso speciale. In questo modo viene indicato che una parola si trova in un documento, ma non nella posizione in cui si trova nel documento. Per eseguire una query di frase (un valore di parola chiave con virgolette doppie), è necessario confrontare la posizione all'interno del documento per le parole nella frase. Ciò significa che non è possibile utilizzare l'indice del prefisso per le query di frasi. In questo caso, la query viene espansa internamente con tutte le parole possibili a cui si espande il prefisso. Ad esempio, **time _ può espandere a \* *_*"time OR timer OR times OR timex OR timex OR timeboxed OR ..."**. Il limite di 10.000 è il numero massimo di varianti che la parola può espandere e non il numero di documenti corrispondenti alla query. Non esiste alcun limite massimo per i termini non frasi.
 >
-> <sup>4</sup> questo limite è condiviso tra tutti gli strumenti di eDiscovery. Questo significa che le esportazioni simultanee in ricerca contenuto, Core eDiscovery e Advanced eDiscovery vengono applicate rispetto a questo limite.
+> <sup>4</sup> Questo limite viene condiviso tra tutti gli strumenti di eDiscovery. Ciò significa che le esportazioni simultanee in Ricerca contenuto, Core eDiscovery e Advanced eDiscovery vengono applicate a questo limite.
 >
-> <sup>5</sup> questo limite si applica al download di documenti selezionati da un set di revisione. Non si applica ai documenti di esportazione da un set di revisione. Per ulteriori informazioni sul download e l'esportazione di documenti, vedere [Export case data in Advanced eDiscovery](exporting-data-ediscover20.md).
+> <sup>5</sup> Questo limite si applica al download di documenti selezionati da un insieme da rivedere. Non si applica all'esportazione di documenti da un insieme da rivedere. Per ulteriori informazioni sul download e l'esportazione di documenti, vedere Esportare i [dati dei casi in Advanced eDiscovery.](exporting-data-ediscover20.md)
 >
-> <sup>6</sup> limiti di indicizzazione per organizzazione al giorno. Come soluzione alternativa, è possibile selezionare più depositari nella scheda **origini dati** in un caso e quindi fare clic su **Aggiorna indice** per evitare di creare un processo di indicizzazione distinto per ogni custode. 
+> <sup>6</sup> Limiti di indicizzazione per organizzazione al giorno. Per ovviare a questo problema,  è possibile selezionare più responsabile  in un caso nella scheda Origini dati e quindi fare clic su Aggiorna indice per evitare di creare un processo di indicizzazione separato per ogni responsabile. 
