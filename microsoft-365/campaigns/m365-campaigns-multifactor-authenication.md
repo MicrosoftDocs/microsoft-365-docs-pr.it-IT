@@ -24,21 +24,21 @@ search.appverid:
 - MET150
 - MOE150
 description: Configurare l'autenticazione a più fattori.
-ms.openlocfilehash: feb0a4be07b09ed3e8f00c6d19edca3355f374ab
-ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
+ms.openlocfilehash: 35f96bc41eba9a903bdb3d377a523e2b82e8c428
+ms.sourcegitcommit: 1b30ac6e05906c8a014b1fed33fc71e1821f6ad2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48131955"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "50044433"
 ---
-# <a name="set-up-multifactor-authentication"></a><span data-ttu-id="054a7-103">Configurare l'autenticazione a più fattori</span><span class="sxs-lookup"><span data-stu-id="054a7-103">Set up multifactor authentication</span></span>
+# <a name="set-up-multifactor-authentication"></a><span data-ttu-id="aa155-103">Configurare l'autenticazione a più fattori</span><span class="sxs-lookup"><span data-stu-id="aa155-103">Set up multifactor authentication</span></span>
 
-<span data-ttu-id="054a7-104">L'autenticazione a più fattori offre maggiore sicurezza per la propria azienda.</span><span class="sxs-lookup"><span data-stu-id="054a7-104">Multi-factor authentication provides more security for your business.</span></span> <span data-ttu-id="054a7-105">Dopo che l'amministratore ha richiesto l'utilizzo dell'AMF, è possibile configurare l'app Microsoft Authenticator per consentire l'accesso alle app principali in modo sicuro con il telefono.</span><span class="sxs-lookup"><span data-stu-id="054a7-105">After your admin has required you to use MFA, you can set up the Microsoft Authenticator app to let you log into key apps securely with your phone.</span></span> 
+<span data-ttu-id="aa155-104">L'autenticazione a più fattori offre maggiore sicurezza per l'azienda.</span><span class="sxs-lookup"><span data-stu-id="aa155-104">Multi-factor authentication provides more security for your business.</span></span> <span data-ttu-id="aa155-105">Dopo che l'amministratore ha richiesto l'uso dell'autenticazione a più fattori, puoi configurare l'app Microsoft Authenticator per consentirti di accedere in modo sicuro alle app chiave con il telefono.</span><span class="sxs-lookup"><span data-stu-id="aa155-105">After your admin has required you to use MFA, you can set up the Microsoft Authenticator app to let you log into key apps securely with your phone.</span></span> 
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2MmQR] 
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2MmQR]
 
-<span data-ttu-id="054a7-106">Per ulteriori informazioni, vedere [configurare l'autenticazione a più fattori in Microsoft 365](https://support.office.com/article/a32541df-079c-420d-9395-9d59354f7225)</span><span class="sxs-lookup"><span data-stu-id="054a7-106">See more at [Set up multifactor authentication in Microsoft 365](https://support.office.com/article/a32541df-079c-420d-9395-9d59354f7225)</span></span>
+<span data-ttu-id="aa155-106">Per altre [informazioni, vedere Configurare l'autenticazione a più fattori in Microsoft 365](https://support.office.com/article/a32541df-079c-420d-9395-9d59354f7225)</span><span class="sxs-lookup"><span data-stu-id="aa155-106">See more at [Set up multifactor authentication in Microsoft 365](https://support.office.com/article/a32541df-079c-420d-9395-9d59354f7225)</span></span>
 
-## <a name="use-the-outlook-app-in-your-devices"></a><span data-ttu-id="054a7-107">Utilizzare l'app Outlook nei dispositivi</span><span class="sxs-lookup"><span data-stu-id="054a7-107">Use the Outlook app in your devices</span></span>
+## <a name="use-the-outlook-app-in-your-devices"></a><span data-ttu-id="aa155-107">Usare l'app Outlook nei dispositivi</span><span class="sxs-lookup"><span data-stu-id="aa155-107">Use the Outlook app in your devices</span></span>
 
-<span data-ttu-id="054a7-108">Dopo che l'amministratore ha richiesto l'utilizzo di Mae e che è stata configurata un'app Authenticator come seconda forma di autenticazione, è consigliabile installare e utilizzare l'app Outlook solo per accedere al messaggio di posta elettronica Microsoft 365 per le campagne.</span><span class="sxs-lookup"><span data-stu-id="054a7-108">After your admin has required you to use MFA and you've set up an authenticator app as a second form of authentication, we recommend that you install and only use the Outlook app to access your Microsoft 365 for Campaigns email.</span></span> <span data-ttu-id="054a7-109">Per informazioni su come installare le app di Office, tra cui Outlook, nel telefono, vedere [configurare i dispositivi mobili](../business/set-up-mobile-devices.md) .</span><span class="sxs-lookup"><span data-stu-id="054a7-109">See [Set up mobile devices](../business/set-up-mobile-devices.md) for how to install Office apps, including Outlook, on your phone.</span></span>
+<span data-ttu-id="aa155-108">Dopo che l'amministratore ha richiesto di usare l'autenticazione a più fattori e aver configurato un'app di autenticazione come seconda forma di autenticazione, è consigliabile installare e usare solo l'app Outlook per accedere alla posta elettronica di Microsoft 365.</span><span class="sxs-lookup"><span data-stu-id="aa155-108">After your admin has required you to use MFA and you've set up an authenticator app as a second form of authentication, we recommend that you install and only use the Outlook app to access your Microsoft 365 email.</span></span> <span data-ttu-id="aa155-109">Per [informazioni su come](../business/set-up-mobile-devices.md) installare le app di Office, incluso Outlook, nel telefono, vedere Configurare i dispositivi mobili.</span><span class="sxs-lookup"><span data-stu-id="aa155-109">See [Set up mobile devices](../business/set-up-mobile-devices.md) for how to install Office apps, including Outlook, on your phone.</span></span>
