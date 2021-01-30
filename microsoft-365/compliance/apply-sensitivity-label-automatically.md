@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Quando si crea un'etichetta di riservatezza, è possibile assegnare automaticamente un'etichetta a file e messaggi di posta elettronica oppure chiedere agli utenti di selezionare l'etichetta consigliata.
-ms.openlocfilehash: 40cb270ee7084b50ed9ef58b9598f16e76dffa36
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 190b06a719775fbbf14c94a4fd817d3242a95e6c
+ms.sourcegitcommit: 1b30ac6e05906c8a014b1fed33fc71e1821f6ad2
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49929492"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "50044746"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Applicare automaticamente un'etichetta di riservatezza al contenuto
 
@@ -138,7 +138,7 @@ Inoltre, analogamente alla configurazione dei criteri di prevenzione della perdi
 
 ### <a name="configuring-trainable-classifiers-for-a-label"></a>Configurazione di classificatori sottoponibili a training per un'etichetta
 
-Al momento questa opzione è disponibile in anteprima.
+Al momento questa opzione è disponibile in anteprima. Se si usa questa opzione, assicurare di avere pubblicato nel tenant almeno un'altra etichetta di riservatezza che sia configurata per l'assegnazione automatica delle etichette e l'opzione [tipi di informazioni sensibili](#configuring-sensitive-info-types-for-a-label).
 
 Quando si seleziona l'opzione **Classificatori sottoponibili a training**, scegliere uno o più dei classificatori sottoponibili a training predefiniti di Microsoft. Se sono stati creati classificatori sottoponibili a training personalizzati, saranno anch'essi disponibili per la selezione:
 

@@ -16,17 +16,17 @@ search.appverid:
 ms.assetid: 429e686f-d8a6-455e-a2b6-3791d763f000
 description: Informazioni su come usare Compliance Manager nel portale Microsoft Service Trust per soddisfare le esigenze di protezione dei dati e normative.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ac0cd758717161e3b5cf727dd478d1e06f0d6375
-ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
+ms.openlocfilehash: f527aae2d36e392ecd646d48263a01b20a0785e8
+ms.sourcegitcommit: b8e9b2ecdc4927b67088c5fffb1585424c66fb10
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "49682809"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "50050400"
 ---
 # <a name="microsoft-compliance-manager-classic"></a>Microsoft Compliance Manager (classico)
 
 > [!IMPORTANT]
-> **Compliance Manager è ora disponibile a livello generale nel [Centro conformità Microsoft 365](https://compliance.microsoft.com/). È consigliabile interrompere l'uso di Compliance Manager (classico) e passare al nuovo Compliance Manager per sfruttare l’esperienza utente avanzata e il mapping dei controlli aggiornato. Consultare la [documentazione di Compliance Manager](compliance-manager.md) per configurare e iniziare a usare il nuovo Compliance Manager nel Centro conformità Microsoft 365.**
+> **Compliance Manager (classic) sarà presto rimosso dal portale Microsoft Service Trust.** Raccomandiamo di passare al nuovo [Compliance Manager nel Centro conformità Microsoft 365 Microsoft 365](https://compliance.microsoft.com/), che offre un'esperienza d'uso migliorata e una mappatura dei controlli aggiornata.  I clienti che hanno valutazioni nella versione classica dovranno creare nuove valutazioni nel nuovo Compliance Manager. I dati esistenti, inclusi i controlli, le valutazioni e altri dati, non verranno trasferiti alla nuova versione di Compliance Manager. [Altre informazioni sulla transizione](compliance-manager-faq.md#whats-happening-to-compliance-manager-classic-in-the-service-trust-portal).
 
 *Compliance Manager non è disponibile in Office 365 gestito da 21Vianet, Office 365 Germany, Office 365 U.S. Government Community High (GCC High) o Office 365 Dipartimento della Difesa.*
 
