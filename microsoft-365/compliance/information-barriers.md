@@ -1,6 +1,6 @@
 ---
-title: Informazioni sulle barriere informative in Microsoft 365
-description: Utilizzare le barriere informative per garantire la conformità della comunicazione tramite Microsoft teams all'interno dell'organizzazione.
+title: Informazioni sulle barriere di informazioni in Microsoft 365
+description: Usare le barriere in fatto di informazioni per garantire la conformità delle comunicazioni con Microsoft Teams all'interno dell'organizzazione.
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -16,80 +16,90 @@ localization_priority: None
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6ca1502c16accc0d9d9c0453e407eadaeb4c12e5
-ms.sourcegitcommit: c10eb675da725830e9776d2a0566ba3622eb361c
+ms.openlocfilehash: 4a0200b894bcdbc734bb90e25eff8c52848d7b65
+ms.sourcegitcommit: ea8a096df5acedecdce1780969f2b189c3fadf73
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49980069"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "50053813"
 ---
-# <a name="learn-about-information-barriers-in-microsoft-365"></a>Informazioni sulle barriere informative in Microsoft 365
+# <a name="learn-about-information-barriers-in-microsoft-365"></a>Informazioni sulle barriere di informazioni in Microsoft 365
 
-I servizi cloud Microsoft includono potenti funzionalità di comunicazione e collaborazione. Tuttavia, si supponga di voler limitare la comunicazione e la collaborazione tra due gruppi per evitare che si verifichi un conflitto di interessi nell'organizzazione. In alternativa, è possibile limitare la comunicazione e la collaborazione tra alcune persone all'interno dell'organizzazione per salvaguardare le informazioni interne. Microsoft 365 consente la comunicazione e la collaborazione tra gruppi e organizzazioni, quindi è possibile limitare la comunicazione e la collaborazione tra gruppi di utenti specifici, se necessario. Con barriere informative, è possibile!
+I servizi cloud Microsoft includono potenti funzionalità di comunicazione e collaborazione. Si supponga tuttavia di voler limitare la comunicazione e la collaborazione tra due gruppi per evitare che si verifichi un conflitto di interesse nell'organizzazione. In caso contrario, è possibile limitare la comunicazione e la collaborazione tra alcune persone all'interno dell'organizzazione per proteggere le informazioni interne. Microsoft 365 consente la comunicazione e la collaborazione tra gruppi e organizzazioni, quindi esiste un modo per limitare la comunicazione e la collaborazione tra gruppi specifici di utenti quando necessario? Con le barriere in fatto di informazioni, è possibile!
 
-Barriere informative su Microsoft teams, SharePoint Online e OneDrive for business. Presupponendo che la [sottoscrizione](#required-licenses-and-permissions) includa barriere informative, un amministratore di conformità o un amministratore delle informazioni barriere può definire criteri per consentire o impedire le comunicazioni tra gruppi di utenti in Microsoft teams. I criteri di barriera delle informazioni possono essere utilizzati per situazioni come queste:
+Microsoft Teams, SharePoint Online e OneDrive for Business supportano le barriere in fatto di informazioni. Presupponendo che [l'abbonamento](#required-licenses-and-permissions) includa barriere in fatto di informazioni, un amministratore di conformità o un amministratore delle barriere di informazioni può definire criteri per consentire o impedire le comunicazioni tra gruppi di utenti in Microsoft Teams. I criteri delle barriere di informazioni possono essere usati in situazioni come queste:
 
-- Gli utenti del gruppo Day Trader non devono comunicare o condividere file con il team di marketing
-- Il personale finanziario che lavora su informazioni aziendali riservate non deve comunicare o condividere file con determinati gruppi all'interno della propria organizzazione.
-- Un team interno con materiale segreto commerciale non deve chiamare o chattare online con persone di alcuni gruppi all'interno della propria organizzazione.
-- Un team di ricerca deve chiamare o chattare online solo con un team di sviluppo del prodotto
-
-> [!IMPORTANT]
-> Barriere informative ***supporta solo** le restrizioni in due modi. Restrizioni a un modo, ad esempio il marketing può comunicare con i commercianti diurni, ma i trader diurni non sono in grado di comunicare con il marketing _ *_non è supportato_* *.
-
-Per tutti questi scenari di esempio e altro ancora, è possibile definire i criteri di barriera delle informazioni per impedire o consentire le comunicazioni in Microsoft teams. Tali criteri possono impedire agli utenti di effettuare chiamate o chattare con gli utenti che non devono o di consentire agli utenti di comunicare solo con gruppi specifici di Microsoft teams. Con i criteri di protezione delle informazioni in vigore, quando gli utenti interessati da tali criteri tentano di comunicare con altri membri di Microsoft teams, vengono eseguiti i controlli per impedire (o consentire) la comunicazione (come definito dai criteri di barriera delle informazioni). Per ulteriori informazioni sull'esperienza utente con barriere informative, vedere [barriere informative in Microsoft teams](https://docs.microsoft.com/MicrosoftTeams/information-barriers-in-teams).
+- L'utente nel gruppo di distribuzione giornaliera non deve comunicare o condividere file con il team di marketing
+- Il personale finanziario che lavora su informazioni aziendali riservate non deve comunicare o condividere file con determinati gruppi all'interno dell'organizzazione
+- Un team interno con materiale segreto commerciale non deve chiamare o chattare online con persone in determinati gruppi all'interno dell'organizzazione
+- Un team di ricerca deve chiamare o chattare solo online con un team di sviluppo del prodotto
+- Un sito per un gruppo day-group non deve essere condiviso o accessibile da utenti esterni al gruppo day-
 
 > [!IMPORTANT]
-> Attualmente, le barriere informative non si applicano alle comunicazioni di posta elettronica. Inoltre, le barriere informative sono indipendenti dai [limiti di conformità](set-up-compliance-boundaries.md).<p> Prima di definire e applicare i criteri di barriera delle informazioni, assicurarsi che l'organizzazione non disponga di [Criteri rubrica di Exchange](https://docs.microsoft.com/exchange/address-books/address-book-policies/address-book-policies) in vigore. (Le barriere informative si basano sui criteri della rubrica).
+> Le barriere di informazioni ***supportano** solo le restrizioni _ bidirezioni. Restrizioni unidireli, come il marketing, possono comunicare e collaborare con gli operatori giornalieri, ma i day traders non possono comunicare e collaborare con il marketing _*_non è supportato_**.
 
-## <a name="what-happens-with-information-barriers"></a>Cosa accade con barriere informative
+Per tutti questi scenari di esempio (e altro ancora), i criteri delle barriere di informazioni possono essere definiti per impedire o consentire comunicazioni e collaborazione in Microsoft Teams, SharePoint Online e OneDrive. Questi criteri possono impedire agli utenti di chiamare o chattare con quelli che non dovrebbero o consentire agli utenti di comunicare solo con gruppi specifici in Microsoft Teams. Con i criteri delle barriere di informazioni in vigore, ogni volta che gli utenti coperti da tali criteri tentano di comunicare e collaborare con altri utenti in Microsoft Teams, i controlli di SharePoint Online o OneDrive vengono eseguiti per impedire (o consentire) la comunicazione e la collaborazione (come definito dai criteri delle barriere di informazioni). Per ulteriori informazioni sull'esperienza utente con le barriere in fatto di informazioni, vedere barriere delle [informazioni in Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/information-barriers-in-teams) e barriere di informazioni in [SharePoint Online](https://docs.microsoft.com/sharepoint/information-barriers)
 
-Quando vengono attivati i criteri di protezione delle informazioni, gli utenti che non devono comunicare o condividere file con altri utenti specifici non saranno in grado di trovare, selezionare, chattare o chiamare tali utente. Con barriere informative, sono disponibili controlli che impediscono la comunicazione non autorizzata.
+> [!IMPORTANT]
+> Attualmente, le barriere in fatto di informazioni non si applicano alle comunicazioni di posta elettronica. Inoltre, le barriere delle informazioni sono indipendenti dai [limiti di conformità.](set-up-compliance-boundaries.md)<p> Prima di definire e applicare i criteri delle barriere di informazioni, assicurarsi che l'organizzazione non abbia criteri della rubrica di [Exchange](https://docs.microsoft.com/exchange/address-books/address-book-policies/address-book-policies) in vigore. Le barriere di informazioni si basano sui criteri della rubrica.
 
-Inizialmente, gli ostacoli alle informazioni si applicano solo alle chat e ai canali di Microsoft teams. In Microsoft teams, i criteri barriera di informazioni determinano e impediscono i seguenti tipi di comunicazioni non autorizzate:
+## <a name="what-happens-with-information-barriers"></a>Cosa accade con le barriere in fatto di informazioni
+
+Quando sono presenti criteri delle barriere di informazioni, le persone che non devono comunicare o condividere file con altri utenti specifici non saranno in grado di trovare, selezionare, chattare o chiamare tali utenti. Con le barriere in fatto di informazioni, sono in atto controlli per impedire comunicazioni e collaborazione non autorizzate. 
+
+Le barriere di informazioni si applicano a Microsoft Teams (chat e canali), SharePoint Online e OneDrive. In Microsoft Teams, i criteri delle barriere di informazioni determinano e impediscono i seguenti tipi di comunicazioni non autorizzate:
 
 - Ricerca di un utente
 - Aggiunta di un membro a un team
 - Avvio di una sessione di chat con un utente
 - Avvio di una chat di gruppo
-- Invitare un utente a partecipare a una riunione
+- Invitare qualcuno a partecipare a una riunione
 - Condivisione di una schermata
-- Effettuazione di una chiamata
+- Esecuzione di una chiamata
 - Condivisione di un file con un altro utente
-- Accedere a file tramite il collegamento di condivisione
+- Accesso al file tramite collegamento di condivisione
 
-Se le persone coinvolte sono incluse in un criterio barriera informativo per impedire l'attività, non saranno in grado di procedere. Inoltre, potenzialmente, tutti gli elementi inclusi in un criterio barriera informativo possono essere bloccati dalla comunicazione con altri utenti di Microsoft teams. Quando le persone coinvolte nei criteri di barriera delle informazioni fanno parte dello stesso team o chat di gruppo, potrebbero essere rimosse dalle sessioni di chat e potrebbe non essere consentita un'ulteriore comunicazione con il gruppo.
+Se le persone coinvolte sono incluse in un criterio di barriere di informazioni per impedire l'attività, non potranno procedere. Inoltre, potenzialmente, tutti gli utenti inclusi in un criterio di barriere di informazioni possono essere bloccati dalla comunicazione con altri utenti in Microsoft Teams. Quando le persone interessate dai criteri delle barriere di informazioni fanno parte dello stesso team o chat di gruppo, potrebbero essere rimosse da tali sessioni di chat e potrebbero non essere consentite ulteriori comunicazioni con il gruppo.
 
-Per ulteriori informazioni sull'esperienza utente con barriere informative, vedere [barriere informative in Microsoft teams](https://docs.microsoft.com/MicrosoftTeams/information-barriers-in-teams).
+Per altre informazioni sull'esperienza utente con le barriere in fatto di informazioni, vedere [barriere di informazioni in Microsoft Teams.](https://docs.microsoft.com/MicrosoftTeams/information-barriers-in-teams)
+
+In SharePoint Online e OneDrive, i criteri delle barriere di informazioni determinano e impediscono i seguenti tipi di collaborazione non autorizzate:
+
+- Aggiunta di un membro a un sito
+- Accesso al sito o al contenuto da parte di un utente
+- Condivisione del sito o del contenuto con un altro utente
+- Ricerca in un sito 
+
+Per ulteriori informazioni sull'esperienza utente con le barriere delle informazioni, vedere [barriere in SharePoint Online](https://docs.microsoft.com/sharepoint/information-barriers)
 
 ## <a name="required-licenses-and-permissions"></a>Licenze e autorizzazioni obbligatorie
 
-Gli ostacoli alle informazioni stanno per essere implementati e sono inclusi negli abbonamenti, ad esempio:
+Le barriere di informazioni sono ora in distribuzione e sono incluse nelle sottoscrizioni, ad esempio:
 
 - Microsoft 365 E5/A5
 - Office 365 E5/A5
 - Office 365 Advanced Compliance
-- Conformità E5/A5 di Microsoft 365
-- Microsoft 365 gestione dei rischi Insider
+- Conformità Microsoft 365 E5/A5
+- Gestione dei rischi insider di Microsoft 365
 
-Per ulteriori informazioni, vedere [Microsoft 365 Licensing Guidance for security & Compliance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection).
+Per altre informazioni, vedere le indicazioni sulle licenze di [Microsoft 365 per la sicurezza & conformità.](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection)
 
-Per [definire o modificare criteri di barriera delle informazioni](information-barriers-policies.md), è necessario essere assegnati a uno dei ruoli seguenti:
+Per [definire o modificare i criteri delle barriere di informazioni,](information-barriers-policies.md)è necessario disporre di uno dei ruoli seguenti:
 
-- Microsoft 365 amministratore globale
+- Amministratore globale di Microsoft 365
 - Amministratore globale di Office 365
 - Amministratore di conformità
 - Gestione della conformità IB
 
-Per ulteriori informazioni sui ruoli e le autorizzazioni, vedere [Permissions in the Office 365 Security & Compliance Center](../security/office-365-security/permissions-in-the-security-and-compliance-center.md).
+Per ulteriori informazioni sui ruoli e sulle autorizzazioni, vedere Autorizzazioni nel Centro sicurezza & conformità di [Office 365.](../security/office-365-security/permissions-in-the-security-and-compliance-center.md)
 
-È necessario avere familiarità con i cmdlet di PowerShell per definire, convalidare o modificare i criteri di barriera delle informazioni. Anche se vengono forniti diversi esempi di cmdlet di PowerShell nell' [articolo How-to](information-barriers-policies.md), è necessario conoscere altri dettagli, ad esempio i parametri, per l'organizzazione.
+È necessario avere familiarità con i cmdlet di PowerShell per definire, convalidare o modificare i criteri delle barriere di informazioni. Anche se nell'articolo di procedura [](information-barriers-policies.md)vengono forniti diversi esempi di cmdlet di PowerShell, è necessario conoscere altri dettagli, ad esempio i parametri, per l'organizzazione.
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-- [Per ulteriori informazioni, vedere barriere informative in Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/information-barriers-in-teams)
-- [Visualizzare gli attributi che è possibile utilizzare per i criteri di barriera delle informazioni](information-barriers-attributes.md)
-- [Definire i criteri per le barriere informative](information-barriers-policies.md)
-- [Modificare (o rimuovere) i criteri di barriera delle informazioni](information-barriers-edit-segments-policies.md)
-- [Per ulteriori informazioni, vedere barriere informative in SharePoint Online](https://docs.microsoft.com/sharepoint/information-barriers)
-- [Per ulteriori informazioni, vedere barriere informative in OneDrive for business](https://docs.microsoft.com/onedrive/information-barriers)
+- [Ulteriori informazioni sulle barriere di informazioni in Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/information-barriers-in-teams)
+- [Vedere gli attributi che possono essere utilizzati per i criteri delle barriere di informazioni](information-barriers-attributes.md)
+- [Definire i criteri per le barriere in fatto di informazioni](information-barriers-policies.md)
+- [Modificare (o rimuovere) i criteri delle barriere di informazioni](information-barriers-edit-segments-policies.md)
+- [Ulteriori informazioni sulle barriere di informazioni in SharePoint Online](https://docs.microsoft.com/sharepoint/information-barriers)
+- [Ulteriori informazioni sulle barriere di informazioni in OneDrive for Business](https://docs.microsoft.com/onedrive/information-barriers)

@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Le cassette postali condivise vengono utilizzate quando più persone devono accedere alla stessa cassetta postale. Informazioni su cosa è necessario sapere prima di creare una cassetta postale condivisa.
-ms.openlocfilehash: 744c4fece24cf1fa5ee7259a0d722ff123ff2664
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: c8d29ac2dfe8670181064e61a7fba145ae00fed1
+ms.sourcegitcommit: 50f10d83fa21db8572adab90784146e5231e3321
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49926511"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "50058448"
 ---
 # <a name="about-shared-mailboxes"></a>Informazioni sulle cassette postali condivise
 
@@ -43,7 +43,7 @@ Prima di [creare una cassetta postale condivisa,](create-a-shared-mailbox.md)di 
 
 - **Utenti esterni:** Non è possibile concedere a persone esterne all'azienda (ad esempio persone con un account Gmail) l'accesso alla cassetta postale condivisa. Se si vuole farlo comunque, è consigliabile creare un gruppo di Outlook. Per altre informazioni, vedere [Creare un gruppo di Microsoft 365 nell'interfaccia di amministrazione.](../create-groups/create-groups.md)
 
-- **Utilizzare con Outlook:** Oltre a utilizzare Outlook sul Web dal browser per accedere alle cassette postali condivise, è anche possibile utilizzare l'app Outlook per iOS o l'app Outlook per Android. Per ulteriori informazioni, vedere [Aggiungere una cassetta postale condivisa a Outlook Mobile.](https://support.microsoft.com/office/f866242c-81b2-472e-8776-6c49c5473c9f) Un'altra opzione è creare un gruppo per la cassetta postale condivisa. Per ulteriori informazioni, vedere [Confronto dei gruppi.](../create-groups/compare-groups.md)
+- **Utilizzare con Outlook:** Oltre a utilizzare Outlook sul Web dal browser per accedere alle cassette postali condivise, è anche possibile utilizzare l'app Outlook per iOS o l'app Outlook per Android. Per ulteriori informazioni, vedere [Aggiungere una cassetta postale condivisa a Outlook Mobile.](https://support.microsoft.com/office/f866242c-81b2-472e-8776-6c49c5473c9f) Un'altra opzione è creare un gruppo per la cassetta postale condivisa. Per altre informazioni, vedi [Confrontare i gruppi.](../create-groups/compare-groups.md)
 
 - **Crittografia:** Non è possibile crittografare la posta elettronica inviata da una cassetta postale condivisa. Ciò è dovuto al fatto che una cassetta postale condivisa non dispone di un proprio contesto di protezione (nome utente/password) e pertanto non può essere assegnata a una chiave. Se più di una persona è un membro e invia/riceve messaggi di posta elettronica crittografati con le proprie chiavi, altri membri potrebbero essere in grado di leggere il messaggio di posta elettronica e altri potrebbero non esserne in grado, a seconda della chiave pubblica con cui è stato crittografato il messaggio.
 
@@ -58,6 +58,10 @@ Prima di [creare una cassetta postale condivisa,](create-a-shared-mailbox.md)di 
 - **Troppi utenti:** Quando ci sono troppi utenti designati che accedono contemporaneamente a una cassetta postale condivisa, potrebbero non riuscire a connettersi a questa cassetta postale. In questo caso, è possibile ridurre il numero degli utenti o usare un carico di lavoro diverso, ad esempio un gruppo di Microsoft 365 o una cartella pubblica.
 
 - **Eliminazione dei messaggi:** Purtroppo, non è possibile impedire agli utenti di eliminare i messaggi in una cassetta postale condivisa. L'unico modo per risolvere questo problema è creare un gruppo di Microsoft 365 anziché una cassetta postale condivisa. Un gruppo in Outlook è come una cassetta postale condivisa. Per un confronto tra i due, vedere [Confrontare gruppi.](../create-groups/compare-groups.md) Per altre informazioni sui gruppi, vedi [Altre informazioni sui gruppi.](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2)
+
+
+> [!NOTE]
+> Per accedere a una cassetta postale condivisa, un utente deve disporre di una licenza di Exchange Online, ma la cassetta postale condivisa non richiede una licenza separata. Senza una licenza, le cassette postali condivise sono limitate a 50 GB. Per aumentare il limite di dimensioni a 100 GB, alla cassetta postale condivisa deve essere assegnata una licenza di Exchange Online Piano 2 o una licenza di Exchange Online Piano 1 con una licenza per il componente aggiuntivo Archiviazione Exchange Online. In questo modo sarà inoltre possibile abilitare l'archiviazione con espansione automatica per una quantità illimitata di capacità di archiviazione. Analogamente, se si desidera inserire una cassetta postale condivisa in conservazione per controversia legale, la cassetta postale condivisa deve disporre di una licenza di Exchange Online Piano 2 o di una licenza di Exchange Online Piano 1 con una licenza per il componente aggiuntivo Archiviazione Exchange Online. Se si desidera applicare funzionalità avanzate come Microsoft Defender per Office 365, Advanced eDiscovery o criteri di conservazione automatica, la cassetta postale condivisa deve disporre di una licenza per tali funzionalità.
 
 ## <a name="related-articles"></a>Articoli correlati
 
