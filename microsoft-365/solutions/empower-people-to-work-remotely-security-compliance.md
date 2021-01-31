@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Usare i servizi di sicurezza e conformità di Microsoft 365 per proteggere le app, i dati e i dispositivi dei lavoratori remoti.
-ms.openlocfilehash: 6c6c30e320068a6e97cf5fd2cd81b4bfeff1c49e
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 8248fdbaa96a651ad9ff4548ce0867bd7c2988eb
+ms.sourcegitcommit: 1ac884d8470b2f2a58b6f79e324fd91e4d11dceb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48845229"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "50055492"
 ---
 # <a name="step-3-deploy-security-and-compliance-for-remote-workers"></a>Passaggio 3: distribuire sicurezza e conformità per i lavoratori remoti
 
@@ -47,12 +47,12 @@ Ecco le funzionalità di Microsoft 365 che forniscono servizi di sicurezza e con
 
 Proteggere applicazioni e dati con queste funzionalità di sicurezza di Microsoft 365.
 
-| Capacità o funzionalità | Descrizione | Licenze |
+| Capacità o funzionalità | Perché è necessario | Licenze |
 |:-------|:-----|:-------|
-| Microsoft Defender per Office 365 | Proteggere le app e i dati di Microsoft 365, ad esempio i messaggi di posta elettronica, i documenti di Office e gli strumenti di collaborazione, da eventuali attacchi. <br><br> Microsoft Defender per Office 365 raccoglie e analizza i segnali delle app per rilevare, analizzare e correggere i rischi per la sicurezza e tutela l'organizzazione da minacce dannose poste in essere da messaggi di posta elettronica, collegamenti (URL) e strumenti di collaborazione. | Microsoft 365 E3 o E5 | 
+| Microsoft Defender per Office 365 | Proteggere le app e i dati di Microsoft 365, ad esempio i messaggi di posta elettronica, i documenti di Office e gli strumenti di collaborazione, da eventuali attacchi. <br><br> Microsoft Defender per Office 365 raccoglie e analizza i segnali delle app per rilevare, analizzare e correggere i rischi per la sicurezza e tutela l'organizzazione da minacce dannose poste in essere da messaggi di posta elettronica, collegamenti (URL) e strumenti di collaborazione. Fornisce anche strumenti di valutazione e impostazione della configurazione del tenant per rispondere a requisiti di sicurezza ordinari e rigorosi. | Microsoft 365 E3 o E5 | 
 | Protezione da malware | ‎Microsoft Defender Antivirus e Device Guard forniscono una protezione da malware basata sul dispositivo. <br><br> SharePoint‎ Online analizza automaticamente i file caricati per rilevare malware sconosciuto. ‎<br><br> Exchange Online Protection‎ (‎EOP‎) protegge le cassette postali sul cloud. | Microsoft 365 E3 o E5 |
 | Microsoft Defender per endpoint | Proteggere i dispositivi dell'organizzazione da minacce informatiche e violazioni dei dati e rilevare, analizzare e rispondere a minacce avanzate. | Microsoft 365 E5 |
-| Cloud App Security | Proteggere da eventuali attacchi i servizi basati sul cloud, sia Microsoft 365 che altre app SaaS. | Microsoft 365 E5 o singole licenze di Cloud App Security |
+| Cloud App Security | Proteggi i tuoi servizi basati su cloud, inclusi Microsoft 365 e le tue altre app SaaS, dagli attacchi. | Microsoft 365 E5 o singole licenze di Cloud App Security |
 | Azure AD Identity Protection  | Automatizzare il rilevamento e la correzione dei rischi basati sull'identità. <br><br>Creare criteri di accesso condizionale basati sul rischio per richiedere l'autenticazione a più fattori (MFA) per gli accessi rischiosi. | Microsoft 365 E5 o E3 con licenze di Azure AD Premium P2 |
 ||||
 
@@ -62,7 +62,7 @@ Per altre informazioni, vedere [12 attività principali dei team di sicurezza pe
 
 Garantire la conformità ai criteri interni o ai requisiti normativi con queste funzionalità di conformità di Microsoft 365.
 
-| Capacità o funzionalità | Descrizione | Licenze |
+| Capacità o funzionalità | Perché è necessario | Licenze |
 |:-------|:-----|:-------|
 | Etichette di riservatezza | Classificare e proteggere i dati dell'organizzazione senza compromettere la produttività degli utenti e la loro capacità di collaborare aggiungendo etichette con vari livelli di protezione a messaggi di posta elettronica, file o siti. | Microsoft 365 E3 o E5 |
 | Prevenzione della perdita dei dati (DLP) | Rilevare, comunicare e bloccare la condivisione rischiosa, involontaria o inappropriata, come la condivisione di dati che contengono informazioni personali, sia all'interno che all'esterno. | Microsoft 365 E3 o E5 | 

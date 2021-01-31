@@ -18,12 +18,12 @@ ms.collection:
 - M365initiative-coredeploy
 ms.custom: seo-marvel-jun2020
 description: Assicurarsi di aver abilitato tutte le caratteristiche di Microsoft 365 per massimizzare la produttività dei lavoratori remoti e mantenere l'accesso sicuro ai server, ai dati e al cloud.
-ms.openlocfilehash: c6f17f2a80fa37abe43ceabc7a06c86c80eeadbd
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.openlocfilehash: aa72ba0c47acdd507bf86a082c9b4c2a87e3f1ef
+ms.sourcegitcommit: 1ac884d8470b2f2a58b6f79e324fd91e4d11dceb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49616357"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "50055520"
 ---
 # <a name="empower-remote-workers-with-microsoft-365"></a>Aumentare la produttività dei lavoratori remoti con Microsoft 365
 
@@ -37,11 +37,16 @@ Microsoft 365 offre funzionalità che consentono ai tuoi dipendenti di lavorare 
 
 ![Aumentare la produttività dei lavoratori remoti con Microsoft 365](../media/empower-people-to-work-remotely/2-m365-remoteworker-solution-businessoverview.png)
 
-Guardare questo video per una panoramica del processo di distribuzione.
+>[!Note]
+>Se sei un nuovo utente di Microsoft 365, vedi [queste risorse](https://www.microsoft.com/microsoft-365).
+>
+
+Guarda questo video per una panoramica sulla procedura di implementazione.
+<br>
 <br>
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4F1af]
 
-Questa soluzione include queste funzionalità chiave.
+Per i professionisti IT che gestiscono infrastrutture locali e basate su cloud per sostenere la produttività del personale, questa soluzione offre le seguenti funzionalità chiave:
 
 - Connesso
 

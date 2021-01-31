@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Assicurarsi che i lavoratori remoti possano accedere alle risorse locali e ottimizzare l'accesso ai servizi cloud di Microsoft 365.
-ms.openlocfilehash: a9a8c972d58c7d2bac3f49ad602578358406c5a0
-ms.sourcegitcommit: 99a7354e6a6b4d9d5202674ef57852d52a43fef6
+ms.openlocfilehash: 43000ce27fc24dbc6c2db3782b0ed40aa66b7fd2
+ms.sourcegitcommit: 1ac884d8470b2f2a58b6f79e324fd91e4d11dceb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "49908330"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "50055532"
 ---
 # <a name="step-2-provide-remote-access-to-on-premises-apps-and-services"></a>Passaggio 2. Fornire l'accesso remoto alle app e ai servizi locali.
 
@@ -107,7 +107,7 @@ Per altre informazioni, vedere la [panoramica sul Desktop virtuale Windows](http
 
 ## <a name="protect-your-remote-desktop-services-connections-with-the-remote-desktop-services-gateway"></a>Proteggere le connessioni dei servizi del desktop remoto con il gateway Servizi del desktop remoto
 
-Se si usa Servizi del desktop remoto (SDR) per consentire ai dipendenti di entrare in un computer con Windows in una rete locale, è consigliabile usare un gateway di Servizi del desktop remoto di Microsoft nella rete perimetrale. Il gateway usa il protocollo SSL (Secure Sockets Layer) per crittografare le comunicazioni ed evita che il computer locale che ospita i RDS sia direttamente connesso a Internet.
+Se si usa Servizi del desktop remoto (SDR) per consentire ai dipendenti di entrare in un computer con Windows in una rete locale, è consigliabile usare un gateway di Servizi del desktop remoto di Microsoft nella rete perimetrale. Il gateway usa il protocollo (TLS) Transport Layer Security per crittografare le comunicazioni, ed evita che il computer locale che ospita i RDS sia direttamente connesso a Internet.
 
 ![Proteggere le connessioni dei Servizi del desktop remoto con il gateway Servizi del desktop remoto](../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-remote-desktop.png)
 
