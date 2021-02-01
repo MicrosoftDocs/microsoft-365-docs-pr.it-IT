@@ -22,12 +22,12 @@ description: Usare le etichette di riservatezza di Microsoft Information Protect
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 2a4b66de9996ec0ea7047ca44ae3750a917c4cc2
-ms.sourcegitcommit: 7ecd10b302b3b3dfa4ba3be3a6986dd3c189fbff
+ms.openlocfilehash: 2e334e57b84bea7985983527e600be731e4de20c
+ms.sourcegitcommit: 50f10d83fa21db8572adab90784146e5231e3321
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "49921680"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "50058519"
 ---
 # <a name="learn-about-sensitivity-labels"></a>Informazioni sulle etichette di riservatezza
 
@@ -42,6 +42,11 @@ Esempio che mostra le etichette di riservatezza disponibili in Excel dalla sched
 ![Etichetta di riservatezza nella barra multifunzione e nella barra di stato di Excel](../media/Sensitivity-label-in-Excel.png)
 
 Per applicare le etichette di riservatezza, gli utenti devono aver eseguito l'accesso con l'account aziendale o dell'istituto di istruzione di Microsoft 365.
+
+> [!NOTE]
+> Le etichette di riservatezza sono ora supportate per i tenant delle entità governative degli Stati Uniti (GCC e GCC-H) Per altre informazioni, vedere le note sulla versione di Microsoft 365 Apps for enterprise, [Versione 2101: 26 gennaio](https://docs.microsoft.com/officeupdates/current-channel#version-2101-january-26).
+>
+> Per l’etichettatura unificata del client e dello scanner di Azure Information Protection, vedere [Descrizione del servizio Azure Information Protection Premium Government](https://docs.microsoft.com/enterprise-mobility-security/solutions/ems-aip-premium-govt-service-description).
 
 È possibile usare le etichette di riservatezza per:
   
@@ -195,7 +200,7 @@ Quando si configura un criterio di etichetta, è possibile:
 
     ![Collegamento a ulteriori informazioni sul pulsante Riservatezza della barra multifunzione](../media/Sensitivity-label-learn-more.png)
 
-Quando si crea un criterio etichetta che assegna nuove etichette di riservatezza a utenti e gruppi, gli utenti vedranno le etichette nelle app di Office entro 30 minuti. Tuttavia, le modifiche alle etichette possono richiedere fino a 24 ore.
+Quando si crea un criterio di etichetta che assegna nuove etichette di riservatezza a utenti e gruppi, gli utenti iniziano a vedere le etichette nelle app di Office. Possono essere necessarie fino a 24 ore perché le ultime modifiche siano replicate in tutta l’organizzazione.
 
 Non esiste un numero limite di etichette di riservatezza che è possibile creare e pubblicare, con un'eccezione: se l'etichetta applica la crittografia, è possibile creare un massimo di 500 etichette. Tuttavia, come procedura consigliata per ridurre al minimo i sovraccarichi per gli amministratori e le difficoltà per gli utenti, cercare di creare un numero limitato di etichette. Le distribuzioni nel mondo reale hanno evidenziato un'efficacia notevolmente ridotta nei casi in cui gli utenti hanno più di cinque etichette principali, oppure più di cinque sottoetichette per ogni etichetta principale.
 
@@ -268,4 +273,4 @@ Sono anche disponibili informazioni sulle [soluzioni dei partner integrate con M
 
 ## <a name="deployment-guidance"></a>Guida alla distribuzione
 
-Per la pianificazione della distribuzione e linee guida che includono informazioni sulla licenza, autorizzazioni, strategia di distribuzione, un elenco di scenari supportati e la documentazione per l'utente finale, vedere [Introduzione alle etichette di riservatezza](get-started-with-sensitivity-labels.md).
+Per la pianificazione della distribuzione e il materiale sussidiario che include informazioni sulla licenza, autorizzazioni, strategia di distribuzione, un elenco di scenari supportati e la documentazione per l'utente finale, vedere [Introduzione alle etichette di riservatezza](get-started-with-sensitivity-labels.md).
