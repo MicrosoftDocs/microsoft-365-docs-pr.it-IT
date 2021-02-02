@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_IP
 description: Informazioni su come Exchange Online e Microsoft 365 utilizzano Transport Layer Security (TLS) e Forward Secrecy (FS) per proteggere le comunicazioni di posta elettronica. Ottenere inoltre informazioni sul certificato emesso da Microsoft per Exchange Online.
-ms.openlocfilehash: 507a152130113868293d8d08441f298e5f5ae512
-ms.sourcegitcommit: 50f10d83fa21db8572adab90784146e5231e3321
+ms.openlocfilehash: 67be87bc07399af9469728383af1caf604bf1372
+ms.sourcegitcommit: c550c1b5b9e67398fd95bfb0256c4f5c7930b2be
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "50058459"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "50066829"
 ---
 # <a name="how-exchange-online-uses-tls-to-secure-email-connections"></a>Modalità d'uso di TLS in Exchange Online per proteggere le connessioni di posta elettronica
 
@@ -37,7 +37,7 @@ Se si desidera crittografare il messaggio, è necessario utilizzare una tecnolog
   
 È consigliabile utilizzare TLS nelle situazioni in cui si desidera configurare un canale sicuro di corrispondenza tra Microsoft e l'organizzazione locale o un'altra organizzazione, ad esempio un partner. Exchange Online tenta di utilizzare innanzitutto TLS per proteggere la posta elettronica, ma questa operazione non è sempre possibile se l'altra parte non offre la protezione TLS. Continuare a leggere per scoprire come proteggere tutta la posta ai server locali o ai partner importanti utilizzando *i connettori.* 
 
-Per fornire la crittografia migliore ai clienti, Microsoft ha deprecato Transport Layer Security (TLS) versioni 1.0 e 1.1 in [Office 365](tls-1.0-and-1.1-deprecation-for-office-365.md) e [Office 365 GCC.](tls-1-2-in-office-365-gcc.md) Tuttavia, è possibile continuare a utilizzare una connessione SMPT non crittografata senza TLS. Si sconsiglia la trasmissione della posta elettronica senza alcuna crittografia.  
+Per fornire la crittografia migliore ai clienti, Microsoft ha deprecato Transport Layer Security (TLS) versioni 1.0 e 1.1 in [Office 365](tls-1.0-and-1.1-deprecation-for-office-365.md) e [Office 365 GCC.](tls-1-2-in-office-365-gcc.md) Tuttavia, è possibile continuare a usare una connessione SMPT non crittografata senza TLS. Si sconsiglia la trasmissione della posta elettronica senza alcuna crittografia.  
   
 ## <a name="how-exchange-online-uses-tls-between-exchange-online-customers"></a>Come viene utilizzato TLS in Exchange Online tra clienti di Exchange Online
 
@@ -45,7 +45,7 @@ I server di Exchange Online consentono di crittografare sempre le connessioni ad
   
 ## <a name="how-microsoft-365-uses-tls-between-microsoft-365-and-external-trusted-partners"></a>Come Microsoft 365 usa TLS tra Microsoft 365 e partner attendibili esterni
 
-Per impostazione predefinita, Exchange Online utilizza sempre TLS opportunistico. Ciò significa che Exchange Online tenta sempre di crittografare prima le connessioni con la versione più sicura di TLS, quindi scende nell'elenco delle crittografie TLS finché non ne trova una su cui entrambe le parti sono d'accordo. A meno che Exchange Online non sia stato configurato per garantire che i messaggi a tale destinatario vengano inviati solo tramite connessioni sicure, per impostazione predefinita il messaggio verrà inviato non crittografato se l'organizzazione del destinatario non supporta la crittografia TLS. TLS opportunistico è sufficiente per la maggior parte delle aziende. Tuttavia, per le aziende che hanno requisiti di conformità come organizzazioni mediche, bancarie o governative, è possibile configurare Exchange Online per richiedere o forzare TLS. Per istruzioni, vedere [Configurare il flusso di posta con i connettori in Office 365.](https://technet.microsoft.com/library/ms.exch.eac.connectorselection%28v=exchg.150%29.aspx)
+Per impostazione predefinita, Exchange Online utilizza sempre TLS opportunistico. Ciò significa che Exchange Online tenta sempre di crittografare prima le connessioni con la versione più sicura di TLS, quindi scende nell'elenco delle crittografie TLS finché non ne trova una su cui entrambe le parti sono d'accordo. A meno che Non sia stato configurato Exchange Online per garantire che i messaggi a tale destinatario vengano inviati solo tramite connessioni sicure, per impostazione predefinita il messaggio verrà inviato non crittografato se l'organizzazione del destinatario non supporta la crittografia TLS. TLS opportunistico è sufficiente per la maggior parte delle aziende. Tuttavia, per le aziende che hanno requisiti di conformità come organizzazioni mediche, bancarie o governative, è possibile configurare Exchange Online per richiedere o forzare TLS. Per istruzioni, vedere [Configurare il flusso di posta utilizzando i connettori in Office 365.](https://technet.microsoft.com/library/ms.exch.eac.connectorselection%28v=exchg.150%29.aspx)
   
 Se si decide di configurare TLS tra la propria organizzazione e un'organizzazione partner attendibile, in Exchange Online è possibile utilizzare TLS forzato per creare canali di comunicazione attendibili. TLS forzato richiede che l'organizzazione partner esegua l'autenticazione a Exchange Online con un certificato di sicurezza per inviare la posta all'utente. A tale scopo, il partner dovrà gestire i propri certificati. In Exchange Online, i connettori vengono utilizzati per proteggere i messaggi inviati dall'accesso non autorizzato prima che arrivino al provider di posta elettronica del destinatario. Per informazioni sull'utilizzo dei connettori per configurare il flusso di posta, vedere Configurare il flusso di posta tramite [i connettori in Office 365.](https://technet.microsoft.com/library/ms.exch.eac.connectorselection%28v=exchg.150%29.aspx)
   
@@ -55,7 +55,7 @@ Se si gestisce una distribuzione ibrida di Exchange, il server Exchange locale d
   
 ## <a name="how-to-set-up-forced-tls-for-exchange-online-in-office-365"></a>Come configurare TLS forzato per Exchange Online in Office 365
 
-Per i clienti di Exchange Online, affinché TLS forzato sia utilizzato per proteggere tutta la posta elettronica inviata e ricevuta, è necessario configurare più di un connettore che richiede TLS. Sarà necessario un connettore per la posta elettronica inviata alle cassette postali degli utenti e un altro connettore per la posta elettronica inviata dalle cassette postali degli utenti. Creare tali connettori nell'interfaccia di amministrazione di Exchange in Office 365. Per istruzioni, vedere [Configurare il flusso di posta con i connettori in Office 365.](https://technet.microsoft.com/library/ms.exch.eac.connectorselection%28v=exchg.150%29.aspx)
+Per i clienti di Exchange Online, affinché TLS forzato sia utilizzato per proteggere tutta la posta elettronica inviata e ricevuta, è necessario configurare più di un connettore che richiede TLS. Sarà necessario un connettore per la posta elettronica inviata alle cassette postali degli utenti e un altro connettore per la posta elettronica inviata dalle cassette postali degli utenti. Creare tali connettori nell'interfaccia di amministrazione di Exchange in Office 365. Per istruzioni, vedere [Configurare il flusso di posta utilizzando i connettori in Office 365.](https://technet.microsoft.com/library/ms.exch.eac.connectorselection%28v=exchg.150%29.aspx)
   
 ## <a name="tls-certificate-information-for-exchange-online"></a>Informazioni sul certificato TLS per Exchange Online
 
@@ -63,7 +63,7 @@ Le informazioni sul certificato utilizzate da Exchange Online sono descritte nel
   
  **Informazioni aggiornate sui certificati valide dal 3 settembre 2018**
   
-|**Attributo**|**Valore**|
+| Attributo | Valore |
 |:-----|:-----|
 |Autorità di certificazione principale  <br/> |GlobalSign Root CA – R1 <br/> |
 |Nome certificato  <br/> |mail.protection.outlook.com  <br/> |
@@ -77,7 +77,7 @@ Per garantire una transizione senza problemi, continueremo a fornire le informaz
   
 ****
 
-|**Attributo**|**Valore**|
+| Attributo | Valore |
 |:-----|:-----|
 |Autorità di certificazione principale  <br/> |Baltimore CyberTrust Root  <br/> |
 |Nome certificato  <br/> |mail.protection.outlook.com  <br/> |
@@ -91,22 +91,25 @@ Il nuovo certificato viene emesso da un'autorità di certificazione (CA) diversa
 
 Il nuovo certificato richiede la connessione agli endpoint della nuova CA come parte della convalida del certificato. In caso negativo, il flusso di posta potrebbe essere influenzato negativamente. Se si proteggono i server di posta con firewall che consentono solo ai server di posta di connettersi a determinate destinazioni, è necessario verificare se il server è in grado di convalidare il nuovo certificato. Per verificare che il server possa utilizzare il nuovo certificato, eseguire la procedura seguente:
 
-1. Connettersi al Exchange Server locale utilizzando Windows PowerShell quindi eseguire il comando seguente:  
+1. Connettersi all'Exchange Server locale utilizzando Windows PowerShell quindi eseguire il comando seguente:  
   `certutil -URL https://crl.globalsign.com/gsorganizationvalsha2g3.crl`
-2. Nella finestra visualizzata scegliere **Recupera.**
-3. Quando l'utilità completa il controllo, restituisce uno stato. Se lo stato è **OK,** il server di posta può convalidare correttamente il nuovo certificato. In caso contrario, è necessario determinare la causa dell'errore delle connessioni. Molto probabilmente, è necessario aggiornare le impostazioni di un firewall. L'elenco completo degli endpoint a cui è necessario accedere include:
-    - ocsp.globalsign.com
-     - crl.globalsign.com
-     - secure.globalsign.com   
 
-In genere, gli aggiornamenti dei certificati radice vengono ricevuti automaticamente tramite Windows Update. Tuttavia, alcune distribuzioni hanno una sicurezza aggiuntiva che impedisce che questi aggiornamenti si verifichino automaticamente. In queste distribuzioni bloccate in cui Windows Update non è in grado di aggiornare automaticamente i certificati radice, è necessario verificare che sia installato il certificato DELLA CA radice corretto completando la procedura seguente:
-1.  Connettersi al Exchange Server locale utilizzando Windows PowerShell quindi eseguire il comando seguente:  
+1. Nella finestra visualizzata scegliere **Recupera.**
+
+1. Quando l'utilità completa il controllo, restituisce uno stato. Se lo stato è **OK,** il server di posta può convalidare correttamente il nuovo certificato. In caso contrario, è necessario determinare la causa dell'errore delle connessioni. Molto probabilmente, è necessario aggiornare le impostazioni di un firewall. L'elenco completo degli endpoint a cui è necessario accedere include:
+    - ocsp.globalsign.com
+    - crl.globalsign.com
+    - secure.globalsign.com   
+
+In genere, gli aggiornamenti dei certificati radice vengono ricevuti automaticamente tramite Windows Update. Tuttavia, alcune distribuzioni hanno una sicurezza aggiuntiva che impedisce che questi aggiornamenti si verifichino automaticamente. In queste distribuzioni bloccate in cui Windows Update non è in grado di aggiornare automaticamente i certificati radice, è necessario verificare che il certificato della CA radice corretto sia installato attenendoti alla seguente procedura:
+1.  Connettersi all'Exchange Server locale utilizzando Windows PowerShell quindi eseguire il comando seguente:  
   `certmgr.msc`
+
 2. In **Autorità di certificazione radice attendibile/Certificati** verificare che il nuovo certificato sia elencato.
 
 ## <a name="get-more-information-about-tls-and-microsoft-365"></a>Altre informazioni su TLS e Microsoft 365
 
-Per un elenco delle suite di crittografia supportate, vedi informazioni di riferimento tecniche [sulla crittografia.](technical-reference-details-about-encryption.md)
+Per un elenco delle suite di crittografia supportate, vedere [informazioni di riferimento tecniche sulla crittografia.](technical-reference-details-about-encryption.md)
   
 [Impostare i connettori per il flusso di posta sicura con un'organizzazione partner](https://technet.microsoft.com/library/dn751021%28v=exchg.150%29.aspx)
   

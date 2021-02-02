@@ -15,12 +15,12 @@ search.appverid:
 ms.assetid: 0432dce9-d9b6-4e73-8a13-4a932eb0081e
 description: Hai una domanda sul funzionamento delle nuove funzionalità di protezione dei messaggi? Verificare la disponibilità di una risposta qui.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 4be3ff4be1d5bf8b81d06ea17a8345e4c843b150
-ms.sourcegitcommit: 50f10d83fa21db8572adab90784146e5231e3321
+ms.openlocfilehash: a88d853905ed8462972c9f423254a49424974bb7
+ms.sourcegitcommit: c550c1b5b9e67398fd95bfb0256c4f5c7930b2be
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "50058539"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "50066839"
 ---
 # <a name="message-encryption-faq"></a>Domande frequenti sulla crittografia dei messaggi
 
@@ -34,7 +34,7 @@ OME combina la crittografia della posta elettronica e le funzionalità di rights
 
 È possibile utilizzare le nuove funzionalità per OME nelle condizioni seguenti:
   
-- Se OME o IRM non sono mai stati impostati per Exchange Online in Office 365.
+- Se non è mai stato configurato OME o IRM per Exchange Online in Office 365.
 
 - Se OME e IRM sono stati impostati, è possibile utilizzare questi passaggi se si utilizza il servizio Azure Rights Management di Azure Information Protection.
 
@@ -62,7 +62,7 @@ Per ulteriori informazioni su BYOK, vedere Pianificazione e implementazione dell
   
 ## <a name="do-ome-and-byok-with-azure-information-protection-change-microsofts-approach-to-third-party-data-requests-such-as-subpoenas"></a>OME e BYOK con Azure Information Protection modificano l'approccio di Microsoft alle richieste di dati di terze parti, ad esempio i compari?
 
-No. OME e l'opzione per fornire e controllare le proprie chiavi di crittografia, chiamate BYOK, da Azure Information Protection non sono state progettate per rispondere alle richieste di comparizione delle forze dell'ordine. OME, con BYOK per Azure Information Protection, è stato progettato per i clienti incentrati sulla conformità. Microsoft prende molto sul serio le richieste di terze parti per i dati dei clienti. In qualità di provider di servizi cloud, sosteniamo sempre la privacy dei dati dei clienti. Nel caso in cui riceviamo una citazione in citazione, tentiamo sempre di reindirizzare la terza parte al cliente per ottenere le informazioni. (Leggi il blog di Brad Smith: [Protezione dei dati dei clienti da snooping governativi).](https://blogs.microsoft.com/blog/2013/12/04/protecting-customer-data-from-government-snooping/) Microsoft pubblica periodicamente informazioni dettagliate sulla richiesta ricevuta. Per ulteriori informazioni sulle richieste di [](https://www.microsoft.com/trustcenter/privacy/govt-requests-for-data) dati di terze parti, vedere Rispondere alle richieste del governo e delle forze dell'ordine per accedere ai dati dei clienti nel Centro protezione Microsoft. Inoltre, vedere "Divulgazione dei dati dei clienti" nelle Condizioni [dei servizi online (OST).](https://www.microsoft.com/Licensing/product-licensing/products.aspx)
+No. OME e l'opzione per fornire e controllare le proprie chiavi di crittografia, denominate BYOK, da Azure Information Protection non sono state progettate per rispondere alle richieste di comparizione delle forze dell'ordine. OME, con BYOK per Azure Information Protection, è stato progettato per i clienti incentrati sulla conformità. Microsoft prende molto seriamente in considerazione le richieste di terze parti per i dati dei clienti. In qualità di provider di servizi cloud, sosteniamo sempre la privacy dei dati dei clienti. Nel caso in cui riceviamo una citazione in citazione, tentiamo sempre di reindirizzare la terza parte al cliente per ottenere le informazioni. (Leggi il blog di Brad Smith: [Protezione dei dati dei clienti da snooping governativi).](https://blogs.microsoft.com/blog/2013/12/04/protecting-customer-data-from-government-snooping/) Microsoft pubblica periodicamente informazioni dettagliate sulla richiesta ricevuta. Per ulteriori informazioni sulle richieste di [](https://www.microsoft.com/trustcenter/privacy/govt-requests-for-data) dati di terze parti, vedere Rispondere alle richieste del governo e delle forze dell'ordine per accedere ai dati dei clienti nel Centro protezione Microsoft. Inoltre, vedere "Divulgazione dei dati dei clienti" nelle Condizioni [dei servizi online (OST).](https://www.microsoft.com/Licensing/product-licensing/products.aspx)
   
 ## <a name="how-is-this-feature-related-to-legacy-office-365-message-encryption-ome-and-information-rights-management-irm-features"></a>In che modo questa funzionalità è correlata alle funzionalità legacy di Crittografia messaggi di Office 365 e Information Rights Management (IRM) ?
 
@@ -70,7 +70,7 @@ Le nuove funzionalità per la crittografia dei messaggi di Office 365 sono un'ev
   
 **Confronto tra OME legacy, IRM e nuove funzionalità di OME**
 
-|**Funzionalità**|**Versioni precedenti di OME**|**IRM**|**Nuove funzionalità di OME**|
+| Funzionalità | Versioni precedenti di OME | IRM | Nuove funzionalità di OME |
 |:-----|:-----|:-----|:-----|
 |**Invio di un messaggio di posta elettronica crittografato**|Solo tramite le regole del flusso di posta di Exchange|Utente finale avviato da Outlook per Windows, Outlook per Mac o Outlook sul Web; o tramite le regole del flusso di posta di Exchange|Utente finale avviato da Outlook per Windows, Outlook per Mac o Outlook sul Web; o tramite regole del flusso di posta|
 |**Gestione dei diritti**|-|Opzione Non inoltrare e modelli personalizzati|Opzione Non inoltrare, opzione di sola crittografia, modelli predefiniti e personalizzati|
@@ -84,7 +84,7 @@ Vedere [Configurare le nuove funzionalità di crittografia dei messaggi di Offic
   
 ## <a name="will-the-previous-version-of-ome-be-deprecated"></a>La versione precedente di OME sarà deprecata?
 
-You can still use the previous version of OME, it will not be deprecated at this time. Tuttavia, è consigliabile che le organizzazioni utilizzino la nuova e migliorata soluzione OME. I clienti che non hanno già distribuito OME non possono configurare una nuova distribuzione della versione precedente di OME.
+È ancora possibile usare la versione precedente di OME, che non sarà deprecata al momento. Tuttavia, è consigliabile che le organizzazioni usino la nuova e migliorata soluzione OME. I clienti che non hanno già distribuito OME non possono configurare una nuova distribuzione della versione precedente di OME.
   
 ## <a name="my-organization-uses-active-directory-rights-management-can-i-use-this-functionality"></a>L'organizzazione utilizza Active Directory Rights Management, è possibile utilizzare questa funzionalità?
 
@@ -92,11 +92,11 @@ No. Se si utilizza Exchange Online con Active Directory Rights Management Servic
   
 ## <a name="my-organization-has-an-exchange-hybrid-deployment-can-i-use-this-feature"></a>L'organizzazione ha una distribuzione ibrida di Exchange. È possibile utilizzare questa funzionalità?
 
-Gli utenti locali possono inviare posta crittografata utilizzando le regole del flusso di posta di Exchange Online. A tale scopo, è necessario instradare la posta elettronica tramite Exchange Online. Per ulteriori informazioni, vedere Parte 2: Configurare il flusso di posta dal server di posta [elettronica a Microsoft 365.](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-to-route-mail#part-2-configure-mail-to-flow-from-your-email-server-to-office-365)
+Gli utenti locali possono inviare posta crittografata utilizzando le regole del flusso di posta di Exchange Online. A tale scopo, è necessario instradare la posta elettronica tramite Exchange Online. Per ulteriori informazioni, vedere Parte 2: Configurare il flusso di posta dal server di posta elettronica [a Microsoft 365.](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-to-route-mail#part-2-configure-mail-to-flow-from-your-email-server-to-office-365)
   
 ## <a name="what-email-client-do-i-need-to-use-in-order-to-create-an-ome-encrypted-message-what-applications-are-supported-for-sending-protected-messages"></a>Quale client di posta elettronica è necessario utilizzare per creare un messaggio crittografato con OME? Quali applicazioni sono supportate per l'invio di messaggi protetti?
 
-È possibile creare messaggi protetti da Outlook 2016, Outlook 2013 per Windows e Mac e da Outlook sul Web. Per ulteriori informazioni sull'invio di messaggi crittografati, vedere Inviare, visualizzare e rispondere ai messaggi [crittografati in Outlook per PC.](https://support.microsoft.com/office/send-view-and-reply-to-encrypted-messages-in-outlook-for-pc-eaa43495-9bbb-4fca-922a-df90dee51980?ui=en-us&rs=en-us&ad=us)
+È possibile creare messaggi protetti da Outlook 2016, Outlook 2013 per Windows e Mac e da Outlook sul Web. Per ulteriori informazioni sull'invio di messaggi crittografati, vedere Inviare, visualizzare e rispondere [ai messaggi crittografati in Outlook per PC.](https://support.microsoft.com/office/send-view-and-reply-to-encrypted-messages-in-outlook-for-pc-eaa43495-9bbb-4fca-922a-df90dee51980?ui=en-us&rs=en-us&ad=us)
   
 ## <a name="what-email-clients-are-supported-to-read-and-reply-to-protected-emails"></a>Quali client di posta elettronica sono supportati per leggere e rispondere ai messaggi di posta elettronica protetti?
 
@@ -112,7 +112,7 @@ Sì. La dimensione massima dei messaggi che è possibile inviare con OME, inclus
 
 ## <a name="what-file-types-are-supported-as-attachments-in-protected-emails-do-attachments-inherit-the-protection-policies-associated-with-protected-emails"></a>Quali tipi di file sono supportati come allegati nei messaggi di posta elettronica protetti? Gli allegati ereditano i criteri di protezione associati ai messaggi di posta elettronica protetti?
 
-È possibile allegare qualsiasi tipo di file a un messaggio di posta elettronica protetto. Con un'eccezione, i criteri di protezione vengono applicati solo ai formati di file indicati nei tipi di [file supportati dal client Azure Information Protection.](https://docs.microsoft.com/information-protection/rms-client/client-admin-guide-file-types) OME non supporta le versioni 97-2003 delle applicazioni di Office seguenti: Word (doc), Excel (xls) e PowerPoint (ppt).
+È possibile allegare qualsiasi tipo di file a un messaggio di posta protetto. Con un'eccezione, i criteri di protezione vengono applicati solo ai formati di file indicati nei tipi di [file supportati dal client Azure Information Protection.](https://docs.microsoft.com/information-protection/rms-client/client-admin-guide-file-types) OME non supporta le versioni 97-2003 delle applicazioni di Office seguenti: Word (doc), Excel (xls) e PowerPoint (ppt).
 
 Se è supportato un formato di file, ad esempio un file di Word, Excel o PowerPoint, il file è sempre protetto, anche dopo che l'allegato è stato scaricato dal destinatario. Si supponga, ad esempio, che un allegato sia protetto da Non inoltrare. Il destinatario originale scarica il file, crea un messaggio a un nuovo destinatario e allega il file. Quando il nuovo destinatario riceve il file, il destinatario non sarà in grado di aprire il file protetto.
   
@@ -130,7 +130,7 @@ Per abilitare la crittografia per gli allegati PDF, eseguire il seguente comando
 Set-IRMConfiguration -EnablePdfEncryption $true
 ```
 
-La crittografia PDF consente di proteggere i documenti PDF sensibili tramite comunicazioni protette o la collaborazione sicura. Per tutti i client Outlook, i messaggi e gli allegati PDF non protetti ereditano la protezione OME del criterio di prevenzione della perdita dei dati (DLP) o della regola del flusso di posta in Exchange Online. Inoltre, se un utente di Outlook sul Web allega un documento PDF non protetto e applica la protezione al messaggio, il messaggio eredita la protezione del messaggio. Gli utenti possono aprire gli allegati crittografati solo in applicazioni che supportano PDF protetti (ad esempio, il portale OME e il visualizzatore di Azure Information Protection).
+La crittografia PDF consente di proteggere i documenti PDF sensibili tramite comunicazioni sicure o una collaborazione sicura. Per tutti i client Outlook, i messaggi e gli allegati PDF non protetti ereditano la protezione OME del criterio di prevenzione della perdita dei dati (DLP) o della regola del flusso di posta in Exchange Online. Inoltre, se un utente di Outlook sul Web allega un documento PDF non protetto e applica la protezione al messaggio, il messaggio eredita la protezione del messaggio. Gli utenti possono aprire gli allegati crittografati solo in applicazioni che supportano PDF protetti (ad esempio, il portale OME e il visualizzatore di Azure Information Protection).
 
 > [!IMPORTANT]
 > Il client desktop di Outlook non supporta la crittografia PDF.
@@ -205,7 +205,7 @@ Nella tabella seguente sono elencati i client supportati per le cassette postali
 
 Esistono attualmente due limitazioni note:
 
-- Non è possibile aprire allegati ai messaggi di posta elettronica ricevuti nei dispositivi mobili utilizzando Outlook mobile.
+- Non è possibile aprire allegati ai messaggi di posta elettronica ricevuti nei dispositivi mobili utilizzando Outlook Mobile.
 
 - Non è possibile l'assegnazione tramite un gruppo di sicurezza abilitato alla posta elettronica. Microsoft supporta solo l'accesso fornito dall'assegnazione diretta dell'utente alla cassetta postale condivisa e tale mapping automatico è abilitato per Exchange Online. Il mapping automatico è abilitato per impostazione predefinita per Exchange Online.
 
