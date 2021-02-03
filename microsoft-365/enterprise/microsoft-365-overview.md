@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 10/15/2019
+ms.date: 02/01/2021
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,12 +13,12 @@ localization_priority: Priority
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: Fornisce un’introduzione ai componenti, ai piani e ai percorsi di distribuzione di Microsoft 365 per le aziende.
-ms.openlocfilehash: 0916fa97daec166a7bae8b19e3c9efbd693f4874
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 324e5166dd722f9fcd682db7e536a4b864365025
+ms.sourcegitcommit: 2c4c7ebe9bea52765ece0ed27d3ea77313711b10
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48846965"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "50068974"
 ---
 # <a name="microsoft-365-for-enterprise-overview"></a>Panoramica di Microsoft 365 per le aziende
 
@@ -33,7 +33,7 @@ Microsoft 365 per le aziende comprende:
 |Servizi|Descrizione|
 |---|---|
 |App locali e app e servizi di produttività basati sul cloud|Include sia Microsoft 365 Apps for enterprise, le app di Office più recenti per PC e Mac, come Word, Excel, PowerPoint, Outlook e altre, che una gamma completa di servizi online per la posta elettronica, l'archiviazione dei file e la collaborazione, riunioni e altro ancora.|
-|Windows 10 Enterprise|Meets the needs of both large and midsize organizations. It's the most productive and secure version of Windows for users. For IT professionals, it also provides comprehensive deployment, device, and app management.|
+|Windows 10 Enterprise|Soddisfa le esigenze delle grandi e medie imprese. È la versione più produttiva e sicura di Windows per gli utenti. Per i professionisti IT, include anche funzionalità complete per la gestione di distribuzioni, dispositivi e app.|
 |Gestione dei dispositivi e servizi di sicurezza avanzati|Include Microsoft Intune, un servizio di gestione della mobilità aziendale basato su cloud che consente alla forza lavoro di essere produttiva, proteggendo al tempo stesso i dati dell’organizzazione.|
 |||
 
@@ -44,7 +44,7 @@ Microsoft 365 per le aziende è disponibile in tre piani.
 |Nome del piano|Funzionalità|
 |---|---|
 |E3|Accedi ai prodotti e alle funzionalità principali di Microsoft 365 per migliorare in modo sicuro la produttività sul luogo di lavoro e favorire l'innovazione.|
-|E5|Accedere agli ultimi prodotti e funzionalità di Microsoft 365. Questi includono Defender per Office 365, strumenti di sicurezza e di collaborazione. Questo piano include tutte le funzionalità di E3 e, in aggiunta, strumenti per la sicurezza avanzata, la voce e l'analisi dei dati.|
+|E5|Accedi ai prodotti e alle funzionalità più recenti di Microsoft 365. Questi includono Defender per Office 365, strumenti di sicurezza e strumenti di collaborazione. Questo piano include tutte le funzionalità di E3 e, in aggiunta, strumenti per la sicurezza avanzata, la voce e l'analisi dei dati.|
 |F3|Connettiti con gli operatori sul campo attraverso gli strumenti e le risorse appositamente realizzate che possono usare per lavorare nel modo più efficiente.|
 |||
 
@@ -79,13 +79,13 @@ Per avere un quadro più completo su come introdurre i prodotti e servizi di Mic
 
 [![Immagine per il poster della transizione a Microsoft 365](../media/microsoft-365-overview/transition-org-to-m365.png)](https://download.microsoft.com/download/2/c/7/2c7bcc04-aae3-4604-9707-1ffff66b9851/transition-org-to-m365.pdf)
 
-This two-page poster is a quick way to inventory your existing infrastructure. It helps you to find guidance and move to the corresponding product or service in Microsoft 365 for enterprise. It includes Windows and Office products and other infrastructure and security elements, such as device management, identity, and information and threat protection.
+Questo poster di due pagine è modo rapido per inventariare l'infrastruttura esistente. Consente di trovare indicazioni e di passare al prodotto o servizio corrispondente in Microsoft 365. Include i prodotti di Windows e Office e altri elementi di infrastruttura e sicurezza, come la gestione dei dispositivi, le identità e la protezione delle informazioni e dalle minacce.
 
 ## <a name="end-of-support-for-windows-7-and-office-2010-clients-and-servers"></a>Fine del supporto per i client e i server di Windows 7 e Office 2010
 
 [Windows 7](https://aka.ms/win7upgrade) ha raggiunto la fine del supporto il **14 gennaio 2020**.
 
-Questi prodotti hanno raggiunto la fine del supporto il **13 ottobre 2020** :
+Questi prodotti hanno raggiunto la fine del supporto il **13 ottobre 2020**:
 
 - [Office 2010](https://docs.microsoft.com/DeployOffice/office-2010-end-support-roadmap)
 - [Exchange Server 2010](exchange-2010-end-of-support.md)
@@ -110,7 +110,7 @@ Sono disponibili tre modi per pianificare e distribuire i prodotti, le funzional
 
 - Con il supporto di Microsoft Consulting Services o di un [partner Microsoft](https://partner.microsoft.com/):
 
-   I consulenti possono analizzare l'infrastruttura corrente e supportare nello sviluppo di un piano per incorporare completamente il software e i servizi di Microsoft 365 per le aziende.
+   I consulenti possono analizzare l'infrastruttura corrente e aiutare a sviluppare un piano per integrare interamente il software e i servizi di Microsoft 365 per le aziende.
 
 - Procedere autonomamente
 
@@ -118,7 +118,7 @@ Sono disponibili tre modi per pianificare e distribuire i prodotti, le funzional
 
 Per avere un esempio di come Microsoft 365 è stato implementato da una organizzazione multinazionale fittizia, ma rappresentativa, vedere il [case study di Contoso Corporation](contoso-overview.md).
 
-## <a name="additional-microsoft-365-products"></a>Altri prodotti Microsoft 365
+## <a name="additional-microsoft-365-products"></a>Altri prodotti di Microsoft 365
 
 - [Microsoft 365 Business Premium](https://docs.microsoft.com/microsoft-365/business/)
 
@@ -131,6 +131,24 @@ Per avere un esempio di come Microsoft 365 è stato implementato da una organizz
 - [Microsoft 365 Government](https://www.microsoft.com/microsoft-365/government)
 
   Consentire ai dipendenti del settore pubblico degli Stati Uniti di collaborare in modo sicuro.
+
+## <a name="best-together-with-surface-and-the-edge-browser"></a>Ideale insieme a Surface e al browser Microsoft Edge
+
+La combinazione ideale, che include Microsoft 365 per grandi imprese, dispositivi Microsoft Surface e il browser Microsoft Edge, consente di ottimizzare la produttività degli utenti in modo integrato e sicuro. Questa integrazione tra prodotti offre:
+
+- Infrastruttura comune per accesso e identità.
+- App locali e cloud integrate per la ricerca, la collaborazione, la produttività e la conformità.
+- Sicurezza completa e integrata per hardware, browser, app locali e app cloud.
+- Un'infrastruttura comune per la gestione IT di installazioni e aggiornamenti.
+
+Ecco un esempio per un'organizzazione aziendale.
+
+![Organizzazione aziendale con Microsoft 365, dispositivi Surface e il browser Microsoft Edge](../media/microsoft-365-overview/best-together-with-surface-and-edge.png)
+
+Per altre informazioni e per esempi di configurazione per piccole e medie imprese e per gli istituti di istruzione, è possibile scaricare il [poster Ideale insieme](https://download.microsoft.com/download/2/8/d/28db0cf9-2f5a-4f63-91e2-46ff5c4d3baf/microsoft-best-together-poster.pdf).
+
+[![Immagine per il poster Ideale insieme a Surface e al browser Microsoft Edge](../media/microsoft-365-overview/best-together-poster-thumbnail.png)](https://download.microsoft.com/download/2/8/d/28db0cf9-2f5a-4f63-91e2-46ff5c4d3baf/microsoft-best-together-poster.pdf)
+
 
 ## <a name="microsoft-365-training"></a>Formazione su Microsoft 365
 

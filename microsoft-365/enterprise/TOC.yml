@@ -478,16 +478,20 @@
   href: 'https://docs.microsoft.com/windows/deployment/'
 - name: Microsoft 365 Apps for enterprise
   href: 'https://docs.microsoft.com/deployoffice/deployment-guide-microsoft-365-apps'
+- name: Dispositivi Surface
+  href: 'https://docs.microsoft.com/surface/deploy'
+- name: Gestione dei dispositivi
+  items:
+    - name: Roadmap
+      href: device-management-roadmap-microsoft-365.md
+- name: Microsoft Edge
+  href: 'https://docs.microsoft.com/deployedge/deploy-edge-plan-deployment'
 - name: Configurazioni di esempio per la distribuzione e il canale di aggiornamento
   items:
     - name: Panoramica
       href: deploy-update-channels-examples.md
     - name: Distribuzione generale delle versioni più recenti
       href: deploy-update-channels-examples-rapid-deploy.md
-- name: Gestione dei dispositivi
-  items:
-    - name: Roadmap
-      href: device-management-roadmap-microsoft-365.md
 - name: Gestire Microsoft 365 con PowerShell
   href: manage-microsoft-365-with-microsoft-365-powershell.md
   items:

@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Informazioni sui criteri di conservazione e sulle etichette di conservazione, utili per conservare tutto che serve ed eliminare ciò che non serve.
-ms.openlocfilehash: 307687a277ade03f3ba40852eff15378928465e6
-ms.sourcegitcommit: a76de3d1604d755b29053e7bf557c0008be6ad23
+ms.openlocfilehash: 751b88ea3dde0c4cf2a33dded26a032a1e320b5e
+ms.sourcegitcommit: 8d28bce1a3445878b066864e766cf52cb83becd1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "49788004"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "50071311"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>Informazioni sui criteri e sulle etichette di conservazione
 
@@ -224,7 +224,7 @@ Dal Centro conformità Microsoft 365 selezionare **Classificazione dei dati** > 
 
 Il Centro sicurezza e conformità di Office 365 riceve le informazioni generali equivalenti per la conservazione delle etichette dalla **Gestione delle informazioni** > **Dashboard**, e informazioni più dettagliate dalla **Gestione delle informazioni** > **Esploratore delle attività di etichettatura**. Per ulteriori informazioni sul monitoraggio delle etichette di conservazione nell’interfaccia di amministrazione precedente, vedere la seguente documentazione:
 - [Visualizzare i report della gestione dei dati](view-the-data-governance-reports.md)
-- [Visualizzare l'utilizzo delle etichette con Analisi delle etichette](label-analytics.md)
+- [Introduzione alla classificazione dei dati](data-classification-overview.md).
 - [Visualizzare le attività delle etichette dei documenti](view-label-activity-for-documents.md)
 
 #### <a name="using-content-search-to-find-all-content-with-a-specific-retention-label"></a>Usare Cerca Contenuto per trovare tutti i contenuti su una specifica etichetta di conservazione

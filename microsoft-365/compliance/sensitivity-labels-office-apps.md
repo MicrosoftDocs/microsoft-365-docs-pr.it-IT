@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Informazioni su come gli utenti lavorano con le etichette di riservatezza nelle app di Office per desktop, dispositivi mobili e Web e quali app supportano le etichette di riservatezza.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 932fb602039a3f2437dfd9cc9db2c2e9438369e3
-ms.sourcegitcommit: 8d28bce1a3445878b066864e766cf52cb83becd1
+ms.openlocfilehash: 672d99ed4345ee27437cda66087de6e4e3f521bb
+ms.sourcegitcommit: 4f40f5be140a23bacff6fd7b85536de14fc7d499
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "50071251"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "50084591"
 ---
 # <a name="use-sensitivity-labels-in-office-apps"></a>Usare le etichette di riservatezza nelle app di Office
 
@@ -64,8 +64,8 @@ I numeri elencati sono la versione minima dell'applicazione di Office necessaria
 |[Contrassegni dinamici con variabili](#dynamic-markings-with-variables)                                              | 2010+           | 16,42+     | 2,42+ | 16.0.13328+ | In fase di revisione |
 |[Assegnare le autorizzazioni adesso](encryption-sensitivity-labels.md#assign-permissions-now)                                 | 1910+          | 16,21+     | 2.21+ | 16.0.11231+ | [Sì - consenso esplicito](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[Consentire agli utenti di assegnare le autorizzazioni](encryption-sensitivity-labels.md#let-users-assign-permissions)                     |2004+ | 16,35+   | In fase di revisione   | In fase di revisione         | In fase di revisione                                                        |
-|[Introduzione alla classificazione dei dati e](data-classification-overview.md) all'invio di dati per gli amministratori                      | Anteprima: [Canale corrente (anteprima)](https://office.com/insider)            | Anteprima: [Canale corrente (anteprima)](https://office.com/insider)        | In fase di revisione   | In fase di revisione         | Sì <sup>\*</sup>                                                        |
-|[Richiedere agli utenti di applicare un'etichetta alla posta elettronica e ai documenti](#require-users-to-apply-a-label-to-their-email-and-documents)   | Anteprima: distribuzione al [Canale corrente (anteprima)](https://office.com/insider)             | Anteprima: distribuzione al [Canale corrente (anteprima)](https://office.com/insider)         | In fase di revisione   | Anteprima: [Canale beta](https://office.com/insider)         | In fase di revisione                                            
+|[Introduzione alla classificazione dei dati e](data-classification-overview.md) all'invio di dati per gli amministratori                      | 2011+ | 16,43+ | Anteprima: [Canale corrente (anteprima)](https://office.com/insider) | Anteprima: [Canale corrente (anteprima)](https://office.com/insider) | Sì <sup>\*</sup>                                                        |
+|[Richiedere agli utenti di applicare un'etichetta alla posta elettronica e ai documenti](#require-users-to-apply-a-label-to-their-email-and-documents)   | Anteprima: [Canale corrente (anteprima)](https://office.com/insider)             | Anteprima: [Canale corrente (anteprima)](https://office.com/insider)         | In fase di revisione   | Distribuzione: 16.0.13628+ | In fase di revisione                                            
 |[Applicare automaticamente un'etichetta di riservatezza al contenuto](apply-sensitivity-label-automatically.md)                    | 2009+                                  | Distribuzione: 16,44+ | In fase di revisione | In fase di revisione | [Sì - consenso esplicito](sensitivity-labels-sharepoint-onedrive-files.md) |
 |Supportare [il salvataggio](https://support.office.com/article/6d6bd723-ebfd-4e40-b5f6-ae6e8088f7a5) automatico [e la creazione condivisa](https://support.office.com/article/ee1509b4-1f6e-401e-b04a-782d26f564a4) su documenti etichettati e crittografati | In fase di revisione | In fase di revisione | In fase di revisione | In fase di revisione | [Sì - consenso esplicito](sensitivity-labels-sharepoint-onedrive-files.md) |
 |
@@ -89,7 +89,7 @@ I numeri elencati sono la versione minima dell'applicazione di Office necessaria
 |[Assegnare le autorizzazioni adesso](encryption-sensitivity-labels.md#assign-permissions-now)                                 | 1910+                     | 16,21+                 | 4.7.1+         | 4.0.39+           | Sì               |
 |[Consentire agli utenti di assegnare le autorizzazioni](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | 1910+                     | 16,21+                 | 4.7.1+         | 4.0.39+           | Sì               |
 |[Richiedere agli utenti di applicare un'etichetta alla posta elettronica e ai documenti](#require-users-to-apply-a-label-to-their-email-and-documents)   | Anteprima: [Canale corrente (anteprima)](https://office.com/insider)                        | 16,43+                     | In fase di revisione            | In fase di revisione                | Sì                |
-|[Introduzione alla classificazione dei dati e](data-classification-overview.md) all'invio di dati per gli amministratori                      | Anteprima: [Canale corrente (anteprima)](https://office.com/insider)                       | Anteprima: [Canale corrente (anteprima)](https://office.com/insider)                    | In fase di revisione           | In fase di revisione               | Sì               |
+|[Introduzione alla classificazione dei dati e](data-classification-overview.md) all'invio di dati per gli amministratori                      | 2011+ | In fase di revisione | In fase di revisione           | In fase di revisione               | In fase di revisione |
 |[Applicare automaticamente un'etichetta di riservatezza al contenuto](apply-sensitivity-label-automatically.md)                    | 2009+                      | 16,44+                    | In fase di revisione           | In fase di revisione               | Sì |
 |
 

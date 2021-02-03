@@ -184,8 +184,6 @@
               href: email/resolve-issues-with-shared-mailboxes.md
         - name: Impostare la Posta in arrivo evidenziata
           href: setup/configure-focused-inbox.md
-        - name: Informazioni sulla collaborazione tramite posta elettronica
-          href: email/email-collaboration.md
         - name: Aggiungere un utente o un contatto a un gruppo di distribuzione
           href: email/add-user-or-contact-to-distribution-list.md
         - name: Gestire Messaggi secondari per l'organizzazione

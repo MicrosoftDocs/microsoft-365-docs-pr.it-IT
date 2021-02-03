@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: "Requisito per tutte le soluzioni di Microsoft Information Protection: creare, configurare e pubblicare etichette di riservatezza per classificare e proteggere i documenti e i messaggi di posta elettronica dell'organizzazione."
-ms.openlocfilehash: 816da1001593dc36d625a48d12a1e0ace86578bf
-ms.sourcegitcommit: 50f10d83fa21db8572adab90784146e5231e3321
+ms.openlocfilehash: 60865b40582416ac2ac963c4a8c68353b06fc6d4
+ms.sourcegitcommit: 8d28bce1a3445878b066864e766cf52cb83becd1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "50058499"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "50071291"
 ---
 # <a name="create-and-configure-sensitivity-labels-and-their-policies"></a>Creare e configurare etichette di riservatezza e i relativi criteri
 
@@ -239,4 +239,4 @@ Per configurare e usare le etichette di riservatezza per scenari specifici, vede
 
 - [Abilitare le etichette di riservatezza per i file di Office in SharePoint e OneDrive](sensitivity-labels-sharepoint-onedrive-files.md)
 
-Per monitorare il modo in cui vengono usate le etichette, vedere [Visualizzare l'utilizzo delle etichette con Analisi delle etichette](label-analytics.md).
+Per monitorare l'utilizzo delle etichette, vedere [Introduzione alla classificazione dei dati](data-classification-overview.md).
