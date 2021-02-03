@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Esplora contenuto consente di visualizzare in modo nativo gli elementi con etichetta.
-ms.openlocfilehash: 9beeab0c0b00ac1ac37c9df53e14a2f3f2914422
-ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
+ms.openlocfilehash: 19ad68d3c32046754e366919e8c4e66336945624
+ms.sourcegitcommit: d354727303d9574991b5a0fd298d2c9414e19f6c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49701153"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "50080725"
 ---
 # <a name="get-started-with-content-explorer"></a>Introduzione a Esplora contenuto
 
@@ -47,8 +47,6 @@ A ogni account che accede e usa la classificazione dei dati deve essere assegnat
 
 Per accedere alla scheda Esplora contenuto, è necessario che a un account sia assegnata l'appartenenza a uno di questi ruoli o gruppi di ruoli. 
 
-I [criteri di prevenzione della perdita dei dati](data-loss-prevention-policies.md) aiutano a proteggere le informazioni riservate definite come **tipo di informazioni sensibili**. Microsoft 365 include le [definizioni per molti tipi di informazioni sensibili comuni](sensitive-information-type-entity-definitions.md) in varie aree geografiche, pronte per l'uso. Ad esempio, un numero di carta di credito, numeri di conto corrente bancario, numeri di documento di identità e numeri di servizio Windows Live ID.
-
 **Gruppi di ruoli di Microsoft 365**
 
 - Amministratore globale
@@ -66,7 +64,7 @@ L'accesso a Esplora contenuto è estremamente limitato perché consente di legge
 > [!IMPORTANT]
 > Queste autorizzazioni sostituiscono le autorizzazioni assegnate in locale, che permettono di visualizzare il contenuto. 
 
-Sono due i ruoli che consentono di accedere a Esplora contenuto:
+Esistono due ruoli che permettono l'accesso a Esplora contenuto, concessi tramite il [Centro sicurezza e conformità Microsoft](https://protection.office.com/permissions):
 
 - **Visualizzatore elenco di Esplora contenuto**: l'appartenenza a questo gruppo di ruoli consente di visualizzare ogni elemento e la relativa posizione nella visualizzazione elenco. Il ruolo `data classification list viewer` è stato preassegnato a questo gruppo di ruoli.
 

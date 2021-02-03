@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Configurare la prevenzione della perdita di dati degli endpoint di Microsoft 365 per monitorare le attività dei file e implementare azioni di protezione per questi file negli endpoint.
-ms.openlocfilehash: c9b7b10328e80a70f14b8fb40a3bf91cb89dbc88
-ms.sourcegitcommit: c1f9a1b2a34146c51c9e33c4119a388b249ce7a9
+ms.openlocfilehash: c337d5ccd05ee665b62c9ce5a68abbd8084da943
+ms.sourcegitcommit: d354727303d9574991b5a0fd298d2c9414e19f6c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "49867960"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "50080819"
 ---
 # <a name="get-started-with-endpoint-data-loss-prevention"></a>Introduzione alla prevenzione della perdita di dati degli endpoint
 
@@ -77,6 +77,9 @@ I dati provenienti da Endpoint DLP possono essere visualizzati in [Esplora attiv
 - Amministratore di conformità
 - Amministratore della sicurezza
 - Amministratore dati di conformità
+- Ruolo con autorizzazioni di lettura globali
+- Amministratore che legge i dati di sicurezza
+- Amministratore che legge i report
 
 ### <a name="prepare-your-endpoints"></a>Preparare gli endpoint
 
@@ -86,11 +89,13 @@ Verificare che i dispositivi Windows 10 in cui si prevede di distribuire Endpoin
 
 2. La versione del client antimalware deve essere 4.18.2009.7 o successiva. Controllare la versione corrente aprendo l'app Sicurezza di Windows e facendo clic sull'icona impostazioni e quindi su Informazioni. Il numero di versione è elencato in Versione client antimalware. Eseguire l'aggiornamento all'ultima versione del client antimalware installando l'aggiornamento di Windows KB4052623. 
 
-> [!NOTE]
-> Nessun componente di Sicurezza di Windows deve essere attivo ed è possibile eseguire Endpoint DLP indipendentemente dallo stato di Sicurezza di Windows, ma il [Controllo in tempo reale della protezione e del comportamento](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus) deve essere abilitato. 
+   > [!NOTE]
+   > Nessun componente di Sicurezza di Windows deve essere attivo ed è possibile eseguire Endpoint DLP indipendentemente dallo stato di Sicurezza di Windows, ma il [Controllo in tempo reale della protezione e del comportamento](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus) deve essere abilitato. 
  
-
-3. Devono essere installati gli aggiornamenti seguenti di Windows. Nota: questi aggiornamenti non sono prerequisiti per l'onboarding di un dispositivo in Endpoint DLP, ma contengono correzioni per problemi importanti, pertanto vanno installati prima di usare il prodotto.
+3. Devono essere installati gli aggiornamenti seguenti di Windows. 
+ 
+   > [!NOTE]
+   > Questi aggiornamenti non sono prerequisiti per l'onboarding di un dispositivo in Endpoint DLP, ma contengono correzioni per problemi importanti, pertanto vanno installati prima di usare il prodotto.
 
     - Per Windows 10 1809 - KB4559003, KB4577069, KB4580390
     - Per Windows 10 1903 o 1909 - KB4559004, KB4577062, KB4580386
@@ -198,7 +203,7 @@ Una volta completata l'operazione di onboarding, l'endpoint sarà visibile nell'
 ## <a name="next-steps"></a>Passaggi successivi
 Ora che si è eseguito l'onboarding dei dispositivi e che è possibile visualizzare i dati sulle attività in Esplora attività, è possibile procedere con il passaggio successivo, in cui si creano criteri di prevenzione della perdita dei dati per proteggere gli elementi sensibili.
 
-- [Uso della prevenzione della perdita di dati degli endpoint (anteprima)](endpoint-dlp-using.md)
+- [Uso di Prevenzione della perdita di dati degli endpoint](endpoint-dlp-using.md)
 
 ## <a name="see-also"></a>Vedere anche
 

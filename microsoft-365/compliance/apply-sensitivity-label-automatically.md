@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Quando si crea un'etichetta di riservatezza, è possibile assegnare automaticamente un'etichetta a file e messaggi di posta elettronica oppure chiedere agli utenti di selezionare l'etichetta consigliata.
-ms.openlocfilehash: 190b06a719775fbbf14c94a4fd817d3242a95e6c
-ms.sourcegitcommit: 1b30ac6e05906c8a014b1fed33fc71e1821f6ad2
+ms.openlocfilehash: 4bbea7810c20d72ef75bbb5602b1daddfce45576
+ms.sourcegitcommit: 4f40f5be140a23bacff6fd7b85536de14fc7d499
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2021
-ms.locfileid: "50044746"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "50084677"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Applicare automaticamente un'etichetta di riservatezza al contenuto
 
@@ -227,9 +227,9 @@ Flusso di lavoro per un criterio di applicazione automatica di etichette:
 
 1. Creare e configurare un criterio di applicazione automatica di etichette.
 
-2. Eseguire il criterio in modalità di simulazione e aspettare 24 ore o fino al completamento della simulazione.
+2. Eseguire il criterio in modalità di simulazione. Il completamento può richiedere fino a 48 ore.
 
-3. Rivedere i risultati e, se necessario, perfezionare il criterio. Eseguire nuovamente la modalità di simulazione e attendere altre 24 ore o fino al completamento della simulazione.
+3. Rivedere i risultati e, se necessario, perfezionare il criterio. Rieseguire la modalità di simulazione e attendere che la procedura sia completata di nuovo.
 
 4. Ripetere il passaggio 3 in base alle esigenze.
 
