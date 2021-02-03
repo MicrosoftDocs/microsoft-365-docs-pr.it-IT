@@ -18,12 +18,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: ae9617a55fd5efb40a3aba07202ebfb1494d4db6
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: de9fb28f09b88cf1730f3bb3539234f6a03ec2e3
+ms.sourcegitcommit: d354727303d9574991b5a0fd298d2c9414e19f6c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49928809"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "50080714"
 ---
 # <a name="custom-detections-overview"></a>Panoramica dei rilevamenti personalizzati
 
@@ -41,6 +41,7 @@ I rilevamenti personalizzati forniscono:
 - Avvisi per i rilevamenti basati su regole creati da query di ricerca avanzata
 - Azioni di risposta automatica
 
-## <a name="related-topic"></a>Argomento correlato
+## <a name="see-also"></a>Vedere anche
 - [Creare e gestire regole di rilevamento personalizzate](custom-detection-rules.md)
 - [Panoramica della ricerca avanzata](advanced-hunting-overview.md)
+- [Eseguire la migrazione di query di ricerca avanzata da Microsoft Defender per Endpoint](advanced-hunting-migrate-from-mdatp.md)

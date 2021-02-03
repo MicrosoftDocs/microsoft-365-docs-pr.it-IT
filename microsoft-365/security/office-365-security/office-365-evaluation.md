@@ -1,7 +1,7 @@
 ---
 title: Valutare Microsoft Defender per Office 365
-description: Difensore per Office 365 in modalità di valutazione crea Defender per i criteri di posta elettronica di Office 365 che registrano verdetti, ad esempio malware, ma non agiscono sui messaggi.
-keywords: valutare Office 365, Microsoft Defender per Office 365, valutazione di Office 365, provare a Office 365, Microsoft Defender, ATP
+description: Defender per Office 365 in modalità di valutazione crea i criteri di posta elettronica di Defender per Office 365 che registrano i verdetti, ad esempio malware, ma non agiscono sui messaggi.
+keywords: valutare Office 365, Microsoft Defender per Office 365, valutazione di Office 365, provare Office 365, Microsoft Defender, ATP
 f1.keywords:
 - NOCSH
 ms.author: ellevin
@@ -9,7 +9,6 @@ author: levinec
 manager: dansimp
 audience: ITPro
 ms.topic: article
-ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -17,42 +16,44 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f8f105215b23ec49318c133714e758e2a2a9c1df
-ms.sourcegitcommit: df58fd8ebe14ca98fc1be84dbfb9c29ef7ab1d62
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 7c0bb1701cf030692bc98218b38be00cae57a2bd
+ms.sourcegitcommit: d354727303d9574991b5a0fd298d2c9414e19f6c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49870922"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "50080702"
 ---
 # <a name="evaluate-microsoft-defender-for-office-365"></a>Valutare Microsoft Defender per Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 > [!IMPORTANT]
-> Microsoft Defender per Office 365 Evaluation è in anteprima pubblica. Questa versione di anteprima è disponibile senza un contratto di servizio. È possibile che alcune funzionalità non siano supportate o che possano disporre di funzionalità vincolate.
+> La valutazione di Microsoft Defender per Office 365 è in anteprima pubblica. Questa versione di anteprima viene fornita senza un contratto di servizio. Alcune funzionalità potrebbero non essere supportate o potrebbero avere funzionalità vincolate.
 
-L'esecuzione di una valutazione completa del prodotto di sicurezza può contribuire a prendere decisioni informate sugli aggiornamenti e gli acquisti. Consente di provare le funzionalità del prodotto per la sicurezza per valutare in che modo può aiutare il team delle operazioni di sicurezza nelle attività quotidiane.
+L'esecuzione di una valutazione completa del prodotto per la sicurezza può aiutare a prendere decisioni informate su aggiornamenti e acquisti. Aiuta a provare le funzionalità del prodotto per la sicurezza per valutare in che modo può aiutare il team delle operazioni di sicurezza nelle loro attività quotidiane.
 
-L'esperienza di valutazione di [Microsoft Defender per Office 365](office-365-atp.md) è stata progettata per eliminare la complessità della configurazione del dispositivo e dell'ambiente, in modo da poter concentrarsi sulla valutazione delle funzionalità della soluzione di sicurezza. Si applica solo alla protezione della posta elettronica e non ai client di SharePoint, Office o team.
+L'esperienza di valutazione di [Microsoft Defender per Office 365](office-365-atp.md) è progettata per eliminare la complessità della configurazione di dispositivi e ambienti, in modo da concentrarsi sulla valutazione delle funzionalità della soluzione di sicurezza. Si applica solo alla protezione della posta elettronica e non a SharePoint, ai client di Office o a Teams.
 
-Se non si dispone già di una licenza che supporta Microsoft Defender per Office 365, è possibile avviare una [valutazione gratuita di 30 giorni](https://admin.microsoft.com/AdminPortal/Home#/catalog/offer-details/microsoft-defender-for-office-365-plan-2-/223860DC-15D6-42D9-A861-AE05473069FA) e testare le funzionalità nel centro sicurezza & conformità di Office 365 ( https://protection.office.com/homepage) . È possibile utilizzare la configurazione rapida e disattivarla se necessario.
+Se non si dispone già di una licenza che supporta Microsoft Defender per Office 365, è possibile avviare una valutazione gratuita di [30](https://admin.microsoft.com/AdminPortal/Home#/catalog/offer-details/microsoft-defender-for-office-365-plan-2-/223860DC-15D6-42D9-A861-AE05473069FA) giorni e testare le funzionalità nel Centro sicurezza & e conformità di Office 365 ( https://protection.office.com/homepage) . Potrai usufruire della configurazione rapida ed è possibile disattivarla facilmente, se necessario.
 
-## <a name="how-the-evaluation-works"></a>Modalità di funzionamento della valutazione
+## <a name="how-the-evaluation-works"></a>Funzionamento della valutazione
 
-Difensore per Office 365 in modalità di valutazione crea Defender per i criteri di posta elettronica di Office 365 che registrano verdetti, ad esempio malware, ma non agiscono sui messaggi. Non è necessario modificare la configurazione del record MX.
+Defender per Office 365 in modalità di valutazione crea i criteri di posta elettronica di Defender per Office 365 che registrano i verdetti, ad esempio malware, ma non agiscono sui messaggi. Non è necessario modificare la configurazione del record MX.
 
-Con la modalità di valutazione, gli [allegati sicuri](atp-safe-attachments.md), i [collegamenti sicuri](atp-safe-links.md)e i [criteri di rappresentazione anti-phishing](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) sono configurati per conto dell'utente. Tutti i criteri di protezione per Office 365 vengono creati in modalità di non applicazione in background e non sono visibili all'utente.
+Con la modalità di valutazione, [i](atp-safe-attachments.md)criteri [di](atp-safe-links.md)rappresentazione [anti-phishing,](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) Collegamenti sicuri e Allegati sicuri vengono impostati per conto dell'utente. Tutti i criteri di Defender per Office 365 vengono creati in modalità non di imposizione in background e non sono visibili all'utente.
 
-Come parte del programma di installazione, la modalità di valutazione configura anche il [filtro avanzato per i connettori](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors). Migliora l'accuratezza del filtro conservando le informazioni sull'indirizzo IP e sul mittente, che sono altrimenti perse quando la posta passa attraverso un gateway di sicurezza della posta elettronica (ESG) davanti a Defender per Office 365. Il filtro migliorato migliora inoltre l'accuratezza del filtro per i criteri di protezione da posta indesiderata e anti-phishing di Exchange Online Protection (EOP).
+Durante l'installazione, la modalità di valutazione configura anche [il filtro avanzato per i connettori.](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors) Migliora l'accuratezza del filtro preservando l'indirizzo IP e le informazioni del mittente, che altrimenti vengono perse quando la posta passa attraverso un gateway di sicurezza della posta elettronica (ESG) davanti a Defender per Office 365. Il filtro avanzato migliora inoltre l'accuratezza del filtro per i criteri di protezione da posta indesiderata e anti-phishing di Exchange Online Protection (EOP).
 
-Per ridurre al minimo l'impatto della produzione su alcuni scenari non supportati, è possibile ignorare tutti i filtri di EOP creando una regola di trasporto per impostare il livello di probabilità di posta indesiderata su-1. Per informazioni dettagliate, vedere Utilizzo dell'interfaccia di amministrazione [di Exchange per creare una regola del flusso di posta che imposta il livello SCL di un messaggio](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md#use-the-eac-to-create-a-mail-flow-rule-that-sets-the-scl-of-a-message)   .
+Per ridurre al minimo il potenziale impatto sulla produzione in alcuni scenari non supportati, è possibile ignorare tutti i filtri EOP creando una regola di trasporto per impostare il livello di probabilità di posta indesiderata (SCL) su -1. Per informazioni dettagliate, vedere Use [the EAC to create a mail flow rule that sets the SCL of a](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md#use-the-eac-to-create-a-mail-flow-rule-that-sets-the-scl-of-a-message)   message.
 
-Quando la modalità di valutazione è configurata, si avrà un rapporto aggiornato giornalmente con un massimo di 90 giorni di dati quantificando i messaggi che sarebbero stati bloccati se i criteri fossero stati implementati (ad esempio, DELETE, Send to Junk, Quarantine). I report vengono generati per tutti i rilevamenti di protezione per Office 365 e EOP. Sono aggregati per la tecnologia di rilevamento (ad esempio, rappresentazione) e possono essere filtrati in base all'intervallo di tempo. Inoltre, i report dei messaggi possono essere creati su richiesta per creare pivot personalizzati o per i messaggi di Deep Dive tramite Esplora minacce.
+Quando è impostata la modalità di valutazione, ogni giorno verrà aggiornato un rapporto con fino a 90 giorni di dati che quantificano i messaggi che sarebbero stati bloccati se i criteri fossero stati implementati (ad esempio, eliminare, inviare posta indesiderata, quarantena). Vengono generati report per tutti i rilevamenti di Defender per Office 365 ed EOP. Vengono aggregati in base alla tecnologia di rilevamento (ad esempio, la rappresentazione) e possono essere filtrati in base all'intervallo di tempo. Inoltre, i rapporti dei messaggi possono essere creati su richiesta per creare pivot personalizzati o per approfondire i messaggi con Esplora minacce.
 
-Con l'utilizzo di set-up semplificato, è possibile concentrarsi su:
+Con l'esperienza di configurazione semplificata, è possibile concentrarsi su:
 
 - Esecuzione della valutazione
-- Ottenere un report dettagliato
+- Recupero di un report dettagliato
 - Analisi del report per l'azione
 - Presentazione del risultato della valutazione
 
@@ -60,22 +61,22 @@ Con l'utilizzo di set-up semplificato, è possibile concentrarsi su:
 
 ### <a name="licensing"></a>Licenze
 
-Per accedere alla valutazione, è necessario soddisfare i requisiti di licenza. Funzionerà una delle licenze seguenti:
+Per accedere alla valutazione, è necessario soddisfare i requisiti di licenza. Una delle licenze seguenti funzionerà:
 
 - Microsoft Defender per Office 365 Piano 1
 - Microsoft Defender per Office 365 Piano 2
-- Microsoft 365 E5, sicurezza di Microsoft 365 E5
+- Microsoft 365 E5, Microsoft 365 E5 Security
 - Office 365 E5
 
 Se non si dispone di una di queste licenze, sarà necessario ottenere una licenza di valutazione.
 
 #### <a name="trial"></a>Valutazione
 
-Per ottenere una licenza di valutazione per Microsoft Defender per Office 365, è necessario avere il ruolo di **amministratore di fatturazione** o il **ruolo di amministratore globale**. Richiedere l'autorizzazione a un utente che ha il ruolo di amministratore globale. [Informazioni su abbonamenti e licenze](https://docs.microsoft.com/microsoft-365/commerce/licenses/subscriptions-and-licenses)
+Per ottenere una licenza di valutazione per Microsoft Defender per  Office 365, è necessario disporre del ruolo di amministratore fatturazione o **amministratore globale.** Richiedere l'autorizzazione a un utente con il ruolo di amministratore globale. [Informazioni su abbonamenti e licenze](https://docs.microsoft.com/microsoft-365/commerce/licenses/subscriptions-and-licenses)
 
-Dopo aver ottenuto il ruolo appropriato, è consigliabile ottenere una licenza di valutazione per Microsoft Defender per Office 365 (piano 2) nell'interfaccia di amministrazione di Microsoft 365 accedendo a fatturazione > servizi di acquisto. La versione di valutazione include una versione di valutazione gratuita di 30 giorni per 25 licenze. [Ottenere una versione di valutazione di Microsoft Defender per Office 365 (piano 2)](https://admin.microsoft.com/AdminPortal/Home#/catalog/offer-details/microsoft-defender-for-office-365-plan-2-/223860DC-15D6-42D9-A861-AE05473069FA).
+Dopo aver ottenuto il ruolo appropriato, il percorso consigliato è ottenere una licenza di valutazione per Microsoft Defender per Office 365 (Piano 2) nell'interfaccia di amministrazione di Microsoft 365 andando a Fatturazione > Servizi di acquisto. La versione di valutazione include una versione di valutazione gratuita di 30 giorni per 25 licenze. [Ottenere una versione di valutazione per Microsoft Defender per Office 365 (Piano 2).](https://admin.microsoft.com/AdminPortal/Home#/catalog/offer-details/microsoft-defender-for-office-365-plan-2-/223860DC-15D6-42D9-A861-AE05473069FA)
 
-Verrà visualizzata una finestra di 30 giorni con la valutazione da monitorare e riferire su minacce avanzate. È inoltre possibile acquistare un abbonamento a pagamento se si desidera che il servizio di protezione completo per le funzionalità di Office 365.
+Avrai una finestra di 30 giorni con la valutazione per monitorare e segnalare le minacce avanzate. È inoltre possibile acquistare un abbonamento a pagamento se si desidera disporre delle funzionalità complete di Defender per Office 365.
 
 ### <a name="roles"></a>Ruoli
 
@@ -88,38 +89,38 @@ Sono necessari i ruoli seguenti:
 
 |Attività|Ruolo|
 |---|---|
-|Ottenere una versione di valutazione gratuita o acquistare Microsoft Defender per Office 365 (piano 2)|Ruolo di amministratore di fatturazione o ruolo di amministratore globale|
-|Creare criteri di valutazione|Ruolo di domini accettati e remoti; Ruolo di amministratore della sicurezza|
-|Modifica criteri di valutazione|Ruolo di domini accettati e remoti; Ruolo di amministratore della sicurezza|
-|Eliminare i criteri di valutazione|Ruolo di domini accettati e remoti; Ruolo di amministratore della sicurezza |
-|Visualizzare il report di valutazione|Ruolo di amministratore della sicurezza o lettore di sicurezza|
+|Ottenere una versione di valutazione gratuita o acquistare Microsoft Defender per Office 365 (Piano 2)|Ruolo di amministratore fatturazione O ruolo di amministratore globale|
+|Creare criteri di valutazione|Ruolo Domini accettati e remoti; Ruolo di amministratore della sicurezza|
+|Modificare i criteri di valutazione|Ruolo Domini accettati e remoti; Ruolo di amministratore della sicurezza|
+|Eliminare i criteri di valutazione|Ruolo Domini accettati e remoti; Ruolo di amministratore della sicurezza |
+|Visualizzare il report di valutazione|Ruolo di amministratore della sicurezza O ruolo lettore di sicurezza|
 |
 
 
-### <a name="enhanced-filtering"></a>Filtro migliorato
+### <a name="enhanced-filtering"></a>Filtro avanzato
 
-I criteri di protezione di Exchange Online, ad esempio la massa e la protezione dalla posta indesiderata, rimarranno invariati. Anche il recapito dei messaggi rimarrà invariato. Tuttavia, la valutazione attiva il filtro avanzato per i connettori, che avrà un impatto sul flusso di posta e sui criteri di protezione di Exchange Online, a meno che non vengano ignorati.
+I criteri di Exchange Online Protection, ad esempio la protezione da posta indesiderata e in blocco, rimarranno invariati. Anche il recapito dei messaggi rimarrà invariato. Tuttavia, la valutazione attiva il filtro avanzato per i connettori, che influirà sul flusso di posta e sui criteri di Exchange Online Protection, a meno che non venga ignorato.
 
-Il filtro avanzato per i connettori consentirà ai tenant di usare la protezione anti-spoofing. L'anti-spoofing non è supportato se si utilizza un gateway di sicurezza della posta elettronica (ESG) senza che sia stato attivato il filtro avanzato per i connettori.
+Il filtro avanzato per i connettori consentirà ai tenant di utilizzare la protezione anti-spoofing. L'anti-spoofing non è supportato se si utilizza un gateway di sicurezza della posta elettronica (ESG) senza aver attivato il filtro avanzato per i connettori.
 
 ### <a name="urls"></a>URL
 
-Gli URL verranno detonati durante il flusso di posta. Se non si desidera che gli URL specifici vengano detonati, gestire l'elenco degli URL consentiti in modo appropriato. Per informazioni dettagliate, vedere [gestire gli URL nell'elenco Consenti/blocca tenant](tenant-allow-block-list.md) .
+Gli URL verranno detonati durante il flusso di posta. Se non vuoi che url specifici detonino, gestisci l'elenco degli URL consentiti in modo appropriato. Per [informazioni dettagliate, vedere Manage the Tenant Allow/Block List.](tenant-allow-block-list.md)
 
-I collegamenti URL nei corpi dei messaggi di posta elettronica non vengono adattati per ridurre l'impatto del cliente.
+I collegamenti URL nei corpi dei messaggi di posta elettronica non vengono inclusi, per ridurre l'impatto del cliente.
 
 ### <a name="email-routing"></a>Routing della posta elettronica
 
-Preparare i dettagli corrispondenti che saranno necessari per configurare la modalità di instradamento della posta elettronica, incluso il nome del connettore in ingresso che instrada la posta. Se si utilizza solo Exchange Online Protection, non si avrà un connettore. Informazioni  [sul flusso di posta e il routing della posta elettronica](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/mail-flow)
+Preparare i dettagli corrispondenti che sarà necessario configurare come viene attualmente instradata la posta elettronica, incluso il nome del connettore in ingresso che instrada la posta. Se si utilizza solo Exchange Online Protection, non si dispone di un connettore.  [Informazioni sul flusso di posta e sul routing della posta elettronica](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/mail-flow)
 
 Gli scenari di routing della posta elettronica supportati includono:
 
-- **Partner di terze parti e/o provider di servizi locali**: il connettore in ingresso che si desidera valutare utilizza un provider di terze parti e/o utilizza una soluzione per la sicurezza della posta elettronica in locale.
-- **Solo Microsoft Exchange Online Protection**: il tenant che si desidera valutare utilizza Office 365 per la sicurezza della posta elettronica e il record MX (mail Exchange) punta a Microsoft.
+- Partner di terze parti **e/o provider** di servizi locali: il connettore in ingresso che si desidera valutare utilizza un provider di terze parti e/o si sta utilizzando una soluzione per la sicurezza della posta elettronica locale.
+- **Microsoft Exchange Online protezione:** il tenant che si desidera valutare utilizza Office 365 per la sicurezza della posta elettronica e il record Mail Exchange (MX) punta a Microsoft.
 
 ### <a name="email-security-gateway"></a>Gateway di sicurezza della posta elettronica
 
-Se si utilizza un gateway di sicurezza per la posta elettronica di terze parti (ESG), è necessario conoscere il nome del provider. Se si utilizza un ESG locale o un fornitore non supportato, è necessario conoscere gli indirizzi IP pubblici per i dispositivi.
+Se si utilizza un gateway di sicurezza della posta elettronica (ESG) di terze parti, è necessario conoscere il nome del provider. Se si usa un ESG locale o fornitori non supportati, è necessario conoscere gli indirizzi IP pubblici per i dispositivi.
 
 I partner di terze parti supportati includono:
 
@@ -133,42 +134,42 @@ I partner di terze parti supportati includono:
 
 ### <a name="scoping"></a>Ambito
 
-Si sarà in grado di applicare la valutazione a un connettore in ingresso. Se non è configurato alcun connettore, l'ambito di valutazione consentirà agli amministratori di raccogliere dati da qualsiasi utente del tenant per valutare Defender per Office 365.
+Sarà possibile impostare l'ambito della valutazione su un connettore in ingresso. Se non è configurato alcun connettore, l'ambito di valutazione consentirà agli amministratori di raccogliere dati da qualsiasi utente nel tenant per valutare Defender per Office 365.
 
-## <a name="get-started-with-the-evaluation"></a>Iniziare a utilizzare la valutazione
+## <a name="get-started-with-the-evaluation"></a>Introduzione alla valutazione
 
-Trovare la scheda di configurazione di valutazione di Microsoft Defender per Office 365 nel centro conformità & sicurezza di Office 365 ( https://protection.office.com/homepage) da tre punti di accesso:
+Trovare la scheda di configurazione di valutazione di Microsoft Defender per Office 365 nel Centro sicurezza & e conformità di Office 365 ( da tre https://protection.office.com/homepage) punti di accesso:
 
-- Dashboard di gestione delle minacce >
-- Criteri di > di gestione delle minacce
-- Report > dashboard
+- Dashboard della gestione > minacce
+- Criteri di gestione > delle minacce
+- Report > Dashboard
 
-## <a name="setting-up-the-evaluation"></a>Configurazione della valutazione
+## <a name="setting-up-the-evaluation"></a>Impostazione della valutazione
 
-Dopo aver avviato il flusso di configurazione per la valutazione, verranno fornite due opzioni di routing. A seconda delle esigenze di valutazione e configurazione del routing della posta dell'organizzazione, è possibile scegliere se si sta utilizzando un provider di servizi di terze parti e/o locale o solo Microsoft Exchange Online.
+Dopo aver avviato il flusso di configurazione per la valutazione, ti verranno date due opzioni di routing. A seconda delle esigenze di valutazione e configurazione del routing della posta dell'organizzazione, è possibile scegliere se si utilizza un provider di servizi di terze parti e/o locale o solo Microsoft Exchange Online.
 
-- Se si utilizza un partner di terze parti e/o un provider di servizi locale, è necessario selezionare il nome del fornitore dal menu a discesa. Fornire gli altri dettagli correlati al connettore.
+- Se si utilizza un partner di terze parti e/o un provider di servizi locale, è necessario selezionare il nome del fornitore dal menu a discesa. Fornire gli altri dettagli relativi al connettore.
 
 - Selezionare Microsoft Exchange Online se il record MX punta a Microsoft e si dispone di una cassetta postale di Exchange Online.
 
-Rivedere le impostazioni e modificarle, se necessario. Fare quindi clic su **Crea valutazione**. Si dovrebbe ottenere un messaggio di conferma per indicare che l'installazione è stata completata.
+Rivedere le impostazioni e modificarle, se necessario. Selezionare quindi Crea **valutazione.** Dovresti ricevere un messaggio di conferma per indicare che la configurazione è stata completata.
 
-Il report di valutazione di Microsoft Defender per Office 365 viene generato una volta al giorno. I dati possono richiedere fino a 24 ore.
+Il report di valutazione di Microsoft Defender per Office 365 viene generato una volta al giorno. La compilazione dei dati potrebbe richiedere fino a 24 ore.
 
-### <a name="exchange-rules-optional"></a>Regole di Exchange (facoltativa)
+### <a name="exchange-rules-optional"></a>Regole di Exchange (facoltativo)
 
-Se si dispone di un gateway esistente, potrebbe essere necessario ignorare il filtro perché attiverà il filtro avanzato per i connettori e altererà l'indirizzo IP del mittente in ingresso. Per ignorare, passare all'interfaccia di amministrazione di Exchange e creare un criterio di SCL-1 (se non è già presente). Per informazioni dettagliate sui componenti delle regole e sul relativo funzionamento, vedere Mail Flow Rules (Transport Rules) in Exchange Online.
+Se si dispone di un gateway esistente, l'abilitazione della modalità di valutazione attiverà il filtro avanzato per i connettori. In questo modo si migliora l'accuratezza del filtro modificando l'indirizzo IP del mittente in ingresso. Ciò potrebbe modificare i verdetti del filtro e, se non si sta ignorando Exchange Online Protection, ciò potrebbe alterare il recapito di determinati messaggi. In questo caso potrebbe essere necessario ignorare temporaneamente il filtro per analizzare l'impatto. Per ignorare, passare all'interfaccia di amministrazione di Exchange e creare un criterio SCL -1 (se non si dispone già di uno). Per informazioni dettagliate sui componenti delle regole e sul loro funzionamento, vedere Regole del flusso di posta (regole di trasporto) in Exchange Online.
 
 ## <a name="evaluate-capabilities"></a>Valutare le funzionalità
 
-Dopo aver generato il report di valutazione, vedere il numero di collegamenti a minacce avanzati, allegati a minacce avanzate e potenziali rappresentazioni sono stati identificati nelle aree di lavoro di posta elettronica e collaborazione nell'organizzazione.
+Dopo aver generato il report di valutazione, vedere quanti collegamenti alle minacce avanzate, allegati di minacce avanzate e potenziali imitazioni sono stati identificati nelle aree di lavoro di collaborazione e posta elettronica dell'organizzazione.
 
-Una volta scaduta la versione di valutazione, è possibile continuare ad accedere al report per 90 giorni. Tuttavia, non raccoglierà altre informazioni. Se si desidera continuare a utilizzare Microsoft Defender per Office 365 dopo la scadenza del periodo di prova, assicurarsi di [acquistare un abbonamento a pagamento per Microsoft Defender per office 365 (piano 2)](https://admin.microsoft.com/AdminPortal/Home#/catalog/offer-details/microsoft-defender-for-office-365-plan-2-/223860DC-15D6-42D9-A861-AE05473069FA).
+Una volta scaduta la versione di valutazione, è possibile continuare ad accedere al report per 90 giorni. Tuttavia, non raccoglierà altre informazioni. Se si desidera continuare a usare Microsoft Defender per Office 365 dopo la scadenza della versione di valutazione, assicurarsi di acquistare un abbonamento a pagamento per Microsoft Defender per [Office 365 (Piano 2).](https://admin.microsoft.com/AdminPortal/Home#/catalog/offer-details/microsoft-defender-for-office-365-plan-2-/223860DC-15D6-42D9-A861-AE05473069FA)
 
-È possibile accedere alle **Impostazioni** per aggiornare il routing o disattivare la valutazione in qualsiasi momento. Tuttavia, è necessario eseguire di nuovo lo stesso processo di configurazione se si decide di continuare la valutazione dopo averla disattivata.
+Puoi passare a Impostazioni **per** aggiornare il routing o disattivare la valutazione in qualsiasi momento. Tuttavia, è necessario eseguire di nuovo lo stesso processo di configurazione nel caso in cui si decida di continuare la valutazione dopo averlo disattivato.
 
 ## <a name="provide-feedback"></a>Inviare feedback
 
-I commenti e suggerimenti consentono di migliorare la protezione dell'ambiente da attacchi avanzati. Condividere la propria esperienza e le proprie impressioni sulle funzionalità del prodotto e sui risultati della valutazione.
+Il feedback degli utenti ci aiuta a migliorare la protezione dell'ambiente da attacchi avanzati. Condividi l'esperienza e le impressioni delle funzionalità del prodotto e dei risultati della valutazione.
 
-Selezionare **Invia commenti e suggerimenti** per farci sapere cosa ne pensi.
+Seleziona **Inviare commenti** e suggerimenti per inviare commenti e suggerimenti.

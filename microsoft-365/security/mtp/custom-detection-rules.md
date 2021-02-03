@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 8c7e47e66f9e5543cc122c5b5154207cae836d2a
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: d58292f658446259bfab5b1b55c8b462d081421c
+ms.sourcegitcommit: d354727303d9574991b5a0fd298d2c9414e19f6c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49932923"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "50080624"
 ---
 # <a name="create-and-manage-custom-detections-rules"></a>Creare e gestire regole di rilevamento personalizzate
 
@@ -207,7 +207,8 @@ Nella schermata dei dettagli della regola (**Ricerca** rilevamenti personalizzat
 >[!TIP]
 >Per visualizzare rapidamente le informazioni ed eseguire un'azione su un elemento di una tabella, utilizzare la colonna di selezione [&#10003;] a sinistra della tabella.
 
-## <a name="related-topic"></a>Argomento correlato
+## <a name="see-also"></a>Vedere anche
 - [Panoramica dei rilevamenti personalizzati](custom-detections-overview.md)
 - [Panoramica della ricerca avanzata](advanced-hunting-overview.md)
 - [Scoprire il linguaggio delle query in Ricerca avanzata](advanced-hunting-query-language.md)
+- [Eseguire la migrazione di query di ricerca avanzata da Microsoft Defender per Endpoint](advanced-hunting-migrate-from-mdatp.md)
