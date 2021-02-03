@@ -232,57 +232,63 @@
     - name: Prevenzione della perdita di dati (DLP)
       items:
         - name: Informazioni sulla prevenzione della perdita di dati
-          href: data-loss-prevention-policies.md
-        - name: DLP e Microsoft Teams
-          href: dlp-microsoft-teams.md
-        - name: Informazioni sulla prevenzione della perdita di dati degli endpoint
-          href: endpoint-dlp-learn-about.md
-        - name: Introduzione alla prevenzione della perdita di dati degli endpoint
-          href: endpoint-dlp-getting-started.md
-        - name: Configurazione del proxy del dispositivo e delle impostazioni di connessione a internet per la prevenzione della perdita di dati degli endpoint
-          href: endpoint-dlp-configure-proxy.md
-        - name: Uso della prevenzione della perdita di dati degli endpoint
-          href: endpoint-dlp-using.md
-        - name: Strumenti e metodi di onboarding della prevenzione della perdita di dati degli endpoint per i dispositivi Windows 10
           items:
-            - name: Strumenti e metodi di onboarding per i dispositivi Windows 10
-              href: dlp-configure-endpoints.md
-            - name: Onboarding di dispositivi Windows 10 tramite Criteri di gruppo
-              href: dlp-configure-endpoints-gp.md
-            - name: Onboarding di dispositivi Windows 10 con gli strumenti di Gestione dispositivi mobili
-              href: dlp-configure-endpoints-mdm.md
-            - name: Onboarding di dispositivi Windows 10 con Configuration Manager
-              href: dlp-configure-endpoints-sccm.md
-            - name: Onboarding di dispositivi Windows 10 con uno script locale
-              href: dlp-configure-endpoints-script.md
-            - name: Onboarding di dispositivi VDI (Virtual Desktop Infrastructure) non persistenti
-              href: dlp-configure-endpoints-vdi.md
-        - name: Introduzione ai criteri di prevenzione della perdita dei dati predefiniti
-          href: get-started-with-the-default-dlp-policy.md
-        - name: Creare criteri di prevenzione della perdita dei dati da un modello
-          href: create-a-dlp-policy-from-a-template.md
-        - name: 'Creare, testare e ottimizzare i criteri di prevenzione della perdita dei dati'
-          href: create-test-tune-dlp-policy.md
-        - name: Usare notifiche e suggerimenti per i criteri nei criteri di prevenzione della perdita dei dati
-          href: use-notifications-and-policy-tips.md
-        - name: Configurare e visualizzare gli avvisi per i criteri di prevenzione della perdita dei dati (anteprima)
-          href: dlp-configure-view-alerts-policies.md
-        - name: Elementi inclusi nei modelli dei criteri di prevenzione della perdita dei dati
-          href: what-the-dlp-policy-templates-include.md
-        - name: Creare criteri di prevenzione della perdita dei dati per proteggere i documenti con FCI o altre proprietà
-          href: protect-documents-that-have-fci-or-other-properties.md
-        - name: Visualizzare i report di prevenzione della perdita dei dati
-          href: view-the-dlp-reports.md
-        - name: Creare una query per trovare i dati sensibili archiviati nei siti
-          href: form-a-query-to-find-sensitive-data-stored-on-sites.md
-        - name: Funzionamento della prevenzione della perdita dei dati tra il Centro sicurezza e conformità e l'interfaccia di amministrazione di Exchange
-          href: how-dlp-works-between-admin-centers.md
-        - name: Usare le etichette di riservatezza come condizione nei criteri di prevenzione della perdita dei dati (anteprima)
-          href: dlp-sensitivity-label-as-condition.md
-        - name: Usare i criteri di prevenzione della perdita dei dati per le app cloud non Microsoft
-          href: dlp-use-policies-non-microsoft-cloud-apps.md
-        - name: Condizioni ed eccezioni criteri di prevenzione della perdita dei dati (anteprima)
-          href: dlp-conditions-and-exceptions.md
+            - name: Informazioni sulla prevenzione della perdita dei dati
+              href: data-loss-prevention-policies.md
+            - name: Informazioni sulla prevenzione della perdita di dati degli endpoint
+              href: endpoint-dlp-learn-about.md
+        - name: Introduzione alla prevenzione della perdita dei dati
+          items:
+            - name: Introduzione ai criteri di prevenzione della perdita dei dati predefiniti
+              href: get-started-with-the-default-dlp-policy.md
+            - name: Creare criteri di prevenzione della perdita dei dati da un modello
+              href: create-a-dlp-policy-from-a-template.md
+            - name: 'Creare, testare e ottimizzare i criteri di prevenzione della perdita dei dati'
+              href: create-test-tune-dlp-policy.md
+            - name: Introduzione alla prevenzione della perdita di dati degli endpoint
+              href: endpoint-dlp-getting-started.md
+            - name: Configurazione del proxy del dispositivo e delle impostazioni di connessione a internet per la prevenzione della perdita di dati degli endpoint
+              href: endpoint-dlp-configure-proxy.md
+            - name: Strumenti e metodi di onboarding della prevenzione della perdita di dati degli endpoint per i dispositivi Windows 10
+              items:
+                - name: Strumenti e metodi di onboarding per i dispositivi Windows 10
+                  href: dlp-configure-endpoints.md
+                - name: Onboarding di dispositivi Windows 10 tramite Criteri di gruppo
+                  href: dlp-configure-endpoints-gp.md
+                - name: Onboarding di dispositivi Windows 10 con gli strumenti di Gestione dispositivi mobili
+                  href: dlp-configure-endpoints-mdm.md
+                - name: Onboarding di dispositivi Windows 10 con Configuration Manager
+                  href: dlp-configure-endpoints-sccm.md
+                - name: Onboarding di dispositivi Windows 10 con uno script locale
+                  href: dlp-configure-endpoints-script.md
+                - name: Onboarding di dispositivi VDI (Virtual Desktop Infrastructure) non persistenti
+                  href: dlp-configure-endpoints-vdi.md
+        - name: Usare le funzionalità di prevenzione della perdita dei dati
+          items:
+            - name: Funzionalità di prevenzione della perdita dei dati e Microsoft Teams
+              href: dlp-microsoft-teams.md
+            - name: Uso di Prevenzione della perdita di dati degli endpoint
+              href: endpoint-dlp-using.md
+            - name: Usare notifiche e suggerimenti per i criteri nei criteri di prevenzione della perdita dei dati
+              href: use-notifications-and-policy-tips.md
+            - name: Elementi inclusi nei modelli dei criteri di prevenzione della perdita dei dati
+              href: what-the-dlp-policy-templates-include.md
+            - name: Creare criteri di prevenzione della perdita dei dati per proteggere i documenti con FCI o altre proprietà
+              href: protect-documents-that-have-fci-or-other-properties.md
+            - name: Visualizzare i report di prevenzione della perdita dei dati
+              href: view-the-dlp-reports.md
+            - name: Creare una query per trovare i dati sensibili archiviati nei siti
+              href: form-a-query-to-find-sensitive-data-stored-on-sites.md
+            - name: Funzionamento della prevenzione della perdita dei dati tra il Centro sicurezza e conformità e l'interfaccia di amministrazione di Exchange
+              href: how-dlp-works-between-admin-centers.md
+            - name: Configurare e visualizzare gli avvisi per i criteri di prevenzione della perdita dei dati (anteprima)
+              href: dlp-configure-view-alerts-policies.md
+            - name: Usare le etichette di riservatezza come condizione nei criteri di prevenzione della perdita dei dati (anteprima)
+              href: dlp-sensitivity-label-as-condition.md
+            - name: Usare i criteri di prevenzione della perdita dei dati per le app cloud non Microsoft
+              href: dlp-use-policies-non-microsoft-cloud-apps.md
+            - name: Condizioni ed eccezioni criteri di prevenzione della perdita dei dati (anteprima)
+              href: dlp-conditions-and-exceptions.md
 - name: Gestire la governance delle informazioni
   items:
     - name: Gestire i propri dati
@@ -729,6 +735,8 @@
       items:
         - name: Eseguire ricerche nel log di controllo
           href: search-the-audit-log-in-security-and-compliance.md
+        - name: Usare uno script PowerShell per la ricerca nel log di audit
+          href: audit-log-search-script.md
         - name: Abilitare o disabilitare la ricerca dei log di controllo
           href: turn-audit-log-search-on-or-off.md
         - name: Proprietà dettagliate nel log di controllo
