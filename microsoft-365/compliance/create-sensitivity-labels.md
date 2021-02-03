@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: "Requisito per tutte le soluzioni di Microsoft Information Protection: creare, configurare e pubblicare etichette di riservatezza per classificare e proteggere i documenti e i messaggi di posta elettronica dell'organizzazione."
-ms.openlocfilehash: 60865b40582416ac2ac963c4a8c68353b06fc6d4
-ms.sourcegitcommit: 8d28bce1a3445878b066864e766cf52cb83becd1
+ms.openlocfilehash: b7943259d3a20cbf4fd6d8b0b57ca7c027e74d3f
+ms.sourcegitcommit: 4f40f5be140a23bacff6fd7b85536de14fc7d499
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "50071291"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "50084657"
 ---
 # <a name="create-and-configure-sensitivity-labels-and-their-policies"></a>Creare e configurare etichette di riservatezza e i relativi criteri
 
@@ -186,7 +186,7 @@ Per modificare un criterio di etichetta esistente, selezionarlo e quindi sceglie
 
 Verrà avviata la procedura guidata **Crea criterio**, che consente di modificare le etichette incluse e le impostazioni dell'etichetta. Una volta completata la procedura guidata, le modifiche vengono replicate automaticamente agli utenti e ai servizi selezionati.
 
-Quando si utilizza l’assegnazione di etichette predefinita in Windows, macOS, iOS e Android, gli utenti visualizzano le nuove etichette nelle app di Office entro quattro ore e in Office sul web entro un’ora. Tuttavia, saranno necessarie fino a 24 ore affinché le modifiche vengano replicate in tutte le app e i servizi.
+Quando si usa l’assegnazione di etichette predefinita per le app di Office in Windows, macOS, iOS e Android, gli utenti visualizzano le nuove etichette entro quattro ore e in Office sul web entro un’ora. Tuttavia, saranno necessarie fino a 24 ore affinché le modifiche vengano replicate in tutte le app e i servizi.
 
 ### <a name="additional-label-policy-settings-with-security--compliance-center-powershell"></a>Impostazioni aggiuntive per i criteri delle etichette con PowerShell per Centro sicurezza e conformità
 

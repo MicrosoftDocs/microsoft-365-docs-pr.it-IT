@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Informazioni sui criteri di conservazione e sulle etichette di conservazione, utili per conservare tutto che serve ed eliminare ciò che non serve.
-ms.openlocfilehash: 751b88ea3dde0c4cf2a33dded26a032a1e320b5e
-ms.sourcegitcommit: 8d28bce1a3445878b066864e766cf52cb83becd1
+ms.openlocfilehash: d834cc53677c8b7c01ed4bec40ed51983d41e9da
+ms.sourcegitcommit: 4f40f5be140a23bacff6fd7b85536de14fc7d499
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "50071311"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "50084625"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>Informazioni sui criteri e sulle etichette di conservazione
 
@@ -77,7 +77,7 @@ Per informazioni più dettagliate sul funzionamento delle impostazioni di conser
 
 ## <a name="retention-policies-and-retention-labels"></a>Criteri di conservazione ed etichette di conservazione.
 
-Per assegnare impostazioni di conservazione al contenuto è possibile usare sia criteri di conservazione che etichette di conservazione con i criteri delle etichette. 
+Per assegnare le impostazioni di conservazione al contenuto, usare i **criteri di conservazione** e le **etichette di conservazione con i criteri delle etichette**. È possibile usare solo uno di questi metodi o combinarli.
 
 Usare un criterio di conservazione per assegnare le stesse impostazioni di conservazione per il contenuto a livello di sito o cassetta postale e usare un'etichetta di conservazione per assegnare impostazioni di conservazione a livello di elemento (cartelle, documenti o messaggi di posta elettronica).
 
