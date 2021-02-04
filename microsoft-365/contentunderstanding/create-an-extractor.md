@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: Informazioni su come creare un estrattore in Microsoft SharePoint Syntex.
-ms.openlocfilehash: 7417805f51bb3a1c7b993ce2cd72137478abbc02
-ms.sourcegitcommit: 162c01dfaa2fdb3225ce4c24964c1065ce22ed5d
+ms.openlocfilehash: dd26b049f71688804cd5110a5a0bb7c87950be94
+ms.sourcegitcommit: d354727303d9574991b5a0fd298d2c9414e19f6c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2021
-ms.locfileid: "49976544"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "50080489"
 ---
 # <a name="create-an-extractor-in-microsoft-sharepoint-syntex"></a>Creare un estrattore in Microsoft SharePoint Syntex.
 
@@ -57,6 +57,14 @@ Quando si crea l'estrattore, viene aperta la pagina dell'estrattore. In questa p
 
  
 Dopo avere etichettato cinque file, viene visualizzato un banner di notifica che indica di passare al training. È possibile decidere di etichettare altri documenti o procedere al training. 
+
+### <a name="use-find-to-search-your-file"></a>Usare Trova per eseguire ricerche nel file
+È possibile usare la funzionalità <b>Trova</b> per cercare un'entità nel documento a cui assegnare un'etichetta.
+
+   ![Trova nel file](../media/content-understanding/find-feature.png) 
+
+La funzionalità Trova è utile se si esegue la ricerca in un documento di grandi dimensioni o se nel documento sono presenti più istanze dell'entità. Se si trovano più istanze, è possibile selezionare quella necessaria nei risultati della ricerca per passare a tale posizione nel visualizzatore ed etichettarla.
+
 
 ## <a name="add-an-explanation"></a>Aggiungere una spiegazione
 
