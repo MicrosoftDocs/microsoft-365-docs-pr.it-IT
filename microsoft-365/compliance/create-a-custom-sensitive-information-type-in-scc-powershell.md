@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Informazioni su come creare e importare un tipo di informazione sensibile personalizzato per i criteri nel Centro conformità.
-ms.openlocfilehash: 31badcb2ab0102584e3addf3ed4d1549afe78525
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: ab96a3928105f612ab97bc8ca3a0acc3613082c3
+ms.sourcegitcommit: d354727303d9574991b5a0fd298d2c9414e19f6c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49929422"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "50080681"
 ---
 # <a name="create-a-custom-sensitive-information-type-using-powershell"></a>Creare tipi di informazioni sensibili personalizzati usando PowerShell
 
@@ -192,7 +192,7 @@ Un criterio può contenere più elementi Match; tali elementi possono essere inc
   
 ### <a name="keywords-keyword-group-and-term-elements-matchstyle-and-casesensitive-attributes"></a>Parole chiave [elementi Keyword, Group e Term, attributi matchStyle e caseSensitive]
 
-Quando si identificano informazioni riservate, ad esempio un ID dipendente, spesso si desidera richiedere parole chiave come prove. Ad esempio, oltre ad associare un numero di nove cifre, è consigliabile cercare parole come "carta", "badge" o "ID". A tal fine, si utilizza l'elemento Keyword. L'elemento Keyword presenta un attributo id che può essere utilizzato come riferimento da più elementi Match in più criteri o entità.
+Quando si identificano informazioni riservate, ad esempio un ID dipendente, spesso si desidera richiedere parole chiave come prove. Ad esempio, oltre ad associare un numero di nove cifre, è consigliabile cercare parole come "carta", "badge" o "ID". A tal fine, si utilizza l'elemento Keyword. L'elemento Keyword presenta un attributo ID che può essere utilizzato come riferimento da più elementi Match in più criteri o entità.
   
 Le parola chiave sono incluse come elenco di elementi Term in un elemento Group. L'elemento Group presenta un attributo matchStyle con due valori possibili:
   
@@ -206,7 +206,7 @@ Infine, è possibile utilizzare l'attributo caseSensitive di un elemento Term pe
   
 ### <a name="regular-expressions-regex-element"></a>Espressioni regolari [elemento Regex]
 
-In questo esempio l'entità ID dipendente Usa già l'elemento IdMatch per fare riferimento a un regex per il criterio, un numero di nove cifre racchiuso da spazi. Inoltre, un criterio può utilizzare un elemento Match per fare riferimento a un altro elemento Regex per identificare una prova, ad esempio un numero di cinque o nove cifre nel formato di codice postale ZIP degli Stati Uniti.
+In questo esempio l'entità ID dipendente usa già l'elemento IdMatch per fare riferimento a un regex per il criterio, un numero di nove cifre racchiuso da spazi. Inoltre, un criterio può utilizzare un elemento Match per fare riferimento a un altro elemento Regex per identificare una prova, ad esempio un numero di cinque o nove cifre nel formato di codice postale ZIP degli Stati Uniti.
   
 ### <a name="additional-patterns-such-as-dates-or-addresses-built-in-functions"></a>Altri criteri, ad esempio date o indirizzi [funzioni predefinite]
 
@@ -428,6 +428,14 @@ Quando si carica il file XML del pacchetto di regole, il sistema convalida l'XML
 - Non può contenere un ripetitore non delimitato (ad esempio "\*" o "+") in un gruppo.
     
   Ad esempio, "(xx)\*" e "(xx)+" non supereranno la convalida.
+  
+- Le parole chiave hanno una lunghezza massima di 50 caratteri.  Se in un gruppo è presente una parola chiave che supera questa lunghezza, è consigliabile creare il Gruppo di termini come [Dizionario di parole chiave](https://docs.microsoft.com/microsoft-365/compliance/create-a-keyword-dictionary) e fare riferimento al GUID del Dizionario di parole chiave nella struttura XML come parte dell’entità per Match o idMatch nel file.
+
+- Ogni Tipo di informazioni sensibili personalizzato può avere un massimo di 2048 parole chiave in totale.
+
+- Quando si usa il cmdlet di PowerShell la dimensione massima di restituzione dei dati deserializzati è pari a circa 1 megabyte.   Questo influirà sulle dimensioni del file XML. Mantenere il file caricato entro un massimo di 512 megabyte come limite suggerito per ottenere risultati coerenti senza errori durante l'elaborazione.
+
+- La struttura XML non richiede la formattazione di caratteri come spazi, tabulazioni o elementi di ritorno a capo/avanzamento riga.  Tenere a mente questo fattore quando si ottimizza lo spazio per i caricamenti.
     
 Se un tipo di informazioni riservate personalizzato contiene un problema che può influire sulle prestazioni, non verrà caricato e potrebbe essere visualizzato uno di questi messaggi di errore:
   
